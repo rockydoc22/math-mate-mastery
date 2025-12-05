@@ -35,6 +35,36 @@ export type Database = {
         }
         Relationships: []
       }
+      daily_challenges: {
+        Row: {
+          bonus_xp: number
+          challenge_date: string
+          completed_at: string
+          id: string
+          score: number
+          total_questions: number
+          user_id: string
+        }
+        Insert: {
+          bonus_xp?: number
+          challenge_date?: string
+          completed_at?: string
+          id?: string
+          score: number
+          total_questions?: number
+          user_id: string
+        }
+        Update: {
+          bonus_xp?: number
+          challenge_date?: string
+          completed_at?: string
+          id?: string
+          score?: number
+          total_questions?: number
+          user_id?: string
+        }
+        Relationships: []
+      }
       flagged_questions: {
         Row: {
           created_at: string
@@ -68,25 +98,58 @@ export type Database = {
         }
         Relationships: []
       }
+      friendships: {
+        Row: {
+          addressee_id: string
+          created_at: string
+          id: string
+          requester_id: string
+          status: string
+          updated_at: string
+        }
+        Insert: {
+          addressee_id: string
+          created_at?: string
+          id?: string
+          requester_id: string
+          status?: string
+          updated_at?: string
+        }
+        Update: {
+          addressee_id?: string
+          created_at?: string
+          id?: string
+          requester_id?: string
+          status?: string
+          updated_at?: string
+        }
+        Relationships: []
+      }
       profiles: {
         Row: {
+          avatar_emoji: string | null
           avatar_url: string | null
           created_at: string
           id: string
+          theme_color: string | null
           updated_at: string
           username: string
         }
         Insert: {
+          avatar_emoji?: string | null
           avatar_url?: string | null
           created_at?: string
           id: string
+          theme_color?: string | null
           updated_at?: string
           username: string
         }
         Update: {
+          avatar_emoji?: string | null
           avatar_url?: string | null
           created_at?: string
           id?: string
+          theme_color?: string | null
           updated_at?: string
           username?: string
         }
@@ -119,6 +182,33 @@ export type Database = {
           subject?: string
           total_questions?: number
           user_id?: string
+        }
+        Relationships: []
+      }
+      saved_questions: {
+        Row: {
+          created_at: string
+          id: string
+          question_id: string
+          question_type: string
+          user_id: string
+          was_wrong: boolean | null
+        }
+        Insert: {
+          created_at?: string
+          id?: string
+          question_id: string
+          question_type: string
+          user_id: string
+          was_wrong?: boolean | null
+        }
+        Update: {
+          created_at?: string
+          id?: string
+          question_id?: string
+          question_type?: string
+          user_id?: string
+          was_wrong?: boolean | null
         }
         Relationships: []
       }

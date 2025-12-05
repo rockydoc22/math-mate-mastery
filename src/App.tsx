@@ -11,6 +11,10 @@ import EnglishQuiz from "./pages/EnglishQuiz";
 import Admin from "./pages/Admin";
 import Auth from "./pages/Auth";
 import Leaderboard from "./pages/Leaderboard";
+import StudyMode from "./pages/StudyMode";
+import DailyChallenge from "./pages/DailyChallenge";
+import Profile from "./pages/Profile";
+import Friends from "./pages/Friends";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -30,6 +34,10 @@ const App = () => (
             <Route path="/admin" element={<Admin />} />
             <Route path="/auth" element={<Auth />} />
             <Route path="/leaderboard" element={<Leaderboard />} />
+            <Route path="/study" element={<StudyMode />} />
+            <Route path="/daily" element={<DailyChallenge />} />
+            <Route path="/profile" element={<Profile />} />
+            <Route path="/friends" element={<Friends />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
