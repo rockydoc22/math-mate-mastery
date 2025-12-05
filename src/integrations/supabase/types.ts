@@ -14,7 +14,39 @@ export type Database = {
   }
   public: {
     Tables: {
-      [_ in never]: never
+      flagged_questions: {
+        Row: {
+          created_at: string
+          id: string
+          issue_type: string
+          notes: string | null
+          question_id: string
+          question_type: string
+          reporter_ip: string | null
+          status: string
+        }
+        Insert: {
+          created_at?: string
+          id?: string
+          issue_type: string
+          notes?: string | null
+          question_id: string
+          question_type: string
+          reporter_ip?: string | null
+          status?: string
+        }
+        Update: {
+          created_at?: string
+          id?: string
+          issue_type?: string
+          notes?: string | null
+          question_id?: string
+          question_type?: string
+          reporter_ip?: string | null
+          status?: string
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
