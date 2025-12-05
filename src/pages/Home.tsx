@@ -5,12 +5,12 @@ import { BookOpen, Calculator, PenTool, Shuffle } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import { questions } from "@/data/questions";
 import { englishQuestions } from "@/data/englishQuestions";
-import { visualMathQuestions, visualEnglishQuestions } from "@/data/visualQuestions";
+import { visualMathQuestions, visualEnglishQuestions, moreMathVisualQuestions, moreEnglishVisualQuestions } from "@/data/visualQuestions";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { Label } from "@/components/ui/label";
 
-const totalMath = questions.length + visualMathQuestions.length;
-const totalEnglish = englishQuestions.length + visualEnglishQuestions.length;
+const totalMath = questions.length + visualMathQuestions.length + moreMathVisualQuestions.length;
+const totalEnglish = englishQuestions.length + visualEnglishQuestions.length + moreEnglishVisualQuestions.length;
 
 type Subject = "math" | "english" | "both";
 type QuestionCount = 10 | 25 | 50;

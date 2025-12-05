@@ -16,6 +16,9 @@ export interface VisualQuestion {
   };
 }
 
+// Re-export additional visual questions
+export { moreMathVisualQuestions, moreEnglishVisualQuestions } from "./moreVisualQuestions";
+
 // Sample visual math questions
 export const visualMathQuestions: VisualQuestion[] = [
   // Table-based linear function questions
