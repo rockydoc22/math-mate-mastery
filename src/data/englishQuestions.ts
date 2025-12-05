@@ -3987,5 +3987,530 @@ export const englishQuestions: EnglishQuestion[] = [
     difficulty: "Hard",
     domain: "Reading and Writing",
     skill: "Standard English Conventions"
+  },
+  {
+    id: "eng266",
+    question: "The author writes: \"Climate change is the defining issue of our time—and we are running out of time to address it.\"\n\nThe dash and \"and\" together",
+    options: [
+      { letter: "A", text: "emphasize the urgency of the situation." },
+      { letter: "B", text: "indicate that the second clause is less important." },
+      { letter: "C", text: "show that climate change is not really urgent." },
+      { letter: "D", text: "separate two unrelated claims." }
+    ],
+    correctAnswer: "A",
+    explanation: "The dash + 'and' creates dramatic buildup to stress how little time remains.",
+    difficulty: "Hard",
+    domain: "Reading and Writing",
+    skill: "Standard English Conventions"
+  },
+  {
+    id: "eng267",
+    question: "Some psychologists believe that \"grit\"—perseverance and passion for long-term goals—predicts success better than IQ.\n\nThe dashes primarily function to",
+    options: [
+      { letter: "A", text: "define the term \"grit\" for the reader." },
+      { letter: "B", text: "contrast grit with IQ." },
+      { letter: "C", text: "indicate that grit is controversial." },
+      { letter: "D", text: "show that the definition is incomplete." }
+    ],
+    correctAnswer: "A",
+    explanation: "The dashes enclose a clear, concise definition of the psychological concept.",
+    difficulty: "Hard",
+    domain: "Reading and Writing",
+    skill: "Standard English Conventions"
+  },
+  {
+    id: "eng268",
+    question: "The alpaca was domesticated by Indigenous peoples in the Andes about 7,000 years ago. But which wild species did it descend from, the vicuña or guanaco? A research team led by Ruiwen Fan may have solved the mystery, concluding that the alpaca is the domesticated form of the vicuña but that the modern alpaca gets only 64 percent of its genetic material from its wild ancestor. The rest comes from the domesticated llama. The llama, meanwhile, gets 95.5 percent of its genetic material from its own wild ancestor, the guanaco, and the rest from the alpaca. The llama and alpaca apparently interbred widely for only a handful of generations between 400 and 600 years ago. Assuming that the findings of Fan's team are valid, it can be inferred that ______\n\nWhich choice most logically completes the text?",
+    options: [
+      { letter: "A", text: "modern llama populations have a greater degree of genetic diversity, on average, than modern alpaca populations do." },
+      { letter: "B", text: "the domestication process of the alpaca may have involved some introduction of genetic material from the llama." },
+      { letter: "C", text: "the period of interbreeding resulted in a greater genetic difference between alpacas and their wild ancestors than between llamas and their wild ancestors." },
+      { letter: "D", text: "if they were subjected to genetic testing, modern populations of guanacos and vicuñas would likely show traces of ancient interbreeding as well." }
+    ],
+    correctAnswer: "C",
+    explanation: "The data shows alpacas get only 64% from wild ancestors while llamas get 95.5%, indicating interbreeding had greater impact on alpacas' genetic distance from wild ancestors.",
+    difficulty: "Hard",
+    domain: "Reading and Writing",
+    skill: "Evidence"
+  },
+  {
+    id: "eng269",
+    question: "Poetry in Classical Nahuatl, the language of the Aztec Empire, relies on difrasismo, or a parallel noun construction that conventionally operates as a single metaphor. For example, the common difrasismo in cuauhtli in ocelotl (literally, \"the eagle, the jaguar\") signifies \"warrior.\" The device's function is both formal—providing structure to lines of verse—and ritual: semantic relations among the two nouns and the concept they signify can be tenuous, such that difrasismos are often only intelligible according to the conceptual associations observed in Aztec ceremonial culture.\n\nWhich statement about the difrasismo in cuauhtli in ocelotl is most strongly supported by the text?",
+    options: [
+      { letter: "A", text: "Its metaphorical significance derives from the semantic equivalence of the two nouns constituting the difrasismo." },
+      { letter: "B", text: "Its unintelligibility may cause its formal function within a line of verse to go unnoticed by present-day readers." },
+      { letter: "C", text: "Its apparent obscurity can be resolved when considered in the proper cultural context." },
+      { letter: "D", text: "Its frequency in Classical Nahuatl poetry confirms its intelligibility to the Aztec audience." }
+    ],
+    correctAnswer: "C",
+    explanation: "The text indicates difrasismos become intelligible when understood through Aztec ceremonial culture, resolving their apparent obscurity.",
+    difficulty: "Hard",
+    domain: "Reading and Writing",
+    skill: "Evidence"
+  },
+  {
+    id: "eng270",
+    question: "In 2022, Crystal Reeck and colleagues studied whether the decision-making modes that guide consumers influence their choice between nonenvironmentally friendly standard electricity plans and environmentally friendly green plans that cap electricity usage. Study participants who self-reported using either an Affect Mode or Role Mode—which prioritize choices that have a stronger positive emotional or social impact, respectively—were more likely to select a green plan. Conversely, participants using a Calculation Mode—which aims to minimize both financial cost and personal inconvenience—were more likely to select a standard plan, even when the green option was cheaper. This finding suggests that participants using a Calculation Mode ______\n\nWhich choice most logically completes the text?",
+    options: [
+      { letter: "A", text: "were equally unlikely to factor the financial savings of the green plan into their decision-making as were participants using either the Affect or Role Modes." },
+      { letter: "B", text: "may have been less strongly motivated to appear socially responsible with their choice of plan than they realized." },
+      { letter: "C", text: "may have determined that the green plan imposed additional burdens on them that were not sufficiently offset by the potential financial savings." },
+      { letter: "D", text: "were less likely to believe that the green plan was truly cost-effective than were participants using either the Affect or Role Modes." }
+    ],
+    correctAnswer: "C",
+    explanation: "Calculation Mode minimizes cost AND inconvenience. Even when green was cheaper, they chose standard—suggesting the inconvenience (capped usage) outweighed savings.",
+    difficulty: "Hard",
+    domain: "Reading and Writing",
+    skill: "Inference"
+  },
+  {
+    id: "eng271",
+    question: "The following text is from William Shakespeare's play The Tempest, first performed in 1611. Miranda has lived on an island with her father, Prospero, since she was three years old.\n\nMIRANDA: 'Tis far off, And rather like a dream than an assurance That my remembrance warrants. Had I not Four or five women once that tended me?\nPROSPERO: Thou hadst, and more, Miranda. But how is it That this lives in thy mind? What seest thou else In the dark backward and abysm of time? If thou remember'st ought ere thou camest here, How thou camest here thou mayst.\n\nWhich point does Prospero most directly make about Miranda and her memories?",
+    options: [
+      { letter: "A", text: "Miranda's reminiscences about her early childhood have a melancholy quality that betrays her discontented view of her current circumstances." },
+      { letter: "B", text: "Miranda's doubts about the accuracy of one recollection are clouding her judgment and making her reluctant to explore her memory of traveling to the island." },
+      { letter: "C", text: "Miranda's ability to summon details of an experience she had before arriving on the island suggests that she may also be able to summon details of her arrival." },
+      { letter: "D", text: "Miranda's impression of a scene is vague because she is remembering a scenario she had daydreamed about rather than a scenario that had occurred in reality." }
+    ],
+    correctAnswer: "C",
+    explanation: "Prospero confirms Miranda's memory and suggests that if she can recall events from before, she may also remember her arrival on the island.",
+    difficulty: "Hard",
+    domain: "Reading and Writing",
+    skill: "Central Ideas"
+  },
+  {
+    id: "eng272",
+    question: "Gorgets, or necklaces with large pendants, have been part of the ceremonial attire of tribes from the US Southeast for centuries. One of the oldest examples, the Fairfield Gorget, was found in Fairfield, Missouri, in 1958. Its overall design resembles that of other art from the region during the Mississippian period (900–1600 CE). Yet the image on the gorget is of a jaguar—a species whose range doesn't extend to Missouri. Jaguar images are common in ancient Mexican art, and Mexico lies squarely in the species' range. Therefore, some scholars argue that long-distance trade in Mexican art objects brought the imagery to Missouri, where a local artist could have adopted it.\n\nWhich finding, if true, would most strongly support this explanation?",
+    options: [
+      { letter: "A", text: "The Fairfield Gorget is dated not to the Mississippian period but instead to the earlier Woodland period, which ended around 900 CE." },
+      { letter: "B", text: "The range of the jaguar is shown to have expanded dramatically after the Mississippian period came to a close around 1600 CE." },
+      { letter: "C", text: "An ancient Mexican art object is found at a site that dates to the Mississippian period and is close to where the Fairfield Gorget was found." },
+      { letter: "D", text: "Certain works by present-day artists from Southeastern tribes reflect outside cultural influences, including contemporary Mexican art." }
+    ],
+    correctAnswer: "C",
+    explanation: "Finding Mexican art from the same time period and location would directly support the theory that trade brought jaguar imagery to Missouri.",
+    difficulty: "Hard",
+    domain: "Reading and Writing",
+    skill: "Evidence"
+  },
+  {
+    id: "eng273",
+    question: "Art collectives are groups of artists who agree to work together. Based on a recent series of interviews with various art collectives, an arts journalist claims that collaboration can be difficult for artists who are often used to having sole control over their work.\n\nWhich quotation from the interviews best illustrates the journalist's claim?",
+    options: [
+      { letter: "A", text: "\"The first collective I joined included many amazingly talented artists, and we enjoyed each other's company, but because we had a hard time sharing credit and responsibility for our work, the collective didn't last.\"" },
+      { letter: "B", text: "\"We work together, but that doesn't mean that individual projects are equally the work of all of us. Many of our projects are primarily the responsibility of whoever originally proposed the work to the group.\"" },
+      { letter: "C", text: "\"Having worked as a member of a collective for several years, it's sometimes hard to recall what it was like to work alone. But that support encourages my individual expression rather than limits it.\"" },
+      { letter: "D", text: "\"Sometimes an artist from outside the collective will choose to collaborate with us on a project, but all of those projects fit within the larger themes of the work the collective does on its own.\"" }
+    ],
+    correctAnswer: "A",
+    explanation: "This quote directly illustrates the difficulty of sharing control—talented artists struggled with collaboration and the collective disbanded.",
+    difficulty: "Hard",
+    domain: "Reading and Writing",
+    skill: "Evidence"
+  },
+  {
+    id: "eng274",
+    question: "Aerogels are highly porous foams consisting mainly of tiny air pockets within a solidified gel. These lightweight materials are often applied to spacecraft and other equipment required to withstand extreme conditions, as they provide excellent insulation despite typically being brittle and eventually fracturing due to degradation from repeated exposure to high heat. Now, Xiangfeng Duan of UCLA and colleagues have developed an aerogel with uniquely flexible properties. Unlike earlier aerogels, Duan's team's material contracts rather than expands when heated and fully recovers after compressing to just 5% of its original volume, suggesting that ______\n\nWhich choice most logically completes the text?",
+    options: [
+      { letter: "A", text: "the aerogel's remarkable flexibility results from its higher proportion of air pockets to solidified gel as compared to other aerogels." },
+      { letter: "B", text: "the aerogel's overall strength is greater than that of other insulators but its ability to withstand exposure to intense heat is lower." },
+      { letter: "C", text: "the aerogel will be more effective as an insulator for uses that involve gradual temperature shifts than for those that involve rapid heat increases." },
+      { letter: "D", text: "the aerogel will be less prone to the structural weakness that ultimately causes most other aerogels to break down with use." }
+    ],
+    correctAnswer: "D",
+    explanation: "The new aerogel contracts and recovers instead of expanding and fracturing, suggesting it will be less prone to the breakdown that affects typical aerogels.",
+    difficulty: "Hard",
+    domain: "Reading and Writing",
+    skill: "Inference"
+  },
+  {
+    id: "eng275",
+    question: "Among social animals that care for their young, such as chickens, macaque monkeys, and humans, newborns appear to show an innate attraction to faces and face-like stimuli. Elisabetta Versace and colleagues tested whether this trait also occurs in Testudo tortoises, which live alone and do not engage in parental care. They found that tortoise hatchlings showed a significant preference for a face-like image, suggesting that ______\n\nWhich choice most logically completes the text?",
+    options: [
+      { letter: "A", text: "face-like stimuli are likely perceived as harmless by newborns of social species but as threatening by newborns of solitary species." },
+      { letter: "B", text: "researchers should not assume that an innate attraction to face-like stimuli is necessarily an adaptation related to social interaction or parental care." },
+      { letter: "C", text: "researchers can assume that the attraction to face-like stimuli that is seen in social species is learned rather than innate." },
+      { letter: "D", text: "newly hatched Testudo tortoises show a stronger preference for face-like stimuli than adult tortoises do." }
+    ],
+    correctAnswer: "B",
+    explanation: "Since solitary tortoises without parental care also show attraction to face-like stimuli, this trait is not necessarily linked to social behavior or parenting.",
+    difficulty: "Hard",
+    domain: "Reading and Writing",
+    skill: "Inference"
+  },
+  {
+    id: "eng276",
+    question: "Water flowing around an obstruction creates vortices of varying size; by detecting the vortices, fish can determine the size and position of the obstruction. Testing showed that for medium-sized vortices, fish with wide heads would be least able to distinguish between vortices and general turbulence. A second research team has hypothesized that in low-visibility conditions, wider-headed fish will be less likely than narrower-headed fish to detect obstructions.\n\nWhich finding, if true, would most directly support the second team's hypothesis?",
+    options: [
+      { letter: "A", text: "A study found that the bristlemouth, which has a relatively wide head, bumped into more than half of the obstructions in low-visibility conditions." },
+      { letter: "B", text: "A study found that some specimens of dusky smooth-hound, which has a relatively narrow head, bumped into obstructions more often than other specimens of the same fish did." },
+      { letter: "C", text: "A study found that the wider-headed bristlemouth bumped into obstructions more often than the narrower-headed dusky smooth-hound did in low-visibility conditions." },
+      { letter: "D", text: "A study found that the narrower-headed dusky smooth-hound bumped into obstructions just as often as the wider-headed bristlemouth did." }
+    ],
+    correctAnswer: "C",
+    explanation: "Direct comparison showing wider-headed fish bumped into obstructions more than narrower-headed fish supports the hypothesis about detection differences.",
+    difficulty: "Hard",
+    domain: "Reading and Writing",
+    skill: "Evidence"
+  },
+  {
+    id: "eng277",
+    question: "Birds of many species ingest foods containing carotenoids, pigmented molecules that are converted into feather coloration. Coloration tends to be especially saturated in male birds' feathers, and because carotenoids also confer health benefits, the deeply saturated colors generally serve as an honest signal of a bird's overall fitness. However, ornithologist Allison J. Shultz found that males in several tanager species use microstructures in their feathers to manipulate light, creating the appearance of deeper saturation without maintaining a carotenoid-rich diet. These findings suggest that ______\n\nWhich choice most logically completes the text?",
+    options: [
+      { letter: "A", text: "individual male tanagers can engage in honest signaling without relying on carotenoid consumption." },
+      { letter: "B", text: "feather microstructures may be less effective than deeply saturated feathers for signaling overall fitness." },
+      { letter: "C", text: "scientists have yet to determine why tanagers have a preference for mates with colorful appearances." },
+      { letter: "D", text: "a male tanager's appearance may function as a dishonest signal of the individual's overall fitness." }
+    ],
+    correctAnswer: "D",
+    explanation: "If tanagers can appear highly saturated without eating carotenoids (which provide health benefits), their appearance may falsely signal fitness.",
+    difficulty: "Hard",
+    domain: "Reading and Writing",
+    skill: "Inference"
+  },
+  {
+    id: "eng278",
+    question: "The following text is from Maggie Pogue Johnson's 1910 poem \"Poet of Our Race,\" addressing Paul Laurence Dunbar.\n\nThou, with stroke of mighty pen,\nHast told of joy and mirth,\nAnd read the hearts and souls of men\nAs cradled from their birth.\nThe language of the flowers,\nThou hast read them all,\nAnd e'en the little brook\nResponded to thy call.\n\nWhich choice best states the main purpose of the text?",
+    options: [
+      { letter: "A", text: "To praise a certain writer for being especially perceptive regarding people and nature" },
+      { letter: "B", text: "To establish that a certain writer has read extensively about a variety of topics" },
+      { letter: "C", text: "To call attention to a certain writer's careful and elaborately detailed writing process" },
+      { letter: "D", text: "To recount fond memories of an afternoon spent in nature with a certain writer" }
+    ],
+    correctAnswer: "A",
+    explanation: "The poem praises Dunbar for understanding people ('read the hearts and souls of men') and nature ('language of the flowers').",
+    difficulty: "Hard",
+    domain: "Reading and Writing",
+    skill: "Central Ideas"
+  },
+  {
+    id: "eng279",
+    question: "The city council passed the new zoning law unanimously—every member voted in favor.\n\nThe dash is primarily used to",
+    options: [
+      { letter: "A", text: "introduce an explanation or illustration of 'unanimously.'" },
+      { letter: "B", text: "indicate a change in topic." },
+      { letter: "C", text: "show that the vote was controversial." },
+      { letter: "D", text: "separate two unrelated ideas." }
+    ],
+    correctAnswer: "A",
+    explanation: "The dash introduces the explanatory detail that defines what 'unanimously' means in this context.",
+    difficulty: "Hard",
+    domain: "Reading and Writing",
+    skill: "Standard English Conventions"
+  },
+  {
+    id: "eng280",
+    question: "The author writes: \"Climate change is not a future problem—it is happening now.\"\n\nThe dashes are used to",
+    options: [
+      { letter: "A", text: "set off an emphatic interruption." },
+      { letter: "B", text: "indicate a change in tense." },
+      { letter: "C", text: "show that the author is quoting someone else." },
+      { letter: "D", text: "separate items in a list." }
+    ],
+    correctAnswer: "A",
+    explanation: "The dashes dramatically emphasize the correction of the common misconception.",
+    difficulty: "Hard",
+    domain: "Reading and Writing",
+    skill: "Standard English Conventions"
+  },
+  {
+    id: "eng281",
+    question: "The discovery of a 3,200-year-old cheese in an Egyptian tomb made headlines in 2018. Chemical analysis confirmed it was made from a mixture of cow, sheep, and goat milk.\n\nWhich choice best describes the relationship between the two sentences?",
+    options: [
+      { letter: "A", text: "The second sentence provides evidence that supports a claim made in the first." },
+      { letter: "B", text: "The second sentence explains how the cheese was preserved for 3,200 years." },
+      { letter: "C", text: "The second sentence contradicts the idea that the cheese is the oldest ever found." },
+      { letter: "D", text: "The second sentence describes the taste of the ancient cheese." }
+    ],
+    correctAnswer: "A",
+    explanation: "The first sentence announces the discovery; the second provides scientific evidence (chemical analysis) backing up the age and authenticity.",
+    difficulty: "Hard",
+    domain: "Reading and Writing",
+    skill: "Inference"
+  },
+  {
+    id: "eng282",
+    question: "Many people believe that electric cars are the future of transportation, yet sales still represent only a small fraction of the total auto market.\n\nThe word \"yet\" primarily signals",
+    options: [
+      { letter: "A", text: "a contrast between expectation and reality." },
+      { letter: "B", text: "the passage of time." },
+      { letter: "C", text: "a cause-and-effect relationship." },
+      { letter: "D", text: "an additional supporting example." }
+    ],
+    correctAnswer: "A",
+    explanation: "'Yet' introduces the surprising reality that contradicts the widespread belief stated in the first clause.",
+    difficulty: "Hard",
+    domain: "Reading and Writing",
+    skill: "Inference"
+  },
+  {
+    id: "eng283",
+    question: "Archaeologists recently uncovered a Roman-era mosaic depicting sea creatures. The artwork's vivid colors remain largely intact despite being buried for nearly 2,000 years.\n\nThe second sentence primarily serves to",
+    options: [
+      { letter: "A", text: "emphasize the exceptional preservation of the mosaic." },
+      { letter: "B", text: "explain how the mosaic was discovered." },
+      { letter: "C", text: "describe the types of sea creatures shown." },
+      { letter: "D", text: "argue that Roman artists were superior to modern ones." }
+    ],
+    correctAnswer: "A",
+    explanation: "The mention of 'vivid colors...largely intact' after 2,000 years highlights how remarkably well-preserved the mosaic is.",
+    difficulty: "Hard",
+    domain: "Reading and Writing",
+    skill: "Inference"
+  },
+  {
+    id: "eng284",
+    question: "Some historians argue that the printing press was the most important invention of the last millennium because it democratized knowledge.\n\nWhich choice, if true, would most directly support this claim?",
+    options: [
+      { letter: "A", text: "Literacy rates rose dramatically in Europe after 1500." },
+      { letter: "B", text: "Johannes Gutenberg was a skilled goldsmith." },
+      { letter: "C", text: "Books became more expensive after the printing press was invented." },
+      { letter: "D", text: "The first printed Bible appeared in 1455." }
+    ],
+    correctAnswer: "A",
+    explanation: "A sharp rise in literacy is strong evidence that knowledge became more widely accessible (democratized) after the printing press.",
+    difficulty: "Hard",
+    domain: "Reading and Writing",
+    skill: "Evidence"
+  },
+  {
+    id: "eng285",
+    question: "The author writes: \"Renewable energy sources—solar, wind, and hydroelectric—now account for over 20% of global electricity production.\"\n\nThe dashes are used to",
+    options: [
+      { letter: "A", text: "set off examples that clarify the term 'renewable energy sources.'" },
+      { letter: "B", text: "indicate an abrupt change in thought." },
+      { letter: "C", text: "show that the list is incomplete." },
+      { letter: "D", text: "emphasize the surprising nature of the statistic." }
+    ],
+    correctAnswer: "A",
+    explanation: "The dashes enclose specific examples of what the author means by 'renewable energy sources.'",
+    difficulty: "Hard",
+    domain: "Reading and Writing",
+    skill: "Standard English Conventions"
+  },
+  {
+    id: "eng286",
+    question: "A new study claims that listening to music while studying improves concentration. However, other researchers have failed to replicate these results.\n\nThe second sentence primarily functions to",
+    options: [
+      { letter: "A", text: "cast doubt on the reliability of the new study's findings." },
+      { letter: "B", text: "explain how the study was conducted." },
+      { letter: "C", text: "provide additional evidence for the claim." },
+      { letter: "D", text: "suggest that music type matters more than listening itself." }
+    ],
+    correctAnswer: "A",
+    explanation: "Failure to replicate is a major red flag in science and directly challenges the original claim.",
+    difficulty: "Hard",
+    domain: "Reading and Writing",
+    skill: "Inference"
+  },
+  {
+    id: "eng287",
+    question: "The city plans to convert an abandoned rail line into a park similar to the High Line in New York City.\n\nThe underlined portion could best be replaced with",
+    options: [
+      { letter: "A", text: "NO CHANGE" },
+      { letter: "B", text: "in the same way as" },
+      { letter: "C", text: "modeled after" },
+      { letter: "D", text: "just as" }
+    ],
+    correctAnswer: "C",
+    explanation: "'Modeled after' is the most precise and idiomatic phrase for indicating that one project is intentionally designed based on another.",
+    difficulty: "Hard",
+    domain: "Reading and Writing",
+    skill: "Standard English Conventions"
+  },
+  {
+    id: "eng288",
+    question: "Some birds migrate thousands of miles each year, yet they return to the exact same nesting site.\n\nThe word \"yet\" primarily serves to",
+    options: [
+      { letter: "A", text: "indicate surprise or contrast." },
+      { letter: "B", text: "show the passage of time." },
+      { letter: "C", text: "suggest a cause-and-effect relationship." },
+      { letter: "D", text: "add an additional supporting detail." }
+    ],
+    correctAnswer: "A",
+    explanation: "'Yet' highlights the impressive contrast between traveling huge distances and still finding the precise same spot.",
+    difficulty: "Hard",
+    domain: "Reading and Writing",
+    skill: "Inference"
+  },
+  {
+    id: "eng289",
+    question: "The author writes: \"Social media promised to connect us—yet many users report feeling more isolated than ever.\"\n\nThe dash primarily serves to",
+    options: [
+      { letter: "A", text: "introduce an ironic or unexpected outcome." },
+      { letter: "B", text: "indicate omitted text." },
+      { letter: "C", text: "show a range of years." },
+      { letter: "D", text: "separate two unrelated ideas." }
+    ],
+    correctAnswer: "A",
+    explanation: "The dash dramatically highlights the opposite of what was promised.",
+    difficulty: "Hard",
+    domain: "Reading and Writing",
+    skill: "Standard English Conventions"
+  },
+  {
+    id: "eng290",
+    question: "The following text is adapted from Edith Wharton's 1905 novel The House of Mirth.\n\n\"She was so evidently the victim of the civilization which had produced her, that the links of her bracelet seemed like manacles chaining her to her fate.\"\n\nWhich choice completes the text with the most logical and precise word or phrase?",
+    options: [
+      { letter: "A", text: "NO CHANGE" },
+      { letter: "B", text: "obviously" },
+      { letter: "C", text: "clearly" },
+      { letter: "D", text: "plainly" }
+    ],
+    correctAnswer: "A",
+    explanation: "'Evidently' is the original and strongest word—it means the evidence is right there in front of you, fitting the strong metaphor of the bracelet as manacles.",
+    difficulty: "Hard",
+    domain: "Reading and Writing",
+    skill: "Inference"
+  },
+  {
+    id: "eng291",
+    question: "The author writes: \"The internet was supposed to bring the world together—instead, it often drives us apart.\"\n\nThe dash is used to",
+    options: [
+      { letter: "A", text: "introduce a contrasting or ironic outcome." },
+      { letter: "B", text: "indicate omitted text." },
+      { letter: "C", text: "show a range of years." },
+      { letter: "D", text: "separate two unrelated ideas." }
+    ],
+    correctAnswer: "A",
+    explanation: "The dash dramatically sets up the opposite of what was promised.",
+    difficulty: "Hard",
+    domain: "Reading and Writing",
+    skill: "Standard English Conventions"
+  },
+  {
+    id: "eng292",
+    question: "Researchers found that plants grown under red light grew taller than those grown under blue light.\n\nWhich choice would most directly strengthen the implication that red light causes increased height?",
+    options: [
+      { letter: "A", text: "The plants were all the same species and age." },
+      { letter: "B", text: "The experiment lasted six weeks." },
+      { letter: "C", text: "Plants under green light grew the shortest." },
+      { letter: "D", text: "Temperature and water were kept identical in both groups." }
+    ],
+    correctAnswer: "D",
+    explanation: "Controlling for other variables (temperature, water) makes it more likely that light color was the actual cause.",
+    difficulty: "Hard",
+    domain: "Reading and Writing",
+    skill: "Evidence"
+  },
+  {
+    id: "eng293",
+    question: "The new policy bans plastic straws in restaurants; paper or metal straws must be provided only upon request.\n\nThe semicolon is used correctly because",
+    options: [
+      { letter: "A", text: "both clauses are independent and closely related." },
+      { letter: "B", text: "the second clause explains the first." },
+      { letter: "C", text: "a list follows the semicolon." },
+      { letter: "D", text: "the two clauses contradict each other." }
+    ],
+    correctAnswer: "A",
+    explanation: "Both sides of the semicolon are complete sentences and closely related in topic.",
+    difficulty: "Hard",
+    domain: "Reading and Writing",
+    skill: "Standard English Conventions"
+  },
+  {
+    id: "eng294",
+    question: "Many cities have introduced congestion pricing—charging drivers to enter crowded downtown areas—in an effort to reduce traffic and pollution.\n\nThe dashes primarily function to",
+    options: [
+      { letter: "A", text: "set off a definition or clarification of 'congestion pricing.'" },
+      { letter: "B", text: "indicate an abrupt break in thought." },
+      { letter: "C", text: "show that the policy is controversial." },
+      { letter: "D", text: "separate two contrasting ideas." }
+    ],
+    correctAnswer: "A",
+    explanation: "The dashes enclose an explanatory phrase that defines exactly what congestion pricing means.",
+    difficulty: "Hard",
+    domain: "Reading and Writing",
+    skill: "Standard English Conventions"
+  },
+  {
+    id: "eng295",
+    question: "A recent survey found that 70% of respondents believe artificial intelligence will create more jobs than it eliminates over the next decade.\n\nWhich finding, if true, would most directly weaken the optimism expressed in the survey?",
+    options: [
+      { letter: "A", text: "Most respondents work in technology-related fields." },
+      { letter: "B", text: "Similar surveys in the past have overestimated job creation from new technologies." },
+      { letter: "C", text: "Many respondents are unsure about the exact impact of AI." },
+      { letter: "D", text: "30% of respondents believe AI will eliminate more jobs than it creates." }
+    ],
+    correctAnswer: "B",
+    explanation: "Historical overestimation of job creation from new technology directly undermines confidence in the current optimistic prediction.",
+    difficulty: "Hard",
+    domain: "Reading and Writing",
+    skill: "Evidence"
+  },
+  {
+    id: "eng296",
+    question: "The author writes: \"Remote work sounded like a dream—until millions of people tried doing it full-time during the pandemic.\"\n\nThe dash is used to",
+    options: [
+      { letter: "A", text: "introduce an ironic or unexpected outcome." },
+      { letter: "B", text: "indicate a change in tense." },
+      { letter: "C", text: "show that the author is quoting someone else." },
+      { letter: "D", text: "separate items in a list." }
+    ],
+    correctAnswer: "A",
+    explanation: "The dash sets up the punchline: what seemed ideal in theory turned out to have major downsides in practice.",
+    difficulty: "Hard",
+    domain: "Reading and Writing",
+    skill: "Standard English Conventions"
+  },
+  {
+    id: "eng297",
+    question: "Researchers studying ancient Roman concrete discovered that it contained lime clasts—small, bright chunks—that allow the material to self-heal when cracks form.\n\nWhich choice best explains the function of the appositive phrase \"small, bright chunks\"?",
+    options: [
+      { letter: "A", text: "It provides a visual description of lime clasts." },
+      { letter: "B", text: "It defines a technical term for non-experts." },
+      { letter: "C", text: "It contrasts lime clasts with modern concrete additives." },
+      { letter: "D", text: "It explains why Roman concrete is stronger." }
+    ],
+    correctAnswer: "A",
+    explanation: "The phrase gives a simple visual description so readers can picture what the researchers saw.",
+    difficulty: "Hard",
+    domain: "Reading and Writing",
+    skill: "Inference"
+  },
+  {
+    id: "eng298",
+    question: "The following text is from Charlotte Bronte's 1847 novel Jane Eyre.\n\n\"I am no bird; and no net ensnares me: I am a free human being with an independent will.\"\n\nWhich choice completes the text with the most logical punctuation?",
+    options: [
+      { letter: "A", text: "NO CHANGE" },
+      { letter: "B", text: "even; there" },
+      { letter: "C", text: "even: there" },
+      { letter: "D", text: "even, there" }
+    ],
+    correctAnswer: "A",
+    explanation: "The semicolon correctly joins two independent clauses that reinforce each other.",
+    difficulty: "Hard",
+    domain: "Reading and Writing",
+    skill: "Standard English Conventions"
+  },
+  {
+    id: "eng299",
+    question: "The author writes: \"We are drowning in information—but starving for knowledge.\"\n\nThe dash is used to",
+    options: [
+      { letter: "A", text: "set up a strong contrast between two related ideas." },
+      { letter: "B", text: "indicate missing text." },
+      { letter: "C", text: "show a range." },
+      { letter: "D", text: "separate independent clauses." }
+    ],
+    correctAnswer: "A",
+    explanation: "The dash dramatically contrasts quantity (information) with quality (knowledge).",
+    difficulty: "Hard",
+    domain: "Reading and Writing",
+    skill: "Standard English Conventions"
+  },
+  {
+    id: "eng300",
+    question: "The author writes: \"The internet was supposed to bring the world together—instead, it often drives us apart.\"\n\nThe dash is primarily used to",
+    options: [
+      { letter: "A", text: "introduce a contrasting or ironic outcome." },
+      { letter: "B", text: "indicate omitted text." },
+      { letter: "C", text: "show a range of years." },
+      { letter: "D", text: "separate two unrelated ideas." }
+    ],
+    correctAnswer: "A",
+    explanation: "The dash dramatically sets up the opposite of what was promised.",
+    difficulty: "Hard",
+    domain: "Reading and Writing",
+    skill: "Standard English Conventions"
   }
 ];
