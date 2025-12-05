@@ -162,5 +162,80 @@ export const englishQuestions: EnglishQuestion[] = [
     difficulty: "Hard",
     domain: "Reading and Writing",
     skill: "Transitions"
+  },
+  {
+    id: "eng011",
+    question: "The following text is adapted from Jane Austen's Pride and Prejudice (1813).\nElizabeth had been told that Mr. Darcy was exceedingly proud, but she now began to perceive that his pride was not offensive.\n\nWhich choice best states the function of the word 'but' in the text?",
+    options: [
+      { letter: "A", text: "To indicate a change in Elizabeth's perception over time" },
+      { letter: "B", text: "To contrast Elizabeth's earlier belief with her current understanding" },
+      { letter: "C", text: "To suggest that Elizabeth's opinion was entirely unjustified" },
+      { letter: "D", text: "To emphasize the intensity of Mr. Darcy's pride" }
+    ],
+    correctAnswer: "B",
+    explanation: "'But' signals the contrast between what Elizabeth had been told and what she now perceives.",
+    difficulty: "Hard",
+    domain: "Reading and Writing",
+    skill: "Text Structure and Purpose"
+  },
+  {
+    id: "eng012",
+    question: "The critic's review, ______ scathing in tone, nevertheless praised the film's cinematography.",
+    options: [
+      { letter: "A", text: "otherwise" },
+      { letter: "B", text: "consequently" },
+      { letter: "C", text: "alternatively" },
+      { letter: "D", text: "undeniably" }
+    ],
+    correctAnswer: "D",
+    explanation: "'Undeniably' concedes that the scathing tone is true while allowing the praise of cinematography.",
+    difficulty: "Hard",
+    domain: "Reading and Writing",
+    skill: "Transitions"
+  },
+  {
+    id: "eng013",
+    question: "The ancient city of Angkor Wat, ______ by jungle for centuries, was rediscovered by European explorers in the 1860s.",
+    options: [
+      { letter: "A", text: "having concealed" },
+      { letter: "B", text: "concealed" },
+      { letter: "C", text: "concealing" },
+      { letter: "D", text: "which concealed" }
+    ],
+    correctAnswer: "B",
+    explanation: "The past participle 'concealed' correctly modifies the city in a concise, standard construction.",
+    difficulty: "Hard",
+    domain: "Reading and Writing",
+    skill: "Form, Structure, and Sense"
+  },
+  {
+    id: "eng014",
+    question: "Researchers found that the new material ______ under extreme pressure without fracturing.",
+    options: [
+      { letter: "A", text: "remains intact" },
+      { letter: "B", text: "remain intact" },
+      { letter: "C", text: "remaining intact" },
+      { letter: "D", text: "remained intact" }
+    ],
+    correctAnswer: "A",
+    explanation: "The singular subject 'material' requires the singular verb phrase 'remains intact.'",
+    difficulty: "Hard",
+    domain: "Reading and Writing",
+    skill: "Subject-Verb Agreement"
+  },
+  {
+    id: "eng015",
+    question: "The committee recommends that the proposal ______ by the board next month.",
+    options: [
+      { letter: "A", text: "is reviewed" },
+      { letter: "B", text: "be reviewed" },
+      { letter: "C", text: "was reviewed" },
+      { letter: "D", text: "reviewing" }
+    ],
+    correctAnswer: "B",
+    explanation: "The subjunctive mood is required after 'recommends that.'",
+    difficulty: "Hard",
+    domain: "Reading and Writing",
+    skill: "Form, Structure, and Sense"
   }
 ];
