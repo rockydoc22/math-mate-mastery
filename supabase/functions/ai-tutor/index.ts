@@ -1,4 +1,5 @@
 import { serve } from "https://deno.land/std@0.168.0/http/server.ts";
+import { createClient } from "https://esm.sh/@supabase/supabase-js@2";
 
 const corsHeaders = {
   "Access-Control-Allow-Origin": "*",
@@ -11,7 +12,77 @@ serve(async (req) => {
   }
 
   try {
-    const { question, options, correctAnswer, userAnswer, explanation } = await req.json();
+    // Authentication check
+    const authHeader = req.headers.get("Authorization");
+    const supabase = createClient(
+      Deno.env.get("SUPABASE_URL") ?? "",
+      Deno.env.get("SUPABASE_ANON_KEY") ?? "",
+      { global: { headers: { Authorization: authHeader ?? "" } } }
+    );
+    
+    const { data: { user }, error: authError } = await supabase.auth.getUser();
+    if (authError || !user) {
+      console.error("Auth error:", authError?.message);
+      return new Response(JSON.stringify({ error: "Unauthorized. Please sign in to use the AI tutor." }), {
+        status: 401,
+        headers: { ...corsHeaders, "Content-Type": "application/json" },
+      });
+    }
+
+    // Parse and validate input
+    const body = await req.json();
+    const { question, options, correctAnswer, userAnswer, explanation } = body;
+
+    // Input validation
+    if (!question || typeof question !== "string" || question.length > 5000) {
+      return new Response(JSON.stringify({ error: "Invalid question: must be a string under 5000 characters" }), {
+        status: 400,
+        headers: { ...corsHeaders, "Content-Type": "application/json" },
+      });
+    }
+
+    if (!Array.isArray(options) || options.length === 0 || options.length > 10) {
+      return new Response(JSON.stringify({ error: "Invalid options: must be an array of 1-10 items" }), {
+        status: 400,
+        headers: { ...corsHeaders, "Content-Type": "application/json" },
+      });
+    }
+
+    for (const opt of options) {
+      if (!opt || typeof opt.letter !== "string" || typeof opt.text !== "string") {
+        return new Response(JSON.stringify({ error: "Invalid option format: each option must have letter and text" }), {
+          status: 400,
+          headers: { ...corsHeaders, "Content-Type": "application/json" },
+        });
+      }
+      if (opt.text.length > 2000) {
+        return new Response(JSON.stringify({ error: "Invalid option: text must be under 2000 characters" }), {
+          status: 400,
+          headers: { ...corsHeaders, "Content-Type": "application/json" },
+        });
+      }
+    }
+
+    if (!correctAnswer || typeof correctAnswer !== "string" || correctAnswer.length > 10) {
+      return new Response(JSON.stringify({ error: "Invalid correctAnswer" }), {
+        status: 400,
+        headers: { ...corsHeaders, "Content-Type": "application/json" },
+      });
+    }
+
+    if (!userAnswer || typeof userAnswer !== "string" || userAnswer.length > 10) {
+      return new Response(JSON.stringify({ error: "Invalid userAnswer" }), {
+        status: 400,
+        headers: { ...corsHeaders, "Content-Type": "application/json" },
+      });
+    }
+
+    if (explanation && (typeof explanation !== "string" || explanation.length > 5000)) {
+      return new Response(JSON.stringify({ error: "Invalid explanation: must be under 5000 characters" }), {
+        status: 400,
+        headers: { ...corsHeaders, "Content-Type": "application/json" },
+      });
+    }
     
     const LOVABLE_API_KEY = Deno.env.get("LOVABLE_API_KEY");
     if (!LOVABLE_API_KEY) {
@@ -39,9 +110,11 @@ ${options.map((o: any) => `${o.letter}. ${o.text}`).join('\n')}
 Correct Answer: ${correctAnswer}. ${correctOption?.text}
 ${!isCorrect ? `Student's Answer: ${userAnswer}. ${userOption?.text}` : ''}
 
-Original Explanation: ${explanation}
+Original Explanation: ${explanation || 'Not provided'}
 
 Please provide a personalized tutoring explanation for this student who ${isCorrect ? 'got this question correct' : 'got this question wrong'}.`;
+
+    console.log(`AI tutor request from user ${user.id} for question (${question.substring(0, 50)}...)`);
 
     const response = await fetch("https://ai.gateway.lovable.dev/v1/chat/completions", {
       method: "POST",
