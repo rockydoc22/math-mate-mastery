@@ -312,5 +312,80 @@ export const englishQuestions: EnglishQuestion[] = [
     difficulty: "Hard",
     domain: "Reading and Writing",
     skill: "Text Structure and Purpose"
+  },
+  {
+    id: "eng021",
+    question: "The philosopher's argument, though elegantly constructed, ultimately rests on a ______ premise that most scholars now reject.\n\nWhich choice completes the text with the most logical and precise word?",
+    options: [
+      { letter: "A", text: "tenuous" },
+      { letter: "B", text: "incontrovertible" },
+      { letter: "C", text: "pragmatic" },
+      { letter: "D", text: "esoteric" }
+    ],
+    correctAnswer: "A",
+    explanation: "'Tenuous' means weak or shaky, fitting the contrast between elegant construction and scholarly rejection.",
+    difficulty: "Hard",
+    domain: "Reading and Writing",
+    skill: "Words in Context"
+  },
+  {
+    id: "eng022",
+    question: "When soil becomes contaminated by toxic metals, it can be excavated and sent to a landfill. ______ bioremediation offers a less invasive approach using microorganisms to break down the pollutants in place.\n\nWhich choice completes the text with the most logical transition?",
+    options: [
+      { letter: "A", text: "Alternatively," },
+      { letter: "B", text: "Specifically," },
+      { letter: "C", text: "For example," },
+      { letter: "D", text: "Consequently," }
+    ],
+    correctAnswer: "A",
+    explanation: "'Alternatively' correctly signals a different method from excavation.",
+    difficulty: "Hard",
+    domain: "Reading and Writing",
+    skill: "Transitions"
+  },
+  {
+    id: "eng023",
+    question: "While researching a topic, a student took the following notes:\n• The axolotl can fully regenerate lost limbs, spinal cord, heart tissue, and even parts of its brain.\n• Most vertebrates lose this ability after embryonic stages.\n• The axolotl retains juvenile features into adulthood (neoteny).\n• This trait is linked to lower thyroid hormone levels.\n• It is native only to two lakes near Mexico City.\n\nThe student wants to emphasize how exceptional the axolotl's regenerative ability is among vertebrates.",
+    options: [
+      { letter: "A", text: "Axolotls are native to two lakes near Mexico City and exhibit neoteny." },
+      { letter: "B", text: "Unlike nearly all other vertebrates, axolotls can regenerate complex organs throughout life." },
+      { letter: "C", text: "Axolotls retain juvenile features due to low thyroid hormone levels." },
+      { letter: "D", text: "Most vertebrates lose regenerative ability after the embryonic stage." }
+    ],
+    correctAnswer: "B",
+    explanation: "Choice B directly contrasts axolotls with 'nearly all other vertebrates' and highlights the rarity of lifelong complex regeneration.",
+    difficulty: "Hard",
+    domain: "Reading and Writing",
+    skill: "Rhetorical Synthesis"
+  },
+  {
+    id: "eng024",
+    question: "The following text is adapted from George Eliot's Middlemarch (1871–72).\n\"People were now beginning to see that Dorothea was not at all eccentric in her religious ideas.\"\n\nWhich choice best describes the function of 'not at all' in the text?",
+    options: [
+      { letter: "A", text: "To intensify the denial of eccentricity" },
+      { letter: "B", text: "To soften the previous perception" },
+      { letter: "C", text: "To introduce a new character trait" },
+      { letter: "D", text: "To express the narrator's personal opinion" }
+    ],
+    correctAnswer: "A",
+    explanation: "'Not at all' emphatically denies the earlier view of Dorothea as eccentric.",
+    difficulty: "Hard",
+    domain: "Reading and Writing",
+    skill: "Text Structure and Purpose"
+  },
+  {
+    id: "eng025",
+    question: "The committee ______ that the policy be revised before the end of the fiscal year.\n\nWhich choice completes the text so that it conforms to the conventions of Standard English?",
+    options: [
+      { letter: "A", text: "recommends" },
+      { letter: "B", text: "recommend" },
+      { letter: "C", text: "recommending" },
+      { letter: "D", text: "recommended" }
+    ],
+    correctAnswer: "A",
+    explanation: "The subjunctive mood ('be revised') requires the base form 'recommends' after 'committee … that.'",
+    difficulty: "Hard",
+    domain: "Reading and Writing",
+    skill: "Form, Structure, and Sense"
   }
 ];
