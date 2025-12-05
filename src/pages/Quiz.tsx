@@ -1,4 +1,4 @@
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { QuizCard } from "@/components/QuizCard";
 import { QuizResults } from "@/components/QuizResults";
@@ -8,6 +8,9 @@ import { visualMathQuestions, visualEnglishQuestions, VisualQuestion, moreMathVi
 import { ArrowRight, ArrowLeft } from "lucide-react";
 import { Progress } from "@/components/ui/progress";
 import { Link, useSearchParams } from "react-router-dom";
+import { useSoundEffects } from "@/hooks/useSoundEffects";
+import { useAuth } from "@/hooks/useAuth";
+import { useGameStats } from "@/hooks/useGameStats";
 
 type CombinedQuestion = (Question | EnglishQuestion | VisualQuestion) & { type: "math" | "english" };
 
@@ -24,6 +27,9 @@ const Quiz = () => {
   const [searchParams] = useSearchParams();
   const subject = searchParams.get("subject") || "math";
   const count = Number(searchParams.get("count")) || 10;
+  const { playCorrect, playWrong } = useSoundEffects();
+  const { user } = useAuth();
+  const { recordScore } = useGameStats();
 
   const quizQuestions = useMemo(() => {
     let pool: CombinedQuestion[] = [];
@@ -48,6 +54,7 @@ const Quiz = () => {
   const [showResult, setShowResult] = useState(false);
   const [score, setScore] = useState(0);
   const [finished, setFinished] = useState(false);
+  const [scoreRecorded, setScoreRecorded] = useState(false);
 
   const currentQuestion = quizQuestions[currentQuestionIndex];
   const progress = ((currentQuestionIndex + 1) / quizQuestions.length) * 100;
@@ -58,8 +65,12 @@ const Quiz = () => {
 
   const handleSubmit = () => {
     setShowResult(true);
-    if (selectedAnswer === currentQuestion.correctAnswer) {
+    const isCorrect = selectedAnswer === currentQuestion.correctAnswer;
+    if (isCorrect) {
       setScore(score + 1);
+      playCorrect();
+    } else {
+      playWrong();
     }
   };
 
@@ -79,7 +90,16 @@ const Quiz = () => {
     setShowResult(false);
     setScore(0);
     setFinished(false);
+    setScoreRecorded(false);
   };
+
+  // Record score when quiz finishes
+  useEffect(() => {
+    if (finished && user && !scoreRecorded) {
+      recordScore(subject, score, quizQuestions.length);
+      setScoreRecorded(true);
+    }
+  }, [finished, user, scoreRecorded, recordScore, subject, score, quizQuestions.length]);
 
   const getSubjectLabel = () => {
     if (subject === "both") return "Mixed";
@@ -94,6 +114,7 @@ const Quiz = () => {
           score={score}
           totalQuestions={quizQuestions.length}
           onRestart={handleRestart}
+          subject={getSubjectLabel()}
         />
       </div>
     );
