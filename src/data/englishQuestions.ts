@@ -132,5 +132,35 @@ export const englishQuestions: EnglishQuestion[] = [
     difficulty: "Hard",
     domain: "Reading and Writing",
     skill: "Transitions"
+  },
+  {
+    id: "eng009",
+    question: "While researching a topic, a student has taken the following notes:\n• The European honey bee can detect magnetic fields using specialized cells in its abdomen.\n• This ability helps bees navigate during foraging flights.\n• Migratory birds also use Earth's magnetic field for long-distance navigation.\n• Some sharks sense magnetic fields to hunt prey.\n• The exact mechanism in bees remains unclear despite decades of study.\n\nThe student wants to emphasize how unusual the honey bee's magnetic sense is among insects. Which choice most effectively uses relevant information from the notes?",
+    options: [
+      { letter: "A", text: "Many animals, including birds and sharks, use magnetic fields for navigation, and honey bees do too." },
+      { letter: "B", text: "Unlike most insects, European honey bees possess the rare ability to detect Earth's magnetic field." },
+      { letter: "C", text: "Honey bees use specialized abdominal cells to detect magnetic fields during foraging." },
+      { letter: "D", text: "The mechanism behind the honey bee's magnetic sense is still not fully understood." }
+    ],
+    correctAnswer: "B",
+    explanation: "This choice explicitly contrasts honey bees with 'most insects' and highlights the rarity of the ability.",
+    difficulty: "Hard",
+    domain: "Reading and Writing",
+    skill: "Rhetorical Synthesis"
+  },
+  {
+    id: "eng010",
+    question: "The discovery of penicillin by Alexander Fleming in 1928 is often celebrated as a breakthrough, ______ its accidental nature has led some historians to question whether it truly merits the label of scientific genius.\n\nWhich choice completes the text with the most logical transition?",
+    options: [
+      { letter: "A", text: "because" },
+      { letter: "B", text: "although" },
+      { letter: "C", text: "therefore" },
+      { letter: "D", text: "moreover" }
+    ],
+    correctAnswer: "B",
+    explanation: "'Although' correctly sets up the contrast between the celebration of the discovery and the criticism of its accidental character.",
+    difficulty: "Hard",
+    domain: "Reading and Writing",
+    skill: "Transitions"
   }
 ];
