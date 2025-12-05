@@ -14,6 +14,27 @@ export type Database = {
   }
   public: {
     Tables: {
+      achievements: {
+        Row: {
+          achievement_type: string
+          id: string
+          unlocked_at: string
+          user_id: string
+        }
+        Insert: {
+          achievement_type: string
+          id?: string
+          unlocked_at?: string
+          user_id: string
+        }
+        Update: {
+          achievement_type?: string
+          id?: string
+          unlocked_at?: string
+          user_id?: string
+        }
+        Relationships: []
+      }
       flagged_questions: {
         Row: {
           created_at: string
@@ -44,6 +65,87 @@ export type Database = {
           question_type?: string
           reporter_ip?: string | null
           status?: string
+        }
+        Relationships: []
+      }
+      profiles: {
+        Row: {
+          avatar_url: string | null
+          created_at: string
+          id: string
+          updated_at: string
+          username: string
+        }
+        Insert: {
+          avatar_url?: string | null
+          created_at?: string
+          id: string
+          updated_at?: string
+          username: string
+        }
+        Update: {
+          avatar_url?: string | null
+          created_at?: string
+          id?: string
+          updated_at?: string
+          username?: string
+        }
+        Relationships: []
+      }
+      quiz_scores: {
+        Row: {
+          created_at: string
+          id: string
+          percentage: number
+          score: number
+          subject: string
+          total_questions: number
+          user_id: string
+        }
+        Insert: {
+          created_at?: string
+          id?: string
+          percentage: number
+          score: number
+          subject: string
+          total_questions: number
+          user_id: string
+        }
+        Update: {
+          created_at?: string
+          id?: string
+          percentage?: number
+          score?: number
+          subject?: string
+          total_questions?: number
+          user_id?: string
+        }
+        Relationships: []
+      }
+      streaks: {
+        Row: {
+          current_streak: number
+          id: string
+          last_practice_date: string | null
+          longest_streak: number
+          updated_at: string
+          user_id: string
+        }
+        Insert: {
+          current_streak?: number
+          id?: string
+          last_practice_date?: string | null
+          longest_streak?: number
+          updated_at?: string
+          user_id: string
+        }
+        Update: {
+          current_streak?: number
+          id?: string
+          last_practice_date?: string | null
+          longest_streak?: number
+          updated_at?: string
+          user_id?: string
         }
         Relationships: []
       }
