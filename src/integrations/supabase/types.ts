@@ -458,7 +458,16 @@ export type Database = {
       }
     }
     Views: {
-      [_ in never]: never
+      leaderboard_scores: {
+        Row: {
+          avatar_emoji: string | null
+          avg_percentage: number | null
+          quiz_count: number | null
+          total_score: number | null
+          username: string | null
+        }
+        Relationships: []
+      }
     }
     Functions: {
       has_role: {
