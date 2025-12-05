@@ -1,14 +1,36 @@
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { BookOpen, Calculator, PenTool } from "lucide-react";
-import { Link } from "react-router-dom";
+import { BookOpen, Calculator, PenTool, Shuffle } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 import { questions } from "@/data/questions";
 import { englishQuestions } from "@/data/englishQuestions";
+import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
+import { Label } from "@/components/ui/label";
+
+type Subject = "math" | "english" | "both";
+type QuestionCount = 10 | 25 | 50;
 
 const Home = () => {
+  const navigate = useNavigate();
+  const [subject, setSubject] = useState<Subject>("math");
+  const [questionCount, setQuestionCount] = useState<QuestionCount>(10);
+
+  const handleStartPractice = () => {
+    navigate(`/quiz?subject=${subject}&count=${questionCount}`);
+  };
+
+  const subjectOptions = [
+    { value: "math" as Subject, label: "Math", icon: Calculator, color: "primary" },
+    { value: "english" as Subject, label: "English", icon: PenTool, color: "secondary" },
+    { value: "both" as Subject, label: "Both", icon: Shuffle, color: "accent" },
+  ];
+
+  const countOptions: QuestionCount[] = [10, 25, 50];
+
   return (
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-primary/5 via-secondary/5 to-accent/5 p-4">
-      <div className="max-w-4xl w-full text-center space-y-8 animate-in fade-in duration-500">
+      <div className="max-w-2xl w-full text-center space-y-8 animate-in fade-in duration-500">
         <div className="space-y-4">
           <div className="flex justify-center mb-6">
             <BookOpen className="w-20 h-20 text-primary" />
@@ -21,55 +43,60 @@ const Home = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-6">
-          <Card className="p-8 hover:shadow-xl transition-all duration-300 hover:scale-[1.02] border-2 border-border">
-            <div className="space-y-6">
-              <div className="flex justify-center">
-                <div className="p-4 bg-primary/10 rounded-full">
-                  <Calculator className="w-12 h-12 text-primary" />
-                </div>
-              </div>
-              <div>
-                <h2 className="text-2xl font-bold">Math</h2>
-                <p className="text-muted-foreground mt-2">
-                  Algebra, linear equations, and systems of equations
-                </p>
-              </div>
-              <div className="flex justify-center text-sm text-muted-foreground">
-                <span className="px-3 py-1 bg-primary/10 rounded-full">{questions.length} Questions</span>
-              </div>
-              <Link to="/math">
-                <Button size="lg" className="w-full">
-                  Start Math Practice
-                </Button>
-              </Link>
+        <Card className="p-8 border-2 border-border text-left space-y-6">
+          {/* Subject Selection */}
+          <div className="space-y-4">
+            <h3 className="font-semibold text-lg">Choose Subject</h3>
+            <div className="grid grid-cols-3 gap-3">
+              {subjectOptions.map(({ value, label, icon: Icon, color }) => (
+                <button
+                  key={value}
+                  onClick={() => setSubject(value)}
+                  className={`p-4 rounded-lg border-2 transition-all duration-200 ${
+                    subject === value
+                      ? `border-${color} bg-${color}/10`
+                      : "border-border hover:border-muted-foreground/50"
+                  }`}
+                >
+                  <div className="flex flex-col items-center gap-2">
+                    <Icon className={`w-6 h-6 ${subject === value ? `text-${color}` : "text-muted-foreground"}`} />
+                    <span className={`font-medium ${subject === value ? "" : "text-muted-foreground"}`}>
+                      {label}
+                    </span>
+                  </div>
+                </button>
+              ))}
             </div>
-          </Card>
+            <p className="text-sm text-muted-foreground">
+              {subject === "math" && `${questions.length} questions available`}
+              {subject === "english" && `${englishQuestions.length} questions available`}
+              {subject === "both" && `${questions.length + englishQuestions.length} questions available`}
+            </p>
+          </div>
 
-          <Card className="p-8 hover:shadow-xl transition-all duration-300 hover:scale-[1.02] border-2 border-border">
-            <div className="space-y-6">
-              <div className="flex justify-center">
-                <div className="p-4 bg-secondary/10 rounded-full">
-                  <PenTool className="w-12 h-12 text-secondary" />
+          {/* Question Count Selection */}
+          <div className="space-y-4">
+            <h3 className="font-semibold text-lg">Number of Questions</h3>
+            <RadioGroup
+              value={String(questionCount)}
+              onValueChange={(v) => setQuestionCount(Number(v) as QuestionCount)}
+              className="flex gap-4"
+            >
+              {countOptions.map((count) => (
+                <div key={count} className="flex items-center space-x-2">
+                  <RadioGroupItem value={String(count)} id={`count-${count}`} />
+                  <Label htmlFor={`count-${count}`} className="cursor-pointer">
+                    {count} Questions
+                  </Label>
                 </div>
-              </div>
-              <div>
-                <h2 className="text-2xl font-bold">Reading & Writing</h2>
-                <p className="text-muted-foreground mt-2">
-                  Grammar, vocabulary, and text analysis
-                </p>
-              </div>
-              <div className="flex justify-center text-sm text-muted-foreground">
-                <span className="px-3 py-1 bg-primary/10 rounded-full">{englishQuestions.length} Questions</span>
-              </div>
-              <Link to="/english">
-                <Button size="lg" variant="secondary" className="w-full">
-                  Start English Practice
-                </Button>
-              </Link>
-            </div>
-          </Card>
-        </div>
+              ))}
+            </RadioGroup>
+          </div>
+
+          <Button size="lg" className="w-full" onClick={handleStartPractice}>
+            Start Practice
+          </Button>
+        </Card>
       </div>
     </div>
   );
