@@ -1887,5 +1887,1130 @@ export const englishQuestions: EnglishQuestion[] = [
     difficulty: "Hard",
     domain: "Reading and Writing",
     skill: "Subject-Verb Agreement"
+  },
+  {
+    id: "eng126",
+    question: "The anthropologist's fieldwork revealed that the community's oral traditions, far from being static relics of the past, are ______ narratives that adapt to address contemporary concerns.",
+    options: [
+      { letter: "A", text: "dynamic" },
+      { letter: "B", text: "obsolete" },
+      { letter: "C", text: "immutable" },
+      { letter: "D", text: "spurious" }
+    ],
+    correctAnswer: "A",
+    explanation: "'Dynamic' means constantly changing or developing. The phrase 'far from being static' and 'adapt to address contemporary concerns' indicates the narratives are dynamic, not fixed.",
+    difficulty: "Hard",
+    domain: "Reading and Writing",
+    skill: "Words in Context"
+  },
+  {
+    id: "eng127",
+    question: "The physicist proposed that quantum entanglement ______ instantaneous communication across vast distances, but subsequent experiments have confirmed that no information can be transmitted faster than light.",
+    options: [
+      { letter: "A", text: "enables" },
+      { letter: "B", text: "enabled" },
+      { letter: "C", text: "might enable" },
+      { letter: "D", text: "enabling" }
+    ],
+    correctAnswer: "C",
+    explanation: "'Might enable' correctly expresses the physicist's tentative proposal about a possibility. The 'but' clause shows this possibility was not confirmed, making the modal 'might' appropriate.",
+    difficulty: "Hard",
+    domain: "Reading and Writing",
+    skill: "Form, Structure, and Sense"
+  },
+  {
+    id: "eng128",
+    question: "Text 1:\nEconomist Milton Friedman argued that a corporation's sole social responsibility is to maximize profits for shareholders. He contended that when executives pursue social goals, they effectively tax shareholders and usurp governmental functions without democratic accountability.\n\nText 2:\nBusiness scholar R. Edward Freeman's 'stakeholder theory' challenges Friedman's shareholder primacy model. Freeman argues that corporations should balance the interests of all stakeholders—employees, customers, communities, and the environment—not just shareholders. He contends that this approach ultimately produces more sustainable business success.\n\nBased on the texts, Freeman (Text 2) would most likely argue that Friedman's position in Text 1:",
+    options: [
+      { letter: "A", text: "Correctly identifies profit maximization as one important corporate goal among several" },
+      { letter: "B", text: "Adopts too narrow a view of corporate responsibility and long-term success" },
+      { letter: "C", text: "Fails to account for the legal obligations corporations have to shareholders" },
+      { letter: "D", text: "Overstates the ability of corporations to pursue social goals effectively" }
+    ],
+    correctAnswer: "B",
+    explanation: "Freeman advocates balancing multiple stakeholder interests for 'sustainable business success.' He would likely criticize Friedman's exclusive focus on shareholders as too narrow, ignoring other stakeholders who contribute to long-term success.",
+    difficulty: "Hard",
+    domain: "Reading and Writing",
+    skill: "Cross-Text Connections"
+  },
+  {
+    id: "eng129",
+    question: "The following text is adapted from James Joyce's A Portrait of the Artist as a Young Man (1916).\nOnce upon a time and a very good time it was there was a moocow coming down along the road and this moocow that was coming down along the road met a nicens little boy named baby tuckoo.\n\nWhich choice best describes the function of this opening passage?",
+    options: [
+      { letter: "A", text: "It mimics a child's language to establish the protagonist's earliest consciousness" },
+      { letter: "B", text: "It introduces the novel's central metaphor of cattle and childhood" },
+      { letter: "C", text: "It satirizes traditional fairy tale conventions" },
+      { letter: "D", text: "It establishes an omniscient narrator who will guide the reader" }
+    ],
+    correctAnswer: "A",
+    explanation: "The childlike language ('moocow,' 'nicens,' 'baby tuckoo') and fairy-tale structure ('Once upon a time') mimic how a young child experiences and remembers stories, establishing the narrative from the protagonist's earliest consciousness.",
+    difficulty: "Hard",
+    domain: "Reading and Writing",
+    skill: "Text Structure and Purpose"
+  },
+  {
+    id: "eng130",
+    question: "While researching a topic, a student took the following notes:\n• The James Webb Space Telescope launched in December 2021.\n• It observes infrared light, allowing it to see through cosmic dust clouds.\n• JWST has detected galaxies forming just 300 million years after the Big Bang.\n• These early galaxies are more massive and mature than models predicted.\n• The findings have prompted astronomers to reconsider theories of early universe structure.\n\nThe student wants to emphasize how JWST observations have challenged existing scientific models.",
+    options: [
+      { letter: "A", text: "The James Webb Space Telescope observes infrared light, enabling it to penetrate cosmic dust clouds." },
+      { letter: "B", text: "JWST launched in December 2021 and has detected galaxies from just 300 million years after the Big Bang." },
+      { letter: "C", text: "By revealing unexpectedly massive early galaxies, JWST has forced astronomers to reconsider theories of cosmic evolution." },
+      { letter: "D", text: "The James Webb Space Telescope can observe light from the earliest period of galaxy formation." }
+    ],
+    correctAnswer: "C",
+    explanation: "Choice C emphasizes the challenge to models by noting galaxies were 'unexpectedly massive' and this 'forced astronomers to reconsider theories'—directly showing how observations challenged existing science.",
+    difficulty: "Hard",
+    domain: "Reading and Writing",
+    skill: "Rhetorical Synthesis"
+  },
+  {
+    id: "eng131",
+    question: "The composer's late quartets are characterized by their ______ complexity: what initially sounds like dissonant chaos reveals, upon repeated listening, intricate structural relationships.",
+    options: [
+      { letter: "A", text: "apparent" },
+      { letter: "B", text: "superficial" },
+      { letter: "C", text: "deceptive" },
+      { letter: "D", text: "transparent" }
+    ],
+    correctAnswer: "C",
+    explanation: "'Deceptive' complexity means the complexity misleads initial perception. What 'sounds like dissonant chaos' actually conceals 'intricate structural relationships'—the apparent disorder deceives listeners about the underlying order.",
+    difficulty: "Hard",
+    domain: "Reading and Writing",
+    skill: "Words in Context"
+  },
+  {
+    id: "eng132",
+    question: "The treaty negotiations collapsed when neither party would ______ on the disputed territorial provisions, each insisting that concessions would set dangerous precedents.",
+    options: [
+      { letter: "A", text: "capitulate" },
+      { letter: "B", text: "compromise" },
+      { letter: "C", text: "elaborate" },
+      { letter: "D", text: "speculate" }
+    ],
+    correctAnswer: "B",
+    explanation: "'Compromise' means reaching agreement through mutual concession. The negotiations 'collapsed' because neither party would compromise, with each refusing concessions.",
+    difficulty: "Hard",
+    domain: "Reading and Writing",
+    skill: "Words in Context"
+  },
+  {
+    id: "eng133",
+    question: "The study's conclusions rest on the assumption that participants' self-reported behaviors accurately reflect their actual behaviors; ______, this assumption may not hold for socially sensitive topics where respondents might provide misleading answers.\n\nWhich choice completes the text with the most logical transition?",
+    options: [
+      { letter: "A", text: "furthermore" },
+      { letter: "B", text: "however" },
+      { letter: "C", text: "therefore" },
+      { letter: "D", text: "similarly" }
+    ],
+    correctAnswer: "B",
+    explanation: "'However' correctly signals the contrast between the study's assumption and the acknowledgment that this assumption may be problematic for sensitive topics.",
+    difficulty: "Hard",
+    domain: "Reading and Writing",
+    skill: "Transitions"
+  },
+  {
+    id: "eng134",
+    question: "Text 1:\nHistorian Frederick Jackson Turner's 'frontier thesis' argued that American democracy and national character were shaped by the experience of westward expansion. The frontier, he claimed, fostered individualism, innovation, and egalitarianism as settlers adapted to challenging conditions.\n\nText 2:\nContemporary historians have challenged Turner's thesis on multiple grounds. They note his erasure of Native American presence and agency, his neglect of the role of federal government subsidies in western settlement, and his failure to account for how race, gender, and class structured frontier experiences differently for different groups.\n\nBased on the texts, the historians in Text 2 would most likely argue that Turner's thesis in Text 1:",
+    options: [
+      { letter: "A", text: "Accurately captures the democratic spirit of frontier settlement" },
+      { letter: "B", text: "Presents an oversimplified and exclusionary account of western expansion" },
+      { letter: "C", text: "Places too much emphasis on government involvement in western settlement" },
+      { letter: "D", text: "Correctly identifies individualism as the defining frontier characteristic" }
+    ],
+    correctAnswer: "B",
+    explanation: "Text 2 criticizes Turner's 'erasure of Native Americans,' 'neglect of federal government subsidies,' and 'failure to account for race, gender, and class.' These critiques suggest his thesis is oversimplified and exclusionary.",
+    difficulty: "Hard",
+    domain: "Reading and Writing",
+    skill: "Cross-Text Connections"
+  },
+  {
+    id: "eng135",
+    question: "The following text is adapted from Marcel Proust's In Search of Lost Time (1913).\nFor a long time I used to go to bed early. Sometimes, when I had put out my candle, my eyes would close so quickly that I had not even time to say to myself: 'I'm falling asleep.'\n\nWhich choice best describes the function of these opening sentences?",
+    options: [
+      { letter: "A", text: "They establish the narrative's focus on the boundary between waking consciousness and sleep" },
+      { letter: "B", text: "They introduce a conflict between the narrator's desires and obligations" },
+      { letter: "C", text: "They present the narrator as someone who struggles with insomnia" },
+      { letter: "D", text: "They create suspense about what prevents the narrator from sleeping" }
+    ],
+    correctAnswer: "A",
+    explanation: "The opening describes the transition into sleep and the narrator's awareness (or lack thereof) of falling asleep. This establishes the novel's exploration of consciousness, memory, and the threshold between waking and sleeping states.",
+    difficulty: "Hard",
+    domain: "Reading and Writing",
+    skill: "Text Structure and Purpose"
+  },
+  {
+    id: "eng136",
+    question: "The geneticist's research has been ______ in establishing the hereditary basis of the disorder, providing evidence that has transformed diagnostic and treatment approaches.",
+    options: [
+      { letter: "A", text: "instrumental" },
+      { letter: "B", text: "detrimental" },
+      { letter: "C", text: "incidental" },
+      { letter: "D", text: "supplemental" }
+    ],
+    correctAnswer: "A",
+    explanation: "'Instrumental' means serving as a crucial means to an end. The research 'transformed diagnostic and treatment approaches,' indicating it was instrumental (crucially important) in establishing the hereditary basis.",
+    difficulty: "Hard",
+    domain: "Reading and Writing",
+    skill: "Words in Context"
+  },
+  {
+    id: "eng137",
+    question: "The architect's design, ______ praised for its innovative use of sustainable materials, has also drawn criticism for its departure from the neighborhood's historic aesthetic.",
+    options: [
+      { letter: "A", text: "since" },
+      { letter: "B", text: "while" },
+      { letter: "C", text: "because" },
+      { letter: "D", text: "unless" }
+    ],
+    correctAnswer: "B",
+    explanation: "'While' introduces a concessive clause: the design receives praise for one aspect (sustainability) but criticism for another (departing from historic aesthetic). It balances the two reactions.",
+    difficulty: "Hard",
+    domain: "Reading and Writing",
+    skill: "Transitions"
+  },
+  {
+    id: "eng138",
+    question: "While researching a topic, a student took the following notes:\n• Octopuses have the ability to edit their own RNA, altering genetic instructions after transcription.\n• Most animals rely solely on DNA mutations for genetic variation.\n• RNA editing allows octopuses to adapt rapidly to environmental changes.\n• This editing is especially active in neural tissue, affecting brain function.\n• The trade-off is slower DNA evolution, as RNA editing reduces selection pressure for beneficial mutations.\n\nThe student wants to present a trade-off associated with octopus RNA editing.",
+    options: [
+      { letter: "A", text: "Octopuses can edit their RNA to adapt rapidly to environmental changes, particularly in neural tissue." },
+      { letter: "B", text: "While RNA editing gives octopuses remarkable adaptability, it comes at the cost of slower long-term DNA evolution." },
+      { letter: "C", text: "Most animals rely on DNA mutations for genetic variation, but octopuses can also edit their RNA." },
+      { letter: "D", text: "RNA editing is especially active in octopus neural tissue, affecting brain function significantly." }
+    ],
+    correctAnswer: "B",
+    explanation: "Choice B explicitly presents the trade-off using 'while...it comes at the cost of,' showing both the benefit (adaptability) and the drawback (slower DNA evolution).",
+    difficulty: "Hard",
+    domain: "Reading and Writing",
+    skill: "Rhetorical Synthesis"
+  },
+  {
+    id: "eng139",
+    question: "The novelist's reputation underwent a dramatic ______ in the decades following her death: once celebrated as a pioneer of modernist technique, she fell into obscurity until feminist scholars rediscovered her work in the 1970s.",
+    options: [
+      { letter: "A", text: "elevation" },
+      { letter: "B", text: "eclipse" },
+      { letter: "C", text: "consolidation" },
+      { letter: "D", text: "trajectory" }
+    ],
+    correctAnswer: "B",
+    explanation: "'Eclipse' means a decline or overshadowing. Moving from 'celebrated' to 'fell into obscurity' describes an eclipse of reputation—a dramatic decline until rediscovery.",
+    difficulty: "Hard",
+    domain: "Reading and Writing",
+    skill: "Words in Context"
+  },
+  {
+    id: "eng140",
+    question: "Neither the proposed tax reforms nor the spending cuts ______ likely to address the structural deficit without significant political compromise.",
+    options: [
+      { letter: "A", text: "is" },
+      { letter: "B", text: "are" },
+      { letter: "C", text: "was" },
+      { letter: "D", text: "being" }
+    ],
+    correctAnswer: "B",
+    explanation: "With 'neither...nor,' the verb agrees with the nearer subject ('spending cuts,' plural), requiring 'are.' Present tense matches the current assessment of future likelihood.",
+    difficulty: "Hard",
+    domain: "Reading and Writing",
+    skill: "Subject-Verb Agreement"
+  },
+  {
+    id: "eng141",
+    question: "The following text is adapted from Herman Melville's Moby-Dick (1851).\nCall me Ishmael. Some years ago—never mind how long precisely—having little or no money in my purse, and nothing particular to interest me on shore, I thought I would sail about a little and see the watery part of the world.\n\nWhich choice best describes the effect of the phrase 'never mind how long precisely'?",
+    options: [
+      { letter: "A", text: "It suggests the narrator is concealing information that would undermine his credibility" },
+      { letter: "B", text: "It establishes an informal, conversational relationship between narrator and reader" },
+      { letter: "C", text: "It indicates the narrator cannot remember important details about his past" },
+      { letter: "D", text: "It implies the events occurred so long ago they have lost their significance" }
+    ],
+    correctAnswer: "B",
+    explanation: "The parenthetical aside ('never mind how long precisely') speaks directly to the reader in a casual, conversational tone, as if deflecting an unimportant question. This establishes intimacy and informality.",
+    difficulty: "Hard",
+    domain: "Reading and Writing",
+    skill: "Text Structure and Purpose"
+  },
+  {
+    id: "eng142",
+    question: "Text 1:\nSociologist Robert Putnam documented declining civic participation in America, arguing that activities like bowling leagues, which once built 'social capital,' have given way to solitary pursuits. This erosion of community bonds, he contends, weakens democracy and social trust.\n\nText 2:\nCritic Claude Fischer questions Putnam's narrative of civic decline. Fischer argues that Americans have always been selective in their social participation and that new forms of community—online networks, interest-based groups—have replaced older forms rather than disappearing. Social connection, he suggests, has transformed rather than diminished.\n\nBased on the texts, Fischer (Text 2) would most likely characterize Putnam's argument in Text 1 as:",
+    options: [
+      { letter: "A", text: "Mistaking changes in the form of social participation for overall decline" },
+      { letter: "B", text: "Correctly identifying the political consequences of reduced civic engagement" },
+      { letter: "C", text: "Overlooking the negative aspects of traditional community organizations" },
+      { letter: "D", text: "Underestimating how rapidly online communities have grown" }
+    ],
+    correctAnswer: "A",
+    explanation: "Fischer argues social connection has 'transformed rather than diminished' and that new forms have 'replaced older forms.' He would criticize Putnam for interpreting transformation as decline.",
+    difficulty: "Hard",
+    domain: "Reading and Writing",
+    skill: "Cross-Text Connections"
+  },
+  {
+    id: "eng143",
+    question: "The documentary's ______ of the historical events has been criticized by scholars who argue that complex political dynamics have been reduced to a simplistic good-versus-evil narrative.",
+    options: [
+      { letter: "A", text: "portrayal" },
+      { letter: "B", text: "endorsement" },
+      { letter: "C", text: "investigation" },
+      { letter: "D", text: "circumvention" }
+    ],
+    correctAnswer: "A",
+    explanation: "'Portrayal' means a depiction or representation. The criticism is about how events are 'portrayed' (depicted)—specifically that complex dynamics are reduced to 'simplistic' narrative.",
+    difficulty: "Hard",
+    domain: "Reading and Writing",
+    skill: "Words in Context"
+  },
+  {
+    id: "eng144",
+    question: "The research team's findings ______ the hypothesis that early childhood interventions can have lasting effects on educational attainment, though the magnitude of effects varied across demographic groups.",
+    options: [
+      { letter: "A", text: "support" },
+      { letter: "B", text: "supports" },
+      { letter: "C", text: "supporting" },
+      { letter: "D", text: "supported" }
+    ],
+    correctAnswer: "A",
+    explanation: "The plural subject 'findings' requires the plural verb 'support.' Present tense indicates the current state of evidence supporting the hypothesis.",
+    difficulty: "Hard",
+    domain: "Reading and Writing",
+    skill: "Subject-Verb Agreement"
+  },
+  {
+    id: "eng145",
+    question: "The museum's new exhibition presents artifacts from the ancient civilization without interpretive labels. ______, visitors must draw their own conclusions about the objects' significance and cultural context.\n\nWhich choice completes the text with the most logical transition?",
+    options: [
+      { letter: "A", text: "Nevertheless," },
+      { letter: "B", text: "Consequently," },
+      { letter: "C", text: "Similarly," },
+      { letter: "D", text: "Previously," }
+    ],
+    correctAnswer: "B",
+    explanation: "'Consequently' correctly signals that visitors drawing their own conclusions is a result of the absence of interpretive labels. The effect follows from the cause.",
+    difficulty: "Hard",
+    domain: "Reading and Writing",
+    skill: "Transitions"
+  },
+  {
+    id: "eng146",
+    question: "While researching a topic, a student took the following notes:\n• The 'grandmother hypothesis' proposes that menopause evolved because older women could increase their genetic success by helping raise grandchildren.\n• Women who live past reproductive age help ensure grandchildren's survival.\n• Killer whales and short-finned pilot whales are the only other mammals known to experience menopause.\n• In these whale species, post-reproductive females lead pods and share knowledge of food sources.\n• The hypothesis suggests menopause is an adaptive trait rather than a dysfunction.\n\nThe student wants to emphasize that menopause may serve an evolutionary purpose.",
+    options: [
+      { letter: "A", text: "Killer whales and pilot whales are the only non-human mammals known to experience menopause." },
+      { letter: "B", text: "The grandmother hypothesis suggests menopause evolved as an adaptive trait, allowing older females to enhance their genetic legacy through grandchild care." },
+      { letter: "C", text: "Post-reproductive female whales lead their pods and share valuable knowledge about food sources." },
+      { letter: "D", text: "Women who live past reproductive age can help ensure the survival of their grandchildren." }
+    ],
+    correctAnswer: "B",
+    explanation: "Choice B emphasizes evolutionary purpose by framing menopause as 'an adaptive trait' that allows females to 'enhance their genetic legacy'—directly presenting menopause as serving a purpose rather than being dysfunction.",
+    difficulty: "Hard",
+    domain: "Reading and Writing",
+    skill: "Rhetorical Synthesis"
+  },
+  {
+    id: "eng147",
+    question: "The philosopher's argument is ______: each premise follows logically from the preceding one, yet the conclusion remains deeply counterintuitive.",
+    options: [
+      { letter: "A", text: "fallacious" },
+      { letter: "B", text: "cogent" },
+      { letter: "C", text: "ambiguous" },
+      { letter: "D", text: "derivative" }
+    ],
+    correctAnswer: "B",
+    explanation: "'Cogent' means clear, logical, and convincing. The premises 'follow logically'—the argument is internally sound (cogent)—yet the conclusion is 'counterintuitive.' The 'yet' signals this tension.",
+    difficulty: "Hard",
+    domain: "Reading and Writing",
+    skill: "Words in Context"
+  },
+  {
+    id: "eng148",
+    question: "The following text is adapted from Emily Brontë's Wuthering Heights (1847).\nI have just returned from a visit to my landlord—the solitary neighbour that I shall be troubled with. This is certainly a beautiful country!\n\nWhich choice best describes the function of the exclamation 'This is certainly a beautiful country!' in context?",
+    options: [
+      { letter: "A", text: "It expresses genuine enthusiasm that contrasts with the preceding complaint" },
+      { letter: "B", text: "It introduces the primary setting where most events will occur" },
+      { letter: "C", text: "It reveals the narrator's superficial appreciation of nature" },
+      { letter: "D", text: "It suggests the narrator is attempting to convince himself of something he doubts" }
+    ],
+    correctAnswer: "A",
+    explanation: "The exclamation about 'beautiful country' contrasts sharply with the preceding complaint about being 'troubled with' a difficult neighbor. The juxtaposition creates tension between annoyance and appreciation.",
+    difficulty: "Hard",
+    domain: "Reading and Writing",
+    skill: "Text Structure and Purpose"
+  },
+  {
+    id: "eng149",
+    question: "The city's transit authority has proposed extending subway service to underserved neighborhoods. Advocates argue this would improve economic opportunities for residents. ______, opponents worry about construction costs and potential disruption to existing communities.\n\nWhich choice completes the text with the most logical transition?",
+    options: [
+      { letter: "A", text: "Therefore," },
+      { letter: "B", text: "However," },
+      { letter: "C", text: "Moreover," },
+      { letter: "D", text: "Specifically," }
+    ],
+    correctAnswer: "B",
+    explanation: "'However' correctly signals the contrast between advocates' support and opponents' concerns about the same proposal.",
+    difficulty: "Hard",
+    domain: "Reading and Writing",
+    skill: "Transitions"
+  },
+  {
+    id: "eng150",
+    question: "Text 1:\nLinguist Noam Chomsky argued that humans possess an innate 'Universal Grammar'—a set of structural principles common to all languages. He pointed to the rapidity with which children acquire language and the similarities across unrelated languages as evidence that grammatical knowledge is hardwired rather than entirely learned.\n\nText 2:\nLinguist Daniel Everett's research on Pirahã, an Amazonian language, challenges Chomsky's Universal Grammar hypothesis. Everett claims Pirahã lacks features Chomsky considered universal, including recursion (embedding clauses within clauses). He argues that cultural factors shape language more profoundly than innate grammatical structures.\n\nBased on the texts, how would Everett (Text 2) most likely respond to Chomsky's evidence in Text 1?",
+    options: [
+      { letter: "A", text: "By arguing that the similarities Chomsky identifies reflect cultural contact rather than innate structure" },
+      { letter: "B", text: "By suggesting that Pirahã demonstrates languages can exist without supposedly universal features" },
+      { letter: "C", text: "By claiming that children's rapid language acquisition proves nothing about innateness" },
+      { letter: "D", text: "By asserting that recursion is present in all languages when properly analyzed" }
+    ],
+    correctAnswer: "B",
+    explanation: "Everett's research specifically challenges universality by presenting Pirahã as a language lacking features 'Chomsky considered universal.' He would respond that his counterexample disproves the claim of universality.",
+    difficulty: "Hard",
+    domain: "Reading and Writing",
+    skill: "Cross-Text Connections"
+  },
+  {
+    id: "eng151",
+    question: "The biographer's account of the scientist's life is notably ______: she devotes equal attention to professional achievements and personal struggles, neither celebrating nor condemning her subject.",
+    options: [
+      { letter: "A", text: "partisan" },
+      { letter: "B", text: "evenhanded" },
+      { letter: "C", text: "effusive" },
+      { letter: "D", text: "cursory" }
+    ],
+    correctAnswer: "B",
+    explanation: "'Evenhanded' means fair and impartial. Giving 'equal attention' to different aspects and 'neither celebrating nor condemning' describes an evenhanded (balanced, impartial) approach.",
+    difficulty: "Hard",
+    domain: "Reading and Writing",
+    skill: "Words in Context"
+  },
+  {
+    id: "eng152",
+    question: "The committee recommended that the proposal ______ thoroughly reviewed by external experts before implementation.",
+    options: [
+      { letter: "A", text: "is" },
+      { letter: "B", text: "be" },
+      { letter: "C", text: "was" },
+      { letter: "D", text: "being" }
+    ],
+    correctAnswer: "B",
+    explanation: "The subjunctive mood is required after 'recommended that,' calling for the base form 'be' rather than indicative 'is' or 'was.'",
+    difficulty: "Hard",
+    domain: "Reading and Writing",
+    skill: "Form, Structure, and Sense"
+  },
+  {
+    id: "eng153",
+    question: "While researching a topic, a student took the following notes:\n• The Dunning-Kruger effect describes how people with limited knowledge overestimate their competence.\n• Conversely, highly skilled individuals often underestimate their abilities.\n• The effect was demonstrated in studies of logical reasoning, grammar, and humor.\n• Critics argue the effect may be partly a statistical artifact of regression to the mean.\n• Despite criticism, the phenomenon has been replicated across multiple domains.\n\nThe student wants to acknowledge both the effect's influence and the criticism it has faced.",
+    options: [
+      { letter: "A", text: "The Dunning-Kruger effect shows that people with limited knowledge often overestimate their competence." },
+      { letter: "B", text: "Although some critics attribute the Dunning-Kruger effect partly to statistical artifacts, it has been widely replicated and remains influential." },
+      { letter: "C", text: "Studies have demonstrated the Dunning-Kruger effect in domains including logical reasoning, grammar, and humor." },
+      { letter: "D", text: "Highly skilled individuals often underestimate their abilities according to Dunning-Kruger research." }
+    ],
+    correctAnswer: "B",
+    explanation: "Choice B acknowledges both influence ('widely replicated and remains influential') and criticism ('some critics attribute...to statistical artifacts'), fulfilling the dual goal.",
+    difficulty: "Hard",
+    domain: "Reading and Writing",
+    skill: "Rhetorical Synthesis"
+  },
+  {
+    id: "eng154",
+    question: "The poet's use of enjambment—continuing a sentence across line breaks—creates a sense of ______ that mirrors the rushing water described in the verse.",
+    options: [
+      { letter: "A", text: "stagnation" },
+      { letter: "B", text: "momentum" },
+      { letter: "C", text: "fragmentation" },
+      { letter: "D", text: "symmetry" }
+    ],
+    correctAnswer: "B",
+    explanation: "'Momentum' means forward motion or impetus. Enjambment creates forward movement as sentences flow across line breaks, 'mirroring rushing water'—both convey continuous motion.",
+    difficulty: "Hard",
+    domain: "Reading and Writing",
+    skill: "Words in Context"
+  },
+  {
+    id: "eng155",
+    question: "The following text is adapted from Virginia Woolf's To the Lighthouse (1927).\nYes, she thought, laying down her brush in extreme fatigue, I have had my vision.\n\nAs used in the text, what does 'vision' most nearly mean?",
+    options: [
+      { letter: "A", text: "A supernatural apparition witnessed by the character" },
+      { letter: "B", text: "The physical ability to see that the character has retained" },
+      { letter: "C", text: "An artistic or creative insight the character has achieved" },
+      { letter: "D", text: "A plan for future action the character intends to pursue" }
+    ],
+    correctAnswer: "C",
+    explanation: "In context, the character lays down her 'brush' (painting tool) after achieving something. 'Vision' here means artistic insight or creative realization—she has captured what she sought to express.",
+    difficulty: "Hard",
+    domain: "Reading and Writing",
+    skill: "Words in Context"
+  },
+  {
+    id: "eng156",
+    question: "The orchestra's interpretation of the symphony was praised for its ______: the musicians brought fresh energy to a work that had become stale through overfamiliarity.",
+    options: [
+      { letter: "A", text: "fidelity" },
+      { letter: "B", text: "vitality" },
+      { letter: "C", text: "austerity" },
+      { letter: "D", text: "uniformity" }
+    ],
+    correctAnswer: "B",
+    explanation: "'Vitality' means liveliness and energy. 'Fresh energy' to a 'stale' work describes vitality—the performance brought new life to something that had become tired.",
+    difficulty: "Hard",
+    domain: "Reading and Writing",
+    skill: "Words in Context"
+  },
+  {
+    id: "eng157",
+    question: "The data from the longitudinal study ______ that early childhood nutrition has lasting effects on cognitive development, though researchers caution against drawing causal conclusions from correlational findings.",
+    options: [
+      { letter: "A", text: "suggest" },
+      { letter: "B", text: "suggests" },
+      { letter: "C", text: "suggesting" },
+      { letter: "D", text: "suggested" }
+    ],
+    correctAnswer: "B",
+    explanation: "The singular collective noun 'data' (when treated as a unit, common in American English) takes singular verb 'suggests.' Present tense indicates current implications of the study.",
+    difficulty: "Hard",
+    domain: "Reading and Writing",
+    skill: "Subject-Verb Agreement"
+  },
+  {
+    id: "eng158",
+    question: "Text 1:\nPhysicist Lee Smolin argues that string theory, despite decades of development, has failed to produce testable predictions and should no longer dominate theoretical physics. He contends the field has become insular, with researchers pursuing mathematical elegance over empirical falsifiability.\n\nText 2:\nPhysicist Brian Greene defends string theory, arguing that the absence of direct tests reflects current technological limitations rather than theoretical failure. He notes that many now-accepted theories, including general relativity, initially lacked experimental verification. String theory's mathematical consistency, he suggests, is itself a form of evidence.\n\nBased on the texts, Greene (Text 2) would most likely respond to Smolin's criticism in Text 1 by arguing that:",
+    options: [
+      { letter: "A", text: "String theory has actually produced several testable predictions that Smolin overlooks" },
+      { letter: "B", text: "Judging theories solely by current testability imposes an unreasonably narrow standard" },
+      { letter: "C", text: "Mathematical elegance is more important than empirical evidence in theoretical physics" },
+      { letter: "D", text: "The physics community has not actually prioritized string theory over other approaches" }
+    ],
+    correctAnswer: "B",
+    explanation: "Greene argues the 'absence of direct tests reflects current technological limitations' and cites general relativity as initially lacking verification. He would argue Smolin's testability standard is too narrow given historical precedent.",
+    difficulty: "Hard",
+    domain: "Reading and Writing",
+    skill: "Cross-Text Connections"
+  },
+  {
+    id: "eng159",
+    question: "The novelist's prose style has evolved considerably over her career; her early works featured elaborate sentences and extensive description, ______ her recent novels employ spare, economical language.",
+    options: [
+      { letter: "A", text: "therefore" },
+      { letter: "B", text: "moreover" },
+      { letter: "C", text: "whereas" },
+      { letter: "D", text: "consequently" }
+    ],
+    correctAnswer: "C",
+    explanation: "'Whereas' correctly signals contrast between 'elaborate sentences and extensive description' in early works and 'spare, economical language' in recent novels.",
+    difficulty: "Hard",
+    domain: "Reading and Writing",
+    skill: "Transitions"
+  },
+  {
+    id: "eng160",
+    question: "While researching a topic, a student took the following notes:\n• Mycelium, the underground network of fungal threads, can span thousands of acres.\n• Trees use mycelial networks to share nutrients with neighboring trees, including different species.\n• Scientists call these networks 'wood wide webs.'\n• Older 'mother trees' send more resources to younger seedlings through these networks.\n• Some researchers argue this challenges purely competitive models of forest ecology.\n\nThe student wants to emphasize how mycelial networks complicate traditional ecological models.",
+    options: [
+      { letter: "A", text: "Mycelium networks, sometimes spanning thousands of acres, connect trees in forest ecosystems." },
+      { letter: "B", text: "Scientists have nicknamed fungal networks in forests 'wood wide webs' because of their connectivity." },
+      { letter: "C", text: "The discovery that trees share resources through fungal networks challenges the view of forests as purely competitive ecosystems." },
+      { letter: "D", text: "Mother trees send more nutrients to younger seedlings through underground mycelial connections." }
+    ],
+    correctAnswer: "C",
+    explanation: "Choice C directly addresses how the networks 'challenge' traditional models by showing forests aren't 'purely competitive'—emphasizing the complication of conventional ecological understanding.",
+    difficulty: "Hard",
+    domain: "Reading and Writing",
+    skill: "Rhetorical Synthesis"
+  },
+  {
+    id: "eng161",
+    question: "The historian's analysis of the treaty reveals previously unexamined ______ between the official diplomatic record and private correspondence among the negotiators.",
+    options: [
+      { letter: "A", text: "continuities" },
+      { letter: "B", text: "discrepancies" },
+      { letter: "C", text: "redundancies" },
+      { letter: "D", text: "parallels" }
+    ],
+    correctAnswer: "B",
+    explanation: "'Discrepancies' means inconsistencies or differences. Comparing 'official diplomatic record' with 'private correspondence' and finding something 'previously unexamined' suggests discovering differences (discrepancies) between public and private accounts.",
+    difficulty: "Hard",
+    domain: "Reading and Writing",
+    skill: "Words in Context"
+  },
+  {
+    id: "eng162",
+    question: "The following text is adapted from Ralph Ellison's Invisible Man (1952).\nI am an invisible man. No, I am not a spook like those who haunted Edgar Allan Poe; nor am I one of your Hollywood-movie ectoplasms. I am a man of substance, of flesh and bone, fiber and liquids—and I might even be said to possess a mind.\n\nWhich choice best describes the function of the second sentence in the passage?",
+    options: [
+      { letter: "A", text: "It clarifies that the narrator's invisibility is metaphorical rather than supernatural" },
+      { letter: "B", text: "It establishes the narrator's interest in literature and film" },
+      { letter: "C", text: "It suggests the narrator doubts his own physical existence" },
+      { letter: "D", text: "It introduces humor to lighten the serious tone of the opening" }
+    ],
+    correctAnswer: "A",
+    explanation: "By distinguishing himself from Poe's ghosts and 'Hollywood ectoplasms' and asserting he is 'of substance, of flesh and bone,' the narrator clarifies that his 'invisibility' is metaphorical (social), not literal/supernatural.",
+    difficulty: "Hard",
+    domain: "Reading and Writing",
+    skill: "Text Structure and Purpose"
+  },
+  {
+    id: "eng163",
+    question: "The pharmaceutical company's decision to abandon the promising drug candidate was ______: clinical trials had shown efficacy, but manufacturing costs made the treatment economically unviable.",
+    options: [
+      { letter: "A", text: "capricious" },
+      { letter: "B", text: "pragmatic" },
+      { letter: "C", text: "negligent" },
+      { letter: "D", text: "fortuitous" }
+    ],
+    correctAnswer: "B",
+    explanation: "'Pragmatic' means dealing with matters practically rather than theoretically. The drug worked ('shown efficacy') but was abandoned for practical economic reasons ('manufacturing costs')—a pragmatic decision based on real-world constraints.",
+    difficulty: "Hard",
+    domain: "Reading and Writing",
+    skill: "Words in Context"
+  },
+  {
+    id: "eng164",
+    question: "Each of the proposed amendments to the constitution ______ significant implications for the balance of power between federal and state governments.",
+    options: [
+      { letter: "A", text: "have" },
+      { letter: "B", text: "has" },
+      { letter: "C", text: "having" },
+      { letter: "D", text: "had" }
+    ],
+    correctAnswer: "B",
+    explanation: "'Each' is singular and requires the singular verb 'has,' regardless of the intervening plural phrase 'of the proposed amendments.' Present tense indicates current implications.",
+    difficulty: "Hard",
+    domain: "Reading and Writing",
+    skill: "Subject-Verb Agreement"
+  },
+  {
+    id: "eng165",
+    question: "The art critic's review was ______: she devoted three paragraphs to minor technical flaws while mentioning the painting's extraordinary emotional power in a single sentence.",
+    options: [
+      { letter: "A", text: "proportionate" },
+      { letter: "B", text: "laudatory" },
+      { letter: "C", text: "imbalanced" },
+      { letter: "D", text: "prescient" }
+    ],
+    correctAnswer: "C",
+    explanation: "'Imbalanced' means lacking proportion. Spending three paragraphs on 'minor flaws' while giving only one sentence to 'extraordinary emotional power' represents a disproportionate, imbalanced review.",
+    difficulty: "Hard",
+    domain: "Reading and Writing",
+    skill: "Words in Context"
+  },
+  {
+    id: "eng166",
+    question: "The research demonstrates that mindfulness meditation reduces anxiety symptoms. ______, the mechanisms by which meditation produces these effects remain poorly understood.\n\nWhich choice completes the text with the most logical transition?",
+    options: [
+      { letter: "A", text: "Therefore," },
+      { letter: "B", text: "However," },
+      { letter: "C", text: "Similarly," },
+      { letter: "D", text: "Specifically," }
+    ],
+    correctAnswer: "B",
+    explanation: "'However' correctly signals contrast: we know meditation works (demonstrated effects) but don't understand how (mechanisms 'poorly understood').",
+    difficulty: "Hard",
+    domain: "Reading and Writing",
+    skill: "Transitions"
+  },
+  {
+    id: "eng167",
+    question: "Text 1:\nLiterary critic Cleanth Brooks championed 'close reading'—careful attention to a text's formal elements like imagery, paradox, and structure. He argued that a poem's meaning emerges from these internal features, independent of the author's biography or historical context.\n\nText 2:\nNew Historicist critics challenge formalist approaches like Brooks's. They argue that literary texts are inextricably embedded in their historical moments and that understanding a work requires examining the cultural, political, and economic forces that shaped its production and reception.\n\nBased on the texts, New Historicist critics (Text 2) would most likely argue that Brooks's approach in Text 1:",
+    options: [
+      { letter: "A", text: "Correctly identifies the formal elements that deserve primary attention" },
+      { letter: "B", text: "Artificially isolates texts from the contexts that give them meaning" },
+      { letter: "C", text: "Places too much emphasis on an author's biographical details" },
+      { letter: "D", text: "Fails to appreciate the aesthetic qualities of literary works" }
+    ],
+    correctAnswer: "B",
+    explanation: "New Historicists argue texts are 'inextricably embedded in their historical moments.' They would criticize Brooks for treating meaning as 'independent of...historical context'—artificially isolating texts from their contexts.",
+    difficulty: "Hard",
+    domain: "Reading and Writing",
+    skill: "Cross-Text Connections"
+  },
+  {
+    id: "eng168",
+    question: "While researching a topic, a student took the following notes:\n• The Fermi Paradox asks why we haven't detected signs of extraterrestrial civilizations despite the universe's vastness.\n• One explanation, the 'Great Filter,' suggests civilizations face extinction-level challenges.\n• If the filter is behind us (like the origin of life), humanity may be rare but safe.\n• If the filter is ahead (like nuclear war or AI), most civilizations may destroy themselves.\n• Finding simple life elsewhere would suggest the filter is ahead, which would be troubling.\n\nThe student wants to explain why discovering simple extraterrestrial life might be concerning.",
+    options: [
+      { letter: "A", text: "The Fermi Paradox asks why we haven't found evidence of extraterrestrial civilizations despite the universe's vastness." },
+      { letter: "B", text: "The Great Filter hypothesis suggests that civilizations face challenges that prevent them from becoming detectable." },
+      { letter: "C", text: "If the Great Filter lies behind us, humanity may be extremely rare but relatively safe from extinction threats." },
+      { letter: "D", text: "Finding simple life elsewhere would suggest the Great Filter lies ahead, implying that advanced civilizations typically destroy themselves." }
+    ],
+    correctAnswer: "D",
+    explanation: "Choice D explains why simple life discovery is 'concerning': it would suggest the filter is ahead (not behind us), implying most civilizations—including potentially ours—face future extinction.",
+    difficulty: "Hard",
+    domain: "Reading and Writing",
+    skill: "Rhetorical Synthesis"
+  },
+  {
+    id: "eng169",
+    question: "The architect's design for the memorial was deliberately ______: rather than imposing a single interpretation, the abstract forms invited visitors to bring their own meanings to the space.",
+    options: [
+      { letter: "A", text: "didactic" },
+      { letter: "B", text: "prescriptive" },
+      { letter: "C", text: "evocative" },
+      { letter: "D", text: "explicit" }
+    ],
+    correctAnswer: "C",
+    explanation: "'Evocative' means bringing strong images, memories, or feelings to mind. The design 'invited visitors to bring their own meanings'—it evokes responses without dictating them. 'Didactic' and 'prescriptive' suggest imposing interpretation.",
+    difficulty: "Hard",
+    domain: "Reading and Writing",
+    skill: "Words in Context"
+  },
+  {
+    id: "eng170",
+    question: "The following text is adapted from Chinua Achebe's Things Fall Apart (1958).\nOkonkwo was well known throughout the nine villages and even beyond. His fame rested on solid personal achievements.\n\nWhich choice best describes the function of these opening sentences?",
+    options: [
+      { letter: "A", text: "They introduce the protagonist through his reputation, establishing his importance before revealing specific actions" },
+      { letter: "B", text: "They suggest the narrative will focus on the protagonist's internal psychological struggles" },
+      { letter: "C", text: "They establish an ironic distance between the narrator and the community being described" },
+      { letter: "D", text: "They foreshadow the protagonist's eventual downfall and loss of reputation" }
+    ],
+    correctAnswer: "A",
+    explanation: "The opening introduces Okonkwo through his widespread reputation ('well known throughout the nine villages and even beyond') and hints at achievements to come. It establishes importance before providing details.",
+    difficulty: "Hard",
+    domain: "Reading and Writing",
+    skill: "Text Structure and Purpose"
+  },
+  {
+    id: "eng171",
+    question: "The diplomat's carefully calibrated statement was designed to ______ tensions between the two nations without making concrete commitments that might later prove difficult to honor.",
+    options: [
+      { letter: "A", text: "exacerbate" },
+      { letter: "B", text: "defuse" },
+      { letter: "C", text: "acknowledge" },
+      { letter: "D", text: "document" }
+    ],
+    correctAnswer: "B",
+    explanation: "'Defuse' means reduce tension or potential danger. A 'carefully calibrated statement' designed to manage tensions while avoiding commitments aims to defuse (calm) the situation.",
+    difficulty: "Hard",
+    domain: "Reading and Writing",
+    skill: "Words in Context"
+  },
+  {
+    id: "eng172",
+    question: "The novelist, ______ works have been translated into forty languages, will receive an honorary degree at the university's commencement ceremony.",
+    options: [
+      { letter: "A", text: "who's" },
+      { letter: "B", text: "whose" },
+      { letter: "C", text: "which" },
+      { letter: "D", text: "whom" }
+    ],
+    correctAnswer: "B",
+    explanation: "'Whose' is the possessive form needed to show the works belong to the novelist. 'Who's' means 'who is.' 'Which' doesn't refer to people. 'Whom' is objective case, not possessive.",
+    difficulty: "Hard",
+    domain: "Reading and Writing",
+    skill: "Form, Structure, and Sense"
+  },
+  {
+    id: "eng173",
+    question: "The study's findings were ______: instead of the predicted decline, researchers observed a modest increase in the target population.",
+    options: [
+      { letter: "A", text: "anticipated" },
+      { letter: "B", text: "corroborated" },
+      { letter: "C", text: "counterintuitive" },
+      { letter: "D", text: "inconsequential" }
+    ],
+    correctAnswer: "C",
+    explanation: "'Counterintuitive' means contrary to expectations. Finding 'increase' 'instead of the predicted decline' describes results opposite to what was expected—counterintuitive findings.",
+    difficulty: "Hard",
+    domain: "Reading and Writing",
+    skill: "Words in Context"
+  },
+  {
+    id: "eng174",
+    question: "The committee's recommendations, ______ implemented fully, would fundamentally transform how the agency conducts its oversight responsibilities.",
+    options: [
+      { letter: "A", text: "if" },
+      { letter: "B", text: "unless" },
+      { letter: "C", text: "although" },
+      { letter: "D", text: "because" }
+    ],
+    correctAnswer: "A",
+    explanation: "'If implemented fully' creates a conditional clause: the transformation would occur on the condition of full implementation. 'Unless' would imply the opposite logic.",
+    difficulty: "Hard",
+    domain: "Reading and Writing",
+    skill: "Transitions"
+  },
+  {
+    id: "eng175",
+    question: "Text 1:\nPsychologist Jonathan Haidt argues that social media, particularly visual platforms, has contributed to rising rates of anxiety and depression among adolescents. He points to correlational data showing mental health declines coinciding with smartphone adoption and calls for age restrictions on social media use.\n\nText 2:\nPsychologist Candice Odgers critiques Haidt's conclusions, arguing that correlational data cannot establish causation and that effect sizes in studies linking social media to mental health are typically small. She suggests that focusing on social media distracts from more significant factors like poverty, trauma, and inadequate mental health services.\n\nBased on the texts, Odgers (Text 2) would most likely argue that Haidt's position in Text 1:",
+    options: [
+      { letter: "A", text: "Overstates the evidence for a causal relationship between social media and adolescent mental health" },
+      { letter: "B", text: "Correctly identifies the timing of mental health declines but misattributes the cause" },
+      { letter: "C", text: "Fails to acknowledge that any relationship exists between technology use and well-being" },
+      { letter: "D", text: "Places too much emphasis on visual platforms relative to other forms of social media" }
+    ],
+    correctAnswer: "A",
+    explanation: "Odgers argues correlational data 'cannot establish causation' and effect sizes are 'typically small.' She would argue Haidt overstates the evidence by drawing strong causal conclusions from limited data.",
+    difficulty: "Hard",
+    domain: "Reading and Writing",
+    skill: "Cross-Text Connections"
+  },
+  {
+    id: "eng176",
+    question: "While researching a topic, a student took the following notes:\n• The 'overview effect' describes the cognitive shift astronauts experience when viewing Earth from space.\n• Astronauts report feeling awe, interconnectedness, and concern for the planet.\n• The effect was first described by author Frank White in 1987.\n• Some researchers are exploring virtual reality simulations to induce similar feelings.\n• Critics question whether simulations can replicate the profound impact of actual spaceflight.\n\nThe student wants to explain attempts to replicate the overview effect without spaceflight.",
+    options: [
+      { letter: "A", text: "The overview effect, first described by Frank White in 1987, refers to the cognitive shift astronauts experience viewing Earth from space." },
+      { letter: "B", text: "Astronauts experiencing the overview effect report feeling awe, interconnectedness, and increased concern for Earth's well-being." },
+      { letter: "C", text: "Researchers are developing virtual reality simulations to induce overview-effect-like feelings in people who cannot travel to space." },
+      { letter: "D", text: "Critics question whether any simulation could replicate the profound psychological impact of viewing Earth from actual orbit." }
+    ],
+    correctAnswer: "C",
+    explanation: "Choice C directly explains attempts to replicate the effect (VR simulations) for non-astronauts, addressing the goal of explaining replication efforts without spaceflight.",
+    difficulty: "Hard",
+    domain: "Reading and Writing",
+    skill: "Rhetorical Synthesis"
+  },
+  {
+    id: "eng177",
+    question: "The novelist's prose achieves its effects through ______: she withholds key information, allowing readers to piece together the narrative from fragmentary hints.",
+    options: [
+      { letter: "A", text: "redundancy" },
+      { letter: "B", text: "elision" },
+      { letter: "C", text: "hyperbole" },
+      { letter: "D", text: "exposition" }
+    ],
+    correctAnswer: "B",
+    explanation: "'Elision' means omission or leaving out. 'Withholds key information' and 'fragmentary hints' describe a technique of deliberate omission—elision—that creates effects through what's left unsaid.",
+    difficulty: "Hard",
+    domain: "Reading and Writing",
+    skill: "Words in Context"
+  },
+  {
+    id: "eng178",
+    question: "The following text is adapted from Sylvia Plath's The Bell Jar (1963).\nIt was a queer, sultry summer, the summer they electrocuted the Rosenbergs, and I didn't know what I was doing in New York.\n\nWhich choice best describes the effect of mentioning the Rosenbergs' execution in this opening?",
+    options: [
+      { letter: "A", text: "It establishes the narrator as politically engaged and socially conscious" },
+      { letter: "B", text: "It dates the narrative while introducing themes of death and disorientation" },
+      { letter: "C", text: "It suggests the narrator was personally connected to the executed individuals" },
+      { letter: "D", text: "It criticizes the justice system of the era" }
+    ],
+    correctAnswer: "B",
+    explanation: "The Rosenberg execution (1953) dates the narrative historically, while the juxtaposition of execution with 'I didn't know what I was doing' introduces death and personal disorientation as linked themes.",
+    difficulty: "Hard",
+    domain: "Reading and Writing",
+    skill: "Text Structure and Purpose"
+  },
+  {
+    id: "eng179",
+    question: "The economist argued that the proposed trade agreement would ______ domestic manufacturing jobs, but supporters countered that it would create more positions in the technology sector.",
+    options: [
+      { letter: "A", text: "jeopardize" },
+      { letter: "B", text: "safeguard" },
+      { letter: "C", text: "quantify" },
+      { letter: "D", text: "subsidize" }
+    ],
+    correctAnswer: "A",
+    explanation: "'Jeopardize' means put at risk. The 'but' signals contrast: the economist sees risk to manufacturing jobs while supporters see job creation elsewhere. 'Safeguard' would be the opposite.",
+    difficulty: "Hard",
+    domain: "Reading and Writing",
+    skill: "Words in Context"
+  },
+  {
+    id: "eng180",
+    question: "The symphony orchestra, along with several guest soloists, ______ scheduled to perform at the new concert hall next month.",
+    options: [
+      { letter: "A", text: "are" },
+      { letter: "B", text: "is" },
+      { letter: "C", text: "were" },
+      { letter: "D", text: "being" }
+    ],
+    correctAnswer: "B",
+    explanation: "The subject 'symphony orchestra' is singular; 'along with several guest soloists' is a parenthetical phrase that doesn't change the number. Singular subject requires singular verb 'is.'",
+    difficulty: "Hard",
+    domain: "Reading and Writing",
+    skill: "Subject-Verb Agreement"
+  },
+  {
+    id: "eng181",
+    question: "Text 1:\nEconomist Daron Acemoglu argues that artificial intelligence poses a significant threat to employment. Unlike previous technological revolutions that created new jobs to replace those eliminated, AI may automate tasks across virtually all sectors simultaneously, leaving workers without viable alternatives.\n\nText 2:\nEconomist David Autor suggests that concerns about AI-driven unemployment may be overstated. He notes that automation typically transforms jobs rather than eliminating them entirely, and that new technologies historically create demands for human skills that complement machine capabilities.\n\nBased on the texts, how would Autor (Text 2) most likely respond to Acemoglu's concern in Text 1?",
+    options: [
+      { letter: "A", text: "By arguing that AI will primarily affect sectors with routine, easily automated tasks" },
+      { letter: "B", text: "By suggesting that human-machine collaboration will generate new employment opportunities" },
+      { letter: "C", text: "By claiming that government intervention can prevent most AI-related job losses" },
+      { letter: "D", text: "By asserting that AI development will proceed more slowly than Acemoglu assumes" }
+    ],
+    correctAnswer: "B",
+    explanation: "Autor argues automation 'transforms jobs' and creates 'demands for human skills that complement machine capabilities.' He would respond that AI will create complementary roles through human-machine collaboration.",
+    difficulty: "Hard",
+    domain: "Reading and Writing",
+    skill: "Cross-Text Connections"
+  },
+  {
+    id: "eng182",
+    question: "The researcher's methodology was criticized as ______: critics argued that her conclusions were predetermined by her theoretical framework rather than emerging from unbiased observation.",
+    options: [
+      { letter: "A", text: "empirical" },
+      { letter: "B", text: "innovative" },
+      { letter: "C", text: "circular" },
+      { letter: "D", text: "comprehensive" }
+    ],
+    correctAnswer: "C",
+    explanation: "'Circular' reasoning assumes what it sets out to prove. If conclusions were 'predetermined by her theoretical framework' rather than emerging from observation, the methodology is circular—the theory dictates the findings.",
+    difficulty: "Hard",
+    domain: "Reading and Writing",
+    skill: "Words in Context"
+  },
+  {
+    id: "eng183",
+    question: "The author's latest novel, ______ by critics for its experimental narrative structure, has nonetheless become a bestseller with general readers.",
+    options: [
+      { letter: "A", text: "praised" },
+      { letter: "B", text: "praising" },
+      { letter: "C", text: "to praise" },
+      { letter: "D", text: "praises" }
+    ],
+    correctAnswer: "A",
+    explanation: "'Praised' functions as a past participle in a reduced relative clause ('which was praised'), correctly modifying 'novel.' The 'nonetheless' signals that popular success came despite (or in addition to) critical praise.",
+    difficulty: "Hard",
+    domain: "Reading and Writing",
+    skill: "Form, Structure, and Sense"
+  },
+  {
+    id: "eng184",
+    question: "The museum's renovation was designed to improve accessibility; ______, new ramps, elevators, and tactile exhibits were added throughout the building.\n\nWhich choice completes the text with the most logical transition?",
+    options: [
+      { letter: "A", text: "however" },
+      { letter: "B", text: "accordingly" },
+      { letter: "C", text: "conversely" },
+      { letter: "D", text: "nevertheless" }
+    ],
+    correctAnswer: "B",
+    explanation: "'Accordingly' signals that what follows is consistent with or follows from what precedes. The accessibility improvements (ramps, elevators, tactile exhibits) logically follow from the goal of improving accessibility.",
+    difficulty: "Hard",
+    domain: "Reading and Writing",
+    skill: "Transitions"
+  },
+  {
+    id: "eng185",
+    question: "While researching a topic, a student took the following notes:\n• Synesthesia is a neurological condition where stimulating one sense triggers automatic experiences in another.\n• A synesthete might see colors when hearing music or taste shapes.\n• About 4% of the population has some form of synesthesia.\n• Brain imaging shows synesthetes have increased connectivity between sensory regions.\n• Some artists and musicians credit synesthesia for their creative abilities.\n\nThe student wants to define synesthesia for readers unfamiliar with the term.",
+    options: [
+      { letter: "A", text: "Synesthesia, a neurological condition affecting about 4% of the population, involves automatic sensory crossover—such as seeing colors when hearing music." },
+      { letter: "B", text: "Brain imaging studies reveal that synesthetes have increased connectivity between different sensory processing regions." },
+      { letter: "C", text: "Some artists and musicians attribute their creative abilities to their synesthetic experiences." },
+      { letter: "D", text: "A person with synesthesia might experience tasting shapes or seeing colors in response to sounds." }
+    ],
+    correctAnswer: "A",
+    explanation: "Choice A provides a clear definition ('neurological condition...automatic sensory crossover') with a concrete example ('seeing colors when hearing music'), making it ideal for unfamiliar readers.",
+    difficulty: "Hard",
+    domain: "Reading and Writing",
+    skill: "Rhetorical Synthesis"
+  },
+  {
+    id: "eng186",
+    question: "The following text is adapted from George Orwell's 1984 (1949).\nIt was a bright cold day in April, and the clocks were striking thirteen.\n\nWhich choice best describes the effect of this opening sentence?",
+    options: [
+      { letter: "A", text: "It creates immediate unease by introducing an impossible detail into an otherwise ordinary setting" },
+      { letter: "B", text: "It establishes that the narrative takes place in a technologically advanced future" },
+      { letter: "C", text: "It suggests the narrator's perception of time is unreliable" },
+      { letter: "D", text: "It indicates that the story will focus on the changing of seasons" }
+    ],
+    correctAnswer: "A",
+    explanation: "The 'bright cold day in April' is ordinary, but 'clocks striking thirteen' is impossible in standard timekeeping. This single impossible detail creates unease, signaling something is fundamentally wrong with this world.",
+    difficulty: "Hard",
+    domain: "Reading and Writing",
+    skill: "Text Structure and Purpose"
+  },
+  {
+    id: "eng187",
+    question: "The composer's early works were ______ in style, adhering closely to classical conventions, but her later compositions broke radically with tradition.",
+    options: [
+      { letter: "A", text: "heterodox" },
+      { letter: "B", text: "conventional" },
+      { letter: "C", text: "innovative" },
+      { letter: "D", text: "eclectic" }
+    ],
+    correctAnswer: "B",
+    explanation: "'Conventional' means following accepted standards. 'Adhering closely to classical conventions' defines conventional style, contrasted with later works that 'broke radically with tradition.'",
+    difficulty: "Hard",
+    domain: "Reading and Writing",
+    skill: "Words in Context"
+  },
+  {
+    id: "eng188",
+    question: "Text 1:\nArchaeologist Lewis Binford argued that changes in prehistoric tool technology reflect adaptations to environmental conditions. He emphasized the functional purposes of tools and saw technological change as driven primarily by ecological pressures and subsistence needs.\n\nText 2:\nArchaeologist Ian Hodder challenges purely functionalist interpretations of material culture. He argues that objects carry symbolic meanings and that prehistoric peoples made choices based on cultural values, social relationships, and identity—not just practical utility. Technology, in his view, is as much about meaning as function.\n\nBased on the texts, Hodder (Text 2) would most likely argue that Binford's approach in Text 1:",
+    options: [
+      { letter: "A", text: "Correctly identifies environmental factors but overstates their importance relative to cultural ones" },
+      { letter: "B", text: "Fails to account for how symbolic and social meanings shape technological choices" },
+      { letter: "C", text: "Places too much emphasis on changes in technology rather than continuities" },
+      { letter: "D", text: "Overlooks evidence that prehistoric peoples had limited ability to adapt to environments" }
+    ],
+    correctAnswer: "B",
+    explanation: "Hodder emphasizes 'symbolic meanings,' 'cultural values,' and 'social relationships.' He would criticize Binford's focus on function and ecology for neglecting how non-utilitarian factors shape technology.",
+    difficulty: "Hard",
+    domain: "Reading and Writing",
+    skill: "Cross-Text Connections"
+  },
+  {
+    id: "eng189",
+    question: "The journalist's investigation revealed that the company had systematically ______ environmental regulations for years while publicly proclaiming commitment to sustainability.",
+    options: [
+      { letter: "A", text: "flouted" },
+      { letter: "B", text: "flaunted" },
+      { letter: "C", text: "observed" },
+      { letter: "D", text: "promoted" }
+    ],
+    correctAnswer: "A",
+    explanation: "'Flouted' means openly disregarded. The contrast between secretly violating regulations 'while publicly proclaiming commitment to sustainability' indicates the company flouted (disregarded) the rules.",
+    difficulty: "Hard",
+    domain: "Reading and Writing",
+    skill: "Words in Context"
+  },
+  {
+    id: "eng190",
+    question: "The research team hypothesized that the treatment ______ effective for patients with early-stage disease, but their clinical trial included only participants with advanced cases.",
+    options: [
+      { letter: "A", text: "would be" },
+      { letter: "B", text: "will be" },
+      { letter: "C", text: "is" },
+      { letter: "D", text: "being" }
+    ],
+    correctAnswer: "A",
+    explanation: "'Would be' expresses a past hypothesis about a conditional outcome. The team hypothesized (past) about what the treatment would do under certain conditions.",
+    difficulty: "Hard",
+    domain: "Reading and Writing",
+    skill: "Form, Structure, and Sense"
+  },
+  {
+    id: "eng191",
+    question: "While researching a topic, a student took the following notes:\n• The Library of Alexandria was one of the ancient world's largest repositories of knowledge.\n• Estimates suggest it held between 40,000 and 400,000 scrolls.\n• The library's destruction is often blamed on a single catastrophic fire.\n• Historians now believe the library declined gradually over centuries due to reduced funding and neglect.\n• No definitive evidence supports the dramatic fire narrative.\n\nThe student wants to correct a common misconception about the library's fate.",
+    options: [
+      { letter: "A", text: "The Library of Alexandria held between 40,000 and 400,000 scrolls, making it one of the ancient world's largest knowledge repositories." },
+      { letter: "B", text: "Contrary to popular belief, the Library of Alexandria was not destroyed in a single catastrophic fire but declined gradually through centuries of neglect." },
+      { letter: "C", text: "The Library of Alexandria was one of the most significant centers of learning in the ancient world." },
+      { letter: "D", text: "Historians have found no definitive evidence about exactly how the Library of Alexandria was destroyed." }
+    ],
+    correctAnswer: "B",
+    explanation: "Choice B directly corrects the misconception by stating 'contrary to popular belief' and contrasting the false narrative (single fire) with the historical reality (gradual decline).",
+    difficulty: "Hard",
+    domain: "Reading and Writing",
+    skill: "Rhetorical Synthesis"
+  },
+  {
+    id: "eng192",
+    question: "The senator's voting record reveals a ______ between her campaign rhetoric and her legislative actions: she promised fiscal conservatism but consistently supported increased spending.",
+    options: [
+      { letter: "A", text: "correlation" },
+      { letter: "B", text: "confluence" },
+      { letter: "C", text: "discrepancy" },
+      { letter: "D", text: "synthesis" }
+    ],
+    correctAnswer: "C",
+    explanation: "'Discrepancy' means a difference or inconsistency. Promising 'fiscal conservatism' while 'consistently supporting increased spending' shows a discrepancy between words and actions.",
+    difficulty: "Hard",
+    domain: "Reading and Writing",
+    skill: "Words in Context"
+  },
+  {
+    id: "eng193",
+    question: "The following text is adapted from Albert Camus's The Stranger (1942).\nMaman died today. Or yesterday maybe, I don't know. I got a telegram from the home: 'Mother deceased. Funeral tomorrow. Faithfully yours.' That doesn't mean anything.\n\nWhich choice best describes the effect of the narrator's statement 'I don't know'?",
+    options: [
+      { letter: "A", text: "It reveals the narrator's grief is so overwhelming that he has lost track of time" },
+      { letter: "B", text: "It establishes the narrator's emotional detachment through his indifference to the timing" },
+      { letter: "C", text: "It suggests the narrator has a poor relationship with his mother" },
+      { letter: "D", text: "It indicates the narrator received the news while traveling" }
+    ],
+    correctAnswer: "B",
+    explanation: "The casual uncertainty about when his mother died ('today. Or yesterday maybe, I don't know') establishes emotional detachment—most people would know exactly when a parent died. This indifference signals the narrator's alienation.",
+    difficulty: "Hard",
+    domain: "Reading and Writing",
+    skill: "Text Structure and Purpose"
+  },
+  {
+    id: "eng194",
+    question: "The architectural firm's design for the civic center was praised for its ______: the building's form clearly expressed its public functions while harmonizing with the surrounding historic district.",
+    options: [
+      { letter: "A", text: "opacity" },
+      { letter: "B", text: "legibility" },
+      { letter: "C", text: "austerity" },
+      { letter: "D", text: "uniformity" }
+    ],
+    correctAnswer: "B",
+    explanation: "'Legibility' in architecture means the building's purpose is clearly readable from its form. The design 'clearly expressed its public functions'—its purpose was legible (easily understood) from its appearance.",
+    difficulty: "Hard",
+    domain: "Reading and Writing",
+    skill: "Words in Context"
+  },
+  {
+    id: "eng195",
+    question: "Neither the proposed regulatory changes nor the voluntary industry guidelines ______ adequate to address the systemic risks identified in the report.",
+    options: [
+      { letter: "A", text: "is" },
+      { letter: "B", text: "are" },
+      { letter: "C", text: "was" },
+      { letter: "D", text: "being" }
+    ],
+    correctAnswer: "B",
+    explanation: "With 'neither...nor,' the verb agrees with the nearer subject ('voluntary industry guidelines,' plural), requiring 'are.' Present tense indicates current assessment.",
+    difficulty: "Hard",
+    domain: "Reading and Writing",
+    skill: "Subject-Verb Agreement"
+  },
+  {
+    id: "eng196",
+    question: "Text 1:\nPhilosopher John Rawls proposed that just institutions should be designed as if from behind a 'veil of ignorance'—not knowing one's place in society. He argued this thought experiment would lead rational people to choose principles ensuring fair treatment for the least advantaged members of society.\n\nText 2:\nPhilosopher Robert Nozick criticized Rawls's approach, arguing it ignores how goods are actually acquired. Nozick contended that redistributive policies violate individuals' rights to their justly acquired holdings. Justice, he argued, depends on the history of how things came to be owned, not on end-state patterns of distribution.\n\nBased on the texts, Nozick (Text 2) would most likely argue that Rawls's theory in Text 1:",
+    options: [
+      { letter: "A", text: "Incorrectly assumes people would agree on principles of justice behind a veil of ignorance" },
+      { letter: "B", text: "Ignores individuals' entitlements by focusing on distribution patterns rather than how holdings were acquired" },
+      { letter: "C", text: "Fails to provide guidance for designing actual political institutions" },
+      { letter: "D", text: "Places too much emphasis on the needs of the most advantaged members of society" }
+    ],
+    correctAnswer: "B",
+    explanation: "Nozick argues justice 'depends on the history of how things came to be owned, not on end-state patterns.' He would criticize Rawls for focusing on distribution (end-state) while ignoring how people acquired what they have.",
+    difficulty: "Hard",
+    domain: "Reading and Writing",
+    skill: "Cross-Text Connections"
+  },
+  {
+    id: "eng197",
+    question: "The novelist's technique of ______ multiple narrative perspectives creates a portrait of events more comprehensive than any single viewpoint could provide.",
+    options: [
+      { letter: "A", text: "obscuring" },
+      { letter: "B", text: "juxtaposing" },
+      { letter: "C", text: "eliminating" },
+      { letter: "D", text: "homogenizing" }
+    ],
+    correctAnswer: "B",
+    explanation: "'Juxtaposing' means placing side by side for comparison. Using 'multiple narrative perspectives' to create a 'more comprehensive portrait' describes juxtaposition—placing different viewpoints together.",
+    difficulty: "Hard",
+    domain: "Reading and Writing",
+    skill: "Words in Context"
+  },
+  {
+    id: "eng198",
+    question: "The discovery of water ice on the Moon has significant implications for future space exploration. ______, the ice could potentially be converted into drinking water, oxygen, and rocket fuel for lunar bases.\n\nWhich choice completes the text with the most logical transition?",
+    options: [
+      { letter: "A", text: "Nevertheless," },
+      { letter: "B", text: "For instance," },
+      { letter: "C", text: "In contrast," },
+      { letter: "D", text: "Subsequently," }
+    ],
+    correctAnswer: "B",
+    explanation: "'For instance' correctly introduces specific examples (drinking water, oxygen, rocket fuel) that illustrate the general claim about 'significant implications.'",
+    difficulty: "Hard",
+    domain: "Reading and Writing",
+    skill: "Transitions"
+  },
+  {
+    id: "eng199",
+    question: "While researching a topic, a student took the following notes:\n• The Turing test, proposed by Alan Turing in 1950, evaluates whether a machine can exhibit intelligent behavior indistinguishable from a human.\n• Critics argue the test measures imitation rather than genuine intelligence.\n• Some AI systems have 'passed' the test by exploiting judges' expectations rather than demonstrating understanding.\n• Philosopher John Searle's 'Chinese Room' argument suggests passing the test doesn't indicate consciousness.\n• Despite criticism, the test remains influential in AI research and popular culture.\n\nThe student wants to present both the significance and limitations of the Turing test.",
+    options: [
+      { letter: "A", text: "The Turing test, proposed in 1950, remains influential despite criticisms that it measures imitation rather than genuine intelligence or consciousness." },
+      { letter: "B", text: "Alan Turing proposed his famous test of machine intelligence in 1950." },
+      { letter: "C", text: "Some AI systems have passed the Turing test by exploiting judges' expectations rather than demonstrating genuine understanding." },
+      { letter: "D", text: "Philosopher John Searle's Chinese Room argument challenges the idea that passing the Turing test indicates consciousness." }
+    ],
+    correctAnswer: "A",
+    explanation: "Choice A presents both significance ('remains influential') and limitations ('criticisms that it measures imitation rather than genuine intelligence or consciousness'), fulfilling the dual goal.",
+    difficulty: "Hard",
+    domain: "Reading and Writing",
+    skill: "Rhetorical Synthesis"
+  },
+  {
+    id: "eng200",
+    question: "The following text is adapted from F. Scott Fitzgerald's The Great Gatsby (1925).\nIn my younger and more vulnerable years my father gave me some advice that I've been turning over in my mind ever since. 'Whenever you feel like criticizing anyone,' he told me, 'just remember that all the people in this world haven't had the advantages that you've had.'\n\nWhich choice best describes the function of the father's advice in this opening passage?",
+    options: [
+      { letter: "A", text: "It establishes the narrator's tendency to judge others harshly" },
+      { letter: "B", text: "It introduces a principle of moral restraint that will frame the narrative" },
+      { letter: "C", text: "It reveals the father as the novel's central moral authority" },
+      { letter: "D", text: "It suggests the narrator comes from a disadvantaged background" }
+    ],
+    correctAnswer: "B",
+    explanation: "The advice about withholding criticism establishes a moral framework for the narrative. The narrator has 'been turning it over' ever since, suggesting it frames how he will tell—and judge—the story that follows.",
+    difficulty: "Hard",
+    domain: "Reading and Writing",
+    skill: "Text Structure and Purpose"
   }
 ];
