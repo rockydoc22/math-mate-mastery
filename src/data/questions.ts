@@ -1,4 +1,5 @@
 import mathQuestionsRaw from './mathQuestionsRaw.json';
+import { additionalMathQuestions } from './additionalMathQuestions';
 
 export interface Question {
   id: string;
@@ -13,7 +14,6 @@ export interface Question {
   domain: string;
   skill: string;
 }
-
 interface RawMathQuestion {
   id: number;
   category: string;
@@ -29,7 +29,7 @@ interface RawMathQuestion {
 }
 
 // Transform raw JSON questions to our Question format
-export const questions: Question[] = (mathQuestionsRaw as RawMathQuestion[]).map((q) => ({
+const rawQuestions: Question[] = (mathQuestionsRaw as RawMathQuestion[]).map((q) => ({
   id: `math${String(q.id).padStart(3, '0')}`,
   question: q.question,
   options: [
@@ -44,3 +44,6 @@ export const questions: Question[] = (mathQuestionsRaw as RawMathQuestion[]).map
   domain: q.category,
   skill: q.subcategory
 }));
+
+// Combine all math questions
+export const questions: Question[] = [...rawQuestions, ...additionalMathQuestions];
