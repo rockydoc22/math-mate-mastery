@@ -14,10 +14,10 @@ const Home = () => {
             <BookOpen className="w-20 h-20 text-primary" />
           </div>
           <h1 className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">
-            SAT Practice
+            SAT Mastery
           </h1>
           <p className="text-xl text-muted-foreground max-w-lg mx-auto">
-            Choose a subject to start practicing
+            The path to 1600
           </p>
         </div>
 
@@ -35,9 +35,8 @@ const Home = () => {
                   Algebra, linear equations, and systems of equations
                 </p>
               </div>
-              <div className="flex justify-center gap-4 text-sm text-muted-foreground">
+              <div className="flex justify-center text-sm text-muted-foreground">
                 <span className="px-3 py-1 bg-primary/10 rounded-full">{questions.length} Questions</span>
-                <span className="px-3 py-1 bg-secondary/10 rounded-full">Hard</span>
               </div>
               <Link to="/math">
                 <Button size="lg" className="w-full">
@@ -60,9 +59,8 @@ const Home = () => {
                   Grammar, vocabulary, and text analysis
                 </p>
               </div>
-              <div className="flex justify-center gap-4 text-sm text-muted-foreground">
+              <div className="flex justify-center text-sm text-muted-foreground">
                 <span className="px-3 py-1 bg-primary/10 rounded-full">{englishQuestions.length} Questions</span>
-                <span className="px-3 py-1 bg-secondary/10 rounded-full">Hard</span>
               </div>
               <Link to="/english">
                 <Button size="lg" variant="secondary" className="w-full">
