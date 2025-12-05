@@ -3012,5 +3012,980 @@ export const englishQuestions: EnglishQuestion[] = [
     difficulty: "Hard",
     domain: "Reading and Writing",
     skill: "Text Structure and Purpose"
+  },
+  {
+    id: "eng201",
+    question: "Marta Coll and colleagues' 2010 Mediterranean Sea biodiversity census reported approximately 17,000 species, nearly double the number reported in Carlo Bianchi and Carla Morri's 2000 census—a difference only partly attributable to the description of new invertebrate species in the interim. Another factor is that the morphological variability of microorganisms is poorly understood compared to that of vertebrates, invertebrates, plants, and algae, creating uncertainty about how to evaluate microorganisms as species. Researchers' decisions on such matters therefore can be highly consequential. Indeed, the two censuses reported similar counts of vertebrate, plant, and algal species, suggesting that ______\n\nWhich choice most logically completes the text?",
+    options: [
+      { letter: "A", text: "Coll and colleagues reported a much higher number of species than Bianchi and Morri did largely due to the inclusion of invertebrate species that had not been described at the time of Bianchi and Morri's census." },
+      { letter: "B", text: "some differences observed in microorganisms may have been treated as variations within species by Bianchi and Morri but treated as indicative of distinct species by Coll and colleagues." },
+      { letter: "C", text: "Bianchi and Morri may have been less sensitive to the degree of morphological variation displayed within a typical species of microorganism than Coll and colleagues were." },
+      { letter: "D", text: "the absence of clarity regarding how to differentiate among species of microorganisms may have resulted in Coll and colleagues underestimating the number of microorganism species." }
+    ],
+    correctAnswer: "B",
+    explanation: "The text explains that microorganism classification is uncertain and that researchers' decisions can significantly affect counts. Since vertebrate, plant, and algal counts were similar between censuses, the difference came from how microorganisms were classified.",
+    difficulty: "Hard",
+    domain: "Reading and Writing",
+    skill: "Inference"
+  },
+  {
+    id: "eng202",
+    question: "Many literary theorists distinguish between fabula, a narrative's content, and syuzhet, a narrative's arrangement and presentation of events. In the film The Godfather Part II, the fabula is the story of the Corleone family, and the syuzhet is the presentation of the story as it alternates between two timelines in 1901 and 1958. But literary theorist Mikhail Bakhtin maintained that fabula and syuzhet are insufficient to completely describe a narrative—he held that systematic categorizations of artistic phenomena discount the subtle way in which meaning is created by interactions between the artist, the work, and the audience.\n\nWhich choice best states the main idea of the text?",
+    options: [
+      { letter: "A", text: "Literary theorist Mikhail Bakhtin argued that there are important characteristics of narratives that are not fully encompassed by two concepts that other theorists have used to analyze narratives." },
+      { letter: "B", text: "Literary theorist Mikhail Bakhtin claimed that meaning is not inherent in a narrative but is created when an audience encounters a narrative so that narratives are interpreted differently by different people." },
+      { letter: "C", text: "The storytelling methods used in The Godfather Part II may seem unusually complicated, but they can be easily understood when two concepts from literary theory are utilized." },
+      { letter: "D", text: "Narratives that are told out of chronological order are more difficult for audiences to understand than are narratives presented chronologically." }
+    ],
+    correctAnswer: "A",
+    explanation: "The text explains fabula and syuzhet, then presents Bakhtin's view that these concepts are insufficient because they fail to account for how meaning emerges from artist-work-audience interactions.",
+    difficulty: "Hard",
+    domain: "Reading and Writing",
+    skill: "Text Structure and Purpose"
+  },
+  {
+    id: "eng203",
+    question: "The International Union for Conservation of Nature (IUCN) Red List of Threatened Species is widely regarded as the most comprehensive inventory of global conservation status. The Red List classifies species as \"vulnerable,\" \"endangered,\" or \"critically endangered\" based on criteria such as population size and rate of decline. However, critics argue that the Red List's criteria may not adequately capture threats to species that are geographically restricted, such as those found only on small islands. These species may be highly vulnerable to localized threats like invasive species or climate change but might not meet the Red List's population-based thresholds for classification.\n\nWhich finding, if true, would most directly challenge the critics' argument?",
+    options: [
+      { letter: "A", text: "Small-island species often have small populations, so they frequently meet the Red List's population size criteria for classification as threatened." },
+      { letter: "B", text: "The Red List has successfully predicted the extinction of several small-island species in the past." },
+      { letter: "C", text: "Many small-island species are classified as threatened based on their rate of decline rather than population size." },
+      { letter: "D", text: "The IUCN has proposed revisions to the Red List criteria specifically for geographically restricted species." }
+    ],
+    correctAnswer: "A",
+    explanation: "If small-island species often have small populations and therefore meet the Red List's population thresholds, this directly challenges the critics' claim that the criteria fail to capture these species.",
+    difficulty: "Hard",
+    domain: "Reading and Writing",
+    skill: "Evidence"
+  },
+  {
+    id: "eng204",
+    question: "In the early 20th century, the discovery of penicillin revolutionized medicine by providing an effective treatment for bacterial infections. However, the widespread use of antibiotics has led to the emergence of antibiotic-resistant bacteria, posing a significant public health threat. One strategy to combat this is the development of new antibiotics, but the process is slow and costly. Another approach is antibiotic stewardship, which involves judicious use of antibiotics to minimize resistance.\n\nWhich choice best describes the function of the underlined portion (\"the process is slow and costly\") in the text as a whole?",
+    options: [
+      { letter: "A", text: "It explains why antibiotic stewardship is a more promising strategy than the development of new antibiotics." },
+      { letter: "B", text: "It provides evidence for the claim that antibiotic resistance is a significant public health threat." },
+      { letter: "C", text: "It highlights a limitation of one strategy for combating antibiotic resistance." },
+      { letter: "D", text: "It contrasts the historical impact of penicillin with modern challenges in antibiotic development." }
+    ],
+    correctAnswer: "C",
+    explanation: "The underlined portion highlights a limitation of developing new antibiotics—that it is slow and costly—which is one of the two strategies mentioned for combating resistance.",
+    difficulty: "Hard",
+    domain: "Reading and Writing",
+    skill: "Standard English Conventions"
+  },
+  {
+    id: "eng205",
+    question: "The concept of \"dark matter\" in cosmology refers to a hypothetical form of matter that does not interact with light and is inferred from its gravitational effects on visible matter. Observations of galaxy rotation curves suggest that dark matter is distributed in halos surrounding galaxies. However, alternative theories, such as modified Newtonian dynamics (MOND), propose that the observed effects can be explained without dark matter by altering the laws of gravity at low accelerations.\n\nWhich choice most accurately describes the relationship between the underlined words (\"alternative theories\") and the rest of the text?",
+    options: [
+      { letter: "A", text: "They introduce ideas that challenge the main hypothesis presented in the text." },
+      { letter: "B", text: "They provide examples of the gravitational effects attributed to dark matter." },
+      { letter: "C", text: "They describe the observational methods used to detect dark matter halos." },
+      { letter: "D", text: "They explain the hypothetical nature of dark matter as a form of matter." }
+    ],
+    correctAnswer: "A",
+    explanation: "The 'alternative theories' like MOND challenge the dark matter hypothesis by proposing explanations that don't require dark matter to exist.",
+    difficulty: "Hard",
+    domain: "Reading and Writing",
+    skill: "Standard English Conventions"
+  },
+  {
+    id: "eng206",
+    question: "During the Renaissance, the invention of the printing press by Johannes Gutenberg facilitated the rapid dissemination of knowledge, contributing to cultural and scientific advancements. This technological innovation allowed for the mass production of books, making them more accessible to the general population. Prior to the printing press, books were laboriously copied by hand, limiting their availability to the wealthy and clergy.\n\nThe author includes the sentence \"Prior to the printing press, books were laboriously copied by hand, limiting their availability to the wealthy and clergy\" primarily to",
+    options: [
+      { letter: "A", text: "contrast the accessibility of knowledge before and after the invention of the printing press." },
+      { letter: "B", text: "provide historical context for the cultural advancements of the Renaissance." },
+      { letter: "C", text: "illustrate the technical challenges of book production in the pre-printing era." },
+      { letter: "D", text: "emphasize the role of the clergy in preserving knowledge during the Renaissance." }
+    ],
+    correctAnswer: "A",
+    explanation: "The sentence contrasts the limited availability of books before the printing press with the increased accessibility after its invention.",
+    difficulty: "Hard",
+    domain: "Reading and Writing",
+    skill: "Inference"
+  },
+  {
+    id: "eng207",
+    question: "The study of epigenetics has revealed that environmental factors can influence gene expression without altering the DNA sequence itself. For example, exposure to certain chemicals can lead to changes in DNA methylation patterns, which may be heritable across generations. This finding has implications for understanding how lifestyle and environmental exposures contribute to disease risk.\n\nWhich choice provides the best evidence for the claim that epigenetic changes may be heritable?",
+    options: [
+      { letter: "A", text: "Exposure to certain chemicals can lead to changes in DNA methylation patterns." },
+      { letter: "B", text: "The study of epigenetics has revealed that environmental factors can influence gene expression." },
+      { letter: "C", text: "Changes in DNA methylation patterns may be heritable across generations." },
+      { letter: "D", text: "Lifestyle and environmental exposures contribute to disease risk." }
+    ],
+    correctAnswer: "C",
+    explanation: "Choice C directly states that changes in DNA methylation patterns may be heritable across generations, providing direct evidence for the claim.",
+    difficulty: "Hard",
+    domain: "Reading and Writing",
+    skill: "Evidence"
+  },
+  {
+    id: "eng208",
+    question: "In behavioral economics, the endowment effect refers to the tendency for people to value an object more highly once they have been given ownership of it. This phenomenon is often demonstrated in experiments where participants are randomly assigned ownership of a mug and then asked to trade it for a different item of equal market value. Despite the equal value, most participants refuse to trade, suggesting that ownership increases perceived value.\n\nThe main purpose of the underlined sentence (\"This phenomenon is often demonstrated...\") is to",
+    options: [
+      { letter: "A", text: "provide an example of the endowment effect in action." },
+      { letter: "B", text: "describe the methodology used in behavioral economics experiments." },
+      { letter: "C", text: "explain why the endowment effect occurs in real-world settings." },
+      { letter: "D", text: "contrast the endowment effect with other behavioral biases." }
+    ],
+    correctAnswer: "A",
+    explanation: "The sentence gives a specific experimental example (the mug experiment) to illustrate how the endowment effect manifests.",
+    difficulty: "Hard",
+    domain: "Reading and Writing",
+    skill: "Standard English Conventions"
+  },
+  {
+    id: "eng209",
+    question: "A researcher claims that the decline in bee populations is primarily due to the use of neonicotinoid pesticides. To test this claim, scientists conducted an experiment in which one group of bees was exposed to neonicotinoids while a control group was not. After several weeks, the exposed group showed significantly higher mortality rates. However, critics argue that the laboratory conditions did not accurately reflect real-world exposure levels.\n\nWhich choice best describes a limitation of the experiment as described?",
+    options: [
+      { letter: "A", text: "The study failed to include a control group of bees." },
+      { letter: "B", text: "The exposure levels in the lab may not match those found in natural environments." },
+      { letter: "C", text: "The experiment only measured mortality and not other effects on bee behavior." },
+      { letter: "D", text: "The researchers did not account for genetic differences among the bees." }
+    ],
+    correctAnswer: "B",
+    explanation: "The critics specifically point out that laboratory conditions did not accurately reflect real-world exposure levels, which is the limitation described.",
+    difficulty: "Hard",
+    domain: "Reading and Writing",
+    skill: "Inference"
+  },
+  {
+    id: "eng210",
+    question: "The concept of \"keystone species\" refers to organisms that have a disproportionately large effect on their environment relative to their abundance. Removing a keystone species can cause dramatic shifts in ecosystem structure. For example, sea otters in kelp forests control sea urchin populations; without otters, urchins overgraze kelp and collapse the entire ecosystem.\n\nThe main purpose of the example about sea otters is to",
+    options: [
+      { letter: "A", text: "illustrate the definition of a keystone species." },
+      { letter: "B", text: "compare sea otters with other marine predators." },
+      { letter: "C", text: "explain how kelp forests depend on sea urchins." },
+      { letter: "D", text: "argue that all predators are keystone species." }
+    ],
+    correctAnswer: "A",
+    explanation: "The sea otter example directly illustrates how one species can have an outsized impact on its ecosystem, demonstrating the definition of keystone species.",
+    difficulty: "Hard",
+    domain: "Reading and Writing",
+    skill: "Inference"
+  },
+  {
+    id: "eng211",
+    question: "In 2019, archaeologists discovered a 3,000-year-old wooden coffin in Egypt that still contained its original paint. The vivid colors surprised researchers because organic pigments usually fade over millennia. Analysis revealed that the paint contained Egyptian blue—one of the first synthetic pigments—mixed with a natural resin that protected it from degradation.\n\nWhich choice best states the function of the underlined portion in the text as a whole?",
+    options: [
+      { letter: "A", text: "It identifies the reason the paint remained vivid." },
+      { letter: "B", text: "It describes the chemical composition of Egyptian blue." },
+      { letter: "C", text: "It explains why archaeologists were surprised." },
+      { letter: "D", text: "It provides evidence that the coffin was recently made." }
+    ],
+    correctAnswer: "A",
+    explanation: "The underlined portion ('mixed with a natural resin that protected it from degradation') directly explains why the organic pigments did not fade.",
+    difficulty: "Hard",
+    domain: "Reading and Writing",
+    skill: "Standard English Conventions"
+  },
+  {
+    id: "eng212",
+    question: "While researching a paper, Mei came across the following two sentences in different sources: Source 1: \"The Industrial Revolution began in Britain in the late 18th century.\" Source 2: \"The Industrial Revolution, which transformed economies worldwide, is generally said to have started in Britain around 1760.\"\n\nWhich choice best describes how Source 2 relates to Source 1?",
+    options: [
+      { letter: "A", text: "Source 2 contradicts Source 1 by giving an earlier starting date." },
+      { letter: "B", text: "Source 2 plagiarizes Source 1." },
+      { letter: "C", text: "Source 2 provides additional detail about the same claim made in Source 1." },
+      { letter: "D", text: "Source 2 challenges the importance of Britain in the Industrial Revolution." }
+    ],
+    correctAnswer: "C",
+    explanation: "Both sources make essentially the same claim. Source 2 adds more descriptive detail and a slightly more precise date ('around 1760').",
+    difficulty: "Hard",
+    domain: "Reading and Writing",
+    skill: "Inference"
+  },
+  {
+    id: "eng213",
+    question: "The author of a history textbook writes: \"Many historians now argue that the fall of Rome was not a single catastrophic event but a gradual process that unfolded over centuries.\"\n\nThe author most likely uses quotation marks around \"fall of Rome\" to",
+    options: [
+      { letter: "A", text: "indicate that the phrase is being quoted from another source." },
+      { letter: "B", text: "suggest that the phrase is controversial or oversimplified." },
+      { letter: "C", text: "emphasize that Rome's military defeat." },
+      { letter: "D", text: "show that the event never actually happened." }
+    ],
+    correctAnswer: "B",
+    explanation: "The quotation marks signal that 'fall of Rome' is a traditional phrase that many historians now consider oversimplified, preferring to see it as a long, complex process.",
+    difficulty: "Hard",
+    domain: "Reading and Writing",
+    skill: "Inference"
+  },
+  {
+    id: "eng214",
+    question: "Some economists believe that universal basic income (UBI) could reduce poverty and inequality. Others worry that it would discourage people from working.\n\nThe text is primarily concerned with",
+    options: [
+      { letter: "A", text: "explaining how universal basic income would be funded." },
+      { letter: "B", text: "describing opposing views on the effects of universal basic income." },
+      { letter: "C", text: "proving that universal basic income has already reduced poverty in some countries." },
+      { letter: "D", text: "arguing that concerns about work disincentives are unfounded." }
+    ],
+    correctAnswer: "B",
+    explanation: "The text presents two contrasting economic viewpoints on UBI without taking a side, simply describing the debate.",
+    difficulty: "Hard",
+    domain: "Reading and Writing",
+    skill: "Inference"
+  },
+  {
+    id: "eng215",
+    question: "A study found that students who took notes by hand remembered conceptual information better than students who typed notes on laptops. The researchers suggest this is because handwriting forces deeper cognitive processing.\n\nWhich choice best describes the function of the second sentence in the text?",
+    options: [
+      { letter: "A", text: "It offers an explanation for the finding reported in the first sentence." },
+      { letter: "B", text: "It provides an alternative interpretation of the study's results." },
+      { letter: "C", text: "It contradicts the first sentence." },
+      { letter: "D", text: "It gives an example of deeper cognitive processing." }
+    ],
+    correctAnswer: "A",
+    explanation: "The second sentence ('The researchers suggest...') directly explains why hand-written notes led to better recall—it offers the researchers' causal interpretation.",
+    difficulty: "Hard",
+    domain: "Reading and Writing",
+    skill: "Inference"
+  },
+  {
+    id: "eng216",
+    question: "The following text is adapted from Jane Austen's 1813 novel Pride and Prejudice.\n\n\"Elizabeth listened with increasing astonishment as Mr. Darcy continued his speech.\"\n\nWhich choice completes the text the meaning of the original Austen text?",
+    options: [
+      { letter: "A", text: "NO CHANGE" },
+      { letter: "B", text: "astonishment as Mr. Darcy" },
+      { letter: "C", text: "astonishment; as Mr. Darcy" },
+      { letter: "D", text: "astonishment: as Mr. Darcy" }
+    ],
+    correctAnswer: "B",
+    explanation: "The phrase 'with increasing astonishment as Mr. Darcy continued his speech' is a prepositional phrase modifying how Elizabeth listened, so no punctuation is needed between 'astonishment' and 'as.'",
+    difficulty: "Hard",
+    domain: "Reading and Writing",
+    skill: "Inference"
+  },
+  {
+    id: "eng217",
+    question: "The author of a review writes: \"Although the film's special effects are impressive, its characters remain disappointingly one-dimensional.\"\n\nThe author's use of the word \"although\" signals that the author is",
+    options: [
+      { letter: "A", text: "conceding a strength while emphasizing a weakness." },
+      { letter: "B", text: "comparing the film to other films with better characters." },
+      { letter: "C", text: "admitting that the special effects are the only positive aspect." },
+      { letter: "D", text: "suggesting the film would have been better without special effects." }
+    ],
+    correctAnswer: "A",
+    explanation: "'Although' introduces a concession—the author acknowledges that the special effects are impressive but still argues that the characters are weak.",
+    difficulty: "Hard",
+    domain: "Reading and Writing",
+    skill: "Inference"
+  },
+  {
+    id: "eng218",
+    question: "Researchers have found that people who regularly engage in aerobic exercise show improved cognitive function in old age. The same researchers note that aerobic exercise increases blood flow to the brain.\n\nWhich choice best explains how the second sentence functions in relation to the first?",
+    options: [
+      { letter: "A", text: "It provides a possible mechanism for the benefit described in the first sentence." },
+      { letter: "B", text: "It offers an alternative explanation that contradicts the first sentence." },
+      { letter: "C", text: "It gives an example of a type of aerobic exercise." },
+      { letter: "D", text: "It weakens the claim made in the first sentence." }
+    ],
+    correctAnswer: "A",
+    explanation: "Increased blood flow to the brain is presented as a potential biological reason why aerobic exercise improves cognitive function later in life.",
+    difficulty: "Hard",
+    domain: "Reading and Writing",
+    skill: "Inference"
+  },
+  {
+    id: "eng219",
+    question: "The following text is from Charlotte Brontë's 1847 novel Jane Eyre.\n\n\"I am no bird; and no net ensnares me: I am a free human being with an independent will.\"\n\nWhich choice completes the text with the most logical and precise word or phrase?",
+    options: [
+      { letter: "A", text: "NO CHANGE" },
+      { letter: "B", text: "therefore" },
+      { letter: "C", text: "however" },
+      { letter: "D", text: "in fact" }
+    ],
+    correctAnswer: "A",
+    explanation: "The semicolon correctly joins two independent clauses that reinforce each other: the first denies being trapped, and the second asserts freedom and independence.",
+    difficulty: "Hard",
+    domain: "Reading and Writing",
+    skill: "Inference"
+  },
+  {
+    id: "eng220",
+    question: "A student is writing a research paper and wants to use the following information from a book:\n\nOriginal source: \"Climate change is the most urgent threat facing humanity today, and immediate action is required to prevent irreversible damage.\"\n\nThe student writes: Climate change is the most urgent threat facing humanity today.\n\nWhich choice shows the correct way to cite this information?",
+    options: [
+      { letter: "A", text: "(Climate change is the most urgent threat...)" },
+      { letter: "B", text: "\"Climate change is the most urgent threat facing humanity today\" (Source)." },
+      { letter: "C", text: "Climate change is the most urgent threat facing humanity today (Source)." },
+      { letter: "D", text: "According to the source, climate change is the most urgent threat facing humanity today." }
+    ],
+    correctAnswer: "C",
+    explanation: "When paraphrasing or directly quoting, the student must still cite the source. Choice C correctly paraphrases and gives credit without quotation marks.",
+    difficulty: "Hard",
+    domain: "Reading and Writing",
+    skill: "Inference"
+  },
+  {
+    id: "eng221",
+    question: "Many people believe that creativity declines with age, but research shows that some of history's greatest artists, writers, and scientists produced their best work later in life.\n\nWhich choice completes the text so that it conforms to the conventions of standard English?",
+    options: [
+      { letter: "A", text: "NO CHANGE" },
+      { letter: "B", text: "research shows that," },
+      { letter: "C", text: "research shows, that" },
+      { letter: "D", text: "research shows --- that" }
+    ],
+    correctAnswer: "B",
+    explanation: "A comma after 'shows' correctly sets off the clause that follows in this construction.",
+    difficulty: "Hard",
+    domain: "Reading and Writing",
+    skill: "Inference"
+  },
+  {
+    id: "eng222",
+    question: "The city council voted to preserve the historic building rather than allow its demolition.\n\nThe writer wants to emphasize the contrast between the two options. Which choice best accomplishes this goal?",
+    options: [
+      { letter: "A", text: "NO CHANGE" },
+      { letter: "B", text: "instead of allowing" },
+      { letter: "C", text: "as opposed to allowing" },
+      { letter: "D", text: "in place of allowing" }
+    ],
+    correctAnswer: "A",
+    explanation: "'Rather than' is the most concise and idiomatic way to show a strong contrast between preserving and demolishing.",
+    difficulty: "Hard",
+    domain: "Reading and Writing",
+    skill: "Inference"
+  },
+  {
+    id: "eng223",
+    question: "Scientists have long debated whether Pluto should be classified as a planet. In 2006 the International Astronomical Union redefined the definition of a planet, excluding Pluto.\n\nWhich choice completes the text with the most logical transition?",
+    options: [
+      { letter: "A", text: "NO CHANGE" },
+      { letter: "B", text: "Consequently," },
+      { letter: "C", text: "For example," },
+      { letter: "D", text: "In" }
+    ],
+    correctAnswer: "D",
+    explanation: "'In 2006' is the only logical transition that indicates when the redefinition occurred.",
+    difficulty: "Hard",
+    domain: "Reading and Writing",
+    skill: "Inference"
+  },
+  {
+    id: "eng224",
+    question: "The new policy requires all employees to complete training; failure to do so will result in disciplinary action.\n\nThe writer wants to combine the sentences to emphasize cause and effect. Which choice best accomplishes this goal?",
+    options: [
+      { letter: "A", text: "The new policy requires all employees to complete training, failure to do so will result in disciplinary action." },
+      { letter: "B", text: "The new policy requires all employees to complete training; otherwise, they will face disciplinary action." },
+      { letter: "C", text: "Because the new policy requires all employees to complete training, failure to do so will result in disciplinary action." },
+      { letter: "D", text: "The new policy requires all employees to complete training, or else disciplinary action will be taken." }
+    ],
+    correctAnswer: "B",
+    explanation: "'Otherwise' clearly and concisely signals the cause-and-effect relationship between not completing the training and facing consequences.",
+    difficulty: "Hard",
+    domain: "Reading and Writing",
+    skill: "Inference"
+  },
+  {
+    id: "eng225",
+    question: "A new study suggests that eating breakfast every day is associated with better academic performance in teenagers. However, the researchers caution that this is a correlation, not proof of causation.\n\nThe second sentence primarily serves to",
+    options: [
+      { letter: "A", text: "weaken the claim made in the first sentence." },
+      { letter: "B", text: "clarify the limitations of the study's conclusions." },
+      { letter: "C", text: "provide additional evidence for the first sentence." },
+      { letter: "D", text: "explain how the study was conducted." }
+    ],
+    correctAnswer: "B",
+    explanation: "The word 'however' signals that the second sentence limits how strongly readers should interpret the association as cause-and-effect.",
+    difficulty: "Hard",
+    domain: "Reading and Writing",
+    skill: "Inference"
+  },
+  {
+    id: "eng226",
+    question: "The following text is from F. Scott Fitzgerald's 1925 novel The Great Gatsby.\n\n\"Gatsby believed in the green light, the orgastic future that year by year recedes before us.\"\n\nWhich choice completes the text with the most logical and precise word?",
+    options: [
+      { letter: "A", text: "NO CHANGE" },
+      { letter: "B", text: "joyous" },
+      { letter: "C", text: "ecstatic" },
+      { letter: "D", text: "frenzied" }
+    ],
+    correctAnswer: "A",
+    explanation: "Fitzgerald deliberately used the unusual word 'orgastic' (meaning intensely sensual and climactic) rather than the more common 'orgiastic.' The original word is correct.",
+    difficulty: "Hard",
+    domain: "Reading and Writing",
+    skill: "Inference"
+  },
+  {
+    id: "eng227",
+    question: "Some psychologists argue that birth order affects personality: firstborn children tend to be more responsible, while younger siblings are more rebellious.\n\nThe author is most likely assuming that",
+    options: [
+      { letter: "A", text: "parents treat children differently based on birth order." },
+      { letter: "B", text: "personality is entirely determined at birth." },
+      { letter: "C", text: "all families have the same number of children." },
+      { letter: "D", text: "birth order has no real effect on personality." }
+    ],
+    correctAnswer: "A",
+    explanation: "The argument only makes sense if parents (or the family environment) respond differently to children based on their birth order.",
+    difficulty: "Hard",
+    domain: "Reading and Writing",
+    skill: "Inference"
+  },
+  {
+    id: "eng228",
+    question: "The city has seen a sharp increase in bicycle commuting over the past five years, a trend city officials attribute to new protected bike lanes and rising gas prices.\n\nWhich choice best supports the officials' explanation?",
+    options: [
+      { letter: "A", text: "Gas prices have fallen steadily over the past decade." },
+      { letter: "B", text: "Many new bike lanes were completed between 2018 and 2022." },
+      { letter: "C", text: "Most bicycle commuters are under 35 years old." },
+      { letter: "D", text: "Public transit ridership has also increased." }
+    ],
+    correctAnswer: "B",
+    explanation: "The completion of new bike lanes in the same period supports the claim that protected lanes contributed to the increase.",
+    difficulty: "Hard",
+    domain: "Reading and Writing",
+    skill: "Evidence"
+  },
+  {
+    id: "eng229",
+    question: "The author writes: \"Technology was supposed to give us more free time—instead, we are busier than ever.\"\n\nThe dash is primarily used to",
+    options: [
+      { letter: "A", text: "introduce an ironic or unexpected outcome." },
+      { letter: "B", text: "indicate a change in speaker." },
+      { letter: "C", text: "show a range of years." },
+      { letter: "D", text: "separate items in a list." }
+    ],
+    correctAnswer: "A",
+    explanation: "The dash sets up the ironic contrast between the promise of technology (more free time) and the reality (busier than ever).",
+    difficulty: "Hard",
+    domain: "Reading and Writing",
+    skill: "Standard English Conventions"
+  },
+  {
+    id: "eng230",
+    question: "The following text is adapted from Herman Melville's 1851 novel Moby-Dick.\n\n\"Call me Ishmael. Some years ago—never mind how long precisely—having little or no money in my purse, and nothing particular to interest me on shore, I thought I would sail about a little and see the watery part of the world.\"\n\nWhich choice best describes the function of the dashes in this passage?",
+    options: [
+      { letter: "A", text: "They set off an aside that downplays the importance of the exact timeframe." },
+      { letter: "B", text: "They indicate a gap in the narrator's memory." },
+      { letter: "C", text: "They emphasize the precision of the narrator's recollection." },
+      { letter: "D", text: "They separate two contrasting ideas." }
+    ],
+    correctAnswer: "A",
+    explanation: "The dashes enclose a casual dismissal ('never mind how long precisely'), suggesting the exact timing is unimportant to the story.",
+    difficulty: "Hard",
+    domain: "Reading and Writing",
+    skill: "Standard English Conventions"
+  },
+  {
+    id: "eng231",
+    question: "A recent study found that children who learn a second language before age 7 show enhanced problem-solving skills compared to monolingual peers.\n\nWhich choice would most directly strengthen the causal claim implied in this finding?",
+    options: [
+      { letter: "A", text: "The bilingual children came from wealthier families." },
+      { letter: "B", text: "The two groups were matched for socioeconomic status and parental education level." },
+      { letter: "C", text: "Problem-solving skills were measured using a standardized test." },
+      { letter: "D", text: "Some bilingual children started learning their second language at age 5." }
+    ],
+    correctAnswer: "B",
+    explanation: "Matching the groups on other variables (socioeconomic status, parental education) makes it more likely that bilingualism itself caused the difference.",
+    difficulty: "Hard",
+    domain: "Reading and Writing",
+    skill: "Evidence"
+  },
+  {
+    id: "eng232",
+    question: "The author writes: \"Sleep deprivation affects not only physical health but also cognitive performance.\"\n\nThe phrase \"not only...but also\" primarily serves to",
+    options: [
+      { letter: "A", text: "emphasize that sleep deprivation has multiple negative effects." },
+      { letter: "B", text: "contrast physical health with cognitive performance." },
+      { letter: "C", text: "suggest that cognitive effects are more important than physical ones." },
+      { letter: "D", text: "indicate that the effects are unexpected." }
+    ],
+    correctAnswer: "A",
+    explanation: "The correlative conjunction 'not only...but also' emphasizes that sleep deprivation affects both areas, highlighting the breadth of its impact.",
+    difficulty: "Hard",
+    domain: "Reading and Writing",
+    skill: "Standard English Conventions"
+  },
+  {
+    id: "eng233",
+    question: "The museum's new wing features interactive exhibits designed to engage younger visitors; traditional galleries remain available for those who prefer a more contemplative experience.\n\nThe semicolon is used correctly because",
+    options: [
+      { letter: "A", text: "both clauses are independent and closely related in content." },
+      { letter: "B", text: "the second clause provides an example of the first." },
+      { letter: "C", text: "a list of items follows the semicolon." },
+      { letter: "D", text: "the two clauses express contradictory ideas." }
+    ],
+    correctAnswer: "A",
+    explanation: "Both parts are complete sentences discussing the museum's offerings for different visitor preferences, making them closely related independent clauses.",
+    difficulty: "Hard",
+    domain: "Reading and Writing",
+    skill: "Standard English Conventions"
+  },
+  {
+    id: "eng234",
+    question: "The ancient city of Pompeii was buried under volcanic ash in 79 CE. Today, archaeologists continue to uncover remarkably preserved artifacts, including food, furniture, and even human remains.\n\nWhich choice best describes the relationship between the two sentences?",
+    options: [
+      { letter: "A", text: "The second sentence explains why the first event occurred." },
+      { letter: "B", text: "The second sentence describes the ongoing consequences of the first event." },
+      { letter: "C", text: "The second sentence contradicts the first." },
+      { letter: "D", text: "The second sentence provides historical context for the first." }
+    ],
+    correctAnswer: "B",
+    explanation: "The first sentence describes the burial; the second describes how archaeologists today are still finding preserved items as a result of that burial.",
+    difficulty: "Hard",
+    domain: "Reading and Writing",
+    skill: "Inference"
+  },
+  {
+    id: "eng235",
+    question: "The company decided to relocate its headquarters to a smaller city, citing lower operating costs and better quality of life for employees.\n\nThe underlined portion (\"citing lower operating costs and better quality of life for employees\") primarily serves to",
+    options: [
+      { letter: "A", text: "provide the company's reasons for the decision." },
+      { letter: "B", text: "contrast the old and new headquarters locations." },
+      { letter: "C", text: "describe the employees' reactions to the move." },
+      { letter: "D", text: "explain how the decision was made." }
+    ],
+    correctAnswer: "A",
+    explanation: "The participial phrase 'citing...' introduces the reasons (lower costs, better quality of life) the company gave for its relocation decision.",
+    difficulty: "Hard",
+    domain: "Reading and Writing",
+    skill: "Inference"
+  },
+  {
+    id: "eng236",
+    question: "The author writes: \"Education is not the filling of a pail, but the lighting of a fire.\"\n\nThis statement uses figurative language primarily to",
+    options: [
+      { letter: "A", text: "contrast passive reception of information with active intellectual engagement." },
+      { letter: "B", text: "argue that traditional education methods are dangerous." },
+      { letter: "C", text: "suggest that education requires physical materials." },
+      { letter: "D", text: "emphasize the importance of water safety in schools." }
+    ],
+    correctAnswer: "A",
+    explanation: "The metaphors contrast 'filling a pail' (passive, mechanical) with 'lighting a fire' (active, inspiring), suggesting education should inspire rather than just transmit information.",
+    difficulty: "Hard",
+    domain: "Reading and Writing",
+    skill: "Inference"
+  },
+  {
+    id: "eng237",
+    question: "The new restaurant has received mixed reviews; critics praise the innovative menu but note that service can be inconsistent.\n\nWhich choice best describes the function of the semicolon in this sentence?",
+    options: [
+      { letter: "A", text: "It joins two independent clauses that elaborate on the same topic." },
+      { letter: "B", text: "It introduces a list of items." },
+      { letter: "C", text: "It separates two contradictory claims." },
+      { letter: "D", text: "It indicates a pause for dramatic effect." }
+    ],
+    correctAnswer: "A",
+    explanation: "The semicolon correctly joins two complete sentences: the first states that reviews are mixed, and the second provides specific details about the praise and criticism.",
+    difficulty: "Hard",
+    domain: "Reading and Writing",
+    skill: "Standard English Conventions"
+  },
+  {
+    id: "eng238",
+    question: "Researchers found that plants exposed to classical music grew taller than those in silence. However, when the experiment was repeated with rock music, no difference was observed.\n\nThe second sentence primarily serves to",
+    options: [
+      { letter: "A", text: "suggest that the type of music matters for plant growth." },
+      { letter: "B", text: "prove that rock music is harmful to plants." },
+      { letter: "C", text: "explain why classical music affects plant growth." },
+      { letter: "D", text: "contradict the findings of the first experiment." }
+    ],
+    correctAnswer: "A",
+    explanation: "The contrasting results between classical and rock music suggest that not all music has the same effect—the type of music matters.",
+    difficulty: "Hard",
+    domain: "Reading and Writing",
+    skill: "Inference"
+  },
+  {
+    id: "eng239",
+    question: "The author writes: \"History doesn't repeat itself, but it often rhymes.\"\n\nThis statement most likely means that",
+    options: [
+      { letter: "A", text: "historical events don't recur exactly but follow similar patterns." },
+      { letter: "B", text: "historians should write in verse rather than prose." },
+      { letter: "C", text: "the past has no relevance to the present." },
+      { letter: "D", text: "all historical accounts are fictional." }
+    ],
+    correctAnswer: "A",
+    explanation: "The metaphor of 'rhyming' suggests that while history doesn't repeat exactly, similar patterns and themes recur.",
+    difficulty: "Hard",
+    domain: "Reading and Writing",
+    skill: "Inference"
+  },
+  {
+    id: "eng240",
+    question: "The city council approved funding for a new park; opponents argued that the money should have been spent on road repairs.\n\nWhich choice best describes the relationship between the two clauses?",
+    options: [
+      { letter: "A", text: "The second clause presents an opposing viewpoint to the action described in the first." },
+      { letter: "B", text: "The second clause explains the reasoning behind the first." },
+      { letter: "C", text: "The second clause provides evidence supporting the first." },
+      { letter: "D", text: "The second clause describes the outcome of the first." }
+    ],
+    correctAnswer: "A",
+    explanation: "The first clause describes the approval of park funding; the second presents the opposing argument that the money should have gone elsewhere.",
+    difficulty: "Hard",
+    domain: "Reading and Writing",
+    skill: "Inference"
+  },
+  {
+    id: "eng241",
+    question: "The author writes: \"The only thing we have to fear is fear itself.\"\n\nThis famous statement is an example of",
+    options: [
+      { letter: "A", text: "paradox—using apparent contradiction to convey a deeper truth." },
+      { letter: "B", text: "hyperbole—exaggerating for effect." },
+      { letter: "C", text: "understatement—downplaying the significance of something." },
+      { letter: "D", text: "simile—comparing two things using 'like' or 'as.'" }
+    ],
+    correctAnswer: "A",
+    explanation: "The statement is paradoxical: it suggests that fear itself is the greatest threat, implying that most fears are unfounded or that the emotion is more dangerous than what we fear.",
+    difficulty: "Hard",
+    domain: "Reading and Writing",
+    skill: "Inference"
+  },
+  {
+    id: "eng242",
+    question: "Scientists have discovered that octopuses can solve puzzles, use tools, and recognize individual humans—abilities previously thought to be limited to mammals and birds.\n\nThe dash in this sentence is used to",
+    options: [
+      { letter: "A", text: "introduce additional information that clarifies the significance of the preceding list." },
+      { letter: "B", text: "indicate a sudden break in thought." },
+      { letter: "C", text: "separate items in a complex list." },
+      { letter: "D", text: "show a range of abilities." }
+    ],
+    correctAnswer: "A",
+    explanation: "The dash introduces an explanatory phrase that emphasizes why the octopus abilities are remarkable—they were thought to be limited to other animals.",
+    difficulty: "Hard",
+    domain: "Reading and Writing",
+    skill: "Standard English Conventions"
+  },
+  {
+    id: "eng243",
+    question: "The following text is adapted from George Orwell's 1945 novel Animal Farm.\n\n\"All animals are equal, but some animals are more equal than others.\"\n\nThis statement is an example of",
+    options: [
+      { letter: "A", text: "irony—the contradiction exposes hypocrisy." },
+      { letter: "B", text: "metaphor—comparing animals to humans." },
+      { letter: "C", text: "alliteration—repetition of consonant sounds." },
+      { letter: "D", text: "personification—giving human qualities to animals." }
+    ],
+    correctAnswer: "A",
+    explanation: "The statement is ironic because 'more equal' is a logical contradiction that exposes how the pigs have corrupted the principle of equality.",
+    difficulty: "Hard",
+    domain: "Reading and Writing",
+    skill: "Inference"
+  },
+  {
+    id: "eng244",
+    question: "The study found that participants who meditated for 10 minutes daily reported lower stress levels. Importantly, the researchers also measured cortisol levels, which confirmed the self-reported data.\n\nThe second sentence primarily serves to",
+    options: [
+      { letter: "A", text: "provide objective biological evidence supporting the subjective reports." },
+      { letter: "B", text: "explain how meditation reduces stress." },
+      { letter: "C", text: "suggest that self-reports are unreliable." },
+      { letter: "D", text: "describe the meditation techniques used in the study." }
+    ],
+    correctAnswer: "A",
+    explanation: "By measuring cortisol (a biological stress marker), the researchers provided objective data that confirmed what participants reported subjectively.",
+    difficulty: "Hard",
+    domain: "Reading and Writing",
+    skill: "Inference"
+  },
+  {
+    id: "eng245",
+    question: "The author writes: \"In the age of information, ignorance is a choice.\"\n\nThis statement most directly implies that",
+    options: [
+      { letter: "A", text: "people today have access to enough information that being uninformed is usually deliberate." },
+      { letter: "B", text: "information technology has made people less intelligent." },
+      { letter: "C", text: "ignorance was more excusable in the past." },
+      { letter: "D", text: "choosing to be informed is always easy." }
+    ],
+    correctAnswer: "A",
+    explanation: "The statement suggests that with so much information available today, remaining ignorant is typically a deliberate choice rather than an unavoidable circumstance.",
+    difficulty: "Hard",
+    domain: "Reading and Writing",
+    skill: "Inference"
+  },
+  {
+    id: "eng246",
+    question: "The new highway reduced commute times for suburban residents; however, it also led to increased noise pollution in nearby neighborhoods.\n\nThe word \"however\" signals",
+    options: [
+      { letter: "A", text: "a contrast between a benefit and a drawback of the same project." },
+      { letter: "B", text: "a cause-and-effect relationship." },
+      { letter: "C", text: "a sequence of events." },
+      { letter: "D", text: "an additional benefit of the highway." }
+    ],
+    correctAnswer: "A",
+    explanation: "'However' introduces a contrasting negative consequence (noise pollution) to the positive effect (reduced commute times) mentioned in the first clause.",
+    difficulty: "Hard",
+    domain: "Reading and Writing",
+    skill: "Inference"
+  },
+  {
+    id: "eng247",
+    question: "The author writes: \"Success is not final, failure is not fatal: it is the courage to continue that counts.\"\n\nThe colon in this sentence is used to",
+    options: [
+      { letter: "A", text: "introduce the main point that follows from the two preceding statements." },
+      { letter: "B", text: "separate items in a list." },
+      { letter: "C", text: "indicate a time." },
+      { letter: "D", text: "introduce a direct quotation." }
+    ],
+    correctAnswer: "A",
+    explanation: "The colon introduces the central message—that continuing despite success or failure is what matters—which follows logically from the first two statements.",
+    difficulty: "Hard",
+    domain: "Reading and Writing",
+    skill: "Standard English Conventions"
+  },
+  {
+    id: "eng248",
+    question: "Researchers studying sleep patterns found that teenagers who used electronic devices before bed took longer to fall asleep than those who read print books.\n\nWhich finding, if true, would most strengthen the implication that screen use itself caused the delay?",
+    options: [
+      { letter: "A", text: "The two groups had similar sleep schedules on weekends." },
+      { letter: "B", text: "Teenagers who used devices with blue-light filters showed results similar to the print-book group." },
+      { letter: "C", text: "All participants were between 14 and 17 years old." },
+      { letter: "D", text: "The study was conducted over three months." }
+    ],
+    correctAnswer: "B",
+    explanation: "If filtering out blue light (a known feature of screens) eliminated the difference, this supports the idea that screen-specific factors cause the sleep delay.",
+    difficulty: "Hard",
+    domain: "Reading and Writing",
+    skill: "Evidence"
+  },
+  {
+    id: "eng249",
+    question: "The author writes: \"The pen is mightier than the sword.\"\n\nThis statement uses figurative language to suggest that",
+    options: [
+      { letter: "A", text: "written words and ideas can be more powerful than physical force." },
+      { letter: "B", text: "writing instruments are literally stronger than weapons." },
+      { letter: "C", text: "swords are obsolete in modern warfare." },
+      { letter: "D", text: "journalists are more important than soldiers." }
+    ],
+    correctAnswer: "A",
+    explanation: "The metaphor compares the pen (representing writing, ideas, communication) with the sword (representing violence, military force), arguing that ideas are ultimately more powerful.",
+    difficulty: "Hard",
+    domain: "Reading and Writing",
+    skill: "Inference"
+  },
+  {
+    id: "eng250",
+    question: "The archaeological dig uncovered pottery shards, bronze tools, and—most significantly—a collection of written tablets that could revolutionize our understanding of the ancient civilization.\n\nThe dashes in this sentence are used to",
+    options: [
+      { letter: "A", text: "set off an aside that emphasizes the most important item in the list." },
+      { letter: "B", text: "indicate missing information." },
+      { letter: "C", text: "show a range of dates." },
+      { letter: "D", text: "separate independent clauses." }
+    ],
+    correctAnswer: "A",
+    explanation: "The dashes enclose 'most significantly,' which emphasizes that the tablets are the most important discovery among those listed.",
+    difficulty: "Hard",
+    domain: "Reading and Writing",
+    skill: "Standard English Conventions"
+  },
+  {
+    id: "eng251",
+    question: "Many people claim that money can't buy happiness—but research shows that up to a certain income level, more money does correlate with greater life satisfaction.\n\nThe dash primarily serves to",
+    options: [
+      { letter: "A", text: "acknowledge a common belief before presenting evidence that partially challenges it." },
+      { letter: "B", text: "indicate a sudden break in thought." },
+      { letter: "C", text: "show that the research completely disproves the claim." },
+      { letter: "D", text: "introduce examples of how money is spent." }
+    ],
+    correctAnswer: "A",
+    explanation: "The dash concedes the popular saying while qualifying it with research that shows money does matter up to a point.",
+    difficulty: "Hard",
+    domain: "Reading and Writing",
+    skill: "Standard English Conventions"
+  },
+  {
+    id: "eng252",
+    question: "The headline read: \"Breakthrough in Cancer Research!\" The article itself was far more cautious, stating only that early trials showed \"promising signs.\"\n\nThe author most likely juxtaposes the headline and the article to",
+    options: [
+      { letter: "A", text: "highlight the difference between sensational reporting and scientific reality." },
+      { letter: "B", text: "argue that headlines should always match the tone of the article." },
+      { letter: "C", text: "prove that the research was not actually promising." },
+      { letter: "D", text: "show that journalists are better at science than researchers." }
+    ],
+    correctAnswer: "A",
+    explanation: "The extreme contrast between the dramatic headline and the careful wording of the article illustrates how media often overstates scientific findings.",
+    difficulty: "Hard",
+    domain: "Reading and Writing",
+    skill: "Inference"
+  },
+  {
+    id: "eng253",
+    question: "The following text is adapted from Virginia Woolf's 1925 novel Mrs. Dalloway.\n\n\"She had a perpetual sense, as she watched the taxi cabs, of being out, out, far out to sea and alone.\"\n\nWhich choice completes the text with the most logical punctuation?",
+    options: [
+      { letter: "A", text: "NO CHANGE" },
+      { letter: "B", text: "cabs; of being" },
+      { letter: "C", text: "cabs — of being" },
+      { letter: "D", text: "cabs: of being" }
+    ],
+    correctAnswer: "A",
+    explanation: "No punctuation is needed between 'cabs' and 'of being'; the prepositional phrase flows naturally.",
+    difficulty: "Hard",
+    domain: "Reading and Writing",
+    skill: "Standard English Conventions"
+  },
+  {
+    id: "eng254",
+    question: "Many experts predicted that streaming services would kill movie theaters. Instead, theaters have seen record attendance in several recent years.\n\nThe word \"instead\" signals",
+    options: [
+      { letter: "A", text: "a result that contradicts the prediction." },
+      { letter: "B", text: "the passage of time." },
+      { letter: "C", text: "an additional supporting example." },
+      { letter: "D", text: "a cause-and-effect relationship." }
+    ],
+    correctAnswer: "A",
+    explanation: "'Instead' introduces the opposite of what was expected—record attendance rather than decline.",
+    difficulty: "Hard",
+    domain: "Reading and Writing",
+    skill: "Inference"
+  },
+  {
+    id: "eng255",
+    question: "A study found that people who walk at least 30 minutes a day have a lower risk of heart disease. The researchers controlled for age, diet, and smoking status.\n\nThe second sentence primarily serves to",
+    options: [
+      { letter: "A", text: "strengthen the claim that walking itself reduces risk." },
+      { letter: "B", text: "explain how walking prevents heart disease." },
+      { letter: "C", text: "list additional benefits of walking." },
+      { letter: "D", text: "describe the participants in the study." }
+    ],
+    correctAnswer: "A",
+    explanation: "Controlling for other major risk factors makes it more likely that walking is the real protective factor.",
+    difficulty: "Hard",
+    domain: "Reading and Writing",
+    skill: "Inference"
+  },
+  {
+    id: "eng256",
+    question: "The author writes: \"We are drowning in information—but starving for knowledge.\"\n\nThe dash is used to",
+    options: [
+      { letter: "A", text: "set up a strong contrast between two related ideas." },
+      { letter: "B", text: "indicate missing text." },
+      { letter: "C", text: "show a range." },
+      { letter: "D", text: "separate independent clauses." }
+    ],
+    correctAnswer: "A",
+    explanation: "The dash dramatically contrasts quantity (information) with quality (knowledge).",
+    difficulty: "Hard",
+    domain: "Reading and Writing",
+    skill: "Standard English Conventions"
+  },
+  {
+    id: "eng257",
+    question: "Critics argue that social media algorithms create echo chambers. Supporters counter that users ultimately choose what content they see.\n\nThe text is primarily concerned with",
+    options: [
+      { letter: "A", text: "presenting two opposing views on the effects of social media algorithms." },
+      { letter: "B", text: "proving that echo chambers do not exist." },
+      { letter: "C", text: "explaining how social media algorithms work." },
+      { letter: "D", text: "arguing that users should have less control over their feeds." }
+    ],
+    correctAnswer: "A",
+    explanation: "The passage neutrally presents the debate without taking sides.",
+    difficulty: "Hard",
+    domain: "Reading and Writing",
+    skill: "Evidence"
+  },
+  {
+    id: "eng258",
+    question: "The new museum wing—designed by a famous architect—opened to rave reviews.\n\nThe dashes primarily function to",
+    options: [
+      { letter: "A", text: "set off additional, nonessential information about the wing." },
+      { letter: "B", text: "indicate a sudden change in thought." },
+      { letter: "C", text: "show that the reviews were mixed." },
+      { letter: "D", text: "emphasize the cost of the project." }
+    ],
+    correctAnswer: "A",
+    explanation: "The fact that it was designed by a famous architect is extra detail that can be removed without hurting the main sentence.",
+    difficulty: "Hard",
+    domain: "Reading and Writing",
+    skill: "Standard English Conventions"
+  },
+  {
+    id: "eng259",
+    question: "Some researchers claim that power posing increases confidence and testosterone levels. Later studies failed to replicate these effects.\n\nWhich choice best describes the role of the second sentence?",
+    options: [
+      { letter: "A", text: "It casts doubt on the original findings." },
+      { letter: "B", text: "It provides a biological explanation for power posing." },
+      { letter: "C", text: "It confirms the original findings with stronger evidence." },
+      { letter: "D", text: "It describes a new version of the power-posing experiment." }
+    ],
+    correctAnswer: "A",
+    explanation: "Failure to replicate is one of the strongest ways science shows an earlier result may be unreliable.",
+    difficulty: "Hard",
+    domain: "Reading and Writing",
+    skill: "Inference"
+  },
+  {
+    id: "eng260",
+    question: "The author writes: \"Artificial intelligence is advancing rapidly—but ethical concerns are advancing even faster.\"\n\nThe dash primarily serves to",
+    options: [
+      { letter: "A", text: "set up a contrast between technological progress and growing worries." },
+      { letter: "B", text: "indicate missing information." },
+      { letter: "C", text: "show that AI development has stopped." },
+      { letter: "D", text: "separate two unrelated ideas." }
+    ],
+    correctAnswer: "A",
+    explanation: "The dash highlights the irony: the faster AI improves, the faster ethical fears grow.",
+    difficulty: "Hard",
+    domain: "Reading and Writing",
+    skill: "Standard English Conventions"
+  },
+  {
+    id: "eng261",
+    question: "The following text is adapted from Charlotte Perkins Gilman's 1892 short story \"The Yellow Wallpaper.\"\n\n\"I don't like to look out of the windows even—there are so many of those creeping women, and they creep so fast.\"\n\nWhich choice completes the text with the most logical punctuation?",
+    options: [
+      { letter: "A", text: "NO CHANGE" },
+      { letter: "B", text: "even; there" },
+      { letter: "C", text: "even: there" },
+      { letter: "D", text: "even, there" }
+    ],
+    correctAnswer: "A",
+    explanation: "The dash acts as an emphatic break, showing the narrator's sudden, disturbed realization.",
+    difficulty: "Hard",
+    domain: "Reading and Writing",
+    skill: "Standard English Conventions"
+  },
+  {
+    id: "eng262",
+    question: "Many people assume that money buys happiness, yet studies consistently show that after basic needs are met, additional wealth adds little to well-being.\n\nThe word \"yet\" signals",
+    options: [
+      { letter: "A", text: "a contrast between popular belief and research findings." },
+      { letter: "B", text: "the passage of time." },
+      { letter: "C", text: "a cause-and-effect relationship." },
+      { letter: "D", text: "an additional example." }
+    ],
+    correctAnswer: "A",
+    explanation: "'Yet' introduces evidence that contradicts the common assumption.",
+    difficulty: "Hard",
+    domain: "Reading and Writing",
+    skill: "Inference"
+  },
+  {
+    id: "eng263",
+    question: "A recent study found that children who grow up bilingual show greater cognitive flexibility than monolingual children.\n\nWhich choice would most directly support the idea that bilingualism itself causes this benefit?",
+    options: [
+      { letter: "A", text: "The bilingual children came from higher-income families." },
+      { letter: "B", text: "The two groups were matched for age, IQ, and socioeconomic status." },
+      { letter: "C", text: "Some bilingual children learned their second language after age 10." },
+      { letter: "D", text: "Cognitive flexibility was measured only once." }
+    ],
+    correctAnswer: "B",
+    explanation: "Matching the groups on other variables makes it more likely that bilingualism is the real cause.",
+    difficulty: "Hard",
+    domain: "Reading and Writing",
+    skill: "Evidence"
+  },
+  {
+    id: "eng264",
+    question: "The new exhibition features photographs taken during the Civil Rights Movement—powerful images that still resonate today.\n\nThe dashes are used to",
+    options: [
+      { letter: "A", text: "set off an appositive that describes the photographs." },
+      { letter: "B", text: "indicate a sudden change in topic." },
+      { letter: "C", text: "show that the images are controversial." },
+      { letter: "D", text: "separate two contrasting ideas." }
+    ],
+    correctAnswer: "A",
+    explanation: "'Powerful images that still resonate today' is a non-essential description of the photographs.",
+    difficulty: "Hard",
+    domain: "Reading and Writing",
+    skill: "Standard English Conventions"
+  },
+  {
+    id: "eng265",
+    question: "Critics praised the novel's lyrical prose; readers loved its gripping plot.\n\nThe semicolon is most appropriate because",
+    options: [
+      { letter: "A", text: "both clauses are independent and closely related." },
+      { letter: "B", text: "the second clause explains the first." },
+      { letter: "C", text: "a list follows the semicolon." },
+      { letter: "D", text: "the two clauses contradict each other." }
+    ],
+    correctAnswer: "A",
+    explanation: "Two complete, related thoughts about the same novel are correctly joined by a semicolon.",
+    difficulty: "Hard",
+    domain: "Reading and Writing",
+    skill: "Standard English Conventions"
   }
 ];
