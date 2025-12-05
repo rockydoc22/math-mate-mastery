@@ -2,11 +2,13 @@ import { useState } from "react";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Question } from "@/data/questions";
+import { VisualQuestion } from "@/data/visualQuestions";
 import { CheckCircle2, XCircle, Flag } from "lucide-react";
 import { FlagQuestionModal } from "./FlagQuestionModal";
+import { QuestionVisual } from "./QuestionVisual";
 
 interface QuizCardProps {
-  question: Question;
+  question: Question | VisualQuestion;
   selectedAnswer: string | null;
   onSelectAnswer: (answer: string) => void;
   showResult: boolean;
@@ -15,6 +17,7 @@ interface QuizCardProps {
 
 export const QuizCard = ({ question, selectedAnswer, onSelectAnswer, showResult, questionType = 'math' }: QuizCardProps) => {
   const [isFlagModalOpen, setIsFlagModalOpen] = useState(false);
+  const visualQuestion = question as VisualQuestion;
 
   return (
     <>
@@ -39,6 +42,11 @@ export const QuizCard = ({ question, selectedAnswer, onSelectAnswer, showResult,
               <Flag className="w-4 h-4" />
             </Button>
           </div>
+
+          {/* Render visual if present */}
+          {visualQuestion.visual && (
+            <QuestionVisual visual={visualQuestion.visual} />
+          )}
 
           <div className="space-y-3">
             {question.options.map((option) => {
