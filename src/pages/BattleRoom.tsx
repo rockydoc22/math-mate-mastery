@@ -1,0 +1,498 @@
+import { useState, useEffect, useCallback } from "react";
+import { useParams, useNavigate, Link } from "react-router-dom";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
+import { useAuth } from "@/hooks/useAuth";
+import { supabase } from "@/integrations/supabase/client";
+import { toast } from "sonner";
+import { ArrowLeft, Crown, Copy, Users, Trophy, Loader2 } from "lucide-react";
+import { questions } from "@/data/questions";
+import { visualMathQuestions, visualEnglishQuestions, moreMathVisualQuestions, moreEnglishVisualQuestions } from "@/data/visualQuestions";
+import { additionalMathQuestions } from "@/data/additionalMathQuestions";
+import { englishQuestions } from "@/data/englishQuestions";
+import { QuestionVisual } from "@/components/QuestionVisual";
+
+interface Room {
+  id: string;
+  host_id: string;
+  room_code: string;
+  status: string;
+  subject: string;
+  question_count: number;
+  max_players: number;
+  current_question_index: number;
+  started_at: string | null;
+}
+
+interface Participant {
+  id: string;
+  user_id: string;
+  score: number;
+  answers_correct: number;
+  current_question: number;
+  finished_at: string | null;
+  profile?: {
+    username: string;
+    avatar_emoji: string | null;
+  };
+}
+
+interface BattleQuestion {
+  id: string;
+  question: string;
+  options: { letter: string; text: string }[];
+  correctAnswer: string;
+  explanation: string;
+  visual?: any;
+}
+
+const BattleRoom = () => {
+  const { roomCode } = useParams<{ roomCode: string }>();
+  const { user } = useAuth();
+  const navigate = useNavigate();
+  
+  const [room, setRoom] = useState<Room | null>(null);
+  const [participants, setParticipants] = useState<Participant[]>([]);
+  const [battleQuestions, setBattleQuestions] = useState<BattleQuestion[]>([]);
+  const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
+  const [selectedAnswer, setSelectedAnswer] = useState<string | null>(null);
+  const [questionStartTime, setQuestionStartTime] = useState<number>(0);
+  const [isAnswered, setIsAnswered] = useState(false);
+  const [loading, setLoading] = useState(true);
+  const [myScore, setMyScore] = useState(0);
+  const [myCorrect, setMyCorrect] = useState(0);
+  const [showResults, setShowResults] = useState(false);
+
+  // Fetch room and participants
+  const fetchRoom = useCallback(async () => {
+    if (!roomCode) return;
+
+    const { data: roomData, error: roomError } = await supabase
+      .from("battle_rooms")
+      .select("*")
+      .eq("room_code", roomCode)
+      .single();
+
+    if (roomError || !roomData) {
+      toast.error("Room not found");
+      navigate("/battle");
+      return;
+    }
+
+    setRoom(roomData);
+
+    // Fetch participants with profiles
+    const { data: participantsData } = await supabase
+      .from("battle_participants")
+      .select("*")
+      .eq("room_id", roomData.id);
+
+    if (participantsData) {
+      // Fetch profiles for participants
+      const userIds = participantsData.map(p => p.user_id);
+      const { data: profiles } = await supabase
+        .from("profiles")
+        .select("id, username, avatar_emoji")
+        .in("id", userIds);
+
+      const participantsWithProfiles = participantsData.map(p => ({
+        ...p,
+        profile: profiles?.find(pr => pr.id === p.user_id)
+      }));
+
+      setParticipants(participantsWithProfiles);
+      
+      // Update my score
+      const myParticipant = participantsWithProfiles.find(p => p.user_id === user?.id);
+      if (myParticipant) {
+        setMyScore(myParticipant.score);
+        setMyCorrect(myParticipant.answers_correct);
+      }
+    }
+
+    setLoading(false);
+  }, [roomCode, navigate, user?.id]);
+
+  // Generate questions when game starts
+  const generateQuestions = useCallback((room: Room): BattleQuestion[] => {
+    const allMathQuestions = [
+      ...questions,
+      ...visualMathQuestions,
+      ...moreMathVisualQuestions,
+      ...additionalMathQuestions
+    ];
+    const allEnglishQuestions = [
+      ...englishQuestions,
+      ...visualEnglishQuestions,
+      ...moreEnglishVisualQuestions
+    ];
+    
+    let pool: BattleQuestion[] = [];
+    if (room.subject === "math") {
+      pool = allMathQuestions;
+    } else if (room.subject === "english") {
+      pool = allEnglishQuestions;
+    } else {
+      pool = [...allMathQuestions, ...allEnglishQuestions];
+    }
+
+    // Shuffle and pick questions
+    const shuffled = [...pool].sort(() => Math.random() - 0.5);
+    return shuffled.slice(0, room.question_count);
+  }, []);
+
+  useEffect(() => {
+    fetchRoom();
+  }, [fetchRoom]);
+
+  // Set up realtime subscriptions
+  useEffect(() => {
+    if (!room?.id) return;
+
+    const roomChannel = supabase
+      .channel(`room-${room.id}`)
+      .on(
+        "postgres_changes",
+        { event: "*", schema: "public", table: "battle_rooms", filter: `id=eq.${room.id}` },
+        (payload) => {
+          const newRoom = payload.new as Room;
+          setRoom(newRoom);
+          
+          if (newRoom.status === "in_progress" && battleQuestions.length === 0) {
+            const generatedQuestions = generateQuestions(newRoom);
+            setBattleQuestions(generatedQuestions);
+            setQuestionStartTime(Date.now());
+          }
+          
+          if (newRoom.status === "completed") {
+            setShowResults(true);
+          }
+        }
+      )
+      .on(
+        "postgres_changes",
+        { event: "*", schema: "public", table: "battle_participants", filter: `room_id=eq.${room.id}` },
+        () => {
+          fetchRoom();
+        }
+      )
+      .subscribe();
+
+    return () => {
+      supabase.removeChannel(roomChannel);
+    };
+  }, [room?.id, battleQuestions.length, generateQuestions, fetchRoom]);
+
+  // When room becomes in_progress, generate questions
+  useEffect(() => {
+    if (room?.status === "in_progress" && battleQuestions.length === 0) {
+      const generatedQuestions = generateQuestions(room);
+      setBattleQuestions(generatedQuestions);
+      setQuestionStartTime(Date.now());
+    }
+  }, [room?.status, battleQuestions.length, generateQuestions, room]);
+
+  const handleStartGame = async () => {
+    if (!room || !user) return;
+
+    if (participants.length < 2) {
+      toast.error("Need at least 2 players to start");
+      return;
+    }
+
+    const { error } = await supabase
+      .from("battle_rooms")
+      .update({ 
+        status: "in_progress",
+        started_at: new Date().toISOString()
+      })
+      .eq("id", room.id);
+
+    if (error) {
+      toast.error("Failed to start game");
+    }
+  };
+
+  const handleAnswer = async (answerLetter: string) => {
+    if (isAnswered || !room || !user || !battleQuestions[currentQuestionIndex]) return;
+
+    setSelectedAnswer(answerLetter);
+    setIsAnswered(true);
+
+    const timeTaken = Date.now() - questionStartTime;
+    const isCorrect = answerLetter === battleQuestions[currentQuestionIndex].correctAnswer;
+    
+    // Calculate points: 100 base + up to 50 for speed (under 10 seconds)
+    let points = 0;
+    if (isCorrect) {
+      points = 100;
+      const speedBonus = Math.max(0, Math.floor(50 * (1 - timeTaken / 10000)));
+      points += speedBonus;
+    }
+
+    // Save answer
+    await supabase.from("battle_answers").insert({
+      room_id: room.id,
+      user_id: user.id,
+      question_index: currentQuestionIndex,
+      is_correct: isCorrect,
+      time_taken_ms: timeTaken,
+      points_earned: points,
+    });
+
+    // Update participant score
+    const newScore = myScore + points;
+    const newCorrect = isCorrect ? myCorrect + 1 : myCorrect;
+    setMyScore(newScore);
+    setMyCorrect(newCorrect);
+
+    const isLastQuestion = currentQuestionIndex >= battleQuestions.length - 1;
+    
+    await supabase
+      .from("battle_participants")
+      .update({
+        score: newScore,
+        answers_correct: newCorrect,
+        current_question: currentQuestionIndex + 1,
+        finished_at: isLastQuestion ? new Date().toISOString() : null,
+      })
+      .eq("room_id", room.id)
+      .eq("user_id", user.id);
+
+    // Wait a moment to show result, then move to next question
+    setTimeout(() => {
+      if (isLastQuestion) {
+        setShowResults(true);
+        // Check if all finished
+        checkGameEnd();
+      } else {
+        setCurrentQuestionIndex(prev => prev + 1);
+        setSelectedAnswer(null);
+        setIsAnswered(false);
+        setQuestionStartTime(Date.now());
+      }
+    }, 1500);
+  };
+
+  const checkGameEnd = async () => {
+    if (!room) return;
+    
+    // Update room to completed
+    await supabase
+      .from("battle_rooms")
+      .update({ status: "completed" })
+      .eq("id", room.id);
+  };
+
+  const copyRoomCode = () => {
+    navigator.clipboard.writeText(roomCode || "");
+    toast.success("Room code copied!");
+  };
+
+  const isHost = user?.id === room?.host_id;
+  const currentQuestion = battleQuestions[currentQuestionIndex];
+  const sortedParticipants = [...participants].sort((a, b) => b.score - a.score);
+
+  if (loading) {
+    return (
+      <div className="min-h-screen bg-gradient-to-br from-background via-background to-primary/5 flex items-center justify-center">
+        <Loader2 className="w-8 h-8 animate-spin text-primary" />
+      </div>
+    );
+  }
+
+  // Results screen
+  if (showResults || room?.status === "completed") {
+    return (
+      <div className="min-h-screen bg-gradient-to-br from-background via-background to-primary/5 p-4">
+        <div className="max-w-2xl mx-auto">
+          <div className="text-center mb-8">
+            <Trophy className="w-16 h-16 text-yellow-500 mx-auto mb-4" />
+            <h1 className="text-3xl font-bold">Battle Complete!</h1>
+          </div>
+
+          <div className="space-y-3">
+            {sortedParticipants.map((p, index) => (
+              <Card key={p.id} className={index === 0 ? "border-yellow-500 bg-yellow-500/10" : ""}>
+                <CardContent className="flex items-center justify-between p-4">
+                  <div className="flex items-center gap-3">
+                    <span className="text-2xl font-bold text-muted-foreground">#{index + 1}</span>
+                    {index === 0 && <Crown className="w-6 h-6 text-yellow-500" />}
+                    <span className="text-2xl">{p.profile?.avatar_emoji || "😎"}</span>
+                    <span className="font-medium">{p.profile?.username || "Player"}</span>
+                  </div>
+                  <div className="text-right">
+                    <div className="text-2xl font-bold text-primary">{p.score}</div>
+                    <div className="text-sm text-muted-foreground">{p.answers_correct}/{battleQuestions.length} correct</div>
+                  </div>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+
+          <div className="mt-8 flex gap-4 justify-center">
+            <Button onClick={() => navigate("/battle")} variant="outline">
+              New Battle
+            </Button>
+            <Link to="/">
+              <Button>Back Home</Button>
+            </Link>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  // Waiting room
+  if (room?.status === "waiting") {
+    return (
+      <div className="min-h-screen bg-gradient-to-br from-background via-background to-primary/5 p-4">
+        <div className="max-w-2xl mx-auto">
+          <Link to="/battle" className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground mb-6">
+            <ArrowLeft className="w-4 h-4" />
+            Leave Room
+          </Link>
+
+          <div className="text-center mb-8">
+            <h1 className="text-2xl font-bold mb-2">Waiting for Players</h1>
+            <div className="flex items-center justify-center gap-2">
+              <span className="text-4xl font-mono font-bold tracking-widest text-primary">{roomCode}</span>
+              <Button size="icon" variant="ghost" onClick={copyRoomCode}>
+                <Copy className="w-4 h-4" />
+              </Button>
+            </div>
+            <p className="text-muted-foreground mt-2">Share this code with friends to join</p>
+          </div>
+
+          <Card className="mb-6">
+            <CardContent className="p-4">
+              <div className="flex items-center justify-between mb-4">
+                <span className="flex items-center gap-2">
+                  <Users className="w-5 h-5" />
+                  Players ({participants.length}/{room.max_players})
+                </span>
+                <span className="text-sm text-muted-foreground">
+                  {room.question_count} questions • {room.subject === "both" ? "Math & English" : room.subject}
+                </span>
+              </div>
+              
+              <div className="space-y-2">
+                {participants.map((p) => (
+                  <div key={p.id} className="flex items-center gap-3 p-2 rounded-lg bg-muted/50">
+                    <span className="text-xl">{p.profile?.avatar_emoji || "😎"}</span>
+                    <span className="font-medium">{p.profile?.username || "Player"}</span>
+                    {p.user_id === room.host_id && (
+                      <Crown className="w-4 h-4 text-yellow-500 ml-auto" />
+                    )}
+                  </div>
+                ))}
+              </div>
+            </CardContent>
+          </Card>
+
+          {isHost ? (
+            <Button 
+              onClick={handleStartGame} 
+              className="w-full"
+              disabled={participants.length < 2}
+            >
+              {participants.length < 2 ? "Waiting for players..." : "Start Battle!"}
+            </Button>
+          ) : (
+            <p className="text-center text-muted-foreground">Waiting for host to start...</p>
+          )}
+        </div>
+      </div>
+    );
+  }
+
+  // Game in progress
+  return (
+    <div className="min-h-screen bg-gradient-to-br from-background via-background to-primary/5 p-4">
+      <div className="max-w-3xl mx-auto">
+        {/* Header */}
+        <div className="flex items-center justify-between mb-4">
+          <div className="text-sm text-muted-foreground">
+            Question {currentQuestionIndex + 1} of {battleQuestions.length}
+          </div>
+          <div className="flex items-center gap-2 text-primary font-bold">
+            <Trophy className="w-5 h-5" />
+            {myScore} pts
+          </div>
+        </div>
+
+        {/* Live scoreboard */}
+        <div className="flex gap-2 mb-6 overflow-x-auto pb-2">
+          {sortedParticipants.slice(0, 4).map((p) => (
+            <div 
+              key={p.id} 
+              className={`flex items-center gap-2 px-3 py-1 rounded-full text-sm ${
+                p.user_id === user?.id ? "bg-primary text-primary-foreground" : "bg-muted"
+              }`}
+            >
+              <span>{p.profile?.avatar_emoji || "😎"}</span>
+              <span className="truncate max-w-[60px]">{p.profile?.username}</span>
+              <span className="font-bold">{p.score}</span>
+            </div>
+          ))}
+        </div>
+
+        {/* Question */}
+        {currentQuestion && (
+          <Card className="mb-6">
+            <CardContent className="p-6">
+              {currentQuestion.visual && (
+                <div className="mb-4">
+                  <QuestionVisual visual={currentQuestion.visual} />
+                </div>
+              )}
+              <p className="text-lg font-medium mb-6">{currentQuestion.question}</p>
+              
+              <div className="space-y-3">
+                {currentQuestion.options.map((option) => {
+                  const isSelected = selectedAnswer === option.letter;
+                  const isCorrect = option.letter === currentQuestion.correctAnswer;
+                  const showResult = isAnswered;
+                  
+                  let buttonClass = "w-full text-left p-4 rounded-lg border transition-all ";
+                  if (showResult) {
+                    if (isCorrect) {
+                      buttonClass += "bg-green-500/20 border-green-500 text-green-700 dark:text-green-300";
+                    } else if (isSelected && !isCorrect) {
+                      buttonClass += "bg-destructive/20 border-destructive text-destructive";
+                    } else {
+                      buttonClass += "bg-muted/50 border-border opacity-50";
+                    }
+                  } else {
+                    buttonClass += "hover:bg-muted/50 border-border";
+                  }
+
+                  return (
+                    <button
+                      key={option.letter}
+                      onClick={() => handleAnswer(option.letter)}
+                      disabled={isAnswered}
+                      className={buttonClass}
+                    >
+                      <span className="font-medium mr-2">{option.letter}.</span>
+                      {option.text}
+                    </button>
+                  );
+                })}
+              </div>
+            </CardContent>
+          </Card>
+        )}
+
+        {isAnswered && (
+          <div className="text-center text-muted-foreground">
+            <Loader2 className="w-5 h-5 animate-spin inline mr-2" />
+            Loading next question...
+          </div>
+        )}
+      </div>
+    </div>
+  );
+};
+
+export default BattleRoom;
