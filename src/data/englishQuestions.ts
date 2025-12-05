@@ -237,5 +237,80 @@ export const englishQuestions: EnglishQuestion[] = [
     difficulty: "Hard",
     domain: "Reading and Writing",
     skill: "Form, Structure, and Sense"
+  },
+  {
+    id: "eng016",
+    question: "The neuroscientist's model of memory consolidation, once dismissed as overly speculative, has now become ______ in the field of cognitive psychology.\n\nWhich choice completes the text with the most logical and precise word?",
+    options: [
+      { letter: "A", text: "marginal" },
+      { letter: "B", text: "foundational" },
+      { letter: "C", text: "contentious" },
+      { letter: "D", text: "obsolete" }
+    ],
+    correctAnswer: "B",
+    explanation: "'Foundational' means serving as an essential base, fitting the shift from dismissal to widespread acceptance.",
+    difficulty: "Hard",
+    domain: "Reading and Writing",
+    skill: "Words in Context"
+  },
+  {
+    id: "eng017",
+    question: "The treaty, signed in 1963, ______ the testing of nuclear weapons in the atmosphere, outer space, and underwater.\n\nWhich choice completes the text so that it conforms to the conventions of Standard English?",
+    options: [
+      { letter: "A", text: "proscribed" },
+      { letter: "B", text: "prescribed" },
+      { letter: "C", text: "described" },
+      { letter: "D", text: "inscribed" }
+    ],
+    correctAnswer: "A",
+    explanation: "'Proscribed' means formally forbade, the correct historical meaning of the Partial Test Ban Treaty.",
+    difficulty: "Hard",
+    domain: "Reading and Writing",
+    skill: "Words in Context"
+  },
+  {
+    id: "eng018",
+    question: "Many economists predicted rapid recovery after the recession. ______, growth remained anemic for nearly a decade.\n\nWhich choice completes the text with the most logical transition?",
+    options: [
+      { letter: "A", text: "Consequently" },
+      { letter: "B", text: "However" },
+      { letter: "C", text: "Therefore" },
+      { letter: "D", text: "Similarly" }
+    ],
+    correctAnswer: "B",
+    explanation: "'However' signals the contrast between prediction and reality.",
+    difficulty: "Hard",
+    domain: "Reading and Writing",
+    skill: "Transitions"
+  },
+  {
+    id: "eng019",
+    question: "While researching a topic, a student took the following notes:\n• The Greenland shark can live over 400 years.\n• It grows only about 1 cm per year.\n• Sexual maturity is reached at roughly 150 years.\n• It inhabits cold Arctic and North Atlantic waters.\n• Slow growth is linked to its extreme longevity.\n\nThe student wants to emphasize how extraordinary the shark's lifespan is relative to its growth rate.",
+    options: [
+      { letter: "A", text: "Greenland sharks inhabit cold waters and reach maturity at around 150 years." },
+      { letter: "B", text: "Growing just one centimeter per year, the Greenland shark can live more than four centuries." },
+      { letter: "C", text: "The Greenland shark's slow growth is linked to its extreme longevity." },
+      { letter: "D", text: "Greenland sharks are found in the Arctic and North Atlantic." }
+    ],
+    correctAnswer: "B",
+    explanation: "Choice B directly contrasts the tiny annual growth with the enormous lifespan—the stated goal.",
+    difficulty: "Hard",
+    domain: "Reading and Writing",
+    skill: "Rhetorical Synthesis"
+  },
+  {
+    id: "eng020",
+    question: "The following text is adapted from Charlotte Brontë's Jane Eyre (1847).\n\"I am no bird; and no net ensnares me: I am a free human being with an independent will.\"\n\nIn the text, Jane primarily expresses",
+    options: [
+      { letter: "A", text: "defiance against societal constraints on women" },
+      { letter: "B", text: "resentment toward her employer" },
+      { letter: "C", text: "fear of losing her position" },
+      { letter: "D", text: "nostalgia for her childhood" }
+    ],
+    correctAnswer: "A",
+    explanation: "The metaphors of bird/net and the assertion of independence directly challenge the restrictions placed on women.",
+    difficulty: "Hard",
+    domain: "Reading and Writing",
+    skill: "Text Structure and Purpose"
   }
 ];
