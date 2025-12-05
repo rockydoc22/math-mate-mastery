@@ -5,8 +5,8 @@ import { Badge } from "@/components/ui/badge";
 import { supabase } from "@/integrations/supabase/client";
 import { toast } from "@/hooks/use-toast";
 import { Link } from "react-router-dom";
-import { ArrowLeft, Trash2, Check, Eye } from "lucide-react";
-import { Input } from "@/components/ui/input";
+import { ArrowLeft, Trash2, Check, Eye, ShieldAlert } from "lucide-react";
+import { useAuth } from "@/hooks/useAuth";
 
 interface FlaggedQuestion {
   id: string;
@@ -19,10 +19,44 @@ interface FlaggedQuestion {
 }
 
 const Admin = () => {
+  const { user, loading: authLoading } = useAuth();
   const [flaggedQuestions, setFlaggedQuestions] = useState<FlaggedQuestion[]>([]);
   const [isLoading, setIsLoading] = useState(true);
-  const [password, setPassword] = useState('');
-  const [isAuthenticated, setIsAuthenticated] = useState(false);
+  const [isAdmin, setIsAdmin] = useState<boolean | null>(null);
+
+  // Check if user has admin role
+  useEffect(() => {
+    const checkAdminRole = async () => {
+      if (!user) {
+        setIsAdmin(false);
+        setIsLoading(false);
+        return;
+      }
+
+      try {
+        const { data, error } = await supabase.rpc('has_role', {
+          _user_id: user.id,
+          _role: 'admin'
+        });
+
+        if (error) {
+          console.error('Error checking admin role:', error);
+          setIsAdmin(false);
+        } else {
+          setIsAdmin(data === true);
+        }
+      } catch (error) {
+        console.error('Error checking admin role:', error);
+        setIsAdmin(false);
+      } finally {
+        setIsLoading(false);
+      }
+    };
+
+    if (!authLoading) {
+      checkAdminRole();
+    }
+  }, [user, authLoading]);
 
   const fetchFlaggedQuestions = async () => {
     try {
@@ -36,31 +70,14 @@ const Admin = () => {
     } catch (error) {
       console.error('Error fetching flagged questions:', error);
       toast({ title: "Error", description: "Failed to load flagged questions", variant: "destructive" });
-    } finally {
-      setIsLoading(false);
     }
   };
 
   useEffect(() => {
-    if (isAuthenticated) {
+    if (isAdmin) {
       fetchFlaggedQuestions();
     }
-  }, [isAuthenticated]);
-
-  const handleLogin = async () => {
-    // Simple admin auth - in production, use proper Supabase auth
-    const { error } = await supabase.auth.signInWithPassword({
-      email: 'admin@satpractice.com',
-      password: password,
-    });
-
-    if (error) {
-      toast({ title: "Invalid credentials", variant: "destructive" });
-      return;
-    }
-    
-    setIsAuthenticated(true);
-  };
+  }, [isAdmin]);
 
   const updateStatus = async (id: string, status: string) => {
     try {
@@ -118,22 +135,64 @@ const Admin = () => {
     }
   };
 
-  if (!isAuthenticated) {
+  // Show loading state
+  if (authLoading || isLoading) {
+    return (
+      <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-primary/5 via-secondary/5 to-accent/5 p-4">
+        <Card className="w-full max-w-md">
+          <CardContent className="p-8 text-center">Loading...</CardContent>
+        </Card>
+      </div>
+    );
+  }
+
+  // Show login prompt if not authenticated
+  if (!user) {
     return (
       <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-primary/5 via-secondary/5 to-accent/5 p-4">
         <Card className="w-full max-w-md">
           <CardHeader>
-            <CardTitle>Admin Login</CardTitle>
+            <CardTitle className="flex items-center gap-2">
+              <ShieldAlert className="w-5 h-5" />
+              Admin Access Required
+            </CardTitle>
           </CardHeader>
           <CardContent className="space-y-4">
-            <Input
-              type="password"
-              placeholder="Enter admin password"
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
-              onKeyDown={(e) => e.key === 'Enter' && handleLogin()}
-            />
-            <Button onClick={handleLogin} className="w-full">Login</Button>
+            <p className="text-muted-foreground">
+              Please log in with an admin account to access this page.
+            </p>
+            <div className="flex gap-2">
+              <Link to="/auth" className="flex-1">
+                <Button className="w-full">Log In</Button>
+              </Link>
+              <Link to="/" className="flex-1">
+                <Button variant="outline" className="w-full">
+                  <ArrowLeft className="w-4 h-4 mr-2" />
+                  Back to Home
+                </Button>
+              </Link>
+            </div>
+          </CardContent>
+        </Card>
+      </div>
+    );
+  }
+
+  // Show access denied if not admin
+  if (!isAdmin) {
+    return (
+      <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-primary/5 via-secondary/5 to-accent/5 p-4">
+        <Card className="w-full max-w-md">
+          <CardHeader>
+            <CardTitle className="flex items-center gap-2 text-destructive">
+              <ShieldAlert className="w-5 h-5" />
+              Access Denied
+            </CardTitle>
+          </CardHeader>
+          <CardContent className="space-y-4">
+            <p className="text-muted-foreground">
+              You don't have permission to access this page. Admin privileges are required.
+            </p>
             <Link to="/">
               <Button variant="outline" className="w-full">
                 <ArrowLeft className="w-4 h-4 mr-2" />
@@ -162,9 +221,7 @@ const Admin = () => {
           <Badge variant="outline">{flaggedQuestions.length} total</Badge>
         </div>
 
-        {isLoading ? (
-          <Card><CardContent className="p-8 text-center">Loading...</CardContent></Card>
-        ) : flaggedQuestions.length === 0 ? (
+        {flaggedQuestions.length === 0 ? (
           <Card><CardContent className="p-8 text-center text-muted-foreground">No flagged questions yet.</CardContent></Card>
         ) : (
           <div className="space-y-4">
