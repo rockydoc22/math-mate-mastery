@@ -7,8 +7,8 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { ArrowLeft, Trophy, Flame, Medal, Crown } from "lucide-react";
 
 interface LeaderboardEntry {
-  user_id: string;
   username: string;
+  avatar_emoji: string | null;
   total_score: number;
   quiz_count: number;
   avg_percentage: number;
@@ -28,11 +28,10 @@ const Leaderboard = () => {
 
   useEffect(() => {
     const fetchLeaderboards = async () => {
-      // Fetch top scores with profile info
-      const { data: scores } = await supabase
-        .from("quiz_scores")
-        .select("user_id, score, percentage")
-        .order("created_at", { ascending: false });
+      // Fetch aggregated leaderboard data from the secure view (no user_ids exposed)
+      const { data: leaderboardData } = await supabase
+        .from("leaderboard_scores")
+        .select("*");
 
       const { data: profiles } = await supabase.from("profiles").select("id, username");
       const { data: streaks } = await supabase
@@ -41,29 +40,15 @@ const Leaderboard = () => {
         .order("current_streak", { ascending: false })
         .limit(20);
 
-      // Aggregate scores by user
-      const userScores: Record<string, { total: number; count: number; avgPct: number }> = {};
-      scores?.forEach((s) => {
-        if (!userScores[s.user_id]) {
-          userScores[s.user_id] = { total: 0, count: 0, avgPct: 0 };
-        }
-        userScores[s.user_id].total += s.score;
-        userScores[s.user_id].count += 1;
-        userScores[s.user_id].avgPct += Number(s.percentage);
-      });
-
       const profileMap = new Map(profiles?.map((p) => [p.id, p.username]) || []);
 
-      const scoreLeaderboard = Object.entries(userScores)
-        .map(([userId, data]) => ({
-          user_id: userId,
-          username: profileMap.get(userId) || "Unknown",
-          total_score: data.total,
-          quiz_count: data.count,
-          avg_percentage: Math.round(data.avgPct / data.count),
-        }))
-        .sort((a, b) => b.total_score - a.total_score)
-        .slice(0, 20);
+      const scoreLeaderboard: LeaderboardEntry[] = (leaderboardData || []).map((entry: any) => ({
+        username: entry.username || "Unknown",
+        avatar_emoji: entry.avatar_emoji,
+        total_score: Number(entry.total_score) || 0,
+        quiz_count: Number(entry.quiz_count) || 0,
+        avg_percentage: Number(entry.avg_percentage) || 0,
+      })).slice(0, 20);
 
       const streakLeaderboard =
         streaks?.map((s) => ({
@@ -125,7 +110,7 @@ const Leaderboard = () => {
               ) : (
                 scoreLeaders.map((entry, i) => (
                   <div
-                    key={entry.user_id}
+                    key={`${entry.username}-${i}`}
                     className={`flex items-center gap-4 p-4 ${i < 3 ? "bg-primary/5" : ""}`}
                   >
                     <div className="w-8 flex justify-center">{getRankIcon(i)}</div>
