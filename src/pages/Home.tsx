@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { BookOpen, Calculator, PenTool, Shuffle, Trophy, Zap, Users, BookMarked, LogIn, User, Award, Swords } from "lucide-react";
+import { BookOpen, Calculator, PenTool, Shuffle, Trophy, Zap, Users, BookMarked, LogIn, User, Award, Swords, Target, Brain, RefreshCw } from "lucide-react";
 import { useNavigate, Link } from "react-router-dom";
 import { questions } from "@/data/questions";
 import { englishQuestions } from "@/data/englishQuestions";
@@ -201,6 +201,38 @@ const Home = () => {
             🚀 Start Practice
           </Button>
         </Card>
+
+        {/* Feature Cards */}
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+          <Link to="/practice-test">
+            <Card className="p-4 hover:border-primary/50 transition-colors cursor-pointer h-full">
+              <Target className="w-6 h-6 text-primary mb-2" />
+              <h3 className="font-semibold text-sm">Practice Test</h3>
+              <p className="text-xs text-muted-foreground">Full SAT simulation</p>
+            </Card>
+          </Link>
+          <Link to="/insights">
+            <Card className="p-4 hover:border-primary/50 transition-colors cursor-pointer h-full">
+              <Brain className="w-6 h-6 text-purple-500 mb-2" />
+              <h3 className="font-semibold text-sm">Insights</h3>
+              <p className="text-xs text-muted-foreground">Track weak areas</p>
+            </Card>
+          </Link>
+          <Link to="/review">
+            <Card className="p-4 hover:border-primary/50 transition-colors cursor-pointer h-full">
+              <RefreshCw className="w-6 h-6 text-green-500 mb-2" />
+              <h3 className="font-semibold text-sm">Review</h3>
+              <p className="text-xs text-muted-foreground">Spaced repetition</p>
+            </Card>
+          </Link>
+          <Link to="/battle">
+            <Card className="p-4 hover:border-primary/50 transition-colors cursor-pointer h-full">
+              <Swords className="w-6 h-6 text-destructive mb-2" />
+              <h3 className="font-semibold text-sm">Battle</h3>
+              <p className="text-xs text-muted-foreground">Challenge friends</p>
+            </Card>
+          </Link>
+        </div>
 
         {/* Sign up prompt for non-logged in users */}
         {!user && (

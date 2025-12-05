@@ -246,6 +246,39 @@ export type Database = {
         }
         Relationships: []
       }
+      practice_tests: {
+        Row: {
+          completed_at: string
+          english_score: number | null
+          id: string
+          math_score: number | null
+          test_type: string
+          time_taken_seconds: number | null
+          total_score: number | null
+          user_id: string
+        }
+        Insert: {
+          completed_at?: string
+          english_score?: number | null
+          id?: string
+          math_score?: number | null
+          test_type?: string
+          time_taken_seconds?: number | null
+          total_score?: number | null
+          user_id: string
+        }
+        Update: {
+          completed_at?: string
+          english_score?: number | null
+          id?: string
+          math_score?: number | null
+          test_type?: string
+          time_taken_seconds?: number | null
+          total_score?: number | null
+          user_id?: string
+        }
+        Relationships: []
+      }
       profiles: {
         Row: {
           avatar_emoji: string | null
@@ -273,6 +306,48 @@ export type Database = {
           theme_color?: string | null
           updated_at?: string
           username?: string
+        }
+        Relationships: []
+      }
+      question_attempts: {
+        Row: {
+          created_at: string
+          domain: string
+          id: string
+          is_correct: boolean
+          next_review_at: string | null
+          question_id: string
+          question_type: string
+          review_count: number
+          skill: string
+          time_taken_ms: number | null
+          user_id: string
+        }
+        Insert: {
+          created_at?: string
+          domain: string
+          id?: string
+          is_correct: boolean
+          next_review_at?: string | null
+          question_id: string
+          question_type: string
+          review_count?: number
+          skill: string
+          time_taken_ms?: number | null
+          user_id: string
+        }
+        Update: {
+          created_at?: string
+          domain?: string
+          id?: string
+          is_correct?: boolean
+          next_review_at?: string | null
+          question_id?: string
+          question_type?: string
+          review_count?: number
+          skill?: string
+          time_taken_ms?: number | null
+          user_id?: string
         }
         Relationships: []
       }
