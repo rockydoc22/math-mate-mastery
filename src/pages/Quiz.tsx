@@ -4,7 +4,7 @@ import { QuizCard } from "@/components/QuizCard";
 import { QuizResults } from "@/components/QuizResults";
 import { questions, Question } from "@/data/questions";
 import { englishQuestions, EnglishQuestion } from "@/data/englishQuestions";
-import { visualMathQuestions, visualEnglishQuestions, VisualQuestion } from "@/data/visualQuestions";
+import { visualMathQuestions, visualEnglishQuestions, VisualQuestion, moreMathVisualQuestions, moreEnglishVisualQuestions } from "@/data/visualQuestions";
 import { ArrowRight, ArrowLeft } from "lucide-react";
 import { Progress } from "@/components/ui/progress";
 import { Link, useSearchParams } from "react-router-dom";
@@ -31,10 +31,12 @@ const Quiz = () => {
     if (subject === "math" || subject === "both") {
       pool = [...pool, ...questions.map((q) => ({ ...q, type: "math" as const }))];
       pool = [...pool, ...visualMathQuestions.map((q) => ({ ...q, type: "math" as const }))];
+      pool = [...pool, ...moreMathVisualQuestions.map((q) => ({ ...q, type: "math" as const }))];
     }
     if (subject === "english" || subject === "both") {
       pool = [...pool, ...englishQuestions.map((q) => ({ ...q, type: "english" as const }))];
       pool = [...pool, ...visualEnglishQuestions.map((q) => ({ ...q, type: "english" as const }))];
+      pool = [...pool, ...moreEnglishVisualQuestions.map((q) => ({ ...q, type: "english" as const }))];
     }
 
     const shuffled = shuffleArray(pool);
