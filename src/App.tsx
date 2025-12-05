@@ -17,6 +17,9 @@ import Profile from "./pages/Profile";
 import Friends from "./pages/Friends";
 import BattleLobby from "./pages/BattleLobby";
 import BattleRoom from "./pages/BattleRoom";
+import PracticeTest from "./pages/PracticeTest";
+import Insights from "./pages/Insights";
+import Review from "./pages/Review";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -42,6 +45,9 @@ const App = () => (
             <Route path="/friends" element={<Friends />} />
             <Route path="/battle" element={<BattleLobby />} />
             <Route path="/battle/:roomCode" element={<BattleRoom />} />
+            <Route path="/practice-test" element={<PracticeTest />} />
+            <Route path="/insights" element={<Insights />} />
+            <Route path="/review" element={<Review />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
