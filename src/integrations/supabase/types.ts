@@ -35,6 +35,127 @@ export type Database = {
         }
         Relationships: []
       }
+      battle_answers: {
+        Row: {
+          answered_at: string
+          id: string
+          is_correct: boolean
+          points_earned: number
+          question_index: number
+          room_id: string
+          time_taken_ms: number
+          user_id: string
+        }
+        Insert: {
+          answered_at?: string
+          id?: string
+          is_correct: boolean
+          points_earned?: number
+          question_index: number
+          room_id: string
+          time_taken_ms: number
+          user_id: string
+        }
+        Update: {
+          answered_at?: string
+          id?: string
+          is_correct?: boolean
+          points_earned?: number
+          question_index?: number
+          room_id?: string
+          time_taken_ms?: number
+          user_id?: string
+        }
+        Relationships: [
+          {
+            foreignKeyName: "battle_answers_room_id_fkey"
+            columns: ["room_id"]
+            isOneToOne: false
+            referencedRelation: "battle_rooms"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
+      battle_participants: {
+        Row: {
+          answers_correct: number
+          current_question: number
+          finished_at: string | null
+          id: string
+          joined_at: string
+          room_id: string
+          score: number
+          user_id: string
+        }
+        Insert: {
+          answers_correct?: number
+          current_question?: number
+          finished_at?: string | null
+          id?: string
+          joined_at?: string
+          room_id: string
+          score?: number
+          user_id: string
+        }
+        Update: {
+          answers_correct?: number
+          current_question?: number
+          finished_at?: string | null
+          id?: string
+          joined_at?: string
+          room_id?: string
+          score?: number
+          user_id?: string
+        }
+        Relationships: [
+          {
+            foreignKeyName: "battle_participants_room_id_fkey"
+            columns: ["room_id"]
+            isOneToOne: false
+            referencedRelation: "battle_rooms"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
+      battle_rooms: {
+        Row: {
+          created_at: string
+          current_question_index: number
+          host_id: string
+          id: string
+          max_players: number
+          question_count: number
+          room_code: string
+          started_at: string | null
+          status: string
+          subject: string
+        }
+        Insert: {
+          created_at?: string
+          current_question_index?: number
+          host_id: string
+          id?: string
+          max_players?: number
+          question_count?: number
+          room_code: string
+          started_at?: string | null
+          status?: string
+          subject?: string
+        }
+        Update: {
+          created_at?: string
+          current_question_index?: number
+          host_id?: string
+          id?: string
+          max_players?: number
+          question_count?: number
+          room_code?: string
+          started_at?: string | null
+          status?: string
+          subject?: string
+        }
+        Relationships: []
+      }
       daily_challenges: {
         Row: {
           bonus_xp: number

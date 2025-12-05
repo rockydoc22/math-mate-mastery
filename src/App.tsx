@@ -15,6 +15,8 @@ import StudyMode from "./pages/StudyMode";
 import DailyChallenge from "./pages/DailyChallenge";
 import Profile from "./pages/Profile";
 import Friends from "./pages/Friends";
+import BattleLobby from "./pages/BattleLobby";
+import BattleRoom from "./pages/BattleRoom";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -38,6 +40,8 @@ const App = () => (
             <Route path="/daily" element={<DailyChallenge />} />
             <Route path="/profile" element={<Profile />} />
             <Route path="/friends" element={<Friends />} />
+            <Route path="/battle" element={<BattleLobby />} />
+            <Route path="/battle/:roomCode" element={<BattleRoom />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>

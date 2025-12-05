@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { BookOpen, Calculator, PenTool, Shuffle, Trophy, Zap, Users, BookMarked, LogIn, User, Award } from "lucide-react";
+import { BookOpen, Calculator, PenTool, Shuffle, Trophy, Zap, Users, BookMarked, LogIn, User, Award, Swords } from "lucide-react";
 import { useNavigate, Link } from "react-router-dom";
 import { questions } from "@/data/questions";
 import { englishQuestions } from "@/data/englishQuestions";
@@ -48,6 +48,12 @@ const Home = () => {
             {user && streak && <StreakBadge streak={streak.current_streak} />}
           </div>
           <div className="flex items-center gap-1">
+            <Link to="/battle">
+              <Button variant="ghost" size="sm" className="gap-1 text-destructive">
+                <Swords className="w-4 h-4" />
+                <span className="hidden sm:inline">Battle</span>
+              </Button>
+            </Link>
             <Link to="/daily">
               <Button variant="ghost" size="sm" className="gap-1 text-primary">
                 <Zap className="w-4 h-4" />
