@@ -5,8 +5,12 @@ import { BookOpen, Calculator, PenTool, Shuffle } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import { questions } from "@/data/questions";
 import { englishQuestions } from "@/data/englishQuestions";
+import { visualMathQuestions, visualEnglishQuestions } from "@/data/visualQuestions";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { Label } from "@/components/ui/label";
+
+const totalMath = questions.length + visualMathQuestions.length;
+const totalEnglish = englishQuestions.length + visualEnglishQuestions.length;
 
 type Subject = "math" | "english" | "both";
 type QuestionCount = 10 | 25 | 50;
@@ -68,9 +72,9 @@ const Home = () => {
               ))}
             </div>
             <p className="text-sm text-muted-foreground">
-              {subject === "math" && `${questions.length} questions available`}
-              {subject === "english" && `${englishQuestions.length} questions available`}
-              {subject === "both" && `${questions.length + englishQuestions.length} questions available`}
+              {subject === "math" && `${totalMath} questions available`}
+              {subject === "english" && `${totalEnglish} questions available`}
+              {subject === "both" && `${totalMath + totalEnglish} questions available`}
             </p>
           </div>
 
