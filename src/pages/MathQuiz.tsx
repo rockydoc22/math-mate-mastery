@@ -88,6 +88,7 @@ const MathQuiz = () => {
           selectedAnswer={selectedAnswer}
           onSelectAnswer={handleSelectAnswer}
           showResult={showResult}
+          questionType="math"
         />
 
         <div className="flex gap-3">
