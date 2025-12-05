@@ -105,10 +105,10 @@ const Home = () => {
               <BookOpen className="w-14 h-14 text-primary-foreground" />
             </div>
           </div>
-          <h1 className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">
-            SAT Mastery
+          <h1 className="text-6xl md:text-7xl font-bold bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">
+            1600
           </h1>
-          <p className="text-xl text-muted-foreground">The path to 1600</p>
+          <p className="text-xl text-muted-foreground">SAT Mastery</p>
         </div>
 
         {/* Stats Row - Only for logged in users */}
