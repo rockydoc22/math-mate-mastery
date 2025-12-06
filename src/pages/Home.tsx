@@ -193,13 +193,15 @@ const Home = () => {
           {/* Difficulty Selection */}
           <div className="space-y-4">
             <h3 className="font-semibold text-lg">Difficulty Level</h3>
+            
+            {/* Quick Range Buttons */}
             <div className="grid grid-cols-5 gap-2">
               {[
                 { value: 'all' as DifficultyRange, label: 'All', color: 'bg-muted' },
-                { value: 'easy' as DifficultyRange, label: '1-3', sublabel: 'Easy', color: 'bg-green-500/20 border-green-500/40' },
-                { value: 'medium' as DifficultyRange, label: '4-5', sublabel: 'Medium', color: 'bg-yellow-500/20 border-yellow-500/40' },
-                { value: 'hard' as DifficultyRange, label: '6-8', sublabel: 'Hard', color: 'bg-orange-500/20 border-orange-500/40' },
-                { value: 'veryhard' as DifficultyRange, label: '9-10', sublabel: 'Expert', color: 'bg-red-500/20 border-red-500/40' },
+                { value: 'easy' as DifficultyRange, label: '1-3', sublabel: 'Easy', color: 'bg-green-500/20' },
+                { value: 'medium' as DifficultyRange, label: '4-5', sublabel: 'Medium', color: 'bg-yellow-500/20' },
+                { value: 'hard' as DifficultyRange, label: '6-8', sublabel: 'Hard', color: 'bg-orange-500/20' },
+                { value: 'veryhard' as DifficultyRange, label: '9-10', sublabel: 'Expert', color: 'bg-red-500/20' },
               ].map(({ value, label, sublabel, color }) => (
                 <button
                   key={value}
@@ -212,6 +214,27 @@ const Home = () => {
                 >
                   <span className="font-bold text-sm">{label}</span>
                   {sublabel && <p className="text-xs text-muted-foreground">{sublabel}</p>}
+                </button>
+              ))}
+            </div>
+
+            {/* Specific Level Selector */}
+            <div className="flex items-center gap-2 flex-wrap">
+              <span className="text-sm text-muted-foreground">Or pick specific level:</span>
+              {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((level) => (
+                <button
+                  key={level}
+                  onClick={() => setDifficultyRange(String(level) as DifficultyRange)}
+                  className={`w-8 h-8 rounded-full border-2 text-sm font-bold transition-all ${
+                    difficultyRange === String(level)
+                      ? level <= 3 ? 'bg-green-500/30 border-green-500 text-green-700'
+                      : level <= 5 ? 'bg-yellow-500/30 border-yellow-500 text-yellow-700'
+                      : level <= 8 ? 'bg-orange-500/30 border-orange-500 text-orange-700'
+                      : 'bg-red-500/30 border-red-500 text-red-700'
+                      : 'border-border hover:border-muted-foreground/50'
+                  }`}
+                >
+                  {level}
                 </button>
               ))}
             </div>
