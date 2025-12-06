@@ -11,7 +11,10 @@ import { Link, useSearchParams } from "react-router-dom";
 import { useSoundEffects } from "@/hooks/useSoundEffects";
 import { useAuth } from "@/hooks/useAuth";
 import { useGameStats } from "@/hooks/useGameStats";
+import { useSkillRating } from "@/hooks/useSkillRating";
 import { DifficultyRange, filterByDifficulty, getDifficultyColor } from "@/utils/difficultyRating";
+import { RatingChangePopup } from "@/components/RatingChangePopup";
+import { SkillRatingCard } from "@/components/SkillRatingCard";
 
 type CombinedQuestion = (Question | EnglishQuestion | VisualQuestion) & { type: "math" | "english"; difficultyRating?: number };
 
@@ -32,6 +35,7 @@ const Quiz = () => {
   const { playCorrect, playWrong } = useSoundEffects();
   const { user } = useAuth();
   const { recordScore } = useGameStats();
+  const { ratings, updateRating } = useSkillRating();
 
   const quizQuestions = useMemo(() => {
     let pool: CombinedQuestion[] = [];
@@ -59,6 +63,11 @@ const Quiz = () => {
   const [score, setScore] = useState(0);
   const [finished, setFinished] = useState(false);
   const [scoreRecorded, setScoreRecorded] = useState(false);
+  const [ratingChange, setRatingChange] = useState<{ show: boolean; change: number; newRating: number }>({
+    show: false,
+    change: 0,
+    newRating: 0,
+  });
 
   const currentQuestion = quizQuestions[currentQuestionIndex];
   const progress = ((currentQuestionIndex + 1) / quizQuestions.length) * 100;
@@ -67,7 +76,7 @@ const Quiz = () => {
     setSelectedAnswer(answer);
   };
 
-  const handleSubmit = () => {
+  const handleSubmit = async () => {
     setShowResult(true);
     const isCorrect = selectedAnswer === currentQuestion.correctAnswer;
     if (isCorrect) {
@@ -75,6 +84,27 @@ const Quiz = () => {
       playCorrect();
     } else {
       playWrong();
+    }
+
+    // Update skill rating
+    if (user && currentQuestion.difficultyRating) {
+      const result = await updateRating(
+        currentQuestion.type,
+        currentQuestion.difficultyRating,
+        isCorrect,
+        currentQuestion.id
+      );
+      if (result) {
+        setRatingChange({
+          show: true,
+          change: result.change,
+          newRating: result.newRating,
+        });
+        // Hide popup after 2 seconds
+        setTimeout(() => {
+          setRatingChange(prev => ({ ...prev, show: false }));
+        }, 2000);
+      }
     }
   };
 
@@ -114,12 +144,22 @@ const Quiz = () => {
   if (finished) {
     return (
       <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-primary/5 via-secondary/5 to-accent/5 p-4">
-        <QuizResults
-          score={score}
-          totalQuestions={quizQuestions.length}
-          onRestart={handleRestart}
-          subject={getSubjectLabel()}
-        />
+        <div className="w-full max-w-xl space-y-6">
+          <QuizResults
+            score={score}
+            totalQuestions={quizQuestions.length}
+            onRestart={handleRestart}
+            subject={getSubjectLabel()}
+          />
+          {ratings && (
+            <SkillRatingCard
+              mathRating={ratings.mathRating}
+              englishRating={ratings.englishRating}
+              overallRating={ratings.overallRating}
+              compact
+            />
+          )}
+        </div>
       </div>
     );
   }
@@ -197,6 +237,13 @@ const Quiz = () => {
           )}
         </div>
       </div>
+
+      {/* Rating Change Popup */}
+      <RatingChangePopup
+        show={ratingChange.show}
+        change={ratingChange.change}
+        newRating={ratingChange.newRating}
+      />
     </div>
   );
 };
