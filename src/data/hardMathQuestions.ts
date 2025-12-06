@@ -4670,5 +4670,156 @@ export const hardMathQuestions: Question[] = [
     difficulty: 'hard',
     domain: 'Statistics',
     skill: 'Probability'
+  }),
+  // Batch 2 user-provided math questions
+  addRating({
+    id: 'hard-math-311',
+    question: 'If f(x) = (3x^2 - 4x + 2)/(x - 2), find f(5).',
+    options: [
+      { letter: 'A', text: '19' },
+      { letter: 'B', text: '57' },
+      { letter: 'C', text: '15' },
+      { letter: 'D', text: '21' }
+    ],
+    correctAnswer: 'A',
+    explanation: 'Plug x=5: numerator = 3(25) - 4(5) + 2 = 75 - 20 + 2 = 57; denominator = 5 - 2 = 3; f(5) = 57/3 = 19.',
+    difficulty: 'hard',
+    domain: 'Advanced Algebra',
+    skill: 'Function Evaluation'
+  }),
+  addRating({
+    id: 'hard-math-312',
+    question: 'Solve for x: log_3(x^2 - 5x) = 2. What are the solutions?',
+    options: [
+      { letter: 'A', text: 'x = (5 + sqrt(61))/2 or x = (5 - sqrt(61))/2' },
+      { letter: 'B', text: 'x = 9 or x = -4' },
+      { letter: 'C', text: 'x = 6 or x = -1' },
+      { letter: 'D', text: 'x = 5 only' }
+    ],
+    correctAnswer: 'A',
+    explanation: 'Convert log to exponential: x^2 - 5x = 3^2 = 9. So x^2 - 5x - 9 = 0. Using quadratic formula: x = (5 +/- sqrt(25 + 36))/2 = (5 +/- sqrt(61))/2.',
+    difficulty: 'hard',
+    domain: 'Advanced Algebra',
+    skill: 'Logarithmic Equations'
+  }),
+  addRating({
+    id: 'hard-math-313',
+    question: 'A circle has radius 7. A square is inscribed in the circle. Find the area of the square.',
+    options: [
+      { letter: 'A', text: '98' },
+      { letter: 'B', text: '49' },
+      { letter: 'C', text: '196' },
+      { letter: 'D', text: '147' }
+    ],
+    correctAnswer: 'A',
+    explanation: 'The diagonal of an inscribed square equals the diameter. Diagonal = 14. For a square with diagonal d, side = d/sqrt(2) = 14/sqrt(2) = 7sqrt(2). Area = (7sqrt(2))^2 = 98.',
+    difficulty: 'hard',
+    domain: 'Geometry',
+    skill: 'Inscribed Figures'
+  }),
+  addRating({
+    id: 'hard-math-314',
+    question: 'If a/b = 4 and b/c = 5, what is a/c?',
+    options: [
+      { letter: 'A', text: '20' },
+      { letter: 'B', text: '9' },
+      { letter: 'C', text: '4/5' },
+      { letter: 'D', text: '5/4' }
+    ],
+    correctAnswer: 'A',
+    explanation: 'a/c = (a/b) * (b/c) = 4 * 5 = 20.',
+    difficulty: 'hard',
+    domain: 'Advanced Algebra',
+    skill: 'Ratio and Proportion'
+  }),
+  addRating({
+    id: 'hard-math-315',
+    question: 'Find all real roots of x^3 - 7x^2 + 14x - 8.',
+    options: [
+      { letter: 'A', text: 'x = 1, 2, 4' },
+      { letter: 'B', text: 'x = 1, 8' },
+      { letter: 'C', text: 'x = 2, 4' },
+      { letter: 'D', text: 'x = -1, -2, -4' }
+    ],
+    correctAnswer: 'A',
+    explanation: 'Factor the polynomial using synthetic division: (x - 1)(x - 2)(x - 4) = 0. The roots are x = 1, 2, and 4.',
+    difficulty: 'hard',
+    domain: 'Advanced Algebra',
+    skill: 'Polynomial Factoring'
+  }),
+  addRating({
+    id: 'hard-math-316',
+    question: 'A geometric sequence has first term 5 and common ratio 3. What is the sum of the first 6 terms?',
+    options: [
+      { letter: 'A', text: '1820' },
+      { letter: 'B', text: '1215' },
+      { letter: 'C', text: '2430' },
+      { letter: 'D', text: '910' }
+    ],
+    correctAnswer: 'A',
+    explanation: 'Sum of geometric series: S = a(r^n - 1)/(r - 1) = 5(3^6 - 1)/(3 - 1) = 5(729 - 1)/2 = 5 * 728/2 = 1820.',
+    difficulty: 'hard',
+    domain: 'Advanced Algebra',
+    skill: 'Geometric Sequences'
+  }),
+  addRating({
+    id: 'hard-math-317',
+    question: 'If x + y = 10 and x^2 + y^2 = 58, what is xy?',
+    options: [
+      { letter: 'A', text: '21' },
+      { letter: 'B', text: '42' },
+      { letter: 'C', text: '16' },
+      { letter: 'D', text: '29' }
+    ],
+    correctAnswer: 'A',
+    explanation: 'Using the identity (x + y)^2 = x^2 + y^2 + 2xy: 100 = 58 + 2xy. So 2xy = 42, giving xy = 21.',
+    difficulty: 'hard',
+    domain: 'Advanced Algebra',
+    skill: 'Algebraic Identities'
+  }),
+  addRating({
+    id: 'hard-math-318',
+    question: 'A parabola has vertex at (3, -4) and passes through (5, 8). What is its equation?',
+    options: [
+      { letter: 'A', text: 'y = 3(x - 3)^2 - 4' },
+      { letter: 'B', text: 'y = 2(x - 3)^2 - 4' },
+      { letter: 'C', text: 'y = 3(x + 3)^2 - 4' },
+      { letter: 'D', text: 'y = 4(x - 3)^2 - 4' }
+    ],
+    correctAnswer: 'A',
+    explanation: 'Vertex form: y = a(x - 3)^2 - 4. Plug in (5, 8): 8 = a(5 - 3)^2 - 4 = 4a - 4. So 12 = 4a, giving a = 3.',
+    difficulty: 'hard',
+    domain: 'Advanced Algebra',
+    skill: 'Quadratic Functions'
+  }),
+  addRating({
+    id: 'hard-math-319',
+    question: 'If sin(theta) + cos(theta) = sqrt(2), what is sin(2*theta)?',
+    options: [
+      { letter: 'A', text: '1' },
+      { letter: 'B', text: 'sqrt(2)' },
+      { letter: 'C', text: '0' },
+      { letter: 'D', text: '1/2' }
+    ],
+    correctAnswer: 'A',
+    explanation: 'sin(theta) + cos(theta) = sqrt(2) implies theta = 45 degrees (maximum value of sum). Then sin(2*theta) = sin(90 degrees) = 1.',
+    difficulty: 'hard',
+    domain: 'Trigonometry',
+    skill: 'Trigonometric Identities'
+  }),
+  addRating({
+    id: 'hard-math-320',
+    question: 'P(A) = 0.7, P(B) = 0.6, and A and B are independent. What is P(A union B)?',
+    options: [
+      { letter: 'A', text: '0.88' },
+      { letter: 'B', text: '1.3' },
+      { letter: 'C', text: '0.42' },
+      { letter: 'D', text: '0.7' }
+    ],
+    correctAnswer: 'A',
+    explanation: 'P(A union B) = P(A) + P(B) - P(A intersection B). For independent events: P(A intersection B) = P(A) * P(B) = 0.7 * 0.6 = 0.42. So P(A union B) = 0.7 + 0.6 - 0.42 = 0.88.',
+    difficulty: 'hard',
+    domain: 'Statistics',
+    skill: 'Probability'
   })
 ];
