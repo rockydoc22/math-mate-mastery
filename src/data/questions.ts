@@ -1,6 +1,7 @@
 import mathQuestionsRaw from './mathQuestionsRaw.json';
 import { additionalMathQuestions } from './additionalMathQuestions';
 import { newMathQuestions } from './newMathQuestions';
+import { uploadedMathQuestions } from './uploadedMathQuestions';
 import { rateDifficulty } from '@/utils/difficultyRating';
 
 export interface Question {
@@ -54,4 +55,4 @@ const rawQuestions: Question[] = (mathQuestionsRaw as RawMathQuestion[]).map((q)
 });
 
 // Combine all math questions
-export const questions: Question[] = [...rawQuestions, ...additionalMathQuestions, ...newMathQuestions];
+export const questions: Question[] = [...rawQuestions, ...additionalMathQuestions, ...newMathQuestions, ...uploadedMathQuestions];
