@@ -1,5 +1,6 @@
 import englishQuestionsRaw from './englishQuestionsRaw.json';
 import { rateDifficulty } from '@/utils/difficultyRating';
+import { uploadedEnglishQuestions } from './uploadedEnglishQuestions';
 
 export interface EnglishQuestion {
   id: string;
@@ -31,7 +32,7 @@ interface RawEnglishQuestion {
 }
 
 // Transform raw JSON questions to our EnglishQuestion format with difficulty ratings
-export const englishQuestions: EnglishQuestion[] = (englishQuestionsRaw as RawEnglishQuestion[]).map((q) => {
+const baseEnglishQuestions: EnglishQuestion[] = (englishQuestionsRaw as RawEnglishQuestion[]).map((q) => {
   const options = [
     { letter: "A", text: q.optionA },
     { letter: "B", text: q.optionB },
@@ -50,3 +51,6 @@ export const englishQuestions: EnglishQuestion[] = (englishQuestionsRaw as RawEn
     difficultyRating: rateDifficulty(q.question, options, q.category, q.subcategory)
   };
 });
+
+// Combine all English questions
+export const englishQuestions: EnglishQuestion[] = [...baseEnglishQuestions, ...uploadedEnglishQuestions];
