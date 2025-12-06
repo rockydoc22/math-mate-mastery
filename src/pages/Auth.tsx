@@ -58,7 +58,7 @@ const Auth = () => {
               <Zap className="w-12 h-12 text-primary-foreground" />
             </div>
           </div>
-          <h1 className="text-3xl font-bold">SAT Mastery</h1>
+          <h1 className="text-3xl font-bold">40²</h1>
           <p className="text-muted-foreground">
             {isSignUp ? "Create your account to start grinding" : "Sign in to continue your journey"}
           </p>
