@@ -1,4 +1,13 @@
 import { Question } from "./questions";
+import { rateDifficulty } from '@/utils/difficultyRating';
+
+// Helper to add difficulty ratings
+function addRating(q: Omit<Question, 'difficultyRating'>): Question {
+  return {
+    ...q,
+    difficultyRating: rateDifficulty(q.question, q.options, q.domain, q.skill)
+  };
+}
 
 export const additionalMathQuestions: Question[] = [
   {
@@ -106,4 +115,4 @@ export const additionalMathQuestions: Question[] = [
     domain: "Algebra",
     skill: "Linear inequalities in one or two variables"
   }
-];
+].map(addRating);
