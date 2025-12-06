@@ -558,6 +558,14 @@ export type Database = {
         }
         Returns: boolean
       }
+      is_friend: {
+        Args: { _friend_id: string; _user_id: string }
+        Returns: boolean
+      }
+      is_in_same_battle: {
+        Args: { _profile_id: string; _viewer_id: string }
+        Returns: boolean
+      }
     }
     Enums: {
       app_role: "admin" | "moderator" | "user"
