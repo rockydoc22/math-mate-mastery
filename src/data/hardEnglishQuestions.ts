@@ -4949,5 +4949,246 @@ export const hardEnglishQuestions: EnglishQuestion[] = [
     difficulty: 'hard',
     domain: 'Reading Comprehension',
     skill: 'Command of Evidence'
+  }),
+  // Additional questions from SAT_Questions.docx
+  addRating({
+    id: 'sat-doc-030',
+    question: 'The Mammillaria cactus M. boolii occurs naturally only in the state of Sonora in Mexico, and the smallness of its range makes it especially vulnerable to extinction. The traditional single-species approach to conservation emphasizes the need to focus on individual species most at risk, like M. boolii, but recently, conservationists have argued that an ecosystem-based approach that incorporates the many interactions between the climate, terrain, and various species of a given geographical area may lead to better outcomes for all the species in a given location. If this view is correct, the single-species approach to the conservation of M. boolii could thus ______. Which choice most logically completes the text?',
+    options: [
+      { letter: 'A', text: 'lead to a better understanding of how the distribution of Mammillaria species throughout Mexico has affected their survival.' },
+      { letter: 'B', text: 'allow conservationists to better consider how climatic changes affecting Sonora may reduce the number of species competing with M. boolii.' },
+      { letter: 'C', text: 'erroneously shift the focus of conservation efforts away from M. boolii itself.' },
+      { letter: 'D', text: 'fail to consider the ways in which the survival of M. boolii may be influenced by changes in the populations of other species that inhabit Sonora.' }
+    ],
+    correctAnswer: 'D',
+    explanation: 'The ecosystem-based approach considers "interactions between climate, terrain, and various species." The single-species approach, by focusing only on M. boolii, would miss these interactions. (D) captures this limitation--failing to consider how other species affect M. boolii.',
+    difficulty: 'hard',
+    domain: 'Reading Comprehension',
+    skill: 'Inferences'
+  }),
+  addRating({
+    id: 'sat-doc-031',
+    question: 'In the early nineteenth century, some Euro-American farmers in the northeastern United States used agricultural techniques developed by the Haudenosaunee (Iroquois) people centuries earlier, but it seems that few of those farmers had actually seen Haudenosaunee farms firsthand. Barring the possibility of several farmers of the same era independently developing techniques that the Haudenosaunee people had already invented, these facts most strongly suggest that ______. Which choice most logically completes the text?',
+    options: [
+      { letter: 'A', text: 'those farmers learned the techniques from other people who were more directly influenced by Haudenosaunee practices.' },
+      { letter: 'B', text: 'the crops typically cultivated by Euro-American farmers in the northeastern United States were not well suited to Haudenosaunee farming techniques.' },
+      { letter: 'C', text: 'Haudenosaunee farming techniques were widely used in regions outside the northeastern United States.' },
+      { letter: 'D', text: 'Euro-American farmers only began to recognize the benefits of Haudenosaunee farming techniques late in the nineteenth century.' }
+    ],
+    correctAnswer: 'A',
+    explanation: 'If farmers used Haudenosaunee techniques but hadn\'t seen Haudenosaunee farms, and we rule out independent invention, they must have learned from intermediaries. (A) provides this logical explanation--indirect transmission through others.',
+    difficulty: 'hard',
+    domain: 'Reading Comprehension',
+    skill: 'Inferences'
+  }),
+  addRating({
+    id: 'sat-doc-032',
+    question: 'The following text is adapted from Maria Cristina Mena\'s 1914 short story "The Vine-Leaf." It is a saying in the capital of Mexico that Dr. Malsufrido carries more family secrets under his hat than any archbishop. The doctor\'s hat is, appropriately enough, uncommonly capacious, rising very high, and sinking so low that it seems to be supported by his ears and eyebrows, and it has a furry look, as if it had been brushed the wrong way, which is perhaps what happens to it if it is ever brushed at all. When the doctor takes it off, the family secrets do not fly out like a flock of parrots, but remain nicely bottled up beneath a dome of old and highly polished ivory. Based on the text, how do people in the capital of Mexico most likely regard Dr. Malsufrido?',
+    options: [
+      { letter: 'A', text: 'Many have come to tolerate him despite his disheveled appearance.' },
+      { letter: 'B', text: 'Few feel concerned that he will divulge their confidences.' },
+      { letter: 'C', text: 'Some dislike how freely he discusses his own family.' },
+      { letter: 'D', text: 'Most would be unimpressed by him were it not for his professional expertise.' }
+    ],
+    correctAnswer: 'B',
+    explanation: 'The passage says secrets "remain nicely bottled up" when he removes his hat--they don\'t "fly out like parrots." This metaphor suggests he keeps confidences well. (B) captures this: people trust he won\'t reveal their secrets.',
+    difficulty: 'hard',
+    domain: 'Reading Comprehension',
+    skill: 'Inferences'
+  }),
+  addRating({
+    id: 'sat-doc-033',
+    question: 'Mosasaurs were large marine reptiles that lived in the Late Cretaceous period, approximately 100 million to 66 million years ago. Celina Suarez, Alberto Perez-Huerta, and T. Lynn Harrell Jr. examined oxygen-18 isotopes in mosasaur tooth enamel in order to calculate likely mosasaur body temperatures and determined that mosasaurs were endothermic--that is, they used internal metabolic processes to maintain a stable body temperature in a variety of ambient temperatures. Suarez, Perez-Huerta, and Harrell claim that endothermy would have enabled mosasaurs to include relatively cold polar waters in their range. Which finding, if true, would most directly support Suarez, Perez-Huerta, and Harrell\'s claim?',
+    options: [
+      { letter: 'A', text: 'Mosasaurs\' likely body temperatures are easier to determine from tooth enamel oxygen-18 isotope data than the body temperatures of nonendothermic Late Cretaceous marine reptiles are.' },
+      { letter: 'B', text: 'Fossils of both mosasaurs and nonendothermic marine reptiles have been found in roughly equal numbers in regions known to be near the poles during the Late Cretaceous, though in lower concentrations than elsewhere.' },
+      { letter: 'C', text: 'Several mosasaur fossils have been found in regions known to be near the poles during the Late Cretaceous, while relatively few fossils of nonendothermic marine reptiles have been found in those locations.' },
+      { letter: 'D', text: 'During the Late Cretaceous, seawater temperatures were likely higher throughout mosasaurs\' range, including near the poles, than seawater temperatures at those same latitudes are today.' }
+    ],
+    correctAnswer: 'C',
+    explanation: 'The claim is that endothermy allowed mosasaurs to live in cold polar waters. If (C) is true--mosasaurs found near poles while non-endothermic reptiles were not--this supports the advantage of endothermy for surviving cold environments.',
+    difficulty: 'hard',
+    domain: 'Reading Comprehension',
+    skill: 'Command of Evidence'
+  }),
+  addRating({
+    id: 'sat-doc-034',
+    question: 'Almost all works of fiction contain references to the progression of time, including the time of day when events in a story take place. In a 2020 study, Allen Kim, Charuta Pethe, and Steven Skiena claim that an observable pattern in such references reflects a shift in human behavior prompted by the spread of electric lighting in the late nineteenth century. The researchers drew this conclusion from an analysis of more than 50,000 novels spanning many centuries and cultures, using software to recognize and tally both specific time references--that is, clock phrases, such as 7 a.m. or 2:30 p.m.--and implied ones, such as mentions of meals typically associated with a particular time of day. Which finding from the study, if true, would most directly support the researchers\' conclusion?',
+    options: [
+      { letter: 'A', text: 'Novels published after the year 1800 include the clock phrase 10 a.m. less often than novels published before the year 1800 do.' },
+      { letter: 'B', text: 'Novels published after 1880 contain significantly more references to activities occurring after 10 p.m. than do novels from earlier periods.' },
+      { letter: 'C', text: 'Among novels published in the nineteenth century, implied time references become steadily more common than clock phrases as publication dates approach 1900.' },
+      { letter: 'D', text: 'The time references of noon (12 p.m.) and midnight (12 a.m.) are used with roughly the same frequency in the novels.' }
+    ],
+    correctAnswer: 'B',
+    explanation: 'The claim is that electric lighting changed behavior patterns in fiction. Electric lighting enables late-night activity. If novels after 1880 (when electric lights spread) show more references to activities after 10 p.m., this supports the claim. (B) provides this evidence.',
+    difficulty: 'hard',
+    domain: 'Reading Comprehension',
+    skill: 'Command of Evidence'
+  }),
+  addRating({
+    id: 'sat-doc-035',
+    question: 'One challenge when researching whether holding elected office changes a person\'s behavior is the problem of ensuring that the experiment has an appropriate control group. To reveal the effect of holding office, researchers must compare people who hold elected office with people who do not hold office but who are otherwise similar to the office-holders. Since researchers are unable to control which politicians win elections, they therefore ______. Which choice most logically completes the text?',
+    options: [
+      { letter: 'A', text: 'struggle to find valid data about the behavior of politicians who do not currently hold office.' },
+      { letter: 'B', text: 'can only conduct valid studies with people who have previously held office rather than people who presently hold office.' },
+      { letter: 'C', text: 'should select a control group of people who differ from office-holders in several significant ways.' },
+      { letter: 'D', text: 'will find it difficult to identify a group of people who can function as an appropriate control group for their studies.' }
+    ],
+    correctAnswer: 'D',
+    explanation: 'The passage establishes that researchers need a control group of people "otherwise similar" to office-holders. But they can\'t control who wins elections. This makes it difficult to find similar non-office-holders. (D) captures this challenge.',
+    difficulty: 'hard',
+    domain: 'Reading Comprehension',
+    skill: 'Inferences'
+  }),
+  addRating({
+    id: 'sat-doc-036',
+    question: 'Poetry in Classical Nahuatl, the language of the Aztec Empire, relies on difrasismo, or a parallel noun construction that conventionally operates as a single metaphor. For example, the common difrasismo in cuauhtli in ocelotl (literally, "the eagle, the jaguar") signifies "warrior." The device\'s function is both formal--providing structure to lines of verse--and ritual: semantic relations among the two nouns and the concept they signify can be tenuous, as in the previous example, such that difrasismos are often only intelligible according to the conceptual associations observed in Aztec ceremonial culture. Which statement about the difrasismo in cuauhtli in ocelotl is most strongly supported by the text?',
+    options: [
+      { letter: 'A', text: 'Its metaphorical significance derives from the semantic equivalence of the two nouns constituting the difrasismo.' },
+      { letter: 'B', text: 'Its unintelligibility may cause its formal function within a line of verse to go unnoticed by present-day readers.' },
+      { letter: 'C', text: 'Its apparent obscurity can be resolved when considered in the proper cultural context.' },
+      { letter: 'D', text: 'Its frequency in Classical Nahuatl poetry confirms its intelligibility to the Aztec audience.' }
+    ],
+    correctAnswer: 'C',
+    explanation: 'The passage says difrasismos are "often only intelligible according to the conceptual associations observed in Aztec ceremonial culture." The "eagle, jaguar" = "warrior" connection seems tenuous but makes sense in cultural context. (C) captures this.',
+    difficulty: 'hard',
+    domain: 'Reading Comprehension',
+    skill: 'Inferences'
+  }),
+  addRating({
+    id: 'sat-doc-037',
+    question: 'Modern dog breeds are largely the result of 160 years of owners crossbreeding certain dogs in order to select for particular physical appearances. Owners often say that some breeds are also more likely than others to have particular personality traits--basset hounds are affectionate; boxers are easy to train--but Kathleen Morrill and colleagues found through a combination of owner surveys and DNA sequencing of 2,000 dogs that while physical traits are predictably heritable among purebred dogs, behavior varies widely among dogs of the same breed. Which choice best states the main idea of the text?',
+    options: [
+      { letter: 'A', text: 'Dog breeds would not exist without many years of human intervention in dogs\' reproduction.' },
+      { letter: 'B', text: 'Research fails to confirm a commonly held belief about dog breeds and behavior.' },
+      { letter: 'C', text: 'The dog breeds most popular among owners have often changed over the past 160 years.' },
+      { letter: 'D', text: 'A study of dog breeds is notable for its usage of both opinion surveys and DNA sequencing.' }
+    ],
+    correctAnswer: 'B',
+    explanation: 'The common belief is that breeds have predictable personality traits. Morrill\'s research found "behavior varies widely among dogs of the same breed"--contradicting this belief. (B) captures the main idea.',
+    difficulty: 'hard',
+    domain: 'Reading Comprehension',
+    skill: 'Central Ideas'
+  }),
+  addRating({
+    id: 'sat-doc-038',
+    question: 'Algae living within the tissues of corals play a critical role in keeping corals, and the marine ecosystems they are part of, thriving. Some coral species appear brown in color when healthy due to the algae colonies living in their tissues. In the event of an environmental stressor, the algae can die or be expelled, causing the corals to appear white. To recover the algae, the bleached corals then begin to produce bright colors, which block intense sunlight, encouraging the light-sensitive algae to recolonize the corals. What does the text most strongly suggest about corals that produce bright colors?',
+    options: [
+      { letter: 'A', text: 'These corals have likely been subjected to stressful environmental conditions.' },
+      { letter: 'B', text: 'These corals are likely more vulnerable to exposure from intense sunlight than white corals are.' },
+      { letter: 'C', text: 'These corals have likely recovered from an environmental event without the assistance of algae colonies.' },
+      { letter: 'D', text: 'These corals are more likely to survive without algae colonies than brown corals are.' }
+    ],
+    correctAnswer: 'A',
+    explanation: 'The passage says corals produce bright colors after bleaching (which happens due to "environmental stressor") to recover algae. Bright color = post-stress recovery attempt. (A) correctly infers that bright-colored corals have experienced stress.',
+    difficulty: 'hard',
+    domain: 'Reading Comprehension',
+    skill: 'Inferences'
+  }),
+  addRating({
+    id: 'sat-doc-039',
+    question: 'For centuries, the widespread acknowledgment of the involvement of the cerebellum--a dense brain structure in vertebrates--in coordinating motor control in humans has hindered recognition of other possible functions of the structure. Neuroscience research from the last two decades now suggests that the cerebellum regulates emotion and social behavior, and recent research by Ilaria Carta and colleagues has identified a pathway connecting the cerebellum to a center for motivation and reward processing known as the ventral tegmental area (VTA). Which choice best states the main idea of the text?',
+    options: [
+      { letter: 'A', text: 'The recent verification of a pathway between the VTA and the cerebellum confirms the cerebellum\'s long-suspected role in motor coordination.' },
+      { letter: 'B', text: 'Recent advances in the field of neuroscience have challenged widely accepted claims about the function of a pathway connecting the VTA and the cerebellum.' },
+      { letter: 'C', text: 'The cerebellum has primarily been thought to regulate motor functioning, but in recent years neuroscience researchers have been uncovering additional functions.' },
+      { letter: 'D', text: 'Technological limitations have historically hindered the study of the cerebellum, but the recent development of new technologies has led to greater insights into its functions.' }
+    ],
+    correctAnswer: 'C',
+    explanation: 'The passage says focus on motor control "hindered recognition of other possible functions," but recent research shows the cerebellum also regulates "emotion and social behavior" and connects to reward processing. (C) captures this.',
+    difficulty: 'hard',
+    domain: 'Reading Comprehension',
+    skill: 'Central Ideas'
+  }),
+  addRating({
+    id: 'sat-doc-040',
+    question: 'Archaeologist Petra Vaiglova, anthropologist Xinyi Liu, and their colleagues investigated the domestication of farm animals in China during the Bronze Age (approximately 2000 to 1000 BCE). By analyzing the chemical composition of the bones of sheep, goats, and cattle from this era, the team determined that wild plants made up the bulk of sheep\'s and goats\' diets, while the cattle\'s diet consisted largely of millet, a crop cultivated by humans. The team concluded that cattle were likely raised closer to human settlements, whereas sheep and goats were allowed to roam farther away. Which finding, if true, would most strongly support the team\'s conclusion?',
+    options: [
+      { letter: 'A', text: 'Analysis of the animal bones showed that the cattle\'s diet also consisted of wheat, which humans widely cultivated in China during the Bronze Age.' },
+      { letter: 'B', text: 'Further investigation of sheep and goat bones revealed that their diets consisted of small portions of millet as well.' },
+      { letter: 'C', text: 'Cattle\'s diets generally require larger amounts of food and a greater variety of nutrients than do sheep\'s and goats\' diets.' },
+      { letter: 'D', text: 'The diets of sheep, goats, and cattle were found to vary based on what the farmers in each Bronze Age settlement could grow.' }
+    ],
+    correctAnswer: 'A',
+    explanation: 'The conclusion is that cattle were kept near settlements because they ate human-cultivated millet. If cattle also ate wheat--another cultivated crop--this further supports they were kept near cultivated fields/settlements. (A) strengthens this connection.',
+    difficulty: 'hard',
+    domain: 'Reading Comprehension',
+    skill: 'Command of Evidence'
+  }),
+  addRating({
+    id: 'sat-doc-041',
+    question: 'Archaeologists and historians used to believe that the Maya civilization during its Classic period (roughly 250-900) lacked agricultural marketplaces. One reason for this belief was that these scholars misunderstood the ecology of the regions the Maya inhabited. Marketplaces typically emerge because different individuals or groups want to trade resources they control for resources they don\'t control. Scholars seriously underestimated the ecological diversity of the Maya landscape and thus assumed that ______. Which choice most logically completes the text?',
+    options: [
+      { letter: 'A', text: 'marketplaces likely would not have attracted many traders from outside the regions controlled by the Maya.' },
+      { letter: 'B', text: 'farming practices would have been largely the same throughout Maya lands even if the crops people produced varied significantly.' },
+      { letter: 'C', text: 'marketplaces would not have enabled Maya people to acquire many products different from those they already produced.' },
+      { letter: 'D', text: 'farmers would trade agricultural products only if they had already produced enough to meet their own needs.' }
+    ],
+    correctAnswer: 'C',
+    explanation: 'Marketplaces emerge to trade resources people don\'t control for those they do. If scholars underestimated ecological diversity, they thought everyone had similar resources--so there would be little to trade. (C) captures this.',
+    difficulty: 'hard',
+    domain: 'Reading Comprehension',
+    skill: 'Inferences'
+  }),
+  addRating({
+    id: 'sat-doc-042',
+    question: 'In their 2022 paper, Christos Dimopoulos et al., having granted that the existence of antigravity--in which antimatter and matter repel rather than attract each other--lacked affirmative experimental support, rightly argued that such antigravity was worth considering on theoretical grounds given that evidence against it was similarly lacking. But a 2023 report by an international team of researchers details the first direct ballistic observations of antihydrogen atoms under gravity inside a CERN particle accelerator. Corresponding most closely to predictions under gravitational attraction, these observations were thoroughly inconsistent with antigravity. Which choice best states the main idea of the text?',
+    options: [
+      { letter: 'A', text: 'Antihydrogen ballistics observations were conducted at CERN to test specific conclusions about antigravity presented in the 2022 paper by Dimopoulos et al.' },
+      { letter: 'B', text: 'Although theoreticians were justified in studying antigravity before the release of the 2023 report, the report\'s findings suggest that the rationale for theoretical consideration offered in the 2022 paper by Dimopoulos et al. is no longer applicable.' },
+      { letter: 'C', text: 'The theoretical approach represented in the 2022 paper by Dimopoulos et al. assumed that unambiguous proof of antigravity would not be achievable, but the results in the 2023 report undermine that assumption.' },
+      { letter: 'D', text: 'Before 2023, researchers\' inordinate focus on theoretical considerations hindered the development of the experimental regimen for direct antihydrogen ballistics observations.' }
+    ],
+    correctAnswer: 'B',
+    explanation: 'Dimopoulos argued antigravity was worth considering because no evidence existed against it. The 2023 CERN observations are "thoroughly inconsistent with antigravity"--now evidence against it exists. The rationale is no longer valid. (B) captures this.',
+    difficulty: 'hard',
+    domain: 'Reading Comprehension',
+    skill: 'Central Ideas'
+  }),
+  addRating({
+    id: 'sat-doc-043',
+    question: 'The alpaca was domesticated by Indigenous peoples in the Andes about 7,000 years ago. But which wild species did it descend from, the vicuna or guanaco? A research team led by Ruiwen Fan may have solved the mystery, concluding that the alpaca is the domesticated form of the vicuna but that the modern alpaca gets only 64 percent of its genetic material from its wild ancestor. The rest comes from the domesticated llama. The llama, meanwhile, gets 95.5 percent of its genetic material from its own wild ancestor, the guanaco, and the rest from the alpaca. The llama and alpaca apparently interbred widely for only a handful of generations between 400 and 600 years ago. Assuming that the findings of Fan\'s team are valid, it can be inferred that ______. Which choice most logically completes the text?',
+    options: [
+      { letter: 'A', text: 'modern llama populations have a greater degree of genetic diversity, on average, than modern alpaca populations do.' },
+      { letter: 'B', text: 'the domestication process of the alpaca may have involved some introduction of genetic material from the llama.' },
+      { letter: 'C', text: 'the period of interbreeding resulted in a greater genetic difference between alpacas and their wild ancestors than between llamas and their wild ancestors.' },
+      { letter: 'D', text: 'if they were subjected to genetic testing, modern populations of guanacos and vicunas would likely show traces of ancient interbreeding as well.' }
+    ],
+    correctAnswer: 'C',
+    explanation: 'Alpacas have 64% vicuna DNA (36% difference from ancestor). Llamas have 95.5% guanaco DNA (4.5% difference). The interbreeding introduced more foreign DNA into alpacas than llamas, creating greater genetic difference from their wild ancestor. (C) captures this.',
+    difficulty: 'hard',
+    domain: 'Reading Comprehension',
+    skill: 'Inferences'
+  }),
+  addRating({
+    id: 'sat-doc-044',
+    question: 'Several scholars have argued that conditions in England in the late ninth through early eleventh centuries--namely, burgeoning literacy amid running conflicts between England\'s Anglo-Saxon kingdoms and Danish invaders--were especially conducive to the production of the Old English epic poem Beowulf, and they have dated the poem\'s composition accordingly. It is not inconceivable that Beowulf emerged from such a context, but privileging contextual fit over the linguistic evidence of an eighth- or even seventh-century composition requires a level of justification that thus far has not been presented. Which choice best states the main idea of the text?',
+    options: [
+      { letter: 'A', text: 'Although there are some grounds for believing that Beowulf was composed between the late ninth and early eleventh centuries, advocates for that view tend to rely on evidence that has been called into question by advocates for an earlier date.' },
+      { letter: 'B', text: 'Although several scholars have dated Beowulf to the late ninth through early eleventh centuries, others have argued that doing so privileges a controversial interpretation of the social conditions of the period.' },
+      { letter: 'C', text: 'Although Beowulf fits well with the historical context of England in the late ninth through early eleventh centuries, it fits equally well with the historical context of England in the seventh and eighth centuries.' },
+      { letter: 'D', text: 'Although the claim of a late ninth- through early eleventh-century composition date for Beowulf has some plausibility, advocates for the claim have not compellingly addressed evidence suggesting an earlier date.' }
+    ],
+    correctAnswer: 'D',
+    explanation: 'The author says the late date is "not inconceivable" (plausible) but that "privileging contextual fit over the linguistic evidence" requires "justification that thus far has not been presented." (D) captures this.',
+    difficulty: 'hard',
+    domain: 'Reading Comprehension',
+    skill: 'Central Ideas'
+  }),
+  addRating({
+    id: 'sat-doc-045',
+    question: 'Elizabeth Asiedu has identified a negative correlation between the share of developing countries\' economies derived from natural-resource extraction and those countries\' receipts of foreign investment. This may appear counterintuitive--resource extraction requires initial investments (in extractive technology, for instance) at scales best met by multinational corporations--but Asiedu notes that natural-resource industries\' boom-bust cycle can destabilize local currencies and increase developing countries\' vulnerability to external shocks, creating levels of uncertainty to which foreign investors are typically averse. Which choice best states the main idea of the text?',
+    options: [
+      { letter: 'A', text: 'Although it may seem surprising that foreign investment declines in developing countries as natural-resource extraction makes up a larger share of those countries\' economies, that decline happens because resource extraction requires initial investments too large for foreign investors to supply.' },
+      { letter: 'B', text: 'Although developing countries tend to become less dependent on foreign investment as natural-resource industries make up a larger share of their economies, this change may not occur if the boom-bust cycle of those industries destabilizes local currencies or increases countries\' vulnerability to external shocks.' },
+      { letter: 'C', text: 'Although one might expect that foreign investment would increase as natural-resource extraction makes up a larger share of developing countries\' economies, the opposite happens because heavy reliance on natural resources can lead to unattractive conditions for investors.' },
+      { letter: 'D', text: 'Although foreign investors tend to avoid initial investments in natural-resource industries in developing countries, foreign investment may increase significantly as those industries stabilize and the risks associated with them decline.' }
+    ],
+    correctAnswer: 'C',
+    explanation: 'The passage presents a counterintuitive finding: more resource extraction correlates with less foreign investment. The explanation is that resource dependence creates "boom-bust cycles" and "uncertainty" that investors avoid. (C) captures this.',
+    difficulty: 'hard',
+    domain: 'Reading Comprehension',
+    skill: 'Central Ideas'
   })
 ];
