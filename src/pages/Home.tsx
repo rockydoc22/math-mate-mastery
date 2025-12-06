@@ -141,8 +141,8 @@ const Home = () => {
             </span>
             
             {/* Center - 40² as the main element */}
-            <div className="p-8 rounded-3xl bg-gradient-to-br from-primary to-accent shadow-2xl shadow-primary/30">
-              <span className="text-5xl md:text-6xl font-bold text-primary-foreground font-mono">
+            <div className="p-10 md:p-12 rounded-3xl bg-gradient-to-br from-primary to-accent shadow-2xl shadow-primary/30">
+              <span className="text-6xl md:text-8xl font-bold text-primary-foreground font-mono">
                 40²
               </span>
             </div>
@@ -165,7 +165,7 @@ const Home = () => {
             {/* Bottom right - placeholder for balance */}
           </div>
           
-          <p className="text-xl md:text-2xl text-muted-foreground font-medium">The 99.9th Percentile Club</p>
+          <p className="text-xl md:text-2xl text-muted-foreground font-medium">Join the 99.9% Club</p>
         </div>
 
         {/* Feature Cards - centered */}
