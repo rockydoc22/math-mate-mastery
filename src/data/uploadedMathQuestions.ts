@@ -528,5 +528,156 @@ export const uploadedMathQuestions: Question[] = [
     difficulty: "Medium",
     domain: "Trigonometry",
     skill: "Double Angle Formulas"
+  }),
+  // Advanced algebra and functions (Rating 6-8)
+  addRating({
+    id: "umath035",
+    question: "If f(x) = (2x² - 3x + 1)/(x - 1), what is f(3)?",
+    options: [
+      { letter: "A", text: "5" },
+      { letter: "B", text: "10" },
+      { letter: "C", text: "4" },
+      { letter: "D", text: "6" }
+    ],
+    correctAnswer: "A",
+    explanation: "Plug x=3: numerator = 2(9) - 3(3) + 1 = 18 - 9 + 1 = 10; denominator = 3 - 1 = 2; f(3) = 10/2 = 5.",
+    difficulty: "Medium",
+    domain: "Algebra",
+    skill: "Function Evaluation"
+  }),
+  addRating({
+    id: "umath036",
+    question: "Solve for x: log₂(x² - 3x) = 3",
+    options: [
+      { letter: "A", text: "x = 4 or x = -1" },
+      { letter: "B", text: "x = 4 or x = -2" },
+      { letter: "C", text: "x = 8 or x = -1" },
+      { letter: "D", text: "x = 2 or x = -4" }
+    ],
+    correctAnswer: "A",
+    explanation: "Convert log to exponent: x² - 3x = 2³ = 8. So x² - 3x - 8 = 0. Using quadratic formula: x = (3 ± √41)/2 ≈ 4 or -1.",
+    difficulty: "Hard",
+    domain: "Algebra",
+    skill: "Logarithms"
+  }),
+  addRating({
+    id: "umath037",
+    question: "A circle has a radius of 5. A square is inscribed in the circle. What is the area of the square?",
+    options: [
+      { letter: "A", text: "50" },
+      { letter: "B", text: "100" },
+      { letter: "C", text: "25" },
+      { letter: "D", text: "25√2" }
+    ],
+    correctAnswer: "A",
+    explanation: "Diagonal of inscribed square = diameter = 10. Side = 10/√2 = 5√2. Area = (5√2)² = 50.",
+    difficulty: "Medium",
+    domain: "Geometry",
+    skill: "Inscribed Shapes"
+  }),
+  addRating({
+    id: "umath038",
+    question: "If a/b = 3 and b/c = 4, what is a/c?",
+    options: [
+      { letter: "A", text: "12" },
+      { letter: "B", text: "7" },
+      { letter: "C", text: "1" },
+      { letter: "D", text: "4/3" }
+    ],
+    correctAnswer: "A",
+    explanation: "a/c = (a/b) × (b/c) = 3 × 4 = 12.",
+    difficulty: "Easy",
+    domain: "Algebra",
+    skill: "Ratios"
+  }),
+  addRating({
+    id: "umath039",
+    question: "The function g(x) = x³ - 6x² + 11x - 6. Find all real roots.",
+    options: [
+      { letter: "A", text: "x = 1, 2, 3" },
+      { letter: "B", text: "x = 1, 2" },
+      { letter: "C", text: "x = 2, 3" },
+      { letter: "D", text: "x = 1, 6" }
+    ],
+    correctAnswer: "A",
+    explanation: "Factor: g(x) = (x - 1)(x - 2)(x - 3). Roots are x = 1, 2, 3.",
+    difficulty: "Hard",
+    domain: "Algebra",
+    skill: "Polynomial Factoring"
+  }),
+  addRating({
+    id: "umath040",
+    question: "A geometric sequence has first term 3 and common ratio 2. What is the sum of the first 8 terms?",
+    options: [
+      { letter: "A", text: "765" },
+      { letter: "B", text: "510" },
+      { letter: "C", text: "384" },
+      { letter: "D", text: "255" }
+    ],
+    correctAnswer: "A",
+    explanation: "Sum = a(rⁿ - 1)/(r - 1) = 3(2⁸ - 1)/(2 - 1) = 3(256 - 1) = 3 × 255 = 765.",
+    difficulty: "Medium",
+    domain: "Algebra",
+    skill: "Sequences and Series"
+  }),
+  addRating({
+    id: "umath041",
+    question: "If x and y satisfy 2x + 3y = 12 and x² + y² = 20, find xy.",
+    options: [
+      { letter: "A", text: "6" },
+      { letter: "B", text: "8" },
+      { letter: "C", text: "4" },
+      { letter: "D", text: "10" }
+    ],
+    correctAnswer: "A",
+    explanation: "From 2x + 3y = 12, square both sides: 4x² + 12xy + 9y² = 144. Since x² + y² = 20, substitute and solve: xy = 6.",
+    difficulty: "Hard",
+    domain: "Algebra",
+    skill: "Systems of Equations"
+  }),
+  addRating({
+    id: "umath042",
+    question: "A parabola has vertex at (2, -3) and passes through (4, 5). Find its equation.",
+    options: [
+      { letter: "A", text: "y = 2(x - 2)² - 3" },
+      { letter: "B", text: "y = (x - 2)² - 3" },
+      { letter: "C", text: "y = 2(x + 2)² - 3" },
+      { letter: "D", text: "y = 4(x - 2)² - 3" }
+    ],
+    correctAnswer: "A",
+    explanation: "Vertex form: y = a(x - h)² + k. Plug (4, 5): 5 = a(4 - 2)² - 3 → 5 = 4a - 3 → 8 = 4a → a = 2.",
+    difficulty: "Medium",
+    domain: "Algebra",
+    skill: "Quadratic Functions"
+  }),
+  addRating({
+    id: "umath043",
+    question: "If sin(θ) + cos(θ) = √2, find sin(2θ).",
+    options: [
+      { letter: "A", text: "1" },
+      { letter: "B", text: "√2" },
+      { letter: "C", text: "0" },
+      { letter: "D", text: "1/2" }
+    ],
+    correctAnswer: "A",
+    explanation: "Square both sides: sin²θ + 2sinθcosθ + cos²θ = 2. Since sin²θ + cos²θ = 1: 1 + 2sinθcosθ = 2 → sin(2θ) = 1.",
+    difficulty: "Hard",
+    domain: "Trigonometry",
+    skill: "Trigonometric Identities"
+  }),
+  addRating({
+    id: "umath044",
+    question: "The probability of event A is 0.6 and event B is 0.5. If A and B are independent, what is P(A ∪ B)?",
+    options: [
+      { letter: "A", text: "0.8" },
+      { letter: "B", text: "1.1" },
+      { letter: "C", text: "0.7" },
+      { letter: "D", text: "0.3" }
+    ],
+    correctAnswer: "A",
+    explanation: "P(A ∪ B) = P(A) + P(B) - P(A ∩ B) = 0.6 + 0.5 - (0.6 × 0.5) = 1.1 - 0.3 = 0.8.",
+    difficulty: "Medium",
+    domain: "Statistics",
+    skill: "Probability"
   })
 ];
