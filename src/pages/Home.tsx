@@ -247,31 +247,23 @@ const Home = () => {
               ))}
             </div>
 
-            {/* Specific Level Selector with counts */}
-            <div className="space-y-2">
-              <span className="text-sm text-muted-foreground">Or pick specific level:</span>
-              <div className="flex items-center gap-1 flex-wrap">
-                {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((level) => (
-                  <button
-                    key={level}
-                    onClick={() => setDifficultyRange(String(level) as DifficultyRange)}
-                    disabled={countsPerLevel[level] === 0}
-                    className={`flex flex-col items-center px-2 py-1 rounded-lg border-2 text-xs font-bold transition-all min-w-[40px] ${
-                      countsPerLevel[level] === 0 
-                        ? 'opacity-30 cursor-not-allowed border-border'
-                        : difficultyRange === String(level)
-                          ? level <= 3 ? 'bg-green-500/30 border-green-500 text-green-700'
-                          : level <= 5 ? 'bg-yellow-500/30 border-yellow-500 text-yellow-700'
-                          : level <= 8 ? 'bg-orange-500/30 border-orange-500 text-orange-700'
-                          : 'bg-red-500/30 border-red-500 text-red-700'
-                          : 'border-border hover:border-muted-foreground/50'
-                    }`}
-                  >
-                    <span className="text-sm">{level}</span>
-                    <span className="text-[10px] opacity-70">{countsPerLevel[level]}</span>
-                  </button>
-                ))}
-              </div>
+            {/* Question counts per level */}
+            <div className="flex items-center gap-1 flex-wrap">
+              <span className="text-xs text-muted-foreground mr-1">Questions:</span>
+              {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((level) => (
+                <div
+                  key={level}
+                  className={`flex flex-col items-center px-2 py-1 rounded-lg text-xs min-w-[36px] ${
+                    level <= 3 ? 'bg-green-500/10 text-green-700'
+                    : level <= 5 ? 'bg-yellow-500/10 text-yellow-700'
+                    : level <= 8 ? 'bg-orange-500/10 text-orange-700'
+                    : 'bg-red-500/10 text-red-700'
+                  }`}
+                >
+                  <span className="font-bold">{level}</span>
+                  <span className="text-[10px] opacity-70">{countsPerLevel[level]}</span>
+                </div>
+              ))}
             </div>
           </div>
 
