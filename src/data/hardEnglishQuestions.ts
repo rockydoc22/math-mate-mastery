@@ -1,10 +1,16 @@
 import { EnglishQuestion } from './englishQuestions';
 import { rateDifficulty } from '../utils/difficultyRating';
 
-const addRating = (q: Omit<EnglishQuestion, 'difficultyRating'>): EnglishQuestion => ({
-  ...q,
-  difficultyRating: rateDifficulty(q.question, q.options, q.domain, q.skill, false)
-});
+// Force hard questions to be rated 9-10
+const addRating = (q: Omit<EnglishQuestion, 'difficultyRating'>): EnglishQuestion => {
+  const baseRating = rateDifficulty(q.question, q.options, q.domain, q.skill, false);
+  // Ensure hard questions are at least 9, max 10
+  const forcedRating = Math.max(9, Math.min(10, baseRating + 4));
+  return {
+    ...q,
+    difficultyRating: forcedRating
+  };
+};
 
 // Level 9-10 English Questions - Complex reading comprehension and writing analysis
 export const hardEnglishQuestions: EnglishQuestion[] = [
