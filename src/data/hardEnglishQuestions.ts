@@ -5643,5 +5643,156 @@ export const hardEnglishQuestions: EnglishQuestion[] = [
     difficulty: 'hard',
     domain: 'Writing',
     skill: 'Formal Tone'
+  }),
+  // New batch - English Questions (sat-doc-076 to sat-doc-085)
+  addRating({
+    id: 'sat-doc-076',
+    question: 'Which choice best maintains the formal tone? Original: The committee was kind of baffled by the unexpected results.',
+    options: [
+      { letter: 'A', text: 'The committee was somewhat baffled by the unexpected results.' },
+      { letter: 'B', text: 'The committee was baffled by the unexpected results.' },
+      { letter: 'C', text: 'The committee was thoroughly baffled by the unexpected results.' },
+      { letter: 'D', text: 'The committee was kind of baffled by the unexpected results.' }
+    ],
+    correctAnswer: 'B',
+    explanation: '"Kind of" is informal. Option B removes informal language while maintaining clarity.',
+    difficulty: 'hard',
+    domain: 'Writing',
+    skill: 'Formal Tone'
+  }),
+  addRating({
+    id: 'sat-doc-077',
+    question: 'Which revision best improves sentence structure? Original: The researcher, who was known for innovative methods, published findings that were controversial.',
+    options: [
+      { letter: 'A', text: 'Known for innovative methods, the researcher published controversial findings.' },
+      { letter: 'B', text: 'The researcher published findings that were controversial and innovative.' },
+      { letter: 'C', text: 'The researcher, known for methods, published findings that were controversial.' },
+      { letter: 'D', text: 'Publishing controversial findings, the researcher was known for methods.' }
+    ],
+    correctAnswer: 'A',
+    explanation: 'Option A eliminates redundancy and improves conciseness.',
+    difficulty: 'hard',
+    domain: 'Writing',
+    skill: 'Sentence Structure'
+  }),
+  addRating({
+    id: 'sat-doc-078',
+    question: 'Which choice best supports the claim that globalization influences language?',
+    options: [
+      { letter: 'A', text: 'English words appear frequently in international advertising.' },
+      { letter: 'B', text: 'Language learning apps are popular.' },
+      { letter: 'C', text: 'People travel more often.' },
+      { letter: 'D', text: 'Cultural festivals attract tourists.' }
+    ],
+    correctAnswer: 'A',
+    explanation: 'Option A directly links globalization to language usage.',
+    difficulty: 'hard',
+    domain: 'Reading Comprehension',
+    skill: 'Supporting Claims'
+  }),
+  addRating({
+    id: 'sat-doc-079',
+    question: 'Which sentence most effectively combines ideas? She admired the sculpture. The sculpture was created by a local artisan.',
+    options: [
+      { letter: 'A', text: 'She admired the sculpture, which was created by a local artisan.' },
+      { letter: 'B', text: 'She admired the sculpture and it was created by a local artisan.' },
+      { letter: 'C', text: 'She admired the sculpture; the sculpture was by a local artisan.' },
+      { letter: 'D', text: 'She admired the sculpture because it was created by a local artisan.' }
+    ],
+    correctAnswer: 'A',
+    explanation: 'Option A combines ideas without redundancy.',
+    difficulty: 'hard',
+    domain: 'Writing',
+    skill: 'Sentence Combining'
+  }),
+  addRating({
+    id: 'sat-doc-080',
+    question: 'Which choice maintains parallel structure? Original: The program taught her to write clearly, think critically, and she learned collaboration.',
+    options: [
+      { letter: 'A', text: 'write clearly, think critically, and collaborate effectively.' },
+      { letter: 'B', text: 'writing clearly, thinking critically, and collaboration.' },
+      { letter: 'C', text: 'write clearly, thinking critically, and collaborating.' },
+      { letter: 'D', text: 'writing clearly, think critically, and collaborate effectively.' }
+    ],
+    correctAnswer: 'A',
+    explanation: 'Option A maintains parallel verb forms.',
+    difficulty: 'hard',
+    domain: 'Writing',
+    skill: 'Parallel Structure'
+  }),
+  addRating({
+    id: 'sat-doc-081',
+    question: 'Which choice best completes the sentence logically? Although the policy aimed to reduce emissions, critics argued that...',
+    options: [
+      { letter: 'A', text: 'it would accelerate climate change.' },
+      { letter: 'B', text: 'its implementation was costly and ineffective.' },
+      { letter: 'C', text: 'it was universally praised.' },
+      { letter: 'D', text: 'it aligned with global goals.' }
+    ],
+    correctAnswer: 'B',
+    explanation: 'Option B provides a logical criticism.',
+    difficulty: 'hard',
+    domain: 'Reading Comprehension',
+    skill: 'Logical Completion'
+  }),
+  addRating({
+    id: 'sat-doc-082',
+    question: 'Which choice improves clarity? Original: Due to the fact that the project was delayed, the team had to work overtime.',
+    options: [
+      { letter: 'A', text: 'Because the project was delayed, the team had to work overtime.' },
+      { letter: 'B', text: 'The project was delayed, so the team had to work overtime.' },
+      { letter: 'C', text: 'The team had to work overtime due to the project delay.' },
+      { letter: 'D', text: 'All of the above.' }
+    ],
+    correctAnswer: 'D',
+    explanation: 'All options improve clarity compared to the original.',
+    difficulty: 'hard',
+    domain: 'Writing',
+    skill: 'Clarity and Concision'
+  }),
+  addRating({
+    id: 'sat-doc-083',
+    question: 'Which choice supports the argument that literature shapes society?',
+    options: [
+      { letter: 'A', text: 'Literary works often challenge prevailing norms.' },
+      { letter: 'B', text: 'Books are sold worldwide.' },
+      { letter: 'C', text: 'Authors sometimes travel internationally.' },
+      { letter: 'D', text: 'Literature requires creativity.' }
+    ],
+    correctAnswer: 'A',
+    explanation: 'Option A directly supports the argument.',
+    difficulty: 'hard',
+    domain: 'Reading Comprehension',
+    skill: 'Supporting Arguments'
+  }),
+  addRating({
+    id: 'sat-doc-084',
+    question: 'Which choice maintains formal tone? Original: The results were pretty shocking to the analysts.',
+    options: [
+      { letter: 'A', text: 'The results were quite shocking to the analysts.' },
+      { letter: 'B', text: 'The results were shocking to the analysts.' },
+      { letter: 'C', text: 'The results were rather shocking to the analysts.' },
+      { letter: 'D', text: 'The results were significantly shocking to the analysts.' }
+    ],
+    correctAnswer: 'B',
+    explanation: 'Option B is concise and formal.',
+    difficulty: 'hard',
+    domain: 'Writing',
+    skill: 'Formal Tone'
+  }),
+  addRating({
+    id: 'sat-doc-085',
+    question: 'Which choice best maintains logical progression? Despite the committee\'s insistence on transparency, the report was...',
+    options: [
+      { letter: 'A', text: 'opaque and convoluted, leaving readers perplexed.' },
+      { letter: 'B', text: 'clear and concise, satisfying all expectations.' },
+      { letter: 'C', text: 'verbose yet illuminating.' },
+      { letter: 'D', text: 'brief but misleading.' }
+    ],
+    correctAnswer: 'A',
+    explanation: 'Option A contrasts with the committee\'s insistence on transparency.',
+    difficulty: 'hard',
+    domain: 'Reading Comprehension',
+    skill: 'Logical Progression'
   })
 ];

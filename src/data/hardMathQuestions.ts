@@ -4972,5 +4972,156 @@ export const hardMathQuestions: Question[] = [
     difficulty: 'hard',
     domain: 'Statistics',
     skill: 'Probability'
+  }),
+  // New batch - Advanced Trigonometry (hard-math-331 to hard-math-340)
+  addRating({
+    id: 'hard-math-331',
+    question: 'Solve for θ: If sin(θ) + cos(θ) = √2, find θ in degrees.',
+    options: [
+      { letter: 'A', text: '45°' },
+      { letter: 'B', text: '30°' },
+      { letter: 'C', text: '60°' },
+      { letter: 'D', text: '90°' }
+    ],
+    correctAnswer: 'A',
+    explanation: 'sin θ + cos θ = √2 occurs when θ = 45°, as this maximizes the sum of sine and cosine.',
+    difficulty: 'hard',
+    domain: 'Trigonometry',
+    skill: 'Trigonometric Equations'
+  }),
+  addRating({
+    id: 'hard-math-332',
+    question: 'If tan(θ) = 3/4, find sin(2θ).',
+    options: [
+      { letter: 'A', text: '24/25' },
+      { letter: 'B', text: '7/25' },
+      { letter: 'C', text: '12/25' },
+      { letter: 'D', text: '3/5' }
+    ],
+    correctAnswer: 'A',
+    explanation: 'sin(2θ) = 2tan θ/(1 + tan²θ) = 2(3/4)/(1 + 9/16) = (6/4)/(25/16) = (6/4)(16/25) = 24/25.',
+    difficulty: 'hard',
+    domain: 'Trigonometry',
+    skill: 'Double Angle Formulas'
+  }),
+  addRating({
+    id: 'hard-math-333',
+    question: 'Find the exact value of cos(75°).',
+    options: [
+      { letter: 'A', text: '(√6 - √2)/4' },
+      { letter: 'B', text: '(√6 + √2)/4' },
+      { letter: 'C', text: '(√3 - 1)/4' },
+      { letter: 'D', text: '√2/2' }
+    ],
+    correctAnswer: 'A',
+    explanation: 'cos(75°) = cos(45° + 30°) = cos45°cos30° - sin45°sin30° = (√2/2)(√3/2) - (√2/2)(1/2) = (√6 - √2)/4.',
+    difficulty: 'hard',
+    domain: 'Trigonometry',
+    skill: 'Sum and Difference Formulas'
+  }),
+  addRating({
+    id: 'hard-math-334',
+    question: 'Solve: If sin²θ - cos²θ = 0, find θ in [0°, 180°].',
+    options: [
+      { letter: 'A', text: '45° and 135°' },
+      { letter: 'B', text: '45° only' },
+      { letter: 'C', text: '90° only' },
+      { letter: 'D', text: '0° and 180°' }
+    ],
+    correctAnswer: 'A',
+    explanation: 'sin²θ = cos²θ implies tan²θ = 1, so tan θ = ±1. In [0°, 180°], θ = 45° and 135°.',
+    difficulty: 'hard',
+    domain: 'Trigonometry',
+    skill: 'Trigonometric Equations'
+  }),
+  addRating({
+    id: 'hard-math-335',
+    question: 'If sin θ = 5/13 and θ is in Quadrant II, find cos θ.',
+    options: [
+      { letter: 'A', text: '-12/13' },
+      { letter: 'B', text: '12/13' },
+      { letter: 'C', text: '-5/12' },
+      { letter: 'D', text: '5/12' }
+    ],
+    correctAnswer: 'A',
+    explanation: 'In QII, cosine is negative. Using sin²θ + cos²θ = 1: cos²θ = 1 - 25/169 = 144/169, so cos θ = -12/13.',
+    difficulty: 'hard',
+    domain: 'Trigonometry',
+    skill: 'Trigonometric Identities'
+  }),
+  addRating({
+    id: 'hard-math-336',
+    question: 'Find the general solution: 2sin²θ - 3sin θ + 1 = 0.',
+    options: [
+      { letter: 'A', text: 'θ = 90°, 30°, 150° + k·360°' },
+      { letter: 'B', text: 'θ = 45° + k·180°' },
+      { letter: 'C', text: 'θ = 60° + k·360°' },
+      { letter: 'D', text: 'θ = 0° + k·180°' }
+    ],
+    correctAnswer: 'A',
+    explanation: 'Factor: (2sin θ - 1)(sin θ - 1) = 0. So sin θ = 1/2 or sin θ = 1, giving θ = 90°, 30°, 150° + k·360°.',
+    difficulty: 'hard',
+    domain: 'Trigonometry',
+    skill: 'Trigonometric Equations'
+  }),
+  addRating({
+    id: 'hard-math-337',
+    question: 'If cos(2θ) = 1/2, find θ in [0°, 360°].',
+    options: [
+      { letter: 'A', text: '30°, 150°, 210°, 330°' },
+      { letter: 'B', text: '30° and 150° only' },
+      { letter: 'C', text: '60° and 300°' },
+      { letter: 'D', text: '45° and 135°' }
+    ],
+    correctAnswer: 'A',
+    explanation: 'cos(2θ) = 1/2 means 2θ = 60°, 300°, 420°, 660°. So θ = 30°, 150°, 210°, 330°.',
+    difficulty: 'hard',
+    domain: 'Trigonometry',
+    skill: 'Double Angle Equations'
+  }),
+  addRating({
+    id: 'hard-math-338',
+    question: 'Evaluate: sin(18°).',
+    options: [
+      { letter: 'A', text: '(√5 - 1)/4' },
+      { letter: 'B', text: '(√5 + 1)/4' },
+      { letter: 'C', text: '√5/4' },
+      { letter: 'D', text: '1/4' }
+    ],
+    correctAnswer: 'A',
+    explanation: 'sin(18°) = (√5 - 1)/4, derived from the geometry of a regular pentagon.',
+    difficulty: 'hard',
+    domain: 'Trigonometry',
+    skill: 'Special Angles'
+  }),
+  addRating({
+    id: 'hard-math-339',
+    question: 'If sin A = 3/5 and cos B = 12/13, where A and B are acute, find sin(A + B).',
+    options: [
+      { letter: 'A', text: '56/65' },
+      { letter: 'B', text: '63/65' },
+      { letter: 'C', text: '33/65' },
+      { letter: 'D', text: '16/65' }
+    ],
+    correctAnswer: 'A',
+    explanation: 'sin(A + B) = sin A cos B + cos A sin B = (3/5)(12/13) + (4/5)(5/13) = 36/65 + 20/65 = 56/65.',
+    difficulty: 'hard',
+    domain: 'Trigonometry',
+    skill: 'Sum Formulas'
+  }),
+  addRating({
+    id: 'hard-math-340',
+    question: 'Verify the identity: (1 - tan²θ)/(1 + tan²θ) equals which expression?',
+    options: [
+      { letter: 'A', text: 'cos(2θ)' },
+      { letter: 'B', text: 'sin(2θ)' },
+      { letter: 'C', text: 'tan(2θ)' },
+      { letter: 'D', text: 'cos²θ' }
+    ],
+    correctAnswer: 'A',
+    explanation: 'Using tan²θ = sin²θ/cos²θ and simplifying: (cos²θ - sin²θ)/(cos²θ + sin²θ) = cos²θ - sin²θ = cos(2θ).',
+    difficulty: 'hard',
+    domain: 'Trigonometry',
+    skill: 'Trigonometric Identities'
   })
 ];
