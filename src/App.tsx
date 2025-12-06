@@ -4,6 +4,7 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { AuthProvider } from "@/hooks/useAuth";
+import { usePWAUpdate } from "@/hooks/usePWAUpdate";
 import Home from "./pages/Home";
 import Quiz from "./pages/Quiz";
 import MathQuiz from "./pages/MathQuiz";
@@ -24,10 +25,16 @@ import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
 
+const PWAUpdater = () => {
+  usePWAUpdate();
+  return null;
+};
+
 const App = () => (
   <QueryClientProvider client={queryClient}>
     <AuthProvider>
       <TooltipProvider>
+        <PWAUpdater />
         <Toaster />
         <Sonner />
         <BrowserRouter>
