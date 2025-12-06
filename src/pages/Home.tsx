@@ -131,48 +131,48 @@ const Home = () => {
         </div>
 
         {/* Hero */}
-        <div className="text-center space-y-4 py-6">
+        <div className="text-center space-y-4 py-8">
           {/* Math expressions floating around */}
-          <div className="relative flex justify-center items-center mb-6 min-h-[120px]">
+          <div className="relative flex justify-center items-center mb-8 min-h-[160px]">
             {/* Top left - 40² */}
-            <span className="absolute left-4 md:left-12 -top-2 text-sm md:text-base font-mono text-primary/50 animate-pulse">
+            <span className="absolute left-8 md:left-20 top-0 text-lg md:text-xl font-mono text-primary/60 animate-pulse font-semibold">
               40²
             </span>
             
             {/* Top right - Sigma notation */}
-            <span className="absolute right-4 md:right-12 -top-2 text-xs font-mono text-accent/50 animate-pulse" style={{ animationDelay: '0.3s' }}>
+            <span className="absolute right-8 md:right-20 top-0 font-mono text-accent/60 animate-pulse" style={{ animationDelay: '0.3s' }}>
               <span className="inline-flex flex-col items-center leading-none">
-                <span className="text-[7px]">40</span>
-                <span className="text-sm">Σ</span>
-                <span className="text-[7px]">k=1</span>
+                <span className="text-[10px]">40</span>
+                <span className="text-xl">Σ</span>
+                <span className="text-[10px]">k=1</span>
               </span>
-              <span className="align-middle text-[10px]">(2k-1)</span>
+              <span className="align-middle text-sm">(2k-1)</span>
             </span>
             
             {/* Left middle - Base 12 */}
-            <span className="absolute -left-2 md:left-4 top-1/2 -translate-y-1/2 text-xs font-mono text-secondary/50 animate-pulse" style={{ animationDelay: '0.6s' }}>
+            <span className="absolute left-2 md:left-8 top-1/2 -translate-y-1/2 text-base md:text-lg font-mono text-secondary/60 animate-pulse font-semibold" style={{ animationDelay: '0.6s' }}>
               B14₁₂
             </span>
             
             {/* Center - Main icon area with prime factorization */}
-            <div className="p-5 rounded-2xl bg-gradient-to-br from-primary to-accent shadow-2xl shadow-primary/30">
-              <span className="text-2xl md:text-3xl font-bold text-primary-foreground font-mono">
+            <div className="p-6 rounded-2xl bg-gradient-to-br from-primary to-accent shadow-2xl shadow-primary/30">
+              <span className="text-3xl md:text-4xl font-bold text-primary-foreground font-mono">
                 2⁶×5²
               </span>
             </div>
             
             {/* Right middle - Sum of squares */}
-            <span className="absolute -right-2 md:right-4 top-1/2 -translate-y-1/2 text-xs font-mono text-primary/50 animate-pulse" style={{ animationDelay: '0.9s' }}>
+            <span className="absolute right-2 md:right-8 top-1/2 -translate-y-1/2 text-base md:text-lg font-mono text-primary/60 animate-pulse font-semibold" style={{ animationDelay: '0.9s' }}>
               32²+24²
             </span>
             
             {/* Bottom left - Integral */}
-            <span className="absolute left-4 md:left-12 -bottom-2 text-xs font-mono text-accent/50 animate-pulse" style={{ animationDelay: '1.2s' }}>
+            <span className="absolute left-8 md:left-20 bottom-0 text-base md:text-lg font-mono text-accent/60 animate-pulse font-semibold" style={{ animationDelay: '1.2s' }}>
               ∫₀⁴⁰2x dx
             </span>
             
             {/* Bottom right - Square root */}
-            <span className="absolute right-4 md:right-12 -bottom-2 text-xs font-mono text-secondary/50 animate-pulse" style={{ animationDelay: '1.5s' }}>
+            <span className="absolute right-8 md:right-20 bottom-0 text-base md:text-lg font-mono text-secondary/60 animate-pulse font-semibold" style={{ animationDelay: '1.5s' }}>
               √2560000
             </span>
           </div>
@@ -183,7 +183,7 @@ const Home = () => {
           <p className="text-xl text-muted-foreground">The 99.9th Percentile Club</p>
         </div>
 
-        {/* Feature Cards */}
+        {/* Feature Cards - unique features only */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
           <Link to="/practice-test">
             <Card className="p-4 hover:border-primary/50 transition-colors cursor-pointer h-full">
@@ -206,26 +206,15 @@ const Home = () => {
               <p className="text-xs text-muted-foreground">Spaced repetition</p>
             </Card>
           </Link>
-          <Link to="/battle">
+          <Link to="/study">
             <Card className="p-4 hover:border-primary/50 transition-colors cursor-pointer h-full">
-              <Swords className="w-6 h-6 text-destructive mb-2" />
-              <h3 className="font-semibold text-sm">Battle</h3>
-              <p className="text-xs text-muted-foreground">Challenge friends</p>
+              <BookMarked className="w-6 h-6 text-amber-500 mb-2" />
+              <h3 className="font-semibold text-sm">Study Mode</h3>
+              <p className="text-xs text-muted-foreground">Focused practice</p>
             </Card>
           </Link>
         </div>
 
-        {/* Sign up prompt for non-logged in users */}
-        {!user && (
-          <Card className="p-4 border-2 border-dashed border-primary/30 bg-primary/5 text-center">
-            <p className="text-sm text-muted-foreground">
-              <Link to="/auth" className="text-primary font-semibold hover:underline">
-                Sign up
-              </Link>{" "}
-              to track your progress, earn achievements, and compete on leaderboards! 🎮
-            </p>
-          </Card>
-        )}
 
         {/* Stats Row - Only for logged in users */}
         {user && (
