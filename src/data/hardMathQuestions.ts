@@ -4519,5 +4519,156 @@ export const hardMathQuestions: Question[] = [
     difficulty: 'hard',
     domain: 'Advanced Algebra',
     skill: 'Entanglement entropy'
+  }),
+  // Additional user-provided math questions
+  addRating({
+    id: 'hard-math-301',
+    question: 'If f(x) = (2x^2 - 3x + 1)/(x - 1), what is f(3)?',
+    options: [
+      { letter: 'A', text: '5' },
+      { letter: 'B', text: '10' },
+      { letter: 'C', text: '8' },
+      { letter: 'D', text: '4' }
+    ],
+    correctAnswer: 'A',
+    explanation: 'Plug x=3: numerator = 2(9) - 3(3) + 1 = 18 - 9 + 1 = 10; denominator = 3 - 1 = 2; f(3) = 10/2 = 5.',
+    difficulty: 'hard',
+    domain: 'Advanced Algebra',
+    skill: 'Function Evaluation'
+  }),
+  addRating({
+    id: 'hard-math-302',
+    question: 'Solve for x: log_2(x^2 - 3x) = 3. What are the solutions?',
+    options: [
+      { letter: 'A', text: 'x = 4 or x = -2' },
+      { letter: 'B', text: 'x = 4 only' },
+      { letter: 'C', text: 'x = 8 or x = -1' },
+      { letter: 'D', text: 'x = -2 only' }
+    ],
+    correctAnswer: 'A',
+    explanation: 'Convert log to exponent: x^2 - 3x = 2^3 = 8. So x^2 - 3x - 8 = 0. Using quadratic formula or factoring: (x - 4)(x + 2) = 0, giving x = 4 or x = -2. Both solutions are valid since x^2 - 3x is positive for both.',
+    difficulty: 'hard',
+    domain: 'Advanced Algebra',
+    skill: 'Logarithmic Equations'
+  }),
+  addRating({
+    id: 'hard-math-303',
+    question: 'A circle has a radius of 5. A square is inscribed in the circle. What is the area of the square?',
+    options: [
+      { letter: 'A', text: '50' },
+      { letter: 'B', text: '100' },
+      { letter: 'C', text: '25' },
+      { letter: 'D', text: '75' }
+    ],
+    correctAnswer: 'A',
+    explanation: 'The diagonal of an inscribed square equals the diameter of the circle. Diagonal = 10. For a square with diagonal d, the side s = d/sqrt(2) = 10/sqrt(2) = 5sqrt(2). Area = s^2 = (5sqrt(2))^2 = 50.',
+    difficulty: 'hard',
+    domain: 'Geometry',
+    skill: 'Inscribed Figures'
+  }),
+  addRating({
+    id: 'hard-math-304',
+    question: 'If a/b = 3 and b/c = 4, what is a/c?',
+    options: [
+      { letter: 'A', text: '12' },
+      { letter: 'B', text: '7' },
+      { letter: 'C', text: '4/3' },
+      { letter: 'D', text: '3/4' }
+    ],
+    correctAnswer: 'A',
+    explanation: 'a/c = (a/b) × (b/c) = 3 × 4 = 12.',
+    difficulty: 'hard',
+    domain: 'Advanced Algebra',
+    skill: 'Ratio and Proportion'
+  }),
+  addRating({
+    id: 'hard-math-305',
+    question: 'The function g(x) = x^3 - 6x^2 + 11x - 6. What are all real roots?',
+    options: [
+      { letter: 'A', text: 'x = 1, 2, 3' },
+      { letter: 'B', text: 'x = 1, 6' },
+      { letter: 'C', text: 'x = 2, 3' },
+      { letter: 'D', text: 'x = -1, -2, -3' }
+    ],
+    correctAnswer: 'A',
+    explanation: 'Factor the polynomial: g(x) = (x - 1)(x - 2)(x - 3). The roots are x = 1, 2, and 3.',
+    difficulty: 'hard',
+    domain: 'Advanced Algebra',
+    skill: 'Polynomial Factoring'
+  }),
+  addRating({
+    id: 'hard-math-306',
+    question: 'A geometric sequence has first term 3 and common ratio 2. What is the sum of the first 8 terms?',
+    options: [
+      { letter: 'A', text: '765' },
+      { letter: 'B', text: '510' },
+      { letter: 'C', text: '384' },
+      { letter: 'D', text: '768' }
+    ],
+    correctAnswer: 'A',
+    explanation: 'Sum of geometric series: S = a(r^n - 1)/(r - 1) = 3(2^8 - 1)/(2 - 1) = 3(256 - 1)/1 = 3 × 255 = 765.',
+    difficulty: 'hard',
+    domain: 'Advanced Algebra',
+    skill: 'Geometric Sequences'
+  }),
+  addRating({
+    id: 'hard-math-307',
+    question: 'If x and y satisfy 2x + 3y = 12 and x^2 + y^2 = 20, what is the value of xy?',
+    options: [
+      { letter: 'A', text: '6' },
+      { letter: 'B', text: '8' },
+      { letter: 'C', text: '4' },
+      { letter: 'D', text: '10' }
+    ],
+    correctAnswer: 'A',
+    explanation: 'From 2x + 3y = 12: x = (12 - 3y)/2. Substituting into x^2 + y^2 = 20 and solving yields xy = 6.',
+    difficulty: 'hard',
+    domain: 'Advanced Algebra',
+    skill: 'Systems of Equations'
+  }),
+  addRating({
+    id: 'hard-math-308',
+    question: 'A parabola has vertex at (2, -3) and passes through (4, 5). What is its equation?',
+    options: [
+      { letter: 'A', text: 'y = 2(x - 2)^2 - 3' },
+      { letter: 'B', text: 'y = (x - 2)^2 - 3' },
+      { letter: 'C', text: 'y = 2(x + 2)^2 - 3' },
+      { letter: 'D', text: 'y = 4(x - 2)^2 - 3' }
+    ],
+    correctAnswer: 'A',
+    explanation: 'Vertex form: y = a(x - h)^2 + k = a(x - 2)^2 - 3. Plug in (4, 5): 5 = a(4 - 2)^2 - 3 = 4a - 3. So 8 = 4a, giving a = 2.',
+    difficulty: 'hard',
+    domain: 'Advanced Algebra',
+    skill: 'Quadratic Functions'
+  }),
+  addRating({
+    id: 'hard-math-309',
+    question: 'If sin(theta) + cos(theta) = sqrt(2), what is sin(2*theta)?',
+    options: [
+      { letter: 'A', text: '1' },
+      { letter: 'B', text: 'sqrt(2)' },
+      { letter: 'C', text: '0' },
+      { letter: 'D', text: '1/2' }
+    ],
+    correctAnswer: 'A',
+    explanation: 'sin(theta) + cos(theta) = sqrt(2) implies theta = 45 degrees (or pi/4). Then sin(2*theta) = sin(90 degrees) = 1.',
+    difficulty: 'hard',
+    domain: 'Trigonometry',
+    skill: 'Trigonometric Identities'
+  }),
+  addRating({
+    id: 'hard-math-310',
+    question: 'The probability of event A is 0.6 and event B is 0.5. If A and B are independent, what is P(A union B)?',
+    options: [
+      { letter: 'A', text: '0.8' },
+      { letter: 'B', text: '1.1' },
+      { letter: 'C', text: '0.7' },
+      { letter: 'D', text: '0.3' }
+    ],
+    correctAnswer: 'A',
+    explanation: 'P(A union B) = P(A) + P(B) - P(A intersection B). For independent events: P(A intersection B) = P(A) × P(B) = 0.6 × 0.5 = 0.3. So P(A union B) = 0.6 + 0.5 - 0.3 = 0.8.',
+    difficulty: 'hard',
+    domain: 'Statistics',
+    skill: 'Probability'
   })
 ];
