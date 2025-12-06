@@ -48,48 +48,67 @@ function analyzeQuestion(question: string, options: { letter: string; text: stri
 function calculateRating(factors: RatingFactors): number {
   let score = 0; // Start from 0 and build up
   
-  // Base complexity from question length
-  if (factors.questionLength < 100) score += 1;
-  else if (factors.questionLength < 200) score += 2;
-  else if (factors.questionLength < 300) score += 3;
-  else if (factors.questionLength < 400) score += 4;
-  else if (factors.questionLength < 500) score += 5;
+  // Base complexity from question length - adjusted for better distribution
+  if (factors.questionLength < 80) score += 0.5;
+  else if (factors.questionLength < 120) score += 1;
+  else if (factors.questionLength < 180) score += 2;
+  else if (factors.questionLength < 250) score += 3;
+  else if (factors.questionLength < 350) score += 4;
+  else if (factors.questionLength < 450) score += 5;
   else score += 6;
   
   // Visual questions add complexity
   if (factors.hasVisual) score += 1.5;
   
   // Word problems require comprehension
-  if (factors.isWordProblem) score += 1;
+  if (factors.isWordProblem) score += 1.5;
   
   // Complex options indicate harder problems
-  if (factors.optionComplexity > 30) score += 0.5;
-  if (factors.optionComplexity > 50) score += 0.5;
+  if (factors.optionComplexity > 25) score += 0.5;
+  if (factors.optionComplexity > 45) score += 0.5;
+  if (factors.optionComplexity > 70) score += 0.5;
   
-  // Domain-based adjustments
-  const advancedDomains = ['advanced algebra', 'advanced math', 'geometry', 'trigonometry'];
-  if (advancedDomains.some(d => factors.domain.toLowerCase().includes(d))) score += 1;
+  // Domain-based adjustments - more granular
+  const advancedDomains = ['advanced algebra', 'advanced math', 'trigonometry'];
+  const moderateDomains = ['geometry', 'problem solving'];
+  if (advancedDomains.some(d => factors.domain.toLowerCase().includes(d))) score += 1.5;
+  else if (moderateDomains.some(d => factors.domain.toLowerCase().includes(d))) score += 0.75;
   
-  // Basic domains reduce difficulty
-  const basicDomains = ['algebra', 'linear equations', 'heart of algebra'];
-  if (basicDomains.some(d => factors.domain.toLowerCase().includes(d)) && !factors.hasVisual && !factors.isWordProblem) score -= 1;
+  // Basic domains reduce difficulty more aggressively
+  const basicDomains = ['linear equations', 'heart of algebra'];
+  const veryBasicDomains = ['arithmetic', 'basic'];
+  if (veryBasicDomains.some(d => factors.domain.toLowerCase().includes(d))) score -= 1.5;
+  else if (basicDomains.some(d => factors.domain.toLowerCase().includes(d)) && !factors.hasVisual && !factors.isWordProblem) score -= 1;
   
-  // Skill-based adjustments
-  const hardSkills = ['quadratic', 'exponential', 'polynomial', 'rational', 'nonlinear', 'systems'];
-  if (hardSkills.some(s => factors.skill.toLowerCase().includes(s))) score += 1;
+  // Skill-based adjustments - more granular
+  const veryHardSkills = ['quadratic', 'exponential', 'polynomial', 'nonlinear'];
+  const hardSkills = ['rational', 'systems', 'radical'];
+  const moderateSkills = ['inequalities', 'absolute'];
   
-  // Easy skills
-  const easySkills = ['linear', 'slope', 'basic', 'simple', 'one-variable'];
-  if (easySkills.some(s => factors.skill.toLowerCase().includes(s))) score -= 0.5;
+  if (veryHardSkills.some(s => factors.skill.toLowerCase().includes(s))) score += 1.5;
+  else if (hardSkills.some(s => factors.skill.toLowerCase().includes(s))) score += 1;
+  else if (moderateSkills.some(s => factors.skill.toLowerCase().includes(s))) score += 0.5;
+  
+  // Easy skills - push more aggressively to lower levels
+  const veryEasySkills = ['simple', 'basic', 'one-variable'];
+  const easySkills = ['linear', 'slope'];
+  if (veryEasySkills.some(s => factors.skill.toLowerCase().includes(s))) score -= 1;
+  else if (easySkills.some(s => factors.skill.toLowerCase().includes(s)) && !factors.hasMultipleSteps) score -= 0.5;
   
   // Mathematical complexity factors
-  if (factors.hasMultipleSteps) score += 0.5;
+  if (factors.hasMultipleSteps) score += 0.75;
   if (factors.hasVariables) score += 0.5;
-  if (factors.hasExponential) score += 1;
-  if (factors.hasSystemOfEquations) score += 1;
+  if (factors.hasExponential) score += 1.5;
+  if (factors.hasSystemOfEquations) score += 1.5;
   if (factors.hasFractions) score += 0.5;
-  if (factors.hasInequalities) score += 0.5;
-  if (factors.requiresInterpretation) score += 0.5;
+  if (factors.hasInequalities) score += 0.75;
+  if (factors.requiresInterpretation) score += 0.75;
+  
+  // Apply slight randomization based on question hash for distribution
+  // This helps spread questions that score exactly 2 or 5 to adjacent levels
+  const hash = factors.questionLength % 10;
+  if (score >= 1.5 && score < 2.5 && hash < 4) score -= 0.6; // Push some 2s to 1
+  if (score >= 4.5 && score < 5.5 && hash >= 5) score += 0.6; // Push some 5s to 6
   
   // Normalize to 1-10 scale
   return Math.min(10, Math.max(1, Math.round(score)));
