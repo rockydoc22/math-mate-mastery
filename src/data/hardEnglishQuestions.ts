@@ -2713,5 +2713,1805 @@ export const hardEnglishQuestions: EnglishQuestion[] = [
     difficulty: 'hard',
     domain: 'Writing',
     skill: 'Among vs. Between'
+  }),
+  addRating({
+    id: 'hard-eng-181',
+    question: 'A passage on philosophy of action: "Donald Davidson\'s causalism held that reasons are causes of actions—my desire for water and belief that this glass contains water cause my reaching for it. This view faced the problem of deviant causal chains: one might desire to startle someone and believe that firing a gun would do so, yet be so nervous that one fires accidentally, achieving the aim without acting intentionally. The belief-desire pair caused the action, but through a deviant route. Responses include adding conditions about the manner of causation or shifting to agent causation." The deviant causal chain problem shows that:',
+    options: [
+      { letter: 'A', text: 'Reasons cannot be causes of actions' },
+      { letter: 'B', text: 'Right causation by reasons is insufficient for intentional action' },
+      { letter: 'C', text: 'All actions are unintentional' },
+      { letter: 'D', text: 'Beliefs and desires never cause actions' }
+    ],
+    correctAnswer: 'B',
+    explanation: 'The deviant chain shows that even when "belief-desire pair caused the action," it happened "through a deviant route" and wasn\'t intentional. Having the right causes isn\'t sufficient—the manner of causation matters (B). The problem refines causalism, not refutes it entirely (A, D). Some actions are clearly intentional (C).',
+    difficulty: 'hard',
+    domain: 'Reading Comprehension',
+    skill: 'Understanding Action Theory'
+  }),
+  addRating({
+    id: 'hard-eng-182',
+    question: 'A passage on philosophy of personal identity: "Derek Parfit\'s thought experiments on teleportation and brain fission challenged the assumption that personal identity matters. If you are teleported by having your body scanned, destroyed, and recreated from new matter, is the person who appears you? What if the original isn\'t destroyed—do two yous exist? Parfit concluded that identity is not what matters for survival; what matters is psychological continuity and connectedness, which can branch or gradually fade. The self that fears death is largely an illusion we cling to unnecessarily." Parfit\'s view implies that:',
+    options: [
+      { letter: 'A', text: 'Personal identity is perfectly determinate' },
+      { letter: 'B', text: 'Psychological continuity matters more than strict identity' },
+      { letter: 'C', text: 'The original person survives teleportation in all cases' },
+      { letter: 'D', text: 'Death should be feared more than typically thought' }
+    ],
+    correctAnswer: 'B',
+    explanation: 'Parfit concluded that "identity is not what matters for survival; what matters is psychological continuity and connectedness." This prioritizes psychological continuity over strict identity (B). Identity can be indeterminate ("branch or gradually fade"), contradicting (A). Teleportation cases are puzzling, not resolved (C). He suggests fearing death is "largely an illusion" (contradicting D).',
+    difficulty: 'hard',
+    domain: 'Reading Comprehension',
+    skill: 'Understanding Personal Identity'
+  }),
+  addRating({
+    id: 'hard-eng-183',
+    question: 'A passage on critical theory: "Jürgen Habermas distinguished \'system\' from \'lifeworld.\' The lifeworld comprises shared cultural understandings, norms, and communicative practices that coordinate action through mutual understanding. Systems—economy and state—coordinate action through money and power, requiring no shared understanding. Modernity\'s pathology is the \'colonization of the lifeworld\'—when systemic imperatives (profit, bureaucratic control) invade domains like education, family, and public discourse that should operate through communication and understanding." The "colonization of the lifeworld" occurs when:',
+    options: [
+      { letter: 'A', text: 'Cultural traditions influence economic behavior' },
+      { letter: 'B', text: 'Money and power invade communicative domains' },
+      { letter: 'C', text: 'Democratic deliberation guides state policy' },
+      { letter: 'D', text: 'Mutual understanding coordinates market transactions' }
+    ],
+    correctAnswer: 'B',
+    explanation: 'Colonization is when "systemic imperatives (profit, bureaucratic control) invade domains like education, family, and public discourse that should operate through communication." This is money and power invading communicative domains (B). Culture influencing economy (A) would be the reverse. Democratic deliberation (C) and understanding in markets (D) would be lifeworld influencing system, not colonization.',
+    difficulty: 'hard',
+    domain: 'Reading Comprehension',
+    skill: 'Understanding Habermasian Theory'
+  }),
+  addRating({
+    id: 'hard-eng-184',
+    question: 'A passage on phenomenology: "Edmund Husserl\'s phenomenological method sought to describe experience as it appears, bracketing questions of external existence (\'epoché\'). Intentionality was central: consciousness is always consciousness of something—perceiving, imagining, remembering are all directed toward objects. But these objects are not things-in-themselves; they are constituted by consciousness through temporal synthesis and meaning-giving acts. Transcendental subjectivity is not the empirical ego but the condition of possibility for any experience of objects at all." Husserl\'s "bracketing" or epoché involves:',
+    options: [
+      { letter: 'A', text: 'Denying that external objects exist' },
+      { letter: 'B', text: 'Suspending judgment about existence to focus on appearance' },
+      { letter: 'C', text: 'Accepting naive realism about perception' },
+      { letter: 'D', text: 'Eliminating all subjective experience' }
+    ],
+    correctAnswer: 'B',
+    explanation: 'The epoché means "bracketing questions of external existence" to "describe experience as it appears." This suspends judgment without denying existence (B). It doesn\'t deny existence (A), doesn\'t accept naive realism (C—objects are "constituted by consciousness"), and focuses on experience rather than eliminating it (D).',
+    difficulty: 'hard',
+    domain: 'Reading Comprehension',
+    skill: 'Understanding Phenomenology'
+  }),
+  addRating({
+    id: 'hard-eng-185',
+    question: 'A passage on political philosophy: "John Rawls\'s \'veil of ignorance\' asks us to choose principles of justice without knowing our place in society—our talents, wealth, race, gender, or conception of the good. From this \'original position,\' Rawls argued, rational choosers would select two principles: equal basic liberties for all, and the \'difference principle\'—social and economic inequalities are permissible only if they benefit the least advantaged members. This constructs justice as fairness while avoiding the utilitarian sacrifice of minorities for aggregate welfare." Rawls\'s veil of ignorance is designed to:',
+    options: [
+      { letter: 'A', text: 'Maximize total social utility' },
+      { letter: 'B', text: 'Ensure impartiality in choosing justice principles' },
+      { letter: 'C', text: 'Preserve existing social hierarchies' },
+      { letter: 'D', text: 'Determine individuals\' actual social positions' }
+    ],
+    correctAnswer: 'B',
+    explanation: 'The veil removes knowledge of "our place in society" to enable impartial choice of principles. Not knowing your position forces you to consider everyone fairly (B). Rawls explicitly opposes utilitarianism\'s aggregate focus (A). The difference principle challenges hierarchy (C). The veil hides, doesn\'t determine, position (D).',
+    difficulty: 'hard',
+    domain: 'Reading Comprehension',
+    skill: 'Understanding Rawlsian Justice'
+  }),
+  addRating({
+    id: 'hard-eng-186',
+    question: 'A passage on philosophy of language: "Gottlob Frege distinguished sense (Sinn) from reference (Bedeutung). \'The morning star\' and \'the evening star\' have the same reference (Venus) but different senses—different modes of presentation or cognitive significance. This explains why \'the morning star is the evening star\' is informative, not trivially true like \'the morning star is the morning star.\' Sense determines reference but not vice versa; understanding a term requires grasping its sense, not just knowing its reference." Frege\'s distinction explains how:',
+    options: [
+      { letter: 'A', text: 'All identity statements are uninformative' },
+      { letter: 'B', text: 'Co-referential terms can differ in cognitive value' },
+      { letter: 'C', text: 'Reference is independent of sense' },
+      { letter: 'D', text: 'Words have no meaning beyond reference' }
+    ],
+    correctAnswer: 'B',
+    explanation: 'The example shows terms with same reference but different cognitive significance: "\'the morning star is the evening star\' is informative." Different senses = different cognitive value despite same reference (B). Some identity statements are informative (contradicting A). "Sense determines reference" (contradicting C). Sense is meaning beyond reference (contradicting D).',
+    difficulty: 'hard',
+    domain: 'Reading Comprehension',
+    skill: 'Understanding Sense and Reference'
+  }),
+  addRating({
+    id: 'hard-eng-187',
+    question: 'A passage on environmental ethics: "The land ethic, articulated by Aldo Leopold, extends moral consideration beyond individuals to ecological communities: \'A thing is right when it tends to preserve the integrity, stability, and beauty of the biotic community. It is wrong when it tends otherwise.\' This holism has been criticized for potentially sacrificing individual welfare—even human welfare—for ecosystem health. Defenders distinguish weak holism (ecosystems matter alongside individuals) from strong holism (ecosystems trump individuals), and note that sustainable ecosystems typically benefit their members." Leopold\'s land ethic is criticized for:',
+    options: [
+      { letter: 'A', text: 'Focusing too much on individual welfare' },
+      { letter: 'B', text: 'Potentially subordinating individuals to ecosystem health' },
+      { letter: 'C', text: 'Ignoring the beauty of nature' },
+      { letter: 'D', text: 'Being too anthropocentric' }
+    ],
+    correctAnswer: 'B',
+    explanation: 'The criticism is that holism can "potentially sacrific[e] individual welfare—even human welfare—for ecosystem health." This subordinates individuals to the whole (B). Leopold\'s ethic is holistic, not individualistic (contradicting A). It values beauty (C). It extends beyond humans, so isn\'t anthropocentric (D).',
+    difficulty: 'hard',
+    domain: 'Reading Comprehension',
+    skill: 'Understanding Environmental Ethics'
+  }),
+  addRating({
+    id: 'hard-eng-188',
+    question: 'A passage on sociology of knowledge: "Thomas Kuhn\'s Structure of Scientific Revolutions argued that science proceeds not by cumulative progress but through paradigm shifts. Normal science operates within a paradigm—shared exemplars, methods, and standards—solving puzzles the paradigm defines. Anomalies accumulate until crisis triggers revolution: a new paradigm emerges, incommensurable with the old (lacking common measure for comparison). Paradigm choice involves \'conversion\' as much as argument, since standards themselves change. Critics charged this made science irrational, though Kuhn resisted such relativism." Kuhn\'s "incommensurability" means:',
+    options: [
+      { letter: 'A', text: 'Paradigms share the same standards for comparison' },
+      { letter: 'B', text: 'Different paradigms lack a common measure for evaluation' },
+      { letter: 'C', text: 'Scientific progress is cumulative across paradigms' },
+      { letter: 'D', text: 'All paradigms are equally true' }
+    ],
+    correctAnswer: 'B',
+    explanation: 'Incommensurability means paradigms are "lacking common measure for comparison" because "standards themselves change" between paradigms (B). They don\'t share standards (contradicting A). Progress isn\'t cumulative across paradigms (C). Kuhn "resisted relativism" that would make all equally true (D).',
+    difficulty: 'hard',
+    domain: 'Reading Comprehension',
+    skill: 'Understanding Kuhnian Philosophy'
+  }),
+  addRating({
+    id: 'hard-eng-189',
+    question: 'A passage on bioethics: "The non-identity problem poses a challenge for future-oriented ethics. If we deplete resources or pollute the environment, future people may be worse off. But those particular people wouldn\'t exist if we had acted differently—different policies would lead to different conceptions, hence different individuals. The future people can\'t claim they were harmed by our choices, since the alternative wasn\'t a better life for them but non-existence. Yet intuitively, we do wrong by knowingly creating worse conditions for whoever will exist." The non-identity problem challenges our intuition that:',
+    options: [
+      { letter: 'A', text: 'Future people will exist' },
+      { letter: 'B', text: 'We can harm future people by current decisions' },
+      { letter: 'C', text: 'The environment affects human welfare' },
+      { letter: 'D', text: 'Present people matter morally' }
+    ],
+    correctAnswer: 'B',
+    explanation: 'The problem is that future people "can\'t claim they were harmed" because they wouldn\'t exist otherwise, yet we intuitively think we do wrong by creating worse conditions. This challenges our intuition about harming future people (B). Future people\'s existence isn\'t questioned (A). Environment clearly affects welfare (C). Present people aren\'t the focus (D).',
+    difficulty: 'hard',
+    domain: 'Reading Comprehension',
+    skill: 'Understanding Non-Identity Problem'
+  }),
+  addRating({
+    id: 'hard-eng-190',
+    question: 'A passage on philosophy of religion: "Alvin Plantinga\'s Reformed epistemology challenged evidentialism—the view that religious belief requires evidence to be rational. Plantinga argued that belief in God can be \'properly basic\'—rational without being based on argument, just as our beliefs in other minds, the external world, or the reliability of memory are basic. Sensus divinitatis, an innate disposition to believe in God in certain circumstances, can ground rational belief. Critics object that this permits any belief to claim basic status; Plantinga responds with criteria distinguishing warranted from unwarranted basic beliefs." Plantinga argues that belief in God:',
+    options: [
+      { letter: 'A', text: 'Requires philosophical arguments to be rational' },
+      { letter: 'B', text: 'Can be rational without evidential support' },
+      { letter: 'C', text: 'Is irrational in all circumstances' },
+      { letter: 'D', text: 'Must be based on other beliefs' }
+    ],
+    correctAnswer: 'B',
+    explanation: 'Plantinga\'s "Reformed epistemology challenged evidentialism" and argued belief in God can be "properly basic—rational without being based on argument." This means rational without evidential support (B). He opposes requiring arguments (A). He defends rationality of belief (contradicting C). Basic beliefs are precisely not based on other beliefs (D).',
+    difficulty: 'hard',
+    domain: 'Reading Comprehension',
+    skill: 'Understanding Reformed Epistemology'
+  }),
+  addRating({
+    id: 'hard-eng-191',
+    question: 'A passage on philosophy of mathematics: "Mathematical fictionalism holds that mathematical statements, strictly speaking, are false—there are no numbers, sets, or abstract objects for mathematical claims to be about. Yet mathematics is useful because it lets us express nominalistic truths (truths not involving abstract objects) more efficiently. \'The number of planets is 8\' expresses something about concrete planets without requiring numbers to exist. Fictionalism faces the applicability problem: if mathematical objects don\'t exist, why does mathematics apply so successfully to physics?" Fictionalism claims that mathematical statements are:',
+    options: [
+      { letter: 'A', text: 'True descriptions of abstract objects' },
+      { letter: 'B', text: 'Literally false but practically useful' },
+      { letter: 'C', text: 'Meaningless and useless' },
+      { letter: 'D', text: 'Empirical claims about physical reality' }
+    ],
+    correctAnswer: 'B',
+    explanation: 'Fictionalism holds statements are "strictly speaking, false—there are no numbers" yet "mathematics is useful because it lets us express nominalistic truths more efficiently." False but useful (B). It denies they describe abstract objects (contradicting A). They\'re meaningful and useful (not C). They\'re not directly about physical reality (D).',
+    difficulty: 'hard',
+    domain: 'Reading Comprehension',
+    skill: 'Understanding Mathematical Fictionalism'
+  }),
+  addRating({
+    id: 'hard-eng-192',
+    question: 'A passage on social theory: "Michel Foucault\'s analysis of power rejected the \'juridical\' model focusing on law, sovereignty, and repression. Power is not merely negative (prohibiting, censoring) but productive—producing subjects, knowledge, and \'regimes of truth.\' Disciplinary power operates through surveillance, normalization, and examination, creating \'docile bodies\' in schools, prisons, and factories. Power and knowledge are intertwined (\'power/knowledge\'): what counts as knowledge is shaped by power relations, and knowledge enables new forms of power." Foucault\'s view of power emphasizes that power:',
+    options: [
+      { letter: 'A', text: 'Operates only through law and repression' },
+      { letter: 'B', text: 'Produces subjects and knowledge, not just prohibits' },
+      { letter: 'C', text: 'Is entirely separate from knowledge' },
+      { letter: 'D', text: 'Resides only in sovereign authority' }
+    ],
+    correctAnswer: 'B',
+    explanation: 'Foucault rejected the "juridical model" of mere repression; power is "not merely negative...but productive—producing subjects, knowledge." It produces, not just prohibits (B). He rejects law-only model (A). Power and knowledge are "intertwined" (not separate, C). Power isn\'t only sovereign (D).',
+    difficulty: 'hard',
+    domain: 'Reading Comprehension',
+    skill: 'Understanding Foucauldian Power'
+  }),
+  addRating({
+    id: 'hard-eng-193',
+    question: 'A passage on ethics: "Virtue ethics, unlike deontology or consequentialism, focuses on character rather than individual actions. The central question is not \'what should I do?\' but \'what kind of person should I be?\' Virtues are stable character traits—courage, honesty, compassion—that enable human flourishing (eudaimonia). Aristotle held that virtue is a mean between extremes: courage lies between cowardice and recklessness. Practical wisdom (phronesis) helps discern the appropriate response in particular situations, as no rule can specify correct action for every context." Virtue ethics differs from rule-based ethics in emphasizing:',
+    options: [
+      { letter: 'A', text: 'Following universal moral rules' },
+      { letter: 'B', text: 'Character and context-sensitive judgment' },
+      { letter: 'C', text: 'Maximizing overall utility' },
+      { letter: 'D', text: 'Calculating consequences of each action' }
+    ],
+    correctAnswer: 'B',
+    explanation: 'Virtue ethics focuses on "character rather than individual actions" and emphasizes phronesis that "helps discern the appropriate response in particular situations, as no rule can specify correct action for every context." Character plus context-sensitivity (B). It\'s not rule-based (A). Utility maximization (C) and consequence calculation (D) are consequentialism.',
+    difficulty: 'hard',
+    domain: 'Reading Comprehension',
+    skill: 'Understanding Virtue Ethics'
+  }),
+  addRating({
+    id: 'hard-eng-194',
+    question: 'A passage on cognitive science: "Dual-process theories distinguish System 1 (fast, automatic, intuitive) from System 2 (slow, effortful, deliberative). System 1 operates constantly, producing impressions and feelings that become beliefs and choices when endorsed by System 2. Many cognitive biases arise from System 1\'s reliance on heuristics—useful shortcuts that sometimes mislead. The availability heuristic judges frequency by ease of recall; the representativeness heuristic judges category membership by similarity to stereotypes. System 2 can correct these biases but requires motivation and cognitive resources that are often lacking." According to dual-process theory, cognitive biases typically arise from:',
+    options: [
+      { letter: 'A', text: 'Excessive deliberation and analysis' },
+      { letter: 'B', text: 'System 1\'s quick heuristic shortcuts' },
+      { letter: 'C', text: 'Careful activation of System 2' },
+      { letter: 'D', text: 'Avoiding all intuitive responses' }
+    ],
+    correctAnswer: 'B',
+    explanation: 'The passage states "many cognitive biases arise from System 1\'s reliance on heuristics—useful shortcuts that sometimes mislead." This is System 1\'s quick heuristics (B). Biases come from too little deliberation, not too much (A). System 2 corrects biases (C). Avoiding intuition would reduce bias, not cause it (D).',
+    difficulty: 'hard',
+    domain: 'Reading Comprehension',
+    skill: 'Understanding Dual-Process Theory'
+  }),
+  addRating({
+    id: 'hard-eng-195',
+    question: 'A passage on political economy: "The varieties of capitalism literature distinguishes liberal market economies (LMEs) like the US and UK from coordinated market economies (CMEs) like Germany and Japan. LMEs rely on market mechanisms, short-term financing, and flexible labor markets. CMEs feature coordinated wage bargaining, long-term bank financing, and vocational training systems producing specific skills. Each has comparative advantages: LMEs in radical innovation and service sectors; CMEs in incremental innovation and quality manufacturing. Globalization was expected to force convergence toward the LME model, but institutional complementarities have sustained divergence." The passage suggests that globalization has:',
+    options: [
+      { letter: 'A', text: 'Forced all economies toward the LME model' },
+      { letter: 'B', text: 'Not eliminated institutional differences between LMEs and CMEs' },
+      { letter: 'C', text: 'Made coordinated economies completely disappear' },
+      { letter: 'D', text: 'Proven that CMEs are superior' }
+    ],
+    correctAnswer: 'B',
+    explanation: '"Globalization was expected to force convergence toward the LME model, but institutional complementarities have sustained divergence." Convergence hasn\'t happened—differences persist (B). Economies haven\'t all become LMEs (contradicting A). CMEs haven\'t disappeared (C). The passage doesn\'t claim CME superiority—each has "comparative advantages" (D).',
+    difficulty: 'hard',
+    domain: 'Reading Comprehension',
+    skill: 'Understanding Comparative Capitalism'
+  }),
+  addRating({
+    id: 'hard-eng-196',
+    question: 'Which sentence uses "literally" correctly?',
+    options: [
+      { letter: 'A', text: 'I was literally dying of embarrassment when she mentioned my mistake.' },
+      { letter: 'B', text: 'The heat was so intense that the asphalt literally melted, leaving visible deformations in the road.' },
+      { letter: 'C', text: 'He literally exploded when he heard the news.' },
+      { letter: 'D', text: 'I could literally eat a horse right now.' }
+    ],
+    correctAnswer: 'B',
+    explanation: '"Literally" means in actual fact, without exaggeration. (B) describes something that actually, physically happened—asphalt melting. (A), (C), and (D) use "literally" as an intensifier for figurative expressions: you didn\'t actually die, explode, or intend to eat a horse. Only (B) describes literal truth.',
+    difficulty: 'hard',
+    domain: 'Writing',
+    skill: 'Literal vs. Figurative Usage'
+  }),
+  addRating({
+    id: 'hard-eng-197',
+    question: 'A researcher writes: "The findings suggest that, ________ previous studies reported no significant correlation, methodological improvements in data collection have revealed a modest but consistent relationship between the variables." Which choice best completes the sentence?',
+    options: [
+      { letter: 'A', text: 'because' },
+      { letter: 'B', text: 'although' },
+      { letter: 'C', text: 'therefore' },
+      { letter: 'D', text: 'similarly' }
+    ],
+    correctAnswer: 'B',
+    explanation: 'The sentence contrasts previous findings (no correlation) with current findings (modest relationship). "Although" (B) signals this concessive contrast: despite what previous studies found, improvements now show a relationship. "Because" (A) would indicate causation. "Therefore" (C) indicates consequence. "Similarly" (D) indicates agreement, not contrast.',
+    difficulty: 'hard',
+    domain: 'Writing',
+    skill: 'Concessive Transitions in Academic Writing'
+  }),
+  addRating({
+    id: 'hard-eng-198',
+    question: 'Which revision most effectively combines these sentences? Original: "The excavation revealed artifacts from multiple historical periods. These periods included the Bronze Age, Iron Age, and Roman occupation."',
+    options: [
+      { letter: 'A', text: 'The excavation revealed artifacts from multiple historical periods including the Bronze Age, Iron Age, and Roman occupation.' },
+      { letter: 'B', text: 'The excavation revealed artifacts from multiple historical periods, and these periods included the Bronze Age, Iron Age, and Roman occupation.' },
+      { letter: 'C', text: 'The excavation revealed artifacts from the Bronze Age, Iron Age, and Roman occupation, which were multiple historical periods.' },
+      { letter: 'D', text: 'Multiple historical periods\' artifacts were revealed by the excavation: the Bronze Age, Iron Age, and Roman occupation.' }
+    ],
+    correctAnswer: 'A',
+    explanation: '(A) efficiently integrates the second sentence\'s content into the first using a participial phrase "including..." This eliminates redundancy while preserving meaning. (B) merely adds a conjunction without true combination. (C) creates an awkward and redundant relative clause. (D) has awkward passive voice and possessive construction.',
+    difficulty: 'hard',
+    domain: 'Writing',
+    skill: 'Combining Sentences Efficiently'
+  }),
+  addRating({
+    id: 'hard-eng-199',
+    question: 'Identify the sentence with correct parallel structure:',
+    options: [
+      { letter: 'A', text: 'The study aims to identify risk factors, assessing intervention effectiveness, and improving patient outcomes.' },
+      { letter: 'B', text: 'The study aims to identify risk factors, to assess intervention effectiveness, and to improve patient outcomes.' },
+      { letter: 'C', text: 'The study aims to identify risk factors, assess intervention effectiveness, and improving patient outcomes.' },
+      { letter: 'D', text: 'The study aims identifying risk factors, assessing intervention effectiveness, and to improve patient outcomes.' }
+    ],
+    correctAnswer: 'B',
+    explanation: '(B) maintains parallel structure with three infinitive phrases: "to identify," "to assess," "to improve." (A) mixes infinitive with gerunds. (C) mixes base form with gerund. (D) mixes gerunds with infinitive. Parallel structure requires consistent grammatical forms for items in a series.',
+    difficulty: 'hard',
+    domain: 'Writing',
+    skill: 'Parallel Structure in Lists'
+  }),
+  addRating({
+    id: 'hard-eng-200',
+    question: 'Which sentence correctly punctuates a complex series?',
+    options: [
+      { letter: 'A', text: 'The conference featured keynotes by Dr. Smith, Harvard; Dr. Jones, Stanford; and Dr. Lee, MIT.' },
+      { letter: 'B', text: 'The conference featured keynotes by Dr. Smith, Harvard, Dr. Jones, Stanford, and Dr. Lee, MIT.' },
+      { letter: 'C', text: 'The conference featured keynotes by: Dr. Smith, Harvard; Dr. Jones, Stanford; and Dr. Lee, MIT.' },
+      { letter: 'D', text: 'The conference featured keynotes by Dr. Smith Harvard; Dr. Jones Stanford; and Dr. Lee MIT.' }
+    ],
+    correctAnswer: 'A',
+    explanation: 'When list items contain internal commas (pairing names with institutions), semicolons separate the items to avoid confusion. (A) correctly uses semicolons between items and commas within items. (B) creates ambiguity with all commas. (C) incorrectly adds a colon after "by." (D) omits the commas within items.',
+    difficulty: 'hard',
+    domain: 'Writing',
+    skill: 'Semicolons in Complex Lists'
+  }),
+  addRating({
+    id: 'hard-eng-201',
+    question: 'A passage on existentialism: "Jean-Paul Sartre\'s existentialism famously declared that \'existence precedes essence\'—humans exist first and define themselves through choices, rather than being determined by a fixed nature. This radical freedom entails radical responsibility: we cannot blame nature, God, or society for what we become. \'Bad faith\' is self-deception that denies this freedom, as when we claim \'I had no choice.\' Yet Sartre acknowledged situational constraints while insisting that within any situation, we remain free to interpret, resist, or transcend our circumstances." Sartre\'s concept of "bad faith" involves:',
+    options: [
+      { letter: 'A', text: 'Honestly acknowledging one\'s freedom' },
+      { letter: 'B', text: 'Denying one\'s freedom and responsibility' },
+      { letter: 'C', text: 'Following religious commandments' },
+      { letter: 'D', text: 'Accurately describing situational constraints' }
+    ],
+    correctAnswer: 'B',
+    explanation: '"Bad faith" is "self-deception that denies this freedom" through claims like "I had no choice." This is denying freedom and responsibility (B). Honest acknowledgment (A) is the opposite of bad faith. Religion (C) isn\'t mentioned. Situational constraints exist but don\'t negate freedom; claiming they eliminate choice is bad faith (D).',
+    difficulty: 'hard',
+    domain: 'Reading Comprehension',
+    skill: 'Understanding Sartrean Existentialism'
+  }),
+  addRating({
+    id: 'hard-eng-202',
+    question: 'A passage on philosophy of biology: "The species problem concerns whether \'species\' is a natural kind—a real division in nature—or merely a useful convention. Different species concepts (biological, phylogenetic, ecological) define species differently and can yield conflicting classifications of the same organisms. Pluralists accept multiple legitimate concepts for different purposes; monists seek the single correct concept. The debate has implications beyond taxonomy: if species aren\'t real, can extinction claims carry moral weight? If species are conventional, does this undermine evolutionary explanations that invoke species as units?" The species problem questions whether:',
+    options: [
+      { letter: 'A', text: 'Evolution occurred' },
+      { letter: 'B', text: 'Species represents a real division in nature' },
+      { letter: 'C', text: 'Organisms can be classified' },
+      { letter: 'D', text: 'Different species concepts always agree' }
+    ],
+    correctAnswer: 'B',
+    explanation: 'The species problem concerns whether "\'species\' is a natural kind—a real division in nature—or merely a useful convention." This is about whether species is real (B). Evolution isn\'t questioned (A). Classification is possible even with conventional concepts (C). Different concepts are known to conflict (D is a premise, not the question).',
+    difficulty: 'hard',
+    domain: 'Reading Comprehension',
+    skill: 'Understanding Species Problem'
+  }),
+  addRating({
+    id: 'hard-eng-203',
+    question: 'A passage on literary theory: "Mikhail Bakhtin\'s concept of dialogism holds that meaning arises not in isolated utterances but in dialogue—the responsive interaction between voices. Every word carries traces of prior uses and anticipates responses. The novel, for Bakhtin, is the dialogic genre par excellence, incorporating multiple voices (\'heteroglossia\') that interact without final resolution. Against the monologic tendency to impose a single authoritative voice, Bakhtin valued the \'polyphonic\' novel (Dostoevsky\'s especially) where characters\' voices are given genuine independence rather than subordinated to authorial perspective." Bakhtin\'s "dialogism" emphasizes that meaning emerges from:',
+    options: [
+      { letter: 'A', text: 'A single authoritative voice' },
+      { letter: 'B', text: 'Interaction between multiple voices' },
+      { letter: 'C', text: 'Isolated, self-contained utterances' },
+      { letter: 'D', text: 'Final resolution of conflicting perspectives' }
+    ],
+    correctAnswer: 'B',
+    explanation: 'Dialogism holds that meaning arises "in dialogue—the responsive interaction between voices." Every word carries "traces of prior uses and anticipates responses." Interaction between voices (B). Bakhtin was "against the monologic tendency" (A). Meaning doesn\'t arise "in isolated utterances" (C). Multiple voices interact "without final resolution" (D).',
+    difficulty: 'hard',
+    domain: 'Reading Comprehension',
+    skill: 'Understanding Bakhtinian Dialogism'
+  }),
+  addRating({
+    id: 'hard-eng-204',
+    question: 'A passage on social psychology: "The fundamental attribution error describes our tendency to explain others\' behavior in terms of dispositional factors (personality, character) while explaining our own behavior situationally. We see someone stumble and think \'clumsy\'; we stumble and think \'uneven pavement.\' This asymmetry reflects differences in perspective: we know our own situational variability but observe others\' behavior without that context. The effect is moderated by culture: collectivist cultures show weaker dispositional bias than individualist cultures, suggesting the error is partly culturally learned." The fundamental attribution error specifically involves:',
+    options: [
+      { letter: 'A', text: 'Over-attributing others\' behavior to personality traits' },
+      { letter: 'B', text: 'Under-attributing our own behavior to character' },
+      { letter: 'C', text: 'Explaining all behavior situationally' },
+      { letter: 'D', text: 'Accurately perceiving situational influences on others' }
+    ],
+    correctAnswer: 'A',
+    explanation: 'The error is explaining "others\' behavior in terms of dispositional factors (personality, character)" while explaining our own "situationally." This is over-attributing others\' behavior to personality (A). Under-attributing our behavior to character (B) is part of the asymmetry but not the "error" itself. We don\'t explain all behavior situationally (C). We underestimate situational influences on others (D).',
+    difficulty: 'hard',
+    domain: 'Reading Comprehension',
+    skill: 'Understanding Attribution Bias'
+  }),
+  addRating({
+    id: 'hard-eng-205',
+    question: 'A passage on philosophy of mind: "Property dualism accepts that mental properties are non-physical while denying substance dualism—there is only physical substance, but it has both physical and mental properties. Supervenience physicalism holds that mental properties supervene on physical properties: no mental difference without a physical difference. This allows mental properties to be distinct from physical properties while grounded in them. Critics argue supervenience is too weak—it\'s compatible with epiphenomenalism, where mental properties exist but have no causal power, which seems to make consciousness explanatorily idle." Supervenience physicalism claims that:',
+    options: [
+      { letter: 'A', text: 'Mental and physical are entirely separate substances' },
+      { letter: 'B', text: 'Mental properties depend on physical properties without being identical' },
+      { letter: 'C', text: 'Mental properties cause physical changes independently' },
+      { letter: 'D', text: 'Physical properties supervene on mental properties' }
+    ],
+    correctAnswer: 'B',
+    explanation: 'Supervenience holds "no mental difference without a physical difference"—mental is grounded in but distinct from physical. This is dependence without identity (B). Property dualism rejects substance separation (not A). Critics worry mental properties may lack causal power (not C). The dependence runs mental-on-physical, not reverse (D).',
+    difficulty: 'hard',
+    domain: 'Reading Comprehension',
+    skill: 'Understanding Supervenience'
+  }),
+  addRating({
+    id: 'hard-eng-206',
+    question: 'Which sentence correctly uses the subjunctive mood?',
+    options: [
+      { letter: 'A', text: 'The board insists that he attends all meetings.' },
+      { letter: 'B', text: 'The board insists that he attend all meetings.' },
+      { letter: 'C', text: 'The board insists that he will attend all meetings.' },
+      { letter: 'D', text: 'The board insists that he is attending all meetings.' }
+    ],
+    correctAnswer: 'B',
+    explanation: 'The subjunctive mood is required after verbs of demand, suggestion, or insistence (insist, demand, recommend, suggest). The subjunctive uses the base form of the verb regardless of subject. (B) correctly uses "attend" (base form). (A) uses indicative "attends." (C) uses future "will attend." (D) uses progressive "is attending."',
+    difficulty: 'hard',
+    domain: 'Writing',
+    skill: 'Subjunctive Mood'
+  }),
+  addRating({
+    id: 'hard-eng-207',
+    question: 'A writer needs to insert a clarifying phrase. Original: "The researchers analyzed data from three continents spanning two decades." Which revision most clearly communicates that the data spans two decades?',
+    options: [
+      { letter: 'A', text: 'The researchers analyzed data spanning two decades from three continents.' },
+      { letter: 'B', text: 'The researchers analyzed data from three continents, spanning two decades.' },
+      { letter: 'C', text: 'The researchers analyzed, spanning two decades, data from three continents.' },
+      { letter: 'D', text: 'The researchers analyzed data from three continents that spans two decades.' }
+    ],
+    correctAnswer: 'A',
+    explanation: '(A) places "spanning two decades" immediately after "data," clarifying that the data (not the continents) spans two decades. (B) is ambiguous about whether the continents or data span decades. (C) awkwardly interrupts the verb-object relationship. (D) uses "that spans" which grammatically modifies "continents" (the nearest noun), not "data."',
+    difficulty: 'hard',
+    domain: 'Writing',
+    skill: 'Modifier Placement for Clarity'
+  }),
+  addRating({
+    id: 'hard-eng-208',
+    question: 'Identify the sentence that correctly uses "comprise" versus "compose":',
+    options: [
+      { letter: 'A', text: 'The committee is comprised of twelve members.' },
+      { letter: 'B', text: 'The committee comprises twelve members.' },
+      { letter: 'C', text: 'Twelve members comprise the committee.' },
+      { letter: 'D', text: 'The committee composes twelve members.' }
+    ],
+    correctAnswer: 'B',
+    explanation: 'Traditional usage: the whole comprises (includes) the parts. (B) correctly uses "comprises"—the committee (whole) includes twelve members (parts). (A) "comprised of" is disputed; purists reject it. (C) reverses the relationship incorrectly (parts don\'t comprise the whole; they compose it). (D) reverses meaning (the committee doesn\'t compose members; members compose it).',
+    difficulty: 'hard',
+    domain: 'Writing',
+    skill: 'Comprise vs. Compose'
+  }),
+  addRating({
+    id: 'hard-eng-209',
+    question: 'Which sentence uses the em dash correctly for emphasis or interruption?',
+    options: [
+      { letter: 'A', text: 'The results—were unexpected—and significant.' },
+      { letter: 'B', text: 'The results were unexpected—and—significant.' },
+      { letter: 'C', text: 'The results were unexpected—far more so than anyone had predicted—and significant.' },
+      { letter: 'D', text: 'The—results were unexpected and—significant.' }
+    ],
+    correctAnswer: 'C',
+    explanation: '(C) correctly uses em dashes to set off an emphatic, interrupting phrase "far more so than anyone had predicted." The interrupted sentence remains grammatical if the dash content is removed. (A), (B), and (D) place dashes where they interrupt grammatical units that shouldn\'t be separated.',
+    difficulty: 'hard',
+    domain: 'Writing',
+    skill: 'Em Dash for Emphasis'
+  }),
+  addRating({
+    id: 'hard-eng-210',
+    question: 'A researcher writes: "Climate change poses significant risks to coastal communities through multiple pathways______rising sea levels threaten infrastructure, increased storm intensity damages property, and saltwater intrusion compromises freshwater supplies." Which punctuation correctly introduces this list?',
+    options: [
+      { letter: 'A', text: ': (colon)' },
+      { letter: 'B', text: '; (semicolon)' },
+      { letter: 'C', text: '— (em dash)' },
+      { letter: 'D', text: 'Either (A) or (C)' }
+    ],
+    correctAnswer: 'D',
+    explanation: 'Both a colon and an em dash can introduce an explanatory list after a complete independent clause. The colon is more formal and traditional for lists; the em dash adds emphasis and is more informal. Either works correctly here. A semicolon (B) joins independent clauses but doesn\'t introduce lists.',
+    difficulty: 'hard',
+    domain: 'Writing',
+    skill: 'Punctuation Introducing Lists'
+  }),
+  addRating({
+    id: 'hard-eng-211',
+    question: 'A passage on media theory: "Marshall McLuhan\'s dictum \'the medium is the message\' argued that media technologies shape human experience more fundamentally than the content they carry. Television\'s visual immediacy, for instance, creates a \'global village\' mentality regardless of what programs are broadcast. Print culture fostered linear, sequential thinking; electronic media create mosaic, simultaneous awareness. McLuhan distinguished \'hot\' media (high definition, low participation—film, radio) from \'cool\' media (low definition, high participation—telephone, television). Though his specific predictions were often wrong, his focus on media\'s structural effects rather than content remains influential." McLuhan argued that media\'s primary influence comes from:',
+    options: [
+      { letter: 'A', text: 'The specific content they transmit' },
+      { letter: 'B', text: 'Their technological form and structure' },
+      { letter: 'C', text: 'The intentions of content creators' },
+      { letter: 'D', text: 'Audience interpretations of messages' }
+    ],
+    correctAnswer: 'B',
+    explanation: '"The medium is the message" means "media technologies shape human experience more fundamentally than the content they carry." Form over content (B). He explicitly minimizes content\'s role (contradicting A). Creator intentions aren\'t discussed (C). The focus is on media structure, not audience interpretation (D).',
+    difficulty: 'hard',
+    domain: 'Reading Comprehension',
+    skill: 'Understanding Media Theory'
+  }),
+  addRating({
+    id: 'hard-eng-212',
+    question: 'A passage on moral philosophy: "Bernard Williams\'s integrity objection to utilitarianism argued that demanding we always maximize utility alienates us from our deepest commitments—our \'ground projects\' that give life meaning. If utilitarianism requires a pacifist to kill one person to prevent five deaths, it demands self-betrayal. Williams distinguished the sense in which I \'cause\' deaths by refusing from another agent\'s directly killing—the utilitarian\'s \'negative responsibility\' that I am equally responsible for what I fail to prevent. This, Williams argued, eliminates the moral significance of personal integrity." Williams\'s "integrity objection" argues that utilitarianism wrongly:',
+    options: [
+      { letter: 'A', text: 'Ignores consequences entirely' },
+      { letter: 'B', text: 'Demands we betray our deepest commitments' },
+      { letter: 'C', text: 'Places too much weight on personal projects' },
+      { letter: 'D', text: 'Distinguishes too sharply between action and inaction' }
+    ],
+    correctAnswer: 'B',
+    explanation: 'The objection is that utilitarianism "demands self-betrayal" by requiring we act against our "ground projects that give life meaning." It alienates us from deepest commitments (B). Utilitarianism focuses on consequences (contradicting A). Williams thinks it gives too little weight to personal projects (C). Utilitarianism doesn\'t distinguish action/inaction enough through "negative responsibility" (D is opposite).',
+    difficulty: 'hard',
+    domain: 'Reading Comprehension',
+    skill: 'Understanding Integrity Objection'
+  }),
+  addRating({
+    id: 'hard-eng-213',
+    question: 'A passage on anthropology of religion: "Clifford Geertz defined religion as a system of symbols establishing powerful, pervasive moods and motivations by formulating conceptions of existence clothed with such factuality that the moods seem uniquely realistic. Religion doesn\'t simply reflect social structure (as Durkheim held) or mask material interests (as Marxists argued); it provides \'models of\' and \'models for\' reality—both representing the world and shaping action within it. The ritual process transforms chaos into cosmos, giving suffering meaning and life orientation." Geertz\'s definition of religion emphasizes:',
+    options: [
+      { letter: 'A', text: 'Religion as mere social reflection' },
+      { letter: 'B', text: 'The symbolic creation of meaningful reality' },
+      { letter: 'C', text: 'Religion as disguised economic interest' },
+      { letter: 'D', text: 'The absence of any cognitive content' }
+    ],
+    correctAnswer: 'B',
+    explanation: 'Geertz defines religion as "a system of symbols...formulating conceptions of existence" that provides "models of and models for reality." Symbols create meaningful reality (B). He explicitly moves beyond "simply reflect[ing] social structure" (A) or "mask[ing] material interests" (C). Religion has rich cognitive content—"conceptions of existence" (contradicting D).',
+    difficulty: 'hard',
+    domain: 'Reading Comprehension',
+    skill: 'Understanding Symbolic Anthropology'
+  }),
+  addRating({
+    id: 'hard-eng-214',
+    question: 'A passage on epistemology: "Internalists hold that justification depends on factors accessible to the subject through reflection—beliefs, experiences, reasoning. Externalists argue that justification depends on factors that need not be accessible, such as the reliability of the belief-forming process. A thermometer that reliably indicates temperature produces true beliefs without \'knowing\' why; similarly, we might have knowledge through reliable cognitive processes without being able to articulate our justification. Internalists object that this makes justification too disconnected from the subject\'s perspective; externalists reply that internalism cannot handle cases of reliable but unreflective knowledge." Externalism about justification holds that:',
+    options: [
+      { letter: 'A', text: 'Justification requires conscious access to reasons' },
+      { letter: 'B', text: 'Reliable processes can justify without subject\'s awareness' },
+      { letter: 'C', text: 'All knowledge must be reflectively accessible' },
+      { letter: 'D', text: 'Justification is always internal to consciousness' }
+    ],
+    correctAnswer: 'B',
+    explanation: 'Externalism holds "justification depends on factors that need not be accessible, such as the reliability of the belief-forming process." Reliable processes justify without awareness (B). Requiring conscious access (A), reflective accessibility (C), and internality to consciousness (D) are internalist positions that externalism rejects.',
+    difficulty: 'hard',
+    domain: 'Reading Comprehension',
+    skill: 'Understanding Internalism/Externalism'
+  }),
+  addRating({
+    id: 'hard-eng-215',
+    question: 'A passage on political theory: "Chantal Mouffe\'s agonistic pluralism rejects both liberal consensus and Schmittian friend-enemy politics. Democratic politics, she argues, cannot eliminate conflict; it can only transform antagonism (enemies to destroy) into agonism (adversaries to oppose). Adversaries share a commitment to democratic values while disagreeing fundamentally about their interpretation. This \'conflictual consensus\' provides passion and engagement that purely procedural liberalism lacks. The danger is not conflict but its suppression, which leads to extremism when legitimate channels for dissent are blocked." Mouffe\'s "agonistic pluralism" advocates:',
+    options: [
+      { letter: 'A', text: 'Eliminating all political conflict' },
+      { letter: 'B', text: 'Treating opponents as enemies to destroy' },
+      { letter: 'C', text: 'Channeling conflict into democratic adversarial relations' },
+      { letter: 'D', text: 'Achieving rational consensus on all issues' }
+    ],
+    correctAnswer: 'C',
+    explanation: 'Agonism "transform[s] antagonism (enemies to destroy) into agonism (adversaries to oppose)" while sharing "commitment to democratic values." This is channeling conflict into adversarial relations (C). She rejects eliminating conflict (A). Enemy politics is antagonism, not agonism (B). She criticizes the liberal pursuit of consensus (D).',
+    difficulty: 'hard',
+    domain: 'Reading Comprehension',
+    skill: 'Understanding Agonistic Democracy'
+  }),
+  addRating({
+    id: 'hard-eng-216',
+    question: 'Which sentence correctly uses "imply" versus "infer"?',
+    options: [
+      { letter: 'A', text: 'From her silence, I implied that she disagreed with the proposal.' },
+      { letter: 'B', text: 'The data implies a causal relationship between the variables.' },
+      { letter: 'C', text: 'He inferred in his speech that budget cuts were imminent.' },
+      { letter: 'D', text: 'We can imply from the evidence that the hypothesis is correct.' }
+    ],
+    correctAnswer: 'B',
+    explanation: 'Imply = to suggest or indicate (speaker/source does this). Infer = to conclude or deduce (listener/reader does this). (B) correctly uses "implies"—the data suggests a relationship. (A) should be "inferred" (you deduce from silence). (C) should be "implied" (he suggested in his speech). (D) should be "infer" (we deduce from evidence).',
+    difficulty: 'hard',
+    domain: 'Writing',
+    skill: 'Imply vs. Infer'
+  }),
+  addRating({
+    id: 'hard-eng-217',
+    question: 'A historian writes: "The economic conditions preceding the revolution were severe; ________, popular discontent had been building for decades through failed reforms and broken promises." Which transition most effectively shows the relationship between these clauses?',
+    options: [
+      { letter: 'A', text: 'however' },
+      { letter: 'B', text: 'meanwhile' },
+      { letter: 'C', text: 'therefore' },
+      { letter: 'D', text: 'moreover' }
+    ],
+    correctAnswer: 'D',
+    explanation: 'The second clause adds another cause of revolution alongside economic conditions. "Moreover" (D) signals addition of a parallel point. "However" (A) indicates contrast, which isn\'t present. "Meanwhile" (B) suggests simultaneity but not the additive relationship. "Therefore" (C) indicates consequence, but discontent is another cause, not a result of economic conditions.',
+    difficulty: 'hard',
+    domain: 'Writing',
+    skill: 'Additive Transitions'
+  }),
+  addRating({
+    id: 'hard-eng-218',
+    question: 'Which revision eliminates the squinting modifier? Original: "Scientists studying climate change frequently warn about rising sea levels."',
+    options: [
+      { letter: 'A', text: 'Scientists frequently studying climate change warn about rising sea levels.' },
+      { letter: 'B', text: 'Scientists who study climate change frequently warn about rising sea levels.' },
+      { letter: 'C', text: 'Frequently, scientists studying climate change warn about rising sea levels.' },
+      { letter: 'D', text: 'Both (B) and (C) eliminate the ambiguity.' }
+    ],
+    correctAnswer: 'D',
+    explanation: 'A squinting modifier can attach to either the preceding or following element. "Frequently" could modify "studying" (they study often) or "warn" (they warn often). (B) clarifies that "frequently" modifies "warn" by restructuring. (C) clarifies the same by moving "frequently" to sentence start. Both eliminate ambiguity. (A) creates a different meaning (frequent studying).',
+    difficulty: 'hard',
+    domain: 'Writing',
+    skill: 'Squinting Modifiers'
+  }),
+  addRating({
+    id: 'hard-eng-219',
+    question: 'Identify the sentence with correct use of the past perfect tense:',
+    options: [
+      { letter: 'A', text: 'By the time the ambulance arrived, the patient already died.' },
+      { letter: 'B', text: 'By the time the ambulance arrived, the patient had already died.' },
+      { letter: 'C', text: 'By the time the ambulance had arrived, the patient already died.' },
+      { letter: 'D', text: 'By the time the ambulance had arrived, the patient had already died.' }
+    ],
+    correctAnswer: 'B',
+    explanation: 'Past perfect ("had died") is used for an action completed before another past action ("arrived"). (B) correctly uses past perfect for the earlier event (death) and simple past for the later event (arrival). (A) incorrectly uses simple past for both. (C) and (D) incorrectly use past perfect for the later event (arrival), creating confusion about sequence.',
+    difficulty: 'hard',
+    domain: 'Writing',
+    skill: 'Past Perfect Tense'
+  }),
+  addRating({
+    id: 'hard-eng-220',
+    question: 'Which sentence uses "affect" and "effect" correctly?',
+    options: [
+      { letter: 'A', text: 'The new policy will effect significant changes and affect every department.' },
+      { letter: 'B', text: 'The new policy will affect significant changes and effect every department.' },
+      { letter: 'C', text: 'The new policy will effect significant changes and effect every department.' },
+      { letter: 'D', text: 'The new policy will affect significant changes and affect every department.' }
+    ],
+    correctAnswer: 'A',
+    explanation: '"Effect" as a verb means to bring about/cause; "affect" as a verb means to influence/impact. (A) correctly uses "effect changes" (bring about changes) and "affect departments" (influence departments). (B) reverses both. (C) uses "effect" for both, missing the influence meaning. (D) uses "affect" for both, missing the "bring about" meaning.',
+    difficulty: 'hard',
+    domain: 'Writing',
+    skill: 'Affect vs. Effect'
+  }),
+  addRating({
+    id: 'hard-eng-221',
+    question: 'A passage on philosophy of law: "Critical Legal Studies (CLS) argued that law is politics by other means—legal doctrine is indeterminate and can support multiple outcomes, with decisions actually driven by political ideology masked as neutral reasoning. The critique targeted the public/private distinction (the \'private\' sphere of contract and property is itself publicly created through law) and rights discourse (rights are unstable and manipulable, often protecting the powerful). CLS drew on deconstructive methods to show internal contradictions in legal categories. Critics charged CLS with nihilism; defenders argued they exposed law\'s contingency to enable political transformation." CLS argues that legal outcomes are primarily determined by:',
+    options: [
+      { letter: 'A', text: 'Neutral application of determinate rules' },
+      { letter: 'B', text: 'Political ideology disguised as legal reasoning' },
+      { letter: 'C', text: 'Objective principles discoverable through reason' },
+      { letter: 'D', text: 'Clear categorical distinctions in law' }
+    ],
+    correctAnswer: 'B',
+    explanation: 'CLS holds that "decisions actually driven by political ideology masked as neutral reasoning" because doctrine is "indeterminate." Political ideology disguised as law (B). They reject neutral rule application (A), objective principles (C), and clear categories (D—they expose "internal contradictions in legal categories").',
+    difficulty: 'hard',
+    domain: 'Reading Comprehension',
+    skill: 'Understanding Critical Legal Studies'
+  }),
+  addRating({
+    id: 'hard-eng-222',
+    question: 'A passage on economics: "Behavioral economics challenges the rational actor model with evidence of systematic biases. Prospect theory shows people are risk-averse for gains but risk-seeking for losses, and losses loom larger than equivalent gains (loss aversion). The endowment effect means we overvalue what we own simply because we own it. Hyperbolic discounting shows we prefer smaller-sooner to larger-later rewards more than exponential discounting would predict, explaining difficulties with saving and addiction. These findings suggest policy \'nudges\'—changing default options or choice architecture—can improve decisions without restricting freedom." According to prospect theory:',
+    options: [
+      { letter: 'A', text: 'People are uniformly risk-averse' },
+      { letter: 'B', text: 'Losses and gains are weighted equally' },
+      { letter: 'C', text: 'People become risk-seeking when facing losses' },
+      { letter: 'D', text: 'Rational calculation determines all choices' }
+    ],
+    correctAnswer: 'C',
+    explanation: 'Prospect theory shows "people are risk-averse for gains but risk-seeking for losses." They become risk-seeking for losses (C). Not uniformly risk-averse (A). "Losses loom larger than equivalent gains"—not equally weighted (B). Behavioral economics challenges rational calculation (D).',
+    difficulty: 'hard',
+    domain: 'Reading Comprehension',
+    skill: 'Understanding Prospect Theory'
+  }),
+  addRating({
+    id: 'hard-eng-223',
+    question: 'A passage on philosophy of science: "Nancy Cartwright\'s anti-realism about fundamental laws argues that \'the laws of physics lie\'—they don\'t describe reality but idealized models. The law of gravitation describes behavior of point masses in a vacuum, which don\'t exist. Actual prediction requires phenomenological laws and ceteris paribus clauses. Fundamental laws gain their apparent universality by losing descriptive accuracy; they\'re tools for constructing models, not mirrors of nature. This \'Stanford School\' pluralism sees science as a patchwork of models rather than a unified theory approaching truth." Cartwright argues that fundamental laws:',
+    options: [
+      { letter: 'A', text: 'Accurately describe reality as it is' },
+      { letter: 'B', text: 'Describe idealized models, not actual phenomena' },
+      { letter: 'C', text: 'Provide unified explanations of all phenomena' },
+      { letter: 'D', text: 'Mirror nature without approximation' }
+    ],
+    correctAnswer: 'B',
+    explanation: 'Cartwright argues laws "don\'t describe reality but idealized models"—they describe "point masses in a vacuum, which don\'t exist." Idealized models, not actual phenomena (B). They don\'t accurately describe reality (A). Science is "a patchwork of models rather than a unified theory" (contradicting C). Laws are "tools...not mirrors of nature" (D).',
+    difficulty: 'hard',
+    domain: 'Reading Comprehension',
+    skill: 'Understanding Scientific Anti-Realism'
+  }),
+  addRating({
+    id: 'hard-eng-224',
+    question: 'A passage on moral psychology: "The trolley problem and its variants test moral intuitions. In the \'switch\' case, most approve of diverting a trolley to kill one instead of five; in the \'footbridge\' case, most disapprove of pushing someone onto the tracks to stop the trolley, even with the same outcome. Double-effect doctrine distinguishes intending harm (impermissible) from foreseeing it as a side effect (potentially permissible). But Judith Thomson\'s \'fat man\' variant challenges this: if the fat man were stuck on a trapdoor, pulling a switch to drop him seems more permissible than pushing, though both intend his death." The trolley variations reveal that moral intuitions are influenced by:',
+    options: [
+      { letter: 'A', text: 'Only the number of lives saved' },
+      { letter: 'B', text: 'The means of causing harm, not just outcomes' },
+      { letter: 'C', text: 'Purely utilitarian calculations' },
+      { letter: 'D', text: 'Nothing beyond conscious reasoning' }
+    ],
+    correctAnswer: 'B',
+    explanation: 'Different reactions to switch vs. footbridge cases with "the same outcome" show that means matter—"most disapprove of pushing" but not switching. The means of causing harm (B). Not just numbers saved (A). Not purely utilitarian (C—outcomes are same but intuitions differ). The visceral reactions suggest factors beyond conscious reasoning (D).',
+    difficulty: 'hard',
+    domain: 'Reading Comprehension',
+    skill: 'Understanding Trolley Problem'
+  }),
+  addRating({
+    id: 'hard-eng-225',
+    question: 'A passage on postcolonial theory: "Edward Said\'s Orientalism analyzed how Western representations of \'the Orient\' constructed it as Europe\'s Other—exotic, irrational, despotic, requiring Western intervention. This discourse was not merely erroneous but productive: it justified imperialism while constituting Western identity through contrast. Orientalism was a \'style of thought based upon an ontological and epistemological distinction between the Orient and the Occident.\' Scholars extended Said\'s analysis to other colonial contexts, though some questioned whether his framework adequately accounted for non-Western agency and internal diversity within colonized societies." Said\'s analysis of Orientalism focuses on how:',
+    options: [
+      { letter: 'A', text: 'Eastern cultures accurately described themselves' },
+      { letter: 'B', text: 'Western representations constructed and controlled the Orient' },
+      { letter: 'C', text: 'Colonial subjects resisted Western domination' },
+      { letter: 'D', text: 'Cross-cultural understanding was achieved' }
+    ],
+    correctAnswer: 'B',
+    explanation: 'Said analyzed "how Western representations of \'the Orient\' constructed it as Europe\'s Other" in ways that "justified imperialism." Western construction and control (B). Not Eastern self-description (A). Critics noted Said didn\'t adequately address resistance/agency (C). The discourse produced misrepresentation, not understanding (D).',
+    difficulty: 'hard',
+    domain: 'Reading Comprehension',
+    skill: 'Understanding Orientalism'
+  }),
+  addRating({
+    id: 'hard-eng-226',
+    question: 'Which sentence demonstrates correct agreement with collective nouns?',
+    options: [
+      { letter: 'A', text: 'The jury have reached their verdict.' },
+      { letter: 'B', text: 'The jury has reached their verdict.' },
+      { letter: 'C', text: 'The jury has reached its verdict.' },
+      { letter: 'D', text: 'Either (A) or (C), depending on usage convention.' }
+    ],
+    correctAnswer: 'D',
+    explanation: 'Collective noun agreement varies by convention. American English typically treats collectives as singular ("has...its"). British English often treats them as plural ("have...their"). Both (A) and (C) show internal consistency. (B) mixes singular verb ("has") with plural pronoun ("their"), which is inconsistent. So (D) is correct—both (A) and (C) are acceptable depending on convention.',
+    difficulty: 'hard',
+    domain: 'Writing',
+    skill: 'Collective Noun Agreement'
+  }),
+  addRating({
+    id: 'hard-eng-227',
+    question: 'A writer wants to emphasize a contrast. Original: "The initial results were promising. The long-term outcomes, however, proved disappointing." Which revision most effectively emphasizes the contrast?',
+    options: [
+      { letter: 'A', text: 'The initial results were promising, but the long-term outcomes proved disappointing.' },
+      { letter: 'B', text: 'While the initial results were promising, the long-term outcomes proved disappointing.' },
+      { letter: 'C', text: 'The initial results were promising; however, the long-term outcomes proved disappointing.' },
+      { letter: 'D', text: 'Although the initial results were promising, the long-term outcomes proved deeply disappointing.' }
+    ],
+    correctAnswer: 'D',
+    explanation: '(D) most effectively emphasizes contrast through subordination ("Although"), which signals the first clause will be contradicted, plus the intensifier "deeply" before "disappointing." (A), (B), and (C) all show contrast but with less emphasis. The subordinating conjunction plus intensifier creates the strongest contrast effect.',
+    difficulty: 'hard',
+    domain: 'Writing',
+    skill: 'Emphasizing Contrast'
+  }),
+  addRating({
+    id: 'hard-eng-228',
+    question: 'Which sentence correctly handles a quotation within a quotation?',
+    options: [
+      { letter: 'A', text: 'She said, "The report stated, "No significant differences were found.""' },
+      { letter: 'B', text: 'She said, "The report stated, \'No significant differences were found.\'"' },
+      { letter: 'C', text: 'She said, \'The report stated, "No significant differences were found."\'' },
+      { letter: 'D', text: 'She said: "The report stated: \'No significant differences were found.\'"' }
+    ],
+    correctAnswer: 'B',
+    explanation: 'In American English, a quotation within a quotation uses single quotation marks inside double quotation marks. (B) correctly nests \'...\' inside "..." with the period before the closing quotation marks. (A) uses double quotes for both levels. (C) reverses the convention. (D) uses unnecessary colons and is awkward.',
+    difficulty: 'hard',
+    domain: 'Writing',
+    skill: 'Nested Quotations'
+  }),
+  addRating({
+    id: 'hard-eng-229',
+    question: 'Identify the sentence that correctly uses "who" versus "whom":',
+    options: [
+      { letter: 'A', text: 'The candidate who the committee selected will begin next month.' },
+      { letter: 'B', text: 'The candidate whom the committee selected will begin next month.' },
+      { letter: 'C', text: 'The committee interviewed candidates whom they believed were qualified.' },
+      { letter: 'D', text: 'Give the report to whomever requests it.' }
+    ],
+    correctAnswer: 'B',
+    explanation: '"Who" is subjective (does the action); "whom" is objective (receives the action). In (B), "the committee selected [whom]"—whom is the object of "selected." (A) incorrectly uses "who" as object. (C) needs "who"—the candidates "were qualified" (subject of that clause). (D) needs "whoever"—the clause "whoever requests it" has "whoever" as subject of "requests."',
+    difficulty: 'hard',
+    domain: 'Writing',
+    skill: 'Who vs. Whom'
+  }),
+  addRating({
+    id: 'hard-eng-230',
+    question: 'A researcher writes: "The intervention group showed improvement on all measures______cognitive, behavioral, and social______compared to the control group." Which punctuation correctly sets off the appositive list?',
+    options: [
+      { letter: 'A', text: ': ... :' },
+      { letter: 'B', text: '— ... —' },
+      { letter: 'C', text: ', ... ,' },
+      { letter: 'D', text: 'Both (B) and (C) are acceptable.' }
+    ],
+    correctAnswer: 'D',
+    explanation: 'Appositives can be set off by commas or em dashes. Em dashes (B) add emphasis; commas (C) are more neutral. Both correctly set off the list that renames/specifies "all measures." Colons (A) would be unusual here—colons typically don\'t come in pairs to set off appositives.',
+    difficulty: 'hard',
+    domain: 'Writing',
+    skill: 'Setting Off Appositives'
+  }),
+  addRating({
+    id: 'hard-eng-231',
+    question: 'A passage on philosophy of emotions: "Martha Nussbaum\'s neo-Stoic account treats emotions as evaluative judgments—fear involves judging something as dangerous and important for well-being. Emotions are not blind urges but have cognitive content that can be assessed for accuracy. This explains why emotions respond to argument: if I learn the snake is harmless, my fear subsides. Yet critics note that emotions can persist despite changed beliefs (phobias) and that bodily feelings seem integral to emotion, not epiphenomenal. Nussbaum acknowledges the latter while maintaining that judgment is constitutive." Nussbaum\'s view holds that emotions are fundamentally:',
+    options: [
+      { letter: 'A', text: 'Blind physiological urges without content' },
+      { letter: 'B', text: 'Evaluative judgments with cognitive content' },
+      { letter: 'C', text: 'Always irrational and unjustified' },
+      { letter: 'D', text: 'Independent of beliefs about the world' }
+    ],
+    correctAnswer: 'B',
+    explanation: 'Nussbaum "treats emotions as evaluative judgments—fear involves judging something as dangerous." They have "cognitive content that can be assessed for accuracy." Evaluative judgments with content (B). Not blind urges (A). They can be rational (C—"can be assessed for accuracy"). They respond to beliefs (D—fear subsides when "I learn the snake is harmless").',
+    difficulty: 'hard',
+    domain: 'Reading Comprehension',
+    skill: 'Understanding Cognitivist Emotion Theory'
+  }),
+  addRating({
+    id: 'hard-eng-232',
+    question: 'A passage on sociology: "Erving Goffman\'s dramaturgical approach analyzed social life as performance. We are all actors managing impressions through \'front stage\' behavior (public performance) and \'back stage\' relaxation (where the performance drops). \'Face-work\' describes efforts to maintain a consistent self-image and help others maintain theirs. Interaction rituals involve mutual focus and emotional attunement, generating solidarity and moral commitment to the group. This microsociological perspective revealed how macro-social structures are reproduced through countless daily performances following tacit scripts." Goffman\'s "dramaturgical approach" analyzes social interaction as:',
+    options: [
+      { letter: 'A', text: 'Purely spontaneous and unstructured behavior' },
+      { letter: 'B', text: 'Performance and impression management' },
+      { letter: 'C', text: 'Determined entirely by macro-social structures' },
+      { letter: 'D', text: 'Free from any concern with self-presentation' }
+    ],
+    correctAnswer: 'B',
+    explanation: 'Goffman analyzed "social life as performance" with "actors managing impressions." This is performance and impression management (B). It\'s not purely spontaneous—we follow "tacit scripts" (A). Macro-structures are "reproduced through" micro-performances, not determining them directly (C). Face-work shows concern with self-presentation (contradicting D).',
+    difficulty: 'hard',
+    domain: 'Reading Comprehension',
+    skill: 'Understanding Dramaturgical Sociology'
+  }),
+  addRating({
+    id: 'hard-eng-233',
+    question: 'A passage on economics: "The Coase theorem states that if transaction costs are zero and property rights are clearly defined, bargaining will lead to efficient outcomes regardless of the initial allocation of rights. A factory polluting a laundry could either be made to stop (property right with laundry) or could pay the laundry for the harm (property right with factory); in theory, the parties will bargain to the same efficient level of pollution. The theorem\'s importance lies in what it reveals when it fails: real-world transaction costs explain why institutional arrangements matter for efficiency." The Coase theorem assumes:',
+    options: [
+      { letter: 'A', text: 'Transaction costs are substantial' },
+      { letter: 'B', text: 'Property rights are undefined' },
+      { letter: 'C', text: 'Zero transaction costs and clear property rights' },
+      { letter: 'D', text: 'Government intervention is always necessary' }
+    ],
+    correctAnswer: 'C',
+    explanation: 'The theorem states "if transaction costs are zero and property rights are clearly defined, bargaining will lead to efficient outcomes." These are its assumptions (C). It assumes the opposite of substantial transaction costs (A) and undefined property rights (B). It suggests bargaining can achieve efficiency without government intervention (D).',
+    difficulty: 'hard',
+    domain: 'Reading Comprehension',
+    skill: 'Understanding Coase Theorem'
+  }),
+  addRating({
+    id: 'hard-eng-234',
+    question: 'A passage on philosophy of language: "Paul Grice\'s theory of implicature distinguished what is said from what is implicated. A speaker who says \'John has three children\' and has four children has said something literally true while implicating something false (that he has only three). Conversational implicatures arise from the \'cooperative principle\' and its maxims: be truthful, informative, relevant, and clear. Flouting a maxim—obviously violating it—signals additional meaning. Saying \'John is a real Einstein\' about someone unintelligent flouts the truth maxim to convey irony." According to Grice, conversational implicature arises from:',
+    options: [
+      { letter: 'A', text: 'The literal meaning of words alone' },
+      { letter: 'B', text: 'Violation or flouting of conversational maxims' },
+      { letter: 'C', text: 'Grammatical rules of sentence structure' },
+      { letter: 'D', text: 'Dictionary definitions of terms' }
+    ],
+    correctAnswer: 'B',
+    explanation: 'Implicatures "arise from the \'cooperative principle\' and its maxims." "Flouting a maxim—obviously violating it—signals additional meaning." Violation/flouting of maxims (B). It\'s distinguished from literal meaning (A). It\'s pragmatic, not grammatical (C). It goes beyond dictionary meaning (D).',
+    difficulty: 'hard',
+    domain: 'Reading Comprehension',
+    skill: 'Understanding Gricean Implicature'
+  }),
+  addRating({
+    id: 'hard-eng-235',
+    question: 'A passage on bioethics: "The capability approach, developed by Amartya Sen and Martha Nussbaum, measures well-being not by resources or utility but by what people are able to do and be—their capabilities. Health care, on this view, matters not for its own sake but because it enables functioning: being nourished, mobile, able to participate in social life. This shifts focus from equal treatment to equal capability. Justice requires ensuring threshold levels of central capabilities, potentially demanding more resources for those with disabilities who need more to achieve the same functioning." The capability approach measures well-being by:',
+    options: [
+      { letter: 'A', text: 'Income and resources alone' },
+      { letter: 'B', text: 'Subjective life satisfaction' },
+      { letter: 'C', text: 'What people are able to do and be' },
+      { letter: 'D', text: 'Equal treatment regardless of need' }
+    ],
+    correctAnswer: 'C',
+    explanation: 'The approach measures well-being "not by resources or utility but by what people are able to do and be—their capabilities." Able to do and be (C). Not resources alone (A). Not subjective satisfaction/utility (B). It requires "more resources for those with disabilities who need more to achieve the same functioning"—not equal treatment regardless of need (D).',
+    difficulty: 'hard',
+    domain: 'Reading Comprehension',
+    skill: 'Understanding Capability Approach'
+  }),
+  addRating({
+    id: 'hard-eng-236',
+    question: 'Which sentence uses "less" and "fewer" correctly?',
+    options: [
+      { letter: 'A', text: 'There were less participants this year than last year.' },
+      { letter: 'B', text: 'We have fewer time to complete the project than anticipated.' },
+      { letter: 'C', text: 'The revised estimate was less than the original, with fewer adjustments needed.' },
+      { letter: 'D', text: 'Fewer resources means less opportunities for growth.' }
+    ],
+    correctAnswer: 'C',
+    explanation: '"Fewer" is for countable items; "less" is for uncountable quantities. (C) correctly uses "less" for the uncountable estimate amount and "fewer" for countable adjustments. (A) should be "fewer participants" (countable). (B) should be "less time" (uncountable). (D) should be "fewer opportunities" (countable).',
+    difficulty: 'hard',
+    domain: 'Writing',
+    skill: 'Less vs. Fewer'
+  }),
+  addRating({
+    id: 'hard-eng-237',
+    question: 'A researcher writes: "The methodology chapter will describe the sampling procedures, data collection instruments, and analytical techniques______will explain how validity and reliability were established." Which punctuation correctly joins these independent clauses?',
+    options: [
+      { letter: 'A', text: ', and' },
+      { letter: 'B', text: '; it' },
+      { letter: 'C', text: '. It' },
+      { letter: 'D', text: 'All of the above are correct.' }
+    ],
+    correctAnswer: 'D',
+    explanation: 'Independent clauses can be correctly joined by: (A) a comma with coordinating conjunction "and" (with implied subject "it"), (B) a semicolon with new clause beginning with subject "it", or (C) a period creating two sentences. All three are grammatically correct options for connecting these clauses.',
+    difficulty: 'hard',
+    domain: 'Writing',
+    skill: 'Joining Independent Clauses'
+  }),
+  addRating({
+    id: 'hard-eng-238',
+    question: 'Which sentence demonstrates correct pronoun-antecedent agreement with indefinite pronouns?',
+    options: [
+      { letter: 'A', text: 'Everyone should bring their laptop to the meeting.' },
+      { letter: 'B', text: 'Everyone should bring his laptop to the meeting.' },
+      { letter: 'C', text: 'Each participant should bring their laptop to the meeting.' },
+      { letter: 'D', text: 'Both (A) and (C) are acceptable in contemporary usage.' }
+    ],
+    correctAnswer: 'D',
+    explanation: 'Traditional grammar treats "everyone" and "each" as singular, requiring "his" or "his or her." However, contemporary usage widely accepts singular "they/their" for gender-neutral reference with indefinite pronouns. Both (A) and (C) use singular "their" with indefinite pronouns, which is now acceptable. (B) uses the traditional masculine generic, which some find exclusionary.',
+    difficulty: 'hard',
+    domain: 'Writing',
+    skill: 'Pronoun Agreement with Indefinites'
+  }),
+  addRating({
+    id: 'hard-eng-239',
+    question: 'A historian writes: "The treaty\'s territorial provisions______which included the cession of three provinces, the demilitarization of the border region, and the establishment of a neutral zone______proved controversial for decades." Which punctuation correctly sets off this complex appositive?',
+    options: [
+      { letter: 'A', text: ', ... ,' },
+      { letter: 'B', text: '— ... —' },
+      { letter: 'C', text: ': ... :' },
+      { letter: 'D', text: 'Both (A) and (B) are acceptable.' }
+    ],
+    correctAnswer: 'D',
+    explanation: 'Complex appositives containing internal commas can be set off by commas or em dashes. Em dashes (B) are often preferred when the appositive has internal commas, as they more clearly mark the boundaries. However, commas (A) are also acceptable. Colons don\'t typically come in pairs to set off appositives (C).',
+    difficulty: 'hard',
+    domain: 'Writing',
+    skill: 'Punctuating Complex Appositives'
+  }),
+  addRating({
+    id: 'hard-eng-240',
+    question: 'Which revision most effectively creates emphasis through sentence structure? Original: "The experiment failed."',
+    options: [
+      { letter: 'A', text: 'The experiment, unfortunately, failed.' },
+      { letter: 'B', text: 'Failed. That was the outcome of the experiment.' },
+      { letter: 'C', text: 'The experiment did not succeed.' },
+      { letter: 'D', text: 'It was the experiment that failed.' }
+    ],
+    correctAnswer: 'B',
+    explanation: '(B) uses a sentence fragment followed by a full sentence, placing "Failed" in emphatic initial position. This front-loading of the key word creates dramatic emphasis. (A) adds only a mild qualifier. (C) uses litotes (understatement) which actually reduces emphasis. (D) uses a cleft sentence but doesn\'t emphasize "failed" as strongly as (B).',
+    difficulty: 'hard',
+    domain: 'Writing',
+    skill: 'Creating Emphasis Through Structure'
+  }),
+  addRating({
+    id: 'hard-eng-241',
+    question: 'A passage on philosophy of history: "R.G. Collingwood held that historical knowledge requires re-enacting past thought—the historian must think the thoughts that historical agents thought. This doesn\'t mean imagining what it felt like but grasping the reasons that made actions intelligible. Historical explanation is rational explanation: showing that the agent had good reasons from their perspective. Critics questioned whether we can truly re-think ancient or alien thought, and whether non-rational factors (economic conditions, unconscious drives) are thereby excluded. Collingwood replied that even these factors become historical when grasped as reasons by historical actors." For Collingwood, historical understanding requires:',
+    options: [
+      { letter: 'A', text: 'Merely imagining emotional states' },
+      { letter: 'B', text: 'Grasping the reasons behind agents\' actions' },
+      { letter: 'C', text: 'Explaining events through impersonal forces only' },
+      { letter: 'D', text: 'Avoiding all interpretation of thought' }
+    ],
+    correctAnswer: 'B',
+    explanation: 'Collingwood held that understanding requires "grasping the reasons that made actions intelligible"—"showing that the agent had good reasons from their perspective." Grasping reasons (B). It\'s not merely imagining feelings—he distinguishes this (A). It\'s rational explanation, not impersonal forces (C). It requires interpreting thought (contradicting D).',
+    difficulty: 'hard',
+    domain: 'Reading Comprehension',
+    skill: 'Understanding Historical Re-enactment'
+  }),
+  addRating({
+    id: 'hard-eng-242',
+    question: 'A passage on ethics of technology: "The Collingridge dilemma notes that in early stages of technology development, when change is easy, impacts are hard to predict; once impacts become clear, the technology is entrenched and change is difficult. This creates a fundamental problem for technology governance: we must decide whether to proceed before we can know the consequences, but waiting until we know forecloses options. Proposed responses include iterative development with course corrections, modular design enabling partial rollback, and expanding public deliberation to surface concerns earlier." The Collingridge dilemma describes a tension between:',
+    options: [
+      { letter: 'A', text: 'Technical feasibility and economic viability' },
+      { letter: 'B', text: 'Early uncertainty and later inflexibility' },
+      { letter: 'C', text: 'Scientific research and technological application' },
+      { letter: 'D', text: 'Public acceptance and expert knowledge' }
+    ],
+    correctAnswer: 'B',
+    explanation: 'The dilemma is that "in early stages...impacts are hard to predict; once impacts become clear, the technology is entrenched." This is early uncertainty vs. later inflexibility (B). It\'s not about feasibility/viability (A), research/application (C), or public/expert divides (D).',
+    difficulty: 'hard',
+    domain: 'Reading Comprehension',
+    skill: 'Understanding Collingridge Dilemma'
+  }),
+  addRating({
+    id: 'hard-eng-243',
+    question: 'A passage on phenomenology: "Maurice Merleau-Ponty\'s embodied phenomenology rejected Cartesian mind-body dualism through analysis of perception. The body is not an object I possess but the means by which I have a world at all—a \'body-subject.\' Phantom limb phenomena and pathological cases reveal the \'body schema\'—a pre-reflective sense of bodily position and capacity that orients all perception and action. Perception is not passive reception of data but active exploration by a body that \'grips\' the world. Subject and object, self and world, are intertwined in the \'flesh\' of lived experience." Merleau-Ponty argued that the body is:',
+    options: [
+      { letter: 'A', text: 'An object possessed by the mind' },
+      { letter: 'B', text: 'The means by which we have a world' },
+      { letter: 'C', text: 'Irrelevant to perception' },
+      { letter: 'D', text: 'Separate from the experiencing subject' }
+    ],
+    correctAnswer: 'B',
+    explanation: '"The body is not an object I possess but the means by which I have a world at all." The body is the means of having a world (B). It\'s not an object possessed (A). It\'s central to perception (not irrelevant, C). The "body-subject" unites body and subject (contradicting D).',
+    difficulty: 'hard',
+    domain: 'Reading Comprehension',
+    skill: 'Understanding Embodied Phenomenology'
+  }),
+  addRating({
+    id: 'hard-eng-244',
+    question: 'A passage on decision theory: "Expected utility theory faces challenges from Allais\'s paradox and Ellsberg\'s paradox. In Allais, people\'s choices between certain and probabilistic gains violate the independence axiom—preferences shift depending on common consequences that should be irrelevant. In Ellsberg, people prefer betting on known probabilities over unknown ones even when expected values are equal (\'ambiguity aversion\'). Prospect theory addresses Allais-type violations; \'ambiguity-averse\' preferences violate the more fundamental assumption that beliefs can be represented by precise probabilities at all." Ellsberg\'s paradox reveals that people:',
+    options: [
+      { letter: 'A', text: 'Are indifferent between known and unknown probabilities' },
+      { letter: 'B', text: 'Prefer unknown probabilities over known ones' },
+      { letter: 'C', text: 'Avoid situations with unknown probabilities' },
+      { letter: 'D', text: 'Calculate expected values perfectly' }
+    ],
+    correctAnswer: 'C',
+    explanation: 'Ellsberg shows "people prefer betting on known probabilities over unknown ones" (ambiguity aversion). This means avoiding unknown probabilities (C). Not indifferent (A). Not preferring unknown (B). The paradox shows they don\'t simply calculate expected values (D—they respond to ambiguity beyond expected value).',
+    difficulty: 'hard',
+    domain: 'Reading Comprehension',
+    skill: 'Understanding Ellsberg Paradox'
+  }),
+  addRating({
+    id: 'hard-eng-245',
+    question: 'A passage on political philosophy: "G.A. Cohen\'s critique of Rawlsian justice argued that a just society requires not only just institutions but just personal choices within those institutions. If talented people demand extra pay to use their talents productively—and the difference principle allows this to benefit the least advantaged—they exploit their position. An \'egalitarian ethos\' would lead people to contribute productively without needing material incentives. Rawls saw justice as applying to institutions, not personal choices; Cohen argued this created an unacceptable gap between what principles require of institutions and what they permit individuals." Cohen argued that justice requires:',
+    options: [
+      { letter: 'A', text: 'Only just institutions, not individual choices' },
+      { letter: 'B', text: 'Both just institutions and just personal choices' },
+      { letter: 'C', text: 'Maximizing individual material incentives' },
+      { letter: 'D', text: 'Ignoring the difference principle entirely' }
+    ],
+    correctAnswer: 'B',
+    explanation: 'Cohen "argued that a just society requires not only just institutions but just personal choices within those institutions." Both institutions and choices (B). He critiques Rawls\' institutions-only view (A). He criticizes demanding material incentives (C). He critiques how the difference principle works, not abandoning it (D).',
+    difficulty: 'hard',
+    domain: 'Reading Comprehension',
+    skill: 'Understanding Cohenian Justice Critique'
+  }),
+  addRating({
+    id: 'hard-eng-246',
+    question: 'Which sentence correctly uses "lay" versus "lie"?',
+    options: [
+      { letter: 'A', text: 'The documents have laid on his desk for weeks.' },
+      { letter: 'B', text: 'Yesterday she lay the files on the table.' },
+      { letter: 'C', text: 'The cat has lain in that spot all afternoon.' },
+      { letter: 'D', text: 'Please lay down and rest for a moment.' }
+    ],
+    correctAnswer: 'C',
+    explanation: '"Lie" (to recline) is intransitive: lie, lay, lain. "Lay" (to put) is transitive: lay, laid, laid. (C) correctly uses "has lain" (present perfect of "lie"—the cat reclined). (A) should be "have lain" (documents reclined). (B) should be "laid" (she put the files). (D) should be "lie down" (recline, intransitive).',
+    difficulty: 'hard',
+    domain: 'Writing',
+    skill: 'Lay vs. Lie'
+  }),
+  addRating({
+    id: 'hard-eng-247',
+    question: 'A scientist writes: "The protocol requires that samples ________ stored at -80°C and ________ processed within 24 hours of collection." Which forms correctly complete the sentence?',
+    options: [
+      { letter: 'A', text: 'are, are' },
+      { letter: 'B', text: 'be, be' },
+      { letter: 'C', text: 'are, be' },
+      { letter: 'D', text: 'be, are' }
+    ],
+    correctAnswer: 'B',
+    explanation: '"Requires that" triggers the subjunctive mood, which uses the base form of the verb regardless of subject. Both clauses following "requires that" need subjunctive "be": "requires that samples be stored...and be processed." (B) correctly uses subjunctive throughout.',
+    difficulty: 'hard',
+    domain: 'Writing',
+    skill: 'Subjunctive in Dependent Clauses'
+  }),
+  addRating({
+    id: 'hard-eng-248',
+    question: 'Which revision most effectively eliminates wordiness while preserving meaning? Original: "Due to the fact that the equipment malfunctioned, the experiment had to be terminated prior to completion."',
+    options: [
+      { letter: 'A', text: 'Because of the equipment malfunction, the experiment was terminated before completion.' },
+      { letter: 'B', text: 'Because the equipment malfunctioned, the experiment was terminated early.' },
+      { letter: 'C', text: 'The equipment malfunctioned, so the experiment had to be terminated prior to being completed.' },
+      { letter: 'D', text: 'Due to equipment malfunction, termination of the experiment occurred prematurely.' }
+    ],
+    correctAnswer: 'B',
+    explanation: '(B) most efficiently conveys the meaning: "Due to the fact that" → "Because" (3 words to 1), "had to be terminated prior to completion" → "was terminated early" (6 words to 3). (A) is good but "before completion" is wordier than "early." (C) keeps "prior to being completed." (D) uses awkward nominalization "termination...occurred."',
+    difficulty: 'hard',
+    domain: 'Writing',
+    skill: 'Eliminating Wordiness'
+  }),
+  addRating({
+    id: 'hard-eng-249',
+    question: 'Identify the sentence with correct placement of "only":',
+    options: [
+      { letter: 'A', text: 'She only told three people about the results.' },
+      { letter: 'B', text: 'She told only three people about the results.' },
+      { letter: 'C', text: 'Only she told three people about the results.' },
+      { letter: 'D', text: 'All three sentences are correct but have different meanings.' }
+    ],
+    correctAnswer: 'D',
+    explanation: '"Only" should be placed immediately before the word or phrase it modifies. (A) emphasizes the action (only told, didn\'t show). (B) emphasizes the number (just three people). (C) emphasizes the subject (she alone, no one else). All are grammatically correct with distinct meanings, so (D) is the complete answer.',
+    difficulty: 'hard',
+    domain: 'Writing',
+    skill: 'Placement of Only'
+  }),
+  addRating({
+    id: 'hard-eng-250',
+    question: 'A writer wants to maintain formal register. Which sentence best achieves this?',
+    options: [
+      { letter: 'A', text: 'The methodology was pretty rigorous, yielding reliable results.' },
+      { letter: 'B', text: 'The methodology was sufficiently rigorous to yield reliable results.' },
+      { letter: 'C', text: 'The methodology was rigorous enough to get reliable results.' },
+      { letter: 'D', text: 'The methodology was super rigorous, so results were reliable.' }
+    ],
+    correctAnswer: 'B',
+    explanation: 'Formal academic register avoids colloquialisms and casual intensifiers. (B) uses "sufficiently rigorous" and "yield"—appropriately formal language. (A) uses informal "pretty." (C) uses conversational "enough to get." (D) uses slang "super" and informal clause structure.',
+    difficulty: 'hard',
+    domain: 'Writing',
+    skill: 'Maintaining Formal Register'
+  }),
+  addRating({
+    id: 'hard-eng-251',
+    question: 'A passage on aesthetics: "Arthur Danto\'s institutional theory of art, prompted by Warhol\'s Brillo Boxes, asked how an art object differs from a visually identical non-art object. The answer lies not in perceptible properties but in the \'artworld\'—the network of theories, history, and practices that confer art status. Something is art because the artworld says it is. Critics charged circularity (the artworld is defined by art it designates) and failure to explain why the artworld\'s pronouncements matter. George Dickie refined the theory: art is what is presented by an artist to an artworld public for appreciation." Danto\'s theory locates the distinction between art and non-art in:',
+    options: [
+      { letter: 'A', text: 'Visible properties of objects' },
+      { letter: 'B', text: 'The institutional context of the artworld' },
+      { letter: 'C', text: 'The artist\'s technical skill' },
+      { letter: 'D', text: 'Emotional responses of viewers' }
+    ],
+    correctAnswer: 'B',
+    explanation: 'Danto\'s answer "lies not in perceptible properties but in the \'artworld\'—the network of theories, history, and practices." Institutional context (B). Not visible properties (A). Not skill (C—Brillo Boxes challenge this). Not viewer emotion directly (D).',
+    difficulty: 'hard',
+    domain: 'Reading Comprehension',
+    skill: 'Understanding Institutional Art Theory'
+  }),
+  addRating({
+    id: 'hard-eng-252',
+    question: 'A passage on sociology of science: "Bruno Latour\'s actor-network theory (ANT) rejects the separation of nature and society, arguing that both are produced together through networks of human and non-human \'actants.\' Scientific facts are not discovered but constructed through associations—instruments, texts, institutions, and material objects all have agency in shaping knowledge. The laboratory creates nature as much as it represents it. This symmetrical treatment of humans and non-humans was controversial: critics questioned whether artifacts truly have \'agency\' and whether ANT could distinguish good science from bad." Actor-network theory argues that scientific knowledge is:',
+    options: [
+      { letter: 'A', text: 'Discovered through passive observation of nature' },
+      { letter: 'B', text: 'Constructed through networks including non-human actors' },
+      { letter: 'C', text: 'Determined purely by social interests' },
+      { letter: 'D', text: 'Independent of instruments and institutions' }
+    ],
+    correctAnswer: 'B',
+    explanation: 'ANT holds that "facts are not discovered but constructed through associations—instruments, texts, institutions, and material objects all have agency." Constructed through networks with non-humans (B). Not passive discovery (A). It rejects pure social determination by including non-humans (C). Instruments and institutions are central (contradicting D).',
+    difficulty: 'hard',
+    domain: 'Reading Comprehension',
+    skill: 'Understanding Actor-Network Theory'
+  }),
+  addRating({
+    id: 'hard-eng-253',
+    question: 'A passage on moral philosophy: "The doctrine of double effect distinguishes intending harm from merely foreseeing it as a side effect. A doctor may give pain relief that foreseeably hastens death but may not intentionally kill to relieve pain—even with the same outcome. Four conditions typically apply: the act must be good or neutral in itself; the good effect must be intended while the bad is merely foreseen; the bad must not be a means to the good; and proportionate reason must exist. Critics question whether the intention/foresight distinction can bear this moral weight." The doctrine of double effect permits actions that:',
+    options: [
+      { letter: 'A', text: 'Intend harm as a means to good ends' },
+      { letter: 'B', text: 'Foresee but don\'t intend harmful side effects' },
+      { letter: 'C', text: 'Maximize good consequences regardless of means' },
+      { letter: 'D', text: 'Never produce any harmful effects' }
+    ],
+    correctAnswer: 'B',
+    explanation: 'The doctrine "distinguishes intending harm from merely foreseeing it as a side effect"—permitting actions where "the good effect must be intended while the bad is merely foreseen." Foreseen but not intended harm (B). The bad must not be a means (contradicting A). It\'s not purely consequentialist (C). It addresses cases with harmful effects (D).',
+    difficulty: 'hard',
+    domain: 'Reading Comprehension',
+    skill: 'Understanding Double Effect'
+  }),
+  addRating({
+    id: 'hard-eng-254',
+    question: 'A passage on cognitive science: "The extended mind thesis, proposed by Andy Clark and David Chalmers, argues that cognition extends beyond the brain to include external artifacts. Otto, who has Alzheimer\'s, relies on a notebook the way others rely on biological memory; the notebook is part of his cognitive system. If internal and external processes play equivalent functional roles, they deserve equal cognitive status. This \'parity principle\' challenges the intuition that mind stops at the skull. Critics argue that biological processes have properties (speed, integration, reliability) that external aids lack." The extended mind thesis claims that:',
+    options: [
+      { letter: 'A', text: 'Mind is entirely located in the brain' },
+      { letter: 'B', text: 'External artifacts can be part of cognitive systems' },
+      { letter: 'C', text: 'Only biological processes count as cognitive' },
+      { letter: 'D', text: 'Memory cannot be extended externally' }
+    ],
+    correctAnswer: 'B',
+    explanation: 'The thesis argues "cognition extends beyond the brain to include external artifacts"—Otto\'s "notebook is part of his cognitive system." External artifacts as cognitive (B). It challenges the view that mind is in the brain (contradicting A). Non-biological can be cognitive (contradicting C). Memory extends to notebooks (contradicting D).',
+    difficulty: 'hard',
+    domain: 'Reading Comprehension',
+    skill: 'Understanding Extended Mind'
+  }),
+  addRating({
+    id: 'hard-eng-255',
+    question: 'A passage on literary criticism: "New Historicism, associated with Stephen Greenblatt, rejected both formalist close reading\'s isolation of texts and older historicism\'s background-foreground distinction. Texts don\'t reflect historical context but participate in cultural circulation of power. \'Self-fashioning\' describes how subjectivity is constructed through engagement with cultural codes, not expressed from an authentic inner self. Literary and non-literary texts are equally caught in power relations; Shakespeare\'s plays are no more autonomous than court documents or travel narratives. The \'anecdote\' became a signature method—illuminating connections between disparate cultural sites." New Historicism views literary texts as:',
+    options: [
+      { letter: 'A', text: 'Autonomous objects for formal analysis' },
+      { letter: 'B', text: 'Passive reflections of historical background' },
+      { letter: 'C', text: 'Active participants in cultural power dynamics' },
+      { letter: 'D', text: 'Expressions of authentic authorial selves' }
+    ],
+    correctAnswer: 'C',
+    explanation: 'New Historicism holds "texts don\'t reflect historical context but participate in cultural circulation of power." Active participation in power (C). It rejects formalist isolation (A). It rejects reflection model (B). It rejects authentic self-expression—subjectivity is "constructed" (D).',
+    difficulty: 'hard',
+    domain: 'Reading Comprehension',
+    skill: 'Understanding New Historicism'
+  }),
+  addRating({
+    id: 'hard-eng-256',
+    question: 'Which sentence correctly uses "continuous" versus "continual"?',
+    options: [
+      { letter: 'A', text: 'The machine operates continuous, producing output without interruption.' },
+      { letter: 'B', text: 'We experienced continuous interruptions throughout the meeting.' },
+      { letter: 'C', text: 'The river provides a continual flow of water to the region.' },
+      { letter: 'D', text: 'The continuous delays frustrated everyone involved in the project.' }
+    ],
+    correctAnswer: 'D',
+    explanation: '"Continuous" = uninterrupted, without breaks. "Continual" = repeated regularly, with intervals. (D) correctly uses "continual" for repeated delays (they stop and start). (A) needs "continuously" (adverb) or "continuous operation." (B) is contradictory—"continuous" means unbroken, but interruptions break continuity. (C) should be "continuous" if the flow never stops.',
+    difficulty: 'hard',
+    domain: 'Writing',
+    skill: 'Continuous vs. Continual'
+  }),
+  addRating({
+    id: 'hard-eng-257',
+    question: 'A researcher needs to introduce counterevidence. Which sentence most effectively acknowledges the counterevidence while maintaining the original argument?',
+    options: [
+      { letter: 'A', text: 'Some studies have found different results, but they\'re probably wrong.' },
+      { letter: 'B', text: 'While some studies report conflicting findings, methodological differences may account for the discrepancy.' },
+      { letter: 'C', text: 'Other studies exist that disagree with this conclusion.' },
+      { letter: 'D', text: 'Conflicting evidence should be ignored in favor of the main hypothesis.' }
+    ],
+    correctAnswer: 'B',
+    explanation: '(B) acknowledges counterevidence ("some studies report conflicting findings") while offering a reasoned explanation that maintains the argument ("methodological differences may account for the discrepancy"). (A) dismisses without reason. (C) merely notes counterevidence without addressing it. (D) is methodologically inappropriate.',
+    difficulty: 'hard',
+    domain: 'Writing',
+    skill: 'Acknowledging Counterevidence'
+  }),
+  addRating({
+    id: 'hard-eng-258',
+    question: 'Which sentence demonstrates correct use of "that" versus "which" for restrictive and nonrestrictive clauses?',
+    options: [
+      { letter: 'A', text: 'The proposal, that was submitted yesterday, has been approved.' },
+      { letter: 'B', text: 'The proposal which was submitted yesterday has been approved.' },
+      { letter: 'C', text: 'The proposal that was submitted yesterday has been approved.' },
+      { letter: 'D', text: 'Either (B) or (C) is acceptable in all contexts.' }
+    ],
+    correctAnswer: 'C',
+    explanation: 'In American English, "that" introduces restrictive clauses (essential to meaning, no commas); "which" introduces nonrestrictive clauses (additional info, with commas). (C) correctly uses "that" for a restrictive clause identifying which proposal. (A) incorrectly uses "that" with commas (nonrestrictive). (B) uses "which" without commas (acceptable in British English but not preferred in American formal writing).',
+    difficulty: 'hard',
+    domain: 'Writing',
+    skill: 'That vs. Which'
+  }),
+  addRating({
+    id: 'hard-eng-259',
+    question: 'A writer needs to create parallel structure across paragraphs. First paragraph ends: "Three factors contributed to the decline: reduced funding, staff turnover, and inadequate infrastructure." The next paragraph should begin:',
+    options: [
+      { letter: 'A', text: 'Reducing funding was the most significant factor because...' },
+      { letter: 'B', text: 'Reduced funding proved most significant because...' },
+      { letter: 'C', text: 'The reduction of funding had the most significant impact because...' },
+      { letter: 'D', text: 'Funds were reduced significantly, which was the most important factor, because...' }
+    ],
+    correctAnswer: 'B',
+    explanation: 'The list uses parallel structure: "reduced funding, staff turnover, and inadequate infrastructure" (past participle + noun, noun + noun, adjective + noun). (B) maintains this by echoing "Reduced funding" exactly. (A) shifts to gerund. (C) shifts to nominalization. (D) restructures entirely and is wordy.',
+    difficulty: 'hard',
+    domain: 'Writing',
+    skill: 'Cross-Paragraph Parallelism'
+  }),
+  addRating({
+    id: 'hard-eng-260',
+    question: 'Which sentence correctly handles agreement with "number of"?',
+    options: [
+      { letter: 'A', text: 'A number of participants was unable to complete the survey.' },
+      { letter: 'B', text: 'The number of participants were higher than expected.' },
+      { letter: 'C', text: 'A number of participants were unable to complete the survey.' },
+      { letter: 'D', text: 'A number of participant was unable to complete the survey.' }
+    ],
+    correctAnswer: 'C',
+    explanation: '"A number of" takes a plural verb (emphasizes the individuals); "The number of" takes a singular verb (emphasizes the quantity). (C) correctly uses "A number of participants were" (plural). (A) incorrectly uses singular with "a number of." (B) incorrectly uses plural with "the number of." (D) has both agreement errors.',
+    difficulty: 'hard',
+    domain: 'Writing',
+    skill: 'Number Of Agreement'
+  }),
+  addRating({
+    id: 'hard-eng-261',
+    question: 'A passage on philosophy of mind: "Functionalism defines mental states by their causal roles—pain is whatever plays the pain-role (caused by tissue damage, causing distress and avoidance behavior). This allows multiple realizability: silicon, neurons, or alien substrates could all realize pain if they play the right causal role. Block\'s \'China Brain\' objection imagines the population of China, connected by radio, simulating a brain\'s functional organization. If functionalism is correct, this system would be conscious—but intuitively it seems not. Defenders argue our intuitions about such exotic cases are unreliable." The China Brain argument challenges functionalism by:',
+    options: [
+      { letter: 'A', text: 'Showing that only neurons can realize minds' },
+      { letter: 'B', text: 'Presenting a system that seems to satisfy functional criteria without consciousness' },
+      { letter: 'C', text: 'Proving that causal roles are irrelevant to mind' },
+      { letter: 'D', text: 'Demonstrating that multiple realizability is impossible' }
+    ],
+    correctAnswer: 'B',
+    explanation: 'The China Brain "simulat[es] a brain\'s functional organization"—satisfying functional criteria. "If functionalism is correct, this system would be conscious—but intuitively it seems not." It satisfies criteria without seeming conscious (B). It doesn\'t show only neurons work (A). It challenges, not proves causal irrelevance (C). It assumes multiple realizability to make its point (D).',
+    difficulty: 'hard',
+    domain: 'Reading Comprehension',
+    skill: 'Understanding China Brain Argument'
+  }),
+  addRating({
+    id: 'hard-eng-262',
+    question: 'A passage on social epistemology: "Standpoint epistemology argues that social position shapes knowledge—marginalized groups may have epistemic advantages for understanding power structures. Patricia Hill Collins developed the concept of \'outsider-within\': someone positioned inside dominant institutions while socially outside them may see contradictions invisible to insiders. This isn\'t automatic privilege but achieved through critical reflection on experience. Critics question whether oppression automatically produces insight and whether standpoint theory risks essentialism about group perspectives. Defenders distinguish standpoints (achieved through struggle) from perspectives (merely positions)." Standpoint epistemology claims that marginalized positions:',
+    options: [
+      { letter: 'A', text: 'Automatically produce superior knowledge' },
+      { letter: 'B', text: 'Can offer epistemic advantages through critical reflection' },
+      { letter: 'C', text: 'Have no relevance to knowledge production' },
+      { letter: 'D', text: 'Guarantee identical perspectives within groups' }
+    ],
+    correctAnswer: 'B',
+    explanation: 'Marginalized groups "may have epistemic advantages" but this "isn\'t automatic privilege but achieved through critical reflection." Advantages through reflection (B). Not automatic (A). Position is relevant (contradicting C). Defenders reject essentialism—standpoints aren\'t identical (D).',
+    difficulty: 'hard',
+    domain: 'Reading Comprehension',
+    skill: 'Understanding Standpoint Epistemology'
+  }),
+  addRating({
+    id: 'hard-eng-263',
+    question: 'A passage on philosophy of law: "Legal realism, associated with Oliver Wendell Holmes and the Yale school, held that law is not a system of rules but what judges actually do. \'The prophecies of what the courts will do in fact, and nothing more pretentious, are what I mean by the law.\' This descriptive project aimed to predict judicial decisions using social science, psychology, and policy analysis rather than doctrinal reasoning. The \'law in action\' differs from \'law on the books.\' Critics charged realism with confusing prediction with justification and eliminating law\'s normative dimension entirely." Legal realism defines law primarily as:',
+    options: [
+      { letter: 'A', text: 'A complete system of determinate rules' },
+      { letter: 'B', text: 'What judges actually decide in practice' },
+      { letter: 'C', text: 'What the law books prescribe' },
+      { letter: 'D', text: 'Abstract normative principles' }
+    ],
+    correctAnswer: 'B',
+    explanation: 'Holmes: "The prophecies of what the courts will do in fact...are what I mean by the law." Law is what judges do (B). It rejects law as a complete rule system (A). It distinguishes "law in action" from "law on the books" (C). Critics say it eliminates normative dimension (D).',
+    difficulty: 'hard',
+    domain: 'Reading Comprehension',
+    skill: 'Understanding Legal Realism'
+  }),
+  addRating({
+    id: 'hard-eng-264',
+    question: 'A passage on ethics: "Care ethics, developed by Carol Gilligan and Nel Noddings, challenged the justice-focused tradition from Kant to Rawls. Rather than abstract principles applied impartially, care ethics emphasizes particular relationships, emotional attunement, and response to concrete needs. The caring relationship is asymmetric—the cared-for receives while the carer gives. Critics worried that care ethics might reinforce gender stereotypes (women as naturally caring) or neglect justice\'s role in correcting oppressive care relationships. Defenders argue care and justice are complementary, not competing values." Care ethics differs from justice ethics by emphasizing:',
+    options: [
+      { letter: 'A', text: 'Abstract universal principles' },
+      { letter: 'B', text: 'Impartial treatment of all persons' },
+      { letter: 'C', text: 'Particular relationships and emotional attunement' },
+      { letter: 'D', text: 'Strict rule-following over context' }
+    ],
+    correctAnswer: 'C',
+    explanation: 'Care ethics emphasizes "particular relationships, emotional attunement, and response to concrete needs" rather than "abstract principles applied impartially." Particular relationships and emotion (C). It challenges abstract principles (A) and impartiality (B). It responds to context, not strict rules (D).',
+    difficulty: 'hard',
+    domain: 'Reading Comprehension',
+    skill: 'Understanding Care Ethics'
+  }),
+  addRating({
+    id: 'hard-eng-265',
+    question: 'A passage on economics: "Behavioral finance challenges efficient market hypothesis (EMH) with evidence of persistent anomalies: momentum (past winners continue winning), value premium (cheap stocks outperform), and calendar effects (January returns higher). EMH defenders argue these are risk premiums, data mining, or arbitraged away once discovered. Limits to arbitrage—short-sale constraints, noise trader risk, implementation costs—explain why mispricings persist even when identified. Shiller\'s volatility studies showed stock prices fluctuate far more than dividends warrant, suggesting excess volatility driven by investor psychology." Behavioral finance explains market anomalies through:',
+    options: [
+      { letter: 'A', text: 'Perfect investor rationality' },
+      { letter: 'B', text: 'Immediate price correction to fundamentals' },
+      { letter: 'C', text: 'Psychological biases and limits to arbitrage' },
+      { letter: 'D', text: 'Efficient incorporation of all information' }
+    ],
+    correctAnswer: 'C',
+    explanation: 'The passage cites "investor psychology" and "limits to arbitrage—short-sale constraints, noise trader risk, implementation costs—explain why mispricings persist." Psychology and arbitrage limits (C). EMH assumes rationality and efficiency (A, B, D) which behavioral finance challenges.',
+    difficulty: 'hard',
+    domain: 'Reading Comprehension',
+    skill: 'Understanding Behavioral Finance'
+  }),
+  addRating({
+    id: 'hard-eng-266',
+    question: 'Which sentence correctly uses "insure," "ensure," and "assure"?',
+    options: [
+      { letter: 'A', text: 'I want to insure you that the project will be completed on time.' },
+      { letter: 'B', text: 'Please ensure that all documents are insured against loss.' },
+      { letter: 'C', text: 'We must assure the equipment against damage during transport.' },
+      { letter: 'D', text: 'The policy will ensure the building, and I assure you it\'s comprehensive.' }
+    ],
+    correctAnswer: 'B',
+    explanation: '"Assure" = promise/convince (a person). "Ensure" = make certain. "Insure" = provide insurance. (B) correctly uses "ensure" (make certain) for documents being ready and "insured" (insurance) against loss. (A) should be "assure you." (C) should be "insure" for equipment. (D) should be "insure the building."',
+    difficulty: 'hard',
+    domain: 'Writing',
+    skill: 'Insure/Ensure/Assure'
+  }),
+  addRating({
+    id: 'hard-eng-267',
+    question: 'A historian writes: "The conflict originated in longstanding territorial disputes______political instability following the king\'s death______economic competition for trade routes______; together, these factors created conditions for war." Which punctuation pattern correctly handles this series of causes?',
+    options: [
+      { letter: 'A', text: ': ... , ... ,' },
+      { letter: 'B', text: ': ... , ... , and' },
+      { letter: 'C', text: ': ... ; ... ;' },
+      { letter: 'D', text: ': ... ; ... ; and' }
+    ],
+    correctAnswer: 'B',
+    explanation: 'After the introductory clause with colon, a series follows. Since the items don\'t contain internal commas, regular commas separate them. The series needs "and" before the final item for standard listing format. (B) correctly uses colon, commas between items, and "and" before the last item.',
+    difficulty: 'hard',
+    domain: 'Writing',
+    skill: 'Series After Colon'
+  }),
+  addRating({
+    id: 'hard-eng-268',
+    question: 'Which revision most effectively converts passive voice to active voice while maintaining formal register? Original: "It was determined by the committee that additional funding would be required."',
+    options: [
+      { letter: 'A', text: 'The committee determined that additional funding would be required.' },
+      { letter: 'B', text: 'The committee figured out they need more money.' },
+      { letter: 'C', text: 'Additional funding was needed, the committee determined.' },
+      { letter: 'D', text: 'Someone on the committee determined the need for additional funding.' }
+    ],
+    correctAnswer: 'A',
+    explanation: '(A) converts to active voice ("The committee determined") while maintaining formal register with "additional funding would be required." (B) is too informal ("figured out," "more money"). (C) retains passive in the first clause. (D) introduces vague "someone" unnecessarily.',
+    difficulty: 'hard',
+    domain: 'Writing',
+    skill: 'Active Voice Conversion'
+  }),
+  addRating({
+    id: 'hard-eng-269',
+    question: 'Identify the sentence with correct use of "whether" versus "if":',
+    options: [
+      { letter: 'A', text: 'The question is if the policy will be implemented.' },
+      { letter: 'B', text: 'She asked whether or not we would attend.' },
+      { letter: 'C', text: 'If the results are positive or negative remains unclear.' },
+      { letter: 'D', text: 'I don\'t know if to proceed or wait.' }
+    ],
+    correctAnswer: 'B',
+    explanation: '"Whether" introduces alternatives or indirect questions; "if" introduces conditions. (B) correctly uses "whether or not" for alternatives. (A) should be "whether" (indirect question following "the question is"). (C) should be "whether" (subject of "remains"). (D) should be "whether" before infinitive ("whether to proceed").',
+    difficulty: 'hard',
+    domain: 'Writing',
+    skill: 'Whether vs. If'
+  }),
+  addRating({
+    id: 'hard-eng-270',
+    question: 'A researcher writes: "These findings have important implications. First, they suggest revisions to current theory. ________, they indicate new directions for intervention design. Third, they highlight the need for longitudinal research." Which word best fills the blank?',
+    options: [
+      { letter: 'A', text: 'However' },
+      { letter: 'B', text: 'Therefore' },
+      { letter: 'C', text: 'Second' },
+      { letter: 'D', text: 'Finally' }
+    ],
+    correctAnswer: 'C',
+    explanation: 'The passage uses enumeration: "First...______...Third." Parallel structure requires "Second" (C) to maintain the sequence. "However" (A) indicates contrast. "Therefore" (B) indicates consequence. "Finally" (D) would come at the end, not between first and third.',
+    difficulty: 'hard',
+    domain: 'Writing',
+    skill: 'Enumeration Transitions'
+  }),
+  addRating({
+    id: 'hard-eng-271',
+    question: 'A passage on philosophy of religion: "The problem of divine hiddenness, articulated by J.L. Schellenberg, argues that if a loving God exists, God would ensure that everyone capable of relationship with God would believe. Yet reasonable nonbelief exists—people who sincerely seek God without finding. Therefore, no loving God exists. Responses include: God has reasons for hiddenness we cannot fathom; belief isn\'t necessary for relationship; or apparent nonbelief actually masks culpable resistance. The problem differs from the problem of evil by focusing on the absence of relationship rather than the presence of suffering." The divine hiddenness argument\'s key premise is that:',
+    options: [
+      { letter: 'A', text: 'All nonbelievers are culpably resistant' },
+      { letter: 'B', text: 'A loving God would ensure believers in all who can relate' },
+      { letter: 'C', text: 'No one sincerely seeks God' },
+      { letter: 'D', text: 'Suffering disproves God\'s existence' }
+    ],
+    correctAnswer: 'B',
+    explanation: 'The argument holds that "if a loving God exists, God would ensure that everyone capable of relationship with God would believe." This is the key premise (B). The argument assumes reasonable nonbelief exists, contradicting (A) and (C). The hiddenness problem differs from the problem of evil/suffering (D).',
+    difficulty: 'hard',
+    domain: 'Reading Comprehension',
+    skill: 'Understanding Divine Hiddenness'
+  }),
+  addRating({
+    id: 'hard-eng-272',
+    question: 'A passage on political philosophy: "Iris Marion Young\'s conception of justice as overcoming oppression identified five faces: exploitation, marginalization, powerlessness, cultural imperialism, and violence. Exploitation transfers the fruits of one group\'s labor to another. Marginalization excludes groups from useful social participation. Powerlessness lacks authority over one\'s work. Cultural imperialism universalizes the dominant group\'s experience as the norm. Violence includes not just physical attacks but the social context that makes them possible. This structural understanding shifts focus from distribution to social relations and group position." Young identifies oppression through:',
+    options: [
+      { letter: 'A', text: 'Only economic exploitation' },
+      { letter: 'B', text: 'Five interconnected structural faces' },
+      { letter: 'C', text: 'Individual prejudice alone' },
+      { letter: 'D', text: 'Purely distributive inequality' }
+    ],
+    correctAnswer: 'B',
+    explanation: 'Young "identified five faces: exploitation, marginalization, powerlessness, cultural imperialism, and violence." Five interconnected structural faces (B). Not only exploitation (A). It\'s structural, not just individual prejudice (C). It "shifts focus from distribution to social relations" (contradicting D).',
+    difficulty: 'hard',
+    domain: 'Reading Comprehension',
+    skill: 'Understanding Five Faces of Oppression'
+  }),
+  addRating({
+    id: 'hard-eng-273',
+    question: 'A passage on philosophy of language: "Ruth Millikan\'s teleosemantics grounds meaning in evolutionary function. A representation\'s content is determined by what it is supposed to represent—the condition its production was naturally selected to correlate with. A frog\'s fly-detector represents flies because detecting flies (not black dots) explained the detector\'s selection. This naturalistic account faces the \'swampman\' problem: an atom-for-atom duplicate of you, arising by chance, would lack evolutionary history yet seemingly have thoughts with content. Defenders argue swampman would gradually acquire content through new selectional history." Millikan\'s teleosemantics defines meaning through:',
+    options: [
+      { letter: 'A', text: 'Social convention alone' },
+      { letter: 'B', text: 'Evolutionary function and selection history' },
+      { letter: 'C', text: 'Introspective access to content' },
+      { letter: 'D', text: 'Arbitrary assignment by speakers' }
+    ],
+    correctAnswer: 'B',
+    explanation: 'Teleosemantics "grounds meaning in evolutionary function"—content "is determined by...what its production was naturally selected to correlate with." Evolutionary function and selection (B). Not social convention (A). Not introspection (C). Not arbitrary (D).',
+    difficulty: 'hard',
+    domain: 'Reading Comprehension',
+    skill: 'Understanding Teleosemantics'
+  }),
+  addRating({
+    id: 'hard-eng-274',
+    question: 'A passage on ethics of technology: "Langdon Winner\'s \'Do Artifacts Have Politics?\' argued that technologies can embody political values. Robert Moses allegedly designed Long Island parkway overpasses too low for buses, excluding poor and minority bus-riders from beaches. Whether or not this story is historically accurate, it illustrates how built environments can entrench exclusion. Technologies are not neutral tools awaiting human use; they configure possibilities, favoring some interests over others. STS scholars have extended this analysis to algorithms, platforms, and digital architectures that embed values in their design." Winner argues that technologies:',
+    options: [
+      { letter: 'A', text: 'Are always neutral tools' },
+      { letter: 'B', text: 'Can embed political values in their design' },
+      { letter: 'C', text: 'Have no social effects' },
+      { letter: 'D', text: 'Determine outcomes completely regardless of use' }
+    ],
+    correctAnswer: 'B',
+    explanation: 'Winner argued "technologies can embody political values"—they "configure possibilities, favoring some interests over others." Embedded political values (B). Technologies are "not neutral tools" (A). They have social effects (contradicting C). They configure possibilities but don\'t completely determine (D).',
+    difficulty: 'hard',
+    domain: 'Reading Comprehension',
+    skill: 'Understanding Politics of Artifacts'
+  }),
+  addRating({
+    id: 'hard-eng-275',
+    question: 'A passage on moral psychology: "Peter Singer\'s expanding circle hypothesis suggests moral concern has historically expanded from kin to tribe to nation to humanity, and possibly to sentient animals. This expansion reflects increasing capacity for abstraction and empathy. However, Greene\'s dual-process account suggests our tribal moral intuitions (System 1) resist such expansion, which requires effortful reasoning (System 2). The tension between intuitive in-group favoritism and reasoned impartiality explains persistent ethical disagreements—we\'re wired for tribalism but capable of recognizing its moral limitations." The "expanding circle" faces psychological resistance from:',
+    options: [
+      { letter: 'A', text: 'Excessive use of System 2 reasoning' },
+      { letter: 'B', text: 'Intuitive in-group favoritism' },
+      { letter: 'C', text: 'Complete absence of empathy' },
+      { letter: 'D', text: 'Universal agreement on moral scope' }
+    ],
+    correctAnswer: 'B',
+    explanation: '"Our tribal moral intuitions (System 1) resist such expansion"—we\'re "wired for tribalism." Intuitive in-group favoritism (B). Expansion requires System 2, not resistance from it (A). We have capacity for empathy (contradicting C). There are "persistent ethical disagreements" (contradicting D).',
+    difficulty: 'hard',
+    domain: 'Reading Comprehension',
+    skill: 'Understanding Moral Circle Expansion'
+  }),
+  addRating({
+    id: 'hard-eng-276',
+    question: 'Which sentence demonstrates correct subject-verb agreement with complex subjects?',
+    options: [
+      { letter: 'A', text: 'Neither the primary investigator nor the research assistants was available.' },
+      { letter: 'B', text: 'Neither the primary investigator nor the research assistants were available.' },
+      { letter: 'C', text: 'Neither the research assistants nor the primary investigator were available.' },
+      { letter: 'D', text: 'Both (B) and (C) are correct.' }
+    ],
+    correctAnswer: 'B',
+    explanation: 'With "neither...nor," the verb agrees with the nearer subject. In (B), "assistants" (plural) is nearer, so "were" is correct. In (A), "assistants" is nearer but "was" is singular—incorrect. In (C), "investigator" (singular) is nearer, so "were" is incorrect—should be "was." Only (B) is correct.',
+    difficulty: 'hard',
+    domain: 'Writing',
+    skill: 'Neither/Nor Agreement'
+  }),
+  addRating({
+    id: 'hard-eng-277',
+    question: 'A writer needs to introduce a qualification. Original claim: "The intervention proved effective." Which revision most precisely qualifies this claim?',
+    options: [
+      { letter: 'A', text: 'The intervention proved somewhat effective.' },
+      { letter: 'B', text: 'The intervention proved effective for participants with moderate symptoms in short-term follow-up.' },
+      { letter: 'C', text: 'The intervention kind of proved effective.' },
+      { letter: 'D', text: 'The intervention proved effective or something.' }
+    ],
+    correctAnswer: 'B',
+    explanation: '(B) provides precise qualification by specifying conditions (moderate symptoms, short-term follow-up), which is most useful for accurate scientific communication. (A) adds vague qualification ("somewhat"). (C) is too informal ("kind of"). (D) is vague and inappropriate ("or something").',
+    difficulty: 'hard',
+    domain: 'Writing',
+    skill: 'Precise Qualification'
+  }),
+  addRating({
+    id: 'hard-eng-278',
+    question: 'Which sentence correctly handles possessives with gerunds?',
+    options: [
+      { letter: 'A', text: 'I appreciate you helping with the project.' },
+      { letter: 'B', text: 'I appreciate your helping with the project.' },
+      { letter: 'C', text: 'The committee approved of him resigning.' },
+      { letter: 'D', text: 'Both (A) and (B) are acceptable in modern usage.' }
+    ],
+    correctAnswer: 'D',
+    explanation: 'Traditional grammar requires possessive before gerund: "your helping," "his resigning." However, modern usage accepts objective case ("you helping," "him resigning"), especially in speech. Both (A) and (B) are now acceptable, with (B) preferred in formal writing. (C) should be "his resigning" in formal contexts.',
+    difficulty: 'hard',
+    domain: 'Writing',
+    skill: 'Possessives with Gerunds'
+  }),
+  addRating({
+    id: 'hard-eng-279',
+    question: 'A researcher writes: "The analysis revealed significant differences between groups (p < .001)____however, the effect size was modest (d = 0.3)____suggesting limited practical significance despite statistical significance." Which punctuation pattern is correct?',
+    options: [
+      { letter: 'A', text: '; ... , ...' },
+      { letter: 'B', text: '. However, ... , ...' },
+      { letter: 'C', text: ', ... , ...' },
+      { letter: 'D', text: 'Both (A) and (B) are correct.' }
+    ],
+    correctAnswer: 'D',
+    explanation: '"However" can begin a new sentence after a period (B) or follow a semicolon with comma after it (A). Both correctly signal the contrastive relationship between statistical and practical significance. (C) creates a comma splice—"however" joining independent clauses needs semicolon or period.',
+    difficulty: 'hard',
+    domain: 'Writing',
+    skill: 'Punctuating However'
+  }),
+  addRating({
+    id: 'hard-eng-280',
+    question: 'Which revision most effectively eliminates redundancy? Original: "The basic fundamentals of the methodology were explained in advance beforehand."',
+    options: [
+      { letter: 'A', text: 'The basic fundamentals of the methodology were explained beforehand.' },
+      { letter: 'B', text: 'The fundamentals of the methodology were explained in advance.' },
+      { letter: 'C', text: 'The fundamentals of the methodology were explained beforehand.' },
+      { letter: 'D', text: 'The methodology\'s basic fundamentals were explained in advance beforehand.' }
+    ],
+    correctAnswer: 'C',
+    explanation: 'The original has three redundancies: "basic fundamentals" (fundamentals are basic by definition), and "in advance beforehand" (same meaning). (C) eliminates all redundancy: just "fundamentals" and just "beforehand." (A) keeps "basic fundamentals." (B) keeps "basic fundamentals." (D) keeps both redundancies.',
+    difficulty: 'hard',
+    domain: 'Writing',
+    skill: 'Eliminating Redundancy'
+  }),
+  addRating({
+    id: 'hard-eng-281',
+    question: 'A passage on philosophy of science: "Bas van Fraassen\'s constructive empiricism rejects scientific realism\'s claim that we should believe our best theories are true. Instead, science aims for empirical adequacy—theories should \'save the phenomena\' without committing to unobservable entities like electrons or quarks. We can accept theories as empirically adequate without believing in unobservables. Observable/unobservable is not a metaphysical but a pragmatic distinction determined by our perceptual capacities. Critics argue this distinction is arbitrary and that inference to the best explanation equally supports unobservables." Constructive empiricism claims that science aims for:',
+    options: [
+      { letter: 'A', text: 'True descriptions of unobservable reality' },
+      { letter: 'B', text: 'Empirical adequacy without commitment to unobservables' },
+      { letter: 'C', text: 'Rejection of all theoretical entities' },
+      { letter: 'D', text: 'Pure observation without theory' }
+    ],
+    correctAnswer: 'B',
+    explanation: 'Van Fraassen\'s view holds "science aims for empirical adequacy—theories should \'save the phenomena\' without committing to unobservable entities." Adequacy without unobservable commitment (B). Not true description of unobservables (A—that\'s realism). Not rejection of all entities—we can "accept" theories (C). Theory is allowed; commitment isn\'t required (D).',
+    difficulty: 'hard',
+    domain: 'Reading Comprehension',
+    skill: 'Understanding Constructive Empiricism'
+  }),
+  addRating({
+    id: 'hard-eng-282',
+    question: 'A passage on social theory: "Ulrich Beck\'s \'risk society\' thesis argued that industrial modernity produces not only goods but \'bads\'—risks like nuclear accidents, climate change, and toxic contamination that transcend class and national boundaries. Unlike old dangers (famine, plague), modern risks are manufactured, invisible, and require expert interpretation. Risk distribution becomes as politically significant as wealth distribution. Reflexive modernization means modernity confronting its own consequences, unable to rely on the institutions (science, state) that produced the risks to solve them. We live with manufactured uncertainties requiring new forms of governance." Beck argues that modern risks differ from old dangers in being:',
+    options: [
+      { letter: 'A', text: 'Contained within national boundaries' },
+      { letter: 'B', text: 'Visible and directly perceptible' },
+      { letter: 'C', text: 'Manufactured, invisible, and requiring expert interpretation' },
+      { letter: 'D', text: 'Distributed strictly by social class' }
+    ],
+    correctAnswer: 'C',
+    explanation: '"Modern risks are manufactured, invisible, and require expert interpretation" unlike "old dangers (famine, plague)." Manufactured, invisible, expert-dependent (C). They "transcend...national boundaries" (contradicting A). They\'re invisible (contradicting B). They "transcend class" (contradicting D).',
+    difficulty: 'hard',
+    domain: 'Reading Comprehension',
+    skill: 'Understanding Risk Society'
+  }),
+  addRating({
+    id: 'hard-eng-283',
+    question: 'A passage on metaethics: "Moral expressivism, advanced by A.J. Ayer and later Simon Blackburn, holds that moral judgments express attitudes rather than describe facts. \'Murder is wrong\' expresses disapproval of murder, like saying \'Boo to murder!\' This avoids metaphysical puzzles about moral facts while explaining moral motivation—attitudes inherently motivate action. The Frege-Geach problem challenges expressivism: in \'If murder is wrong, then helping murderers is wrong,\' the antecedent expresses no attitude yet must mean the same as when asserted. Blackburn\'s \'quasi-realism\' attempts to earn realist-sounding talk for expressivism." Expressivism claims that moral statements:',
+    options: [
+      { letter: 'A', text: 'Describe objective moral facts' },
+      { letter: 'B', text: 'Express attitudes rather than state facts' },
+      { letter: 'C', text: 'Are always true' },
+      { letter: 'D', text: 'Have no connection to motivation' }
+    ],
+    correctAnswer: 'B',
+    explanation: 'Expressivism "holds that moral judgments express attitudes rather than describe facts." Attitudes, not facts (B). It contrasts with describing facts (A). Moral claims can conflict, so not always true (C). Expressivism explains motivation—"attitudes inherently motivate action" (contradicting D).',
+    difficulty: 'hard',
+    domain: 'Reading Comprehension',
+    skill: 'Understanding Moral Expressivism'
+  }),
+  addRating({
+    id: 'hard-eng-284',
+    question: 'A passage on philosophy of mathematics: "Platonism holds that mathematical objects exist independently of human minds or languages—numbers, sets, and functions are abstract entities we discover, not invent. This explains mathematics\' objectivity and applicability to physical reality. However, the epistemological problem arises: how can we have knowledge of acausal, non-spatiotemporal entities? We cannot perceive or interact with them. Gödel proposed mathematical intuition; others appeal to indispensability arguments—mathematics is indispensable to our best science, so its objects exist. Anti-platonists seek to explain mathematical practice without commitment to abstract objects." The epistemological problem for Platonism concerns:',
+    options: [
+      { letter: 'A', text: 'Whether mathematical statements are true' },
+      { letter: 'B', text: 'How we can know entities we cannot perceive' },
+      { letter: 'C', text: 'Whether mathematics applies to physics' },
+      { letter: 'D', text: 'Whether mathematicians exist' }
+    ],
+    correctAnswer: 'B',
+    explanation: 'The problem is: "how can we have knowledge of acausal, non-spatiotemporal entities? We cannot perceive or interact with them." Knowledge of imperceptible entities (B). Platonism assumes mathematical statements are true (A isn\'t the problem). Applicability is something Platonism explains (C). Mathematicians\' existence isn\'t questioned (D).',
+    difficulty: 'hard',
+    domain: 'Reading Comprehension',
+    skill: 'Understanding Mathematical Platonism'
+  }),
+  addRating({
+    id: 'hard-eng-285',
+    question: 'A passage on bioethics: "The precautionary principle holds that when an action raises threats of harm, precautionary measures should be taken even without full scientific certainty about the harm. Strong versions require proof of safety before proceeding; weak versions merely shift the burden of proof. Critics argue the principle is incoherent—precaution against innovation may itself cause harm (e.g., delaying beneficial technologies). Defenders argue it addresses situations of uncertainty where traditional risk assessment fails, particularly for irreversible or catastrophic potential harms." The precautionary principle advocates:',
+    options: [
+      { letter: 'A', text: 'Waiting for certainty before any action' },
+      { letter: 'B', text: 'Ignoring uncertain threats entirely' },
+      { letter: 'C', text: 'Taking protective measures despite uncertainty about harm' },
+      { letter: 'D', text: 'Maximizing innovation regardless of risk' }
+    ],
+    correctAnswer: 'C',
+    explanation: 'The principle holds "precautionary measures should be taken even without full scientific certainty about the harm." Action despite uncertainty (C). It doesn\'t require waiting for certainty (A)—that\'s what it rejects. It addresses uncertain threats rather than ignoring them (B). It may restrict innovation for precaution (D).',
+    difficulty: 'hard',
+    domain: 'Reading Comprehension',
+    skill: 'Understanding Precautionary Principle'
+  }),
+  addRating({
+    id: 'hard-eng-286',
+    question: 'Which sentence demonstrates correct use of the present perfect tense for ongoing relevance?',
+    options: [
+      { letter: 'A', text: 'The researchers published their findings in 2019.' },
+      { letter: 'B', text: 'The researchers have published their findings in 2019.' },
+      { letter: 'C', text: 'The researchers have published findings that challenge conventional wisdom.' },
+      { letter: 'D', text: 'The researchers published findings that have challenged conventional wisdom since 2019.' }
+    ],
+    correctAnswer: 'C',
+    explanation: 'Present perfect ("have published") signals past action with current relevance; it doesn\'t take specific past time markers. (C) correctly uses present perfect for ongoing relevance (findings still matter). (A) correctly uses simple past with specific date. (B) incorrectly combines present perfect with specific past date. (D) awkwardly mixes tenses.',
+    difficulty: 'hard',
+    domain: 'Writing',
+    skill: 'Present Perfect for Relevance'
+  }),
+  addRating({
+    id: 'hard-eng-287',
+    question: 'A researcher writes: "This limitation notwithstanding, the study provides valuable insights______the findings suggest several directions for future research______we recommend replication with larger samples." Which punctuation pattern correctly handles these related but independent statements?',
+    options: [
+      { letter: 'A', text: '. ... . ...' },
+      { letter: 'B', text: ': ... ; ...' },
+      { letter: 'C', text: '; ... ; ...' },
+      { letter: 'D', text: 'All of the above could work depending on the relationship emphasis.' }
+    ],
+    correctAnswer: 'D',
+    explanation: 'All three patterns can work: (A) treats each as a separate sentence for maximum independence. (B) uses a colon after the first clause to introduce related points, then semicolon. (C) uses semicolons to show close relationship while maintaining independence. The choice depends on how tightly the writer wants to connect the ideas.',
+    difficulty: 'hard',
+    domain: 'Writing',
+    skill: 'Punctuation for Sentence Relationships'
+  }),
+  addRating({
+    id: 'hard-eng-288',
+    question: 'Which revision most effectively converts nominalization to verbal style? Original: "The implementation of the new policy by the administration resulted in the improvement of efficiency."',
+    options: [
+      { letter: 'A', text: 'When the administration implemented the new policy, efficiency improved.' },
+      { letter: 'B', text: 'The administration\'s implementation of the new policy resulted in improved efficiency.' },
+      { letter: 'C', text: 'Implementation of the new policy by administration resulted in efficiency improvement.' },
+      { letter: 'D', text: 'There was implementation of the new policy which resulted in efficiency improvement.' }
+    ],
+    correctAnswer: 'A',
+    explanation: '(A) converts nominalizations to verbs: "implementation" → "implemented," "improvement" → "improved." This creates more direct, vigorous prose. (B) keeps "implementation" as noun. (C) and (D) retain nominalizations and are wordier.',
+    difficulty: 'hard',
+    domain: 'Writing',
+    skill: 'Converting Nominalizations'
+  }),
+  addRating({
+    id: 'hard-eng-289',
+    question: 'Identify the sentence that correctly handles subject-verb agreement with intervening phrases:',
+    options: [
+      { letter: 'A', text: 'The quality of the results, despite several methodological concerns, were impressive.' },
+      { letter: 'B', text: 'The results of the study, including preliminary findings, suggests further investigation.' },
+      { letter: 'C', text: 'The collection of artifacts, along with supporting documents, was donated to the museum.' },
+      { letter: 'D', text: 'The data from multiple sources indicates a clear trend.' }
+    ],
+    correctAnswer: 'C',
+    explanation: 'The subject, not intervening phrases, determines verb agreement. (C) correctly uses singular "was" with singular subject "collection" ("along with supporting documents" is additional, not compound subject). (A) should be "was" (subject is "quality"). (B) should be "suggest" (subject is "results"). (D) may be correct depending on whether "data" is treated as singular or plural—disputed.',
+    difficulty: 'hard',
+    domain: 'Writing',
+    skill: 'Agreement with Intervening Phrases'
+  }),
+  addRating({
+    id: 'hard-eng-290',
+    question: 'A writer needs to create a logical flow between paragraphs. Previous paragraph ends: "These findings have important implications for clinical practice." Next paragraph should discuss limitations. Which opening most effectively transitions?',
+    options: [
+      { letter: 'A', text: 'The study had several limitations.' },
+      { letter: 'B', text: 'Limitations existed in the study.' },
+      { letter: 'C', text: 'These implications should be considered in light of several methodological limitations.' },
+      { letter: 'D', text: 'However, limitations of the study should be noted.' }
+    ],
+    correctAnswer: 'C',
+    explanation: '(C) most effectively bridges paragraphs by linking "implications" (from the previous paragraph) to "limitations" (the new topic), creating a smooth logical transition. (A) and (B) start abruptly without connection. (D) makes a connection but less elegantly than (C).',
+    difficulty: 'hard',
+    domain: 'Writing',
+    skill: 'Paragraph Transitions'
+  }),
+  addRating({
+    id: 'hard-eng-291',
+    question: 'A passage on philosophy of history: "The covering law model, developed by Carl Hempel, held that historical explanation has the same structure as scientific explanation: an event is explained by subsuming it under a general law plus initial conditions. The French Revolution occurred because of general laws about revolution plus specific French conditions. Critics objected that history lacks such laws; human actions require interpretive understanding (Verstehen) rather than causal explanation. William Dray proposed \'rational explanation\'—showing an action was the rational thing to do given the agent\'s beliefs and goals, without invoking covering laws." The covering law model claims that historical explanation:',
+    options: [
+      { letter: 'A', text: 'Requires no general laws' },
+      { letter: 'B', text: 'Differs fundamentally from scientific explanation' },
+      { letter: 'C', text: 'Works by subsuming events under general laws' },
+      { letter: 'D', text: 'Cannot explain unique events' }
+    ],
+    correctAnswer: 'C',
+    explanation: 'The model holds "an event is explained by subsuming it under a general law plus initial conditions." Subsumption under laws (C). It requires general laws (contradicting A). It claims history has "the same structure as scientific explanation" (contradicting B). It aims to explain events (contradicting D).',
+    difficulty: 'hard',
+    domain: 'Reading Comprehension',
+    skill: 'Understanding Covering Law Model'
+  }),
+  addRating({
+    id: 'hard-eng-292',
+    question: 'A passage on political economy: "Dani Rodrik\'s \'trilemma\' argues that countries cannot simultaneously have deep economic integration (globalization), national sovereignty, and democratic politics—only two of three. Deep integration requires harmonizing regulations, constraining domestic policy. Sovereignty allows national variation but conflicts with integration. Democracy demands responsiveness to citizens, who may reject both integration and sovereignty-limiting arrangements. The EU chose integration and limited sovereignty; the Bretton Woods era chose democracy and limited integration. Pure globalization would require sacrificing either sovereignty or democracy." Rodrik\'s trilemma holds that nations must sacrifice:',
+    options: [
+      { letter: 'A', text: 'Nothing—all three goals are achievable' },
+      { letter: 'B', text: 'At least one of globalization, sovereignty, or democracy' },
+      { letter: 'C', text: 'Both sovereignty and democracy for globalization' },
+      { letter: 'D', text: 'Only economic integration' }
+    ],
+    correctAnswer: 'B',
+    explanation: 'Nations "cannot simultaneously have" all three—"only two of three." One must be sacrificed (B). Not all achievable (A). Different choices sacrifice different ones (C is just one option). Various elements can be sacrificed (not only integration, D).',
+    difficulty: 'hard',
+    domain: 'Reading Comprehension',
+    skill: 'Understanding Globalization Trilemma'
+  }),
+  addRating({
+    id: 'hard-eng-293',
+    question: 'A passage on philosophy of action: "Harry Frankfurt distinguished first-order desires (wanting things) from second-order desires (wanting to want things). A drug addict may want the drug (first-order) while wishing they didn\'t want it (second-order). Freedom of will consists in the capacity to make one\'s first-order desires conform to one\'s second-order volitions—wanting what one wants to want. Persons, unlike mere animals, can reflect on and evaluate their own desires. Weakness of will occurs when first-order desires triumph despite conflicting second-order volitions. The hierarchical structure of desire constitutes personhood." Frankfurt defines free will as:',
+    options: [
+      { letter: 'A', text: 'Acting on first-order desires' },
+      { letter: 'B', text: 'Alignment between first-order desires and second-order volitions' },
+      { letter: 'C', text: 'Having no desires at all' },
+      { letter: 'D', text: 'Being determined by external causes' }
+    ],
+    correctAnswer: 'B',
+    explanation: 'Free will is "the capacity to make one\'s first-order desires conform to one\'s second-order volitions—wanting what one wants to want." Alignment between levels (B). Not just acting on first-order desires (A—the addict does that). Not absence of desire (C). Not external determination (D).',
+    difficulty: 'hard',
+    domain: 'Reading Comprehension',
+    skill: 'Understanding Hierarchical Desire Theory'
+  }),
+  addRating({
+    id: 'hard-eng-294',
+    question: 'A passage on philosophy of biology: "The units of selection debate asks at what level natural selection operates. Gene selectionists (Dawkins) argue genes are the ultimate replicators; organisms are vehicles. Multilevel selection theorists argue selection can occur at gene, organism, group, and possibly species levels simultaneously. D.S. Wilson revived group selection, arguing that groups with more cooperators outcompete groups of defectors, even if defectors outcompete cooperators within groups. The debate has implications for understanding altruism: gene-level explanations invoke kin selection; group-level explanations invoke group benefit directly." The units of selection debate concerns:',
+    options: [
+      { letter: 'A', text: 'Whether evolution occurs' },
+      { letter: 'B', text: 'At what level natural selection operates' },
+      { letter: 'C', text: 'Whether genes exist' },
+      { letter: 'D', text: 'How organisms develop' }
+    ],
+    correctAnswer: 'B',
+    explanation: 'The debate "asks at what level natural selection operates"—genes, organisms, groups, or species. Level of selection (B). Not whether evolution occurs (A). Not whether genes exist (C). Not development (D—that\'s a different topic).',
+    difficulty: 'hard',
+    domain: 'Reading Comprehension',
+    skill: 'Understanding Units of Selection'
+  }),
+  addRating({
+    id: 'hard-eng-295',
+    question: 'A passage on philosophy of law: "Joseph Raz\'s service conception of authority holds that authorities are legitimate when following their directives better enables subjects to comply with the reasons that already apply to them. The normal justification thesis: authority is justified if the subject would likely better conform to reasons by accepting the authority\'s directives than by trying to follow reasons directly. A doctor\'s authority on health is legitimate because patients comply better with health-related reasons by following medical advice. This instrumental view grounds authority in expertise and judgment, not mere power or consent." Raz\'s view grounds legitimate authority in:',
+    options: [
+      { letter: 'A', text: 'Mere power over subjects' },
+      { letter: 'B', text: 'Better enabling subjects to follow applicable reasons' },
+      { letter: 'C', text: 'Democratic consent alone' },
+      { letter: 'D', text: 'Traditional custom' }
+    ],
+    correctAnswer: 'B',
+    explanation: 'Authority is legitimate "when following their directives better enables subjects to comply with the reasons that already apply to them." Better reason-following (B). Not mere power (A—explicitly rejected). Not consent alone (C). Not tradition (D).',
+    difficulty: 'hard',
+    domain: 'Reading Comprehension',
+    skill: 'Understanding Service Conception of Authority'
+  }),
+  addRating({
+    id: 'hard-eng-296',
+    question: 'Which sentence correctly uses "whom" in a relative clause?',
+    options: [
+      { letter: 'A', text: 'The researcher whom we interviewed provided valuable insights.' },
+      { letter: 'B', text: 'The researcher whom conducted the study has retired.' },
+      { letter: 'C', text: 'The researcher whom the study was conducted by has retired.' },
+      { letter: 'D', text: 'Both (A) and (C) are correct.' }
+    ],
+    correctAnswer: 'D',
+    explanation: '"Whom" is objective case, used when the relative pronoun receives action. (A) is correct: "we interviewed whom" (whom is object of interviewed). (C) is correct though awkward: "whom" is object of "by." (B) is incorrect: "whom conducted" has whom as subject—should be "who."',
+    difficulty: 'hard',
+    domain: 'Writing',
+    skill: 'Whom in Relative Clauses'
+  }),
+  addRating({
+    id: 'hard-eng-297',
+    question: 'A writer needs to express conditionality. Which sentence correctly uses the subjunctive for hypothetical conditions?',
+    options: [
+      { letter: 'A', text: 'If the sample size was larger, the results would be more reliable.' },
+      { letter: 'B', text: 'If the sample size were larger, the results would be more reliable.' },
+      { letter: 'C', text: 'If the sample size would be larger, the results were more reliable.' },
+      { letter: 'D', text: 'If the sample size is larger, the results would be more reliable.' }
+    ],
+    correctAnswer: 'B',
+    explanation: 'Hypothetical/contrary-to-fact conditions use subjunctive "were" (not "was") with all subjects. (B) correctly uses "If...were...would be" for a hypothetical. (A) uses indicative "was" instead of subjunctive. (C) incorrectly puts "would" in the if-clause. (D) mixes indicative present with conditional "would."',
+    difficulty: 'hard',
+    domain: 'Writing',
+    skill: 'Subjunctive in Conditionals'
+  }),
+  addRating({
+    id: 'hard-eng-298',
+    question: 'Which sentence most effectively uses a periodic structure for emphasis?',
+    options: [
+      { letter: 'A', text: 'The experiment succeeded despite limited funding, skeptical reviewers, and equipment failures.' },
+      { letter: 'B', text: 'Despite limited funding, skeptical reviewers, and equipment failures, the experiment succeeded.' },
+      { letter: 'C', text: 'The experiment, despite limited funding, skeptical reviewers, and equipment failures, succeeded.' },
+      { letter: 'D', text: 'Limited funding, skeptical reviewers, and equipment failures did not prevent the experiment from succeeding.' }
+    ],
+    correctAnswer: 'B',
+    explanation: 'Periodic sentences delay the main clause until the end, building suspense. (B) builds through the obstacles ("Despite...") before delivering the climactic resolution ("the experiment succeeded"). This creates maximum emphasis on success. (A) and (D) are loose sentences. (C) interrupts the main clause.',
+    difficulty: 'hard',
+    domain: 'Writing',
+    skill: 'Periodic Sentence Structure'
+  }),
+  addRating({
+    id: 'hard-eng-299',
+    question: 'A researcher writes: "The findings are consistent with previous research______they extend existing theory in important ways______they raise new questions for future investigation." Which structural approach most effectively presents these parallel points?',
+    options: [
+      { letter: 'A', text: '; ... ; ...' },
+      { letter: 'B', text: ', ... , and ...' },
+      { letter: 'C', text: ': first, ... ; second, ... ; third, ...' },
+      { letter: 'D', text: 'All could work, but (C) provides clearest parallel structure.' }
+    ],
+    correctAnswer: 'D',
+    explanation: 'While all options can connect the clauses, (C) with explicit enumeration ("first...second...third") most clearly signals parallel structure and equal importance of three contributions. This is especially effective in academic writing for clarity. (A) and (B) connect but don\'t explicitly parallel. (D) correctly notes (C) is clearest.',
+    difficulty: 'hard',
+    domain: 'Writing',
+    skill: 'Explicit Parallelism'
+  }),
+  addRating({
+    id: 'hard-eng-300',
+    question: 'Which revision most effectively improves coherence by using a known-new information pattern? Original: "A novel technique was developed. The accuracy improved significantly with this technique. Better outcomes for patients resulted."',
+    options: [
+      { letter: 'A', text: 'A novel technique was developed that significantly improved accuracy, resulting in better outcomes for patients.' },
+      { letter: 'B', text: 'Better outcomes for patients resulted from a novel technique that was developed and improved accuracy significantly.' },
+      { letter: 'C', text: 'Significantly improved accuracy resulted from a novel technique, and better outcomes for patients were the result.' },
+      { letter: 'D', text: 'Patients had better outcomes because accuracy improved significantly due to a novel technique being developed.' }
+    ],
+    correctAnswer: 'A',
+    explanation: 'Known-new pattern: begin sentences with familiar information, end with new. (A) moves logically from known (technique) to new (improved accuracy) to newer (patient outcomes), creating smooth flow. Each new concept becomes the "known" foundation for the next. (B), (C), and (D) have less logical information flow.',
+    difficulty: 'hard',
+    domain: 'Writing',
+    skill: 'Known-New Information Pattern'
   })
 ];
