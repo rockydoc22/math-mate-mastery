@@ -131,56 +131,50 @@ const Home = () => {
         </div>
 
         {/* Hero */}
-        <div className="text-center space-y-4 py-8">
+        <div className="text-center space-y-6 py-8">
           {/* Math expressions floating around */}
-          <div className="relative flex justify-center items-center mb-8 min-h-[160px]">
-            {/* Top left - 40² */}
-            <span className="absolute left-8 md:left-20 top-0 text-lg md:text-xl font-mono text-primary/60 animate-pulse font-semibold">
-              40²
+          <div className="relative flex justify-center items-center min-h-[200px]">
+            {/* Top left - Sigma notation */}
+            <span className="absolute left-0 md:left-4 top-0 font-mono text-primary/70 animate-pulse" style={{ animationDelay: '0.3s' }}>
+              <span className="inline-flex flex-col items-center leading-none">
+                <span className="text-sm md:text-base">40</span>
+                <span className="text-3xl md:text-4xl">Σ</span>
+                <span className="text-sm md:text-base">k=1</span>
+              </span>
+              <span className="align-middle text-lg md:text-xl">(2k-1)</span>
             </span>
             
-            {/* Top right - Sigma notation */}
-            <span className="absolute right-8 md:right-20 top-0 font-mono text-accent/60 animate-pulse" style={{ animationDelay: '0.3s' }}>
-              <span className="inline-flex flex-col items-center leading-none">
-                <span className="text-[10px]">40</span>
-                <span className="text-xl">Σ</span>
-                <span className="text-[10px]">k=1</span>
-              </span>
-              <span className="align-middle text-sm">(2k-1)</span>
+            {/* Top right - Prime factorization */}
+            <span className="absolute right-0 md:right-4 top-0 text-2xl md:text-3xl font-mono text-accent/70 animate-pulse font-bold" style={{ animationDelay: '0.6s' }}>
+              2⁶×5²
             </span>
             
             {/* Left middle - Base 12 */}
-            <span className="absolute left-2 md:left-8 top-1/2 -translate-y-1/2 text-base md:text-lg font-mono text-secondary/60 animate-pulse font-semibold" style={{ animationDelay: '0.6s' }}>
+            <span className="absolute left-0 md:left-8 top-1/2 -translate-y-1/2 text-xl md:text-2xl font-mono text-secondary/70 animate-pulse font-bold" style={{ animationDelay: '0.9s' }}>
               B14₁₂
             </span>
             
-            {/* Center - Main icon area with prime factorization */}
-            <div className="p-6 rounded-2xl bg-gradient-to-br from-primary to-accent shadow-2xl shadow-primary/30">
-              <span className="text-3xl md:text-4xl font-bold text-primary-foreground font-mono">
-                2⁶×5²
+            {/* Center - 40² as the main element */}
+            <div className="p-8 rounded-3xl bg-gradient-to-br from-primary to-accent shadow-2xl shadow-primary/30">
+              <span className="text-5xl md:text-6xl font-bold text-primary-foreground font-mono">
+                40²
               </span>
             </div>
             
             {/* Right middle - Sum of squares */}
-            <span className="absolute right-2 md:right-8 top-1/2 -translate-y-1/2 text-base md:text-lg font-mono text-primary/60 animate-pulse font-semibold" style={{ animationDelay: '0.9s' }}>
+            <span className="absolute right-0 md:right-8 top-1/2 -translate-y-1/2 text-xl md:text-2xl font-mono text-primary/70 animate-pulse font-bold" style={{ animationDelay: '1.2s' }}>
               32²+24²
             </span>
             
             {/* Bottom left - Integral */}
-            <span className="absolute left-8 md:left-20 bottom-0 text-base md:text-lg font-mono text-accent/60 animate-pulse font-semibold" style={{ animationDelay: '1.2s' }}>
+            <span className="absolute left-0 md:left-4 bottom-0 text-xl md:text-2xl font-mono text-accent/70 animate-pulse font-bold" style={{ animationDelay: '1.5s' }}>
               ∫₀⁴⁰2x dx
             </span>
             
-            {/* Bottom right - Square root */}
-            <span className="absolute right-8 md:right-20 bottom-0 text-base md:text-lg font-mono text-secondary/60 animate-pulse font-semibold" style={{ animationDelay: '1.5s' }}>
-              √2560000
-            </span>
+            {/* Bottom right - placeholder for balance */}
           </div>
           
-          <h1 className="text-6xl md:text-7xl font-bold bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">
-            1600
-          </h1>
-          <p className="text-xl text-muted-foreground">The 99.9th Percentile Club</p>
+          <p className="text-xl md:text-2xl text-muted-foreground font-medium">The 99.9th Percentile Club</p>
         </div>
 
         {/* Feature Cards - unique features only */}
