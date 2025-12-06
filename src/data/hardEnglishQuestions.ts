@@ -2113,5 +2113,605 @@ export const hardEnglishQuestions: EnglishQuestion[] = [
     difficulty: 'hard',
     domain: 'Writing',
     skill: 'Rhetorical Use of Semicolons'
+  }),
+  addRating({
+    id: 'hard-eng-141',
+    question: 'A passage on philosophy of religion: "Alvin Plantinga\'s \'free will defense\' addressed the logical problem of evil: how can an omnipotent, omniscient, omnibenevolent God coexist with evil? Plantinga argued that if creating free beings is valuable, and free beings can choose evil, then even an omnipotent God cannot guarantee a world with free beings and no evil—this would be logically contradictory, like creating married bachelors. Critics distinguish moral evil (human choices) from natural evil (earthquakes, disease), questioning whether free will explains the latter." Plantinga\'s defense relies on the claim that:',
+    options: [
+      { letter: 'A', text: 'God is not actually omnipotent' },
+      { letter: 'B', text: 'Free will necessarily involves the possibility of evil' },
+      { letter: 'C', text: 'Evil does not actually exist' },
+      { letter: 'D', text: 'God is not omnibenevolent' }
+    ],
+    correctAnswer: 'B',
+    explanation: 'Plantinga argues "if creating free beings is valuable, and free beings can choose evil, then even an omnipotent God cannot guarantee a world with free beings and no evil." The key claim is that genuine freedom necessarily includes the possibility of choosing evil (B). He doesn\'t deny God\'s attributes (A, D) or evil\'s existence (C).',
+    difficulty: 'hard',
+    domain: 'Reading Comprehension',
+    skill: 'Understanding Theodicy'
+  }),
+  addRating({
+    id: 'hard-eng-142',
+    question: 'A passage on sociology of knowledge: "Thomas Kuhn\'s concept of \'incommensurability\' held that successive scientific paradigms cannot be directly compared or translated. Scientists working in different paradigms see different worlds: what counts as a problem, what constitutes a solution, even what observations mean are paradigm-dependent. Later, Kuhn softened this claim, acknowledging local translatability while maintaining that global semantic equivalence was impossible. Critics charged that strong incommensurability would make scientific progress inexplicable and rational paradigm choice impossible." Strong incommensurability would make it difficult to:',
+    options: [
+      { letter: 'A', text: 'Work within a single paradigm' },
+      { letter: 'B', text: 'Compare the merits of competing theories' },
+      { letter: 'C', text: 'Conduct normal science' },
+      { letter: 'D', text: 'Understand one\'s own paradigm' }
+    ],
+    correctAnswer: 'B',
+    explanation: 'If paradigms are incommensurable, they "cannot be directly compared or translated." Critics argue this would make "rational paradigm choice impossible"—you couldn\'t compare merits across paradigms (B). Working within a paradigm (A, C, D) doesn\'t require cross-paradigm comparison.',
+    difficulty: 'hard',
+    domain: 'Reading Comprehension',
+    skill: 'Understanding Incommensurability'
+  }),
+  addRating({
+    id: 'hard-eng-143',
+    question: 'A passage on bioethics: "The principle of autonomy—respecting individuals\' capacity for self-determination—grounds informed consent practices in medicine. Yet autonomy\'s scope remains contested. Libertarians extend it to include rights to refuse any treatment, consume any substance, or end one\'s life. Communitarians argue that autonomous choices occur within social contexts that may legitimately constrain them; we have obligations to others that limit pure self-determination. Relational autonomy theorists note that the capacity for autonomy itself is socially developed and maintained." Relational autonomy theorists would likely emphasize that:',
+    options: [
+      { letter: 'A', text: 'Autonomy is an innate capacity independent of social relationships' },
+      { letter: 'B', text: 'The development of autonomous agency depends on social conditions' },
+      { letter: 'C', text: 'Individuals should have unlimited freedom of choice' },
+      { letter: 'D', text: 'Autonomy is an illusion that should be abandoned' }
+    ],
+    correctAnswer: 'B',
+    explanation: 'Relational autonomy theorists "note that the capacity for autonomy itself is socially developed and maintained." They emphasize social conditions enabling autonomous agency (B). This contradicts innate/independent capacity (A), doesn\'t endorse unlimited freedom (C—that\'s libertarian), and doesn\'t reject autonomy (D).',
+    difficulty: 'hard',
+    domain: 'Reading Comprehension',
+    skill: 'Understanding Relational Autonomy'
+  }),
+  addRating({
+    id: 'hard-eng-144',
+    question: 'A passage on aesthetics: "Kant\'s theory of aesthetic judgment distinguished the beautiful from the agreeable (what pleases the senses) and the good (what reason approves). Beauty involves \'disinterested\' pleasure—appreciation without desire to possess or use. The judgment \'this is beautiful\' claims universal validity: we expect others to agree, unlike \'this tastes good to me.\' Yet this universality is \'subjective\': it cannot be proven by concepts but felt through the harmonious \'free play\' of imagination and understanding. Beauty is thus paradoxically subjective and universal." According to Kant, judgments of beauty differ from judgments of taste in that beauty claims:',
+    options: [
+      { letter: 'A', text: 'Only personal validity' },
+      { letter: 'B', text: 'Universal agreement from others' },
+      { letter: 'C', text: 'Objective proof through concepts' },
+      { letter: 'D', text: 'No validity whatsoever' }
+    ],
+    correctAnswer: 'B',
+    explanation: 'Kant contrasts "\'this is beautiful\'" which "claims universal validity: we expect others to agree" with "\'this tastes good to me\'" which is personal. Beauty claims universal agreement (B), not personal validity (A). But this universality is "subjective"—felt, not proven by concepts (contradicting C). Beauty claims do have validity (D).',
+    difficulty: 'hard',
+    domain: 'Reading Comprehension',
+    skill: 'Understanding Kantian Aesthetics'
+  }),
+  addRating({
+    id: 'hard-eng-145',
+    question: 'A passage on linguistics: "Noam Chomsky\'s critique of behaviorist language acquisition argued that children cannot learn language solely through imitation and reinforcement. The \'poverty of the stimulus\' argument noted that children produce and understand sentences they\'ve never heard, master complex grammatical rules never explicitly taught, and acquire language despite \'degenerate\' input (errors, fragments). Chomsky proposed an innate \'Universal Grammar\'—a species-specific biological endowment constraining possible human languages. Critics from usage-based linguistics argue that statistical learning from input, combined with general cognitive abilities, suffices." The "poverty of the stimulus" argument claims that:',
+    options: [
+      { letter: 'A', text: 'Children receive insufficient linguistic input' },
+      { letter: 'B', text: 'The input children receive underdetermines the grammar they acquire' },
+      { letter: 'C', text: 'Parents should provide more language stimulation' },
+      { letter: 'D', text: 'Children learn language perfectly through imitation' }
+    ],
+    correctAnswer: 'B',
+    explanation: 'The poverty of stimulus argument is that "children produce and understand sentences they\'ve never heard" and "master complex grammatical rules never explicitly taught" despite "degenerate input." The input underdetermines (doesn\'t fully specify) the grammar acquired (B). This isn\'t about insufficient quantity (A or C) and contradicts learning through imitation (D).',
+    difficulty: 'hard',
+    domain: 'Reading Comprehension',
+    skill: 'Understanding Nativist Arguments'
+  }),
+  addRating({
+    id: 'hard-eng-146',
+    question: 'A passage on philosophy of mind: "Functionalism defines mental states by their causal roles—what inputs cause them, what outputs they cause, and how they relate to other mental states. Pain is whatever plays the pain-role: caused by tissue damage, causes distress and avoidance behavior, interacts with beliefs and desires. This allows multiple realizability: pain could be realized in neurons, silicon, or alien biochemistry. Critics raise the \'absent qualia\' objection: a system might play the functional role of pain without actually experiencing anything—there would be nothing it\'s like to be that system." The "absent qualia" objection suggests that functionalism might fail to capture:',
+    options: [
+      { letter: 'A', text: 'The causal structure of mental states' },
+      { letter: 'B', text: 'The subjective, experiential dimension of consciousness' },
+      { letter: 'C', text: 'How mental states relate to behavior' },
+      { letter: 'D', text: 'The multiple realizability of mental states' }
+    ],
+    correctAnswer: 'B',
+    explanation: 'The absent qualia objection is that "a system might play the functional role of pain without actually experiencing anything—there would be nothing it\'s like to be that system." This targets the subjective experience (qualia) that functionalism might miss (B). Functionalism captures causal structure (A) and behavior relations (C). Multiple realizability (D) is functionalism\'s feature, not what the objection targets.',
+    difficulty: 'hard',
+    domain: 'Reading Comprehension',
+    skill: 'Understanding Consciousness Debates'
+  }),
+  addRating({
+    id: 'hard-eng-147',
+    question: 'A passage on political philosophy: "John Stuart Mill\'s harm principle held that society may only restrict individual liberty to prevent harm to others, not to prevent self-harm or enforce morality. Yet \'harm\' proves difficult to define: does offense count as harm? Economic competition that bankrupts rivals? Pollution that incrementally raises disease risk? Joel Feinberg extended the principle to include serious offense as potentially restricting liberty, while H.L.A. Hart limited harm to setbacks to interests. Paternalists argue that self-harm cases (drug use, risky behavior) do ultimately harm others through healthcare costs and family suffering." According to paternalists, the harm principle:',
+    options: [
+      { letter: 'A', text: 'Should be abandoned entirely' },
+      { letter: 'B', text: 'Is too restrictive because most self-harm affects others' },
+      { letter: 'C', text: 'Adequately justifies all current laws' },
+      { letter: 'D', text: 'Should apply only to physical violence' }
+    ],
+    correctAnswer: 'B',
+    explanation: 'Paternalists "argue that self-harm cases (drug use, risky behavior) do ultimately harm others through healthcare costs and family suffering." They claim the self/other distinction is too restrictive—what seems like pure self-harm actually harms others (B). They don\'t abandon the principle (A), claim it justifies all laws (C), or limit it to violence (D).',
+    difficulty: 'hard',
+    domain: 'Reading Comprehension',
+    skill: 'Understanding Liberty Debates'
+  }),
+  addRating({
+    id: 'hard-eng-148',
+    question: 'A passage on anthropology of religion: "Clifford Geertz defined religion as \'a system of symbols which acts to establish powerful, pervasive, and long-lasting moods and motivations by formulating conceptions of a general order of existence.\' This interpretive approach treats religion as a cultural system to be read like a text. Talal Asad criticized this for ignoring how \'religion\' is itself a modern Western category imposed on diverse practices, and for neglecting power: who gets to define what counts as religion? Asad argued we should study not religion but \'discursive traditions\' with their own histories and disciplinary practices." Asad\'s critique of Geertz centers on:',
+    options: [
+      { letter: 'A', text: 'The accuracy of Geertz\'s textual interpretations' },
+      { letter: 'B', text: 'The imposition of Western categories and neglect of power' },
+      { letter: 'C', text: 'The irrelevance of symbol systems to religious practice' },
+      { letter: 'D', text: 'The superiority of quantitative methods' }
+    ],
+    correctAnswer: 'B',
+    explanation: 'Asad criticized Geertz "for ignoring how \'religion\' is itself a modern Western category imposed on diverse practices, and for neglecting power: who gets to define what counts as religion?" This is about Western categories and power (B). The critique isn\'t about textual accuracy (A), symbol irrelevance (C), or methodology preference (D).',
+    difficulty: 'hard',
+    domain: 'Reading Comprehension',
+    skill: 'Understanding Anthropological Debates'
+  }),
+  addRating({
+    id: 'hard-eng-149',
+    question: 'A passage on economics: "The efficient market hypothesis (EMH) holds that asset prices reflect all available information, making consistent outperformance through stock-picking or market timing impossible. In its strong form, even insider information is instantly incorporated. Behavioral finance challenges EMH by documenting systematic biases: investors overreact to recent news, exhibit herd behavior, and hold losing stocks too long. Market anomalies like the January effect and momentum seem to violate EMH. Yet EMH defenders note that anomalies often disappear once published, and that behavioral biases might cancel out in aggregate." EMH and behavioral finance disagree primarily about:',
+    options: [
+      { letter: 'A', text: 'Whether markets exist' },
+      { letter: 'B', text: 'Whether investor psychology affects prices' },
+      { letter: 'C', text: 'Whether stocks have prices' },
+      { letter: 'D', text: 'Whether economics is a science' }
+    ],
+    correctAnswer: 'B',
+    explanation: 'EMH says prices incorporate all information (investors act rationally). Behavioral finance documents "systematic biases"—psychological factors affecting prices. The core disagreement is whether investor psychology creates exploitable deviations from efficiency (B). Both agree markets and prices exist (A, C). Disciplinary status (D) isn\'t the debate.',
+    difficulty: 'hard',
+    domain: 'Reading Comprehension',
+    skill: 'Understanding Economic Debates'
+  }),
+  addRating({
+    id: 'hard-eng-150',
+    question: 'A passage on philosophy of science: "Nancy Cartwright\'s \'dappled world\' view challenged the idea of fundamental physics providing unified laws governing everything. The laws of physics, she argued, apply only in highly controlled laboratory conditions; outside the laboratory, nature is governed by a patchwork of locally applicable regularities. Fundamental laws are not literally true descriptions of the world but are \'lies\' that work only when interfering factors are screened off. This view contrasts with physics imperialism—the assumption that physics is the fundamental science to which all others reduce." Cartwright argues that fundamental physical laws:',
+    options: [
+      { letter: 'A', text: 'Perfectly describe all natural phenomena' },
+      { letter: 'B', text: 'Apply accurately only under idealized conditions' },
+      { letter: 'C', text: 'Should be abandoned for common sense' },
+      { letter: 'D', text: 'Are the foundation of all other sciences' }
+    ],
+    correctAnswer: 'B',
+    explanation: 'Cartwright argues laws "apply only in highly controlled laboratory conditions" and are "\'lies\' that work only when interfering factors are screened off." They\'re accurate only under idealized conditions (B). She denies they perfectly describe everything (A) and challenges physics imperialism (D). She doesn\'t advocate abandoning science (C).',
+    difficulty: 'hard',
+    domain: 'Reading Comprehension',
+    skill: 'Understanding Philosophy of Physics'
+  }),
+  addRating({
+    id: 'hard-eng-151',
+    question: 'A passage on ethics: "The doctrine of double effect (DDE) distinguishes intending harm as a means from foreseeing harm as a side effect. A doctor may administer pain relief intending to ease suffering while foreseeing it will hasten death, but may not administer with the intention of killing. Critics question whether this distinction can bear such moral weight: if the same outcome results from the same action, does the agent\'s intention really change its moral status? Warren Quinn reformulated DDE in terms of whether harm results from agency (using someone) versus only circumstances." The distinction in DDE concerns:',
+    options: [
+      { letter: 'A', text: 'The outcome of the action' },
+      { letter: 'B', text: 'The agent\'s intention in acting' },
+      { letter: 'C', text: 'The identity of the person harmed' },
+      { letter: 'D', text: 'The temporal sequence of events' }
+    ],
+    correctAnswer: 'B',
+    explanation: 'DDE "distinguishes intending harm as a means from foreseeing harm as a side effect." The key distinction is the agent\'s intention (B)—what they aim at versus what they foresee. Critics question whether intention changes moral status when "the same outcome results from the same action" (so not about outcome A, identity C, or timing D).',
+    difficulty: 'hard',
+    domain: 'Reading Comprehension',
+    skill: 'Understanding Moral Philosophy'
+  }),
+  addRating({
+    id: 'hard-eng-152',
+    question: 'A passage on sociology: "Erving Goffman\'s dramaturgical analysis viewed social life as theatrical performance. In \'front stage\' regions, actors present managed impressions for their audience; in \'backstage\' regions, they relax this performance. The self is not an essential identity but an ongoing accomplishment, produced through impression management. Face-to-face interaction involves mutual vulnerability: each participant\'s performance can be disrupted by the other, requiring cooperative \'face work\' to maintain the interaction order. Goffman\'s micro-sociology influenced symbolic interactionism while remaining distinctive in its focus on interaction rituals." For Goffman, the self is:',
+    options: [
+      { letter: 'A', text: 'A fixed essence that exists prior to social interaction' },
+      { letter: 'B', text: 'Performed and accomplished through social interaction' },
+      { letter: 'C', text: 'Determined entirely by social structure' },
+      { letter: 'D', text: 'Irrelevant to sociological analysis' }
+    ],
+    correctAnswer: 'B',
+    explanation: 'Goffman\'s view is that "the self is not an essential identity but an ongoing accomplishment, produced through impression management." The self is performed in interaction (B). It\'s not fixed/prior (A), not structurally determined (C—Goffman focuses on micro-interaction), and is central to his analysis (D).',
+    difficulty: 'hard',
+    domain: 'Reading Comprehension',
+    skill: 'Understanding Dramaturgical Sociology'
+  }),
+  addRating({
+    id: 'hard-eng-153',
+    question: 'A passage on philosophy of language: "Paul Grice\'s theory of conversational implicature distinguished what sentences literally say from what speakers mean by uttering them. If asked \'Is John a good philosopher?\' and you reply \'He has beautiful handwriting,\' you literally describe his penmanship but implicate that he\'s not a good philosopher. Grice proposed cooperative principles: be informative, truthful, relevant, and clear. Implicatures arise from flouting these maxims: your irrelevant response signals hidden meaning. This explained how communication conveys more than literal content." Grice\'s theory explains how:',
+    options: [
+      { letter: 'A', text: 'Sentences have literal meanings' },
+      { letter: 'B', text: 'Speakers convey more than their words literally mean' },
+      { letter: 'C', text: 'Grammar determines meaning' },
+      { letter: 'D', text: 'Words refer to objects' }
+    ],
+    correctAnswer: 'B',
+    explanation: 'Grice "distinguished what sentences literally say from what speakers mean" and explained "how communication conveys more than literal content." The theory addresses how speakers communicate beyond literal meaning (B). It assumes sentences have literal meaning (A) but explains the additional layer. It\'s not about grammar (C) or reference (D).',
+    difficulty: 'hard',
+    domain: 'Reading Comprehension',
+    skill: 'Understanding Pragmatics'
+  }),
+  addRating({
+    id: 'hard-eng-154',
+    question: 'A passage on art history: "Clement Greenberg\'s formalist criticism championed Abstract Expressionism as the culmination of modernist painting\'s self-purification. Each art should explore its medium\'s unique properties: for painting, flatness. Greenberg traced a teleological progression from Manet\'s acknowledgment of the picture plane through Cubism\'s shallow space to Pollock\'s all-over compositions. Arthur Danto countered that pop art\'s philosophical challenge—why is Warhol\'s Brillo Box art but not supermarket boxes?—ended art\'s progressive narrative. Art could now be anything; philosophy of art had replaced art history." According to Danto, pop art\'s significance was:',
+    options: [
+      { letter: 'A', text: 'Perfecting modernist flatness' },
+      { letter: 'B', text: 'Ending art\'s progressive narrative' },
+      { letter: 'C', text: 'Returning to classical representation' },
+      { letter: 'D', text: 'Abandoning all artistic meaning' }
+    ],
+    correctAnswer: 'B',
+    explanation: 'Danto argued pop art "ended art\'s progressive narrative." Warhol showed "art could now be anything; philosophy of art had replaced art history." Pop art\'s significance was ending the Greenbergian teleological story (B). It didn\'t perfect flatness (A—that was Greenberg\'s view of abstraction), return to classicism (C), or abandon meaning (D—it raised philosophical questions).',
+    difficulty: 'hard',
+    domain: 'Reading Comprehension',
+    skill: 'Understanding Art Theory'
+  }),
+  addRating({
+    id: 'hard-eng-155',
+    question: 'A passage on cognitive science: "The extended mind thesis, proposed by Andy Clark and David Chalmers, argues that cognitive processes can extend beyond the brain into the environment. When Otto uses a notebook to remember addresses, the notebook functions as external memory playing the same cognitive role as biological memory in normal subjects. The parity principle holds that if an external process functions equivalently to an internal process we\'d call cognitive, we should count the external process as cognitive too. Critics question whether functional equivalence suffices, or whether conscious access and biological integration matter." The extended mind thesis challenges the assumption that:',
+    options: [
+      { letter: 'A', text: 'Cognition involves information processing' },
+      { letter: 'B', text: 'Cognition is bounded by the skull' },
+      { letter: 'C', text: 'Minds can interact with environments' },
+      { letter: 'D', text: 'External tools exist' }
+    ],
+    correctAnswer: 'B',
+    explanation: 'The thesis argues "cognitive processes can extend beyond the brain into the environment"—Otto\'s notebook is part of his cognitive system. This challenges the assumption that cognition is bounded by skull/brain (B). It assumes cognition is information processing (A), that minds interact with environments (C), and that tools exist (D).',
+    difficulty: 'hard',
+    domain: 'Reading Comprehension',
+    skill: 'Understanding Extended Cognition'
+  }),
+  addRating({
+    id: 'hard-eng-156',
+    question: 'A passage on epistemology: "Reliabilism, developed by Alvin Goldman, defines knowledge as true belief produced by reliable cognitive processes—processes that tend to produce true beliefs. This contrasts with internalist theories requiring believers to have access to their justification. A chicken-sexer who accurately sorts chicks without knowing how might have reliable knowledge despite lacking articulable justification. Critics raise the generality problem: any belief-forming process can be described at multiple levels of generality, and reliability varies with description level. Which description determines whether the process is reliable?" The generality problem challenges reliabilism by asking:',
+    options: [
+      { letter: 'A', text: 'Whether true beliefs exist' },
+      { letter: 'B', text: 'Which description of a process determines its reliability' },
+      { letter: 'C', text: 'Whether chicken-sexers have knowledge' },
+      { letter: 'D', text: 'Whether justification matters' }
+    ],
+    correctAnswer: 'B',
+    explanation: 'The generality problem is that "any belief-forming process can be described at multiple levels of generality, and reliability varies with description level. Which description determines whether the process is reliable?" The challenge is about which description to use (B). It doesn\'t deny true beliefs (A), isn\'t specifically about chicken-sexers (C), or about justification\'s relevance (D).',
+    difficulty: 'hard',
+    domain: 'Reading Comprehension',
+    skill: 'Understanding Epistemological Objections'
+  }),
+  addRating({
+    id: 'hard-eng-157',
+    question: 'A passage on political theory: "Iris Marion Young distinguished distributive justice from justice as recognition. Distributive approaches (Rawls) focus on fair allocation of goods; recognition approaches address systematic patterns of cultural domination, non-recognition, and disrespect. Oppression has multiple faces: exploitation, marginalization, powerlessness, cultural imperialism, and violence. Young argued that groups—women, racial minorities, disabled people—face structural injustice not reducible to individual bad luck or unfair distribution. Justice requires not just redistribution but recognition of difference and participation in decision-making." Young argues that distributive justice is insufficient because it:',
+    options: [
+      { letter: 'A', text: 'Ignores material inequality' },
+      { letter: 'B', text: 'Fails to address cultural domination and recognition' },
+      { letter: 'C', text: 'Distributes too many goods' },
+      { letter: 'D', text: 'Focuses too much on groups' }
+    ],
+    correctAnswer: 'B',
+    explanation: 'Young "distinguished distributive justice from justice as recognition" because distributive approaches don\'t address "systematic patterns of cultural domination, non-recognition, and disrespect." Distribution alone misses recognition issues (B). She doesn\'t claim distribution ignores material goods (A) or distributes too much (C). She emphasizes group-based oppression (contradicting D).',
+    difficulty: 'hard',
+    domain: 'Reading Comprehension',
+    skill: 'Understanding Justice Theory'
+  }),
+  addRating({
+    id: 'hard-eng-158',
+    question: 'A passage on philosophy of history: "R.G. Collingwood\'s idealism held that history is the re-enactment of past thought. Historians understand historical events by thinking the thoughts of historical actors—reconstructing their reasons, intentions, and beliefs. This \'inside\' of events distinguishes history from natural science, which explains events through covering laws. Collingwood\'s approach was challenged by social historians emphasizing structures and trends beyond individual consciousness, and by postmodernists questioning whether we can ever access past meanings unmediated by our present categories." Collingwood\'s approach to history emphasizes:',
+    options: [
+      { letter: 'A', text: 'Discovering covering laws of historical change' },
+      { letter: 'B', text: 'Reconstructing the thought behind historical actions' },
+      { letter: 'C', text: 'Analyzing economic structures' },
+      { letter: 'D', text: 'Applying present categories to the past' }
+    ],
+    correctAnswer: 'B',
+    explanation: 'Collingwood held "history is the re-enactment of past thought." Historians "understand historical events by thinking the thoughts of historical actors—reconstructing their reasons, intentions, and beliefs." This is reconstructing thought (B). He contrasts history with covering-law science (A). Social historians emphasize structures (C) as a challenge. Postmodernists question present categories (D) as a critique.',
+    difficulty: 'hard',
+    domain: 'Reading Comprehension',
+    skill: 'Understanding Historical Method'
+  }),
+  addRating({
+    id: 'hard-eng-159',
+    question: 'A passage on philosophy of mind: "Eliminative materialism, associated with Paul and Patricia Churchland, argues that folk psychology—our everyday vocabulary of beliefs, desires, intentions—is a failed theory that will be eliminated as neuroscience advances, just as phlogiston and vital spirits were eliminated. There are no beliefs or desires in the same sense there is no phlogiston. Critics object that folk psychology\'s predictive success shows it captures something real, and that any scientific account of cognition will need to explain the phenomena folk psychology describes, even if in different terms." Eliminative materialism claims that:',
+    options: [
+      { letter: 'A', text: 'Folk psychology provides accurate explanations' },
+      { letter: 'B', text: 'Mental terms like "belief" may not refer to anything real' },
+      { letter: 'C', text: 'Neuroscience will confirm folk psychology' },
+      { letter: 'D', text: 'We should not study the brain' }
+    ],
+    correctAnswer: 'B',
+    explanation: 'Eliminativism argues folk psychology "is a failed theory that will be eliminated"—"there are no beliefs or desires in the same sense there is no phlogiston." Mental terms may not refer to real entities (B). It rejects folk psychology\'s accuracy (A), doesn\'t predict confirmation (C), and supports neuroscience (D is opposite).',
+    difficulty: 'hard',
+    domain: 'Reading Comprehension',
+    skill: 'Understanding Eliminativism'
+  }),
+  addRating({
+    id: 'hard-eng-160',
+    question: 'A passage on sociology of law: "Legal consciousness studies examine how ordinary people understand and use law in everyday life. Rather than seeing law as a unified system imposed from above, researchers document diverse orientations: some see law as a neutral arbiter (\'before the law\'), others as a game to be played (\'with the law\'), still others as oppressive and to be resisted (\'against the law\'). These schemas are not mutually exclusive; individuals shift between them contextually. This approach decentralizes legal expertise, showing how legal meaning is produced through practice, not just doctrine." Legal consciousness research differs from traditional legal studies in:',
+    options: [
+      { letter: 'A', text: 'Focusing on judicial decisions and doctrine' },
+      { letter: 'B', text: 'Examining how ordinary people understand and use law' },
+      { letter: 'C', text: 'Assuming law is a unified system' },
+      { letter: 'D', text: 'Prioritizing legal expertise over lay understanding' }
+    ],
+    correctAnswer: 'B',
+    explanation: 'Legal consciousness studies "examine how ordinary people understand and use law in everyday life" and "decentralizes legal expertise." This differs from traditional focus on doctrine and expertise (B). Traditional studies focus on courts (A), assume unified law (C), and privilege expertise (D)—what legal consciousness research moves away from.',
+    difficulty: 'hard',
+    domain: 'Reading Comprehension',
+    skill: 'Understanding Legal Consciousness'
+  }),
+  addRating({
+    id: 'hard-eng-161',
+    question: 'Which revision most effectively clarifies the relationship between the two ideas? Original: "The experiment yielded surprising results. The researchers revised their hypothesis."',
+    options: [
+      { letter: 'A', text: 'The experiment yielded surprising results, and the researchers revised their hypothesis.' },
+      { letter: 'B', text: 'Because the experiment yielded surprising results, the researchers revised their hypothesis.' },
+      { letter: 'C', text: 'The experiment yielded surprising results, but the researchers revised their hypothesis.' },
+      { letter: 'D', text: 'The experiment yielded surprising results; however, the researchers revised their hypothesis.' }
+    ],
+    correctAnswer: 'B',
+    explanation: '(B) uses "because" to explicitly show causation: surprising results caused the revision. (A) merely adds "and," not clarifying relationship. (C) and (D) use contrastive conjunctions ("but," "however") that don\'t fit—revision following surprising results isn\'t a contrast.',
+    difficulty: 'hard',
+    domain: 'Writing',
+    skill: 'Causal Clarity'
+  }),
+  addRating({
+    id: 'hard-eng-162',
+    question: 'A student writes: "The study investigated whether socioeconomic factors effected student performance." Which word should be changed to correct the sentence?',
+    options: [
+      { letter: 'A', text: 'Change "investigated" to "researched"' },
+      { letter: 'B', text: 'Change "whether" to "if"' },
+      { letter: 'C', text: 'Change "effected" to "affected"' },
+      { letter: 'D', text: 'Change "performance" to "performing"' }
+    ],
+    correctAnswer: 'C',
+    explanation: '"Effect" as a verb means to bring about/cause; "affect" means to influence. The sentence needs "affected" (influenced) not "effected" (caused to exist). "Socioeconomic factors affected (influenced) student performance" is correct. The other options don\'t address errors.',
+    difficulty: 'hard',
+    domain: 'Writing',
+    skill: 'Effect vs. Affect'
+  }),
+  addRating({
+    id: 'hard-eng-163',
+    question: 'Which sentence correctly uses "comprise"?',
+    options: [
+      { letter: 'A', text: 'The committee is comprised of seven members.' },
+      { letter: 'B', text: 'Seven members comprise the committee.' },
+      { letter: 'C', text: 'The committee is comprised from seven members.' },
+      { letter: 'D', text: 'Seven members are comprised in the committee.' }
+    ],
+    correctAnswer: 'B',
+    explanation: '"Comprise" means "to contain/include." The whole comprises the parts, not vice versa. (B) correctly uses "Seven members comprise (make up) the committee." "Is comprised of" (A) is considered incorrect by strict usage guides—use "comprises" or "is composed of." (C) and (D) are grammatically wrong.',
+    difficulty: 'hard',
+    domain: 'Writing',
+    skill: 'Precise Vocabulary'
+  }),
+  addRating({
+    id: 'hard-eng-164',
+    question: 'A researcher writes: "The data supports the hypothesis that environmental factors, not genetic ones, are primary." How should this sentence be revised for formal academic writing?',
+    options: [
+      { letter: 'A', text: 'The data support the hypothesis that environmental factors, not genetic ones, are primary.' },
+      { letter: 'B', text: 'The data supports the hypotheses that environmental factors, not genetic ones, is primary.' },
+      { letter: 'C', text: 'The datum supports the hypothesis that environmental factors, not genetic ones, are primary.' },
+      { letter: 'D', text: 'No revision is needed.' }
+    ],
+    correctAnswer: 'A',
+    explanation: 'In formal academic writing, "data" is traditionally treated as plural (Latin plural of "datum"), taking "support" not "supports." (A) correctly uses "data support." (B) creates subject-verb disagreement. (C) uses "datum" (singular) inappropriately when discussing multiple data points. "Data supports" is increasingly accepted in casual use but (A) is preferred in formal contexts.',
+    difficulty: 'hard',
+    domain: 'Writing',
+    skill: 'Formal Usage'
+  }),
+  addRating({
+    id: 'hard-eng-165',
+    question: 'Which sentence demonstrates correct parallel structure?',
+    options: [
+      { letter: 'A', text: 'The study aims to identify causes, to measure effects, and documenting outcomes.' },
+      { letter: 'B', text: 'The study aims to identify causes, measure effects, and document outcomes.' },
+      { letter: 'C', text: 'The study aims to identify causes, measuring effects, and to document outcomes.' },
+      { letter: 'D', text: 'The study aims at identifying causes, to measure effects, and documenting outcomes.' }
+    ],
+    correctAnswer: 'B',
+    explanation: 'Parallel structure requires consistent grammatical forms in a series. (B) uses three bare infinitives after "to": "identify," "measure," "document." (A), (C), and (D) mix infinitives with gerunds or inconsistently use "to," breaking parallelism.',
+    difficulty: 'hard',
+    domain: 'Writing',
+    skill: 'Parallel Structure'
+  }),
+  addRating({
+    id: 'hard-eng-166',
+    question: 'A writer wants to add emphasis to the final element of this sentence: "The policy affected housing, employment, and education." Which revision most effectively adds this emphasis?',
+    options: [
+      { letter: 'A', text: 'The policy affected housing, employment, and, most significantly, education.' },
+      { letter: 'B', text: 'The policy affected housing, employment, and education also.' },
+      { letter: 'C', text: 'The policy affected housing, employment, and education too.' },
+      { letter: 'D', text: 'The policy affected housing, employment, education.' }
+    ],
+    correctAnswer: 'A',
+    explanation: '(A) adds explicit emphasis with "most significantly" set off by commas, highlighting education as the key item. (B) and (C) add weak, ambiguous modifiers. (D) removes the conjunction without adding emphasis. The parenthetical "most significantly" effectively draws attention to the final item.',
+    difficulty: 'hard',
+    domain: 'Writing',
+    skill: 'Adding Emphasis'
+  }),
+  addRating({
+    id: 'hard-eng-167',
+    question: 'Which sentence correctly uses "whom"?',
+    options: [
+      { letter: 'A', text: 'The researcher whom conducted the study presented the findings.' },
+      { letter: 'B', text: 'The researcher whom the committee selected presented the findings.' },
+      { letter: 'C', text: 'The committee selected the researcher whom was most qualified.' },
+      { letter: 'D', text: 'Whom do you think conducted the study?' }
+    ],
+    correctAnswer: 'B',
+    explanation: '"Whom" is objective case (object of verb or preposition). (B) is correct: "whom the committee selected"—whom is object of "selected." (A) needs "who" as subject of "conducted." (C) needs "who" as subject of "was." (D) needs "who" as subject of "conducted" ("you think" is parenthetical).',
+    difficulty: 'hard',
+    domain: 'Writing',
+    skill: 'Who vs. Whom'
+  }),
+  addRating({
+    id: 'hard-eng-168',
+    question: 'A scholar writes: "The author\'s argument, while compelling in its logic, nevertheless fails to adequately account for the historical evidence, which, as numerous scholars have noted, contradicts several of the central claims." How might this sentence be revised for clarity and concision?',
+    options: [
+      { letter: 'A', text: 'While logically compelling, the author\'s argument fails to account for historical evidence contradicting several central claims.' },
+      { letter: 'B', text: 'The author\'s argument fails, which numerous scholars have noted about the historical evidence.' },
+      { letter: 'C', text: 'The argument is compelling but nevertheless fails.' },
+      { letter: 'D', text: 'Scholars have noted that the author\'s argument is compelling in logic.' }
+    ],
+    correctAnswer: 'A',
+    explanation: '(A) reduces wordiness while preserving meaning: removes redundant "nevertheless" (the concessive is clear from "while"), streamlines "as numerous scholars have noted," and tightens phrasing. (B) is unclear. (C) loses specific content. (D) misses the critique entirely.',
+    difficulty: 'hard',
+    domain: 'Writing',
+    skill: 'Concision and Clarity'
+  }),
+  addRating({
+    id: 'hard-eng-169',
+    question: 'Which sentence correctly punctuates the introductory element?',
+    options: [
+      { letter: 'A', text: 'After analyzing the data the researchers published their findings.' },
+      { letter: 'B', text: 'After analyzing the data, the researchers published their findings.' },
+      { letter: 'C', text: 'After, analyzing the data the researchers published their findings.' },
+      { letter: 'D', text: 'After analyzing, the data the researchers published their findings.' }
+    ],
+    correctAnswer: 'B',
+    explanation: 'Introductory phrases should be followed by a comma. (B) correctly places the comma after the introductory phrase "After analyzing the data." (A) lacks the comma. (C) and (D) place commas incorrectly within the introductory phrase.',
+    difficulty: 'hard',
+    domain: 'Writing',
+    skill: 'Introductory Phrase Punctuation'
+  }),
+  addRating({
+    id: 'hard-eng-170',
+    question: 'A student writes: "The reason for the failure is because the system was overloaded." How should this sentence be revised?',
+    options: [
+      { letter: 'A', text: 'The reason for the failure is that the system was overloaded.' },
+      { letter: 'B', text: 'The reason for the failure is because of the system being overloaded.' },
+      { letter: 'C', text: 'The reason for why the failure happened is because the system was overloaded.' },
+      { letter: 'D', text: 'No revision is needed.' }
+    ],
+    correctAnswer: 'A',
+    explanation: '"The reason is because" is redundant—"because" means "for the reason that." Use "The reason is that" or simply "because." (A) correctly uses "is that." (B) adds wordiness. (C) adds more redundancy with "reason for why."',
+    difficulty: 'hard',
+    domain: 'Writing',
+    skill: 'Redundancy'
+  }),
+  addRating({
+    id: 'hard-eng-171',
+    question: 'Which revision most effectively creates a transition between these paragraphs? Paragraph 1 ends: "...the policy achieved its stated objectives." Paragraph 2 begins: "Critics have raised concerns about unintended consequences."',
+    options: [
+      { letter: 'A', text: 'Begin Paragraph 2: "And critics have raised concerns about unintended consequences."' },
+      { letter: 'B', text: 'Begin Paragraph 2: "Despite these achievements, critics have raised concerns about unintended consequences."' },
+      { letter: 'C', text: 'Begin Paragraph 2: "Similarly, critics have raised concerns about unintended consequences."' },
+      { letter: 'D', text: 'Begin Paragraph 2: "Therefore, critics have raised concerns about unintended consequences."' }
+    ],
+    correctAnswer: 'B',
+    explanation: 'The transition moves from success to criticism—a concessive relationship. (B) "Despite these achievements" acknowledges the previous point while signaling the shift to criticism. (A) uses weak "and." (C) "Similarly" wrongly suggests parallel ideas. (D) "Therefore" wrongly suggests causation.',
+    difficulty: 'hard',
+    domain: 'Writing',
+    skill: 'Paragraph Transitions'
+  }),
+  addRating({
+    id: 'hard-eng-172',
+    question: 'Which sentence uses the subjunctive mood correctly?',
+    options: [
+      { letter: 'A', text: 'If I was the researcher, I would approach the problem differently.' },
+      { letter: 'B', text: 'If I were the researcher, I would approach the problem differently.' },
+      { letter: 'C', text: 'If I would be the researcher, I would approach the problem differently.' },
+      { letter: 'D', text: 'If I am the researcher, I would approach the problem differently.' }
+    ],
+    correctAnswer: 'B',
+    explanation: 'The subjunctive "were" is used for contrary-to-fact conditions (the speaker is not the researcher). (B) correctly uses "If I were." (A) uses indicative "was" incorrectly for hypothetical. (C) uses "would be" in the if-clause incorrectly. (D) mixes indicative "am" with conditional "would."',
+    difficulty: 'hard',
+    domain: 'Writing',
+    skill: 'Subjunctive Mood'
+  }),
+  addRating({
+    id: 'hard-eng-173',
+    question: 'A researcher needs to cite multiple authors. Which sentence correctly handles the citation according to standard academic practice?',
+    options: [
+      { letter: 'A', text: 'Several scholars (Smith, 2020, Jones, 2021, Brown, 2022) have addressed this issue.' },
+      { letter: 'B', text: 'Several scholars (Smith, 2020; Jones, 2021; Brown, 2022) have addressed this issue.' },
+      { letter: 'C', text: 'Several scholars, Smith, 2020, Jones, 2021, Brown, 2022, have addressed this issue.' },
+      { letter: 'D', text: 'Several scholars Smith (2020) Jones (2021) Brown (2022) have addressed this issue.' }
+    ],
+    correctAnswer: 'B',
+    explanation: 'Multiple citations within parentheses should be separated by semicolons (B). Commas (A) create ambiguity since they also separate author from year. (C) and (D) don\'t use proper parenthetical citation format.',
+    difficulty: 'hard',
+    domain: 'Writing',
+    skill: 'Academic Citation'
+  }),
+  addRating({
+    id: 'hard-eng-174',
+    question: 'Which sentence demonstrates correct use of "less" versus "fewer"?',
+    options: [
+      { letter: 'A', text: 'The treatment group showed less symptoms than the control group.' },
+      { letter: 'B', text: 'The treatment group showed fewer symptoms than the control group.' },
+      { letter: 'C', text: 'The experiment required less participants than expected.' },
+      { letter: 'D', text: 'The study found less correlations than predicted.' }
+    ],
+    correctAnswer: 'B',
+    explanation: '"Fewer" is used with countable nouns (symptoms, participants, correlations); "less" is used with uncountable nouns (time, money, water). (B) correctly uses "fewer symptoms" (countable). (A), (C), and (D) incorrectly use "less" with countable nouns.',
+    difficulty: 'hard',
+    domain: 'Writing',
+    skill: 'Less vs. Fewer'
+  }),
+  addRating({
+    id: 'hard-eng-175',
+    question: 'A writer wants to qualify a strong claim. Original: "The study proves that social media causes depression in teenagers." Which revision appropriately qualifies the claim for academic writing?',
+    options: [
+      { letter: 'A', text: 'The study sort of proves that social media causes depression in teenagers.' },
+      { letter: 'B', text: 'The study suggests a correlation between social media use and depression symptoms in adolescent populations.' },
+      { letter: 'C', text: 'The study definitely proves that social media causes depression in teenagers.' },
+      { letter: 'D', text: 'The study proves maybe that social media causes depression in teenagers.' }
+    ],
+    correctAnswer: 'B',
+    explanation: '(B) appropriately qualifies by: using "suggests" instead of "proves," noting "correlation" instead of causation, specifying "symptoms" instead of diagnosing, and using precise term "adolescent populations." (A) and (D) use informal qualifiers. (C) strengthens rather than qualifies.',
+    difficulty: 'hard',
+    domain: 'Writing',
+    skill: 'Academic Hedging'
+  }),
+  addRating({
+    id: 'hard-eng-176',
+    question: 'Which sentence correctly handles the possessive of a plural noun?',
+    options: [
+      { letter: 'A', text: 'The participant\'s responses were collected after each trial.' },
+      { letter: 'B', text: 'The participants\' responses were collected after each trial.' },
+      { letter: 'C', text: 'The participants responses were collected after each trial.' },
+      { letter: 'D', text: 'The participants\'s responses were collected after each trial.' }
+    ],
+    correctAnswer: 'B',
+    explanation: 'For plural nouns ending in -s, the possessive adds an apostrophe after the s: "participants\'." (B) is correct. (A) uses singular possessive when context suggests multiple participants. (C) omits the apostrophe entirely. (D) incorrectly adds \'s after the plural s.',
+    difficulty: 'hard',
+    domain: 'Writing',
+    skill: 'Plural Possessives'
+  }),
+  addRating({
+    id: 'hard-eng-177',
+    question: 'A researcher writes: "Due to the fact that funding was limited, the study was terminated early." How can this sentence be revised for concision?',
+    options: [
+      { letter: 'A', text: 'Due to funding being limited, the study was terminated early.' },
+      { letter: 'B', text: 'Because funding was limited, the study was terminated early.' },
+      { letter: 'C', text: 'Owing to the fact that funding was limited, the study was terminated early.' },
+      { letter: 'D', text: 'In light of the fact that funding was limited, the study was terminated early.' }
+    ],
+    correctAnswer: 'B',
+    explanation: '"Due to the fact that" is a wordy way of saying "because." (B) uses the concise "because." (A) is slightly better but still wordy. (C) and (D) substitute equally or more wordy phrases.',
+    difficulty: 'hard',
+    domain: 'Writing',
+    skill: 'Wordiness'
+  }),
+  addRating({
+    id: 'hard-eng-178',
+    question: 'Which sentence correctly handles the comparative form?',
+    options: [
+      { letter: 'A', text: 'This methodology is more simpler than traditional approaches.' },
+      { letter: 'B', text: 'This methodology is more simple than traditional approaches.' },
+      { letter: 'C', text: 'This methodology is simpler than traditional approaches.' },
+      { letter: 'D', text: 'This methodology is most simpler than traditional approaches.' }
+    ],
+    correctAnswer: 'C',
+    explanation: 'Short adjectives (like "simple") form comparatives by adding -er, not using "more." (C) correctly uses "simpler." (A) double-marks the comparative. (B) uses "more" unnecessarily with a short adjective. (D) incorrectly combines superlative "most" with comparative "-er."',
+    difficulty: 'hard',
+    domain: 'Writing',
+    skill: 'Comparative Forms'
+  }),
+  addRating({
+    id: 'hard-eng-179',
+    question: 'A writer wants to introduce a contrasting point. Which transitional phrase is most appropriate? "The initial results supported the hypothesis. ________, subsequent trials revealed significant anomalies."',
+    options: [
+      { letter: 'A', text: 'Moreover' },
+      { letter: 'B', text: 'Similarly' },
+      { letter: 'C', text: 'However' },
+      { letter: 'D', text: 'Therefore' }
+    ],
+    correctAnswer: 'C',
+    explanation: 'The sentence moves from support to anomalies—a contrast. (C) "However" signals this contrast. (A) "Moreover" adds supporting information. (B) "Similarly" indicates parallel ideas. (D) "Therefore" indicates consequence.',
+    difficulty: 'hard',
+    domain: 'Writing',
+    skill: 'Contrastive Transitions'
+  }),
+  addRating({
+    id: 'hard-eng-180',
+    question: 'Which sentence correctly uses "among" versus "between"?',
+    options: [
+      { letter: 'A', text: 'The researchers found no significant differences between the three groups.' },
+      { letter: 'B', text: 'The researchers found no significant differences among the three groups.' },
+      { letter: 'C', text: 'The treaty was signed between the five nations.' },
+      { letter: 'D', text: 'The choice was among the two options.' }
+    ],
+    correctAnswer: 'B',
+    explanation: 'Traditional rule: "between" for two items, "among" for three or more. (B) correctly uses "among the three groups." (A) uses "between" with three groups. (C) uses "between" with five nations. (D) uses "among" with only two options. However, modern usage allows "between" for distinct items even if more than two.',
+    difficulty: 'hard',
+    domain: 'Writing',
+    skill: 'Among vs. Between'
   })
 ];
