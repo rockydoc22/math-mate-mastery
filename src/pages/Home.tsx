@@ -68,7 +68,7 @@ const Home = () => {
     { value: 10, label: "10 Questions" },
     { value: 25, label: "25 Questions" },
     { value: 50, label: "50 Questions" },
-    { value: 98, label: "Full SAT (98 Q)" },
+    { value: 98, label: "Full SAT (98 questions)" },
   ];
 
   return (
