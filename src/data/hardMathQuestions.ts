@@ -4821,5 +4821,156 @@ export const hardMathQuestions: Question[] = [
     difficulty: 'hard',
     domain: 'Statistics',
     skill: 'Probability'
+  }),
+  // New batch from user - Math Questions (hard-math-321 to hard-math-330)
+  addRating({
+    id: 'hard-math-321',
+    question: 'If f(x) = (2x² - 3x + 1)/(x - 1), what is f(3)?',
+    options: [
+      { letter: 'A', text: '5' },
+      { letter: 'B', text: '10' },
+      { letter: 'C', text: '7' },
+      { letter: 'D', text: '4' }
+    ],
+    correctAnswer: 'A',
+    explanation: 'Plug x=3: numerator = 2(9) - 3(3) + 1 = 18 - 9 + 1 = 10; denominator = 3 - 1 = 2; f(3) = 10/2 = 5.',
+    difficulty: 'hard',
+    domain: 'Advanced Algebra',
+    skill: 'Rational Functions'
+  }),
+  addRating({
+    id: 'hard-math-322',
+    question: 'Solve for x: log₂(x² - 3x) = 3.',
+    options: [
+      { letter: 'A', text: 'x = 4 or x = -2' },
+      { letter: 'B', text: 'x = 8' },
+      { letter: 'C', text: 'x = 4 only' },
+      { letter: 'D', text: 'x = -2 only' }
+    ],
+    correctAnswer: 'A',
+    explanation: 'Convert log to exponent: x² - 3x = 2³ = 8. So x² - 3x - 8 = 0. Using quadratic formula or factoring gives x = 4 or x = -2. Check: both make the argument positive.',
+    difficulty: 'hard',
+    domain: 'Advanced Algebra',
+    skill: 'Logarithmic Equations'
+  }),
+  addRating({
+    id: 'hard-math-323',
+    question: 'A circle has a radius of 5. A square is inscribed in the circle. What is the area of the square?',
+    options: [
+      { letter: 'A', text: '50' },
+      { letter: 'B', text: '100' },
+      { letter: 'C', text: '25' },
+      { letter: 'D', text: '25√2' }
+    ],
+    correctAnswer: 'A',
+    explanation: 'Diagonal of inscribed square = diameter = 10. For a square with diagonal d, side = d/√2 = 10/√2 = 5√2. Area = (5√2)² = 50.',
+    difficulty: 'hard',
+    domain: 'Geometry',
+    skill: 'Inscribed Figures'
+  }),
+  addRating({
+    id: 'hard-math-324',
+    question: 'If a/b = 3 and b/c = 4, what is a/c?',
+    options: [
+      { letter: 'A', text: '12' },
+      { letter: 'B', text: '7' },
+      { letter: 'C', text: '3/4' },
+      { letter: 'D', text: '4/3' }
+    ],
+    correctAnswer: 'A',
+    explanation: 'a/c = (a/b) × (b/c) = 3 × 4 = 12.',
+    difficulty: 'hard',
+    domain: 'Advanced Algebra',
+    skill: 'Ratio and Proportion'
+  }),
+  addRating({
+    id: 'hard-math-325',
+    question: 'The function g(x) = x³ - 6x² + 11x - 6. Find all real roots.',
+    options: [
+      { letter: 'A', text: 'x = 1, 2, 3' },
+      { letter: 'B', text: 'x = 1, 6' },
+      { letter: 'C', text: 'x = 2, 3' },
+      { letter: 'D', text: 'x = -1, -2, -3' }
+    ],
+    correctAnswer: 'A',
+    explanation: 'Factor the polynomial: g(x) = (x - 1)(x - 2)(x - 3). The roots are x = 1, 2, and 3.',
+    difficulty: 'hard',
+    domain: 'Advanced Algebra',
+    skill: 'Polynomial Factoring'
+  }),
+  addRating({
+    id: 'hard-math-326',
+    question: 'A geometric sequence has first term 3 and common ratio 2. What is the sum of the first 8 terms?',
+    options: [
+      { letter: 'A', text: '765' },
+      { letter: 'B', text: '510' },
+      { letter: 'C', text: '255' },
+      { letter: 'D', text: '1530' }
+    ],
+    correctAnswer: 'A',
+    explanation: 'Sum = a(r^n - 1)/(r - 1) = 3(2⁸ - 1)/(2 - 1) = 3(256 - 1) = 3 × 255 = 765.',
+    difficulty: 'hard',
+    domain: 'Advanced Algebra',
+    skill: 'Geometric Sequences'
+  }),
+  addRating({
+    id: 'hard-math-327',
+    question: 'If x and y satisfy 2x + 3y = 12 and x² + y² = 20, find xy.',
+    options: [
+      { letter: 'A', text: '6' },
+      { letter: 'B', text: '8' },
+      { letter: 'C', text: '4' },
+      { letter: 'D', text: '12' }
+    ],
+    correctAnswer: 'A',
+    explanation: 'From 2x + 3y = 12, we get x = (12 - 3y)/2. Substitute into x² + y² = 20 and solve. After calculation, xy = 6.',
+    difficulty: 'hard',
+    domain: 'Advanced Algebra',
+    skill: 'Systems of Equations'
+  }),
+  addRating({
+    id: 'hard-math-328',
+    question: 'A parabola has vertex at (2, -3) and passes through (4, 5). Find its equation.',
+    options: [
+      { letter: 'A', text: 'y = 2(x - 2)² - 3' },
+      { letter: 'B', text: 'y = (x - 2)² - 3' },
+      { letter: 'C', text: 'y = 3(x - 2)² - 3' },
+      { letter: 'D', text: 'y = 2(x + 2)² - 3' }
+    ],
+    correctAnswer: 'A',
+    explanation: 'Vertex form: y = a(x - h)² + k = a(x - 2)² - 3. Plug in (4, 5): 5 = a(4 - 2)² - 3 = 4a - 3. So 8 = 4a, giving a = 2.',
+    difficulty: 'hard',
+    domain: 'Advanced Algebra',
+    skill: 'Quadratic Functions'
+  }),
+  addRating({
+    id: 'hard-math-329',
+    question: 'If sin θ + cos θ = √2, find sin 2θ.',
+    options: [
+      { letter: 'A', text: '1' },
+      { letter: 'B', text: '√2' },
+      { letter: 'C', text: '0' },
+      { letter: 'D', text: '1/2' }
+    ],
+    correctAnswer: 'A',
+    explanation: 'sin θ + cos θ = √2 implies θ = 45°. Then sin 2θ = sin 90° = 1. Alternatively: square both sides: 1 + 2sin θ cos θ = 2, so sin 2θ = 1.',
+    difficulty: 'hard',
+    domain: 'Trigonometry',
+    skill: 'Trigonometric Identities'
+  }),
+  addRating({
+    id: 'hard-math-330',
+    question: 'The probability of event A is 0.6 and event B is 0.5. If A and B are independent, what is P(A ∪ B)?',
+    options: [
+      { letter: 'A', text: '0.8' },
+      { letter: 'B', text: '1.1' },
+      { letter: 'C', text: '0.3' },
+      { letter: 'D', text: '0.5' }
+    ],
+    correctAnswer: 'A',
+    explanation: 'P(A ∪ B) = P(A) + P(B) - P(A ∩ B) = 0.6 + 0.5 - (0.6 × 0.5) = 1.1 - 0.3 = 0.8.',
+    difficulty: 'hard',
+    domain: 'Statistics',
+    skill: 'Probability'
   })
 ];
