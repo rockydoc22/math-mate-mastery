@@ -4517,22 +4517,22 @@ export const hardEnglishQuestions: EnglishQuestion[] = [
   // Questions imported from SAT_Questions.docx
   addRating({
     id: 'sat-doc-001',
-    question: 'Marta Coll and colleagues\\'  2010 Mediterranean Sea biodiversity census reported approximately 17,000 species, nearly double the number reported in Carlo Bianchi and Carla Morri\\'s 2000 census—a difference only partly attributable to the description of new invertebrate species in the interim. Another factor is that the morphological variability of microorganisms is poorly understood compared to that of vertebrates, invertebrates, plants, and algae, creating uncertainty about how to evaluate microorganisms as species. Researchers\\' decisions on such matters therefore can be highly consequential. Indeed, the two censuses reported similar counts of vertebrate, plant, and algal species, suggesting that ______. Which choice most logically completes the text?',
+    question: 'Marta Coll and colleagues\' 2010 Mediterranean Sea biodiversity census reported approximately 17,000 species, nearly double the number reported in Carlo Bianchi and Carla Morri\'s 2000 census--a difference only partly attributable to the description of new invertebrate species in the interim. Another factor is that the morphological variability of microorganisms is poorly understood compared to that of vertebrates, invertebrates, plants, and algae, creating uncertainty about how to evaluate microorganisms as species. Researchers\' decisions on such matters therefore can be highly consequential. Indeed, the two censuses reported similar counts of vertebrate, plant, and algal species, suggesting that ______. Which choice most logically completes the text?',
     options: [
-      { letter: 'A', text: 'Coll and colleagues reported a much higher number of species than Bianchi and Morri did largely due to the inclusion of invertebrate species that had not been described at the time of Bianchi and Morri\\'s census.' },
+      { letter: 'A', text: 'Coll and colleagues reported a much higher number of species than Bianchi and Morri did largely due to the inclusion of invertebrate species that had not been described at the time of Bianchi and Morri\'s census.' },
       { letter: 'B', text: 'some differences observed in microorganisms may have been treated as variations within species by Bianchi and Morri but treated as indicative of distinct species by Coll and colleagues.' },
       { letter: 'C', text: 'Bianchi and Morri may have been less sensitive to the degree of morphological variation displayed within a typical species of microorganism than Coll and colleagues were.' },
       { letter: 'D', text: 'the absence of clarity regarding how to differentiate among species of microorganisms may have resulted in Coll and colleagues underestimating the number of microorganism species.' }
     ],
     correctAnswer: 'B',
-    explanation: 'The passage states that vertebrate, plant, and algal counts were similar between censuses, but total counts nearly doubled. Since microorganism classification is uncertain, the difference likely comes from different decisions about whether microorganism variations represent distinct species. (B) captures this—same organisms, different classification decisions.',
+    explanation: 'The passage states that vertebrate, plant, and algal counts were similar between censuses, but total counts nearly doubled. Since microorganism classification is uncertain, the difference likely comes from different decisions about whether microorganism variations represent distinct species. (B) captures this--same organisms, different classification decisions.',
     difficulty: 'hard',
     domain: 'Reading Comprehension',
     skill: 'Command of Evidence'
   }),
   addRating({
     id: 'sat-doc-002',
-    question: 'Many literary theorists distinguish between fabula, a narrative\\'s content, and syuzhet, a narrative\\'s arrangement and presentation of events. In the film The Godfather Part II, the fabula is the story of the Corleone family, and the syuzhet is the presentation of the story as it alternates between two timelines in 1901 and 1958. But literary theorist Mikhail Bakhtin maintained that fabula and syuzhet are insufficient to completely describe a narrative—he held that systematic categorizations of artistic phenomena discount the subtle way in which meaning is created by interactions between the artist, the work, and the audience. Which choice best states the main idea of the text?',
+    question: 'Many literary theorists distinguish between fabula, a narrative\'s content, and syuzhet, a narrative\'s arrangement and presentation of events. In the film The Godfather Part II, the fabula is the story of the Corleone family, and the syuzhet is the presentation of the story as it alternates between two timelines in 1901 and 1958. But literary theorist Mikhail Bakhtin maintained that fabula and syuzhet are insufficient to completely describe a narrative--he held that systematic categorizations of artistic phenomena discount the subtle way in which meaning is created by interactions between the artist, the work, and the audience. Which choice best states the main idea of the text?',
     options: [
       { letter: 'A', text: 'Literary theorist Mikhail Bakhtin argued that there are important characteristics of narratives that are not fully encompassed by two concepts that other theorists have used to analyze narratives.' },
       { letter: 'B', text: 'Literary theorist Mikhail Bakhtin claimed that meaning is not inherent in a narrative but is created when an audience encounters a narrative so that narratives are interpreted differently by different people.' },
@@ -4555,14 +4555,14 @@ export const hardEnglishQuestions: EnglishQuestion[] = [
       { letter: 'D', text: 'The fossils discovered by Caron and colleagues in the Burgess Shale were better preserved than the fossils discovered by other researchers in China and the United States.' }
     ],
     correctAnswer: 'B',
-    explanation: 'Caron claims the China/US fossils are ctenophores, not jellyfish. If (B) is true—the fossils are too poorly preserved to identify as either—then Caron\\'s claim that they ARE ctenophores is weakened. The other choices don\\'t directly challenge their identification claim.',
+    explanation: 'Caron claims the China/US fossils are ctenophores, not jellyfish. If (B) is true--the fossils are too poorly preserved to identify as either--then Caron\'s claim that they ARE ctenophores is weakened. The other choices don\'t directly challenge their identification claim.',
     difficulty: 'hard',
     domain: 'Reading Comprehension',
     skill: 'Command of Evidence'
   }),
   addRating({
     id: 'sat-doc-004',
-    question: 'To understand how temperature change affects microorganism-mediated cycling of soil nutrients in alpine ecosystems, Eva Kaštovská et al. collected plant-soil cores in the Tatra Mountains at elevations around 2,100 meters and transplanted them to elevations of 1,700–1,800 meters, where the mean air temperature was warmer by 2°C. Microorganism-mediated nutrient cycling was accelerated in the transplanted cores; crucially, microorganism community composition was unchanged, allowing Kaštovská et al. to attribute the acceleration to temperature-induced increases in microorganism activity. It can most reasonably be inferred from the text that the finding about the microorganism community composition was important for which reason?',
+    question: 'To understand how temperature change affects microorganism-mediated cycling of soil nutrients in alpine ecosystems, Eva Kaštovska et al. collected plant-soil cores in the Tatra Mountains at elevations around 2,100 meters and transplanted them to elevations of 1,700-1,800 meters, where the mean air temperature was warmer by 2 degrees C. Microorganism-mediated nutrient cycling was accelerated in the transplanted cores; crucially, microorganism community composition was unchanged, allowing Kaštovska et al. to attribute the acceleration to temperature-induced increases in microorganism activity. It can most reasonably be inferred from the text that the finding about the microorganism community composition was important for which reason?',
     options: [
       { letter: 'A', text: 'It provided preliminary evidence that microorganism-mediated nutrient cycling was accelerated in the transplanted cores.' },
       { letter: 'B', text: 'It suggested that temperature-induced changes in microorganism activity may be occurring at increasingly high elevations.' },
@@ -4577,22 +4577,22 @@ export const hardEnglishQuestions: EnglishQuestion[] = [
   }),
   addRating({
     id: 'sat-doc-005',
-    question: 'The most recent iteration of the immersive theater experience Sleep No More, which premiered in New York City in 2011, transforms its performance space—a five-story warehouse—into a 1930s-era hotel. Audience members, who wander through the labyrinthine venue at their own pace and follow the actors as they play out simultaneous, interweaving narrative loops, confront the impossibility of experiencing the production in its entirety. The play\\'s refusal of narrative coherence thus hinges on the sense of spatial fragmentation that the venue\\'s immense and intricate layout generates. What does the text most strongly suggest about Sleep No More\\'s use of its performance space?',
+    question: 'The most recent iteration of the immersive theater experience Sleep No More, which premiered in New York City in 2011, transforms its performance space--a five-story warehouse--into a 1930s-era hotel. Audience members, who wander through the labyrinthine venue at their own pace and follow the actors as they play out simultaneous, interweaving narrative loops, confront the impossibility of experiencing the production in its entirety. The play\'s refusal of narrative coherence thus hinges on the sense of spatial fragmentation that the venue\'s immense and intricate layout generates. What does the text most strongly suggest about Sleep No More\'s use of its performance space?',
     options: [
-      { letter: 'A', text: 'The choice of a New York City venue likely enabled the play\\'s creators to experiment with the use of theatrical space in a way that venues from earlier productions could not.' },
+      { letter: 'A', text: 'The choice of a New York City venue likely enabled the play\'s creators to experiment with the use of theatrical space in a way that venues from earlier productions could not.' },
       { letter: 'B', text: 'Audience members likely find the experience of the play disappointing because they generally cannot make their way through the entire venue.' },
-      { letter: 'C', text: 'The production\\'s dependence on a particular performance environment would likely make it difficult to reproduce exactly in a different theatrical space.' },
-      { letter: 'D', text: 'Audience members who navigate the space according to a recommended itinerary will likely have a better grasp of the play\\'s narrative than audience members who depart from that itinerary.' }
+      { letter: 'C', text: 'The production\'s dependence on a particular performance environment would likely make it difficult to reproduce exactly in a different theatrical space.' },
+      { letter: 'D', text: 'Audience members who navigate the space according to a recommended itinerary will likely have a better grasp of the play\'s narrative than audience members who depart from that itinerary.' }
     ],
     correctAnswer: 'C',
-    explanation: 'The passage emphasizes that the play\\'s "refusal of narrative coherence...hinges on...the venue\\'s immense and intricate layout." This dependency on the specific space suggests reproducing it elsewhere would be difficult. (C) captures this spatial dependency.',
+    explanation: 'The passage emphasizes that the play\'s "refusal of narrative coherence...hinges on...the venue\'s immense and intricate layout." This dependency on the specific space suggests reproducing it elsewhere would be difficult. (C) captures this spatial dependency.',
     difficulty: 'hard',
     domain: 'Reading Comprehension',
     skill: 'Inferences'
   }),
   addRating({
     id: 'sat-doc-006',
-    question: 'One recognized social norm of gift giving is that the time spent obtaining a gift will be viewed as a reflection of the gift\\'s thoughtfulness. Marketing experts Farnoush Reshadi, Julian Givi, and Gopal Das addressed this view in their studies of norms specifically surrounding the giving of gift cards, noting that while recipients tend to view digital gift cards (which can be purchased online from anywhere and often can be redeemed online as well) as superior to physical gift cards (which sometimes must be purchased in person and may only be redeemable in person) in terms of usage, 94.8 percent of participants surveyed indicated that it is more socially acceptable to give a physical gift card to a recipient. This finding suggests that ______. Which choice most logically completes the text?',
+    question: 'One recognized social norm of gift giving is that the time spent obtaining a gift will be viewed as a reflection of the gift\'s thoughtfulness. Marketing experts Farnoush Reshadi, Julian Givi, and Gopal Das addressed this view in their studies of norms specifically surrounding the giving of gift cards, noting that while recipients tend to view digital gift cards (which can be purchased online from anywhere and often can be redeemed online as well) as superior to physical gift cards (which sometimes must be purchased in person and may only be redeemable in person) in terms of usage, 94.8 percent of participants surveyed indicated that it is more socially acceptable to give a physical gift card to a recipient. This finding suggests that ______. Which choice most logically completes the text?',
     options: [
       { letter: 'A', text: 'gift givers likely overestimate the amount of effort required to use digital gift cards and thus mistakenly assume gift recipients will view them as less desirable than physical gift cards.' },
       { letter: 'B', text: 'physical gift cards are likely preferred by gift recipients because the tangible nature of those cards offers a greater psychological sense of ownership than digital gift cards do.' },
@@ -4600,104 +4600,104 @@ export const hardEnglishQuestions: EnglishQuestion[] = [
       { letter: 'D', text: 'gift givers likely perceive digital gift cards as requiring relatively low effort to obtain and thus wrongly assume gift recipients will appreciate them less than they do physical gift cards.' }
     ],
     correctAnswer: 'D',
-    explanation: 'Recipients prefer digital cards for usage, yet givers think physical cards are more socially acceptable. This suggests givers associate digital cards with low effort (less thoughtful), leading them to assume recipients would appreciate them less—even though recipients actually prefer digital. (D) captures this gap between giver perception and recipient preference.',
+    explanation: 'Recipients prefer digital cards for usage, yet givers think physical cards are more socially acceptable. This suggests givers associate digital cards with low effort (less thoughtful), leading them to assume recipients would appreciate them less--even though recipients actually prefer digital. (D) captures this gap between giver perception and recipient preference.',
     difficulty: 'hard',
     domain: 'Reading Comprehension',
     skill: 'Command of Evidence'
   }),
   addRating({
     id: 'sat-doc-007',
-    question: 'The ancient Greek concept of "mimesis," a term used in the works of Plato, Aristotle, and other Greek philosophers in discussions of representational art—visual, performance, or literary art that aims to depict the real world—is a foundational concept of the Western philosophy of aesthetics. Mimesis is typically translated as "imitation" in modern editions of ancient Greek texts, but scholar Stephen Halliwell warns that this is overly reductive: "imitation" implies that art merely copies—and is thus by definition entirely derivative of—a reality that exists outside and prior to the work of art, and translating "mimesis" thusly obscures the multifaceted ways in which the ancient Greeks understood the relationship between art and reality. Which statement, if true, would most directly support the claim by Halliwell presented in the text?',
+    question: 'The ancient Greek concept of "mimesis," a term used in the works of Plato, Aristotle, and other Greek philosophers in discussions of representational art--visual, performance, or literary art that aims to depict the real world--is a foundational concept of the Western philosophy of aesthetics. Mimesis is typically translated as "imitation" in modern editions of ancient Greek texts, but scholar Stephen Halliwell warns that this is overly reductive: "imitation" implies that art merely copies--and is thus by definition entirely derivative of--a reality that exists outside and prior to the work of art, and translating "mimesis" thusly obscures the multifaceted ways in which the ancient Greeks understood the relationship between art and reality. Which statement, if true, would most directly support the claim by Halliwell presented in the text?',
     options: [
-      { letter: 'A', text: 'One of the earliest appearances of mimesis\\'s root word, mimos, can be found in an ancient Greek tragedy in reference to dramatic impersonation, and the mim- root came to be generally associated with the musical and poetic arts by the fifth century BCE.' },
-      { letter: 'B', text: 'Both Plato\\'s and Aristotle\\'s theorizations of mimesis examine the psychological effects that works of art induce in the viewer or listener.' },
-      { letter: 'C', text: 'Although several of Plato\\'s earliest philosophical works discuss aesthetic ideas, the term "mimesis" doesn\\'t appear in Plato\\'s discussions of art until Cratylus, a relatively late work.' },
-      { letter: 'D', text: 'Although Plato\\'s writings typically characterize representational art as an inferior reflection of the physical world, Aristotle suggests that mimesis can refer to art\\'s capacity to envision hypothetical conditions that could, but don\\'t yet, exist.' }
+      { letter: 'A', text: 'One of the earliest appearances of mimesis\'s root word, mimos, can be found in an ancient Greek tragedy in reference to dramatic impersonation, and the mim- root came to be generally associated with the musical and poetic arts by the fifth century BCE.' },
+      { letter: 'B', text: 'Both Plato\'s and Aristotle\'s theorizations of mimesis examine the psychological effects that works of art induce in the viewer or listener.' },
+      { letter: 'C', text: 'Although several of Plato\'s earliest philosophical works discuss aesthetic ideas, the term "mimesis" doesn\'t appear in Plato\'s discussions of art until Cratylus, a relatively late work.' },
+      { letter: 'D', text: 'Although Plato\'s writings typically characterize representational art as an inferior reflection of the physical world, Aristotle suggests that mimesis can refer to art\'s capacity to envision hypothetical conditions that could, but don\'t yet, exist.' }
     ],
     correctAnswer: 'D',
-    explanation: 'Halliwell argues "imitation" is reductive because it suggests mere copying. If Aristotle viewed mimesis as envisioning "hypothetical conditions that could, but don\\'t yet, exist," this shows mimesis meant more than copying—it included creative imagination. (D) directly supports Halliwell\\'s claim about multifaceted meanings.',
+    explanation: 'Halliwell argues "imitation" is reductive because it suggests mere copying. If Aristotle viewed mimesis as envisioning "hypothetical conditions that could, but don\'t yet, exist," this shows mimesis meant more than copying--it included creative imagination. (D) directly supports Halliwell\'s claim about multifaceted meanings.',
     difficulty: 'hard',
     domain: 'Reading Comprehension',
     skill: 'Command of Evidence'
   }),
   addRating({
     id: 'sat-doc-008',
-    question: 'While attending school in New York City in the 1980s, Okwui Enwezor encountered few works by African artists in exhibitions, despite New York\\'s reputation as one of the best places to view contemporary art from around the world. According to an arts journalist, later in his career as a renowned curator and art historian, Enwezor sought to remedy this deficiency, not by focusing solely on modern African artists, but by showing how their work fits into the larger context of global modern art and art history. Which finding, if true, would most directly support the journalist\\'s claim?',
+    question: 'While attending school in New York City in the 1980s, Okwui Enwezor encountered few works by African artists in exhibitions, despite New York\'s reputation as one of the best places to view contemporary art from around the world. According to an arts journalist, later in his career as a renowned curator and art historian, Enwezor sought to remedy this deficiency, not by focusing solely on modern African artists, but by showing how their work fits into the larger context of global modern art and art history. Which finding, if true, would most directly support the journalist\'s claim?',
     options: [
-      { letter: 'A', text: 'As curator of the Haus der Kunst in Munich, Germany, Enwezor organized a retrospective of Ghanaian sculptor El Anatsui\\'s work entitled El Anatsui: Triumphant Scale, one of the largest art exhibitions devoted to a Black artist in Europe\\'s history.' },
-      { letter: 'B', text: 'In the exhibition Postwar: Art Between the Pacific and the Atlantic, 1945–1965, Enwezor and cocurator Katy Siegel brought works by African artists such as Malangatana Ngwenya together with pieces by major figures from other countries, like US artist Andy Warhol and Mexico\\'s David Siqueiros.' },
-      { letter: 'C', text: 'Enwezor\\'s work as curator of the 2001 exhibition The Short Century: Independence and Liberation Movements in Africa, 1945–1994 showed how African movements for independence from European colonial powers following the Second World War profoundly influenced work by African artists of the period, such as Kamala Ibrahim Ishaq and Thomas Mukarobgwa.' },
+      { letter: 'A', text: 'As curator of the Haus der Kunst in Munich, Germany, Enwezor organized a retrospective of Ghanaian sculptor El Anatsui\'s work entitled El Anatsui: Triumphant Scale, one of the largest art exhibitions devoted to a Black artist in Europe\'s history.' },
+      { letter: 'B', text: 'In the exhibition Postwar: Art Between the Pacific and the Atlantic, 1945-1965, Enwezor and cocurator Katy Siegel brought works by African artists such as Malangatana Ngwenya together with pieces by major figures from other countries, like US artist Andy Warhol and Mexico\'s David Siqueiros.' },
+      { letter: 'C', text: 'Enwezor\'s work as curator of the 2001 exhibition The Short Century: Independence and Liberation Movements in Africa, 1945-1994 showed how African movements for independence from European colonial powers following the Second World War profoundly influenced work by African artists of the period, such as Kamala Ibrahim Ishaq and Thomas Mukarobgwa.' },
       { letter: 'D', text: 'Art history courses in universities around the world increasingly feature works by African artists alongside works by European and American artists.' }
     ],
     correctAnswer: 'B',
-    explanation: 'The claim is that Enwezor showed African art "fits into the larger context of global modern art" rather than focusing solely on African artists. (B) directly supports this—placing African artists alongside Warhol and Siqueiros integrates them into global art history context.',
+    explanation: 'The claim is that Enwezor showed African art "fits into the larger context of global modern art" rather than focusing solely on African artists. (B) directly supports this--placing African artists alongside Warhol and Siqueiros integrates them into global art history context.',
     difficulty: 'hard',
     domain: 'Reading Comprehension',
     skill: 'Command of Evidence'
   }),
   addRating({
     id: 'sat-doc-009',
-    question: 'Mosasaurs were large marine reptiles that lived in the Late Cretaceous period, approximately 100 million to 66 million years ago. Celina Suarez, Alberto Pérez-Huerta, and T. Lynn Harrell Jr. examined oxygen-18 isotopes in mosasaur tooth enamel in order to calculate likely mosasaur body temperatures and determined that mosasaurs were endothermic—that is, they used internal metabolic processes to maintain a stable body temperature in a variety of ambient temperatures. Suarez, Pérez-Huerta, and Harrell claim that endothermy would have enabled mosasaurs to include relatively cold polar waters in their range. Which finding, if true, would most directly support Suarez, Pérez-Huerta, and Harrell\\'s claim?',
+    question: 'Ancient Polynesian voyagers traveled to nearly every island in the Pacific Ocean over a period of roughly 2,600 years, arriving at the Hawaiian Islands around 1100 CE and at New Zealand around 1280 CE. The voyagers possessed detailed knowledge about wind and ocean currents and could read clouds and other natural signs to discern the location of islands before they became visible. The accomplishments of the early Polynesians served to inspire the Polynesian Voyaging Society (PVS), which has carried out voyages across the Pacific in a traditional Polynesian sailing canoe called the Hokule\'a. Such expeditions confirm that traditional techniques can be effective modes of navigation. Which finding, if true, would most directly undermine the stated conclusion of the passage?',
     options: [
-      { letter: 'A', text: 'Mosasaurs\\' likely body temperatures are easier to determine from tooth enamel oxygen-18 isotope data than the body temperatures of nonendothermic Late Cretaceous marine reptiles are.' },
-      { letter: 'B', text: 'Fossils of both mosasaurs and nonendothermic marine reptiles have been found in roughly equal numbers in regions known to be near the poles during the Late Cretaceous, though in lower concentrations than elsewhere.' },
-      { letter: 'C', text: 'Several mosasaur fossils have been found in regions known to be near the poles during the Late Cretaceous, while relatively few fossils of nonendothermic marine reptiles have been found in those locations.' },
-      { letter: 'D', text: 'During the Late Cretaceous, seawater temperatures were likely higher throughout mosasaurs\\' range, including near the poles, than seawater temperatures at those same latitudes are today.' }
+      { letter: 'A', text: 'PVS crew members, despite training in traditional navigation, have consistently relied on modern instruments to correct course during actual voyages.' },
+      { letter: 'B', text: 'The Hokule\'a voyages have attracted widespread public attention and increased interest in Polynesian cultural heritage.' },
+      { letter: 'C', text: 'Many traditional navigation techniques used by ancient Polynesians were independently developed by other seafaring cultures.' },
+      { letter: 'D', text: 'The Hokule\'a has traveled farther distances in shorter time periods than ancient Polynesian voyaging canoes typically did.' }
     ],
-    correctAnswer: 'C',
-    explanation: 'The claim is that endothermy allowed mosasaurs to inhabit cold polar waters. If mosasaur fossils (endothermic) are found near poles but nonendothermic reptile fossils are rare there, this suggests endothermy was indeed the advantage enabling polar habitation. (C) directly supports this.',
+    correctAnswer: 'A',
+    explanation: 'The conclusion is that PVS expeditions confirm traditional techniques are effective. If (A) is true--crews consistently used modern instruments to correct course--then the voyages don\'t actually demonstrate traditional techniques alone are effective. This undermines the conclusion.',
     difficulty: 'hard',
     domain: 'Reading Comprehension',
     skill: 'Command of Evidence'
   }),
   addRating({
     id: 'sat-doc-010',
-    question: 'The Mammillaria cactus M. boolii occurs naturally only in the state of Sonora in Mexico, and the smallness of its range makes it especially vulnerable to extinction. The traditional single-species approach to conservation emphasizes the need to focus on individual species most at risk, like M. boolii, but recently, conservationists have argued that an ecosystem-based approach that incorporates the many interactions between the climate, terrain, and various species of a given geographical area may lead to better outcomes for all the species in a given location. If this view is correct, the single-species approach to the conservation of M. boolii could thus ______. Which choice most logically completes the text?',
+    question: 'Policymakers in the United States have struggled for decades with the question of how best to regulate social media platforms. Advocates for strong regulations have emphasized harm to both individuals and society from social media, while skeptics note that such regulation poses serious challenges to constitutional protections of free speech. Professor Daphne Keller has observed that many regulatory proposals focus too narrowly on content takedowns without considering the equally important issue of content recommendations and amplification. This implies that ______. Which choice most logically completes the text?',
     options: [
-      { letter: 'A', text: 'lead to a better understanding of how the distribution of Mammillaria species throughout Mexico has affected their survival.' },
-      { letter: 'B', text: 'allow conservationists to better consider how climatic changes affecting Sonora may reduce the number of species competing with M. boolii.' },
-      { letter: 'C', text: 'erroneously shift the focus of conservation efforts away from M. boolii itself.' },
-      { letter: 'D', text: 'fail to consider the ways in which the survival of M. boolii may be influenced by changes in the populations of other species that inhabit Sonora.' }
+      { letter: 'A', text: 'current regulatory approaches may fail to address the full scope of how social media platforms can cause harm.' },
+      { letter: 'B', text: 'content recommendation algorithms are more harmful than the content they promote.' },
+      { letter: 'C', text: 'regulating content recommendations would raise fewer free speech concerns than regulating content takedowns.' },
+      { letter: 'D', text: 'most social media platforms would prefer regulations focused on content takedowns rather than recommendations.' }
     ],
-    correctAnswer: 'D',
-    explanation: 'The ecosystem-based approach considers "interactions between the climate, terrain, and various species." If this view is correct, the single-species approach would miss these interactions—failing to consider how other species affect M. boolii. (D) captures this limitation.',
+    correctAnswer: 'A',
+    explanation: 'Keller observes regulations focus on takedowns without considering recommendations and amplification. This implies current approaches are incomplete--they miss an "equally important issue." (A) captures this: current approaches may fail to address the full scope of harm.',
+    difficulty: 'hard',
+    domain: 'Reading Comprehension',
+    skill: 'Inferences'
+  }),
+  addRating({
+    id: 'sat-doc-011',
+    question: 'A recent study of human trafficking patterns by criminologist Louise Shelley found that trafficking routes often overlap with legitimate migration and trade networks. Shelley argues that this overlap is not coincidental--traffickers deliberately exploit existing infrastructure, documentation procedures, and transportation links designed for legal purposes. By embedding their operations within legitimate systems, traffickers can avoid detection more easily and reduce operational costs. Which statement, if true, would most strongly support Shelley\'s argument?',
+    options: [
+      { letter: 'A', text: 'Most trafficking victims come from regions with high rates of legal emigration to destination countries.' },
+      { letter: 'B', text: 'Trafficking networks have been found to use the same shipping companies and border crossings as legitimate businesses.' },
+      { letter: 'C', text: 'Law enforcement agencies have increased their monitoring of legitimate trade routes in recent years.' },
+      { letter: 'D', text: 'Some trafficking victims are initially recruited through offers of legitimate employment opportunities.' }
+    ],
+    correctAnswer: 'B',
+    explanation: 'Shelley argues traffickers "exploit existing infrastructure" and "transportation links designed for legal purposes." If (B) is true--traffickers use the same shipping companies and border crossings as legitimate businesses--this directly shows deliberate exploitation of legitimate systems.',
     difficulty: 'hard',
     domain: 'Reading Comprehension',
     skill: 'Command of Evidence'
   }),
   addRating({
-    id: 'sat-doc-011',
-    question: 'In the early nineteenth century, some Euro-American farmers in the northeastern United States used agricultural techniques developed by the Haudenosaunee (Iroquois) people centuries earlier, but it seems that few of those farmers had actually seen Haudenosaunee farms firsthand. Barring the possibility of several farmers of the same era independently developing techniques that the Haudenosaunee people had already invented, these facts most strongly suggest that ______. Which choice most logically completes the text?',
-    options: [
-      { letter: 'A', text: 'those farmers learned the techniques from other people who were more directly influenced by Haudenosaunee practices.' },
-      { letter: 'B', text: 'the crops typically cultivated by Euro-American farmers in the northeastern United States were not well suited to Haudenosaunee farming techniques.' },
-      { letter: 'C', text: 'Haudenosaunee farming techniques were widely used in regions outside the northeastern United States.' },
-      { letter: 'D', text: 'Euro-American farmers only began to recognize the benefits of Haudenosaunee farming techniques late in the nineteenth century.' }
-    ],
-    correctAnswer: 'A',
-    explanation: 'Farmers used Haudenosaunee techniques but hadn\\'t seen their farms. Ruling out independent invention, the knowledge must have been transmitted indirectly—through intermediaries who had more direct contact. (A) logically explains this transmission.',
-    difficulty: 'hard',
-    domain: 'Reading Comprehension',
-    skill: 'Inferences'
-  }),
-  addRating({
     id: 'sat-doc-012',
-    question: 'The following text is adapted from María Cristina Mena\\'s 1914 short story "The Vine-Leaf." It is a saying in the capital of Mexico that Dr. Malsufrido carries more family secrets under his hat than any archbishop. The doctor\\'s hat is, appropriately enough, uncommonly capacious, rising very high, and sinking so low that it seems to be supported by his ears and eyebrows, and it has a furry look, as if it had been brushed the wrong way, which is perhaps what happens to it if it is ever brushed at all. When the doctor takes it off, the family secrets do not fly out like a flock of parrots, but remain nicely bottled up beneath a dome of old and highly polished ivory. Based on the text, how do people in the capital of Mexico most likely regard Dr. Malsufrido?',
+    question: 'Scientists studying bat echolocation have long known that bats emit ultrasonic calls and listen for echoes to navigate and find prey in complete darkness. Recent research by biologist Yossi Yovel has revealed that the social calls bats use to communicate with each other are far more complex than previously understood. Yovel\'s team recorded thousands of vocalizations from Egyptian fruit bats and used machine learning algorithms to decode their meanings. The research revealed that bats produce specific calls to address individual group members, argue over food, and maintain social relationships. What is the main purpose of mentioning bat echolocation in the first sentence?',
     options: [
-      { letter: 'A', text: 'Many have come to tolerate him despite his disheveled appearance.' },
-      { letter: 'B', text: 'Few feel concerned that he will divulge their confidences.' },
-      { letter: 'C', text: 'Some dislike how freely he discusses his own family.' },
-      { letter: 'D', text: 'Most would be unimpressed by him were it not for his professional expertise.' }
+      { letter: 'A', text: 'To establish that scientific understanding of bat vocalizations has been incomplete.' },
+      { letter: 'B', text: 'To contrast a well-known function of bat vocalizations with newly discovered social functions.' },
+      { letter: 'C', text: 'To explain the methodology Yovel\'s team used to study bat communication.' },
+      { letter: 'D', text: 'To suggest that echolocation and social calls serve similar purposes for bats.' }
     ],
     correctAnswer: 'B',
-    explanation: 'The passage says secrets "remain nicely bottled up" when he removes his hat—they don\\'t "fly out." This metaphor indicates he keeps secrets well. The saying that he "carries more family secrets...than any archbishop" suggests people trust him with confidences. (B) captures this trust.',
+    explanation: 'The passage begins with "long known" echolocation (well-known function) then pivots to "recent research" revealing complex social calls (newly discovered). This structure contrasts established knowledge with new discoveries. (B) captures this contrast.',
     difficulty: 'hard',
     domain: 'Reading Comprehension',
-    skill: 'Inferences'
+    skill: 'Text Structure and Purpose'
   }),
   addRating({
     id: 'sat-doc-013',
-    question: 'Linguist Deborah Tannen has cautioned against framing contentious issues in terms of two highly competitive perspectives, such as pro versus con. According to Tannen, this debate-driven approach can strip issues of their complexity and, when used in front of an audience, can be less informative than the presentation of multiple perspectives in a noncompetitive format. To test Tannen\\'s hypothesis, students conducted a study in which they showed participants one of three different versions of local news commentary about the same issue. Each version featured a debate between two commentators with opposing views, a panel of three commentators with various views, or a single commentator. Which finding from the students\\' study, if true, would most strongly support Tannen\\'s hypothesis?',
+    question: 'Linguist Deborah Tannen has cautioned against framing contentious issues in terms of two highly competitive perspectives, such as pro versus con. According to Tannen, this debate-driven approach can strip issues of their complexity and, when used in front of an audience, can be less informative than the presentation of multiple perspectives in a noncompetitive format. To test Tannen\'s hypothesis, students conducted a study in which they showed participants one of three different versions of local news commentary about the same issue. Each version featured a debate between two commentators with opposing views, a panel of three commentators with various views, or a single commentator. Which finding from the students\' study, if true, would most strongly support Tannen\'s hypothesis?',
     options: [
       { letter: 'A', text: 'On average, participants perceived commentators in the debate as more knowledgeable about the issue than commentators in the panel.' },
       { letter: 'B', text: 'On average, participants perceived commentators in the panel as more knowledgeable about the issue than the single commentator.' },
@@ -4715,19 +4715,19 @@ export const hardEnglishQuestions: EnglishQuestion[] = [
     question: 'In 1534 CE, King Henry VIII of England split with the Catholic Church and declared himself head of the Church of England, in part because Pope Clement VII refused to annul his marriage to Catherine of Aragon. Two years later, Henry VIII introduced a policy titled the Dissolution of the Monasteries that by 1540 had resulted in the closure of all Catholic monasteries in England and the confiscation of their estates. Some historians assert that the enactment of the policy was primarily motivated by perceived financial opportunities. Which quotation from a scholarly article best supports the assertion of the historians mentioned in the text?',
     options: [
       { letter: 'A', text: '"At the time of the Dissolution of the Monasteries, about 2 percent of the adult male population of England were monks; by 1690, the proportion of the adult male population who were monks was less than 1 percent."' },
-      { letter: 'B', text: '"A contemporary description of the Dissolution of the Monasteries, Michael Sherbrook\\'s Falle of the Religious Howses, recounts witness testimony that monks were allowed to keep the contents of their cells and that the monastery timber was purchased by local yeomen."' },
-      { letter: 'C', text: '"In 1535, the year before enacting the Dissolution of the Monasteries, Henry commissioned a survey of the value of church holdings in England—the work, performed by sheriffs, bishops, and magistrates, began that January and was swiftly completed by the summer."' },
+      { letter: 'B', text: '"A contemporary description of the Dissolution of the Monasteries, Michael Sherbrook\'s Falle of the Religious Howses, recounts witness testimony that monks were allowed to keep the contents of their cells and that the monastery timber was purchased by local yeomen."' },
+      { letter: 'C', text: '"In 1535, the year before enacting the Dissolution of the Monasteries, Henry commissioned a survey of the value of church holdings in England--the work, performed by sheriffs, bishops, and magistrates, began that January and was swiftly completed by the summer."' },
       { letter: 'D', text: '"The October 1536 revolt known as the Pilgrimage of Grace had several economic motives: high food prices due to a poor harvest the prior year; the Dissolution of the Monasteries, which closed reliable sources of food and shelter for many; and rents and taxes throughout Northern England that were not merely high but predatory."' }
     ],
     correctAnswer: 'C',
-    explanation: 'The historians claim financial motivation. (C) shows Henry surveyed church holdings\\' VALUE before the dissolution—suggesting he wanted to know what the monasteries were worth financially. This planning to assess value supports financial motivation.',
+    explanation: 'The historians claim financial motivation. (C) shows Henry surveyed church holdings\' VALUE before the dissolution--suggesting he wanted to know what the monasteries were worth financially. This planning to assess value supports financial motivation.',
     difficulty: 'hard',
     domain: 'Reading Comprehension',
     skill: 'Command of Evidence'
   }),
   addRating({
     id: 'sat-doc-015',
-    question: 'The following text is adapted from Countee Cullen\\'s 1926 poem "Thoughts in a Zoo." They in their cruel traps, and we in ours, / Survey each other\\'s rage, and pass the hours / Commiserating each the other\\'s woe, / To mitigate his own pain\\'s fiery glow. / Man could but little proffer in exchange / Save that his cages have a larger range. / That lion with his lordly, untamed heart / Has in some man his human counterpart, / Some lofty soul in dreams and visions wrapped, / But in the stifling flesh securely trapped. Based on the text, what challenge do humans sometimes experience?',
+    question: 'The following text is adapted from Countee Cullen\'s 1926 poem "Thoughts in a Zoo." They in their cruel traps, and we in ours, / Survey each other\'s rage, and pass the hours / Commiserating each the other\'s woe, / To mitigate his own pain\'s fiery glow. / Man could but little proffer in exchange / Save that his cages have a larger range. / That lion with his lordly, untamed heart / Has in some man his human counterpart, / Some lofty soul in dreams and visions wrapped, / But in the stifling flesh securely trapped. Based on the text, what challenge do humans sometimes experience?',
     options: [
       { letter: 'A', text: 'They cannot effectively tame certain wild animals because of a lack of compassion.' },
       { letter: 'B', text: 'They cannot focus on setting attainable goals because of a lack of motivation.' },
@@ -4742,11 +4742,11 @@ export const hardEnglishQuestions: EnglishQuestion[] = [
   }),
   addRating({
     id: 'sat-doc-016',
-    question: 'German theater practitioner Bertolt Brecht (1898–1956) believed that theater should elicit an intellectual rather than an emotional response from audiences, provoking them to consider social and political realities that extend beyond the characters and events depicted onstage. Brecht\\'s influence can be seen in English playwright Caryl Churchill\\'s 1979 play Cloud 9: although the play sometimes invites empathetic reactions, it primarily works to engage audiences in an interrogation of patriarchy and colonialism, which it does by placing audiences at a distance, thereby encouraging them to ______. Which choice most logically completes the text?',
+    question: 'German theater practitioner Bertolt Brecht (1898-1956) believed that theater should elicit an intellectual rather than an emotional response from audiences, provoking them to consider social and political realities that extend beyond the characters and events depicted onstage. Brecht\'s influence can be seen in English playwright Caryl Churchill\'s 1979 play Cloud 9: although the play sometimes invites empathetic reactions, it primarily works to engage audiences in an interrogation of patriarchy and colonialism, which it does by placing audiences at a distance, thereby encouraging them to ______. Which choice most logically completes the text?',
     options: [
-      { letter: 'A', text: 'focus on the characters\\' beliefs about social and political issues as revealed by the characters\\' actions.' },
+      { letter: 'A', text: 'focus on the characters\' beliefs about social and political issues as revealed by the characters\' actions.' },
       { letter: 'B', text: 'reflect on social and political phenomena not directly related to patriarchy and colonialism.' },
-      { letter: 'C', text: 'recognize pertinent social and political parallels between Germany during Brecht\\'s time and England at the time when Churchill was writing Cloud 9.' },
+      { letter: 'C', text: 'recognize pertinent social and political parallels between Germany during Brecht\'s time and England at the time when Churchill was writing Cloud 9.' },
       { letter: 'D', text: 'be dispassionate as they think critically about the social and political questions raised by the play.' }
     ],
     correctAnswer: 'D',
@@ -4757,7 +4757,7 @@ export const hardEnglishQuestions: EnglishQuestion[] = [
   }),
   addRating({
     id: 'sat-doc-017',
-    question: 'Several scholars have argued that conditions in England in the late ninth through early eleventh centuries—namely, burgeoning literacy amid running conflicts between England\\'s Anglo-Saxon kingdoms and Danish invaders—were especially conducive to the production of the Old English epic poem Beowulf, and they have dated the poem\\'s composition accordingly. It is not inconceivable that Beowulf emerged from such a context, but privileging contextual fit over the linguistic evidence of an eighth- or even seventh-century composition requires a level of justification that thus far has not been presented. Which choice best states the main idea of the text?',
+    question: 'Several scholars have argued that conditions in England in the late ninth through early eleventh centuries--namely, burgeoning literacy amid running conflicts between England\'s Anglo-Saxon kingdoms and Danish invaders--were especially conducive to the production of the Old English epic poem Beowulf, and they have dated the poem\'s composition accordingly. It is not inconceivable that Beowulf emerged from such a context, but privileging contextual fit over the linguistic evidence of an eighth- or even seventh-century composition requires a level of justification that thus far has not been presented. Which choice best states the main idea of the text?',
     options: [
       { letter: 'A', text: 'Although there are some grounds for believing that Beowulf was composed between the late ninth and early eleventh centuries, advocates for that view tend to rely on evidence that has been called into question by advocates for an earlier date.' },
       { letter: 'B', text: 'Although several scholars have dated Beowulf to the late ninth through early eleventh centuries, others have argued that doing so privileges a controversial interpretation of the social conditions of the period.' },
@@ -4765,18 +4765,18 @@ export const hardEnglishQuestions: EnglishQuestion[] = [
       { letter: 'D', text: 'Although the claim of a late ninth- through early eleventh-century composition date for Beowulf has some plausibility, advocates for the claim have not compellingly addressed evidence suggesting an earlier date.' }
     ],
     correctAnswer: 'D',
-    explanation: 'The author says the late date is "not inconceivable" (plausible) but that "privileging contextual fit over the linguistic evidence" requires "justification that thus far has not been presented." This means advocates haven\\'t addressed the linguistic evidence for an earlier date. (D) captures this.',
+    explanation: 'The author says the late date is "not inconceivable" (plausible) but that "privileging contextual fit over the linguistic evidence" requires "justification that thus far has not been presented." This means advocates haven\'t addressed the linguistic evidence for an earlier date. (D) captures this.',
     difficulty: 'hard',
     domain: 'Reading Comprehension',
     skill: 'Central Ideas'
   }),
   addRating({
     id: 'sat-doc-018',
-    question: 'Elizabeth Asiedu has identified a negative correlation between the share of developing countries\\' economies derived from natural-resource extraction and those countries\\' receipts of foreign investment. This may appear counterintuitive—resource extraction requires initial investments (in extractive technology, for instance) at scales best met by multinational corporations—but Asiedu notes that natural-resource industries\\' boom-bust cycle can destabilize local currencies and increase developing countries\\' vulnerability to external shocks, creating levels of uncertainty to which foreign investors are typically averse. Which choice best states the main idea of the text?',
+    question: 'Elizabeth Asiedu has identified a negative correlation between the share of developing countries\' economies derived from natural-resource extraction and those countries\' receipts of foreign investment. This may appear counterintuitive--resource extraction requires initial investments (in extractive technology, for instance) at scales best met by multinational corporations--but Asiedu notes that natural-resource industries\' boom-bust cycle can destabilize local currencies and increase developing countries\' vulnerability to external shocks, creating levels of uncertainty to which foreign investors are typically averse. Which choice best states the main idea of the text?',
     options: [
-      { letter: 'A', text: 'Although it may seem surprising that foreign investment declines in developing countries as natural-resource extraction makes up a larger share of those countries\\' economies, that decline happens because resource extraction requires initial investments too large for foreign investors to supply.' },
-      { letter: 'B', text: 'Although developing countries tend to become less dependent on foreign investment as natural-resource industries make up a larger share of their economies, this change may not occur if the boom-bust cycle of those industries destabilizes local currencies or increases countries\\' vulnerability to external shocks.' },
-      { letter: 'C', text: 'Although one might expect that foreign investment would increase as natural-resource extraction makes up a larger share of developing countries\\' economies, the opposite happens because heavy reliance on natural resources can lead to unattractive conditions for investors.' },
+      { letter: 'A', text: 'Although it may seem surprising that foreign investment declines in developing countries as natural-resource extraction makes up a larger share of those countries\' economies, that decline happens because resource extraction requires initial investments too large for foreign investors to supply.' },
+      { letter: 'B', text: 'Although developing countries tend to become less dependent on foreign investment as natural-resource industries make up a larger share of their economies, this change may not occur if the boom-bust cycle of those industries destabilizes local currencies or increases countries\' vulnerability to external shocks.' },
+      { letter: 'C', text: 'Although one might expect that foreign investment would increase as natural-resource extraction makes up a larger share of developing countries\' economies, the opposite happens because heavy reliance on natural resources can lead to unattractive conditions for investors.' },
       { letter: 'D', text: 'Although foreign investors tend to avoid initial investments in natural-resource industries in developing countries, foreign investment may increase significantly as those industries stabilize and the risks associated with them decline.' }
     ],
     correctAnswer: 'C',
@@ -4787,9 +4787,9 @@ export const hardEnglishQuestions: EnglishQuestion[] = [
   }),
   addRating({
     id: 'sat-doc-019',
-    question: 'For centuries, the widespread acknowledgment of the involvement of the cerebellum—a dense brain structure in vertebrates—in coordinating motor control in humans has hindered recognition of other possible functions of the structure. Neuroscience research from the last two decades now suggests that the cerebellum regulates emotion and social behavior, and recent research by Ilaria Carta and colleagues has identified a pathway connecting the cerebellum to a center for motivation and reward processing known as the ventral tegmental area (VTA). Which choice best states the main idea of the text?',
+    question: 'For centuries, the widespread acknowledgment of the involvement of the cerebellum--a dense brain structure in vertebrates--in coordinating motor control in humans has hindered recognition of other possible functions of the structure. Neuroscience research from the last two decades now suggests that the cerebellum regulates emotion and social behavior, and recent research by Ilaria Carta and colleagues has identified a pathway connecting the cerebellum to a center for motivation and reward processing known as the ventral tegmental area (VTA). Which choice best states the main idea of the text?',
     options: [
-      { letter: 'A', text: 'The recent verification of a pathway between the VTA and the cerebellum confirms the cerebellum\\'s long-suspected role in motor coordination.' },
+      { letter: 'A', text: 'The recent verification of a pathway between the VTA and the cerebellum confirms the cerebellum\'s long-suspected role in motor coordination.' },
       { letter: 'B', text: 'Recent advances in the field of neuroscience have challenged widely accepted claims about the function of a pathway connecting the VTA and the cerebellum.' },
       { letter: 'C', text: 'The cerebellum has primarily been thought to regulate motor functioning, but in recent years neuroscience researchers have been uncovering additional functions.' },
       { letter: 'D', text: 'Technological limitations have historically hindered the study of the cerebellum, but the recent development of new technologies has led to greater insights into its functions.' }
@@ -4802,22 +4802,22 @@ export const hardEnglishQuestions: EnglishQuestion[] = [
   }),
   addRating({
     id: 'sat-doc-020',
-    question: 'Archaeologist Petra Vaiglova, anthropologist Xinyi Liu, and their colleagues investigated the domestication of farm animals in China during the Bronze Age (approximately 2000 to 1000 BCE). By analyzing the chemical composition of the bones of sheep, goats, and cattle from this era, the team determined that wild plants made up the bulk of sheep\\'s and goats\\' diets, while the cattle\\'s diet consisted largely of millet, a crop cultivated by humans. The team concluded that cattle were likely raised closer to human settlements, whereas sheep and goats were allowed to roam farther away. Which finding, if true, would most strongly support the team\\'s conclusion?',
+    question: 'Archaeologist Petra Vaiglova, anthropologist Xinyi Liu, and their colleagues investigated the domestication of farm animals in China during the Bronze Age (approximately 2000 to 1000 BCE). By analyzing the chemical composition of the bones of sheep, goats, and cattle from this era, the team determined that wild plants made up the bulk of sheep\'s and goats\' diets, while the cattle\'s diet consisted largely of millet, a crop cultivated by humans. The team concluded that cattle were likely raised closer to human settlements, whereas sheep and goats were allowed to roam farther away. Which finding, if true, would most strongly support the team\'s conclusion?',
     options: [
-      { letter: 'A', text: 'Analysis of the animal bones showed that the cattle\\'s diet also consisted of wheat, which humans widely cultivated in China during the Bronze Age.' },
+      { letter: 'A', text: 'Analysis of the animal bones showed that the cattle\'s diet also consisted of wheat, which humans widely cultivated in China during the Bronze Age.' },
       { letter: 'B', text: 'Further investigation of sheep and goat bones revealed that their diets consisted of small portions of millet as well.' },
-      { letter: 'C', text: 'Cattle\\'s diets generally require larger amounts of food and a greater variety of nutrients than do sheep\\'s and goats\\' diets.' },
+      { letter: 'C', text: 'Cattle\'s diets generally require larger amounts of food and a greater variety of nutrients than do sheep\'s and goats\' diets.' },
       { letter: 'D', text: 'The diets of sheep, goats, and cattle were found to vary based on what the farmers in each Bronze Age settlement could grow.' }
     ],
     correctAnswer: 'A',
-    explanation: 'The conclusion is that cattle were kept near settlements because they ate human-cultivated millet. If cattle also ate wheat—another cultivated crop—this further supports they were kept near cultivated fields/settlements. (A) strengthens this connection.',
+    explanation: 'The conclusion is that cattle were kept near settlements because they ate human-cultivated millet. If cattle also ate wheat--another cultivated crop--this further supports they were kept near cultivated fields/settlements. (A) strengthens this connection.',
     difficulty: 'hard',
     domain: 'Reading Comprehension',
     skill: 'Command of Evidence'
   }),
   addRating({
     id: 'sat-doc-021',
-    question: 'Archaeologists and historians used to believe that the Maya civilization during its Classic period (roughly 250–900) lacked agricultural marketplaces. One reason for this belief was that these scholars misunderstood the ecology of the regions the Maya inhabited. Marketplaces typically emerge because different individuals or groups want to trade resources they control for resources they don\\'t control. Scholars seriously underestimated the ecological diversity of the Maya landscape and thus assumed that ______. Which choice most logically completes the text?',
+    question: 'Archaeologists and historians used to believe that the Maya civilization during its Classic period (roughly 250-900) lacked agricultural marketplaces. One reason for this belief was that these scholars misunderstood the ecology of the regions the Maya inhabited. Marketplaces typically emerge because different individuals or groups want to trade resources they control for resources they don\'t control. Scholars seriously underestimated the ecological diversity of the Maya landscape and thus assumed that ______. Which choice most logically completes the text?',
     options: [
       { letter: 'A', text: 'marketplaces likely would not have attracted many traders from outside the regions controlled by the Maya.' },
       { letter: 'B', text: 'farming practices would have been largely the same throughout Maya lands even if the crops people produced varied significantly.' },
@@ -4825,44 +4825,44 @@ export const hardEnglishQuestions: EnglishQuestion[] = [
       { letter: 'D', text: 'farmers would trade agricultural products only if they had already produced enough to meet their own needs.' }
     ],
     correctAnswer: 'C',
-    explanation: 'Marketplaces emerge to trade resources people don\\'t control for those they do. If scholars underestimated ecological diversity, they thought everyone had similar resources—so there would be little to trade. (C) captures this: without diversity, marketplaces wouldn\\'t offer different products.',
+    explanation: 'Marketplaces emerge to trade resources people don\'t control for those they do. If scholars underestimated ecological diversity, they thought everyone had similar resources--so there would be little to trade. (C) captures this: without diversity, marketplaces wouldn\'t offer different products.',
     difficulty: 'hard',
     domain: 'Reading Comprehension',
     skill: 'Inferences'
   }),
   addRating({
     id: 'sat-doc-022',
-    question: 'In their 2022 paper, Christos Dimopoulos et al., having granted that the existence of antigravity—in which antimatter and matter repel rather than attract each other—lacked affirmative experimental support, rightly argued that such antigravity was worth considering on theoretical grounds given that evidence against it was similarly lacking. But a 2023 report by an international team of researchers details the first direct ballistic observations of antihydrogen atoms under gravity inside a CERN particle accelerator. Corresponding most closely to predictions under gravitational attraction, these observations were thoroughly inconsistent with antigravity. Which choice best states the main idea of the text?',
+    question: 'In their 2022 paper, Christos Dimopoulos et al., having granted that the existence of antigravity--in which antimatter and matter repel rather than attract each other--lacked affirmative experimental support, rightly argued that such antigravity was worth considering on theoretical grounds given that evidence against it was similarly lacking. But a 2023 report by an international team of researchers details the first direct ballistic observations of antihydrogen atoms under gravity inside a CERN particle accelerator. Corresponding most closely to predictions under gravitational attraction, these observations were thoroughly inconsistent with antigravity. Which choice best states the main idea of the text?',
     options: [
       { letter: 'A', text: 'Antihydrogen ballistics observations were conducted at CERN to test specific conclusions about antigravity presented in the 2022 paper by Dimopoulos et al.' },
-      { letter: 'B', text: 'Although theoreticians were justified in studying antigravity before the release of the 2023 report, the report\\'s findings suggest that the rationale for theoretical consideration offered in the 2022 paper by Dimopoulos et al. is no longer applicable.' },
+      { letter: 'B', text: 'Although theoreticians were justified in studying antigravity before the release of the 2023 report, the report\'s findings suggest that the rationale for theoretical consideration offered in the 2022 paper by Dimopoulos et al. is no longer applicable.' },
       { letter: 'C', text: 'The theoretical approach represented in the 2022 paper by Dimopoulos et al. assumed that unambiguous proof of antigravity would not be achievable, but the results in the 2023 report undermine that assumption.' },
-      { letter: 'D', text: 'Before 2023, researchers\\' inordinate focus on theoretical considerations hindered the development of the experimental regimen for direct antihydrogen ballistics observations.' }
+      { letter: 'D', text: 'Before 2023, researchers\' inordinate focus on theoretical considerations hindered the development of the experimental regimen for direct antihydrogen ballistics observations.' }
     ],
     correctAnswer: 'B',
-    explanation: 'Dimopoulos argued antigravity was worth considering because no evidence existed against it. The 2023 CERN observations are "thoroughly inconsistent with antigravity"—now evidence against it exists. The rationale (no evidence against) is no longer valid. (B) captures this.',
+    explanation: 'Dimopoulos argued antigravity was worth considering because no evidence existed against it. The 2023 CERN observations are "thoroughly inconsistent with antigravity"--now evidence against it exists. The rationale (no evidence against) is no longer valid. (B) captures this.',
     difficulty: 'hard',
     domain: 'Reading Comprehension',
     skill: 'Central Ideas'
   }),
   addRating({
     id: 'sat-doc-023',
-    question: 'The alpaca was domesticated by Indigenous peoples in the Andes about 7,000 years ago. But which wild species did it descend from, the vicuña or guanaco? A research team led by Ruiwen Fan may have solved the mystery, concluding that the alpaca is the domesticated form of the vicuña but that the modern alpaca gets only 64 percent of its genetic material from its wild ancestor. The rest comes from the domesticated llama. The llama, meanwhile, gets 95.5 percent of its genetic material from its own wild ancestor, the guanaco, and the rest from the alpaca. The llama and alpaca apparently interbred widely for only a handful of generations between 400 and 600 years ago. Assuming that the findings of Fan\\'s team are valid, it can be inferred that ______. Which choice most logically completes the text?',
+    question: 'The alpaca was domesticated by Indigenous peoples in the Andes about 7,000 years ago. But which wild species did it descend from, the vicuna or guanaco? A research team led by Ruiwen Fan may have solved the mystery, concluding that the alpaca is the domesticated form of the vicuna but that the modern alpaca gets only 64 percent of its genetic material from its wild ancestor. The rest comes from the domesticated llama. The llama, meanwhile, gets 95.5 percent of its genetic material from its own wild ancestor, the guanaco, and the rest from the alpaca. The llama and alpaca apparently interbred widely for only a handful of generations between 400 and 600 years ago. Assuming that the findings of Fan\'s team are valid, it can be inferred that ______. Which choice most logically completes the text?',
     options: [
       { letter: 'A', text: 'modern llama populations have a greater degree of genetic diversity, on average, than modern alpaca populations do.' },
       { letter: 'B', text: 'the domestication process of the alpaca may have involved some introduction of genetic material from the llama.' },
       { letter: 'C', text: 'the period of interbreeding resulted in a greater genetic difference between alpacas and their wild ancestors than between llamas and their wild ancestors.' },
-      { letter: 'D', text: 'if they were subjected to genetic testing, modern populations of guanacos and vicuñas would likely show traces of ancient interbreeding as well.' }
+      { letter: 'D', text: 'if they were subjected to genetic testing, modern populations of guanacos and vicunas would likely show traces of ancient interbreeding as well.' }
     ],
     correctAnswer: 'C',
-    explanation: 'Alpacas have 64% vicuña DNA (36% difference from ancestor). Llamas have 95.5% guanaco DNA (4.5% difference). The interbreeding introduced more foreign DNA into alpacas than llamas, creating greater genetic difference from their wild ancestor. (C) captures this.',
+    explanation: 'Alpacas have 64% vicuna DNA (36% difference from ancestor). Llamas have 95.5% guanaco DNA (4.5% difference). The interbreeding introduced more foreign DNA into alpacas than llamas, creating greater genetic difference from their wild ancestor. (C) captures this.',
     difficulty: 'hard',
     domain: 'Reading Comprehension',
     skill: 'Inferences'
   }),
   addRating({
     id: 'sat-doc-024',
-    question: 'Poetry in Classical Nahuatl, the language of the Aztec Empire, relies on difrasismo, or a parallel noun construction that conventionally operates as a single metaphor. For example, the common difrasismo in cuauhtli in ocelotl (literally, "the eagle, the jaguar") signifies "warrior." The device\\'s function is both formal—providing structure to lines of verse—and ritual: semantic relations among the two nouns and the concept they signify can be tenuous, as in the previous example, such that difrasismos are often only intelligible according to the conceptual associations observed in Aztec ceremonial culture. Which statement about the difrasismo in cuauhtli in ocelotl is most strongly supported by the text?',
+    question: 'Poetry in Classical Nahuatl, the language of the Aztec Empire, relies on difrasismo, or a parallel noun construction that conventionally operates as a single metaphor. For example, the common difrasismo in cuauhtli in ocelotl (literally, "the eagle, the jaguar") signifies "warrior." The device\'s function is both formal--providing structure to lines of verse--and ritual: semantic relations among the two nouns and the concept they signify can be tenuous, as in the previous example, such that difrasismos are often only intelligible according to the conceptual associations observed in Aztec ceremonial culture. Which statement about the difrasismo in cuauhtli in ocelotl is most strongly supported by the text?',
     options: [
       { letter: 'A', text: 'Its metaphorical significance derives from the semantic equivalence of the two nouns constituting the difrasismo.' },
       { letter: 'B', text: 'Its unintelligibility may cause its formal function within a line of verse to go unnoticed by present-day readers.' },
@@ -4877,15 +4877,15 @@ export const hardEnglishQuestions: EnglishQuestion[] = [
   }),
   addRating({
     id: 'sat-doc-025',
-    question: 'Modern dog breeds are largely the result of 160 years of owners crossbreeding certain dogs in order to select for particular physical appearances. Owners often say that some breeds are also more likely than others to have particular personality traits—basset hounds are affectionate; boxers are easy to train—but Kathleen Morrill and colleagues found through a combination of owner surveys and DNA sequencing of 2,000 dogs that while physical traits are predictably heritable among purebred dogs, behavior varies widely among dogs of the same breed. Which choice best states the main idea of the text?',
+    question: 'Modern dog breeds are largely the result of 160 years of owners crossbreeding certain dogs in order to select for particular physical appearances. Owners often say that some breeds are also more likely than others to have particular personality traits--basset hounds are affectionate; boxers are easy to train--but Kathleen Morrill and colleagues found through a combination of owner surveys and DNA sequencing of 2,000 dogs that while physical traits are predictably heritable among purebred dogs, behavior varies widely among dogs of the same breed. Which choice best states the main idea of the text?',
     options: [
-      { letter: 'A', text: 'Dog breeds would not exist without many years of human intervention in dogs\\' reproduction.' },
+      { letter: 'A', text: 'Dog breeds would not exist without many years of human intervention in dogs\' reproduction.' },
       { letter: 'B', text: 'Research fails to confirm a commonly held belief about dog breeds and behavior.' },
       { letter: 'C', text: 'The dog breeds most popular among owners have often changed over the past 160 years.' },
       { letter: 'D', text: 'A study of dog breeds is notable for its usage of both opinion surveys and DNA sequencing.' }
     ],
     correctAnswer: 'B',
-    explanation: 'The common belief is that breeds have predictable personality traits. Morrill\\'s research found "behavior varies widely among dogs of the same breed"—contradicting this belief. (B) captures the main idea: research doesn\\'t confirm the common belief about breed and behavior.',
+    explanation: 'The common belief is that breeds have predictable personality traits. Morrill\'s research found "behavior varies widely among dogs of the same breed"--contradicting this belief. (B) captures the main idea: research doesn\'t confirm the common belief about breed and behavior.',
     difficulty: 'hard',
     domain: 'Reading Comprehension',
     skill: 'Central Ideas'
@@ -4907,7 +4907,7 @@ export const hardEnglishQuestions: EnglishQuestion[] = [
   }),
   addRating({
     id: 'sat-doc-027',
-    question: 'Archaeologists have held that the Casarabe culture, which emerged in the southwestern Amazon basin in the first millennium CE, was characterized by a sparse, widely distributed population and little intervention in the surrounding wilderness. Recently, however, archaeologist Heiko Prümers and colleagues conducted a study of the region using remote-sensing technology that enabled them to create three-dimensional images of the jungle-covered landscape from above, and the researchers concluded that the Casarabe people developed a form of urbanism in the Amazon basin. Which finding about the remote-sensing images, if true, would most directly support Prümers and colleagues\\' conclusion?',
+    question: 'Archaeologists have held that the Casarabe culture, which emerged in the southwestern Amazon basin in the first millennium CE, was characterized by a sparse, widely distributed population and little intervention in the surrounding wilderness. Recently, however, archaeologist Heiko Prumers and colleagues conducted a study of the region using remote-sensing technology that enabled them to create three-dimensional images of the jungle-covered landscape from above, and the researchers concluded that the Casarabe people developed a form of urbanism in the Amazon basin. Which finding about the remote-sensing images, if true, would most directly support Prumers and colleagues\' conclusion?',
     options: [
       { letter: 'A', text: 'They show shapes consistent with widely separated settlements of roughly equal small size surrounded by uncultivated jungle.' },
       { letter: 'B', text: 'They show shapes consistent with long-distance footpaths running from Casarabe territories to large cities outside the region inhabited by the Casarabe people.' },
@@ -4930,22 +4930,22 @@ export const hardEnglishQuestions: EnglishQuestion[] = [
       { letter: 'D', text: 'It is farther north than any other nesting site discovered in South America.' }
     ],
     correctAnswer: 'D',
-    explanation: 'The passage says there was a "previous lack of known nesting sites in northern regions of South America." This new site is significant because it\\'s in the north, challenging the assumption about southern migration. (D) captures that it\\'s in a northern location where none were known before.',
+    explanation: 'The passage says there was a "previous lack of known nesting sites in northern regions of South America." This new site is significant because it\'s in the north, challenging the assumption about southern migration. (D) captures that it\'s in a northern location where none were known before.',
     difficulty: 'hard',
     domain: 'Reading Comprehension',
     skill: 'Inferences'
   }),
   addRating({
     id: 'sat-doc-029',
-    question: 'In the 1980s, many musicians and journalists in the English-speaking world began to draw attention to music from around the globe—such as mbaqanga from South Africa and quan họ from Vietnam—that can\\'t be easily categorized according to British or North American popular music genres, typically referring to such music as "world music." While some scholars have welcomed this development for bringing diverse musical forms to prominence in countries where they\\'d previously been overlooked, musicologist Su Zheng claims that the concept of world music homogenizes highly distinct traditions by reducing them all to a single category. Which finding about mbaqanga and quan họ, if true, would most directly support Zheng\\'s claim?',
+    question: 'In the 1980s, many musicians and journalists in the English-speaking world began to draw attention to music from around the globe--such as mbaqanga from South Africa and quan ho from Vietnam--that can\'t be easily categorized according to British or North American popular music genres, typically referring to such music as "world music." While some scholars have welcomed this development for bringing diverse musical forms to prominence in countries where they\'d previously been overlooked, musicologist Su Zheng claims that the concept of world music homogenizes highly distinct traditions by reducing them all to a single category. Which finding about mbaqanga and quan ho, if true, would most directly support Zheng\'s claim?',
     options: [
-      { letter: 'A', text: 'Mbaqanga and quan họ developed independently of each other and have little in common musically.' },
-      { letter: 'B', text: 'Mbaqanga is significantly more popular in the English-speaking world than quan họ is.' },
-      { letter: 'C', text: 'Mbaqanga and quan họ are now performed by a diverse array of musicians with no direct connections to South Africa or Vietnam.' },
-      { letter: 'D', text: 'Mbaqanga and quan họ are highly distinct from British and North American popular music genres but similar to each other.' }
+      { letter: 'A', text: 'Mbaqanga and quan ho developed independently of each other and have little in common musically.' },
+      { letter: 'B', text: 'Mbaqanga is significantly more popular in the English-speaking world than quan ho is.' },
+      { letter: 'C', text: 'Mbaqanga and quan ho are now performed by a diverse array of musicians with no direct connections to South Africa or Vietnam.' },
+      { letter: 'D', text: 'Mbaqanga and quan ho are highly distinct from British and North American popular music genres but similar to each other.' }
     ],
     correctAnswer: 'A',
-    explanation: 'Zheng claims "world music" homogenizes "highly distinct traditions" by lumping them together. If (A) is true—mbaqanga and quan họ "have little in common musically"—then grouping them as "world music" indeed reduces distinct traditions to one category, supporting Zheng\\'s claim.',
+    explanation: 'Zheng claims "world music" homogenizes "highly distinct traditions" by lumping them together. If (A) is true--mbaqanga and quan ho "have little in common musically"--then grouping them as "world music" indeed reduces distinct traditions to one category, supporting Zheng\'s claim.',
     difficulty: 'hard',
     domain: 'Reading Comprehension',
     skill: 'Command of Evidence'
