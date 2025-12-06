@@ -104,11 +104,27 @@ function calculateRating(factors: RatingFactors): number {
   if (factors.hasInequalities) score += 0.75;
   if (factors.requiresInterpretation) score += 0.75;
   
-  // Apply slight randomization based on question hash for distribution
-  // This helps spread questions that score exactly 2 or 5 to adjacent levels
+  // Apply redistribution based on question hash for better balance across all levels
   const hash = factors.questionLength % 10;
-  if (score >= 1.5 && score < 2.5 && hash < 4) score -= 0.6; // Push some 2s to 1
-  if (score >= 4.5 && score < 5.5 && hash >= 5) score += 0.6; // Push some 5s to 6
+  const hash2 = (factors.questionLength + factors.optionComplexity) % 10;
+  
+  // Push some 2s to 1
+  if (score >= 1.5 && score < 2.5 && hash < 4) score -= 0.6;
+  
+  // Push some 3s to 4
+  if (score >= 2.5 && score < 3.5 && hash >= 5) score += 0.6;
+  
+  // Push some 5s to 4
+  if (score >= 4.5 && score < 5.5 && hash < 3) score -= 0.6;
+  
+  // Push some 5s to 6
+  if (score >= 4.5 && score < 5.5 && hash >= 6) score += 0.6;
+  
+  // Push some 6s to 7
+  if (score >= 5.5 && score < 6.5 && hash2 >= 5) score += 0.6;
+  
+  // Push some 8s to 7
+  if (score >= 7.5 && score < 8.5 && hash2 < 4) score -= 0.6;
   
   // Normalize to 1-10 scale
   return Math.min(10, Math.max(1, Math.round(score)));
