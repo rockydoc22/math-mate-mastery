@@ -1,4 +1,5 @@
 import newMathQuestionsRaw from './newMathQuestions.json';
+import { rateDifficulty } from '@/utils/difficultyRating';
 
 export interface NewMathQuestion {
   id: string;
@@ -12,6 +13,7 @@ export interface NewMathQuestion {
   difficulty: string;
   domain: string;
   skill: string;
+  difficultyRating?: number;
 }
 
 interface RawQuestion {
@@ -33,26 +35,30 @@ const cleanQuestion = (question: string): string => {
   return question.replace(/^\[[^\]]+\]\s*Question\s*\d+:\s*/, '');
 };
 
-// Transform raw JSON questions to our format
+// Transform raw JSON questions to our format with difficulty ratings
 export const newMathQuestions: NewMathQuestion[] = (newMathQuestionsRaw as RawQuestion[]).map((q, index) => {
   const category = extractCategory(q.question);
   const letters = ['A', 'B', 'C', 'D'];
+  const cleanedQuestion = cleanQuestion(q.question);
   
   // Find which letter corresponds to the correct answer
   const correctIndex = q.choices.findIndex(choice => choice === q.correct_answer);
   const correctLetter = correctIndex >= 0 ? letters[correctIndex] : 'A';
   
+  const options = q.choices.map((choice, i) => ({
+    letter: letters[i],
+    text: choice
+  }));
+  
   return {
     id: `newmath${String(index + 1).padStart(3, '0')}`,
-    question: cleanQuestion(q.question),
-    options: q.choices.map((choice, i) => ({
-      letter: letters[i],
-      text: choice
-    })),
+    question: cleanedQuestion,
+    options,
     correctAnswer: correctLetter,
     explanation: q.explanation,
     difficulty: 'Hard',
     domain: category,
-    skill: category
+    skill: category,
+    difficultyRating: rateDifficulty(cleanedQuestion, options, category, category)
   };
 });

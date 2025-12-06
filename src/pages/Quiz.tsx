@@ -11,8 +11,9 @@ import { Link, useSearchParams } from "react-router-dom";
 import { useSoundEffects } from "@/hooks/useSoundEffects";
 import { useAuth } from "@/hooks/useAuth";
 import { useGameStats } from "@/hooks/useGameStats";
+import { DifficultyRange, filterByDifficulty, getDifficultyColor } from "@/utils/difficultyRating";
 
-type CombinedQuestion = (Question | EnglishQuestion | VisualQuestion) & { type: "math" | "english" };
+type CombinedQuestion = (Question | EnglishQuestion | VisualQuestion) & { type: "math" | "english"; difficultyRating?: number };
 
 function shuffleArray<T>(array: T[]): T[] {
   const shuffled = [...array];
@@ -27,6 +28,7 @@ const Quiz = () => {
   const [searchParams] = useSearchParams();
   const subject = searchParams.get("subject") || "math";
   const count = Number(searchParams.get("count")) || 10;
+  const difficulty = (searchParams.get("difficulty") || "all") as DifficultyRange;
   const { playCorrect, playWrong } = useSoundEffects();
   const { user } = useAuth();
   const { recordScore } = useGameStats();
@@ -45,9 +47,11 @@ const Quiz = () => {
       pool = [...pool, ...moreEnglishVisualQuestions.map((q) => ({ ...q, type: "english" as const }))];
     }
 
-    const shuffled = shuffleArray(pool);
+    // Apply difficulty filter
+    const filtered = filterByDifficulty(pool, difficulty);
+    const shuffled = shuffleArray(filtered);
     return shuffled.slice(0, Math.min(count, shuffled.length));
-  }, [subject, count]);
+  }, [subject, count, difficulty]);
 
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [selectedAnswer, setSelectedAnswer] = useState<string | null>(null);
@@ -146,6 +150,11 @@ const Quiz = () => {
                     : "bg-secondary/10 text-secondary"
                 }`}>
                   {currentQuestion.type === "math" ? "Math" : "English"}
+                </span>
+              )}
+              {currentQuestion.difficultyRating && (
+                <span className={`text-xs px-2 py-1 rounded-full font-bold ${getDifficultyColor(currentQuestion.difficultyRating)}`}>
+                  {currentQuestion.difficultyRating}/10
                 </span>
               )}
             </div>

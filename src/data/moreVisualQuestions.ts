@@ -1,7 +1,16 @@
 import { VisualQuestion } from "./visualQuestions";
+import { rateDifficulty } from '@/utils/difficultyRating';
 
-// Additional visual math questions
-export const moreMathVisualQuestions: VisualQuestion[] = [
+// Helper to add difficulty ratings to an array
+function addRatings(questions: Omit<VisualQuestion, 'difficultyRating'>[]): VisualQuestion[] {
+  return questions.map(q => ({
+    ...q,
+    difficultyRating: rateDifficulty(q.question, q.options, q.domain, q.skill, !!q.visual)
+  }));
+}
+
+// Additional visual math questions (raw without ratings)
+const moreMathVisualQuestionsRaw: Omit<VisualQuestion, 'difficultyRating'>[] = [
   // Linear function tables
   {
     id: "vm015",
@@ -513,8 +522,11 @@ export const moreMathVisualQuestions: VisualQuestion[] = [
   },
 ];
 
-// Additional visual English questions
-export const moreEnglishVisualQuestions: VisualQuestion[] = [
+// Export with ratings applied
+export const moreMathVisualQuestions: VisualQuestion[] = addRatings(moreMathVisualQuestionsRaw);
+
+// Additional visual English questions (raw without ratings)
+const moreEnglishVisualQuestionsRaw: Omit<VisualQuestion, 'difficultyRating'>[] = [
   {
     id: "ve009",
     question: "A health study tracked exercise frequency and reported stress levels. Which conclusion is best supported by the data?",
@@ -801,3 +813,6 @@ export const moreEnglishVisualQuestions: VisualQuestion[] = [
     },
   },
 ];
+
+// Export with ratings applied
+export const moreEnglishVisualQuestions: VisualQuestion[] = addRatings(moreEnglishVisualQuestionsRaw);
