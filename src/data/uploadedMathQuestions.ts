@@ -241,5 +241,156 @@ export const uploadedMathQuestions: Question[] = [
     difficulty: "Hard",
     domain: "Advanced Algebra",
     skill: "Sequences and Series"
+  }),
+  // Trigonometry questions - Pythagorean identities (Rating 5-6)
+  addRating({
+    id: "umath016",
+    question: "In a right triangle, if sin(θ) = 3/5, what is cos(θ)?",
+    options: [
+      { letter: "A", text: "4/5" },
+      { letter: "B", text: "3/4" },
+      { letter: "C", text: "5/4" },
+      { letter: "D", text: "2/5" }
+    ],
+    correctAnswer: "A",
+    explanation: "sin(θ) = opposite/hypotenuse = 3/5. Then adjacent = √(5² - 3²) = 4, so cos(θ) = 4/5.",
+    difficulty: "Medium",
+    domain: "Trigonometry",
+    skill: "Pythagorean Identity"
+  }),
+  addRating({
+    id: "umath017",
+    question: "If tan(α) = 7/24, find sin(α).",
+    options: [
+      { letter: "A", text: "7/25" },
+      { letter: "B", text: "24/25" },
+      { letter: "C", text: "25/7" },
+      { letter: "D", text: "7/24" }
+    ],
+    correctAnswer: "A",
+    explanation: "tan(α) = opposite/adjacent = 7/24. Hypotenuse = √(7² + 24²) = 25, so sin(α) = 7/25.",
+    difficulty: "Medium",
+    domain: "Trigonometry",
+    skill: "Pythagorean Identity"
+  }),
+  addRating({
+    id: "umath018",
+    question: "If cos(β) = 12/13, what is sin(β)?",
+    options: [
+      { letter: "A", text: "5/13" },
+      { letter: "B", text: "12/13" },
+      { letter: "C", text: "13/5" },
+      { letter: "D", text: "5/12" }
+    ],
+    correctAnswer: "A",
+    explanation: "cos(β) = adjacent/hypotenuse = 12/13, opposite = √(13² - 12²) = 5, so sin(β) = 5/13.",
+    difficulty: "Medium",
+    domain: "Trigonometry",
+    skill: "Pythagorean Identity"
+  }),
+  addRating({
+    id: "umath019",
+    question: "If sin(θ) = 8/17, find tan(θ).",
+    options: [
+      { letter: "A", text: "8/15" },
+      { letter: "B", text: "15/8" },
+      { letter: "C", text: "17/8" },
+      { letter: "D", text: "8/17" }
+    ],
+    correctAnswer: "A",
+    explanation: "sin(θ) = 8/17, opposite = 8, hyp = 17, adjacent = √(17² - 8²) = 15, tan = 8/15.",
+    difficulty: "Medium",
+    domain: "Trigonometry",
+    skill: "Pythagorean Identity"
+  }),
+  addRating({
+    id: "umath020",
+    question: "If sec(φ) = √2, find sin(φ).",
+    options: [
+      { letter: "A", text: "1/√2" },
+      { letter: "B", text: "√2/2" },
+      { letter: "C", text: "1" },
+      { letter: "D", text: "√3/2" }
+    ],
+    correctAnswer: "B",
+    explanation: "sec(φ) = 1/cos(φ) = √2, so cos(φ) = 1/√2. sin(φ) = √(1 - 1/2) = √2/2.",
+    difficulty: "Medium",
+    domain: "Trigonometry",
+    skill: "Reciprocal Identities"
+  }),
+  addRating({
+    id: "umath021",
+    question: "If cot(θ) = 3/4, find sin(θ).",
+    options: [
+      { letter: "A", text: "4/5" },
+      { letter: "B", text: "3/5" },
+      { letter: "C", text: "5/4" },
+      { letter: "D", text: "4/3" }
+    ],
+    correctAnswer: "A",
+    explanation: "cot(θ) = adjacent/opposite = 3/4, so opposite = 4, adjacent = 3, hyp = 5, sin = 4/5.",
+    difficulty: "Medium",
+    domain: "Trigonometry",
+    skill: "Pythagorean Identity"
+  }),
+  addRating({
+    id: "umath022",
+    question: "If sin(θ) = √3/2, find cos(θ).",
+    options: [
+      { letter: "A", text: "1/2" },
+      { letter: "B", text: "√3/2" },
+      { letter: "C", text: "√2/2" },
+      { letter: "D", text: "1" }
+    ],
+    correctAnswer: "A",
+    explanation: "sin² + cos² = 1, sin² = (√3/2)² = 3/4, so cos² = 1/4, cos = 1/2.",
+    difficulty: "Medium",
+    domain: "Trigonometry",
+    skill: "Special Angles"
+  }),
+  addRating({
+    id: "umath023",
+    question: "If tan(θ) = √3, find sin(θ) when θ is acute.",
+    options: [
+      { letter: "A", text: "√3/2" },
+      { letter: "B", text: "1/2" },
+      { letter: "C", text: "1" },
+      { letter: "D", text: "√2/2" }
+    ],
+    correctAnswer: "A",
+    explanation: "tan = √3 corresponds to θ = 60°, where sin(60°) = √3/2.",
+    difficulty: "Medium",
+    domain: "Trigonometry",
+    skill: "Special Angles"
+  }),
+  addRating({
+    id: "umath024",
+    question: "If cos(θ) = 0.6, find sin(θ).",
+    options: [
+      { letter: "A", text: "0.8" },
+      { letter: "B", text: "0.6" },
+      { letter: "C", text: "0.4" },
+      { letter: "D", text: "0.5" }
+    ],
+    correctAnswer: "A",
+    explanation: "sin² = 1 - cos² = 1 - 0.36 = 0.64, sin = 0.8.",
+    difficulty: "Medium",
+    domain: "Trigonometry",
+    skill: "Pythagorean Identity"
+  }),
+  addRating({
+    id: "umath025",
+    question: "If sin(θ) = 0.6, find tan(θ).",
+    options: [
+      { letter: "A", text: "0.75" },
+      { letter: "B", text: "1.25" },
+      { letter: "C", text: "0.6" },
+      { letter: "D", text: "0.8" }
+    ],
+    correctAnswer: "A",
+    explanation: "sin = 0.6, cos = √(1 - 0.36) = 0.8, tan = sin/cos = 0.6/0.8 = 0.75.",
+    difficulty: "Medium",
+    domain: "Trigonometry",
+    skill: "Pythagorean Identity"
   })
 ];
