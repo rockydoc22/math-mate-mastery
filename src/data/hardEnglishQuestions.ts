@@ -5190,5 +5190,156 @@ export const hardEnglishQuestions: EnglishQuestion[] = [
     difficulty: 'hard',
     domain: 'Reading Comprehension',
     skill: 'Central Ideas'
+  }),
+  // Additional user-provided questions
+  addRating({
+    id: 'sat-doc-046',
+    question: 'In context, which choice best maintains the tone and logical progression of the passage? Despite the committee\'s insistence on transparency, the report was...',
+    options: [
+      { letter: 'A', text: 'opaque and convoluted, leaving readers perplexed.' },
+      { letter: 'B', text: 'clear and concise, satisfying all expectations.' },
+      { letter: 'C', text: 'verbose yet illuminating, offering clarity.' },
+      { letter: 'D', text: 'brief but misleading, obscuring critical details.' }
+    ],
+    correctAnswer: 'A',
+    explanation: 'The phrase "Despite the committee\'s insistence on transparency" suggests the report failed to meet expectations, making "opaque and convoluted" the most logical choice.',
+    difficulty: 'hard',
+    domain: 'Writing',
+    skill: 'Tone and Logical Progression'
+  }),
+  addRating({
+    id: 'sat-doc-047',
+    question: 'Which revision most improves sentence structure? Original: The scientist, who was renowned for groundbreaking research, published findings that were controversial.',
+    options: [
+      { letter: 'A', text: 'Renowned for groundbreaking research, the scientist published controversial findings.' },
+      { letter: 'B', text: 'The scientist published findings that were controversial and groundbreaking.' },
+      { letter: 'C', text: 'The scientist, renowned for research, published findings that were controversial.' },
+      { letter: 'D', text: 'Publishing controversial findings, the scientist was renowned for research.' }
+    ],
+    correctAnswer: 'A',
+    explanation: 'Option A eliminates unnecessary words and improves clarity while maintaining meaning.',
+    difficulty: 'hard',
+    domain: 'Writing',
+    skill: 'Sentence Structure'
+  }),
+  addRating({
+    id: 'sat-doc-048',
+    question: 'Which choice best supports the claim that technological progress can exacerbate inequality?',
+    options: [
+      { letter: 'A', text: 'Innovations often reduce costs for consumers.' },
+      { letter: 'B', text: 'Automation disproportionately affects low-income workers.' },
+      { letter: 'C', text: 'Advancements in AI improve efficiency in all sectors.' },
+      { letter: 'D', text: 'Digital platforms increase global connectivity.' }
+    ],
+    correctAnswer: 'B',
+    explanation: 'Automation replacing low-income jobs directly supports the claim about inequality.',
+    difficulty: 'hard',
+    domain: 'Reading Comprehension',
+    skill: 'Command of Evidence'
+  }),
+  addRating({
+    id: 'sat-doc-049',
+    question: 'The author\'s tone in the passage is best described as:',
+    options: [
+      { letter: 'A', text: 'cautiously optimistic.' },
+      { letter: 'B', text: 'vehemently critical.' },
+      { letter: 'C', text: 'detached and analytical.' },
+      { letter: 'D', text: 'exuberantly celebratory.' }
+    ],
+    correctAnswer: 'C',
+    explanation: 'The passage uses objective language and analysis, indicating a detached and analytical tone.',
+    difficulty: 'hard',
+    domain: 'Reading Comprehension',
+    skill: 'Author Tone'
+  }),
+  addRating({
+    id: 'sat-doc-050',
+    question: 'Which sentence most effectively combines the two ideas without redundancy? She admired the painting. The painting was created by a local artist.',
+    options: [
+      { letter: 'A', text: 'She admired the painting, which was created by a local artist.' },
+      { letter: 'B', text: 'She admired the painting and it was created by a local artist.' },
+      { letter: 'C', text: 'She admired the painting; the painting was by a local artist.' },
+      { letter: 'D', text: 'She admired the painting because it was created by a local artist.' }
+    ],
+    correctAnswer: 'A',
+    explanation: 'Option A combines the ideas smoothly without redundancy using a relative clause.',
+    difficulty: 'hard',
+    domain: 'Writing',
+    skill: 'Sentence Combining'
+  }),
+  addRating({
+    id: 'sat-doc-051',
+    question: 'Which choice best maintains parallel structure? Original: The internship taught her to write clearly, think critically, and she learned collaboration.',
+    options: [
+      { letter: 'A', text: 'write clearly, think critically, and collaborate effectively.' },
+      { letter: 'B', text: 'writing clearly, thinking critically, and collaboration.' },
+      { letter: 'C', text: 'write clearly, thinking critically, and collaborating.' },
+      { letter: 'D', text: 'writing clearly, think critically, and collaborate effectively.' }
+    ],
+    correctAnswer: 'A',
+    explanation: 'Option A maintains parallel structure with all verbs in the same infinitive form.',
+    difficulty: 'hard',
+    domain: 'Writing',
+    skill: 'Parallel Structure'
+  }),
+  addRating({
+    id: 'sat-doc-052',
+    question: 'Which choice most logically completes the sentence? Although the policy aimed to reduce emissions, critics argued that...',
+    options: [
+      { letter: 'A', text: 'it would accelerate climate change.' },
+      { letter: 'B', text: 'its implementation was costly and ineffective.' },
+      { letter: 'C', text: 'it was universally praised by environmentalists.' },
+      { letter: 'D', text: 'it aligned with global sustainability goals.' }
+    ],
+    correctAnswer: 'B',
+    explanation: 'Critics would argue against effectiveness, making B the best choice that logically follows "critics argued."',
+    difficulty: 'hard',
+    domain: 'Reading Comprehension',
+    skill: 'Logical Completion'
+  }),
+  addRating({
+    id: 'sat-doc-053',
+    question: 'Which choice best improves the clarity of the sentence? Original: Due to the fact that the project was delayed, the team had to work overtime.',
+    options: [
+      { letter: 'A', text: 'Because the project was delayed, the team had to work overtime.' },
+      { letter: 'B', text: 'The project was delayed, so the team had to work overtime.' },
+      { letter: 'C', text: 'The team had to work overtime due to the project delay.' },
+      { letter: 'D', text: 'All of the above improve clarity.' }
+    ],
+    correctAnswer: 'D',
+    explanation: 'All options improve clarity compared to the original wordy phrase "due to the fact that."',
+    difficulty: 'hard',
+    domain: 'Writing',
+    skill: 'Concision and Clarity'
+  }),
+  addRating({
+    id: 'sat-doc-054',
+    question: 'Which choice best supports the argument that art influences culture?',
+    options: [
+      { letter: 'A', text: 'Art reflects societal values and norms.' },
+      { letter: 'B', text: 'Art is often displayed in museums.' },
+      { letter: 'C', text: 'Artists sometimes collaborate internationally.' },
+      { letter: 'D', text: 'Art requires creativity and skill.' }
+    ],
+    correctAnswer: 'A',
+    explanation: 'Option A directly connects art to cultural influence by showing the relationship between art and society.',
+    difficulty: 'hard',
+    domain: 'Reading Comprehension',
+    skill: 'Command of Evidence'
+  }),
+  addRating({
+    id: 'sat-doc-055',
+    question: 'Which choice best maintains the formal tone? Original: The results were pretty surprising to the researchers.',
+    options: [
+      { letter: 'A', text: 'The results were quite surprising to the researchers.' },
+      { letter: 'B', text: 'The results were surprising to the researchers.' },
+      { letter: 'C', text: 'The results were rather surprising to the researchers.' },
+      { letter: 'D', text: 'The results were significantly surprising to the researchers.' }
+    ],
+    correctAnswer: 'B',
+    explanation: 'Option B is formal and concise, avoiding informal words like "pretty" while maintaining proper academic register.',
+    difficulty: 'hard',
+    domain: 'Writing',
+    skill: 'Formal Tone'
   })
 ];
