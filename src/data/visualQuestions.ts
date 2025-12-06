@@ -1,3 +1,5 @@
+import { rateDifficulty } from '@/utils/difficultyRating';
+
 export interface VisualQuestion {
   id: string;
   question: string;
@@ -7,6 +9,7 @@ export interface VisualQuestion {
   difficulty: string;
   domain: string;
   skill: string;
+  difficultyRating?: number;
   visual?: {
     type: 'lineGraph' | 'table' | 'barChart' | 'scatterPlot';
     data: any;
@@ -16,11 +19,19 @@ export interface VisualQuestion {
   };
 }
 
-// Re-export additional visual questions
+// Helper to add difficulty ratings to an array of visual questions
+function addRatings(questions: Omit<VisualQuestion, 'difficultyRating'>[]): VisualQuestion[] {
+  return questions.map(q => ({
+    ...q,
+    difficultyRating: rateDifficulty(q.question, q.options, q.domain, q.skill, !!q.visual)
+  }));
+}
+
+// Re-export additional visual questions with ratings
 export { moreMathVisualQuestions, moreEnglishVisualQuestions } from "./moreVisualQuestions";
 
 // Sample visual math questions
-export const visualMathQuestions: VisualQuestion[] = [
+const visualMathQuestionsRaw: Omit<VisualQuestion, 'difficultyRating'>[] = [
   // Table-based linear function questions
   {
     id: "vmath007",
@@ -416,8 +427,11 @@ export const visualMathQuestions: VisualQuestion[] = [
   },
 ];
 
+// Export visual math questions with ratings
+export const visualMathQuestions: VisualQuestion[] = addRatings(visualMathQuestionsRaw);
+
 // Sample visual English questions (data interpretation passages)
-export const visualEnglishQuestions: VisualQuestion[] = [
+const visualEnglishQuestionsRaw: Omit<VisualQuestion, 'difficultyRating'>[] = [
   {
     id: "veng001",
     question: "A researcher collected data on average daily temperatures over five months. Based on the graph, which of the following statements is best supported by the data?",
@@ -639,3 +653,6 @@ export const visualEnglishQuestions: VisualQuestion[] = [
     },
   },
 ];
+
+// Export visual English questions with ratings
+export const visualEnglishQuestions: VisualQuestion[] = addRatings(visualEnglishQuestionsRaw);

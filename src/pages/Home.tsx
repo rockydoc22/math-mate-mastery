@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useMemo } from "react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { BookOpen, Calculator, PenTool, Shuffle, Trophy, Zap, Users, BookMarked, LogIn, User, Award, Swords, Target, Brain, RefreshCw } from "lucide-react";
@@ -13,9 +13,11 @@ import { useGameStats } from "@/hooks/useGameStats";
 import { StreakBadge } from "@/components/StreakBadge";
 import { XPBar } from "@/components/XPBar";
 import { AchievementBadge } from "@/components/AchievementBadge";
+import { DifficultyRange, filterByDifficulty } from "@/utils/difficultyRating";
 
-const totalMath = questions.length + visualMathQuestions.length + moreMathVisualQuestions.length;
-const totalEnglish = englishQuestions.length + visualEnglishQuestions.length + moreEnglishVisualQuestions.length;
+// Get counts by difficulty range
+const allMathQuestions = [...questions, ...visualMathQuestions, ...moreMathVisualQuestions];
+const allEnglishQuestions = [...englishQuestions, ...visualEnglishQuestions, ...moreEnglishVisualQuestions];
 
 type Subject = "math" | "english" | "both";
 type QuestionCount = 10 | 25 | 50;
@@ -26,9 +28,21 @@ const Home = () => {
   const { streak, achievements, quizCount, achievementDefs } = useGameStats();
   const [subject, setSubject] = useState<Subject>("math");
   const [questionCount, setQuestionCount] = useState<QuestionCount>(10);
+  const [difficultyRange, setDifficultyRange] = useState<DifficultyRange>("all");
+
+  // Calculate available questions based on filters
+  const availableCounts = useMemo(() => {
+    const mathFiltered = filterByDifficulty(allMathQuestions, difficultyRange);
+    const englishFiltered = filterByDifficulty(allEnglishQuestions, difficultyRange);
+    return {
+      math: mathFiltered.length,
+      english: englishFiltered.length,
+      both: mathFiltered.length + englishFiltered.length
+    };
+  }, [difficultyRange]);
 
   const handleStartPractice = () => {
-    navigate(`/quiz?subject=${subject}&count=${questionCount}`);
+    navigate(`/quiz?subject=${subject}&count=${questionCount}&difficulty=${difficultyRange}`);
   };
 
   const subjectOptions = [
@@ -172,10 +186,35 @@ const Home = () => {
               ))}
             </div>
             <p className="text-sm text-muted-foreground">
-              {subject === "math" && `${totalMath} questions available`}
-              {subject === "english" && `${totalEnglish} questions available`}
-              {subject === "both" && `${totalMath + totalEnglish} questions available`}
+              {availableCounts[subject]} questions available
             </p>
+          </div>
+
+          {/* Difficulty Selection */}
+          <div className="space-y-4">
+            <h3 className="font-semibold text-lg">Difficulty Level</h3>
+            <div className="grid grid-cols-5 gap-2">
+              {[
+                { value: 'all' as DifficultyRange, label: 'All', color: 'bg-muted' },
+                { value: 'easy' as DifficultyRange, label: '1-3', sublabel: 'Easy', color: 'bg-green-500/20 border-green-500/40' },
+                { value: 'medium' as DifficultyRange, label: '4-5', sublabel: 'Medium', color: 'bg-yellow-500/20 border-yellow-500/40' },
+                { value: 'hard' as DifficultyRange, label: '6-8', sublabel: 'Hard', color: 'bg-orange-500/20 border-orange-500/40' },
+                { value: 'veryhard' as DifficultyRange, label: '9-10', sublabel: 'Expert', color: 'bg-red-500/20 border-red-500/40' },
+              ].map(({ value, label, sublabel, color }) => (
+                <button
+                  key={value}
+                  onClick={() => setDifficultyRange(value)}
+                  className={`p-2 rounded-lg border-2 transition-all text-center ${
+                    difficultyRange === value
+                      ? `${color} border-primary shadow-md`
+                      : 'border-border hover:border-muted-foreground/50'
+                  }`}
+                >
+                  <span className="font-bold text-sm">{label}</span>
+                  {sublabel && <p className="text-xs text-muted-foreground">{sublabel}</p>}
+                </button>
+              ))}
+            </div>
           </div>
 
           {/* Question Count Selection */}
