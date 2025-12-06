@@ -1,7 +1,7 @@
 import { useState, useMemo } from "react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { Calculator, PenTool, Shuffle, Trophy, Zap, Users, BookMarked, LogIn, User, Award, Swords, Target, Brain, RefreshCw } from "lucide-react";
+import { Calculator, PenTool, Shuffle, Trophy, Zap, Users, BookMarked, LogIn, User, Award, Swords, Target, Brain, RefreshCw, Volume2, VolumeX } from "lucide-react";
 import { useNavigate, Link } from "react-router-dom";
 import { questions } from "@/data/questions";
 import { englishQuestions } from "@/data/englishQuestions";
@@ -32,6 +32,16 @@ const Home = () => {
   const [subject, setSubject] = useState<Subject>("math");
   const [questionCount, setQuestionCount] = useState<QuestionCount>(10);
   const [difficultyRange, setDifficultyRange] = useState<DifficultyRange>("all");
+  const [soundEnabled, setSoundEnabled] = useState(() => {
+    const saved = localStorage.getItem('satmastery-sound-enabled');
+    return saved !== null ? saved === 'true' : true;
+  });
+
+  const toggleSound = () => {
+    const newValue = !soundEnabled;
+    setSoundEnabled(newValue);
+    localStorage.setItem('satmastery-sound-enabled', String(newValue));
+  };
 
   // Calculate available questions based on filters
   const availableCounts = useMemo(() => {
@@ -96,6 +106,27 @@ const Home = () => {
                 Ranks
               </Button>
             </Link>
+            {user && (
+              <Link to="/friends">
+                <Button variant="ghost" size="lg" className="gap-2 text-base md:text-lg">
+                  <Users className="w-5 h-5 md:w-6 md:h-6" />
+                  Friends
+                </Button>
+              </Link>
+            )}
+            <Button
+              variant="ghost"
+              size="lg"
+              onClick={toggleSound}
+              className="gap-2 text-base md:text-lg"
+              title={soundEnabled ? "Mute sounds" : "Enable sounds"}
+            >
+              {soundEnabled ? (
+                <Volume2 className="w-5 h-5 md:w-6 md:h-6" />
+              ) : (
+                <VolumeX className="w-5 h-5 md:w-6 md:h-6 text-muted-foreground" />
+              )}
+            </Button>
             {user ? (
               <Link to="/profile">
                 <Button variant="outline" size="lg" className="gap-2 text-base md:text-lg">
@@ -122,49 +153,12 @@ const Home = () => {
         </div>
 
         {/* Hero */}
-        <div className="text-center space-y-6 py-8">
-          {/* Math expressions floating around */}
-          <div className="relative flex justify-center items-center min-h-[200px]">
-            {/* Top left - Sum of squares */}
-            <span className="absolute left-0 md:left-4 top-0 text-2xl md:text-3xl font-mono text-primary/70 animate-pulse font-bold" style={{ animationDelay: '0.3s' }}>
-              32²+24²
+        <div className="text-center space-y-4 py-6">
+          <div className="p-8 md:p-10 rounded-3xl bg-gradient-to-br from-primary to-accent shadow-2xl shadow-primary/30 inline-block">
+            <span className="text-5xl md:text-7xl font-bold text-primary-foreground font-mono">
+              SAT Mastery
             </span>
-            
-            {/* Top right - Prime factorization */}
-            <span className="absolute right-0 md:right-4 top-0 text-2xl md:text-3xl font-mono text-accent/70 animate-pulse font-bold" style={{ animationDelay: '0.6s' }}>
-              2⁶×5²
-            </span>
-            
-            {/* Left middle - Base 12 */}
-            <span className="absolute left-0 md:left-8 top-1/2 -translate-y-1/2 text-xl md:text-2xl font-mono text-secondary/70 animate-pulse font-bold" style={{ animationDelay: '0.9s' }}>
-              B14₁₂
-            </span>
-            
-            {/* Center - 40² as the main element */}
-            <div className="p-10 md:p-12 rounded-3xl bg-gradient-to-br from-primary to-accent shadow-2xl shadow-primary/30">
-              <span className="text-6xl md:text-8xl font-bold text-primary-foreground font-mono">
-                40²
-              </span>
-            </div>
-            
-            {/* Right lower - Sigma notation */}
-            <span className="absolute right-0 md:right-4 bottom-[10%] font-mono text-primary/70 animate-pulse" style={{ animationDelay: '1.2s' }}>
-              <span className="inline-flex flex-col items-center leading-none">
-                <span className="text-sm md:text-base">40</span>
-                <span className="text-3xl md:text-4xl">Σ</span>
-                <span className="text-sm md:text-base">k=1</span>
-              </span>
-              <span className="align-middle text-lg md:text-xl">(2k-1)</span>
-            </span>
-            
-            {/* Bottom left - Integral */}
-            <span className="absolute left-0 md:left-4 bottom-0 text-xl md:text-2xl font-mono text-accent/70 animate-pulse font-bold" style={{ animationDelay: '1.5s' }}>
-              ∫₀⁴⁰2x dx
-            </span>
-            
-            {/* Bottom right - placeholder for balance */}
           </div>
-          
           <p className="text-xl md:text-2xl text-muted-foreground font-medium">Join the 99.9% Club</p>
         </div>
 
@@ -248,9 +242,24 @@ const Home = () => {
         )}
 
         {/* Main Card */}
-        <Card className="p-6 md:p-8 border-2 border-border text-left space-y-6">
+        <Card className="p-6 md:p-8 border-2 border-border text-left space-y-6 relative overflow-hidden">
+          {/* Floating math expressions in the card */}
+          <div className="absolute inset-0 pointer-events-none overflow-hidden opacity-20">
+            <span className="absolute left-4 top-4 text-xl font-mono text-primary font-bold">32²+24²</span>
+            <span className="absolute right-4 top-4 text-xl font-mono text-accent font-bold">2⁶×5²</span>
+            <span className="absolute left-4 bottom-4 text-lg font-mono text-secondary font-bold">∫₀⁴⁰2x dx</span>
+            <span className="absolute right-4 bottom-4 text-lg font-mono text-primary font-bold">B14₁₂</span>
+            <span className="absolute right-1/4 top-1/3 font-mono text-accent text-sm">
+              <span className="inline-flex flex-col items-center leading-none">
+                <span className="text-xs">40</span>
+                <span className="text-lg">Σ</span>
+                <span className="text-xs">k=1</span>
+              </span>
+            </span>
+          </div>
+          
           {/* Subject Selection */}
-          <div className="space-y-4">
+          <div className="space-y-4 relative z-10">
             <h3 className="font-semibold text-lg">Choose Subject</h3>
             <div className="grid grid-cols-3 gap-3">
               {subjectOptions.map(({ value, label, icon: Icon, color }) => (
@@ -344,7 +353,7 @@ const Home = () => {
             </RadioGroup>
           </div>
 
-          <Button size="lg" className="w-full text-lg py-6" onClick={handleStartPractice}>
+          <Button size="lg" className="w-full text-lg py-6 relative z-10" onClick={handleStartPractice}>
             🚀 Start Practice
           </Button>
         </Card>
