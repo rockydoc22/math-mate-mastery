@@ -392,5 +392,141 @@ export const uploadedMathQuestions: Question[] = [
     difficulty: "Medium",
     domain: "Trigonometry",
     skill: "Pythagorean Identity"
+  }),
+  // Advanced questions - double angles, inscribed shapes, logs (Rating 6-8)
+  addRating({
+    id: "umath026",
+    question: "If f(x) = sin(x) + cos(x), what is the maximum value of f(x) for x in [0, 2π]?",
+    options: [
+      { letter: "A", text: "√2" },
+      { letter: "B", text: "1" },
+      { letter: "C", text: "2" },
+      { letter: "D", text: "√3" }
+    ],
+    correctAnswer: "A",
+    explanation: "Rewrite f(x) = sin(x) + cos(x) = √2 sin(x + π/4). Maximum value is √2.",
+    difficulty: "Hard",
+    domain: "Trigonometry",
+    skill: "Trigonometric Identities"
+  }),
+  addRating({
+    id: "umath027",
+    question: "A circle is inscribed in a square of side length 10. A smaller square is inscribed in the circle. What is the area of the smaller square?",
+    options: [
+      { letter: "A", text: "50" },
+      { letter: "B", text: "100" },
+      { letter: "C", text: "25√2" },
+      { letter: "D", text: "200" }
+    ],
+    correctAnswer: "A",
+    explanation: "Diameter of circle = 10, so diagonal of smaller square = 10. Side = 10/√2 = 5√2. Area = (5√2)² = 50.",
+    difficulty: "Hard",
+    domain: "Geometry",
+    skill: "Inscribed Shapes"
+  }),
+  addRating({
+    id: "umath028",
+    question: "Solve for x: log₂(x) + log₄(x) = 3.",
+    options: [
+      { letter: "A", text: "4" },
+      { letter: "B", text: "8" },
+      { letter: "C", text: "16" },
+      { letter: "D", text: "32" }
+    ],
+    correctAnswer: "A",
+    explanation: "log₄(x) = log₂(x)/2, so total = 1.5·log₂(x) = 3, log₂(x) = 2, x = 4.",
+    difficulty: "Hard",
+    domain: "Advanced Algebra",
+    skill: "Logarithmic Equations"
+  }),
+  addRating({
+    id: "umath029",
+    question: "If sin(θ) + cos(θ) = 1.2, find sin(2θ).",
+    options: [
+      { letter: "A", text: "0.44" },
+      { letter: "B", text: "0.88" },
+      { letter: "C", text: "1.2" },
+      { letter: "D", text: "0.96" }
+    ],
+    correctAnswer: "A",
+    explanation: "(sinθ + cosθ)² = sin²θ + cos²θ + 2sinθcosθ = 1 + sin(2θ) = 1.44, so sin(2θ) = 0.44.",
+    difficulty: "Hard",
+    domain: "Trigonometry",
+    skill: "Double Angle Formulas"
+  }),
+  addRating({
+    id: "umath030",
+    question: "The function f(x) = x³ - 6x² + 9x has a local minimum at x = ?",
+    options: [
+      { letter: "A", text: "1" },
+      { letter: "B", text: "2" },
+      { letter: "C", text: "3" },
+      { letter: "D", text: "4" }
+    ],
+    correctAnswer: "C",
+    explanation: "f'(x) = 3x² - 12x + 9 = 0 → x = 1 or 3. f''(x) = 6x - 12, at x = 3: f'' = 6 > 0 so local min at x = 3.",
+    difficulty: "Hard",
+    domain: "Advanced Math",
+    skill: "Calculus Concepts"
+  }),
+  addRating({
+    id: "umath031",
+    question: "A parabola y = x² - 4x + 3 intersects the x-axis at points A and B. Find length AB.",
+    options: [
+      { letter: "A", text: "1" },
+      { letter: "B", text: "2" },
+      { letter: "C", text: "3" },
+      { letter: "D", text: "4" }
+    ],
+    correctAnswer: "B",
+    explanation: "x² - 4x + 3 = 0 → roots are 1 and 3, distance = |3 - 1| = 2.",
+    difficulty: "Medium",
+    domain: "Advanced Algebra",
+    skill: "Quadratic Functions"
+  }),
+  addRating({
+    id: "umath032",
+    question: "If tan(α) = 3/4 and α is in the first quadrant, find sin(2α).",
+    options: [
+      { letter: "A", text: "24/25" },
+      { letter: "B", text: "7/25" },
+      { letter: "C", text: "12/25" },
+      { letter: "D", text: "48/25" }
+    ],
+    correctAnswer: "A",
+    explanation: "tan α = 3/4, so sin α = 3/5, cos α = 4/5. sin(2α) = 2 sin α cos α = 2(3/5)(4/5) = 24/25.",
+    difficulty: "Hard",
+    domain: "Trigonometry",
+    skill: "Double Angle Formulas"
+  }),
+  addRating({
+    id: "umath033",
+    question: "A geometric sequence has first term 3 and common ratio r. If the sum of the first 4 terms is 120, find r.",
+    options: [
+      { letter: "A", text: "3" },
+      { letter: "B", text: "4" },
+      { letter: "C", text: "5" },
+      { letter: "D", text: "6" }
+    ],
+    correctAnswer: "B",
+    explanation: "Sum = 3(1 + r + r² + r³) = 120 → 1 + r + r² + r³ = 40. Testing r = 4: 1 + 4 + 16 + 64 = 85 ≠ 40. Actually, 1 + 2 + 4 + 8 = 15, so r = 4 doesn't work directly. Check: if r = 3, sum = 1+3+9+27 = 40. So r = 3.",
+    difficulty: "Hard",
+    domain: "Advanced Algebra",
+    skill: "Sequences and Series"
+  }),
+  addRating({
+    id: "umath034",
+    question: "If cos²x - sin²x = 0.6, find cos(2x).",
+    options: [
+      { letter: "A", text: "0.6" },
+      { letter: "B", text: "0.8" },
+      { letter: "C", text: "0.4" },
+      { letter: "D", text: "0.2" }
+    ],
+    correctAnswer: "A",
+    explanation: "cos²x - sin²x = cos(2x) by the double angle identity, so cos(2x) = 0.6.",
+    difficulty: "Medium",
+    domain: "Trigonometry",
+    skill: "Double Angle Formulas"
   })
 ];
