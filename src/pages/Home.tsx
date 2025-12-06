@@ -1,7 +1,7 @@
 import { useState, useMemo } from "react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { BookOpen, Calculator, PenTool, Shuffle, Trophy, Zap, Users, BookMarked, LogIn, User, Award, Swords, Target, Brain, RefreshCw } from "lucide-react";
+import { Calculator, PenTool, Shuffle, Trophy, Zap, Users, BookMarked, LogIn, User, Award, Swords, Target, Brain, RefreshCw } from "lucide-react";
 import { useNavigate, Link } from "react-router-dom";
 import { questions } from "@/data/questions";
 import { englishQuestions } from "@/data/englishQuestions";
@@ -132,11 +132,36 @@ const Home = () => {
 
         {/* Hero */}
         <div className="text-center space-y-4 py-6">
-          <div className="flex justify-center mb-4">
+          {/* Math expressions floating around */}
+          <div className="relative flex justify-center items-center mb-6">
+            {/* Left expression */}
+            <span className="absolute -left-2 md:left-8 top-0 text-sm md:text-base font-mono text-primary/60 animate-pulse">
+              40²
+            </span>
+            
+            {/* Top expression - Sigma notation */}
+            <span className="absolute -top-6 text-xs md:text-sm font-mono text-accent/70" style={{ animationDelay: '0.5s' }}>
+              <span className="inline-flex flex-col items-center leading-none">
+                <span className="text-[8px]">40</span>
+                <span className="text-base">Σ</span>
+                <span className="text-[8px]">k=1</span>
+              </span>
+              <span className="align-middle">(2k-1)</span>
+            </span>
+            
+            {/* Center - Main icon area with prime factorization */}
             <div className="p-5 rounded-2xl bg-gradient-to-br from-primary to-accent shadow-2xl shadow-primary/30">
-              <BookOpen className="w-14 h-14 text-primary-foreground" />
+              <span className="text-2xl md:text-3xl font-bold text-primary-foreground font-mono">
+                2⁶×5²
+              </span>
             </div>
+            
+            {/* Right expression */}
+            <span className="absolute -right-2 md:right-8 bottom-0 text-sm md:text-base font-mono text-secondary/60 animate-pulse" style={{ animationDelay: '1s' }}>
+              √2560000
+            </span>
           </div>
+          
           <h1 className="text-6xl md:text-7xl font-bold bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">
             1600
           </h1>
