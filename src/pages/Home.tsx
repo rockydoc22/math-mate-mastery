@@ -147,8 +147,8 @@ const Home = () => {
               </span>
             </div>
             
-            {/* Right lower - Sigma notation (between middle and bottom) */}
-            <span className="absolute right-0 md:right-4 bottom-[25%] font-mono text-primary/70 animate-pulse" style={{ animationDelay: '1.2s' }}>
+            {/* Right lower - Sigma notation */}
+            <span className="absolute right-0 md:right-4 bottom-[10%] font-mono text-primary/70 animate-pulse" style={{ animationDelay: '1.2s' }}>
               <span className="inline-flex flex-col items-center leading-none">
                 <span className="text-sm md:text-base">40</span>
                 <span className="text-3xl md:text-4xl">Σ</span>
