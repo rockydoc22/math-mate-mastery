@@ -3832,7 +3832,7 @@ export const hardMathQuestions: Question[] = [
   }),
   addRating({
     id: 'hard-math-255',
-    question: 'A materials scientist studies creep deformation. Norton's creep law gives strain rate ε̇ = Aσⁿ where A and n are material constants. If stress increases from 50 MPa to 100 MPa and the creep exponent n = 5, by what factor does the strain rate increase?',
+    question: 'A materials scientist studies creep deformation. Norton creep law gives strain rate = A times stress^n where A and n are material constants. If stress increases from 50 MPa to 100 MPa and the creep exponent n = 5, by what factor does the strain rate increase?',
     options: [
       { letter: 'A', text: 'Factor of 32' },
       { letter: 'B', text: 'Factor of 2' },
