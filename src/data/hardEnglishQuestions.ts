@@ -763,5 +763,755 @@ export const hardEnglishQuestions: EnglishQuestion[] = [
     difficulty: 'hard',
     domain: 'Reading Comprehension',
     skill: 'Characterizing Academic Arguments'
+  }),
+  addRating({
+    id: 'hard-eng-051',
+    question: 'A passage on epistemology: "The Gettier problem, introduced in Edmund Gettier\'s 1963 paper \'Is Justified True Belief Knowledge?\', challenged the standard definition of knowledge that had prevailed since Plato. Gettier presented cases where someone has a justified true belief that nonetheless fails to constitute knowledge because the justification is \'accidentally\' connected to the truth. A person might believe, with good reason, that their coworker owns a Ford—having seen them drive one daily—while the coworker actually sold the car yesterday but, unbeknownst to either, won a Ford in a raffle that morning. The belief is justified and true, yet we hesitate to call it knowledge." The passage characterizes the relationship between justification and truth in Gettier cases as:',
+    options: [
+      { letter: 'A', text: 'Causally connected in the expected way' },
+      { letter: 'B', text: 'Coincidentally aligned rather than properly linked' },
+      { letter: 'C', text: 'Irrelevant to whether belief constitutes knowledge' },
+      { letter: 'D', text: 'Necessarily sufficient for knowledge' }
+    ],
+    correctAnswer: 'B',
+    explanation: 'The passage describes justification as "accidentally connected to the truth" in Gettier cases. The Ford example shows a belief that happens to be true for reasons unrelated to the justification. This is a coincidental alignment (B) rather than proper causal connection (A). The passage argues justification-truth relationship matters for knowledge (not C), and that JTB is insufficient (not D).',
+    difficulty: 'hard',
+    domain: 'Reading Comprehension',
+    skill: 'Analyzing Philosophical Arguments'
+  }),
+  addRating({
+    id: 'hard-eng-052',
+    question: 'A passage on cognitive linguistics: "George Lakoff and Mark Johnson\'s Metaphors We Live By revolutionized our understanding of metaphor, arguing that it is not merely ornamental language but a fundamental cognitive mechanism. Our conceptual system is largely metaphorical: we understand ARGUMENT AS WAR (\'I demolished his argument\'), TIME AS MONEY (\'spend your time wisely\'), and LIFE AS A JOURNEY (\'at a crossroads\'). These conceptual metaphors shape not just how we speak but how we think and act. The implications are profound: our reasoning is not purely logical but grounded in embodied experience and imaginative projection." The authors would most likely argue that metaphors:',
+    options: [
+      { letter: 'A', text: 'Are decorative additions to literal language' },
+      { letter: 'B', text: 'Reflect superficial patterns in vocabulary' },
+      { letter: 'C', text: 'Structure our understanding of abstract concepts' },
+      { letter: 'D', text: 'Should be eliminated from precise reasoning' }
+    ],
+    correctAnswer: 'C',
+    explanation: 'The passage explicitly states metaphor is "a fundamental cognitive mechanism" that shapes "how we think and act." Examples show how abstract concepts (argument, time, life) are understood through concrete metaphors. This supports (C). The passage directly refutes (A) by saying metaphor is "not merely ornamental." (B) understates the significance, and (D) contradicts the claim that reasoning is inherently metaphorical.',
+    difficulty: 'hard',
+    domain: 'Reading Comprehension',
+    skill: 'Author\'s Central Argument'
+  }),
+  addRating({
+    id: 'hard-eng-053',
+    question: 'A passage on postcolonial theory: "Edward Said\'s Orientalism examined how Western scholarship constructed \'the Orient\' as Europe\'s exotic, inferior Other. Said demonstrated that academic disciplines like philology and anthropology were not neutral knowledge systems but implicated in colonial power structures. The \'knowledge\' produced about Eastern societies—their supposedly timeless traditions, sensuality, and irrationality—served to justify Western intervention and rule. This analysis forced a reckoning across humanities disciplines: how do power relations shape what counts as knowledge? Who has the authority to represent whom?" Said\'s critique primarily challenges:',
+    options: [
+      { letter: 'A', text: 'The factual accuracy of specific claims about Eastern societies' },
+      { letter: 'B', text: 'The assumption that academic knowledge is politically neutral' },
+      { letter: 'C', text: 'The use of comparative methods in anthropology' },
+      { letter: 'D', text: 'Eastern societies\' self-representations' }
+    ],
+    correctAnswer: 'B',
+    explanation: 'Said\'s critique targets how "academic disciplines...were not neutral knowledge systems but implicated in colonial power structures." The passage asks "how do power relations shape what counts as knowledge?" This challenges assumptions of scholarly neutrality (B). While factual issues may arise (A), the core critique is about the politics of knowledge production. The passage doesn\'t attack comparative methods per se (C) or Eastern self-representation (D).',
+    difficulty: 'hard',
+    domain: 'Reading Comprehension',
+    skill: 'Identifying Core Critiques'
+  }),
+  addRating({
+    id: 'hard-eng-054',
+    question: 'A passage on evolutionary psychology: "Critics of evolutionary psychology argue that the discipline often commits the \'adaptationist fallacy\'—assuming that every human trait must have evolved as an adaptation rather than being a byproduct, a vestige, or the result of genetic drift. Stephen Jay Gould and Richard Lewontin\'s famous \'spandrels\' critique noted that some features exist not because they were selected for but as necessary consequences of other selected features, like the triangular spaces in arched architecture. Defenders respond that careful evolutionary analysis can distinguish adaptations from byproducts through design features that would be improbable without selection." The "spandrels" metaphor serves to:',
+    options: [
+      { letter: 'A', text: 'Support the adaptationist program in biology' },
+      { letter: 'B', text: 'Illustrate how some traits may exist without direct selection' },
+      { letter: 'C', text: 'Prove that natural selection cannot explain complex features' },
+      { letter: 'D', text: 'Demonstrate the superiority of architectural analysis' }
+    ],
+    correctAnswer: 'B',
+    explanation: 'The spandrels metaphor illustrates that "some features exist not because they were selected for but as necessary consequences of other selected features." Architectural spandrels are byproducts of arches, not designed in themselves. This supports the critique of adaptationism (B) by showing alternatives to direct selection. It opposes (A), doesn\'t claim selection can\'t explain complexity (C), and the architecture is an analogy, not a superiority claim (D).',
+    difficulty: 'hard',
+    domain: 'Reading Comprehension',
+    skill: 'Analyzing Analogies and Metaphors'
+  }),
+  addRating({
+    id: 'hard-eng-055',
+    question: 'A passage on media theory: "Marshall McLuhan\'s provocative declaration \'the medium is the message\' challenged content-focused media analysis. McLuhan argued that the form of a medium—its speed, scale, pattern of engagement—transforms human consciousness and social organization more profoundly than any particular message it conveys. Print fostered linear, sequential thinking and nationalism; television created the \'global village\' of simultaneous awareness. Digital media, he might have predicted, would further fragment attention while enabling unprecedented interconnection. The content we consume matters less than the perceptual habits the medium cultivates." McLuhan would most likely agree that:',
+    options: [
+      { letter: 'A', text: 'We should focus primarily on improving media content' },
+      { letter: 'B', text: 'All media have equivalent effects on cognition' },
+      { letter: 'C', text: 'Technological forms restructure how we think and relate' },
+      { letter: 'D', text: 'Print and television create identical social patterns' }
+    ],
+    correctAnswer: 'C',
+    explanation: 'McLuhan argues that media form "transforms human consciousness and social organization" and that different media (print, television) foster different thinking patterns. This supports (C). The passage explicitly states content matters less than form, contradicting (A). McLuhan distinguishes media effects (print = linear thinking; TV = global village), contradicting (B) and (D).',
+    difficulty: 'hard',
+    domain: 'Reading Comprehension',
+    skill: 'Applying Theoretical Frameworks'
+  }),
+  addRating({
+    id: 'hard-eng-056',
+    question: 'A passage on phenomenology: "Edmund Husserl\'s phenomenological method aimed to describe the structures of consciousness itself, bracketing questions of whether perceived objects exist independently. This \'epoché\' or suspension of the natural attitude allowed investigation of phenomena as they appear to consciousness. Later phenomenologists like Heidegger and Merleau-Ponty questioned whether such bracketing was possible or desirable, arguing that consciousness is always already embedded in a world, a body, a history. Merleau-Ponty\'s emphasis on embodiment showed that perception is not a mental recording of external stimuli but an active engagement of a situated, corporeal being." Merleau-Ponty\'s critique of Husserl centers on:',
+    options: [
+      { letter: 'A', text: 'The existence of external objects' },
+      { letter: 'B', text: 'The possibility of disembodied, detached consciousness' },
+      { letter: 'C', text: 'The usefulness of studying consciousness at all' },
+      { letter: 'D', text: 'The historical influence of phenomenology' }
+    ],
+    correctAnswer: 'B',
+    explanation: 'Merleau-Ponty argued "consciousness is always already embedded in a world, a body, a history" and emphasized "embodiment," showing perception involves "a situated, corporeal being." This challenges Husserl\'s bracketing as implying detached consciousness (B). The critique isn\'t about external objects\' existence (A), rejects phenomenology (C), or is about historical influence (D).',
+    difficulty: 'hard',
+    domain: 'Reading Comprehension',
+    skill: 'Tracing Philosophical Debates'
+  }),
+  addRating({
+    id: 'hard-eng-057',
+    question: 'A passage on sociology of science: "Bruno Latour\'s actor-network theory dissolved conventional distinctions between human and non-human actors, arguing that scientific facts are constructed through heterogeneous networks of researchers, instruments, institutions, and natural phenomena. In his study of Louis Pasteur, Latour showed that the \'discovery\' of microbes required not just observation but the construction of laboratories, the persuasion of farmers, and the mobilization of political support. Scientific facts are not simply uncovered but \'black-boxed\'—stabilized through networks so that their constructed character becomes invisible." The term "black-boxed" in this context refers to:',
+    options: [
+      { letter: 'A', text: 'Equipment used in scientific experiments' },
+      { letter: 'B', text: 'Facts whose constructed nature is no longer visible' },
+      { letter: 'C', text: 'Secret research conducted without oversight' },
+      { letter: 'D', text: 'Theoretical concepts that cannot be tested' }
+    ],
+    correctAnswer: 'B',
+    explanation: 'The passage explicitly defines black-boxing: facts "stabilized through networks so that their constructed character becomes invisible." This matches (B). The term is a metaphor for the process of obscuring construction, not literal equipment (A), secrecy (C), or untestable theories (D).',
+    difficulty: 'hard',
+    domain: 'Reading Comprehension',
+    skill: 'Technical Term Interpretation'
+  }),
+  addRating({
+    id: 'hard-eng-058',
+    question: 'A passage on deconstruction: "Jacques Derrida\'s deconstructive reading practices revealed the instabilities within texts that appeared to present stable meanings. His analysis of Saussure\'s linguistics showed that Saussure\'s own framework—in which meaning arises from differences between signs—undermined the privileging of speech over writing that Saussure endorsed. This \'logocentrism,\' the preference for presence, voice, and origin, pervaded Western metaphysics. Deconstruction did not destroy meaning but showed how texts undermine their own hierarchies, how the marginalized term in any binary (writing/speech, absence/presence) inhabits and enables the privileged one." According to the passage, deconstruction:',
+    options: [
+      { letter: 'A', text: 'Proves that texts have no meaning whatsoever' },
+      { letter: 'B', text: 'Establishes speech as superior to writing' },
+      { letter: 'C', text: 'Reveals internal contradictions in conceptual hierarchies' },
+      { letter: 'D', text: 'Destroys the possibility of textual interpretation' }
+    ],
+    correctAnswer: 'C',
+    explanation: 'The passage states deconstruction shows "how texts undermine their own hierarchies" and how marginalized terms "inhabit and enable" privileged ones. This reveals internal contradictions (C). The passage explicitly says deconstruction "did not destroy meaning" (contradicting A and D), and it challenges rather than endorses speech\'s superiority (B).',
+    difficulty: 'hard',
+    domain: 'Reading Comprehension',
+    skill: 'Understanding Literary Theory'
+  }),
+  addRating({
+    id: 'hard-eng-059',
+    question: 'A passage on feminist philosophy: "Simone de Beauvoir\'s declaration \'One is not born, but rather becomes, a woman\' inaugurated the sex/gender distinction later developed by feminist theory. Beauvoir argued that feminine identity is not biologically determined but socially constructed through practices, expectations, and constraints that position women as \'Other\' to men\'s normative humanity. Judith Butler later radicalized this insight, questioning whether even \'sex\' was as natural as assumed, arguing that gender performativity—the repeated citation of gender norms—produces the illusion of a natural, prediscursive sex. For Butler, there is no \'doer behind the deed\'; identity is constituted through its expressions." Butler extends Beauvoir\'s argument by:',
+    options: [
+      { letter: 'A', text: 'Rejecting the relevance of social construction' },
+      { letter: 'B', text: 'Questioning the natural status of biological sex itself' },
+      { letter: 'C', text: 'Affirming the stability of gender categories' },
+      { letter: 'D', text: 'Returning to biological determinism' }
+    ],
+    correctAnswer: 'B',
+    explanation: 'The passage states Butler "radicalized" Beauvoir by "questioning whether even \'sex\' was as natural as assumed." While Beauvoir distinguished socially constructed gender from biological sex, Butler questioned this distinction by applying constructionism to sex itself (B). This opposes (A) rejecting construction, (C) affirming stability, and (D) biological determinism.',
+    difficulty: 'hard',
+    domain: 'Reading Comprehension',
+    skill: 'Tracing Theoretical Development'
+  }),
+  addRating({
+    id: 'hard-eng-060',
+    question: 'A passage on hermeneutics: "Hans-Georg Gadamer\'s philosophical hermeneutics challenged the ideal of presuppositionless interpretation. Against the Enlightenment\'s \'prejudice against prejudice,\' Gadamer argued that our historical situatedness—our traditions, expectations, \'prejudgments\'—are not obstacles to understanding but its enabling conditions. Interpretation occurs as a \'fusion of horizons\' where the interpreter\'s world and the text\'s world interact productively. Understanding is not recovering an author\'s original intention but a creative event in which meaning emerges from the dialogue between past and present." Gadamer would most likely disagree with the claim that:',
+    options: [
+      { letter: 'A', text: 'Historical context shapes how we interpret texts' },
+      { letter: 'B', text: 'Valid interpretation requires eliminating all presuppositions' },
+      { letter: 'C', text: 'Understanding involves dialogue between perspectives' },
+      { letter: 'D', text: 'Tradition plays a role in interpretation' }
+    ],
+    correctAnswer: 'B',
+    explanation: 'Gadamer "challenged the ideal of presuppositionless interpretation" and argued prejudgments are "enabling conditions" not obstacles. He would disagree that valid interpretation requires eliminating presuppositions (B). He would agree with (A) historical context mattering, (C) dialogic understanding, and (D) tradition\'s role—all central to his hermeneutics.',
+    difficulty: 'hard',
+    domain: 'Reading Comprehension',
+    skill: 'Inferring Author Disagreements'
+  }),
+  addRating({
+    id: 'hard-eng-061',
+    question: 'A passage on virtue ethics: "Alasdair MacIntyre\'s After Virtue diagnosed modernity\'s moral fragmentation: we possess fragments of past ethical vocabularies—rights, utility, virtue—without the coherent frameworks that once gave them meaning. Modern moral debates are interminable because disputants invoke incommensurable principles without shared standards of resolution. MacIntyre proposed recovering the Aristotelian tradition, in which virtues are qualities enabling individuals to achieve the goods internal to social practices and, ultimately, to lead flourishing lives within communities with shared narratives." According to MacIntyre, modern moral disagreements are persistent because:',
+    options: [
+      { letter: 'A', text: 'People lack intelligence to understand ethical arguments' },
+      { letter: 'B', text: 'Different moral frameworks share no common ground for resolution' },
+      { letter: 'C', text: 'Aristotelian ethics has never been properly understood' },
+      { letter: 'D', text: 'Rights and utility are identical concepts' }
+    ],
+    correctAnswer: 'B',
+    explanation: 'MacIntyre argues debates are "interminable because disputants invoke incommensurable principles without shared standards of resolution." The key term is "incommensurable"—frameworks that cannot be compared or reconciled (B). This isn\'t about intelligence (A), Aristotle\'s understanding (C—MacIntyre proposes recovering it), or conflating rights/utility (D—the opposite, they\'re fragments of different systems).',
+    difficulty: 'hard',
+    domain: 'Reading Comprehension',
+    skill: 'Identifying Causal Arguments'
+  }),
+  addRating({
+    id: 'hard-eng-062',
+    question: 'A passage on historiography: "Hayden White\'s Metahistory argued that historical narratives are shaped by literary tropes—metaphor, metonymy, synecdoche, irony—and emplotment structures borrowed from fiction: romance, tragedy, comedy, satire. Historians do not simply discover the past\'s meaning but impose narrative form on events. This \'poetics of history\' does not deny the reality of past events but shows that their significance is constructed through narrative choices. White\'s critics worried this collapsed history into fiction; White responded that recognizing narrative\'s role enables more self-aware, honest historiography." White\'s central claim is that:',
+    options: [
+      { letter: 'A', text: 'Historical events never actually occurred' },
+      { letter: 'B', text: 'History is identical to fiction in all respects' },
+      { letter: 'C', text: 'Narrative structures shape how historical meaning is created' },
+      { letter: 'D', text: 'Historians should abandon narrative entirely' }
+    ],
+    correctAnswer: 'C',
+    explanation: 'White argues historians "impose narrative form on events" and "their significance is constructed through narrative choices." This means narrative structures shape meaning-creation (C). The passage explicitly states this "does not deny the reality of past events" (contradicting A) and doesn\'t equate history with fiction entirely (B) or advocate abandoning narrative (D).',
+    difficulty: 'hard',
+    domain: 'Reading Comprehension',
+    skill: 'Distinguishing Central from Peripheral Claims'
+  }),
+  addRating({
+    id: 'hard-eng-063',
+    question: 'A passage on ethics of care: "Carol Gilligan\'s In a Different Voice challenged Lawrence Kohlberg\'s influential theory of moral development, which ranked abstract principles of justice as the highest stage. Gilligan noted that girls and women often reasoned differently, emphasizing relationships, responsibility, and contextual judgment rather than abstract rules. She articulated an \'ethic of care\' that valued attending to particular others\' needs within webs of interdependence. Critics debated whether this represented gender essentialism or a valid alternative to justice-centered ethics. Later care ethicists have emphasized care as a political value, not just a private virtue." Gilligan\'s critique of Kohlberg primarily concerns:',
+    options: [
+      { letter: 'A', text: 'The methodology of developmental psychology experiments' },
+      { letter: 'B', text: 'The ranking of moral reasoning styles in developmental theory' },
+      { letter: 'C', text: 'The existence of gender differences in any domain' },
+      { letter: 'D', text: 'The use of stages in psychological models' }
+    ],
+    correctAnswer: 'B',
+    explanation: 'Gilligan challenged Kohlberg\'s theory that "ranked abstract principles of justice as the highest stage" by showing relational reasoning was undervalued. Her critique targets the hierarchical ranking of moral styles (B), arguing care ethics is a valid alternative, not a lower stage. This isn\'t about methodology (A), denying differences (C), or stages per se (D).',
+    difficulty: 'hard',
+    domain: 'Reading Comprehension',
+    skill: 'Understanding Academic Debates'
+  }),
+  addRating({
+    id: 'hard-eng-064',
+    question: 'A passage on philosophy of mind: "David Chalmers distinguished the \'easy problems\' of consciousness—explaining cognitive functions like perception, memory, and attention—from the \'hard problem\': why there is subjective experience at all. Neuroscience might explain how the brain processes information, but explaining why processing is accompanied by \'something it is like\' to undergo it remains mysterious. This explanatory gap has led some to dualism, others to panpsychism (consciousness is fundamental to reality), and still others to deny the hard problem is genuine. Chalmers argues that materialist accounts that reduce consciousness to function leave the qualitative dimension unexplained." The "explanatory gap" Chalmers identifies concerns:',
+    options: [
+      { letter: 'A', text: 'How the brain processes sensory information' },
+      { letter: 'B', text: 'Why cognitive functions are accompanied by subjective experience' },
+      { letter: 'C', text: 'Whether perception is accurate' },
+      { letter: 'D', text: 'How to measure brain activity' }
+    ],
+    correctAnswer: 'B',
+    explanation: 'Chalmers distinguishes easy problems (cognitive functions) from the hard problem: "why there is subjective experience at all" and "why processing is accompanied by \'something it is like.\'" The gap is between functional explanation and experiential quality (B). This isn\'t about processing mechanisms (A), perceptual accuracy (C), or measurement (D).',
+    difficulty: 'hard',
+    domain: 'Reading Comprehension',
+    skill: 'Technical Concept Comprehension'
+  }),
+  addRating({
+    id: 'hard-eng-065',
+    question: 'A passage on political theory: "John Rawls\'s \'veil of ignorance\' thought experiment asked what principles rational agents would choose if they didn\'t know their place in society—their class, abilities, or values. Rawls argued they would choose principles ensuring basic liberties and arranging inequalities to benefit the least advantaged (the \'difference principle\'). Communitarians like Michael Sandel objected that this \'unencumbered self,\' stripped of its constitutive attachments, was an impossible abstraction; we reason from within particular traditions and identities, not from nowhere." Sandel\'s objection to the veil of ignorance is that it:',
+    options: [
+      { letter: 'A', text: 'Would lead to unjust outcomes' },
+      { letter: 'B', text: 'Requires an impossible form of self-abstraction' },
+      { letter: 'C', text: 'Is too complex for ordinary citizens' },
+      { letter: 'D', text: 'Has never been applied in practice' }
+    ],
+    correctAnswer: 'B',
+    explanation: 'Sandel objected that the "unencumbered self, stripped of its constitutive attachments, was an impossible abstraction." We reason "from within particular traditions and identities, not from nowhere." The objection is that such abstraction from identity is impossible (B). This isn\'t primarily about outcomes (A), complexity (C), or practical application (D).',
+    difficulty: 'hard',
+    domain: 'Reading Comprehension',
+    skill: 'Analyzing Philosophical Objections'
+  }),
+  addRating({
+    id: 'hard-eng-066',
+    question: 'A passage on aesthetics: "Arthur Danto\'s \'artworld\' theory emerged from puzzlement over Andy Warhol\'s Brillo Boxes: perceptually indistinguishable from commercial boxes, yet one was art and one wasn\'t. Danto argued that art status depends not on perceptual properties but on an object\'s relation to art history and theory—the \'atmosphere of theory\' constituting the artworld. George Dickie formalized this as the \'institutional theory\': art is what the artworld (artists, critics, curators, audiences) designates as such. Critics worried this made art status arbitrary; defenders replied that the artworld, like language, has implicit norms." Danto\'s theory arose from observing that:',
+    options: [
+      { letter: 'A', text: 'Art must always be beautiful' },
+      { letter: 'B', text: 'Perceptually identical objects can differ in art status' },
+      { letter: 'C', text: 'Commercial products cannot become art' },
+      { letter: 'D', text: 'Art history is irrelevant to art appreciation' }
+    ],
+    correctAnswer: 'B',
+    explanation: 'Danto\'s puzzle was that Warhol\'s Brillo Boxes were "perceptually indistinguishable from commercial boxes, yet one was art and one wasn\'t." This shows art status isn\'t determined by appearances—identical-looking objects differ in status (B). The passage contradicts (A) beauty requirement, (C) commercial exclusion, and (D) history\'s irrelevance (theory and history are central).',
+    difficulty: 'hard',
+    domain: 'Reading Comprehension',
+    skill: 'Tracing Argument Origins'
+  }),
+  addRating({
+    id: 'hard-eng-067',
+    question: 'A passage on philosophy of language: "J.L. Austin\'s speech act theory distinguished what we say (locution), what we do in saying it (illocution), and the effects of saying it (perlocution). Saying \'I promise\' doesn\'t describe a promise but performs one; \'I now pronounce you married\' makes people married. These \'performatives\' could not be true or false but could be \'felicitous\' or \'infelicitous\' depending on whether proper conditions were met (authority, intention, appropriate circumstances). Austin\'s work influenced fields from linguistics to law, revealing language as action, not merely representation." According to Austin, saying "I promise" is best understood as:',
+    options: [
+      { letter: 'A', text: 'A description of a mental state' },
+      { letter: 'B', text: 'An action that creates a commitment' },
+      { letter: 'C', text: 'A statement that is either true or false' },
+      { letter: 'D', text: 'An expression without meaning' }
+    ],
+    correctAnswer: 'B',
+    explanation: 'Austin argues "saying \'I promise\' doesn\'t describe a promise but performs one"—it\'s a performative utterance. This is an action creating commitment (B). The passage explicitly distinguishes performatives from descriptions (contradicting A), says they cannot be true or false (C), and they clearly have meaning (D).',
+    difficulty: 'hard',
+    domain: 'Reading Comprehension',
+    skill: 'Understanding Speech Act Theory'
+  }),
+  addRating({
+    id: 'hard-eng-068',
+    question: 'A passage on environmental philosophy: "The deep ecology movement, articulated by Arne Naess, rejected anthropocentrism—the view that only humans have intrinsic value. Deep ecologists argued for \'biocentric equality\': all living beings have inherent worth independent of their usefulness to humans. This contrasted with \'shallow ecology,\' which conserves nature instrumentally for human benefit. Critics questioned whether biocentric equality was practicable (must we weigh a mosquito equally with a child?) or whether it accurately described deep ecologists\' actual commitments. Some proposed hierarchical biocentrism, granting all beings worth while acknowledging differential value." The distinction between "deep" and "shallow" ecology primarily concerns:',
+    options: [
+      { letter: 'A', text: 'The depth of scientific understanding required' },
+      { letter: 'B', text: 'Whether nature has value beyond human usefulness' },
+      { letter: 'C', text: 'The complexity of ecological systems studied' },
+      { letter: 'D', text: 'Academic versus popular environmentalism' }
+    ],
+    correctAnswer: 'B',
+    explanation: 'Deep ecology rejects anthropocentrism and argues all beings have "inherent worth independent of their usefulness to humans." Shallow ecology "conserves nature instrumentally for human benefit." The core distinction is whether value is intrinsic or instrumental (B). This isn\'t about scientific depth (A), system complexity (C), or academic/popular divide (D).',
+    difficulty: 'hard',
+    domain: 'Reading Comprehension',
+    skill: 'Distinguishing Conceptual Categories'
+  }),
+  addRating({
+    id: 'hard-eng-069',
+    question: 'A passage on philosophy of technology: "Martin Heidegger\'s essay \'The Question Concerning Technology\' argued that modern technology is not merely a neutral tool but a way of revealing reality that reduces everything to \'standing reserve\'—resources to be optimized and exploited. A river becomes potential hydroelectric power; a forest becomes timber inventory. This \'enframing\' (Gestell) endangers our ability to encounter beings as they are, including ourselves. Yet Heidegger suggested that recognizing technology\'s essence could open a \'saving power,\' enabling a freer relation to technical means." Heidegger\'s concern about technology primarily involves:',
+    options: [
+      { letter: 'A', text: 'Environmental pollution from industrial processes' },
+      { letter: 'B', text: 'The efficiency of modern machines' },
+      { letter: 'C', text: 'How technology shapes our understanding of reality' },
+      { letter: 'D', text: 'The difficulty of operating complex devices' }
+    ],
+    correctAnswer: 'C',
+    explanation: 'Heidegger argues technology is "a way of revealing reality" that reduces everything to resources, endangering "our ability to encounter beings as they are." His concern is ontological—how technology shapes understanding (C). This isn\'t primarily about pollution (A), efficiency (B), or operational difficulty (D).',
+    difficulty: 'hard',
+    domain: 'Reading Comprehension',
+    skill: 'Understanding Phenomenological Critique'
+  }),
+  addRating({
+    id: 'hard-eng-070',
+    question: 'A passage on rhetoric: "Aristotle\'s Rhetoric systematized the art of persuasion, identifying three modes of proof: ethos (the speaker\'s character and credibility), pathos (the audience\'s emotions), and logos (the logic of arguments). While Plato had condemned rhetoric as mere manipulation, Aristotle saw it as a neutral techne—its ethics depending on the speaker\'s purposes. Aristotle also distinguished three genres of rhetoric: deliberative (political assembly), forensic (law courts), and epideictic (ceremonial praise and blame). Each addressed different audiences, concerned different times (future, past, present), and employed different topoi or commonplaces." According to Aristotle, rhetoric is:',
+    options: [
+      { letter: 'A', text: 'Inherently unethical and manipulative' },
+      { letter: 'B', text: 'A neutral skill whose ethics depend on use' },
+      { letter: 'C', text: 'Applicable only in legal settings' },
+      { letter: 'D', text: 'Identical to logical demonstration' }
+    ],
+    correctAnswer: 'B',
+    explanation: 'Aristotle "saw it as a neutral techne—its ethics depending on the speaker\'s purposes." This contrasts with Plato\'s condemnation. Rhetoric is a neutral skill (B). The passage distinguishes Aristotle from Plato who viewed it as manipulation (A), identifies three genres beyond legal (C), and rhetoric uses ethos and pathos alongside logos (D).',
+    difficulty: 'hard',
+    domain: 'Reading Comprehension',
+    skill: 'Understanding Classical Rhetoric'
+  }),
+  addRating({
+    id: 'hard-eng-071',
+    question: 'A passage on psychoanalytic theory: "Jacques Lacan\'s rereading of Freud through structural linguistics proposed that \'the unconscious is structured like a language.\' Rather than a reservoir of biological drives, the unconscious operates through signifying chains, with desire metonymically sliding from object to object. The famous \'mirror stage\' describes how the infant, confronting its reflection, identifies with an idealized, unified image—a \'méconnaissance\' (misrecognition) that founds the ego as fundamentally alienated. For Lacan, entry into language (the Symbolic order) subjects us to a law of signification that both enables and constrains subjectivity." For Lacan, the "mirror stage" results in:',
+    options: [
+      { letter: 'A', text: 'Accurate self-knowledge' },
+      { letter: 'B', text: 'An ego founded on misidentification' },
+      { letter: 'C', text: 'Biological maturation of the brain' },
+      { letter: 'D', text: 'Rejection of social relationships' }
+    ],
+    correctAnswer: 'B',
+    explanation: 'The mirror stage involves "méconnaissance (misrecognition) that founds the ego as fundamentally alienated." The infant identifies with an idealized image. This is misidentification founding the ego (B). It\'s explicitly not accurate self-knowledge (A), is psychic rather than biological (C), and doesn\'t involve rejecting relationships (D).',
+    difficulty: 'hard',
+    domain: 'Reading Comprehension',
+    skill: 'Understanding Psychoanalytic Concepts'
+  }),
+  addRating({
+    id: 'hard-eng-072',
+    question: 'A passage on critical race theory: "Kimberlé Crenshaw\'s concept of \'intersectionality\' emerged from analyzing legal cases where Black women\'s claims of discrimination were dismissed because courts analyzed race and sex discrimination separately. A company might employ Black men and white women, appearing non-discriminatory by either metric alone, while still discriminating against Black women specifically. Crenshaw argued that identities are not additive but interactive: the experience of being a Black woman is not simply \'Black\' plus \'woman\' but a distinct positionality shaped by the intersection of multiple systems of power." The concept of intersectionality primarily addresses:',
+    options: [
+      { letter: 'A', text: 'How to calculate discrimination damages' },
+      { letter: 'B', text: 'How overlapping identities create unique experiences of oppression' },
+      { letter: 'C', text: 'The hierarchy of different forms of discrimination' },
+      { letter: 'D', text: 'How to eliminate all identity categories' }
+    ],
+    correctAnswer: 'B',
+    explanation: 'Crenshaw showed that "the experience of being a Black woman is not simply \'Black\' plus \'woman\' but a distinct positionality shaped by the intersection of multiple systems of power." Intersectionality addresses how overlapping identities create unique experiences (B). It\'s not about damage calculation (A), ranking discriminations (C), or eliminating identity (D).',
+    difficulty: 'hard',
+    domain: 'Reading Comprehension',
+    skill: 'Understanding Intersectionality'
+  }),
+  addRating({
+    id: 'hard-eng-073',
+    question: 'A passage on philosophy of mathematics: "The debate between mathematical Platonism and nominalism concerns whether mathematical objects exist independently of human minds. Platonists hold that numbers, sets, and other abstract objects exist in a non-spatial, non-temporal realm that we discover through mathematical intuition. Nominalists deny abstract entities exist, explaining mathematical truth in other ways: as logical consequences of axioms (formalism), mental constructions (intuitionism), or useful fictions (fictionalism). The challenge for Platonists is explaining how we access abstract objects; for nominalists, explaining mathematics\' uncanny applicability to physical reality." A nominalist philosopher would likely agree that:',
+    options: [
+      { letter: 'A', text: 'Mathematical truths exist in an eternal realm' },
+      { letter: 'B', text: 'We discover rather than invent mathematics' },
+      { letter: 'C', text: 'Mathematical objects do not exist independently' },
+      { letter: 'D', text: 'Mathematics cannot be explained in any terms' }
+    ],
+    correctAnswer: 'C',
+    explanation: 'Nominalists "deny abstract entities exist" and explain mathematical truth through axioms, mental constructions, or fictions rather than independent existence. A nominalist would agree objects don\'t exist independently (C). Options (A) eternal realm and (B) discovery are Platonist positions. Nominalists do explain mathematics (D).',
+    difficulty: 'hard',
+    domain: 'Reading Comprehension',
+    skill: 'Understanding Ontological Debates'
+  }),
+  addRating({
+    id: 'hard-eng-074',
+    question: 'A passage on social epistemology: "Miranda Fricker\'s concept of \'epistemic injustice\' identified ways that social power distorts knowledge practices. \'Testimonial injustice\' occurs when prejudice causes a hearer to give less credibility to a speaker\'s word than warranted—discounting a woman\'s testimony or a Black witness\'s account. \'Hermeneutical injustice\' occurs when gaps in collective interpretive resources prevent marginalized groups from making sense of their experiences—as when \'sexual harassment\' had no name, leaving victims unable to articulate what was happening. Both forms harm knowers as knowers, not just as victims of practical discrimination." "Hermeneutical injustice" refers to:',
+    options: [
+      { letter: 'A', text: 'Deliberate misinterpretation of texts' },
+      { letter: 'B', text: 'Lack of concepts needed to understand one\'s experiences' },
+      { letter: 'C', text: 'Academic jargon that excludes non-experts' },
+      { letter: 'D', text: 'Errors in translation between languages' }
+    ],
+    correctAnswer: 'B',
+    explanation: 'Hermeneutical injustice occurs when "gaps in collective interpretive resources prevent marginalized groups from making sense of their experiences." The example is when "sexual harassment had no name, leaving victims unable to articulate what was happening." This is about lacking needed concepts (B), not textual interpretation (A), jargon (C), or translation (D).',
+    difficulty: 'hard',
+    domain: 'Reading Comprehension',
+    skill: 'Technical Term Comprehension'
+  }),
+  addRating({
+    id: 'hard-eng-075',
+    question: 'A passage on animal ethics: "Peter Singer\'s Animal Liberation applied utilitarian ethics to animals, arguing that the capacity for suffering, not species membership, is the morally relevant criterion. \'Speciesism,\' like racism or sexism, unjustifiably privileges one group over another based on morally irrelevant characteristics. Tom Regan\'s rights-based approach differed: animals are \'subjects-of-a-life\' with inherent value, not merely recipients of pleasure or pain. For Regan, using animals as means to human ends violates their rights regardless of aggregate welfare calculations. Both challenge conventional treatment but disagree on ethical foundations." Singer and Regan differ primarily in:',
+    options: [
+      { letter: 'A', text: 'Whether animals deserve moral consideration' },
+      { letter: 'B', text: 'The ethical framework grounding animal protection' },
+      { letter: 'C', text: 'Whether speciesism is a real phenomenon' },
+      { letter: 'D', text: 'The definition of suffering' }
+    ],
+    correctAnswer: 'B',
+    explanation: 'Both agree animals deserve consideration but "disagree on ethical foundations." Singer uses utilitarian ethics (suffering as criterion), Regan uses rights theory (inherent value, subjects-of-a-life). The difference is in ethical framework (B). Both challenge speciesism (C), and the passage doesn\'t focus on suffering\'s definition (D). They agree on consideration (A).',
+    difficulty: 'hard',
+    domain: 'Reading Comprehension',
+    skill: 'Comparing Theoretical Approaches'
+  }),
+  addRating({
+    id: 'hard-eng-076',
+    question: 'The following sentence appears in a scientific paper: "While the correlation between urbanization and cognitive flexibility has been documented, the causal mechanisms underlying this relationship remain ________; longitudinal studies controlling for confounding variables such as educational access, socioeconomic status, and environmental stimulation are needed to disentangle the specific factors driving observed differences." Which choice best completes the sentence?',
+    options: [
+      { letter: 'A', text: 'established and uncontroversial' },
+      { letter: 'B', text: 'elusive and inadequately characterized' },
+      { letter: 'C', text: 'simple and easily replicated' },
+      { letter: 'D', text: 'irrelevant to the primary findings' }
+    ],
+    correctAnswer: 'B',
+    explanation: 'The sentence contrasts established correlation with unknown causation: "causal mechanisms...remain ___." The need for further studies to "disentangle" factors indicates mechanisms are not yet understood. "Elusive and inadequately characterized" (B) captures this uncertainty. (A) contradicts the need for more research, (C) contradicts the complexity noted, (D) contradicts the sentence\'s focus on these mechanisms.',
+    difficulty: 'hard',
+    domain: 'Writing',
+    skill: 'Completing Academic Sentences'
+  }),
+  addRating({
+    id: 'hard-eng-077',
+    question: 'A historian writes: "The prevalent interpretation portrays the 1848 revolutions as failures: monarchies were restored, constitutions revoked, revolutionary leaders exiled. Yet this teleological framing ________ the durable changes in political consciousness, associational life, and nationalist sentiment that persisted after reaction\'s apparent triumph and shaped subsequent movements for decades." Which choice best completes the sentence?',
+    options: [
+      { letter: 'A', text: 'accurately captures' },
+      { letter: 'B', text: 'carefully considers' },
+      { letter: 'C', text: 'overlooks' },
+      { letter: 'D', text: 'exhaustively documents' }
+    ],
+    correctAnswer: 'C',
+    explanation: 'The sentence structure contrasts the "failure" interpretation ("Yet") with durable changes. The author criticizes the teleological framing for missing ("overlooking") persistent changes. "Overlooks" (C) fits this critical contrast. (A) and (D) would endorse the interpretation the author is critiquing. (B) is neutral where criticism is implied.',
+    difficulty: 'hard',
+    domain: 'Writing',
+    skill: 'Rhetorical Contrast'
+  }),
+  addRating({
+    id: 'hard-eng-078',
+    question: 'An economist argues: "Neoclassical models assume perfectly rational agents with complete information—assumptions critics describe as heroic idealizations. Behavioral economics has documented systematic departures from rationality: loss aversion, present bias, framing effects. ________, these findings do not necessarily invalidate neoclassical frameworks but rather circumscribe their domain of applicability, suggesting where additional psychological realism is needed." Which choice provides the most effective transition?',
+    options: [
+      { letter: 'A', text: 'In other words' },
+      { letter: 'B', text: 'However' },
+      { letter: 'C', text: 'For this reason' },
+      { letter: 'D', text: 'Similarly' }
+    ],
+    correctAnswer: 'B',
+    explanation: 'The passage moves from behavioral critiques to a concession that they don\'t "invalidate" neoclassical models but "circumscribe" them. This is a counter to expected implications—one might expect critique to invalidate. "However" (B) signals this contrast. "In other words" (A) would continue, not contrast. "For this reason" (C) implies causation. "Similarly" (D) adds parallel information.',
+    difficulty: 'hard',
+    domain: 'Writing',
+    skill: 'Logical Transitions'
+  }),
+  addRating({
+    id: 'hard-eng-079',
+    question: 'A literary critic writes about a novel: "Morrison\'s temporal fragmentation—narrating events out of chronological sequence—serves not merely formal experimentation but thematic necessity. The trauma of slavery resists linear organization; its effects reverberate unpredictably across generations. The novel\'s structure ________ its content, embodying in form the non-linear haunting that is its subject." Which choice best completes the sentence?',
+    options: [
+      { letter: 'A', text: 'contradicts' },
+      { letter: 'B', text: 'is irrelevant to' },
+      { letter: 'C', text: 'mimics' },
+      { letter: 'D', text: 'simplifies' }
+    ],
+    correctAnswer: 'C',
+    explanation: 'The argument is that the novel\'s fragmented structure "embodies in form" its thematic content about trauma\'s non-linear effects. Structure and content are parallel—structure reflects/mimics content. "Mimics" (C) captures this. "Contradicts" (A) would indicate opposition. "Irrelevant to" (B) contradicts the argument. "Simplifies" (D) doesn\'t fit the parallel relationship.',
+    difficulty: 'hard',
+    domain: 'Writing',
+    skill: 'Form-Content Relationships'
+  }),
+  addRating({
+    id: 'hard-eng-080',
+    question: 'A philosopher writes: "Wittgenstein\'s later work repudiated the picture theory of meaning he had developed in the Tractatus. Where he once held that propositions mirror reality\'s logical form, he came to see meaning as constituted by use within \'language games\'—rule-governed practices embedded in \'forms of life.\' This shift from correspondence to practice ________ subsequent philosophy of language, influencing ordinary language philosophy, speech act theory, and pragmatism." Which choice best completes the sentence?',
+    options: [
+      { letter: 'A', text: 'had little effect on' },
+      { letter: 'B', text: 'profoundly shaped' },
+      { letter: 'C', text: 'was unknown to practitioners of' },
+      { letter: 'D', text: 'merely summarized existing trends in' }
+    ],
+    correctAnswer: 'B',
+    explanation: 'The sentence describes Wittgenstein\'s influence on multiple movements: ordinary language philosophy, speech act theory, pragmatism. This indicates significant impact. "Profoundly shaped" (B) captures this influence. (A), (C), and (D) contradict the listed influences.',
+    difficulty: 'hard',
+    domain: 'Writing',
+    skill: 'Characterizing Influence'
+  }),
+  addRating({
+    id: 'hard-eng-081',
+    question: 'A neuroscientist argues: "Reductionist accounts that identify mental states with brain states face the problem of multiple realizability: the same mental state (e.g., pain) might be realized in different physical substrates—humans, octopi, or hypothetical silicon beings. If mental states are multiply realizable, they ________ be type-identical to specific neural configurations, though token mental events might still correlate with token brain events." Which choice best completes the sentence?',
+    options: [
+      { letter: 'A', text: 'must necessarily' },
+      { letter: 'B', text: 'cannot' },
+      { letter: 'C', text: 'will always' },
+      { letter: 'D', text: 'might occasionally' }
+    ],
+    correctAnswer: 'B',
+    explanation: 'The argument is that multiple realizability (same mental state, different physical substrates) is a problem for type-identity theory. If pain can be realized in different physical structures, it "cannot" be type-identical to one specific neural configuration. (B) captures this logical consequence. (A) and (C) contradict the argument. (D) understates the problem.',
+    difficulty: 'hard',
+    domain: 'Writing',
+    skill: 'Following Logical Arguments'
+  }),
+  addRating({
+    id: 'hard-eng-082',
+    question: 'An art historian writes: "Greenberg\'s formalist criticism privileged flatness and medium-specificity as modernist painting\'s essential trajectory—a view that canonized Abstract Expressionism while marginalizing representational, conceptual, and political art. Later critics charged that this apparent aesthetic neutrality ________ ideological work, naturalizing particular values as universal standards while serving Cold War cultural diplomacy that promoted American abstraction against Soviet realism." Which choice best completes the sentence?',
+    options: [
+      { letter: 'A', text: 'actively resisted' },
+      { letter: 'B', text: 'was innocent of' },
+      { letter: 'C', text: 'performed' },
+      { letter: 'D', text: 'was irrelevant to' }
+    ],
+    correctAnswer: 'C',
+    explanation: 'Critics charged that "apparent aesthetic neutrality" actually served ideological functions—naturalizing values, serving Cold War diplomacy. This means the neutrality "performed" ideological work while appearing neutral. (C) captures this critique. (A) and (B) would claim it wasn\'t ideological. (D) contradicts the argument.',
+    difficulty: 'hard',
+    domain: 'Writing',
+    skill: 'Understanding Ideological Critique'
+  }),
+  addRating({
+    id: 'hard-eng-083',
+    question: 'A sociologist writes: "Bourdieu\'s concept of \'cultural capital\'—the knowledge, tastes, and dispositions that confer social advantage—explains how inequality reproduces across generations through mechanisms beyond economic transfer. Elite children acquire through immersion what others must laboriously learn, if they learn at all. This embodied ________ is misrecognized as natural talent or merit, legitimating inequalities that are actually structured by class position." Which choice best completes the sentence?',
+    options: [
+      { letter: 'A', text: 'deficiency' },
+      { letter: 'B', text: 'advantage' },
+      { letter: 'C', text: 'resistance' },
+      { letter: 'D', text: 'confusion' }
+    ],
+    correctAnswer: 'B',
+    explanation: 'The passage describes how elite children "acquire through immersion" knowledge that confers "social advantage." This is then "misrecognized as natural talent." The embodied thing is the advantage/capital. "Advantage" (B) fits. "Deficiency" (A) is opposite. "Resistance" (C) and "confusion" (D) don\'t fit the context.',
+    difficulty: 'hard',
+    domain: 'Writing',
+    skill: 'Conceptual Completion'
+  }),
+  addRating({
+    id: 'hard-eng-084',
+    question: 'A political scientist writes: "Deliberative democracy theorists contend that political legitimacy requires more than voting; it demands reasoned public deliberation where citizens engage opposing views. Critics question whether such deliberation is achievable given power asymmetries, cognitive biases, and strategic behavior. Empirical studies of deliberative forums show ________ results: participants sometimes become more polarized, sometimes converge, depending on facilitation design and participant characteristics." Which choice best completes the sentence?',
+    options: [
+      { letter: 'A', text: 'uniformly positive' },
+      { letter: 'B', text: 'consistently negative' },
+      { letter: 'C', text: 'mixed' },
+      { letter: 'D', text: 'theoretically irrelevant' }
+    ],
+    correctAnswer: 'C',
+    explanation: 'The sentence states participants "sometimes become more polarized, sometimes converge, depending on" various factors. This variation indicates inconsistent outcomes. "Mixed" (C) captures this. (A) and (B) claim uniform results contradicting "sometimes...sometimes." (D) contradicts the relevance of empirical studies to theory.',
+    difficulty: 'hard',
+    domain: 'Writing',
+    skill: 'Summarizing Variable Outcomes'
+  }),
+  addRating({
+    id: 'hard-eng-085',
+    question: 'A linguist argues: "Chomsky\'s Universal Grammar hypothesis posits that children acquire language not through pure induction from input but through innate, species-specific cognitive structures that constrain possible grammars. This \'poverty of the stimulus\' argument—that input underdetermines output—has been challenged by statistical learning research showing that infants are sensitive to distributional regularities. ________, the debate continues over what proportion of language acquisition can be explained by domain-general learning mechanisms versus language-specific endowment." Which choice provides the most effective transition?',
+    options: [
+      { letter: 'A', text: 'Therefore, it has been definitively resolved that' },
+      { letter: 'B', text: 'Nevertheless' },
+      { letter: 'C', text: 'As a direct consequence' },
+      { letter: 'D', text: 'Unsurprisingly' }
+    ],
+    correctAnswer: 'B',
+    explanation: 'The passage presents Chomsky\'s argument, then a challenge from statistical learning, then states "the debate continues." "Nevertheless" (B) signals that despite the challenge, the debate persists—a concessive transition. (A) claims resolution contradicting "debate continues." (C) implies causation but the debate continuing isn\'t caused by the challenge. (D) doesn\'t capture the concessive logic.',
+    difficulty: 'hard',
+    domain: 'Writing',
+    skill: 'Complex Transitions'
+  }),
+  addRating({
+    id: 'hard-eng-086',
+    question: 'Scholars debate whether digital media has transformed or merely accelerated existing patterns of political participation. Some argue that social media\'s low barriers enable new forms of engagement, citing hashtag activism, online petitions, and viral mobilization. Critics respond that such \'clicktivism\' produces superficial engagement that substitutes for rather than complements substantive action—a slacktivism that allows people to feel politically engaged while accomplishing little. Still others suggest the dichotomy itself is misleading, as online and offline activism increasingly interpenetrate. According to the critics mentioned, digital activism:',
+    options: [
+      { letter: 'A', text: 'Necessarily leads to meaningful political change' },
+      { letter: 'B', text: 'May replace deeper engagement with symbolic gestures' },
+      { letter: 'C', text: 'Is indistinguishable from traditional organizing' },
+      { letter: 'D', text: 'Has no effect on political consciousness' }
+    ],
+    correctAnswer: 'B',
+    explanation: 'Critics argue clicktivism "produces superficial engagement that substitutes for rather than complements substantive action." This suggests it replaces deeper engagement with symbolic gestures (B). (A) is the opposite of critic claims. (C) contradicts the distinction between online/offline. (D) overstates—critics say it\'s superficial, not that it has no effect.',
+    difficulty: 'hard',
+    domain: 'Reading Comprehension',
+    skill: 'Distinguishing Positions in Debate'
+  }),
+  addRating({
+    id: 'hard-eng-087',
+    question: 'The observer effect in physics—where measurement changes the phenomenon observed—has parallels in social research. The Hawthorne studies famously showed that workers\' productivity increased when being observed, regardless of experimental conditions. This reactivity challenges the possibility of objective observation: subjects aware of being studied may alter their behavior. Researchers have developed strategies to minimize reactivity—covert observation, longitudinal habituation, unobtrusive measures—though each raises its own methodological and ethical concerns. The \'Hawthorne effect\' primarily creates a problem for:',
+    options: [
+      { letter: 'A', text: 'Interpreting experimental results as reflecting natural behavior' },
+      { letter: 'B', text: 'Ensuring research is conducted ethically' },
+      { letter: 'C', text: 'Recruiting sufficient research participants' },
+      { letter: 'D', text: 'Publishing findings in academic journals' }
+    ],
+    correctAnswer: 'A',
+    explanation: 'The Hawthorne effect means "subjects aware of being studied may alter their behavior," challenging interpretation of whether results reflect natural or reactive behavior. This is a problem for interpreting results as reflecting natural behavior (A). While strategies raise ethical concerns (B), that\'s secondary. Recruitment (C) and publishing (D) aren\'t the passage\'s focus.',
+    difficulty: 'hard',
+    domain: 'Reading Comprehension',
+    skill: 'Identifying Methodological Issues'
+  }),
+  addRating({
+    id: 'hard-eng-088',
+    question: 'Contemporary philosophy of action debates the role of intentions in determining the moral character of acts. The doctrine of double effect, prominent in Catholic moral theology and some secular ethics, holds that it is sometimes permissible to cause harmful side effects that would be impermissible to intend directly. A doctor may administer pain relief foreseeing that it will hasten death (permissible) but may not administer the same drug intending to cause death (euthanasia, impermissible). Critics question whether this distinction can bear the moral weight placed on it: does the difference between intending harm and foreseeing harm as a side effect really justify different moral evaluations of identical outcomes? The passage suggests that critics of the doctrine of double effect question:',
+    options: [
+      { letter: 'A', text: 'Whether intentions exist at all' },
+      { letter: 'B', text: 'Whether the same outcome can result from different intentions' },
+      { letter: 'C', text: 'Whether intention can justify treating identical outcomes differently' },
+      { letter: 'D', text: 'Whether pain relief is ever appropriate' }
+    ],
+    correctAnswer: 'C',
+    explanation: 'Critics ask whether "the difference between intending harm and foreseeing harm...really justify different moral evaluations of identical outcomes." They question if intention can bear moral weight when outcomes are the same (C). They don\'t deny intentions exist (A) or that outcomes can differ with intentions (B). Pain relief appropriateness (D) isn\'t questioned.',
+    difficulty: 'hard',
+    domain: 'Reading Comprehension',
+    skill: 'Understanding Ethical Objections'
+  }),
+  addRating({
+    id: 'hard-eng-089',
+    question: 'The sociology of scientific knowledge (SSK) challenged traditional philosophy of science by treating scientific claims as social products requiring sociological explanation. Where philosophers asked what makes beliefs rational or warranted, SSK practitioners asked what social factors cause scientists to believe what they believe—the same question for true and false beliefs (the \'symmetry principle\'). Critics charged that this relativized truth: if we explain Einstein\'s beliefs the same way we explain astrologers\', we cannot maintain that one is true and the other false. SSK defenders responded that explaining belief causation is distinct from evaluating belief truth. The "symmetry principle" requires sociologists of science to:',
+    options: [
+      { letter: 'A', text: 'Evaluate which scientific theories are correct' },
+      { letter: 'B', text: 'Explain both true and false beliefs using the same types of causes' },
+      { letter: 'C', text: 'Ignore evidence and argument in science' },
+      { letter: 'D', text: 'Deny any difference between science and pseudoscience' }
+    ],
+    correctAnswer: 'B',
+    explanation: 'The passage defines the symmetry principle: asking "what social factors cause scientists to believe what they believe—the same question for true and false beliefs." This means explaining both with same types of causes (B). SSK doesn\'t evaluate correctness (A). It doesn\'t ignore evidence (C) or deny differences (D)—defenders distinguish explanation from evaluation.',
+    difficulty: 'hard',
+    domain: 'Reading Comprehension',
+    skill: 'Understanding Methodological Principles'
+  }),
+  addRating({
+    id: 'hard-eng-090',
+    question: 'Legal scholars debate whether the Constitution should be interpreted according to its original public meaning (originalism) or as a living document whose principles evolve with changing circumstances (living constitutionalism). Originalists argue that judicial restraint and democratic legitimacy require fidelity to ratified meanings; judges should not impose their values under guise of interpretation. Living constitutionalists counter that original meaning is often indeterminate or permits evolution, that changed circumstances require adaptive application, and that practice has already settled many non-originalist precedents. Both camps have internal divisions over method and justification. The passage indicates that BOTH originalists and living constitutionalists:',
+    options: [
+      { letter: 'A', text: 'Agree on how to interpret specific constitutional provisions' },
+      { letter: 'B', text: 'Have internal disagreements about their own approaches' },
+      { letter: 'C', text: 'Reject the authority of Supreme Court precedent' },
+      { letter: 'D', text: 'Favor unlimited judicial discretion' }
+    ],
+    correctAnswer: 'B',
+    explanation: 'The final sentence states "Both camps have internal divisions over method and justification." Both have internal disagreements (B). They don\'t agree on interpretation (A)—that\'s the core debate. Precedent isn\'t universally rejected (C). Originalists explicitly oppose judicial discretion (D).',
+    difficulty: 'hard',
+    domain: 'Reading Comprehension',
+    skill: 'Finding Common Ground in Debates'
+  }),
+  addRating({
+    id: 'hard-eng-091',
+    question: 'A museum curator writes: "The repatriation debate has shifted from whether cultural objects should be returned to how and under what conditions. Museums once claimed universal access justified retaining contested artifacts; now most acknowledge that colonial-era acquisitions require ethical scrutiny. The Benin Bronzes—looted by British forces in 1897—have become paradigmatic, with major institutions announcing returns. Yet implementation raises complex questions: to whom should objects return? National governments? Traditional authorities? Communities of origin? Museums worry about precedent and collection integrity; source communities prioritize healing historical wounds." The passage characterizes the repatriation debate as having:',
+    options: [
+      { letter: 'A', text: 'Been definitively resolved in favor of universal museums' },
+      { letter: 'B', text: 'Shifted from whether to how repatriation should occur' },
+      { letter: 'C', text: 'Remained unchanged since colonial times' },
+      { letter: 'D', text: 'Focused exclusively on the Benin Bronzes' }
+    ],
+    correctAnswer: 'B',
+    explanation: 'The opening sentence states: "The repatriation debate has shifted from whether cultural objects should be returned to how and under what conditions." This directly supports (B). Museums now "acknowledge" ethical concerns, contradicting (A) and (C). Benin Bronzes are "paradigmatic" examples, not the exclusive focus (D).',
+    difficulty: 'hard',
+    domain: 'Reading Comprehension',
+    skill: 'Identifying Argumentative Shifts'
+  }),
+  addRating({
+    id: 'hard-eng-092',
+    question: 'Ecological economists challenge the growth paradigm underlying mainstream economics. Where neoclassical models treat the economy as a closed system with potentially unlimited growth, ecological economics embeds the economy within biophysical limits: the laws of thermodynamics constrain what economies can extract and discard. Herman Daly proposed a "steady-state economy" maintaining physical throughput within ecological bounds while improving qualitative development. Critics question whether growth cessation is politically feasible, economically stable, or even environmentally necessary given technological innovation. The passage indicates that ecological economists differ from mainstream economists in:',
+    options: [
+      { letter: 'A', text: 'Their concern for economic well-being' },
+      { letter: 'B', text: 'Their understanding of the economy\'s relationship to physical limits' },
+      { letter: 'C', text: 'Their rejection of all quantitative analysis' },
+      { letter: 'D', text: 'Their support for corporate interests' }
+    ],
+    correctAnswer: 'B',
+    explanation: 'The key difference: mainstream economics treats economy as "closed system with potentially unlimited growth," while ecological economics "embeds the economy within biophysical limits." This is about physical limits (B). Both concern economic well-being (A). There\'s no rejection of quantitative analysis (C). Corporate interests (D) aren\'t mentioned.',
+    difficulty: 'hard',
+    domain: 'Reading Comprehension',
+    skill: 'Identifying Theoretical Differences'
+  }),
+  addRating({
+    id: 'hard-eng-093',
+    question: 'The concept of the "Anthropocene"—a proposed geological epoch defined by human impact on Earth systems—has sparked interdisciplinary debate. Geologists ask whether stratigraphic evidence (like plastic layers in sediments) justifies formal epoch designation; the question is empirical and methodological. But the concept\'s broader significance is normative and political: naming an era after anthropogenic disruption implies responsibility and urgency. Some critics prefer alternative framings—"Capitalocene" emphasizing economic systems, "Plantationocene" highlighting colonial extraction—arguing that "Anthropocene" generalizes blame to all humans rather than specific structures. The critics mentioned prefer alternative terms because:',
+    options: [
+      { letter: 'A', text: 'They deny that humans have affected the environment' },
+      { letter: 'B', text: 'They believe "Anthropocene" does not specify which human systems are responsible' },
+      { letter: 'C', text: 'They oppose all epoch terminology' },
+      { letter: 'D', text: 'They think stratigraphic evidence is insufficient' }
+    ],
+    correctAnswer: 'B',
+    explanation: 'Critics prefer Capitalocene or Plantationocene because "Anthropocene generalizes blame to all humans rather than specific structures." They want to identify particular systems (capitalism, colonialism) as responsible. This matches (B). They don\'t deny impact (A), oppose all terminology (C), or focus on stratigraphic evidence (D—that\'s geologists\' concern).',
+    difficulty: 'hard',
+    domain: 'Reading Comprehension',
+    skill: 'Understanding Terminological Debates'
+  }),
+  addRating({
+    id: 'hard-eng-094',
+    question: 'Neuroscientists debate whether consciousness is unified or fragmented. The "binding problem" asks how distributed neural processes create coherent experience: when we see a red apple, color and shape are processed separately, yet we experience a unified percept. Split-brain research—where corpus callosum severance prevents hemispheric communication—suggests consciousness can be divided: each hemisphere may independently process and respond to stimuli. Yet patients appear unified in daily life, raising questions about the relationship between neural unity and experiential unity. The "binding problem" concerns:',
+    options: [
+      { letter: 'A', text: 'How books are manufactured' },
+      { letter: 'B', text: 'How separate neural processes produce unified experience' },
+      { letter: 'C', text: 'How to surgically connect brain hemispheres' },
+      { letter: 'D', text: 'How to train neural networks' }
+    ],
+    correctAnswer: 'B',
+    explanation: 'The passage defines binding problem: "how distributed neural processes create coherent experience"—color and shape "processed separately, yet we experience a unified percept." This is about separate processes producing unified experience (B). Bookbinding (A), surgery (C), and AI training (D) are unrelated.',
+    difficulty: 'hard',
+    domain: 'Reading Comprehension',
+    skill: 'Understanding Scientific Problems'
+  }),
+  addRating({
+    id: 'hard-eng-095',
+    question: 'Historians of science note that Thomas Kuhn\'s Structure of Scientific Revolutions has been read very differently by different audiences. Scientists often read it as accurately describing scientific practice—the role of paradigms, puzzle-solving, occasional revolutions—while defending science\'s rationality. Sociologists and cultural critics emphasized the social construction of scientific knowledge and the incommensurability of paradigms, sometimes drawing relativist conclusions Kuhn himself resisted. Kuhn spent later years clarifying that he had not intended to undermine scientific objectivity. The passage suggests that:',
+    options: [
+      { letter: 'A', text: 'Kuhn\'s work was universally understood in the same way' },
+      { letter: 'B', text: 'Kuhn\'s work was interpreted differently by different groups' },
+      { letter: 'C', text: 'Scientists completely rejected Kuhn\'s ideas' },
+      { letter: 'D', text: 'Kuhn intended to undermine scientific objectivity' }
+    ],
+    correctAnswer: 'B',
+    explanation: 'The passage states Kuhn\'s work "has been read very differently by different audiences"—scientists vs. sociologists/critics drew different conclusions. Kuhn spent later years clarifying against misreadings. This supports varied interpretation (B). (A) says universal understanding—contradicted. (C) says rejection—scientists read it positively. (D) says Kuhn intended relativism—he "resisted" such conclusions.',
+    difficulty: 'hard',
+    domain: 'Reading Comprehension',
+    skill: 'Understanding Reception History'
+  }),
+  addRating({
+    id: 'hard-eng-096',
+    question: 'Choose the option that correctly punctuates the following sentence: "The committee\'s report which was submitted last Tuesday contains several recommendations however not all members agree with its conclusions and some have called for additional research before any policy changes are implemented."',
+    options: [
+      { letter: 'A', text: 'The committee\'s report, which was submitted last Tuesday, contains several recommendations; however, not all members agree with its conclusions, and some have called for additional research before any policy changes are implemented.' },
+      { letter: 'B', text: 'The committee\'s report which was submitted last Tuesday, contains several recommendations, however not all members agree with its conclusions and some have called for additional research before any policy changes are implemented.' },
+      { letter: 'C', text: 'The committee\'s report, which was submitted last Tuesday contains several recommendations; however not all members agree with its conclusions, and some have called for additional research, before any policy changes are implemented.' },
+      { letter: 'D', text: 'The committee\'s report which was submitted last Tuesday contains several recommendations however, not all members agree with its conclusions and, some have called for additional research before any policy changes are implemented.' }
+    ],
+    correctAnswer: 'A',
+    explanation: '(A) correctly uses: commas around nonrestrictive clause ("which was submitted last Tuesday"), semicolon before conjunctive adverb "however," comma after "however," and comma before coordinating conjunction "and" joining independent clauses. (B) incorrectly omits commas and uses comma splice. (C) has misplaced comma and missing punctuation. (D) has numerous errors.',
+    difficulty: 'hard',
+    domain: 'Writing',
+    skill: 'Complex Punctuation'
+  }),
+  addRating({
+    id: 'hard-eng-097',
+    question: 'A researcher wants to add this sentence to a paragraph: "Moreover, the correlation between sleep duration and cognitive performance was strongest among adolescents, suggesting developmental factors may moderate this relationship." The paragraph discusses: (1) general findings about sleep and cognition, (2) methodological limitations, (3) implications for future research. Where should this sentence be placed?',
+    options: [
+      { letter: 'A', text: 'At the beginning of the paragraph' },
+      { letter: 'B', text: 'Within section (1), after presenting general findings' },
+      { letter: 'C', text: 'At the end of section (2), about limitations' },
+      { letter: 'D', text: 'At the very end of the paragraph' }
+    ],
+    correctAnswer: 'B',
+    explanation: 'The sentence presents a specific finding ("correlation...strongest among adolescents") that adds to general findings. "Moreover" indicates additive information. It belongs with findings section (1), not limitations (2) or future research (3). It shouldn\'t begin the paragraph (needs prior context for "Moreover"). Placement within (1) after general findings makes logical sense (B).',
+    difficulty: 'hard',
+    domain: 'Writing',
+    skill: 'Sentence Placement'
+  }),
+  addRating({
+    id: 'hard-eng-098',
+    question: 'Which choice most clearly and concisely expresses the idea? "The reason that the experiment was not able to be completed was because of the fact that there was not enough funding that was available."',
+    options: [
+      { letter: 'A', text: 'The experiment could not be completed due to insufficient funding.' },
+      { letter: 'B', text: 'The reason the experiment was not completed was because funding was insufficient.' },
+      { letter: 'C', text: 'Due to the fact that funding was not sufficient, the experiment was not able to be completed.' },
+      { letter: 'D', text: 'The experiment, which could not be completed, was not completed because of insufficient available funding.' }
+    ],
+    correctAnswer: 'A',
+    explanation: '(A) eliminates wordiness: "could not be completed" replaces "was not able to be completed," "due to insufficient funding" replaces "because of the fact that there was not enough funding that was available." (B) retains "The reason...was because" redundancy. (C) keeps "due to the fact that" wordiness. (D) is redundant ("could not be completed...was not completed").',
+    difficulty: 'hard',
+    domain: 'Writing',
+    skill: 'Concision'
+  }),
+  addRating({
+    id: 'hard-eng-099',
+    question: 'A student writes: "The novel portrays the protagonist as someone who, despite facing tremendous adversity including poverty, illness, and social ostracism, maintaining their moral integrity throughout." Which revision corrects the error in this sentence?',
+    options: [
+      { letter: 'A', text: 'Change "portrays" to "portrayed"' },
+      { letter: 'B', text: 'Change "maintaining" to "maintains"' },
+      { letter: 'C', text: 'Change "including" to "included"' },
+      { letter: 'D', text: 'Change "their" to "his or her"' }
+    ],
+    correctAnswer: 'B',
+    explanation: 'The sentence has a parallel structure error. The main clause needs a finite verb: "The novel portrays the protagonist as someone who...maintains." Currently "maintaining" is a participle that can\'t serve as the main verb of the relative clause "who...maintaining." Changing to "maintains" (B) provides the needed finite verb matching the structure "who...maintains."',
+    difficulty: 'hard',
+    domain: 'Writing',
+    skill: 'Grammatical Parallelism'
+  }),
+  addRating({
+    id: 'hard-eng-100',
+    question: 'Which sentence demonstrates the correct use of the subjunctive mood? Consider this context: a formal recommendation for policy change.',
+    options: [
+      { letter: 'A', text: 'The committee recommended that the policy is revised immediately.' },
+      { letter: 'B', text: 'The committee recommended that the policy be revised immediately.' },
+      { letter: 'C', text: 'The committee recommended that the policy was revised immediately.' },
+      { letter: 'D', text: 'The committee recommended that the policy would be revised immediately.' }
+    ],
+    correctAnswer: 'B',
+    explanation: 'The subjunctive mood is required after verbs of recommendation, demand, suggestion, etc. The subjunctive uses the base form of the verb ("be") regardless of subject. (B) correctly uses "be revised" after "recommended that." (A) incorrectly uses indicative "is." (C) uses past indicative "was." (D) uses conditional "would be."',
+    difficulty: 'hard',
+    domain: 'Writing',
+    skill: 'Subjunctive Mood'
   })
 ];
