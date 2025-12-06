@@ -200,7 +200,6 @@ export type Database = {
           notes: string | null
           question_id: string
           question_type: string
-          reporter_ip: string | null
           status: string
         }
         Insert: {
@@ -210,7 +209,6 @@ export type Database = {
           notes?: string | null
           question_id: string
           question_type: string
-          reporter_ip?: string | null
           status?: string
         }
         Update: {
@@ -220,7 +218,6 @@ export type Database = {
           notes?: string | null
           question_id?: string
           question_type?: string
-          reporter_ip?: string | null
           status?: string
         }
         Relationships: []
