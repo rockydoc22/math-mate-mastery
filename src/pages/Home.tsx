@@ -22,7 +22,7 @@ const allMathQuestions = [...questions, ...visualMathQuestions, ...moreMathVisua
 const allEnglishQuestions = [...englishQuestions, ...visualEnglishQuestions, ...moreEnglishVisualQuestions];
 
 type Subject = "math" | "english" | "both";
-type QuestionCount = 10 | 25 | 50;
+type QuestionCount = 10 | 25 | 50 | 98;
 
 const Home = () => {
   const navigate = useNavigate();
@@ -64,7 +64,12 @@ const Home = () => {
     { value: "both" as Subject, label: "Both", icon: Shuffle, color: "accent" },
   ];
 
-  const countOptions: QuestionCount[] = [10, 25, 50];
+  const countOptions: { value: QuestionCount; label: string }[] = [
+    { value: 10, label: "10 Questions" },
+    { value: 25, label: "25 Questions" },
+    { value: 50, label: "50 Questions" },
+    { value: 98, label: "Full SAT (98 Q)" },
+  ];
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-background via-primary/5 to-accent/10 p-4">
@@ -276,13 +281,13 @@ const Home = () => {
             <RadioGroup
               value={String(questionCount)}
               onValueChange={(v) => setQuestionCount(Number(v) as QuestionCount)}
-              className="flex gap-4"
+              className="flex flex-wrap gap-4"
             >
-              {countOptions.map((count) => (
-                <div key={count} className="flex items-center space-x-2">
-                  <RadioGroupItem value={String(count)} id={`count-${count}`} />
-                  <Label htmlFor={`count-${count}`} className="cursor-pointer">
-                    {count} Questions
+              {countOptions.map(({ value, label }) => (
+                <div key={value} className="flex items-center space-x-2">
+                  <RadioGroupItem value={String(value)} id={`count-${value}`} />
+                  <Label htmlFor={`count-${value}`} className="cursor-pointer">
+                    {label}
                   </Label>
                 </div>
               ))}
