@@ -5,7 +5,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { useAuth } from "@/hooks/useAuth";
 import { supabase } from "@/integrations/supabase/client";
 import { toast } from "sonner";
-import { ArrowLeft, Crown, Copy, Users, Trophy, Loader2, Clock, Skull } from "lucide-react";
+import { ArrowLeft, Crown, Copy, Users, Trophy, Loader2, Clock, Skull, ChevronDown, ChevronUp, CheckCircle, XCircle } from "lucide-react";
 import { questions } from "@/data/questions";
 import { visualMathQuestions, visualEnglishQuestions, moreMathVisualQuestions, moreEnglishVisualQuestions } from "@/data/visualQuestions";
 import { additionalMathQuestions } from "@/data/additionalMathQuestions";
@@ -81,6 +81,8 @@ const BattleRoom = () => {
   const [mySkillRating, setMySkillRating] = useState(1200);
   const [timeRemaining, setTimeRemaining] = useState<number | null>(null);
   const [isEliminated, setIsEliminated] = useState(false);
+  const [myAnswers, setMyAnswers] = useState<Record<number, string>>({});
+  const [showRecap, setShowRecap] = useState(false);
 
   // Timer countdown effect
   useEffect(() => {
@@ -287,6 +289,9 @@ const BattleRoom = () => {
 
     setSelectedAnswer(answerLetter);
     setIsAnswered(true);
+    
+    // Track my answer for recap
+    setMyAnswers(prev => ({ ...prev, [currentQuestionIndex]: answerLetter }));
 
     const timeTaken = Date.now() - questionStartTime;
     const isCorrect = answerLetter === battleQuestions[currentQuestionIndex].correctAnswer;
@@ -451,6 +456,91 @@ const BattleRoom = () => {
               );
             })}
           </div>
+
+          {/* Recap Toggle */}
+          <div className="mt-8">
+            <Button 
+              onClick={() => setShowRecap(!showRecap)} 
+              variant="outline" 
+              className="w-full flex items-center justify-center gap-2"
+            >
+              {showRecap ? <ChevronUp className="w-4 h-4" /> : <ChevronDown className="w-4 h-4" />}
+              {showRecap ? "Hide Question Recap" : "Show Question Recap"}
+            </Button>
+          </div>
+
+          {/* Question Recap */}
+          {showRecap && (
+            <div className="mt-4 space-y-4">
+              <h2 className="text-xl font-bold text-center">Question Recap</h2>
+              {battleQuestions.map((q, index) => {
+                const myAnswer = myAnswers[index];
+                const isCorrect = myAnswer === q.correctAnswer;
+                const didAnswer = myAnswer !== undefined;
+                
+                return (
+                  <Card key={q.id} className={`${isCorrect ? "border-green-500/30" : didAnswer ? "border-destructive/30" : "border-muted"}`}>
+                    <CardContent className="p-4">
+                      <div className="flex items-start gap-3 mb-3">
+                        <span className="flex-shrink-0 w-8 h-8 rounded-full bg-muted flex items-center justify-center font-bold text-sm">
+                          {index + 1}
+                        </span>
+                        <div className="flex-1">
+                          <div className="flex items-center gap-2 mb-2">
+                            {didAnswer ? (
+                              isCorrect ? (
+                                <CheckCircle className="w-5 h-5 text-green-500 flex-shrink-0" />
+                              ) : (
+                                <XCircle className="w-5 h-5 text-destructive flex-shrink-0" />
+                              )
+                            ) : (
+                              <span className="text-xs text-muted-foreground">(not answered)</span>
+                            )}
+                            <span className={`text-sm font-medium ${isCorrect ? "text-green-500" : didAnswer ? "text-destructive" : "text-muted-foreground"}`}>
+                              {isCorrect ? "Correct" : didAnswer ? "Incorrect" : "Skipped"}
+                            </span>
+                          </div>
+                          <p className="text-sm mb-3">{q.question}</p>
+                          
+                          {/* Answer options */}
+                          <div className="space-y-1 mb-3">
+                            {q.options.map((opt) => {
+                              const isThisCorrect = opt.letter === q.correctAnswer;
+                              const isThisMine = opt.letter === myAnswer;
+                              
+                              return (
+                                <div 
+                                  key={opt.letter}
+                                  className={`text-xs p-2 rounded ${
+                                    isThisCorrect 
+                                      ? "bg-green-500/20 text-green-700 dark:text-green-300 font-medium" 
+                                      : isThisMine && !isThisCorrect
+                                        ? "bg-destructive/20 text-destructive line-through"
+                                        : "text-muted-foreground"
+                                  }`}
+                                >
+                                  <span className="font-bold mr-1">{opt.letter}.</span>
+                                  {opt.text}
+                                  {isThisCorrect && <span className="ml-2">✓</span>}
+                                  {isThisMine && !isThisCorrect && <span className="ml-2">(your answer)</span>}
+                                </div>
+                              );
+                            })}
+                          </div>
+                          
+                          {/* Explanation */}
+                          <div className="p-3 bg-muted/50 rounded-lg border border-border">
+                            <p className="text-xs font-medium text-muted-foreground mb-1">Explanation:</p>
+                            <p className="text-sm">{q.explanation}</p>
+                          </div>
+                        </div>
+                      </div>
+                    </CardContent>
+                  </Card>
+                );
+              })}
+            </div>
+          )}
 
           <div className="mt-8 flex gap-4 justify-center">
             <Button onClick={() => navigate("/battle")} variant="outline">
