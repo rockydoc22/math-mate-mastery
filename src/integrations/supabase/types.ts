@@ -381,6 +381,45 @@ export type Database = {
         }
         Relationships: []
       }
+      rating_history: {
+        Row: {
+          id: string
+          new_rating: number
+          old_rating: number
+          question_difficulty: number
+          question_id: string
+          rating_change: number
+          rating_type: string
+          recorded_at: string
+          user_id: string
+          was_correct: boolean
+        }
+        Insert: {
+          id?: string
+          new_rating: number
+          old_rating: number
+          question_difficulty: number
+          question_id: string
+          rating_change: number
+          rating_type: string
+          recorded_at?: string
+          user_id: string
+          was_correct: boolean
+        }
+        Update: {
+          id?: string
+          new_rating?: number
+          old_rating?: number
+          question_difficulty?: number
+          question_id?: string
+          rating_change?: number
+          rating_type?: string
+          recorded_at?: string
+          user_id?: string
+          was_correct?: boolean
+        }
+        Relationships: []
+      }
       saved_questions: {
         Row: {
           created_at: string
@@ -405,6 +444,42 @@ export type Database = {
           question_type?: string
           user_id?: string
           was_wrong?: boolean | null
+        }
+        Relationships: []
+      }
+      skill_ratings: {
+        Row: {
+          created_at: string
+          english_questions_answered: number
+          english_rating: number
+          id: string
+          math_questions_answered: number
+          math_rating: number
+          overall_rating: number
+          updated_at: string
+          user_id: string
+        }
+        Insert: {
+          created_at?: string
+          english_questions_answered?: number
+          english_rating?: number
+          id?: string
+          math_questions_answered?: number
+          math_rating?: number
+          overall_rating?: number
+          updated_at?: string
+          user_id: string
+        }
+        Update: {
+          created_at?: string
+          english_questions_answered?: number
+          english_rating?: number
+          id?: string
+          math_questions_answered?: number
+          math_rating?: number
+          overall_rating?: number
+          updated_at?: string
+          user_id?: string
         }
         Relationships: []
       }

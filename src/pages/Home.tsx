@@ -10,9 +10,11 @@ import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { Label } from "@/components/ui/label";
 import { useAuth } from "@/hooks/useAuth";
 import { useGameStats } from "@/hooks/useGameStats";
+import { useSkillRating } from "@/hooks/useSkillRating";
 import { StreakBadge } from "@/components/StreakBadge";
 import { XPBar } from "@/components/XPBar";
 import { AchievementBadge } from "@/components/AchievementBadge";
+import { SkillRatingCard } from "@/components/SkillRatingCard";
 import { DifficultyRange, filterByDifficulty } from "@/utils/difficultyRating";
 
 // Get counts by difficulty range
@@ -26,6 +28,7 @@ const Home = () => {
   const navigate = useNavigate();
   const { user, signOut } = useAuth();
   const { streak, achievements, quizCount, achievementDefs } = useGameStats();
+  const { ratings } = useSkillRating();
   const [subject, setSubject] = useState<Subject>("math");
   const [questionCount, setQuestionCount] = useState<QuestionCount>(10);
   const [difficultyRange, setDifficultyRange] = useState<DifficultyRange>("all");
@@ -137,36 +140,47 @@ const Home = () => {
 
         {/* Stats Row - Only for logged in users */}
         {user && (
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <Card className="p-4 border-2 border-border">
-              <XPBar quizCount={quizCount} />
-            </Card>
-            <Card className="p-4 border-2 border-border">
-              <div className="flex items-center justify-between mb-2">
-                <h3 className="font-semibold flex items-center gap-2">
-                  <Award className="w-4 h-4 text-primary" />
-                  Achievements
-                </h3>
-                <span className="text-sm text-muted-foreground">
-                  {achievements.length}/{Object.keys(achievementDefs).length}
-                </span>
-              </div>
-              <div className="flex gap-2 flex-wrap">
-                {Object.entries(achievementDefs).slice(0, 6).map(([key, def]) => {
-                  const unlocked = achievements.find((a) => a.achievement_type === key);
-                  return (
-                    <AchievementBadge
-                      key={key}
-                      icon={def.icon}
-                      name={def.name}
-                      description={def.desc}
-                      unlocked={!!unlocked}
-                      unlockedAt={unlocked?.unlocked_at}
-                    />
-                  );
-                })}
-              </div>
-            </Card>
+          <div className="space-y-4">
+            {/* Skill Rating - Featured */}
+            {ratings && (
+              <SkillRatingCard
+                mathRating={ratings.mathRating}
+                englishRating={ratings.englishRating}
+                overallRating={ratings.overallRating}
+              />
+            )}
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <Card className="p-4 border-2 border-border">
+                <XPBar quizCount={quizCount} />
+              </Card>
+              <Card className="p-4 border-2 border-border">
+                <div className="flex items-center justify-between mb-2">
+                  <h3 className="font-semibold flex items-center gap-2">
+                    <Award className="w-4 h-4 text-primary" />
+                    Achievements
+                  </h3>
+                  <span className="text-sm text-muted-foreground">
+                    {achievements.length}/{Object.keys(achievementDefs).length}
+                  </span>
+                </div>
+                <div className="flex gap-2 flex-wrap">
+                  {Object.entries(achievementDefs).slice(0, 6).map(([key, def]) => {
+                    const unlocked = achievements.find((a) => a.achievement_type === key);
+                    return (
+                      <AchievementBadge
+                        key={key}
+                        icon={def.icon}
+                        name={def.name}
+                        description={def.desc}
+                        unlocked={!!unlocked}
+                        unlockedAt={unlocked?.unlocked_at}
+                      />
+                    );
+                  })}
+                </div>
+              </Card>
+            </div>
           </div>
         )}
 

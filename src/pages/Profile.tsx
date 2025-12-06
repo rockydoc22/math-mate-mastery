@@ -3,6 +3,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { supabase } from "@/integrations/supabase/client";
 import { useAuth } from "@/hooks/useAuth";
 import { useGameStats } from "@/hooks/useGameStats";
+import { useSkillRating } from "@/hooks/useSkillRating";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -12,6 +13,7 @@ import { toast } from "@/hooks/use-toast";
 import { XPBar } from "@/components/XPBar";
 import { AchievementBadge } from "@/components/AchievementBadge";
 import { StreakBadge } from "@/components/StreakBadge";
+import { SkillRatingCard } from "@/components/SkillRatingCard";
 
 const AVATAR_OPTIONS = ["😎", "🧑‍🎓", "🦊", "🐱", "🐶", "🦁", "🐼", "🦄", "🚀", "⭐", "🔥", "💎", "👑", "🎯", "🧠", "💪"];
 const THEME_OPTIONS = [
@@ -27,6 +29,7 @@ const Profile = () => {
   const navigate = useNavigate();
   const { user, signOut } = useAuth();
   const { streak, achievements, quizCount, achievementDefs } = useGameStats();
+  const { ratings } = useSkillRating();
   const [loading, setLoading] = useState(false);
   const [profile, setProfile] = useState({
     username: "",
@@ -116,6 +119,15 @@ const Profile = () => {
           </div>
           <XPBar quizCount={quizCount} />
         </Card>
+
+        {/* Skill Rating */}
+        {ratings && (
+          <SkillRatingCard
+            mathRating={ratings.mathRating}
+            englishRating={ratings.englishRating}
+            overallRating={ratings.overallRating}
+          />
+        )}
 
         {/* Achievements */}
         <Card className="p-6">
