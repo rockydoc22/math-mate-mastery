@@ -180,7 +180,7 @@ const Home = () => {
           <h1 className="text-6xl md:text-7xl font-bold bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">
             1600
           </h1>
-          <p className="text-xl text-muted-foreground">SAT Mastery</p>
+          <p className="text-xl text-muted-foreground">The 99.9th Percentile Club</p>
         </div>
 
         {/* Feature Cards */}
