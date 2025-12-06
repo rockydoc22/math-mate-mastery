@@ -115,7 +115,7 @@ export function getDifficultyBgColor(rating: number): string {
   return 'bg-red-500/10 border-red-500/30';
 }
 
-export type DifficultyRange = 'all' | 'easy' | 'medium' | 'hard' | 'veryhard';
+export type DifficultyRange = 'all' | 'easy' | 'medium' | 'hard' | 'veryhard' | '1' | '2' | '3' | '4' | '5' | '6' | '7' | '8' | '9' | '10';
 
 export function filterByDifficulty<T extends { difficultyRating?: number }>(
   questions: T[],
@@ -123,6 +123,13 @@ export function filterByDifficulty<T extends { difficultyRating?: number }>(
 ): T[] {
   if (range === 'all') return questions;
   
+  // Check if it's a specific number
+  const specificLevel = parseInt(range);
+  if (!isNaN(specificLevel) && specificLevel >= 1 && specificLevel <= 10) {
+    return questions.filter(q => (q.difficultyRating || 5) === specificLevel);
+  }
+  
+  // Range-based filtering
   return questions.filter(q => {
     const rating = q.difficultyRating || 5;
     switch (range) {
