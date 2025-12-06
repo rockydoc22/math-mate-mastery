@@ -156,7 +156,7 @@ const Home = () => {
         <div className="text-center space-y-4 py-6">
           <div className="p-8 md:p-10 rounded-3xl bg-gradient-to-br from-primary to-accent shadow-2xl shadow-primary/30 inline-block">
             <span className="text-5xl md:text-7xl font-bold text-primary-foreground font-mono">
-              SAT Mastery
+              40²
             </span>
           </div>
           <p className="text-xl md:text-2xl text-muted-foreground font-medium">Join the 99.9% Club</p>
