@@ -168,32 +168,32 @@ const Home = () => {
           <p className="text-xl md:text-2xl text-muted-foreground font-medium">The 99.9th Percentile Club</p>
         </div>
 
-        {/* Feature Cards - unique features only */}
+        {/* Feature Cards - centered */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
           <Link to="/practice-test">
-            <Card className="p-4 hover:border-primary/50 transition-colors cursor-pointer h-full">
-              <Target className="w-6 h-6 text-primary mb-2" />
+            <Card className="p-4 hover:border-primary/50 transition-colors cursor-pointer h-full text-center flex flex-col items-center">
+              <Target className="w-8 h-8 text-primary mb-2" />
               <h3 className="font-semibold text-sm">Practice Test</h3>
               <p className="text-xs text-muted-foreground">Full SAT simulation</p>
             </Card>
           </Link>
           <Link to="/insights">
-            <Card className="p-4 hover:border-primary/50 transition-colors cursor-pointer h-full">
-              <Brain className="w-6 h-6 text-purple-500 mb-2" />
+            <Card className="p-4 hover:border-primary/50 transition-colors cursor-pointer h-full text-center flex flex-col items-center">
+              <Brain className="w-8 h-8 text-purple-500 mb-2" />
               <h3 className="font-semibold text-sm">Insights</h3>
               <p className="text-xs text-muted-foreground">Track weak areas</p>
             </Card>
           </Link>
           <Link to="/review">
-            <Card className="p-4 hover:border-primary/50 transition-colors cursor-pointer h-full">
-              <RefreshCw className="w-6 h-6 text-green-500 mb-2" />
+            <Card className="p-4 hover:border-primary/50 transition-colors cursor-pointer h-full text-center flex flex-col items-center">
+              <RefreshCw className="w-8 h-8 text-green-500 mb-2" />
               <h3 className="font-semibold text-sm">Review</h3>
               <p className="text-xs text-muted-foreground">Spaced repetition</p>
             </Card>
           </Link>
           <Link to="/study">
-            <Card className="p-4 hover:border-primary/50 transition-colors cursor-pointer h-full">
-              <BookMarked className="w-6 h-6 text-amber-500 mb-2" />
+            <Card className="p-4 hover:border-primary/50 transition-colors cursor-pointer h-full text-center flex flex-col items-center">
+              <BookMarked className="w-8 h-8 text-amber-500 mb-2" />
               <h3 className="font-semibold text-sm">Study Mode</h3>
               <p className="text-xs text-muted-foreground">Focused practice</p>
             </Card>
