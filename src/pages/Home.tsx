@@ -134,14 +134,9 @@ const Home = () => {
         <div className="text-center space-y-6 py-8">
           {/* Math expressions floating around */}
           <div className="relative flex justify-center items-center min-h-[200px]">
-            {/* Top left - Sigma notation */}
-            <span className="absolute left-0 md:left-4 top-0 font-mono text-primary/70 animate-pulse" style={{ animationDelay: '0.3s' }}>
-              <span className="inline-flex flex-col items-center leading-none">
-                <span className="text-sm md:text-base">40</span>
-                <span className="text-3xl md:text-4xl">Σ</span>
-                <span className="text-sm md:text-base">k=1</span>
-              </span>
-              <span className="align-middle text-lg md:text-xl">(2k-1)</span>
+            {/* Top left - Sum of squares */}
+            <span className="absolute left-0 md:left-4 top-0 text-2xl md:text-3xl font-mono text-primary/70 animate-pulse font-bold" style={{ animationDelay: '0.3s' }}>
+              32²+24²
             </span>
             
             {/* Top right - Prime factorization */}
@@ -161,9 +156,14 @@ const Home = () => {
               </span>
             </div>
             
-            {/* Right middle - Sum of squares */}
-            <span className="absolute right-0 md:right-8 top-1/2 -translate-y-1/2 text-xl md:text-2xl font-mono text-primary/70 animate-pulse font-bold" style={{ animationDelay: '1.2s' }}>
-              32²+24²
+            {/* Right middle - Sigma notation */}
+            <span className="absolute right-0 md:right-4 top-1/2 -translate-y-1/2 font-mono text-primary/70 animate-pulse" style={{ animationDelay: '1.2s' }}>
+              <span className="inline-flex flex-col items-center leading-none">
+                <span className="text-sm md:text-base">40</span>
+                <span className="text-3xl md:text-4xl">Σ</span>
+                <span className="text-sm md:text-base">k=1</span>
+              </span>
+              <span className="align-middle text-lg md:text-xl">(2k-1)</span>
             </span>
             
             {/* Bottom left - Integral */}
