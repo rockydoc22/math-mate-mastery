@@ -119,6 +119,7 @@ export type Database = {
       }
       battle_rooms: {
         Row: {
+          battle_mode: string
           created_at: string
           current_question_index: number
           host_id: string
@@ -132,6 +133,7 @@ export type Database = {
           time_limit_seconds: number | null
         }
         Insert: {
+          battle_mode?: string
           created_at?: string
           current_question_index?: number
           host_id: string
@@ -145,6 +147,7 @@ export type Database = {
           time_limit_seconds?: number | null
         }
         Update: {
+          battle_mode?: string
           created_at?: string
           current_question_index?: number
           host_id?: string

@@ -7,7 +7,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { useAuth } from "@/hooks/useAuth";
 import { supabase } from "@/integrations/supabase/client";
 import { toast } from "sonner";
-import { Swords, Users, ArrowLeft, Zap } from "lucide-react";
+import { Swords, Users, ArrowLeft, Zap, Skull } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const BattleLobby = () => {
@@ -18,6 +18,7 @@ const BattleLobby = () => {
   const [questionCount, setQuestionCount] = useState("10");
   const [maxPlayers, setMaxPlayers] = useState("4");
   const [timeLimit, setTimeLimit] = useState("0"); // 0 = no limit
+  const [battleMode, setBattleMode] = useState("normal");
   const [isCreating, setIsCreating] = useState(false);
   const [isJoining, setIsJoining] = useState(false);
 
@@ -50,6 +51,7 @@ const BattleLobby = () => {
         question_count: parseInt(questionCount),
         max_players: parseInt(maxPlayers),
         time_limit_seconds: parseInt(timeLimit) || null,
+        battle_mode: battleMode,
       })
         .select()
         .single();
@@ -223,6 +225,36 @@ const BattleLobby = () => {
                     <SelectItem value="8">8 Players</SelectItem>
                   </SelectContent>
                 </Select>
+              </div>
+
+              <div>
+                <label className="text-sm font-medium mb-2 block">Battle Mode</label>
+                <div className="grid grid-cols-2 gap-2">
+                  <button
+                    onClick={() => setBattleMode("normal")}
+                    className={`p-3 rounded-lg border-2 transition-all text-center ${
+                      battleMode === "normal"
+                        ? "border-primary bg-primary/10"
+                        : "border-border hover:border-muted-foreground/50"
+                    }`}
+                  >
+                    <Zap className={`w-5 h-5 mx-auto mb-1 ${battleMode === "normal" ? "text-primary" : "text-muted-foreground"}`} />
+                    <span className="text-sm font-medium">Normal</span>
+                    <p className="text-xs text-muted-foreground">Most correct wins</p>
+                  </button>
+                  <button
+                    onClick={() => setBattleMode("sudden_death")}
+                    className={`p-3 rounded-lg border-2 transition-all text-center ${
+                      battleMode === "sudden_death"
+                        ? "border-destructive bg-destructive/10"
+                        : "border-border hover:border-muted-foreground/50"
+                    }`}
+                  >
+                    <Skull className={`w-5 h-5 mx-auto mb-1 ${battleMode === "sudden_death" ? "text-destructive" : "text-muted-foreground"}`} />
+                    <span className="text-sm font-medium">Sudden Death</span>
+                    <p className="text-xs text-muted-foreground">1 wrong = eliminated</p>
+                  </button>
+                </div>
               </div>
 
               <Button 

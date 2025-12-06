@@ -5,7 +5,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { useAuth } from "@/hooks/useAuth";
 import { supabase } from "@/integrations/supabase/client";
 import { toast } from "sonner";
-import { ArrowLeft, Crown, Copy, Users, Trophy, Loader2, Clock } from "lucide-react";
+import { ArrowLeft, Crown, Copy, Users, Trophy, Loader2, Clock, Skull } from "lucide-react";
 import { questions } from "@/data/questions";
 import { visualMathQuestions, visualEnglishQuestions, moreMathVisualQuestions, moreEnglishVisualQuestions } from "@/data/visualQuestions";
 import { additionalMathQuestions } from "@/data/additionalMathQuestions";
@@ -24,6 +24,7 @@ interface Room {
   current_question_index: number;
   started_at: string | null;
   time_limit_seconds: number | null;
+  battle_mode: string;
 }
 
 interface Participant {
@@ -34,6 +35,7 @@ interface Participant {
   current_question: number;
   finished_at: string | null;
   total_time_ms?: number;
+  eliminated?: boolean;
   profile?: {
     username: string;
     avatar_emoji: string | null;
@@ -78,6 +80,7 @@ const BattleRoom = () => {
   const [myTotalTime, setMyTotalTime] = useState(0);
   const [mySkillRating, setMySkillRating] = useState(1200);
   const [timeRemaining, setTimeRemaining] = useState<number | null>(null);
+  const [isEliminated, setIsEliminated] = useState(false);
 
   // Timer countdown effect
   useEffect(() => {
@@ -280,13 +283,22 @@ const BattleRoom = () => {
   };
 
   const handleAnswer = async (answerLetter: string) => {
-    if (isAnswered || !room || !user || !battleQuestions[currentQuestionIndex]) return;
+    if (isAnswered || !room || !user || !battleQuestions[currentQuestionIndex] || isEliminated) return;
 
     setSelectedAnswer(answerLetter);
     setIsAnswered(true);
 
     const timeTaken = Date.now() - questionStartTime;
     const isCorrect = answerLetter === battleQuestions[currentQuestionIndex].correctAnswer;
+    
+    // Check for sudden death elimination
+    const isSuddenDeath = room.battle_mode === "sudden_death";
+    const eliminated = isSuddenDeath && !isCorrect;
+    
+    if (eliminated) {
+      setIsEliminated(true);
+      toast.error("💀 Eliminated! One wrong answer in Sudden Death mode.");
+    }
     
     // New scoring: primarily based on correctness (1000 pts), with small time bonus (max 100 pts)
     // This makes accuracy ~10x more important than speed
@@ -325,14 +337,14 @@ const BattleRoom = () => {
         score: newScore,
         answers_correct: newCorrect,
         current_question: currentQuestionIndex + 1,
-        finished_at: isLastQuestion ? new Date().toISOString() : null,
+        finished_at: (isLastQuestion || eliminated) ? new Date().toISOString() : null,
       })
       .eq("room_id", room.id)
       .eq("user_id", user.id);
 
     // Wait a moment to show result, then move to next question
     setTimeout(() => {
-      if (isLastQuestion) {
+      if (isLastQuestion || eliminated) {
         setShowResults(true);
         // Check if all finished
         checkGameEnd();
@@ -380,31 +392,64 @@ const BattleRoom = () => {
 
   // Results screen
   if (showResults || room?.status === "completed") {
+    // In sudden death, sort by: 1) eliminated last, 2) most correct, 3) score
+    const resultsParticipants = room?.battle_mode === "sudden_death" 
+      ? [...participants].sort((a, b) => {
+          // Players who answered more are ranked higher (survived longer)
+          if (b.answers_correct !== a.answers_correct) {
+            return b.answers_correct - a.answers_correct;
+          }
+          return b.score - a.score;
+        })
+      : sortedParticipants;
+
     return (
       <div className="min-h-screen bg-gradient-to-br from-background via-background to-primary/5 p-4">
         <div className="max-w-2xl mx-auto">
           <div className="text-center mb-8">
-            <Trophy className="w-16 h-16 text-yellow-500 mx-auto mb-4" />
-            <h1 className="text-3xl font-bold">Battle Complete!</h1>
+            {room?.battle_mode === "sudden_death" ? (
+              <Skull className="w-16 h-16 text-destructive mx-auto mb-4" />
+            ) : (
+              <Trophy className="w-16 h-16 text-yellow-500 mx-auto mb-4" />
+            )}
+            <h1 className="text-3xl font-bold">
+              {room?.battle_mode === "sudden_death" ? "Sudden Death Complete!" : "Battle Complete!"}
+            </h1>
           </div>
 
           <div className="space-y-3">
-            {sortedParticipants.map((p, index) => (
-              <Card key={p.id} className={index === 0 ? "border-yellow-500 bg-yellow-500/10" : ""}>
-                <CardContent className="flex items-center justify-between p-4">
-                  <div className="flex items-center gap-3">
-                    <span className="text-2xl font-bold text-muted-foreground">#{index + 1}</span>
-                    {index === 0 && <Crown className="w-6 h-6 text-yellow-500" />}
-                    <span className="text-2xl">{p.profile?.avatar_emoji || "😎"}</span>
-                    <span className="font-medium">{p.profile?.username || "Player"}</span>
-                  </div>
-                  <div className="text-right">
-                    <div className="text-2xl font-bold text-primary">{p.score}</div>
-                    <div className="text-sm text-muted-foreground">{p.answers_correct}/{battleQuestions.length} correct</div>
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
+            {resultsParticipants.map((p, index) => {
+              const wasEliminated = room?.battle_mode === "sudden_death" && p.answers_correct < battleQuestions.length && p.finished_at;
+              const isWinner = index === 0;
+              
+              return (
+                <Card 
+                  key={p.id} 
+                  className={`${isWinner ? "border-yellow-500 bg-yellow-500/10" : ""} ${wasEliminated ? "opacity-60" : ""}`}
+                >
+                  <CardContent className="flex items-center justify-between p-4">
+                    <div className="flex items-center gap-3">
+                      <span className="text-2xl font-bold text-muted-foreground">#{index + 1}</span>
+                      {isWinner && <Crown className="w-6 h-6 text-yellow-500" />}
+                      {wasEliminated && <Skull className="w-5 h-5 text-destructive" />}
+                      <span className="text-2xl">{p.profile?.avatar_emoji || "😎"}</span>
+                      <span className={`font-medium ${wasEliminated ? "line-through" : ""}`}>
+                        {p.profile?.username || "Player"}
+                      </span>
+                    </div>
+                    <div className="text-right">
+                      <div className={`text-2xl font-bold ${wasEliminated ? "text-destructive" : "text-primary"}`}>
+                        {p.score}
+                      </div>
+                      <div className="text-sm text-muted-foreground">
+                        {p.answers_correct}/{battleQuestions.length} correct
+                        {wasEliminated && " (eliminated)"}
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
+              );
+            })}
           </div>
 
           <div className="mt-8 flex gap-4 justify-center">
@@ -450,12 +495,20 @@ const BattleRoom = () => {
                 </span>
                 <div className="text-sm text-muted-foreground text-right">
                   <div>{room.question_count} questions • {room.subject === "both" ? "Math & English" : room.subject}</div>
-                  {room.time_limit_seconds && (
-                    <div className="flex items-center gap-1 justify-end text-primary">
-                      <Clock className="w-3 h-3" />
-                      {formatTime(room.time_limit_seconds)}
-                    </div>
-                  )}
+                  <div className="flex items-center gap-2 justify-end">
+                    {room.battle_mode === "sudden_death" && (
+                      <span className="flex items-center gap-1 text-destructive">
+                        <Skull className="w-3 h-3" />
+                        Sudden Death
+                      </span>
+                    )}
+                    {room.time_limit_seconds && (
+                      <span className="flex items-center gap-1 text-primary">
+                        <Clock className="w-3 h-3" />
+                        {formatTime(room.time_limit_seconds)}
+                      </span>
+                    )}
+                  </div>
                 </div>
               </div>
               
@@ -516,20 +569,41 @@ const BattleRoom = () => {
           </div>
         </div>
 
+        {/* Sudden Death indicator */}
+        {room?.battle_mode === "sudden_death" && !isEliminated && (
+          <div className="flex items-center justify-center gap-2 mb-4 p-2 rounded-lg bg-destructive/10 border border-destructive/30">
+            <Skull className="w-4 h-4 text-destructive" />
+            <span className="text-sm font-medium text-destructive">Sudden Death - One wrong answer eliminates you!</span>
+          </div>
+        )}
+
+        {/* Eliminated banner */}
+        {isEliminated && (
+          <div className="flex items-center justify-center gap-2 mb-4 p-4 rounded-lg bg-destructive/20 border border-destructive">
+            <Skull className="w-6 h-6 text-destructive" />
+            <span className="text-lg font-bold text-destructive">ELIMINATED</span>
+          </div>
+        )}
+
         {/* Live scoreboard */}
         <div className="flex gap-2 mb-6 overflow-x-auto pb-2">
-          {sortedParticipants.slice(0, 4).map((p) => (
-            <div 
-              key={p.id} 
-              className={`flex items-center gap-2 px-3 py-1 rounded-full text-sm ${
-                p.user_id === user?.id ? "bg-primary text-primary-foreground" : "bg-muted"
-              }`}
-            >
-              <span>{p.profile?.avatar_emoji || "😎"}</span>
-              <span className="truncate max-w-[60px]">{p.profile?.username}</span>
-              <span className="font-bold">{p.score}</span>
-            </div>
-          ))}
+          {sortedParticipants.slice(0, 4).map((p) => {
+            const pEliminated = room?.battle_mode === "sudden_death" && p.finished_at && p.answers_correct < battleQuestions.length;
+            return (
+              <div 
+                key={p.id} 
+                className={`flex items-center gap-2 px-3 py-1 rounded-full text-sm ${
+                  pEliminated ? "bg-destructive/20 opacity-60" :
+                  p.user_id === user?.id ? "bg-primary text-primary-foreground" : "bg-muted"
+                }`}
+              >
+                {pEliminated && <Skull className="w-3 h-3 text-destructive" />}
+                <span>{p.profile?.avatar_emoji || "😎"}</span>
+                <span className={`truncate max-w-[60px] ${pEliminated ? "line-through" : ""}`}>{p.profile?.username}</span>
+                <span className="font-bold">{p.score}</span>
+              </div>
+            );
+          })}
         </div>
 
         {/* Question */}
