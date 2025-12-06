@@ -5341,5 +5341,156 @@ export const hardEnglishQuestions: EnglishQuestion[] = [
     difficulty: 'hard',
     domain: 'Writing',
     skill: 'Formal Tone'
+  }),
+  // Batch 2 user-provided questions
+  addRating({
+    id: 'sat-doc-056',
+    question: 'Which choice best maintains the academic tone? Original: The scientist figured out the solution quickly.',
+    options: [
+      { letter: 'A', text: 'The scientist figured out the solution quickly.' },
+      { letter: 'B', text: 'The scientist rapidly determined the solution.' },
+      { letter: 'C', text: 'The scientist was quick to figure out the solution.' },
+      { letter: 'D', text: 'The scientist quickly figured out the solution.' }
+    ],
+    correctAnswer: 'B',
+    explanation: '"Rapidly determined" is more formal and precise than "figured out," maintaining an academic tone.',
+    difficulty: 'hard',
+    domain: 'Writing',
+    skill: 'Academic Tone'
+  }),
+  addRating({
+    id: 'sat-doc-057',
+    question: 'Which revision best improves sentence structure? Original: The committee, which was known for its strict standards, approved the proposal that was controversial.',
+    options: [
+      { letter: 'A', text: 'Known for strict standards, the committee approved the controversial proposal.' },
+      { letter: 'B', text: 'The committee approved the controversial proposal, known for strict standards.' },
+      { letter: 'C', text: 'The committee, known for strict standards, approved the controversial proposal.' },
+      { letter: 'D', text: 'Approving the controversial proposal, the committee was known for strict standards.' }
+    ],
+    correctAnswer: 'A',
+    explanation: 'Option A eliminates redundancy and improves clarity by front-loading the descriptive phrase.',
+    difficulty: 'hard',
+    domain: 'Writing',
+    skill: 'Sentence Structure'
+  }),
+  addRating({
+    id: 'sat-doc-058',
+    question: 'Which choice best supports the claim that globalization influences language?',
+    options: [
+      { letter: 'A', text: 'English words appear frequently in international advertising.' },
+      { letter: 'B', text: 'Language evolves naturally over time.' },
+      { letter: 'C', text: 'Dialects differ across regions.' },
+      { letter: 'D', text: 'People learn multiple languages for personal growth.' }
+    ],
+    correctAnswer: 'A',
+    explanation: 'The presence of English in global advertising directly supports the claim about globalization\'s influence on language.',
+    difficulty: 'hard',
+    domain: 'Reading Comprehension',
+    skill: 'Command of Evidence'
+  }),
+  addRating({
+    id: 'sat-doc-059',
+    question: 'Which choice best maintains parallel structure? Original: The program aims to educate students, inspire creativity, and they should learn collaboration.',
+    options: [
+      { letter: 'A', text: 'educate students, inspire creativity, and foster collaboration.' },
+      { letter: 'B', text: 'educating students, inspiring creativity, and collaboration.' },
+      { letter: 'C', text: 'educate students, inspiring creativity, and collaborating.' },
+      { letter: 'D', text: 'educating students, inspire creativity, and foster collaboration.' }
+    ],
+    correctAnswer: 'A',
+    explanation: 'Option A maintains parallel structure with three verbs in the same infinitive form.',
+    difficulty: 'hard',
+    domain: 'Writing',
+    skill: 'Parallel Structure'
+  }),
+  addRating({
+    id: 'sat-doc-060',
+    question: 'Which choice most logically completes the sentence? Although the policy aimed to reduce costs, critics argued that...',
+    options: [
+      { letter: 'A', text: 'it would increase operational efficiency.' },
+      { letter: 'B', text: 'its implementation was expensive and ineffective.' },
+      { letter: 'C', text: 'it was universally praised by analysts.' },
+      { letter: 'D', text: 'it aligned with global standards.' }
+    ],
+    correctAnswer: 'B',
+    explanation: 'Option B introduces a logical contrast to the policy\'s aim, which is what critics would argue.',
+    difficulty: 'hard',
+    domain: 'Reading Comprehension',
+    skill: 'Logical Completion'
+  }),
+  addRating({
+    id: 'sat-doc-061',
+    question: 'Which choice best improves clarity? Original: Due to the fact that the experiment failed, the team revised its hypothesis.',
+    options: [
+      { letter: 'A', text: 'Because the experiment failed, the team revised its hypothesis.' },
+      { letter: 'B', text: 'The experiment failed, so the team revised its hypothesis.' },
+      { letter: 'C', text: 'The team revised its hypothesis because the experiment failed.' },
+      { letter: 'D', text: 'All of the above.' }
+    ],
+    correctAnswer: 'D',
+    explanation: 'All options improve clarity by removing wordiness from "due to the fact that."',
+    difficulty: 'hard',
+    domain: 'Writing',
+    skill: 'Concision and Clarity'
+  }),
+  addRating({
+    id: 'sat-doc-062',
+    question: 'Which choice best supports the argument that literature reflects society?',
+    options: [
+      { letter: 'A', text: 'Novels often portray social norms and conflicts.' },
+      { letter: 'B', text: 'Authors sometimes write for entertainment.' },
+      { letter: 'C', text: 'Literature requires creativity.' },
+      { letter: 'D', text: 'Books are sold globally.' }
+    ],
+    correctAnswer: 'A',
+    explanation: 'Option A directly connects literature to societal reflection through portrayal of social norms and conflicts.',
+    difficulty: 'hard',
+    domain: 'Reading Comprehension',
+    skill: 'Command of Evidence'
+  }),
+  addRating({
+    id: 'sat-doc-063',
+    question: 'Which choice best maintains formal tone? Original: The results were pretty shocking to the researchers.',
+    options: [
+      { letter: 'A', text: 'The results were quite shocking to the researchers.' },
+      { letter: 'B', text: 'The results were shocking to the researchers.' },
+      { letter: 'C', text: 'The results were rather shocking to the researchers.' },
+      { letter: 'D', text: 'The results were significantly shocking to the researchers.' }
+    ],
+    correctAnswer: 'A',
+    explanation: '"Quite shocking" is formal and precise compared to the informal "pretty shocking."',
+    difficulty: 'hard',
+    domain: 'Writing',
+    skill: 'Formal Tone'
+  }),
+  addRating({
+    id: 'sat-doc-064',
+    question: 'Which sentence most effectively combines ideas? She admired the sculpture. The sculpture was created by a local artist.',
+    options: [
+      { letter: 'A', text: 'She admired the sculpture, which was created by a local artist.' },
+      { letter: 'B', text: 'She admired the sculpture and it was created by a local artist.' },
+      { letter: 'C', text: 'She admired the sculpture; the sculpture was by a local artist.' },
+      { letter: 'D', text: 'She admired the sculpture because it was created by a local artist.' }
+    ],
+    correctAnswer: 'A',
+    explanation: 'Option A combines ideas without redundancy using a relative clause.',
+    difficulty: 'hard',
+    domain: 'Writing',
+    skill: 'Sentence Combining'
+  }),
+  addRating({
+    id: 'sat-doc-065',
+    question: 'Which choice best maintains logical progression? Despite the committee\'s insistence on transparency, the report was...',
+    options: [
+      { letter: 'A', text: 'opaque and convoluted, leaving readers perplexed.' },
+      { letter: 'B', text: 'clear and concise, satisfying all expectations.' },
+      { letter: 'C', text: 'verbose yet illuminating, offering clarity.' },
+      { letter: 'D', text: 'brief but misleading, obscuring critical details.' }
+    ],
+    correctAnswer: 'A',
+    explanation: 'Option A logically contrasts with the committee\'s insistence on transparency.',
+    difficulty: 'hard',
+    domain: 'Reading Comprehension',
+    skill: 'Logical Progression'
   })
 ];
