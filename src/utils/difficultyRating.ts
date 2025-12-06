@@ -46,17 +46,21 @@ function analyzeQuestion(question: string, options: { letter: string; text: stri
 }
 
 function calculateRating(factors: RatingFactors): number {
-  let score = 4; // Base score (medium difficulty)
+  let score = 0; // Start from 0 and build up
+  
+  // Base complexity from question length
+  if (factors.questionLength < 100) score += 1;
+  else if (factors.questionLength < 200) score += 2;
+  else if (factors.questionLength < 300) score += 3;
+  else if (factors.questionLength < 400) score += 4;
+  else if (factors.questionLength < 500) score += 5;
+  else score += 6;
   
   // Visual questions add complexity
-  if (factors.hasVisual) score += 1;
+  if (factors.hasVisual) score += 1.5;
   
   // Word problems require comprehension
   if (factors.isWordProblem) score += 1;
-  
-  // Long questions are harder to parse
-  if (factors.questionLength > 300) score += 1;
-  if (factors.questionLength > 500) score += 1;
   
   // Complex options indicate harder problems
   if (factors.optionComplexity > 30) score += 0.5;
@@ -66,9 +70,17 @@ function calculateRating(factors: RatingFactors): number {
   const advancedDomains = ['advanced algebra', 'advanced math', 'geometry', 'trigonometry'];
   if (advancedDomains.some(d => factors.domain.toLowerCase().includes(d))) score += 1;
   
+  // Basic domains reduce difficulty
+  const basicDomains = ['algebra', 'linear equations', 'heart of algebra'];
+  if (basicDomains.some(d => factors.domain.toLowerCase().includes(d)) && !factors.hasVisual && !factors.isWordProblem) score -= 1;
+  
   // Skill-based adjustments
   const hardSkills = ['quadratic', 'exponential', 'polynomial', 'rational', 'nonlinear', 'systems'];
   if (hardSkills.some(s => factors.skill.toLowerCase().includes(s))) score += 1;
+  
+  // Easy skills
+  const easySkills = ['linear', 'slope', 'basic', 'simple', 'one-variable'];
+  if (easySkills.some(s => factors.skill.toLowerCase().includes(s))) score -= 0.5;
   
   // Mathematical complexity factors
   if (factors.hasMultipleSteps) score += 0.5;
