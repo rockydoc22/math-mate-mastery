@@ -129,6 +129,7 @@ export type Database = {
           started_at: string | null
           status: string
           subject: string
+          time_limit_seconds: number | null
         }
         Insert: {
           created_at?: string
@@ -141,6 +142,7 @@ export type Database = {
           started_at?: string | null
           status?: string
           subject?: string
+          time_limit_seconds?: number | null
         }
         Update: {
           created_at?: string
@@ -153,6 +155,7 @@ export type Database = {
           started_at?: string | null
           status?: string
           subject?: string
+          time_limit_seconds?: number | null
         }
         Relationships: []
       }

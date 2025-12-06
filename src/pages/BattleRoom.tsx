@@ -5,7 +5,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { useAuth } from "@/hooks/useAuth";
 import { supabase } from "@/integrations/supabase/client";
 import { toast } from "sonner";
-import { ArrowLeft, Crown, Copy, Users, Trophy, Loader2 } from "lucide-react";
+import { ArrowLeft, Crown, Copy, Users, Trophy, Loader2, Clock } from "lucide-react";
 import { questions } from "@/data/questions";
 import { visualMathQuestions, visualEnglishQuestions, moreMathVisualQuestions, moreEnglishVisualQuestions } from "@/data/visualQuestions";
 import { additionalMathQuestions } from "@/data/additionalMathQuestions";
@@ -23,6 +23,7 @@ interface Room {
   max_players: number;
   current_question_index: number;
   started_at: string | null;
+  time_limit_seconds: number | null;
 }
 
 interface Participant {
@@ -76,6 +77,41 @@ const BattleRoom = () => {
   const [showResults, setShowResults] = useState(false);
   const [myTotalTime, setMyTotalTime] = useState(0);
   const [mySkillRating, setMySkillRating] = useState(1200);
+  const [timeRemaining, setTimeRemaining] = useState<number | null>(null);
+
+  // Timer countdown effect
+  useEffect(() => {
+    if (room?.status !== "in_progress" || !room.time_limit_seconds || !room.started_at) {
+      return;
+    }
+
+    const startTime = new Date(room.started_at).getTime();
+    const endTime = startTime + room.time_limit_seconds * 1000;
+
+    const updateTimer = () => {
+      const now = Date.now();
+      const remaining = Math.max(0, Math.floor((endTime - now) / 1000));
+      setTimeRemaining(remaining);
+
+      if (remaining === 0 && !showResults) {
+        // Time's up! Force end the battle
+        setShowResults(true);
+        checkGameEnd();
+      }
+    };
+
+    updateTimer();
+    const interval = setInterval(updateTimer, 1000);
+
+    return () => clearInterval(interval);
+  }, [room?.status, room?.time_limit_seconds, room?.started_at, showResults]);
+
+  const formatTime = (seconds: number) => {
+    const mins = Math.floor(seconds / 60);
+    const secs = seconds % 60;
+    return `${mins}:${secs.toString().padStart(2, '0')}`;
+  };
+
   // Fetch room and participants
   const fetchRoom = useCallback(async () => {
     if (!roomCode) return;
@@ -412,9 +448,15 @@ const BattleRoom = () => {
                   <Users className="w-5 h-5" />
                   Players ({participants.length}/{room.max_players})
                 </span>
-                <span className="text-sm text-muted-foreground">
-                  {room.question_count} questions • {room.subject === "both" ? "Math & English" : room.subject}
-                </span>
+                <div className="text-sm text-muted-foreground text-right">
+                  <div>{room.question_count} questions • {room.subject === "both" ? "Math & English" : room.subject}</div>
+                  {room.time_limit_seconds && (
+                    <div className="flex items-center gap-1 justify-end text-primary">
+                      <Clock className="w-3 h-3" />
+                      {formatTime(room.time_limit_seconds)}
+                    </div>
+                  )}
+                </div>
               </div>
               
               <div className="space-y-2">
@@ -456,6 +498,18 @@ const BattleRoom = () => {
           <div className="text-sm text-muted-foreground">
             Question {currentQuestionIndex + 1} of {battleQuestions.length}
           </div>
+          
+          {/* Timer (if time limit exists) */}
+          {timeRemaining !== null && room?.time_limit_seconds && (
+            <div className={`flex items-center gap-1 font-mono font-bold text-lg ${
+              timeRemaining <= 30 ? 'text-destructive animate-pulse' : 
+              timeRemaining <= 60 ? 'text-orange-500' : 'text-primary'
+            }`}>
+              <Clock className="w-5 h-5" />
+              {formatTime(timeRemaining)}
+            </div>
+          )}
+          
           <div className="flex items-center gap-2 text-primary font-bold">
             <Trophy className="w-5 h-5" />
             {myScore} pts

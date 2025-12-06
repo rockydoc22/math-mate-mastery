@@ -17,6 +17,7 @@ const BattleLobby = () => {
   const [subject, setSubject] = useState("both");
   const [questionCount, setQuestionCount] = useState("10");
   const [maxPlayers, setMaxPlayers] = useState("4");
+  const [timeLimit, setTimeLimit] = useState("0"); // 0 = no limit
   const [isCreating, setIsCreating] = useState(false);
   const [isJoining, setIsJoining] = useState(false);
 
@@ -43,12 +44,13 @@ const BattleLobby = () => {
       const { data: room, error: roomError } = await supabase
         .from("battle_rooms")
         .insert({
-          host_id: user.id,
-          room_code: roomCode,
-          subject,
-          question_count: parseInt(questionCount),
-          max_players: parseInt(maxPlayers),
-        })
+        host_id: user.id,
+        room_code: roomCode,
+        subject,
+        question_count: parseInt(questionCount),
+        max_players: parseInt(maxPlayers),
+        time_limit_seconds: parseInt(timeLimit) || null,
+      })
         .select()
         .single();
 
@@ -189,6 +191,21 @@ const BattleLobby = () => {
                     <SelectItem value="5">5 Questions (Quick)</SelectItem>
                     <SelectItem value="10">10 Questions</SelectItem>
                     <SelectItem value="15">15 Questions</SelectItem>
+                  </SelectContent>
+                </Select>
+              </div>
+
+              <div>
+                <label className="text-sm font-medium mb-2 block">Time Limit</label>
+                <Select value={timeLimit} onValueChange={setTimeLimit}>
+                  <SelectTrigger>
+                    <SelectValue />
+                  </SelectTrigger>
+                  <SelectContent>
+                    <SelectItem value="0">No Limit (Relaxed)</SelectItem>
+                    <SelectItem value="180">3 Minutes (Speed)</SelectItem>
+                    <SelectItem value="300">5 Minutes (Standard)</SelectItem>
+                    <SelectItem value="600">10 Minutes (Extended)</SelectItem>
                   </SelectContent>
                 </Select>
               </div>
