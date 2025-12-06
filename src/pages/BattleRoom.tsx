@@ -11,6 +11,7 @@ import { visualMathQuestions, visualEnglishQuestions, moreMathVisualQuestions, m
 import { additionalMathQuestions } from "@/data/additionalMathQuestions";
 import { englishQuestions } from "@/data/englishQuestions";
 import { QuestionVisual } from "@/components/QuestionVisual";
+import { filterByDifficulty, DifficultyRange } from "@/utils/difficultyRating";
 
 interface Room {
   id: string;
@@ -31,10 +32,12 @@ interface Participant {
   answers_correct: number;
   current_question: number;
   finished_at: string | null;
+  total_time_ms?: number;
   profile?: {
     username: string;
     avatar_emoji: string | null;
   };
+  skill_rating?: number;
 }
 
 interface BattleQuestion {
@@ -44,6 +47,15 @@ interface BattleQuestion {
   correctAnswer: string;
   explanation: string;
   visual?: any;
+  difficultyRating?: number;
+}
+
+// Map skill rating to appropriate difficulty range
+function getPlayerDifficultyRange(skillRating: number): DifficultyRange {
+  if (skillRating < 1000) return 'easy';      // 1-3
+  if (skillRating < 1200) return 'medium';    // 4-5
+  if (skillRating < 1400) return 'hard';      // 6-8
+  return 'veryhard';                           // 9-10
 }
 
 const BattleRoom = () => {
@@ -62,7 +74,8 @@ const BattleRoom = () => {
   const [myScore, setMyScore] = useState(0);
   const [myCorrect, setMyCorrect] = useState(0);
   const [showResults, setShowResults] = useState(false);
-
+  const [myTotalTime, setMyTotalTime] = useState(0);
+  const [mySkillRating, setMySkillRating] = useState(1200);
   // Fetch room and participants
   const fetchRoom = useCallback(async () => {
     if (!roomCode) return;
@@ -81,7 +94,7 @@ const BattleRoom = () => {
 
     setRoom(roomData);
 
-    // Fetch participants with profiles
+    // Fetch participants with profiles and skill ratings
     const { data: participantsData } = await supabase
       .from("battle_participants")
       .select("*")
@@ -94,27 +107,35 @@ const BattleRoom = () => {
         .from("profiles")
         .select("id, username, avatar_emoji")
         .in("id", userIds);
+      
+      // Fetch skill ratings for participants
+      const { data: skillRatings } = await supabase
+        .from("skill_ratings")
+        .select("user_id, overall_rating")
+        .in("user_id", userIds);
 
       const participantsWithProfiles = participantsData.map(p => ({
         ...p,
-        profile: profiles?.find(pr => pr.id === p.user_id)
+        profile: profiles?.find(pr => pr.id === p.user_id),
+        skill_rating: skillRatings?.find(sr => sr.user_id === p.user_id)?.overall_rating || 1200
       }));
 
       setParticipants(participantsWithProfiles);
       
-      // Update my score
+      // Update my score and skill rating
       const myParticipant = participantsWithProfiles.find(p => p.user_id === user?.id);
       if (myParticipant) {
         setMyScore(myParticipant.score);
         setMyCorrect(myParticipant.answers_correct);
+        setMySkillRating(myParticipant.skill_rating || 1200);
       }
     }
 
     setLoading(false);
   }, [roomCode, navigate, user?.id]);
 
-  // Generate questions when game starts
-  const generateQuestions = useCallback((room: Room): BattleQuestion[] => {
+  // Generate questions personalized to player's skill level
+  const generateQuestions = useCallback((room: Room, playerSkillRating: number): BattleQuestion[] => {
     const allMathQuestions = [
       ...questions,
       ...visualMathQuestions,
@@ -136,8 +157,17 @@ const BattleRoom = () => {
       pool = [...allMathQuestions, ...allEnglishQuestions];
     }
 
+    // Filter by player's skill-appropriate difficulty
+    const difficultyRange = getPlayerDifficultyRange(playerSkillRating);
+    let filteredPool = filterByDifficulty(pool, difficultyRange);
+    
+    // If not enough questions at this difficulty, expand the pool
+    if (filteredPool.length < room.question_count) {
+      filteredPool = pool; // Fall back to all questions
+    }
+
     // Shuffle and pick questions
-    const shuffled = [...pool].sort(() => Math.random() - 0.5);
+    const shuffled = [...filteredPool].sort(() => Math.random() - 0.5);
     return shuffled.slice(0, room.question_count);
   }, []);
 
@@ -159,7 +189,7 @@ const BattleRoom = () => {
           setRoom(newRoom);
           
           if (newRoom.status === "in_progress" && battleQuestions.length === 0) {
-            const generatedQuestions = generateQuestions(newRoom);
+            const generatedQuestions = generateQuestions(newRoom, mySkillRating);
             setBattleQuestions(generatedQuestions);
             setQuestionStartTime(Date.now());
           }
@@ -181,16 +211,16 @@ const BattleRoom = () => {
     return () => {
       supabase.removeChannel(roomChannel);
     };
-  }, [room?.id, battleQuestions.length, generateQuestions, fetchRoom]);
+  }, [room?.id, battleQuestions.length, generateQuestions, fetchRoom, mySkillRating]);
 
   // When room becomes in_progress, generate questions
   useEffect(() => {
     if (room?.status === "in_progress" && battleQuestions.length === 0) {
-      const generatedQuestions = generateQuestions(room);
+      const generatedQuestions = generateQuestions(room, mySkillRating);
       setBattleQuestions(generatedQuestions);
       setQuestionStartTime(Date.now());
     }
-  }, [room?.status, battleQuestions.length, generateQuestions, room]);
+  }, [room?.status, battleQuestions.length, generateQuestions, room, mySkillRating]);
 
   const handleStartGame = async () => {
     if (!room || !user) return;
@@ -222,13 +252,18 @@ const BattleRoom = () => {
     const timeTaken = Date.now() - questionStartTime;
     const isCorrect = answerLetter === battleQuestions[currentQuestionIndex].correctAnswer;
     
-    // Calculate points: 100 base + up to 50 for speed (under 10 seconds)
+    // New scoring: primarily based on correctness (1000 pts), with small time bonus (max 100 pts)
+    // This makes accuracy ~10x more important than speed
     let points = 0;
     if (isCorrect) {
-      points = 100;
-      const speedBonus = Math.max(0, Math.floor(50 * (1 - timeTaken / 10000)));
+      points = 1000; // Base points for correct answer
+      // Speed bonus: up to 100 points if answered in under 15 seconds
+      const speedBonus = Math.max(0, Math.floor(100 * (1 - timeTaken / 15000)));
       points += speedBonus;
     }
+    
+    const newTotalTime = myTotalTime + timeTaken;
+    setMyTotalTime(newTotalTime);
 
     // Save answer
     await supabase.from("battle_answers").insert({
@@ -291,7 +326,13 @@ const BattleRoom = () => {
 
   const isHost = user?.id === room?.host_id;
   const currentQuestion = battleQuestions[currentQuestionIndex];
-  const sortedParticipants = [...participants].sort((a, b) => b.score - a.score);
+  // Sort by answers correct first (primary), then by score which includes time bonus (secondary)
+  const sortedParticipants = [...participants].sort((a, b) => {
+    if (b.answers_correct !== a.answers_correct) {
+      return b.answers_correct - a.answers_correct; // More correct = higher rank
+    }
+    return b.score - a.score; // Tiebreaker: higher score (faster answers)
+  });
 
   if (loading) {
     return (

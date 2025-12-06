@@ -255,11 +255,12 @@ const BattleLobby = () => {
         </div>
 
         <div className="mt-8 p-4 bg-muted/50 rounded-lg">
-          <h3 className="font-semibold mb-2">How Scoring Works</h3>
+          <h3 className="font-semibold mb-2">Fair Battle System</h3>
           <ul className="text-sm text-muted-foreground space-y-1">
-            <li>• Correct answer: <span className="text-primary font-medium">100 base points</span></li>
-            <li>• Speed bonus: Up to <span className="text-primary font-medium">+50 points</span> for fast answers</li>
-            <li>• Wrong answer: <span className="text-destructive font-medium">0 points</span></li>
+            <li>• <span className="text-primary font-medium">Skill-matched questions</span>: Each player gets questions suited to their level</li>
+            <li>• Winner determined by <span className="text-primary font-medium">accuracy first</span> (most correct answers wins)</li>
+            <li>• Speed is a <span className="text-primary font-medium">tiebreaker</span>: faster answers earn small bonus points</li>
+            <li>• Correct answer: <span className="text-primary font-medium">1000 pts</span> + up to <span className="text-primary font-medium">100 pts</span> speed bonus</li>
           </ul>
         </div>
       </div>
