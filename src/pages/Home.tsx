@@ -133,20 +133,25 @@ const Home = () => {
         {/* Hero */}
         <div className="text-center space-y-4 py-6">
           {/* Math expressions floating around */}
-          <div className="relative flex justify-center items-center mb-6">
-            {/* Left expression */}
-            <span className="absolute -left-2 md:left-8 top-0 text-sm md:text-base font-mono text-primary/60 animate-pulse">
+          <div className="relative flex justify-center items-center mb-6 min-h-[120px]">
+            {/* Top left - 40² */}
+            <span className="absolute left-4 md:left-12 -top-2 text-sm md:text-base font-mono text-primary/50 animate-pulse">
               40²
             </span>
             
-            {/* Top expression - Sigma notation */}
-            <span className="absolute -top-6 text-xs md:text-sm font-mono text-accent/70" style={{ animationDelay: '0.5s' }}>
+            {/* Top right - Sigma notation */}
+            <span className="absolute right-4 md:right-12 -top-2 text-xs font-mono text-accent/50 animate-pulse" style={{ animationDelay: '0.3s' }}>
               <span className="inline-flex flex-col items-center leading-none">
-                <span className="text-[8px]">40</span>
-                <span className="text-base">Σ</span>
-                <span className="text-[8px]">k=1</span>
+                <span className="text-[7px]">40</span>
+                <span className="text-sm">Σ</span>
+                <span className="text-[7px]">k=1</span>
               </span>
-              <span className="align-middle">(2k-1)</span>
+              <span className="align-middle text-[10px]">(2k-1)</span>
+            </span>
+            
+            {/* Left middle - Base 12 */}
+            <span className="absolute -left-2 md:left-4 top-1/2 -translate-y-1/2 text-xs font-mono text-secondary/50 animate-pulse" style={{ animationDelay: '0.6s' }}>
+              B14₁₂
             </span>
             
             {/* Center - Main icon area with prime factorization */}
@@ -156,8 +161,18 @@ const Home = () => {
               </span>
             </div>
             
-            {/* Right expression */}
-            <span className="absolute -right-2 md:right-8 bottom-0 text-sm md:text-base font-mono text-secondary/60 animate-pulse" style={{ animationDelay: '1s' }}>
+            {/* Right middle - Sum of squares */}
+            <span className="absolute -right-2 md:right-4 top-1/2 -translate-y-1/2 text-xs font-mono text-primary/50 animate-pulse" style={{ animationDelay: '0.9s' }}>
+              32²+24²
+            </span>
+            
+            {/* Bottom left - Integral */}
+            <span className="absolute left-4 md:left-12 -bottom-2 text-xs font-mono text-accent/50 animate-pulse" style={{ animationDelay: '1.2s' }}>
+              ∫₀⁴⁰2x dx
+            </span>
+            
+            {/* Bottom right - Square root */}
+            <span className="absolute right-4 md:right-12 -bottom-2 text-xs font-mono text-secondary/50 animate-pulse" style={{ animationDelay: '1.5s' }}>
               √2560000
             </span>
           </div>
