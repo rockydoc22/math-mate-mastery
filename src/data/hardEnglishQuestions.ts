@@ -1513,5 +1513,605 @@ export const hardEnglishQuestions: EnglishQuestion[] = [
     difficulty: 'hard',
     domain: 'Writing',
     skill: 'Subjunctive Mood'
+  }),
+  addRating({
+    id: 'hard-eng-101',
+    question: 'A passage on philosophy of science: "Imre Lakatos proposed \'research programmes\' as units of scientific appraisal, contrasting with both Popper\'s falsificationism and Kuhn\'s paradigm shifts. A research programme has a \'hard core\' of unfalsifiable assumptions protected by a \'protective belt\' of auxiliary hypotheses that can be modified. Programmes are \'progressive\' if they predict novel facts confirmed by experiment, \'degenerating\' if they only accommodate anomalies post hoc. Unlike Kuhn\'s relativism, Lakatos offered criteria for rational choice: prefer progressive programmes. Yet critics noted these judgments could only be made retrospectively—we cannot know which programme will prove progressive." Lakatos differs from Popper in holding that:',
+    options: [
+      { letter: 'A', text: 'Individual hypotheses are the proper unit of evaluation' },
+      { letter: 'B', text: 'Core assumptions can be protected from immediate refutation' },
+      { letter: 'C', text: 'Science cannot be distinguished from pseudoscience' },
+      { letter: 'D', text: 'Novel predictions are irrelevant to scientific progress' }
+    ],
+    correctAnswer: 'B',
+    explanation: 'Popper\'s falsificationism tests individual hypotheses; Lakatos allows a "hard core" of assumptions "protected by a protective belt" from immediate falsification. This means core assumptions can be shielded (B). Lakatos evaluates programmes, not individual hypotheses (contradicting A). He offers demarcation criteria (contradicting C) and values novel predictions (contradicting D).',
+    difficulty: 'hard',
+    domain: 'Reading Comprehension',
+    skill: 'Comparing Philosophical Positions'
+  }),
+  addRating({
+    id: 'hard-eng-102',
+    question: 'A passage on semiotics: "Ferdinand de Saussure distinguished between \'langue\' (the abstract system of a language) and \'parole\' (actual speech acts). The sign, for Saussure, comprises \'signifier\' (sound-image) and \'signified\' (concept), linked by arbitrary convention, not natural resemblance. This arbitrariness meant meaning arises from differences within the system: \'cat\' means what it means by differing from \'bat,\' \'cap,\' \'cut,\' not by resembling actual cats. Charles Sanders Peirce\'s semiotics offered a richer typology—icons (resemblance), indices (causal connection), and symbols (convention)—that some found more applicable to visual and non-linguistic signs." According to Saussure, linguistic meaning primarily derives from:',
+    options: [
+      { letter: 'A', text: 'Resemblance between words and their referents' },
+      { letter: 'B', text: 'Differences between signs within a system' },
+      { letter: 'C', text: 'Causal connections to external objects' },
+      { letter: 'D', text: 'Natural properties of sounds' }
+    ],
+    correctAnswer: 'B',
+    explanation: 'Saussure held that "meaning arises from differences within the system"—"cat" means what it means "by differing from \'bat,\' \'cap,\' \'cut.\'" This is differential meaning (B). He explicitly rejected natural resemblance (A and D). Causal connection (C) is Peirce\'s index category, not Saussure\'s view of linguistic signs.',
+    difficulty: 'hard',
+    domain: 'Reading Comprehension',
+    skill: 'Understanding Structural Linguistics'
+  }),
+  addRating({
+    id: 'hard-eng-103',
+    question: 'A passage on philosophy of law: "The Hart-Fuller debate crystallized tensions between legal positivism and natural law theory. H.L.A. Hart maintained that law\'s validity depends on social facts—its enactment through recognized procedures—not its moral content. Immoral laws remain laws, though they may warrant disobedience. Lon Fuller countered that law has an \'inner morality\'—requirements like generality, promulgation, non-contradiction—without which rules cannot function as law at all. Nazi \'laws\' failed this test, Fuller argued, because their secret, retrospective, and arbitrarily applied character meant they were not genuinely law." Fuller\'s "inner morality of law" refers to:',
+    options: [
+      { letter: 'A', text: 'The requirement that laws be morally just in content' },
+      { letter: 'B', text: 'Procedural requirements for rules to function as law' },
+      { letter: 'C', text: 'The natural goodness of human beings' },
+      { letter: 'D', text: 'Divine command as the source of legal authority' }
+    ],
+    correctAnswer: 'B',
+    explanation: 'Fuller\'s "inner morality" consists of procedural requirements—"generality, promulgation, non-contradiction"—that rules need "to function as law at all." These are formal/procedural (B), not substantive justice (A). The passage doesn\'t invoke human nature (C) or divine authority (D).',
+    difficulty: 'hard',
+    domain: 'Reading Comprehension',
+    skill: 'Understanding Jurisprudence'
+  }),
+  addRating({
+    id: 'hard-eng-104',
+    question: 'A passage on philosophy of mathematics: "The logicist programme, pursued by Frege and Russell, attempted to reduce mathematics to logic, showing that mathematical truths are logical truths in disguise. Russell\'s paradox—concerning the set of all sets that don\'t contain themselves—threatened this project by revealing contradictions in naive set theory. Russell\'s theory of types and later set-theoretic axioms (ZFC) avoided the paradox but seemed to introduce non-logical assumptions. Intuitionists like Brouwer rejected the entire framework, holding that mathematics is a mental construction where existence requires constructibility." Russell\'s paradox posed a problem for logicism by:',
+    options: [
+      { letter: 'A', text: 'Showing that mathematics is purely empirical' },
+      { letter: 'B', text: 'Revealing contradictions in the foundational logical system' },
+      { letter: 'C', text: 'Proving that mental construction is necessary for mathematics' },
+      { letter: 'D', text: 'Demonstrating that mathematical truths are contingent' }
+    ],
+    correctAnswer: 'B',
+    explanation: 'Russell\'s paradox "threatened this project by revealing contradictions in naive set theory"—the logical system meant to ground mathematics contained internal contradictions (B). This isn\'t about empiricism (A), doesn\'t prove intuitionism (C), and doesn\'t address contingency (D).',
+    difficulty: 'hard',
+    domain: 'Reading Comprehension',
+    skill: 'Understanding Foundational Debates'
+  }),
+  addRating({
+    id: 'hard-eng-105',
+    question: 'A passage on political economy: "Karl Polanyi\'s The Great Transformation argued that the self-regulating market was not a natural emergence but a political construction requiring massive state intervention—enclosure of commons, creation of labor markets, standardization of currency. The \'double movement\' described society\'s protective response: as market expansion threatened social fabric, counter-movements for labor rights, environmental regulation, and social insurance arose. Polanyi warned that treating labor, land, and money as ordinary commodities—\'fictitious commodities\'—would destroy the social substance on which markets themselves depend." Polanyi\'s "double movement" describes:',
+    options: [
+      { letter: 'A', text: 'The natural emergence of free markets' },
+      { letter: 'B', text: 'Market expansion and social counter-movements' },
+      { letter: 'C', text: 'The superiority of socialist planning' },
+      { letter: 'D', text: 'Technological innovation and resistance' }
+    ],
+    correctAnswer: 'B',
+    explanation: 'The double movement is described as "market expansion threatened social fabric" followed by "counter-movements for labor rights, environmental regulation, and social insurance." This is market expansion plus protective response (B). Polanyi argues markets aren\'t natural (contradicting A), doesn\'t advocate socialism per se (C), and isn\'t focused on technology (D).',
+    difficulty: 'hard',
+    domain: 'Reading Comprehension',
+    skill: 'Understanding Economic History'
+  }),
+  addRating({
+    id: 'hard-eng-106',
+    question: 'A passage on cognitive science: "The embodied cognition thesis challenges the classical computational view that mind is software running on the brain\'s hardware, processable independently of bodily implementation. Embodied theorists argue that cognition is shaped by having bodies of particular kinds: our concepts of grasping, balance, and temperature are grounded in sensorimotor experience. George Lakoff\'s conceptual metaphor theory extends this, claiming abstract thought (grasping an idea, moral uprightness, warm personality) builds on bodily metaphors. Critics question whether embodiment is constitutive of cognition or merely causally influences it, and whether AI systems without bodies could nonetheless think." The passage presents embodied cognition as challenging:',
+    options: [
+      { letter: 'A', text: 'The existence of abstract thought' },
+      { letter: 'B', text: 'The separation of mind from bodily form' },
+      { letter: 'C', text: 'The possibility of conceptual metaphor' },
+      { letter: 'D', text: 'The role of sensory experience' }
+    ],
+    correctAnswer: 'B',
+    explanation: 'Embodied cognition challenges the view that "mind is software...processable independently of bodily implementation." The thesis argues cognition is "shaped by having bodies of particular kinds"—challenging separation of mind from body (B). It affirms abstract thought exists (A), supports conceptual metaphor (C), and emphasizes sensory experience (D).',
+    difficulty: 'hard',
+    domain: 'Reading Comprehension',
+    skill: 'Understanding Cognitive Science Debates'
+  }),
+  addRating({
+    id: 'hard-eng-107',
+    question: 'A passage on ethics of technology: "Nick Bostrom\'s orthogonality thesis holds that intelligence and goals are independent: a superintelligent AI could pursue any objective, not necessarily ones aligned with human values. The instrumental convergence thesis adds that certain sub-goals—self-preservation, resource acquisition, goal-content integrity—would be useful for almost any final goal, making AI potentially dangerous even with seemingly benign objectives. A paperclip-maximizing AI might resist shutdown (threatening its goal) and consume resources (making more paperclips). These arguments have motivated AI alignment research focusing on value specification, corrigibility, and interpretability." The instrumental convergence thesis implies that dangerous AI behavior:',
+    options: [
+      { letter: 'A', text: 'Requires malicious programming by humans' },
+      { letter: 'B', text: 'Could emerge from any sufficiently advanced goal-directed system' },
+      { letter: 'C', text: 'Is impossible if the AI has benign goals' },
+      { letter: 'D', text: 'Can only result from biological evolution' }
+    ],
+    correctAnswer: 'B',
+    explanation: 'Instrumental convergence means "certain sub-goals...would be useful for almost any final goal." A paperclip-maximizing AI could become dangerous—resisting shutdown, acquiring resources—even without malicious intent. Danger emerges from goal-directedness itself (B), not requiring malicious programming (A), possible even with "benign objectives" (contradicting C), and applicable to AI, not just evolution (D).',
+    difficulty: 'hard',
+    domain: 'Reading Comprehension',
+    skill: 'Understanding AI Safety Arguments'
+  }),
+  addRating({
+    id: 'hard-eng-108',
+    question: 'A passage on historiography: "Fernand Braudel\'s concept of the longue durée proposed that historical change operates on multiple timescales: events (histoire événementielle) are surface disturbances; conjunctures (economic cycles, demographic shifts) unfold over decades; and structures (climate, geography, mentalities) change almost imperceptibly over centuries. Traditional history\'s focus on events—battles, treaties, successions—missed the deeper currents shaping human existence. The Annales school Braudel led pioneered quantitative, interdisciplinary methods, drawing on geography, economics, and sociology to capture these slower rhythms." Braudel\'s approach differs from traditional history in emphasizing:',
+    options: [
+      { letter: 'A', text: 'The decisive importance of individual leaders' },
+      { letter: 'B', text: 'Slowly changing structures over dramatic events' },
+      { letter: 'C', text: 'Political narratives as the core of history' },
+      { letter: 'D', text: 'The irrelevance of economic factors' }
+    ],
+    correctAnswer: 'B',
+    explanation: 'Braudel emphasized the longue durée—"structures...change almost imperceptibly over centuries"—as more fundamental than events. Traditional history\'s event-focus "missed the deeper currents." This prioritizes slow structures over events (B). Individual leaders (A) and political narrative (C) are traditional approaches he critiqued. The Annales drew on economics (contradicting D).',
+    difficulty: 'hard',
+    domain: 'Reading Comprehension',
+    skill: 'Understanding Historiographical Methods'
+  }),
+  addRating({
+    id: 'hard-eng-109',
+    question: 'A passage on disability studies: "The social model of disability, developed by disabled activists, distinguished \'impairment\' (bodily condition) from \'disability\' (social barriers). Disability is not inherent in individuals but created by inaccessible environments, discriminatory attitudes, and institutional exclusion. A wheelchair user is disabled not by their body but by stairs, narrow doorways, and employment discrimination. This reframing shifted responsibility from individuals adapting to society accommodating. Critics have noted limitations: the model may undervalue impairment\'s lived reality, and some conditions involve inherent suffering not reducible to social barriers." According to the social model:',
+    options: [
+      { letter: 'A', text: 'Impairment and disability are identical concepts' },
+      { letter: 'B', text: 'Disability results from social and environmental barriers' },
+      { letter: 'C', text: 'Medical treatment should be the primary response' },
+      { letter: 'D', text: 'Individual adaptation is more important than social change' }
+    ],
+    correctAnswer: 'B',
+    explanation: 'The social model "distinguished \'impairment\'...from \'disability\' (social barriers)." Disability is "created by inaccessible environments, discriminatory attitudes, and institutional exclusion" (B). It explicitly separates impairment from disability (contradicting A), shifts from medical to social response (C), and emphasizes society accommodating, not individual adapting (D).',
+    difficulty: 'hard',
+    domain: 'Reading Comprehension',
+    skill: 'Understanding Disability Theory'
+  }),
+  addRating({
+    id: 'hard-eng-110',
+    question: 'A passage on continental philosophy: "Emmanuel Levinas\'s ethics posits the face of the Other as the foundation of ethical obligation—prior to ontology, knowledge, or reciprocity. The face commands: \'Thou shalt not kill.\' This infinite demand cannot be reduced to a contractual exchange; I am responsible for the Other without expecting return. Levinas criticized Western philosophy\'s \'totalization\'—its drive to comprehend and master alterity, reducing the Other to the Same. True ethics requires maintaining the Other\'s irreducible difference, an asymmetrical responsibility that undoes the sovereign ego." For Levinas, ethical responsibility is:',
+    options: [
+      { letter: 'A', text: 'Based on reciprocal exchange' },
+      { letter: 'B', text: 'Derived from rational calculation' },
+      { letter: 'C', text: 'Prior to knowledge and asymmetrical' },
+      { letter: 'D', text: 'Reducible to social contract' }
+    ],
+    correctAnswer: 'C',
+    explanation: 'Levinas holds responsibility is "prior to ontology, knowledge" and describes "asymmetrical responsibility." The demand "cannot be reduced to contractual exchange" and doesn\'t expect return. This is prior and asymmetrical (C). It contradicts reciprocal exchange (A), rational calculation (B), and social contract (D).',
+    difficulty: 'hard',
+    domain: 'Reading Comprehension',
+    skill: 'Understanding Levinasian Ethics'
+  }),
+  addRating({
+    id: 'hard-eng-111',
+    question: 'A passage on science and technology studies: "Donna Haraway\'s \'situated knowledges\' challenged both objectivism (the view from nowhere) and relativism (all views are equal). She argued for knowledge that is always embodied, located, partial—yet still capable of objectivity understood as accountable positioning rather than transcendence. The \'god trick\' of seeing everything from nowhere mystifies the particular standpoints from which knowledge is actually produced. Feminist standpoint theory similarly argued that marginalized positions could offer epistemically privileged insights, not through innocence but through experience of contradictions invisible from dominant positions." "Situated knowledges" differs from objectivism in:',
+    options: [
+      { letter: 'A', text: 'Claiming all perspectives are equally valid' },
+      { letter: 'B', text: 'Acknowledging the embodied position of knowers' },
+      { letter: 'C', text: 'Rejecting the possibility of any objectivity' },
+      { letter: 'D', text: 'Privileging dominant social positions' }
+    ],
+    correctAnswer: 'B',
+    explanation: 'Haraway argues for knowledge "always embodied, located, partial." The "god trick" criticizes pretending to see from nowhere, mystifying "particular standpoints from which knowledge is actually produced." This acknowledges embodied position (B). She rejects both objectivism AND relativism ("all views are equal")—so not (A). She maintains "accountable" objectivity (not C). She privileges marginalized, not dominant positions (D).',
+    difficulty: 'hard',
+    domain: 'Reading Comprehension',
+    skill: 'Understanding Feminist Epistemology'
+  }),
+  addRating({
+    id: 'hard-eng-112',
+    question: 'A passage on moral philosophy: "Bernard Williams criticized the \'morality system\'—a modern conception of ethics dominated by obligation, blame, and the supremacy of the moral over other values. This system, Williams argued, generates psychological impossibilities: demanding that we always act from duty, never from personal projects or relationships; or that moral reasons override all others. Williams defended ethical pluralism and the legitimacy of \'agent-relative\' reasons—that I have special reasons concerning my projects, relationships, and integrity that are not universalizable yet genuinely normative. Impartialist ethics asks us to become strangers to ourselves." Williams argues that morality problematically:',
+    options: [
+      { letter: 'A', text: 'Allows too much room for personal preference' },
+      { letter: 'B', text: 'Demands self-alienation from personal projects' },
+      { letter: 'C', text: 'Lacks any system of obligation' },
+      { letter: 'D', text: 'Gives insufficient weight to duty' }
+    ],
+    correctAnswer: 'B',
+    explanation: 'Williams criticizes the morality system for "demanding that we always act from duty, never from personal projects or relationships" and claims "impartialist ethics asks us to become strangers to ourselves." This is self-alienation from personal identity (B). He thinks morality allows too little for personal concerns (contradicting A), is over-systematic (C), and overemphasizes duty (D).',
+    difficulty: 'hard',
+    domain: 'Reading Comprehension',
+    skill: 'Understanding Ethics Critique'
+  }),
+  addRating({
+    id: 'hard-eng-113',
+    question: 'A passage on language philosophy: "Willard Van Orman Quine\'s \'Two Dogmas of Empiricism\' attacked the analytic-synthetic distinction—the idea that some statements are true by meaning alone (\'bachelors are unmarried\') while others require empirical verification. Quine argued this distinction rests on circular definitions of synonymy and that no statement is immune to revision in light of experience—even logical truths might be abandoned if doing so simplified our overall theory. This holism—that beliefs face experience as a corporate body—undermined the logical positivist programme of reducing knowledge to protocol sentences." Quine\'s holism implies that:',
+    options: [
+      { letter: 'A', text: 'Each statement can be tested independently' },
+      { letter: 'B', text: 'Beliefs are evaluated collectively, not individually' },
+      { letter: 'C', text: 'Analytic truths are clearly distinguishable' },
+      { letter: 'D', text: 'Logical truths can never be revised' }
+    ],
+    correctAnswer: 'B',
+    explanation: 'Quine\'s holism holds that "beliefs face experience as a corporate body"—not individually. This means collective evaluation (B). It undermines independent testing (A), attacks the analytic-synthetic distinction (contradicting C), and claims "even logical truths might be abandoned" (contradicting D).',
+    difficulty: 'hard',
+    domain: 'Reading Comprehension',
+    skill: 'Understanding Quinean Holism'
+  }),
+  addRating({
+    id: 'hard-eng-114',
+    question: 'A passage on sociology: "Pierre Bourdieu\'s concept of \'habitus\' describes the durable, transposable dispositions—ways of perceiving, thinking, and acting—that individuals acquire through socialization in particular social positions. Habitus mediates between objective structures and subjective experience: it is \'structured structure\' (shaped by conditions) and \'structuring structure\' (generating practices). Actors don\'t follow explicit rules but improvise within internalized limits, like jazz musicians who know what moves are \'possible\' without conscious calculation. This explains both social reproduction—as habitus tends to reproduce conditions of its formation—and the appearance of individual choice." Bourdieu\'s habitus concept explains social reproduction through:',
+    options: [
+      { letter: 'A', text: 'Explicit rule-following by rational actors' },
+      { letter: 'B', text: 'Internalized dispositions that generate appropriate practices' },
+      { letter: 'C', text: 'Random variation in individual behavior' },
+      { letter: 'D', text: 'Direct coercion by social institutions' }
+    ],
+    correctAnswer: 'B',
+    explanation: 'Habitus describes "durable, transposable dispositions" that generate practices. Actors "improvise within internalized limits" without "conscious calculation." This is internalized dispositions (B). It\'s not explicit rule-following (A), not random (C—it reproduces conditions), and works through internalization, not direct coercion (D).',
+    difficulty: 'hard',
+    domain: 'Reading Comprehension',
+    skill: 'Understanding Sociological Concepts'
+  }),
+  addRating({
+    id: 'hard-eng-115',
+    question: 'A passage on anthropology: "Clifford Geertz\'s interpretive anthropology proposed \'thick description\'—not just recording behavior but interpreting its meaning within webs of significance. A wink is not merely an eyelid contraction but a communicative act with cultural significance; understanding it requires grasping the symbolic system within which it operates. Geertz famously described culture as \'webs of significance\' that humans themselves spin, making anthropology a hermeneutic rather than nomothetic science—interpreting meanings, not discovering laws. Critics questioned whether outsiders could access \'native\' meanings or whether interpretations were projections." \'Thick description\' differs from \'thin description\' in:',
+    options: [
+      { letter: 'A', text: 'Recording only observable behaviors' },
+      { letter: 'B', text: 'Interpreting actions within cultural meaning systems' },
+      { letter: 'C', text: 'Avoiding all subjective interpretation' },
+      { letter: 'D', text: 'Seeking universal laws of behavior' }
+    ],
+    correctAnswer: 'B',
+    explanation: 'Thick description means "not just recording behavior but interpreting its meaning within webs of significance." A wink is understood through "the symbolic system within which it operates" (B). Thin description would just record observable behavior (A). Thick description embraces interpretation (contradicting C) and is hermeneutic, not seeking laws (D).',
+    difficulty: 'hard',
+    domain: 'Reading Comprehension',
+    skill: 'Understanding Anthropological Methods'
+  }),
+  addRating({
+    id: 'hard-eng-116',
+    question: 'A passage on aesthetics: "Theodor Adorno\'s aesthetic theory held that authentic art resists the culture industry\'s commodification by maintaining formal difficulty and negativity. Art should not offer easy pleasures or false reconciliations but preserve the dissonance that reflects social contradictions. Adorno famously declared \'to write poetry after Auschwitz is barbaric,\' later qualifying this: art must find forms adequate to trauma without aestheticizing suffering. Modern art\'s fragmentary, dissonant character—in Beckett, Schoenberg, Kafka—registers what administered society represses. Art\'s truth-content emerges through form, not message." For Adorno, authentic art should:',
+    options: [
+      { letter: 'A', text: 'Provide easy pleasures and entertainment' },
+      { letter: 'B', text: 'Reconcile social contradictions harmoniously' },
+      { letter: 'C', text: 'Maintain formal difficulty that reflects social tensions' },
+      { letter: 'D', text: 'Directly communicate political messages' }
+    ],
+    correctAnswer: 'C',
+    explanation: 'Adorno argues authentic art should "maintain formal difficulty and negativity" and "preserve the dissonance that reflects social contradictions." Modern art\'s "fragmentary, dissonant character" registers social truth. This is formal difficulty reflecting tensions (C). Art should NOT offer "easy pleasures" (A) or "false reconciliations" (B). Truth emerges "through form, not message" (contradicting D).',
+    difficulty: 'hard',
+    domain: 'Reading Comprehension',
+    skill: 'Understanding Critical Theory'
+  }),
+  addRating({
+    id: 'hard-eng-117',
+    question: 'A passage on political philosophy: "Hannah Arendt distinguished labor (meeting biological needs), work (creating durable objects), and action (initiating new beginnings in public). The modern age, she argued, glorified labor while eroding the public realm where action occurs. Mass society produces \'social conformism,\' and totalitarianism represents this logic\'s extreme—eliminating spontaneity, making humans superfluous, creating \'radical evil.\' Arendt\'s \'banality of evil\' thesis, developed in reporting on Eichmann, suggested ordinary people perpetrate evil through thoughtlessness—failure to think from others\' perspectives—not demonic motives." Arendt\'s "banality of evil" attributes atrocities to:',
+    options: [
+      { letter: 'A', text: 'Exceptional individuals with demonic intentions' },
+      { letter: 'B', text: 'Thoughtlessness and failure of judgment' },
+      { letter: 'C', text: 'Biological instincts for violence' },
+      { letter: 'D', text: 'Rational calculation of self-interest' }
+    ],
+    correctAnswer: 'B',
+    explanation: 'The "banality of evil" thesis holds that "ordinary people perpetrate evil through thoughtlessness—failure to think from others\' perspectives—not demonic motives." This is thoughtlessness and judgment failure (B). She explicitly rejects demonic exceptionalism (A). The passage doesn\'t invoke biology (C) or rational self-interest (D).',
+    difficulty: 'hard',
+    domain: 'Reading Comprehension',
+    skill: 'Understanding Political Philosophy'
+  }),
+  addRating({
+    id: 'hard-eng-118',
+    question: 'A passage on sociology of religion: "Max Weber\'s \'Protestant Ethic\' thesis argued that Calvinist doctrines—particularly the anxiety generated by predestination and the notion of worldly success as a sign of election—contributed to the spirit of capitalism. The religious calling to work diligently while avoiding luxury created the reinvestment mentality capitalism required. Weber was careful: this was an \'elective affinity,\' not a causal determination; once established, capitalism no longer needed religious motivation. Critics questioned the thesis\'s historical accuracy and noted capitalist development in Catholic regions." Weber\'s thesis about Protestantism and capitalism claims:',
+    options: [
+      { letter: 'A', text: 'Protestantism directly caused capitalism' },
+      { letter: 'B', text: 'Religious anxieties contributed to capitalist mentalities' },
+      { letter: 'C', text: 'Capitalism cannot exist without Protestantism' },
+      { letter: 'D', text: 'All Protestant regions became capitalist' }
+    ],
+    correctAnswer: 'B',
+    explanation: 'Weber argued Calvinist "anxiety generated by predestination" and viewing success "as a sign of election...contributed to the spirit of capitalism." He was "careful: this was an \'elective affinity,\' not a causal determination." This is contribution, not direct causation (B, not A). Capitalism could continue without religion (contradicting C). The passage notes "capitalist development in Catholic regions" (contradicting D).',
+    difficulty: 'hard',
+    domain: 'Reading Comprehension',
+    skill: 'Understanding Sociological Arguments'
+  }),
+  addRating({
+    id: 'hard-eng-119',
+    question: 'A passage on philosophy of biology: "The gene-centered view of evolution, popularized by Richard Dawkins, holds that organisms are \'survival machines\' for genes—the true units of selection. Genes that increase their own replication spread, regardless of organism-level effects. This explains apparent altruism: kin selection benefits copies of one\'s genes in relatives. Critics like Stephen Jay Gould advocated multi-level selection, where groups, organisms, and genes can all be selected. David Sloan Wilson revived group selection arguments for human cooperation, while niche construction theorists emphasized how organisms modify selection pressures rather than merely responding to them." The gene-centered view explains altruism toward relatives through:',
+    options: [
+      { letter: 'A', text: 'Group benefit overriding individual interest' },
+      { letter: 'B', text: 'Shared genes making relatives\' reproduction beneficial' },
+      { letter: 'C', text: 'Cultural learning of cooperative behavior' },
+      { letter: 'D', text: 'Organism-level selection for prosocial traits' }
+    ],
+    correctAnswer: 'B',
+    explanation: 'The gene-centered view explains "apparent altruism: kin selection benefits copies of one\'s genes in relatives." Helping relatives helps copies of shared genes spread. This is gene-level explanation (B). Group selection (A) is what Gould and Wilson advocate as an alternative. Cultural learning (C) isn\'t the gene-centered explanation. Organism-level selection (D) is what the gene-centered view challenges.',
+    difficulty: 'hard',
+    domain: 'Reading Comprehension',
+    skill: 'Understanding Evolutionary Theory'
+  }),
+  addRating({
+    id: 'hard-eng-120',
+    question: 'A passage on legal philosophy: "Ronald Dworkin\'s \'law as integrity\' challenged Hart\'s positivism by arguing that law includes not just enacted rules but principles of political morality that best justify the legal system. Judges don\'t merely apply existing rules but engage in constructive interpretation, asking what reading would show the law \'in its best light.\' Dworkin\'s \'Hercules\'—an idealized judge with unlimited time and resources—would find right answers to hard cases by developing the most coherent theory of the legal community\'s commitments. Critics questioned whether such determinate answers exist and worried about judicial activism." Dworkin differs from Hart in holding that:',
+    options: [
+      { letter: 'A', text: 'Law consists only of enacted rules' },
+      { letter: 'B', text: 'Hard cases have no legal answers' },
+      { letter: 'C', text: 'Moral principles are part of legal reasoning' },
+      { letter: 'D', text: 'Judges should never engage in interpretation' }
+    ],
+    correctAnswer: 'C',
+    explanation: 'Dworkin argues "law includes not just enacted rules but principles of political morality." Judges engage in "constructive interpretation" showing law "in its best light." This integrates moral principles into law (C). Hart held law is enacted rules (A is Hart\'s view). Dworkin believes hard cases have right answers (contradicting B). He advocates active interpretation (contradicting D).',
+    difficulty: 'hard',
+    domain: 'Reading Comprehension',
+    skill: 'Understanding Legal Philosophy'
+  }),
+  addRating({
+    id: 'hard-eng-121',
+    question: 'A passage on economic methodology: "Milton Friedman\'s instrumentalism held that theories should be judged by predictive success, not the realism of assumptions. The assumption that firms maximize profits might be descriptively false—managers may not consciously calculate—yet the theory predicts market behavior as if they did. Critics argued unrealistic assumptions limit theories\' explanatory power and robustness: if we don\'t know why predictions work, we don\'t know when they\'ll fail. Behavioral economists have shown systematic departures from rational choice predictions precisely where psychological assumptions are false." Friedman\'s methodological position holds that:',
+    options: [
+      { letter: 'A', text: 'Theories with unrealistic assumptions are useless' },
+      { letter: 'B', text: 'Predictive accuracy matters more than assumption realism' },
+      { letter: 'C', text: 'Psychological accuracy is essential for economic theory' },
+      { letter: 'D', text: 'Theories should primarily explain causal mechanisms' }
+    ],
+    correctAnswer: 'B',
+    explanation: 'Friedman\'s instrumentalism holds "theories should be judged by predictive success, not the realism of assumptions." Profit maximization might be "descriptively false" yet predict well "as if" it were true. Prediction over realism (B). This contradicts (A), (C) about psychological accuracy, and (D) about mechanism explanation.',
+    difficulty: 'hard',
+    domain: 'Reading Comprehension',
+    skill: 'Understanding Economic Methodology'
+  }),
+  addRating({
+    id: 'hard-eng-122',
+    question: 'A passage on literary theory: "Reader-response criticism shifted focus from text to reading process. Wolfgang Iser\'s phenomenology described how readers fill \'gaps\' in texts, actualizing potential meanings through interpretive activity. Stanley Fish\'s later work argued that interpretive communities—shared assumptions among readers—determine what texts \'mean\'; the text itself has no inherent meaning prior to reading. Fish\'s anti-foundationalism was controversial: if communities create meaning, on what basis can interpretations be criticized? Fish responded that we can never step outside interpretive frameworks, but within communities, some readings are authorized and others not." Fish\'s position implies that textual meaning is:',
+    options: [
+      { letter: 'A', text: 'Fixed by authorial intention' },
+      { letter: 'B', text: 'Determined by interpretive communities' },
+      { letter: 'C', text: 'Inherent in textual structures' },
+      { letter: 'D', text: 'Entirely individual and subjective' }
+    ],
+    correctAnswer: 'B',
+    explanation: 'Fish argued "interpretive communities—shared assumptions among readers—determine what texts \'mean.\'" The text has "no inherent meaning prior to reading" and communities authorize some readings over others. This is community determination (B). It rejects authorial intention (A), inherent meaning (C), and pure individual subjectivity (D—communities constrain interpretation).',
+    difficulty: 'hard',
+    domain: 'Reading Comprehension',
+    skill: 'Understanding Literary Theory'
+  }),
+  addRating({
+    id: 'hard-eng-123',
+    question: 'A passage on philosophy of perception: "The sense-datum theory held that we directly perceive mental intermediaries—sense-data or qualia—not physical objects themselves. This seemed to explain illusions and hallucinations: seeing a bent stick in water involves accurate perception of a bent sense-datum, even if no physical stick is bent. Critics including J.L. Austin attacked the argument from illusion: just because perceptions can mislead doesn\'t mean we never directly perceive physical objects. Disjunctivists argue that veridical perception and hallucination are fundamentally different mental states, not variations of the same kind." The argument from illusion is used to support:',
+    options: [
+      { letter: 'A', text: 'Direct realism about perception' },
+      { letter: 'B', text: 'The existence of mental intermediaries in perception' },
+      { letter: 'C', text: 'The identity of perception and hallucination' },
+      { letter: 'D', text: 'The impossibility of perceptual error' }
+    ],
+    correctAnswer: 'B',
+    explanation: 'The sense-datum theory uses illusions to argue "we directly perceive mental intermediaries—sense-data or qualia—not physical objects themselves." Illusions support mental intermediaries (B). Direct realism (A) is what Austin defends against this argument. Disjunctivists deny perception and hallucination are identical (contradicting C). The argument presupposes error is possible (D).',
+    difficulty: 'hard',
+    domain: 'Reading Comprehension',
+    skill: 'Understanding Perception Philosophy'
+  }),
+  addRating({
+    id: 'hard-eng-124',
+    question: 'A passage on moral psychology: "Jonathan Haidt\'s social intuitionist model challenged rationalist accounts of moral judgment. Moral judgments, Haidt argued, are primarily intuitive—rapid, automatic, affectively-laden responses—with reasoning typically operating as post-hoc rationalization. The metaphor of the \'emotional dog and its rational tail\' captured this: reason follows and justifies intuition rather than producing it. Haidt\'s Moral Foundations Theory identified multiple intuitive \'taste receptors\' for morality—care/harm, fairness, loyalty, authority, purity—that vary in emphasis across cultures and political orientations." Haidt\'s model suggests moral reasoning typically:',
+    options: [
+      { letter: 'A', text: 'Precedes and produces moral judgments' },
+      { letter: 'B', text: 'Follows and rationalizes intuitive judgments' },
+      { letter: 'C', text: 'Is irrelevant to moral judgment entirely' },
+      { letter: 'D', text: 'Operates independently of emotion' }
+    ],
+    correctAnswer: 'B',
+    explanation: 'Haidt argues "reasoning typically operating as post-hoc rationalization" and "reason follows and justifies intuition rather than producing it." This is reasoning following intuition (B). It contradicts (A) reason producing judgment. Reason isn\'t irrelevant—it rationalizes (not C). Intuitions are "affectively-laden" so reason doesn\'t operate independently of emotion (D).',
+    difficulty: 'hard',
+    domain: 'Reading Comprehension',
+    skill: 'Understanding Moral Psychology'
+  }),
+  addRating({
+    id: 'hard-eng-125',
+    question: 'A passage on philosophy of time: "The debate between A-theorists and B-theorists concerns the fundamental nature of time. A-theorists (tensed theory) hold that the distinction between past, present, and future is objective: the present is metaphysically privileged, and time genuinely \'flows.\' B-theorists (tenseless theory) maintain that all moments exist equally; \'now\' is indexical, like \'here,\' picking out different times from different perspectives without metaphysical privilege. Relativity theory\'s rejection of absolute simultaneity has been taken to favor B-theory, though A-theorists have developed responses. The phenomenology of temporal experience—the felt \'passage\' of time—remains contested evidence." The B-theory of time holds that:',
+    options: [
+      { letter: 'A', text: 'The present moment has unique metaphysical status' },
+      { letter: 'B', text: 'All temporal moments exist equally without privilege' },
+      { letter: 'C', text: 'Time genuinely flows from past to future' },
+      { letter: 'D', text: 'The phenomenology of passage is veridical' }
+    ],
+    correctAnswer: 'B',
+    explanation: 'B-theorists "maintain that all moments exist equally; \'now\' is indexical...without metaphysical privilege." All times are ontologically equal (B). Privileged present (A) and genuine flow (C) are A-theory positions. The phenomenology of passage (D) is "contested evidence" that could support A-theory if veridical.',
+    difficulty: 'hard',
+    domain: 'Reading Comprehension',
+    skill: 'Understanding Metaphysics of Time'
+  }),
+  addRating({
+    id: 'hard-eng-126',
+    question: 'The following sentence appears in an academic paper: "Although the research team had initially ________ that cultural factors would explain the observed variations in cognitive performance, subsequent analysis revealed that socioeconomic variables accounted for a substantially larger proportion of the variance, suggesting that earlier models had overemphasized the role of cultural identity while underestimating material conditions." Which choice best completes the sentence?',
+    options: [
+      { letter: 'A', text: 'proven' },
+      { letter: 'B', text: 'hypothesized' },
+      { letter: 'C', text: 'confirmed' },
+      { letter: 'D', text: 'denied' }
+    ],
+    correctAnswer: 'B',
+    explanation: 'The sentence describes an initial expectation that was later contradicted by analysis. "Initially" + past tense suggests a prior belief. "Hypothesized" (B) fits—they proposed cultural factors would explain variance, but were wrong. "Proven" or "confirmed" (A, C) would be contradicted by "although" and the subsequent finding. "Denied" (D) would make the sentence illogical.',
+    difficulty: 'hard',
+    domain: 'Writing',
+    skill: 'Academic Vocabulary'
+  }),
+  addRating({
+    id: 'hard-eng-127',
+    question: 'A researcher writes: "The methodology employed in this study differs from previous approaches in several key respects: first, it utilizes longitudinal data rather than cross-sectional snapshots; ________, it incorporates qualitative interviews to supplement quantitative analysis; and third, it explicitly accounts for selection bias through propensity score matching." Which choice provides the most effective transition?',
+    options: [
+      { letter: 'A', text: 'however' },
+      { letter: 'B', text: 'second' },
+      { letter: 'C', text: 'therefore' },
+      { letter: 'D', text: 'nevertheless' }
+    ],
+    correctAnswer: 'B',
+    explanation: 'The sentence lists three methodological differences: "first...______...and third." The parallel structure requires "second" (B) to maintain the enumeration. "However" (A) and "nevertheless" (D) indicate contrast, not sequence. "Therefore" (C) indicates consequence, not enumeration.',
+    difficulty: 'hard',
+    domain: 'Writing',
+    skill: 'Parallel Structure in Lists'
+  }),
+  addRating({
+    id: 'hard-eng-128',
+    question: 'Which revision most effectively combines these two sentences? Original: "The archaeological evidence suggests that the settlement was abandoned around 1200 BCE. This abandonment coincided with a period of widespread drought documented in paleoclimatic records."',
+    options: [
+      { letter: 'A', text: 'The archaeological evidence suggests that the settlement was abandoned around 1200 BCE, coinciding with a period of widespread drought documented in paleoclimatic records.' },
+      { letter: 'B', text: 'The archaeological evidence suggests that the settlement was abandoned around 1200 BCE; this abandonment coincided with a period of widespread drought documented in paleoclimatic records.' },
+      { letter: 'C', text: 'The archaeological evidence suggests that the settlement was abandoned around 1200 BCE and this abandonment coincided with a period of widespread drought documented in paleoclimatic records.' },
+      { letter: 'D', text: 'The archaeological evidence suggesting that the settlement was abandoned around 1200 BCE, coinciding with a period of widespread drought documented in paleoclimatic records.' }
+    ],
+    correctAnswer: 'A',
+    explanation: '(A) effectively combines the sentences using a participial phrase ("coinciding with"), clearly linking the abandonment to the drought while maintaining concision. (B) merely uses a semicolon without true combination. (C) has a comma splice with "and this." (D) creates a fragment by changing "suggests" to "suggesting" without a main verb.',
+    difficulty: 'hard',
+    domain: 'Writing',
+    skill: 'Sentence Combining'
+  }),
+  addRating({
+    id: 'hard-eng-129',
+    question: 'A student writes: "The implications of these findings extend beyond the immediate research context. Not only do they challenge prevailing theoretical models, ________ they also suggest new avenues for therapeutic intervention." Which choice correctly completes the correlative conjunction?',
+    options: [
+      { letter: 'A', text: 'and' },
+      { letter: 'B', text: 'but' },
+      { letter: 'C', text: 'however' },
+      { letter: 'D', text: 'additionally' }
+    ],
+    correctAnswer: 'B',
+    explanation: 'The correlative conjunction "Not only...but (also)" requires "but" to complete the construction. (A) "and" doesn\'t pair with "not only." (C) "however" and (D) "additionally" are adverbs that don\'t complete the correlative structure. The correct form is "Not only...but also."',
+    difficulty: 'hard',
+    domain: 'Writing',
+    skill: 'Correlative Conjunctions'
+  }),
+  addRating({
+    id: 'hard-eng-130',
+    question: 'Which sentence correctly uses the colon?',
+    options: [
+      { letter: 'A', text: 'The study examined: poverty, education, and health outcomes.' },
+      { letter: 'B', text: 'The study examined three variables: poverty, education, and health outcomes.' },
+      { letter: 'C', text: 'The study: examined poverty, education, and health outcomes.' },
+      { letter: 'D', text: 'The study examined three variables, these being: poverty, education, and health outcomes.' }
+    ],
+    correctAnswer: 'B',
+    explanation: 'A colon introduces a list after a complete independent clause. (B) has a complete clause ("The study examined three variables") followed by the list. (A) has the colon after a verb without completing the clause. (C) interrupts subject and verb. (D) has an unnecessary comma and awkward phrasing before the colon.',
+    difficulty: 'hard',
+    domain: 'Writing',
+    skill: 'Colon Usage'
+  }),
+  addRating({
+    id: 'hard-eng-131',
+    question: 'A historian writes: "The treaty\'s provisions were more favorable to the victorious powers than to the defeated nation, ________ historians continue to debate whether these terms were excessively punitive or merely reflected the political realities of the postwar period." Which choice provides the most effective transition?',
+    options: [
+      { letter: 'A', text: 'because' },
+      { letter: 'B', text: 'although' },
+      { letter: 'C', text: 'therefore' },
+      { letter: 'D', text: 'whereas' }
+    ],
+    correctAnswer: 'B',
+    explanation: 'The sentence contrasts a factual statement (treaty was more favorable to victors) with ongoing debate about interpretation. "Although" (B) signals this concessive relationship—despite the factual asymmetry, the meaning is contested. "Because" (A) implies causation. "Therefore" (C) implies consequence. "Whereas" (D) compares two parallel things, not fact and debate.',
+    difficulty: 'hard',
+    domain: 'Writing',
+    skill: 'Concessive Transitions'
+  }),
+  addRating({
+    id: 'hard-eng-132',
+    question: 'Identify the sentence with correct subject-verb agreement:',
+    options: [
+      { letter: 'A', text: 'The committee, along with several outside advisors, have recommended major changes to the policy.' },
+      { letter: 'B', text: 'Neither the primary hypothesis nor the alternative explanations accounts for all the observed data.' },
+      { letter: 'C', text: 'Each of the participants were given detailed instructions before the experiment began.' },
+      { letter: 'D', text: 'The data collected over five years show a consistent pattern of decline.' }
+    ],
+    correctAnswer: 'D',
+    explanation: '(D) correctly uses "show" with "data" (which can take plural verb in academic writing). (A) is incorrect—"committee" is singular, so "has recommended" (not "have"). (B) "Neither...nor" takes verb matching the nearer subject "explanations," which is plural, so should be "account" (not "accounts"). (C) "Each" is singular, so should be "was given" (not "were").',
+    difficulty: 'hard',
+    domain: 'Writing',
+    skill: 'Complex Subject-Verb Agreement'
+  }),
+  addRating({
+    id: 'hard-eng-133',
+    question: 'Which revision eliminates the dangling modifier? Original: "Having reviewed the literature extensively, the hypothesis was refined to address gaps in previous research."',
+    options: [
+      { letter: 'A', text: 'Having reviewed the literature extensively, we refined the hypothesis to address gaps in previous research.' },
+      { letter: 'B', text: 'Having extensively reviewed the literature, the hypothesis was refined to address gaps in previous research.' },
+      { letter: 'C', text: 'The hypothesis, having reviewed the literature extensively, was refined to address gaps in previous research.' },
+      { letter: 'D', text: 'Having reviewed the literature extensively, refinement of the hypothesis addressed gaps in previous research.' }
+    ],
+    correctAnswer: 'A',
+    explanation: 'A dangling modifier occurs when the subject of the main clause isn\'t the agent of the participial phrase. "Having reviewed" requires a human agent. (A) supplies "we" as the subject who reviewed and refined. (B), (C), and (D) all incorrectly suggest the hypothesis or refinement did the reviewing.',
+    difficulty: 'hard',
+    domain: 'Writing',
+    skill: 'Dangling Modifiers'
+  }),
+  addRating({
+    id: 'hard-eng-134',
+    question: 'A scientist writes: "The experimental group demonstrated statistically significant improvements compared to the control group (p < 0.01), ________ the effect size remained modest (d = 0.35), suggesting that while the intervention was effective, its practical significance may be limited." Which choice most effectively links these clauses?',
+    options: [
+      { letter: 'A', text: 'and' },
+      { letter: 'B', text: 'so' },
+      { letter: 'C', text: 'though' },
+      { letter: 'D', text: 'because' }
+    ],
+    correctAnswer: 'C',
+    explanation: 'The sentence contrasts statistical significance with modest effect size—two results that are somewhat in tension (significant but small). "Though" (C) captures this concessive relationship. "And" (A) merely adds without signaling contrast. "So" (B) implies consequence. "Because" (D) implies causation, but modest effect size doesn\'t cause statistical significance.',
+    difficulty: 'hard',
+    domain: 'Writing',
+    skill: 'Concessive Clause Linking'
+  }),
+  addRating({
+    id: 'hard-eng-135',
+    question: 'Which sentence uses the dash correctly for emphasis?',
+    options: [
+      { letter: 'A', text: 'The study\'s findings—contrary to expectations—confirmed the null hypothesis.' },
+      { letter: 'B', text: 'The study\'s findings contrary—to expectations—confirmed the null hypothesis.' },
+      { letter: 'C', text: 'The study\'s—findings contrary to expectations—confirmed the null hypothesis.' },
+      { letter: 'D', text: 'The study\'s findings contrary to expectations—confirmed—the null hypothesis.' }
+    ],
+    correctAnswer: 'A',
+    explanation: '(A) correctly uses dashes to set off a parenthetical phrase "contrary to expectations" that could be removed without affecting grammaticality. The interrupting phrase adds emphasis. (B), (C), and (D) place dashes incorrectly, breaking up phrases that should not be separated.',
+    difficulty: 'hard',
+    domain: 'Writing',
+    skill: 'Dash Usage for Emphasis'
+  }),
+  addRating({
+    id: 'hard-eng-136',
+    question: 'A researcher wants to add precision to this sentence: "The participants showed improvement after the intervention." Which revision adds the most specific, useful detail?',
+    options: [
+      { letter: 'A', text: 'The participants showed really significant improvement after the intervention.' },
+      { letter: 'B', text: 'The participants showed improvement in cognitive flexibility scores (M = 23.4, SD = 5.2) after the eight-week intervention.' },
+      { letter: 'C', text: 'The participants basically showed improvement after the intervention was done.' },
+      { letter: 'D', text: 'The participants, who were in the study, showed improvement after the intervention.' }
+    ],
+    correctAnswer: 'B',
+    explanation: '(B) adds specific quantitative data (mean, standard deviation), specifies what improved (cognitive flexibility scores), and gives intervention duration (eight weeks). (A) adds only vague intensifier "really significant." (C) adds filler words that reduce precision. (D) adds redundant information (of course they were in the study).',
+    difficulty: 'hard',
+    domain: 'Writing',
+    skill: 'Adding Precision'
+  }),
+  addRating({
+    id: 'hard-eng-137',
+    question: 'Which sentence correctly punctuates the restrictive and nonrestrictive clauses?',
+    options: [
+      { letter: 'A', text: 'Participants, who completed all sessions, showed greater improvement than those who dropped out.' },
+      { letter: 'B', text: 'Participants who completed all sessions showed greater improvement than those, who dropped out.' },
+      { letter: 'C', text: 'Participants who completed all sessions showed greater improvement than those who dropped out.' },
+      { letter: 'D', text: 'Participants, who completed all sessions, showed greater improvement than those, who dropped out.' }
+    ],
+    correctAnswer: 'C',
+    explanation: 'Both clauses are restrictive—they define which participants are meant (completers vs. dropouts). Restrictive clauses are not set off by commas. (C) correctly uses no commas for either restrictive clause. (A), (B), and (D) incorrectly add commas that would make the clauses nonrestrictive, changing the meaning.',
+    difficulty: 'hard',
+    domain: 'Writing',
+    skill: 'Restrictive vs. Nonrestrictive Clauses'
+  }),
+  addRating({
+    id: 'hard-eng-138',
+    question: 'A writer needs to add a footnote reference. Which placement is correct according to standard academic style?',
+    options: [
+      { letter: 'A', text: 'Several scholars have challenged this interpretation.¹' },
+      { letter: 'B', text: 'Several scholars¹ have challenged this interpretation.' },
+      { letter: 'C', text: 'Several¹ scholars have challenged this interpretation.' },
+      { letter: 'D', text: '¹Several scholars have challenged this interpretation.' }
+    ],
+    correctAnswer: 'A',
+    explanation: 'Standard academic style places footnote numbers at the end of the sentence or clause to which they refer, after punctuation. (A) correctly places the superscript after the period. (B), (C), and (D) interrupt the sentence or place the number before the relevant text.',
+    difficulty: 'hard',
+    domain: 'Writing',
+    skill: 'Footnote Placement'
+  }),
+  addRating({
+    id: 'hard-eng-139',
+    question: 'Which sentence uses the semicolon correctly to separate items in a complex list?',
+    options: [
+      { letter: 'A', text: 'The study sites included: Boston, Massachusetts; Portland, Oregon; and Austin, Texas.' },
+      { letter: 'B', text: 'The study sites included Boston, Massachusetts, Portland, Oregon, and Austin, Texas.' },
+      { letter: 'C', text: 'The study sites included Boston, Massachusetts; Portland, Oregon; and Austin, Texas.' },
+      { letter: 'D', text: 'The study sites included; Boston, Massachusetts; Portland, Oregon; and Austin, Texas.' }
+    ],
+    correctAnswer: 'C',
+    explanation: 'When list items contain internal commas (city, state), semicolons separate the items to avoid confusion. (C) correctly uses semicolons between items and commas within items. (A) incorrectly uses a colon after "included" when followed by a semicolon-separated list. (B) creates ambiguity with all commas. (D) misplaces the first semicolon.',
+    difficulty: 'hard',
+    domain: 'Writing',
+    skill: 'Semicolons in Complex Lists'
+  }),
+  addRating({
+    id: 'hard-eng-140',
+    question: 'A philosopher writes: "The question of whether free will is compatible with determinism has generated extensive debate. Compatibilists argue that freedom requires only the ability to act on one\'s desires without external constraint; libertarians insist that genuine freedom requires the ability to have done otherwise; and hard determinists deny that free will exists at all, regardless of how we define it." The writer uses semicolons in this passage primarily to:',
+    options: [
+      { letter: 'A', text: 'Indicate pauses shorter than periods' },
+      { letter: 'B', text: 'Separate closely related independent clauses presenting different positions' },
+      { letter: 'C', text: 'Replace conjunctions that would otherwise be required' },
+      { letter: 'D', text: 'Introduce quotations from different philosophers' }
+    ],
+    correctAnswer: 'B',
+    explanation: 'The semicolons separate three independent clauses, each presenting a different philosophical position on free will (compatibilism, libertarianism, hard determinism). They\'re "closely related" because all address the same question. This is the primary function: separating related but distinct positions (B). While semicolons can replace periods and conjunctions, the key purpose here is organizing parallel positions.',
+    difficulty: 'hard',
+    domain: 'Writing',
+    skill: 'Rhetorical Use of Semicolons'
   })
 ];
