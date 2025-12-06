@@ -74,60 +74,51 @@ const Home = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-background via-primary/5 to-accent/10 p-4">
       <div className="max-w-4xl mx-auto space-y-6 animate-in fade-in duration-500">
-        {/* Header with Auth */}
-        <div className="flex justify-between items-center">
-          <div className="flex items-center gap-3">
-            {user && streak && <StreakBadge streak={streak.current_streak} />}
-          </div>
-          <div className="flex items-center gap-1">
+        {/* Header Navigation - Centered */}
+        <div className="flex flex-col items-center gap-3">
+          {/* Main nav buttons - centered and larger */}
+          <div className="flex items-center justify-center gap-2 md:gap-4 flex-wrap">
             <Link to="/battle">
-              <Button variant="ghost" size="sm" className="gap-1 text-destructive">
-                <Swords className="w-4 h-4" />
-                <span className="hidden sm:inline">Battle</span>
+              <Button variant="ghost" size="lg" className="gap-2 text-destructive text-base md:text-lg">
+                <Swords className="w-5 h-5 md:w-6 md:h-6" />
+                Battle
               </Button>
             </Link>
             <Link to="/daily">
-              <Button variant="ghost" size="sm" className="gap-1 text-primary">
-                <Zap className="w-4 h-4" />
-                <span className="hidden sm:inline">Daily</span>
+              <Button variant="ghost" size="lg" className="gap-2 text-primary text-base md:text-lg">
+                <Zap className="w-5 h-5 md:w-6 md:h-6" />
+                Daily
               </Button>
             </Link>
             <Link to="/leaderboard">
-              <Button variant="ghost" size="sm" className="gap-1">
-                <Trophy className="w-4 h-4" />
-                <span className="hidden sm:inline">Ranks</span>
+              <Button variant="ghost" size="lg" className="gap-2 text-base md:text-lg">
+                <Trophy className="w-5 h-5 md:w-6 md:h-6" />
+                Ranks
               </Button>
             </Link>
             {user ? (
-              <>
-                <Link to="/study">
-                  <Button variant="ghost" size="sm" className="gap-1">
-                    <BookMarked className="w-4 h-4" />
-                    <span className="hidden sm:inline">Study</span>
-                  </Button>
-                </Link>
-                <Link to="/friends">
-                  <Button variant="ghost" size="sm" className="gap-1">
-                    <Users className="w-4 h-4" />
-                    <span className="hidden sm:inline">Friends</span>
-                  </Button>
-                </Link>
-                <Link to="/profile">
-                  <Button variant="ghost" size="sm" className="gap-1">
-                    <User className="w-4 h-4" />
-                    <span className="hidden sm:inline">Profile</span>
-                  </Button>
-                </Link>
-              </>
+              <Link to="/profile">
+                <Button variant="outline" size="lg" className="gap-2 text-base md:text-lg">
+                  <User className="w-5 h-5 md:w-6 md:h-6" />
+                  Profile
+                </Button>
+              </Link>
             ) : (
               <Link to="/auth">
-                <Button variant="outline" size="sm" className="gap-2">
-                  <LogIn className="w-4 h-4" />
+                <Button variant="outline" size="lg" className="gap-2 text-base md:text-lg">
+                  <LogIn className="w-5 h-5 md:w-6 md:h-6" />
                   Sign In
                 </Button>
               </Link>
             )}
           </div>
+          
+          {/* Streak badge for logged in users */}
+          {user && streak && (
+            <div className="flex items-center gap-3">
+              <StreakBadge streak={streak.current_streak} />
+            </div>
+          )}
         </div>
 
         {/* Hero */}
