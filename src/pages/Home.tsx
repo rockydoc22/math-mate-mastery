@@ -19,7 +19,7 @@ import { SkillRatingCard } from "@/components/SkillRatingCard";
 import { DifficultyRange, filterByDifficulty } from "@/utils/difficultyRating";
 
 // Get counts by difficulty range
-const allMathQuestions = [...questions, ...visualMathQuestions, ...moreMathVisualQuestions];
+const allMathQuestions = [...questions, ...visualMathQuestions, ...moreMathVisualQuestions, ...allFillerQuestions];
 const allEnglishQuestions = [...englishQuestions, ...visualEnglishQuestions, ...moreEnglishVisualQuestions];
 
 type Subject = "math" | "english" | "both";
