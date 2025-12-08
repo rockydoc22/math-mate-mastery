@@ -5,13 +5,13 @@
  * and calculates rating changes based on performance.
  */
 
-// Map difficulty 1-10 to effective "opponent" rating
+// Map difficulty 1-13 to effective "opponent" rating
 export function difficultyToRating(difficulty: number): number {
-  // Difficulty 1 = 800 rating, Difficulty 10 = 1700 rating
+  // Difficulty 1 = 800 rating, Difficulty 13 = 1900 rating
   const minRating = 800;
-  const maxRating = 1700;
-  const clampedDifficulty = Math.max(1, Math.min(10, difficulty));
-  return minRating + ((clampedDifficulty - 1) / 9) * (maxRating - minRating);
+  const maxRating = 1900;
+  const clampedDifficulty = Math.max(1, Math.min(13, difficulty));
+  return minRating + ((clampedDifficulty - 1) / 12) * (maxRating - minRating);
 }
 
 // Calculate expected score (probability of winning) based on rating difference
