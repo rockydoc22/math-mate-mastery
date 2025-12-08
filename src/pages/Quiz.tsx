@@ -5,6 +5,7 @@ import { QuizResults } from "@/components/QuizResults";
 import { questions, Question } from "@/data/questions";
 import { englishQuestions, EnglishQuestion } from "@/data/englishQuestions";
 import { visualMathQuestions, visualEnglishQuestions, VisualQuestion, moreMathVisualQuestions, moreEnglishVisualQuestions } from "@/data/visualQuestions";
+import { allFillerQuestions } from "@/data/levelFillerQuestions";
 import { ArrowRight, ArrowLeft } from "lucide-react";
 import { Progress } from "@/components/ui/progress";
 import { Link, useSearchParams } from "react-router-dom";
@@ -44,6 +45,7 @@ const Quiz = () => {
       pool = [...pool, ...questions.map((q) => ({ ...q, type: "math" as const }))];
       pool = [...pool, ...visualMathQuestions.map((q) => ({ ...q, type: "math" as const }))];
       pool = [...pool, ...moreMathVisualQuestions.map((q) => ({ ...q, type: "math" as const }))];
+      pool = [...pool, ...allFillerQuestions.map((q) => ({ ...q, type: "math" as const }))];
     }
     if (subject === "english" || subject === "both") {
       pool = [...pool, ...englishQuestions.map((q) => ({ ...q, type: "english" as const }))];
