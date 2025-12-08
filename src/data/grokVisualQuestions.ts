@@ -989,6 +989,242 @@ const rawQuestions: (Omit<VisualQuestion, 'difficultyRating'> & { level: number 
     domain: "Algebra",
     skill: "Linear Functions"
   },
+  {
+    level: 8,
+    id: "grok-v8.11",
+    question: "Solve for x: 2x + 5 = 19.",
+    visual: {
+      type: "table",
+      data: {
+        headers: ["Step", "Expression"],
+        rows: [["Equation", "2x + 5 = 19"]]
+      }
+    },
+    options: [
+      { letter: "A", text: "5" },
+      { letter: "B", text: "6" },
+      { letter: "C", text: "7" },
+      { letter: "D", text: "8" }
+    ],
+    correctAnswer: "C",
+    explanation: "Subtract 5 → 2x=14 → x=7.",
+    difficulty: "Hard",
+    domain: "Algebra",
+    skill: "Linear Equations"
+  },
+  {
+    level: 8,
+    id: "grok-v8.12",
+    question: "The parabola y = x² − 4x + 3 is shown. What are its roots?",
+    visual: {
+      type: "table",
+      data: {
+        headers: ["Function", "Form"],
+        rows: [["y = x² − 4x + 3", "Standard form"]]
+      }
+    },
+    options: [
+      { letter: "A", text: "x = 1, 3" },
+      { letter: "B", text: "x = −1, −3" },
+      { letter: "C", text: "x = 0, 4" },
+      { letter: "D", text: "x = 2, 2" }
+    ],
+    correctAnswer: "A",
+    explanation: "Factor: (x−1)(x−3). Roots at 1 and 3.",
+    difficulty: "Hard",
+    domain: "Algebra",
+    skill: "Quadratic Functions"
+  },
+  {
+    level: 8,
+    id: "grok-v8.13",
+    question: "A scatterplot shows points (1,2),(2,4),(3,6),(4,8). What is the correlation?",
+    visual: {
+      type: "scatterPlot",
+      data: {
+        points: [{ x: 1, y: 2 }, { x: 2, y: 4 }, { x: 3, y: 6 }, { x: 4, y: 8 }]
+      },
+      xLabel: "x",
+      yLabel: "y"
+    },
+    options: [
+      { letter: "A", text: "0" },
+      { letter: "B", text: "0.5" },
+      { letter: "C", text: "0.9" },
+      { letter: "D", text: "1" }
+    ],
+    correctAnswer: "D",
+    explanation: "Perfect linear relationship → correlation = 1.",
+    difficulty: "Hard",
+    domain: "Problem Solving",
+    skill: "Statistics"
+  },
+  {
+    level: 8,
+    id: "grok-v8.14",
+    question: "Box plot shows Q1=10, median=15, Q3=20. What is the IQR?",
+    visual: {
+      type: "table",
+      data: {
+        headers: ["Statistic", "Q1", "Median", "Q3"],
+        rows: [["Value", "10", "15", "20"]]
+      },
+      title: "Box Plot Summary"
+    },
+    options: [
+      { letter: "A", text: "5" },
+      { letter: "B", text: "10" },
+      { letter: "C", text: "15" },
+      { letter: "D", text: "20" }
+    ],
+    correctAnswer: "B",
+    explanation: "IQR = Q3 − Q1 = 20 − 10 = 10.",
+    difficulty: "Hard",
+    domain: "Problem Solving",
+    skill: "Statistics"
+  },
+  {
+    level: 8,
+    id: "grok-v8.15",
+    question: "Solve inequality: 3x − 7 > 5.",
+    visual: {
+      type: "table",
+      data: {
+        headers: ["Step", "Expression"],
+        rows: [["Inequality", "3x − 7 > 5"]]
+      }
+    },
+    options: [
+      { letter: "A", text: "x > 2" },
+      { letter: "B", text: "x > 3" },
+      { letter: "C", text: "x > 4" },
+      { letter: "D", text: "x > 5" }
+    ],
+    correctAnswer: "C",
+    explanation: "Add 7 → 3x > 12 → x > 4.",
+    difficulty: "Hard",
+    domain: "Algebra",
+    skill: "Inequalities"
+  },
+  {
+    level: 8,
+    id: "grok-v8.16",
+    question: "Line graph shows y = −x + 2. What is the y-intercept?",
+    visual: {
+      type: "lineGraph",
+      data: {
+        points: [{ x: 0, y: 2 }, { x: 2, y: 0 }]
+      },
+      xLabel: "x",
+      yLabel: "y"
+    },
+    options: [
+      { letter: "A", text: "−2" },
+      { letter: "B", text: "0" },
+      { letter: "C", text: "1" },
+      { letter: "D", text: "2" }
+    ],
+    correctAnswer: "D",
+    explanation: "Intercept at y = 2.",
+    difficulty: "Hard",
+    domain: "Algebra",
+    skill: "Linear Functions"
+  },
+  {
+    level: 8,
+    id: "grok-v8.17",
+    question: "Histogram shows bins [0–10, 10–20, 20–30] with frequencies [5, 8, 7]. What is the mode bin?",
+    visual: {
+      type: "barChart",
+      data: {
+        labels: ["0–10", "10–20", "20–30"],
+        values: [5, 8, 7]
+      },
+      xLabel: "Range",
+      yLabel: "Frequency"
+    },
+    options: [
+      { letter: "A", text: "0–10" },
+      { letter: "B", text: "10–20" },
+      { letter: "C", text: "20–30" },
+      { letter: "D", text: "None" }
+    ],
+    correctAnswer: "B",
+    explanation: "Highest frequency = 8 at 10–20.",
+    difficulty: "Hard",
+    domain: "Problem Solving",
+    skill: "Statistics"
+  },
+  {
+    level: 8,
+    id: "grok-v8.18",
+    question: "Solve system: y = x + 1 and y = 2x − 3.",
+    visual: {
+      type: "lineGraph",
+      data: {
+        points: [{ x: 0, y: 1 }, { x: 4, y: 5 }, { x: 0, y: -3 }, { x: 4, y: 5 }]
+      },
+      title: "y = x + 1 and y = 2x − 3"
+    },
+    options: [
+      { letter: "A", text: "(2, 3)" },
+      { letter: "B", text: "(4, 5)" },
+      { letter: "C", text: "(−1, 0)" },
+      { letter: "D", text: "(3, 4)" }
+    ],
+    correctAnswer: "B",
+    explanation: "Set x + 1 = 2x − 3 → x = 4 → y = 5.",
+    difficulty: "Hard",
+    domain: "Algebra",
+    skill: "Systems of Equations"
+  },
+  {
+    level: 8,
+    id: "grok-v8.19",
+    question: "Pie chart shows distribution: A=25%, B=35%, C=40%. If 200 students, how many in C?",
+    visual: {
+      type: "barChart",
+      data: {
+        labels: ["A", "B", "C"],
+        values: [25, 35, 40]
+      },
+      title: "Distribution (%)"
+    },
+    options: [
+      { letter: "A", text: "50" },
+      { letter: "B", text: "70" },
+      { letter: "C", text: "80" },
+      { letter: "D", text: "90" }
+    ],
+    correctAnswer: "C",
+    explanation: "40% of 200 = 80.",
+    difficulty: "Hard",
+    domain: "Problem Solving",
+    skill: "Percentages"
+  },
+  {
+    level: 8,
+    id: "grok-v8.20",
+    question: "Solve quadratic: x² − 5x + 6 = 0.",
+    visual: {
+      type: "table",
+      data: {
+        headers: ["Equation", "Form"],
+        rows: [["x² − 5x + 6 = 0", "Standard"]]
+      }
+    },
+    options: [
+      { letter: "A", text: "x = 2, 3" },
+      { letter: "B", text: "x = −2, −3" },
+      { letter: "C", text: "x = 1, 6" },
+      { letter: "D", text: "x = 0, 5" }
+    ],
+    correctAnswer: "A",
+    explanation: "Factor (x−2)(x−3). Roots 2 and 3.",
+    difficulty: "Hard",
+    domain: "Algebra",
+    skill: "Quadratic Equations"
+  },
 
   // Level 9 Questions
   {
