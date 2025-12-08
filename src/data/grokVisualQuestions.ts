@@ -1459,6 +1459,242 @@ const rawQuestions: (Omit<VisualQuestion, 'difficultyRating'> & { level: number 
     domain: "Algebra",
     skill: "Linear Functions"
   },
+  {
+    level: 9,
+    id: "grok-v9.11",
+    question: "Solve for x: log₂(x) + log₂(x−2) = 5, x > 2.",
+    visual: {
+      type: "table",
+      data: {
+        headers: ["Step", "Expression"],
+        rows: [["Combine logs", "log₂(x(x−2)) = 5"], ["Exponentiate", "x(x−2) = 32"]]
+      }
+    },
+    options: [
+      { letter: "A", text: "4" },
+      { letter: "B", text: "6" },
+      { letter: "C", text: "8" },
+      { letter: "D", text: "10" }
+    ],
+    correctAnswer: "B",
+    explanation: "x² − 2x − 32 = 0 → x = (2 + √(4+128))/2 ≈ 6.74. Closest is 6.",
+    difficulty: "Hard",
+    domain: "Algebra",
+    skill: "Logarithmic Equations"
+  },
+  {
+    level: 9,
+    id: "grok-v9.12",
+    question: "The parabola y = x² − 6x + 8 is shown. What are its roots?",
+    visual: {
+      type: "table",
+      data: {
+        headers: ["Function", "Form"],
+        rows: [["y = x² − 6x + 8", "Standard form"]]
+      }
+    },
+    options: [
+      { letter: "A", text: "x = 2, 4" },
+      { letter: "B", text: "x = −2, −4" },
+      { letter: "C", text: "x = 1, 8" },
+      { letter: "D", text: "x = 0, 6" }
+    ],
+    correctAnswer: "A",
+    explanation: "Factor: (x−2)(x−4). Roots at 2 and 4.",
+    difficulty: "Hard",
+    domain: "Algebra",
+    skill: "Quadratic Functions"
+  },
+  {
+    level: 9,
+    id: "grok-v9.13",
+    question: "Scatterplot shows points (1,3),(2,5),(3,7),(4,9). What is the regression line?",
+    visual: {
+      type: "scatterPlot",
+      data: {
+        points: [{ x: 1, y: 3 }, { x: 2, y: 5 }, { x: 3, y: 7 }, { x: 4, y: 9 }]
+      },
+      xLabel: "x",
+      yLabel: "y"
+    },
+    options: [
+      { letter: "A", text: "y = 2x + 1" },
+      { letter: "B", text: "y = 2x + 2" },
+      { letter: "C", text: "y = x + 2" },
+      { letter: "D", text: "y = 3x" }
+    ],
+    correctAnswer: "A",
+    explanation: "Slope = 2, intercept = 1.",
+    difficulty: "Hard",
+    domain: "Problem Solving",
+    skill: "Statistics"
+  },
+  {
+    level: 9,
+    id: "grok-v9.14",
+    question: "Box plot shows Q1=12, median=18, Q3=26. What is the IQR?",
+    visual: {
+      type: "table",
+      data: {
+        headers: ["Statistic", "Q1", "Median", "Q3"],
+        rows: [["Value", "12", "18", "26"]]
+      },
+      title: "Box Plot Summary"
+    },
+    options: [
+      { letter: "A", text: "12" },
+      { letter: "B", text: "14" },
+      { letter: "C", text: "16" },
+      { letter: "D", text: "18" }
+    ],
+    correctAnswer: "B",
+    explanation: "IQR = Q3 − Q1 = 26 − 12 = 14.",
+    difficulty: "Hard",
+    domain: "Problem Solving",
+    skill: "Statistics"
+  },
+  {
+    level: 9,
+    id: "grok-v9.15",
+    question: "Solve inequality: x² − 5x + 6 < 0.",
+    visual: {
+      type: "table",
+      data: {
+        headers: ["Step", "Expression"],
+        rows: [["Factor", "(x−2)(x−3) < 0"]]
+      }
+    },
+    options: [
+      { letter: "A", text: "Between 2 and 3" },
+      { letter: "B", text: "x < 2" },
+      { letter: "C", text: "x > 3" },
+      { letter: "D", text: "All x" }
+    ],
+    correctAnswer: "A",
+    explanation: "Factor (x−2)(x−3). Quadratic < 0 between roots 2 and 3.",
+    difficulty: "Hard",
+    domain: "Algebra",
+    skill: "Quadratic Inequalities"
+  },
+  {
+    level: 9,
+    id: "grok-v9.16",
+    question: "Line graph shows y = 3x − 7. What is the slope?",
+    visual: {
+      type: "lineGraph",
+      data: {
+        points: [{ x: 0, y: -7 }, { x: 1, y: -4 }, { x: 3, y: 2 }]
+      },
+      xLabel: "x",
+      yLabel: "y"
+    },
+    options: [
+      { letter: "A", text: "1" },
+      { letter: "B", text: "2" },
+      { letter: "C", text: "3" },
+      { letter: "D", text: "4" }
+    ],
+    correctAnswer: "C",
+    explanation: "Slope = 3.",
+    difficulty: "Hard",
+    domain: "Algebra",
+    skill: "Linear Functions"
+  },
+  {
+    level: 9,
+    id: "grok-v9.17",
+    question: "Histogram shows bins [0–5, 5–10, 10–15] with frequencies [4, 9, 7]. What is the mode bin?",
+    visual: {
+      type: "barChart",
+      data: {
+        labels: ["0–5", "5–10", "10–15"],
+        values: [4, 9, 7]
+      },
+      xLabel: "Range",
+      yLabel: "Frequency"
+    },
+    options: [
+      { letter: "A", text: "0–5" },
+      { letter: "B", text: "5–10" },
+      { letter: "C", text: "10–15" },
+      { letter: "D", text: "None" }
+    ],
+    correctAnswer: "B",
+    explanation: "Highest frequency = 9 at 5–10.",
+    difficulty: "Hard",
+    domain: "Problem Solving",
+    skill: "Statistics"
+  },
+  {
+    level: 9,
+    id: "grok-v9.18",
+    question: "Solve system: y = 2x + 1 and y = x² − 3. How many solutions?",
+    visual: {
+      type: "table",
+      data: {
+        headers: ["Function", "Type"],
+        rows: [["y = 2x + 1", "Line"], ["y = x² − 3", "Parabola"]]
+      }
+    },
+    options: [
+      { letter: "A", text: "No solution" },
+      { letter: "B", text: "1 solution" },
+      { letter: "C", text: "2 solutions" },
+      { letter: "D", text: "3 solutions" }
+    ],
+    correctAnswer: "C",
+    explanation: "Quadratic intersects line twice.",
+    difficulty: "Hard",
+    domain: "Algebra",
+    skill: "Systems of Equations"
+  },
+  {
+    level: 9,
+    id: "grok-v9.19",
+    question: "Pie chart shows distribution: A=30%, B=25%, C=45%. If 400 students, how many in B?",
+    visual: {
+      type: "barChart",
+      data: {
+        labels: ["A", "B", "C"],
+        values: [30, 25, 45]
+      },
+      title: "Distribution (%)"
+    },
+    options: [
+      { letter: "A", text: "100" },
+      { letter: "B", text: "120" },
+      { letter: "C", text: "150" },
+      { letter: "D", text: "160" }
+    ],
+    correctAnswer: "A",
+    explanation: "25% of 400 = 100.",
+    difficulty: "Hard",
+    domain: "Problem Solving",
+    skill: "Percentages"
+  },
+  {
+    level: 9,
+    id: "grok-v9.20",
+    question: "Solve quadratic: x² − 7x + 12 = 0.",
+    visual: {
+      type: "table",
+      data: {
+        headers: ["Equation", "Form"],
+        rows: [["x² − 7x + 12 = 0", "Standard"]]
+      }
+    },
+    options: [
+      { letter: "A", text: "x = 3, 4" },
+      { letter: "B", text: "x = 2, 6" },
+      { letter: "C", text: "x = 1, 12" },
+      { letter: "D", text: "x = 0, 7" }
+    ],
+    correctAnswer: "A",
+    explanation: "Factor (x−3)(x−4). Roots 3 and 4.",
+    difficulty: "Hard",
+    domain: "Algebra",
+    skill: "Quadratic Equations"
+  },
 
   // Level 10 Questions
   {
