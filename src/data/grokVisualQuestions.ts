@@ -1927,6 +1927,333 @@ const rawQuestions: (Omit<VisualQuestion, 'difficultyRating'> & { level: number 
     difficulty: "Hard",
     domain: "Algebra",
     skill: "Exponential Functions"
+  },
+  {
+    level: 10,
+    id: "grok-v10.11",
+    question: "Solve for x: |2x − 7| = 5.",
+    visual: {
+      type: "table",
+      data: {
+        headers: ["Step", "Expression"],
+        rows: [["Equation", "|2x − 7| = 5"]]
+      }
+    },
+    options: [
+      { letter: "A", text: "x = 1 or x = 6" },
+      { letter: "B", text: "x = 2 or x = 5" },
+      { letter: "C", text: "x = 3 or x = 4" },
+      { letter: "D", text: "x = 0 or x = 7" }
+    ],
+    correctAnswer: "A",
+    explanation: "2x − 7 = ±5 → 2x = 12 or 2 → x = 6 or 1.",
+    difficulty: "Hard",
+    domain: "Algebra",
+    skill: "Absolute Value Equations"
+  },
+  {
+    level: 10,
+    id: "grok-v10.12",
+    question: "The rational function r(x) = (x² − 9)/(x − 3) is shown. What is the y-value of the hole?",
+    visual: {
+      type: "table",
+      data: {
+        headers: ["Function", "Simplified"],
+        rows: [["(x² − 9)/(x − 3)", "x + 3 (with hole at x=3)"]]
+      }
+    },
+    options: [
+      { letter: "A", text: "y = 3" },
+      { letter: "B", text: "y = 6" },
+      { letter: "C", text: "y = 0" },
+      { letter: "D", text: "No hole" }
+    ],
+    correctAnswer: "B",
+    explanation: "Simplifies to y = x + 3 with a hole at x = 3 → y = 6.",
+    difficulty: "Hard",
+    domain: "Algebra",
+    skill: "Rational Functions"
+  },
+  {
+    level: 10,
+    id: "grok-v10.13",
+    question: "Solve for x: 3^(x+1) = 81.",
+    visual: {
+      type: "table",
+      data: {
+        headers: ["Step", "Expression"],
+        rows: [["Equation", "3^(x+1) = 81"], ["Rewrite", "3^(x+1) = 3⁴"]]
+      }
+    },
+    options: [
+      { letter: "A", text: "3" },
+      { letter: "B", text: "4" },
+      { letter: "C", text: "5" },
+      { letter: "D", text: "6" }
+    ],
+    correctAnswer: "A",
+    explanation: "81 = 3⁴ → x + 1 = 4 → x = 3.",
+    difficulty: "Hard",
+    domain: "Algebra",
+    skill: "Exponential Equations"
+  },
+  {
+    level: 10,
+    id: "grok-v10.14",
+    question: "Scatterplot shows points with correlation ≈ −0.95. What does this imply?",
+    visual: {
+      type: "scatterPlot",
+      data: {
+        points: [{ x: 1, y: 10 }, { x: 2, y: 8 }, { x: 3, y: 6 }, { x: 4, y: 4 }, { x: 5, y: 2 }]
+      },
+      xLabel: "x",
+      yLabel: "y"
+    },
+    options: [
+      { letter: "A", text: "Strong negative linear" },
+      { letter: "B", text: "Strong positive linear" },
+      { letter: "C", text: "No relationship" },
+      { letter: "D", text: "Quadratic" }
+    ],
+    correctAnswer: "A",
+    explanation: "Correlation near −1 indicates strong negative linear association.",
+    difficulty: "Hard",
+    domain: "Problem Solving",
+    skill: "Statistics"
+  },
+  {
+    level: 10,
+    id: "grok-v10.15",
+    question: "Solve inequality: (x−2)(x−5) ≤ 0.",
+    visual: {
+      type: "table",
+      data: {
+        headers: ["Step", "Expression"],
+        rows: [["Factor", "(x−2)(x−5) ≤ 0"]]
+      }
+    },
+    options: [
+      { letter: "A", text: "x ≤ 2" },
+      { letter: "B", text: "2 ≤ x ≤ 5" },
+      { letter: "C", text: "x ≥ 5" },
+      { letter: "D", text: "All x" }
+    ],
+    correctAnswer: "B",
+    explanation: "Quadratic ≤ 0 between roots 2 and 5.",
+    difficulty: "Hard",
+    domain: "Algebra",
+    skill: "Quadratic Inequalities"
+  },
+  {
+    level: 10,
+    id: "grok-v10.16",
+    question: "Line m is perpendicular to y = −3x + 2 and passes through (0,0). What is its equation?",
+    visual: {
+      type: "lineGraph",
+      data: {
+        points: [{ x: 0, y: 0 }, { x: 3, y: 1 }]
+      },
+      xLabel: "x",
+      yLabel: "y"
+    },
+    options: [
+      { letter: "A", text: "y = (1/3)x" },
+      { letter: "B", text: "y = 3x" },
+      { letter: "C", text: "y = −(1/3)x" },
+      { letter: "D", text: "y = −3x" }
+    ],
+    correctAnswer: "A",
+    explanation: "Perpendicular slope = 1/3. Through origin → y = (1/3)x.",
+    difficulty: "Hard",
+    domain: "Algebra",
+    skill: "Linear Functions"
+  },
+  {
+    level: 10,
+    id: "grok-v10.17",
+    question: "Box plot shows min=5, Q1=12, median=18, Q3=25, max=40. What percent of data is ≥25?",
+    visual: {
+      type: "table",
+      data: {
+        headers: ["Statistic", "Min", "Q1", "Median", "Q3", "Max"],
+        rows: [["Value", "5", "12", "18", "25", "40"]]
+      },
+      title: "Box Plot Summary"
+    },
+    options: [
+      { letter: "A", text: "25%" },
+      { letter: "B", text: "50%" },
+      { letter: "C", text: "75%" },
+      { letter: "D", text: "100%" }
+    ],
+    correctAnswer: "A",
+    explanation: "Above Q3 is top 25%.",
+    difficulty: "Hard",
+    domain: "Problem Solving",
+    skill: "Statistics"
+  },
+  {
+    level: 10,
+    id: "grok-v10.18",
+    question: "Solve for x: log₅(x) = 2.",
+    visual: {
+      type: "table",
+      data: {
+        headers: ["Step", "Expression"],
+        rows: [["Equation", "log₅(x) = 2"], ["Exponentiate", "x = 5²"]]
+      }
+    },
+    options: [
+      { letter: "A", text: "10" },
+      { letter: "B", text: "20" },
+      { letter: "C", text: "25" },
+      { letter: "D", text: "30" }
+    ],
+    correctAnswer: "C",
+    explanation: "x = 5² = 25.",
+    difficulty: "Hard",
+    domain: "Algebra",
+    skill: "Logarithmic Equations"
+  },
+  {
+    level: 10,
+    id: "grok-v10.19",
+    question: "The parabola y = (x−4)² − 9 and line y = 2x − 5 intersect how many times?",
+    visual: {
+      type: "table",
+      data: {
+        headers: ["Function", "Type"],
+        rows: [["y = (x−4)² − 9", "Parabola"], ["y = 2x − 5", "Line"]]
+      }
+    },
+    options: [
+      { letter: "A", text: "0" },
+      { letter: "B", text: "1" },
+      { letter: "C", text: "2" },
+      { letter: "D", text: "3" }
+    ],
+    correctAnswer: "C",
+    explanation: "Line crosses parabola twice.",
+    difficulty: "Hard",
+    domain: "Algebra",
+    skill: "Systems of Equations"
+  },
+  {
+    level: 10,
+    id: "grok-v10.20",
+    question: "Solve for x: 2^(x−1) = 64.",
+    visual: {
+      type: "table",
+      data: {
+        headers: ["Step", "Expression"],
+        rows: [["Equation", "2^(x−1) = 64"], ["Rewrite", "2^(x−1) = 2⁶"]]
+      }
+    },
+    options: [
+      { letter: "A", text: "5" },
+      { letter: "B", text: "6" },
+      { letter: "C", text: "7" },
+      { letter: "D", text: "8" }
+    ],
+    correctAnswer: "C",
+    explanation: "64 = 2⁶ → x − 1 = 6 → x = 7.",
+    difficulty: "Hard",
+    domain: "Algebra",
+    skill: "Exponential Equations"
+  },
+  {
+    level: 10,
+    id: "grok-v10.21",
+    question: "Scatterplot shows points (1,2),(2,5),(3,10),(4,17). What type of model fits?",
+    visual: {
+      type: "scatterPlot",
+      data: {
+        points: [{ x: 1, y: 2 }, { x: 2, y: 5 }, { x: 3, y: 10 }, { x: 4, y: 17 }]
+      },
+      xLabel: "x",
+      yLabel: "y"
+    },
+    options: [
+      { letter: "A", text: "Linear" },
+      { letter: "B", text: "Quadratic" },
+      { letter: "C", text: "Exponential" },
+      { letter: "D", text: "Constant" }
+    ],
+    correctAnswer: "B",
+    explanation: "Differences increase → quadratic pattern.",
+    difficulty: "Hard",
+    domain: "Problem Solving",
+    skill: "Data Modeling"
+  },
+  {
+    level: 10,
+    id: "grok-v10.22",
+    question: "Solve inequality: |x − 3| < 2.",
+    visual: {
+      type: "table",
+      data: {
+        headers: ["Step", "Expression"],
+        rows: [["Inequality", "|x − 3| < 2"]]
+      }
+    },
+    options: [
+      { letter: "A", text: "x < 1" },
+      { letter: "B", text: "x > 5" },
+      { letter: "C", text: "1 < x < 5" },
+      { letter: "D", text: "All x" }
+    ],
+    correctAnswer: "C",
+    explanation: "Between 1 and 5.",
+    difficulty: "Hard",
+    domain: "Algebra",
+    skill: "Absolute Value Inequalities"
+  },
+  {
+    level: 10,
+    id: "grok-v10.23",
+    question: "Box plot shows Q1=20, median=30, Q3=40. What is the IQR?",
+    visual: {
+      type: "table",
+      data: {
+        headers: ["Statistic", "Q1", "Median", "Q3"],
+        rows: [["Value", "20", "30", "40"]]
+      },
+      title: "Box Plot Summary"
+    },
+    options: [
+      { letter: "A", text: "10" },
+      { letter: "B", text: "20" },
+      { letter: "C", text: "30" },
+      { letter: "D", text: "40" }
+    ],
+    correctAnswer: "B",
+    explanation: "IQR = Q3 − Q1 = 40 − 20 = 20.",
+    difficulty: "Hard",
+    domain: "Problem Solving",
+    skill: "Statistics"
+  },
+  {
+    level: 10,
+    id: "grok-v10.24",
+    question: "Solve for x: log₂(x−1) = 4.",
+    visual: {
+      type: "table",
+      data: {
+        headers: ["Step", "Expression"],
+        rows: [["Equation", "log₂(x−1) = 4"], ["Exponentiate", "x − 1 = 2⁴"]]
+      }
+    },
+    options: [
+      { letter: "A", text: "15" },
+      { letter: "B", text: "16" },
+      { letter: "C", text: "17" },
+      { letter: "D", text: "18" }
+    ],
+    correctAnswer: "C",
+    explanation: "x − 1 = 16 → x = 17.",
+    difficulty: "Hard",
+    domain: "Algebra",
+    skill: "Logarithmic Equations"
   }
 ];
 
