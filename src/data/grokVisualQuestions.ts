@@ -1178,6 +1178,194 @@ const rawQuestions: (Omit<VisualQuestion, 'difficultyRating'> & { level: number 
     domain: "Algebra",
     skill: "Linear Functions"
   },
+  {
+    level: 6,
+    id: "grok-v6.21",
+    question: "Solve for x: 2x + 5 = 19.",
+    visual: {
+      type: "table",
+      data: {
+        headers: ["Step", "Expression"],
+        rows: [["Equation", "2x + 5 = 19"]]
+      }
+    },
+    options: [
+      { letter: "A", text: "5" },
+      { letter: "B", text: "6" },
+      { letter: "C", text: "7" },
+      { letter: "D", text: "8" }
+    ],
+    correctAnswer: "C",
+    explanation: "Subtract 5 → 2x = 14 → x = 7.",
+    difficulty: "Medium",
+    domain: "Algebra",
+    skill: "Linear Equations"
+  },
+  {
+    level: 6,
+    id: "grok-v6.22",
+    question: "Scatterplot shows points (1,2),(2,3),(3,5),(4,7). Estimate slope.",
+    visual: {
+      type: "scatterPlot",
+      data: {
+        points: [{ x: 1, y: 2 }, { x: 2, y: 3 }, { x: 3, y: 5 }, { x: 4, y: 7 }]
+      },
+      xLabel: "x",
+      yLabel: "y"
+    },
+    options: [
+      { letter: "A", text: "1" },
+      { letter: "B", text: "1.5" },
+      { letter: "C", text: "2" },
+      { letter: "D", text: "2.5" }
+    ],
+    correctAnswer: "B",
+    explanation: "Approx slope ≈ (7−2)/(4−1) = 5/3 ≈ 1.67.",
+    difficulty: "Medium",
+    domain: "Problem Solving",
+    skill: "Data Analysis"
+  },
+  {
+    level: 6,
+    id: "grok-v6.23",
+    question: "Box plot shows min=10, Q1=15, median=20, Q3=25, max=30. What is the range?",
+    visual: {
+      type: "table",
+      data: {
+        headers: ["Statistic", "Min", "Q1", "Median", "Q3", "Max"],
+        rows: [["Value", "10", "15", "20", "25", "30"]]
+      },
+      title: "Box Plot Summary"
+    },
+    options: [
+      { letter: "A", text: "15" },
+      { letter: "B", text: "20" },
+      { letter: "C", text: "25" },
+      { letter: "D", text: "30" }
+    ],
+    correctAnswer: "B",
+    explanation: "Range = 30 − 10 = 20.",
+    difficulty: "Medium",
+    domain: "Problem Solving",
+    skill: "Statistics"
+  },
+  {
+    level: 6,
+    id: "grok-v6.24",
+    question: "Solve inequality: 3x − 4 ≤ 11.",
+    visual: {
+      type: "table",
+      data: {
+        headers: ["Step", "Expression"],
+        rows: [["Inequality", "3x − 4 ≤ 11"]]
+      }
+    },
+    options: [
+      { letter: "A", text: "x ≤ 3" },
+      { letter: "B", text: "x ≤ 4" },
+      { letter: "C", text: "x ≤ 5" },
+      { letter: "D", text: "x ≤ 6" }
+    ],
+    correctAnswer: "C",
+    explanation: "Add 4 → 3x ≤ 15 → x ≤ 5.",
+    difficulty: "Medium",
+    domain: "Algebra",
+    skill: "Inequalities"
+  },
+  {
+    level: 6,
+    id: "grok-v6.25",
+    question: "Line graph shows y = −2x + 6. What is the y-intercept?",
+    visual: {
+      type: "lineGraph",
+      data: {
+        points: [{ x: 0, y: 6 }, { x: 3, y: 0 }]
+      },
+      xLabel: "x",
+      yLabel: "y"
+    },
+    options: [
+      { letter: "A", text: "−6" },
+      { letter: "B", text: "0" },
+      { letter: "C", text: "3" },
+      { letter: "D", text: "6" }
+    ],
+    correctAnswer: "D",
+    explanation: "Intercept at y = 6.",
+    difficulty: "Medium",
+    domain: "Algebra",
+    skill: "Linear Functions"
+  },
+  {
+    level: 6,
+    id: "grok-v6.26",
+    question: "Solve for x: x² = 64.",
+    visual: {
+      type: "table",
+      data: {
+        headers: ["Step", "Expression"],
+        rows: [["Equation", "x² = 64"]]
+      }
+    },
+    options: [
+      { letter: "A", text: "±6" },
+      { letter: "B", text: "±7" },
+      { letter: "C", text: "±8" },
+      { letter: "D", text: "±9" }
+    ],
+    correctAnswer: "C",
+    explanation: "x = ±8.",
+    difficulty: "Medium",
+    domain: "Algebra",
+    skill: "Quadratic Equations"
+  },
+  {
+    level: 6,
+    id: "grok-v6.27",
+    question: "Pie chart shows distribution: A=25%, B=25%, C=50%. If 200 students, how many in C?",
+    visual: {
+      type: "barChart",
+      data: {
+        labels: ["A", "B", "C"],
+        values: [25, 25, 50]
+      },
+      title: "Distribution (%)"
+    },
+    options: [
+      { letter: "A", text: "50" },
+      { letter: "B", text: "75" },
+      { letter: "C", text: "100" },
+      { letter: "D", text: "125" }
+    ],
+    correctAnswer: "C",
+    explanation: "50% of 200 = 100.",
+    difficulty: "Medium",
+    domain: "Problem Solving",
+    skill: "Percentages"
+  },
+  {
+    level: 6,
+    id: "grok-v6.28",
+    question: "Solve quadratic: x² − 5x + 6 = 0.",
+    visual: {
+      type: "table",
+      data: {
+        headers: ["Equation", "Form"],
+        rows: [["x² − 5x + 6 = 0", "Standard"]]
+      }
+    },
+    options: [
+      { letter: "A", text: "x = 2, 3" },
+      { letter: "B", text: "x = −2, −3" },
+      { letter: "C", text: "x = 1, 6" },
+      { letter: "D", text: "x = 0, 5" }
+    ],
+    correctAnswer: "A",
+    explanation: "Factor (x−2)(x−3). Roots 2 and 3.",
+    difficulty: "Medium",
+    domain: "Algebra",
+    skill: "Quadratic Equations"
+  },
 
   // Level 7 Questions
   {
