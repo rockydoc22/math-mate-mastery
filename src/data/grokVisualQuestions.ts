@@ -754,6 +754,242 @@ const rawQuestions: (Omit<VisualQuestion, 'difficultyRating'> & { level: number 
     domain: "Problem Solving",
     skill: "Data Analysis"
   },
+  {
+    level: 6,
+    id: "grok-v6.11",
+    question: "Solve for x: 4x − 9 = 15.",
+    visual: {
+      type: "table",
+      data: {
+        headers: ["Step", "Expression"],
+        rows: [["Equation", "4x − 9 = 15"]]
+      }
+    },
+    options: [
+      { letter: "A", text: "5" },
+      { letter: "B", text: "6" },
+      { letter: "C", text: "7" },
+      { letter: "D", text: "8" }
+    ],
+    correctAnswer: "B",
+    explanation: "Add 9 → 4x = 24 → x = 6.",
+    difficulty: "Medium",
+    domain: "Algebra",
+    skill: "Linear Equations"
+  },
+  {
+    level: 6,
+    id: "grok-v6.12",
+    question: "System of equations: y = 2x + 3 and y = −x + 9. What is the solution?",
+    visual: {
+      type: "lineGraph",
+      data: {
+        points: [{ x: 0, y: 3 }, { x: 2, y: 7 }, { x: 0, y: 9 }, { x: 2, y: 7 }]
+      },
+      title: "y = 2x + 3 and y = −x + 9"
+    },
+    options: [
+      { letter: "A", text: "(2, 7)" },
+      { letter: "B", text: "(3, 9)" },
+      { letter: "C", text: "(1, 5)" },
+      { letter: "D", text: "(0, 3)" }
+    ],
+    correctAnswer: "A",
+    explanation: "Set 2x + 3 = −x + 9 → 3x = 6 → x = 2 → y = 7.",
+    difficulty: "Medium",
+    domain: "Algebra",
+    skill: "Systems of Equations"
+  },
+  {
+    level: 6,
+    id: "grok-v6.13",
+    question: "Box plot shows Q1=14, median=20, Q3=28. What is the IQR?",
+    visual: {
+      type: "table",
+      data: {
+        headers: ["Statistic", "Q1", "Median", "Q3"],
+        rows: [["Value", "14", "20", "28"]]
+      },
+      title: "Box Plot Summary"
+    },
+    options: [
+      { letter: "A", text: "12" },
+      { letter: "B", text: "14" },
+      { letter: "C", text: "16" },
+      { letter: "D", text: "18" }
+    ],
+    correctAnswer: "B",
+    explanation: "IQR = Q3 − Q1 = 28 − 14 = 14.",
+    difficulty: "Medium",
+    domain: "Problem Solving",
+    skill: "Statistics"
+  },
+  {
+    level: 6,
+    id: "grok-v6.14",
+    question: "Solve inequality: 5x + 2 ≥ 17.",
+    visual: {
+      type: "table",
+      data: {
+        headers: ["Step", "Expression"],
+        rows: [["Inequality", "5x + 2 ≥ 17"]]
+      }
+    },
+    options: [
+      { letter: "A", text: "x ≥ 3" },
+      { letter: "B", text: "x ≥ 4" },
+      { letter: "C", text: "x ≥ 5" },
+      { letter: "D", text: "x ≥ 6" }
+    ],
+    correctAnswer: "A",
+    explanation: "Subtract 2 → 5x ≥ 15 → x ≥ 3.",
+    difficulty: "Medium",
+    domain: "Algebra",
+    skill: "Inequalities"
+  },
+  {
+    level: 6,
+    id: "grok-v6.15",
+    question: "Scatterplot shows points (1,1),(2,4),(3,9). What type of function fits?",
+    visual: {
+      type: "scatterPlot",
+      data: {
+        points: [{ x: 1, y: 1 }, { x: 2, y: 4 }, { x: 3, y: 9 }]
+      },
+      xLabel: "x",
+      yLabel: "y"
+    },
+    options: [
+      { letter: "A", text: "Linear" },
+      { letter: "B", text: "Quadratic" },
+      { letter: "C", text: "Exponential" },
+      { letter: "D", text: "Constant" }
+    ],
+    correctAnswer: "B",
+    explanation: "y = x² pattern → quadratic.",
+    difficulty: "Medium",
+    domain: "Problem Solving",
+    skill: "Data Modeling"
+  },
+  {
+    level: 6,
+    id: "grok-v6.16",
+    question: "Pie chart shows distribution: A=40%, B=35%, C=25%. If 400 students, how many in A?",
+    visual: {
+      type: "barChart",
+      data: {
+        labels: ["A", "B", "C"],
+        values: [40, 35, 25]
+      },
+      title: "Distribution (%)"
+    },
+    options: [
+      { letter: "A", text: "120" },
+      { letter: "B", text: "140" },
+      { letter: "C", text: "160" },
+      { letter: "D", text: "180" }
+    ],
+    correctAnswer: "C",
+    explanation: "40% of 400 = 160.",
+    difficulty: "Medium",
+    domain: "Problem Solving",
+    skill: "Percentages"
+  },
+  {
+    level: 6,
+    id: "grok-v6.17",
+    question: "Solve quadratic: x² − 6x + 9 = 0.",
+    visual: {
+      type: "table",
+      data: {
+        headers: ["Equation", "Form"],
+        rows: [["x² − 6x + 9 = 0", "Standard"]]
+      }
+    },
+    options: [
+      { letter: "A", text: "x = 3" },
+      { letter: "B", text: "x = −3" },
+      { letter: "C", text: "x = 0" },
+      { letter: "D", text: "x = 6" }
+    ],
+    correctAnswer: "A",
+    explanation: "Factor (x−3)² → root at x = 3.",
+    difficulty: "Medium",
+    domain: "Algebra",
+    skill: "Quadratic Equations"
+  },
+  {
+    level: 6,
+    id: "grok-v6.18",
+    question: "Histogram shows bins [0–5, 5–10, 10–15] with frequencies [2, 6, 4]. What is the mode bin?",
+    visual: {
+      type: "barChart",
+      data: {
+        labels: ["0–5", "5–10", "10–15"],
+        values: [2, 6, 4]
+      },
+      xLabel: "Range",
+      yLabel: "Frequency"
+    },
+    options: [
+      { letter: "A", text: "0–5" },
+      { letter: "B", text: "5–10" },
+      { letter: "C", text: "10–15" },
+      { letter: "D", text: "None" }
+    ],
+    correctAnswer: "B",
+    explanation: "Highest frequency = 6 at 5–10.",
+    difficulty: "Medium",
+    domain: "Problem Solving",
+    skill: "Statistics"
+  },
+  {
+    level: 6,
+    id: "grok-v6.19",
+    question: "Solve for x: √x = 7.",
+    visual: {
+      type: "table",
+      data: {
+        headers: ["Step", "Expression"],
+        rows: [["Equation", "√x = 7"]]
+      }
+    },
+    options: [
+      { letter: "A", text: "42" },
+      { letter: "B", text: "47" },
+      { letter: "C", text: "49" },
+      { letter: "D", text: "56" }
+    ],
+    correctAnswer: "C",
+    explanation: "Square both sides → x = 49.",
+    difficulty: "Medium",
+    domain: "Algebra",
+    skill: "Radical Equations"
+  },
+  {
+    level: 6,
+    id: "grok-v6.20",
+    question: "Line graph shows y = ½x + 4. What is the slope?",
+    visual: {
+      type: "lineGraph",
+      data: {
+        points: [{ x: 0, y: 4 }, { x: 2, y: 5 }, { x: 4, y: 6 }]
+      },
+      xLabel: "x",
+      yLabel: "y"
+    },
+    options: [
+      { letter: "A", text: "½" },
+      { letter: "B", text: "1" },
+      { letter: "C", text: "2" },
+      { letter: "D", text: "4" }
+    ],
+    correctAnswer: "A",
+    explanation: "Slope = rise/run = 1/2.",
+    difficulty: "Medium",
+    domain: "Algebra",
+    skill: "Linear Functions"
+  },
 
   // Level 7 Questions
   {
