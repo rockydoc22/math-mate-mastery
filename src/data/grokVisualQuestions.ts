@@ -1227,6 +1227,242 @@ const rawQuestions: (Omit<VisualQuestion, 'difficultyRating'> & { level: number 
     domain: "Algebra",
     skill: "Linear Equations"
   },
+  {
+    level: 7,
+    id: "grok-v7.11",
+    question: "Solve for x: 2x² − 8x + 6 = 0.",
+    visual: {
+      type: "table",
+      data: {
+        headers: ["Equation", "Form"],
+        rows: [["2x² − 8x + 6 = 0", "Standard"]]
+      }
+    },
+    options: [
+      { letter: "A", text: "x = 1, 3" },
+      { letter: "B", text: "x = 2, 3" },
+      { letter: "C", text: "x = 1, 2" },
+      { letter: "D", text: "x = 0, 3" }
+    ],
+    correctAnswer: "A",
+    explanation: "Divide by 2 → x² − 4x + 3 = 0 → (x−1)(x−3) = 0 → x = 1, 3.",
+    difficulty: "Hard",
+    domain: "Algebra",
+    skill: "Quadratic Equations"
+  },
+  {
+    level: 7,
+    id: "grok-v7.12",
+    question: "System of equations: y = x² and y = 2x + 3. How many solutions?",
+    visual: {
+      type: "table",
+      data: {
+        headers: ["Function", "Type"],
+        rows: [["y = x²", "Parabola"], ["y = 2x + 3", "Line"]]
+      }
+    },
+    options: [
+      { letter: "A", text: "0" },
+      { letter: "B", text: "1" },
+      { letter: "C", text: "2" },
+      { letter: "D", text: "3" }
+    ],
+    correctAnswer: "C",
+    explanation: "Quadratic intersects line twice.",
+    difficulty: "Hard",
+    domain: "Algebra",
+    skill: "Systems of Equations"
+  },
+  {
+    level: 7,
+    id: "grok-v7.13",
+    question: "Box plot shows min=10, Q1=15, median=20, Q3=25, max=40. What is the range?",
+    visual: {
+      type: "table",
+      data: {
+        headers: ["Statistic", "Min", "Q1", "Median", "Q3", "Max"],
+        rows: [["Value", "10", "15", "20", "25", "40"]]
+      },
+      title: "Box Plot Summary"
+    },
+    options: [
+      { letter: "A", text: "20" },
+      { letter: "B", text: "25" },
+      { letter: "C", text: "30" },
+      { letter: "D", text: "35" }
+    ],
+    correctAnswer: "C",
+    explanation: "Range = max − min = 40 − 10 = 30.",
+    difficulty: "Hard",
+    domain: "Problem Solving",
+    skill: "Statistics"
+  },
+  {
+    level: 7,
+    id: "grok-v7.14",
+    question: "Solve inequality: (x+2)(x−5) > 0.",
+    visual: {
+      type: "table",
+      data: {
+        headers: ["Step", "Expression"],
+        rows: [["Factor", "(x+2)(x−5) > 0"]]
+      }
+    },
+    options: [
+      { letter: "A", text: "x < −2 or x > 5" },
+      { letter: "B", text: "−2 < x < 5" },
+      { letter: "C", text: "x > 0" },
+      { letter: "D", text: "All x" }
+    ],
+    correctAnswer: "A",
+    explanation: "Quadratic > 0 outside roots.",
+    difficulty: "Hard",
+    domain: "Algebra",
+    skill: "Quadratic Inequalities"
+  },
+  {
+    level: 7,
+    id: "grok-v7.15",
+    question: "Scatterplot shows points (1,2),(2,5),(3,10),(4,17). Which model fits?",
+    visual: {
+      type: "scatterPlot",
+      data: {
+        points: [{ x: 1, y: 2 }, { x: 2, y: 5 }, { x: 3, y: 10 }, { x: 4, y: 17 }]
+      },
+      xLabel: "x",
+      yLabel: "y"
+    },
+    options: [
+      { letter: "A", text: "Linear" },
+      { letter: "B", text: "Quadratic" },
+      { letter: "C", text: "Exponential" },
+      { letter: "D", text: "Constant" }
+    ],
+    correctAnswer: "B",
+    explanation: "Differences increase → quadratic.",
+    difficulty: "Hard",
+    domain: "Problem Solving",
+    skill: "Data Modeling"
+  },
+  {
+    level: 7,
+    id: "grok-v7.16",
+    question: "Pie chart shows distribution: A=25%, B=35%, C=40%. If 600 students, how many in C?",
+    visual: {
+      type: "barChart",
+      data: {
+        labels: ["A", "B", "C"],
+        values: [25, 35, 40]
+      },
+      title: "Distribution (%)"
+    },
+    options: [
+      { letter: "A", text: "200" },
+      { letter: "B", text: "210" },
+      { letter: "C", text: "220" },
+      { letter: "D", text: "240" }
+    ],
+    correctAnswer: "D",
+    explanation: "40% of 600 = 240.",
+    difficulty: "Hard",
+    domain: "Problem Solving",
+    skill: "Percentages"
+  },
+  {
+    level: 7,
+    id: "grok-v7.17",
+    question: "Solve quadratic: x² − 9x + 20 = 0.",
+    visual: {
+      type: "table",
+      data: {
+        headers: ["Equation", "Form"],
+        rows: [["x² − 9x + 20 = 0", "Standard"]]
+      }
+    },
+    options: [
+      { letter: "A", text: "x = 4, 5" },
+      { letter: "B", text: "x = 2, 10" },
+      { letter: "C", text: "x = 1, 20" },
+      { letter: "D", text: "x = 0, 9" }
+    ],
+    correctAnswer: "A",
+    explanation: "Factor (x−4)(x−5). Roots 4 and 5.",
+    difficulty: "Hard",
+    domain: "Algebra",
+    skill: "Quadratic Equations"
+  },
+  {
+    level: 7,
+    id: "grok-v7.18",
+    question: "Histogram shows bins [0–10, 10–20, 20–30] with frequencies [6, 9, 5]. What is the mode bin?",
+    visual: {
+      type: "barChart",
+      data: {
+        labels: ["0–10", "10–20", "20–30"],
+        values: [6, 9, 5]
+      },
+      xLabel: "Range",
+      yLabel: "Frequency"
+    },
+    options: [
+      { letter: "A", text: "0–10" },
+      { letter: "B", text: "10–20" },
+      { letter: "C", text: "20–30" },
+      { letter: "D", text: "None" }
+    ],
+    correctAnswer: "B",
+    explanation: "Highest frequency = 9 at 10–20.",
+    difficulty: "Hard",
+    domain: "Problem Solving",
+    skill: "Statistics"
+  },
+  {
+    level: 7,
+    id: "grok-v7.19",
+    question: "Solve for x: √(x+5) = 6.",
+    visual: {
+      type: "table",
+      data: {
+        headers: ["Step", "Expression"],
+        rows: [["Equation", "√(x+5) = 6"]]
+      }
+    },
+    options: [
+      { letter: "A", text: "25" },
+      { letter: "B", text: "26" },
+      { letter: "C", text: "31" },
+      { letter: "D", text: "36" }
+    ],
+    correctAnswer: "C",
+    explanation: "Square both sides → x + 5 = 36 → x = 31.",
+    difficulty: "Hard",
+    domain: "Algebra",
+    skill: "Radical Equations"
+  },
+  {
+    level: 7,
+    id: "grok-v7.20",
+    question: "Line graph shows y = −2x + 7. What is the slope?",
+    visual: {
+      type: "lineGraph",
+      data: {
+        points: [{ x: 0, y: 7 }, { x: 1, y: 5 }, { x: 3, y: 1 }]
+      },
+      xLabel: "x",
+      yLabel: "y"
+    },
+    options: [
+      { letter: "A", text: "−1" },
+      { letter: "B", text: "−2" },
+      { letter: "C", text: "−3" },
+      { letter: "D", text: "−4" }
+    ],
+    correctAnswer: "B",
+    explanation: "Slope = −2.",
+    difficulty: "Hard",
+    domain: "Algebra",
+    skill: "Linear Functions"
+  },
 
   // Level 8 Questions
   {
