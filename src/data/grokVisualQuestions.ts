@@ -279,6 +279,243 @@ const rawQuestions: (Omit<VisualQuestion, 'difficultyRating'> & { level: number 
     domain: "Problem Solving",
     skill: "Ratios"
   },
+  {
+    level: 5,
+    id: "grok-v5.11",
+    question: "Solve for x: 3x + 7 = 22.",
+    visual: {
+      type: "table",
+      data: {
+        headers: ["Step", "Expression"],
+        rows: [["Equation", "3x + 7 = 22"]]
+      }
+    },
+    options: [
+      { letter: "A", text: "3" },
+      { letter: "B", text: "4" },
+      { letter: "C", text: "5" },
+      { letter: "D", text: "6" }
+    ],
+    correctAnswer: "C",
+    explanation: "Subtract 7 → 3x = 15 → x = 5.",
+    difficulty: "Medium",
+    domain: "Algebra",
+    skill: "Linear Equations"
+  },
+  {
+    level: 5,
+    id: "grok-v5.12",
+    question: "The line y = 2x + 1 passes through which point?",
+    visual: {
+      type: "lineGraph",
+      data: {
+        points: [{ x: 0, y: 1 }, { x: 1, y: 3 }]
+      },
+      xLabel: "x",
+      yLabel: "y"
+    },
+    options: [
+      { letter: "A", text: "(0, 0)" },
+      { letter: "B", text: "(0, 1)" },
+      { letter: "C", text: "(1, 2)" },
+      { letter: "D", text: "(2, 5)" }
+    ],
+    correctAnswer: "B",
+    explanation: "Plug x = 0 → y = 1 → (0, 1).",
+    difficulty: "Medium",
+    domain: "Algebra",
+    skill: "Linear Functions"
+  },
+  {
+    level: 5,
+    id: "grok-v5.13",
+    question: "Box plot shows Q1=5, median=8, Q3=11. What is the IQR?",
+    visual: {
+      type: "table",
+      data: {
+        headers: ["Statistic", "Q1", "Median", "Q3"],
+        rows: [["Value", "5", "8", "11"]]
+      },
+      title: "Box Plot Summary"
+    },
+    options: [
+      { letter: "A", text: "3" },
+      { letter: "B", text: "4" },
+      { letter: "C", text: "5" },
+      { letter: "D", text: "6" }
+    ],
+    correctAnswer: "D",
+    explanation: "IQR = Q3 − Q1 = 11 − 5 = 6.",
+    difficulty: "Medium",
+    domain: "Problem Solving",
+    skill: "Statistics"
+  },
+  {
+    level: 5,
+    id: "grok-v5.14",
+    question: "Solve inequality: 2x − 3 < 7.",
+    visual: {
+      type: "table",
+      data: {
+        headers: ["Step", "Expression"],
+        rows: [["Inequality", "2x − 3 < 7"]]
+      }
+    },
+    options: [
+      { letter: "A", text: "x < 2" },
+      { letter: "B", text: "x < 3" },
+      { letter: "C", text: "x < 4" },
+      { letter: "D", text: "x < 5" }
+    ],
+    correctAnswer: "D",
+    explanation: "Add 3 → 2x < 10 → x < 5.",
+    difficulty: "Medium",
+    domain: "Algebra",
+    skill: "Inequalities"
+  },
+  {
+    level: 5,
+    id: "grok-v5.15",
+    question: "Scatterplot shows points (1,2),(2,4),(3,6). What is the slope?",
+    visual: {
+      type: "scatterPlot",
+      data: {
+        points: [{ x: 1, y: 2 }, { x: 2, y: 4 }, { x: 3, y: 6 }]
+      },
+      xLabel: "x",
+      yLabel: "y"
+    },
+    options: [
+      { letter: "A", text: "1" },
+      { letter: "B", text: "2" },
+      { letter: "C", text: "3" },
+      { letter: "D", text: "4" }
+    ],
+    correctAnswer: "B",
+    explanation: "Slope = rise/run = 2/1 = 2.",
+    difficulty: "Medium",
+    domain: "Algebra",
+    skill: "Linear Functions"
+  },
+  {
+    level: 5,
+    id: "grok-v5.16",
+    question: "Pie chart shows distribution: A=50%, B=30%, C=20%. If 200 students, how many in B?",
+    visual: {
+      type: "barChart",
+      data: {
+        labels: ["A", "B", "C"],
+        values: [50, 30, 20]
+      },
+      title: "Distribution (%)"
+    },
+    options: [
+      { letter: "A", text: "50" },
+      { letter: "B", text: "60" },
+      { letter: "C", text: "70" },
+      { letter: "D", text: "80" }
+    ],
+    correctAnswer: "B",
+    explanation: "30% of 200 = 60.",
+    difficulty: "Medium",
+    domain: "Problem Solving",
+    skill: "Percentages"
+  },
+  {
+    level: 5,
+    id: "grok-v5.17",
+    question: "Solve quadratic: x² − 4x + 4 = 0.",
+    visual: {
+      type: "table",
+      data: {
+        headers: ["Equation", "Form"],
+        rows: [["x² − 4x + 4 = 0", "Standard"]]
+      }
+    },
+    options: [
+      { letter: "A", text: "x = 2" },
+      { letter: "B", text: "x = −2" },
+      { letter: "C", text: "x = 0" },
+      { letter: "D", text: "x = 4" }
+    ],
+    correctAnswer: "A",
+    explanation: "Factor (x−2)² → root at x = 2.",
+    difficulty: "Medium",
+    domain: "Algebra",
+    skill: "Quadratic Equations"
+  },
+  {
+    level: 5,
+    id: "grok-v5.18",
+    question: "Histogram shows bins [0–10, 10–20, 20–30] with frequencies [3, 5, 2]. What is the mode bin?",
+    visual: {
+      type: "barChart",
+      data: {
+        labels: ["0–10", "10–20", "20–30"],
+        values: [3, 5, 2]
+      },
+      xLabel: "Range",
+      yLabel: "Frequency"
+    },
+    options: [
+      { letter: "A", text: "0–10" },
+      { letter: "B", text: "10–20" },
+      { letter: "C", text: "20–30" },
+      { letter: "D", text: "None" }
+    ],
+    correctAnswer: "B",
+    explanation: "Highest frequency = 5 at 10–20.",
+    difficulty: "Medium",
+    domain: "Problem Solving",
+    skill: "Statistics"
+  },
+  {
+    level: 5,
+    id: "grok-v5.19",
+    question: "Solve for x: 5x − 15 = 0.",
+    visual: {
+      type: "table",
+      data: {
+        headers: ["Step", "Expression"],
+        rows: [["Equation", "5x − 15 = 0"]]
+      }
+    },
+    options: [
+      { letter: "A", text: "0" },
+      { letter: "B", text: "1" },
+      { letter: "C", text: "2" },
+      { letter: "D", text: "3" }
+    ],
+    correctAnswer: "D",
+    explanation: "5x = 15 → x = 3.",
+    difficulty: "Medium",
+    domain: "Algebra",
+    skill: "Linear Equations"
+  },
+  {
+    level: 5,
+    id: "grok-v5.20",
+    question: "Line graph shows y = −x + 4. What is the y-intercept?",
+    visual: {
+      type: "lineGraph",
+      data: {
+        points: [{ x: 0, y: 4 }, { x: 4, y: 0 }]
+      },
+      xLabel: "x",
+      yLabel: "y"
+    },
+    options: [
+      { letter: "A", text: "−4" },
+      { letter: "B", text: "0" },
+      { letter: "C", text: "2" },
+      { letter: "D", text: "4" }
+    ],
+    correctAnswer: "D",
+    explanation: "Intercept at y = 4.",
+    difficulty: "Medium",
+    domain: "Algebra",
+    skill: "Linear Functions"
+  },
 
   // Level 6 Questions
   {
