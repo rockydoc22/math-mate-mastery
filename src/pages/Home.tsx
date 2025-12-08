@@ -6,6 +6,7 @@ import { useNavigate, Link } from "react-router-dom";
 import { questions } from "@/data/questions";
 import { englishQuestions } from "@/data/englishQuestions";
 import { visualMathQuestions, visualEnglishQuestions, moreMathVisualQuestions, moreEnglishVisualQuestions } from "@/data/visualQuestions";
+import { allFillerQuestions } from "@/data/levelFillerQuestions";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { Label } from "@/components/ui/label";
 import { useAuth } from "@/hooks/useAuth";
