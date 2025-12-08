@@ -29,6 +29,7 @@ function addRatings(questions: Omit<VisualQuestion, 'difficultyRating'>[]): Visu
 
 // Re-export additional visual questions with ratings
 export { moreMathVisualQuestions, moreEnglishVisualQuestions } from "./moreVisualQuestions";
+export { grokVisualQuestions } from "./grokVisualQuestions";
 
 // Sample visual math questions
 const visualMathQuestionsRaw: Omit<VisualQuestion, 'difficultyRating'>[] = [
