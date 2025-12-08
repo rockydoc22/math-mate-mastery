@@ -58,7 +58,7 @@ const Home = () => {
   const countsPerLevel = useMemo(() => {
     const allQuestions = [...allMathQuestions, ...allEnglishQuestions];
     const counts: Record<number, number> = {};
-    for (let i = 1; i <= 10; i++) {
+    for (let i = 1; i <= 13; i++) {
       counts[i] = allQuestions.filter(q => (q.difficultyRating || 5) === i).length;
     }
     return counts;
@@ -290,47 +290,94 @@ const Home = () => {
           <div className="space-y-4">
             <h3 className="font-semibold text-lg">Difficulty Level</h3>
             
-            {/* Quick Range Buttons */}
-            <div className="grid grid-cols-5 gap-2">
-              {[
-                { value: 'all' as DifficultyRange, label: 'All', color: 'bg-muted' },
-                { value: 'easy' as DifficultyRange, label: '1-3', sublabel: 'Easy', color: 'bg-green-500/20' },
-                { value: 'medium' as DifficultyRange, label: '4-5', sublabel: 'Medium', color: 'bg-yellow-500/20' },
-                { value: 'hard' as DifficultyRange, label: '6-8', sublabel: 'Hard', color: 'bg-orange-500/20' },
-                { value: 'veryhard' as DifficultyRange, label: '9-10', sublabel: 'Expert', color: 'bg-red-500/20' },
-              ].map(({ value, label, sublabel, color }) => (
-                <button
-                  key={value}
-                  onClick={() => setDifficultyRange(value)}
-                  className={`p-2 rounded-lg border-2 transition-all text-center ${
-                    difficultyRange === value
-                      ? `${color} border-primary shadow-md`
-                      : 'border-border hover:border-muted-foreground/50'
-                  }`}
-                >
-                  <span className="font-bold text-sm">{label}</span>
-                  {sublabel && <p className="text-xs text-muted-foreground">{sublabel}</p>}
-                </button>
-              ))}
+            {/* SAT Prep Range Buttons */}
+            <div className="space-y-2">
+              <p className="text-xs text-muted-foreground font-medium">📚 SAT Prep (Levels 1-10)</p>
+              <div className="grid grid-cols-5 gap-2">
+                {[
+                  { value: 'all' as DifficultyRange, label: 'All', color: 'bg-muted' },
+                  { value: 'easy' as DifficultyRange, label: '1-3', sublabel: 'Easy', color: 'bg-green-500/20' },
+                  { value: 'medium' as DifficultyRange, label: '4-6', sublabel: 'Medium', color: 'bg-yellow-500/20' },
+                  { value: 'hard' as DifficultyRange, label: '7-8', sublabel: 'Hard', color: 'bg-orange-500/20' },
+                  { value: 'veryhard' as DifficultyRange, label: '9-10', sublabel: 'Expert', color: 'bg-red-500/20' },
+                ].map(({ value, label, sublabel, color }) => (
+                  <button
+                    key={value}
+                    onClick={() => setDifficultyRange(value)}
+                    className={`p-2 rounded-lg border-2 transition-all text-center ${
+                      difficultyRange === value
+                        ? `${color} border-primary shadow-md`
+                        : 'border-border hover:border-muted-foreground/50'
+                    }`}
+                  >
+                    <span className="font-bold text-sm">{label}</span>
+                    {sublabel && <p className="text-xs text-muted-foreground">{sublabel}</p>}
+                  </button>
+                ))}
+              </div>
             </div>
 
-            {/* Question counts per level */}
-            <div className="flex items-center gap-1 flex-wrap">
-              <span className="text-xs text-muted-foreground mr-1">Questions:</span>
-              {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((level) => (
-                <div
-                  key={level}
-                  className={`flex flex-col items-center px-2 py-1 rounded-lg text-xs min-w-[36px] ${
-                    level <= 3 ? 'bg-green-500/10 text-green-700'
-                    : level <= 5 ? 'bg-yellow-500/10 text-yellow-700'
-                    : level <= 8 ? 'bg-orange-500/10 text-orange-700'
-                    : 'bg-red-500/10 text-red-700'
-                  }`}
-                >
-                  <span className="font-bold">{level}</span>
-                  <span className="text-[10px] opacity-70">{countsPerLevel[level]}</span>
-                </div>
-              ))}
+            {/* Bonus Challenge Levels */}
+            <div className="space-y-2 pt-2 border-t border-dashed border-border">
+              <p className="text-xs text-muted-foreground font-medium">🔥 Bonus Challenges (Beyond SAT - Optional)</p>
+              <p className="text-xs text-muted-foreground/70">These questions go beyond SAT difficulty and may include advanced concepts like calculus. Great for extra challenge!</p>
+              <div className="grid grid-cols-3 gap-2">
+                {[
+                  { value: 'titan' as DifficultyRange, label: '11', sublabel: 'Titan', color: 'bg-purple-500/20', textColor: 'text-purple-500' },
+                  { value: 'savant' as DifficultyRange, label: '12', sublabel: 'Savant', color: 'bg-pink-500/20', textColor: 'text-pink-500' },
+                  { value: 'insane' as DifficultyRange, label: '13', sublabel: 'Insane', color: 'bg-fuchsia-500/20', textColor: 'text-fuchsia-500' },
+                ].map(({ value, label, sublabel, color, textColor }) => (
+                  <button
+                    key={value}
+                    onClick={() => setDifficultyRange(value)}
+                    className={`p-2 rounded-lg border-2 transition-all text-center ${
+                      difficultyRange === value
+                        ? `${color} border-primary shadow-md`
+                        : 'border-border hover:border-muted-foreground/50'
+                    }`}
+                  >
+                    <span className={`font-bold text-sm ${textColor}`}>{label}</span>
+                    <p className={`text-xs ${textColor} font-medium`}>{sublabel}</p>
+                  </button>
+                ))}
+              </div>
+            </div>
+
+            {/* Question counts per level - SAT levels */}
+            <div className="space-y-2">
+              <div className="flex items-center gap-1 flex-wrap">
+                <span className="text-xs text-muted-foreground mr-1">SAT:</span>
+                {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((level) => (
+                  <div
+                    key={level}
+                    className={`flex flex-col items-center px-2 py-1 rounded-lg text-xs min-w-[36px] ${
+                      level <= 3 ? 'bg-green-500/10 text-green-700 dark:text-green-400'
+                      : level <= 6 ? 'bg-yellow-500/10 text-yellow-700 dark:text-yellow-400'
+                      : level <= 8 ? 'bg-orange-500/10 text-orange-700 dark:text-orange-400'
+                      : 'bg-red-500/10 text-red-700 dark:text-red-400'
+                    }`}
+                  >
+                    <span className="font-bold">{level}</span>
+                    <span className="text-[10px] opacity-70">{countsPerLevel[level]}</span>
+                  </div>
+                ))}
+              </div>
+              <div className="flex items-center gap-1 flex-wrap">
+                <span className="text-xs text-muted-foreground mr-1">Bonus:</span>
+                {[
+                  { level: 11, name: 'Titan', color: 'bg-purple-500/10 text-purple-700 dark:text-purple-400' },
+                  { level: 12, name: 'Savant', color: 'bg-pink-500/10 text-pink-700 dark:text-pink-400' },
+                  { level: 13, name: 'Insane', color: 'bg-fuchsia-500/10 text-fuchsia-700 dark:text-fuchsia-400' },
+                ].map(({ level, name, color }) => (
+                  <div
+                    key={level}
+                    className={`flex flex-col items-center px-2 py-1 rounded-lg text-xs min-w-[48px] ${color}`}
+                  >
+                    <span className="font-bold text-[10px]">{name}</span>
+                    <span className="text-[10px] opacity-70">{countsPerLevel[level]}</span>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
 
