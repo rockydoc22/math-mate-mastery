@@ -1,14 +1,16 @@
 import { useState, useMemo } from "react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { Calculator, PenTool, Shuffle, Trophy, Zap, Users, BookMarked, LogIn, User, Award, Swords, Target, Brain, RefreshCw, Volume2, VolumeX } from "lucide-react";
+import { Calculator, PenTool, Shuffle, Trophy, Zap, Users, BookMarked, LogIn, User, Award, Swords, Target, Brain, RefreshCw, Volume2, VolumeX, Atom, FunctionSquare, TrendingUp, Clock } from "lucide-react";
 import { useNavigate, Link } from "react-router-dom";
 import { questions } from "@/data/questions";
 import { englishQuestions } from "@/data/englishQuestions";
 import { visualMathQuestions, visualEnglishQuestions, moreMathVisualQuestions, moreEnglishVisualQuestions } from "@/data/visualQuestions";
 import { allFillerQuestions } from "@/data/levelFillerQuestions";
+import { physicsQuestions, precalcQuestions, calculusQuestions, advancedSubjects } from "@/data/advancedSubjects";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { Label } from "@/components/ui/label";
+import { Switch } from "@/components/ui/switch";
 import { useAuth } from "@/hooks/useAuth";
 import { useGameStats } from "@/hooks/useGameStats";
 import { useSkillRating } from "@/hooks/useSkillRating";
@@ -17,12 +19,13 @@ import { XPBar } from "@/components/XPBar";
 import { AchievementBadge } from "@/components/AchievementBadge";
 import { SkillRatingCard } from "@/components/SkillRatingCard";
 import { DifficultyRange, filterByDifficulty } from "@/utils/difficultyRating";
+import { getExpectedTime } from "@/hooks/useQuizTimer";
 
 // Get counts by difficulty range
 const allMathQuestions = [...questions, ...visualMathQuestions, ...moreMathVisualQuestions, ...allFillerQuestions];
 const allEnglishQuestions = [...englishQuestions, ...visualEnglishQuestions, ...moreEnglishVisualQuestions];
 
-type Subject = "math" | "english" | "both";
+type Subject = "math" | "english" | "both" | "physics" | "precalc" | "calculus";
 type QuestionCount = 10 | 25 | 50 | 98;
 
 const Home = () => {
@@ -33,6 +36,7 @@ const Home = () => {
   const [subject, setSubject] = useState<Subject>("math");
   const [questionCount, setQuestionCount] = useState<QuestionCount>(10);
   const [difficultyRange, setDifficultyRange] = useState<DifficultyRange>("all");
+  const [timerEnabled, setTimerEnabled] = useState(true);
   const [soundEnabled, setSoundEnabled] = useState(() => {
     const saved = localStorage.getItem('satmastery-sound-enabled');
     return saved !== null ? saved === 'true' : true;
@@ -51,7 +55,10 @@ const Home = () => {
     return {
       math: mathFiltered.length,
       english: englishFiltered.length,
-      both: mathFiltered.length + englishFiltered.length
+      both: mathFiltered.length + englishFiltered.length,
+      physics: physicsQuestions.length,
+      precalc: precalcQuestions.length,
+      calculus: calculusQuestions.length,
     };
   }, [difficultyRange]);
 
@@ -66,13 +73,21 @@ const Home = () => {
   }, []);
 
   const handleStartPractice = () => {
-    navigate(`/quiz?subject=${subject}&count=${questionCount}&difficulty=${difficultyRange}`);
+    navigate(`/quiz?subject=${subject}&count=${questionCount}&difficulty=${difficultyRange}&timer=${timerEnabled}`);
   };
 
-  const subjectOptions = [
+  const isAdvancedSubject = subject === 'physics' || subject === 'precalc' || subject === 'calculus';
+
+  const satSubjectOptions = [
     { value: "math" as Subject, label: "Math", icon: Calculator, color: "primary" },
     { value: "english" as Subject, label: "English", icon: PenTool, color: "secondary" },
     { value: "both" as Subject, label: "Both", icon: Shuffle, color: "accent" },
+  ];
+
+  const advancedSubjectOptions = [
+    { value: "physics" as Subject, label: advancedSubjects.physics.name, icon: Atom, color: "cyan-500", description: advancedSubjects.physics.description, count: physicsQuestions.length },
+    { value: "precalc" as Subject, label: advancedSubjects.precalc.name, icon: FunctionSquare, color: "violet-500", description: advancedSubjects.precalc.description, count: precalcQuestions.length },
+    { value: "calculus" as Subject, label: advancedSubjects.calculus.name, icon: TrendingUp, color: "rose-500", description: advancedSubjects.calculus.description, count: calculusQuestions.length },
   ];
 
   const countOptions: { value: QuestionCount; label: string }[] = [
@@ -262,26 +277,60 @@ const Home = () => {
           {/* Subject Selection */}
           <div className="space-y-4 relative z-10">
             <h3 className="font-semibold text-lg">Choose Subject</h3>
-            <div className="grid grid-cols-3 gap-3">
-              {subjectOptions.map(({ value, label, icon: Icon, color }) => (
-                <button
-                  key={value}
-                  onClick={() => setSubject(value)}
-                  className={`p-4 rounded-xl border-2 transition-all duration-200 ${
-                    subject === value
-                      ? `border-${color} bg-${color}/10 shadow-lg shadow-${color}/20`
-                      : "border-border hover:border-muted-foreground/50"
-                  }`}
-                >
-                  <div className="flex flex-col items-center gap-2">
-                    <Icon className={`w-6 h-6 ${subject === value ? `text-${color}` : "text-muted-foreground"}`} />
-                    <span className={`font-medium ${subject === value ? "" : "text-muted-foreground"}`}>
-                      {label}
-                    </span>
-                  </div>
-                </button>
-              ))}
+            
+            {/* SAT Subjects */}
+            <div className="space-y-2">
+              <p className="text-xs text-muted-foreground font-medium">📚 SAT Prep</p>
+              <div className="grid grid-cols-3 gap-3">
+                {satSubjectOptions.map(({ value, label, icon: Icon, color }) => (
+                  <button
+                    key={value}
+                    onClick={() => setSubject(value)}
+                    className={`p-4 rounded-xl border-2 transition-all duration-200 ${
+                      subject === value
+                        ? `border-${color} bg-${color}/10 shadow-lg shadow-${color}/20`
+                        : "border-border hover:border-muted-foreground/50"
+                    }`}
+                  >
+                    <div className="flex flex-col items-center gap-2">
+                      <Icon className={`w-6 h-6 ${subject === value ? `text-${color}` : "text-muted-foreground"}`} />
+                      <span className={`font-medium ${subject === value ? "" : "text-muted-foreground"}`}>
+                        {label}
+                      </span>
+                    </div>
+                  </button>
+                ))}
+              </div>
             </div>
+
+            {/* Advanced Subjects - Beyond SAT */}
+            <div className="space-y-2 pt-2 border-t border-dashed border-border">
+              <p className="text-xs text-muted-foreground font-medium">🚀 Beyond SAT (Future App)</p>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
+                {advancedSubjectOptions.map(({ value, label, icon: Icon, color, description, count }) => (
+                  <button
+                    key={value}
+                    onClick={() => setSubject(value)}
+                    className={`p-3 rounded-xl border-2 transition-all duration-200 text-left ${
+                      subject === value
+                        ? `border-${color} bg-${color}/10 shadow-lg`
+                        : "border-border hover:border-muted-foreground/50"
+                    }`}
+                  >
+                    <div className="flex items-center gap-2">
+                      <Icon className={`w-5 h-5 ${subject === value ? `text-${color}` : "text-muted-foreground"}`} />
+                      <div className="flex-1">
+                        <span className={`font-medium text-sm ${subject === value ? "" : "text-muted-foreground"}`}>
+                          {label}
+                        </span>
+                        <p className="text-xs text-muted-foreground">{count} questions</p>
+                      </div>
+                    </div>
+                  </button>
+                ))}
+              </div>
+            </div>
+
             <p className="text-sm text-muted-foreground">
               {availableCounts[subject]} questions available
             </p>
@@ -400,6 +449,25 @@ const Home = () => {
               ))}
             </RadioGroup>
           </div>
+
+          {/* Timer Option */}
+          {!isAdvancedSubject && (
+            <div className="flex items-center justify-between p-4 rounded-lg bg-muted/50 border border-border">
+              <div className="flex items-center gap-3">
+                <Clock className="w-5 h-5 text-primary" />
+                <div>
+                  <p className="font-medium">SAT-Paced Timer</p>
+                  <p className="text-xs text-muted-foreground">
+                    {timerEnabled ? `~${getExpectedTime(questionCount)} based on real SAT timing` : 'Practice without time pressure'}
+                  </p>
+                </div>
+              </div>
+              <Switch
+                checked={timerEnabled}
+                onCheckedChange={setTimerEnabled}
+              />
+            </div>
+          )}
 
           <Button size="lg" className="w-full text-lg py-6 relative z-10" onClick={handleStartPractice}>
             🚀 Start Practice
