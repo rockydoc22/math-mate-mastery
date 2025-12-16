@@ -508,8 +508,8 @@ export const uploadedMathQuestions: Question[] = [
       { letter: "C", text: "5" },
       { letter: "D", text: "6" }
     ],
-    correctAnswer: "B",
-    explanation: "Sum = 3(1 + r + r² + r³) = 120 → 1 + r + r² + r³ = 40. Testing r = 4: 1 + 4 + 16 + 64 = 85 ≠ 40. Actually, 1 + 2 + 4 + 8 = 15, so r = 4 doesn't work directly. Check: if r = 3, sum = 1+3+9+27 = 40. So r = 3.",
+    correctAnswer: "A",
+    explanation: "Sum = 3(1 + r + r² + r³) = 120 → 1 + r + r² + r³ = 40. Testing r = 3: 1 + 3 + 9 + 27 = 40. So r = 3.",
     difficulty: "Hard",
     domain: "Advanced Algebra",
     skill: "Sequences and Series"

@@ -3345,13 +3345,13 @@
     "category": "Functions",
     "subcategory": "Inverse Functions",
     "difficulty": "hard",
-    "question": "If f(x) = 2x + -5, what is f\u207b\u00b9(x)?",
-    "optionA": "f\u207b\u00b9(x) = x/2 - -5",
-    "optionB": "f\u207b\u00b9(x) = (x - -5)/2",
-    "optionC": "f\u207b\u00b9(x) = 2x - -5",
-    "optionD": "f\u207b\u00b9(x) = (x + -5)/2",
+    "question": "If f(x) = 2x - 5, what is f⁻¹(x)?",
+    "optionA": "f⁻¹(x) = x/2 + 5/2",
+    "optionB": "f⁻¹(x) = (x + 5)/2",
+    "optionC": "f⁻¹(x) = 2x + 5",
+    "optionD": "f⁻¹(x) = (x - 5)/2",
     "correct": "B",
-    "explanation": "To find inverse: y = 2x + -5, solve for x: x = (y - -5)/2. Replace y with x: f\u207b\u00b9(x) = (x - -5)/2"
+    "explanation": "To find inverse: y = 2x - 5, solve for x: x = (y + 5)/2. Replace y with x: f⁻¹(x) = (x + 5)/2"
   },
   {
     "id": 259,
@@ -3618,13 +3618,13 @@
     "category": "Functions",
     "subcategory": "Function Transformations",
     "difficulty": "hard",
-    "question": "The graph of g(x) = f(x - -5) + 4 is obtained from f(x) by which transformation?",
-    "optionA": "Shift left 5 and up 4",
+    "question": "The graph of g(x) = f(x + 5) + 4 is obtained from f(x) by which transformation?",
+    "optionA": "Shift right 5 and up 4",
     "optionB": "Shift left 5 and up 4",
     "optionC": "Shift left 5 and down 4",
     "optionD": "Reflect and shift",
     "correct": "B",
-    "explanation": "f(x - h) shifts left by 5. Adding 4 shifts up by 4."
+    "explanation": "f(x + 5) shifts left by 5. Adding 4 shifts up by 4."
   },
   {
     "id": 280,
