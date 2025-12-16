@@ -7,6 +7,7 @@ import { englishQuestions, EnglishQuestion } from "@/data/englishQuestions";
 import { visualMathQuestions, visualEnglishQuestions, VisualQuestion, moreMathVisualQuestions, moreEnglishVisualQuestions } from "@/data/visualQuestions";
 import { allFillerQuestions } from "@/data/levelFillerQuestions";
 import { physicsQuestions, precalcQuestions, calculusQuestions } from "@/data/advancedSubjects";
+import { importedSATMathQuestions, ImageQuestion } from "@/data/importedSATQuestions";
 import { ArrowRight, ArrowLeft, Clock, Pause, Play } from "lucide-react";
 import { Progress } from "@/components/ui/progress";
 import { Link, useSearchParams } from "react-router-dom";
@@ -19,7 +20,7 @@ import { DifficultyRange, filterByDifficulty, getDifficultyColor } from "@/utils
 import { RatingChangePopup } from "@/components/RatingChangePopup";
 import { SkillRatingCard } from "@/components/SkillRatingCard";
 
-type CombinedQuestion = (Question | EnglishQuestion | VisualQuestion) & { type: "math" | "english"; difficultyRating?: number };
+type CombinedQuestion = (Question | EnglishQuestion | VisualQuestion | ImageQuestion) & { type: "math" | "english"; difficultyRating?: number };
 
 function shuffleArray<T>(array: T[]): T[] {
   const shuffled = [...array];
@@ -58,6 +59,7 @@ const Quiz = () => {
         pool = [...pool, ...visualMathQuestions.map((q) => ({ ...q, type: "math" as const }))];
         pool = [...pool, ...moreMathVisualQuestions.map((q) => ({ ...q, type: "math" as const }))];
         pool = [...pool, ...allFillerQuestions.map((q) => ({ ...q, type: "math" as const }))];
+        pool = [...pool, ...importedSATMathQuestions.map((q) => ({ ...q, type: "math" as const }))];
       }
       if (subject === "english" || subject === "both") {
         pool = [...pool, ...englishQuestions.map((q) => ({ ...q, type: "english" as const }))];

@@ -8,6 +8,7 @@ import { englishQuestions } from "@/data/englishQuestions";
 import { visualMathQuestions, visualEnglishQuestions, moreMathVisualQuestions, moreEnglishVisualQuestions } from "@/data/visualQuestions";
 import { allFillerQuestions } from "@/data/levelFillerQuestions";
 import { physicsQuestions, precalcQuestions, calculusQuestions, advancedSubjects } from "@/data/advancedSubjects";
+import { importedSATMathQuestions } from "@/data/importedSATQuestions";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { Label } from "@/components/ui/label";
 import { Switch } from "@/components/ui/switch";
@@ -22,7 +23,7 @@ import { DifficultyRange, filterByDifficulty } from "@/utils/difficultyRating";
 import { getExpectedTime } from "@/hooks/useQuizTimer";
 
 // Get counts by difficulty range
-const allMathQuestions = [...questions, ...visualMathQuestions, ...moreMathVisualQuestions, ...allFillerQuestions];
+const allMathQuestions = [...questions, ...visualMathQuestions, ...moreMathVisualQuestions, ...allFillerQuestions, ...importedSATMathQuestions];
 const allEnglishQuestions = [...englishQuestions, ...visualEnglishQuestions, ...moreEnglishVisualQuestions];
 
 type Subject = "math" | "english" | "both" | "physics" | "precalc" | "calculus";

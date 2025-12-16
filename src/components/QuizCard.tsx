@@ -3,12 +3,13 @@ import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Question } from "@/data/questions";
 import { VisualQuestion } from "@/data/visualQuestions";
+import { ImageQuestion } from "@/data/importedSATQuestions";
 import { CheckCircle2, XCircle, Flag } from "lucide-react";
 import { FlagQuestionModal } from "./FlagQuestionModal";
 import { QuestionVisual } from "./QuestionVisual";
 
 interface QuizCardProps {
-  question: Question | VisualQuestion;
+  question: Question | VisualQuestion | ImageQuestion;
   selectedAnswer: string | null;
   onSelectAnswer: (answer: string) => void;
   showResult: boolean;
@@ -18,6 +19,7 @@ interface QuizCardProps {
 export const QuizCard = ({ question, selectedAnswer, onSelectAnswer, showResult, questionType = 'math' }: QuizCardProps) => {
   const [isFlagModalOpen, setIsFlagModalOpen] = useState(false);
   const visualQuestion = question as VisualQuestion;
+  const imageQuestion = question as ImageQuestion;
 
   return (
     <>
@@ -43,8 +45,19 @@ export const QuizCard = ({ question, selectedAnswer, onSelectAnswer, showResult,
             </Button>
           </div>
 
-          {/* Render visual if present */}
-          {visualQuestion.visual && (
+          {/* Render question image if present */}
+          {imageQuestion.imageUrl && (
+            <div className="rounded-lg overflow-hidden border">
+              <img 
+                src={imageQuestion.imageUrl} 
+                alt="Question visual" 
+                className="w-full h-auto"
+              />
+            </div>
+          )}
+
+          {/* Render visual chart if present */}
+          {visualQuestion.visual && !imageQuestion.imageUrl && (
             <QuestionVisual visual={visualQuestion.visual} />
           )}
 
