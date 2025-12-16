@@ -6,7 +6,9 @@ const bonusLevelQuestions: Record<string, number> = {
   'hard-math-019': 12, // atmospheric physics with derivatives
   'hard-math-032': 11, // logistic regression with derivatives
   'hard-math-036': 13, // options trading Greeks
+  'hard-math-042': 11, // economics equilibrium (advanced)
   'hard-math-049': 13, // statistical physics Maxwell-Boltzmann
+  'hard-math-059': 12, // quantum computing
   'hard-math-092': 12, // bridge engineering physics
   'hard-math-108': 11, // biomechanics physics
   'hard-math-121': 12, // RSA cryptography
