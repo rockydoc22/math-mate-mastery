@@ -1,8 +1,31 @@
 import { Question } from './questions';
 import { rateDifficulty } from '../utils/difficultyRating';
 
-// Force hard questions to be rated 9-10
+// Questions flagged as not SAT content - moved to bonus levels 11-13
+const bonusLevelQuestions: Record<string, number> = {
+  'hard-math-019': 12, // atmospheric physics with derivatives
+  'hard-math-032': 11, // logistic regression with derivatives
+  'hard-math-036': 13, // options trading Greeks
+  'hard-math-049': 13, // statistical physics Maxwell-Boltzmann
+  'hard-math-092': 12, // bridge engineering physics
+  'hard-math-108': 11, // biomechanics physics
+  'hard-math-121': 12, // RSA cryptography
+  'hard-math-130': 11, // computational biology sequence alignment
+  'hard-math-195': 11, // evolutionary game theory
+  'hard-math-196': 11, // information theory Huffman coding
+  'hard-math-214': 11, // derivatives trading Greeks
+};
+
+// Force hard questions to be rated 9-10 (or bonus levels 11-13 for flagged questions)
 const addRating = (q: Omit<Question, 'difficultyRating'>): Question => {
+  // Check if this question should be at a bonus level
+  if (bonusLevelQuestions[q.id]) {
+    return {
+      ...q,
+      difficultyRating: bonusLevelQuestions[q.id]
+    };
+  }
+  
   const baseRating = rateDifficulty(q.question, q.options, q.domain, q.skill, false);
   // Ensure hard questions are at least 9, max 10
   const forcedRating = Math.max(9, Math.min(10, baseRating + 4));
