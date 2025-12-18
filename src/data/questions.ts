@@ -6,6 +6,7 @@ import { hardMathQuestions } from './hardMathQuestions';
 import { importedSATMathQuestions } from './importedSATQuestions';
 import { importedSATMathQuestions2 } from './importedSATQuestions2';
 import { importedSATMathQuestions3 } from './importedSATQuestions3';
+import { importedSATMathQuestions4 } from './importedSATQuestions4';
 import { rateDifficulty } from '@/utils/difficultyRating';
 
 export interface Question {
@@ -59,4 +60,4 @@ const rawQuestions: Question[] = (mathQuestionsRaw as RawMathQuestion[]).map((q)
 });
 
 // Combine all math questions
-export const questions: Question[] = [...rawQuestions, ...additionalMathQuestions, ...newMathQuestions, ...uploadedMathQuestions, ...hardMathQuestions, ...importedSATMathQuestions, ...importedSATMathQuestions2, ...importedSATMathQuestions3];
+export const questions: Question[] = [...rawQuestions, ...additionalMathQuestions, ...newMathQuestions, ...uploadedMathQuestions, ...hardMathQuestions, ...importedSATMathQuestions, ...importedSATMathQuestions2, ...importedSATMathQuestions3, ...importedSATMathQuestions4];
