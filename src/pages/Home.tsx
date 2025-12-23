@@ -184,22 +184,22 @@ const Home = () => {
           <Link to="/practice-test">
             <Card className="p-4 hover:border-primary/50 transition-colors cursor-pointer h-full text-center flex flex-col items-center">
               <Target className="w-8 h-8 text-primary mb-2" />
-              <h3 className="font-semibold text-sm">Practice Test</h3>
-              <p className="text-xs text-muted-foreground">Full SAT simulation</p>
+              <h3 className="font-semibold text-sm">(20+20)²</h3>
+              <p className="text-xs text-muted-foreground">SAT Prediction Test</p>
             </Card>
           </Link>
           <Link to="/insights">
             <Card className="p-4 hover:border-primary/50 transition-colors cursor-pointer h-full text-center flex flex-col items-center">
               <Brain className="w-8 h-8 text-purple-500 mb-2" />
-              <h3 className="font-semibold text-sm">Insights</h3>
-              <p className="text-xs text-muted-foreground">Track weak areas</p>
+              <h3 className="font-semibold text-sm">Master Your Weakness</h3>
+              <p className="text-xs text-muted-foreground"></p>
             </Card>
           </Link>
           <Link to="/review">
             <Card className="p-4 hover:border-primary/50 transition-colors cursor-pointer h-full text-center flex flex-col items-center">
               <RefreshCw className="w-8 h-8 text-green-500 mb-2" />
               <h3 className="font-semibold text-sm">Master What You Missed</h3>
-              <p className="text-xs text-muted-foreground">Spaced repetition</p>
+              <p className="text-xs text-muted-foreground"></p>
             </Card>
           </Link>
           <Link to="/study">
