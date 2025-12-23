@@ -68,10 +68,20 @@ const Quiz = () => {
       }
     }
 
+    // Remove duplicates by question ID
+    const seenIds = new Set<string>();
+    const dedupedPool = pool.filter((q) => {
+      if (seenIds.has(q.id)) {
+        return false;
+      }
+      seenIds.add(q.id);
+      return true;
+    });
+
     // Apply difficulty filter (only for SAT subjects)
     const filtered = subject === "physics" || subject === "precalc" || subject === "calculus"
-      ? pool
-      : filterByDifficulty(pool, difficulty);
+      ? dedupedPool
+      : filterByDifficulty(dedupedPool, difficulty);
     const shuffled = shuffleArray(filtered);
     return shuffled.slice(0, Math.min(count, shuffled.length));
   }, [subject, count, difficulty]);
