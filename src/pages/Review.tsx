@@ -219,7 +219,7 @@ const Review = () => {
           <Card className="text-center">
             <CardContent className="p-8">
               <CheckCircle className="w-16 h-16 text-green-500 mx-auto mb-4" />
-              <h1 className="text-2xl font-bold mb-2">Review Complete!</h1>
+              <h1 className="text-2xl font-bold mb-2">Mastery Complete!</h1>
               <p className="text-muted-foreground mb-4">
                 Great job reinforcing your knowledge. Come back later for more spaced repetition.
               </p>
@@ -255,7 +255,7 @@ const Review = () => {
           <div className="flex items-center gap-3">
             <RefreshCw className="w-8 h-8 text-primary" />
             <div>
-              <h1 className="text-2xl font-bold">Spaced Repetition Review</h1>
+              <h1 className="text-2xl font-bold">Master What You Missed</h1>
               <p className="text-sm text-muted-foreground">Question {currentIndex + 1} of {reviewQuestions.length}</p>
             </div>
           </div>

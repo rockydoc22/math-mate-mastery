@@ -198,7 +198,7 @@ const Home = () => {
           <Link to="/review">
             <Card className="p-4 hover:border-primary/50 transition-colors cursor-pointer h-full text-center flex flex-col items-center">
               <RefreshCw className="w-8 h-8 text-green-500 mb-2" />
-              <h3 className="font-semibold text-sm">Review</h3>
+              <h3 className="font-semibold text-sm">Master What You Missed</h3>
               <p className="text-xs text-muted-foreground">Spaced repetition</p>
             </Card>
           </Link>
