@@ -11,6 +11,7 @@ import { questions } from "@/data/questions";
 import { visualMathQuestions, visualEnglishQuestions, moreMathVisualQuestions, moreEnglishVisualQuestions } from "@/data/visualQuestions";
 import { additionalMathQuestions } from "@/data/additionalMathQuestions";
 import { englishQuestions } from "@/data/englishQuestions";
+import { hardEnglishQuestions } from "@/data/hardEnglishQuestions";
 import { QuestionVisual } from "@/components/QuestionVisual";
 import { AITutorExplanation } from "@/components/AITutorExplanation";
 
@@ -26,8 +27,8 @@ interface TestQuestion {
   visual?: any;
 }
 
-const MATH_TIME = 35 * 60; // 35 minutes for math section
-const ENGLISH_TIME = 32 * 60; // 32 minutes for english section
+const MATH_TIME = 25 * 60; // 25 minutes for 20 hard math questions
+const ENGLISH_TIME = 25 * 60; // 25 minutes for 20 hard english questions
 
 const PracticeTest = () => {
   const { user } = useAuth();
@@ -45,23 +46,32 @@ const PracticeTest = () => {
   const [showAITutor, setShowAITutor] = useState(false);
   const [reviewQuestion, setReviewQuestion] = useState<TestQuestion | null>(null);
 
-  // Generate test questions
+  // Generate test questions - 20 hard math + 20 hard english
   const generateTest = useCallback(() => {
+    // Get hard math questions (difficulty rating >= 7)
     const allMath = [
       ...questions.map(q => ({ ...q, type: "math" as const })),
       ...visualMathQuestions.map(q => ({ ...q, type: "math" as const })),
       ...moreMathVisualQuestions.map(q => ({ ...q, type: "math" as const })),
       ...additionalMathQuestions.map(q => ({ ...q, type: "math" as const })),
     ];
+    const hardMath = allMath.filter(q => (q.difficultyRating || 5) >= 7);
+    
+    // Get hard english questions (difficulty rating >= 7)
     const allEnglish = [
       ...englishQuestions.map(q => ({ ...q, type: "english" as const })),
+      ...hardEnglishQuestions.map(q => ({ ...q, type: "english" as const })),
       ...visualEnglishQuestions.map(q => ({ ...q, type: "english" as const })),
       ...moreEnglishVisualQuestions.map(q => ({ ...q, type: "english" as const })),
     ];
+    const hardEnglish = allEnglish.filter(q => (q.difficultyRating || 5) >= 7);
 
-    // SAT has 44 math questions and 54 reading/writing questions
-    const shuffledMath = [...allMath].sort(() => Math.random() - 0.5).slice(0, 22);
-    const shuffledEnglish = [...allEnglish].sort(() => Math.random() - 0.5).slice(0, 27);
+    // Select 20 hard questions from each, falling back to all if not enough hard ones
+    const mathPool = hardMath.length >= 20 ? hardMath : allMath;
+    const englishPool = hardEnglish.length >= 20 ? hardEnglish : allEnglish;
+    
+    const shuffledMath = [...mathPool].sort(() => Math.random() - 0.5).slice(0, 20);
+    const shuffledEnglish = [...englishPool].sort(() => Math.random() - 0.5).slice(0, 20);
 
     setMathQuestionsList(shuffledMath);
     setEnglishQuestionsList(shuffledEnglish);
@@ -143,9 +153,11 @@ const PracticeTest = () => {
       if (answers[`english-${i}`] === q.correctAnswer) englishCorrect++;
     });
 
-    // SAT scoring (simplified): scale to 200-800 per section
-    const mathScaled = Math.round(200 + (mathCorrect / mathQuestionsList.length) * 600);
-    const englishScaled = Math.round(200 + (englishCorrect / englishQuestionsList.length) * 600);
+    // Prediction scoring: Start at 800, lose 30 points per wrong answer per section
+    const mathWrong = mathQuestionsList.length - mathCorrect;
+    const englishWrong = englishQuestionsList.length - englishCorrect;
+    const mathScaled = Math.max(200, 800 - (mathWrong * 30));
+    const englishScaled = Math.max(200, 800 - (englishWrong * 30));
     const totalScore = mathScaled + englishScaled;
 
     // Save to database
@@ -189,11 +201,13 @@ const PracticeTest = () => {
     return `${m}:${s.toString().padStart(2, "0")}`;
   };
 
-  // Calculate results
+  // Calculate results with prediction scoring
   const mathCorrect = mathQuestionsList.filter((q, i) => answers[`math-${i}`] === q.correctAnswer).length;
   const englishCorrect = englishQuestionsList.filter((q, i) => answers[`english-${i}`] === q.correctAnswer).length;
-  const mathScaled = Math.round(200 + (mathCorrect / Math.max(mathQuestionsList.length, 1)) * 600);
-  const englishScaled = Math.round(200 + (englishCorrect / Math.max(englishQuestionsList.length, 1)) * 600);
+  const mathWrong = mathQuestionsList.length - mathCorrect;
+  const englishWrong = englishQuestionsList.length - englishCorrect;
+  const mathScaled = Math.max(200, 800 - (mathWrong * 30));
+  const englishScaled = Math.max(200, 800 - (englishWrong * 30));
 
   if (!testStarted) {
     return (
@@ -207,39 +221,39 @@ const PracticeTest = () => {
           <div className="text-center mb-8">
             <div className="inline-flex items-center gap-3 mb-4">
               <Target className="w-10 h-10 text-primary" />
-              <h1 className="text-4xl font-bold">Practice Test</h1>
+              <h1 className="text-4xl font-bold">(20+20)² SAT Prediction</h1>
             </div>
-            <p className="text-muted-foreground">Simulate the real SAT experience</p>
+            <p className="text-muted-foreground">Abbreviated test with hard questions to predict your score</p>
           </div>
 
           <Card className="mb-6">
             <CardContent className="p-6 space-y-4">
               <div className="grid grid-cols-2 gap-4 text-center">
                 <div className="p-4 rounded-lg bg-blue-500/10 border border-blue-500/20">
-                  <div className="text-2xl font-bold text-blue-500">{mathQuestionsList.length}</div>
-                  <div className="text-sm text-muted-foreground">Math Questions</div>
-                  <div className="text-xs text-muted-foreground mt-1">35 minutes</div>
+                  <div className="text-2xl font-bold text-blue-500">20</div>
+                  <div className="text-sm text-muted-foreground">Hard Math</div>
+                  <div className="text-xs text-muted-foreground mt-1">25 minutes</div>
                 </div>
                 <div className="p-4 rounded-lg bg-green-500/10 border border-green-500/20">
-                  <div className="text-2xl font-bold text-green-500">{englishQuestionsList.length}</div>
-                  <div className="text-sm text-muted-foreground">English Questions</div>
-                  <div className="text-xs text-muted-foreground mt-1">32 minutes</div>
+                  <div className="text-2xl font-bold text-green-500">20</div>
+                  <div className="text-sm text-muted-foreground">Hard English</div>
+                  <div className="text-xs text-muted-foreground mt-1">25 minutes</div>
                 </div>
               </div>
 
               <div className="p-4 bg-muted/50 rounded-lg">
-                <h3 className="font-semibold mb-2">Test Format</h3>
+                <h3 className="font-semibold mb-2">Prediction Scoring</h3>
                 <ul className="text-sm text-muted-foreground space-y-1">
+                  <li>• All correct = Predicted 1600</li>
+                  <li>• Each wrong answer = -30 points in that section</li>
+                  <li>• Example: 1 wrong in math = 770 Math + 800 English = 1570</li>
                   <li>• Math section first, then English</li>
-                  <li>• Timed sections - manage your pace</li>
-                  <li>• You can navigate between questions in each section</li>
-                  <li>• Score prediction based on SAT scaling (400-1600)</li>
                 </ul>
               </div>
 
               <Button onClick={() => setTestStarted(true)} className="w-full" size="lg">
                 <Clock className="w-5 h-5 mr-2" />
-                Start Practice Test
+                Start Prediction Test
               </Button>
             </CardContent>
           </Card>
@@ -254,7 +268,7 @@ const PracticeTest = () => {
         <div className="max-w-3xl mx-auto">
           <div className="text-center mb-8">
             <Trophy className="w-16 h-16 text-yellow-500 mx-auto mb-4" />
-            <h1 className="text-3xl font-bold">Test Complete!</h1>
+            <h1 className="text-3xl font-bold">Prediction Complete!</h1>
           </div>
 
           <Card className="mb-6">
@@ -267,11 +281,11 @@ const PracticeTest = () => {
               <div className="grid grid-cols-2 gap-4 mb-6">
                 <div className="text-center p-4 rounded-lg bg-blue-500/10">
                   <div className="text-3xl font-bold text-blue-500">{mathScaled}</div>
-                  <div className="text-sm text-muted-foreground">Math ({mathCorrect}/{mathQuestionsList.length})</div>
+                  <div className="text-sm text-muted-foreground">Math ({mathCorrect}/20 correct, {mathWrong} wrong)</div>
                 </div>
                 <div className="text-center p-4 rounded-lg bg-green-500/10">
                   <div className="text-3xl font-bold text-green-500">{englishScaled}</div>
-                  <div className="text-sm text-muted-foreground">English ({englishCorrect}/{englishQuestionsList.length})</div>
+                  <div className="text-sm text-muted-foreground">English ({englishCorrect}/20 correct, {englishWrong} wrong)</div>
                 </div>
               </div>
 

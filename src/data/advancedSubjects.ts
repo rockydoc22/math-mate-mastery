@@ -56,14 +56,14 @@ export const advancedSubjects = {
   },
   precalc: {
     id: 'precalc', 
-    name: 'Pre-Calc is Key',
+    name: 'Pre-Calc is Queen',
     description: 'Advanced algebra, sequences & analysis',
     icon: '📐',
     questionCount: precalcQuestions.length,
   },
   calculus: {
     id: 'calculus',
-    name: 'Calculus is Essential',
+    name: 'Calculus is King',
     description: 'Derivatives, integrals & applications',
     icon: '∫',
     questionCount: calculusQuestions.length,
