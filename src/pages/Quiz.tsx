@@ -17,6 +17,7 @@ import { useGameStats } from "@/hooks/useGameStats";
 import { useSkillRating } from "@/hooks/useSkillRating";
 import { useQuizTimer } from "@/hooks/useQuizTimer";
 import { DifficultyRange, filterByDifficulty, getDifficultyColor } from "@/utils/difficultyRating";
+import { allTopics } from "@/data/topicCategories";
 import { RatingChangePopup } from "@/components/RatingChangePopup";
 import { SkillRatingCard } from "@/components/SkillRatingCard";
 
@@ -36,6 +37,7 @@ const Quiz = () => {
   const subject = searchParams.get("subject") || "math";
   const count = Number(searchParams.get("count")) || 10;
   const difficulty = (searchParams.get("difficulty") || "all") as DifficultyRange;
+  const topicId = searchParams.get("topic");
   const timerEnabled = searchParams.get("timer") !== "false";
   const { playCorrect, playWrong } = useSoundEffects();
   const { user } = useAuth();
@@ -78,13 +80,27 @@ const Quiz = () => {
       return true;
     });
 
+    // Apply topic filter if specified
+    let topicFiltered = dedupedPool;
+    if (topicId) {
+      const topic = allTopics.find(t => t.id === topicId);
+      if (topic) {
+        topicFiltered = dedupedPool.filter(q => {
+          const searchText = `${q.domain} ${q.skill} ${q.question}`.toLowerCase();
+          return topic.keywords.some(keyword => searchText.includes(keyword.toLowerCase()));
+        });
+      }
+    }
+
     // Apply difficulty filter (only for SAT subjects)
     const filtered = subject === "physics" || subject === "precalc" || subject === "calculus"
-      ? dedupedPool
-      : filterByDifficulty(dedupedPool, difficulty);
-    const shuffled = shuffleArray(filtered);
-    return shuffled.slice(0, Math.min(count, shuffled.length));
-  }, [subject, count, difficulty]);
+      ? topicFiltered
+      : filterByDifficulty(topicFiltered, difficulty);
+    
+    // Sort by difficulty (easiest first) then shuffle within difficulty bands
+    const sorted = [...filtered].sort((a, b) => (a.difficultyRating || 5) - (b.difficultyRating || 5));
+    return sorted.slice(0, Math.min(count, sorted.length));
+  }, [subject, count, difficulty, topicId]);
 
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [selectedAnswer, setSelectedAnswer] = useState<string | null>(null);
