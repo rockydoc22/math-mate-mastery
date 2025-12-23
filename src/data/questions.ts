@@ -10,6 +10,7 @@ import { importedSATMathQuestions4 } from './importedSATQuestions4';
 import { importedSATMathQuestions5 } from './importedSATQuestions5';
 import { importedSATMathQuestions6 } from './importedSATQuestions6';
 import { importedSATMathQuestions7 } from './importedSATQuestions7';
+import { importedSATMathQuestions8 } from './importedSATQuestions8';
 import { rateDifficulty } from '@/utils/difficultyRating';
 
 export interface Question {
@@ -25,6 +26,7 @@ export interface Question {
   domain: string;
   skill: string;
   difficultyRating?: number;
+  imageUrl?: string;
 }
 
 interface RawMathQuestion {
@@ -63,4 +65,4 @@ const rawQuestions: Question[] = (mathQuestionsRaw as RawMathQuestion[]).map((q)
 });
 
 // Combine all math questions
-export const questions: Question[] = [...rawQuestions, ...additionalMathQuestions, ...newMathQuestions, ...uploadedMathQuestions, ...hardMathQuestions, ...importedSATMathQuestions, ...importedSATMathQuestions2, ...importedSATMathQuestions3, ...importedSATMathQuestions4, ...importedSATMathQuestions5, ...importedSATMathQuestions6, ...importedSATMathQuestions7];
+export const questions: Question[] = [...rawQuestions, ...additionalMathQuestions, ...newMathQuestions, ...uploadedMathQuestions, ...hardMathQuestions, ...importedSATMathQuestions, ...importedSATMathQuestions2, ...importedSATMathQuestions3, ...importedSATMathQuestions4, ...importedSATMathQuestions5, ...importedSATMathQuestions6, ...importedSATMathQuestions7, ...importedSATMathQuestions8];
