@@ -1,7 +1,233 @@
-// Questions to fill levels 5, 6, 7, and 8 to 200 each
+// Questions to fill levels 4, 5, 6, 7, and 8 to 200 each
 // These have direct difficultyRating values (no remapping)
 
 import type { Question } from './questions';
+
+// Helper to generate Level 4 questions (easier - basic arithmetic, simple equations)
+const generateLevel4Questions = (): VisualQuestion[] => {
+  const questions: VisualQuestion[] = [];
+  
+  // Simple addition/subtraction
+  for (let i = 1; i <= 25; i++) {
+    const a = Math.floor(Math.random() * 50) + 10;
+    const b = Math.floor(Math.random() * 30) + 5;
+    const sum = a + b;
+    
+    questions.push({
+      id: `filler-4-add-${i}`,
+      question: `What is ${a} + ${b}?`,
+      options: [
+        { letter: "A", text: String(sum - 2) },
+        { letter: "B", text: String(sum - 1) },
+        { letter: "C", text: String(sum) },
+        { letter: "D", text: String(sum + 1) }
+      ],
+      correctAnswer: "C",
+      explanation: `${a} + ${b} = ${sum}`,
+      difficulty: "Easy",
+      domain: "Arithmetic",
+      skill: "Basic Operations",
+      difficultyRating: 4
+    });
+  }
+
+  // Simple subtraction
+  for (let i = 1; i <= 25; i++) {
+    const a = Math.floor(Math.random() * 50) + 30;
+    const b = Math.floor(Math.random() * 20) + 5;
+    const diff = a - b;
+    
+    questions.push({
+      id: `filler-4-sub-${i}`,
+      question: `What is ${a} - ${b}?`,
+      options: [
+        { letter: "A", text: String(diff - 2) },
+        { letter: "B", text: String(diff) },
+        { letter: "C", text: String(diff + 1) },
+        { letter: "D", text: String(diff + 2) }
+      ],
+      correctAnswer: "B",
+      explanation: `${a} - ${b} = ${diff}`,
+      difficulty: "Easy",
+      domain: "Arithmetic",
+      skill: "Basic Operations",
+      difficultyRating: 4
+    });
+  }
+
+  // Simple multiplication
+  for (let i = 1; i <= 25; i++) {
+    const a = Math.floor(Math.random() * 9) + 2;
+    const b = Math.floor(Math.random() * 9) + 2;
+    const product = a * b;
+    
+    questions.push({
+      id: `filler-4-mult-${i}`,
+      question: `What is ${a} × ${b}?`,
+      options: [
+        { letter: "A", text: String(product - 2) },
+        { letter: "B", text: String(product - 1) },
+        { letter: "C", text: String(product) },
+        { letter: "D", text: String(product + 2) }
+      ],
+      correctAnswer: "C",
+      explanation: `${a} × ${b} = ${product}`,
+      difficulty: "Easy",
+      domain: "Arithmetic",
+      skill: "Basic Operations",
+      difficultyRating: 4
+    });
+  }
+
+  // Simple division
+  for (let i = 1; i <= 25; i++) {
+    const b = Math.floor(Math.random() * 9) + 2;
+    const quotient = Math.floor(Math.random() * 10) + 2;
+    const a = b * quotient;
+    
+    questions.push({
+      id: `filler-4-div-${i}`,
+      question: `What is ${a} ÷ ${b}?`,
+      options: [
+        { letter: "A", text: String(quotient - 1) },
+        { letter: "B", text: String(quotient) },
+        { letter: "C", text: String(quotient + 1) },
+        { letter: "D", text: String(quotient + 2) }
+      ],
+      correctAnswer: "B",
+      explanation: `${a} ÷ ${b} = ${quotient}`,
+      difficulty: "Easy",
+      domain: "Arithmetic",
+      skill: "Basic Operations",
+      difficultyRating: 4
+    });
+  }
+
+  // Simple one-step equations (x + a = b)
+  for (let i = 1; i <= 20; i++) {
+    const x = Math.floor(Math.random() * 15) + 3;
+    const a = Math.floor(Math.random() * 10) + 2;
+    const b = x + a;
+    
+    questions.push({
+      id: `filler-4-eq1-${i}`,
+      question: `Solve for x: x + ${a} = ${b}`,
+      options: [
+        { letter: "A", text: String(x - 2) },
+        { letter: "B", text: String(x - 1) },
+        { letter: "C", text: String(x) },
+        { letter: "D", text: String(x + 1) }
+      ],
+      correctAnswer: "C",
+      explanation: `x + ${a} = ${b}, so x = ${b} - ${a} = ${x}`,
+      difficulty: "Easy",
+      domain: "Algebra",
+      skill: "One-Variable Equations",
+      difficultyRating: 4
+    });
+  }
+
+  // Simple one-step equations (x - a = b)
+  for (let i = 1; i <= 20; i++) {
+    const x = Math.floor(Math.random() * 20) + 10;
+    const a = Math.floor(Math.random() * 8) + 2;
+    const b = x - a;
+    
+    questions.push({
+      id: `filler-4-eq2-${i}`,
+      question: `Solve for x: x - ${a} = ${b}`,
+      options: [
+        { letter: "A", text: String(x - 1) },
+        { letter: "B", text: String(x) },
+        { letter: "C", text: String(x + 1) },
+        { letter: "D", text: String(x + 2) }
+      ],
+      correctAnswer: "B",
+      explanation: `x - ${a} = ${b}, so x = ${b} + ${a} = ${x}`,
+      difficulty: "Easy",
+      domain: "Algebra",
+      skill: "One-Variable Equations",
+      difficultyRating: 4
+    });
+  }
+
+  // Simple percentages
+  const percentages = [10, 20, 25, 50];
+  for (let i = 1; i <= 20; i++) {
+    const percent = percentages[i % percentages.length];
+    const whole = (Math.floor(Math.random() * 10) + 1) * 20;
+    const answer = (percent / 100) * whole;
+    
+    questions.push({
+      id: `filler-4-pct-${i}`,
+      question: `What is ${percent}% of ${whole}?`,
+      options: [
+        { letter: "A", text: String(answer - 5) },
+        { letter: "B", text: String(answer) },
+        { letter: "C", text: String(answer + 5) },
+        { letter: "D", text: String(answer + 10) }
+      ],
+      correctAnswer: "B",
+      explanation: `${percent}% of ${whole} = (${percent}/100) × ${whole} = ${answer}`,
+      difficulty: "Easy",
+      domain: "Problem Solving",
+      skill: "Percentages",
+      difficultyRating: 4
+    });
+  }
+
+  // Simple ratio questions
+  for (let i = 1; i <= 20; i++) {
+    const ratio1 = Math.floor(Math.random() * 4) + 1;
+    const ratio2 = Math.floor(Math.random() * 4) + 1;
+    const multiplier = Math.floor(Math.random() * 5) + 2;
+    const total = (ratio1 + ratio2) * multiplier;
+    const part1 = ratio1 * multiplier;
+    
+    questions.push({
+      id: `filler-4-ratio-${i}`,
+      question: `If two quantities are in the ratio ${ratio1}:${ratio2} and their sum is ${total}, what is the smaller quantity?`,
+      options: [
+        { letter: "A", text: String(Math.min(part1, ratio2 * multiplier) - 2) },
+        { letter: "B", text: String(Math.min(part1, ratio2 * multiplier)) },
+        { letter: "C", text: String(Math.max(part1, ratio2 * multiplier)) },
+        { letter: "D", text: String(Math.max(part1, ratio2 * multiplier) + 2) }
+      ],
+      correctAnswer: "B",
+      explanation: `The ratio ${ratio1}:${ratio2} with sum ${total} gives parts of ${part1} and ${ratio2 * multiplier}. The smaller is ${Math.min(part1, ratio2 * multiplier)}.`,
+      difficulty: "Easy",
+      domain: "Problem Solving",
+      skill: "Ratios",
+      difficultyRating: 4
+    });
+  }
+
+  // Simple area of rectangle
+  for (let i = 1; i <= 20; i++) {
+    const length = Math.floor(Math.random() * 10) + 3;
+    const width = Math.floor(Math.random() * 8) + 2;
+    const area = length * width;
+    
+    questions.push({
+      id: `filler-4-area-${i}`,
+      question: `What is the area of a rectangle with length ${length} and width ${width}?`,
+      options: [
+        { letter: "A", text: String(area - 4) },
+        { letter: "B", text: String(area) },
+        { letter: "C", text: String(length + width) },
+        { letter: "D", text: String(2 * (length + width)) }
+      ],
+      correctAnswer: "B",
+      explanation: `Area = length × width = ${length} × ${width} = ${area}`,
+      difficulty: "Easy",
+      domain: "Geometry",
+      skill: "Area",
+      difficultyRating: 4
+    });
+  }
+
+  return questions;
+};
 
 interface VisualQuestion extends Question {
   visual?: {
@@ -1267,6 +1493,7 @@ const generateLevel8Questions = (): VisualQuestion[] => {
 };
 
 // Generate all questions
+export const level4FillerQuestions = generateLevel4Questions();
 export const level5FillerQuestions = generateLevel5Questions();
 export const level6FillerQuestions = generateLevel6Questions();
 export const level7FillerQuestions = generateLevel7Questions();
@@ -1274,6 +1501,7 @@ export const level8FillerQuestions = generateLevel8Questions();
 
 // Combined export
 export const allFillerQuestions: VisualQuestion[] = [
+  ...level4FillerQuestions,
   ...level5FillerQuestions,
   ...level6FillerQuestions,
   ...level7FillerQuestions,
