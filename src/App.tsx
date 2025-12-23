@@ -13,6 +13,7 @@ import Admin from "./pages/Admin";
 import Auth from "./pages/Auth";
 import Leaderboard from "./pages/Leaderboard";
 import StudyMode from "./pages/StudyMode";
+import ProblemsByTopic from "./pages/ProblemsByTopic";
 import DailyChallenge from "./pages/DailyChallenge";
 import Profile from "./pages/Profile";
 import Friends from "./pages/Friends";
@@ -47,6 +48,7 @@ const App = () => (
             <Route path="/auth" element={<Auth />} />
             <Route path="/leaderboard" element={<Leaderboard />} />
             <Route path="/study" element={<StudyMode />} />
+            <Route path="/problems-by-topic" element={<ProblemsByTopic />} />
             <Route path="/daily" element={<DailyChallenge />} />
             <Route path="/profile" element={<Profile />} />
             <Route path="/friends" element={<Friends />} />

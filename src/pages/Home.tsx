@@ -176,7 +176,7 @@ const Home = () => {
               40²
             </span>
           </div>
-          <p className="text-xl md:text-2xl text-muted-foreground font-medium">Join the 99.9% Club</p>
+          <p className="text-xl md:text-2xl text-muted-foreground font-medium">Join the Rare Air of the 99.97% Club</p>
         </div>
 
         {/* Feature Cards - centered */}
@@ -202,11 +202,11 @@ const Home = () => {
               <p className="text-xs text-muted-foreground"></p>
             </Card>
           </Link>
-          <Link to="/study">
+          <Link to="/problems-by-topic">
             <Card className="p-4 hover:border-primary/50 transition-colors cursor-pointer h-full text-center flex flex-col items-center">
               <BookMarked className="w-8 h-8 text-amber-500 mb-2" />
-              <h3 className="font-semibold text-sm">Study Mode</h3>
-              <p className="text-xs text-muted-foreground">Focused practice</p>
+              <h3 className="font-semibold text-sm">Problems by Topic</h3>
+              <p className="text-xs text-muted-foreground">Practice specific areas</p>
             </Card>
           </Link>
         </div>
