@@ -1,12 +1,8 @@
-import { useEffect } from "react";
 import { useRegisterSW } from "virtual:pwa-register/react";
 import { toast } from "@/hooks/use-toast";
 
 export const usePWAUpdate = () => {
-  const {
-    needRefresh: [needRefresh, setNeedRefresh],
-    updateServiceWorker,
-  } = useRegisterSW({
+  const { updateServiceWorker } = useRegisterSW({
     onRegistered(r) {
       console.log("SW Registered:", r);
       // Check for updates every 60 seconds
@@ -19,28 +15,16 @@ export const usePWAUpdate = () => {
     onRegisterError(error) {
       console.log("SW registration error", error);
     },
+    onNeedRefresh() {
+      // Auto-update immediately when new version is available
+      updateServiceWorker(true);
+      toast({
+        title: "App Updated",
+        description: "The app has been updated to the latest version.",
+        duration: 3000,
+      });
+    },
   });
 
-  useEffect(() => {
-    if (needRefresh) {
-      toast({
-        title: "Update Available! 🚀",
-        description: "A new version is ready. Click to update.",
-        duration: 0, // Don't auto-dismiss
-        action: (
-          <button
-            className="bg-primary text-primary-foreground px-3 py-1 rounded text-sm font-medium"
-            onClick={() => {
-              updateServiceWorker(true);
-              setNeedRefresh(false);
-            }}
-          >
-            Update Now
-          </button>
-        ),
-      });
-    }
-  }, [needRefresh, updateServiceWorker, setNeedRefresh]);
-
-  return { needRefresh, updateServiceWorker };
+  return { updateServiceWorker };
 };
