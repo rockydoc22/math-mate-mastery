@@ -1499,11 +1499,18 @@ export const level6FillerQuestions = generateLevel6Questions();
 export const level7FillerQuestions = generateLevel7Questions();
 export const level8FillerQuestions = generateLevel8Questions();
 
+// Import level 9 questions
+import { allLevel9Questions } from './level9Questions';
+
 // Combined export
 export const allFillerQuestions: VisualQuestion[] = [
   ...level4FillerQuestions,
   ...level5FillerQuestions,
   ...level6FillerQuestions,
   ...level7FillerQuestions,
-  ...level8FillerQuestions
+  ...level8FillerQuestions,
+  ...allLevel9Questions.map(q => ({
+    ...q,
+    difficultyRating: 9
+  })) as VisualQuestion[]
 ];
