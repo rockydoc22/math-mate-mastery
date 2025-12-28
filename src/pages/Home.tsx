@@ -1,479 +1,307 @@
-import { useState, useMemo } from "react";
+import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { Calculator, PenTool, Shuffle, Trophy, Zap, Users, BookMarked, LogIn, User, Award, Swords, Target, Brain, RefreshCw, Volume2, VolumeX, Atom, FunctionSquare, TrendingUp, Clock } from "lucide-react";
+import { 
+  Calculator, PenTool, Trophy, Zap, Users, LogIn, User, 
+  Award, Swords, ChevronRight, Flame, Bell, Play
+} from "lucide-react";
 import { useNavigate, Link } from "react-router-dom";
-import { questions } from "@/data/questions";
-import { englishQuestions } from "@/data/englishQuestions";
-import { visualMathQuestions, visualEnglishQuestions, moreMathVisualQuestions, moreEnglishVisualQuestions } from "@/data/visualQuestions";
-import { allFillerQuestions } from "@/data/levelFillerQuestions";
-import { physicsQuestions, precalcQuestions, calculusQuestions, advancedSubjects } from "@/data/advancedSubjects";
-import { importedSATMathQuestions } from "@/data/importedSATQuestions";
-import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
-import { Label } from "@/components/ui/label";
-import { Switch } from "@/components/ui/switch";
 import { useAuth } from "@/hooks/useAuth";
 import { useGameStats } from "@/hooks/useGameStats";
 import { useSkillRating } from "@/hooks/useSkillRating";
-import { StreakBadge } from "@/components/StreakBadge";
-import { XPBar } from "@/components/XPBar";
 import { AchievementBadge } from "@/components/AchievementBadge";
-import { SkillRatingCard } from "@/components/SkillRatingCard";
-import { DifficultyRange, filterByDifficulty } from "@/utils/difficultyRating";
-import { getExpectedTime } from "@/hooks/useQuizTimer";
+import { getSkillLevel, ratingToSATScore } from "@/utils/eloRating";
+import { supabase } from "@/integrations/supabase/client";
 
-// Get counts by difficulty range
-const allMathQuestions = [...questions, ...visualMathQuestions, ...moreMathVisualQuestions, ...allFillerQuestions, ...importedSATMathQuestions];
-const allEnglishQuestions = [...englishQuestions, ...visualEnglishQuestions, ...moreEnglishVisualQuestions];
+// Motivational messages for non-logged in or idle users
+const motivationalMessages = [
+  "Ready to crush the SAT? Start with 10 questions!",
+  "Your future self will thank you. Practice now!",
+  "Every question counts. Let's do this!",
+  "Top scorers practice daily. Join them!",
+  "1600 club awaits. Take the first step!",
+];
 
-type Subject = "math" | "english" | "both" | "physics" | "precalc" | "calculus";
-type QuestionCount = 10 | 25 | 50 | 98;
+interface LeaderboardEntry {
+  username: string;
+  total_score: number;
+  avatar_emoji: string | null;
+}
 
 const Home = () => {
   const navigate = useNavigate();
-  const { user, signOut } = useAuth();
+  const { user } = useAuth();
   const { streak, achievements, quizCount, achievementDefs } = useGameStats();
   const { ratings } = useSkillRating();
-  const [subject, setSubject] = useState<Subject>("math");
-  const [questionCount, setQuestionCount] = useState<QuestionCount>(10);
-  const [difficultyRange, setDifficultyRange] = useState<DifficultyRange>("all");
-  const [timerEnabled, setTimerEnabled] = useState(true);
-  const [soundEnabled, setSoundEnabled] = useState(() => {
-    const saved = localStorage.getItem('satmastery-sound-enabled');
-    return saved !== null ? saved === 'true' : true;
-  });
+  const [topPlayers, setTopPlayers] = useState<LeaderboardEntry[]>([]);
+  const [notification, setNotification] = useState<string>("");
 
-  const toggleSound = () => {
-    const newValue = !soundEnabled;
-    setSoundEnabled(newValue);
-    localStorage.setItem('satmastery-sound-enabled', String(newValue));
-  };
-
-  // Calculate available questions based on filters
-  const availableCounts = useMemo(() => {
-    const mathFiltered = filterByDifficulty(allMathQuestions, difficultyRange);
-    const englishFiltered = filterByDifficulty(allEnglishQuestions, difficultyRange);
-    return {
-      math: mathFiltered.length,
-      english: englishFiltered.length,
-      both: mathFiltered.length + englishFiltered.length,
-      physics: physicsQuestions.length,
-      precalc: precalcQuestions.length,
-      calculus: calculusQuestions.length,
+  // Fetch top 3 leaderboard
+  useEffect(() => {
+    const fetchLeaderboard = async () => {
+      const { data } = await supabase
+        .from('leaderboard_scores')
+        .select('username, total_score, avatar_emoji')
+        .order('total_score', { ascending: false })
+        .limit(3);
+      if (data) setTopPlayers(data);
     };
-  }, [difficultyRange]);
-
-  // Calculate counts per difficulty level
-  const countsPerLevel = useMemo(() => {
-    const allQuestions = [...allMathQuestions, ...allEnglishQuestions];
-    const counts: Record<number, number> = {};
-    for (let i = 1; i <= 13; i++) {
-      counts[i] = allQuestions.filter(q => (q.difficultyRating || 5) === i).length;
-    }
-    return counts;
+    fetchLeaderboard();
   }, []);
 
-  const handleStartPractice = () => {
-    navigate(`/quiz?subject=${subject}&count=${questionCount}&difficulty=${difficultyRange}&timer=${timerEnabled}`);
+  // Set notification message
+  useEffect(() => {
+    if (!user) {
+      setNotification("Sign in to track your progress and compete!");
+    } else if (streak && streak.current_streak === 0) {
+      setNotification("Start your streak today! Complete a practice session.");
+    } else if (streak && streak.current_streak > 0) {
+      setNotification(`🔥 ${streak.current_streak} day streak! Keep it going!`);
+    } else {
+      const randomMsg = motivationalMessages[Math.floor(Math.random() * motivationalMessages.length)];
+      setNotification(randomMsg);
+    }
+  }, [user, streak]);
+
+  const handleQuickStart = (subject: string) => {
+    navigate(`/quiz?subject=${subject}&count=10&difficulty=all&timer=true`);
   };
 
-  const isAdvancedSubject = subject === 'physics' || subject === 'precalc' || subject === 'calculus';
-
-  const satSubjectOptions = [
-    { value: "math" as Subject, label: "Math", icon: Calculator, color: "primary" },
-    { value: "english" as Subject, label: "English", icon: PenTool, color: "secondary" },
-    { value: "both" as Subject, label: "Both", icon: Shuffle, color: "accent" },
-  ];
-
-  const advancedSubjectOptions = [
-    { value: "physics" as Subject, label: advancedSubjects.physics.name, icon: Atom, color: "cyan-500", description: advancedSubjects.physics.description, count: physicsQuestions.length },
-    { value: "precalc" as Subject, label: advancedSubjects.precalc.name, icon: FunctionSquare, color: "violet-500", description: advancedSubjects.precalc.description, count: precalcQuestions.length },
-    { value: "calculus" as Subject, label: advancedSubjects.calculus.name, icon: TrendingUp, color: "rose-500", description: advancedSubjects.calculus.description, count: calculusQuestions.length },
-  ];
-
-  const countOptions: { value: QuestionCount; label: string }[] = [
-    { value: 10, label: "10 Questions" },
-    { value: 25, label: "25 Questions" },
-    { value: 50, label: "50 Questions" },
-    { value: 98, label: "Full SAT (98 questions)" },
-  ];
+  const projectedScore = ratings ? ratingToSATScore(ratings.overallRating) : null;
+  const skillLevel = ratings ? getSkillLevel(ratings.overallRating) : null;
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-background via-primary/5 to-accent/10 p-4">
-      <div className="max-w-4xl mx-auto space-y-6 animate-in fade-in duration-500">
-        {/* Header Navigation - Centered */}
-        <div className="flex flex-col items-center gap-3">
-          {/* Main nav buttons - centered and larger */}
-          <div className="flex items-center justify-center gap-2 md:gap-4 flex-wrap">
+    <div className="min-h-screen bg-gradient-to-br from-background via-primary/5 to-accent/10 p-4 flex flex-col">
+      <div className="max-w-2xl mx-auto w-full flex flex-col flex-1 animate-in fade-in duration-300">
+        
+        {/* Compact Header */}
+        <header className="flex items-center justify-between mb-4">
+          <div className="flex items-center gap-2">
+            <div className="p-2 rounded-xl bg-gradient-to-br from-primary to-accent">
+              <span className="text-lg font-bold text-primary-foreground font-mono">40²</span>
+            </div>
+          </div>
+          <div className="flex items-center gap-1">
             <Link to="/battle">
-              <Button variant="ghost" size="lg" className="gap-2 text-destructive text-base md:text-lg">
-                <Swords className="w-5 h-5 md:w-6 md:h-6" />
-                Battle
+              <Button variant="ghost" size="sm" className="text-destructive">
+                <Swords className="w-4 h-4" />
               </Button>
             </Link>
             <Link to="/daily">
-              <Button variant="ghost" size="lg" className="gap-2 text-primary text-base md:text-lg">
-                <Zap className="w-5 h-5 md:w-6 md:h-6" />
-                Daily
+              <Button variant="ghost" size="sm" className="text-primary">
+                <Zap className="w-4 h-4" />
               </Button>
             </Link>
             <Link to="/leaderboard">
-              <Button variant="ghost" size="lg" className="gap-2 text-base md:text-lg">
-                <Trophy className="w-5 h-5 md:w-6 md:h-6" />
-                Ranks
+              <Button variant="ghost" size="sm">
+                <Trophy className="w-4 h-4" />
               </Button>
             </Link>
-            {user && (
-              <Link to="/friends">
-                <Button variant="ghost" size="lg" className="gap-2 text-base md:text-lg">
-                  <Users className="w-5 h-5 md:w-6 md:h-6" />
-                  Friends
-                </Button>
-              </Link>
-            )}
-            <Button
-              variant="ghost"
-              size="lg"
-              onClick={toggleSound}
-              className="gap-2 text-base md:text-lg"
-              title={soundEnabled ? "Mute sounds" : "Enable sounds"}
-            >
-              {soundEnabled ? (
-                <Volume2 className="w-5 h-5 md:w-6 md:h-6" />
-              ) : (
-                <VolumeX className="w-5 h-5 md:w-6 md:h-6 text-muted-foreground" />
-              )}
-            </Button>
             {user ? (
-              <Link to="/profile">
-                <Button variant="outline" size="lg" className="gap-2 text-base md:text-lg">
-                  <User className="w-5 h-5 md:w-6 md:h-6" />
-                  Profile
-                </Button>
-              </Link>
+              <>
+                <Link to="/friends">
+                  <Button variant="ghost" size="sm">
+                    <Users className="w-4 h-4" />
+                  </Button>
+                </Link>
+                <Link to="/profile">
+                  <Button variant="ghost" size="sm">
+                    <User className="w-4 h-4" />
+                  </Button>
+                </Link>
+              </>
             ) : (
               <Link to="/auth">
-                <Button variant="outline" size="lg" className="gap-2 text-base md:text-lg">
-                  <LogIn className="w-5 h-5 md:w-6 md:h-6" />
+                <Button variant="outline" size="sm" className="gap-1">
+                  <LogIn className="w-4 h-4" />
                   Sign In
                 </Button>
               </Link>
             )}
           </div>
-          
-          {/* Streak badge for logged in users */}
-          {user && streak && (
-            <div className="flex items-center gap-3">
-              <StreakBadge streak={streak.current_streak} />
+        </header>
+
+        {/* Notification Banner */}
+        <Card className="p-3 mb-4 border-primary/30 bg-primary/5 flex items-center gap-3">
+          <Bell className="w-4 h-4 text-primary flex-shrink-0" />
+          <p className="text-sm text-foreground flex-1">{notification}</p>
+        </Card>
+
+        {/* Personalized Stats - Only for logged in users */}
+        {user && ratings && (
+          <Card className="p-4 mb-4 border-2 border-primary/20">
+            <div className="flex items-center justify-between">
+              <div className="flex-1">
+                <div className="flex items-center gap-3 mb-2">
+                  <div className="text-3xl font-bold text-primary font-mono">
+                    {Math.round(ratings.overallRating)}
+                  </div>
+                  <div>
+                    <p className="text-xs text-muted-foreground">Skill Rating</p>
+                    <p className="text-sm font-medium">{skillLevel?.level}</p>
+                  </div>
+                </div>
+                {projectedScore && (
+                  <p className="text-sm text-muted-foreground">
+                    Projected SAT: <span className="font-semibold text-foreground">{projectedScore.min}-{projectedScore.max}</span>
+                  </p>
+                )}
+              </div>
+              
+              <div className="flex flex-col items-end gap-2">
+                {streak && streak.current_streak > 0 && (
+                  <div className="flex items-center gap-1 px-3 py-1 rounded-full bg-orange-500/10 text-orange-600 dark:text-orange-400">
+                    <Flame className="w-4 h-4" />
+                    <span className="font-bold">{streak.current_streak}</span>
+                  </div>
+                )}
+                <div className="flex items-center gap-1 text-xs text-muted-foreground">
+                  <span>{quizCount} sessions</span>
+                </div>
+              </div>
             </div>
-          )}
-        </div>
-
-        {/* Hero */}
-        <div className="text-center space-y-4 py-6">
-          <div className="p-8 md:p-10 rounded-3xl bg-gradient-to-br from-primary to-accent shadow-2xl shadow-primary/30 inline-block">
-            <span className="text-5xl md:text-7xl font-bold text-primary-foreground font-mono">
-              40²
-            </span>
-          </div>
-          <p className="text-xl md:text-2xl text-muted-foreground font-medium">Join the Rare Air of the 99.97% Club</p>
-        </div>
-
-        {/* Feature Cards - centered */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
-          <Link to="/practice-test">
-            <Card className="p-4 hover:border-primary/50 transition-colors cursor-pointer h-full text-center flex flex-col items-center">
-              <Target className="w-8 h-8 text-primary mb-2" />
-              <h3 className="font-semibold text-sm">(20+20)²</h3>
-              <p className="text-xs text-muted-foreground">SAT Prediction Test</p>
-            </Card>
-          </Link>
-          <Link to="/insights">
-            <Card className="p-4 hover:border-primary/50 transition-colors cursor-pointer h-full text-center flex flex-col items-center">
-              <Brain className="w-8 h-8 text-purple-500 mb-2" />
-              <h3 className="font-semibold text-sm">Master Your Weakness</h3>
-              <p className="text-xs text-muted-foreground"></p>
-            </Card>
-          </Link>
-          <Link to="/review">
-            <Card className="p-4 hover:border-primary/50 transition-colors cursor-pointer h-full text-center flex flex-col items-center">
-              <RefreshCw className="w-8 h-8 text-green-500 mb-2" />
-              <h3 className="font-semibold text-sm">Master What You Missed</h3>
-              <p className="text-xs text-muted-foreground"></p>
-            </Card>
-          </Link>
-          <Link to="/problems-by-topic">
-            <Card className="p-4 hover:border-primary/50 transition-colors cursor-pointer h-full text-center flex flex-col items-center">
-              <BookMarked className="w-8 h-8 text-amber-500 mb-2" />
-              <h3 className="font-semibold text-sm">Problems by Topic</h3>
-              <p className="text-xs text-muted-foreground">Practice specific areas</p>
-            </Card>
-          </Link>
-        </div>
-
-
-        {/* Stats Row - Only for logged in users */}
-        {user && (
-          <div className="space-y-4">
-            {/* Skill Rating - Featured */}
-            {ratings && (
-              <SkillRatingCard
-                mathRating={ratings.mathRating}
-                englishRating={ratings.englishRating}
-                overallRating={ratings.overallRating}
-              />
-            )}
             
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <Card className="p-4 border-2 border-border">
-                <XPBar quizCount={quizCount} />
-              </Card>
-              <Card className="p-4 border-2 border-border">
-                <div className="flex items-center justify-between mb-2">
-                  <h3 className="font-semibold flex items-center gap-2">
-                    <Award className="w-4 h-4 text-primary" />
-                    Achievements
-                  </h3>
-                  <span className="text-sm text-muted-foreground">
-                    {achievements.length}/{Object.keys(achievementDefs).length}
-                  </span>
+            {/* Mini progress bars for Math/English */}
+            <div className="grid grid-cols-2 gap-3 mt-3 pt-3 border-t border-border">
+              <div className="flex items-center gap-2">
+                <Calculator className="w-4 h-4 text-primary" />
+                <div className="flex-1">
+                  <div className="flex justify-between text-xs mb-1">
+                    <span>Math</span>
+                    <span className="font-medium">{Math.round(ratings.mathRating)}</span>
+                  </div>
+                  <div className="h-1.5 bg-muted rounded-full overflow-hidden">
+                    <div 
+                      className="h-full bg-primary rounded-full transition-all"
+                      style={{ width: `${Math.min((ratings.mathRating / 2000) * 100, 100)}%` }}
+                    />
+                  </div>
                 </div>
-                <div className="flex gap-2 flex-wrap">
-                  {Object.entries(achievementDefs).slice(0, 6).map(([key, def]) => {
-                    const unlocked = achievements.find((a) => a.achievement_type === key);
-                    return (
-                      <AchievementBadge
-                        key={key}
-                        icon={def.icon}
-                        name={def.name}
-                        description={def.desc}
-                        unlocked={!!unlocked}
-                        unlockedAt={unlocked?.unlocked_at}
-                      />
-                    );
-                  })}
+              </div>
+              <div className="flex items-center gap-2">
+                <PenTool className="w-4 h-4 text-secondary" />
+                <div className="flex-1">
+                  <div className="flex justify-between text-xs mb-1">
+                    <span>English</span>
+                    <span className="font-medium">{Math.round(ratings.englishRating)}</span>
+                  </div>
+                  <div className="h-1.5 bg-muted rounded-full overflow-hidden">
+                    <div 
+                      className="h-full bg-secondary rounded-full transition-all"
+                      style={{ width: `${Math.min((ratings.englishRating / 2000) * 100, 100)}%` }}
+                    />
+                  </div>
                 </div>
-              </Card>
+              </div>
             </div>
-          </div>
+          </Card>
         )}
 
-        {/* Main Card */}
-        <Card className="p-6 md:p-8 border-2 border-border text-left space-y-6 relative overflow-hidden">
-          {/* Floating math expressions in the card */}
-          <div className="absolute inset-0 pointer-events-none overflow-hidden opacity-20">
-            <span className="absolute left-4 top-4 text-xl font-mono text-primary font-bold">32²+24²</span>
-            <span className="absolute right-4 top-4 text-xl font-mono text-accent font-bold">2⁶×5²</span>
-            <span className="absolute left-4 bottom-4 text-lg font-mono text-secondary font-bold">∫₀⁴⁰2x dx</span>
-            <span className="absolute right-4 bottom-4 text-lg font-mono text-primary font-bold">B14₁₂</span>
-            <span className="absolute right-1/4 top-1/3 font-mono text-accent text-sm">
-              <span className="inline-flex flex-col items-center leading-none">
-                <span className="text-xs">40</span>
-                <span className="text-lg">Σ</span>
-                <span className="text-xs">k=1</span>
-              </span>
-            </span>
-          </div>
-          
-          {/* Subject Selection */}
-          <div className="space-y-4 relative z-10">
-            <h3 className="font-semibold text-lg">Choose Subject</h3>
-            
-            {/* SAT Subjects */}
-            <div className="space-y-2">
-              <p className="text-xs text-muted-foreground font-medium">📚 SAT Prep</p>
-              <div className="grid grid-cols-3 gap-3">
-                {satSubjectOptions.map(({ value, label, icon: Icon, color }) => (
-                  <button
-                    key={value}
-                    onClick={() => setSubject(value)}
-                    className={`p-4 rounded-xl border-2 transition-all duration-200 ${
-                      subject === value
-                        ? `border-${color} bg-${color}/10 shadow-lg shadow-${color}/20`
-                        : "border-border hover:border-muted-foreground/50"
-                    }`}
-                  >
-                    <div className="flex flex-col items-center gap-2">
-                      <Icon className={`w-6 h-6 ${subject === value ? `text-${color}` : "text-muted-foreground"}`} />
-                      <span className={`font-medium ${subject === value ? "" : "text-muted-foreground"}`}>
-                        {label}
-                      </span>
-                    </div>
-                  </button>
-                ))}
-              </div>
-            </div>
-
-            {/* Advanced Subjects - Beyond SAT */}
-            <div className="space-y-2 pt-2 border-t border-dashed border-border">
-              <p className="text-xs text-muted-foreground font-medium">🚀 Beyond SAT (Future App)</p>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
-                {advancedSubjectOptions.map(({ value, label, icon: Icon, color, description, count }) => (
-                  <button
-                    key={value}
-                    onClick={() => setSubject(value)}
-                    className={`p-3 rounded-xl border-2 transition-all duration-200 text-left ${
-                      subject === value
-                        ? `border-${color} bg-${color}/10 shadow-lg`
-                        : "border-border hover:border-muted-foreground/50"
-                    }`}
-                  >
-                    <div className="flex items-center gap-2">
-                      <Icon className={`w-5 h-5 ${subject === value ? `text-${color}` : "text-muted-foreground"}`} />
-                      <div className="flex-1">
-                        <span className={`font-medium text-sm ${subject === value ? "" : "text-muted-foreground"}`}>
-                          {label}
-                        </span>
-                        <p className="text-xs text-muted-foreground">{count} questions</p>
-                      </div>
-                    </div>
-                  </button>
-                ))}
-              </div>
-            </div>
-
-            <p className="text-sm text-muted-foreground">
-              {availableCounts[subject]} questions available
-            </p>
-          </div>
-
-          {/* Difficulty Selection */}
-          <div className="space-y-4">
-            <h3 className="font-semibold text-lg">Difficulty Level</h3>
-            
-            {/* SAT Prep Range Buttons */}
-            <div className="space-y-2">
-              <p className="text-xs text-muted-foreground font-medium">📚 SAT Prep (Levels 1-10)</p>
-              <div className="grid grid-cols-5 gap-2">
-                {[
-                  { value: 'all' as DifficultyRange, label: 'All', color: 'bg-muted' },
-                  { value: 'easy' as DifficultyRange, label: '1-3', sublabel: 'Easy', color: 'bg-green-500/20' },
-                  { value: 'medium' as DifficultyRange, label: '4-6', sublabel: 'Medium', color: 'bg-yellow-500/20' },
-                  { value: 'hard' as DifficultyRange, label: '7-8', sublabel: 'Hard', color: 'bg-orange-500/20' },
-                  { value: 'veryhard' as DifficultyRange, label: '9-10', sublabel: 'Expert', color: 'bg-red-500/20' },
-                ].map(({ value, label, sublabel, color }) => (
-                  <button
-                    key={value}
-                    onClick={() => setDifficultyRange(value)}
-                    className={`p-2 rounded-lg border-2 transition-all text-center ${
-                      difficultyRange === value
-                        ? `${color} border-primary shadow-md`
-                        : 'border-border hover:border-muted-foreground/50'
-                    }`}
-                  >
-                    <span className="font-bold text-sm">{label}</span>
-                    {sublabel && <p className="text-xs text-muted-foreground">{sublabel}</p>}
-                  </button>
-                ))}
-              </div>
-            </div>
-
-            {/* Bonus Challenge Levels */}
-            <div className="space-y-2 pt-2 border-t border-dashed border-border">
-              <p className="text-xs text-muted-foreground font-medium">🔥 Bonus Challenges (Beyond SAT - Optional)</p>
-              <p className="text-xs text-muted-foreground/70">These questions go beyond SAT difficulty and may include advanced concepts like calculus. Great for extra challenge!</p>
-              <div className="grid grid-cols-3 gap-2">
-                {[
-                  { value: 'titan' as DifficultyRange, label: '11', sublabel: 'Titan', color: 'bg-purple-500/20', textColor: 'text-purple-500' },
-                  { value: 'savant' as DifficultyRange, label: '12', sublabel: 'Savant', color: 'bg-pink-500/20', textColor: 'text-pink-500' },
-                  { value: 'insane' as DifficultyRange, label: '13', sublabel: 'Insane', color: 'bg-fuchsia-500/20', textColor: 'text-fuchsia-500' },
-                ].map(({ value, label, sublabel, color, textColor }) => (
-                  <button
-                    key={value}
-                    onClick={() => setDifficultyRange(value)}
-                    className={`p-2 rounded-lg border-2 transition-all text-center ${
-                      difficultyRange === value
-                        ? `${color} border-primary shadow-md`
-                        : 'border-border hover:border-muted-foreground/50'
-                    }`}
-                  >
-                    <span className={`font-bold text-sm ${textColor}`}>{label}</span>
-                    <p className={`text-xs ${textColor} font-medium`}>{sublabel}</p>
-                  </button>
-                ))}
-              </div>
-            </div>
-
-            {/* Question counts per level - SAT levels */}
-            <div className="space-y-2">
-              <div className="flex items-center gap-1 flex-wrap">
-                <span className="text-xs text-muted-foreground mr-1">SAT:</span>
-                {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((level) => (
-                  <div
-                    key={level}
-                    className={`flex flex-col items-center px-2 py-1 rounded-lg text-xs min-w-[36px] ${
-                      level <= 3 ? 'bg-green-500/10 text-green-700 dark:text-green-400'
-                      : level <= 6 ? 'bg-yellow-500/10 text-yellow-700 dark:text-yellow-400'
-                      : level <= 8 ? 'bg-orange-500/10 text-orange-700 dark:text-orange-400'
-                      : 'bg-red-500/10 text-red-700 dark:text-red-400'
-                    }`}
-                  >
-                    <span className="font-bold">{level}</span>
-                    <span className="text-[10px] opacity-70">{countsPerLevel[level]}</span>
-                  </div>
-                ))}
-              </div>
-              <div className="flex items-center gap-1 flex-wrap">
-                <span className="text-xs text-muted-foreground mr-1">Bonus:</span>
-                {[
-                  { level: 11, name: 'Titan', color: 'bg-purple-500/10 text-purple-700 dark:text-purple-400' },
-                  { level: 12, name: 'Savant', color: 'bg-pink-500/10 text-pink-700 dark:text-pink-400' },
-                  { level: 13, name: 'Insane', color: 'bg-fuchsia-500/10 text-fuchsia-700 dark:text-fuchsia-400' },
-                ].map(({ level, name, color }) => (
-                  <div
-                    key={level}
-                    className={`flex flex-col items-center px-2 py-1 rounded-lg text-xs min-w-[48px] ${color}`}
-                  >
-                    <span className="font-bold text-[10px]">{name}</span>
-                    <span className="text-[10px] opacity-70">{countsPerLevel[level]}</span>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-
-          {/* Question Count Selection */}
-          <div className="space-y-4">
-            <h3 className="font-semibold text-lg">Number of Questions</h3>
-            <RadioGroup
-              value={String(questionCount)}
-              onValueChange={(v) => setQuestionCount(Number(v) as QuestionCount)}
-              className="flex flex-wrap gap-4"
+        {/* Quick Start - Primary CTA */}
+        <Card className="p-5 mb-4 border-2 border-border">
+          <h2 className="font-semibold mb-3">Quick Practice</h2>
+          <div className="grid grid-cols-2 gap-3">
+            <Button 
+              size="lg" 
+              className="h-16 text-lg gap-2"
+              onClick={() => handleQuickStart('math')}
             >
-              {countOptions.map(({ value, label }) => (
-                <div key={value} className="flex items-center space-x-2">
-                  <RadioGroupItem value={String(value)} id={`count-${value}`} />
-                  <Label htmlFor={`count-${value}`} className="cursor-pointer">
-                    {label}
-                  </Label>
+              <Calculator className="w-5 h-5" />
+              Math
+            </Button>
+            <Button 
+              size="lg" 
+              variant="secondary"
+              className="h-16 text-lg gap-2"
+              onClick={() => handleQuickStart('english')}
+            >
+              <PenTool className="w-5 h-5" />
+              English
+            </Button>
+          </div>
+          <Link to="/practice-test" className="block mt-3">
+            <Button variant="outline" className="w-full gap-2">
+              <Play className="w-4 h-4" />
+              Full Practice Test
+              <ChevronRight className="w-4 h-4 ml-auto" />
+            </Button>
+          </Link>
+        </Card>
+
+        {/* Gamification Row */}
+        <div className="grid grid-cols-2 gap-3 mb-4">
+          {/* Achievements Mini */}
+          <Card className="p-3">
+            <div className="flex items-center justify-between mb-2">
+              <div className="flex items-center gap-1">
+                <Award className="w-4 h-4 text-primary" />
+                <span className="text-xs font-medium">Badges</span>
+              </div>
+              <span className="text-xs text-muted-foreground">
+                {achievements.length}/{Object.keys(achievementDefs).length}
+              </span>
+            </div>
+            <div className="flex gap-1 flex-wrap">
+              {Object.entries(achievementDefs).slice(0, 4).map(([key, def]) => {
+                const unlocked = achievements.find((a) => a.achievement_type === key);
+                return (
+                  <AchievementBadge
+                    key={key}
+                    icon={def.icon}
+                    name={def.name}
+                    description={def.desc}
+                    unlocked={!!unlocked}
+                    unlockedAt={unlocked?.unlocked_at}
+                  />
+                );
+              })}
+            </div>
+          </Card>
+
+          {/* Leaderboard Mini */}
+          <Card className="p-3">
+            <Link to="/leaderboard" className="flex items-center justify-between mb-2 hover:text-primary transition-colors">
+              <div className="flex items-center gap-1">
+                <Trophy className="w-4 h-4 text-amber-500" />
+                <span className="text-xs font-medium">Top Players</span>
+              </div>
+              <ChevronRight className="w-3 h-3 text-muted-foreground" />
+            </Link>
+            <div className="space-y-1">
+              {topPlayers.slice(0, 3).map((player, idx) => (
+                <div key={player.username} className="flex items-center gap-2 text-xs">
+                  <span className={`font-bold ${idx === 0 ? 'text-amber-500' : idx === 1 ? 'text-gray-400' : 'text-orange-400'}`}>
+                    {idx + 1}
+                  </span>
+                  <span className="truncate flex-1">{player.avatar_emoji || '👤'} {player.username}</span>
+                  <span className="text-muted-foreground">{player.total_score}</span>
                 </div>
               ))}
-            </RadioGroup>
-          </div>
-
-          {/* Timer Option */}
-          {!isAdvancedSubject && (
-            <div className="flex items-center justify-between p-4 rounded-lg bg-muted/50 border border-border">
-              <div className="flex items-center gap-3">
-                <Clock className="w-5 h-5 text-primary" />
-                <div>
-                  <p className="font-medium">SAT-Paced Timer</p>
-                  <p className="text-xs text-muted-foreground">
-                    {timerEnabled ? `~${getExpectedTime(questionCount)} based on real SAT timing` : 'Practice without time pressure'}
-                  </p>
-                </div>
-              </div>
-              <Switch
-                checked={timerEnabled}
-                onCheckedChange={setTimerEnabled}
-              />
+              {topPlayers.length === 0 && (
+                <p className="text-xs text-muted-foreground">No scores yet</p>
+              )}
             </div>
-          )}
+          </Card>
+        </div>
 
-          <Button size="lg" className="w-full text-lg py-6 relative z-10" onClick={handleStartPractice}>
-            🚀 Start Practice
-          </Button>
-        </Card>
+        {/* Quick Links - Minimal */}
+        <div className="flex gap-2 justify-center mt-auto pb-4">
+          <Link to="/insights">
+            <Button variant="ghost" size="sm" className="text-xs">
+              Insights
+            </Button>
+          </Link>
+          <Link to="/review">
+            <Button variant="ghost" size="sm" className="text-xs">
+              Review
+            </Button>
+          </Link>
+          <Link to="/problems-by-topic">
+            <Button variant="ghost" size="sm" className="text-xs">
+              By Topic
+            </Button>
+          </Link>
+        </div>
       </div>
     </div>
   );
