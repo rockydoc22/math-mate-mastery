@@ -16,6 +16,7 @@ import { importedSATMathQuestions10 } from './importedSATQuestions10';
 import { importedSATMathQuestions11 } from './importedSATQuestions11';
 import { importedSATMathQuestions12 } from './importedSATQuestions12';
 import { level8QuestionsExtra } from './level8QuestionsExtra';
+import { pdfSATMathQuestions } from './pdfSATQuestions';
 import { rateDifficulty } from '@/utils/difficultyRating';
 
 export interface Question {
