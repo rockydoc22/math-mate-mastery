@@ -2,6 +2,7 @@ import englishQuestionsRaw from './englishQuestionsRaw.json';
 import { rateDifficulty } from '@/utils/difficultyRating';
 import { uploadedEnglishQuestions } from './uploadedEnglishQuestions';
 import { hardEnglishQuestions } from './hardEnglishQuestions';
+import { satEnglishQuestions } from './satEnglishQuestions';
 
 export interface EnglishQuestion {
   id: string;
@@ -54,4 +55,4 @@ const baseEnglishQuestions: EnglishQuestion[] = (englishQuestionsRaw as RawEngli
 });
 
 // Combine all English questions
-export const englishQuestions: EnglishQuestion[] = [...baseEnglishQuestions, ...uploadedEnglishQuestions, ...hardEnglishQuestions];
+export const englishQuestions: EnglishQuestion[] = [...baseEnglishQuestions, ...uploadedEnglishQuestions, ...hardEnglishQuestions, ...satEnglishQuestions];
