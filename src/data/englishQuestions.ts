@@ -4,6 +4,7 @@ import { uploadedEnglishQuestions } from './uploadedEnglishQuestions';
 import { hardEnglishQuestions } from './hardEnglishQuestions';
 import { satEnglishQuestions } from './satEnglishQuestions';
 import { additionalEnglishQuestions } from './additionalEnglishQuestions';
+import { extraEnglishQuestions } from './extraEnglishQuestions';
 
 export interface EnglishQuestion {
   id: string;
@@ -56,4 +57,4 @@ const baseEnglishQuestions: EnglishQuestion[] = (englishQuestionsRaw as RawEngli
 });
 
 // Combine all English questions
-export const englishQuestions: EnglishQuestion[] = [...baseEnglishQuestions, ...uploadedEnglishQuestions, ...hardEnglishQuestions, ...satEnglishQuestions, ...additionalEnglishQuestions];
+export const englishQuestions: EnglishQuestion[] = [...baseEnglishQuestions, ...uploadedEnglishQuestions, ...hardEnglishQuestions, ...satEnglishQuestions, ...additionalEnglishQuestions, ...extraEnglishQuestions];
