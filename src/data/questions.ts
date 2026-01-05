@@ -20,6 +20,7 @@ import { pdfSATMathQuestions } from './pdfSATQuestions';
 import { allLevelQuestions } from './allLevelQuestions';
 import { allFillerQuestions } from './levelFillerQuestions';
 import { balancedMathQuestions } from './balancedMathQuestions';
+import { mediumMathQuestions } from './mediumMathQuestions';
 import { rateDifficulty } from '@/utils/difficultyRating';
 
 export interface Question {
@@ -74,4 +75,4 @@ const rawQuestions: Question[] = (mathQuestionsRaw as RawMathQuestion[]).map((q)
 });
 
 // Combine all math questions
-export const questions: Question[] = [...rawQuestions, ...additionalMathQuestions, ...newMathQuestions, ...uploadedMathQuestions, ...hardMathQuestions, ...importedSATMathQuestions, ...importedSATMathQuestions2, ...importedSATMathQuestions3, ...importedSATMathQuestions4, ...importedSATMathQuestions5, ...importedSATMathQuestions6, ...importedSATMathQuestions7, ...importedSATMathQuestions8, ...importedSATMathQuestions9, ...importedSATMathQuestions10, ...importedSATMathQuestions11, ...importedSATMathQuestions12, ...level8QuestionsExtra, ...pdfSATMathQuestions, ...allFillerQuestions, ...allLevelQuestions, ...balancedMathQuestions];
+export const questions: Question[] = [...rawQuestions, ...additionalMathQuestions, ...newMathQuestions, ...uploadedMathQuestions, ...hardMathQuestions, ...importedSATMathQuestions, ...importedSATMathQuestions2, ...importedSATMathQuestions3, ...importedSATMathQuestions4, ...importedSATMathQuestions5, ...importedSATMathQuestions6, ...importedSATMathQuestions7, ...importedSATMathQuestions8, ...importedSATMathQuestions9, ...importedSATMathQuestions10, ...importedSATMathQuestions11, ...importedSATMathQuestions12, ...level8QuestionsExtra, ...pdfSATMathQuestions, ...allFillerQuestions, ...allLevelQuestions, ...balancedMathQuestions, ...mediumMathQuestions];
