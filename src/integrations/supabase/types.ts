@@ -638,6 +638,13 @@ export type Database = {
       }
     }
     Functions: {
+      get_leaderboard_profile: {
+        Args: { profile_id: string }
+        Returns: {
+          avatar_emoji: string
+          username: string
+        }[]
+      }
       has_role: {
         Args: {
           _role: Database["public"]["Enums"]["app_role"]
