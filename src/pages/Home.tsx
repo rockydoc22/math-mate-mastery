@@ -3,7 +3,8 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { 
   Calculator, PenTool, Trophy, Zap, Users, LogIn, User, 
-  Award, Swords, ChevronRight, Flame, Bell, Play, Brain, X
+  Award, Swords, ChevronRight, Flame, Bell, Play, Brain, X,
+  Target, RotateCcw, BookOpen
 } from "lucide-react";
 import { useNavigate, Link } from "react-router-dom";
 import { useAuth } from "@/hooks/useAuth";
@@ -78,39 +79,8 @@ const Home = () => {
         
         {/* Hero Header */}
         <header className="flex flex-col items-center text-center mb-6 pt-4">
-          {/* Large 40² Logo */}
-          <div className="w-28 h-28 rounded-2xl bg-gradient-to-br from-primary to-accent flex items-center justify-center mb-3 shadow-lg">
-            <span className="text-4xl font-bold text-primary-foreground font-mono">40²</span>
-          </div>
-          
-          {/* Tagline */}
-          <h1 className="text-xl font-bold text-foreground mb-4">The 0.03% Club</h1>
-          
-          {/* Primary Action Buttons */}
-          <div className="flex items-center gap-3 mb-4">
-            <Link to="/battle">
-              <Button variant="destructive" size="lg" className="font-bold gap-2">
-                <Swords className="w-5 h-5" />
-                Fight Club
-              </Button>
-            </Link>
-            <Link to="/daily">
-              <Button variant="default" size="lg" className="font-bold gap-2">
-                <Zap className="w-5 h-5" />
-                Compounding to 1600
-              </Button>
-            </Link>
-          </div>
-          
-          {/* (20+20)² SAT Prediction Test */}
-          <Link to="/practice-test">
-            <Button variant="outline" size="lg" className="font-mono font-bold gap-2 mb-4">
-              (20+20)² SAT Prediction Test
-            </Button>
-          </Link>
-          
-          {/* Navigation Icons */}
-          <div className="flex items-center gap-2">
+          {/* Sign In / Profile at top */}
+          <div className="flex items-center gap-2 mb-4">
             <Link to="/leaderboard">
               <Button variant="ghost" size="sm">
                 <Trophy className="w-5 h-5" />
@@ -138,6 +108,37 @@ const Home = () => {
               </Link>
             )}
           </div>
+
+          {/* Large 40² Logo */}
+          <div className="w-28 h-28 rounded-2xl bg-gradient-to-br from-primary to-accent flex items-center justify-center mb-3 shadow-lg">
+            <span className="text-4xl font-bold text-primary-foreground font-mono">40²</span>
+          </div>
+          
+          {/* Tagline */}
+          <h1 className="text-xl font-bold text-foreground mb-4">The 0.03% Club</h1>
+          
+          {/* Primary Action Buttons */}
+          <div className="flex items-center gap-3 mb-4">
+            <Link to="/battle">
+              <Button variant="destructive" size="lg" className="font-bold gap-2">
+                <Swords className="w-5 h-5" />
+                Fight Club
+              </Button>
+            </Link>
+            <Link to="/daily">
+              <Button variant="default" size="lg" className="font-bold gap-2">
+                <Zap className="w-5 h-5" />
+                Compounding to 1600
+              </Button>
+            </Link>
+          </div>
+          
+          {/* (20+20)² SAT Prediction Test */}
+          <Link to="/practice-test">
+            <Button variant="outline" size="lg" className="font-mono font-bold gap-2">
+              (20+20)² SAT Prediction Test
+            </Button>
+          </Link>
         </header>
 
         {/* Study Plan Reminder */}
@@ -261,7 +262,30 @@ const Home = () => {
           </div>
         </Card>
 
-        {/* Gamification Row */}
+        {/* Study Modes */}
+        <Card className="p-4 mb-4 border-2 border-border">
+          <div className="grid grid-cols-3 gap-2">
+            <Link to="/study?mode=weakness">
+              <Button variant="outline" className="w-full h-auto py-3 flex flex-col gap-1">
+                <Target className="w-5 h-5 text-destructive" />
+                <span className="text-xs font-medium">Master Your Weakness</span>
+              </Button>
+            </Link>
+            <Link to="/review">
+              <Button variant="outline" className="w-full h-auto py-3 flex flex-col gap-1">
+                <RotateCcw className="w-5 h-5 text-orange-500" />
+                <span className="text-xs font-medium">Master What You Missed</span>
+              </Button>
+            </Link>
+            <Link to="/problems-by-topic">
+              <Button variant="outline" className="w-full h-auto py-3 flex flex-col gap-1">
+                <BookOpen className="w-5 h-5 text-primary" />
+                <span className="text-xs font-medium">Problems by Topic</span>
+              </Button>
+            </Link>
+          </div>
+        </Card>
+
         <div className="grid grid-cols-2 gap-3 mb-4">
           {/* Achievements Mini */}
           <Card className="p-3">
