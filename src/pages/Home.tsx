@@ -55,7 +55,8 @@ const Home = () => {
   // Set notification message
   useEffect(() => {
     if (!user) {
-      setNotification("Sign in to track your progress and compete!");
+      const randomMsg = motivationalMessages[Math.floor(Math.random() * motivationalMessages.length)];
+      setNotification(randomMsg);
     } else if (streak && streak.current_streak === 0) {
       setNotification("Start your streak today! Complete a practice session.");
     } else if (streak && streak.current_streak > 0) {
