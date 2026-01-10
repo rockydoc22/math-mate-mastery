@@ -14,6 +14,7 @@ import { XPBar } from "@/components/XPBar";
 import { AchievementBadge } from "@/components/AchievementBadge";
 import { StreakBadge } from "@/components/StreakBadge";
 import { SkillRatingCard } from "@/components/SkillRatingCard";
+import { PWAUpdateButton } from "@/components/PWAUpdateButton";
 
 const AVATAR_OPTIONS = ["😎", "🧑‍🎓", "🦊", "🐱", "🐶", "🦁", "🐼", "🦄", "🚀", "⭐", "🔥", "💎", "👑", "🎯", "🧠", "💪"];
 const THEME_OPTIONS = [
@@ -207,6 +208,12 @@ const Profile = () => {
             <Save className="w-4 h-4 mr-2" />
             {loading ? "Saving..." : "Save Changes"}
           </Button>
+        </Card>
+
+        {/* App Update */}
+        <Card className="p-6">
+          <h3 className="font-semibold mb-4">App Settings</h3>
+          <PWAUpdateButton />
         </Card>
       </div>
     </div>
