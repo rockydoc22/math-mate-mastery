@@ -17,8 +17,8 @@ const BattleLobby = () => {
   const [subject, setSubject] = useState("both");
   const [questionCount, setQuestionCount] = useState("10");
   const [maxPlayers, setMaxPlayers] = useState("4");
-  const [timeLimit, setTimeLimit] = useState("0"); // 0 = no limit
-  const [battleMode, setBattleMode] = useState("normal");
+  const [timeLimit, setTimeLimit] = useState("300"); // default 5 minutes
+  const [battleMode, setBattleMode] = useState("sudden_death");
   const [isCreating, setIsCreating] = useState(false);
   const [isJoining, setIsJoining] = useState(false);
 
@@ -153,10 +153,10 @@ const BattleLobby = () => {
           <div className="inline-flex items-center gap-3 mb-4">
             <Swords className="w-10 h-10 text-primary" />
             <h1 className="text-4xl font-bold bg-gradient-to-r from-primary to-primary/60 bg-clip-text text-transparent">
-              Battle Mode
+              Where Friends Defeat Friends
             </h1>
           </div>
-          <p className="text-muted-foreground">Challenge friends to a real-time SAT showdown!</p>
+          <p className="text-muted-foreground">Ready for a Good Ole Time SAT Butt Whooping?</p>
         </div>
 
         <div className="grid gap-6 md:grid-cols-2">
@@ -165,7 +165,7 @@ const BattleLobby = () => {
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
                 <Zap className="w-5 h-5 text-yellow-500" />
-                Create Battle
+                The First Rule of Fight Club Is: Pick Your Weapon
               </CardTitle>
             </CardHeader>
             <CardContent className="space-y-4">
@@ -177,14 +177,14 @@ const BattleLobby = () => {
                   </SelectTrigger>
                   <SelectContent>
                     <SelectItem value="both">Math & English</SelectItem>
-                    <SelectItem value="math">Math Only</SelectItem>
-                    <SelectItem value="english">English Only</SelectItem>
+                    <SelectItem value="math">Just Math</SelectItem>
+                    <SelectItem value="english">Just English</SelectItem>
                   </SelectContent>
                 </Select>
               </div>
 
               <div>
-                <label className="text-sm font-medium mb-2 block">Questions</label>
+                <label className="text-sm font-medium mb-2 block">The Second Rule of Fight Club Is: Format</label>
                 <Select value={questionCount} onValueChange={setQuestionCount}>
                   <SelectTrigger>
                     <SelectValue />
@@ -198,7 +198,7 @@ const BattleLobby = () => {
               </div>
 
               <div>
-                <label className="text-sm font-medium mb-2 block">Time Limit</label>
+                <label className="text-sm font-medium mb-2 block">Duration</label>
                 <Select value={timeLimit} onValueChange={setTimeLimit}>
                   <SelectTrigger>
                     <SelectValue />
@@ -279,7 +279,7 @@ const BattleLobby = () => {
               <div>
                 <label className="text-sm font-medium mb-2 block">Room Code</label>
                 <Input
-                  placeholder="Enter 6-letter code"
+                  placeholder="Enter 1-6 letter code"
                   value={joinCode}
                   onChange={(e) => setJoinCode(e.target.value.toUpperCase())}
                   maxLength={6}
@@ -293,7 +293,7 @@ const BattleLobby = () => {
 
               <Button 
                 onClick={handleJoinRoom} 
-                disabled={isJoining || joinCode.length < 6}
+                disabled={isJoining || joinCode.length < 1}
                 variant="secondary"
                 className="w-full"
               >
@@ -304,12 +304,12 @@ const BattleLobby = () => {
         </div>
 
         <div className="mt-8 p-4 bg-muted/50 rounded-lg">
-          <h3 className="font-semibold mb-2">Fair Battle System</h3>
-          <ul className="text-sm text-muted-foreground space-y-1">
-            <li>• <span className="text-primary font-medium">Skill-matched questions</span>: Each player gets questions suited to their level</li>
-            <li>• Winner determined by <span className="text-primary font-medium">accuracy first</span> (most correct answers wins)</li>
-            <li>• Speed is a <span className="text-primary font-medium">tiebreaker</span>: faster answers earn small bonus points</li>
-            <li>• Correct answer: <span className="text-primary font-medium">1000 pts</span> + up to <span className="text-primary font-medium">100 pts</span> speed bonus</li>
+          <h3 className="font-bold text-lg mb-2 text-primary">Fair Battle System</h3>
+          <ul className="text-base text-muted-foreground space-y-1 font-medium">
+            <li>• <span className="text-primary font-bold">Skill-matched questions</span>: Each player gets questions suited to their level</li>
+            <li>• Winner determined by <span className="text-primary font-bold">accuracy first</span> (most correct answers wins)</li>
+            <li>• Speed is a <span className="text-primary font-bold">tiebreaker</span>: faster answers earn small bonus points</li>
+            <li>• Correct answer: <span className="text-primary font-bold">1000 pts</span> + up to <span className="text-primary font-bold">100 pts</span> speed bonus</li>
           </ul>
         </div>
       </div>

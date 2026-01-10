@@ -77,14 +77,16 @@ const Home = () => {
         {/* Compact Header */}
         <header className="flex items-center justify-between mb-4">
           <div className="flex items-center gap-2">
-            <div className="p-2 rounded-xl bg-gradient-to-br from-primary to-accent">
-              <span className="text-lg font-bold text-primary-foreground font-mono">40²</span>
+            <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-primary to-accent flex items-center justify-center">
+              <span className="text-base font-bold text-primary-foreground font-mono">40²</span>
             </div>
+            <span className="text-sm font-semibold text-foreground">Join the 99.97% Club</span>
           </div>
           <div className="flex items-center gap-1">
             <Link to="/battle">
-              <Button variant="ghost" size="sm" className="text-destructive">
-                <Swords className="w-4 h-4" />
+              <Button variant="ghost" size="sm" className="text-destructive font-bold text-base px-3">
+                <Swords className="w-5 h-5 mr-1" />
+                Fight Club
               </Button>
             </Link>
             <Link to="/daily">
