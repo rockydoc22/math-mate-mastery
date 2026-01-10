@@ -121,7 +121,7 @@ export const StudyPlanBuilder = () => {
         .update({ is_active: false })
         .eq("user_id", user.id);
 
-      // Create new plan with reminder settings
+      // Create new plan with reminder settings (email stored separately for security)
       const { error } = await supabase.from("study_plans").insert({
         user_id: user.id,
         exam_date: examDate,
@@ -129,13 +129,20 @@ export const StudyPlanBuilder = () => {
         baseline_score: baselineScore[0],
         target_score: projectedFinalScore,
         is_active: true,
-        reminder_email: reminderEmail || null,
         daily_reminder_enabled: dailyReminder,
         weekly_reminder_enabled: weeklyReminder,
         reminder_time: reminderTime + ":00",
       });
 
       if (error) throw error;
+
+      // Store email in separate admin-only table (users can insert but not read)
+      if (reminderEmail) {
+        await supabase.from("user_notification_settings").upsert({
+          user_id: user.id,
+          reminder_email: reminderEmail,
+        }, { onConflict: 'user_id' });
+      }
 
       setPlanCreated(true);
       toast.success("Brain Building Program created! You'll see reminders on login.");

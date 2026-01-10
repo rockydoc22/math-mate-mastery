@@ -528,7 +528,6 @@ export type Database = {
           last_daily_reminder_sent: string | null
           last_reminder_shown: string | null
           last_weekly_reminder_sent: string | null
-          reminder_email: string | null
           reminder_time: string | null
           target_score: number | null
           updated_at: string
@@ -546,7 +545,6 @@ export type Database = {
           last_daily_reminder_sent?: string | null
           last_reminder_shown?: string | null
           last_weekly_reminder_sent?: string | null
-          reminder_email?: string | null
           reminder_time?: string | null
           target_score?: number | null
           updated_at?: string
@@ -564,12 +562,35 @@ export type Database = {
           last_daily_reminder_sent?: string | null
           last_reminder_shown?: string | null
           last_weekly_reminder_sent?: string | null
-          reminder_email?: string | null
           reminder_time?: string | null
           target_score?: number | null
           updated_at?: string
           user_id?: string
           weekly_reminder_enabled?: boolean | null
+        }
+        Relationships: []
+      }
+      user_notification_settings: {
+        Row: {
+          created_at: string
+          id: string
+          reminder_email: string | null
+          updated_at: string
+          user_id: string
+        }
+        Insert: {
+          created_at?: string
+          id?: string
+          reminder_email?: string | null
+          updated_at?: string
+          user_id: string
+        }
+        Update: {
+          created_at?: string
+          id?: string
+          reminder_email?: string | null
+          updated_at?: string
+          user_id?: string
         }
         Relationships: []
       }
