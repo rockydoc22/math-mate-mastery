@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogFooter } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
 import { Label } from "@/components/ui/label";
@@ -26,10 +26,24 @@ export const FlagQuestionModal = ({ isOpen, onClose, questionId, questionType }:
   const [issueType, setIssueType] = useState<string>('');
   const [notes, setNotes] = useState('');
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [userId, setUserId] = useState<string | null>(null);
+
+  useEffect(() => {
+    const getUser = async () => {
+      const { data: { user } } = await supabase.auth.getUser();
+      setUserId(user?.id || null);
+    };
+    getUser();
+  }, []);
 
   const handleSubmit = async () => {
     if (!issueType) {
       toast({ title: "Please select an issue type", variant: "destructive" });
+      return;
+    }
+
+    if (!userId) {
+      toast({ title: "Please sign in to flag questions", variant: "destructive" });
       return;
     }
 
@@ -40,6 +54,7 @@ export const FlagQuestionModal = ({ isOpen, onClose, questionId, questionType }:
         question_type: questionType,
         issue_type: issueType,
         notes: notes.trim() || null,
+        user_id: userId,
       });
 
       if (error) throw error;

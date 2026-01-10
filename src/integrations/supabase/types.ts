@@ -201,6 +201,7 @@ export type Database = {
           question_id: string
           question_type: string
           status: string
+          user_id: string | null
         }
         Insert: {
           created_at?: string
@@ -210,6 +211,7 @@ export type Database = {
           question_id: string
           question_type: string
           status?: string
+          user_id?: string | null
         }
         Update: {
           created_at?: string
@@ -219,6 +221,7 @@ export type Database = {
           question_id?: string
           question_type?: string
           status?: string
+          user_id?: string | null
         }
         Relationships: []
       }
