@@ -90,8 +90,9 @@ const Home = () => {
               </Button>
             </Link>
             <Link to="/daily">
-              <Button variant="ghost" size="sm" className="text-primary">
-                <Zap className="w-4 h-4" />
+              <Button variant="ghost" size="sm" className="text-primary font-medium text-xs px-2">
+                <Zap className="w-4 h-4 mr-1" />
+                Compounding to 1600
               </Button>
             </Link>
             <Link to="/leaderboard">
