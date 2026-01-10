@@ -3,12 +3,13 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { 
   Calculator, PenTool, Trophy, Zap, Users, LogIn, User, 
-  Award, Swords, ChevronRight, Flame, Bell, Play
+  Award, Swords, ChevronRight, Flame, Bell, Play, Brain, X
 } from "lucide-react";
 import { useNavigate, Link } from "react-router-dom";
 import { useAuth } from "@/hooks/useAuth";
 import { useGameStats } from "@/hooks/useGameStats";
 import { useSkillRating } from "@/hooks/useSkillRating";
+import { useStudyPlan } from "@/hooks/useStudyPlan";
 import { AchievementBadge } from "@/components/AchievementBadge";
 import { getSkillLevel, ratingToSATScore } from "@/utils/eloRating";
 import { supabase } from "@/integrations/supabase/client";
@@ -33,6 +34,7 @@ const Home = () => {
   const { user } = useAuth();
   const { streak, achievements, quizCount, achievementDefs } = useGameStats();
   const { ratings } = useSkillRating();
+  const { activePlan, showReminder, dismissReminder, daysUntilExam } = useStudyPlan();
   const [topPlayers, setTopPlayers] = useState<LeaderboardEntry[]>([]);
   const [notification, setNotification] = useState<string>("");
 
@@ -123,6 +125,27 @@ const Home = () => {
             )}
           </div>
         </header>
+
+        {/* Study Plan Reminder */}
+        {showReminder && activePlan && (
+          <Card className="p-4 mb-4 border-primary/50 bg-gradient-to-r from-primary/10 to-accent/10">
+            <div className="flex items-start gap-3">
+              <Brain className="w-6 h-6 text-primary flex-shrink-0" />
+              <div className="flex-1">
+                <p className="font-semibold text-primary">Brain Building Program Active!</p>
+                <p className="text-sm text-muted-foreground">
+                  {daysUntilExam} days until exam • {activePlan.daily_minutes} min/day goal
+                </p>
+                <Link to="/daily">
+                  <Button size="sm" className="mt-2">Start Today's Practice</Button>
+                </Link>
+              </div>
+              <Button variant="ghost" size="icon" onClick={dismissReminder} className="flex-shrink-0">
+                <X className="w-4 h-4" />
+              </Button>
+            </div>
+          </Card>
+        )}
 
         {/* Notification Banner */}
         <Card className="p-3 mb-4 border-primary/30 bg-primary/5 flex items-center gap-3">
@@ -288,7 +311,12 @@ const Home = () => {
         </div>
 
         {/* Quick Links - Minimal */}
-        <div className="flex gap-2 justify-center mt-auto pb-4">
+        <div className="flex gap-2 justify-center flex-wrap mt-auto pb-4">
+          <Link to="/why-it-works">
+            <Button variant="ghost" size="sm" className="text-xs text-primary font-medium">
+              Why 1600² Works
+            </Button>
+          </Link>
           <Link to="/insights">
             <Button variant="ghost" size="sm" className="text-xs">
               Insights
