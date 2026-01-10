@@ -513,6 +513,45 @@ export type Database = {
         }
         Relationships: []
       }
+      study_plans: {
+        Row: {
+          baseline_score: number | null
+          created_at: string
+          daily_minutes: number
+          exam_date: string
+          id: string
+          is_active: boolean
+          last_reminder_shown: string | null
+          target_score: number | null
+          updated_at: string
+          user_id: string
+        }
+        Insert: {
+          baseline_score?: number | null
+          created_at?: string
+          daily_minutes?: number
+          exam_date: string
+          id?: string
+          is_active?: boolean
+          last_reminder_shown?: string | null
+          target_score?: number | null
+          updated_at?: string
+          user_id: string
+        }
+        Update: {
+          baseline_score?: number | null
+          created_at?: string
+          daily_minutes?: number
+          exam_date?: string
+          id?: string
+          is_active?: boolean
+          last_reminder_shown?: string | null
+          target_score?: number | null
+          updated_at?: string
+          user_id?: string
+        }
+        Relationships: []
+      }
       user_roles: {
         Row: {
           created_at: string

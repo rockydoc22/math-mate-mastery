@@ -22,6 +22,7 @@ import BattleRoom from "./pages/BattleRoom";
 import PracticeTest from "./pages/PracticeTest";
 import Insights from "./pages/Insights";
 import Review from "./pages/Review";
+import WhyItWorks from "./pages/WhyItWorks";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -57,6 +58,7 @@ const App = () => (
             <Route path="/practice-test" element={<PracticeTest />} />
             <Route path="/insights" element={<Insights />} />
             <Route path="/review" element={<Review />} />
+            <Route path="/why-it-works" element={<WhyItWorks />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
