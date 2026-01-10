@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useSearchParams } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Card } from "@/components/ui/card";
@@ -9,18 +9,41 @@ import { toast } from "@/hooks/use-toast";
 import { supabase } from "@/integrations/supabase/client";
 import { Zap, User, Mail, Lock, ArrowLeft } from "lucide-react";
 
-type AuthMode = "signIn" | "signUp" | "forgotPassword";
+type AuthMode = "signIn" | "signUp" | "forgotPassword" | "resetPassword";
 
 const Auth = () => {
   const navigate = useNavigate();
+  const [searchParams] = useSearchParams();
   const { user, signIn, signUp } = useAuth();
   const [mode, setMode] = useState<AuthMode>("signIn");
   const [loading, setLoading] = useState(false);
-  const [form, setForm] = useState({ email: "", password: "", username: "" });
+  const [form, setForm] = useState({ email: "", password: "", username: "", confirmPassword: "" });
+
+  // Check for password reset flow
+  useEffect(() => {
+    const isReset = searchParams.get("reset") === "true";
+    
+    // Listen for PASSWORD_RECOVERY event from Supabase
+    const { data: { subscription } } = supabase.auth.onAuthStateChange((event, session) => {
+      if (event === "PASSWORD_RECOVERY") {
+        setMode("resetPassword");
+      }
+    });
+
+    // Also check URL hash for recovery token (Supabase sends these)
+    const hashParams = new URLSearchParams(window.location.hash.substring(1));
+    const type = hashParams.get("type");
+    if (type === "recovery" || isReset) {
+      setMode("resetPassword");
+    }
+
+    return () => subscription.unsubscribe();
+  }, [searchParams]);
 
   useEffect(() => {
-    if (user) navigate("/");
-  }, [user, navigate]);
+    // Don't redirect if in reset password mode
+    if (user && mode !== "resetPassword") navigate("/");
+  }, [user, navigate, mode]);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -47,6 +70,21 @@ const Auth = () => {
         if (error) throw error;
         toast({ title: "Check your email for the reset link! 📧" });
         setMode("signIn");
+      } else if (mode === "resetPassword") {
+        if (form.password !== form.confirmPassword) {
+          toast({ title: "Passwords don't match", variant: "destructive" });
+          setLoading(false);
+          return;
+        }
+        if (form.password.length < 1) {
+          toast({ title: "Password required", variant: "destructive" });
+          setLoading(false);
+          return;
+        }
+        const { error } = await supabase.auth.updateUser({ password: form.password });
+        if (error) throw error;
+        toast({ title: "Password updated successfully! 🎉" });
+        navigate("/");
       }
     } catch (err: any) {
       toast({
@@ -63,6 +101,7 @@ const Auth = () => {
     switch (mode) {
       case "signUp": return "Create your account to start grinding";
       case "forgotPassword": return "Reset your password";
+      case "resetPassword": return "Enter your new password";
       default: return "Sign in to continue your journey";
     }
   };
@@ -72,6 +111,7 @@ const Auth = () => {
     switch (mode) {
       case "signUp": return "Create Account";
       case "forgotPassword": return "Send Reset Link";
+      case "resetPassword": return "Update Password";
       default: return "Sign In";
     }
   };
@@ -90,11 +130,15 @@ const Auth = () => {
         </div>
 
         <Card className="p-6 border-2 border-border bg-card/80 backdrop-blur">
-          {mode === "forgotPassword" && (
+          {(mode === "forgotPassword" || mode === "resetPassword") && (
             <button
               type="button"
               className="flex items-center gap-1 text-muted-foreground hover:text-foreground text-sm mb-4"
-              onClick={() => setMode("signIn")}
+              onClick={() => {
+                setMode("signIn");
+                // Clear URL params
+                window.history.replaceState({}, "", "/auth");
+              }}
             >
               <ArrowLeft className="w-4 h-4" />
               Back to sign in
@@ -118,25 +162,27 @@ const Auth = () => {
               </div>
             )}
 
-            <div className="space-y-2">
-              <Label htmlFor="email">Email</Label>
-              <div className="relative">
-                <Mail className="absolute left-3 top-3 w-4 h-4 text-muted-foreground" />
-                <Input
-                  id="email"
-                  type="email"
-                  placeholder="you@email.com"
-                  className="pl-10"
-                  value={form.email}
-                  onChange={(e) => setForm({ ...form, email: e.target.value })}
-                  required
-                />
-              </div>
-            </div>
-
-            {mode !== "forgotPassword" && (
+            {mode !== "resetPassword" && (
               <div className="space-y-2">
-                <Label htmlFor="password">Password</Label>
+                <Label htmlFor="email">Email</Label>
+                <div className="relative">
+                  <Mail className="absolute left-3 top-3 w-4 h-4 text-muted-foreground" />
+                  <Input
+                    id="email"
+                    type="email"
+                    placeholder="you@email.com"
+                    className="pl-10"
+                    value={form.email}
+                    onChange={(e) => setForm({ ...form, email: e.target.value })}
+                    required
+                  />
+                </div>
+              </div>
+            )}
+
+            {(mode === "signIn" || mode === "signUp" || mode === "resetPassword") && (
+              <div className="space-y-2">
+                <Label htmlFor="password">{mode === "resetPassword" ? "New Password" : "Password"}</Label>
                 <div className="relative">
                   <Lock className="absolute left-3 top-3 w-4 h-4 text-muted-foreground" />
                   <Input
@@ -153,31 +199,52 @@ const Auth = () => {
               </div>
             )}
 
+            {mode === "resetPassword" && (
+              <div className="space-y-2">
+                <Label htmlFor="confirmPassword">Confirm New Password</Label>
+                <div className="relative">
+                  <Lock className="absolute left-3 top-3 w-4 h-4 text-muted-foreground" />
+                  <Input
+                    id="confirmPassword"
+                    type="password"
+                    placeholder="••••••••"
+                    className="pl-10"
+                    value={form.confirmPassword}
+                    onChange={(e) => setForm({ ...form, confirmPassword: e.target.value })}
+                    required
+                    minLength={1}
+                  />
+                </div>
+              </div>
+            )}
+
             <Button type="submit" className="w-full" size="lg" disabled={loading}>
               {getButtonText()}
             </Button>
           </form>
 
-          <div className="mt-6 text-center space-y-2">
-            {mode === "signIn" && (
-              <button
-                type="button"
-                className="text-muted-foreground hover:text-primary text-sm block w-full"
-                onClick={() => setMode("forgotPassword")}
-              >
-                Forgot your password?
-              </button>
-            )}
-            {mode !== "forgotPassword" && (
-              <button
-                type="button"
-                className="text-primary hover:underline text-sm"
-                onClick={() => setMode(mode === "signUp" ? "signIn" : "signUp")}
-              >
-                {mode === "signUp" ? "Already have an account? Sign in" : "Don't have an account? Sign up"}
-              </button>
-            )}
-          </div>
+          {mode !== "resetPassword" && (
+            <div className="mt-6 text-center space-y-2">
+              {mode === "signIn" && (
+                <button
+                  type="button"
+                  className="text-muted-foreground hover:text-primary text-sm block w-full"
+                  onClick={() => setMode("forgotPassword")}
+                >
+                  Forgot your password?
+                </button>
+              )}
+              {mode !== "forgotPassword" && (
+                <button
+                  type="button"
+                  className="text-primary hover:underline text-sm"
+                  onClick={() => setMode(mode === "signUp" ? "signIn" : "signUp")}
+                >
+                  {mode === "signUp" ? "Already have an account? Sign in" : "Don't have an account? Sign up"}
+                </button>
+              )}
+            </div>
+          )}
         </Card>
 
         <p className="text-center text-sm text-muted-foreground">
