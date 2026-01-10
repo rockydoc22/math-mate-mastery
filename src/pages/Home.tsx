@@ -76,42 +76,56 @@ const Home = () => {
     <div className="min-h-screen bg-gradient-to-br from-background via-primary/5 to-accent/10 p-4 flex flex-col">
       <div className="max-w-2xl mx-auto w-full flex flex-col flex-1 animate-in fade-in duration-300">
         
-        {/* Compact Header */}
-        <header className="flex items-center justify-between mb-4">
-          <div className="flex items-center gap-2">
-            <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-primary to-accent flex items-center justify-center">
-              <span className="text-base font-bold text-primary-foreground font-mono">40²</span>
-            </div>
-            <span className="text-sm font-semibold text-foreground">The 0.03% Club</span>
+        {/* Hero Header */}
+        <header className="flex flex-col items-center text-center mb-6 pt-4">
+          {/* Large 40² Logo */}
+          <div className="w-28 h-28 rounded-2xl bg-gradient-to-br from-primary to-accent flex items-center justify-center mb-3 shadow-lg">
+            <span className="text-4xl font-bold text-primary-foreground font-mono">40²</span>
           </div>
-          <div className="flex items-center gap-1">
+          
+          {/* Tagline */}
+          <h1 className="text-xl font-bold text-foreground mb-4">The 0.03% Club</h1>
+          
+          {/* Primary Action Buttons */}
+          <div className="flex items-center gap-3 mb-4">
             <Link to="/battle">
-              <Button variant="ghost" size="sm" className="text-destructive font-bold text-base px-3">
-                <Swords className="w-5 h-5 mr-1" />
+              <Button variant="destructive" size="lg" className="font-bold gap-2">
+                <Swords className="w-5 h-5" />
                 Fight Club
               </Button>
             </Link>
             <Link to="/daily">
-              <Button variant="ghost" size="sm" className="text-primary font-medium text-xs px-2">
-                <Zap className="w-4 h-4 mr-1" />
+              <Button variant="default" size="lg" className="font-bold gap-2">
+                <Zap className="w-5 h-5" />
                 Compounding to 1600
               </Button>
             </Link>
+          </div>
+          
+          {/* (20+20)² SAT Prediction Test */}
+          <Link to="/practice-test">
+            <Button variant="outline" size="lg" className="font-mono font-bold gap-2 mb-4">
+              (20+20)² SAT Prediction Test
+            </Button>
+          </Link>
+          
+          {/* Navigation Icons */}
+          <div className="flex items-center gap-2">
             <Link to="/leaderboard">
               <Button variant="ghost" size="sm">
-                <Trophy className="w-4 h-4" />
+                <Trophy className="w-5 h-5" />
               </Button>
             </Link>
             {user ? (
               <>
                 <Link to="/friends">
                   <Button variant="ghost" size="sm">
-                    <Users className="w-4 h-4" />
+                    <Users className="w-5 h-5" />
                   </Button>
                 </Link>
                 <Link to="/profile">
                   <Button variant="ghost" size="sm">
-                    <User className="w-4 h-4" />
+                    <User className="w-5 h-5" />
                   </Button>
                 </Link>
               </>
@@ -245,13 +259,6 @@ const Home = () => {
               English
             </Button>
           </div>
-          <Link to="/practice-test" className="block mt-3">
-            <Button variant="outline" className="w-full gap-2">
-              <Play className="w-4 h-4" />
-              Full Practice Test
-              <ChevronRight className="w-4 h-4 ml-auto" />
-            </Button>
-          </Link>
         </Card>
 
         {/* Gamification Row */}
