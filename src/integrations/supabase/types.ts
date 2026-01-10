@@ -627,6 +627,15 @@ export type Database = {
         }
         Relationships: []
       }
+      streak_leaderboard: {
+        Row: {
+          avatar_emoji: string | null
+          current_streak: number | null
+          longest_streak: number | null
+          username: string | null
+        }
+        Relationships: []
+      }
     }
     Functions: {
       has_role: {

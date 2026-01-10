@@ -15,8 +15,8 @@ interface LeaderboardEntry {
 }
 
 interface StreakEntry {
-  user_id: string;
   username: string;
+  avatar_emoji: string | null;
   current_streak: number;
   longest_streak: number;
 }
@@ -33,14 +33,10 @@ const Leaderboard = () => {
         .from("leaderboard_scores")
         .select("*");
 
-      const { data: profiles } = await supabase.from("profiles").select("id, username");
-      const { data: streaks } = await supabase
-        .from("streaks")
-        .select("user_id, current_streak, longest_streak")
-        .order("current_streak", { ascending: false })
-        .limit(20);
-
-      const profileMap = new Map(profiles?.map((p) => [p.id, p.username]) || []);
+      // Fetch streak leaderboard from secure view
+      const { data: streakData } = await supabase
+        .from("streak_leaderboard")
+        .select("*");
 
       const scoreLeaderboard: LeaderboardEntry[] = (leaderboardData || []).map((entry: any) => ({
         username: entry.username || "Unknown",
@@ -50,11 +46,12 @@ const Leaderboard = () => {
         avg_percentage: Number(entry.avg_percentage) || 0,
       })).slice(0, 20);
 
-      const streakLeaderboard =
-        streaks?.map((s) => ({
-          ...s,
-          username: profileMap.get(s.user_id) || "Unknown",
-        })) || [];
+      const streakLeaderboard: StreakEntry[] = (streakData || []).map((entry: any) => ({
+        username: entry.username || "Unknown",
+        avatar_emoji: entry.avatar_emoji,
+        current_streak: Number(entry.current_streak) || 0,
+        longest_streak: Number(entry.longest_streak) || 0,
+      }));
 
       setScoreLeaders(scoreLeaderboard);
       setStreakLeaders(streakLeaderboard);
@@ -142,7 +139,7 @@ const Leaderboard = () => {
               ) : (
                 streakLeaders.map((entry, i) => (
                   <div
-                    key={entry.user_id}
+                    key={`${entry.username}-${i}`}
                     className={`flex items-center gap-4 p-4 ${i < 3 ? "bg-accent/5" : ""}`}
                   >
                     <div className="w-8 flex justify-center">{getRankIcon(i)}</div>
