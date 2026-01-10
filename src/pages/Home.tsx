@@ -4,7 +4,7 @@ import { Card } from "@/components/ui/card";
 import { 
   Calculator, PenTool, Trophy, Zap, Users, LogIn, User, 
   Award, Swords, ChevronRight, Flame, Bell, Play, Brain, X,
-  Target, RotateCcw, BookOpen
+  Target, RotateCcw, BookOpen, RefreshCw
 } from "lucide-react";
 import { useNavigate, Link } from "react-router-dom";
 import { useAuth } from "@/hooks/useAuth";
@@ -14,6 +14,7 @@ import { useStudyPlan } from "@/hooks/useStudyPlan";
 import { AchievementBadge } from "@/components/AchievementBadge";
 import { getSkillLevel, ratingToSATScore } from "@/utils/eloRating";
 import { supabase } from "@/integrations/supabase/client";
+import { usePWAUpdate, APP_VERSION } from "@/hooks/usePWAUpdate";
 
 // Motivational messages for non-logged in or idle users
 const motivationalMessages = [
@@ -38,6 +39,7 @@ const Home = () => {
   const { activePlan, showReminder, dismissReminder, daysUntilExam } = useStudyPlan();
   const [topPlayers, setTopPlayers] = useState<LeaderboardEntry[]>([]);
   const [notification, setNotification] = useState<string>("");
+  const { forceUpdate, isUpdating, hasUpdate } = usePWAUpdate();
 
   // Fetch top 3 leaderboard
   useEffect(() => {
@@ -348,7 +350,7 @@ const Home = () => {
         </p>
 
         {/* Quick Links - Minimal */}
-        <div className="flex gap-2 justify-center flex-wrap mt-auto pb-4">
+        <div className="flex gap-2 justify-center flex-wrap mt-auto pb-2">
           <Link to="/why-it-works">
             <Button variant="ghost" size="sm" className="text-xs text-primary font-medium">
               Why 1600² Works
@@ -369,6 +371,21 @@ const Home = () => {
               By Topic
             </Button>
           </Link>
+        </div>
+
+        {/* Update Button & Version */}
+        <div className="flex items-center justify-center gap-3 pb-4">
+          <span className="text-xs text-muted-foreground">v{APP_VERSION}</span>
+          <Button
+            onClick={forceUpdate}
+            disabled={isUpdating}
+            variant={hasUpdate ? "default" : "ghost"}
+            size="sm"
+            className="text-xs gap-1 h-7"
+          >
+            <RefreshCw className={`w-3 h-3 ${isUpdating ? "animate-spin" : ""}`} />
+            {isUpdating ? "Updating..." : hasUpdate ? "Update" : "Refresh"}
+          </Button>
         </div>
       </div>
     </div>
