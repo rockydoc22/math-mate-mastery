@@ -147,7 +147,7 @@ const Auth = () => {
                     value={form.password}
                     onChange={(e) => setForm({ ...form, password: e.target.value })}
                     required
-                    minLength={6}
+                    minLength={1}
                   />
                 </div>
               </div>
