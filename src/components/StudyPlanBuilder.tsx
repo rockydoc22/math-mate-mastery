@@ -4,10 +4,12 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Slider } from "@/components/ui/slider";
+import { Switch } from "@/components/ui/switch";
+import { Label } from "@/components/ui/label";
 import { useAuth } from "@/hooks/useAuth";
 import { supabase } from "@/integrations/supabase/client";
 import { toast } from "sonner";
-import { Calendar, Clock, Target, TrendingUp, Brain, CheckCircle } from "lucide-react";
+import { Calendar, Clock, Target, TrendingUp, Brain, CheckCircle, Bell, Mail } from "lucide-react";
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, ReferenceLine } from "recharts";
 
 interface ProjectedScore {
@@ -24,6 +26,12 @@ export const StudyPlanBuilder = () => {
   const [baselineScore, setBaselineScore] = useState([1200]);
   const [isSaving, setIsSaving] = useState(false);
   const [planCreated, setPlanCreated] = useState(false);
+  
+  // Reminder settings
+  const [reminderEmail, setReminderEmail] = useState("");
+  const [dailyReminder, setDailyReminder] = useState(true);
+  const [weeklyReminder, setWeeklyReminder] = useState(true);
+  const [reminderTime, setReminderTime] = useState("08:00");
 
   // Calculate weeks until exam
   const weeksUntilExam = useMemo(() => {
@@ -113,7 +121,7 @@ export const StudyPlanBuilder = () => {
         .update({ is_active: false })
         .eq("user_id", user.id);
 
-      // Create new plan
+      // Create new plan with reminder settings
       const { error } = await supabase.from("study_plans").insert({
         user_id: user.id,
         exam_date: examDate,
@@ -121,6 +129,10 @@ export const StudyPlanBuilder = () => {
         baseline_score: baselineScore[0],
         target_score: projectedFinalScore,
         is_active: true,
+        reminder_email: reminderEmail || null,
+        daily_reminder_enabled: dailyReminder,
+        weekly_reminder_enabled: weeklyReminder,
+        reminder_time: reminderTime + ":00",
       });
 
       if (error) throw error;
@@ -288,6 +300,71 @@ export const StudyPlanBuilder = () => {
           </p>
         </Card>
       )}
+
+      {/* Email Reminder Settings */}
+      <Card className="p-4 border-primary/20 bg-primary/5">
+        <div className="flex items-center gap-2 mb-4">
+          <Bell className="w-5 h-5 text-primary" />
+          <span className="font-semibold">Daily & Weekly Reminders</span>
+        </div>
+        
+        <div className="space-y-4">
+          <div>
+            <Label htmlFor="reminder-email" className="text-sm flex items-center gap-2 mb-2">
+              <Mail className="w-4 h-4 text-muted-foreground" />
+              Email for reminders (optional)
+            </Label>
+            <Input
+              id="reminder-email"
+              type="email"
+              placeholder="your@email.com"
+              value={reminderEmail}
+              onChange={(e) => setReminderEmail(e.target.value)}
+              className="max-w-xs"
+            />
+          </div>
+
+          <div className="grid grid-cols-2 gap-4">
+            <div className="flex items-center justify-between p-3 rounded-lg bg-background border">
+              <div>
+                <p className="text-sm font-medium">Daily Reminder</p>
+                <p className="text-xs text-muted-foreground">Every day at your time</p>
+              </div>
+              <Switch
+                checked={dailyReminder}
+                onCheckedChange={setDailyReminder}
+              />
+            </div>
+            
+            <div className="flex items-center justify-between p-3 rounded-lg bg-background border">
+              <div>
+                <p className="text-sm font-medium">Weekly Summary</p>
+                <p className="text-xs text-muted-foreground">Progress report</p>
+              </div>
+              <Switch
+                checked={weeklyReminder}
+                onCheckedChange={setWeeklyReminder}
+              />
+            </div>
+          </div>
+
+          {(dailyReminder || weeklyReminder) && (
+            <div>
+              <Label htmlFor="reminder-time" className="text-sm flex items-center gap-2 mb-2">
+                <Clock className="w-4 h-4 text-muted-foreground" />
+                Preferred reminder time
+              </Label>
+              <Input
+                id="reminder-time"
+                type="time"
+                value={reminderTime}
+                onChange={(e) => setReminderTime(e.target.value)}
+                className="max-w-[120px]"
+              />
+            </div>
+          )}
+        </div>
+      </Card>
 
       {/* Save Button */}
       <Button 

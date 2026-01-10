@@ -518,37 +518,55 @@ export type Database = {
           baseline_score: number | null
           created_at: string
           daily_minutes: number
+          daily_reminder_enabled: boolean | null
           exam_date: string
           id: string
           is_active: boolean
+          last_daily_reminder_sent: string | null
           last_reminder_shown: string | null
+          last_weekly_reminder_sent: string | null
+          reminder_email: string | null
+          reminder_time: string | null
           target_score: number | null
           updated_at: string
           user_id: string
+          weekly_reminder_enabled: boolean | null
         }
         Insert: {
           baseline_score?: number | null
           created_at?: string
           daily_minutes?: number
+          daily_reminder_enabled?: boolean | null
           exam_date: string
           id?: string
           is_active?: boolean
+          last_daily_reminder_sent?: string | null
           last_reminder_shown?: string | null
+          last_weekly_reminder_sent?: string | null
+          reminder_email?: string | null
+          reminder_time?: string | null
           target_score?: number | null
           updated_at?: string
           user_id: string
+          weekly_reminder_enabled?: boolean | null
         }
         Update: {
           baseline_score?: number | null
           created_at?: string
           daily_minutes?: number
+          daily_reminder_enabled?: boolean | null
           exam_date?: string
           id?: string
           is_active?: boolean
+          last_daily_reminder_sent?: string | null
           last_reminder_shown?: string | null
+          last_weekly_reminder_sent?: string | null
+          reminder_email?: string | null
+          reminder_time?: string | null
           target_score?: number | null
           updated_at?: string
           user_id?: string
+          weekly_reminder_enabled?: boolean | null
         }
         Relationships: []
       }

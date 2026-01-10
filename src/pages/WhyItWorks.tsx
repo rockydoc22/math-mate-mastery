@@ -4,15 +4,17 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { 
   ArrowLeft, BookOpen, TrendingUp, Brain, Target, 
-  Flame, BarChart3, Clock, Zap, ChevronDown, ChevronUp 
+  Flame, BarChart3, Clock, Zap, ChevronDown, ChevronUp, Coins 
 } from "lucide-react";
 import { CompoundGrowthChart } from "@/components/CompoundGrowthChart";
 import { ForgettingCurveChart } from "@/components/ForgettingCurveChart";
 import { WeaknessGrowthChart } from "@/components/WeaknessGrowthChart";
 import { StudyPlanBuilder } from "@/components/StudyPlanBuilder";
+import ChessboardChart from "@/components/ChessboardChart";
 
 const WhyItWorks = () => {
   const [showPlanBuilder, setShowPlanBuilder] = useState(false);
+  const [showChessboard, setShowChessboard] = useState(false);
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-background via-primary/5 to-accent/10">
@@ -78,6 +80,42 @@ const WhyItWorks = () => {
             <p className="text-xs text-muted-foreground text-center mt-4">
               After 6–8 weeks of consistent practice, most students see dramatic acceleration
             </p>
+          </Card>
+
+          {/* Chessboard Problem */}
+          <Card className="p-6 border-amber-500/30 bg-gradient-to-r from-amber-500/5 to-primary/5 mt-6">
+            <div className="flex items-center justify-between mb-4">
+              <div className="flex items-center gap-2">
+                <Coins className="w-5 h-5 text-amber-500" />
+                <h3 className="font-semibold">The Penny Doubling Problem</h3>
+              </div>
+              <Button 
+                variant="ghost" 
+                size="sm"
+                onClick={() => setShowChessboard(!showChessboard)}
+              >
+                {showChessboard ? <ChevronUp className="w-4 h-4" /> : <ChevronDown className="w-4 h-4" />}
+              </Button>
+            </div>
+            
+            <p className="text-sm text-muted-foreground mb-4">
+              Place 1 penny on the first square of a chessboard, then double it for each next square.
+              By square 64, you'd have <span className="font-bold text-primary">over $92 quadrillion</span> — 
+              more than 1,000× the U.S. national debt!
+            </p>
+
+            {showChessboard && (
+              <div className="mt-4">
+                <ChessboardChart />
+              </div>
+            )}
+
+            {!showChessboard && (
+              <Button variant="outline" size="sm" onClick={() => setShowChessboard(true)} className="w-full">
+                <Coins className="w-4 h-4 mr-2" />
+                See Interactive Demo
+              </Button>
+            )}
           </Card>
         </section>
 
