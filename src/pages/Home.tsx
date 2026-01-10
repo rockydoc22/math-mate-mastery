@@ -102,8 +102,8 @@ const Home = () => {
               </>
             ) : (
               <Link to="/auth">
-                <Button variant="outline" size="sm" className="gap-1">
-                  <LogIn className="w-4 h-4" />
+                <Button size="lg" className="gap-2 bg-gradient-to-r from-primary via-accent to-secondary text-primary-foreground font-bold text-lg px-8 shadow-lg hover:shadow-xl transition-all hover:scale-105">
+                  <LogIn className="w-5 h-5" />
                   Sign In
                 </Button>
               </Link>
@@ -116,28 +116,28 @@ const Home = () => {
           </div>
           
           {/* Tagline */}
-          <h1 className="text-xl font-bold text-foreground mb-4">The 0.03% Club</h1>
+          <h1 className="text-xl font-bold text-foreground mb-3">The 0.03% Club</h1>
           
-          {/* Primary Action Buttons */}
-          <div className="flex items-center gap-3 mb-4">
-            <Link to="/battle">
-              <Button variant="destructive" size="lg" className="font-bold gap-2">
-                <Swords className="w-5 h-5" />
-                Fight Club
-              </Button>
-            </Link>
-            <Link to="/daily">
-              <Button variant="default" size="lg" className="font-bold gap-2">
-                <Zap className="w-5 h-5" />
-                Compounding to 1600
-              </Button>
-            </Link>
-          </div>
+          {/* Fight Club - Centered */}
+          <Link to="/battle" className="mb-3">
+            <Button variant="destructive" size="lg" className="font-bold gap-2">
+              <Swords className="w-5 h-5" />
+              Fight Club
+            </Button>
+          </Link>
           
-          {/* (20+20)² SAT Prediction Test */}
-          <Link to="/practice-test">
+          {/* (20+20)² Prediction Test */}
+          <Link to="/practice-test" className="mb-4">
             <Button variant="outline" size="lg" className="font-mono font-bold gap-2">
-              (20+20)² SAT Prediction Test
+              (20+20)² Prediction Test
+            </Button>
+          </Link>
+          
+          {/* Compounding to 1600 */}
+          <Link to="/daily">
+            <Button variant="default" size="lg" className="font-bold gap-2">
+              <Zap className="w-5 h-5" />
+              Compounding to 1600
             </Button>
           </Link>
         </header>
@@ -241,7 +241,7 @@ const Home = () => {
 
         {/* Quick Start - Primary CTA */}
         <Card className="p-5 mb-4 border-2 border-border">
-          <h2 className="font-semibold mb-3">Quick Practice</h2>
+          <h2 className="font-semibold mb-3 text-center">Quick Practice</h2>
           <div className="grid grid-cols-2 gap-3">
             <Button 
               size="lg" 
@@ -265,23 +265,23 @@ const Home = () => {
 
         {/* Study Modes */}
         <Card className="p-4 mb-4 border-2 border-border">
-          <div className="grid grid-cols-3 gap-2">
-            <Link to="/study?mode=weakness">
-              <Button variant="outline" className="w-full h-auto py-3 flex flex-col gap-1">
-                <Target className="w-5 h-5 text-destructive" />
-                <span className="text-xs font-medium">Master Your Weakness</span>
+          <div className="flex flex-col gap-3">
+            <Link to="/study?mode=weakness" className="w-full">
+              <Button variant="outline" className="w-full h-auto py-3 flex items-center gap-3 justify-start">
+                <Target className="w-5 h-5 text-destructive flex-shrink-0" />
+                <span className="text-sm font-medium">Master Your Weakness</span>
               </Button>
             </Link>
-            <Link to="/review">
-              <Button variant="outline" className="w-full h-auto py-3 flex flex-col gap-1">
-                <RotateCcw className="w-5 h-5 text-orange-500" />
-                <span className="text-xs font-medium">Master What You Missed</span>
+            <Link to="/review" className="w-full">
+              <Button variant="outline" className="w-full h-auto py-3 flex items-center gap-3 justify-start">
+                <RotateCcw className="w-5 h-5 text-orange-500 flex-shrink-0" />
+                <span className="text-sm font-medium">Master What You Missed</span>
               </Button>
             </Link>
-            <Link to="/problems-by-topic">
-              <Button variant="outline" className="w-full h-auto py-3 flex flex-col gap-1">
-                <BookOpen className="w-5 h-5 text-primary" />
-                <span className="text-xs font-medium">Problems by Topic</span>
+            <Link to="/problems-by-topic" className="w-full">
+              <Button variant="outline" className="w-full h-auto py-3 flex items-center gap-3 justify-start">
+                <BookOpen className="w-5 h-5 text-primary flex-shrink-0" />
+                <span className="text-sm font-medium">Problems by Topic</span>
               </Button>
             </Link>
           </div>
@@ -341,6 +341,11 @@ const Home = () => {
             </div>
           </Card>
         </div>
+
+        {/* Bottom Tagline */}
+        <p className="text-center text-sm text-muted-foreground italic mb-4">
+          Your future self will thank you.
+        </p>
 
         {/* Quick Links - Minimal */}
         <div className="flex gap-2 justify-center flex-wrap mt-auto pb-4">
