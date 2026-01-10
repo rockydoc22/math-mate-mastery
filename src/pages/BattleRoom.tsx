@@ -6,6 +6,7 @@ import { useAuth } from "@/hooks/useAuth";
 import { supabase } from "@/integrations/supabase/client";
 import { toast } from "sonner";
 import { ArrowLeft, Crown, Copy, Users, Trophy, Loader2, Clock, Skull, ChevronDown, ChevronUp, CheckCircle, XCircle } from "lucide-react";
+import { BattleResultsFighter } from "@/components/BattleResultsFighter";
 import { questions } from "@/data/questions";
 import { visualMathQuestions, visualEnglishQuestions, moreMathVisualQuestions, moreEnglishVisualQuestions } from "@/data/visualQuestions";
 import { additionalMathQuestions } from "@/data/additionalMathQuestions";
@@ -411,18 +412,25 @@ const BattleRoom = () => {
     return (
       <div className="min-h-screen bg-gradient-to-br from-background via-background to-primary/5 p-4">
         <div className="max-w-2xl mx-auto">
-          <div className="text-center mb-8">
-            {room?.battle_mode === "sudden_death" ? (
-              <Skull className="w-16 h-16 text-destructive mx-auto mb-4" />
-            ) : (
-              <Trophy className="w-16 h-16 text-yellow-500 mx-auto mb-4" />
-            )}
-            <h1 className="text-3xl font-bold">
-              {room?.battle_mode === "sudden_death" ? "Sudden Death Complete!" : "Battle Complete!"}
-            </h1>
-          </div>
+          {/* Fighter Results Visual */}
+          <BattleResultsFighter 
+            fighters={resultsParticipants.map((p, index) => {
+              const wasEliminated = room?.battle_mode === "sudden_death" && p.answers_correct < battleQuestions.length && p.finished_at;
+              return {
+                username: p.profile?.username || "Player",
+                avatar_emoji: p.profile?.avatar_emoji || "😎",
+                score: p.score,
+                answersCorrect: p.answers_correct,
+                totalQuestions: battleQuestions.length,
+                isWinner: index === 0,
+                isEliminated: !!wasEliminated
+              };
+            })}
+            battleMode={room?.battle_mode || "normal"}
+          />
 
-          <div className="space-y-3">
+          {/* Score Cards */}
+          <div className="space-y-3 mt-6">
             {resultsParticipants.map((p, index) => {
               const wasEliminated = room?.battle_mode === "sudden_death" && p.answers_correct < battleQuestions.length && p.finished_at;
               const isWinner = index === 0;

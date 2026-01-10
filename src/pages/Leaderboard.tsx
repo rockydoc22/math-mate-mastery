@@ -86,6 +86,7 @@ const Leaderboard = () => {
               Leaderboard
             </h1>
             <p className="text-muted-foreground">See how you stack up</p>
+            <p className="text-xs text-primary font-medium mt-1">📊 Rolling 30-day Top 10</p>
           </div>
         </div>
 

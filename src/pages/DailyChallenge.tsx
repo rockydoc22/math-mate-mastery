@@ -2,12 +2,13 @@ import { useState, useMemo, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { supabase } from "@/integrations/supabase/client";
 import { useAuth } from "@/hooks/useAuth";
+import { useGameStats } from "@/hooks/useGameStats";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Progress } from "@/components/ui/progress";
 import { QuizCard } from "@/components/QuizCard";
 import { useSoundEffects } from "@/hooks/useSoundEffects";
-import { ArrowLeft, ArrowRight, Zap, Trophy, Calendar, Star } from "lucide-react";
+import { ArrowLeft, ArrowRight, Zap, Trophy, Calendar, Star, Flame } from "lucide-react";
 import { questions } from "@/data/questions";
 import { englishQuestions } from "@/data/englishQuestions";
 
@@ -17,6 +18,7 @@ const BONUS_XP_GOOD = 20;
 
 const DailyChallenge = () => {
   const { user } = useAuth();
+  const { streak } = useGameStats();
   const { playCorrect, playWrong, playLevelUp } = useSoundEffects();
   const [completedToday, setCompletedToday] = useState(false);
   const [todayScore, setTodayScore] = useState<{ score: number; total: number } | null>(null);
@@ -184,16 +186,24 @@ const DailyChallenge = () => {
           <div className="flex-1">
             <h1 className="text-2xl font-bold flex items-center gap-2">
               <Zap className="w-6 h-6 text-primary" />
-              Daily Challenge
+              Compounding to 1600
             </h1>
             <p className="text-sm text-muted-foreground flex items-center gap-1">
               <Calendar className="w-4 h-4" />
               {new Date().toLocaleDateString("en-US", { weekday: "long", month: "short", day: "numeric" })}
             </p>
           </div>
-          <div className="text-right">
-            <p className="text-sm text-muted-foreground">Score</p>
-            <p className="text-xl font-bold text-primary">{score}/{currentIndex + (showResult ? 1 : 0)}</p>
+          <div className="flex items-center gap-4">
+            {streak && streak.current_streak > 0 && (
+              <div className="flex items-center gap-1 px-3 py-1.5 rounded-full bg-orange-500/20 text-orange-600 dark:text-orange-400">
+                <Flame className="w-5 h-5" />
+                <span className="font-bold text-lg">{streak.current_streak}</span>
+              </div>
+            )}
+            <div className="text-right">
+              <p className="text-sm text-muted-foreground">Score</p>
+              <p className="text-xl font-bold text-primary">{score}/{currentIndex + (showResult ? 1 : 0)}</p>
+            </div>
           </div>
         </div>
 
