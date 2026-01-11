@@ -19,7 +19,6 @@ import { usePWAUpdate, APP_VERSION } from "@/hooks/usePWAUpdate";
 // Motivational messages for non-logged in or idle users
 const motivationalMessages = [
   "Ready to crush the SAT? Start with 10 questions!",
-  "Your future self will thank you. Practice now!",
   "Top scorers practice daily. Join them!",
   "1600 club awaits. Take the first step!",
 ];
