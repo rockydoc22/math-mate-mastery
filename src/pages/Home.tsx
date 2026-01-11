@@ -162,13 +162,6 @@ const Home = () => {
             </div>
           </Card>
         )}
-
-        {/* Notification Banner */}
-        <Card className="p-3 mb-4 border-primary/30 bg-primary/5 flex items-center gap-3">
-          <Bell className="w-4 h-4 text-primary flex-shrink-0" />
-          <p className="text-sm text-foreground flex-1">{notification}</p>
-        </Card>
-
         {/* Personalized Stats - Only for logged in users */}
         {user && ratings && (
           <Card className="p-4 mb-4 border-2 border-primary/20">
