@@ -20,7 +20,6 @@ import { usePWAUpdate, APP_VERSION } from "@/hooks/usePWAUpdate";
 const motivationalMessages = [
   "Ready to crush the SAT? Start with 10 questions!",
   "Your future self will thank you. Practice now!",
-  "Every question counts. Let's do this!",
   "Top scorers practice daily. Join them!",
   "1600 club awaits. Take the first step!",
 ];
@@ -130,14 +129,14 @@ const Home = () => {
           
           {/* (20+20)² Prediction Test */}
           <Link to="/practice-test" className="mb-4">
-            <Button variant="outline" size="lg" className="font-mono font-bold gap-2">
+            <Button variant="outline" size="lg" className="font-mono font-bold gap-2 border-2 border-emerald-500 text-emerald-600 dark:text-emerald-400 hover:bg-emerald-500/10 shadow-[0_0_15px_rgba(16,185,129,0.3)]">
               (20+20)² Prediction Test
             </Button>
           </Link>
           
           {/* Compounding to 1600 */}
           <Link to="/daily">
-            <Button variant="default" size="lg" className="font-bold gap-2">
+            <Button size="lg" className="font-bold gap-2 bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 text-white">
               <Zap className="w-5 h-5" />
               Compounding to 1600
             </Button>
