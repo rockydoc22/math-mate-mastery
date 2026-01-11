@@ -118,7 +118,7 @@ const Home = () => {
           </div>
           
           {/* Tagline */}
-          <h1 className="text-xl font-bold text-foreground mb-3">The 0.03% Club</h1>
+          <h1 className="text-xl font-bold text-foreground mb-3">Be one of the 3 in 10,000 who Crush the SAT</h1>
           
           {/* Fight Club - Centered */}
           <Link to="/battle" className="mb-3">
