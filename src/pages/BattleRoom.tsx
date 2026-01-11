@@ -5,7 +5,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { useAuth } from "@/hooks/useAuth";
 import { supabase } from "@/integrations/supabase/client";
 import { toast } from "sonner";
-import { ArrowLeft, Crown, Copy, Users, Trophy, Loader2, Clock, Skull, ChevronDown, ChevronUp, CheckCircle, XCircle } from "lucide-react";
+import { ArrowLeft, Crown, Copy, Users, Trophy, Loader2, Clock, Skull, ChevronDown, ChevronUp, CheckCircle, XCircle, LogOut } from "lucide-react";
 import { BattleResultsFighter } from "@/components/BattleResultsFighter";
 import { questions } from "@/data/questions";
 import { visualMathQuestions, visualEnglishQuestions, moreMathVisualQuestions, moreEnglishVisualQuestions } from "@/data/visualQuestions";
@@ -283,6 +283,24 @@ const BattleRoom = () => {
     if (error) {
       toast.error("Failed to start game");
     }
+  };
+
+  const handleLeaveRoom = async () => {
+    if (!room || !user) return;
+    
+    const { error } = await supabase
+      .from("battle_participants")
+      .delete()
+      .eq("room_id", room.id)
+      .eq("user_id", user.id);
+    
+    if (error) {
+      toast.error("Failed to leave room");
+      return;
+    }
+    
+    toast.success("Left the room");
+    navigate("/battle");
   };
 
   const handleAnswer = async (answerLetter: string) => {
@@ -568,10 +586,14 @@ const BattleRoom = () => {
     return (
       <div className="min-h-screen bg-gradient-to-br from-background via-background to-primary/5 p-4">
         <div className="max-w-2xl mx-auto">
-          <Link to="/battle" className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground mb-6">
-            <ArrowLeft className="w-4 h-4" />
+          <Button 
+            variant="ghost" 
+            onClick={handleLeaveRoom}
+            className="inline-flex items-center gap-2 text-muted-foreground hover:text-destructive mb-6"
+          >
+            <LogOut className="w-4 h-4" />
             Leave Room
-          </Link>
+          </Button>
 
           <div className="text-center mb-8">
             <h1 className="text-2xl font-bold mb-2">Waiting for Players</h1>
