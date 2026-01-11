@@ -4,7 +4,7 @@ import { Card } from "@/components/ui/card";
 import { 
   Calculator, PenTool, Trophy, Zap, Users, LogIn, User, 
   Award, Swords, ChevronRight, Flame, Bell, Play, Brain, X,
-  Target, RotateCcw, BookOpen, RefreshCw
+  Target, RotateCcw, BookOpen, RefreshCw, FileText
 } from "lucide-react";
 import { useNavigate, Link } from "react-router-dom";
 import { useAuth } from "@/hooks/useAuth";
@@ -80,16 +80,16 @@ const Home = () => {
       <div className="max-w-2xl mx-auto w-full flex flex-col flex-1 animate-in fade-in duration-300">
         
         {/* Hero Header */}
-        <header className="flex flex-col items-center text-center mb-6 pt-4">
-          {/* Sign In / Profile at top */}
-          <div className="flex items-center gap-2 mb-4">
-            <Link to="/leaderboard">
-              <Button variant="ghost" size="sm">
-                <Trophy className="w-5 h-5" />
-              </Button>
-            </Link>
+        <header className="flex flex-col items-center text-center mb-6 pt-4 relative">
+          {/* Sign In / Profile at top right */}
+          <div className="absolute top-4 right-0 flex items-center gap-2">
             {user ? (
               <>
+                <Link to="/leaderboard">
+                  <Button variant="ghost" size="sm">
+                    <Trophy className="w-5 h-5" />
+                  </Button>
+                </Link>
                 <Link to="/friends">
                   <Button variant="ghost" size="sm">
                     <Users className="w-5 h-5" />
@@ -103,8 +103,8 @@ const Home = () => {
               </>
             ) : (
               <Link to="/auth">
-                <Button size="lg" className="gap-2 bg-gradient-to-r from-primary via-accent to-secondary text-primary-foreground font-bold text-lg px-8 shadow-lg hover:shadow-xl transition-all hover:scale-105">
-                  <LogIn className="w-5 h-5" />
+                <Button size="sm" className="gap-2 bg-gradient-to-r from-primary via-accent to-secondary text-primary-foreground font-bold shadow-lg hover:shadow-xl transition-all hover:scale-105">
+                  <LogIn className="w-4 h-4" />
                   Sign In
                 </Button>
               </Link>
@@ -134,11 +134,11 @@ const Home = () => {
             </Button>
           </Link>
           
-          {/* Compounding to 1600 */}
+          {/* Day by Day 10 Qu. Challenge */}
           <Link to="/daily">
             <Button size="lg" className="font-bold gap-2 bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 text-white">
               <Zap className="w-5 h-5" />
-              Compounding to 1600
+              Day by Day 10 Qu. Challenge
             </Button>
           </Link>
         </header>
@@ -267,6 +267,18 @@ const Home = () => {
         {/* Study Modes */}
         <Card className="p-4 mb-4 border-2 border-border">
           <div className="flex flex-col gap-3">
+            <Link to="/practice-test?mode=full" className="w-full">
+              <Button variant="outline" className="w-full h-auto py-3 flex items-center gap-3 justify-start">
+                <FileText className="w-5 h-5 text-emerald-500 flex-shrink-0" />
+                <span className="text-sm font-medium">Take a Full Length Test</span>
+              </Button>
+            </Link>
+            <Link to="/problems-by-topic" className="w-full">
+              <Button variant="outline" className="w-full h-auto py-3 flex items-center gap-3 justify-start">
+                <BookOpen className="w-5 h-5 text-primary flex-shrink-0" />
+                <span className="text-sm font-medium">Master by Topic</span>
+              </Button>
+            </Link>
             <Link to="/study?mode=weakness" className="w-full">
               <Button variant="outline" className="w-full h-auto py-3 flex items-center gap-3 justify-start">
                 <Target className="w-5 h-5 text-destructive flex-shrink-0" />
@@ -277,12 +289,6 @@ const Home = () => {
               <Button variant="outline" className="w-full h-auto py-3 flex items-center gap-3 justify-start">
                 <RotateCcw className="w-5 h-5 text-orange-500 flex-shrink-0" />
                 <span className="text-sm font-medium">Master What You Missed</span>
-              </Button>
-            </Link>
-            <Link to="/problems-by-topic" className="w-full">
-              <Button variant="outline" className="w-full h-auto py-3 flex items-center gap-3 justify-start">
-                <BookOpen className="w-5 h-5 text-primary flex-shrink-0" />
-                <span className="text-sm font-medium">Problems by Topic</span>
               </Button>
             </Link>
           </div>
