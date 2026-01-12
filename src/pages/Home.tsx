@@ -5,7 +5,7 @@ import { Card } from "@/components/ui/card";
 import { 
   Calculator, PenTool, Trophy, Zap, Users, LogIn, User, 
   Award, Swords, ChevronRight, Flame, Bell, Play, Brain, X,
-  Target, RotateCcw, BookOpen, RefreshCw, FileText
+  Target, RotateCcw, BookOpen, RefreshCw, FileText, Crown
 } from "lucide-react";
 import { useNavigate, Link } from "react-router-dom";
 import { useAuth } from "@/hooks/useAuth";
@@ -380,6 +380,15 @@ const Home = () => {
               <Button variant="outline" className="w-full h-auto py-3 flex items-center gap-3 justify-start">
                 <RotateCcw className="w-5 h-5 text-orange-500 flex-shrink-0" />
                 <span className="text-sm font-medium">Master What You Missed</span>
+              </Button>
+            </Link>
+            <Link to="/elite-practice" className="w-full">
+              <Button variant="outline" className="w-full h-auto py-3 flex items-center gap-3 justify-start bg-gradient-to-r from-yellow-500/10 to-amber-500/10 border-yellow-500/30 hover:border-yellow-500/50">
+                <Crown className="w-5 h-5 text-yellow-500 flex-shrink-0" />
+                <div className="flex flex-col items-start">
+                  <span className="text-sm font-medium">Elite Practice</span>
+                  <span className="text-[10px] text-muted-foreground">1600 Club • Elite 1500 • Breakthrough 1400</span>
+                </div>
               </Button>
             </Link>
           </div>
