@@ -5,13 +5,15 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { useAuth } from "@/hooks/useAuth";
 import { supabase } from "@/integrations/supabase/client";
 import { toast } from "sonner";
-import { ArrowLeft, RefreshCw, Loader2, CheckCircle, XCircle, Sparkles } from "lucide-react";
+import { ArrowLeft, RefreshCw, Loader2, CheckCircle, XCircle, Sparkles, Zap } from "lucide-react";
 import { questions } from "@/data/questions";
 import { visualMathQuestions, visualEnglishQuestions, moreMathVisualQuestions, moreEnglishVisualQuestions } from "@/data/visualQuestions";
 import { additionalMathQuestions } from "@/data/additionalMathQuestions";
 import { englishQuestions } from "@/data/englishQuestions";
 import { QuestionVisual } from "@/components/QuestionVisual";
 import { AITutorExplanation } from "@/components/AITutorExplanation";
+import { useAcceleratorCredits } from "@/hooks/useAcceleratorCredits";
+import { getSpacedRepetitionMultiplier } from "@/utils/acceleratorCalculator";
 
 interface ReviewQuestion {
   id: string;
@@ -24,6 +26,8 @@ interface ReviewQuestion {
   visual?: any;
   reviewCount: number;
   attemptId: string;
+  firstMissedAt: string | null;
+  difficultyRating?: number;
 }
 
 // Spaced repetition intervals (in hours)
@@ -100,6 +104,8 @@ const Review = () => {
           ...questionData,
           reviewCount: attempt.review_count,
           attemptId: attempt.id,
+          firstMissedAt: (attempt as any).first_missed_at || attempt.created_at,
+          difficultyRating: (questionData as any).difficultyRating,
         });
       }
     });
