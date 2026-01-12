@@ -23,6 +23,7 @@ import PracticeTest from "./pages/PracticeTest";
 import Insights from "./pages/Insights";
 import Review from "./pages/Review";
 import WhyItWorks from "./pages/WhyItWorks";
+import TopicMastery from "./pages/TopicMastery";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -59,6 +60,7 @@ const App = () => (
             <Route path="/insights" element={<Insights />} />
             <Route path="/review" element={<Review />} />
             <Route path="/why-it-works" element={<WhyItWorks />} />
+            <Route path="/mastery" element={<TopicMastery />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>

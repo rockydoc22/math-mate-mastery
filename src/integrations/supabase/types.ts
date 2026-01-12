@@ -362,6 +362,8 @@ export type Database = {
           first_missed_at: string | null
           id: string
           is_correct: boolean
+          miss_reason: string | null
+          miss_reason_noted_at: string | null
           next_review_at: string | null
           question_id: string
           question_type: string
@@ -377,6 +379,8 @@ export type Database = {
           first_missed_at?: string | null
           id?: string
           is_correct: boolean
+          miss_reason?: string | null
+          miss_reason_noted_at?: string | null
           next_review_at?: string | null
           question_id: string
           question_type: string
@@ -392,6 +396,8 @@ export type Database = {
           first_missed_at?: string | null
           id?: string
           is_correct?: boolean
+          miss_reason?: string | null
+          miss_reason_noted_at?: string | null
           next_review_at?: string | null
           question_id?: string
           question_type?: string
@@ -612,6 +618,51 @@ export type Database = {
           updated_at?: string
           user_id?: string
           weekly_reminder_enabled?: boolean | null
+        }
+        Relationships: []
+      }
+      topic_mastery: {
+        Row: {
+          accuracy_percentage: number
+          created_at: string
+          id: string
+          is_mastered: boolean
+          mastered_at: string | null
+          questions_attempted: number
+          questions_correct: number
+          subject: string
+          topic_key: string
+          topic_name: string
+          updated_at: string
+          user_id: string
+        }
+        Insert: {
+          accuracy_percentage?: number
+          created_at?: string
+          id?: string
+          is_mastered?: boolean
+          mastered_at?: string | null
+          questions_attempted?: number
+          questions_correct?: number
+          subject: string
+          topic_key: string
+          topic_name: string
+          updated_at?: string
+          user_id: string
+        }
+        Update: {
+          accuracy_percentage?: number
+          created_at?: string
+          id?: string
+          is_mastered?: boolean
+          mastered_at?: string | null
+          questions_attempted?: number
+          questions_correct?: number
+          subject?: string
+          topic_key?: string
+          topic_name?: string
+          updated_at?: string
+          user_id?: string
         }
         Relationships: []
       }
