@@ -357,6 +357,12 @@ const Home = () => {
                 <span className="text-sm font-medium">Take a Full Length Test</span>
               </Button>
             </Link>
+            <Link to="/mastery" className="w-full">
+              <Button variant="outline" className="w-full h-auto py-3 flex items-center gap-3 justify-start">
+                <Trophy className="w-5 h-5 text-yellow-500 flex-shrink-0" />
+                <span className="text-sm font-medium">Topic Mastery (90%)</span>
+              </Button>
+            </Link>
             <Link to="/problems-by-topic" className="w-full">
               <Button variant="outline" className="w-full h-auto py-3 flex items-center gap-3 justify-start">
                 <BookOpen className="w-5 h-5 text-primary flex-shrink-0" />

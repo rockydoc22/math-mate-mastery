@@ -14,6 +14,8 @@ import { QuestionVisual } from "@/components/QuestionVisual";
 import { AITutorExplanation } from "@/components/AITutorExplanation";
 import { useAcceleratorCredits } from "@/hooks/useAcceleratorCredits";
 import { getSpacedRepetitionMultiplier } from "@/utils/acceleratorCalculator";
+import { MissReason } from "@/utils/topicMastery";
+import { MissReasonSelector } from "@/components/MissReasonSelector";
 
 interface ReviewQuestion {
   id: string;
@@ -43,6 +45,9 @@ const Review = () => {
   const [isAnswered, setIsAnswered] = useState(false);
   const [showAITutor, setShowAITutor] = useState(false);
   const [completed, setCompleted] = useState(false);
+  const [showMissReason, setShowMissReason] = useState(false);
+  const [creditsEarned, setCreditsEarned] = useState(0);
+  const { awardSpacedRepetitionCredits } = useAcceleratorCredits();
 
   // All questions lookup
   const allQuestions = [
@@ -148,7 +153,51 @@ const Review = () => {
           next_review_at: nextReviewAt?.toISOString() || null,
         })
         .eq("id", currentQuestion.attemptId);
+
+      // Award spaced repetition credits for correct answers
+      if (isCorrect && currentQuestion.firstMissedAt) {
+        const daysSinceMiss = Math.floor(
+          (Date.now() - new Date(currentQuestion.firstMissedAt).getTime()) / (1000 * 60 * 60 * 24)
+        );
+        
+        if (daysSinceMiss >= 7) {
+          const credit = await awardSpacedRepetitionCredits(
+            currentQuestion.id,
+            daysSinceMiss,
+            currentQuestion.difficultyRating
+          );
+          if (credit) {
+            const multiplier = getSpacedRepetitionMultiplier(daysSinceMiss);
+            setCreditsEarned(prev => prev + multiplier);
+            toast.success(`⚡ +${multiplier.toFixed(1)}x Spaced Rep Credit!`, {
+              description: `${daysSinceMiss} days since first miss`
+            });
+          }
+        }
+      }
     }
+
+    // Show miss reason selector for wrong answers
+    if (!isCorrect) {
+      setShowMissReason(true);
+    }
+  };
+
+  const handleMissReason = async (reason: MissReason) => {
+    if (!user) return;
+    
+    const currentQuestion = reviewQuestions[currentIndex];
+    
+    await supabase
+      .from("question_attempts")
+      .update({
+        miss_reason: reason,
+        miss_reason_noted_at: new Date().toISOString(),
+      })
+      .eq("id", currentQuestion.attemptId);
+
+    setShowMissReason(false);
+    toast.success("Pattern logged! We'll help you fix this.");
   };
 
   const handleNext = () => {
@@ -157,6 +206,7 @@ const Review = () => {
       setSelectedAnswer(null);
       setIsAnswered(false);
       setShowAITutor(false);
+      setShowMissReason(false);
     } else {
       setCompleted(true);
     }
@@ -322,9 +372,20 @@ const Review = () => {
                         <span className="font-semibold">
                           {selectedAnswer === currentQuestion.correctAnswer ? "Correct!" : "Incorrect"}
                         </span>
+                        {selectedAnswer === currentQuestion.correctAnswer && creditsEarned > 0 && (
+                          <span className="ml-auto flex items-center gap-1 text-yellow-500 text-sm">
+                            <Zap className="w-4 h-4" />
+                            +{creditsEarned.toFixed(1)} credits
+                          </span>
+                        )}
                       </div>
                       <p className="text-sm text-muted-foreground">{currentQuestion.explanation}</p>
                     </div>
+
+                    {/* Miss Reason Selector for wrong answers */}
+                    {showMissReason && selectedAnswer !== currentQuestion.correctAnswer && (
+                      <MissReasonSelector onSelect={handleMissReason} />
+                    )}
 
                     {!showAITutor && (
                       <Button variant="outline" onClick={() => setShowAITutor(true)} className="w-full gap-2">
