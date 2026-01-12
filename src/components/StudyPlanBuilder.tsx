@@ -9,7 +9,8 @@ import { Label } from "@/components/ui/label";
 import { useAuth } from "@/hooks/useAuth";
 import { supabase } from "@/integrations/supabase/client";
 import { toast } from "sonner";
-import { Calendar, Clock, Target, TrendingUp, Brain, CheckCircle, Bell, Mail, BookOpen, FileText, AlertTriangle } from "lucide-react";
+import { Calendar, Clock, Target, TrendingUp, Brain, CheckCircle, Bell, Mail, BookOpen, FileText, AlertTriangle, ChevronDown } from "lucide-react";
+import { getUpcomingSATDates, getDaysUntilSAT, formatCountdown } from "@/data/satTestDates";
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, ReferenceLine } from "recharts";
 import { calculateWorkplan, WorkplanEstimate } from "@/utils/workplanCalculator";
 
@@ -195,22 +196,88 @@ export const StudyPlanBuilder = () => {
         </Card>
       )}
 
-      {/* Exam Date */}
+      {/* Exam Date - SAT Date Picker */}
       <div>
         <label className="text-sm font-medium flex items-center gap-2 mb-2">
           <Calendar className="w-4 h-4 text-primary" />
           When is your SAT?
         </label>
-        <Input
-          type="date"
-          value={examDate}
-          onChange={(e) => setExamDate(e.target.value)}
-          min={new Date().toISOString().split("T")[0]}
-          className="max-w-xs"
-        />
+        
+        {/* Quick Select Official Dates */}
+        <div className="space-y-2">
+          <div className="flex flex-wrap gap-2">
+            {getUpcomingSATDates().slice(0, 4).map((satDate) => {
+              const days = getDaysUntilSAT(satDate.date);
+              const isSelected = examDate === satDate.date;
+              return (
+                <button
+                  key={satDate.date}
+                  type="button"
+                  onClick={() => setExamDate(satDate.date)}
+                  className={`px-3 py-2 rounded-lg text-sm border transition-all ${
+                    isSelected 
+                      ? 'bg-primary text-primary-foreground border-primary' 
+                      : 'bg-muted/50 hover:bg-muted border-border hover:border-primary/50'
+                  }`}
+                >
+                  <div className="font-medium">{satDate.label}</div>
+                  <div className={`text-xs ${isSelected ? 'text-primary-foreground/80' : 'text-muted-foreground'}`}>
+                    {formatCountdown(days)}
+                  </div>
+                </button>
+              );
+            })}
+          </div>
+          
+          {/* Show more dates dropdown */}
+          {getUpcomingSATDates().length > 4 && (
+            <details className="group">
+              <summary className="text-xs text-muted-foreground cursor-pointer hover:text-foreground flex items-center gap-1">
+                <ChevronDown className="w-3 h-3 group-open:rotate-180 transition-transform" />
+                More dates
+              </summary>
+              <div className="flex flex-wrap gap-2 mt-2">
+                {getUpcomingSATDates().slice(4).map((satDate) => {
+                  const days = getDaysUntilSAT(satDate.date);
+                  const isSelected = examDate === satDate.date;
+                  return (
+                    <button
+                      key={satDate.date}
+                      type="button"
+                      onClick={() => setExamDate(satDate.date)}
+                      className={`px-3 py-2 rounded-lg text-sm border transition-all ${
+                        isSelected 
+                          ? 'bg-primary text-primary-foreground border-primary' 
+                          : 'bg-muted/50 hover:bg-muted border-border hover:border-primary/50'
+                      }`}
+                    >
+                      <div className="font-medium">{satDate.label}</div>
+                      <div className={`text-xs ${isSelected ? 'text-primary-foreground/80' : 'text-muted-foreground'}`}>
+                        {formatCountdown(days)}
+                      </div>
+                    </button>
+                  );
+                })}
+              </div>
+            </details>
+          )}
+          
+          {/* Custom date option */}
+          <div className="flex items-center gap-2 text-xs text-muted-foreground">
+            <span>or</span>
+            <Input
+              type="date"
+              value={examDate}
+              onChange={(e) => setExamDate(e.target.value)}
+              min={new Date().toISOString().split("T")[0]}
+              className="max-w-[160px] h-8 text-xs"
+            />
+          </div>
+        </div>
+        
         {weeksUntilExam > 0 && (
-          <p className="text-sm text-muted-foreground mt-1">
-            {weeksUntilExam} weeks to prepare
+          <p className="text-sm text-muted-foreground mt-2">
+            <span className="font-semibold text-primary">{weeksUntilExam} weeks</span> to prepare
           </p>
         )}
       </div>
