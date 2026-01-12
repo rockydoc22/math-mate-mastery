@@ -180,11 +180,11 @@ const Home = () => {
             </Button>
           </Link>
           
-          {/* Day by Day 10 Qu. Challenge */}
+          {/* Carpe Diem Daily Challenge */}
           <Link to="/daily">
             <Button size="lg" className="font-bold gap-2 bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 text-white">
               <Zap className="w-5 h-5" />
-              Day by Day 10 Qu. Challenge
+              Carpe Diem: 10 Daily Questions
             </Button>
           </Link>
         </header>
