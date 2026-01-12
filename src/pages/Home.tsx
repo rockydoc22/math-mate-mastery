@@ -559,6 +559,11 @@ const Home = () => {
               By Topic
             </Button>
           </Link>
+          <Link to="/demo">
+            <Button variant="ghost" size="sm" className="text-xs text-green-500 font-medium">
+              🎓 Demo Mode
+            </Button>
+          </Link>
         </div>
 
         {/* Update Button & Version */}

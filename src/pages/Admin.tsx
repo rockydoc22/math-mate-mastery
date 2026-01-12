@@ -2,10 +2,11 @@ import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { supabase } from "@/integrations/supabase/client";
 import { toast } from "@/hooks/use-toast";
 import { Link } from "react-router-dom";
-import { ArrowLeft, Trash2, Check, Eye, ShieldAlert } from "lucide-react";
+import { ArrowLeft, Trash2, Check, Eye, ShieldAlert, Users, Flag, GraduationCap } from "lucide-react";
 import { useAuth } from "@/hooks/useAuth";
 
 interface FlaggedQuestion {
@@ -18,9 +19,20 @@ interface FlaggedQuestion {
   created_at: string;
 }
 
+interface UserStats {
+  id: string;
+  username: string;
+  avatar_emoji: string | null;
+  created_at: string;
+  questions_answered: number;
+  quizzes_completed: number;
+  correct_answers: number;
+}
+
 const Admin = () => {
   const { user, loading: authLoading } = useAuth();
   const [flaggedQuestions, setFlaggedQuestions] = useState<FlaggedQuestion[]>([]);
+  const [userStats, setUserStats] = useState<UserStats[]>([]);
   const [isLoading, setIsLoading] = useState(true);
   const [isAdmin, setIsAdmin] = useState<boolean | null>(null);
 
@@ -73,9 +85,57 @@ const Admin = () => {
     }
   };
 
+  const fetchUserStats = async () => {
+    try {
+      // Get all profiles
+      const { data: profiles, error: profilesError } = await supabase
+        .from('profiles')
+        .select('id, username, avatar_emoji, created_at')
+        .order('created_at', { ascending: false });
+
+      if (profilesError) throw profilesError;
+
+      // Get question attempts per user
+      const { data: attempts, error: attemptsError } = await supabase
+        .from('question_attempts')
+        .select('user_id, is_correct');
+
+      if (attemptsError) throw attemptsError;
+
+      // Get quiz scores per user
+      const { data: quizzes, error: quizzesError } = await supabase
+        .from('quiz_scores')
+        .select('user_id');
+
+      if (quizzesError) throw quizzesError;
+
+      // Aggregate data
+      const stats: UserStats[] = (profiles || []).map(profile => {
+        const userAttempts = attempts?.filter(a => a.user_id === profile.id) || [];
+        const userQuizzes = quizzes?.filter(q => q.user_id === profile.id) || [];
+        
+        return {
+          id: profile.id,
+          username: profile.username,
+          avatar_emoji: profile.avatar_emoji,
+          created_at: profile.created_at,
+          questions_answered: userAttempts.length,
+          correct_answers: userAttempts.filter(a => a.is_correct).length,
+          quizzes_completed: userQuizzes.length,
+        };
+      });
+
+      setUserStats(stats);
+    } catch (error) {
+      console.error('Error fetching user stats:', error);
+      toast({ title: "Error", description: "Failed to load user stats", variant: "destructive" });
+    }
+  };
+
   useEffect(() => {
     if (isAdmin) {
       fetchFlaggedQuestions();
+      fetchUserStats();
     }
   }, [isAdmin]);
 
@@ -216,52 +276,122 @@ const Admin = () => {
                 Back
               </Button>
             </Link>
-            <h1 className="text-2xl font-bold">Flagged Questions</h1>
+            <h1 className="text-2xl font-bold">Admin Dashboard</h1>
           </div>
-          <Badge variant="outline">{flaggedQuestions.length} total</Badge>
+          <Link to="/demo">
+            <Button variant="outline" size="sm" className="gap-2">
+              <GraduationCap className="w-4 h-4" />
+              Demo Mode
+            </Button>
+          </Link>
         </div>
 
-        {flaggedQuestions.length === 0 ? (
-          <Card><CardContent className="p-8 text-center text-muted-foreground">No flagged questions yet.</CardContent></Card>
-        ) : (
-          <div className="space-y-4">
-            {flaggedQuestions.map((flag) => (
-              <Card key={flag.id}>
-                <CardContent className="p-4">
-                  <div className="flex items-start justify-between gap-4">
-                    <div className="flex-1 space-y-2">
-                      <div className="flex items-center gap-2 flex-wrap">
-                        <Badge variant="secondary">{flag.question_type.toUpperCase()}</Badge>
-                        <Badge variant="outline">{getIssueLabel(flag.issue_type)}</Badge>
-                        <Badge className={getStatusColor(flag.status)}>{flag.status}</Badge>
+        <Tabs defaultValue="users" className="w-full">
+          <TabsList className="grid w-full grid-cols-2">
+            <TabsTrigger value="users" className="gap-2">
+              <Users className="w-4 h-4" />
+              Users ({userStats.length})
+            </TabsTrigger>
+            <TabsTrigger value="flags" className="gap-2">
+              <Flag className="w-4 h-4" />
+              Flagged ({flaggedQuestions.length})
+            </TabsTrigger>
+          </TabsList>
+
+          <TabsContent value="users" className="space-y-4 mt-4">
+            <Card>
+              <CardHeader>
+                <CardTitle className="text-lg">Student Activity</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <div className="overflow-x-auto">
+                  <table className="w-full text-sm">
+                    <thead>
+                      <tr className="border-b">
+                        <th className="text-left py-2 px-2">User</th>
+                        <th className="text-center py-2 px-2">Questions</th>
+                        <th className="text-center py-2 px-2">Correct</th>
+                        <th className="text-center py-2 px-2">Accuracy</th>
+                        <th className="text-center py-2 px-2">Quizzes</th>
+                        <th className="text-right py-2 px-2">Joined</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {userStats.map((user) => (
+                        <tr key={user.id} className="border-b hover:bg-muted/50">
+                          <td className="py-2 px-2">
+                            <div className="flex items-center gap-2">
+                              <span>{user.avatar_emoji || '👤'}</span>
+                              <span className="font-medium">{user.username}</span>
+                            </div>
+                          </td>
+                          <td className="text-center py-2 px-2">{user.questions_answered}</td>
+                          <td className="text-center py-2 px-2">{user.correct_answers}</td>
+                          <td className="text-center py-2 px-2">
+                            {user.questions_answered > 0 
+                              ? `${Math.round((user.correct_answers / user.questions_answered) * 100)}%`
+                              : '-'}
+                          </td>
+                          <td className="text-center py-2 px-2">{user.quizzes_completed}</td>
+                          <td className="text-right py-2 px-2 text-muted-foreground">
+                            {new Date(user.created_at).toLocaleDateString()}
+                          </td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                  {userStats.length === 0 && (
+                    <p className="text-center py-4 text-muted-foreground">No users yet.</p>
+                  )}
+                </div>
+              </CardContent>
+            </Card>
+          </TabsContent>
+
+          <TabsContent value="flags" className="space-y-4 mt-4">
+            {flaggedQuestions.length === 0 ? (
+              <Card><CardContent className="p-8 text-center text-muted-foreground">No flagged questions yet.</CardContent></Card>
+            ) : (
+              <div className="space-y-4">
+                {flaggedQuestions.map((flag) => (
+                  <Card key={flag.id}>
+                    <CardContent className="p-4">
+                      <div className="flex items-start justify-between gap-4">
+                        <div className="flex-1 space-y-2">
+                          <div className="flex items-center gap-2 flex-wrap">
+                            <Badge variant="secondary">{flag.question_type.toUpperCase()}</Badge>
+                            <Badge variant="outline">{getIssueLabel(flag.issue_type)}</Badge>
+                            <Badge className={getStatusColor(flag.status)}>{flag.status}</Badge>
+                          </div>
+                          <p className="font-mono text-sm">Question ID: {flag.question_id}</p>
+                          {flag.notes && <p className="text-sm text-muted-foreground">{flag.notes}</p>}
+                          <p className="text-xs text-muted-foreground">
+                            {new Date(flag.created_at).toLocaleDateString()}
+                          </p>
+                        </div>
+                        <div className="flex gap-2">
+                          {flag.status === 'pending' && (
+                            <Button size="sm" variant="outline" onClick={() => updateStatus(flag.id, 'reviewed')}>
+                              <Eye className="w-4 h-4" />
+                            </Button>
+                          )}
+                          {flag.status !== 'resolved' && (
+                            <Button size="sm" variant="outline" onClick={() => updateStatus(flag.id, 'resolved')}>
+                              <Check className="w-4 h-4" />
+                            </Button>
+                          )}
+                          <Button size="sm" variant="destructive" onClick={() => deleteFlag(flag.id)}>
+                            <Trash2 className="w-4 h-4" />
+                          </Button>
+                        </div>
                       </div>
-                      <p className="font-mono text-sm">Question ID: {flag.question_id}</p>
-                      {flag.notes && <p className="text-sm text-muted-foreground">{flag.notes}</p>}
-                      <p className="text-xs text-muted-foreground">
-                        {new Date(flag.created_at).toLocaleDateString()}
-                      </p>
-                    </div>
-                    <div className="flex gap-2">
-                      {flag.status === 'pending' && (
-                        <Button size="sm" variant="outline" onClick={() => updateStatus(flag.id, 'reviewed')}>
-                          <Eye className="w-4 h-4" />
-                        </Button>
-                      )}
-                      {flag.status !== 'resolved' && (
-                        <Button size="sm" variant="outline" onClick={() => updateStatus(flag.id, 'resolved')}>
-                          <Check className="w-4 h-4" />
-                        </Button>
-                      )}
-                      <Button size="sm" variant="destructive" onClick={() => deleteFlag(flag.id)}>
-                        <Trash2 className="w-4 h-4" />
-                      </Button>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        )}
+                    </CardContent>
+                  </Card>
+                ))}
+              </div>
+            )}
+          </TabsContent>
+        </Tabs>
       </div>
     </div>
   );
