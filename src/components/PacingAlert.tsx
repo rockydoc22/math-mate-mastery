@@ -8,9 +8,17 @@ interface PacingAlertProps {
   startTime: number;
   onSkip?: () => void;
   isVisible: boolean;
+  warningThresholdMs?: number;
+  dangerThresholdMs?: number;
 }
 
-export const PacingAlert = ({ startTime, onSkip, isVisible }: PacingAlertProps) => {
+export const PacingAlert = ({ 
+  startTime, 
+  onSkip, 
+  isVisible,
+  warningThresholdMs = PACING.WARNING_THRESHOLD_MS,
+  dangerThresholdMs = PACING.DANGER_THRESHOLD_MS,
+}: PacingAlertProps) => {
   const [elapsedMs, setElapsedMs] = useState(0);
   const [alertLevel, setAlertLevel] = useState<'none' | 'warning' | 'danger'>('none');
 
@@ -25,9 +33,9 @@ export const PacingAlert = ({ startTime, onSkip, isVisible }: PacingAlertProps) 
       const elapsed = Date.now() - startTime;
       setElapsedMs(elapsed);
 
-      if (elapsed >= PACING.DANGER_THRESHOLD_MS) {
+      if (elapsed >= dangerThresholdMs) {
         setAlertLevel('danger');
-      } else if (elapsed >= PACING.WARNING_THRESHOLD_MS) {
+      } else if (elapsed >= warningThresholdMs) {
         setAlertLevel('warning');
       } else {
         setAlertLevel('none');
@@ -35,7 +43,7 @@ export const PacingAlert = ({ startTime, onSkip, isVisible }: PacingAlertProps) 
     }, 1000);
 
     return () => clearInterval(interval);
-  }, [startTime, isVisible]);
+  }, [startTime, isVisible, warningThresholdMs, dangerThresholdMs]);
 
   if (!isVisible) return null;
 

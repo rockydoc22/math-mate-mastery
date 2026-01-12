@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+// Elite Practice and Rulebook links added to navigation
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { 

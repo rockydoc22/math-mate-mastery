@@ -477,6 +477,53 @@ export type Database = {
         }
         Relationships: []
       }
+      rulebook_notes: {
+        Row: {
+          attempt_id: string | null
+          created_at: string
+          error_pattern: string | null
+          id: string
+          notes: string | null
+          prevention_rule: string | null
+          question_id: string
+          trigger_phrase: string | null
+          updated_at: string
+          user_id: string
+        }
+        Insert: {
+          attempt_id?: string | null
+          created_at?: string
+          error_pattern?: string | null
+          id?: string
+          notes?: string | null
+          prevention_rule?: string | null
+          question_id: string
+          trigger_phrase?: string | null
+          updated_at?: string
+          user_id: string
+        }
+        Update: {
+          attempt_id?: string | null
+          created_at?: string
+          error_pattern?: string | null
+          id?: string
+          notes?: string | null
+          prevention_rule?: string | null
+          question_id?: string
+          trigger_phrase?: string | null
+          updated_at?: string
+          user_id?: string
+        }
+        Relationships: [
+          {
+            foreignKeyName: "rulebook_notes_attempt_id_fkey"
+            columns: ["attempt_id"]
+            isOneToOne: false
+            referencedRelation: "question_attempts"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
       saved_questions: {
         Row: {
           created_at: string
