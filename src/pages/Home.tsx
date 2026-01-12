@@ -34,7 +34,7 @@ const Home = () => {
   const { user } = useAuth();
   const { streak, achievements, quizCount, achievementDefs } = useGameStats();
   const { ratings } = useSkillRating();
-  const { activePlan, showReminder, dismissReminder, daysUntilExam } = useStudyPlan();
+  const { activePlan, showReminder, dismissReminder, daysUntilExam, weeksUntilExam, workplan } = useStudyPlan();
   const [topPlayers, setTopPlayers] = useState<LeaderboardEntry[]>([]);
   const [notification, setNotification] = useState<string>("");
   const { forceUpdate, isUpdating, hasUpdate } = usePWAUpdate();
@@ -160,6 +160,56 @@ const Home = () => {
                 <X className="w-4 h-4" />
               </Button>
             </div>
+          </Card>
+        )}
+
+        {/* Workplan Progress - For users with active study plan */}
+        {activePlan && workplan && (
+          <Card className="p-4 mb-4 border-2 border-primary/30 bg-gradient-to-br from-primary/5 to-transparent">
+            <div className="flex items-center justify-between mb-3">
+              <div className="flex items-center gap-2">
+                <Target className="w-5 h-5 text-primary" />
+                <span className="font-semibold">Your Path to {activePlan.target_score || 1600}</span>
+              </div>
+              <div className="text-right">
+                <p className="text-xs text-muted-foreground">{weeksUntilExam} weeks left</p>
+              </div>
+            </div>
+
+            {/* Key metrics grid */}
+            <div className="grid grid-cols-3 gap-2 mb-3">
+              <div className="p-2 rounded-lg bg-primary/10 text-center">
+                <p className="text-lg font-bold text-primary">{workplan.dailyQuestionsNeeded}</p>
+                <p className="text-[10px] text-muted-foreground">Q/day (6 days)</p>
+              </div>
+              <div className="p-2 rounded-lg bg-orange-500/10 text-center">
+                <p className="text-lg font-bold text-orange-500">{workplan.recommendedPracticeTests}</p>
+                <p className="text-[10px] text-muted-foreground">Practice Tests</p>
+              </div>
+              <div className="p-2 rounded-lg bg-green-500/10 text-center">
+                <p className="text-lg font-bold text-green-500">{workplan.totalQuestionsNeeded.toLocaleString()}</p>
+                <p className="text-[10px] text-muted-foreground">Total Questions</p>
+              </div>
+            </div>
+
+            {/* Difficulty breakdown */}
+            <div className="space-y-1 text-xs">
+              {workplan.breakdown.map((band, i) => (
+                <div key={i} className="flex justify-between items-center">
+                  <span className="text-muted-foreground">
+                    {band.range}
+                    {band.multiplier > 1 && (
+                      <span className="ml-1 text-orange-500">({band.multiplier}x)</span>
+                    )}
+                  </span>
+                  <span className="font-medium">{band.questions.toLocaleString()} Q</span>
+                </div>
+              ))}
+            </div>
+
+            <p className="text-[10px] text-muted-foreground mt-2 pt-2 border-t border-border">
+              💡 1 rest day/week built in. Tests count as {workplan.recommendedPracticeTests * 150} questions.
+            </p>
           </Card>
         )}
         {/* Personalized Stats - Only for logged in users */}

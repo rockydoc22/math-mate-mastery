@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useAuth } from "@/hooks/useAuth";
 import { supabase } from "@/integrations/supabase/client";
+import { calculateWorkplan, WorkplanEstimate } from "@/utils/workplanCalculator";
 
 interface StudyPlan {
   id: string;
@@ -74,11 +75,25 @@ export const useStudyPlan = () => {
     ? Math.max(0, Math.ceil((new Date(activePlan.exam_date).getTime() - Date.now()) / (1000 * 60 * 60 * 24)))
     : 0;
 
+  const weeksUntilExam = Math.ceil(daysUntilExam / 7);
+
+  // Calculate workplan if we have an active plan
+  const workplan: WorkplanEstimate | null = activePlan 
+    ? calculateWorkplan(
+        activePlan.baseline_score || 1000,
+        activePlan.target_score || 1600,
+        weeksUntilExam,
+        activePlan.daily_minutes
+      )
+    : null;
+
   return {
     activePlan,
     loading,
     showReminder,
     dismissReminder,
     daysUntilExam,
+    weeksUntilExam,
+    workplan,
   };
 };
