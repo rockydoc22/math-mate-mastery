@@ -27,6 +27,7 @@ import TopicMastery from "./pages/TopicMastery";
 import ElitePractice from "./pages/ElitePractice";
 import Rulebook from "./pages/Rulebook";
 import NotFound from "./pages/NotFound";
+import DemoMode from "./pages/DemoMode";
 
 const queryClient = new QueryClient();
 
@@ -65,6 +66,7 @@ const App = () => (
             <Route path="/mastery" element={<TopicMastery />} />
             <Route path="/elite-practice" element={<ElitePractice />} />
             <Route path="/rulebook" element={<Rulebook />} />
+            <Route path="/demo" element={<DemoMode />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
