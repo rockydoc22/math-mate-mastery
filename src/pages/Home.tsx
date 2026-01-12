@@ -16,6 +16,7 @@ import { AchievementBadge } from "@/components/AchievementBadge";
 import { getSkillLevel, ratingToSATScore } from "@/utils/eloRating";
 import { supabase } from "@/integrations/supabase/client";
 import { usePWAUpdate, APP_VERSION } from "@/hooks/usePWAUpdate";
+import { SATBossArena } from "@/components/SATBossArena";
 
 // Motivational messages for non-logged in or idle users
 const motivationalMessages = [
@@ -39,7 +40,52 @@ const Home = () => {
   const [topPlayers, setTopPlayers] = useState<LeaderboardEntry[]>([]);
   const [notification, setNotification] = useState<string>("");
   const { forceUpdate, isUpdating, hasUpdate } = usePWAUpdate();
+  const [totalQuestionsAnswered, setTotalQuestionsAnswered] = useState(0);
+  const [recentCorrectAnswers, setRecentCorrectAnswers] = useState(0);
+  const [playerAvatar, setPlayerAvatar] = useState("🧑‍🚀");
+  const [playerUsername, setPlayerUsername] = useState("Fighter");
 
+  // Fetch player stats for Boss Arena
+  useEffect(() => {
+    const fetchPlayerStats = async () => {
+      if (!user) return;
+      
+      // Get total questions answered
+      const { count: totalCount } = await supabase
+        .from("question_attempts")
+        .select("*", { count: "exact", head: true })
+        .eq("user_id", user.id);
+      
+      setTotalQuestionsAnswered(totalCount || 0);
+      
+      // Get recent correct answers (last 7 days)
+      const weekAgo = new Date();
+      weekAgo.setDate(weekAgo.getDate() - 7);
+      
+      const { count: recentCount } = await supabase
+        .from("question_attempts")
+        .select("*", { count: "exact", head: true })
+        .eq("user_id", user.id)
+        .eq("is_correct", true)
+        .gte("created_at", weekAgo.toISOString());
+      
+      setRecentCorrectAnswers(recentCount || 0);
+      
+      // Get player profile
+      const { data: profile } = await supabase
+        .from("profiles")
+        .select("username, avatar_emoji")
+        .eq("id", user.id)
+        .maybeSingle();
+      
+      if (profile) {
+        setPlayerUsername(profile.username || "Fighter");
+        setPlayerAvatar(profile.avatar_emoji || "🧑‍🚀");
+      }
+    };
+    
+    fetchPlayerStats();
+  }, [user]);
   // Fetch top 3 leaderboard
   useEffect(() => {
     const fetchLeaderboard = async () => {
@@ -142,6 +188,22 @@ const Home = () => {
             </Button>
           </Link>
         </header>
+
+        {/* SAT Boss Arena - The Epic Countdown */}
+        {user && activePlan && daysUntilExam > 0 && (
+          <div className="mb-4">
+            <SATBossArena
+              daysUntilExam={daysUntilExam}
+              currentStreak={streak?.current_streak || 0}
+              pendingReviewCount={pendingReviewCount}
+              totalQuestionsAnswered={totalQuestionsAnswered}
+              recentCorrectAnswers={recentCorrectAnswers}
+              playerAvatar={playerAvatar}
+              playerUsername={playerUsername}
+              lastPracticeDate={streak?.last_practice_date}
+            />
+          </div>
+        )}
 
         {/* Study Plan Reminder */}
         {showReminder && activePlan && (
