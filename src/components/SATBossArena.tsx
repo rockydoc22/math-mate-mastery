@@ -2,6 +2,8 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Skull, Zap, Flame, Shield, Clock, AlertTriangle, Target, Heart, Swords } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { FighterVisual } from "@/components/FighterVisual";
+import { useFighterAvatar, type FighterAvatar, FIGHTER_BASE_TYPES } from "@/hooks/useFighterAvatar";
 
 interface SATBossArenaProps {
   daysUntilExam: number;
@@ -12,6 +14,7 @@ interface SATBossArenaProps {
   playerAvatar?: string;
   playerUsername?: string;
   lastPracticeDate?: string | null;
+  fighterAvatar?: FighterAvatar;
 }
 
 // Calculate player HP based on streak and recent activity
@@ -62,7 +65,10 @@ export function SATBossArena({
   playerAvatar = "🧑‍🚀",
   playerUsername = "Fighter",
   lastPracticeDate,
+  fighterAvatar,
 }: SATBossArenaProps) {
+  const { avatar: loadedAvatar } = useFighterAvatar();
+  const actualFighterAvatar = fighterAvatar || loadedAvatar;
   const [showDamageFlash, setShowDamageFlash] = useState(false);
   const [bossShake, setBossShake] = useState(false);
   
@@ -155,18 +161,13 @@ export function SATBossArena({
             animate={missedPractice ? { x: [-2, 2, -2, 0] } : {}}
             transition={{ duration: 0.3 }}
           >
-            {/* Player Avatar */}
-            <div className={cn(
-              "w-16 h-16 rounded-xl flex items-center justify-center text-3xl",
-              "bg-gradient-to-br from-primary/20 to-accent/20 border-2",
-              playerHP < 30 
-                ? "border-red-500 shadow-[0_0_15px_rgba(239,68,68,0.4)]" 
-                : playerHP > 70 
-                  ? "border-green-500 shadow-[0_0_15px_rgba(34,197,94,0.3)]"
-                  : "border-primary/50"
-            )}>
-              {playerAvatar}
-            </div>
+            {/* Player Avatar - Use FighterVisual */}
+            <FighterVisual 
+              avatar={actualFighterAvatar} 
+              size="md" 
+              showAura={currentStreak >= 3}
+              playerHP={playerHP}
+            />
             
             {/* Damage indicator for player */}
             {missedPractice && (
@@ -177,15 +178,6 @@ export function SATBossArena({
               >
                 HIT!
               </motion.div>
-            )}
-            
-            {/* Streak aura */}
-            {currentStreak >= 3 && (
-              <motion.div
-                className="absolute inset-0 rounded-xl border-2 border-orange-500/50"
-                animate={{ scale: [1, 1.1, 1], opacity: [0.5, 0.8, 0.5] }}
-                transition={{ duration: 1.5, repeat: Infinity }}
-              />
             )}
           </motion.div>
           
