@@ -9,8 +9,9 @@ import { Label } from "@/components/ui/label";
 import { useAuth } from "@/hooks/useAuth";
 import { supabase } from "@/integrations/supabase/client";
 import { toast } from "sonner";
-import { Calendar, Clock, Target, TrendingUp, Brain, CheckCircle, Bell, Mail } from "lucide-react";
+import { Calendar, Clock, Target, TrendingUp, Brain, CheckCircle, Bell, Mail, BookOpen, FileText, AlertTriangle } from "lucide-react";
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, ReferenceLine } from "recharts";
+import { calculateWorkplan, WorkplanEstimate } from "@/utils/workplanCalculator";
 
 interface ProjectedScore {
   week: number;
@@ -95,11 +96,20 @@ export const StudyPlanBuilder = () => {
     return data;
   }, [examDate, weeksUntilExam, baselineScore, questionsPerDay]);
 
+  // Calculate detailed workplan
+  const workplan = useMemo((): WorkplanEstimate | null => {
+    if (!examDate || weeksUntilExam === 0) return null;
+    return calculateWorkplan(baselineScore[0], 1600, weeksUntilExam, dailyMinutes[0]);
+  }, [examDate, weeksUntilExam, baselineScore, dailyMinutes]);
+
   const projectedFinalScore = projectedData.length > 0 
     ? projectedData[projectedData.length - 1].score 
     : baselineScore[0];
 
   const totalGain = projectedFinalScore - baselineScore[0];
+  
+  // Check if current pace is sufficient
+  const paceWarning = workplan && workplan.estimatedWeeksNeeded > weeksUntilExam;
 
   const handleSavePlan = async () => {
     if (!user) {
@@ -304,6 +314,94 @@ export const StudyPlanBuilder = () => {
 
           <p className="text-xs text-muted-foreground mt-2 text-center">
             Based on {dailyMinutes[0]} min/day, ~{questionsPerDay * 7} questions/week, with spaced repetition
+          </p>
+        </Card>
+      )}
+
+      {/* Detailed Workplan */}
+      {workplan && (
+        <Card className="p-4 border-primary/20">
+          <div className="flex items-center gap-2 mb-4">
+            <BookOpen className="w-5 h-5 text-primary" />
+            <span className="font-semibold">Your Path to 1600</span>
+          </div>
+
+          {/* Warning if pace is insufficient */}
+          {paceWarning && (
+            <div className="flex items-start gap-2 p-3 rounded-lg bg-yellow-500/10 border border-yellow-500/30 mb-4">
+              <AlertTriangle className="w-5 h-5 text-yellow-500 flex-shrink-0 mt-0.5" />
+              <div className="text-sm">
+                <p className="font-medium text-yellow-600">Pace Alert</p>
+                <p className="text-muted-foreground">
+                  At current pace, you'd need ~{workplan.estimatedWeeksNeeded} weeks, but you have {weeksUntilExam}. 
+                  Consider increasing daily time or adjusting your target.
+                </p>
+              </div>
+            </div>
+          )}
+
+          {/* Key Stats Grid */}
+          <div className="grid grid-cols-2 gap-3 mb-4">
+            <div className="p-3 rounded-lg bg-primary/5 border border-primary/20">
+              <div className="flex items-center gap-2 text-xs text-muted-foreground mb-1">
+                <BookOpen className="w-3 h-3" />
+                Total Questions
+              </div>
+              <p className="text-xl font-bold text-primary">
+                {workplan.totalQuestionsNeeded.toLocaleString()}
+              </p>
+            </div>
+            <div className="p-3 rounded-lg bg-orange-500/5 border border-orange-500/20">
+              <div className="flex items-center gap-2 text-xs text-muted-foreground mb-1">
+                <FileText className="w-3 h-3" />
+                Practice Tests
+              </div>
+              <p className="text-xl font-bold text-orange-500">
+                {workplan.recommendedPracticeTests}
+              </p>
+            </div>
+            <div className="p-3 rounded-lg bg-green-500/5 border border-green-500/20">
+              <div className="flex items-center gap-2 text-xs text-muted-foreground mb-1">
+                <Target className="w-3 h-3" />
+                Daily Goal
+              </div>
+              <p className="text-xl font-bold text-green-500">
+                {workplan.dailyQuestionsNeeded} Q/day
+              </p>
+            </div>
+            <div className="p-3 rounded-lg bg-purple-500/5 border border-purple-500/20">
+              <div className="flex items-center gap-2 text-xs text-muted-foreground mb-1">
+                <Clock className="w-3 h-3" />
+                Weekly Target
+              </div>
+              <p className="text-xl font-bold text-purple-500">
+                {workplan.weeklyQuestionsNeeded} Q/week
+              </p>
+            </div>
+          </div>
+
+          {/* Difficulty Breakdown */}
+          {workplan.breakdown.length > 0 && (
+            <div className="space-y-2">
+              <p className="text-xs font-medium text-muted-foreground">Effort by Score Range</p>
+              {workplan.breakdown.map((band, i) => (
+                <div key={i} className="flex items-center justify-between text-sm">
+                  <span className="text-muted-foreground">
+                    {band.range} 
+                    <span className="text-xs ml-1">
+                      ({band.multiplier > 1 ? `${band.multiplier}x harder` : 'base'})
+                    </span>
+                  </span>
+                  <span className="font-medium">
+                    {band.questions.toLocaleString()} questions
+                  </span>
+                </div>
+              ))}
+            </div>
+          )}
+
+          <p className="text-xs text-muted-foreground mt-3 pt-3 border-t">
+            💡 Practice tests ({workplan.recommendedPracticeTests} recommended) count as {workplan.recommendedPracticeTests * 150} questions toward your total.
           </p>
         </Card>
       )}
