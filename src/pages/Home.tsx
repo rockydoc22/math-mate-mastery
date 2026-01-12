@@ -444,15 +444,36 @@ const Home = () => {
                 <span className="text-sm font-medium">Master What You Missed</span>
               </Button>
             </Link>
-            <Link to="/elite-practice" className="w-full">
-              <Button variant="outline" className="w-full h-auto py-3 flex items-center gap-3 justify-start bg-gradient-to-r from-yellow-500/10 to-amber-500/10 border-yellow-500/30 hover:border-yellow-500/50">
-                <Crown className="w-5 h-5 text-yellow-500 flex-shrink-0" />
-                <div className="flex flex-col items-start">
-                  <span className="text-sm font-medium">Elite Practice</span>
-                  <span className="text-[10px] text-muted-foreground">1600 Club • Elite 1500 • Breakthrough 1400</span>
-                </div>
-              </Button>
-            </Link>
+            {/* Elite Practice - 3 Tiers */}
+            <div className="w-full space-y-2">
+              <Link to="/elite-practice?tier=1600_club" className="w-full block">
+                <Button variant="outline" className="w-full h-auto py-3 flex items-center gap-3 justify-start bg-gradient-to-r from-amber-500/20 to-orange-500/20 border-amber-400/40 hover:border-amber-400/60">
+                  <Crown className="w-5 h-5 text-amber-400 flex-shrink-0" />
+                  <div className="flex flex-col items-start">
+                    <span className="text-sm font-bold text-amber-400">Elite Practice: Sleight of Hand</span>
+                    <span className="text-[10px] text-muted-foreground">1500 → 1600 • Difficulty 12-13 • 45s pacing</span>
+                  </div>
+                </Button>
+              </Link>
+              <Link to="/elite-practice?tier=elite_1500" className="w-full block">
+                <Button variant="outline" className="w-full h-auto py-3 flex items-center gap-3 justify-start bg-gradient-to-r from-purple-500/20 to-pink-500/20 border-purple-400/40 hover:border-purple-400/60">
+                  <Target className="w-5 h-5 text-purple-400 flex-shrink-0" />
+                  <div className="flex flex-col items-start">
+                    <span className="text-sm font-bold text-purple-400">Elite Practice: Breaking Through</span>
+                    <span className="text-[10px] text-muted-foreground">1400 → 1500 • Difficulty 10-12 • 55s pacing</span>
+                  </div>
+                </Button>
+              </Link>
+              <Link to="/elite-practice?tier=breakthrough_1400" className="w-full block">
+                <Button variant="outline" className="w-full h-auto py-3 flex items-center gap-3 justify-start bg-gradient-to-r from-blue-500/20 to-cyan-500/20 border-blue-400/40 hover:border-blue-400/60">
+                  <Zap className="w-5 h-5 text-blue-400 flex-shrink-0" />
+                  <div className="flex flex-col items-start">
+                    <span className="text-sm font-bold text-blue-400">Elite Practice: Foundation Force</span>
+                    <span className="text-[10px] text-muted-foreground">1300 → 1400 • Difficulty 8-11 • 65s pacing</span>
+                  </div>
+                </Button>
+              </Link>
+            </div>
           </div>
         </Card>
 
