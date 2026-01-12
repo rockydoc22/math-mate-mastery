@@ -8,13 +8,16 @@ import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import { ArrowLeft, User, Palette, Save } from "lucide-react";
+import { ArrowLeft, User, Palette, Save, Swords } from "lucide-react";
 import { toast } from "@/hooks/use-toast";
 import { XPBar } from "@/components/XPBar";
 import { AchievementBadge } from "@/components/AchievementBadge";
 import { StreakBadge } from "@/components/StreakBadge";
 import { SkillRatingCard } from "@/components/SkillRatingCard";
 import { PWAUpdateButton } from "@/components/PWAUpdateButton";
+import { FighterCustomizer } from "@/components/FighterCustomizer";
+import { FighterVisual } from "@/components/FighterVisual";
+import { useFighterAvatar } from "@/hooks/useFighterAvatar";
 
 const AVATAR_OPTIONS = ["😎", "🧑‍🎓", "🦊", "🐱", "🐶", "🦁", "🐼", "🦄", "🚀", "⭐", "🔥", "💎", "👑", "🎯", "🧠", "💪"];
 const THEME_OPTIONS = [
@@ -31,6 +34,7 @@ const Profile = () => {
   const { user, signOut } = useAuth();
   const { streak, achievements, quizCount, achievementDefs } = useGameStats();
   const { ratings } = useSkillRating();
+  const { avatar: fighterAvatar } = useFighterAvatar();
   const [loading, setLoading] = useState(false);
   const [profile, setProfile] = useState({
     username: "",
@@ -109,7 +113,7 @@ const Profile = () => {
         {/* Stats Overview */}
         <Card className="p-6">
           <div className="flex items-center gap-4 mb-4">
-            <div className="text-5xl">{profile.avatar_emoji}</div>
+            <FighterVisual avatar={fighterAvatar} size="lg" showAura={true} animate={true} />
             <div className="flex-1">
               <h2 className="text-2xl font-bold">{profile.username}</h2>
               <div className="flex items-center gap-2 mt-1">
@@ -119,6 +123,15 @@ const Profile = () => {
             </div>
           </div>
           <XPBar quizCount={quizCount} />
+        </Card>
+
+        {/* Fighter Customization */}
+        <Card className="p-6">
+          <h3 className="font-semibold flex items-center gap-2 mb-4">
+            <Swords className="w-5 h-5 text-primary" />
+            Fighter Avatar
+          </h3>
+          <FighterCustomizer achievements={achievements} />
         </Card>
 
         {/* Skill Rating */}

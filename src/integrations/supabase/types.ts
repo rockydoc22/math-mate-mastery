@@ -231,6 +231,42 @@ export type Database = {
         }
         Relationships: []
       }
+      fighter_avatars: {
+        Row: {
+          aura_color: string | null
+          base_type: string
+          created_at: string
+          helmet_style: string | null
+          id: string
+          scar_overlay: string | null
+          updated_at: string
+          user_id: string
+          weapon: string | null
+        }
+        Insert: {
+          aura_color?: string | null
+          base_type?: string
+          created_at?: string
+          helmet_style?: string | null
+          id?: string
+          scar_overlay?: string | null
+          updated_at?: string
+          user_id: string
+          weapon?: string | null
+        }
+        Update: {
+          aura_color?: string | null
+          base_type?: string
+          created_at?: string
+          helmet_style?: string | null
+          id?: string
+          scar_overlay?: string | null
+          updated_at?: string
+          user_id?: string
+          weapon?: string | null
+        }
+        Relationships: []
+      }
       flagged_questions: {
         Row: {
           created_at: string
