@@ -34,7 +34,7 @@ const Home = () => {
   const { user } = useAuth();
   const { streak, achievements, quizCount, achievementDefs } = useGameStats();
   const { ratings } = useSkillRating();
-  const { activePlan, showReminder, dismissReminder, daysUntilExam, weeksUntilExam, workplan } = useStudyPlan();
+  const { activePlan, showReminder, dismissReminder, daysUntilExam, weeksUntilExam, workplan, pendingReviewCount, showReviewAlert } = useStudyPlan();
   const [topPlayers, setTopPlayers] = useState<LeaderboardEntry[]>([]);
   const [notification, setNotification] = useState<string>("");
   const { forceUpdate, isUpdating, hasUpdate } = usePWAUpdate();
@@ -163,6 +163,30 @@ const Home = () => {
           </Card>
         )}
 
+        {/* Master What You Missed Alert */}
+        {user && showReviewAlert && (
+          <Card className="p-4 mb-4 border-2 border-destructive/50 bg-destructive/10">
+            <div className="flex items-center justify-between">
+              <div className="flex items-center gap-3">
+                <div className="p-2 rounded-full bg-destructive/20">
+                  <RotateCcw className="w-5 h-5 text-destructive" />
+                </div>
+                <div>
+                  <p className="font-semibold text-destructive">Review Backlog Alert!</p>
+                  <p className="text-xs text-muted-foreground">
+                    {pendingReviewCount} missed questions waiting for review
+                  </p>
+                </div>
+              </div>
+              <Link to="/review">
+                <Button size="sm" variant="destructive">
+                  Review Now
+                </Button>
+              </Link>
+            </div>
+          </Card>
+        )}
+
         {/* Workplan Progress - For users with active study plan */}
         {activePlan && workplan && (
           <Card className="p-4 mb-4 border-2 border-primary/30 bg-gradient-to-br from-primary/5 to-transparent">
@@ -176,10 +200,10 @@ const Home = () => {
               </div>
             </div>
 
-            {/* Key metrics grid */}
+            {/* Key metrics grid - with accelerators */}
             <div className="grid grid-cols-3 gap-2 mb-3">
               <div className="p-2 rounded-lg bg-primary/10 text-center">
-                <p className="text-lg font-bold text-primary">{workplan.dailyQuestionsNeeded}</p>
+                <p className="text-lg font-bold text-primary">{workplan.adjustedDailyQuestions}</p>
                 <p className="text-[10px] text-muted-foreground">Q/day (6 days)</p>
               </div>
               <div className="p-2 rounded-lg bg-orange-500/10 text-center">
@@ -187,10 +211,28 @@ const Home = () => {
                 <p className="text-[10px] text-muted-foreground">Practice Tests</p>
               </div>
               <div className="p-2 rounded-lg bg-green-500/10 text-center">
-                <p className="text-lg font-bold text-green-500">{workplan.totalQuestionsNeeded.toLocaleString()}</p>
-                <p className="text-[10px] text-muted-foreground">Total Questions</p>
+                <p className="text-lg font-bold text-green-500">{workplan.adjustedTotalQuestions?.toLocaleString()}</p>
+                <p className="text-[10px] text-muted-foreground">Questions Left</p>
               </div>
             </div>
+
+            {/* Accelerator Credits Summary */}
+            {workplan.creditsEarned > 0 && (
+              <div className="p-2 mb-3 rounded-lg bg-gradient-to-r from-yellow-500/10 to-orange-500/10 border border-yellow-500/20">
+                <div className="flex items-center justify-between">
+                  <div className="flex items-center gap-2">
+                    <Zap className="w-4 h-4 text-yellow-500" />
+                    <span className="text-xs font-medium">Accelerator Credits Earned</span>
+                  </div>
+                  <span className="text-sm font-bold text-yellow-600">{Math.round(workplan.creditsEarned).toLocaleString()}</span>
+                </div>
+                {workplan.recentCredits > 0 && (
+                  <p className="text-[10px] text-muted-foreground mt-1">
+                    +{Math.round(workplan.recentCredits).toLocaleString()} this week from hard questions, reviews & battles
+                  </p>
+                )}
+              </div>
+            )}
 
             {/* Difficulty breakdown */}
             <div className="space-y-1 text-xs">
@@ -208,7 +250,7 @@ const Home = () => {
             </div>
 
             <p className="text-[10px] text-muted-foreground mt-2 pt-2 border-t border-border">
-              💡 1 rest day/week built in. Tests count as {workplan.recommendedPracticeTests * 150} questions.
+              ⚡ Earn accelerators: Hard Q (1.5x), Spaced Review (up to 2x), Fight Club, Prediction Tests
             </p>
           </Card>
         )}

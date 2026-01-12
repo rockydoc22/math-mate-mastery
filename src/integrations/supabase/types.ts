@@ -14,6 +14,45 @@ export type Database = {
   }
   public: {
     Tables: {
+      accelerator_credits: {
+        Row: {
+          base_questions: number
+          created_at: string
+          credit_type: string
+          earned_credits: number
+          id: string
+          metadata: Json | null
+          multiplier: number
+          question_id: string | null
+          source_id: string | null
+          user_id: string
+        }
+        Insert: {
+          base_questions?: number
+          created_at?: string
+          credit_type: string
+          earned_credits: number
+          id?: string
+          metadata?: Json | null
+          multiplier?: number
+          question_id?: string | null
+          source_id?: string | null
+          user_id: string
+        }
+        Update: {
+          base_questions?: number
+          created_at?: string
+          credit_type?: string
+          earned_credits?: number
+          id?: string
+          metadata?: Json | null
+          multiplier?: number
+          question_id?: string | null
+          source_id?: string | null
+          user_id?: string
+        }
+        Relationships: []
+      }
       achievements: {
         Row: {
           achievement_type: string
@@ -318,7 +357,9 @@ export type Database = {
       question_attempts: {
         Row: {
           created_at: string
+          difficulty_rating: number | null
           domain: string
+          first_missed_at: string | null
           id: string
           is_correct: boolean
           next_review_at: string | null
@@ -331,7 +372,9 @@ export type Database = {
         }
         Insert: {
           created_at?: string
+          difficulty_rating?: number | null
           domain: string
+          first_missed_at?: string | null
           id?: string
           is_correct: boolean
           next_review_at?: string | null
@@ -344,7 +387,9 @@ export type Database = {
         }
         Update: {
           created_at?: string
+          difficulty_rating?: number | null
           domain?: string
+          first_missed_at?: string | null
           id?: string
           is_correct?: boolean
           next_review_at?: string | null

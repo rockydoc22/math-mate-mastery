@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useMemo } from "react";
 import { useAuth } from "@/hooks/useAuth";
 import { supabase } from "@/integrations/supabase/client";
 import { calculateWorkplan, WorkplanEstimate } from "@/utils/workplanCalculator";
@@ -13,11 +13,18 @@ interface StudyPlan {
   last_reminder_shown: string | null;
 }
 
+interface AcceleratorSummary {
+  totalCredits: number;
+  recentCredits: number;
+}
+
 export const useStudyPlan = () => {
   const { user } = useAuth();
   const [activePlan, setActivePlan] = useState<StudyPlan | null>(null);
   const [loading, setLoading] = useState(true);
   const [showReminder, setShowReminder] = useState(false);
+  const [acceleratorCredits, setAcceleratorCredits] = useState<AcceleratorSummary>({ totalCredits: 0, recentCredits: 0 });
+  const [pendingReviewCount, setPendingReviewCount] = useState(0);
 
   useEffect(() => {
     const fetchPlan = async () => {
@@ -50,6 +57,30 @@ export const useStudyPlan = () => {
             setShowReminder(true);
           }
         }
+
+        // Fetch accelerator credits
+        const { data: creditsData } = await supabase
+          .from("accelerator_credits")
+          .select("earned_credits, created_at")
+          .eq("user_id", user.id);
+
+        if (creditsData) {
+          const weekAgo = new Date(Date.now() - 7 * 24 * 60 * 60 * 1000);
+          const totalCredits = creditsData.reduce((sum, c) => sum + Number(c.earned_credits), 0);
+          const recentCredits = creditsData
+            .filter(c => new Date(c.created_at) >= weekAgo)
+            .reduce((sum, c) => sum + Number(c.earned_credits), 0);
+          setAcceleratorCredits({ totalCredits, recentCredits });
+        }
+
+        // Fetch pending review count (missed questions not yet mastered)
+        const { count: reviewCount } = await supabase
+          .from("question_attempts")
+          .select("*", { count: "exact", head: true })
+          .eq("user_id", user.id)
+          .eq("is_correct", false);
+
+        setPendingReviewCount(reviewCount || 0);
       } catch (error) {
         console.error("Error fetching study plan:", error);
       } finally {
@@ -87,6 +118,28 @@ export const useStudyPlan = () => {
       )
     : null;
 
+  // Calculate adjusted workplan with accelerator credits
+  const adjustedWorkplan = useMemo(() => {
+    if (!workplan) return null;
+    
+    const adjustedTotal = Math.max(0, workplan.totalQuestionsNeeded - acceleratorCredits.totalCredits);
+    const effectiveWeeks = Math.max(1, weeksUntilExam);
+    const adjustedWeekly = Math.ceil(adjustedTotal / effectiveWeeks);
+    const adjustedDaily = Math.ceil(adjustedWeekly / 6);
+    
+    return {
+      ...workplan,
+      adjustedTotalQuestions: adjustedTotal,
+      adjustedWeeklyQuestions: adjustedWeekly,
+      adjustedDailyQuestions: adjustedDaily,
+      creditsEarned: acceleratorCredits.totalCredits,
+      recentCredits: acceleratorCredits.recentCredits,
+    };
+  }, [workplan, acceleratorCredits, weeksUntilExam]);
+
+  // Alert thresholds for pending reviews
+  const showReviewAlert = pendingReviewCount >= 10;
+
   return {
     activePlan,
     loading,
@@ -94,6 +147,9 @@ export const useStudyPlan = () => {
     dismissReminder,
     daysUntilExam,
     weeksUntilExam,
-    workplan,
+    workplan: adjustedWorkplan,
+    pendingReviewCount,
+    showReviewAlert,
+    acceleratorCredits,
   };
 };
