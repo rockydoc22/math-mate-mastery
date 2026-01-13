@@ -5,7 +5,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { useAuth } from "@/hooks/useAuth";
 import { supabase } from "@/integrations/supabase/client";
 import { toast } from "sonner";
-import { ArrowLeft, Crown, Copy, Users, Trophy, Loader2, Clock, Skull, ChevronDown, ChevronUp, CheckCircle, XCircle, LogOut } from "lucide-react";
+import { ArrowLeft, Crown, Copy, Users, Trophy, Loader2, Clock, Skull, ChevronDown, ChevronUp, CheckCircle, XCircle, LogOut, Bot } from "lucide-react";
 import { BattleResultsFighter } from "@/components/BattleResultsFighter";
 import { questions } from "@/data/questions";
 import { visualMathQuestions, visualEnglishQuestions, moreMathVisualQuestions, moreEnglishVisualQuestions } from "@/data/visualQuestions";
@@ -26,6 +26,7 @@ interface Room {
   started_at: string | null;
   time_limit_seconds: number | null;
   battle_mode: string;
+  is_solo?: boolean;
 }
 
 interface Participant {
@@ -84,6 +85,10 @@ const BattleRoom = () => {
   const [isEliminated, setIsEliminated] = useState(false);
   const [myAnswers, setMyAnswers] = useState<Record<number, string>>({});
   const [showRecap, setShowRecap] = useState(false);
+  const [aiScore, setAiScore] = useState(0);
+  const [aiCorrect, setAiCorrect] = useState(0);
+  const [aiCurrentQuestion, setAiCurrentQuestion] = useState(0);
+  const [aiEliminated, setAiEliminated] = useState(false);
 
   // Timer countdown effect
   useEffect(() => {
@@ -264,6 +269,41 @@ const BattleRoom = () => {
     }
   }, [room?.status, battleQuestions.length, generateQuestions, room, mySkillRating]);
 
+  // AI opponent simulation for solo mode
+  useEffect(() => {
+    if (!room?.is_solo || room.status !== "in_progress" || battleQuestions.length === 0) return;
+    if (aiCurrentQuestion >= battleQuestions.length || aiEliminated) return;
+
+    // AI answers with a delay based on difficulty (simulates thinking)
+    const baseDelay = 3000 + Math.random() * 5000; // 3-8 seconds per question
+    
+    const answerQuestion = () => {
+      if (aiCurrentQuestion >= battleQuestions.length || aiEliminated) return;
+      
+      // AI accuracy based on player skill level (matched difficulty)
+      // AI gets ~70-85% correct at the player's level
+      const aiAccuracy = 0.70 + Math.random() * 0.15;
+      const isCorrect = Math.random() < aiAccuracy;
+      
+      const isSuddenDeath = room.battle_mode === "sudden_death";
+      
+      if (isSuddenDeath && !isCorrect) {
+        setAiEliminated(true);
+      } else {
+        if (isCorrect) {
+          const timeTaken = baseDelay;
+          const speedBonus = Math.max(0, Math.floor(100 * (1 - timeTaken / 15000)));
+          setAiScore(prev => prev + 1000 + speedBonus);
+          setAiCorrect(prev => prev + 1);
+        }
+        setAiCurrentQuestion(prev => prev + 1);
+      }
+    };
+
+    const timer = setTimeout(answerQuestion, baseDelay);
+    return () => clearTimeout(timer);
+  }, [room?.is_solo, room?.status, room?.battle_mode, aiCurrentQuestion, battleQuestions.length, aiEliminated]);
+
   const handleStartGame = async () => {
     if (!room || !user) return;
 
@@ -398,8 +438,28 @@ const BattleRoom = () => {
 
   const isHost = user?.id === room?.host_id;
   const currentQuestion = battleQuestions[currentQuestionIndex];
+  
+  // Create AI participant for solo mode
+  const aiParticipant: Participant | null = room?.is_solo ? {
+    id: 'ai-opponent',
+    user_id: 'ai',
+    score: aiScore,
+    answers_correct: aiCorrect,
+    current_question: aiCurrentQuestion,
+    finished_at: aiEliminated || aiCurrentQuestion >= battleQuestions.length ? new Date().toISOString() : null,
+    eliminated: aiEliminated,
+    profile: {
+      username: 'SAT Bot',
+      avatar_emoji: '🤖'
+    },
+    skill_rating: mySkillRating
+  } : null;
+  
+  // Combine real participants with AI for solo mode
+  const allParticipants = aiParticipant ? [...participants, aiParticipant] : participants;
+  
   // Sort by answers correct first (primary), then by score which includes time bonus (secondary)
-  const sortedParticipants = [...participants].sort((a, b) => {
+  const sortedParticipants = [...allParticipants].sort((a, b) => {
     if (b.answers_correct !== a.answers_correct) {
       return b.answers_correct - a.answers_correct; // More correct = higher rank
     }
@@ -418,7 +478,7 @@ const BattleRoom = () => {
   if (showResults || room?.status === "completed") {
     // In sudden death, sort by: 1) eliminated last, 2) most correct, 3) score
     const resultsParticipants = room?.battle_mode === "sudden_death" 
-      ? [...participants].sort((a, b) => {
+      ? [...allParticipants].sort((a, b) => {
           // Players who answered more are ranked higher (survived longer)
           if (b.answers_correct !== a.answers_correct) {
             return b.answers_correct - a.answers_correct;
@@ -452,17 +512,19 @@ const BattleRoom = () => {
             {resultsParticipants.map((p, index) => {
               const wasEliminated = room?.battle_mode === "sudden_death" && p.answers_correct < battleQuestions.length && p.finished_at;
               const isWinner = index === 0;
+              const isAI = p.user_id === 'ai';
               
               return (
                 <Card 
                   key={p.id} 
-                  className={`${isWinner ? "border-yellow-500 bg-yellow-500/10" : ""} ${wasEliminated ? "opacity-60" : ""}`}
+                  className={`${isWinner ? "border-yellow-500 bg-yellow-500/10" : ""} ${wasEliminated ? "opacity-60" : ""} ${isAI ? "border-primary/30" : ""}`}
                 >
                   <CardContent className="flex items-center justify-between p-4">
                     <div className="flex items-center gap-3">
                       <span className="text-2xl font-bold text-muted-foreground">#{index + 1}</span>
                       {isWinner && <Crown className="w-6 h-6 text-yellow-500" />}
                       {wasEliminated && <Skull className="w-5 h-5 text-destructive" />}
+                      {isAI && <Bot className="w-5 h-5 text-primary" />}
                       <span className="text-2xl">{p.profile?.avatar_emoji || "😎"}</span>
                       <span className={`font-medium ${wasEliminated ? "line-through" : ""}`}>
                         {p.profile?.username || "Player"}
@@ -709,15 +771,18 @@ const BattleRoom = () => {
         <div className="flex gap-2 mb-6 overflow-x-auto pb-2">
           {sortedParticipants.slice(0, 4).map((p) => {
             const pEliminated = room?.battle_mode === "sudden_death" && p.finished_at && p.answers_correct < battleQuestions.length;
+            const isAI = p.user_id === 'ai';
             return (
               <div 
                 key={p.id} 
                 className={`flex items-center gap-2 px-3 py-1 rounded-full text-sm ${
                   pEliminated ? "bg-destructive/20 opacity-60" :
+                  isAI ? "bg-primary/20 border border-primary/40" :
                   p.user_id === user?.id ? "bg-primary text-primary-foreground" : "bg-muted"
                 }`}
               >
                 {pEliminated && <Skull className="w-3 h-3 text-destructive" />}
+                {isAI && !pEliminated && <Bot className="w-3 h-3 text-primary" />}
                 <span>{p.profile?.avatar_emoji || "😎"}</span>
                 <span className={`truncate max-w-[60px] ${pEliminated ? "line-through" : ""}`}>{p.profile?.username}</span>
                 <span className="font-bold">{p.score}</span>

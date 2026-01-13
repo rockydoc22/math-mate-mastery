@@ -7,7 +7,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { useAuth } from "@/hooks/useAuth";
 import { supabase } from "@/integrations/supabase/client";
 import { toast } from "sonner";
-import { Swords, Users, ArrowLeft, Zap, Skull } from "lucide-react";
+import { Swords, Users, ArrowLeft, Zap, Skull, Bot } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const BattleLobby = () => {
@@ -21,6 +21,7 @@ const BattleLobby = () => {
   const [battleMode, setBattleMode] = useState("sudden_death");
   const [isCreating, setIsCreating] = useState(false);
   const [isJoining, setIsJoining] = useState(false);
+  const [isCreatingSolo, setIsCreatingSolo] = useState(false);
 
   const generateRoomCode = () => {
     const chars = "ABCDEFGHJKLMNPQRSTUVWXYZ23456789";
@@ -74,6 +75,55 @@ const BattleLobby = () => {
       toast.error("Failed to create battle room");
     } finally {
       setIsCreating(false);
+    }
+  };
+
+  const handleCreateSoloRoom = async () => {
+    if (!user) {
+      toast.error("Please sign in to start a solo battle");
+      navigate("/auth");
+      return;
+    }
+
+    setIsCreatingSolo(true);
+    try {
+      const roomCode = generateRoomCode();
+      
+      const { data: room, error: roomError } = await supabase
+        .from("battle_rooms")
+        .insert({
+          host_id: user.id,
+          room_code: roomCode,
+          subject,
+          question_count: parseInt(questionCount),
+          max_players: 2,
+          time_limit_seconds: parseInt(timeLimit) || null,
+          battle_mode: battleMode,
+          is_solo: true,
+          status: "in_progress", // Start immediately
+          started_at: new Date().toISOString(),
+        })
+        .select()
+        .single();
+
+      if (roomError) throw roomError;
+
+      // Host joins as participant
+      const { error: joinError } = await supabase
+        .from("battle_participants")
+        .insert({
+          room_id: room.id,
+          user_id: user.id,
+        });
+
+      if (joinError) throw joinError;
+
+      navigate(`/battle/${roomCode}`);
+    } catch (error: any) {
+      console.error("Error creating solo room:", error);
+      toast.error("Failed to create solo battle");
+    } finally {
+      setIsCreatingSolo(false);
     }
   };
 
@@ -158,6 +208,29 @@ const BattleLobby = () => {
           </div>
           <p className="text-muted-foreground">Ready for a Good Ole Time SAT Butt Whooping?</p>
         </div>
+
+        {/* Solo vs SAT Button */}
+        <Card className="border-primary/40 bg-gradient-to-r from-primary/10 to-primary/5 mb-6">
+          <CardContent className="p-6">
+            <div className="flex flex-col md:flex-row items-center justify-between gap-4">
+              <div className="flex items-center gap-3">
+                <Bot className="w-10 h-10 text-primary" />
+                <div>
+                  <h3 className="text-xl font-bold">Solo vs SAT</h3>
+                  <p className="text-sm text-muted-foreground">Battle an AI opponent matched to your skill level</p>
+                </div>
+              </div>
+              <Button 
+                onClick={handleCreateSoloRoom}
+                disabled={isCreatingSolo}
+                size="lg"
+                className="w-full md:w-auto"
+              >
+                {isCreatingSolo ? "Starting..." : "Start Solo Battle"}
+              </Button>
+            </div>
+          </CardContent>
+        </Card>
 
         <div className="grid gap-6 md:grid-cols-2">
           {/* Create Room */}
