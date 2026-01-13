@@ -163,6 +163,7 @@ export type Database = {
           current_question_index: number
           host_id: string
           id: string
+          is_solo: boolean
           max_players: number
           question_count: number
           room_code: string
@@ -177,6 +178,7 @@ export type Database = {
           current_question_index?: number
           host_id: string
           id?: string
+          is_solo?: boolean
           max_players?: number
           question_count?: number
           room_code: string
@@ -191,6 +193,7 @@ export type Database = {
           current_question_index?: number
           host_id?: string
           id?: string
+          is_solo?: boolean
           max_players?: number
           question_count?: number
           room_code?: string
