@@ -7,7 +7,7 @@ import { Label } from "@/components/ui/label";
 import { useAuth } from "@/hooks/useAuth";
 import { toast } from "@/hooks/use-toast";
 import { supabase } from "@/integrations/supabase/client";
-import { Zap, User, Mail, Lock, ArrowLeft, HelpCircle } from "lucide-react";
+import { User, Mail, Lock, ArrowLeft, HelpCircle, Eye, EyeOff } from "lucide-react";
 
 type AuthMode = "signIn" | "signUp" | "forgotPassword" | "forgotUsername" | "resetPassword";
 
@@ -39,6 +39,8 @@ const Auth = () => {
   const { user, signIn, signUp } = useAuth();
   const [mode, setMode] = useState<AuthMode>("signIn");
   const [loading, setLoading] = useState(false);
+  const [showPassword, setShowPassword] = useState(false);
+  const [showConfirmPassword, setShowConfirmPassword] = useState(false);
   const [form, setForm] = useState({ 
     emailOrUsername: "", 
     email: "", 
@@ -229,14 +231,12 @@ const Auth = () => {
   return (
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-background via-primary/5 to-accent/10 p-4">
       <div className="w-full max-w-md space-y-8 animate-in fade-in duration-500">
-        <div className="text-center space-y-2">
+        <div className="text-center">
           <div className="flex justify-center">
-            <div className="p-4 rounded-2xl bg-gradient-to-br from-primary to-accent">
-              <Zap className="w-12 h-12 text-primary-foreground" />
+            <div className="px-6 py-4 rounded-2xl bg-gradient-to-br from-primary to-accent">
+              <span className="text-3xl font-bold text-primary-foreground">40²</span>
             </div>
           </div>
-          <h1 className="text-3xl font-bold">40²</h1>
-          <p className="text-muted-foreground">{getTitle()}</p>
         </div>
 
         <Card className="p-6 border-2 border-border bg-card/80 backdrop-blur">
@@ -339,14 +339,22 @@ const Auth = () => {
                   <Lock className="absolute left-3 top-3 w-4 h-4 text-muted-foreground" />
                   <Input
                     id="password"
-                    type="password"
+                    type={showPassword ? "text" : "password"}
                     placeholder="••••••••"
-                    className="pl-10"
+                    className="pl-10 pr-10"
                     value={form.password}
                     onChange={(e) => setForm({ ...form, password: e.target.value })}
                     required
                     minLength={mode === "signIn" ? 1 : 8}
                   />
+                  <button
+                    type="button"
+                    className="absolute right-3 top-3 text-muted-foreground hover:text-foreground"
+                    onClick={() => setShowPassword(!showPassword)}
+                    tabIndex={-1}
+                  >
+                    {showPassword ? <EyeOff className="w-4 h-4" /> : <Eye className="w-4 h-4" />}
+                  </button>
                 </div>
                 {(mode === "signUp" || mode === "resetPassword") && (
                   <p className="text-xs text-muted-foreground">
@@ -363,14 +371,22 @@ const Auth = () => {
                   <Lock className="absolute left-3 top-3 w-4 h-4 text-muted-foreground" />
                   <Input
                     id="confirmPassword"
-                    type="password"
+                    type={showConfirmPassword ? "text" : "password"}
                     placeholder="••••••••"
-                    className="pl-10"
+                    className="pl-10 pr-10"
                     value={form.confirmPassword}
                     onChange={(e) => setForm({ ...form, confirmPassword: e.target.value })}
                     required
                     minLength={8}
                   />
+                  <button
+                    type="button"
+                    className="absolute right-3 top-3 text-muted-foreground hover:text-foreground"
+                    onClick={() => setShowConfirmPassword(!showConfirmPassword)}
+                    tabIndex={-1}
+                  >
+                    {showConfirmPassword ? <EyeOff className="w-4 h-4" /> : <Eye className="w-4 h-4" />}
+                  </button>
                 </div>
               </div>
             )}
