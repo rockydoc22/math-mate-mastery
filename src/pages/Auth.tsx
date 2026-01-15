@@ -55,17 +55,56 @@ const Auth = () => {
     
     // Listen for PASSWORD_RECOVERY event from Supabase
     const { data: { subscription } } = supabase.auth.onAuthStateChange((event, session) => {
+      console.log("Auth event:", event, "Session:", !!session);
       if (event === "PASSWORD_RECOVERY") {
         setMode("resetPassword");
       }
     });
 
-    // Also check URL hash for recovery token (Supabase sends these)
-    const hashParams = new URLSearchParams(window.location.hash.substring(1));
-    const type = hashParams.get("type");
-    if (type === "recovery" || isReset) {
-      setMode("resetPassword");
-    }
+    // Handle recovery token from URL hash (Supabase sends these via email link)
+    const handleRecoveryToken = async () => {
+      const hashParams = new URLSearchParams(window.location.hash.substring(1));
+      const accessToken = hashParams.get("access_token");
+      const refreshToken = hashParams.get("refresh_token");
+      const type = hashParams.get("type");
+      
+      if (type === "recovery" && accessToken) {
+        // Exchange the tokens for a session
+        const { error } = await supabase.auth.setSession({
+          access_token: accessToken,
+          refresh_token: refreshToken || "",
+        });
+        
+        if (error) {
+          console.error("Error setting session:", error);
+          toast({ 
+            title: "Reset link expired", 
+            description: "Please request a new password reset link",
+            variant: "destructive" 
+          });
+          setMode("forgotPassword");
+        } else {
+          setMode("resetPassword");
+          // Clear the hash from URL for security
+          window.history.replaceState({}, "", "/auth?reset=true");
+        }
+      } else if (isReset) {
+        // Check if we already have a session
+        const { data: { session } } = await supabase.auth.getSession();
+        if (session) {
+          setMode("resetPassword");
+        } else {
+          toast({ 
+            title: "Session expired", 
+            description: "Please request a new password reset link",
+            variant: "destructive" 
+          });
+          setMode("forgotPassword");
+        }
+      }
+    };
+    
+    handleRecoveryToken();
 
     return () => subscription.unsubscribe();
   }, [searchParams]);
