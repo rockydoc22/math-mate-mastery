@@ -59,7 +59,7 @@ export const FlagQuestionModal = ({ isOpen, onClose, questionId, questionType }:
 
       if (error) throw error;
 
-      // Notify all admins about the new flag
+      // Notify all admins about the new flag (in-app + email)
       const { data: admins } = await supabase
         .from('user_roles')
         .select('user_id')
@@ -67,6 +67,8 @@ export const FlagQuestionModal = ({ isOpen, onClose, questionId, questionType }:
       
       if (admins && admins.length > 0) {
         const issueLabel = issueTypes.find(t => t.value === issueType)?.label || issueType;
+        
+        // In-app notifications
         await supabase.from('user_notifications').insert(
           admins.map(admin => ({
             user_id: admin.user_id,
@@ -76,6 +78,17 @@ export const FlagQuestionModal = ({ isOpen, onClose, questionId, questionType }:
             link: '/admin',
           }))
         );
+        
+        // Send email notification (fire and forget - don't block on this)
+        supabase.functions.invoke('notify-flagged-question', {
+          body: {
+            questionId,
+            questionType,
+            issueType,
+            notes: notes.trim() || undefined,
+            adminEmail: 'mwhite@gmail.com', // Admin email - you can change this
+          },
+        }).catch(err => console.error('Email notification failed:', err));
       }
 
       toast({ 
