@@ -64,7 +64,7 @@ export const ELITE_TIERS: EliteTier[] = [
       '65-second pacing alerts',
       'Core concept reinforcement',
       'Error pattern identification',
-      'Topic mastery tracking',
+      'Progress tracking',
     ],
     description: 'Building towards 1400+',
     color: 'text-blue-400',
