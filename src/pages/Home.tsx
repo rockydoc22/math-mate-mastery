@@ -158,9 +158,9 @@ const Home = () => {
                 <Button
                   onClick={forceUpdate}
                   disabled={isUpdating}
-                  variant="ghost"
+                  variant="outline"
                   size="sm"
-                  className="text-[10px] gap-1 h-6 text-muted-foreground"
+                  className="text-[10px] gap-1 h-6 px-2 border-muted-foreground/30 bg-background/80"
                 >
                   <RefreshCw className={`w-3 h-3 ${isUpdating ? "animate-spin" : ""}`} />
                   {isUpdating ? "Updating..." : "Refresh & Update"}
