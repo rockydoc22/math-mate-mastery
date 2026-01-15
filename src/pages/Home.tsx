@@ -550,36 +550,24 @@ const Home = () => {
         </p>
 
         {/* Quick Links - Mobile optimized grid */}
-        <div className="grid grid-cols-5 gap-1 mt-auto pb-2 px-2">
+        <div className="grid grid-cols-3 gap-4 mt-auto pb-2 px-4">
           <Link to="/why-it-works" className="flex flex-col items-center">
-            <Button variant="ghost" size="sm" className="h-8 w-8 p-0 text-primary">
-              <Zap className="w-4 h-4" />
+            <Button variant="ghost" size="sm" className="h-10 w-10 p-0 text-primary">
+              <Zap className="w-5 h-5" />
             </Button>
-            <span className="text-[10px] text-primary font-medium text-center leading-tight">Why</span>
+            <span className="text-xs text-primary font-medium text-center leading-tight">Why</span>
           </Link>
           <Link to="/insights" className="flex flex-col items-center">
-            <Button variant="ghost" size="sm" className="h-8 w-8 p-0">
-              <Brain className="w-4 h-4" />
+            <Button variant="ghost" size="sm" className="h-10 w-10 p-0">
+              <Brain className="w-5 h-5" />
             </Button>
-            <span className="text-[10px] text-muted-foreground text-center leading-tight">Insights</span>
-          </Link>
-          <Link to="/review" className="flex flex-col items-center">
-            <Button variant="ghost" size="sm" className="h-8 w-8 p-0">
-              <RotateCcw className="w-4 h-4" />
-            </Button>
-            <span className="text-[10px] text-muted-foreground text-center leading-tight">Review</span>
-          </Link>
-          <Link to="/problems-by-topic" className="flex flex-col items-center">
-            <Button variant="ghost" size="sm" className="h-8 w-8 p-0">
-              <BookOpen className="w-4 h-4" />
-            </Button>
-            <span className="text-[10px] text-muted-foreground text-center leading-tight">By Topic</span>
+            <span className="text-xs text-muted-foreground text-center leading-tight">Insights</span>
           </Link>
           <Link to="/demo" className="flex flex-col items-center">
-            <Button variant="ghost" size="sm" className="h-8 w-8 p-0 text-green-500">
-              <GraduationCap className="w-4 h-4" />
+            <Button variant="ghost" size="sm" className="h-10 w-10 p-0 text-green-500">
+              <GraduationCap className="w-5 h-5" />
             </Button>
-            <span className="text-[10px] text-green-500 font-medium text-center leading-tight">Demo</span>
+            <span className="text-xs text-green-500 font-medium text-center leading-tight">Demo</span>
           </Link>
         </div>
 
