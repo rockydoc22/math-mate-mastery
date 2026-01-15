@@ -5,7 +5,7 @@ import { Card } from "@/components/ui/card";
 import { 
   Calculator, PenTool, Trophy, Zap, Users, LogIn, User, 
   Award, Swords, ChevronRight, Flame, Bell, Play, Brain, X,
-  Target, RotateCcw, BookOpen, RefreshCw, FileText, Crown
+  Target, RotateCcw, BookOpen, RefreshCw, FileText, Crown, GraduationCap
 } from "lucide-react";
 import { useNavigate, Link } from "react-router-dom";
 import { useAuth } from "@/hooks/useAuth";
@@ -537,32 +537,37 @@ const Home = () => {
           Your future self will thank you.
         </p>
 
-        {/* Quick Links - Minimal */}
-        <div className="flex gap-2 justify-center flex-wrap mt-auto pb-2">
-          <Link to="/why-it-works">
-            <Button variant="ghost" size="sm" className="text-xs text-primary font-medium">
-              Why 1600² Works
+        {/* Quick Links - Mobile optimized grid */}
+        <div className="grid grid-cols-5 gap-1 mt-auto pb-2 px-2">
+          <Link to="/why-it-works" className="flex flex-col items-center">
+            <Button variant="ghost" size="sm" className="h-8 w-8 p-0 text-primary">
+              <Zap className="w-4 h-4" />
             </Button>
+            <span className="text-[10px] text-primary font-medium text-center leading-tight">Why</span>
           </Link>
-          <Link to="/insights">
-            <Button variant="ghost" size="sm" className="text-xs">
-              Insights
+          <Link to="/insights" className="flex flex-col items-center">
+            <Button variant="ghost" size="sm" className="h-8 w-8 p-0">
+              <Brain className="w-4 h-4" />
             </Button>
+            <span className="text-[10px] text-muted-foreground text-center leading-tight">Insights</span>
           </Link>
-          <Link to="/review">
-            <Button variant="ghost" size="sm" className="text-xs">
-              Review
+          <Link to="/review" className="flex flex-col items-center">
+            <Button variant="ghost" size="sm" className="h-8 w-8 p-0">
+              <RotateCcw className="w-4 h-4" />
             </Button>
+            <span className="text-[10px] text-muted-foreground text-center leading-tight">Review</span>
           </Link>
-          <Link to="/problems-by-topic">
-            <Button variant="ghost" size="sm" className="text-xs">
-              By Topic
+          <Link to="/problems-by-topic" className="flex flex-col items-center">
+            <Button variant="ghost" size="sm" className="h-8 w-8 p-0">
+              <BookOpen className="w-4 h-4" />
             </Button>
+            <span className="text-[10px] text-muted-foreground text-center leading-tight">By Topic</span>
           </Link>
-          <Link to="/demo">
-            <Button variant="ghost" size="sm" className="text-xs text-green-500 font-medium">
-              🎓 Demo Mode
+          <Link to="/demo" className="flex flex-col items-center">
+            <Button variant="ghost" size="sm" className="h-8 w-8 p-0 text-green-500">
+              <GraduationCap className="w-4 h-4" />
             </Button>
+            <span className="text-[10px] text-green-500 font-medium text-center leading-tight">Demo</span>
           </Link>
         </div>
 

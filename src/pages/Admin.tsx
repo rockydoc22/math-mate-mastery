@@ -6,7 +6,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { supabase } from "@/integrations/supabase/client";
 import { toast } from "@/hooks/use-toast";
 import { Link } from "react-router-dom";
-import { ArrowLeft, Trash2, Check, Eye, ShieldAlert, Users, Flag, GraduationCap, BarChart3 } from "lucide-react";
+import { ArrowLeft, Trash2, Check, Eye, ShieldAlert, Users, Flag, GraduationCap, BarChart3, Bell } from "lucide-react";
 import { useAuth } from "@/hooks/useAuth";
 import { QuestionDistribution } from "@/components/admin/QuestionDistribution";
 
@@ -140,6 +140,31 @@ const Admin = () => {
     if (isAdmin) {
       fetchFlaggedQuestions();
       fetchUserStats();
+      
+      // Subscribe to new flagged questions in realtime
+      const channel = supabase
+        .channel('admin-flags')
+        .on(
+          'postgres_changes',
+          {
+            event: 'INSERT',
+            schema: 'public',
+            table: 'flagged_questions',
+          },
+          (payload) => {
+            const newFlag = payload.new as FlaggedQuestion;
+            setFlaggedQuestions(prev => [newFlag, ...prev]);
+            toast({
+              title: "🚩 New flagged question!",
+              description: `Question ${newFlag.question_id} was reported`,
+            });
+          }
+        )
+        .subscribe();
+        
+      return () => {
+        supabase.removeChannel(channel);
+      };
     }
   }, [isAdmin]);
 
