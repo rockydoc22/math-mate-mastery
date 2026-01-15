@@ -18,6 +18,9 @@ interface FlaggedQuestion {
   notes: string | null;
   status: string;
   created_at: string;
+  user_id: string | null;
+  resolved_at: string | null;
+  resolution_notes: string | null;
 }
 
 interface UserStats {
@@ -140,19 +143,37 @@ const Admin = () => {
     }
   }, [isAdmin]);
 
-  const updateStatus = async (id: string, status: string) => {
+  const updateStatus = async (id: string, status: string, sendNotification = true) => {
     try {
+      const flag = flaggedQuestions.find(q => q.id === id);
+      
+      const updateData: Record<string, unknown> = { status };
+      if (status === 'resolved') {
+        updateData.resolved_at = new Date().toISOString();
+        updateData.resolution_notes = 'Issue has been fixed by admin';
+      }
+      
       const { error } = await supabase
         .from('flagged_questions')
-        .update({ status })
+        .update(updateData)
         .eq('id', id);
 
       if (error) throw error;
       
+      // Send notification to the user who flagged the question
+      if (status === 'resolved' && flag?.user_id && sendNotification) {
+        await supabase.from('user_notifications').insert({
+          user_id: flag.user_id,
+          title: '🎉 Your flag was resolved!',
+          message: `Thanks for reporting question ${flag.question_id}. We've fixed the issue!`,
+          type: 'success',
+        });
+      }
+      
       setFlaggedQuestions(prev => 
         prev.map(q => q.id === id ? { ...q, status } : q)
       );
-      toast({ title: "Status updated" });
+      toast({ title: "Status updated" + (status === 'resolved' && flag?.user_id ? " - User notified!" : "") });
     } catch (error) {
       console.error('Error updating status:', error);
       toast({ title: "Error updating status", variant: "destructive" });
