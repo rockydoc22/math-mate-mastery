@@ -2617,52 +2617,52 @@
     "category": "Functions",
     "subcategory": "Function Composition",
     "difficulty": "hard",
-    "question": "If f(x) = 4x + -5 and g(x) = 2x, what is g(f(1))?",
+    "question": "If f(x) = 4x - 5 and g(x) = 2x, what is g(f(1))?",
     "optionA": "-7",
     "optionB": "-2",
     "optionC": "3",
     "optionD": "3",
     "correct": "B",
-    "explanation": "First find f(1) = 4(1) + -5 = -1. Then g(f(1)) = g(-1) = 2(-1) = -2"
+    "explanation": "First find f(1) = 4(1) - 5 = -1. Then g(f(1)) = g(-1) = 2(-1) = -2"
   },
   {
     "id": 203,
     "category": "Functions",
     "subcategory": "Function Composition",
     "difficulty": "hard",
-    "question": "If f(x) = 2x + -1 and g(x) = 4x, what is g(f(1))?",
+    "question": "If f(x) = 2x - 1 and g(x) = 4x, what is g(f(1))?",
     "optionA": "-1",
     "optionB": "4",
     "optionC": "9",
     "optionD": "7",
     "correct": "B",
-    "explanation": "First find f(1) = 2(1) + -1 = 1. Then g(f(1)) = g(1) = 4(1) = 4"
+    "explanation": "First find f(1) = 2(1) - 1 = 1. Then g(f(1)) = g(1) = 4(1) = 4"
   },
   {
     "id": 204,
     "category": "Functions",
     "subcategory": "Function Composition",
     "difficulty": "hard",
-    "question": "If f(x) = 2x + -9 and g(x) = 2x, what is g(f(1))?",
+    "question": "If f(x) = 2x - 9 and g(x) = 2x, what is g(f(1))?",
     "optionA": "-19",
     "optionB": "-14",
     "optionC": "-9",
     "optionD": "-5",
     "correct": "B",
-    "explanation": "First find f(1) = 2(1) + -9 = -7. Then g(f(1)) = g(-7) = 2(-7) = -14"
+    "explanation": "First find f(1) = 2(1) - 9 = -7. Then g(f(1)) = g(-7) = 2(-7) = -14"
   },
   {
     "id": 205,
     "category": "Functions",
     "subcategory": "Function Composition",
     "difficulty": "hard",
-    "question": "If f(x) = 2x + -7 and g(x) = 2x, what is g(f(2))?",
+    "question": "If f(x) = 2x - 7 and g(x) = 2x, what is g(f(2))?",
     "optionA": "-11",
     "optionB": "-6",
     "optionC": "-1",
     "optionD": "1",
     "correct": "B",
-    "explanation": "First find f(2) = 2(2) + -7 = -3. Then g(f(2)) = g(-3) = 2(-3) = -6"
+    "explanation": "First find f(2) = 2(2) - 7 = -3. Then g(f(2)) = g(-3) = 2(-3) = -6"
   },
   {
     "id": 206,
@@ -2682,26 +2682,26 @@
     "category": "Functions",
     "subcategory": "Function Composition",
     "difficulty": "hard",
-    "question": "If f(x) = 5x + -4 and g(x) = 4x, what is g(f(4))?",
+    "question": "If f(x) = 5x - 4 and g(x) = 4x, what is g(f(4))?",
     "optionA": "59",
     "optionB": "64",
     "optionC": "69",
     "optionD": "76",
     "correct": "B",
-    "explanation": "First find f(4) = 5(4) + -4 = 16. Then g(f(4)) = g(16) = 4(16) = 64"
+    "explanation": "First find f(4) = 5(4) - 4 = 16. Then g(f(4)) = g(16) = 4(16) = 64"
   },
   {
     "id": 208,
     "category": "Functions",
     "subcategory": "Function Composition",
     "difficulty": "hard",
-    "question": "If f(x) = 3x + -6 and g(x) = 3x, what is g(f(3))?",
+    "question": "If f(x) = 3x - 6 and g(x) = 3x, what is g(f(3))?",
     "optionA": "4",
     "optionB": "9",
     "optionC": "14",
     "optionD": "21",
     "correct": "B",
-    "explanation": "First find f(3) = 3(3) + -6 = 3. Then g(f(3)) = g(3) = 3(3) = 9"
+    "explanation": "First find f(3) = 3(3) - 6 = 3. Then g(f(3)) = g(3) = 3(3) = 9"
   },
   {
     "id": 209,
@@ -2721,13 +2721,13 @@
     "category": "Functions",
     "subcategory": "Function Composition",
     "difficulty": "hard",
-    "question": "If f(x) = 4x + -2 and g(x) = 4x, what is g(f(1))?",
+    "question": "If f(x) = 4x - 2 and g(x) = 4x, what is g(f(1))?",
     "optionA": "3",
     "optionB": "8",
     "optionC": "13",
     "optionD": "14",
     "correct": "B",
-    "explanation": "First find f(1) = 4(1) + -2 = 2. Then g(f(1)) = g(2) = 4(2) = 8"
+    "explanation": "First find f(1) = 4(1) - 2 = 2. Then g(f(1)) = g(2) = 4(2) = 8"
   },
   {
     "id": 211,
