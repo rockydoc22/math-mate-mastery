@@ -29,6 +29,7 @@ import Rulebook from "./pages/Rulebook";
 import NotFound from "./pages/NotFound";
 import DemoMode from "./pages/DemoMode";
 import Settings from "./pages/Settings";
+import PrintableQuestions from "./pages/PrintableQuestions";
 
 const queryClient = new QueryClient();
 
@@ -64,6 +65,7 @@ const App = () => (
             <Route path="/rulebook" element={<Rulebook />} />
             <Route path="/demo" element={<DemoMode />} />
             <Route path="/settings" element={<Settings />} />
+            <Route path="/printable-questions" element={<PrintableQuestions />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
