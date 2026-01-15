@@ -114,10 +114,12 @@ export const importedSATMathQuestions: ImageQuestion[] = [
     question: "In the xy-plane, line ℓ passes through the point (0, 0) and is parallel to the line represented by the equation y = 8x + 2. If line ℓ also passes through the point (3, d), what is the value of d?",
     imageUrl: "/questions/sat-math-b9835972.jpg",
     options: [
-      { letter: "A", text: "24" }
+      { letter: "A", text: "8" },
+      { letter: "B", text: "11" },
+      { letter: "C", text: "24" },
+      { letter: "D", text: "26" }
     ],
-    correctAnswer: "A",
-    isNumericAnswer: true,
+    correctAnswer: "C",
     explanation: "The correct answer is 24. A line in the xy-plane can be defined by the equation y = mx + b, where m is the slope and b is the y-coordinate of the y-intercept. It's given that line ℓ passes through the point (0, 0). Therefore, the y-coordinate of the y-intercept of line ℓ is 0.\n\nIt's given that line ℓ is parallel to the line represented by the equation y = 8x + 2. Since parallel lines have the same slope, it follows that the slope of line ℓ is 8. Therefore, line ℓ can be defined by the equation y = 8x + 0, or y = 8x.\n\nIf line ℓ passes through the point (3, d), then when x = 3, y = d for the equation y = 8x. Substituting 3 for x and d for y yields d = 8(3) = 24.",
     difficulty: "Hard",
     domain: "Algebra",
