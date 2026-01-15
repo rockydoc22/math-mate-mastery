@@ -374,6 +374,7 @@ export type Database = {
           avatar_emoji: string | null
           avatar_url: string | null
           created_at: string
+          email: string | null
           id: string
           theme_color: string | null
           updated_at: string
@@ -383,6 +384,7 @@ export type Database = {
           avatar_emoji?: string | null
           avatar_url?: string | null
           created_at?: string
+          email?: string | null
           id: string
           theme_color?: string | null
           updated_at?: string
@@ -392,6 +394,7 @@ export type Database = {
           avatar_emoji?: string | null
           avatar_url?: string | null
           created_at?: string
+          email?: string | null
           id?: string
           theme_color?: string | null
           updated_at?: string
@@ -859,6 +862,10 @@ export type Database = {
       }
     }
     Functions: {
+      get_email_by_username: {
+        Args: { lookup_username: string }
+        Returns: string
+      }
       get_leaderboard_profile: {
         Args: { profile_id: string }
         Returns: {
@@ -866,6 +873,7 @@ export type Database = {
           username: string
         }[]
       }
+      get_username_by_email: { Args: { lookup_email: string }; Returns: string }
       has_role: {
         Args: {
           _role: Database["public"]["Enums"]["app_role"]
