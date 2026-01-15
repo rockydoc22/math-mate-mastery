@@ -1,0 +1,125 @@
+import { serve } from "https://deno.land/std@0.190.0/http/server.ts";
+import { createClient } from "https://esm.sh/@supabase/supabase-js@2";
+
+const RESEND_API_KEY = Deno.env.get("RESEND_API_KEY");
+
+async function sendEmail(to: string, subject: string, html: string) {
+  const res = await fetch("https://api.resend.com/emails", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      "Authorization": `Bearer ${RESEND_API_KEY}`,
+    },
+    body: JSON.stringify({
+      from: "Math Mate <onboarding@resend.dev>",
+      to: [to],
+      subject,
+      html,
+    }),
+  });
+  if (!res.ok) {
+    const error = await res.text();
+    throw new Error(`Failed to send email: ${error}`);
+  }
+  return res.json();
+}
+
+const corsHeaders = {
+  "Access-Control-Allow-Origin": "*",
+  "Access-Control-Allow-Headers": "authorization, x-client-info, apikey, content-type",
+};
+
+interface SendCodeRequest {
+  email: string;
+}
+
+const handler = async (req: Request): Promise<Response> => {
+  if (req.method === "OPTIONS") {
+    return new Response(null, { headers: corsHeaders });
+  }
+
+  try {
+    const { email }: SendCodeRequest = await req.json();
+    
+    if (!email) {
+      return new Response(
+        JSON.stringify({ error: "Email is required" }),
+        { status: 400, headers: { "Content-Type": "application/json", ...corsHeaders } }
+      );
+    }
+
+    // Create Supabase client with service role
+    const supabaseUrl = Deno.env.get("SUPABASE_URL")!;
+    const supabaseServiceKey = Deno.env.get("SUPABASE_SERVICE_ROLE_KEY")!;
+    const supabase = createClient(supabaseUrl, supabaseServiceKey);
+
+    // Check if user exists
+    const { data: userData, error: userError } = await supabase.auth.admin.listUsers();
+    const userExists = userData?.users?.some(u => u.email?.toLowerCase() === email.toLowerCase());
+    
+    if (!userExists) {
+      // Don't reveal if user exists - return success anyway
+      console.log("User not found, but returning success to prevent enumeration");
+      return new Response(
+        JSON.stringify({ success: true }),
+        { status: 200, headers: { "Content-Type": "application/json", ...corsHeaders } }
+      );
+    }
+
+    // Generate 6-digit code
+    const code = Math.floor(100000 + Math.random() * 900000).toString();
+
+    // Delete any existing unused codes for this email
+    await supabase
+      .from("password_reset_codes")
+      .delete()
+      .eq("email", email.toLowerCase())
+      .eq("used", false);
+
+    // Insert new code
+    const { error: insertError } = await supabase
+      .from("password_reset_codes")
+      .insert({
+        email: email.toLowerCase(),
+        code: code,
+        expires_at: new Date(Date.now() + 15 * 60 * 1000).toISOString(),
+      });
+
+    if (insertError) {
+      console.error("Error inserting code:", insertError);
+      throw new Error("Failed to generate reset code");
+    }
+
+    // Send email with code
+    const emailResponse = await sendEmail(
+      email,
+      "Your Password Reset Code",
+      `
+        <div style="font-family: sans-serif; max-width: 400px; margin: 0 auto; padding: 20px;">
+          <h1 style="color: #333; text-align: center;">Password Reset Code</h1>
+          <p style="color: #666; text-align: center;">Use this code to reset your password:</p>
+          <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; font-size: 32px; font-weight: bold; text-align: center; padding: 20px; border-radius: 10px; letter-spacing: 8px; margin: 20px 0;">
+            ${code}
+          </div>
+          <p style="color: #999; text-align: center; font-size: 12px;">This code expires in 15 minutes.</p>
+          <p style="color: #999; text-align: center; font-size: 12px;">If you didn't request this, please ignore this email.</p>
+        </div>
+      `
+    );
+
+    console.log("Reset code email sent:", emailResponse);
+
+    return new Response(
+      JSON.stringify({ success: true }),
+      { status: 200, headers: { "Content-Type": "application/json", ...corsHeaders } }
+    );
+  } catch (error: any) {
+    console.error("Error in send-reset-code:", error);
+    return new Response(
+      JSON.stringify({ error: error.message }),
+      { status: 500, headers: { "Content-Type": "application/json", ...corsHeaders } }
+    );
+  }
+};
+
+serve(handler);

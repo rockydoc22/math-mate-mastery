@@ -7,9 +7,10 @@ import { Label } from "@/components/ui/label";
 import { useAuth } from "@/hooks/useAuth";
 import { toast } from "@/hooks/use-toast";
 import { supabase } from "@/integrations/supabase/client";
-import { User, Mail, Lock, ArrowLeft, HelpCircle, Eye, EyeOff } from "lucide-react";
+import { User, Mail, Lock, ArrowLeft, HelpCircle, Eye, EyeOff, KeyRound, Sparkles } from "lucide-react";
+import { InputOTP, InputOTPGroup, InputOTPSlot } from "@/components/ui/input-otp";
 
-type AuthMode = "signIn" | "signUp" | "forgotPassword" | "forgotUsername" | "resetPassword";
+type AuthMode = "signIn" | "signUp" | "forgotPassword" | "forgotUsername" | "resetPassword" | "codeReset" | "enterCode";
 
 // Password validation helper
 const validatePassword = (password: string): { valid: boolean; error?: string } => {
@@ -46,6 +47,8 @@ const Auth = () => {
   const [loading, setLoading] = useState(false);
   const [showPassword, setShowPassword] = useState(false);
   const [showConfirmPassword, setShowConfirmPassword] = useState(false);
+  const [resetCode, setResetCode] = useState("");
+  const [resetEmail, setResetEmail] = useState("");
   const [form, setForm] = useState({ 
     emailOrUsername: "", 
     email: "", 
@@ -69,7 +72,7 @@ const Auth = () => {
 
   useEffect(() => {
     // Don't redirect if in reset password mode
-    if (user && mode !== "resetPassword") navigate("/");
+    if (user && mode !== "resetPassword" && mode !== "enterCode") navigate("/");
   }, [user, navigate, mode]);
 
   const lookupEmailByUsername = async (username: string): Promise<string | null> => {
@@ -86,6 +89,33 @@ const Auth = () => {
     });
     if (error || !data) return null;
     return data as string;
+  };
+
+  const sendResetCode = async (email: string) => {
+    const { data, error } = await supabase.functions.invoke('send-reset-code', {
+      body: { email }
+    });
+    if (error) throw error;
+    return data;
+  };
+
+  const verifyResetCode = async (email: string, code: string, newPassword: string) => {
+    const { data, error } = await supabase.functions.invoke('verify-reset-code', {
+      body: { email, code, newPassword }
+    });
+    if (error) throw error;
+    if (data.error) throw new Error(data.error);
+    return data;
+  };
+
+  const sendMagicLink = async (email: string) => {
+    const { error } = await supabase.auth.signInWithOtp({
+      email,
+      options: {
+        emailRedirectTo: `${window.location.origin}/settings`,
+      }
+    });
+    if (error) throw error;
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -156,6 +186,53 @@ const Auth = () => {
         if (error) throw error;
         toast({ title: "Check your email for the reset link! 📧" });
         setMode("signIn");
+      } else if (mode === "codeReset") {
+        // Send 6-digit code via edge function
+        let emailToUse = form.emailOrUsername.trim();
+        
+        if (!isEmail(emailToUse)) {
+          const lookedUpEmail = await lookupEmailByUsername(emailToUse);
+          if (!lookedUpEmail) {
+            toast({ 
+              title: "Username not found", 
+              description: "Try entering your email instead",
+              variant: "destructive" 
+            });
+            setLoading(false);
+            return;
+          }
+          emailToUse = lookedUpEmail;
+        }
+        
+        await sendResetCode(emailToUse);
+        setResetEmail(emailToUse);
+        setMode("enterCode");
+        toast({ title: "Check your email for the 6-digit code! 📧" });
+      } else if (mode === "enterCode") {
+        if (resetCode.length !== 6) {
+          toast({ title: "Please enter the 6-digit code", variant: "destructive" });
+          setLoading(false);
+          return;
+        }
+        
+        if (form.password !== form.confirmPassword) {
+          toast({ title: "Passwords don't match", variant: "destructive" });
+          setLoading(false);
+          return;
+        }
+        
+        const passwordCheck = validatePassword(form.password);
+        if (!passwordCheck.valid) {
+          toast({ title: passwordCheck.error, variant: "destructive" });
+          setLoading(false);
+          return;
+        }
+        
+        await verifyResetCode(resetEmail, resetCode, form.password);
+        toast({ title: "Password updated successfully! 🎉" });
+        setMode("signIn");
+        setForm(prev => ({ ...prev, password: "", confirmPassword: "" }));
+        setResetCode("");
       } else if (mode === "forgotUsername") {
         const username = await lookupUsernameByEmail(form.email.trim());
         if (!username) {
@@ -194,10 +271,10 @@ const Auth = () => {
           if (error.message.includes("session") || error.message.includes("token") || error.message.includes("Auth")) {
             toast({ 
               title: "Session expired", 
-              description: "Please request a new password reset link",
+              description: "Please use the code-based reset instead",
               variant: "destructive" 
             });
-            setMode("forgotPassword");
+            setMode("codeReset");
             window.history.replaceState({}, "", "/auth");
           } else {
             throw error;
@@ -219,10 +296,54 @@ const Auth = () => {
     }
   };
 
+  const handleMagicLinkReset = async () => {
+    setLoading(true);
+    try {
+      let emailToUse = form.emailOrUsername.trim();
+      
+      if (!emailToUse) {
+        toast({ title: "Please enter your username or email first", variant: "destructive" });
+        setLoading(false);
+        return;
+      }
+      
+      if (!isEmail(emailToUse)) {
+        const lookedUpEmail = await lookupEmailByUsername(emailToUse);
+        if (!lookedUpEmail) {
+          toast({ 
+            title: "Username not found", 
+            description: "Try entering your email instead",
+            variant: "destructive" 
+          });
+          setLoading(false);
+          return;
+        }
+        emailToUse = lookedUpEmail;
+      }
+      
+      await sendMagicLink(emailToUse);
+      toast({ 
+        title: "Magic link sent! ✨", 
+        description: "Click the link in your email to sign in, then change your password in settings" 
+      });
+      setMode("signIn");
+    } catch (err: any) {
+      toast({
+        title: "Error",
+        description: err.message || "Failed to send magic link",
+        variant: "destructive",
+      });
+    } finally {
+      setLoading(false);
+    }
+  };
+
   const getTitle = () => {
     switch (mode) {
       case "signUp": return "Create your account to start grinding";
       case "forgotPassword": return "Reset your password";
+      case "codeReset": return "Reset with security code";
+      case "enterCode": return "Enter your security code";
       case "forgotUsername": return "Recover your username";
       case "resetPassword": return "Enter your new password";
       default: return "Sign in to continue your journey";
@@ -234,9 +355,21 @@ const Auth = () => {
     switch (mode) {
       case "signUp": return "Create Account";
       case "forgotPassword": return "Send Reset Link";
+      case "codeReset": return "Send Security Code";
+      case "enterCode": return "Reset Password";
       case "forgotUsername": return "Find My Username";
       case "resetPassword": return "Update Password";
       default: return "Sign In";
+    }
+  };
+
+  const goBack = () => {
+    if (mode === "enterCode") {
+      setMode("codeReset");
+      setResetCode("");
+    } else {
+      setMode("signIn");
+      window.history.replaceState({}, "", "/auth");
     }
   };
 
@@ -252,20 +385,18 @@ const Auth = () => {
         </div>
 
         <Card className="p-6 border-2 border-border bg-card/80 backdrop-blur">
-          {(mode === "forgotPassword" || mode === "forgotUsername" || mode === "resetPassword") && (
+          {(mode === "forgotPassword" || mode === "forgotUsername" || mode === "resetPassword" || mode === "codeReset" || mode === "enterCode") && (
             <button
               type="button"
               className="flex items-center gap-1 text-muted-foreground hover:text-foreground text-sm mb-4"
-              onClick={() => {
-                setMode("signIn");
-                // Clear URL params
-                window.history.replaceState({}, "", "/auth");
-              }}
+              onClick={goBack}
             >
               <ArrowLeft className="w-4 h-4" />
               Back to sign in
             </button>
           )}
+
+          <h2 className="text-lg font-semibold mb-4 text-center">{getTitle()}</h2>
 
           <form onSubmit={handleSubmit} className="space-y-4">
             {mode === "signUp" && (
@@ -284,8 +415,8 @@ const Auth = () => {
               </div>
             )}
 
-            {/* Sign In - Username OR Email field */}
-            {(mode === "signIn" || mode === "forgotPassword") && (
+            {/* Sign In, Forgot Password, Code Reset - Username OR Email field */}
+            {(mode === "signIn" || mode === "forgotPassword" || mode === "codeReset") && (
               <div className="space-y-2">
                 <Label htmlFor="emailOrUsername">Username or Email</Label>
                 <div className="relative">
@@ -301,6 +432,34 @@ const Auth = () => {
                   />
                 </div>
               </div>
+            )}
+
+            {/* Enter Code mode - show code input and new password */}
+            {mode === "enterCode" && (
+              <>
+                <div className="space-y-2">
+                  <Label>Security Code</Label>
+                  <p className="text-xs text-muted-foreground mb-2">
+                    Enter the 6-digit code sent to {resetEmail}
+                  </p>
+                  <div className="flex justify-center">
+                    <InputOTP
+                      maxLength={6}
+                      value={resetCode}
+                      onChange={setResetCode}
+                    >
+                      <InputOTPGroup>
+                        <InputOTPSlot index={0} />
+                        <InputOTPSlot index={1} />
+                        <InputOTPSlot index={2} />
+                        <InputOTPSlot index={3} />
+                        <InputOTPSlot index={4} />
+                        <InputOTPSlot index={5} />
+                      </InputOTPGroup>
+                    </InputOTP>
+                  </div>
+                </div>
+              </>
             )}
 
             {/* Sign Up - Email field */}
@@ -344,9 +503,9 @@ const Auth = () => {
               </div>
             )}
 
-            {(mode === "signIn" || mode === "signUp" || mode === "resetPassword") && (
+            {(mode === "signIn" || mode === "signUp" || mode === "resetPassword" || mode === "enterCode") && (
               <div className="space-y-2">
-                <Label htmlFor="password">{mode === "resetPassword" ? "New Password" : "Password"}</Label>
+                <Label htmlFor="password">{mode === "resetPassword" || mode === "enterCode" ? "New Password" : "Password"}</Label>
                 <div className="relative">
                   <Lock className="absolute left-3 top-3 w-4 h-4 text-muted-foreground" />
                   <Input
@@ -368,7 +527,7 @@ const Auth = () => {
                     {showPassword ? <EyeOff className="w-4 h-4" /> : <Eye className="w-4 h-4" />}
                   </button>
                 </div>
-                {(mode === "signUp" || mode === "resetPassword") && (
+                {(mode === "signUp" || mode === "resetPassword" || mode === "enterCode") && (
                   <p className="text-xs text-muted-foreground">
                     Min 8 chars with uppercase, lowercase, and number
                   </p>
@@ -376,7 +535,7 @@ const Auth = () => {
               </div>
             )}
 
-            {mode === "resetPassword" && (
+            {(mode === "resetPassword" || mode === "enterCode") && (
               <div className="space-y-2">
                 <Label htmlFor="confirmPassword">Confirm New Password</Label>
                 <div className="relative">
@@ -408,7 +567,37 @@ const Auth = () => {
             </Button>
           </form>
 
-          {mode !== "resetPassword" && (
+          {/* Alternative reset methods shown on forgotPassword mode */}
+          {mode === "forgotPassword" && (
+            <div className="mt-4 pt-4 border-t border-border space-y-2">
+              <p className="text-xs text-center text-muted-foreground mb-2">Or try these alternatives:</p>
+              <div className="flex gap-2">
+                <Button 
+                  type="button" 
+                  variant="outline" 
+                  size="sm" 
+                  className="flex-1 text-xs"
+                  onClick={() => setMode("codeReset")}
+                >
+                  <KeyRound className="w-3 h-3 mr-1" />
+                  Code Reset
+                </Button>
+                <Button 
+                  type="button" 
+                  variant="outline" 
+                  size="sm" 
+                  className="flex-1 text-xs"
+                  onClick={handleMagicLinkReset}
+                  disabled={loading || !form.emailOrUsername.trim()}
+                >
+                  <Sparkles className="w-3 h-3 mr-1" />
+                  Magic Link
+                </Button>
+              </div>
+            </div>
+          )}
+
+          {mode !== "resetPassword" && mode !== "enterCode" && (
             <div className="mt-6 text-center space-y-2">
               {mode === "signIn" && (
                 <>
@@ -432,7 +621,7 @@ const Auth = () => {
                   </div>
                 </>
               )}
-              {mode !== "forgotPassword" && mode !== "forgotUsername" && (
+              {mode !== "forgotPassword" && mode !== "forgotUsername" && mode !== "codeReset" && (
                 <button
                   type="button"
                   className="text-primary hover:underline text-sm"
