@@ -93,5 +93,8 @@ const rawQuestions: Question[] = (mathQuestionsRaw as RawMathQuestion[]).map((q)
   };
 });
 
-// Combine all math questions
-export const questions: Question[] = [...rawQuestions, ...additionalMathQuestions, ...newMathQuestions, ...uploadedMathQuestions, ...hardMathQuestions, ...importedSATMathQuestions, ...importedSATMathQuestions2, ...importedSATMathQuestions3, ...importedSATMathQuestions4, ...importedSATMathQuestions5, ...importedSATMathQuestions6, ...importedSATMathQuestions7, ...importedSATMathQuestions8, ...importedSATMathQuestions9, ...importedSATMathQuestions10, ...importedSATMathQuestions11, ...importedSATMathQuestions12, ...level8QuestionsExtra, ...pdfSATMathQuestions, ...allFillerQuestions, ...allLevelQuestions, ...balancedMathQuestions, ...mediumMathQuestions, ...mediumMathQuestions2];
+// Combine all math questions and filter out any with images (to avoid showing College Board branding)
+const allMathQuestions: Question[] = [...rawQuestions, ...additionalMathQuestions, ...newMathQuestions, ...uploadedMathQuestions, ...hardMathQuestions, ...importedSATMathQuestions, ...importedSATMathQuestions2, ...importedSATMathQuestions3, ...importedSATMathQuestions4, ...importedSATMathQuestions5, ...importedSATMathQuestions6, ...importedSATMathQuestions7, ...importedSATMathQuestions8, ...importedSATMathQuestions9, ...importedSATMathQuestions10, ...importedSATMathQuestions11, ...importedSATMathQuestions12, ...level8QuestionsExtra, ...pdfSATMathQuestions, ...allFillerQuestions, ...allLevelQuestions, ...balancedMathQuestions, ...mediumMathQuestions, ...mediumMathQuestions2];
+
+// Filter out questions with images to prevent showing original source branding
+export const questions: Question[] = allMathQuestions.filter(q => !q.imageUrl);

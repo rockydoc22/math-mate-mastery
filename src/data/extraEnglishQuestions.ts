@@ -968,7 +968,7 @@ export const extraEnglishQuestions: EnglishQuestion[] = [
   // Difficulty Level 5
   {
     id: "extra-eng-061",
-    question: "The passage primarily serves to",
+    question: "Many American cities built in the twentieth century were designed around the automobile, with sprawling suburbs connected by highways and commercial zones segregated from residential areas. This model, while initially promising greater mobility and space, has led to traffic congestion, environmental degradation, and the decline of walkable neighborhoods. A growing movement of urban planners now advocates for mixed-use development, increased public transit, and pedestrian-friendly design as alternatives to car-centric city planning. Proponents argue that reimagining urban spaces can reduce carbon emissions, improve public health, and create more vibrant communities.\n\nThe passage primarily serves to",
     options: [
       { letter: "A", text: "contrast two competing theories about urban development" },
       { letter: "B", text: "trace the historical evolution of city planning" },
@@ -976,7 +976,7 @@ export const extraEnglishQuestions: EnglishQuestion[] = [
       { letter: "D", text: "analyze the economic factors influencing housing policy" }
     ],
     correctAnswer: "C",
-    explanation: "Main purpose questions require understanding the author's overall intent and argument structure.",
+    explanation: "The passage presents problems with car-centric design and then advocates for mixed-use, transit-oriented alternatives, supporting option C.",
     difficulty: "Medium",
     domain: "Information and Ideas",
     skill: "Central Ideas and Purpose",
@@ -1160,7 +1160,7 @@ export const extraEnglishQuestions: EnglishQuestion[] = [
   },
   {
     id: "extra-eng-073",
-    question: "The passage suggests that the author would most likely agree with which statement?",
+    question: "In medicine, the tension between innovation and tradition remains ever-present. New treatments and technologies promise faster diagnoses and better outcomes, yet physicians must weigh these potential benefits against established protocols developed through decades of careful study. Rushing to adopt untested methods can harm patients, but clinging too rigidly to outdated practices prevents progress. The most effective healthcare systems find ways to integrate new discoveries while respecting the accumulated wisdom of medical tradition.\n\nThe passage suggests that the author would most likely agree with which statement?",
     options: [
       { letter: "A", text: "Traditional methods should be abandoned entirely" },
       { letter: "B", text: "Progress requires balancing innovation with established practices" },
@@ -1168,7 +1168,7 @@ export const extraEnglishQuestions: EnglishQuestion[] = [
       { letter: "D", text: "Expert opinion should take precedence over data" }
     ],
     correctAnswer: "B",
-    explanation: "Inference questions require understanding the author's implied position.",
+    explanation: "The passage argues that 'the most effective healthcare systems find ways to integrate new discoveries while respecting the accumulated wisdom of medical tradition,' directly supporting option B.",
     difficulty: "Medium",
     domain: "Information and Ideas",
     skill: "Inferences",
