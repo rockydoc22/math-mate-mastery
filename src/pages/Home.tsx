@@ -148,12 +148,24 @@ const Home = () => {
                 </Link>
               </>
             ) : (
-              <Link to="/auth">
-                <Button size="sm" className="gap-2 bg-gradient-to-r from-primary via-accent to-secondary text-primary-foreground font-bold shadow-lg hover:shadow-xl transition-all hover:scale-105">
-                  <LogIn className="w-4 h-4" />
-                  Sign In
+              <div className="flex flex-col items-end gap-1">
+                <Link to="/auth">
+                  <Button size="sm" className="gap-2 bg-gradient-to-r from-primary via-accent to-secondary text-primary-foreground font-bold shadow-lg hover:shadow-xl transition-all hover:scale-105">
+                    <LogIn className="w-4 h-4" />
+                    Sign In
+                  </Button>
+                </Link>
+                <Button
+                  onClick={forceUpdate}
+                  disabled={isUpdating}
+                  variant="ghost"
+                  size="sm"
+                  className="text-[10px] gap-1 h-6 text-muted-foreground"
+                >
+                  <RefreshCw className={`w-3 h-3 ${isUpdating ? "animate-spin" : ""}`} />
+                  {isUpdating ? "Updating..." : "Refresh & Update"}
                 </Button>
-              </Link>
+              </div>
             )}
           </div>
 
@@ -163,7 +175,7 @@ const Home = () => {
           </div>
           
           {/* Tagline */}
-          <h1 className="text-xl font-bold text-foreground mb-3">Be one of the 3 in 10,000 who Crush the SAT</h1>
+          <h1 className="text-xl font-bold text-foreground mb-3">Be one of 2 x 40² who crush the SAT</h1>
           
           {/* Fight Club - Centered */}
           <Link to="/battle" className="mb-3">
@@ -571,19 +583,9 @@ const Home = () => {
           </Link>
         </div>
 
-        {/* Update Button & Version */}
-        <div className="flex items-center justify-center gap-3 pb-4">
+        {/* Version */}
+        <div className="flex items-center justify-center pb-4">
           <span className="text-xs text-muted-foreground">v{APP_VERSION}</span>
-          <Button
-            onClick={forceUpdate}
-            disabled={isUpdating}
-            variant={hasUpdate ? "default" : "ghost"}
-            size="sm"
-            className="text-xs gap-1 h-7"
-          >
-            <RefreshCw className={`w-3 h-3 ${isUpdating ? "animate-spin" : ""}`} />
-            {isUpdating ? "Updating..." : hasUpdate ? "Update" : "Refresh"}
-          </Button>
         </div>
       </div>
     </div>
