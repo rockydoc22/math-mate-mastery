@@ -86,7 +86,6 @@ export const FlagQuestionModal = ({ isOpen, onClose, questionId, questionType }:
             questionType,
             issueType,
             notes: notes.trim() || undefined,
-            adminEmail: 'rockydoc@gmail.com',
           },
         }).catch(err => console.error('Email notification failed:', err));
       }

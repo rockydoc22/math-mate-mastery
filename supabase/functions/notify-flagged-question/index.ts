@@ -1,4 +1,5 @@
 import { serve } from "https://deno.land/std@0.168.0/http/server.ts";
+import { createClient } from "https://esm.sh/@supabase/supabase-js@2";
 
 const RESEND_API_KEY = Deno.env.get("RESEND_API_KEY");
 
@@ -13,7 +14,6 @@ interface FlagNotificationRequest {
   questionType: string;
   issueType: string;
   notes?: string;
-  adminEmail: string;
 }
 
 const handler = async (req: Request): Promise<Response> => {
@@ -22,14 +22,96 @@ const handler = async (req: Request): Promise<Response> => {
   }
 
   try {
-    const { questionId, questionType, issueType, notes, adminEmail }: FlagNotificationRequest = await req.json();
+    // Authenticate the user
+    const authHeader = req.headers.get("Authorization");
+    if (!authHeader?.startsWith("Bearer ")) {
+      return new Response(
+        JSON.stringify({ error: "Unauthorized" }),
+        { status: 401, headers: { "Content-Type": "application/json", ...corsHeaders } }
+      );
+    }
+
+    const supabase = createClient(
+      Deno.env.get("SUPABASE_URL") ?? "",
+      Deno.env.get("SUPABASE_ANON_KEY") ?? "",
+      { global: { headers: { Authorization: authHeader } } }
+    );
+
+    const token = authHeader.replace("Bearer ", "");
+    const { data: claimsData, error: claimsError } = await supabase.auth.getClaims(token);
+    if (claimsError || !claimsData?.claims) {
+      return new Response(
+        JSON.stringify({ error: "Unauthorized" }),
+        { status: 401, headers: { "Content-Type": "application/json", ...corsHeaders } }
+      );
+    }
+
+    // Parse request body (no longer accepting adminEmail from client)
+    const { questionId, questionType, issueType, notes }: FlagNotificationRequest = await req.json();
+
+    // Validate required fields
+    if (!questionId || !questionType || !issueType) {
+      return new Response(
+        JSON.stringify({ error: "Missing required fields: questionId, questionType, issueType" }),
+        { status: 400, headers: { "Content-Type": "application/json", ...corsHeaders } }
+      );
+    }
+
+    // Look up admin emails from the database
+    const { data: adminRoles, error: rolesError } = await supabase
+      .from("user_roles")
+      .select("user_id")
+      .eq("role", "admin");
+
+    if (rolesError) {
+      console.error("Error fetching admin roles:", rolesError);
+      return new Response(
+        JSON.stringify({ error: "Failed to fetch admin list" }),
+        { status: 500, headers: { "Content-Type": "application/json", ...corsHeaders } }
+      );
+    }
+
+    if (!adminRoles || adminRoles.length === 0) {
+      console.warn("No admins found in the system");
+      return new Response(
+        JSON.stringify({ message: "No admins to notify" }),
+        { status: 200, headers: { "Content-Type": "application/json", ...corsHeaders } }
+      );
+    }
+
+    // Get admin emails from profiles table
+    const adminUserIds = adminRoles.map((r) => r.user_id);
+    const { data: adminProfiles, error: profilesError } = await supabase
+      .from("profiles")
+      .select("email")
+      .in("id", adminUserIds);
+
+    if (profilesError) {
+      console.error("Error fetching admin profiles:", profilesError);
+      return new Response(
+        JSON.stringify({ error: "Failed to fetch admin emails" }),
+        { status: 500, headers: { "Content-Type": "application/json", ...corsHeaders } }
+      );
+    }
+
+    const adminEmails = adminProfiles
+      ?.map((p) => p.email)
+      .filter((email): email is string => Boolean(email));
+
+    if (!adminEmails || adminEmails.length === 0) {
+      console.warn("No admin emails found");
+      return new Response(
+        JSON.stringify({ message: "No admin emails to notify" }),
+        { status: 200, headers: { "Content-Type": "application/json", ...corsHeaders } }
+      );
+    }
 
     const issueLabels: Record<string, string> = {
-      incorrect_answer: 'Incorrect Answer',
-      typo: 'Typo or Grammar Error',
-      unclear: 'Unclear Wording',
-      offensive: 'Offensive Content',
-      other: 'Other Issue',
+      incorrect_answer: "Incorrect Answer",
+      typo: "Typo or Grammar Error",
+      unclear: "Unclear Wording",
+      offensive: "Offensive Content",
+      other: "Other Issue",
     };
 
     const emailHtml = `
@@ -40,7 +122,7 @@ const handler = async (req: Request): Promise<Response> => {
           <p style="margin: 0 0 10px 0;"><strong>Question ID:</strong> ${questionId}</p>
           <p style="margin: 0 0 10px 0;"><strong>Type:</strong> ${questionType.toUpperCase()}</p>
           <p style="margin: 0 0 10px 0;"><strong>Issue:</strong> ${issueLabels[issueType] || issueType}</p>
-          ${notes ? `<p style="margin: 0;"><strong>Notes:</strong> ${notes}</p>` : ''}
+          ${notes ? `<p style="margin: 0;"><strong>Notes:</strong> ${notes}</p>` : ""}
         </div>
         
         <p style="color: #6b7280; font-size: 14px;">
@@ -66,7 +148,7 @@ const handler = async (req: Request): Promise<Response> => {
       },
       body: JSON.stringify({
         from: "1600² SAT Prep <onboarding@resend.dev>",
-        to: [adminEmail],
+        to: adminEmails,
         subject: `🚩 New Flagged Question: ${questionId}`,
         html: emailHtml,
       }),
