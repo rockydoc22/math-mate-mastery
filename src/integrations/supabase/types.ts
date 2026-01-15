@@ -278,6 +278,8 @@ export type Database = {
           notes: string | null
           question_id: string
           question_type: string
+          resolution_notes: string | null
+          resolved_at: string | null
           status: string
           user_id: string | null
         }
@@ -288,6 +290,8 @@ export type Database = {
           notes?: string | null
           question_id: string
           question_type: string
+          resolution_notes?: string | null
+          resolved_at?: string | null
           status?: string
           user_id?: string | null
         }
@@ -298,6 +302,8 @@ export type Database = {
           notes?: string | null
           question_id?: string
           question_type?: string
+          resolution_notes?: string | null
+          resolved_at?: string | null
           status?: string
           user_id?: string | null
         }
@@ -772,6 +778,39 @@ export type Database = {
           id?: string
           reminder_email?: string | null
           updated_at?: string
+          user_id?: string
+        }
+        Relationships: []
+      }
+      user_notifications: {
+        Row: {
+          created_at: string
+          id: string
+          is_read: boolean
+          link: string | null
+          message: string
+          title: string
+          type: string
+          user_id: string
+        }
+        Insert: {
+          created_at?: string
+          id?: string
+          is_read?: boolean
+          link?: string | null
+          message: string
+          title: string
+          type?: string
+          user_id: string
+        }
+        Update: {
+          created_at?: string
+          id?: string
+          is_read?: boolean
+          link?: string | null
+          message?: string
+          title?: string
+          type?: string
           user_id?: string
         }
         Relationships: []
