@@ -7,9 +7,31 @@ import { Label } from "@/components/ui/label";
 import { useAuth } from "@/hooks/useAuth";
 import { toast } from "@/hooks/use-toast";
 import { supabase } from "@/integrations/supabase/client";
-import { Zap, User, Mail, Lock, ArrowLeft } from "lucide-react";
+import { Zap, User, Mail, Lock, ArrowLeft, HelpCircle } from "lucide-react";
 
-type AuthMode = "signIn" | "signUp" | "forgotPassword" | "resetPassword";
+type AuthMode = "signIn" | "signUp" | "forgotPassword" | "forgotUsername" | "resetPassword";
+
+// Password validation helper
+const validatePassword = (password: string): { valid: boolean; error?: string } => {
+  if (password.length < 8) {
+    return { valid: false, error: "Password must be at least 8 characters" };
+  }
+  if (!/[a-z]/.test(password)) {
+    return { valid: false, error: "Password must contain at least one lowercase letter" };
+  }
+  if (!/[A-Z]/.test(password)) {
+    return { valid: false, error: "Password must contain at least one uppercase letter" };
+  }
+  if (!/[0-9]/.test(password)) {
+    return { valid: false, error: "Password must contain at least one number" };
+  }
+  return { valid: true };
+};
+
+// Check if input looks like an email
+const isEmail = (input: string): boolean => {
+  return input.includes("@") && input.includes(".");
+};
 
 const Auth = () => {
   const navigate = useNavigate();
@@ -17,7 +39,13 @@ const Auth = () => {
   const { user, signIn, signUp } = useAuth();
   const [mode, setMode] = useState<AuthMode>("signIn");
   const [loading, setLoading] = useState(false);
-  const [form, setForm] = useState({ email: "", password: "", username: "", confirmPassword: "" });
+  const [form, setForm] = useState({ 
+    emailOrUsername: "", 
+    email: "", 
+    password: "", 
+    username: "", 
+    confirmPassword: "" 
+  });
 
   // Check for password reset flow
   useEffect(() => {
@@ -45,6 +73,22 @@ const Auth = () => {
     if (user && mode !== "resetPassword") navigate("/");
   }, [user, navigate, mode]);
 
+  const lookupEmailByUsername = async (username: string): Promise<string | null> => {
+    const { data, error } = await supabase.rpc('get_email_by_username', { 
+      lookup_username: username 
+    });
+    if (error || !data) return null;
+    return data as string;
+  };
+
+  const lookupUsernameByEmail = async (email: string): Promise<string | null> => {
+    const { data, error } = await supabase.rpc('get_username_by_email', { 
+      lookup_email: email 
+    });
+    if (error || !data) return null;
+    return data as string;
+  };
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setLoading(true);
@@ -56,19 +100,79 @@ const Auth = () => {
           setLoading(false);
           return;
         }
+        
+        // Validate password strength
+        const passwordCheck = validatePassword(form.password);
+        if (!passwordCheck.valid) {
+          toast({ title: passwordCheck.error, variant: "destructive" });
+          setLoading(false);
+          return;
+        }
+        
         const { error } = await signUp(form.email, form.password, form.username);
         if (error) throw error;
         toast({ title: "Account created! Welcome aboard! 🎮" });
       } else if (mode === "signIn") {
-        const { error } = await signIn(form.email, form.password);
+        let emailToUse = form.emailOrUsername.trim();
+        
+        // If it doesn't look like an email, try to look up the email by username
+        if (!isEmail(emailToUse)) {
+          const lookedUpEmail = await lookupEmailByUsername(emailToUse);
+          if (!lookedUpEmail) {
+            toast({ 
+              title: "Username not found", 
+              description: "Check your username or try signing in with email",
+              variant: "destructive" 
+            });
+            setLoading(false);
+            return;
+          }
+          emailToUse = lookedUpEmail;
+        }
+        
+        const { error } = await signIn(emailToUse, form.password);
         if (error) throw error;
         toast({ title: "Welcome back! Let's practice! 💪" });
       } else if (mode === "forgotPassword") {
-        const { error } = await supabase.auth.resetPasswordForEmail(form.email, {
+        let emailToUse = form.emailOrUsername.trim();
+        
+        // If it doesn't look like an email, try to look up the email by username
+        if (!isEmail(emailToUse)) {
+          const lookedUpEmail = await lookupEmailByUsername(emailToUse);
+          if (!lookedUpEmail) {
+            toast({ 
+              title: "Username not found", 
+              description: "Try entering your email instead",
+              variant: "destructive" 
+            });
+            setLoading(false);
+            return;
+          }
+          emailToUse = lookedUpEmail;
+        }
+        
+        const { error } = await supabase.auth.resetPasswordForEmail(emailToUse, {
           redirectTo: `${window.location.origin}/auth?reset=true`,
         });
         if (error) throw error;
         toast({ title: "Check your email for the reset link! 📧" });
+        setMode("signIn");
+      } else if (mode === "forgotUsername") {
+        const username = await lookupUsernameByEmail(form.email.trim());
+        if (!username) {
+          toast({ 
+            title: "Email not found", 
+            description: "No account exists with this email address",
+            variant: "destructive" 
+          });
+          setLoading(false);
+          return;
+        }
+        toast({ 
+          title: `Your username is: ${username}`,
+          description: "You can now sign in with this username",
+        });
+        setForm(prev => ({ ...prev, emailOrUsername: username }));
         setMode("signIn");
       } else if (mode === "resetPassword") {
         if (form.password !== form.confirmPassword) {
@@ -76,11 +180,15 @@ const Auth = () => {
           setLoading(false);
           return;
         }
-        if (form.password.length < 1) {
-          toast({ title: "Password required", variant: "destructive" });
+        
+        // Validate password strength
+        const passwordCheck = validatePassword(form.password);
+        if (!passwordCheck.valid) {
+          toast({ title: passwordCheck.error, variant: "destructive" });
           setLoading(false);
           return;
         }
+        
         const { error } = await supabase.auth.updateUser({ password: form.password });
         if (error) throw error;
         toast({ title: "Password updated successfully! 🎉" });
@@ -101,6 +209,7 @@ const Auth = () => {
     switch (mode) {
       case "signUp": return "Create your account to start grinding";
       case "forgotPassword": return "Reset your password";
+      case "forgotUsername": return "Recover your username";
       case "resetPassword": return "Enter your new password";
       default: return "Sign in to continue your journey";
     }
@@ -111,6 +220,7 @@ const Auth = () => {
     switch (mode) {
       case "signUp": return "Create Account";
       case "forgotPassword": return "Send Reset Link";
+      case "forgotUsername": return "Find My Username";
       case "resetPassword": return "Update Password";
       default: return "Sign In";
     }
@@ -130,7 +240,7 @@ const Auth = () => {
         </div>
 
         <Card className="p-6 border-2 border-border bg-card/80 backdrop-blur">
-          {(mode === "forgotPassword" || mode === "resetPassword") && (
+          {(mode === "forgotPassword" || mode === "forgotUsername" || mode === "resetPassword") && (
             <button
               type="button"
               className="flex items-center gap-1 text-muted-foreground hover:text-foreground text-sm mb-4"
@@ -162,7 +272,27 @@ const Auth = () => {
               </div>
             )}
 
-            {mode !== "resetPassword" && (
+            {/* Sign In - Username OR Email field */}
+            {(mode === "signIn" || mode === "forgotPassword") && (
+              <div className="space-y-2">
+                <Label htmlFor="emailOrUsername">Username or Email</Label>
+                <div className="relative">
+                  <User className="absolute left-3 top-3 w-4 h-4 text-muted-foreground" />
+                  <Input
+                    id="emailOrUsername"
+                    type="text"
+                    placeholder="username or email@example.com"
+                    className="pl-10"
+                    value={form.emailOrUsername}
+                    onChange={(e) => setForm({ ...form, emailOrUsername: e.target.value })}
+                    required
+                  />
+                </div>
+              </div>
+            )}
+
+            {/* Sign Up - Email field */}
+            {mode === "signUp" && (
               <div className="space-y-2">
                 <Label htmlFor="email">Email</Label>
                 <div className="relative">
@@ -180,6 +310,28 @@ const Auth = () => {
               </div>
             )}
 
+            {/* Forgot Username - Email field */}
+            {mode === "forgotUsername" && (
+              <div className="space-y-2">
+                <Label htmlFor="recoveryEmail">Your Email Address</Label>
+                <div className="relative">
+                  <Mail className="absolute left-3 top-3 w-4 h-4 text-muted-foreground" />
+                  <Input
+                    id="recoveryEmail"
+                    type="email"
+                    placeholder="you@email.com"
+                    className="pl-10"
+                    value={form.email}
+                    onChange={(e) => setForm({ ...form, email: e.target.value })}
+                    required
+                  />
+                </div>
+                <p className="text-xs text-muted-foreground">
+                  Enter the email you used to sign up and we'll show you your username
+                </p>
+              </div>
+            )}
+
             {(mode === "signIn" || mode === "signUp" || mode === "resetPassword") && (
               <div className="space-y-2">
                 <Label htmlFor="password">{mode === "resetPassword" ? "New Password" : "Password"}</Label>
@@ -193,9 +345,14 @@ const Auth = () => {
                     value={form.password}
                     onChange={(e) => setForm({ ...form, password: e.target.value })}
                     required
-                    minLength={1}
+                    minLength={mode === "signIn" ? 1 : 8}
                   />
                 </div>
+                {(mode === "signUp" || mode === "resetPassword") && (
+                  <p className="text-xs text-muted-foreground">
+                    Min 8 chars with uppercase, lowercase, and number
+                  </p>
+                )}
               </div>
             )}
 
@@ -212,7 +369,7 @@ const Auth = () => {
                     value={form.confirmPassword}
                     onChange={(e) => setForm({ ...form, confirmPassword: e.target.value })}
                     required
-                    minLength={1}
+                    minLength={8}
                   />
                 </div>
               </div>
@@ -226,15 +383,28 @@ const Auth = () => {
           {mode !== "resetPassword" && (
             <div className="mt-6 text-center space-y-2">
               {mode === "signIn" && (
-                <button
-                  type="button"
-                  className="text-muted-foreground hover:text-primary text-sm block w-full"
-                  onClick={() => setMode("forgotPassword")}
-                >
-                  Forgot your password?
-                </button>
+                <>
+                  <div className="flex justify-center gap-4 text-sm">
+                    <button
+                      type="button"
+                      className="text-muted-foreground hover:text-primary flex items-center gap-1"
+                      onClick={() => setMode("forgotPassword")}
+                    >
+                      <Lock className="w-3 h-3" />
+                      Forgot password?
+                    </button>
+                    <button
+                      type="button"
+                      className="text-muted-foreground hover:text-primary flex items-center gap-1"
+                      onClick={() => setMode("forgotUsername")}
+                    >
+                      <HelpCircle className="w-3 h-3" />
+                      Forgot username?
+                    </button>
+                  </div>
+                </>
               )}
-              {mode !== "forgotPassword" && (
+              {mode !== "forgotPassword" && mode !== "forgotUsername" && (
                 <button
                   type="button"
                   className="text-primary hover:underline text-sm"
