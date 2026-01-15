@@ -6,8 +6,9 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { supabase } from "@/integrations/supabase/client";
 import { toast } from "@/hooks/use-toast";
 import { Link } from "react-router-dom";
-import { ArrowLeft, Trash2, Check, Eye, ShieldAlert, Users, Flag, GraduationCap } from "lucide-react";
+import { ArrowLeft, Trash2, Check, Eye, ShieldAlert, Users, Flag, GraduationCap, BarChart3 } from "lucide-react";
 import { useAuth } from "@/hooks/useAuth";
+import { QuestionDistribution } from "@/components/admin/QuestionDistribution";
 
 interface FlaggedQuestion {
   id: string;
@@ -287,7 +288,7 @@ const Admin = () => {
         </div>
 
         <Tabs defaultValue="users" className="w-full">
-          <TabsList className="grid w-full grid-cols-2">
+          <TabsList className="grid w-full grid-cols-3">
             <TabsTrigger value="users" className="gap-2">
               <Users className="w-4 h-4" />
               Users ({userStats.length})
@@ -295,6 +296,10 @@ const Admin = () => {
             <TabsTrigger value="flags" className="gap-2">
               <Flag className="w-4 h-4" />
               Flagged ({flaggedQuestions.length})
+            </TabsTrigger>
+            <TabsTrigger value="questions" className="gap-2">
+              <BarChart3 className="w-4 h-4" />
+              Questions
             </TabsTrigger>
           </TabsList>
 
@@ -390,6 +395,10 @@ const Admin = () => {
                 ))}
               </div>
             )}
+          </TabsContent>
+
+          <TabsContent value="questions" className="mt-4">
+            <QuestionDistribution />
           </TabsContent>
         </Tabs>
       </div>
