@@ -28,6 +28,7 @@ import ElitePractice from "./pages/ElitePractice";
 import Rulebook from "./pages/Rulebook";
 import NotFound from "./pages/NotFound";
 import DemoMode from "./pages/DemoMode";
+import Settings from "./pages/Settings";
 
 const queryClient = new QueryClient();
 
@@ -62,6 +63,7 @@ const App = () => (
             <Route path="/elite-practice" element={<ElitePractice />} />
             <Route path="/rulebook" element={<Rulebook />} />
             <Route path="/demo" element={<DemoMode />} />
+            <Route path="/settings" element={<Settings />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
