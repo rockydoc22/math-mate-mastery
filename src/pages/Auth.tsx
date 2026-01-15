@@ -52,24 +52,34 @@ const Auth = () => {
   // Check for password reset flow
   useEffect(() => {
     const isReset = searchParams.get("reset") === "true";
+    let recoveryHandled = false;
     
-    // Listen for PASSWORD_RECOVERY event from Supabase
+    // Listen for PASSWORD_RECOVERY event from Supabase - this is the most reliable way
     const { data: { subscription } } = supabase.auth.onAuthStateChange((event, session) => {
       console.log("Auth event:", event, "Session:", !!session);
-      if (event === "PASSWORD_RECOVERY") {
+      if (event === "PASSWORD_RECOVERY" && session) {
+        recoveryHandled = true;
         setMode("resetPassword");
+        // Clear URL for security
+        window.history.replaceState({}, "", "/auth?reset=true");
       }
     });
 
-    // Handle recovery token from URL hash (Supabase sends these via email link)
+    // Also handle the case where we arrive with tokens in the URL hash
     const handleRecoveryToken = async () => {
+      // Give Supabase a moment to process the URL hash tokens automatically
+      await new Promise(resolve => setTimeout(resolve, 500));
+      
+      // If the PASSWORD_RECOVERY event already handled it, skip
+      if (recoveryHandled) return;
+      
       const hashParams = new URLSearchParams(window.location.hash.substring(1));
       const accessToken = hashParams.get("access_token");
       const refreshToken = hashParams.get("refresh_token");
       const type = hashParams.get("type");
       
       if (type === "recovery" && accessToken) {
-        // Exchange the tokens for a session
+        // Manually exchange the tokens for a session
         const { error } = await supabase.auth.setSession({
           access_token: accessToken,
           refresh_token: refreshToken || "",
@@ -85,11 +95,10 @@ const Auth = () => {
           setMode("forgotPassword");
         } else {
           setMode("resetPassword");
-          // Clear the hash from URL for security
           window.history.replaceState({}, "", "/auth?reset=true");
         }
       } else if (isReset) {
-        // Check if we already have a session
+        // We're on ?reset=true - check if we have a valid session
         const { data: { session } } = await supabase.auth.getSession();
         if (session) {
           setMode("resetPassword");
