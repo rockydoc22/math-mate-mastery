@@ -456,6 +456,12 @@ const Home = () => {
                 <span className="text-sm font-medium">Master What You Missed</span>
               </Button>
             </Link>
+            <Link to="/insights" className="w-full">
+              <Button variant="outline" className="w-full h-auto py-3 flex items-center gap-3 justify-start">
+                <Brain className="w-5 h-5 text-purple-500 flex-shrink-0" />
+                <span className="text-sm font-medium">Insights</span>
+              </Button>
+            </Link>
             {/* Elite Practice - 3 Tiers */}
             <div className="w-full space-y-2">
               <Link to="/elite-practice?tier=1600_club" className="w-full block">
@@ -550,18 +556,12 @@ const Home = () => {
         </p>
 
         {/* Quick Links - Mobile optimized grid */}
-        <div className="grid grid-cols-3 gap-4 mt-auto pb-2 px-4">
+        <div className="grid grid-cols-2 gap-4 mt-auto pb-2 px-4">
           <Link to="/why-it-works" className="flex flex-col items-center">
             <Button variant="ghost" size="sm" className="h-10 w-10 p-0 text-primary">
               <Zap className="w-5 h-5" />
             </Button>
             <span className="text-xs text-primary font-medium text-center leading-tight">Why</span>
-          </Link>
-          <Link to="/insights" className="flex flex-col items-center">
-            <Button variant="ghost" size="sm" className="h-10 w-10 p-0">
-              <Brain className="w-5 h-5" />
-            </Button>
-            <span className="text-xs text-muted-foreground text-center leading-tight">Insights</span>
           </Link>
           <Link to="/demo" className="flex flex-col items-center">
             <Button variant="ghost" size="sm" className="h-10 w-10 p-0 text-green-500">
