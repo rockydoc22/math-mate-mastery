@@ -1816,7 +1816,7 @@ export const satEnglishQuestions: EnglishQuestion[] = [
   }, 6),
   addRating({
     id: 'sat-eng-120',
-    question: 'According to the passage, which factor most significantly contributed to the outcome?',
+    question: 'The civil rights movement of the 1960s achieved landmark legislative victories through a convergence of factors. While individual activists demonstrated remarkable courage and determination, historians emphasize that lasting change required more than personal sacrifice. The economic prosperity of the postwar era created conditions where reforms became politically feasible, but the decisive breakthrough came when grassroots organizing intersected with federal policy initiatives. The Civil Rights Act of 1964 and the Voting Rights Act of 1965 emerged from sustained pressure by organizations like the NAACP and SNCC working in concert with sympathetic legislators and a shifting national consciousness.\n\nAccording to the passage, which factor most significantly contributed to the outcome?',
     options: [
       { letter: 'A', text: 'Individual effort and determination' },
       { letter: 'B', text: 'Favorable economic conditions' },
@@ -1824,7 +1824,7 @@ export const satEnglishQuestions: EnglishQuestion[] = [
       { letter: 'D', text: 'Pure chance and coincidence' }
     ],
     correctAnswer: 'C',
-    explanation: 'The passage emphasizes multiple factors working together, particularly policy and social forces.',
+    explanation: 'The passage emphasizes that "the decisive breakthrough came when grassroots organizing intersected with federal policy initiatives," highlighting the combination of social movements and policy changes.',
     difficulty: 'Medium',
     domain: 'Information and Ideas',
     skill: 'Identifying Causes'
@@ -2043,7 +2043,7 @@ export const satEnglishQuestions: EnglishQuestion[] = [
   }, 6),
   addRating({
     id: 'sat-eng-135',
-    question: 'According to the passage, the primary limitation of the study was:',
+    question: 'A team of researchers at Stanford University investigated the relationship between sleep quality and academic performance among college students. The study followed 47 undergraduates over one semester, tracking their sleep patterns through wearable devices and correlating these data with their grade point averages. The results showed a statistically significant positive correlation between consistent sleep schedules and higher grades. However, the researchers acknowledged that their sample, drawn exclusively from students in introductory psychology courses at a single institution, limits how widely these findings can be applied to the broader college population.\n\nAccording to the passage, the primary limitation of the study was:',
     options: [
       { letter: 'A', text: 'Researchers were biased toward certain outcomes.' },
       { letter: 'B', text: 'The sample size was too small to draw generalizable conclusions.' },
@@ -2051,7 +2051,7 @@ export const satEnglishQuestions: EnglishQuestion[] = [
       { letter: 'D', text: 'The research questions were poorly formulated.' }
     ],
     correctAnswer: 'B',
-    explanation: 'The passage explicitly notes that the limited sample restricts how widely findings can be applied.',
+    explanation: 'The passage explicitly states that the sample "limits how widely these findings can be applied," indicating the small, non-representative sample was the primary limitation.',
     difficulty: 'Medium',
     domain: 'Information and Ideas',
     skill: 'Identifying Limitations'
@@ -2148,7 +2148,7 @@ export const satEnglishQuestions: EnglishQuestion[] = [
   }, 4),
   addRating({
     id: 'sat-eng-142',
-    question: 'The passage suggests that technological innovation often:',
+    question: 'The history of technological advancement reveals a consistent pattern: each breakthrough that solves existing problems simultaneously introduces new complications. The automobile liberated people from the constraints of horse-drawn transport but created traffic congestion and air pollution. The internet democratized access to information while enabling unprecedented threats to privacy and the spread of misinformation. Even life-saving medical innovations, such as antibiotics, have generated new challenges in the form of resistant bacteria. This cycle of solution and complication does not argue against innovation—rather, it suggests that progress requires ongoing adaptation and vigilance.\n\nThe passage suggests that technological innovation often:',
     options: [
       { letter: 'A', text: 'Solves all problems without creating new ones' },
       { letter: 'B', text: 'Creates new challenges while addressing existing ones' },
@@ -2156,14 +2156,14 @@ export const satEnglishQuestions: EnglishQuestion[] = [
       { letter: 'D', text: 'Should be avoided whenever possible' }
     ],
     correctAnswer: 'B',
-    explanation: 'The passage emphasizes that innovation typically involves trade-offs and new challenges.',
+    explanation: 'The passage emphasizes that "each breakthrough that solves existing problems simultaneously introduces new complications," directly supporting option B.',
     difficulty: 'Medium',
     domain: 'Information and Ideas',
     skill: 'Central Ideas'
   }, 6),
   addRating({
     id: 'sat-eng-143',
-    question: 'Which choice provides the most logical conclusion for the paragraph?',
+    question: 'Climate change presents a challenge that no single entity can solve alone. Individual lifestyle changes, while valuable, cannot offset industrial emissions at scale. Government regulations face resistance from economic interests invested in the status quo. Corporate sustainability initiatives, though increasingly common, often prioritize public relations over substantive action. Scientific organizations continue to refine our understanding of climate dynamics, yet translating research into policy remains difficult. ______\n\nWhich choice most logically completes the text?',
     options: [
       { letter: 'A', text: 'In conclusion, more research is clearly needed in unrelated fields.' },
       { letter: 'B', text: 'Therefore, addressing this issue requires coordinated action from multiple stakeholders.' },
@@ -2171,14 +2171,14 @@ export const satEnglishQuestions: EnglishQuestion[] = [
       { letter: 'D', text: 'Meanwhile, other topics deserve more attention.' }
     ],
     correctAnswer: 'B',
-    explanation: 'The conclusion should follow logically from the paragraph\'s discussion of the issue.',
+    explanation: 'The paragraph describes how no single group can solve the problem alone, so the logical conclusion is that coordinated action from multiple stakeholders is required.',
     difficulty: 'Medium',
     domain: 'Expression of Ideas',
     skill: 'Logical Conclusions'
   }, 5),
   addRating({
     id: 'sat-eng-144',
-    question: 'The author refers to the "elephant in the room" to:',
+    question: 'In discussions of educational reform, policymakers frequently debate curriculum changes, teacher training programs, and technology integration. Yet these conversations consistently avoid the elephant in the room: the profound inequalities in school funding that leave students in low-income districts with fewer resources, larger class sizes, and deteriorating facilities. Until this fundamental disparity is addressed, other reforms risk becoming mere bandages on a deeper wound.\n\nThe author refers to the "elephant in the room" to:',
     options: [
       { letter: 'A', text: 'Discuss zoo conservation efforts' },
       { letter: 'B', text: 'Address an obvious problem that others have avoided discussing' },
@@ -2186,7 +2186,7 @@ export const satEnglishQuestions: EnglishQuestion[] = [
       { letter: 'D', text: 'Criticize excessive focus on wildlife' }
     ],
     correctAnswer: 'B',
-    explanation: 'This idiom refers to a significant issue that is being ignored or avoided in discussion.',
+    explanation: 'The author uses the idiom to highlight that funding inequality is an obvious, significant problem that educational reform discussions typically avoid.',
     difficulty: 'Medium',
     domain: 'Craft and Structure',
     skill: 'Idioms'
