@@ -74,8 +74,23 @@ const Auth = () => {
       setMode("resetPassword");
     }
 
+    // CRITICAL: If we arrived at /auth?reset=true (after Supabase redirect), 
+    // check if we already have a valid session from the recovery flow
+    const checkExistingSession = async () => {
+      const isReset = searchParams.get("reset") === "true";
+      if (isReset && !window.location.hash.includes("access_token")) {
+        const { data: { session } } = await supabase.auth.getSession();
+        console.log("Checking existing session for reset mode:", !!session);
+        if (session) {
+          setRecoverySessionReady(true);
+          setMode("resetPassword");
+        }
+      }
+    };
+    checkExistingSession();
+
     return () => subscription.unsubscribe();
-  }, []);
+  }, [searchParams]);
 
   useEffect(() => {
     // Don't redirect if in reset password mode
