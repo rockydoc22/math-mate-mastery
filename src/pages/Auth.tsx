@@ -37,19 +37,15 @@ const Auth = () => {
   const navigate = useNavigate();
   const [searchParams] = useSearchParams();
   const { user, signIn, signUp } = useAuth();
-  const [mode, setMode] = useState<AuthMode>(() => {
-    // Check immediately on first render if we're in reset mode
-    const isReset = new URLSearchParams(window.location.search).get("reset") === "true";
-    const hash = window.location.hash;
-    if (isReset || hash.includes("type=recovery")) {
-      return "resetPassword";
-    }
-    return "signIn";
-  });
+  
+  // Immediately check URL for reset mode on first render
+  const isResetMode = searchParams.get("reset") === "true" || 
+    window.location.hash.includes("type=recovery");
+  
+  const [mode, setMode] = useState<AuthMode>(isResetMode ? "resetPassword" : "signIn");
   const [loading, setLoading] = useState(false);
   const [showPassword, setShowPassword] = useState(false);
   const [showConfirmPassword, setShowConfirmPassword] = useState(false);
-  const [sessionChecked, setSessionChecked] = useState(false);
   const [form, setForm] = useState({ 
     emailOrUsername: "", 
     email: "", 
@@ -58,59 +54,25 @@ const Auth = () => {
     confirmPassword: "" 
   });
 
-  // Handle password recovery flow
+  // Listen for PASSWORD_RECOVERY event from Supabase
   useEffect(() => {
-    const isReset = searchParams.get("reset") === "true";
-    
-    // Set up auth state change listener FIRST
     const { data: { subscription } } = supabase.auth.onAuthStateChange((event, session) => {
       console.log("Auth event:", event, "Has session:", !!session);
-      
-      if (event === "PASSWORD_RECOVERY" && session) {
+      if (event === "PASSWORD_RECOVERY") {
         setMode("resetPassword");
-        setSessionChecked(true);
+        // Clean up URL
         window.history.replaceState({}, "", "/auth?reset=true");
-      } else if (event === "SIGNED_IN" && isReset && session) {
-        setMode("resetPassword");
-        setSessionChecked(true);
       }
     });
 
-    // Then check current session state
-    const verifySession = async () => {
-      // Check if we have hash tokens that need processing
-      const hash = window.location.hash;
-      if (hash.includes("access_token") && hash.includes("type=recovery")) {
-        // Supabase will process these automatically, wait for the event
-        console.log("Waiting for Supabase to process recovery tokens...");
-        // Give it a moment
-        await new Promise(resolve => setTimeout(resolve, 1500));
-      }
-      
-      const { data: { session } } = await supabase.auth.getSession();
-      console.log("Session check - has session:", !!session, "isReset:", isReset);
-      
-      if (isReset || hash.includes("type=recovery")) {
-        if (session) {
-          setMode("resetPassword");
-        } else if (!hash.includes("access_token")) {
-          // No session and no tokens in URL - link expired
-          toast({ 
-            title: "Session expired", 
-            description: "Please request a new password reset link",
-            variant: "destructive" 
-          });
-          setMode("forgotPassword");
-          window.history.replaceState({}, "", "/auth");
-        }
-      }
-      setSessionChecked(true);
-    };
-    
-    verifySession();
+    // If we arrived with recovery tokens in hash, Supabase will process them
+    // Just make sure we're showing the reset form
+    if (window.location.hash.includes("type=recovery")) {
+      setMode("resetPassword");
+    }
 
     return () => subscription.unsubscribe();
-  }, [searchParams]);
+  }, []);
 
   useEffect(() => {
     // Don't redirect if in reset password mode
@@ -229,6 +191,20 @@ const Auth = () => {
         const passwordCheck = validatePassword(form.password);
         if (!passwordCheck.valid) {
           toast({ title: passwordCheck.error, variant: "destructive" });
+          setLoading(false);
+          return;
+        }
+        
+        // Check if we have a valid session
+        const { data: { session } } = await supabase.auth.getSession();
+        if (!session) {
+          toast({ 
+            title: "Session expired", 
+            description: "Please request a new password reset link",
+            variant: "destructive" 
+          });
+          setMode("forgotPassword");
+          window.history.replaceState({}, "", "/auth");
           setLoading(false);
           return;
         }
