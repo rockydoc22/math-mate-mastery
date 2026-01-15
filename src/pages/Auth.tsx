@@ -10,7 +10,7 @@ import { supabase } from "@/integrations/supabase/client";
 import { User, Mail, Lock, ArrowLeft, HelpCircle, Eye, EyeOff, KeyRound, Sparkles } from "lucide-react";
 import { InputOTP, InputOTPGroup, InputOTPSlot } from "@/components/ui/input-otp";
 
-type AuthMode = "signIn" | "signUp" | "forgotPassword" | "forgotUsername" | "resetPassword" | "codeReset" | "enterCode";
+type AuthMode = "signIn" | "signUp" | "forgotUsername" | "resetPassword" | "codeReset" | "enterCode";
 
 // Password validation helper
 const validatePassword = (password: string): { valid: boolean; error?: string } => {
@@ -162,30 +162,6 @@ const Auth = () => {
         const { error } = await signIn(emailToUse, form.password);
         if (error) throw error;
         toast({ title: "Welcome back! Let's practice! 💪" });
-      } else if (mode === "forgotPassword") {
-        let emailToUse = form.emailOrUsername.trim();
-        
-        // If it doesn't look like an email, try to look up the email by username
-        if (!isEmail(emailToUse)) {
-          const lookedUpEmail = await lookupEmailByUsername(emailToUse);
-          if (!lookedUpEmail) {
-            toast({ 
-              title: "Username not found", 
-              description: "Try entering your email instead",
-              variant: "destructive" 
-            });
-            setLoading(false);
-            return;
-          }
-          emailToUse = lookedUpEmail;
-        }
-        
-        const { error } = await supabase.auth.resetPasswordForEmail(emailToUse, {
-          redirectTo: `${window.location.origin}/auth?reset=true`,
-        });
-        if (error) throw error;
-        toast({ title: "Check your email for the reset link! 📧" });
-        setMode("signIn");
       } else if (mode === "codeReset") {
         // Send 6-digit code via edge function
         let emailToUse = form.emailOrUsername.trim();
@@ -341,7 +317,6 @@ const Auth = () => {
   const getTitle = () => {
     switch (mode) {
       case "signUp": return "Create your account to start grinding";
-      case "forgotPassword": return "Reset your password";
       case "codeReset": return "Reset with security code";
       case "enterCode": return "Enter your security code";
       case "forgotUsername": return "Recover your username";
@@ -354,7 +329,6 @@ const Auth = () => {
     if (loading) return "Loading...";
     switch (mode) {
       case "signUp": return "Create Account";
-      case "forgotPassword": return "Send Reset Link";
       case "codeReset": return "Send Security Code";
       case "enterCode": return "Reset Password";
       case "forgotUsername": return "Find My Username";
@@ -385,7 +359,7 @@ const Auth = () => {
         </div>
 
         <Card className="p-6 border-2 border-border bg-card/80 backdrop-blur">
-          {(mode === "forgotPassword" || mode === "forgotUsername" || mode === "resetPassword" || mode === "codeReset" || mode === "enterCode") && (
+          {(mode === "forgotUsername" || mode === "resetPassword" || mode === "codeReset" || mode === "enterCode") && (
             <button
               type="button"
               className="flex items-center gap-1 text-muted-foreground hover:text-foreground text-sm mb-4"
@@ -415,8 +389,8 @@ const Auth = () => {
               </div>
             )}
 
-            {/* Sign In, Forgot Password, Code Reset - Username OR Email field */}
-            {(mode === "signIn" || mode === "forgotPassword" || mode === "codeReset") && (
+            {/* Sign In, Code Reset - Username OR Email field */}
+            {(mode === "signIn" || mode === "codeReset") && (
               <div className="space-y-2">
                 <Label htmlFor="emailOrUsername">Username or Email</Label>
                 <div className="relative">
@@ -567,33 +541,21 @@ const Auth = () => {
             </Button>
           </form>
 
-          {/* Alternative reset methods shown on forgotPassword mode */}
-          {mode === "forgotPassword" && (
-            <div className="mt-4 pt-4 border-t border-border space-y-2">
-              <p className="text-xs text-center text-muted-foreground mb-2">Or try these alternatives:</p>
-              <div className="flex gap-2">
-                <Button 
-                  type="button" 
-                  variant="outline" 
-                  size="sm" 
-                  className="flex-1 text-xs"
-                  onClick={() => setMode("codeReset")}
-                >
-                  <KeyRound className="w-3 h-3 mr-1" />
-                  Code Reset
-                </Button>
-                <Button 
-                  type="button" 
-                  variant="outline" 
-                  size="sm" 
-                  className="flex-1 text-xs"
-                  onClick={handleMagicLinkReset}
-                  disabled={loading || !form.emailOrUsername.trim()}
-                >
-                  <Sparkles className="w-3 h-3 mr-1" />
-                  Magic Link
-                </Button>
-              </div>
+          {/* Magic link option shown on code reset mode */}
+          {mode === "codeReset" && (
+            <div className="mt-4 pt-4 border-t border-border">
+              <p className="text-xs text-center text-muted-foreground mb-2">Or sign in without a password:</p>
+              <Button 
+                type="button" 
+                variant="outline" 
+                size="sm" 
+                className="w-full text-xs"
+                onClick={handleMagicLinkReset}
+                disabled={loading || !form.emailOrUsername.trim()}
+              >
+                <Sparkles className="w-3 h-3 mr-1" />
+                Send Magic Link (then change password in Settings)
+              </Button>
             </div>
           )}
 
@@ -605,7 +567,14 @@ const Auth = () => {
                     <button
                       type="button"
                       className="text-muted-foreground hover:text-primary flex items-center gap-1"
-                      onClick={() => setMode("forgotPassword")}
+                      onClick={() => {
+                        // If user is logged in, go to settings to change password
+                        if (user) {
+                          navigate("/settings");
+                        } else {
+                          setMode("codeReset");
+                        }
+                      }}
                     >
                       <Lock className="w-3 h-3" />
                       Forgot password?
@@ -621,7 +590,7 @@ const Auth = () => {
                   </div>
                 </>
               )}
-              {mode !== "forgotPassword" && mode !== "forgotUsername" && mode !== "codeReset" && (
+              {mode !== "forgotUsername" && mode !== "codeReset" && (
                 <button
                   type="button"
                   className="text-primary hover:underline text-sm"
