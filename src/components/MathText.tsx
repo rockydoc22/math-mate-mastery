@@ -12,6 +12,8 @@ const latexPattern = /\$\$([\s\S]*?)\$\$|\$([\s\S]*?)\$/g;
 // Convert common math notation to LaTeX
 const convertToLatex = (text: string): string => {
   return text
+    // Fix "+ -" pattern to "- " (common data issue)
+    .replace(/\+ -/g, '- ')
     // Fractions like 1/2 or (x+1)/(x-1)
     .replace(/\(([^)]+)\)\/\(([^)]+)\)/g, '\\frac{$1}{$2}')
     // Square roots
@@ -44,9 +46,17 @@ const convertToLatex = (text: string): string => {
     .replace(/×/g, '\\times');
 };
 
+// Fix "+ -" pattern in regular text too
+const fixSpacingIssues = (text: string): string => {
+  return text.replace(/\+ -/g, '- ');
+};
+
 export const MathText = ({ text, className = '' }: MathTextProps) => {
+  // First fix common spacing issues
+  const fixedText = fixSpacingIssues(text);
+  
   // Check if text contains explicit LaTeX delimiters
-  const hasLatexDelimiters = text.includes('$');
+  const hasLatexDelimiters = fixedText.includes('$');
   
   if (hasLatexDelimiters) {
     // Parse and render LaTeX expressions
@@ -56,10 +66,10 @@ export const MathText = ({ text, className = '' }: MathTextProps) => {
     let key = 0;
     
     const regex = new RegExp(latexPattern);
-    while ((match = regex.exec(text)) !== null) {
+    while ((match = regex.exec(fixedText)) !== null) {
       // Add text before the match
       if (match.index > lastIndex) {
-        parts.push(text.slice(lastIndex, match.index));
+        parts.push(fixedText.slice(lastIndex, match.index));
       }
       
       // Add the LaTeX element
@@ -81,35 +91,35 @@ export const MathText = ({ text, className = '' }: MathTextProps) => {
     }
     
     // Add remaining text
-    if (lastIndex < text.length) {
-      parts.push(text.slice(lastIndex));
+    if (lastIndex < fixedText.length) {
+      parts.push(fixedText.slice(lastIndex));
     }
     
     return <span className={className}>{parts}</span>;
   }
   
   // Check if text looks like it contains math
-  const hasMathSymbols = /[+\-*/=<>≤≥≠^√πθ]|\d+\/\d+|x\^|y\^/.test(text);
+  const hasMathSymbols = /[+\-*/=<>≤≥≠^√πθ]|\d+\/\d+|x\^|y\^/.test(fixedText);
   
   if (!hasMathSymbols) {
-    return <span className={className}>{text}</span>;
+    return <span className={className}>{fixedText}</span>;
   }
   
   // Try to render as inline math if it looks like a formula
-  const isLikelyFormula = /^[^.!?]*[=<>≤≥≠][^.!?]*$/.test(text) || 
-                          /^\s*\d+[+\-*/]\d+/.test(text) ||
-                          /[xy]\s*[=<>+\-*/^]/.test(text);
+  const isLikelyFormula = /^[^.!?]*[=<>≤≥≠][^.!?]*$/.test(fixedText) || 
+                          /^\s*\d+[+\-*/]\d+/.test(fixedText) ||
+                          /[xy]\s*[=<>+\-*/^]/.test(fixedText);
   
-  if (isLikelyFormula && text.length < 100) {
+  if (isLikelyFormula && fixedText.length < 100) {
     try {
-      const latex = convertToLatex(text);
+      const latex = convertToLatex(fixedText);
       return <InlineMath math={latex} />;
     } catch {
-      return <span className={className}>{text}</span>;
+      return <span className={className}>{fixedText}</span>;
     }
   }
   
-  return <span className={className}>{text}</span>;
+  return <span className={className}>{fixedText}</span>;
 };
 
 export default MathText;
