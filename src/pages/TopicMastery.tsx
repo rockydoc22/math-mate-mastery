@@ -25,8 +25,8 @@ const TopicMastery = () => {
       <div className="min-h-screen bg-gradient-to-br from-background via-background to-primary/5 p-4">
         <div className="max-w-2xl mx-auto text-center py-20">
           <Target className="w-16 h-16 text-muted-foreground mx-auto mb-4" />
-          <h1 className="text-2xl font-bold mb-2">Sign in to track mastery</h1>
-          <p className="text-muted-foreground mb-4">Topic mastery requires tracking your progress</p>
+          <h1 className="text-2xl font-bold mb-2">Sign in to track progress</h1>
+          <p className="text-muted-foreground mb-4">Progress tracking requires an account</p>
           <Link to="/auth">
             <Button>Sign In</Button>
           </Link>
@@ -58,8 +58,8 @@ const TopicMastery = () => {
             </Button>
           </Link>
           <div>
-            <h1 className="text-2xl font-bold">Topic Mastery</h1>
-            <p className="text-sm text-muted-foreground">Master the Core 25 topics for maximum score gains</p>
+            <h1 className="text-2xl font-bold">Study Priorities</h1>
+            <p className="text-sm text-muted-foreground">Track progress on core topics and focus on weak areas</p>
           </div>
         </div>
 
@@ -68,7 +68,7 @@ const TopicMastery = () => {
           <div className="flex items-center justify-between mb-3">
             <div className="flex items-center gap-2">
               <Trophy className="w-5 h-5 text-primary" />
-              <span className="font-semibold">Overall Mastery</span>
+              <span className="font-semibold">Overall Progress</span>
             </div>
             <span className="text-lg font-bold text-primary">
               {totalMasteredCount}/{totalTopics} Topics
@@ -148,7 +148,7 @@ const TopicMastery = () => {
 
         {/* Tips */}
         <Card className="p-4 mt-6 bg-muted/50">
-          <h3 className="font-semibold mb-2">💡 Mastery Tips</h3>
+          <h3 className="font-semibold mb-2">💡 Study Tips</h3>
           <ul className="text-sm text-muted-foreground space-y-1">
             <li>• Focus on one topic at a time until you hit 90%</li>
             <li>• Do 15-25 questions per topic for reliable accuracy</li>
