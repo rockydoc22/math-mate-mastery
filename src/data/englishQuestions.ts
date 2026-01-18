@@ -65,16 +65,25 @@ const baseEnglishQuestions: EnglishQuestion[] = (englishQuestionsRaw as RawEngli
 const allEnglishQuestions: EnglishQuestion[] = [...baseEnglishQuestions, ...uploadedEnglishQuestions, ...hardEnglishQuestions, ...satEnglishQuestions, ...additionalEnglishQuestions, ...extraEnglishQuestions, ...expertEnglishQuestions, ...mediumEnglishQuestions, ...hardEnglishQuestions2, ...satEnglishPart1Questions, ...satEnglishPart2Questions];
 
 // Remove duplicate questions (keeps first occurrence of each)
-const seenEnglishQuestions = new Map<string, boolean>();
-export const englishQuestions: EnglishQuestion[] = allEnglishQuestions.filter(q => {
-  // Normalize question text for comparison
-  const normalizedText = q.question.toLowerCase().replace(/\s+/g, ' ').trim().slice(0, 100);
+// Uses full normalized question text for more accurate duplicate detection
+const seenEnglishQuestions = new Map<string, string>(); // Map normalized text to first ID
+const duplicateEnglishIds = new Set<string>();
+
+for (const q of allEnglishQuestions) {
+  // Normalize question text for comparison - use FULL text, not truncated
+  const normalizedText = q.question
+    .toLowerCase()
+    .replace(/\s+/g, ' ')
+    .trim();
+  
   if (seenEnglishQuestions.has(normalizedText)) {
-    return false;
+    duplicateEnglishIds.add(q.id);
+  } else {
+    seenEnglishQuestions.set(normalizedText, q.id);
   }
-  seenEnglishQuestions.set(normalizedText, true);
-  return true;
-});
+}
+
+export const englishQuestions: EnglishQuestion[] = allEnglishQuestions.filter(q => !duplicateEnglishIds.has(q.id));
 
 // Export counts for reporting
 export const englishQuestionStats = {

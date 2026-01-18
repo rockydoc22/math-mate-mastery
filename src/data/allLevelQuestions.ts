@@ -1,5 +1,7 @@
 // Comprehensive question bank to ensure 300+ questions per difficulty level (1-10)
+// Uses deterministic generation to avoid duplicates
 import type { Question } from './questions';
+import { createSeededRandom, generateUniqueValues, generateUniqueSingleValues } from '@/utils/seededRandom';
 
 interface VisualQuestion extends Question {
   imageUrl?: string;
@@ -10,11 +12,12 @@ interface VisualQuestion extends Question {
 const generateLevel1Questions = (): VisualQuestion[] => {
   const questions: VisualQuestion[] = [];
   
-  // Counting questions
-  for (let i = 1; i <= 50; i++) {
-    const num = Math.floor(Math.random() * 8) + 2;
+  // Counting questions - use unique values 2-9 (8 possible values)
+  const countValues = generateUniqueSingleValues(8, 2, 9, 1001);
+  for (let i = 0; i < countValues.length; i++) {
+    const num = countValues[i];
     questions.push({
-      id: `l1-count-${i}`,
+      id: `l1-count-${i + 1}`,
       question: `Count the objects: ${'●'.repeat(num)}`,
       options: [
         { letter: "A", text: String(num - 1) },
@@ -31,13 +34,13 @@ const generateLevel1Questions = (): VisualQuestion[] => {
     });
   }
   
-  // Single digit addition
-  for (let i = 1; i <= 50; i++) {
-    const a = Math.floor(Math.random() * 5) + 1;
-    const b = Math.floor(Math.random() * 4) + 1;
+  // Single digit addition - unique pairs (1-5) + (1-4) = 20 possible combinations
+  const addValues = generateUniqueValues(20, 1, 5, 1, 4, 1002);
+  for (let i = 0; i < addValues.length; i++) {
+    const { a, b } = addValues[i];
     const sum = a + b;
     questions.push({
-      id: `l1-add-${i}`,
+      id: `l1-add-${i + 1}`,
       question: `What is ${a} + ${b}?`,
       options: [
         { letter: "A", text: String(sum - 1) },
@@ -1342,8 +1345,21 @@ export const level8Extra = generateLevel8Extra();
 export const level9Extra = generateLevel9Extra();
 export const level10Questions = generateLevel10Questions();
 
-// Combined export
-export const allLevelQuestions: VisualQuestion[] = [
+// Helper to deduplicate questions within the file
+const deduplicateQuestions = (questions: VisualQuestion[]): VisualQuestion[] => {
+  const seen = new Map<string, boolean>();
+  return questions.filter(q => {
+    const normalized = q.question.toLowerCase().replace(/\s+/g, ' ').trim();
+    if (seen.has(normalized)) {
+      return false;
+    }
+    seen.set(normalized, true);
+    return true;
+  });
+};
+
+// Combined export with deduplication
+const rawAllLevelQuestions: VisualQuestion[] = [
   ...level1Questions,
   ...level2Questions,
   ...level3Questions,
@@ -1356,17 +1372,21 @@ export const allLevelQuestions: VisualQuestion[] = [
   ...level10Questions,
 ];
 
-// Export counts
+export const allLevelQuestions: VisualQuestion[] = deduplicateQuestions(rawAllLevelQuestions);
+
+// Export counts (after deduplication)
 export const levelCounts = {
-  level1: level1Questions.length,
-  level2: level2Questions.length,
-  level3: level3Questions.length,
-  level4: level4Extra.length,
-  level5: level5Extra.length,
-  level6: level6Extra.length,
-  level7: level7Extra.length,
-  level8: level8Extra.length,
-  level9: level9Extra.length,
-  level10: level10Questions.length,
-  total: allLevelQuestions.length
+  level1: deduplicateQuestions(level1Questions).length,
+  level2: deduplicateQuestions(level2Questions).length,
+  level3: deduplicateQuestions(level3Questions).length,
+  level4: deduplicateQuestions(level4Extra).length,
+  level5: deduplicateQuestions(level5Extra).length,
+  level6: deduplicateQuestions(level6Extra).length,
+  level7: deduplicateQuestions(level7Extra).length,
+  level8: deduplicateQuestions(level8Extra).length,
+  level9: deduplicateQuestions(level9Extra).length,
+  level10: deduplicateQuestions(level10Questions).length,
+  total: allLevelQuestions.length,
+  rawTotal: rawAllLevelQuestions.length,
+  duplicatesRemoved: rawAllLevelQuestions.length - allLevelQuestions.length
 };

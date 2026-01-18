@@ -106,16 +106,26 @@ const allMathQuestions: Question[] = [...rawQuestions, ...additionalMathQuestion
 const questionsWithoutImages: Question[] = allMathQuestions.filter(q => !q.imageUrl);
 
 // Remove duplicate questions (keeps first occurrence of each)
-const seenQuestions = new Map<string, boolean>();
-export const questions: Question[] = questionsWithoutImages.filter(q => {
-  // Normalize question text for comparison
-  const normalizedText = q.question.toLowerCase().replace(/\s+/g, ' ').trim().slice(0, 100);
+// Uses full normalized question text for more accurate duplicate detection
+const seenQuestions = new Map<string, string>(); // Map normalized text to first ID
+const duplicateIds = new Set<string>();
+
+for (const q of questionsWithoutImages) {
+  // Normalize question text for comparison - use FULL text, not truncated
+  const normalizedText = q.question
+    .toLowerCase()
+    .replace(/\s+/g, ' ')
+    .replace(/[^\w\s\d+\-×÷=<>()]/g, '') // Remove special chars but keep math operators
+    .trim();
+  
   if (seenQuestions.has(normalizedText)) {
-    return false;
+    duplicateIds.add(q.id);
+  } else {
+    seenQuestions.set(normalizedText, q.id);
   }
-  seenQuestions.set(normalizedText, true);
-  return true;
-});
+}
+
+export const questions: Question[] = questionsWithoutImages.filter(q => !duplicateIds.has(q.id));
 
 // Export counts for reporting
 export const questionStats = {
