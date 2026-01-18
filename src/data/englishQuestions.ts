@@ -10,6 +10,7 @@ import { mediumEnglishQuestions } from './mediumEnglishQuestions';
 import { hardEnglishQuestions2 } from './hardEnglishQuestions2';
 import { satEnglishPart1Questions } from './satEnglishPart1Questions';
 import { satEnglishPart2Questions } from './satEnglishPart2Questions';
+import { veryHardEnglishQuestions } from './veryHardEnglishQuestions';
 
 export interface EnglishQuestion {
   id: string;
@@ -61,8 +62,8 @@ const baseEnglishQuestions: EnglishQuestion[] = (englishQuestionsRaw as RawEngli
   };
 });
 
-// Combine all English questions
-const allEnglishQuestions: EnglishQuestion[] = [...baseEnglishQuestions, ...uploadedEnglishQuestions, ...hardEnglishQuestions, ...satEnglishQuestions, ...additionalEnglishQuestions, ...extraEnglishQuestions, ...expertEnglishQuestions, ...mediumEnglishQuestions, ...hardEnglishQuestions2, ...satEnglishPart1Questions, ...satEnglishPart2Questions];
+// Combine all English questions (including new very hard questions)
+const allEnglishQuestions: EnglishQuestion[] = [...baseEnglishQuestions, ...uploadedEnglishQuestions, ...hardEnglishQuestions, ...satEnglishQuestions, ...additionalEnglishQuestions, ...extraEnglishQuestions, ...expertEnglishQuestions, ...mediumEnglishQuestions, ...hardEnglishQuestions2, ...satEnglishPart1Questions, ...satEnglishPart2Questions, ...veryHardEnglishQuestions];
 
 // Remove duplicate questions (keeps first occurrence of each)
 // Uses full normalized question text for more accurate duplicate detection
@@ -83,7 +84,13 @@ for (const q of allEnglishQuestions) {
   }
 }
 
-export const englishQuestions: EnglishQuestion[] = allEnglishQuestions.filter(q => !duplicateEnglishIds.has(q.id));
+// Cap difficulty ratings at 10 (remove levels 11-13)
+export const englishQuestions: EnglishQuestion[] = allEnglishQuestions
+  .filter(q => !duplicateEnglishIds.has(q.id))
+  .map(q => ({
+    ...q,
+    difficultyRating: q.difficultyRating ? Math.min(q.difficultyRating, 10) : q.difficultyRating
+  }));
 
 // Export counts for reporting
 export const englishQuestionStats = {

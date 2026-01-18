@@ -18,18 +18,18 @@ const levelToDifficulty = (level: number): string => {
   return 'Expert';
 };
 
-// Remap Grok levels to our 1-13 scale (matching difficultyRating.ts remapping)
+// Remap Grok levels to our 1-10 scale (capped at 10, no more 11-13)
 const remapLevel = (level: number): number => {
   const mapping: Record<number, number> = {
     1: 1, 2: 2, 3: 3, 4: 4,
     5: 7,   // Medium-high → Hard
-    6: 9,   // Medium-hard → Very Hard
-    7: 10,  // Hard → Very Hard
-    8: 11,  // Hard+ → Titan
-    9: 12,  // Very Hard → Savant
-    10: 13  // Expert → Insane
+    6: 8,   // Medium-hard → Hard+
+    7: 9,   // Hard → Very Hard
+    8: 10,  // Hard+ → Elite
+    9: 10,  // Very Hard → Elite (capped)
+    10: 10  // Expert → Elite (capped)
   };
-  return mapping[level] || level;
+  return mapping[level] || Math.min(level, 10);
 };
 
 const addRating = (q: Omit<VisualQuestion, 'difficultyRating'> & { level: number }): VisualQuestion => {

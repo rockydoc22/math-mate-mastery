@@ -6,7 +6,7 @@ import { EnglishQuestion } from "./englishQuestions";
  * Skills: Text Structure, Rhetorical Synthesis, Words in Context, Command of Evidence, Central Ideas
  */
 
-export const veryHardEnglishQuestions: EnglishQuestion[] = [
+const baseVeryHardQuestions: EnglishQuestion[] = [
   // Question batch 1 - Text Structure
   {
     id: "vhard_eng_5521",
@@ -1133,7 +1133,13 @@ export const veryHardEnglishQuestions: EnglishQuestion[] = [
     skill: "Rhetorical Synthesis",
     difficultyRating: 9
   }
-].concat(generateMoreVeryHardQuestions() as typeof veryHardEnglishQuestions);
+];
+
+// Combine with generated questions
+export const veryHardEnglishQuestions: EnglishQuestion[] = [
+  ...baseVeryHardQuestions,
+  ...generateMoreVeryHardQuestions()
+];
 
 /**
  * Generate additional questions programmatically for variety

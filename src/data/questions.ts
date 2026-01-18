@@ -133,7 +133,13 @@ for (const q of questionsWithoutImages) {
   }
 }
 
-export const questions: Question[] = questionsWithoutImages.filter(q => !duplicateIds.has(q.id));
+// Cap difficulty ratings at 10 (remove levels 11-13)
+export const questions: Question[] = questionsWithoutImages
+  .filter(q => !duplicateIds.has(q.id))
+  .map(q => ({
+    ...q,
+    difficultyRating: q.difficultyRating ? Math.min(q.difficultyRating, 10) : q.difficultyRating
+  }));
 
 // Export counts for reporting
 export const questionStats = {
