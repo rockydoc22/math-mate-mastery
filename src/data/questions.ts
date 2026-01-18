@@ -73,7 +73,11 @@ interface RawMathQuestion {
 }
 
 // IDs 1-92 have calculation errors and formatting issues (quadratics, systems, exponentials, rationals)
-const PROBLEMATIC_QUESTION_IDS = new Set(Array.from({ length: 92 }, (_, i) => i + 1));
+// IDs 327-345 are duplicates of ID 326 (standard deviation question repeated 20 times)
+const PROBLEMATIC_QUESTION_IDS = new Set([
+  ...Array.from({ length: 92 }, (_, i) => i + 1),  // 1-92: calculation errors
+  ...Array.from({ length: 19 }, (_, i) => i + 327)  // 327-345: duplicates of 326
+]);
 
 // Transform raw JSON questions to our Question format with difficulty ratings
 // Filter out problematic questions (IDs 1-92) that have calculation errors and decimal formatting issues
@@ -131,7 +135,7 @@ export const questions: Question[] = questionsWithoutImages.filter(q => !duplica
 export const questionStats = {
   totalBeforeFilters: allMathQuestions.length,
   removedForImages: allMathQuestions.length - questionsWithoutImages.length,
-  removedAsDuplicates: questionsWithoutImages.length - questions.length,
-  removedProblematic: 92, // IDs 1-92
+  removedAsDuplicates: duplicateIds.size,
+  removedProblematic: PROBLEMATIC_QUESTION_IDS.size, // IDs 1-92 + 327-345
   finalCount: questions.length
 };
