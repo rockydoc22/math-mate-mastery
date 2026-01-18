@@ -72,26 +72,32 @@ interface RawMathQuestion {
   explanation: string;
 }
 
+// IDs 1-92 have calculation errors and formatting issues (quadratics, systems, exponentials, rationals)
+const PROBLEMATIC_QUESTION_IDS = new Set(Array.from({ length: 92 }, (_, i) => i + 1));
+
 // Transform raw JSON questions to our Question format with difficulty ratings
-const rawQuestions: Question[] = (mathQuestionsRaw as RawMathQuestion[]).map((q) => {
-  const options = [
-    { letter: "A", text: q.optionA },
-    { letter: "B", text: q.optionB },
-    { letter: "C", text: q.optionC },
-    { letter: "D", text: q.optionD }
-  ];
-  return {
-    id: `math${String(q.id).padStart(3, '0')}`,
-    question: q.question,
-    options,
-    correctAnswer: q.correct,
-    explanation: q.explanation,
-    difficulty: q.difficulty.charAt(0).toUpperCase() + q.difficulty.slice(1),
-    domain: q.category,
-    skill: q.subcategory,
-    difficultyRating: rateDifficulty(q.question, options, q.category, q.subcategory)
-  };
-});
+// Filter out problematic questions (IDs 1-92) that have calculation errors and decimal formatting issues
+const rawQuestions: Question[] = (mathQuestionsRaw as RawMathQuestion[])
+  .filter((q) => !PROBLEMATIC_QUESTION_IDS.has(q.id))
+  .map((q) => {
+    const options = [
+      { letter: "A", text: q.optionA },
+      { letter: "B", text: q.optionB },
+      { letter: "C", text: q.optionC },
+      { letter: "D", text: q.optionD }
+    ];
+    return {
+      id: `math${String(q.id).padStart(3, '0')}`,
+      question: q.question,
+      options,
+      correctAnswer: q.correct,
+      explanation: q.explanation,
+      difficulty: q.difficulty.charAt(0).toUpperCase() + q.difficulty.slice(1),
+      domain: q.category,
+      skill: q.subcategory,
+      difficultyRating: rateDifficulty(q.question, options, q.category, q.subcategory)
+    };
+  });
 
 // Combine all math questions and filter out any with images (to avoid showing College Board branding)
 const allMathQuestions: Question[] = [...rawQuestions, ...additionalMathQuestions, ...newMathQuestions, ...uploadedMathQuestions, ...hardMathQuestions, ...importedSATMathQuestions, ...importedSATMathQuestions2, ...importedSATMathQuestions3, ...importedSATMathQuestions4, ...importedSATMathQuestions5, ...importedSATMathQuestions6, ...importedSATMathQuestions7, ...importedSATMathQuestions8, ...importedSATMathQuestions9, ...importedSATMathQuestions10, ...importedSATMathQuestions11, ...importedSATMathQuestions12, ...level8QuestionsExtra, ...pdfSATMathQuestions, ...allFillerQuestions, ...allLevelQuestions, ...balancedMathQuestions, ...mediumMathQuestions, ...mediumMathQuestions2];
