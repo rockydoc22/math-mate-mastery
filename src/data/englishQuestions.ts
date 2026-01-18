@@ -11,6 +11,8 @@ import { hardEnglishQuestions2 } from './hardEnglishQuestions2';
 import { satEnglishPart1Questions } from './satEnglishPart1Questions';
 import { satEnglishPart2Questions } from './satEnglishPart2Questions';
 import { veryHardEnglishQuestions } from './veryHardEnglishQuestions';
+import { moreEnglishVisualQuestions } from './moreVisualQuestions';
+import { additionalEnglishVisualQuestions } from './additionalEnglishVisualQuestions';
 
 export interface EnglishQuestion {
   id: string;
@@ -62,8 +64,8 @@ const baseEnglishQuestions: EnglishQuestion[] = (englishQuestionsRaw as RawEngli
   };
 });
 
-// Combine all English questions (including new very hard questions)
-const allEnglishQuestions: EnglishQuestion[] = [...baseEnglishQuestions, ...uploadedEnglishQuestions, ...hardEnglishQuestions, ...satEnglishQuestions, ...additionalEnglishQuestions, ...extraEnglishQuestions, ...expertEnglishQuestions, ...mediumEnglishQuestions, ...hardEnglishQuestions2, ...satEnglishPart1Questions, ...satEnglishPart2Questions, ...veryHardEnglishQuestions];
+// Combine all English questions (including visual questions for 1/3 ratio)
+const allEnglishQuestions: EnglishQuestion[] = [...baseEnglishQuestions, ...uploadedEnglishQuestions, ...hardEnglishQuestions, ...satEnglishQuestions, ...additionalEnglishQuestions, ...extraEnglishQuestions, ...expertEnglishQuestions, ...mediumEnglishQuestions, ...hardEnglishQuestions2, ...satEnglishPart1Questions, ...satEnglishPart2Questions, ...veryHardEnglishQuestions, ...moreEnglishVisualQuestions, ...additionalEnglishVisualQuestions];
 
 // Remove duplicate questions (keeps first occurrence of each)
 // Uses full normalized question text for more accurate duplicate detection
