@@ -1315,8 +1315,8 @@ const generateLevel10Questions = (): VisualQuestion[] => {
     });
   }
   
-  // Matrices
-  for (let i = 1; i <= 20; i++) {
+  // Matrices - expanded
+  for (let i = 1; i <= 30; i++) {
     const a = Math.floor(Math.random() * 5) + 1;
     const b = Math.floor(Math.random() * 5) + 1;
     const c = Math.floor(Math.random() * 5) + 1;
@@ -1336,6 +1336,201 @@ const generateLevel10Questions = (): VisualQuestion[] => {
       difficulty: "Hard",
       domain: "Algebra",
       skill: "Matrices",
+      difficultyRating: 10
+    });
+  }
+  
+  // Logarithms - Advanced
+  for (let i = 1; i <= 25; i++) {
+    const base = [2, 3, 5, 10][Math.floor(Math.random() * 4)];
+    const exp = Math.floor(Math.random() * 4) + 2;
+    const value = Math.pow(base, exp);
+    questions.push({
+      id: `l10-log-${i}`,
+      question: `What is log base ${base} of ${value}?`,
+      options: [
+        { letter: "A", text: String(exp) },
+        { letter: "B", text: String(exp - 1) },
+        { letter: "C", text: String(exp + 1) },
+        { letter: "D", text: String(base) }
+      ],
+      correctAnswer: "A",
+      explanation: `log_${base}(${value}) = ${exp} because ${base}^${exp} = ${value}`,
+      difficulty: "Hard",
+      domain: "Algebra",
+      skill: "Logarithms",
+      difficultyRating: 10
+    });
+  }
+  
+  // Polynomial Long Division
+  for (let i = 1; i <= 20; i++) {
+    const a = Math.floor(Math.random() * 3) + 1;
+    const b = Math.floor(Math.random() * 5) + 1;
+    const c = Math.floor(Math.random() * 4) + 1;
+    // (x + a) * (x + b) = x² + (a+b)x + ab
+    const coeff1 = a + b;
+    const coeff2 = a * b;
+    questions.push({
+      id: `l10-polydiv-${i}`,
+      question: `When x² + ${coeff1}x + ${coeff2} is divided by (x + ${a}), what is the quotient?`,
+      options: [
+        { letter: "A", text: `x + ${b}` },
+        { letter: "B", text: `x + ${a}` },
+        { letter: "C", text: `x + ${b + 1}` },
+        { letter: "D", text: `x - ${b}` }
+      ],
+      correctAnswer: "A",
+      explanation: `x² + ${coeff1}x + ${coeff2} = (x + ${a})(x + ${b}), so dividing by (x + ${a}) gives (x + ${b})`,
+      difficulty: "Hard",
+      domain: "Algebra",
+      skill: "Polynomial Division",
+      difficultyRating: 10
+    });
+  }
+  
+  // Parametric Equations
+  for (let i = 1; i <= 20; i++) {
+    const a = Math.floor(Math.random() * 4) + 1;
+    const b = Math.floor(Math.random() * 4) + 1;
+    const t = Math.floor(Math.random() * 3) + 1;
+    const x = a * t;
+    const y = b * t * t;
+    questions.push({
+      id: `l10-param-${i}`,
+      question: `For parametric equations x = ${a}t and y = ${b}t², what is y when t = ${t}?`,
+      options: [
+        { letter: "A", text: String(y) },
+        { letter: "B", text: String(x) },
+        { letter: "C", text: String(b * t) },
+        { letter: "D", text: String(y + a) }
+      ],
+      correctAnswer: "A",
+      explanation: `When t = ${t}: y = ${b}(${t})² = ${b} × ${t * t} = ${y}`,
+      difficulty: "Hard",
+      domain: "Algebra",
+      skill: "Parametric Equations",
+      difficultyRating: 10
+    });
+  }
+  
+  // Arithmetic Sequences - Advanced
+  for (let i = 1; i <= 20; i++) {
+    const a1 = Math.floor(Math.random() * 10) + 1;
+    const d = Math.floor(Math.random() * 5) + 2;
+    const n = Math.floor(Math.random() * 8) + 10;
+    const an = a1 + (n - 1) * d;
+    questions.push({
+      id: `l10-arith-seq-${i}`,
+      question: `In an arithmetic sequence with first term ${a1} and common difference ${d}, what is the ${n}th term?`,
+      options: [
+        { letter: "A", text: String(an) },
+        { letter: "B", text: String(an - d) },
+        { letter: "C", text: String(an + d) },
+        { letter: "D", text: String(a1 * n) }
+      ],
+      correctAnswer: "A",
+      explanation: `a_n = a_1 + (n-1)d = ${a1} + (${n}-1)(${d}) = ${a1} + ${(n - 1) * d} = ${an}`,
+      difficulty: "Hard",
+      domain: "Algebra",
+      skill: "Sequences",
+      difficultyRating: 10
+    });
+  }
+  
+  // Geometric Sequences - Advanced
+  for (let i = 1; i <= 20; i++) {
+    const a1 = Math.floor(Math.random() * 4) + 2;
+    const r = Math.floor(Math.random() * 2) + 2;
+    const n = Math.floor(Math.random() * 3) + 3;
+    const an = a1 * Math.pow(r, n - 1);
+    questions.push({
+      id: `l10-geom-seq-${i}`,
+      question: `In a geometric sequence with first term ${a1} and common ratio ${r}, what is the ${n}th term?`,
+      options: [
+        { letter: "A", text: String(an) },
+        { letter: "B", text: String(a1 * r * n) },
+        { letter: "C", text: String(an / r) },
+        { letter: "D", text: String(an + r) }
+      ],
+      correctAnswer: "A",
+      explanation: `a_n = a_1 × r^(n-1) = ${a1} × ${r}^${n - 1} = ${a1} × ${Math.pow(r, n - 1)} = ${an}`,
+      difficulty: "Hard",
+      domain: "Algebra",
+      skill: "Sequences",
+      difficultyRating: 10
+    });
+  }
+  
+  // Advanced Probability
+  for (let i = 1; i <= 20; i++) {
+    const n = Math.floor(Math.random() * 4) + 3;
+    const k = Math.floor(Math.random() * n) + 1;
+    const factorial = (x: number): number => x <= 1 ? 1 : x * factorial(x - 1);
+    const ways = factorial(n) / (factorial(k) * factorial(n - k));
+    const total = Math.pow(2, n);
+    questions.push({
+      id: `l10-prob-adv-${i}`,
+      question: `When flipping ${n} fair coins, how many ways can exactly ${k} come up heads?`,
+      options: [
+        { letter: "A", text: String(ways) },
+        { letter: "B", text: String(ways + 1) },
+        { letter: "C", text: String(n * k) },
+        { letter: "D", text: String(total) }
+      ],
+      correctAnswer: "A",
+      explanation: `C(${n},${k}) = ${n}!/(${k}!×${n - k}!) = ${ways}`,
+      difficulty: "Hard",
+      domain: "Statistics",
+      skill: "Probability",
+      difficultyRating: 10
+    });
+  }
+  
+  // Rational Expressions
+  for (let i = 1; i <= 20; i++) {
+    const a = Math.floor(Math.random() * 4) + 1;
+    const b = Math.floor(Math.random() * 5) + 1;
+    const x = Math.floor(Math.random() * 5) + 2;
+    const result = (x + a) / (x + b);
+    questions.push({
+      id: `l10-rational-${i}`,
+      question: `Simplify and evaluate (x + ${a})/(x + ${b}) when x = ${x}`,
+      options: [
+        { letter: "A", text: `${x + a}/${x + b}` },
+        { letter: "B", text: `${a}/${b}` },
+        { letter: "C", text: `${x + a + 1}/${x + b}` },
+        { letter: "D", text: `${x}/${b}` }
+      ],
+      correctAnswer: "A",
+      explanation: `When x = ${x}: (${x} + ${a})/(${x} + ${b}) = ${x + a}/${x + b}`,
+      difficulty: "Hard",
+      domain: "Algebra",
+      skill: "Rational Expressions",
+      difficultyRating: 10
+    });
+  }
+  
+  // Exponential Equations - Advanced
+  for (let i = 1; i <= 20; i++) {
+    const base = [2, 3, 4][Math.floor(Math.random() * 3)];
+    const exp1 = Math.floor(Math.random() * 3) + 1;
+    const exp2 = exp1 + Math.floor(Math.random() * 2) + 1;
+    const result = exp2 - exp1;
+    questions.push({
+      id: `l10-exp-adv-${i}`,
+      question: `If ${base}^x = ${Math.pow(base, exp1)} and ${base}^y = ${Math.pow(base, exp2)}, what is y - x?`,
+      options: [
+        { letter: "A", text: String(result) },
+        { letter: "B", text: String(result + 1) },
+        { letter: "C", text: String(exp1) },
+        { letter: "D", text: String(exp2) }
+      ],
+      correctAnswer: "A",
+      explanation: `${base}^x = ${Math.pow(base, exp1)} means x = ${exp1}. ${base}^y = ${Math.pow(base, exp2)} means y = ${exp2}. So y - x = ${exp2} - ${exp1} = ${result}`,
+      difficulty: "Hard",
+      domain: "Algebra",
+      skill: "Exponential Equations",
       difficultyRating: 10
     });
   }
