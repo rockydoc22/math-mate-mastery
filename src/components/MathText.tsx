@@ -105,7 +105,16 @@ export const MathText = ({ text, className = '' }: MathTextProps) => {
     return <span className={className}>{fixedText}</span>;
   }
   
-  // Try to render as inline math if it looks like a formula
+  // For question text that contains words, DON'T render as LaTeX - just show as-is
+  // Only render as LaTeX if it's a pure formula (no English words like "What", "is", "the", etc.)
+  const hasEnglishWords = /\b(what|is|the|of|line|find|solve|which|if|when|how|determine)\b/i.test(fixedText);
+  
+  if (hasEnglishWords) {
+    // Return plain text - don't try to parse as math formula
+    return <span className={className}>{fixedText}</span>;
+  }
+  
+  // Try to render as inline math ONLY if it looks like a pure formula (no words)
   const isLikelyFormula = /^[^.!?]*[=<>≤≥≠][^.!?]*$/.test(fixedText) || 
                           /^\s*\d+[+\-*/]\d+/.test(fixedText) ||
                           /[xy]\s*[=<>+\-*/^]/.test(fixedText);
