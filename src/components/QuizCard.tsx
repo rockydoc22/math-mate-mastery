@@ -1,13 +1,14 @@
-import { useState } from "react";
+import { useState, useMemo } from "react";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Question } from "@/data/questions";
 import { VisualQuestion } from "@/data/visualQuestions";
 import { ImageQuestion } from "@/data/importedSATQuestions";
-import { CheckCircle2, XCircle, Flag } from "lucide-react";
+import { CheckCircle2, XCircle, Flag, Lightbulb, AlertTriangle } from "lucide-react";
 import { FlagQuestionModal } from "./FlagQuestionModal";
 import { QuestionVisual } from "./QuestionVisual";
 import { MathText } from "./MathText";
+import { findKeyConcept, KeyConcept } from "@/data/satKeyConcepts";
 
 interface QuizCardProps {
   question: Question | VisualQuestion | ImageQuestion;
@@ -19,19 +20,25 @@ interface QuizCardProps {
 
 export const QuizCard = ({ question, selectedAnswer, onSelectAnswer, showResult, questionType = 'math' }: QuizCardProps) => {
   const [isFlagModalOpen, setIsFlagModalOpen] = useState(false);
+  const [showKeyConcept, setShowKeyConcept] = useState(false);
   const visualQuestion = question as VisualQuestion;
   const imageQuestion = question as ImageQuestion;
 
+  // Find the relevant key concept for this question
+  const keyConcept = useMemo(() => {
+    return findKeyConcept(question.skill, question.domain, questionType);
+  }, [question.skill, question.domain, questionType]);
+
   return (
     <>
-      <Card className="p-8 shadow-xl border-2">
-        <div className="space-y-6">
-          <div className="flex items-start justify-between gap-4">
-            <div className="space-y-2 flex-1">
-              <p className="text-sm font-semibold text-primary uppercase tracking-wide">
+      <Card className="p-4 sm:p-6 md:p-8 shadow-xl border-2">
+        <div className="space-y-4 sm:space-y-6">
+          <div className="flex items-start justify-between gap-2 sm:gap-4">
+            <div className="space-y-1 sm:space-y-2 flex-1 min-w-0">
+              <p className="text-xs sm:text-sm font-semibold text-primary uppercase tracking-wide truncate">
                 {question.domain} • {question.skill}
               </p>
-              <h2 className="text-xl font-bold leading-relaxed whitespace-pre-wrap">
+              <h2 className="text-base sm:text-lg md:text-xl font-bold leading-relaxed whitespace-pre-wrap break-words">
                 {questionType === 'math' ? <MathText text={question.question} /> : question.question}
               </h2>
             </div>
@@ -39,7 +46,7 @@ export const QuizCard = ({ question, selectedAnswer, onSelectAnswer, showResult,
               variant="ghost"
               size="sm"
               onClick={() => setIsFlagModalOpen(true)}
-              className="text-muted-foreground hover:text-destructive"
+              className="text-muted-foreground hover:text-destructive flex-shrink-0"
               title="Report an issue with this question"
             >
               <Flag className="w-4 h-4" />
@@ -62,7 +69,7 @@ export const QuizCard = ({ question, selectedAnswer, onSelectAnswer, showResult,
             <QuestionVisual visual={visualQuestion.visual} />
           )}
 
-          <div className="space-y-3">
+          <div className="space-y-2 sm:space-y-3">
             {question.options.map((option) => {
               const isSelected = selectedAnswer === option.letter;
               const isCorrect = option.letter === question.correctAnswer;
@@ -75,7 +82,7 @@ export const QuizCard = ({ question, selectedAnswer, onSelectAnswer, showResult,
                   onClick={() => !showResult && onSelectAnswer(option.letter)}
                   disabled={showResult}
                   className={`
-                    w-full p-4 rounded-lg border-2 text-left transition-all
+                    w-full p-3 sm:p-4 rounded-lg border-2 text-left transition-all
                     ${!showResult && !isSelected ? 'border-border hover:border-primary hover:bg-primary/5' : ''}
                     ${!showResult && isSelected ? 'border-primary bg-primary/10' : ''}
                     ${showCorrect ? 'border-success bg-success/10' : ''}
@@ -83,20 +90,20 @@ export const QuizCard = ({ question, selectedAnswer, onSelectAnswer, showResult,
                     ${showResult ? 'cursor-default' : 'cursor-pointer'}
                   `}
                 >
-                  <div className="flex items-start gap-3">
+                  <div className="flex items-start gap-2 sm:gap-3">
                     <span className={`
-                      font-bold text-lg min-w-[2rem]
+                      font-bold text-base sm:text-lg min-w-[1.5rem] sm:min-w-[2rem]
                       ${showCorrect ? 'text-success' : ''}
                       ${showWrong ? 'text-destructive' : ''}
                       ${!showResult && isSelected ? 'text-primary' : ''}
                     `}>
                       {option.letter}.
                     </span>
-                    <span className="flex-1 text-base">
+                    <span className="flex-1 text-sm sm:text-base break-words">
                       {questionType === 'math' ? <MathText text={option.text} /> : option.text}
                     </span>
-                    {showCorrect && <CheckCircle2 className="w-5 h-5 text-success flex-shrink-0" />}
-                    {showWrong && <XCircle className="w-5 h-5 text-destructive flex-shrink-0" />}
+                    {showCorrect && <CheckCircle2 className="w-4 h-4 sm:w-5 sm:h-5 text-success flex-shrink-0" />}
+                    {showWrong && <XCircle className="w-4 h-4 sm:w-5 sm:h-5 text-destructive flex-shrink-0" />}
                   </div>
                 </button>
               );
@@ -104,11 +111,69 @@ export const QuizCard = ({ question, selectedAnswer, onSelectAnswer, showResult,
           </div>
 
           {showResult && (
-            <div className="mt-6 p-4 bg-muted rounded-lg">
-              <p className="text-sm font-semibold mb-2 text-foreground">Explanation:</p>
-              <p className="text-sm text-muted-foreground leading-relaxed">
-                {questionType === 'math' ? <MathText text={question.explanation} /> : question.explanation}
-              </p>
+            <div className="mt-4 sm:mt-6 space-y-3">
+              {/* Main Explanation */}
+              <div className="p-3 sm:p-4 bg-muted rounded-lg">
+                <p className="text-xs sm:text-sm font-semibold mb-1 sm:mb-2 text-foreground">Explanation:</p>
+                <p className="text-xs sm:text-sm text-muted-foreground leading-relaxed break-words">
+                  {questionType === 'math' ? <MathText text={question.explanation} /> : question.explanation}
+                </p>
+              </div>
+
+              {/* Key Concept Section */}
+              {keyConcept && (
+                <div className="space-y-2">
+                  <Button
+                    variant="outline"
+                    size="sm"
+                    onClick={() => setShowKeyConcept(!showKeyConcept)}
+                    className="w-full justify-start gap-2 text-xs sm:text-sm"
+                  >
+                    <Lightbulb className="w-4 h-4 text-amber-500" />
+                    {showKeyConcept ? 'Hide' : 'Show'} SAT Key Concept
+                  </Button>
+
+                  {showKeyConcept && (
+                    <div className="p-3 sm:p-4 bg-gradient-to-r from-amber-50 to-yellow-50 dark:from-amber-950/30 dark:to-yellow-950/30 border border-amber-200 dark:border-amber-800 rounded-lg space-y-3">
+                      {/* Key Insight */}
+                      <div>
+                        <div className="flex items-center gap-2 mb-1">
+                          <Lightbulb className="w-3 h-3 sm:w-4 sm:h-4 text-amber-600" />
+                          <span className="text-xs sm:text-sm font-semibold text-amber-800 dark:text-amber-300">Key Insight</span>
+                        </div>
+                        <p className="text-xs sm:text-sm text-amber-900 dark:text-amber-100 leading-relaxed">
+                          {keyConcept.keyInsight}
+                        </p>
+                      </div>
+
+                      {/* SAT Tip */}
+                      <div>
+                        <div className="flex items-center gap-2 mb-1">
+                          <span className="text-xs sm:text-sm font-semibold text-primary">💡 SAT Tip</span>
+                        </div>
+                        <p className="text-xs sm:text-sm text-muted-foreground leading-relaxed">
+                          {keyConcept.satTip}
+                        </p>
+                      </div>
+
+                      {/* Common Mistakes */}
+                      {keyConcept.commonMistakes.length > 0 && (
+                        <div>
+                          <div className="flex items-center gap-2 mb-1">
+                            <AlertTriangle className="w-3 h-3 sm:w-4 sm:h-4 text-orange-500" />
+                            <span className="text-xs sm:text-sm font-semibold text-orange-700 dark:text-orange-400">Watch Out For</span>
+                          </div>
+                          <ul className="text-xs sm:text-sm text-muted-foreground space-y-1 list-disc list-inside">
+                            {keyConcept.commonMistakes.map((mistake, i) => (
+                              <li key={i}>{mistake}</li>
+                            ))}
+                          </ul>
+                        </div>
+                      )}
+                    </div>
+                  )}
+                </div>
+              )}
             </div>
           )}
         </div>
