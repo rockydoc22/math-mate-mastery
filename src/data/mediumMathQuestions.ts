@@ -861,15 +861,15 @@ export const mediumMathQuestions: Question[] = [
   },
   {
     id: "med_math_054",
-    question: "A cylinder has radius 3 and height 8. What is its volume? (Use π ≈ 3.14)",
+    question: "A cylinder has radius 3 and height 8. What is its volume?",
     options: [
       { letter: "A", text: "72π" },
       { letter: "B", text: "48π" },
       { letter: "C", text: "24π" },
-      { letter: "D", text: "226.08" }
+      { letter: "D", text: "96π" }
     ],
-    correctAnswer: "D",
-    explanation: "V = πr²h = 3.14 × 9 × 8 = 226.08",
+    correctAnswer: "A",
+    explanation: "V = πr²h = π × 3² × 8 = π × 9 × 8 = 72π",
     difficulty: "Medium",
     domain: "Geometry",
     skill: "Volume",

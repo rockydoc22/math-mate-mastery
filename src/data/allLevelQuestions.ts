@@ -1257,22 +1257,26 @@ const generateLevel10Questions = (): VisualQuestion[] => {
     });
   }
   
-  // Conic sections
+  // Conic sections - Use exact radical forms for SAT standard
   for (let i = 1; i <= 25; i++) {
     const a = Math.floor(Math.random() * 5) + 2;
     const b = Math.floor(Math.random() * 4) + 1;
-    const c = Math.round(Math.sqrt(a * a - b * b) * 100) / 100;
+    const cSquared = a * a - b * b;
+    // Check if c² is a perfect square
+    const cExact = Math.sqrt(cSquared);
+    const isPerfectSquare = Number.isInteger(cExact);
+    const cDisplay = isPerfectSquare ? String(cExact) : `√${cSquared}`;
     questions.push({
       id: `l10-conic-${i}`,
       question: `For ellipse x²/${a * a} + y²/${b * b} = 1, what is the distance from center to focus?`,
       options: [
-        { letter: "A", text: String(c) },
+        { letter: "A", text: cDisplay },
         { letter: "B", text: String(a) },
         { letter: "C", text: String(b) },
         { letter: "D", text: String(a + b) }
       ],
       correctAnswer: "A",
-      explanation: `c = √(a² - b²) = √(${a * a} - ${b * b}) = √${a * a - b * b} ≈ ${c}`,
+      explanation: `c = √(a² - b²) = √(${a * a} - ${b * b}) = ${cDisplay}`,
       difficulty: "Hard",
       domain: "Geometry",
       skill: "Conic Sections",
