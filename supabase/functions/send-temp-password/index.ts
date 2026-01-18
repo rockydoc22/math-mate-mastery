@@ -48,6 +48,41 @@ async function sendEmail(to: string, subject: string, html: string) {
 
 interface SendTempPasswordRequest {
   email: string;
+  username?: string; // Optional username for additional verification
+}
+
+const RATE_LIMIT_MAX = 2; // Stricter limit for password changes - max 2 per hour
+const RATE_LIMIT_WINDOW_MS = 60 * 60 * 1000; // 1 hour
+
+async function checkRateLimit(supabase: any, email: string, endpoint: string): Promise<boolean> {
+  const windowStart = new Date(Date.now() - RATE_LIMIT_WINDOW_MS).toISOString();
+  
+  const { count, error } = await supabase
+    .from("email_rate_limits")
+    .select("*", { count: "exact", head: true })
+    .eq("email", email.toLowerCase())
+    .eq("endpoint", endpoint)
+    .gte("created_at", windowStart);
+  
+  if (error) {
+    console.error("Error checking rate limit:", error);
+    return false; // Allow on error to not block legitimate requests
+  }
+  
+  return (count || 0) < RATE_LIMIT_MAX;
+}
+
+async function recordRequest(supabase: any, email: string, endpoint: string): Promise<void> {
+  const { error } = await supabase
+    .from("email_rate_limits")
+    .insert({
+      email: email.toLowerCase(),
+      endpoint: endpoint,
+    });
+  
+  if (error) {
+    console.error("Error recording rate limit:", error);
+  }
 }
 
 const handler = async (req: Request): Promise<Response> => {
@@ -56,7 +91,7 @@ const handler = async (req: Request): Promise<Response> => {
   }
 
   try {
-    const { email }: SendTempPasswordRequest = await req.json();
+    const { email, username }: SendTempPasswordRequest = await req.json();
     
     if (!email) {
       return new Response(
@@ -69,6 +104,16 @@ const handler = async (req: Request): Promise<Response> => {
     const supabaseUrl = Deno.env.get("SUPABASE_URL")!;
     const supabaseServiceKey = Deno.env.get("SUPABASE_SERVICE_ROLE_KEY")!;
     const supabase = createClient(supabaseUrl, supabaseServiceKey);
+
+    // Check rate limit - stricter for this sensitive endpoint
+    const allowed = await checkRateLimit(supabase, email, "send-temp-password");
+    if (!allowed) {
+      console.log("Rate limit exceeded for:", email);
+      return new Response(
+        JSON.stringify({ error: "Too many password reset attempts. Please try again later." }),
+        { status: 429, headers: { "Content-Type": "application/json", ...corsHeaders } }
+      );
+    }
 
     // Find the user by email
     const { data: userData, error: userError } = await supabase.auth.admin.listUsers();
@@ -83,11 +128,34 @@ const handler = async (req: Request): Promise<Response> => {
     if (!user) {
       // Don't reveal if user exists - return success anyway
       console.log("User not found, but returning success to prevent enumeration");
+      // Still record the request to prevent brute force
+      await recordRequest(supabase, email, "send-temp-password");
       return new Response(
         JSON.stringify({ success: true }),
         { status: 200, headers: { "Content-Type": "application/json", ...corsHeaders } }
       );
     }
+
+    // If username is provided, verify it matches for additional security
+    if (username) {
+      const { data: profileData } = await supabase
+        .from("profiles")
+        .select("username")
+        .eq("id", user.id)
+        .single();
+      
+      if (profileData?.username?.toLowerCase() !== username.toLowerCase()) {
+        console.log("Username mismatch, but returning success to prevent enumeration");
+        await recordRequest(supabase, email, "send-temp-password");
+        return new Response(
+          JSON.stringify({ success: true }),
+          { status: 200, headers: { "Content-Type": "application/json", ...corsHeaders } }
+        );
+      }
+    }
+
+    // Record this request before making the password change
+    await recordRequest(supabase, email, "send-temp-password");
 
     // Generate temporary password
     const tempPassword = generateTempPassword();
@@ -120,7 +188,7 @@ const handler = async (req: Request): Promise<Response> => {
           <p style="color: #666; text-align: center; font-size: 14px;">
             <strong>Important:</strong> After signing in, go to Settings to change your password.
           </p>
-          <p style="color: #999; text-align: center; font-size: 12px;">If you didn't request this, your password has been changed. Please contact support.</p>
+          <p style="color: #999; text-align: center; font-size: 12px;">If you didn't request this, your password has been changed. Please contact support immediately.</p>
         </div>
       `
     );
@@ -134,7 +202,7 @@ const handler = async (req: Request): Promise<Response> => {
   } catch (error: any) {
     console.error("Error in send-temp-password:", error);
     return new Response(
-      JSON.stringify({ error: error.message }),
+      JSON.stringify({ error: "An error occurred" }),
       { status: 500, headers: { "Content-Type": "application/json", ...corsHeaders } }
     );
   }

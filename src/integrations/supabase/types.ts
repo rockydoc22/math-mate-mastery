@@ -234,6 +234,27 @@ export type Database = {
         }
         Relationships: []
       }
+      email_rate_limits: {
+        Row: {
+          created_at: string
+          email: string
+          endpoint: string
+          id: string
+        }
+        Insert: {
+          created_at?: string
+          email: string
+          endpoint: string
+          id?: string
+        }
+        Update: {
+          created_at?: string
+          email?: string
+          endpoint?: string
+          id?: string
+        }
+        Relationships: []
+      }
       fighter_avatars: {
         Row: {
           aura_color: string | null
@@ -875,6 +896,36 @@ export type Database = {
           quiz_count: number | null
           total_score: number | null
           username: string | null
+        }
+        Relationships: []
+      }
+      profiles_public: {
+        Row: {
+          avatar_emoji: string | null
+          avatar_url: string | null
+          created_at: string | null
+          id: string | null
+          theme_color: string | null
+          updated_at: string | null
+          username: string | null
+        }
+        Insert: {
+          avatar_emoji?: string | null
+          avatar_url?: string | null
+          created_at?: string | null
+          id?: string | null
+          theme_color?: string | null
+          updated_at?: string | null
+          username?: string | null
+        }
+        Update: {
+          avatar_emoji?: string | null
+          avatar_url?: string | null
+          created_at?: string | null
+          id?: string | null
+          theme_color?: string | null
+          updated_at?: string | null
+          username?: string | null
         }
         Relationships: []
       }
