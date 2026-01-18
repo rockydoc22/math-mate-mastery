@@ -176,10 +176,6 @@ const Home = () => {
             <span className="text-4xl font-bold text-primary-foreground font-mono">40²</span>
           </div>
           
-          {/* Tagline */}
-          <h1 className="text-xl font-bold text-foreground mb-3">
-            Be one of the <InlineMath math="40^2 \times \left(\pi + \sum_{k=1}^{\infty} \frac{1}{k^2} - e\right)" /> who crush the SAT
-          </h1>
           
           {/* Fight Club - Centered */}
           <Link to="/battle" className="mb-3">
@@ -402,6 +398,11 @@ const Home = () => {
             </div>
           </Card>
         )}
+
+        {/* Tagline */}
+        <h2 className="text-lg font-bold text-foreground text-center mb-4">
+          Be one of the <InlineMath math="40^2 \times \left(\pi + \sum_{k=1}^{\infty} \frac{1}{k^2} - e\right)" /> who crush the SAT
+        </h2>
 
         {/* Quick Start - Primary CTA */}
         <Card className="p-5 mb-4 border-2 border-border">
