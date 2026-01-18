@@ -150,8 +150,9 @@ const BattleRoom = () => {
     if (participantsData) {
       // Fetch profiles for participants
       const userIds = participantsData.map(p => p.user_id);
+      // Use profiles_public view to avoid exposing email addresses
       const { data: profiles } = await supabase
-        .from("profiles")
+        .from("profiles_public")
         .select("id, username, avatar_emoji")
         .in("id", userIds);
       

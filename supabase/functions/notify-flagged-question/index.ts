@@ -22,7 +22,7 @@ const handler = async (req: Request): Promise<Response> => {
   }
 
   try {
-    // Authenticate the user
+    // Authenticate the user using their token
     const authHeader = req.headers.get("Authorization");
     if (!authHeader?.startsWith("Bearer ")) {
       return new Response(
@@ -31,14 +31,15 @@ const handler = async (req: Request): Promise<Response> => {
       );
     }
 
-    const supabase = createClient(
+    // Create user client for authentication verification
+    const userClient = createClient(
       Deno.env.get("SUPABASE_URL") ?? "",
       Deno.env.get("SUPABASE_ANON_KEY") ?? "",
       { global: { headers: { Authorization: authHeader } } }
     );
 
     const token = authHeader.replace("Bearer ", "");
-    const { data: claimsData, error: claimsError } = await supabase.auth.getClaims(token);
+    const { data: claimsData, error: claimsError } = await userClient.auth.getClaims(token);
     if (claimsError || !claimsData?.claims) {
       return new Response(
         JSON.stringify({ error: "Unauthorized" }),
@@ -57,8 +58,14 @@ const handler = async (req: Request): Promise<Response> => {
       );
     }
 
-    // Look up admin emails from the database
-    const { data: adminRoles, error: rolesError } = await supabase
+    // Use service role client for admin lookups (bypasses RLS)
+    const serviceClient = createClient(
+      Deno.env.get("SUPABASE_URL") ?? "",
+      Deno.env.get("SUPABASE_SERVICE_ROLE_KEY") ?? ""
+    );
+
+    // Look up admin roles using service role
+    const { data: adminRoles, error: rolesError } = await serviceClient
       .from("user_roles")
       .select("user_id")
       .eq("role", "admin");
@@ -79,9 +86,9 @@ const handler = async (req: Request): Promise<Response> => {
       );
     }
 
-    // Get admin emails from profiles table
+    // Get admin emails from profiles table using service role
     const adminUserIds = adminRoles.map((r) => r.user_id);
-    const { data: adminProfiles, error: profilesError } = await supabase
+    const { data: adminProfiles, error: profilesError } = await serviceClient
       .from("profiles")
       .select("email")
       .in("id", adminUserIds);

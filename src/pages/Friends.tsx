@@ -40,7 +40,8 @@ const Friends = () => {
       .select("*")
       .or(`requester_id.eq.${user.id},addressee_id.eq.${user.id}`);
 
-    const { data: profiles } = await supabase.from("profiles").select("*");
+    // Use profiles_public view to avoid exposing email addresses
+    const { data: profiles } = await supabase.from("profiles_public").select("id, username, avatar_emoji");
     const profileMap = new Map(profiles?.map((p) => [p.id, p]) || []);
 
     const accepted: Friendship[] = [];
@@ -69,9 +70,10 @@ const Friends = () => {
   const searchUsers = async () => {
     if (!searchQuery.trim() || !user) return;
 
+    // Use profiles_public view to avoid exposing email addresses
     const { data } = await supabase
-      .from("profiles")
-      .select("*")
+      .from("profiles_public")
+      .select("id, username, avatar_emoji")
       .ilike("username", `%${searchQuery}%`)
       .neq("id", user.id)
       .limit(10);

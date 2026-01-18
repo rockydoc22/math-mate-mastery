@@ -11,6 +11,40 @@ interface MagicLinkRequest {
   redirectTo?: string;
 }
 
+const RATE_LIMIT_MAX = 3; // Max requests per hour
+const RATE_LIMIT_WINDOW_MS = 60 * 60 * 1000; // 1 hour
+
+async function checkRateLimit(supabase: any, email: string, endpoint: string): Promise<boolean> {
+  const windowStart = new Date(Date.now() - RATE_LIMIT_WINDOW_MS).toISOString();
+  
+  const { count, error } = await supabase
+    .from("email_rate_limits")
+    .select("*", { count: "exact", head: true })
+    .eq("email", email.toLowerCase())
+    .eq("endpoint", endpoint)
+    .gte("created_at", windowStart);
+  
+  if (error) {
+    console.error("Error checking rate limit:", error);
+    return false; // Allow on error to not block legitimate requests
+  }
+  
+  return (count || 0) < RATE_LIMIT_MAX;
+}
+
+async function recordRequest(supabase: any, email: string, endpoint: string): Promise<void> {
+  const { error } = await supabase
+    .from("email_rate_limits")
+    .insert({
+      email: email.toLowerCase(),
+      endpoint: endpoint,
+    });
+  
+  if (error) {
+    console.error("Error recording rate limit:", error);
+  }
+}
+
 const handler = async (req: Request): Promise<Response> => {
   if (req.method === "OPTIONS") {
     return new Response(null, { headers: corsHeaders });
@@ -30,6 +64,19 @@ const handler = async (req: Request): Promise<Response> => {
     const supabaseUrl = Deno.env.get("SUPABASE_URL")!;
     const supabaseServiceKey = Deno.env.get("SUPABASE_SERVICE_ROLE_KEY")!;
     const supabase = createClient(supabaseUrl, supabaseServiceKey);
+
+    // Check rate limit
+    const allowed = await checkRateLimit(supabase, email, "send-magic-link");
+    if (!allowed) {
+      console.log("Rate limit exceeded for:", email);
+      return new Response(
+        JSON.stringify({ error: "Too many requests. Please try again later." }),
+        { status: 429, headers: { "Content-Type": "application/json", ...corsHeaders } }
+      );
+    }
+
+    // Record this request
+    await recordRequest(supabase, email, "send-magic-link");
 
     // Generate magic link using Supabase Auth
     const { data, error } = await supabase.auth.admin.generateLink({
@@ -58,7 +105,7 @@ const handler = async (req: Request): Promise<Response> => {
   } catch (error: any) {
     console.error("Error in send-magic-link:", error);
     return new Response(
-      JSON.stringify({ error: error.message }),
+      JSON.stringify({ error: "An error occurred" }),
       { status: 500, headers: { "Content-Type": "application/json", ...corsHeaders } }
     );
   }

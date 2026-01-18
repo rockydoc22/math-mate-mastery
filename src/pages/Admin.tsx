@@ -92,8 +92,9 @@ const Admin = () => {
   const fetchUserStats = async () => {
     try {
       // Get all profiles
+      // Use profiles_public view to avoid exposing email addresses
       const { data: profiles, error: profilesError } = await supabase
-        .from('profiles')
+        .from('profiles_public')
         .select('id, username, avatar_emoji, created_at')
         .order('created_at', { ascending: false });
 
