@@ -12,11 +12,11 @@ interface LevelCount {
 export const QuestionDistribution = () => {
   const mathDistribution = useMemo(() => {
     const counts: Record<number, number> = {};
-    for (let i = 1; i <= 13; i++) counts[i] = 0;
+    for (let i = 1; i <= 10; i++) counts[i] = 0;
     
     questions.forEach(q => {
-      const level = q.difficultyRating || 5;
-      if (level >= 1 && level <= 13) {
+      const level = Math.min(q.difficultyRating || 5, 10);
+      if (level >= 1 && level <= 10) {
         counts[level]++;
       }
     });
@@ -29,11 +29,11 @@ export const QuestionDistribution = () => {
 
   const englishDistribution = useMemo(() => {
     const counts: Record<number, number> = {};
-    for (let i = 1; i <= 13; i++) counts[i] = 0;
+    for (let i = 1; i <= 10; i++) counts[i] = 0;
     
     englishQuestions.forEach(q => {
-      const level = q.difficultyRating || 5;
-      if (level >= 1 && level <= 13) {
+      const level = Math.min(q.difficultyRating || 5, 10);
+      if (level >= 1 && level <= 10) {
         counts[level]++;
       }
     });
@@ -53,18 +53,14 @@ export const QuestionDistribution = () => {
     if (level <= 3) return "Easy";
     if (level <= 6) return "Medium";
     if (level <= 8) return "Hard";
-    if (level <= 10) return "Very Hard";
-    if (level === 11) return "Titan";
-    if (level === 12) return "Savant";
-    return "Insane";
+    return "Very Hard";
   };
 
   const getLevelColor = (level: number) => {
     if (level <= 3) return "bg-green-500";
     if (level <= 6) return "bg-yellow-500";
     if (level <= 8) return "bg-orange-500";
-    if (level <= 10) return "bg-red-500";
-    return "bg-purple-500";
+    return "bg-red-500";
   };
 
   const renderDistribution = (data: LevelCount[], max: number, subject: string) => (
