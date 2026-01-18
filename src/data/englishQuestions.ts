@@ -62,4 +62,23 @@ const baseEnglishQuestions: EnglishQuestion[] = (englishQuestionsRaw as RawEngli
 });
 
 // Combine all English questions
-export const englishQuestions: EnglishQuestion[] = [...baseEnglishQuestions, ...uploadedEnglishQuestions, ...hardEnglishQuestions, ...satEnglishQuestions, ...additionalEnglishQuestions, ...extraEnglishQuestions, ...expertEnglishQuestions, ...mediumEnglishQuestions, ...hardEnglishQuestions2, ...satEnglishPart1Questions, ...satEnglishPart2Questions];
+const allEnglishQuestions: EnglishQuestion[] = [...baseEnglishQuestions, ...uploadedEnglishQuestions, ...hardEnglishQuestions, ...satEnglishQuestions, ...additionalEnglishQuestions, ...extraEnglishQuestions, ...expertEnglishQuestions, ...mediumEnglishQuestions, ...hardEnglishQuestions2, ...satEnglishPart1Questions, ...satEnglishPart2Questions];
+
+// Remove duplicate questions (keeps first occurrence of each)
+const seenEnglishQuestions = new Map<string, boolean>();
+export const englishQuestions: EnglishQuestion[] = allEnglishQuestions.filter(q => {
+  // Normalize question text for comparison
+  const normalizedText = q.question.toLowerCase().replace(/\s+/g, ' ').trim().slice(0, 100);
+  if (seenEnglishQuestions.has(normalizedText)) {
+    return false;
+  }
+  seenEnglishQuestions.set(normalizedText, true);
+  return true;
+});
+
+// Export counts for reporting
+export const englishQuestionStats = {
+  totalBeforeFilters: allEnglishQuestions.length,
+  removedAsDuplicates: allEnglishQuestions.length - englishQuestions.length,
+  finalCount: englishQuestions.length
+};
