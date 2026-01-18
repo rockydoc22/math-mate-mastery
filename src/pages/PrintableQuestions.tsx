@@ -1,12 +1,19 @@
-import { useState } from "react";
+import { useState, useMemo } from "react";
 import { questions, questionStats } from "@/data/questions";
 import { englishQuestions, englishQuestionStats } from "@/data/englishQuestions";
+import { levelCounts } from "@/data/allLevelQuestions";
+import { fillerQuestionStats } from "@/data/levelFillerQuestions";
 import { Button } from "@/components/ui/button";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
-import { Printer, Download, ArrowLeft } from "lucide-react";
+import { Printer, Download, ArrowLeft, AlertTriangle } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 
 type SubjectFilter = "all" | "math" | "english";
+
+interface StructuralIssue {
+  id: string;
+  issues: string[];
+}
 
 const PrintableQuestions = () => {
   const navigate = useNavigate();
@@ -24,6 +31,47 @@ const PrintableQuestions = () => {
     if (subject === "english") return q.subject === "English";
     return true;
   });
+
+  // Detect structural issues
+  const structuralIssues = useMemo<StructuralIssue[]>(() => {
+    const issues: StructuralIssue[] = [];
+    
+    allQuestions.forEach(q => {
+      const questionIssues: string[] = [];
+      
+      // Check for missing/incomplete options
+      if (!q.options || q.options.length === 0) {
+        questionIssues.push("Missing answer choices");
+      } else if (q.options.length < 4) {
+        questionIssues.push(`Only ${q.options.length} answer choices (expected 4)`);
+      } else if (q.options.some(o => !o.text || o.text.trim() === "")) {
+        questionIssues.push("Empty answer choice(s)");
+      }
+      
+      // Check for missing correct answer
+      if (!q.correctAnswer || q.correctAnswer.trim() === "") {
+        questionIssues.push("No correct answer marked");
+      } else if (q.options && !q.options.some(o => o.letter === q.correctAnswer)) {
+        questionIssues.push(`Correct answer "${q.correctAnswer}" not found in options`);
+      }
+      
+      // Check for missing explanation
+      if (!q.explanation || q.explanation.trim() === "") {
+        questionIssues.push("Missing explanation");
+      }
+      
+      // Check for empty question text
+      if (!q.question || q.question.trim() === "") {
+        questionIssues.push("Empty question text");
+      }
+      
+      if (questionIssues.length > 0) {
+        issues.push({ id: q.id, issues: questionIssues });
+      }
+    });
+    
+    return issues;
+  }, [allQuestions]);
 
   const handlePrint = () => {
     window.print();
@@ -46,8 +94,29 @@ const PrintableQuestions = () => {
     content += `  • Original pool: ${englishQuestionStats.totalBeforeFilters}\n`;
     content += `  • Removed (duplicates): ${englishQuestionStats.removedAsDuplicates}\n`;
     content += `  • Final clean count: ${englishQuestionStats.finalCount}\n\n`;
+    
+    content += `Level Questions (allLevelQuestions.ts):\n`;
+    content += `  • Raw generated: ${levelCounts.rawTotal}\n`;
+    content += `  • Duplicates removed internally: ${levelCounts.duplicatesRemoved}\n`;
+    content += `  • After internal dedup: ${levelCounts.total}\n\n`;
+    
+    content += `Filler Questions (levelFillerQuestions.ts):\n`;
+    content += `  • Raw generated: ${fillerQuestionStats.rawTotal}\n`;
+    content += `  • Duplicates removed internally: ${fillerQuestionStats.duplicatesRemoved}\n`;
+    content += `  • After internal dedup: ${fillerQuestionStats.afterDedup}\n\n`;
+    
     content += `TOTAL CLEAN QUESTIONS: ${questionStats.finalCount + englishQuestionStats.finalCount}\n`;
     content += `${"=".repeat(80)}\n\n`;
+    
+    // Report structural issues
+    if (structuralIssues.length > 0) {
+      content += `STRUCTURAL ISSUES (${structuralIssues.length} questions with problems)\n`;
+      content += `${"-".repeat(40)}\n`;
+      structuralIssues.forEach(issue => {
+        content += `  • ${issue.id}: ${issue.issues.join(", ")}\n`;
+      });
+      content += `\n${"=".repeat(80)}\n\n`;
+    }
     
     content += `QUESTIONS (${filteredQuestions.length} shown based on filter)\n`;
     content += `${"=".repeat(80)}\n\n`;
@@ -128,6 +197,12 @@ const PrintableQuestions = () => {
           <p className="text-muted-foreground">
             {filteredQuestions.length} questions • Generated {new Date().toLocaleDateString()}
           </p>
+          {structuralIssues.length > 0 && (
+            <div className="mt-2 inline-flex items-center gap-2 text-amber-600 bg-amber-50 px-3 py-1 rounded-full text-sm print:hidden">
+              <AlertTriangle className="h-4 w-4" />
+              {structuralIssues.length} questions have structural issues
+            </div>
+          )}
         </div>
 
         <div className="space-y-6 print:space-y-4">

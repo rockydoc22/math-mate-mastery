@@ -1502,8 +1502,21 @@ export const level8FillerQuestions = generateLevel8Questions();
 // Import level 9 questions
 import { allLevel9Questions } from './level9Questions';
 
-// Combined export
-export const allFillerQuestions: VisualQuestion[] = [
+// Helper to deduplicate questions within the file
+const deduplicateFillerQuestions = (questions: VisualQuestion[]): VisualQuestion[] => {
+  const seen = new Map<string, boolean>();
+  return questions.filter(q => {
+    const normalized = q.question.toLowerCase().replace(/\s+/g, ' ').trim();
+    if (seen.has(normalized)) {
+      return false;
+    }
+    seen.set(normalized, true);
+    return true;
+  });
+};
+
+// Combined export with deduplication
+const rawFillerQuestions: VisualQuestion[] = [
   ...level4FillerQuestions,
   ...level5FillerQuestions,
   ...level6FillerQuestions,
@@ -1514,3 +1527,12 @@ export const allFillerQuestions: VisualQuestion[] = [
     difficultyRating: 9
   })) as VisualQuestion[]
 ];
+
+export const allFillerQuestions: VisualQuestion[] = deduplicateFillerQuestions(rawFillerQuestions);
+
+// Export stats
+export const fillerQuestionStats = {
+  rawTotal: rawFillerQuestions.length,
+  afterDedup: allFillerQuestions.length,
+  duplicatesRemoved: rawFillerQuestions.length - allFillerQuestions.length
+};
