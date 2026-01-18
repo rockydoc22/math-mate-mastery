@@ -344,7 +344,7 @@ const ElitePractice = () => {
               </span>
               {currentQuestion.difficultyRating && (
                 <span className={`text-xs px-2 py-1 rounded-full font-bold ${getDifficultyColor(currentQuestion.difficultyRating)}`}>
-                  {currentQuestion.difficultyRating}/13
+                  {Math.min(currentQuestion.difficultyRating, 10)}/10
                 </span>
               )}
             </div>

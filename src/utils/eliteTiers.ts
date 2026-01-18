@@ -20,11 +20,11 @@ export const ELITE_TIERS: EliteTier[] = [
     id: '1600_club',
     name: '1600 Club',
     scoreRange: { min: 1500, max: 1600 },
-    difficultyRange: { min: 12, max: 13 },
+    difficultyRange: { min: 9, max: 10 },
     pacingThresholdMs: 45000, // 45 seconds
     pacingDangerMs: 60000, // 60 seconds
     features: [
-      'ONLY difficulty 12-13 questions',
+      'ONLY difficulty 9-10 questions',
       '45-second pacing alerts',
       '"What are you solving for?" prompts',
       'Deep Review: explain all wrong answers',
@@ -38,11 +38,11 @@ export const ELITE_TIERS: EliteTier[] = [
     id: 'elite_1500',
     name: 'Elite 1500',
     scoreRange: { min: 1400, max: 1500 },
-    difficultyRange: { min: 10, max: 12 },
+    difficultyRange: { min: 8, max: 10 },
     pacingThresholdMs: 55000, // 55 seconds
     pacingDangerMs: 75000, // 75 seconds
     features: [
-      'Difficulty 10-12 questions',
+      'Difficulty 8-10 questions',
       '55-second pacing alerts',
       'Focus on interpretation errors',
       'Deep Review mode',
@@ -56,11 +56,11 @@ export const ELITE_TIERS: EliteTier[] = [
     id: 'breakthrough_1400',
     name: 'Breakthrough 1400',
     scoreRange: { min: 1300, max: 1400 },
-    difficultyRange: { min: 8, max: 11 },
+    difficultyRange: { min: 7, max: 9 },
     pacingThresholdMs: 65000, // 65 seconds
     pacingDangerMs: 90000, // 90 seconds
     features: [
-      'Difficulty 8-11 questions',
+      'Difficulty 7-9 questions',
       '65-second pacing alerts',
       'Core concept reinforcement',
       'Error pattern identification',
