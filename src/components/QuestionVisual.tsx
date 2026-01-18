@@ -123,6 +123,18 @@ export const QuestionVisual = ({ visual }: VisualProps) => {
   }
 
   if (type === "scatterPlot") {
+    // Handle both formats: data as array directly OR data.points as array
+    const scatterData = Array.isArray(data) ? data : (data?.points || []);
+    
+    if (scatterData.length === 0) {
+      return (
+        <div className="my-4 p-4 border border-border rounded-lg bg-muted/50 text-center">
+          {title && <p className="text-sm font-semibold mb-2">{title}</p>}
+          <p className="text-muted-foreground text-sm">Scatter plot data unavailable</p>
+        </div>
+      );
+    }
+    
     return (
       <div className="my-4">
         {title && <p className="text-sm font-semibold mb-2 text-center">{title}</p>}
@@ -149,12 +161,12 @@ export const QuestionVisual = ({ visual }: VisualProps) => {
                 borderRadius: "6px",
               }}
             />
-            <Scatter data={data} fill="hsl(var(--primary))" />
+            <Scatter data={scatterData} fill="hsl(var(--primary))" />
             {/* Line of best fit approximation */}
             <Line
               type="monotone"
               dataKey="y"
-              data={data}
+              data={scatterData}
               stroke="hsl(var(--secondary))"
               strokeWidth={2}
               dot={false}

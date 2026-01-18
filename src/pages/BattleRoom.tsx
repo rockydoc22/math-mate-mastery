@@ -5,7 +5,8 @@ import { Card, CardContent } from "@/components/ui/card";
 import { useAuth } from "@/hooks/useAuth";
 import { supabase } from "@/integrations/supabase/client";
 import { toast } from "sonner";
-import { ArrowLeft, Crown, Copy, Users, Trophy, Loader2, Clock, Skull, ChevronDown, ChevronUp, CheckCircle, XCircle, LogOut, Bot } from "lucide-react";
+import { ArrowLeft, Crown, Copy, Users, Trophy, Loader2, Clock, Skull, ChevronDown, ChevronUp, CheckCircle, XCircle, LogOut, Bot, Flag } from "lucide-react";
+import { FlagQuestionModal } from "@/components/FlagQuestionModal";
 import { BattleResultsFighter } from "@/components/BattleResultsFighter";
 import { questions } from "@/data/questions";
 import { visualMathQuestions, visualEnglishQuestions, moreMathVisualQuestions, moreEnglishVisualQuestions } from "@/data/visualQuestions";
@@ -89,6 +90,7 @@ const BattleRoom = () => {
   const [aiCorrect, setAiCorrect] = useState(0);
   const [aiCurrentQuestion, setAiCurrentQuestion] = useState(0);
   const [aiEliminated, setAiEliminated] = useState(false);
+  const [isFlagModalOpen, setIsFlagModalOpen] = useState(false);
 
   // Timer countdown effect
   useEffect(() => {
@@ -796,6 +798,18 @@ const BattleRoom = () => {
         {currentQuestion && (
           <Card className="mb-6">
             <CardContent className="p-6">
+              <div className="flex justify-between items-start mb-4">
+                <span className="text-xs text-muted-foreground">Q{currentQuestionIndex + 1}</span>
+                <Button
+                  variant="ghost"
+                  size="sm"
+                  onClick={() => setIsFlagModalOpen(true)}
+                  className="text-muted-foreground hover:text-destructive flex-shrink-0 -mt-1 -mr-2"
+                  title="Report an issue with this question"
+                >
+                  <Flag className="w-4 h-4" />
+                </Button>
+              </div>
               {currentQuestion.visual && (
                 <div className="mb-4">
                   <QuestionVisual visual={currentQuestion.visual} />
@@ -844,6 +858,16 @@ const BattleRoom = () => {
             <Loader2 className="w-5 h-5 animate-spin inline mr-2" />
             Loading next question...
           </div>
+        )}
+
+        {/* Flag Question Modal */}
+        {currentQuestion && (
+          <FlagQuestionModal
+            isOpen={isFlagModalOpen}
+            onClose={() => setIsFlagModalOpen(false)}
+            questionId={currentQuestion.id}
+            questionType={room?.subject === "english" ? "english" : "math"}
+          />
         )}
       </div>
     </div>
