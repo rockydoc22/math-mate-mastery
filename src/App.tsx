@@ -30,6 +30,7 @@ import NotFound from "./pages/NotFound";
 import DemoMode from "./pages/DemoMode";
 import Settings from "./pages/Settings";
 import PrintableQuestions from "./pages/PrintableQuestions";
+import DuplicateDetector from "./pages/DuplicateDetector";
 
 const queryClient = new QueryClient();
 
@@ -66,6 +67,7 @@ const App = () => (
             <Route path="/demo" element={<DemoMode />} />
             <Route path="/settings" element={<Settings />} />
             <Route path="/printable-questions" element={<PrintableQuestions />} />
+            <Route path="/duplicate-detector" element={<DuplicateDetector />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
