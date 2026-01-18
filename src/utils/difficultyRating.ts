@@ -1,14 +1,11 @@
 /**
- * Difficulty Rating System (1-13 scale)
+ * Difficulty Rating System (1-10 scale)
  * 
  * Analyzes question characteristics to assign difficulty ratings:
  * - 1-3: Easy (basic formula application, simple arithmetic)
  * - 4-6: Medium (standard SAT difficulty)
  * - 7-8: Hard (multi-step reasoning, word problems)
  * - 9-10: Very Hard (complex multi-concept, advanced reasoning)
- * - 11: Titan (extreme difficulty)
- * - 12: Savant (near impossible)
- * - 13: Insane (ultimate challenge)
  */
 
 interface RatingFactors {
@@ -118,14 +115,14 @@ function calculateRating(factors: RatingFactors): number {
   if (score >= 5.5 && score < 6.5 && hash2 >= 5) score += 0.6;
   if (score >= 7.5 && score < 8.5 && hash2 < 4) score -= 0.6;
   
-  // Get base 1-10 rating
+// Get base 1-10 rating (capped at 10, no more 11-13)
   const baseRating = Math.min(10, Math.max(1, Math.round(score)));
   
-  // Remap levels: 5→7, 6→9, 7→10, 8→11, 9→12, 10→13
+  // Remap levels: 5→7, 6→8, 7→9, 8→10, 9→10, 10→10 (cap at 10)
   return remapDifficulty(baseRating);
 }
 
-// Remap old difficulty levels to new scale
+// Remap old difficulty levels to new scale (capped at 10)
 function remapDifficulty(oldRating: number): number {
   const mapping: Record<number, number> = {
     1: 1,
@@ -133,13 +130,13 @@ function remapDifficulty(oldRating: number): number {
     3: 3,
     4: 4,
     5: 7,
-    6: 9,
-    7: 10,
-    8: 11,
-    9: 12,
-    10: 13
+    6: 8,
+    7: 9,
+    8: 10,
+    9: 10,
+    10: 10
   };
-  return mapping[oldRating] || oldRating;
+  return mapping[oldRating] || Math.min(oldRating, 10);
 }
 
 export function rateDifficulty(
@@ -157,33 +154,24 @@ export function getDifficultyLabel(rating: number): string {
   if (rating <= 3) return 'Easy';
   if (rating <= 6) return 'Medium';
   if (rating <= 8) return 'Hard';
-  if (rating <= 10) return 'Very Hard';
-  if (rating === 11) return 'Titan';
-  if (rating === 12) return 'Savant';
-  return 'Insane';
+  return 'Very Hard';
 }
 
 export function getDifficultyColor(rating: number): string {
   if (rating <= 3) return 'text-green-500';
   if (rating <= 6) return 'text-yellow-500';
   if (rating <= 8) return 'text-orange-500';
-  if (rating <= 10) return 'text-red-500';
-  if (rating === 11) return 'text-purple-500';
-  if (rating === 12) return 'text-pink-500';
-  return 'text-fuchsia-500';
+  return 'text-red-500';
 }
 
 export function getDifficultyBgColor(rating: number): string {
   if (rating <= 3) return 'bg-green-500/10 border-green-500/30';
   if (rating <= 6) return 'bg-yellow-500/10 border-yellow-500/30';
   if (rating <= 8) return 'bg-orange-500/10 border-orange-500/30';
-  if (rating <= 10) return 'bg-red-500/10 border-red-500/30';
-  if (rating === 11) return 'bg-purple-500/10 border-purple-500/30';
-  if (rating === 12) return 'bg-pink-500/10 border-pink-500/30';
-  return 'bg-fuchsia-500/10 border-fuchsia-500/30';
+  return 'bg-red-500/10 border-red-500/30';
 }
 
-export type DifficultyRange = 'all' | 'easy' | 'medium' | 'hard' | 'veryhard' | 'titan' | 'savant' | 'insane' | '1' | '2' | '3' | '4' | '5' | '6' | '7' | '8' | '9' | '10' | '11' | '12' | '13';
+export type DifficultyRange = 'all' | 'easy' | 'medium' | 'hard' | 'veryhard' | '1' | '2' | '3' | '4' | '5' | '6' | '7' | '8' | '9' | '10';
 
 export function filterByDifficulty<T extends { difficultyRating?: number }>(
   questions: T[],
@@ -193,7 +181,7 @@ export function filterByDifficulty<T extends { difficultyRating?: number }>(
   
   // Check if it's a specific number
   const specificLevel = parseInt(range);
-  if (!isNaN(specificLevel) && specificLevel >= 1 && specificLevel <= 13) {
+  if (!isNaN(specificLevel) && specificLevel >= 1 && specificLevel <= 10) {
     return questions.filter(q => (q.difficultyRating || 5) === specificLevel);
   }
   
@@ -205,9 +193,6 @@ export function filterByDifficulty<T extends { difficultyRating?: number }>(
       case 'medium': return rating >= 4 && rating <= 6;
       case 'hard': return rating >= 7 && rating <= 8;
       case 'veryhard': return rating >= 9 && rating <= 10;
-      case 'titan': return rating === 11;
-      case 'savant': return rating === 12;
-      case 'insane': return rating === 13;
       default: return true;
     }
   });
