@@ -3,6 +3,10 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Progress } from "@/components/ui/progress";
 import { questions } from "@/data/questions";
 import { englishQuestions } from "@/data/englishQuestions";
+import { visualQuestionStats } from "@/data/additionalVisualQuestions";
+import { visualMathQuestions, visualEnglishQuestions } from "@/data/visualQuestions";
+import { moreMathVisualQuestions, moreEnglishVisualQuestions } from "@/data/moreVisualQuestions";
+import { grokVisualQuestions } from "@/data/grokVisualQuestions";
 
 interface LevelCount {
   level: number;
@@ -168,6 +172,24 @@ export const QuestionDistribution = () => {
                 : englishTotal > mathTotal 
                   ? `English has ${englishTotal - mathTotal} more questions`
                   : "Perfectly balanced!"}</li>
+            </ul>
+          </div>
+
+          <div className="pt-2 border-t">
+            <h4 className="font-medium mb-2">📊 Visual Questions (Charts/Tables/Graphs):</h4>
+            <ul className="text-sm space-y-1 text-muted-foreground">
+              <li>• Additional Visual Math: <strong>{visualQuestionStats.total}</strong>
+                <span className="text-xs ml-2">(Scatter: {visualQuestionStats.scatterPlot}, Bar: {visualQuestionStats.barChart}, Table: {visualQuestionStats.table}, Line: {visualQuestionStats.lineGraph})</span>
+              </li>
+              <li>• Visual Math (original): <strong>{visualMathQuestions.length}</strong></li>
+              <li>• More Visual Math: <strong>{moreMathVisualQuestions.length}</strong></li>
+              <li>• Grok Visual: <strong>{grokVisualQuestions.length}</strong></li>
+              <li>• Visual English (original): <strong>{visualEnglishQuestions.length}</strong></li>
+              <li>• More Visual English: <strong>{moreEnglishVisualQuestions.length}</strong></li>
+              <li className="pt-1 font-medium text-foreground">
+                • Total Visual Questions: <strong className="text-green-600">{visualQuestionStats.total + visualMathQuestions.length + moreMathVisualQuestions.length + grokVisualQuestions.length + visualEnglishQuestions.length + moreEnglishVisualQuestions.length}</strong>
+                <span className="text-xs ml-2">({Math.round((visualQuestionStats.total + visualMathQuestions.length + moreMathVisualQuestions.length + grokVisualQuestions.length + visualEnglishQuestions.length + moreEnglishVisualQuestions.length) / (mathTotal + englishTotal) * 100)}% of total)</span>
+              </li>
             </ul>
           </div>
         </CardContent>
