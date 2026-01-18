@@ -2,7 +2,58 @@
  * Converts decimal approximations to exact mathematical forms
  * Used to standardize SAT-style questions that should use exact values
  * (radicals, fractions, π expressions) instead of decimal approximations
+ * Also fixes floating-point precision errors
  */
+
+/**
+ * Fixes floating-point precision errors in numbers
+ * e.g., 1.3599999999999999 → 1.36, 7.000000000000001 → 7
+ */
+export const fixFloatingPoint = (text: string): string => {
+  if (!text) return text;
+  
+  // Match numbers with excessive decimal places (more than 4 significant figures after decimal)
+  return text.replace(/(\d+\.\d{2,}?)(\d{10,})/g, (match, prefix) => {
+    const num = parseFloat(match);
+    // Round to 2 decimal places for most cases
+    const rounded = Math.round(num * 100) / 100;
+    // If it's essentially an integer, return integer
+    if (Math.abs(rounded - Math.round(rounded)) < 0.001) {
+      return String(Math.round(rounded));
+    }
+    // Remove trailing zeros after decimal
+    return String(rounded).replace(/\.?0+$/, '');
+  }).replace(/(\d+)\.0{5,}\d{1,3}$/g, '$1') // 7.000000000000001 → 7
+    .replace(/(\d+\.\d{1,2})0{5,}\d{1,3}$/g, '$1'); // 1.360000000000001 → 1.36
+};
+
+/**
+ * Converts repeating decimals to fractions
+ */
+export const fixRepeatingDecimals = (text: string): string => {
+  if (!text) return text;
+  
+  const replacements: Record<string, string> = {
+    '0.3333333333333333': '1/3',
+    '0.6666666666666666': '2/3',
+    '0.6666666666666667': '2/3',
+    '4.666666666666667': '14/3',
+    '6.666666666666667': '20/3',
+    '7.333333333333334': '22/3',
+    '8.666666666666666': '26/3',
+    '8.666666666666668': '26/3',
+    '9.333333333333334': '28/3',
+    '10.666666666666666': '32/3',
+    '11.333333333333334': '34/3',
+    '12.666666666666666': '38/3',
+  };
+  
+  let result = text;
+  for (const [decimal, fraction] of Object.entries(replacements)) {
+    result = result.replace(new RegExp(decimal.replace(/\./g, '\\.'), 'g'), fraction);
+  }
+  return result;
+};
 
 // Common decimal-to-exact mappings
 const DECIMAL_TO_EXACT: Record<string, string> = {
@@ -50,17 +101,13 @@ const DECIMAL_TO_EXACT: Record<string, string> = {
   // Simple fractions
   '0.5000': '1/2',
   '0.500': '1/2',
-  '0.5': '1/2',
   '-0.5000': '-1/2',
   '-0.500': '-1/2',
-  '-0.5': '-1/2',
   '0.2500': '1/4',
-  '0.25': '1/4',
   '0.3333': '1/3',
   '0.333': '1/3',
   '0.6667': '2/3',
   '0.667': '2/3',
-  '0.75': '3/4',
   '0.7500': '3/4',
   '1.0000': '1',
   '-1.0000': '-1',
@@ -118,11 +165,16 @@ export const decimalToExact = (value: string): string => {
 
 /**
  * Converts all decimal approximations in a text string to exact forms
+ * Also fixes floating-point precision errors
  */
 export const convertTextToExact = (text: string): string => {
   if (!text) return text;
   
-  let result = text;
+  // First fix floating-point precision errors
+  let result = fixFloatingPoint(text);
+  
+  // Then fix repeating decimals
+  result = fixRepeatingDecimals(result);
   
   // Sort by length (longest first) to avoid partial matches
   const sortedDecimals = Object.keys(DECIMAL_TO_EXACT).sort((a, b) => b.length - a.length);
