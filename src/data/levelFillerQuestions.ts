@@ -23,7 +23,7 @@ const generateLevel4Questions = (): VisualQuestion[] => {
         { letter: "D", text: String(sum + 1) }
       ],
       correctAnswer: "C",
-      explanation: `${a} + ${b} = ${sum}`,
+      explanation: `Add the two numbers together: ${a} + ${b} = ${sum}. You can verify by breaking it down: ${a} + ${b} = ${sum}.`,
       difficulty: "Easy",
       domain: "Arithmetic",
       skill: "Basic Operations",
@@ -47,7 +47,7 @@ const generateLevel4Questions = (): VisualQuestion[] => {
         { letter: "D", text: String(diff + 2) }
       ],
       correctAnswer: "B",
-      explanation: `${a} - ${b} = ${diff}`,
+      explanation: `Subtract ${b} from ${a}: ${a} - ${b} = ${diff}. This represents taking away ${b} from ${a}.`,
       difficulty: "Easy",
       domain: "Arithmetic",
       skill: "Basic Operations",
@@ -71,7 +71,7 @@ const generateLevel4Questions = (): VisualQuestion[] => {
         { letter: "D", text: String(product + 2) }
       ],
       correctAnswer: "C",
-      explanation: `${a} × ${b} = ${product}`,
+      explanation: `Multiply ${a} by ${b}: ${a} × ${b} = ${product}. This is the same as adding ${a} to itself ${b} times.`,
       difficulty: "Easy",
       domain: "Arithmetic",
       skill: "Basic Operations",
@@ -95,7 +95,7 @@ const generateLevel4Questions = (): VisualQuestion[] => {
         { letter: "D", text: String(quotient + 2) }
       ],
       correctAnswer: "B",
-      explanation: `${a} ÷ ${b} = ${quotient}`,
+      explanation: `Divide ${a} by ${b}: ${a} ÷ ${b} = ${quotient}. This means ${b} goes into ${a} exactly ${quotient} times.`,
       difficulty: "Easy",
       domain: "Arithmetic",
       skill: "Basic Operations",

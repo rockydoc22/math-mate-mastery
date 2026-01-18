@@ -49,7 +49,7 @@ const generateLevel1Questions = (): VisualQuestion[] => {
         { letter: "D", text: String(sum + 2) }
       ],
       correctAnswer: "B",
-      explanation: `${a} + ${b} = ${sum}`,
+      explanation: `To add ${a} + ${b}, combine the two numbers. Starting at ${a}, count up ${b} more: ${a} + ${b} = ${sum}.`,
       difficulty: "Easy",
       domain: "Arithmetic",
       skill: "Addition",
@@ -107,6 +107,12 @@ const generateLevel1Questions = (): VisualQuestion[] => {
     const a = Math.floor(Math.random() * 20) + 1;
     const b = Math.floor(Math.random() * 20) + 1;
     const answer = a > b ? "A" : a < b ? "B" : "C";
+    const symbol = a > b ? '>' : a < b ? '<' : '=';
+    const explanation = a === b 
+      ? `Both numbers are equal: ${a} = ${b}.`
+      : a > b 
+        ? `${a} is greater than ${b}, so we use the ">" symbol: ${a} > ${b}.`
+        : `${a} is less than ${b}, so we use the "<" symbol: ${a} < ${b}.`;
     questions.push({
       id: `l1-compare-${i}`,
       question: `Compare: ${a} __ ${b}. Which symbol goes in the blank?`,
@@ -117,7 +123,7 @@ const generateLevel1Questions = (): VisualQuestion[] => {
         { letter: "D", text: "≠" }
       ],
       correctAnswer: a === b ? "C" : answer,
-      explanation: `${a} ${a > b ? '>' : a < b ? '<' : '='} ${b}`,
+      explanation,
       difficulty: "Easy",
       domain: "Arithmetic",
       skill: "Comparison",
@@ -140,7 +146,7 @@ const generateLevel1Questions = (): VisualQuestion[] => {
         { letter: "D", text: String(diff + 2) }
       ],
       correctAnswer: "B",
-      explanation: `${a} - ${b} = ${diff}`,
+      explanation: `To subtract ${b} from ${a}, start at ${a} and count back ${b}: ${a} - ${b} = ${diff}.`,
       difficulty: "Easy",
       domain: "Arithmetic",
       skill: "Subtraction",
@@ -170,7 +176,7 @@ const generateLevel2Questions = (): VisualQuestion[] => {
         { letter: "D", text: String(sum + 5) }
       ],
       correctAnswer: "B",
-      explanation: `${a} + ${b} = ${sum}`,
+      explanation: `Add the two numbers: ${a} + ${b} = ${sum}. You can add the tens (${Math.floor(a/10)*10} + ${Math.floor(b/10)*10}) and ones (${a%10} + ${b%10}) separately to check.`,
       difficulty: "Easy",
       domain: "Arithmetic",
       skill: "Addition",
@@ -193,7 +199,7 @@ const generateLevel2Questions = (): VisualQuestion[] => {
         { letter: "D", text: String(diff + 2) }
       ],
       correctAnswer: "C",
-      explanation: `${a} - ${b} = ${diff}`,
+      explanation: `Subtract ${b} from ${a}: ${a} - ${b} = ${diff}. You can verify: ${diff} + ${b} = ${a}.`,
       difficulty: "Easy",
       domain: "Arithmetic",
       skill: "Subtraction",
@@ -216,7 +222,7 @@ const generateLevel2Questions = (): VisualQuestion[] => {
         { letter: "D", text: String(prod + 5) }
       ],
       correctAnswer: "B",
-      explanation: `${a} × ${b} = ${prod}`,
+      explanation: `Multiply ${a} by ${b}: ${a} × ${b} = ${prod}. Multiplication is repeated addition: adding ${a} to itself ${b} times gives ${prod}.`,
       difficulty: "Easy",
       domain: "Arithmetic",
       skill: "Multiplication",
@@ -239,7 +245,7 @@ const generateLevel2Questions = (): VisualQuestion[] => {
         { letter: "D", text: String(q + 2) }
       ],
       correctAnswer: "B",
-      explanation: `${a} ÷ ${b} = ${q}`,
+      explanation: `Divide ${a} by ${b}: ${a} ÷ ${b} = ${q}. Division is the inverse of multiplication: ${b} × ${q} = ${a}.`,
       difficulty: "Easy",
       domain: "Arithmetic",
       skill: "Division",
