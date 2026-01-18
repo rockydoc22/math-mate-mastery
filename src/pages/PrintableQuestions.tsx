@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { questions } from "@/data/questions";
-import { englishQuestions } from "@/data/englishQuestions";
+import { questions, questionStats } from "@/data/questions";
+import { englishQuestions, englishQuestionStats } from "@/data/englishQuestions";
 import { Button } from "@/components/ui/button";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Printer, Download, ArrowLeft } from "lucide-react";
@@ -32,7 +32,24 @@ const PrintableQuestions = () => {
   const handleDownloadText = () => {
     let content = `SAT Question Bank Review\n`;
     content += `Generated: ${new Date().toLocaleDateString()}\n`;
-    content += `Total Questions: ${filteredQuestions.length}\n`;
+    content += `${"=".repeat(80)}\n\n`;
+    
+    content += `CLEANUP SUMMARY\n`;
+    content += `${"-".repeat(40)}\n`;
+    content += `Math Questions:\n`;
+    content += `  • Original pool: ${questionStats.totalBeforeFilters + questionStats.removedProblematic}\n`;
+    content += `  • Removed (calculation errors, IDs 1-92): ${questionStats.removedProblematic}\n`;
+    content += `  • Removed (College Board images): ${questionStats.removedForImages}\n`;
+    content += `  • Removed (duplicates): ${questionStats.removedAsDuplicates}\n`;
+    content += `  • Final clean count: ${questionStats.finalCount}\n\n`;
+    content += `English Questions:\n`;
+    content += `  • Original pool: ${englishQuestionStats.totalBeforeFilters}\n`;
+    content += `  • Removed (duplicates): ${englishQuestionStats.removedAsDuplicates}\n`;
+    content += `  • Final clean count: ${englishQuestionStats.finalCount}\n\n`;
+    content += `TOTAL CLEAN QUESTIONS: ${questionStats.finalCount + englishQuestionStats.finalCount}\n`;
+    content += `${"=".repeat(80)}\n\n`;
+    
+    content += `QUESTIONS (${filteredQuestions.length} shown based on filter)\n`;
     content += `${"=".repeat(80)}\n\n`;
 
     filteredQuestions.forEach((q, index) => {

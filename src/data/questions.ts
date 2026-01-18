@@ -103,4 +103,25 @@ const rawQuestions: Question[] = (mathQuestionsRaw as RawMathQuestion[])
 const allMathQuestions: Question[] = [...rawQuestions, ...additionalMathQuestions, ...newMathQuestions, ...uploadedMathQuestions, ...hardMathQuestions, ...importedSATMathQuestions, ...importedSATMathQuestions2, ...importedSATMathQuestions3, ...importedSATMathQuestions4, ...importedSATMathQuestions5, ...importedSATMathQuestions6, ...importedSATMathQuestions7, ...importedSATMathQuestions8, ...importedSATMathQuestions9, ...importedSATMathQuestions10, ...importedSATMathQuestions11, ...importedSATMathQuestions12, ...level8QuestionsExtra, ...pdfSATMathQuestions, ...allFillerQuestions, ...allLevelQuestions, ...balancedMathQuestions, ...mediumMathQuestions, ...mediumMathQuestions2];
 
 // Filter out questions with images to prevent showing original source branding
-export const questions: Question[] = allMathQuestions.filter(q => !q.imageUrl);
+const questionsWithoutImages: Question[] = allMathQuestions.filter(q => !q.imageUrl);
+
+// Remove duplicate questions (keeps first occurrence of each)
+const seenQuestions = new Map<string, boolean>();
+export const questions: Question[] = questionsWithoutImages.filter(q => {
+  // Normalize question text for comparison
+  const normalizedText = q.question.toLowerCase().replace(/\s+/g, ' ').trim().slice(0, 100);
+  if (seenQuestions.has(normalizedText)) {
+    return false;
+  }
+  seenQuestions.set(normalizedText, true);
+  return true;
+});
+
+// Export counts for reporting
+export const questionStats = {
+  totalBeforeFilters: allMathQuestions.length,
+  removedForImages: allMathQuestions.length - questionsWithoutImages.length,
+  removedAsDuplicates: questionsWithoutImages.length - questions.length,
+  removedProblematic: 92, // IDs 1-92
+  finalCount: questions.length
+};
