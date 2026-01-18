@@ -1,4 +1,6 @@
 import { useState, useEffect } from "react";
+import 'katex/dist/katex.min.css';
+import { InlineMath } from 'react-katex';
 // Elite Practice and Rulebook links added to navigation
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
@@ -175,7 +177,9 @@ const Home = () => {
           </div>
           
           {/* Tagline */}
-          <h1 className="text-xl font-bold text-foreground mb-3">Be one of the 40² × (π + Σ<sub>k=1</sub><sup>∞</sup> 1/k² − e) who crush the SAT</h1>
+          <h1 className="text-xl font-bold text-foreground mb-3">
+            Be one of the <InlineMath math="40^2 \times \left(\pi + \sum_{k=1}^{\infty} \frac{1}{k^2} - e\right)" /> who crush the SAT
+          </h1>
           
           {/* Fight Club - Centered */}
           <Link to="/battle" className="mb-3">
