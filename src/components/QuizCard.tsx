@@ -170,6 +170,30 @@ export const QuizCard = ({ question, selectedAnswer, onSelectAnswer, showResult,
                           </ul>
                         </div>
                       )}
+
+                      {/* Advanced Trap - 1600 Level */}
+                      {keyConcept.advancedTrap && (
+                        <div className="pt-2 border-t border-amber-200 dark:border-amber-700">
+                          <div className="flex items-center gap-2 mb-1">
+                            <span className="text-xs sm:text-sm font-semibold text-red-600 dark:text-red-400">⚠️ 1600-Level Trap</span>
+                          </div>
+                          <p className="text-xs sm:text-sm text-red-800 dark:text-red-200 leading-relaxed font-medium">
+                            {keyConcept.advancedTrap}
+                          </p>
+                        </div>
+                      )}
+
+                      {/* 1600 Insight */}
+                      {keyConcept.level1600Insight && (
+                        <div>
+                          <div className="flex items-center gap-2 mb-1">
+                            <span className="text-xs sm:text-sm font-semibold text-purple-600 dark:text-purple-400">🎯 Master This for 800</span>
+                          </div>
+                          <p className="text-xs sm:text-sm text-purple-800 dark:text-purple-200 leading-relaxed">
+                            {keyConcept.level1600Insight}
+                          </p>
+                        </div>
+                      )}
                     </div>
                   )}
                 </div>
