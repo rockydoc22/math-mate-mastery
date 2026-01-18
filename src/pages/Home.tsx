@@ -561,13 +561,23 @@ const Home = () => {
         </p>
 
         {/* Quick Links - Mobile optimized grid */}
-        <div className="grid grid-cols-2 gap-4 mt-auto pb-2 px-4">
+        <div className="grid grid-cols-3 gap-4 mt-auto pb-2 px-4">
           <Link to="/why-it-works" className="flex flex-col items-center">
             <Button variant="ghost" size="sm" className="h-10 w-10 p-0 text-primary">
               <Zap className="w-5 h-5" />
             </Button>
             <span className="text-xs text-primary font-medium text-center leading-tight">Why</span>
           </Link>
+          <a 
+            href="/study-strategy-1600.txt" 
+            download="SAT-1600-Study-Strategy.txt"
+            className="flex flex-col items-center"
+          >
+            <Button variant="ghost" size="sm" className="h-10 w-10 p-0 text-amber-500">
+              <Download className="w-5 h-5" />
+            </Button>
+            <span className="text-xs text-amber-500 font-medium text-center leading-tight">1600 Guide</span>
+          </a>
           <Link to="/demo" className="flex flex-col items-center">
             <Button variant="ghost" size="sm" className="h-10 w-10 p-0 text-green-500">
               <GraduationCap className="w-5 h-5" />
