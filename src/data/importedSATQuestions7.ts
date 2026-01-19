@@ -222,8 +222,7 @@ export const importedSATMathQuestions7: ImageQuestion[] = [
   },
   {
     id: "sat-math-d5c77fd2",
-    question: "A systems analyst determines that the number of complaints about their app can be modeled by f(t) = at² + bt + c. Based on the data, what is the predicted number of complaints for week 4?",
-    imageUrl: "/questions/sat-math-d5c77fd2.jpg",
+    question: "A systems analyst determines that the number of complaints about their app can be modeled by f(t) = at² + bt + c, where t is the week number. The data shows: Week 1: 50 complaints, Week 2: 80 complaints, Week 3: 130 complaints. Based on this quadratic model, what is the predicted number of complaints for week 4?",
     options: [
       { letter: "A", text: "176" },
       { letter: "B", text: "192" },
@@ -231,11 +230,11 @@ export const importedSATMathQuestions7: ImageQuestion[] = [
       { letter: "D", text: "224" }
     ],
     correctAnswer: "C",
-    explanation: "Using the quadratic model with the given data points, we can determine the coefficients and calculate f(4) = 200.",
+    explanation: "Using the three data points: f(1) = a + b + c = 50, f(2) = 4a + 2b + c = 80, f(3) = 9a + 3b + c = 130. Solving this system: subtracting equations gives 3a + b = 30 and 5a + b = 50, so a = 10, b = 0, c = 40. Therefore f(4) = 16(10) + 0 + 40 = 200.",
     difficulty: "Hard",
     domain: "Advanced Math",
     skill: "Nonlinear functions",
-    difficultyRating: 11
+    difficultyRating: 7
   },
   {
     id: "sat-math-62c3e57e",

@@ -439,7 +439,7 @@ export const importedSATMathQuestions4: ImageQuestion[] = [
   },
   {
     id: "sat-math-3f8a701b",
-    question: "See the question image for the complete problem.",
+    question: "The system of equations 9x + 5 = ay and x + b = y has no solution. Which statements must be true?\n\nI. a = 9\nII. b = 5/9\nIII. b ≠ 5/9",
     options: [
       { letter: "A", text: "None" },
       { letter: "B", text: "I only" },
@@ -447,11 +447,10 @@ export const importedSATMathQuestions4: ImageQuestion[] = [
       { letter: "D", text: "I and III only" }
     ],
     correctAnswer: "D",
-    explanation: "For no solutions, x-coefficients must be equal (a = 9) and remaining terms must not be equal (b ≠ 5/9). So I and III must be true.",
+    explanation: "For no solutions, the lines must be parallel (same slope, different y-intercepts). From 9x + 5 = ay → y = (9/a)x + 5/a. From x + b = y → y = x + b. For parallel lines: 9/a = 1, so a = 9. For no solution: 5/a ≠ b, so 5/9 ≠ b. Thus I and III must be true.",
     difficulty: "Hard",
     domain: "Algebra",
-    skill: "Linear equations in one variable",
-    imageUrl: "/questions/sat-math-3f8a701b.jpg"
+    skill: "Linear equations in one variable"
   },
   {
     id: "sat-math-3a84f885",
