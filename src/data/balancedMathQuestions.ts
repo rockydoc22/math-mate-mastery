@@ -904,7 +904,7 @@ export const balancedMathQuestions: Question[] = [
   },
   {
     id: "bal_math_060",
-    question: "If 4x + 2y = 20 and x - y = 1, what is y?",
+    question: "If $4x + 2y = 22$ and $x - y = 1$, what is $y$?",
     options: [
       { letter: "A", text: "4" },
       { letter: "B", text: "2" },
@@ -912,7 +912,7 @@ export const balancedMathQuestions: Question[] = [
       { letter: "D", text: "3" }
     ],
     correctAnswer: "D",
-    explanation: "From x - y = 1: x = y + 1. Substitute: 4(y+1) + 2y = 20, 4y + 4 + 2y = 20, 6y = 16, y = 8/3. Wait, let me recalculate: 6y = 16... Actually: 4y + 4 + 2y = 20 → 6y = 16 → y = 8/3. Hmm, that's not an integer. Let me verify: If y = 3, x = 4. Check: 4(4) + 2(3) = 16 + 6 = 22 ≠ 20. If y = 2, x = 3. Check: 4(3) + 2(2) = 12 + 4 = 16 ≠ 20. Recalculating: 6y = 16, y = 8/3 ≈ 2.67. The question needs adjustment. Actually with the given system: y = 3 works if we adjust: 4x + 2y = 22 would give y = 3. For this problem, assuming intended answer y = 3.",
+    explanation: "From $x - y = 1$: $x = y + 1$. Substitute into the first equation: $4(y+1) + 2y = 22$, which gives $4y + 4 + 2y = 22$, so $6y = 18$, therefore $y = 3$. Verify: If $y = 3$, then $x = 4$. Check: $4(4) + 2(3) = 16 + 6 = 22$ ✓ and $4 - 3 = 1$ ✓.",
     difficulty: "Hard",
     domain: "Algebra",
     skill: "Systems of two linear equations in two variables"

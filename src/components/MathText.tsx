@@ -106,20 +106,27 @@ export const MathText = ({ text, className = '' }: MathTextProps) => {
   }
   
   // For question text that contains words, DON'T render as LaTeX - just show as-is
-  // Only render as LaTeX if it's a pure formula (no English words like "What", "is", "the", etc.)
-  const hasEnglishWords = /\b(what|is|the|of|line|find|solve|which|if|when|how|determine)\b/i.test(fixedText);
+  // Only render as LaTeX if it's a pure formula (no English words)
+  // Extended list to catch more natural language patterns
+  const hasEnglishWords = /\b(what|is|the|of|line|find|solve|which|if|when|how|determine|all|real|numbers|except|domain|range|function|value|answer|equal|greater|less|than|between|and|or|for|with|that|are|this|each|from|into|where|given|following|true|false|statement|equation|expression|simplify|evaluate|calculate|percent|total|sum|difference|product|quotient|result|population|increase|decrease|yearly|annual|monthly|daily|town|city)\b/i.test(fixedText);
   
   if (hasEnglishWords) {
     // Return plain text - don't try to parse as math formula
     return <span className={className}>{fixedText}</span>;
   }
   
-  // Try to render as inline math ONLY if it looks like a pure formula (no words)
-  const isLikelyFormula = /^[^.!?]*[=<>≤≥≠][^.!?]*$/.test(fixedText) || 
-                          /^\s*\d+[+\-*/]\d+/.test(fixedText) ||
-                          /[xy]\s*[=<>+\-*/^]/.test(fixedText);
+  // Also check if text is too long to be a formula (sentences are not formulas)
+  if (fixedText.length > 50) {
+    return <span className={className}>{fixedText}</span>;
+  }
   
-  if (isLikelyFormula && fixedText.length < 100) {
+  // Try to render as inline math ONLY if it looks like a pure formula (no words)
+  // Must be a short expression with math operators
+  const isLikelyFormula = /^[^a-zA-Z]*[=<>≤≥≠][^a-zA-Z]*$/.test(fixedText) || 
+                          /^\s*-?\d+[+\-*/]\d+/.test(fixedText) ||
+                          /^[xy]\s*[=<>+\-*/^]/.test(fixedText);
+  
+  if (isLikelyFormula && fixedText.length < 50) {
     try {
       const latex = convertToLatex(fixedText);
       return <InlineMath math={latex} />;

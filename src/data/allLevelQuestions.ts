@@ -1422,7 +1422,7 @@ const generateLevel10Questions = (): VisualQuestion[] => {
     const an = a1 + (n - 1) * d;
     questions.push({
       id: `l10-arith-seq-${i}`,
-      question: `In an arithmetic sequence with first term ${a1} and common difference ${d}, what is the ${n}th term?`,
+      question: `In an arithmetic sequence with first term $a_1 = ${a1}$ and common difference $d = ${d}$, what is $a_{${n}}$?`,
       options: [
         { letter: "A", text: String(an) },
         { letter: "B", text: String(an - d) },
@@ -1430,7 +1430,7 @@ const generateLevel10Questions = (): VisualQuestion[] => {
         { letter: "D", text: String(a1 * n) }
       ],
       correctAnswer: "A",
-      explanation: `a_n = a_1 + (n-1)d = ${a1} + (${n}-1)(${d}) = ${a1} + ${(n - 1) * d} = ${an}`,
+      explanation: `$a_n = a_1 + (n-1)d = ${a1} + (${n}-1)(${d}) = ${a1} + ${(n - 1) * d} = ${an}$`,
       difficulty: "Hard",
       domain: "Algebra",
       skill: "Sequences",
@@ -1446,7 +1446,7 @@ const generateLevel10Questions = (): VisualQuestion[] => {
     const an = a1 * Math.pow(r, n - 1);
     questions.push({
       id: `l10-geom-seq-${i}`,
-      question: `In a geometric sequence with first term ${a1} and common ratio ${r}, what is the ${n}th term?`,
+      question: `In a geometric sequence with first term $a_1 = ${a1}$ and common ratio $r = ${r}$, what is $a_{${n}}$?`,
       options: [
         { letter: "A", text: String(an) },
         { letter: "B", text: String(a1 * r * n) },
@@ -1454,7 +1454,7 @@ const generateLevel10Questions = (): VisualQuestion[] => {
         { letter: "D", text: String(an + r) }
       ],
       correctAnswer: "A",
-      explanation: `a_n = a_1 × r^(n-1) = ${a1} × ${r}^${n - 1} = ${a1} × ${Math.pow(r, n - 1)} = ${an}`,
+      explanation: `$a_n = a_1 \\times r^{n-1} = ${a1} \\times ${r}^{${n - 1}} = ${a1} \\times ${Math.pow(r, n - 1)} = ${an}$`,
       difficulty: "Hard",
       domain: "Algebra",
       skill: "Sequences",
