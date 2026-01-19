@@ -28,7 +28,7 @@ export const uploadedEnglishQuestions: EnglishQuestion[] = [
   }),
   addRating({
     id: "ueng002",
-    question: "Based on the table, which word best fits the context?",
+    question: "The author describes the protagonist's reaction to receiving the long-awaited letter as one of pure joy. Which word best captures this emotional state?",
     options: [
       { letter: "A", text: "elated" },
       { letter: "B", text: "melancholy" },
@@ -36,7 +36,7 @@ export const uploadedEnglishQuestions: EnglishQuestion[] = [
       { letter: "D", text: "furious" }
     ],
     correctAnswer: "A",
-    explanation: "The tone in the passage is positive and joyful. 'Elated' means extremely happy, which matches the positive context.",
+    explanation: "The passage describes 'pure joy,' which indicates an extremely happy emotional state. 'Elated' means feeling extremely happy and excited, which perfectly matches the described reaction. 'Melancholy' (sad) and 'furious' (angry) contradict the joyful tone, while 'neutral' fails to capture the intensity of the emotion.",
     difficulty: "Medium",
     domain: "Reading",
     skill: "Vocabulary in Context"
