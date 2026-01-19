@@ -241,19 +241,18 @@ export const importedSATMathQuestions8: Question[] = [
   },
   {
     id: "sat-math-b73ee6cf",
-    question: "Town population is 50,000 and increases 3% yearly. Which equation estimates years t to reach 60,000?",
+    question: "The population of a town is currently 50,000, and the population is estimated to increase each year by 3% from the previous year. Which of the following equations can be used to estimate the number of years, t, it will take for the population of the town to reach 60,000?",
     options: [
-      { letter: "A", text: "50,000 = 60,000(0.03)^t" },
-      { letter: "B", text: "50,000 = 60,000(3)^t" },
-      { letter: "C", text: "60,000 = 50,000(0.03)^t" },
-      { letter: "D", text: "60,000 = 50,000(1.03)^t" }
+      { letter: "A", text: "$50{,}000 = 60{,}000(0.03)^t$" },
+      { letter: "B", text: "$50{,}000 = 60{,}000(3)^t$" },
+      { letter: "C", text: "$60{,}000 = 50{,}000(0.03)^t$" },
+      { letter: "D", text: "$60{,}000 = 50{,}000(1.03)^t$" }
     ],
     correctAnswer: "D",
-    explanation: "A 3% annual increase means multiplying by 1.03 each year. Starting at 50,000 and reaching 60,000: 60,000 = 50,000(1.03)^t.",
+    explanation: "Stating that the population will increase each year by 3% from the previous year is equivalent to saying that the population each year will be 103% of the population the year before. Since the initial population is 50,000, the population after t years is given by $50{,}000(1.03)^t$. It follows that the equation $60{,}000 = 50{,}000(1.03)^t$ can be used to estimate the number of years it will take for the population to reach 60,000.",
     difficulty: "Hard",
     domain: "Advanced Math",
     skill: "Nonlinear functions",
-    imageUrl: "/questions/sat-math-b73ee6cf.jpg",
     difficultyRating: 9
   },
   {
