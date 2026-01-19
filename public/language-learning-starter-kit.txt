@@ -1,0 +1,876 @@
+================================================================================
+LANGUAGE LEARNING APP STARTER KIT
+================================================================================
+A reusable foundation for building reading comprehension apps with:
+- User authentication
+- Progress tracking  
+- Streak/gamification system
+- Question display
+- Review wrong answers
+
+================================================================================
+PART 1: DATABASE SCHEMA (SQL Migrations)
+================================================================================
+Run these in order to set up your Supabase/Lovable Cloud database:
+
+-- 1. PROFILES TABLE (User data)
+--------------------------------------------------------------------------------
+CREATE TABLE public.profiles (
+  id UUID NOT NULL PRIMARY KEY,
+  username TEXT NOT NULL,
+  email TEXT,
+  avatar_emoji TEXT DEFAULT '🎓',
+  theme_color TEXT DEFAULT 'blue',
+  created_at TIMESTAMP WITH TIME ZONE NOT NULL DEFAULT now(),
+  updated_at TIMESTAMP WITH TIME ZONE NOT NULL DEFAULT now()
+);
+
+ALTER TABLE public.profiles ENABLE ROW LEVEL SECURITY;
+
+CREATE POLICY "Anyone can view profiles" ON public.profiles 
+  FOR SELECT USING (true);
+CREATE POLICY "Users can update own profile" ON public.profiles 
+  FOR UPDATE USING (auth.uid() = id);
+CREATE POLICY "Users can insert own profile" ON public.profiles 
+  FOR INSERT WITH CHECK (auth.uid() = id);
+
+-- Trigger to auto-create profile on signup
+CREATE OR REPLACE FUNCTION public.handle_new_user()
+RETURNS TRIGGER AS $$
+BEGIN
+  INSERT INTO public.profiles (id, username, email)
+  VALUES (
+    NEW.id,
+    COALESCE(NEW.raw_user_meta_data->>'username', 'User' || substr(NEW.id::text, 1, 8)),
+    NEW.email
+  );
+  
+  -- Also create streak record
+  INSERT INTO public.streaks (user_id)
+  VALUES (NEW.id);
+  
+  RETURN NEW;
+END;
+$$ LANGUAGE plpgsql SECURITY DEFINER;
+
+CREATE TRIGGER on_auth_user_created
+  AFTER INSERT ON auth.users
+  FOR EACH ROW EXECUTE FUNCTION public.handle_new_user();
+
+
+-- 2. STREAKS TABLE (Daily consistency tracking)
+--------------------------------------------------------------------------------
+CREATE TABLE public.streaks (
+  id UUID NOT NULL DEFAULT gen_random_uuid() PRIMARY KEY,
+  user_id UUID NOT NULL REFERENCES auth.users ON DELETE CASCADE,
+  current_streak INTEGER NOT NULL DEFAULT 0,
+  longest_streak INTEGER NOT NULL DEFAULT 0,
+  last_practice_date DATE,
+  updated_at TIMESTAMP WITH TIME ZONE NOT NULL DEFAULT now(),
+  UNIQUE(user_id)
+);
+
+ALTER TABLE public.streaks ENABLE ROW LEVEL SECURITY;
+
+CREATE POLICY "Anyone can view streaks" ON public.streaks FOR SELECT USING (true);
+CREATE POLICY "Users can update own streak" ON public.streaks FOR UPDATE USING (auth.uid() = user_id);
+CREATE POLICY "Users can insert own streak" ON public.streaks FOR INSERT WITH CHECK (auth.uid() = user_id);
+
+
+-- 3. ACHIEVEMENTS TABLE (Badges/milestones)
+--------------------------------------------------------------------------------
+CREATE TABLE public.achievements (
+  id UUID NOT NULL DEFAULT gen_random_uuid() PRIMARY KEY,
+  user_id UUID NOT NULL REFERENCES auth.users ON DELETE CASCADE,
+  achievement_type TEXT NOT NULL,
+  unlocked_at TIMESTAMP WITH TIME ZONE NOT NULL DEFAULT now(),
+  UNIQUE(user_id, achievement_type)
+);
+
+ALTER TABLE public.achievements ENABLE ROW LEVEL SECURITY;
+
+CREATE POLICY "Anyone can view achievements" ON public.achievements FOR SELECT USING (true);
+CREATE POLICY "Users can insert own achievements" ON public.achievements FOR INSERT WITH CHECK (auth.uid() = user_id);
+
+
+-- 4. QUIZ SCORES TABLE (Session results)
+--------------------------------------------------------------------------------
+CREATE TABLE public.quiz_scores (
+  id UUID NOT NULL DEFAULT gen_random_uuid() PRIMARY KEY,
+  user_id UUID NOT NULL REFERENCES auth.users ON DELETE CASCADE,
+  subject TEXT NOT NULL,
+  score INTEGER NOT NULL,
+  total_questions INTEGER NOT NULL,
+  percentage NUMERIC NOT NULL,
+  created_at TIMESTAMP WITH TIME ZONE NOT NULL DEFAULT now()
+);
+
+ALTER TABLE public.quiz_scores ENABLE ROW LEVEL SECURITY;
+
+CREATE POLICY "Users can view own scores" ON public.quiz_scores FOR SELECT USING (auth.uid() = user_id);
+CREATE POLICY "Users can insert own scores" ON public.quiz_scores FOR INSERT WITH CHECK (auth.uid() = user_id);
+
+
+-- 5. QUESTION ATTEMPTS TABLE (Track individual answers for review)
+--------------------------------------------------------------------------------
+CREATE TABLE public.question_attempts (
+  id UUID NOT NULL DEFAULT gen_random_uuid() PRIMARY KEY,
+  user_id UUID NOT NULL REFERENCES auth.users ON DELETE CASCADE,
+  question_id TEXT NOT NULL,
+  question_type TEXT NOT NULL,
+  domain TEXT NOT NULL,
+  skill TEXT NOT NULL,
+  is_correct BOOLEAN NOT NULL,
+  difficulty_rating INTEGER,
+  review_count INTEGER NOT NULL DEFAULT 0,
+  next_review_at TIMESTAMP WITH TIME ZONE,
+  first_missed_at TIMESTAMP WITH TIME ZONE,
+  miss_reason TEXT,
+  miss_reason_noted_at TIMESTAMP WITH TIME ZONE,
+  time_taken_ms INTEGER,
+  created_at TIMESTAMP WITH TIME ZONE NOT NULL DEFAULT now()
+);
+
+ALTER TABLE public.question_attempts ENABLE ROW LEVEL SECURITY;
+
+CREATE POLICY "Users can view own attempts" ON public.question_attempts FOR SELECT USING (auth.uid() = user_id);
+CREATE POLICY "Users can insert own attempts" ON public.question_attempts FOR INSERT WITH CHECK (auth.uid() = user_id);
+CREATE POLICY "Users can update own attempts" ON public.question_attempts FOR UPDATE USING (auth.uid() = user_id);
+
+
+-- 6. LEADERBOARD VIEW
+--------------------------------------------------------------------------------
+CREATE VIEW public.leaderboard_scores 
+WITH (security_invoker = true) AS
+SELECT 
+  p.username,
+  p.avatar_emoji,
+  SUM(qs.score) as total_score,
+  AVG(qs.percentage) as avg_percentage,
+  COUNT(qs.id) as quiz_count
+FROM public.profiles p
+LEFT JOIN public.quiz_scores qs ON qs.user_id = p.id
+GROUP BY p.id, p.username, p.avatar_emoji
+ORDER BY total_score DESC NULLS LAST;
+
+
+================================================================================
+PART 2: AUTHENTICATION HOOK (src/hooks/useAuth.tsx)
+================================================================================
+
+import { createContext, useContext, useEffect, useState, ReactNode } from "react";
+import { User, Session } from "@supabase/supabase-js";
+import { supabase } from "@/integrations/supabase/client";
+
+interface AuthContextType {
+  user: User | null;
+  session: Session | null;
+  loading: boolean;
+  signUp: (email: string, password: string, username: string) => Promise<{ error: Error | null }>;
+  signIn: (email: string, password: string) => Promise<{ error: Error | null }>;
+  signOut: () => Promise<void>;
+}
+
+const AuthContext = createContext<AuthContextType | undefined>(undefined);
+
+export const AuthProvider = ({ children }: { children: ReactNode }) => {
+  const [user, setUser] = useState<User | null>(null);
+  const [session, setSession] = useState<Session | null>(null);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const { data: { subscription } } = supabase.auth.onAuthStateChange((event, session) => {
+      setSession(session);
+      setUser(session?.user ?? null);
+      setLoading(false);
+    });
+
+    supabase.auth.getSession().then(({ data: { session } }) => {
+      setSession(session);
+      setUser(session?.user ?? null);
+      setLoading(false);
+    });
+
+    return () => subscription.unsubscribe();
+  }, []);
+
+  const signUp = async (email: string, password: string, username: string) => {
+    const redirectUrl = `${window.location.origin}/`;
+    const { error } = await supabase.auth.signUp({
+      email,
+      password,
+      options: {
+        emailRedirectTo: redirectUrl,
+        data: { username }
+      }
+    });
+    return { error };
+  };
+
+  const signIn = async (email: string, password: string) => {
+    const { error } = await supabase.auth.signInWithPassword({ email, password });
+    return { error };
+  };
+
+  const signOut = async () => {
+    await supabase.auth.signOut();
+  };
+
+  return (
+    <AuthContext.Provider value={{ user, session, loading, signUp, signIn, signOut }}>
+      {children}
+    </AuthContext.Provider>
+  );
+};
+
+export const useAuth = () => {
+  const context = useContext(AuthContext);
+  if (!context) throw new Error("useAuth must be used within AuthProvider");
+  return context;
+};
+
+
+================================================================================
+PART 3: GAME STATS HOOK (src/hooks/useGameStats.tsx)
+================================================================================
+
+import { useEffect, useState } from "react";
+import { supabase } from "@/integrations/supabase/client";
+import { useAuth } from "./useAuth";
+
+interface Streak {
+  current_streak: number;
+  longest_streak: number;
+  last_practice_date: string | null;
+}
+
+interface Achievement {
+  achievement_type: string;
+  unlocked_at: string;
+}
+
+// Customize these for your app
+const ACHIEVEMENT_DEFS = {
+  first_quiz: { name: "First Steps", icon: "🎯", desc: "Complete your first quiz" },
+  perfect_score: { name: "Perfectionist", icon: "💯", desc: "Score 100% on any quiz" },
+  streak_3: { name: "On Fire", icon: "🔥", desc: "3 day practice streak" },
+  streak_7: { name: "Dedicated", icon: "⭐", desc: "7 day practice streak" },
+  streak_30: { name: "Legend", icon: "👑", desc: "30 day practice streak" },
+  score_10: { name: "Getting Started", icon: "📊", desc: "Complete 10 quizzes" },
+  score_50: { name: "Regular", icon: "📈", desc: "Complete 50 quizzes" },
+  score_100: { name: "Veteran", icon: "🏆", desc: "Complete 100 quizzes" },
+};
+
+export const useGameStats = () => {
+  const { user } = useAuth();
+  const [streak, setStreak] = useState<Streak | null>(null);
+  const [achievements, setAchievements] = useState<Achievement[]>([]);
+  const [quizCount, setQuizCount] = useState(0);
+
+  const fetchStats = async () => {
+    if (!user) return;
+
+    const [streakRes, achievementsRes, scoresRes] = await Promise.all([
+      supabase.from("streaks").select("*").eq("user_id", user.id).maybeSingle(),
+      supabase.from("achievements").select("*").eq("user_id", user.id),
+      supabase.from("quiz_scores").select("id").eq("user_id", user.id),
+    ]);
+
+    if (streakRes.data) setStreak(streakRes.data);
+    if (achievementsRes.data) setAchievements(achievementsRes.data);
+    if (scoresRes.data) setQuizCount(scoresRes.data.length);
+  };
+
+  useEffect(() => {
+    fetchStats();
+  }, [user]);
+
+  const updateStreak = async () => {
+    if (!user) return;
+
+    const today = new Date().toISOString().split("T")[0];
+    const { data: current } = await supabase
+      .from("streaks")
+      .select("*")
+      .eq("user_id", user.id)
+      .maybeSingle();
+
+    if (!current) return;
+
+    const lastDate = current.last_practice_date;
+    const yesterday = new Date(Date.now() - 86400000).toISOString().split("T")[0];
+
+    let newStreak = current.current_streak;
+    
+    if (lastDate === today) {
+      return; // Already practiced today
+    } else if (lastDate === yesterday) {
+      newStreak = current.current_streak + 1; // Continuing streak
+    } else {
+      newStreak = 1; // Streak broken or first time
+    }
+
+    const longestStreak = Math.max(newStreak, current.longest_streak);
+
+    await supabase
+      .from("streaks")
+      .update({
+        current_streak: newStreak,
+        longest_streak: longestStreak,
+        last_practice_date: today,
+        updated_at: new Date().toISOString(),
+      })
+      .eq("user_id", user.id);
+
+    // Check streak achievements
+    if (newStreak >= 3) await unlockAchievement("streak_3");
+    if (newStreak >= 7) await unlockAchievement("streak_7");
+    if (newStreak >= 30) await unlockAchievement("streak_30");
+
+    fetchStats();
+  };
+
+  const unlockAchievement = async (type: string) => {
+    if (!user || achievements.some(a => a.achievement_type === type)) return false;
+
+    const { error } = await supabase
+      .from("achievements")
+      .insert({ user_id: user.id, achievement_type: type });
+
+    if (!error) {
+      fetchStats();
+      return true;
+    }
+    return false;
+  };
+
+  const recordScore = async (subject: string, score: number, total: number) => {
+    if (!user) return;
+
+    const percentage = (score / total) * 100;
+
+    await supabase.from("quiz_scores").insert({
+      user_id: user.id,
+      subject,
+      score,
+      total_questions: total,
+      percentage,
+    });
+
+    await updateStreak();
+    await unlockAchievement("first_quiz");
+
+    if (percentage === 100) {
+      await unlockAchievement("perfect_score");
+    }
+
+    const newCount = quizCount + 1;
+    if (newCount >= 10) await unlockAchievement("score_10");
+    if (newCount >= 50) await unlockAchievement("score_50");
+    if (newCount >= 100) await unlockAchievement("score_100");
+
+    fetchStats();
+  };
+
+  return {
+    streak,
+    achievements,
+    quizCount,
+    recordScore,
+    unlockAchievement,
+    achievementDefs: ACHIEVEMENT_DEFS,
+    fetchStats,
+  };
+};
+
+
+================================================================================
+PART 4: STREAK BADGE COMPONENT (src/components/StreakBadge.tsx)
+================================================================================
+
+import { Flame } from "lucide-react";
+
+interface StreakBadgeProps {
+  streak: number;
+  size?: "sm" | "md" | "lg";
+}
+
+export const StreakBadge = ({ streak, size = "md" }: StreakBadgeProps) => {
+  const sizes = {
+    sm: { container: "px-2 py-1 text-xs gap-1", icon: "w-3 h-3" },
+    md: { container: "px-3 py-1.5 text-sm gap-1.5", icon: "w-4 h-4" },
+    lg: { container: "px-4 py-2 text-base gap-2", icon: "w-5 h-5" },
+  };
+
+  if (streak === 0) return null;
+
+  const getFlameColor = () => {
+    if (streak >= 30) return "text-purple-500";
+    if (streak >= 7) return "text-orange-500";
+    if (streak >= 3) return "text-yellow-500";
+    return "text-muted-foreground";
+  };
+
+  return (
+    <div
+      className={`inline-flex items-center rounded-full bg-gradient-to-r from-orange-500/10 to-red-500/10 border border-orange-500/20 font-bold ${sizes[size].container}`}
+    >
+      <Flame className={`${sizes[size].icon} ${getFlameColor()} animate-pulse`} />
+      <span>{streak}</span>
+    </div>
+  );
+};
+
+
+================================================================================
+PART 5: QUIZ CARD COMPONENT (src/components/QuizCard.tsx)
+================================================================================
+A generic question display component - customize for your language learning content
+
+import { useState } from "react";
+import { Card } from "@/components/ui/card";
+import { CheckCircle2, XCircle, Flag } from "lucide-react";
+
+// Define your question structure
+interface Question {
+  id: string;
+  question: string;
+  options: { letter: string; text: string }[];
+  correctAnswer: string;
+  explanation: string;
+  domain: string;    // e.g., "Vocabulary", "Grammar", "Reading"
+  skill: string;     // e.g., "Context Clues", "Verb Conjugation"
+}
+
+interface QuizCardProps {
+  question: Question;
+  selectedAnswer: string | null;
+  onSelectAnswer: (answer: string) => void;
+  showResult: boolean;
+}
+
+export const QuizCard = ({ question, selectedAnswer, onSelectAnswer, showResult }: QuizCardProps) => {
+  return (
+    <Card className="p-4 sm:p-6 md:p-8 shadow-xl border-2">
+      <div className="space-y-4 sm:space-y-6">
+        {/* Question Header */}
+        <div className="space-y-1 sm:space-y-2">
+          <p className="text-xs sm:text-sm font-semibold text-primary uppercase tracking-wide">
+            {question.domain} • {question.skill}
+          </p>
+          <h2 className="text-base sm:text-lg md:text-xl font-bold leading-relaxed whitespace-pre-wrap">
+            {question.question}
+          </h2>
+        </div>
+
+        {/* Answer Options */}
+        <div className="space-y-2 sm:space-y-3">
+          {question.options.map((option) => {
+            const isSelected = selectedAnswer === option.letter;
+            const isCorrect = option.letter === question.correctAnswer;
+            const showCorrect = showResult && isCorrect;
+            const showWrong = showResult && isSelected && !isCorrect;
+
+            return (
+              <button
+                key={option.letter}
+                onClick={() => !showResult && onSelectAnswer(option.letter)}
+                disabled={showResult}
+                className={`
+                  w-full p-3 sm:p-4 rounded-lg border-2 text-left transition-all
+                  ${!showResult && !isSelected ? 'border-border hover:border-primary hover:bg-primary/5' : ''}
+                  ${!showResult && isSelected ? 'border-primary bg-primary/10' : ''}
+                  ${showCorrect ? 'border-green-500 bg-green-500/10' : ''}
+                  ${showWrong ? 'border-destructive bg-destructive/10' : ''}
+                  ${showResult ? 'cursor-default' : 'cursor-pointer'}
+                `}
+              >
+                <div className="flex items-start gap-2 sm:gap-3">
+                  <span className={`
+                    font-bold text-base sm:text-lg min-w-[1.5rem] sm:min-w-[2rem]
+                    ${showCorrect ? 'text-green-500' : ''}
+                    ${showWrong ? 'text-destructive' : ''}
+                    ${!showResult && isSelected ? 'text-primary' : ''}
+                  `}>
+                    {option.letter}.
+                  </span>
+                  <span className="flex-1 text-sm sm:text-base break-words">
+                    {option.text}
+                  </span>
+                  {showCorrect && <CheckCircle2 className="w-4 h-4 sm:w-5 sm:h-5 text-green-500 flex-shrink-0" />}
+                  {showWrong && <XCircle className="w-4 h-4 sm:w-5 sm:h-5 text-destructive flex-shrink-0" />}
+                </div>
+              </button>
+            );
+          })}
+        </div>
+
+        {/* Explanation (shown after answering) */}
+        {showResult && (
+          <div className="mt-4 sm:mt-6 p-3 sm:p-4 bg-muted rounded-lg">
+            <p className="text-xs sm:text-sm font-semibold mb-1 sm:mb-2 text-foreground">Explanation:</p>
+            <p className="text-xs sm:text-sm text-muted-foreground leading-relaxed">
+              {question.explanation}
+            </p>
+          </div>
+        )}
+      </div>
+    </Card>
+  );
+};
+
+
+================================================================================
+PART 6: SAMPLE AUTH PAGE (src/pages/Auth.tsx)
+================================================================================
+
+import { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Card } from "@/components/ui/card";
+import { Label } from "@/components/ui/label";
+import { useAuth } from "@/hooks/useAuth";
+import { toast } from "@/hooks/use-toast";
+import { User, Mail, Lock } from "lucide-react";
+
+type AuthMode = "signIn" | "signUp";
+
+const Auth = () => {
+  const navigate = useNavigate();
+  const { user, signIn, signUp } = useAuth();
+  const [mode, setMode] = useState<AuthMode>("signIn");
+  const [loading, setLoading] = useState(false);
+  const [form, setForm] = useState({ email: "", password: "", username: "" });
+
+  useEffect(() => {
+    if (user) navigate("/");
+  }, [user, navigate]);
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setLoading(true);
+
+    try {
+      if (mode === "signUp") {
+        if (!form.username.trim()) {
+          toast({ title: "Username required", variant: "destructive" });
+          setLoading(false);
+          return;
+        }
+        const { error } = await signUp(form.email, form.password, form.username);
+        if (error) throw error;
+        toast({ title: "Account created! Welcome! 🎉" });
+      } else {
+        const { error } = await signIn(form.email, form.password);
+        if (error) throw error;
+        toast({ title: "Welcome back! Let's practice! 💪" });
+      }
+    } catch (err: any) {
+      toast({
+        title: "Error",
+        description: err.message || "Something went wrong",
+        variant: "destructive",
+      });
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  return (
+    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-background via-primary/5 to-accent/10 p-4">
+      <div className="w-full max-w-md space-y-8">
+        <div className="text-center">
+          <h1 className="text-3xl font-bold">Language Learning App</h1>
+          <p className="text-muted-foreground mt-2">
+            {mode === "signIn" ? "Sign in to continue" : "Create your account"}
+          </p>
+        </div>
+
+        <Card className="p-6 border-2">
+          <form onSubmit={handleSubmit} className="space-y-4">
+            {mode === "signUp" && (
+              <div className="space-y-2">
+                <Label htmlFor="username">Username</Label>
+                <div className="relative">
+                  <User className="absolute left-3 top-3 w-4 h-4 text-muted-foreground" />
+                  <Input
+                    id="username"
+                    placeholder="Your username"
+                    className="pl-10"
+                    value={form.username}
+                    onChange={(e) => setForm({ ...form, username: e.target.value })}
+                  />
+                </div>
+              </div>
+            )}
+
+            <div className="space-y-2">
+              <Label htmlFor="email">Email</Label>
+              <div className="relative">
+                <Mail className="absolute left-3 top-3 w-4 h-4 text-muted-foreground" />
+                <Input
+                  id="email"
+                  type="email"
+                  placeholder="you@email.com"
+                  className="pl-10"
+                  value={form.email}
+                  onChange={(e) => setForm({ ...form, email: e.target.value })}
+                  required
+                />
+              </div>
+            </div>
+
+            <div className="space-y-2">
+              <Label htmlFor="password">Password</Label>
+              <div className="relative">
+                <Lock className="absolute left-3 top-3 w-4 h-4 text-muted-foreground" />
+                <Input
+                  id="password"
+                  type="password"
+                  placeholder="••••••••"
+                  className="pl-10"
+                  value={form.password}
+                  onChange={(e) => setForm({ ...form, password: e.target.value })}
+                  required
+                  minLength={mode === "signUp" ? 8 : 1}
+                />
+              </div>
+            </div>
+
+            <Button type="submit" className="w-full" size="lg" disabled={loading}>
+              {loading ? "Loading..." : mode === "signUp" ? "Create Account" : "Sign In"}
+            </Button>
+          </form>
+
+          <div className="mt-6 text-center">
+            <button
+              type="button"
+              className="text-muted-foreground hover:text-primary text-sm"
+              onClick={() => setMode(mode === "signIn" ? "signUp" : "signIn")}
+            >
+              {mode === "signIn" 
+                ? "Don't have an account? Sign up" 
+                : "Already have an account? Sign in"}
+            </button>
+          </div>
+        </Card>
+      </div>
+    </div>
+  );
+};
+
+export default Auth;
+
+
+================================================================================
+PART 7: SAMPLE QUESTION DATA STRUCTURE (src/data/questions.ts)
+================================================================================
+
+export interface Question {
+  id: string;
+  question: string;
+  options: { letter: string; text: string }[];
+  correctAnswer: string;
+  explanation: string;
+  domain: string;        // Category: "Vocabulary", "Grammar", "Reading Comprehension"
+  skill: string;         // Specific skill: "Context Clues", "Verb Tense", etc.
+  difficulty?: string;   // "Easy", "Medium", "Hard"
+  difficultyRating?: number;  // 1-10 scale
+  language?: string;     // Target language
+}
+
+// Example questions for a Spanish learning app
+export const questions: Question[] = [
+  {
+    id: "es-001",
+    question: "Complete the sentence: 'Ella _____ muy feliz ayer.'",
+    options: [
+      { letter: "A", text: "está" },
+      { letter: "B", text: "estuvo" },
+      { letter: "C", text: "estaba" },
+      { letter: "D", text: "es" }
+    ],
+    correctAnswer: "B",
+    explanation: "Use 'estuvo' (preterite of estar) for completed actions in the past. 'Ayer' (yesterday) signals a specific, completed moment.",
+    domain: "Grammar",
+    skill: "Verb Conjugation - Preterite",
+    difficulty: "Medium",
+    difficultyRating: 5,
+    language: "Spanish"
+  },
+  {
+    id: "es-002",
+    question: "What does 'madrugada' mean in the following sentence?\n\n'Llegamos a casa en la madrugada después de la fiesta.'",
+    options: [
+      { letter: "A", text: "afternoon" },
+      { letter: "B", text: "evening" },
+      { letter: "C", text: "early morning (before dawn)" },
+      { letter: "D", text: "midnight exactly" }
+    ],
+    correctAnswer: "C",
+    explanation: "'Madrugada' refers to the early morning hours before dawn, typically between 1 AM and 6 AM. It comes after midnight but before sunrise.",
+    domain: "Vocabulary",
+    skill: "Time Expressions",
+    difficulty: "Medium",
+    difficultyRating: 4,
+    language: "Spanish"
+  },
+  // Add more questions...
+];
+
+
+================================================================================
+PART 8: MAIN APP WRAPPER (src/App.tsx snippet)
+================================================================================
+Wrap your app with the AuthProvider:
+
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { AuthProvider } from "@/hooks/useAuth";
+import { Toaster } from "@/components/ui/toaster";
+import Home from "@/pages/Home";
+import Auth from "@/pages/Auth";
+import Quiz from "@/pages/Quiz";
+
+function App() {
+  return (
+    <AuthProvider>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/auth" element={<Auth />} />
+          <Route path="/quiz" element={<Quiz />} />
+        </Routes>
+        <Toaster />
+      </BrowserRouter>
+    </AuthProvider>
+  );
+}
+
+export default App;
+
+
+================================================================================
+PART 9: REVIEW WRONG ANSWERS PAGE (src/pages/Review.tsx)
+================================================================================
+Key logic for reviewing missed questions:
+
+import { useState, useEffect, useCallback } from "react";
+import { useAuth } from "@/hooks/useAuth";
+import { supabase } from "@/integrations/supabase/client";
+import { questions } from "@/data/questions";  // Your question bank
+
+// Spaced repetition intervals (in hours)
+const INTERVALS = [1, 4, 24, 72, 168, 336]; // 1h, 4h, 1d, 3d, 1w, 2w
+
+const Review = () => {
+  const { user } = useAuth();
+  const [reviewQuestions, setReviewQuestions] = useState([]);
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const fetchReviewQuestions = useCallback(async () => {
+    if (!user) return;
+
+    const now = new Date().toISOString();
+    
+    // Get questions that were answered incorrectly or are due for review
+    const { data: attempts } = await supabase
+      .from("question_attempts")
+      .select("*")
+      .eq("user_id", user.id)
+      .or(`is_correct.eq.false,next_review_at.lte.${now}`)
+      .order("created_at", { ascending: false })
+      .limit(50);
+
+    if (!attempts) return;
+
+    // Match with question data and deduplicate
+    const uniqueQuestions = new Map();
+    attempts.forEach(a => {
+      if (!uniqueQuestions.has(a.question_id)) {
+        const questionData = questions.find(q => q.id === a.question_id);
+        if (questionData) {
+          uniqueQuestions.set(a.question_id, {
+            ...questionData,
+            reviewCount: a.review_count,
+            attemptId: a.id
+          });
+        }
+      }
+    });
+
+    setReviewQuestions(Array.from(uniqueQuestions.values()).slice(0, 10));
+  }, [user]);
+
+  const handleAnswer = async (letter: string) => {
+    const currentQuestion = reviewQuestions[currentIndex];
+    const isCorrect = letter === currentQuestion.correctAnswer;
+
+    // Calculate next review time
+    let nextReviewAt = null;
+    const newReviewCount = isCorrect ? currentQuestion.reviewCount + 1 : 0;
+
+    if (isCorrect && newReviewCount < INTERVALS.length) {
+      nextReviewAt = new Date();
+      nextReviewAt.setHours(nextReviewAt.getHours() + INTERVALS[newReviewCount]);
+    }
+
+    // Update the attempt record
+    await supabase
+      .from("question_attempts")
+      .update({
+        is_correct: isCorrect,
+        review_count: newReviewCount,
+        next_review_at: nextReviewAt?.toISOString() || null,
+      })
+      .eq("id", currentQuestion.attemptId);
+  };
+
+  // ... rest of component (UI similar to QuizCard)
+};
+
+export default Review;
+
+
+================================================================================
+SETUP INSTRUCTIONS
+================================================================================
+
+1. CREATE NEW LOVABLE PROJECT
+   - Go to lovable.dev and create a new project
+
+2. ENABLE CLOUD (DATABASE)
+   - Lovable will prompt you to enable Cloud
+   - This sets up your database automatically
+
+3. RUN DATABASE MIGRATIONS
+   - Copy the SQL from Part 1 into the migration tool
+   - Or ask Lovable to "run this migration" and paste the SQL
+
+4. COPY THE FILES
+   - Create each file from Parts 2-8 in your project
+   - Update imports as needed for your project structure
+
+5. CONFIGURE AUTH
+   - Enable auto-confirm email signups in your Cloud settings
+   - This is for development - disable in production
+
+6. CREATE YOUR QUESTIONS
+   - Use the structure from Part 7 as a template
+   - Add your language learning content
+
+7. CUSTOMIZE
+   - Update achievement definitions for your domain
+   - Modify the UI theme/branding
+   - Add any domain-specific features
+
+================================================================================
+DEPENDENCIES
+================================================================================
+These should already be in your Lovable project:
+- @supabase/supabase-js
+- lucide-react
+- react-router-dom
+- shadcn/ui components (Card, Button, Input, etc.)
+
+================================================================================
