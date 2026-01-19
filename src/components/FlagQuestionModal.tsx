@@ -59,36 +59,16 @@ export const FlagQuestionModal = ({ isOpen, onClose, questionId, questionType }:
 
       if (error) throw error;
 
-      // Notify all admins about the new flag (in-app + email)
-      const { data: admins } = await supabase
-        .from('user_roles')
-        .select('user_id')
-        .eq('role', 'admin');
-      
-      if (admins && admins.length > 0) {
-        const issueLabel = issueTypes.find(t => t.value === issueType)?.label || issueType;
-        
-        // In-app notifications
-        await supabase.from('user_notifications').insert(
-          admins.map(admin => ({
-            user_id: admin.user_id,
-            title: '🚩 New flagged question',
-            message: `Question ${questionId} (${questionType}) was flagged: ${issueLabel}`,
-            type: 'warning',
-            link: '/admin',
-          }))
-        );
-        
-        // Send email notification (fire and forget - don't block on this)
-        supabase.functions.invoke('notify-flagged-question', {
-          body: {
-            questionId,
-            questionType,
-            issueType,
-            notes: notes.trim() || undefined,
-          },
-        }).catch(err => console.error('Email notification failed:', err));
-      }
+      // Send email notification to admins (fire and forget - don't block on this)
+      // The edge function handles fetching admin emails with service role
+      supabase.functions.invoke('notify-flagged-question', {
+        body: {
+          questionId,
+          questionType,
+          issueType,
+          notes: notes.trim() || undefined,
+        },
+      }).catch(err => console.error('Email notification failed:', err));
 
       toast({ 
         title: "Thank you for letting us know! 🙏", 

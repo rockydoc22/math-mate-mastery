@@ -121,6 +121,26 @@ const handler = async (req: Request): Promise<Response> => {
       other: "Other Issue",
     };
 
+    const issueLabel = issueLabels[issueType] || issueType;
+
+    // Insert in-app notifications for all admins using service role
+    const notifications = adminRoles.map((admin) => ({
+      user_id: admin.user_id,
+      title: "🚩 New flagged question",
+      message: `Question ${questionId} (${questionType}) was flagged: ${issueLabel}`,
+      type: "warning",
+      link: "/admin",
+    }));
+
+    const { error: notifError } = await serviceClient
+      .from("user_notifications")
+      .insert(notifications);
+
+    if (notifError) {
+      console.error("Error inserting admin notifications:", notifError);
+      // Don't fail the request, just log
+    }
+
     const emailHtml = `
       <div style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px;">
         <h1 style="color: #7c3aed; margin-bottom: 20px;">🚩 New Flagged Question</h1>
@@ -128,7 +148,7 @@ const handler = async (req: Request): Promise<Response> => {
         <div style="background: #f3f4f6; border-radius: 8px; padding: 20px; margin-bottom: 20px;">
           <p style="margin: 0 0 10px 0;"><strong>Question ID:</strong> ${questionId}</p>
           <p style="margin: 0 0 10px 0;"><strong>Type:</strong> ${questionType.toUpperCase()}</p>
-          <p style="margin: 0 0 10px 0;"><strong>Issue:</strong> ${issueLabels[issueType] || issueType}</p>
+          <p style="margin: 0 0 10px 0;"><strong>Issue:</strong> ${issueLabel}</p>
           ${notes ? `<p style="margin: 0;"><strong>Notes:</strong> ${notes}</p>` : ""}
         </div>
         
