@@ -1272,7 +1272,7 @@ const generateLevel8Questions = (): VisualQuestion[] => {
   logQuestions.forEach((lq, i) => {
     questions.push({
       id: `filler-8-log-${i + 1}`,
-      question: `Solve: ${lq.eq}`,
+      question: `Solve for x: ${lq.eq}`,
       visual: {
         type: "table",
         data: {
@@ -1287,7 +1287,7 @@ const generateLevel8Questions = (): VisualQuestion[] => {
         { letter: "D", text: String(Math.round(lq.answer * 1.5)) }
       ],
       correctAnswer: "B",
-      explanation: `The solution is x = ${lq.answer}.`,
+      explanation: `To solve ${lq.eq}, convert to exponential form. The solution is x = ${lq.answer}.`,
       difficulty: "Hard",
       domain: "Algebra",
       skill: "Logarithmic Equations",

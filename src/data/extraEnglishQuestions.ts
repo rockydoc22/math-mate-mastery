@@ -1192,7 +1192,7 @@ export const extraEnglishQuestions: EnglishQuestion[] = [
   },
   {
     id: "extra-eng-075",
-    question: "The primary purpose of the statistical data presented in paragraph two is to",
+    question: "A researcher argues that urban green spaces improve mental health outcomes. She then cites a study showing that neighborhoods with parks had 23% lower rates of depression and 18% lower rates of anxiety compared to neighborhoods without green spaces.\n\nThe primary purpose of the statistical data in the researcher's argument is to",
     options: [
       { letter: "A", text: "challenge the prevailing interpretation" },
       { letter: "B", text: "provide concrete support for the argument" },
@@ -1200,7 +1200,7 @@ export const extraEnglishQuestions: EnglishQuestion[] = [
       { letter: "D", text: "acknowledge the limitations of the research" }
     ],
     correctAnswer: "B",
-    explanation: "Statistical data typically serves to provide empirical support for claims.",
+    explanation: "The statistics (23% lower depression, 18% lower anxiety) directly support the researcher's claim that urban green spaces improve mental health. This is concrete, empirical evidence backing the main argument.",
     difficulty: "Medium",
     domain: "Craft and Structure",
     skill: "Text Structure and Purpose",
