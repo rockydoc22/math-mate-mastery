@@ -186,16 +186,23 @@ const BattleRoom = () => {
 
   // Generate questions personalized to player's skill level
   const generateQuestions = useCallback((room: Room, playerSkillRating: number): BattleQuestion[] => {
+    // Filter out questions with imageUrl to avoid showing College Board branding
+    const filteredMathVisuals = visualMathQuestions.filter(q => !(q as any).imageUrl);
+    const filteredMoreMathVisuals = moreMathVisualQuestions.filter(q => !(q as any).imageUrl);
+    const filteredAdditionalMath = additionalMathQuestions.filter(q => !(q as any).imageUrl);
+    const filteredEnglishVisuals = visualEnglishQuestions.filter(q => !(q as any).imageUrl);
+    const filteredMoreEnglishVisuals = moreEnglishVisualQuestions.filter(q => !(q as any).imageUrl);
+    
     const allMathQuestions = [
-      ...questions,
-      ...visualMathQuestions,
-      ...moreMathVisualQuestions,
-      ...additionalMathQuestions
+      ...questions, // Already filtered in questions.ts
+      ...filteredMathVisuals,
+      ...filteredMoreMathVisuals,
+      ...filteredAdditionalMath
     ];
     const allEnglishQuestions = [
       ...englishQuestions,
-      ...visualEnglishQuestions,
-      ...moreEnglishVisualQuestions
+      ...filteredEnglishVisuals,
+      ...filteredMoreEnglishVisuals
     ];
     
     let pool: BattleQuestion[] = [];

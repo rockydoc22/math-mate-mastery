@@ -12,12 +12,17 @@ export const physicsQuestionIds = [
   'hard-math-108', // biomechanics physics
 ];
 
-// Pre-Calculus questions (advanced trig, complex analysis, etc.)
+// Pre-Calculus questions (advanced trig, complex analysis, queueing theory, etc.)
 export const precalcQuestionIds = [
   'hard-math-032', // logistic regression
+  'hard-math-127', // M/M/1 queueing theory
   'hard-math-130', // sequence alignment (dynamic programming)
+  'hard-math-137', // quantum qubit operations
+  'hard-math-140', // principal component analysis
   'hard-math-195', // evolutionary game theory
   'hard-math-196', // information theory Huffman coding
+  'hard-math-251', // quantum gate fidelity
+  'hard-math-300', // Bell states entanglement
 ];
 
 // Calculus questions (derivatives, integrals, etc.)
