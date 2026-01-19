@@ -1113,7 +1113,7 @@ const generateLevel9Extra = (): VisualQuestion[] => {
     });
   }
   
-  // Sequences
+  // Sequences - using LaTeX-friendly notation
   for (let i = 1; i <= 15; i++) {
     const a1 = Math.floor(Math.random() * 5) + 1;
     const r = Math.floor(Math.random() * 3) + 2;
@@ -1121,7 +1121,7 @@ const generateLevel9Extra = (): VisualQuestion[] => {
     const an = a1 * Math.pow(r, n - 1);
     questions.push({
       id: `l9-seq-${i}`,
-      question: `In a geometric sequence, a₁ = ${a1} and r = ${r}. What is a₍${n}₎?`,
+      question: `In a geometric sequence, $a_1 = ${a1}$ and the common ratio $r = ${r}$. What is $a_{${n}}$?`,
       options: [
         { letter: "A", text: String(an / r) },
         { letter: "B", text: String(an) },
@@ -1129,7 +1129,7 @@ const generateLevel9Extra = (): VisualQuestion[] => {
         { letter: "D", text: String(a1 + (n - 1) * r) }
       ],
       correctAnswer: "B",
-      explanation: `aₙ = a₁ × r^(n-1) = ${a1} × ${r}^${n - 1} = ${an}`,
+      explanation: `For a geometric sequence, the nth term formula is $a_n = a_1 \\times r^{n-1}$. Substituting: $a_{${n}} = ${a1} \\times ${r}^{${n - 1}} = ${a1} \\times ${Math.pow(r, n - 1)} = ${an}$.`,
       difficulty: "Hard",
       domain: "Algebra",
       skill: "Sequences",

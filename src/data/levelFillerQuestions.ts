@@ -232,7 +232,7 @@ const generateLevel4Questions = (): VisualQuestion[] => {
 interface VisualQuestion extends Question {
   visual?: {
     type: string;
-    data: Record<string, unknown>;
+    data: any;
     title?: string;
     xLabel?: string;
     yLabel?: string;
@@ -378,11 +378,12 @@ const generateLevel5Questions = (): VisualQuestion[] => {
       question: `A survey of ${pq.total} students shows ${pq.percent}% prefer option A. How many students is this?`,
       visual: {
         type: "barChart",
-        data: {
-          labels: ["Option A", "Other"],
-          values: [pq.percent, 100 - pq.percent]
-        },
-        title: "Survey Results (%)"
+        data: [
+          { name: "Option A", value: pq.percent },
+          { name: "Other", value: 100 - pq.percent }
+        ],
+        title: "Survey Results (%)",
+        yLabel: "Percentage"
       },
       options: [
         { letter: "A", text: String(pq.answer - 10) },
@@ -391,7 +392,7 @@ const generateLevel5Questions = (): VisualQuestion[] => {
         { letter: "D", text: String(pq.answer + 20) }
       ],
       correctAnswer: "B",
-      explanation: `${pq.percent}% of ${pq.total} = ${pq.answer}.`,
+      explanation: `To find ${pq.percent}% of ${pq.total}: multiply ${pq.total} × (${pq.percent}/100) = ${pq.total} × ${pq.percent / 100} = ${pq.answer} students.`,
       difficulty: "Medium",
       domain: "Problem Solving",
       skill: "Percentages",
@@ -452,7 +453,7 @@ const generateLevel5Questions = (): VisualQuestion[] => {
         { letter: "D", text: String(iq.iqr + 8) }
       ],
       correctAnswer: "B",
-      explanation: `IQR = Q3 - Q1 = ${iq.q3} - ${iq.q1} = ${iq.iqr}.`,
+      explanation: `The Interquartile Range (IQR) measures the spread of the middle 50% of data. It is calculated as: IQR = Q3 - Q1 = ${iq.q3} - ${iq.q1} = ${iq.iqr}. The IQR is useful for identifying outliers: values below Q1 - 1.5×IQR or above Q3 + 1.5×IQR are considered outliers.`,
       difficulty: "Medium",
       domain: "Problem Solving",
       skill: "Statistics",
