@@ -667,7 +667,7 @@ const Home = () => {
 
         {/* Bottom Tagline */}
         <p className="text-center text-sm text-muted-foreground italic mb-4">
-          Your future self will thank you.
+          Your future self thanks you!
         </p>
 
         {/* Quick Links - Mobile optimized grid */}

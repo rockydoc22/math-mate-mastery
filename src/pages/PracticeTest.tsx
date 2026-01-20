@@ -14,6 +14,7 @@ import { englishQuestions } from "@/data/englishQuestions";
 import { hardEnglishQuestions } from "@/data/hardEnglishQuestions";
 import { QuestionVisual } from "@/components/QuestionVisual";
 import { AITutorExplanation } from "@/components/AITutorExplanation";
+import { shuffleAllQuestionOptions } from "@/utils/optionShuffler";
 
 interface TestQuestion {
   id: string;
@@ -70,8 +71,8 @@ const PracticeTest = () => {
     const mathPool = hardMath.length >= 20 ? hardMath : allMath;
     const englishPool = hardEnglish.length >= 20 ? hardEnglish : allEnglish;
     
-    const shuffledMath = [...mathPool].sort(() => Math.random() - 0.5).slice(0, 20);
-    const shuffledEnglish = [...englishPool].sort(() => Math.random() - 0.5).slice(0, 20);
+    const shuffledMath = shuffleAllQuestionOptions([...mathPool].sort(() => Math.random() - 0.5).slice(0, 20));
+    const shuffledEnglish = shuffleAllQuestionOptions([...englishPool].sort(() => Math.random() - 0.5).slice(0, 20));
 
     setMathQuestionsList(shuffledMath);
     setEnglishQuestionsList(shuffledEnglish);

@@ -14,6 +14,7 @@ import { additionalMathQuestions } from "@/data/additionalMathQuestions";
 import { englishQuestions } from "@/data/englishQuestions";
 import { QuestionVisual } from "@/components/QuestionVisual";
 import { filterByDifficulty, DifficultyRange } from "@/utils/difficultyRating";
+import { shuffleAllQuestionOptions } from "@/utils/optionShuffler";
 
 interface Room {
   id: string;
@@ -223,9 +224,10 @@ const BattleRoom = () => {
       filteredPool = pool; // Fall back to all questions
     }
 
-    // Shuffle and pick questions
+    // Shuffle and pick questions, then shuffle options within each question
     const shuffled = [...filteredPool].sort(() => Math.random() - 0.5);
-    return shuffled.slice(0, room.question_count);
+    const selected = shuffled.slice(0, room.question_count);
+    return shuffleAllQuestionOptions(selected);
   }, []);
 
   useEffect(() => {

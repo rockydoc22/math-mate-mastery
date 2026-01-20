@@ -20,6 +20,7 @@ import { DifficultyRange, filterByDifficulty, getDifficultyColor } from "@/utils
 import { allTopics } from "@/data/topicCategories";
 import { RatingChangePopup } from "@/components/RatingChangePopup";
 import { SkillRatingCard } from "@/components/SkillRatingCard";
+import { shuffleAllQuestionOptions } from "@/utils/optionShuffler";
 
 type CombinedQuestion = (Question | EnglishQuestion | VisualQuestion | ImageQuestion) & { type: "math" | "english"; difficultyRating?: number };
 
@@ -99,7 +100,10 @@ const Quiz = () => {
     
     // Sort by difficulty (easiest first) then shuffle within difficulty bands
     const sorted = [...filtered].sort((a, b) => (a.difficultyRating || 5) - (b.difficultyRating || 5));
-    return sorted.slice(0, Math.min(count, sorted.length));
+    const selected = sorted.slice(0, Math.min(count, sorted.length));
+    
+    // Shuffle option order within each question to ensure balanced A/B/C/D distribution
+    return shuffleAllQuestionOptions(selected);
   }, [subject, count, difficulty, topicId]);
 
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
