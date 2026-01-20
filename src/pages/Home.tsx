@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 import 'katex/dist/katex.min.css';
 import { InlineMath } from 'react-katex';
 // Elite Practice and Rulebook links added to navigation
@@ -7,7 +7,8 @@ import { Card } from "@/components/ui/card";
 import { 
   Calculator, PenTool, Trophy, Zap, Users, LogIn, User, 
   Award, Swords, ChevronRight, Flame, Bell, Play, Brain, X,
-  Target, RotateCcw, BookOpen, RefreshCw, FileText, Crown, GraduationCap, Download
+  Target, RotateCcw, BookOpen, RefreshCw, FileText, Crown, GraduationCap, Download,
+  Clock, Sparkles
 } from "lucide-react";
 import { useNavigate, Link } from "react-router-dom";
 import { useAuth } from "@/hooks/useAuth";
@@ -19,6 +20,13 @@ import { getSkillLevel, ratingToSATScore } from "@/utils/eloRating";
 import { supabase } from "@/integrations/supabase/client";
 import { usePWAUpdate, APP_VERSION } from "@/hooks/usePWAUpdate";
 import { SATBossArena } from "@/components/SATBossArena";
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+} from "@/components/ui/dialog";
+import { questions } from "@/data/questions";
 
 // Motivational messages for non-logged in or idle users
 const motivationalMessages = [
@@ -26,6 +34,32 @@ const motivationalMessages = [
   "Top scorers practice daily. Join them!",
   "1600 club awaits. Take the first step!",
 ];
+
+// Official SAT dates for 2025-2026
+const upcomingSATDates = [
+  new Date("2025-03-08"),
+  new Date("2025-05-03"),
+  new Date("2025-06-07"),
+  new Date("2026-03-14"),
+  new Date("2026-05-02"),
+  new Date("2026-06-06"),
+  new Date("2026-08-29"),
+  new Date("2026-10-03"),
+  new Date("2026-11-07"),
+  new Date("2026-12-05"),
+];
+
+function getNextSATDate(): { date: Date; daysUntil: number } {
+  const now = new Date();
+  for (const satDate of upcomingSATDates) {
+    if (satDate > now) {
+      const daysUntil = Math.ceil((satDate.getTime() - now.getTime()) / (1000 * 60 * 60 * 24));
+      return { date: satDate, daysUntil };
+    }
+  }
+  // Fallback to first date if all passed
+  return { date: upcomingSATDates[0], daysUntil: 0 };
+}
 
 interface LeaderboardEntry {
   username: string;
@@ -46,6 +80,15 @@ const Home = () => {
   const [recentCorrectAnswers, setRecentCorrectAnswers] = useState(0);
   const [playerAvatar, setPlayerAvatar] = useState("🧑‍🚀");
   const [playerUsername, setPlayerUsername] = useState("Fighter");
+  
+  // Engagement popup state
+  const [showEngagementPopup, setShowEngagementPopup] = useState(false);
+  const [sampleQuestion, setSampleQuestion] = useState<typeof questions[0] | null>(null);
+  const [selectedAnswer, setSelectedAnswer] = useState<string | null>(null);
+  const [showAnswer, setShowAnswer] = useState(false);
+
+  // Next SAT date countdown
+  const nextSAT = getNextSATDate();
 
   // Fetch player stats for Boss Arena
   useEffect(() => {
@@ -88,6 +131,7 @@ const Home = () => {
     
     fetchPlayerStats();
   }, [user]);
+
   // Fetch top 3 leaderboard
   useEffect(() => {
     const fetchLeaderboard = async () => {
@@ -116,8 +160,46 @@ const Home = () => {
     }
   }, [user, streak]);
 
+  // Engagement popup after 5 seconds of inactivity (only for non-logged in users)
+  useEffect(() => {
+    if (user) return; // Don't show to logged-in users
+    
+    const hasSeenPopup = sessionStorage.getItem("engagementPopupShown");
+    if (hasSeenPopup) return;
+
+    const timer = setTimeout(() => {
+      // Pick a random easy-medium question (difficultyRating 1-4)
+      const easyQuestions = questions.filter(q => (q.difficultyRating || 5) <= 4);
+      const randomQ = easyQuestions[Math.floor(Math.random() * easyQuestions.length)];
+      setSampleQuestion(randomQ);
+      setShowEngagementPopup(true);
+      sessionStorage.setItem("engagementPopupShown", "true");
+    }, 5000);
+
+    return () => clearTimeout(timer);
+  }, [user]);
+
   const handleQuickStart = (subject: string) => {
     navigate(`/quiz?subject=${subject}&count=10&difficulty=all&timer=true`);
+  };
+
+  const handleTry3Questions = () => {
+    navigate(`/quiz?subject=both&count=3&difficulty=easy&timer=false`);
+  };
+
+  const handle40SquaredClick = () => {
+    // Navigate to battle lobby for solo mode with easier questions
+    navigate("/battle");
+  };
+
+  const handlePopupAnswer = (answer: string) => {
+    setSelectedAnswer(answer);
+    setShowAnswer(true);
+  };
+
+  const handlePopupContinue = () => {
+    setShowEngagementPopup(false);
+    navigate(`/quiz?subject=both&count=3&difficulty=easy&timer=false`);
   };
 
   const projectedScore = ratings ? ratingToSATScore(ratings.overallRating) : null;
@@ -127,7 +209,7 @@ const Home = () => {
     <div className="min-h-screen bg-gradient-to-br from-background via-primary/5 to-accent/10 p-4 flex flex-col">
       <div className="max-w-2xl mx-auto w-full flex flex-col flex-1 animate-in fade-in duration-300">
         
-        {/* Hero Header */}
+        {/* Hero Header - Simplified */}
         <header className="flex flex-col items-center text-center mb-6 pt-4 relative">
           {/* Sign In / Profile at top right */}
           <div className="absolute top-4 right-0 flex items-center gap-2">
@@ -171,26 +253,36 @@ const Home = () => {
             )}
           </div>
 
-          {/* Large 40² Logo */}
-          <div className="w-28 h-28 rounded-2xl bg-gradient-to-br from-primary to-accent flex items-center justify-center mb-3 shadow-lg">
-            <span className="text-4xl font-bold text-primary-foreground font-mono">40²</span>
+          {/* Clickable 40² Logo - Links to Solo Battle */}
+          <button 
+            onClick={handle40SquaredClick}
+            className="w-28 h-28 rounded-2xl bg-gradient-to-br from-primary to-accent flex items-center justify-center mb-3 shadow-lg hover:shadow-xl hover:scale-105 transition-all cursor-pointer group"
+            title="Start a Solo Battle!"
+          >
+            <span className="text-4xl font-bold text-primary-foreground font-mono group-hover:animate-pulse">40²</span>
+          </button>
+          
+          {/* SAT Countdown - Single Clear CTA */}
+          <div className="mb-4 text-center">
+            <div className="flex items-center justify-center gap-2 mb-2">
+              <Clock className="w-4 h-4 text-primary" />
+              <span className="text-sm text-muted-foreground">Next SAT: {nextSAT.date.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}</span>
+            </div>
+            <div className="text-3xl font-bold text-primary mb-1">{nextSAT.daysUntil} days</div>
+            <p className="text-xs text-muted-foreground">until you crush it</p>
           </div>
-          
-          
-          {/* Fight Club - Centered */}
-          <Link to="/battle" className="mb-3">
-            <Button variant="destructive" size="lg" className="font-bold gap-2">
-              <Swords className="w-5 h-5" />
-              Fight Club
+
+          {/* PRIMARY CTA - Try 3 Questions (for non-logged in users) */}
+          {!user && (
+            <Button 
+              size="lg" 
+              onClick={handleTry3Questions}
+              className="mb-4 gap-2 bg-gradient-to-r from-emerald-500 to-teal-500 hover:from-emerald-600 hover:to-teal-600 text-white font-bold text-lg shadow-lg hover:shadow-xl transition-all hover:scale-105 animate-pulse"
+            >
+              <Sparkles className="w-5 h-5" />
+              Try 3 Questions Now — No Signup
             </Button>
-          </Link>
-          
-          {/* (20+20)² Prediction Test */}
-          <Link to="/practice-test" className="mb-4">
-            <Button variant="outline" size="lg" className="font-mono font-bold gap-2 border-2 border-emerald-500 text-emerald-600 dark:text-emerald-400 hover:bg-emerald-500/10 shadow-[0_0_15px_rgba(16,185,129,0.3)]">
-              (20+20)² Prediction Test
-            </Button>
-          </Link>
+          )}
           
           {/* Carpe Diem Daily Challenge */}
           <Link to="/daily">
@@ -428,6 +520,24 @@ const Home = () => {
           </div>
         </Card>
 
+        {/* Fight Club & Prediction Test - Moved below Quick Practice */}
+        <Card className="p-4 mb-4 border-2 border-border">
+          <div className="flex flex-col gap-3">
+            <Link to="/battle" className="w-full">
+              <Button variant="destructive" size="lg" className="w-full font-bold gap-2">
+                <Swords className="w-5 h-5" />
+                Fight Club
+              </Button>
+            </Link>
+            
+            <Link to="/practice-test" className="w-full">
+              <Button variant="outline" size="lg" className="w-full font-mono font-bold gap-2 border-2 border-emerald-500 text-emerald-600 dark:text-emerald-400 hover:bg-emerald-500/10 shadow-[0_0_15px_rgba(16,185,129,0.3)]">
+                (20+20)² Prediction Test
+              </Button>
+            </Link>
+          </div>
+        </Card>
+
         {/* Study Modes */}
         <Card className="p-4 mb-4 border-2 border-border">
           <div className="flex flex-col gap-3">
@@ -591,6 +701,57 @@ const Home = () => {
           <span className="text-xs text-muted-foreground">v{APP_VERSION}</span>
         </div>
       </div>
+
+      {/* Engagement Popup - Shows after 5s of inactivity for non-logged users */}
+      <Dialog open={showEngagementPopup} onOpenChange={setShowEngagementPopup}>
+        <DialogContent className="sm:max-w-md">
+          <DialogHeader>
+            <DialogTitle className="flex items-center gap-2">
+              <Sparkles className="w-5 h-5 text-primary" />
+              Try a Quick Question!
+            </DialogTitle>
+          </DialogHeader>
+          
+          {sampleQuestion && (
+            <div className="space-y-4">
+              <p className="text-sm font-medium">{sampleQuestion.question}</p>
+              
+              <div className="space-y-2">
+                {sampleQuestion.options.map((option, idx) => {
+                  const optionText = option.text;
+                  const isSelected = selectedAnswer === optionText;
+                  const isCorrect = optionText === sampleQuestion.correctAnswer;
+                  const showCorrectness = showAnswer && isSelected;
+                  
+                  return (
+                    <Button
+                      key={idx}
+                      variant={showCorrectness ? (isCorrect ? "default" : "destructive") : isSelected ? "secondary" : "outline"}
+                      className={`w-full justify-start text-left h-auto py-2 px-3 ${showAnswer && isCorrect ? "bg-green-500 hover:bg-green-600" : ""}`}
+                      onClick={() => !showAnswer && handlePopupAnswer(optionText)}
+                      disabled={showAnswer}
+                    >
+                      {option.letter}. {optionText}
+                    </Button>
+                  );
+                })}
+              </div>
+              
+              {showAnswer && (
+                <div className="space-y-3">
+                  <p className={`text-sm font-medium ${selectedAnswer === sampleQuestion.correctAnswer ? "text-green-600" : "text-destructive"}`}>
+                    {selectedAnswer === sampleQuestion.correctAnswer ? "✓ Correct!" : `✗ The answer is: ${sampleQuestion.correctAnswer}`}
+                  </p>
+                  <Button onClick={handlePopupContinue} className="w-full gap-2">
+                    <Play className="w-4 h-4" />
+                    Try 3 More Questions
+                  </Button>
+                </div>
+              )}
+            </div>
+          )}
+        </DialogContent>
+      </Dialog>
     </div>
   );
 };
