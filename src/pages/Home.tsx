@@ -20,6 +20,7 @@ import { getSkillLevel, ratingToSATScore } from "@/utils/eloRating";
 import { supabase } from "@/integrations/supabase/client";
 import { usePWAUpdate, APP_VERSION } from "@/hooks/usePWAUpdate";
 import { SATBossArena } from "@/components/SATBossArena";
+import { LandingPage } from "@/components/LandingPage";
 import {
   Dialog,
   DialogContent,
@@ -70,6 +71,11 @@ interface LeaderboardEntry {
 const Home = () => {
   const navigate = useNavigate();
   const { user } = useAuth();
+  
+  // Show landing page for guests
+  if (!user) {
+    return <LandingPage />;
+  }
   const { streak, achievements, quizCount, achievementDefs } = useGameStats();
   const { ratings } = useSkillRating();
   const { activePlan, showReminder, dismissReminder, daysUntilExam, weeksUntilExam, workplan, pendingReviewCount, showReviewAlert } = useStudyPlan();
@@ -496,45 +502,44 @@ const Home = () => {
           Be one of the <InlineMath math="40^2 \times \left(\pi + \sum_{k=1}^{\infty} \frac{1}{k^2} - e\right)" /> who crush the SAT
         </h2>
 
-        {/* Quick Start - Primary CTA */}
-        <Card className="p-5 mb-4 border-2 border-border">
-          <h2 className="font-semibold mb-3 text-center">Quick Practice</h2>
-          <div className="grid grid-cols-2 gap-3">
-            <Button 
-              size="lg" 
-              className="h-16 text-lg gap-2"
-              onClick={() => handleQuickStart('math')}
-            >
-              <Calculator className="w-5 h-5" />
-              Math
-            </Button>
-            <Button 
-              size="lg" 
-              variant="secondary"
-              className="h-16 text-lg gap-2"
-              onClick={() => handleQuickStart('english')}
-            >
-              <PenTool className="w-5 h-5" />
-              English
-            </Button>
-          </div>
-        </Card>
-
-        {/* Fight Club & Prediction Test - Moved below Quick Practice */}
+        {/* Main Practice Actions - Reorganized */}
         <Card className="p-4 mb-4 border-2 border-border">
           <div className="flex flex-col gap-3">
+            {/* Fight Club - First */}
             <Link to="/battle" className="w-full">
-              <Button variant="destructive" size="lg" className="w-full font-bold gap-2">
-                <Swords className="w-5 h-5" />
-                Fight Club
+              <Button variant="outline" className="w-full h-auto py-3 flex items-center gap-3 justify-start bg-destructive/10 border-destructive/30 hover:bg-destructive/20">
+                <Swords className="w-5 h-5 text-destructive flex-shrink-0" />
+                <span className="text-sm font-medium">Fight Club</span>
               </Button>
             </Link>
             
+            {/* (20+20)² Prediction Test - Second */}
             <Link to="/practice-test" className="w-full">
-              <Button variant="outline" size="lg" className="w-full font-mono font-bold gap-2 border-2 border-emerald-500 text-emerald-600 dark:text-emerald-400 hover:bg-emerald-500/10 shadow-[0_0_15px_rgba(16,185,129,0.3)]">
-                (20+20)² Prediction Test
+              <Button variant="outline" className="w-full h-auto py-3 flex items-center gap-3 justify-start border-emerald-500/30 hover:bg-emerald-500/10">
+                <Target className="w-5 h-5 text-emerald-500 flex-shrink-0" />
+                <span className="text-sm font-medium font-mono">(20+20)² Prediction Test</span>
               </Button>
             </Link>
+
+            {/* Quick Practice - Math & English */}
+            <div className="grid grid-cols-2 gap-3">
+              <Button 
+                variant="outline"
+                className="h-auto py-3 flex items-center gap-2 justify-center hover:bg-primary/10"
+                onClick={() => handleQuickStart('math')}
+              >
+                <Calculator className="w-5 h-5 text-primary flex-shrink-0" />
+                <span className="text-sm font-medium">Math</span>
+              </Button>
+              <Button 
+                variant="outline"
+                className="h-auto py-3 flex items-center gap-2 justify-center hover:bg-secondary/10"
+                onClick={() => handleQuickStart('english')}
+              >
+                <PenTool className="w-5 h-5 text-secondary flex-shrink-0" />
+                <span className="text-sm font-medium">English</span>
+              </Button>
+            </div>
           </div>
         </Card>
 
