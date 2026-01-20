@@ -64,9 +64,24 @@ export const QuizCard = ({ question, selectedAnswer, onSelectAnswer, showResult,
             </div>
           )}
 
-          {/* Render visual chart if present */}
+          {/* Render visual chart if present - but skip redundant "Equation" tables that just repeat the question */}
           {visualQuestion.visual && !imageQuestion.imageUrl && (
-            <QuestionVisual visual={visualQuestion.visual} />
+            (() => {
+              // Skip rendering if it's just a table with "Equation" header repeating what's in the question
+              const visual = visualQuestion.visual;
+              if (visual?.type === 'table' && visual?.data?.headers) {
+                const headers = visual.data.headers as string[];
+                // Skip if headers are just "Equation" or similar redundant single-column tables
+                if (headers.length === 1 && ['Equation', 'Inequality'].includes(headers[0])) {
+                  return null;
+                }
+                // Skip if it's "Equation 1" / "Equation 2" for systems already in question text
+                if (headers.length === 2 && headers[0] === 'Equation 1' && headers[1] === 'Equation 2') {
+                  return null;
+                }
+              }
+              return <QuestionVisual visual={visual} />;
+            })()
           )}
 
           <div className="space-y-2 sm:space-y-3">

@@ -5,7 +5,6 @@ import { QuizResults } from "@/components/QuizResults";
 import { questions, Question } from "@/data/questions";
 import { englishQuestions, EnglishQuestion } from "@/data/englishQuestions";
 import { visualMathQuestions, visualEnglishQuestions, VisualQuestion, moreMathVisualQuestions, moreEnglishVisualQuestions } from "@/data/visualQuestions";
-import { allFillerQuestions } from "@/data/levelFillerQuestions";
 import { physicsQuestions, precalcQuestions, calculusQuestions } from "@/data/advancedSubjects";
 import { importedSATMathQuestions, ImageQuestion } from "@/data/importedSATQuestions";
 import { ArrowRight, ArrowLeft, Clock, Pause, Play } from "lucide-react";
@@ -57,17 +56,17 @@ const Quiz = () => {
       pool = calculusQuestions.map((q) => ({ ...q, type: "math" as const }));
     } else {
       // SAT subjects
+      // SAT subjects - questions already filtered to difficulty 3+ in questions.ts
       if (subject === "math" || subject === "both") {
         pool = [...pool, ...questions.map((q) => ({ ...q, type: "math" as const }))];
-        pool = [...pool, ...visualMathQuestions.map((q) => ({ ...q, type: "math" as const }))];
-        pool = [...pool, ...moreMathVisualQuestions.map((q) => ({ ...q, type: "math" as const }))];
-        pool = [...pool, ...allFillerQuestions.map((q) => ({ ...q, type: "math" as const }))];
-        pool = [...pool, ...importedSATMathQuestions.map((q) => ({ ...q, type: "math" as const }))];
+        pool = [...pool, ...visualMathQuestions.filter(q => (q.difficultyRating || 5) >= 3).map((q) => ({ ...q, type: "math" as const }))];
+        pool = [...pool, ...moreMathVisualQuestions.filter(q => (q.difficultyRating || 5) >= 3).map((q) => ({ ...q, type: "math" as const }))];
+        pool = [...pool, ...importedSATMathQuestions.filter(q => (q.difficultyRating || 5) >= 3).map((q) => ({ ...q, type: "math" as const }))];
       }
       if (subject === "english" || subject === "both") {
         pool = [...pool, ...englishQuestions.map((q) => ({ ...q, type: "english" as const }))];
-        pool = [...pool, ...visualEnglishQuestions.map((q) => ({ ...q, type: "english" as const }))];
-        pool = [...pool, ...moreEnglishVisualQuestions.map((q) => ({ ...q, type: "english" as const }))];
+        pool = [...pool, ...visualEnglishQuestions.filter(q => (q.difficultyRating || 5) >= 3).map((q) => ({ ...q, type: "english" as const }))];
+        pool = [...pool, ...moreEnglishVisualQuestions.filter(q => (q.difficultyRating || 5) >= 3).map((q) => ({ ...q, type: "english" as const }))];
       }
     }
 

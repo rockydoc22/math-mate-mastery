@@ -11,10 +11,16 @@ import { useSoundEffects } from "@/hooks/useSoundEffects";
 import { ArrowLeft, ArrowRight, Zap, Trophy, Calendar, Star, Flame } from "lucide-react";
 import { questions } from "@/data/questions";
 import { englishQuestions } from "@/data/englishQuestions";
+import { shuffleAllQuestionOptions } from "@/utils/optionShuffler";
 
 const DAILY_QUESTIONS = 10;
+const MATH_QUESTIONS = 5;
+const ENGLISH_QUESTIONS = 5;
 const BONUS_XP_PERFECT = 50;
 const BONUS_XP_GOOD = 20;
+
+// Minimum difficulty rating to qualify as SAT-level
+const MIN_SAT_DIFFICULTY = 3;
 
 const DailyChallenge = () => {
   const { user } = useAuth();
@@ -29,22 +35,42 @@ const DailyChallenge = () => {
   const [finished, setFinished] = useState(false);
 
   // Generate daily questions based on date (same for all users)
+  // Ensures EXACTLY 5 math and 5 english, filtering out trivially easy questions
   const dailyQuestions = useMemo(() => {
     const today = new Date().toISOString().split("T")[0];
     let seedValue = today.split("-").reduce((a, b) => a + parseInt(b), 0);
-    const allQuestions = [
-      ...questions.map((q) => ({ ...q, type: "math" as const })),
-      ...englishQuestions.map((q) => ({ ...q, type: "english" as const })),
-    ];
     
-    // Seeded shuffle
-    const shuffled = [...allQuestions].sort(() => {
-      seedValue++;
-      const x = Math.sin(seedValue) * 10000;
-      return x - Math.floor(x) - 0.5;
-    });
+    // Filter to only SAT-level questions (difficulty >= 3)
+    const satLevelMath = questions
+      .filter(q => (q.difficultyRating || 5) >= MIN_SAT_DIFFICULTY)
+      .map((q) => ({ ...q, type: "math" as const }));
     
-    return shuffled.slice(0, DAILY_QUESTIONS);
+    const satLevelEnglish = englishQuestions
+      .filter(q => (q.difficultyRating || 5) >= MIN_SAT_DIFFICULTY)
+      .map((q) => ({ ...q, type: "english" as const }));
+    
+    // Seeded shuffle function
+    const seededShuffle = <T,>(arr: T[], seed: number): T[] => {
+      let s = seed;
+      return [...arr].sort(() => {
+        s++;
+        const x = Math.sin(s) * 10000;
+        return x - Math.floor(x) - 0.5;
+      });
+    };
+    
+    // Select 5 math and 5 english questions with seeded randomness
+    const shuffledMath = seededShuffle(satLevelMath, seedValue);
+    const shuffledEnglish = seededShuffle(satLevelEnglish, seedValue + 1000);
+    
+    const selectedMath = shuffledMath.slice(0, MATH_QUESTIONS);
+    const selectedEnglish = shuffledEnglish.slice(0, ENGLISH_QUESTIONS);
+    
+    // Combine and shuffle the final set, then shuffle options within each
+    const combined = [...selectedMath, ...selectedEnglish];
+    const finalShuffled = seededShuffle(combined, seedValue + 2000);
+    
+    return shuffleAllQuestionOptions(finalShuffled);
   }, []);
 
   const checkIfCompleted = async () => {

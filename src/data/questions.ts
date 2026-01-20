@@ -135,8 +135,13 @@ for (const q of questionsWithoutImages) {
 }
 
 // Cap difficulty ratings at 10 (remove levels 11-13)
+// Also filter out trivially easy questions (difficulty 1-2) that are not SAT level
+// SAT questions start at difficulty 3+
+const MIN_SAT_DIFFICULTY = 3;
+
 export const questions: Question[] = questionsWithoutImages
   .filter(q => !duplicateIds.has(q.id))
+  .filter(q => (q.difficultyRating || 5) >= MIN_SAT_DIFFICULTY) // Remove non-SAT trivial questions
   .map(q => ({
     ...q,
     difficultyRating: q.difficultyRating ? Math.min(q.difficultyRating, 10) : q.difficultyRating
