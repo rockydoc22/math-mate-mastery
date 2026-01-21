@@ -259,13 +259,17 @@ const Home = () => {
             )}
           </div>
 
+          {/* SAT Branding */}
+          <h1 className="text-2xl font-bold text-foreground mb-2">SAT Mastery</h1>
+          <p className="text-sm text-muted-foreground mb-3">The path to 1600</p>
+          
           {/* Clickable 40² Logo - Links to Solo Battle */}
           <button 
             onClick={handle40SquaredClick}
-            className="w-28 h-28 rounded-2xl bg-gradient-to-br from-primary to-accent flex items-center justify-center mb-3 shadow-lg hover:shadow-xl hover:scale-105 transition-all cursor-pointer group"
+            className="w-24 h-24 rounded-2xl bg-gradient-to-br from-primary to-accent flex items-center justify-center mb-3 shadow-lg hover:shadow-xl hover:scale-105 transition-all cursor-pointer group"
             title="Start a Solo Battle!"
           >
-            <span className="text-4xl font-bold text-primary-foreground font-mono group-hover:animate-pulse">40²</span>
+            <span className="text-3xl font-bold text-primary-foreground font-mono group-hover:animate-pulse">40²</span>
           </button>
           
           {/* SAT Countdown - Single Clear CTA */}
