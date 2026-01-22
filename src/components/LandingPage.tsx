@@ -90,13 +90,10 @@ export const LandingPage = () => {
         <div className="max-w-2xl mx-auto">
           {/* Unified Logo */}
           <div className="mb-6 flex justify-center">
-            <SATMasteryLogo size="lg" />
+            <SATMasteryLogo size="lg" layout="stacked" showTagline />
           </div>
           
           {/* Headline */}
-          <h1 className="text-4xl font-bold mb-3 bg-gradient-to-r from-primary via-accent to-secondary bg-clip-text text-transparent">
-            The Path to 1600
-          </h1>
           <p className="text-lg text-muted-foreground mb-6">
             Free SAT prep that actually works. Practice smarter, not harder.
           </p>
@@ -106,11 +103,10 @@ export const LandingPage = () => {
             <div className="flex items-center justify-center gap-2 mb-2">
               <Clock className="w-4 h-4 text-primary" />
               <span className="text-sm text-muted-foreground">
-                Next SAT: {nextSAT.date.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}
+                Next SAT: {nextSAT.date.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })} • until you crush it
               </span>
             </div>
             <div className="text-4xl font-bold text-primary mb-1">{nextSAT.daysUntil} days</div>
-            <p className="text-xs text-muted-foreground">until you crush it</p>
           </div>
 
           {/* Primary CTA */}
@@ -122,8 +118,6 @@ export const LandingPage = () => {
             <Sparkles className="w-5 h-5" />
             Try 3 Questions Now — Free
           </Button>
-          
-          <p className="text-xs text-muted-foreground mb-4">No signup required</p>
 
           {/* Secondary CTA */}
           <Link to="/auth">

@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 interface SATMasteryLogoProps {
   size?: "sm" | "md" | "lg";
   showTagline?: boolean;
+  layout?: "row" | "stacked";
   clickable?: boolean;
   onClick?: () => void;
 }
@@ -10,6 +11,7 @@ interface SATMasteryLogoProps {
 export const SATMasteryLogo = ({ 
   size = "md", 
   showTagline = true,
+  layout = "row",
   clickable = false,
   onClick
 }: SATMasteryLogoProps) => {
@@ -37,7 +39,13 @@ export const SATMasteryLogo = ({
   const classes = sizeClasses[size];
 
   const LogoContent = () => (
-    <div className={`flex items-center ${classes.container}`}>
+    <div
+      className={
+        layout === "stacked"
+          ? "flex flex-col items-center text-center gap-3"
+          : `flex items-center ${classes.container}`
+      }
+    >
       {/* 40² Icon */}
       <div 
         className={`${classes.icon} rounded-xl bg-gradient-to-br from-primary to-accent flex items-center justify-center shadow-lg ${clickable ? 'hover:shadow-xl hover:scale-105 transition-all cursor-pointer group' : ''}`}
@@ -48,10 +56,10 @@ export const SATMasteryLogo = ({
       </div>
       
       {/* Text */}
-      <div className="flex flex-col">
-        <h1 className={`${classes.title} font-bold text-foreground leading-tight`}>
+      <div className={layout === "stacked" ? "flex flex-col items-center" : "flex flex-col"}>
+        <div className={`${classes.title} font-bold text-foreground leading-tight`}>
           SAT Mastery
-        </h1>
+        </div>
         {showTagline && (
           <p className={`${classes.tagline} text-muted-foreground`}>
             The path to 1600
