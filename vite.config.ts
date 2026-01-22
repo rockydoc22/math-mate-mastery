@@ -50,24 +50,11 @@ export default defineConfig(({ mode }) => ({
         maximumFileSizeToCacheInBytes: 5 * 1024 * 1024,
         skipWaiting: true,
         clientsClaim: true,
-        // Disable navigation preload to prevent stale HTML
+        // iOS Safari PWAs are prone to serving stale cached HTML that points to
+        // deleted build chunks (white screen). We avoid caching HTML entirely.
         navigationPreload: false,
-        // Clean old caches on activate
         cleanupOutdatedCaches: true,
         runtimeCaching: [
-          {
-            // HTML pages - always fetch from network first
-            urlPattern: /^https:\/\/.*\/?$/i,
-            handler: "NetworkFirst",
-            options: {
-              cacheName: "html-cache",
-              expiration: {
-                maxEntries: 10,
-                maxAgeSeconds: 60 * 60, // 1 hour max
-              },
-              networkTimeoutSeconds: 3,
-            },
-          },
           {
             urlPattern: /^https:\/\/fonts\.googleapis\.com\/.*/i,
             handler: "CacheFirst",
