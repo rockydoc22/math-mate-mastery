@@ -7,6 +7,7 @@ import {
 } from "lucide-react";
 import { Link, useNavigate } from "react-router-dom";
 import { APP_VERSION } from "@/hooks/usePWAUpdate";
+import { SATMasteryLogo } from "@/components/SATMasteryLogo";
 
 // Official SAT dates for 2025-2026
 const upcomingSATDates = [
@@ -87,9 +88,9 @@ export const LandingPage = () => {
       {/* Hero Section */}
       <header className="px-4 pt-8 pb-12 text-center">
         <div className="max-w-2xl mx-auto">
-          {/* Logo */}
-          <div className="w-24 h-24 rounded-2xl bg-gradient-to-br from-primary to-accent flex items-center justify-center mb-6 mx-auto shadow-lg">
-            <span className="text-3xl font-bold text-primary-foreground font-mono">40²</span>
+          {/* Unified Logo */}
+          <div className="mb-6 flex justify-center">
+            <SATMasteryLogo size="lg" />
           </div>
           
           {/* Headline */}
