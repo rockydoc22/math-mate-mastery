@@ -7,9 +7,9 @@ import { Label } from "@/components/ui/label";
 import { useAuth } from "@/hooks/useAuth";
 import { toast } from "@/hooks/use-toast";
 import { supabase } from "@/integrations/supabase/client";
-import { User, Mail, Lock, ArrowLeft, HelpCircle, Eye, EyeOff } from "lucide-react";
+import { User, Mail, Lock, ArrowLeft, Eye, EyeOff } from "lucide-react";
 
-type AuthMode = "signIn" | "signUp" | "forgotUsername" | "resetPassword" | "tempPassword";
+type AuthMode = "signIn" | "signUp" | "resetPassword" | "tempPassword";
 
 // Password validation helper
 const validatePassword = (password: string): { valid: boolean; error?: string } => {
@@ -72,21 +72,9 @@ const Auth = () => {
     if (user && mode !== "resetPassword") navigate("/");
   }, [user, navigate, mode]);
 
-  const lookupEmailByUsername = async (username: string): Promise<string | null> => {
-    const { data, error } = await supabase.rpc('get_email_by_username', { 
-      lookup_username: username 
-    });
-    if (error || !data) return null;
-    return data as string;
-  };
-
-  const lookupUsernameByEmail = async (email: string): Promise<string | null> => {
-    const { data, error } = await supabase.rpc('get_username_by_email', { 
-      lookup_email: email 
-    });
-    if (error || !data) return null;
-    return data as string;
-  };
+  // SECURITY NOTE:
+  // We intentionally do not perform username<->email lookups client-side.
+  // That pattern enables account/email enumeration.
 
   const sendTempPassword = async (email: string) => {
     const { data, error } = await supabase.functions.invoke('send-temp-password', {
@@ -121,72 +109,45 @@ const Auth = () => {
         if (error) throw error;
         toast({ title: "Account created! Welcome aboard! 🎮" });
       } else if (mode === "signIn") {
-        let emailToUse = form.emailOrUsername.trim();
-        
-        // If it doesn't look like an email, try to look up the email by username
+        const emailToUse = form.emailOrUsername.trim();
+
         if (!isEmail(emailToUse)) {
-          const lookedUpEmail = await lookupEmailByUsername(emailToUse);
-          if (!lookedUpEmail) {
-            toast({ 
-              title: "Username not found", 
-              description: "Check your username or try signing in with email",
-              variant: "destructive" 
-            });
-            setLoading(false);
-            return;
-          }
-          emailToUse = lookedUpEmail;
+          toast({
+            title: "Please use your email",
+            description: "For security, sign-in requires an email address.",
+            variant: "destructive",
+          });
+          setLoading(false);
+          return;
         }
-        
+
         const { error } = await signIn(emailToUse, form.password);
         if (error) throw error;
         toast({ title: "Welcome back! Let's practice! 💪" });
       } else if (mode === "tempPassword") {
         // Send temporary password via edge function
-        let emailToUse = form.emailOrUsername.trim();
+        const identifier = form.emailOrUsername.trim();
         
-        if (!emailToUse) {
+        if (!identifier) {
           toast({ title: "Please enter your username or email", variant: "destructive" });
           setLoading(false);
           return;
         }
-        
-        if (!isEmail(emailToUse)) {
-          const lookedUpEmail = await lookupEmailByUsername(emailToUse);
-          if (!lookedUpEmail) {
-            toast({ 
-              title: "Username not found", 
-              description: "Try entering your email instead",
-              variant: "destructive" 
-            });
-            setLoading(false);
-            return;
-          }
-          emailToUse = lookedUpEmail;
+
+        // The backend function accepts either email OR username and never reveals whether an account exists.
+        if (isEmail(identifier)) {
+          await sendTempPassword(identifier);
+        } else {
+          const { data, error } = await supabase.functions.invoke("send-temp-password", {
+            body: { username: identifier },
+          });
+          if (error) throw error;
+          if (data?.error) throw new Error(data.error);
         }
-        
-        await sendTempPassword(emailToUse);
         toast({ 
           title: "Temporary password sent! 📧", 
           description: "Check your email, sign in with the temp password, then change it in Settings" 
         });
-        setMode("signIn");
-      } else if (mode === "forgotUsername") {
-        const username = await lookupUsernameByEmail(form.email.trim());
-        if (!username) {
-          toast({ 
-            title: "Email not found", 
-            description: "No account exists with this email address",
-            variant: "destructive" 
-          });
-          setLoading(false);
-          return;
-        }
-        toast({ 
-          title: `Your username is: ${username}`,
-          description: "You can now sign in with this username",
-        });
-        setForm(prev => ({ ...prev, emailOrUsername: username }));
         setMode("signIn");
       } else if (mode === "resetPassword") {
         if (form.password !== form.confirmPassword) {
@@ -238,7 +199,6 @@ const Auth = () => {
     switch (mode) {
       case "signUp": return "Create your account to start grinding";
       case "tempPassword": return "Reset your password";
-      case "forgotUsername": return "Recover your username";
       case "resetPassword": return "Enter your new password";
       default: return "Sign in to continue your journey";
     }
@@ -249,7 +209,6 @@ const Auth = () => {
     switch (mode) {
       case "signUp": return "Create Account";
       case "tempPassword": return "Send Temporary Password";
-      case "forgotUsername": return "Find My Username";
       case "resetPassword": return "Update Password";
       default: return "Sign In";
     }
@@ -272,7 +231,7 @@ const Auth = () => {
         </div>
 
         <Card className="p-6 border-2 border-border bg-card/80 backdrop-blur">
-          {(mode === "forgotUsername" || mode === "resetPassword" || mode === "tempPassword") && (
+          {(mode === "resetPassword" || mode === "tempPassword") && (
             <button
               type="button"
               className="flex items-center gap-1 text-muted-foreground hover:text-foreground text-sm mb-4"
@@ -302,16 +261,20 @@ const Auth = () => {
               </div>
             )}
 
-            {/* Sign In, Temp Password - Username OR Email field */}
+            {/* Sign In / Temp Password identifier field */}
             {(mode === "signIn" || mode === "tempPassword") && (
               <div className="space-y-2">
-                <Label htmlFor="emailOrUsername">Username or Email</Label>
+                <Label htmlFor="emailOrUsername">{mode === "signIn" ? "Email" : "Username or Email"}</Label>
                 <div className="relative">
-                  <User className="absolute left-3 top-3 w-4 h-4 text-muted-foreground" />
+                  {mode === "signIn" ? (
+                    <Mail className="absolute left-3 top-3 w-4 h-4 text-muted-foreground" />
+                  ) : (
+                    <User className="absolute left-3 top-3 w-4 h-4 text-muted-foreground" />
+                  )}
                   <Input
                     id="emailOrUsername"
                     type="text"
-                    placeholder="username or email@example.com"
+                    placeholder={mode === "signIn" ? "you@email.com" : "username or you@email.com"}
                     className="pl-10"
                     value={form.emailOrUsername}
                     onChange={(e) => setForm({ ...form, emailOrUsername: e.target.value })}
@@ -342,28 +305,6 @@ const Auth = () => {
                     required
                   />
                 </div>
-              </div>
-            )}
-
-            {/* Forgot Username - Email field */}
-            {mode === "forgotUsername" && (
-              <div className="space-y-2">
-                <Label htmlFor="recoveryEmail">Your Email Address</Label>
-                <div className="relative">
-                  <Mail className="absolute left-3 top-3 w-4 h-4 text-muted-foreground" />
-                  <Input
-                    id="recoveryEmail"
-                    type="email"
-                    placeholder="you@email.com"
-                    className="pl-10"
-                    value={form.email}
-                    onChange={(e) => setForm({ ...form, email: e.target.value })}
-                    required
-                  />
-                </div>
-                <p className="text-xs text-muted-foreground">
-                  Enter the email you used to sign up and we'll show you your username
-                </p>
               </div>
             )}
 
@@ -451,18 +392,10 @@ const Auth = () => {
                       <Lock className="w-3 h-3" />
                       Forgot password?
                     </button>
-                    <button
-                      type="button"
-                      className="text-muted-foreground hover:text-primary flex items-center gap-1"
-                      onClick={() => setMode("forgotUsername")}
-                    >
-                      <HelpCircle className="w-3 h-3" />
-                      Forgot username?
-                    </button>
                   </div>
                 </>
               )}
-              {mode !== "forgotUsername" && mode !== "tempPassword" && (
+              {mode !== "tempPassword" && (
                 <button
                   type="button"
                   className="text-primary hover:underline text-sm"
