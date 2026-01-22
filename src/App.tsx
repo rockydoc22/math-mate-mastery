@@ -5,6 +5,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { AuthProvider } from "@/hooks/useAuth";
 import { PWAUpdatePrompt } from "@/components/PWAUpdatePrompt";
+import { LandingPage } from "@/components/LandingPage";
 import Home from "./pages/Home";
 import Quiz from "./pages/Quiz";
 import MathQuiz from "./pages/MathQuiz";
@@ -45,6 +46,8 @@ const App = () => (
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<Home />} />
+            {/* Marketing / homepage preview (useful even when logged in) */}
+            <Route path="/landing" element={<LandingPage />} />
             <Route path="/quiz" element={<Quiz />} />
             <Route path="/math" element={<MathQuiz />} />
             <Route path="/english" element={<EnglishQuiz />} />
