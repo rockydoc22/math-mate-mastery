@@ -1,9 +1,11 @@
 import { Link } from "react-router-dom";
 
 interface SATMasteryLogoProps {
-  size?: "sm" | "md" | "lg";
+  size?: "sm" | "md" | "lg" | "xl";
   showTagline?: boolean;
   layout?: "row" | "stacked";
+  titleText?: string;
+  taglineText?: string;
   clickable?: boolean;
   onClick?: () => void;
 }
@@ -12,6 +14,8 @@ export const SATMasteryLogo = ({
   size = "md", 
   showTagline = true,
   layout = "row",
+  titleText = "SAT Mastery",
+  taglineText = "The path to 1600",
   clickable = false,
   onClick
 }: SATMasteryLogoProps) => {
@@ -33,7 +37,13 @@ export const SATMasteryLogo = ({
       icon: "w-20 h-20 text-2xl",
       title: "text-2xl",
       tagline: "text-sm"
-    }
+    },
+    xl: {
+      container: "gap-4",
+      icon: "w-28 h-28 text-4xl",
+      title: "text-2xl",
+      tagline: "text-sm",
+    },
   };
 
   const classes = sizeClasses[size];
@@ -58,11 +68,11 @@ export const SATMasteryLogo = ({
       {/* Text */}
       <div className={layout === "stacked" ? "flex flex-col items-center" : "flex flex-col"}>
         <div className={`${classes.title} font-bold text-foreground leading-tight`}>
-          SAT Mastery
+          {titleText}
         </div>
         {showTagline && (
           <p className={`${classes.tagline} text-muted-foreground`}>
-            The path to 1600
+            {taglineText}
           </p>
         )}
       </div>
