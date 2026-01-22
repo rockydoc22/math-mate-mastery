@@ -23,6 +23,13 @@ export const PWAUpdateButton = () => {
           New version available!
         </p>
       )}
+
+      <a
+        href="/quick-fix.html"
+        className="text-xs text-muted-foreground underline underline-offset-4"
+      >
+        iPhone blank screen? Quick Fix
+      </a>
     </div>
   );
 };

@@ -8,7 +8,7 @@ import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import { ArrowLeft, User, Palette, Save, Swords } from "lucide-react";
+import { ArrowLeft, User, Palette, Save, Swords, Wrench } from "lucide-react";
 import { toast } from "@/hooks/use-toast";
 import { XPBar } from "@/components/XPBar";
 import { AchievementBadge } from "@/components/AchievementBadge";
@@ -87,6 +87,35 @@ const Profile = () => {
       toast({ title: "Error saving profile", variant: "destructive" });
     } else {
       toast({ title: "Profile saved!" });
+    }
+  };
+
+  const handleRepairApp = async () => {
+    try {
+      toast({
+        title: "Repairing app…",
+        description: "Clearing cached data and reloading.",
+      });
+
+      if ("serviceWorker" in navigator) {
+        const regs = await navigator.serviceWorker.getRegistrations();
+        await Promise.all(regs.map((r) => r.unregister()));
+      }
+      if ("caches" in window) {
+        const names = await caches.keys();
+        await Promise.all(names.map((n) => caches.delete(n)));
+      }
+
+      // Reload to fetch fresh HTML + assets
+      window.location.reload();
+    } catch (e) {
+      console.error("Repair app failed", e);
+      toast({
+        title: "Repair failed",
+        description: "Open Quick Fix for iPhone steps.",
+        variant: "destructive",
+      });
+      window.location.href = "/quick-fix.html";
     }
   };
 
@@ -227,6 +256,20 @@ const Profile = () => {
         <Card className="p-6">
           <h3 className="font-semibold mb-4">App Settings</h3>
           <PWAUpdateButton />
+
+          <div className="mt-4 space-y-2">
+            <Button variant="outline" className="w-full" onClick={handleRepairApp}>
+              <Wrench className="w-4 h-4 mr-2" />
+              Repair App (Fix blank screen)
+            </Button>
+
+            <a
+              href="/quick-fix.html"
+              className="block text-xs text-muted-foreground underline underline-offset-4"
+            >
+              Having trouble updating on iPhone? Open Quick Fix
+            </a>
+          </div>
         </Card>
       </div>
     </div>

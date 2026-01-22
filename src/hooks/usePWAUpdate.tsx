@@ -1,6 +1,7 @@
 import { useEffect, useCallback, useRef, useState } from "react";
 import { useRegisterSW } from "virtual:pwa-register/react";
 import { toast } from "@/hooks/use-toast";
+import { ToastAction } from "@/components/ui/toast";
 
 export const APP_VERSION = "1.0.3";
 
@@ -62,8 +63,13 @@ export const usePWAUpdate = () => {
       setIsUpdating(false);
       toast({
         title: "Update Failed",
-        description: "Please close and reopen the app, then try again.",
+        description: "If you're on iPhone and the app is blank, use Quick Fix to refresh to the newest version.",
         variant: "destructive",
+        action: (
+          <ToastAction altText="Open Quick Fix" onClick={() => (window.location.href = "/quick-fix.html")}>
+            Quick Fix
+          </ToastAction>
+        ),
       });
     }
   }, [updateServiceWorker]);

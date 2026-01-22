@@ -18,7 +18,15 @@ export function PWAUpdatePrompt() {
           <div className="bg-primary text-primary-foreground rounded-lg p-4 shadow-lg flex items-center justify-between gap-3">
             <div className="flex items-center gap-3">
               <RefreshCw className={`h-5 w-5 ${isUpdating ? 'animate-spin' : ''}`} />
-              <span className="text-sm font-medium">New version available!</span>
+              <div className="flex flex-col">
+                <span className="text-sm font-medium">New version available!</span>
+                <a
+                  href="/quick-fix.html"
+                  className="text-xs opacity-90 underline underline-offset-4"
+                >
+                  If iPhone shows blank screen → Quick Fix
+                </a>
+              </div>
             </div>
             <Button
               size="sm"
