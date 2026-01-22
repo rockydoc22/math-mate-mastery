@@ -93,7 +93,7 @@ export const LandingPage = () => {
             <SATMasteryLogo
               size="xl"
               layout="stacked"
-              titleText="An SAT App that takes you to 1600"
+              titleText="1600: The SAT App"
               showTagline={false}
             />
           </div>
