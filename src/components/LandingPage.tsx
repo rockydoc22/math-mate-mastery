@@ -90,7 +90,12 @@ export const LandingPage = () => {
         <div className="max-w-2xl mx-auto">
           {/* Unified Logo */}
           <div className="mb-6 flex justify-center">
-            <SATMasteryLogo size="lg" layout="stacked" showTagline />
+            <SATMasteryLogo
+              size="xl"
+              layout="stacked"
+              titleText="An SAT App that takes you to 1600"
+              showTagline={false}
+            />
           </div>
           
           {/* Headline */}
@@ -103,29 +108,31 @@ export const LandingPage = () => {
             <div className="flex items-center justify-center gap-2 mb-2">
               <Clock className="w-4 h-4 text-primary" />
               <span className="text-sm text-muted-foreground">
-                Next SAT: {nextSAT.date.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })} • until you crush it
+                Next SAT: {nextSAT.date.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}
               </span>
             </div>
-            <div className="text-4xl font-bold text-primary mb-1">{nextSAT.daysUntil} days</div>
+            <div className="text-4xl font-bold text-primary mb-1">
+              {nextSAT.daysUntil} days <span className="text-base font-semibold text-muted-foreground">• until you crush it</span>
+            </div>
           </div>
 
-          {/* Primary CTA */}
-          <Button 
-            size="lg" 
-            onClick={handleTry3Questions}
-            className="mb-4 gap-2 bg-gradient-to-r from-emerald-500 to-teal-500 hover:from-emerald-600 hover:to-teal-600 text-white font-bold text-lg shadow-lg hover:shadow-xl transition-all hover:scale-105 animate-pulse px-8 py-6"
-          >
-            <Sparkles className="w-5 h-5" />
-            Try 3 Questions Now — Free
-          </Button>
-
-          {/* Secondary CTA */}
-          <Link to="/auth">
-            <Button variant="outline" size="lg" className="gap-2">
-              Create Free Account
-              <ArrowRight className="w-4 h-4" />
+          {/* CTAs */}
+          <div className="flex flex-col items-center gap-3">
+            <Button 
+              size="lg" 
+              onClick={handleTry3Questions}
+              className="gap-2 bg-gradient-to-r from-emerald-500 to-teal-500 hover:from-emerald-600 hover:to-teal-600 text-white font-bold text-lg shadow-lg hover:shadow-xl transition-all hover:scale-105 animate-pulse px-8 py-6"
+            >
+              <Sparkles className="w-5 h-5" />
+              Try 3 Questions Now — Free
             </Button>
-          </Link>
+            <Link to="/auth">
+              <Button variant="outline" size="lg" className="gap-2">
+                Create Free Account
+                <ArrowRight className="w-4 h-4" />
+              </Button>
+            </Link>
+          </div>
         </div>
       </header>
 
