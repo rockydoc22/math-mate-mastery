@@ -162,8 +162,8 @@ export const LandingPage = () => {
           <h2 className="text-2xl font-bold text-center mb-8">Why Students Love Us</h2>
           <div className="grid gap-4">
             {features.map((feature, idx) => (
-              <Card key={idx} className="p-4 flex items-start gap-4">
-                <div className="p-2 rounded-lg bg-primary/10">
+              <Card key={idx} className="p-6 flex flex-col items-center text-center gap-3">
+                <div className="p-3 rounded-lg bg-primary/10">
                   <feature.icon className="w-6 h-6 text-primary" />
                 </div>
                 <div>
@@ -178,9 +178,9 @@ export const LandingPage = () => {
 
       {/* What You Get */}
       <section className="px-4 py-12 bg-muted/30">
-        <div className="max-w-2xl mx-auto">
-          <h2 className="text-2xl font-bold text-center mb-8">Everything You Need</h2>
-          <div className="space-y-3">
+        <div className="max-w-2xl mx-auto text-center">
+          <h2 className="text-2xl font-bold mb-8">Everything You Need</h2>
+          <div className="grid gap-3 text-left max-w-md mx-auto">
             {[
               "2,000+ SAT-style questions (Math & English)",
               "Adaptive difficulty that matches your level",
@@ -191,7 +191,7 @@ export const LandingPage = () => {
               "Track progress with insights dashboard",
               "100% free to use"
             ].map((item, idx) => (
-              <div key={idx} className="flex items-center gap-3">
+              <div key={idx} className="flex items-center gap-3 justify-start">
                 <CheckCircle className="w-5 h-5 text-emerald-500 flex-shrink-0" />
                 <span className="text-sm">{item}</span>
               </div>
@@ -206,16 +206,14 @@ export const LandingPage = () => {
           <h2 className="text-2xl font-bold text-center mb-8">Student Results</h2>
           <div className="grid gap-4">
             {testimonials.map((testimonial, idx) => (
-              <Card key={idx} className="p-4">
-                <div className="flex items-start gap-3">
-                  <div className="flex gap-0.5">
-                    {[...Array(5)].map((_, i) => (
-                      <Star key={i} className="w-4 h-4 fill-amber-400 text-amber-400" />
-                    ))}
-                  </div>
+              <Card key={idx} className="p-5 text-center">
+                <div className="flex justify-center gap-0.5 mb-3">
+                  {[...Array(5)].map((_, i) => (
+                    <Star key={i} className="w-4 h-4 fill-amber-400 text-amber-400" />
+                  ))}
                 </div>
-                <p className="mt-3 text-sm font-medium">"{testimonial.quote}"</p>
-                <div className="mt-2 flex items-center justify-between">
+                <p className="text-sm font-medium mb-3">"{testimonial.quote}"</p>
+                <div className="flex items-center justify-center gap-2">
                   <span className="text-xs text-muted-foreground">— {testimonial.author}</span>
                   <span className="text-xs font-bold text-primary">{testimonial.score}</span>
                 </div>
