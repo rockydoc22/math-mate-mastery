@@ -9,7 +9,7 @@ import { toast } from "@/hooks/use-toast";
 import { supabase } from "@/integrations/supabase/client";
 import { User, Mail, Lock, ArrowLeft, Eye, EyeOff } from "lucide-react";
 
-type AuthMode = "signIn" | "signUp" | "resetPassword" | "tempPassword";
+type AuthMode = "signIn" | "signUp" | "resetPassword" | "magicLink";
 
 // Password validation helper
 const validatePassword = (password: string): { valid: boolean; error?: string } => {
@@ -76,9 +76,13 @@ const Auth = () => {
   // We intentionally do not perform username<->email lookups client-side.
   // That pattern enables account/email enumeration.
 
-  const sendTempPassword = async (email: string) => {
-    const { data, error } = await supabase.functions.invoke('send-temp-password', {
-      body: { email }
+  const sendMagicLink = async (identifier: string) => {
+    const { data, error } = await supabase.functions.invoke('send-magic-link', {
+      body: { 
+        email: isEmail(identifier) ? identifier : undefined,
+        username: !isEmail(identifier) ? identifier : undefined,
+        redirectTo: `${window.location.origin}/`
+      }
     });
     if (error) throw error;
     if (data?.error) throw new Error(data.error);
@@ -124,8 +128,8 @@ const Auth = () => {
         const { error } = await signIn(emailToUse, form.password);
         if (error) throw error;
         toast({ title: "Welcome back! Let's practice! 💪" });
-      } else if (mode === "tempPassword") {
-        // Send temporary password via edge function
+      } else if (mode === "magicLink") {
+        // Send magic link via edge function
         const identifier = form.emailOrUsername.trim();
         
         if (!identifier) {
@@ -134,19 +138,10 @@ const Auth = () => {
           return;
         }
 
-        // The backend function accepts either email OR username and never reveals whether an account exists.
-        if (isEmail(identifier)) {
-          await sendTempPassword(identifier);
-        } else {
-          const { data, error } = await supabase.functions.invoke("send-temp-password", {
-            body: { username: identifier },
-          });
-          if (error) throw error;
-          if (data?.error) throw new Error(data.error);
-        }
+        await sendMagicLink(identifier);
         toast({ 
-          title: "Temporary password sent! 📧", 
-          description: "Check your email, sign in with the temp password, then change it in Settings" 
+          title: "Magic link sent! 📧", 
+          description: "Check your email and click the link to sign in" 
         });
         setMode("signIn");
       } else if (mode === "resetPassword") {
@@ -170,10 +165,10 @@ const Auth = () => {
           if (error.message.includes("session") || error.message.includes("token") || error.message.includes("Auth")) {
             toast({ 
               title: "Session expired", 
-              description: "Use 'Send Temporary Password' instead",
+              description: "Use 'Sign in with magic link' instead",
               variant: "destructive" 
             });
-            setMode("tempPassword");
+            setMode("magicLink");
             window.history.replaceState({}, "", "/auth");
           } else {
             throw error;
@@ -198,7 +193,7 @@ const Auth = () => {
   const getTitle = () => {
     switch (mode) {
       case "signUp": return "Create your account to start grinding";
-      case "tempPassword": return "Reset your password";
+      case "magicLink": return "Sign in with magic link";
       case "resetPassword": return "Enter your new password";
       default: return "Sign in to continue your journey";
     }
@@ -208,7 +203,7 @@ const Auth = () => {
     if (loading) return "Loading...";
     switch (mode) {
       case "signUp": return "Create Account";
-      case "tempPassword": return "Send Temporary Password";
+      case "magicLink": return "Send Magic Link";
       case "resetPassword": return "Update Password";
       default: return "Sign In";
     }
@@ -231,7 +226,7 @@ const Auth = () => {
         </div>
 
         <Card className="p-6 border-2 border-border bg-card/80 backdrop-blur">
-          {(mode === "resetPassword" || mode === "tempPassword") && (
+          {(mode === "resetPassword" || mode === "magicLink") && (
             <button
               type="button"
               className="flex items-center gap-1 text-muted-foreground hover:text-foreground text-sm mb-4"
@@ -261,8 +256,8 @@ const Auth = () => {
               </div>
             )}
 
-            {/* Sign In / Temp Password identifier field */}
-            {(mode === "signIn" || mode === "tempPassword") && (
+            {/* Sign In / Magic Link identifier field */}
+            {(mode === "signIn" || mode === "magicLink") && (
               <div className="space-y-2">
                 <Label htmlFor="emailOrUsername">{mode === "signIn" ? "Email" : "Username or Email"}</Label>
                 <div className="relative">
@@ -281,9 +276,9 @@ const Auth = () => {
                     required
                   />
                 </div>
-                {mode === "tempPassword" && (
+                {mode === "magicLink" && (
                   <p className="text-xs text-muted-foreground">
-                    We'll send a temporary password to your email. Sign in with it, then change your password in Settings.
+                    We'll send a magic link to your email. Click it to sign in instantly—no password needed.
                   </p>
                 )}
               </div>
@@ -385,17 +380,17 @@ const Auth = () => {
                         if (user) {
                           navigate("/settings");
                         } else {
-                          setMode("tempPassword");
+                          setMode("magicLink");
                         }
                       }}
                     >
-                      <Lock className="w-3 h-3" />
-                      Forgot password?
+                      <Mail className="w-3 h-3" />
+                      Sign in with magic link
                     </button>
                   </div>
                 </>
               )}
-              {mode !== "tempPassword" && (
+              {mode !== "magicLink" && (
                 <button
                   type="button"
                   className="text-primary hover:underline text-sm"
