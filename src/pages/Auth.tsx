@@ -81,7 +81,7 @@ const Auth = () => {
       body: { 
         email: isEmail(identifier) ? identifier : undefined,
         username: !isEmail(identifier) ? identifier : undefined,
-        redirectTo: `${window.location.origin}/`
+        redirectTo: `${window.location.origin}/settings?reset=true`
       }
     });
     if (error) throw error;
