@@ -691,7 +691,13 @@ const Home = () => {
       </div>
 
       {/* Engagement Popup - Shows after 5s of inactivity for non-logged users */}
-      <Dialog open={showEngagementPopup} onOpenChange={setShowEngagementPopup}>
+      <Dialog open={showEngagementPopup} onOpenChange={(open) => {
+        if (!open) {
+          setShowEngagementPopup(false);
+          setSelectedAnswer(null);
+          setShowAnswer(false);
+        }
+      }}>
         <DialogContent className="sm:max-w-md">
           <DialogHeader>
             <DialogTitle className="flex items-center gap-2">
@@ -699,6 +705,14 @@ const Home = () => {
               Try a Quick Question!
             </DialogTitle>
           </DialogHeader>
+          <Button 
+            variant="ghost" 
+            size="icon" 
+            className="absolute top-2 right-2" 
+            onClick={() => setShowEngagementPopup(false)}
+          >
+            <X className="w-4 h-4" />
+          </Button>
           
           {sampleQuestion && (
             <div className="space-y-4">
