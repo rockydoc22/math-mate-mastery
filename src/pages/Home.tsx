@@ -459,9 +459,7 @@ const Home = () => {
             {/* Mini progress bars for Math/English */}
             <div className="grid grid-cols-2 gap-4 mt-3 pt-3 border-t border-border max-w-xs mx-auto">
               <div className="flex flex-col items-center gap-1">
-                <Calculator className="w-5 h-5 text-primary" />
-                <span className="text-xs">Math</span>
-                <span className="font-medium text-sm">{Math.round(ratings.mathRating)}</span>
+                <span className="text-sm font-medium">Math</span>
                 <div className="w-full h-1.5 bg-muted rounded-full overflow-hidden">
                   <div 
                     className="h-full bg-primary rounded-full transition-all"
@@ -470,9 +468,7 @@ const Home = () => {
                 </div>
               </div>
               <div className="flex flex-col items-center gap-1">
-                <PenTool className="w-5 h-5 text-secondary" />
-                <span className="text-xs">English</span>
-                <span className="font-medium text-sm">{Math.round(ratings.englishRating)}</span>
+                <span className="text-sm font-medium">English</span>
                 <div className="w-full h-1.5 bg-muted rounded-full overflow-hidden">
                   <div 
                     className="h-full bg-secondary rounded-full transition-all"
