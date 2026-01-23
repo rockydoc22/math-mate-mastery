@@ -273,8 +273,7 @@ const Home = () => {
               <Clock className="w-4 h-4 text-primary" />
               <span className="text-sm text-muted-foreground">Next SAT: {nextSAT.date.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}</span>
             </div>
-            <div className="text-3xl font-bold text-primary mb-1">{nextSAT.daysUntil} days</div>
-            <p className="text-xs text-muted-foreground">until you crush it</p>
+            <div className="text-3xl font-bold text-primary">{nextSAT.daysUntil} days</div>
           </div>
 
           {/* PRIMARY CTA - Try 3 Questions (for non-logged in users) */}
@@ -429,25 +428,22 @@ const Home = () => {
         {/* Personalized Stats - Only for logged in users */}
         {user && ratings && (
           <Card className="p-4 mb-4 border-2 border-primary/20">
-            <div className="flex items-center justify-between">
-              <div className="flex-1">
-                <div className="flex items-center gap-3 mb-2">
-                  <div className="text-3xl font-bold text-primary font-mono">
-                    {Math.round(ratings.overallRating)}
-                  </div>
-                  <div>
-                    <p className="text-xs text-muted-foreground">Skill Rating</p>
-                    <p className="text-sm font-medium">{skillLevel?.level}</p>
-                  </div>
+            <div className="flex flex-col items-center text-center">
+              <div className="flex items-center gap-3 mb-2">
+                <div className="text-3xl font-bold text-primary font-mono">
+                  {Math.round(ratings.overallRating)}
                 </div>
-                {projectedScore && (
-                  <p className="text-sm text-muted-foreground">
-                    Projected SAT: <span className="font-semibold text-foreground">{projectedScore.min}-{projectedScore.max}</span>
-                  </p>
-                )}
+                <div>
+                  <p className="text-xs text-muted-foreground">Skill Rating</p>
+                  <p className="text-sm font-medium">{skillLevel?.level}</p>
+                </div>
               </div>
-              
-              <div className="flex flex-col items-end gap-2">
+              {projectedScore && (
+                <p className="text-sm text-muted-foreground mb-2">
+                  Projected SAT: <span className="font-semibold text-foreground">{projectedScore.min}-{projectedScore.max}</span>
+                </p>
+              )}
+              <div className="flex items-center justify-center gap-4">
                 {streak && streak.current_streak > 0 && (
                   <div className="flex items-center gap-1 px-3 py-1 rounded-full bg-orange-500/10 text-orange-600 dark:text-orange-400">
                     <Flame className="w-4 h-4" />
