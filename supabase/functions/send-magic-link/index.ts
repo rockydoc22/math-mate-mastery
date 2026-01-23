@@ -7,7 +7,8 @@ const corsHeaders = {
 };
 
 interface MagicLinkRequest {
-  email: string;
+  email?: string;
+  username?: string;
   redirectTo?: string;
 }
 
@@ -51,11 +52,11 @@ const handler = async (req: Request): Promise<Response> => {
   }
 
   try {
-    const { email, redirectTo }: MagicLinkRequest = await req.json();
+    const { email, username, redirectTo }: MagicLinkRequest = await req.json();
     
-    if (!email) {
+    if (!email && !username) {
       return new Response(
-        JSON.stringify({ error: "Email is required" }),
+        JSON.stringify({ error: "Email or username is required" }),
         { status: 400, headers: { "Content-Type": "application/json", ...corsHeaders } }
       );
     }
@@ -65,10 +66,36 @@ const handler = async (req: Request): Promise<Response> => {
     const supabaseServiceKey = Deno.env.get("SUPABASE_SERVICE_ROLE_KEY")!;
     const supabase = createClient(supabaseUrl, supabaseServiceKey);
 
+    // Resolve email from username if needed
+    let resolvedEmail = email?.toLowerCase();
+    
+    if (!resolvedEmail && username) {
+      // Look up user by username in profiles table, then get email from auth.users
+      const { data: profile } = await supabase
+        .from("profiles")
+        .select("id")
+        .eq("username", username)
+        .maybeSingle();
+      
+      if (profile?.id) {
+        const { data: authUser } = await supabase.auth.admin.getUserById(profile.id);
+        resolvedEmail = authUser?.user?.email?.toLowerCase();
+      }
+    }
+
+    // Always return success to prevent enumeration
+    if (!resolvedEmail) {
+      console.log("User not found for identifier:", username || email);
+      return new Response(
+        JSON.stringify({ success: true }),
+        { status: 200, headers: { "Content-Type": "application/json", ...corsHeaders } }
+      );
+    }
+
     // Check rate limit
-    const allowed = await checkRateLimit(supabase, email, "send-magic-link");
+    const allowed = await checkRateLimit(supabase, resolvedEmail, "send-magic-link");
     if (!allowed) {
-      console.log("Rate limit exceeded for:", email);
+      console.log("Rate limit exceeded for:", resolvedEmail);
       return new Response(
         JSON.stringify({ error: "Too many requests. Please try again later." }),
         { status: 429, headers: { "Content-Type": "application/json", ...corsHeaders } }
@@ -76,14 +103,14 @@ const handler = async (req: Request): Promise<Response> => {
     }
 
     // Record this request
-    await recordRequest(supabase, email, "send-magic-link");
+    await recordRequest(supabase, resolvedEmail, "send-magic-link");
 
     // Generate magic link using Supabase Auth
     const { data, error } = await supabase.auth.admin.generateLink({
       type: "magiclink",
-      email: email,
+      email: resolvedEmail,
       options: {
-        redirectTo: redirectTo || `${req.headers.get("origin")}/settings`,
+        redirectTo: redirectTo || `${req.headers.get("origin")}/`,
       },
     });
 
@@ -96,7 +123,7 @@ const handler = async (req: Request): Promise<Response> => {
       );
     }
 
-    console.log("Magic link generated for:", email);
+    console.log("Magic link generated for:", resolvedEmail);
 
     return new Response(
       JSON.stringify({ success: true }),
