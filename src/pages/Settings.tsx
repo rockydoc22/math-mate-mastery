@@ -1,5 +1,5 @@
-import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useState, useEffect, useRef } from "react";
+import { useNavigate, useSearchParams } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
@@ -27,12 +27,33 @@ const validatePassword = (password: string): { valid: boolean; error?: string } 
 
 const Settings = () => {
   const navigate = useNavigate();
+  const [searchParams, setSearchParams] = useSearchParams();
   const { user, signOut } = useAuth();
   const [loading, setLoading] = useState(false);
   const [showPassword, setShowPassword] = useState(false);
   const [showConfirmPassword, setShowConfirmPassword] = useState(false);
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
+  const passwordSectionRef = useRef<HTMLFormElement>(null);
+
+  // Handle magic link password reset redirect
+  useEffect(() => {
+    if (searchParams.get("reset") === "true") {
+      // Show toast after a short delay to ensure page is rendered
+      setTimeout(() => {
+        toast({
+          title: "Set your new password 🔐",
+          description: "Enter and confirm your new password below to complete the reset.",
+        });
+        // Scroll to password section
+        passwordSectionRef.current?.scrollIntoView({ behavior: "smooth", block: "center" });
+        // Focus the password input
+        document.getElementById("newPassword")?.focus();
+      }, 300);
+      // Clear the reset param from URL
+      setSearchParams({}, { replace: true });
+    }
+  }, [searchParams, setSearchParams]);
 
   const handleChangePassword = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -98,7 +119,7 @@ const Settings = () => {
               <p className="font-medium">{user.email}</p>
             </div>
 
-            <form onSubmit={handleChangePassword} className="space-y-4">
+            <form ref={passwordSectionRef} onSubmit={handleChangePassword} className="space-y-4">
               <h3 className="font-semibold">Change Password</h3>
               
               <div className="space-y-2">
