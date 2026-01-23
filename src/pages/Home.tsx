@@ -457,35 +457,27 @@ const Home = () => {
             </div>
             
             {/* Mini progress bars for Math/English */}
-            <div className="grid grid-cols-2 gap-3 mt-3 pt-3 border-t border-border">
-              <div className="flex items-center gap-2">
-                <Calculator className="w-4 h-4 text-primary" />
-                <div className="flex-1">
-                  <div className="flex justify-between text-xs mb-1">
-                    <span>Math</span>
-                    <span className="font-medium">{Math.round(ratings.mathRating)}</span>
-                  </div>
-                  <div className="h-1.5 bg-muted rounded-full overflow-hidden">
-                    <div 
-                      className="h-full bg-primary rounded-full transition-all"
-                      style={{ width: `${Math.min((ratings.mathRating / 2000) * 100, 100)}%` }}
-                    />
-                  </div>
+            <div className="grid grid-cols-2 gap-4 mt-3 pt-3 border-t border-border max-w-xs mx-auto">
+              <div className="flex flex-col items-center gap-1">
+                <Calculator className="w-5 h-5 text-primary" />
+                <span className="text-xs">Math</span>
+                <span className="font-medium text-sm">{Math.round(ratings.mathRating)}</span>
+                <div className="w-full h-1.5 bg-muted rounded-full overflow-hidden">
+                  <div 
+                    className="h-full bg-primary rounded-full transition-all"
+                    style={{ width: `${Math.min((ratings.mathRating / 2000) * 100, 100)}%` }}
+                  />
                 </div>
               </div>
-              <div className="flex items-center gap-2">
-                <PenTool className="w-4 h-4 text-secondary" />
-                <div className="flex-1">
-                  <div className="flex justify-between text-xs mb-1">
-                    <span>English</span>
-                    <span className="font-medium">{Math.round(ratings.englishRating)}</span>
-                  </div>
-                  <div className="h-1.5 bg-muted rounded-full overflow-hidden">
-                    <div 
-                      className="h-full bg-secondary rounded-full transition-all"
-                      style={{ width: `${Math.min((ratings.englishRating / 2000) * 100, 100)}%` }}
-                    />
-                  </div>
+              <div className="flex flex-col items-center gap-1">
+                <PenTool className="w-5 h-5 text-secondary" />
+                <span className="text-xs">English</span>
+                <span className="font-medium text-sm">{Math.round(ratings.englishRating)}</span>
+                <div className="w-full h-1.5 bg-muted rounded-full overflow-hidden">
+                  <div 
+                    className="h-full bg-secondary rounded-full transition-all"
+                    style={{ width: `${Math.min((ratings.englishRating / 2000) * 100, 100)}%` }}
+                  />
                 </div>
               </div>
             </div>
@@ -499,18 +491,18 @@ const Home = () => {
 
         {/* Main Practice Actions - Reorganized */}
         <Card className="p-4 mb-4 border-2 border-border">
-          <div className="flex flex-col gap-3">
+          <div className="flex flex-col gap-3 items-center">
             {/* Fight Club - First */}
-            <Link to="/battle" className="w-full">
-              <Button variant="outline" className="w-full h-auto py-3 flex items-center gap-3 justify-start bg-destructive/10 border-destructive/30 hover:bg-destructive/20">
+            <Link to="/battle" className="w-full max-w-xs">
+              <Button variant="outline" className="w-full h-auto py-3 flex items-center gap-3 justify-center bg-destructive/10 border-destructive/30 hover:bg-destructive/20">
                 <Swords className="w-5 h-5 text-destructive flex-shrink-0" />
                 <span className="text-sm font-medium">Fight Club</span>
               </Button>
             </Link>
             
             {/* (20+20)² Prediction Test - Second */}
-            <Link to="/practice-test" className="w-full">
-              <Button variant="outline" className="w-full h-auto py-3 flex items-center gap-3 justify-start border-emerald-500/30 hover:bg-emerald-500/10">
+            <Link to="/practice-test" className="w-full max-w-xs">
+              <Button variant="outline" className="w-full h-auto py-3 flex items-center gap-3 justify-center border-emerald-500/30 hover:bg-emerald-500/10">
                 <Target className="w-5 h-5 text-emerald-500 flex-shrink-0" />
                 <span className="text-sm font-medium font-mono">(20+20)² Prediction Test</span>
               </Button>
