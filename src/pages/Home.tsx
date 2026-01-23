@@ -84,12 +84,6 @@ const Home = () => {
   const [recentCorrectAnswers, setRecentCorrectAnswers] = useState(0);
   const [playerAvatar, setPlayerAvatar] = useState("🧑‍🚀");
   const [playerUsername, setPlayerUsername] = useState("Fighter");
-  
-  // Engagement popup state
-  const [showEngagementPopup, setShowEngagementPopup] = useState(false);
-  const [sampleQuestion, setSampleQuestion] = useState<typeof questions[0] | null>(null);
-  const [selectedAnswer, setSelectedAnswer] = useState<string | null>(null);
-  const [showAnswer, setShowAnswer] = useState(false);
 
   // Next SAT date countdown
   const nextSAT = getNextSATDate();
@@ -164,24 +158,8 @@ const Home = () => {
     }
   }, [user, streak]);
 
-  // Engagement popup after 5 seconds of inactivity (only for non-logged in users)
-  useEffect(() => {
-    if (user) return; // Don't show to logged-in users
-    
-    const hasSeenPopup = sessionStorage.getItem("engagementPopupShown");
-    if (hasSeenPopup) return;
-
-    const timer = setTimeout(() => {
-      // Pick a random easy-medium question (difficultyRating 1-4)
-      const easyQuestions = questions.filter(q => (q.difficultyRating || 5) <= 4);
-      const randomQ = easyQuestions[Math.floor(Math.random() * easyQuestions.length)];
-      setSampleQuestion(randomQ);
-      setShowEngagementPopup(true);
-      sessionStorage.setItem("engagementPopupShown", "true");
-    }, 5000);
-
-    return () => clearTimeout(timer);
-  }, [user]);
+  // Engagement popup disabled - was causing issues
+  // The "Try 3 Questions" button on the landing page serves the same purpose
 
   const handleQuickStart = (subject: string) => {
     navigate(`/quiz?subject=${subject}&count=10&difficulty=all&timer=true`);
@@ -192,18 +170,7 @@ const Home = () => {
   };
 
   const handle40SquaredClick = () => {
-    // Navigate to battle lobby for solo mode with easier questions
     navigate("/battle");
-  };
-
-  const handlePopupAnswer = (answer: string) => {
-    setSelectedAnswer(answer);
-    setShowAnswer(true);
-  };
-
-  const handlePopupContinue = () => {
-    setShowEngagementPopup(false);
-    navigate(`/quiz?subject=both&count=3&difficulty=easy&timer=false`);
   };
 
   const projectedScore = ratings ? ratingToSATScore(ratings.overallRating) : null;
@@ -690,70 +657,6 @@ const Home = () => {
         </div>
       </div>
 
-      {/* Engagement Popup - Shows after 5s of inactivity for non-logged users */}
-      <Dialog open={showEngagementPopup} onOpenChange={(open) => {
-        if (!open) {
-          setShowEngagementPopup(false);
-          setSelectedAnswer(null);
-          setShowAnswer(false);
-        }
-      }}>
-        <DialogContent className="sm:max-w-md">
-          <DialogHeader>
-            <DialogTitle className="flex items-center gap-2">
-              <Sparkles className="w-5 h-5 text-primary" />
-              Try a Quick Question!
-            </DialogTitle>
-          </DialogHeader>
-          <Button 
-            variant="ghost" 
-            size="icon" 
-            className="absolute top-2 right-2" 
-            onClick={() => setShowEngagementPopup(false)}
-          >
-            <X className="w-4 h-4" />
-          </Button>
-          
-          {sampleQuestion && (
-            <div className="space-y-4">
-              <p className="text-sm font-medium">{sampleQuestion.question}</p>
-              
-              <div className="space-y-2">
-                {sampleQuestion.options.map((option, idx) => {
-                  const optionText = option.text;
-                  const isSelected = selectedAnswer === optionText;
-                  const isCorrect = optionText === sampleQuestion.correctAnswer;
-                  const showCorrectness = showAnswer && isSelected;
-                  
-                  return (
-                    <Button
-                      key={idx}
-                      variant={showCorrectness ? (isCorrect ? "default" : "destructive") : isSelected ? "secondary" : "outline"}
-                      className={`w-full justify-start text-left h-auto py-2 px-3 ${showAnswer && isCorrect ? "bg-green-500 hover:bg-green-600" : ""}`}
-                      onClick={() => !showAnswer && handlePopupAnswer(optionText)}
-                      disabled={showAnswer}
-                    >
-                      {option.letter}. {optionText}
-                    </Button>
-                  );
-                })}
-              </div>
-              
-              {showAnswer && (
-                <div className="space-y-3">
-                  <p className={`text-sm font-medium ${selectedAnswer === sampleQuestion.correctAnswer ? "text-green-600" : "text-destructive"}`}>
-                    {selectedAnswer === sampleQuestion.correctAnswer ? "✓ Correct!" : `✗ The answer is: ${sampleQuestion.correctAnswer}`}
-                  </p>
-                  <Button onClick={handlePopupContinue} className="w-full gap-2">
-                    <Play className="w-4 h-4" />
-                    Try 3 More Questions
-                  </Button>
-                </div>
-              )}
-            </div>
-          )}
-        </DialogContent>
-      </Dialog>
     </div>
   );
 };
