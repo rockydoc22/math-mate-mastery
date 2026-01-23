@@ -422,28 +422,6 @@ const Home = () => {
                 </div>
               </div>
             </div>
-            
-            {/* Mini progress bars for Math/English */}
-            <div className="grid grid-cols-2 gap-4 mt-3 pt-3 border-t border-border max-w-xs mx-auto">
-              <div className="flex flex-col items-center gap-1">
-                <span className="text-sm font-medium">Math</span>
-                <div className="w-full h-1.5 bg-muted rounded-full overflow-hidden">
-                  <div 
-                    className="h-full bg-primary rounded-full transition-all"
-                    style={{ width: `${Math.min((ratings.mathRating / 2000) * 100, 100)}%` }}
-                  />
-                </div>
-              </div>
-              <div className="flex flex-col items-center gap-1">
-                <span className="text-sm font-medium">English</span>
-                <div className="w-full h-1.5 bg-muted rounded-full overflow-hidden">
-                  <div 
-                    className="h-full bg-secondary rounded-full transition-all"
-                    style={{ width: `${Math.min((ratings.englishRating / 2000) * 100, 100)}%` }}
-                  />
-                </div>
-              </div>
-            </div>
           </Card>
         )}
 
@@ -471,23 +449,33 @@ const Home = () => {
               </Button>
             </Link>
 
-            {/* Quick Practice - Math & English */}
-            <div className="grid grid-cols-2 gap-3">
+            {/* Quick Practice - Math & English with ratings */}
+            <div className="grid grid-cols-2 gap-3 w-full max-w-xs">
               <Button 
                 variant="outline"
-                className="h-auto py-3 flex items-center gap-2 justify-center hover:bg-primary/10"
+                className="h-auto py-3 flex flex-col items-center gap-1 hover:bg-primary/10"
                 onClick={() => handleQuickStart('math')}
               >
-                <Calculator className="w-5 h-5 text-primary flex-shrink-0" />
-                <span className="text-sm font-medium">Math</span>
+                <div className="flex items-center gap-2">
+                  <Calculator className="w-5 h-5 text-primary" />
+                  <span className="text-sm font-medium">Math</span>
+                </div>
+                {ratings && (
+                  <span className="text-xs text-muted-foreground">{Math.round(ratings.mathRating)}</span>
+                )}
               </Button>
               <Button 
                 variant="outline"
-                className="h-auto py-3 flex items-center gap-2 justify-center hover:bg-secondary/10"
+                className="h-auto py-3 flex flex-col items-center gap-1 hover:bg-secondary/10"
                 onClick={() => handleQuickStart('english')}
               >
-                <PenTool className="w-5 h-5 text-secondary flex-shrink-0" />
-                <span className="text-sm font-medium">English</span>
+                <div className="flex items-center gap-2">
+                  <PenTool className="w-5 h-5 text-secondary" />
+                  <span className="text-sm font-medium">English</span>
+                </div>
+                {ratings && (
+                  <span className="text-xs text-muted-foreground">{Math.round(ratings.englishRating)}</span>
+                )}
               </Button>
             </div>
           </div>
