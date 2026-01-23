@@ -1,5 +1,3 @@
-import { Link } from "react-router-dom";
-
 interface SATMasteryLogoProps {
   size?: "sm" | "md" | "lg" | "xl";
   showTagline?: boolean;
@@ -10,38 +8,62 @@ interface SATMasteryLogoProps {
   onClick?: () => void;
 }
 
+// Swoosh arrow SVG - narrow taper to thick arrowhead
+const SwooshArrow = ({ className }: { className?: string }) => (
+  <svg 
+    viewBox="0 0 80 32" 
+    className={className}
+    fill="currentColor"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    {/* Curved swoosh that tapers from hairline thin to thick, ending in arrow */}
+    <path 
+      d="M0 28 
+         Q 20 28, 35 22 
+         Q 50 16, 60 8
+         L 58 12
+         L 72 4
+         L 62 16
+         L 60 12
+         Q 48 20, 32 26
+         Q 16 32, 0 30
+         Z"
+    />
+  </svg>
+);
+
 export const SATMasteryLogo = ({ 
   size = "md", 
   showTagline = true,
   layout = "row",
-  titleText = "SAT Mastery",
-  taglineText = "The path to 1600",
+  titleText = "1600",
+  taglineText = "The Free SAT App",
   clickable = false,
   onClick
 }: SATMasteryLogoProps) => {
   const sizeClasses = {
     sm: {
-      container: "gap-2",
-      icon: "w-10 h-10 text-lg",
-      title: "text-lg",
+      container: "gap-1.5",
+      swoosh: "w-8 h-4",
+      title: "text-xl",
       tagline: "text-[10px]"
     },
     md: {
-      container: "gap-3",
-      icon: "w-14 h-14 text-xl",
-      title: "text-xl",
+      container: "gap-2",
+      swoosh: "w-10 h-5",
+      title: "text-2xl",
       tagline: "text-xs"
     },
     lg: {
-      container: "gap-4",
-      icon: "w-20 h-20 text-2xl",
-      title: "text-2xl",
+      container: "gap-2.5",
+      swoosh: "w-14 h-7",
+      title: "text-3xl",
       tagline: "text-sm"
     },
     xl: {
-      container: "gap-4",
-      icon: "w-28 h-28 text-4xl",
-      title: "text-2xl",
+      container: "gap-3",
+      swoosh: "w-20 h-10",
+      title: "text-4xl",
       tagline: "text-sm",
     },
   };
@@ -52,26 +74,20 @@ export const SATMasteryLogo = ({
     <div
       className={
         layout === "stacked"
-          ? "flex flex-col items-center text-center gap-3"
+          ? "flex flex-col items-center text-center gap-1"
           : `flex items-center ${classes.container}`
       }
     >
-      {/* 40² Icon */}
-      <div 
-        className={`${classes.icon} rounded-xl bg-gradient-to-br from-primary to-accent flex items-center justify-center shadow-lg ${clickable ? 'hover:shadow-xl hover:scale-105 transition-all cursor-pointer group' : ''}`}
-      >
-        <span className={`font-bold text-primary-foreground font-mono ${clickable ? 'group-hover:animate-pulse' : ''}`}>
-          40²
-        </span>
-      </div>
-      
-      {/* Text */}
-      <div className={layout === "stacked" ? "flex flex-col items-center" : "flex flex-col"}>
-        <div className={`${classes.title} font-bold text-foreground leading-tight`}>
-          {titleText}
+      {/* Wordmark */}
+      <div className="flex flex-col">
+        <div className="flex items-baseline gap-1">
+          <span className={`${classes.title} font-bold text-foreground tracking-tight`}>
+            {titleText}
+          </span>
+          <SwooshArrow className={`${classes.swoosh} text-primary`} />
         </div>
         {showTagline && (
-          <p className={`${classes.tagline} text-muted-foreground`}>
+          <p className={`${classes.tagline} text-muted-foreground -mt-0.5`}>
             {taglineText}
           </p>
         )}
@@ -81,7 +97,7 @@ export const SATMasteryLogo = ({
 
   if (clickable && onClick) {
     return (
-      <button onClick={onClick} className="focus:outline-none">
+      <button onClick={onClick} className="focus:outline-none hover:opacity-80 transition-opacity">
         <LogoContent />
       </button>
     );
