@@ -73,10 +73,7 @@ const Home = () => {
   const navigate = useNavigate();
   const { user } = useAuth();
   
-  // Show landing page for guests
-  if (!user) {
-    return <LandingPage />;
-  }
+  // ALL HOOKS MUST BE CALLED BEFORE ANY CONDITIONAL RETURNS
   const { streak, achievements, quizCount, achievementDefs } = useGameStats();
   const { ratings } = useSkillRating();
   const { activePlan, showReminder, dismissReminder, daysUntilExam, weeksUntilExam, workplan, pendingReviewCount, showReviewAlert } = useStudyPlan();
@@ -211,6 +208,11 @@ const Home = () => {
 
   const projectedScore = ratings ? ratingToSATScore(ratings.overallRating) : null;
   const skillLevel = ratings ? getSkillLevel(ratings.overallRating) : null;
+
+  // Show landing page for guests - MUST BE AFTER ALL HOOKS
+  if (!user) {
+    return <LandingPage />;
+  }
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-background via-primary/5 to-accent/10 p-4 flex flex-col">
