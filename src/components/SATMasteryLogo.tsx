@@ -12,10 +12,10 @@ interface SATMasteryLogoProps {
 
 export const SATMasteryLogo = ({ 
   size = "md", 
-  showTagline = true,
+  showTagline = false,
   layout = "row",
   titleText = "SAT Mastery",
-  taglineText = "The path to 1600",
+  taglineText = "",
   clickable = false,
   onClick
 }: SATMasteryLogoProps) => {

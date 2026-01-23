@@ -111,8 +111,8 @@ export const LandingPage = () => {
                 Next SAT: {nextSAT.date.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}
               </span>
             </div>
-            <div className="text-4xl font-bold text-primary mb-1">
-              {nextSAT.daysUntil} days <span className="text-base font-semibold text-muted-foreground">• until you crush it</span>
+            <div className="text-4xl font-bold text-primary">
+              {nextSAT.daysUntil} days
             </div>
           </div>
 
