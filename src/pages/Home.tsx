@@ -1,14 +1,13 @@
-import { useState, useEffect, useCallback } from "react";
+import { useState, useEffect } from "react";
 import 'katex/dist/katex.min.css';
 import { InlineMath } from 'react-katex';
-// Elite Practice and Rulebook links added to navigation
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { 
   Calculator, PenTool, Trophy, Zap, Users, LogIn, User, 
-  Award, Swords, ChevronRight, Flame, Bell, Play, Brain, X,
-  Target, RotateCcw, BookOpen, RefreshCw, FileText, Crown, GraduationCap, Download,
-  Clock, Sparkles
+  Award, Swords, ChevronRight, Flame, Brain, X,
+  Target, RotateCcw, BookOpen, RefreshCw, FileText, Crown, GraduationCap,
+  Clock, Sparkles, Download
 } from "lucide-react";
 import { useNavigate, Link } from "react-router-dom";
 import { useAuth } from "@/hooks/useAuth";
@@ -22,13 +21,6 @@ import { usePWAUpdate, APP_VERSION } from "@/hooks/usePWAUpdate";
 import { SATBossArena } from "@/components/SATBossArena";
 import { LandingPage } from "@/components/LandingPage";
 import { SATMasteryLogo } from "@/components/SATMasteryLogo";
-import {
-  Dialog,
-  DialogContent,
-  DialogHeader,
-  DialogTitle,
-} from "@/components/ui/dialog";
-import { questions } from "@/data/questions";
 
 // Motivational messages for non-logged in or idle users
 const motivationalMessages = [
