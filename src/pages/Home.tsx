@@ -7,7 +7,7 @@ import {
   Calculator, PenTool, Trophy, Zap, Users, LogIn, User, 
   Award, Swords, ChevronRight, Flame, Brain, X,
   Target, RotateCcw, BookOpen, RefreshCw, FileText, Crown, GraduationCap,
-  Clock, Sparkles, Download
+  Clock, Sparkles, Download, Lightbulb, Play
 } from "lucide-react";
 import { useNavigate, Link } from "react-router-dom";
 import { useAuth } from "@/hooks/useAuth";
@@ -150,9 +150,6 @@ const Home = () => {
     }
   }, [user, streak]);
 
-  // Engagement popup disabled - was causing issues
-  // The "Try 3 Questions" button on the landing page serves the same purpose
-
   const handleQuickStart = (subject: string) => {
     navigate(`/quiz?subject=${subject}&count=10&difficulty=all&timer=true`);
   };
@@ -222,7 +219,7 @@ const Home = () => {
           </div>
 
           {/* SAT Mastery Logo */}
-          <div className="mb-4">
+          <div className="mb-4 mt-10">
             <SATMasteryLogo size="lg" clickable onClick={handle40SquaredClick} />
           </div>
           
@@ -425,11 +422,11 @@ const Home = () => {
         {/* Main Practice Actions - Reorganized */}
         <Card className="p-4 mb-4 border-2 border-border">
           <div className="flex flex-col gap-3 items-center">
-            {/* Fight Club - First */}
+            {/* Battle Your Friends - First */}
             <Link to="/battle" className="w-full max-w-xs">
               <Button variant="outline" className="w-full h-auto py-3 flex items-center gap-3 justify-center bg-destructive/10 border-destructive/30 hover:bg-destructive/20">
                 <Swords className="w-5 h-5 text-destructive flex-shrink-0" />
-                <span className="text-sm font-medium">Fight Club</span>
+                <span className="text-sm font-medium">Battle Your Friends</span>
               </Button>
             </Link>
             
@@ -440,6 +437,16 @@ const Home = () => {
                 <span className="text-sm font-medium font-mono">(20+20)² Prediction Test</span>
               </Button>
             </Link>
+
+            {/* Practice 10 Questions - Combined */}
+            <Button 
+              variant="outline"
+              className="w-full max-w-xs h-auto py-3 flex items-center gap-3 justify-center border-primary/30 hover:bg-primary/10"
+              onClick={() => navigate('/quiz?subject=both&count=10&difficulty=all&timer=true')}
+            >
+              <Play className="w-5 h-5 text-primary flex-shrink-0" />
+              <span className="text-sm font-medium">Practice 10 Questions</span>
+            </Button>
 
             {/* Quick Practice - Math & English with ratings */}
             <div className="grid grid-cols-2 gap-3 w-full max-w-xs">
@@ -510,6 +517,12 @@ const Home = () => {
               <Button variant="outline" className="w-full h-auto py-3 flex items-center gap-3 justify-start">
                 <Brain className="w-5 h-5 text-purple-500 flex-shrink-0" />
                 <span className="text-sm font-medium">Insights</span>
+              </Button>
+            </Link>
+            <Link to="/key-principles" className="w-full">
+              <Button variant="outline" className="w-full h-auto py-3 flex items-center gap-3 justify-start bg-gradient-to-r from-amber-500/10 to-yellow-500/10 border-amber-400/30 hover:border-amber-400/50">
+                <Lightbulb className="w-5 h-5 text-amber-500 flex-shrink-0" />
+                <span className="text-sm font-medium text-amber-600 dark:text-amber-400">Key SAT Principles</span>
               </Button>
             </Link>
             {/* Elite Practice - 3 Tiers */}

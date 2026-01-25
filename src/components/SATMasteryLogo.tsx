@@ -66,8 +66,8 @@ export const SATMasteryLogo = ({
       </div>
       
       {/* Text */}
-      <div className={layout === "stacked" ? "flex flex-col items-center" : "flex flex-col"}>
-        <div className={`${classes.title} font-bold text-foreground leading-tight`}>
+      <div className={layout === "stacked" ? "flex flex-col items-center" : "flex flex-col min-w-0"}>
+        <div className={`${classes.title} font-bold text-foreground leading-tight whitespace-nowrap`}>
           {titleText}
         </div>
         {showTagline && (
