@@ -128,7 +128,7 @@ export const LandingPage = () => {
             </Button>
             <Link to="/auth">
               <Button variant="outline" size="lg" className="gap-2 text-sm">
-                Free account: Battle friends, AI practice, score predictions & more
+                Sign up for free account and gain access to friend vs friend battles, AI tailored practice, Predictive Testing and more
                 <ArrowRight className="w-4 h-4 flex-shrink-0" />
               </Button>
             </Link>
