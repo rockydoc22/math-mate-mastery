@@ -127,9 +127,9 @@ export const LandingPage = () => {
               Try 3 Questions Now — Free
             </Button>
             <Link to="/auth">
-              <Button variant="outline" size="lg" className="gap-2">
-                Create Free Account
-                <ArrowRight className="w-4 h-4" />
+              <Button variant="outline" size="lg" className="gap-2 text-sm">
+                Free account: Battle friends, AI practice, score predictions & more
+                <ArrowRight className="w-4 h-4 flex-shrink-0" />
               </Button>
             </Link>
           </div>
