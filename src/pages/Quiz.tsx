@@ -97,9 +97,35 @@ const Quiz = () => {
       ? topicFiltered
       : filterByDifficulty(topicFiltered, difficulty);
     
-    // Sort by difficulty (easiest first) then shuffle within difficulty bands
-    const sorted = [...filtered].sort((a, b) => (a.difficultyRating || 5) - (b.difficultyRating || 5));
-    const selected = sorted.slice(0, Math.min(count, sorted.length));
+    // Stratified sampling: ensure variety across difficulty levels (easy, medium, hard)
+    // Group questions by difficulty bands
+    const easyQuestions = filtered.filter(q => (q.difficultyRating || 5) <= 4);
+    const mediumQuestions = filtered.filter(q => (q.difficultyRating || 5) >= 5 && (q.difficultyRating || 5) <= 7);
+    const hardQuestions = filtered.filter(q => (q.difficultyRating || 5) >= 8);
+    
+    // Shuffle each band independently
+    const shuffledEasy = shuffleArray(easyQuestions);
+    const shuffledMedium = shuffleArray(mediumQuestions);
+    const shuffledHard = shuffleArray(hardQuestions);
+    
+    // Calculate proportional selection from each band (roughly 1/3 each, adjusted for availability)
+    const targetPerBand = Math.ceil(count / 3);
+    const selectedEasy = shuffledEasy.slice(0, Math.min(targetPerBand, shuffledEasy.length));
+    const selectedMedium = shuffledMedium.slice(0, Math.min(targetPerBand, shuffledMedium.length));
+    const selectedHard = shuffledHard.slice(0, Math.min(targetPerBand, shuffledHard.length));
+    
+    // Combine and fill remaining slots if one band is short
+    let combined = [...selectedEasy, ...selectedMedium, ...selectedHard];
+    
+    // If we don't have enough, fill from remaining shuffled pool
+    if (combined.length < count) {
+      const usedIds = new Set(combined.map(q => q.id));
+      const remaining = shuffleArray(filtered.filter(q => !usedIds.has(q.id)));
+      combined = [...combined, ...remaining.slice(0, count - combined.length)];
+    }
+    
+    // Trim to exact count and shuffle final order for variety
+    const selected = shuffleArray(combined.slice(0, count));
     
     // Shuffle option order within each question to ensure balanced A/B/C/D distribution
     return shuffleAllQuestionOptions(selected);
