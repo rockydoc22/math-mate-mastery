@@ -67,6 +67,40 @@ const baseEnglishQuestions: EnglishQuestion[] = (englishQuestionsRaw as RawEngli
 // Combine all English questions (including visual questions for 1/3 ratio)
 const allEnglishQuestions: EnglishQuestion[] = [...baseEnglishQuestions, ...uploadedEnglishQuestions, ...hardEnglishQuestions, ...satEnglishQuestions, ...additionalEnglishQuestions, ...extraEnglishQuestions, ...expertEnglishQuestions, ...mediumEnglishQuestions, ...hardEnglishQuestions2, ...satEnglishPart1Questions, ...satEnglishPart2Questions, ...veryHardEnglishQuestions, ...moreEnglishVisualQuestions, ...additionalEnglishVisualQuestions];
 
+// Patterns that indicate a question references an external passage that isn't provided
+const passageReferencePatterns = [
+  /\bthe passage\b/i,
+  /\bthis passage\b/i,
+  /\bthe author('s|s')?\b/i,
+  /\bthe writer('s|s')?\b/i,
+  /\bthe text\b/i,
+  /\bthe excerpt\b/i,
+  /\babove passage\b/i,
+  /\bpassage above\b/i,
+  /\bpassage's\b/i,
+  /\baccording to the passage\b/i,
+  /\bsupported by the passage\b/i,
+  /\bin the passage\b/i,
+  /\bfrom the passage\b/i,
+];
+
+// Check if a question references an external passage without having the passage embedded
+const referencesExternalPassage = (q: EnglishQuestion): boolean => {
+  const questionText = q.question.toLowerCase();
+  
+  // If the question text is long (>500 chars), it likely contains an embedded passage
+  if (q.question.length > 500) return false;
+  
+  // Check if question references a passage
+  const hasPassageReference = passageReferencePatterns.some(pattern => pattern.test(q.question));
+  
+  // If no passage reference, it's fine
+  if (!hasPassageReference) return false;
+  
+  // Questions with passage references but short text = external passage (exclude)
+  return true;
+};
+
 // Remove duplicate questions (keeps first occurrence of each)
 // Uses full normalized question text for more accurate duplicate detection
 const seenEnglishQuestions = new Map<string, string>(); // Map normalized text to first ID
@@ -86,9 +120,12 @@ for (const q of allEnglishQuestions) {
   }
 }
 
-// Cap difficulty ratings at 10 (remove levels 11-13)
-export const englishQuestions: EnglishQuestion[] = allEnglishQuestions
+// Filter out external passage references, duplicates, and cap difficulty at 10
+const filteredQuestions = allEnglishQuestions
   .filter(q => !duplicateEnglishIds.has(q.id))
+  .filter(q => !referencesExternalPassage(q));
+
+export const englishQuestions: EnglishQuestion[] = filteredQuestions
   .map(q => ({
     ...q,
     difficultyRating: q.difficultyRating ? Math.min(q.difficultyRating, 10) : q.difficultyRating
@@ -97,6 +134,7 @@ export const englishQuestions: EnglishQuestion[] = allEnglishQuestions
 // Export counts for reporting
 export const englishQuestionStats = {
   totalBeforeFilters: allEnglishQuestions.length,
-  removedAsDuplicates: allEnglishQuestions.length - englishQuestions.length,
+  removedAsDuplicates: duplicateEnglishIds.size,
+  removedAsExternalPassage: allEnglishQuestions.filter(q => !duplicateEnglishIds.has(q.id)).length - filteredQuestions.length,
   finalCount: englishQuestions.length
 };
