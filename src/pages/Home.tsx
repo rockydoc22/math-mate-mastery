@@ -218,8 +218,8 @@ const Home = () => {
             )}
           </div>
 
-          {/* SAT Mastery Logo */}
-          <div className="mb-4 mt-10">
+          {/* SAT Mastery Logo - increased top margin to clear nav icons */}
+          <div className="mb-4 mt-14 pt-2">
             <SATMasteryLogo size="lg" clickable onClick={handle40SquaredClick} />
           </div>
           
@@ -377,7 +377,7 @@ const Home = () => {
             </div>
 
             <p className="text-[10px] text-muted-foreground mt-2 pt-2 border-t border-border">
-              ⚡ Earn accelerators: Hard Q (1.5x), Spaced Review (up to 2x), Fight Club, Prediction Tests
+              ⚡ Earn accelerators: Hard Q (1.5x), Spaced Review (up to 2x), Battles, Prediction Tests
             </p>
           </Card>
         )}
