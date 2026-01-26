@@ -131,13 +131,33 @@ export const englishQuestions: EnglishQuestion[] = filteredQuestions
     difficultyRating: q.difficultyRating ? Math.min(q.difficultyRating, 10) : q.difficultyRating
   }));
 
+// Calculate difficulty distribution
+const difficultyDistribution: Record<number, number> = {};
+for (let i = 1; i <= 10; i++) difficultyDistribution[i] = 0;
+for (const q of englishQuestions) {
+  const level = q.difficultyRating || 5; // Default to 5 if not set
+  if (level >= 1 && level <= 10) {
+    difficultyDistribution[level]++;
+  }
+}
+
+// Count questions with embedded passages (long text that references passage)
+const withEmbeddedPassages = englishQuestions.filter(q => {
+  const hasPassageRef = passageReferencePatterns.some(p => p.test(q.question));
+  return hasPassageRef && q.question.length > 500;
+}).length;
+
 // Export counts for reporting
 export const englishQuestionStats = {
   totalBeforeFilters: allEnglishQuestions.length,
   removedAsDuplicates: duplicateEnglishIds.size,
   removedAsExternalPassage: allEnglishQuestions.filter(q => !duplicateEnglishIds.has(q.id)).length - filteredQuestions.length,
-  finalCount: englishQuestions.length
+  finalCount: englishQuestions.length,
+  withEmbeddedPassages,
+  difficultyDistribution
 };
 
 // Log stats during development for visibility
 console.log('[English Questions] Stats:', englishQuestionStats);
+console.log('[English Questions] Difficulty Distribution:', difficultyDistribution);
+console.log('[English Questions] With Embedded Passages:', withEmbeddedPassages);
