@@ -3,7 +3,8 @@ import { Button } from "@/components/ui/button";
 import { QuizCard } from "@/components/QuizCard";
 import { QuizResults } from "@/components/QuizResults";
 import { questions } from "@/data/questions";
-import { ArrowRight, BookOpen } from "lucide-react";
+import { englishQuestions } from "@/data/englishQuestions";
+import { ArrowRight, BookOpen, Download } from "lucide-react";
 import { Progress } from "@/components/ui/progress";
 
 const Index = () => {
@@ -51,6 +52,37 @@ const Index = () => {
     setFinished(false);
   };
 
+  const handleDownloadEnglish = () => {
+    let content = `SAT English Question Bank Export\n`;
+    content += `Total Questions: ${englishQuestions.length}\n`;
+    content += `Generated: ${new Date().toISOString()}\n`;
+    content += `${"=".repeat(80)}\n\n`;
+
+    englishQuestions.forEach((q, index) => {
+      content += `Question ${index + 1} - ID: ${q.id}\n`;
+      content += `Difficulty: ${q.difficulty} | Rating: ${q.difficultyRating || "N/A"} | Domain: ${q.domain} | Skill: ${q.skill}\n`;
+      content += `${"-".repeat(60)}\n`;
+      content += `${q.question}\n\n`;
+      
+      q.options.forEach(opt => {
+        const isCorrect = opt.letter === q.correctAnswer;
+        content += `  ${opt.letter}. ${opt.text}${isCorrect ? " ✓ CORRECT" : ""}\n`;
+      });
+      
+      content += `\nCorrect Answer: ${q.correctAnswer}\n`;
+      content += `Explanation: ${q.explanation}\n`;
+      content += `\n${"=".repeat(80)}\n\n`;
+    });
+
+    const blob = new Blob([content], { type: "text/plain" });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = `english-questions-${new Date().toISOString().split("T")[0]}.txt`;
+    a.click();
+    URL.revokeObjectURL(url);
+  };
+
   if (!started) {
     return (
       <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-primary/5 via-secondary/5 to-accent/5 p-4">
@@ -90,6 +122,16 @@ const Index = () => {
             >
               Start Quiz
               <ArrowRight className="ml-2 w-5 h-5" />
+            </Button>
+
+            <Button 
+              onClick={handleDownloadEnglish}
+              variant="outline"
+              size="lg"
+              className="w-full text-lg h-12"
+            >
+              <Download className="mr-2 w-5 h-5" />
+              Download English Questions ({englishQuestions.length})
             </Button>
           </div>
         </div>
