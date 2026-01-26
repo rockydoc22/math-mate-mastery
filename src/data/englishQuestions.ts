@@ -138,3 +138,6 @@ export const englishQuestionStats = {
   removedAsExternalPassage: allEnglishQuestions.filter(q => !duplicateEnglishIds.has(q.id)).length - filteredQuestions.length,
   finalCount: englishQuestions.length
 };
+
+// Log stats during development for visibility
+console.log('[English Questions] Stats:', englishQuestionStats);

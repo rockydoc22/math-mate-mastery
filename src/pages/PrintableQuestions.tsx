@@ -93,6 +93,7 @@ const PrintableQuestions = () => {
     content += `English Questions:\n`;
     content += `  • Original pool: ${englishQuestionStats.totalBeforeFilters}\n`;
     content += `  • Removed (duplicates): ${englishQuestionStats.removedAsDuplicates}\n`;
+    content += `  • Removed (missing passages): ${englishQuestionStats.removedAsExternalPassage}\n`;
     content += `  • Final clean count: ${englishQuestionStats.finalCount}\n\n`;
     
     content += `Level Questions (allLevelQuestions.ts):\n`;
