@@ -86,26 +86,18 @@ const handler = async (req: Request): Promise<Response> => {
       );
     }
 
-    // Get admin emails from profiles table using service role
+    // Get admin emails from auth.users using service role (admin API)
     const adminUserIds = adminRoles.map((r) => r.user_id);
-    const { data: adminProfiles, error: profilesError } = await serviceClient
-      .from("profiles")
-      .select("email")
-      .in("id", adminUserIds);
+    const adminEmails: string[] = [];
 
-    if (profilesError) {
-      console.error("Error fetching admin profiles:", profilesError);
-      return new Response(
-        JSON.stringify({ error: "Failed to fetch admin emails" }),
-        { status: 500, headers: { "Content-Type": "application/json", ...corsHeaders } }
-      );
+    for (const userId of adminUserIds) {
+      const { data: userData, error: userError } = await serviceClient.auth.admin.getUserById(userId);
+      if (!userError && userData?.user?.email) {
+        adminEmails.push(userData.user.email);
+      }
     }
 
-    const adminEmails = adminProfiles
-      ?.map((p) => p.email)
-      .filter((email): email is string => Boolean(email));
-
-    if (!adminEmails || adminEmails.length === 0) {
+    if (adminEmails.length === 0) {
       console.warn("No admin emails found");
       return new Response(
         JSON.stringify({ message: "No admin emails to notify" }),
