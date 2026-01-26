@@ -94,7 +94,13 @@ const PrintableQuestions = () => {
     content += `  • Original pool: ${englishQuestionStats.totalBeforeFilters}\n`;
     content += `  • Removed (duplicates): ${englishQuestionStats.removedAsDuplicates}\n`;
     content += `  • Removed (missing passages): ${englishQuestionStats.removedAsExternalPassage}\n`;
-    content += `  • Final clean count: ${englishQuestionStats.finalCount}\n\n`;
+    content += `  • With embedded passages: ${englishQuestionStats.withEmbeddedPassages}\n`;
+    content += `  • Final clean count: ${englishQuestionStats.finalCount}\n`;
+    content += `  • Difficulty Distribution:\n`;
+    for (let level = 1; level <= 10; level++) {
+      content += `      Level ${level}: ${englishQuestionStats.difficultyDistribution[level] || 0}\n`;
+    }
+    content += `\n`;
     
     content += `Level Questions (allLevelQuestions.ts):\n`;
     content += `  • Raw generated: ${levelCounts.rawTotal}\n`;
