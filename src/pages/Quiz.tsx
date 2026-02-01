@@ -20,6 +20,7 @@ import { allTopics } from "@/data/topicCategories";
 import { RatingChangePopup } from "@/components/RatingChangePopup";
 import { SkillRatingCard } from "@/components/SkillRatingCard";
 import { shuffleAllQuestionOptions } from "@/utils/optionShuffler";
+import { sampleProportionally } from "@/utils/proportionalSampling";
 
 type CombinedQuestion = (Question | EnglishQuestion | VisualQuestion | ImageQuestion) & { type: "math" | "english"; difficultyRating?: number };
 
@@ -97,8 +98,36 @@ const Quiz = () => {
       ? topicFiltered
       : filterByDifficulty(topicFiltered, difficulty);
     
-    // Stratified sampling: ensure variety across difficulty levels (easy, medium, hard)
-    // Group questions by difficulty bands
+    // Use proportional sampling for SAT subjects to match official domain distribution
+    // Math: 35% Linear Algebra, 35% Advanced Math, 15% Data Analysis, 15% Geometry/Trig
+    // English: 28% Craft & Structure, 26% Info & Ideas, 26% Standard English, 20% Expression
+    if (!isAdvancedSubject && !topicId) {
+      // Split by subject type
+      const mathPool = filtered.filter(q => q.type === "math");
+      const englishPool = filtered.filter(q => q.type === "english");
+      
+      let selected: CombinedQuestion[] = [];
+      
+      if (subject === "both") {
+        // For mixed mode, split count evenly between subjects
+        const mathCount = Math.ceil(count / 2);
+        const englishCount = count - mathCount;
+        
+        const sampledMath = sampleProportionally(mathPool, mathCount, 'math');
+        const sampledEnglish = sampleProportionally(englishPool, englishCount, 'english');
+        selected = [...sampledMath, ...sampledEnglish];
+      } else if (subject === "math") {
+        selected = sampleProportionally(mathPool, count, 'math');
+      } else if (subject === "english") {
+        selected = sampleProportionally(englishPool, count, 'english');
+      }
+      
+      // Final shuffle for variety and shuffle options within each question
+      return shuffleAllQuestionOptions(shuffleArray(selected));
+    }
+    
+    // Fallback for advanced subjects or topic-specific quizzes:
+    // Stratified sampling by difficulty level (easy, medium, hard)
     const easyQuestions = filtered.filter(q => (q.difficultyRating || 5) <= 4);
     const mediumQuestions = filtered.filter(q => (q.difficultyRating || 5) >= 5 && (q.difficultyRating || 5) <= 7);
     const hardQuestions = filtered.filter(q => (q.difficultyRating || 5) >= 8);
@@ -130,6 +159,8 @@ const Quiz = () => {
     // Shuffle option order within each question to ensure balanced A/B/C/D distribution
     return shuffleAllQuestionOptions(selected);
   }, [subject, count, difficulty, topicId]);
+  
+  const isAdvancedSubject = subject === "physics" || subject === "precalc" || subject === "calculus";
 
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [selectedAnswer, setSelectedAnswer] = useState<string | null>(null);
@@ -144,8 +175,7 @@ const Quiz = () => {
   });
 
   // Timer for SAT-paced practice
-  const isAdvancedSubject = subject === "physics" || subject === "precalc" || subject === "calculus";
-  const { 
+  const {
     formattedTime, 
     isRunning, 
     isTimeUp, 

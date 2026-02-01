@@ -12,6 +12,7 @@ import { ArrowLeft, ArrowRight, Zap, Trophy, Calendar, Star, Flame } from "lucid
 import { questions } from "@/data/questions";
 import { englishQuestions } from "@/data/englishQuestions";
 import { shuffleAllQuestionOptions } from "@/utils/optionShuffler";
+import { sampleProportionally } from "@/utils/proportionalSampling";
 
 const DAILY_QUESTIONS = 10;
 const MATH_QUESTIONS = 5;
@@ -35,21 +36,28 @@ const DailyChallenge = () => {
   const [finished, setFinished] = useState(false);
 
   // Generate daily questions based on date (same for all users)
-  // Ensures EXACTLY 5 math and 5 english, filtering out trivially easy questions
+  // Uses proportional sampling to match official SAT domain distributions
   const dailyQuestions = useMemo(() => {
     const today = new Date().toISOString().split("T")[0];
-    let seedValue = today.split("-").reduce((a, b) => a + parseInt(b), 0);
+    const seedValue = today.split("-").reduce((a, b) => a + parseInt(b), 0);
     
     // Filter to only SAT-level questions (difficulty >= 3)
     const satLevelMath = questions
-      .filter(q => (q.difficultyRating || 5) >= MIN_SAT_DIFFICULTY)
-      .map((q) => ({ ...q, type: "math" as const }));
+      .filter(q => (q.difficultyRating || 5) >= MIN_SAT_DIFFICULTY);
     
     const satLevelEnglish = englishQuestions
-      .filter(q => (q.difficultyRating || 5) >= MIN_SAT_DIFFICULTY)
+      .filter(q => (q.difficultyRating || 5) >= MIN_SAT_DIFFICULTY);
+    
+    // Use proportional sampling based on official SAT domain ratios
+    // Math: 35% Linear Algebra, 35% Advanced Math, 15% Data Analysis, 15% Geometry/Trig
+    // English: 28% Craft & Structure, 26% Info & Ideas, 26% Standard English, 20% Expression
+    const selectedMath = sampleProportionally(satLevelMath, MATH_QUESTIONS, 'math', seedValue)
+      .map((q) => ({ ...q, type: "math" as const }));
+    
+    const selectedEnglish = sampleProportionally(satLevelEnglish, ENGLISH_QUESTIONS, 'english', seedValue + 1000)
       .map((q) => ({ ...q, type: "english" as const }));
     
-    // Seeded shuffle function
+    // Seeded shuffle for final mix
     const seededShuffle = <T,>(arr: T[], seed: number): T[] => {
       let s = seed;
       return [...arr].sort(() => {
@@ -58,13 +66,6 @@ const DailyChallenge = () => {
         return x - Math.floor(x) - 0.5;
       });
     };
-    
-    // Select 5 math and 5 english questions with seeded randomness
-    const shuffledMath = seededShuffle(satLevelMath, seedValue);
-    const shuffledEnglish = seededShuffle(satLevelEnglish, seedValue + 1000);
-    
-    const selectedMath = shuffledMath.slice(0, MATH_QUESTIONS);
-    const selectedEnglish = shuffledEnglish.slice(0, ENGLISH_QUESTIONS);
     
     // Combine and shuffle the final set, then shuffle options within each
     const combined = [...selectedMath, ...selectedEnglish];
