@@ -15,6 +15,7 @@ import { hardEnglishQuestions } from "@/data/hardEnglishQuestions";
 import { QuestionVisual } from "@/components/QuestionVisual";
 import { AITutorExplanation } from "@/components/AITutorExplanation";
 import { shuffleAllQuestionOptions } from "@/utils/optionShuffler";
+import { sampleProportionally } from "@/utils/proportionalSampling";
 
 interface TestQuestion {
   id: string;
@@ -48,6 +49,7 @@ const PracticeTest = () => {
   const [reviewQuestion, setReviewQuestion] = useState<TestQuestion | null>(null);
 
   // Generate test questions - 20 hard math + 20 hard english
+  // Uses proportional sampling to match official SAT domain distributions
   const generateTest = useCallback(() => {
     // Get hard math questions (difficulty rating >= 7)
     const allMath = [
@@ -67,12 +69,14 @@ const PracticeTest = () => {
     ];
     const hardEnglish = allEnglish.filter(q => (q.difficultyRating || 5) >= 7);
 
-    // Select 20 hard questions from each, falling back to all if not enough hard ones
+    // Select 20 hard questions from each using proportional sampling
+    // Math: 35% Linear Algebra, 35% Advanced Math, 15% Data Analysis, 15% Geometry/Trig
+    // English: 28% Craft & Structure, 26% Info & Ideas, 26% Standard English, 20% Expression
     const mathPool = hardMath.length >= 20 ? hardMath : allMath;
     const englishPool = hardEnglish.length >= 20 ? hardEnglish : allEnglish;
     
-    const shuffledMath = shuffleAllQuestionOptions([...mathPool].sort(() => Math.random() - 0.5).slice(0, 20));
-    const shuffledEnglish = shuffleAllQuestionOptions([...englishPool].sort(() => Math.random() - 0.5).slice(0, 20));
+    const shuffledMath = shuffleAllQuestionOptions(sampleProportionally(mathPool, 20, 'math'));
+    const shuffledEnglish = shuffleAllQuestionOptions(sampleProportionally(englishPool, 20, 'english'));
 
     setMathQuestionsList(shuffledMath);
     setEnglishQuestionsList(shuffledEnglish);
