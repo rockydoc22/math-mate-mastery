@@ -3,7 +3,7 @@ import { useRegisterSW } from "virtual:pwa-register/react";
 import { toast } from "@/hooks/use-toast";
 import { ToastAction } from "@/components/ui/toast";
 
-export const APP_VERSION = "1.0.4";
+export const APP_VERSION = "1.0.5";
 
 // When enabled, the app will silently apply updates and reload as soon as a new
 // service worker is ready. This is the simplest way to ensure students always

@@ -61,7 +61,73 @@
   </head>
 
   <body>
-    <div id="root"></div>
+    <div id="root">
+      <!-- Inline loading state for iOS PWA blank screen prevention -->
+      <div id="pwa-loader" style="position:fixed;inset:0;background:#0f0f23;display:flex;flex-direction:column;align-items:center;justify-content:center;font-family:system-ui,-apple-system,sans-serif;color:#f3f4f6;z-index:9999;">
+        <div style="font-size:28px;font-weight:800;margin-bottom:8px;">40²</div>
+        <div style="font-size:14px;opacity:0.7;">Loading...</div>
+        <noscript><div style="margin-top:20px;color:#ef4444;">Please enable JavaScript to use this app.</div></noscript>
+      </div>
+    </div>
+    
+    <!-- iOS PWA self-healing: runs BEFORE React to catch fatal load errors -->
+    <script>
+      (function() {
+        var HEAL_KEY = 'pwaHealAttempted';
+        var MAX_LOAD_TIME = 12000; // 12 seconds
+        
+        // If we already tried healing this session, don't loop
+        if (sessionStorage.getItem(HEAL_KEY) === 'true') {
+          sessionStorage.removeItem(HEAL_KEY);
+          return;
+        }
+        
+        // Set a timeout - if React doesn't mount in time, trigger recovery
+        var loadTimer = setTimeout(function() {
+          console.warn('[PWA] App failed to load in time, triggering self-heal');
+          triggerHeal();
+        }, MAX_LOAD_TIME);
+        
+        // React will call this to cancel the timer
+        window.__pwaLoadSuccess = function() {
+          clearTimeout(loadTimer);
+          var loader = document.getElementById('pwa-loader');
+          if (loader) loader.style.display = 'none';
+        };
+        
+        function triggerHeal() {
+          sessionStorage.setItem(HEAL_KEY, 'true');
+          
+          // Unregister all service workers
+          if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.getRegistrations().then(function(regs) {
+              regs.forEach(function(r) { r.unregister(); });
+            });
+          }
+          
+          // Clear all caches
+          if ('caches' in window) {
+            caches.keys().then(function(names) {
+              names.forEach(function(n) { caches.delete(n); });
+            });
+          }
+          
+          // Reload after a brief delay
+          setTimeout(function() {
+            window.location.reload();
+          }, 300);
+        }
+        
+        // Also catch chunk load errors early
+        window.addEventListener('error', function(e) {
+          var msg = (e.message || e.error?.message || '').toLowerCase();
+          if (msg.includes('chunk') || msg.includes('dynamically imported') || msg.includes('loading module')) {
+            triggerHeal();
+          }
+        }, true);
+      })();
+    </script>
+    
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>

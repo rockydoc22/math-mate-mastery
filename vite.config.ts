@@ -46,15 +46,31 @@ export default defineConfig(({ mode }) => ({
         ],
       },
       workbox: {
-        globPatterns: ["**/*.{js,css,html,ico,png,svg,woff2}"],
+        // Only cache JS, CSS, and assets - NEVER cache HTML
+        globPatterns: ["**/*.{js,css,ico,png,svg,woff2}"],
+        // Explicitly exclude index.html from precache
+        globIgnores: ["**/index.html", "**/node_modules/**"],
         maximumFileSizeToCacheInBytes: 5 * 1024 * 1024,
         skipWaiting: true,
         clientsClaim: true,
-        // iOS Safari PWAs are prone to serving stale cached HTML that points to
-        // deleted build chunks (white screen). We avoid caching HTML entirely.
         navigationPreload: false,
         cleanupOutdatedCaches: true,
+        // Navigation requests (HTML) should ALWAYS go to network
+        navigateFallback: null,
         runtimeCaching: [
+          {
+            // Force network-first for ALL navigation requests (HTML pages)
+            urlPattern: ({ request }) => request.mode === 'navigate',
+            handler: "NetworkFirst",
+            options: {
+              cacheName: "pages-cache",
+              networkTimeoutSeconds: 3,
+              expiration: {
+                maxEntries: 1,
+                maxAgeSeconds: 60 * 60, // 1 hour max
+              },
+            },
+          },
           {
             urlPattern: /^https:\/\/fonts\.googleapis\.com\/.*/i,
             handler: "CacheFirst",

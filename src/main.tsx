@@ -47,4 +47,17 @@ window.addEventListener("unhandledrejection", (e) => {
   pwaSelfHealIfChunkError(evt.reason);
 });
 
-createRoot(document.getElementById("root")!).render(<App />);
+// Signal to the inline loader that React has mounted successfully
+declare global {
+  interface Window {
+    __pwaLoadSuccess?: () => void;
+  }
+}
+
+const root = document.getElementById("root")!;
+createRoot(root).render(<App />);
+
+// Tell the bootstrap script we loaded successfully
+requestAnimationFrame(() => {
+  window.__pwaLoadSuccess?.();
+});

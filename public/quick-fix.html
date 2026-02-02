@@ -185,6 +185,7 @@
       </div>
 
       <div class="actions">
+        <button class="btn good" id="auto-fix" onclick="autoFix()">🔧 Auto-Fix (Clear Cache & Reload)</button>
         <a class="btn primary" href="/">Open SAT Mastery in Safari</a>
         <a class="btn" href="/landing">Open the landing page</a>
       </div>
@@ -193,5 +194,44 @@
         Tip: If it still shows blank, go to <code>Settings → Safari → Advanced → Website Data</code>, search for the site, delete it, then try again.
       </p>
     </div>
+    
+    <script>
+      async function autoFix() {
+        var btn = document.getElementById('auto-fix');
+        btn.textContent = '⏳ Clearing caches...';
+        btn.disabled = true;
+        
+        try {
+          // Unregister all service workers
+          if ('serviceWorker' in navigator) {
+            var regs = await navigator.serviceWorker.getRegistrations();
+            await Promise.all(regs.map(function(r) { return r.unregister(); }));
+          }
+          
+          // Clear all caches
+          if ('caches' in window) {
+            var names = await caches.keys();
+            await Promise.all(names.map(function(n) { return caches.delete(n); }));
+          }
+          
+          // Clear localStorage and sessionStorage (except auth)
+          try {
+            var authData = localStorage.getItem('sb-ebzrddwipeogyffvlfqm-auth-token');
+            localStorage.clear();
+            if (authData) localStorage.setItem('sb-ebzrddwipeogyffvlfqm-auth-token', authData);
+            sessionStorage.clear();
+          } catch(e) {}
+          
+          btn.textContent = '✅ Fixed! Reloading...';
+          
+          setTimeout(function() {
+            window.location.href = '/?t=' + Date.now();
+          }, 500);
+        } catch(err) {
+          btn.textContent = '❌ Error - try manual steps above';
+          console.error('Auto-fix failed:', err);
+        }
+      }
+    </script>
   </body>
 </html>
