@@ -6,7 +6,7 @@ import { Progress } from "@/components/ui/progress";
 import { useAuth } from "@/hooks/useAuth";
 import { supabase } from "@/integrations/supabase/client";
 import { toast } from "sonner";
-import { ArrowLeft, Clock, Timer, Trophy, Target, Brain } from "lucide-react";
+import { ArrowLeft, Clock, Timer, Trophy, Target, Brain, Flag } from "lucide-react";
 import { questions } from "@/data/questions";
 import { visualMathQuestions, visualEnglishQuestions, moreMathVisualQuestions, moreEnglishVisualQuestions } from "@/data/visualQuestions";
 import { additionalMathQuestions } from "@/data/additionalMathQuestions";
@@ -14,6 +14,7 @@ import { englishQuestions } from "@/data/englishQuestions";
 import { hardEnglishQuestions } from "@/data/hardEnglishQuestions";
 import { QuestionVisual } from "@/components/QuestionVisual";
 import { AITutorExplanation } from "@/components/AITutorExplanation";
+import { FlagQuestionModal } from "@/components/FlagQuestionModal";
 import { shuffleAllQuestionOptions } from "@/utils/optionShuffler";
 import { sampleProportionally } from "@/utils/proportionalSampling";
 
@@ -47,6 +48,8 @@ const PracticeTest = () => {
   const [showResults, setShowResults] = useState(false);
   const [showAITutor, setShowAITutor] = useState(false);
   const [reviewQuestion, setReviewQuestion] = useState<TestQuestion | null>(null);
+  const [isFlagModalOpen, setIsFlagModalOpen] = useState(false);
+  const [flagQuestionData, setFlagQuestionData] = useState<{ id: string; type: 'math' | 'english' } | null>(null);
 
   // Generate test questions - 20 hard math + 20 hard english
   // Uses proportional sampling to match official SAT domain distributions
@@ -306,21 +309,39 @@ const PracticeTest = () => {
                     if (isCorrect) return null;
                     
                     return (
-                      <button
+                      <div
                         key={q.id}
-                        onClick={() => {
-                          setReviewQuestion(q);
-                          setShowAITutor(true);
-                        }}
-                        className="w-full text-left p-3 rounded-lg border hover:bg-muted/50 transition-colors"
+                        className="w-full p-3 rounded-lg border hover:bg-muted/50 transition-colors"
                       >
-                        <div className="flex items-center justify-between">
-                          <span className="text-sm truncate flex-1">{q.question.slice(0, 80)}...</span>
-                          <span className={`text-xs px-2 py-1 rounded ${section === "math" ? "bg-blue-500/20 text-blue-500" : "bg-green-500/20 text-green-500"}`}>
-                            {section}
-                          </span>
+                        <div className="flex items-center justify-between gap-2">
+                          <button
+                            onClick={() => {
+                              setReviewQuestion(q);
+                              setShowAITutor(true);
+                            }}
+                            className="text-left flex-1 min-w-0"
+                          >
+                            <span className="text-sm truncate block">{q.question.slice(0, 80)}...</span>
+                          </button>
+                          <div className="flex items-center gap-2 flex-shrink-0">
+                            <Button
+                              variant="ghost"
+                              size="sm"
+                              onClick={() => {
+                                setFlagQuestionData({ id: q.id, type: section as 'math' | 'english' });
+                                setIsFlagModalOpen(true);
+                              }}
+                              className="h-8 w-8 p-0"
+                              title="Flag this question"
+                            >
+                              <Flag className="w-4 h-4 text-muted-foreground hover:text-orange-500" />
+                            </Button>
+                            <span className={`text-xs px-2 py-1 rounded ${section === "math" ? "bg-blue-500/20 text-blue-500" : "bg-green-500/20 text-green-500"}`}>
+                              {section}
+                            </span>
+                          </div>
                         </div>
-                      </button>
+                      </div>
                     );
                   })}
                 </div>
@@ -341,6 +362,16 @@ const PracticeTest = () => {
               }}
             />
           )}
+
+          <FlagQuestionModal
+            isOpen={isFlagModalOpen}
+            onClose={() => {
+              setIsFlagModalOpen(false);
+              setFlagQuestionData(null);
+            }}
+            questionId={flagQuestionData?.id || ''}
+            questionType={flagQuestionData?.type || 'math'}
+          />
 
           <div className="flex gap-4 justify-center">
             <Link to="/insights">
@@ -417,7 +448,7 @@ const PracticeTest = () => {
         )}
 
         {/* Navigation */}
-        <div className="flex justify-between">
+        <div className="flex justify-between items-center">
           <Button 
             variant="outline" 
             onClick={handlePrevious}
@@ -425,12 +456,41 @@ const PracticeTest = () => {
           >
             Previous
           </Button>
+          
+          {/* Flag button during test */}
+          {currentQuestion && (
+            <Button
+              variant="ghost"
+              size="sm"
+              onClick={() => {
+                setFlagQuestionData({ id: currentQuestion.id, type: currentSection });
+                setIsFlagModalOpen(true);
+              }}
+              className="text-muted-foreground hover:text-orange-500"
+              title="Flag this question"
+            >
+              <Flag className="w-4 h-4 mr-1" />
+              Flag
+            </Button>
+          )}
+          
           <Button onClick={handleNext}>
             {currentQuestionIndex === currentQuestions.length - 1 && currentSection === "english" 
               ? "Finish Test" 
               : "Next"}
           </Button>
         </div>
+
+        {/* Flag Question Modal for during test */}
+        <FlagQuestionModal
+          isOpen={isFlagModalOpen}
+          onClose={() => {
+            setIsFlagModalOpen(false);
+            setFlagQuestionData(null);
+          }}
+          questionId={flagQuestionData?.id || ''}
+          questionType={flagQuestionData?.type || 'math'}
+        />
       </div>
     </div>
   );
