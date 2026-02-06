@@ -9,6 +9,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { APP_VERSION } from "@/hooks/usePWAUpdate";
 import { SATMasteryLogo } from "@/components/SATMasteryLogo";
 import { FeedbackButton } from "@/components/FeedbackButton";
+import upwardCurveIcon from "@/assets/upward-curve-icon.png";
 // Official SAT dates for 2025-2026
 const upcomingSATDates = [
   new Date("2025-03-08"),
@@ -98,10 +99,17 @@ export const LandingPage = () => {
             />
           </div>
           
-          {/* Headline */}
-          <p className="text-lg text-muted-foreground mb-6">
-            Free SAT prep that actually works. Practice smarter, not harder.
-          </p>
+          {/* Headline with upward curve icon */}
+          <div className="flex items-center justify-center gap-2 mb-6">
+            <p className="text-lg text-muted-foreground">
+              Free SAT prep that actually works. Practice smarter, not harder.
+            </p>
+            <img 
+              src={upwardCurveIcon} 
+              alt="Score improvement arrow" 
+              className="w-8 h-8 dark:invert opacity-70"
+            />
+          </div>
 
           {/* SAT Countdown */}
           <div className="mb-6">
