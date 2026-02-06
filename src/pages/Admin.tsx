@@ -91,44 +91,28 @@ const Admin = () => {
 
   const fetchUserStats = async () => {
     try {
-      // Get all profiles
-      // Use profiles_public view to avoid exposing email addresses
-      const { data: profiles, error: profilesError } = await supabase
-        .from('profiles_public')
-        .select('id, username, avatar_emoji, created_at')
-        .order('created_at', { ascending: false });
+      // Use secure server-side RPC with admin validation
+      const { data, error } = await supabase.rpc('get_admin_user_stats');
 
-      if (profilesError) throw profilesError;
+      if (error) throw error;
 
-      // Get question attempts per user
-      const { data: attempts, error: attemptsError } = await supabase
-        .from('question_attempts')
-        .select('user_id, is_correct');
-
-      if (attemptsError) throw attemptsError;
-
-      // Get quiz scores per user
-      const { data: quizzes, error: quizzesError } = await supabase
-        .from('quiz_scores')
-        .select('user_id');
-
-      if (quizzesError) throw quizzesError;
-
-      // Aggregate data
-      const stats: UserStats[] = (profiles || []).map(profile => {
-        const userAttempts = attempts?.filter(a => a.user_id === profile.id) || [];
-        const userQuizzes = quizzes?.filter(q => q.user_id === profile.id) || [];
-        
-        return {
-          id: profile.id,
-          username: profile.username,
-          avatar_emoji: profile.avatar_emoji,
-          created_at: profile.created_at,
-          questions_answered: userAttempts.length,
-          correct_answers: userAttempts.filter(a => a.is_correct).length,
-          quizzes_completed: userQuizzes.length,
-        };
-      });
+      const stats: UserStats[] = (data || []).map((row: {
+        user_id: string;
+        username: string;
+        avatar_emoji: string | null;
+        created_at: string;
+        questions_answered: number;
+        correct_answers: number;
+        quizzes_completed: number;
+      }) => ({
+        id: row.user_id,
+        username: row.username,
+        avatar_emoji: row.avatar_emoji,
+        created_at: row.created_at,
+        questions_answered: Number(row.questions_answered),
+        correct_answers: Number(row.correct_answers),
+        quizzes_completed: Number(row.quizzes_completed),
+      }));
 
       setUserStats(stats);
     } catch (error) {

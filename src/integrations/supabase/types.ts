@@ -967,6 +967,18 @@ export type Database = {
       }
     }
     Functions: {
+      get_admin_user_stats: {
+        Args: never
+        Returns: {
+          avatar_emoji: string
+          correct_answers: number
+          created_at: string
+          questions_answered: number
+          quizzes_completed: number
+          user_id: string
+          username: string
+        }[]
+      }
       get_leaderboard_profile: {
         Args: { profile_id: string }
         Returns: {
