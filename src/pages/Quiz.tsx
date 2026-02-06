@@ -1,4 +1,4 @@
-import { useState, useMemo, useEffect } from "react";
+import { useState, useMemo, useEffect, useCallback } from "react";
 import { Button } from "@/components/ui/button";
 import { QuizCard } from "@/components/QuizCard";
 import { QuizResults } from "@/components/QuizResults";
@@ -23,6 +23,30 @@ import { shuffleAllQuestionOptions } from "@/utils/optionShuffler";
 import { sampleProportionally } from "@/utils/proportionalSampling";
 
 type CombinedQuestion = (Question | EnglishQuestion | VisualQuestion | ImageQuestion) & { type: "math" | "english"; difficultyRating?: number };
+
+// Session storage key for tracking correctly answered questions
+const CORRECT_ANSWERS_KEY = "sat_mastery_correct_answers";
+
+// Get correctly answered question IDs from session storage
+function getCorrectlyAnsweredIds(): Set<string> {
+  try {
+    const stored = sessionStorage.getItem(CORRECT_ANSWERS_KEY);
+    return stored ? new Set(JSON.parse(stored)) : new Set();
+  } catch {
+    return new Set();
+  }
+}
+
+// Save correctly answered question ID to session storage
+function markQuestionCorrect(questionId: string): void {
+  try {
+    const current = getCorrectlyAnsweredIds();
+    current.add(questionId);
+    sessionStorage.setItem(CORRECT_ANSWERS_KEY, JSON.stringify([...current]));
+  } catch {
+    // Ignore storage errors
+  }
+}
 
 function shuffleArray<T>(array: T[]): T[] {
   const shuffled = [...array];
@@ -84,12 +108,25 @@ const Quiz = () => {
       return true;
     });
 
+    // Prioritize questions not yet answered correctly this session
+    const correctlyAnsweredIds = getCorrectlyAnsweredIds();
+    const unansweredQuestions = dedupedPool.filter(q => !correctlyAnsweredIds.has(q.id));
+    const answeredQuestions = dedupedPool.filter(q => correctlyAnsweredIds.has(q.id));
+    
+    // Use unanswered questions first, fall back to answered if needed
+    // If all questions have been answered, reset and use full pool
+    const prioritizedPool = unansweredQuestions.length >= count 
+      ? unansweredQuestions 
+      : unansweredQuestions.length > 0 
+        ? [...unansweredQuestions, ...shuffleArray(answeredQuestions)]
+        : dedupedPool;
+
     // Apply topic filter if specified
-    let topicFiltered = dedupedPool;
+    let topicFiltered = prioritizedPool;
     if (topicId) {
       const topic = allTopics.find(t => t.id === topicId);
       if (topic) {
-        topicFiltered = dedupedPool.filter(q => {
+        topicFiltered = prioritizedPool.filter(q => {
           const searchText = `${q.domain} ${q.skill} ${q.question}`.toLowerCase();
           return topic.keywords.some(keyword => searchText.includes(keyword.toLowerCase()));
         });
@@ -211,6 +248,8 @@ const Quiz = () => {
     if (isCorrect) {
       setScore(score + 1);
       playCorrect();
+      // Mark question as correctly answered for this session
+      markQuestionCorrect(currentQuestion.id);
     } else {
       playWrong();
     }

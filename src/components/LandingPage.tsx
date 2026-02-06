@@ -8,7 +8,7 @@ import {
 import { Link, useNavigate } from "react-router-dom";
 import { APP_VERSION } from "@/hooks/usePWAUpdate";
 import { SATMasteryLogo } from "@/components/SATMasteryLogo";
-
+import { FeedbackButton } from "@/components/FeedbackButton";
 // Official SAT dates for 2025-2026
 const upcomingSATDates = [
   new Date("2025-03-08"),
@@ -280,7 +280,10 @@ export const LandingPage = () => {
       <footer className="px-4 py-6 border-t border-border">
         <div className="max-w-2xl mx-auto flex items-center justify-between text-xs text-muted-foreground">
           <span>© 2025 SAT Mastery</span>
-          <span>v{APP_VERSION}</span>
+          <div className="flex items-center gap-3">
+            <FeedbackButton />
+            <span>v{APP_VERSION}</span>
+          </div>
         </div>
       </footer>
     </div>
