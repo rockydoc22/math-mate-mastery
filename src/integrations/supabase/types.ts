@@ -809,6 +809,33 @@ export type Database = {
         }
         Relationships: []
       }
+      user_feedback: {
+        Row: {
+          created_at: string
+          email: string | null
+          feedback_type: string
+          id: string
+          message: string
+          user_id: string | null
+        }
+        Insert: {
+          created_at?: string
+          email?: string | null
+          feedback_type: string
+          id?: string
+          message: string
+          user_id?: string | null
+        }
+        Update: {
+          created_at?: string
+          email?: string | null
+          feedback_type?: string
+          id?: string
+          message?: string
+          user_id?: string | null
+        }
+        Relationships: []
+      }
       user_notification_settings: {
         Row: {
           created_at: string
