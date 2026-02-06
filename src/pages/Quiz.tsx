@@ -44,6 +44,9 @@ const Quiz = () => {
   const { user } = useAuth();
   const { recordScore } = useGameStats();
   const { ratings, updateRating } = useSkillRating();
+  
+  // Define isAdvancedSubject early so it can be used in useMemo
+  const isAdvancedSubject = subject === "physics" || subject === "precalc" || subject === "calculus";
 
   const quizQuestions = useMemo(() => {
     let pool: CombinedQuestion[] = [];
@@ -158,9 +161,9 @@ const Quiz = () => {
     
     // Shuffle option order within each question to ensure balanced A/B/C/D distribution
     return shuffleAllQuestionOptions(selected);
-  }, [subject, count, difficulty, topicId]);
-  
-  const isAdvancedSubject = subject === "physics" || subject === "precalc" || subject === "calculus";
+  }, [subject, count, difficulty, topicId, isAdvancedSubject]);
+
+  // isAdvancedSubject is now defined at the top of the component
 
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [selectedAnswer, setSelectedAnswer] = useState<string | null>(null);
