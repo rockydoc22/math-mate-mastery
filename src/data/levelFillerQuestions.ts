@@ -1335,6 +1335,20 @@ const generateLevel8Questions = (): VisualQuestion[] => {
   ];
 
   perpQuestions.forEach((pq, i) => {
+    // Generate unique distractors to avoid duplicate options
+    const correctAns = pq.perpSlope;
+    const slopeStr = String(pq.slope);
+    const negSlopeStr = String(-pq.slope);
+    
+    // Build distractor pool, excluding any that match the correct answer
+    const distractors: string[] = [];
+    if (slopeStr !== correctAns) distractors.push(slopeStr);
+    if (negSlopeStr !== correctAns && negSlopeStr !== slopeStr) distractors.push(negSlopeStr);
+    if ("0" !== correctAns) distractors.push("0");
+    // Add fallback distractors if needed
+    if (distractors.length < 3 && "undefined" !== correctAns) distractors.push("undefined");
+    if (distractors.length < 3) distractors.push(String(pq.slope * 2));
+    
     questions.push({
       id: `filler-8-perp-${i + 1}`,
       question: `A line has slope ${pq.slope}. What is the slope of a perpendicular line?`,
@@ -1346,10 +1360,10 @@ const generateLevel8Questions = (): VisualQuestion[] => {
         }
       },
       options: [
-        { letter: "A", text: pq.perpSlope },
-        { letter: "B", text: String(pq.slope) },
-        { letter: "C", text: String(-pq.slope) },
-        { letter: "D", text: "0" }
+        { letter: "A", text: correctAns },
+        { letter: "B", text: distractors[0] },
+        { letter: "C", text: distractors[1] },
+        { letter: "D", text: distractors[2] }
       ],
       correctAnswer: "A",
       explanation: `The perpendicular slope is ${pq.perpSlope} (negative reciprocal).`,

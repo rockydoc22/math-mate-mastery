@@ -2124,7 +2124,7 @@ export const additionalEnglishQuestions: EnglishQuestion[] = [
   },
   {
     id: "add-eng-133",
-    question: "The author's strategic use of passive voice when discussing corporate responsibility most likely serves to:",
+    question: "An author's strategic use of passive voice when discussing corporate responsibility (e.g., 'mistakes were made' instead of 'executives made mistakes') most likely serves to:",
     options: [
       { letter: "A", text: "demonstrate poor writing skills" },
       { letter: "B", text: "subtly highlight how accountability is obscured in corporate contexts" },

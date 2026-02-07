@@ -831,7 +831,7 @@ export const satEnglishQuestions: EnglishQuestion[] = [
   }, 8),
   addRating({
     id: 'sat-eng-055',
-    question: 'Which inference about the researcher\'s methodology is best supported by the passage?',
+    question: 'A research article describes a study that included "in-depth participant interviews" and "regression analysis of survey data." Based on this information, which inference about the researcher\'s methodology is most reasonable?',
     options: [
       { letter: 'A', text: 'The researcher relied exclusively on quantitative data.' },
       { letter: 'B', text: 'The study used a mixed-methods approach combining interviews and statistics.' },
@@ -839,7 +839,7 @@ export const satEnglishQuestions: EnglishQuestion[] = [
       { letter: 'D', text: 'Only historical documents were consulted.' }
     ],
     correctAnswer: 'B',
-    explanation: 'References to both "participant responses" and "statistical analysis" suggest mixed methods.',
+    explanation: 'References to both "participant interviews" (qualitative) and "regression analysis" (quantitative) indicate mixed methods.',
     difficulty: 'Hard',
     domain: 'Information and Ideas',
     skill: 'Inferring Methodology'
@@ -906,7 +906,7 @@ export const satEnglishQuestions: EnglishQuestion[] = [
   }, 8),
   addRating({
     id: 'sat-eng-060',
-    question: 'The author qualifies the central claim in paragraph 4 most likely because:',
+    question: 'An author initially claims that "social media has revolutionized political engagement," but later writes "of course, this participation often remains superficial." Why would an author qualify a central claim in this way?',
     options: [
       { letter: 'A', text: 'The author has changed position since the introduction' },
       { letter: 'B', text: 'New research has emerged contradicting the thesis' },
@@ -998,7 +998,7 @@ export const satEnglishQuestions: EnglishQuestion[] = [
   }, 9),
   addRating({
     id: 'sat-eng-066',
-    question: 'The passage suggests that the relationship between economic growth and environmental sustainability is best characterized as:',
+    question: 'An economist argues that "with the right incentives and regulations, nations can pursue prosperity while reducing their environmental footprint." This statement suggests that the relationship between economic growth and environmental sustainability is best characterized as:',
     options: [
       { letter: 'A', text: 'Mutually exclusive under all circumstances' },
       { letter: 'B', text: 'Potentially compatible given appropriate policy interventions' },
@@ -1006,7 +1006,7 @@ export const satEnglishQuestions: EnglishQuestion[] = [
       { letter: 'D', text: 'Already fully reconciled in developed nations' }
     ],
     correctAnswer: 'B',
-    explanation: 'The author discusses conditions under which growth and sustainability can coexist, implying potential compatibility.',
+    explanation: 'The phrase "with the right incentives and regulations" implies growth and sustainability can coexist under proper conditions, suggesting potential compatibility.',
     difficulty: 'Hard',
     domain: 'Information and Ideas',
     skill: 'Complex Relationships'
