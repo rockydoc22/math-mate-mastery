@@ -810,7 +810,7 @@ export const hardEnglishQuestions2: EnglishQuestion[] = [
   },
   {
     id: "eng_hard2_051",
-    question: "The author's antithetical pairing of abstract nouns ('liberty and tyranny,' 'wisdom and folly') serves to",
+    question: "An author's antithetical pairing of abstract nouns (such as 'liberty and tyranny,' 'wisdom and folly') most effectively serves to",
     options: [
       { letter: "A", text: "confuse the central argument" },
       { letter: "B", text: "demonstrate vocabulary range" },

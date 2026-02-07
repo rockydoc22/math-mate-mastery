@@ -1,4 +1,4 @@
-import { useState, useMemo, useEffect } from "react";
+import { useState, useMemo, useEffect, useCallback } from "react";
 import { Link } from "react-router-dom";
 import { supabase } from "@/integrations/supabase/client";
 import { useAuth } from "@/hooks/useAuth";
@@ -13,6 +13,30 @@ import { questions } from "@/data/questions";
 import { englishQuestions } from "@/data/englishQuestions";
 import { shuffleAllQuestionOptions } from "@/utils/optionShuffler";
 import { sampleProportionally } from "@/utils/proportionalSampling";
+
+// Session storage key for tracking correctly answered questions in Daily Challenge
+const DAILY_CORRECT_ANSWERS_KEY = "sat_mastery_daily_correct_answers";
+
+// Get correctly answered question IDs from session storage
+function getDailyCorrectlyAnsweredIds(): Set<string> {
+  try {
+    const stored = sessionStorage.getItem(DAILY_CORRECT_ANSWERS_KEY);
+    return stored ? new Set(JSON.parse(stored)) : new Set();
+  } catch {
+    return new Set();
+  }
+}
+
+// Save correctly answered question ID to session storage
+function markDailyQuestionCorrect(questionId: string): void {
+  try {
+    const current = getDailyCorrectlyAnsweredIds();
+    current.add(questionId);
+    sessionStorage.setItem(DAILY_CORRECT_ANSWERS_KEY, JSON.stringify([...current]));
+  } catch {
+    // Ignore storage errors
+  }
+}
 
 const DAILY_QUESTIONS = 10;
 const MATH_QUESTIONS = 5;
@@ -35,8 +59,9 @@ const DailyChallenge = () => {
   const [score, setScore] = useState(0);
   const [finished, setFinished] = useState(false);
 
-  // Generate daily questions based on date (same for all users)
+  // Generate daily questions based on date (same base pool for all users)
   // Uses proportional sampling to match official SAT domain distributions
+  // Smart rotation: prioritizes questions not yet answered correctly this session
   const dailyQuestions = useMemo(() => {
     const today = new Date().toISOString().split("T")[0];
     const seedValue = today.split("-").reduce((a, b) => a + parseInt(b), 0);
@@ -48,13 +73,24 @@ const DailyChallenge = () => {
     const satLevelEnglish = englishQuestions
       .filter(q => (q.difficultyRating || 5) >= MIN_SAT_DIFFICULTY);
     
+    // Get IDs of questions already answered correctly this session
+    const correctlyAnsweredIds = getDailyCorrectlyAnsweredIds();
+    
+    // Separate pools: unanswered vs already-correct
+    const unansweredMath = satLevelMath.filter(q => !correctlyAnsweredIds.has(q.id));
+    const unansweredEnglish = satLevelEnglish.filter(q => !correctlyAnsweredIds.has(q.id));
+    
+    // Fall back to full pool if all questions exhausted
+    const mathPool = unansweredMath.length >= MATH_QUESTIONS ? unansweredMath : satLevelMath;
+    const englishPool = unansweredEnglish.length >= ENGLISH_QUESTIONS ? unansweredEnglish : satLevelEnglish;
+    
     // Use proportional sampling based on official SAT domain ratios
     // Math: 35% Linear Algebra, 35% Advanced Math, 15% Data Analysis, 15% Geometry/Trig
     // English: 28% Craft & Structure, 26% Info & Ideas, 26% Standard English, 20% Expression
-    const selectedMath = sampleProportionally(satLevelMath, MATH_QUESTIONS, 'math', seedValue)
+    const selectedMath = sampleProportionally(mathPool, MATH_QUESTIONS, 'math', seedValue)
       .map((q) => ({ ...q, type: "math" as const }));
     
-    const selectedEnglish = sampleProportionally(satLevelEnglish, ENGLISH_QUESTIONS, 'english', seedValue + 1000)
+    const selectedEnglish = sampleProportionally(englishPool, ENGLISH_QUESTIONS, 'english', seedValue + 1000)
       .map((q) => ({ ...q, type: "english" as const }));
     
     // Seeded shuffle for final mix
@@ -94,16 +130,19 @@ const DailyChallenge = () => {
     checkIfCompleted();
   }, [user]);
 
-  const handleSubmit = () => {
+  const handleSubmit = useCallback(() => {
     setShowResult(true);
-    const isCorrect = selectedAnswer === dailyQuestions[currentIndex].correctAnswer;
+    const currentQuestion = dailyQuestions[currentIndex];
+    const isCorrect = selectedAnswer === currentQuestion.correctAnswer;
     if (isCorrect) {
       setScore(score + 1);
       playCorrect();
+      // Mark question as correctly answered for smart rotation
+      markDailyQuestionCorrect(currentQuestion.id);
     } else {
       playWrong();
     }
-  };
+  }, [currentIndex, dailyQuestions, selectedAnswer, score, playCorrect, playWrong]);
 
   const handleNext = async () => {
     if (currentIndex < dailyQuestions.length - 1) {

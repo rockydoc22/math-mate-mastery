@@ -3879,13 +3879,13 @@ export const hardEnglishQuestions: EnglishQuestion[] = [
     id: 'hard-eng-258',
     question: 'Which sentence demonstrates correct use of "that" versus "which" for restrictive and nonrestrictive clauses?',
     options: [
-      { letter: 'A', text: 'The proposal, that was submitted yesterday, has been approved.' },
-      { letter: 'B', text: 'The proposal which was submitted yesterday has been approved.' },
-      { letter: 'C', text: 'The proposal that was submitted yesterday has been approved.' },
-      { letter: 'D', text: 'Either (B) or (C) is acceptable in all contexts.' }
+      { letter: 'A', text: 'The proposal that was submitted yesterday has been approved.' },
+      { letter: 'B', text: 'The proposal, that was submitted yesterday, has been approved.' },
+      { letter: 'C', text: 'The proposal which was submitted yesterday has been approved.' },
+      { letter: 'D', text: 'Both "that" and "which" can be used interchangeably in all contexts.' }
     ],
-    correctAnswer: 'C',
-    explanation: 'In American English, "that" introduces restrictive clauses (essential to meaning, no commas); "which" introduces nonrestrictive clauses (additional info, with commas). (C) correctly uses "that" for a restrictive clause identifying which proposal. (A) incorrectly uses "that" with commas (nonrestrictive). (B) uses "which" without commas (acceptable in British English but not preferred in American formal writing).',
+    correctAnswer: 'A',
+    explanation: 'In American English, "that" introduces restrictive clauses (essential to meaning, no commas); "which" introduces nonrestrictive clauses (additional info, with commas). (A) correctly uses "that" for a restrictive clause identifying which proposal. (B) incorrectly uses "that" with commas (nonrestrictive). (C) uses "which" without commas (acceptable in British English but not preferred in American formal writing). (D) is incorrect—they have different functions.',
     difficulty: 'hard',
     domain: 'Writing',
     skill: 'That vs. Which'

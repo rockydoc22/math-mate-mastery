@@ -470,7 +470,7 @@ export const expertEnglishQuestions: EnglishQuestion[] = [
   },
   {
     id: "exp030",
-    question: "The passage's brachylogy ('The more, the merrier') achieves its effect through:",
+    question: "A brachylogy such as 'The more, the merrier' achieves its effect primarily through:",
     options: [
       { letter: "A", text: "elliptical compression requiring inferential completion" },
       { letter: "B", text: "proverbial form suggesting universal wisdom" },
