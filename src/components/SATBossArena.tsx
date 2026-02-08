@@ -15,6 +15,9 @@ interface SATBossArenaProps {
   playerUsername?: string;
   lastPracticeDate?: string | null;
   fighterAvatar?: FighterAvatar;
+  // New props for live battle feedback
+  lastAnswerCorrect?: boolean | null;
+  showBattleAnimation?: boolean;
 }
 
 // Calculate player HP based on streak and recent activity
@@ -66,11 +69,16 @@ export function SATBossArena({
   playerUsername = "Fighter",
   lastPracticeDate,
   fighterAvatar,
+  lastAnswerCorrect,
+  showBattleAnimation,
 }: SATBossArenaProps) {
   const { avatar: loadedAvatar } = useFighterAvatar();
   const actualFighterAvatar = fighterAvatar || loadedAvatar;
   const [showDamageFlash, setShowDamageFlash] = useState(false);
   const [bossShake, setBossShake] = useState(false);
+  const [playerShake, setPlayerShake] = useState(false);
+  const [bossAttacking, setBossAttacking] = useState(false);
+  const [showPlayerDamage, setShowPlayerDamage] = useState(false);
   
   const playerHP = calculatePlayerHP(currentStreak, recentCorrectAnswers, pendingReviewCount);
   const bossHP = calculateBossHP(daysUntilExam, totalQuestionsAnswered);
@@ -90,6 +98,33 @@ export function SATBossArena({
       }, 600);
     }
   }, []);
+
+  // Live battle animation when answering questions
+  useEffect(() => {
+    if (showBattleAnimation && lastAnswerCorrect !== null) {
+      if (lastAnswerCorrect) {
+        // Player attacks boss - boss takes damage
+        setBossShake(true);
+        setShowDamageFlash(true);
+        setTimeout(() => {
+          setBossShake(false);
+          setShowDamageFlash(false);
+        }, 500);
+      } else {
+        // Boss attacks player - player takes damage
+        setBossAttacking(true);
+        setTimeout(() => {
+          setPlayerShake(true);
+          setShowPlayerDamage(true);
+          setBossAttacking(false);
+        }, 300);
+        setTimeout(() => {
+          setPlayerShake(false);
+          setShowPlayerDamage(false);
+        }, 800);
+      }
+    }
+  }, [showBattleAnimation, lastAnswerCorrect]);
 
   return (
     <div className={cn(
@@ -158,7 +193,13 @@ export function SATBossArena({
         <div className="flex-1 flex flex-col items-center">
           <motion.div
             className="relative"
-            animate={missedPractice ? { x: [-2, 2, -2, 0] } : {}}
+            animate={
+              playerShake 
+                ? { x: [-5, 5, -5, 5, 0], opacity: [1, 0.5, 1] }
+                : missedPractice 
+                  ? { x: [-2, 2, -2, 0] } 
+                  : {}
+            }
             transition={{ duration: 0.3 }}
           >
             {/* Player Avatar - Use FighterVisual */}
@@ -169,12 +210,24 @@ export function SATBossArena({
               playerHP={playerHP}
             />
             
-            {/* Damage indicator for player */}
-            {missedPractice && (
+            {/* Damage indicator for player - on boss attack */}
+            {showPlayerDamage && (
+              <motion.div
+                initial={{ opacity: 0, scale: 0.5, y: 0 }}
+                animate={{ opacity: 1, scale: 1, y: -20 }}
+                exit={{ opacity: 0 }}
+                className="absolute -top-4 left-1/2 -translate-x-1/2 bg-destructive text-destructive-foreground text-xs px-2 py-0.5 rounded font-bold"
+              >
+                -10 HP!
+              </motion.div>
+            )}
+            
+            {/* Damage indicator for player - missed practice */}
+            {missedPractice && !showPlayerDamage && (
               <motion.div
                 initial={{ opacity: 0, y: -10 }}
                 animate={{ opacity: 1, y: 0 }}
-                className="absolute -top-2 -right-2 bg-red-500 text-white text-[8px] px-1 rounded font-bold"
+                className="absolute -top-2 -right-2 bg-destructive text-destructive-foreground text-[8px] px-1 rounded font-bold"
               >
                 HIT!
               </motion.div>
@@ -228,8 +281,14 @@ export function SATBossArena({
         <div className="flex-1 flex flex-col items-center">
           <motion.div
             className="relative"
-            animate={bossShake ? { x: [-3, 3, -3, 3, 0], rotate: [-2, 2, -2, 2, 0] } : {}}
-            transition={{ duration: 0.4 }}
+            animate={
+              bossAttacking 
+                ? { x: [-20, 0], scale: [1.1, 1] }
+                : bossShake 
+                  ? { x: [-3, 3, -3, 3, 0], rotate: [-2, 2, -2, 2, 0] } 
+                  : {}
+            }
+            transition={{ duration: bossAttacking ? 0.3 : 0.4 }}
           >
             {/* Boss Avatar */}
             <div className={cn(
