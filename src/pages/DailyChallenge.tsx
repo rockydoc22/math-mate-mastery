@@ -3,10 +3,12 @@ import { Link } from "react-router-dom";
 import { supabase } from "@/integrations/supabase/client";
 import { useAuth } from "@/hooks/useAuth";
 import { useGameStats } from "@/hooks/useGameStats";
+import { useComboSystem } from "@/hooks/useComboSystem";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Progress } from "@/components/ui/progress";
 import { QuizCard } from "@/components/QuizCard";
+import { ComboDisplay, ScreenShakeWrapper } from "@/components/ComboDisplay";
 import { useSoundEffects } from "@/hooks/useSoundEffects";
 import { ArrowLeft, ArrowRight, Zap, Trophy, Calendar, Star, Flame } from "lucide-react";
 import { questions } from "@/data/questions";
@@ -51,6 +53,7 @@ const DailyChallenge = () => {
   const { user } = useAuth();
   const { streak } = useGameStats();
   const { playCorrect, playWrong, playLevelUp } = useSoundEffects();
+  const { combo, registerCorrect, registerIncorrect, getComboMessage, getComboIntensity, resetCombo } = useComboSystem();
   const [completedToday, setCompletedToday] = useState(false);
   const [todayScore, setTodayScore] = useState<{ score: number; total: number } | null>(null);
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -58,6 +61,7 @@ const DailyChallenge = () => {
   const [showResult, setShowResult] = useState(false);
   const [score, setScore] = useState(0);
   const [finished, setFinished] = useState(false);
+  const [screenShake, setScreenShake] = useState(false);
 
   // Generate daily questions based on date (same base pool for all users)
   // Uses proportional sampling to match official SAT domain distributions
@@ -137,12 +141,19 @@ const DailyChallenge = () => {
     if (isCorrect) {
       setScore(score + 1);
       playCorrect();
+      registerCorrect();
+      // Trigger screen shake on high combos
+      if (combo.count >= 2) {
+        setScreenShake(true);
+        setTimeout(() => setScreenShake(false), 300);
+      }
       // Mark question as correctly answered for smart rotation
       markDailyQuestionCorrect(currentQuestion.id);
     } else {
       playWrong();
+      registerIncorrect();
     }
-  }, [currentIndex, dailyQuestions, selectedAnswer, score, playCorrect, playWrong]);
+  }, [currentIndex, dailyQuestions, selectedAnswer, score, playCorrect, playWrong, registerCorrect, registerIncorrect, combo.count]);
 
   const handleNext = async () => {
     if (currentIndex < dailyQuestions.length - 1) {
@@ -240,72 +251,80 @@ const DailyChallenge = () => {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-primary/10 via-accent/10 to-secondary/10 p-4 py-8">
-      <div className="max-w-3xl mx-auto space-y-6">
-        <div className="flex items-center gap-4">
-          <Link to="/">
-            <Button variant="ghost" size="sm">
-              <ArrowLeft className="w-4 h-4 mr-2" />
-              Back
-            </Button>
-          </Link>
-          <div className="flex-1">
-            <h1 className="text-2xl font-bold flex items-center gap-2">
-              <Zap className="w-6 h-6 text-primary" />
-              Compounding to 1600
-            </h1>
-            <p className="text-sm text-muted-foreground flex items-center gap-1">
-              <Calendar className="w-4 h-4" />
-              {new Date().toLocaleDateString("en-US", { weekday: "long", month: "short", day: "numeric" })}
-            </p>
-          </div>
+    <ScreenShakeWrapper shake={screenShake} intensity={getComboIntensity(combo.count) === "ultra" ? "high" : getComboIntensity(combo.count) === "high" ? "medium" : "low"}>
+      <div className="min-h-screen bg-gradient-to-br from-primary/10 via-accent/10 to-secondary/10 p-4 py-8">
+        <div className="max-w-3xl mx-auto space-y-6">
           <div className="flex items-center gap-4">
-            {streak && streak.current_streak > 0 && (
-              <div className="flex items-center gap-1 px-3 py-1.5 rounded-full bg-orange-500/20 text-orange-600 dark:text-orange-400">
-                <Flame className="w-5 h-5" />
-                <span className="font-bold text-lg">{streak.current_streak}</span>
+            <Link to="/">
+              <Button variant="ghost" size="sm">
+                <ArrowLeft className="w-4 h-4 mr-2" />
+                Back
+              </Button>
+            </Link>
+            <div className="flex-1">
+              <h1 className="text-2xl font-bold flex items-center gap-2">
+                <Zap className="w-6 h-6 text-primary" />
+                Compounding to 1600
+              </h1>
+              <p className="text-sm text-muted-foreground flex items-center gap-1">
+                <Calendar className="w-4 h-4" />
+                {new Date().toLocaleDateString("en-US", { weekday: "long", month: "short", day: "numeric" })}
+              </p>
+            </div>
+            <div className="flex items-center gap-4">
+              {/* Combo Display */}
+              <ComboDisplay 
+                combo={combo}
+                message={getComboMessage(combo.count)}
+                intensity={getComboIntensity(combo.count)}
+              />
+              {streak && streak.current_streak > 0 && (
+                <div className="flex items-center gap-1 px-3 py-1.5 rounded-full bg-accent/20 text-accent-foreground">
+                  <Flame className="w-5 h-5" />
+                  <span className="font-bold text-lg">{streak.current_streak}</span>
+                </div>
+              )}
+              <div className="text-right">
+                <p className="text-sm text-muted-foreground">Score</p>
+                <p className="text-xl font-bold text-primary">{score}/{currentIndex + (showResult ? 1 : 0)}</p>
               </div>
-            )}
-            <div className="text-right">
-              <p className="text-sm text-muted-foreground">Score</p>
-              <p className="text-xl font-bold text-primary">{score}/{currentIndex + (showResult ? 1 : 0)}</p>
             </div>
           </div>
-        </div>
 
-        <Card className="p-4 bg-gradient-to-r from-primary/10 to-accent/10 border-primary/20">
-          <div className="flex items-center justify-between text-sm">
-            <span>Question {currentIndex + 1} of {DAILY_QUESTIONS}</span>
-            <span className="text-primary font-medium">🎁 Up to {BONUS_XP_PERFECT} bonus XP!</span>
+          <Card className="p-4 bg-gradient-to-r from-primary/10 to-accent/10 border-primary/20">
+            <div className="flex items-center justify-between text-sm">
+              <span>Question {currentIndex + 1} of {DAILY_QUESTIONS}</span>
+              <span className="text-primary font-medium">🎁 Up to {BONUS_XP_PERFECT} bonus XP!</span>
+            </div>
+            <Progress value={progress} className="mt-2 h-2" />
+          </Card>
+
+          <QuizCard
+            question={currentQuestion}
+            selectedAnswer={selectedAnswer}
+            onSelectAnswer={setSelectedAnswer}
+            showResult={showResult}
+            questionType={currentQuestion.type}
+          />
+
+          <div className="flex gap-3">
+            {!showResult ? (
+              <Button onClick={handleSubmit} disabled={!selectedAnswer} size="lg" className="w-full">
+                Submit Answer
+              </Button>
+            ) : (
+              <Button onClick={handleNext} size="lg" className="w-full">
+                {currentIndex < dailyQuestions.length - 1 ? (
+                  <>Next Question <ArrowRight className="ml-2 w-4 h-4" /></>
+                ) : (
+                  "See Results"
+                )}
+              </Button>
+            )}
           </div>
-          <Progress value={progress} className="mt-2 h-2" />
-        </Card>
-
-        <QuizCard
-          question={currentQuestion}
-          selectedAnswer={selectedAnswer}
-          onSelectAnswer={setSelectedAnswer}
-          showResult={showResult}
-          questionType={currentQuestion.type}
-        />
-
-        <div className="flex gap-3">
-          {!showResult ? (
-            <Button onClick={handleSubmit} disabled={!selectedAnswer} size="lg" className="w-full">
-              Submit Answer
-            </Button>
-          ) : (
-            <Button onClick={handleNext} size="lg" className="w-full">
-              {currentIndex < dailyQuestions.length - 1 ? (
-                <>Next Question <ArrowRight className="ml-2 w-4 h-4" /></>
-              ) : (
-                "See Results"
-              )}
-            </Button>
-          )}
         </div>
       </div>
-    </div>
+    </ScreenShakeWrapper>
   );
 };
 
