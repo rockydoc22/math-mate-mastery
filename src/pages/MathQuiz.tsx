@@ -8,6 +8,9 @@ import { Progress } from "@/components/ui/progress";
 import { Link } from "react-router-dom";
 import { useComboSystem } from "@/hooks/useComboSystem";
 import { ComboDisplay, ScreenShakeWrapper } from "@/components/ComboDisplay";
+import { MiniConfetti } from "@/components/ConfettiExplosion";
+import { MilestoneCelebration } from "@/components/MilestoneCelebration";
+import { useSoundEffects } from "@/hooks/useSoundEffects";
 
 const MathQuiz = () => {
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
@@ -16,7 +19,10 @@ const MathQuiz = () => {
   const [score, setScore] = useState(0);
   const [finished, setFinished] = useState(false);
   const [screenShake, setScreenShake] = useState(false);
+  const [showConfetti, setShowConfetti] = useState(false);
+  const [activeMilestone, setActiveMilestone] = useState<string | null>(null);
   const { combo, registerCorrect, registerIncorrect, getComboMessage, getComboIntensity, resetCombo } = useComboSystem();
+  const { playCorrect, playWrong, playCombo } = useSoundEffects();
 
   const currentQuestion = questions[currentQuestionIndex];
   const progress = ((currentQuestionIndex + 1) / questions.length) * 100;
@@ -30,12 +36,30 @@ const MathQuiz = () => {
     const isCorrect = selectedAnswer === currentQuestion.correctAnswer;
     if (isCorrect) {
       setScore(score + 1);
+      playCorrect();
       registerCorrect();
+      
+      // Show confetti
+      setShowConfetti(true);
+      setTimeout(() => setShowConfetti(false), 600);
+      
+      // Combo sounds and milestones
+      const newComboCount = combo.count + 1;
+      if (newComboCount >= 3) {
+        playCombo(newComboCount);
+      }
+      if (newComboCount === 5) {
+        setTimeout(() => setActiveMilestone("combo_5"), 400);
+      } else if (newComboCount === 10) {
+        setTimeout(() => setActiveMilestone("combo_10"), 400);
+      }
+      
       if (combo.count >= 2) {
         setScreenShake(true);
         setTimeout(() => setScreenShake(false), 300);
       }
     } else {
+      playWrong();
       registerIncorrect();
     }
   };
@@ -105,13 +129,17 @@ const MathQuiz = () => {
             <Progress value={progress} className="h-2" />
           </div>
 
-          <QuizCard
-            question={currentQuestion}
-            selectedAnswer={selectedAnswer}
-            onSelectAnswer={handleSelectAnswer}
-            showResult={showResult}
-            questionType="math"
-          />
+          {/* Quiz Card with confetti */}
+          <div className="relative">
+            <MiniConfetti active={showConfetti} />
+            <QuizCard
+              question={currentQuestion}
+              selectedAnswer={selectedAnswer}
+              onSelectAnswer={handleSelectAnswer}
+              showResult={showResult}
+              questionType="math"
+            />
+          </div>
 
           <div className="flex gap-3">
             {!showResult ? (
@@ -142,6 +170,12 @@ const MathQuiz = () => {
           </div>
         </div>
       </div>
+      
+      {/* Milestone celebration */}
+      <MilestoneCelebration 
+        milestone={activeMilestone}
+        onComplete={() => setActiveMilestone(null)}
+      />
     </ScreenShakeWrapper>
   );
 };
