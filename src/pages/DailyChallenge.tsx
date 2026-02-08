@@ -9,6 +9,8 @@ import { Button } from "@/components/ui/button";
 import { Progress } from "@/components/ui/progress";
 import { QuizCard } from "@/components/QuizCard";
 import { ComboDisplay, ScreenShakeWrapper } from "@/components/ComboDisplay";
+import { MiniConfetti } from "@/components/ConfettiExplosion";
+import { MilestoneCelebration } from "@/components/MilestoneCelebration";
 import { useSoundEffects } from "@/hooks/useSoundEffects";
 import { ArrowLeft, ArrowRight, Zap, Trophy, Calendar, Star, Flame } from "lucide-react";
 import { questions } from "@/data/questions";
@@ -52,7 +54,7 @@ const MIN_SAT_DIFFICULTY = 3;
 const DailyChallenge = () => {
   const { user } = useAuth();
   const { streak } = useGameStats();
-  const { playCorrect, playWrong, playLevelUp } = useSoundEffects();
+  const { playCorrect, playWrong, playLevelUp, playCombo, playMilestone } = useSoundEffects();
   const { combo, registerCorrect, registerIncorrect, getComboMessage, getComboIntensity, resetCombo } = useComboSystem();
   const [completedToday, setCompletedToday] = useState(false);
   const [todayScore, setTodayScore] = useState<{ score: number; total: number } | null>(null);
@@ -62,6 +64,8 @@ const DailyChallenge = () => {
   const [score, setScore] = useState(0);
   const [finished, setFinished] = useState(false);
   const [screenShake, setScreenShake] = useState(false);
+  const [showConfetti, setShowConfetti] = useState(false);
+  const [activeMilestone, setActiveMilestone] = useState<string | null>(null);
 
   // Generate daily questions based on date (same base pool for all users)
   // Uses proportional sampling to match official SAT domain distributions
@@ -142,18 +146,37 @@ const DailyChallenge = () => {
       setScore(score + 1);
       playCorrect();
       registerCorrect();
+      
+      // Show confetti for correct answers
+      setShowConfetti(true);
+      setTimeout(() => setShowConfetti(false), 600);
+      
+      // Play combo sounds and check for milestones
+      const newComboCount = combo.count + 1;
+      if (newComboCount >= 3) {
+        playCombo(newComboCount);
+      }
+      
+      // Trigger milestone celebrations
+      if (newComboCount === 5) {
+        setTimeout(() => setActiveMilestone("combo_5"), 400);
+      } else if (newComboCount === 10) {
+        setTimeout(() => setActiveMilestone("combo_10"), 400);
+      }
+      
       // Trigger screen shake on high combos
       if (combo.count >= 2) {
         setScreenShake(true);
         setTimeout(() => setScreenShake(false), 300);
       }
+      
       // Mark question as correctly answered for smart rotation
       markDailyQuestionCorrect(currentQuestion.id);
     } else {
       playWrong();
       registerIncorrect();
     }
-  }, [currentIndex, dailyQuestions, selectedAnswer, score, playCorrect, playWrong, registerCorrect, registerIncorrect, combo.count]);
+  }, [currentIndex, dailyQuestions, selectedAnswer, score, playCorrect, playWrong, registerCorrect, registerIncorrect, combo.count, playCombo]);
 
   const handleNext = async () => {
     if (currentIndex < dailyQuestions.length - 1) {
@@ -299,13 +322,17 @@ const DailyChallenge = () => {
             <Progress value={progress} className="mt-2 h-2" />
           </Card>
 
-          <QuizCard
-            question={currentQuestion}
-            selectedAnswer={selectedAnswer}
-            onSelectAnswer={setSelectedAnswer}
-            showResult={showResult}
-            questionType={currentQuestion.type}
-          />
+          {/* Quiz Card with confetti overlay */}
+          <div className="relative">
+            <MiniConfetti active={showConfetti} />
+            <QuizCard
+              question={currentQuestion}
+              selectedAnswer={selectedAnswer}
+              onSelectAnswer={setSelectedAnswer}
+              showResult={showResult}
+              questionType={currentQuestion.type}
+            />
+          </div>
 
           <div className="flex gap-3">
             {!showResult ? (
@@ -324,6 +351,12 @@ const DailyChallenge = () => {
           </div>
         </div>
       </div>
+      
+      {/* Milestone celebration overlay */}
+      <MilestoneCelebration 
+        milestone={activeMilestone}
+        onComplete={() => setActiveMilestone(null)}
+      />
     </ScreenShakeWrapper>
   );
 };
