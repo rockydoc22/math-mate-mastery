@@ -312,6 +312,21 @@ const Quiz = () => {
     return "Math";
   };
 
+  // Guard against empty question pool (can happen on iPhone with memory issues)
+  if (quizQuestions.length === 0) {
+    return (
+      <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-primary/5 via-secondary/5 to-accent/5 p-4">
+        <div className="w-full max-w-xl text-center space-y-4">
+          <h2 className="text-xl font-bold text-foreground">No questions available</h2>
+          <p className="text-muted-foreground">Try refreshing the page or adjusting your filters.</p>
+          <Link to="/">
+            <Button>Back to Home</Button>
+          </Link>
+        </div>
+      </div>
+    );
+  }
+
   if (finished) {
     return (
       <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-primary/5 via-secondary/5 to-accent/5 p-4">

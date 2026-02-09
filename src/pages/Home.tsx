@@ -18,6 +18,7 @@ import { AchievementBadge } from "@/components/AchievementBadge";
 import { getSkillLevel, ratingToSATScore } from "@/utils/eloRating";
 import { supabase } from "@/integrations/supabase/client";
 import { usePWAUpdate, APP_VERSION } from "@/hooks/usePWAUpdate";
+import { PWAUpdateButton } from "@/components/PWAUpdateButton";
 import { SATBossArena } from "@/components/SATBossArena";
 import { LandingPage } from "@/components/LandingPage";
 import { SATMasteryLogo } from "@/components/SATMasteryLogo";
@@ -644,9 +645,9 @@ const Home = () => {
           </Link>
         </div>
 
-        {/* Version */}
-        <div className="flex items-center justify-center pb-4">
-          <span className="text-xs text-muted-foreground">v{APP_VERSION}</span>
+        {/* Version & Update */}
+        <div className="flex flex-col items-center gap-2 pb-4">
+          <PWAUpdateButton />
         </div>
       </div>
 

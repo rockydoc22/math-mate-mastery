@@ -18,25 +18,36 @@ import { englishQuestions } from "@/data/englishQuestions";
 import { shuffleAllQuestionOptions } from "@/utils/optionShuffler";
 import { sampleProportionally } from "@/utils/proportionalSampling";
 
-// Session storage key for tracking correctly answered questions in Daily Challenge
+// Use localStorage instead of sessionStorage so rotation persists across app reopens on iPhone
 const DAILY_CORRECT_ANSWERS_KEY = "sat_mastery_daily_correct_answers";
+const DAILY_CORRECT_ANSWERS_DATE_KEY = "sat_mastery_daily_correct_date";
 
-// Get correctly answered question IDs from session storage
+// Get correctly answered question IDs from localStorage (reset daily)
 function getDailyCorrectlyAnsweredIds(): Set<string> {
   try {
-    const stored = sessionStorage.getItem(DAILY_CORRECT_ANSWERS_KEY);
+    const today = new Date().toISOString().split("T")[0];
+    const storedDate = localStorage.getItem(DAILY_CORRECT_ANSWERS_DATE_KEY);
+    // Reset if it's a new day
+    if (storedDate !== today) {
+      localStorage.setItem(DAILY_CORRECT_ANSWERS_DATE_KEY, today);
+      localStorage.removeItem(DAILY_CORRECT_ANSWERS_KEY);
+      return new Set();
+    }
+    const stored = localStorage.getItem(DAILY_CORRECT_ANSWERS_KEY);
     return stored ? new Set(JSON.parse(stored)) : new Set();
   } catch {
     return new Set();
   }
 }
 
-// Save correctly answered question ID to session storage
+// Save correctly answered question ID to localStorage
 function markDailyQuestionCorrect(questionId: string): void {
   try {
+    const today = new Date().toISOString().split("T")[0];
+    localStorage.setItem(DAILY_CORRECT_ANSWERS_DATE_KEY, today);
     const current = getDailyCorrectlyAnsweredIds();
     current.add(questionId);
-    sessionStorage.setItem(DAILY_CORRECT_ANSWERS_KEY, JSON.stringify([...current]));
+    localStorage.setItem(DAILY_CORRECT_ANSWERS_KEY, JSON.stringify([...current]));
   } catch {
     // Ignore storage errors
   }
