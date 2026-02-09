@@ -9,6 +9,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { APP_VERSION } from "@/hooks/usePWAUpdate";
 import { SATMasteryLogo } from "@/components/SATMasteryLogo";
 import { FeedbackButton } from "@/components/FeedbackButton";
+import { InstallAppButton } from "@/components/InstallAppButton";
 import upwardCurveIcon from "@/assets/upward-curve-icon.png";
 // Official SAT dates for 2025-2026
 const upcomingSATDates = [
@@ -286,9 +287,10 @@ export const LandingPage = () => {
 
       {/* Footer */}
       <footer className="px-4 py-6 border-t border-border">
-        <div className="max-w-2xl mx-auto flex items-center justify-between text-xs text-muted-foreground">
+        <div className="max-w-2xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-muted-foreground">
           <span>© 2025 SAT Mastery</span>
           <div className="flex items-center gap-3">
+            <InstallAppButton />
             <FeedbackButton />
             <span>v{APP_VERSION}</span>
           </div>
