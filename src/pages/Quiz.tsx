@@ -72,132 +72,102 @@ const Quiz = () => {
   // Define isAdvancedSubject early so it can be used in useMemo
   const isAdvancedSubject = subject === "physics" || subject === "precalc" || subject === "calculus";
 
-  const quizQuestions = useMemo(() => {
-    let pool: CombinedQuestion[] = [];
+  const [quizQuestions, setQuizQuestions] = useState<CombinedQuestion[]>([]);
+  const [isLoading, setIsLoading] = useState(true);
 
-    // Handle advanced subjects
-    if (subject === "physics") {
-      pool = physicsQuestions.map((q) => ({ ...q, type: "math" as const }));
-    } else if (subject === "precalc") {
-      pool = precalcQuestions.map((q) => ({ ...q, type: "math" as const }));
-    } else if (subject === "calculus") {
-      pool = calculusQuestions.map((q) => ({ ...q, type: "math" as const }));
-    } else {
-      // SAT subjects
-      // SAT subjects - questions already filtered to difficulty 3+ in questions.ts
-      if (subject === "math" || subject === "both") {
-        pool = [...pool, ...questions.map((q) => ({ ...q, type: "math" as const }))];
-        pool = [...pool, ...visualMathQuestions.filter(q => (q.difficultyRating || 5) >= 3).map((q) => ({ ...q, type: "math" as const }))];
-        pool = [...pool, ...moreMathVisualQuestions.filter(q => (q.difficultyRating || 5) >= 3).map((q) => ({ ...q, type: "math" as const }))];
-        pool = [...pool, ...importedSATMathQuestions.filter(q => (q.difficultyRating || 5) >= 3).map((q) => ({ ...q, type: "math" as const }))];
+  useEffect(() => {
+    // Defer heavy computation to avoid blocking the main thread on iPhone
+    setIsLoading(true);
+    const timer = setTimeout(() => {
+      let pool: CombinedQuestion[] = [];
+
+      if (subject === "physics") {
+        pool = physicsQuestions.map((q) => ({ ...q, type: "math" as const }));
+      } else if (subject === "precalc") {
+        pool = precalcQuestions.map((q) => ({ ...q, type: "math" as const }));
+      } else if (subject === "calculus") {
+        pool = calculusQuestions.map((q) => ({ ...q, type: "math" as const }));
+      } else {
+        if (subject === "math" || subject === "both") {
+          pool = [...pool, ...questions.map((q) => ({ ...q, type: "math" as const }))];
+          pool = [...pool, ...visualMathQuestions.filter(q => (q.difficultyRating || 5) >= 3).map((q) => ({ ...q, type: "math" as const }))];
+          pool = [...pool, ...moreMathVisualQuestions.filter(q => (q.difficultyRating || 5) >= 3).map((q) => ({ ...q, type: "math" as const }))];
+          pool = [...pool, ...importedSATMathQuestions.filter(q => (q.difficultyRating || 5) >= 3).map((q) => ({ ...q, type: "math" as const }))];
+        }
+        if (subject === "english" || subject === "both") {
+          pool = [...pool, ...englishQuestions.map((q) => ({ ...q, type: "english" as const }))];
+          pool = [...pool, ...visualEnglishQuestions.filter(q => (q.difficultyRating || 5) >= 3).map((q) => ({ ...q, type: "english" as const }))];
+          pool = [...pool, ...moreEnglishVisualQuestions.filter(q => (q.difficultyRating || 5) >= 3).map((q) => ({ ...q, type: "english" as const }))];
+        }
       }
-      if (subject === "english" || subject === "both") {
-        pool = [...pool, ...englishQuestions.map((q) => ({ ...q, type: "english" as const }))];
-        pool = [...pool, ...visualEnglishQuestions.filter(q => (q.difficultyRating || 5) >= 3).map((q) => ({ ...q, type: "english" as const }))];
-        pool = [...pool, ...moreEnglishVisualQuestions.filter(q => (q.difficultyRating || 5) >= 3).map((q) => ({ ...q, type: "english" as const }))];
+
+      const seenIds = new Set<string>();
+      const dedupedPool = pool.filter((q) => {
+        if (seenIds.has(q.id)) return false;
+        seenIds.add(q.id);
+        return true;
+      });
+
+      const correctlyAnsweredIds = getCorrectlyAnsweredIds();
+      const unansweredQuestions = dedupedPool.filter(q => !correctlyAnsweredIds.has(q.id));
+      const answeredQuestions = dedupedPool.filter(q => correctlyAnsweredIds.has(q.id));
+      const prioritizedPool = unansweredQuestions.length >= count 
+        ? unansweredQuestions 
+        : unansweredQuestions.length > 0 
+          ? [...unansweredQuestions, ...shuffleArray(answeredQuestions)]
+          : dedupedPool;
+
+      let topicFiltered = prioritizedPool;
+      if (topicId) {
+        const topic = allTopics.find(t => t.id === topicId);
+        if (topic) {
+          topicFiltered = prioritizedPool.filter(q => {
+            const searchText = `${q.domain} ${q.skill} ${q.question}`.toLowerCase();
+            return topic.keywords.some(keyword => searchText.includes(keyword.toLowerCase()));
+          });
+        }
       }
-    }
 
-    // Remove duplicates by question ID
-    const seenIds = new Set<string>();
-    const dedupedPool = pool.filter((q) => {
-      if (seenIds.has(q.id)) {
-        return false;
-      }
-      seenIds.add(q.id);
-      return true;
-    });
-
-    // Prioritize questions not yet answered correctly this session
-    const correctlyAnsweredIds = getCorrectlyAnsweredIds();
-    const unansweredQuestions = dedupedPool.filter(q => !correctlyAnsweredIds.has(q.id));
-    const answeredQuestions = dedupedPool.filter(q => correctlyAnsweredIds.has(q.id));
-    
-    // Use unanswered questions first, fall back to answered if needed
-    // If all questions have been answered, reset and use full pool
-    const prioritizedPool = unansweredQuestions.length >= count 
-      ? unansweredQuestions 
-      : unansweredQuestions.length > 0 
-        ? [...unansweredQuestions, ...shuffleArray(answeredQuestions)]
-        : dedupedPool;
-
-    // Apply topic filter if specified
-    let topicFiltered = prioritizedPool;
-    if (topicId) {
-      const topic = allTopics.find(t => t.id === topicId);
-      if (topic) {
-        topicFiltered = prioritizedPool.filter(q => {
-          const searchText = `${q.domain} ${q.skill} ${q.question}`.toLowerCase();
-          return topic.keywords.some(keyword => searchText.includes(keyword.toLowerCase()));
-        });
-      }
-    }
-
-    // Apply difficulty filter (only for SAT subjects)
-    const filtered = subject === "physics" || subject === "precalc" || subject === "calculus"
-      ? topicFiltered
-      : filterByDifficulty(topicFiltered, difficulty);
-    
-    // Use proportional sampling for SAT subjects to match official domain distribution
-    // Math: 35% Linear Algebra, 35% Advanced Math, 15% Data Analysis, 15% Geometry/Trig
-    // English: 28% Craft & Structure, 26% Info & Ideas, 26% Standard English, 20% Expression
-    if (!isAdvancedSubject && !topicId) {
-      // Split by subject type
-      const mathPool = filtered.filter(q => q.type === "math");
-      const englishPool = filtered.filter(q => q.type === "english");
+      const filtered = subject === "physics" || subject === "precalc" || subject === "calculus"
+        ? topicFiltered
+        : filterByDifficulty(topicFiltered, difficulty);
       
-      let selected: CombinedQuestion[] = [];
-      
-      if (subject === "both") {
-        // For mixed mode, split count evenly between subjects
-        const mathCount = Math.ceil(count / 2);
-        const englishCount = count - mathCount;
+      if (!isAdvancedSubject && !topicId) {
+        const mathPool = filtered.filter(q => q.type === "math");
+        const englishPool = filtered.filter(q => q.type === "english");
+        let selected: CombinedQuestion[] = [];
         
-        const sampledMath = sampleProportionally(mathPool, mathCount, 'math');
-        const sampledEnglish = sampleProportionally(englishPool, englishCount, 'english');
-        selected = [...sampledMath, ...sampledEnglish];
-      } else if (subject === "math") {
-        selected = sampleProportionally(mathPool, count, 'math');
-      } else if (subject === "english") {
-        selected = sampleProportionally(englishPool, count, 'english');
+        if (subject === "both") {
+          const mathCount = Math.ceil(count / 2);
+          const englishCount = count - mathCount;
+          selected = [...sampleProportionally(mathPool, mathCount, 'math'), ...sampleProportionally(englishPool, englishCount, 'english')];
+        } else if (subject === "math") {
+          selected = sampleProportionally(mathPool, count, 'math');
+        } else if (subject === "english") {
+          selected = sampleProportionally(englishPool, count, 'english');
+        }
+        setQuizQuestions(shuffleAllQuestionOptions(shuffleArray(selected)));
+        setIsLoading(false);
+        return;
       }
       
-      // Final shuffle for variety and shuffle options within each question
-      return shuffleAllQuestionOptions(shuffleArray(selected));
-    }
-    
-    // Fallback for advanced subjects or topic-specific quizzes:
-    // Stratified sampling by difficulty level (easy, medium, hard)
-    const easyQuestions = filtered.filter(q => (q.difficultyRating || 5) <= 4);
-    const mediumQuestions = filtered.filter(q => (q.difficultyRating || 5) >= 5 && (q.difficultyRating || 5) <= 7);
-    const hardQuestions = filtered.filter(q => (q.difficultyRating || 5) >= 8);
-    
-    // Shuffle each band independently
-    const shuffledEasy = shuffleArray(easyQuestions);
-    const shuffledMedium = shuffleArray(mediumQuestions);
-    const shuffledHard = shuffleArray(hardQuestions);
-    
-    // Calculate proportional selection from each band (roughly 1/3 each, adjusted for availability)
-    const targetPerBand = Math.ceil(count / 3);
-    const selectedEasy = shuffledEasy.slice(0, Math.min(targetPerBand, shuffledEasy.length));
-    const selectedMedium = shuffledMedium.slice(0, Math.min(targetPerBand, shuffledMedium.length));
-    const selectedHard = shuffledHard.slice(0, Math.min(targetPerBand, shuffledHard.length));
-    
-    // Combine and fill remaining slots if one band is short
-    let combined = [...selectedEasy, ...selectedMedium, ...selectedHard];
-    
-    // If we don't have enough, fill from remaining shuffled pool
-    if (combined.length < count) {
-      const usedIds = new Set(combined.map(q => q.id));
-      const remaining = shuffleArray(filtered.filter(q => !usedIds.has(q.id)));
-      combined = [...combined, ...remaining.slice(0, count - combined.length)];
-    }
-    
-    // Trim to exact count and shuffle final order for variety
-    const selected = shuffleArray(combined.slice(0, count));
-    
-    // Shuffle option order within each question to ensure balanced A/B/C/D distribution
-    return shuffleAllQuestionOptions(selected);
+      const easyQuestions = filtered.filter(q => (q.difficultyRating || 5) <= 4);
+      const mediumQuestions = filtered.filter(q => (q.difficultyRating || 5) >= 5 && (q.difficultyRating || 5) <= 7);
+      const hardQuestions = filtered.filter(q => (q.difficultyRating || 5) >= 8);
+      const targetPerBand = Math.ceil(count / 3);
+      const selectedEasy = shuffleArray(easyQuestions).slice(0, Math.min(targetPerBand, easyQuestions.length));
+      const selectedMedium = shuffleArray(mediumQuestions).slice(0, Math.min(targetPerBand, mediumQuestions.length));
+      const selectedHard = shuffleArray(hardQuestions).slice(0, Math.min(targetPerBand, hardQuestions.length));
+      let combined = [...selectedEasy, ...selectedMedium, ...selectedHard];
+      if (combined.length < count) {
+        const usedIds = new Set(combined.map(q => q.id));
+        const remaining = shuffleArray(filtered.filter(q => !usedIds.has(q.id)));
+        combined = [...combined, ...remaining.slice(0, count - combined.length)];
+      }
+      setQuizQuestions(shuffleAllQuestionOptions(shuffleArray(combined.slice(0, count))));
+      setIsLoading(false);
+    }, 50); // Small delay to let the UI render first
+    return () => clearTimeout(timer);
   }, [subject, count, difficulty, topicId, isAdvancedSubject]);
 
   // isAdvancedSubject is now defined at the top of the component
@@ -312,16 +282,25 @@ const Quiz = () => {
     return "Math";
   };
 
-  // Guard against empty question pool (can happen on iPhone with memory issues)
-  if (quizQuestions.length === 0) {
+  // Show loading state while questions are being prepared
+  if (isLoading || quizQuestions.length === 0) {
     return (
       <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-primary/5 via-secondary/5 to-accent/5 p-4">
         <div className="w-full max-w-xl text-center space-y-4">
-          <h2 className="text-xl font-bold text-foreground">No questions available</h2>
-          <p className="text-muted-foreground">Try refreshing the page or adjusting your filters.</p>
-          <Link to="/">
-            <Button>Back to Home</Button>
-          </Link>
+          {isLoading ? (
+            <>
+              <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-primary mx-auto"></div>
+              <p className="text-muted-foreground">Preparing questions...</p>
+            </>
+          ) : (
+            <>
+              <h2 className="text-xl font-bold text-foreground">No questions available</h2>
+              <p className="text-muted-foreground">Try refreshing the page or adjusting your filters.</p>
+              <Link to="/">
+                <Button>Back to Home</Button>
+              </Link>
+            </>
+          )}
         </div>
       </div>
     );
