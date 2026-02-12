@@ -107,7 +107,9 @@ export const useGameStats = () => {
 
     if (!error) {
       fetchStats();
-      return true;
+      // Return the achievement info so callers can show a toast
+      const def = ACHIEVEMENT_DEFS[type as keyof typeof ACHIEVEMENT_DEFS];
+      return def || true;
     }
     return false;
   };
