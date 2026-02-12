@@ -178,6 +178,8 @@ const Quiz = () => {
   const [score, setScore] = useState(0);
   const [finished, setFinished] = useState(false);
   const [scoreRecorded, setScoreRecorded] = useState(false);
+  const [quizStartTime] = useState(() => Date.now());
+  const [quizEndTime, setQuizEndTime] = useState<number | null>(null);
   const [ratingChange, setRatingChange] = useState<{ show: boolean; change: number; newRating: number }>({
     show: false,
     change: 0,
@@ -195,7 +197,7 @@ const Quiz = () => {
   } = useQuizTimer({
     questionCount: quizQuestions.length,
     enabled: timerEnabled && !isAdvancedSubject,
-    onTimeUp: () => setFinished(true),
+    onTimeUp: () => { setQuizEndTime(Date.now()); setFinished(true); },
   });
 
   // Pause timer when showing results
@@ -252,6 +254,7 @@ const Quiz = () => {
       setSelectedAnswer(null);
       setShowResult(false);
     } else {
+      setQuizEndTime(Date.now());
       setFinished(true);
     }
   };
@@ -315,6 +318,7 @@ const Quiz = () => {
             totalQuestions={quizQuestions.length}
             onRestart={handleRestart}
             subject={getSubjectLabel()}
+            timeTakenMs={quizEndTime ? quizEndTime - quizStartTime : undefined}
           />
           {ratings && (
             <SkillRatingCard

@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Trophy, RotateCcw, Home } from "lucide-react";
+import { Trophy, RotateCcw, Home, Zap } from "lucide-react";
 import { Link } from "react-router-dom";
 import { RoastPopup } from "./RoastPopup";
 import { ShareResults } from "./ShareResults";
@@ -13,13 +13,37 @@ interface QuizResultsProps {
   totalQuestions: number;
   onRestart: () => void;
   subject?: string;
+  timeTakenMs?: number; // optional: total quiz time in ms
 }
 
-export const QuizResults = ({ score, totalQuestions, onRestart, subject = "Mixed" }: QuizResultsProps) => {
+const SPEED_RUN_KEY = "speed_run_best_qpm";
+
+export const QuizResults = ({ score, totalQuestions, onRestart, subject = "Mixed", timeTakenMs }: QuizResultsProps) => {
   const [showRoast, setShowRoast] = useState(false);
   const percentage = Math.round((score / totalQuestions) * 100);
   const { playAchievement, playLevelUp } = useSoundEffects();
   const { user } = useAuth();
+
+  // Speed Run stats
+  const qpm = timeTakenMs && timeTakenMs > 0
+    ? Math.round((totalQuestions / (timeTakenMs / 60000)) * 10) / 10
+    : null;
+
+  const [isNewBest, setIsNewBest] = useState(false);
+
+  useEffect(() => {
+    if (qpm && qpm > 0) {
+      const stored = localStorage.getItem(SPEED_RUN_KEY);
+      const bestQpm = stored ? JSON.parse(stored) : {};
+      const key = subject.toLowerCase();
+      const prev = bestQpm[key] || 0;
+      if (qpm > prev) {
+        bestQpm[key] = qpm;
+        localStorage.setItem(SPEED_RUN_KEY, JSON.stringify(bestQpm));
+        setIsNewBest(true);
+      }
+    }
+  }, [qpm, subject]);
   
   // Show roast popup after a brief delay
   useEffect(() => {
@@ -79,6 +103,27 @@ export const QuizResults = ({ score, totalQuestions, onRestart, subject = "Mixed
             <span className="text-muted-foreground">Wrong Answers:</span>
             <span className="font-semibold text-destructive">{totalQuestions - score}</span>
           </div>
+
+          {/* Speed Run Stats */}
+          {qpm !== null && (
+            <div className="flex justify-between p-3 bg-muted rounded-lg border border-amber-500/30">
+              <span className="text-muted-foreground flex items-center gap-1">
+                <Zap className="w-4 h-4 text-amber-500" /> Speed:
+              </span>
+              <span className="font-semibold">
+                {qpm} QPM
+                {isNewBest && <span className="ml-2 text-xs text-amber-500 font-bold animate-pulse">⚡ NEW BEST!</span>}
+              </span>
+            </div>
+          )}
+          {timeTakenMs != null && timeTakenMs > 0 && (
+            <div className="flex justify-between p-3 bg-muted rounded-lg">
+              <span className="text-muted-foreground">Time:</span>
+              <span className="font-semibold">
+                {Math.floor(timeTakenMs / 60000)}:{String(Math.floor((timeTakenMs % 60000) / 1000)).padStart(2, "0")}
+              </span>
+            </div>
+          )}
         </div>
 
         {/* Share Results */}

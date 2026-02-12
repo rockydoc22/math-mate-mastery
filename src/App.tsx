@@ -35,6 +35,7 @@ import DuplicateDetector from "./pages/DuplicateDetector";
 import StarterKitDownload from "./pages/StarterKitDownload";
 import KeyPrinciples from "./pages/KeyPrinciples";
 import RapidFacts from "./pages/RapidFacts";
+import BossBattle from "./pages/BossBattle";
 
 const queryClient = new QueryClient();
 
@@ -77,6 +78,7 @@ const App = () => (
             <Route path="/starter-kit" element={<StarterKitDownload />} />
             <Route path="/key-principles" element={<KeyPrinciples />} />
             <Route path="/rapid-facts" element={<RapidFacts />} />
+            <Route path="/boss-battle" element={<BossBattle />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>

@@ -7,7 +7,7 @@ import {
   Calculator, PenTool, Trophy, Zap, Users, LogIn, User, 
   Award, Swords, ChevronRight, Flame, Brain, X,
   Target, RotateCcw, BookOpen, RefreshCw, FileText, Crown, GraduationCap,
-  Clock, Sparkles, Download, Lightbulb, Play
+  Clock, Sparkles, Download, Lightbulb, Play, Skull
 } from "lucide-react";
 import { useNavigate, Link } from "react-router-dom";
 import { useAuth } from "@/hooks/useAuth";
@@ -22,6 +22,7 @@ import { PWAUpdateButton } from "@/components/PWAUpdateButton";
 import { SATBossArena } from "@/components/SATBossArena";
 import { LandingPage } from "@/components/LandingPage";
 import { SATMasteryLogo } from "@/components/SATMasteryLogo";
+import { StreakCalendar } from "@/components/StreakCalendar";
 
 // Motivational messages for non-logged in or idle users
 const motivationalMessages = [
@@ -77,6 +78,7 @@ const Home = () => {
   const [recentCorrectAnswers, setRecentCorrectAnswers] = useState(0);
   const [playerAvatar, setPlayerAvatar] = useState("🧑‍🚀");
   const [playerUsername, setPlayerUsername] = useState("Fighter");
+  const [practiceDates, setPracticeDates] = useState<string[]>([]);
 
   // Next SAT date countdown
   const nextSAT = getNextSATDate();
@@ -117,6 +119,19 @@ const Home = () => {
       if (profile) {
         setPlayerUsername(profile.username || "Fighter");
         setPlayerAvatar(profile.avatar_emoji || "🧑‍🚀");
+      }
+
+      // Fetch practice dates for streak calendar (last 84 days)
+      const calStart = new Date();
+      calStart.setDate(calStart.getDate() - 84);
+      const { data: dateRows } = await supabase
+        .from("question_attempts")
+        .select("created_at")
+        .eq("user_id", user.id)
+        .gte("created_at", calStart.toISOString());
+      if (dateRows) {
+        const uniqueDates = [...new Set(dateRows.map(r => r.created_at.split("T")[0]))];
+        setPracticeDates(uniqueDates);
       }
     };
     
@@ -532,6 +547,15 @@ const Home = () => {
                 <span className="text-sm font-medium">Rapid Facts Challenge</span>
               </Button>
             </Link>
+            <Link to="/boss-battle" className="w-full">
+              <Button variant="outline" className="w-full h-auto py-3 flex items-center gap-3 justify-start border-destructive/30 hover:bg-destructive/10">
+                <Skull className="w-5 h-5 text-destructive flex-shrink-0" />
+                <div className="flex flex-col items-start">
+                  <span className="text-sm font-medium">Daily Boss Battle</span>
+                  <span className="text-[10px] text-muted-foreground">One ultra-hard question. One shot.</span>
+                </div>
+              </Button>
+            </Link>
             {/* Elite Practice - 3 Tiers */}
             <div className="w-full space-y-2">
               <Link to="/elite-practice?tier=1600_club" className="w-full block">
@@ -619,6 +643,17 @@ const Home = () => {
             </div>
           </Card>
         </div>
+
+        {/* Streak Calendar */}
+        {streak && (
+          <div className="mb-4">
+            <StreakCalendar
+              practiceDates={practiceDates}
+              currentStreak={streak.current_streak}
+              longestStreak={streak.longest_streak}
+            />
+          </div>
+        )}
 
         {/* Bottom Tagline */}
         <p className="text-center text-sm text-muted-foreground italic mb-4">
