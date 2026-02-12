@@ -129,10 +129,7 @@ const Friends = () => {
             </Button>
           </Link>
           <div>
-            <h1 className="text-3xl font-bold flex items-center gap-2">
-              <Users className="w-8 h-8 text-primary" />
-              Friends
-            </h1>
+            <h1 className="text-3xl font-bold">Friend Link</h1>
             <p className="text-muted-foreground">Connect with other students</p>
           </div>
         </div>
