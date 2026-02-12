@@ -23,6 +23,7 @@ import { SATBossArena } from "@/components/SATBossArena";
 import { LandingPage } from "@/components/LandingPage";
 import { SATMasteryLogo } from "@/components/SATMasteryLogo";
 import { StreakCalendar } from "@/components/StreakCalendar";
+import { WordOfTheDay } from "@/components/WordOfTheDay";
 
 // Motivational messages for non-logged in or idle users
 const motivationalMessages = [
@@ -642,6 +643,11 @@ const Home = () => {
               )}
             </div>
           </Card>
+        </div>
+
+        {/* Word of the Day */}
+        <div className="mb-4">
+          <WordOfTheDay />
         </div>
 
         {/* Streak Calendar */}
