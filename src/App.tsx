@@ -34,6 +34,7 @@ import PrintableQuestions from "./pages/PrintableQuestions";
 import DuplicateDetector from "./pages/DuplicateDetector";
 import StarterKitDownload from "./pages/StarterKitDownload";
 import KeyPrinciples from "./pages/KeyPrinciples";
+import RapidFacts from "./pages/RapidFacts";
 
 const queryClient = new QueryClient();
 
@@ -75,6 +76,7 @@ const App = () => (
             <Route path="/duplicate-detector" element={<DuplicateDetector />} />
             <Route path="/starter-kit" element={<StarterKitDownload />} />
             <Route path="/key-principles" element={<KeyPrinciples />} />
+            <Route path="/rapid-facts" element={<RapidFacts />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
