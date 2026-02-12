@@ -3,12 +3,53 @@ import { useRegisterSW } from "virtual:pwa-register/react";
 import { toast } from "@/hooks/use-toast";
 import { ToastAction } from "@/components/ui/toast";
 
-export const APP_VERSION = "1.0.5";
+export const APP_VERSION = "1.0.6";
 
-// When enabled, the app will silently apply updates and reload as soon as a new
-// service worker is ready. This is the simplest way to ensure students always
-// get the latest version.
+const VERSION_KEY = "sat_mastery_app_version";
 const AUTO_APPLY_UPDATES = true;
+
+/**
+ * Force-clear all caches and unregister service workers when a new version is detected.
+ * This runs synchronously on import so stale PWA caches are purged before React mounts.
+ */
+async function clearAllCachesIfVersionChanged(): Promise<boolean> {
+  try {
+    const storedVersion = localStorage.getItem(VERSION_KEY);
+    if (storedVersion === APP_VERSION) return false;
+
+    console.log(`[PWA] Version change detected: ${storedVersion} → ${APP_VERSION}. Clearing caches.`);
+
+    // Clear all Cache Storage entries
+    if ("caches" in window) {
+      const cacheNames = await caches.keys();
+      await Promise.all(cacheNames.map((name) => caches.delete(name)));
+      console.log(`[PWA] Cleared ${cacheNames.length} cache(s).`);
+    }
+
+    // Unregister all service workers so the next load fetches fresh assets
+    if ("serviceWorker" in navigator) {
+      const registrations = await navigator.serviceWorker.getRegistrations();
+      await Promise.all(registrations.map((r) => r.unregister()));
+      console.log(`[PWA] Unregistered ${registrations.length} service worker(s).`);
+    }
+
+    localStorage.setItem(VERSION_KEY, APP_VERSION);
+    return true; // caches were cleared
+  } catch (e) {
+    console.error("[PWA] Cache clear failed:", e);
+    // Still stamp the version so we don't loop
+    try { localStorage.setItem(VERSION_KEY, APP_VERSION); } catch {}
+    return false;
+  }
+}
+
+// Fire immediately — if caches were cleared, reload to get fresh assets
+clearAllCachesIfVersionChanged().then((cleared) => {
+  if (cleared) {
+    // Small delay to let any in-flight renders settle
+    setTimeout(() => window.location.reload(), 300);
+  }
+});
 
 export const usePWAUpdate = () => {
   const [isUpdating, setIsUpdating] = useState(false);
@@ -18,11 +59,8 @@ export const usePWAUpdate = () => {
   const { updateServiceWorker } = useRegisterSW({
     onRegistered(r) {
       console.log("SW Registered");
-      // Check for updates periodically but don't auto-reload
       if (r) {
-        setInterval(() => {
-          r.update();
-        }, 60 * 1000); // Check every minute
+        setInterval(() => { r.update(); }, 60 * 1000);
       }
     },
     onRegisterError(error) {
@@ -30,8 +68,6 @@ export const usePWAUpdate = () => {
     },
     onNeedRefresh() {
       setHasUpdate(true);
-      // If we are auto-applying updates, keep the UX silent and just refresh.
-      // Otherwise, show a prompt so the user can tap to update.
       if (!AUTO_APPLY_UPDATES) {
         toast({
           title: "Update Available",
@@ -45,19 +81,13 @@ export const usePWAUpdate = () => {
   const applyUpdateAndReload = useCallback(async () => {
     setIsUpdating(true);
     try {
-      // This tells the waiting service worker to activate immediately.
       await updateServiceWorker(true);
-
       toast({
         title: "App Updated",
         description: "Reloading to the latest version…",
         duration: 1200,
       });
-
-      // Give iOS Safari a beat to swap controllers.
-      setTimeout(() => {
-        window.location.reload();
-      }, 600);
+      setTimeout(() => { window.location.reload(); }, 600);
     } catch (error) {
       console.error("Update failed:", error);
       setIsUpdating(false);
@@ -74,20 +104,13 @@ export const usePWAUpdate = () => {
     }
   }, [updateServiceWorker]);
 
-  // Automatic updates: when a new SW is ready, apply it and reload.
   useEffect(() => {
-    if (!AUTO_APPLY_UPDATES) return;
-    if (!hasUpdate) return;
-    if (isUpdating) return;
-    if (autoUpdateAttemptedRef.current) return;
-
+    if (!AUTO_APPLY_UPDATES || !hasUpdate || isUpdating || autoUpdateAttemptedRef.current) return;
     autoUpdateAttemptedRef.current = true;
     applyUpdateAndReload();
   }, [applyUpdateAndReload, hasUpdate, isUpdating]);
 
-  // Manual force update function - only called when user clicks button
   const forceUpdate = useCallback(async () => {
-    // Even when auto-updates are enabled, keep this around as a manual escape hatch.
     await applyUpdateAndReload();
   }, [applyUpdateAndReload]);
 
