@@ -526,6 +526,12 @@ const Home = () => {
                 <span className="text-sm font-medium text-amber-600 dark:text-amber-400">Key SAT Principles</span>
               </Button>
             </Link>
+            <Link to="/rapid-facts" className="w-full">
+              <Button variant="outline" className="w-full h-auto py-3 flex items-center gap-3 justify-start border-amber-500/30 hover:bg-amber-500/10">
+                <Zap className="w-5 h-5 text-amber-500 flex-shrink-0" />
+                <span className="text-sm font-medium">Rapid Facts Challenge</span>
+              </Button>
+            </Link>
             {/* Elite Practice - 3 Tiers */}
             <div className="w-full space-y-2">
               <Link to="/elite-practice?tier=1600_club" className="w-full block">
