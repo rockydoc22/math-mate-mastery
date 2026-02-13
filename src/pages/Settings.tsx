@@ -7,7 +7,9 @@ import { Label } from "@/components/ui/label";
 import { useAuth } from "@/hooks/useAuth";
 import { toast } from "@/hooks/use-toast";
 import { supabase } from "@/integrations/supabase/client";
-import { ArrowLeft, Lock, Eye, EyeOff } from "lucide-react";
+import { ArrowLeft, Lock, Eye, EyeOff, GraduationCap } from "lucide-react";
+import { useExamType } from "@/hooks/useExamType";
+import { EXAM_CONFIGS, type ExamType } from "@/utils/examConfig";
 
 const validatePassword = (password: string): { valid: boolean; error?: string } => {
   if (password.length < 8) {
@@ -29,6 +31,7 @@ const Settings = () => {
   const navigate = useNavigate();
   const [searchParams, setSearchParams] = useSearchParams();
   const { user, signOut } = useAuth();
+  const { examType, setExamType } = useExamType();
   const [loading, setLoading] = useState(false);
   const [showPassword, setShowPassword] = useState(false);
   const [showConfirmPassword, setShowConfirmPassword] = useState(false);
@@ -114,7 +117,40 @@ const Settings = () => {
             <CardTitle>Account Settings</CardTitle>
           </CardHeader>
           <CardContent className="space-y-6">
-            <div>
+            {/* Exam Type Selector */}
+            <div className="space-y-3">
+              <div className="flex items-center gap-2">
+                <GraduationCap className="w-4 h-4 text-primary" />
+                <Label className="font-semibold">Exam Mode</Label>
+              </div>
+              <div className="grid grid-cols-3 gap-2">
+                {(['sat', 'psat', 'act'] as ExamType[]).map((type) => {
+                  const config = EXAM_CONFIGS[type];
+                  const isACT = type === 'act';
+                  return (
+                    <Button
+                      key={type}
+                      variant={examType === type ? "default" : "outline"}
+                      size="sm"
+                      disabled={isACT}
+                      className={`flex flex-col h-auto py-2 ${isACT ? 'opacity-50' : ''}`}
+                      onClick={() => {
+                        if (!isACT) {
+                          setExamType(type);
+                          toast({ title: `Switched to ${config.name} mode ${config.icon}` });
+                        }
+                      }}
+                    >
+                      <span>{config.icon}</span>
+                      <span className="text-xs">{config.shortName}</span>
+                      {isACT && <span className="text-[8px]">Soon</span>}
+                    </Button>
+                  );
+                })}
+              </div>
+            </div>
+
+            <div className="pt-4 border-t">
               <Label className="text-muted-foreground">Email</Label>
               <p className="font-medium">{user.email}</p>
             </div>

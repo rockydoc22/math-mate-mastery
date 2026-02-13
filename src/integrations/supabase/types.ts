@@ -422,6 +422,7 @@ export type Database = {
           avatar_emoji: string | null
           avatar_url: string | null
           created_at: string
+          exam_type: string
           id: string
           show_on_leaderboards: boolean
           theme_color: string | null
@@ -432,6 +433,7 @@ export type Database = {
           avatar_emoji?: string | null
           avatar_url?: string | null
           created_at?: string
+          exam_type?: string
           id: string
           show_on_leaderboards?: boolean
           theme_color?: string | null
@@ -442,6 +444,7 @@ export type Database = {
           avatar_emoji?: string | null
           avatar_url?: string | null
           created_at?: string
+          exam_type?: string
           id?: string
           show_on_leaderboards?: boolean
           theme_color?: string | null
