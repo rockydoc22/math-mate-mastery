@@ -1931,8 +1931,8 @@ const generateMoreLevel9Questions = (): Level9Question[] => {
   
   // Quadratic with projectile contexts
   for (let i = 1; i <= 50; i++) {
-    const v0 = 10 + i * 4; // initial velocity
-    const h0 = i * 2; // initial height
+    const v0 = (i % 5 + 1) * 20; // multiples of 20 for clean mental math
+    const h0 = i * 5; // initial height
     const maxTime = v0 / 20;
     const maxHeight = h0 + v0 * maxTime - 10 * maxTime * maxTime;
     

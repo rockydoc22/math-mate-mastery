@@ -529,15 +529,15 @@ export const importedSATMathQuestions12: ImageQuestion[] = [
   },
   {
     id: "sat-math-l8-035",
-    question: "The value of an investment grows according to A = 1000(1.05)^t, where t is time in years. Approximately how long will it take for the investment to double?",
+    question: "A population of bacteria doubles every 3 hours. If the initial population is 500, which expression represents the population after t hours?",
     options: [
-      { letter: "A", text: "7 years" },
-      { letter: "B", text: "14 years" },
-      { letter: "C", text: "20 years" },
-      { letter: "D", text: "40 years" }
+      { letter: "A", text: "500(2)^(t/3)" },
+      { letter: "B", text: "500(2)^(3t)" },
+      { letter: "C", text: "500(3)^(t/2)" },
+      { letter: "D", text: "1000(2)^t" }
     ],
-    correctAnswer: "B",
-    explanation: "Using the Rule of 72: doubling time ≈ 72/5 ≈ 14.4 years. Or solving 2000 = 1000(1.05)^t gives t = ln(2)/ln(1.05) ≈ 14.2 years.",
+    correctAnswer: "A",
+    explanation: "The population doubles (factor of 2) every 3 hours. The general form is P₀ × 2^(t/doubling period). With P₀ = 500 and doubling period = 3: P(t) = 500(2)^(t/3). At t = 3: 500(2)¹ = 1000 ✓. At t = 6: 500(2)² = 2000 ✓.",
     difficulty: "Hard",
     domain: "Problem-Solving and Data Analysis",
     skill: "Exponential growth",
