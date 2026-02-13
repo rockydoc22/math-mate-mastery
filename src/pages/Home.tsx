@@ -7,7 +7,7 @@ import {
   Calculator, PenTool, Trophy, Zap, Users, LogIn, User, 
   Award, Swords, ChevronRight, Flame, Brain, X,
   Target, RotateCcw, BookOpen, RefreshCw, FileText, Crown, GraduationCap,
-  Clock, Sparkles, Download, Lightbulb, Play, Skull
+  Clock, Sparkles, Download, Lightbulb, Play, Skull, Settings
 } from "lucide-react";
 import { useNavigate, Link } from "react-router-dom";
 import { useAuth } from "@/hooks/useAuth";
@@ -24,6 +24,9 @@ import { LandingPage } from "@/components/LandingPage";
 import { SATMasteryLogo } from "@/components/SATMasteryLogo";
 import { StreakCalendar } from "@/components/StreakCalendar";
 import { WordOfTheDay } from "@/components/WordOfTheDay";
+import { ExamSelector } from "@/components/ExamSelector";
+import { useExamType } from "@/hooks/useExamType";
+import { EXAM_CONFIGS, ratingToExamScore } from "@/utils/examConfig";
 
 // Motivational messages for non-logged in or idle users
 const motivationalMessages = [
@@ -72,6 +75,8 @@ const Home = () => {
   const { streak, achievements, quizCount, achievementDefs } = useGameStats();
   const { ratings } = useSkillRating();
   const { activePlan, showReminder, dismissReminder, daysUntilExam, weeksUntilExam, workplan, pendingReviewCount, showReviewAlert } = useStudyPlan();
+  const { examType, needsSelection, setExamType } = useExamType();
+  const examConfig = EXAM_CONFIGS[examType];
   const [topPlayers, setTopPlayers] = useState<LeaderboardEntry[]>([]);
   const [notification, setNotification] = useState<string>("");
   const { forceUpdate, isUpdating, hasUpdate } = usePWAUpdate();
@@ -179,12 +184,17 @@ const Home = () => {
     navigate("/battle");
   };
 
-  const projectedScore = ratings ? ratingToSATScore(ratings.overallRating) : null;
+  const projectedScore = ratings ? ratingToExamScore(ratings.overallRating, examType) : null;
   const skillLevel = ratings ? getSkillLevel(ratings.overallRating) : null;
 
   // Show landing page for guests - MUST BE AFTER ALL HOOKS
   if (!user) {
     return <LandingPage />;
+  }
+
+  // Show exam selector for first-time users
+  if (needsSelection) {
+    return <ExamSelector onSelect={setExamType} />;
   }
 
   return (
@@ -237,14 +247,33 @@ const Home = () => {
 
           {/* SAT Mastery Logo - increased top margin to clear nav icons */}
           <div className="mb-4 mt-14 pt-2">
-            <SATMasteryLogo size="lg" clickable onClick={handle40SquaredClick} />
+            <SATMasteryLogo 
+              size="lg" 
+              clickable 
+              onClick={handle40SquaredClick}
+              titleText={examType === 'psat' ? 'PSAT Mastery' : undefined}
+              showTagline
+              taglineText={examConfig.tagline}
+            />
           </div>
           
+          {/* Exam badge */}
+          <div className="flex items-center gap-2 mb-2">
+            <span className="text-sm px-3 py-1 rounded-full bg-primary/10 text-primary font-medium">
+              {examConfig.icon} {examConfig.shortName} Mode
+            </span>
+            <Link to="/settings">
+              <Button variant="ghost" size="sm" className="h-6 w-6 p-0">
+                <Settings className="w-3.5 h-3.5 text-muted-foreground" />
+              </Button>
+            </Link>
+          </div>
+
           {/* SAT Countdown - Single Clear CTA */}
           <div className="mb-4 text-center">
             <div className="flex items-center justify-center gap-2 mb-2">
               <Clock className="w-4 h-4 text-primary" />
-              <span className="text-sm text-muted-foreground">Next SAT: {nextSAT.date.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}</span>
+              <span className="text-sm text-muted-foreground">Next {examConfig.shortName}: {nextSAT.date.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}</span>
             </div>
             <div className="text-3xl font-bold text-primary">{nextSAT.daysUntil} days</div>
           </div>
@@ -413,7 +442,7 @@ const Home = () => {
               </div>
               {projectedScore && (
                 <p className="text-sm text-muted-foreground mb-2">
-                  Projected SAT: <span className="font-semibold text-foreground">{projectedScore.min}-{projectedScore.max}</span>
+                  Projected {examConfig.shortName}: <span className="font-semibold text-foreground">{projectedScore.min}-{projectedScore.max}</span>
                 </p>
               )}
               <div className="flex items-center justify-center gap-4">
@@ -433,7 +462,7 @@ const Home = () => {
 
         {/* Tagline */}
         <h2 className="text-lg font-bold text-foreground text-center mb-4">
-          Be one of the <InlineMath math="40^2 \times \left(\pi + \sum_{k=1}^{\infty} \frac{1}{k^2} - e\right)" /> who crush the SAT
+          Be one of the <InlineMath math="40^2 \times \left(\pi + \sum_{k=1}^{\infty} \frac{1}{k^2} - e\right)" /> who crush the {examConfig.shortName}
         </h2>
 
         {/* Main Practice Actions - Reorganized */}
