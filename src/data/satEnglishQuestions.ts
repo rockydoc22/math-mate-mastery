@@ -816,7 +816,7 @@ export const satEnglishQuestions: EnglishQuestion[] = [
   }, 8),
   addRating({
     id: 'sat-eng-054',
-    question: 'The shift in tone from paragraph 2 to paragraph 3 can best be characterized as a move from:',
+    question: 'A technology blog post begins by describing how artificial intelligence is "revolutionizing healthcare, making diagnoses faster and more accurate than ever before." The next section, however, warns that "without rigorous oversight, AI systems risk perpetuating biases embedded in training data, potentially harming the very patients they aim to help." The shift in tone between these two sections can best be characterized as a move from:',
     options: [
       { letter: 'A', text: 'Optimistic to cautionary' },
       { letter: 'B', text: 'Informal to technical' },
@@ -824,7 +824,7 @@ export const satEnglishQuestions: EnglishQuestion[] = [
       { letter: 'D', text: 'Humorous to serious' }
     ],
     correctAnswer: 'A',
-    explanation: 'Paragraph 2 discusses benefits enthusiastically; paragraph 3 introduces concerns and warnings.',
+    explanation: 'The first section discusses AI benefits enthusiastically ("revolutionizing," "faster and more accurate"), while the second introduces concerns and warnings ("without rigorous oversight," "risk perpetuating biases"). This represents a clear shift from optimistic to cautionary tone.',
     difficulty: 'Hard',
     domain: 'Craft and Structure',
     skill: 'Tonal Shifts'

@@ -1488,22 +1488,29 @@ const generateLevel10Questions = (): VisualQuestion[] => {
   }
   
   // Rational Expressions
+  const gcd = (a: number, b: number): number => b === 0 ? a : gcd(b, a % b);
   for (let i = 1; i <= 20; i++) {
     const a = Math.floor(Math.random() * 4) + 1;
     const b = Math.floor(Math.random() * 5) + 1;
     const x = Math.floor(Math.random() * 5) + 2;
-    const result = (x + a) / (x + b);
+    const num = x + a;
+    const den = x + b;
+    const g = gcd(num, den);
+    const simNum = num / g;
+    const simDen = den / g;
+    const simplified = simDen === 1 ? `${simNum}` : `${simNum}/${simDen}`;
+    const unsimplified = g > 1 ? `${num}/${den}` : `${num + 1}/${den}`;
     questions.push({
       id: `l10-rational-${i}`,
       question: `Simplify and evaluate (x + ${a})/(x + ${b}) when x = ${x}`,
       options: [
-        { letter: "A", text: `${x + a}/${x + b}` },
+        { letter: "A", text: simplified },
         { letter: "B", text: `${a}/${b}` },
-        { letter: "C", text: `${x + a + 1}/${x + b}` },
+        { letter: "C", text: unsimplified },
         { letter: "D", text: `${x}/${b}` }
       ],
       correctAnswer: "A",
-      explanation: `When x = ${x}: (${x} + ${a})/(${x} + ${b}) = ${x + a}/${x + b}`,
+      explanation: `When x = ${x}: (${x} + ${a})/(${x} + ${b}) = ${num}/${den}${g > 1 ? ` = ${simplified}` : ''}`,
       difficulty: "Hard",
       domain: "Algebra",
       skill: "Rational Expressions",
