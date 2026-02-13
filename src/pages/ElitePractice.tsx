@@ -106,7 +106,7 @@ const ElitePractice = () => {
 
     // Shuffle and limit
     const shuffled = [...filtered].sort(() => Math.random() - 0.5);
-    return shuffled.slice(0, 15);
+    return shuffled.slice(0, 100);
   }, [tier]);
 
   const currentQuestion = quizQuestions[currentQuestionIndex];
