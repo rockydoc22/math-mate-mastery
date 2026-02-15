@@ -565,16 +565,19 @@ const Home = () => {
                 <span className="text-sm font-medium">Insights</span>
               </Button>
             </Link>
-            <Link to="/key-principles" className="w-full">
-              <Button variant="outline" className="w-full h-auto py-3 flex items-center gap-3 justify-start bg-gradient-to-r from-amber-500/10 to-yellow-500/10 border-amber-400/30 hover:border-amber-400/50">
-                <Lightbulb className="w-5 h-5 text-amber-500 flex-shrink-0" />
-                <span className="text-sm font-medium text-amber-600 dark:text-amber-400">Key SAT Principles</span>
+            <Link to="/rapid-facts" className="w-full">
+              <Button variant="outline" className="w-full h-auto py-3 flex items-center gap-3 justify-start bg-gradient-to-r from-amber-500/10 to-orange-500/10 border-amber-400/30 hover:border-amber-400/50">
+                <Zap className="w-5 h-5 text-amber-500 flex-shrink-0" />
+                <div className="flex flex-col items-start">
+                  <span className="text-sm font-medium text-amber-600 dark:text-amber-400">⚡ Rapid Facts Challenge</span>
+                  <span className="text-[10px] text-muted-foreground">60s timed quiz • SAT / PSAT / ACT</span>
+                </div>
               </Button>
             </Link>
-            <Link to="/rapid-facts" className="w-full">
-              <Button variant="outline" className="w-full h-auto py-3 flex items-center gap-3 justify-start border-amber-500/30 hover:bg-amber-500/10">
-                <Zap className="w-5 h-5 text-amber-500 flex-shrink-0" />
-                <span className="text-sm font-medium">Rapid Facts Challenge</span>
+            <Link to="/key-principles" className="w-full">
+              <Button variant="outline" className="w-full h-auto py-3 flex items-center gap-3 justify-start border-amber-400/30 hover:border-amber-400/50">
+                <Lightbulb className="w-5 h-5 text-amber-500 flex-shrink-0" />
+                <span className="text-sm font-medium">Key SAT Principles</span>
               </Button>
             </Link>
             <Link to="/boss-battle" className="w-full">

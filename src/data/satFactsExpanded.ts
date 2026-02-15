@@ -6,7 +6,7 @@ import { SATFact } from "./satFacts";
  */
 export const expandedFacts: SATFact[] = [
   // ══════════════════════════════════════════
-  // SAT / PSAT MATH — new formulas not in base
+  // SAT / PSAT MATH — formulas & concepts
   // ══════════════════════════════════════════
   { id: "em1", category: "math", exam: ["sat", "psat", "act"], question: "Midpoint formula?", correctAnswer: "((x₁+x₂)/2, (y₁+y₂)/2)", wrongAnswers: ["(x₂−x₁, y₂−y₁)", "√[(x₂−x₁)²+(y₂−y₁)²]", "(y₂−y₁)/(x₂−x₁)"] },
   { id: "em2", category: "math", exam: ["sat", "psat", "act"], question: "Average speed = ?", correctAnswer: "total distance / total time", wrongAnswers: ["total time / distance", "distance × time", "(speed₁ + speed₂) / 2"] },
@@ -17,9 +17,46 @@ export const expandedFacts: SATFact[] = [
   { id: "em7", category: "math", exam: ["sat", "psat", "act"], question: "Circle equation (center h,k)?", correctAnswer: "(x−h)² + (y−k)² = r²", wrongAnswers: ["x² + y² = r²", "(x+h)² + (y+k)² = r²", "x/h + y/k = r"] },
   { id: "em8", category: "math", exam: ["sat", "psat", "act"], question: "Volume of a sphere?", correctAnswer: "(4/3)πr³", wrongAnswers: ["(1/3)πr²h", "πr²h", "4πr²"] },
   { id: "em9", category: "math", exam: ["sat", "psat", "act"], question: "Radians in a full circle?", correctAnswer: "2π", wrongAnswers: ["π", "360", "180"] },
+  { id: "em10", category: "math", exam: ["sat", "psat", "act"], question: "180° = ? radians", correctAnswer: "π", wrongAnswers: ["2π", "π/2", "3π/2"] },
+  { id: "em11", category: "math", exam: ["sat", "psat", "act"], question: "Standard form of a line?", correctAnswer: "ax + by = c", wrongAnswers: ["y = mx + b", "y − y₁ = m(x − x₁)", "y = ax² + bx + c"] },
+  { id: "em12", category: "math", exam: ["sat", "psat", "act"], question: "Vertex form of a parabola?", correctAnswer: "y = a(x − h)² + k", wrongAnswers: ["y = ax² + bx + c", "y = mx + b", "(x−h)² + (y−k)² = r²"] },
+  { id: "em13", category: "math", exam: ["sat", "psat", "act"], question: "Vertex of y = ax² + bx + c: x = ?", correctAnswer: "−b / (2a)", wrongAnswers: ["b / (2a)", "−b / a", "c / a"] },
+  { id: "em14", category: "math", exam: ["sat", "psat", "act"], question: "Sum of exterior angles of any polygon?", correctAnswer: "360°", wrongAnswers: ["180°", "540°", "(n−2)×180°"] },
+  { id: "em15", category: "math", exam: ["sat", "psat", "act"], question: "Interior angle sum of an n-sided polygon?", correctAnswer: "(n − 2) × 180°", wrongAnswers: ["n × 180°", "360°", "(n − 1) × 180°"] },
+  { id: "em16", category: "math", exam: ["sat", "psat", "act"], question: "Surface area of a sphere?", correctAnswer: "4πr²", wrongAnswers: ["(4/3)πr³", "2πr²", "πr²"] },
+  { id: "em17", category: "math", exam: ["sat", "psat", "act"], question: "Exponential growth model?", correctAnswer: "y = a(1 + r)ᵗ", wrongAnswers: ["y = a(1 − r)ᵗ", "y = art", "y = a + rt"] },
+  { id: "em18", category: "math", exam: ["sat", "psat", "act"], question: "Exponential decay model?", correctAnswer: "y = a(1 − r)ᵗ", wrongAnswers: ["y = a(1 + r)ᵗ", "y = a − rt", "y = a/rᵗ"] },
+  { id: "em19", category: "math", exam: ["sat", "psat", "act"], question: "Compound interest formula?", correctAnswer: "A = P(1 + r/n)^(nt)", wrongAnswers: ["A = P(1 + rt)", "A = Prt", "A = P × e^(rt)"] },
+  { id: "em20", category: "math", exam: ["sat", "psat", "act"], question: "Simple interest formula?", correctAnswer: "I = Prt", wrongAnswers: ["I = P(1+r)ᵗ", "I = P/rt", "I = Pr²t"] },
+  { id: "em21", category: "math", exam: ["sat", "psat"], question: "If f(x) = x², what is f(−3)?", correctAnswer: "9", wrongAnswers: ["−9", "6", "−6"] },
+  { id: "em22", category: "math", exam: ["sat", "psat", "act"], question: "Perpendicular lines have slopes that are:", correctAnswer: "negative reciprocals", wrongAnswers: ["equal", "reciprocals", "negatives"] },
+  { id: "em23", category: "math", exam: ["sat", "psat", "act"], question: "Parallel lines have slopes that are:", correctAnswer: "equal", wrongAnswers: ["negative reciprocals", "opposite", "zero"] },
+  { id: "em24", category: "math", exam: ["sat", "psat", "act"], question: "Range of a data set = ?", correctAnswer: "max − min", wrongAnswers: ["mean − median", "sum / count", "Q3 − Q1"] },
+  { id: "em25", category: "math", exam: ["sat", "psat", "act"], question: "Interquartile range (IQR) = ?", correctAnswer: "Q3 − Q1", wrongAnswers: ["max − min", "Q2 − Q1", "mean − median"] },
+  { id: "em26", category: "math", exam: ["sat", "psat", "act"], question: "What does the y-intercept represent?", correctAnswer: "the value when x = 0", wrongAnswers: ["the slope", "the maximum", "where x and y are equal"] },
+  { id: "em27", category: "math", exam: ["sat", "psat", "act"], question: "A system of equations has no solution when lines are:", correctAnswer: "parallel (same slope, different intercepts)", wrongAnswers: ["perpendicular", "intersecting", "identical"] },
+  { id: "em28", category: "math", exam: ["sat", "psat", "act"], question: "A system has infinitely many solutions when lines are:", correctAnswer: "identical (same line)", wrongAnswers: ["parallel", "perpendicular", "intersecting at one point"] },
+  { id: "em29", category: "math", exam: ["sat", "psat", "act"], question: "Difference of squares: a² − b² = ?", correctAnswer: "(a + b)(a − b)", wrongAnswers: ["(a − b)²", "(a + b)²", "a² + b²"] },
+  { id: "em30", category: "math", exam: ["sat", "psat", "act"], question: "Perfect square trinomial: a² + 2ab + b² = ?", correctAnswer: "(a + b)²", wrongAnswers: ["(a − b)²", "(a + b)(a − b)", "a² + b²"] },
+  { id: "em31", category: "math", exam: ["sat", "psat", "act"], question: "Sum of roots of ax² + bx + c = 0?", correctAnswer: "−b/a", wrongAnswers: ["b/a", "c/a", "−c/a"] },
+  { id: "em32", category: "math", exam: ["sat", "psat", "act"], question: "Product of roots of ax² + bx + c = 0?", correctAnswer: "c/a", wrongAnswers: ["−b/a", "b/a", "−c/a"] },
+  { id: "em33", category: "math", exam: ["sat", "psat", "act"], question: "cos(90°) = ?", correctAnswer: "0", wrongAnswers: ["1", "−1", "1/2"] },
+  { id: "em34", category: "math", exam: ["sat", "psat", "act"], question: "sin(0°) = ?", correctAnswer: "0", wrongAnswers: ["1", "1/2", "−1"] },
+  { id: "em35", category: "math", exam: ["sat", "psat", "act"], question: "tan(0°) = ?", correctAnswer: "0", wrongAnswers: ["1", "undefined", "−1"] },
+  { id: "em36", category: "math", exam: ["sat", "psat", "act"], question: "tan(90°) = ?", correctAnswer: "undefined", wrongAnswers: ["0", "1", "−1"] },
+  { id: "em37", category: "math", exam: ["sat", "psat", "act"], question: "What is √(a × b)?", correctAnswer: "√a × √b", wrongAnswers: ["√a + √b", "√(a + b)", "a√b"] },
+  { id: "em38", category: "math", exam: ["sat", "psat", "act"], question: "x^(1/2) = ?", correctAnswer: "√x", wrongAnswers: ["x/2", "2x", "x²"] },
+  { id: "em39", category: "math", exam: ["sat", "psat", "act"], question: "x^(a/b) = ?", correctAnswer: "ᵇ√(xᵃ)", wrongAnswers: ["x^a / x^b", "xa/b", "x^a + x^b"] },
+  { id: "em40", category: "math", exam: ["sat", "psat", "act"], question: "Complementary angles sum to:", correctAnswer: "90°", wrongAnswers: ["180°", "360°", "45°"] },
+  { id: "em41", category: "math", exam: ["sat", "psat", "act"], question: "Supplementary angles sum to:", correctAnswer: "180°", wrongAnswers: ["90°", "360°", "270°"] },
+  { id: "em42", category: "math", exam: ["sat", "psat", "act"], question: "Vertical angles are:", correctAnswer: "always equal", wrongAnswers: ["supplementary", "complementary", "adjacent"] },
+  { id: "em43", category: "math", exam: ["sat", "psat", "act"], question: "Central angle equals its _____ arc.", correctAnswer: "intercepted", wrongAnswers: ["adjacent", "opposite", "complementary"] },
+  { id: "em44", category: "math", exam: ["sat", "psat", "act"], question: "Inscribed angle = _____ of its intercepted arc.", correctAnswer: "half", wrongAnswers: ["double", "equal to", "one-third"] },
+  { id: "em45", category: "math", exam: ["sat", "psat", "act"], question: "Direct variation: y = ?", correctAnswer: "kx", wrongAnswers: ["k/x", "k + x", "x/k"] },
+  { id: "em46", category: "math", exam: ["sat", "psat", "act"], question: "Inverse variation: y = ?", correctAnswer: "k/x", wrongAnswers: ["kx", "k + x", "k − x"] },
 
   // ══════════════════════════════════════════
-  // SAT / PSAT GRAMMAR — new rules not in base
+  // SAT / PSAT GRAMMAR — rules & conventions
   // ══════════════════════════════════════════
   { id: "eg1", category: "grammar", exam: ["sat", "psat", "act"], question: "Keep verb _____ consistent throughout.", correctAnswer: "tense", wrongAnswers: ["subject", "object", "adjective"] },
   { id: "eg2", category: "grammar", exam: ["sat", "psat", "act"], question: "Pronouns must agree with antecedents in:", correctAnswer: "number (singular/plural)", wrongAnswers: ["color", "size", "location"] },
@@ -37,6 +74,50 @@ export const expandedFacts: SATFact[] = [
   { id: "eg14", category: "grammar", exam: ["sat", "psat", "act"], question: "Could of is _____ (correct form: could have).", correctAnswer: "always wrong", wrongAnswers: ["sometimes correct", "informal but fine", "British English"] },
   { id: "eg15", category: "grammar", exam: ["sat", "psat", "act"], question: "Lie vs. lay: 'lie' means (no object):", correctAnswer: "to recline", wrongAnswers: ["to place", "to sit", "to stand"] },
   { id: "eg16", category: "grammar", exam: ["sat", "psat", "act"], question: "Redundancy should be:", correctAnswer: "removed for conciseness", wrongAnswers: ["kept for emphasis", "added for clarity", "ignored"] },
+  { id: "eg17", category: "grammar", exam: ["sat", "psat", "act"], question: "'Less' is for uncountable; '___' is for countable.", correctAnswer: "fewer", wrongAnswers: ["lesser", "least", "less"] },
+  { id: "eg18", category: "grammar", exam: ["sat", "psat", "act"], question: "Subjunctive mood: 'If I ___ rich...'", correctAnswer: "were", wrongAnswers: ["was", "am", "be"] },
+  { id: "eg19", category: "grammar", exam: ["sat", "psat", "act"], question: "'Among' is for ___ or more; 'between' is for two.", correctAnswer: "three", wrongAnswers: ["four", "five", "ten"] },
+  { id: "eg20", category: "grammar", exam: ["sat", "psat", "act"], question: "An independent clause contains:", correctAnswer: "a subject and verb, expressing a complete thought", wrongAnswers: ["only a verb", "a dependent marker", "a subordinating conjunction"] },
+  { id: "eg21", category: "grammar", exam: ["sat", "psat", "act"], question: "A dependent clause begins with:", correctAnswer: "a subordinating conjunction (because, although, when)", wrongAnswers: ["a coordinating conjunction", "a noun", "a semicolon"] },
+  { id: "eg22", category: "grammar", exam: ["sat", "psat", "act"], question: "Which is correct: 'me and him' or 'he and I' as subject?", correctAnswer: "he and I", wrongAnswers: ["me and him", "him and I", "me and he"] },
+  { id: "eg23", category: "grammar", exam: ["sat", "psat", "act"], question: "Active voice: subject ___ the action.", correctAnswer: "performs", wrongAnswers: ["receives", "avoids", "delays"] },
+  { id: "eg24", category: "grammar", exam: ["sat", "psat", "act"], question: "Passive voice: subject ___ the action.", correctAnswer: "receives", wrongAnswers: ["performs", "creates", "ignores"] },
+  { id: "eg25", category: "grammar", exam: ["sat", "psat"], question: "SAT prefers _____ voice in most cases.", correctAnswer: "active", wrongAnswers: ["passive", "subjunctive", "imperative"] },
+
+  // ══════════════════════════════════════════
+  // MORE VOCAB
+  // ══════════════════════════════════════════
+  { id: "ev1", category: "vocab", exam: ["sat", "psat", "act"], question: "'Ubiquitous' means:", correctAnswer: "present everywhere", wrongAnswers: ["rare and unusual", "underground", "unique"] },
+  { id: "ev2", category: "vocab", exam: ["sat", "psat", "act"], question: "'Ephemeral' means:", correctAnswer: "lasting a very short time", wrongAnswers: ["eternal", "physical", "imaginary"] },
+  { id: "ev3", category: "vocab", exam: ["sat", "psat", "act"], question: "'Austere' means:", correctAnswer: "severe or strict in manner; plain", wrongAnswers: ["luxurious", "Australian", "generous"] },
+  { id: "ev4", category: "vocab", exam: ["sat", "psat", "act"], question: "'Ambivalent' means:", correctAnswer: "having mixed or contradictory feelings", wrongAnswers: ["strongly opposed", "completely certain", "walking around"] },
+  { id: "ev5", category: "vocab", exam: ["sat", "psat", "act"], question: "'Candor' means:", correctAnswer: "the quality of being open and honest", wrongAnswers: ["sweetness", "political office", "hidden agenda"] },
+  { id: "ev6", category: "vocab", exam: ["sat", "psat", "act"], question: "'Credulous' means:", correctAnswer: "too ready to believe things", wrongAnswers: ["incredible", "not believable", "credit-worthy"] },
+  { id: "ev7", category: "vocab", exam: ["sat", "psat", "act"], question: "'Didactic' means:", correctAnswer: "intended to teach or instruct", wrongAnswers: ["entertaining", "destructive", "predictable"] },
+  { id: "ev8", category: "vocab", exam: ["sat", "psat", "act"], question: "'Enervate' means:", correctAnswer: "to weaken or drain energy", wrongAnswers: ["to energize", "to annoy", "to nerve up"] },
+  { id: "ev9", category: "vocab", exam: ["sat", "psat", "act"], question: "'Lethargic' means:", correctAnswer: "sluggish, lacking energy", wrongAnswers: ["deadly", "energetic", "forgetful"] },
+  { id: "ev10", category: "vocab", exam: ["sat", "psat", "act"], question: "'Pragmatic' vs 'idealistic': pragmatic focuses on:", correctAnswer: "practical results", wrongAnswers: ["perfect outcomes", "theoretical ideas", "artistic vision"] },
+  { id: "ev11", category: "vocab", exam: ["sat", "psat", "act"], question: "'Rescind' means:", correctAnswer: "to revoke or cancel officially", wrongAnswers: ["to resend", "to repeat", "to rescue"] },
+  { id: "ev12", category: "vocab", exam: ["sat", "psat", "act"], question: "'Sycophant' means:", correctAnswer: "a person who flatters for personal gain", wrongAnswers: ["a type of elephant", "a musical instrument", "a wise person"] },
+  { id: "ev13", category: "vocab", exam: ["sat", "psat", "act"], question: "'Taciturn' means:", correctAnswer: "reserved; saying very little", wrongAnswers: ["talkative", "tactical", "loud"] },
+  { id: "ev14", category: "vocab", exam: ["sat", "psat", "act"], question: "'Verbose' means:", correctAnswer: "using too many words", wrongAnswers: ["silent", "a type of verb", "brief"] },
+  { id: "ev15", category: "vocab", exam: ["sat", "psat", "act"], question: "'Zealous' means:", correctAnswer: "having great enthusiasm or devotion", wrongAnswers: ["jealous", "lazy", "careless"] },
+
+  // ══════════════════════════════════════════
+  // MORE STRATEGIES
+  // ══════════════════════════════════════════
+  { id: "es1", category: "strategy", exam: ["sat", "psat"], question: "On the SAT, how many sections are there?", correctAnswer: "2 (Reading & Writing, Math)", wrongAnswers: ["3", "4", "5"] },
+  { id: "es2", category: "strategy", exam: ["sat", "psat"], question: "SAT total score range?", correctAnswer: "400–1600", wrongAnswers: ["200–800", "600–2400", "0–1600"] },
+  { id: "es3", category: "strategy", exam: ["psat"], question: "PSAT total score range?", correctAnswer: "320–1520", wrongAnswers: ["400–1600", "200–800", "0–1520"] },
+  { id: "es4", category: "strategy", exam: ["act"], question: "ACT total score range?", correctAnswer: "1–36", wrongAnswers: ["400–1600", "0–100", "1–50"] },
+  { id: "es5", category: "strategy", exam: ["act"], question: "How many sections on the ACT?", correctAnswer: "4 (English, Math, Reading, Science)", wrongAnswers: ["2", "3", "5"] },
+  { id: "es6", category: "strategy", exam: ["sat", "psat", "act"], question: "Process of elimination works best when:", correctAnswer: "you can rule out 2+ obviously wrong answers", wrongAnswers: ["all answers look correct", "the question is easy", "you don't understand the question"] },
+  { id: "es7", category: "strategy", exam: ["sat", "psat"], question: "Digital SAT: can you go back to previous questions in a module?", correctAnswer: "Yes, within the same module", wrongAnswers: ["No, never", "Only in math", "Only if time remains"] },
+  { id: "es8", category: "strategy", exam: ["sat", "psat"], question: "SAT Math section: calculator allowed on:", correctAnswer: "all math questions (built-in Desmos)", wrongAnswers: ["only the second module", "no questions", "only word problems"] },
+  { id: "es9", category: "strategy", exam: ["act"], question: "ACT Math: how many questions in 60 minutes?", correctAnswer: "60", wrongAnswers: ["40", "50", "75"] },
+  { id: "es10", category: "strategy", exam: ["act"], question: "ACT Science: how many passages?", correctAnswer: "6–7", wrongAnswers: ["3–4", "10", "1–2"] },
+  { id: "es11", category: "strategy", exam: ["sat", "psat", "act"], question: "For 'EXCEPT' or 'NOT' questions, look for the answer that:", correctAnswer: "does NOT fit the pattern of the other three", wrongAnswers: ["fits best", "is most obvious", "is the longest"] },
+  { id: "es12", category: "strategy", exam: ["sat", "psat", "act"], question: "When a question asks about the 'main idea,' the answer is usually:", correctAnswer: "broad enough to cover the whole passage", wrongAnswers: ["a specific detail", "the first sentence", "the last paragraph only"] },
 
   // ══════════════════════════════════════════
   // ACT-SPECIFIC MATH — advanced topics
@@ -61,6 +142,16 @@ export const expandedFacts: SATFact[] = [
   { id: "am18", category: "math", exam: ["act"], question: "Ellipse standard equation?", correctAnswer: "(x−h)²/a² + (y−k)²/b² = 1", wrongAnswers: ["(x−h)² + (y−k)² = r²", "x² + y² = 1", "y = ax² + bx + c"] },
   { id: "am19", category: "math", exam: ["act", "sat"], question: "i² = ? (imaginary unit)", correctAnswer: "−1", wrongAnswers: ["1", "0", "i"] },
   { id: "am20", category: "math", exam: ["act"], question: "2×2 matrix determinant [[a,b],[c,d]]?", correctAnswer: "ad − bc", wrongAnswers: ["a + d", "ac + bd", "ab − cd"] },
+  { id: "am21", category: "math", exam: ["act"], question: "log_b(xⁿ) = ?", correctAnswer: "n × log_b x", wrongAnswers: ["log_b x + n", "log_b(nx)", "(log_b x)ⁿ"] },
+  { id: "am22", category: "math", exam: ["act"], question: "Change of base formula: log_b x = ?", correctAnswer: "log x / log b (or ln x / ln b)", wrongAnswers: ["log b / log x", "x / b", "b^x"] },
+  { id: "am23", category: "math", exam: ["act"], question: "Arithmetic sequence: aₙ = ?", correctAnswer: "a₁ + (n−1)d", wrongAnswers: ["a₁ × rⁿ⁻¹", "a₁ + nd", "a₁ × d^n"] },
+  { id: "am24", category: "math", exam: ["act"], question: "Geometric sequence: aₙ = ?", correctAnswer: "a₁ × rⁿ⁻¹", wrongAnswers: ["a₁ + (n−1)d", "a₁ × n × r", "a₁ + rⁿ"] },
+  { id: "am25", category: "math", exam: ["act"], question: "Sum of arithmetic series: S = ?", correctAnswer: "n/2 × (a₁ + aₙ)", wrongAnswers: ["n × a₁", "a₁ × rⁿ", "(aₙ − a₁)/n"] },
+  { id: "am26", category: "math", exam: ["act"], question: "Law of Sines: a/sin A = ?", correctAnswer: "b/sin B = c/sin C", wrongAnswers: ["b × sin B", "a × sin A", "c/cos C"] },
+  { id: "am27", category: "math", exam: ["act"], question: "Law of Cosines: c² = ?", correctAnswer: "a² + b² − 2ab cos C", wrongAnswers: ["a² + b²", "a² + b² + 2ab cos C", "2ab cos C"] },
+  { id: "am28", category: "math", exam: ["act"], question: "1 + tan²θ = ?", correctAnswer: "sec²θ", wrongAnswers: ["csc²θ", "cos²θ", "sin²θ + 1"] },
+  { id: "am29", category: "math", exam: ["act"], question: "1 + cot²θ = ?", correctAnswer: "csc²θ", wrongAnswers: ["sec²θ", "tan²θ", "cos²θ + 1"] },
+  { id: "am30", category: "math", exam: ["act"], question: "Period of y = sin(bx)?", correctAnswer: "2π/b", wrongAnswers: ["2πb", "π/b", "b/2π"] },
 
   // ══════════════════════════════════════════
   // ACT-SPECIFIC ENGLISH
@@ -73,9 +164,13 @@ export const expandedFacts: SATFact[] = [
   { id: "ae6", category: "grammar", exam: ["act", "sat", "psat"], question: "Tone must match the passage's _____ level.", correctAnswer: "formality", wrongAnswers: ["volume", "length", "voice"] },
   { id: "ae7", category: "grammar", exam: ["act", "sat", "psat"], question: "Effect is usually a _____, affect is usually a _____.", correctAnswer: "noun, verb", wrongAnswers: ["verb, noun", "adjective, adverb", "verb, verb"] },
   { id: "ae8", category: "grammar", exam: ["act", "sat", "psat"], question: "Comparisons: use more/less for 2, most/least for:", correctAnswer: "3 or more", wrongAnswers: ["always -er", "only adjectives", "adverbs only"] },
+  { id: "ae9", category: "grammar", exam: ["act"], question: "Idiom: 'different _____'", correctAnswer: "from", wrongAnswers: ["than", "to", "of"] },
+  { id: "ae10", category: "grammar", exam: ["act"], question: "Idiom: 'comply _____'", correctAnswer: "with", wrongAnswers: ["to", "for", "by"] },
+  { id: "ae11", category: "grammar", exam: ["act", "sat", "psat"], question: "A transition showing cause: 'therefore', 'consequently', or:", correctAnswer: "as a result", wrongAnswers: ["however", "in contrast", "on the other hand"] },
+  { id: "ae12", category: "grammar", exam: ["act", "sat", "psat"], question: "A transition showing contrast:", correctAnswer: "however / nevertheless / on the other hand", wrongAnswers: ["furthermore / moreover", "therefore / thus", "similarly / likewise"] },
 
   // ══════════════════════════════════════════
-  // ACT SCIENCE — all new
+  // ACT SCIENCE — reasoning & interpretation
   // ══════════════════════════════════════════
   { id: "as1", category: "science", exam: ["act"], question: "Independent variable is:", correctAnswer: "manipulated by the experimenter", wrongAnswers: ["measured outcome", "kept constant", "the control group"] },
   { id: "as2", category: "science", exam: ["act"], question: "Dependent variable is:", correctAnswer: "the measured response/outcome", wrongAnswers: ["the changed input", "kept unchanged", "the hypothesis"] },
@@ -95,4 +190,11 @@ export const expandedFacts: SATFact[] = [
   { id: "as16", category: "science", exam: ["act"], question: "To judge experiment validity, look for:", correctAnswer: "consistent results across trials", wrongAnswers: ["one outlier", "bias confirmation", "small sample size"] },
   { id: "as17", category: "science", exam: ["act"], question: "In Conflicting Viewpoints, choose the hypothesis supported by:", correctAnswer: "evidence from the passage", wrongAnswers: ["personal opinion", "majority view", "prediction alone"] },
   { id: "as18", category: "science", exam: ["act"], question: "Adding a new variable to an experiment:", correctAnswer: "tests a new hypothesis", wrongAnswers: ["changes nothing", "removes data", "averages results"] },
+  { id: "as19", category: "science", exam: ["act"], question: "A flat horizontal line on a graph means:", correctAnswer: "no change (constant value)", wrongAnswers: ["strong increase", "strong decrease", "no data"] },
+  { id: "as20", category: "science", exam: ["act"], question: "An outlier is:", correctAnswer: "a data point far from the trend", wrongAnswers: ["the average", "the median", "the most common value"] },
+  { id: "as21", category: "science", exam: ["act"], question: "Replication in science means:", correctAnswer: "repeating an experiment to verify results", wrongAnswers: ["copying someone's work", "using the same data twice", "ignoring errors"] },
+  { id: "as22", category: "science", exam: ["act"], question: "A directly proportional relationship graphs as:", correctAnswer: "a straight line through the origin", wrongAnswers: ["a curve", "a horizontal line", "a vertical line"] },
+  { id: "as23", category: "science", exam: ["act"], question: "pH < 7 indicates:", correctAnswer: "acidic", wrongAnswers: ["basic", "neutral", "no reaction"] },
+  { id: "as24", category: "science", exam: ["act"], question: "pH > 7 indicates:", correctAnswer: "basic (alkaline)", wrongAnswers: ["acidic", "neutral", "saturated"] },
+  { id: "as25", category: "science", exam: ["act"], question: "As sample size increases, reliability:", correctAnswer: "increases", wrongAnswers: ["decreases", "stays the same", "becomes unpredictable"] },
 ];
