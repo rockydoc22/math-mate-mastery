@@ -108,7 +108,7 @@ export const LandingPage = () => {
             <img 
               src={upwardCurveIcon} 
               alt="Score improvement arrow" 
-              className="w-8 h-8 dark:invert opacity-70"
+              className="w-14 h-14 dark:invert opacity-70"
             />
           </div>
 
