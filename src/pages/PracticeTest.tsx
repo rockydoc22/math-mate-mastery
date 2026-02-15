@@ -17,6 +17,7 @@ import { AITutorExplanation } from "@/components/AITutorExplanation";
 import { FlagQuestionModal } from "@/components/FlagQuestionModal";
 import { shuffleAllQuestionOptions } from "@/utils/optionShuffler";
 import { sampleProportionally } from "@/utils/proportionalSampling";
+import { DesmosCalculator } from "@/components/DesmosCalculator";
 
 interface TestQuestion {
   id: string;
@@ -491,6 +492,9 @@ const PracticeTest = () => {
           questionId={flagQuestionData?.id || ''}
           questionType={flagQuestionData?.type || 'math'}
         />
+
+        {/* Desmos Calculator */}
+        <DesmosCalculator />
       </div>
     </div>
   );

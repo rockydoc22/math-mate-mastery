@@ -20,6 +20,7 @@ import { allTopics } from "@/data/topicCategories";
 import { RatingChangePopup } from "@/components/RatingChangePopup";
 import { SkillRatingCard } from "@/components/SkillRatingCard";
 import { shuffleAllQuestionOptions } from "@/utils/optionShuffler";
+import { DesmosCalculator } from "@/components/DesmosCalculator";
 import { sampleProportionally } from "@/utils/proportionalSampling";
 
 type CombinedQuestion = (Question | EnglishQuestion | VisualQuestion | ImageQuestion) & { type: "math" | "english"; difficultyRating?: number };
@@ -438,6 +439,9 @@ const Quiz = () => {
         change={ratingChange.change}
         newRating={ratingChange.newRating}
       />
+
+      {/* Desmos Calculator - show for math questions */}
+      {(subject === "math" || subject === "both") && <DesmosCalculator />}
     </div>
   );
 };

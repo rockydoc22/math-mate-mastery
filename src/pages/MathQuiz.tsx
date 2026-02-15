@@ -11,6 +11,7 @@ import { ComboDisplay, ScreenShakeWrapper } from "@/components/ComboDisplay";
 import { MiniConfetti } from "@/components/ConfettiExplosion";
 import { MilestoneCelebration } from "@/components/MilestoneCelebration";
 import { useSoundEffects } from "@/hooks/useSoundEffects";
+import { DesmosCalculator } from "@/components/DesmosCalculator";
 
 const MathQuiz = () => {
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
@@ -176,6 +177,9 @@ const MathQuiz = () => {
         milestone={activeMilestone}
         onComplete={() => setActiveMilestone(null)}
       />
+
+      {/* Desmos Calculator */}
+      <DesmosCalculator />
     </ScreenShakeWrapper>
   );
 };
