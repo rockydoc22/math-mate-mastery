@@ -1,12 +1,17 @@
+import { expandedFacts } from "./satFactsExpanded";
+
+export type ExamType = "sat" | "psat" | "act";
+
 export interface SATFact {
   id: string;
-  category: "math" | "vocab" | "grammar" | "strategy";
+  category: "math" | "vocab" | "grammar" | "strategy" | "science";
   question: string;
   correctAnswer: string;
   wrongAnswers: string[];
+  exam?: ExamType[];
 }
 
-export const satFacts: SATFact[] = [
+const baseFacts: SATFact[] = [
   // ── MATH: Trig Values ──
   { id: "m1", category: "math", question: "sin(30°) = ?", correctAnswer: "1/2", wrongAnswers: ["√2/2", "√3/2", "1"] },
   { id: "m2", category: "math", question: "cos(30°) = ?", correctAnswer: "√3/2", wrongAnswers: ["1/2", "√2/2", "1"] },
@@ -131,4 +136,10 @@ export const satFacts: SATFact[] = [
   { id: "s8", category: "strategy", question: "For Reading passages, you should:", correctAnswer: "Read the passage first, then answer questions", wrongAnswers: ["Read questions first, then skim the passage", "Only read the first paragraph", "Skip the passage and use context clues"] },
   { id: "s9", category: "strategy", question: "When the SAT writing asks for the 'most concise' option:", correctAnswer: "Choose the shortest option that preserves meaning", wrongAnswers: ["Always pick the longest one", "Pick the most formal option", "Choose the one with the most detail"] },
   { id: "s10", category: "strategy", question: "Plugging in numbers works best for:", correctAnswer: "Questions with variables in the answer choices", wrongAnswers: ["Word problems only", "Geometry questions only", "Questions with no answer choices"] },
+];
+
+// Merge base facts (default to all exams) with expanded facts
+export const satFacts: SATFact[] = [
+  ...baseFacts.map(f => ({ ...f, exam: f.exam || ["sat", "psat", "act"] as ExamType[] })),
+  ...expandedFacts,
 ];

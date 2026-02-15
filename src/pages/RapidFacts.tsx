@@ -3,12 +3,12 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Progress } from "@/components/ui/progress";
-import { ArrowLeft, Zap, Trophy, Timer, RotateCcw, Brain, BookOpen, PenTool, Lightbulb } from "lucide-react";
-import { satFacts, SATFact } from "@/data/satFacts";
+import { ArrowLeft, Zap, Trophy, Timer, RotateCcw, Brain, BookOpen, PenTool, Lightbulb, FlaskConical } from "lucide-react";
+import { satFacts, SATFact, ExamType } from "@/data/satFacts";
 
-type Category = "all" | "math" | "vocab" | "grammar" | "strategy";
+type Category = "all" | "math" | "vocab" | "grammar" | "strategy" | "science";
 
-const CHALLENGE_DURATION = 60; // seconds
+const CHALLENGE_DURATION = 60;
 const HIGH_SCORE_KEY = "rapid_facts_high_score";
 
 function shuffleArray<T>(arr: T[]): T[] {
@@ -29,9 +29,17 @@ const categoryConfig: Record<Exclude<Category, "all">, { label: string; icon: ty
   vocab: { label: "Vocab", icon: BookOpen, color: "text-emerald-500" },
   grammar: { label: "Grammar", icon: PenTool, color: "text-purple-500" },
   strategy: { label: "Strategy", icon: Lightbulb, color: "text-amber-500" },
+  science: { label: "Science", icon: FlaskConical, color: "text-cyan-500" },
 };
 
+const examOptions: { key: ExamType; label: string }[] = [
+  { key: "sat", label: "SAT" },
+  { key: "psat", label: "PSAT" },
+  { key: "act", label: "ACT" },
+];
+
 const RapidFacts = () => {
+  const [examFilter, setExamFilter] = useState<ExamType>("sat");
   const [category, setCategory] = useState<Category>("all");
   const [phase, setPhase] = useState<"menu" | "playing" | "results">("menu");
   const [queue, setQueue] = useState<SATFact[]>([]);
@@ -48,11 +56,26 @@ const RapidFacts = () => {
   });
 
   const timerRef = useRef<ReturnType<typeof setInterval> | null>(null);
-
   const currentFact = queue[currentIndex] as SATFact | undefined;
 
+  // Filter facts by exam type
+  const getFilteredFacts = useCallback(() => {
+    let pool = satFacts.filter(f => f.exam?.includes(examFilter));
+    if (category !== "all") pool = pool.filter(f => f.category === category);
+    // Hide science for SAT/PSAT
+    if (examFilter !== "act") pool = pool.filter(f => f.category !== "science");
+    return pool;
+  }, [examFilter, category]);
+
+  // Available categories for current exam
+  const availableCategories = (() => {
+    const cats = new Set(satFacts.filter(f => f.exam?.includes(examFilter)).map(f => f.category));
+    return Object.entries(categoryConfig).filter(([key]) => cats.has(key as Exclude<Category, "all">)) as [Exclude<Category, "all">, typeof categoryConfig["math"]][];
+  })();
+
   const startChallenge = useCallback(() => {
-    const pool = category === "all" ? satFacts : satFacts.filter(f => f.category === category);
+    const pool = getFilteredFacts();
+    if (pool.length === 0) return;
     const shuffled = shuffleArray(pool);
     setQueue(shuffled);
     setCurrentIndex(0);
@@ -63,7 +86,7 @@ const RapidFacts = () => {
     setTimeLeft(CHALLENGE_DURATION);
     setSelectedAnswer(null);
     setPhase("playing");
-  }, [category]);
+  }, [getFilteredFacts]);
 
   // Timer
   useEffect(() => {
@@ -81,10 +104,10 @@ const RapidFacts = () => {
     return () => { if (timerRef.current) clearInterval(timerRef.current); };
   }, [phase]);
 
-  // Save high score on results
+  // Save high score
   useEffect(() => {
     if (phase === "results") {
-      const key = category;
+      const key = `${examFilter}_${category}`;
       const prev = highScore[key] || 0;
       if (score > prev) {
         const updated = { ...highScore, [key]: score };
@@ -92,12 +115,11 @@ const RapidFacts = () => {
         localStorage.setItem(HIGH_SCORE_KEY, JSON.stringify(updated));
       }
     }
-  }, [phase, score, category, highScore]);
+  }, [phase, score, category, examFilter, highScore]);
 
   const handleAnswer = (answer: string) => {
-    if (selectedAnswer) return; // prevent double-tap
+    if (selectedAnswer) return;
     setSelectedAnswer(answer);
-
     const correct = answer === currentFact?.correctAnswer;
     if (correct) {
       const newStreak = streak + 1;
@@ -108,12 +130,9 @@ const RapidFacts = () => {
     } else {
       setStreak(0);
     }
-
-    // Advance after brief flash
     setTimeout(() => {
       const next = currentIndex + 1;
       if (next >= queue.length) {
-        // Reshuffle if we ran out
         const reshuffled = shuffleArray(queue);
         setQueue(reshuffled);
         setCurrentIndex(0);
@@ -126,13 +145,9 @@ const RapidFacts = () => {
     }, 400);
   };
 
-  const getCategoryLabel = (fact: SATFact) => {
-    const cfg = categoryConfig[fact.category];
-    return cfg;
-  };
-
   // ── MENU ──
   if (phase === "menu") {
+    const factCount = getFilteredFacts().length;
     return (
       <div className="min-h-screen bg-gradient-to-br from-background via-primary/5 to-accent/10 p-4">
         <div className="max-w-lg mx-auto space-y-6">
@@ -147,28 +162,51 @@ const RapidFacts = () => {
           </div>
 
           <Card className="p-6 space-y-4">
-            <h2 className="font-semibold text-center">Choose Category</h2>
-            <div className="grid grid-cols-2 gap-3">
-              <Button
-                variant={category === "all" ? "default" : "outline"}
-                className="h-auto py-3 flex flex-col gap-1"
-                onClick={() => setCategory("all")}
-              >
-                <Zap className="w-5 h-5" />
-                <span className="text-sm">All Topics</span>
-              </Button>
-              {(Object.entries(categoryConfig) as [Exclude<Category,"all">, typeof categoryConfig["math"]][]).map(([key, cfg]) => (
-                <Button
-                  key={key}
-                  variant={category === key ? "default" : "outline"}
-                  className="h-auto py-3 flex flex-col gap-1"
-                  onClick={() => setCategory(key)}
-                >
-                  <cfg.icon className={`w-5 h-5 ${category === key ? "" : cfg.color}`} />
-                  <span className="text-sm">{cfg.label}</span>
-                </Button>
-              ))}
+            {/* Exam selector */}
+            <div>
+              <h2 className="font-semibold text-center mb-2">Select Test</h2>
+              <div className="flex gap-2 justify-center">
+                {examOptions.map(opt => (
+                  <Button
+                    key={opt.key}
+                    variant={examFilter === opt.key ? "default" : "outline"}
+                    className="flex-1"
+                    onClick={() => { setExamFilter(opt.key); setCategory("all"); }}
+                  >
+                    {opt.label}
+                  </Button>
+                ))}
+              </div>
             </div>
+
+            {/* Category selector */}
+            <div>
+              <h2 className="font-semibold text-center mb-2">Choose Category</h2>
+              <div className="grid grid-cols-2 gap-3">
+                <Button
+                  variant={category === "all" ? "default" : "outline"}
+                  className="h-auto py-3 flex flex-col gap-1"
+                  onClick={() => setCategory("all")}
+                >
+                  <Zap className="w-5 h-5" />
+                  <span className="text-sm">All Topics</span>
+                </Button>
+                {availableCategories.map(([key, cfg]) => (
+                  <Button
+                    key={key}
+                    variant={category === key ? "default" : "outline"}
+                    className="h-auto py-3 flex flex-col gap-1"
+                    onClick={() => setCategory(key)}
+                  >
+                    <cfg.icon className={`w-5 h-5 ${category === key ? "" : cfg.color}`} />
+                    <span className="text-sm">{cfg.label}</span>
+                  </Button>
+                ))}
+              </div>
+            </div>
+
+            {/* Fact count */}
+            <p className="text-xs text-center text-muted-foreground">{factCount} facts available</p>
 
             {/* High scores */}
             {Object.keys(highScore).length > 0 && (
@@ -179,14 +217,14 @@ const RapidFacts = () => {
                 <div className="grid grid-cols-2 gap-2 text-center text-sm">
                   {Object.entries(highScore).map(([k, v]) => (
                     <div key={k} className="p-2 bg-muted rounded-lg">
-                      <span className="capitalize font-medium">{k}</span>: <span className="text-primary font-bold">{v}</span>
+                      <span className="capitalize font-medium">{k.replace("_", " ")}</span>: <span className="text-primary font-bold">{v}</span>
                     </div>
                   ))}
                 </div>
               </div>
             )}
 
-            <Button size="lg" className="w-full gap-2 text-lg font-bold" onClick={startChallenge}>
+            <Button size="lg" className="w-full gap-2 text-lg font-bold" onClick={startChallenge} disabled={factCount === 0}>
               <Timer className="w-5 h-5" />
               Start 60s Challenge
             </Button>
@@ -198,7 +236,8 @@ const RapidFacts = () => {
 
   // ── RESULTS ──
   if (phase === "results") {
-    const prevHigh = highScore[category] || 0;
+    const key = `${examFilter}_${category}`;
+    const prevHigh = highScore[key] || 0;
     const isNewRecord = score >= prevHigh && score > 0;
 
     return (
@@ -236,14 +275,12 @@ const RapidFacts = () => {
 
   // ── PLAYING ──
   if (!currentFact) return null;
-
-  const catCfg = getCategoryLabel(currentFact);
+  const catCfg = categoryConfig[currentFact.category] || categoryConfig.strategy;
   const timerPct = (timeLeft / CHALLENGE_DURATION) * 100;
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-background via-primary/5 to-accent/10 p-4">
       <div className="max-w-lg mx-auto space-y-4">
-        {/* Header */}
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-2">
             <Zap className="w-5 h-5 text-amber-500" />
@@ -264,7 +301,6 @@ const RapidFacts = () => {
 
         <Progress value={timerPct} className="h-2" />
 
-        {/* Question Card */}
         <Card className="p-6">
           <div className="flex items-center gap-2 mb-4">
             <catCfg.icon className={`w-4 h-4 ${catCfg.color}`} />
