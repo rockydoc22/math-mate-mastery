@@ -10,6 +10,7 @@ import { APP_VERSION } from "@/hooks/usePWAUpdate";
 import { SATMasteryLogo } from "@/components/SATMasteryLogo";
 import { FeedbackButton } from "@/components/FeedbackButton";
 import { InstallAppButton } from "@/components/InstallAppButton";
+import { ShareAppButton } from "@/components/ShareAppButton";
 import upwardCurveIcon from "@/assets/upward-curve-icon.png";
 // Official SAT dates for 2025-2026
 const upcomingSATDates = [
@@ -291,6 +292,7 @@ export const LandingPage = () => {
         <div className="max-w-2xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-muted-foreground">
           <span>© 2025 SAT Mastery</span>
           <div className="flex items-center gap-3">
+            <ShareAppButton />
             <InstallAppButton />
             <FeedbackButton />
             <span>v{APP_VERSION}</span>
