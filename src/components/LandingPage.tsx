@@ -11,7 +11,7 @@ import { SATMasteryLogo } from "@/components/SATMasteryLogo";
 import { FeedbackButton } from "@/components/FeedbackButton";
 import { InstallAppButton } from "@/components/InstallAppButton";
 import { ShareAppButton } from "@/components/ShareAppButton";
-
+import upwardCurveIcon from "@/assets/upward-curve-icon.png";
 // Official SAT dates for 2025-2026
 const upcomingSATDates = [
   new Date("2025-03-08"),
@@ -106,29 +106,12 @@ export const LandingPage = () => {
             <p className="text-lg text-muted-foreground">
               Free SAT prep that actually works. Practice smarter, not harder.
             </p>
-            <svg 
-              viewBox="5 0 90 95" 
-              className="w-28 h-28 flex-shrink-0 drop-shadow-lg"
-              aria-label="Score improvement arrow"
-            >
-              <defs>
-                <linearGradient id="arrowGradient" x1="0%" y1="100%" x2="100%" y2="0%">
-                  <stop offset="0%" stopColor="hsl(var(--primary))" />
-                  <stop offset="100%" stopColor="hsl(var(--accent))" />
-                </linearGradient>
-              </defs>
-              <path 
-                d="M 20 85 Q 25 35 70 22" 
-                fill="none" 
-                stroke="url(#arrowGradient)" 
-                strokeWidth="6" 
-                strokeLinecap="round"
-              />
-              <polygon 
-                points="65,10 80,20 64,26" 
-                fill="url(#arrowGradient)"
-              />
-            </svg>
+            <img 
+              src={upwardCurveIcon} 
+              alt="Score improvement arrow" 
+              className="w-36 h-36 dark:invert opacity-90 mix-blend-multiply dark:mix-blend-screen drop-shadow-lg hue-rotate-[200deg] saturate-150"
+              style={{ background: 'transparent', filter: 'drop-shadow(0 4px 12px hsl(var(--primary) / 0.4))' }}
+            />
           </div>
 
           {/* SAT Countdown */}
