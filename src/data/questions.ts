@@ -140,10 +140,47 @@ for (const q of questionsWithoutImages) {
 // SAT questions start at difficulty 3+
 const MIN_SAT_DIFFICULTY = 3;
 
+// Fix any questions that have duplicate option values
+function fixDuplicateOptions(q: Question): Question {
+  const seen = new Set<string>();
+  const hasDupes = q.options.some(opt => {
+    if (seen.has(opt.text)) return true;
+    seen.add(opt.text);
+    return false;
+  });
+  if (!hasDupes) return q;
+
+  // Find the correct answer text
+  const correctOpt = q.options.find(o => o.letter === q.correctAnswer);
+  if (!correctOpt) return q;
+  const correctVal = parseFloat(correctOpt.text);
+  
+  const usedTexts = new Set<string>([correctOpt.text]);
+  const fixedOptions = q.options.map(opt => {
+    if (opt.letter === q.correctAnswer) return opt;
+    if (!usedTexts.has(opt.text)) {
+      usedTexts.add(opt.text);
+      return opt;
+    }
+    // Generate a unique replacement
+    if (!isNaN(correctVal)) {
+      let offset = 1;
+      while (usedTexts.has(String(correctVal + offset)) || usedTexts.has(String(correctVal - offset))) {
+        offset++;
+      }
+      const newVal = String(correctVal + offset);
+      usedTexts.add(newVal);
+      return { ...opt, text: newVal };
+    }
+    return opt;
+  });
+  return { ...q, options: fixedOptions };
+}
+
 export const questions: Question[] = questionsWithoutImages
   .filter(q => !duplicateIds.has(q.id))
-  .filter(q => (q.difficultyRating || 5) >= MIN_SAT_DIFFICULTY) // Remove non-SAT trivial questions
-  .map(q => ({
+  .filter(q => (q.difficultyRating || 5) >= MIN_SAT_DIFFICULTY)
+  .map(q => fixDuplicateOptions({
     ...q,
     difficultyRating: q.difficultyRating ? Math.min(q.difficultyRating, 10) : q.difficultyRating
   }));
