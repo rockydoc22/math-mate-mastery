@@ -293,6 +293,8 @@ export type Database = {
       }
       flagged_questions: {
         Row: {
+          ai_fix_generated_at: string | null
+          ai_suggested_fix: Json | null
           created_at: string
           id: string
           issue_type: string
@@ -305,6 +307,8 @@ export type Database = {
           user_id: string | null
         }
         Insert: {
+          ai_fix_generated_at?: string | null
+          ai_suggested_fix?: Json | null
           created_at?: string
           id?: string
           issue_type: string
@@ -317,6 +321,8 @@ export type Database = {
           user_id?: string | null
         }
         Update: {
+          ai_fix_generated_at?: string | null
+          ai_suggested_fix?: Json | null
           created_at?: string
           id?: string
           issue_type?: string

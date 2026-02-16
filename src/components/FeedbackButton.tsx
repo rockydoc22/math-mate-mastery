@@ -67,6 +67,15 @@ export const FeedbackButton = () => {
 
       if (error) throw error;
 
+      // Send email notification to admins (fire and forget)
+      supabase.functions.invoke('notify-feedback', {
+        body: {
+          feedbackType,
+          message: message.trim().slice(0, 2000),
+          email: email.trim() || undefined,
+        },
+      }).catch(err => console.error('Feedback notification failed:', err));
+
       toast({
         title: "Thank you! 🎉",
         description: "Your feedback has been submitted. We appreciate your input!",

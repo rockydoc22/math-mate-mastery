@@ -12,6 +12,7 @@ interface FlagQuestionModalProps {
   onClose: () => void;
   questionId: string;
   questionType: 'math' | 'english';
+  questionData?: Record<string, any>;
 }
 
 const issueTypes = [
@@ -22,7 +23,7 @@ const issueTypes = [
   { value: 'other', label: 'Other Issue' },
 ];
 
-export const FlagQuestionModal = ({ isOpen, onClose, questionId, questionType }: FlagQuestionModalProps) => {
+export const FlagQuestionModal = ({ isOpen, onClose, questionId, questionType, questionData }: FlagQuestionModalProps) => {
   const [issueType, setIssueType] = useState<string>('');
   const [notes, setNotes] = useState('');
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -49,18 +50,17 @@ export const FlagQuestionModal = ({ isOpen, onClose, questionId, questionType }:
 
     setIsSubmitting(true);
     try {
-      const { error } = await supabase.from('flagged_questions').insert({
+      const { data: flagData, error } = await supabase.from('flagged_questions').insert({
         question_id: questionId,
         question_type: questionType,
         issue_type: issueType,
         notes: notes.trim() || null,
         user_id: userId,
-      });
+      }).select('id').single();
 
       if (error) throw error;
 
-      // Send email notification to admins (fire and forget - don't block on this)
-      // The edge function handles fetching admin emails with service role
+      // Send email notification to admins (fire and forget)
       supabase.functions.invoke('notify-flagged-question', {
         body: {
           questionId,
@@ -69,6 +69,18 @@ export const FlagQuestionModal = ({ isOpen, onClose, questionId, questionType }:
           notes: notes.trim() || undefined,
         },
       }).catch(err => console.error('Email notification failed:', err));
+
+      // Trigger AI auto-fix if we have question data (fire and forget)
+      if (questionData && flagData?.id) {
+        supabase.functions.invoke('ai-fix-question', {
+          body: {
+            flagId: flagData.id,
+            questionData,
+            issueType,
+            notes: notes.trim() || undefined,
+          },
+        }).catch(err => console.error('AI fix generation failed:', err));
+      }
 
       toast({ 
         title: "Thank you for letting us know! 🙏", 
