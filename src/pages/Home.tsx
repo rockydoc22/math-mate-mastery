@@ -27,6 +27,12 @@ import { WordOfTheDay } from "@/components/WordOfTheDay";
 import { ExamSelector } from "@/components/ExamSelector";
 import { useExamType } from "@/hooks/useExamType";
 import { EXAM_CONFIGS, ratingToExamScore } from "@/utils/examConfig";
+import { SubjectDuelCard } from "@/components/SubjectDuelCard";
+import { SpeedDemonCard } from "@/components/SpeedDemonCard";
+import { AchievementChains } from "@/components/AchievementChains";
+import { RevengeModeBanner } from "@/components/RevengeModeBanner";
+import { PerfectStreakDisplay } from "@/components/PerfectStreakDisplay";
+import { usePerfectStreak } from "@/hooks/usePerfectStreak";
 
 // Motivational messages for non-logged in or idle users
 const motivationalMessages = [
@@ -85,6 +91,7 @@ const Home = () => {
   const [playerAvatar, setPlayerAvatar] = useState("🧑‍🚀");
   const [playerUsername, setPlayerUsername] = useState("Fighter");
   const [practiceDates, setPracticeDates] = useState<string[]>([]);
+  const { streak: perfectStreak } = usePerfectStreak();
 
   // Next SAT date countdown
   const nextSAT = getNextSATDate();
@@ -460,6 +467,25 @@ const Home = () => {
           </Card>
         )}
 
+        {/* Revenge Mode Banner */}
+        <div className="mb-4">
+          <RevengeModeBanner />
+        </div>
+
+        {/* Perfect Streak */}
+        {perfectStreak.best > 0 && (
+          <div className="mb-4">
+            <PerfectStreakDisplay current={perfectStreak.current} best={perfectStreak.best} compact />
+          </div>
+        )}
+
+        {/* Subject Duel */}
+        {ratings && ratings.mathQuestionsAnswered > 0 && ratings.englishQuestionsAnswered > 0 && (
+          <div className="mb-4">
+            <SubjectDuelCard mathRating={ratings.mathRating} englishRating={ratings.englishRating} />
+          </div>
+        )}
+
         {/* Tagline */}
         <h2 className="text-lg font-bold text-foreground text-center mb-4">
           Be one of the <InlineMath math="40^2 \times \left(\pi + \sum_{k=1}^{\infty} \frac{1}{k^2} - e\right)" /> who crush the {examConfig.shortName}
@@ -692,6 +718,20 @@ const Home = () => {
             />
           </div>
         )}
+
+        {/* Speed Demon Challenges */}
+        <div className="mb-4">
+          <SpeedDemonCard examType={examType} />
+        </div>
+
+        {/* Achievement Chains */}
+        <div className="mb-4">
+          <AchievementChains
+            questionsAnswered={totalQuestionsAnswered}
+            dailyStreak={streak?.current_streak || 0}
+            compact={false}
+          />
+        </div>
 
         {/* Bottom Tagline */}
         <p className="text-center text-sm text-muted-foreground italic mb-4">
