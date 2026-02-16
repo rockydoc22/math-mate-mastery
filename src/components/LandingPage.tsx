@@ -1,12 +1,14 @@
+import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { 
   Sparkles, Clock, Target, Trophy, Users, Zap, 
   CheckCircle, Star, ArrowRight, Calculator, PenTool,
-  Brain, Swords, GraduationCap
+  Brain, Swords, GraduationCap, Crown, Medal
 } from "lucide-react";
 import { Link, useNavigate } from "react-router-dom";
 import { APP_VERSION } from "@/hooks/usePWAUpdate";
+import { supabase } from "@/integrations/supabase/client";
 import { SATMasteryLogo } from "@/components/SATMasteryLogo";
 import { FeedbackButton } from "@/components/FeedbackButton";
 import { InstallAppButton } from "@/components/InstallAppButton";
@@ -81,6 +83,19 @@ const testimonials = [
 export const LandingPage = () => {
   const navigate = useNavigate();
   const nextSAT = getNextSATDate();
+  const [topPlayers, setTopPlayers] = useState<{ username: string; total_score: number; avatar_emoji: string | null }[]>([]);
+
+  useEffect(() => {
+    const fetchTop = async () => {
+      const { data } = await supabase
+        .from('leaderboard_scores')
+        .select('username, total_score, avatar_emoji')
+        .order('total_score', { ascending: false })
+        .limit(5);
+      if (data) setTopPlayers(data);
+    };
+    fetchTop();
+  }, []);
 
   const handleTry3Questions = () => {
     navigate(`/quiz?subject=both&count=3&difficulty=easy&timer=false`);
@@ -171,6 +186,33 @@ export const LandingPage = () => {
           </div>
         </div>
       </section>
+
+      {/* Top Players */}
+      {topPlayers.length > 0 && (
+        <section className="px-4 py-8">
+          <div className="max-w-2xl mx-auto">
+            <h2 className="text-xl font-bold text-center mb-4 flex items-center justify-center gap-2">
+              <Trophy className="w-5 h-5 text-primary" />
+              Top Players
+            </h2>
+            <Card className="divide-y divide-border">
+              {topPlayers.map((player, i) => (
+                <div key={player.username} className="flex items-center gap-3 px-4 py-3">
+                  <div className="w-6 flex justify-center">
+                    {i === 0 ? <Crown className="w-5 h-5 text-yellow-500" /> :
+                     i === 1 ? <Medal className="w-5 h-5 text-gray-400" /> :
+                     i === 2 ? <Medal className="w-5 h-5 text-amber-600" /> :
+                     <span className="text-sm font-bold text-muted-foreground">{i + 1}</span>}
+                  </div>
+                  <span className="text-lg">{player.avatar_emoji || "👤"}</span>
+                  <span className="font-medium flex-1">{player.username}</span>
+                  <span className="font-bold text-primary">{player.total_score}</span>
+                </div>
+              ))}
+            </Card>
+          </div>
+        </section>
+      )}
 
       {/* Features */}
       <section className="px-4 py-12">
