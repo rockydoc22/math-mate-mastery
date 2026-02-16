@@ -107,27 +107,27 @@ export const LandingPage = () => {
               Free SAT prep that actually works. Practice smarter, not harder.
             </p>
             <svg 
-              viewBox="0 0 100 100" 
+              viewBox="5 0 90 95" 
               className="w-28 h-28 flex-shrink-0 drop-shadow-lg"
               aria-label="Score improvement arrow"
             >
-              <path 
-                d="M 25 80 Q 30 30 75 20" 
-                fill="none" 
-                stroke="url(#arrowGradient)" 
-                strokeWidth="5" 
-                strokeLinecap="round"
-              />
-              <polygon 
-                points="70,8 82,18 68,24" 
-                fill="url(#arrowGradient)"
-              />
               <defs>
                 <linearGradient id="arrowGradient" x1="0%" y1="100%" x2="100%" y2="0%">
                   <stop offset="0%" stopColor="hsl(var(--primary))" />
                   <stop offset="100%" stopColor="hsl(var(--accent))" />
                 </linearGradient>
               </defs>
+              <path 
+                d="M 20 85 Q 25 35 70 22" 
+                fill="none" 
+                stroke="url(#arrowGradient)" 
+                strokeWidth="6" 
+                strokeLinecap="round"
+              />
+              <polygon 
+                points="65,10 80,20 64,26" 
+                fill="url(#arrowGradient)"
+              />
             </svg>
           </div>
 
