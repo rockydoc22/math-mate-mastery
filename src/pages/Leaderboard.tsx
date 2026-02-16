@@ -87,6 +87,14 @@ const Leaderboard = () => {
           </div>
         </div>
 
+        <Card className="p-4 bg-muted/50 border-dashed">
+          <p className="text-sm text-muted-foreground">
+            <span className="font-semibold text-foreground">How do I climb?</span>{" "}
+            <Trophy className="w-3.5 h-3.5 inline text-primary" /> <strong>Top Scores</strong> ranks by total quiz points earned in the last 30 days — complete more quizzes with higher accuracy to rise.{" "}
+            <Flame className="w-3.5 h-3.5 inline text-orange-500" /> <strong>Hot Streaks</strong> ranks by consecutive days practiced — practice every day to keep your streak alive!
+          </p>
+        </Card>
+
         <Tabs defaultValue="scores" className="w-full">
           <TabsList className="grid w-full grid-cols-2">
             <TabsTrigger value="scores" className="gap-2">
