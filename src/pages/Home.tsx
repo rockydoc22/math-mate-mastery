@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { toast } from "@/hooks/use-toast";
 import 'katex/dist/katex.min.css';
 import { InlineMath } from 'react-katex';
 import { Button } from "@/components/ui/button";
@@ -271,11 +272,34 @@ const Home = () => {
             />
           </div>
 
-          {/* Exam badge */}
-          <div className="flex items-center gap-2 mb-2">
-            <span className="text-sm px-3 py-1 rounded-full bg-primary/10 text-primary font-medium">
-              {examConfig.icon} {examConfig.shortName} Mode
-            </span>
+          {/* Exam badge - tappable switcher */}
+          <div className="flex items-center gap-1 mb-2">
+            {(['sat', 'psat', 'act'] as const).map((type) => {
+              const cfg = EXAM_CONFIGS[type];
+              const isACT = type === 'act';
+              const isActive = examType === type;
+              return (
+                <button
+                  key={type}
+                  disabled={isACT}
+                  onClick={() => {
+                    if (!isACT) {
+                      setExamType(type);
+                      toast({ title: `Switched to ${cfg.name} mode ${cfg.icon}` });
+                    }
+                  }}
+                  className={`text-xs px-3 py-1.5 rounded-full font-medium transition-all ${
+                    isActive
+                      ? 'bg-primary text-primary-foreground'
+                      : isACT
+                        ? 'bg-muted/50 text-muted-foreground opacity-50 cursor-not-allowed'
+                        : 'bg-muted text-muted-foreground hover:bg-muted/80 cursor-pointer'
+                  }`}
+                >
+                  {cfg.icon} {cfg.shortName}{isACT ? ' (Soon)' : ''}
+                </button>
+              );
+            })}
           </div>
 
           {/* SAT Countdown - Single Clear CTA */}
