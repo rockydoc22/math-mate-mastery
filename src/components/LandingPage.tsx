@@ -109,8 +109,8 @@ export const LandingPage = () => {
             <img 
               src={upwardCurveIcon} 
               alt="Score improvement arrow" 
-              className="w-24 h-24 dark:invert opacity-80 mix-blend-multiply dark:mix-blend-screen drop-shadow-md"
-              style={{ background: 'transparent' }}
+              className="w-36 h-36 dark:invert opacity-90 mix-blend-multiply dark:mix-blend-screen drop-shadow-lg hue-rotate-[200deg] saturate-150"
+              style={{ background: 'transparent', filter: 'drop-shadow(0 4px 12px hsl(var(--primary) / 0.4))' }}
             />
           </div>
 
