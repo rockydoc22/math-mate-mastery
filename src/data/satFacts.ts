@@ -1,4 +1,5 @@
 import { expandedFacts } from "./satFactsExpanded";
+import { rapidFireFacts } from "./satFactsRapidFire";
 
 export type ExamType = "sat" | "psat" | "act";
 
@@ -138,8 +139,9 @@ const baseFacts: SATFact[] = [
   { id: "s10", category: "strategy", question: "Plugging in numbers works best for:", correctAnswer: "Questions with variables in the answer choices", wrongAnswers: ["Word problems only", "Geometry questions only", "Questions with no answer choices"] },
 ];
 
-// Merge base facts (default to all exams) with expanded facts
+// Merge base facts (default to all exams) with expanded facts + rapid fire
 export const satFacts: SATFact[] = [
   ...baseFacts.map(f => ({ ...f, exam: f.exam || ["sat", "psat", "act"] as ExamType[] })),
   ...expandedFacts,
+  ...rapidFireFacts,
 ];
