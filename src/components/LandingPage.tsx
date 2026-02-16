@@ -4,7 +4,7 @@ import { Card } from "@/components/ui/card";
 import { 
   Sparkles, Clock, Target, Trophy, Users, Zap, 
   CheckCircle, Star, ArrowRight, Calculator, PenTool,
-  Brain, Swords, GraduationCap, Crown, Medal
+  Brain, Swords, Crown, Medal
 } from "lucide-react";
 import { Link, useNavigate } from "react-router-dom";
 import { APP_VERSION } from "@/hooks/usePWAUpdate";
@@ -116,18 +116,10 @@ export const LandingPage = () => {
             />
           </div>
           
-          {/* Headline with upward curve icon */}
-          <div className="flex items-center justify-center gap-2 mb-6">
-            <p className="text-lg text-muted-foreground">
-              Free SAT prep that actually works. Practice smarter, not harder.
-            </p>
-            <img 
-              src={upwardCurveIcon} 
-              alt="Score improvement arrow" 
-              className="w-36 h-36 dark:invert opacity-90 mix-blend-multiply dark:mix-blend-screen drop-shadow-lg hue-rotate-[200deg] saturate-150"
-              style={{ background: 'transparent', filter: 'drop-shadow(0 4px 12px hsl(var(--primary) / 0.4))' }}
-            />
-          </div>
+          {/* Headline */}
+          <p className="text-lg text-muted-foreground mb-6">
+            Free SAT prep that actually works. Practice smarter, not harder.
+          </p>
 
           {/* SAT Countdown */}
           <div className="mb-6">
@@ -238,22 +230,30 @@ export const LandingPage = () => {
       <section className="px-4 py-12 bg-muted/30">
         <div className="max-w-2xl mx-auto text-center">
           <h2 className="text-2xl font-bold mb-8">Everything You Need</h2>
-          <div className="grid gap-3 text-left max-w-md mx-auto">
-            {[
-              "2,000+ SAT-style questions (Math & English)",
-              "Adaptive difficulty that matches your level",
-              "Real-time battle mode against other students",
-              "Score prediction based on your performance",
-              "Daily challenges to build consistency",
-              "Detailed explanations for every question",
-              "Track progress with insights dashboard",
-              "100% free to use"
-            ].map((item, idx) => (
-              <div key={idx} className="flex items-center gap-3 justify-start">
-                <CheckCircle className="w-5 h-5 text-emerald-500 flex-shrink-0" />
-                <span className="text-sm">{item}</span>
-              </div>
-            ))}
+          <div className="flex items-start gap-4 max-w-lg mx-auto">
+            <div className="grid gap-3 text-left flex-1">
+              {[
+                "2,000+ SAT-style questions (Math & English)",
+                "Adaptive difficulty that matches your level",
+                "Real-time battle mode against other students",
+                "Score prediction based on your performance",
+                "Daily challenges to build consistency",
+                "Detailed explanations for every question",
+                "Track progress with insights dashboard",
+                "100% free to use"
+              ].map((item, idx) => (
+                <div key={idx} className="flex items-center gap-3 justify-start">
+                  <CheckCircle className="w-5 h-5 text-emerald-500 flex-shrink-0" />
+                  <span className="text-sm">{item}</span>
+                </div>
+              ))}
+            </div>
+            <img 
+              src={upwardCurveIcon} 
+              alt="Score improvement arrow" 
+              className="w-28 h-28 flex-shrink-0 dark:invert opacity-90 mix-blend-multiply dark:mix-blend-screen drop-shadow-lg hue-rotate-[200deg] saturate-150 mt-4"
+              style={{ background: 'transparent', filter: 'drop-shadow(0 4px 12px hsl(var(--primary) / 0.4))' }}
+            />
           </div>
         </div>
       </section>
@@ -309,30 +309,6 @@ export const LandingPage = () => {
         </div>
       </section>
 
-      {/* Final CTA */}
-      <section className="px-4 py-16 text-center">
-        <div className="max-w-2xl mx-auto">
-          <GraduationCap className="w-12 h-12 text-primary mx-auto mb-4" />
-          <h2 className="text-2xl font-bold mb-3">Ready to Crush the SAT?</h2>
-          <p className="text-muted-foreground mb-6">Join thousands of students already on their path to 1600</p>
-          
-          <div className="flex flex-col gap-3 items-center">
-            <Button 
-              size="lg" 
-              onClick={handleTry3Questions}
-              className="gap-2 bg-gradient-to-r from-emerald-500 to-teal-500 hover:from-emerald-600 hover:to-teal-600 text-white font-bold px-8"
-            >
-              <Sparkles className="w-5 h-5" />
-              Try 3 Questions Free
-            </Button>
-            <Link to="/auth">
-              <Button variant="link" className="text-muted-foreground">
-                or create a free account
-              </Button>
-            </Link>
-          </div>
-        </div>
-      </section>
 
       {/* Footer */}
       <footer className="px-4 py-6 border-t border-border">
