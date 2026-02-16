@@ -143,6 +143,11 @@ export const LandingPage = () => {
                 <ArrowRight className="w-4 h-4 flex-shrink-0" />
               </Button>
             </Link>
+            <Link to="/auth">
+              <Button variant="link" className="text-muted-foreground text-sm">
+                Already have an account? Sign in
+              </Button>
+            </Link>
           </div>
         </div>
       </header>
