@@ -219,11 +219,6 @@ const Home = () => {
                     <Trophy className="w-5 h-5" />
                   </Button>
                 </Link>
-                <Link to="/friends">
-                  <Button variant="ghost" size="sm">
-                    <Users className="w-5 h-5" />
-                  </Button>
-                </Link>
                 <Link to="/profile">
                   <Button variant="ghost" size="sm">
                     <User className="w-5 h-5" />
@@ -264,6 +259,13 @@ const Home = () => {
             />
           </div>
           
+          {/* Logged in as */}
+          {user && (
+            <p className="text-xs text-muted-foreground mb-1">
+              Logged in as <span className="font-semibold text-foreground">{playerAvatar} {playerUsername}</span>
+            </p>
+          )}
+
           {/* Exam badge */}
           <div className="flex items-center gap-2 mb-2">
             <span className="text-sm px-3 py-1 rounded-full bg-primary/10 text-primary font-medium">
@@ -731,6 +733,16 @@ const Home = () => {
             dailyStreak={streak?.current_streak || 0}
             compact={false}
           />
+        </div>
+
+        {/* Friend Link */}
+        <div className="mb-4">
+          <Link to="/friends">
+            <Button variant="outline" className="w-full h-auto py-3 flex items-center gap-3 justify-center">
+              <Users className="w-5 h-5 text-primary" />
+              <span className="text-sm font-medium">Friend Link</span>
+            </Button>
+          </Link>
         </div>
 
         {/* Bottom Tagline */}
