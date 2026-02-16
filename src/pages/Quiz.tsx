@@ -22,6 +22,10 @@ import { SkillRatingCard } from "@/components/SkillRatingCard";
 import { shuffleAllQuestionOptions } from "@/utils/optionShuffler";
 import { DesmosCalculator } from "@/components/DesmosCalculator";
 import { sampleProportionally } from "@/utils/proportionalSampling";
+import { usePerfectStreak } from "@/hooks/usePerfectStreak";
+import { useMysteryBox } from "@/hooks/useMysteryBox";
+import { MysteryBoxPopup } from "@/components/MysteryBoxPopup";
+import { PerfectStreakDisplay } from "@/components/PerfectStreakDisplay";
 
 type CombinedQuestion = (Question | EnglishQuestion | VisualQuestion | ImageQuestion) & { type: "math" | "english"; difficultyRating?: number };
 
@@ -69,6 +73,8 @@ const Quiz = () => {
   const { user } = useAuth();
   const { recordScore } = useGameStats();
   const { ratings, updateRating } = useSkillRating();
+  const { streak: perfectStreak, recordAnswer: recordPerfectAnswer } = usePerfectStreak();
+  const { pendingReward, recordQuestion, dismissReward, questionsUntilBox } = useMysteryBox();
   
   // Define isAdvancedSubject early so it can be used in useMemo
   const isAdvancedSubject = subject === "physics" || subject === "precalc" || subject === "calculus";
@@ -221,11 +227,13 @@ const Quiz = () => {
     if (isCorrect) {
       setScore(score + 1);
       playCorrect();
-      // Mark question as correctly answered for this session
       markQuestionCorrect(currentQuestion.id);
     } else {
       playWrong();
     }
+    // Track perfect streak and mystery box
+    recordPerfectAnswer(isCorrect);
+    recordQuestion();
 
     // Update skill rating
     if (user && currentQuestion.difficultyRating) {
@@ -321,6 +329,9 @@ const Quiz = () => {
             subject={getSubjectLabel()}
             timeTakenMs={quizEndTime ? quizEndTime - quizStartTime : undefined}
           />
+          {perfectStreak.best > 0 && (
+            <PerfectStreakDisplay current={perfectStreak.current} best={perfectStreak.best} />
+          )}
           {ratings && (
             <SkillRatingCard
               mathRating={ratings.mathRating}
@@ -442,6 +453,9 @@ const Quiz = () => {
 
       {/* Desmos Calculator - show for math questions */}
       {(subject === "math" || subject === "both") && <DesmosCalculator />}
+
+      {/* Mystery Box Popup */}
+      <MysteryBoxPopup reward={pendingReward} onDismiss={dismissReward} />
     </div>
   );
 };
