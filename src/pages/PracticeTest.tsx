@@ -1,4 +1,4 @@
-import { useState, useEffect, useCallback } from "react";
+import { useState, useEffect, useCallback, Fragment } from "react";
 import { useNavigate, Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -6,7 +6,7 @@ import { Progress } from "@/components/ui/progress";
 import { useAuth } from "@/hooks/useAuth";
 import { supabase } from "@/integrations/supabase/client";
 import { toast } from "sonner";
-import { ArrowLeft, Clock, Timer, Trophy, Target, Brain, Flag } from "lucide-react";
+import { ArrowLeft, Clock, Timer, Trophy, Target, Brain, Flag, ChevronDown, ChevronUp, CheckCircle2, XCircle } from "lucide-react";
 import { questions } from "@/data/questions";
 import { visualMathQuestions, visualEnglishQuestions, moreMathVisualQuestions, moreEnglishVisualQuestions } from "@/data/visualQuestions";
 import { additionalMathQuestions } from "@/data/additionalMathQuestions";
@@ -51,6 +51,7 @@ const PracticeTest = () => {
   const [reviewQuestion, setReviewQuestion] = useState<TestQuestion | null>(null);
   const [isFlagModalOpen, setIsFlagModalOpen] = useState(false);
   const [flagQuestionData, setFlagQuestionData] = useState<{ id: string; type: 'math' | 'english' } | null>(null);
+  const [expandedQuestions, setExpandedQuestions] = useState<Set<string>>(new Set());
 
   // Generate test questions - 20 hard math + 20 hard english
   // Uses proportional sampling to match official SAT domain distributions
@@ -299,8 +300,8 @@ const PracticeTest = () => {
               </div>
 
               <div className="space-y-2">
-                <h3 className="font-semibold">Review Missed Questions</h3>
-                <div className="max-h-60 overflow-y-auto space-y-2">
+                <h3 className="font-semibold">Review Missed Questions ({mathWrong + englishWrong})</h3>
+                <div className="space-y-3">
                   {[...mathQuestionsList, ...englishQuestionsList].map((q, i) => {
                     const section = i < mathQuestionsList.length ? "math" : "english";
                     const idx = section === "math" ? i : i - mathQuestionsList.length;
@@ -308,43 +309,126 @@ const PracticeTest = () => {
                     const isCorrect = userAnswer === q.correctAnswer;
                     
                     if (isCorrect) return null;
+
+                    const isExpanded = expandedQuestions.has(q.id);
+                    const toggleExpand = () => {
+                      setExpandedQuestions(prev => {
+                        const next = new Set(prev);
+                        if (next.has(q.id)) next.delete(q.id);
+                        else next.add(q.id);
+                        return next;
+                      });
+                    };
+                    
+                    const userOption = q.options.find(o => o.letter === userAnswer);
+                    const correctOption = q.options.find(o => o.letter === q.correctAnswer);
                     
                     return (
-                      <div
-                        key={q.id}
-                        className="w-full p-3 rounded-lg border hover:bg-muted/50 transition-colors"
-                      >
-                        <div className="flex items-center justify-between gap-2">
-                          <button
-                            onClick={() => {
-                              setReviewQuestion(q);
-                              setShowAITutor(true);
-                            }}
-                            className="text-left flex-1 min-w-0"
-                          >
-                            <span className="text-sm truncate block">{q.question.slice(0, 80)}...</span>
-                          </button>
+                      <div key={q.id} className="rounded-lg border border-border overflow-hidden">
+                        {/* Summary row */}
+                        <button
+                          onClick={toggleExpand}
+                          className="w-full text-left p-3 sm:p-4 hover:bg-muted/50 transition-colors flex items-center gap-3"
+                        >
+                          <XCircle className="w-4 h-4 text-destructive flex-shrink-0" />
+                          <div className="flex-1 min-w-0">
+                            <span className="text-sm line-clamp-2">{q.question}</span>
+                          </div>
                           <div className="flex items-center gap-2 flex-shrink-0">
-                            <Button
-                              variant="ghost"
-                              size="sm"
-                              onClick={() => {
-                                setFlagQuestionData({ id: q.id, type: section as 'math' | 'english' });
-                                setIsFlagModalOpen(true);
-                              }}
-                              className="h-8 w-8 p-0"
-                              title="Flag this question"
-                            >
-                              <Flag className="w-4 h-4 text-muted-foreground hover:text-orange-500" />
-                            </Button>
                             <span className={`text-xs px-2 py-1 rounded ${section === "math" ? "bg-blue-500/20 text-blue-500" : "bg-green-500/20 text-green-500"}`}>
                               {section}
                             </span>
+                            <Button
+                              variant="ghost"
+                              size="sm"
+                              onClick={(e) => {
+                                e.stopPropagation();
+                                setFlagQuestionData({ id: q.id, type: section as 'math' | 'english' });
+                                setIsFlagModalOpen(true);
+                              }}
+                              className="h-7 w-7 p-0"
+                              title="Flag this question"
+                            >
+                              <Flag className="w-3 h-3 text-muted-foreground hover:text-orange-500" />
+                            </Button>
+                            {isExpanded ? <ChevronUp className="w-4 h-4 text-muted-foreground" /> : <ChevronDown className="w-4 h-4 text-muted-foreground" />}
                           </div>
-                        </div>
+                        </button>
+
+                        {/* Expanded detail */}
+                        {isExpanded && (
+                          <div className="border-t border-border p-3 sm:p-4 space-y-3 bg-muted/30">
+                            {/* Full question */}
+                            <div>
+                              <p className="text-sm font-medium text-muted-foreground mb-1">{q.domain} • {q.skill}</p>
+                              <p className="text-sm sm:text-base">{q.question}</p>
+                            </div>
+
+                            {/* Visual if present */}
+                            {q.visual && (
+                              <div className="rounded-lg overflow-hidden border">
+                                <QuestionVisual visual={q.visual} />
+                              </div>
+                            )}
+
+                            {/* Answer comparison */}
+                            <div className="space-y-2">
+                              {q.options.map((option) => {
+                                const isUserAnswer = option.letter === userAnswer;
+                                const isCorrectAnswer = option.letter === q.correctAnswer;
+                                return (
+                                  <div
+                                    key={option.letter}
+                                    className={`p-3 rounded-lg border-2 text-sm flex items-start gap-2 ${
+                                      isCorrectAnswer ? 'border-success bg-success/10' : 
+                                      isUserAnswer ? 'border-destructive bg-destructive/10' : 
+                                      'border-border'
+                                    }`}
+                                  >
+                                    <span className={`font-bold min-w-[1.5rem] ${
+                                      isCorrectAnswer ? 'text-success' : isUserAnswer ? 'text-destructive' : ''
+                                    }`}>
+                                      {option.letter}.
+                                    </span>
+                                    <span className="flex-1">{option.text}</span>
+                                    {isCorrectAnswer && <CheckCircle2 className="w-4 h-4 text-success flex-shrink-0 mt-0.5" />}
+                                    {isUserAnswer && !isCorrectAnswer && <XCircle className="w-4 h-4 text-destructive flex-shrink-0 mt-0.5" />}
+                                  </div>
+                                );
+                              })}
+                            </div>
+
+                            {/* Explanation */}
+                            <div className="p-3 bg-muted rounded-lg">
+                              <p className="text-xs font-semibold mb-1 text-foreground">Explanation:</p>
+                              <p className="text-xs sm:text-sm text-muted-foreground leading-relaxed">{q.explanation}</p>
+                            </div>
+
+                            {/* AI Tutor button */}
+                            <Button
+                              variant="outline"
+                              size="sm"
+                              className="gap-2"
+                              onClick={() => {
+                                setReviewQuestion(q);
+                                setShowAITutor(true);
+                              }}
+                            >
+                              <Brain className="w-4 h-4" />
+                              Get AI Explanation
+                            </Button>
+                          </div>
+                        )}
                       </div>
                     );
                   })}
+                  
+                  {mathWrong + englishWrong === 0 && (
+                    <div className="text-center p-6 text-muted-foreground">
+                      <CheckCircle2 className="w-10 h-10 text-success mx-auto mb-2" />
+                      <p className="font-medium">Perfect score! No missed questions.</p>
+                    </div>
+                  )}
                 </div>
               </div>
             </CardContent>
