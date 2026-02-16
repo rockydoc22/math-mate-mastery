@@ -1,0 +1,3 @@
+ALTER TABLE public.flagged_questions 
+ADD COLUMN IF NOT EXISTS ai_suggested_fix JSONB DEFAULT NULL,
+ADD COLUMN IF NOT EXISTS ai_fix_generated_at TIMESTAMPTZ DEFAULT NULL;

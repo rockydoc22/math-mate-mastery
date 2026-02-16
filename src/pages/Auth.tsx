@@ -139,20 +139,27 @@ const Auth = () => {
         if (error) throw error;
         toast({ title: "Account created! Welcome aboard! 🎮" });
       } else if (mode === "signIn") {
-        const emailToUse = form.emailOrUsername.trim();
+        const identifier = form.emailOrUsername.trim();
 
-        if (!isEmail(emailToUse)) {
-          toast({
-            title: "Please use your email",
-            description: "For security, sign-in requires an email address.",
-            variant: "destructive",
+        if (isEmail(identifier)) {
+          // Direct email login
+          const { error } = await signIn(identifier, form.password);
+          if (error) throw error;
+        } else {
+          // Username login via edge function
+          const { data, error } = await supabase.functions.invoke('login-with-username', {
+            body: { username: identifier, password: form.password },
           });
-          setLoading(false);
-          return;
+          if (error || !data?.access_token) {
+            throw new Error(data?.error || error?.message || "Invalid username or password");
+          }
+          // Set session from returned tokens
+          const { error: sessionError } = await supabase.auth.setSession({
+            access_token: data.access_token,
+            refresh_token: data.refresh_token,
+          });
+          if (sessionError) throw sessionError;
         }
-
-        const { error } = await signIn(emailToUse, form.password);
-        if (error) throw error;
         toast({ title: "Welcome back! Let's practice! 💪" });
       } else if (mode === "magicLink") {
         // Send magic link via edge function
@@ -285,17 +292,13 @@ const Auth = () => {
             {/* Sign In / Magic Link identifier field */}
             {(mode === "signIn" || mode === "magicLink") && (
               <div className="space-y-2">
-                <Label htmlFor="emailOrUsername">{mode === "signIn" ? "Email" : "Username or Email"}</Label>
+                <Label htmlFor="emailOrUsername">{mode === "magicLink" ? "Username or Email" : "Username or Email"}</Label>
                 <div className="relative">
-                  {mode === "signIn" ? (
-                    <Mail className="absolute left-3 top-3 w-4 h-4 text-muted-foreground" />
-                  ) : (
-                    <User className="absolute left-3 top-3 w-4 h-4 text-muted-foreground" />
-                  )}
+                  <User className="absolute left-3 top-3 w-4 h-4 text-muted-foreground" />
                   <Input
                     id="emailOrUsername"
                     type="text"
-                    placeholder={mode === "signIn" ? "you@email.com" : "username or you@email.com"}
+                    placeholder="username or you@email.com"
                     className="pl-10"
                     value={form.emailOrUsername}
                     onChange={(e) => setForm({ ...form, emailOrUsername: e.target.value })}
