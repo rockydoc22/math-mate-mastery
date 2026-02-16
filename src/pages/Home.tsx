@@ -211,19 +211,31 @@ const Home = () => {
         {/* Hero Header - Simplified */}
         <header className="flex flex-col items-center text-center mb-6 pt-4 relative">
           {/* Sign In / Profile at top right */}
-          <div className="absolute top-4 right-0 flex items-center gap-2">
+          <div className="absolute top-4 right-0 flex flex-col items-end gap-1">
             {user ? (
               <>
-                <Link to="/leaderboard">
-                  <Button variant="ghost" size="sm">
-                    <Trophy className="w-5 h-5" />
-                  </Button>
-                </Link>
-                <Link to="/profile">
-                  <Button variant="ghost" size="sm">
-                    <User className="w-5 h-5" />
-                  </Button>
-                </Link>
+                <div className="flex items-center gap-2">
+                  <Link to="/leaderboard">
+                    <Button variant="ghost" size="sm">
+                      <Trophy className="w-5 h-5" />
+                    </Button>
+                  </Link>
+                  <Link to="/profile">
+                    <Button variant="ghost" size="sm">
+                      <User className="w-5 h-5" />
+                    </Button>
+                  </Link>
+                </div>
+                <div className="flex items-center gap-1">
+                  <p className="text-[10px] text-muted-foreground">
+                    {playerAvatar} <span className="font-semibold text-foreground">{playerUsername}</span>
+                  </p>
+                  <Link to="/settings">
+                    <Button variant="ghost" size="sm" className="h-5 w-5 p-0">
+                      <Settings className="w-3 h-3 text-muted-foreground" />
+                    </Button>
+                  </Link>
+                </div>
               </>
             ) : (
               <div className="flex flex-col items-end gap-1">
@@ -258,24 +270,12 @@ const Home = () => {
               taglineText={examConfig.tagline}
             />
           </div>
-          
-          {/* Logged in as */}
-          {user && (
-            <p className="text-xs text-muted-foreground mb-1">
-              Logged in as <span className="font-semibold text-foreground">{playerAvatar} {playerUsername}</span>
-            </p>
-          )}
 
           {/* Exam badge */}
           <div className="flex items-center gap-2 mb-2">
             <span className="text-sm px-3 py-1 rounded-full bg-primary/10 text-primary font-medium">
               {examConfig.icon} {examConfig.shortName} Mode
             </span>
-            <Link to="/settings">
-              <Button variant="ghost" size="sm" className="h-6 w-6 p-0">
-                <Settings className="w-3.5 h-3.5 text-muted-foreground" />
-              </Button>
-            </Link>
           </div>
 
           {/* SAT Countdown - Single Clear CTA */}

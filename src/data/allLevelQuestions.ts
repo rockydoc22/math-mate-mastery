@@ -1444,14 +1444,35 @@ const generateLevel10Questions = (): VisualQuestion[] => {
     const r = Math.floor(Math.random() * 2) + 2;
     const n = Math.floor(Math.random() * 3) + 3;
     const an = a1 * Math.pow(r, n - 1);
+    // Generate unique distractor values
+    const distractorCandidates = [a1 * r * n, Math.round(an / r), an + r, an * 2, an - a1, a1 * n];
+    const usedValues = new Set([an]);
+    const distractors: number[] = [];
+    for (const d of distractorCandidates) {
+      if (!usedValues.has(d) && d > 0) {
+        usedValues.add(d);
+        distractors.push(d);
+        if (distractors.length === 3) break;
+      }
+    }
+    // Fallback if we don't have enough unique distractors
+    let offset = 1;
+    while (distractors.length < 3) {
+      const fallback = an + offset;
+      if (!usedValues.has(fallback)) {
+        usedValues.add(fallback);
+        distractors.push(fallback);
+      }
+      offset++;
+    }
     questions.push({
       id: `l10-geom-seq-${i}`,
       question: `In a geometric sequence with first term $a_1 = ${a1}$ and common ratio $r = ${r}$, what is $a_{${n}}$?`,
       options: [
         { letter: "A", text: String(an) },
-        { letter: "B", text: String(a1 * r * n) },
-        { letter: "C", text: String(an / r) },
-        { letter: "D", text: String(an + r) }
+        { letter: "B", text: String(distractors[0]) },
+        { letter: "C", text: String(distractors[1]) },
+        { letter: "D", text: String(distractors[2]) }
       ],
       correctAnswer: "A",
       explanation: `$a_n = a_1 \\times r^{n-1} = ${a1} \\times ${r}^{${n - 1}} = ${a1} \\times ${Math.pow(r, n - 1)} = ${an}$`,
