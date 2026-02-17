@@ -135,8 +135,8 @@ export const EXAM_CONFIGS: Record<ExamType, ExamConfig> = {
       extraMathFlair: ['3! \\times 3!', '6^2'],
     },
     predictionTest: {
-      testName: '3!×2 Prediction Test',
-      testNameKatex: '3! \\times 2',
+      testName: '3!×3! Prediction Test',
+      testNameKatex: '3! \\times 3!',
       sections: [
         { key: 'science', label: 'Hard Science', color: 'purple-500', questionsCount: 12, timeMinutes: 12 },
         { key: 'math', label: 'Hard Math', color: 'blue-500', questionsCount: 12, timeMinutes: 12 },
