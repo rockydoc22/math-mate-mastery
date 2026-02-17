@@ -1,6 +1,7 @@
 import { TrendingUp, Award, BookOpen, Calculator } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { getSkillLevel, ratingToSATScore } from '@/utils/eloRating';
+import { getSkillLevel } from '@/utils/eloRating';
+import { ratingToExamScore, type ExamType } from '@/utils/examConfig';
 import { cn } from '@/lib/utils';
 
 interface SkillRatingCardProps {
@@ -8,19 +9,22 @@ interface SkillRatingCardProps {
   englishRating: number;
   overallRating: number;
   compact?: boolean;
+  examType?: ExamType;
 }
 
 function RatingBadge({ 
   rating, 
   label, 
-  icon: Icon 
+  icon: Icon,
+  examType = 'sat'
 }: { 
   rating: number; 
   label: string; 
   icon: React.ElementType;
+  examType?: ExamType;
 }) {
   const { level, color, bgColor } = getSkillLevel(rating);
-  const { min, max } = ratingToSATScore(rating);
+  const { min, max } = ratingToExamScore(rating, examType);
 
   return (
     <div className={cn("rounded-lg p-3 border", bgColor, "border-white/10")}>
@@ -40,10 +44,11 @@ export function SkillRatingCard({
   mathRating, 
   englishRating, 
   overallRating,
-  compact = false 
+  compact = false,
+  examType = 'sat'
 }: SkillRatingCardProps) {
   const overallLevel = getSkillLevel(overallRating);
-  const overallSAT = ratingToSATScore(overallRating);
+  const overallScore = ratingToExamScore(overallRating, examType);
 
   if (compact) {
     return (
@@ -56,7 +61,7 @@ export function SkillRatingCard({
           </div>
         </div>
         <div className="text-xs text-muted-foreground border-l border-white/20 pl-3">
-          Projected SAT: {overallSAT.min}-{overallSAT.max}
+          Projected Score: {overallScore.min}-{overallScore.max}
         </div>
       </div>
     );
@@ -85,14 +90,14 @@ export function SkillRatingCard({
             {overallLevel.level}
           </div>
           <div className="text-sm text-muted-foreground mt-2">
-            Projected SAT: <span className="font-semibold text-foreground">{overallSAT.min}-{overallSAT.max}</span>
+            Projected Score: <span className="font-semibold text-foreground">{overallScore.min}-{overallScore.max}</span>
           </div>
         </div>
 
         {/* Subject Ratings */}
         <div className="grid grid-cols-2 gap-3">
-          <RatingBadge rating={mathRating} label="Math" icon={Calculator} />
-          <RatingBadge rating={englishRating} label="English" icon={BookOpen} />
+          <RatingBadge rating={mathRating} label="Math" icon={Calculator} examType={examType} />
+          <RatingBadge rating={englishRating} label="English" icon={BookOpen} examType={examType} />
         </div>
       </CardContent>
     </Card>

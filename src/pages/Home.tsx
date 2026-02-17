@@ -455,23 +455,21 @@ const Home = () => {
           </Card>
         )}
         {/* Personalized Stats - Only for logged in users */}
-        {user && ratings && (
+        {user && ratings && (ratings.mathQuestionsAnswered + ratings.englishQuestionsAnswered > 0) && (
           <Card className="p-4 mb-4 border-2 border-primary/20">
             <div className="flex flex-col items-center text-center">
               <div className="flex items-center gap-3 mb-2">
                 <div className="text-3xl font-bold text-primary font-mono">
-                  {Math.round(ratings.overallRating)}
+                  {projectedScore ? `${projectedScore.min}-${projectedScore.max}` : '—'}
                 </div>
                 <div>
-                  <p className="text-xs text-muted-foreground">Skill Rating</p>
+                  <p className="text-xs text-muted-foreground">Projected {examConfig.shortName}</p>
                   <p className="text-sm font-medium">{skillLevel?.level}</p>
                 </div>
               </div>
-              {projectedScore && (
-                <p className="text-sm text-muted-foreground mb-2">
-                  Projected {examConfig.shortName}: <span className="font-semibold text-foreground">{projectedScore.min}-{projectedScore.max}</span>
-                </p>
-              )}
+              <p className="text-xs text-muted-foreground mb-2">
+                Skill Rating: <span className="font-semibold text-foreground">{Math.round(ratings.overallRating)}</span>
+              </p>
               <div className="flex items-center justify-center gap-4">
                 {streak && streak.current_streak > 0 && (
                   <div className="flex items-center gap-1 px-3 py-1 rounded-full bg-orange-500/10 text-orange-600 dark:text-orange-400">
