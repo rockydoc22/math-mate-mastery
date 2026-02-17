@@ -454,8 +454,8 @@ const Home = () => {
             </p>
           </Card>
         )}
-        {/* Personalized Stats - Only for logged in users */}
-        {user && ratings && (ratings.mathQuestionsAnswered + ratings.englishQuestionsAnswered > 0) && (
+        {/* Personalized Stats - Only for logged in users WITH data for this exam */}
+        {user && examType === 'sat' && ratings && (ratings.mathQuestionsAnswered + ratings.englishQuestionsAnswered > 0) && (
           <Card className="p-4 mb-4 border-2 border-primary/20">
             <div className="flex flex-col items-center text-center">
               <div className="flex items-center gap-3 mb-2">
@@ -497,8 +497,8 @@ const Home = () => {
           </div>
         )}
 
-        {/* Subject Duel */}
-        {ratings && ratings.mathQuestionsAnswered > 0 && ratings.englishQuestionsAnswered > 0 && (
+        {/* Subject Duel - only for exams with data */}
+        {examType === 'sat' && ratings && ratings.mathQuestionsAnswered > 0 && ratings.englishQuestionsAnswered > 0 && (
           <div className="mb-4">
             <SubjectDuelCard mathRating={ratings.mathRating} englishRating={ratings.englishRating} />
           </div>
@@ -548,6 +548,17 @@ const Home = () => {
               <span className="text-sm font-medium">Practice 10 Questions</span>
             </Button>
 
+            {/* Rapid Fire Facts Challenge */}
+            <Link to="/rapid-facts" className="w-full max-w-xs">
+              <Button variant="outline" className="w-full h-auto py-3 flex items-center gap-3 justify-center bg-gradient-to-r from-amber-500/10 to-orange-500/10 border-amber-400/30 hover:border-amber-400/50">
+                <Zap className="w-5 h-5 text-amber-500 flex-shrink-0" />
+                <div className="flex flex-col items-center">
+                  <span className="text-sm font-medium text-amber-600 dark:text-amber-400">⚡ Rapid Fire Facts Challenge</span>
+                  <span className="text-[10px] text-muted-foreground">60s timed quiz • {examConfig.shortName}</span>
+                </div>
+              </Button>
+            </Link>
+
             {/* Quick Practice - Math & English with ratings */}
             <div className="grid grid-cols-2 gap-3 w-full max-w-xs">
               <Button 
@@ -559,7 +570,7 @@ const Home = () => {
                   <Calculator className="w-5 h-5 text-primary" />
                   <span className="text-sm font-medium">Math</span>
                 </div>
-                {ratings && (
+                {examType === 'sat' && ratings && (
                   <span className="text-xs text-muted-foreground">{Math.round(ratings.mathRating)}</span>
                 )}
               </Button>
@@ -572,7 +583,7 @@ const Home = () => {
                   <PenTool className="w-5 h-5 text-secondary" />
                   <span className="text-sm font-medium">English</span>
                 </div>
-                {ratings && (
+                {examType === 'sat' && ratings && (
                   <span className="text-xs text-muted-foreground">{Math.round(ratings.englishRating)}</span>
                 )}
               </Button>
@@ -619,19 +630,10 @@ const Home = () => {
                 <span className="text-sm font-medium">Insights</span>
               </Button>
             </Link>
-            <Link to="/rapid-facts" className="w-full">
-              <Button variant="outline" className="w-full h-auto py-3 flex items-center gap-3 justify-start bg-gradient-to-r from-amber-500/10 to-orange-500/10 border-amber-400/30 hover:border-amber-400/50">
-                <Zap className="w-5 h-5 text-amber-500 flex-shrink-0" />
-                <div className="flex flex-col items-start">
-                  <span className="text-sm font-medium text-amber-600 dark:text-amber-400">⚡ Rapid Facts Challenge</span>
-                  <span className="text-[10px] text-muted-foreground">60s timed quiz • SAT / PSAT / ACT</span>
-                </div>
-              </Button>
-            </Link>
             <Link to="/key-principles" className="w-full">
               <Button variant="outline" className="w-full h-auto py-3 flex items-center gap-3 justify-start border-amber-400/30 hover:border-amber-400/50">
                 <Lightbulb className="w-5 h-5 text-amber-500 flex-shrink-0" />
-                <span className="text-sm font-medium">Key SAT Principles</span>
+                <span className="text-sm font-medium">Key {examConfig.shortName} Principles</span>
               </Button>
             </Link>
             <Link to="/boss-battle" className="w-full">
