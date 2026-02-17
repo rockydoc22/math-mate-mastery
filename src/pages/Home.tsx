@@ -260,13 +260,13 @@ const Home = () => {
             )}
           </div>
 
-          {/* SAT Mastery Logo - increased top margin to clear nav icons */}
+          {/* Logo - dynamic per exam type */}
           <div className="mb-4 mt-14 pt-2">
             <SATMasteryLogo 
               size="lg" 
               clickable 
               onClick={handle40SquaredClick}
-              titleText={examType === 'psat' ? 'PSAT Mastery' : undefined}
+              examType={examType}
               showTagline
               taglineText={examConfig.tagline}
             />
@@ -506,10 +506,20 @@ const Home = () => {
           </div>
         )}
 
-        {/* Tagline */}
+        {/* Tagline - exam-specific */}
         <h2 className="text-lg font-bold text-foreground text-center mb-4">
-          Be one of the <InlineMath math="40^2 \times \left(\pi + \sum_{k=1}^{\infty} \frac{1}{k^2} - e\right)" /> who crush the {examConfig.shortName}
+          Be one of the <InlineMath math={examConfig.branding.mathTaglineKatex} /> {examConfig.branding.mathTaglineLabel}
         </h2>
+        {/* Extra math flair for ACT/PSAT */}
+        {examConfig.branding.extraMathFlair && examConfig.branding.extraMathFlair.length > 0 && (
+          <div className="flex items-center justify-center gap-3 mb-4">
+            {examConfig.branding.extraMathFlair.map((expr, i) => (
+              <span key={i} className="text-sm text-muted-foreground font-mono opacity-70">
+                <InlineMath math={expr} />
+              </span>
+            ))}
+          </div>
+        )}
 
         {/* Main Practice Actions - Reorganized */}
         <Card className="p-4 mb-4 border-2 border-border">

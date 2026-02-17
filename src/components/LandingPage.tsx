@@ -111,7 +111,7 @@ export const LandingPage = () => {
             <SATMasteryLogo
               size="xl"
               layout="stacked"
-              titleText="1600: The SAT App"
+              examType="sat"
               showTagline={false}
             />
           </div>
