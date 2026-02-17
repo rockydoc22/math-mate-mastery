@@ -51,7 +51,7 @@ interface SendTempPasswordRequest {
   username?: string;
 }
 
-const RATE_LIMIT_MAX = 2; // Stricter limit for password changes - max 2 per hour
+const RATE_LIMIT_MAX = 5; // Allow 5 per hour
 const RATE_LIMIT_WINDOW_MS = 60 * 60 * 1000; // 1 hour
 
 async function checkRateLimit(supabase: any, key: string, endpoint: string): Promise<boolean> {
