@@ -26,8 +26,11 @@ import { usePerfectStreak } from "@/hooks/usePerfectStreak";
 import { useMysteryBox } from "@/hooks/useMysteryBox";
 import { MysteryBoxPopup } from "@/components/MysteryBoxPopup";
 import { PerfectStreakDisplay } from "@/components/PerfectStreakDisplay";
+import { useExamType } from "@/hooks/useExamType";
+import { EXAM_CONFIGS } from "@/utils/examConfig";
+import { actScienceQuestions } from "@/data/actScienceQuestions";
 
-type CombinedQuestion = (Question | EnglishQuestion | VisualQuestion | ImageQuestion) & { type: "math" | "english"; difficultyRating?: number };
+type CombinedQuestion = (Question | EnglishQuestion | VisualQuestion | ImageQuestion) & { type: "math" | "english" | "science"; difficultyRating?: number };
 
 // Session storage key for tracking correctly answered questions
 const CORRECT_ANSWERS_KEY = "sat_mastery_correct_answers";
@@ -75,6 +78,8 @@ const Quiz = () => {
   const { ratings, updateRating } = useSkillRating();
   const { streak: perfectStreak, recordAnswer: recordPerfectAnswer } = usePerfectStreak();
   const { pendingReward, recordQuestion, dismissReward, questionsUntilBox } = useMysteryBox();
+  const { examType } = useExamType();
+  const examConfig = EXAM_CONFIGS[examType];
   
   // Define isAdvancedSubject early so it can be used in useMemo
   const isAdvancedSubject = subject === "physics" || subject === "precalc" || subject === "calculus";
@@ -105,6 +110,10 @@ const Quiz = () => {
           pool = [...pool, ...englishQuestions.map((q) => ({ ...q, type: "english" as const }))];
           pool = [...pool, ...visualEnglishQuestions.filter(q => (q.difficultyRating || 5) >= 3).map((q) => ({ ...q, type: "english" as const }))];
           pool = [...pool, ...moreEnglishVisualQuestions.filter(q => (q.difficultyRating || 5) >= 3).map((q) => ({ ...q, type: "english" as const }))];
+        }
+        // Include science questions for ACT mode
+        if (examType === 'act' && (subject === "both" || subject === "science")) {
+          pool = [...pool, ...actScienceQuestions.map((q) => ({ ...q, type: "science" as const }))];
         }
       }
 
@@ -145,9 +154,21 @@ const Quiz = () => {
         let selected: CombinedQuestion[] = [];
         
         if (subject === "both") {
-          const mathCount = Math.ceil(count / 2);
-          const englishCount = count - mathCount;
-          selected = [...sampleProportionally(mathPool, mathCount, 'math'), ...sampleProportionally(englishPool, englishCount, 'english')];
+          if (examType === 'act') {
+            // ACT: split evenly across math, english, science
+            const sciencePool = filtered.filter(q => q.type === "science");
+            const perSubject = Math.floor(count / 3);
+            const remainder = count - perSubject * 3;
+            selected = [
+              ...sampleProportionally(mathPool, perSubject, 'math'),
+              ...sampleProportionally(englishPool, perSubject, 'english'),
+              ...shuffleArray(sciencePool).slice(0, perSubject + remainder),
+            ];
+          } else {
+            const mathCount = Math.ceil(count / 2);
+            const englishCount = count - mathCount;
+            selected = [...sampleProportionally(mathPool, mathCount, 'math'), ...sampleProportionally(englishPool, englishCount, 'english')];
+          }
         } else if (subject === "math") {
           selected = sampleProportionally(mathPool, count, 'math');
         } else if (subject === "english") {
@@ -175,7 +196,7 @@ const Quiz = () => {
       setIsLoading(false);
     }, 50); // Small delay to let the UI render first
     return () => clearTimeout(timer);
-  }, [subject, count, difficulty, topicId, isAdvancedSubject]);
+  }, [subject, count, difficulty, topicId, isAdvancedSubject, examType]);
 
   // isAdvancedSubject is now defined at the top of the component
 
@@ -237,8 +258,9 @@ const Quiz = () => {
 
     // Update skill rating
     if (user && currentQuestion.difficultyRating) {
+      const ratingType: "math" | "english" = currentQuestion.type === "english" ? "english" : "math";
       const result = await updateRating(
-        currentQuestion.type,
+        ratingType,
         currentQuestion.difficultyRating,
         isCorrect,
         currentQuestion.id
@@ -288,6 +310,7 @@ const Quiz = () => {
   const getSubjectLabel = () => {
     if (subject === "both") return "Mixed";
     if (subject === "english") return "English";
+    if (subject === "science") return "Science";
     if (subject === "physics") return "Physics";
     if (subject === "precalc") return "Pre-Calc";
     if (subject === "calculus") return "Calculus";
@@ -338,6 +361,7 @@ const Quiz = () => {
               englishRating={ratings.englishRating}
               overallRating={ratings.overallRating}
               compact
+              examType={examType}
             />
           )}
         </div>
@@ -357,7 +381,7 @@ const Quiz = () => {
               </Button>
             </Link>
             <h1 className="text-2xl font-bold text-primary">
-              {isAdvancedSubject ? getSubjectLabel() : `SAT ${getSubjectLabel()}`} Practice
+              {isAdvancedSubject ? getSubjectLabel() : `${examConfig.shortName} ${getSubjectLabel()}`} Practice
             </h1>
           </div>
           
@@ -393,9 +417,11 @@ const Quiz = () => {
                 <span className={`text-xs px-2 py-1 rounded-full ${
                   currentQuestion.type === "math" 
                     ? "bg-primary/10 text-primary" 
+                    : currentQuestion.type === "science"
+                    ? "bg-cyan-500/10 text-cyan-500"
                     : "bg-secondary/10 text-secondary"
                 }`}>
-                  {currentQuestion.type === "math" ? "Math" : "English"}
+                  {currentQuestion.type === "math" ? "Math" : currentQuestion.type === "science" ? "Science" : "English"}
                 </span>
               )}
               {currentQuestion.difficultyRating && (
@@ -416,7 +442,7 @@ const Quiz = () => {
           selectedAnswer={selectedAnswer}
           onSelectAnswer={handleSelectAnswer}
           showResult={showResult}
-          questionType={currentQuestion.type}
+          questionType={currentQuestion.type === "science" ? "math" : currentQuestion.type}
         />
 
         <div className="flex gap-3">
