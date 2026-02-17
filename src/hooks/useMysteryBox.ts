@@ -65,8 +65,13 @@ export function useMysteryBox() {
       localStorage.setItem(MYSTERY_BOX_COUNTER_KEY, String(next));
       
       if (next >= MYSTERY_BOX_INTERVAL && next % MYSTERY_BOX_INTERVAL === 0) {
-        // Award a random reward
-        const reward = REWARD_POOL[Math.floor(Math.random() * REWARD_POOL.length)];
+        // Award a random reward, preferring ones not yet earned
+        const earned = getEarnedRewards();
+        const unearnedPool = REWARD_POOL.filter(
+          r => !earned.find(e => e.value === r.value && e.type === r.type)
+        );
+        const pool = unearnedPool.length > 0 ? unearnedPool : REWARD_POOL;
+        const reward = pool[Math.floor(Math.random() * pool.length)];
         saveReward(reward);
         setPendingReward(reward);
       }

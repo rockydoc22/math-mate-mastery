@@ -455,7 +455,7 @@ const Home = () => {
           </Card>
         )}
         {/* Personalized Stats - Only for logged in users WITH data for this exam */}
-        {user && examType === 'sat' && ratings && (ratings.mathQuestionsAnswered + ratings.englishQuestionsAnswered > 0) && (
+        {user && ratings && (ratings.mathQuestionsAnswered + ratings.englishQuestionsAnswered > 0) && (
           <Card className="p-4 mb-4 border-2 border-primary/20">
             <div className="flex flex-col items-center text-center">
               <div className="flex items-center gap-3 mb-2">
@@ -498,7 +498,7 @@ const Home = () => {
         )}
 
         {/* Subject Duel - only for exams with data */}
-        {examType === 'sat' && ratings && ratings.mathQuestionsAnswered > 0 && ratings.englishQuestionsAnswered > 0 && (
+        {ratings && ratings.mathQuestionsAnswered > 0 && ratings.englishQuestionsAnswered > 0 && (
           <div className="mb-4">
             <SubjectDuelCard mathRating={ratings.mathRating} englishRating={ratings.englishRating} />
           </div>
@@ -570,7 +570,7 @@ const Home = () => {
                   <Calculator className="w-5 h-5 text-primary" />
                   <span className="text-sm font-medium">Math</span>
                 </div>
-                {examType === 'sat' && ratings && (
+                {ratings && (
                   <span className="text-xs text-muted-foreground">{Math.round(ratings.mathRating)}</span>
                 )}
               </Button>
@@ -583,7 +583,7 @@ const Home = () => {
                   <PenTool className="w-5 h-5 text-secondary" />
                   <span className="text-sm font-medium">English</span>
                 </div>
-                {examType === 'sat' && ratings && (
+                {ratings && (
                   <span className="text-xs text-muted-foreground">{Math.round(ratings.englishRating)}</span>
                 )}
               </Button>
