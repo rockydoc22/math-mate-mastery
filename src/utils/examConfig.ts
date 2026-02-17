@@ -1,6 +1,16 @@
 // Exam type definitions and configuration
 export type ExamType = 'sat' | 'psat' | 'act';
 
+export interface ExamBranding {
+  logoText: string; // text shown inside the logo icon (e.g. "40²")
+  logoKatex: string; // KaTeX expression for logo icon
+  appTitle: string; // app title text
+  heroTagline: string; // tagline shown below logo
+  mathTaglineKatex: string; // KaTeX math tagline for dashboard
+  mathTaglineLabel: string; // plain-text portion surrounding the KaTeX
+  extraMathFlair?: string[]; // additional KaTeX expressions to show as decorative flair
+}
+
 export interface ExamConfig {
   id: ExamType;
   name: string;
@@ -13,6 +23,7 @@ export interface ExamConfig {
   sections: string[];
   icon: string; // emoji
   color: string; // tailwind color class suffix
+  branding: ExamBranding;
 }
 
 export const EXAM_CONFIGS: Record<ExamType, ExamConfig> = {
@@ -28,6 +39,14 @@ export const EXAM_CONFIGS: Record<ExamType, ExamConfig> = {
     sections: ['Math', 'English'],
     icon: '📐',
     color: 'primary',
+    branding: {
+      logoText: '40²',
+      logoKatex: '40^2',
+      appTitle: '1600: The SAT App',
+      heroTagline: 'Free SAT prep that actually works',
+      mathTaglineKatex: '40^2 \\times \\left(\\pi + \\sum_{k=1}^{\\infty} \\frac{1}{k^2} - e\\right)',
+      mathTaglineLabel: 'who crush the SAT',
+    },
   },
   psat: {
     id: 'psat',
@@ -41,6 +60,15 @@ export const EXAM_CONFIGS: Record<ExamType, ExamConfig> = {
     sections: ['Math', 'English'],
     icon: '🎯',
     color: 'blue-500',
+    branding: {
+      logoText: '39²−1',
+      logoKatex: '39^2 - 1',
+      appTitle: 'Index 152',
+      heroTagline: 'One away from perfect — chase the 1520',
+      mathTaglineKatex: '39^2 - 1 = 1520',
+      mathTaglineLabel: 'who conquer the PSAT',
+      extraMathFlair: ['1.52k'],
+    },
   },
   act: {
     id: 'act',
@@ -54,6 +82,15 @@ export const EXAM_CONFIGS: Record<ExamType, ExamConfig> = {
     sections: ['Math', 'English', 'Reading', 'Science'],
     icon: '🧪',
     color: 'emerald-500',
+    branding: {
+      logoText: 'Σ8',
+      logoKatex: '\\Sigma 8',
+      appTitle: 'Σ8: The ACT App',
+      heroTagline: 'The sum of everything — target 36',
+      mathTaglineKatex: '\\sum_{k=1}^{8} k = 36',
+      mathTaglineLabel: 'who dominate the ACT',
+      extraMathFlair: ['3! \\times 3!', '6^2'],
+    },
   },
 };
 
