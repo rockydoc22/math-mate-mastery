@@ -561,8 +561,8 @@ const Home = () => {
               </Button>
             </Link>
 
-            {/* Quick Practice - Math & English with ratings */}
-            <div className="grid grid-cols-2 gap-3 w-full max-w-xs">
+            {/* Quick Practice - Math, English & Science (ACT) */}
+            <div className={`grid ${examType === 'act' ? 'grid-cols-3' : 'grid-cols-2'} gap-3 w-full max-w-xs`}>
               <Button 
                 variant="outline"
                 className="h-auto py-3 flex flex-col items-center gap-1 hover:bg-primary/10"
@@ -589,6 +589,19 @@ const Home = () => {
                   <span className="text-xs text-muted-foreground">{Math.round(ratings.englishRating)}</span>
                 )}
               </Button>
+              {examType === 'act' && (
+                <Button 
+                  variant="outline"
+                  className="h-auto py-3 flex flex-col items-center gap-1 hover:bg-cyan-500/10 border-cyan-500/30"
+                  onClick={() => handleQuickStart('science')}
+                >
+                  <div className="flex items-center gap-2">
+                    <Brain className="w-5 h-5 text-cyan-500" />
+                    <span className="text-sm font-medium">Science</span>
+                  </div>
+                  <span className="text-xs text-muted-foreground">263 Q</span>
+                </Button>
+              )}
             </div>
           </div>
         </Card>
