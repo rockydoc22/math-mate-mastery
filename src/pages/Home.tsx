@@ -467,9 +467,11 @@ const Home = () => {
                   <p className="text-sm font-medium">{skillLevel?.level}</p>
                 </div>
               </div>
-              <p className="text-xs text-muted-foreground mb-2">
-                Skill Rating: <span className="font-semibold text-foreground">{Math.round(ratings.overallRating)}</span>
-              </p>
+              {examType !== 'act' && (
+                <p className="text-xs text-muted-foreground mb-2">
+                  Skill Rating: <span className="font-semibold text-foreground">{Math.round(ratings.overallRating)}</span>
+                </p>
+              )}
               <div className="flex items-center justify-center gap-4">
                 {streak && streak.current_streak > 0 && (
                   <div className="flex items-center gap-1 px-3 py-1 rounded-full bg-orange-500/10 text-orange-600 dark:text-orange-400">
@@ -500,7 +502,7 @@ const Home = () => {
         {/* Subject Duel - only for exams with data */}
         {ratings && ratings.mathQuestionsAnswered > 0 && ratings.englishQuestionsAnswered > 0 && (
           <div className="mb-4">
-            <SubjectDuelCard mathRating={ratings.mathRating} englishRating={ratings.englishRating} />
+            <SubjectDuelCard mathRating={ratings.mathRating} englishRating={ratings.englishRating} examType={examType} />
           </div>
         )}
 

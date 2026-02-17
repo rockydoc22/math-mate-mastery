@@ -4,6 +4,7 @@ import { supabase } from "@/integrations/supabase/client";
 import { useAuth } from "@/hooks/useAuth";
 import { useGameStats } from "@/hooks/useGameStats";
 import { useSkillRating } from "@/hooks/useSkillRating";
+import { useExamType } from "@/hooks/useExamType";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -35,6 +36,7 @@ const Profile = () => {
   const { streak, achievements, quizCount, achievementDefs } = useGameStats();
   const { ratings } = useSkillRating();
   const { avatar: fighterAvatar } = useFighterAvatar();
+  const { examType } = useExamType();
   const [loading, setLoading] = useState(false);
   const [profile, setProfile] = useState({
     username: "",
@@ -169,6 +171,7 @@ const Profile = () => {
             mathRating={ratings.mathRating}
             englishRating={ratings.englishRating}
             overallRating={ratings.overallRating}
+            examType={examType}
           />
         )}
 
