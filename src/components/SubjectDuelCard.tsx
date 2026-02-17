@@ -1,19 +1,27 @@
 import { Card } from "@/components/ui/card";
 import { Swords } from "lucide-react";
+import { ratingToExamScore, type ExamType } from "@/utils/examConfig";
 
 interface SubjectDuelCardProps {
   mathRating: number;
   englishRating: number;
+  examType?: ExamType;
 }
 
-export const SubjectDuelCard = ({ mathRating, englishRating }: SubjectDuelCardProps) => {
-  const gap = Math.abs(Math.round(mathRating - englishRating));
-  const mathWins = mathRating > englishRating;
-  const tied = gap < 10;
+export const SubjectDuelCard = ({ mathRating, englishRating, examType = 'sat' }: SubjectDuelCardProps) => {
+  // Convert ELO ratings to exam-scale scores for display
+  const mathScore = ratingToExamScore(mathRating, examType);
+  const englishScore = ratingToExamScore(englishRating, examType);
+  const mathDisplay = Math.round((mathScore.min + mathScore.max) / 2);
+  const englishDisplay = Math.round((englishScore.min + englishScore.max) / 2);
+
+  const gap = Math.abs(mathDisplay - englishDisplay);
+  const mathWins = mathDisplay > englishDisplay;
+  const tied = gap < 2;
 
   const getMessage = () => {
     if (tied) return "Your Math and English are neck and neck! 🤝";
-    if (gap > 100) {
+    if (gap > (examType === 'act' ? 3 : 100)) {
       return mathWins
         ? `Your Math is crushing English by ${gap} points. Time to close the gap! 📚`
         : `Your English is dominating Math by ${gap} points. Let's balance it out! 🧮`;
@@ -23,7 +31,7 @@ export const SubjectDuelCard = ({ mathRating, englishRating }: SubjectDuelCardPr
       : `English leads Math by ${gap} points — close the gap! 🧮`;
   };
 
-  const mathPercent = Math.round((mathRating / (mathRating + englishRating)) * 100);
+  const mathPercent = Math.round((mathDisplay / (mathDisplay + englishDisplay)) * 100);
   const englishPercent = 100 - mathPercent;
 
   return (
@@ -39,13 +47,13 @@ export const SubjectDuelCard = ({ mathRating, englishRating }: SubjectDuelCardPr
           className="bg-primary flex items-center justify-center text-xs font-bold text-primary-foreground transition-all duration-500"
           style={{ width: `${mathPercent}%` }}
         >
-          {Math.round(mathRating)}
+          {mathDisplay}
         </div>
         <div
           className="bg-secondary flex items-center justify-center text-xs font-bold text-secondary-foreground transition-all duration-500"
           style={{ width: `${englishPercent}%` }}
         >
-          {Math.round(englishRating)}
+          {englishDisplay}
         </div>
       </div>
       

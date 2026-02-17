@@ -32,9 +32,11 @@ function RatingBadge({
         <Icon className={cn("w-4 h-4", color)} />
         <span className="text-xs text-muted-foreground">{label}</span>
       </div>
-      <div className={cn("text-2xl font-bold", color)}>{rating}</div>
+      <div className={cn("text-2xl font-bold", color)}>
+        {examType === 'act' ? `${min}-${max}` : rating}
+      </div>
       <div className="text-xs text-muted-foreground mt-1">
-        {level} • {EXAM_CONFIGS[examType].shortName} {min}-{max}
+        {level}{examType !== 'act' && ` • ${EXAM_CONFIGS[examType].shortName} ${min}-${max}`}
       </div>
     </div>
   );
@@ -55,7 +57,7 @@ export function SkillRatingCard({
       <div className="flex items-center gap-3 bg-card/50 rounded-lg px-4 py-2 border border-white/10">
         <Award className={cn("w-5 h-5", overallLevel.color)} />
         <div>
-          <div className={cn("font-bold", overallLevel.color)}>{overallRating}</div>
+          <div className={cn("font-bold", overallLevel.color)}>{examType === 'act' ? `${overallScore.min}-${overallScore.max}` : overallRating}</div>
           <div className="text-xs text-muted-foreground">
             {overallLevel.level}
           </div>
@@ -84,14 +86,16 @@ export function SkillRatingCard({
         )}>
           <div className="text-xs text-muted-foreground mb-1">Overall Rating</div>
           <div className={cn("text-4xl font-bold", overallLevel.color)}>
-            {overallRating}
+            {examType === 'act' ? `${overallScore.min}-${overallScore.max}` : overallRating}
           </div>
           <div className={cn("text-sm font-medium", overallLevel.color)}>
             {overallLevel.level}
           </div>
-          <div className="text-sm text-muted-foreground mt-2">
-            Projected Score: <span className="font-semibold text-foreground">{overallScore.min}-{overallScore.max}</span>
-          </div>
+          {examType !== 'act' && (
+            <div className="text-sm text-muted-foreground mt-2">
+              Projected Score: <span className="font-semibold text-foreground">{overallScore.min}-{overallScore.max}</span>
+            </div>
+          )}
         </div>
 
         {/* Subject Ratings */}
