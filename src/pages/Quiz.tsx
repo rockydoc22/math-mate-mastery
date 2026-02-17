@@ -115,6 +115,10 @@ const Quiz = () => {
         if (examType === 'act' && (subject === "both" || subject === "science")) {
           pool = [...pool, ...actScienceQuestions.map((q) => ({ ...q, type: "science" as const }))];
         }
+        // Science-only mode: skip proportional sampling, use simple shuffle
+        if (subject === "science") {
+          // handled below in the general path
+        }
       }
 
       const seenIds = new Set<string>();
@@ -173,6 +177,9 @@ const Quiz = () => {
           selected = sampleProportionally(mathPool, count, 'math');
         } else if (subject === "english") {
           selected = sampleProportionally(englishPool, count, 'english');
+        } else if (subject === "science") {
+          const sciencePool = filtered.filter(q => q.type === "science");
+          selected = shuffleArray(sciencePool).slice(0, count);
         }
         setQuizQuestions(shuffleAllQuestionOptions(shuffleArray(selected)));
         setIsLoading(false);
