@@ -163,25 +163,51 @@ const Quiz = () => {
             const sciencePool = filtered.filter(q => q.type === "science");
             const perSubject = Math.floor(count / 3);
             const remainder = count - perSubject * 3;
-            selected = [
-              ...sampleProportionally(mathPool, perSubject, 'math'),
-              ...sampleProportionally(englishPool, perSubject, 'english'),
-              ...shuffleArray(sciencePool).slice(0, perSubject + remainder),
-            ];
+            
+            // For small counts (e.g. Sprint 5), use simple shuffle instead of proportional sampling
+            // since sampleProportionally can return 0 when count=1 due to rounding
+            const mathSelected = perSubject <= 2
+              ? shuffleArray(mathPool).slice(0, perSubject)
+              : sampleProportionally(mathPool, perSubject, 'math');
+            const englishSelected = perSubject <= 2
+              ? shuffleArray(englishPool).slice(0, perSubject)
+              : sampleProportionally(englishPool, perSubject, 'english');
+            const scienceSelected = shuffleArray(sciencePool).slice(0, perSubject + remainder);
+            
+            selected = [...mathSelected, ...englishSelected, ...scienceSelected];
+            
+            // Backfill if we didn't get enough questions
+            if (selected.length < count) {
+              const selectedIds = new Set(selected.map(q => q.id));
+              const backfill = shuffleArray(filtered.filter(q => !selectedIds.has(q.id)));
+              selected = [...selected, ...backfill.slice(0, count - selected.length)];
+            }
           } else {
             const mathCount = Math.ceil(count / 2);
             const englishCount = count - mathCount;
             selected = [...sampleProportionally(mathPool, mathCount, 'math'), ...sampleProportionally(englishPool, englishCount, 'english')];
           }
         } else if (subject === "math") {
-          selected = sampleProportionally(mathPool, count, 'math');
+          selected = count <= 2
+            ? shuffleArray(mathPool).slice(0, count)
+            : sampleProportionally(mathPool, count, 'math');
         } else if (subject === "english") {
-          selected = sampleProportionally(englishPool, count, 'english');
+          selected = count <= 2
+            ? shuffleArray(englishPool).slice(0, count)
+            : sampleProportionally(englishPool, count, 'english');
         } else if (subject === "science") {
           const sciencePool = filtered.filter(q => q.type === "science");
           selected = shuffleArray(sciencePool).slice(0, count);
         }
-        setQuizQuestions(shuffleAllQuestionOptions(shuffleArray(selected)));
+        
+        // Ensure we always have exactly `count` questions
+        if (selected.length < count) {
+          const selectedIds = new Set(selected.map(q => q.id));
+          const backfill = shuffleArray(filtered.filter(q => !selectedIds.has(q.id)));
+          selected = [...selected, ...backfill.slice(0, count - selected.length)];
+        }
+        
+        setQuizQuestions(shuffleAllQuestionOptions(shuffleArray(selected.slice(0, count))));
         setIsLoading(false);
         return;
       }
@@ -228,7 +254,8 @@ const Quiz = () => {
     isTimeUp, 
     timeStatus, 
     toggle: toggleTimer,
-    pause: pauseTimer 
+    pause: pauseTimer,
+    resume, 
   } = useQuizTimer({
     questionCount: quizQuestions.length,
     enabled: timerEnabled && !isAdvancedSubject,
@@ -291,6 +318,10 @@ const Quiz = () => {
       setCurrentQuestionIndex(currentQuestionIndex + 1);
       setSelectedAnswer(null);
       setShowResult(false);
+      // Resume timer for next question (it was paused on showResult)
+      if (timerEnabled && !isAdvancedSubject && !isTimeUp) {
+        resume();
+      }
     } else {
       setQuizEndTime(Date.now());
       setFinished(true);
