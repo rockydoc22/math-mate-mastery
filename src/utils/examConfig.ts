@@ -11,6 +11,16 @@ export interface ExamBranding {
   extraMathFlair?: string[]; // additional KaTeX expressions to show as decorative flair
 }
 
+export interface PredictionTestConfig {
+  testName: string; // display name e.g. "(20+20)² Prediction Test"
+  testNameKatex?: string; // optional KaTeX for the name
+  sections: { key: string; label: string; color: string; questionsCount: number; timeMinutes: number }[];
+  maxSectionScore: number; // max per section
+  penaltyPerWrong: number; // points lost per wrong answer per section
+  minSectionScore: number; // floor per section
+  scoringExamples: string[]; // explanatory bullets
+}
+
 export interface ExamConfig {
   id: ExamType;
   name: string;
@@ -24,6 +34,7 @@ export interface ExamConfig {
   icon: string; // emoji
   color: string; // tailwind color class suffix
   branding: ExamBranding;
+  predictionTest: PredictionTestConfig;
 }
 
 export const EXAM_CONFIGS: Record<ExamType, ExamConfig> = {
@@ -47,6 +58,22 @@ export const EXAM_CONFIGS: Record<ExamType, ExamConfig> = {
       mathTaglineKatex: '40^2 \\times \\left(\\pi + \\sum_{k=1}^{\\infty} \\frac{1}{k^2} - e\\right)',
       mathTaglineLabel: 'who crush the SAT',
     },
+    predictionTest: {
+      testName: '(20+20)² Prediction Test',
+      sections: [
+        { key: 'math', label: 'Hard Math', color: 'blue-500', questionsCount: 20, timeMinutes: 25 },
+        { key: 'english', label: 'Hard English', color: 'green-500', questionsCount: 20, timeMinutes: 25 },
+      ],
+      maxSectionScore: 800,
+      penaltyPerWrong: 30,
+      minSectionScore: 200,
+      scoringExamples: [
+        'All correct = Predicted 1600',
+        'Each wrong answer = -30 points in that section',
+        'Example: 1 wrong in math = 770 Math + 800 English = 1570',
+        'Math section first, then English',
+      ],
+    },
   },
   psat: {
     id: 'psat',
@@ -69,6 +96,22 @@ export const EXAM_CONFIGS: Record<ExamType, ExamConfig> = {
       mathTaglineLabel: 'who conquer the PSAT',
       extraMathFlair: ['1.52k'],
     },
+    predictionTest: {
+      testName: '(19+20)² Prediction Test',
+      sections: [
+        { key: 'math', label: 'Hard Math', color: 'blue-500', questionsCount: 19, timeMinutes: 24 },
+        { key: 'english', label: 'Hard English', color: 'green-500', questionsCount: 20, timeMinutes: 25 },
+      ],
+      maxSectionScore: 760,
+      penaltyPerWrong: 38,
+      minSectionScore: 160,
+      scoringExamples: [
+        'All correct = Predicted 1520',
+        'Each wrong answer = -38 points in that section',
+        'Example: 1 wrong in math = 722 Math + 760 English = 1482',
+        'Math section first, then English',
+      ],
+    },
   },
   act: {
     id: 'act',
@@ -90,6 +133,24 @@ export const EXAM_CONFIGS: Record<ExamType, ExamConfig> = {
       mathTaglineKatex: '\\sum_{k=1}^{8} k',
       mathTaglineLabel: 'who dominate the ACT',
       extraMathFlair: ['3! \\times 3!', '6^2'],
+    },
+    predictionTest: {
+      testName: '3!×2 Prediction Test',
+      testNameKatex: '3! \\times 2',
+      sections: [
+        { key: 'science', label: 'Hard Science', color: 'purple-500', questionsCount: 12, timeMinutes: 12 },
+        { key: 'math', label: 'Hard Math', color: 'blue-500', questionsCount: 12, timeMinutes: 12 },
+        { key: 'english', label: 'Hard English', color: 'green-500', questionsCount: 12, timeMinutes: 12 },
+      ],
+      maxSectionScore: 12,
+      penaltyPerWrong: 1,
+      minSectionScore: 1,
+      scoringExamples: [
+        'All correct = Predicted 36',
+        'Each wrong answer = -1 point in that section',
+        'Example: 1 wrong in science = 11 + 12 + 12 = 35',
+        'Science first, then Math, then English',
+      ],
     },
   },
 };

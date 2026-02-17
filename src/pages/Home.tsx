@@ -530,11 +530,11 @@ const Home = () => {
               </Button>
             </Link>
             
-            {/* (20+20)² Prediction Test - Second */}
+            {/* Prediction Test - Second */}
             <Link to="/practice-test" className="w-full max-w-xs">
               <Button variant="outline" className="w-full h-auto py-3 flex items-center gap-3 justify-center border-emerald-500/30 hover:bg-emerald-500/10">
                 <Target className="w-5 h-5 text-emerald-500 flex-shrink-0" />
-                <span className="text-sm font-medium font-mono">(20+20)² Prediction Test</span>
+                <span className="text-sm font-medium font-mono">{examConfig.predictionTest.testName}</span>
               </Button>
             </Link>
 
