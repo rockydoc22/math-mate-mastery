@@ -12,12 +12,15 @@ import { visualMathQuestions, visualEnglishQuestions, moreMathVisualQuestions, m
 import { additionalMathQuestions } from "@/data/additionalMathQuestions";
 import { englishQuestions } from "@/data/englishQuestions";
 import { hardEnglishQuestions } from "@/data/hardEnglishQuestions";
+import { actScienceQuestions } from "@/data/actScienceQuestions";
 import { QuestionVisual } from "@/components/QuestionVisual";
 import { AITutorExplanation } from "@/components/AITutorExplanation";
 import { FlagQuestionModal } from "@/components/FlagQuestionModal";
 import { shuffleAllQuestionOptions } from "@/utils/optionShuffler";
 import { sampleProportionally } from "@/utils/proportionalSampling";
 import { DesmosCalculator } from "@/components/DesmosCalculator";
+import { useExamType } from "@/hooks/useExamType";
+import { EXAM_CONFIGS } from "@/utils/examConfig";
 
 interface TestQuestion {
   id: string;
@@ -27,65 +30,73 @@ interface TestQuestion {
   explanation: string;
   domain: string;
   skill: string;
-  type: "math" | "english";
+  type: "math" | "english" | "science";
   visual?: any;
 }
-
-const MATH_TIME = 25 * 60; // 25 minutes for 20 hard math questions
-const ENGLISH_TIME = 25 * 60; // 25 minutes for 20 hard english questions
 
 const PracticeTest = () => {
   const { user } = useAuth();
   const navigate = useNavigate();
+  const { examType } = useExamType();
+  const examConfig = EXAM_CONFIGS[examType];
+  const ptConfig = examConfig.predictionTest;
   
   const [testStarted, setTestStarted] = useState(false);
-  const [currentSection, setCurrentSection] = useState<"math" | "english">("math");
-  const [mathQuestionsList, setMathQuestionsList] = useState<TestQuestion[]>([]);
-  const [englishQuestionsList, setEnglishQuestionsList] = useState<TestQuestion[]>([]);
+  const [currentSectionIdx, setCurrentSectionIdx] = useState(0);
+  const [sectionQuestions, setSectionQuestions] = useState<Record<string, TestQuestion[]>>({});
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [selectedAnswer, setSelectedAnswer] = useState<string | null>(null);
   const [answers, setAnswers] = useState<Record<string, string>>({});
-  const [timeRemaining, setTimeRemaining] = useState(MATH_TIME);
+  const [timeRemaining, setTimeRemaining] = useState(ptConfig.sections[0].timeMinutes * 60);
   const [showResults, setShowResults] = useState(false);
   const [showAITutor, setShowAITutor] = useState(false);
   const [reviewQuestion, setReviewQuestion] = useState<TestQuestion | null>(null);
   const [isFlagModalOpen, setIsFlagModalOpen] = useState(false);
-  const [flagQuestionData, setFlagQuestionData] = useState<{ id: string; type: 'math' | 'english' } | null>(null);
+  const [flagQuestionData, setFlagQuestionData] = useState<{ id: string; type: 'math' | 'english' | 'science' } | null>(null);
   const [expandedQuestions, setExpandedQuestions] = useState<Set<string>>(new Set());
 
-  // Generate test questions - 20 hard math + 20 hard english
-  // Uses proportional sampling to match official SAT domain distributions
+  const currentSection = ptConfig.sections[currentSectionIdx];
+  const minDifficulty = examType === 'psat' ? 6 : 7;
+
+  // Generate test questions based on exam config
   const generateTest = useCallback(() => {
-    // Get hard math questions (difficulty rating >= 7)
-    const allMath = [
-      ...questions.map(q => ({ ...q, type: "math" as const })),
-      ...visualMathQuestions.map(q => ({ ...q, type: "math" as const })),
-      ...moreMathVisualQuestions.map(q => ({ ...q, type: "math" as const })),
-      ...additionalMathQuestions.map(q => ({ ...q, type: "math" as const })),
-    ];
-    const hardMath = allMath.filter(q => (q.difficultyRating || 5) >= 7);
-    
-    // Get hard english questions (difficulty rating >= 7)
-    const allEnglish = [
-      ...englishQuestions.map(q => ({ ...q, type: "english" as const })),
-      ...hardEnglishQuestions.map(q => ({ ...q, type: "english" as const })),
-      ...visualEnglishQuestions.map(q => ({ ...q, type: "english" as const })),
-      ...moreEnglishVisualQuestions.map(q => ({ ...q, type: "english" as const })),
-    ];
-    const hardEnglish = allEnglish.filter(q => (q.difficultyRating || 5) >= 7);
+    const result: Record<string, TestQuestion[]> = {};
 
-    // Select 20 hard questions from each using proportional sampling
-    // Math: 35% Linear Algebra, 35% Advanced Math, 15% Data Analysis, 15% Geometry/Trig
-    // English: 28% Craft & Structure, 26% Info & Ideas, 26% Standard English, 20% Expression
-    const mathPool = hardMath.length >= 20 ? hardMath : allMath;
-    const englishPool = hardEnglish.length >= 20 ? hardEnglish : allEnglish;
-    
-    const shuffledMath = shuffleAllQuestionOptions(sampleProportionally(mathPool, 20, 'math'));
-    const shuffledEnglish = shuffleAllQuestionOptions(sampleProportionally(englishPool, 20, 'english'));
+    for (const section of ptConfig.sections) {
+      const count = section.questionsCount;
 
-    setMathQuestionsList(shuffledMath);
-    setEnglishQuestionsList(shuffledEnglish);
-  }, []);
+      if (section.key === 'math') {
+        const allMath = [
+          ...questions.map(q => ({ ...q, type: "math" as const })),
+          ...visualMathQuestions.map(q => ({ ...q, type: "math" as const })),
+          ...moreMathVisualQuestions.map(q => ({ ...q, type: "math" as const })),
+          ...additionalMathQuestions.map(q => ({ ...q, type: "math" as const })),
+        ];
+        const hardMath = allMath.filter(q => (q.difficultyRating || 5) >= minDifficulty);
+        const pool = hardMath.length >= count ? hardMath : allMath;
+        result[section.key] = shuffleAllQuestionOptions(sampleProportionally(pool, count, 'math'));
+      } else if (section.key === 'english') {
+        const allEnglish = [
+          ...englishQuestions.map(q => ({ ...q, type: "english" as const })),
+          ...hardEnglishQuestions.map(q => ({ ...q, type: "english" as const })),
+          ...visualEnglishQuestions.map(q => ({ ...q, type: "english" as const })),
+          ...moreEnglishVisualQuestions.map(q => ({ ...q, type: "english" as const })),
+        ];
+        const hardEnglish = allEnglish.filter(q => (q.difficultyRating || 5) >= minDifficulty);
+        const pool = hardEnglish.length >= count ? hardEnglish : allEnglish;
+        result[section.key] = shuffleAllQuestionOptions(sampleProportionally(pool, count, 'english'));
+      } else if (section.key === 'science') {
+        const allScience = actScienceQuestions.map(q => ({ ...q, type: "science" as const }));
+        const hardScience = allScience.filter(q => (q.difficultyRating || 5) >= minDifficulty);
+        const pool = hardScience.length >= count ? hardScience : allScience;
+        // Shuffle and pick
+        const shuffled = [...pool].sort(() => Math.random() - 0.5).slice(0, count);
+        result[section.key] = shuffleAllQuestionOptions(shuffled);
+      }
+    }
+
+    setSectionQuestions(result);
+  }, [ptConfig, minDifficulty]);
 
   useEffect(() => {
     generateTest();
@@ -98,12 +109,12 @@ const PracticeTest = () => {
     const timer = setInterval(() => {
       setTimeRemaining(prev => {
         if (prev <= 1) {
-          // Time's up for current section
-          if (currentSection === "math") {
-            setCurrentSection("english");
+          if (currentSectionIdx < ptConfig.sections.length - 1) {
+            const nextIdx = currentSectionIdx + 1;
+            setCurrentSectionIdx(nextIdx);
             setCurrentQuestionIndex(0);
             setSelectedAnswer(null);
-            return ENGLISH_TIME;
+            return ptConfig.sections[nextIdx].timeMinutes * 60;
           } else {
             finishTest();
             return 0;
@@ -114,29 +125,30 @@ const PracticeTest = () => {
     }, 1000);
 
     return () => clearInterval(timer);
-  }, [testStarted, showResults, currentSection]);
+  }, [testStarted, showResults, currentSectionIdx]);
 
-  const currentQuestions = currentSection === "math" ? mathQuestionsList : englishQuestionsList;
-  const currentQuestion = currentQuestions[currentQuestionIndex];
+  const currentQuestionsList = sectionQuestions[currentSection?.key] || [];
+  const currentQuestion = currentQuestionsList[currentQuestionIndex];
 
   const handleAnswer = (letter: string) => {
     if (!currentQuestion) return;
     setSelectedAnswer(letter);
     setAnswers(prev => ({
       ...prev,
-      [`${currentSection}-${currentQuestionIndex}`]: letter,
+      [`${currentSection.key}-${currentQuestionIndex}`]: letter,
     }));
   };
 
   const handleNext = () => {
-    if (currentQuestionIndex < currentQuestions.length - 1) {
+    if (currentQuestionIndex < currentQuestionsList.length - 1) {
       setCurrentQuestionIndex(prev => prev + 1);
-      setSelectedAnswer(answers[`${currentSection}-${currentQuestionIndex + 1}`] || null);
-    } else if (currentSection === "math") {
-      setCurrentSection("english");
+      setSelectedAnswer(answers[`${currentSection.key}-${currentQuestionIndex + 1}`] || null);
+    } else if (currentSectionIdx < ptConfig.sections.length - 1) {
+      const nextIdx = currentSectionIdx + 1;
+      setCurrentSectionIdx(nextIdx);
       setCurrentQuestionIndex(0);
-      setTimeRemaining(ENGLISH_TIME);
-      setSelectedAnswer(answers["english-0"] || null);
+      setTimeRemaining(ptConfig.sections[nextIdx].timeMinutes * 60);
+      setSelectedAnswer(answers[`${ptConfig.sections[nextIdx].key}-0`] || null);
     } else {
       finishTest();
     }
@@ -145,61 +157,48 @@ const PracticeTest = () => {
   const handlePrevious = () => {
     if (currentQuestionIndex > 0) {
       setCurrentQuestionIndex(prev => prev - 1);
-      setSelectedAnswer(answers[`${currentSection}-${currentQuestionIndex - 1}`] || null);
+      setSelectedAnswer(answers[`${currentSection.key}-${currentQuestionIndex - 1}`] || null);
     }
+  };
+
+  // Calculate scores per section
+  const getSectionResults = () => {
+    return ptConfig.sections.map(section => {
+      const qs = sectionQuestions[section.key] || [];
+      const correct = qs.filter((q, i) => answers[`${section.key}-${i}`] === q.correctAnswer).length;
+      const wrong = qs.length - correct;
+      const scaled = Math.max(ptConfig.minSectionScore, ptConfig.maxSectionScore - (wrong * ptConfig.penaltyPerWrong));
+      return { section, correct, wrong, scaled, total: qs.length };
+    });
   };
 
   const finishTest = async () => {
     setShowResults(true);
+    const results = getSectionResults();
+    const totalScore = results.reduce((sum, r) => sum + r.scaled, 0);
+    const mathResult = results.find(r => r.section.key === 'math');
+    const englishResult = results.find(r => r.section.key === 'english');
 
-    // Calculate scores
-    let mathCorrect = 0;
-    let englishCorrect = 0;
-
-    mathQuestionsList.forEach((q, i) => {
-      if (answers[`math-${i}`] === q.correctAnswer) mathCorrect++;
-    });
-    englishQuestionsList.forEach((q, i) => {
-      if (answers[`english-${i}`] === q.correctAnswer) englishCorrect++;
-    });
-
-    // Prediction scoring: Start at 800, lose 30 points per wrong answer per section
-    const mathWrong = mathQuestionsList.length - mathCorrect;
-    const englishWrong = englishQuestionsList.length - englishCorrect;
-    const mathScaled = Math.max(200, 800 - (mathWrong * 30));
-    const englishScaled = Math.max(200, 800 - (englishWrong * 30));
-    const totalScore = mathScaled + englishScaled;
-
-    // Save to database
     if (user) {
-      // Save practice test result
       await supabase.from("practice_tests").insert({
         user_id: user.id,
         test_type: "full",
-        math_score: mathScaled,
-        english_score: englishScaled,
+        math_score: mathResult?.scaled || 0,
+        english_score: englishResult?.scaled || 0,
         total_score: totalScore,
       });
 
-      // Save individual question attempts for analysis
-      const attempts = [
-        ...mathQuestionsList.map((q, i) => ({
+      const attempts = ptConfig.sections.flatMap(section => {
+        const qs = sectionQuestions[section.key] || [];
+        return qs.map((q, i) => ({
           user_id: user.id,
           question_id: q.id,
-          question_type: "math",
+          question_type: section.key === 'science' ? 'math' : section.key, // store science as math for DB compat
           domain: q.domain,
           skill: q.skill,
-          is_correct: answers[`math-${i}`] === q.correctAnswer,
-        })),
-        ...englishQuestionsList.map((q, i) => ({
-          user_id: user.id,
-          question_id: q.id,
-          question_type: "english",
-          domain: q.domain,
-          skill: q.skill,
-          is_correct: answers[`english-${i}`] === q.correctAnswer,
-        })),
-      ];
+          is_correct: answers[`${section.key}-${i}`] === q.correctAnswer,
+        }));
+      });
 
       await supabase.from("question_attempts").insert(attempts);
     }
@@ -211,14 +210,11 @@ const PracticeTest = () => {
     return `${m}:${s.toString().padStart(2, "0")}`;
   };
 
-  // Calculate results with prediction scoring
-  const mathCorrect = mathQuestionsList.filter((q, i) => answers[`math-${i}`] === q.correctAnswer).length;
-  const englishCorrect = englishQuestionsList.filter((q, i) => answers[`english-${i}`] === q.correctAnswer).length;
-  const mathWrong = mathQuestionsList.length - mathCorrect;
-  const englishWrong = englishQuestionsList.length - englishCorrect;
-  const mathScaled = Math.max(200, 800 - (mathWrong * 30));
-  const englishScaled = Math.max(200, 800 - (englishWrong * 30));
+  const results = getSectionResults();
+  const totalScore = results.reduce((sum, r) => sum + r.scaled, 0);
+  const totalWrong = results.reduce((sum, r) => sum + r.wrong, 0);
 
+  // Pre-test screen
   if (!testStarted) {
     return (
       <div className="min-h-screen bg-gradient-to-br from-background via-background to-primary/5 p-4">
@@ -231,33 +227,33 @@ const PracticeTest = () => {
           <div className="text-center mb-8">
             <div className="inline-flex items-center gap-3 mb-4">
               <Target className="w-10 h-10 text-primary" />
-              <h1 className="text-4xl font-bold">(20+20)² SAT Prediction</h1>
+              <h1 className="text-4xl font-bold">{ptConfig.testName}</h1>
             </div>
-            <p className="text-muted-foreground">Abbreviated test with hard questions to predict your score</p>
+            <p className="text-muted-foreground">
+              {examType === 'act' 
+                ? '3!×2 Science + 3!×2 Math + 3!×2 English — predict your ACT score' 
+                : `Abbreviated ${examConfig.shortName} test with hard questions to predict your score`}
+            </p>
           </div>
 
           <Card className="mb-6">
             <CardContent className="p-6 space-y-4">
-              <div className="grid grid-cols-2 gap-4 text-center">
-                <div className="p-4 rounded-lg bg-blue-500/10 border border-blue-500/20">
-                  <div className="text-2xl font-bold text-blue-500">20</div>
-                  <div className="text-sm text-muted-foreground">Hard Math</div>
-                  <div className="text-xs text-muted-foreground mt-1">25 minutes</div>
-                </div>
-                <div className="p-4 rounded-lg bg-green-500/10 border border-green-500/20">
-                  <div className="text-2xl font-bold text-green-500">20</div>
-                  <div className="text-sm text-muted-foreground">Hard English</div>
-                  <div className="text-xs text-muted-foreground mt-1">25 minutes</div>
-                </div>
+              <div className={`grid grid-cols-${ptConfig.sections.length} gap-4 text-center`}>
+                {ptConfig.sections.map(section => (
+                  <div key={section.key} className={`p-4 rounded-lg bg-${section.color}/10 border border-${section.color}/20`}>
+                    <div className={`text-2xl font-bold text-${section.color}`}>{section.questionsCount}</div>
+                    <div className="text-sm text-muted-foreground">{section.label}</div>
+                    <div className="text-xs text-muted-foreground mt-1">{section.timeMinutes} minutes</div>
+                  </div>
+                ))}
               </div>
 
               <div className="p-4 bg-muted/50 rounded-lg">
                 <h3 className="font-semibold mb-2">Prediction Scoring</h3>
                 <ul className="text-sm text-muted-foreground space-y-1">
-                  <li>• All correct = Predicted 1600</li>
-                  <li>• Each wrong answer = -30 points in that section</li>
-                  <li>• Example: 1 wrong in math = 770 Math + 800 English = 1570</li>
-                  <li>• Math section first, then English</li>
+                  {ptConfig.scoringExamples.map((ex, i) => (
+                    <li key={i}>• {ex}</li>
+                  ))}
                 </ul>
               </div>
 
@@ -272,7 +268,12 @@ const PracticeTest = () => {
     );
   }
 
+  // Results screen
   if (showResults) {
+    const allQuestions = ptConfig.sections.flatMap(section => 
+      (sectionQuestions[section.key] || []).map(q => ({ ...q, sectionKey: section.key }))
+    );
+
     return (
       <div className="min-h-screen bg-gradient-to-br from-background via-background to-primary/5 p-4">
         <div className="max-w-3xl mx-auto">
@@ -284,28 +285,29 @@ const PracticeTest = () => {
           <Card className="mb-6">
             <CardContent className="p-6">
               <div className="text-center mb-6">
-                <div className="text-6xl font-bold text-primary mb-2">{mathScaled + englishScaled}</div>
-                <div className="text-muted-foreground">Predicted SAT Score</div>
+                <div className="text-6xl font-bold text-primary mb-2">{totalScore}</div>
+                <div className="text-muted-foreground">Predicted {examConfig.shortName} Score</div>
               </div>
 
-              <div className="grid grid-cols-2 gap-4 mb-6">
-                <div className="text-center p-4 rounded-lg bg-blue-500/10">
-                  <div className="text-3xl font-bold text-blue-500">{mathScaled}</div>
-                  <div className="text-sm text-muted-foreground">Math ({mathCorrect}/20 correct, {mathWrong} wrong)</div>
-                </div>
-                <div className="text-center p-4 rounded-lg bg-green-500/10">
-                  <div className="text-3xl font-bold text-green-500">{englishScaled}</div>
-                  <div className="text-sm text-muted-foreground">English ({englishCorrect}/20 correct, {englishWrong} wrong)</div>
-                </div>
+              <div className={`grid grid-cols-${ptConfig.sections.length} gap-4 mb-6`}>
+                {results.map(r => (
+                  <div key={r.section.key} className={`text-center p-4 rounded-lg bg-${r.section.color}/10`}>
+                    <div className={`text-3xl font-bold text-${r.section.color}`}>{r.scaled}</div>
+                    <div className="text-sm text-muted-foreground">
+                      {r.section.label.replace('Hard ', '')} ({r.correct}/{r.total} correct, {r.wrong} wrong)
+                    </div>
+                  </div>
+                ))}
               </div>
 
               <div className="space-y-2">
-                <h3 className="font-semibold">Review Missed Questions ({mathWrong + englishWrong})</h3>
+                <h3 className="font-semibold">Review Missed Questions ({totalWrong})</h3>
                 <div className="space-y-3">
-                  {[...mathQuestionsList, ...englishQuestionsList].map((q, i) => {
-                    const section = i < mathQuestionsList.length ? "math" : "english";
-                    const idx = section === "math" ? i : i - mathQuestionsList.length;
-                    const userAnswer = answers[`${section}-${idx}`];
+                  {allQuestions.map((q) => {
+                    const sectionKey = q.sectionKey;
+                    const sectionQs = sectionQuestions[sectionKey] || [];
+                    const idx = sectionQs.findIndex(sq => sq.id === q.id);
+                    const userAnswer = answers[`${sectionKey}-${idx}`];
                     const isCorrect = userAnswer === q.correctAnswer;
                     
                     if (isCorrect) return null;
@@ -320,12 +322,8 @@ const PracticeTest = () => {
                       });
                     };
                     
-                    const userOption = q.options.find(o => o.letter === userAnswer);
-                    const correctOption = q.options.find(o => o.letter === q.correctAnswer);
-                    
                     return (
                       <div key={q.id} className="rounded-lg border border-border overflow-hidden">
-                        {/* Summary row */}
                         <button
                           onClick={toggleExpand}
                           className="w-full text-left p-3 sm:p-4 hover:bg-muted/50 transition-colors flex items-center gap-3"
@@ -335,15 +333,15 @@ const PracticeTest = () => {
                             <span className="text-sm line-clamp-2">{q.question}</span>
                           </div>
                           <div className="flex items-center gap-2 flex-shrink-0">
-                            <span className={`text-xs px-2 py-1 rounded ${section === "math" ? "bg-blue-500/20 text-blue-500" : "bg-green-500/20 text-green-500"}`}>
-                              {section}
+                            <span className={`text-xs px-2 py-1 rounded bg-${ptConfig.sections.find(s => s.key === sectionKey)?.color || 'primary'}/20 text-${ptConfig.sections.find(s => s.key === sectionKey)?.color || 'primary'}`}>
+                              {sectionKey}
                             </span>
                             <Button
                               variant="ghost"
                               size="sm"
                               onClick={(e) => {
                                 e.stopPropagation();
-                                setFlagQuestionData({ id: q.id, type: section as 'math' | 'english' });
+                                setFlagQuestionData({ id: q.id, type: sectionKey as any });
                                 setIsFlagModalOpen(true);
                               }}
                               className="h-7 w-7 p-0"
@@ -355,23 +353,19 @@ const PracticeTest = () => {
                           </div>
                         </button>
 
-                        {/* Expanded detail */}
                         {isExpanded && (
                           <div className="border-t border-border p-3 sm:p-4 space-y-3 bg-muted/30">
-                            {/* Full question */}
                             <div>
                               <p className="text-sm font-medium text-muted-foreground mb-1">{q.domain} • {q.skill}</p>
                               <p className="text-sm sm:text-base">{q.question}</p>
                             </div>
 
-                            {/* Visual if present */}
                             {q.visual && (
                               <div className="rounded-lg overflow-hidden border">
                                 <QuestionVisual visual={q.visual} />
                               </div>
                             )}
 
-                            {/* Answer comparison */}
                             <div className="space-y-2">
                               {q.options.map((option) => {
                                 const isUserAnswer = option.letter === userAnswer;
@@ -398,13 +392,11 @@ const PracticeTest = () => {
                               })}
                             </div>
 
-                            {/* Explanation */}
                             <div className="p-3 bg-muted rounded-lg">
                               <p className="text-xs font-semibold mb-1 text-foreground">Explanation:</p>
                               <p className="text-xs sm:text-sm text-muted-foreground leading-relaxed">{q.explanation}</p>
                             </div>
 
-                            {/* AI Tutor button */}
                             <Button
                               variant="outline"
                               size="sm"
@@ -423,7 +415,7 @@ const PracticeTest = () => {
                     );
                   })}
                   
-                  {mathWrong + englishWrong === 0 && (
+                  {totalWrong === 0 && (
                     <div className="text-center p-6 text-muted-foreground">
                       <CheckCircle2 className="w-10 h-10 text-success mx-auto mb-2" />
                       <p className="font-medium">Perfect score! No missed questions.</p>
@@ -439,7 +431,12 @@ const PracticeTest = () => {
               question={reviewQuestion.question}
               options={reviewQuestion.options}
               correctAnswer={reviewQuestion.correctAnswer}
-              userAnswer={answers[`${reviewQuestion.type}-${(reviewQuestion.type === "math" ? mathQuestionsList : englishQuestionsList).findIndex(q => q.id === reviewQuestion.id)}`] || ""}
+              userAnswer={(() => {
+                const sectionKey = reviewQuestion.type;
+                const qs = sectionQuestions[sectionKey] || [];
+                const idx = qs.findIndex(q => q.id === reviewQuestion.id);
+                return answers[`${sectionKey}-${idx}`] || "";
+              })()}
               explanation={reviewQuestion.explanation}
               onClose={() => {
                 setShowAITutor(false);
@@ -475,19 +472,20 @@ const PracticeTest = () => {
   }
 
   // Test in progress
+  const isLastSection = currentSectionIdx === ptConfig.sections.length - 1;
+  const isLastQuestion = currentQuestionIndex === currentQuestionsList.length - 1;
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-background via-background to-primary/5 p-4">
       <div className="max-w-3xl mx-auto">
         {/* Header */}
         <div className="flex items-center justify-between mb-4">
           <div className="flex items-center gap-4">
-            <span className={`px-3 py-1 rounded-full text-sm font-medium ${
-              currentSection === "math" ? "bg-blue-500/20 text-blue-500" : "bg-green-500/20 text-green-500"
-            }`}>
-              {currentSection === "math" ? "Math" : "English"}
+            <span className={`px-3 py-1 rounded-full text-sm font-medium bg-${currentSection.color}/20 text-${currentSection.color}`}>
+              {currentSection.label.replace('Hard ', '')}
             </span>
             <span className="text-sm text-muted-foreground">
-              {currentQuestionIndex + 1} of {currentQuestions.length}
+              {currentQuestionIndex + 1} of {currentQuestionsList.length}
             </span>
           </div>
           <div className={`flex items-center gap-2 font-mono text-lg ${timeRemaining < 300 ? "text-destructive" : ""}`}>
@@ -497,7 +495,7 @@ const PracticeTest = () => {
         </div>
 
         <Progress 
-          value={(currentQuestionIndex / currentQuestions.length) * 100} 
+          value={(currentQuestionIndex / currentQuestionsList.length) * 100} 
           className="mb-6"
         />
 
@@ -537,18 +535,17 @@ const PracticeTest = () => {
           <Button 
             variant="outline" 
             onClick={handlePrevious}
-            disabled={currentQuestionIndex === 0 && currentSection === "math"}
+            disabled={currentQuestionIndex === 0 && currentSectionIdx === 0}
           >
             Previous
           </Button>
           
-          {/* Flag button during test */}
           {currentQuestion && (
             <Button
               variant="ghost"
               size="sm"
               onClick={() => {
-                setFlagQuestionData({ id: currentQuestion.id, type: currentSection });
+                setFlagQuestionData({ id: currentQuestion.id, type: currentSection.key as any });
                 setIsFlagModalOpen(true);
               }}
               className="text-muted-foreground hover:text-orange-500"
@@ -560,13 +557,10 @@ const PracticeTest = () => {
           )}
           
           <Button onClick={handleNext}>
-            {currentQuestionIndex === currentQuestions.length - 1 && currentSection === "english" 
-              ? "Finish Test" 
-              : "Next"}
+            {isLastQuestion && isLastSection ? "Finish Test" : "Next"}
           </Button>
         </div>
 
-        {/* Flag Question Modal for during test */}
         <FlagQuestionModal
           isOpen={isFlagModalOpen}
           onClose={() => {
@@ -577,7 +571,6 @@ const PracticeTest = () => {
           questionType={flagQuestionData?.type || 'math'}
         />
 
-        {/* Desmos Calculator */}
         <DesmosCalculator />
       </div>
     </div>

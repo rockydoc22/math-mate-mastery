@@ -12,7 +12,7 @@
  * 3. Master Your Weaknesses (correct): 1.5x
  * 4. Fight Club Participation: 1.1x per question
  * 5. Fight Club Win: 1.3x bonus on all questions
- * 6. Prediction Test (20+20): 1.5x per question + flat bonus for completion
+ * 6. Prediction Test: 1.5x per question + flat bonus for completion
  */
 
 export type AcceleratorType = 
