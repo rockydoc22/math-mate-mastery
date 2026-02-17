@@ -1,7 +1,7 @@
 import { TrendingUp, Award, BookOpen, Calculator } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { getSkillLevel } from '@/utils/eloRating';
-import { ratingToExamScore, type ExamType } from '@/utils/examConfig';
+import { ratingToExamScore, EXAM_CONFIGS, type ExamType } from '@/utils/examConfig';
 import { cn } from '@/lib/utils';
 
 interface SkillRatingCardProps {
@@ -34,7 +34,7 @@ function RatingBadge({
       </div>
       <div className={cn("text-2xl font-bold", color)}>{rating}</div>
       <div className="text-xs text-muted-foreground mt-1">
-        {level} • SAT {min}-{max}
+        {level} • {EXAM_CONFIGS[examType].shortName} {min}-{max}
       </div>
     </div>
   );
