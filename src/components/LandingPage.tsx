@@ -197,7 +197,7 @@ export const LandingPage = () => {
                      <span className="text-sm font-bold text-muted-foreground">{i + 1}</span>}
                   </div>
                   <span className="text-lg">{player.avatar_emoji || "👤"}</span>
-                  <span className="font-medium flex-1">{player.username}</span>
+                  <span className="font-semibold text-lg flex-1">{player.username}</span>
                   <span className="font-bold text-primary">{player.total_score}</span>
                 </div>
               ))}
