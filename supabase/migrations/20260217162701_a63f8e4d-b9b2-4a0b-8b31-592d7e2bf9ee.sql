@@ -1,0 +1,1 @@
+DELETE FROM email_rate_limits;
