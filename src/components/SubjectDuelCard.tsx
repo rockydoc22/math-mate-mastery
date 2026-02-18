@@ -11,36 +11,33 @@ interface SubjectDuelCardProps {
 export const SubjectDuelCard = ({ mathRating, englishRating, examType = 'sat' }: SubjectDuelCardProps) => {
   const config = EXAM_CONFIGS[examType];
   const sectionMax = config.sectionScoreRange.max;
-  const sectionMin = config.sectionScoreRange.min;
   const totalMax = config.scoreRange.max;
 
-  // Convert ELO ratings to section-level exam scores
   const mathScore = ratingToExamScore(mathRating, examType);
   const englishScore = ratingToExamScore(englishRating, examType);
   const mathDisplay = Math.round((mathScore.min + mathScore.max) / 2);
   const englishDisplay = Math.round((englishScore.min + englishScore.max) / 2);
 
-  // For ACT, each section is out of 36 (composite), but section score range is 1-36
-  // For SAT/PSAT, each section is out of 800/760
+  // Section-level scores (SAT/PSAT: half of total, ACT: same as composite)
   const mathSection = examType === 'act' ? mathDisplay : Math.round(mathDisplay / 2);
   const englishSection = examType === 'act' ? englishDisplay : Math.round(englishDisplay / 2);
-
-  const mathPercent = Math.round(((mathSection - sectionMin) / (sectionMax - sectionMin)) * 100);
-  const englishPercent = Math.round(((englishSection - sectionMin) / (sectionMax - sectionMin)) * 100);
 
   const combined = mathSection + englishSection;
   const gap = totalMax - combined;
 
+  const mathPercent = Math.round((mathSection / (mathSection + englishSection)) * 100);
+  const englishPercent = 100 - mathPercent;
+
   const getMessage = () => {
-    if (gap <= 0) return "You're projected at the top! Keep it up! 🏆";
+    if (gap <= 0) return "You're at the top! Keep it up! 🏆";
     const mathGap = sectionMax - mathSection;
     const englishGap = sectionMax - englishSection;
-    if (mathGap > englishGap) {
-      return `Math has the most room to grow (+${mathGap}). Focus there! 🧮`;
-    } else if (englishGap > mathGap) {
-      return `English has the most room to grow (+${englishGap}). Focus there! 📚`;
+    if (mathGap > englishGap + (examType === 'act' ? 2 : 30)) {
+      return `Math has more room to grow (+${mathGap}). Focus there! 🧮`;
+    } else if (englishGap > mathGap + (examType === 'act' ? 2 : 30)) {
+      return `English has more room to grow (+${englishGap}). Focus there! 📚`;
     }
-    return `Both subjects are even — keep pushing both! 💪`;
+    return "Your Math and English are neck and neck! 🤝";
   };
 
   return (
@@ -55,46 +52,30 @@ export const SubjectDuelCard = ({ mathRating, englishRating, examType = 'sat' }:
         </span>
       </div>
 
-      {/* Math bar */}
-      <div className="mb-3">
-        <div className="flex justify-between text-xs mb-1">
-          <span className="font-medium">🧮 Math</span>
-          <span className="text-muted-foreground">{mathSection} / {sectionMax}</span>
+      {/* Single-line bar */}
+      <div className="flex rounded-full overflow-hidden h-6 mb-3">
+        <div
+          className="bg-primary flex items-center justify-center text-xs font-bold text-primary-foreground transition-all duration-500"
+          style={{ width: `${mathPercent}%` }}
+        >
+          {mathSection}/{sectionMax}
         </div>
-        <div className="h-5 rounded-full bg-muted overflow-hidden">
-          <div
-            className="h-full rounded-full bg-primary transition-all duration-500 flex items-center justify-end pr-2"
-            style={{ width: `${Math.max(mathPercent, 5)}%` }}
-          >
-            {mathPercent > 20 && (
-              <span className="text-[10px] font-bold text-primary-foreground">{mathSection}</span>
-            )}
-          </div>
+        <div
+          className="bg-secondary flex items-center justify-center text-xs font-bold text-secondary-foreground transition-all duration-500"
+          style={{ width: `${englishPercent}%` }}
+        >
+          {englishSection}/{sectionMax}
         </div>
       </div>
 
-      {/* English bar */}
-      <div className="mb-3">
-        <div className="flex justify-between text-xs mb-1">
-          <span className="font-medium">📚 English</span>
-          <span className="text-muted-foreground">{englishSection} / {sectionMax}</span>
-        </div>
-        <div className="h-5 rounded-full bg-muted overflow-hidden">
-          <div
-            className="h-full rounded-full bg-secondary transition-all duration-500 flex items-center justify-end pr-2"
-            style={{ width: `${Math.max(englishPercent, 5)}%` }}
-          >
-            {englishPercent > 20 && (
-              <span className="text-[10px] font-bold text-secondary-foreground">{englishSection}</span>
-            )}
-          </div>
-        </div>
+      <div className="flex justify-between text-xs text-muted-foreground mb-2">
+        <span>🧮 Math</span>
+        <span>📚 English</span>
       </div>
 
-      {/* Gap indicator */}
       {gap > 0 && (
-        <div className="text-center text-xs text-muted-foreground mb-2">
-          <span className="font-semibold text-primary">+{gap}</span> points to reach {totalMax}
+        <div className="text-center text-xs text-muted-foreground mb-1">
+          <span className="font-semibold text-primary">+{gap}</span> to reach {totalMax}
         </div>
       )}
 
