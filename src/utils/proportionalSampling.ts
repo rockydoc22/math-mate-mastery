@@ -234,8 +234,15 @@ export function sampleProportionally<T extends QuestionLike>(
     selected.push(...shuffledUnused.slice(0, remaining));
   }
   
+  // Guarantee exact count (trim if rounding caused overshoot)
+  const finalSelection = selected.slice(0, count);
+  
+  if (finalSelection.length < count) {
+    console.warn(`[proportionalSampling] Only got ${finalSelection.length}/${count} from ${type} pool of ${questions.length}`);
+  }
+  
   // Final shuffle to mix domains together
-  return shuffle(selected);
+  return shuffle(finalSelection);
 }
 
 /**

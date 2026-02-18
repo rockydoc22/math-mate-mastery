@@ -164,8 +164,6 @@ const Quiz = () => {
             const perSubject = Math.floor(count / 3);
             const remainder = count - perSubject * 3;
             
-            // For small counts (e.g. Sprint 5), use simple shuffle instead of proportional sampling
-            // since sampleProportionally can return 0 when count=1 due to rounding
             const mathSelected = perSubject <= 2
               ? shuffleArray(mathPool).slice(0, perSubject)
               : sampleProportionally(mathPool, perSubject, 'math');
@@ -175,17 +173,17 @@ const Quiz = () => {
             const scienceSelected = shuffleArray(sciencePool).slice(0, perSubject + remainder);
             
             selected = [...mathSelected, ...englishSelected, ...scienceSelected];
-            
-            // Backfill if we didn't get enough questions
-            if (selected.length < count) {
-              const selectedIds = new Set(selected.map(q => q.id));
-              const backfill = shuffleArray(filtered.filter(q => !selectedIds.has(q.id)));
-              selected = [...selected, ...backfill.slice(0, count - selected.length)];
-            }
           } else {
+            // SAT/PSAT: split 50/50 between math and english
             const mathCount = Math.ceil(count / 2);
             const englishCount = count - mathCount;
-            selected = [...sampleProportionally(mathPool, mathCount, 'math'), ...sampleProportionally(englishPool, englishCount, 'english')];
+            const mathSelected = mathCount <= 2
+              ? shuffleArray(mathPool).slice(0, mathCount)
+              : sampleProportionally(mathPool, mathCount, 'math');
+            const englishSelected = englishCount <= 2
+              ? shuffleArray(englishPool).slice(0, englishCount)
+              : sampleProportionally(englishPool, englishCount, 'english');
+            selected = [...mathSelected, ...englishSelected];
           }
         } else if (subject === "math") {
           selected = count <= 2
@@ -200,13 +198,21 @@ const Quiz = () => {
           selected = shuffleArray(sciencePool).slice(0, count);
         }
         
-        // Ensure we always have exactly `count` questions
+        // GUARANTEE exact count: backfill from full filtered pool, then dedupedPool as fallback
         if (selected.length < count) {
+          console.warn(`[Quiz] Only selected ${selected.length}/${count} questions initially, backfilling...`);
           const selectedIds = new Set(selected.map(q => q.id));
           const backfill = shuffleArray(filtered.filter(q => !selectedIds.has(q.id)));
           selected = [...selected, ...backfill.slice(0, count - selected.length)];
         }
+        if (selected.length < count) {
+          // Ultimate fallback: use entire deduped pool
+          const selectedIds = new Set(selected.map(q => q.id));
+          const fallback = shuffleArray(dedupedPool.filter(q => !selectedIds.has(q.id)));
+          selected = [...selected, ...fallback.slice(0, count - selected.length)];
+        }
         
+        console.log(`[Quiz] Final question count: ${Math.min(selected.length, count)}/${count} (${examType} ${subject})`);
         setQuizQuestions(shuffleAllQuestionOptions(shuffleArray(selected.slice(0, count))));
         setIsLoading(false);
         return;
