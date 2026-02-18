@@ -14,18 +14,14 @@ import { FeedbackButton } from "@/components/FeedbackButton";
 import { InstallAppButton } from "@/components/InstallAppButton";
 import { ShareAppButton } from "@/components/ShareAppButton";
 import upwardCurveIcon from "@/assets/upward-curve-icon.png";
-// Official SAT dates for 2025-2026
+// Official SAT dates: https://satsuite.collegeboard.org/sat/dates-deadlines
 const upcomingSATDates = [
-  new Date("2025-03-08"),
-  new Date("2025-05-03"),
-  new Date("2025-06-07"),
   new Date("2026-03-14"),
   new Date("2026-05-02"),
   new Date("2026-06-06"),
-  new Date("2026-08-29"),
+  new Date("2026-08-22"),
+  new Date("2026-09-12"),
   new Date("2026-10-03"),
-  new Date("2026-11-07"),
-  new Date("2026-12-05"),
 ];
 
 function getNextSATDate(): { date: Date; daysUntil: number } {

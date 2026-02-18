@@ -10,17 +10,13 @@ export interface SATTestDate {
 }
 
 export const SAT_TEST_DATES: SATTestDate[] = [
+  // SAT: https://satsuite.collegeboard.org/sat/dates-deadlines
   { date: "2026-03-14", label: "March 14, 2026" },
   { date: "2026-05-02", label: "May 2, 2026" },
   { date: "2026-06-06", label: "June 6, 2026" },
-  { date: "2026-08-15", label: "August 15, 2026" },
+  { date: "2026-08-22", label: "August 22, 2026" },
   { date: "2026-09-12", label: "September 12, 2026" },
   { date: "2026-10-03", label: "October 3, 2026" },
-  { date: "2026-11-07", label: "November 7, 2026" },
-  { date: "2026-12-05", label: "December 5, 2026" },
-  { date: "2027-03-13", label: "March 13, 2027" },
-  { date: "2027-05-01", label: "May 1, 2027" },
-  { date: "2027-06-05", label: "June 5, 2027" },
 ];
 
 /**
