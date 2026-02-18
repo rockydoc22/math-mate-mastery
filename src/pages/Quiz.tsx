@@ -29,6 +29,7 @@ import { PerfectStreakDisplay } from "@/components/PerfectStreakDisplay";
 import { useExamType } from "@/hooks/useExamType";
 import { EXAM_CONFIGS } from "@/utils/examConfig";
 import { actScienceQuestions } from "@/data/actScienceQuestions";
+import { interleaveQuestions } from "@/utils/questionInterleaver";
 
 type CombinedQuestion = (Question | EnglishQuestion | VisualQuestion | ImageQuestion) & { type: "math" | "english" | "science"; difficultyRating?: number };
 
@@ -213,7 +214,7 @@ const Quiz = () => {
         }
         
         console.log(`[Quiz] Final question count: ${Math.min(selected.length, count)}/${count} (${examType} ${subject})`);
-        setQuizQuestions(shuffleAllQuestionOptions(shuffleArray(selected.slice(0, count))));
+        setQuizQuestions(shuffleAllQuestionOptions(interleaveQuestions(selected.slice(0, count))));
         setIsLoading(false);
         return;
       }
@@ -231,7 +232,7 @@ const Quiz = () => {
         const remaining = shuffleArray(filtered.filter(q => !usedIds.has(q.id)));
         combined = [...combined, ...remaining.slice(0, count - combined.length)];
       }
-      setQuizQuestions(shuffleAllQuestionOptions(shuffleArray(combined.slice(0, count))));
+      setQuizQuestions(shuffleAllQuestionOptions(interleaveQuestions(combined.slice(0, count))));
       setIsLoading(false);
     }, 50); // Small delay to let the UI render first
     return () => clearTimeout(timer);
