@@ -42,30 +42,45 @@ const motivationalMessages = [
   "1600 club awaits. Take the first step!",
 ];
 
-// Official SAT dates for 2025-2026
+// Official exam test dates by type
+// SAT: https://satsuite.collegeboard.org/sat/dates-deadlines
 const upcomingSATDates = [
-  new Date("2025-03-08"),
-  new Date("2025-05-03"),
-  new Date("2025-06-07"),
   new Date("2026-03-14"),
   new Date("2026-05-02"),
   new Date("2026-06-06"),
-  new Date("2026-08-29"),
+  new Date("2026-08-22"),
+  new Date("2026-09-12"),
   new Date("2026-10-03"),
-  new Date("2026-11-07"),
-  new Date("2026-12-05"),
 ];
 
-function getNextSATDate(): { date: Date; daysUntil: number } {
+// ACT: https://www.act.org/content/act/en/products-and-services/the-act/registration/test-dates.html
+const upcomingACTDates = [
+  new Date("2026-04-11"),
+  new Date("2026-06-13"),
+  new Date("2026-07-11"),
+];
+
+// PSAT/NMSQT: https://satsuite.collegeboard.org/psat-nmsqt/test-dates
+// PSAT 10: https://satsuite.collegeboard.org/psat-10/test-dates
+const upcomingPSATDates = [
+  new Date("2026-10-01"), // PSAT/NMSQT window: October 1–30, 2026
+];
+
+function getNextExamDate(examType: string): { date: Date; daysUntil: number } {
+  const dates = examType === 'act' ? upcomingACTDates
+    : examType === 'psat' ? upcomingPSATDates
+    : upcomingSATDates;
+  
   const now = new Date();
-  for (const satDate of upcomingSATDates) {
-    if (satDate > now) {
-      const daysUntil = Math.ceil((satDate.getTime() - now.getTime()) / (1000 * 60 * 60 * 24));
-      return { date: satDate, daysUntil };
+  for (const examDate of dates) {
+    if (examDate > now) {
+      const daysUntil = Math.ceil((examDate.getTime() - now.getTime()) / (1000 * 60 * 60 * 24));
+      return { date: examDate, daysUntil };
     }
   }
-  // Fallback to first date if all passed
-  return { date: upcomingSATDates[0], daysUntil: 0 };
+  // Fallback to last date if all passed
+  const last = dates[dates.length - 1];
+  return { date: last, daysUntil: 0 };
 }
 
 interface LeaderboardEntry {
@@ -95,7 +110,7 @@ const Home = () => {
   const { streak: perfectStreak } = usePerfectStreak();
 
   // Next SAT date countdown
-  const nextSAT = getNextSATDate();
+  const nextSAT = getNextExamDate(examType);
 
   // Fetch player stats for Boss Arena
   useEffect(() => {

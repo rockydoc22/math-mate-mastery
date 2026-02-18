@@ -33,25 +33,36 @@ const MATH_TOPIC_CATEGORIES: { id: number; label: string; keywords: string[] }[]
   { id: 22, label: "Coordinate geometry",      keywords: ["distance", "midpoint", "coordinate", "point", "plane"] },
 ];
 
-// ── English topic categories ───────────────────────────────────────────────
+// ── English topic categories (17 groups matching SAT/PSAT/ACT English) ─────
 const ENGLISH_TOPIC_CATEGORIES: { id: number; label: string; keywords: string[] }[] = [
-  { id: 101, label: "Vocabulary in context",  keywords: ["context", "vocabulary", "word", "meaning", "most nearly means"] },
-  { id: 102, label: "Text structure",          keywords: ["structure", "organization", "paragraph", "serve", "function"] },
-  { id: 103, label: "Purpose & tone",          keywords: ["purpose", "tone", "author", "perspective", "attitude"] },
-  { id: 104, label: "Connecting texts",        keywords: ["compare", "contrast", "relate", "both", "passages"] },
-  { id: 105, label: "Central ideas",           keywords: ["central idea", "main idea", "theme", "summary", "primarily"] },
-  { id: 106, label: "Inferences",              keywords: ["infer", "imply", "suggest", "conclude", "most likely"] },
-  { id: 107, label: "Evidence analysis",       keywords: ["evidence", "support", "which choice", "best supports", "quotation"] },
-  { id: 108, label: "Punctuation & grammar",   keywords: ["punctuation", "comma", "semicolon", "colon", "dash", "grammar", "pronoun", "verb", "tense", "agreement"] },
-  { id: 109, label: "Sentence structure",      keywords: ["sentence", "fragment", "run-on", "modifier", "parallel", "dangling"] },
-  { id: 110, label: "Transitions & revision",  keywords: ["transition", "however", "therefore", "moreover", "revision", "improve", "effective"] },
+  { id: 101, label: "Vocabulary in context",      keywords: ["context", "vocabulary", "word", "meaning", "most nearly means", "closest in meaning"] },
+  { id: 102, label: "Text structure & purpose",    keywords: ["structure", "organization", "paragraph", "function", "purpose", "serve"] },
+  { id: 103, label: "Author tone & perspective",   keywords: ["tone", "author", "perspective", "attitude", "point of view", "rhetorical"] },
+  { id: 104, label: "Connecting passages",          keywords: ["compare", "contrast", "relate", "both passages", "cross-text", "connection"] },
+  { id: 105, label: "Central ideas & themes",       keywords: ["central idea", "main idea", "theme", "summary", "primarily", "overall"] },
+  { id: 106, label: "Comprehension & detail",       keywords: ["comprehension", "according to", "stated", "detail", "explicitly", "describes"] },
+  { id: 107, label: "Inferences",                   keywords: ["infer", "imply", "suggest", "conclude", "most likely", "reasonable"] },
+  { id: 108, label: "Textual evidence",             keywords: ["evidence", "support", "which choice", "best supports", "quotation", "lines"] },
+  { id: 109, label: "Quantitative evidence",        keywords: ["quantitative", "table", "graph", "figure", "data", "chart"] },
+  { id: 110, label: "Punctuation",                  keywords: ["punctuation", "comma", "semicolon", "colon", "dash", "apostrophe"] },
+  { id: 111, label: "Sentence structure",            keywords: ["sentence", "fragment", "run-on", "clause", "dependent", "independent"] },
+  { id: 112, label: "Pronoun agreement",             keywords: ["pronoun", "agreement", "antecedent", "its", "their", "whom"] },
+  { id: 113, label: "Verb tense & form",             keywords: ["verb", "tense", "past", "present", "future", "has been", "had been", "subject-verb"] },
+  { id: 114, label: "Modifiers & parallelism",       keywords: ["modifier", "parallel", "dangling", "misplaced", "parallelism", "balanced"] },
+  { id: 115, label: "Transitions",                   keywords: ["transition", "however", "therefore", "moreover", "furthermore", "consequently", "nevertheless"] },
+  { id: 116, label: "Writing revision & clarity",    keywords: ["revision", "improve", "effective", "concise", "clarity", "combine", "rewrite"] },
+  { id: 117, label: "Expression of ideas",           keywords: ["expression", "rhetorical", "synthesis", "develop", "elaborate", "strengthen"] },
 ];
 
-// ── Science topic categories (ACT) ─────────────────────────────────────────
+// ── Science topic categories (ACT - 7 groups) ─────────────────────────────
 const SCIENCE_TOPIC_CATEGORIES: { id: number; label: string; keywords: string[] }[] = [
-  { id: 201, label: "Data representation",     keywords: ["data", "table", "graph", "chart", "figure", "trend"] },
-  { id: 202, label: "Research summaries",      keywords: ["experiment", "study", "researcher", "hypothesis", "procedure", "trial"] },
-  { id: 203, label: "Conflicting viewpoints",  keywords: ["scientist", "student", "viewpoint", "disagree", "theory", "model"] },
+  { id: 201, label: "Data representation",     keywords: ["data", "table", "graph", "chart", "figure", "trend", "plot", "bar", "line"] },
+  { id: 202, label: "Research design",         keywords: ["experiment", "procedure", "control", "variable", "method", "trial", "setup"] },
+  { id: 203, label: "Hypothesis & prediction", keywords: ["hypothesis", "predict", "expect", "if...then", "assumption", "would"] },
+  { id: 204, label: "Conflicting viewpoints",  keywords: ["scientist", "student", "viewpoint", "disagree", "theory", "model", "argue"] },
+  { id: 205, label: "Biology & ecology",       keywords: ["species", "organism", "cell", "population", "ecosystem", "gene", "photosynthesis", "enzyme", "protein"] },
+  { id: 206, label: "Chemistry & matter",      keywords: ["chemical", "reaction", "acid", "base", "pH", "molecule", "element", "compound", "solution", "concentration"] },
+  { id: 207, label: "Physics & earth science", keywords: ["force", "energy", "velocity", "wave", "temperature", "pressure", "magnetic", "electric", "geology", "weather", "atmosphere"] },
 ];
 
 type QuestionLike = {
