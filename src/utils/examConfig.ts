@@ -156,20 +156,20 @@ export const EXAM_CONFIGS: Record<ExamType, ExamConfig> = {
 };
 
 // Convert an ELO rating to exam-specific projected score
+// ELO range is 400-2000; map that to the exam's full score range
 export function ratingToExamScore(rating: number, examType: ExamType): { min: number; max: number } {
   const config = EXAM_CONFIGS[examType];
+  const clamped = Math.max(400, Math.min(2000, rating));
+  const normalized = (clamped - 400) / 1600; // 0..1 across full ELO range
 
   if (examType === 'act') {
-    // ACT: map ELO 800-1600 → 15-36
-    const normalized = Math.max(0, Math.min(1, (rating - 800) / 800));
-    const score = Math.round(15 + normalized * 21);
+    const score = Math.round(1 + normalized * 35); // 1-36
     return { min: Math.max(1, score - 1), max: Math.min(36, score + 1) };
   }
 
-  // SAT/PSAT: linear map from ELO
+  // SAT/PSAT
   const { min, max } = config.scoreRange;
   const range = max - min;
-  const normalized = Math.max(0, Math.min(1, (rating - 800) / 800));
   const score = Math.round(min + normalized * range);
   const margin = Math.round(range * 0.03);
   return {
