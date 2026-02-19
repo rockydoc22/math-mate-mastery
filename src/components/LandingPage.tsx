@@ -7,7 +7,8 @@ import {
   Brain, Swords, Crown, Medal
 } from "lucide-react";
 import { Link, useNavigate } from "react-router-dom";
-import { APP_VERSION } from "@/hooks/usePWAUpdate";
+import { usePWAUpdate, APP_VERSION } from "@/hooks/usePWAUpdate";
+import { RefreshCw } from "lucide-react";
 import { supabase } from "@/integrations/supabase/client";
 import { lovable } from "@/integrations/lovable";
 import { SATMasteryLogo } from "@/components/SATMasteryLogo";
@@ -83,6 +84,7 @@ export const LandingPage = () => {
   const nextSAT = getNextSATDate();
   const [topPlayers, setTopPlayers] = useState<{ username: string; total_score: number; avatar_emoji: string | null }[]>([]);
   const [oauthLoading, setOauthLoading] = useState(false);
+  const { forceUpdate, isUpdating, hasUpdate } = usePWAUpdate();
 
   useEffect(() => {
     const fetchTop = async () => {
@@ -118,6 +120,21 @@ export const LandingPage = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-background via-primary/5 to-accent/10">
+      {/* PWA Update Banner */}
+      {hasUpdate && (
+        <div className="px-4 py-2 bg-primary/10 text-center">
+          <Button
+            onClick={forceUpdate}
+            disabled={isUpdating}
+            variant="default"
+            size="sm"
+            className="gap-2"
+          >
+            <RefreshCw className={`w-4 h-4 ${isUpdating ? "animate-spin" : ""}`} />
+            {isUpdating ? "Updating..." : "Update PWA"}
+          </Button>
+        </div>
+      )}
       {/* Hero Section */}
       <header className="px-4 pt-8 pb-12 text-center">
         <div className="max-w-2xl mx-auto">
