@@ -211,26 +211,6 @@ export const LandingPage = () => {
         </div>
       </header>
 
-      {/* Social Proof */}
-      <section className="px-4 py-8 bg-muted/30">
-        <div className="max-w-2xl mx-auto text-center">
-          <div className="flex items-center justify-center gap-8 flex-wrap">
-            <div>
-              <div className="text-2xl font-bold text-primary">10,000+</div>
-              <div className="text-xs text-muted-foreground">Questions Answered</div>
-            </div>
-            <div>
-              <div className="text-2xl font-bold text-primary">500+</div>
-              <div className="text-xs text-muted-foreground">Students</div>
-            </div>
-            <div>
-              <div className="text-2xl font-bold text-primary">150+</div>
-              <div className="text-xs text-muted-foreground">Avg Score Increase</div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Top Players */}
       {topPlayers.length > 0 && (
         <section className="px-4 py-8">
@@ -257,6 +237,26 @@ export const LandingPage = () => {
           </div>
         </section>
       )}
+
+      {/* Social Proof */}
+      <section className="px-4 py-8 bg-muted/30">
+        <div className="max-w-2xl mx-auto text-center">
+          <div className="flex items-center justify-center gap-8 flex-wrap">
+            <div>
+              <div className="text-2xl font-bold text-primary">10,000+</div>
+              <div className="text-xs text-muted-foreground">Questions Answered</div>
+            </div>
+            <div>
+              <div className="text-2xl font-bold text-primary">500+</div>
+              <div className="text-xs text-muted-foreground">Students</div>
+            </div>
+            <div>
+              <div className="text-2xl font-bold text-primary">150+</div>
+              <div className="text-xs text-muted-foreground">Avg Score Increase</div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* Features */}
       <section className="px-4 py-12">

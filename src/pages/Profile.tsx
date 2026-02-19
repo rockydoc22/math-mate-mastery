@@ -14,7 +14,7 @@ import { toast } from "@/hooks/use-toast";
 import { XPBar } from "@/components/XPBar";
 import { AchievementBadge } from "@/components/AchievementBadge";
 import { StreakBadge } from "@/components/StreakBadge";
-import { SkillRatingCard } from "@/components/SkillRatingCard";
+
 import { PWAUpdateButton } from "@/components/PWAUpdateButton";
 import { FighterCustomizer } from "@/components/FighterCustomizer";
 import { FighterVisual } from "@/components/FighterVisual";
@@ -165,15 +165,6 @@ const Profile = () => {
           <FighterCustomizer achievements={achievements} />
         </Card>
 
-        {/* Skill Rating */}
-        {ratings && (
-          <SkillRatingCard
-            mathRating={ratings.mathRating}
-            englishRating={ratings.englishRating}
-            overallRating={ratings.overallRating}
-            examType={examType}
-          />
-        )}
 
         {/* Achievements */}
         <Card className="p-6">
