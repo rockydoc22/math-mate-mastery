@@ -18,7 +18,7 @@ import { useQuizTimer } from "@/hooks/useQuizTimer";
 import { DifficultyRange, filterByDifficulty, getDifficultyColor } from "@/utils/difficultyRating";
 import { allTopics } from "@/data/topicCategories";
 import { RatingChangePopup } from "@/components/RatingChangePopup";
-import { SkillRatingCard } from "@/components/SkillRatingCard";
+
 import { shuffleAllQuestionOptions } from "@/utils/optionShuffler";
 import { DesmosCalculator } from "@/components/DesmosCalculator";
 import { sampleProportionally } from "@/utils/proportionalSampling";
@@ -376,15 +376,6 @@ const Quiz = () => {
           />
           {perfectStreak.best > 0 && (
             <PerfectStreakDisplay current={perfectStreak.current} best={perfectStreak.best} />
-          )}
-          {ratings && (
-            <SkillRatingCard
-              mathRating={ratings.mathRating}
-              englishRating={ratings.englishRating}
-              overallRating={ratings.overallRating}
-              compact
-              examType={examType}
-            />
           )}
         </div>
       </div>

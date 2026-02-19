@@ -90,8 +90,8 @@ export const EXAM_CONFIGS: Record<ExamType, ExamConfig> = {
     branding: {
       logoText: '39²',
       logoKatex: '39^2',
-      appTitle: 'Index 152',
-      heroTagline: 'One away from perfect — chase the 1520',
+      appTitle: 'National Merit starts here',
+      heroTagline: 'Free PSAT prep — chase the 1520',
       mathTaglineKatex: '39^2 = 1521',
       mathTaglineLabel: 'who conquer the PSAT',
       extraMathFlair: ['1.52k'],
