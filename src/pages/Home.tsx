@@ -278,7 +278,7 @@ const Home = () => {
           {/* Logo - dynamic per exam type */}
           <div className="mb-4 mt-14 pt-2">
             <SATMasteryLogo 
-              size="lg" 
+              size="xl" 
               clickable 
               onClick={handle40SquaredClick}
               examType={examType}

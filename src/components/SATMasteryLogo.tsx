@@ -45,10 +45,10 @@ export const SATMasteryLogo = ({
       tagline: "text-sm"
     },
     xl: {
-      container: "gap-4",
-      icon: "w-28 h-28 text-xl",
-      title: "text-2xl",
-      tagline: "text-sm",
+      container: "gap-5",
+      icon: "w-32 h-32 text-2xl",
+      title: "text-4xl",
+      tagline: "text-base",
     },
   };
 
