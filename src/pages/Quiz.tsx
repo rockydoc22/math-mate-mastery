@@ -33,29 +33,7 @@ import { interleaveQuestions } from "@/utils/questionInterleaver";
 
 type CombinedQuestion = (Question | EnglishQuestion | VisualQuestion | ImageQuestion) & { type: "math" | "english" | "science"; difficultyRating?: number };
 
-// Session storage key for tracking correctly answered questions
-const CORRECT_ANSWERS_KEY = "sat_mastery_correct_answers";
-
-// Get correctly answered question IDs from session storage
-function getCorrectlyAnsweredIds(): Set<string> {
-  try {
-    const stored = sessionStorage.getItem(CORRECT_ANSWERS_KEY);
-    return stored ? new Set(JSON.parse(stored)) : new Set();
-  } catch {
-    return new Set();
-  }
-}
-
-// Save correctly answered question ID to session storage
-function markQuestionCorrect(questionId: string): void {
-  try {
-    const current = getCorrectlyAnsweredIds();
-    current.add(questionId);
-    sessionStorage.setItem(CORRECT_ANSWERS_KEY, JSON.stringify([...current]));
-  } catch {
-    // Ignore storage errors
-  }
-}
+import { applyRotation, markQuestionCorrect } from "@/utils/questionRotation";
 
 function shuffleArray<T>(array: T[]): T[] {
   const shuffled = [...array];
@@ -122,6 +100,10 @@ const Quiz = () => {
         }
       }
 
+      // Cap difficulty for exam type (e.g., PSAT maxes at 8)
+      const maxDiff = examConfig.maxDifficulty ?? 10;
+      pool = pool.filter(q => (q.difficultyRating || 5) <= maxDiff);
+
       const seenIds = new Set<string>();
       const dedupedPool = pool.filter((q) => {
         if (seenIds.has(q.id)) return false;
@@ -129,14 +111,9 @@ const Quiz = () => {
         return true;
       });
 
-      const correctlyAnsweredIds = getCorrectlyAnsweredIds();
-      const unansweredQuestions = dedupedPool.filter(q => !correctlyAnsweredIds.has(q.id));
-      const answeredQuestions = dedupedPool.filter(q => correctlyAnsweredIds.has(q.id));
-      const prioritizedPool = unansweredQuestions.length >= count 
-        ? unansweredQuestions 
-        : unansweredQuestions.length > 0 
-          ? [...unansweredQuestions, ...shuffleArray(answeredQuestions)]
-          : dedupedPool;
+      // Use persistent localStorage rotation so correctly answered questions
+      // are not repeated until the entire pool is exhausted
+      const prioritizedPool = applyRotation(dedupedPool, count, "quiz");
 
       let topicFiltered = prioritizedPool;
       if (topicId) {
@@ -289,7 +266,7 @@ const Quiz = () => {
     if (isCorrect) {
       setScore(score + 1);
       playCorrect();
-      markQuestionCorrect(currentQuestion.id);
+      markQuestionCorrect(currentQuestion.id, "quiz");
     } else {
       playWrong();
     }
