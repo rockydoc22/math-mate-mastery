@@ -221,7 +221,23 @@ const Home = () => {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-background via-primary/5 to-accent/10 p-4 flex flex-col">
+    <div className="min-h-screen bg-gradient-to-br from-background via-primary/5 to-accent/10 flex flex-col">
+      {/* PWA Update Banner - Top */}
+      {hasUpdate && (
+        <div className="px-4 py-2 bg-primary/10 text-center">
+          <Button
+            onClick={forceUpdate}
+            disabled={isUpdating}
+            variant="default"
+            size="sm"
+            className="gap-2"
+          >
+            <RefreshCw className={`w-4 h-4 ${isUpdating ? "animate-spin" : ""}`} />
+            {isUpdating ? "Updating..." : "Update PWA"}
+          </Button>
+        </div>
+      )}
+      <div className="p-4 flex flex-col flex-1">
       <div className="max-w-2xl mx-auto w-full flex flex-col flex-1 animate-in fade-in duration-300">
         
         {/* Hero Header - Simplified */}
@@ -834,10 +850,11 @@ const Home = () => {
           </Link>
         </div>
 
-        {/* Version & Update */}
+        {/* Version */}
         <div className="flex flex-col items-center gap-2 pb-4">
-          <PWAUpdateButton />
+          <p className="text-xs text-muted-foreground">v{APP_VERSION}</p>
         </div>
+      </div>
       </div>
 
     </div>
