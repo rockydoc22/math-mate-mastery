@@ -1144,15 +1144,15 @@ export const additionalEnglishQuestions: EnglishQuestion[] = [
   },
   {
     id: "add-eng-072",
-    question: "Which choice provides the most specific and relevant information?",
+    question: "A student is writing an essay about New York City landmarks. Which choice provides the most specific and relevant information to support the claim that One World Trade Center is an extraordinary structure?",
     options: [
-      { letter: "A", text: "The building is very tall." },
-      { letter: "B", text: "The building has many floors." },
-      { letter: "C", text: "Standing at 1,776 feet, One World Trade Center is the tallest building in the Western Hemisphere." },
-      { letter: "D", text: "The building is impressive." }
+      { letter: "A", text: "One World Trade Center is a prominent part of the New York City skyline and is visible from many parts of the city and surrounding areas." },
+      { letter: "B", text: "The building draws millions of visitors each year who come to experience its observation deck and learn about its architectural design." },
+      { letter: "C", text: "Standing at 1,776 feet, One World Trade Center is the tallest building in the Western Hemisphere and took over a decade to construct." },
+      { letter: "D", text: "One World Trade Center has received widespread recognition from architects, urban planners, and the general public since it opened." }
     ],
     correctAnswer: "C",
-    explanation: "Specific measurements and facts provide more relevant information.",
+    explanation: "Only option C provides concrete, measurable data (height in feet, superlative ranking) and a specific fact (decade of construction) that directly support the claim. The other options use general descriptive language without verifiable specifics.",
     difficulty: "Medium",
     domain: "Expression of Ideas",
     skill: "Precision",
