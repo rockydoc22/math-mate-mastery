@@ -3,7 +3,8 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Progress } from "@/components/ui/progress";
-import { ArrowLeft, Zap, Trophy, Timer, RotateCcw, Brain, BookOpen, PenTool, Lightbulb, FlaskConical } from "lucide-react";
+import { Badge } from "@/components/ui/badge";
+import { ArrowLeft, Zap, Trophy, Timer, RotateCcw, Brain, BookOpen, PenTool, Lightbulb, FlaskConical, ChevronDown, ChevronUp, XCircle } from "lucide-react";
 import { satFacts, SATFact, ExamType } from "@/data/satFacts";
 
 type Category = "all" | "math" | "vocab" | "grammar" | "strategy" | "science";
@@ -38,6 +39,8 @@ const examOptions: { key: ExamType; label: string }[] = [
   { key: "act", label: "ACT" },
 ];
 
+type MissedQuestion = { fact: SATFact; userAnswer: string };
+
 const RapidFacts = () => {
   const [examFilter, setExamFilter] = useState<ExamType>("sat");
   const [category, setCategory] = useState<Category>("all");
@@ -50,6 +53,9 @@ const RapidFacts = () => {
   const [bestStreak, setBestStreak] = useState(0);
   const [timeLeft, setTimeLeft] = useState(CHALLENGE_DURATION);
   const [selectedAnswer, setSelectedAnswer] = useState<string | null>(null);
+  const [missedQuestions, setMissedQuestions] = useState<MissedQuestion[]>([]);
+  const [expandedMissed, setExpandedMissed] = useState<Set<string>>(new Set());
+  const [showMissed, setShowMissed] = useState(false);
   const [highScore, setHighScore] = useState(() => {
     const stored = localStorage.getItem(HIGH_SCORE_KEY);
     return stored ? JSON.parse(stored) as Record<string, number> : {};
@@ -85,6 +91,9 @@ const RapidFacts = () => {
     setBestStreak(0);
     setTimeLeft(CHALLENGE_DURATION);
     setSelectedAnswer(null);
+    setMissedQuestions([]);
+    setExpandedMissed(new Set());
+    setShowMissed(false);
     setPhase("playing");
   }, [getFilteredFacts]);
 
@@ -129,6 +138,14 @@ const RapidFacts = () => {
       setBestStreak(bs => Math.max(bs, newStreak));
     } else {
       setStreak(0);
+      // Track missed question (avoid duplicates by id)
+      if (currentFact) {
+        setMissedQuestions(prev =>
+          prev.find(m => m.fact.id === currentFact.id)
+            ? prev
+            : [...prev, { fact: currentFact, userAnswer: answer }]
+        );
+      }
     }
     setTimeout(() => {
       const next = currentIndex + 1;
@@ -240,38 +257,117 @@ const RapidFacts = () => {
     const prevHigh = highScore[key] || 0;
     const isNewRecord = score >= prevHigh && score > 0;
 
+    const toggleExpanded = (id: string) => {
+      setExpandedMissed(prev => {
+        const next = new Set(prev);
+        next.has(id) ? next.delete(id) : next.add(id);
+        return next;
+      });
+    };
+
     return (
-      <div className="min-h-screen bg-gradient-to-br from-background via-primary/5 to-accent/10 p-4 flex items-center justify-center">
-        <Card className="p-8 max-w-md w-full text-center space-y-6">
-          <Trophy className={`w-16 h-16 mx-auto ${isNewRecord ? "text-amber-500" : "text-muted-foreground"}`} />
-          {isNewRecord && <p className="text-amber-500 font-bold text-lg animate-pulse">🎉 New High Score!</p>}
-          <div>
-            <p className="text-5xl font-bold text-primary">{score}</p>
-            <p className="text-muted-foreground">points</p>
-          </div>
-          <div className="grid grid-cols-2 gap-4 text-sm">
-            <div className="p-3 bg-muted rounded-lg">
-              <p className="font-bold text-lg">{currentIndex}</p>
-              <p className="text-muted-foreground">Answered</p>
+      <div className="min-h-screen bg-gradient-to-br from-background via-primary/5 to-accent/10 p-4 py-8">
+        <div className="max-w-md mx-auto space-y-4">
+          <Card className="p-8 text-center space-y-6">
+            <Trophy className={`w-16 h-16 mx-auto ${isNewRecord ? "text-amber-500" : "text-muted-foreground"}`} />
+            {isNewRecord && <p className="text-amber-500 font-bold text-lg animate-pulse">🎉 New High Score!</p>}
+            <div>
+              <p className="text-5xl font-bold text-primary">{score}</p>
+              <p className="text-muted-foreground">points</p>
             </div>
-            <div className="p-3 bg-muted rounded-lg">
-              <p className="font-bold text-lg">{bestStreak}</p>
-              <p className="text-muted-foreground">Best Streak</p>
+            <div className="grid grid-cols-2 gap-4 text-sm">
+              <div className="p-3 bg-muted rounded-lg">
+                <p className="font-bold text-lg">{currentIndex}</p>
+                <p className="text-muted-foreground">Answered</p>
+              </div>
+              <div className="p-3 bg-muted rounded-lg">
+                <p className="font-bold text-lg">{bestStreak}</p>
+                <p className="text-muted-foreground">Best Streak</p>
+              </div>
             </div>
-          </div>
-          <div className="flex flex-col gap-3">
-            <Button size="lg" className="gap-2" onClick={startChallenge}>
-              <RotateCcw className="w-4 h-4" /> Play Again
-            </Button>
-            <Button variant="outline" onClick={() => setPhase("menu")}>
-              Change Category
-            </Button>
-            <Link to="/"><Button variant="ghost">Back to Home</Button></Link>
-          </div>
-        </Card>
+
+            {/* Missed questions CTA */}
+            {missedQuestions.length > 0 && (
+              <button
+                onClick={() => setShowMissed(v => !v)}
+                className="w-full flex items-center justify-between p-3 rounded-lg bg-destructive/10 border border-destructive/20 text-left hover:bg-destructive/15 transition-colors"
+              >
+                <span className="flex items-center gap-2 font-semibold text-destructive">
+                  <XCircle className="w-4 h-4" />
+                  Review {missedQuestions.length} missed question{missedQuestions.length > 1 ? "s" : ""}
+                </span>
+                {showMissed ? <ChevronUp className="w-4 h-4 text-destructive" /> : <ChevronDown className="w-4 h-4 text-destructive" />}
+              </button>
+            )}
+            {missedQuestions.length === 0 && (
+              <p className="text-emerald-600 dark:text-emerald-400 font-semibold text-sm">🎯 Perfect run — no missed questions!</p>
+            )}
+
+            <div className="flex flex-col gap-3">
+              <Button size="lg" className="gap-2" onClick={startChallenge}>
+                <RotateCcw className="w-4 h-4" /> Play Again
+              </Button>
+              <Button variant="outline" onClick={() => setPhase("menu")}>
+                Change Category
+              </Button>
+              <Link to="/"><Button variant="ghost">Back to Home</Button></Link>
+            </div>
+          </Card>
+
+          {/* Missed questions expanded review */}
+          {showMissed && missedQuestions.length > 0 && (
+            <div className="space-y-3">
+              <h3 className="font-bold text-lg flex items-center gap-2 px-1">
+                <XCircle className="w-5 h-5 text-destructive" />
+                Questions to Review
+              </h3>
+              {missedQuestions.map(({ fact, userAnswer }) => {
+                const cfg = categoryConfig[fact.category] || categoryConfig.strategy;
+                const isOpen = expandedMissed.has(fact.id);
+                return (
+                  <Card key={fact.id} className="overflow-hidden border-destructive/20">
+                    <button
+                      className="w-full p-4 text-left flex items-start justify-between gap-3 hover:bg-muted/50 transition-colors"
+                      onClick={() => toggleExpanded(fact.id)}
+                    >
+                      <div className="flex items-start gap-3 flex-1 min-w-0">
+                        <Badge variant="outline" className="shrink-0 text-xs mt-0.5">
+                          <cfg.icon className={`w-3 h-3 mr-1 ${cfg.color}`} />
+                          {cfg.label}
+                        </Badge>
+                        <span className="font-medium text-sm leading-snug">{fact.question}</span>
+                      </div>
+                      {isOpen
+                        ? <ChevronUp className="w-4 h-4 shrink-0 text-muted-foreground mt-0.5" />
+                        : <ChevronDown className="w-4 h-4 shrink-0 text-muted-foreground mt-0.5" />}
+                    </button>
+
+                    {isOpen && (
+                      <div className="px-4 pb-4 space-y-2 border-t pt-3">
+                        <div className="flex items-start gap-2 text-sm">
+                          <span className="text-destructive font-semibold shrink-0">✗ Your answer:</span>
+                          <span className="text-destructive">{userAnswer}</span>
+                        </div>
+                        <div className="flex items-start gap-2 text-sm">
+                          <span className="font-semibold shrink-0 text-emerald-600 dark:text-emerald-400">✓ Correct:</span>
+                          <span className="font-bold text-emerald-600 dark:text-emerald-400">{fact.correctAnswer}</span>
+                        </div>
+                        <div className="pt-1 text-xs text-muted-foreground">
+                          <span className="font-medium">Other options were: </span>
+                          {fact.wrongAnswers.filter(w => w !== userAnswer).join(", ")}
+                        </div>
+                      </div>
+                    )}
+                  </Card>
+                );
+              })}
+            </div>
+          )}
+        </div>
       </div>
     );
   }
+
 
   // ── PLAYING ──
   if (!currentFact) return null;
