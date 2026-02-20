@@ -1,6 +1,6 @@
 import { Card } from "@/components/ui/card";
 import { Swords } from "lucide-react";
-import { ratingToExamScore, EXAM_CONFIGS, type ExamType } from "@/utils/examConfig";
+import { ratingToSectionScore, EXAM_CONFIGS, type ExamType } from "@/utils/examConfig";
 
 interface SubjectDuelCardProps {
   mathRating: number;
@@ -11,21 +11,22 @@ interface SubjectDuelCardProps {
 export const SubjectDuelCard = ({ mathRating, englishRating, examType = 'sat' }: SubjectDuelCardProps) => {
   const config = EXAM_CONFIGS[examType];
   const sectionMax = config.sectionScoreRange.max;
+  const sectionMin = config.sectionScoreRange.min;
   const totalMax = config.scoreRange.max;
 
-  const mathScore = ratingToExamScore(mathRating, examType);
-  const englishScore = ratingToExamScore(englishRating, examType);
-  const mathDisplay = Math.round((mathScore.min + mathScore.max) / 2);
-  const englishDisplay = Math.round((englishScore.min + englishScore.max) / 2);
-
-  // Section-level scores
-  const mathSection = examType === 'act' ? mathDisplay : Math.round(mathDisplay / 2);
-  const englishSection = examType === 'act' ? englishDisplay : Math.round(englishDisplay / 2);
+  // Map each ELO directly to its section score range (e.g. 200–800 for SAT Math/English)
+  const mathSection = ratingToSectionScore(mathRating, examType);
+  const englishSection = ratingToSectionScore(englishRating, examType);
 
   const combined = mathSection + englishSection;
+  // For ACT, "combined" doesn't mean the same thing — show as composite
+  const displayTotal = examType === 'act'
+    ? Math.round((mathSection + englishSection) / 2)
+    : combined;
+
   const gap = totalMax - combined;
 
-  // Percentages of the total max score
+  // Bar widths as % of totalMax
   const mathPct = Math.round((mathSection / totalMax) * 100);
   const englishPct = Math.round((englishSection / totalMax) * 100);
   const gapPct = Math.max(0, 100 - mathPct - englishPct);
@@ -50,7 +51,7 @@ export const SubjectDuelCard = ({ mathRating, englishRating, examType = 'sat' }:
           <h3 className="font-semibold text-sm">Subject Duel</h3>
         </div>
         <span className="text-xs font-bold text-primary">
-          {combined} / {totalMax}
+          {examType === 'act' ? `~${displayTotal}` : combined} / {totalMax}
         </span>
       </div>
 
@@ -60,21 +61,21 @@ export const SubjectDuelCard = ({ mathRating, englishRating, examType = 'sat' }:
           className="bg-primary flex items-center justify-center text-xs font-bold text-primary-foreground transition-all duration-500"
           style={{ width: `${mathPct}%` }}
         >
-          {mathPct > 15 && `${mathSection}`}
+          {mathPct > 12 && `${mathSection}`}
         </div>
         {gapPct > 0 && (
           <div
             className="bg-muted flex items-center justify-center text-xs font-medium text-muted-foreground transition-all duration-500"
             style={{ width: `${gapPct}%` }}
           >
-            {gapPct > 10 && `+${gap}`}
+            {gapPct > 8 && `+${gap}`}
           </div>
         )}
         <div
           className="bg-secondary flex items-center justify-center text-xs font-bold text-secondary-foreground transition-all duration-500"
           style={{ width: `${englishPct}%` }}
         >
-          {englishPct > 15 && `${englishSection}`}
+          {englishPct > 12 && `${englishSection}`}
         </div>
       </div>
 

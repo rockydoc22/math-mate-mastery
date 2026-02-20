@@ -1,7 +1,7 @@
 import { TrendingUp, Award, BookOpen, Calculator } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { getSkillLevel } from '@/utils/eloRating';
-import { ratingToExamScore, EXAM_CONFIGS, type ExamType } from '@/utils/examConfig';
+import { ratingToExamScore, ratingToSectionScore, EXAM_CONFIGS, type ExamType } from '@/utils/examConfig';
 import { cn } from '@/lib/utils';
 
 interface SkillRatingCardProps {
@@ -24,7 +24,8 @@ function RatingBadge({
   examType?: ExamType;
 }) {
   const { level, color, bgColor } = getSkillLevel(rating);
-  const { min, max } = ratingToExamScore(rating, examType);
+  const sectionScore = ratingToSectionScore(rating, examType);
+  const sectionMax = EXAM_CONFIGS[examType].sectionScoreRange.max;
 
   return (
     <div className={cn("rounded-lg p-3 border", bgColor, "border-white/10")}>
@@ -33,10 +34,10 @@ function RatingBadge({
         <span className="text-xs text-muted-foreground">{label}</span>
       </div>
       <div className={cn("text-2xl font-bold", color)}>
-        {min}-{max}
+        ~{sectionScore}
       </div>
       <div className="text-xs text-muted-foreground mt-1">
-        {level}
+        {level} · /{sectionMax}
       </div>
     </div>
   );

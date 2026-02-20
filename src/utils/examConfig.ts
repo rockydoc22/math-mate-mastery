@@ -155,7 +155,7 @@ export const EXAM_CONFIGS: Record<ExamType, ExamConfig> = {
   },
 };
 
-// Convert an ELO rating to exam-specific projected score
+// Convert an ELO rating to exam-specific projected TOTAL score range
 // ELO range is 400-2000; map that to the exam's full score range
 export function ratingToExamScore(rating: number, examType: ExamType): { min: number; max: number } {
   const config = EXAM_CONFIGS[examType];
@@ -167,7 +167,7 @@ export function ratingToExamScore(rating: number, examType: ExamType): { min: nu
     return { min: Math.max(1, score - 1), max: Math.min(36, score + 1) };
   }
 
-  // SAT/PSAT
+  // SAT/PSAT: map to full score range
   const { min, max } = config.scoreRange;
   const range = max - min;
   const score = Math.round(min + normalized * range);
@@ -176,4 +176,22 @@ export function ratingToExamScore(rating: number, examType: ExamType): { min: nu
     min: Math.max(min, score - margin),
     max: Math.min(max, score + margin),
   };
+}
+
+// Convert an ELO rating to exam-specific projected SECTION score (per-section, not total)
+// For SAT/PSAT this maps to sectionScoreRange (200-800 for SAT, 160-760 for PSAT)
+// For ACT sections are on the same 1-36 scale
+export function ratingToSectionScore(rating: number, examType: ExamType): number {
+  const config = EXAM_CONFIGS[examType];
+  const clamped = Math.max(400, Math.min(2000, rating));
+  const normalized = (clamped - 400) / 1600; // 0..1
+
+  const { min, max } = config.sectionScoreRange;
+  const range = max - min;
+  // Round to nearest 10 for SAT/PSAT (they report in 10-point increments)
+  const raw = min + normalized * range;
+  if (examType === 'act') {
+    return Math.round(raw);
+  }
+  return Math.round(raw / 10) * 10;
 }
