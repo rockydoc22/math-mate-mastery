@@ -6,9 +6,10 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { supabase } from "@/integrations/supabase/client";
 import { toast } from "@/hooks/use-toast";
 import { Link } from "react-router-dom";
-import { ArrowLeft, Trash2, Check, Eye, ShieldAlert, Users, Flag, GraduationCap, BarChart3, Bell } from "lucide-react";
+import { ArrowLeft, Trash2, Check, Eye, ShieldAlert, Users, Flag, GraduationCap, BarChart3, TrendingUp } from "lucide-react";
 import { useAuth } from "@/hooks/useAuth";
 import { QuestionDistribution } from "@/components/admin/QuestionDistribution";
+import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer, LineChart, Line, CartesianGrid } from "recharts";
 
 interface FlaggedQuestion {
   id: string;
@@ -33,10 +34,24 @@ interface UserStats {
   correct_answers: number;
 }
 
+interface RetentionWeek {
+  week: string;
+  active_users: number;
+  attempts: number;
+}
+
+interface StreakData {
+  range: string;
+  users: number;
+}
+
 const Admin = () => {
   const { user, loading: authLoading } = useAuth();
   const [flaggedQuestions, setFlaggedQuestions] = useState<FlaggedQuestion[]>([]);
   const [userStats, setUserStats] = useState<UserStats[]>([]);
+  const [retentionData, setRetentionData] = useState<RetentionWeek[]>([]);
+  const [streakData, setStreakData] = useState<StreakData[]>([]);
+  const [totalRegistered, setTotalRegistered] = useState(0);
   const [isLoading, setIsLoading] = useState(true);
   const [isAdmin, setIsAdmin] = useState<boolean | null>(null);
 
@@ -121,10 +136,68 @@ const Admin = () => {
     }
   };
 
+  const fetchRetentionData = async () => {
+    try {
+      const { data: attempts, error } = await supabase
+        .from('question_attempts')
+        .select('user_id, created_at')
+        .order('created_at', { ascending: true });
+
+      if (error) throw error;
+
+      const weekMap = new Map<string, Set<string>>();
+      const attemptMap = new Map<string, number>();
+
+      (attempts || []).forEach((a) => {
+        const d = new Date(a.created_at);
+        const day = d.getDay();
+        const diff = d.getDate() - day + (day === 0 ? -6 : 1);
+        const monday = new Date(new Date(a.created_at).setDate(diff));
+        const weekKey = monday.toISOString().split('T')[0];
+
+        if (!weekMap.has(weekKey)) weekMap.set(weekKey, new Set());
+        weekMap.get(weekKey)!.add(a.user_id);
+        attemptMap.set(weekKey, (attemptMap.get(weekKey) || 0) + 1);
+      });
+
+      const retention: RetentionWeek[] = Array.from(weekMap.entries())
+        .map(([week, users]) => ({
+          week: new Date(week).toLocaleDateString('en-US', { month: 'short', day: 'numeric' }),
+          active_users: users.size,
+          attempts: attemptMap.get(week) || 0,
+        }))
+        .slice(-12);
+
+      setRetentionData(retention);
+
+      const { data: streaks } = await supabase
+        .from('streaks')
+        .select('current_streak');
+
+      const buckets: Record<string, number> = { '0 days': 0, '1-3 days': 0, '4-7 days': 0, '8-14 days': 0, '15+ days': 0 };
+      (streaks || []).forEach((s) => {
+        const cs = s.current_streak;
+        if (cs === 0) buckets['0 days']++;
+        else if (cs <= 3) buckets['1-3 days']++;
+        else if (cs <= 7) buckets['4-7 days']++;
+        else if (cs <= 14) buckets['8-14 days']++;
+        else buckets['15+ days']++;
+      });
+
+      setStreakData(Object.entries(buckets).map(([range, users]) => ({ range, users })));
+
+      const { count } = await supabase.from('profiles').select('id', { count: 'exact', head: true });
+      setTotalRegistered(count || 0);
+    } catch (error) {
+      console.error('Error fetching retention data:', error);
+    }
+  };
+
   useEffect(() => {
     if (isAdmin) {
       fetchFlaggedQuestions();
       fetchUserStats();
+      fetchRetentionData();
       
       // Subscribe to new flagged questions in realtime
       const channel = supabase
@@ -319,7 +392,7 @@ const Admin = () => {
         </div>
 
         <Tabs defaultValue="users" className="w-full">
-          <TabsList className="grid w-full grid-cols-3">
+          <TabsList className="grid w-full grid-cols-4">
             <TabsTrigger value="users" className="gap-2">
               <Users className="w-4 h-4" />
               Users ({userStats.length})
@@ -331,6 +404,10 @@ const Admin = () => {
             <TabsTrigger value="questions" className="gap-2">
               <BarChart3 className="w-4 h-4" />
               Questions
+            </TabsTrigger>
+            <TabsTrigger value="retention" className="gap-2">
+              <TrendingUp className="w-4 h-4" />
+              Retention
             </TabsTrigger>
           </TabsList>
 
@@ -431,6 +508,78 @@ const Admin = () => {
           <TabsContent value="questions" className="mt-4">
             <QuestionDistribution />
           </TabsContent>
+          <TabsContent value="retention" className="space-y-4 mt-4">
+            {/* Summary stats */}
+            <div className="grid grid-cols-3 gap-4">
+              <Card>
+                <CardContent className="p-4 text-center">
+                  <p className="text-2xl font-bold">{totalRegistered}</p>
+                  <p className="text-xs text-muted-foreground mt-1">Total Registered</p>
+                </CardContent>
+              </Card>
+              <Card>
+                <CardContent className="p-4 text-center">
+                  <p className="text-2xl font-bold">
+                    {retentionData.length > 0 ? retentionData[retentionData.length - 1].active_users : 0}
+                  </p>
+                  <p className="text-xs text-muted-foreground mt-1">Active This Week</p>
+                </CardContent>
+              </Card>
+              <Card>
+                <CardContent className="p-4 text-center">
+                  <p className="text-2xl font-bold">
+                    {totalRegistered > 0 && retentionData.length > 0
+                      ? `${Math.round((retentionData[retentionData.length - 1].active_users / totalRegistered) * 100)}%`
+                      : '0%'}
+                  </p>
+                  <p className="text-xs text-muted-foreground mt-1">Weekly Retention</p>
+                </CardContent>
+              </Card>
+            </div>
+
+            {/* Weekly active users chart */}
+            <Card>
+              <CardHeader>
+                <CardTitle className="text-base">Weekly Active Users (real practice sessions)</CardTitle>
+              </CardHeader>
+              <CardContent>
+                {retentionData.length === 0 ? (
+                  <p className="text-center text-muted-foreground py-8">No activity data yet.</p>
+                ) : (
+                  <ResponsiveContainer width="100%" height={220}>
+                    <LineChart data={retentionData}>
+                      <CartesianGrid strokeDasharray="3 3" className="opacity-30" />
+                      <XAxis dataKey="week" tick={{ fontSize: 11 }} />
+                      <YAxis tick={{ fontSize: 11 }} allowDecimals={false} />
+                      <Tooltip formatter={(v: number, name: string) => [v, name === 'active_users' ? 'Active Users' : 'Questions Answered']} />
+                      <Line type="monotone" dataKey="active_users" stroke="hsl(var(--primary))" strokeWidth={2} dot={{ r: 4 }} name="active_users" />
+                      <Line type="monotone" dataKey="attempts" stroke="hsl(var(--accent))" strokeWidth={1.5} dot={false} strokeDasharray="4 4" name="attempts" />
+                    </LineChart>
+                  </ResponsiveContainer>
+                )}
+                <p className="text-xs text-muted-foreground mt-2">Solid = unique users actively practicing · Dashed = total questions answered</p>
+              </CardContent>
+            </Card>
+
+            {/* Streak distribution */}
+            <Card>
+              <CardHeader>
+                <CardTitle className="text-base">Current Streak Distribution</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <ResponsiveContainer width="100%" height={160}>
+                  <BarChart data={streakData}>
+                    <XAxis dataKey="range" tick={{ fontSize: 11 }} />
+                    <YAxis tick={{ fontSize: 11 }} allowDecimals={false} />
+                    <Tooltip formatter={(v: number) => [v, 'Users']} />
+                    <Bar dataKey="users" fill="hsl(var(--primary))" radius={[4, 4, 0, 0]} />
+                  </BarChart>
+                </ResponsiveContainer>
+                <p className="text-xs text-muted-foreground mt-2">How many days in a row each user has practiced</p>
+              </CardContent>
+            </Card>
+          </TabsContent>
+
         </Tabs>
       </div>
     </div>
