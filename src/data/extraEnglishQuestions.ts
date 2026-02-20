@@ -1080,15 +1080,15 @@ export const extraEnglishQuestions: EnglishQuestion[] = [
   },
   {
     id: "extra-eng-068",
-    question: "Which choice most effectively combines the two sentences at the underlined portion?",
+    question: "Read the following passage:\n\n\"The team's initial data pointed toward a single causal factor. [1] Subsequent analysis, however, revealed that multiple variables were involved.\"\n\nWhich choice most effectively combines sentences [1] and [2] at the underlined portion?",
     options: [
-      { letter: "A", text: "hypothesis; therefore, the" },
-      { letter: "B", text: "hypothesis, and the" },
-      { letter: "C", text: "hypothesis, the" },
-      { letter: "D", text: "hypothesis—the" }
+      { letter: "A", text: "factor; subsequent" },
+      { letter: "B", text: "factor, subsequent" },
+      { letter: "C", text: "factor subsequent" },
+      { letter: "D", text: "factor and subsequent" }
     ],
     correctAnswer: "A",
-    explanation: "Sentence combining requires choosing punctuation that reflects the logical relationship.",
+    explanation: "A semicolon correctly joins two independent clauses. Option B creates a comma splice. Option C lacks punctuation entirely (run-on). Option D uses 'and' without a comma, which is incorrect when joining two independent clauses with a contrasting relationship better served by a semicolon.",
     difficulty: "Medium",
     domain: "Standard English Conventions",
     skill: "Boundaries",

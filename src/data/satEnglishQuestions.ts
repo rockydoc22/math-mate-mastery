@@ -1392,15 +1392,15 @@ export const satEnglishQuestions: EnglishQuestion[] = [
   }, 3),
   addRating({
     id: 'sat-eng-092',
-    question: 'What is the effect of the short sentence "Then it happened" in the narrative?',
+    question: 'Read the following excerpt:\n\n"The wind howled outside, rattling the old windowpanes. Every shadow seemed to shift. Maria pressed her back against the wall, barely breathing. She had heard the stories, of course. Everyone had. Then it happened."\n\nWhat is the primary effect of the short sentence "Then it happened" at the end of this passage?',
     options: [
-      { letter: 'A', text: 'It provides detailed information.' },
-      { letter: 'B', text: 'It creates suspense and emphasis.' },
-      { letter: 'C', text: 'It summarizes the previous paragraph.' },
-      { letter: 'D', text: 'It introduces a new character.' }
+      { letter: 'A', text: 'It resolves the tension by revealing what occurred.' },
+      { letter: 'B', text: 'It creates suspense by withholding information and emphasizing the sudden onset of an event.' },
+      { letter: 'C', text: 'It shifts the narrative perspective from Maria to an outside observer.' },
+      { letter: 'D', text: 'It signals that the previous sentences were unrelated to the main plot.' }
     ],
     correctAnswer: 'B',
-    explanation: 'Short sentences create emphasis and, in narrative, often build suspense.',
+    explanation: 'The short, abrupt sentence deliberately withholds what "it" is, intensifying suspense after a build-up of dread. It does not resolve the tension (A), shift perspective (C), or signal unrelatedness (D).',
     difficulty: 'Easy',
     domain: 'Craft and Structure',
     skill: 'Sentence Effect'
@@ -2015,13 +2015,13 @@ export const satEnglishQuestions: EnglishQuestion[] = [
     id: 'sat-eng-133',
     question: 'Which sentence correctly uses a dash?',
     options: [
-      { letter: 'A', text: 'The result-was surprising.' },
-      { letter: 'B', text: 'The result—surprisingly positive—exceeded expectations.' },
-      { letter: 'C', text: 'The result was surprising-.' },
-      { letter: 'D', text: '-The result was surprising.' }
+      { letter: 'A', text: 'The experiment—which lasted three years produced inconclusive data.' },
+      { letter: 'B', text: 'The result—surprisingly positive—exceeded all expectations.' },
+      { letter: 'C', text: 'She decided—to leave the project before it was finished.' },
+      { letter: 'D', text: 'The council voted—unanimously to approve the new budget.' }
     ],
     correctAnswer: 'B',
-    explanation: 'Dashes set off parenthetical information for emphasis; they must be used in pairs.',
+    explanation: 'A pair of dashes correctly sets off the parenthetical phrase "surprisingly positive." Options A and C use only one dash where a pair is required, and D incorrectly places a dash between a verb and its infinitive complement.',
     difficulty: 'Medium',
     domain: 'Standard English Conventions',
     skill: 'Dash Usage'
