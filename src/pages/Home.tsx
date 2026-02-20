@@ -27,7 +27,7 @@ import { StreakCalendar } from "@/components/StreakCalendar";
 import { WordOfTheDay } from "@/components/WordOfTheDay";
 import { ExamSelector } from "@/components/ExamSelector";
 import { useExamType } from "@/hooks/useExamType";
-import { EXAM_CONFIGS, ratingToExamScore } from "@/utils/examConfig";
+import { EXAM_CONFIGS, ratingToExamScore, ratingToSectionScore } from "@/utils/examConfig";
 import { SubjectDuelCard } from "@/components/SubjectDuelCard";
 import { SpeedDemonCard } from "@/components/SpeedDemonCard";
 import { AchievementChains } from "@/components/AchievementChains";
@@ -603,8 +603,10 @@ const Home = () => {
                   <Calculator className="w-5 h-5 text-primary" />
                   <span className="text-sm font-medium">Math</span>
                 </div>
-                {ratings && (
-                  <span className="text-xs text-muted-foreground">{Math.round(ratings.mathRating)}</span>
+                {ratings && ratings.mathQuestionsAnswered > 0 && (
+                  <span className="text-xs text-muted-foreground">
+                    ~{ratingToSectionScore(ratings.mathRating, examType)}/{examConfig.sectionScoreRange.max}
+                  </span>
                 )}
               </Button>
               <Button 
@@ -616,8 +618,10 @@ const Home = () => {
                   <PenTool className="w-5 h-5 text-secondary" />
                   <span className="text-sm font-medium">English</span>
                 </div>
-                {ratings && (
-                  <span className="text-xs text-muted-foreground">{Math.round(ratings.englishRating)}</span>
+                {ratings && ratings.englishQuestionsAnswered > 0 && (
+                  <span className="text-xs text-muted-foreground">
+                    ~{ratingToSectionScore(ratings.englishRating, examType)}/{examConfig.sectionScoreRange.max}
+                  </span>
                 )}
               </Button>
               {examType === 'act' && (
