@@ -52,14 +52,14 @@ const BossBattle = () => {
   // Pick today's boss question deterministically - hardest questions only
   const bossQuestion = useMemo(() => {
     const allHard = [
-      ...questions.filter(q => Number(q.difficulty || 5) >= 9).map(q => ({ ...q, diffNum: Number(q.difficulty || 5), type: "math" as const })),
-      ...englishQuestions.filter(q => Number(q.difficulty || 5) >= 9).map(q => ({
+      ...questions.filter(q => (q.difficultyRating || 0) >= 9).map(q => ({ ...q, diffNum: q.difficultyRating || 9, type: "math" as const })),
+      ...englishQuestions.filter(q => (q.difficultyRating || 0) >= 9).map(q => ({
         id: q.id,
         question: q.question,
         options: q.options,
         correctAnswer: q.correctAnswer,
         explanation: q.explanation,
-        diffNum: Number(q.difficulty || 9),
+        diffNum: q.difficultyRating || 9,
         type: "english" as const,
       })),
     ];

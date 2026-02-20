@@ -1,4 +1,4 @@
-import { useState, useEffect, useCallback } from "react";
+import { useState, useEffect, useCallback, useMemo } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -49,8 +49,8 @@ const Review = () => {
   const [creditsEarned, setCreditsEarned] = useState(0);
   const { awardSpacedRepetitionCredits } = useAcceleratorCredits();
 
-  // All questions lookup
-  const allQuestions = [
+  // All questions lookup - defined outside callback to avoid infinite re-render
+  const allQuestions = useMemo(() => [
     ...questions,
     ...visualMathQuestions,
     ...moreMathVisualQuestions,
@@ -58,7 +58,7 @@ const Review = () => {
     ...englishQuestions,
     ...visualEnglishQuestions,
     ...moreEnglishVisualQuestions,
-  ];
+  ], []);
 
   const fetchReviewQuestions = useCallback(async () => {
     if (!user) return;
