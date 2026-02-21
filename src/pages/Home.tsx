@@ -242,6 +242,20 @@ const Home = () => {
         
         {/* Hero Header - Simplified */}
         <header className="flex flex-col items-center text-center mb-6 pt-4 relative">
+          {/* Update button at top left */}
+          <div className="absolute top-4 left-0">
+            <Button
+              onClick={forceUpdate}
+              disabled={isUpdating}
+              variant={hasUpdate ? "default" : "ghost"}
+              size="sm"
+              className={`gap-1 text-[10px] h-7 px-2 ${hasUpdate ? 'animate-pulse bg-emerald-500 hover:bg-emerald-600 text-white' : ''}`}
+            >
+              <RefreshCw className={`w-3 h-3 ${isUpdating ? "animate-spin" : ""}`} />
+              {isUpdating ? "..." : hasUpdate ? "🆕 Update" : `v${APP_VERSION}`}
+            </Button>
+          </div>
+
           {/* Sign In / Profile at top right */}
           <div className="absolute top-4 right-0 flex flex-col items-end gap-1">
             {user ? (
@@ -270,24 +284,12 @@ const Home = () => {
                 </div>
               </>
             ) : (
-              <div className="flex flex-col items-end gap-1">
-                <Link to="/auth">
-                  <Button size="sm" className="gap-2 bg-gradient-to-r from-primary via-accent to-secondary text-primary-foreground font-bold shadow-lg hover:shadow-xl transition-all hover:scale-105">
-                    <LogIn className="w-4 h-4" />
-                    Sign In
-                  </Button>
-                </Link>
-                <Button
-                  onClick={forceUpdate}
-                  disabled={isUpdating}
-                  variant="outline"
-                  size="sm"
-                  className="text-[10px] gap-1 h-6 px-2 border-muted-foreground/30 bg-background/80"
-                >
-                  <RefreshCw className={`w-3 h-3 ${isUpdating ? "animate-spin" : ""}`} />
-                  {isUpdating ? "Updating..." : "Refresh & Update"}
+              <Link to="/auth">
+                <Button size="sm" className="gap-2 bg-gradient-to-r from-primary via-accent to-secondary text-primary-foreground font-bold shadow-lg hover:shadow-xl transition-all hover:scale-105">
+                  <LogIn className="w-4 h-4" />
+                  Sign In
                 </Button>
-              </div>
+              </Link>
             )}
           </div>
 
@@ -303,19 +305,6 @@ const Home = () => {
             />
           </div>
 
-          {/* Check for Updates - prominent for PWA/iPhone users */}
-          {(hasUpdate || true) && (
-            <Button
-              onClick={forceUpdate}
-              disabled={isUpdating}
-              variant={hasUpdate ? "default" : "outline"}
-              size="sm"
-              className={`mb-3 gap-2 w-full max-w-xs ${hasUpdate ? 'animate-pulse bg-emerald-500 hover:bg-emerald-600 text-white' : ''}`}
-            >
-              <RefreshCw className={`w-4 h-4 ${isUpdating ? "animate-spin" : ""}`} />
-              {isUpdating ? "Updating..." : hasUpdate ? "🆕 Update Available — Tap Now" : `Check for Updates (v${APP_VERSION})`}
-            </Button>
-          )}
 
           {/* Exam badge - tappable switcher */}
           <div className="flex items-center gap-1 mb-2">
