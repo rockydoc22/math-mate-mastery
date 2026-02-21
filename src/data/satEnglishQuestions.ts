@@ -2013,19 +2013,19 @@ export const satEnglishQuestions: EnglishQuestion[] = [
   }, 7),
   addRating({
     id: 'sat-eng-133',
-    question: 'Which sentence correctly uses a dash?',
+    question: 'Which sentence correctly uses dashes to set off a parenthetical element?',
     options: [
-      { letter: 'A', text: 'The experiment—which lasted three years produced inconclusive data.' },
-      { letter: 'B', text: 'The result—surprisingly positive—exceeded all expectations.' },
-      { letter: 'C', text: 'She decided—to leave the project before it was finished.' },
-      { letter: 'D', text: 'The council voted—unanimously to approve the new budget.' }
+      { letter: 'A', text: 'The experiment—which lasted three years—produced inconclusive data that puzzled researchers.' },
+      { letter: 'B', text: 'The result—surprisingly positive—exceeded all expectations set by the research team.' },
+      { letter: 'C', text: 'She decided—after much deliberation—to postpone the project until more funding was secured.' },
+      { letter: 'D', text: 'The council voted—unanimously and without debate—to approve the revised municipal budget.' }
     ],
     correctAnswer: 'B',
-    explanation: 'A pair of dashes correctly sets off the parenthetical phrase "surprisingly positive." Options A and C use only one dash where a pair is required, and D incorrectly places a dash between a verb and its infinitive complement.',
+    explanation: 'All options use paired dashes, but only B correctly sets off a concise parenthetical adjective phrase ("surprisingly positive") that modifies "result." Option A is grammatically correct but the parenthetical interrupts less naturally. Option C uses dashes around a phrase that would be better set off with commas. Option D wraps a phrase that functions as an essential modifier rather than a true parenthetical aside.',
     difficulty: 'Medium',
     domain: 'Standard English Conventions',
     skill: 'Dash Usage'
-  }, 5),
+  }, 6),
   addRating({
     id: 'sat-eng-134',
     question: 'The author\'s repeated use of rhetorical questions in the passage primarily serves to:',

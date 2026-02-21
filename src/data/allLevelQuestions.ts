@@ -325,7 +325,7 @@ const generateLevel3Questions = (): VisualQuestion[] => {
       difficulty: "Easy",
       domain: "Arithmetic",
       skill: "Addition",
-      difficultyRating: 3
+      difficultyRating: 2
     });
   }
   

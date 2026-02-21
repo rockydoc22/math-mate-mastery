@@ -141,11 +141,13 @@ const DailyChallenge = () => {
         setTimeout(() => setScreenShake(false), 300);
       }
       
-      // Mark question as correctly answered for smart rotation
+    // Mark question as seen for smart rotation (both correct and wrong)
       markCorrectRotation(currentQuestion.id, "daily");
     } else {
       playWrong();
       registerIncorrect();
+      // Also mark wrong answers as seen so they don't repeat in daily
+      markCorrectRotation(currentQuestion.id, "daily");
     }
   }, [currentIndex, dailyQuestions, selectedAnswer, score, playCorrect, playWrong, registerCorrect, registerIncorrect, combo.count, playCombo]);
 
