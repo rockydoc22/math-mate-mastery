@@ -166,17 +166,16 @@ export const LandingPage = () => {
 
           {/* CTAs */}
           <div className="flex flex-col items-center gap-3">
-            <Button 
-              size="lg" 
-              onClick={handleTry3Questions}
-              className="gap-2 bg-gradient-to-r from-emerald-500 to-teal-500 hover:from-emerald-600 hover:to-teal-600 text-white font-bold text-lg shadow-lg hover:shadow-xl transition-all hover:scale-105 animate-pulse px-8 py-6"
-            >
-              <Sparkles className="w-5 h-5" />
-              Try 3 Questions Now — Free
-            </Button>
+            <div className="text-center mb-2">
+              <p className="text-sm font-semibold text-primary">🎉 100% Free — No catch!</p>
+              <p className="text-xs text-muted-foreground mt-1">
+                In exchange, leave comments & suggestions to help us make it better.
+              </p>
+            </div>
             <Link to="/auth">
-              <Button variant="outline" size="lg" className="gap-2 text-sm">
-                Create free account for battles, AI practice & more
+              <Button size="lg" className="gap-2 bg-gradient-to-r from-emerald-500 to-teal-500 hover:from-emerald-600 hover:to-teal-600 text-white font-bold text-lg shadow-lg hover:shadow-xl transition-all hover:scale-105 px-8 py-6">
+                <Sparkles className="w-5 h-5" />
+                Get Started — It's Free
                 <ArrowRight className="w-4 h-4 flex-shrink-0" />
               </Button>
             </Link>
