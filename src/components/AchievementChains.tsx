@@ -54,13 +54,13 @@ const CHAINS: Chain[] = [
   },
   {
     id: "english_correct",
-    name: "Word Master",
+    name: "English Master",
     category: "English",
     steps: [
-      { target: 10, icon: "📖", label: "Reader" },
-      { target: 50, icon: "✏️", label: "Writer" },
-      { target: 200, icon: "📚", label: "Scholar" },
-      { target: 500, icon: "🎓", label: "Professor" },
+      { target: 10, icon: "📖", label: "10 Correct" },
+      { target: 50, icon: "✏️", label: "50 Correct" },
+      { target: 200, icon: "📚", label: "200 Correct" },
+      { target: 500, icon: "🎓", label: "500 Correct" },
     ],
   },
   {

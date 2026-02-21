@@ -489,37 +489,65 @@ const Home = () => {
           </Card>
         )}
         {/* Personalized Stats - Only for logged in users WITH data for this exam */}
-        {user && ratings && (ratings.mathQuestionsAnswered + ratings.englishQuestionsAnswered > 0) && (
-          <Card className="p-4 mb-4 border-2 border-primary/20">
-            <div className="flex flex-col items-center text-center">
-              <div className="flex items-center gap-3 mb-2">
-                <div className="text-3xl font-bold text-primary font-mono">
-                  {projectedScore ? `${projectedScore.min}-${projectedScore.max}` : '—'}
-                </div>
-                <div>
-                  <p className="text-xs text-muted-foreground">Projected {examConfig.shortName}</p>
-                  <p className="text-sm font-medium">{skillLevel?.level}</p>
-                </div>
-              </div>
-              {examType !== 'act' && (
-                <p className="text-xs text-muted-foreground mb-2">
-                  Skill Rating: <span className="font-semibold text-foreground">{Math.round(ratings.overallRating)}</span>
-                </p>
-              )}
-              <div className="flex items-center justify-center gap-4">
-                {streak && streak.current_streak > 0 && (
-                  <div className="flex items-center gap-1 px-3 py-1 rounded-full bg-orange-500/10 text-orange-600 dark:text-orange-400">
-                    <Flame className="w-4 h-4" />
-                    <span className="font-bold">{streak.current_streak}</span>
+        {user && ratings && (ratings.mathQuestionsAnswered + ratings.englishQuestionsAnswered > 0) && (() => {
+          // Calculate tier progress
+          const r = ratings.overallRating;
+          const tiers = [
+            { min: 0, max: 1000, label: 'Developing', next: 'Progressing' },
+            { min: 1000, max: 1200, label: 'Progressing', next: 'Proficient' },
+            { min: 1200, max: 1400, label: 'Proficient', next: 'Advanced' },
+            { min: 1400, max: 1600, label: 'Advanced', next: 'Mastery' },
+            { min: 1600, max: 2000, label: 'Mastery', next: null },
+          ];
+          const currentTier = tiers.find(t => r >= t.min && r < t.max) || tiers[tiers.length - 1];
+          const tierRange = currentTier.max - currentTier.min;
+          const tierProgress = Math.min(100, Math.round(((r - currentTier.min) / tierRange) * 100));
+
+          return (
+            <Card className="p-4 mb-4 border-2 border-primary/20">
+              <div className="flex flex-col items-center text-center">
+                <div className="flex items-center gap-3 mb-2">
+                  <div className="text-3xl font-bold text-primary font-mono">
+                    {projectedScore ? `${projectedScore.min}-${projectedScore.max}` : '—'}
                   </div>
-                )}
-                <div className="flex items-center gap-1 text-xs text-muted-foreground">
-                  <span>{quizCount} sessions</span>
+                  <div>
+                    <p className="text-xs text-muted-foreground">Projected {examConfig.shortName}</p>
+                    <p className="text-sm font-medium">{skillLevel?.level}</p>
+                  </div>
+                </div>
+
+                {/* Tier progress bar */}
+                <div className="w-full max-w-xs mb-2">
+                  <div className="flex justify-between text-[10px] text-muted-foreground mb-1">
+                    <span>{currentTier.label}</span>
+                    {currentTier.next && <span>{currentTier.next} →</span>}
+                  </div>
+                  <div className="w-full h-2 bg-muted rounded-full overflow-hidden">
+                    <div
+                      className="h-full bg-gradient-to-r from-primary to-primary/70 rounded-full transition-all duration-500"
+                      style={{ width: `${tierProgress}%` }}
+                    />
+                  </div>
+                  <p className="text-[10px] text-muted-foreground mt-1">
+                    {tierProgress}% to {currentTier.next || 'max'}{currentTier.next ? ` · ${currentTier.max - Math.round(r)} rating pts remaining` : ''}
+                  </p>
+                </div>
+
+                <div className="flex items-center justify-center gap-4">
+                  {streak && streak.current_streak > 0 && (
+                    <div className="flex items-center gap-1 px-3 py-1 rounded-full bg-orange-500/10 text-orange-600 dark:text-orange-400">
+                      <Flame className="w-4 h-4" />
+                      <span className="font-bold">{streak.current_streak}</span>
+                    </div>
+                  )}
+                  <div className="flex items-center gap-1 text-xs text-muted-foreground">
+                    <span>{quizCount} sessions</span>
+                  </div>
                 </div>
               </div>
-            </div>
-          </Card>
-        )}
+            </Card>
+          );
+        })()}
 
         {/* Revenge Mode Banner */}
         <div className="mb-4">
