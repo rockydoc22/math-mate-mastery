@@ -40,6 +40,7 @@ const examOptions: { key: ExamType; label: string }[] = [
 ];
 
 type MissedQuestion = { fact: SATFact; userAnswer: string };
+type AnsweredQuestion = { fact: SATFact; userAnswer: string; correct: boolean };
 
 const RapidFacts = () => {
   const [examFilter, setExamFilter] = useState<ExamType>("sat");
@@ -54,6 +55,7 @@ const RapidFacts = () => {
   const [timeLeft, setTimeLeft] = useState(CHALLENGE_DURATION);
   const [selectedAnswer, setSelectedAnswer] = useState<string | null>(null);
   const [missedQuestions, setMissedQuestions] = useState<MissedQuestion[]>([]);
+  const [allAnswered, setAllAnswered] = useState<AnsweredQuestion[]>([]);
   const [expandedMissed, setExpandedMissed] = useState<Set<string>>(new Set());
   const [showMissed, setShowMissed] = useState(false);
   const [highScore, setHighScore] = useState(() => {
@@ -92,6 +94,7 @@ const RapidFacts = () => {
     setTimeLeft(CHALLENGE_DURATION);
     setSelectedAnswer(null);
     setMissedQuestions([]);
+    setAllAnswered([]);
     setExpandedMissed(new Set());
     setShowMissed(false);
     setPhase("playing");
@@ -130,6 +133,16 @@ const RapidFacts = () => {
     if (selectedAnswer) return;
     setSelectedAnswer(answer);
     const correct = answer === currentFact?.correctAnswer;
+    
+    // Track all answered questions for review
+    if (currentFact) {
+      setAllAnswered(prev =>
+        prev.find(a => a.fact.id === currentFact.id)
+          ? prev
+          : [...prev, { fact: currentFact, userAnswer: answer, correct }]
+      );
+    }
+    
     if (correct) {
       const newStreak = streak + 1;
       const bonus = newStreak >= 5 ? 3 : newStreak >= 3 ? 2 : 1;
@@ -286,19 +299,20 @@ const RapidFacts = () => {
               </div>
             </div>
 
-            {/* Missed questions CTA */}
-            {missedQuestions.length > 0 && (
-              <button
-                onClick={() => setShowMissed(v => !v)}
-                className="w-full flex items-center justify-between p-3 rounded-lg bg-destructive/10 border border-destructive/20 text-left hover:bg-destructive/15 transition-colors"
-              >
-                <span className="flex items-center gap-2 font-semibold text-destructive">
-                  <XCircle className="w-4 h-4" />
-                  Review {missedQuestions.length} missed question{missedQuestions.length > 1 ? "s" : ""}
-                </span>
-                {showMissed ? <ChevronUp className="w-4 h-4 text-destructive" /> : <ChevronDown className="w-4 h-4 text-destructive" />}
-              </button>
-            )}
+            {/* Review all questions CTA */}
+            <button
+              onClick={() => setShowMissed(v => !v)}
+              className="w-full flex items-center justify-between p-3 rounded-lg bg-primary/10 border border-primary/20 text-left hover:bg-primary/15 transition-colors"
+            >
+              <span className="flex items-center gap-2 font-semibold text-primary">
+                <BookOpen className="w-4 h-4" />
+                Review All {allAnswered.length} Questions
+                {missedQuestions.length > 0 && (
+                  <span className="text-xs text-destructive">({missedQuestions.length} missed)</span>
+                )}
+              </span>
+              {showMissed ? <ChevronUp className="w-4 h-4 text-primary" /> : <ChevronDown className="w-4 h-4 text-primary" />}
+            </button>
             {missedQuestions.length === 0 && (
               <p className="text-emerald-600 dark:text-emerald-400 font-semibold text-sm">🎯 Perfect run — no missed questions!</p>
             )}
@@ -314,27 +328,24 @@ const RapidFacts = () => {
             </div>
           </Card>
 
-          {/* Missed questions expanded review */}
-          {showMissed && missedQuestions.length > 0 && (
+          {/* Full question review */}
+          {showMissed && allAnswered.length > 0 && (
             <div className="space-y-3">
               <h3 className="font-bold text-lg flex items-center gap-2 px-1">
-                <XCircle className="w-5 h-5 text-destructive" />
-                Questions to Review
+                <BookOpen className="w-5 h-5 text-primary" />
+                All Questions ({allAnswered.filter(a => a.correct).length} ✓ / {allAnswered.filter(a => !a.correct).length} ✗)
               </h3>
-              {missedQuestions.map(({ fact, userAnswer }) => {
+              {allAnswered.map(({ fact, userAnswer, correct }) => {
                 const cfg = categoryConfig[fact.category] || categoryConfig.strategy;
                 const isOpen = expandedMissed.has(fact.id);
                 return (
-                  <Card key={fact.id} className="overflow-hidden border-destructive/20">
+                  <Card key={fact.id} className={`overflow-hidden ${correct ? 'border-emerald-500/20' : 'border-destructive/20'}`}>
                     <button
                       className="w-full p-4 text-left flex items-start justify-between gap-3 hover:bg-muted/50 transition-colors"
                       onClick={() => toggleExpanded(fact.id)}
                     >
                       <div className="flex items-start gap-3 flex-1 min-w-0">
-                        <Badge variant="outline" className="shrink-0 text-xs mt-0.5">
-                          <cfg.icon className={`w-3 h-3 mr-1 ${cfg.color}`} />
-                          {cfg.label}
-                        </Badge>
+                        <span className={`text-lg shrink-0 ${correct ? '' : ''}`}>{correct ? '✓' : '✗'}</span>
                         <span className="font-medium text-sm leading-snug">{fact.question}</span>
                       </div>
                       {isOpen
@@ -345,16 +356,22 @@ const RapidFacts = () => {
                     {isOpen && (
                       <div className="px-4 pb-4 space-y-2 border-t pt-3">
                         <div className="flex items-start gap-2 text-sm">
-                          <span className="text-destructive font-semibold shrink-0">✗ Your answer:</span>
-                          <span className="text-destructive">{userAnswer}</span>
+                          <span className={`font-semibold shrink-0 ${correct ? 'text-emerald-600 dark:text-emerald-400' : 'text-destructive'}`}>
+                            {correct ? '✓ Your answer:' : '✗ Your answer:'}
+                          </span>
+                          <span className={correct ? 'text-emerald-600 dark:text-emerald-400' : 'text-destructive'}>{userAnswer}</span>
                         </div>
-                        <div className="flex items-start gap-2 text-sm">
-                          <span className="font-semibold shrink-0 text-emerald-600 dark:text-emerald-400">✓ Correct:</span>
-                          <span className="font-bold text-emerald-600 dark:text-emerald-400">{fact.correctAnswer}</span>
-                        </div>
+                        {!correct && (
+                          <div className="flex items-start gap-2 text-sm">
+                            <span className="font-semibold shrink-0 text-emerald-600 dark:text-emerald-400">✓ Correct:</span>
+                            <span className="font-bold text-emerald-600 dark:text-emerald-400">{fact.correctAnswer}</span>
+                          </div>
+                        )}
                         <div className="pt-1 text-xs text-muted-foreground">
-                          <span className="font-medium">Other options were: </span>
-                          {fact.wrongAnswers.filter(w => w !== userAnswer).join(", ")}
+                          <Badge variant="outline" className="text-xs">
+                            <cfg.icon className={`w-3 h-3 mr-1 ${cfg.color}`} />
+                            {cfg.label}
+                          </Badge>
                         </div>
                       </div>
                     )}
