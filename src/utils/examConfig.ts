@@ -191,7 +191,7 @@ export function ratingToSectionScore(rating: number, examType: ExamType): number
   // Round to nearest 10 for SAT/PSAT (they report in 10-point increments)
   const raw = min + normalized * range;
   if (examType === 'act') {
-    return Math.round(raw);
+    return Math.min(max, Math.max(min, Math.round(raw)));
   }
-  return Math.round(raw / 10) * 10;
+  return Math.min(max, Math.max(min, Math.round(raw / 10) * 10));
 }

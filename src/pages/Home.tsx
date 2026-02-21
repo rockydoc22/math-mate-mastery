@@ -297,11 +297,25 @@ const Home = () => {
               size="xl" 
               clickable 
               onClick={handle40SquaredClick}
-              examType={examType}
+            examType={examType}
               showTagline
               taglineText={examConfig.tagline}
             />
           </div>
+
+          {/* Check for Updates - prominent for PWA/iPhone users */}
+          {(hasUpdate || true) && (
+            <Button
+              onClick={forceUpdate}
+              disabled={isUpdating}
+              variant={hasUpdate ? "default" : "outline"}
+              size="sm"
+              className={`mb-3 gap-2 w-full max-w-xs ${hasUpdate ? 'animate-pulse bg-emerald-500 hover:bg-emerald-600 text-white' : ''}`}
+            >
+              <RefreshCw className={`w-4 h-4 ${isUpdating ? "animate-spin" : ""}`} />
+              {isUpdating ? "Updating..." : hasUpdate ? "🆕 Update Available — Tap Now" : `Check for Updates (v${APP_VERSION})`}
+            </Button>
+          )}
 
           {/* Exam badge - tappable switcher */}
           <div className="flex items-center gap-1 mb-2">
