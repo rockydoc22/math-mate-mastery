@@ -32,6 +32,11 @@ export const useGameStats = () => {
   const [achievements, setAchievements] = useState<Achievement[]>([]);
   const [quizCount, setQuizCount] = useState(0);
 
+  // Helper: get local date string (YYYY-MM-DD) without UTC conversion
+  const getLocalDateStr = (d: Date = new Date()): string => {
+    return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
+  };
+
   const fetchStats = async () => {
     if (!user) return;
 
@@ -41,7 +46,23 @@ export const useGameStats = () => {
       supabase.from("quiz_scores").select("id").eq("user_id", user.id),
     ]);
 
-    if (streakRes.data) setStreak(streakRes.data);
+    if (streakRes.data) {
+      // Recalculate streak based on whether it's actually still active
+      const lastDate = streakRes.data.last_practice_date;
+      const today = getLocalDateStr();
+      const yesterday = getLocalDateStr(new Date(Date.now() - 86400000));
+      
+      let displayStreak = streakRes.data.current_streak;
+      if (lastDate && lastDate !== today && lastDate !== yesterday) {
+        // Streak is broken — hasn't practiced today or yesterday
+        displayStreak = 0;
+      }
+      
+      setStreak({
+        ...streakRes.data,
+        current_streak: displayStreak,
+      });
+    }
     if (achievementsRes.data) setAchievements(achievementsRes.data);
     if (scoresRes.data) setQuizCount(scoresRes.data.length);
   };
@@ -53,7 +74,7 @@ export const useGameStats = () => {
   const updateStreak = async () => {
     if (!user) return;
 
-    const today = new Date().toISOString().split("T")[0];
+    const today = getLocalDateStr();
     const { data: current } = await supabase
       .from("streaks")
       .select("*")
@@ -63,7 +84,7 @@ export const useGameStats = () => {
     if (!current) return;
 
     const lastDate = current.last_practice_date;
-    const yesterday = new Date(Date.now() - 86400000).toISOString().split("T")[0];
+    const yesterday = getLocalDateStr(new Date(Date.now() - 86400000));
 
     let newStreak = current.current_streak;
     

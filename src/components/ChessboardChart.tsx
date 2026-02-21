@@ -31,19 +31,21 @@ const ChessboardChart = () => {
     return num.toString();
   };
 
-  // Format as dollars
-  const formatDollars = (pennies: bigint): string => {
-    const dollars = pennies / BigInt(100);
-    if (dollars >= BigInt("1000000000000")) { // trillion
-      return `$${(Number(dollars / BigInt("1000000000")) / 1000).toFixed(2)} trillion`;
-    } else if (dollars >= BigInt("1000000000")) { // billion
-      return `$${(Number(dollars / BigInt("1000000")) / 1000).toFixed(2)} billion`;
-    } else if (dollars >= BigInt("1000000")) { // million
-      return `$${(Number(dollars / BigInt("1000")) / 1000).toFixed(2)} million`;
-    } else if (dollars >= BigInt("1000")) {
-      return `$${Number(dollars).toLocaleString()}`;
-    }
-    return `$${(Number(pennies) / 100).toFixed(2)}`;
+  // Format as Bitcoin (1 BTC ≈ 100,000 USD equivalent for illustration)
+  const BTC_PER_USD = 1 / 100000; // ~$100k per BTC
+  const formatBitcoin = (pennies: bigint): string => {
+    const dollars = Number(pennies) / 100;
+    const btc = dollars * BTC_PER_USD;
+    if (btc >= 1e15) return `₿${(btc / 1e15).toFixed(2)} quadrillion`;
+    if (btc >= 1e12) return `₿${(btc / 1e12).toFixed(2)} trillion`;
+    if (btc >= 1e9) return `₿${(btc / 1e9).toFixed(2)} billion`;
+    if (btc >= 1e6) return `₿${(btc / 1e6).toFixed(2)} million`;
+    if (btc >= 1000) return `₿${btc.toLocaleString(undefined, { maximumFractionDigits: 2 })}`;
+    if (btc >= 1) return `₿${btc.toFixed(4)}`;
+    if (btc >= 0.00001) return `₿${btc.toFixed(8)}`;
+    // Show in satoshis (1 BTC = 100M sats)
+    const sats = Math.round(btc * 1e8);
+    return `${sats.toLocaleString()} sats`;
   };
 
   // Auto-play animation
@@ -137,22 +139,22 @@ const ChessboardChart = () => {
           <div>
             <p className="text-xs text-muted-foreground mb-1">Pennies on square {activeSquare}</p>
             <p className="text-lg font-bold text-primary">{formatNumber(currentPennies)}</p>
-            <p className="text-xs text-muted-foreground">{formatDollars(currentPennies)}</p>
+            <p className="text-xs text-muted-foreground">{formatBitcoin(currentPennies)}</p>
           </div>
           <div>
             <p className="text-xs text-muted-foreground mb-1">Total so far</p>
             <p className="text-lg font-bold text-amber-600">{formatNumber(totalPenniesUpToSquare)}</p>
-            <p className="text-xs text-muted-foreground">{formatDollars(totalPenniesUpToSquare)}</p>
+            <p className="text-xs text-muted-foreground">{formatBitcoin(totalPenniesUpToSquare)}</p>
           </div>
         </div>
         
         {activeSquare === 64 && (
           <div className="mt-4 pt-4 border-t border-amber-500/30 text-center">
             <p className="text-sm font-semibold text-amber-600">
-              🎉 Final total: Over $92 quadrillion!
+              ₿ Final total: Over ₿922 billion!
             </p>
             <p className="text-xs text-muted-foreground mt-1">
-              That's ~1,000× the entire U.S. national debt!
+              That's ~46 million× Bitcoin's total supply of 21M!
             </p>
           </div>
         )}

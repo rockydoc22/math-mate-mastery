@@ -13,20 +13,24 @@ export const StreakCalendar = ({ practiceDates, currentStreak, longestStreak }: 
   const { weeks, months } = useMemo(() => {
     const today = new Date();
     const dayMs = 86400000;
-    // Show last 12 weeks (84 days)
     const totalDays = 84;
     const startDate = new Date(today.getTime() - (totalDays - 1) * dayMs);
     
+    // Helper: local date string without UTC conversion
+    const toLocalDate = (d: Date) => 
+      `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
+    
     const dateSet = new Set(practiceDates);
+    const todayStr = toLocalDate(today);
     
     const days: { date: string; practiced: boolean; isToday: boolean }[] = [];
     for (let i = 0; i < totalDays; i++) {
       const d = new Date(startDate.getTime() + i * dayMs);
-      const dateStr = d.toISOString().split("T")[0];
+      const dateStr = toLocalDate(d);
       days.push({
         date: dateStr,
         practiced: dateSet.has(dateStr),
-        isToday: dateStr === today.toISOString().split("T")[0],
+        isToday: dateStr === todayStr,
       });
     }
 
