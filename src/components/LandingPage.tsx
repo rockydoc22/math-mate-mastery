@@ -120,21 +120,19 @@ export const LandingPage = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-background via-primary/5 to-accent/10">
-      {/* PWA Update Banner */}
-      {hasUpdate && (
-        <div className="px-4 py-2 bg-primary/10 text-center">
-          <Button
-            onClick={forceUpdate}
-            disabled={isUpdating}
-            variant="default"
-            size="sm"
-            className="gap-2"
-          >
-            <RefreshCw className={`w-4 h-4 ${isUpdating ? "animate-spin" : ""}`} />
-            {isUpdating ? "Updating..." : "Update PWA"}
-          </Button>
-        </div>
-      )}
+      {/* Check for Updates - always visible for PWA/iPhone users */}
+      <div className="px-4 py-2 text-center">
+        <Button
+          onClick={forceUpdate}
+          disabled={isUpdating}
+          variant={hasUpdate ? "default" : "outline"}
+          size="sm"
+          className={`gap-2 w-full max-w-xs ${hasUpdate ? 'animate-pulse bg-emerald-500 hover:bg-emerald-600 text-white' : ''}`}
+        >
+          <RefreshCw className={`w-4 h-4 ${isUpdating ? "animate-spin" : ""}`} />
+          {isUpdating ? "Updating..." : hasUpdate ? "🆕 Update Available — Tap Now" : `Check for Updates (v${APP_VERSION})`}
+        </Button>
+      </div>
       {/* Hero Section */}
       <header className="px-4 pt-8 pb-12 text-center">
         <div className="max-w-2xl mx-auto">
