@@ -168,7 +168,7 @@ export const LandingPage = () => {
           <div className="flex flex-col items-center gap-3">
             <div className="text-center mb-2">
               <p className="text-sm font-semibold text-primary">🎉 100% Free — No catch!</p>
-              <p className="text-xs text-muted-foreground mt-1">
+              <p className="text-base font-medium text-foreground mt-1">
                 In exchange, leave comments & suggestions to help us make it better.
               </p>
             </div>
