@@ -1,13 +1,25 @@
+import { useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { ArrowLeft, BookOpen, Brain } from "lucide-react";
+import { ArrowLeft, BookOpen, Brain, ChevronRight, CheckCircle2, XCircle, Sparkles } from "lucide-react";
 import { getAPSubject } from "@/utils/apConfig";
+import { AP_CHEM_UNITS, apChemQuestionsByUnit, type APChemUnit } from "@/data/apChemistryQuestions";
+import { Question } from "@/data/questions";
+import { MathText } from "@/components/MathText";
+import { AITutorExplanation } from "@/components/AITutorExplanation";
+
+type ViewState =
+  | { mode: 'units' }
+  | { mode: 'quiz'; unit: APChemUnit; questions: Question[]; currentIndex: number; selectedAnswer: string | null; showResult: boolean; score: number; answered: number }
+  | { mode: 'results'; unit: APChemUnit; score: number; total: number };
 
 const APStudy = () => {
   const { subjectId } = useParams<{ subjectId: string }>();
   const navigate = useNavigate();
   const subject = subjectId ? getAPSubject(subjectId) : undefined;
+  const [view, setView] = useState<ViewState>({ mode: 'units' });
+  const [showAITutor, setShowAITutor] = useState(false);
 
   if (!subject) {
     return (
@@ -21,41 +33,247 @@ const APStudy = () => {
     );
   }
 
+  // Determine which units config to use based on subject
+  const isChemistry = subjectId === 'ap-chemistry';
+  const units = isChemistry ? AP_CHEM_UNITS : [];
+  const questionsByUnit = isChemistry ? apChemQuestionsByUnit : {};
+
+  const startQuiz = (unit: APChemUnit) => {
+    const questions = questionsByUnit[unit.id] || [];
+    if (questions.length === 0) return;
+    setView({ mode: 'quiz', unit, questions, currentIndex: 0, selectedAnswer: null, showResult: false, score: 0, answered: 0 });
+    setShowAITutor(false);
+  };
+
+  const handleSelectAnswer = (letter: string) => {
+    if (view.mode !== 'quiz' || view.showResult) return;
+    setView({ ...view, selectedAnswer: letter });
+  };
+
+  const handleConfirm = () => {
+    if (view.mode !== 'quiz' || !view.selectedAnswer) return;
+    const isCorrect = view.selectedAnswer === view.questions[view.currentIndex].correctAnswer;
+    setView({
+      ...view,
+      showResult: true,
+      score: view.score + (isCorrect ? 1 : 0),
+      answered: view.answered + 1,
+    });
+    setShowAITutor(false);
+  };
+
+  const handleNext = () => {
+    if (view.mode !== 'quiz') return;
+    const nextIndex = view.currentIndex + 1;
+    if (nextIndex >= view.questions.length) {
+      setView({ mode: 'results', unit: view.unit, score: view.score, total: view.questions.length });
+    } else {
+      setView({ ...view, currentIndex: nextIndex, selectedAnswer: null, showResult: false });
+      setShowAITutor(false);
+    }
+  };
+
+  // ─── Units list view ───
+  if (view.mode === 'units') {
+    return (
+      <div className="min-h-screen bg-gradient-to-br from-background via-primary/5 to-accent/10 p-4">
+        <div className="max-w-2xl mx-auto space-y-6">
+          <div className="flex items-center gap-3">
+            <Button variant="ghost" size="icon" onClick={() => navigate("/ap-tests")}>
+              <ArrowLeft className="w-5 h-5" />
+            </Button>
+            <div>
+              <h1 className="text-2xl font-bold flex items-center gap-2">
+                <span className="text-2xl">{subject.icon}</span>
+                {subject.name}
+              </h1>
+              <p className="text-sm text-muted-foreground">{subject.description}</p>
+            </div>
+          </div>
+
+          {units.length > 0 ? (
+            <div className="grid gap-3">
+              {units.map(unit => {
+                const questions = questionsByUnit[unit.id] || [];
+                const count = questions.length;
+                return (
+                  <Card
+                    key={unit.id}
+                    className={`p-4 transition-all ${count > 0 ? 'cursor-pointer hover:scale-[1.01] hover:shadow-md hover:border-primary/40' : 'opacity-50 cursor-not-allowed border-dashed'}`}
+                    onClick={() => count > 0 && startQuiz(unit)}
+                  >
+                    <div className="flex items-center gap-3">
+                      <span className="text-2xl">{unit.icon}</span>
+                      <div className="flex-1 min-w-0">
+                        <h3 className="font-semibold text-sm">Unit {unit.unitNumber}: {unit.name}</h3>
+                        <p className="text-xs text-muted-foreground truncate">{unit.description}</p>
+                      </div>
+                      <div className="flex items-center gap-2 shrink-0">
+                        <span className="text-xs text-muted-foreground">{count} Q{count !== 1 ? 's' : ''}</span>
+                        {count > 0 && <ChevronRight className="w-4 h-4 text-muted-foreground" />}
+                      </div>
+                    </div>
+                  </Card>
+                );
+              })}
+            </div>
+          ) : (
+            <Card className="p-8 text-center space-y-4">
+              <div className="mx-auto w-16 h-16 rounded-2xl bg-gradient-to-br from-primary/20 to-accent/20 flex items-center justify-center">
+                <Brain className="w-8 h-8 text-primary" />
+              </div>
+              <h2 className="text-xl font-bold">Questions Coming Soon!</h2>
+              <p className="text-sm text-muted-foreground max-w-md mx-auto">
+                We're building the {subject.name} question bank.
+              </p>
+              <div className="flex items-center justify-center gap-2 text-xs text-muted-foreground">
+                <BookOpen className="w-4 h-4" />
+                <span>Score range: {subject.scoreRange.min}–{subject.scoreRange.max}</span>
+              </div>
+              <Button variant="outline" onClick={() => navigate("/ap-tests")}>
+                ← Browse Other AP Subjects
+              </Button>
+            </Card>
+          )}
+        </div>
+      </div>
+    );
+  }
+
+  // ─── Results view ───
+  if (view.mode === 'results') {
+    const pct = Math.round((view.score / view.total) * 100);
+    return (
+      <div className="min-h-screen bg-gradient-to-br from-background via-primary/5 to-accent/10 p-4">
+        <div className="max-w-lg mx-auto space-y-6 pt-8">
+          <Card className="p-8 text-center space-y-4">
+            <div className="text-5xl">{pct >= 80 ? '🎉' : pct >= 60 ? '👍' : '📚'}</div>
+            <h2 className="text-2xl font-bold">Unit {view.unit.unitNumber} Complete!</h2>
+            <p className="text-lg font-semibold text-primary">{view.score} / {view.total} correct ({pct}%)</p>
+            <p className="text-sm text-muted-foreground">{view.unit.name}</p>
+            <div className="flex gap-3 justify-center pt-2">
+              <Button variant="outline" onClick={() => setView({ mode: 'units' })}>Back to Units</Button>
+              <Button onClick={() => startQuiz(view.unit)}>Retry Unit</Button>
+            </div>
+          </Card>
+        </div>
+      </div>
+    );
+  }
+
+  // ─── Quiz view ───
+  const q = view.questions[view.currentIndex];
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-background via-primary/5 to-accent/10 p-4">
-      <div className="max-w-2xl mx-auto space-y-6">
+      <div className="max-w-2xl mx-auto space-y-4">
         {/* Header */}
-        <div className="flex items-center gap-3">
-          <Button variant="ghost" size="icon" onClick={() => navigate("/ap-tests")}>
-            <ArrowLeft className="w-5 h-5" />
+        <div className="flex items-center justify-between">
+          <Button variant="ghost" size="sm" onClick={() => setView({ mode: 'units' })} className="gap-1">
+            <ArrowLeft className="w-4 h-4" /> Units
           </Button>
-          <div>
-            <h1 className="text-2xl font-bold flex items-center gap-2">
-              <span className="text-2xl">{subject.icon}</span>
-              {subject.name}
-            </h1>
-            <p className="text-sm text-muted-foreground">{subject.description}</p>
+          <div className="text-sm font-medium text-muted-foreground">
+            Unit {view.unit.unitNumber} • Q{view.currentIndex + 1}/{view.questions.length}
+          </div>
+          <div className="text-sm font-semibold text-primary">
+            {view.score}/{view.answered}
           </div>
         </div>
 
-        {/* Coming soon placeholder */}
-        <Card className="p-8 text-center space-y-4">
-          <div className="mx-auto w-16 h-16 rounded-2xl bg-gradient-to-br from-primary/20 to-accent/20 flex items-center justify-center">
-            <Brain className="w-8 h-8 text-primary" />
-          </div>
-          <h2 className="text-xl font-bold">Questions Coming Soon!</h2>
-          <p className="text-sm text-muted-foreground max-w-md mx-auto">
-            We're building the {subject.name} question bank. This will include multiple-choice practice
-            questions aligned to the College Board AP curriculum.
+        {/* Progress bar */}
+        <div className="w-full h-1.5 bg-muted rounded-full overflow-hidden">
+          <div
+            className="h-full bg-primary rounded-full transition-all"
+            style={{ width: `${((view.currentIndex + (view.showResult ? 1 : 0)) / view.questions.length) * 100}%` }}
+          />
+        </div>
+
+        {/* Question card */}
+        <Card className="p-5 sm:p-6 shadow-xl border-2 space-y-4">
+          <p className="text-xs font-semibold text-primary uppercase tracking-wide">
+            {q.domain} • {q.skill}
           </p>
-          <div className="flex items-center justify-center gap-2 text-xs text-muted-foreground">
-            <BookOpen className="w-4 h-4" />
-            <span>Score range: {subject.scoreRange.min}–{subject.scoreRange.max}</span>
+          <h2 className="text-base sm:text-lg font-bold leading-relaxed whitespace-pre-wrap">
+            <MathText text={q.question} />
+          </h2>
+
+          <div className="space-y-2">
+            {q.options.map(option => {
+              const isSelected = view.selectedAnswer === option.letter;
+              const isCorrect = option.letter === q.correctAnswer;
+              const showCorrect = view.showResult && isCorrect;
+              const showWrong = view.showResult && isSelected && !isCorrect;
+
+              return (
+                <button
+                  key={option.letter}
+                  onClick={() => handleSelectAnswer(option.letter)}
+                  disabled={view.showResult}
+                  className={`w-full p-3 rounded-lg border-2 text-left transition-all ${
+                    !view.showResult && !isSelected ? 'border-border hover:border-primary hover:bg-primary/5' : ''
+                  } ${!view.showResult && isSelected ? 'border-primary bg-primary/10' : ''} ${
+                    showCorrect ? 'border-green-500 bg-green-500/10' : ''
+                  } ${showWrong ? 'border-destructive bg-destructive/10' : ''} ${
+                    view.showResult ? 'cursor-default' : 'cursor-pointer'
+                  }`}
+                >
+                  <div className="flex items-center gap-3">
+                    <span className={`font-bold text-base min-w-[1.5rem] ${showCorrect ? 'text-green-600' : ''} ${showWrong ? 'text-destructive' : ''} ${!view.showResult && isSelected ? 'text-primary' : ''}`}>
+                      {option.letter}.
+                    </span>
+                    <span className="flex-1 text-sm"><MathText text={option.text} /></span>
+                    {showCorrect && <CheckCircle2 className="w-5 h-5 text-green-600 shrink-0" />}
+                    {showWrong && <XCircle className="w-5 h-5 text-destructive shrink-0" />}
+                  </div>
+                </button>
+              );
+            })}
           </div>
-          <Button variant="outline" onClick={() => navigate("/ap-tests")}>
-            ← Browse Other AP Subjects
-          </Button>
+
+          {/* Explanation */}
+          {view.showResult && (
+            <div className="space-y-3">
+              <div className="p-3 bg-muted rounded-lg">
+                <p className="text-xs font-semibold mb-1 text-foreground">Explanation:</p>
+                <p className="text-xs sm:text-sm text-muted-foreground leading-relaxed">
+                  <MathText text={q.explanation} />
+                </p>
+              </div>
+
+              {/* AI Tutor button */}
+              {!showAITutor && (
+                <Button variant="outline" size="sm" onClick={() => setShowAITutor(true)} className="gap-2 w-full">
+                  <Sparkles className="w-4 h-4" /> Ask AI Tutor for deeper explanation
+                </Button>
+              )}
+            </div>
+          )}
         </Card>
+
+        {/* AI Tutor */}
+        {showAITutor && view.showResult && (
+          <AITutorExplanation
+            question={q.question}
+            options={q.options}
+            correctAnswer={q.correctAnswer}
+            userAnswer={view.selectedAnswer || ''}
+            explanation={q.explanation}
+            onClose={() => setShowAITutor(false)}
+          />
+        )}
+
+        {/* Action buttons */}
+        <div className="flex justify-end gap-3">
+          {!view.showResult ? (
+            <Button onClick={handleConfirm} disabled={!view.selectedAnswer} className="min-w-[120px]">
+              Check Answer
+            </Button>
+          ) : (
+            <Button onClick={handleNext} className="min-w-[120px]">
+              {view.currentIndex + 1 >= view.questions.length ? 'See Results' : 'Next →'}
+            </Button>
+          )}
+        </div>
       </div>
     </div>
   );
