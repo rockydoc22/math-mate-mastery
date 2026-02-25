@@ -1,7 +1,8 @@
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { EXAM_CONFIGS, type ExamType } from "@/utils/examConfig";
-import { GraduationCap } from "lucide-react";
+import { GraduationCap, FlaskConical } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 interface ExamSelectorProps {
   onSelect: (examType: ExamType) => void;
@@ -11,6 +12,8 @@ interface ExamSelectorProps {
 const examOrder: ExamType[] = ['sat', 'psat', 'act'];
 
 export const ExamSelector = ({ onSelect, isModal = false }: ExamSelectorProps) => {
+  const navigate = useNavigate();
+
   return (
     <div className={`min-h-screen flex flex-col items-center justify-center p-4 ${!isModal ? 'bg-gradient-to-br from-background via-primary/5 to-accent/10' : ''}`}>
       <div className="max-w-md w-full space-y-6 animate-in fade-in duration-500">
@@ -56,6 +59,29 @@ export const ExamSelector = ({ onSelect, isModal = false }: ExamSelectorProps) =
               </Card>
             );
           })}
+
+          {/* AP Tests — separate flow */}
+          <Card
+            className="p-5 cursor-pointer border-2 transition-all hover:scale-[1.02] hover:shadow-lg hover:border-primary/50"
+            onClick={() => navigate("/ap-tests")}
+          >
+            <div className="flex items-center gap-4">
+              <span className="text-3xl">🧪</span>
+              <div className="flex-1">
+                <div className="flex items-center gap-2">
+                  <h3 className="font-bold text-lg">AP Tests</h3>
+                  <span className="text-[10px] px-2 py-0.5 rounded-full bg-primary/10 text-primary font-medium">
+                    NEW
+                  </span>
+                </div>
+                <p className="text-sm text-muted-foreground">Physics, Biology, Calculus, US History & more</p>
+                <p className="text-xs text-muted-foreground mt-1">
+                  Score range: 1–5 • Multiple AP subjects
+                </p>
+              </div>
+              <FlaskConical className="w-5 h-5 text-muted-foreground" />
+            </div>
+          </Card>
         </div>
 
         <p className="text-xs text-center text-muted-foreground">
