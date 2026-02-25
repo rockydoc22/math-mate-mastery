@@ -36,6 +36,8 @@ import StarterKitDownload from "./pages/StarterKitDownload";
 import KeyPrinciples from "./pages/KeyPrinciples";
 import RapidFacts from "./pages/RapidFacts";
 import BossBattle from "./pages/BossBattle";
+import APTests from "./pages/APTests";
+import APStudy from "./pages/APStudy";
 
 const queryClient = new QueryClient();
 
@@ -79,6 +81,8 @@ const App = () => (
             <Route path="/key-principles" element={<KeyPrinciples />} />
             <Route path="/rapid-facts" element={<RapidFacts />} />
             <Route path="/boss-battle" element={<BossBattle />} />
+            <Route path="/ap-tests" element={<APTests />} />
+            <Route path="/ap-study/:subjectId" element={<APStudy />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
