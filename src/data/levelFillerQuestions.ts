@@ -935,7 +935,7 @@ const generateLevel7Questions = (): VisualQuestion[] => {
     { ineq: "(x-4)(x-10) > 0", answer: "x < 4 or x > 10", wrongs: ["4 < x < 10", "x ≤ 4 or x ≥ 10", "x < -10 or x > -4"] },
     { ineq: "(x+3)(x-5) < 0", answer: "-3 < x < 5", wrongs: ["x < -3 or x > 5", "-5 < x < 3", "x ≤ -3 or x ≥ 5"] },
     { ineq: "(x-2)(x-10) < 0", answer: "2 < x < 10", wrongs: ["x < 2 or x > 10", "-10 < x < -2", "x ≤ 2 or x ≥ 10"] },
-    { ineq: "(x+1)(x-7) > 0", answer: "x < -1 or x > 7", wrongs: ["-1 < x < 7", "x ≤ -1 or x ≥ 7", "x < -7 or x > 1"] },
+    { ineq: "(x+1)(x-7) > 0", answer: "x < -1 or x > 7", wrongs: ["x < -1 or x < 7", "-1 < x < 7", "x > -1 and x > 7"] },
   ];
 
   quadIneqQuestions.forEach((qq, i) => {
