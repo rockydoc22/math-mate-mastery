@@ -16,6 +16,7 @@ const bonusLevelQuestions: Record<string, number> = {
   'hard-math-195': 11, // evolutionary game theory
   'hard-math-196': 11, // information theory Huffman coding
   'hard-math-214': 11, // derivatives trading Greeks
+  'hard-math-223': 12, // Otto cycle engine efficiency (engineering/physics)
 };
 
 // Force hard questions to be rated 9-10 (or bonus levels 11-13 for flagged questions)

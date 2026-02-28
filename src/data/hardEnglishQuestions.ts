@@ -3161,11 +3161,11 @@ export const hardEnglishQuestions: EnglishQuestion[] = [
     options: [
       { letter: 'A', text: ': (colon)' },
       { letter: 'B', text: '; (semicolon)' },
-      { letter: 'C', text: '— (em dash)' },
-      { letter: 'D', text: 'Either (A) or (C)' }
+      { letter: 'C', text: ', (comma)' },
+      { letter: 'D', text: '— (em dash)' }
     ],
-    correctAnswer: 'D',
-    explanation: 'Both a colon and an em dash can introduce an explanatory list after a complete independent clause. The colon is more formal and traditional for lists; the em dash adds emphasis and is more informal. Either works correctly here. A semicolon (B) joins independent clauses but doesn\'t introduce lists.',
+    correctAnswer: 'A',
+    explanation: 'A colon correctly introduces an explanatory list after a complete independent clause. An em dash could also work here for emphasis, but the colon is the standard and most appropriate choice for introducing a list in formal academic writing. A semicolon (B) joins independent clauses but doesn\'t introduce lists. A comma (C) would create a comma splice between independent clauses.',
     difficulty: 'hard',
     domain: 'Writing',
     skill: 'Punctuation Introducing Lists'
