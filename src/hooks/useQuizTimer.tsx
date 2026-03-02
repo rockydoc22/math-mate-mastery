@@ -15,6 +15,15 @@ export const useQuizTimer = ({ questionCount, enabled = true, onTimeUp }: QuizTi
   const [isRunning, setIsRunning] = useState(enabled);
   const [isTimeUp, setIsTimeUp] = useState(false);
 
+  // Re-initialize timer when questionCount changes (questions load async)
+  useEffect(() => {
+    if (totalSeconds > 0) {
+      setTimeRemaining(totalSeconds);
+      setIsRunning(enabled);
+      setIsTimeUp(false);
+    }
+  }, [totalSeconds, enabled]);
+
   // Format time as MM:SS
   const formatTime = useCallback((seconds: number) => {
     const mins = Math.floor(seconds / 60);
