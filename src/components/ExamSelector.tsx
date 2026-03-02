@@ -30,25 +30,17 @@ export const ExamSelector = ({ onSelect, isModal = false }: ExamSelectorProps) =
         <div className="space-y-3">
           {examOrder.map((key) => {
             const config = EXAM_CONFIGS[key];
-            const isACT = key === 'act';
             return (
               <Card
                 key={key}
-                className={`p-5 cursor-pointer border-2 transition-all hover:scale-[1.02] hover:shadow-lg ${
-                  isACT ? 'opacity-80 border-dashed' : 'hover:border-primary/50'
-                }`}
-                onClick={() => !isACT && onSelect(key)}
+                className="p-5 cursor-pointer border-2 transition-all hover:scale-[1.02] hover:shadow-lg hover:border-primary/50"
+                onClick={() => onSelect(key)}
               >
                 <div className="flex items-center gap-4">
                   <span className="text-3xl">{config.icon}</span>
                   <div className="flex-1">
                     <div className="flex items-center gap-2">
                       <h3 className="font-bold text-lg">{config.name}</h3>
-                      {isACT && (
-                        <span className="text-[10px] px-2 py-0.5 rounded-full bg-muted text-muted-foreground font-medium">
-                          Coming Soon
-                        </span>
-                      )}
                     </div>
                     <p className="text-sm text-muted-foreground">{config.tagline}</p>
                     <p className="text-xs text-muted-foreground mt-1">
