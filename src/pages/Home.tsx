@@ -327,12 +327,7 @@ const Home = () => {
                 </button>
               );
             })}
-            <button
-              onClick={() => navigate('/ap-tests')}
-              className="text-base px-5 py-3 rounded-full font-bold transition-all bg-muted text-muted-foreground hover:bg-muted/80 cursor-pointer"
-            >
-              🧪 AP
-            </button>
+            {/* AP button hidden until question bank is complete — all AP code is preserved */}
           </div>
 
           {/* SAT Countdown - Single Clear CTA */}
