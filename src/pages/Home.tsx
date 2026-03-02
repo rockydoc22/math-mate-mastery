@@ -200,8 +200,8 @@ const Home = () => {
     navigate(`/quiz?subject=${subject}&count=10&difficulty=all&timer=true`);
   };
 
-  const handleTry3Questions = () => {
-    navigate(`/quiz?subject=both&count=3&difficulty=easy&timer=false`);
+  const handleTry10Questions = () => {
+    navigate(`/quiz?subject=both&count=10&difficulty=easy&timer=false`);
   };
 
   const handle40SquaredClick = () => {
@@ -339,15 +339,15 @@ const Home = () => {
             <div className="text-3xl font-bold text-primary">{nextSAT.daysUntil} days</div>
           </div>
 
-          {/* PRIMARY CTA - Try 3 Questions (for non-logged in users) */}
+          {/* PRIMARY CTA - Try 10 Questions (for non-logged in users) */}
           {!user && (
             <Button 
               size="lg" 
-              onClick={handleTry3Questions}
+              onClick={handleTry10Questions}
               className="mb-4 gap-2 bg-gradient-to-r from-emerald-500 to-teal-500 hover:from-emerald-600 hover:to-teal-600 text-white font-bold text-lg shadow-lg hover:shadow-xl transition-all hover:scale-105 animate-pulse"
             >
               <Sparkles className="w-5 h-5" />
-              Try 3 Questions Now — No Signup
+              Try 10 Questions Now — No Signup
             </Button>
           )}
           
