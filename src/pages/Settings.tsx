@@ -126,24 +126,19 @@ const Settings = () => {
               <div className="grid grid-cols-3 gap-2">
                 {(['sat', 'psat', 'act'] as ExamType[]).map((type) => {
                   const config = EXAM_CONFIGS[type];
-                  const isACT = type === 'act';
                   return (
                     <Button
                       key={type}
                       variant={examType === type ? "default" : "outline"}
                       size="sm"
-                      disabled={isACT}
-                      className={`flex flex-col h-auto py-2 ${isACT ? 'opacity-50' : ''}`}
+                      className="flex flex-col h-auto py-2"
                       onClick={() => {
-                        if (!isACT) {
-                          setExamType(type);
-                          toast({ title: `Switched to ${config.name} mode ${config.icon}` });
-                        }
+                        setExamType(type);
+                        toast({ title: `Switched to ${config.name} mode ${config.icon}` });
                       }}
                     >
                       <span>{config.icon}</span>
                       <span className="text-xs">{config.shortName}</span>
-                      {isACT && <span className="text-[8px]">Soon</span>}
                     </Button>
                   );
                 })}
