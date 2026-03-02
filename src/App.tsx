@@ -39,6 +39,7 @@ import BossBattle from "./pages/BossBattle";
 import APTests from "./pages/APTests";
 import APStudy from "./pages/APStudy";
 import Arcade from "./pages/Arcade";
+import InstallApp from "./pages/InstallApp";
 
 const queryClient = new QueryClient();
 
@@ -85,6 +86,7 @@ const App = () => (
             <Route path="/ap-tests" element={<APTests />} />
             <Route path="/ap-study/:subjectId" element={<APStudy />} />
             <Route path="/arcade" element={<Arcade />} />
+            <Route path="/install" element={<InstallApp />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>

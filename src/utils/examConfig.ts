@@ -123,7 +123,7 @@ export const EXAM_CONFIGS: Record<ExamType, ExamConfig> = {
     maxDifficulty: 10,
     secondsPerQuestion: 60,
     sections: ['Math', 'English', 'Reading', 'Science'],
-    icon: '🧪',
+    icon: '🎓',
     color: 'emerald-500',
     branding: {
       logoText: 'Σ8',

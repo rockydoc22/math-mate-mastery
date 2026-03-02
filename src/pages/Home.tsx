@@ -8,7 +8,7 @@ import {
   Calculator, PenTool, Trophy, Zap, Users, LogIn, User, 
   Award, Swords, ChevronRight, Flame, Brain, X,
   Target, RotateCcw, BookOpen, RefreshCw, FileText, Crown, GraduationCap,
-  Clock, Sparkles, Download, Lightbulb, Play, Skull, Settings, Gamepad2
+  Clock, Sparkles, Download, Lightbulb, Play, Skull, Settings, Gamepad2, Smartphone
 } from "lucide-react";
 import { useNavigate, Link } from "react-router-dom";
 import { useAuth } from "@/hooks/useAuth";
@@ -694,16 +694,27 @@ const Home = () => {
               { icon: Crown, label: 'Elite: 1600', color: 'bg-gradient-to-br from-amber-100 to-orange-100 dark:from-amber-900/30 dark:to-orange-900/30', iconColor: 'text-amber-500', to: '/elite-practice?tier=1600_club' },
               { icon: Target, label: 'Elite: 1500', color: 'bg-gradient-to-br from-purple-100 to-pink-100 dark:from-purple-900/30 dark:to-pink-900/30', iconColor: 'text-purple-500', to: '/elite-practice?tier=elite_1500' },
               { icon: Zap, label: 'Elite: 1400', color: 'bg-gradient-to-br from-blue-100 to-cyan-100 dark:from-blue-900/30 dark:to-cyan-900/30', iconColor: 'text-blue-500', to: '/elite-practice?tier=breakthrough_1400' },
+              { icon: Smartphone, label: 'Install App', color: 'bg-teal-100 dark:bg-teal-900/30', iconColor: 'text-teal-600 dark:text-teal-400', to: '/install' },
             ].map((item, idx) => (
-              <Link key={idx} to={item.to}>
-                <div className={`${item.color} rounded-xl p-3 flex flex-col items-center text-center gap-2 aspect-square justify-center hover:scale-105 transition-transform cursor-pointer border border-border/50`}>
-                  <div className={`w-10 h-10 rounded-full bg-background/60 flex items-center justify-center`}>
-                    <item.icon className={`w-5 h-5 ${item.iconColor}`} />
+              item.to === '/install' ? (
+                <div key={idx} onClick={() => navigate('/install')} className={`${item.color} rounded-xl p-4 flex flex-col items-center text-center gap-2 aspect-square justify-center hover:scale-105 transition-transform cursor-pointer border border-border/50`}>
+                  <div className="w-14 h-14 rounded-full bg-background/60 flex items-center justify-center">
+                    <item.icon className={`w-7 h-7 ${item.iconColor}`} />
                   </div>
-                  <span className="text-[11px] font-semibold leading-tight text-foreground">{item.label}</span>
+                  <span className="text-xs font-semibold leading-tight text-foreground">{item.label}</span>
+                </div>
+              ) : (
+              <Link key={idx} to={item.to}>
+                <div className={`${item.color} rounded-xl p-4 flex flex-col items-center text-center gap-2 aspect-square justify-center hover:scale-105 transition-transform cursor-pointer border border-border/50`}>
+                  <div className="w-14 h-14 rounded-full bg-background/60 flex items-center justify-center">
+                    <item.icon className={`w-7 h-7 ${item.iconColor}`} />
+                  </div>
+                  <span className="text-xs font-semibold leading-tight text-foreground">{item.label}</span>
                 </div>
               </Link>
+              )
             ))}
+
           </div>
         </div>
 
