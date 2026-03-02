@@ -126,9 +126,9 @@ export const EXAM_CONFIGS: Record<ExamType, ExamConfig> = {
     icon: '🧪',
     color: 'emerald-500',
     branding: {
-      logoText: 'Σ',
-      logoKatex: '\\Sigma',
-      appTitle: 'Σ the ACT',
+      logoText: 'Σ8',
+      logoKatex: '\\Sigma 8',
+      appTitle: 'ACT',
       heroTagline: 'The sum of everything — destination 36',
       mathTaglineKatex: '\\sum_{k=1}^{8} k',
       mathTaglineLabel: 'who dominate the ACT',

@@ -8,7 +8,7 @@ import {
   Calculator, PenTool, Trophy, Zap, Users, LogIn, User, 
   Award, Swords, ChevronRight, Flame, Brain, X,
   Target, RotateCcw, BookOpen, RefreshCw, FileText, Crown, GraduationCap,
-  Clock, Sparkles, Download, Lightbulb, Play, Skull, Settings
+  Clock, Sparkles, Download, Lightbulb, Play, Skull, Settings, Gamepad2
 } from "lucide-react";
 import { useNavigate, Link } from "react-router-dom";
 import { useAuth } from "@/hooks/useAuth";
@@ -306,7 +306,7 @@ const Home = () => {
 
 
           {/* Exam badge - tappable switcher */}
-          <div className="flex items-center gap-2 mb-2">
+          <div className="flex items-center gap-3 mb-2">
             {(['sat', 'psat', 'act'] as const).map((type) => {
               const cfg = EXAM_CONFIGS[type];
               const isActive = examType === type;
@@ -317,9 +317,9 @@ const Home = () => {
                     setExamType(type);
                     toast({ title: `Switched to ${cfg.name} mode ${cfg.icon}` });
                   }}
-                  className={`text-sm px-4 py-2 rounded-full font-semibold transition-all ${
+                  className={`text-base px-5 py-3 rounded-full font-bold transition-all ${
                     isActive
-                      ? 'bg-primary text-primary-foreground shadow-md'
+                      ? 'bg-primary text-primary-foreground shadow-md scale-105'
                       : 'bg-muted text-muted-foreground hover:bg-muted/80 cursor-pointer'
                   }`}
                 >
@@ -329,7 +329,7 @@ const Home = () => {
             })}
             <button
               onClick={() => navigate('/ap-tests')}
-              className="text-sm px-4 py-2 rounded-full font-semibold transition-all bg-muted text-muted-foreground hover:bg-muted/80 cursor-pointer"
+              className="text-base px-5 py-3 rounded-full font-bold transition-all bg-muted text-muted-foreground hover:bg-muted/80 cursor-pointer"
             >
               🧪 AP
             </button>
@@ -677,92 +677,35 @@ const Home = () => {
           </div>
         </Card>
 
-        {/* Study Modes */}
-        <Card className="p-4 mb-4 border-2 border-border">
-          <div className="flex flex-col gap-3">
-            <Link to="/practice-test?mode=full" className="w-full">
-              <Button variant="outline" className="w-full h-auto py-3 flex items-center gap-3 justify-start">
-                <FileText className="w-5 h-5 text-emerald-500 flex-shrink-0" />
-                <span className="text-sm font-medium">Take a Full Length Test</span>
-              </Button>
-            </Link>
-            <Link to="/mastery" className="w-full">
-              <Button variant="outline" className="w-full h-auto py-3 flex items-center gap-3 justify-start">
-                <Trophy className="w-5 h-5 text-yellow-500 flex-shrink-0" />
-                <span className="text-sm font-medium">Study Priorities & Progress</span>
-              </Button>
-            </Link>
-            <Link to="/problems-by-topic" className="w-full">
-              <Button variant="outline" className="w-full h-auto py-3 flex items-center gap-3 justify-start">
-                <BookOpen className="w-5 h-5 text-primary flex-shrink-0" />
-                <span className="text-sm font-medium">Master by Topic</span>
-              </Button>
-            </Link>
-            <Link to="/study?mode=weakness" className="w-full">
-              <Button variant="outline" className="w-full h-auto py-3 flex items-center gap-3 justify-start">
-                <Target className="w-5 h-5 text-destructive flex-shrink-0" />
-                <span className="text-sm font-medium">Master Your Weakness</span>
-              </Button>
-            </Link>
-            <Link to="/review" className="w-full">
-              <Button variant="outline" className="w-full h-auto py-3 flex items-center gap-3 justify-start">
-                <RotateCcw className="w-5 h-5 text-orange-500 flex-shrink-0" />
-                <span className="text-sm font-medium">Master What You Missed</span>
-              </Button>
-            </Link>
-            <Link to="/insights" className="w-full">
-              <Button variant="outline" className="w-full h-auto py-3 flex items-center gap-3 justify-start">
-                <Brain className="w-5 h-5 text-purple-500 flex-shrink-0" />
-                <span className="text-sm font-medium">Insights</span>
-              </Button>
-            </Link>
-            <Link to="/key-principles" className="w-full">
-              <Button variant="outline" className="w-full h-auto py-3 flex items-center gap-3 justify-start border-amber-400/30 hover:border-amber-400/50">
-                <Lightbulb className="w-5 h-5 text-amber-500 flex-shrink-0" />
-                <span className="text-sm font-medium">Key {examConfig.shortName} Principles</span>
-              </Button>
-            </Link>
-            <Link to="/boss-battle" className="w-full">
-              <Button variant="outline" className="w-full h-auto py-3 flex items-center gap-3 justify-start border-destructive/30 hover:bg-destructive/10">
-                <Skull className="w-5 h-5 text-destructive flex-shrink-0" />
-                <div className="flex flex-col items-start">
-                  <span className="text-sm font-medium">Daily Boss Battle</span>
-                  <span className="text-[10px] text-muted-foreground">One ultra-hard question. One shot.</span>
+        {/* Activities Grid - Square cards like reference */}
+        <div className="mb-4">
+          <h3 className="text-sm font-semibold text-muted-foreground uppercase tracking-wide mb-3">Activities</h3>
+          <div className="grid grid-cols-4 gap-3">
+            {[
+              { icon: FileText, label: 'Full Test', color: 'bg-emerald-100 dark:bg-emerald-900/30', iconColor: 'text-emerald-600 dark:text-emerald-400', to: '/practice-test?mode=full' },
+              { icon: Trophy, label: 'Study Progress', color: 'bg-amber-100 dark:bg-amber-900/30', iconColor: 'text-amber-600 dark:text-amber-400', to: '/mastery' },
+              { icon: BookOpen, label: 'By Topic', color: 'bg-blue-100 dark:bg-blue-900/30', iconColor: 'text-blue-600 dark:text-blue-400', to: '/problems-by-topic' },
+              { icon: Target, label: 'Weaknesses', color: 'bg-red-100 dark:bg-red-900/30', iconColor: 'text-red-600 dark:text-red-400', to: '/study?mode=weakness' },
+              { icon: RotateCcw, label: 'Review Missed', color: 'bg-orange-100 dark:bg-orange-900/30', iconColor: 'text-orange-600 dark:text-orange-400', to: '/review' },
+              { icon: Brain, label: 'Insights', color: 'bg-purple-100 dark:bg-purple-900/30', iconColor: 'text-purple-600 dark:text-purple-400', to: '/insights' },
+              { icon: Lightbulb, label: `Key ${examConfig.shortName} Rules`, color: 'bg-yellow-100 dark:bg-yellow-900/30', iconColor: 'text-yellow-600 dark:text-yellow-400', to: '/key-principles' },
+              { icon: Skull, label: 'Boss Battle', color: 'bg-rose-100 dark:bg-rose-900/30', iconColor: 'text-rose-600 dark:text-rose-400', to: '/boss-battle' },
+              { icon: Gamepad2, label: 'Arcade', color: 'bg-indigo-100 dark:bg-indigo-900/30', iconColor: 'text-indigo-600 dark:text-indigo-400', to: '/arcade' },
+              { icon: Crown, label: 'Elite: 1600', color: 'bg-gradient-to-br from-amber-100 to-orange-100 dark:from-amber-900/30 dark:to-orange-900/30', iconColor: 'text-amber-500', to: '/elite-practice?tier=1600_club' },
+              { icon: Target, label: 'Elite: 1500', color: 'bg-gradient-to-br from-purple-100 to-pink-100 dark:from-purple-900/30 dark:to-pink-900/30', iconColor: 'text-purple-500', to: '/elite-practice?tier=elite_1500' },
+              { icon: Zap, label: 'Elite: 1400', color: 'bg-gradient-to-br from-blue-100 to-cyan-100 dark:from-blue-900/30 dark:to-cyan-900/30', iconColor: 'text-blue-500', to: '/elite-practice?tier=breakthrough_1400' },
+            ].map((item, idx) => (
+              <Link key={idx} to={item.to}>
+                <div className={`${item.color} rounded-xl p-3 flex flex-col items-center text-center gap-2 aspect-square justify-center hover:scale-105 transition-transform cursor-pointer border border-border/50`}>
+                  <div className={`w-10 h-10 rounded-full bg-background/60 flex items-center justify-center`}>
+                    <item.icon className={`w-5 h-5 ${item.iconColor}`} />
+                  </div>
+                  <span className="text-[11px] font-semibold leading-tight text-foreground">{item.label}</span>
                 </div>
-              </Button>
-            </Link>
-            {/* Elite Practice - 3 Tiers */}
-            <div className="w-full space-y-2">
-              <Link to="/elite-practice?tier=1600_club" className="w-full block">
-                <Button variant="outline" className="w-full h-auto py-3 flex items-center gap-3 justify-start bg-gradient-to-r from-amber-500/20 to-orange-500/20 border-amber-400/40 hover:border-amber-400/60">
-                  <Crown className="w-5 h-5 text-amber-400 flex-shrink-0" />
-                  <div className="flex flex-col items-start">
-                    <span className="text-sm font-bold text-amber-400">Elite Practice: Sleight of Hand</span>
-                    <span className="text-[10px] text-muted-foreground">1500 → 1600 • Difficulty 12-13 • 45s pacing</span>
-                  </div>
-                </Button>
               </Link>
-              <Link to="/elite-practice?tier=elite_1500" className="w-full block">
-                <Button variant="outline" className="w-full h-auto py-3 flex items-center gap-3 justify-start bg-gradient-to-r from-purple-500/20 to-pink-500/20 border-purple-400/40 hover:border-purple-400/60">
-                  <Target className="w-5 h-5 text-purple-400 flex-shrink-0" />
-                  <div className="flex flex-col items-start">
-                    <span className="text-sm font-bold text-purple-400">Elite Practice: Breaking Through</span>
-                    <span className="text-[10px] text-muted-foreground">1400 → 1500 • Difficulty 10-12 • 55s pacing</span>
-                  </div>
-                </Button>
-              </Link>
-              <Link to="/elite-practice?tier=breakthrough_1400" className="w-full block">
-                <Button variant="outline" className="w-full h-auto py-3 flex items-center gap-3 justify-start bg-gradient-to-r from-blue-500/20 to-cyan-500/20 border-blue-400/40 hover:border-blue-400/60">
-                  <Zap className="w-5 h-5 text-blue-400 flex-shrink-0" />
-                  <div className="flex flex-col items-start">
-                    <span className="text-sm font-bold text-blue-400">Elite Practice: Foundation Force</span>
-                    <span className="text-[10px] text-muted-foreground">1300 → 1400 • Difficulty 8-11 • 65s pacing</span>
-                  </div>
-                </Button>
-              </Link>
-            </div>
+            ))}
           </div>
-        </Card>
+        </div>
 
         <div className="grid grid-cols-2 gap-3 mb-4">
           {/* Achievements Mini */}
