@@ -111,6 +111,22 @@ const Home = () => {
   const [practiceDates, setPracticeDates] = useState<string[]>([]);
   const { streak: perfectStreak } = usePerfectStreak();
   const [showExamSelector, setShowExamSelector] = useState(false);
+  const [isAdmin, setIsAdmin] = useState(false);
+
+  // Check if user is admin (for AP access)
+  useEffect(() => {
+    const checkAdmin = async () => {
+      if (!user) { setIsAdmin(false); return; }
+      const { data } = await supabase
+        .from("user_roles")
+        .select("role")
+        .eq("user_id", user.id)
+        .eq("role", "admin")
+        .maybeSingle();
+      setIsAdmin(!!data);
+    };
+    checkAdmin();
+  }, [user]);
 
   // Next SAT date countdown
   const nextSAT = getNextExamDate(examType);
@@ -329,7 +345,16 @@ const Home = () => {
                 </button>
               );
             })}
-            {/* AP button hidden until question bank is complete — all AP code is preserved */}
+            {/* AP button visible only for admin users — hidden for everyone else until question bank is complete */}
+            {isAdmin && (
+              <button
+                onClick={() => navigate('/ap-tests')}
+                className={`flex flex-col items-center px-3 py-1.5 rounded-lg border-2 transition-all text-xs font-bold border-purple-500/50 bg-purple-500/10 text-purple-400 hover:bg-purple-500/20`}
+              >
+                <span>🧪</span>
+                <span>AP</span>
+              </button>
+            )}
           </div>
 
           {/* SAT Countdown - Single Clear CTA */}
