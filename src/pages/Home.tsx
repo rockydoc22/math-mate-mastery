@@ -34,6 +34,8 @@ import { AchievementChains } from "@/components/AchievementChains";
 import { RevengeModeBanner } from "@/components/RevengeModeBanner";
 import { PerfectStreakDisplay } from "@/components/PerfectStreakDisplay";
 import { usePerfectStreak } from "@/hooks/usePerfectStreak";
+import { PlayerLevelBadge } from "@/components/PlayerLevelBadge";
+import { WeeklyTournament } from "@/components/WeeklyTournament";
 
 // Motivational messages for non-logged in or idle users
 const motivationalMessages = [
@@ -488,6 +490,11 @@ const Home = () => {
             </p>
           </Card>
         )}
+        {/* Player Level Badge */}
+        {user && totalQuestionsAnswered > 0 && (
+          <PlayerLevelBadge totalQuestions={totalQuestionsAnswered} />
+        )}
+
         {/* Personalized Stats - Only for logged in users WITH data for this exam */}
         {user && ratings && (ratings.mathQuestionsAnswered + ratings.englishQuestionsAnswered > 0) && (() => {
           // Calculate tier progress
@@ -767,6 +774,11 @@ const Home = () => {
             </div>
           </Card>
         </div>
+
+        {/* Weekly Tournament */}
+        {user && (
+          <WeeklyTournament />
+        )}
 
         {/* Word of the Day */}
         <div className="mb-4">

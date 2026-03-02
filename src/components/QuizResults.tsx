@@ -5,6 +5,7 @@ import { Trophy, RotateCcw, Home, Zap } from "lucide-react";
 import { Link } from "react-router-dom";
 import { RoastPopup } from "./RoastPopup";
 import { ShareResults } from "./ShareResults";
+import { ChallengeAFriend } from "./ChallengeAFriend";
 import { useSoundEffects } from "@/hooks/useSoundEffects";
 import { useAuth } from "@/hooks/useAuth";
 
@@ -129,6 +130,11 @@ export const QuizResults = ({ score, totalQuestions, onRestart, subject = "Mixed
         {/* Share Results */}
         <div className="mb-6 flex justify-center">
           <ShareResults score={score} total={totalQuestions} percentage={percentage} subject={subject} />
+        </div>
+
+        {/* Challenge a Friend */}
+        <div className="mb-6">
+          <ChallengeAFriend score={score} totalQuestions={totalQuestions} subject={subject} percentage={percentage} />
         </div>
 
         {!user && (
