@@ -108,6 +108,7 @@ const Home = () => {
   const [playerUsername, setPlayerUsername] = useState("Fighter");
   const [practiceDates, setPracticeDates] = useState<string[]>([]);
   const { streak: perfectStreak } = usePerfectStreak();
+  const [showExamSelector, setShowExamSelector] = useState(false);
 
   // Next SAT date countdown
   const nextSAT = getNextExamDate(examType);
@@ -204,7 +205,7 @@ const Home = () => {
   };
 
   const handle40SquaredClick = () => {
-    navigate("/battle");
+    setShowExamSelector(true);
   };
 
   const projectedScore = ratings ? ratingToExamScore(ratings.overallRating, examType) : null;
@@ -215,9 +216,9 @@ const Home = () => {
     return <LandingPage />;
   }
 
-  // Show exam selector for first-time users
-  if (needsSelection) {
-    return <ExamSelector onSelect={setExamType} />;
+  // Show exam selector for first-time users or when toggled
+  if (needsSelection || showExamSelector) {
+    return <ExamSelector onSelect={(type) => { setExamType(type); setShowExamSelector(false); }} />;
   }
 
   return (
@@ -299,15 +300,13 @@ const Home = () => {
               size="xl" 
               clickable 
               onClick={handle40SquaredClick}
-            examType={examType}
-              showTagline
-              taglineText={examConfig.tagline}
+              examType={examType}
             />
           </div>
 
 
           {/* Exam badge - tappable switcher */}
-          <div className="flex items-center gap-1 mb-2">
+          <div className="flex items-center gap-2 mb-2">
             {(['sat', 'psat', 'act'] as const).map((type) => {
               const cfg = EXAM_CONFIGS[type];
               const isActive = examType === type;
@@ -318,9 +317,9 @@ const Home = () => {
                     setExamType(type);
                     toast({ title: `Switched to ${cfg.name} mode ${cfg.icon}` });
                   }}
-                  className={`text-xs px-3 py-1.5 rounded-full font-medium transition-all ${
+                  className={`text-sm px-4 py-2 rounded-full font-semibold transition-all ${
                     isActive
-                      ? 'bg-primary text-primary-foreground'
+                      ? 'bg-primary text-primary-foreground shadow-md'
                       : 'bg-muted text-muted-foreground hover:bg-muted/80 cursor-pointer'
                   }`}
                 >
@@ -328,6 +327,12 @@ const Home = () => {
                 </button>
               );
             })}
+            <button
+              onClick={() => navigate('/ap-tests')}
+              className="text-sm px-4 py-2 rounded-full font-semibold transition-all bg-muted text-muted-foreground hover:bg-muted/80 cursor-pointer"
+            >
+              🧪 AP
+            </button>
           </div>
 
           {/* SAT Countdown - Single Clear CTA */}
