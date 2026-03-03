@@ -12978,6 +12978,51 @@ const unit7Questions: Question[] = [
     domain: 'Equilibrium',
     skill: 'Buffer Solutions',
   },
+  {
+    id: 'ap-chem-7-042',
+    question: 'For the equilibrium 2SO₂(g) + O₂(g) ⇌ 2SO₃(g), Kc = 2.0 × 10⁴ at 500 K. This large K value indicates that at equilibrium the mixture contains',
+    options: [
+      { letter: 'A', text: 'Mostly reactants' },
+      { letter: 'B', text: 'Mostly products' },
+      { letter: 'C', text: 'Equal amounts of reactants and products' },
+      { letter: 'D', text: 'No reactants or products' },
+    ],
+    correctAnswer: 'B',
+    explanation: 'Kc >> 1 → products are strongly favored → equilibrium lies far to the right.',
+    difficulty: 'Easy',
+    domain: 'Equilibrium',
+    skill: 'Equilibrium Constants',
+  },
+  {
+    id: 'ap-chem-7-043',
+    question: 'For the reaction N₂(g) + 3H₂(g) ⇌ 2NH₃(g), Kp = Kc(RT)^Δn where Δn =',
+    options: [
+      { letter: 'A', text: '–2' },
+      { letter: 'B', text: '–1' },
+      { letter: 'C', text: '0' },
+      { letter: 'D', text: '+2' },
+    ],
+    correctAnswer: 'A',
+    explanation: 'Δn = moles gaseous products – moles gaseous reactants = 2 – (1 + 3) = –2.',
+    difficulty: 'Medium',
+    domain: 'Equilibrium',
+    skill: 'Kp and Kc Relationship',
+  },
+  {
+    id: 'ap-chem-7-044',
+    question: 'For the reaction 2SO₂(g) + O₂(g) ⇌ 2SO₃(g), increasing pressure by adding an inert gas at constant volume will',
+    options: [
+      { letter: 'A', text: 'Shift left' },
+      { letter: 'B', text: 'Shift right' },
+      { letter: 'C', text: 'Have no effect' },
+      { letter: 'D', text: 'Increase K' },
+    ],
+    correctAnswer: 'C',
+    explanation: 'Adding inert gas at constant volume does not change partial pressures of reactants or products → no shift in equilibrium.',
+    difficulty: 'Medium',
+    domain: 'Equilibrium',
+    skill: 'Le Châtelier\'s Principle',
+  },
 ];
 
 // ─── UNIT 8: Acids and Bases ───
