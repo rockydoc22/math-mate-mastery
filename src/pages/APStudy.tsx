@@ -5,6 +5,7 @@ import { Card } from "@/components/ui/card";
 import { ArrowLeft, BookOpen, Brain, ChevronRight, CheckCircle2, XCircle, Sparkles } from "lucide-react";
 import { getAPSubject } from "@/utils/apConfig";
 import { AP_CHEM_UNITS, apChemQuestionsByUnit, type APChemUnit } from "@/data/apChemistryQuestions";
+import { AP_USH_UNITS, apUSHQuestionsByUnit } from "@/data/apUSHistoryQuestions";
 import { Question } from "@/data/questions";
 import { MathText } from "@/components/MathText";
 import { AITutorExplanation } from "@/components/AITutorExplanation";
@@ -35,8 +36,9 @@ const APStudy = () => {
 
   // Determine which units config to use based on subject
   const isChemistry = subjectId === 'ap-chemistry';
-  const units = isChemistry ? AP_CHEM_UNITS : [];
-  const questionsByUnit = isChemistry ? apChemQuestionsByUnit : {};
+  const isUSHistory = subjectId === 'ap-us-history';
+  const units = isChemistry ? AP_CHEM_UNITS : isUSHistory ? AP_USH_UNITS : [];
+  const questionsByUnit = isChemistry ? apChemQuestionsByUnit : isUSHistory ? apUSHQuestionsByUnit : {};
 
   const startQuiz = (unit: APChemUnit) => {
     const questions = questionsByUnit[unit.id] || [];
