@@ -3112,6 +3112,37 @@ const unit1Questions: Question[] = [
     domain: 'Atomic Structure',
     skill: 'Isoelectronic ionic radius ranking',
   },
+  // ─── Batch: New Unit 1 questions (1-205 to 1-206) ───
+  {
+    id: 'ap-chem-1-205',
+    question: 'A student examines a PES spectrum for an unknown element and notices that the 3p peak is exactly twice the height of the 3s peak. Which element could this be?',
+    options: [
+      { letter: 'A', text: 'Phosphorus' },
+      { letter: 'B', text: 'Sulfur' },
+      { letter: 'C', text: 'Argon' },
+      { letter: 'D', text: 'Chlorine' },
+    ],
+    correctAnswer: 'B',
+    explanation: 'Peak height in PES is proportional to the number of electrons in a subshell. The 3s subshell holds 2 electrons. For the 3p peak to be twice as high, it must hold 4 electrons. Sulfur (3s² 3p⁴) has exactly 4 electrons in 3p, making the p-peak twice the s-peak height.',
+    difficulty: 'Hard',
+    domain: 'Atomic Structure',
+    skill: 'PES peak height ratio analysis',
+  },
+  {
+    id: 'ap-chem-1-206',
+    question: 'Why is the first ionization energy of Oxygen lower than that of Nitrogen?',
+    options: [
+      { letter: 'A', text: 'Oxygen has a higher effective nuclear charge.' },
+      { letter: 'B', text: 'Oxygen has more shielding than Nitrogen.' },
+      { letter: 'C', text: 'Electron-electron repulsion in a shared 2p orbital makes it easier to remove an electron from Oxygen.' },
+      { letter: 'D', text: 'Nitrogen has a half-filled 2s subshell.' },
+    ],
+    correctAnswer: 'C',
+    explanation: 'Nitrogen has three unpaired p-electrons (half-filled 2p). Oxygen has its fourth p-electron paired in an orbital. The repulsion between these two electrons in the same orbital increases their energy, lowering the energy required to remove one.',
+    difficulty: 'Hard',
+    domain: 'Atomic Structure',
+    skill: 'IE anomaly from electron pairing',
+  },
 ];
 const unit2Questions: Question[] = [
   {
@@ -5714,6 +5745,37 @@ const unit2Questions: Question[] = [
     difficulty: 'Hard',
     domain: 'Molecular Structure',
     skill: 'Dipole moment from molecular geometry',
+  },
+  // ─── Batch: New Unit 2 questions (2-186 to 2-187) ───
+  {
+    id: 'ap-chem-2-186',
+    question: 'Based on Coulomb\'s Law, which of the following ionic compounds would have the highest melting point?',
+    options: [
+      { letter: 'A', text: 'LiF' },
+      { letter: 'B', text: 'NaCl' },
+      { letter: 'C', text: 'MgO' },
+      { letter: 'D', text: 'CaO' },
+    ],
+    correctAnswer: 'C',
+    explanation: 'Melting point is determined by lattice energy (U ∝ Q₁Q₂/r). MgO has +2 and −2 ions (higher charge than LiF/NaCl) and Mg²⁺ is smaller than Ca²⁺ (smaller r), resulting in the strongest attraction and highest melting point.',
+    difficulty: 'Hard',
+    domain: 'Molecular Structure',
+    skill: 'Lattice energy and melting point prediction',
+  },
+  {
+    id: 'ap-chem-2-187',
+    question: 'In the molecule $XeF_2$, what is the hybridization of the central Xenon atom and the molecular geometry?',
+    options: [
+      { letter: 'A', text: 'sp, Linear' },
+      { letter: 'B', text: 'sp³d, Linear' },
+      { letter: 'C', text: 'sp³, Bent' },
+      { letter: 'D', text: 'sp³d, Trigonal Bipyramidal' },
+    ],
+    correctAnswer: 'B',
+    explanation: 'Xenon in XeF₂ has 2 bonding pairs and 3 lone pairs (5 domains). 5 domains = sp³d. The 3 lone pairs occupy equatorial positions, leaving the Fluorine atoms in axial positions (180° apart), giving a linear molecular geometry.',
+    difficulty: 'Hard',
+    domain: 'Molecular Structure',
+    skill: 'Expanded octet hybridization and geometry',
   },
 ];
 
@@ -8602,6 +8664,37 @@ const unit3Questions: Question[] = [
     difficulty: 'Medium',
     domain: 'Intermolecular Forces',
     skill: 'Viscosity prediction from IMF analysis',
+  },
+  // ─── Batch: New Unit 3 questions (3-193 to 3-194) ───
+  {
+    id: 'ap-chem-3-193',
+    question: 'Which of the following explains why the boiling point of H₂O (100°C) is significantly higher than H₂S (−60°C)?',
+    options: [
+      { letter: 'A', text: 'H₂S has a larger molar mass.' },
+      { letter: 'B', text: 'H₂O is a smaller molecule and can pack more tightly.' },
+      { letter: 'C', text: 'H₂O molecules are held together by hydrogen bonds, while H₂S only has dipole-dipole forces.' },
+      { letter: 'D', text: 'The O−H bond is stronger than the S−H bond.' },
+    ],
+    correctAnswer: 'C',
+    explanation: 'Boiling point is determined by intermolecular forces, not covalent bond strength. Oxygen\'s high electronegativity allows for hydrogen bonding; Sulfur\'s electronegativity is insufficient for hydrogen bonding, so H₂S relies on weaker dipole-dipole and London dispersion forces.',
+    difficulty: 'Hard',
+    domain: 'Intermolecular Forces',
+    skill: 'Hydrogen bonding vs dipole-dipole comparison',
+  },
+  {
+    id: 'ap-chem-3-194',
+    question: 'According to the Kinetic Molecular Theory, if the absolute temperature of a gas is doubled, what happens to the average kinetic energy and average speed of the molecules?',
+    options: [
+      { letter: 'A', text: 'Both double.' },
+      { letter: 'B', text: 'KE doubles; speed increases by √2.' },
+      { letter: 'C', text: 'Speed doubles; KE increases by factor of 4.' },
+      { letter: 'D', text: 'Both remain constant.' },
+    ],
+    correctAnswer: 'B',
+    explanation: 'KE_avg ∝ T, so doubling T doubles KE. Since KE = ½mv², if KE doubles, velocity increases by √2.',
+    difficulty: 'Hard',
+    domain: 'Intermolecular Forces',
+    skill: 'KMT temperature-speed relationship',
   },
 ];
 
@@ -15760,6 +15853,37 @@ const unit5Questions: Question[] = [
     difficulty: 'Hard',
     domain: 'Kinetics',
     skill: 'Arrhenius equation parameter analysis',
+  },
+  // ─── Batch: New Unit 5 questions (5-188 to 5-189) ───
+  {
+    id: 'ap-chem-5-188',
+    question: 'A reaction mechanism is proposed:\nStep 1: $A + B \\rightleftharpoons C$ (fast equilibrium)\nStep 2: $C + A \\rightarrow D$ (slow)\nWhat is the rate law for this reaction?',
+    options: [
+      { letter: 'A', text: 'Rate = k[A][B]' },
+      { letter: 'B', text: 'Rate = k[C][A]' },
+      { letter: 'C', text: 'Rate = k[A]²[B]' },
+      { letter: 'D', text: 'Rate = k[A][B]²' },
+    ],
+    correctAnswer: 'C',
+    explanation: 'The slow step is rate-determining: Rate = k₂[C][A]. From Step 1 fast equilibrium, K_eq = [C]/([A][B]), so [C] = K_eq[A][B]. Substituting: Rate = k₂(K_eq[A][B])[A] = k\'[A]²[B].',
+    difficulty: 'Hard',
+    domain: 'Kinetics',
+    skill: 'Pre-equilibrium mechanism rate law derivation',
+  },
+  {
+    id: 'ap-chem-5-189',
+    question: 'In a first-order reaction, how does the time required for the concentration to drop from 1.0 M to 0.5 M compare to the time required to drop from 0.2 M to 0.1 M?',
+    options: [
+      { letter: 'A', text: 'The first interval is longer.' },
+      { letter: 'B', text: 'The second interval is longer.' },
+      { letter: 'C', text: 'The times are identical.' },
+      { letter: 'D', text: 'It depends on the value of k.' },
+    ],
+    correctAnswer: 'C',
+    explanation: 'For a first-order reaction, the half-life (t₁/₂ = 0.693/k) is independent of the initial concentration. Each halving takes the same amount of time regardless of the starting concentration.',
+    difficulty: 'Hard',
+    domain: 'Kinetics',
+    skill: 'First-order half-life concentration independence',
   },
 ];
 
