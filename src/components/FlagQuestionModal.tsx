@@ -86,17 +86,18 @@ export const FlagQuestionModal = ({ isOpen, onClose, questionId, questionType, q
         <DialogHeader>
           <DialogTitle>Report an Issue</DialogTitle>
           <DialogDescription>
-            What's the problem with this question?
+            Tell us what's wrong and we'll fix it.
           </DialogDescription>
         </DialogHeader>
         
         <div className="py-4">
           <Textarea
-            placeholder="Describe the issue (optional)..."
+            placeholder="What's the problem with this question?"
             value={notes}
             onChange={(e) => setNotes(e.target.value)}
             maxLength={500}
             rows={4}
+            autoFocus
           />
         </div>
 

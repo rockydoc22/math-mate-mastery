@@ -7,7 +7,7 @@ import { Label } from "@/components/ui/label";
 import { useAuth } from "@/hooks/useAuth";
 import { toast } from "@/hooks/use-toast";
 import { supabase } from "@/integrations/supabase/client";
-import { ArrowLeft, Lock, Eye, EyeOff, GraduationCap } from "lucide-react";
+import { ArrowLeft, Lock, Eye, EyeOff, GraduationCap, User, Loader2 } from "lucide-react";
 import { useExamType } from "@/hooks/useExamType";
 import { EXAM_CONFIGS, type ExamType } from "@/utils/examConfig";
 
@@ -33,11 +33,23 @@ const Settings = () => {
   const { user, signOut } = useAuth();
   const { examType, setExamType } = useExamType();
   const [loading, setLoading] = useState(false);
+  const [nameLoading, setNameLoading] = useState(false);
+  const [username, setUsername] = useState("");
   const [showPassword, setShowPassword] = useState(false);
   const [showConfirmPassword, setShowConfirmPassword] = useState(false);
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
   const passwordSectionRef = useRef<HTMLFormElement>(null);
+
+  // Load current username
+  useEffect(() => {
+    const loadUsername = async () => {
+      if (!user) return;
+      const { data } = await supabase.from("profiles").select("username").eq("id", user.id).single();
+      if (data) setUsername(data.username);
+    };
+    loadUsername();
+  }, [user]);
 
   // Handle magic link password reset redirect
   useEffect(() => {
@@ -117,6 +129,40 @@ const Settings = () => {
             <CardTitle>Account Settings</CardTitle>
           </CardHeader>
           <CardContent className="space-y-6">
+            {/* Change Name */}
+            <div className="space-y-3">
+              <div className="flex items-center gap-2">
+                <User className="w-4 h-4 text-primary" />
+                <Label className="font-semibold">Display Name</Label>
+              </div>
+              <div className="flex gap-2">
+                <Input
+                  value={username}
+                  onChange={(e) => setUsername(e.target.value)}
+                  placeholder="Your name"
+                  maxLength={30}
+                />
+                <Button
+                  size="sm"
+                  disabled={nameLoading || !username.trim()}
+                  onClick={async () => {
+                    setNameLoading(true);
+                    try {
+                      const { error } = await supabase.from("profiles").update({ username: username.trim() }).eq("id", user.id);
+                      if (error) throw error;
+                      toast({ title: "Name updated! 🎉" });
+                    } catch (err: any) {
+                      toast({ title: "Error", description: err.message, variant: "destructive" });
+                    } finally {
+                      setNameLoading(false);
+                    }
+                  }}
+                >
+                  {nameLoading ? <Loader2 className="w-4 h-4 animate-spin" /> : "Save"}
+                </Button>
+              </div>
+            </div>
+
             {/* Exam Type Selector */}
             <div className="space-y-3">
               <div className="flex items-center gap-2">
