@@ -709,6 +709,7 @@ const Home = () => {
           <h3 className="text-sm font-semibold text-muted-foreground uppercase tracking-wide mb-3">Activities</h3>
           <div className="grid grid-cols-4 gap-3">
             {[
+              { icon: Gamepad2, label: 'Arcade', color: 'bg-indigo-100 dark:bg-indigo-900/30', iconColor: 'text-indigo-600 dark:text-indigo-400', to: '/arcade' },
               { icon: FileText, label: 'Full Test', color: 'bg-emerald-100 dark:bg-emerald-900/30', iconColor: 'text-emerald-600 dark:text-emerald-400', to: '/practice-test?mode=full' },
               { icon: Trophy, label: 'Study Progress', color: 'bg-amber-100 dark:bg-amber-900/30', iconColor: 'text-amber-600 dark:text-amber-400', to: '/mastery' },
               { icon: BookOpen, label: 'By Topic', color: 'bg-blue-100 dark:bg-blue-900/30', iconColor: 'text-blue-600 dark:text-blue-400', to: '/problems-by-topic' },
@@ -717,7 +718,6 @@ const Home = () => {
               { icon: Brain, label: 'Insights', color: 'bg-purple-100 dark:bg-purple-900/30', iconColor: 'text-purple-600 dark:text-purple-400', to: '/insights' },
               { icon: Lightbulb, label: `Key ${examConfig.shortName} Rules`, color: 'bg-yellow-100 dark:bg-yellow-900/30', iconColor: 'text-yellow-600 dark:text-yellow-400', to: '/key-principles' },
               { icon: Skull, label: 'Boss Battle', color: 'bg-rose-100 dark:bg-rose-900/30', iconColor: 'text-rose-600 dark:text-rose-400', to: '/boss-battle' },
-              { icon: Gamepad2, label: 'Arcade', color: 'bg-indigo-100 dark:bg-indigo-900/30', iconColor: 'text-indigo-600 dark:text-indigo-400', to: '/arcade' },
               { icon: Crown, label: 'Elite: 1600', color: 'bg-gradient-to-br from-amber-100 to-orange-100 dark:from-amber-900/30 dark:to-orange-900/30', iconColor: 'text-amber-500', to: '/elite-practice?tier=1600_club' },
               { icon: Target, label: 'Elite: 1500', color: 'bg-gradient-to-br from-purple-100 to-pink-100 dark:from-purple-900/30 dark:to-pink-900/30', iconColor: 'text-purple-500', to: '/elite-practice?tier=elite_1500' },
               { icon: Zap, label: 'Elite: 1400', color: 'bg-gradient-to-br from-blue-100 to-cyan-100 dark:from-blue-900/30 dark:to-cyan-900/30', iconColor: 'text-blue-500', to: '/elite-practice?tier=breakthrough_1400' },
