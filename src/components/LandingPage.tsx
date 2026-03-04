@@ -4,7 +4,7 @@ import { Card } from "@/components/ui/card";
 import { 
   Sparkles, Clock, Target, Trophy, Users, Zap, 
   CheckCircle, Star, ArrowRight, Calculator, PenTool,
-  Brain, Swords, Crown, Medal
+  Brain, Swords, Crown, Medal, Gamepad2
 } from "lucide-react";
 import { Link, useNavigate } from "react-router-dom";
 import { usePWAUpdate, APP_VERSION } from "@/hooks/usePWAUpdate";
@@ -53,6 +53,11 @@ const features = [
     icon: Swords,
     title: "Fight Club Battles",
     description: "Compete head-to-head with other students in real-time"
+  },
+  {
+    icon: Gamepad2,
+    title: "Learning Arcade",
+    description: "Play Zalaga, Hangman & Chess while mastering SAT concepts"
   },
   {
     icon: Trophy,
@@ -303,6 +308,7 @@ export const LandingPage = () => {
                 "Adaptive difficulty that matches your level",
                 "Real-time battle mode against other students",
                 "Score prediction based on your performance",
+                "Learning Arcade: Zalaga, Hangman & Chess",
                 "Daily challenges to build consistency",
                 "Detailed explanations for every question",
                 "Track progress with insights dashboard",
