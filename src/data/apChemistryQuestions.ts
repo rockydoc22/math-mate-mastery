@@ -7682,6 +7682,36 @@ const unit3Questions: Question[] = [
     domain: 'Intermolecular Forces',
     skill: 'Predict boiling point from IMF strength',
   },
+  {
+    id: 'ap-chem-3-187',
+    question: 'A substance has a triple point at 0.5 atm and 200 K. The solid phase is more dense than the liquid phase. Which of the following is true for this substance?',
+    options: [
+      { letter: 'A', text: 'The melting point increases as pressure increases.' },
+      { letter: 'B', text: 'The substance will sublime if heated at 1.0 atm starting from 150 K.' },
+      { letter: 'C', text: 'The liquid phase cannot exist at pressures below 0.5 atm.' },
+      { letter: 'D', text: 'Both A and C are true.' },
+    ],
+    correctAnswer: 'D',
+    explanation: 'If solid is denser than liquid, the solid-liquid line has a positive slope (MP increases with P). Below the triple point pressure, liquid is not stable — substance transitions directly between solid and gas.',
+    difficulty: 'Hard',
+    domain: 'Intermolecular Forces',
+    skill: 'Phase diagram interpretation with positive S-L slope',
+  },
+  {
+    id: 'ap-chem-3-188',
+    question: 'Based on intermolecular forces, which of the following liquids would have the lowest vapor pressure at 25°C?',
+    options: [
+      { letter: 'A', text: 'CH₃OH' },
+      { letter: 'B', text: 'CH₃CH₂OH' },
+      { letter: 'C', text: 'HOCH₂CH₂OH' },
+      { letter: 'D', text: 'CH₃OCH₃' },
+    ],
+    correctAnswer: 'C',
+    explanation: 'Ethylene glycol (C) has two −OH groups allowing more extensive hydrogen bonding than methanol (A) or ethanol (B). Dimethyl ether (D) cannot hydrogen bond with itself. Stronger IMF → lower vapor pressure.',
+    difficulty: 'Hard',
+    domain: 'Intermolecular Forces',
+    skill: 'Vapor pressure prediction from IMF analysis',
+  },
 ];
 
 // ─── UNIT 4: Chemical Reactions ───
@@ -10011,6 +10041,21 @@ const unit4Questions: Question[] = [
     difficulty: 'Hard',
     domain: 'Chemical Reactions',
     skill: 'Identify species being reduced in redox reaction',
+  },
+  {
+    id: 'ap-chem-4-158',
+    question: 'What volume of 0.150 M K₂Cr₂O₇ is required to completely react with 50.0 mL of 0.200 M FeSO₄ in acidic solution? (Cr₂O₇²⁻ + 6Fe²⁺ + 14H⁺ → 2Cr³⁺ + 6Fe³⁺ + 7H₂O)',
+    options: [
+      { letter: 'A', text: '11.1 mL' },
+      { letter: 'B', text: '22.2 mL' },
+      { letter: 'C', text: '33.3 mL' },
+      { letter: 'D', text: '66.7 mL' },
+    ],
+    correctAnswer: 'A',
+    explanation: 'Moles Fe²⁺ = 0.050 × 0.200 = 0.010 mol. Moles Cr₂O₇²⁻ needed = 0.010 / 6 = 0.001667 mol. Volume = 0.001667 / 0.150 = 0.0111 L = 11.1 mL.',
+    difficulty: 'Hard',
+    domain: 'Chemical Reactions',
+    skill: 'Redox titration stoichiometry',
   },
 ];
 
@@ -14233,6 +14278,36 @@ const unit5Questions: Question[] = [
     difficulty: 'Hard',
     domain: 'Kinetics',
     skill: 'Half-life from integrated rate law plot',
+  },
+  {
+    id: 'ap-chem-5-153',
+    question: 'For the reaction A + 2B → C, if [B] is doubled while keeping [A] constant, the rate quadruples. If both [A] and [B] are doubled, the rate increases by a factor of 8. What is the rate law?',
+    options: [
+      { letter: 'A', text: 'Rate = k[A][B]' },
+      { letter: 'B', text: 'Rate = k[A][B]²' },
+      { letter: 'C', text: 'Rate = k[A]²[B]' },
+      { letter: 'D', text: 'Rate = k[A]²[B]²' },
+    ],
+    correctAnswer: 'B',
+    explanation: 'Doubling [B] → 2^y = 4 → y = 2 (second order in B). Doubling both → 2^x × 2² = 8 → 2^x × 4 = 8 → 2^x = 2 → x = 1 (first order in A). Rate = k[A][B]².',
+    difficulty: 'Hard',
+    domain: 'Kinetics',
+    skill: 'Determine rate law from experimental data',
+  },
+  {
+    id: 'ap-chem-5-154',
+    question: 'A catalyst increases the rate of a reaction by doing which of the following?',
+    options: [
+      { letter: 'A', text: 'Increasing the average kinetic energy of the reactants' },
+      { letter: 'B', text: 'Providing an alternative reaction pathway with a lower activation energy' },
+      { letter: 'C', text: 'Increasing the frequency of collisions between reactant molecules' },
+      { letter: 'D', text: 'Shifting the equilibrium position toward the products' },
+    ],
+    correctAnswer: 'B',
+    explanation: 'Catalysts do not change the temperature (KE) or equilibrium; they change the mechanism to one that requires less energy to reach the transition state.',
+    difficulty: 'Medium',
+    domain: 'Kinetics',
+    skill: 'Role of catalyst in reaction mechanism',
   },
 ];
 
@@ -22282,6 +22357,21 @@ const unit8Questions: Question[] = [
     difficulty: 'Hard',
     domain: 'Acids and Bases',
     skill: 'Buffer pH after strong base addition',
+  },
+  {
+    id: 'ap-chem-8-201',
+    question: 'Calculate the pH of a 0.050 M solution of CH₃NH₂ (methylamine). Kb = 4.4 × 10⁻⁴ at 298 K.',
+    options: [
+      { letter: 'A', text: '2.33' },
+      { letter: 'B', text: '11.67' },
+      { letter: 'C', text: '10.85' },
+      { letter: 'D', text: '3.15' },
+    ],
+    correctAnswer: 'B',
+    explanation: '[OH⁻] = √(Kb × Cb) = √(4.4 × 10⁻⁴ × 0.050) = √(2.2 × 10⁻⁵) ≈ 4.69 × 10⁻³. pOH = −log(4.69 × 10⁻³) = 2.33. pH = 14 − 2.33 = 11.67.',
+    difficulty: 'Hard',
+    domain: 'Acids & Bases',
+    skill: 'pH calculation for weak base',
   },
 ];
 
