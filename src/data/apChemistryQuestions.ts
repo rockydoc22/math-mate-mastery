@@ -2630,6 +2630,22 @@ const unit1Questions: Question[] = [
     domain: 'Atomic Structure',
     skill: 'Mass spectrometry of diatomic molecules',
   },
+  // ─── Batch: New Unit 1 question (1-173) ───
+  {
+    id: 'ap-chem-1-173',
+    question: 'What is the ground-state electron configuration for a neutral Copper (Cu) atom?',
+    options: [
+      { letter: 'A', text: '[Ar] 4s² 3d⁹' },
+      { letter: 'B', text: '[Ar] 4s¹ 3d¹⁰' },
+      { letter: 'C', text: '[Ar] 4s² 4d⁹' },
+      { letter: 'D', text: '[Ar] 3d¹¹' },
+    ],
+    correctAnswer: 'B',
+    explanation: 'Copper is an exception to the Aufbau filling rule; it promotes one 4s electron to the 3d subshell to achieve a more stable fully filled d-subshell configuration: [Ar] 4s¹ 3d¹⁰.',
+    difficulty: 'Hard',
+    domain: 'Atomic Structure',
+    skill: 'Electron configuration exceptions',
+  },
 ];
 const unit2Questions: Question[] = [
   {
@@ -4884,6 +4900,22 @@ const unit2Questions: Question[] = [
     difficulty: 'Medium',
     domain: 'Molecular Structure',
     skill: 'Expanded octet identification',
+  },
+  // ─── Batch: New Unit 2 question (2-163) ───
+  {
+    id: 'ap-chem-2-163',
+    question: 'Which molecule has a trigonal pyramidal molecular geometry?',
+    options: [
+      { letter: 'A', text: 'BF₃' },
+      { letter: 'B', text: 'CH₄' },
+      { letter: 'C', text: 'NH₃' },
+      { letter: 'D', text: 'CO₂' },
+    ],
+    correctAnswer: 'C',
+    explanation: 'Nitrogen in NH₃ has 3 bonding pairs and 1 lone pair, resulting in a trigonal pyramidal shape. BF₃ is trigonal planar, CH₄ is tetrahedral, and CO₂ is linear.',
+    difficulty: 'Medium',
+    domain: 'Molecular Structure',
+    skill: 'VSEPR molecular geometry',
   },
 ];
 
@@ -10102,6 +10134,37 @@ const unit4Questions: Question[] = [
     domain: 'Chemical Reactions',
     skill: 'Identify reducing agent in redox reaction',
   },
+  // ─── Batch: New Unit 4 questions (4-184 to 4-185) ───
+  {
+    id: 'ap-chem-4-184',
+    question: 'When the equation __ Al + __ Cl₂ → __ AlCl₃ is balanced with the smallest whole-number coefficients, what is the coefficient for Cl₂?',
+    options: [
+      { letter: 'A', text: '1' },
+      { letter: 'B', text: '2' },
+      { letter: 'C', text: '3' },
+      { letter: 'D', text: '4' },
+    ],
+    correctAnswer: 'C',
+    explanation: 'The balanced equation is 2 Al + 3 Cl₂ → 2 AlCl₃. Each AlCl₃ needs 3 Cl atoms; with 2 AlCl₃ products, 6 Cl atoms are needed, requiring 3 Cl₂ molecules.',
+    difficulty: 'Medium',
+    domain: 'Chemical Reactions',
+    skill: 'Balancing chemical equations',
+  },
+  {
+    id: 'ap-chem-4-185',
+    question: 'What is the oxidation state of phosphorus in the phosphate ion (PO₄³⁻)?',
+    options: [
+      { letter: 'A', text: '+3' },
+      { letter: 'B', text: '+5' },
+      { letter: 'C', text: '−3' },
+      { letter: 'D', text: '+4' },
+    ],
+    correctAnswer: 'B',
+    explanation: 'Oxygen is typically −2. Four oxygens contribute 4 × (−2) = −8. To have a net charge of −3, phosphorus must be +5: P + (−8) = −3, so P = +5.',
+    difficulty: 'Medium',
+    domain: 'Chemical Reactions',
+    skill: 'Oxidation state determination',
+  },
 ];
 
 // ─── UNIT 5: Kinetics ───
@@ -14383,6 +14446,37 @@ const unit5Questions: Question[] = [
     difficulty: 'Medium',
     domain: 'Kinetics',
     skill: 'Identify linear plot for second-order reaction',
+  },
+  // ─── Batch: New Unit 5 questions (5-180 to 5-181) ───
+  {
+    id: 'ap-chem-5-180',
+    question: 'For a first-order reaction, if the initial concentration of a reactant is 0.40 M and the half-life is 20 minutes, what is the concentration after 60 minutes?',
+    options: [
+      { letter: 'A', text: '0.20 M' },
+      { letter: 'B', text: '0.10 M' },
+      { letter: 'C', text: '0.05 M' },
+      { letter: 'D', text: '0.025 M' },
+    ],
+    correctAnswer: 'C',
+    explanation: '60 minutes represents three half-lives (60/20 = 3). The concentration is halved three times: 0.40 → 0.20 → 0.10 → 0.05 M.',
+    difficulty: 'Medium',
+    domain: 'Kinetics',
+    skill: 'Half-life and concentration for first-order',
+  },
+  {
+    id: 'ap-chem-5-181',
+    question: 'Which of the following changes will increase the rate constant (k) for a chemical reaction?',
+    options: [
+      { letter: 'A', text: 'Increasing the concentration of reactants' },
+      { letter: 'B', text: 'Increasing the surface area of a solid reactant' },
+      { letter: 'C', text: 'Increasing the temperature' },
+      { letter: 'D', text: 'Decreasing the volume of the reaction vessel' },
+    ],
+    correctAnswer: 'C',
+    explanation: 'According to the Arrhenius equation k = Ae^(−Ea/RT), the rate constant k is temperature-dependent. Increasing T increases the fraction of molecules with energy exceeding Ea, thereby increasing k. Concentration and surface area affect rate but not k itself.',
+    difficulty: 'Medium',
+    domain: 'Kinetics',
+    skill: 'Arrhenius equation and rate constant dependence',
   },
 ];
 
@@ -22477,6 +22571,82 @@ const unit8Questions: Question[] = [
     difficulty: 'Hard',
     domain: 'Acids & Bases',
     skill: 'Indicator selection for weak base-strong acid titration',
+  },
+  // ─── Batch: New Unit 8 questions (8-228 to 8-232) ───
+  {
+    id: 'ap-chem-8-228',
+    question: 'A 0.10 M solution of a weak acid HF has a Ka of 6.3 × 10⁻⁴. What is the approximate pH of the solution?',
+    options: [
+      { letter: 'A', text: '1.0' },
+      { letter: 'B', text: '2.1' },
+      { letter: 'C', text: '3.2' },
+      { letter: 'D', text: '4.0' },
+    ],
+    correctAnswer: 'B',
+    explanation: 'Using the approximation [H⁺] = √(Ka × [HA]) = √(6.3 × 10⁻⁴ × 0.10) = √(6.3 × 10⁻⁵) ≈ 7.9 × 10⁻³. pH = −log(7.9 × 10⁻³) ≈ 2.1.',
+    difficulty: 'Medium',
+    domain: 'Acids & Bases',
+    skill: 'Weak acid pH calculation',
+  },
+  {
+    id: 'ap-chem-8-229',
+    question: 'Which of the following conjugate acid-base pairs would be best for preparing a buffer with a pH of 4.5?',
+    options: [
+      { letter: 'A', text: 'HClO / ClO⁻ (Ka = 4.0 × 10⁻⁸)' },
+      { letter: 'B', text: 'HC₂H₃O₂ / C₂H₃O₂⁻ (Ka = 1.8 × 10⁻⁵)' },
+      { letter: 'C', text: 'NH₄⁺ / NH₃ (Ka = 5.6 × 10⁻¹⁰)' },
+      { letter: 'D', text: 'H₂CO₃ / HCO₃⁻ (Ka = 4.3 × 10⁻⁷)' },
+    ],
+    correctAnswer: 'B',
+    explanation: 'Optimal buffering occurs when pH ≈ pKa. pKa of acetic acid = −log(1.8 × 10⁻⁵) ≈ 4.74, which is closest to the target pH of 4.5.',
+    difficulty: 'Medium',
+    domain: 'Acids & Bases',
+    skill: 'Buffer selection using pKa',
+  },
+  {
+    id: 'ap-chem-8-230',
+    question: 'A 0.50 M solution of a weak acid HA has a Ka of 2.0 × 10⁻⁵. What is the [H₃O⁺] of the solution?',
+    options: [
+      { letter: 'A', text: '1.0 × 10⁻⁵ M' },
+      { letter: 'B', text: '3.2 × 10⁻³ M' },
+      { letter: 'C', text: '1.0 × 10⁻² M' },
+      { letter: 'D', text: '2.0 × 10⁻⁵ M' },
+    ],
+    correctAnswer: 'B',
+    explanation: 'Using Ka = x²/[HA]₀: 2.0 × 10⁻⁵ = x²/0.50. x² = 1.0 × 10⁻⁵, so x = √(1.0 × 10⁻⁵) ≈ 3.16 × 10⁻³ M.',
+    difficulty: 'Medium',
+    domain: 'Acids & Bases',
+    skill: 'Hydronium concentration from Ka',
+  },
+  {
+    id: 'ap-chem-8-231',
+    question: 'Which of the following occurs at the half-equivalence point of a titration of a weak acid with a strong base?',
+    options: [
+      { letter: 'A', text: 'pH = 7.0' },
+      { letter: 'B', text: 'pH = pKa' },
+      { letter: 'C', text: 'pH = pKb' },
+      { letter: 'D', text: '[Acid] = 0' },
+    ],
+    correctAnswer: 'B',
+    explanation: 'At the half-equivalence point, exactly half of the weak acid has been neutralized, so [HA] = [A⁻]. By the Henderson-Hasselbalch equation, pH = pKa + log(1) = pKa.',
+    difficulty: 'Hard',
+    domain: 'Acids & Bases',
+    skill: 'Titration curve analysis at half-equivalence',
+  },
+  {
+    id: 'ap-chem-8-232',
+    question: 'A buffer solution is 0.20 M in HF and 0.20 M in NaF. If a small amount of NaOH is added, which species reacts to neutralize the addition?',
+    options: [
+      { letter: 'A', text: 'F⁻' },
+      { letter: 'B', text: 'H₂O' },
+      { letter: 'C', text: 'HF' },
+      { letter: 'D', text: 'Na⁺' },
+    ],
+    correctAnswer: 'C',
+    explanation: 'When a strong base (OH⁻) is added to a buffer, the weak acid component (HF) reacts with it: HF + OH⁻ → F⁻ + H₂O. This prevents a large change in pH.',
+    difficulty: 'Medium',
+    domain: 'Acids & Bases',
+    skill: 'Buffer mechanism upon base addition',
   },
 ];
 
