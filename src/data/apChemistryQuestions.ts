@@ -18179,6 +18179,36 @@ const unit8Questions: Question[] = [
     domain: 'Acids and Bases',
     skill: 'Ka-Kb Relationship',
   },
+  {
+    id: 'ap-chem-8-099',
+    question: 'What is the pOH of a solution made by mixing 50 mL of 0.10 M HCl with 50 mL of 0.10 M NaOH?',
+    options: [
+      { letter: 'A', text: '1.0' },
+      { letter: 'B', text: '13.0' },
+      { letter: 'C', text: '0.0' },
+      { letter: 'D', text: '7.0' },
+    ],
+    correctAnswer: 'D',
+    explanation: 'CED Topic 8.3: Stoichiometric neutralization of a strong acid and strong base produces a neutral solution. pH = 7.0, pOH = 7.0 at 25°C.',
+    difficulty: 'Easy',
+    domain: 'Acids and Bases',
+    skill: 'pH of Neutralization Products',
+  },
+  {
+    id: 'ap-chem-8-100',
+    question: 'During the titration of a weak base with a strong acid, which indicator is most appropriate if the equivalence point pH is 5.2?',
+    options: [
+      { letter: 'A', text: 'Phenolphthalein (pKa = 9.3)' },
+      { letter: 'B', text: 'Bromothymol Blue (pKa = 7.0)' },
+      { letter: 'C', text: 'Methyl Red (pKa = 5.1)' },
+      { letter: 'D', text: 'Thymol Blue (pKa = 1.7)' },
+    ],
+    correctAnswer: 'C',
+    explanation: 'CED Topic 8.9: An indicator is best when its pKa is close to the pH at the equivalence point. Methyl Red (pKa = 5.1) is closest to 5.2.',
+    difficulty: 'Medium',
+    domain: 'Acids and Bases',
+    skill: 'Indicator Selection for Titrations',
+  },
 ];
 
 // ─── UNIT 9: Applications of Thermodynamics ───
