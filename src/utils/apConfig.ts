@@ -36,7 +36,7 @@ export const AP_SUBJECTS: APSubject[] = [
   { id: 'ap-statistics', name: 'AP Statistics', shortName: 'Statistics', icon: '📉', category: 'math', scoreRange: { min: 1, max: 5 }, description: 'Data analysis, probability, inference', comingSoon: true },
 
   // History & Social Sciences
-  { id: 'ap-us-history', name: 'AP United States History', shortName: 'APUSH', icon: '🇺🇸', category: 'history', scoreRange: { min: 1, max: 5 }, description: 'American history from pre-contact to present', comingSoon: true },
+  { id: 'ap-us-history', name: 'AP United States History', shortName: 'APUSH', icon: '🇺🇸', category: 'history', scoreRange: { min: 1, max: 5 }, description: 'American history from pre-contact to present' },
   { id: 'ap-world-history', name: 'AP World History: Modern', shortName: 'World Hist', icon: '🌎', category: 'history', scoreRange: { min: 1, max: 5 }, description: 'Global history from 1200 CE to present', comingSoon: true },
   { id: 'ap-euro-history', name: 'AP European History', shortName: 'Euro Hist', icon: '🏰', category: 'history', scoreRange: { min: 1, max: 5 }, description: 'European history from 1450 to present', comingSoon: true },
   { id: 'ap-us-gov', name: 'AP United States Government and Politics', shortName: 'US Gov', icon: '🏛️', category: 'history', scoreRange: { min: 1, max: 5 }, description: 'Constitutional foundations, institutions, policy', comingSoon: true },
