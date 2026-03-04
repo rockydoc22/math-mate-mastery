@@ -7712,6 +7712,36 @@ const unit3Questions: Question[] = [
     domain: 'Intermolecular Forces',
     skill: 'Vapor pressure prediction from IMF analysis',
   },
+  {
+    id: 'ap-chem-3-189',
+    question: 'Which of the following explains why H₂S has a lower boiling point than H₂O despite having a larger molar mass?',
+    options: [
+      { letter: 'A', text: 'H₂S is a nonpolar molecule.' },
+      { letter: 'B', text: 'H₂O molecules can participate in hydrogen bonding, while H₂S cannot.' },
+      { letter: 'C', text: 'The London dispersion forces in H₂O are stronger than in H₂S.' },
+      { letter: 'D', text: 'The S−H bond is stronger than the O−H bond.' },
+    ],
+    correctAnswer: 'B',
+    explanation: 'Water exhibits hydrogen bonding due to the large electronegativity difference between O and H. Sulfur is not electronegative enough to participate in hydrogen bonding, so H₂S only relies on weaker dipole-dipole and dispersion forces.',
+    difficulty: 'Hard',
+    domain: 'Intermolecular Forces',
+    skill: 'Compare boiling points using IMF analysis',
+  },
+  {
+    id: 'ap-chem-3-190',
+    question: 'On a phase diagram, what does the line representing the boundary between the solid and gas phases indicate?',
+    options: [
+      { letter: 'A', text: 'Melting points at various pressures' },
+      { letter: 'B', text: 'Boiling points at various pressures' },
+      { letter: 'C', text: 'Sublimation points at various pressures' },
+      { letter: 'D', text: 'Critical points at various temperatures' },
+    ],
+    correctAnswer: 'C',
+    explanation: 'Sublimation is the direct transition from solid to gas. The line separating these two phases on a phase diagram represents the conditions where both phases coexist in equilibrium.',
+    difficulty: 'Hard',
+    domain: 'Intermolecular Forces',
+    skill: 'Phase diagram interpretation',
+  },
 ];
 
 // ─── UNIT 4: Chemical Reactions ───
@@ -10056,6 +10086,21 @@ const unit4Questions: Question[] = [
     difficulty: 'Hard',
     domain: 'Chemical Reactions',
     skill: 'Redox titration stoichiometry',
+  },
+  {
+    id: 'ap-chem-4-183',
+    question: 'In the reaction Zn(s) + 2HCl(aq) → ZnCl₂(aq) + H₂(g), which species is acting as the reducing agent?',
+    options: [
+      { letter: 'A', text: 'Zn(s)' },
+      { letter: 'B', text: 'H⁺(aq)' },
+      { letter: 'C', text: 'Cl⁻(aq)' },
+      { letter: 'D', text: 'H₂(g)' },
+    ],
+    correctAnswer: 'A',
+    explanation: 'Zinc starts at oxidation state 0 and goes to +2. Since it loses electrons (is oxidized), it acts as the reducing agent.',
+    difficulty: 'Medium',
+    domain: 'Chemical Reactions',
+    skill: 'Identify reducing agent in redox reaction',
   },
 ];
 
@@ -14308,6 +14353,36 @@ const unit5Questions: Question[] = [
     difficulty: 'Medium',
     domain: 'Kinetics',
     skill: 'Role of catalyst in reaction mechanism',
+  },
+  {
+    id: 'ap-chem-5-178',
+    question: 'For the reaction 2A + B → C, a proposed mechanism is:\n1. A + B ⇌ D (fast equilibrium)\n2. D + A → C (slow)\nWhich rate law is consistent with this mechanism?',
+    options: [
+      { letter: 'A', text: 'Rate = k[A][B]' },
+      { letter: 'B', text: 'Rate = k[A]²[B]' },
+      { letter: 'C', text: 'Rate = k[D][A]' },
+      { letter: 'D', text: 'Rate = k[A][B]²' },
+    ],
+    correctAnswer: 'B',
+    explanation: 'The rate is determined by the slow step: Rate = k₂[D][A]. From the fast equilibrium: Keq = [D]/([A][B]), so [D] = Keq[A][B]. Substituting gives Rate = k₂Keq[A][B][A] = k[A]²[B].',
+    difficulty: 'Hard',
+    domain: 'Kinetics',
+    skill: 'Rate law from mechanism with pre-equilibrium',
+  },
+  {
+    id: 'ap-chem-5-179',
+    question: 'A reaction is found to be second-order with respect to reactant [A]. Which of the following plots will yield a straight line?',
+    options: [
+      { letter: 'A', text: '[A] vs time' },
+      { letter: 'B', text: 'ln[A] vs time' },
+      { letter: 'C', text: '1/[A] vs time' },
+      { letter: 'D', text: '√[A] vs time' },
+    ],
+    correctAnswer: 'C',
+    explanation: 'The integrated rate law for a second-order reaction is 1/[A]t = kt + 1/[A]₀, which follows the linear form y = mx + b when 1/[A] is plotted against t.',
+    difficulty: 'Medium',
+    domain: 'Kinetics',
+    skill: 'Identify linear plot for second-order reaction',
   },
 ];
 
@@ -22372,6 +22447,36 @@ const unit8Questions: Question[] = [
     difficulty: 'Hard',
     domain: 'Acids & Bases',
     skill: 'pH calculation for weak base',
+  },
+  {
+    id: 'ap-chem-8-226',
+    question: 'A buffer solution contains 0.10 M HNO₂ and 0.15 M KNO₂ (Ka = 4.0 × 10⁻⁴). What is the pH of the solution after the addition of 0.02 mol of HCl to 1.0 L of the buffer?',
+    options: [
+      { letter: 'A', text: '3.12' },
+      { letter: 'B', text: '3.40' },
+      { letter: 'C', text: '3.43' },
+      { letter: 'D', text: '3.58' },
+    ],
+    correctAnswer: 'C',
+    explanation: 'pKa = −log(4.0 × 10⁻⁴) = 3.40. Addition of HCl reacts with NO₂⁻: [HNO₂] = 0.10 + 0.02 = 0.12; [NO₂⁻] = 0.15 − 0.02 = 0.13. pH = 3.40 + log(0.13/0.12) = 3.40 + 0.03 = 3.43.',
+    difficulty: 'Hard',
+    domain: 'Acids & Bases',
+    skill: 'Buffer pH after addition of strong acid',
+  },
+  {
+    id: 'ap-chem-8-227',
+    question: 'Which indicator is most suitable for the titration of 0.10 M NH₃ with 0.10 M HCl?',
+    options: [
+      { letter: 'A', text: 'Phenolphthalein (pKa = 9.4)' },
+      { letter: 'B', text: 'Bromothymol blue (pKa = 7.0)' },
+      { letter: 'C', text: 'Methyl red (pKa = 5.1)' },
+      { letter: 'D', text: 'Thymol blue (pKa = 1.6)' },
+    ],
+    correctAnswer: 'C',
+    explanation: 'A weak base titrated with a strong acid will have an acidic equivalence point (pH < 7) due to the presence of the conjugate acid (NH₄⁺). Methyl red\'s pKa is closest to the expected equivalence point pH (approx 5.1).',
+    difficulty: 'Hard',
+    domain: 'Acids & Bases',
+    skill: 'Indicator selection for weak base-strong acid titration',
   },
 ];
 
