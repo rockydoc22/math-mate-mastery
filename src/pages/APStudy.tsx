@@ -11,6 +11,10 @@ import { AP_CALC_BC_UNITS, apCalcBCQuestionsByUnit, loadAPCalcBCQuestions } from
 import { AP_LANG_UNITS, apLangQuestionsByUnit, loadAPLangQuestions } from "@/data/apEnglishLangQuestions";
 import { AP_CALC_AB_UNITS, apCalcABQuestionsByUnit, loadAPCalcABQuestions } from "@/data/apCalculusABQuestions";
 import { AP_STATS_UNITS, apStatsQuestionsByUnit, loadAPStatsQuestions } from "@/data/apStatisticsQuestions";
+import { AP_EURO_UNITS, apEuroQuestionsByUnit, loadAPEuroQuestions } from "@/data/apEuropeanHistoryQuestions";
+import { AP_HUG_UNITS, apHuGQuestionsByUnit, loadAPHuGQuestions } from "@/data/apHumanGeoQuestions";
+import { AP_ES_UNITS, apESQuestionsByUnit, loadAPESQuestions } from "@/data/apEnvironmentalScienceQuestions";
+import { AP_CSP_UNITS, apCSPQuestionsByUnit, loadAPCSPQuestions } from "@/data/apCSPQuestions";
 import { Question } from "@/data/questions";
 import { MathText } from "@/components/MathText";
 import { AITutorExplanation } from "@/components/AITutorExplanation";
@@ -32,6 +36,10 @@ const APStudy = () => {
   const [langQuestions, setLangQuestions] = useState<Record<string, Question[]>>(apLangQuestionsByUnit);
   const [calcABQuestions, setCalcABQuestions] = useState<Record<string, Question[]>>(apCalcABQuestionsByUnit);
   const [statsQuestions, setStatsQuestions] = useState<Record<string, Question[]>>(apStatsQuestionsByUnit);
+  const [euroQuestions, setEuroQuestions] = useState<Record<string, Question[]>>(apEuroQuestionsByUnit);
+  const [hugQuestions, setHugQuestions] = useState<Record<string, Question[]>>(apHuGQuestionsByUnit);
+  const [esQuestions, setEsQuestions] = useState<Record<string, Question[]>>(apESQuestionsByUnit);
+  const [cspQuestions, setCspQuestions] = useState<Record<string, Question[]>>(apCSPQuestionsByUnit);
 
   // Lazy-load the full question banks when viewing specific subjects
   useEffect(() => {
@@ -47,6 +55,14 @@ const APStudy = () => {
       loadAPCalcABQuestions().then(setCalcABQuestions);
     } else if (subjectId === 'ap-statistics') {
       loadAPStatsQuestions().then(setStatsQuestions);
+    } else if (subjectId === 'ap-euro-history') {
+      loadAPEuroQuestions().then(setEuroQuestions);
+    } else if (subjectId === 'ap-human-geo') {
+      loadAPHuGQuestions().then(setHugQuestions);
+    } else if (subjectId === 'ap-environmental-science') {
+      loadAPESQuestions().then(setEsQuestions);
+    } else if (subjectId === 'ap-csp') {
+      loadAPCSPQuestions().then(setCspQuestions);
     }
   }, [subjectId]);
 
@@ -71,6 +87,10 @@ const APStudy = () => {
     'ap-lang': { units: AP_LANG_UNITS, questions: langQuestions },
     'ap-calculus-ab': { units: AP_CALC_AB_UNITS, questions: calcABQuestions },
     'ap-statistics': { units: AP_STATS_UNITS, questions: statsQuestions },
+    'ap-euro-history': { units: AP_EURO_UNITS, questions: euroQuestions },
+    'ap-human-geo': { units: AP_HUG_UNITS, questions: hugQuestions },
+    'ap-environmental-science': { units: AP_ES_UNITS, questions: esQuestions },
+    'ap-csp': { units: AP_CSP_UNITS, questions: cspQuestions },
   };
   const current = subjectMap[subjectId || ''] || { units: [], questions: {} };
   const units = current.units;
