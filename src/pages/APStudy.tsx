@@ -7,6 +7,7 @@ import { getAPSubject } from "@/utils/apConfig";
 import { AP_CHEM_UNITS, apChemQuestionsByUnit, type APChemUnit } from "@/data/apChemistryQuestions";
 import { AP_USH_UNITS, apUSHQuestionsByUnit, loadAPUSHQuestions } from "@/data/apUSHistoryQuestions";
 import { AP_LIT_UNITS, apLitQuestionsByUnit, loadAPLitQuestions } from "@/data/apEnglishLitQuestions";
+import { AP_CALC_BC_UNITS, apCalcBCQuestionsByUnit, loadAPCalcBCQuestions } from "@/data/apCalculusBCQuestions";
 import { Question } from "@/data/questions";
 import { MathText } from "@/components/MathText";
 import { AITutorExplanation } from "@/components/AITutorExplanation";
@@ -24,6 +25,7 @@ const APStudy = () => {
   const [showAITutor, setShowAITutor] = useState(false);
   const [ushQuestions, setUshQuestions] = useState<Record<string, Question[]>>(apUSHQuestionsByUnit);
   const [litQuestions, setLitQuestions] = useState<Record<string, Question[]>>(apLitQuestionsByUnit);
+  const [calcBCQuestions, setCalcBCQuestions] = useState<Record<string, Question[]>>(apCalcBCQuestionsByUnit);
 
   // Lazy-load the full question banks when viewing specific subjects
   useEffect(() => {
@@ -31,6 +33,8 @@ const APStudy = () => {
       loadAPUSHQuestions().then(setUshQuestions);
     } else if (subjectId === 'ap-english-lit') {
       loadAPLitQuestions().then(setLitQuestions);
+    } else if (subjectId === 'ap-calculus-bc') {
+      loadAPCalcBCQuestions().then(setCalcBCQuestions);
     }
   }, [subjectId]);
 
@@ -50,8 +54,9 @@ const APStudy = () => {
   const isChemistry = subjectId === 'ap-chemistry';
   const isUSHistory = subjectId === 'ap-us-history';
   const isEnglishLit = subjectId === 'ap-english-lit';
-  const units = isChemistry ? AP_CHEM_UNITS : isUSHistory ? AP_USH_UNITS : isEnglishLit ? AP_LIT_UNITS : [];
-  const questionsByUnit = isChemistry ? apChemQuestionsByUnit : isUSHistory ? ushQuestions : isEnglishLit ? litQuestions : {};
+  const isCalcBC = subjectId === 'ap-calculus-bc';
+  const units = isChemistry ? AP_CHEM_UNITS : isUSHistory ? AP_USH_UNITS : isEnglishLit ? AP_LIT_UNITS : isCalcBC ? AP_CALC_BC_UNITS : [];
+  const questionsByUnit = isChemistry ? apChemQuestionsByUnit : isUSHistory ? ushQuestions : isEnglishLit ? litQuestions : isCalcBC ? calcBCQuestions : {};
 
   const startQuiz = (unit: APChemUnit) => {
     const questions = questionsByUnit[unit.id] || [];
