@@ -1,4 +1,5 @@
 import { Question } from './questions';
+import { shuffleAllQuestionOptions } from '@/utils/optionShuffler';
 
 const rawACTScience = [
   { id: 1, question: "A student measures the pH of four solutions. Solution 1: pH 3; Solution 2: pH 7; Solution 3: pH 10; Solution 4: pH 1. Which solution is the strongest acid?", choices: ["Solution 1", "Solution 2", "Solution 3", "Solution 4"], answer: "D", explanation: "Lower pH indicates stronger acidity; pH 1 is the lowest, so Solution 4 is the strongest acid." },
@@ -276,19 +277,21 @@ const rawACTScience = [
 
 const letters = ['A', 'B', 'C', 'D'];
 
-export const actScienceQuestions: Question[] = rawACTScience.map((q) => {
-  const raw = q as any;
-  const rating = raw.difficulty || (q.id <= 15 ? 5 : q.id <= 35 ? 6 : 7);
-  const skill = raw.skill || (q.id <= 10 ? 'Data Representation' : q.id <= 30 ? 'Research Summaries' : 'Conflicting Viewpoints');
-  return {
-    id: `actsci${String(q.id).padStart(3, '0')}`,
-    question: q.question,
-    options: q.choices.map((text, i) => ({ letter: letters[i], text })),
-    correctAnswer: q.answer,
-    explanation: q.explanation,
-    difficulty: rating <= 6 ? 'Medium' : 'Hard',
-    domain: 'Science',
-    skill,
-    difficultyRating: rating,
-  };
-});
+export const actScienceQuestions: Question[] = shuffleAllQuestionOptions(
+  rawACTScience.map((q) => {
+    const raw = q as any;
+    const rating = raw.difficulty || (q.id <= 15 ? 5 : q.id <= 35 ? 6 : 7);
+    const skill = raw.skill || (q.id <= 10 ? 'Data Representation' : q.id <= 30 ? 'Research Summaries' : 'Conflicting Viewpoints');
+    return {
+      id: `actsci${String(q.id).padStart(3, '0')}`,
+      question: q.question,
+      options: q.choices.map((text, i) => ({ letter: letters[i], text })),
+      correctAnswer: q.answer,
+      explanation: q.explanation,
+      difficulty: rating <= 6 ? 'Medium' : 'Hard',
+      domain: 'Science',
+      skill,
+      difficultyRating: rating,
+    };
+  })
+);

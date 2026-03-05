@@ -1,5 +1,6 @@
 import englishQuestionsRaw from './englishQuestionsRaw.json';
 import { rateDifficulty } from '@/utils/difficultyRating';
+import { shuffleAllQuestionOptions } from '@/utils/optionShuffler';
 import { uploadedEnglishQuestions } from './uploadedEnglishQuestions';
 import { hardEnglishQuestions } from './hardEnglishQuestions';
 import { satEnglishQuestions } from './satEnglishQuestions';
@@ -128,11 +129,12 @@ const filteredQuestions = allEnglishQuestions
   .filter(q => !duplicateEnglishIds.has(q.id))
   .filter(q => !referencesExternalPassage(q));
 
-export const englishQuestions: EnglishQuestion[] = filteredQuestions
-  .map(q => ({
+export const englishQuestions: EnglishQuestion[] = shuffleAllQuestionOptions(
+  filteredQuestions.map(q => ({
     ...q,
     difficultyRating: q.difficultyRating ? Math.min(q.difficultyRating, 10) : q.difficultyRating
-  }));
+  }))
+);
 
 // Calculate difficulty distribution
 const difficultyDistribution: Record<number, number> = {};
