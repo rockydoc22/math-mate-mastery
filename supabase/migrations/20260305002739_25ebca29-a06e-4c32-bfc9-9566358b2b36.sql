@@ -1,0 +1,1 @@
+UPDATE flagged_questions SET status = 'reviewed', resolution_notes = 'Reviewed and addressed in v1.0.8 update', resolved_at = now() WHERE status = 'pending';

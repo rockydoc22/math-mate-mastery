@@ -3,7 +3,7 @@ import { useRegisterSW } from "virtual:pwa-register/react";
 import { toast } from "@/hooks/use-toast";
 import { ToastAction } from "@/components/ui/toast";
 
-export const APP_VERSION = "1.0.7";
+export const APP_VERSION = "1.0.8";
 
 const VERSION_KEY = "sat_mastery_app_version";
 const AUTO_APPLY_UPDATES = true;

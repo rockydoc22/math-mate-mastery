@@ -248,26 +248,26 @@ const DailyChallenge = () => {
 
   return (
     <ScreenShakeWrapper shake={screenShake} intensity={getComboIntensity(combo.count) === "ultra" ? "high" : getComboIntensity(combo.count) === "high" ? "medium" : "low"}>
-      <div className="min-h-screen bg-gradient-to-br from-primary/10 via-accent/10 to-secondary/10 p-4 py-8">
+      <div className="min-h-screen bg-gradient-to-br from-primary/10 via-accent/10 to-secondary/10 p-4 py-8 overflow-x-hidden">
         <div className="max-w-3xl mx-auto space-y-6">
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-2 sm:gap-4 flex-wrap">
             <Link to="/">
               <Button variant="ghost" size="sm">
                 <ArrowLeft className="w-4 h-4 mr-2" />
                 Back
               </Button>
             </Link>
-            <div className="flex-1">
-              <h1 className="text-2xl font-bold flex items-center gap-2">
-                <Zap className="w-6 h-6 text-primary" />
+            <div className="flex-1 min-w-0">
+              <h1 className="text-lg sm:text-2xl font-bold flex items-center gap-2">
+                <Zap className="w-5 h-5 sm:w-6 sm:h-6 text-primary flex-shrink-0" />
                 Compounding to 1600
               </h1>
-              <p className="text-sm text-muted-foreground flex items-center gap-1">
-                <Calendar className="w-4 h-4" />
+              <p className="text-xs sm:text-sm text-muted-foreground flex items-center gap-1">
+                <Calendar className="w-3 h-3 sm:w-4 sm:h-4" />
                 {new Date().toLocaleDateString("en-US", { weekday: "long", month: "short", day: "numeric" })}
               </p>
             </div>
-            <div className="flex items-center gap-4">
+            <div className="flex items-center gap-2 sm:gap-4 flex-shrink-0">
               {/* Combo Display */}
               <ComboDisplay 
                 combo={combo}
@@ -275,14 +275,14 @@ const DailyChallenge = () => {
                 intensity={getComboIntensity(combo.count)}
               />
               {streak && streak.current_streak > 0 && (
-                <div className="flex items-center gap-1 px-3 py-1.5 rounded-full bg-accent/20 text-accent-foreground">
-                  <Flame className="w-5 h-5" />
-                  <span className="font-bold text-lg">{streak.current_streak}</span>
+                <div className="flex items-center gap-1 px-2 py-1 rounded-full bg-accent/20 text-accent-foreground">
+                  <Flame className="w-4 h-4" />
+                  <span className="font-bold text-sm">{streak.current_streak}</span>
                 </div>
               )}
               <div className="text-right">
-                <p className="text-sm text-muted-foreground">Score</p>
-                <p className="text-xl font-bold text-primary">{score}/{currentIndex + (showResult ? 1 : 0)}</p>
+                <p className="text-xs text-muted-foreground">Score</p>
+                <p className="text-lg font-bold text-primary">{score}/{currentIndex + (showResult ? 1 : 0)}</p>
               </div>
             </div>
           </div>
