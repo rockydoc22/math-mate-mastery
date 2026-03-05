@@ -102,6 +102,7 @@ export default defineConfig(({ mode }) => ({
           'aplit-bank': ['./src/data/aplit_full_question_bank.json'],
           'apcalcbc-bank': ['./src/data/apcalcbc_full_question_bank.json'],
           'ap-mega-bank': ['./src/data/ap_mega_bank_lovable.json'],
+          'ap-mega-bank-v2': ['./src/data/ap_mega_bank_v2.json'],
         },
       },
     },
