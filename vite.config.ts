@@ -99,6 +99,7 @@ export default defineConfig(({ mode }) => ({
       output: {
         manualChunks: {
           'apush-bank': ['./src/data/apush_full_question_bank.json'],
+          'aplit-bank': ['./src/data/aplit_full_question_bank.json'],
         },
       },
     },
