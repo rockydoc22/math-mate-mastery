@@ -118,6 +118,9 @@ const EssayGrader = () => {
               Get instant rubric-based feedback on your essays
             </p>
           </div>
+          <Button variant="outline" size="sm" className="ml-auto gap-1.5" onClick={() => navigate('/writing-lab')}>
+            ✍️ Writing Lab
+          </Button>
         </div>
 
         {/* Rubric selector */}
