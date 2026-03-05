@@ -1,4 +1,5 @@
 import { Question } from './questions';
+import { deduplicateBank } from '@/utils/questionDedup';
 
 export interface APUSHUnit {
   id: string;
@@ -145,21 +146,19 @@ async function loadBank(): Promise<Record<string, Question[]>> {
     import('./apush_full_question_bank_v2.json'),
   ]).then(([mod1, mod2]) => {
     const result: Record<string, Question[]> = {};
-    // Load v1
     for (const unit of (mod1.default as any).units) {
       const key = `unit-${unit.unit_id}`;
       result[key] = (unit.questions || []).map((q: RawQuestion) => convertQuestion(q));
     }
-    // Merge v2 on top (deduplicate by id)
     for (const unit of (mod2.default as any).units) {
       const key = `unit-${unit.unit_id}`;
       const v2Qs = (unit.questions || []).map((q: RawQuestion) => convertQuestion(q));
       const existing = result[key] || [];
-      const existingIds = new Set(existing.map(q => q.id));
-      result[key] = [...existing, ...v2Qs.filter(q => !existingIds.has(q.id))];
+      const existingIds = new Set(existing.map(q => q.id.toLowerCase()));
+      result[key] = [...existing, ...v2Qs.filter(q => !existingIds.has(q.id.toLowerCase()))];
     }
-    _bankCache = result;
-    return result;
+    _bankCache = deduplicateBank(result);
+    return _bankCache;
   });
   
   return _bankPromise;

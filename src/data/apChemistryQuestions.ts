@@ -1,5 +1,6 @@
 import { Question } from './questions';
 import { shuffleAllQuestionOptions } from '@/utils/optionShuffler';
+import { deduplicateBank } from '@/utils/questionDedup';
 
 // AP Chemistry Units (College Board curriculum):
 // Unit 1: Atomic Structure and Properties
@@ -30569,8 +30570,8 @@ export async function loadAPChemBankQuestions(): Promise<Record<string, Question
         (unit.questions || []).map((q: RawChemQuestion) => convertChemQuestion(q))
       );
     }
-    _chemBankCache = result;
-    return result;
+    _chemBankCache = deduplicateBank(result);
+    return _chemBankCache;
   });
 
   return _chemBankPromise;
