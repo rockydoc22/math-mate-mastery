@@ -52,28 +52,50 @@ export const ExamSelector = ({ onSelect, isModal = false }: ExamSelectorProps) =
             );
           })}
 
-          {/* AP Tests — separate flow */}
-          <Card
-            className="p-5 cursor-pointer border-2 transition-all hover:scale-[1.02] hover:shadow-lg hover:border-primary/50"
-            onClick={() => navigate("/ap-tests")}
-          >
-            <div className="flex items-center gap-4">
-              <span className="text-3xl">🧪</span>
-              <div className="flex-1">
-                <div className="flex items-center gap-2">
-                  <h3 className="font-bold text-lg">AP Tests</h3>
-                  <span className="text-[10px] px-2 py-0.5 rounded-full bg-primary/10 text-primary font-medium">
-                    NEW
-                  </span>
-                </div>
-                <p className="text-sm text-muted-foreground">Physics, Biology, Calculus, US History & more</p>
-                <p className="text-xs text-muted-foreground mt-1">
-                  Score range: 1–5 • Multiple AP subjects
-                </p>
+        {/* AP Tests — separate flow */}
+        <Card
+          className="p-5 cursor-pointer border-2 transition-all hover:scale-[1.02] hover:shadow-lg hover:border-primary/50"
+          onClick={() => navigate("/ap-tests")}
+        >
+          <div className="flex items-center gap-4">
+            <span className="text-3xl">🧪</span>
+            <div className="flex-1">
+              <div className="flex items-center gap-2">
+                <h3 className="font-bold text-lg">AP Tests</h3>
+                <span className="text-[10px] px-2 py-0.5 rounded-full bg-primary/10 text-primary font-medium">
+                  NEW
+                </span>
               </div>
-              <FlaskConical className="w-5 h-5 text-muted-foreground" />
+              <p className="text-sm text-muted-foreground">Physics, Biology, Calculus, US History & more</p>
+              <p className="text-xs text-muted-foreground mt-1">
+                Score range: 1–5 • Multiple AP subjects
+              </p>
             </div>
-          </Card>
+            <FlaskConical className="w-5 h-5 text-muted-foreground" />
+          </div>
+        </Card>
+
+        {/* French Competition — separate flow */}
+        <Card
+          className="p-5 cursor-pointer border-2 transition-all hover:scale-[1.02] hover:shadow-lg hover:border-primary/50"
+          onClick={() => navigate("/french-competition")}
+        >
+          <div className="flex items-center gap-4">
+            <span className="text-3xl">🇫🇷</span>
+            <div className="flex-1">
+              <div className="flex items-center gap-2">
+                <h3 className="font-bold text-lg">French Competition</h3>
+                <span className="text-[10px] px-2 py-0.5 rounded-full bg-primary/10 text-primary font-medium">
+                  NEW
+                </span>
+              </div>
+              <p className="text-sm text-muted-foreground">Grammar, culture, listening & elite phrases</p>
+              <p className="text-xs text-muted-foreground mt-1">
+                CCFF-style practice • Multiple categories
+              </p>
+            </div>
+          </div>
+        </Card>
         </div>
 
         <p className="text-xs text-center text-muted-foreground">
