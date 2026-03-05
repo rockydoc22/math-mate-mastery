@@ -1,4 +1,5 @@
 import { Question } from './questions';
+import rawBank from './apush_full_question_bank.json';
 
 export interface APUSHUnit {
   id: string;
@@ -20,8 +21,54 @@ export const AP_USH_UNITS: APUSHUnit[] = [
   { id: 'unit-9', unitNumber: 9, name: 'Period 9: 1980–Present', description: 'Conservatism, globalization, War on Terror, technology', icon: '💻' },
 ];
 
-// ─── UNIT 1: Period 1 (1491–1607) ───
-const unit1Questions: Question[] = [
+// ─── Convert imported JSON bank into Question format ───
+interface RawQuestion {
+  id: string;
+  question: string;
+  choices: Record<string, string>;
+  answer: string;
+  explanation: string;
+  skills_tested: string[];
+  topic: string;
+  stimulus_type?: string;
+  stimulus?: string | { title: string; x_label: string; y_label: string; points: number[][] } | null;
+}
+
+function convertQuestion(raw: RawQuestion, unitNum: number): Question {
+  const letters = ['A', 'B', 'C', 'D'];
+  // Build stimulus prefix for questions with text stimuli
+  let questionText = raw.question;
+  if (raw.stimulus_type === 'text' && typeof raw.stimulus === 'string') {
+    questionText = `"${raw.stimulus}"\n\n${raw.question}`;
+  } else if (raw.stimulus_type === 'chart' && raw.stimulus && typeof raw.stimulus === 'object') {
+    const chart = raw.stimulus as { title: string };
+    questionText = `[Chart: ${chart.title}]\n\n${raw.question}`;
+  }
+
+  return {
+    id: raw.id.toLowerCase(),
+    question: questionText,
+    options: letters
+      .filter(l => raw.choices[l] !== undefined)
+      .map(l => ({ letter: l, text: raw.choices[l] })),
+    correctAnswer: raw.answer,
+    explanation: raw.explanation,
+    difficulty: 'Medium',
+    domain: raw.topic,
+    skill: raw.skills_tested?.[0] || 'Contextualization',
+  };
+}
+
+// Parse all units from the JSON bank
+const bankByUnit: Record<string, Question[]> = {};
+for (const unit of (rawBank as any).units) {
+  const key = `unit-${unit.unit_id}`;
+  bankByUnit[key] = (unit.questions || []).map((q: RawQuestion) => convertQuestion(q, unit.unit_id));
+}
+
+// ─── Hand-curated questions (kept as priority / high-quality originals) ───
+
+const curatedUnit1: Question[] = [
   {
     id: 'apush-1-001',
     question: 'Which of the following best describes the impact of the Encomienda system on Spanish colonial society?',
@@ -52,599 +99,9 @@ const unit1Questions: Question[] = [
     domain: 'Contact & Exchange',
     skill: 'Causation',
   },
-  {
-    id: 'apush-1-003',
-    question: 'Which of the following best describes the primary economic activity of most Native American societies in the Eastern Woodlands before European contact?',
-    options: [
-      { letter: 'A', text: 'Large-scale plantation agriculture based on enslaved labor' },
-      { letter: 'B', text: 'Nomadic bison hunting with little agriculture' },
-      { letter: 'C', text: 'Mixed agriculture, hunting, and gathering in semi-permanent villages' },
-      { letter: 'D', text: 'Intensive irrigation-based maize agriculture in desert environments' },
-    ],
-    correctAnswer: 'C',
-    explanation: 'Eastern Woodlands societies typically practiced a mixed economy that combined maize agriculture with hunting, fishing, and gathering. They lived in semi-permanent villages and used the region\'s forests and rivers to support relatively dense populations.',
-    difficulty: 'Medium',
-    domain: 'Contact & Exchange',
-    skill: 'Contextualization',
-  },
-  {
-    id: 'apush-1-004',
-    question: 'Maize cultivation spread northward from present-day Mexico into the American Southwest. What was one major consequence of this development for Native societies in that region?',
-    options: [
-      { letter: 'A', text: 'It led to the immediate collapse of all nomadic lifestyles.' },
-      { letter: 'B', text: 'It supported the growth of more complex, sedentary societies.' },
-      { letter: 'C', text: 'It forced Native peoples to abandon trade networks.' },
-      { letter: 'D', text: 'It caused a rapid decline in population due to soil exhaustion.' },
-    ],
-    correctAnswer: 'B',
-    explanation: 'Maize agriculture allowed for more reliable food surpluses, which supported population growth, permanent settlements, and more complex social and political structures in the American Southwest.',
-    difficulty: 'Medium',
-    domain: 'Contact & Exchange',
-    skill: 'Causation',
-  },
-  {
-    id: 'apush-1-005',
-    question: 'Which European nation was the first to establish significant contact and trade along the West African coast in the 15th century?',
-    options: [
-      { letter: 'A', text: 'England' },
-      { letter: 'B', text: 'France' },
-      { letter: 'C', text: 'Portugal' },
-      { letter: 'D', text: 'The Netherlands' },
-    ],
-    correctAnswer: 'C',
-    explanation: 'Portugal pioneered Atlantic exploration in the 1400s, establishing trading posts along the West African coast and developing early systems of trade in gold, spices, and enslaved Africans.',
-    difficulty: 'Medium',
-    domain: 'Contact & Exchange',
-    skill: 'Contextualization',
-  },
-  {
-    id: 'apush-1-006',
-    question: 'The Columbian Exchange refers primarily to which of the following?',
-    options: [
-      { letter: 'A', text: 'The transfer of European political institutions to the Americas' },
-      { letter: 'B', text: 'The exchange of plants, animals, diseases, and people between the Eastern and Western Hemispheres' },
-      { letter: 'C', text: 'The spread of Christianity from Europe to Asia' },
-      { letter: 'D', text: 'The trade of manufactured goods for raw materials within Europe' },
-    ],
-    correctAnswer: 'B',
-    explanation: 'The Columbian Exchange describes the massive, ongoing transfer of crops, animals, diseases, and human populations between the Old World and the New World after 1492.',
-    difficulty: 'Easy',
-    domain: 'Contact & Exchange',
-    skill: 'Contextualization',
-  },
-  {
-    id: 'apush-1-007',
-    question: 'Which of the following was the most devastating impact of European contact on Native American populations in the 16th century?',
-    options: [
-      { letter: 'A', text: 'The introduction of horses' },
-      { letter: 'B', text: 'The spread of Old World diseases' },
-      { letter: 'C', text: 'The adoption of Christianity' },
-      { letter: 'D', text: 'The arrival of new trade goods' },
-    ],
-    correctAnswer: 'B',
-    explanation: 'Epidemics of smallpox, measles, and other Old World diseases caused catastrophic population declines among Native Americans, who lacked immunity to these pathogens.',
-    difficulty: 'Easy',
-    domain: 'Contact & Exchange',
-    skill: 'Causation',
-  },
-  {
-    id: 'apush-1-008',
-    question: 'A Spanish document from the 1500s describes Native peoples as "children" who must be guided to Christianity and labor for their own good. Which Spanish system does this most directly support?',
-    options: [
-      { letter: 'A', text: 'The encomienda system' },
-      { letter: 'B', text: 'The headright system' },
-      { letter: 'C', text: 'The mission system in California only' },
-      { letter: 'D', text: 'The indentured servitude system' },
-    ],
-    correctAnswer: 'A',
-    explanation: 'The encomienda system granted Spanish colonists the right to extract labor and tribute from Native communities in exchange for supposed protection and Christianization, often justified through paternalistic language.',
-    difficulty: 'Medium',
-    domain: 'Contact & Exchange',
-    skill: 'Sourcing',
-  },
-  {
-    id: 'apush-1-009',
-    question: 'Bartolomé de Las Casas is best known in the 16th century for which of the following?',
-    options: [
-      { letter: 'A', text: 'Defending the encomienda system as morally necessary' },
-      { letter: 'B', text: 'Advocating for better treatment of Native Americans' },
-      { letter: 'C', text: 'Leading a major Native revolt against Spanish rule' },
-      { letter: 'D', text: 'Promoting English colonization of North America' },
-    ],
-    correctAnswer: 'B',
-    explanation: 'Las Casas, a Spanish priest, criticized the brutal treatment of Native Americans under Spanish rule and argued that they were fully human and deserving of more humane treatment.',
-    difficulty: 'Medium',
-    domain: 'Contact & Exchange',
-    skill: 'Contextualization',
-  },
-  {
-    id: 'apush-1-010',
-    question: 'Which of the following best explains why Spanish colonists imported large numbers of enslaved Africans to the Americas by the late 1500s?',
-    options: [
-      { letter: 'A', text: 'Native populations had declined dramatically due to disease and overwork.' },
-      { letter: 'B', text: 'African laborers were the only group willing to work in mines.' },
-      { letter: 'C', text: 'Spanish law prohibited the use of Native labor in any form.' },
-      { letter: 'D', text: 'African laborers demanded higher wages than European workers.' },
-    ],
-    correctAnswer: 'A',
-    explanation: 'The collapse of Native populations due to disease and harsh labor conditions led Spanish colonists to increasingly rely on enslaved Africans to supply labor in mines and plantations.',
-    difficulty: 'Medium',
-    domain: 'Contact & Exchange',
-    skill: 'Causation',
-  },
-  {
-    id: 'apush-1-011',
-    question: 'Which of the following best describes Native American responses to European colonization in the 16th and 17th centuries?',
-    options: [
-      { letter: 'A', text: 'Uniform military resistance to all European powers' },
-      { letter: 'B', text: 'Immediate and permanent alliance with the English' },
-      { letter: 'C', text: 'A range of strategies including alliance, trade, resistance, and migration' },
-      { letter: 'D', text: 'Total isolation from European goods and diplomacy' },
-    ],
-    correctAnswer: 'C',
-    explanation: 'Native groups pursued diverse strategies, including forming alliances, engaging in trade, resisting militarily, and relocating to adapt to European encroachment and shifting power dynamics.',
-    difficulty: 'Medium',
-    domain: 'Contact & Exchange',
-    skill: 'CCOT',
-  },
-  {
-    id: 'apush-1-012',
-    question: 'Which of the following most clearly distinguishes Spanish from English patterns of colonization in the Americas during the 16th and 17th centuries?',
-    options: [
-      { letter: 'A', text: 'Spanish reliance on family-based settlement and small farms' },
-      { letter: 'B', text: 'English creation of a large mestizo population through intermarriage' },
-      { letter: 'C', text: 'Spanish development of a racially mixed society with a formal caste system' },
-      { letter: 'D', text: 'English focus on extracting mineral wealth through forced Native labor' },
-    ],
-    correctAnswer: 'C',
-    explanation: 'Spanish colonies developed a complex racial hierarchy (casta system) that incorporated Europeans, Native peoples, and Africans, reflecting more extensive intermarriage and mixing than in most English colonies.',
-    difficulty: 'Hard',
-    domain: 'Contact & Exchange',
-    skill: 'Comparison',
-  },
-  {
-    id: 'apush-1-013',
-    question: 'Which of the following was a major consequence of the growth of the Atlantic slave trade for West African societies?',
-    options: [
-      { letter: 'A', text: 'Increased political stability' },
-      { letter: 'B', text: 'Population decline and increased warfare between African states' },
-      { letter: 'C', text: 'The end of all African participation in global trade' },
-      { letter: 'D', text: 'Rapid industrialization' },
-    ],
-    correctAnswer: 'B',
-    explanation: 'The slave trade intensified conflict among African states, contributed to population loss, and destabilized political structures.',
-    difficulty: 'Medium',
-    domain: 'Contact & Exchange',
-    skill: 'Causation',
-  },
 ];
 
-// ─── UNIT 2: Period 2 (1607–1754) ───
-const unit2Questions: Question[] = [
-  {
-    id: 'apush-2-001',
-    question: 'How did the British American system of slavery differ significantly from other colonial models (Spanish or French) by the mid-1700s?',
-    options: [
-      { letter: 'A', text: 'The British system relied primarily on Native American labor.' },
-      { letter: 'B', text: 'The British system developed a rigid racial hierarchy that became hereditary.' },
-      { letter: 'C', text: 'The British colonies allowed for frequent manumission (freeing) of slaves.' },
-      { letter: 'D', text: 'The British system was confined exclusively to the New England colonies.' },
-    ],
-    correctAnswer: 'B',
-    explanation: 'Unlike the Spanish or French, who often had "castas" or intermediate racial classes, the British colonies developed a binary racial system where status was inherited from the mother (partus sequitur ventrem).',
-    difficulty: 'Hard',
-    domain: 'Colonial Societies',
-    skill: 'Comparison',
-  },
-  {
-    id: 'apush-2-002',
-    question: 'The First Great Awakening (1730s–1740s) led to which of the following social changes?',
-    options: [
-      { letter: 'A', text: 'The strengthening of established churches like the Anglicans.' },
-      { letter: 'B', text: 'A decline in the use of enslaved labor in the South.' },
-      { letter: 'C', text: 'Increased fragmentation of religious sects and a challenge to traditional authority.' },
-      { letter: 'D', text: 'The total separation of church and state in all thirteen colonies.' },
-    ],
-    correctAnswer: 'C',
-    explanation: 'The Great Awakening emphasized personal emotion over established doctrine, leading to the rise of "New Light" ministers and the growth of Baptist and Methodist denominations.',
-    difficulty: 'Medium',
-    domain: 'Colonial Societies',
-    skill: 'CCOT',
-  },
-  {
-    id: 'apush-2-003',
-    question: 'Which of the following best describes French colonial efforts in North America during the 17th century?',
-    options: [
-      { letter: 'A', text: 'Large-scale plantation agriculture with extensive use of enslaved labor' },
-      { letter: 'B', text: 'Tight control over densely populated settler colonies along the Atlantic coast' },
-      { letter: 'C', text: 'Sparse settlements focused on the fur trade and alliances with Native peoples' },
-      { letter: 'D', text: 'Immediate displacement of Native populations through large land purchases' },
-    ],
-    correctAnswer: 'C',
-    explanation: 'French colonization in North America centered on the fur trade, relatively small settler populations, and diplomatic and commercial alliances with Native groups.',
-    difficulty: 'Medium',
-    domain: 'Colonial Societies',
-    skill: 'Comparison',
-  },
-  {
-    id: 'apush-2-004',
-    question: 'Compared to the Spanish, English colonists in the 17th century were more likely to:',
-    options: [
-      { letter: 'A', text: 'Intermarry with Native populations and create a mestizo class' },
-      { letter: 'B', text: 'Establish large missionary networks among Native peoples' },
-      { letter: 'C', text: 'Displace Native peoples and settle on their lands with families' },
-      { letter: 'D', text: 'Rely primarily on Native labor for plantation agriculture' },
-    ],
-    correctAnswer: 'C',
-    explanation: 'English colonization tended to involve family-based settlements and the displacement of Native peoples from their lands rather than extensive intermarriage or reliance on Native labor.',
-    difficulty: 'Medium',
-    domain: 'Colonial Societies',
-    skill: 'Comparison',
-  },
-  {
-    id: 'apush-2-005',
-    question: 'In the early 1600s, the Virginia Company\'s primary goal in establishing Jamestown was to:',
-    options: [
-      { letter: 'A', text: 'Create a refuge for religious dissenters' },
-      { letter: 'B', text: 'Establish a military outpost against the Spanish' },
-      { letter: 'C', text: 'Generate profit for investors through New World resources' },
-      { letter: 'D', text: 'Build a utopian community based on communal landholding' },
-    ],
-    correctAnswer: 'C',
-    explanation: 'The Virginia Company was a joint-stock company seeking profit from New World ventures. Jamestown was founded in 1607 with the expectation of finding valuable resources.',
-    difficulty: 'Medium',
-    domain: 'Colonial Societies',
-    skill: 'Contextualization',
-  },
-  {
-    id: 'apush-2-006',
-    question: 'Which cash crop most transformed the economy and labor system of the Chesapeake colonies in the 17th century?',
-    options: [
-      { letter: 'A', text: 'Rice' },
-      { letter: 'B', text: 'Indigo' },
-      { letter: 'C', text: 'Tobacco' },
-      { letter: 'D', text: 'Sugar' },
-    ],
-    correctAnswer: 'C',
-    explanation: 'Tobacco cultivation became the economic foundation of the Chesapeake region, driving demand for labor and leading to the expansion of indentured servitude and, later, African slavery.',
-    difficulty: 'Easy',
-    domain: 'Colonial Societies',
-    skill: 'Causation',
-  },
-  {
-    id: 'apush-2-007',
-    question: 'The headright system in the Chesapeake colonies was designed primarily to:',
-    options: [
-      { letter: 'A', text: 'Encourage the migration of families from New England' },
-      { letter: 'B', text: 'Promote the importation of enslaved Africans' },
-      { letter: 'C', text: 'Attract settlers by granting land to those who paid for passage' },
-      { letter: 'D', text: 'Limit the power of large landowners in colonial assemblies' },
-    ],
-    correctAnswer: 'C',
-    explanation: 'The headright system granted land (often 50 acres) to individuals who paid for their own or others\' passage to Virginia or Maryland.',
-    difficulty: 'Medium',
-    domain: 'Colonial Societies',
-    skill: 'Contextualization',
-  },
-  {
-    id: 'apush-2-008',
-    question: 'A 17th-century New England town record emphasizes mandatory church attendance and community oversight of moral behavior. This most directly reflects which colonial development?',
-    options: [
-      { letter: 'A', text: 'The rise of religious toleration in all colonies' },
-      { letter: 'B', text: 'Puritan efforts to create a "city upon a hill"' },
-      { letter: 'C', text: 'The dominance of Anglicanism in New England' },
-      { letter: 'D', text: 'The separation of church and state in colonial governments' },
-    ],
-    correctAnswer: 'B',
-    explanation: 'Puritan leaders in New England sought to build a model Christian community with strict moral codes and close ties between church and local governance.',
-    difficulty: 'Medium',
-    domain: 'Colonial Societies',
-    skill: 'Sourcing',
-  },
-  {
-    id: 'apush-2-009',
-    question: 'Compared to New England colonies, the Chesapeake colonies in the 1600s were more likely to:',
-    options: [
-      { letter: 'A', text: 'Have longer life expectancy and stable family structures' },
-      { letter: 'B', text: 'Develop a diversified economy with small farms and commerce' },
-      { letter: 'C', text: 'Rely on single men and a cash-crop economy based on tobacco' },
-      { letter: 'D', text: 'Emphasize town meetings and congregational churches' },
-    ],
-    correctAnswer: 'C',
-    explanation: 'The Chesapeake region was characterized by a tobacco-based plantation economy, a high proportion of young single men, and less stable family structures compared to New England.',
-    difficulty: 'Medium',
-    domain: 'Colonial Societies',
-    skill: 'Comparison',
-  },
-  {
-    id: 'apush-2-010',
-    question: 'Which of the following best explains the shift from indentured servitude to race-based chattel slavery in the Chesapeake by the late 1600s?',
-    options: [
-      { letter: 'A', text: 'A decline in European demand for New World land' },
-      { letter: 'B', text: 'Increased life expectancy and planter fears after events like Bacon\'s Rebellion' },
-      { letter: 'C', text: 'The legal prohibition of African slavery in English colonies' },
-      { letter: 'D', text: 'The failure of tobacco as a profitable cash crop' },
-    ],
-    correctAnswer: 'B',
-    explanation: 'As life expectancy improved, enslaved labor became more profitable over time. Events like Bacon\'s Rebellion heightened planter fears of unrest among landless former indentured servants.',
-    difficulty: 'Hard',
-    domain: 'Colonial Societies',
-    skill: 'Causation',
-  },
-  {
-    id: 'apush-2-011',
-    question: 'Which colonial region relied most heavily on rice and indigo cultivation using large numbers of enslaved Africans?',
-    options: [
-      { letter: 'A', text: 'New England colonies' },
-      { letter: 'B', text: 'Middle colonies' },
-      { letter: 'C', text: 'Chesapeake colonies' },
-      { letter: 'D', text: 'Southern Carolina and Georgia lowcountry' },
-    ],
-    correctAnswer: 'D',
-    explanation: 'The Carolina and Georgia lowcountry developed plantation economies based on rice and indigo, relying heavily on enslaved African labor.',
-    difficulty: 'Medium',
-    domain: 'Colonial Societies',
-    skill: 'Contextualization',
-  },
-  {
-    id: 'apush-2-012',
-    question: 'A 17th-century map shows New Amsterdam at the mouth of the Hudson River with labeled trading posts and diverse European names. This most directly reflects which colonial power\'s priorities?',
-    options: [
-      { letter: 'A', text: 'Spanish focus on missionary work and mining' },
-      { letter: 'B', text: 'Dutch emphasis on commerce and trade networks' },
-      { letter: 'C', text: 'French focus on fur trade and alliances in the interior' },
-      { letter: 'D', text: 'English commitment to religious utopias' },
-    ],
-    correctAnswer: 'B',
-    explanation: 'The Dutch colony of New Netherland prioritized commercial trade, diverse populations, and strategic control of waterways.',
-    difficulty: 'Medium',
-    domain: 'Colonial Societies',
-    skill: 'Sourcing',
-  },
-  {
-    id: 'apush-2-013',
-    question: 'Which of the following best explains why New England colonies developed a more diversified economy than the Chesapeake colonies?',
-    options: [
-      { letter: 'A', text: 'New England had a warmer climate suitable for cash crops.' },
-      { letter: 'B', text: 'The region lacked navigable rivers for trade.' },
-      { letter: 'C', text: 'Rocky soil and a colder climate limited plantation agriculture.' },
-      { letter: 'D', text: 'Puritan leaders prohibited all forms of commerce.' },
-    ],
-    correctAnswer: 'C',
-    explanation: 'New England\'s rocky soil and shorter growing seasons made large-scale cash-crop agriculture impractical, encouraging a diversified economy based on small farms, trade, shipbuilding, and fishing.',
-    difficulty: 'Medium',
-    domain: 'Colonial Societies',
-    skill: 'Causation',
-  },
-  {
-    id: 'apush-2-014',
-    question: 'A 17th-century Puritan sermon warns that moral decline will bring God\'s judgment on the community. This reflects which broader trend in New England society?',
-    options: [
-      { letter: 'A', text: 'Increasing religious toleration' },
-      { letter: 'B', text: 'Anxiety over declining religious zeal in later generations' },
-      { letter: 'C', text: 'The rise of plantation agriculture' },
-      { letter: 'D', text: 'A shift toward separation of church and state' },
-    ],
-    correctAnswer: 'B',
-    explanation: 'By the mid-1600s, Puritan leaders worried that younger generations lacked the religious fervor of the founders, leading to jeremiads—sermons lamenting moral decline.',
-    difficulty: 'Hard',
-    domain: 'Colonial Societies',
-    skill: 'Sourcing',
-  },
-  {
-    id: 'apush-2-015',
-    question: 'Which of the following was a major cause of Bacon\'s Rebellion in 1676?',
-    options: [
-      { letter: 'A', text: 'Conflict between wealthy planters and frontier settlers over Native policy' },
-      { letter: 'B', text: 'A dispute between Puritans and Anglicans in New England' },
-      { letter: 'C', text: 'A slave uprising in South Carolina' },
-      { letter: 'D', text: 'A French invasion of the Chesapeake' },
-    ],
-    correctAnswer: 'A',
-    explanation: 'Frontier settlers, frustrated with Governor Berkeley\'s policies toward Native groups and lack of protection, rebelled against the colonial elite.',
-    difficulty: 'Medium',
-    domain: 'Colonial Societies',
-    skill: 'Causation',
-  },
-  {
-    id: 'apush-2-016',
-    question: 'Which of the following best describes the Middle Colonies (e.g., Pennsylvania, New York) in the 17th century?',
-    options: [
-      { letter: 'A', text: 'Homogeneous populations with strict religious uniformity' },
-      { letter: 'B', text: 'Economies dominated by sugar plantations' },
-      { letter: 'C', text: 'Ethnically diverse populations and grain-based agriculture' },
-      { letter: 'D', text: 'Exclusive reliance on enslaved African labor' },
-    ],
-    correctAnswer: 'C',
-    explanation: 'The Middle Colonies were known for their diversity—Dutch, English, German, and others—and for producing grain, earning the nickname "breadbasket colonies."',
-    difficulty: 'Medium',
-    domain: 'Colonial Societies',
-    skill: 'Contextualization',
-  },
-  {
-    id: 'apush-2-017',
-    question: 'William Penn\'s "Holy Experiment" in Pennsylvania was characterized by which of the following?',
-    options: [
-      { letter: 'A', text: 'Strict Puritan religious conformity' },
-      { letter: 'B', text: 'Policies promoting religious toleration and peaceful Native relations' },
-      { letter: 'C', text: 'A plantation economy based on enslaved labor' },
-      { letter: 'D', text: 'Mandatory military service for all settlers' },
-    ],
-    correctAnswer: 'B',
-    explanation: 'Pennsylvania was founded by Quakers who emphasized religious toleration, pacifism, and fair dealings with Native peoples.',
-    difficulty: 'Medium',
-    domain: 'Colonial Societies',
-    skill: 'Contextualization',
-  },
-  {
-    id: 'apush-2-018',
-    question: 'Which of the following best explains why the transatlantic slave trade expanded significantly in the late 1600s?',
-    options: [
-      { letter: 'A', text: 'European laws banned indentured servitude entirely' },
-      { letter: 'B', text: 'African slavery was cheaper and more reliable as life expectancy increased' },
-      { letter: 'C', text: 'Native populations demanded African laborers for trade' },
-      { letter: 'D', text: 'England prohibited the use of enslaved labor in the Caribbean' },
-    ],
-    correctAnswer: 'B',
-    explanation: 'As mortality rates declined, enslaved Africans became a more profitable long-term labor source than indentured servants, especially in plantation regions.',
-    difficulty: 'Hard',
-    domain: 'Colonial Societies',
-    skill: 'Causation',
-  },
-  {
-    id: 'apush-2-019',
-    question: 'Which of the following best describes the economic system of mercantilism?',
-    options: [
-      { letter: 'A', text: 'Colonies exist to enrich the mother country through controlled trade' },
-      { letter: 'B', text: 'Free trade among all nations benefits everyone equally' },
-      { letter: 'C', text: 'Colonies should be politically independent from the mother country' },
-      { letter: 'D', text: 'Wealth is created primarily through agricultural self-sufficiency' },
-    ],
-    correctAnswer: 'A',
-    explanation: 'Mercantilism held that colonies existed to supply raw materials and markets for the mother country, which sought to control trade to maximize national wealth.',
-    difficulty: 'Easy',
-    domain: 'Colonial Societies',
-    skill: 'Contextualization',
-  },
-  {
-    id: 'apush-2-020',
-    question: 'The Navigation Acts were designed primarily to:',
-    options: [
-      { letter: 'A', text: 'Encourage free trade between colonies and foreign nations' },
-      { letter: 'B', text: 'Ensure colonial trade benefited England by restricting foreign shipping' },
-      { letter: 'C', text: 'Promote manufacturing in the American colonies' },
-      { letter: 'D', text: 'Reduce England\'s involvement in colonial affairs' },
-    ],
-    correctAnswer: 'B',
-    explanation: 'The Navigation Acts restricted colonial trade to English ships and markets, reinforcing mercantilist goals and limiting competition from other European powers.',
-    difficulty: 'Medium',
-    domain: 'Colonial Societies',
-    skill: 'Contextualization',
-  },
-  {
-    id: 'apush-2-021',
-    question: 'Which of the following best explains why New France had a smaller European population than the English colonies?',
-    options: [
-      { letter: 'A', text: 'France prohibited all migration to the New World' },
-      { letter: 'B', text: 'The French government discouraged settlement and emphasized the fur trade' },
-      { letter: 'C', text: 'Native resistance prevented any French settlement' },
-      { letter: 'D', text: 'The climate was too warm for European settlers' },
-    ],
-    correctAnswer: 'B',
-    explanation: 'French colonial policy prioritized the fur trade over large-scale settlement, resulting in fewer European migrants and more reliance on Native alliances.',
-    difficulty: 'Medium',
-    domain: 'Colonial Societies',
-    skill: 'Comparison',
-  },
-  {
-    id: 'apush-2-022',
-    question: 'Which of the following was a major effect of King Philip\'s War (1675–1676)?',
-    options: [
-      { letter: 'A', text: 'The destruction of English settlements in New England' },
-      { letter: 'B', text: 'The end of Native resistance in southern New England' },
-      { letter: 'C', text: 'A long-term alliance between English settlers and the Wampanoag' },
-      { letter: 'D', text: 'The collapse of Puritan religious authority' },
-    ],
-    correctAnswer: 'B',
-    explanation: 'King Philip\'s War devastated Native communities in southern New England and marked the end of large-scale Native resistance in the region.',
-    difficulty: 'Hard',
-    domain: 'Colonial Societies',
-    skill: 'Causation',
-  },
-  {
-    id: 'apush-2-023',
-    question: 'Which of the following best describes the role of women in most English colonies during the 17th century?',
-    options: [
-      { letter: 'A', text: 'Full political participation and voting rights' },
-      { letter: 'B', text: 'Legal independence equal to men' },
-      { letter: 'C', text: 'Limited legal rights and roles centered on household labor' },
-      { letter: 'D', text: 'Equal access to land ownership and inheritance' },
-    ],
-    correctAnswer: 'C',
-    explanation: 'Women in English colonies generally lacked legal autonomy and were expected to manage household labor, though their specific roles varied by region.',
-    difficulty: 'Easy',
-    domain: 'Colonial Societies',
-    skill: 'Contextualization',
-  },
-  {
-    id: 'apush-2-024',
-    question: 'Which of the following best explains why the English colonies developed distinct regional cultures?',
-    options: [
-      { letter: 'A', text: 'All colonies followed identical economic models' },
-      { letter: 'B', text: 'Environmental conditions and settler motivations varied by region' },
-      { letter: 'C', text: 'England imposed strict cultural uniformity across all colonies' },
-      { letter: 'D', text: 'Native populations forced cultural assimilation' },
-    ],
-    correctAnswer: 'B',
-    explanation: 'Differences in climate, geography, and the goals of settlers (religious, economic, or commercial) shaped distinct regional cultures in New England, the Middle Colonies, and the South.',
-    difficulty: 'Easy',
-    domain: 'Colonial Societies',
-    skill: 'Contextualization',
-  },
-  {
-    id: 'apush-2-025',
-    question: 'A 17th-century document from Virginia describes harsh punishments for enslaved Africans attempting to flee. This reflects which broader development?',
-    options: [
-      { letter: 'A', text: 'The decline of slavery in the Chesapeake' },
-      { letter: 'B', text: 'The legal codification of race-based chattel slavery' },
-      { letter: 'C', text: 'The rise of indentured servitude' },
-      { letter: 'D', text: 'The abolition of slavery in English colonies' },
-    ],
-    correctAnswer: 'B',
-    explanation: 'By the late 1600s, colonial laws increasingly defined slavery as a permanent, hereditary, race-based system, restricting the rights of enslaved Africans.',
-    difficulty: 'Hard',
-    domain: 'Colonial Societies',
-    skill: 'Sourcing',
-  },
-  {
-    id: 'apush-2-026',
-    question: 'Which of the following best describes the Iroquois Confederacy\'s strategy in dealing with European powers?',
-    options: [
-      { letter: 'A', text: 'Total isolation from European trade' },
-      { letter: 'B', text: 'Exclusive alliance with the French' },
-      { letter: 'C', text: 'Playing European rivals against each other to maintain autonomy' },
-      { letter: 'D', text: 'Immediate military surrender to English colonists' },
-    ],
-    correctAnswer: 'C',
-    explanation: 'The Iroquois Confederacy skillfully navigated European rivalries, forming shifting alliances to preserve political and economic autonomy.',
-    difficulty: 'Hard',
-    domain: 'Colonial Societies',
-    skill: 'Contextualization',
-  },
-  {
-    id: 'apush-2-027',
-    question: 'Which of the following best explains why the English colonies had higher population growth than French or Spanish colonies?',
-    options: [
-      { letter: 'A', text: 'England encouraged mass migration of families' },
-      { letter: 'B', text: 'English colonies relied heavily on forced Native labor' },
-      { letter: 'C', text: 'England prohibited religious minorities from migrating' },
-      { letter: 'D', text: 'English colonies had the highest life expectancy in the world' },
-    ],
-    correctAnswer: 'A',
-    explanation: 'English colonies attracted large numbers of migrants, including families and religious dissenters, leading to rapid population growth compared to French and Spanish colonies.',
-    difficulty: 'Medium',
-    domain: 'Colonial Societies',
-    skill: 'Comparison',
-  },
-  {
-    id: 'apush-2-028',
-    question: 'The Pueblo Revolt of 1680 was a successful Native uprising that temporarily expelled which European power from New Mexico?',
-    options: [
-      { letter: 'A', text: 'England' },
-      { letter: 'B', text: 'France' },
-      { letter: 'C', text: 'The Netherlands' },
-      { letter: 'D', text: 'Spain' },
-    ],
-    correctAnswer: 'D',
-    explanation: 'The Pueblo Revolt was a coordinated Native uprising that drove the Spanish out of New Mexico for over a decade, making it one of the most successful Native resistances to European colonization.',
-    difficulty: 'Easy',
-    domain: 'Colonial Societies',
-    skill: 'Contextualization',
-  },
-];
-
-// ─── UNIT 3: Period 3 (1754–1800) ───
-const unit3Questions: Question[] = [
+const curatedUnit3: Question[] = [
   {
     id: 'apush-3-001',
     question: 'Which of the following most accurately describes the "Republican Motherhood" ideal that emerged after the American Revolution?',
@@ -677,8 +134,7 @@ const unit3Questions: Question[] = [
   },
 ];
 
-// ─── UNIT 4: Period 4 (1800–1848) ───
-const unit4Questions: Question[] = [
+const curatedUnit4: Question[] = [
   {
     id: 'apush-4-001',
     question: 'The "Corrupt Bargain" of 1824 refers to the alleged political deal that:',
@@ -741,20 +197,22 @@ const unit4Questions: Question[] = [
   },
 ];
 
-// ─── UNIT 5: Period 5 (1844–1877) ───
-const unit5Questions: Question[] = [];
+// ─── Merge: curated questions first, then bank questions (dedup by id) ───
+function mergeQuestions(curated: Question[], bankKey: string): Question[] {
+  const bank = bankByUnit[bankKey] || [];
+  const ids = new Set(curated.map(q => q.id));
+  return [...curated, ...bank.filter(q => !ids.has(q.id))];
+}
 
-// ─── UNIT 6: Period 6 (1865–1898) ───
-const unit6Questions: Question[] = [];
-
-// ─── UNIT 7: Period 7 (1890–1945) ───
-const unit7Questions: Question[] = [];
-
-// ─── UNIT 8: Period 8 (1945–1980) ───
-const unit8Questions: Question[] = [];
-
-// ─── UNIT 9: Period 9 (1980–Present) ───
-const unit9Questions: Question[] = [];
+const unit1Questions = mergeQuestions(curatedUnit1, 'unit-1');
+const unit2Questions = bankByUnit['unit-2'] || []; // unit-2 curated questions had same IDs, bank replaces
+const unit3Questions = mergeQuestions(curatedUnit3, 'unit-3');
+const unit4Questions = mergeQuestions(curatedUnit4, 'unit-4');
+const unit5Questions = bankByUnit['unit-5'] || [];
+const unit6Questions = bankByUnit['unit-6'] || [];
+const unit7Questions = bankByUnit['unit-7'] || [];
+const unit8Questions = bankByUnit['unit-8'] || [];
+const unit9Questions = bankByUnit['unit-9'] || [];
 
 // ─── Exports ───
 export const apUSHQuestionsByUnit: Record<string, Question[]> = {
