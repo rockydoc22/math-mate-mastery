@@ -1,4 +1,5 @@
 import { Question } from './questions';
+import { deduplicateBank } from '@/utils/questionDedup';
 
 export interface APStatsUnit {
   id: string;
@@ -84,8 +85,8 @@ async function loadBank(): Promise<Record<string, Question[]>> {
         result[key] = (unit.questions || []).map((q: RawQuestion) => convertQuestion(q));
       }
     }
-    _bankCache = result;
-    return result;
+    _bankCache = deduplicateBank(result);
+    return _bankCache;
   });
 
   return _bankPromise;
