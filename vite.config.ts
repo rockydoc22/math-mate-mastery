@@ -50,7 +50,7 @@ export default defineConfig(({ mode }) => ({
         globPatterns: ["**/*.{js,css,ico,png,svg,woff2}"],
         // Explicitly exclude index.html from precache
         globIgnores: ["**/index.html", "**/node_modules/**"],
-        maximumFileSizeToCacheInBytes: 6 * 1024 * 1024,
+        maximumFileSizeToCacheInBytes: 10 * 1024 * 1024,
         skipWaiting: true,
         clientsClaim: true,
         navigationPreload: false,
@@ -92,6 +92,15 @@ export default defineConfig(({ mode }) => ({
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
+    },
+  },
+  build: {
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          'apush-bank': ['./src/data/apush_full_question_bank.json'],
+        },
+      },
     },
   },
 }));
