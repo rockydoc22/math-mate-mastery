@@ -45,6 +45,7 @@ import FrenchLightning from "./pages/FrenchLightning";
 import FrenchSentenceUpgrade from "./pages/FrenchSentenceUpgrade";
 import VocabTrainer from "./pages/VocabTrainer";
 import EssayGrader from "./pages/EssayGrader";
+import FRQPractice from "./pages/FRQPractice";
 
 const queryClient = new QueryClient();
 
@@ -90,6 +91,7 @@ const App = () => (
             <Route path="/boss-battle" element={<BossBattle />} />
             <Route path="/ap-tests" element={<APTests />} />
             <Route path="/ap-study/:subjectId" element={<APStudy />} />
+            <Route path="/ap-frq/:subjectId" element={<FRQPractice />} />
             <Route path="/arcade" element={<Arcade />} />
             <Route path="/french-competition" element={<FrenchCompetition />} />
             <Route path="/french-lightning" element={<FrenchLightning />} />
