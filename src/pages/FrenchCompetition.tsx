@@ -2,7 +2,8 @@ import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { ArrowLeft, ChevronRight, CheckCircle2, XCircle, Sparkles, Trophy } from "lucide-react";
+import { ArrowLeft, ChevronRight, CheckCircle2, XCircle, Sparkles, Trophy, Zap } from "lucide-react";
+import { Link } from "react-router-dom";
 import { FRENCH_CATEGORIES, loadFrenchQuestions, frenchQuestionsByCategory, type FrenchCategory } from "@/data/frenchCompetitionQuestions";
 import { Question } from "@/data/questions";
 import { AITutorExplanation } from "@/components/AITutorExplanation";
@@ -96,6 +97,34 @@ const FrenchCompetition = () => {
               );
             })}
           </div>
+
+          {/* Lightning Round CTA */}
+          <Link to="/french-lightning">
+            <Card className="p-4 bg-gradient-to-r from-blue-500/10 to-red-500/10 border-blue-500/30 hover:border-blue-500/50 transition-all cursor-pointer hover:scale-[1.01]">
+              <div className="flex items-center gap-3">
+                <Zap className="w-6 h-6 text-amber-500" />
+                <div className="flex-1">
+                  <h3 className="font-semibold text-sm">⚡ Lightning Round</h3>
+                  <p className="text-xs text-muted-foreground">60 seconds. How many can you answer?</p>
+                </div>
+                <ChevronRight className="w-4 h-4 text-muted-foreground" />
+              </div>
+            </Card>
+          </Link>
+
+          {/* Sentence Upgrade CTA */}
+          <Link to="/french-upgrade">
+            <Card className="p-4 bg-gradient-to-r from-purple-500/10 to-pink-500/10 border-purple-500/30 hover:border-purple-500/50 transition-all cursor-pointer hover:scale-[1.01]">
+              <div className="flex items-center gap-3">
+                <Sparkles className="w-6 h-6 text-purple-500" />
+                <div className="flex-1">
+                  <h3 className="font-semibold text-sm">✨ Sentence Upgrade</h3>
+                  <p className="text-xs text-muted-foreground">AI transforms basic French into competition-level</p>
+                </div>
+                <ChevronRight className="w-4 h-4 text-muted-foreground" />
+              </div>
+            </Card>
+          </Link>
 
           <p className="text-xs text-center text-muted-foreground pt-2">
             Bonne chance ce soir! 🍀 Questions are shuffled & deduplicated each session.
