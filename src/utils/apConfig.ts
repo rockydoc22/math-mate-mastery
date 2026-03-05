@@ -31,9 +31,9 @@ export const AP_SUBJECTS: APSubject[] = [
   { id: 'ap-environmental-science', name: 'AP Environmental Science', shortName: 'Env Science', icon: '🌱', category: 'sciences', scoreRange: { min: 1, max: 5 }, description: 'Ecosystems, pollution, sustainability', comingSoon: true },
 
   // Math
-  { id: 'ap-calculus-ab', name: 'AP Calculus AB', shortName: 'Calc AB', icon: '📈', category: 'math', scoreRange: { min: 1, max: 5 }, description: 'Limits, derivatives, integrals', comingSoon: true },
+  { id: 'ap-calculus-ab', name: 'AP Calculus AB', shortName: 'Calc AB', icon: '📈', category: 'math', scoreRange: { min: 1, max: 5 }, description: 'Limits, derivatives, integrals' },
   { id: 'ap-calculus-bc', name: 'AP Calculus BC', shortName: 'Calc BC', icon: '📊', category: 'math', scoreRange: { min: 1, max: 5 }, description: 'Calc AB + series, parametric, polar' },
-  { id: 'ap-statistics', name: 'AP Statistics', shortName: 'Statistics', icon: '📉', category: 'math', scoreRange: { min: 1, max: 5 }, description: 'Data analysis, probability, inference', comingSoon: true },
+  { id: 'ap-statistics', name: 'AP Statistics', shortName: 'Statistics', icon: '📉', category: 'math', scoreRange: { min: 1, max: 5 }, description: 'Data analysis, probability, inference' },
 
   // History & Social Sciences
   { id: 'ap-us-history', name: 'AP United States History', shortName: 'APUSH', icon: '🇺🇸', category: 'history', scoreRange: { min: 1, max: 5 }, description: 'American history from pre-contact to present' },
@@ -46,7 +46,7 @@ export const AP_SUBJECTS: APSubject[] = [
 
   // English
   { id: 'ap-english-lit', name: 'AP English Literature and Composition', shortName: 'AP Lit', icon: '📚', category: 'english', scoreRange: { min: 1, max: 5 }, description: 'Poetry, prose fiction, drama analysis and argumentation' },
-  { id: 'ap-lang', name: 'AP English Language and Composition', shortName: 'AP Lang', icon: '✍️', category: 'english', scoreRange: { min: 1, max: 5 }, description: 'Rhetoric, argumentation, nonfiction analysis', comingSoon: true },
+  { id: 'ap-lang', name: 'AP English Language and Composition', shortName: 'AP Lang', icon: '✍️', category: 'english', scoreRange: { min: 1, max: 5 }, description: 'Rhetoric, argumentation, nonfiction analysis' },
 
   // Languages
   { id: 'ap-french', name: 'AP French Language and Culture', shortName: 'French', icon: '🇫🇷', category: 'languages', scoreRange: { min: 1, max: 5 }, description: 'French language proficiency and cultural understanding', comingSoon: true },

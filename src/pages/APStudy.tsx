@@ -8,6 +8,9 @@ import { AP_CHEM_UNITS, apChemQuestionsByUnit, type APChemUnit } from "@/data/ap
 import { AP_USH_UNITS, apUSHQuestionsByUnit, loadAPUSHQuestions } from "@/data/apUSHistoryQuestions";
 import { AP_LIT_UNITS, apLitQuestionsByUnit, loadAPLitQuestions } from "@/data/apEnglishLitQuestions";
 import { AP_CALC_BC_UNITS, apCalcBCQuestionsByUnit, loadAPCalcBCQuestions } from "@/data/apCalculusBCQuestions";
+import { AP_LANG_UNITS, apLangQuestionsByUnit, loadAPLangQuestions } from "@/data/apEnglishLangQuestions";
+import { AP_CALC_AB_UNITS, apCalcABQuestionsByUnit, loadAPCalcABQuestions } from "@/data/apCalculusABQuestions";
+import { AP_STATS_UNITS, apStatsQuestionsByUnit, loadAPStatsQuestions } from "@/data/apStatisticsQuestions";
 import { Question } from "@/data/questions";
 import { MathText } from "@/components/MathText";
 import { AITutorExplanation } from "@/components/AITutorExplanation";
@@ -26,6 +29,9 @@ const APStudy = () => {
   const [ushQuestions, setUshQuestions] = useState<Record<string, Question[]>>(apUSHQuestionsByUnit);
   const [litQuestions, setLitQuestions] = useState<Record<string, Question[]>>(apLitQuestionsByUnit);
   const [calcBCQuestions, setCalcBCQuestions] = useState<Record<string, Question[]>>(apCalcBCQuestionsByUnit);
+  const [langQuestions, setLangQuestions] = useState<Record<string, Question[]>>(apLangQuestionsByUnit);
+  const [calcABQuestions, setCalcABQuestions] = useState<Record<string, Question[]>>(apCalcABQuestionsByUnit);
+  const [statsQuestions, setStatsQuestions] = useState<Record<string, Question[]>>(apStatsQuestionsByUnit);
 
   // Lazy-load the full question banks when viewing specific subjects
   useEffect(() => {
@@ -35,6 +41,12 @@ const APStudy = () => {
       loadAPLitQuestions().then(setLitQuestions);
     } else if (subjectId === 'ap-calculus-bc') {
       loadAPCalcBCQuestions().then(setCalcBCQuestions);
+    } else if (subjectId === 'ap-lang') {
+      loadAPLangQuestions().then(setLangQuestions);
+    } else if (subjectId === 'ap-calculus-ab') {
+      loadAPCalcABQuestions().then(setCalcABQuestions);
+    } else if (subjectId === 'ap-statistics') {
+      loadAPStatsQuestions().then(setStatsQuestions);
     }
   }, [subjectId]);
 
@@ -51,12 +63,18 @@ const APStudy = () => {
   }
 
   // Determine which units config to use based on subject
-  const isChemistry = subjectId === 'ap-chemistry';
-  const isUSHistory = subjectId === 'ap-us-history';
-  const isEnglishLit = subjectId === 'ap-english-lit';
-  const isCalcBC = subjectId === 'ap-calculus-bc';
-  const units = isChemistry ? AP_CHEM_UNITS : isUSHistory ? AP_USH_UNITS : isEnglishLit ? AP_LIT_UNITS : isCalcBC ? AP_CALC_BC_UNITS : [];
-  const questionsByUnit = isChemistry ? apChemQuestionsByUnit : isUSHistory ? ushQuestions : isEnglishLit ? litQuestions : isCalcBC ? calcBCQuestions : {};
+  const subjectMap: Record<string, { units: any[]; questions: Record<string, Question[]> }> = {
+    'ap-chemistry': { units: AP_CHEM_UNITS, questions: apChemQuestionsByUnit },
+    'ap-us-history': { units: AP_USH_UNITS, questions: ushQuestions },
+    'ap-english-lit': { units: AP_LIT_UNITS, questions: litQuestions },
+    'ap-calculus-bc': { units: AP_CALC_BC_UNITS, questions: calcBCQuestions },
+    'ap-lang': { units: AP_LANG_UNITS, questions: langQuestions },
+    'ap-calculus-ab': { units: AP_CALC_AB_UNITS, questions: calcABQuestions },
+    'ap-statistics': { units: AP_STATS_UNITS, questions: statsQuestions },
+  };
+  const current = subjectMap[subjectId || ''] || { units: [], questions: {} };
+  const units = current.units;
+  const questionsByUnit = current.questions;
 
   const startQuiz = (unit: APChemUnit) => {
     const questions = questionsByUnit[unit.id] || [];
