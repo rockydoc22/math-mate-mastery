@@ -45,6 +45,7 @@ export const AP_SUBJECTS: APSubject[] = [
   { id: 'ap-human-geo', name: 'AP Human Geography', shortName: 'Human Geo', icon: '🗺️', category: 'history', scoreRange: { min: 1, max: 5 }, description: 'Population, culture, political geography', comingSoon: true },
 
   // English
+  { id: 'ap-english-lit', name: 'AP English Literature and Composition', shortName: 'AP Lit', icon: '📚', category: 'english', scoreRange: { min: 1, max: 5 }, description: 'Poetry, prose fiction, drama analysis and argumentation' },
   { id: 'ap-lang', name: 'AP English Language and Composition', shortName: 'AP Lang', icon: '✍️', category: 'english', scoreRange: { min: 1, max: 5 }, description: 'Rhetoric, argumentation, nonfiction analysis', comingSoon: true },
 
   // Languages

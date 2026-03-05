@@ -6,6 +6,7 @@ import { ArrowLeft, BookOpen, Brain, ChevronRight, CheckCircle2, XCircle, Sparkl
 import { getAPSubject } from "@/utils/apConfig";
 import { AP_CHEM_UNITS, apChemQuestionsByUnit, type APChemUnit } from "@/data/apChemistryQuestions";
 import { AP_USH_UNITS, apUSHQuestionsByUnit, loadAPUSHQuestions } from "@/data/apUSHistoryQuestions";
+import { AP_LIT_UNITS, apLitQuestionsByUnit, loadAPLitQuestions } from "@/data/apEnglishLitQuestions";
 import { Question } from "@/data/questions";
 import { MathText } from "@/components/MathText";
 import { AITutorExplanation } from "@/components/AITutorExplanation";
@@ -22,11 +23,14 @@ const APStudy = () => {
   const [view, setView] = useState<ViewState>({ mode: 'units' });
   const [showAITutor, setShowAITutor] = useState(false);
   const [ushQuestions, setUshQuestions] = useState<Record<string, Question[]>>(apUSHQuestionsByUnit);
+  const [litQuestions, setLitQuestions] = useState<Record<string, Question[]>>(apLitQuestionsByUnit);
 
-  // Lazy-load the full APUSH bank when viewing US History
+  // Lazy-load the full question banks when viewing specific subjects
   useEffect(() => {
     if (subjectId === 'ap-us-history') {
       loadAPUSHQuestions().then(setUshQuestions);
+    } else if (subjectId === 'ap-english-lit') {
+      loadAPLitQuestions().then(setLitQuestions);
     }
   }, [subjectId]);
 
@@ -45,8 +49,9 @@ const APStudy = () => {
   // Determine which units config to use based on subject
   const isChemistry = subjectId === 'ap-chemistry';
   const isUSHistory = subjectId === 'ap-us-history';
-  const units = isChemistry ? AP_CHEM_UNITS : isUSHistory ? AP_USH_UNITS : [];
-  const questionsByUnit = isChemistry ? apChemQuestionsByUnit : isUSHistory ? ushQuestions : {};
+  const isEnglishLit = subjectId === 'ap-english-lit';
+  const units = isChemistry ? AP_CHEM_UNITS : isUSHistory ? AP_USH_UNITS : isEnglishLit ? AP_LIT_UNITS : [];
+  const questionsByUnit = isChemistry ? apChemQuestionsByUnit : isUSHistory ? ushQuestions : isEnglishLit ? litQuestions : {};
 
   const startQuiz = (unit: APChemUnit) => {
     const questions = questionsByUnit[unit.id] || [];
