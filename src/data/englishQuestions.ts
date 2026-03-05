@@ -17,6 +17,39 @@ import { additionalEnglishVisualQuestions } from './additionalEnglishVisualQuest
 import { passageEnglishQuestions } from './passageEnglishQuestions';
 import { satReadingQuestions } from './satReadingQuestions';
 import { satHardestReadingQuestions } from './satHardestReadingQuestions';
+import satEnglishMidRaw from './sat_english_midrange_200.json';
+
+// ─── Convert midrange supplement JSON ───
+interface RawMidEnglish {
+  id: string;
+  question: string;
+  choices: Record<string, string>;
+  answer: string;
+  explanation: string;
+  difficulty_level: number;
+  stimulus_type?: string;
+  stimulus?: string | null;
+  domain?: string;
+}
+
+const midrangeEnglishQuestions: EnglishQuestion[] = ((satEnglishMidRaw as any).questions || []).map((q: RawMidEnglish) => {
+  const letters = ['A', 'B', 'C', 'D'];
+  let questionText = q.question;
+  if (q.stimulus_type === 'text' && typeof q.stimulus === 'string') {
+    questionText = `${q.stimulus}\n\n${q.question}`;
+  }
+  return {
+    id: q.id.toLowerCase(),
+    question: questionText,
+    options: letters.filter(l => q.choices[l]).map(l => ({ letter: l, text: q.choices[l] })),
+    correctAnswer: q.answer,
+    explanation: q.explanation,
+    difficulty: 'Medium',
+    domain: q.domain || 'SAT English',
+    skill: 'Grammar & Usage',
+    difficultyRating: q.difficulty_level,
+  };
+});
 
 export interface EnglishQuestion {
   id: string;
@@ -69,7 +102,7 @@ const baseEnglishQuestions: EnglishQuestion[] = (englishQuestionsRaw as RawEngli
 });
 
 // Combine all English questions (including visual questions for 1/3 ratio)
-const allEnglishQuestions: EnglishQuestion[] = [...baseEnglishQuestions, ...uploadedEnglishQuestions, ...hardEnglishQuestions, ...satEnglishQuestions, ...additionalEnglishQuestions, ...extraEnglishQuestions, ...expertEnglishQuestions, ...mediumEnglishQuestions, ...hardEnglishQuestions2, ...satEnglishPart1Questions, ...satEnglishPart2Questions, ...veryHardEnglishQuestions, ...moreEnglishVisualQuestions, ...additionalEnglishVisualQuestions, ...passageEnglishQuestions, ...satReadingQuestions, ...satHardestReadingQuestions];
+const allEnglishQuestions: EnglishQuestion[] = [...baseEnglishQuestions, ...uploadedEnglishQuestions, ...hardEnglishQuestions, ...satEnglishQuestions, ...additionalEnglishQuestions, ...extraEnglishQuestions, ...expertEnglishQuestions, ...mediumEnglishQuestions, ...hardEnglishQuestions2, ...satEnglishPart1Questions, ...satEnglishPart2Questions, ...veryHardEnglishQuestions, ...moreEnglishVisualQuestions, ...additionalEnglishVisualQuestions, ...passageEnglishQuestions, ...satReadingQuestions, ...satHardestReadingQuestions, ...midrangeEnglishQuestions];
 
 // Patterns that indicate a question references an external passage that isn't provided
 const passageReferencePatterns = [

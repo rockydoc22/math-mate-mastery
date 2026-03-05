@@ -1,0 +1,3607 @@
+{
+  "course": "SAT English (Midrange Supplement)",
+  "target_distribution_note": "Adds 200 midrange questions (L5-7) to address midrange gap.",
+  "generated_utc": "2026-03-05T16:09:51.432792+00:00",
+  "questions": [
+    {
+      "id": "SATENG-MID-001",
+      "type": "mcq",
+      "difficulty_level": 7,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying community gardens often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which choice best corrects the underlined portion of the passage?",
+      "choices": {
+        "A": "results depend on local conditions and consistent follow-through",
+        "B": "results depends on local conditions and consistent follow-through",
+        "C": "results depending on local conditions and consistent follow-through",
+        "D": "result depend on local conditions and consistent follow-through"
+      },
+      "answer": "A",
+      "explanation": "Subject-verb agreement: plural “results” takes “depend.”",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-002",
+      "type": "mcq",
+      "difficulty_level": 5,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying museum exhibits often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which sentence would best add relevant evidence to support the author’s point?",
+      "choices": {
+        "A": "Many people enjoy hobbies in their free time.",
+        "B": "Some participants had lived in the area for years.",
+        "C": "For instance, neighborhoods with regular volunteer schedules showed higher participation rates after three months.",
+        "D": "The project logo was redesigned twice."
+      },
+      "answer": "C",
+      "explanation": "The best sentence provides specific, relevant evidence tied to participation over time.",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-003",
+      "type": "mcq",
+      "difficulty_level": 7,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying renewable energy often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which sentence would best add relevant evidence to support the author’s point?",
+      "choices": {
+        "A": "Some participants had lived in the area for years.",
+        "B": "For instance, neighborhoods with regular volunteer schedules showed higher participation rates after three months.",
+        "C": "The project logo was redesigned twice.",
+        "D": "Many people enjoy hobbies in their free time."
+      },
+      "answer": "B",
+      "explanation": "The best sentence provides specific, relevant evidence tied to participation over time.",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-004",
+      "type": "mcq",
+      "difficulty_level": 5,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying sleep and learning often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which choice best corrects the underlined portion of the passage?",
+      "choices": {
+        "A": "result depend on local conditions and consistent follow-through",
+        "B": "results depending on local conditions and consistent follow-through",
+        "C": "results depend on local conditions and consistent follow-through",
+        "D": "results depends on local conditions and consistent follow-through"
+      },
+      "answer": "C",
+      "explanation": "Subject-verb agreement: plural “results” takes “depend.”",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-005",
+      "type": "mcq",
+      "difficulty_level": 6,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying museum exhibits often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which choice best replaces the underlined word to maintain the passage’s tone and meaning?",
+      "choices": {
+        "A": "explained",
+        "B": "whispered",
+        "C": "laughed",
+        "D": "barked"
+      },
+      "answer": "A",
+      "explanation": "The best choice is formal and matches an academic context.",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-006",
+      "type": "mcq",
+      "difficulty_level": 6,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying museum exhibits often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which choice best replaces the underlined word to maintain the passage’s tone and meaning?",
+      "choices": {
+        "A": "noted",
+        "B": "barked",
+        "C": "whispered",
+        "D": "laughed"
+      },
+      "answer": "A",
+      "explanation": "The best choice is formal and matches an academic context.",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-007",
+      "type": "mcq",
+      "difficulty_level": 6,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying museum exhibits often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which choice best maintains the logical transition in the passage?",
+      "choices": {
+        "A": "As a result,",
+        "B": "Still,",
+        "C": "In addition,",
+        "D": "For example,"
+      },
+      "answer": "B",
+      "explanation": "“Still” signals a contrast/qualification, matching the shift from positive results to a limitation.",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-008",
+      "type": "mcq",
+      "difficulty_level": 5,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying teamwork in sports often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which choice best corrects the underlined portion of the passage?",
+      "choices": {
+        "A": "results depending on local conditions and consistent follow-through",
+        "B": "results depends on local conditions and consistent follow-through",
+        "C": "result depend on local conditions and consistent follow-through",
+        "D": "results depend on local conditions and consistent follow-through"
+      },
+      "answer": "D",
+      "explanation": "Subject-verb agreement: plural “results” takes “depend.”",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-009",
+      "type": "mcq",
+      "difficulty_level": 7,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying museum exhibits often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which choice best replaces the underlined word to maintain the passage’s tone and meaning?",
+      "choices": {
+        "A": "laughed",
+        "B": "emphasized",
+        "C": "whispered",
+        "D": "barked"
+      },
+      "answer": "B",
+      "explanation": "The best choice is formal and matches an academic context.",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-010",
+      "type": "mcq",
+      "difficulty_level": 5,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying museum exhibits often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which choice best replaces the underlined word to maintain the passage’s tone and meaning?",
+      "choices": {
+        "A": "whispered",
+        "B": "laughed",
+        "C": "barked",
+        "D": "noted"
+      },
+      "answer": "D",
+      "explanation": "The best choice is formal and matches an academic context.",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-011",
+      "type": "mcq",
+      "difficulty_level": 7,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying community gardens often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which choice best corrects the underlined portion of the passage?",
+      "choices": {
+        "A": "results depend on local conditions and consistent follow-through",
+        "B": "results depends on local conditions and consistent follow-through",
+        "C": "results depending on local conditions and consistent follow-through",
+        "D": "result depend on local conditions and consistent follow-through"
+      },
+      "answer": "A",
+      "explanation": "Subject-verb agreement: plural “results” takes “depend.”",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-012",
+      "type": "mcq",
+      "difficulty_level": 6,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying public transportation often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which choice best corrects the underlined portion of the passage?",
+      "choices": {
+        "A": "result depend on local conditions and consistent follow-through",
+        "B": "results depend on local conditions and consistent follow-through",
+        "C": "results depends on local conditions and consistent follow-through",
+        "D": "results depending on local conditions and consistent follow-through"
+      },
+      "answer": "B",
+      "explanation": "Subject-verb agreement: plural “results” takes “depend.”",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-013",
+      "type": "mcq",
+      "difficulty_level": 6,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying sleep and learning often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which choice best maintains the logical transition in the passage?",
+      "choices": {
+        "A": "In addition,",
+        "B": "For example,",
+        "C": "Still,",
+        "D": "As a result,"
+      },
+      "answer": "C",
+      "explanation": "“Still” signals a contrast/qualification, matching the shift from positive results to a limitation.",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-014",
+      "type": "mcq",
+      "difficulty_level": 5,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying sleep and learning often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which choice best replaces the underlined word to maintain the passage’s tone and meaning?",
+      "choices": {
+        "A": "whispered",
+        "B": "barked",
+        "C": "laughed",
+        "D": "emphasized"
+      },
+      "answer": "D",
+      "explanation": "The best choice is formal and matches an academic context.",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-015",
+      "type": "mcq",
+      "difficulty_level": 6,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying museum exhibits often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which choice best maintains the logical transition in the passage?",
+      "choices": {
+        "A": "As a result,",
+        "B": "Still,",
+        "C": "In addition,",
+        "D": "For example,"
+      },
+      "answer": "B",
+      "explanation": "“Still” signals a contrast/qualification, matching the shift from positive results to a limitation.",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-016",
+      "type": "mcq",
+      "difficulty_level": 7,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying public transportation often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which choice best corrects the underlined portion of the passage?",
+      "choices": {
+        "A": "results depending on local conditions and consistent follow-through",
+        "B": "result depend on local conditions and consistent follow-through",
+        "C": "results depends on local conditions and consistent follow-through",
+        "D": "results depend on local conditions and consistent follow-through"
+      },
+      "answer": "D",
+      "explanation": "Subject-verb agreement: plural “results” takes “depend.”",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-017",
+      "type": "mcq",
+      "difficulty_level": 5,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying museum exhibits often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which sentence would best add relevant evidence to support the author’s point?",
+      "choices": {
+        "A": "Some participants had lived in the area for years.",
+        "B": "For instance, neighborhoods with regular volunteer schedules showed higher participation rates after three months.",
+        "C": "Many people enjoy hobbies in their free time.",
+        "D": "The project logo was redesigned twice."
+      },
+      "answer": "B",
+      "explanation": "The best sentence provides specific, relevant evidence tied to participation over time.",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-018",
+      "type": "mcq",
+      "difficulty_level": 7,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying museum exhibits often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which choice best replaces the underlined word to maintain the passage’s tone and meaning?",
+      "choices": {
+        "A": "emphasized",
+        "B": "whispered",
+        "C": "laughed",
+        "D": "barked"
+      },
+      "answer": "A",
+      "explanation": "The best choice is formal and matches an academic context.",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-019",
+      "type": "mcq",
+      "difficulty_level": 5,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying community gardens often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which choice best maintains the logical transition in the passage?",
+      "choices": {
+        "A": "As a result,",
+        "B": "For example,",
+        "C": "Still,",
+        "D": "In addition,"
+      },
+      "answer": "C",
+      "explanation": "“Still” signals a contrast/qualification, matching the shift from positive results to a limitation.",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-020",
+      "type": "mcq",
+      "difficulty_level": 7,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying community gardens often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which choice best corrects the underlined portion of the passage?",
+      "choices": {
+        "A": "results depends on local conditions and consistent follow-through",
+        "B": "result depend on local conditions and consistent follow-through",
+        "C": "results depending on local conditions and consistent follow-through",
+        "D": "results depend on local conditions and consistent follow-through"
+      },
+      "answer": "D",
+      "explanation": "Subject-verb agreement: plural “results” takes “depend.”",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-021",
+      "type": "mcq",
+      "difficulty_level": 7,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying teamwork in sports often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which choice best corrects the underlined portion of the passage?",
+      "choices": {
+        "A": "results depending on local conditions and consistent follow-through",
+        "B": "results depends on local conditions and consistent follow-through",
+        "C": "results depend on local conditions and consistent follow-through",
+        "D": "result depend on local conditions and consistent follow-through"
+      },
+      "answer": "C",
+      "explanation": "Subject-verb agreement: plural “results” takes “depend.”",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-022",
+      "type": "mcq",
+      "difficulty_level": 6,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying teamwork in sports often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which choice best replaces the underlined word to maintain the passage’s tone and meaning?",
+      "choices": {
+        "A": "whispered",
+        "B": "indicated",
+        "C": "laughed",
+        "D": "barked"
+      },
+      "answer": "B",
+      "explanation": "The best choice is formal and matches an academic context.",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-023",
+      "type": "mcq",
+      "difficulty_level": 5,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying public transportation often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which sentence would best add relevant evidence to support the author’s point?",
+      "choices": {
+        "A": "The project logo was redesigned twice.",
+        "B": "Many people enjoy hobbies in their free time.",
+        "C": "Some participants had lived in the area for years.",
+        "D": "For instance, neighborhoods with regular volunteer schedules showed higher participation rates after three months."
+      },
+      "answer": "D",
+      "explanation": "The best sentence provides specific, relevant evidence tied to participation over time.",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-024",
+      "type": "mcq",
+      "difficulty_level": 5,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying sleep and learning often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which choice best maintains the logical transition in the passage?",
+      "choices": {
+        "A": "In addition,",
+        "B": "For example,",
+        "C": "Still,",
+        "D": "As a result,"
+      },
+      "answer": "C",
+      "explanation": "“Still” signals a contrast/qualification, matching the shift from positive results to a limitation.",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-025",
+      "type": "mcq",
+      "difficulty_level": 5,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying teamwork in sports often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which choice best maintains the logical transition in the passage?",
+      "choices": {
+        "A": "Still,",
+        "B": "As a result,",
+        "C": "For example,",
+        "D": "In addition,"
+      },
+      "answer": "A",
+      "explanation": "“Still” signals a contrast/qualification, matching the shift from positive results to a limitation.",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-026",
+      "type": "mcq",
+      "difficulty_level": 7,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying public transportation often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which choice best maintains the logical transition in the passage?",
+      "choices": {
+        "A": "For example,",
+        "B": "Still,",
+        "C": "In addition,",
+        "D": "As a result,"
+      },
+      "answer": "B",
+      "explanation": "“Still” signals a contrast/qualification, matching the shift from positive results to a limitation.",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-027",
+      "type": "mcq",
+      "difficulty_level": 5,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying public transportation often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which sentence would best add relevant evidence to support the author’s point?",
+      "choices": {
+        "A": "The project logo was redesigned twice.",
+        "B": "Many people enjoy hobbies in their free time.",
+        "C": "Some participants had lived in the area for years.",
+        "D": "For instance, neighborhoods with regular volunteer schedules showed higher participation rates after three months."
+      },
+      "answer": "D",
+      "explanation": "The best sentence provides specific, relevant evidence tied to participation over time.",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-028",
+      "type": "mcq",
+      "difficulty_level": 6,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying sleep and learning often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which choice best corrects the underlined portion of the passage?",
+      "choices": {
+        "A": "results depends on local conditions and consistent follow-through",
+        "B": "results depending on local conditions and consistent follow-through",
+        "C": "results depend on local conditions and consistent follow-through",
+        "D": "result depend on local conditions and consistent follow-through"
+      },
+      "answer": "C",
+      "explanation": "Subject-verb agreement: plural “results” takes “depend.”",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-029",
+      "type": "mcq",
+      "difficulty_level": 7,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying community gardens often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which choice best maintains the logical transition in the passage?",
+      "choices": {
+        "A": "In addition,",
+        "B": "Still,",
+        "C": "As a result,",
+        "D": "For example,"
+      },
+      "answer": "B",
+      "explanation": "“Still” signals a contrast/qualification, matching the shift from positive results to a limitation.",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-030",
+      "type": "mcq",
+      "difficulty_level": 5,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying renewable energy often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which choice best corrects the underlined portion of the passage?",
+      "choices": {
+        "A": "results depending on local conditions and consistent follow-through",
+        "B": "result depend on local conditions and consistent follow-through",
+        "C": "results depend on local conditions and consistent follow-through",
+        "D": "results depends on local conditions and consistent follow-through"
+      },
+      "answer": "C",
+      "explanation": "Subject-verb agreement: plural “results” takes “depend.”",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-031",
+      "type": "mcq",
+      "difficulty_level": 5,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying museum exhibits often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which choice best maintains the logical transition in the passage?",
+      "choices": {
+        "A": "In addition,",
+        "B": "As a result,",
+        "C": "For example,",
+        "D": "Still,"
+      },
+      "answer": "D",
+      "explanation": "“Still” signals a contrast/qualification, matching the shift from positive results to a limitation.",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-032",
+      "type": "mcq",
+      "difficulty_level": 5,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying public transportation often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which sentence would best add relevant evidence to support the author’s point?",
+      "choices": {
+        "A": "The project logo was redesigned twice.",
+        "B": "Some participants had lived in the area for years.",
+        "C": "For instance, neighborhoods with regular volunteer schedules showed higher participation rates after three months.",
+        "D": "Many people enjoy hobbies in their free time."
+      },
+      "answer": "C",
+      "explanation": "The best sentence provides specific, relevant evidence tied to participation over time.",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-033",
+      "type": "mcq",
+      "difficulty_level": 6,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying renewable energy often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which choice best replaces the underlined word to maintain the passage’s tone and meaning?",
+      "choices": {
+        "A": "noted",
+        "B": "whispered",
+        "C": "barked",
+        "D": "laughed"
+      },
+      "answer": "A",
+      "explanation": "The best choice is formal and matches an academic context.",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-034",
+      "type": "mcq",
+      "difficulty_level": 6,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying teamwork in sports often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which sentence would best add relevant evidence to support the author’s point?",
+      "choices": {
+        "A": "The project logo was redesigned twice.",
+        "B": "Some participants had lived in the area for years.",
+        "C": "For instance, neighborhoods with regular volunteer schedules showed higher participation rates after three months.",
+        "D": "Many people enjoy hobbies in their free time."
+      },
+      "answer": "C",
+      "explanation": "The best sentence provides specific, relevant evidence tied to participation over time.",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-035",
+      "type": "mcq",
+      "difficulty_level": 5,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying public transportation often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which choice best maintains the logical transition in the passage?",
+      "choices": {
+        "A": "As a result,",
+        "B": "In addition,",
+        "C": "For example,",
+        "D": "Still,"
+      },
+      "answer": "D",
+      "explanation": "“Still” signals a contrast/qualification, matching the shift from positive results to a limitation.",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-036",
+      "type": "mcq",
+      "difficulty_level": 7,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying sleep and learning often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which choice best corrects the underlined portion of the passage?",
+      "choices": {
+        "A": "result depend on local conditions and consistent follow-through",
+        "B": "results depend on local conditions and consistent follow-through",
+        "C": "results depends on local conditions and consistent follow-through",
+        "D": "results depending on local conditions and consistent follow-through"
+      },
+      "answer": "B",
+      "explanation": "Subject-verb agreement: plural “results” takes “depend.”",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-037",
+      "type": "mcq",
+      "difficulty_level": 5,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying renewable energy often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which choice best replaces the underlined word to maintain the passage’s tone and meaning?",
+      "choices": {
+        "A": "barked",
+        "B": "emphasized",
+        "C": "laughed",
+        "D": "whispered"
+      },
+      "answer": "B",
+      "explanation": "The best choice is formal and matches an academic context.",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-038",
+      "type": "mcq",
+      "difficulty_level": 7,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying community gardens often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which choice best maintains the logical transition in the passage?",
+      "choices": {
+        "A": "Still,",
+        "B": "For example,",
+        "C": "As a result,",
+        "D": "In addition,"
+      },
+      "answer": "A",
+      "explanation": "“Still” signals a contrast/qualification, matching the shift from positive results to a limitation.",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-039",
+      "type": "mcq",
+      "difficulty_level": 5,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying public transportation often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which choice best maintains the logical transition in the passage?",
+      "choices": {
+        "A": "For example,",
+        "B": "In addition,",
+        "C": "Still,",
+        "D": "As a result,"
+      },
+      "answer": "C",
+      "explanation": "“Still” signals a contrast/qualification, matching the shift from positive results to a limitation.",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-040",
+      "type": "mcq",
+      "difficulty_level": 5,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying public transportation often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which choice best corrects the underlined portion of the passage?",
+      "choices": {
+        "A": "result depend on local conditions and consistent follow-through",
+        "B": "results depends on local conditions and consistent follow-through",
+        "C": "results depending on local conditions and consistent follow-through",
+        "D": "results depend on local conditions and consistent follow-through"
+      },
+      "answer": "D",
+      "explanation": "Subject-verb agreement: plural “results” takes “depend.”",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-041",
+      "type": "mcq",
+      "difficulty_level": 5,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying renewable energy often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which choice best maintains the logical transition in the passage?",
+      "choices": {
+        "A": "In addition,",
+        "B": "As a result,",
+        "C": "For example,",
+        "D": "Still,"
+      },
+      "answer": "D",
+      "explanation": "“Still” signals a contrast/qualification, matching the shift from positive results to a limitation.",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-042",
+      "type": "mcq",
+      "difficulty_level": 5,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying renewable energy often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which choice best corrects the underlined portion of the passage?",
+      "choices": {
+        "A": "results depends on local conditions and consistent follow-through",
+        "B": "result depend on local conditions and consistent follow-through",
+        "C": "results depend on local conditions and consistent follow-through",
+        "D": "results depending on local conditions and consistent follow-through"
+      },
+      "answer": "C",
+      "explanation": "Subject-verb agreement: plural “results” takes “depend.”",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-043",
+      "type": "mcq",
+      "difficulty_level": 6,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying sleep and learning often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which sentence would best add relevant evidence to support the author’s point?",
+      "choices": {
+        "A": "Many people enjoy hobbies in their free time.",
+        "B": "Some participants had lived in the area for years.",
+        "C": "For instance, neighborhoods with regular volunteer schedules showed higher participation rates after three months.",
+        "D": "The project logo was redesigned twice."
+      },
+      "answer": "C",
+      "explanation": "The best sentence provides specific, relevant evidence tied to participation over time.",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-044",
+      "type": "mcq",
+      "difficulty_level": 7,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying museum exhibits often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which choice best replaces the underlined word to maintain the passage’s tone and meaning?",
+      "choices": {
+        "A": "whispered",
+        "B": "explained",
+        "C": "barked",
+        "D": "laughed"
+      },
+      "answer": "B",
+      "explanation": "The best choice is formal and matches an academic context.",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-045",
+      "type": "mcq",
+      "difficulty_level": 5,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying renewable energy often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which choice best maintains the logical transition in the passage?",
+      "choices": {
+        "A": "Still,",
+        "B": "For example,",
+        "C": "In addition,",
+        "D": "As a result,"
+      },
+      "answer": "A",
+      "explanation": "“Still” signals a contrast/qualification, matching the shift from positive results to a limitation.",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-046",
+      "type": "mcq",
+      "difficulty_level": 6,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying teamwork in sports often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which sentence would best add relevant evidence to support the author’s point?",
+      "choices": {
+        "A": "For instance, neighborhoods with regular volunteer schedules showed higher participation rates after three months.",
+        "B": "Many people enjoy hobbies in their free time.",
+        "C": "The project logo was redesigned twice.",
+        "D": "Some participants had lived in the area for years."
+      },
+      "answer": "A",
+      "explanation": "The best sentence provides specific, relevant evidence tied to participation over time.",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-047",
+      "type": "mcq",
+      "difficulty_level": 7,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying public transportation often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which choice best corrects the underlined portion of the passage?",
+      "choices": {
+        "A": "result depend on local conditions and consistent follow-through",
+        "B": "results depending on local conditions and consistent follow-through",
+        "C": "results depend on local conditions and consistent follow-through",
+        "D": "results depends on local conditions and consistent follow-through"
+      },
+      "answer": "C",
+      "explanation": "Subject-verb agreement: plural “results” takes “depend.”",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-048",
+      "type": "mcq",
+      "difficulty_level": 6,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying sleep and learning often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which choice best replaces the underlined word to maintain the passage’s tone and meaning?",
+      "choices": {
+        "A": "barked",
+        "B": "whispered",
+        "C": "laughed",
+        "D": "emphasized"
+      },
+      "answer": "D",
+      "explanation": "The best choice is formal and matches an academic context.",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-049",
+      "type": "mcq",
+      "difficulty_level": 7,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying sleep and learning often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which choice best replaces the underlined word to maintain the passage’s tone and meaning?",
+      "choices": {
+        "A": "laughed",
+        "B": "indicated",
+        "C": "whispered",
+        "D": "barked"
+      },
+      "answer": "B",
+      "explanation": "The best choice is formal and matches an academic context.",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-050",
+      "type": "mcq",
+      "difficulty_level": 7,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying teamwork in sports often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which choice best corrects the underlined portion of the passage?",
+      "choices": {
+        "A": "result depend on local conditions and consistent follow-through",
+        "B": "results depending on local conditions and consistent follow-through",
+        "C": "results depends on local conditions and consistent follow-through",
+        "D": "results depend on local conditions and consistent follow-through"
+      },
+      "answer": "D",
+      "explanation": "Subject-verb agreement: plural “results” takes “depend.”",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-051",
+      "type": "mcq",
+      "difficulty_level": 7,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying museum exhibits often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which choice best corrects the underlined portion of the passage?",
+      "choices": {
+        "A": "results depending on local conditions and consistent follow-through",
+        "B": "result depend on local conditions and consistent follow-through",
+        "C": "results depend on local conditions and consistent follow-through",
+        "D": "results depends on local conditions and consistent follow-through"
+      },
+      "answer": "C",
+      "explanation": "Subject-verb agreement: plural “results” takes “depend.”",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-052",
+      "type": "mcq",
+      "difficulty_level": 7,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying museum exhibits often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which choice best corrects the underlined portion of the passage?",
+      "choices": {
+        "A": "results depending on local conditions and consistent follow-through",
+        "B": "results depends on local conditions and consistent follow-through",
+        "C": "result depend on local conditions and consistent follow-through",
+        "D": "results depend on local conditions and consistent follow-through"
+      },
+      "answer": "D",
+      "explanation": "Subject-verb agreement: plural “results” takes “depend.”",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-053",
+      "type": "mcq",
+      "difficulty_level": 7,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying renewable energy often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which choice best replaces the underlined word to maintain the passage’s tone and meaning?",
+      "choices": {
+        "A": "indicated",
+        "B": "whispered",
+        "C": "barked",
+        "D": "laughed"
+      },
+      "answer": "A",
+      "explanation": "The best choice is formal and matches an academic context.",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-054",
+      "type": "mcq",
+      "difficulty_level": 6,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying community gardens often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which choice best maintains the logical transition in the passage?",
+      "choices": {
+        "A": "In addition,",
+        "B": "Still,",
+        "C": "As a result,",
+        "D": "For example,"
+      },
+      "answer": "B",
+      "explanation": "“Still” signals a contrast/qualification, matching the shift from positive results to a limitation.",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-055",
+      "type": "mcq",
+      "difficulty_level": 5,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying teamwork in sports often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which choice best maintains the logical transition in the passage?",
+      "choices": {
+        "A": "For example,",
+        "B": "As a result,",
+        "C": "Still,",
+        "D": "In addition,"
+      },
+      "answer": "C",
+      "explanation": "“Still” signals a contrast/qualification, matching the shift from positive results to a limitation.",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-056",
+      "type": "mcq",
+      "difficulty_level": 6,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying museum exhibits often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which choice best maintains the logical transition in the passage?",
+      "choices": {
+        "A": "In addition,",
+        "B": "Still,",
+        "C": "As a result,",
+        "D": "For example,"
+      },
+      "answer": "B",
+      "explanation": "“Still” signals a contrast/qualification, matching the shift from positive results to a limitation.",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-057",
+      "type": "mcq",
+      "difficulty_level": 7,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying renewable energy often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which sentence would best add relevant evidence to support the author’s point?",
+      "choices": {
+        "A": "Many people enjoy hobbies in their free time.",
+        "B": "Some participants had lived in the area for years.",
+        "C": "For instance, neighborhoods with regular volunteer schedules showed higher participation rates after three months.",
+        "D": "The project logo was redesigned twice."
+      },
+      "answer": "C",
+      "explanation": "The best sentence provides specific, relevant evidence tied to participation over time.",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-058",
+      "type": "mcq",
+      "difficulty_level": 6,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying renewable energy often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which choice best maintains the logical transition in the passage?",
+      "choices": {
+        "A": "For example,",
+        "B": "In addition,",
+        "C": "Still,",
+        "D": "As a result,"
+      },
+      "answer": "C",
+      "explanation": "“Still” signals a contrast/qualification, matching the shift from positive results to a limitation.",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-059",
+      "type": "mcq",
+      "difficulty_level": 5,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying teamwork in sports often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which choice best replaces the underlined word to maintain the passage’s tone and meaning?",
+      "choices": {
+        "A": "barked",
+        "B": "laughed",
+        "C": "whispered",
+        "D": "indicated"
+      },
+      "answer": "D",
+      "explanation": "The best choice is formal and matches an academic context.",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-060",
+      "type": "mcq",
+      "difficulty_level": 6,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying public transportation often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which sentence would best add relevant evidence to support the author’s point?",
+      "choices": {
+        "A": "For instance, neighborhoods with regular volunteer schedules showed higher participation rates after three months.",
+        "B": "Some participants had lived in the area for years.",
+        "C": "The project logo was redesigned twice.",
+        "D": "Many people enjoy hobbies in their free time."
+      },
+      "answer": "A",
+      "explanation": "The best sentence provides specific, relevant evidence tied to participation over time.",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-061",
+      "type": "mcq",
+      "difficulty_level": 7,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying sleep and learning often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which choice best corrects the underlined portion of the passage?",
+      "choices": {
+        "A": "results depending on local conditions and consistent follow-through",
+        "B": "results depends on local conditions and consistent follow-through",
+        "C": "results depend on local conditions and consistent follow-through",
+        "D": "result depend on local conditions and consistent follow-through"
+      },
+      "answer": "C",
+      "explanation": "Subject-verb agreement: plural “results” takes “depend.”",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-062",
+      "type": "mcq",
+      "difficulty_level": 6,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying community gardens often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which choice best corrects the underlined portion of the passage?",
+      "choices": {
+        "A": "results depends on local conditions and consistent follow-through",
+        "B": "results depending on local conditions and consistent follow-through",
+        "C": "result depend on local conditions and consistent follow-through",
+        "D": "results depend on local conditions and consistent follow-through"
+      },
+      "answer": "D",
+      "explanation": "Subject-verb agreement: plural “results” takes “depend.”",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-063",
+      "type": "mcq",
+      "difficulty_level": 5,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying museum exhibits often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which sentence would best add relevant evidence to support the author’s point?",
+      "choices": {
+        "A": "For instance, neighborhoods with regular volunteer schedules showed higher participation rates after three months.",
+        "B": "Many people enjoy hobbies in their free time.",
+        "C": "The project logo was redesigned twice.",
+        "D": "Some participants had lived in the area for years."
+      },
+      "answer": "A",
+      "explanation": "The best sentence provides specific, relevant evidence tied to participation over time.",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-064",
+      "type": "mcq",
+      "difficulty_level": 7,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying teamwork in sports often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which choice best corrects the underlined portion of the passage?",
+      "choices": {
+        "A": "results depending on local conditions and consistent follow-through",
+        "B": "results depend on local conditions and consistent follow-through",
+        "C": "results depends on local conditions and consistent follow-through",
+        "D": "result depend on local conditions and consistent follow-through"
+      },
+      "answer": "B",
+      "explanation": "Subject-verb agreement: plural “results” takes “depend.”",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-065",
+      "type": "mcq",
+      "difficulty_level": 6,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying community gardens often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which sentence would best add relevant evidence to support the author’s point?",
+      "choices": {
+        "A": "The project logo was redesigned twice.",
+        "B": "Some participants had lived in the area for years.",
+        "C": "For instance, neighborhoods with regular volunteer schedules showed higher participation rates after three months.",
+        "D": "Many people enjoy hobbies in their free time."
+      },
+      "answer": "C",
+      "explanation": "The best sentence provides specific, relevant evidence tied to participation over time.",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-066",
+      "type": "mcq",
+      "difficulty_level": 7,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying renewable energy often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which sentence would best add relevant evidence to support the author’s point?",
+      "choices": {
+        "A": "For instance, neighborhoods with regular volunteer schedules showed higher participation rates after three months.",
+        "B": "The project logo was redesigned twice.",
+        "C": "Many people enjoy hobbies in their free time.",
+        "D": "Some participants had lived in the area for years."
+      },
+      "answer": "A",
+      "explanation": "The best sentence provides specific, relevant evidence tied to participation over time.",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-067",
+      "type": "mcq",
+      "difficulty_level": 5,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying community gardens often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which sentence would best add relevant evidence to support the author’s point?",
+      "choices": {
+        "A": "Many people enjoy hobbies in their free time.",
+        "B": "Some participants had lived in the area for years.",
+        "C": "The project logo was redesigned twice.",
+        "D": "For instance, neighborhoods with regular volunteer schedules showed higher participation rates after three months."
+      },
+      "answer": "D",
+      "explanation": "The best sentence provides specific, relevant evidence tied to participation over time.",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-068",
+      "type": "mcq",
+      "difficulty_level": 7,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying community gardens often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which sentence would best add relevant evidence to support the author’s point?",
+      "choices": {
+        "A": "For instance, neighborhoods with regular volunteer schedules showed higher participation rates after three months.",
+        "B": "The project logo was redesigned twice.",
+        "C": "Some participants had lived in the area for years.",
+        "D": "Many people enjoy hobbies in their free time."
+      },
+      "answer": "A",
+      "explanation": "The best sentence provides specific, relevant evidence tied to participation over time.",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-069",
+      "type": "mcq",
+      "difficulty_level": 5,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying teamwork in sports often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which choice best maintains the logical transition in the passage?",
+      "choices": {
+        "A": "As a result,",
+        "B": "For example,",
+        "C": "Still,",
+        "D": "In addition,"
+      },
+      "answer": "C",
+      "explanation": "“Still” signals a contrast/qualification, matching the shift from positive results to a limitation.",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-070",
+      "type": "mcq",
+      "difficulty_level": 6,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying sleep and learning often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which sentence would best add relevant evidence to support the author’s point?",
+      "choices": {
+        "A": "Many people enjoy hobbies in their free time.",
+        "B": "For instance, neighborhoods with regular volunteer schedules showed higher participation rates after three months.",
+        "C": "The project logo was redesigned twice.",
+        "D": "Some participants had lived in the area for years."
+      },
+      "answer": "B",
+      "explanation": "The best sentence provides specific, relevant evidence tied to participation over time.",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-071",
+      "type": "mcq",
+      "difficulty_level": 5,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying community gardens often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which choice best corrects the underlined portion of the passage?",
+      "choices": {
+        "A": "results depend on local conditions and consistent follow-through",
+        "B": "results depending on local conditions and consistent follow-through",
+        "C": "results depends on local conditions and consistent follow-through",
+        "D": "result depend on local conditions and consistent follow-through"
+      },
+      "answer": "A",
+      "explanation": "Subject-verb agreement: plural “results” takes “depend.”",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-072",
+      "type": "mcq",
+      "difficulty_level": 5,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying renewable energy often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which sentence would best add relevant evidence to support the author’s point?",
+      "choices": {
+        "A": "Many people enjoy hobbies in their free time.",
+        "B": "The project logo was redesigned twice.",
+        "C": "For instance, neighborhoods with regular volunteer schedules showed higher participation rates after three months.",
+        "D": "Some participants had lived in the area for years."
+      },
+      "answer": "C",
+      "explanation": "The best sentence provides specific, relevant evidence tied to participation over time.",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-073",
+      "type": "mcq",
+      "difficulty_level": 6,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying community gardens often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which choice best corrects the underlined portion of the passage?",
+      "choices": {
+        "A": "results depends on local conditions and consistent follow-through",
+        "B": "results depend on local conditions and consistent follow-through",
+        "C": "results depending on local conditions and consistent follow-through",
+        "D": "result depend on local conditions and consistent follow-through"
+      },
+      "answer": "B",
+      "explanation": "Subject-verb agreement: plural “results” takes “depend.”",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-074",
+      "type": "mcq",
+      "difficulty_level": 6,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying teamwork in sports often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which choice best maintains the logical transition in the passage?",
+      "choices": {
+        "A": "In addition,",
+        "B": "Still,",
+        "C": "As a result,",
+        "D": "For example,"
+      },
+      "answer": "B",
+      "explanation": "“Still” signals a contrast/qualification, matching the shift from positive results to a limitation.",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-075",
+      "type": "mcq",
+      "difficulty_level": 5,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying renewable energy often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which sentence would best add relevant evidence to support the author’s point?",
+      "choices": {
+        "A": "For instance, neighborhoods with regular volunteer schedules showed higher participation rates after three months.",
+        "B": "Many people enjoy hobbies in their free time.",
+        "C": "Some participants had lived in the area for years.",
+        "D": "The project logo was redesigned twice."
+      },
+      "answer": "A",
+      "explanation": "The best sentence provides specific, relevant evidence tied to participation over time.",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-076",
+      "type": "mcq",
+      "difficulty_level": 6,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying teamwork in sports often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which choice best replaces the underlined word to maintain the passage’s tone and meaning?",
+      "choices": {
+        "A": "barked",
+        "B": "emphasized",
+        "C": "whispered",
+        "D": "laughed"
+      },
+      "answer": "B",
+      "explanation": "The best choice is formal and matches an academic context.",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-077",
+      "type": "mcq",
+      "difficulty_level": 7,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying museum exhibits often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which choice best corrects the underlined portion of the passage?",
+      "choices": {
+        "A": "results depend on local conditions and consistent follow-through",
+        "B": "results depends on local conditions and consistent follow-through",
+        "C": "result depend on local conditions and consistent follow-through",
+        "D": "results depending on local conditions and consistent follow-through"
+      },
+      "answer": "A",
+      "explanation": "Subject-verb agreement: plural “results” takes “depend.”",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-078",
+      "type": "mcq",
+      "difficulty_level": 6,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying renewable energy often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which choice best maintains the logical transition in the passage?",
+      "choices": {
+        "A": "Still,",
+        "B": "As a result,",
+        "C": "For example,",
+        "D": "In addition,"
+      },
+      "answer": "A",
+      "explanation": "“Still” signals a contrast/qualification, matching the shift from positive results to a limitation.",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-079",
+      "type": "mcq",
+      "difficulty_level": 7,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying community gardens often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which choice best corrects the underlined portion of the passage?",
+      "choices": {
+        "A": "result depend on local conditions and consistent follow-through",
+        "B": "results depend on local conditions and consistent follow-through",
+        "C": "results depends on local conditions and consistent follow-through",
+        "D": "results depending on local conditions and consistent follow-through"
+      },
+      "answer": "B",
+      "explanation": "Subject-verb agreement: plural “results” takes “depend.”",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-080",
+      "type": "mcq",
+      "difficulty_level": 5,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying public transportation often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which choice best maintains the logical transition in the passage?",
+      "choices": {
+        "A": "For example,",
+        "B": "Still,",
+        "C": "As a result,",
+        "D": "In addition,"
+      },
+      "answer": "B",
+      "explanation": "“Still” signals a contrast/qualification, matching the shift from positive results to a limitation.",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-081",
+      "type": "mcq",
+      "difficulty_level": 7,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying museum exhibits often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which choice best corrects the underlined portion of the passage?",
+      "choices": {
+        "A": "results depends on local conditions and consistent follow-through",
+        "B": "results depend on local conditions and consistent follow-through",
+        "C": "results depending on local conditions and consistent follow-through",
+        "D": "result depend on local conditions and consistent follow-through"
+      },
+      "answer": "B",
+      "explanation": "Subject-verb agreement: plural “results” takes “depend.”",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-082",
+      "type": "mcq",
+      "difficulty_level": 6,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying public transportation often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which choice best maintains the logical transition in the passage?",
+      "choices": {
+        "A": "As a result,",
+        "B": "Still,",
+        "C": "In addition,",
+        "D": "For example,"
+      },
+      "answer": "B",
+      "explanation": "“Still” signals a contrast/qualification, matching the shift from positive results to a limitation.",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-083",
+      "type": "mcq",
+      "difficulty_level": 7,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying sleep and learning often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which choice best corrects the underlined portion of the passage?",
+      "choices": {
+        "A": "results depending on local conditions and consistent follow-through",
+        "B": "result depend on local conditions and consistent follow-through",
+        "C": "results depends on local conditions and consistent follow-through",
+        "D": "results depend on local conditions and consistent follow-through"
+      },
+      "answer": "D",
+      "explanation": "Subject-verb agreement: plural “results” takes “depend.”",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-084",
+      "type": "mcq",
+      "difficulty_level": 6,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying sleep and learning often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which choice best corrects the underlined portion of the passage?",
+      "choices": {
+        "A": "results depends on local conditions and consistent follow-through",
+        "B": "results depending on local conditions and consistent follow-through",
+        "C": "result depend on local conditions and consistent follow-through",
+        "D": "results depend on local conditions and consistent follow-through"
+      },
+      "answer": "D",
+      "explanation": "Subject-verb agreement: plural “results” takes “depend.”",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-085",
+      "type": "mcq",
+      "difficulty_level": 7,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying public transportation often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which sentence would best add relevant evidence to support the author’s point?",
+      "choices": {
+        "A": "The project logo was redesigned twice.",
+        "B": "For instance, neighborhoods with regular volunteer schedules showed higher participation rates after three months.",
+        "C": "Many people enjoy hobbies in their free time.",
+        "D": "Some participants had lived in the area for years."
+      },
+      "answer": "B",
+      "explanation": "The best sentence provides specific, relevant evidence tied to participation over time.",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-086",
+      "type": "mcq",
+      "difficulty_level": 6,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying public transportation often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which choice best replaces the underlined word to maintain the passage’s tone and meaning?",
+      "choices": {
+        "A": "laughed",
+        "B": "barked",
+        "C": "whispered",
+        "D": "emphasized"
+      },
+      "answer": "D",
+      "explanation": "The best choice is formal and matches an academic context.",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-087",
+      "type": "mcq",
+      "difficulty_level": 7,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying sleep and learning often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which sentence would best add relevant evidence to support the author’s point?",
+      "choices": {
+        "A": "For instance, neighborhoods with regular volunteer schedules showed higher participation rates after three months.",
+        "B": "Some participants had lived in the area for years.",
+        "C": "Many people enjoy hobbies in their free time.",
+        "D": "The project logo was redesigned twice."
+      },
+      "answer": "A",
+      "explanation": "The best sentence provides specific, relevant evidence tied to participation over time.",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-088",
+      "type": "mcq",
+      "difficulty_level": 7,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying teamwork in sports often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which choice best replaces the underlined word to maintain the passage’s tone and meaning?",
+      "choices": {
+        "A": "whispered",
+        "B": "laughed",
+        "C": "indicated",
+        "D": "barked"
+      },
+      "answer": "C",
+      "explanation": "The best choice is formal and matches an academic context.",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-089",
+      "type": "mcq",
+      "difficulty_level": 7,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying renewable energy often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which choice best replaces the underlined word to maintain the passage’s tone and meaning?",
+      "choices": {
+        "A": "explained",
+        "B": "barked",
+        "C": "whispered",
+        "D": "laughed"
+      },
+      "answer": "A",
+      "explanation": "The best choice is formal and matches an academic context.",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-090",
+      "type": "mcq",
+      "difficulty_level": 7,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying sleep and learning often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which sentence would best add relevant evidence to support the author’s point?",
+      "choices": {
+        "A": "For instance, neighborhoods with regular volunteer schedules showed higher participation rates after three months.",
+        "B": "The project logo was redesigned twice.",
+        "C": "Many people enjoy hobbies in their free time.",
+        "D": "Some participants had lived in the area for years."
+      },
+      "answer": "A",
+      "explanation": "The best sentence provides specific, relevant evidence tied to participation over time.",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-091",
+      "type": "mcq",
+      "difficulty_level": 5,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying museum exhibits often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which choice best maintains the logical transition in the passage?",
+      "choices": {
+        "A": "In addition,",
+        "B": "As a result,",
+        "C": "Still,",
+        "D": "For example,"
+      },
+      "answer": "C",
+      "explanation": "“Still” signals a contrast/qualification, matching the shift from positive results to a limitation.",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-092",
+      "type": "mcq",
+      "difficulty_level": 7,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying renewable energy often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which choice best replaces the underlined word to maintain the passage’s tone and meaning?",
+      "choices": {
+        "A": "noted",
+        "B": "whispered",
+        "C": "barked",
+        "D": "laughed"
+      },
+      "answer": "A",
+      "explanation": "The best choice is formal and matches an academic context.",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-093",
+      "type": "mcq",
+      "difficulty_level": 5,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying public transportation often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which choice best replaces the underlined word to maintain the passage’s tone and meaning?",
+      "choices": {
+        "A": "laughed",
+        "B": "indicated",
+        "C": "barked",
+        "D": "whispered"
+      },
+      "answer": "B",
+      "explanation": "The best choice is formal and matches an academic context.",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-094",
+      "type": "mcq",
+      "difficulty_level": 6,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying community gardens often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which choice best replaces the underlined word to maintain the passage’s tone and meaning?",
+      "choices": {
+        "A": "whispered",
+        "B": "emphasized",
+        "C": "laughed",
+        "D": "barked"
+      },
+      "answer": "B",
+      "explanation": "The best choice is formal and matches an academic context.",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-095",
+      "type": "mcq",
+      "difficulty_level": 6,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying teamwork in sports often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which choice best maintains the logical transition in the passage?",
+      "choices": {
+        "A": "As a result,",
+        "B": "In addition,",
+        "C": "For example,",
+        "D": "Still,"
+      },
+      "answer": "D",
+      "explanation": "“Still” signals a contrast/qualification, matching the shift from positive results to a limitation.",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-096",
+      "type": "mcq",
+      "difficulty_level": 7,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying renewable energy often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which choice best replaces the underlined word to maintain the passage’s tone and meaning?",
+      "choices": {
+        "A": "barked",
+        "B": "whispered",
+        "C": "laughed",
+        "D": "explained"
+      },
+      "answer": "D",
+      "explanation": "The best choice is formal and matches an academic context.",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-097",
+      "type": "mcq",
+      "difficulty_level": 7,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying teamwork in sports often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which sentence would best add relevant evidence to support the author’s point?",
+      "choices": {
+        "A": "Many people enjoy hobbies in their free time.",
+        "B": "The project logo was redesigned twice.",
+        "C": "Some participants had lived in the area for years.",
+        "D": "For instance, neighborhoods with regular volunteer schedules showed higher participation rates after three months."
+      },
+      "answer": "D",
+      "explanation": "The best sentence provides specific, relevant evidence tied to participation over time.",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-098",
+      "type": "mcq",
+      "difficulty_level": 5,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying museum exhibits often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which sentence would best add relevant evidence to support the author’s point?",
+      "choices": {
+        "A": "The project logo was redesigned twice.",
+        "B": "Some participants had lived in the area for years.",
+        "C": "For instance, neighborhoods with regular volunteer schedules showed higher participation rates after three months.",
+        "D": "Many people enjoy hobbies in their free time."
+      },
+      "answer": "C",
+      "explanation": "The best sentence provides specific, relevant evidence tied to participation over time.",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-099",
+      "type": "mcq",
+      "difficulty_level": 7,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying community gardens often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which choice best maintains the logical transition in the passage?",
+      "choices": {
+        "A": "For example,",
+        "B": "Still,",
+        "C": "In addition,",
+        "D": "As a result,"
+      },
+      "answer": "B",
+      "explanation": "“Still” signals a contrast/qualification, matching the shift from positive results to a limitation.",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-100",
+      "type": "mcq",
+      "difficulty_level": 6,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying community gardens often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which choice best corrects the underlined portion of the passage?",
+      "choices": {
+        "A": "result depend on local conditions and consistent follow-through",
+        "B": "results depends on local conditions and consistent follow-through",
+        "C": "results depending on local conditions and consistent follow-through",
+        "D": "results depend on local conditions and consistent follow-through"
+      },
+      "answer": "D",
+      "explanation": "Subject-verb agreement: plural “results” takes “depend.”",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-101",
+      "type": "mcq",
+      "difficulty_level": 5,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying teamwork in sports often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which choice best maintains the logical transition in the passage?",
+      "choices": {
+        "A": "In addition,",
+        "B": "Still,",
+        "C": "As a result,",
+        "D": "For example,"
+      },
+      "answer": "B",
+      "explanation": "“Still” signals a contrast/qualification, matching the shift from positive results to a limitation.",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-102",
+      "type": "mcq",
+      "difficulty_level": 5,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying sleep and learning often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which choice best replaces the underlined word to maintain the passage’s tone and meaning?",
+      "choices": {
+        "A": "laughed",
+        "B": "whispered",
+        "C": "emphasized",
+        "D": "barked"
+      },
+      "answer": "C",
+      "explanation": "The best choice is formal and matches an academic context.",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-103",
+      "type": "mcq",
+      "difficulty_level": 7,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying sleep and learning often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which choice best corrects the underlined portion of the passage?",
+      "choices": {
+        "A": "result depend on local conditions and consistent follow-through",
+        "B": "results depends on local conditions and consistent follow-through",
+        "C": "results depending on local conditions and consistent follow-through",
+        "D": "results depend on local conditions and consistent follow-through"
+      },
+      "answer": "D",
+      "explanation": "Subject-verb agreement: plural “results” takes “depend.”",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-104",
+      "type": "mcq",
+      "difficulty_level": 6,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying museum exhibits often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which choice best corrects the underlined portion of the passage?",
+      "choices": {
+        "A": "results depends on local conditions and consistent follow-through",
+        "B": "results depending on local conditions and consistent follow-through",
+        "C": "results depend on local conditions and consistent follow-through",
+        "D": "result depend on local conditions and consistent follow-through"
+      },
+      "answer": "C",
+      "explanation": "Subject-verb agreement: plural “results” takes “depend.”",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-105",
+      "type": "mcq",
+      "difficulty_level": 6,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying community gardens often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which choice best maintains the logical transition in the passage?",
+      "choices": {
+        "A": "In addition,",
+        "B": "Still,",
+        "C": "As a result,",
+        "D": "For example,"
+      },
+      "answer": "B",
+      "explanation": "“Still” signals a contrast/qualification, matching the shift from positive results to a limitation.",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-106",
+      "type": "mcq",
+      "difficulty_level": 5,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying teamwork in sports often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which choice best corrects the underlined portion of the passage?",
+      "choices": {
+        "A": "results depends on local conditions and consistent follow-through",
+        "B": "results depend on local conditions and consistent follow-through",
+        "C": "result depend on local conditions and consistent follow-through",
+        "D": "results depending on local conditions and consistent follow-through"
+      },
+      "answer": "B",
+      "explanation": "Subject-verb agreement: plural “results” takes “depend.”",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-107",
+      "type": "mcq",
+      "difficulty_level": 7,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying museum exhibits often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which choice best replaces the underlined word to maintain the passage’s tone and meaning?",
+      "choices": {
+        "A": "laughed",
+        "B": "barked",
+        "C": "noted",
+        "D": "whispered"
+      },
+      "answer": "C",
+      "explanation": "The best choice is formal and matches an academic context.",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-108",
+      "type": "mcq",
+      "difficulty_level": 5,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying community gardens often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which choice best replaces the underlined word to maintain the passage’s tone and meaning?",
+      "choices": {
+        "A": "explained",
+        "B": "whispered",
+        "C": "laughed",
+        "D": "barked"
+      },
+      "answer": "A",
+      "explanation": "The best choice is formal and matches an academic context.",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-109",
+      "type": "mcq",
+      "difficulty_level": 5,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying renewable energy often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which choice best replaces the underlined word to maintain the passage’s tone and meaning?",
+      "choices": {
+        "A": "indicated",
+        "B": "whispered",
+        "C": "barked",
+        "D": "laughed"
+      },
+      "answer": "A",
+      "explanation": "The best choice is formal and matches an academic context.",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-110",
+      "type": "mcq",
+      "difficulty_level": 5,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying sleep and learning often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which choice best maintains the logical transition in the passage?",
+      "choices": {
+        "A": "In addition,",
+        "B": "As a result,",
+        "C": "Still,",
+        "D": "For example,"
+      },
+      "answer": "C",
+      "explanation": "“Still” signals a contrast/qualification, matching the shift from positive results to a limitation.",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-111",
+      "type": "mcq",
+      "difficulty_level": 7,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying museum exhibits often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which choice best corrects the underlined portion of the passage?",
+      "choices": {
+        "A": "results depends on local conditions and consistent follow-through",
+        "B": "results depending on local conditions and consistent follow-through",
+        "C": "result depend on local conditions and consistent follow-through",
+        "D": "results depend on local conditions and consistent follow-through"
+      },
+      "answer": "D",
+      "explanation": "Subject-verb agreement: plural “results” takes “depend.”",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-112",
+      "type": "mcq",
+      "difficulty_level": 6,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying sleep and learning often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which choice best replaces the underlined word to maintain the passage’s tone and meaning?",
+      "choices": {
+        "A": "whispered",
+        "B": "laughed",
+        "C": "barked",
+        "D": "indicated"
+      },
+      "answer": "D",
+      "explanation": "The best choice is formal and matches an academic context.",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-113",
+      "type": "mcq",
+      "difficulty_level": 6,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying sleep and learning often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which choice best corrects the underlined portion of the passage?",
+      "choices": {
+        "A": "results depends on local conditions and consistent follow-through",
+        "B": "result depend on local conditions and consistent follow-through",
+        "C": "results depend on local conditions and consistent follow-through",
+        "D": "results depending on local conditions and consistent follow-through"
+      },
+      "answer": "C",
+      "explanation": "Subject-verb agreement: plural “results” takes “depend.”",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-114",
+      "type": "mcq",
+      "difficulty_level": 5,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying museum exhibits often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which choice best replaces the underlined word to maintain the passage’s tone and meaning?",
+      "choices": {
+        "A": "laughed",
+        "B": "whispered",
+        "C": "barked",
+        "D": "emphasized"
+      },
+      "answer": "D",
+      "explanation": "The best choice is formal and matches an academic context.",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-115",
+      "type": "mcq",
+      "difficulty_level": 7,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying museum exhibits often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which choice best maintains the logical transition in the passage?",
+      "choices": {
+        "A": "In addition,",
+        "B": "Still,",
+        "C": "For example,",
+        "D": "As a result,"
+      },
+      "answer": "B",
+      "explanation": "“Still” signals a contrast/qualification, matching the shift from positive results to a limitation.",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-116",
+      "type": "mcq",
+      "difficulty_level": 6,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying teamwork in sports often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which choice best corrects the underlined portion of the passage?",
+      "choices": {
+        "A": "result depend on local conditions and consistent follow-through",
+        "B": "results depend on local conditions and consistent follow-through",
+        "C": "results depends on local conditions and consistent follow-through",
+        "D": "results depending on local conditions and consistent follow-through"
+      },
+      "answer": "B",
+      "explanation": "Subject-verb agreement: plural “results” takes “depend.”",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-117",
+      "type": "mcq",
+      "difficulty_level": 6,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying renewable energy often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which choice best replaces the underlined word to maintain the passage’s tone and meaning?",
+      "choices": {
+        "A": "barked",
+        "B": "noted",
+        "C": "whispered",
+        "D": "laughed"
+      },
+      "answer": "B",
+      "explanation": "The best choice is formal and matches an academic context.",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-118",
+      "type": "mcq",
+      "difficulty_level": 6,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying teamwork in sports often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which choice best replaces the underlined word to maintain the passage’s tone and meaning?",
+      "choices": {
+        "A": "whispered",
+        "B": "barked",
+        "C": "laughed",
+        "D": "emphasized"
+      },
+      "answer": "D",
+      "explanation": "The best choice is formal and matches an academic context.",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-119",
+      "type": "mcq",
+      "difficulty_level": 7,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying teamwork in sports often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which choice best corrects the underlined portion of the passage?",
+      "choices": {
+        "A": "results depends on local conditions and consistent follow-through",
+        "B": "results depending on local conditions and consistent follow-through",
+        "C": "results depend on local conditions and consistent follow-through",
+        "D": "result depend on local conditions and consistent follow-through"
+      },
+      "answer": "C",
+      "explanation": "Subject-verb agreement: plural “results” takes “depend.”",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-120",
+      "type": "mcq",
+      "difficulty_level": 5,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying renewable energy often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which choice best corrects the underlined portion of the passage?",
+      "choices": {
+        "A": "results depends on local conditions and consistent follow-through",
+        "B": "results depend on local conditions and consistent follow-through",
+        "C": "results depending on local conditions and consistent follow-through",
+        "D": "result depend on local conditions and consistent follow-through"
+      },
+      "answer": "B",
+      "explanation": "Subject-verb agreement: plural “results” takes “depend.”",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-121",
+      "type": "mcq",
+      "difficulty_level": 7,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying community gardens often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which choice best replaces the underlined word to maintain the passage’s tone and meaning?",
+      "choices": {
+        "A": "whispered",
+        "B": "laughed",
+        "C": "barked",
+        "D": "indicated"
+      },
+      "answer": "D",
+      "explanation": "The best choice is formal and matches an academic context.",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-122",
+      "type": "mcq",
+      "difficulty_level": 6,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying teamwork in sports often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which choice best replaces the underlined word to maintain the passage’s tone and meaning?",
+      "choices": {
+        "A": "whispered",
+        "B": "laughed",
+        "C": "barked",
+        "D": "emphasized"
+      },
+      "answer": "D",
+      "explanation": "The best choice is formal and matches an academic context.",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-123",
+      "type": "mcq",
+      "difficulty_level": 7,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying sleep and learning often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which choice best replaces the underlined word to maintain the passage’s tone and meaning?",
+      "choices": {
+        "A": "barked",
+        "B": "indicated",
+        "C": "laughed",
+        "D": "whispered"
+      },
+      "answer": "B",
+      "explanation": "The best choice is formal and matches an academic context.",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-124",
+      "type": "mcq",
+      "difficulty_level": 7,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying sleep and learning often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which choice best maintains the logical transition in the passage?",
+      "choices": {
+        "A": "In addition,",
+        "B": "As a result,",
+        "C": "Still,",
+        "D": "For example,"
+      },
+      "answer": "C",
+      "explanation": "“Still” signals a contrast/qualification, matching the shift from positive results to a limitation.",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-125",
+      "type": "mcq",
+      "difficulty_level": 7,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying museum exhibits often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which choice best replaces the underlined word to maintain the passage’s tone and meaning?",
+      "choices": {
+        "A": "barked",
+        "B": "whispered",
+        "C": "laughed",
+        "D": "emphasized"
+      },
+      "answer": "D",
+      "explanation": "The best choice is formal and matches an academic context.",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-126",
+      "type": "mcq",
+      "difficulty_level": 5,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying museum exhibits often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which choice best corrects the underlined portion of the passage?",
+      "choices": {
+        "A": "result depend on local conditions and consistent follow-through",
+        "B": "results depending on local conditions and consistent follow-through",
+        "C": "results depends on local conditions and consistent follow-through",
+        "D": "results depend on local conditions and consistent follow-through"
+      },
+      "answer": "D",
+      "explanation": "Subject-verb agreement: plural “results” takes “depend.”",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-127",
+      "type": "mcq",
+      "difficulty_level": 7,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying public transportation often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which sentence would best add relevant evidence to support the author’s point?",
+      "choices": {
+        "A": "For instance, neighborhoods with regular volunteer schedules showed higher participation rates after three months.",
+        "B": "Many people enjoy hobbies in their free time.",
+        "C": "The project logo was redesigned twice.",
+        "D": "Some participants had lived in the area for years."
+      },
+      "answer": "A",
+      "explanation": "The best sentence provides specific, relevant evidence tied to participation over time.",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-128",
+      "type": "mcq",
+      "difficulty_level": 7,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying museum exhibits often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which choice best replaces the underlined word to maintain the passage’s tone and meaning?",
+      "choices": {
+        "A": "indicated",
+        "B": "whispered",
+        "C": "barked",
+        "D": "laughed"
+      },
+      "answer": "A",
+      "explanation": "The best choice is formal and matches an academic context.",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-129",
+      "type": "mcq",
+      "difficulty_level": 7,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying museum exhibits often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which choice best replaces the underlined word to maintain the passage’s tone and meaning?",
+      "choices": {
+        "A": "laughed",
+        "B": "explained",
+        "C": "whispered",
+        "D": "barked"
+      },
+      "answer": "B",
+      "explanation": "The best choice is formal and matches an academic context.",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-130",
+      "type": "mcq",
+      "difficulty_level": 5,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying public transportation often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which choice best corrects the underlined portion of the passage?",
+      "choices": {
+        "A": "results depends on local conditions and consistent follow-through",
+        "B": "result depend on local conditions and consistent follow-through",
+        "C": "results depend on local conditions and consistent follow-through",
+        "D": "results depending on local conditions and consistent follow-through"
+      },
+      "answer": "C",
+      "explanation": "Subject-verb agreement: plural “results” takes “depend.”",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-131",
+      "type": "mcq",
+      "difficulty_level": 6,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying public transportation often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which sentence would best add relevant evidence to support the author’s point?",
+      "choices": {
+        "A": "Many people enjoy hobbies in their free time.",
+        "B": "For instance, neighborhoods with regular volunteer schedules showed higher participation rates after three months.",
+        "C": "The project logo was redesigned twice.",
+        "D": "Some participants had lived in the area for years."
+      },
+      "answer": "B",
+      "explanation": "The best sentence provides specific, relevant evidence tied to participation over time.",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-132",
+      "type": "mcq",
+      "difficulty_level": 5,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying renewable energy often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which choice best replaces the underlined word to maintain the passage’s tone and meaning?",
+      "choices": {
+        "A": "barked",
+        "B": "whispered",
+        "C": "laughed",
+        "D": "noted"
+      },
+      "answer": "D",
+      "explanation": "The best choice is formal and matches an academic context.",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-133",
+      "type": "mcq",
+      "difficulty_level": 5,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying sleep and learning often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which choice best corrects the underlined portion of the passage?",
+      "choices": {
+        "A": "result depend on local conditions and consistent follow-through",
+        "B": "results depending on local conditions and consistent follow-through",
+        "C": "results depends on local conditions and consistent follow-through",
+        "D": "results depend on local conditions and consistent follow-through"
+      },
+      "answer": "D",
+      "explanation": "Subject-verb agreement: plural “results” takes “depend.”",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-134",
+      "type": "mcq",
+      "difficulty_level": 6,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying renewable energy often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which choice best replaces the underlined word to maintain the passage’s tone and meaning?",
+      "choices": {
+        "A": "laughed",
+        "B": "barked",
+        "C": "noted",
+        "D": "whispered"
+      },
+      "answer": "C",
+      "explanation": "The best choice is formal and matches an academic context.",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-135",
+      "type": "mcq",
+      "difficulty_level": 5,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying public transportation often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which sentence would best add relevant evidence to support the author’s point?",
+      "choices": {
+        "A": "For instance, neighborhoods with regular volunteer schedules showed higher participation rates after three months.",
+        "B": "Some participants had lived in the area for years.",
+        "C": "Many people enjoy hobbies in their free time.",
+        "D": "The project logo was redesigned twice."
+      },
+      "answer": "A",
+      "explanation": "The best sentence provides specific, relevant evidence tied to participation over time.",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-136",
+      "type": "mcq",
+      "difficulty_level": 7,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying public transportation often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which sentence would best add relevant evidence to support the author’s point?",
+      "choices": {
+        "A": "The project logo was redesigned twice.",
+        "B": "Some participants had lived in the area for years.",
+        "C": "Many people enjoy hobbies in their free time.",
+        "D": "For instance, neighborhoods with regular volunteer schedules showed higher participation rates after three months."
+      },
+      "answer": "D",
+      "explanation": "The best sentence provides specific, relevant evidence tied to participation over time.",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-137",
+      "type": "mcq",
+      "difficulty_level": 7,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying renewable energy often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which choice best replaces the underlined word to maintain the passage’s tone and meaning?",
+      "choices": {
+        "A": "whispered",
+        "B": "barked",
+        "C": "laughed",
+        "D": "indicated"
+      },
+      "answer": "D",
+      "explanation": "The best choice is formal and matches an academic context.",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-138",
+      "type": "mcq",
+      "difficulty_level": 5,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying museum exhibits often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which sentence would best add relevant evidence to support the author’s point?",
+      "choices": {
+        "A": "For instance, neighborhoods with regular volunteer schedules showed higher participation rates after three months.",
+        "B": "Some participants had lived in the area for years.",
+        "C": "Many people enjoy hobbies in their free time.",
+        "D": "The project logo was redesigned twice."
+      },
+      "answer": "A",
+      "explanation": "The best sentence provides specific, relevant evidence tied to participation over time.",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-139",
+      "type": "mcq",
+      "difficulty_level": 5,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying teamwork in sports often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which sentence would best add relevant evidence to support the author’s point?",
+      "choices": {
+        "A": "Many people enjoy hobbies in their free time.",
+        "B": "The project logo was redesigned twice.",
+        "C": "Some participants had lived in the area for years.",
+        "D": "For instance, neighborhoods with regular volunteer schedules showed higher participation rates after three months."
+      },
+      "answer": "D",
+      "explanation": "The best sentence provides specific, relevant evidence tied to participation over time.",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-140",
+      "type": "mcq",
+      "difficulty_level": 7,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying community gardens often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which sentence would best add relevant evidence to support the author’s point?",
+      "choices": {
+        "A": "The project logo was redesigned twice.",
+        "B": "Many people enjoy hobbies in their free time.",
+        "C": "Some participants had lived in the area for years.",
+        "D": "For instance, neighborhoods with regular volunteer schedules showed higher participation rates after three months."
+      },
+      "answer": "D",
+      "explanation": "The best sentence provides specific, relevant evidence tied to participation over time.",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-141",
+      "type": "mcq",
+      "difficulty_level": 6,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying museum exhibits often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which choice best replaces the underlined word to maintain the passage’s tone and meaning?",
+      "choices": {
+        "A": "noted",
+        "B": "whispered",
+        "C": "laughed",
+        "D": "barked"
+      },
+      "answer": "A",
+      "explanation": "The best choice is formal and matches an academic context.",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-142",
+      "type": "mcq",
+      "difficulty_level": 5,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying renewable energy often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which choice best corrects the underlined portion of the passage?",
+      "choices": {
+        "A": "result depend on local conditions and consistent follow-through",
+        "B": "results depending on local conditions and consistent follow-through",
+        "C": "results depend on local conditions and consistent follow-through",
+        "D": "results depends on local conditions and consistent follow-through"
+      },
+      "answer": "C",
+      "explanation": "Subject-verb agreement: plural “results” takes “depend.”",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-143",
+      "type": "mcq",
+      "difficulty_level": 6,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying museum exhibits often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which choice best maintains the logical transition in the passage?",
+      "choices": {
+        "A": "Still,",
+        "B": "As a result,",
+        "C": "For example,",
+        "D": "In addition,"
+      },
+      "answer": "A",
+      "explanation": "“Still” signals a contrast/qualification, matching the shift from positive results to a limitation.",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-144",
+      "type": "mcq",
+      "difficulty_level": 5,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying renewable energy often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which choice best corrects the underlined portion of the passage?",
+      "choices": {
+        "A": "results depends on local conditions and consistent follow-through",
+        "B": "result depend on local conditions and consistent follow-through",
+        "C": "results depending on local conditions and consistent follow-through",
+        "D": "results depend on local conditions and consistent follow-through"
+      },
+      "answer": "D",
+      "explanation": "Subject-verb agreement: plural “results” takes “depend.”",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-145",
+      "type": "mcq",
+      "difficulty_level": 6,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying teamwork in sports often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which sentence would best add relevant evidence to support the author’s point?",
+      "choices": {
+        "A": "Some participants had lived in the area for years.",
+        "B": "Many people enjoy hobbies in their free time.",
+        "C": "For instance, neighborhoods with regular volunteer schedules showed higher participation rates after three months.",
+        "D": "The project logo was redesigned twice."
+      },
+      "answer": "C",
+      "explanation": "The best sentence provides specific, relevant evidence tied to participation over time.",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-146",
+      "type": "mcq",
+      "difficulty_level": 5,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying sleep and learning often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which choice best corrects the underlined portion of the passage?",
+      "choices": {
+        "A": "results depending on local conditions and consistent follow-through",
+        "B": "results depends on local conditions and consistent follow-through",
+        "C": "result depend on local conditions and consistent follow-through",
+        "D": "results depend on local conditions and consistent follow-through"
+      },
+      "answer": "D",
+      "explanation": "Subject-verb agreement: plural “results” takes “depend.”",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-147",
+      "type": "mcq",
+      "difficulty_level": 6,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying public transportation often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which choice best maintains the logical transition in the passage?",
+      "choices": {
+        "A": "For example,",
+        "B": "As a result,",
+        "C": "In addition,",
+        "D": "Still,"
+      },
+      "answer": "D",
+      "explanation": "“Still” signals a contrast/qualification, matching the shift from positive results to a limitation.",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-148",
+      "type": "mcq",
+      "difficulty_level": 5,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying sleep and learning often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which sentence would best add relevant evidence to support the author’s point?",
+      "choices": {
+        "A": "The project logo was redesigned twice.",
+        "B": "Many people enjoy hobbies in their free time.",
+        "C": "Some participants had lived in the area for years.",
+        "D": "For instance, neighborhoods with regular volunteer schedules showed higher participation rates after three months."
+      },
+      "answer": "D",
+      "explanation": "The best sentence provides specific, relevant evidence tied to participation over time.",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-149",
+      "type": "mcq",
+      "difficulty_level": 7,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying museum exhibits often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which sentence would best add relevant evidence to support the author’s point?",
+      "choices": {
+        "A": "For instance, neighborhoods with regular volunteer schedules showed higher participation rates after three months.",
+        "B": "The project logo was redesigned twice.",
+        "C": "Some participants had lived in the area for years.",
+        "D": "Many people enjoy hobbies in their free time."
+      },
+      "answer": "A",
+      "explanation": "The best sentence provides specific, relevant evidence tied to participation over time.",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-150",
+      "type": "mcq",
+      "difficulty_level": 6,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying public transportation often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which choice best maintains the logical transition in the passage?",
+      "choices": {
+        "A": "For example,",
+        "B": "In addition,",
+        "C": "Still,",
+        "D": "As a result,"
+      },
+      "answer": "C",
+      "explanation": "“Still” signals a contrast/qualification, matching the shift from positive results to a limitation.",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-151",
+      "type": "mcq",
+      "difficulty_level": 7,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying public transportation often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which choice best replaces the underlined word to maintain the passage’s tone and meaning?",
+      "choices": {
+        "A": "laughed",
+        "B": "whispered",
+        "C": "barked",
+        "D": "explained"
+      },
+      "answer": "D",
+      "explanation": "The best choice is formal and matches an academic context.",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-152",
+      "type": "mcq",
+      "difficulty_level": 5,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying public transportation often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which choice best corrects the underlined portion of the passage?",
+      "choices": {
+        "A": "results depend on local conditions and consistent follow-through",
+        "B": "result depend on local conditions and consistent follow-through",
+        "C": "results depending on local conditions and consistent follow-through",
+        "D": "results depends on local conditions and consistent follow-through"
+      },
+      "answer": "A",
+      "explanation": "Subject-verb agreement: plural “results” takes “depend.”",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-153",
+      "type": "mcq",
+      "difficulty_level": 7,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying renewable energy often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which choice best maintains the logical transition in the passage?",
+      "choices": {
+        "A": "As a result,",
+        "B": "For example,",
+        "C": "In addition,",
+        "D": "Still,"
+      },
+      "answer": "D",
+      "explanation": "“Still” signals a contrast/qualification, matching the shift from positive results to a limitation.",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-154",
+      "type": "mcq",
+      "difficulty_level": 6,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying public transportation often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which choice best replaces the underlined word to maintain the passage’s tone and meaning?",
+      "choices": {
+        "A": "laughed",
+        "B": "barked",
+        "C": "whispered",
+        "D": "noted"
+      },
+      "answer": "D",
+      "explanation": "The best choice is formal and matches an academic context.",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-155",
+      "type": "mcq",
+      "difficulty_level": 6,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying community gardens often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which choice best corrects the underlined portion of the passage?",
+      "choices": {
+        "A": "results depend on local conditions and consistent follow-through",
+        "B": "result depend on local conditions and consistent follow-through",
+        "C": "results depends on local conditions and consistent follow-through",
+        "D": "results depending on local conditions and consistent follow-through"
+      },
+      "answer": "A",
+      "explanation": "Subject-verb agreement: plural “results” takes “depend.”",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-156",
+      "type": "mcq",
+      "difficulty_level": 7,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying public transportation often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which choice best corrects the underlined portion of the passage?",
+      "choices": {
+        "A": "results depend on local conditions and consistent follow-through",
+        "B": "result depend on local conditions and consistent follow-through",
+        "C": "results depends on local conditions and consistent follow-through",
+        "D": "results depending on local conditions and consistent follow-through"
+      },
+      "answer": "A",
+      "explanation": "Subject-verb agreement: plural “results” takes “depend.”",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-157",
+      "type": "mcq",
+      "difficulty_level": 6,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying teamwork in sports often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which choice best corrects the underlined portion of the passage?",
+      "choices": {
+        "A": "results depending on local conditions and consistent follow-through",
+        "B": "result depend on local conditions and consistent follow-through",
+        "C": "results depends on local conditions and consistent follow-through",
+        "D": "results depend on local conditions and consistent follow-through"
+      },
+      "answer": "D",
+      "explanation": "Subject-verb agreement: plural “results” takes “depend.”",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-158",
+      "type": "mcq",
+      "difficulty_level": 5,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying teamwork in sports often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which sentence would best add relevant evidence to support the author’s point?",
+      "choices": {
+        "A": "For instance, neighborhoods with regular volunteer schedules showed higher participation rates after three months.",
+        "B": "The project logo was redesigned twice.",
+        "C": "Many people enjoy hobbies in their free time.",
+        "D": "Some participants had lived in the area for years."
+      },
+      "answer": "A",
+      "explanation": "The best sentence provides specific, relevant evidence tied to participation over time.",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-159",
+      "type": "mcq",
+      "difficulty_level": 6,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying museum exhibits often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which sentence would best add relevant evidence to support the author’s point?",
+      "choices": {
+        "A": "The project logo was redesigned twice.",
+        "B": "Some participants had lived in the area for years.",
+        "C": "Many people enjoy hobbies in their free time.",
+        "D": "For instance, neighborhoods with regular volunteer schedules showed higher participation rates after three months."
+      },
+      "answer": "D",
+      "explanation": "The best sentence provides specific, relevant evidence tied to participation over time.",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-160",
+      "type": "mcq",
+      "difficulty_level": 6,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying renewable energy often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which choice best replaces the underlined word to maintain the passage’s tone and meaning?",
+      "choices": {
+        "A": "explained",
+        "B": "barked",
+        "C": "whispered",
+        "D": "laughed"
+      },
+      "answer": "A",
+      "explanation": "The best choice is formal and matches an academic context.",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-161",
+      "type": "mcq",
+      "difficulty_level": 5,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying museum exhibits often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which sentence would best add relevant evidence to support the author’s point?",
+      "choices": {
+        "A": "The project logo was redesigned twice.",
+        "B": "Some participants had lived in the area for years.",
+        "C": "For instance, neighborhoods with regular volunteer schedules showed higher participation rates after three months.",
+        "D": "Many people enjoy hobbies in their free time."
+      },
+      "answer": "C",
+      "explanation": "The best sentence provides specific, relevant evidence tied to participation over time.",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-162",
+      "type": "mcq",
+      "difficulty_level": 6,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying sleep and learning often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which choice best replaces the underlined word to maintain the passage’s tone and meaning?",
+      "choices": {
+        "A": "barked",
+        "B": "whispered",
+        "C": "laughed",
+        "D": "explained"
+      },
+      "answer": "D",
+      "explanation": "The best choice is formal and matches an academic context.",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-163",
+      "type": "mcq",
+      "difficulty_level": 5,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying community gardens often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which choice best maintains the logical transition in the passage?",
+      "choices": {
+        "A": "For example,",
+        "B": "Still,",
+        "C": "In addition,",
+        "D": "As a result,"
+      },
+      "answer": "B",
+      "explanation": "“Still” signals a contrast/qualification, matching the shift from positive results to a limitation.",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-164",
+      "type": "mcq",
+      "difficulty_level": 7,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying public transportation often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which choice best replaces the underlined word to maintain the passage’s tone and meaning?",
+      "choices": {
+        "A": "noted",
+        "B": "laughed",
+        "C": "whispered",
+        "D": "barked"
+      },
+      "answer": "A",
+      "explanation": "The best choice is formal and matches an academic context.",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-165",
+      "type": "mcq",
+      "difficulty_level": 7,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying community gardens often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which choice best corrects the underlined portion of the passage?",
+      "choices": {
+        "A": "results depend on local conditions and consistent follow-through",
+        "B": "results depends on local conditions and consistent follow-through",
+        "C": "result depend on local conditions and consistent follow-through",
+        "D": "results depending on local conditions and consistent follow-through"
+      },
+      "answer": "A",
+      "explanation": "Subject-verb agreement: plural “results” takes “depend.”",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-166",
+      "type": "mcq",
+      "difficulty_level": 5,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying renewable energy often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which choice best corrects the underlined portion of the passage?",
+      "choices": {
+        "A": "results depends on local conditions and consistent follow-through",
+        "B": "result depend on local conditions and consistent follow-through",
+        "C": "results depend on local conditions and consistent follow-through",
+        "D": "results depending on local conditions and consistent follow-through"
+      },
+      "answer": "C",
+      "explanation": "Subject-verb agreement: plural “results” takes “depend.”",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-167",
+      "type": "mcq",
+      "difficulty_level": 5,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying community gardens often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which choice best maintains the logical transition in the passage?",
+      "choices": {
+        "A": "For example,",
+        "B": "Still,",
+        "C": "As a result,",
+        "D": "In addition,"
+      },
+      "answer": "B",
+      "explanation": "“Still” signals a contrast/qualification, matching the shift from positive results to a limitation.",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-168",
+      "type": "mcq",
+      "difficulty_level": 5,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying teamwork in sports often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which choice best maintains the logical transition in the passage?",
+      "choices": {
+        "A": "Still,",
+        "B": "In addition,",
+        "C": "For example,",
+        "D": "As a result,"
+      },
+      "answer": "A",
+      "explanation": "“Still” signals a contrast/qualification, matching the shift from positive results to a limitation.",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-169",
+      "type": "mcq",
+      "difficulty_level": 7,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying renewable energy often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which choice best replaces the underlined word to maintain the passage’s tone and meaning?",
+      "choices": {
+        "A": "barked",
+        "B": "laughed",
+        "C": "explained",
+        "D": "whispered"
+      },
+      "answer": "C",
+      "explanation": "The best choice is formal and matches an academic context.",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-170",
+      "type": "mcq",
+      "difficulty_level": 5,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying public transportation often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which choice best maintains the logical transition in the passage?",
+      "choices": {
+        "A": "For example,",
+        "B": "In addition,",
+        "C": "Still,",
+        "D": "As a result,"
+      },
+      "answer": "C",
+      "explanation": "“Still” signals a contrast/qualification, matching the shift from positive results to a limitation.",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-171",
+      "type": "mcq",
+      "difficulty_level": 6,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying renewable energy often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which choice best replaces the underlined word to maintain the passage’s tone and meaning?",
+      "choices": {
+        "A": "laughed",
+        "B": "noted",
+        "C": "barked",
+        "D": "whispered"
+      },
+      "answer": "B",
+      "explanation": "The best choice is formal and matches an academic context.",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-172",
+      "type": "mcq",
+      "difficulty_level": 5,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying museum exhibits often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which choice best replaces the underlined word to maintain the passage’s tone and meaning?",
+      "choices": {
+        "A": "barked",
+        "B": "whispered",
+        "C": "laughed",
+        "D": "indicated"
+      },
+      "answer": "D",
+      "explanation": "The best choice is formal and matches an academic context.",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-173",
+      "type": "mcq",
+      "difficulty_level": 5,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying renewable energy often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which choice best corrects the underlined portion of the passage?",
+      "choices": {
+        "A": "results depends on local conditions and consistent follow-through",
+        "B": "result depend on local conditions and consistent follow-through",
+        "C": "results depending on local conditions and consistent follow-through",
+        "D": "results depend on local conditions and consistent follow-through"
+      },
+      "answer": "D",
+      "explanation": "Subject-verb agreement: plural “results” takes “depend.”",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-174",
+      "type": "mcq",
+      "difficulty_level": 7,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying teamwork in sports often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which choice best corrects the underlined portion of the passage?",
+      "choices": {
+        "A": "results depends on local conditions and consistent follow-through",
+        "B": "results depend on local conditions and consistent follow-through",
+        "C": "results depending on local conditions and consistent follow-through",
+        "D": "result depend on local conditions and consistent follow-through"
+      },
+      "answer": "B",
+      "explanation": "Subject-verb agreement: plural “results” takes “depend.”",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-175",
+      "type": "mcq",
+      "difficulty_level": 7,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying sleep and learning often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which choice best maintains the logical transition in the passage?",
+      "choices": {
+        "A": "As a result,",
+        "B": "For example,",
+        "C": "In addition,",
+        "D": "Still,"
+      },
+      "answer": "D",
+      "explanation": "“Still” signals a contrast/qualification, matching the shift from positive results to a limitation.",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-176",
+      "type": "mcq",
+      "difficulty_level": 5,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying sleep and learning often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which choice best corrects the underlined portion of the passage?",
+      "choices": {
+        "A": "results depend on local conditions and consistent follow-through",
+        "B": "result depend on local conditions and consistent follow-through",
+        "C": "results depends on local conditions and consistent follow-through",
+        "D": "results depending on local conditions and consistent follow-through"
+      },
+      "answer": "A",
+      "explanation": "Subject-verb agreement: plural “results” takes “depend.”",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-177",
+      "type": "mcq",
+      "difficulty_level": 6,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying sleep and learning often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which choice best replaces the underlined word to maintain the passage’s tone and meaning?",
+      "choices": {
+        "A": "noted",
+        "B": "whispered",
+        "C": "barked",
+        "D": "laughed"
+      },
+      "answer": "A",
+      "explanation": "The best choice is formal and matches an academic context.",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-178",
+      "type": "mcq",
+      "difficulty_level": 6,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying public transportation often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which choice best corrects the underlined portion of the passage?",
+      "choices": {
+        "A": "result depend on local conditions and consistent follow-through",
+        "B": "results depending on local conditions and consistent follow-through",
+        "C": "results depend on local conditions and consistent follow-through",
+        "D": "results depends on local conditions and consistent follow-through"
+      },
+      "answer": "C",
+      "explanation": "Subject-verb agreement: plural “results” takes “depend.”",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-179",
+      "type": "mcq",
+      "difficulty_level": 7,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying museum exhibits often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which sentence would best add relevant evidence to support the author’s point?",
+      "choices": {
+        "A": "Some participants had lived in the area for years.",
+        "B": "The project logo was redesigned twice.",
+        "C": "Many people enjoy hobbies in their free time.",
+        "D": "For instance, neighborhoods with regular volunteer schedules showed higher participation rates after three months."
+      },
+      "answer": "D",
+      "explanation": "The best sentence provides specific, relevant evidence tied to participation over time.",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-180",
+      "type": "mcq",
+      "difficulty_level": 7,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying museum exhibits often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which sentence would best add relevant evidence to support the author’s point?",
+      "choices": {
+        "A": "Some participants had lived in the area for years.",
+        "B": "Many people enjoy hobbies in their free time.",
+        "C": "For instance, neighborhoods with regular volunteer schedules showed higher participation rates after three months.",
+        "D": "The project logo was redesigned twice."
+      },
+      "answer": "C",
+      "explanation": "The best sentence provides specific, relevant evidence tied to participation over time.",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-181",
+      "type": "mcq",
+      "difficulty_level": 5,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying sleep and learning often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which choice best replaces the underlined word to maintain the passage’s tone and meaning?",
+      "choices": {
+        "A": "whispered",
+        "B": "explained",
+        "C": "laughed",
+        "D": "barked"
+      },
+      "answer": "B",
+      "explanation": "The best choice is formal and matches an academic context.",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-182",
+      "type": "mcq",
+      "difficulty_level": 5,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying teamwork in sports often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which sentence would best add relevant evidence to support the author’s point?",
+      "choices": {
+        "A": "For instance, neighborhoods with regular volunteer schedules showed higher participation rates after three months.",
+        "B": "Many people enjoy hobbies in their free time.",
+        "C": "Some participants had lived in the area for years.",
+        "D": "The project logo was redesigned twice."
+      },
+      "answer": "A",
+      "explanation": "The best sentence provides specific, relevant evidence tied to participation over time.",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-183",
+      "type": "mcq",
+      "difficulty_level": 6,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying public transportation often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which choice best replaces the underlined word to maintain the passage’s tone and meaning?",
+      "choices": {
+        "A": "laughed",
+        "B": "whispered",
+        "C": "barked",
+        "D": "indicated"
+      },
+      "answer": "D",
+      "explanation": "The best choice is formal and matches an academic context.",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-184",
+      "type": "mcq",
+      "difficulty_level": 6,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying teamwork in sports often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which sentence would best add relevant evidence to support the author’s point?",
+      "choices": {
+        "A": "The project logo was redesigned twice.",
+        "B": "Some participants had lived in the area for years.",
+        "C": "Many people enjoy hobbies in their free time.",
+        "D": "For instance, neighborhoods with regular volunteer schedules showed higher participation rates after three months."
+      },
+      "answer": "D",
+      "explanation": "The best sentence provides specific, relevant evidence tied to participation over time.",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-185",
+      "type": "mcq",
+      "difficulty_level": 7,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying renewable energy often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which choice best maintains the logical transition in the passage?",
+      "choices": {
+        "A": "For example,",
+        "B": "In addition,",
+        "C": "As a result,",
+        "D": "Still,"
+      },
+      "answer": "D",
+      "explanation": "“Still” signals a contrast/qualification, matching the shift from positive results to a limitation.",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-186",
+      "type": "mcq",
+      "difficulty_level": 5,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying community gardens often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which choice best maintains the logical transition in the passage?",
+      "choices": {
+        "A": "Still,",
+        "B": "In addition,",
+        "C": "As a result,",
+        "D": "For example,"
+      },
+      "answer": "A",
+      "explanation": "“Still” signals a contrast/qualification, matching the shift from positive results to a limitation.",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-187",
+      "type": "mcq",
+      "difficulty_level": 7,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying renewable energy often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which choice best maintains the logical transition in the passage?",
+      "choices": {
+        "A": "For example,",
+        "B": "Still,",
+        "C": "As a result,",
+        "D": "In addition,"
+      },
+      "answer": "B",
+      "explanation": "“Still” signals a contrast/qualification, matching the shift from positive results to a limitation.",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-188",
+      "type": "mcq",
+      "difficulty_level": 7,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying renewable energy often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which choice best corrects the underlined portion of the passage?",
+      "choices": {
+        "A": "results depend on local conditions and consistent follow-through",
+        "B": "result depend on local conditions and consistent follow-through",
+        "C": "results depending on local conditions and consistent follow-through",
+        "D": "results depends on local conditions and consistent follow-through"
+      },
+      "answer": "A",
+      "explanation": "Subject-verb agreement: plural “results” takes “depend.”",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-189",
+      "type": "mcq",
+      "difficulty_level": 6,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying public transportation often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which sentence would best add relevant evidence to support the author’s point?",
+      "choices": {
+        "A": "For instance, neighborhoods with regular volunteer schedules showed higher participation rates after three months.",
+        "B": "The project logo was redesigned twice.",
+        "C": "Many people enjoy hobbies in their free time.",
+        "D": "Some participants had lived in the area for years."
+      },
+      "answer": "A",
+      "explanation": "The best sentence provides specific, relevant evidence tied to participation over time.",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-190",
+      "type": "mcq",
+      "difficulty_level": 7,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying renewable energy often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which choice best corrects the underlined portion of the passage?",
+      "choices": {
+        "A": "result depend on local conditions and consistent follow-through",
+        "B": "results depends on local conditions and consistent follow-through",
+        "C": "results depending on local conditions and consistent follow-through",
+        "D": "results depend on local conditions and consistent follow-through"
+      },
+      "answer": "D",
+      "explanation": "Subject-verb agreement: plural “results” takes “depend.”",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-191",
+      "type": "mcq",
+      "difficulty_level": 6,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying public transportation often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which sentence would best add relevant evidence to support the author’s point?",
+      "choices": {
+        "A": "The project logo was redesigned twice.",
+        "B": "Some participants had lived in the area for years.",
+        "C": "For instance, neighborhoods with regular volunteer schedules showed higher participation rates after three months.",
+        "D": "Many people enjoy hobbies in their free time."
+      },
+      "answer": "C",
+      "explanation": "The best sentence provides specific, relevant evidence tied to participation over time.",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-192",
+      "type": "mcq",
+      "difficulty_level": 7,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying museum exhibits often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which choice best maintains the logical transition in the passage?",
+      "choices": {
+        "A": "Still,",
+        "B": "For example,",
+        "C": "In addition,",
+        "D": "As a result,"
+      },
+      "answer": "A",
+      "explanation": "“Still” signals a contrast/qualification, matching the shift from positive results to a limitation.",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-193",
+      "type": "mcq",
+      "difficulty_level": 5,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying museum exhibits often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which sentence would best add relevant evidence to support the author’s point?",
+      "choices": {
+        "A": "For instance, neighborhoods with regular volunteer schedules showed higher participation rates after three months.",
+        "B": "Some participants had lived in the area for years.",
+        "C": "Many people enjoy hobbies in their free time.",
+        "D": "The project logo was redesigned twice."
+      },
+      "answer": "A",
+      "explanation": "The best sentence provides specific, relevant evidence tied to participation over time.",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-194",
+      "type": "mcq",
+      "difficulty_level": 5,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying museum exhibits often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which choice best replaces the underlined word to maintain the passage’s tone and meaning?",
+      "choices": {
+        "A": "whispered",
+        "B": "barked",
+        "C": "laughed",
+        "D": "explained"
+      },
+      "answer": "D",
+      "explanation": "The best choice is formal and matches an academic context.",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-195",
+      "type": "mcq",
+      "difficulty_level": 7,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying teamwork in sports often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which choice best corrects the underlined portion of the passage?",
+      "choices": {
+        "A": "results depending on local conditions and consistent follow-through",
+        "B": "results depend on local conditions and consistent follow-through",
+        "C": "result depend on local conditions and consistent follow-through",
+        "D": "results depends on local conditions and consistent follow-through"
+      },
+      "answer": "B",
+      "explanation": "Subject-verb agreement: plural “results” takes “depend.”",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-196",
+      "type": "mcq",
+      "difficulty_level": 6,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying museum exhibits often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which sentence would best add relevant evidence to support the author’s point?",
+      "choices": {
+        "A": "For instance, neighborhoods with regular volunteer schedules showed higher participation rates after three months.",
+        "B": "Some participants had lived in the area for years.",
+        "C": "The project logo was redesigned twice.",
+        "D": "Many people enjoy hobbies in their free time."
+      },
+      "answer": "A",
+      "explanation": "The best sentence provides specific, relevant evidence tied to participation over time.",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-197",
+      "type": "mcq",
+      "difficulty_level": 5,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying community gardens often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which choice best maintains the logical transition in the passage?",
+      "choices": {
+        "A": "As a result,",
+        "B": "For example,",
+        "C": "In addition,",
+        "D": "Still,"
+      },
+      "answer": "D",
+      "explanation": "“Still” signals a contrast/qualification, matching the shift from positive results to a limitation.",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-198",
+      "type": "mcq",
+      "difficulty_level": 6,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying public transportation often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which sentence would best add relevant evidence to support the author’s point?",
+      "choices": {
+        "A": "For instance, neighborhoods with regular volunteer schedules showed higher participation rates after three months.",
+        "B": "The project logo was redesigned twice.",
+        "C": "Some participants had lived in the area for years.",
+        "D": "Many people enjoy hobbies in their free time."
+      },
+      "answer": "A",
+      "explanation": "The best sentence provides specific, relevant evidence tied to participation over time.",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-199",
+      "type": "mcq",
+      "difficulty_level": 5,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying community gardens often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which choice best replaces the underlined word to maintain the passage’s tone and meaning?",
+      "choices": {
+        "A": "barked",
+        "B": "whispered",
+        "C": "explained",
+        "D": "laughed"
+      },
+      "answer": "C",
+      "explanation": "The best choice is formal and matches an academic context.",
+      "domain": "SAT English"
+    },
+    {
+      "id": "SATENG-MID-200",
+      "type": "mcq",
+      "difficulty_level": 7,
+      "difficulty_bucket": "L5-7",
+      "stimulus_type": "text",
+      "stimulus": "Researchers studying sleep and learning often look for small changes that produce measurable benefits. In one project, participants reported that the new approach was easier to maintain over time. Still, the researchers emphasized that results depend on local conditions and consistent follow-through.",
+      "question": "Which choice best corrects the underlined portion of the passage?",
+      "choices": {
+        "A": "results depend on local conditions and consistent follow-through",
+        "B": "results depends on local conditions and consistent follow-through",
+        "C": "results depending on local conditions and consistent follow-through",
+        "D": "result depend on local conditions and consistent follow-through"
+      },
+      "answer": "A",
+      "explanation": "Subject-verb agreement: plural “results” takes “depend.”",
+      "domain": "SAT English"
+    }
+  ]
+}

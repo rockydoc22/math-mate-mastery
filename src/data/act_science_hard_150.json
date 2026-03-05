@@ -1,0 +1,4381 @@
+{
+  "course": "ACT Science (Hard Supplement)",
+  "target_distribution_note": "Adds 150 hard questions (L8-10) to address hard-question gap.",
+  "generated_utc": "2026-03-05T16:09:51.440615+00:00",
+  "questions": [
+    {
+      "id": "ACTSCI-HARD-001",
+      "type": "mcq",
+      "difficulty_level": 9,
+      "difficulty_bucket": "L10",
+      "stimulus_type": "text",
+      "stimulus": "A study titled 'Enzyme Activity Test' reports controlled trials and notes that measurement uncertainty may affect conclusions.",
+      "question": "Based on the stimulus, which conclusion is most supported?",
+      "choices": {
+        "A": "The data prove causation in all contexts with no uncertainty.",
+        "B": "The relationship must be negative in all future trials.",
+        "C": "The results eliminate the need for controls.",
+        "D": "Results suggest an effect that should be tested with additional trials."
+      },
+      "answer": "D",
+      "explanation": "Hard ACT Science items reward cautious inference: supported trend + attention to uncertainty/controls.",
+      "domain": "ACT Science"
+    },
+    {
+      "id": "ACTSCI-HARD-002",
+      "type": "mcq",
+      "difficulty_level": 8,
+      "difficulty_bucket": "L8",
+      "stimulus_type": "text",
+      "stimulus": "A study titled 'Planet Temperature Model' reports controlled trials and notes that measurement uncertainty may affect conclusions.",
+      "question": "Based on the stimulus, which conclusion is most supported?",
+      "choices": {
+        "A": "The relationship must be negative in all future trials.",
+        "B": "The pattern suggests a positive relationship, though uncertainty limits precision.",
+        "C": "The results eliminate the need for controls.",
+        "D": "The data prove causation in all contexts with no uncertainty."
+      },
+      "answer": "B",
+      "explanation": "Hard ACT Science items reward cautious inference: supported trend + attention to uncertainty/controls.",
+      "domain": "ACT Science"
+    },
+    {
+      "id": "ACTSCI-HARD-003",
+      "type": "mcq",
+      "difficulty_level": 10,
+      "difficulty_bucket": "L9",
+      "stimulus_type": "text",
+      "stimulus": "A study titled 'Enzyme Activity Test' reports controlled trials and notes that measurement uncertainty may affect conclusions.",
+      "question": "Which factor is most likely a confounding variable in this study?",
+      "choices": {
+        "A": "The units used to record data",
+        "B": "The dependent variable itself",
+        "C": "The title of the experiment",
+        "D": "Differences in measurement technique between groups"
+      },
+      "answer": "D",
+      "explanation": "Confounding variables are uncontrolled factors linked to both the independent and dependent variables.",
+      "domain": "ACT Science"
+    },
+    {
+      "id": "ACTSCI-HARD-004",
+      "type": "mcq",
+      "difficulty_level": 10,
+      "difficulty_bucket": "L10",
+      "stimulus_type": "chart",
+      "stimulus": {
+        "title": "Reaction Rate Study",
+        "x_label": "Time (s)",
+        "y_label": "Concentration",
+        "points": [
+          [
+            0,
+            25.0
+          ],
+          [
+            1,
+            24.1
+          ],
+          [
+            2,
+            28.700000000000003
+          ],
+          [
+            3,
+            28.900000000000002
+          ],
+          [
+            4,
+            26.8
+          ],
+          [
+            5,
+            27.6
+          ]
+        ]
+      },
+      "question": "Based on the stimulus, which conclusion is most supported?",
+      "choices": {
+        "A": "The results eliminate the need for controls.",
+        "B": "The pattern suggests a positive relationship, though uncertainty limits precision.",
+        "C": "The relationship must be negative in all future trials.",
+        "D": "The data prove causation in all contexts with no uncertainty."
+      },
+      "answer": "B",
+      "explanation": "Hard ACT Science items reward cautious inference: supported trend + attention to uncertainty/controls.",
+      "domain": "ACT Science"
+    },
+    {
+      "id": "ACTSCI-HARD-005",
+      "type": "mcq",
+      "difficulty_level": 10,
+      "difficulty_bucket": "L8",
+      "stimulus_type": "text",
+      "stimulus": "A study titled 'Enzyme Activity Test' reports controlled trials and notes that measurement uncertainty may affect conclusions.",
+      "question": "Based on the stimulus, which conclusion is most supported?",
+      "choices": {
+        "A": "The relationship must be negative in all future trials.",
+        "B": "The data are consistent with a trend rather than random variation alone.",
+        "C": "The results eliminate the need for controls.",
+        "D": "The data prove causation in all contexts with no uncertainty."
+      },
+      "answer": "B",
+      "explanation": "Hard ACT Science items reward cautious inference: supported trend + attention to uncertainty/controls.",
+      "domain": "ACT Science"
+    },
+    {
+      "id": "ACTSCI-HARD-006",
+      "type": "mcq",
+      "difficulty_level": 8,
+      "difficulty_bucket": "L10",
+      "stimulus_type": "text",
+      "stimulus": "A study titled 'Planet Temperature Model' reports controlled trials and notes that measurement uncertainty may affect conclusions.",
+      "question": "Which change would most improve the experimental design?",
+      "choices": {
+        "A": "Change multiple variables at once to speed up results.",
+        "B": "Remove the control condition to simplify the study.",
+        "C": "Increase the number of trials and keep all variables constant except the independent variable.",
+        "D": "Record only the most extreme measurements."
+      },
+      "answer": "C",
+      "explanation": "Reliability improves with replication and controlled variables.",
+      "domain": "ACT Science"
+    },
+    {
+      "id": "ACTSCI-HARD-007",
+      "type": "mcq",
+      "difficulty_level": 10,
+      "difficulty_bucket": "L9",
+      "stimulus_type": "text",
+      "stimulus": "A study titled 'Planet Temperature Model' reports controlled trials and notes that measurement uncertainty may affect conclusions.",
+      "question": "Which factor is most likely a confounding variable in this study?",
+      "choices": {
+        "A": "Differences in measurement technique between groups",
+        "B": "The units used to record data",
+        "C": "The title of the experiment",
+        "D": "The dependent variable itself"
+      },
+      "answer": "A",
+      "explanation": "Confounding variables are uncontrolled factors linked to both the independent and dependent variables.",
+      "domain": "ACT Science"
+    },
+    {
+      "id": "ACTSCI-HARD-008",
+      "type": "mcq",
+      "difficulty_level": 9,
+      "difficulty_bucket": "L9",
+      "stimulus_type": "text",
+      "stimulus": "A study titled 'Planet Temperature Model' reports controlled trials and notes that measurement uncertainty may affect conclusions.",
+      "question": "Which factor is most likely a confounding variable in this study?",
+      "choices": {
+        "A": "The title of the experiment",
+        "B": "The dependent variable itself",
+        "C": "Uncontrolled environmental conditions that vary across trials",
+        "D": "The units used to record data"
+      },
+      "answer": "C",
+      "explanation": "Confounding variables are uncontrolled factors linked to both the independent and dependent variables.",
+      "domain": "ACT Science"
+    },
+    {
+      "id": "ACTSCI-HARD-009",
+      "type": "mcq",
+      "difficulty_level": 10,
+      "difficulty_bucket": "L10",
+      "stimulus_type": "chart",
+      "stimulus": {
+        "title": "Reaction Rate Study",
+        "x_label": "Time (s)",
+        "y_label": "Concentration",
+        "points": [
+          [
+            0,
+            15.3
+          ],
+          [
+            1,
+            17.7
+          ],
+          [
+            2,
+            23.299999999999997
+          ],
+          [
+            3,
+            26.699999999999996
+          ],
+          [
+            4,
+            27.199999999999996
+          ],
+          [
+            5,
+            24.999999999999996
+          ]
+        ]
+      },
+      "question": "Based on the stimulus, which conclusion is most supported?",
+      "choices": {
+        "A": "The data prove causation in all contexts with no uncertainty.",
+        "B": "The results eliminate the need for controls.",
+        "C": "The pattern suggests a positive relationship, though uncertainty limits precision.",
+        "D": "The relationship must be negative in all future trials."
+      },
+      "answer": "C",
+      "explanation": "Hard ACT Science items reward cautious inference: supported trend + attention to uncertainty/controls.",
+      "domain": "ACT Science"
+    },
+    {
+      "id": "ACTSCI-HARD-010",
+      "type": "mcq",
+      "difficulty_level": 9,
+      "difficulty_bucket": "L9",
+      "stimulus_type": "text",
+      "stimulus": "A study titled 'Planet Temperature Model' reports controlled trials and notes that measurement uncertainty may affect conclusions.",
+      "question": "Which factor is most likely a confounding variable in this study?",
+      "choices": {
+        "A": "Selection differences in samples assigned to groups",
+        "B": "The dependent variable itself",
+        "C": "The units used to record data",
+        "D": "The title of the experiment"
+      },
+      "answer": "A",
+      "explanation": "Confounding variables are uncontrolled factors linked to both the independent and dependent variables.",
+      "domain": "ACT Science"
+    },
+    {
+      "id": "ACTSCI-HARD-011",
+      "type": "mcq",
+      "difficulty_level": 10,
+      "difficulty_bucket": "L8",
+      "stimulus_type": "text",
+      "stimulus": "A study titled 'Water Quality Survey' reports controlled trials and notes that measurement uncertainty may affect conclusions.",
+      "question": "If the observed trend continues, which prediction is most reasonable?",
+      "choices": {
+        "A": "The dependent variable would likely continue changing in the same direction, though the exact value is uncertain.",
+        "B": "The dependent variable will remain exactly constant.",
+        "C": "Future results will be identical in every trial.",
+        "D": "The dependent variable will reverse direction with certainty."
+      },
+      "answer": "A",
+      "explanation": "Extrapolation uses the direction of the trend but avoids certainty about exact values.",
+      "domain": "ACT Science"
+    },
+    {
+      "id": "ACTSCI-HARD-012",
+      "type": "mcq",
+      "difficulty_level": 8,
+      "difficulty_bucket": "L10",
+      "stimulus_type": "text",
+      "stimulus": "A study titled 'Planet Temperature Model' reports controlled trials and notes that measurement uncertainty may affect conclusions.",
+      "question": "Which factor is most likely a confounding variable in this study?",
+      "choices": {
+        "A": "The units used to record data",
+        "B": "The dependent variable itself",
+        "C": "The title of the experiment",
+        "D": "A variable that changes with the independent variable and also affects the dependent variable"
+      },
+      "answer": "D",
+      "explanation": "Confounding variables are uncontrolled factors linked to both the independent and dependent variables.",
+      "domain": "ACT Science"
+    },
+    {
+      "id": "ACTSCI-HARD-013",
+      "type": "mcq",
+      "difficulty_level": 9,
+      "difficulty_bucket": "L8",
+      "stimulus_type": "chart",
+      "stimulus": {
+        "title": "Reaction Rate Study",
+        "x_label": "Time (s)",
+        "y_label": "Concentration",
+        "points": [
+          [
+            0,
+            19.6
+          ],
+          [
+            1,
+            18.8
+          ],
+          [
+            2,
+            21.5
+          ],
+          [
+            3,
+            27.0
+          ],
+          [
+            4,
+            27.2
+          ],
+          [
+            5,
+            30.4
+          ]
+        ]
+      },
+      "question": "If the observed trend continues, which prediction is most reasonable?",
+      "choices": {
+        "A": "Future results will be identical in every trial.",
+        "B": "The dependent variable will reverse direction with certainty.",
+        "C": "The dependent variable will remain exactly constant.",
+        "D": "The dependent variable would likely continue changing in the same direction, though the exact value is uncertain."
+      },
+      "answer": "D",
+      "explanation": "Extrapolation uses the direction of the trend but avoids certainty about exact values.",
+      "domain": "ACT Science"
+    },
+    {
+      "id": "ACTSCI-HARD-014",
+      "type": "mcq",
+      "difficulty_level": 8,
+      "difficulty_bucket": "L8",
+      "stimulus_type": "text",
+      "stimulus": "A study titled 'Planet Temperature Model' reports controlled trials and notes that measurement uncertainty may affect conclusions.",
+      "question": "Based on the stimulus, which conclusion is most supported?",
+      "choices": {
+        "A": "The relationship must be negative in all future trials.",
+        "B": "A change in the independent variable is associated with a measurable change in the dependent variable.",
+        "C": "The results eliminate the need for controls.",
+        "D": "The data prove causation in all contexts with no uncertainty."
+      },
+      "answer": "B",
+      "explanation": "Hard ACT Science items reward cautious inference: supported trend + attention to uncertainty/controls.",
+      "domain": "ACT Science"
+    },
+    {
+      "id": "ACTSCI-HARD-015",
+      "type": "mcq",
+      "difficulty_level": 9,
+      "difficulty_bucket": "L8",
+      "stimulus_type": "text",
+      "stimulus": "A study titled 'Enzyme Activity Test' reports controlled trials and notes that measurement uncertainty may affect conclusions.",
+      "question": "Which factor is most likely a confounding variable in this study?",
+      "choices": {
+        "A": "The units used to record data",
+        "B": "A variable that changes with the independent variable and also affects the dependent variable",
+        "C": "The dependent variable itself",
+        "D": "The title of the experiment"
+      },
+      "answer": "B",
+      "explanation": "Confounding variables are uncontrolled factors linked to both the independent and dependent variables.",
+      "domain": "ACT Science"
+    },
+    {
+      "id": "ACTSCI-HARD-016",
+      "type": "mcq",
+      "difficulty_level": 8,
+      "difficulty_bucket": "L9",
+      "stimulus_type": "chart",
+      "stimulus": {
+        "title": "Reaction Rate Study",
+        "x_label": "Time (s)",
+        "y_label": "Concentration",
+        "points": [
+          [
+            0,
+            14.7
+          ],
+          [
+            1,
+            19.6
+          ],
+          [
+            2,
+            22.8
+          ],
+          [
+            3,
+            21.7
+          ],
+          [
+            4,
+            19.5
+          ],
+          [
+            5,
+            22.4
+          ]
+        ]
+      },
+      "question": "Which factor is most likely a confounding variable in this study?",
+      "choices": {
+        "A": "The title of the experiment",
+        "B": "The dependent variable itself",
+        "C": "The units used to record data",
+        "D": "Selection differences in samples assigned to groups"
+      },
+      "answer": "D",
+      "explanation": "Confounding variables are uncontrolled factors linked to both the independent and dependent variables.",
+      "domain": "ACT Science"
+    },
+    {
+      "id": "ACTSCI-HARD-017",
+      "type": "mcq",
+      "difficulty_level": 10,
+      "difficulty_bucket": "L8",
+      "stimulus_type": "text",
+      "stimulus": "A study titled 'Planet Temperature Model' reports controlled trials and notes that measurement uncertainty may affect conclusions.",
+      "question": "Based on the stimulus, which conclusion is most supported?",
+      "choices": {
+        "A": "The data are consistent with a trend rather than random variation alone.",
+        "B": "The data prove causation in all contexts with no uncertainty.",
+        "C": "The relationship must be negative in all future trials.",
+        "D": "The results eliminate the need for controls."
+      },
+      "answer": "A",
+      "explanation": "Hard ACT Science items reward cautious inference: supported trend + attention to uncertainty/controls.",
+      "domain": "ACT Science"
+    },
+    {
+      "id": "ACTSCI-HARD-018",
+      "type": "mcq",
+      "difficulty_level": 10,
+      "difficulty_bucket": "L10",
+      "stimulus_type": "table",
+      "stimulus": {
+        "title": "Plant Growth Experiment",
+        "columns": [
+          "Group",
+          "Light (hours/day)",
+          "Growth (cm)"
+        ],
+        "rows": [
+          [
+            "A",
+            "6",
+            "3.4"
+          ],
+          [
+            "B",
+            "10",
+            "7.5"
+          ],
+          [
+            "C",
+            "14",
+            "10.2"
+          ]
+        ]
+      },
+      "question": "Which factor is most likely a confounding variable in this study?",
+      "choices": {
+        "A": "The title of the experiment",
+        "B": "Differences in measurement technique between groups",
+        "C": "The units used to record data",
+        "D": "The dependent variable itself"
+      },
+      "answer": "B",
+      "explanation": "Confounding variables are uncontrolled factors linked to both the independent and dependent variables.",
+      "domain": "ACT Science"
+    },
+    {
+      "id": "ACTSCI-HARD-019",
+      "type": "mcq",
+      "difficulty_level": 9,
+      "difficulty_bucket": "L10",
+      "stimulus_type": "table",
+      "stimulus": {
+        "title": "Plant Growth Experiment",
+        "columns": [
+          "Group",
+          "Light (hours/day)",
+          "Growth (cm)"
+        ],
+        "rows": [
+          [
+            "A",
+            "6",
+            "4.0"
+          ],
+          [
+            "B",
+            "10",
+            "6.5"
+          ],
+          [
+            "C",
+            "14",
+            "10.4"
+          ]
+        ]
+      },
+      "question": "Which factor is most likely a confounding variable in this study?",
+      "choices": {
+        "A": "The units used to record data",
+        "B": "Uncontrolled environmental conditions that vary across trials",
+        "C": "The title of the experiment",
+        "D": "The dependent variable itself"
+      },
+      "answer": "B",
+      "explanation": "Confounding variables are uncontrolled factors linked to both the independent and dependent variables.",
+      "domain": "ACT Science"
+    },
+    {
+      "id": "ACTSCI-HARD-020",
+      "type": "mcq",
+      "difficulty_level": 9,
+      "difficulty_bucket": "L9",
+      "stimulus_type": "table",
+      "stimulus": {
+        "title": "Plant Growth Experiment",
+        "columns": [
+          "Group",
+          "Light (hours/day)",
+          "Growth (cm)"
+        ],
+        "rows": [
+          [
+            "A",
+            "6",
+            "3.3"
+          ],
+          [
+            "B",
+            "10",
+            "6.8"
+          ],
+          [
+            "C",
+            "14",
+            "8.3"
+          ]
+        ]
+      },
+      "question": "Which change would most improve the experimental design?",
+      "choices": {
+        "A": "Record only the most extreme measurements.",
+        "B": "Change multiple variables at once to speed up results.",
+        "C": "Increase the number of trials and keep all variables constant except the independent variable.",
+        "D": "Remove the control condition to simplify the study."
+      },
+      "answer": "C",
+      "explanation": "Reliability improves with replication and controlled variables.",
+      "domain": "ACT Science"
+    },
+    {
+      "id": "ACTSCI-HARD-021",
+      "type": "mcq",
+      "difficulty_level": 8,
+      "difficulty_bucket": "L10",
+      "stimulus_type": "text",
+      "stimulus": "A study titled 'Planet Temperature Model' reports controlled trials and notes that measurement uncertainty may affect conclusions.",
+      "question": "If the observed trend continues, which prediction is most reasonable?",
+      "choices": {
+        "A": "Future results will be identical in every trial.",
+        "B": "The dependent variable will remain exactly constant.",
+        "C": "The dependent variable will reverse direction with certainty.",
+        "D": "The dependent variable would likely continue changing in the same direction, though the exact value is uncertain."
+      },
+      "answer": "D",
+      "explanation": "Extrapolation uses the direction of the trend but avoids certainty about exact values.",
+      "domain": "ACT Science"
+    },
+    {
+      "id": "ACTSCI-HARD-022",
+      "type": "mcq",
+      "difficulty_level": 8,
+      "difficulty_bucket": "L10",
+      "stimulus_type": "chart",
+      "stimulus": {
+        "title": "Reaction Rate Study",
+        "x_label": "Time (s)",
+        "y_label": "Concentration",
+        "points": [
+          [
+            0,
+            17.9
+          ],
+          [
+            1,
+            23.7
+          ],
+          [
+            2,
+            29.1
+          ],
+          [
+            3,
+            33.5
+          ],
+          [
+            4,
+            36.5
+          ],
+          [
+            5,
+            42.3
+          ]
+        ]
+      },
+      "question": "If the observed trend continues, which prediction is most reasonable?",
+      "choices": {
+        "A": "The dependent variable will remain exactly constant.",
+        "B": "The dependent variable will reverse direction with certainty.",
+        "C": "Future results will be identical in every trial.",
+        "D": "The dependent variable would likely continue changing in the same direction, though the exact value is uncertain."
+      },
+      "answer": "D",
+      "explanation": "Extrapolation uses the direction of the trend but avoids certainty about exact values.",
+      "domain": "ACT Science"
+    },
+    {
+      "id": "ACTSCI-HARD-023",
+      "type": "mcq",
+      "difficulty_level": 10,
+      "difficulty_bucket": "L8",
+      "stimulus_type": "text",
+      "stimulus": "A study titled 'Water Quality Survey' reports controlled trials and notes that measurement uncertainty may affect conclusions.",
+      "question": "Which change would most improve the experimental design?",
+      "choices": {
+        "A": "Remove the control condition to simplify the study.",
+        "B": "Change multiple variables at once to speed up results.",
+        "C": "Record only the most extreme measurements.",
+        "D": "Increase the number of trials and keep all variables constant except the independent variable."
+      },
+      "answer": "D",
+      "explanation": "Reliability improves with replication and controlled variables.",
+      "domain": "ACT Science"
+    },
+    {
+      "id": "ACTSCI-HARD-024",
+      "type": "mcq",
+      "difficulty_level": 9,
+      "difficulty_bucket": "L9",
+      "stimulus_type": "text",
+      "stimulus": "A study titled 'Enzyme Activity Test' reports controlled trials and notes that measurement uncertainty may affect conclusions.",
+      "question": "Which change would most improve the experimental design?",
+      "choices": {
+        "A": "Change multiple variables at once to speed up results.",
+        "B": "Increase the number of trials and keep all variables constant except the independent variable.",
+        "C": "Record only the most extreme measurements.",
+        "D": "Remove the control condition to simplify the study."
+      },
+      "answer": "B",
+      "explanation": "Reliability improves with replication and controlled variables.",
+      "domain": "ACT Science"
+    },
+    {
+      "id": "ACTSCI-HARD-025",
+      "type": "mcq",
+      "difficulty_level": 8,
+      "difficulty_bucket": "L9",
+      "stimulus_type": "text",
+      "stimulus": "A study titled 'Enzyme Activity Test' reports controlled trials and notes that measurement uncertainty may affect conclusions.",
+      "question": "Based on the stimulus, which conclusion is most supported?",
+      "choices": {
+        "A": "The results eliminate the need for controls.",
+        "B": "The data prove causation in all contexts with no uncertainty.",
+        "C": "Results suggest an effect that should be tested with additional trials.",
+        "D": "The relationship must be negative in all future trials."
+      },
+      "answer": "C",
+      "explanation": "Hard ACT Science items reward cautious inference: supported trend + attention to uncertainty/controls.",
+      "domain": "ACT Science"
+    },
+    {
+      "id": "ACTSCI-HARD-026",
+      "type": "mcq",
+      "difficulty_level": 10,
+      "difficulty_bucket": "L9",
+      "stimulus_type": "text",
+      "stimulus": "A study titled 'Enzyme Activity Test' reports controlled trials and notes that measurement uncertainty may affect conclusions.",
+      "question": "Which factor is most likely a confounding variable in this study?",
+      "choices": {
+        "A": "The title of the experiment",
+        "B": "The units used to record data",
+        "C": "Selection differences in samples assigned to groups",
+        "D": "The dependent variable itself"
+      },
+      "answer": "C",
+      "explanation": "Confounding variables are uncontrolled factors linked to both the independent and dependent variables.",
+      "domain": "ACT Science"
+    },
+    {
+      "id": "ACTSCI-HARD-027",
+      "type": "mcq",
+      "difficulty_level": 8,
+      "difficulty_bucket": "L10",
+      "stimulus_type": "text",
+      "stimulus": "A study titled 'Enzyme Activity Test' reports controlled trials and notes that measurement uncertainty may affect conclusions.",
+      "question": "Which change would most improve the experimental design?",
+      "choices": {
+        "A": "Change multiple variables at once to speed up results.",
+        "B": "Increase the number of trials and keep all variables constant except the independent variable.",
+        "C": "Record only the most extreme measurements.",
+        "D": "Remove the control condition to simplify the study."
+      },
+      "answer": "B",
+      "explanation": "Reliability improves with replication and controlled variables.",
+      "domain": "ACT Science"
+    },
+    {
+      "id": "ACTSCI-HARD-028",
+      "type": "mcq",
+      "difficulty_level": 9,
+      "difficulty_bucket": "L9",
+      "stimulus_type": "text",
+      "stimulus": "A study titled 'Water Quality Survey' reports controlled trials and notes that measurement uncertainty may affect conclusions.",
+      "question": "Which change would most improve the experimental design?",
+      "choices": {
+        "A": "Change multiple variables at once to speed up results.",
+        "B": "Record only the most extreme measurements.",
+        "C": "Remove the control condition to simplify the study.",
+        "D": "Increase the number of trials and keep all variables constant except the independent variable."
+      },
+      "answer": "D",
+      "explanation": "Reliability improves with replication and controlled variables.",
+      "domain": "ACT Science"
+    },
+    {
+      "id": "ACTSCI-HARD-029",
+      "type": "mcq",
+      "difficulty_level": 8,
+      "difficulty_bucket": "L10",
+      "stimulus_type": "text",
+      "stimulus": "A study titled 'Enzyme Activity Test' reports controlled trials and notes that measurement uncertainty may affect conclusions.",
+      "question": "If the observed trend continues, which prediction is most reasonable?",
+      "choices": {
+        "A": "Future results will be identical in every trial.",
+        "B": "The dependent variable will remain exactly constant.",
+        "C": "The dependent variable would likely continue changing in the same direction, though the exact value is uncertain.",
+        "D": "The dependent variable will reverse direction with certainty."
+      },
+      "answer": "C",
+      "explanation": "Extrapolation uses the direction of the trend but avoids certainty about exact values.",
+      "domain": "ACT Science"
+    },
+    {
+      "id": "ACTSCI-HARD-030",
+      "type": "mcq",
+      "difficulty_level": 10,
+      "difficulty_bucket": "L8",
+      "stimulus_type": "text",
+      "stimulus": "A study titled 'Enzyme Activity Test' reports controlled trials and notes that measurement uncertainty may affect conclusions.",
+      "question": "Which factor is most likely a confounding variable in this study?",
+      "choices": {
+        "A": "The title of the experiment",
+        "B": "The dependent variable itself",
+        "C": "The units used to record data",
+        "D": "Selection differences in samples assigned to groups"
+      },
+      "answer": "D",
+      "explanation": "Confounding variables are uncontrolled factors linked to both the independent and dependent variables.",
+      "domain": "ACT Science"
+    },
+    {
+      "id": "ACTSCI-HARD-031",
+      "type": "mcq",
+      "difficulty_level": 8,
+      "difficulty_bucket": "L8",
+      "stimulus_type": "chart",
+      "stimulus": {
+        "title": "Reaction Rate Study",
+        "x_label": "Time (s)",
+        "y_label": "Concentration",
+        "points": [
+          [
+            0,
+            24.3
+          ],
+          [
+            1,
+            30.3
+          ],
+          [
+            2,
+            29.1
+          ],
+          [
+            3,
+            32.4
+          ],
+          [
+            4,
+            35.3
+          ],
+          [
+            5,
+            35.199999999999996
+          ]
+        ]
+      },
+      "question": "Which change would most improve the experimental design?",
+      "choices": {
+        "A": "Change multiple variables at once to speed up results.",
+        "B": "Record only the most extreme measurements.",
+        "C": "Increase the number of trials and keep all variables constant except the independent variable.",
+        "D": "Remove the control condition to simplify the study."
+      },
+      "answer": "C",
+      "explanation": "Reliability improves with replication and controlled variables.",
+      "domain": "ACT Science"
+    },
+    {
+      "id": "ACTSCI-HARD-032",
+      "type": "mcq",
+      "difficulty_level": 8,
+      "difficulty_bucket": "L9",
+      "stimulus_type": "table",
+      "stimulus": {
+        "title": "Plant Growth Experiment",
+        "columns": [
+          "Group",
+          "Light (hours/day)",
+          "Growth (cm)"
+        ],
+        "rows": [
+          [
+            "A",
+            "6",
+            "2.4"
+          ],
+          [
+            "B",
+            "10",
+            "4.8"
+          ],
+          [
+            "C",
+            "14",
+            "9.4"
+          ]
+        ]
+      },
+      "question": "If the observed trend continues, which prediction is most reasonable?",
+      "choices": {
+        "A": "The dependent variable will remain exactly constant.",
+        "B": "The dependent variable will reverse direction with certainty.",
+        "C": "Future results will be identical in every trial.",
+        "D": "The dependent variable would likely continue changing in the same direction, though the exact value is uncertain."
+      },
+      "answer": "D",
+      "explanation": "Extrapolation uses the direction of the trend but avoids certainty about exact values.",
+      "domain": "ACT Science"
+    },
+    {
+      "id": "ACTSCI-HARD-033",
+      "type": "mcq",
+      "difficulty_level": 9,
+      "difficulty_bucket": "L10",
+      "stimulus_type": "table",
+      "stimulus": {
+        "title": "Plant Growth Experiment",
+        "columns": [
+          "Group",
+          "Light (hours/day)",
+          "Growth (cm)"
+        ],
+        "rows": [
+          [
+            "A",
+            "6",
+            "2.6"
+          ],
+          [
+            "B",
+            "10",
+            "6.5"
+          ],
+          [
+            "C",
+            "14",
+            "10.7"
+          ]
+        ]
+      },
+      "question": "Which factor is most likely a confounding variable in this study?",
+      "choices": {
+        "A": "The units used to record data",
+        "B": "Uncontrolled environmental conditions that vary across trials",
+        "C": "The dependent variable itself",
+        "D": "The title of the experiment"
+      },
+      "answer": "B",
+      "explanation": "Confounding variables are uncontrolled factors linked to both the independent and dependent variables.",
+      "domain": "ACT Science"
+    },
+    {
+      "id": "ACTSCI-HARD-034",
+      "type": "mcq",
+      "difficulty_level": 8,
+      "difficulty_bucket": "L9",
+      "stimulus_type": "text",
+      "stimulus": "A study titled 'Enzyme Activity Test' reports controlled trials and notes that measurement uncertainty may affect conclusions.",
+      "question": "Based on the stimulus, which conclusion is most supported?",
+      "choices": {
+        "A": "The results eliminate the need for controls.",
+        "B": "A change in the independent variable is associated with a measurable change in the dependent variable.",
+        "C": "The relationship must be negative in all future trials.",
+        "D": "The data prove causation in all contexts with no uncertainty."
+      },
+      "answer": "B",
+      "explanation": "Hard ACT Science items reward cautious inference: supported trend + attention to uncertainty/controls.",
+      "domain": "ACT Science"
+    },
+    {
+      "id": "ACTSCI-HARD-035",
+      "type": "mcq",
+      "difficulty_level": 9,
+      "difficulty_bucket": "L10",
+      "stimulus_type": "chart",
+      "stimulus": {
+        "title": "Reaction Rate Study",
+        "x_label": "Time (s)",
+        "y_label": "Concentration",
+        "points": [
+          [
+            0,
+            19.7
+          ],
+          [
+            1,
+            21.0
+          ],
+          [
+            2,
+            23.2
+          ],
+          [
+            3,
+            21.599999999999998
+          ],
+          [
+            4,
+            27.5
+          ],
+          [
+            5,
+            26.7
+          ]
+        ]
+      },
+      "question": "Based on the stimulus, which conclusion is most supported?",
+      "choices": {
+        "A": "A change in the independent variable is associated with a measurable change in the dependent variable.",
+        "B": "The results eliminate the need for controls.",
+        "C": "The data prove causation in all contexts with no uncertainty.",
+        "D": "The relationship must be negative in all future trials."
+      },
+      "answer": "A",
+      "explanation": "Hard ACT Science items reward cautious inference: supported trend + attention to uncertainty/controls.",
+      "domain": "ACT Science"
+    },
+    {
+      "id": "ACTSCI-HARD-036",
+      "type": "mcq",
+      "difficulty_level": 10,
+      "difficulty_bucket": "L9",
+      "stimulus_type": "text",
+      "stimulus": "A study titled 'Planet Temperature Model' reports controlled trials and notes that measurement uncertainty may affect conclusions.",
+      "question": "Which factor is most likely a confounding variable in this study?",
+      "choices": {
+        "A": "The dependent variable itself",
+        "B": "Uncontrolled environmental conditions that vary across trials",
+        "C": "The title of the experiment",
+        "D": "The units used to record data"
+      },
+      "answer": "B",
+      "explanation": "Confounding variables are uncontrolled factors linked to both the independent and dependent variables.",
+      "domain": "ACT Science"
+    },
+    {
+      "id": "ACTSCI-HARD-037",
+      "type": "mcq",
+      "difficulty_level": 8,
+      "difficulty_bucket": "L10",
+      "stimulus_type": "text",
+      "stimulus": "A study titled 'Planet Temperature Model' reports controlled trials and notes that measurement uncertainty may affect conclusions.",
+      "question": "If the observed trend continues, which prediction is most reasonable?",
+      "choices": {
+        "A": "Future results will be identical in every trial.",
+        "B": "The dependent variable would likely continue changing in the same direction, though the exact value is uncertain.",
+        "C": "The dependent variable will reverse direction with certainty.",
+        "D": "The dependent variable will remain exactly constant."
+      },
+      "answer": "B",
+      "explanation": "Extrapolation uses the direction of the trend but avoids certainty about exact values.",
+      "domain": "ACT Science"
+    },
+    {
+      "id": "ACTSCI-HARD-038",
+      "type": "mcq",
+      "difficulty_level": 10,
+      "difficulty_bucket": "L10",
+      "stimulus_type": "text",
+      "stimulus": "A study titled 'Water Quality Survey' reports controlled trials and notes that measurement uncertainty may affect conclusions.",
+      "question": "Based on the stimulus, which conclusion is most supported?",
+      "choices": {
+        "A": "The relationship must be negative in all future trials.",
+        "B": "The data prove causation in all contexts with no uncertainty.",
+        "C": "The results eliminate the need for controls.",
+        "D": "The data are consistent with a trend rather than random variation alone."
+      },
+      "answer": "D",
+      "explanation": "Hard ACT Science items reward cautious inference: supported trend + attention to uncertainty/controls.",
+      "domain": "ACT Science"
+    },
+    {
+      "id": "ACTSCI-HARD-039",
+      "type": "mcq",
+      "difficulty_level": 9,
+      "difficulty_bucket": "L9",
+      "stimulus_type": "chart",
+      "stimulus": {
+        "title": "Reaction Rate Study",
+        "x_label": "Time (s)",
+        "y_label": "Concentration",
+        "points": [
+          [
+            0,
+            16.299999999999997
+          ],
+          [
+            1,
+            21.999999999999996
+          ],
+          [
+            2,
+            22.299999999999997
+          ],
+          [
+            3,
+            19.4
+          ],
+          [
+            4,
+            21.0
+          ],
+          [
+            5,
+            19.0
+          ]
+        ]
+      },
+      "question": "If the observed trend continues, which prediction is most reasonable?",
+      "choices": {
+        "A": "The dependent variable will reverse direction with certainty.",
+        "B": "Future results will be identical in every trial.",
+        "C": "The dependent variable will remain exactly constant.",
+        "D": "The dependent variable would likely continue changing in the same direction, though the exact value is uncertain."
+      },
+      "answer": "D",
+      "explanation": "Extrapolation uses the direction of the trend but avoids certainty about exact values.",
+      "domain": "ACT Science"
+    },
+    {
+      "id": "ACTSCI-HARD-040",
+      "type": "mcq",
+      "difficulty_level": 8,
+      "difficulty_bucket": "L8",
+      "stimulus_type": "table",
+      "stimulus": {
+        "title": "Plant Growth Experiment",
+        "columns": [
+          "Group",
+          "Light (hours/day)",
+          "Growth (cm)"
+        ],
+        "rows": [
+          [
+            "A",
+            "6",
+            "4.9"
+          ],
+          [
+            "B",
+            "10",
+            "5.6"
+          ],
+          [
+            "C",
+            "14",
+            "9.7"
+          ]
+        ]
+      },
+      "question": "Based on the stimulus, which conclusion is most supported?",
+      "choices": {
+        "A": "Results suggest an effect that should be tested with additional trials.",
+        "B": "The data prove causation in all contexts with no uncertainty.",
+        "C": "The relationship must be negative in all future trials.",
+        "D": "The results eliminate the need for controls."
+      },
+      "answer": "A",
+      "explanation": "Hard ACT Science items reward cautious inference: supported trend + attention to uncertainty/controls.",
+      "domain": "ACT Science"
+    },
+    {
+      "id": "ACTSCI-HARD-041",
+      "type": "mcq",
+      "difficulty_level": 8,
+      "difficulty_bucket": "L8",
+      "stimulus_type": "text",
+      "stimulus": "A study titled 'Planet Temperature Model' reports controlled trials and notes that measurement uncertainty may affect conclusions.",
+      "question": "Which change would most improve the experimental design?",
+      "choices": {
+        "A": "Record only the most extreme measurements.",
+        "B": "Remove the control condition to simplify the study.",
+        "C": "Increase the number of trials and keep all variables constant except the independent variable.",
+        "D": "Change multiple variables at once to speed up results."
+      },
+      "answer": "C",
+      "explanation": "Reliability improves with replication and controlled variables.",
+      "domain": "ACT Science"
+    },
+    {
+      "id": "ACTSCI-HARD-042",
+      "type": "mcq",
+      "difficulty_level": 8,
+      "difficulty_bucket": "L10",
+      "stimulus_type": "chart",
+      "stimulus": {
+        "title": "Reaction Rate Study",
+        "x_label": "Time (s)",
+        "y_label": "Concentration",
+        "points": [
+          [
+            0,
+            13.399999999999999
+          ],
+          [
+            1,
+            10.499999999999998
+          ],
+          [
+            2,
+            7.699999999999998
+          ],
+          [
+            3,
+            7.499999999999998
+          ],
+          [
+            4,
+            12.999999999999998
+          ],
+          [
+            5,
+            18.5
+          ]
+        ]
+      },
+      "question": "Which factor is most likely a confounding variable in this study?",
+      "choices": {
+        "A": "The dependent variable itself",
+        "B": "The title of the experiment",
+        "C": "The units used to record data",
+        "D": "Selection differences in samples assigned to groups"
+      },
+      "answer": "D",
+      "explanation": "Confounding variables are uncontrolled factors linked to both the independent and dependent variables.",
+      "domain": "ACT Science"
+    },
+    {
+      "id": "ACTSCI-HARD-043",
+      "type": "mcq",
+      "difficulty_level": 10,
+      "difficulty_bucket": "L9",
+      "stimulus_type": "chart",
+      "stimulus": {
+        "title": "Reaction Rate Study",
+        "x_label": "Time (s)",
+        "y_label": "Concentration",
+        "points": [
+          [
+            0,
+            30.7
+          ],
+          [
+            1,
+            29.9
+          ],
+          [
+            2,
+            27.5
+          ],
+          [
+            3,
+            29.2
+          ],
+          [
+            4,
+            27.0
+          ],
+          [
+            5,
+            30.6
+          ]
+        ]
+      },
+      "question": "Based on the stimulus, which conclusion is most supported?",
+      "choices": {
+        "A": "Results suggest an effect that should be tested with additional trials.",
+        "B": "The data prove causation in all contexts with no uncertainty.",
+        "C": "The results eliminate the need for controls.",
+        "D": "The relationship must be negative in all future trials."
+      },
+      "answer": "A",
+      "explanation": "Hard ACT Science items reward cautious inference: supported trend + attention to uncertainty/controls.",
+      "domain": "ACT Science"
+    },
+    {
+      "id": "ACTSCI-HARD-044",
+      "type": "mcq",
+      "difficulty_level": 10,
+      "difficulty_bucket": "L9",
+      "stimulus_type": "text",
+      "stimulus": "A study titled 'Enzyme Activity Test' reports controlled trials and notes that measurement uncertainty may affect conclusions.",
+      "question": "Which change would most improve the experimental design?",
+      "choices": {
+        "A": "Change multiple variables at once to speed up results.",
+        "B": "Record only the most extreme measurements.",
+        "C": "Increase the number of trials and keep all variables constant except the independent variable.",
+        "D": "Remove the control condition to simplify the study."
+      },
+      "answer": "C",
+      "explanation": "Reliability improves with replication and controlled variables.",
+      "domain": "ACT Science"
+    },
+    {
+      "id": "ACTSCI-HARD-045",
+      "type": "mcq",
+      "difficulty_level": 8,
+      "difficulty_bucket": "L8",
+      "stimulus_type": "text",
+      "stimulus": "A study titled 'Enzyme Activity Test' reports controlled trials and notes that measurement uncertainty may affect conclusions.",
+      "question": "If the observed trend continues, which prediction is most reasonable?",
+      "choices": {
+        "A": "The dependent variable will reverse direction with certainty.",
+        "B": "Future results will be identical in every trial.",
+        "C": "The dependent variable would likely continue changing in the same direction, though the exact value is uncertain.",
+        "D": "The dependent variable will remain exactly constant."
+      },
+      "answer": "C",
+      "explanation": "Extrapolation uses the direction of the trend but avoids certainty about exact values.",
+      "domain": "ACT Science"
+    },
+    {
+      "id": "ACTSCI-HARD-046",
+      "type": "mcq",
+      "difficulty_level": 10,
+      "difficulty_bucket": "L9",
+      "stimulus_type": "text",
+      "stimulus": "A study titled 'Water Quality Survey' reports controlled trials and notes that measurement uncertainty may affect conclusions.",
+      "question": "Which change would most improve the experimental design?",
+      "choices": {
+        "A": "Increase the number of trials and keep all variables constant except the independent variable.",
+        "B": "Change multiple variables at once to speed up results.",
+        "C": "Remove the control condition to simplify the study.",
+        "D": "Record only the most extreme measurements."
+      },
+      "answer": "A",
+      "explanation": "Reliability improves with replication and controlled variables.",
+      "domain": "ACT Science"
+    },
+    {
+      "id": "ACTSCI-HARD-047",
+      "type": "mcq",
+      "difficulty_level": 9,
+      "difficulty_bucket": "L9",
+      "stimulus_type": "chart",
+      "stimulus": {
+        "title": "Reaction Rate Study",
+        "x_label": "Time (s)",
+        "y_label": "Concentration",
+        "points": [
+          [
+            0,
+            20.7
+          ],
+          [
+            1,
+            25.9
+          ],
+          [
+            2,
+            30.099999999999998
+          ],
+          [
+            3,
+            28.799999999999997
+          ],
+          [
+            4,
+            32.4
+          ],
+          [
+            5,
+            38.199999999999996
+          ]
+        ]
+      },
+      "question": "Which change would most improve the experimental design?",
+      "choices": {
+        "A": "Change multiple variables at once to speed up results.",
+        "B": "Increase the number of trials and keep all variables constant except the independent variable.",
+        "C": "Remove the control condition to simplify the study.",
+        "D": "Record only the most extreme measurements."
+      },
+      "answer": "B",
+      "explanation": "Reliability improves with replication and controlled variables.",
+      "domain": "ACT Science"
+    },
+    {
+      "id": "ACTSCI-HARD-048",
+      "type": "mcq",
+      "difficulty_level": 10,
+      "difficulty_bucket": "L10",
+      "stimulus_type": "table",
+      "stimulus": {
+        "title": "Plant Growth Experiment",
+        "columns": [
+          "Group",
+          "Light (hours/day)",
+          "Growth (cm)"
+        ],
+        "rows": [
+          [
+            "A",
+            "6",
+            "2.8"
+          ],
+          [
+            "B",
+            "10",
+            "4.5"
+          ],
+          [
+            "C",
+            "14",
+            "6.9"
+          ]
+        ]
+      },
+      "question": "Which factor is most likely a confounding variable in this study?",
+      "choices": {
+        "A": "The title of the experiment",
+        "B": "Differences in measurement technique between groups",
+        "C": "The dependent variable itself",
+        "D": "The units used to record data"
+      },
+      "answer": "B",
+      "explanation": "Confounding variables are uncontrolled factors linked to both the independent and dependent variables.",
+      "domain": "ACT Science"
+    },
+    {
+      "id": "ACTSCI-HARD-049",
+      "type": "mcq",
+      "difficulty_level": 8,
+      "difficulty_bucket": "L9",
+      "stimulus_type": "chart",
+      "stimulus": {
+        "title": "Reaction Rate Study",
+        "x_label": "Time (s)",
+        "y_label": "Concentration",
+        "points": [
+          [
+            0,
+            16.1
+          ],
+          [
+            1,
+            17.3
+          ],
+          [
+            2,
+            20.400000000000002
+          ],
+          [
+            3,
+            23.900000000000002
+          ],
+          [
+            4,
+            25.700000000000003
+          ],
+          [
+            5,
+            25.300000000000004
+          ]
+        ]
+      },
+      "question": "Based on the stimulus, which conclusion is most supported?",
+      "choices": {
+        "A": "The data prove causation in all contexts with no uncertainty.",
+        "B": "The results eliminate the need for controls.",
+        "C": "The relationship must be negative in all future trials.",
+        "D": "A change in the independent variable is associated with a measurable change in the dependent variable."
+      },
+      "answer": "D",
+      "explanation": "Hard ACT Science items reward cautious inference: supported trend + attention to uncertainty/controls.",
+      "domain": "ACT Science"
+    },
+    {
+      "id": "ACTSCI-HARD-050",
+      "type": "mcq",
+      "difficulty_level": 10,
+      "difficulty_bucket": "L10",
+      "stimulus_type": "text",
+      "stimulus": "A study titled 'Enzyme Activity Test' reports controlled trials and notes that measurement uncertainty may affect conclusions.",
+      "question": "If the observed trend continues, which prediction is most reasonable?",
+      "choices": {
+        "A": "The dependent variable would likely continue changing in the same direction, though the exact value is uncertain.",
+        "B": "The dependent variable will reverse direction with certainty.",
+        "C": "Future results will be identical in every trial.",
+        "D": "The dependent variable will remain exactly constant."
+      },
+      "answer": "A",
+      "explanation": "Extrapolation uses the direction of the trend but avoids certainty about exact values.",
+      "domain": "ACT Science"
+    },
+    {
+      "id": "ACTSCI-HARD-051",
+      "type": "mcq",
+      "difficulty_level": 9,
+      "difficulty_bucket": "L8",
+      "stimulus_type": "table",
+      "stimulus": {
+        "title": "Plant Growth Experiment",
+        "columns": [
+          "Group",
+          "Light (hours/day)",
+          "Growth (cm)"
+        ],
+        "rows": [
+          [
+            "A",
+            "6",
+            "4.4"
+          ],
+          [
+            "B",
+            "10",
+            "5.5"
+          ],
+          [
+            "C",
+            "14",
+            "7.0"
+          ]
+        ]
+      },
+      "question": "If the observed trend continues, which prediction is most reasonable?",
+      "choices": {
+        "A": "The dependent variable will remain exactly constant.",
+        "B": "Future results will be identical in every trial.",
+        "C": "The dependent variable would likely continue changing in the same direction, though the exact value is uncertain.",
+        "D": "The dependent variable will reverse direction with certainty."
+      },
+      "answer": "C",
+      "explanation": "Extrapolation uses the direction of the trend but avoids certainty about exact values.",
+      "domain": "ACT Science"
+    },
+    {
+      "id": "ACTSCI-HARD-052",
+      "type": "mcq",
+      "difficulty_level": 10,
+      "difficulty_bucket": "L8",
+      "stimulus_type": "table",
+      "stimulus": {
+        "title": "Plant Growth Experiment",
+        "columns": [
+          "Group",
+          "Light (hours/day)",
+          "Growth (cm)"
+        ],
+        "rows": [
+          [
+            "A",
+            "6",
+            "3.1"
+          ],
+          [
+            "B",
+            "10",
+            "4.4"
+          ],
+          [
+            "C",
+            "14",
+            "10.6"
+          ]
+        ]
+      },
+      "question": "If the observed trend continues, which prediction is most reasonable?",
+      "choices": {
+        "A": "The dependent variable will reverse direction with certainty.",
+        "B": "Future results will be identical in every trial.",
+        "C": "The dependent variable will remain exactly constant.",
+        "D": "The dependent variable would likely continue changing in the same direction, though the exact value is uncertain."
+      },
+      "answer": "D",
+      "explanation": "Extrapolation uses the direction of the trend but avoids certainty about exact values.",
+      "domain": "ACT Science"
+    },
+    {
+      "id": "ACTSCI-HARD-053",
+      "type": "mcq",
+      "difficulty_level": 10,
+      "difficulty_bucket": "L10",
+      "stimulus_type": "chart",
+      "stimulus": {
+        "title": "Reaction Rate Study",
+        "x_label": "Time (s)",
+        "y_label": "Concentration",
+        "points": [
+          [
+            0,
+            15.799999999999999
+          ],
+          [
+            1,
+            19.099999999999998
+          ],
+          [
+            2,
+            16.7
+          ],
+          [
+            3,
+            21.1
+          ],
+          [
+            4,
+            26.1
+          ],
+          [
+            5,
+            29.8
+          ]
+        ]
+      },
+      "question": "Which factor is most likely a confounding variable in this study?",
+      "choices": {
+        "A": "The units used to record data",
+        "B": "The title of the experiment",
+        "C": "The dependent variable itself",
+        "D": "A variable that changes with the independent variable and also affects the dependent variable"
+      },
+      "answer": "D",
+      "explanation": "Confounding variables are uncontrolled factors linked to both the independent and dependent variables.",
+      "domain": "ACT Science"
+    },
+    {
+      "id": "ACTSCI-HARD-054",
+      "type": "mcq",
+      "difficulty_level": 8,
+      "difficulty_bucket": "L8",
+      "stimulus_type": "text",
+      "stimulus": "A study titled 'Planet Temperature Model' reports controlled trials and notes that measurement uncertainty may affect conclusions.",
+      "question": "Which change would most improve the experimental design?",
+      "choices": {
+        "A": "Record only the most extreme measurements.",
+        "B": "Change multiple variables at once to speed up results.",
+        "C": "Remove the control condition to simplify the study.",
+        "D": "Increase the number of trials and keep all variables constant except the independent variable."
+      },
+      "answer": "D",
+      "explanation": "Reliability improves with replication and controlled variables.",
+      "domain": "ACT Science"
+    },
+    {
+      "id": "ACTSCI-HARD-055",
+      "type": "mcq",
+      "difficulty_level": 9,
+      "difficulty_bucket": "L8",
+      "stimulus_type": "text",
+      "stimulus": "A study titled 'Planet Temperature Model' reports controlled trials and notes that measurement uncertainty may affect conclusions.",
+      "question": "Which factor is most likely a confounding variable in this study?",
+      "choices": {
+        "A": "The dependent variable itself",
+        "B": "The title of the experiment",
+        "C": "Selection differences in samples assigned to groups",
+        "D": "The units used to record data"
+      },
+      "answer": "C",
+      "explanation": "Confounding variables are uncontrolled factors linked to both the independent and dependent variables.",
+      "domain": "ACT Science"
+    },
+    {
+      "id": "ACTSCI-HARD-056",
+      "type": "mcq",
+      "difficulty_level": 8,
+      "difficulty_bucket": "L10",
+      "stimulus_type": "chart",
+      "stimulus": {
+        "title": "Reaction Rate Study",
+        "x_label": "Time (s)",
+        "y_label": "Concentration",
+        "points": [
+          [
+            0,
+            16.1
+          ],
+          [
+            1,
+            16.6
+          ],
+          [
+            2,
+            18.900000000000002
+          ],
+          [
+            3,
+            20.1
+          ],
+          [
+            4,
+            20.400000000000002
+          ],
+          [
+            5,
+            19.000000000000004
+          ]
+        ]
+      },
+      "question": "Which factor is most likely a confounding variable in this study?",
+      "choices": {
+        "A": "The units used to record data",
+        "B": "The title of the experiment",
+        "C": "The dependent variable itself",
+        "D": "Uncontrolled environmental conditions that vary across trials"
+      },
+      "answer": "D",
+      "explanation": "Confounding variables are uncontrolled factors linked to both the independent and dependent variables.",
+      "domain": "ACT Science"
+    },
+    {
+      "id": "ACTSCI-HARD-057",
+      "type": "mcq",
+      "difficulty_level": 8,
+      "difficulty_bucket": "L8",
+      "stimulus_type": "text",
+      "stimulus": "A study titled 'Water Quality Survey' reports controlled trials and notes that measurement uncertainty may affect conclusions.",
+      "question": "If the observed trend continues, which prediction is most reasonable?",
+      "choices": {
+        "A": "Future results will be identical in every trial.",
+        "B": "The dependent variable would likely continue changing in the same direction, though the exact value is uncertain.",
+        "C": "The dependent variable will reverse direction with certainty.",
+        "D": "The dependent variable will remain exactly constant."
+      },
+      "answer": "B",
+      "explanation": "Extrapolation uses the direction of the trend but avoids certainty about exact values.",
+      "domain": "ACT Science"
+    },
+    {
+      "id": "ACTSCI-HARD-058",
+      "type": "mcq",
+      "difficulty_level": 8,
+      "difficulty_bucket": "L8",
+      "stimulus_type": "text",
+      "stimulus": "A study titled 'Water Quality Survey' reports controlled trials and notes that measurement uncertainty may affect conclusions.",
+      "question": "If the observed trend continues, which prediction is most reasonable?",
+      "choices": {
+        "A": "The dependent variable will reverse direction with certainty.",
+        "B": "Future results will be identical in every trial.",
+        "C": "The dependent variable will remain exactly constant.",
+        "D": "The dependent variable would likely continue changing in the same direction, though the exact value is uncertain."
+      },
+      "answer": "D",
+      "explanation": "Extrapolation uses the direction of the trend but avoids certainty about exact values.",
+      "domain": "ACT Science"
+    },
+    {
+      "id": "ACTSCI-HARD-059",
+      "type": "mcq",
+      "difficulty_level": 9,
+      "difficulty_bucket": "L9",
+      "stimulus_type": "table",
+      "stimulus": {
+        "title": "Plant Growth Experiment",
+        "columns": [
+          "Group",
+          "Light (hours/day)",
+          "Growth (cm)"
+        ],
+        "rows": [
+          [
+            "A",
+            "6",
+            "4.5"
+          ],
+          [
+            "B",
+            "10",
+            "4.2"
+          ],
+          [
+            "C",
+            "14",
+            "6.4"
+          ]
+        ]
+      },
+      "question": "Which change would most improve the experimental design?",
+      "choices": {
+        "A": "Change multiple variables at once to speed up results.",
+        "B": "Record only the most extreme measurements.",
+        "C": "Increase the number of trials and keep all variables constant except the independent variable.",
+        "D": "Remove the control condition to simplify the study."
+      },
+      "answer": "C",
+      "explanation": "Reliability improves with replication and controlled variables.",
+      "domain": "ACT Science"
+    },
+    {
+      "id": "ACTSCI-HARD-060",
+      "type": "mcq",
+      "difficulty_level": 10,
+      "difficulty_bucket": "L8",
+      "stimulus_type": "table",
+      "stimulus": {
+        "title": "Plant Growth Experiment",
+        "columns": [
+          "Group",
+          "Light (hours/day)",
+          "Growth (cm)"
+        ],
+        "rows": [
+          [
+            "A",
+            "6",
+            "4.4"
+          ],
+          [
+            "B",
+            "10",
+            "4.9"
+          ],
+          [
+            "C",
+            "14",
+            "6.6"
+          ]
+        ]
+      },
+      "question": "Which factor is most likely a confounding variable in this study?",
+      "choices": {
+        "A": "The dependent variable itself",
+        "B": "The units used to record data",
+        "C": "The title of the experiment",
+        "D": "Selection differences in samples assigned to groups"
+      },
+      "answer": "D",
+      "explanation": "Confounding variables are uncontrolled factors linked to both the independent and dependent variables.",
+      "domain": "ACT Science"
+    },
+    {
+      "id": "ACTSCI-HARD-061",
+      "type": "mcq",
+      "difficulty_level": 9,
+      "difficulty_bucket": "L9",
+      "stimulus_type": "text",
+      "stimulus": "A study titled 'Planet Temperature Model' reports controlled trials and notes that measurement uncertainty may affect conclusions.",
+      "question": "If the observed trend continues, which prediction is most reasonable?",
+      "choices": {
+        "A": "The dependent variable will remain exactly constant.",
+        "B": "Future results will be identical in every trial.",
+        "C": "The dependent variable will reverse direction with certainty.",
+        "D": "The dependent variable would likely continue changing in the same direction, though the exact value is uncertain."
+      },
+      "answer": "D",
+      "explanation": "Extrapolation uses the direction of the trend but avoids certainty about exact values.",
+      "domain": "ACT Science"
+    },
+    {
+      "id": "ACTSCI-HARD-062",
+      "type": "mcq",
+      "difficulty_level": 10,
+      "difficulty_bucket": "L9",
+      "stimulus_type": "chart",
+      "stimulus": {
+        "title": "Reaction Rate Study",
+        "x_label": "Time (s)",
+        "y_label": "Concentration",
+        "points": [
+          [
+            0,
+            18.9
+          ],
+          [
+            1,
+            23.9
+          ],
+          [
+            2,
+            21.2
+          ],
+          [
+            3,
+            18.2
+          ],
+          [
+            4,
+            22.4
+          ],
+          [
+            5,
+            27.599999999999998
+          ]
+        ]
+      },
+      "question": "Based on the stimulus, which conclusion is most supported?",
+      "choices": {
+        "A": "The data prove causation in all contexts with no uncertainty.",
+        "B": "The results eliminate the need for controls.",
+        "C": "The relationship must be negative in all future trials.",
+        "D": "The pattern suggests a positive relationship, though uncertainty limits precision."
+      },
+      "answer": "D",
+      "explanation": "Hard ACT Science items reward cautious inference: supported trend + attention to uncertainty/controls.",
+      "domain": "ACT Science"
+    },
+    {
+      "id": "ACTSCI-HARD-063",
+      "type": "mcq",
+      "difficulty_level": 8,
+      "difficulty_bucket": "L10",
+      "stimulus_type": "text",
+      "stimulus": "A study titled 'Enzyme Activity Test' reports controlled trials and notes that measurement uncertainty may affect conclusions.",
+      "question": "Which change would most improve the experimental design?",
+      "choices": {
+        "A": "Remove the control condition to simplify the study.",
+        "B": "Increase the number of trials and keep all variables constant except the independent variable.",
+        "C": "Record only the most extreme measurements.",
+        "D": "Change multiple variables at once to speed up results."
+      },
+      "answer": "B",
+      "explanation": "Reliability improves with replication and controlled variables.",
+      "domain": "ACT Science"
+    },
+    {
+      "id": "ACTSCI-HARD-064",
+      "type": "mcq",
+      "difficulty_level": 9,
+      "difficulty_bucket": "L10",
+      "stimulus_type": "text",
+      "stimulus": "A study titled 'Enzyme Activity Test' reports controlled trials and notes that measurement uncertainty may affect conclusions.",
+      "question": "Which factor is most likely a confounding variable in this study?",
+      "choices": {
+        "A": "The title of the experiment",
+        "B": "The units used to record data",
+        "C": "The dependent variable itself",
+        "D": "Uncontrolled environmental conditions that vary across trials"
+      },
+      "answer": "D",
+      "explanation": "Confounding variables are uncontrolled factors linked to both the independent and dependent variables.",
+      "domain": "ACT Science"
+    },
+    {
+      "id": "ACTSCI-HARD-065",
+      "type": "mcq",
+      "difficulty_level": 9,
+      "difficulty_bucket": "L9",
+      "stimulus_type": "text",
+      "stimulus": "A study titled 'Planet Temperature Model' reports controlled trials and notes that measurement uncertainty may affect conclusions.",
+      "question": "Which change would most improve the experimental design?",
+      "choices": {
+        "A": "Increase the number of trials and keep all variables constant except the independent variable.",
+        "B": "Record only the most extreme measurements.",
+        "C": "Remove the control condition to simplify the study.",
+        "D": "Change multiple variables at once to speed up results."
+      },
+      "answer": "A",
+      "explanation": "Reliability improves with replication and controlled variables.",
+      "domain": "ACT Science"
+    },
+    {
+      "id": "ACTSCI-HARD-066",
+      "type": "mcq",
+      "difficulty_level": 10,
+      "difficulty_bucket": "L10",
+      "stimulus_type": "text",
+      "stimulus": "A study titled 'Planet Temperature Model' reports controlled trials and notes that measurement uncertainty may affect conclusions.",
+      "question": "Which factor is most likely a confounding variable in this study?",
+      "choices": {
+        "A": "The title of the experiment",
+        "B": "The units used to record data",
+        "C": "The dependent variable itself",
+        "D": "Uncontrolled environmental conditions that vary across trials"
+      },
+      "answer": "D",
+      "explanation": "Confounding variables are uncontrolled factors linked to both the independent and dependent variables.",
+      "domain": "ACT Science"
+    },
+    {
+      "id": "ACTSCI-HARD-067",
+      "type": "mcq",
+      "difficulty_level": 9,
+      "difficulty_bucket": "L10",
+      "stimulus_type": "chart",
+      "stimulus": {
+        "title": "Reaction Rate Study",
+        "x_label": "Time (s)",
+        "y_label": "Concentration",
+        "points": [
+          [
+            0,
+            11.6
+          ],
+          [
+            1,
+            16.4
+          ],
+          [
+            2,
+            21.5
+          ],
+          [
+            3,
+            27.3
+          ],
+          [
+            4,
+            33.2
+          ],
+          [
+            5,
+            39.1
+          ]
+        ]
+      },
+      "question": "Which factor is most likely a confounding variable in this study?",
+      "choices": {
+        "A": "The title of the experiment",
+        "B": "Uncontrolled environmental conditions that vary across trials",
+        "C": "The dependent variable itself",
+        "D": "The units used to record data"
+      },
+      "answer": "B",
+      "explanation": "Confounding variables are uncontrolled factors linked to both the independent and dependent variables.",
+      "domain": "ACT Science"
+    },
+    {
+      "id": "ACTSCI-HARD-068",
+      "type": "mcq",
+      "difficulty_level": 10,
+      "difficulty_bucket": "L10",
+      "stimulus_type": "text",
+      "stimulus": "A study titled 'Planet Temperature Model' reports controlled trials and notes that measurement uncertainty may affect conclusions.",
+      "question": "If the observed trend continues, which prediction is most reasonable?",
+      "choices": {
+        "A": "The dependent variable will reverse direction with certainty.",
+        "B": "The dependent variable would likely continue changing in the same direction, though the exact value is uncertain.",
+        "C": "The dependent variable will remain exactly constant.",
+        "D": "Future results will be identical in every trial."
+      },
+      "answer": "B",
+      "explanation": "Extrapolation uses the direction of the trend but avoids certainty about exact values.",
+      "domain": "ACT Science"
+    },
+    {
+      "id": "ACTSCI-HARD-069",
+      "type": "mcq",
+      "difficulty_level": 8,
+      "difficulty_bucket": "L9",
+      "stimulus_type": "text",
+      "stimulus": "A study titled 'Enzyme Activity Test' reports controlled trials and notes that measurement uncertainty may affect conclusions.",
+      "question": "Based on the stimulus, which conclusion is most supported?",
+      "choices": {
+        "A": "Results suggest an effect that should be tested with additional trials.",
+        "B": "The data prove causation in all contexts with no uncertainty.",
+        "C": "The relationship must be negative in all future trials.",
+        "D": "The results eliminate the need for controls."
+      },
+      "answer": "A",
+      "explanation": "Hard ACT Science items reward cautious inference: supported trend + attention to uncertainty/controls.",
+      "domain": "ACT Science"
+    },
+    {
+      "id": "ACTSCI-HARD-070",
+      "type": "mcq",
+      "difficulty_level": 10,
+      "difficulty_bucket": "L10",
+      "stimulus_type": "text",
+      "stimulus": "A study titled 'Planet Temperature Model' reports controlled trials and notes that measurement uncertainty may affect conclusions.",
+      "question": "If the observed trend continues, which prediction is most reasonable?",
+      "choices": {
+        "A": "The dependent variable will reverse direction with certainty.",
+        "B": "The dependent variable will remain exactly constant.",
+        "C": "The dependent variable would likely continue changing in the same direction, though the exact value is uncertain.",
+        "D": "Future results will be identical in every trial."
+      },
+      "answer": "C",
+      "explanation": "Extrapolation uses the direction of the trend but avoids certainty about exact values.",
+      "domain": "ACT Science"
+    },
+    {
+      "id": "ACTSCI-HARD-071",
+      "type": "mcq",
+      "difficulty_level": 10,
+      "difficulty_bucket": "L10",
+      "stimulus_type": "text",
+      "stimulus": "A study titled 'Enzyme Activity Test' reports controlled trials and notes that measurement uncertainty may affect conclusions.",
+      "question": "Which factor is most likely a confounding variable in this study?",
+      "choices": {
+        "A": "The title of the experiment",
+        "B": "Selection differences in samples assigned to groups",
+        "C": "The dependent variable itself",
+        "D": "The units used to record data"
+      },
+      "answer": "B",
+      "explanation": "Confounding variables are uncontrolled factors linked to both the independent and dependent variables.",
+      "domain": "ACT Science"
+    },
+    {
+      "id": "ACTSCI-HARD-072",
+      "type": "mcq",
+      "difficulty_level": 8,
+      "difficulty_bucket": "L8",
+      "stimulus_type": "text",
+      "stimulus": "A study titled 'Water Quality Survey' reports controlled trials and notes that measurement uncertainty may affect conclusions.",
+      "question": "Based on the stimulus, which conclusion is most supported?",
+      "choices": {
+        "A": "The results eliminate the need for controls.",
+        "B": "The relationship must be negative in all future trials.",
+        "C": "The data are consistent with a trend rather than random variation alone.",
+        "D": "The data prove causation in all contexts with no uncertainty."
+      },
+      "answer": "C",
+      "explanation": "Hard ACT Science items reward cautious inference: supported trend + attention to uncertainty/controls.",
+      "domain": "ACT Science"
+    },
+    {
+      "id": "ACTSCI-HARD-073",
+      "type": "mcq",
+      "difficulty_level": 9,
+      "difficulty_bucket": "L9",
+      "stimulus_type": "text",
+      "stimulus": "A study titled 'Water Quality Survey' reports controlled trials and notes that measurement uncertainty may affect conclusions.",
+      "question": "Which factor is most likely a confounding variable in this study?",
+      "choices": {
+        "A": "The dependent variable itself",
+        "B": "The title of the experiment",
+        "C": "Selection differences in samples assigned to groups",
+        "D": "The units used to record data"
+      },
+      "answer": "C",
+      "explanation": "Confounding variables are uncontrolled factors linked to both the independent and dependent variables.",
+      "domain": "ACT Science"
+    },
+    {
+      "id": "ACTSCI-HARD-074",
+      "type": "mcq",
+      "difficulty_level": 8,
+      "difficulty_bucket": "L8",
+      "stimulus_type": "table",
+      "stimulus": {
+        "title": "Plant Growth Experiment",
+        "columns": [
+          "Group",
+          "Light (hours/day)",
+          "Growth (cm)"
+        ],
+        "rows": [
+          [
+            "A",
+            "6",
+            "2.8"
+          ],
+          [
+            "B",
+            "10",
+            "5.7"
+          ],
+          [
+            "C",
+            "14",
+            "6.7"
+          ]
+        ]
+      },
+      "question": "Which factor is most likely a confounding variable in this study?",
+      "choices": {
+        "A": "The dependent variable itself",
+        "B": "The units used to record data",
+        "C": "The title of the experiment",
+        "D": "Uncontrolled environmental conditions that vary across trials"
+      },
+      "answer": "D",
+      "explanation": "Confounding variables are uncontrolled factors linked to both the independent and dependent variables.",
+      "domain": "ACT Science"
+    },
+    {
+      "id": "ACTSCI-HARD-075",
+      "type": "mcq",
+      "difficulty_level": 8,
+      "difficulty_bucket": "L10",
+      "stimulus_type": "text",
+      "stimulus": "A study titled 'Planet Temperature Model' reports controlled trials and notes that measurement uncertainty may affect conclusions.",
+      "question": "Which change would most improve the experimental design?",
+      "choices": {
+        "A": "Remove the control condition to simplify the study.",
+        "B": "Change multiple variables at once to speed up results.",
+        "C": "Increase the number of trials and keep all variables constant except the independent variable.",
+        "D": "Record only the most extreme measurements."
+      },
+      "answer": "C",
+      "explanation": "Reliability improves with replication and controlled variables.",
+      "domain": "ACT Science"
+    },
+    {
+      "id": "ACTSCI-HARD-076",
+      "type": "mcq",
+      "difficulty_level": 10,
+      "difficulty_bucket": "L8",
+      "stimulus_type": "table",
+      "stimulus": {
+        "title": "Plant Growth Experiment",
+        "columns": [
+          "Group",
+          "Light (hours/day)",
+          "Growth (cm)"
+        ],
+        "rows": [
+          [
+            "A",
+            "6",
+            "2.9"
+          ],
+          [
+            "B",
+            "10",
+            "5.3"
+          ],
+          [
+            "C",
+            "14",
+            "8.1"
+          ]
+        ]
+      },
+      "question": "If the observed trend continues, which prediction is most reasonable?",
+      "choices": {
+        "A": "The dependent variable will reverse direction with certainty.",
+        "B": "The dependent variable would likely continue changing in the same direction, though the exact value is uncertain.",
+        "C": "The dependent variable will remain exactly constant.",
+        "D": "Future results will be identical in every trial."
+      },
+      "answer": "B",
+      "explanation": "Extrapolation uses the direction of the trend but avoids certainty about exact values.",
+      "domain": "ACT Science"
+    },
+    {
+      "id": "ACTSCI-HARD-077",
+      "type": "mcq",
+      "difficulty_level": 9,
+      "difficulty_bucket": "L10",
+      "stimulus_type": "text",
+      "stimulus": "A study titled 'Water Quality Survey' reports controlled trials and notes that measurement uncertainty may affect conclusions.",
+      "question": "Which factor is most likely a confounding variable in this study?",
+      "choices": {
+        "A": "The dependent variable itself",
+        "B": "The units used to record data",
+        "C": "The title of the experiment",
+        "D": "A variable that changes with the independent variable and also affects the dependent variable"
+      },
+      "answer": "D",
+      "explanation": "Confounding variables are uncontrolled factors linked to both the independent and dependent variables.",
+      "domain": "ACT Science"
+    },
+    {
+      "id": "ACTSCI-HARD-078",
+      "type": "mcq",
+      "difficulty_level": 10,
+      "difficulty_bucket": "L8",
+      "stimulus_type": "text",
+      "stimulus": "A study titled 'Enzyme Activity Test' reports controlled trials and notes that measurement uncertainty may affect conclusions.",
+      "question": "If the observed trend continues, which prediction is most reasonable?",
+      "choices": {
+        "A": "Future results will be identical in every trial.",
+        "B": "The dependent variable will remain exactly constant.",
+        "C": "The dependent variable will reverse direction with certainty.",
+        "D": "The dependent variable would likely continue changing in the same direction, though the exact value is uncertain."
+      },
+      "answer": "D",
+      "explanation": "Extrapolation uses the direction of the trend but avoids certainty about exact values.",
+      "domain": "ACT Science"
+    },
+    {
+      "id": "ACTSCI-HARD-079",
+      "type": "mcq",
+      "difficulty_level": 8,
+      "difficulty_bucket": "L8",
+      "stimulus_type": "table",
+      "stimulus": {
+        "title": "Plant Growth Experiment",
+        "columns": [
+          "Group",
+          "Light (hours/day)",
+          "Growth (cm)"
+        ],
+        "rows": [
+          [
+            "A",
+            "6",
+            "2.6"
+          ],
+          [
+            "B",
+            "10",
+            "4.1"
+          ],
+          [
+            "C",
+            "14",
+            "8.8"
+          ]
+        ]
+      },
+      "question": "If the observed trend continues, which prediction is most reasonable?",
+      "choices": {
+        "A": "Future results will be identical in every trial.",
+        "B": "The dependent variable would likely continue changing in the same direction, though the exact value is uncertain.",
+        "C": "The dependent variable will remain exactly constant.",
+        "D": "The dependent variable will reverse direction with certainty."
+      },
+      "answer": "B",
+      "explanation": "Extrapolation uses the direction of the trend but avoids certainty about exact values.",
+      "domain": "ACT Science"
+    },
+    {
+      "id": "ACTSCI-HARD-080",
+      "type": "mcq",
+      "difficulty_level": 9,
+      "difficulty_bucket": "L10",
+      "stimulus_type": "text",
+      "stimulus": "A study titled 'Enzyme Activity Test' reports controlled trials and notes that measurement uncertainty may affect conclusions.",
+      "question": "Based on the stimulus, which conclusion is most supported?",
+      "choices": {
+        "A": "The data prove causation in all contexts with no uncertainty.",
+        "B": "The data are consistent with a trend rather than random variation alone.",
+        "C": "The results eliminate the need for controls.",
+        "D": "The relationship must be negative in all future trials."
+      },
+      "answer": "B",
+      "explanation": "Hard ACT Science items reward cautious inference: supported trend + attention to uncertainty/controls.",
+      "domain": "ACT Science"
+    },
+    {
+      "id": "ACTSCI-HARD-081",
+      "type": "mcq",
+      "difficulty_level": 8,
+      "difficulty_bucket": "L9",
+      "stimulus_type": "text",
+      "stimulus": "A study titled 'Enzyme Activity Test' reports controlled trials and notes that measurement uncertainty may affect conclusions.",
+      "question": "If the observed trend continues, which prediction is most reasonable?",
+      "choices": {
+        "A": "The dependent variable will remain exactly constant.",
+        "B": "Future results will be identical in every trial.",
+        "C": "The dependent variable would likely continue changing in the same direction, though the exact value is uncertain.",
+        "D": "The dependent variable will reverse direction with certainty."
+      },
+      "answer": "C",
+      "explanation": "Extrapolation uses the direction of the trend but avoids certainty about exact values.",
+      "domain": "ACT Science"
+    },
+    {
+      "id": "ACTSCI-HARD-082",
+      "type": "mcq",
+      "difficulty_level": 9,
+      "difficulty_bucket": "L10",
+      "stimulus_type": "text",
+      "stimulus": "A study titled 'Enzyme Activity Test' reports controlled trials and notes that measurement uncertainty may affect conclusions.",
+      "question": "Which change would most improve the experimental design?",
+      "choices": {
+        "A": "Change multiple variables at once to speed up results.",
+        "B": "Record only the most extreme measurements.",
+        "C": "Increase the number of trials and keep all variables constant except the independent variable.",
+        "D": "Remove the control condition to simplify the study."
+      },
+      "answer": "C",
+      "explanation": "Reliability improves with replication and controlled variables.",
+      "domain": "ACT Science"
+    },
+    {
+      "id": "ACTSCI-HARD-083",
+      "type": "mcq",
+      "difficulty_level": 8,
+      "difficulty_bucket": "L10",
+      "stimulus_type": "text",
+      "stimulus": "A study titled 'Water Quality Survey' reports controlled trials and notes that measurement uncertainty may affect conclusions.",
+      "question": "Which factor is most likely a confounding variable in this study?",
+      "choices": {
+        "A": "The dependent variable itself",
+        "B": "Differences in measurement technique between groups",
+        "C": "The units used to record data",
+        "D": "The title of the experiment"
+      },
+      "answer": "B",
+      "explanation": "Confounding variables are uncontrolled factors linked to both the independent and dependent variables.",
+      "domain": "ACT Science"
+    },
+    {
+      "id": "ACTSCI-HARD-084",
+      "type": "mcq",
+      "difficulty_level": 10,
+      "difficulty_bucket": "L10",
+      "stimulus_type": "table",
+      "stimulus": {
+        "title": "Plant Growth Experiment",
+        "columns": [
+          "Group",
+          "Light (hours/day)",
+          "Growth (cm)"
+        ],
+        "rows": [
+          [
+            "A",
+            "6",
+            "4.1"
+          ],
+          [
+            "B",
+            "10",
+            "4.0"
+          ],
+          [
+            "C",
+            "14",
+            "7.2"
+          ]
+        ]
+      },
+      "question": "Which factor is most likely a confounding variable in this study?",
+      "choices": {
+        "A": "Differences in measurement technique between groups",
+        "B": "The dependent variable itself",
+        "C": "The title of the experiment",
+        "D": "The units used to record data"
+      },
+      "answer": "A",
+      "explanation": "Confounding variables are uncontrolled factors linked to both the independent and dependent variables.",
+      "domain": "ACT Science"
+    },
+    {
+      "id": "ACTSCI-HARD-085",
+      "type": "mcq",
+      "difficulty_level": 8,
+      "difficulty_bucket": "L9",
+      "stimulus_type": "chart",
+      "stimulus": {
+        "title": "Reaction Rate Study",
+        "x_label": "Time (s)",
+        "y_label": "Concentration",
+        "points": [
+          [
+            0,
+            15.1
+          ],
+          [
+            1,
+            18.6
+          ],
+          [
+            2,
+            23.1
+          ],
+          [
+            3,
+            29.0
+          ],
+          [
+            4,
+            31.5
+          ],
+          [
+            5,
+            29.6
+          ]
+        ]
+      },
+      "question": "Which change would most improve the experimental design?",
+      "choices": {
+        "A": "Remove the control condition to simplify the study.",
+        "B": "Change multiple variables at once to speed up results.",
+        "C": "Increase the number of trials and keep all variables constant except the independent variable.",
+        "D": "Record only the most extreme measurements."
+      },
+      "answer": "C",
+      "explanation": "Reliability improves with replication and controlled variables.",
+      "domain": "ACT Science"
+    },
+    {
+      "id": "ACTSCI-HARD-086",
+      "type": "mcq",
+      "difficulty_level": 10,
+      "difficulty_bucket": "L8",
+      "stimulus_type": "table",
+      "stimulus": {
+        "title": "Plant Growth Experiment",
+        "columns": [
+          "Group",
+          "Light (hours/day)",
+          "Growth (cm)"
+        ],
+        "rows": [
+          [
+            "A",
+            "6",
+            "2.6"
+          ],
+          [
+            "B",
+            "10",
+            "6.3"
+          ],
+          [
+            "C",
+            "14",
+            "8.4"
+          ]
+        ]
+      },
+      "question": "Which factor is most likely a confounding variable in this study?",
+      "choices": {
+        "A": "The units used to record data",
+        "B": "Uncontrolled environmental conditions that vary across trials",
+        "C": "The dependent variable itself",
+        "D": "The title of the experiment"
+      },
+      "answer": "B",
+      "explanation": "Confounding variables are uncontrolled factors linked to both the independent and dependent variables.",
+      "domain": "ACT Science"
+    },
+    {
+      "id": "ACTSCI-HARD-087",
+      "type": "mcq",
+      "difficulty_level": 9,
+      "difficulty_bucket": "L9",
+      "stimulus_type": "text",
+      "stimulus": "A study titled 'Water Quality Survey' reports controlled trials and notes that measurement uncertainty may affect conclusions.",
+      "question": "Which change would most improve the experimental design?",
+      "choices": {
+        "A": "Remove the control condition to simplify the study.",
+        "B": "Change multiple variables at once to speed up results.",
+        "C": "Increase the number of trials and keep all variables constant except the independent variable.",
+        "D": "Record only the most extreme measurements."
+      },
+      "answer": "C",
+      "explanation": "Reliability improves with replication and controlled variables.",
+      "domain": "ACT Science"
+    },
+    {
+      "id": "ACTSCI-HARD-088",
+      "type": "mcq",
+      "difficulty_level": 9,
+      "difficulty_bucket": "L9",
+      "stimulus_type": "chart",
+      "stimulus": {
+        "title": "Reaction Rate Study",
+        "x_label": "Time (s)",
+        "y_label": "Concentration",
+        "points": [
+          [
+            0,
+            31.799999999999997
+          ],
+          [
+            1,
+            31.099999999999998
+          ],
+          [
+            2,
+            36.599999999999994
+          ],
+          [
+            3,
+            37.89999999999999
+          ],
+          [
+            4,
+            43.69999999999999
+          ],
+          [
+            5,
+            49.39999999999999
+          ]
+        ]
+      },
+      "question": "If the observed trend continues, which prediction is most reasonable?",
+      "choices": {
+        "A": "The dependent variable would likely continue changing in the same direction, though the exact value is uncertain.",
+        "B": "The dependent variable will remain exactly constant.",
+        "C": "The dependent variable will reverse direction with certainty.",
+        "D": "Future results will be identical in every trial."
+      },
+      "answer": "A",
+      "explanation": "Extrapolation uses the direction of the trend but avoids certainty about exact values.",
+      "domain": "ACT Science"
+    },
+    {
+      "id": "ACTSCI-HARD-089",
+      "type": "mcq",
+      "difficulty_level": 9,
+      "difficulty_bucket": "L9",
+      "stimulus_type": "text",
+      "stimulus": "A study titled 'Enzyme Activity Test' reports controlled trials and notes that measurement uncertainty may affect conclusions.",
+      "question": "If the observed trend continues, which prediction is most reasonable?",
+      "choices": {
+        "A": "The dependent variable would likely continue changing in the same direction, though the exact value is uncertain.",
+        "B": "The dependent variable will remain exactly constant.",
+        "C": "The dependent variable will reverse direction with certainty.",
+        "D": "Future results will be identical in every trial."
+      },
+      "answer": "A",
+      "explanation": "Extrapolation uses the direction of the trend but avoids certainty about exact values.",
+      "domain": "ACT Science"
+    },
+    {
+      "id": "ACTSCI-HARD-090",
+      "type": "mcq",
+      "difficulty_level": 8,
+      "difficulty_bucket": "L8",
+      "stimulus_type": "text",
+      "stimulus": "A study titled 'Planet Temperature Model' reports controlled trials and notes that measurement uncertainty may affect conclusions.",
+      "question": "Which factor is most likely a confounding variable in this study?",
+      "choices": {
+        "A": "Uncontrolled environmental conditions that vary across trials",
+        "B": "The units used to record data",
+        "C": "The dependent variable itself",
+        "D": "The title of the experiment"
+      },
+      "answer": "A",
+      "explanation": "Confounding variables are uncontrolled factors linked to both the independent and dependent variables.",
+      "domain": "ACT Science"
+    },
+    {
+      "id": "ACTSCI-HARD-091",
+      "type": "mcq",
+      "difficulty_level": 10,
+      "difficulty_bucket": "L10",
+      "stimulus_type": "text",
+      "stimulus": "A study titled 'Enzyme Activity Test' reports controlled trials and notes that measurement uncertainty may affect conclusions.",
+      "question": "Based on the stimulus, which conclusion is most supported?",
+      "choices": {
+        "A": "The relationship must be negative in all future trials.",
+        "B": "The results eliminate the need for controls.",
+        "C": "The data are consistent with a trend rather than random variation alone.",
+        "D": "The data prove causation in all contexts with no uncertainty."
+      },
+      "answer": "C",
+      "explanation": "Hard ACT Science items reward cautious inference: supported trend + attention to uncertainty/controls.",
+      "domain": "ACT Science"
+    },
+    {
+      "id": "ACTSCI-HARD-092",
+      "type": "mcq",
+      "difficulty_level": 10,
+      "difficulty_bucket": "L9",
+      "stimulus_type": "table",
+      "stimulus": {
+        "title": "Plant Growth Experiment",
+        "columns": [
+          "Group",
+          "Light (hours/day)",
+          "Growth (cm)"
+        ],
+        "rows": [
+          [
+            "A",
+            "6",
+            "2.5"
+          ],
+          [
+            "B",
+            "10",
+            "4.6"
+          ],
+          [
+            "C",
+            "14",
+            "8.7"
+          ]
+        ]
+      },
+      "question": "Which factor is most likely a confounding variable in this study?",
+      "choices": {
+        "A": "The dependent variable itself",
+        "B": "The title of the experiment",
+        "C": "A variable that changes with the independent variable and also affects the dependent variable",
+        "D": "The units used to record data"
+      },
+      "answer": "C",
+      "explanation": "Confounding variables are uncontrolled factors linked to both the independent and dependent variables.",
+      "domain": "ACT Science"
+    },
+    {
+      "id": "ACTSCI-HARD-093",
+      "type": "mcq",
+      "difficulty_level": 9,
+      "difficulty_bucket": "L10",
+      "stimulus_type": "text",
+      "stimulus": "A study titled 'Planet Temperature Model' reports controlled trials and notes that measurement uncertainty may affect conclusions.",
+      "question": "Which factor is most likely a confounding variable in this study?",
+      "choices": {
+        "A": "Uncontrolled environmental conditions that vary across trials",
+        "B": "The units used to record data",
+        "C": "The title of the experiment",
+        "D": "The dependent variable itself"
+      },
+      "answer": "A",
+      "explanation": "Confounding variables are uncontrolled factors linked to both the independent and dependent variables.",
+      "domain": "ACT Science"
+    },
+    {
+      "id": "ACTSCI-HARD-094",
+      "type": "mcq",
+      "difficulty_level": 9,
+      "difficulty_bucket": "L10",
+      "stimulus_type": "chart",
+      "stimulus": {
+        "title": "Reaction Rate Study",
+        "x_label": "Time (s)",
+        "y_label": "Concentration",
+        "points": [
+          [
+            0,
+            28.5
+          ],
+          [
+            1,
+            27.0
+          ],
+          [
+            2,
+            29.9
+          ],
+          [
+            3,
+            32.4
+          ],
+          [
+            4,
+            29.9
+          ],
+          [
+            5,
+            33.9
+          ]
+        ]
+      },
+      "question": "Which factor is most likely a confounding variable in this study?",
+      "choices": {
+        "A": "The dependent variable itself",
+        "B": "The units used to record data",
+        "C": "The title of the experiment",
+        "D": "Uncontrolled environmental conditions that vary across trials"
+      },
+      "answer": "D",
+      "explanation": "Confounding variables are uncontrolled factors linked to both the independent and dependent variables.",
+      "domain": "ACT Science"
+    },
+    {
+      "id": "ACTSCI-HARD-095",
+      "type": "mcq",
+      "difficulty_level": 9,
+      "difficulty_bucket": "L8",
+      "stimulus_type": "text",
+      "stimulus": "A study titled 'Planet Temperature Model' reports controlled trials and notes that measurement uncertainty may affect conclusions.",
+      "question": "If the observed trend continues, which prediction is most reasonable?",
+      "choices": {
+        "A": "The dependent variable will remain exactly constant.",
+        "B": "The dependent variable will reverse direction with certainty.",
+        "C": "The dependent variable would likely continue changing in the same direction, though the exact value is uncertain.",
+        "D": "Future results will be identical in every trial."
+      },
+      "answer": "C",
+      "explanation": "Extrapolation uses the direction of the trend but avoids certainty about exact values.",
+      "domain": "ACT Science"
+    },
+    {
+      "id": "ACTSCI-HARD-096",
+      "type": "mcq",
+      "difficulty_level": 8,
+      "difficulty_bucket": "L10",
+      "stimulus_type": "text",
+      "stimulus": "A study titled 'Planet Temperature Model' reports controlled trials and notes that measurement uncertainty may affect conclusions.",
+      "question": "Which change would most improve the experimental design?",
+      "choices": {
+        "A": "Record only the most extreme measurements.",
+        "B": "Increase the number of trials and keep all variables constant except the independent variable.",
+        "C": "Change multiple variables at once to speed up results.",
+        "D": "Remove the control condition to simplify the study."
+      },
+      "answer": "B",
+      "explanation": "Reliability improves with replication and controlled variables.",
+      "domain": "ACT Science"
+    },
+    {
+      "id": "ACTSCI-HARD-097",
+      "type": "mcq",
+      "difficulty_level": 9,
+      "difficulty_bucket": "L9",
+      "stimulus_type": "chart",
+      "stimulus": {
+        "title": "Reaction Rate Study",
+        "x_label": "Time (s)",
+        "y_label": "Concentration",
+        "points": [
+          [
+            0,
+            17.7
+          ],
+          [
+            1,
+            18.599999999999998
+          ],
+          [
+            2,
+            19.2
+          ],
+          [
+            3,
+            20.5
+          ],
+          [
+            4,
+            24.3
+          ],
+          [
+            5,
+            28.700000000000003
+          ]
+        ]
+      },
+      "question": "Which change would most improve the experimental design?",
+      "choices": {
+        "A": "Increase the number of trials and keep all variables constant except the independent variable.",
+        "B": "Record only the most extreme measurements.",
+        "C": "Remove the control condition to simplify the study.",
+        "D": "Change multiple variables at once to speed up results."
+      },
+      "answer": "A",
+      "explanation": "Reliability improves with replication and controlled variables.",
+      "domain": "ACT Science"
+    },
+    {
+      "id": "ACTSCI-HARD-098",
+      "type": "mcq",
+      "difficulty_level": 10,
+      "difficulty_bucket": "L8",
+      "stimulus_type": "text",
+      "stimulus": "A study titled 'Planet Temperature Model' reports controlled trials and notes that measurement uncertainty may affect conclusions.",
+      "question": "Which factor is most likely a confounding variable in this study?",
+      "choices": {
+        "A": "The units used to record data",
+        "B": "The dependent variable itself",
+        "C": "A variable that changes with the independent variable and also affects the dependent variable",
+        "D": "The title of the experiment"
+      },
+      "answer": "C",
+      "explanation": "Confounding variables are uncontrolled factors linked to both the independent and dependent variables.",
+      "domain": "ACT Science"
+    },
+    {
+      "id": "ACTSCI-HARD-099",
+      "type": "mcq",
+      "difficulty_level": 9,
+      "difficulty_bucket": "L8",
+      "stimulus_type": "text",
+      "stimulus": "A study titled 'Planet Temperature Model' reports controlled trials and notes that measurement uncertainty may affect conclusions.",
+      "question": "Which factor is most likely a confounding variable in this study?",
+      "choices": {
+        "A": "The dependent variable itself",
+        "B": "Selection differences in samples assigned to groups",
+        "C": "The units used to record data",
+        "D": "The title of the experiment"
+      },
+      "answer": "B",
+      "explanation": "Confounding variables are uncontrolled factors linked to both the independent and dependent variables.",
+      "domain": "ACT Science"
+    },
+    {
+      "id": "ACTSCI-HARD-100",
+      "type": "mcq",
+      "difficulty_level": 9,
+      "difficulty_bucket": "L10",
+      "stimulus_type": "text",
+      "stimulus": "A study titled 'Planet Temperature Model' reports controlled trials and notes that measurement uncertainty may affect conclusions.",
+      "question": "Which change would most improve the experimental design?",
+      "choices": {
+        "A": "Record only the most extreme measurements.",
+        "B": "Remove the control condition to simplify the study.",
+        "C": "Change multiple variables at once to speed up results.",
+        "D": "Increase the number of trials and keep all variables constant except the independent variable."
+      },
+      "answer": "D",
+      "explanation": "Reliability improves with replication and controlled variables.",
+      "domain": "ACT Science"
+    },
+    {
+      "id": "ACTSCI-HARD-101",
+      "type": "mcq",
+      "difficulty_level": 10,
+      "difficulty_bucket": "L10",
+      "stimulus_type": "text",
+      "stimulus": "A study titled 'Water Quality Survey' reports controlled trials and notes that measurement uncertainty may affect conclusions.",
+      "question": "Which change would most improve the experimental design?",
+      "choices": {
+        "A": "Increase the number of trials and keep all variables constant except the independent variable.",
+        "B": "Remove the control condition to simplify the study.",
+        "C": "Record only the most extreme measurements.",
+        "D": "Change multiple variables at once to speed up results."
+      },
+      "answer": "A",
+      "explanation": "Reliability improves with replication and controlled variables.",
+      "domain": "ACT Science"
+    },
+    {
+      "id": "ACTSCI-HARD-102",
+      "type": "mcq",
+      "difficulty_level": 9,
+      "difficulty_bucket": "L8",
+      "stimulus_type": "text",
+      "stimulus": "A study titled 'Planet Temperature Model' reports controlled trials and notes that measurement uncertainty may affect conclusions.",
+      "question": "Which change would most improve the experimental design?",
+      "choices": {
+        "A": "Increase the number of trials and keep all variables constant except the independent variable.",
+        "B": "Remove the control condition to simplify the study.",
+        "C": "Record only the most extreme measurements.",
+        "D": "Change multiple variables at once to speed up results."
+      },
+      "answer": "A",
+      "explanation": "Reliability improves with replication and controlled variables.",
+      "domain": "ACT Science"
+    },
+    {
+      "id": "ACTSCI-HARD-103",
+      "type": "mcq",
+      "difficulty_level": 8,
+      "difficulty_bucket": "L9",
+      "stimulus_type": "chart",
+      "stimulus": {
+        "title": "Reaction Rate Study",
+        "x_label": "Time (s)",
+        "y_label": "Concentration",
+        "points": [
+          [
+            0,
+            25.5
+          ],
+          [
+            1,
+            24.3
+          ],
+          [
+            2,
+            26.400000000000002
+          ],
+          [
+            3,
+            27.3
+          ],
+          [
+            4,
+            24.5
+          ],
+          [
+            5,
+            27.5
+          ]
+        ]
+      },
+      "question": "Which change would most improve the experimental design?",
+      "choices": {
+        "A": "Increase the number of trials and keep all variables constant except the independent variable.",
+        "B": "Change multiple variables at once to speed up results.",
+        "C": "Remove the control condition to simplify the study.",
+        "D": "Record only the most extreme measurements."
+      },
+      "answer": "A",
+      "explanation": "Reliability improves with replication and controlled variables.",
+      "domain": "ACT Science"
+    },
+    {
+      "id": "ACTSCI-HARD-104",
+      "type": "mcq",
+      "difficulty_level": 9,
+      "difficulty_bucket": "L10",
+      "stimulus_type": "text",
+      "stimulus": "A study titled 'Water Quality Survey' reports controlled trials and notes that measurement uncertainty may affect conclusions.",
+      "question": "Based on the stimulus, which conclusion is most supported?",
+      "choices": {
+        "A": "The data prove causation in all contexts with no uncertainty.",
+        "B": "The relationship must be negative in all future trials.",
+        "C": "A change in the independent variable is associated with a measurable change in the dependent variable.",
+        "D": "The results eliminate the need for controls."
+      },
+      "answer": "C",
+      "explanation": "Hard ACT Science items reward cautious inference: supported trend + attention to uncertainty/controls.",
+      "domain": "ACT Science"
+    },
+    {
+      "id": "ACTSCI-HARD-105",
+      "type": "mcq",
+      "difficulty_level": 9,
+      "difficulty_bucket": "L8",
+      "stimulus_type": "text",
+      "stimulus": "A study titled 'Planet Temperature Model' reports controlled trials and notes that measurement uncertainty may affect conclusions.",
+      "question": "Based on the stimulus, which conclusion is most supported?",
+      "choices": {
+        "A": "The data are consistent with a trend rather than random variation alone.",
+        "B": "The relationship must be negative in all future trials.",
+        "C": "The data prove causation in all contexts with no uncertainty.",
+        "D": "The results eliminate the need for controls."
+      },
+      "answer": "A",
+      "explanation": "Hard ACT Science items reward cautious inference: supported trend + attention to uncertainty/controls.",
+      "domain": "ACT Science"
+    },
+    {
+      "id": "ACTSCI-HARD-106",
+      "type": "mcq",
+      "difficulty_level": 10,
+      "difficulty_bucket": "L8",
+      "stimulus_type": "table",
+      "stimulus": {
+        "title": "Plant Growth Experiment",
+        "columns": [
+          "Group",
+          "Light (hours/day)",
+          "Growth (cm)"
+        ],
+        "rows": [
+          [
+            "A",
+            "6",
+            "4.8"
+          ],
+          [
+            "B",
+            "10",
+            "4.6"
+          ],
+          [
+            "C",
+            "14",
+            "6.3"
+          ]
+        ]
+      },
+      "question": "Which factor is most likely a confounding variable in this study?",
+      "choices": {
+        "A": "The title of the experiment",
+        "B": "The dependent variable itself",
+        "C": "The units used to record data",
+        "D": "Differences in measurement technique between groups"
+      },
+      "answer": "D",
+      "explanation": "Confounding variables are uncontrolled factors linked to both the independent and dependent variables.",
+      "domain": "ACT Science"
+    },
+    {
+      "id": "ACTSCI-HARD-107",
+      "type": "mcq",
+      "difficulty_level": 10,
+      "difficulty_bucket": "L8",
+      "stimulus_type": "text",
+      "stimulus": "A study titled 'Planet Temperature Model' reports controlled trials and notes that measurement uncertainty may affect conclusions.",
+      "question": "Which change would most improve the experimental design?",
+      "choices": {
+        "A": "Change multiple variables at once to speed up results.",
+        "B": "Record only the most extreme measurements.",
+        "C": "Increase the number of trials and keep all variables constant except the independent variable.",
+        "D": "Remove the control condition to simplify the study."
+      },
+      "answer": "C",
+      "explanation": "Reliability improves with replication and controlled variables.",
+      "domain": "ACT Science"
+    },
+    {
+      "id": "ACTSCI-HARD-108",
+      "type": "mcq",
+      "difficulty_level": 10,
+      "difficulty_bucket": "L8",
+      "stimulus_type": "chart",
+      "stimulus": {
+        "title": "Reaction Rate Study",
+        "x_label": "Time (s)",
+        "y_label": "Concentration",
+        "points": [
+          [
+            0,
+            13.0
+          ],
+          [
+            1,
+            15.8
+          ],
+          [
+            2,
+            15.0
+          ],
+          [
+            3,
+            14.1
+          ],
+          [
+            4,
+            16.2
+          ],
+          [
+            5,
+            14.2
+          ]
+        ]
+      },
+      "question": "Which factor is most likely a confounding variable in this study?",
+      "choices": {
+        "A": "The dependent variable itself",
+        "B": "Differences in measurement technique between groups",
+        "C": "The title of the experiment",
+        "D": "The units used to record data"
+      },
+      "answer": "B",
+      "explanation": "Confounding variables are uncontrolled factors linked to both the independent and dependent variables.",
+      "domain": "ACT Science"
+    },
+    {
+      "id": "ACTSCI-HARD-109",
+      "type": "mcq",
+      "difficulty_level": 8,
+      "difficulty_bucket": "L9",
+      "stimulus_type": "text",
+      "stimulus": "A study titled 'Planet Temperature Model' reports controlled trials and notes that measurement uncertainty may affect conclusions.",
+      "question": "Which factor is most likely a confounding variable in this study?",
+      "choices": {
+        "A": "The units used to record data",
+        "B": "Selection differences in samples assigned to groups",
+        "C": "The dependent variable itself",
+        "D": "The title of the experiment"
+      },
+      "answer": "B",
+      "explanation": "Confounding variables are uncontrolled factors linked to both the independent and dependent variables.",
+      "domain": "ACT Science"
+    },
+    {
+      "id": "ACTSCI-HARD-110",
+      "type": "mcq",
+      "difficulty_level": 10,
+      "difficulty_bucket": "L9",
+      "stimulus_type": "chart",
+      "stimulus": {
+        "title": "Reaction Rate Study",
+        "x_label": "Time (s)",
+        "y_label": "Concentration",
+        "points": [
+          [
+            0,
+            23.8
+          ],
+          [
+            1,
+            23.1
+          ],
+          [
+            2,
+            28.900000000000002
+          ],
+          [
+            3,
+            28.1
+          ],
+          [
+            4,
+            30.1
+          ],
+          [
+            5,
+            28.8
+          ]
+        ]
+      },
+      "question": "Based on the stimulus, which conclusion is most supported?",
+      "choices": {
+        "A": "The results eliminate the need for controls.",
+        "B": "The relationship must be negative in all future trials.",
+        "C": "The data prove causation in all contexts with no uncertainty.",
+        "D": "The pattern suggests a positive relationship, though uncertainty limits precision."
+      },
+      "answer": "D",
+      "explanation": "Hard ACT Science items reward cautious inference: supported trend + attention to uncertainty/controls.",
+      "domain": "ACT Science"
+    },
+    {
+      "id": "ACTSCI-HARD-111",
+      "type": "mcq",
+      "difficulty_level": 10,
+      "difficulty_bucket": "L9",
+      "stimulus_type": "chart",
+      "stimulus": {
+        "title": "Reaction Rate Study",
+        "x_label": "Time (s)",
+        "y_label": "Concentration",
+        "points": [
+          [
+            0,
+            8.9
+          ],
+          [
+            1,
+            8.200000000000001
+          ],
+          [
+            2,
+            13.900000000000002
+          ],
+          [
+            3,
+            15.800000000000002
+          ],
+          [
+            4,
+            15.000000000000002
+          ],
+          [
+            5,
+            17.400000000000002
+          ]
+        ]
+      },
+      "question": "Which change would most improve the experimental design?",
+      "choices": {
+        "A": "Increase the number of trials and keep all variables constant except the independent variable.",
+        "B": "Record only the most extreme measurements.",
+        "C": "Change multiple variables at once to speed up results.",
+        "D": "Remove the control condition to simplify the study."
+      },
+      "answer": "A",
+      "explanation": "Reliability improves with replication and controlled variables.",
+      "domain": "ACT Science"
+    },
+    {
+      "id": "ACTSCI-HARD-112",
+      "type": "mcq",
+      "difficulty_level": 9,
+      "difficulty_bucket": "L9",
+      "stimulus_type": "text",
+      "stimulus": "A study titled 'Planet Temperature Model' reports controlled trials and notes that measurement uncertainty may affect conclusions.",
+      "question": "Based on the stimulus, which conclusion is most supported?",
+      "choices": {
+        "A": "The results eliminate the need for controls.",
+        "B": "The relationship must be negative in all future trials.",
+        "C": "The data prove causation in all contexts with no uncertainty.",
+        "D": "The data are consistent with a trend rather than random variation alone."
+      },
+      "answer": "D",
+      "explanation": "Hard ACT Science items reward cautious inference: supported trend + attention to uncertainty/controls.",
+      "domain": "ACT Science"
+    },
+    {
+      "id": "ACTSCI-HARD-113",
+      "type": "mcq",
+      "difficulty_level": 9,
+      "difficulty_bucket": "L9",
+      "stimulus_type": "text",
+      "stimulus": "A study titled 'Planet Temperature Model' reports controlled trials and notes that measurement uncertainty may affect conclusions.",
+      "question": "Which change would most improve the experimental design?",
+      "choices": {
+        "A": "Record only the most extreme measurements.",
+        "B": "Change multiple variables at once to speed up results.",
+        "C": "Remove the control condition to simplify the study.",
+        "D": "Increase the number of trials and keep all variables constant except the independent variable."
+      },
+      "answer": "D",
+      "explanation": "Reliability improves with replication and controlled variables.",
+      "domain": "ACT Science"
+    },
+    {
+      "id": "ACTSCI-HARD-114",
+      "type": "mcq",
+      "difficulty_level": 10,
+      "difficulty_bucket": "L10",
+      "stimulus_type": "table",
+      "stimulus": {
+        "title": "Plant Growth Experiment",
+        "columns": [
+          "Group",
+          "Light (hours/day)",
+          "Growth (cm)"
+        ],
+        "rows": [
+          [
+            "A",
+            "6",
+            "3.9"
+          ],
+          [
+            "B",
+            "10",
+            "5.7"
+          ],
+          [
+            "C",
+            "14",
+            "6.5"
+          ]
+        ]
+      },
+      "question": "If the observed trend continues, which prediction is most reasonable?",
+      "choices": {
+        "A": "The dependent variable would likely continue changing in the same direction, though the exact value is uncertain.",
+        "B": "The dependent variable will remain exactly constant.",
+        "C": "The dependent variable will reverse direction with certainty.",
+        "D": "Future results will be identical in every trial."
+      },
+      "answer": "A",
+      "explanation": "Extrapolation uses the direction of the trend but avoids certainty about exact values.",
+      "domain": "ACT Science"
+    },
+    {
+      "id": "ACTSCI-HARD-115",
+      "type": "mcq",
+      "difficulty_level": 9,
+      "difficulty_bucket": "L9",
+      "stimulus_type": "table",
+      "stimulus": {
+        "title": "Plant Growth Experiment",
+        "columns": [
+          "Group",
+          "Light (hours/day)",
+          "Growth (cm)"
+        ],
+        "rows": [
+          [
+            "A",
+            "6",
+            "3.6"
+          ],
+          [
+            "B",
+            "10",
+            "6.1"
+          ],
+          [
+            "C",
+            "14",
+            "9.7"
+          ]
+        ]
+      },
+      "question": "Which change would most improve the experimental design?",
+      "choices": {
+        "A": "Record only the most extreme measurements.",
+        "B": "Change multiple variables at once to speed up results.",
+        "C": "Remove the control condition to simplify the study.",
+        "D": "Increase the number of trials and keep all variables constant except the independent variable."
+      },
+      "answer": "D",
+      "explanation": "Reliability improves with replication and controlled variables.",
+      "domain": "ACT Science"
+    },
+    {
+      "id": "ACTSCI-HARD-116",
+      "type": "mcq",
+      "difficulty_level": 9,
+      "difficulty_bucket": "L9",
+      "stimulus_type": "table",
+      "stimulus": {
+        "title": "Plant Growth Experiment",
+        "columns": [
+          "Group",
+          "Light (hours/day)",
+          "Growth (cm)"
+        ],
+        "rows": [
+          [
+            "A",
+            "6",
+            "4.7"
+          ],
+          [
+            "B",
+            "10",
+            "4.2"
+          ],
+          [
+            "C",
+            "14",
+            "9.4"
+          ]
+        ]
+      },
+      "question": "Which factor is most likely a confounding variable in this study?",
+      "choices": {
+        "A": "The title of the experiment",
+        "B": "The dependent variable itself",
+        "C": "Uncontrolled environmental conditions that vary across trials",
+        "D": "The units used to record data"
+      },
+      "answer": "C",
+      "explanation": "Confounding variables are uncontrolled factors linked to both the independent and dependent variables.",
+      "domain": "ACT Science"
+    },
+    {
+      "id": "ACTSCI-HARD-117",
+      "type": "mcq",
+      "difficulty_level": 9,
+      "difficulty_bucket": "L9",
+      "stimulus_type": "text",
+      "stimulus": "A study titled 'Enzyme Activity Test' reports controlled trials and notes that measurement uncertainty may affect conclusions.",
+      "question": "Which change would most improve the experimental design?",
+      "choices": {
+        "A": "Remove the control condition to simplify the study.",
+        "B": "Increase the number of trials and keep all variables constant except the independent variable.",
+        "C": "Change multiple variables at once to speed up results.",
+        "D": "Record only the most extreme measurements."
+      },
+      "answer": "B",
+      "explanation": "Reliability improves with replication and controlled variables.",
+      "domain": "ACT Science"
+    },
+    {
+      "id": "ACTSCI-HARD-118",
+      "type": "mcq",
+      "difficulty_level": 10,
+      "difficulty_bucket": "L8",
+      "stimulus_type": "chart",
+      "stimulus": {
+        "title": "Reaction Rate Study",
+        "x_label": "Time (s)",
+        "y_label": "Concentration",
+        "points": [
+          [
+            0,
+            30.6
+          ],
+          [
+            1,
+            30.8
+          ],
+          [
+            2,
+            28.900000000000002
+          ],
+          [
+            3,
+            32.5
+          ],
+          [
+            4,
+            32.1
+          ],
+          [
+            5,
+            36.2
+          ]
+        ]
+      },
+      "question": "If the observed trend continues, which prediction is most reasonable?",
+      "choices": {
+        "A": "The dependent variable would likely continue changing in the same direction, though the exact value is uncertain.",
+        "B": "Future results will be identical in every trial.",
+        "C": "The dependent variable will remain exactly constant.",
+        "D": "The dependent variable will reverse direction with certainty."
+      },
+      "answer": "A",
+      "explanation": "Extrapolation uses the direction of the trend but avoids certainty about exact values.",
+      "domain": "ACT Science"
+    },
+    {
+      "id": "ACTSCI-HARD-119",
+      "type": "mcq",
+      "difficulty_level": 8,
+      "difficulty_bucket": "L8",
+      "stimulus_type": "chart",
+      "stimulus": {
+        "title": "Reaction Rate Study",
+        "x_label": "Time (s)",
+        "y_label": "Concentration",
+        "points": [
+          [
+            0,
+            10.9
+          ],
+          [
+            1,
+            12.9
+          ],
+          [
+            2,
+            16.7
+          ],
+          [
+            3,
+            18.2
+          ],
+          [
+            4,
+            21.9
+          ],
+          [
+            5,
+            26.7
+          ]
+        ]
+      },
+      "question": "If the observed trend continues, which prediction is most reasonable?",
+      "choices": {
+        "A": "Future results will be identical in every trial.",
+        "B": "The dependent variable would likely continue changing in the same direction, though the exact value is uncertain.",
+        "C": "The dependent variable will reverse direction with certainty.",
+        "D": "The dependent variable will remain exactly constant."
+      },
+      "answer": "B",
+      "explanation": "Extrapolation uses the direction of the trend but avoids certainty about exact values.",
+      "domain": "ACT Science"
+    },
+    {
+      "id": "ACTSCI-HARD-120",
+      "type": "mcq",
+      "difficulty_level": 9,
+      "difficulty_bucket": "L8",
+      "stimulus_type": "text",
+      "stimulus": "A study titled 'Enzyme Activity Test' reports controlled trials and notes that measurement uncertainty may affect conclusions.",
+      "question": "If the observed trend continues, which prediction is most reasonable?",
+      "choices": {
+        "A": "The dependent variable will reverse direction with certainty.",
+        "B": "The dependent variable will remain exactly constant.",
+        "C": "The dependent variable would likely continue changing in the same direction, though the exact value is uncertain.",
+        "D": "Future results will be identical in every trial."
+      },
+      "answer": "C",
+      "explanation": "Extrapolation uses the direction of the trend but avoids certainty about exact values.",
+      "domain": "ACT Science"
+    },
+    {
+      "id": "ACTSCI-HARD-121",
+      "type": "mcq",
+      "difficulty_level": 9,
+      "difficulty_bucket": "L8",
+      "stimulus_type": "chart",
+      "stimulus": {
+        "title": "Reaction Rate Study",
+        "x_label": "Time (s)",
+        "y_label": "Concentration",
+        "points": [
+          [
+            0,
+            11.6
+          ],
+          [
+            1,
+            15.899999999999999
+          ],
+          [
+            2,
+            19.7
+          ],
+          [
+            3,
+            16.9
+          ],
+          [
+            4,
+            16.4
+          ],
+          [
+            5,
+            16.2
+          ]
+        ]
+      },
+      "question": "Which change would most improve the experimental design?",
+      "choices": {
+        "A": "Record only the most extreme measurements.",
+        "B": "Increase the number of trials and keep all variables constant except the independent variable.",
+        "C": "Change multiple variables at once to speed up results.",
+        "D": "Remove the control condition to simplify the study."
+      },
+      "answer": "B",
+      "explanation": "Reliability improves with replication and controlled variables.",
+      "domain": "ACT Science"
+    },
+    {
+      "id": "ACTSCI-HARD-122",
+      "type": "mcq",
+      "difficulty_level": 9,
+      "difficulty_bucket": "L8",
+      "stimulus_type": "text",
+      "stimulus": "A study titled 'Water Quality Survey' reports controlled trials and notes that measurement uncertainty may affect conclusions.",
+      "question": "Which factor is most likely a confounding variable in this study?",
+      "choices": {
+        "A": "A variable that changes with the independent variable and also affects the dependent variable",
+        "B": "The dependent variable itself",
+        "C": "The units used to record data",
+        "D": "The title of the experiment"
+      },
+      "answer": "A",
+      "explanation": "Confounding variables are uncontrolled factors linked to both the independent and dependent variables.",
+      "domain": "ACT Science"
+    },
+    {
+      "id": "ACTSCI-HARD-123",
+      "type": "mcq",
+      "difficulty_level": 10,
+      "difficulty_bucket": "L10",
+      "stimulus_type": "table",
+      "stimulus": {
+        "title": "Plant Growth Experiment",
+        "columns": [
+          "Group",
+          "Light (hours/day)",
+          "Growth (cm)"
+        ],
+        "rows": [
+          [
+            "A",
+            "6",
+            "4.7"
+          ],
+          [
+            "B",
+            "10",
+            "5.4"
+          ],
+          [
+            "C",
+            "14",
+            "8.2"
+          ]
+        ]
+      },
+      "question": "Which change would most improve the experimental design?",
+      "choices": {
+        "A": "Increase the number of trials and keep all variables constant except the independent variable.",
+        "B": "Change multiple variables at once to speed up results.",
+        "C": "Record only the most extreme measurements.",
+        "D": "Remove the control condition to simplify the study."
+      },
+      "answer": "A",
+      "explanation": "Reliability improves with replication and controlled variables.",
+      "domain": "ACT Science"
+    },
+    {
+      "id": "ACTSCI-HARD-124",
+      "type": "mcq",
+      "difficulty_level": 9,
+      "difficulty_bucket": "L10",
+      "stimulus_type": "table",
+      "stimulus": {
+        "title": "Plant Growth Experiment",
+        "columns": [
+          "Group",
+          "Light (hours/day)",
+          "Growth (cm)"
+        ],
+        "rows": [
+          [
+            "A",
+            "6",
+            "3.5"
+          ],
+          [
+            "B",
+            "10",
+            "7.0"
+          ],
+          [
+            "C",
+            "14",
+            "10.8"
+          ]
+        ]
+      },
+      "question": "Which change would most improve the experimental design?",
+      "choices": {
+        "A": "Record only the most extreme measurements.",
+        "B": "Change multiple variables at once to speed up results.",
+        "C": "Remove the control condition to simplify the study.",
+        "D": "Increase the number of trials and keep all variables constant except the independent variable."
+      },
+      "answer": "D",
+      "explanation": "Reliability improves with replication and controlled variables.",
+      "domain": "ACT Science"
+    },
+    {
+      "id": "ACTSCI-HARD-125",
+      "type": "mcq",
+      "difficulty_level": 8,
+      "difficulty_bucket": "L10",
+      "stimulus_type": "text",
+      "stimulus": "A study titled 'Water Quality Survey' reports controlled trials and notes that measurement uncertainty may affect conclusions.",
+      "question": "Which factor is most likely a confounding variable in this study?",
+      "choices": {
+        "A": "The dependent variable itself",
+        "B": "The title of the experiment",
+        "C": "The units used to record data",
+        "D": "Uncontrolled environmental conditions that vary across trials"
+      },
+      "answer": "D",
+      "explanation": "Confounding variables are uncontrolled factors linked to both the independent and dependent variables.",
+      "domain": "ACT Science"
+    },
+    {
+      "id": "ACTSCI-HARD-126",
+      "type": "mcq",
+      "difficulty_level": 8,
+      "difficulty_bucket": "L8",
+      "stimulus_type": "text",
+      "stimulus": "A study titled 'Planet Temperature Model' reports controlled trials and notes that measurement uncertainty may affect conclusions.",
+      "question": "Which change would most improve the experimental design?",
+      "choices": {
+        "A": "Remove the control condition to simplify the study.",
+        "B": "Change multiple variables at once to speed up results.",
+        "C": "Increase the number of trials and keep all variables constant except the independent variable.",
+        "D": "Record only the most extreme measurements."
+      },
+      "answer": "C",
+      "explanation": "Reliability improves with replication and controlled variables.",
+      "domain": "ACT Science"
+    },
+    {
+      "id": "ACTSCI-HARD-127",
+      "type": "mcq",
+      "difficulty_level": 8,
+      "difficulty_bucket": "L10",
+      "stimulus_type": "text",
+      "stimulus": "A study titled 'Planet Temperature Model' reports controlled trials and notes that measurement uncertainty may affect conclusions.",
+      "question": "Which change would most improve the experimental design?",
+      "choices": {
+        "A": "Increase the number of trials and keep all variables constant except the independent variable.",
+        "B": "Remove the control condition to simplify the study.",
+        "C": "Record only the most extreme measurements.",
+        "D": "Change multiple variables at once to speed up results."
+      },
+      "answer": "A",
+      "explanation": "Reliability improves with replication and controlled variables.",
+      "domain": "ACT Science"
+    },
+    {
+      "id": "ACTSCI-HARD-128",
+      "type": "mcq",
+      "difficulty_level": 10,
+      "difficulty_bucket": "L9",
+      "stimulus_type": "table",
+      "stimulus": {
+        "title": "Plant Growth Experiment",
+        "columns": [
+          "Group",
+          "Light (hours/day)",
+          "Growth (cm)"
+        ],
+        "rows": [
+          [
+            "A",
+            "6",
+            "4.6"
+          ],
+          [
+            "B",
+            "10",
+            "7.5"
+          ],
+          [
+            "C",
+            "14",
+            "6.4"
+          ]
+        ]
+      },
+      "question": "Which change would most improve the experimental design?",
+      "choices": {
+        "A": "Record only the most extreme measurements.",
+        "B": "Remove the control condition to simplify the study.",
+        "C": "Increase the number of trials and keep all variables constant except the independent variable.",
+        "D": "Change multiple variables at once to speed up results."
+      },
+      "answer": "C",
+      "explanation": "Reliability improves with replication and controlled variables.",
+      "domain": "ACT Science"
+    },
+    {
+      "id": "ACTSCI-HARD-129",
+      "type": "mcq",
+      "difficulty_level": 10,
+      "difficulty_bucket": "L10",
+      "stimulus_type": "table",
+      "stimulus": {
+        "title": "Plant Growth Experiment",
+        "columns": [
+          "Group",
+          "Light (hours/day)",
+          "Growth (cm)"
+        ],
+        "rows": [
+          [
+            "A",
+            "6",
+            "4.8"
+          ],
+          [
+            "B",
+            "10",
+            "6.5"
+          ],
+          [
+            "C",
+            "14",
+            "9.2"
+          ]
+        ]
+      },
+      "question": "Based on the stimulus, which conclusion is most supported?",
+      "choices": {
+        "A": "The results eliminate the need for controls.",
+        "B": "The relationship must be negative in all future trials.",
+        "C": "The data are consistent with a trend rather than random variation alone.",
+        "D": "The data prove causation in all contexts with no uncertainty."
+      },
+      "answer": "C",
+      "explanation": "Hard ACT Science items reward cautious inference: supported trend + attention to uncertainty/controls.",
+      "domain": "ACT Science"
+    },
+    {
+      "id": "ACTSCI-HARD-130",
+      "type": "mcq",
+      "difficulty_level": 9,
+      "difficulty_bucket": "L9",
+      "stimulus_type": "chart",
+      "stimulus": {
+        "title": "Reaction Rate Study",
+        "x_label": "Time (s)",
+        "y_label": "Concentration",
+        "points": [
+          [
+            0,
+            28.9
+          ],
+          [
+            1,
+            30.0
+          ],
+          [
+            2,
+            27.6
+          ],
+          [
+            3,
+            31.0
+          ],
+          [
+            4,
+            32.0
+          ],
+          [
+            5,
+            32.5
+          ]
+        ]
+      },
+      "question": "Which factor is most likely a confounding variable in this study?",
+      "choices": {
+        "A": "The dependent variable itself",
+        "B": "The title of the experiment",
+        "C": "The units used to record data",
+        "D": "Selection differences in samples assigned to groups"
+      },
+      "answer": "D",
+      "explanation": "Confounding variables are uncontrolled factors linked to both the independent and dependent variables.",
+      "domain": "ACT Science"
+    },
+    {
+      "id": "ACTSCI-HARD-131",
+      "type": "mcq",
+      "difficulty_level": 10,
+      "difficulty_bucket": "L8",
+      "stimulus_type": "table",
+      "stimulus": {
+        "title": "Plant Growth Experiment",
+        "columns": [
+          "Group",
+          "Light (hours/day)",
+          "Growth (cm)"
+        ],
+        "rows": [
+          [
+            "A",
+            "6",
+            "2.8"
+          ],
+          [
+            "B",
+            "10",
+            "5.6"
+          ],
+          [
+            "C",
+            "14",
+            "8.2"
+          ]
+        ]
+      },
+      "question": "Which change would most improve the experimental design?",
+      "choices": {
+        "A": "Remove the control condition to simplify the study.",
+        "B": "Record only the most extreme measurements.",
+        "C": "Change multiple variables at once to speed up results.",
+        "D": "Increase the number of trials and keep all variables constant except the independent variable."
+      },
+      "answer": "D",
+      "explanation": "Reliability improves with replication and controlled variables.",
+      "domain": "ACT Science"
+    },
+    {
+      "id": "ACTSCI-HARD-132",
+      "type": "mcq",
+      "difficulty_level": 9,
+      "difficulty_bucket": "L8",
+      "stimulus_type": "table",
+      "stimulus": {
+        "title": "Plant Growth Experiment",
+        "columns": [
+          "Group",
+          "Light (hours/day)",
+          "Growth (cm)"
+        ],
+        "rows": [
+          [
+            "A",
+            "6",
+            "4.7"
+          ],
+          [
+            "B",
+            "10",
+            "4.4"
+          ],
+          [
+            "C",
+            "14",
+            "10.0"
+          ]
+        ]
+      },
+      "question": "Which factor is most likely a confounding variable in this study?",
+      "choices": {
+        "A": "The dependent variable itself",
+        "B": "The title of the experiment",
+        "C": "The units used to record data",
+        "D": "Differences in measurement technique between groups"
+      },
+      "answer": "D",
+      "explanation": "Confounding variables are uncontrolled factors linked to both the independent and dependent variables.",
+      "domain": "ACT Science"
+    },
+    {
+      "id": "ACTSCI-HARD-133",
+      "type": "mcq",
+      "difficulty_level": 8,
+      "difficulty_bucket": "L10",
+      "stimulus_type": "chart",
+      "stimulus": {
+        "title": "Reaction Rate Study",
+        "x_label": "Time (s)",
+        "y_label": "Concentration",
+        "points": [
+          [
+            0,
+            13.7
+          ],
+          [
+            1,
+            14.2
+          ],
+          [
+            2,
+            11.7
+          ],
+          [
+            3,
+            12.2
+          ],
+          [
+            4,
+            11.5
+          ],
+          [
+            5,
+            10.8
+          ]
+        ]
+      },
+      "question": "Which factor is most likely a confounding variable in this study?",
+      "choices": {
+        "A": "The title of the experiment",
+        "B": "The dependent variable itself",
+        "C": "The units used to record data",
+        "D": "Differences in measurement technique between groups"
+      },
+      "answer": "D",
+      "explanation": "Confounding variables are uncontrolled factors linked to both the independent and dependent variables.",
+      "domain": "ACT Science"
+    },
+    {
+      "id": "ACTSCI-HARD-134",
+      "type": "mcq",
+      "difficulty_level": 10,
+      "difficulty_bucket": "L8",
+      "stimulus_type": "text",
+      "stimulus": "A study titled 'Water Quality Survey' reports controlled trials and notes that measurement uncertainty may affect conclusions.",
+      "question": "Which change would most improve the experimental design?",
+      "choices": {
+        "A": "Record only the most extreme measurements.",
+        "B": "Change multiple variables at once to speed up results.",
+        "C": "Increase the number of trials and keep all variables constant except the independent variable.",
+        "D": "Remove the control condition to simplify the study."
+      },
+      "answer": "C",
+      "explanation": "Reliability improves with replication and controlled variables.",
+      "domain": "ACT Science"
+    },
+    {
+      "id": "ACTSCI-HARD-135",
+      "type": "mcq",
+      "difficulty_level": 9,
+      "difficulty_bucket": "L8",
+      "stimulus_type": "table",
+      "stimulus": {
+        "title": "Plant Growth Experiment",
+        "columns": [
+          "Group",
+          "Light (hours/day)",
+          "Growth (cm)"
+        ],
+        "rows": [
+          [
+            "A",
+            "6",
+            "4.2"
+          ],
+          [
+            "B",
+            "10",
+            "7.4"
+          ],
+          [
+            "C",
+            "14",
+            "10.1"
+          ]
+        ]
+      },
+      "question": "If the observed trend continues, which prediction is most reasonable?",
+      "choices": {
+        "A": "The dependent variable would likely continue changing in the same direction, though the exact value is uncertain.",
+        "B": "The dependent variable will remain exactly constant.",
+        "C": "Future results will be identical in every trial.",
+        "D": "The dependent variable will reverse direction with certainty."
+      },
+      "answer": "A",
+      "explanation": "Extrapolation uses the direction of the trend but avoids certainty about exact values.",
+      "domain": "ACT Science"
+    },
+    {
+      "id": "ACTSCI-HARD-136",
+      "type": "mcq",
+      "difficulty_level": 10,
+      "difficulty_bucket": "L8",
+      "stimulus_type": "chart",
+      "stimulus": {
+        "title": "Reaction Rate Study",
+        "x_label": "Time (s)",
+        "y_label": "Concentration",
+        "points": [
+          [
+            0,
+            29.200000000000003
+          ],
+          [
+            1,
+            34.1
+          ],
+          [
+            2,
+            33.5
+          ],
+          [
+            3,
+            34.6
+          ],
+          [
+            4,
+            33.800000000000004
+          ],
+          [
+            5,
+            39.1
+          ]
+        ]
+      },
+      "question": "If the observed trend continues, which prediction is most reasonable?",
+      "choices": {
+        "A": "The dependent variable will remain exactly constant.",
+        "B": "The dependent variable would likely continue changing in the same direction, though the exact value is uncertain.",
+        "C": "The dependent variable will reverse direction with certainty.",
+        "D": "Future results will be identical in every trial."
+      },
+      "answer": "B",
+      "explanation": "Extrapolation uses the direction of the trend but avoids certainty about exact values.",
+      "domain": "ACT Science"
+    },
+    {
+      "id": "ACTSCI-HARD-137",
+      "type": "mcq",
+      "difficulty_level": 8,
+      "difficulty_bucket": "L9",
+      "stimulus_type": "table",
+      "stimulus": {
+        "title": "Plant Growth Experiment",
+        "columns": [
+          "Group",
+          "Light (hours/day)",
+          "Growth (cm)"
+        ],
+        "rows": [
+          [
+            "A",
+            "6",
+            "3.2"
+          ],
+          [
+            "B",
+            "10",
+            "6.3"
+          ],
+          [
+            "C",
+            "14",
+            "8.7"
+          ]
+        ]
+      },
+      "question": "Which factor is most likely a confounding variable in this study?",
+      "choices": {
+        "A": "The title of the experiment",
+        "B": "The units used to record data",
+        "C": "The dependent variable itself",
+        "D": "Differences in measurement technique between groups"
+      },
+      "answer": "D",
+      "explanation": "Confounding variables are uncontrolled factors linked to both the independent and dependent variables.",
+      "domain": "ACT Science"
+    },
+    {
+      "id": "ACTSCI-HARD-138",
+      "type": "mcq",
+      "difficulty_level": 10,
+      "difficulty_bucket": "L9",
+      "stimulus_type": "table",
+      "stimulus": {
+        "title": "Plant Growth Experiment",
+        "columns": [
+          "Group",
+          "Light (hours/day)",
+          "Growth (cm)"
+        ],
+        "rows": [
+          [
+            "A",
+            "6",
+            "4.7"
+          ],
+          [
+            "B",
+            "10",
+            "4.4"
+          ],
+          [
+            "C",
+            "14",
+            "9.5"
+          ]
+        ]
+      },
+      "question": "Based on the stimulus, which conclusion is most supported?",
+      "choices": {
+        "A": "The relationship must be negative in all future trials.",
+        "B": "The results eliminate the need for controls.",
+        "C": "The data prove causation in all contexts with no uncertainty.",
+        "D": "The pattern suggests a positive relationship, though uncertainty limits precision."
+      },
+      "answer": "D",
+      "explanation": "Hard ACT Science items reward cautious inference: supported trend + attention to uncertainty/controls.",
+      "domain": "ACT Science"
+    },
+    {
+      "id": "ACTSCI-HARD-139",
+      "type": "mcq",
+      "difficulty_level": 9,
+      "difficulty_bucket": "L10",
+      "stimulus_type": "text",
+      "stimulus": "A study titled 'Water Quality Survey' reports controlled trials and notes that measurement uncertainty may affect conclusions.",
+      "question": "Based on the stimulus, which conclusion is most supported?",
+      "choices": {
+        "A": "The data prove causation in all contexts with no uncertainty.",
+        "B": "The results eliminate the need for controls.",
+        "C": "The relationship must be negative in all future trials.",
+        "D": "A change in the independent variable is associated with a measurable change in the dependent variable."
+      },
+      "answer": "D",
+      "explanation": "Hard ACT Science items reward cautious inference: supported trend + attention to uncertainty/controls.",
+      "domain": "ACT Science"
+    },
+    {
+      "id": "ACTSCI-HARD-140",
+      "type": "mcq",
+      "difficulty_level": 8,
+      "difficulty_bucket": "L9",
+      "stimulus_type": "text",
+      "stimulus": "A study titled 'Planet Temperature Model' reports controlled trials and notes that measurement uncertainty may affect conclusions.",
+      "question": "If the observed trend continues, which prediction is most reasonable?",
+      "choices": {
+        "A": "Future results will be identical in every trial.",
+        "B": "The dependent variable will remain exactly constant.",
+        "C": "The dependent variable would likely continue changing in the same direction, though the exact value is uncertain.",
+        "D": "The dependent variable will reverse direction with certainty."
+      },
+      "answer": "C",
+      "explanation": "Extrapolation uses the direction of the trend but avoids certainty about exact values.",
+      "domain": "ACT Science"
+    },
+    {
+      "id": "ACTSCI-HARD-141",
+      "type": "mcq",
+      "difficulty_level": 10,
+      "difficulty_bucket": "L9",
+      "stimulus_type": "text",
+      "stimulus": "A study titled 'Water Quality Survey' reports controlled trials and notes that measurement uncertainty may affect conclusions.",
+      "question": "Which change would most improve the experimental design?",
+      "choices": {
+        "A": "Remove the control condition to simplify the study.",
+        "B": "Record only the most extreme measurements.",
+        "C": "Change multiple variables at once to speed up results.",
+        "D": "Increase the number of trials and keep all variables constant except the independent variable."
+      },
+      "answer": "D",
+      "explanation": "Reliability improves with replication and controlled variables.",
+      "domain": "ACT Science"
+    },
+    {
+      "id": "ACTSCI-HARD-142",
+      "type": "mcq",
+      "difficulty_level": 8,
+      "difficulty_bucket": "L8",
+      "stimulus_type": "text",
+      "stimulus": "A study titled 'Planet Temperature Model' reports controlled trials and notes that measurement uncertainty may affect conclusions.",
+      "question": "If the observed trend continues, which prediction is most reasonable?",
+      "choices": {
+        "A": "The dependent variable would likely continue changing in the same direction, though the exact value is uncertain.",
+        "B": "Future results will be identical in every trial.",
+        "C": "The dependent variable will reverse direction with certainty.",
+        "D": "The dependent variable will remain exactly constant."
+      },
+      "answer": "A",
+      "explanation": "Extrapolation uses the direction of the trend but avoids certainty about exact values.",
+      "domain": "ACT Science"
+    },
+    {
+      "id": "ACTSCI-HARD-143",
+      "type": "mcq",
+      "difficulty_level": 8,
+      "difficulty_bucket": "L8",
+      "stimulus_type": "chart",
+      "stimulus": {
+        "title": "Reaction Rate Study",
+        "x_label": "Time (s)",
+        "y_label": "Concentration",
+        "points": [
+          [
+            0,
+            11.399999999999999
+          ],
+          [
+            1,
+            10.499999999999998
+          ],
+          [
+            2,
+            15.899999999999999
+          ],
+          [
+            3,
+            15.7
+          ],
+          [
+            4,
+            12.799999999999999
+          ],
+          [
+            5,
+            17.0
+          ]
+        ]
+      },
+      "question": "Based on the stimulus, which conclusion is most supported?",
+      "choices": {
+        "A": "The data prove causation in all contexts with no uncertainty.",
+        "B": "The results eliminate the need for controls.",
+        "C": "The relationship must be negative in all future trials.",
+        "D": "A change in the independent variable is associated with a measurable change in the dependent variable."
+      },
+      "answer": "D",
+      "explanation": "Hard ACT Science items reward cautious inference: supported trend + attention to uncertainty/controls.",
+      "domain": "ACT Science"
+    },
+    {
+      "id": "ACTSCI-HARD-144",
+      "type": "mcq",
+      "difficulty_level": 10,
+      "difficulty_bucket": "L8",
+      "stimulus_type": "text",
+      "stimulus": "A study titled 'Planet Temperature Model' reports controlled trials and notes that measurement uncertainty may affect conclusions.",
+      "question": "Which change would most improve the experimental design?",
+      "choices": {
+        "A": "Change multiple variables at once to speed up results.",
+        "B": "Record only the most extreme measurements.",
+        "C": "Increase the number of trials and keep all variables constant except the independent variable.",
+        "D": "Remove the control condition to simplify the study."
+      },
+      "answer": "C",
+      "explanation": "Reliability improves with replication and controlled variables.",
+      "domain": "ACT Science"
+    },
+    {
+      "id": "ACTSCI-HARD-145",
+      "type": "mcq",
+      "difficulty_level": 10,
+      "difficulty_bucket": "L9",
+      "stimulus_type": "text",
+      "stimulus": "A study titled 'Water Quality Survey' reports controlled trials and notes that measurement uncertainty may affect conclusions.",
+      "question": "Which factor is most likely a confounding variable in this study?",
+      "choices": {
+        "A": "The units used to record data",
+        "B": "The title of the experiment",
+        "C": "The dependent variable itself",
+        "D": "Uncontrolled environmental conditions that vary across trials"
+      },
+      "answer": "D",
+      "explanation": "Confounding variables are uncontrolled factors linked to both the independent and dependent variables.",
+      "domain": "ACT Science"
+    },
+    {
+      "id": "ACTSCI-HARD-146",
+      "type": "mcq",
+      "difficulty_level": 9,
+      "difficulty_bucket": "L8",
+      "stimulus_type": "table",
+      "stimulus": {
+        "title": "Plant Growth Experiment",
+        "columns": [
+          "Group",
+          "Light (hours/day)",
+          "Growth (cm)"
+        ],
+        "rows": [
+          [
+            "A",
+            "6",
+            "2.7"
+          ],
+          [
+            "B",
+            "10",
+            "7.8"
+          ],
+          [
+            "C",
+            "14",
+            "9.1"
+          ]
+        ]
+      },
+      "question": "Which factor is most likely a confounding variable in this study?",
+      "choices": {
+        "A": "The title of the experiment",
+        "B": "The dependent variable itself",
+        "C": "Differences in measurement technique between groups",
+        "D": "The units used to record data"
+      },
+      "answer": "C",
+      "explanation": "Confounding variables are uncontrolled factors linked to both the independent and dependent variables.",
+      "domain": "ACT Science"
+    },
+    {
+      "id": "ACTSCI-HARD-147",
+      "type": "mcq",
+      "difficulty_level": 9,
+      "difficulty_bucket": "L9",
+      "stimulus_type": "text",
+      "stimulus": "A study titled 'Planet Temperature Model' reports controlled trials and notes that measurement uncertainty may affect conclusions.",
+      "question": "If the observed trend continues, which prediction is most reasonable?",
+      "choices": {
+        "A": "The dependent variable will reverse direction with certainty.",
+        "B": "The dependent variable would likely continue changing in the same direction, though the exact value is uncertain.",
+        "C": "The dependent variable will remain exactly constant.",
+        "D": "Future results will be identical in every trial."
+      },
+      "answer": "B",
+      "explanation": "Extrapolation uses the direction of the trend but avoids certainty about exact values.",
+      "domain": "ACT Science"
+    },
+    {
+      "id": "ACTSCI-HARD-148",
+      "type": "mcq",
+      "difficulty_level": 10,
+      "difficulty_bucket": "L9",
+      "stimulus_type": "text",
+      "stimulus": "A study titled 'Water Quality Survey' reports controlled trials and notes that measurement uncertainty may affect conclusions.",
+      "question": "Which change would most improve the experimental design?",
+      "choices": {
+        "A": "Increase the number of trials and keep all variables constant except the independent variable.",
+        "B": "Change multiple variables at once to speed up results.",
+        "C": "Remove the control condition to simplify the study.",
+        "D": "Record only the most extreme measurements."
+      },
+      "answer": "A",
+      "explanation": "Reliability improves with replication and controlled variables.",
+      "domain": "ACT Science"
+    },
+    {
+      "id": "ACTSCI-HARD-149",
+      "type": "mcq",
+      "difficulty_level": 8,
+      "difficulty_bucket": "L9",
+      "stimulus_type": "text",
+      "stimulus": "A study titled 'Enzyme Activity Test' reports controlled trials and notes that measurement uncertainty may affect conclusions.",
+      "question": "Which factor is most likely a confounding variable in this study?",
+      "choices": {
+        "A": "The dependent variable itself",
+        "B": "The units used to record data",
+        "C": "A variable that changes with the independent variable and also affects the dependent variable",
+        "D": "The title of the experiment"
+      },
+      "answer": "C",
+      "explanation": "Confounding variables are uncontrolled factors linked to both the independent and dependent variables.",
+      "domain": "ACT Science"
+    },
+    {
+      "id": "ACTSCI-HARD-150",
+      "type": "mcq",
+      "difficulty_level": 8,
+      "difficulty_bucket": "L8",
+      "stimulus_type": "text",
+      "stimulus": "A study titled 'Enzyme Activity Test' reports controlled trials and notes that measurement uncertainty may affect conclusions.",
+      "question": "Which change would most improve the experimental design?",
+      "choices": {
+        "A": "Remove the control condition to simplify the study.",
+        "B": "Record only the most extreme measurements.",
+        "C": "Change multiple variables at once to speed up results.",
+        "D": "Increase the number of trials and keep all variables constant except the independent variable."
+      },
+      "answer": "D",
+      "explanation": "Reliability improves with replication and controlled variables.",
+      "domain": "ACT Science"
+    }
+  ]
+}

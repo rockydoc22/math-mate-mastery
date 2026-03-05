@@ -132,7 +132,7 @@ const curatedQuestions: Record<string, Question[]> = {
   ],
 };
 
-// ─── Lazy-loaded bank (loaded on first access) ───
+// ─── Lazy-loaded banks (loaded on first access) ───
 let _bankCache: Record<string, Question[]> | null = null;
 let _bankPromise: Promise<Record<string, Question[]>> | null = null;
 
@@ -140,12 +140,23 @@ async function loadBank(): Promise<Record<string, Question[]>> {
   if (_bankCache) return _bankCache;
   if (_bankPromise) return _bankPromise;
   
-  _bankPromise = import('./apush_full_question_bank.json').then((mod) => {
-    const raw = mod.default as any;
+  _bankPromise = Promise.all([
+    import('./apush_full_question_bank.json'),
+    import('./apush_full_question_bank_v2.json'),
+  ]).then(([mod1, mod2]) => {
     const result: Record<string, Question[]> = {};
-    for (const unit of raw.units) {
+    // Load v1
+    for (const unit of (mod1.default as any).units) {
       const key = `unit-${unit.unit_id}`;
       result[key] = (unit.questions || []).map((q: RawQuestion) => convertQuestion(q));
+    }
+    // Merge v2 on top (deduplicate by id)
+    for (const unit of (mod2.default as any).units) {
+      const key = `unit-${unit.unit_id}`;
+      const v2Qs = (unit.questions || []).map((q: RawQuestion) => convertQuestion(q));
+      const existing = result[key] || [];
+      const existingIds = new Set(existing.map(q => q.id));
+      result[key] = [...existing, ...v2Qs.filter(q => !existingIds.has(q.id))];
     }
     _bankCache = result;
     return result;
