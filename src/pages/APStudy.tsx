@@ -19,6 +19,8 @@ import { AP_PHYS2_UNITS, apPhys2QuestionsByUnit, loadAPPhys2Questions } from "@/
 import { Question } from "@/data/questions";
 import { MathText } from "@/components/MathText";
 import { AITutorExplanation } from "@/components/AITutorExplanation";
+import { FRQ_SUBJECT_MAP } from "@/data/frqDataLoaders";
+import { PenLine } from "lucide-react";
 
 type ViewState =
   | { mode: 'units' }
@@ -172,6 +174,25 @@ const APStudy = () => {
                     {subjectId === 'ap-us-history'
                       ? 'Paste your DBQ essay → get 7-point rubric scores + feedback'
                       : 'Grade Rhetorical Analysis, Synthesis, or Argument essays (6-point rubric)'}
+                  </p>
+                </div>
+                <ChevronRight className="w-4 h-4 text-muted-foreground" />
+              </div>
+            </Card>
+          )}
+
+          {/* FRQ Practice CTA */}
+          {subjectId && FRQ_SUBJECT_MAP[subjectId] && (
+            <Card
+              className="p-4 cursor-pointer transition-all hover:scale-[1.01] hover:shadow-md border-accent/30 bg-accent/5"
+              onClick={() => navigate(`/ap-frq/${subjectId}`)}
+            >
+              <div className="flex items-center gap-3">
+                <PenLine className="w-6 h-6 text-accent-foreground" />
+                <div className="flex-1">
+                  <h3 className="font-semibold text-sm">📝 FRQ Practice</h3>
+                  <p className="text-xs text-muted-foreground">
+                    {FRQ_SUBJECT_MAP[subjectId].types.map(t => t.toUpperCase()).join(' • ')} with AI grading
                   </p>
                 </div>
                 <ChevronRight className="w-4 h-4 text-muted-foreground" />

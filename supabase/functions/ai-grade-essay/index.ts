@@ -8,90 +8,141 @@ const corsHeaders = {
 const RUBRICS: Record<string, { systemPrompt: string; maxScore: number }> = {
   apush_dbq: {
     maxScore: 7,
-    systemPrompt: `You are an expert AP US History DBQ grader. Grade the student's DBQ essay using the official College Board 7-point rubric:
+    systemPrompt: `You are an expert AP US History DBQ grader using the official College Board 7-point rubric.
 
-1. THESIS (0-1): Historically defensible claim that responds to the prompt. Must be in intro or conclusion.
-2. CONTEXTUALIZATION (0-1): Broader historical context relevant to the prompt. Must be more than a phrase.
-3. EVIDENCE - Documents (0-2): 1 pt for using content of 3+ docs to address the topic. 2 pts for using 6+ docs to SUPPORT the argument.
-4. EVIDENCE - Beyond Documents (0-1): Specific historical evidence beyond the provided documents, relevant to the argument.
-5. ANALYSIS & REASONING (0-2): 1 pt for HIPP sourcing (Historical situation, Intended audience, Purpose, or Point of view) for 3+ docs. 2 pts for demonstrating complex understanding (multiple variables, across time periods, corroboration, qualification).
+RUBRIC DIMENSIONS:
+1. THESIS (0-1): Historically defensible claim responding to the prompt. Must be in intro or conclusion. Must do more than restate the prompt.
+2. CONTEXTUALIZATION (0-1): Broader historical context relevant to the prompt. Must be more than a phrase—needs a full explanation of events, trends, or developments.
+3. EVIDENCE — Documents (0-2):
+   - 1 pt: Uses content of 3+ documents to address the topic
+   - 2 pts: Uses 6+ documents to SUPPORT the argument (not just mention)
+4. EVIDENCE — Beyond Documents (0-1): Specific historical evidence beyond provided documents. Must name a specific event, policy, law, person, or movement AND link it to the argument.
+5. ANALYSIS & REASONING (0-2):
+   - 1 pt: Sourcing (HIPP) for 3+ documents. HIPP = Historical situation, Intended audience, Purpose, or Point of view. Each sourcing must explain HOW it's relevant to the argument.
+   - 2 pts: Complex understanding — demonstrates at least ONE: multiple variables/causes, change across time periods, corroboration among sources, qualification of the argument.
 
-Return your response as JSON with this exact structure:
+HIPP COACHING GUIDANCE (use in feedback):
+- H: "At the time, ___ was happening, which helps explain ___."
+- I: "Because the author addressed ___, the message emphasizes ___."
+- P: "The author aims to ___, so the document highlights ___."
+- PoV: "From the perspective of ___, the author likely ___."
+
+For EVIDENCE BEYOND, check the student's outside evidence against this checklist:
+- Names a specific event, policy, law, person, or movement
+- Correctly placed in time and place
+- Explicitly linked to the argument (because/therefore)
+
+Return JSON with this exact structure:
 {
   "thesis": { "score": 0|1, "feedback": "..." },
   "contextualization": { "score": 0|1, "feedback": "..." },
-  "evidence_documents": { "score": 0|1|2, "feedback": "..." },
-  "evidence_beyond": { "score": 0|1, "feedback": "..." },
-  "analysis_reasoning": { "score": 0|1|2, "feedback": "..." },
+  "evidence_documents": { "score": 0|1|2, "feedback": "...", "docs_identified": ["D1","D2",...], "missing_docs": ["D3",...] },
+  "evidence_beyond": { "score": 0|1, "feedback": "...", "specificity_score": 0|1|2|3 },
+  "analysis_reasoning": { "score": 0|1|2, "feedback": "...", "hipp_count": 0, "hipp_quality_notes": ["..."] },
   "total_score": 0-7,
   "overall_feedback": "2-3 sentences of encouragement and top priority improvement",
-  "next_steps": ["actionable tip 1", "actionable tip 2", "actionable tip 3"]
+  "next_steps": ["actionable tip 1", "actionable tip 2", "actionable tip 3"],
+  "micro_drills": ["targeted practice suggestion 1", "targeted practice suggestion 2"]
 }`,
   },
   ap_lang_rhetorical: {
     maxScore: 6,
-    systemPrompt: `You are an expert AP English Language grader. Grade the student's Rhetorical Analysis essay using the official College Board 6-point rubric:
+    systemPrompt: `You are an expert AP English Language grader for Rhetorical Analysis essays (6-point rubric).
 
-1. THESIS (0-1): Defensible thesis that responds to the prompt with a claim about rhetorical choices.
+RUBRIC:
+1. THESIS (0-1): Defensible thesis responding to the prompt with a claim about rhetorical choices. Must be more than a restatement.
 2. EVIDENCE & COMMENTARY (0-4):
-   - 1 pt: Provides evidence (specific, relevant)
-   - 2 pts: Provides evidence AND explains how it supports the line of reasoning
-   - 3 pts: Supports a line of reasoning with multiple pieces of specific evidence and commentary
-   - 4 pts: Consistently explains how multiple rhetorical choices contribute to the writer's argument or purpose
-3. SOPHISTICATION (0-1): Demonstrates nuance/complexity through counterargument, broader context, rhetorical style control, or qualifying claims.
+   - 1: Provides specific, relevant evidence
+   - 2: Evidence AND explains how it supports the line of reasoning
+   - 3: Multiple pieces of specific evidence with commentary supporting a line of reasoning
+   - 4: Consistently explains how multiple rhetorical choices contribute to the writer's argument/purpose
+3. SOPHISTICATION (0-1): Complexity through counterargument, broader context, rhetorical style control, or qualifying claims.
 
-Return your response as JSON with this exact structure:
+ANALYSIS GUIDANCE for feedback:
+- Evidence markers: quotation marks, paraphrase verbs, source tags
+- Commentary markers: "this shows", "therefore", "because", "suggests"
+- Flag quote-dumps (evidence without commentary)
+- Check if each paragraph ties back to thesis
+
+Return JSON:
 {
-  "thesis": { "score": 0|1, "feedback": "..." },
-  "evidence_commentary": { "score": 0|1|2|3|4, "feedback": "..." },
-  "sophistication": { "score": 0|1, "feedback": "..." },
+  "thesis": { "score": 0|1, "feedback": "...", "prompt_alignment": "pass|revise" },
+  "evidence_commentary": { "score": 0-4, "feedback": "...", "evidence_count": 0, "commentary_gaps": ["..."] },
+  "sophistication": { "score": 0|1, "feedback": "...", "sophistication_type": "none|counterargument|broader_context|style_control|qualification" },
   "total_score": 0-6,
-  "overall_feedback": "2-3 sentences of encouragement and top priority improvement",
-  "next_steps": ["actionable tip 1", "actionable tip 2", "actionable tip 3"]
+  "overall_feedback": "...",
+  "next_steps": ["..."],
+  "line_of_reasoning_check": "pass|weak|missing"
 }`,
   },
   ap_lang_synthesis: {
     maxScore: 6,
-    systemPrompt: `You are an expert AP English Language grader. Grade the student's Synthesis essay using the official College Board 6-point rubric:
+    systemPrompt: `You are an expert AP English Language grader for Synthesis essays (6-point rubric).
 
+RUBRIC:
 1. THESIS (0-1): Defensible thesis that takes a position on the prompt.
 2. EVIDENCE & COMMENTARY (0-4):
-   - 1 pt: Provides evidence from sources
-   - 2 pts: Uses evidence from 3+ sources to support the argument
-   - 3 pts: Explains how evidence supports the line of reasoning
-   - 4 pts: Consistently explains how evidence from sources contributes to the argument with clear reasoning
-3. SOPHISTICATION (0-1): Demonstrates complexity through counterargument, nuance, broader context, or style control.
+   - 1: Provides evidence from sources
+   - 2: Uses evidence from 3+ sources to support the argument
+   - 3: Explains how evidence supports the line of reasoning
+   - 4: Consistently explains how evidence from sources contributes to the argument with clear reasoning
+3. SOPHISTICATION (0-1): Complexity through counterargument, nuance, broader context, or style control.
 
-Return your response as JSON with this exact structure:
+Check source integration quality: Are sources cited? Are they explained, not just dropped?
+
+Return JSON:
 {
-  "thesis": { "score": 0|1, "feedback": "..." },
-  "evidence_commentary": { "score": 0|1|2|3|4, "feedback": "..." },
-  "sophistication": { "score": 0|1, "feedback": "..." },
+  "thesis": { "score": 0|1, "feedback": "...", "prompt_alignment": "pass|revise" },
+  "evidence_commentary": { "score": 0-4, "feedback": "...", "sources_used": 0, "commentary_gaps": ["..."] },
+  "sophistication": { "score": 0|1, "feedback": "...", "sophistication_type": "none|counterargument|broader_context|style_control|qualification" },
   "total_score": 0-6,
-  "overall_feedback": "2-3 sentences of encouragement and top priority improvement",
-  "next_steps": ["actionable tip 1", "actionable tip 2", "actionable tip 3"]
+  "overall_feedback": "...",
+  "next_steps": ["..."],
+  "line_of_reasoning_check": "pass|weak|missing"
 }`,
   },
   ap_lang_argument: {
     maxScore: 6,
-    systemPrompt: `You are an expert AP English Language grader. Grade the student's Argument essay using the official College Board 6-point rubric:
+    systemPrompt: `You are an expert AP English Language grader for Argument essays (6-point rubric).
 
+RUBRIC:
 1. THESIS (0-1): Defensible thesis that takes a clear position.
 2. EVIDENCE & COMMENTARY (0-4):
-   - 1 pt: Provides relevant evidence
-   - 2 pts: Provides evidence that supports the line of reasoning
-   - 3 pts: Explains how evidence supports the argument with commentary
-   - 4 pts: Consistently provides specific evidence with insightful commentary that advances the argument
-3. SOPHISTICATION (0-1): Demonstrates complexity through counterargument, qualification, broader context, or effective rhetorical style.
+   - 1: Provides relevant evidence
+   - 2: Evidence supports the line of reasoning
+   - 3: Explains how evidence supports the argument with commentary
+   - 4: Consistently provides specific evidence with insightful commentary advancing the argument
+3. SOPHISTICATION (0-1): Complexity through counterargument, qualification, broader context, or effective rhetorical style.
 
-Return your response as JSON with this exact structure:
+Return JSON:
 {
-  "thesis": { "score": 0|1, "feedback": "..." },
-  "evidence_commentary": { "score": 0|1|2|3|4, "feedback": "..." },
-  "sophistication": { "score": 0|1, "feedback": "..." },
+  "thesis": { "score": 0|1, "feedback": "...", "prompt_alignment": "pass|revise" },
+  "evidence_commentary": { "score": 0-4, "feedback": "...", "evidence_count": 0, "commentary_gaps": ["..."] },
+  "sophistication": { "score": 0|1, "feedback": "...", "sophistication_type": "none|counterargument|broader_context|style_control|qualification" },
   "total_score": 0-6,
-  "overall_feedback": "2-3 sentences of encouragement and top priority improvement",
-  "next_steps": ["actionable tip 1", "actionable tip 2", "actionable tip 3"]
+  "overall_feedback": "...",
+  "next_steps": ["..."],
+  "line_of_reasoning_check": "pass|weak|missing"
+}`,
+  },
+  // FRQ grading for STEM subjects
+  frq_stem: {
+    maxScore: 5,
+    systemPrompt: `You are an expert AP exam FRQ grader. Grade the student's free-response answer using the scoring guidelines provided in the prompt.
+
+Evaluate each part separately. For each part, determine if the student earned the point based on the criteria.
+
+Return JSON:
+{
+  "parts": [
+    { "part": "a", "score": 0|1, "feedback": "..." },
+    { "part": "b", "score": 0|1, "feedback": "..." },
+    { "part": "c", "score": 0|1, "feedback": "..." }
+  ],
+  "total_score": 0-N,
+  "max_score": N,
+  "overall_feedback": "2-3 sentences of encouragement and improvement",
+  "next_steps": ["actionable tip 1", "actionable tip 2"]
 }`,
   },
 };
@@ -100,7 +151,7 @@ serve(async (req) => {
   if (req.method === "OPTIONS") return new Response(null, { headers: corsHeaders });
 
   try {
-    const { essay, rubric_type, prompt_text } = await req.json();
+    const { essay, rubric_type, prompt_text, scoring_guidelines } = await req.json();
 
     if (!essay || !rubric_type) {
       return new Response(JSON.stringify({ error: "Missing essay or rubric_type" }), {
@@ -120,9 +171,10 @@ serve(async (req) => {
     const LOVABLE_API_KEY = Deno.env.get("LOVABLE_API_KEY");
     if (!LOVABLE_API_KEY) throw new Error("LOVABLE_API_KEY is not configured");
 
-    const userMessage = prompt_text
-      ? `PROMPT: ${prompt_text}\n\nSTUDENT ESSAY:\n${essay}`
-      : `STUDENT ESSAY:\n${essay}`;
+    let userMessage = "";
+    if (prompt_text) userMessage += `PROMPT: ${prompt_text}\n\n`;
+    if (scoring_guidelines) userMessage += `SCORING GUIDELINES:\n${JSON.stringify(scoring_guidelines)}\n\n`;
+    userMessage += `STUDENT RESPONSE:\n${essay}`;
 
     const response = await fetch("https://ai.gateway.lovable.dev/v1/chat/completions", {
       method: "POST",
@@ -161,7 +213,6 @@ serve(async (req) => {
     const data = await response.json();
     const content = data.choices?.[0]?.message?.content || "";
 
-    // Extract JSON from the response
     const jsonMatch = content.match(/\{[\s\S]*\}/);
     if (!jsonMatch) {
       return new Response(JSON.stringify({ error: "Failed to parse grading response", raw: content }), {
