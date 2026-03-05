@@ -1,0 +1,1 @@
+ALTER TABLE public.profiles ADD COLUMN IF NOT EXISTS pinned_subjects text[] DEFAULT '{}' NOT NULL;

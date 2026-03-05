@@ -32,6 +32,9 @@ import { PerfectStreakDisplay } from "@/components/PerfectStreakDisplay";
 import { usePerfectStreak } from "@/hooks/usePerfectStreak";
 import { PlayerLevelBadge } from "@/components/PlayerLevelBadge";
 import { BottomNav } from "@/components/BottomNav";
+import { WelcomeModal } from "@/components/WelcomeModal";
+import { SubjectPinManager } from "@/components/SubjectPinManager";
+import { Pin, PenTool as PenToolIcon } from "lucide-react";
 
 // Motivational messages for non-logged in or idle users
 const motivationalMessages = [
@@ -101,6 +104,8 @@ const Home = () => {
   const [practiceDates, setPracticeDates] = useState<string[]>([]);
   const { streak: perfectStreak } = usePerfectStreak();
   const [showExamSelector, setShowExamSelector] = useState(false);
+  const [pinnedSubjects, setPinnedSubjects] = useState<string[]>([]);
+  const [showPinManager, setShowPinManager] = useState(false);
 
   const nextSAT = getNextExamDate(examType);
 
@@ -130,13 +135,14 @@ const Home = () => {
       
       const { data: profile } = await supabase
         .from("profiles")
-        .select("username, avatar_emoji")
+        .select("username, avatar_emoji, pinned_subjects")
         .eq("id", user.id)
         .maybeSingle();
       
       if (profile) {
         setPlayerUsername(profile.username || "Fighter");
         setPlayerAvatar(profile.avatar_emoji || "🧑‍🚀");
+        setPinnedSubjects((profile as any).pinned_subjects || []);
       }
 
       const calStart = new Date();
@@ -614,44 +620,59 @@ const Home = () => {
 
         {/* Activities Grid - Consolidated */}
         <div className="mb-4">
-          <h3 className="text-sm font-semibold text-muted-foreground uppercase tracking-wide mb-3">Activities</h3>
-          <div className="grid grid-cols-4 gap-3">
-            {[
-              { icon: Gamepad2, label: 'Arcade', color: 'bg-indigo-100 dark:bg-indigo-900/30', iconColor: 'text-indigo-600 dark:text-indigo-400', to: '/arcade' },
-              { icon: FileText, label: 'Full Test', color: 'bg-emerald-100 dark:bg-emerald-900/30', iconColor: 'text-emerald-600 dark:text-emerald-400', to: '/practice-test?mode=full' },
-              { icon: Trophy, label: 'Study Progress', color: 'bg-amber-100 dark:bg-amber-900/30', iconColor: 'text-amber-600 dark:text-amber-400', to: '/mastery' },
-              { icon: BookOpen, label: 'By Topic', color: 'bg-blue-100 dark:bg-blue-900/30', iconColor: 'text-blue-600 dark:text-blue-400', to: '/problems-by-topic' },
-              { icon: Target, label: 'Weaknesses', color: 'bg-red-100 dark:bg-red-900/30', iconColor: 'text-red-600 dark:text-red-400', to: '/study?mode=weakness' },
-              { icon: RotateCcw, label: 'Review Missed', color: 'bg-orange-100 dark:bg-orange-900/30', iconColor: 'text-orange-600 dark:text-orange-400', to: '/review' },
-              { icon: Brain, label: 'Insights', color: 'bg-purple-100 dark:bg-purple-900/30', iconColor: 'text-purple-600 dark:text-purple-400', to: '/insights' },
-              { icon: Lightbulb, label: `Key ${examConfig.shortName} Rules`, color: 'bg-yellow-100 dark:bg-yellow-900/30', iconColor: 'text-yellow-600 dark:text-yellow-400', to: '/key-principles' },
-              { icon: Skull, label: 'Boss Battle', color: 'bg-rose-100 dark:bg-rose-900/30', iconColor: 'text-rose-600 dark:text-rose-400', to: '/boss-battle' },
-              { icon: Crown, label: 'Elite Practice', color: 'bg-gradient-to-br from-amber-100 to-orange-100 dark:from-amber-900/30 dark:to-orange-900/30', iconColor: 'text-amber-500', to: '/elite-practice' },
-              { icon: BookOpen, label: 'SAT Vocab', color: 'bg-emerald-100 dark:bg-emerald-900/30', iconColor: 'text-emerald-600 dark:text-emerald-400', to: '/vocab' },
-              { icon: Globe, label: 'French Comp', color: 'bg-blue-100 dark:bg-blue-900/30', iconColor: 'text-blue-600 dark:text-blue-400', to: '/french-competition' },
-              { icon: Smartphone, label: 'Install App', color: 'bg-teal-100 dark:bg-teal-900/30', iconColor: 'text-teal-600 dark:text-teal-400', to: '/install' },
-            ].map((item, idx) => (
-              item.to === '/install' ? (
-                <div key={idx} onClick={() => navigate('/install')} className={`${item.color} rounded-xl p-4 flex flex-col items-center text-center gap-2 aspect-square justify-center hover:scale-105 transition-transform cursor-pointer border border-border/50`}>
-                  <div className="w-14 h-14 rounded-full bg-background/60 flex items-center justify-center">
-                    <item.icon className={`w-7 h-7 ${item.iconColor}`} />
-                  </div>
-                  <span className="text-xs font-semibold leading-tight text-foreground">{item.label}</span>
-                </div>
-              ) : (
-              <Link key={idx} to={item.to}>
-                <div className={`${item.color} rounded-xl p-4 flex flex-col items-center text-center gap-2 aspect-square justify-center hover:scale-105 transition-transform cursor-pointer border border-border/50`}>
-                  <div className="w-14 h-14 rounded-full bg-background/60 flex items-center justify-center">
-                    <item.icon className={`w-7 h-7 ${item.iconColor}`} />
-                  </div>
-                  <span className="text-xs font-semibold leading-tight text-foreground">{item.label}</span>
-                </div>
-              </Link>
-              )
-            ))}
+          <div className="flex items-center justify-between mb-3">
+            <h3 className="text-sm font-semibold text-muted-foreground uppercase tracking-wide">Activities</h3>
+            <Button variant="ghost" size="sm" className="h-7 gap-1 text-xs text-muted-foreground" onClick={() => setShowPinManager(true)}>
+              <Pin className="w-3 h-3" />
+              Customize
+            </Button>
           </div>
-        </div>
+          {(() => {
+            const allTiles = [
+              { id: 'arcade', icon: Gamepad2, label: 'Arcade', color: 'bg-indigo-100 dark:bg-indigo-900/30', iconColor: 'text-indigo-600 dark:text-indigo-400', to: '/arcade' },
+              { id: 'full-test', icon: FileText, label: 'Full Test', color: 'bg-emerald-100 dark:bg-emerald-900/30', iconColor: 'text-emerald-600 dark:text-emerald-400', to: '/practice-test?mode=full' },
+              { id: 'study-progress', icon: Trophy, label: 'Study Progress', color: 'bg-amber-100 dark:bg-amber-900/30', iconColor: 'text-amber-600 dark:text-amber-400', to: '/mastery' },
+              { id: 'by-topic', icon: BookOpen, label: 'By Topic', color: 'bg-blue-100 dark:bg-blue-900/30', iconColor: 'text-blue-600 dark:text-blue-400', to: '/problems-by-topic' },
+              { id: 'weaknesses', icon: Target, label: 'Weaknesses', color: 'bg-red-100 dark:bg-red-900/30', iconColor: 'text-red-600 dark:text-red-400', to: '/study?mode=weakness' },
+              { id: 'review-missed', icon: RotateCcw, label: 'Review Missed', color: 'bg-orange-100 dark:bg-orange-900/30', iconColor: 'text-orange-600 dark:text-orange-400', to: '/review' },
+              { id: 'insights', icon: Brain, label: 'Insights', color: 'bg-purple-100 dark:bg-purple-900/30', iconColor: 'text-purple-600 dark:text-purple-400', to: '/insights' },
+              { id: 'key-rules', icon: Lightbulb, label: `Key ${examConfig.shortName} Rules`, color: 'bg-yellow-100 dark:bg-yellow-900/30', iconColor: 'text-yellow-600 dark:text-yellow-400', to: '/key-principles' },
+              { id: 'boss-battle', icon: Skull, label: 'Boss Battle', color: 'bg-rose-100 dark:bg-rose-900/30', iconColor: 'text-rose-600 dark:text-rose-400', to: '/boss-battle' },
+              { id: 'elite-practice', icon: Crown, label: 'Elite Practice', color: 'bg-gradient-to-br from-amber-100 to-orange-100 dark:from-amber-900/30 dark:to-orange-900/30', iconColor: 'text-amber-500', to: '/elite-practice' },
+              { id: 'sat-vocab', icon: BookOpen, label: 'SAT Vocab', color: 'bg-emerald-100 dark:bg-emerald-900/30', iconColor: 'text-emerald-600 dark:text-emerald-400', to: '/vocab' },
+              { id: 'french-comp', icon: Globe, label: 'French Comp', color: 'bg-blue-100 dark:bg-blue-900/30', iconColor: 'text-blue-600 dark:text-blue-400', to: '/french-competition' },
+              { id: 'writing-lab', icon: PenToolIcon, label: 'Writing Lab', color: 'bg-violet-100 dark:bg-violet-900/30', iconColor: 'text-violet-600 dark:text-violet-400', to: '/writing-lab' },
+              { id: 'essay-grader', icon: FileText, label: 'Essay Grader', color: 'bg-pink-100 dark:bg-pink-900/30', iconColor: 'text-pink-600 dark:text-pink-400', to: '/essay-grader' },
+              { id: 'ap-tests', icon: GraduationCap, label: 'AP Tests', color: 'bg-purple-100 dark:bg-purple-900/30', iconColor: 'text-purple-600 dark:text-purple-400', to: '/ap-tests' },
+              { id: 'install', icon: Smartphone, label: 'Install App', color: 'bg-teal-100 dark:bg-teal-900/30', iconColor: 'text-teal-600 dark:text-teal-400', to: '/install' },
+            ];
 
+            // Sort: pinned first, then unpinned in original order
+            const sorted = [...allTiles].sort((a, b) => {
+              const aPin = pinnedSubjects.includes(a.id) ? 0 : 1;
+              const bPin = pinnedSubjects.includes(b.id) ? 0 : 1;
+              return aPin - bPin;
+            });
+
+            return (
+              <div className="grid grid-cols-4 gap-3">
+                {sorted.map((item) => (
+                  <Link key={item.id} to={item.to}>
+                    <div className={`${item.color} rounded-xl p-4 flex flex-col items-center text-center gap-2 aspect-square justify-center hover:scale-105 transition-transform cursor-pointer border ${pinnedSubjects.includes(item.id) ? 'border-primary/50 ring-1 ring-primary/20' : 'border-border/50'}`}>
+                      <div className="w-14 h-14 rounded-full bg-background/60 flex items-center justify-center relative">
+                        <item.icon className={`w-7 h-7 ${item.iconColor}`} />
+                        {pinnedSubjects.includes(item.id) && (
+                          <Pin className="w-3 h-3 text-primary absolute -top-1 -right-1" />
+                        )}
+                      </div>
+                      <span className="text-xs font-semibold leading-tight text-foreground">{item.label}</span>
+                    </div>
+                  </Link>
+                ))}
+              </div>
+            );
+          })()}
+        </div>
         {/* Mini cards row: Badges + Leaderboard */}
         <div className="grid grid-cols-2 gap-3 mb-4">
           <Card className="p-3">
@@ -744,6 +765,17 @@ const Home = () => {
         </div>
       </div>
       </div>
+
+      {/* Welcome Modal for new users */}
+      <WelcomeModal />
+
+      {/* Subject Pin Manager */}
+      <SubjectPinManager
+        isOpen={showPinManager}
+        onClose={() => setShowPinManager(false)}
+        pinnedSubjects={pinnedSubjects}
+        onSave={setPinnedSubjects}
+      />
 
       {/* Persistent Bottom Navigation */}
       <BottomNav />

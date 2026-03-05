@@ -430,6 +430,7 @@ export type Database = {
           created_at: string
           exam_type: string
           id: string
+          pinned_subjects: string[]
           show_on_leaderboards: boolean
           theme_color: string | null
           updated_at: string
@@ -441,6 +442,7 @@ export type Database = {
           created_at?: string
           exam_type?: string
           id: string
+          pinned_subjects?: string[]
           show_on_leaderboards?: boolean
           theme_color?: string | null
           updated_at?: string
@@ -452,6 +454,7 @@ export type Database = {
           created_at?: string
           exam_type?: string
           id?: string
+          pinned_subjects?: string[]
           show_on_leaderboards?: boolean
           theme_color?: string | null
           updated_at?: string
