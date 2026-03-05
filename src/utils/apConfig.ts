@@ -32,7 +32,7 @@ export const AP_SUBJECTS: APSubject[] = [
 
   // Math
   { id: 'ap-calculus-ab', name: 'AP Calculus AB', shortName: 'Calc AB', icon: '📈', category: 'math', scoreRange: { min: 1, max: 5 }, description: 'Limits, derivatives, integrals', comingSoon: true },
-  { id: 'ap-calculus-bc', name: 'AP Calculus BC', shortName: 'Calc BC', icon: '📊', category: 'math', scoreRange: { min: 1, max: 5 }, description: 'Calc AB + series, parametric, polar', comingSoon: true },
+  { id: 'ap-calculus-bc', name: 'AP Calculus BC', shortName: 'Calc BC', icon: '📊', category: 'math', scoreRange: { min: 1, max: 5 }, description: 'Calc AB + series, parametric, polar' },
   { id: 'ap-statistics', name: 'AP Statistics', shortName: 'Statistics', icon: '📉', category: 'math', scoreRange: { min: 1, max: 5 }, description: 'Data analysis, probability, inference', comingSoon: true },
 
   // History & Social Sciences
