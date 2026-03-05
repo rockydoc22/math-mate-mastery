@@ -271,7 +271,7 @@ const Home = () => {
               className={`gap-1 text-[10px] h-7 px-2 ${hasUpdate ? 'animate-pulse bg-emerald-500 hover:bg-emerald-600 text-white' : ''}`}
             >
               <RefreshCw className={`w-3 h-3 ${isUpdating ? "animate-spin" : ""}`} />
-              {isUpdating ? "..." : hasUpdate ? "🆕 Update" : `v${APP_VERSION}`}
+              {isUpdating ? "..." : hasUpdate ? `🆕 Update v${APP_VERSION}` : `v${APP_VERSION}`}
             </Button>
           </div>
 
@@ -292,7 +292,7 @@ const Home = () => {
                   </Link>
                 </div>
                 <div className="flex items-center gap-1">
-                  <p className="text-xs text-muted-foreground truncate max-w-[120px]">
+                  <p className="text-sm text-muted-foreground truncate max-w-[120px]">
                     {playerAvatar} <span className="font-semibold text-foreground">{playerUsername}</span>
                   </p>
                   <Link to="/settings">

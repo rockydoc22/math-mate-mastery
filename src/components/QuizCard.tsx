@@ -8,6 +8,7 @@ import { CheckCircle2, XCircle, Flag, Lightbulb, AlertTriangle } from "lucide-re
 import { FlagQuestionModal } from "./FlagQuestionModal";
 import { QuestionVisual } from "./QuestionVisual";
 import { MathText } from "./MathText";
+import { ClickableText } from "./ClickableText";
 import { findKeyConcept, KeyConcept } from "@/data/satKeyConcepts";
 
 interface QuizCardProps {
@@ -39,7 +40,7 @@ export const QuizCard = ({ question, selectedAnswer, onSelectAnswer, showResult,
                 {question.domain} • {question.skill}
               </p>
               <h2 className="text-base sm:text-lg md:text-xl font-bold leading-relaxed whitespace-pre-wrap break-words">
-                {questionType === 'math' ? <MathText text={question.question} /> : question.question}
+                {questionType === 'math' ? <MathText text={question.question} /> : <ClickableText text={question.question} />}
               </h2>
             </div>
             <Button
@@ -115,7 +116,7 @@ export const QuizCard = ({ question, selectedAnswer, onSelectAnswer, showResult,
                       {option.letter}.
                     </span>
                     <span className="flex-1 text-sm sm:text-base break-words">
-                      {questionType === 'math' ? <MathText text={option.text} /> : option.text}
+                      {questionType === 'math' ? <MathText text={option.text} /> : <ClickableText text={option.text} />}
                     </span>
                     {showCorrect && <CheckCircle2 className="w-4 h-4 sm:w-5 sm:h-5 text-success flex-shrink-0" />}
                     {showWrong && <XCircle className="w-4 h-4 sm:w-5 sm:h-5 text-destructive flex-shrink-0" />}
@@ -131,7 +132,7 @@ export const QuizCard = ({ question, selectedAnswer, onSelectAnswer, showResult,
               <div className="p-3 sm:p-4 bg-muted rounded-lg">
                 <p className="text-xs sm:text-sm font-semibold mb-1 sm:mb-2 text-foreground">Explanation:</p>
                 <p className="text-xs sm:text-sm text-muted-foreground leading-relaxed break-words">
-                  {questionType === 'math' ? <MathText text={question.explanation} /> : question.explanation}
+                  {questionType === 'math' ? <MathText text={question.explanation} /> : <ClickableText text={question.explanation} />}
                 </p>
               </div>
 

@@ -42,35 +42,27 @@ export const SolvingForPrompt = ({ onConfirm, questionType }: SolvingForPromptPr
   }
 
   return (
-    <Card className="border-2 border-primary/30 bg-primary/5">
-      <CardContent className="p-4">
-        <div className="flex items-center gap-2 mb-3">
-          <Target className="w-5 h-5 text-primary" />
-          <h4 className="font-semibold text-sm">Before you solve...</h4>
+    <Card className="border border-primary/30 bg-primary/5">
+      <CardContent className="p-3">
+        <div className="flex items-center gap-2 mb-2">
+          <Target className="w-4 h-4 text-primary" />
+          <h4 className="font-semibold text-xs">Before you solve — what are you solving for?</h4>
         </div>
-        
-        <p className="text-sm text-muted-foreground mb-3">
-          Write down exactly what the question is asking for. This prevents interpretation errors.
-        </p>
 
         <div className="flex gap-2">
           <Input
             placeholder="I am solving for..."
             value={answer}
             onChange={(e) => setAnswer(e.target.value)}
-            className="text-sm"
+            className="text-sm h-8"
             onKeyDown={(e) => {
               if (e.key === 'Enter') handleConfirm();
             }}
           />
-          <Button onClick={handleConfirm} size="sm">
+          <Button onClick={handleConfirm} size="sm" className="h-8">
             Confirm
           </Button>
         </div>
-
-        <p className="text-xs text-muted-foreground mt-2">
-          💡 Tip: Circle the variable or value being asked for
-        </p>
       </CardContent>
     </Card>
   );

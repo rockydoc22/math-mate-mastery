@@ -135,7 +135,7 @@ export const LandingPage = () => {
           className={`gap-2 w-full max-w-xs ${hasUpdate ? 'animate-pulse bg-emerald-500 hover:bg-emerald-600 text-white' : ''}`}
         >
           <RefreshCw className={`w-4 h-4 ${isUpdating ? "animate-spin" : ""}`} />
-          {isUpdating ? "Updating..." : hasUpdate ? "🆕 Update Available — Tap Now" : `Check for Updates (v${APP_VERSION})`}
+          {isUpdating ? "Updating..." : hasUpdate ? `🆕 Update v${APP_VERSION} — Tap Now` : `Update v${APP_VERSION}`}
         </Button>
       </div>
       {/* Hero Section */}
@@ -257,6 +257,31 @@ export const LandingPage = () => {
         </section>
       )}
 
+      {/* Arcade Preview - moved up for visibility */}
+      <section className="px-4 py-8">
+        <div className="max-w-2xl mx-auto text-center">
+          <h2 className="text-2xl font-bold mb-4 flex items-center justify-center gap-2">
+            <Gamepad2 className="w-6 h-6 text-primary" />
+            Learning Arcade
+          </h2>
+          <p className="text-muted-foreground mb-6">Master SAT concepts through games</p>
+          <div className="grid grid-cols-3 gap-4 mb-6">
+            <Card className="p-4 text-center">
+              <span className="text-3xl mb-2 block">🚀</span>
+              <span className="text-sm font-semibold">Zalaga</span>
+            </Card>
+            <Card className="p-4 text-center">
+              <span className="text-3xl mb-2 block">🪢</span>
+              <span className="text-sm font-semibold">Hangman</span>
+            </Card>
+            <Card className="p-4 text-center">
+              <span className="text-3xl mb-2 block">♟️</span>
+              <span className="text-sm font-semibold">Chess</span>
+            </Card>
+          </div>
+        </div>
+      </section>
+
       {/* Social Proof */}
       <section className="px-4 py-8 bg-muted/30">
         <div className="max-w-2xl mx-auto text-center">
@@ -353,30 +378,6 @@ export const LandingPage = () => {
         </div>
       </section>
 
-      {/* Arcade Preview */}
-      <section className="px-4 py-12">
-        <div className="max-w-2xl mx-auto text-center">
-          <h2 className="text-2xl font-bold mb-4 flex items-center justify-center gap-2">
-            <Gamepad2 className="w-6 h-6 text-primary" />
-            Learning Arcade
-          </h2>
-          <p className="text-muted-foreground mb-6">Master SAT concepts through games — Zalaga, Hangman & Chess</p>
-          <div className="grid grid-cols-3 gap-4 mb-6">
-            <Card className="p-4 text-center">
-              <span className="text-3xl mb-2 block">🚀</span>
-              <span className="text-sm font-semibold">Zalaga</span>
-            </Card>
-            <Card className="p-4 text-center">
-              <span className="text-3xl mb-2 block">🪢</span>
-              <span className="text-sm font-semibold">Hangman</span>
-            </Card>
-            <Card className="p-4 text-center">
-              <span className="text-3xl mb-2 block">♟️</span>
-              <span className="text-sm font-semibold">Chess</span>
-            </Card>
-          </div>
-        </div>
-      </section>
 
       {/* Start Practicing Now */}
       <section className="px-4 py-12 bg-muted/30">
