@@ -1,11 +1,11 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { ArrowLeft, BookOpen, Brain, ChevronRight, CheckCircle2, XCircle, Sparkles } from "lucide-react";
 import { getAPSubject } from "@/utils/apConfig";
 import { AP_CHEM_UNITS, apChemQuestionsByUnit, type APChemUnit } from "@/data/apChemistryQuestions";
-import { AP_USH_UNITS, apUSHQuestionsByUnit } from "@/data/apUSHistoryQuestions";
+import { AP_USH_UNITS, apUSHQuestionsByUnit, loadAPUSHQuestions } from "@/data/apUSHistoryQuestions";
 import { Question } from "@/data/questions";
 import { MathText } from "@/components/MathText";
 import { AITutorExplanation } from "@/components/AITutorExplanation";
@@ -21,6 +21,14 @@ const APStudy = () => {
   const subject = subjectId ? getAPSubject(subjectId) : undefined;
   const [view, setView] = useState<ViewState>({ mode: 'units' });
   const [showAITutor, setShowAITutor] = useState(false);
+  const [ushQuestions, setUshQuestions] = useState<Record<string, Question[]>>(apUSHQuestionsByUnit);
+
+  // Lazy-load the full APUSH bank when viewing US History
+  useEffect(() => {
+    if (subjectId === 'ap-us-history') {
+      loadAPUSHQuestions().then(setUshQuestions);
+    }
+  }, [subjectId]);
 
   if (!subject) {
     return (
@@ -38,7 +46,7 @@ const APStudy = () => {
   const isChemistry = subjectId === 'ap-chemistry';
   const isUSHistory = subjectId === 'ap-us-history';
   const units = isChemistry ? AP_CHEM_UNITS : isUSHistory ? AP_USH_UNITS : [];
-  const questionsByUnit = isChemistry ? apChemQuestionsByUnit : isUSHistory ? apUSHQuestionsByUnit : {};
+  const questionsByUnit = isChemistry ? apChemQuestionsByUnit : isUSHistory ? ushQuestions : {};
 
   const startQuiz = (unit: APChemUnit) => {
     const questions = questionsByUnit[unit.id] || [];
