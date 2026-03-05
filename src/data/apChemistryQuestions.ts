@@ -30515,7 +30515,68 @@ const unit9Questions: Question[] = [
   },
 ];
 
-// ─── Exports ───
+// ─── Convert imported JSON bank questions ───
+interface RawChemQuestion {
+  id: string;
+  question: string;
+  choices: Record<string, string>;
+  answer: string;
+  explanation: string;
+  topic: string;
+  stimulus_type?: string;
+  stimulus?: string | { title: string; x_label: string; y_label: string; points: number[][] } | null;
+  difficulty_bucket?: string;
+  difficulty_level?: number;
+}
+
+function convertChemQuestion(raw: RawChemQuestion): Question {
+  const letters = ['A', 'B', 'C', 'D'];
+  let questionText = raw.question;
+  if (raw.stimulus_type === 'text' && typeof raw.stimulus === 'string') {
+    questionText = `"${raw.stimulus}"\n\n${raw.question}`;
+  } else if (raw.stimulus_type === 'chart' && raw.stimulus && typeof raw.stimulus === 'object') {
+    const chart = raw.stimulus as { title: string };
+    questionText = `[Chart: ${chart.title}]\n\n${raw.question}`;
+  }
+  return {
+    id: raw.id.toLowerCase(),
+    question: questionText,
+    options: letters
+      .filter(l => raw.choices[l] !== undefined)
+      .map(l => ({ letter: l, text: raw.choices[l] })),
+    correctAnswer: raw.answer,
+    explanation: raw.explanation,
+    difficulty: raw.difficulty_bucket === 'Easy' ? 'Easy' : raw.difficulty_bucket === 'Hard' ? 'Hard' : 'Medium',
+    domain: raw.topic,
+    skill: raw.topic,
+  };
+}
+
+// ─── Lazy-loaded JSON bank ───
+let _chemBankCache: Record<string, Question[]> | null = null;
+let _chemBankPromise: Promise<Record<string, Question[]>> | null = null;
+
+export async function loadAPChemBankQuestions(): Promise<Record<string, Question[]>> {
+  if (_chemBankCache) return _chemBankCache;
+  if (_chemBankPromise) return _chemBankPromise;
+
+  _chemBankPromise = import('./ap_chem_full_question_bank.json').then((mod) => {
+    const raw = mod.default as any;
+    const result: Record<string, Question[]> = {};
+    for (const unit of raw.units) {
+      const key = `unit-${unit.unit_id}`;
+      result[key] = shuffleAllQuestionOptions(
+        (unit.questions || []).map((q: RawChemQuestion) => convertChemQuestion(q))
+      );
+    }
+    _chemBankCache = result;
+    return result;
+  });
+
+  return _chemBankPromise;
+}
+
+// ─── Exports (inline questions only — bank merged at load time) ───
 export const apChemQuestionsByUnit: Record<string, Question[]> = {
   'unit-1': shuffleAllQuestionOptions(unit1Questions),
   'unit-2': shuffleAllQuestionOptions(unit2Questions),
@@ -30527,6 +30588,19 @@ export const apChemQuestionsByUnit: Record<string, Question[]> = {
   'unit-8': shuffleAllQuestionOptions(unit8Questions),
   'unit-9': shuffleAllQuestionOptions(unit9Questions),
 };
+
+export async function loadAPChemQuestions(): Promise<Record<string, Question[]>> {
+  const bank = await loadAPChemBankQuestions();
+  const result: Record<string, Question[]> = {};
+  for (let i = 1; i <= 9; i++) {
+    const key = `unit-${i}`;
+    const inline = apChemQuestionsByUnit[key] || [];
+    const bankQs = bank[key] || [];
+    const inlineIds = new Set(inline.map(q => q.id));
+    result[key] = [...inline, ...bankQs.filter(q => !inlineIds.has(q.id))];
+  }
+  return result;
+}
 
 export const allAPChemQuestions: Question[] = [
   ...apChemQuestionsByUnit['unit-1'],

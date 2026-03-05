@@ -275,10 +275,44 @@ const rawACTScience = [
   { id: 263, difficulty: 7, skill: 'Research Summaries', question: "Experiment 40: Researchers studied competitive exclusion by growing two species of Paramecium separately and together. Grown separately, both reached carrying capacity (~500 cells/mL). Grown together, P. aurelia reached ~450 while P. caudatum declined to 0 by day 16. This outcome demonstrates:", choices: ["Mutualism", "Competitive exclusion principle", "Predator-prey dynamics", "Commensalism"], answer: "B", explanation: "When two species compete for the same niche, one will outcompete the other. P. aurelia's superior competitive ability drove P. caudatum to local extinction — the classic competitive exclusion principle demonstrated by Gause." },
 ];
 
+// ─── Load hard supplement questions from JSON ───
+import actScienceHardRaw from './act_science_hard_150.json';
+
+interface RawHardSciQuestion {
+  id: string;
+  question: string;
+  choices: Record<string, string>;
+  answer: string;
+  explanation: string;
+  difficulty_level: number;
+  stimulus_type?: string;
+  stimulus?: string | null;
+  domain?: string;
+}
+
+const hardScienceQuestions: typeof rawACTScience[number][] = ((actScienceHardRaw as any).questions || []).map((q: RawHardSciQuestion, idx: number) => {
+  const choiceLetters = ['A', 'B', 'C', 'D'];
+  let questionText = q.question;
+  if (q.stimulus_type === 'text' && typeof q.stimulus === 'string') {
+    questionText = `"${q.stimulus}"\n\n${q.question}`;
+  }
+  return {
+    id: 1000 + idx,
+    question: questionText,
+    choices: choiceLetters.filter(l => q.choices[l]).map(l => q.choices[l]),
+    answer: q.answer,
+    explanation: q.explanation,
+    difficulty: q.difficulty_level,
+    skill: 'Research Summaries',
+  };
+});
+
+const allRawACTScience = [...rawACTScience, ...hardScienceQuestions];
+
 const letters = ['A', 'B', 'C', 'D'];
 
 export const actScienceQuestions: Question[] = shuffleAllQuestionOptions(
-  rawACTScience.map((q) => {
+  allRawACTScience.map((q) => {
     const raw = q as any;
     const rating = raw.difficulty || (q.id <= 15 ? 5 : q.id <= 35 ? 6 : 7);
     const skill = raw.skill || (q.id <= 10 ? 'Data Representation' : q.id <= 30 ? 'Research Summaries' : 'Conflicting Viewpoints');

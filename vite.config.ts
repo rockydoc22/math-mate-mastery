@@ -50,7 +50,7 @@ export default defineConfig(({ mode }) => ({
         globPatterns: ["**/*.{js,css,ico,png,svg,woff2}"],
         // Explicitly exclude index.html from precache
         globIgnores: ["**/index.html", "**/node_modules/**"],
-        maximumFileSizeToCacheInBytes: 12 * 1024 * 1024,
+        maximumFileSizeToCacheInBytes: 20 * 1024 * 1024,
         skipWaiting: true,
         clientsClaim: true,
         navigationPreload: false,
@@ -99,10 +99,12 @@ export default defineConfig(({ mode }) => ({
       output: {
         manualChunks: {
           'apush-bank': ['./src/data/apush_full_question_bank.json'],
+          'apush-bank-v2': ['./src/data/apush_full_question_bank_v2.json'],
           'aplit-bank': ['./src/data/aplit_full_question_bank.json'],
           'apcalcbc-bank': ['./src/data/apcalcbc_full_question_bank.json'],
           'ap-mega-bank': ['./src/data/ap_mega_bank_lovable.json'],
           'ap-mega-bank-v2': ['./src/data/ap_mega_bank_v2.json'],
+          'ap-chem-bank': ['./src/data/ap_chem_full_question_bank.json'],
         },
       },
     },
