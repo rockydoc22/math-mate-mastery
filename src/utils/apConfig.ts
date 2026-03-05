@@ -26,7 +26,7 @@ export const AP_CATEGORIES: Record<APCategory, { label: string; icon: string }> 
 export const AP_SUBJECTS: APSubject[] = [
   // Sciences
   { id: 'ap-physics-1', name: 'AP Physics 1: Algebra-Based', shortName: 'Physics 1', icon: '⚛️', category: 'sciences', scoreRange: { min: 1, max: 5 }, description: 'Algebra-based physics: mechanics, waves, circuits', comingSoon: true },
-  { id: 'ap-physics-2', name: 'AP Physics 2: Algebra-Based', shortName: 'Physics 2', icon: '🔭', category: 'sciences', scoreRange: { min: 1, max: 5 }, description: 'Fluids, thermodynamics, electromagnetism, optics', comingSoon: true },
+  { id: 'ap-physics-2', name: 'AP Physics 2: Algebra-Based', shortName: 'Physics 2', icon: '🔭', category: 'sciences', scoreRange: { min: 1, max: 5 }, description: 'Fluids, thermodynamics, electromagnetism, optics' },
   { id: 'ap-biology', name: 'AP Biology', shortName: 'Biology', icon: '🧬', category: 'sciences', scoreRange: { min: 1, max: 5 }, description: 'Cells, genetics, evolution, ecology', comingSoon: true },
   { id: 'ap-chemistry', name: 'AP Chemistry', shortName: 'Chemistry', icon: '⚗️', category: 'sciences', scoreRange: { min: 1, max: 5 }, description: 'Atomic structure, reactions, thermodynamics' },
   { id: 'ap-environmental-science', name: 'AP Environmental Science', shortName: 'Env Science', icon: '🌱', category: 'sciences', scoreRange: { min: 1, max: 5 }, description: 'Ecosystems, pollution, sustainability' },

@@ -44,6 +44,7 @@ import FrenchCompetition from "./pages/FrenchCompetition";
 import FrenchLightning from "./pages/FrenchLightning";
 import FrenchSentenceUpgrade from "./pages/FrenchSentenceUpgrade";
 import VocabTrainer from "./pages/VocabTrainer";
+import EssayGrader from "./pages/EssayGrader";
 
 const queryClient = new QueryClient();
 
@@ -94,6 +95,7 @@ const App = () => (
             <Route path="/french-lightning" element={<FrenchLightning />} />
             <Route path="/french-upgrade" element={<FrenchSentenceUpgrade />} />
             <Route path="/vocab" element={<VocabTrainer />} />
+            <Route path="/essay-grader" element={<EssayGrader />} />
             <Route path="/install" element={<InstallApp />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />

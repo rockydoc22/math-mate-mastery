@@ -15,6 +15,7 @@ import { AP_EURO_UNITS, apEuroQuestionsByUnit, loadAPEuroQuestions } from "@/dat
 import { AP_HUG_UNITS, apHuGQuestionsByUnit, loadAPHuGQuestions } from "@/data/apHumanGeoQuestions";
 import { AP_ES_UNITS, apESQuestionsByUnit, loadAPESQuestions } from "@/data/apEnvironmentalScienceQuestions";
 import { AP_CSP_UNITS, apCSPQuestionsByUnit, loadAPCSPQuestions } from "@/data/apCSPQuestions";
+import { AP_PHYS2_UNITS, apPhys2QuestionsByUnit, loadAPPhys2Questions } from "@/data/apPhysics2Questions";
 import { Question } from "@/data/questions";
 import { MathText } from "@/components/MathText";
 import { AITutorExplanation } from "@/components/AITutorExplanation";
@@ -41,6 +42,7 @@ const APStudy = () => {
   const [hugQuestions, setHugQuestions] = useState<Record<string, Question[]>>(apHuGQuestionsByUnit);
   const [esQuestions, setEsQuestions] = useState<Record<string, Question[]>>(apESQuestionsByUnit);
   const [cspQuestions, setCspQuestions] = useState<Record<string, Question[]>>(apCSPQuestionsByUnit);
+  const [phys2Questions, setPhys2Questions] = useState<Record<string, Question[]>>(apPhys2QuestionsByUnit);
 
   useEffect(() => {
     if (subjectId === 'ap-chemistry') {
@@ -65,6 +67,8 @@ const APStudy = () => {
       loadAPESQuestions().then(setEsQuestions);
     } else if (subjectId === 'ap-csp') {
       loadAPCSPQuestions().then(setCspQuestions);
+    } else if (subjectId === 'ap-physics-2') {
+      loadAPPhys2Questions().then(setPhys2Questions);
     }
   }, [subjectId]);
 
@@ -93,6 +97,7 @@ const APStudy = () => {
     'ap-human-geo': { units: AP_HUG_UNITS, questions: hugQuestions },
     'ap-environmental-science': { units: AP_ES_UNITS, questions: esQuestions },
     'ap-csp': { units: AP_CSP_UNITS, questions: cspQuestions },
+    'ap-physics-2': { units: AP_PHYS2_UNITS, questions: phys2Questions },
   };
   const current = subjectMap[subjectId || ''] || { units: [], questions: {} };
   const units = current.units;
@@ -150,6 +155,29 @@ const APStudy = () => {
               <p className="text-sm text-muted-foreground">{subject.description}</p>
             </div>
           </div>
+
+          {/* Essay grader CTA for writing-heavy subjects */}
+          {(subjectId === 'ap-us-history' || subjectId === 'ap-lang') && (
+            <Card
+              className="p-4 cursor-pointer transition-all hover:scale-[1.01] hover:shadow-md border-primary/30 bg-primary/5"
+              onClick={() => navigate(subjectId === 'ap-us-history' ? '/essay-grader?rubric=apush_dbq' : '/essay-grader')}
+            >
+              <div className="flex items-center gap-3">
+                <Sparkles className="w-6 h-6 text-primary" />
+                <div className="flex-1">
+                  <h3 className="font-semibold text-sm">
+                    {subjectId === 'ap-us-history' ? '✍️ AI DBQ Grader' : '✍️ AI Essay Grader'}
+                  </h3>
+                  <p className="text-xs text-muted-foreground">
+                    {subjectId === 'ap-us-history'
+                      ? 'Paste your DBQ essay → get 7-point rubric scores + feedback'
+                      : 'Grade Rhetorical Analysis, Synthesis, or Argument essays (6-point rubric)'}
+                  </p>
+                </div>
+                <ChevronRight className="w-4 h-4 text-muted-foreground" />
+              </div>
+            </Card>
+          )}
 
           {units.length > 0 ? (
             <div className="grid gap-3">
