@@ -41,6 +41,9 @@ import APStudy from "./pages/APStudy";
 import Arcade from "./pages/Arcade";
 import InstallApp from "./pages/InstallApp";
 import FrenchCompetition from "./pages/FrenchCompetition";
+import FrenchLightning from "./pages/FrenchLightning";
+import FrenchSentenceUpgrade from "./pages/FrenchSentenceUpgrade";
+import VocabTrainer from "./pages/VocabTrainer";
 
 const queryClient = new QueryClient();
 
@@ -88,6 +91,9 @@ const App = () => (
             <Route path="/ap-study/:subjectId" element={<APStudy />} />
             <Route path="/arcade" element={<Arcade />} />
             <Route path="/french-competition" element={<FrenchCompetition />} />
+            <Route path="/french-lightning" element={<FrenchLightning />} />
+            <Route path="/french-upgrade" element={<FrenchSentenceUpgrade />} />
+            <Route path="/vocab" element={<VocabTrainer />} />
             <Route path="/install" element={<InstallApp />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
