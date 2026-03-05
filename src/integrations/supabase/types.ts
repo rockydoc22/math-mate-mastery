@@ -74,6 +74,42 @@ export type Database = {
         }
         Relationships: []
       }
+      ap_subject_progress: {
+        Row: {
+          created_at: string
+          id: string
+          last_practiced_at: string | null
+          questions_attempted: number
+          questions_correct: number
+          subject_id: string
+          unit_id: string
+          updated_at: string
+          user_id: string
+        }
+        Insert: {
+          created_at?: string
+          id?: string
+          last_practiced_at?: string | null
+          questions_attempted?: number
+          questions_correct?: number
+          subject_id: string
+          unit_id: string
+          updated_at?: string
+          user_id: string
+        }
+        Update: {
+          created_at?: string
+          id?: string
+          last_practiced_at?: string | null
+          questions_attempted?: number
+          questions_correct?: number
+          subject_id?: string
+          unit_id?: string
+          updated_at?: string
+          user_id?: string
+        }
+        Relationships: []
+      }
       battle_answers: {
         Row: {
           answered_at: string
@@ -922,6 +958,39 @@ export type Database = {
           created_at?: string
           id?: string
           role?: Database["public"]["Enums"]["app_role"]
+          user_id?: string
+        }
+        Relationships: []
+      }
+      writing_lab_sessions: {
+        Row: {
+          ai_features_used: string[] | null
+          completed: boolean | null
+          created_at: string
+          essay_type: string
+          id: string
+          module: string
+          time_spent_seconds: number | null
+          user_id: string
+        }
+        Insert: {
+          ai_features_used?: string[] | null
+          completed?: boolean | null
+          created_at?: string
+          essay_type: string
+          id?: string
+          module: string
+          time_spent_seconds?: number | null
+          user_id: string
+        }
+        Update: {
+          ai_features_used?: string[] | null
+          completed?: boolean | null
+          created_at?: string
+          essay_type?: string
+          id?: string
+          module?: string
+          time_spent_seconds?: number | null
           user_id?: string
         }
         Relationships: []
