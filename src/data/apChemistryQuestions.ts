@@ -1,4 +1,5 @@
 import { Question } from './questions';
+import { shuffleAllQuestionOptions } from '@/utils/optionShuffler';
 
 // AP Chemistry Units (College Board curriculum):
 // Unit 1: Atomic Structure and Properties
@@ -30516,25 +30517,25 @@ const unit9Questions: Question[] = [
 
 // ─── Exports ───
 export const apChemQuestionsByUnit: Record<string, Question[]> = {
-  'unit-1': unit1Questions,
-  'unit-2': unit2Questions,
-  'unit-3': unit3Questions,
-  'unit-4': unit4Questions,
-  'unit-5': unit5Questions,
-  'unit-6': unit6Questions,
-  'unit-7': unit7Questions,
-  'unit-8': unit8Questions,
-  'unit-9': unit9Questions,
+  'unit-1': shuffleAllQuestionOptions(unit1Questions),
+  'unit-2': shuffleAllQuestionOptions(unit2Questions),
+  'unit-3': shuffleAllQuestionOptions(unit3Questions),
+  'unit-4': shuffleAllQuestionOptions(unit4Questions),
+  'unit-5': shuffleAllQuestionOptions(unit5Questions),
+  'unit-6': shuffleAllQuestionOptions(unit6Questions),
+  'unit-7': shuffleAllQuestionOptions(unit7Questions),
+  'unit-8': shuffleAllQuestionOptions(unit8Questions),
+  'unit-9': shuffleAllQuestionOptions(unit9Questions),
 };
 
 export const allAPChemQuestions: Question[] = [
-  ...unit1Questions,
-  ...unit2Questions,
-  ...unit3Questions,
-  ...unit4Questions,
-  ...unit5Questions,
-  ...unit6Questions,
-  ...unit7Questions,
-  ...unit8Questions,
-  ...unit9Questions,
+  ...apChemQuestionsByUnit['unit-1'],
+  ...apChemQuestionsByUnit['unit-2'],
+  ...apChemQuestionsByUnit['unit-3'],
+  ...apChemQuestionsByUnit['unit-4'],
+  ...apChemQuestionsByUnit['unit-5'],
+  ...apChemQuestionsByUnit['unit-6'],
+  ...apChemQuestionsByUnit['unit-7'],
+  ...apChemQuestionsByUnit['unit-8'],
+  ...apChemQuestionsByUnit['unit-9'],
 ];

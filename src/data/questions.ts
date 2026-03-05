@@ -27,6 +27,7 @@ import { actScienceQuestions } from './actScienceQuestions';
 import { rateDifficulty } from '@/utils/difficultyRating';
 import { fixAllSingleOptionQuestions } from '@/utils/questionOptionsFixer';
 import { convertQuestionsToExact } from '@/utils/exactValueConverter';
+import { shuffleAllQuestionOptions } from '@/utils/optionShuffler';
 
 // Fix single-option questions in all SAT batches
 const importedSATMathQuestions = fixAllSingleOptionQuestions(rawImportedSAT1);
@@ -177,13 +178,15 @@ function fixDuplicateOptions(q: Question): Question {
   return { ...q, options: fixedOptions };
 }
 
-export const questions: Question[] = questionsWithoutImages
-  .filter(q => !duplicateIds.has(q.id))
-  .filter(q => (q.difficultyRating || 5) >= MIN_SAT_DIFFICULTY)
-  .map(q => fixDuplicateOptions({
-    ...q,
-    difficultyRating: q.difficultyRating ? Math.min(q.difficultyRating, 10) : q.difficultyRating
-  }));
+export const questions: Question[] = shuffleAllQuestionOptions(
+  questionsWithoutImages
+    .filter(q => !duplicateIds.has(q.id))
+    .filter(q => (q.difficultyRating || 5) >= MIN_SAT_DIFFICULTY)
+    .map(q => fixDuplicateOptions({
+      ...q,
+      difficultyRating: q.difficultyRating ? Math.min(q.difficultyRating, 10) : q.difficultyRating
+    }))
+);
 
 // Export counts for reporting
 export const questionStats = {
