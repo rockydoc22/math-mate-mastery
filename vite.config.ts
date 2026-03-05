@@ -50,7 +50,7 @@ export default defineConfig(({ mode }) => ({
         globPatterns: ["**/*.{js,css,ico,png,svg,woff2}"],
         // Explicitly exclude index.html from precache
         globIgnores: ["**/index.html", "**/node_modules/**"],
-        maximumFileSizeToCacheInBytes: 10 * 1024 * 1024,
+        maximumFileSizeToCacheInBytes: 12 * 1024 * 1024,
         skipWaiting: true,
         clientsClaim: true,
         navigationPreload: false,
