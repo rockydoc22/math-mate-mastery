@@ -1,0 +1,128 @@
+{
+  "title": "Lovable Phase 2 Interactive Writing Modules Spec",
+  "generated_utc": "2026-03-05T18:23:12.364627+00:00",
+  "phase": "Phase 2",
+  "goals": [
+    "low-glitch",
+    "low-cost",
+    "high score impact",
+    "AI opt-in only"
+  ],
+  "modules": [
+    {
+      "key": "thesis_picker",
+      "name": "Thesis Picker",
+      "inputs": [
+        "prompt",
+        "response_text"
+      ],
+      "outputs": [
+        "thesis_span",
+        "flags",
+        "status",
+        "suggestions",
+        "upgraded_thesis_optional"
+      ],
+      "ai_opt_in_buttons": [
+        "Upgrade my thesis"
+      ]
+    },
+    {
+      "key": "evidence_commentary_highlighter",
+      "name": "Evidence vs Commentary Highlighter",
+      "inputs": [
+        "prompt",
+        "response_text",
+        "source_mode_optional"
+      ],
+      "outputs": [
+        "evidence_spans",
+        "commentary_spans",
+        "commentary_gaps",
+        "fix_it_prompts",
+        "suggested_commentary_optional"
+      ],
+      "ai_opt_in_buttons": [
+        "Suggest 1 commentary sentence"
+      ]
+    },
+    {
+      "key": "document_tagger",
+      "name": "Document Tagger",
+      "inputs": [
+        "documents[]",
+        "response_text"
+      ],
+      "outputs": [
+        "doc_tag_spans",
+        "docs_used",
+        "doc_usage_counts",
+        "missing_docs",
+        "integration_prompts"
+      ]
+    },
+    {
+      "key": "hipp_coach",
+      "name": "HIPP Coach",
+      "inputs": [
+        "documents[]",
+        "selected_docs[]"
+      ],
+      "outputs": [
+        "hipp_entries",
+        "hipp_completed_docs",
+        "quality_flags"
+      ],
+      "templates": {
+        "H": "At the time, ___ was happening, which helps explain ___.",
+        "I": "Because the author addressed ___, the message emphasizes ___.",
+        "P": "The author aims to ___, so the document highlights ___.",
+        "POV": "From the perspective of ___, the author likely ___."
+      }
+    },
+    {
+      "key": "line_of_reasoning_map",
+      "name": "Line-of-Reasoning Map",
+      "inputs": [
+        "prompt",
+        "response_text",
+        "thesis_text"
+      ],
+      "outputs": [
+        "paragraphs",
+        "logic_gaps",
+        "reorder_suggestion_optional"
+      ],
+      "ai_opt_in_buttons": [
+        "Suggest reorder + 1 bridging sentence"
+      ]
+    }
+  ],
+  "shared_data_model": {
+    "entities": [
+      "submission",
+      "highlight_span",
+      "module_state"
+    ],
+    "submission_fields": [
+      "submission_id",
+      "course",
+      "prompt_id_optional",
+      "response_text",
+      "created_at",
+      "updated_at"
+    ],
+    "module_state_shape": {
+      "completed": "boolean",
+      "data": "object"
+    }
+  },
+  "analytics": [
+    "module_completion_rate",
+    "time_spent_per_module",
+    "docs_used_count",
+    "commentary_gap_count",
+    "thesis_pass_rate",
+    "ai_opt_in_usage"
+  ]
+}

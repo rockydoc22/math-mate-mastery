@@ -46,6 +46,7 @@ import FrenchSentenceUpgrade from "./pages/FrenchSentenceUpgrade";
 import VocabTrainer from "./pages/VocabTrainer";
 import EssayGrader from "./pages/EssayGrader";
 import FRQPractice from "./pages/FRQPractice";
+import WritingLab from "./pages/WritingLab";
 
 const queryClient = new QueryClient();
 
@@ -98,6 +99,7 @@ const App = () => (
             <Route path="/french-upgrade" element={<FrenchSentenceUpgrade />} />
             <Route path="/vocab" element={<VocabTrainer />} />
             <Route path="/essay-grader" element={<EssayGrader />} />
+            <Route path="/writing-lab" element={<WritingLab />} />
             <Route path="/install" element={<InstallApp />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
