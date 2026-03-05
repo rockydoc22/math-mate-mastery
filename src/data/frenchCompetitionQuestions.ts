@@ -33,13 +33,38 @@ interface RawPhrase {
   tip: string;
 }
 
+// Fisher-Yates shuffle
+function shuffle<T>(arr: T[]): T[] {
+  const a = [...arr];
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
+
+// Shuffle options and remap correctAnswer letter
+function shuffleOptions(
+  options: { letter: string; text: string }[],
+  correctAnswer: string
+): { options: { letter: string; text: string }[]; correctAnswer: string } {
+  const correctText = options.find(o => o.letter === correctAnswer)?.text;
+  const shuffled = shuffle(options);
+  const letters = ["A", "B", "C", "D"];
+  const remapped = shuffled.map((o, i) => ({ letter: letters[i], text: o.text }));
+  const newCorrect = remapped.find(o => o.text === correctText)?.letter || "A";
+  return { options: remapped, correctAnswer: newCorrect };
+}
+
 function convertMCQ(raw: RawMCQ): Question {
   const letters = Object.keys(raw.choices).sort();
+  const rawOptions = letters.map(l => ({ letter: l, text: raw.choices[l] }));
+  const { options, correctAnswer } = shuffleOptions(rawOptions, raw.answer);
   return {
     id: raw.id,
     question: raw.question,
-    options: letters.map(l => ({ letter: l, text: raw.choices[l] })),
-    correctAnswer: raw.answer,
+    options,
+    correctAnswer,
     explanation: raw.explanation,
     difficulty: "5",
     domain: "French",
@@ -47,18 +72,34 @@ function convertMCQ(raw: RawMCQ): Question {
   };
 }
 
+// Pool of distractor connectors for phrase questions
+const DISTRACTOR_CONNECTORS = [
+  "En effet", "Par conséquent", "Néanmoins", "Autrement dit",
+  "En revanche", "De plus", "Ainsi", "Pourtant",
+  "D'ailleurs", "Certes", "Or", "Malgré tout",
+  "En outre", "Bref", "Somme toute", "Quant à",
+];
+
 function convertPhrase(raw: RawPhrase): Question {
-  // Turn elite phrases into MCQ-style: "Which connector fits?"
+  // Pick 3 random distractors that aren't the correct connector
+  const available = DISTRACTOR_CONNECTORS.filter(
+    d => d.toLowerCase() !== raw.connector.toLowerCase()
+  );
+  const distractors = shuffle(available).slice(0, 3);
+
+  const rawOptions = [
+    { letter: "A", text: raw.connector },
+    { letter: "B", text: distractors[0] },
+    { letter: "C", text: distractors[1] },
+    { letter: "D", text: distractors[2] },
+  ];
+  const { options, correctAnswer } = shuffleOptions(rawOptions, "A");
+
   return {
     id: raw.id,
     question: `Which connector is used in: "${raw.phrase}"?`,
-    options: [
-      { letter: "A", text: raw.connector },
-      { letter: "B", text: "En effet" },
-      { letter: "C", text: "Par conséquent" },
-      { letter: "D", text: "Néanmoins" },
-    ],
-    correctAnswer: "A",
+    options,
+    correctAnswer,
     explanation: raw.tip,
     difficulty: "6",
     domain: "French",
