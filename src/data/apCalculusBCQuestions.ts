@@ -68,12 +68,21 @@ async function loadBank(): Promise<Record<string, Question[]>> {
   if (_bankCache) return _bankCache;
   if (_bankPromise) return _bankPromise;
 
-  _bankPromise = import('./apcalcbc_full_question_bank.json').then((mod) => {
-    const raw = mod.default as any;
+  _bankPromise = Promise.all([
+    import('./apcalcbc_full_question_bank.json'),
+    import('./apcalcbc_full_question_bank_v2.json'),
+  ]).then(([mod1, mod2]) => {
     const result: Record<string, Question[]> = {};
-    for (const unit of raw.units) {
+    for (const unit of (mod1.default as any).units) {
       const key = `unit-${unit.unit_id}`;
       result[key] = (unit.questions || []).map((q: RawQuestion) => convertQuestion(q));
+    }
+    for (const unit of (mod2.default as any).units) {
+      const key = `unit-${unit.unit_id}`;
+      const v2Qs = (unit.questions || []).map((q: RawQuestion) => convertQuestion(q));
+      const existing = result[key] || [];
+      const existingIds = new Set(existing.map(q => q.id));
+      result[key] = [...existing, ...v2Qs.filter(q => !existingIds.has(q.id))];
     }
     _bankCache = result;
     return result;
