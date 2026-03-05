@@ -240,7 +240,7 @@ const Home = () => {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-background via-primary/5 to-accent/10 flex flex-col">
+    <div className="min-h-screen bg-gradient-to-br from-background via-primary/5 to-accent/10 flex flex-col overflow-x-hidden">
       {/* PWA Update Banner - Top */}
       {hasUpdate && (
         <div className="px-4 py-2 bg-primary/10 text-center">
@@ -276,23 +276,23 @@ const Home = () => {
           </div>
 
           {/* Sign In / Profile at top right */}
-          <div className="absolute top-4 right-0 flex flex-col items-end gap-1">
+          <div className="absolute top-4 right-0 flex flex-col items-end gap-1 max-w-[45%]">
             {user ? (
               <>
-                <div className="flex items-center gap-2">
+                <div className="flex items-center gap-1">
                   <Link to="/leaderboard">
-                    <Button variant="ghost" size="sm">
+                    <Button variant="ghost" size="sm" className="h-8 w-8 p-0">
                       <Trophy className="w-5 h-5" />
                     </Button>
                   </Link>
                   <Link to="/profile">
-                    <Button variant="ghost" size="sm">
+                    <Button variant="ghost" size="sm" className="h-8 w-8 p-0">
                       <User className="w-5 h-5" />
                     </Button>
                   </Link>
                 </div>
                 <div className="flex items-center gap-1">
-                  <p className="text-[10px] text-muted-foreground">
+                  <p className="text-xs text-muted-foreground truncate max-w-[120px]">
                     {playerAvatar} <span className="font-semibold text-foreground">{playerUsername}</span>
                   </p>
                   <Link to="/settings">

@@ -355,7 +355,7 @@ const ElitePractice = () => {
           <Progress value={progress} className="h-2" />
         </div>
 
-        {/* Solving For Prompt (Math only, before showing question) */}
+        {/* Solving For Prompt (Math only, shown above question) */}
         {showSolvingPrompt && currentQuestion.type === 'math' && !showResult && (
           <SolvingForPrompt
             onConfirm={handleSolvingPromptConfirm}
@@ -363,16 +363,14 @@ const ElitePractice = () => {
           />
         )}
 
-        {/* Question */}
-        {(!showSolvingPrompt || currentQuestion.type === 'english') && (
-          <QuizCard
-            question={currentQuestion as any}
-            selectedAnswer={selectedAnswer}
-            onSelectAnswer={setSelectedAnswer}
-            showResult={showResult}
-            questionType={currentQuestion.type}
-          />
-        )}
+        {/* Question - always visible */}
+        <QuizCard
+          question={currentQuestion as any}
+          selectedAnswer={selectedAnswer}
+          onSelectAnswer={setSelectedAnswer}
+          showResult={showResult}
+          questionType={currentQuestion.type}
+        />
 
         {/* Deep Review (for wrong answers) */}
         {showResult && showDeepReview && selectedAnswer !== currentQuestion.correctAnswer && (
