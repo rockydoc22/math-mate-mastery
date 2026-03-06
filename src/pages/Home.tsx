@@ -302,14 +302,6 @@ const Home = () => {
                 </button>
               );
             })}
-            {/* AP button - open to all users */}
-            <button
-              onClick={() => navigate('/ap-tests')}
-              className="flex flex-col items-center px-3 py-1.5 rounded-lg border-2 transition-all text-xs font-bold border-purple-500/50 bg-purple-500/10 text-purple-400 hover:bg-purple-500/20"
-            >
-              <span>🧪</span>
-              <span>AP</span>
-            </button>
           </div>
 
           {/* Exam Countdown */}
