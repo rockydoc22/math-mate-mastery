@@ -8,7 +8,7 @@ import {
   Calculator, PenTool, Trophy, Zap, Users, LogIn, User, 
   Award, Swords, ChevronRight, Flame, Brain, X,
   Target, RotateCcw, BookOpen, RefreshCw, FileText, Crown, GraduationCap,
-  Clock, Sparkles, Download, Lightbulb, Play, Skull, Settings, Gamepad2, Smartphone, Globe
+  Clock, Sparkles, Download, Lightbulb, Play, Skull, Settings, Gamepad2, Smartphone
 } from "lucide-react";
 import { useNavigate, Link } from "react-router-dom";
 import { useAuth } from "@/hooks/useAuth";
@@ -34,7 +34,7 @@ import { PlayerLevelBadge } from "@/components/PlayerLevelBadge";
 import { BottomNav } from "@/components/BottomNav";
 import { WelcomeModal } from "@/components/WelcomeModal";
 import { SubjectPinManager } from "@/components/SubjectPinManager";
-import { Pin, PenTool as PenToolIcon } from "lucide-react";
+import { Pin } from "lucide-react";
 
 // Motivational messages for non-logged in or idle users
 const motivationalMessages = [
@@ -302,14 +302,6 @@ const Home = () => {
                 </button>
               );
             })}
-            {/* AP button - open to all users */}
-            <button
-              onClick={() => navigate('/ap-tests')}
-              className="flex flex-col items-center px-3 py-1.5 rounded-lg border-2 transition-all text-xs font-bold border-purple-500/50 bg-purple-500/10 text-purple-400 hover:bg-purple-500/20"
-            >
-              <span>🧪</span>
-              <span>AP</span>
-            </button>
           </div>
 
           {/* Exam Countdown */}
@@ -618,7 +610,7 @@ const Home = () => {
           </Link>
         </div>
 
-        {/* Activities Grid - Consolidated */}
+        {/* Activities Grid - Filtered by exam type */}
         <div className="mb-4">
           <div className="flex items-center justify-between mb-3">
             <h3 className="text-sm font-semibold text-muted-foreground uppercase tracking-wide">Activities</h3>
@@ -628,27 +620,31 @@ const Home = () => {
             </Button>
           </div>
           {(() => {
-            const allTiles = [
-              { id: 'arcade', icon: Gamepad2, label: 'Arcade', color: 'bg-indigo-100 dark:bg-indigo-900/30', iconColor: 'text-indigo-600 dark:text-indigo-400', to: '/arcade' },
-              { id: 'full-test', icon: FileText, label: 'Full Test', color: 'bg-emerald-100 dark:bg-emerald-900/30', iconColor: 'text-emerald-600 dark:text-emerald-400', to: '/practice-test?mode=full' },
-              { id: 'study-progress', icon: Trophy, label: 'Study Progress', color: 'bg-amber-100 dark:bg-amber-900/30', iconColor: 'text-amber-600 dark:text-amber-400', to: '/mastery' },
-              { id: 'by-topic', icon: BookOpen, label: 'By Topic', color: 'bg-blue-100 dark:bg-blue-900/30', iconColor: 'text-blue-600 dark:text-blue-400', to: '/problems-by-topic' },
-              { id: 'weaknesses', icon: Target, label: 'Weaknesses', color: 'bg-red-100 dark:bg-red-900/30', iconColor: 'text-red-600 dark:text-red-400', to: '/study?mode=weakness' },
-              { id: 'review-missed', icon: RotateCcw, label: 'Review Missed', color: 'bg-orange-100 dark:bg-orange-900/30', iconColor: 'text-orange-600 dark:text-orange-400', to: '/review' },
-              { id: 'insights', icon: Brain, label: 'Insights', color: 'bg-purple-100 dark:bg-purple-900/30', iconColor: 'text-purple-600 dark:text-purple-400', to: '/insights' },
-              { id: 'key-rules', icon: Lightbulb, label: `Key ${examConfig.shortName} Rules`, color: 'bg-yellow-100 dark:bg-yellow-900/30', iconColor: 'text-yellow-600 dark:text-yellow-400', to: '/key-principles' },
-              { id: 'boss-battle', icon: Skull, label: 'Boss Battle', color: 'bg-rose-100 dark:bg-rose-900/30', iconColor: 'text-rose-600 dark:text-rose-400', to: '/boss-battle' },
-              { id: 'elite-practice', icon: Crown, label: 'Elite Practice', color: 'bg-gradient-to-br from-amber-100 to-orange-100 dark:from-amber-900/30 dark:to-orange-900/30', iconColor: 'text-amber-500', to: '/elite-practice' },
-              { id: 'sat-vocab', icon: BookOpen, label: 'SAT Vocab', color: 'bg-emerald-100 dark:bg-emerald-900/30', iconColor: 'text-emerald-600 dark:text-emerald-400', to: '/vocab' },
-              { id: 'french-comp', icon: Globe, label: 'French Comp', color: 'bg-blue-100 dark:bg-blue-900/30', iconColor: 'text-blue-600 dark:text-blue-400', to: '/french-competition' },
-              { id: 'writing-lab', icon: PenToolIcon, label: 'Writing Lab', color: 'bg-violet-100 dark:bg-violet-900/30', iconColor: 'text-violet-600 dark:text-violet-400', to: '/writing-lab' },
-              { id: 'essay-grader', icon: FileText, label: 'Essay Grader', color: 'bg-pink-100 dark:bg-pink-900/30', iconColor: 'text-pink-600 dark:text-pink-400', to: '/essay-grader' },
-              { id: 'ap-tests', icon: GraduationCap, label: 'AP Tests', color: 'bg-purple-100 dark:bg-purple-900/30', iconColor: 'text-purple-600 dark:text-purple-400', to: '/ap-tests' },
-              { id: 'install', icon: Smartphone, label: 'Install App', color: 'bg-teal-100 dark:bg-teal-900/30', iconColor: 'text-teal-600 dark:text-teal-400', to: '/install' },
+            // Define all tiles with exam scope
+            // 'all' = shows on SAT/PSAT/ACT, 'sat-psat-act' specific combos
+            const allTiles: Array<{
+              id: string; icon: any; label: string; color: string; iconColor: string; to: string;
+              exams: ('sat' | 'psat' | 'act')[];
+            }> = [
+              { id: 'arcade', icon: Gamepad2, label: 'Arcade', color: 'bg-indigo-100 dark:bg-indigo-900/30', iconColor: 'text-indigo-600 dark:text-indigo-400', to: '/arcade', exams: ['sat', 'psat', 'act'] },
+              { id: 'full-test', icon: FileText, label: 'Full Test', color: 'bg-emerald-100 dark:bg-emerald-900/30', iconColor: 'text-emerald-600 dark:text-emerald-400', to: '/practice-test?mode=full', exams: ['sat', 'psat', 'act'] },
+              { id: 'study-progress', icon: Trophy, label: 'Study Progress', color: 'bg-amber-100 dark:bg-amber-900/30', iconColor: 'text-amber-600 dark:text-amber-400', to: '/mastery', exams: ['sat', 'psat', 'act'] },
+              { id: 'by-topic', icon: BookOpen, label: 'By Topic', color: 'bg-blue-100 dark:bg-blue-900/30', iconColor: 'text-blue-600 dark:text-blue-400', to: '/problems-by-topic', exams: ['sat', 'psat', 'act'] },
+              { id: 'weaknesses', icon: Target, label: 'Weaknesses', color: 'bg-red-100 dark:bg-red-900/30', iconColor: 'text-red-600 dark:text-red-400', to: '/study?mode=weakness', exams: ['sat', 'psat', 'act'] },
+              { id: 'review-missed', icon: RotateCcw, label: 'Review Missed', color: 'bg-orange-100 dark:bg-orange-900/30', iconColor: 'text-orange-600 dark:text-orange-400', to: '/review', exams: ['sat', 'psat', 'act'] },
+              { id: 'insights', icon: Brain, label: 'Insights', color: 'bg-purple-100 dark:bg-purple-900/30', iconColor: 'text-purple-600 dark:text-purple-400', to: '/insights', exams: ['sat', 'psat', 'act'] },
+              { id: 'key-rules', icon: Lightbulb, label: `Key ${examConfig.shortName} Rules`, color: 'bg-yellow-100 dark:bg-yellow-900/30', iconColor: 'text-yellow-600 dark:text-yellow-400', to: '/key-principles', exams: ['sat', 'psat', 'act'] },
+              { id: 'boss-battle', icon: Skull, label: 'Boss Battle', color: 'bg-rose-100 dark:bg-rose-900/30', iconColor: 'text-rose-600 dark:text-rose-400', to: '/boss-battle', exams: ['sat', 'psat', 'act'] },
+              { id: 'elite-practice', icon: Crown, label: 'Elite Practice', color: 'bg-gradient-to-br from-amber-100 to-orange-100 dark:from-amber-900/30 dark:to-orange-900/30', iconColor: 'text-amber-500', to: '/elite-practice', exams: ['sat', 'psat', 'act'] },
+              { id: 'sat-vocab', icon: BookOpen, label: `${examConfig.shortName} Vocab`, color: 'bg-emerald-100 dark:bg-emerald-900/30', iconColor: 'text-emerald-600 dark:text-emerald-400', to: '/vocab', exams: ['sat', 'psat'] },
+              { id: 'install', icon: Smartphone, label: 'Install App', color: 'bg-teal-100 dark:bg-teal-900/30', iconColor: 'text-teal-600 dark:text-teal-400', to: '/install', exams: ['sat', 'psat', 'act'] },
             ];
 
+            // Filter tiles to only show those relevant to the current exam
+            const filtered = allTiles.filter(tile => tile.exams.includes(examType as any));
+
             // Sort: pinned first, then unpinned in original order
-            const sorted = [...allTiles].sort((a, b) => {
+            const sorted = [...filtered].sort((a, b) => {
               const aPin = pinnedSubjects.includes(a.id) ? 0 : 1;
               const bPin = pinnedSubjects.includes(b.id) ? 0 : 1;
               return aPin - bPin;

@@ -1,7 +1,6 @@
 import { Card } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
 import { EXAM_CONFIGS, type ExamType } from "@/utils/examConfig";
-import { GraduationCap, FlaskConical } from "lucide-react";
+import { GraduationCap, FlaskConical, Globe } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 
 interface ExamSelectorProps {
@@ -27,79 +26,65 @@ export const ExamSelector = ({ onSelect, isModal = false }: ExamSelectorProps) =
           </p>
         </div>
 
-        <div className="space-y-3">
+        <div className="grid grid-cols-2 gap-3">
+          {/* SAT, PSAT, ACT */}
           {examOrder.map((key) => {
             const config = EXAM_CONFIGS[key];
             return (
               <Card
                 key={key}
-                className="p-5 cursor-pointer border-2 transition-all hover:scale-[1.02] hover:shadow-lg hover:border-primary/50"
+                className="p-4 cursor-pointer border-2 transition-all hover:scale-[1.02] hover:shadow-lg hover:border-primary/50 flex flex-col items-center text-center gap-2"
                 onClick={() => onSelect(key)}
               >
-                <div className="flex items-center gap-4">
-                  <span className="text-3xl">{config.icon}</span>
-                  <div className="flex-1">
-                    <div className="flex items-center gap-2">
-                      <h3 className="font-bold text-lg">{config.name}</h3>
-                    </div>
-                    <p className="text-sm text-muted-foreground">{config.tagline}</p>
-                    <p className="text-xs text-muted-foreground mt-1">
-                      Score range: {config.scoreRange.min}–{config.scoreRange.max} • {config.sections.join(', ')}
-                    </p>
-                  </div>
-                </div>
+                <span className="text-4xl">{config.icon}</span>
+                <h3 className="font-bold text-lg">{config.name}</h3>
+                <p className="text-xs text-muted-foreground">{config.tagline}</p>
+                <p className="text-[10px] text-muted-foreground">
+                  {config.scoreRange.min}–{config.scoreRange.max}
+                </p>
               </Card>
             );
           })}
 
-        {/* AP Tests — separate flow */}
-        <Card
-          className="p-5 cursor-pointer border-2 transition-all hover:scale-[1.02] hover:shadow-lg hover:border-primary/50"
-          onClick={() => navigate("/ap-tests")}
-        >
-          <div className="flex items-center gap-4">
-            <span className="text-3xl">🧪</span>
-            <div className="flex-1">
-              <div className="flex items-center gap-2">
-                <h3 className="font-bold text-lg">AP Tests</h3>
-                <span className="text-[10px] px-2 py-0.5 rounded-full bg-primary/10 text-primary font-medium">
-                  NEW
-                </span>
-              </div>
-              <p className="text-sm text-muted-foreground">Physics, Biology, Calculus, US History & more</p>
-              <p className="text-xs text-muted-foreground mt-1">
-                Score range: 1–5 • Multiple AP subjects
-              </p>
+          {/* AP Tests */}
+          <Card
+            className="p-4 cursor-pointer border-2 transition-all hover:scale-[1.02] hover:shadow-lg hover:border-primary/50 flex flex-col items-center text-center gap-2"
+            onClick={() => navigate("/ap-tests")}
+          >
+            <span className="text-4xl">🧪</span>
+            <div className="flex items-center gap-1">
+              <h3 className="font-bold text-lg">AP Tests</h3>
+              <span className="text-[10px] px-1.5 py-0.5 rounded-full bg-primary/10 text-primary font-medium">
+                NEW
+              </span>
             </div>
-            <FlaskConical className="w-5 h-5 text-muted-foreground" />
-          </div>
-        </Card>
+            <p className="text-xs text-muted-foreground">Physics, Bio, Calc & more</p>
+            <p className="text-[10px] text-muted-foreground">
+              Score range: 1–5
+            </p>
+          </Card>
 
-        {/* French Competition — separate flow */}
-        <Card
-          className="p-5 cursor-pointer border-2 transition-all hover:scale-[1.02] hover:shadow-lg hover:border-primary/50"
-          onClick={() => navigate("/french-competition")}
-        >
-          <div className="flex items-center gap-4">
-            <span className="text-3xl">🇫🇷</span>
-            <div className="flex-1">
-              <div className="flex items-center gap-2">
-                <h3 className="font-bold text-lg">French Competition</h3>
-                <span className="text-[10px] px-2 py-0.5 rounded-full bg-primary/10 text-primary font-medium">
-                  NEW
-                </span>
-              </div>
-              <p className="text-sm text-muted-foreground">Grammar, culture, listening & elite phrases</p>
-              <p className="text-xs text-muted-foreground mt-1">
-                CCFF-style practice • Multiple categories
-              </p>
+          {/* French Competition */}
+          <Card
+            className="p-4 cursor-pointer border-2 transition-all hover:scale-[1.02] hover:shadow-lg hover:border-primary/50 flex flex-col items-center text-center gap-2 col-span-2"
+            onClick={() => navigate("/french-competition")}
+          >
+            <span className="text-4xl">🇫🇷</span>
+            <div className="flex items-center gap-1">
+              <h3 className="font-bold text-lg">French Competition</h3>
+              <span className="text-[10px] px-1.5 py-0.5 rounded-full bg-primary/10 text-primary font-medium">
+                NEW
+              </span>
             </div>
-          </div>
-        </Card>
+            <p className="text-xs text-muted-foreground">Grammar, culture, listening & elite phrases</p>
+            <p className="text-[10px] text-muted-foreground">
+              CCFF-style practice
+            </p>
+          </Card>
         </div>
 
         <p className="text-xs text-center text-muted-foreground">
-          SAT and PSAT share the same question bank. ACT will include Science-specific content.
+          SAT and PSAT share the same question bank. ACT includes Science-specific content.
         </p>
       </div>
     </div>
