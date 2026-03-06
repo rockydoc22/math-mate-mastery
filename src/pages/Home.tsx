@@ -34,6 +34,7 @@ import { PlayerLevelBadge } from "@/components/PlayerLevelBadge";
 import { BottomNav } from "@/components/BottomNav";
 import { WelcomeModal } from "@/components/WelcomeModal";
 import { SubjectPinManager } from "@/components/SubjectPinManager";
+import { useIsMobile } from "@/hooks/use-mobile";
 import { Pin } from "lucide-react";
 
 // Motivational messages for non-logged in or idle users
