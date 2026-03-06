@@ -72,8 +72,8 @@ export const SATMasteryLogo = ({
       </div>
       
       {/* Text */}
-      <div className={layout === "stacked" ? "flex flex-col items-center" : "flex flex-col min-w-0"}>
-        <div className={`${classes.title} font-bold text-foreground leading-tight whitespace-nowrap`}>
+      <div className={layout === "stacked" ? "flex flex-col items-center max-w-full" : "flex flex-col min-w-0 max-w-full"}>
+        <div className={`${classes.title} font-bold text-foreground leading-tight text-balance break-words`}>
           {resolvedTitle}
         </div>
         {showTagline && (
