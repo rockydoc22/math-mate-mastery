@@ -1,17 +1,11 @@
-import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft, FlaskConical, Lock } from "lucide-react";
-import { AP_SUBJECTS, AP_CATEGORIES, AP_CATEGORY_ORDER, type APCategory } from "@/utils/apConfig";
+import { AP_SUBJECTS, AP_CATEGORIES, AP_CATEGORY_ORDER } from "@/utils/apConfig";
 
 const APTests = () => {
   const navigate = useNavigate();
-  const [selectedCategory, setSelectedCategory] = useState<APCategory | null>(null);
-
-  const filteredSubjects = selectedCategory
-    ? AP_SUBJECTS.filter(s => s.category === selectedCategory)
-    : AP_SUBJECTS;
 
   const handleSubjectClick = (subjectId: string, comingSoon?: boolean) => {
     if (comingSoon) return;
