@@ -31,53 +31,28 @@ const APTests = () => {
           </div>
         </div>
 
-        {/* Category filter chips */}
-        <div className="flex flex-wrap gap-2">
-          <Button
-            variant={selectedCategory === null ? "default" : "outline"}
-            size="sm"
-            onClick={() => setSelectedCategory(null)}
-            className="rounded-full"
-          >
-            All Subjects
-          </Button>
-          {AP_CATEGORY_ORDER.map(cat => (
-            <Button
-              key={cat}
-              variant={selectedCategory === cat ? "default" : "outline"}
-              size="sm"
-              onClick={() => setSelectedCategory(cat)}
-              className="rounded-full"
-            >
-              {AP_CATEGORIES[cat].icon} {AP_CATEGORIES[cat].label}
-            </Button>
-          ))}
-        </div>
-
         {/* Subject cards */}
         <div className="grid gap-3">
-          {AP_CATEGORY_ORDER
-            .filter(cat => !selectedCategory || selectedCategory === cat)
-            .map(cat => {
-              const subjects = filteredSubjects.filter(s => s.category === cat);
-              if (subjects.length === 0) return null;
+          {AP_CATEGORY_ORDER.map(cat => {
+            const subjects = AP_SUBJECTS.filter(s => s.category === cat);
+            if (subjects.length === 0) return null;
 
-              return (
-                <div key={cat} className="space-y-2">
-                  <h2 className="text-sm font-semibold text-muted-foreground uppercase tracking-wider flex items-center gap-2">
-                    {AP_CATEGORIES[cat].icon} {AP_CATEGORIES[cat].label}
-                  </h2>
-                  <div className="grid gap-2">
-                    {subjects.map(subject => (
-                      <Card
-                        key={subject.id}
-                        className={`p-4 cursor-pointer transition-all ${
-                          subject.comingSoon
-                            ? 'opacity-50 border-dashed cursor-not-allowed'
-                            : 'hover:scale-[1.01] hover:shadow-md hover:border-primary/40'
-                        }`}
-                        onClick={() => handleSubjectClick(subject.id, subject.comingSoon)}
-                      >
+            return (
+              <div key={cat} className="space-y-2">
+                <h2 className="text-sm font-semibold text-muted-foreground uppercase tracking-wider flex items-center gap-2">
+                  {AP_CATEGORIES[cat].icon} {AP_CATEGORIES[cat].label}
+                </h2>
+                <div className="grid gap-2">
+                  {subjects.map(subject => (
+                    <Card
+                      key={subject.id}
+                      className={`p-4 cursor-pointer transition-all ${
+                        subject.comingSoon
+                          ? 'opacity-50 border-dashed cursor-not-allowed'
+                          : 'hover:scale-[1.01] hover:shadow-md hover:border-primary/40'
+                      }`}
+                      onClick={() => handleSubjectClick(subject.id, subject.comingSoon)}
+                    >
                         <div className="flex items-center gap-3">
                           <span className="text-2xl">{subject.icon}</span>
                           <div className="flex-1 min-w-0">

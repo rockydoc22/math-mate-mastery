@@ -58,9 +58,12 @@ const Review = () => {
     ...visualMathQuestions,
     ...moreMathVisualQuestions,
     ...additionalMathQuestions,
+    ...importedSATMathQuestions,
     ...englishQuestions,
+    ...hardEnglishQuestions,
     ...visualEnglishQuestions,
     ...moreEnglishVisualQuestions,
+    ...actScienceQuestions,
   ], []);
 
   const fetchReviewQuestions = useCallback(async () => {

@@ -26,25 +26,10 @@ const skills: { id: ArcadeSkill; label: string; emoji: string }[] = [
 
 export default function Arcade() {
   const { examType } = useExamType();
-  const { user } = useAuth();
   const examConfig = EXAM_CONFIGS[examType];
   const [selectedGame, setSelectedGame] = useState<GameType | null>(null);
   const [selectedSkill, setSelectedSkill] = useState<ArcadeSkill | null>(null);
   const [playing, setPlaying] = useState(false);
-  const [playerLevel, setPlayerLevel] = useState(1);
-
-  useEffect(() => {
-    const fetchLevel = async () => {
-      if (!user) return;
-      const { count } = await supabase
-        .from("question_attempts")
-        .select("*", { count: "exact", head: true })
-        .eq("user_id", user.id);
-      const level = calculatePlayerLevel(count || 0);
-      setPlayerLevel(level.level);
-    };
-    fetchLevel();
-  }, [user]);
 
   const handleComplete = (results: { score: number; correct: number; total: number }) => {
     console.log('Game complete:', results);

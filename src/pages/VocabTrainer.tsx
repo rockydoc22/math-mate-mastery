@@ -167,7 +167,7 @@ const VocabTrainer = () => {
               <Button variant="ghost" size="icon"><ArrowLeft className="w-5 h-5" /></Button>
             </Link>
             <div>
-              <h1 className="text-xl font-bold">SAT Vocabulary Trainer</h1>
+              <h1 className="text-xl font-bold">{examType.toUpperCase()} Vocabulary Trainer</h1>
               <p className="text-sm text-muted-foreground">Master {SAT_VOCAB_WORDS.length} high-frequency words</p>
             </div>
           </div>
