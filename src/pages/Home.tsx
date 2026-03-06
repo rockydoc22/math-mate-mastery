@@ -34,6 +34,7 @@ import { PlayerLevelBadge } from "@/components/PlayerLevelBadge";
 import { BottomNav } from "@/components/BottomNav";
 import { WelcomeModal } from "@/components/WelcomeModal";
 import { SubjectPinManager } from "@/components/SubjectPinManager";
+import { useIsMobile } from "@/hooks/use-mobile";
 import { Pin } from "lucide-react";
 
 // Motivational messages for non-logged in or idle users
@@ -93,6 +94,7 @@ const Home = () => {
   const { ratings } = useSkillRating();
   const { activePlan, showReminder, dismissReminder, daysUntilExam, weeksUntilExam, workplan, pendingReviewCount, showReviewAlert } = useStudyPlan();
   const { examType, needsSelection, setExamType } = useExamType();
+  const isMobile = useIsMobile();
   const examConfig = EXAM_CONFIGS[examType];
   const [topPlayers, setTopPlayers] = useState<LeaderboardEntry[]>([]);
   const [notification, setNotification] = useState<string>("");
@@ -104,10 +106,22 @@ const Home = () => {
   const [practiceDates, setPracticeDates] = useState<string[]>([]);
   const { streak: perfectStreak } = usePerfectStreak();
   const [showExamSelector, setShowExamSelector] = useState(false);
+  const [hasChosenExamThisSession, setHasChosenExamThisSession] = useState(false);
   const [pinnedSubjects, setPinnedSubjects] = useState<string[]>([]);
   const [showPinManager, setShowPinManager] = useState(false);
 
   const nextSAT = getNextExamDate(examType);
+
+  // Require an explicit exam choice once per browser session after login
+  useEffect(() => {
+    if (!user) {
+      setHasChosenExamThisSession(false);
+      return;
+    }
+
+    const key = `exam_choice_session_${user.id}`;
+    setHasChosenExamThisSession(sessionStorage.getItem(key) === "true");
+  }, [user]);
 
   // Fetch player stats
   useEffect(() => {
@@ -209,13 +223,24 @@ const Home = () => {
     return <LandingPage />;
   }
 
-  // Show exam selector for first-time users or when toggled
-  if (needsSelection || showExamSelector) {
-    return <ExamSelector onSelect={(type) => { setExamType(type); setShowExamSelector(false); }} />;
+  // Show exam selector on first authenticated screen, or when manually toggled
+  if (needsSelection || showExamSelector || !hasChosenExamThisSession) {
+    return (
+      <ExamSelector
+        onSelect={(type) => {
+          setExamType(type);
+          setShowExamSelector(false);
+          setHasChosenExamThisSession(true);
+          if (user) {
+            sessionStorage.setItem(`exam_choice_session_${user.id}`, "true");
+          }
+        }}
+      />
+    );
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-background via-primary/5 to-accent/10 flex flex-col overflow-x-hidden pb-16">
+    <div className="min-h-screen bg-gradient-to-br from-background via-primary/5 to-accent/10 flex flex-col pb-16">
       {/* PWA Update Banner */}
       {hasUpdate && (
         <div className="px-4 py-2 bg-primary/10 text-center">
@@ -229,7 +254,7 @@ const Home = () => {
       <div className="max-w-2xl mx-auto w-full flex flex-col flex-1 animate-in fade-in duration-300">
         
         {/* Hero Header */}
-        <header className="flex flex-col items-center text-center mb-4 pt-4 relative">
+        <header className="flex flex-col items-center text-center mb-4 pt-4 relative w-full max-w-full">
           {/* Update button at top left */}
           <div className="absolute top-4 left-0">
             <Button
@@ -271,17 +296,18 @@ const Home = () => {
           </div>
 
           {/* Logo */}
-          <div className="mb-4 mt-14 pt-2">
-            <SATMasteryLogo 
-              size="xl" 
-              clickable 
+          <div className="mb-4 mt-14 pt-2 w-full max-w-full overflow-hidden">
+            <SATMasteryLogo
+              size={isMobile ? "lg" : "xl"}
+              layout={isMobile ? "stacked" : "row"}
+              clickable
               onClick={handle40SquaredClick}
               examType={examType}
             />
           </div>
 
           {/* Exam badge switcher */}
-          <div className="flex items-center gap-3 mb-2">
+          <div className="flex flex-wrap items-center justify-center gap-2 sm:gap-3 mb-2 max-w-full">
             {(['sat', 'psat', 'act'] as const).map((type) => {
               const cfg = EXAM_CONFIGS[type];
               const isActive = examType === type;
@@ -292,7 +318,7 @@ const Home = () => {
                     setExamType(type);
                     toast({ title: `Switched to ${cfg.name} mode ${cfg.icon}` });
                   }}
-                  className={`text-base px-5 py-3 rounded-full font-bold transition-all ${
+                  className={`text-base px-4 sm:px-5 py-2.5 sm:py-3 rounded-full font-bold transition-all ${
                     isActive
                       ? 'bg-primary text-primary-foreground shadow-md scale-105'
                       : 'bg-muted text-muted-foreground hover:bg-muted/80 cursor-pointer'
@@ -589,7 +615,7 @@ const Home = () => {
         )}
 
         {/* Quick Actions Row */}
-        <div className="flex gap-2 mb-4">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-2 mb-4">
           <Link to="/battle" className="flex-1">
             <Button variant="outline" className="w-full h-auto py-3 flex items-center gap-2 justify-center bg-destructive/10 border-destructive/30 hover:bg-destructive/20">
               <Swords className="w-5 h-5 text-destructive" />
@@ -599,7 +625,7 @@ const Home = () => {
           <Link to="/practice-test" className="flex-1">
             <Button variant="outline" className="w-full h-auto py-3 flex items-center gap-2 justify-center border-emerald-500/30 hover:bg-emerald-500/10">
               <Target className="w-5 h-5 text-emerald-500" />
-              <span className="text-sm font-medium">{examConfig.predictionTest.testName}</span>
+              <span className="text-sm font-medium text-center leading-tight">{examConfig.predictionTest.testName}</span>
             </Button>
           </Link>
           <Link to="/rapid-facts" className="flex-1">
@@ -636,7 +662,7 @@ const Home = () => {
               { id: 'key-rules', icon: Lightbulb, label: `Key ${examConfig.shortName} Rules`, color: 'bg-yellow-100 dark:bg-yellow-900/30', iconColor: 'text-yellow-600 dark:text-yellow-400', to: '/key-principles', exams: ['sat', 'psat', 'act'] },
               { id: 'boss-battle', icon: Skull, label: 'Boss Battle', color: 'bg-rose-100 dark:bg-rose-900/30', iconColor: 'text-rose-600 dark:text-rose-400', to: '/boss-battle', exams: ['sat', 'psat', 'act'] },
               { id: 'elite-practice', icon: Crown, label: 'Elite Practice', color: 'bg-gradient-to-br from-amber-100 to-orange-100 dark:from-amber-900/30 dark:to-orange-900/30', iconColor: 'text-amber-500', to: '/elite-practice', exams: ['sat', 'psat', 'act'] },
-              { id: 'sat-vocab', icon: BookOpen, label: `${examConfig.shortName} Vocab`, color: 'bg-emerald-100 dark:bg-emerald-900/30', iconColor: 'text-emerald-600 dark:text-emerald-400', to: '/vocab', exams: ['sat', 'psat'] },
+              { id: 'sat-vocab', icon: BookOpen, label: `${examConfig.shortName} Vocabulary`, color: 'bg-emerald-100 dark:bg-emerald-900/30', iconColor: 'text-emerald-600 dark:text-emerald-400', to: '/vocab', exams: ['sat', 'psat', 'act'] },
               { id: 'install', icon: Smartphone, label: 'Install App', color: 'bg-teal-100 dark:bg-teal-900/30', iconColor: 'text-teal-600 dark:text-teal-400', to: '/install', exams: ['sat', 'psat', 'act'] },
             ];
 
@@ -651,12 +677,12 @@ const Home = () => {
             });
 
             return (
-              <div className="grid grid-cols-4 gap-3">
+              <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
                 {sorted.map((item) => (
                   <Link key={item.id} to={item.to}>
-                    <div className={`${item.color} rounded-xl p-4 flex flex-col items-center text-center gap-2 aspect-square justify-center hover:scale-105 transition-transform cursor-pointer border ${pinnedSubjects.includes(item.id) ? 'border-primary/50 ring-1 ring-primary/20' : 'border-border/50'}`}>
-                      <div className="w-14 h-14 rounded-full bg-background/60 flex items-center justify-center relative">
-                        <item.icon className={`w-7 h-7 ${item.iconColor}`} />
+                    <div className={`${item.color} rounded-xl p-3 sm:p-4 flex flex-col items-center text-center gap-2 aspect-square justify-center hover:scale-105 transition-transform cursor-pointer border ${pinnedSubjects.includes(item.id) ? 'border-primary/50 ring-1 ring-primary/20' : 'border-border/50'}`}>
+                      <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-background/60 flex items-center justify-center relative">
+                        <item.icon className={`w-6 h-6 sm:w-7 sm:h-7 ${item.iconColor}`} />
                         {pinnedSubjects.includes(item.id) && (
                           <Pin className="w-3 h-3 text-primary absolute -top-1 -right-1" />
                         )}

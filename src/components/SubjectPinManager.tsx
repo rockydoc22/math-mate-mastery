@@ -18,7 +18,7 @@ const ALL_SUBJECTS = [
   { id: "key-rules", label: "💡 Key Rules" },
   { id: "boss-battle", label: "💀 Boss Battle" },
   { id: "elite-practice", label: "👑 Elite Practice" },
-  { id: "sat-vocab", label: "📗 SAT Vocab" },
+  { id: "sat-vocab", label: "📗 Exam Vocab" },
   { id: "french-comp", label: "🌐 French Comp" },
   { id: "writing-lab", label: "✍️ Writing Lab" },
   { id: "ap-tests", label: "🧪 AP Tests" },

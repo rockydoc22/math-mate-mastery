@@ -6,6 +6,7 @@ import { Progress } from "@/components/ui/progress";
 import { Badge } from "@/components/ui/badge";
 import { ArrowLeft, BookOpen, RotateCcw, Check, X, ChevronRight, Flame, Brain, Volume2, Eye, EyeOff, Sparkles } from "lucide-react";
 import { SAT_VOCAB_WORDS, VocabWord, generateVocabQuiz, getNextReviewTime } from "@/data/satVocab";
+import { useExamType } from "@/hooks/useExamType";
 
 const MASTERY_KEY = "vocab_mastery";
 
@@ -33,6 +34,7 @@ function saveMastery(mastery: Record<string, WordMastery>) {
 }
 
 const VocabTrainer = () => {
+  const { examType } = useExamType();
   const [phase, setPhase] = useState<Phase>("menu");
   const [category, setCategory] = useState<Category>("all");
   const [mastery, setMastery] = useState<Record<string, WordMastery>>(loadMastery);
@@ -165,7 +167,7 @@ const VocabTrainer = () => {
               <Button variant="ghost" size="icon"><ArrowLeft className="w-5 h-5" /></Button>
             </Link>
             <div>
-              <h1 className="text-xl font-bold">SAT Vocabulary Trainer</h1>
+              <h1 className="text-xl font-bold">{examType.toUpperCase()} Vocabulary Trainer</h1>
               <p className="text-sm text-muted-foreground">Master {SAT_VOCAB_WORDS.length} high-frequency words</p>
             </div>
           </div>

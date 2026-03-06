@@ -383,17 +383,17 @@ const Quiz = () => {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-primary/5 via-secondary/5 to-accent/5 p-4 py-8">
+    <div className="min-h-screen bg-gradient-to-br from-primary/5 via-secondary/5 to-accent/5 p-4 py-8 pb-28 sm:pb-8">
       <div className="max-w-3xl mx-auto space-y-6">
-        <div className="flex items-center justify-between gap-4">
-          <div className="flex items-center gap-4">
+        <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
+          <div className="flex items-center gap-3 min-w-0">
             <Link to="/">
               <Button variant="ghost" size="sm">
                 <ArrowLeft className="w-4 h-4 mr-2" />
                 Back
               </Button>
             </Link>
-            <h1 className="text-2xl font-bold text-primary">
+            <h1 className="text-xl sm:text-2xl font-bold text-primary leading-tight">
               {isAdvancedSubject ? getSubjectLabel() : `${examConfig.shortName} ${getSubjectLabel()}`} Practice
             </h1>
           </div>

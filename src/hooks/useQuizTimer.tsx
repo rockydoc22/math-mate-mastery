@@ -14,6 +14,7 @@ export const useQuizTimer = ({ questionCount, enabled = true, onTimeUp }: QuizTi
   const [timeRemaining, setTimeRemaining] = useState(totalSeconds);
   const [isRunning, setIsRunning] = useState(enabled);
   const [isTimeUp, setIsTimeUp] = useState(false);
+  const [deadlineMs, setDeadlineMs] = useState<number | null>(enabled && totalSeconds > 0 ? Date.now() + totalSeconds * 1000 : null);
 
   // Re-initialize timer when questionCount changes (questions load async)
   useEffect(() => {
@@ -21,6 +22,7 @@ export const useQuizTimer = ({ questionCount, enabled = true, onTimeUp }: QuizTi
       setTimeRemaining(totalSeconds);
       setIsRunning(enabled);
       setIsTimeUp(false);
+      setDeadlineMs(enabled ? Date.now() + totalSeconds * 1000 : null);
     }
   }, [totalSeconds, enabled]);
 
@@ -32,41 +34,68 @@ export const useQuizTimer = ({ questionCount, enabled = true, onTimeUp }: QuizTi
   }, []);
 
   // Calculate progress percentage
-  const progressPercent = ((totalSeconds - timeRemaining) / totalSeconds) * 100;
+  const progressPercent = totalSeconds > 0 ? ((totalSeconds - timeRemaining) / totalSeconds) * 100 : 0;
 
-  // Timer tick
+  // Timer tick (timestamp-based for accuracy across mobile tab throttling/backgrounding)
   useEffect(() => {
-    if (!isRunning || timeRemaining <= 0) return;
+    if (!isRunning || !deadlineMs || timeRemaining <= 0) return;
 
-    const interval = setInterval(() => {
-      setTimeRemaining(prev => {
-        if (prev <= 1) {
-          setIsTimeUp(true);
-          setIsRunning(false);
-          onTimeUp?.();
-          return 0;
-        }
-        return prev - 1;
-      });
-    }, 1000);
+    const tick = () => {
+      const next = Math.max(0, Math.ceil((deadlineMs - Date.now()) / 1000));
 
-    return () => clearInterval(interval);
-  }, [isRunning, timeRemaining, onTimeUp]);
+      if (next <= 0) {
+        setTimeRemaining(0);
+        setIsTimeUp(true);
+        setIsRunning(false);
+        setDeadlineMs(null);
+        onTimeUp?.();
+        return;
+      }
+
+      setTimeRemaining(next);
+    };
+
+    tick();
+    const interval = setInterval(tick, 250);
+    document.addEventListener('visibilitychange', tick);
+
+    return () => {
+      clearInterval(interval);
+      document.removeEventListener('visibilitychange', tick);
+    };
+  }, [isRunning, deadlineMs, timeRemaining, onTimeUp]);
 
   // Pause/resume
-  const pause = useCallback(() => setIsRunning(false), []);
-  const resume = useCallback(() => setIsRunning(true), []);
-  const toggle = useCallback(() => setIsRunning(prev => !prev), []);
+  const pause = useCallback(() => {
+    setIsRunning(false);
+    setDeadlineMs(null);
+  }, []);
+
+  const resume = useCallback(() => {
+    if (timeRemaining <= 0) return;
+    setIsRunning(true);
+    setDeadlineMs(Date.now() + timeRemaining * 1000);
+  }, [timeRemaining]);
+
+  const toggle = useCallback(() => {
+    setIsRunning(prev => {
+      const next = !prev;
+      setDeadlineMs(next ? Date.now() + timeRemaining * 1000 : null);
+      return next;
+    });
+  }, [timeRemaining]);
 
   // Reset timer
   const reset = useCallback(() => {
     setTimeRemaining(totalSeconds);
     setIsTimeUp(false);
     setIsRunning(enabled);
+    setDeadlineMs(enabled ? Date.now() + totalSeconds * 1000 : null);
   }, [totalSeconds, enabled]);
 
   // Get time status for styling
   const getTimeStatus = useCallback(() => {
+    if (totalSeconds <= 0) return 'normal';
     const percentRemaining = (timeRemaining / totalSeconds) * 100;
     if (percentRemaining <= 10) return 'critical'; // Red
     if (percentRemaining <= 25) return 'warning';  // Orange

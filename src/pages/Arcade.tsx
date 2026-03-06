@@ -1,17 +1,14 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
-import { ArrowLeft, Gamepad2, Lock } from 'lucide-react';
+import { ArrowLeft, Gamepad2 } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { useExamType } from '@/hooks/useExamType';
-import { useAuth } from '@/hooks/useAuth';
 import { EXAM_CONFIGS } from '@/utils/examConfig';
 import { ArcadeSkill } from '@/data/arcadeChallenges';
 import { ZalagaGame } from '@/components/games/ZalagaGame';
 import { HangmanGame } from '@/components/games/HangmanGame';
 import { ChessGame } from '@/components/games/ChessGame';
-import { isUnlocked, UNLOCKABLES, calculatePlayerLevel } from '@/utils/levelSystem';
-import { supabase } from '@/integrations/supabase/client';
 
 type GameType = 'zalaga' | 'hangman' | 'chess';
 
@@ -29,25 +26,10 @@ const skills: { id: ArcadeSkill; label: string; emoji: string }[] = [
 
 export default function Arcade() {
   const { examType } = useExamType();
-  const { user } = useAuth();
   const examConfig = EXAM_CONFIGS[examType];
   const [selectedGame, setSelectedGame] = useState<GameType | null>(null);
   const [selectedSkill, setSelectedSkill] = useState<ArcadeSkill | null>(null);
   const [playing, setPlaying] = useState(false);
-  const [playerLevel, setPlayerLevel] = useState(1);
-
-  useEffect(() => {
-    const fetchLevel = async () => {
-      if (!user) return;
-      const { count } = await supabase
-        .from("question_attempts")
-        .select("*", { count: "exact", head: true })
-        .eq("user_id", user.id);
-      const level = calculatePlayerLevel(count || 0);
-      setPlayerLevel(level.level);
-    };
-    fetchLevel();
-  }, [user]);
 
   const handleComplete = (results: { score: number; correct: number; total: number }) => {
     console.log('Game complete:', results);
@@ -145,32 +127,21 @@ export default function Arcade() {
 
         <div className="grid grid-cols-1 gap-4">
           {games.map(game => {
-            const unlocked = isUnlocked(game.id, playerLevel);
-            const unlockable = UNLOCKABLES.find(u => u.id === game.id);
-
             return (
               <button
                 key={game.id}
-                onClick={() => unlocked && setSelectedGame(game.id)}
-                className={`text-left ${!unlocked ? 'cursor-not-allowed' : ''}`}
-                disabled={!unlocked}
+                onClick={() => setSelectedGame(game.id)}
+                className="text-left"
               >
-                <Card className={`p-6 ${game.color} border border-border/50 transition-all ${
-                  unlocked ? 'hover:scale-[1.02] cursor-pointer' : 'opacity-60 grayscale'
-                }`}>
+                <Card className={`p-6 ${game.color} border border-border/50 transition-all hover:scale-[1.02] cursor-pointer`}>
                   <div className="flex items-center gap-4">
-                    <span className="text-4xl">{unlocked ? game.emoji : '🔒'}</span>
+                    <span className="text-4xl">{game.emoji}</span>
                     <div className="flex-1">
-                      <h3 className="text-lg font-bold text-foreground flex items-center gap-2">
+                      <h3 className="text-lg font-bold text-foreground">
                         {game.name}
-                        {!unlocked && (
-                          <span className="flex items-center gap-1 text-xs px-2 py-0.5 rounded-full bg-muted text-muted-foreground font-medium">
-                            <Lock className="w-3 h-3" /> Level {unlockable?.requiredLevel}
-                          </span>
-                        )}
                       </h3>
                       <p className="text-sm text-muted-foreground">
-                        {unlocked ? game.desc : `Unlock at Level ${unlockable?.requiredLevel} — answer more questions to level up!`}
+                        {game.desc}
                       </p>
                     </div>
                   </div>

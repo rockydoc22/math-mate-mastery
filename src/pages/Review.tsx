@@ -10,6 +10,9 @@ import { questions } from "@/data/questions";
 import { visualMathQuestions, visualEnglishQuestions, moreMathVisualQuestions, moreEnglishVisualQuestions } from "@/data/visualQuestions";
 import { additionalMathQuestions } from "@/data/additionalMathQuestions";
 import { englishQuestions } from "@/data/englishQuestions";
+import { hardEnglishQuestions } from "@/data/hardEnglishQuestions";
+import { importedSATMathQuestions } from "@/data/importedSATQuestions";
+import { actScienceQuestions } from "@/data/actScienceQuestions";
 import { QuestionVisual } from "@/components/QuestionVisual";
 import { AITutorExplanation } from "@/components/AITutorExplanation";
 import { useAcceleratorCredits } from "@/hooks/useAcceleratorCredits";
@@ -55,9 +58,12 @@ const Review = () => {
     ...visualMathQuestions,
     ...moreMathVisualQuestions,
     ...additionalMathQuestions,
+    ...importedSATMathQuestions,
     ...englishQuestions,
+    ...hardEnglishQuestions,
     ...visualEnglishQuestions,
     ...moreEnglishVisualQuestions,
+    ...actScienceQuestions,
   ], []);
 
   const fetchReviewQuestions = useCallback(async () => {
