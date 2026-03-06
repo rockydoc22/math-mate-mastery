@@ -34,6 +34,7 @@ function saveMastery(mastery: Record<string, WordMastery>) {
 }
 
 const VocabTrainer = () => {
+  const { examType } = useExamType();
   const [phase, setPhase] = useState<Phase>("menu");
   const [category, setCategory] = useState<Category>("all");
   const [mastery, setMastery] = useState<Record<string, WordMastery>>(loadMastery);
