@@ -615,7 +615,7 @@ const Home = () => {
         )}
 
         {/* Quick Actions Row */}
-        <div className="flex gap-2 mb-4">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-2 mb-4">
           <Link to="/battle" className="flex-1">
             <Button variant="outline" className="w-full h-auto py-3 flex items-center gap-2 justify-center bg-destructive/10 border-destructive/30 hover:bg-destructive/20">
               <Swords className="w-5 h-5 text-destructive" />
@@ -625,7 +625,7 @@ const Home = () => {
           <Link to="/practice-test" className="flex-1">
             <Button variant="outline" className="w-full h-auto py-3 flex items-center gap-2 justify-center border-emerald-500/30 hover:bg-emerald-500/10">
               <Target className="w-5 h-5 text-emerald-500" />
-              <span className="text-sm font-medium">{examConfig.predictionTest.testName}</span>
+              <span className="text-sm font-medium text-center leading-tight">{examConfig.predictionTest.testName}</span>
             </Button>
           </Link>
           <Link to="/rapid-facts" className="flex-1">
@@ -662,7 +662,7 @@ const Home = () => {
               { id: 'key-rules', icon: Lightbulb, label: `Key ${examConfig.shortName} Rules`, color: 'bg-yellow-100 dark:bg-yellow-900/30', iconColor: 'text-yellow-600 dark:text-yellow-400', to: '/key-principles', exams: ['sat', 'psat', 'act'] },
               { id: 'boss-battle', icon: Skull, label: 'Boss Battle', color: 'bg-rose-100 dark:bg-rose-900/30', iconColor: 'text-rose-600 dark:text-rose-400', to: '/boss-battle', exams: ['sat', 'psat', 'act'] },
               { id: 'elite-practice', icon: Crown, label: 'Elite Practice', color: 'bg-gradient-to-br from-amber-100 to-orange-100 dark:from-amber-900/30 dark:to-orange-900/30', iconColor: 'text-amber-500', to: '/elite-practice', exams: ['sat', 'psat', 'act'] },
-              { id: 'sat-vocab', icon: BookOpen, label: `${examConfig.shortName} Vocab`, color: 'bg-emerald-100 dark:bg-emerald-900/30', iconColor: 'text-emerald-600 dark:text-emerald-400', to: '/vocab', exams: ['sat', 'psat'] },
+              { id: 'sat-vocab', icon: BookOpen, label: `${examConfig.shortName} Vocabulary`, color: 'bg-emerald-100 dark:bg-emerald-900/30', iconColor: 'text-emerald-600 dark:text-emerald-400', to: '/vocab', exams: ['sat', 'psat', 'act'] },
               { id: 'install', icon: Smartphone, label: 'Install App', color: 'bg-teal-100 dark:bg-teal-900/30', iconColor: 'text-teal-600 dark:text-teal-400', to: '/install', exams: ['sat', 'psat', 'act'] },
             ];
 
@@ -677,12 +677,12 @@ const Home = () => {
             });
 
             return (
-              <div className="grid grid-cols-4 gap-3">
+              <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
                 {sorted.map((item) => (
                   <Link key={item.id} to={item.to}>
-                    <div className={`${item.color} rounded-xl p-4 flex flex-col items-center text-center gap-2 aspect-square justify-center hover:scale-105 transition-transform cursor-pointer border ${pinnedSubjects.includes(item.id) ? 'border-primary/50 ring-1 ring-primary/20' : 'border-border/50'}`}>
-                      <div className="w-14 h-14 rounded-full bg-background/60 flex items-center justify-center relative">
-                        <item.icon className={`w-7 h-7 ${item.iconColor}`} />
+                    <div className={`${item.color} rounded-xl p-3 sm:p-4 flex flex-col items-center text-center gap-2 aspect-square justify-center hover:scale-105 transition-transform cursor-pointer border ${pinnedSubjects.includes(item.id) ? 'border-primary/50 ring-1 ring-primary/20' : 'border-border/50'}`}>
+                      <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-background/60 flex items-center justify-center relative">
+                        <item.icon className={`w-6 h-6 sm:w-7 sm:h-7 ${item.iconColor}`} />
                         {pinnedSubjects.includes(item.id) && (
                           <Pin className="w-3 h-3 text-primary absolute -top-1 -right-1" />
                         )}
