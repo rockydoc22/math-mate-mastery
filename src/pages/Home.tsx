@@ -7,7 +7,7 @@ import { Card } from "@/components/ui/card";
 import { 
   Calculator, PenTool, Trophy, Zap, Users, LogIn, User, 
   Award, Swords, ChevronRight, Flame, Brain, X,
-  Target, RotateCcw, BookOpen, RefreshCw, FileText, Crown,
+  Target, RotateCcw, BookOpen, RefreshCw, FileText, Crown, GraduationCap,
   Clock, Sparkles, Download, Lightbulb, Play, Skull, Settings, Gamepad2, Smartphone
 } from "lucide-react";
 import { useNavigate, Link } from "react-router-dom";
