@@ -94,6 +94,7 @@ const Home = () => {
   const { ratings } = useSkillRating();
   const { activePlan, showReminder, dismissReminder, daysUntilExam, weeksUntilExam, workplan, pendingReviewCount, showReviewAlert } = useStudyPlan();
   const { examType, needsSelection, setExamType } = useExamType();
+  const isMobile = useIsMobile();
   const examConfig = EXAM_CONFIGS[examType];
   const [topPlayers, setTopPlayers] = useState<LeaderboardEntry[]>([]);
   const [notification, setNotification] = useState<string>("");
@@ -105,6 +106,7 @@ const Home = () => {
   const [practiceDates, setPracticeDates] = useState<string[]>([]);
   const { streak: perfectStreak } = usePerfectStreak();
   const [showExamSelector, setShowExamSelector] = useState(false);
+  const [hasChosenExamThisSession, setHasChosenExamThisSession] = useState(false);
   const [pinnedSubjects, setPinnedSubjects] = useState<string[]>([]);
   const [showPinManager, setShowPinManager] = useState(false);
 
