@@ -1,17 +1,14 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
-import { ArrowLeft, Gamepad2, Lock } from 'lucide-react';
+import { ArrowLeft, Gamepad2 } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { useExamType } from '@/hooks/useExamType';
-import { useAuth } from '@/hooks/useAuth';
 import { EXAM_CONFIGS } from '@/utils/examConfig';
 import { ArcadeSkill } from '@/data/arcadeChallenges';
 import { ZalagaGame } from '@/components/games/ZalagaGame';
 import { HangmanGame } from '@/components/games/HangmanGame';
 import { ChessGame } from '@/components/games/ChessGame';
-import { isUnlocked, UNLOCKABLES, calculatePlayerLevel } from '@/utils/levelSystem';
-import { supabase } from '@/integrations/supabase/client';
 
 type GameType = 'zalaga' | 'hangman' | 'chess';
 
