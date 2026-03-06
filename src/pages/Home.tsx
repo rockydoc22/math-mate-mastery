@@ -223,13 +223,24 @@ const Home = () => {
     return <LandingPage />;
   }
 
-  // Show exam selector for first-time users or when toggled
-  if (needsSelection || showExamSelector) {
-    return <ExamSelector onSelect={(type) => { setExamType(type); setShowExamSelector(false); }} />;
+  // Show exam selector on first authenticated screen, or when manually toggled
+  if (needsSelection || showExamSelector || !hasChosenExamThisSession) {
+    return (
+      <ExamSelector
+        onSelect={(type) => {
+          setExamType(type);
+          setShowExamSelector(false);
+          setHasChosenExamThisSession(true);
+          if (user) {
+            sessionStorage.setItem(`exam_choice_session_${user.id}`, "true");
+          }
+        }}
+      />
+    );
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-background via-primary/5 to-accent/10 flex flex-col overflow-x-hidden pb-16">
+    <div className="min-h-screen bg-gradient-to-br from-background via-primary/5 to-accent/10 flex flex-col pb-16">
       {/* PWA Update Banner */}
       {hasUpdate && (
         <div className="px-4 py-2 bg-primary/10 text-center">
