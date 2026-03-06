@@ -254,7 +254,7 @@ const Home = () => {
       <div className="max-w-2xl mx-auto w-full flex flex-col flex-1 animate-in fade-in duration-300">
         
         {/* Hero Header */}
-        <header className="flex flex-col items-center text-center mb-4 pt-4 relative">
+        <header className="flex flex-col items-center text-center mb-4 pt-4 relative w-full max-w-full">
           {/* Update button at top left */}
           <div className="absolute top-4 left-0">
             <Button
@@ -296,17 +296,18 @@ const Home = () => {
           </div>
 
           {/* Logo */}
-          <div className="mb-4 mt-14 pt-2">
-            <SATMasteryLogo 
-              size="xl" 
-              clickable 
+          <div className="mb-4 mt-14 pt-2 w-full max-w-full overflow-hidden">
+            <SATMasteryLogo
+              size={isMobile ? "lg" : "xl"}
+              layout={isMobile ? "stacked" : "row"}
+              clickable
               onClick={handle40SquaredClick}
               examType={examType}
             />
           </div>
 
           {/* Exam badge switcher */}
-          <div className="flex items-center gap-3 mb-2">
+          <div className="flex flex-wrap items-center justify-center gap-2 sm:gap-3 mb-2 max-w-full">
             {(['sat', 'psat', 'act'] as const).map((type) => {
               const cfg = EXAM_CONFIGS[type];
               const isActive = examType === type;
@@ -317,7 +318,7 @@ const Home = () => {
                     setExamType(type);
                     toast({ title: `Switched to ${cfg.name} mode ${cfg.icon}` });
                   }}
-                  className={`text-base px-5 py-3 rounded-full font-bold transition-all ${
+                  className={`text-base px-4 sm:px-5 py-2.5 sm:py-3 rounded-full font-bold transition-all ${
                     isActive
                       ? 'bg-primary text-primary-foreground shadow-md scale-105'
                       : 'bg-muted text-muted-foreground hover:bg-muted/80 cursor-pointer'
