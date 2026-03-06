@@ -112,6 +112,17 @@ const Home = () => {
 
   const nextSAT = getNextExamDate(examType);
 
+  // Require an explicit exam choice once per browser session after login
+  useEffect(() => {
+    if (!user) {
+      setHasChosenExamThisSession(false);
+      return;
+    }
+
+    const key = `exam_choice_session_${user.id}`;
+    setHasChosenExamThisSession(sessionStorage.getItem(key) === "true");
+  }, [user]);
+
   // Fetch player stats
   useEffect(() => {
     const fetchPlayerStats = async () => {
