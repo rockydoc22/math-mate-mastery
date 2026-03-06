@@ -476,11 +476,11 @@ const PracticeTest = () => {
   const isLastQuestion = currentQuestionIndex === currentQuestionsList.length - 1;
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-background via-background to-primary/5 p-4">
+    <div className="min-h-screen bg-gradient-to-br from-background via-background to-primary/5 p-4 pb-28 sm:pb-4">
       <div className="max-w-3xl mx-auto">
         {/* Header */}
-        <div className="flex items-center justify-between mb-4">
-          <div className="flex items-center gap-4">
+        <div className="flex flex-wrap items-center justify-between gap-2 mb-4">
+          <div className="flex items-center gap-2 sm:gap-4 min-w-0">
             <span className={`px-3 py-1 rounded-full text-sm font-medium bg-${currentSection.color}/20 text-${currentSection.color}`}>
               {currentSection.label.replace('Hard ', '')}
             </span>
@@ -531,7 +531,7 @@ const PracticeTest = () => {
         )}
 
         {/* Navigation */}
-        <div className="flex justify-between items-center">
+        <div className="flex flex-wrap justify-between items-center gap-2">
           <Button 
             variant="outline" 
             onClick={handlePrevious}

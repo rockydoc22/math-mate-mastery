@@ -98,9 +98,9 @@ const MathQuiz = () => {
 
   return (
     <ScreenShakeWrapper shake={screenShake} intensity={getComboIntensity(combo.count) === "ultra" ? "high" : getComboIntensity(combo.count) === "high" ? "medium" : "low"}>
-      <div className="min-h-screen bg-gradient-to-br from-primary/5 via-secondary/5 to-accent/5 p-4 py-8">
+      <div className="min-h-screen bg-gradient-to-br from-primary/5 via-secondary/5 to-accent/5 p-4 py-8 pb-28 sm:pb-8">
         <div className="max-w-3xl mx-auto space-y-6">
-          <div className="flex items-center gap-4">
+          <div className="flex flex-wrap items-center gap-3">
             <Link to="/">
               <Button variant="ghost" size="sm">
                 <ArrowLeft className="w-4 h-4 mr-2" />

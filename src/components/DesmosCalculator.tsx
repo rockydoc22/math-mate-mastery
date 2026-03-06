@@ -12,7 +12,7 @@ export const DesmosCalculator = () => {
         onClick={() => setIsOpen(true)}
         variant="outline"
         size="icon"
-        className="fixed bottom-6 right-6 z-50 h-12 w-12 rounded-full shadow-lg border-2 border-primary bg-background hover:bg-primary/10"
+        className="fixed bottom-24 sm:bottom-6 right-4 sm:right-6 z-50 h-12 w-12 rounded-full shadow-lg border-2 border-primary bg-background hover:bg-primary/10"
         title="Open Calculator"
       >
         <Calculator className="h-5 w-5 text-primary" />
@@ -24,8 +24,8 @@ export const DesmosCalculator = () => {
     <div
       className={`fixed z-50 shadow-2xl rounded-lg border-2 border-border bg-background overflow-hidden transition-all ${
         isMinimized
-          ? "bottom-6 right-6 w-48 h-10"
-          : "bottom-6 right-6 w-[90vw] max-w-[400px] h-[60vh] sm:w-[400px] sm:h-[500px]"
+          ? "bottom-24 sm:bottom-6 right-4 sm:right-6 w-48 h-10"
+          : "bottom-24 sm:bottom-6 right-4 sm:right-6 w-[90vw] max-w-[400px] h-[60vh] sm:w-[400px] sm:h-[500px]"
       }`}
     >
       {/* Header bar */}
