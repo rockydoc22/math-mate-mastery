@@ -1,0 +1,25 @@
+{
+  "title": "Line Mastery Schema",
+  "per_line_fields": [
+    "line_id",
+    "conversation_id",
+    "language_code",
+    "difficulty_tag",
+    "mastery_level",
+    "times_seen",
+    "times_listened",
+    "times_shadowed",
+    "times_answered_correctly",
+    "times_answered_wrong",
+    "last_reviewed_at"
+  ],
+  "difficulty_tags": [
+    "starter_phrase",
+    "daily_use",
+    "travel",
+    "school",
+    "medical",
+    "social",
+    "advanced_expression"
+  ]
+}

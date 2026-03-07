@@ -1,0 +1,23 @@
+{
+  "title": "Audio State Model",
+  "line_audio_states": [
+    "not_started",
+    "playing",
+    "paused",
+    "completed",
+    "replayed",
+    "shadowed"
+  ],
+  "ui_rules": [
+    "Show clear play / pause icons for each line.",
+    "Allow replay without leaving the conversation.",
+    "Mark a line as shadowed only after playback completes or the user manually confirms practice.",
+    "Do not autoplay all lines by default."
+  ],
+  "per_line_fields": [
+    "audio_state",
+    "play_count",
+    "shadow_attempted",
+    "shadow_completed"
+  ]
+}

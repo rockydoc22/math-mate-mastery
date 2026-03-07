@@ -1,0 +1,43 @@
+{
+  "title": "Conversation Practice Engine Expansion",
+  "purpose": "Extend the existing conversation system with scoring, mastery tracking, audio states, and session flow.",
+  "new_features": [
+    "line-by-line mastery tracking",
+    "audio playback state model",
+    "shadowing completion tracking",
+    "conversation scoring",
+    "mistake review queue",
+    "line difficulty tags"
+  ],
+  "session_flow": [
+    "select conversation",
+    "choose language display mode",
+    "read or listen line by line",
+    "complete shadowing or comprehension",
+    "score session",
+    "review missed lines",
+    "award coins / mastery"
+  ],
+  "mastery_levels": [
+    {
+      "id": "M0",
+      "label": "New"
+    },
+    {
+      "id": "M1",
+      "label": "Seen"
+    },
+    {
+      "id": "M2",
+      "label": "Practiced"
+    },
+    {
+      "id": "M3",
+      "label": "Strong"
+    },
+    {
+      "id": "M4",
+      "label": "Mastered"
+    }
+  ]
+}

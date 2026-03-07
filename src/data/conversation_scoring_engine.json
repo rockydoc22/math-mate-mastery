@@ -1,0 +1,45 @@
+{
+  "title": "Conversation Scoring Engine",
+  "score_components": [
+    {
+      "component": "line_completion",
+      "points": 2,
+      "description": "Awarded when a line is read / completed."
+    },
+    {
+      "component": "audio_listen_complete",
+      "points": 1,
+      "description": "Awarded when line audio is played fully."
+    },
+    {
+      "component": "shadowing_complete",
+      "points": 3,
+      "description": "Awarded when student completes repeat practice."
+    },
+    {
+      "component": "comprehension_correct",
+      "points": 5,
+      "description": "Awarded for each correct conversation question."
+    }
+  ],
+  "bonuses": [
+    {
+      "bonus": "perfect_conversation",
+      "points": 10
+    },
+    {
+      "bonus": "no_translation_mode_complete",
+      "points": 8
+    },
+    {
+      "bonus": "three_conversations_in_row",
+      "points": 12
+    }
+  ],
+  "mastery_promotion_rules": [
+    "Move line from M0 to M1 after first completion.",
+    "Move line to M2 after one completed listen + one completed review.",
+    "Move line to M3 after correct comprehension linked to that line.",
+    "Move line to M4 after repeated strong sessions without translation."
+  ]
+}
