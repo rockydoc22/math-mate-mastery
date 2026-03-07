@@ -1,0 +1,18 @@
+{
+  "title": "Knowledge Map UI Spec",
+  "views": [
+    "map_overview",
+    "skill_category_filter",
+    "node_detail_card",
+    "next_unlocks_panel",
+    "needs_support_panel",
+    "combined_growth_map"
+  ],
+  "recommended_visual_states": {
+    "N0": "gray",
+    "N1": "light blue",
+    "N2": "blue",
+    "N3": "green",
+    "N4": "gold"
+  }
+}

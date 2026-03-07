@@ -1,0 +1,39 @@
+{
+  "title": "Skill Node Schema",
+  "fields": [
+    "node_id",
+    "map_type",
+    "skill_name",
+    "skill_category",
+    "difficulty_band",
+    "mastery_level",
+    "mastery_score",
+    "prerequisite_nodes",
+    "unlock_nodes",
+    "recommended_content_ids",
+    "last_practiced_at",
+    "evidence_count"
+  ],
+  "mastery_levels": [
+    {
+      "id": "N0",
+      "label": "Not started"
+    },
+    {
+      "id": "N1",
+      "label": "Introduced"
+    },
+    {
+      "id": "N2",
+      "label": "Developing"
+    },
+    {
+      "id": "N3",
+      "label": "Strong"
+    },
+    {
+      "id": "N4",
+      "label": "Mastered"
+    }
+  ]
+}

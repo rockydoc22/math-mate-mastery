@@ -1,0 +1,14 @@
+{
+  "title": "Mastery Update Rules",
+  "rules": [
+    "Increase mastery_score after correct answers, completed stories, conversation success, or repeated strong performance.",
+    "Increase evidence_count whenever a node is practiced meaningfully.",
+    "Promote a node one mastery level when its score crosses threshold and evidence_count is sufficient.",
+    "Do not drop mastery too aggressively after a single weak session."
+  ],
+  "threshold_examples": {
+    "N1_to_N2": "score >= 0.40 and evidence_count >= 3",
+    "N2_to_N3": "score >= 0.65 and evidence_count >= 6",
+    "N3_to_N4": "score >= 0.82 and evidence_count >= 10"
+  }
+}
