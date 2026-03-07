@@ -1,0 +1,20 @@
+{
+  "title": "Coach Input Schema",
+  "fields": [
+    "student_id",
+    "app_type",
+    "recent_activity_type",
+    "recent_question_ids",
+    "recent_missed_items",
+    "recent_correct_items",
+    "recent_accuracy",
+    "recent_time_spent",
+    "confidence_level_optional",
+    "weak_skill_nodes",
+    "strong_skill_nodes",
+    "recommended_next_nodes",
+    "age_band",
+    "parent_constraints_optional",
+    "teacher_assignment_context_optional"
+  ]
+}

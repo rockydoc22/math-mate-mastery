@@ -1,0 +1,51 @@
+{
+  "title": "Coach Output Templates",
+  "student_mode": {
+    "fields": [
+      "headline",
+      "what_went_well",
+      "what_to_fix_next",
+      "recommended_next_activity",
+      "one_small_tip"
+    ],
+    "sample": {
+      "headline": "Nice progress today.",
+      "what_went_well": "You stayed strong on basic algebra and finished the set.",
+      "what_to_fix_next": "Reading inference still needs a little more support.",
+      "recommended_next_activity": "Try one short elimination strategy round.",
+      "one_small_tip": "When two choices seem close, look for the one best supported by the text."
+    }
+  },
+  "parent_mode": {
+    "fields": [
+      "headline",
+      "strength_this_session",
+      "support_need",
+      "best_next_step",
+      "time_recommendation"
+    ],
+    "sample": {
+      "headline": "Good session overall.",
+      "strength_this_session": "The student completed the assigned story and vocabulary review.",
+      "support_need": "Conversation accuracy was lower than usual.",
+      "best_next_step": "A short supported conversation session tomorrow would help.",
+      "time_recommendation": "8 to 10 minutes is enough."
+    }
+  },
+  "teacher_mode": {
+    "fields": [
+      "headline",
+      "skill_summary",
+      "intervention_suggestion",
+      "grouping_suggestion",
+      "assignment_suggestion"
+    ],
+    "sample": {
+      "headline": "This student is trending upward in accuracy.",
+      "skill_summary": "Main-idea questions are strong; inference remains weaker.",
+      "intervention_suggestion": "Use one short inference-focused support set.",
+      "grouping_suggestion": "Pair with other students needing reading inference review.",
+      "assignment_suggestion": "Assign 5 reading items plus 2 strategy scenarios."
+    }
+  }
+}

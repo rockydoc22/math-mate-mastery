@@ -1,0 +1,25 @@
+{
+  "title": "Study Coach UI Spec",
+  "views": [
+    "coach_home_card",
+    "after_session_recap",
+    "mistake_explanation_panel",
+    "next_best_activity_card",
+    "study_plan_view",
+    "teacher_coach_sidebar",
+    "parent_summary_card"
+  ],
+  "ui_rules": [
+    "Keep first-view advice short.",
+    "Allow 'tell me why' expansion.",
+    "Show one recommended next action clearly.",
+    "Use supportive language and progress framing."
+  ],
+  "buttons": [
+    "Explain this miss",
+    "Give me a short plan",
+    "Show my next best activity",
+    "Send summary to parent",
+    "Use this as assignment"
+  ]
+}

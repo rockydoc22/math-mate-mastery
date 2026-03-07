@@ -1,0 +1,37 @@
+{
+  "title": "Study Plan Generator",
+  "plan_lengths": [
+    "5_minute_reset",
+    "10_minute_boost",
+    "15_minute_standard",
+    "25_minute_deep_session"
+  ],
+  "generation_rules": [
+    "Start with one confidence-building task if recent accuracy is low.",
+    "Use weak skill nodes for the middle of the session.",
+    "End with one success-oriented task or progress summary.",
+    "Respect parent limits and assignment deadlines."
+  ],
+  "sample_plans": [
+    {
+      "plan_name": "10_minute_boost",
+      "flow": [
+        "1 easier warm-up item",
+        "4 target-skill items",
+        "1 strategy tip card",
+        "1 quick win item",
+        "short recap"
+      ]
+    },
+    {
+      "plan_name": "15_minute_standard",
+      "flow": [
+        "2 warm-up items",
+        "5 target-skill items",
+        "2 review items",
+        "1 challenge item",
+        "summary + next recommendation"
+      ]
+    }
+  ]
+}

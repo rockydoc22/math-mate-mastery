@@ -1,0 +1,23 @@
+{
+  "title": "AI Study Coach Layer",
+  "purpose": "Provide personalized next-step guidance, mistake explanations, and study planning across language, testing, conversation, and cognitive practice.",
+  "core_functions": [
+    "explain why an answer was wrong",
+    "recommend the next best activity",
+    "suggest a short study plan",
+    "translate performance into plain language",
+    "coach strategy rather than only content",
+    "support parents, students, and teachers with different views"
+  ],
+  "design_rules": [
+    "Keep explanations short first, with optional expansion.",
+    "Use encouraging, non-judgmental language.",
+    "Do not pretend certainty when evidence is weak.",
+    "Always tie advice to actual performance signals from the app."
+  ],
+  "coach_modes": [
+    "student_mode",
+    "parent_mode",
+    "teacher_mode"
+  ]
+}

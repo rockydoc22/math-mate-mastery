@@ -1,0 +1,30 @@
+{
+  "title": "Mistake Explanation Engine",
+  "explanation_types": [
+    {
+      "id": "content_gap",
+      "description": "The learner likely did not know or recall the concept."
+    },
+    {
+      "id": "misread_prompt",
+      "description": "The learner answered a nearby but different question."
+    },
+    {
+      "id": "trap_answer",
+      "description": "The learner selected a tempting but unsupported answer."
+    },
+    {
+      "id": "careless_execution",
+      "description": "The learner likely knew the method but made an execution mistake."
+    },
+    {
+      "id": "time_pressure",
+      "description": "The learner may have rushed because of pacing pressure."
+    }
+  ],
+  "coach_rules": [
+    "Prefer one likely explanation, not a long list of guesses.",
+    "Tie the explanation to evidence such as answer choice patterns, timing, and confidence.",
+    "Follow each explanation with one concrete next-step suggestion."
+  ]
+}
