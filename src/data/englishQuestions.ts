@@ -19,6 +19,7 @@ import { satReadingQuestions } from './satReadingQuestions';
 import { satHardestReadingQuestions } from './satHardestReadingQuestions';
 import satEnglishMidRaw from './sat_english_midrange_200.json';
 import { starterEnglishQuestions } from './starterPackQuestions';
+import { satEnglishLevel9Questions, satEnglishLevel10Questions } from './satLevel9and10Questions';
 
 // ─── Convert midrange supplement JSON ───
 interface RawMidEnglish {
@@ -103,7 +104,7 @@ const baseEnglishQuestions: EnglishQuestion[] = (englishQuestionsRaw as RawEngli
 });
 
 // Combine all English questions (including visual questions for 1/3 ratio)
-const allEnglishQuestions: EnglishQuestion[] = [...baseEnglishQuestions, ...uploadedEnglishQuestions, ...hardEnglishQuestions, ...satEnglishQuestions, ...additionalEnglishQuestions, ...extraEnglishQuestions, ...expertEnglishQuestions, ...mediumEnglishQuestions, ...hardEnglishQuestions2, ...satEnglishPart1Questions, ...satEnglishPart2Questions, ...veryHardEnglishQuestions, ...moreEnglishVisualQuestions, ...additionalEnglishVisualQuestions, ...passageEnglishQuestions, ...satReadingQuestions, ...satHardestReadingQuestions, ...midrangeEnglishQuestions, ...starterEnglishQuestions];
+const allEnglishQuestions: EnglishQuestion[] = [...baseEnglishQuestions, ...uploadedEnglishQuestions, ...hardEnglishQuestions, ...satEnglishQuestions, ...additionalEnglishQuestions, ...extraEnglishQuestions, ...expertEnglishQuestions, ...mediumEnglishQuestions, ...hardEnglishQuestions2, ...satEnglishPart1Questions, ...satEnglishPart2Questions, ...veryHardEnglishQuestions, ...moreEnglishVisualQuestions, ...additionalEnglishVisualQuestions, ...passageEnglishQuestions, ...satReadingQuestions, ...satHardestReadingQuestions, ...midrangeEnglishQuestions, ...starterEnglishQuestions, ...satEnglishLevel9Questions, ...satEnglishLevel10Questions];
 
 // Patterns that indicate a question references an external passage that isn't provided
 const passageReferencePatterns = [

@@ -25,6 +25,7 @@ import { mediumMathQuestions2 } from './mediumMathQuestions2';
 import { additionalVisualQuestions as additionalVisualMathQuestions } from './additionalVisualQuestions';
 import { actScienceQuestions } from './actScienceQuestions';
 import { starterMathQuestions } from './starterPackQuestions';
+import { satMathLevel10Questions } from './satLevel9and10Questions';
 import { rateDifficulty } from '@/utils/difficultyRating';
 import { fixAllSingleOptionQuestions } from '@/utils/questionOptionsFixer';
 import { convertQuestionsToExact } from '@/utils/exactValueConverter';
@@ -109,7 +110,7 @@ const rawQuestions: Question[] = (mathQuestionsRaw as RawMathQuestion[])
   });
 
 // Combine all math questions and filter out any with images (to avoid showing College Board branding)
-const allMathQuestionsRaw: Question[] = [...rawQuestions, ...additionalMathQuestions, ...newMathQuestions, ...uploadedMathQuestions, ...hardMathQuestions, ...importedSATMathQuestions, ...importedSATMathQuestions2, ...importedSATMathQuestions3, ...importedSATMathQuestions4, ...importedSATMathQuestions5, ...importedSATMathQuestions6, ...importedSATMathQuestions7, ...importedSATMathQuestions8, ...importedSATMathQuestions9, ...importedSATMathQuestions10, ...importedSATMathQuestions11, ...importedSATMathQuestions12, ...level8QuestionsExtra, ...pdfSATMathQuestions, ...allFillerQuestions, ...allLevelQuestions, ...balancedMathQuestions, ...mediumMathQuestions, ...mediumMathQuestions2, ...additionalVisualMathQuestions, ...actScienceQuestions, ...starterMathQuestions];
+const allMathQuestionsRaw: Question[] = [...rawQuestions, ...additionalMathQuestions, ...newMathQuestions, ...uploadedMathQuestions, ...hardMathQuestions, ...importedSATMathQuestions, ...importedSATMathQuestions2, ...importedSATMathQuestions3, ...importedSATMathQuestions4, ...importedSATMathQuestions5, ...importedSATMathQuestions6, ...importedSATMathQuestions7, ...importedSATMathQuestions8, ...importedSATMathQuestions9, ...importedSATMathQuestions10, ...importedSATMathQuestions11, ...importedSATMathQuestions12, ...level8QuestionsExtra, ...pdfSATMathQuestions, ...allFillerQuestions, ...allLevelQuestions, ...balancedMathQuestions, ...mediumMathQuestions, ...mediumMathQuestions2, ...additionalVisualMathQuestions, ...actScienceQuestions, ...starterMathQuestions, ...satMathLevel10Questions];
 
 // Convert decimal approximations to exact SAT-standard values (√2, √3, π, fractions)
 const allMathQuestions: Question[] = convertQuestionsToExact(allMathQuestionsRaw);
