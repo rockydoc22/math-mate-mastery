@@ -46,8 +46,8 @@ const features = [
   },
   {
     icon: Target,
-    title: "1600 Club Training",
-    description: "Elite practice modes designed for top scorers"
+    title: "Elite Training Modes",
+    description: "Advanced practice designed for top scorers across SAT, PSAT, ACT & AP"
   },
   {
     icon: Swords,
@@ -57,7 +57,7 @@ const features = [
   {
     icon: Gamepad2,
     title: "Learning Arcade",
-    description: "Play Zalaga, Hangman & Chess while mastering SAT concepts"
+    description: "Play Zalaga, Hangman & Chess while mastering test concepts"
   },
   {
     icon: Trophy,
