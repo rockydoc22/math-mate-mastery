@@ -1,0 +1,28 @@
+{
+  "title": "Timed Mode Engine",
+  "mode_types": [
+    {
+      "id": "question_timer",
+      "description": "Each item has its own timer."
+    },
+    {
+      "id": "section_timer",
+      "description": "Entire set has a single countdown."
+    },
+    {
+      "id": "sprint_round",
+      "description": "Short burst mode for speed and pacing."
+    }
+  ],
+  "ui_rules": [
+    "Show visible timer but avoid flashing red too early.",
+    "Allow mark-for-review in section mode.",
+    "Show post-round pacing breakdown, not just raw score."
+  ],
+  "post_round_feedback": [
+    "questions too slow",
+    "questions guessed too fast",
+    "best paced section",
+    "recommended next timed length"
+  ]
+}
