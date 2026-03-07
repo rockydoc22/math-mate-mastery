@@ -1,0 +1,23 @@
+{
+  "title": "Quest Rewards and Streak Integration",
+  "reward_rules": [
+    {
+      "rule": "complete_1_quest",
+      "reward": "base coins only"
+    },
+    {
+      "rule": "complete_all_daily_quests",
+      "reward": "bonus chest + 20 coins"
+    },
+    {
+      "rule": "complete_all_daily_quests_7_days",
+      "reward": "weekly bonus + 60 coins"
+    }
+  ],
+  "reward_types": [
+    "coins",
+    "unlock tokens",
+    "badge progress",
+    "streak protection token"
+  ]
+}

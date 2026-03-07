@@ -1,0 +1,69 @@
+{
+  "title": "Quest Templates",
+  "language_app": [
+    {
+      "id": "lang_q_001",
+      "name": "Story Starter",
+      "goal": "Complete 1 story",
+      "reward_coins": 12
+    },
+    {
+      "id": "lang_q_002",
+      "name": "Conversation Boost",
+      "goal": "Finish 1 conversation session",
+      "reward_coins": 15
+    },
+    {
+      "id": "lang_q_003",
+      "name": "Word Sprint",
+      "goal": "Review 10 vocabulary items",
+      "reward_coins": 10
+    },
+    {
+      "id": "lang_q_004",
+      "name": "Accuracy Win",
+      "goal": "Get 5 quiz questions correct",
+      "reward_coins": 12
+    }
+  ],
+  "testing_app": [
+    {
+      "id": "test_q_001",
+      "name": "Warm-Up Round",
+      "goal": "Complete 5 practice questions",
+      "reward_coins": 10
+    },
+    {
+      "id": "test_q_002",
+      "name": "Strategy Builder",
+      "goal": "Finish 2 strategy scenarios",
+      "reward_coins": 14
+    },
+    {
+      "id": "test_q_003",
+      "name": "Timed Push",
+      "goal": "Complete 1 timed round",
+      "reward_coins": 18
+    },
+    {
+      "id": "test_q_004",
+      "name": "Accuracy Check",
+      "goal": "Reach 80% accuracy on 10 questions",
+      "reward_coins": 20
+    }
+  ],
+  "cognitive_track": [
+    {
+      "id": "cog_q_001",
+      "name": "Pattern Path",
+      "goal": "Solve 4 pattern items",
+      "reward_coins": 10
+    },
+    {
+      "id": "cog_q_002",
+      "name": "Memory Ladder",
+      "goal": "Complete 1 memory activity",
+      "reward_coins": 12
+    }
+  ]
+}

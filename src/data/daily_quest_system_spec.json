@@ -1,0 +1,36 @@
+{
+  "title": "Daily Quest System",
+  "purpose": "Create short rotating goals that increase return usage without adding heavy build complexity.",
+  "quest_categories": [
+    "language_story",
+    "conversation_practice",
+    "vocabulary_review",
+    "quiz_accuracy",
+    "timed_mode",
+    "strategy_training",
+    "cognitive_skills"
+  ],
+  "design_rules": [
+    "Daily quests should be completable in 5 to 15 minutes.",
+    "Mix easy wins with one stretch goal.",
+    "Use quest variety so learners do not repeat the same mode every day.",
+    "Allow parent mode to limit quests for younger users."
+  ],
+  "default_daily_structure": [
+    {
+      "slot": 1,
+      "type": "easy_win",
+      "example": "Complete 1 story"
+    },
+    {
+      "slot": 2,
+      "type": "core_progress",
+      "example": "Answer 8 quiz questions with 70% accuracy"
+    },
+    {
+      "slot": 3,
+      "type": "variety_goal",
+      "example": "Finish 1 conversation or 1 strategy activity"
+    }
+  ]
+}

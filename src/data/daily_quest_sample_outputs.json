@@ -1,0 +1,28 @@
+{
+  "title": "Sample Daily Quest Outputs",
+  "examples": [
+    {
+      "profile": "Language learner age 9",
+      "quests": [
+        "Complete 1 story",
+        "Review 10 vocabulary words"
+      ]
+    },
+    {
+      "profile": "Teen test-prep user",
+      "quests": [
+        "Complete 5 practice questions",
+        "Finish 2 strategy scenarios",
+        "Complete 1 timed round"
+      ]
+    },
+    {
+      "profile": "Adult mixed-use learner",
+      "quests": [
+        "Complete 1 conversation session",
+        "Reach 80% on a 10-question set",
+        "Solve 1 logic challenge"
+      ]
+    }
+  ]
+}
