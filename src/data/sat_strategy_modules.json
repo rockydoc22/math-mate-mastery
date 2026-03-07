@@ -1,0 +1,49 @@
+{
+  "title": "SAT Strategy Modules",
+  "modules": [
+    {
+      "id": "rw_elimination",
+      "section": "Reading and Writing",
+      "name": "Reading Choice Elimination",
+      "lessons": [
+        "Wrong answers are often too broad, too narrow, or unsupported.",
+        "Pick the choice best supported by the text, not the most interesting one.",
+        "For vocabulary-in-context, replace the word in the sentence mentally."
+      ]
+    },
+    {
+      "id": "rw_transition_logic",
+      "section": "Reading and Writing",
+      "name": "Transition Logic",
+      "lessons": [
+        "Use however for contrast, therefore for cause/effect, furthermore for addition, for example for illustration.",
+        "Read the sentence before and after the blank before picking a transition."
+      ]
+    },
+    {
+      "id": "math_backsolving",
+      "section": "Math",
+      "name": "Backsolving and Plugging In",
+      "lessons": [
+        "When choices are numeric, test answer choices efficiently.",
+        "Pick simple numbers for variables when the question allows."
+      ]
+    },
+    {
+      "id": "math_pacing",
+      "section": "Math",
+      "name": "Pacing and Triage",
+      "lessons": [
+        "Do quick wins first.",
+        "Mark time-sinks and return later.",
+        "Estimate before doing full computation when possible."
+      ]
+    }
+  ],
+  "game_recommendation_order": [
+    "elimination_lab",
+    "time_attack",
+    "confidence_meter",
+    "boss_battle_review"
+  ]
+}

@@ -1,0 +1,5602 @@
+[
+  {
+    "id": "sat_rw_001",
+    "exam": "SAT",
+    "section": "Reading and Writing",
+    "skill": "transitions",
+    "difficulty": "medium",
+    "question": "The scientist repeated the experiment three times; ______, she felt confident that the pattern was reliable.\nWhich choice completes the text with the most logical transition?",
+    "options": [
+      {
+        "label": "A",
+        "text": "therefore"
+      },
+      {
+        "label": "B",
+        "text": "however"
+      },
+      {
+        "label": "C",
+        "text": "for example"
+      },
+      {
+        "label": "D",
+        "text": "meanwhile"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "The second clause is a result of the first, so a cause/effect transition fits."
+  },
+  {
+    "id": "sat_rw_002",
+    "exam": "SAT",
+    "section": "Reading and Writing",
+    "skill": "vocab_in_context",
+    "difficulty": "medium",
+    "question": "A museum guide notes that the word \"bold\" in the phrase \"a bold design choice\" most nearly means",
+    "options": [
+      {
+        "label": "A",
+        "text": "noisy"
+      },
+      {
+        "label": "B",
+        "text": "adventurous"
+      },
+      {
+        "label": "C",
+        "text": "ink-dark"
+      },
+      {
+        "label": "D",
+        "text": "careless"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "In context, bold means daring or adventurous, not literally dark or loud."
+  },
+  {
+    "id": "sat_rw_003",
+    "exam": "SAT",
+    "section": "Reading and Writing",
+    "skill": "inference",
+    "difficulty": "easy",
+    "question": "Which choice most logically completes the text?\n\"The school added a short advisory period between second and third periods. Teachers soon noticed fewer missing assignments, and students reported feeling less rushed. These results suggest that ______.\"",
+    "options": [
+      {
+        "label": "A",
+        "text": "students prefer longer lunch periods to academic support"
+      },
+      {
+        "label": "B",
+        "text": "teachers should assign fewer projects during the semester"
+      },
+      {
+        "label": "C",
+        "text": "a small scheduling change can improve students' organization and stress levels"
+      },
+      {
+        "label": "D",
+        "text": "school schedules have no meaningful effect on student habits"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "The evidence points to the advisory period improving organization and stress, not unrelated issues."
+  },
+  {
+    "id": "sat_rw_004",
+    "exam": "SAT",
+    "section": "Reading and Writing",
+    "skill": "sentence_revision",
+    "difficulty": "medium",
+    "question": "Which choice best combines the sentences into one sentence?\n\"Maya finished the poster. She checked the color labels carefully before printing it.\"",
+    "options": [
+      {
+        "label": "A",
+        "text": "Maya finished the poster, the color labels were checked carefully before printing it."
+      },
+      {
+        "label": "B",
+        "text": "Maya finished the poster, and before printing it carefully checked the colors labels."
+      },
+      {
+        "label": "C",
+        "text": "Checking carefully, the poster was finished by Maya before printing the color labels."
+      },
+      {
+        "label": "D",
+        "text": "Before printing the poster, Maya checked the color labels carefully."
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "The correct choice is concise and grammatically clear while preserving the meaning."
+  },
+  {
+    "id": "sat_rw_005",
+    "exam": "SAT",
+    "section": "Reading and Writing",
+    "skill": "main_idea",
+    "difficulty": "medium",
+    "question": "In a report on community gardens, a student writes: \"Several vacant lots were transformed into small vegetable plots by neighborhood volunteers. As a result, residents had easier access to fresh produce and a stronger reason to gather outdoors.\" Which choice best states the main idea of the text?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Volunteer-built gardens improved both food access and neighborhood connection."
+      },
+      {
+        "label": "B",
+        "text": "Vacant lots are usually too small for successful gardens."
+      },
+      {
+        "label": "C",
+        "text": "Fresh produce is less important than outdoor recreation."
+      },
+      {
+        "label": "D",
+        "text": "Neighborhood volunteers should avoid using vacant lots."
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "The text emphasizes two outcomes of the gardens: fresh produce and stronger community connection."
+  },
+  {
+    "id": "sat_rw_006",
+    "exam": "SAT",
+    "section": "Reading and Writing",
+    "skill": "transitions",
+    "difficulty": "easy",
+    "question": "The scientist repeated the experiment three times; ______, she felt confident that the pattern was reliable.\nWhich choice completes the text with the most logical transition?",
+    "options": [
+      {
+        "label": "A",
+        "text": "however"
+      },
+      {
+        "label": "B",
+        "text": "therefore"
+      },
+      {
+        "label": "C",
+        "text": "for example"
+      },
+      {
+        "label": "D",
+        "text": "meanwhile"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "The second clause is a result of the first, so a cause/effect transition fits."
+  },
+  {
+    "id": "sat_rw_007",
+    "exam": "SAT",
+    "section": "Reading and Writing",
+    "skill": "vocab_in_context",
+    "difficulty": "medium",
+    "question": "A museum guide notes that the word \"bold\" in the phrase \"a bold design choice\" most nearly means",
+    "options": [
+      {
+        "label": "A",
+        "text": "noisy"
+      },
+      {
+        "label": "B",
+        "text": "ink-dark"
+      },
+      {
+        "label": "C",
+        "text": "adventurous"
+      },
+      {
+        "label": "D",
+        "text": "careless"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "In context, bold means daring or adventurous, not literally dark or loud."
+  },
+  {
+    "id": "sat_rw_008",
+    "exam": "SAT",
+    "section": "Reading and Writing",
+    "skill": "inference",
+    "difficulty": "medium",
+    "question": "Which choice most logically completes the text?\n\"The school added a short advisory period between second and third periods. Teachers soon noticed fewer missing assignments, and students reported feeling less rushed. These results suggest that ______.\"",
+    "options": [
+      {
+        "label": "A",
+        "text": "students prefer longer lunch periods to academic support"
+      },
+      {
+        "label": "B",
+        "text": "teachers should assign fewer projects during the semester"
+      },
+      {
+        "label": "C",
+        "text": "school schedules have no meaningful effect on student habits"
+      },
+      {
+        "label": "D",
+        "text": "a small scheduling change can improve students' organization and stress levels"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "The evidence points to the advisory period improving organization and stress, not unrelated issues."
+  },
+  {
+    "id": "sat_rw_009",
+    "exam": "SAT",
+    "section": "Reading and Writing",
+    "skill": "sentence_revision",
+    "difficulty": "easy",
+    "question": "Which choice best combines the sentences into one sentence?\n\"Maya finished the poster. She checked the color labels carefully before printing it.\"",
+    "options": [
+      {
+        "label": "A",
+        "text": "Before printing the poster, Maya checked the color labels carefully."
+      },
+      {
+        "label": "B",
+        "text": "Maya finished the poster, the color labels were checked carefully before printing it."
+      },
+      {
+        "label": "C",
+        "text": "Maya finished the poster, and before printing it carefully checked the colors labels."
+      },
+      {
+        "label": "D",
+        "text": "Checking carefully, the poster was finished by Maya before printing the color labels."
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct choice is concise and grammatically clear while preserving the meaning."
+  },
+  {
+    "id": "sat_rw_010",
+    "exam": "SAT",
+    "section": "Reading and Writing",
+    "skill": "main_idea",
+    "difficulty": "medium",
+    "question": "In a report on community gardens, a student writes: \"Several vacant lots were transformed into small vegetable plots by neighborhood volunteers. As a result, residents had easier access to fresh produce and a stronger reason to gather outdoors.\" Which choice best states the main idea of the text?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Vacant lots are usually too small for successful gardens."
+      },
+      {
+        "label": "B",
+        "text": "Volunteer-built gardens improved both food access and neighborhood connection."
+      },
+      {
+        "label": "C",
+        "text": "Fresh produce is less important than outdoor recreation."
+      },
+      {
+        "label": "D",
+        "text": "Neighborhood volunteers should avoid using vacant lots."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "The text emphasizes two outcomes of the gardens: fresh produce and stronger community connection."
+  },
+  {
+    "id": "sat_rw_011",
+    "exam": "SAT",
+    "section": "Reading and Writing",
+    "skill": "transitions",
+    "difficulty": "medium",
+    "question": "The scientist repeated the experiment three times; ______, she felt confident that the pattern was reliable.\nWhich choice completes the text with the most logical transition?",
+    "options": [
+      {
+        "label": "A",
+        "text": "however"
+      },
+      {
+        "label": "B",
+        "text": "for example"
+      },
+      {
+        "label": "C",
+        "text": "therefore"
+      },
+      {
+        "label": "D",
+        "text": "meanwhile"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "The second clause is a result of the first, so a cause/effect transition fits."
+  },
+  {
+    "id": "sat_rw_012",
+    "exam": "SAT",
+    "section": "Reading and Writing",
+    "skill": "vocab_in_context",
+    "difficulty": "easy",
+    "question": "A museum guide notes that the word \"bold\" in the phrase \"a bold design choice\" most nearly means",
+    "options": [
+      {
+        "label": "A",
+        "text": "noisy"
+      },
+      {
+        "label": "B",
+        "text": "ink-dark"
+      },
+      {
+        "label": "C",
+        "text": "careless"
+      },
+      {
+        "label": "D",
+        "text": "adventurous"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "In context, bold means daring or adventurous, not literally dark or loud."
+  },
+  {
+    "id": "sat_rw_013",
+    "exam": "SAT",
+    "section": "Reading and Writing",
+    "skill": "inference",
+    "difficulty": "medium",
+    "question": "Which choice most logically completes the text?\n\"The school added a short advisory period between second and third periods. Teachers soon noticed fewer missing assignments, and students reported feeling less rushed. These results suggest that ______.\"",
+    "options": [
+      {
+        "label": "A",
+        "text": "a small scheduling change can improve students' organization and stress levels"
+      },
+      {
+        "label": "B",
+        "text": "students prefer longer lunch periods to academic support"
+      },
+      {
+        "label": "C",
+        "text": "teachers should assign fewer projects during the semester"
+      },
+      {
+        "label": "D",
+        "text": "school schedules have no meaningful effect on student habits"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "The evidence points to the advisory period improving organization and stress, not unrelated issues."
+  },
+  {
+    "id": "sat_rw_014",
+    "exam": "SAT",
+    "section": "Reading and Writing",
+    "skill": "sentence_revision",
+    "difficulty": "medium",
+    "question": "Which choice best combines the sentences into one sentence?\n\"Maya finished the poster. She checked the color labels carefully before printing it.\"",
+    "options": [
+      {
+        "label": "A",
+        "text": "Maya finished the poster, the color labels were checked carefully before printing it."
+      },
+      {
+        "label": "B",
+        "text": "Before printing the poster, Maya checked the color labels carefully."
+      },
+      {
+        "label": "C",
+        "text": "Maya finished the poster, and before printing it carefully checked the colors labels."
+      },
+      {
+        "label": "D",
+        "text": "Checking carefully, the poster was finished by Maya before printing the color labels."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct choice is concise and grammatically clear while preserving the meaning."
+  },
+  {
+    "id": "sat_rw_015",
+    "exam": "SAT",
+    "section": "Reading and Writing",
+    "skill": "main_idea",
+    "difficulty": "easy",
+    "question": "In a report on community gardens, a student writes: \"Several vacant lots were transformed into small vegetable plots by neighborhood volunteers. As a result, residents had easier access to fresh produce and a stronger reason to gather outdoors.\" Which choice best states the main idea of the text?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Vacant lots are usually too small for successful gardens."
+      },
+      {
+        "label": "B",
+        "text": "Fresh produce is less important than outdoor recreation."
+      },
+      {
+        "label": "C",
+        "text": "Volunteer-built gardens improved both food access and neighborhood connection."
+      },
+      {
+        "label": "D",
+        "text": "Neighborhood volunteers should avoid using vacant lots."
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "The text emphasizes two outcomes of the gardens: fresh produce and stronger community connection."
+  },
+  {
+    "id": "sat_rw_016",
+    "exam": "SAT",
+    "section": "Reading and Writing",
+    "skill": "transitions",
+    "difficulty": "medium",
+    "question": "The scientist repeated the experiment three times; ______, she felt confident that the pattern was reliable.\nWhich choice completes the text with the most logical transition?",
+    "options": [
+      {
+        "label": "A",
+        "text": "however"
+      },
+      {
+        "label": "B",
+        "text": "for example"
+      },
+      {
+        "label": "C",
+        "text": "meanwhile"
+      },
+      {
+        "label": "D",
+        "text": "therefore"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "The second clause is a result of the first, so a cause/effect transition fits."
+  },
+  {
+    "id": "sat_rw_017",
+    "exam": "SAT",
+    "section": "Reading and Writing",
+    "skill": "vocab_in_context",
+    "difficulty": "medium",
+    "question": "A museum guide notes that the word \"bold\" in the phrase \"a bold design choice\" most nearly means",
+    "options": [
+      {
+        "label": "A",
+        "text": "adventurous"
+      },
+      {
+        "label": "B",
+        "text": "noisy"
+      },
+      {
+        "label": "C",
+        "text": "ink-dark"
+      },
+      {
+        "label": "D",
+        "text": "careless"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "In context, bold means daring or adventurous, not literally dark or loud."
+  },
+  {
+    "id": "sat_rw_018",
+    "exam": "SAT",
+    "section": "Reading and Writing",
+    "skill": "inference",
+    "difficulty": "easy",
+    "question": "Which choice most logically completes the text?\n\"The school added a short advisory period between second and third periods. Teachers soon noticed fewer missing assignments, and students reported feeling less rushed. These results suggest that ______.\"",
+    "options": [
+      {
+        "label": "A",
+        "text": "students prefer longer lunch periods to academic support"
+      },
+      {
+        "label": "B",
+        "text": "a small scheduling change can improve students' organization and stress levels"
+      },
+      {
+        "label": "C",
+        "text": "teachers should assign fewer projects during the semester"
+      },
+      {
+        "label": "D",
+        "text": "school schedules have no meaningful effect on student habits"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "The evidence points to the advisory period improving organization and stress, not unrelated issues."
+  },
+  {
+    "id": "sat_rw_019",
+    "exam": "SAT",
+    "section": "Reading and Writing",
+    "skill": "sentence_revision",
+    "difficulty": "medium",
+    "question": "Which choice best combines the sentences into one sentence?\n\"Maya finished the poster. She checked the color labels carefully before printing it.\"",
+    "options": [
+      {
+        "label": "A",
+        "text": "Maya finished the poster, the color labels were checked carefully before printing it."
+      },
+      {
+        "label": "B",
+        "text": "Maya finished the poster, and before printing it carefully checked the colors labels."
+      },
+      {
+        "label": "C",
+        "text": "Before printing the poster, Maya checked the color labels carefully."
+      },
+      {
+        "label": "D",
+        "text": "Checking carefully, the poster was finished by Maya before printing the color labels."
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct choice is concise and grammatically clear while preserving the meaning."
+  },
+  {
+    "id": "sat_rw_020",
+    "exam": "SAT",
+    "section": "Reading and Writing",
+    "skill": "main_idea",
+    "difficulty": "medium",
+    "question": "In a report on community gardens, a student writes: \"Several vacant lots were transformed into small vegetable plots by neighborhood volunteers. As a result, residents had easier access to fresh produce and a stronger reason to gather outdoors.\" Which choice best states the main idea of the text?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Vacant lots are usually too small for successful gardens."
+      },
+      {
+        "label": "B",
+        "text": "Fresh produce is less important than outdoor recreation."
+      },
+      {
+        "label": "C",
+        "text": "Neighborhood volunteers should avoid using vacant lots."
+      },
+      {
+        "label": "D",
+        "text": "Volunteer-built gardens improved both food access and neighborhood connection."
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "The text emphasizes two outcomes of the gardens: fresh produce and stronger community connection."
+  },
+  {
+    "id": "sat_rw_021",
+    "exam": "SAT",
+    "section": "Reading and Writing",
+    "skill": "transitions",
+    "difficulty": "easy",
+    "question": "The scientist repeated the experiment three times; ______, she felt confident that the pattern was reliable.\nWhich choice completes the text with the most logical transition?",
+    "options": [
+      {
+        "label": "A",
+        "text": "therefore"
+      },
+      {
+        "label": "B",
+        "text": "however"
+      },
+      {
+        "label": "C",
+        "text": "for example"
+      },
+      {
+        "label": "D",
+        "text": "meanwhile"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "The second clause is a result of the first, so a cause/effect transition fits."
+  },
+  {
+    "id": "sat_rw_022",
+    "exam": "SAT",
+    "section": "Reading and Writing",
+    "skill": "vocab_in_context",
+    "difficulty": "medium",
+    "question": "A museum guide notes that the word \"bold\" in the phrase \"a bold design choice\" most nearly means",
+    "options": [
+      {
+        "label": "A",
+        "text": "noisy"
+      },
+      {
+        "label": "B",
+        "text": "adventurous"
+      },
+      {
+        "label": "C",
+        "text": "ink-dark"
+      },
+      {
+        "label": "D",
+        "text": "careless"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "In context, bold means daring or adventurous, not literally dark or loud."
+  },
+  {
+    "id": "sat_rw_023",
+    "exam": "SAT",
+    "section": "Reading and Writing",
+    "skill": "inference",
+    "difficulty": "medium",
+    "question": "Which choice most logically completes the text?\n\"The school added a short advisory period between second and third periods. Teachers soon noticed fewer missing assignments, and students reported feeling less rushed. These results suggest that ______.\"",
+    "options": [
+      {
+        "label": "A",
+        "text": "students prefer longer lunch periods to academic support"
+      },
+      {
+        "label": "B",
+        "text": "teachers should assign fewer projects during the semester"
+      },
+      {
+        "label": "C",
+        "text": "a small scheduling change can improve students' organization and stress levels"
+      },
+      {
+        "label": "D",
+        "text": "school schedules have no meaningful effect on student habits"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "The evidence points to the advisory period improving organization and stress, not unrelated issues."
+  },
+  {
+    "id": "sat_rw_024",
+    "exam": "SAT",
+    "section": "Reading and Writing",
+    "skill": "sentence_revision",
+    "difficulty": "easy",
+    "question": "Which choice best combines the sentences into one sentence?\n\"Maya finished the poster. She checked the color labels carefully before printing it.\"",
+    "options": [
+      {
+        "label": "A",
+        "text": "Maya finished the poster, the color labels were checked carefully before printing it."
+      },
+      {
+        "label": "B",
+        "text": "Maya finished the poster, and before printing it carefully checked the colors labels."
+      },
+      {
+        "label": "C",
+        "text": "Checking carefully, the poster was finished by Maya before printing the color labels."
+      },
+      {
+        "label": "D",
+        "text": "Before printing the poster, Maya checked the color labels carefully."
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "The correct choice is concise and grammatically clear while preserving the meaning."
+  },
+  {
+    "id": "sat_rw_025",
+    "exam": "SAT",
+    "section": "Reading and Writing",
+    "skill": "main_idea",
+    "difficulty": "medium",
+    "question": "In a report on community gardens, a student writes: \"Several vacant lots were transformed into small vegetable plots by neighborhood volunteers. As a result, residents had easier access to fresh produce and a stronger reason to gather outdoors.\" Which choice best states the main idea of the text?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Volunteer-built gardens improved both food access and neighborhood connection."
+      },
+      {
+        "label": "B",
+        "text": "Vacant lots are usually too small for successful gardens."
+      },
+      {
+        "label": "C",
+        "text": "Fresh produce is less important than outdoor recreation."
+      },
+      {
+        "label": "D",
+        "text": "Neighborhood volunteers should avoid using vacant lots."
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "The text emphasizes two outcomes of the gardens: fresh produce and stronger community connection."
+  },
+  {
+    "id": "sat_rw_026",
+    "exam": "SAT",
+    "section": "Reading and Writing",
+    "skill": "transitions",
+    "difficulty": "medium",
+    "question": "The scientist repeated the experiment three times; ______, she felt confident that the pattern was reliable.\nWhich choice completes the text with the most logical transition?",
+    "options": [
+      {
+        "label": "A",
+        "text": "however"
+      },
+      {
+        "label": "B",
+        "text": "therefore"
+      },
+      {
+        "label": "C",
+        "text": "for example"
+      },
+      {
+        "label": "D",
+        "text": "meanwhile"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "The second clause is a result of the first, so a cause/effect transition fits."
+  },
+  {
+    "id": "sat_rw_027",
+    "exam": "SAT",
+    "section": "Reading and Writing",
+    "skill": "vocab_in_context",
+    "difficulty": "easy",
+    "question": "A museum guide notes that the word \"bold\" in the phrase \"a bold design choice\" most nearly means",
+    "options": [
+      {
+        "label": "A",
+        "text": "noisy"
+      },
+      {
+        "label": "B",
+        "text": "ink-dark"
+      },
+      {
+        "label": "C",
+        "text": "adventurous"
+      },
+      {
+        "label": "D",
+        "text": "careless"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "In context, bold means daring or adventurous, not literally dark or loud."
+  },
+  {
+    "id": "sat_rw_028",
+    "exam": "SAT",
+    "section": "Reading and Writing",
+    "skill": "inference",
+    "difficulty": "medium",
+    "question": "Which choice most logically completes the text?\n\"The school added a short advisory period between second and third periods. Teachers soon noticed fewer missing assignments, and students reported feeling less rushed. These results suggest that ______.\"",
+    "options": [
+      {
+        "label": "A",
+        "text": "students prefer longer lunch periods to academic support"
+      },
+      {
+        "label": "B",
+        "text": "teachers should assign fewer projects during the semester"
+      },
+      {
+        "label": "C",
+        "text": "school schedules have no meaningful effect on student habits"
+      },
+      {
+        "label": "D",
+        "text": "a small scheduling change can improve students' organization and stress levels"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "The evidence points to the advisory period improving organization and stress, not unrelated issues."
+  },
+  {
+    "id": "sat_rw_029",
+    "exam": "SAT",
+    "section": "Reading and Writing",
+    "skill": "sentence_revision",
+    "difficulty": "medium",
+    "question": "Which choice best combines the sentences into one sentence?\n\"Maya finished the poster. She checked the color labels carefully before printing it.\"",
+    "options": [
+      {
+        "label": "A",
+        "text": "Before printing the poster, Maya checked the color labels carefully."
+      },
+      {
+        "label": "B",
+        "text": "Maya finished the poster, the color labels were checked carefully before printing it."
+      },
+      {
+        "label": "C",
+        "text": "Maya finished the poster, and before printing it carefully checked the colors labels."
+      },
+      {
+        "label": "D",
+        "text": "Checking carefully, the poster was finished by Maya before printing the color labels."
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct choice is concise and grammatically clear while preserving the meaning."
+  },
+  {
+    "id": "sat_rw_030",
+    "exam": "SAT",
+    "section": "Reading and Writing",
+    "skill": "main_idea",
+    "difficulty": "easy",
+    "question": "In a report on community gardens, a student writes: \"Several vacant lots were transformed into small vegetable plots by neighborhood volunteers. As a result, residents had easier access to fresh produce and a stronger reason to gather outdoors.\" Which choice best states the main idea of the text?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Vacant lots are usually too small for successful gardens."
+      },
+      {
+        "label": "B",
+        "text": "Volunteer-built gardens improved both food access and neighborhood connection."
+      },
+      {
+        "label": "C",
+        "text": "Fresh produce is less important than outdoor recreation."
+      },
+      {
+        "label": "D",
+        "text": "Neighborhood volunteers should avoid using vacant lots."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "The text emphasizes two outcomes of the gardens: fresh produce and stronger community connection."
+  },
+  {
+    "id": "sat_rw_031",
+    "exam": "SAT",
+    "section": "Reading and Writing",
+    "skill": "transitions",
+    "difficulty": "medium",
+    "question": "The scientist repeated the experiment three times; ______, she felt confident that the pattern was reliable.\nWhich choice completes the text with the most logical transition?",
+    "options": [
+      {
+        "label": "A",
+        "text": "however"
+      },
+      {
+        "label": "B",
+        "text": "for example"
+      },
+      {
+        "label": "C",
+        "text": "therefore"
+      },
+      {
+        "label": "D",
+        "text": "meanwhile"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "The second clause is a result of the first, so a cause/effect transition fits."
+  },
+  {
+    "id": "sat_rw_032",
+    "exam": "SAT",
+    "section": "Reading and Writing",
+    "skill": "vocab_in_context",
+    "difficulty": "medium",
+    "question": "A museum guide notes that the word \"bold\" in the phrase \"a bold design choice\" most nearly means",
+    "options": [
+      {
+        "label": "A",
+        "text": "noisy"
+      },
+      {
+        "label": "B",
+        "text": "ink-dark"
+      },
+      {
+        "label": "C",
+        "text": "careless"
+      },
+      {
+        "label": "D",
+        "text": "adventurous"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "In context, bold means daring or adventurous, not literally dark or loud."
+  },
+  {
+    "id": "sat_rw_033",
+    "exam": "SAT",
+    "section": "Reading and Writing",
+    "skill": "inference",
+    "difficulty": "easy",
+    "question": "Which choice most logically completes the text?\n\"The school added a short advisory period between second and third periods. Teachers soon noticed fewer missing assignments, and students reported feeling less rushed. These results suggest that ______.\"",
+    "options": [
+      {
+        "label": "A",
+        "text": "a small scheduling change can improve students' organization and stress levels"
+      },
+      {
+        "label": "B",
+        "text": "students prefer longer lunch periods to academic support"
+      },
+      {
+        "label": "C",
+        "text": "teachers should assign fewer projects during the semester"
+      },
+      {
+        "label": "D",
+        "text": "school schedules have no meaningful effect on student habits"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "The evidence points to the advisory period improving organization and stress, not unrelated issues."
+  },
+  {
+    "id": "sat_rw_034",
+    "exam": "SAT",
+    "section": "Reading and Writing",
+    "skill": "sentence_revision",
+    "difficulty": "medium",
+    "question": "Which choice best combines the sentences into one sentence?\n\"Maya finished the poster. She checked the color labels carefully before printing it.\"",
+    "options": [
+      {
+        "label": "A",
+        "text": "Maya finished the poster, the color labels were checked carefully before printing it."
+      },
+      {
+        "label": "B",
+        "text": "Before printing the poster, Maya checked the color labels carefully."
+      },
+      {
+        "label": "C",
+        "text": "Maya finished the poster, and before printing it carefully checked the colors labels."
+      },
+      {
+        "label": "D",
+        "text": "Checking carefully, the poster was finished by Maya before printing the color labels."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct choice is concise and grammatically clear while preserving the meaning."
+  },
+  {
+    "id": "sat_rw_035",
+    "exam": "SAT",
+    "section": "Reading and Writing",
+    "skill": "main_idea",
+    "difficulty": "medium",
+    "question": "In a report on community gardens, a student writes: \"Several vacant lots were transformed into small vegetable plots by neighborhood volunteers. As a result, residents had easier access to fresh produce and a stronger reason to gather outdoors.\" Which choice best states the main idea of the text?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Vacant lots are usually too small for successful gardens."
+      },
+      {
+        "label": "B",
+        "text": "Fresh produce is less important than outdoor recreation."
+      },
+      {
+        "label": "C",
+        "text": "Volunteer-built gardens improved both food access and neighborhood connection."
+      },
+      {
+        "label": "D",
+        "text": "Neighborhood volunteers should avoid using vacant lots."
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "The text emphasizes two outcomes of the gardens: fresh produce and stronger community connection."
+  },
+  {
+    "id": "sat_rw_036",
+    "exam": "SAT",
+    "section": "Reading and Writing",
+    "skill": "transitions",
+    "difficulty": "easy",
+    "question": "The scientist repeated the experiment three times; ______, she felt confident that the pattern was reliable.\nWhich choice completes the text with the most logical transition?",
+    "options": [
+      {
+        "label": "A",
+        "text": "however"
+      },
+      {
+        "label": "B",
+        "text": "for example"
+      },
+      {
+        "label": "C",
+        "text": "meanwhile"
+      },
+      {
+        "label": "D",
+        "text": "therefore"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "The second clause is a result of the first, so a cause/effect transition fits."
+  },
+  {
+    "id": "sat_rw_037",
+    "exam": "SAT",
+    "section": "Reading and Writing",
+    "skill": "vocab_in_context",
+    "difficulty": "medium",
+    "question": "A museum guide notes that the word \"bold\" in the phrase \"a bold design choice\" most nearly means",
+    "options": [
+      {
+        "label": "A",
+        "text": "adventurous"
+      },
+      {
+        "label": "B",
+        "text": "noisy"
+      },
+      {
+        "label": "C",
+        "text": "ink-dark"
+      },
+      {
+        "label": "D",
+        "text": "careless"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "In context, bold means daring or adventurous, not literally dark or loud."
+  },
+  {
+    "id": "sat_rw_038",
+    "exam": "SAT",
+    "section": "Reading and Writing",
+    "skill": "inference",
+    "difficulty": "medium",
+    "question": "Which choice most logically completes the text?\n\"The school added a short advisory period between second and third periods. Teachers soon noticed fewer missing assignments, and students reported feeling less rushed. These results suggest that ______.\"",
+    "options": [
+      {
+        "label": "A",
+        "text": "students prefer longer lunch periods to academic support"
+      },
+      {
+        "label": "B",
+        "text": "a small scheduling change can improve students' organization and stress levels"
+      },
+      {
+        "label": "C",
+        "text": "teachers should assign fewer projects during the semester"
+      },
+      {
+        "label": "D",
+        "text": "school schedules have no meaningful effect on student habits"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "The evidence points to the advisory period improving organization and stress, not unrelated issues."
+  },
+  {
+    "id": "sat_rw_039",
+    "exam": "SAT",
+    "section": "Reading and Writing",
+    "skill": "sentence_revision",
+    "difficulty": "easy",
+    "question": "Which choice best combines the sentences into one sentence?\n\"Maya finished the poster. She checked the color labels carefully before printing it.\"",
+    "options": [
+      {
+        "label": "A",
+        "text": "Maya finished the poster, the color labels were checked carefully before printing it."
+      },
+      {
+        "label": "B",
+        "text": "Maya finished the poster, and before printing it carefully checked the colors labels."
+      },
+      {
+        "label": "C",
+        "text": "Before printing the poster, Maya checked the color labels carefully."
+      },
+      {
+        "label": "D",
+        "text": "Checking carefully, the poster was finished by Maya before printing the color labels."
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct choice is concise and grammatically clear while preserving the meaning."
+  },
+  {
+    "id": "sat_rw_040",
+    "exam": "SAT",
+    "section": "Reading and Writing",
+    "skill": "main_idea",
+    "difficulty": "medium",
+    "question": "In a report on community gardens, a student writes: \"Several vacant lots were transformed into small vegetable plots by neighborhood volunteers. As a result, residents had easier access to fresh produce and a stronger reason to gather outdoors.\" Which choice best states the main idea of the text?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Vacant lots are usually too small for successful gardens."
+      },
+      {
+        "label": "B",
+        "text": "Fresh produce is less important than outdoor recreation."
+      },
+      {
+        "label": "C",
+        "text": "Neighborhood volunteers should avoid using vacant lots."
+      },
+      {
+        "label": "D",
+        "text": "Volunteer-built gardens improved both food access and neighborhood connection."
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "The text emphasizes two outcomes of the gardens: fresh produce and stronger community connection."
+  },
+  {
+    "id": "sat_rw_041",
+    "exam": "SAT",
+    "section": "Reading and Writing",
+    "skill": "transitions",
+    "difficulty": "medium",
+    "question": "The scientist repeated the experiment three times; ______, she felt confident that the pattern was reliable.\nWhich choice completes the text with the most logical transition?",
+    "options": [
+      {
+        "label": "A",
+        "text": "therefore"
+      },
+      {
+        "label": "B",
+        "text": "however"
+      },
+      {
+        "label": "C",
+        "text": "for example"
+      },
+      {
+        "label": "D",
+        "text": "meanwhile"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "The second clause is a result of the first, so a cause/effect transition fits."
+  },
+  {
+    "id": "sat_rw_042",
+    "exam": "SAT",
+    "section": "Reading and Writing",
+    "skill": "vocab_in_context",
+    "difficulty": "easy",
+    "question": "A museum guide notes that the word \"bold\" in the phrase \"a bold design choice\" most nearly means",
+    "options": [
+      {
+        "label": "A",
+        "text": "noisy"
+      },
+      {
+        "label": "B",
+        "text": "adventurous"
+      },
+      {
+        "label": "C",
+        "text": "ink-dark"
+      },
+      {
+        "label": "D",
+        "text": "careless"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "In context, bold means daring or adventurous, not literally dark or loud."
+  },
+  {
+    "id": "sat_rw_043",
+    "exam": "SAT",
+    "section": "Reading and Writing",
+    "skill": "inference",
+    "difficulty": "medium",
+    "question": "Which choice most logically completes the text?\n\"The school added a short advisory period between second and third periods. Teachers soon noticed fewer missing assignments, and students reported feeling less rushed. These results suggest that ______.\"",
+    "options": [
+      {
+        "label": "A",
+        "text": "students prefer longer lunch periods to academic support"
+      },
+      {
+        "label": "B",
+        "text": "teachers should assign fewer projects during the semester"
+      },
+      {
+        "label": "C",
+        "text": "a small scheduling change can improve students' organization and stress levels"
+      },
+      {
+        "label": "D",
+        "text": "school schedules have no meaningful effect on student habits"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "The evidence points to the advisory period improving organization and stress, not unrelated issues."
+  },
+  {
+    "id": "sat_rw_044",
+    "exam": "SAT",
+    "section": "Reading and Writing",
+    "skill": "sentence_revision",
+    "difficulty": "medium",
+    "question": "Which choice best combines the sentences into one sentence?\n\"Maya finished the poster. She checked the color labels carefully before printing it.\"",
+    "options": [
+      {
+        "label": "A",
+        "text": "Maya finished the poster, the color labels were checked carefully before printing it."
+      },
+      {
+        "label": "B",
+        "text": "Maya finished the poster, and before printing it carefully checked the colors labels."
+      },
+      {
+        "label": "C",
+        "text": "Checking carefully, the poster was finished by Maya before printing the color labels."
+      },
+      {
+        "label": "D",
+        "text": "Before printing the poster, Maya checked the color labels carefully."
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "The correct choice is concise and grammatically clear while preserving the meaning."
+  },
+  {
+    "id": "sat_rw_045",
+    "exam": "SAT",
+    "section": "Reading and Writing",
+    "skill": "main_idea",
+    "difficulty": "easy",
+    "question": "In a report on community gardens, a student writes: \"Several vacant lots were transformed into small vegetable plots by neighborhood volunteers. As a result, residents had easier access to fresh produce and a stronger reason to gather outdoors.\" Which choice best states the main idea of the text?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Volunteer-built gardens improved both food access and neighborhood connection."
+      },
+      {
+        "label": "B",
+        "text": "Vacant lots are usually too small for successful gardens."
+      },
+      {
+        "label": "C",
+        "text": "Fresh produce is less important than outdoor recreation."
+      },
+      {
+        "label": "D",
+        "text": "Neighborhood volunteers should avoid using vacant lots."
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "The text emphasizes two outcomes of the gardens: fresh produce and stronger community connection."
+  },
+  {
+    "id": "sat_rw_046",
+    "exam": "SAT",
+    "section": "Reading and Writing",
+    "skill": "transitions",
+    "difficulty": "medium",
+    "question": "The scientist repeated the experiment three times; ______, she felt confident that the pattern was reliable.\nWhich choice completes the text with the most logical transition?",
+    "options": [
+      {
+        "label": "A",
+        "text": "however"
+      },
+      {
+        "label": "B",
+        "text": "therefore"
+      },
+      {
+        "label": "C",
+        "text": "for example"
+      },
+      {
+        "label": "D",
+        "text": "meanwhile"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "The second clause is a result of the first, so a cause/effect transition fits."
+  },
+  {
+    "id": "sat_rw_047",
+    "exam": "SAT",
+    "section": "Reading and Writing",
+    "skill": "vocab_in_context",
+    "difficulty": "medium",
+    "question": "A museum guide notes that the word \"bold\" in the phrase \"a bold design choice\" most nearly means",
+    "options": [
+      {
+        "label": "A",
+        "text": "noisy"
+      },
+      {
+        "label": "B",
+        "text": "ink-dark"
+      },
+      {
+        "label": "C",
+        "text": "adventurous"
+      },
+      {
+        "label": "D",
+        "text": "careless"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "In context, bold means daring or adventurous, not literally dark or loud."
+  },
+  {
+    "id": "sat_rw_048",
+    "exam": "SAT",
+    "section": "Reading and Writing",
+    "skill": "inference",
+    "difficulty": "easy",
+    "question": "Which choice most logically completes the text?\n\"The school added a short advisory period between second and third periods. Teachers soon noticed fewer missing assignments, and students reported feeling less rushed. These results suggest that ______.\"",
+    "options": [
+      {
+        "label": "A",
+        "text": "students prefer longer lunch periods to academic support"
+      },
+      {
+        "label": "B",
+        "text": "teachers should assign fewer projects during the semester"
+      },
+      {
+        "label": "C",
+        "text": "school schedules have no meaningful effect on student habits"
+      },
+      {
+        "label": "D",
+        "text": "a small scheduling change can improve students' organization and stress levels"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "The evidence points to the advisory period improving organization and stress, not unrelated issues."
+  },
+  {
+    "id": "sat_rw_049",
+    "exam": "SAT",
+    "section": "Reading and Writing",
+    "skill": "sentence_revision",
+    "difficulty": "medium",
+    "question": "Which choice best combines the sentences into one sentence?\n\"Maya finished the poster. She checked the color labels carefully before printing it.\"",
+    "options": [
+      {
+        "label": "A",
+        "text": "Before printing the poster, Maya checked the color labels carefully."
+      },
+      {
+        "label": "B",
+        "text": "Maya finished the poster, the color labels were checked carefully before printing it."
+      },
+      {
+        "label": "C",
+        "text": "Maya finished the poster, and before printing it carefully checked the colors labels."
+      },
+      {
+        "label": "D",
+        "text": "Checking carefully, the poster was finished by Maya before printing the color labels."
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct choice is concise and grammatically clear while preserving the meaning."
+  },
+  {
+    "id": "sat_rw_050",
+    "exam": "SAT",
+    "section": "Reading and Writing",
+    "skill": "main_idea",
+    "difficulty": "medium",
+    "question": "In a report on community gardens, a student writes: \"Several vacant lots were transformed into small vegetable plots by neighborhood volunteers. As a result, residents had easier access to fresh produce and a stronger reason to gather outdoors.\" Which choice best states the main idea of the text?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Vacant lots are usually too small for successful gardens."
+      },
+      {
+        "label": "B",
+        "text": "Volunteer-built gardens improved both food access and neighborhood connection."
+      },
+      {
+        "label": "C",
+        "text": "Fresh produce is less important than outdoor recreation."
+      },
+      {
+        "label": "D",
+        "text": "Neighborhood volunteers should avoid using vacant lots."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "The text emphasizes two outcomes of the gardens: fresh produce and stronger community connection."
+  },
+  {
+    "id": "sat_rw_051",
+    "exam": "SAT",
+    "section": "Reading and Writing",
+    "skill": "transitions",
+    "difficulty": "easy",
+    "question": "The scientist repeated the experiment three times; ______, she felt confident that the pattern was reliable.\nWhich choice completes the text with the most logical transition?",
+    "options": [
+      {
+        "label": "A",
+        "text": "however"
+      },
+      {
+        "label": "B",
+        "text": "for example"
+      },
+      {
+        "label": "C",
+        "text": "therefore"
+      },
+      {
+        "label": "D",
+        "text": "meanwhile"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "The second clause is a result of the first, so a cause/effect transition fits."
+  },
+  {
+    "id": "sat_rw_052",
+    "exam": "SAT",
+    "section": "Reading and Writing",
+    "skill": "vocab_in_context",
+    "difficulty": "medium",
+    "question": "A museum guide notes that the word \"bold\" in the phrase \"a bold design choice\" most nearly means",
+    "options": [
+      {
+        "label": "A",
+        "text": "noisy"
+      },
+      {
+        "label": "B",
+        "text": "ink-dark"
+      },
+      {
+        "label": "C",
+        "text": "careless"
+      },
+      {
+        "label": "D",
+        "text": "adventurous"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "In context, bold means daring or adventurous, not literally dark or loud."
+  },
+  {
+    "id": "sat_rw_053",
+    "exam": "SAT",
+    "section": "Reading and Writing",
+    "skill": "inference",
+    "difficulty": "medium",
+    "question": "Which choice most logically completes the text?\n\"The school added a short advisory period between second and third periods. Teachers soon noticed fewer missing assignments, and students reported feeling less rushed. These results suggest that ______.\"",
+    "options": [
+      {
+        "label": "A",
+        "text": "a small scheduling change can improve students' organization and stress levels"
+      },
+      {
+        "label": "B",
+        "text": "students prefer longer lunch periods to academic support"
+      },
+      {
+        "label": "C",
+        "text": "teachers should assign fewer projects during the semester"
+      },
+      {
+        "label": "D",
+        "text": "school schedules have no meaningful effect on student habits"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "The evidence points to the advisory period improving organization and stress, not unrelated issues."
+  },
+  {
+    "id": "sat_rw_054",
+    "exam": "SAT",
+    "section": "Reading and Writing",
+    "skill": "sentence_revision",
+    "difficulty": "easy",
+    "question": "Which choice best combines the sentences into one sentence?\n\"Maya finished the poster. She checked the color labels carefully before printing it.\"",
+    "options": [
+      {
+        "label": "A",
+        "text": "Maya finished the poster, the color labels were checked carefully before printing it."
+      },
+      {
+        "label": "B",
+        "text": "Before printing the poster, Maya checked the color labels carefully."
+      },
+      {
+        "label": "C",
+        "text": "Maya finished the poster, and before printing it carefully checked the colors labels."
+      },
+      {
+        "label": "D",
+        "text": "Checking carefully, the poster was finished by Maya before printing the color labels."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct choice is concise and grammatically clear while preserving the meaning."
+  },
+  {
+    "id": "sat_rw_055",
+    "exam": "SAT",
+    "section": "Reading and Writing",
+    "skill": "main_idea",
+    "difficulty": "medium",
+    "question": "In a report on community gardens, a student writes: \"Several vacant lots were transformed into small vegetable plots by neighborhood volunteers. As a result, residents had easier access to fresh produce and a stronger reason to gather outdoors.\" Which choice best states the main idea of the text?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Vacant lots are usually too small for successful gardens."
+      },
+      {
+        "label": "B",
+        "text": "Fresh produce is less important than outdoor recreation."
+      },
+      {
+        "label": "C",
+        "text": "Volunteer-built gardens improved both food access and neighborhood connection."
+      },
+      {
+        "label": "D",
+        "text": "Neighborhood volunteers should avoid using vacant lots."
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "The text emphasizes two outcomes of the gardens: fresh produce and stronger community connection."
+  },
+  {
+    "id": "sat_rw_056",
+    "exam": "SAT",
+    "section": "Reading and Writing",
+    "skill": "transitions",
+    "difficulty": "medium",
+    "question": "The scientist repeated the experiment three times; ______, she felt confident that the pattern was reliable.\nWhich choice completes the text with the most logical transition?",
+    "options": [
+      {
+        "label": "A",
+        "text": "however"
+      },
+      {
+        "label": "B",
+        "text": "for example"
+      },
+      {
+        "label": "C",
+        "text": "meanwhile"
+      },
+      {
+        "label": "D",
+        "text": "therefore"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "The second clause is a result of the first, so a cause/effect transition fits."
+  },
+  {
+    "id": "sat_rw_057",
+    "exam": "SAT",
+    "section": "Reading and Writing",
+    "skill": "vocab_in_context",
+    "difficulty": "easy",
+    "question": "A museum guide notes that the word \"bold\" in the phrase \"a bold design choice\" most nearly means",
+    "options": [
+      {
+        "label": "A",
+        "text": "adventurous"
+      },
+      {
+        "label": "B",
+        "text": "noisy"
+      },
+      {
+        "label": "C",
+        "text": "ink-dark"
+      },
+      {
+        "label": "D",
+        "text": "careless"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "In context, bold means daring or adventurous, not literally dark or loud."
+  },
+  {
+    "id": "sat_rw_058",
+    "exam": "SAT",
+    "section": "Reading and Writing",
+    "skill": "inference",
+    "difficulty": "medium",
+    "question": "Which choice most logically completes the text?\n\"The school added a short advisory period between second and third periods. Teachers soon noticed fewer missing assignments, and students reported feeling less rushed. These results suggest that ______.\"",
+    "options": [
+      {
+        "label": "A",
+        "text": "students prefer longer lunch periods to academic support"
+      },
+      {
+        "label": "B",
+        "text": "a small scheduling change can improve students' organization and stress levels"
+      },
+      {
+        "label": "C",
+        "text": "teachers should assign fewer projects during the semester"
+      },
+      {
+        "label": "D",
+        "text": "school schedules have no meaningful effect on student habits"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "The evidence points to the advisory period improving organization and stress, not unrelated issues."
+  },
+  {
+    "id": "sat_rw_059",
+    "exam": "SAT",
+    "section": "Reading and Writing",
+    "skill": "sentence_revision",
+    "difficulty": "medium",
+    "question": "Which choice best combines the sentences into one sentence?\n\"Maya finished the poster. She checked the color labels carefully before printing it.\"",
+    "options": [
+      {
+        "label": "A",
+        "text": "Maya finished the poster, the color labels were checked carefully before printing it."
+      },
+      {
+        "label": "B",
+        "text": "Maya finished the poster, and before printing it carefully checked the colors labels."
+      },
+      {
+        "label": "C",
+        "text": "Before printing the poster, Maya checked the color labels carefully."
+      },
+      {
+        "label": "D",
+        "text": "Checking carefully, the poster was finished by Maya before printing the color labels."
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct choice is concise and grammatically clear while preserving the meaning."
+  },
+  {
+    "id": "sat_rw_060",
+    "exam": "SAT",
+    "section": "Reading and Writing",
+    "skill": "main_idea",
+    "difficulty": "easy",
+    "question": "In a report on community gardens, a student writes: \"Several vacant lots were transformed into small vegetable plots by neighborhood volunteers. As a result, residents had easier access to fresh produce and a stronger reason to gather outdoors.\" Which choice best states the main idea of the text?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Vacant lots are usually too small for successful gardens."
+      },
+      {
+        "label": "B",
+        "text": "Fresh produce is less important than outdoor recreation."
+      },
+      {
+        "label": "C",
+        "text": "Neighborhood volunteers should avoid using vacant lots."
+      },
+      {
+        "label": "D",
+        "text": "Volunteer-built gardens improved both food access and neighborhood connection."
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "The text emphasizes two outcomes of the gardens: fresh produce and stronger community connection."
+  },
+  {
+    "id": "sat_rw_061",
+    "exam": "SAT",
+    "section": "Reading and Writing",
+    "skill": "transitions",
+    "difficulty": "medium",
+    "question": "The scientist repeated the experiment three times; ______, she felt confident that the pattern was reliable.\nWhich choice completes the text with the most logical transition?",
+    "options": [
+      {
+        "label": "A",
+        "text": "therefore"
+      },
+      {
+        "label": "B",
+        "text": "however"
+      },
+      {
+        "label": "C",
+        "text": "for example"
+      },
+      {
+        "label": "D",
+        "text": "meanwhile"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "The second clause is a result of the first, so a cause/effect transition fits."
+  },
+  {
+    "id": "sat_rw_062",
+    "exam": "SAT",
+    "section": "Reading and Writing",
+    "skill": "vocab_in_context",
+    "difficulty": "medium",
+    "question": "A museum guide notes that the word \"bold\" in the phrase \"a bold design choice\" most nearly means",
+    "options": [
+      {
+        "label": "A",
+        "text": "noisy"
+      },
+      {
+        "label": "B",
+        "text": "adventurous"
+      },
+      {
+        "label": "C",
+        "text": "ink-dark"
+      },
+      {
+        "label": "D",
+        "text": "careless"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "In context, bold means daring or adventurous, not literally dark or loud."
+  },
+  {
+    "id": "sat_rw_063",
+    "exam": "SAT",
+    "section": "Reading and Writing",
+    "skill": "inference",
+    "difficulty": "easy",
+    "question": "Which choice most logically completes the text?\n\"The school added a short advisory period between second and third periods. Teachers soon noticed fewer missing assignments, and students reported feeling less rushed. These results suggest that ______.\"",
+    "options": [
+      {
+        "label": "A",
+        "text": "students prefer longer lunch periods to academic support"
+      },
+      {
+        "label": "B",
+        "text": "teachers should assign fewer projects during the semester"
+      },
+      {
+        "label": "C",
+        "text": "a small scheduling change can improve students' organization and stress levels"
+      },
+      {
+        "label": "D",
+        "text": "school schedules have no meaningful effect on student habits"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "The evidence points to the advisory period improving organization and stress, not unrelated issues."
+  },
+  {
+    "id": "sat_rw_064",
+    "exam": "SAT",
+    "section": "Reading and Writing",
+    "skill": "sentence_revision",
+    "difficulty": "medium",
+    "question": "Which choice best combines the sentences into one sentence?\n\"Maya finished the poster. She checked the color labels carefully before printing it.\"",
+    "options": [
+      {
+        "label": "A",
+        "text": "Maya finished the poster, the color labels were checked carefully before printing it."
+      },
+      {
+        "label": "B",
+        "text": "Maya finished the poster, and before printing it carefully checked the colors labels."
+      },
+      {
+        "label": "C",
+        "text": "Checking carefully, the poster was finished by Maya before printing the color labels."
+      },
+      {
+        "label": "D",
+        "text": "Before printing the poster, Maya checked the color labels carefully."
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "The correct choice is concise and grammatically clear while preserving the meaning."
+  },
+  {
+    "id": "sat_rw_065",
+    "exam": "SAT",
+    "section": "Reading and Writing",
+    "skill": "main_idea",
+    "difficulty": "medium",
+    "question": "In a report on community gardens, a student writes: \"Several vacant lots were transformed into small vegetable plots by neighborhood volunteers. As a result, residents had easier access to fresh produce and a stronger reason to gather outdoors.\" Which choice best states the main idea of the text?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Volunteer-built gardens improved both food access and neighborhood connection."
+      },
+      {
+        "label": "B",
+        "text": "Vacant lots are usually too small for successful gardens."
+      },
+      {
+        "label": "C",
+        "text": "Fresh produce is less important than outdoor recreation."
+      },
+      {
+        "label": "D",
+        "text": "Neighborhood volunteers should avoid using vacant lots."
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "The text emphasizes two outcomes of the gardens: fresh produce and stronger community connection."
+  },
+  {
+    "id": "sat_rw_066",
+    "exam": "SAT",
+    "section": "Reading and Writing",
+    "skill": "transitions",
+    "difficulty": "easy",
+    "question": "The scientist repeated the experiment three times; ______, she felt confident that the pattern was reliable.\nWhich choice completes the text with the most logical transition?",
+    "options": [
+      {
+        "label": "A",
+        "text": "however"
+      },
+      {
+        "label": "B",
+        "text": "therefore"
+      },
+      {
+        "label": "C",
+        "text": "for example"
+      },
+      {
+        "label": "D",
+        "text": "meanwhile"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "The second clause is a result of the first, so a cause/effect transition fits."
+  },
+  {
+    "id": "sat_rw_067",
+    "exam": "SAT",
+    "section": "Reading and Writing",
+    "skill": "vocab_in_context",
+    "difficulty": "medium",
+    "question": "A museum guide notes that the word \"bold\" in the phrase \"a bold design choice\" most nearly means",
+    "options": [
+      {
+        "label": "A",
+        "text": "noisy"
+      },
+      {
+        "label": "B",
+        "text": "ink-dark"
+      },
+      {
+        "label": "C",
+        "text": "adventurous"
+      },
+      {
+        "label": "D",
+        "text": "careless"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "In context, bold means daring or adventurous, not literally dark or loud."
+  },
+  {
+    "id": "sat_rw_068",
+    "exam": "SAT",
+    "section": "Reading and Writing",
+    "skill": "inference",
+    "difficulty": "medium",
+    "question": "Which choice most logically completes the text?\n\"The school added a short advisory period between second and third periods. Teachers soon noticed fewer missing assignments, and students reported feeling less rushed. These results suggest that ______.\"",
+    "options": [
+      {
+        "label": "A",
+        "text": "students prefer longer lunch periods to academic support"
+      },
+      {
+        "label": "B",
+        "text": "teachers should assign fewer projects during the semester"
+      },
+      {
+        "label": "C",
+        "text": "school schedules have no meaningful effect on student habits"
+      },
+      {
+        "label": "D",
+        "text": "a small scheduling change can improve students' organization and stress levels"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "The evidence points to the advisory period improving organization and stress, not unrelated issues."
+  },
+  {
+    "id": "sat_rw_069",
+    "exam": "SAT",
+    "section": "Reading and Writing",
+    "skill": "sentence_revision",
+    "difficulty": "easy",
+    "question": "Which choice best combines the sentences into one sentence?\n\"Maya finished the poster. She checked the color labels carefully before printing it.\"",
+    "options": [
+      {
+        "label": "A",
+        "text": "Before printing the poster, Maya checked the color labels carefully."
+      },
+      {
+        "label": "B",
+        "text": "Maya finished the poster, the color labels were checked carefully before printing it."
+      },
+      {
+        "label": "C",
+        "text": "Maya finished the poster, and before printing it carefully checked the colors labels."
+      },
+      {
+        "label": "D",
+        "text": "Checking carefully, the poster was finished by Maya before printing the color labels."
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct choice is concise and grammatically clear while preserving the meaning."
+  },
+  {
+    "id": "sat_rw_070",
+    "exam": "SAT",
+    "section": "Reading and Writing",
+    "skill": "main_idea",
+    "difficulty": "medium",
+    "question": "In a report on community gardens, a student writes: \"Several vacant lots were transformed into small vegetable plots by neighborhood volunteers. As a result, residents had easier access to fresh produce and a stronger reason to gather outdoors.\" Which choice best states the main idea of the text?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Vacant lots are usually too small for successful gardens."
+      },
+      {
+        "label": "B",
+        "text": "Volunteer-built gardens improved both food access and neighborhood connection."
+      },
+      {
+        "label": "C",
+        "text": "Fresh produce is less important than outdoor recreation."
+      },
+      {
+        "label": "D",
+        "text": "Neighborhood volunteers should avoid using vacant lots."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "The text emphasizes two outcomes of the gardens: fresh produce and stronger community connection."
+  },
+  {
+    "id": "sat_rw_071",
+    "exam": "SAT",
+    "section": "Reading and Writing",
+    "skill": "transitions",
+    "difficulty": "medium",
+    "question": "The scientist repeated the experiment three times; ______, she felt confident that the pattern was reliable.\nWhich choice completes the text with the most logical transition?",
+    "options": [
+      {
+        "label": "A",
+        "text": "however"
+      },
+      {
+        "label": "B",
+        "text": "for example"
+      },
+      {
+        "label": "C",
+        "text": "therefore"
+      },
+      {
+        "label": "D",
+        "text": "meanwhile"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "The second clause is a result of the first, so a cause/effect transition fits."
+  },
+  {
+    "id": "sat_rw_072",
+    "exam": "SAT",
+    "section": "Reading and Writing",
+    "skill": "vocab_in_context",
+    "difficulty": "easy",
+    "question": "A museum guide notes that the word \"bold\" in the phrase \"a bold design choice\" most nearly means",
+    "options": [
+      {
+        "label": "A",
+        "text": "noisy"
+      },
+      {
+        "label": "B",
+        "text": "ink-dark"
+      },
+      {
+        "label": "C",
+        "text": "careless"
+      },
+      {
+        "label": "D",
+        "text": "adventurous"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "In context, bold means daring or adventurous, not literally dark or loud."
+  },
+  {
+    "id": "sat_rw_073",
+    "exam": "SAT",
+    "section": "Reading and Writing",
+    "skill": "inference",
+    "difficulty": "medium",
+    "question": "Which choice most logically completes the text?\n\"The school added a short advisory period between second and third periods. Teachers soon noticed fewer missing assignments, and students reported feeling less rushed. These results suggest that ______.\"",
+    "options": [
+      {
+        "label": "A",
+        "text": "a small scheduling change can improve students' organization and stress levels"
+      },
+      {
+        "label": "B",
+        "text": "students prefer longer lunch periods to academic support"
+      },
+      {
+        "label": "C",
+        "text": "teachers should assign fewer projects during the semester"
+      },
+      {
+        "label": "D",
+        "text": "school schedules have no meaningful effect on student habits"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "The evidence points to the advisory period improving organization and stress, not unrelated issues."
+  },
+  {
+    "id": "sat_rw_074",
+    "exam": "SAT",
+    "section": "Reading and Writing",
+    "skill": "sentence_revision",
+    "difficulty": "medium",
+    "question": "Which choice best combines the sentences into one sentence?\n\"Maya finished the poster. She checked the color labels carefully before printing it.\"",
+    "options": [
+      {
+        "label": "A",
+        "text": "Maya finished the poster, the color labels were checked carefully before printing it."
+      },
+      {
+        "label": "B",
+        "text": "Before printing the poster, Maya checked the color labels carefully."
+      },
+      {
+        "label": "C",
+        "text": "Maya finished the poster, and before printing it carefully checked the colors labels."
+      },
+      {
+        "label": "D",
+        "text": "Checking carefully, the poster was finished by Maya before printing the color labels."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct choice is concise and grammatically clear while preserving the meaning."
+  },
+  {
+    "id": "sat_rw_075",
+    "exam": "SAT",
+    "section": "Reading and Writing",
+    "skill": "main_idea",
+    "difficulty": "easy",
+    "question": "In a report on community gardens, a student writes: \"Several vacant lots were transformed into small vegetable plots by neighborhood volunteers. As a result, residents had easier access to fresh produce and a stronger reason to gather outdoors.\" Which choice best states the main idea of the text?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Vacant lots are usually too small for successful gardens."
+      },
+      {
+        "label": "B",
+        "text": "Fresh produce is less important than outdoor recreation."
+      },
+      {
+        "label": "C",
+        "text": "Volunteer-built gardens improved both food access and neighborhood connection."
+      },
+      {
+        "label": "D",
+        "text": "Neighborhood volunteers should avoid using vacant lots."
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "The text emphasizes two outcomes of the gardens: fresh produce and stronger community connection."
+  },
+  {
+    "id": "sat_rw_076",
+    "exam": "SAT",
+    "section": "Reading and Writing",
+    "skill": "transitions",
+    "difficulty": "medium",
+    "question": "The scientist repeated the experiment three times; ______, she felt confident that the pattern was reliable.\nWhich choice completes the text with the most logical transition?",
+    "options": [
+      {
+        "label": "A",
+        "text": "however"
+      },
+      {
+        "label": "B",
+        "text": "for example"
+      },
+      {
+        "label": "C",
+        "text": "meanwhile"
+      },
+      {
+        "label": "D",
+        "text": "therefore"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "The second clause is a result of the first, so a cause/effect transition fits."
+  },
+  {
+    "id": "sat_rw_077",
+    "exam": "SAT",
+    "section": "Reading and Writing",
+    "skill": "vocab_in_context",
+    "difficulty": "medium",
+    "question": "A museum guide notes that the word \"bold\" in the phrase \"a bold design choice\" most nearly means",
+    "options": [
+      {
+        "label": "A",
+        "text": "adventurous"
+      },
+      {
+        "label": "B",
+        "text": "noisy"
+      },
+      {
+        "label": "C",
+        "text": "ink-dark"
+      },
+      {
+        "label": "D",
+        "text": "careless"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "In context, bold means daring or adventurous, not literally dark or loud."
+  },
+  {
+    "id": "sat_rw_078",
+    "exam": "SAT",
+    "section": "Reading and Writing",
+    "skill": "inference",
+    "difficulty": "easy",
+    "question": "Which choice most logically completes the text?\n\"The school added a short advisory period between second and third periods. Teachers soon noticed fewer missing assignments, and students reported feeling less rushed. These results suggest that ______.\"",
+    "options": [
+      {
+        "label": "A",
+        "text": "students prefer longer lunch periods to academic support"
+      },
+      {
+        "label": "B",
+        "text": "a small scheduling change can improve students' organization and stress levels"
+      },
+      {
+        "label": "C",
+        "text": "teachers should assign fewer projects during the semester"
+      },
+      {
+        "label": "D",
+        "text": "school schedules have no meaningful effect on student habits"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "The evidence points to the advisory period improving organization and stress, not unrelated issues."
+  },
+  {
+    "id": "sat_rw_079",
+    "exam": "SAT",
+    "section": "Reading and Writing",
+    "skill": "sentence_revision",
+    "difficulty": "medium",
+    "question": "Which choice best combines the sentences into one sentence?\n\"Maya finished the poster. She checked the color labels carefully before printing it.\"",
+    "options": [
+      {
+        "label": "A",
+        "text": "Maya finished the poster, the color labels were checked carefully before printing it."
+      },
+      {
+        "label": "B",
+        "text": "Maya finished the poster, and before printing it carefully checked the colors labels."
+      },
+      {
+        "label": "C",
+        "text": "Before printing the poster, Maya checked the color labels carefully."
+      },
+      {
+        "label": "D",
+        "text": "Checking carefully, the poster was finished by Maya before printing the color labels."
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct choice is concise and grammatically clear while preserving the meaning."
+  },
+  {
+    "id": "sat_rw_080",
+    "exam": "SAT",
+    "section": "Reading and Writing",
+    "skill": "main_idea",
+    "difficulty": "medium",
+    "question": "In a report on community gardens, a student writes: \"Several vacant lots were transformed into small vegetable plots by neighborhood volunteers. As a result, residents had easier access to fresh produce and a stronger reason to gather outdoors.\" Which choice best states the main idea of the text?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Vacant lots are usually too small for successful gardens."
+      },
+      {
+        "label": "B",
+        "text": "Fresh produce is less important than outdoor recreation."
+      },
+      {
+        "label": "C",
+        "text": "Neighborhood volunteers should avoid using vacant lots."
+      },
+      {
+        "label": "D",
+        "text": "Volunteer-built gardens improved both food access and neighborhood connection."
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "The text emphasizes two outcomes of the gardens: fresh produce and stronger community connection."
+  },
+  {
+    "id": "sat_rw_081",
+    "exam": "SAT",
+    "section": "Reading and Writing",
+    "skill": "transitions",
+    "difficulty": "easy",
+    "question": "The scientist repeated the experiment three times; ______, she felt confident that the pattern was reliable.\nWhich choice completes the text with the most logical transition?",
+    "options": [
+      {
+        "label": "A",
+        "text": "therefore"
+      },
+      {
+        "label": "B",
+        "text": "however"
+      },
+      {
+        "label": "C",
+        "text": "for example"
+      },
+      {
+        "label": "D",
+        "text": "meanwhile"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "The second clause is a result of the first, so a cause/effect transition fits."
+  },
+  {
+    "id": "sat_rw_082",
+    "exam": "SAT",
+    "section": "Reading and Writing",
+    "skill": "vocab_in_context",
+    "difficulty": "medium",
+    "question": "A museum guide notes that the word \"bold\" in the phrase \"a bold design choice\" most nearly means",
+    "options": [
+      {
+        "label": "A",
+        "text": "noisy"
+      },
+      {
+        "label": "B",
+        "text": "adventurous"
+      },
+      {
+        "label": "C",
+        "text": "ink-dark"
+      },
+      {
+        "label": "D",
+        "text": "careless"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "In context, bold means daring or adventurous, not literally dark or loud."
+  },
+  {
+    "id": "sat_rw_083",
+    "exam": "SAT",
+    "section": "Reading and Writing",
+    "skill": "inference",
+    "difficulty": "medium",
+    "question": "Which choice most logically completes the text?\n\"The school added a short advisory period between second and third periods. Teachers soon noticed fewer missing assignments, and students reported feeling less rushed. These results suggest that ______.\"",
+    "options": [
+      {
+        "label": "A",
+        "text": "students prefer longer lunch periods to academic support"
+      },
+      {
+        "label": "B",
+        "text": "teachers should assign fewer projects during the semester"
+      },
+      {
+        "label": "C",
+        "text": "a small scheduling change can improve students' organization and stress levels"
+      },
+      {
+        "label": "D",
+        "text": "school schedules have no meaningful effect on student habits"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "The evidence points to the advisory period improving organization and stress, not unrelated issues."
+  },
+  {
+    "id": "sat_rw_084",
+    "exam": "SAT",
+    "section": "Reading and Writing",
+    "skill": "sentence_revision",
+    "difficulty": "easy",
+    "question": "Which choice best combines the sentences into one sentence?\n\"Maya finished the poster. She checked the color labels carefully before printing it.\"",
+    "options": [
+      {
+        "label": "A",
+        "text": "Maya finished the poster, the color labels were checked carefully before printing it."
+      },
+      {
+        "label": "B",
+        "text": "Maya finished the poster, and before printing it carefully checked the colors labels."
+      },
+      {
+        "label": "C",
+        "text": "Checking carefully, the poster was finished by Maya before printing the color labels."
+      },
+      {
+        "label": "D",
+        "text": "Before printing the poster, Maya checked the color labels carefully."
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "The correct choice is concise and grammatically clear while preserving the meaning."
+  },
+  {
+    "id": "sat_rw_085",
+    "exam": "SAT",
+    "section": "Reading and Writing",
+    "skill": "main_idea",
+    "difficulty": "medium",
+    "question": "In a report on community gardens, a student writes: \"Several vacant lots were transformed into small vegetable plots by neighborhood volunteers. As a result, residents had easier access to fresh produce and a stronger reason to gather outdoors.\" Which choice best states the main idea of the text?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Volunteer-built gardens improved both food access and neighborhood connection."
+      },
+      {
+        "label": "B",
+        "text": "Vacant lots are usually too small for successful gardens."
+      },
+      {
+        "label": "C",
+        "text": "Fresh produce is less important than outdoor recreation."
+      },
+      {
+        "label": "D",
+        "text": "Neighborhood volunteers should avoid using vacant lots."
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "The text emphasizes two outcomes of the gardens: fresh produce and stronger community connection."
+  },
+  {
+    "id": "sat_rw_086",
+    "exam": "SAT",
+    "section": "Reading and Writing",
+    "skill": "transitions",
+    "difficulty": "medium",
+    "question": "The scientist repeated the experiment three times; ______, she felt confident that the pattern was reliable.\nWhich choice completes the text with the most logical transition?",
+    "options": [
+      {
+        "label": "A",
+        "text": "however"
+      },
+      {
+        "label": "B",
+        "text": "therefore"
+      },
+      {
+        "label": "C",
+        "text": "for example"
+      },
+      {
+        "label": "D",
+        "text": "meanwhile"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "The second clause is a result of the first, so a cause/effect transition fits."
+  },
+  {
+    "id": "sat_rw_087",
+    "exam": "SAT",
+    "section": "Reading and Writing",
+    "skill": "vocab_in_context",
+    "difficulty": "easy",
+    "question": "A museum guide notes that the word \"bold\" in the phrase \"a bold design choice\" most nearly means",
+    "options": [
+      {
+        "label": "A",
+        "text": "noisy"
+      },
+      {
+        "label": "B",
+        "text": "ink-dark"
+      },
+      {
+        "label": "C",
+        "text": "adventurous"
+      },
+      {
+        "label": "D",
+        "text": "careless"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "In context, bold means daring or adventurous, not literally dark or loud."
+  },
+  {
+    "id": "sat_rw_088",
+    "exam": "SAT",
+    "section": "Reading and Writing",
+    "skill": "inference",
+    "difficulty": "medium",
+    "question": "Which choice most logically completes the text?\n\"The school added a short advisory period between second and third periods. Teachers soon noticed fewer missing assignments, and students reported feeling less rushed. These results suggest that ______.\"",
+    "options": [
+      {
+        "label": "A",
+        "text": "students prefer longer lunch periods to academic support"
+      },
+      {
+        "label": "B",
+        "text": "teachers should assign fewer projects during the semester"
+      },
+      {
+        "label": "C",
+        "text": "school schedules have no meaningful effect on student habits"
+      },
+      {
+        "label": "D",
+        "text": "a small scheduling change can improve students' organization and stress levels"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "The evidence points to the advisory period improving organization and stress, not unrelated issues."
+  },
+  {
+    "id": "sat_rw_089",
+    "exam": "SAT",
+    "section": "Reading and Writing",
+    "skill": "sentence_revision",
+    "difficulty": "medium",
+    "question": "Which choice best combines the sentences into one sentence?\n\"Maya finished the poster. She checked the color labels carefully before printing it.\"",
+    "options": [
+      {
+        "label": "A",
+        "text": "Before printing the poster, Maya checked the color labels carefully."
+      },
+      {
+        "label": "B",
+        "text": "Maya finished the poster, the color labels were checked carefully before printing it."
+      },
+      {
+        "label": "C",
+        "text": "Maya finished the poster, and before printing it carefully checked the colors labels."
+      },
+      {
+        "label": "D",
+        "text": "Checking carefully, the poster was finished by Maya before printing the color labels."
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct choice is concise and grammatically clear while preserving the meaning."
+  },
+  {
+    "id": "sat_rw_090",
+    "exam": "SAT",
+    "section": "Reading and Writing",
+    "skill": "main_idea",
+    "difficulty": "easy",
+    "question": "In a report on community gardens, a student writes: \"Several vacant lots were transformed into small vegetable plots by neighborhood volunteers. As a result, residents had easier access to fresh produce and a stronger reason to gather outdoors.\" Which choice best states the main idea of the text?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Vacant lots are usually too small for successful gardens."
+      },
+      {
+        "label": "B",
+        "text": "Volunteer-built gardens improved both food access and neighborhood connection."
+      },
+      {
+        "label": "C",
+        "text": "Fresh produce is less important than outdoor recreation."
+      },
+      {
+        "label": "D",
+        "text": "Neighborhood volunteers should avoid using vacant lots."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "The text emphasizes two outcomes of the gardens: fresh produce and stronger community connection."
+  },
+  {
+    "id": "sat_rw_091",
+    "exam": "SAT",
+    "section": "Reading and Writing",
+    "skill": "transitions",
+    "difficulty": "medium",
+    "question": "The scientist repeated the experiment three times; ______, she felt confident that the pattern was reliable.\nWhich choice completes the text with the most logical transition?",
+    "options": [
+      {
+        "label": "A",
+        "text": "however"
+      },
+      {
+        "label": "B",
+        "text": "for example"
+      },
+      {
+        "label": "C",
+        "text": "therefore"
+      },
+      {
+        "label": "D",
+        "text": "meanwhile"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "The second clause is a result of the first, so a cause/effect transition fits."
+  },
+  {
+    "id": "sat_rw_092",
+    "exam": "SAT",
+    "section": "Reading and Writing",
+    "skill": "vocab_in_context",
+    "difficulty": "medium",
+    "question": "A museum guide notes that the word \"bold\" in the phrase \"a bold design choice\" most nearly means",
+    "options": [
+      {
+        "label": "A",
+        "text": "noisy"
+      },
+      {
+        "label": "B",
+        "text": "ink-dark"
+      },
+      {
+        "label": "C",
+        "text": "careless"
+      },
+      {
+        "label": "D",
+        "text": "adventurous"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "In context, bold means daring or adventurous, not literally dark or loud."
+  },
+  {
+    "id": "sat_rw_093",
+    "exam": "SAT",
+    "section": "Reading and Writing",
+    "skill": "inference",
+    "difficulty": "easy",
+    "question": "Which choice most logically completes the text?\n\"The school added a short advisory period between second and third periods. Teachers soon noticed fewer missing assignments, and students reported feeling less rushed. These results suggest that ______.\"",
+    "options": [
+      {
+        "label": "A",
+        "text": "a small scheduling change can improve students' organization and stress levels"
+      },
+      {
+        "label": "B",
+        "text": "students prefer longer lunch periods to academic support"
+      },
+      {
+        "label": "C",
+        "text": "teachers should assign fewer projects during the semester"
+      },
+      {
+        "label": "D",
+        "text": "school schedules have no meaningful effect on student habits"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "The evidence points to the advisory period improving organization and stress, not unrelated issues."
+  },
+  {
+    "id": "sat_rw_094",
+    "exam": "SAT",
+    "section": "Reading and Writing",
+    "skill": "sentence_revision",
+    "difficulty": "medium",
+    "question": "Which choice best combines the sentences into one sentence?\n\"Maya finished the poster. She checked the color labels carefully before printing it.\"",
+    "options": [
+      {
+        "label": "A",
+        "text": "Maya finished the poster, the color labels were checked carefully before printing it."
+      },
+      {
+        "label": "B",
+        "text": "Before printing the poster, Maya checked the color labels carefully."
+      },
+      {
+        "label": "C",
+        "text": "Maya finished the poster, and before printing it carefully checked the colors labels."
+      },
+      {
+        "label": "D",
+        "text": "Checking carefully, the poster was finished by Maya before printing the color labels."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "The correct choice is concise and grammatically clear while preserving the meaning."
+  },
+  {
+    "id": "sat_rw_095",
+    "exam": "SAT",
+    "section": "Reading and Writing",
+    "skill": "main_idea",
+    "difficulty": "medium",
+    "question": "In a report on community gardens, a student writes: \"Several vacant lots were transformed into small vegetable plots by neighborhood volunteers. As a result, residents had easier access to fresh produce and a stronger reason to gather outdoors.\" Which choice best states the main idea of the text?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Vacant lots are usually too small for successful gardens."
+      },
+      {
+        "label": "B",
+        "text": "Fresh produce is less important than outdoor recreation."
+      },
+      {
+        "label": "C",
+        "text": "Volunteer-built gardens improved both food access and neighborhood connection."
+      },
+      {
+        "label": "D",
+        "text": "Neighborhood volunteers should avoid using vacant lots."
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "The text emphasizes two outcomes of the gardens: fresh produce and stronger community connection."
+  },
+  {
+    "id": "sat_rw_096",
+    "exam": "SAT",
+    "section": "Reading and Writing",
+    "skill": "transitions",
+    "difficulty": "easy",
+    "question": "The scientist repeated the experiment three times; ______, she felt confident that the pattern was reliable.\nWhich choice completes the text with the most logical transition?",
+    "options": [
+      {
+        "label": "A",
+        "text": "however"
+      },
+      {
+        "label": "B",
+        "text": "for example"
+      },
+      {
+        "label": "C",
+        "text": "meanwhile"
+      },
+      {
+        "label": "D",
+        "text": "therefore"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "The second clause is a result of the first, so a cause/effect transition fits."
+  },
+  {
+    "id": "sat_rw_097",
+    "exam": "SAT",
+    "section": "Reading and Writing",
+    "skill": "vocab_in_context",
+    "difficulty": "medium",
+    "question": "A museum guide notes that the word \"bold\" in the phrase \"a bold design choice\" most nearly means",
+    "options": [
+      {
+        "label": "A",
+        "text": "adventurous"
+      },
+      {
+        "label": "B",
+        "text": "noisy"
+      },
+      {
+        "label": "C",
+        "text": "ink-dark"
+      },
+      {
+        "label": "D",
+        "text": "careless"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "In context, bold means daring or adventurous, not literally dark or loud."
+  },
+  {
+    "id": "sat_rw_098",
+    "exam": "SAT",
+    "section": "Reading and Writing",
+    "skill": "inference",
+    "difficulty": "medium",
+    "question": "Which choice most logically completes the text?\n\"The school added a short advisory period between second and third periods. Teachers soon noticed fewer missing assignments, and students reported feeling less rushed. These results suggest that ______.\"",
+    "options": [
+      {
+        "label": "A",
+        "text": "students prefer longer lunch periods to academic support"
+      },
+      {
+        "label": "B",
+        "text": "a small scheduling change can improve students' organization and stress levels"
+      },
+      {
+        "label": "C",
+        "text": "teachers should assign fewer projects during the semester"
+      },
+      {
+        "label": "D",
+        "text": "school schedules have no meaningful effect on student habits"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "The evidence points to the advisory period improving organization and stress, not unrelated issues."
+  },
+  {
+    "id": "sat_rw_099",
+    "exam": "SAT",
+    "section": "Reading and Writing",
+    "skill": "sentence_revision",
+    "difficulty": "easy",
+    "question": "Which choice best combines the sentences into one sentence?\n\"Maya finished the poster. She checked the color labels carefully before printing it.\"",
+    "options": [
+      {
+        "label": "A",
+        "text": "Maya finished the poster, the color labels were checked carefully before printing it."
+      },
+      {
+        "label": "B",
+        "text": "Maya finished the poster, and before printing it carefully checked the colors labels."
+      },
+      {
+        "label": "C",
+        "text": "Before printing the poster, Maya checked the color labels carefully."
+      },
+      {
+        "label": "D",
+        "text": "Checking carefully, the poster was finished by Maya before printing the color labels."
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct choice is concise and grammatically clear while preserving the meaning."
+  },
+  {
+    "id": "sat_rw_100",
+    "exam": "SAT",
+    "section": "Reading and Writing",
+    "skill": "main_idea",
+    "difficulty": "medium",
+    "question": "In a report on community gardens, a student writes: \"Several vacant lots were transformed into small vegetable plots by neighborhood volunteers. As a result, residents had easier access to fresh produce and a stronger reason to gather outdoors.\" Which choice best states the main idea of the text?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Vacant lots are usually too small for successful gardens."
+      },
+      {
+        "label": "B",
+        "text": "Fresh produce is less important than outdoor recreation."
+      },
+      {
+        "label": "C",
+        "text": "Neighborhood volunteers should avoid using vacant lots."
+      },
+      {
+        "label": "D",
+        "text": "Volunteer-built gardens improved both food access and neighborhood connection."
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "The text emphasizes two outcomes of the gardens: fresh produce and stronger community connection."
+  },
+  {
+    "id": "sat_math_001",
+    "exam": "SAT",
+    "section": "Math",
+    "skill": "functions",
+    "difficulty": "medium",
+    "question": "In the equation y = 4x + 3, what is the value of y when x = 6?",
+    "options": [
+      {
+        "label": "A",
+        "text": "25"
+      },
+      {
+        "label": "B",
+        "text": "27"
+      },
+      {
+        "label": "C",
+        "text": "29"
+      },
+      {
+        "label": "D",
+        "text": "7"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Substitute x = 6: y = 4(6) + 3 = 27."
+  },
+  {
+    "id": "sat_math_002",
+    "exam": "SAT",
+    "section": "Math",
+    "skill": "geometry",
+    "difficulty": "medium",
+    "question": "A square has side length 8. What is its area?",
+    "options": [
+      {
+        "label": "A",
+        "text": "32"
+      },
+      {
+        "label": "B",
+        "text": "16"
+      },
+      {
+        "label": "C",
+        "text": "64"
+      },
+      {
+        "label": "D",
+        "text": "72"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "The area of a square is side squared."
+  },
+  {
+    "id": "sat_math_003",
+    "exam": "SAT",
+    "section": "Math",
+    "skill": "percent",
+    "difficulty": "easy",
+    "question": "What is 25% of 43?",
+    "options": [
+      {
+        "label": "A",
+        "text": "18"
+      },
+      {
+        "label": "B",
+        "text": "25"
+      },
+      {
+        "label": "C",
+        "text": "15"
+      },
+      {
+        "label": "D",
+        "text": "10"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Convert 25% to decimal form and multiply by 43."
+  },
+  {
+    "id": "sat_math_004",
+    "exam": "SAT",
+    "section": "Math",
+    "skill": "expressions",
+    "difficulty": "medium",
+    "question": "If x = 6 and y = 7, what is the value of 2x + 3y?",
+    "options": [
+      {
+        "label": "A",
+        "text": "33"
+      },
+      {
+        "label": "B",
+        "text": "13"
+      },
+      {
+        "label": "C",
+        "text": "19"
+      },
+      {
+        "label": "D",
+        "text": "27"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Substitute x = 6 and y = 7: 2(6) + 3(7) = 33."
+  },
+  {
+    "id": "sat_math_005",
+    "exam": "SAT",
+    "section": "Math",
+    "skill": "linear_equations",
+    "difficulty": "medium",
+    "question": "If 3x + 3 = 30, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "10"
+      },
+      {
+        "label": "B",
+        "text": "8"
+      },
+      {
+        "label": "C",
+        "text": "9"
+      },
+      {
+        "label": "D",
+        "text": "30"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Subtract 3 from both sides to get 3x = 27, then divide by 3."
+  },
+  {
+    "id": "sat_math_006",
+    "exam": "SAT",
+    "section": "Math",
+    "skill": "functions",
+    "difficulty": "easy",
+    "question": "In the equation y = 4x + 4, what is the value of y when x = 7?",
+    "options": [
+      {
+        "label": "A",
+        "text": "30"
+      },
+      {
+        "label": "B",
+        "text": "34"
+      },
+      {
+        "label": "C",
+        "text": "8"
+      },
+      {
+        "label": "D",
+        "text": "32"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Substitute x = 7: y = 4(7) + 4 = 32."
+  },
+  {
+    "id": "sat_math_007",
+    "exam": "SAT",
+    "section": "Math",
+    "skill": "geometry",
+    "difficulty": "medium",
+    "question": "A square has side length 8. What is its area?",
+    "options": [
+      {
+        "label": "A",
+        "text": "64"
+      },
+      {
+        "label": "B",
+        "text": "32"
+      },
+      {
+        "label": "C",
+        "text": "16"
+      },
+      {
+        "label": "D",
+        "text": "72"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "The area of a square is side squared."
+  },
+  {
+    "id": "sat_math_008",
+    "exam": "SAT",
+    "section": "Math",
+    "skill": "percent",
+    "difficulty": "medium",
+    "question": "What is 20% of 48?",
+    "options": [
+      {
+        "label": "A",
+        "text": "28"
+      },
+      {
+        "label": "B",
+        "text": "9"
+      },
+      {
+        "label": "C",
+        "text": "20"
+      },
+      {
+        "label": "D",
+        "text": "14"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Convert 20% to decimal form and multiply by 48."
+  },
+  {
+    "id": "sat_math_009",
+    "exam": "SAT",
+    "section": "Math",
+    "skill": "expressions",
+    "difficulty": "easy",
+    "question": "If x = 5 and y = 7, what is the value of 2x + 3y?",
+    "options": [
+      {
+        "label": "A",
+        "text": "12"
+      },
+      {
+        "label": "B",
+        "text": "31"
+      },
+      {
+        "label": "C",
+        "text": "17"
+      },
+      {
+        "label": "D",
+        "text": "26"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Substitute x = 5 and y = 7: 2(5) + 3(7) = 31."
+  },
+  {
+    "id": "sat_math_010",
+    "exam": "SAT",
+    "section": "Math",
+    "skill": "linear_equations",
+    "difficulty": "medium",
+    "question": "If 4x + 3 = 35, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "9"
+      },
+      {
+        "label": "B",
+        "text": "7"
+      },
+      {
+        "label": "C",
+        "text": "8"
+      },
+      {
+        "label": "D",
+        "text": "35"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Subtract 3 from both sides to get 4x = 32, then divide by 4."
+  },
+  {
+    "id": "sat_math_011",
+    "exam": "SAT",
+    "section": "Math",
+    "skill": "functions",
+    "difficulty": "medium",
+    "question": "In the equation y = 4x + 5, what is the value of y when x = 8?",
+    "options": [
+      {
+        "label": "A",
+        "text": "35"
+      },
+      {
+        "label": "B",
+        "text": "39"
+      },
+      {
+        "label": "C",
+        "text": "9"
+      },
+      {
+        "label": "D",
+        "text": "37"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Substitute x = 8: y = 4(8) + 5 = 37."
+  },
+  {
+    "id": "sat_math_012",
+    "exam": "SAT",
+    "section": "Math",
+    "skill": "geometry",
+    "difficulty": "easy",
+    "question": "A square has side length 8. What is its area?",
+    "options": [
+      {
+        "label": "A",
+        "text": "64"
+      },
+      {
+        "label": "B",
+        "text": "32"
+      },
+      {
+        "label": "C",
+        "text": "16"
+      },
+      {
+        "label": "D",
+        "text": "72"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "The area of a square is side squared."
+  },
+  {
+    "id": "sat_math_013",
+    "exam": "SAT",
+    "section": "Math",
+    "skill": "percent",
+    "difficulty": "medium",
+    "question": "What is 15% of 53?",
+    "options": [
+      {
+        "label": "A",
+        "text": "38"
+      },
+      {
+        "label": "B",
+        "text": "15"
+      },
+      {
+        "label": "C",
+        "text": "7"
+      },
+      {
+        "label": "D",
+        "text": "12"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Convert 15% to decimal form and multiply by 53."
+  },
+  {
+    "id": "sat_math_014",
+    "exam": "SAT",
+    "section": "Math",
+    "skill": "expressions",
+    "difficulty": "medium",
+    "question": "If x = 4 and y = 7, what is the value of 2x + 3y?",
+    "options": [
+      {
+        "label": "A",
+        "text": "11"
+      },
+      {
+        "label": "B",
+        "text": "15"
+      },
+      {
+        "label": "C",
+        "text": "25"
+      },
+      {
+        "label": "D",
+        "text": "29"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Substitute x = 4 and y = 7: 2(4) + 3(7) = 29."
+  },
+  {
+    "id": "sat_math_015",
+    "exam": "SAT",
+    "section": "Math",
+    "skill": "linear_equations",
+    "difficulty": "easy",
+    "question": "If 5x + 3 = 38, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "7"
+      },
+      {
+        "label": "B",
+        "text": "8"
+      },
+      {
+        "label": "C",
+        "text": "6"
+      },
+      {
+        "label": "D",
+        "text": "38"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Subtract 3 from both sides to get 5x = 35, then divide by 5."
+  },
+  {
+    "id": "sat_math_016",
+    "exam": "SAT",
+    "section": "Math",
+    "skill": "functions",
+    "difficulty": "medium",
+    "question": "In the equation y = 4x + 2, what is the value of y when x = 5?",
+    "options": [
+      {
+        "label": "A",
+        "text": "20"
+      },
+      {
+        "label": "B",
+        "text": "22"
+      },
+      {
+        "label": "C",
+        "text": "24"
+      },
+      {
+        "label": "D",
+        "text": "6"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Substitute x = 5: y = 4(5) + 2 = 22."
+  },
+  {
+    "id": "sat_math_017",
+    "exam": "SAT",
+    "section": "Math",
+    "skill": "geometry",
+    "difficulty": "medium",
+    "question": "A square has side length 8. What is its area?",
+    "options": [
+      {
+        "label": "A",
+        "text": "32"
+      },
+      {
+        "label": "B",
+        "text": "64"
+      },
+      {
+        "label": "C",
+        "text": "16"
+      },
+      {
+        "label": "D",
+        "text": "72"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "The area of a square is side squared."
+  },
+  {
+    "id": "sat_math_018",
+    "exam": "SAT",
+    "section": "Math",
+    "skill": "percent",
+    "difficulty": "easy",
+    "question": "What is 10% of 58?",
+    "options": [
+      {
+        "label": "A",
+        "text": "48"
+      },
+      {
+        "label": "B",
+        "text": "10"
+      },
+      {
+        "label": "C",
+        "text": "5"
+      },
+      {
+        "label": "D",
+        "text": "10"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Convert 10% to decimal form and multiply by 58."
+  },
+  {
+    "id": "sat_math_019",
+    "exam": "SAT",
+    "section": "Math",
+    "skill": "expressions",
+    "difficulty": "medium",
+    "question": "If x = 3 and y = 7, what is the value of 2x + 3y?",
+    "options": [
+      {
+        "label": "A",
+        "text": "10"
+      },
+      {
+        "label": "B",
+        "text": "13"
+      },
+      {
+        "label": "C",
+        "text": "24"
+      },
+      {
+        "label": "D",
+        "text": "27"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Substitute x = 3 and y = 7: 2(3) + 3(7) = 27."
+  },
+  {
+    "id": "sat_math_020",
+    "exam": "SAT",
+    "section": "Math",
+    "skill": "linear_equations",
+    "difficulty": "medium",
+    "question": "If 2x + 3 = 15, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "6"
+      },
+      {
+        "label": "B",
+        "text": "7"
+      },
+      {
+        "label": "C",
+        "text": "5"
+      },
+      {
+        "label": "D",
+        "text": "15"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Subtract 3 from both sides to get 2x = 12, then divide by 2."
+  },
+  {
+    "id": "sat_math_021",
+    "exam": "SAT",
+    "section": "Math",
+    "skill": "functions",
+    "difficulty": "easy",
+    "question": "In the equation y = 4x + 3, what is the value of y when x = 6?",
+    "options": [
+      {
+        "label": "A",
+        "text": "25"
+      },
+      {
+        "label": "B",
+        "text": "29"
+      },
+      {
+        "label": "C",
+        "text": "27"
+      },
+      {
+        "label": "D",
+        "text": "7"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Substitute x = 6: y = 4(6) + 3 = 27."
+  },
+  {
+    "id": "sat_math_022",
+    "exam": "SAT",
+    "section": "Math",
+    "skill": "geometry",
+    "difficulty": "medium",
+    "question": "A square has side length 8. What is its area?",
+    "options": [
+      {
+        "label": "A",
+        "text": "32"
+      },
+      {
+        "label": "B",
+        "text": "16"
+      },
+      {
+        "label": "C",
+        "text": "72"
+      },
+      {
+        "label": "D",
+        "text": "64"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "The area of a square is side squared."
+  },
+  {
+    "id": "sat_math_023",
+    "exam": "SAT",
+    "section": "Math",
+    "skill": "percent",
+    "difficulty": "medium",
+    "question": "What is 35% of 63?",
+    "options": [
+      {
+        "label": "A",
+        "text": "22"
+      },
+      {
+        "label": "B",
+        "text": "28"
+      },
+      {
+        "label": "C",
+        "text": "35"
+      },
+      {
+        "label": "D",
+        "text": "27"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Convert 35% to decimal form and multiply by 63."
+  },
+  {
+    "id": "sat_math_024",
+    "exam": "SAT",
+    "section": "Math",
+    "skill": "expressions",
+    "difficulty": "easy",
+    "question": "If x = 2 and y = 7, what is the value of 2x + 3y?",
+    "options": [
+      {
+        "label": "A",
+        "text": "9"
+      },
+      {
+        "label": "B",
+        "text": "25"
+      },
+      {
+        "label": "C",
+        "text": "11"
+      },
+      {
+        "label": "D",
+        "text": "23"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Substitute x = 2 and y = 7: 2(2) + 3(7) = 25."
+  },
+  {
+    "id": "sat_math_025",
+    "exam": "SAT",
+    "section": "Math",
+    "skill": "linear_equations",
+    "difficulty": "medium",
+    "question": "If 3x + 3 = 18, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "6"
+      },
+      {
+        "label": "B",
+        "text": "5"
+      },
+      {
+        "label": "C",
+        "text": "4"
+      },
+      {
+        "label": "D",
+        "text": "18"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Subtract 3 from both sides to get 3x = 15, then divide by 3."
+  },
+  {
+    "id": "sat_math_026",
+    "exam": "SAT",
+    "section": "Math",
+    "skill": "functions",
+    "difficulty": "medium",
+    "question": "In the equation y = 4x + 4, what is the value of y when x = 7?",
+    "options": [
+      {
+        "label": "A",
+        "text": "30"
+      },
+      {
+        "label": "B",
+        "text": "34"
+      },
+      {
+        "label": "C",
+        "text": "32"
+      },
+      {
+        "label": "D",
+        "text": "8"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Substitute x = 7: y = 4(7) + 4 = 32."
+  },
+  {
+    "id": "sat_math_027",
+    "exam": "SAT",
+    "section": "Math",
+    "skill": "geometry",
+    "difficulty": "easy",
+    "question": "A square has side length 8. What is its area?",
+    "options": [
+      {
+        "label": "A",
+        "text": "32"
+      },
+      {
+        "label": "B",
+        "text": "16"
+      },
+      {
+        "label": "C",
+        "text": "72"
+      },
+      {
+        "label": "D",
+        "text": "64"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "The area of a square is side squared."
+  },
+  {
+    "id": "sat_math_028",
+    "exam": "SAT",
+    "section": "Math",
+    "skill": "percent",
+    "difficulty": "medium",
+    "question": "What is 30% of 68?",
+    "options": [
+      {
+        "label": "A",
+        "text": "20"
+      },
+      {
+        "label": "B",
+        "text": "38"
+      },
+      {
+        "label": "C",
+        "text": "30"
+      },
+      {
+        "label": "D",
+        "text": "25"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Convert 30% to decimal form and multiply by 68."
+  },
+  {
+    "id": "sat_math_029",
+    "exam": "SAT",
+    "section": "Math",
+    "skill": "expressions",
+    "difficulty": "medium",
+    "question": "If x = 7 and y = 7, what is the value of 2x + 3y?",
+    "options": [
+      {
+        "label": "A",
+        "text": "14"
+      },
+      {
+        "label": "B",
+        "text": "21"
+      },
+      {
+        "label": "C",
+        "text": "35"
+      },
+      {
+        "label": "D",
+        "text": "28"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Substitute x = 7 and y = 7: 2(7) + 3(7) = 35."
+  },
+  {
+    "id": "sat_math_030",
+    "exam": "SAT",
+    "section": "Math",
+    "skill": "linear_equations",
+    "difficulty": "easy",
+    "question": "If 4x + 3 = 19, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "5"
+      },
+      {
+        "label": "B",
+        "text": "3"
+      },
+      {
+        "label": "C",
+        "text": "19"
+      },
+      {
+        "label": "D",
+        "text": "4"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Subtract 3 from both sides to get 4x = 16, then divide by 4."
+  },
+  {
+    "id": "sat_math_031",
+    "exam": "SAT",
+    "section": "Math",
+    "skill": "functions",
+    "difficulty": "medium",
+    "question": "In the equation y = 4x + 5, what is the value of y when x = 8?",
+    "options": [
+      {
+        "label": "A",
+        "text": "37"
+      },
+      {
+        "label": "B",
+        "text": "35"
+      },
+      {
+        "label": "C",
+        "text": "39"
+      },
+      {
+        "label": "D",
+        "text": "9"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Substitute x = 8: y = 4(8) + 5 = 37."
+  },
+  {
+    "id": "sat_math_032",
+    "exam": "SAT",
+    "section": "Math",
+    "skill": "geometry",
+    "difficulty": "medium",
+    "question": "A square has side length 8. What is its area?",
+    "options": [
+      {
+        "label": "A",
+        "text": "32"
+      },
+      {
+        "label": "B",
+        "text": "64"
+      },
+      {
+        "label": "C",
+        "text": "16"
+      },
+      {
+        "label": "D",
+        "text": "72"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "The area of a square is side squared."
+  },
+  {
+    "id": "sat_math_033",
+    "exam": "SAT",
+    "section": "Math",
+    "skill": "percent",
+    "difficulty": "easy",
+    "question": "What is 25% of 43?",
+    "options": [
+      {
+        "label": "A",
+        "text": "18"
+      },
+      {
+        "label": "B",
+        "text": "10"
+      },
+      {
+        "label": "C",
+        "text": "25"
+      },
+      {
+        "label": "D",
+        "text": "15"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Convert 25% to decimal form and multiply by 43."
+  },
+  {
+    "id": "sat_math_034",
+    "exam": "SAT",
+    "section": "Math",
+    "skill": "expressions",
+    "difficulty": "medium",
+    "question": "If x = 6 and y = 7, what is the value of 2x + 3y?",
+    "options": [
+      {
+        "label": "A",
+        "text": "13"
+      },
+      {
+        "label": "B",
+        "text": "19"
+      },
+      {
+        "label": "C",
+        "text": "33"
+      },
+      {
+        "label": "D",
+        "text": "27"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Substitute x = 6 and y = 7: 2(6) + 3(7) = 33."
+  },
+  {
+    "id": "sat_math_035",
+    "exam": "SAT",
+    "section": "Math",
+    "skill": "linear_equations",
+    "difficulty": "medium",
+    "question": "If 5x + 3 = 48, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "10"
+      },
+      {
+        "label": "B",
+        "text": "8"
+      },
+      {
+        "label": "C",
+        "text": "48"
+      },
+      {
+        "label": "D",
+        "text": "9"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Subtract 3 from both sides to get 5x = 45, then divide by 5."
+  },
+  {
+    "id": "sat_math_036",
+    "exam": "SAT",
+    "section": "Math",
+    "skill": "functions",
+    "difficulty": "easy",
+    "question": "In the equation y = 4x + 2, what is the value of y when x = 5?",
+    "options": [
+      {
+        "label": "A",
+        "text": "22"
+      },
+      {
+        "label": "B",
+        "text": "20"
+      },
+      {
+        "label": "C",
+        "text": "24"
+      },
+      {
+        "label": "D",
+        "text": "6"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Substitute x = 5: y = 4(5) + 2 = 22."
+  },
+  {
+    "id": "sat_math_037",
+    "exam": "SAT",
+    "section": "Math",
+    "skill": "geometry",
+    "difficulty": "medium",
+    "question": "A square has side length 8. What is its area?",
+    "options": [
+      {
+        "label": "A",
+        "text": "32"
+      },
+      {
+        "label": "B",
+        "text": "16"
+      },
+      {
+        "label": "C",
+        "text": "64"
+      },
+      {
+        "label": "D",
+        "text": "72"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "The area of a square is side squared."
+  },
+  {
+    "id": "sat_math_038",
+    "exam": "SAT",
+    "section": "Math",
+    "skill": "percent",
+    "difficulty": "medium",
+    "question": "What is 20% of 48?",
+    "options": [
+      {
+        "label": "A",
+        "text": "28"
+      },
+      {
+        "label": "B",
+        "text": "20"
+      },
+      {
+        "label": "C",
+        "text": "14"
+      },
+      {
+        "label": "D",
+        "text": "9"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Convert 20% to decimal form and multiply by 48."
+  },
+  {
+    "id": "sat_math_039",
+    "exam": "SAT",
+    "section": "Math",
+    "skill": "expressions",
+    "difficulty": "easy",
+    "question": "If x = 5 and y = 7, what is the value of 2x + 3y?",
+    "options": [
+      {
+        "label": "A",
+        "text": "31"
+      },
+      {
+        "label": "B",
+        "text": "12"
+      },
+      {
+        "label": "C",
+        "text": "17"
+      },
+      {
+        "label": "D",
+        "text": "26"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Substitute x = 5 and y = 7: 2(5) + 3(7) = 31."
+  },
+  {
+    "id": "sat_math_040",
+    "exam": "SAT",
+    "section": "Math",
+    "skill": "linear_equations",
+    "difficulty": "medium",
+    "question": "If 2x + 3 = 19, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "9"
+      },
+      {
+        "label": "B",
+        "text": "8"
+      },
+      {
+        "label": "C",
+        "text": "7"
+      },
+      {
+        "label": "D",
+        "text": "19"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Subtract 3 from both sides to get 2x = 16, then divide by 2."
+  },
+  {
+    "id": "sat_math_041",
+    "exam": "SAT",
+    "section": "Math",
+    "skill": "functions",
+    "difficulty": "medium",
+    "question": "In the equation y = 4x + 3, what is the value of y when x = 6?",
+    "options": [
+      {
+        "label": "A",
+        "text": "25"
+      },
+      {
+        "label": "B",
+        "text": "27"
+      },
+      {
+        "label": "C",
+        "text": "29"
+      },
+      {
+        "label": "D",
+        "text": "7"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Substitute x = 6: y = 4(6) + 3 = 27."
+  },
+  {
+    "id": "sat_math_042",
+    "exam": "SAT",
+    "section": "Math",
+    "skill": "geometry",
+    "difficulty": "easy",
+    "question": "A square has side length 8. What is its area?",
+    "options": [
+      {
+        "label": "A",
+        "text": "32"
+      },
+      {
+        "label": "B",
+        "text": "16"
+      },
+      {
+        "label": "C",
+        "text": "64"
+      },
+      {
+        "label": "D",
+        "text": "72"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "The area of a square is side squared."
+  },
+  {
+    "id": "sat_math_043",
+    "exam": "SAT",
+    "section": "Math",
+    "skill": "percent",
+    "difficulty": "medium",
+    "question": "What is 15% of 53?",
+    "options": [
+      {
+        "label": "A",
+        "text": "38"
+      },
+      {
+        "label": "B",
+        "text": "15"
+      },
+      {
+        "label": "C",
+        "text": "12"
+      },
+      {
+        "label": "D",
+        "text": "7"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Convert 15% to decimal form and multiply by 53."
+  },
+  {
+    "id": "sat_math_044",
+    "exam": "SAT",
+    "section": "Math",
+    "skill": "expressions",
+    "difficulty": "medium",
+    "question": "If x = 4 and y = 7, what is the value of 2x + 3y?",
+    "options": [
+      {
+        "label": "A",
+        "text": "29"
+      },
+      {
+        "label": "B",
+        "text": "11"
+      },
+      {
+        "label": "C",
+        "text": "15"
+      },
+      {
+        "label": "D",
+        "text": "25"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Substitute x = 4 and y = 7: 2(4) + 3(7) = 29."
+  },
+  {
+    "id": "sat_math_045",
+    "exam": "SAT",
+    "section": "Math",
+    "skill": "linear_equations",
+    "difficulty": "easy",
+    "question": "If 3x + 3 = 24, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "8"
+      },
+      {
+        "label": "B",
+        "text": "6"
+      },
+      {
+        "label": "C",
+        "text": "7"
+      },
+      {
+        "label": "D",
+        "text": "24"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Subtract 3 from both sides to get 3x = 21, then divide by 3."
+  },
+  {
+    "id": "sat_math_046",
+    "exam": "SAT",
+    "section": "Math",
+    "skill": "functions",
+    "difficulty": "medium",
+    "question": "In the equation y = 4x + 4, what is the value of y when x = 7?",
+    "options": [
+      {
+        "label": "A",
+        "text": "30"
+      },
+      {
+        "label": "B",
+        "text": "34"
+      },
+      {
+        "label": "C",
+        "text": "8"
+      },
+      {
+        "label": "D",
+        "text": "32"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Substitute x = 7: y = 4(7) + 4 = 32."
+  },
+  {
+    "id": "sat_math_047",
+    "exam": "SAT",
+    "section": "Math",
+    "skill": "geometry",
+    "difficulty": "medium",
+    "question": "A square has side length 8. What is its area?",
+    "options": [
+      {
+        "label": "A",
+        "text": "64"
+      },
+      {
+        "label": "B",
+        "text": "32"
+      },
+      {
+        "label": "C",
+        "text": "16"
+      },
+      {
+        "label": "D",
+        "text": "72"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "The area of a square is side squared."
+  },
+  {
+    "id": "sat_math_048",
+    "exam": "SAT",
+    "section": "Math",
+    "skill": "percent",
+    "difficulty": "easy",
+    "question": "What is 10% of 58?",
+    "options": [
+      {
+        "label": "A",
+        "text": "48"
+      },
+      {
+        "label": "B",
+        "text": "5"
+      },
+      {
+        "label": "C",
+        "text": "10"
+      },
+      {
+        "label": "D",
+        "text": "10"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Convert 10% to decimal form and multiply by 58."
+  },
+  {
+    "id": "sat_math_049",
+    "exam": "SAT",
+    "section": "Math",
+    "skill": "expressions",
+    "difficulty": "medium",
+    "question": "If x = 3 and y = 7, what is the value of 2x + 3y?",
+    "options": [
+      {
+        "label": "A",
+        "text": "10"
+      },
+      {
+        "label": "B",
+        "text": "27"
+      },
+      {
+        "label": "C",
+        "text": "13"
+      },
+      {
+        "label": "D",
+        "text": "24"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Substitute x = 3 and y = 7: 2(3) + 3(7) = 27."
+  },
+  {
+    "id": "sat_math_050",
+    "exam": "SAT",
+    "section": "Math",
+    "skill": "linear_equations",
+    "difficulty": "medium",
+    "question": "If 4x + 3 = 27, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "7"
+      },
+      {
+        "label": "B",
+        "text": "5"
+      },
+      {
+        "label": "C",
+        "text": "6"
+      },
+      {
+        "label": "D",
+        "text": "27"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Subtract 3 from both sides to get 4x = 24, then divide by 4."
+  },
+  {
+    "id": "sat_math_051",
+    "exam": "SAT",
+    "section": "Math",
+    "skill": "functions",
+    "difficulty": "easy",
+    "question": "In the equation y = 4x + 5, what is the value of y when x = 8?",
+    "options": [
+      {
+        "label": "A",
+        "text": "35"
+      },
+      {
+        "label": "B",
+        "text": "39"
+      },
+      {
+        "label": "C",
+        "text": "9"
+      },
+      {
+        "label": "D",
+        "text": "37"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Substitute x = 8: y = 4(8) + 5 = 37."
+  },
+  {
+    "id": "sat_math_052",
+    "exam": "SAT",
+    "section": "Math",
+    "skill": "geometry",
+    "difficulty": "medium",
+    "question": "A square has side length 8. What is its area?",
+    "options": [
+      {
+        "label": "A",
+        "text": "64"
+      },
+      {
+        "label": "B",
+        "text": "32"
+      },
+      {
+        "label": "C",
+        "text": "16"
+      },
+      {
+        "label": "D",
+        "text": "72"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "The area of a square is side squared."
+  },
+  {
+    "id": "sat_math_053",
+    "exam": "SAT",
+    "section": "Math",
+    "skill": "percent",
+    "difficulty": "medium",
+    "question": "What is 35% of 63?",
+    "options": [
+      {
+        "label": "A",
+        "text": "28"
+      },
+      {
+        "label": "B",
+        "text": "35"
+      },
+      {
+        "label": "C",
+        "text": "22"
+      },
+      {
+        "label": "D",
+        "text": "27"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Convert 35% to decimal form and multiply by 63."
+  },
+  {
+    "id": "sat_math_054",
+    "exam": "SAT",
+    "section": "Math",
+    "skill": "expressions",
+    "difficulty": "easy",
+    "question": "If x = 2 and y = 7, what is the value of 2x + 3y?",
+    "options": [
+      {
+        "label": "A",
+        "text": "9"
+      },
+      {
+        "label": "B",
+        "text": "11"
+      },
+      {
+        "label": "C",
+        "text": "23"
+      },
+      {
+        "label": "D",
+        "text": "25"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Substitute x = 2 and y = 7: 2(2) + 3(7) = 25."
+  },
+  {
+    "id": "sat_math_055",
+    "exam": "SAT",
+    "section": "Math",
+    "skill": "linear_equations",
+    "difficulty": "medium",
+    "question": "If 5x + 3 = 28, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "5"
+      },
+      {
+        "label": "B",
+        "text": "6"
+      },
+      {
+        "label": "C",
+        "text": "4"
+      },
+      {
+        "label": "D",
+        "text": "28"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Subtract 3 from both sides to get 5x = 25, then divide by 5."
+  },
+  {
+    "id": "sat_math_056",
+    "exam": "SAT",
+    "section": "Math",
+    "skill": "functions",
+    "difficulty": "medium",
+    "question": "In the equation y = 4x + 2, what is the value of y when x = 5?",
+    "options": [
+      {
+        "label": "A",
+        "text": "20"
+      },
+      {
+        "label": "B",
+        "text": "22"
+      },
+      {
+        "label": "C",
+        "text": "24"
+      },
+      {
+        "label": "D",
+        "text": "6"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Substitute x = 5: y = 4(5) + 2 = 22."
+  },
+  {
+    "id": "sat_math_057",
+    "exam": "SAT",
+    "section": "Math",
+    "skill": "geometry",
+    "difficulty": "easy",
+    "question": "A square has side length 8. What is its area?",
+    "options": [
+      {
+        "label": "A",
+        "text": "32"
+      },
+      {
+        "label": "B",
+        "text": "64"
+      },
+      {
+        "label": "C",
+        "text": "16"
+      },
+      {
+        "label": "D",
+        "text": "72"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "The area of a square is side squared."
+  },
+  {
+    "id": "sat_math_058",
+    "exam": "SAT",
+    "section": "Math",
+    "skill": "percent",
+    "difficulty": "medium",
+    "question": "What is 30% of 68?",
+    "options": [
+      {
+        "label": "A",
+        "text": "38"
+      },
+      {
+        "label": "B",
+        "text": "30"
+      },
+      {
+        "label": "C",
+        "text": "20"
+      },
+      {
+        "label": "D",
+        "text": "25"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Convert 30% to decimal form and multiply by 68."
+  },
+  {
+    "id": "sat_math_059",
+    "exam": "SAT",
+    "section": "Math",
+    "skill": "expressions",
+    "difficulty": "medium",
+    "question": "If x = 7 and y = 7, what is the value of 2x + 3y?",
+    "options": [
+      {
+        "label": "A",
+        "text": "14"
+      },
+      {
+        "label": "B",
+        "text": "21"
+      },
+      {
+        "label": "C",
+        "text": "28"
+      },
+      {
+        "label": "D",
+        "text": "35"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Substitute x = 7 and y = 7: 2(7) + 3(7) = 35."
+  },
+  {
+    "id": "sat_math_060",
+    "exam": "SAT",
+    "section": "Math",
+    "skill": "linear_equations",
+    "difficulty": "easy",
+    "question": "If 2x + 3 = 11, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "4"
+      },
+      {
+        "label": "B",
+        "text": "5"
+      },
+      {
+        "label": "C",
+        "text": "3"
+      },
+      {
+        "label": "D",
+        "text": "11"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Subtract 3 from both sides to get 2x = 8, then divide by 2."
+  },
+  {
+    "id": "sat_math_061",
+    "exam": "SAT",
+    "section": "Math",
+    "skill": "functions",
+    "difficulty": "medium",
+    "question": "In the equation y = 4x + 3, what is the value of y when x = 6?",
+    "options": [
+      {
+        "label": "A",
+        "text": "25"
+      },
+      {
+        "label": "B",
+        "text": "29"
+      },
+      {
+        "label": "C",
+        "text": "27"
+      },
+      {
+        "label": "D",
+        "text": "7"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Substitute x = 6: y = 4(6) + 3 = 27."
+  },
+  {
+    "id": "sat_math_062",
+    "exam": "SAT",
+    "section": "Math",
+    "skill": "geometry",
+    "difficulty": "medium",
+    "question": "A square has side length 8. What is its area?",
+    "options": [
+      {
+        "label": "A",
+        "text": "32"
+      },
+      {
+        "label": "B",
+        "text": "16"
+      },
+      {
+        "label": "C",
+        "text": "72"
+      },
+      {
+        "label": "D",
+        "text": "64"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "The area of a square is side squared."
+  },
+  {
+    "id": "sat_math_063",
+    "exam": "SAT",
+    "section": "Math",
+    "skill": "percent",
+    "difficulty": "easy",
+    "question": "What is 25% of 43?",
+    "options": [
+      {
+        "label": "A",
+        "text": "10"
+      },
+      {
+        "label": "B",
+        "text": "18"
+      },
+      {
+        "label": "C",
+        "text": "25"
+      },
+      {
+        "label": "D",
+        "text": "15"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Convert 25% to decimal form and multiply by 43."
+  },
+  {
+    "id": "sat_math_064",
+    "exam": "SAT",
+    "section": "Math",
+    "skill": "expressions",
+    "difficulty": "medium",
+    "question": "If x = 6 and y = 7, what is the value of 2x + 3y?",
+    "options": [
+      {
+        "label": "A",
+        "text": "13"
+      },
+      {
+        "label": "B",
+        "text": "33"
+      },
+      {
+        "label": "C",
+        "text": "19"
+      },
+      {
+        "label": "D",
+        "text": "27"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Substitute x = 6 and y = 7: 2(6) + 3(7) = 33."
+  },
+  {
+    "id": "sat_math_065",
+    "exam": "SAT",
+    "section": "Math",
+    "skill": "linear_equations",
+    "difficulty": "medium",
+    "question": "If 3x + 3 = 30, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "10"
+      },
+      {
+        "label": "B",
+        "text": "9"
+      },
+      {
+        "label": "C",
+        "text": "8"
+      },
+      {
+        "label": "D",
+        "text": "30"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Subtract 3 from both sides to get 3x = 27, then divide by 3."
+  },
+  {
+    "id": "sat_math_066",
+    "exam": "SAT",
+    "section": "Math",
+    "skill": "functions",
+    "difficulty": "easy",
+    "question": "In the equation y = 4x + 4, what is the value of y when x = 7?",
+    "options": [
+      {
+        "label": "A",
+        "text": "30"
+      },
+      {
+        "label": "B",
+        "text": "34"
+      },
+      {
+        "label": "C",
+        "text": "32"
+      },
+      {
+        "label": "D",
+        "text": "8"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Substitute x = 7: y = 4(7) + 4 = 32."
+  },
+  {
+    "id": "sat_math_067",
+    "exam": "SAT",
+    "section": "Math",
+    "skill": "geometry",
+    "difficulty": "medium",
+    "question": "A square has side length 8. What is its area?",
+    "options": [
+      {
+        "label": "A",
+        "text": "32"
+      },
+      {
+        "label": "B",
+        "text": "16"
+      },
+      {
+        "label": "C",
+        "text": "72"
+      },
+      {
+        "label": "D",
+        "text": "64"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "The area of a square is side squared."
+  },
+  {
+    "id": "sat_math_068",
+    "exam": "SAT",
+    "section": "Math",
+    "skill": "percent",
+    "difficulty": "medium",
+    "question": "What is 20% of 48?",
+    "options": [
+      {
+        "label": "A",
+        "text": "9"
+      },
+      {
+        "label": "B",
+        "text": "28"
+      },
+      {
+        "label": "C",
+        "text": "20"
+      },
+      {
+        "label": "D",
+        "text": "14"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Convert 20% to decimal form and multiply by 48."
+  },
+  {
+    "id": "sat_math_069",
+    "exam": "SAT",
+    "section": "Math",
+    "skill": "expressions",
+    "difficulty": "easy",
+    "question": "If x = 5 and y = 7, what is the value of 2x + 3y?",
+    "options": [
+      {
+        "label": "A",
+        "text": "12"
+      },
+      {
+        "label": "B",
+        "text": "17"
+      },
+      {
+        "label": "C",
+        "text": "31"
+      },
+      {
+        "label": "D",
+        "text": "26"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Substitute x = 5 and y = 7: 2(5) + 3(7) = 31."
+  },
+  {
+    "id": "sat_math_070",
+    "exam": "SAT",
+    "section": "Math",
+    "skill": "linear_equations",
+    "difficulty": "medium",
+    "question": "If 4x + 3 = 35, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "9"
+      },
+      {
+        "label": "B",
+        "text": "7"
+      },
+      {
+        "label": "C",
+        "text": "35"
+      },
+      {
+        "label": "D",
+        "text": "8"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Subtract 3 from both sides to get 4x = 32, then divide by 4."
+  },
+  {
+    "id": "sat_math_071",
+    "exam": "SAT",
+    "section": "Math",
+    "skill": "functions",
+    "difficulty": "medium",
+    "question": "In the equation y = 4x + 5, what is the value of y when x = 8?",
+    "options": [
+      {
+        "label": "A",
+        "text": "37"
+      },
+      {
+        "label": "B",
+        "text": "35"
+      },
+      {
+        "label": "C",
+        "text": "39"
+      },
+      {
+        "label": "D",
+        "text": "9"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Substitute x = 8: y = 4(8) + 5 = 37."
+  },
+  {
+    "id": "sat_math_072",
+    "exam": "SAT",
+    "section": "Math",
+    "skill": "geometry",
+    "difficulty": "easy",
+    "question": "A square has side length 8. What is its area?",
+    "options": [
+      {
+        "label": "A",
+        "text": "32"
+      },
+      {
+        "label": "B",
+        "text": "64"
+      },
+      {
+        "label": "C",
+        "text": "16"
+      },
+      {
+        "label": "D",
+        "text": "72"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "The area of a square is side squared."
+  },
+  {
+    "id": "sat_math_073",
+    "exam": "SAT",
+    "section": "Math",
+    "skill": "percent",
+    "difficulty": "medium",
+    "question": "What is 15% of 53?",
+    "options": [
+      {
+        "label": "A",
+        "text": "38"
+      },
+      {
+        "label": "B",
+        "text": "7"
+      },
+      {
+        "label": "C",
+        "text": "15"
+      },
+      {
+        "label": "D",
+        "text": "12"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Convert 15% to decimal form and multiply by 53."
+  },
+  {
+    "id": "sat_math_074",
+    "exam": "SAT",
+    "section": "Math",
+    "skill": "expressions",
+    "difficulty": "medium",
+    "question": "If x = 4 and y = 7, what is the value of 2x + 3y?",
+    "options": [
+      {
+        "label": "A",
+        "text": "11"
+      },
+      {
+        "label": "B",
+        "text": "15"
+      },
+      {
+        "label": "C",
+        "text": "29"
+      },
+      {
+        "label": "D",
+        "text": "25"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Substitute x = 4 and y = 7: 2(4) + 3(7) = 29."
+  },
+  {
+    "id": "sat_math_075",
+    "exam": "SAT",
+    "section": "Math",
+    "skill": "linear_equations",
+    "difficulty": "easy",
+    "question": "If 5x + 3 = 38, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "8"
+      },
+      {
+        "label": "B",
+        "text": "6"
+      },
+      {
+        "label": "C",
+        "text": "38"
+      },
+      {
+        "label": "D",
+        "text": "7"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Subtract 3 from both sides to get 5x = 35, then divide by 5."
+  },
+  {
+    "id": "sat_math_076",
+    "exam": "SAT",
+    "section": "Math",
+    "skill": "functions",
+    "difficulty": "medium",
+    "question": "In the equation y = 4x + 2, what is the value of y when x = 5?",
+    "options": [
+      {
+        "label": "A",
+        "text": "22"
+      },
+      {
+        "label": "B",
+        "text": "20"
+      },
+      {
+        "label": "C",
+        "text": "24"
+      },
+      {
+        "label": "D",
+        "text": "6"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Substitute x = 5: y = 4(5) + 2 = 22."
+  },
+  {
+    "id": "sat_math_077",
+    "exam": "SAT",
+    "section": "Math",
+    "skill": "geometry",
+    "difficulty": "medium",
+    "question": "A square has side length 8. What is its area?",
+    "options": [
+      {
+        "label": "A",
+        "text": "32"
+      },
+      {
+        "label": "B",
+        "text": "16"
+      },
+      {
+        "label": "C",
+        "text": "64"
+      },
+      {
+        "label": "D",
+        "text": "72"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "The area of a square is side squared."
+  },
+  {
+    "id": "sat_math_078",
+    "exam": "SAT",
+    "section": "Math",
+    "skill": "percent",
+    "difficulty": "easy",
+    "question": "What is 10% of 58?",
+    "options": [
+      {
+        "label": "A",
+        "text": "48"
+      },
+      {
+        "label": "B",
+        "text": "10"
+      },
+      {
+        "label": "C",
+        "text": "10"
+      },
+      {
+        "label": "D",
+        "text": "5"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Convert 10% to decimal form and multiply by 58."
+  },
+  {
+    "id": "sat_math_079",
+    "exam": "SAT",
+    "section": "Math",
+    "skill": "expressions",
+    "difficulty": "medium",
+    "question": "If x = 3 and y = 7, what is the value of 2x + 3y?",
+    "options": [
+      {
+        "label": "A",
+        "text": "27"
+      },
+      {
+        "label": "B",
+        "text": "10"
+      },
+      {
+        "label": "C",
+        "text": "13"
+      },
+      {
+        "label": "D",
+        "text": "24"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Substitute x = 3 and y = 7: 2(3) + 3(7) = 27."
+  },
+  {
+    "id": "sat_math_080",
+    "exam": "SAT",
+    "section": "Math",
+    "skill": "linear_equations",
+    "difficulty": "medium",
+    "question": "If 2x + 3 = 15, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "7"
+      },
+      {
+        "label": "B",
+        "text": "6"
+      },
+      {
+        "label": "C",
+        "text": "5"
+      },
+      {
+        "label": "D",
+        "text": "15"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Subtract 3 from both sides to get 2x = 12, then divide by 2."
+  },
+  {
+    "id": "sat_math_081",
+    "exam": "SAT",
+    "section": "Math",
+    "skill": "functions",
+    "difficulty": "easy",
+    "question": "In the equation y = 4x + 3, what is the value of y when x = 6?",
+    "options": [
+      {
+        "label": "A",
+        "text": "25"
+      },
+      {
+        "label": "B",
+        "text": "27"
+      },
+      {
+        "label": "C",
+        "text": "29"
+      },
+      {
+        "label": "D",
+        "text": "7"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Substitute x = 6: y = 4(6) + 3 = 27."
+  },
+  {
+    "id": "sat_math_082",
+    "exam": "SAT",
+    "section": "Math",
+    "skill": "geometry",
+    "difficulty": "medium",
+    "question": "A square has side length 8. What is its area?",
+    "options": [
+      {
+        "label": "A",
+        "text": "32"
+      },
+      {
+        "label": "B",
+        "text": "16"
+      },
+      {
+        "label": "C",
+        "text": "64"
+      },
+      {
+        "label": "D",
+        "text": "72"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "The area of a square is side squared."
+  },
+  {
+    "id": "sat_math_083",
+    "exam": "SAT",
+    "section": "Math",
+    "skill": "percent",
+    "difficulty": "medium",
+    "question": "What is 35% of 63?",
+    "options": [
+      {
+        "label": "A",
+        "text": "28"
+      },
+      {
+        "label": "B",
+        "text": "35"
+      },
+      {
+        "label": "C",
+        "text": "27"
+      },
+      {
+        "label": "D",
+        "text": "22"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Convert 35% to decimal form and multiply by 63."
+  },
+  {
+    "id": "sat_math_084",
+    "exam": "SAT",
+    "section": "Math",
+    "skill": "expressions",
+    "difficulty": "easy",
+    "question": "If x = 2 and y = 7, what is the value of 2x + 3y?",
+    "options": [
+      {
+        "label": "A",
+        "text": "25"
+      },
+      {
+        "label": "B",
+        "text": "9"
+      },
+      {
+        "label": "C",
+        "text": "11"
+      },
+      {
+        "label": "D",
+        "text": "23"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Substitute x = 2 and y = 7: 2(2) + 3(7) = 25."
+  },
+  {
+    "id": "sat_math_085",
+    "exam": "SAT",
+    "section": "Math",
+    "skill": "linear_equations",
+    "difficulty": "medium",
+    "question": "If 3x + 3 = 18, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "6"
+      },
+      {
+        "label": "B",
+        "text": "4"
+      },
+      {
+        "label": "C",
+        "text": "5"
+      },
+      {
+        "label": "D",
+        "text": "18"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Subtract 3 from both sides to get 3x = 15, then divide by 3."
+  },
+  {
+    "id": "sat_math_086",
+    "exam": "SAT",
+    "section": "Math",
+    "skill": "functions",
+    "difficulty": "medium",
+    "question": "In the equation y = 4x + 4, what is the value of y when x = 7?",
+    "options": [
+      {
+        "label": "A",
+        "text": "30"
+      },
+      {
+        "label": "B",
+        "text": "34"
+      },
+      {
+        "label": "C",
+        "text": "8"
+      },
+      {
+        "label": "D",
+        "text": "32"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Substitute x = 7: y = 4(7) + 4 = 32."
+  },
+  {
+    "id": "sat_math_087",
+    "exam": "SAT",
+    "section": "Math",
+    "skill": "geometry",
+    "difficulty": "easy",
+    "question": "A square has side length 8. What is its area?",
+    "options": [
+      {
+        "label": "A",
+        "text": "64"
+      },
+      {
+        "label": "B",
+        "text": "32"
+      },
+      {
+        "label": "C",
+        "text": "16"
+      },
+      {
+        "label": "D",
+        "text": "72"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "The area of a square is side squared."
+  },
+  {
+    "id": "sat_math_088",
+    "exam": "SAT",
+    "section": "Math",
+    "skill": "percent",
+    "difficulty": "medium",
+    "question": "What is 30% of 68?",
+    "options": [
+      {
+        "label": "A",
+        "text": "38"
+      },
+      {
+        "label": "B",
+        "text": "20"
+      },
+      {
+        "label": "C",
+        "text": "30"
+      },
+      {
+        "label": "D",
+        "text": "25"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Convert 30% to decimal form and multiply by 68."
+  },
+  {
+    "id": "sat_math_089",
+    "exam": "SAT",
+    "section": "Math",
+    "skill": "expressions",
+    "difficulty": "medium",
+    "question": "If x = 7 and y = 7, what is the value of 2x + 3y?",
+    "options": [
+      {
+        "label": "A",
+        "text": "14"
+      },
+      {
+        "label": "B",
+        "text": "35"
+      },
+      {
+        "label": "C",
+        "text": "21"
+      },
+      {
+        "label": "D",
+        "text": "28"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Substitute x = 7 and y = 7: 2(7) + 3(7) = 35."
+  },
+  {
+    "id": "sat_math_090",
+    "exam": "SAT",
+    "section": "Math",
+    "skill": "linear_equations",
+    "difficulty": "easy",
+    "question": "If 4x + 3 = 19, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "5"
+      },
+      {
+        "label": "B",
+        "text": "3"
+      },
+      {
+        "label": "C",
+        "text": "4"
+      },
+      {
+        "label": "D",
+        "text": "19"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Subtract 3 from both sides to get 4x = 16, then divide by 4."
+  },
+  {
+    "id": "sat_math_091",
+    "exam": "SAT",
+    "section": "Math",
+    "skill": "functions",
+    "difficulty": "medium",
+    "question": "In the equation y = 4x + 5, what is the value of y when x = 8?",
+    "options": [
+      {
+        "label": "A",
+        "text": "35"
+      },
+      {
+        "label": "B",
+        "text": "39"
+      },
+      {
+        "label": "C",
+        "text": "9"
+      },
+      {
+        "label": "D",
+        "text": "37"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Substitute x = 8: y = 4(8) + 5 = 37."
+  },
+  {
+    "id": "sat_math_092",
+    "exam": "SAT",
+    "section": "Math",
+    "skill": "geometry",
+    "difficulty": "medium",
+    "question": "A square has side length 8. What is its area?",
+    "options": [
+      {
+        "label": "A",
+        "text": "64"
+      },
+      {
+        "label": "B",
+        "text": "32"
+      },
+      {
+        "label": "C",
+        "text": "16"
+      },
+      {
+        "label": "D",
+        "text": "72"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "The area of a square is side squared."
+  },
+  {
+    "id": "sat_math_093",
+    "exam": "SAT",
+    "section": "Math",
+    "skill": "percent",
+    "difficulty": "easy",
+    "question": "What is 25% of 43?",
+    "options": [
+      {
+        "label": "A",
+        "text": "18"
+      },
+      {
+        "label": "B",
+        "text": "25"
+      },
+      {
+        "label": "C",
+        "text": "10"
+      },
+      {
+        "label": "D",
+        "text": "15"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Convert 25% to decimal form and multiply by 43."
+  },
+  {
+    "id": "sat_math_094",
+    "exam": "SAT",
+    "section": "Math",
+    "skill": "expressions",
+    "difficulty": "medium",
+    "question": "If x = 6 and y = 7, what is the value of 2x + 3y?",
+    "options": [
+      {
+        "label": "A",
+        "text": "13"
+      },
+      {
+        "label": "B",
+        "text": "19"
+      },
+      {
+        "label": "C",
+        "text": "27"
+      },
+      {
+        "label": "D",
+        "text": "33"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Substitute x = 6 and y = 7: 2(6) + 3(7) = 33."
+  },
+  {
+    "id": "sat_math_095",
+    "exam": "SAT",
+    "section": "Math",
+    "skill": "linear_equations",
+    "difficulty": "medium",
+    "question": "If 5x + 3 = 48, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "9"
+      },
+      {
+        "label": "B",
+        "text": "10"
+      },
+      {
+        "label": "C",
+        "text": "8"
+      },
+      {
+        "label": "D",
+        "text": "48"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Subtract 3 from both sides to get 5x = 45, then divide by 5."
+  },
+  {
+    "id": "sat_math_096",
+    "exam": "SAT",
+    "section": "Math",
+    "skill": "functions",
+    "difficulty": "easy",
+    "question": "In the equation y = 4x + 2, what is the value of y when x = 5?",
+    "options": [
+      {
+        "label": "A",
+        "text": "20"
+      },
+      {
+        "label": "B",
+        "text": "22"
+      },
+      {
+        "label": "C",
+        "text": "24"
+      },
+      {
+        "label": "D",
+        "text": "6"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Substitute x = 5: y = 4(5) + 2 = 22."
+  },
+  {
+    "id": "sat_math_097",
+    "exam": "SAT",
+    "section": "Math",
+    "skill": "geometry",
+    "difficulty": "medium",
+    "question": "A square has side length 8. What is its area?",
+    "options": [
+      {
+        "label": "A",
+        "text": "32"
+      },
+      {
+        "label": "B",
+        "text": "64"
+      },
+      {
+        "label": "C",
+        "text": "16"
+      },
+      {
+        "label": "D",
+        "text": "72"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "The area of a square is side squared."
+  },
+  {
+    "id": "sat_math_098",
+    "exam": "SAT",
+    "section": "Math",
+    "skill": "percent",
+    "difficulty": "medium",
+    "question": "What is 20% of 48?",
+    "options": [
+      {
+        "label": "A",
+        "text": "28"
+      },
+      {
+        "label": "B",
+        "text": "20"
+      },
+      {
+        "label": "C",
+        "text": "9"
+      },
+      {
+        "label": "D",
+        "text": "14"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Convert 20% to decimal form and multiply by 48."
+  },
+  {
+    "id": "sat_math_099",
+    "exam": "SAT",
+    "section": "Math",
+    "skill": "expressions",
+    "difficulty": "easy",
+    "question": "If x = 5 and y = 7, what is the value of 2x + 3y?",
+    "options": [
+      {
+        "label": "A",
+        "text": "12"
+      },
+      {
+        "label": "B",
+        "text": "17"
+      },
+      {
+        "label": "C",
+        "text": "26"
+      },
+      {
+        "label": "D",
+        "text": "31"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Substitute x = 5 and y = 7: 2(5) + 3(7) = 31."
+  },
+  {
+    "id": "sat_math_100",
+    "exam": "SAT",
+    "section": "Math",
+    "skill": "linear_equations",
+    "difficulty": "medium",
+    "question": "If 2x + 3 = 19, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "8"
+      },
+      {
+        "label": "B",
+        "text": "9"
+      },
+      {
+        "label": "C",
+        "text": "7"
+      },
+      {
+        "label": "D",
+        "text": "19"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Subtract 3 from both sides to get 2x = 16, then divide by 2."
+  }
+]

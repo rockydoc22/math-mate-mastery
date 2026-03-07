@@ -1,0 +1,15 @@
+{
+  "title": "Testing App Starter Pack 01",
+  "notes": [
+    "Original SAT-style questions inspired by tested skills, not copied exam items.",
+    "Balanced correct answer distribution.",
+    "Explanations included for every question."
+  ],
+  "question_count": 200,
+  "answer_distribution": {
+    "A": 50,
+    "B": 50,
+    "C": 50,
+    "D": 50
+  }
+}
