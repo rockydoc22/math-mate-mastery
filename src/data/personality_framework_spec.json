@@ -1,0 +1,49 @@
+{
+  "title": "Non-Clinical Personality and EQ Assessment Framework",
+  "important_labeling": {
+    "required_banner": "Educational self-assessment only. Not a clinical, diagnostic, or licensed psychological instrument.",
+    "must_not_claim": [
+      "IQ score",
+      "clinical diagnosis",
+      "official personality type certification",
+      "licensed psychological interpretation"
+    ]
+  },
+  "recommended_tracks": [
+    {
+      "id": "big_five_style",
+      "name": "Big Five Style Traits",
+      "domains": [
+        "Openness",
+        "Conscientiousness",
+        "Extraversion",
+        "Agreeableness",
+        "Emotional Stability"
+      ],
+      "why": "Broadly useful, flexible, and easy to present as a self-reflection tool."
+    },
+    {
+      "id": "learning_style_preferences",
+      "name": "Learning Preferences",
+      "domains": [
+        "Independent vs collaborative",
+        "Fast practice vs deep reflection",
+        "Visual vs verbal support",
+        "Structured vs flexible learning"
+      ],
+      "why": "More actionable for your app than generic personality labels."
+    },
+    {
+      "id": "eq_skills",
+      "name": "Emotional Intelligence Skills",
+      "domains": [
+        "Self-awareness",
+        "Self-regulation",
+        "Empathy",
+        "Social awareness",
+        "Relationship management"
+      ],
+      "why": "Feels valuable to parents, teens, and adults and can connect to coaching."
+    }
+  ]
+}
