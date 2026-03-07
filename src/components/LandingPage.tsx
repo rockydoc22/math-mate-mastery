@@ -328,7 +328,7 @@ export const LandingPage = () => {
           <div className="flex items-start gap-4 max-w-lg mx-auto">
             <div className="grid gap-3 text-left flex-1">
               {[
-                "2,000+ SAT-style questions (Math & English)",
+                "15,000+ questions across SAT, PSAT, ACT & AP",
                 "Adaptive difficulty that matches your level",
                 "Real-time battle mode against other students",
                 "Score prediction based on your performance",
