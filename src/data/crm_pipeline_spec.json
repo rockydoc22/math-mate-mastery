@@ -1,0 +1,26 @@
+{
+  "title": "CRM / Sales Pipeline Layer for School Pilots and Conversions",
+  "purpose": "Track leads, pilots, renewals, and conversion opportunities for schools, tutoring programs, and homeschool groups.",
+  "core_entities": [
+    "organization_lead",
+    "contact",
+    "opportunity",
+    "pilot",
+    "proposal",
+    "conversion",
+    "renewal"
+  ],
+  "pipeline_stages": [
+    "new_lead",
+    "qualified",
+    "demo_scheduled",
+    "pilot_offered",
+    "pilot_active",
+    "pilot_review",
+    "proposal_sent",
+    "contracting",
+    "won",
+    "lost",
+    "renewal"
+  ]
+}

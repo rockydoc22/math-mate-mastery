@@ -1,0 +1,26 @@
+{
+  "title": "Opportunity and Proposal Spec",
+  "opportunity_fields": [
+    "opportunity_id",
+    "org_id",
+    "estimated_value",
+    "seat_target",
+    "apps_in_scope",
+    "stage",
+    "close_date_target",
+    "decision_makers",
+    "main_objections",
+    "next_action"
+  ],
+  "proposal_fields": [
+    "proposal_id",
+    "opportunity_id",
+    "plan_type",
+    "seat_count",
+    "pricing_version",
+    "features_included",
+    "pilot_credit_optional",
+    "proposal_sent_at",
+    "proposal_status"
+  ]
+}
