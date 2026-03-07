@@ -1,5 +1,6 @@
 import satEnglish9Raw from './sat_english_level9_100.json';
 import satEnglish10Raw from './sat_english_level10_100.json';
+import satMath9Raw from './sat_math_level9_100.json';
 import satMath10Raw from './sat_math_level10_100.json';
 import type { Question } from './questions';
 import type { EnglishQuestion } from './englishQuestions';
