@@ -46,8 +46,8 @@ const features = [
   },
   {
     icon: Target,
-    title: "1600 Club Training",
-    description: "Elite practice modes designed for top scorers"
+    title: "Elite Training Modes",
+    description: "Advanced practice designed for top scorers across SAT, PSAT, ACT & AP"
   },
   {
     icon: Swords,
@@ -57,7 +57,7 @@ const features = [
   {
     icon: Gamepad2,
     title: "Learning Arcade",
-    description: "Play Zalaga, Hangman & Chess while mastering SAT concepts"
+    description: "Play Zalaga, Hangman & Chess while mastering test concepts"
   },
   {
     icon: Trophy,
@@ -78,7 +78,7 @@ const testimonials = [
     score: "1480"
   },
   {
-    quote: "Best SAT prep app I've used. Period.",
+    quote: "Best test prep app I've used. Period.",
     author: "Jordan T.",
     score: "1560"
   }
@@ -142,18 +142,17 @@ export const LandingPage = () => {
       <header className="px-4 pt-8 pb-12 text-center">
         <div className="max-w-2xl mx-auto">
           {/* Unified Logo */}
-          <div className="mb-6 flex justify-center">
-            <SATMasteryLogo
-              size="xl"
-              layout="stacked"
-              examType="sat"
-              showTagline={false}
-            />
+          <div className="mb-4 flex justify-center">
+            <div className="w-20 h-20 rounded-2xl bg-gradient-to-br from-primary to-accent flex items-center justify-center shadow-lg">
+              <span className="font-bold text-primary-foreground font-mono text-xl">40²</span>
+            </div>
           </div>
-          
+          <h1 className="text-3xl font-bold mb-2">40² Test Prep</h1>
+          <p className="text-sm text-muted-foreground mb-1">SAT • PSAT • ACT • AP</p>
+
           {/* Headline */}
           <p className="text-lg text-muted-foreground mb-6">
-            Free SAT prep that actually works. Practice smarter, not harder.
+            Free test prep that actually works. Practice smarter, not harder.
           </p>
 
           {/* SAT Countdown */}
@@ -264,7 +263,7 @@ export const LandingPage = () => {
             <Gamepad2 className="w-6 h-6 text-primary" />
             Learning Arcade
           </h2>
-          <p className="text-muted-foreground mb-6">Master SAT concepts through games</p>
+          <p className="text-muted-foreground mb-6">Master test concepts through games</p>
           <div className="grid grid-cols-3 gap-4 mb-6">
             <Card className="p-4 text-center">
               <span className="text-3xl mb-2 block">🚀</span>
@@ -329,7 +328,7 @@ export const LandingPage = () => {
           <div className="flex items-start gap-4 max-w-lg mx-auto">
             <div className="grid gap-3 text-left flex-1">
               {[
-                "2,000+ SAT-style questions (Math & English)",
+                "15,000+ questions across SAT, PSAT, ACT & AP",
                 "Adaptive difficulty that matches your level",
                 "Real-time battle mode against other students",
                 "Score prediction based on your performance",
@@ -383,7 +382,7 @@ export const LandingPage = () => {
       <section className="px-4 py-12 bg-muted/30">
         <div className="max-w-2xl mx-auto text-center">
           <h2 className="text-2xl font-bold mb-4">Start Practicing Now</h2>
-          <p className="text-muted-foreground mb-6">Choose your subject and begin your journey to 1600</p>
+          <p className="text-muted-foreground mb-6">Choose your subject and begin your journey</p>
           
           <div className="grid grid-cols-2 gap-4 mb-6">
             <Button 
@@ -408,10 +407,23 @@ export const LandingPage = () => {
       </section>
 
 
+      {/* Legal Disclaimer */}
+      <section className="px-4 py-6 bg-muted/20">
+        <div className="max-w-2xl mx-auto">
+          <p className="text-[10px] text-muted-foreground text-center leading-relaxed">
+            40² Test Prep is not affiliated with, endorsed by, or sponsored by College Board®, ACT Inc.®, 
+            the International Baccalaureate Organization®, or any other test maker. SAT® and AP® are registered 
+            trademarks of College Board. ACT® is a registered trademark of ACT Inc. PSAT/NMSQT® is a registered 
+            trademark of College Board and National Merit Scholarship Corporation. All practice questions are for 
+            educational purposes only and are original or derived from publicly available retired materials.
+          </p>
+        </div>
+      </section>
+
       {/* Footer */}
       <footer className="px-4 py-6 border-t border-border">
         <div className="max-w-2xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-muted-foreground">
-          <span>© 2025 SAT Mastery</span>
+          <span>© 2025 40² Test Prep</span>
           <div className="flex items-center gap-3">
             <ShareAppButton />
             <InstallAppButton />
