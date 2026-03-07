@@ -1,0 +1,1022 @@
+[
+  {
+    "id": "b5_001",
+    "track": "big_five_style",
+    "trait": "openness",
+    "prompt": "I enjoy exploring new ideas even when they feel unfamiliar.",
+    "response_scale": {
+      "type": "likert_5",
+      "labels": [
+        "Strongly disagree",
+        "Disagree",
+        "Not sure",
+        "Agree",
+        "Strongly agree"
+      ]
+    },
+    "scoring_direction": 1
+  },
+  {
+    "id": "b5_002",
+    "track": "big_five_style",
+    "trait": "conscientiousness",
+    "prompt": "I rarely keep track of deadlines and responsibilities.",
+    "response_scale": {
+      "type": "likert_5",
+      "labels": [
+        "Strongly disagree",
+        "Disagree",
+        "Not sure",
+        "Agree",
+        "Strongly agree"
+      ]
+    },
+    "scoring_direction": -1
+  },
+  {
+    "id": "b5_003",
+    "track": "big_five_style",
+    "trait": "extraversion",
+    "prompt": "I gain energy from talking through ideas with other people.",
+    "response_scale": {
+      "type": "likert_5",
+      "labels": [
+        "Strongly disagree",
+        "Disagree",
+        "Not sure",
+        "Agree",
+        "Strongly agree"
+      ]
+    },
+    "scoring_direction": 1
+  },
+  {
+    "id": "b5_004",
+    "track": "big_five_style",
+    "trait": "agreeableness",
+    "prompt": "I try to understand other people's needs before reacting.",
+    "response_scale": {
+      "type": "likert_5",
+      "labels": [
+        "Strongly disagree",
+        "Disagree",
+        "Not sure",
+        "Agree",
+        "Strongly agree"
+      ]
+    },
+    "scoring_direction": -1
+  },
+  {
+    "id": "b5_005",
+    "track": "big_five_style",
+    "trait": "emotional_stability",
+    "prompt": "I can usually stay steady when plans change unexpectedly.",
+    "response_scale": {
+      "type": "likert_5",
+      "labels": [
+        "Strongly disagree",
+        "Disagree",
+        "Not sure",
+        "Agree",
+        "Strongly agree"
+      ]
+    },
+    "scoring_direction": 1
+  },
+  {
+    "id": "b5_006",
+    "track": "big_five_style",
+    "trait": "openness",
+    "prompt": "I enjoy exploring new ideas even when they feel unfamiliar.",
+    "response_scale": {
+      "type": "likert_5",
+      "labels": [
+        "Strongly disagree",
+        "Disagree",
+        "Not sure",
+        "Agree",
+        "Strongly agree"
+      ]
+    },
+    "scoring_direction": -1
+  },
+  {
+    "id": "b5_007",
+    "track": "big_five_style",
+    "trait": "conscientiousness",
+    "prompt": "I usually keep track of deadlines and responsibilities.",
+    "response_scale": {
+      "type": "likert_5",
+      "labels": [
+        "Strongly disagree",
+        "Disagree",
+        "Not sure",
+        "Agree",
+        "Strongly agree"
+      ]
+    },
+    "scoring_direction": 1
+  },
+  {
+    "id": "b5_008",
+    "track": "big_five_style",
+    "trait": "extraversion",
+    "prompt": "I gain energy from talking through ideas with other people.",
+    "response_scale": {
+      "type": "likert_5",
+      "labels": [
+        "Strongly disagree",
+        "Disagree",
+        "Not sure",
+        "Agree",
+        "Strongly agree"
+      ]
+    },
+    "scoring_direction": -1
+  },
+  {
+    "id": "b5_009",
+    "track": "big_five_style",
+    "trait": "agreeableness",
+    "prompt": "I try to understand other people's needs before reacting.",
+    "response_scale": {
+      "type": "likert_5",
+      "labels": [
+        "Strongly disagree",
+        "Disagree",
+        "Not sure",
+        "Agree",
+        "Strongly agree"
+      ]
+    },
+    "scoring_direction": 1
+  },
+  {
+    "id": "b5_010",
+    "track": "big_five_style",
+    "trait": "emotional_stability",
+    "prompt": "I struggle to rarely stay steady when plans change unexpectedly.",
+    "response_scale": {
+      "type": "likert_5",
+      "labels": [
+        "Strongly disagree",
+        "Disagree",
+        "Not sure",
+        "Agree",
+        "Strongly agree"
+      ]
+    },
+    "scoring_direction": -1
+  },
+  {
+    "id": "b5_011",
+    "track": "big_five_style",
+    "trait": "openness",
+    "prompt": "I enjoy exploring new ideas even when they feel unfamiliar.",
+    "response_scale": {
+      "type": "likert_5",
+      "labels": [
+        "Strongly disagree",
+        "Disagree",
+        "Not sure",
+        "Agree",
+        "Strongly agree"
+      ]
+    },
+    "scoring_direction": 1
+  },
+  {
+    "id": "b5_012",
+    "track": "big_five_style",
+    "trait": "conscientiousness",
+    "prompt": "I rarely keep track of deadlines and responsibilities.",
+    "response_scale": {
+      "type": "likert_5",
+      "labels": [
+        "Strongly disagree",
+        "Disagree",
+        "Not sure",
+        "Agree",
+        "Strongly agree"
+      ]
+    },
+    "scoring_direction": -1
+  },
+  {
+    "id": "b5_013",
+    "track": "big_five_style",
+    "trait": "extraversion",
+    "prompt": "I gain energy from talking through ideas with other people.",
+    "response_scale": {
+      "type": "likert_5",
+      "labels": [
+        "Strongly disagree",
+        "Disagree",
+        "Not sure",
+        "Agree",
+        "Strongly agree"
+      ]
+    },
+    "scoring_direction": 1
+  },
+  {
+    "id": "b5_014",
+    "track": "big_five_style",
+    "trait": "agreeableness",
+    "prompt": "I try to understand other people's needs before reacting.",
+    "response_scale": {
+      "type": "likert_5",
+      "labels": [
+        "Strongly disagree",
+        "Disagree",
+        "Not sure",
+        "Agree",
+        "Strongly agree"
+      ]
+    },
+    "scoring_direction": -1
+  },
+  {
+    "id": "b5_015",
+    "track": "big_five_style",
+    "trait": "emotional_stability",
+    "prompt": "I can usually stay steady when plans change unexpectedly.",
+    "response_scale": {
+      "type": "likert_5",
+      "labels": [
+        "Strongly disagree",
+        "Disagree",
+        "Not sure",
+        "Agree",
+        "Strongly agree"
+      ]
+    },
+    "scoring_direction": 1
+  },
+  {
+    "id": "b5_016",
+    "track": "big_five_style",
+    "trait": "openness",
+    "prompt": "I enjoy exploring new ideas even when they feel unfamiliar.",
+    "response_scale": {
+      "type": "likert_5",
+      "labels": [
+        "Strongly disagree",
+        "Disagree",
+        "Not sure",
+        "Agree",
+        "Strongly agree"
+      ]
+    },
+    "scoring_direction": -1
+  },
+  {
+    "id": "b5_017",
+    "track": "big_five_style",
+    "trait": "conscientiousness",
+    "prompt": "I usually keep track of deadlines and responsibilities.",
+    "response_scale": {
+      "type": "likert_5",
+      "labels": [
+        "Strongly disagree",
+        "Disagree",
+        "Not sure",
+        "Agree",
+        "Strongly agree"
+      ]
+    },
+    "scoring_direction": 1
+  },
+  {
+    "id": "b5_018",
+    "track": "big_five_style",
+    "trait": "extraversion",
+    "prompt": "I gain energy from talking through ideas with other people.",
+    "response_scale": {
+      "type": "likert_5",
+      "labels": [
+        "Strongly disagree",
+        "Disagree",
+        "Not sure",
+        "Agree",
+        "Strongly agree"
+      ]
+    },
+    "scoring_direction": -1
+  },
+  {
+    "id": "b5_019",
+    "track": "big_five_style",
+    "trait": "agreeableness",
+    "prompt": "I try to understand other people's needs before reacting.",
+    "response_scale": {
+      "type": "likert_5",
+      "labels": [
+        "Strongly disagree",
+        "Disagree",
+        "Not sure",
+        "Agree",
+        "Strongly agree"
+      ]
+    },
+    "scoring_direction": 1
+  },
+  {
+    "id": "b5_020",
+    "track": "big_five_style",
+    "trait": "emotional_stability",
+    "prompt": "I struggle to rarely stay steady when plans change unexpectedly.",
+    "response_scale": {
+      "type": "likert_5",
+      "labels": [
+        "Strongly disagree",
+        "Disagree",
+        "Not sure",
+        "Agree",
+        "Strongly agree"
+      ]
+    },
+    "scoring_direction": -1
+  },
+  {
+    "id": "b5_021",
+    "track": "big_five_style",
+    "trait": "openness",
+    "prompt": "I enjoy exploring new ideas even when they feel unfamiliar.",
+    "response_scale": {
+      "type": "likert_5",
+      "labels": [
+        "Strongly disagree",
+        "Disagree",
+        "Not sure",
+        "Agree",
+        "Strongly agree"
+      ]
+    },
+    "scoring_direction": 1
+  },
+  {
+    "id": "b5_022",
+    "track": "big_five_style",
+    "trait": "conscientiousness",
+    "prompt": "I rarely keep track of deadlines and responsibilities.",
+    "response_scale": {
+      "type": "likert_5",
+      "labels": [
+        "Strongly disagree",
+        "Disagree",
+        "Not sure",
+        "Agree",
+        "Strongly agree"
+      ]
+    },
+    "scoring_direction": -1
+  },
+  {
+    "id": "b5_023",
+    "track": "big_five_style",
+    "trait": "extraversion",
+    "prompt": "I gain energy from talking through ideas with other people.",
+    "response_scale": {
+      "type": "likert_5",
+      "labels": [
+        "Strongly disagree",
+        "Disagree",
+        "Not sure",
+        "Agree",
+        "Strongly agree"
+      ]
+    },
+    "scoring_direction": 1
+  },
+  {
+    "id": "b5_024",
+    "track": "big_five_style",
+    "trait": "agreeableness",
+    "prompt": "I try to understand other people's needs before reacting.",
+    "response_scale": {
+      "type": "likert_5",
+      "labels": [
+        "Strongly disagree",
+        "Disagree",
+        "Not sure",
+        "Agree",
+        "Strongly agree"
+      ]
+    },
+    "scoring_direction": -1
+  },
+  {
+    "id": "b5_025",
+    "track": "big_five_style",
+    "trait": "emotional_stability",
+    "prompt": "I can usually stay steady when plans change unexpectedly.",
+    "response_scale": {
+      "type": "likert_5",
+      "labels": [
+        "Strongly disagree",
+        "Disagree",
+        "Not sure",
+        "Agree",
+        "Strongly agree"
+      ]
+    },
+    "scoring_direction": 1
+  },
+  {
+    "id": "b5_026",
+    "track": "big_five_style",
+    "trait": "openness",
+    "prompt": "I enjoy exploring new ideas even when they feel unfamiliar.",
+    "response_scale": {
+      "type": "likert_5",
+      "labels": [
+        "Strongly disagree",
+        "Disagree",
+        "Not sure",
+        "Agree",
+        "Strongly agree"
+      ]
+    },
+    "scoring_direction": -1
+  },
+  {
+    "id": "b5_027",
+    "track": "big_five_style",
+    "trait": "conscientiousness",
+    "prompt": "I usually keep track of deadlines and responsibilities.",
+    "response_scale": {
+      "type": "likert_5",
+      "labels": [
+        "Strongly disagree",
+        "Disagree",
+        "Not sure",
+        "Agree",
+        "Strongly agree"
+      ]
+    },
+    "scoring_direction": 1
+  },
+  {
+    "id": "b5_028",
+    "track": "big_five_style",
+    "trait": "extraversion",
+    "prompt": "I gain energy from talking through ideas with other people.",
+    "response_scale": {
+      "type": "likert_5",
+      "labels": [
+        "Strongly disagree",
+        "Disagree",
+        "Not sure",
+        "Agree",
+        "Strongly agree"
+      ]
+    },
+    "scoring_direction": -1
+  },
+  {
+    "id": "b5_029",
+    "track": "big_five_style",
+    "trait": "agreeableness",
+    "prompt": "I try to understand other people's needs before reacting.",
+    "response_scale": {
+      "type": "likert_5",
+      "labels": [
+        "Strongly disagree",
+        "Disagree",
+        "Not sure",
+        "Agree",
+        "Strongly agree"
+      ]
+    },
+    "scoring_direction": 1
+  },
+  {
+    "id": "b5_030",
+    "track": "big_five_style",
+    "trait": "emotional_stability",
+    "prompt": "I struggle to rarely stay steady when plans change unexpectedly.",
+    "response_scale": {
+      "type": "likert_5",
+      "labels": [
+        "Strongly disagree",
+        "Disagree",
+        "Not sure",
+        "Agree",
+        "Strongly agree"
+      ]
+    },
+    "scoring_direction": -1
+  },
+  {
+    "id": "b5_031",
+    "track": "big_five_style",
+    "trait": "openness",
+    "prompt": "I enjoy exploring new ideas even when they feel unfamiliar.",
+    "response_scale": {
+      "type": "likert_5",
+      "labels": [
+        "Strongly disagree",
+        "Disagree",
+        "Not sure",
+        "Agree",
+        "Strongly agree"
+      ]
+    },
+    "scoring_direction": 1
+  },
+  {
+    "id": "b5_032",
+    "track": "big_five_style",
+    "trait": "conscientiousness",
+    "prompt": "I rarely keep track of deadlines and responsibilities.",
+    "response_scale": {
+      "type": "likert_5",
+      "labels": [
+        "Strongly disagree",
+        "Disagree",
+        "Not sure",
+        "Agree",
+        "Strongly agree"
+      ]
+    },
+    "scoring_direction": -1
+  },
+  {
+    "id": "b5_033",
+    "track": "big_five_style",
+    "trait": "extraversion",
+    "prompt": "I gain energy from talking through ideas with other people.",
+    "response_scale": {
+      "type": "likert_5",
+      "labels": [
+        "Strongly disagree",
+        "Disagree",
+        "Not sure",
+        "Agree",
+        "Strongly agree"
+      ]
+    },
+    "scoring_direction": 1
+  },
+  {
+    "id": "b5_034",
+    "track": "big_five_style",
+    "trait": "agreeableness",
+    "prompt": "I try to understand other people's needs before reacting.",
+    "response_scale": {
+      "type": "likert_5",
+      "labels": [
+        "Strongly disagree",
+        "Disagree",
+        "Not sure",
+        "Agree",
+        "Strongly agree"
+      ]
+    },
+    "scoring_direction": -1
+  },
+  {
+    "id": "b5_035",
+    "track": "big_five_style",
+    "trait": "emotional_stability",
+    "prompt": "I can usually stay steady when plans change unexpectedly.",
+    "response_scale": {
+      "type": "likert_5",
+      "labels": [
+        "Strongly disagree",
+        "Disagree",
+        "Not sure",
+        "Agree",
+        "Strongly agree"
+      ]
+    },
+    "scoring_direction": 1
+  },
+  {
+    "id": "b5_036",
+    "track": "big_five_style",
+    "trait": "openness",
+    "prompt": "I enjoy exploring new ideas even when they feel unfamiliar.",
+    "response_scale": {
+      "type": "likert_5",
+      "labels": [
+        "Strongly disagree",
+        "Disagree",
+        "Not sure",
+        "Agree",
+        "Strongly agree"
+      ]
+    },
+    "scoring_direction": -1
+  },
+  {
+    "id": "b5_037",
+    "track": "big_five_style",
+    "trait": "conscientiousness",
+    "prompt": "I usually keep track of deadlines and responsibilities.",
+    "response_scale": {
+      "type": "likert_5",
+      "labels": [
+        "Strongly disagree",
+        "Disagree",
+        "Not sure",
+        "Agree",
+        "Strongly agree"
+      ]
+    },
+    "scoring_direction": 1
+  },
+  {
+    "id": "b5_038",
+    "track": "big_five_style",
+    "trait": "extraversion",
+    "prompt": "I gain energy from talking through ideas with other people.",
+    "response_scale": {
+      "type": "likert_5",
+      "labels": [
+        "Strongly disagree",
+        "Disagree",
+        "Not sure",
+        "Agree",
+        "Strongly agree"
+      ]
+    },
+    "scoring_direction": -1
+  },
+  {
+    "id": "b5_039",
+    "track": "big_five_style",
+    "trait": "agreeableness",
+    "prompt": "I try to understand other people's needs before reacting.",
+    "response_scale": {
+      "type": "likert_5",
+      "labels": [
+        "Strongly disagree",
+        "Disagree",
+        "Not sure",
+        "Agree",
+        "Strongly agree"
+      ]
+    },
+    "scoring_direction": 1
+  },
+  {
+    "id": "b5_040",
+    "track": "big_five_style",
+    "trait": "emotional_stability",
+    "prompt": "I struggle to rarely stay steady when plans change unexpectedly.",
+    "response_scale": {
+      "type": "likert_5",
+      "labels": [
+        "Strongly disagree",
+        "Disagree",
+        "Not sure",
+        "Agree",
+        "Strongly agree"
+      ]
+    },
+    "scoring_direction": -1
+  },
+  {
+    "id": "b5_041",
+    "track": "big_five_style",
+    "trait": "openness",
+    "prompt": "I enjoy exploring new ideas even when they feel unfamiliar.",
+    "response_scale": {
+      "type": "likert_5",
+      "labels": [
+        "Strongly disagree",
+        "Disagree",
+        "Not sure",
+        "Agree",
+        "Strongly agree"
+      ]
+    },
+    "scoring_direction": 1
+  },
+  {
+    "id": "b5_042",
+    "track": "big_five_style",
+    "trait": "conscientiousness",
+    "prompt": "I rarely keep track of deadlines and responsibilities.",
+    "response_scale": {
+      "type": "likert_5",
+      "labels": [
+        "Strongly disagree",
+        "Disagree",
+        "Not sure",
+        "Agree",
+        "Strongly agree"
+      ]
+    },
+    "scoring_direction": -1
+  },
+  {
+    "id": "b5_043",
+    "track": "big_five_style",
+    "trait": "extraversion",
+    "prompt": "I gain energy from talking through ideas with other people.",
+    "response_scale": {
+      "type": "likert_5",
+      "labels": [
+        "Strongly disagree",
+        "Disagree",
+        "Not sure",
+        "Agree",
+        "Strongly agree"
+      ]
+    },
+    "scoring_direction": 1
+  },
+  {
+    "id": "b5_044",
+    "track": "big_five_style",
+    "trait": "agreeableness",
+    "prompt": "I try to understand other people's needs before reacting.",
+    "response_scale": {
+      "type": "likert_5",
+      "labels": [
+        "Strongly disagree",
+        "Disagree",
+        "Not sure",
+        "Agree",
+        "Strongly agree"
+      ]
+    },
+    "scoring_direction": -1
+  },
+  {
+    "id": "b5_045",
+    "track": "big_five_style",
+    "trait": "emotional_stability",
+    "prompt": "I can usually stay steady when plans change unexpectedly.",
+    "response_scale": {
+      "type": "likert_5",
+      "labels": [
+        "Strongly disagree",
+        "Disagree",
+        "Not sure",
+        "Agree",
+        "Strongly agree"
+      ]
+    },
+    "scoring_direction": 1
+  },
+  {
+    "id": "b5_046",
+    "track": "big_five_style",
+    "trait": "openness",
+    "prompt": "I enjoy exploring new ideas even when they feel unfamiliar.",
+    "response_scale": {
+      "type": "likert_5",
+      "labels": [
+        "Strongly disagree",
+        "Disagree",
+        "Not sure",
+        "Agree",
+        "Strongly agree"
+      ]
+    },
+    "scoring_direction": -1
+  },
+  {
+    "id": "b5_047",
+    "track": "big_five_style",
+    "trait": "conscientiousness",
+    "prompt": "I usually keep track of deadlines and responsibilities.",
+    "response_scale": {
+      "type": "likert_5",
+      "labels": [
+        "Strongly disagree",
+        "Disagree",
+        "Not sure",
+        "Agree",
+        "Strongly agree"
+      ]
+    },
+    "scoring_direction": 1
+  },
+  {
+    "id": "b5_048",
+    "track": "big_five_style",
+    "trait": "extraversion",
+    "prompt": "I gain energy from talking through ideas with other people.",
+    "response_scale": {
+      "type": "likert_5",
+      "labels": [
+        "Strongly disagree",
+        "Disagree",
+        "Not sure",
+        "Agree",
+        "Strongly agree"
+      ]
+    },
+    "scoring_direction": -1
+  },
+  {
+    "id": "b5_049",
+    "track": "big_five_style",
+    "trait": "agreeableness",
+    "prompt": "I try to understand other people's needs before reacting.",
+    "response_scale": {
+      "type": "likert_5",
+      "labels": [
+        "Strongly disagree",
+        "Disagree",
+        "Not sure",
+        "Agree",
+        "Strongly agree"
+      ]
+    },
+    "scoring_direction": 1
+  },
+  {
+    "id": "b5_050",
+    "track": "big_five_style",
+    "trait": "emotional_stability",
+    "prompt": "I struggle to rarely stay steady when plans change unexpectedly.",
+    "response_scale": {
+      "type": "likert_5",
+      "labels": [
+        "Strongly disagree",
+        "Disagree",
+        "Not sure",
+        "Agree",
+        "Strongly agree"
+      ]
+    },
+    "scoring_direction": -1
+  },
+  {
+    "id": "b5_051",
+    "track": "big_five_style",
+    "trait": "openness",
+    "prompt": "I enjoy exploring new ideas even when they feel unfamiliar.",
+    "response_scale": {
+      "type": "likert_5",
+      "labels": [
+        "Strongly disagree",
+        "Disagree",
+        "Not sure",
+        "Agree",
+        "Strongly agree"
+      ]
+    },
+    "scoring_direction": 1
+  },
+  {
+    "id": "b5_052",
+    "track": "big_five_style",
+    "trait": "conscientiousness",
+    "prompt": "I rarely keep track of deadlines and responsibilities.",
+    "response_scale": {
+      "type": "likert_5",
+      "labels": [
+        "Strongly disagree",
+        "Disagree",
+        "Not sure",
+        "Agree",
+        "Strongly agree"
+      ]
+    },
+    "scoring_direction": -1
+  },
+  {
+    "id": "b5_053",
+    "track": "big_five_style",
+    "trait": "extraversion",
+    "prompt": "I gain energy from talking through ideas with other people.",
+    "response_scale": {
+      "type": "likert_5",
+      "labels": [
+        "Strongly disagree",
+        "Disagree",
+        "Not sure",
+        "Agree",
+        "Strongly agree"
+      ]
+    },
+    "scoring_direction": 1
+  },
+  {
+    "id": "b5_054",
+    "track": "big_five_style",
+    "trait": "agreeableness",
+    "prompt": "I try to understand other people's needs before reacting.",
+    "response_scale": {
+      "type": "likert_5",
+      "labels": [
+        "Strongly disagree",
+        "Disagree",
+        "Not sure",
+        "Agree",
+        "Strongly agree"
+      ]
+    },
+    "scoring_direction": -1
+  },
+  {
+    "id": "b5_055",
+    "track": "big_five_style",
+    "trait": "emotional_stability",
+    "prompt": "I can usually stay steady when plans change unexpectedly.",
+    "response_scale": {
+      "type": "likert_5",
+      "labels": [
+        "Strongly disagree",
+        "Disagree",
+        "Not sure",
+        "Agree",
+        "Strongly agree"
+      ]
+    },
+    "scoring_direction": 1
+  },
+  {
+    "id": "b5_056",
+    "track": "big_five_style",
+    "trait": "openness",
+    "prompt": "I enjoy exploring new ideas even when they feel unfamiliar.",
+    "response_scale": {
+      "type": "likert_5",
+      "labels": [
+        "Strongly disagree",
+        "Disagree",
+        "Not sure",
+        "Agree",
+        "Strongly agree"
+      ]
+    },
+    "scoring_direction": -1
+  },
+  {
+    "id": "b5_057",
+    "track": "big_five_style",
+    "trait": "conscientiousness",
+    "prompt": "I usually keep track of deadlines and responsibilities.",
+    "response_scale": {
+      "type": "likert_5",
+      "labels": [
+        "Strongly disagree",
+        "Disagree",
+        "Not sure",
+        "Agree",
+        "Strongly agree"
+      ]
+    },
+    "scoring_direction": 1
+  },
+  {
+    "id": "b5_058",
+    "track": "big_five_style",
+    "trait": "extraversion",
+    "prompt": "I gain energy from talking through ideas with other people.",
+    "response_scale": {
+      "type": "likert_5",
+      "labels": [
+        "Strongly disagree",
+        "Disagree",
+        "Not sure",
+        "Agree",
+        "Strongly agree"
+      ]
+    },
+    "scoring_direction": -1
+  },
+  {
+    "id": "b5_059",
+    "track": "big_five_style",
+    "trait": "agreeableness",
+    "prompt": "I try to understand other people's needs before reacting.",
+    "response_scale": {
+      "type": "likert_5",
+      "labels": [
+        "Strongly disagree",
+        "Disagree",
+        "Not sure",
+        "Agree",
+        "Strongly agree"
+      ]
+    },
+    "scoring_direction": 1
+  },
+  {
+    "id": "b5_060",
+    "track": "big_five_style",
+    "trait": "emotional_stability",
+    "prompt": "I struggle to rarely stay steady when plans change unexpectedly.",
+    "response_scale": {
+      "type": "likert_5",
+      "labels": [
+        "Strongly disagree",
+        "Disagree",
+        "Not sure",
+        "Agree",
+        "Strongly agree"
+      ]
+    },
+    "scoring_direction": -1
+  }
+]

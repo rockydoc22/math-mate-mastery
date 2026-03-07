@@ -1,0 +1,802 @@
+[
+  {
+    "id": "eq_001",
+    "track": "eq_skills",
+    "domain": "self_awareness",
+    "prompt": "I can tell when my emotions are affecting how I think.",
+    "response_scale": {
+      "type": "likert_5",
+      "labels": [
+        "Almost never",
+        "Sometimes",
+        "About half the time",
+        "Often",
+        "Almost always"
+      ]
+    }
+  },
+  {
+    "id": "eq_002",
+    "track": "eq_skills",
+    "domain": "self_regulation",
+    "prompt": "When I feel frustrated, I can usually pause before reacting.",
+    "response_scale": {
+      "type": "likert_5",
+      "labels": [
+        "Almost never",
+        "Sometimes",
+        "About half the time",
+        "Often",
+        "Almost always"
+      ]
+    }
+  },
+  {
+    "id": "eq_003",
+    "track": "eq_skills",
+    "domain": "empathy",
+    "prompt": "I notice when someone seems upset even if they do not say it directly.",
+    "response_scale": {
+      "type": "likert_5",
+      "labels": [
+        "Almost never",
+        "Sometimes",
+        "About half the time",
+        "Often",
+        "Almost always"
+      ]
+    }
+  },
+  {
+    "id": "eq_004",
+    "track": "eq_skills",
+    "domain": "social_awareness",
+    "prompt": "I can often tell what kind of support a person needs in a group setting.",
+    "response_scale": {
+      "type": "likert_5",
+      "labels": [
+        "Almost never",
+        "Sometimes",
+        "About half the time",
+        "Often",
+        "Almost always"
+      ]
+    }
+  },
+  {
+    "id": "eq_005",
+    "track": "eq_skills",
+    "domain": "relationship_management",
+    "prompt": "I can disagree with someone without turning the situation into a fight.",
+    "response_scale": {
+      "type": "likert_5",
+      "labels": [
+        "Almost never",
+        "Sometimes",
+        "About half the time",
+        "Often",
+        "Almost always"
+      ]
+    }
+  },
+  {
+    "id": "eq_006",
+    "track": "eq_skills",
+    "domain": "self_awareness",
+    "prompt": "I can tell when my emotions are affecting how I think.",
+    "response_scale": {
+      "type": "likert_5",
+      "labels": [
+        "Almost never",
+        "Sometimes",
+        "About half the time",
+        "Often",
+        "Almost always"
+      ]
+    }
+  },
+  {
+    "id": "eq_007",
+    "track": "eq_skills",
+    "domain": "self_regulation",
+    "prompt": "When I feel frustrated, I can usually pause before reacting.",
+    "response_scale": {
+      "type": "likert_5",
+      "labels": [
+        "Almost never",
+        "Sometimes",
+        "About half the time",
+        "Often",
+        "Almost always"
+      ]
+    }
+  },
+  {
+    "id": "eq_008",
+    "track": "eq_skills",
+    "domain": "empathy",
+    "prompt": "I notice when someone seems upset even if they do not say it directly.",
+    "response_scale": {
+      "type": "likert_5",
+      "labels": [
+        "Almost never",
+        "Sometimes",
+        "About half the time",
+        "Often",
+        "Almost always"
+      ]
+    }
+  },
+  {
+    "id": "eq_009",
+    "track": "eq_skills",
+    "domain": "social_awareness",
+    "prompt": "I can often tell what kind of support a person needs in a group setting.",
+    "response_scale": {
+      "type": "likert_5",
+      "labels": [
+        "Almost never",
+        "Sometimes",
+        "About half the time",
+        "Often",
+        "Almost always"
+      ]
+    }
+  },
+  {
+    "id": "eq_010",
+    "track": "eq_skills",
+    "domain": "relationship_management",
+    "prompt": "I can disagree with someone without turning the situation into a fight.",
+    "response_scale": {
+      "type": "likert_5",
+      "labels": [
+        "Almost never",
+        "Sometimes",
+        "About half the time",
+        "Often",
+        "Almost always"
+      ]
+    }
+  },
+  {
+    "id": "eq_011",
+    "track": "eq_skills",
+    "domain": "self_awareness",
+    "prompt": "I can tell when my emotions are affecting how I think.",
+    "response_scale": {
+      "type": "likert_5",
+      "labels": [
+        "Almost never",
+        "Sometimes",
+        "About half the time",
+        "Often",
+        "Almost always"
+      ]
+    }
+  },
+  {
+    "id": "eq_012",
+    "track": "eq_skills",
+    "domain": "self_regulation",
+    "prompt": "When I feel frustrated, I can usually pause before reacting.",
+    "response_scale": {
+      "type": "likert_5",
+      "labels": [
+        "Almost never",
+        "Sometimes",
+        "About half the time",
+        "Often",
+        "Almost always"
+      ]
+    }
+  },
+  {
+    "id": "eq_013",
+    "track": "eq_skills",
+    "domain": "empathy",
+    "prompt": "I notice when someone seems upset even if they do not say it directly.",
+    "response_scale": {
+      "type": "likert_5",
+      "labels": [
+        "Almost never",
+        "Sometimes",
+        "About half the time",
+        "Often",
+        "Almost always"
+      ]
+    }
+  },
+  {
+    "id": "eq_014",
+    "track": "eq_skills",
+    "domain": "social_awareness",
+    "prompt": "I can often tell what kind of support a person needs in a group setting.",
+    "response_scale": {
+      "type": "likert_5",
+      "labels": [
+        "Almost never",
+        "Sometimes",
+        "About half the time",
+        "Often",
+        "Almost always"
+      ]
+    }
+  },
+  {
+    "id": "eq_015",
+    "track": "eq_skills",
+    "domain": "relationship_management",
+    "prompt": "I can disagree with someone without turning the situation into a fight.",
+    "response_scale": {
+      "type": "likert_5",
+      "labels": [
+        "Almost never",
+        "Sometimes",
+        "About half the time",
+        "Often",
+        "Almost always"
+      ]
+    }
+  },
+  {
+    "id": "eq_016",
+    "track": "eq_skills",
+    "domain": "self_awareness",
+    "prompt": "I can tell when my emotions are affecting how I think.",
+    "response_scale": {
+      "type": "likert_5",
+      "labels": [
+        "Almost never",
+        "Sometimes",
+        "About half the time",
+        "Often",
+        "Almost always"
+      ]
+    }
+  },
+  {
+    "id": "eq_017",
+    "track": "eq_skills",
+    "domain": "self_regulation",
+    "prompt": "When I feel frustrated, I can usually pause before reacting.",
+    "response_scale": {
+      "type": "likert_5",
+      "labels": [
+        "Almost never",
+        "Sometimes",
+        "About half the time",
+        "Often",
+        "Almost always"
+      ]
+    }
+  },
+  {
+    "id": "eq_018",
+    "track": "eq_skills",
+    "domain": "empathy",
+    "prompt": "I notice when someone seems upset even if they do not say it directly.",
+    "response_scale": {
+      "type": "likert_5",
+      "labels": [
+        "Almost never",
+        "Sometimes",
+        "About half the time",
+        "Often",
+        "Almost always"
+      ]
+    }
+  },
+  {
+    "id": "eq_019",
+    "track": "eq_skills",
+    "domain": "social_awareness",
+    "prompt": "I can often tell what kind of support a person needs in a group setting.",
+    "response_scale": {
+      "type": "likert_5",
+      "labels": [
+        "Almost never",
+        "Sometimes",
+        "About half the time",
+        "Often",
+        "Almost always"
+      ]
+    }
+  },
+  {
+    "id": "eq_020",
+    "track": "eq_skills",
+    "domain": "relationship_management",
+    "prompt": "I can disagree with someone without turning the situation into a fight.",
+    "response_scale": {
+      "type": "likert_5",
+      "labels": [
+        "Almost never",
+        "Sometimes",
+        "About half the time",
+        "Often",
+        "Almost always"
+      ]
+    }
+  },
+  {
+    "id": "eq_021",
+    "track": "eq_skills",
+    "domain": "self_awareness",
+    "prompt": "I can tell when my emotions are affecting how I think.",
+    "response_scale": {
+      "type": "likert_5",
+      "labels": [
+        "Almost never",
+        "Sometimes",
+        "About half the time",
+        "Often",
+        "Almost always"
+      ]
+    }
+  },
+  {
+    "id": "eq_022",
+    "track": "eq_skills",
+    "domain": "self_regulation",
+    "prompt": "When I feel frustrated, I can usually pause before reacting.",
+    "response_scale": {
+      "type": "likert_5",
+      "labels": [
+        "Almost never",
+        "Sometimes",
+        "About half the time",
+        "Often",
+        "Almost always"
+      ]
+    }
+  },
+  {
+    "id": "eq_023",
+    "track": "eq_skills",
+    "domain": "empathy",
+    "prompt": "I notice when someone seems upset even if they do not say it directly.",
+    "response_scale": {
+      "type": "likert_5",
+      "labels": [
+        "Almost never",
+        "Sometimes",
+        "About half the time",
+        "Often",
+        "Almost always"
+      ]
+    }
+  },
+  {
+    "id": "eq_024",
+    "track": "eq_skills",
+    "domain": "social_awareness",
+    "prompt": "I can often tell what kind of support a person needs in a group setting.",
+    "response_scale": {
+      "type": "likert_5",
+      "labels": [
+        "Almost never",
+        "Sometimes",
+        "About half the time",
+        "Often",
+        "Almost always"
+      ]
+    }
+  },
+  {
+    "id": "eq_025",
+    "track": "eq_skills",
+    "domain": "relationship_management",
+    "prompt": "I can disagree with someone without turning the situation into a fight.",
+    "response_scale": {
+      "type": "likert_5",
+      "labels": [
+        "Almost never",
+        "Sometimes",
+        "About half the time",
+        "Often",
+        "Almost always"
+      ]
+    }
+  },
+  {
+    "id": "eq_026",
+    "track": "eq_skills",
+    "domain": "self_awareness",
+    "prompt": "I can tell when my emotions are affecting how I think.",
+    "response_scale": {
+      "type": "likert_5",
+      "labels": [
+        "Almost never",
+        "Sometimes",
+        "About half the time",
+        "Often",
+        "Almost always"
+      ]
+    }
+  },
+  {
+    "id": "eq_027",
+    "track": "eq_skills",
+    "domain": "self_regulation",
+    "prompt": "When I feel frustrated, I can usually pause before reacting.",
+    "response_scale": {
+      "type": "likert_5",
+      "labels": [
+        "Almost never",
+        "Sometimes",
+        "About half the time",
+        "Often",
+        "Almost always"
+      ]
+    }
+  },
+  {
+    "id": "eq_028",
+    "track": "eq_skills",
+    "domain": "empathy",
+    "prompt": "I notice when someone seems upset even if they do not say it directly.",
+    "response_scale": {
+      "type": "likert_5",
+      "labels": [
+        "Almost never",
+        "Sometimes",
+        "About half the time",
+        "Often",
+        "Almost always"
+      ]
+    }
+  },
+  {
+    "id": "eq_029",
+    "track": "eq_skills",
+    "domain": "social_awareness",
+    "prompt": "I can often tell what kind of support a person needs in a group setting.",
+    "response_scale": {
+      "type": "likert_5",
+      "labels": [
+        "Almost never",
+        "Sometimes",
+        "About half the time",
+        "Often",
+        "Almost always"
+      ]
+    }
+  },
+  {
+    "id": "eq_030",
+    "track": "eq_skills",
+    "domain": "relationship_management",
+    "prompt": "I can disagree with someone without turning the situation into a fight.",
+    "response_scale": {
+      "type": "likert_5",
+      "labels": [
+        "Almost never",
+        "Sometimes",
+        "About half the time",
+        "Often",
+        "Almost always"
+      ]
+    }
+  },
+  {
+    "id": "eq_031",
+    "track": "eq_skills",
+    "domain": "self_awareness",
+    "prompt": "I can tell when my emotions are affecting how I think.",
+    "response_scale": {
+      "type": "likert_5",
+      "labels": [
+        "Almost never",
+        "Sometimes",
+        "About half the time",
+        "Often",
+        "Almost always"
+      ]
+    }
+  },
+  {
+    "id": "eq_032",
+    "track": "eq_skills",
+    "domain": "self_regulation",
+    "prompt": "When I feel frustrated, I can usually pause before reacting.",
+    "response_scale": {
+      "type": "likert_5",
+      "labels": [
+        "Almost never",
+        "Sometimes",
+        "About half the time",
+        "Often",
+        "Almost always"
+      ]
+    }
+  },
+  {
+    "id": "eq_033",
+    "track": "eq_skills",
+    "domain": "empathy",
+    "prompt": "I notice when someone seems upset even if they do not say it directly.",
+    "response_scale": {
+      "type": "likert_5",
+      "labels": [
+        "Almost never",
+        "Sometimes",
+        "About half the time",
+        "Often",
+        "Almost always"
+      ]
+    }
+  },
+  {
+    "id": "eq_034",
+    "track": "eq_skills",
+    "domain": "social_awareness",
+    "prompt": "I can often tell what kind of support a person needs in a group setting.",
+    "response_scale": {
+      "type": "likert_5",
+      "labels": [
+        "Almost never",
+        "Sometimes",
+        "About half the time",
+        "Often",
+        "Almost always"
+      ]
+    }
+  },
+  {
+    "id": "eq_035",
+    "track": "eq_skills",
+    "domain": "relationship_management",
+    "prompt": "I can disagree with someone without turning the situation into a fight.",
+    "response_scale": {
+      "type": "likert_5",
+      "labels": [
+        "Almost never",
+        "Sometimes",
+        "About half the time",
+        "Often",
+        "Almost always"
+      ]
+    }
+  },
+  {
+    "id": "eq_036",
+    "track": "eq_skills",
+    "domain": "self_awareness",
+    "prompt": "I can tell when my emotions are affecting how I think.",
+    "response_scale": {
+      "type": "likert_5",
+      "labels": [
+        "Almost never",
+        "Sometimes",
+        "About half the time",
+        "Often",
+        "Almost always"
+      ]
+    }
+  },
+  {
+    "id": "eq_037",
+    "track": "eq_skills",
+    "domain": "self_regulation",
+    "prompt": "When I feel frustrated, I can usually pause before reacting.",
+    "response_scale": {
+      "type": "likert_5",
+      "labels": [
+        "Almost never",
+        "Sometimes",
+        "About half the time",
+        "Often",
+        "Almost always"
+      ]
+    }
+  },
+  {
+    "id": "eq_038",
+    "track": "eq_skills",
+    "domain": "empathy",
+    "prompt": "I notice when someone seems upset even if they do not say it directly.",
+    "response_scale": {
+      "type": "likert_5",
+      "labels": [
+        "Almost never",
+        "Sometimes",
+        "About half the time",
+        "Often",
+        "Almost always"
+      ]
+    }
+  },
+  {
+    "id": "eq_039",
+    "track": "eq_skills",
+    "domain": "social_awareness",
+    "prompt": "I can often tell what kind of support a person needs in a group setting.",
+    "response_scale": {
+      "type": "likert_5",
+      "labels": [
+        "Almost never",
+        "Sometimes",
+        "About half the time",
+        "Often",
+        "Almost always"
+      ]
+    }
+  },
+  {
+    "id": "eq_040",
+    "track": "eq_skills",
+    "domain": "relationship_management",
+    "prompt": "I can disagree with someone without turning the situation into a fight.",
+    "response_scale": {
+      "type": "likert_5",
+      "labels": [
+        "Almost never",
+        "Sometimes",
+        "About half the time",
+        "Often",
+        "Almost always"
+      ]
+    }
+  },
+  {
+    "id": "eq_041",
+    "track": "eq_skills",
+    "domain": "self_awareness",
+    "prompt": "I can tell when my emotions are affecting how I think.",
+    "response_scale": {
+      "type": "likert_5",
+      "labels": [
+        "Almost never",
+        "Sometimes",
+        "About half the time",
+        "Often",
+        "Almost always"
+      ]
+    }
+  },
+  {
+    "id": "eq_042",
+    "track": "eq_skills",
+    "domain": "self_regulation",
+    "prompt": "When I feel frustrated, I can usually pause before reacting.",
+    "response_scale": {
+      "type": "likert_5",
+      "labels": [
+        "Almost never",
+        "Sometimes",
+        "About half the time",
+        "Often",
+        "Almost always"
+      ]
+    }
+  },
+  {
+    "id": "eq_043",
+    "track": "eq_skills",
+    "domain": "empathy",
+    "prompt": "I notice when someone seems upset even if they do not say it directly.",
+    "response_scale": {
+      "type": "likert_5",
+      "labels": [
+        "Almost never",
+        "Sometimes",
+        "About half the time",
+        "Often",
+        "Almost always"
+      ]
+    }
+  },
+  {
+    "id": "eq_044",
+    "track": "eq_skills",
+    "domain": "social_awareness",
+    "prompt": "I can often tell what kind of support a person needs in a group setting.",
+    "response_scale": {
+      "type": "likert_5",
+      "labels": [
+        "Almost never",
+        "Sometimes",
+        "About half the time",
+        "Often",
+        "Almost always"
+      ]
+    }
+  },
+  {
+    "id": "eq_045",
+    "track": "eq_skills",
+    "domain": "relationship_management",
+    "prompt": "I can disagree with someone without turning the situation into a fight.",
+    "response_scale": {
+      "type": "likert_5",
+      "labels": [
+        "Almost never",
+        "Sometimes",
+        "About half the time",
+        "Often",
+        "Almost always"
+      ]
+    }
+  },
+  {
+    "id": "eq_046",
+    "track": "eq_skills",
+    "domain": "self_awareness",
+    "prompt": "I can tell when my emotions are affecting how I think.",
+    "response_scale": {
+      "type": "likert_5",
+      "labels": [
+        "Almost never",
+        "Sometimes",
+        "About half the time",
+        "Often",
+        "Almost always"
+      ]
+    }
+  },
+  {
+    "id": "eq_047",
+    "track": "eq_skills",
+    "domain": "self_regulation",
+    "prompt": "When I feel frustrated, I can usually pause before reacting.",
+    "response_scale": {
+      "type": "likert_5",
+      "labels": [
+        "Almost never",
+        "Sometimes",
+        "About half the time",
+        "Often",
+        "Almost always"
+      ]
+    }
+  },
+  {
+    "id": "eq_048",
+    "track": "eq_skills",
+    "domain": "empathy",
+    "prompt": "I notice when someone seems upset even if they do not say it directly.",
+    "response_scale": {
+      "type": "likert_5",
+      "labels": [
+        "Almost never",
+        "Sometimes",
+        "About half the time",
+        "Often",
+        "Almost always"
+      ]
+    }
+  },
+  {
+    "id": "eq_049",
+    "track": "eq_skills",
+    "domain": "social_awareness",
+    "prompt": "I can often tell what kind of support a person needs in a group setting.",
+    "response_scale": {
+      "type": "likert_5",
+      "labels": [
+        "Almost never",
+        "Sometimes",
+        "About half the time",
+        "Often",
+        "Almost always"
+      ]
+    }
+  },
+  {
+    "id": "eq_050",
+    "track": "eq_skills",
+    "domain": "relationship_management",
+    "prompt": "I can disagree with someone without turning the situation into a fight.",
+    "response_scale": {
+      "type": "likert_5",
+      "labels": [
+        "Almost never",
+        "Sometimes",
+        "About half the time",
+        "Often",
+        "Almost always"
+      ]
+    }
+  }
+]

@@ -1,0 +1,13 @@
+{
+  "title": "Test Strategy Mega Bank",
+  "notes": [
+    "1000 original strategy-training scenarios.",
+    "Built to teach pacing, elimination, estimation, confidence tracking, and error analysis.",
+    "Applies across SAT, ACT, GRE, GMAT, LSAT, ASVAB, MCAT, and CLT."
+  ],
+  "counts": {
+    "total_scenarios": 1000,
+    "scenario_types": 8,
+    "exams_covered": 8
+  }
+}

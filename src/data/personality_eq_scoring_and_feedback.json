@@ -1,0 +1,42 @@
+{
+  "title": "Scoring and Feedback Rules",
+  "general_rules": [
+    "Show percentile-style language only if normed data exists. Otherwise use low / medium / high preference or strength bands.",
+    "Return 3 strengths and 2 growth suggestions, not a harsh judgment.",
+    "Always include the banner that this is an educational self-assessment, not a clinical instrument."
+  ],
+  "big_five_style_feedback": {
+    "openness": {
+      "high": "You may enjoy novelty, creativity, and exploratory learning.",
+      "mid": "You may balance curiosity with practicality.",
+      "low": "You may prefer familiar methods and clear expectations."
+    },
+    "conscientiousness": {
+      "high": "You may thrive with structured plans, checklists, and clear goals.",
+      "mid": "You may adapt between structure and flexibility.",
+      "low": "You may benefit from more visible routines and reminders."
+    },
+    "extraversion": {
+      "high": "You may learn well through discussion, speaking, and group momentum.",
+      "mid": "You may shift comfortably between solo and group work.",
+      "low": "You may prefer quiet reflection before sharing ideas."
+    },
+    "agreeableness": {
+      "high": "You may value harmony, teamwork, and supportive communication.",
+      "mid": "You may balance cooperation with directness.",
+      "low": "You may be more blunt, skeptical, or debate-oriented."
+    },
+    "emotional_stability": {
+      "high": "You may stay steadier under pressure and recover faster from setbacks.",
+      "mid": "You may handle some stress well while still needing recovery time.",
+      "low": "You may benefit from stress-management habits and pacing tools."
+    }
+  },
+  "eq_feedback_domains": {
+    "self_awareness": "Noticing your emotional state helps you choose better responses.",
+    "self_regulation": "Pausing before reacting can improve judgment and performance.",
+    "empathy": "Reading other people well supports stronger relationships and teamwork.",
+    "social_awareness": "Understanding group dynamics helps in school, work, and leadership.",
+    "relationship_management": "Handling conflict well is a major practical life skill."
+  }
+}

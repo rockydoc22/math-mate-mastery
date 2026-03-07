@@ -1,0 +1,31 @@
+{
+  "title": "Personality and EQ UI Spec",
+  "flows": [
+    "Choose track",
+    "Answer 10-20 items per session",
+    "See progress bar",
+    "Receive strengths summary",
+    "Receive practical coaching tips",
+    "Save to profile if user wants"
+  ],
+  "recommended_tracks_for_age": {
+    "8_to_11": [
+      "learning_preferences"
+    ],
+    "12_to_17": [
+      "learning_preferences",
+      "eq_skills",
+      "big_five_style_short"
+    ],
+    "18_plus": [
+      "big_five_style",
+      "eq_skills",
+      "learning_preferences"
+    ]
+  },
+  "ui_rules": [
+    "Use warm non-judgmental language.",
+    "Avoid labels like 'bad at emotions' or 'weak personality'.",
+    "Show actionable suggestions linked to study habits, communication, or self-management."
+  ]
+}
