@@ -1,0 +1,26 @@
+{
+  "title": "LSAT + MCAT Original Pack 01",
+  "notes": [
+    "All questions are original and not copied from official exams.",
+    "Questions are inspired by tested skills only.",
+    "Balanced correct answer distribution is included."
+  ],
+  "counts": {
+    "LSAT": 250,
+    "MCAT": 300
+  },
+  "answer_distribution": {
+    "LSAT": {
+      "A": 63,
+      "B": 63,
+      "C": 62,
+      "D": 62
+    },
+    "MCAT": {
+      "A": 75,
+      "B": 75,
+      "C": 75,
+      "D": 75
+    }
+  }
+}
