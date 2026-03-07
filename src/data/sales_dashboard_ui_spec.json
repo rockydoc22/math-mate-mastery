@@ -1,0 +1,20 @@
+{
+  "title": "Sales Dashboard UI Spec",
+  "views": [
+    "pipeline_board",
+    "organization_detail",
+    "pilot_health_dashboard",
+    "renewals_view",
+    "follow_up_queue",
+    "lost_deals_analysis"
+  ],
+  "top_metrics": [
+    "new_leads_this_month",
+    "active_pilots",
+    "pilot_to_paid_conversion_rate",
+    "average_days_in_stage",
+    "upcoming_renewals",
+    "estimated_pipeline_value",
+    "follow_ups_due_today"
+  ]
+}

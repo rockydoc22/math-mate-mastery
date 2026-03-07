@@ -1,0 +1,26 @@
+{
+  "title": "Sample CRM Outputs",
+  "examples": [
+    {
+      "organization": "Northview Academy",
+      "stage": "pilot_active",
+      "pilot_health": "green",
+      "next_action": "Schedule pilot review call in 5 days",
+      "conversion_probability": 0.72
+    },
+    {
+      "organization": "Bright Path Tutoring",
+      "stage": "proposal_sent",
+      "pilot_health": "yellow",
+      "next_action": "Follow up on pricing objection tomorrow",
+      "conversion_probability": 0.48
+    },
+    {
+      "organization": "Maple Homeschool Co-op",
+      "stage": "qualified",
+      "pilot_health": "n/a",
+      "next_action": "Book demo with parent-admin lead",
+      "conversion_probability": 0.31
+    }
+  ]
+}

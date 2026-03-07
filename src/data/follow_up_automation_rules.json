@@ -1,0 +1,25 @@
+{
+  "title": "Follow-Up Automation Rules",
+  "rules": [
+    {
+      "trigger": "lead_not_contacted_7_days",
+      "action": "create follow-up task"
+    },
+    {
+      "trigger": "pilot_week_1_low_usage",
+      "action": "suggest onboarding outreach"
+    },
+    {
+      "trigger": "pilot_end_in_7_days",
+      "action": "schedule review call prompt"
+    },
+    {
+      "trigger": "proposal_sent_no_reply_5_days",
+      "action": "create follow-up reminder"
+    },
+    {
+      "trigger": "renewal_due_in_30_days",
+      "action": "create renewal prep task"
+    }
+  ]
+}

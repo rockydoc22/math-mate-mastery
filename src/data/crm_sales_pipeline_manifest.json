@@ -1,0 +1,12 @@
+{
+  "title": "CRM / Sales Pipeline Pack",
+  "files": [
+    "crm_pipeline_spec.json",
+    "lead_and_contact_schema.json",
+    "pilot_tracking_spec.json",
+    "opportunity_and_proposal_spec.json",
+    "sales_dashboard_ui_spec.json",
+    "follow_up_automation_rules.json",
+    "sample_crm_outputs.json"
+  ]
+}

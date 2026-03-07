@@ -1,0 +1,33 @@
+{
+  "title": "Pilot Tracking Spec",
+  "pilot_fields": [
+    "pilot_id",
+    "org_id",
+    "pilot_start_date",
+    "pilot_end_date",
+    "seat_count",
+    "apps_enabled",
+    "teacher_count",
+    "student_count",
+    "usage_health_status",
+    "weekly_minutes",
+    "completion_rate",
+    "top_used_features",
+    "support_tickets_count",
+    "conversion_probability"
+  ],
+  "health_rules": [
+    {
+      "status": "green",
+      "rule": "weekly activity strong and multiple teachers active"
+    },
+    {
+      "status": "yellow",
+      "rule": "some usage but uneven engagement"
+    },
+    {
+      "status": "red",
+      "rule": "low activity or little teacher adoption"
+    }
+  ]
+}

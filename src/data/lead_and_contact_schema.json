@@ -1,0 +1,26 @@
+{
+  "title": "Lead and Contact Schema",
+  "organization_lead_fields": [
+    "org_id",
+    "organization_name",
+    "organization_type",
+    "size_band",
+    "region",
+    "lead_source",
+    "current_stage",
+    "owner_user_id",
+    "estimated_seat_potential",
+    "notes"
+  ],
+  "contact_fields": [
+    "contact_id",
+    "org_id",
+    "name",
+    "title",
+    "email",
+    "phone_optional",
+    "role_in_decision",
+    "last_contacted_at",
+    "next_follow_up_at"
+  ]
+}
