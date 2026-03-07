@@ -10,7 +10,7 @@ import { Share2, Copy, Check, MessageCircle } from "lucide-react";
 import { toast } from "sonner";
 
 const APP_URL = "https://math-mate-mastery.lovable.app";
-const SHARE_TEXT = "Check out this free SAT prep app with 2000+ questions, AI practice & multiplayer battles!";
+const SHARE_TEXT = "Check out this free test prep app for SAT, PSAT, ACT & AP — 15,000+ questions, AI practice & multiplayer battles!";
 
 export const ShareAppButton = () => {
   const [copied, setCopied] = useState(false);
