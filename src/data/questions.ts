@@ -24,6 +24,7 @@ import { mediumMathQuestions } from './mediumMathQuestions';
 import { mediumMathQuestions2 } from './mediumMathQuestions2';
 import { additionalVisualQuestions as additionalVisualMathQuestions } from './additionalVisualQuestions';
 import { actScienceQuestions } from './actScienceQuestions';
+import { starterMathQuestions } from './starterPackQuestions';
 import { rateDifficulty } from '@/utils/difficultyRating';
 import { fixAllSingleOptionQuestions } from '@/utils/questionOptionsFixer';
 import { convertQuestionsToExact } from '@/utils/exactValueConverter';
