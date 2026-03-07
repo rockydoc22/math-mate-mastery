@@ -1,0 +1,21 @@
+{
+  "title": "Endurance Run Rewards",
+  "reward_rules": [
+    {
+      "trigger": "complete_first_run",
+      "reward": "badge + 10 coins"
+    },
+    {
+      "trigger": "beat_personal_best",
+      "reward": "15 coins"
+    },
+    {
+      "trigger": "streak_10",
+      "reward": "special streak badge"
+    },
+    {
+      "trigger": "top_weekly_run",
+      "reward": "bonus coins + leaderboard badge"
+    }
+  ]
+}

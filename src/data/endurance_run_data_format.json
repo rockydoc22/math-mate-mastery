@@ -1,0 +1,23 @@
+{
+  "title": "Endurance Run Data Format",
+  "run_state_fields": [
+    "run_id",
+    "player_id",
+    "current_score",
+    "current_streak",
+    "health_optional",
+    "difficulty_band",
+    "questions_answered",
+    "accuracy",
+    "best_streak",
+    "best_score"
+  ],
+  "question_wrapper_fields": [
+    "question_id",
+    "source_type",
+    "difficulty",
+    "base_points",
+    "category",
+    "content_payload"
+  ]
+}

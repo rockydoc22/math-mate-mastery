@@ -1,0 +1,23 @@
+{
+  "title": "Endurance Run UI Spec",
+  "views": [
+    "mode_home",
+    "run_screen",
+    "streak_meter",
+    "health_meter_optional",
+    "end_run_summary",
+    "weekly_leaderboard"
+  ],
+  "widgets": [
+    "live_score_counter",
+    "streak_flame",
+    "difficulty_badge",
+    "health_bar",
+    "personal_best_chip"
+  ],
+  "ui_rules": [
+    "Keep the screen minimal during the run.",
+    "Show streak and score clearly at all times.",
+    "Make restart quick after the run ends."
+  ]
+}

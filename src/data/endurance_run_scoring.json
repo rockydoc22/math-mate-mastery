@@ -1,0 +1,31 @@
+{
+  "title": "Endurance Run Scoring",
+  "score_components": [
+    {
+      "component": "correct_answer",
+      "points": 10
+    },
+    {
+      "component": "streak_bonus_3",
+      "points": 5
+    },
+    {
+      "component": "streak_bonus_5",
+      "points": 10
+    },
+    {
+      "component": "hard_question_bonus",
+      "points": 8
+    },
+    {
+      "component": "personal_best_bonus",
+      "points": 15
+    }
+  ],
+  "leaderboard_metrics": [
+    "highest_score",
+    "longest_streak",
+    "highest_difficulty_reached",
+    "fastest_20_correct"
+  ]
+}
