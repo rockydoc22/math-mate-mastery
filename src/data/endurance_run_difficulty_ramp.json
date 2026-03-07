@@ -1,0 +1,28 @@
+{
+  "title": "Difficulty Ramp Rules",
+  "ramp_rules": [
+    {
+      "after_correct_streak": 3,
+      "action": "increase difficulty slightly"
+    },
+    {
+      "after_correct_streak": 6,
+      "action": "increase payout and difficulty"
+    },
+    {
+      "after_correct_streak": 10,
+      "action": "enter challenge band with leaderboard flag"
+    }
+  ],
+  "fail_rules": [
+    {
+      "mode": "strict",
+      "effect": "run ends immediately on one wrong answer"
+    },
+    {
+      "mode": "health_based",
+      "effect": "wrong answers reduce health until the run ends"
+    }
+  ],
+  "recommended_mvp": "health_based"
+}

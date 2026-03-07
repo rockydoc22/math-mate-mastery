@@ -1,0 +1,22 @@
+{
+  "title": "Endurance Run Game Mode",
+  "purpose": "Create an endless escalating quiz mode using existing language, testing, and strategy content.",
+  "target_audience": [
+    "older_kids",
+    "teens",
+    "adults"
+  ],
+  "core_loop": [
+    "answer question",
+    "maintain streak",
+    "difficulty increases",
+    "score climbs",
+    "run ends on miss or health depletion"
+  ],
+  "why_this_mode": [
+    "Very lightweight to build",
+    "High replay value",
+    "Easy to connect to leaderboards and streaks",
+    "Works across language and testing content"
+  ]
+}

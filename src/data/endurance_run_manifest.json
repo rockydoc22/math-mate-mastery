@@ -1,0 +1,11 @@
+{
+  "title": "Endurance Run Game Pack",
+  "files": [
+    "endurance_run_spec.json",
+    "endurance_run_difficulty_ramp.json",
+    "endurance_run_scoring.json",
+    "endurance_run_rewards.json",
+    "endurance_run_ui_spec.json",
+    "endurance_run_data_format.json"
+  ]
+}
