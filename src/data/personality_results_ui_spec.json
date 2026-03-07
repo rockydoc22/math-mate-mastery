@@ -1,0 +1,22 @@
+{
+  "title": "Results UI Spec",
+  "views": [
+    "headline summary",
+    "domain cards",
+    "strengths list",
+    "growth opportunities",
+    "practical tips",
+    "save / retake / compare later"
+  ],
+  "ui_rules": [
+    "Use warm, non-judgmental language.",
+    "Avoid red / green moral framing.",
+    "Show practical suggestions tied to habits, study, and communication."
+  ],
+  "report_length_options": [
+    "short summary",
+    "full report",
+    "parent-facing summary",
+    "teen-friendly summary"
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "title": "Learning Preferences Report Templates",
+  "domains": {
+    "independent_vs_collaborative": {
+      "high": "You may prefer starting alone before group discussion.",
+      "moderate": "You may do well in either solo or collaborative settings depending on the task.",
+      "low": "You may gain energy and clarity by working with others early."
+    },
+    "fast_vs_deep": {
+      "high": "You may enjoy fast reps, frequent wins, and shorter practice cycles.",
+      "moderate": "You may balance quick practice with deeper review.",
+      "low": "You may prefer slower, deeper sessions with time to reflect."
+    },
+    "visual_vs_verbal": {
+      "high": "You may learn more quickly from diagrams, charts, and maps.",
+      "moderate": "You may benefit from both visual and verbal explanations.",
+      "low": "You may prefer text, explanation, and discussion over diagrams."
+    },
+    "structured_vs_flexible": {
+      "high": "You may perform best with clear steps and predictable order.",
+      "moderate": "You may adapt well to both structure and flexibility.",
+      "low": "You may prefer open-ended paths and self-directed pacing."
+    }
+  }
+}

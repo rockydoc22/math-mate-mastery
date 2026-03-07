@@ -1,0 +1,11 @@
+{
+  "title": "Personality + EQ Results Engine Pack",
+  "files": [
+    "personality_results_engine_spec.json",
+    "big_five_style_report_templates.json",
+    "eq_report_templates.json",
+    "learning_preferences_report_templates.json",
+    "personality_results_ui_spec.json",
+    "sample_personality_results_output.json"
+  ]
+}

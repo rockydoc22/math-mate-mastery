@@ -1,0 +1,34 @@
+{
+  "title": "EQ Skills Report Templates",
+  "domains": {
+    "self_awareness": {
+      "high": "You may notice internal emotional shifts early, which helps decision-making.",
+      "moderate": "You may notice emotions after they start affecting behavior.",
+      "low": "You may benefit from naming emotions and triggers more explicitly."
+    },
+    "self_regulation": {
+      "high": "You may pause and respond thoughtfully even under stress.",
+      "moderate": "You may regulate well in some settings but struggle in others.",
+      "low": "You may benefit from pause routines, scripts, and recovery habits."
+    },
+    "empathy": {
+      "high": "You may read emotional signals well and respond supportively.",
+      "moderate": "You may notice some cues clearly but miss others.",
+      "low": "You may benefit from practicing perspective-taking questions."
+    },
+    "social_awareness": {
+      "high": "You may pick up group mood and context effectively.",
+      "moderate": "You may read social situations fairly well with enough time.",
+      "low": "You may benefit from noticing tone, timing, and context more deliberately."
+    },
+    "relationship_management": {
+      "high": "You may handle conflict and communication in a constructive way.",
+      "moderate": "You may manage many situations well but struggle under pressure.",
+      "low": "You may benefit from conflict scripts, listening routines, and repair habits."
+    }
+  },
+  "global_coaching_rules": [
+    "Return 2 strongest EQ domains and 2 suggested growth areas.",
+    "Link suggestions to school, work, family, and teamwork contexts."
+  ]
+}
