@@ -18,6 +18,7 @@ import { passageEnglishQuestions } from './passageEnglishQuestions';
 import { satReadingQuestions } from './satReadingQuestions';
 import { satHardestReadingQuestions } from './satHardestReadingQuestions';
 import satEnglishMidRaw from './sat_english_midrange_200.json';
+import { starterEnglishQuestions } from './starterPackQuestions';
 
 // ─── Convert midrange supplement JSON ───
 interface RawMidEnglish {
