@@ -263,7 +263,7 @@ export const LandingPage = () => {
             <Gamepad2 className="w-6 h-6 text-primary" />
             Learning Arcade
           </h2>
-          <p className="text-muted-foreground mb-6">Master SAT concepts through games</p>
+          <p className="text-muted-foreground mb-6">Master test concepts through games</p>
           <div className="grid grid-cols-3 gap-4 mb-6">
             <Card className="p-4 text-center">
               <span className="text-3xl mb-2 block">🚀</span>
