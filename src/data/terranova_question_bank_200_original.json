@@ -1,0 +1,5402 @@
+[
+  {
+    "id": "terra_001",
+    "exam": "TerraNova",
+    "section": "Math",
+    "difficulty": "easy",
+    "question": "Which number is the greatest?",
+    "options": [
+      {
+        "label": "A",
+        "text": "0.9"
+      },
+      {
+        "label": "B",
+        "text": "0.8"
+      },
+      {
+        "label": "C",
+        "text": "0.75"
+      },
+      {
+        "label": "D",
+        "text": "0.85"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Compare decimals; 0.9 is largest."
+  },
+  {
+    "id": "terra_002",
+    "exam": "TerraNova",
+    "section": "Language",
+    "difficulty": "medium",
+    "question": "Which word is a synonym for 'rapid'?",
+    "options": [
+      {
+        "label": "A",
+        "text": "slow"
+      },
+      {
+        "label": "B",
+        "text": "fast"
+      },
+      {
+        "label": "C",
+        "text": "quiet"
+      },
+      {
+        "label": "D",
+        "text": "dull"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Rapid means fast."
+  },
+  {
+    "id": "terra_003",
+    "exam": "TerraNova",
+    "section": "Language",
+    "difficulty": "hard",
+    "question": "Which sentence is punctuated correctly?",
+    "options": [
+      {
+        "label": "A",
+        "text": "After lunch the class returned, to science."
+      },
+      {
+        "label": "B",
+        "text": "After lunch the class returned to science"
+      },
+      {
+        "label": "C",
+        "text": "After lunch, the class returned to science."
+      },
+      {
+        "label": "D",
+        "text": "After lunch; the class returned to science"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Comma after introductory phrase."
+  },
+  {
+    "id": "terra_004",
+    "exam": "TerraNova",
+    "section": "Science",
+    "difficulty": "easy",
+    "question": "Which planet is closest to the Sun?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Mars"
+      },
+      {
+        "label": "B",
+        "text": "Venus"
+      },
+      {
+        "label": "C",
+        "text": "Earth"
+      },
+      {
+        "label": "D",
+        "text": "Mercury"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Mercury is the closest planet."
+  },
+  {
+    "id": "terra_005",
+    "exam": "TerraNova",
+    "section": "Social Studies",
+    "difficulty": "medium",
+    "question": "Why do communities elect leaders?",
+    "options": [
+      {
+        "label": "A",
+        "text": "To organize decisions and represent citizens"
+      },
+      {
+        "label": "B",
+        "text": "To eliminate disagreements forever"
+      },
+      {
+        "label": "C",
+        "text": "To prevent rules"
+      },
+      {
+        "label": "D",
+        "text": "To stop communication"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Leaders help coordinate decisions."
+  },
+  {
+    "id": "terra_006",
+    "exam": "TerraNova",
+    "section": "Math",
+    "difficulty": "hard",
+    "question": "Which number is the greatest?",
+    "options": [
+      {
+        "label": "A",
+        "text": "0.8"
+      },
+      {
+        "label": "B",
+        "text": "0.9"
+      },
+      {
+        "label": "C",
+        "text": "0.75"
+      },
+      {
+        "label": "D",
+        "text": "0.85"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Compare decimals; 0.9 is largest."
+  },
+  {
+    "id": "terra_007",
+    "exam": "TerraNova",
+    "section": "Language",
+    "difficulty": "easy",
+    "question": "Which word is a synonym for 'rapid'?",
+    "options": [
+      {
+        "label": "A",
+        "text": "slow"
+      },
+      {
+        "label": "B",
+        "text": "quiet"
+      },
+      {
+        "label": "C",
+        "text": "fast"
+      },
+      {
+        "label": "D",
+        "text": "dull"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Rapid means fast."
+  },
+  {
+    "id": "terra_008",
+    "exam": "TerraNova",
+    "section": "Language",
+    "difficulty": "medium",
+    "question": "Which sentence is punctuated correctly?",
+    "options": [
+      {
+        "label": "A",
+        "text": "After lunch the class returned, to science."
+      },
+      {
+        "label": "B",
+        "text": "After lunch the class returned to science"
+      },
+      {
+        "label": "C",
+        "text": "After lunch; the class returned to science"
+      },
+      {
+        "label": "D",
+        "text": "After lunch, the class returned to science."
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Comma after introductory phrase."
+  },
+  {
+    "id": "terra_009",
+    "exam": "TerraNova",
+    "section": "Science",
+    "difficulty": "hard",
+    "question": "Which planet is closest to the Sun?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Mercury"
+      },
+      {
+        "label": "B",
+        "text": "Mars"
+      },
+      {
+        "label": "C",
+        "text": "Venus"
+      },
+      {
+        "label": "D",
+        "text": "Earth"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Mercury is the closest planet."
+  },
+  {
+    "id": "terra_010",
+    "exam": "TerraNova",
+    "section": "Social Studies",
+    "difficulty": "easy",
+    "question": "Why do communities elect leaders?",
+    "options": [
+      {
+        "label": "A",
+        "text": "To eliminate disagreements forever"
+      },
+      {
+        "label": "B",
+        "text": "To organize decisions and represent citizens"
+      },
+      {
+        "label": "C",
+        "text": "To prevent rules"
+      },
+      {
+        "label": "D",
+        "text": "To stop communication"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Leaders help coordinate decisions."
+  },
+  {
+    "id": "terra_011",
+    "exam": "TerraNova",
+    "section": "Math",
+    "difficulty": "medium",
+    "question": "Which number is the greatest?",
+    "options": [
+      {
+        "label": "A",
+        "text": "0.8"
+      },
+      {
+        "label": "B",
+        "text": "0.75"
+      },
+      {
+        "label": "C",
+        "text": "0.9"
+      },
+      {
+        "label": "D",
+        "text": "0.85"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Compare decimals; 0.9 is largest."
+  },
+  {
+    "id": "terra_012",
+    "exam": "TerraNova",
+    "section": "Language",
+    "difficulty": "hard",
+    "question": "Which word is a synonym for 'rapid'?",
+    "options": [
+      {
+        "label": "A",
+        "text": "slow"
+      },
+      {
+        "label": "B",
+        "text": "quiet"
+      },
+      {
+        "label": "C",
+        "text": "dull"
+      },
+      {
+        "label": "D",
+        "text": "fast"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Rapid means fast."
+  },
+  {
+    "id": "terra_013",
+    "exam": "TerraNova",
+    "section": "Language",
+    "difficulty": "easy",
+    "question": "Which sentence is punctuated correctly?",
+    "options": [
+      {
+        "label": "A",
+        "text": "After lunch, the class returned to science."
+      },
+      {
+        "label": "B",
+        "text": "After lunch the class returned, to science."
+      },
+      {
+        "label": "C",
+        "text": "After lunch the class returned to science"
+      },
+      {
+        "label": "D",
+        "text": "After lunch; the class returned to science"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Comma after introductory phrase."
+  },
+  {
+    "id": "terra_014",
+    "exam": "TerraNova",
+    "section": "Science",
+    "difficulty": "medium",
+    "question": "Which planet is closest to the Sun?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Mars"
+      },
+      {
+        "label": "B",
+        "text": "Mercury"
+      },
+      {
+        "label": "C",
+        "text": "Venus"
+      },
+      {
+        "label": "D",
+        "text": "Earth"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Mercury is the closest planet."
+  },
+  {
+    "id": "terra_015",
+    "exam": "TerraNova",
+    "section": "Social Studies",
+    "difficulty": "hard",
+    "question": "Why do communities elect leaders?",
+    "options": [
+      {
+        "label": "A",
+        "text": "To eliminate disagreements forever"
+      },
+      {
+        "label": "B",
+        "text": "To prevent rules"
+      },
+      {
+        "label": "C",
+        "text": "To organize decisions and represent citizens"
+      },
+      {
+        "label": "D",
+        "text": "To stop communication"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Leaders help coordinate decisions."
+  },
+  {
+    "id": "terra_016",
+    "exam": "TerraNova",
+    "section": "Math",
+    "difficulty": "easy",
+    "question": "Which number is the greatest?",
+    "options": [
+      {
+        "label": "A",
+        "text": "0.8"
+      },
+      {
+        "label": "B",
+        "text": "0.75"
+      },
+      {
+        "label": "C",
+        "text": "0.85"
+      },
+      {
+        "label": "D",
+        "text": "0.9"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Compare decimals; 0.9 is largest."
+  },
+  {
+    "id": "terra_017",
+    "exam": "TerraNova",
+    "section": "Language",
+    "difficulty": "medium",
+    "question": "Which word is a synonym for 'rapid'?",
+    "options": [
+      {
+        "label": "A",
+        "text": "fast"
+      },
+      {
+        "label": "B",
+        "text": "slow"
+      },
+      {
+        "label": "C",
+        "text": "quiet"
+      },
+      {
+        "label": "D",
+        "text": "dull"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Rapid means fast."
+  },
+  {
+    "id": "terra_018",
+    "exam": "TerraNova",
+    "section": "Language",
+    "difficulty": "hard",
+    "question": "Which sentence is punctuated correctly?",
+    "options": [
+      {
+        "label": "A",
+        "text": "After lunch the class returned, to science."
+      },
+      {
+        "label": "B",
+        "text": "After lunch, the class returned to science."
+      },
+      {
+        "label": "C",
+        "text": "After lunch the class returned to science"
+      },
+      {
+        "label": "D",
+        "text": "After lunch; the class returned to science"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Comma after introductory phrase."
+  },
+  {
+    "id": "terra_019",
+    "exam": "TerraNova",
+    "section": "Science",
+    "difficulty": "easy",
+    "question": "Which planet is closest to the Sun?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Mars"
+      },
+      {
+        "label": "B",
+        "text": "Venus"
+      },
+      {
+        "label": "C",
+        "text": "Mercury"
+      },
+      {
+        "label": "D",
+        "text": "Earth"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Mercury is the closest planet."
+  },
+  {
+    "id": "terra_020",
+    "exam": "TerraNova",
+    "section": "Social Studies",
+    "difficulty": "medium",
+    "question": "Why do communities elect leaders?",
+    "options": [
+      {
+        "label": "A",
+        "text": "To eliminate disagreements forever"
+      },
+      {
+        "label": "B",
+        "text": "To prevent rules"
+      },
+      {
+        "label": "C",
+        "text": "To stop communication"
+      },
+      {
+        "label": "D",
+        "text": "To organize decisions and represent citizens"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Leaders help coordinate decisions."
+  },
+  {
+    "id": "terra_021",
+    "exam": "TerraNova",
+    "section": "Math",
+    "difficulty": "hard",
+    "question": "Which number is the greatest?",
+    "options": [
+      {
+        "label": "A",
+        "text": "0.9"
+      },
+      {
+        "label": "B",
+        "text": "0.8"
+      },
+      {
+        "label": "C",
+        "text": "0.75"
+      },
+      {
+        "label": "D",
+        "text": "0.85"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Compare decimals; 0.9 is largest."
+  },
+  {
+    "id": "terra_022",
+    "exam": "TerraNova",
+    "section": "Language",
+    "difficulty": "easy",
+    "question": "Which word is a synonym for 'rapid'?",
+    "options": [
+      {
+        "label": "A",
+        "text": "slow"
+      },
+      {
+        "label": "B",
+        "text": "fast"
+      },
+      {
+        "label": "C",
+        "text": "quiet"
+      },
+      {
+        "label": "D",
+        "text": "dull"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Rapid means fast."
+  },
+  {
+    "id": "terra_023",
+    "exam": "TerraNova",
+    "section": "Language",
+    "difficulty": "medium",
+    "question": "Which sentence is punctuated correctly?",
+    "options": [
+      {
+        "label": "A",
+        "text": "After lunch the class returned, to science."
+      },
+      {
+        "label": "B",
+        "text": "After lunch the class returned to science"
+      },
+      {
+        "label": "C",
+        "text": "After lunch, the class returned to science."
+      },
+      {
+        "label": "D",
+        "text": "After lunch; the class returned to science"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Comma after introductory phrase."
+  },
+  {
+    "id": "terra_024",
+    "exam": "TerraNova",
+    "section": "Science",
+    "difficulty": "hard",
+    "question": "Which planet is closest to the Sun?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Mars"
+      },
+      {
+        "label": "B",
+        "text": "Venus"
+      },
+      {
+        "label": "C",
+        "text": "Earth"
+      },
+      {
+        "label": "D",
+        "text": "Mercury"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Mercury is the closest planet."
+  },
+  {
+    "id": "terra_025",
+    "exam": "TerraNova",
+    "section": "Social Studies",
+    "difficulty": "easy",
+    "question": "Why do communities elect leaders?",
+    "options": [
+      {
+        "label": "A",
+        "text": "To organize decisions and represent citizens"
+      },
+      {
+        "label": "B",
+        "text": "To eliminate disagreements forever"
+      },
+      {
+        "label": "C",
+        "text": "To prevent rules"
+      },
+      {
+        "label": "D",
+        "text": "To stop communication"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Leaders help coordinate decisions."
+  },
+  {
+    "id": "terra_026",
+    "exam": "TerraNova",
+    "section": "Math",
+    "difficulty": "medium",
+    "question": "Which number is the greatest?",
+    "options": [
+      {
+        "label": "A",
+        "text": "0.8"
+      },
+      {
+        "label": "B",
+        "text": "0.9"
+      },
+      {
+        "label": "C",
+        "text": "0.75"
+      },
+      {
+        "label": "D",
+        "text": "0.85"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Compare decimals; 0.9 is largest."
+  },
+  {
+    "id": "terra_027",
+    "exam": "TerraNova",
+    "section": "Language",
+    "difficulty": "hard",
+    "question": "Which word is a synonym for 'rapid'?",
+    "options": [
+      {
+        "label": "A",
+        "text": "slow"
+      },
+      {
+        "label": "B",
+        "text": "quiet"
+      },
+      {
+        "label": "C",
+        "text": "fast"
+      },
+      {
+        "label": "D",
+        "text": "dull"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Rapid means fast."
+  },
+  {
+    "id": "terra_028",
+    "exam": "TerraNova",
+    "section": "Language",
+    "difficulty": "easy",
+    "question": "Which sentence is punctuated correctly?",
+    "options": [
+      {
+        "label": "A",
+        "text": "After lunch the class returned, to science."
+      },
+      {
+        "label": "B",
+        "text": "After lunch the class returned to science"
+      },
+      {
+        "label": "C",
+        "text": "After lunch; the class returned to science"
+      },
+      {
+        "label": "D",
+        "text": "After lunch, the class returned to science."
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Comma after introductory phrase."
+  },
+  {
+    "id": "terra_029",
+    "exam": "TerraNova",
+    "section": "Science",
+    "difficulty": "medium",
+    "question": "Which planet is closest to the Sun?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Mercury"
+      },
+      {
+        "label": "B",
+        "text": "Mars"
+      },
+      {
+        "label": "C",
+        "text": "Venus"
+      },
+      {
+        "label": "D",
+        "text": "Earth"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Mercury is the closest planet."
+  },
+  {
+    "id": "terra_030",
+    "exam": "TerraNova",
+    "section": "Social Studies",
+    "difficulty": "hard",
+    "question": "Why do communities elect leaders?",
+    "options": [
+      {
+        "label": "A",
+        "text": "To eliminate disagreements forever"
+      },
+      {
+        "label": "B",
+        "text": "To organize decisions and represent citizens"
+      },
+      {
+        "label": "C",
+        "text": "To prevent rules"
+      },
+      {
+        "label": "D",
+        "text": "To stop communication"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Leaders help coordinate decisions."
+  },
+  {
+    "id": "terra_031",
+    "exam": "TerraNova",
+    "section": "Math",
+    "difficulty": "easy",
+    "question": "Which number is the greatest?",
+    "options": [
+      {
+        "label": "A",
+        "text": "0.8"
+      },
+      {
+        "label": "B",
+        "text": "0.75"
+      },
+      {
+        "label": "C",
+        "text": "0.9"
+      },
+      {
+        "label": "D",
+        "text": "0.85"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Compare decimals; 0.9 is largest."
+  },
+  {
+    "id": "terra_032",
+    "exam": "TerraNova",
+    "section": "Language",
+    "difficulty": "medium",
+    "question": "Which word is a synonym for 'rapid'?",
+    "options": [
+      {
+        "label": "A",
+        "text": "slow"
+      },
+      {
+        "label": "B",
+        "text": "quiet"
+      },
+      {
+        "label": "C",
+        "text": "dull"
+      },
+      {
+        "label": "D",
+        "text": "fast"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Rapid means fast."
+  },
+  {
+    "id": "terra_033",
+    "exam": "TerraNova",
+    "section": "Language",
+    "difficulty": "hard",
+    "question": "Which sentence is punctuated correctly?",
+    "options": [
+      {
+        "label": "A",
+        "text": "After lunch, the class returned to science."
+      },
+      {
+        "label": "B",
+        "text": "After lunch the class returned, to science."
+      },
+      {
+        "label": "C",
+        "text": "After lunch the class returned to science"
+      },
+      {
+        "label": "D",
+        "text": "After lunch; the class returned to science"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Comma after introductory phrase."
+  },
+  {
+    "id": "terra_034",
+    "exam": "TerraNova",
+    "section": "Science",
+    "difficulty": "easy",
+    "question": "Which planet is closest to the Sun?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Mars"
+      },
+      {
+        "label": "B",
+        "text": "Mercury"
+      },
+      {
+        "label": "C",
+        "text": "Venus"
+      },
+      {
+        "label": "D",
+        "text": "Earth"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Mercury is the closest planet."
+  },
+  {
+    "id": "terra_035",
+    "exam": "TerraNova",
+    "section": "Social Studies",
+    "difficulty": "medium",
+    "question": "Why do communities elect leaders?",
+    "options": [
+      {
+        "label": "A",
+        "text": "To eliminate disagreements forever"
+      },
+      {
+        "label": "B",
+        "text": "To prevent rules"
+      },
+      {
+        "label": "C",
+        "text": "To organize decisions and represent citizens"
+      },
+      {
+        "label": "D",
+        "text": "To stop communication"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Leaders help coordinate decisions."
+  },
+  {
+    "id": "terra_036",
+    "exam": "TerraNova",
+    "section": "Math",
+    "difficulty": "hard",
+    "question": "Which number is the greatest?",
+    "options": [
+      {
+        "label": "A",
+        "text": "0.8"
+      },
+      {
+        "label": "B",
+        "text": "0.75"
+      },
+      {
+        "label": "C",
+        "text": "0.85"
+      },
+      {
+        "label": "D",
+        "text": "0.9"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Compare decimals; 0.9 is largest."
+  },
+  {
+    "id": "terra_037",
+    "exam": "TerraNova",
+    "section": "Language",
+    "difficulty": "easy",
+    "question": "Which word is a synonym for 'rapid'?",
+    "options": [
+      {
+        "label": "A",
+        "text": "fast"
+      },
+      {
+        "label": "B",
+        "text": "slow"
+      },
+      {
+        "label": "C",
+        "text": "quiet"
+      },
+      {
+        "label": "D",
+        "text": "dull"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Rapid means fast."
+  },
+  {
+    "id": "terra_038",
+    "exam": "TerraNova",
+    "section": "Language",
+    "difficulty": "medium",
+    "question": "Which sentence is punctuated correctly?",
+    "options": [
+      {
+        "label": "A",
+        "text": "After lunch the class returned, to science."
+      },
+      {
+        "label": "B",
+        "text": "After lunch, the class returned to science."
+      },
+      {
+        "label": "C",
+        "text": "After lunch the class returned to science"
+      },
+      {
+        "label": "D",
+        "text": "After lunch; the class returned to science"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Comma after introductory phrase."
+  },
+  {
+    "id": "terra_039",
+    "exam": "TerraNova",
+    "section": "Science",
+    "difficulty": "hard",
+    "question": "Which planet is closest to the Sun?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Mars"
+      },
+      {
+        "label": "B",
+        "text": "Venus"
+      },
+      {
+        "label": "C",
+        "text": "Mercury"
+      },
+      {
+        "label": "D",
+        "text": "Earth"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Mercury is the closest planet."
+  },
+  {
+    "id": "terra_040",
+    "exam": "TerraNova",
+    "section": "Social Studies",
+    "difficulty": "easy",
+    "question": "Why do communities elect leaders?",
+    "options": [
+      {
+        "label": "A",
+        "text": "To eliminate disagreements forever"
+      },
+      {
+        "label": "B",
+        "text": "To prevent rules"
+      },
+      {
+        "label": "C",
+        "text": "To stop communication"
+      },
+      {
+        "label": "D",
+        "text": "To organize decisions and represent citizens"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Leaders help coordinate decisions."
+  },
+  {
+    "id": "terra_041",
+    "exam": "TerraNova",
+    "section": "Math",
+    "difficulty": "medium",
+    "question": "Which number is the greatest?",
+    "options": [
+      {
+        "label": "A",
+        "text": "0.9"
+      },
+      {
+        "label": "B",
+        "text": "0.8"
+      },
+      {
+        "label": "C",
+        "text": "0.75"
+      },
+      {
+        "label": "D",
+        "text": "0.85"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Compare decimals; 0.9 is largest."
+  },
+  {
+    "id": "terra_042",
+    "exam": "TerraNova",
+    "section": "Language",
+    "difficulty": "hard",
+    "question": "Which word is a synonym for 'rapid'?",
+    "options": [
+      {
+        "label": "A",
+        "text": "slow"
+      },
+      {
+        "label": "B",
+        "text": "fast"
+      },
+      {
+        "label": "C",
+        "text": "quiet"
+      },
+      {
+        "label": "D",
+        "text": "dull"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Rapid means fast."
+  },
+  {
+    "id": "terra_043",
+    "exam": "TerraNova",
+    "section": "Language",
+    "difficulty": "easy",
+    "question": "Which sentence is punctuated correctly?",
+    "options": [
+      {
+        "label": "A",
+        "text": "After lunch the class returned, to science."
+      },
+      {
+        "label": "B",
+        "text": "After lunch the class returned to science"
+      },
+      {
+        "label": "C",
+        "text": "After lunch, the class returned to science."
+      },
+      {
+        "label": "D",
+        "text": "After lunch; the class returned to science"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Comma after introductory phrase."
+  },
+  {
+    "id": "terra_044",
+    "exam": "TerraNova",
+    "section": "Science",
+    "difficulty": "medium",
+    "question": "Which planet is closest to the Sun?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Mars"
+      },
+      {
+        "label": "B",
+        "text": "Venus"
+      },
+      {
+        "label": "C",
+        "text": "Earth"
+      },
+      {
+        "label": "D",
+        "text": "Mercury"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Mercury is the closest planet."
+  },
+  {
+    "id": "terra_045",
+    "exam": "TerraNova",
+    "section": "Social Studies",
+    "difficulty": "hard",
+    "question": "Why do communities elect leaders?",
+    "options": [
+      {
+        "label": "A",
+        "text": "To organize decisions and represent citizens"
+      },
+      {
+        "label": "B",
+        "text": "To eliminate disagreements forever"
+      },
+      {
+        "label": "C",
+        "text": "To prevent rules"
+      },
+      {
+        "label": "D",
+        "text": "To stop communication"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Leaders help coordinate decisions."
+  },
+  {
+    "id": "terra_046",
+    "exam": "TerraNova",
+    "section": "Math",
+    "difficulty": "easy",
+    "question": "Which number is the greatest?",
+    "options": [
+      {
+        "label": "A",
+        "text": "0.8"
+      },
+      {
+        "label": "B",
+        "text": "0.9"
+      },
+      {
+        "label": "C",
+        "text": "0.75"
+      },
+      {
+        "label": "D",
+        "text": "0.85"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Compare decimals; 0.9 is largest."
+  },
+  {
+    "id": "terra_047",
+    "exam": "TerraNova",
+    "section": "Language",
+    "difficulty": "medium",
+    "question": "Which word is a synonym for 'rapid'?",
+    "options": [
+      {
+        "label": "A",
+        "text": "slow"
+      },
+      {
+        "label": "B",
+        "text": "quiet"
+      },
+      {
+        "label": "C",
+        "text": "fast"
+      },
+      {
+        "label": "D",
+        "text": "dull"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Rapid means fast."
+  },
+  {
+    "id": "terra_048",
+    "exam": "TerraNova",
+    "section": "Language",
+    "difficulty": "hard",
+    "question": "Which sentence is punctuated correctly?",
+    "options": [
+      {
+        "label": "A",
+        "text": "After lunch the class returned, to science."
+      },
+      {
+        "label": "B",
+        "text": "After lunch the class returned to science"
+      },
+      {
+        "label": "C",
+        "text": "After lunch; the class returned to science"
+      },
+      {
+        "label": "D",
+        "text": "After lunch, the class returned to science."
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Comma after introductory phrase."
+  },
+  {
+    "id": "terra_049",
+    "exam": "TerraNova",
+    "section": "Science",
+    "difficulty": "easy",
+    "question": "Which planet is closest to the Sun?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Mercury"
+      },
+      {
+        "label": "B",
+        "text": "Mars"
+      },
+      {
+        "label": "C",
+        "text": "Venus"
+      },
+      {
+        "label": "D",
+        "text": "Earth"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Mercury is the closest planet."
+  },
+  {
+    "id": "terra_050",
+    "exam": "TerraNova",
+    "section": "Social Studies",
+    "difficulty": "medium",
+    "question": "Why do communities elect leaders?",
+    "options": [
+      {
+        "label": "A",
+        "text": "To eliminate disagreements forever"
+      },
+      {
+        "label": "B",
+        "text": "To organize decisions and represent citizens"
+      },
+      {
+        "label": "C",
+        "text": "To prevent rules"
+      },
+      {
+        "label": "D",
+        "text": "To stop communication"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Leaders help coordinate decisions."
+  },
+  {
+    "id": "terra_051",
+    "exam": "TerraNova",
+    "section": "Math",
+    "difficulty": "hard",
+    "question": "Which number is the greatest?",
+    "options": [
+      {
+        "label": "A",
+        "text": "0.8"
+      },
+      {
+        "label": "B",
+        "text": "0.75"
+      },
+      {
+        "label": "C",
+        "text": "0.9"
+      },
+      {
+        "label": "D",
+        "text": "0.85"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Compare decimals; 0.9 is largest."
+  },
+  {
+    "id": "terra_052",
+    "exam": "TerraNova",
+    "section": "Language",
+    "difficulty": "easy",
+    "question": "Which word is a synonym for 'rapid'?",
+    "options": [
+      {
+        "label": "A",
+        "text": "slow"
+      },
+      {
+        "label": "B",
+        "text": "quiet"
+      },
+      {
+        "label": "C",
+        "text": "dull"
+      },
+      {
+        "label": "D",
+        "text": "fast"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Rapid means fast."
+  },
+  {
+    "id": "terra_053",
+    "exam": "TerraNova",
+    "section": "Language",
+    "difficulty": "medium",
+    "question": "Which sentence is punctuated correctly?",
+    "options": [
+      {
+        "label": "A",
+        "text": "After lunch, the class returned to science."
+      },
+      {
+        "label": "B",
+        "text": "After lunch the class returned, to science."
+      },
+      {
+        "label": "C",
+        "text": "After lunch the class returned to science"
+      },
+      {
+        "label": "D",
+        "text": "After lunch; the class returned to science"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Comma after introductory phrase."
+  },
+  {
+    "id": "terra_054",
+    "exam": "TerraNova",
+    "section": "Science",
+    "difficulty": "hard",
+    "question": "Which planet is closest to the Sun?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Mars"
+      },
+      {
+        "label": "B",
+        "text": "Mercury"
+      },
+      {
+        "label": "C",
+        "text": "Venus"
+      },
+      {
+        "label": "D",
+        "text": "Earth"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Mercury is the closest planet."
+  },
+  {
+    "id": "terra_055",
+    "exam": "TerraNova",
+    "section": "Social Studies",
+    "difficulty": "easy",
+    "question": "Why do communities elect leaders?",
+    "options": [
+      {
+        "label": "A",
+        "text": "To eliminate disagreements forever"
+      },
+      {
+        "label": "B",
+        "text": "To prevent rules"
+      },
+      {
+        "label": "C",
+        "text": "To organize decisions and represent citizens"
+      },
+      {
+        "label": "D",
+        "text": "To stop communication"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Leaders help coordinate decisions."
+  },
+  {
+    "id": "terra_056",
+    "exam": "TerraNova",
+    "section": "Math",
+    "difficulty": "medium",
+    "question": "Which number is the greatest?",
+    "options": [
+      {
+        "label": "A",
+        "text": "0.8"
+      },
+      {
+        "label": "B",
+        "text": "0.75"
+      },
+      {
+        "label": "C",
+        "text": "0.85"
+      },
+      {
+        "label": "D",
+        "text": "0.9"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Compare decimals; 0.9 is largest."
+  },
+  {
+    "id": "terra_057",
+    "exam": "TerraNova",
+    "section": "Language",
+    "difficulty": "hard",
+    "question": "Which word is a synonym for 'rapid'?",
+    "options": [
+      {
+        "label": "A",
+        "text": "fast"
+      },
+      {
+        "label": "B",
+        "text": "slow"
+      },
+      {
+        "label": "C",
+        "text": "quiet"
+      },
+      {
+        "label": "D",
+        "text": "dull"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Rapid means fast."
+  },
+  {
+    "id": "terra_058",
+    "exam": "TerraNova",
+    "section": "Language",
+    "difficulty": "easy",
+    "question": "Which sentence is punctuated correctly?",
+    "options": [
+      {
+        "label": "A",
+        "text": "After lunch the class returned, to science."
+      },
+      {
+        "label": "B",
+        "text": "After lunch, the class returned to science."
+      },
+      {
+        "label": "C",
+        "text": "After lunch the class returned to science"
+      },
+      {
+        "label": "D",
+        "text": "After lunch; the class returned to science"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Comma after introductory phrase."
+  },
+  {
+    "id": "terra_059",
+    "exam": "TerraNova",
+    "section": "Science",
+    "difficulty": "medium",
+    "question": "Which planet is closest to the Sun?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Mars"
+      },
+      {
+        "label": "B",
+        "text": "Venus"
+      },
+      {
+        "label": "C",
+        "text": "Mercury"
+      },
+      {
+        "label": "D",
+        "text": "Earth"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Mercury is the closest planet."
+  },
+  {
+    "id": "terra_060",
+    "exam": "TerraNova",
+    "section": "Social Studies",
+    "difficulty": "hard",
+    "question": "Why do communities elect leaders?",
+    "options": [
+      {
+        "label": "A",
+        "text": "To eliminate disagreements forever"
+      },
+      {
+        "label": "B",
+        "text": "To prevent rules"
+      },
+      {
+        "label": "C",
+        "text": "To stop communication"
+      },
+      {
+        "label": "D",
+        "text": "To organize decisions and represent citizens"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Leaders help coordinate decisions."
+  },
+  {
+    "id": "terra_061",
+    "exam": "TerraNova",
+    "section": "Math",
+    "difficulty": "easy",
+    "question": "Which number is the greatest?",
+    "options": [
+      {
+        "label": "A",
+        "text": "0.9"
+      },
+      {
+        "label": "B",
+        "text": "0.8"
+      },
+      {
+        "label": "C",
+        "text": "0.75"
+      },
+      {
+        "label": "D",
+        "text": "0.85"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Compare decimals; 0.9 is largest."
+  },
+  {
+    "id": "terra_062",
+    "exam": "TerraNova",
+    "section": "Language",
+    "difficulty": "medium",
+    "question": "Which word is a synonym for 'rapid'?",
+    "options": [
+      {
+        "label": "A",
+        "text": "slow"
+      },
+      {
+        "label": "B",
+        "text": "fast"
+      },
+      {
+        "label": "C",
+        "text": "quiet"
+      },
+      {
+        "label": "D",
+        "text": "dull"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Rapid means fast."
+  },
+  {
+    "id": "terra_063",
+    "exam": "TerraNova",
+    "section": "Language",
+    "difficulty": "hard",
+    "question": "Which sentence is punctuated correctly?",
+    "options": [
+      {
+        "label": "A",
+        "text": "After lunch the class returned, to science."
+      },
+      {
+        "label": "B",
+        "text": "After lunch the class returned to science"
+      },
+      {
+        "label": "C",
+        "text": "After lunch, the class returned to science."
+      },
+      {
+        "label": "D",
+        "text": "After lunch; the class returned to science"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Comma after introductory phrase."
+  },
+  {
+    "id": "terra_064",
+    "exam": "TerraNova",
+    "section": "Science",
+    "difficulty": "easy",
+    "question": "Which planet is closest to the Sun?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Mars"
+      },
+      {
+        "label": "B",
+        "text": "Venus"
+      },
+      {
+        "label": "C",
+        "text": "Earth"
+      },
+      {
+        "label": "D",
+        "text": "Mercury"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Mercury is the closest planet."
+  },
+  {
+    "id": "terra_065",
+    "exam": "TerraNova",
+    "section": "Social Studies",
+    "difficulty": "medium",
+    "question": "Why do communities elect leaders?",
+    "options": [
+      {
+        "label": "A",
+        "text": "To organize decisions and represent citizens"
+      },
+      {
+        "label": "B",
+        "text": "To eliminate disagreements forever"
+      },
+      {
+        "label": "C",
+        "text": "To prevent rules"
+      },
+      {
+        "label": "D",
+        "text": "To stop communication"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Leaders help coordinate decisions."
+  },
+  {
+    "id": "terra_066",
+    "exam": "TerraNova",
+    "section": "Math",
+    "difficulty": "hard",
+    "question": "Which number is the greatest?",
+    "options": [
+      {
+        "label": "A",
+        "text": "0.8"
+      },
+      {
+        "label": "B",
+        "text": "0.9"
+      },
+      {
+        "label": "C",
+        "text": "0.75"
+      },
+      {
+        "label": "D",
+        "text": "0.85"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Compare decimals; 0.9 is largest."
+  },
+  {
+    "id": "terra_067",
+    "exam": "TerraNova",
+    "section": "Language",
+    "difficulty": "easy",
+    "question": "Which word is a synonym for 'rapid'?",
+    "options": [
+      {
+        "label": "A",
+        "text": "slow"
+      },
+      {
+        "label": "B",
+        "text": "quiet"
+      },
+      {
+        "label": "C",
+        "text": "fast"
+      },
+      {
+        "label": "D",
+        "text": "dull"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Rapid means fast."
+  },
+  {
+    "id": "terra_068",
+    "exam": "TerraNova",
+    "section": "Language",
+    "difficulty": "medium",
+    "question": "Which sentence is punctuated correctly?",
+    "options": [
+      {
+        "label": "A",
+        "text": "After lunch the class returned, to science."
+      },
+      {
+        "label": "B",
+        "text": "After lunch the class returned to science"
+      },
+      {
+        "label": "C",
+        "text": "After lunch; the class returned to science"
+      },
+      {
+        "label": "D",
+        "text": "After lunch, the class returned to science."
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Comma after introductory phrase."
+  },
+  {
+    "id": "terra_069",
+    "exam": "TerraNova",
+    "section": "Science",
+    "difficulty": "hard",
+    "question": "Which planet is closest to the Sun?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Mercury"
+      },
+      {
+        "label": "B",
+        "text": "Mars"
+      },
+      {
+        "label": "C",
+        "text": "Venus"
+      },
+      {
+        "label": "D",
+        "text": "Earth"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Mercury is the closest planet."
+  },
+  {
+    "id": "terra_070",
+    "exam": "TerraNova",
+    "section": "Social Studies",
+    "difficulty": "easy",
+    "question": "Why do communities elect leaders?",
+    "options": [
+      {
+        "label": "A",
+        "text": "To eliminate disagreements forever"
+      },
+      {
+        "label": "B",
+        "text": "To organize decisions and represent citizens"
+      },
+      {
+        "label": "C",
+        "text": "To prevent rules"
+      },
+      {
+        "label": "D",
+        "text": "To stop communication"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Leaders help coordinate decisions."
+  },
+  {
+    "id": "terra_071",
+    "exam": "TerraNova",
+    "section": "Math",
+    "difficulty": "medium",
+    "question": "Which number is the greatest?",
+    "options": [
+      {
+        "label": "A",
+        "text": "0.8"
+      },
+      {
+        "label": "B",
+        "text": "0.75"
+      },
+      {
+        "label": "C",
+        "text": "0.9"
+      },
+      {
+        "label": "D",
+        "text": "0.85"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Compare decimals; 0.9 is largest."
+  },
+  {
+    "id": "terra_072",
+    "exam": "TerraNova",
+    "section": "Language",
+    "difficulty": "hard",
+    "question": "Which word is a synonym for 'rapid'?",
+    "options": [
+      {
+        "label": "A",
+        "text": "slow"
+      },
+      {
+        "label": "B",
+        "text": "quiet"
+      },
+      {
+        "label": "C",
+        "text": "dull"
+      },
+      {
+        "label": "D",
+        "text": "fast"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Rapid means fast."
+  },
+  {
+    "id": "terra_073",
+    "exam": "TerraNova",
+    "section": "Language",
+    "difficulty": "easy",
+    "question": "Which sentence is punctuated correctly?",
+    "options": [
+      {
+        "label": "A",
+        "text": "After lunch, the class returned to science."
+      },
+      {
+        "label": "B",
+        "text": "After lunch the class returned, to science."
+      },
+      {
+        "label": "C",
+        "text": "After lunch the class returned to science"
+      },
+      {
+        "label": "D",
+        "text": "After lunch; the class returned to science"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Comma after introductory phrase."
+  },
+  {
+    "id": "terra_074",
+    "exam": "TerraNova",
+    "section": "Science",
+    "difficulty": "medium",
+    "question": "Which planet is closest to the Sun?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Mars"
+      },
+      {
+        "label": "B",
+        "text": "Mercury"
+      },
+      {
+        "label": "C",
+        "text": "Venus"
+      },
+      {
+        "label": "D",
+        "text": "Earth"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Mercury is the closest planet."
+  },
+  {
+    "id": "terra_075",
+    "exam": "TerraNova",
+    "section": "Social Studies",
+    "difficulty": "hard",
+    "question": "Why do communities elect leaders?",
+    "options": [
+      {
+        "label": "A",
+        "text": "To eliminate disagreements forever"
+      },
+      {
+        "label": "B",
+        "text": "To prevent rules"
+      },
+      {
+        "label": "C",
+        "text": "To organize decisions and represent citizens"
+      },
+      {
+        "label": "D",
+        "text": "To stop communication"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Leaders help coordinate decisions."
+  },
+  {
+    "id": "terra_076",
+    "exam": "TerraNova",
+    "section": "Math",
+    "difficulty": "easy",
+    "question": "Which number is the greatest?",
+    "options": [
+      {
+        "label": "A",
+        "text": "0.8"
+      },
+      {
+        "label": "B",
+        "text": "0.75"
+      },
+      {
+        "label": "C",
+        "text": "0.85"
+      },
+      {
+        "label": "D",
+        "text": "0.9"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Compare decimals; 0.9 is largest."
+  },
+  {
+    "id": "terra_077",
+    "exam": "TerraNova",
+    "section": "Language",
+    "difficulty": "medium",
+    "question": "Which word is a synonym for 'rapid'?",
+    "options": [
+      {
+        "label": "A",
+        "text": "fast"
+      },
+      {
+        "label": "B",
+        "text": "slow"
+      },
+      {
+        "label": "C",
+        "text": "quiet"
+      },
+      {
+        "label": "D",
+        "text": "dull"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Rapid means fast."
+  },
+  {
+    "id": "terra_078",
+    "exam": "TerraNova",
+    "section": "Language",
+    "difficulty": "hard",
+    "question": "Which sentence is punctuated correctly?",
+    "options": [
+      {
+        "label": "A",
+        "text": "After lunch the class returned, to science."
+      },
+      {
+        "label": "B",
+        "text": "After lunch, the class returned to science."
+      },
+      {
+        "label": "C",
+        "text": "After lunch the class returned to science"
+      },
+      {
+        "label": "D",
+        "text": "After lunch; the class returned to science"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Comma after introductory phrase."
+  },
+  {
+    "id": "terra_079",
+    "exam": "TerraNova",
+    "section": "Science",
+    "difficulty": "easy",
+    "question": "Which planet is closest to the Sun?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Mars"
+      },
+      {
+        "label": "B",
+        "text": "Venus"
+      },
+      {
+        "label": "C",
+        "text": "Mercury"
+      },
+      {
+        "label": "D",
+        "text": "Earth"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Mercury is the closest planet."
+  },
+  {
+    "id": "terra_080",
+    "exam": "TerraNova",
+    "section": "Social Studies",
+    "difficulty": "medium",
+    "question": "Why do communities elect leaders?",
+    "options": [
+      {
+        "label": "A",
+        "text": "To eliminate disagreements forever"
+      },
+      {
+        "label": "B",
+        "text": "To prevent rules"
+      },
+      {
+        "label": "C",
+        "text": "To stop communication"
+      },
+      {
+        "label": "D",
+        "text": "To organize decisions and represent citizens"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Leaders help coordinate decisions."
+  },
+  {
+    "id": "terra_081",
+    "exam": "TerraNova",
+    "section": "Math",
+    "difficulty": "hard",
+    "question": "Which number is the greatest?",
+    "options": [
+      {
+        "label": "A",
+        "text": "0.9"
+      },
+      {
+        "label": "B",
+        "text": "0.8"
+      },
+      {
+        "label": "C",
+        "text": "0.75"
+      },
+      {
+        "label": "D",
+        "text": "0.85"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Compare decimals; 0.9 is largest."
+  },
+  {
+    "id": "terra_082",
+    "exam": "TerraNova",
+    "section": "Language",
+    "difficulty": "easy",
+    "question": "Which word is a synonym for 'rapid'?",
+    "options": [
+      {
+        "label": "A",
+        "text": "slow"
+      },
+      {
+        "label": "B",
+        "text": "fast"
+      },
+      {
+        "label": "C",
+        "text": "quiet"
+      },
+      {
+        "label": "D",
+        "text": "dull"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Rapid means fast."
+  },
+  {
+    "id": "terra_083",
+    "exam": "TerraNova",
+    "section": "Language",
+    "difficulty": "medium",
+    "question": "Which sentence is punctuated correctly?",
+    "options": [
+      {
+        "label": "A",
+        "text": "After lunch the class returned, to science."
+      },
+      {
+        "label": "B",
+        "text": "After lunch the class returned to science"
+      },
+      {
+        "label": "C",
+        "text": "After lunch, the class returned to science."
+      },
+      {
+        "label": "D",
+        "text": "After lunch; the class returned to science"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Comma after introductory phrase."
+  },
+  {
+    "id": "terra_084",
+    "exam": "TerraNova",
+    "section": "Science",
+    "difficulty": "hard",
+    "question": "Which planet is closest to the Sun?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Mars"
+      },
+      {
+        "label": "B",
+        "text": "Venus"
+      },
+      {
+        "label": "C",
+        "text": "Earth"
+      },
+      {
+        "label": "D",
+        "text": "Mercury"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Mercury is the closest planet."
+  },
+  {
+    "id": "terra_085",
+    "exam": "TerraNova",
+    "section": "Social Studies",
+    "difficulty": "easy",
+    "question": "Why do communities elect leaders?",
+    "options": [
+      {
+        "label": "A",
+        "text": "To organize decisions and represent citizens"
+      },
+      {
+        "label": "B",
+        "text": "To eliminate disagreements forever"
+      },
+      {
+        "label": "C",
+        "text": "To prevent rules"
+      },
+      {
+        "label": "D",
+        "text": "To stop communication"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Leaders help coordinate decisions."
+  },
+  {
+    "id": "terra_086",
+    "exam": "TerraNova",
+    "section": "Math",
+    "difficulty": "medium",
+    "question": "Which number is the greatest?",
+    "options": [
+      {
+        "label": "A",
+        "text": "0.8"
+      },
+      {
+        "label": "B",
+        "text": "0.9"
+      },
+      {
+        "label": "C",
+        "text": "0.75"
+      },
+      {
+        "label": "D",
+        "text": "0.85"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Compare decimals; 0.9 is largest."
+  },
+  {
+    "id": "terra_087",
+    "exam": "TerraNova",
+    "section": "Language",
+    "difficulty": "hard",
+    "question": "Which word is a synonym for 'rapid'?",
+    "options": [
+      {
+        "label": "A",
+        "text": "slow"
+      },
+      {
+        "label": "B",
+        "text": "quiet"
+      },
+      {
+        "label": "C",
+        "text": "fast"
+      },
+      {
+        "label": "D",
+        "text": "dull"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Rapid means fast."
+  },
+  {
+    "id": "terra_088",
+    "exam": "TerraNova",
+    "section": "Language",
+    "difficulty": "easy",
+    "question": "Which sentence is punctuated correctly?",
+    "options": [
+      {
+        "label": "A",
+        "text": "After lunch the class returned, to science."
+      },
+      {
+        "label": "B",
+        "text": "After lunch the class returned to science"
+      },
+      {
+        "label": "C",
+        "text": "After lunch; the class returned to science"
+      },
+      {
+        "label": "D",
+        "text": "After lunch, the class returned to science."
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Comma after introductory phrase."
+  },
+  {
+    "id": "terra_089",
+    "exam": "TerraNova",
+    "section": "Science",
+    "difficulty": "medium",
+    "question": "Which planet is closest to the Sun?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Mercury"
+      },
+      {
+        "label": "B",
+        "text": "Mars"
+      },
+      {
+        "label": "C",
+        "text": "Venus"
+      },
+      {
+        "label": "D",
+        "text": "Earth"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Mercury is the closest planet."
+  },
+  {
+    "id": "terra_090",
+    "exam": "TerraNova",
+    "section": "Social Studies",
+    "difficulty": "hard",
+    "question": "Why do communities elect leaders?",
+    "options": [
+      {
+        "label": "A",
+        "text": "To eliminate disagreements forever"
+      },
+      {
+        "label": "B",
+        "text": "To organize decisions and represent citizens"
+      },
+      {
+        "label": "C",
+        "text": "To prevent rules"
+      },
+      {
+        "label": "D",
+        "text": "To stop communication"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Leaders help coordinate decisions."
+  },
+  {
+    "id": "terra_091",
+    "exam": "TerraNova",
+    "section": "Math",
+    "difficulty": "easy",
+    "question": "Which number is the greatest?",
+    "options": [
+      {
+        "label": "A",
+        "text": "0.8"
+      },
+      {
+        "label": "B",
+        "text": "0.75"
+      },
+      {
+        "label": "C",
+        "text": "0.9"
+      },
+      {
+        "label": "D",
+        "text": "0.85"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Compare decimals; 0.9 is largest."
+  },
+  {
+    "id": "terra_092",
+    "exam": "TerraNova",
+    "section": "Language",
+    "difficulty": "medium",
+    "question": "Which word is a synonym for 'rapid'?",
+    "options": [
+      {
+        "label": "A",
+        "text": "slow"
+      },
+      {
+        "label": "B",
+        "text": "quiet"
+      },
+      {
+        "label": "C",
+        "text": "dull"
+      },
+      {
+        "label": "D",
+        "text": "fast"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Rapid means fast."
+  },
+  {
+    "id": "terra_093",
+    "exam": "TerraNova",
+    "section": "Language",
+    "difficulty": "hard",
+    "question": "Which sentence is punctuated correctly?",
+    "options": [
+      {
+        "label": "A",
+        "text": "After lunch, the class returned to science."
+      },
+      {
+        "label": "B",
+        "text": "After lunch the class returned, to science."
+      },
+      {
+        "label": "C",
+        "text": "After lunch the class returned to science"
+      },
+      {
+        "label": "D",
+        "text": "After lunch; the class returned to science"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Comma after introductory phrase."
+  },
+  {
+    "id": "terra_094",
+    "exam": "TerraNova",
+    "section": "Science",
+    "difficulty": "easy",
+    "question": "Which planet is closest to the Sun?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Mars"
+      },
+      {
+        "label": "B",
+        "text": "Mercury"
+      },
+      {
+        "label": "C",
+        "text": "Venus"
+      },
+      {
+        "label": "D",
+        "text": "Earth"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Mercury is the closest planet."
+  },
+  {
+    "id": "terra_095",
+    "exam": "TerraNova",
+    "section": "Social Studies",
+    "difficulty": "medium",
+    "question": "Why do communities elect leaders?",
+    "options": [
+      {
+        "label": "A",
+        "text": "To eliminate disagreements forever"
+      },
+      {
+        "label": "B",
+        "text": "To prevent rules"
+      },
+      {
+        "label": "C",
+        "text": "To organize decisions and represent citizens"
+      },
+      {
+        "label": "D",
+        "text": "To stop communication"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Leaders help coordinate decisions."
+  },
+  {
+    "id": "terra_096",
+    "exam": "TerraNova",
+    "section": "Math",
+    "difficulty": "hard",
+    "question": "Which number is the greatest?",
+    "options": [
+      {
+        "label": "A",
+        "text": "0.8"
+      },
+      {
+        "label": "B",
+        "text": "0.75"
+      },
+      {
+        "label": "C",
+        "text": "0.85"
+      },
+      {
+        "label": "D",
+        "text": "0.9"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Compare decimals; 0.9 is largest."
+  },
+  {
+    "id": "terra_097",
+    "exam": "TerraNova",
+    "section": "Language",
+    "difficulty": "easy",
+    "question": "Which word is a synonym for 'rapid'?",
+    "options": [
+      {
+        "label": "A",
+        "text": "fast"
+      },
+      {
+        "label": "B",
+        "text": "slow"
+      },
+      {
+        "label": "C",
+        "text": "quiet"
+      },
+      {
+        "label": "D",
+        "text": "dull"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Rapid means fast."
+  },
+  {
+    "id": "terra_098",
+    "exam": "TerraNova",
+    "section": "Language",
+    "difficulty": "medium",
+    "question": "Which sentence is punctuated correctly?",
+    "options": [
+      {
+        "label": "A",
+        "text": "After lunch the class returned, to science."
+      },
+      {
+        "label": "B",
+        "text": "After lunch, the class returned to science."
+      },
+      {
+        "label": "C",
+        "text": "After lunch the class returned to science"
+      },
+      {
+        "label": "D",
+        "text": "After lunch; the class returned to science"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Comma after introductory phrase."
+  },
+  {
+    "id": "terra_099",
+    "exam": "TerraNova",
+    "section": "Science",
+    "difficulty": "hard",
+    "question": "Which planet is closest to the Sun?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Mars"
+      },
+      {
+        "label": "B",
+        "text": "Venus"
+      },
+      {
+        "label": "C",
+        "text": "Mercury"
+      },
+      {
+        "label": "D",
+        "text": "Earth"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Mercury is the closest planet."
+  },
+  {
+    "id": "terra_100",
+    "exam": "TerraNova",
+    "section": "Social Studies",
+    "difficulty": "easy",
+    "question": "Why do communities elect leaders?",
+    "options": [
+      {
+        "label": "A",
+        "text": "To eliminate disagreements forever"
+      },
+      {
+        "label": "B",
+        "text": "To prevent rules"
+      },
+      {
+        "label": "C",
+        "text": "To stop communication"
+      },
+      {
+        "label": "D",
+        "text": "To organize decisions and represent citizens"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Leaders help coordinate decisions."
+  },
+  {
+    "id": "terra_101",
+    "exam": "TerraNova",
+    "section": "Math",
+    "difficulty": "medium",
+    "question": "Which number is the greatest?",
+    "options": [
+      {
+        "label": "A",
+        "text": "0.9"
+      },
+      {
+        "label": "B",
+        "text": "0.8"
+      },
+      {
+        "label": "C",
+        "text": "0.75"
+      },
+      {
+        "label": "D",
+        "text": "0.85"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Compare decimals; 0.9 is largest."
+  },
+  {
+    "id": "terra_102",
+    "exam": "TerraNova",
+    "section": "Language",
+    "difficulty": "hard",
+    "question": "Which word is a synonym for 'rapid'?",
+    "options": [
+      {
+        "label": "A",
+        "text": "slow"
+      },
+      {
+        "label": "B",
+        "text": "fast"
+      },
+      {
+        "label": "C",
+        "text": "quiet"
+      },
+      {
+        "label": "D",
+        "text": "dull"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Rapid means fast."
+  },
+  {
+    "id": "terra_103",
+    "exam": "TerraNova",
+    "section": "Language",
+    "difficulty": "easy",
+    "question": "Which sentence is punctuated correctly?",
+    "options": [
+      {
+        "label": "A",
+        "text": "After lunch the class returned, to science."
+      },
+      {
+        "label": "B",
+        "text": "After lunch the class returned to science"
+      },
+      {
+        "label": "C",
+        "text": "After lunch, the class returned to science."
+      },
+      {
+        "label": "D",
+        "text": "After lunch; the class returned to science"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Comma after introductory phrase."
+  },
+  {
+    "id": "terra_104",
+    "exam": "TerraNova",
+    "section": "Science",
+    "difficulty": "medium",
+    "question": "Which planet is closest to the Sun?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Mars"
+      },
+      {
+        "label": "B",
+        "text": "Venus"
+      },
+      {
+        "label": "C",
+        "text": "Earth"
+      },
+      {
+        "label": "D",
+        "text": "Mercury"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Mercury is the closest planet."
+  },
+  {
+    "id": "terra_105",
+    "exam": "TerraNova",
+    "section": "Social Studies",
+    "difficulty": "hard",
+    "question": "Why do communities elect leaders?",
+    "options": [
+      {
+        "label": "A",
+        "text": "To organize decisions and represent citizens"
+      },
+      {
+        "label": "B",
+        "text": "To eliminate disagreements forever"
+      },
+      {
+        "label": "C",
+        "text": "To prevent rules"
+      },
+      {
+        "label": "D",
+        "text": "To stop communication"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Leaders help coordinate decisions."
+  },
+  {
+    "id": "terra_106",
+    "exam": "TerraNova",
+    "section": "Math",
+    "difficulty": "easy",
+    "question": "Which number is the greatest?",
+    "options": [
+      {
+        "label": "A",
+        "text": "0.8"
+      },
+      {
+        "label": "B",
+        "text": "0.9"
+      },
+      {
+        "label": "C",
+        "text": "0.75"
+      },
+      {
+        "label": "D",
+        "text": "0.85"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Compare decimals; 0.9 is largest."
+  },
+  {
+    "id": "terra_107",
+    "exam": "TerraNova",
+    "section": "Language",
+    "difficulty": "medium",
+    "question": "Which word is a synonym for 'rapid'?",
+    "options": [
+      {
+        "label": "A",
+        "text": "slow"
+      },
+      {
+        "label": "B",
+        "text": "quiet"
+      },
+      {
+        "label": "C",
+        "text": "fast"
+      },
+      {
+        "label": "D",
+        "text": "dull"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Rapid means fast."
+  },
+  {
+    "id": "terra_108",
+    "exam": "TerraNova",
+    "section": "Language",
+    "difficulty": "hard",
+    "question": "Which sentence is punctuated correctly?",
+    "options": [
+      {
+        "label": "A",
+        "text": "After lunch the class returned, to science."
+      },
+      {
+        "label": "B",
+        "text": "After lunch the class returned to science"
+      },
+      {
+        "label": "C",
+        "text": "After lunch; the class returned to science"
+      },
+      {
+        "label": "D",
+        "text": "After lunch, the class returned to science."
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Comma after introductory phrase."
+  },
+  {
+    "id": "terra_109",
+    "exam": "TerraNova",
+    "section": "Science",
+    "difficulty": "easy",
+    "question": "Which planet is closest to the Sun?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Mercury"
+      },
+      {
+        "label": "B",
+        "text": "Mars"
+      },
+      {
+        "label": "C",
+        "text": "Venus"
+      },
+      {
+        "label": "D",
+        "text": "Earth"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Mercury is the closest planet."
+  },
+  {
+    "id": "terra_110",
+    "exam": "TerraNova",
+    "section": "Social Studies",
+    "difficulty": "medium",
+    "question": "Why do communities elect leaders?",
+    "options": [
+      {
+        "label": "A",
+        "text": "To eliminate disagreements forever"
+      },
+      {
+        "label": "B",
+        "text": "To organize decisions and represent citizens"
+      },
+      {
+        "label": "C",
+        "text": "To prevent rules"
+      },
+      {
+        "label": "D",
+        "text": "To stop communication"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Leaders help coordinate decisions."
+  },
+  {
+    "id": "terra_111",
+    "exam": "TerraNova",
+    "section": "Math",
+    "difficulty": "hard",
+    "question": "Which number is the greatest?",
+    "options": [
+      {
+        "label": "A",
+        "text": "0.8"
+      },
+      {
+        "label": "B",
+        "text": "0.75"
+      },
+      {
+        "label": "C",
+        "text": "0.9"
+      },
+      {
+        "label": "D",
+        "text": "0.85"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Compare decimals; 0.9 is largest."
+  },
+  {
+    "id": "terra_112",
+    "exam": "TerraNova",
+    "section": "Language",
+    "difficulty": "easy",
+    "question": "Which word is a synonym for 'rapid'?",
+    "options": [
+      {
+        "label": "A",
+        "text": "slow"
+      },
+      {
+        "label": "B",
+        "text": "quiet"
+      },
+      {
+        "label": "C",
+        "text": "dull"
+      },
+      {
+        "label": "D",
+        "text": "fast"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Rapid means fast."
+  },
+  {
+    "id": "terra_113",
+    "exam": "TerraNova",
+    "section": "Language",
+    "difficulty": "medium",
+    "question": "Which sentence is punctuated correctly?",
+    "options": [
+      {
+        "label": "A",
+        "text": "After lunch, the class returned to science."
+      },
+      {
+        "label": "B",
+        "text": "After lunch the class returned, to science."
+      },
+      {
+        "label": "C",
+        "text": "After lunch the class returned to science"
+      },
+      {
+        "label": "D",
+        "text": "After lunch; the class returned to science"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Comma after introductory phrase."
+  },
+  {
+    "id": "terra_114",
+    "exam": "TerraNova",
+    "section": "Science",
+    "difficulty": "hard",
+    "question": "Which planet is closest to the Sun?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Mars"
+      },
+      {
+        "label": "B",
+        "text": "Mercury"
+      },
+      {
+        "label": "C",
+        "text": "Venus"
+      },
+      {
+        "label": "D",
+        "text": "Earth"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Mercury is the closest planet."
+  },
+  {
+    "id": "terra_115",
+    "exam": "TerraNova",
+    "section": "Social Studies",
+    "difficulty": "easy",
+    "question": "Why do communities elect leaders?",
+    "options": [
+      {
+        "label": "A",
+        "text": "To eliminate disagreements forever"
+      },
+      {
+        "label": "B",
+        "text": "To prevent rules"
+      },
+      {
+        "label": "C",
+        "text": "To organize decisions and represent citizens"
+      },
+      {
+        "label": "D",
+        "text": "To stop communication"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Leaders help coordinate decisions."
+  },
+  {
+    "id": "terra_116",
+    "exam": "TerraNova",
+    "section": "Math",
+    "difficulty": "medium",
+    "question": "Which number is the greatest?",
+    "options": [
+      {
+        "label": "A",
+        "text": "0.8"
+      },
+      {
+        "label": "B",
+        "text": "0.75"
+      },
+      {
+        "label": "C",
+        "text": "0.85"
+      },
+      {
+        "label": "D",
+        "text": "0.9"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Compare decimals; 0.9 is largest."
+  },
+  {
+    "id": "terra_117",
+    "exam": "TerraNova",
+    "section": "Language",
+    "difficulty": "hard",
+    "question": "Which word is a synonym for 'rapid'?",
+    "options": [
+      {
+        "label": "A",
+        "text": "fast"
+      },
+      {
+        "label": "B",
+        "text": "slow"
+      },
+      {
+        "label": "C",
+        "text": "quiet"
+      },
+      {
+        "label": "D",
+        "text": "dull"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Rapid means fast."
+  },
+  {
+    "id": "terra_118",
+    "exam": "TerraNova",
+    "section": "Language",
+    "difficulty": "easy",
+    "question": "Which sentence is punctuated correctly?",
+    "options": [
+      {
+        "label": "A",
+        "text": "After lunch the class returned, to science."
+      },
+      {
+        "label": "B",
+        "text": "After lunch, the class returned to science."
+      },
+      {
+        "label": "C",
+        "text": "After lunch the class returned to science"
+      },
+      {
+        "label": "D",
+        "text": "After lunch; the class returned to science"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Comma after introductory phrase."
+  },
+  {
+    "id": "terra_119",
+    "exam": "TerraNova",
+    "section": "Science",
+    "difficulty": "medium",
+    "question": "Which planet is closest to the Sun?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Mars"
+      },
+      {
+        "label": "B",
+        "text": "Venus"
+      },
+      {
+        "label": "C",
+        "text": "Mercury"
+      },
+      {
+        "label": "D",
+        "text": "Earth"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Mercury is the closest planet."
+  },
+  {
+    "id": "terra_120",
+    "exam": "TerraNova",
+    "section": "Social Studies",
+    "difficulty": "hard",
+    "question": "Why do communities elect leaders?",
+    "options": [
+      {
+        "label": "A",
+        "text": "To eliminate disagreements forever"
+      },
+      {
+        "label": "B",
+        "text": "To prevent rules"
+      },
+      {
+        "label": "C",
+        "text": "To stop communication"
+      },
+      {
+        "label": "D",
+        "text": "To organize decisions and represent citizens"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Leaders help coordinate decisions."
+  },
+  {
+    "id": "terra_121",
+    "exam": "TerraNova",
+    "section": "Math",
+    "difficulty": "easy",
+    "question": "Which number is the greatest?",
+    "options": [
+      {
+        "label": "A",
+        "text": "0.9"
+      },
+      {
+        "label": "B",
+        "text": "0.8"
+      },
+      {
+        "label": "C",
+        "text": "0.75"
+      },
+      {
+        "label": "D",
+        "text": "0.85"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Compare decimals; 0.9 is largest."
+  },
+  {
+    "id": "terra_122",
+    "exam": "TerraNova",
+    "section": "Language",
+    "difficulty": "medium",
+    "question": "Which word is a synonym for 'rapid'?",
+    "options": [
+      {
+        "label": "A",
+        "text": "slow"
+      },
+      {
+        "label": "B",
+        "text": "fast"
+      },
+      {
+        "label": "C",
+        "text": "quiet"
+      },
+      {
+        "label": "D",
+        "text": "dull"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Rapid means fast."
+  },
+  {
+    "id": "terra_123",
+    "exam": "TerraNova",
+    "section": "Language",
+    "difficulty": "hard",
+    "question": "Which sentence is punctuated correctly?",
+    "options": [
+      {
+        "label": "A",
+        "text": "After lunch the class returned, to science."
+      },
+      {
+        "label": "B",
+        "text": "After lunch the class returned to science"
+      },
+      {
+        "label": "C",
+        "text": "After lunch, the class returned to science."
+      },
+      {
+        "label": "D",
+        "text": "After lunch; the class returned to science"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Comma after introductory phrase."
+  },
+  {
+    "id": "terra_124",
+    "exam": "TerraNova",
+    "section": "Science",
+    "difficulty": "easy",
+    "question": "Which planet is closest to the Sun?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Mars"
+      },
+      {
+        "label": "B",
+        "text": "Venus"
+      },
+      {
+        "label": "C",
+        "text": "Earth"
+      },
+      {
+        "label": "D",
+        "text": "Mercury"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Mercury is the closest planet."
+  },
+  {
+    "id": "terra_125",
+    "exam": "TerraNova",
+    "section": "Social Studies",
+    "difficulty": "medium",
+    "question": "Why do communities elect leaders?",
+    "options": [
+      {
+        "label": "A",
+        "text": "To organize decisions and represent citizens"
+      },
+      {
+        "label": "B",
+        "text": "To eliminate disagreements forever"
+      },
+      {
+        "label": "C",
+        "text": "To prevent rules"
+      },
+      {
+        "label": "D",
+        "text": "To stop communication"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Leaders help coordinate decisions."
+  },
+  {
+    "id": "terra_126",
+    "exam": "TerraNova",
+    "section": "Math",
+    "difficulty": "hard",
+    "question": "Which number is the greatest?",
+    "options": [
+      {
+        "label": "A",
+        "text": "0.8"
+      },
+      {
+        "label": "B",
+        "text": "0.9"
+      },
+      {
+        "label": "C",
+        "text": "0.75"
+      },
+      {
+        "label": "D",
+        "text": "0.85"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Compare decimals; 0.9 is largest."
+  },
+  {
+    "id": "terra_127",
+    "exam": "TerraNova",
+    "section": "Language",
+    "difficulty": "easy",
+    "question": "Which word is a synonym for 'rapid'?",
+    "options": [
+      {
+        "label": "A",
+        "text": "slow"
+      },
+      {
+        "label": "B",
+        "text": "quiet"
+      },
+      {
+        "label": "C",
+        "text": "fast"
+      },
+      {
+        "label": "D",
+        "text": "dull"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Rapid means fast."
+  },
+  {
+    "id": "terra_128",
+    "exam": "TerraNova",
+    "section": "Language",
+    "difficulty": "medium",
+    "question": "Which sentence is punctuated correctly?",
+    "options": [
+      {
+        "label": "A",
+        "text": "After lunch the class returned, to science."
+      },
+      {
+        "label": "B",
+        "text": "After lunch the class returned to science"
+      },
+      {
+        "label": "C",
+        "text": "After lunch; the class returned to science"
+      },
+      {
+        "label": "D",
+        "text": "After lunch, the class returned to science."
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Comma after introductory phrase."
+  },
+  {
+    "id": "terra_129",
+    "exam": "TerraNova",
+    "section": "Science",
+    "difficulty": "hard",
+    "question": "Which planet is closest to the Sun?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Mercury"
+      },
+      {
+        "label": "B",
+        "text": "Mars"
+      },
+      {
+        "label": "C",
+        "text": "Venus"
+      },
+      {
+        "label": "D",
+        "text": "Earth"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Mercury is the closest planet."
+  },
+  {
+    "id": "terra_130",
+    "exam": "TerraNova",
+    "section": "Social Studies",
+    "difficulty": "easy",
+    "question": "Why do communities elect leaders?",
+    "options": [
+      {
+        "label": "A",
+        "text": "To eliminate disagreements forever"
+      },
+      {
+        "label": "B",
+        "text": "To organize decisions and represent citizens"
+      },
+      {
+        "label": "C",
+        "text": "To prevent rules"
+      },
+      {
+        "label": "D",
+        "text": "To stop communication"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Leaders help coordinate decisions."
+  },
+  {
+    "id": "terra_131",
+    "exam": "TerraNova",
+    "section": "Math",
+    "difficulty": "medium",
+    "question": "Which number is the greatest?",
+    "options": [
+      {
+        "label": "A",
+        "text": "0.8"
+      },
+      {
+        "label": "B",
+        "text": "0.75"
+      },
+      {
+        "label": "C",
+        "text": "0.9"
+      },
+      {
+        "label": "D",
+        "text": "0.85"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Compare decimals; 0.9 is largest."
+  },
+  {
+    "id": "terra_132",
+    "exam": "TerraNova",
+    "section": "Language",
+    "difficulty": "hard",
+    "question": "Which word is a synonym for 'rapid'?",
+    "options": [
+      {
+        "label": "A",
+        "text": "slow"
+      },
+      {
+        "label": "B",
+        "text": "quiet"
+      },
+      {
+        "label": "C",
+        "text": "dull"
+      },
+      {
+        "label": "D",
+        "text": "fast"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Rapid means fast."
+  },
+  {
+    "id": "terra_133",
+    "exam": "TerraNova",
+    "section": "Language",
+    "difficulty": "easy",
+    "question": "Which sentence is punctuated correctly?",
+    "options": [
+      {
+        "label": "A",
+        "text": "After lunch, the class returned to science."
+      },
+      {
+        "label": "B",
+        "text": "After lunch the class returned, to science."
+      },
+      {
+        "label": "C",
+        "text": "After lunch the class returned to science"
+      },
+      {
+        "label": "D",
+        "text": "After lunch; the class returned to science"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Comma after introductory phrase."
+  },
+  {
+    "id": "terra_134",
+    "exam": "TerraNova",
+    "section": "Science",
+    "difficulty": "medium",
+    "question": "Which planet is closest to the Sun?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Mars"
+      },
+      {
+        "label": "B",
+        "text": "Mercury"
+      },
+      {
+        "label": "C",
+        "text": "Venus"
+      },
+      {
+        "label": "D",
+        "text": "Earth"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Mercury is the closest planet."
+  },
+  {
+    "id": "terra_135",
+    "exam": "TerraNova",
+    "section": "Social Studies",
+    "difficulty": "hard",
+    "question": "Why do communities elect leaders?",
+    "options": [
+      {
+        "label": "A",
+        "text": "To eliminate disagreements forever"
+      },
+      {
+        "label": "B",
+        "text": "To prevent rules"
+      },
+      {
+        "label": "C",
+        "text": "To organize decisions and represent citizens"
+      },
+      {
+        "label": "D",
+        "text": "To stop communication"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Leaders help coordinate decisions."
+  },
+  {
+    "id": "terra_136",
+    "exam": "TerraNova",
+    "section": "Math",
+    "difficulty": "easy",
+    "question": "Which number is the greatest?",
+    "options": [
+      {
+        "label": "A",
+        "text": "0.8"
+      },
+      {
+        "label": "B",
+        "text": "0.75"
+      },
+      {
+        "label": "C",
+        "text": "0.85"
+      },
+      {
+        "label": "D",
+        "text": "0.9"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Compare decimals; 0.9 is largest."
+  },
+  {
+    "id": "terra_137",
+    "exam": "TerraNova",
+    "section": "Language",
+    "difficulty": "medium",
+    "question": "Which word is a synonym for 'rapid'?",
+    "options": [
+      {
+        "label": "A",
+        "text": "fast"
+      },
+      {
+        "label": "B",
+        "text": "slow"
+      },
+      {
+        "label": "C",
+        "text": "quiet"
+      },
+      {
+        "label": "D",
+        "text": "dull"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Rapid means fast."
+  },
+  {
+    "id": "terra_138",
+    "exam": "TerraNova",
+    "section": "Language",
+    "difficulty": "hard",
+    "question": "Which sentence is punctuated correctly?",
+    "options": [
+      {
+        "label": "A",
+        "text": "After lunch the class returned, to science."
+      },
+      {
+        "label": "B",
+        "text": "After lunch, the class returned to science."
+      },
+      {
+        "label": "C",
+        "text": "After lunch the class returned to science"
+      },
+      {
+        "label": "D",
+        "text": "After lunch; the class returned to science"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Comma after introductory phrase."
+  },
+  {
+    "id": "terra_139",
+    "exam": "TerraNova",
+    "section": "Science",
+    "difficulty": "easy",
+    "question": "Which planet is closest to the Sun?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Mars"
+      },
+      {
+        "label": "B",
+        "text": "Venus"
+      },
+      {
+        "label": "C",
+        "text": "Mercury"
+      },
+      {
+        "label": "D",
+        "text": "Earth"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Mercury is the closest planet."
+  },
+  {
+    "id": "terra_140",
+    "exam": "TerraNova",
+    "section": "Social Studies",
+    "difficulty": "medium",
+    "question": "Why do communities elect leaders?",
+    "options": [
+      {
+        "label": "A",
+        "text": "To eliminate disagreements forever"
+      },
+      {
+        "label": "B",
+        "text": "To prevent rules"
+      },
+      {
+        "label": "C",
+        "text": "To stop communication"
+      },
+      {
+        "label": "D",
+        "text": "To organize decisions and represent citizens"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Leaders help coordinate decisions."
+  },
+  {
+    "id": "terra_141",
+    "exam": "TerraNova",
+    "section": "Math",
+    "difficulty": "hard",
+    "question": "Which number is the greatest?",
+    "options": [
+      {
+        "label": "A",
+        "text": "0.9"
+      },
+      {
+        "label": "B",
+        "text": "0.8"
+      },
+      {
+        "label": "C",
+        "text": "0.75"
+      },
+      {
+        "label": "D",
+        "text": "0.85"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Compare decimals; 0.9 is largest."
+  },
+  {
+    "id": "terra_142",
+    "exam": "TerraNova",
+    "section": "Language",
+    "difficulty": "easy",
+    "question": "Which word is a synonym for 'rapid'?",
+    "options": [
+      {
+        "label": "A",
+        "text": "slow"
+      },
+      {
+        "label": "B",
+        "text": "fast"
+      },
+      {
+        "label": "C",
+        "text": "quiet"
+      },
+      {
+        "label": "D",
+        "text": "dull"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Rapid means fast."
+  },
+  {
+    "id": "terra_143",
+    "exam": "TerraNova",
+    "section": "Language",
+    "difficulty": "medium",
+    "question": "Which sentence is punctuated correctly?",
+    "options": [
+      {
+        "label": "A",
+        "text": "After lunch the class returned, to science."
+      },
+      {
+        "label": "B",
+        "text": "After lunch the class returned to science"
+      },
+      {
+        "label": "C",
+        "text": "After lunch, the class returned to science."
+      },
+      {
+        "label": "D",
+        "text": "After lunch; the class returned to science"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Comma after introductory phrase."
+  },
+  {
+    "id": "terra_144",
+    "exam": "TerraNova",
+    "section": "Science",
+    "difficulty": "hard",
+    "question": "Which planet is closest to the Sun?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Mars"
+      },
+      {
+        "label": "B",
+        "text": "Venus"
+      },
+      {
+        "label": "C",
+        "text": "Earth"
+      },
+      {
+        "label": "D",
+        "text": "Mercury"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Mercury is the closest planet."
+  },
+  {
+    "id": "terra_145",
+    "exam": "TerraNova",
+    "section": "Social Studies",
+    "difficulty": "easy",
+    "question": "Why do communities elect leaders?",
+    "options": [
+      {
+        "label": "A",
+        "text": "To organize decisions and represent citizens"
+      },
+      {
+        "label": "B",
+        "text": "To eliminate disagreements forever"
+      },
+      {
+        "label": "C",
+        "text": "To prevent rules"
+      },
+      {
+        "label": "D",
+        "text": "To stop communication"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Leaders help coordinate decisions."
+  },
+  {
+    "id": "terra_146",
+    "exam": "TerraNova",
+    "section": "Math",
+    "difficulty": "medium",
+    "question": "Which number is the greatest?",
+    "options": [
+      {
+        "label": "A",
+        "text": "0.8"
+      },
+      {
+        "label": "B",
+        "text": "0.9"
+      },
+      {
+        "label": "C",
+        "text": "0.75"
+      },
+      {
+        "label": "D",
+        "text": "0.85"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Compare decimals; 0.9 is largest."
+  },
+  {
+    "id": "terra_147",
+    "exam": "TerraNova",
+    "section": "Language",
+    "difficulty": "hard",
+    "question": "Which word is a synonym for 'rapid'?",
+    "options": [
+      {
+        "label": "A",
+        "text": "slow"
+      },
+      {
+        "label": "B",
+        "text": "quiet"
+      },
+      {
+        "label": "C",
+        "text": "fast"
+      },
+      {
+        "label": "D",
+        "text": "dull"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Rapid means fast."
+  },
+  {
+    "id": "terra_148",
+    "exam": "TerraNova",
+    "section": "Language",
+    "difficulty": "easy",
+    "question": "Which sentence is punctuated correctly?",
+    "options": [
+      {
+        "label": "A",
+        "text": "After lunch the class returned, to science."
+      },
+      {
+        "label": "B",
+        "text": "After lunch the class returned to science"
+      },
+      {
+        "label": "C",
+        "text": "After lunch; the class returned to science"
+      },
+      {
+        "label": "D",
+        "text": "After lunch, the class returned to science."
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Comma after introductory phrase."
+  },
+  {
+    "id": "terra_149",
+    "exam": "TerraNova",
+    "section": "Science",
+    "difficulty": "medium",
+    "question": "Which planet is closest to the Sun?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Mercury"
+      },
+      {
+        "label": "B",
+        "text": "Mars"
+      },
+      {
+        "label": "C",
+        "text": "Venus"
+      },
+      {
+        "label": "D",
+        "text": "Earth"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Mercury is the closest planet."
+  },
+  {
+    "id": "terra_150",
+    "exam": "TerraNova",
+    "section": "Social Studies",
+    "difficulty": "hard",
+    "question": "Why do communities elect leaders?",
+    "options": [
+      {
+        "label": "A",
+        "text": "To eliminate disagreements forever"
+      },
+      {
+        "label": "B",
+        "text": "To organize decisions and represent citizens"
+      },
+      {
+        "label": "C",
+        "text": "To prevent rules"
+      },
+      {
+        "label": "D",
+        "text": "To stop communication"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Leaders help coordinate decisions."
+  },
+  {
+    "id": "terra_151",
+    "exam": "TerraNova",
+    "section": "Math",
+    "difficulty": "easy",
+    "question": "Which number is the greatest?",
+    "options": [
+      {
+        "label": "A",
+        "text": "0.8"
+      },
+      {
+        "label": "B",
+        "text": "0.75"
+      },
+      {
+        "label": "C",
+        "text": "0.9"
+      },
+      {
+        "label": "D",
+        "text": "0.85"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Compare decimals; 0.9 is largest."
+  },
+  {
+    "id": "terra_152",
+    "exam": "TerraNova",
+    "section": "Language",
+    "difficulty": "medium",
+    "question": "Which word is a synonym for 'rapid'?",
+    "options": [
+      {
+        "label": "A",
+        "text": "slow"
+      },
+      {
+        "label": "B",
+        "text": "quiet"
+      },
+      {
+        "label": "C",
+        "text": "dull"
+      },
+      {
+        "label": "D",
+        "text": "fast"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Rapid means fast."
+  },
+  {
+    "id": "terra_153",
+    "exam": "TerraNova",
+    "section": "Language",
+    "difficulty": "hard",
+    "question": "Which sentence is punctuated correctly?",
+    "options": [
+      {
+        "label": "A",
+        "text": "After lunch, the class returned to science."
+      },
+      {
+        "label": "B",
+        "text": "After lunch the class returned, to science."
+      },
+      {
+        "label": "C",
+        "text": "After lunch the class returned to science"
+      },
+      {
+        "label": "D",
+        "text": "After lunch; the class returned to science"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Comma after introductory phrase."
+  },
+  {
+    "id": "terra_154",
+    "exam": "TerraNova",
+    "section": "Science",
+    "difficulty": "easy",
+    "question": "Which planet is closest to the Sun?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Mars"
+      },
+      {
+        "label": "B",
+        "text": "Mercury"
+      },
+      {
+        "label": "C",
+        "text": "Venus"
+      },
+      {
+        "label": "D",
+        "text": "Earth"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Mercury is the closest planet."
+  },
+  {
+    "id": "terra_155",
+    "exam": "TerraNova",
+    "section": "Social Studies",
+    "difficulty": "medium",
+    "question": "Why do communities elect leaders?",
+    "options": [
+      {
+        "label": "A",
+        "text": "To eliminate disagreements forever"
+      },
+      {
+        "label": "B",
+        "text": "To prevent rules"
+      },
+      {
+        "label": "C",
+        "text": "To organize decisions and represent citizens"
+      },
+      {
+        "label": "D",
+        "text": "To stop communication"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Leaders help coordinate decisions."
+  },
+  {
+    "id": "terra_156",
+    "exam": "TerraNova",
+    "section": "Math",
+    "difficulty": "hard",
+    "question": "Which number is the greatest?",
+    "options": [
+      {
+        "label": "A",
+        "text": "0.8"
+      },
+      {
+        "label": "B",
+        "text": "0.75"
+      },
+      {
+        "label": "C",
+        "text": "0.85"
+      },
+      {
+        "label": "D",
+        "text": "0.9"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Compare decimals; 0.9 is largest."
+  },
+  {
+    "id": "terra_157",
+    "exam": "TerraNova",
+    "section": "Language",
+    "difficulty": "easy",
+    "question": "Which word is a synonym for 'rapid'?",
+    "options": [
+      {
+        "label": "A",
+        "text": "fast"
+      },
+      {
+        "label": "B",
+        "text": "slow"
+      },
+      {
+        "label": "C",
+        "text": "quiet"
+      },
+      {
+        "label": "D",
+        "text": "dull"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Rapid means fast."
+  },
+  {
+    "id": "terra_158",
+    "exam": "TerraNova",
+    "section": "Language",
+    "difficulty": "medium",
+    "question": "Which sentence is punctuated correctly?",
+    "options": [
+      {
+        "label": "A",
+        "text": "After lunch the class returned, to science."
+      },
+      {
+        "label": "B",
+        "text": "After lunch, the class returned to science."
+      },
+      {
+        "label": "C",
+        "text": "After lunch the class returned to science"
+      },
+      {
+        "label": "D",
+        "text": "After lunch; the class returned to science"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Comma after introductory phrase."
+  },
+  {
+    "id": "terra_159",
+    "exam": "TerraNova",
+    "section": "Science",
+    "difficulty": "hard",
+    "question": "Which planet is closest to the Sun?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Mars"
+      },
+      {
+        "label": "B",
+        "text": "Venus"
+      },
+      {
+        "label": "C",
+        "text": "Mercury"
+      },
+      {
+        "label": "D",
+        "text": "Earth"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Mercury is the closest planet."
+  },
+  {
+    "id": "terra_160",
+    "exam": "TerraNova",
+    "section": "Social Studies",
+    "difficulty": "easy",
+    "question": "Why do communities elect leaders?",
+    "options": [
+      {
+        "label": "A",
+        "text": "To eliminate disagreements forever"
+      },
+      {
+        "label": "B",
+        "text": "To prevent rules"
+      },
+      {
+        "label": "C",
+        "text": "To stop communication"
+      },
+      {
+        "label": "D",
+        "text": "To organize decisions and represent citizens"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Leaders help coordinate decisions."
+  },
+  {
+    "id": "terra_161",
+    "exam": "TerraNova",
+    "section": "Math",
+    "difficulty": "medium",
+    "question": "Which number is the greatest?",
+    "options": [
+      {
+        "label": "A",
+        "text": "0.9"
+      },
+      {
+        "label": "B",
+        "text": "0.8"
+      },
+      {
+        "label": "C",
+        "text": "0.75"
+      },
+      {
+        "label": "D",
+        "text": "0.85"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Compare decimals; 0.9 is largest."
+  },
+  {
+    "id": "terra_162",
+    "exam": "TerraNova",
+    "section": "Language",
+    "difficulty": "hard",
+    "question": "Which word is a synonym for 'rapid'?",
+    "options": [
+      {
+        "label": "A",
+        "text": "slow"
+      },
+      {
+        "label": "B",
+        "text": "fast"
+      },
+      {
+        "label": "C",
+        "text": "quiet"
+      },
+      {
+        "label": "D",
+        "text": "dull"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Rapid means fast."
+  },
+  {
+    "id": "terra_163",
+    "exam": "TerraNova",
+    "section": "Language",
+    "difficulty": "easy",
+    "question": "Which sentence is punctuated correctly?",
+    "options": [
+      {
+        "label": "A",
+        "text": "After lunch the class returned, to science."
+      },
+      {
+        "label": "B",
+        "text": "After lunch the class returned to science"
+      },
+      {
+        "label": "C",
+        "text": "After lunch, the class returned to science."
+      },
+      {
+        "label": "D",
+        "text": "After lunch; the class returned to science"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Comma after introductory phrase."
+  },
+  {
+    "id": "terra_164",
+    "exam": "TerraNova",
+    "section": "Science",
+    "difficulty": "medium",
+    "question": "Which planet is closest to the Sun?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Mars"
+      },
+      {
+        "label": "B",
+        "text": "Venus"
+      },
+      {
+        "label": "C",
+        "text": "Earth"
+      },
+      {
+        "label": "D",
+        "text": "Mercury"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Mercury is the closest planet."
+  },
+  {
+    "id": "terra_165",
+    "exam": "TerraNova",
+    "section": "Social Studies",
+    "difficulty": "hard",
+    "question": "Why do communities elect leaders?",
+    "options": [
+      {
+        "label": "A",
+        "text": "To organize decisions and represent citizens"
+      },
+      {
+        "label": "B",
+        "text": "To eliminate disagreements forever"
+      },
+      {
+        "label": "C",
+        "text": "To prevent rules"
+      },
+      {
+        "label": "D",
+        "text": "To stop communication"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Leaders help coordinate decisions."
+  },
+  {
+    "id": "terra_166",
+    "exam": "TerraNova",
+    "section": "Math",
+    "difficulty": "easy",
+    "question": "Which number is the greatest?",
+    "options": [
+      {
+        "label": "A",
+        "text": "0.8"
+      },
+      {
+        "label": "B",
+        "text": "0.9"
+      },
+      {
+        "label": "C",
+        "text": "0.75"
+      },
+      {
+        "label": "D",
+        "text": "0.85"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Compare decimals; 0.9 is largest."
+  },
+  {
+    "id": "terra_167",
+    "exam": "TerraNova",
+    "section": "Language",
+    "difficulty": "medium",
+    "question": "Which word is a synonym for 'rapid'?",
+    "options": [
+      {
+        "label": "A",
+        "text": "slow"
+      },
+      {
+        "label": "B",
+        "text": "quiet"
+      },
+      {
+        "label": "C",
+        "text": "fast"
+      },
+      {
+        "label": "D",
+        "text": "dull"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Rapid means fast."
+  },
+  {
+    "id": "terra_168",
+    "exam": "TerraNova",
+    "section": "Language",
+    "difficulty": "hard",
+    "question": "Which sentence is punctuated correctly?",
+    "options": [
+      {
+        "label": "A",
+        "text": "After lunch the class returned, to science."
+      },
+      {
+        "label": "B",
+        "text": "After lunch the class returned to science"
+      },
+      {
+        "label": "C",
+        "text": "After lunch; the class returned to science"
+      },
+      {
+        "label": "D",
+        "text": "After lunch, the class returned to science."
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Comma after introductory phrase."
+  },
+  {
+    "id": "terra_169",
+    "exam": "TerraNova",
+    "section": "Science",
+    "difficulty": "easy",
+    "question": "Which planet is closest to the Sun?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Mercury"
+      },
+      {
+        "label": "B",
+        "text": "Mars"
+      },
+      {
+        "label": "C",
+        "text": "Venus"
+      },
+      {
+        "label": "D",
+        "text": "Earth"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Mercury is the closest planet."
+  },
+  {
+    "id": "terra_170",
+    "exam": "TerraNova",
+    "section": "Social Studies",
+    "difficulty": "medium",
+    "question": "Why do communities elect leaders?",
+    "options": [
+      {
+        "label": "A",
+        "text": "To eliminate disagreements forever"
+      },
+      {
+        "label": "B",
+        "text": "To organize decisions and represent citizens"
+      },
+      {
+        "label": "C",
+        "text": "To prevent rules"
+      },
+      {
+        "label": "D",
+        "text": "To stop communication"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Leaders help coordinate decisions."
+  },
+  {
+    "id": "terra_171",
+    "exam": "TerraNova",
+    "section": "Math",
+    "difficulty": "hard",
+    "question": "Which number is the greatest?",
+    "options": [
+      {
+        "label": "A",
+        "text": "0.8"
+      },
+      {
+        "label": "B",
+        "text": "0.75"
+      },
+      {
+        "label": "C",
+        "text": "0.9"
+      },
+      {
+        "label": "D",
+        "text": "0.85"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Compare decimals; 0.9 is largest."
+  },
+  {
+    "id": "terra_172",
+    "exam": "TerraNova",
+    "section": "Language",
+    "difficulty": "easy",
+    "question": "Which word is a synonym for 'rapid'?",
+    "options": [
+      {
+        "label": "A",
+        "text": "slow"
+      },
+      {
+        "label": "B",
+        "text": "quiet"
+      },
+      {
+        "label": "C",
+        "text": "dull"
+      },
+      {
+        "label": "D",
+        "text": "fast"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Rapid means fast."
+  },
+  {
+    "id": "terra_173",
+    "exam": "TerraNova",
+    "section": "Language",
+    "difficulty": "medium",
+    "question": "Which sentence is punctuated correctly?",
+    "options": [
+      {
+        "label": "A",
+        "text": "After lunch, the class returned to science."
+      },
+      {
+        "label": "B",
+        "text": "After lunch the class returned, to science."
+      },
+      {
+        "label": "C",
+        "text": "After lunch the class returned to science"
+      },
+      {
+        "label": "D",
+        "text": "After lunch; the class returned to science"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Comma after introductory phrase."
+  },
+  {
+    "id": "terra_174",
+    "exam": "TerraNova",
+    "section": "Science",
+    "difficulty": "hard",
+    "question": "Which planet is closest to the Sun?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Mars"
+      },
+      {
+        "label": "B",
+        "text": "Mercury"
+      },
+      {
+        "label": "C",
+        "text": "Venus"
+      },
+      {
+        "label": "D",
+        "text": "Earth"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Mercury is the closest planet."
+  },
+  {
+    "id": "terra_175",
+    "exam": "TerraNova",
+    "section": "Social Studies",
+    "difficulty": "easy",
+    "question": "Why do communities elect leaders?",
+    "options": [
+      {
+        "label": "A",
+        "text": "To eliminate disagreements forever"
+      },
+      {
+        "label": "B",
+        "text": "To prevent rules"
+      },
+      {
+        "label": "C",
+        "text": "To organize decisions and represent citizens"
+      },
+      {
+        "label": "D",
+        "text": "To stop communication"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Leaders help coordinate decisions."
+  },
+  {
+    "id": "terra_176",
+    "exam": "TerraNova",
+    "section": "Math",
+    "difficulty": "medium",
+    "question": "Which number is the greatest?",
+    "options": [
+      {
+        "label": "A",
+        "text": "0.8"
+      },
+      {
+        "label": "B",
+        "text": "0.75"
+      },
+      {
+        "label": "C",
+        "text": "0.85"
+      },
+      {
+        "label": "D",
+        "text": "0.9"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Compare decimals; 0.9 is largest."
+  },
+  {
+    "id": "terra_177",
+    "exam": "TerraNova",
+    "section": "Language",
+    "difficulty": "hard",
+    "question": "Which word is a synonym for 'rapid'?",
+    "options": [
+      {
+        "label": "A",
+        "text": "fast"
+      },
+      {
+        "label": "B",
+        "text": "slow"
+      },
+      {
+        "label": "C",
+        "text": "quiet"
+      },
+      {
+        "label": "D",
+        "text": "dull"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Rapid means fast."
+  },
+  {
+    "id": "terra_178",
+    "exam": "TerraNova",
+    "section": "Language",
+    "difficulty": "easy",
+    "question": "Which sentence is punctuated correctly?",
+    "options": [
+      {
+        "label": "A",
+        "text": "After lunch the class returned, to science."
+      },
+      {
+        "label": "B",
+        "text": "After lunch, the class returned to science."
+      },
+      {
+        "label": "C",
+        "text": "After lunch the class returned to science"
+      },
+      {
+        "label": "D",
+        "text": "After lunch; the class returned to science"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Comma after introductory phrase."
+  },
+  {
+    "id": "terra_179",
+    "exam": "TerraNova",
+    "section": "Science",
+    "difficulty": "medium",
+    "question": "Which planet is closest to the Sun?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Mars"
+      },
+      {
+        "label": "B",
+        "text": "Venus"
+      },
+      {
+        "label": "C",
+        "text": "Mercury"
+      },
+      {
+        "label": "D",
+        "text": "Earth"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Mercury is the closest planet."
+  },
+  {
+    "id": "terra_180",
+    "exam": "TerraNova",
+    "section": "Social Studies",
+    "difficulty": "hard",
+    "question": "Why do communities elect leaders?",
+    "options": [
+      {
+        "label": "A",
+        "text": "To eliminate disagreements forever"
+      },
+      {
+        "label": "B",
+        "text": "To prevent rules"
+      },
+      {
+        "label": "C",
+        "text": "To stop communication"
+      },
+      {
+        "label": "D",
+        "text": "To organize decisions and represent citizens"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Leaders help coordinate decisions."
+  },
+  {
+    "id": "terra_181",
+    "exam": "TerraNova",
+    "section": "Math",
+    "difficulty": "easy",
+    "question": "Which number is the greatest?",
+    "options": [
+      {
+        "label": "A",
+        "text": "0.9"
+      },
+      {
+        "label": "B",
+        "text": "0.8"
+      },
+      {
+        "label": "C",
+        "text": "0.75"
+      },
+      {
+        "label": "D",
+        "text": "0.85"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Compare decimals; 0.9 is largest."
+  },
+  {
+    "id": "terra_182",
+    "exam": "TerraNova",
+    "section": "Language",
+    "difficulty": "medium",
+    "question": "Which word is a synonym for 'rapid'?",
+    "options": [
+      {
+        "label": "A",
+        "text": "slow"
+      },
+      {
+        "label": "B",
+        "text": "fast"
+      },
+      {
+        "label": "C",
+        "text": "quiet"
+      },
+      {
+        "label": "D",
+        "text": "dull"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Rapid means fast."
+  },
+  {
+    "id": "terra_183",
+    "exam": "TerraNova",
+    "section": "Language",
+    "difficulty": "hard",
+    "question": "Which sentence is punctuated correctly?",
+    "options": [
+      {
+        "label": "A",
+        "text": "After lunch the class returned, to science."
+      },
+      {
+        "label": "B",
+        "text": "After lunch the class returned to science"
+      },
+      {
+        "label": "C",
+        "text": "After lunch, the class returned to science."
+      },
+      {
+        "label": "D",
+        "text": "After lunch; the class returned to science"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Comma after introductory phrase."
+  },
+  {
+    "id": "terra_184",
+    "exam": "TerraNova",
+    "section": "Science",
+    "difficulty": "easy",
+    "question": "Which planet is closest to the Sun?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Mars"
+      },
+      {
+        "label": "B",
+        "text": "Venus"
+      },
+      {
+        "label": "C",
+        "text": "Earth"
+      },
+      {
+        "label": "D",
+        "text": "Mercury"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Mercury is the closest planet."
+  },
+  {
+    "id": "terra_185",
+    "exam": "TerraNova",
+    "section": "Social Studies",
+    "difficulty": "medium",
+    "question": "Why do communities elect leaders?",
+    "options": [
+      {
+        "label": "A",
+        "text": "To organize decisions and represent citizens"
+      },
+      {
+        "label": "B",
+        "text": "To eliminate disagreements forever"
+      },
+      {
+        "label": "C",
+        "text": "To prevent rules"
+      },
+      {
+        "label": "D",
+        "text": "To stop communication"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Leaders help coordinate decisions."
+  },
+  {
+    "id": "terra_186",
+    "exam": "TerraNova",
+    "section": "Math",
+    "difficulty": "hard",
+    "question": "Which number is the greatest?",
+    "options": [
+      {
+        "label": "A",
+        "text": "0.8"
+      },
+      {
+        "label": "B",
+        "text": "0.9"
+      },
+      {
+        "label": "C",
+        "text": "0.75"
+      },
+      {
+        "label": "D",
+        "text": "0.85"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Compare decimals; 0.9 is largest."
+  },
+  {
+    "id": "terra_187",
+    "exam": "TerraNova",
+    "section": "Language",
+    "difficulty": "easy",
+    "question": "Which word is a synonym for 'rapid'?",
+    "options": [
+      {
+        "label": "A",
+        "text": "slow"
+      },
+      {
+        "label": "B",
+        "text": "quiet"
+      },
+      {
+        "label": "C",
+        "text": "fast"
+      },
+      {
+        "label": "D",
+        "text": "dull"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Rapid means fast."
+  },
+  {
+    "id": "terra_188",
+    "exam": "TerraNova",
+    "section": "Language",
+    "difficulty": "medium",
+    "question": "Which sentence is punctuated correctly?",
+    "options": [
+      {
+        "label": "A",
+        "text": "After lunch the class returned, to science."
+      },
+      {
+        "label": "B",
+        "text": "After lunch the class returned to science"
+      },
+      {
+        "label": "C",
+        "text": "After lunch; the class returned to science"
+      },
+      {
+        "label": "D",
+        "text": "After lunch, the class returned to science."
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Comma after introductory phrase."
+  },
+  {
+    "id": "terra_189",
+    "exam": "TerraNova",
+    "section": "Science",
+    "difficulty": "hard",
+    "question": "Which planet is closest to the Sun?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Mercury"
+      },
+      {
+        "label": "B",
+        "text": "Mars"
+      },
+      {
+        "label": "C",
+        "text": "Venus"
+      },
+      {
+        "label": "D",
+        "text": "Earth"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Mercury is the closest planet."
+  },
+  {
+    "id": "terra_190",
+    "exam": "TerraNova",
+    "section": "Social Studies",
+    "difficulty": "easy",
+    "question": "Why do communities elect leaders?",
+    "options": [
+      {
+        "label": "A",
+        "text": "To eliminate disagreements forever"
+      },
+      {
+        "label": "B",
+        "text": "To organize decisions and represent citizens"
+      },
+      {
+        "label": "C",
+        "text": "To prevent rules"
+      },
+      {
+        "label": "D",
+        "text": "To stop communication"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Leaders help coordinate decisions."
+  },
+  {
+    "id": "terra_191",
+    "exam": "TerraNova",
+    "section": "Math",
+    "difficulty": "medium",
+    "question": "Which number is the greatest?",
+    "options": [
+      {
+        "label": "A",
+        "text": "0.8"
+      },
+      {
+        "label": "B",
+        "text": "0.75"
+      },
+      {
+        "label": "C",
+        "text": "0.9"
+      },
+      {
+        "label": "D",
+        "text": "0.85"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Compare decimals; 0.9 is largest."
+  },
+  {
+    "id": "terra_192",
+    "exam": "TerraNova",
+    "section": "Language",
+    "difficulty": "hard",
+    "question": "Which word is a synonym for 'rapid'?",
+    "options": [
+      {
+        "label": "A",
+        "text": "slow"
+      },
+      {
+        "label": "B",
+        "text": "quiet"
+      },
+      {
+        "label": "C",
+        "text": "dull"
+      },
+      {
+        "label": "D",
+        "text": "fast"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Rapid means fast."
+  },
+  {
+    "id": "terra_193",
+    "exam": "TerraNova",
+    "section": "Language",
+    "difficulty": "easy",
+    "question": "Which sentence is punctuated correctly?",
+    "options": [
+      {
+        "label": "A",
+        "text": "After lunch, the class returned to science."
+      },
+      {
+        "label": "B",
+        "text": "After lunch the class returned, to science."
+      },
+      {
+        "label": "C",
+        "text": "After lunch the class returned to science"
+      },
+      {
+        "label": "D",
+        "text": "After lunch; the class returned to science"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Comma after introductory phrase."
+  },
+  {
+    "id": "terra_194",
+    "exam": "TerraNova",
+    "section": "Science",
+    "difficulty": "medium",
+    "question": "Which planet is closest to the Sun?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Mars"
+      },
+      {
+        "label": "B",
+        "text": "Mercury"
+      },
+      {
+        "label": "C",
+        "text": "Venus"
+      },
+      {
+        "label": "D",
+        "text": "Earth"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Mercury is the closest planet."
+  },
+  {
+    "id": "terra_195",
+    "exam": "TerraNova",
+    "section": "Social Studies",
+    "difficulty": "hard",
+    "question": "Why do communities elect leaders?",
+    "options": [
+      {
+        "label": "A",
+        "text": "To eliminate disagreements forever"
+      },
+      {
+        "label": "B",
+        "text": "To prevent rules"
+      },
+      {
+        "label": "C",
+        "text": "To organize decisions and represent citizens"
+      },
+      {
+        "label": "D",
+        "text": "To stop communication"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Leaders help coordinate decisions."
+  },
+  {
+    "id": "terra_196",
+    "exam": "TerraNova",
+    "section": "Math",
+    "difficulty": "easy",
+    "question": "Which number is the greatest?",
+    "options": [
+      {
+        "label": "A",
+        "text": "0.8"
+      },
+      {
+        "label": "B",
+        "text": "0.75"
+      },
+      {
+        "label": "C",
+        "text": "0.85"
+      },
+      {
+        "label": "D",
+        "text": "0.9"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Compare decimals; 0.9 is largest."
+  },
+  {
+    "id": "terra_197",
+    "exam": "TerraNova",
+    "section": "Language",
+    "difficulty": "medium",
+    "question": "Which word is a synonym for 'rapid'?",
+    "options": [
+      {
+        "label": "A",
+        "text": "fast"
+      },
+      {
+        "label": "B",
+        "text": "slow"
+      },
+      {
+        "label": "C",
+        "text": "quiet"
+      },
+      {
+        "label": "D",
+        "text": "dull"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Rapid means fast."
+  },
+  {
+    "id": "terra_198",
+    "exam": "TerraNova",
+    "section": "Language",
+    "difficulty": "hard",
+    "question": "Which sentence is punctuated correctly?",
+    "options": [
+      {
+        "label": "A",
+        "text": "After lunch the class returned, to science."
+      },
+      {
+        "label": "B",
+        "text": "After lunch, the class returned to science."
+      },
+      {
+        "label": "C",
+        "text": "After lunch the class returned to science"
+      },
+      {
+        "label": "D",
+        "text": "After lunch; the class returned to science"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Comma after introductory phrase."
+  },
+  {
+    "id": "terra_199",
+    "exam": "TerraNova",
+    "section": "Science",
+    "difficulty": "easy",
+    "question": "Which planet is closest to the Sun?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Mars"
+      },
+      {
+        "label": "B",
+        "text": "Venus"
+      },
+      {
+        "label": "C",
+        "text": "Mercury"
+      },
+      {
+        "label": "D",
+        "text": "Earth"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Mercury is the closest planet."
+  },
+  {
+    "id": "terra_200",
+    "exam": "TerraNova",
+    "section": "Social Studies",
+    "difficulty": "medium",
+    "question": "Why do communities elect leaders?",
+    "options": [
+      {
+        "label": "A",
+        "text": "To eliminate disagreements forever"
+      },
+      {
+        "label": "B",
+        "text": "To prevent rules"
+      },
+      {
+        "label": "C",
+        "text": "To stop communication"
+      },
+      {
+        "label": "D",
+        "text": "To organize decisions and represent citizens"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Leaders help coordinate decisions."
+  }
+]

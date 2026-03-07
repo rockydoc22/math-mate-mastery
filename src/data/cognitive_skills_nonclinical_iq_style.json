@@ -1,0 +1,30 @@
+[
+  {
+    "id": "cog_001",
+    "type": "pattern",
+    "prompt": "Which number completes the pattern: 2, 4, 8, 16, ?",
+    "answer": "32",
+    "skill": "pattern recognition"
+  },
+  {
+    "id": "cog_002",
+    "type": "analogy",
+    "prompt": "Bird is to sky as fish is to ______.",
+    "answer": "water",
+    "skill": "verbal analogy"
+  },
+  {
+    "id": "cog_003",
+    "type": "sequence",
+    "prompt": "Arrange from smallest to largest: 0.2, 0.02, 0.002",
+    "answer": "0.002, 0.02, 0.2",
+    "skill": "numerical ordering"
+  },
+  {
+    "id": "cog_004",
+    "type": "logic",
+    "prompt": "All roses are flowers. Some flowers fade quickly. Which statement must be true?",
+    "answer": "Some roses may fade quickly.",
+    "skill": "logical reasoning"
+  }
+]
