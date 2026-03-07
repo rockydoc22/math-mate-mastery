@@ -1,0 +1,62 @@
+{
+  "title": "Test Strategy Game Engine",
+  "purpose": "Teach students how to take standardized tests strategically, not just memorize content.",
+  "core_modes": [
+    {
+      "id": "elimination_lab",
+      "name": "Elimination Lab",
+      "description": "Students practice crossing out weak answer choices before selecting the final answer.",
+      "scoring": {
+        "correct_final_answer": 10,
+        "correct_elimination": 3,
+        "wrong_elimination": -1
+      }
+    },
+    {
+      "id": "time_attack",
+      "name": "Time Attack",
+      "description": "Students practice pacing and learn when to move on instead of getting stuck.",
+      "scoring": {
+        "correct_under_target_time": 12,
+        "correct_over_target_time": 8,
+        "stuck_too_long_penalty": -3
+      }
+    },
+    {
+      "id": "confidence_meter",
+      "name": "Confidence Meter",
+      "description": "Students mark confidence after each answer to build metacognition and review habits.",
+      "scoring": {
+        "correct_high_confidence": 12,
+        "correct_low_confidence": 9,
+        "wrong_high_confidence_flag": "review_priority"
+      }
+    },
+    {
+      "id": "boss_battle_review",
+      "name": "Boss Battle Review",
+      "description": "Students clear a themed set by answering a streak of mixed-difficulty questions.",
+      "scoring": {
+        "per_correct": 10,
+        "streak_bonus_every_5": 10
+      }
+    }
+  ],
+  "strategy_skills": [
+    "eliminate_extreme_answers",
+    "plug_in_numbers",
+    "backsolve_from_choices",
+    "mark_and_return",
+    "sentence_before_sentence_after",
+    "main_idea_before_detail",
+    "units_and_labels_check",
+    "estimate_before_calculating"
+  ],
+  "ui_recommendations": [
+    "Show one question at a time",
+    "Allow flagging for review",
+    "Track average time per question type",
+    "Display explanation after each question or after round",
+    "Reward smart skips, not just raw speed"
+  ]
+}
