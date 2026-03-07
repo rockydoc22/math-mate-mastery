@@ -1,0 +1,15 @@
+{
+  "title": "Cognitive Skills Feedback Rules",
+  "rules": [
+    "Do not present a global IQ score.",
+    "Return skill-band feedback such as emerging, developing, strong, or advanced practice-ready.",
+    "Show strengths and next-step exercises instead of labels.",
+    "Keep all feedback educational and non-clinical."
+  ],
+  "skill_bands": {
+    "emerging": "Still building this skill; shorter and simpler practice is recommended.",
+    "developing": "Showing progress; benefit from repeated practice with feedback.",
+    "strong": "Consistent performance; ready for harder items.",
+    "advanced_practice_ready": "Performs well on current items; can move to more complex reasoning."
+  }
+}

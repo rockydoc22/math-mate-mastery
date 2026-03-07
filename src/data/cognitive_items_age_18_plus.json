@@ -1,0 +1,56 @@
+[
+  {
+    "id": "18plus_001",
+    "age_range": "18+",
+    "type": "critical_reasoning",
+    "prompt": "A study shows coffee drinkers scored higher on a test. What is a possible alternative explanation?",
+    "answer": "coffee drinkers may also have different study habits",
+    "skill": "critical reasoning",
+    "difficulty": "hard"
+  },
+  {
+    "id": "18plus_002",
+    "age_range": "18+",
+    "type": "pattern",
+    "prompt": "Find the next term: 1, 1, 2, 3, 5, 8, __",
+    "answer": "13",
+    "skill": "advanced pattern recognition",
+    "difficulty": "medium"
+  },
+  {
+    "id": "18plus_003",
+    "age_range": "18+",
+    "type": "working_memory",
+    "prompt": "Remember: bridge, copper, lantern, velvet, river. What was the second word?",
+    "answer": "copper",
+    "skill": "working memory",
+    "difficulty": "medium"
+  },
+  {
+    "id": "18plus_004",
+    "age_range": "18+",
+    "type": "processing_speed",
+    "prompt": "Which is different: thesis, essay, argument, pineapple",
+    "answer": "pineapple",
+    "skill": "processing speed",
+    "difficulty": "easy"
+  },
+  {
+    "id": "18plus_005",
+    "age_range": "18+",
+    "type": "logic",
+    "prompt": "If no artists are careless and some painters are artists, what must be true?",
+    "answer": "some painters are not careless",
+    "skill": "critical reasoning",
+    "difficulty": "hard"
+  },
+  {
+    "id": "18plus_006",
+    "age_range": "18+",
+    "type": "decision_strategy",
+    "prompt": "If two answer choices remain and one is extreme while the other is moderate, what is usually better to examine first?",
+    "answer": "the extreme choice, to test whether it is unsupported",
+    "skill": "decision strategy",
+    "difficulty": "hard"
+  }
+]

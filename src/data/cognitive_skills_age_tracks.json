@@ -1,0 +1,50 @@
+{
+  "title": "Cognitive Skills Track by Age",
+  "required_banner": "Educational cognitive-skills practice only. Not an IQ test, not a clinical assessment, and not a diagnostic instrument.",
+  "tracks": [
+    {
+      "age_range": "6-8",
+      "focus_skills": [
+        "pattern recognition",
+        "basic sequencing",
+        "simple analogies",
+        "visual matching",
+        "attention control"
+      ],
+      "recommended_session_length_min": 8
+    },
+    {
+      "age_range": "9-12",
+      "focus_skills": [
+        "number patterns",
+        "verbal analogies",
+        "multi-step sequencing",
+        "working memory",
+        "logic basics"
+      ],
+      "recommended_session_length_min": 10
+    },
+    {
+      "age_range": "13-17",
+      "focus_skills": [
+        "abstract reasoning",
+        "logic chains",
+        "symbol patterns",
+        "working memory",
+        "decision speed"
+      ],
+      "recommended_session_length_min": 12
+    },
+    {
+      "age_range": "18+",
+      "focus_skills": [
+        "critical reasoning",
+        "advanced pattern recognition",
+        "working memory",
+        "processing speed",
+        "decision strategy"
+      ],
+      "recommended_session_length_min": 12
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+[
+  {
+    "id": "13_17_001",
+    "age_range": "13-17",
+    "type": "pattern",
+    "prompt": "Which number completes the pattern? 3, 6, 12, 24, __",
+    "answer": "48",
+    "skill": "abstract reasoning",
+    "difficulty": "medium"
+  },
+  {
+    "id": "13_17_002",
+    "age_range": "13-17",
+    "type": "logic_chain",
+    "prompt": "If A implies B and B implies C, what follows if A is true?",
+    "answer": "C is true",
+    "skill": "logic chains",
+    "difficulty": "medium"
+  },
+  {
+    "id": "13_17_003",
+    "age_range": "13-17",
+    "type": "analogy",
+    "prompt": "Blueprint is to building as recipe is to __",
+    "answer": "meal",
+    "skill": "abstract reasoning",
+    "difficulty": "medium"
+  },
+  {
+    "id": "13_17_004",
+    "age_range": "13-17",
+    "type": "memory",
+    "prompt": "Remember: 8, 2, 9, 4, 1. What was the fourth number?",
+    "answer": "4",
+    "skill": "working memory",
+    "difficulty": "medium"
+  },
+  {
+    "id": "13_17_005",
+    "age_range": "13-17",
+    "type": "decision",
+    "prompt": "You are stuck on a hard puzzle after 90 seconds. Best next move?",
+    "answer": "mark it and move on, then return later",
+    "skill": "decision strategy",
+    "difficulty": "hard"
+  },
+  {
+    "id": "13_17_006",
+    "age_range": "13-17",
+    "type": "sequence",
+    "prompt": "Arrange by value from least to greatest: 3/4, 0.6, 2/3",
+    "answer": "0.6, 2/3, 3/4",
+    "skill": "sequencing",
+    "difficulty": "hard"
+  }
+]
