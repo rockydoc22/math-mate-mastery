@@ -1,0 +1,42 @@
+{
+  "title": "Cognitive Skills Game Modes",
+  "modes": [
+    {
+      "id": "pattern_race",
+      "name": "Pattern Race",
+      "best_for": [
+        "6-8",
+        "9-12"
+      ],
+      "description": "Students solve pattern items in short bursts and earn stars for streaks."
+    },
+    {
+      "id": "memory_ladder",
+      "name": "Memory Ladder",
+      "best_for": [
+        "9-12",
+        "13-17",
+        "18+"
+      ],
+      "description": "Memory items grow slightly harder as learners climb levels."
+    },
+    {
+      "id": "logic_detective",
+      "name": "Logic Detective",
+      "best_for": [
+        "13-17",
+        "18+"
+      ],
+      "description": "Students solve reasoning clues and unlock the next case."
+    },
+    {
+      "id": "quick_sort",
+      "name": "Quick Sort",
+      "best_for": [
+        "6-8",
+        "9-12"
+      ],
+      "description": "Ordering and classification challenges with immediate feedback."
+    }
+  ]
+}

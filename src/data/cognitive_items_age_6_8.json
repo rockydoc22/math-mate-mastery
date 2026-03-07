@@ -1,0 +1,56 @@
+[
+  {
+    "id": "6_8_001",
+    "age_range": "6-8",
+    "type": "pattern",
+    "prompt": "Which number comes next? 2, 4, 6, 8, __",
+    "answer": "10",
+    "skill": "pattern recognition",
+    "difficulty": "easy"
+  },
+  {
+    "id": "6_8_002",
+    "age_range": "6-8",
+    "type": "analogy",
+    "prompt": "Cat is to kitten as dog is to __",
+    "answer": "puppy",
+    "skill": "simple analogies",
+    "difficulty": "easy"
+  },
+  {
+    "id": "6_8_003",
+    "age_range": "6-8",
+    "type": "sequence",
+    "prompt": "Put in order from smallest to biggest: 3, 1, 2",
+    "answer": "1, 2, 3",
+    "skill": "sequencing",
+    "difficulty": "easy"
+  },
+  {
+    "id": "6_8_004",
+    "age_range": "6-8",
+    "type": "logic",
+    "prompt": "If all apples are fruit, is an apple a fruit?",
+    "answer": "yes",
+    "skill": "logic basics",
+    "difficulty": "easy"
+  },
+  {
+    "id": "6_8_005",
+    "age_range": "6-8",
+    "type": "visual_text",
+    "prompt": "Which shape name is different: circle, square, triangle, banana",
+    "answer": "banana",
+    "skill": "attention control",
+    "difficulty": "easy"
+  },
+  {
+    "id": "6_8_006",
+    "age_range": "6-8",
+    "type": "memory",
+    "prompt": "Remember these: red, blue, green. Which color was in the middle?",
+    "answer": "blue",
+    "skill": "working memory",
+    "difficulty": "easy"
+  }
+]

@@ -1,0 +1,56 @@
+[
+  {
+    "id": "9_12_001",
+    "age_range": "9-12",
+    "type": "pattern",
+    "prompt": "Which number comes next? 5, 10, 20, 40, __",
+    "answer": "80",
+    "skill": "number patterns",
+    "difficulty": "medium"
+  },
+  {
+    "id": "9_12_002",
+    "age_range": "9-12",
+    "type": "analogy",
+    "prompt": "Bird is to nest as bee is to __",
+    "answer": "hive",
+    "skill": "verbal analogies",
+    "difficulty": "medium"
+  },
+  {
+    "id": "9_12_003",
+    "age_range": "9-12",
+    "type": "sequence",
+    "prompt": "Arrange from least to greatest: 0.5, 0.05, 0.005",
+    "answer": "0.005, 0.05, 0.5",
+    "skill": "multi-step sequencing",
+    "difficulty": "medium"
+  },
+  {
+    "id": "9_12_004",
+    "age_range": "9-12",
+    "type": "logic",
+    "prompt": "All roses are flowers. All flowers need water. Do roses need water?",
+    "answer": "yes",
+    "skill": "logic basics",
+    "difficulty": "medium"
+  },
+  {
+    "id": "9_12_005",
+    "age_range": "9-12",
+    "type": "memory",
+    "prompt": "Remember: train, apple, chair, moon. What was the third word?",
+    "answer": "chair",
+    "skill": "working memory",
+    "difficulty": "medium"
+  },
+  {
+    "id": "9_12_006",
+    "age_range": "9-12",
+    "type": "classification",
+    "prompt": "Which does not belong: rectangle, triangle, circle, sandwich",
+    "answer": "sandwich",
+    "skill": "attention control",
+    "difficulty": "medium"
+  }
+]
