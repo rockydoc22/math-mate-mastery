@@ -1,0 +1,14 @@
+{
+  "title": "Timed Mode Engine",
+  "features": [
+    "per_question_timer",
+    "section_timer",
+    "skip_and_return",
+    "review_marking"
+  ],
+  "scoring_rules": [
+    "bonus_for_fast_correct",
+    "no_penalty_for_skip",
+    "penalty_for_guess_if_low_confidence"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "title": "Testing App Alternative Assessment + Strategy Engine Pack",
+  "files": [
+    "alternative_assessment_models.json",
+    "strategy_game_modes.json",
+    "timed_modes_engine_spec.json",
+    "review_analytics_spec.json",
+    "sample_non_mcq_questions.json"
+  ]
+}
