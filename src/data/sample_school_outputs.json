@@ -1,0 +1,29 @@
+{
+  "title": "Sample School / Program Outputs",
+  "examples": [
+    {
+      "profile": "Elementary school language program",
+      "output": {
+        "default_policy": "team_only leaderboards, duels off, stories + vocabulary on",
+        "top_metric": "weekly stories completed",
+        "recommended_next_action": "assign short conversation packs to grades 4-5"
+      }
+    },
+    {
+      "profile": "High school SAT prep cohort",
+      "output": {
+        "default_policy": "timed modes on, strategy training on, nickname leaderboard on",
+        "top_metric": "accuracy growth by section",
+        "recommended_next_action": "create small intervention groups for reading inference"
+      }
+    },
+    {
+      "profile": "Homeschool micro-cohort",
+      "output": {
+        "default_policy": "parent summaries on, assignments hybrid, flexible module access",
+        "top_metric": "minutes practiced per student",
+        "recommended_next_action": "launch weekly quest bundle across mixed ages"
+      }
+    }
+  ]
+}

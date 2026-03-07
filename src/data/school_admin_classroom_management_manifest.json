@@ -1,0 +1,12 @@
+{
+  "title": "School Admin / Classroom Management Pack",
+  "files": [
+    "school_admin_layer_spec.json",
+    "roster_and_org_schema.json",
+    "admin_dashboard_spec.json",
+    "school_defaults_and_policies.json",
+    "bulk_actions_and_exports.json",
+    "alerts_and_support_rules.json",
+    "sample_school_outputs.json"
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "title": "Admin Dashboard Spec",
+  "views": [
+    "school_overview",
+    "classroom_usage_table",
+    "teacher_activity_view",
+    "student_growth_distribution",
+    "license_usage_view",
+    "settings_and_defaults",
+    "alerts_and_support"
+  ],
+  "top_metrics": [
+    "active_students",
+    "active_teachers",
+    "weekly_minutes",
+    "completion_rate",
+    "school_average_accuracy",
+    "top_used_modules",
+    "students_needing_support",
+    "license_seats_used"
+  ],
+  "highlight_cards": [
+    "most active class",
+    "highest growth class",
+    "lowest engagement class",
+    "strongest subject area",
+    "support needed alert"
+  ]
+}

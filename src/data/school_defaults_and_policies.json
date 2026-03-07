@@ -1,0 +1,53 @@
+{
+  "title": "School Defaults and Policies",
+  "policy_areas": [
+    "leaderboard_visibility",
+    "duel_mode_enabled",
+    "nickname_mode_default",
+    "parent_email_enabled",
+    "assignment_required_default",
+    "time_limit_default_optional",
+    "coin_spending_mode",
+    "allowed_modules"
+  ],
+  "recommended_defaults": {
+    "elementary": {
+      "leaderboards": "team_only",
+      "duels": false,
+      "nickname_mode": true,
+      "coin_spending": "locked_or_auto_unlock",
+      "allowed_modules": [
+        "stories",
+        "vocabulary",
+        "conversation",
+        "cognitive_skills"
+      ]
+    },
+    "middle_school": {
+      "leaderboards": "nickname_only",
+      "duels": true,
+      "nickname_mode": true,
+      "coin_spending": "limited",
+      "allowed_modules": [
+        "stories",
+        "conversation",
+        "quizzes",
+        "daily_quests",
+        "duels"
+      ]
+    },
+    "high_school": {
+      "leaderboards": true,
+      "duels": true,
+      "nickname_mode": false,
+      "coin_spending": "normal",
+      "allowed_modules": [
+        "testing",
+        "timed_modes",
+        "strategy_training",
+        "leaderboards",
+        "assignments"
+      ]
+    }
+  }
+}

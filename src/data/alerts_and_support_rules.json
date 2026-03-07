@@ -1,0 +1,27 @@
+{
+  "title": "Alerts and Support Rules",
+  "alerts": [
+    {
+      "id": "low_engagement_class",
+      "message": "A class has dropped in weekly activity."
+    },
+    {
+      "id": "teacher_inactive",
+      "message": "A teacher has not assigned work recently."
+    },
+    {
+      "id": "student_support_cluster",
+      "message": "A group of students is struggling with the same skill."
+    },
+    {
+      "id": "license_limit_approaching",
+      "message": "Available seats are running low."
+    }
+  ],
+  "recommended_actions": [
+    "suggest a short assignment pack",
+    "suggest parent summary push",
+    "suggest intervention grouping",
+    "suggest teacher reminder"
+  ]
+}

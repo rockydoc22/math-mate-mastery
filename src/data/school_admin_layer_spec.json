@@ -1,0 +1,28 @@
+{
+  "title": "School Admin / Classroom Management Layer",
+  "purpose": "Give schools, tutoring programs, and homeschool groups a light management layer above teacher and parent tools.",
+  "core_entities": [
+    "school",
+    "program",
+    "classroom",
+    "teacher",
+    "student",
+    "group",
+    "license_seat"
+  ],
+  "core_capabilities": [
+    "manage classes and rosters",
+    "assign teachers to classes",
+    "group students by level or language",
+    "view school-wide usage and progress",
+    "set school defaults for privacy and competition",
+    "enable / disable app modules by program",
+    "track license usage"
+  ],
+  "design_rules": [
+    "Keep admin workflows simple and bulk-friendly.",
+    "Support both school-wide and small-program use cases.",
+    "Do not require enterprise-level configuration for MVP.",
+    "Allow school defaults to cascade to teachers while still permitting teacher flexibility."
+  ]
+}

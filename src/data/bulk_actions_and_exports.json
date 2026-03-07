@@ -1,0 +1,19 @@
+{
+  "title": "Bulk Actions and Exports",
+  "bulk_actions": [
+    "import_roster_csv",
+    "assign_same_pack_to_multiple_classes",
+    "set_school_default_policy",
+    "archive_class",
+    "move_students_between_groups",
+    "send_parent_summary_batch",
+    "export_progress_reports"
+  ],
+  "export_types": [
+    "CSV classroom progress",
+    "JSON school analytics",
+    "parent summary export",
+    "teacher activity export"
+  ],
+  "mvp_note": "CSV import/export plus simple JSON exports are enough for the first version."
+}
