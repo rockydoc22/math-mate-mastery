@@ -1,0 +1,35 @@
+{
+  "title": "Sample Leaderboard Outputs",
+  "examples": [
+    {
+      "mode": "class_weekly_leaderboard",
+      "theme": "Vocabulary Week",
+      "primary_metric": "weekly_points",
+      "top_display": [
+        "1. Atlas Team",
+        "2. River Team",
+        "3. Ember Team"
+      ]
+    },
+    {
+      "mode": "testing_app_improvement_board",
+      "theme": "Accuracy Growth",
+      "primary_metric": "improvement_score",
+      "top_display": [
+        "Most improved in algebra",
+        "Most improved in reading inference",
+        "Most consistent timed practice"
+      ]
+    },
+    {
+      "mode": "young_kids_team_view",
+      "theme": "Story Stars",
+      "primary_metric": "consistency_score",
+      "top_display": [
+        "Blue Team: 82 stars",
+        "Green Team: 79 stars",
+        "Red Team: 75 stars"
+      ]
+    }
+  ]
+}

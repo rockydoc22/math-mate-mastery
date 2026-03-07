@@ -1,0 +1,13 @@
+{
+  "title": "Leaderboard + Classroom Competition Pack",
+  "files": [
+    "leaderboard_system_spec.json",
+    "leaderboard_metrics.json",
+    "leaderboard_scoring_models.json",
+    "team_competition_modes.json",
+    "leaderboard_privacy_safety.json",
+    "leaderboard_ui_spec.json",
+    "leaderboard_rewards.json",
+    "leaderboard_sample_outputs.json"
+  ]
+}

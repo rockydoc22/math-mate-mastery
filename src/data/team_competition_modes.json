@@ -1,0 +1,25 @@
+{
+  "title": "Team Competition Modes",
+  "modes": [
+    {
+      "id": "house_points",
+      "name": "House Points",
+      "description": "Students contribute points to a team instead of only competing individually."
+    },
+    {
+      "id": "reading_relay",
+      "name": "Reading Relay",
+      "description": "Teams unlock checkpoints by completing stories or reading sets."
+    },
+    {
+      "id": "conversation_cup",
+      "name": "Conversation Cup",
+      "description": "Teams earn points from conversation completions and mastery growth."
+    },
+    {
+      "id": "strategy_showdown",
+      "name": "Strategy Showdown",
+      "description": "Testing groups earn points from strategy scenarios and timed rounds."
+    }
+  ]
+}

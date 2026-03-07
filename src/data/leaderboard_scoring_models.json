@@ -1,0 +1,27 @@
+{
+  "title": "Leaderboard Scoring Models",
+  "models": [
+    {
+      "id": "weekly_points",
+      "formula": "coins_earned + quest_bonus + streak_bonus"
+    },
+    {
+      "id": "improvement_score",
+      "formula": "current_week_accuracy - previous_week_accuracy + completion_growth"
+    },
+    {
+      "id": "consistency_score",
+      "formula": "streak_days + sessions_completed + on_time_assignments"
+    },
+    {
+      "id": "mastery_score",
+      "formula": "mastery_upgrades + strong_lines + strong_skill_buckets"
+    }
+  ],
+  "recommended_defaults": {
+    "language_app": "consistency_score",
+    "testing_app": "improvement_score",
+    "classroom_mode": "weekly_points",
+    "younger_kids": "consistency_score"
+  }
+}
