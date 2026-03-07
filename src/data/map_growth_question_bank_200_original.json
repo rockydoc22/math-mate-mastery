@@ -1,0 +1,5402 @@
+[
+  {
+    "id": "map_001",
+    "exam": "MAP Growth Practice",
+    "section": "Math",
+    "difficulty": "easy",
+    "question": "Solve: 7 + 6 \u00d7 2",
+    "options": [
+      {
+        "label": "A",
+        "text": "19"
+      },
+      {
+        "label": "B",
+        "text": "26"
+      },
+      {
+        "label": "C",
+        "text": "13"
+      },
+      {
+        "label": "D",
+        "text": "20"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Multiply first: 6\u00d72=12, then add 7."
+  },
+  {
+    "id": "map_002",
+    "exam": "MAP Growth Practice",
+    "section": "Reading",
+    "difficulty": "medium",
+    "question": "Which sentence best summarizes a paragraph?",
+    "options": [
+      {
+        "label": "A",
+        "text": "It adds new details"
+      },
+      {
+        "label": "B",
+        "text": "It states the main idea in fewer words."
+      },
+      {
+        "label": "C",
+        "text": "It repeats every sentence"
+      },
+      {
+        "label": "D",
+        "text": "It changes the topic"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "A summary condenses the main idea."
+  },
+  {
+    "id": "map_003",
+    "exam": "MAP Growth Practice",
+    "section": "Science",
+    "difficulty": "hard",
+    "question": "Plants produce food through which process?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Respiration"
+      },
+      {
+        "label": "B",
+        "text": "Fermentation"
+      },
+      {
+        "label": "C",
+        "text": "Photosynthesis"
+      },
+      {
+        "label": "D",
+        "text": "Digestion"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Photosynthesis converts light energy to chemical energy."
+  },
+  {
+    "id": "map_004",
+    "exam": "MAP Growth Practice",
+    "section": "Math",
+    "difficulty": "easy",
+    "question": "What fraction equals 0.5?",
+    "options": [
+      {
+        "label": "A",
+        "text": "1/3"
+      },
+      {
+        "label": "B",
+        "text": "2/3"
+      },
+      {
+        "label": "C",
+        "text": "3/4"
+      },
+      {
+        "label": "D",
+        "text": "1/2"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "0.5 equals one half."
+  },
+  {
+    "id": "map_005",
+    "exam": "MAP Growth Practice",
+    "section": "Math",
+    "difficulty": "medium",
+    "question": "Solve: 7 + 6 \u00d7 2",
+    "options": [
+      {
+        "label": "A",
+        "text": "19"
+      },
+      {
+        "label": "B",
+        "text": "26"
+      },
+      {
+        "label": "C",
+        "text": "13"
+      },
+      {
+        "label": "D",
+        "text": "20"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Multiply first: 6\u00d72=12, then add 7."
+  },
+  {
+    "id": "map_006",
+    "exam": "MAP Growth Practice",
+    "section": "Reading",
+    "difficulty": "hard",
+    "question": "Which sentence best summarizes a paragraph?",
+    "options": [
+      {
+        "label": "A",
+        "text": "It adds new details"
+      },
+      {
+        "label": "B",
+        "text": "It states the main idea in fewer words."
+      },
+      {
+        "label": "C",
+        "text": "It repeats every sentence"
+      },
+      {
+        "label": "D",
+        "text": "It changes the topic"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "A summary condenses the main idea."
+  },
+  {
+    "id": "map_007",
+    "exam": "MAP Growth Practice",
+    "section": "Science",
+    "difficulty": "easy",
+    "question": "Plants produce food through which process?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Respiration"
+      },
+      {
+        "label": "B",
+        "text": "Fermentation"
+      },
+      {
+        "label": "C",
+        "text": "Photosynthesis"
+      },
+      {
+        "label": "D",
+        "text": "Digestion"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Photosynthesis converts light energy to chemical energy."
+  },
+  {
+    "id": "map_008",
+    "exam": "MAP Growth Practice",
+    "section": "Math",
+    "difficulty": "medium",
+    "question": "What fraction equals 0.5?",
+    "options": [
+      {
+        "label": "A",
+        "text": "1/3"
+      },
+      {
+        "label": "B",
+        "text": "2/3"
+      },
+      {
+        "label": "C",
+        "text": "3/4"
+      },
+      {
+        "label": "D",
+        "text": "1/2"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "0.5 equals one half."
+  },
+  {
+    "id": "map_009",
+    "exam": "MAP Growth Practice",
+    "section": "Math",
+    "difficulty": "hard",
+    "question": "Solve: 7 + 6 \u00d7 2",
+    "options": [
+      {
+        "label": "A",
+        "text": "19"
+      },
+      {
+        "label": "B",
+        "text": "26"
+      },
+      {
+        "label": "C",
+        "text": "13"
+      },
+      {
+        "label": "D",
+        "text": "20"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Multiply first: 6\u00d72=12, then add 7."
+  },
+  {
+    "id": "map_010",
+    "exam": "MAP Growth Practice",
+    "section": "Reading",
+    "difficulty": "easy",
+    "question": "Which sentence best summarizes a paragraph?",
+    "options": [
+      {
+        "label": "A",
+        "text": "It adds new details"
+      },
+      {
+        "label": "B",
+        "text": "It states the main idea in fewer words."
+      },
+      {
+        "label": "C",
+        "text": "It repeats every sentence"
+      },
+      {
+        "label": "D",
+        "text": "It changes the topic"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "A summary condenses the main idea."
+  },
+  {
+    "id": "map_011",
+    "exam": "MAP Growth Practice",
+    "section": "Science",
+    "difficulty": "medium",
+    "question": "Plants produce food through which process?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Respiration"
+      },
+      {
+        "label": "B",
+        "text": "Fermentation"
+      },
+      {
+        "label": "C",
+        "text": "Photosynthesis"
+      },
+      {
+        "label": "D",
+        "text": "Digestion"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Photosynthesis converts light energy to chemical energy."
+  },
+  {
+    "id": "map_012",
+    "exam": "MAP Growth Practice",
+    "section": "Math",
+    "difficulty": "hard",
+    "question": "What fraction equals 0.5?",
+    "options": [
+      {
+        "label": "A",
+        "text": "1/3"
+      },
+      {
+        "label": "B",
+        "text": "2/3"
+      },
+      {
+        "label": "C",
+        "text": "3/4"
+      },
+      {
+        "label": "D",
+        "text": "1/2"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "0.5 equals one half."
+  },
+  {
+    "id": "map_013",
+    "exam": "MAP Growth Practice",
+    "section": "Math",
+    "difficulty": "easy",
+    "question": "Solve: 7 + 6 \u00d7 2",
+    "options": [
+      {
+        "label": "A",
+        "text": "19"
+      },
+      {
+        "label": "B",
+        "text": "26"
+      },
+      {
+        "label": "C",
+        "text": "13"
+      },
+      {
+        "label": "D",
+        "text": "20"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Multiply first: 6\u00d72=12, then add 7."
+  },
+  {
+    "id": "map_014",
+    "exam": "MAP Growth Practice",
+    "section": "Reading",
+    "difficulty": "medium",
+    "question": "Which sentence best summarizes a paragraph?",
+    "options": [
+      {
+        "label": "A",
+        "text": "It adds new details"
+      },
+      {
+        "label": "B",
+        "text": "It states the main idea in fewer words."
+      },
+      {
+        "label": "C",
+        "text": "It repeats every sentence"
+      },
+      {
+        "label": "D",
+        "text": "It changes the topic"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "A summary condenses the main idea."
+  },
+  {
+    "id": "map_015",
+    "exam": "MAP Growth Practice",
+    "section": "Science",
+    "difficulty": "hard",
+    "question": "Plants produce food through which process?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Respiration"
+      },
+      {
+        "label": "B",
+        "text": "Fermentation"
+      },
+      {
+        "label": "C",
+        "text": "Photosynthesis"
+      },
+      {
+        "label": "D",
+        "text": "Digestion"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Photosynthesis converts light energy to chemical energy."
+  },
+  {
+    "id": "map_016",
+    "exam": "MAP Growth Practice",
+    "section": "Math",
+    "difficulty": "easy",
+    "question": "What fraction equals 0.5?",
+    "options": [
+      {
+        "label": "A",
+        "text": "1/3"
+      },
+      {
+        "label": "B",
+        "text": "2/3"
+      },
+      {
+        "label": "C",
+        "text": "3/4"
+      },
+      {
+        "label": "D",
+        "text": "1/2"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "0.5 equals one half."
+  },
+  {
+    "id": "map_017",
+    "exam": "MAP Growth Practice",
+    "section": "Math",
+    "difficulty": "medium",
+    "question": "Solve: 7 + 6 \u00d7 2",
+    "options": [
+      {
+        "label": "A",
+        "text": "19"
+      },
+      {
+        "label": "B",
+        "text": "26"
+      },
+      {
+        "label": "C",
+        "text": "13"
+      },
+      {
+        "label": "D",
+        "text": "20"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Multiply first: 6\u00d72=12, then add 7."
+  },
+  {
+    "id": "map_018",
+    "exam": "MAP Growth Practice",
+    "section": "Reading",
+    "difficulty": "hard",
+    "question": "Which sentence best summarizes a paragraph?",
+    "options": [
+      {
+        "label": "A",
+        "text": "It adds new details"
+      },
+      {
+        "label": "B",
+        "text": "It states the main idea in fewer words."
+      },
+      {
+        "label": "C",
+        "text": "It repeats every sentence"
+      },
+      {
+        "label": "D",
+        "text": "It changes the topic"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "A summary condenses the main idea."
+  },
+  {
+    "id": "map_019",
+    "exam": "MAP Growth Practice",
+    "section": "Science",
+    "difficulty": "easy",
+    "question": "Plants produce food through which process?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Respiration"
+      },
+      {
+        "label": "B",
+        "text": "Fermentation"
+      },
+      {
+        "label": "C",
+        "text": "Photosynthesis"
+      },
+      {
+        "label": "D",
+        "text": "Digestion"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Photosynthesis converts light energy to chemical energy."
+  },
+  {
+    "id": "map_020",
+    "exam": "MAP Growth Practice",
+    "section": "Math",
+    "difficulty": "medium",
+    "question": "What fraction equals 0.5?",
+    "options": [
+      {
+        "label": "A",
+        "text": "1/3"
+      },
+      {
+        "label": "B",
+        "text": "2/3"
+      },
+      {
+        "label": "C",
+        "text": "3/4"
+      },
+      {
+        "label": "D",
+        "text": "1/2"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "0.5 equals one half."
+  },
+  {
+    "id": "map_021",
+    "exam": "MAP Growth Practice",
+    "section": "Math",
+    "difficulty": "hard",
+    "question": "Solve: 7 + 6 \u00d7 2",
+    "options": [
+      {
+        "label": "A",
+        "text": "19"
+      },
+      {
+        "label": "B",
+        "text": "26"
+      },
+      {
+        "label": "C",
+        "text": "13"
+      },
+      {
+        "label": "D",
+        "text": "20"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Multiply first: 6\u00d72=12, then add 7."
+  },
+  {
+    "id": "map_022",
+    "exam": "MAP Growth Practice",
+    "section": "Reading",
+    "difficulty": "easy",
+    "question": "Which sentence best summarizes a paragraph?",
+    "options": [
+      {
+        "label": "A",
+        "text": "It adds new details"
+      },
+      {
+        "label": "B",
+        "text": "It states the main idea in fewer words."
+      },
+      {
+        "label": "C",
+        "text": "It repeats every sentence"
+      },
+      {
+        "label": "D",
+        "text": "It changes the topic"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "A summary condenses the main idea."
+  },
+  {
+    "id": "map_023",
+    "exam": "MAP Growth Practice",
+    "section": "Science",
+    "difficulty": "medium",
+    "question": "Plants produce food through which process?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Respiration"
+      },
+      {
+        "label": "B",
+        "text": "Fermentation"
+      },
+      {
+        "label": "C",
+        "text": "Photosynthesis"
+      },
+      {
+        "label": "D",
+        "text": "Digestion"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Photosynthesis converts light energy to chemical energy."
+  },
+  {
+    "id": "map_024",
+    "exam": "MAP Growth Practice",
+    "section": "Math",
+    "difficulty": "hard",
+    "question": "What fraction equals 0.5?",
+    "options": [
+      {
+        "label": "A",
+        "text": "1/3"
+      },
+      {
+        "label": "B",
+        "text": "2/3"
+      },
+      {
+        "label": "C",
+        "text": "3/4"
+      },
+      {
+        "label": "D",
+        "text": "1/2"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "0.5 equals one half."
+  },
+  {
+    "id": "map_025",
+    "exam": "MAP Growth Practice",
+    "section": "Math",
+    "difficulty": "easy",
+    "question": "Solve: 7 + 6 \u00d7 2",
+    "options": [
+      {
+        "label": "A",
+        "text": "19"
+      },
+      {
+        "label": "B",
+        "text": "26"
+      },
+      {
+        "label": "C",
+        "text": "13"
+      },
+      {
+        "label": "D",
+        "text": "20"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Multiply first: 6\u00d72=12, then add 7."
+  },
+  {
+    "id": "map_026",
+    "exam": "MAP Growth Practice",
+    "section": "Reading",
+    "difficulty": "medium",
+    "question": "Which sentence best summarizes a paragraph?",
+    "options": [
+      {
+        "label": "A",
+        "text": "It adds new details"
+      },
+      {
+        "label": "B",
+        "text": "It states the main idea in fewer words."
+      },
+      {
+        "label": "C",
+        "text": "It repeats every sentence"
+      },
+      {
+        "label": "D",
+        "text": "It changes the topic"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "A summary condenses the main idea."
+  },
+  {
+    "id": "map_027",
+    "exam": "MAP Growth Practice",
+    "section": "Science",
+    "difficulty": "hard",
+    "question": "Plants produce food through which process?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Respiration"
+      },
+      {
+        "label": "B",
+        "text": "Fermentation"
+      },
+      {
+        "label": "C",
+        "text": "Photosynthesis"
+      },
+      {
+        "label": "D",
+        "text": "Digestion"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Photosynthesis converts light energy to chemical energy."
+  },
+  {
+    "id": "map_028",
+    "exam": "MAP Growth Practice",
+    "section": "Math",
+    "difficulty": "easy",
+    "question": "What fraction equals 0.5?",
+    "options": [
+      {
+        "label": "A",
+        "text": "1/3"
+      },
+      {
+        "label": "B",
+        "text": "2/3"
+      },
+      {
+        "label": "C",
+        "text": "3/4"
+      },
+      {
+        "label": "D",
+        "text": "1/2"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "0.5 equals one half."
+  },
+  {
+    "id": "map_029",
+    "exam": "MAP Growth Practice",
+    "section": "Math",
+    "difficulty": "medium",
+    "question": "Solve: 7 + 6 \u00d7 2",
+    "options": [
+      {
+        "label": "A",
+        "text": "19"
+      },
+      {
+        "label": "B",
+        "text": "26"
+      },
+      {
+        "label": "C",
+        "text": "13"
+      },
+      {
+        "label": "D",
+        "text": "20"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Multiply first: 6\u00d72=12, then add 7."
+  },
+  {
+    "id": "map_030",
+    "exam": "MAP Growth Practice",
+    "section": "Reading",
+    "difficulty": "hard",
+    "question": "Which sentence best summarizes a paragraph?",
+    "options": [
+      {
+        "label": "A",
+        "text": "It adds new details"
+      },
+      {
+        "label": "B",
+        "text": "It states the main idea in fewer words."
+      },
+      {
+        "label": "C",
+        "text": "It repeats every sentence"
+      },
+      {
+        "label": "D",
+        "text": "It changes the topic"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "A summary condenses the main idea."
+  },
+  {
+    "id": "map_031",
+    "exam": "MAP Growth Practice",
+    "section": "Science",
+    "difficulty": "easy",
+    "question": "Plants produce food through which process?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Respiration"
+      },
+      {
+        "label": "B",
+        "text": "Fermentation"
+      },
+      {
+        "label": "C",
+        "text": "Photosynthesis"
+      },
+      {
+        "label": "D",
+        "text": "Digestion"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Photosynthesis converts light energy to chemical energy."
+  },
+  {
+    "id": "map_032",
+    "exam": "MAP Growth Practice",
+    "section": "Math",
+    "difficulty": "medium",
+    "question": "What fraction equals 0.5?",
+    "options": [
+      {
+        "label": "A",
+        "text": "1/3"
+      },
+      {
+        "label": "B",
+        "text": "2/3"
+      },
+      {
+        "label": "C",
+        "text": "3/4"
+      },
+      {
+        "label": "D",
+        "text": "1/2"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "0.5 equals one half."
+  },
+  {
+    "id": "map_033",
+    "exam": "MAP Growth Practice",
+    "section": "Math",
+    "difficulty": "hard",
+    "question": "Solve: 7 + 6 \u00d7 2",
+    "options": [
+      {
+        "label": "A",
+        "text": "19"
+      },
+      {
+        "label": "B",
+        "text": "26"
+      },
+      {
+        "label": "C",
+        "text": "13"
+      },
+      {
+        "label": "D",
+        "text": "20"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Multiply first: 6\u00d72=12, then add 7."
+  },
+  {
+    "id": "map_034",
+    "exam": "MAP Growth Practice",
+    "section": "Reading",
+    "difficulty": "easy",
+    "question": "Which sentence best summarizes a paragraph?",
+    "options": [
+      {
+        "label": "A",
+        "text": "It adds new details"
+      },
+      {
+        "label": "B",
+        "text": "It states the main idea in fewer words."
+      },
+      {
+        "label": "C",
+        "text": "It repeats every sentence"
+      },
+      {
+        "label": "D",
+        "text": "It changes the topic"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "A summary condenses the main idea."
+  },
+  {
+    "id": "map_035",
+    "exam": "MAP Growth Practice",
+    "section": "Science",
+    "difficulty": "medium",
+    "question": "Plants produce food through which process?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Respiration"
+      },
+      {
+        "label": "B",
+        "text": "Fermentation"
+      },
+      {
+        "label": "C",
+        "text": "Photosynthesis"
+      },
+      {
+        "label": "D",
+        "text": "Digestion"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Photosynthesis converts light energy to chemical energy."
+  },
+  {
+    "id": "map_036",
+    "exam": "MAP Growth Practice",
+    "section": "Math",
+    "difficulty": "hard",
+    "question": "What fraction equals 0.5?",
+    "options": [
+      {
+        "label": "A",
+        "text": "1/3"
+      },
+      {
+        "label": "B",
+        "text": "2/3"
+      },
+      {
+        "label": "C",
+        "text": "3/4"
+      },
+      {
+        "label": "D",
+        "text": "1/2"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "0.5 equals one half."
+  },
+  {
+    "id": "map_037",
+    "exam": "MAP Growth Practice",
+    "section": "Math",
+    "difficulty": "easy",
+    "question": "Solve: 7 + 6 \u00d7 2",
+    "options": [
+      {
+        "label": "A",
+        "text": "19"
+      },
+      {
+        "label": "B",
+        "text": "26"
+      },
+      {
+        "label": "C",
+        "text": "13"
+      },
+      {
+        "label": "D",
+        "text": "20"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Multiply first: 6\u00d72=12, then add 7."
+  },
+  {
+    "id": "map_038",
+    "exam": "MAP Growth Practice",
+    "section": "Reading",
+    "difficulty": "medium",
+    "question": "Which sentence best summarizes a paragraph?",
+    "options": [
+      {
+        "label": "A",
+        "text": "It adds new details"
+      },
+      {
+        "label": "B",
+        "text": "It states the main idea in fewer words."
+      },
+      {
+        "label": "C",
+        "text": "It repeats every sentence"
+      },
+      {
+        "label": "D",
+        "text": "It changes the topic"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "A summary condenses the main idea."
+  },
+  {
+    "id": "map_039",
+    "exam": "MAP Growth Practice",
+    "section": "Science",
+    "difficulty": "hard",
+    "question": "Plants produce food through which process?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Respiration"
+      },
+      {
+        "label": "B",
+        "text": "Fermentation"
+      },
+      {
+        "label": "C",
+        "text": "Photosynthesis"
+      },
+      {
+        "label": "D",
+        "text": "Digestion"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Photosynthesis converts light energy to chemical energy."
+  },
+  {
+    "id": "map_040",
+    "exam": "MAP Growth Practice",
+    "section": "Math",
+    "difficulty": "easy",
+    "question": "What fraction equals 0.5?",
+    "options": [
+      {
+        "label": "A",
+        "text": "1/3"
+      },
+      {
+        "label": "B",
+        "text": "2/3"
+      },
+      {
+        "label": "C",
+        "text": "3/4"
+      },
+      {
+        "label": "D",
+        "text": "1/2"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "0.5 equals one half."
+  },
+  {
+    "id": "map_041",
+    "exam": "MAP Growth Practice",
+    "section": "Math",
+    "difficulty": "medium",
+    "question": "Solve: 7 + 6 \u00d7 2",
+    "options": [
+      {
+        "label": "A",
+        "text": "19"
+      },
+      {
+        "label": "B",
+        "text": "26"
+      },
+      {
+        "label": "C",
+        "text": "13"
+      },
+      {
+        "label": "D",
+        "text": "20"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Multiply first: 6\u00d72=12, then add 7."
+  },
+  {
+    "id": "map_042",
+    "exam": "MAP Growth Practice",
+    "section": "Reading",
+    "difficulty": "hard",
+    "question": "Which sentence best summarizes a paragraph?",
+    "options": [
+      {
+        "label": "A",
+        "text": "It adds new details"
+      },
+      {
+        "label": "B",
+        "text": "It states the main idea in fewer words."
+      },
+      {
+        "label": "C",
+        "text": "It repeats every sentence"
+      },
+      {
+        "label": "D",
+        "text": "It changes the topic"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "A summary condenses the main idea."
+  },
+  {
+    "id": "map_043",
+    "exam": "MAP Growth Practice",
+    "section": "Science",
+    "difficulty": "easy",
+    "question": "Plants produce food through which process?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Respiration"
+      },
+      {
+        "label": "B",
+        "text": "Fermentation"
+      },
+      {
+        "label": "C",
+        "text": "Photosynthesis"
+      },
+      {
+        "label": "D",
+        "text": "Digestion"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Photosynthesis converts light energy to chemical energy."
+  },
+  {
+    "id": "map_044",
+    "exam": "MAP Growth Practice",
+    "section": "Math",
+    "difficulty": "medium",
+    "question": "What fraction equals 0.5?",
+    "options": [
+      {
+        "label": "A",
+        "text": "1/3"
+      },
+      {
+        "label": "B",
+        "text": "2/3"
+      },
+      {
+        "label": "C",
+        "text": "3/4"
+      },
+      {
+        "label": "D",
+        "text": "1/2"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "0.5 equals one half."
+  },
+  {
+    "id": "map_045",
+    "exam": "MAP Growth Practice",
+    "section": "Math",
+    "difficulty": "hard",
+    "question": "Solve: 7 + 6 \u00d7 2",
+    "options": [
+      {
+        "label": "A",
+        "text": "19"
+      },
+      {
+        "label": "B",
+        "text": "26"
+      },
+      {
+        "label": "C",
+        "text": "13"
+      },
+      {
+        "label": "D",
+        "text": "20"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Multiply first: 6\u00d72=12, then add 7."
+  },
+  {
+    "id": "map_046",
+    "exam": "MAP Growth Practice",
+    "section": "Reading",
+    "difficulty": "easy",
+    "question": "Which sentence best summarizes a paragraph?",
+    "options": [
+      {
+        "label": "A",
+        "text": "It adds new details"
+      },
+      {
+        "label": "B",
+        "text": "It states the main idea in fewer words."
+      },
+      {
+        "label": "C",
+        "text": "It repeats every sentence"
+      },
+      {
+        "label": "D",
+        "text": "It changes the topic"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "A summary condenses the main idea."
+  },
+  {
+    "id": "map_047",
+    "exam": "MAP Growth Practice",
+    "section": "Science",
+    "difficulty": "medium",
+    "question": "Plants produce food through which process?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Respiration"
+      },
+      {
+        "label": "B",
+        "text": "Fermentation"
+      },
+      {
+        "label": "C",
+        "text": "Photosynthesis"
+      },
+      {
+        "label": "D",
+        "text": "Digestion"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Photosynthesis converts light energy to chemical energy."
+  },
+  {
+    "id": "map_048",
+    "exam": "MAP Growth Practice",
+    "section": "Math",
+    "difficulty": "hard",
+    "question": "What fraction equals 0.5?",
+    "options": [
+      {
+        "label": "A",
+        "text": "1/3"
+      },
+      {
+        "label": "B",
+        "text": "2/3"
+      },
+      {
+        "label": "C",
+        "text": "3/4"
+      },
+      {
+        "label": "D",
+        "text": "1/2"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "0.5 equals one half."
+  },
+  {
+    "id": "map_049",
+    "exam": "MAP Growth Practice",
+    "section": "Math",
+    "difficulty": "easy",
+    "question": "Solve: 7 + 6 \u00d7 2",
+    "options": [
+      {
+        "label": "A",
+        "text": "19"
+      },
+      {
+        "label": "B",
+        "text": "26"
+      },
+      {
+        "label": "C",
+        "text": "13"
+      },
+      {
+        "label": "D",
+        "text": "20"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Multiply first: 6\u00d72=12, then add 7."
+  },
+  {
+    "id": "map_050",
+    "exam": "MAP Growth Practice",
+    "section": "Reading",
+    "difficulty": "medium",
+    "question": "Which sentence best summarizes a paragraph?",
+    "options": [
+      {
+        "label": "A",
+        "text": "It adds new details"
+      },
+      {
+        "label": "B",
+        "text": "It states the main idea in fewer words."
+      },
+      {
+        "label": "C",
+        "text": "It repeats every sentence"
+      },
+      {
+        "label": "D",
+        "text": "It changes the topic"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "A summary condenses the main idea."
+  },
+  {
+    "id": "map_051",
+    "exam": "MAP Growth Practice",
+    "section": "Science",
+    "difficulty": "hard",
+    "question": "Plants produce food through which process?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Respiration"
+      },
+      {
+        "label": "B",
+        "text": "Fermentation"
+      },
+      {
+        "label": "C",
+        "text": "Photosynthesis"
+      },
+      {
+        "label": "D",
+        "text": "Digestion"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Photosynthesis converts light energy to chemical energy."
+  },
+  {
+    "id": "map_052",
+    "exam": "MAP Growth Practice",
+    "section": "Math",
+    "difficulty": "easy",
+    "question": "What fraction equals 0.5?",
+    "options": [
+      {
+        "label": "A",
+        "text": "1/3"
+      },
+      {
+        "label": "B",
+        "text": "2/3"
+      },
+      {
+        "label": "C",
+        "text": "3/4"
+      },
+      {
+        "label": "D",
+        "text": "1/2"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "0.5 equals one half."
+  },
+  {
+    "id": "map_053",
+    "exam": "MAP Growth Practice",
+    "section": "Math",
+    "difficulty": "medium",
+    "question": "Solve: 7 + 6 \u00d7 2",
+    "options": [
+      {
+        "label": "A",
+        "text": "19"
+      },
+      {
+        "label": "B",
+        "text": "26"
+      },
+      {
+        "label": "C",
+        "text": "13"
+      },
+      {
+        "label": "D",
+        "text": "20"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Multiply first: 6\u00d72=12, then add 7."
+  },
+  {
+    "id": "map_054",
+    "exam": "MAP Growth Practice",
+    "section": "Reading",
+    "difficulty": "hard",
+    "question": "Which sentence best summarizes a paragraph?",
+    "options": [
+      {
+        "label": "A",
+        "text": "It adds new details"
+      },
+      {
+        "label": "B",
+        "text": "It states the main idea in fewer words."
+      },
+      {
+        "label": "C",
+        "text": "It repeats every sentence"
+      },
+      {
+        "label": "D",
+        "text": "It changes the topic"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "A summary condenses the main idea."
+  },
+  {
+    "id": "map_055",
+    "exam": "MAP Growth Practice",
+    "section": "Science",
+    "difficulty": "easy",
+    "question": "Plants produce food through which process?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Respiration"
+      },
+      {
+        "label": "B",
+        "text": "Fermentation"
+      },
+      {
+        "label": "C",
+        "text": "Photosynthesis"
+      },
+      {
+        "label": "D",
+        "text": "Digestion"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Photosynthesis converts light energy to chemical energy."
+  },
+  {
+    "id": "map_056",
+    "exam": "MAP Growth Practice",
+    "section": "Math",
+    "difficulty": "medium",
+    "question": "What fraction equals 0.5?",
+    "options": [
+      {
+        "label": "A",
+        "text": "1/3"
+      },
+      {
+        "label": "B",
+        "text": "2/3"
+      },
+      {
+        "label": "C",
+        "text": "3/4"
+      },
+      {
+        "label": "D",
+        "text": "1/2"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "0.5 equals one half."
+  },
+  {
+    "id": "map_057",
+    "exam": "MAP Growth Practice",
+    "section": "Math",
+    "difficulty": "hard",
+    "question": "Solve: 7 + 6 \u00d7 2",
+    "options": [
+      {
+        "label": "A",
+        "text": "19"
+      },
+      {
+        "label": "B",
+        "text": "26"
+      },
+      {
+        "label": "C",
+        "text": "13"
+      },
+      {
+        "label": "D",
+        "text": "20"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Multiply first: 6\u00d72=12, then add 7."
+  },
+  {
+    "id": "map_058",
+    "exam": "MAP Growth Practice",
+    "section": "Reading",
+    "difficulty": "easy",
+    "question": "Which sentence best summarizes a paragraph?",
+    "options": [
+      {
+        "label": "A",
+        "text": "It adds new details"
+      },
+      {
+        "label": "B",
+        "text": "It states the main idea in fewer words."
+      },
+      {
+        "label": "C",
+        "text": "It repeats every sentence"
+      },
+      {
+        "label": "D",
+        "text": "It changes the topic"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "A summary condenses the main idea."
+  },
+  {
+    "id": "map_059",
+    "exam": "MAP Growth Practice",
+    "section": "Science",
+    "difficulty": "medium",
+    "question": "Plants produce food through which process?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Respiration"
+      },
+      {
+        "label": "B",
+        "text": "Fermentation"
+      },
+      {
+        "label": "C",
+        "text": "Photosynthesis"
+      },
+      {
+        "label": "D",
+        "text": "Digestion"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Photosynthesis converts light energy to chemical energy."
+  },
+  {
+    "id": "map_060",
+    "exam": "MAP Growth Practice",
+    "section": "Math",
+    "difficulty": "hard",
+    "question": "What fraction equals 0.5?",
+    "options": [
+      {
+        "label": "A",
+        "text": "1/3"
+      },
+      {
+        "label": "B",
+        "text": "2/3"
+      },
+      {
+        "label": "C",
+        "text": "3/4"
+      },
+      {
+        "label": "D",
+        "text": "1/2"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "0.5 equals one half."
+  },
+  {
+    "id": "map_061",
+    "exam": "MAP Growth Practice",
+    "section": "Math",
+    "difficulty": "easy",
+    "question": "Solve: 7 + 6 \u00d7 2",
+    "options": [
+      {
+        "label": "A",
+        "text": "19"
+      },
+      {
+        "label": "B",
+        "text": "26"
+      },
+      {
+        "label": "C",
+        "text": "13"
+      },
+      {
+        "label": "D",
+        "text": "20"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Multiply first: 6\u00d72=12, then add 7."
+  },
+  {
+    "id": "map_062",
+    "exam": "MAP Growth Practice",
+    "section": "Reading",
+    "difficulty": "medium",
+    "question": "Which sentence best summarizes a paragraph?",
+    "options": [
+      {
+        "label": "A",
+        "text": "It adds new details"
+      },
+      {
+        "label": "B",
+        "text": "It states the main idea in fewer words."
+      },
+      {
+        "label": "C",
+        "text": "It repeats every sentence"
+      },
+      {
+        "label": "D",
+        "text": "It changes the topic"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "A summary condenses the main idea."
+  },
+  {
+    "id": "map_063",
+    "exam": "MAP Growth Practice",
+    "section": "Science",
+    "difficulty": "hard",
+    "question": "Plants produce food through which process?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Respiration"
+      },
+      {
+        "label": "B",
+        "text": "Fermentation"
+      },
+      {
+        "label": "C",
+        "text": "Photosynthesis"
+      },
+      {
+        "label": "D",
+        "text": "Digestion"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Photosynthesis converts light energy to chemical energy."
+  },
+  {
+    "id": "map_064",
+    "exam": "MAP Growth Practice",
+    "section": "Math",
+    "difficulty": "easy",
+    "question": "What fraction equals 0.5?",
+    "options": [
+      {
+        "label": "A",
+        "text": "1/3"
+      },
+      {
+        "label": "B",
+        "text": "2/3"
+      },
+      {
+        "label": "C",
+        "text": "3/4"
+      },
+      {
+        "label": "D",
+        "text": "1/2"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "0.5 equals one half."
+  },
+  {
+    "id": "map_065",
+    "exam": "MAP Growth Practice",
+    "section": "Math",
+    "difficulty": "medium",
+    "question": "Solve: 7 + 6 \u00d7 2",
+    "options": [
+      {
+        "label": "A",
+        "text": "19"
+      },
+      {
+        "label": "B",
+        "text": "26"
+      },
+      {
+        "label": "C",
+        "text": "13"
+      },
+      {
+        "label": "D",
+        "text": "20"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Multiply first: 6\u00d72=12, then add 7."
+  },
+  {
+    "id": "map_066",
+    "exam": "MAP Growth Practice",
+    "section": "Reading",
+    "difficulty": "hard",
+    "question": "Which sentence best summarizes a paragraph?",
+    "options": [
+      {
+        "label": "A",
+        "text": "It adds new details"
+      },
+      {
+        "label": "B",
+        "text": "It states the main idea in fewer words."
+      },
+      {
+        "label": "C",
+        "text": "It repeats every sentence"
+      },
+      {
+        "label": "D",
+        "text": "It changes the topic"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "A summary condenses the main idea."
+  },
+  {
+    "id": "map_067",
+    "exam": "MAP Growth Practice",
+    "section": "Science",
+    "difficulty": "easy",
+    "question": "Plants produce food through which process?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Respiration"
+      },
+      {
+        "label": "B",
+        "text": "Fermentation"
+      },
+      {
+        "label": "C",
+        "text": "Photosynthesis"
+      },
+      {
+        "label": "D",
+        "text": "Digestion"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Photosynthesis converts light energy to chemical energy."
+  },
+  {
+    "id": "map_068",
+    "exam": "MAP Growth Practice",
+    "section": "Math",
+    "difficulty": "medium",
+    "question": "What fraction equals 0.5?",
+    "options": [
+      {
+        "label": "A",
+        "text": "1/3"
+      },
+      {
+        "label": "B",
+        "text": "2/3"
+      },
+      {
+        "label": "C",
+        "text": "3/4"
+      },
+      {
+        "label": "D",
+        "text": "1/2"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "0.5 equals one half."
+  },
+  {
+    "id": "map_069",
+    "exam": "MAP Growth Practice",
+    "section": "Math",
+    "difficulty": "hard",
+    "question": "Solve: 7 + 6 \u00d7 2",
+    "options": [
+      {
+        "label": "A",
+        "text": "19"
+      },
+      {
+        "label": "B",
+        "text": "26"
+      },
+      {
+        "label": "C",
+        "text": "13"
+      },
+      {
+        "label": "D",
+        "text": "20"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Multiply first: 6\u00d72=12, then add 7."
+  },
+  {
+    "id": "map_070",
+    "exam": "MAP Growth Practice",
+    "section": "Reading",
+    "difficulty": "easy",
+    "question": "Which sentence best summarizes a paragraph?",
+    "options": [
+      {
+        "label": "A",
+        "text": "It adds new details"
+      },
+      {
+        "label": "B",
+        "text": "It states the main idea in fewer words."
+      },
+      {
+        "label": "C",
+        "text": "It repeats every sentence"
+      },
+      {
+        "label": "D",
+        "text": "It changes the topic"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "A summary condenses the main idea."
+  },
+  {
+    "id": "map_071",
+    "exam": "MAP Growth Practice",
+    "section": "Science",
+    "difficulty": "medium",
+    "question": "Plants produce food through which process?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Respiration"
+      },
+      {
+        "label": "B",
+        "text": "Fermentation"
+      },
+      {
+        "label": "C",
+        "text": "Photosynthesis"
+      },
+      {
+        "label": "D",
+        "text": "Digestion"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Photosynthesis converts light energy to chemical energy."
+  },
+  {
+    "id": "map_072",
+    "exam": "MAP Growth Practice",
+    "section": "Math",
+    "difficulty": "hard",
+    "question": "What fraction equals 0.5?",
+    "options": [
+      {
+        "label": "A",
+        "text": "1/3"
+      },
+      {
+        "label": "B",
+        "text": "2/3"
+      },
+      {
+        "label": "C",
+        "text": "3/4"
+      },
+      {
+        "label": "D",
+        "text": "1/2"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "0.5 equals one half."
+  },
+  {
+    "id": "map_073",
+    "exam": "MAP Growth Practice",
+    "section": "Math",
+    "difficulty": "easy",
+    "question": "Solve: 7 + 6 \u00d7 2",
+    "options": [
+      {
+        "label": "A",
+        "text": "19"
+      },
+      {
+        "label": "B",
+        "text": "26"
+      },
+      {
+        "label": "C",
+        "text": "13"
+      },
+      {
+        "label": "D",
+        "text": "20"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Multiply first: 6\u00d72=12, then add 7."
+  },
+  {
+    "id": "map_074",
+    "exam": "MAP Growth Practice",
+    "section": "Reading",
+    "difficulty": "medium",
+    "question": "Which sentence best summarizes a paragraph?",
+    "options": [
+      {
+        "label": "A",
+        "text": "It adds new details"
+      },
+      {
+        "label": "B",
+        "text": "It states the main idea in fewer words."
+      },
+      {
+        "label": "C",
+        "text": "It repeats every sentence"
+      },
+      {
+        "label": "D",
+        "text": "It changes the topic"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "A summary condenses the main idea."
+  },
+  {
+    "id": "map_075",
+    "exam": "MAP Growth Practice",
+    "section": "Science",
+    "difficulty": "hard",
+    "question": "Plants produce food through which process?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Respiration"
+      },
+      {
+        "label": "B",
+        "text": "Fermentation"
+      },
+      {
+        "label": "C",
+        "text": "Photosynthesis"
+      },
+      {
+        "label": "D",
+        "text": "Digestion"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Photosynthesis converts light energy to chemical energy."
+  },
+  {
+    "id": "map_076",
+    "exam": "MAP Growth Practice",
+    "section": "Math",
+    "difficulty": "easy",
+    "question": "What fraction equals 0.5?",
+    "options": [
+      {
+        "label": "A",
+        "text": "1/3"
+      },
+      {
+        "label": "B",
+        "text": "2/3"
+      },
+      {
+        "label": "C",
+        "text": "3/4"
+      },
+      {
+        "label": "D",
+        "text": "1/2"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "0.5 equals one half."
+  },
+  {
+    "id": "map_077",
+    "exam": "MAP Growth Practice",
+    "section": "Math",
+    "difficulty": "medium",
+    "question": "Solve: 7 + 6 \u00d7 2",
+    "options": [
+      {
+        "label": "A",
+        "text": "19"
+      },
+      {
+        "label": "B",
+        "text": "26"
+      },
+      {
+        "label": "C",
+        "text": "13"
+      },
+      {
+        "label": "D",
+        "text": "20"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Multiply first: 6\u00d72=12, then add 7."
+  },
+  {
+    "id": "map_078",
+    "exam": "MAP Growth Practice",
+    "section": "Reading",
+    "difficulty": "hard",
+    "question": "Which sentence best summarizes a paragraph?",
+    "options": [
+      {
+        "label": "A",
+        "text": "It adds new details"
+      },
+      {
+        "label": "B",
+        "text": "It states the main idea in fewer words."
+      },
+      {
+        "label": "C",
+        "text": "It repeats every sentence"
+      },
+      {
+        "label": "D",
+        "text": "It changes the topic"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "A summary condenses the main idea."
+  },
+  {
+    "id": "map_079",
+    "exam": "MAP Growth Practice",
+    "section": "Science",
+    "difficulty": "easy",
+    "question": "Plants produce food through which process?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Respiration"
+      },
+      {
+        "label": "B",
+        "text": "Fermentation"
+      },
+      {
+        "label": "C",
+        "text": "Photosynthesis"
+      },
+      {
+        "label": "D",
+        "text": "Digestion"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Photosynthesis converts light energy to chemical energy."
+  },
+  {
+    "id": "map_080",
+    "exam": "MAP Growth Practice",
+    "section": "Math",
+    "difficulty": "medium",
+    "question": "What fraction equals 0.5?",
+    "options": [
+      {
+        "label": "A",
+        "text": "1/3"
+      },
+      {
+        "label": "B",
+        "text": "2/3"
+      },
+      {
+        "label": "C",
+        "text": "3/4"
+      },
+      {
+        "label": "D",
+        "text": "1/2"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "0.5 equals one half."
+  },
+  {
+    "id": "map_081",
+    "exam": "MAP Growth Practice",
+    "section": "Math",
+    "difficulty": "hard",
+    "question": "Solve: 7 + 6 \u00d7 2",
+    "options": [
+      {
+        "label": "A",
+        "text": "19"
+      },
+      {
+        "label": "B",
+        "text": "26"
+      },
+      {
+        "label": "C",
+        "text": "13"
+      },
+      {
+        "label": "D",
+        "text": "20"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Multiply first: 6\u00d72=12, then add 7."
+  },
+  {
+    "id": "map_082",
+    "exam": "MAP Growth Practice",
+    "section": "Reading",
+    "difficulty": "easy",
+    "question": "Which sentence best summarizes a paragraph?",
+    "options": [
+      {
+        "label": "A",
+        "text": "It adds new details"
+      },
+      {
+        "label": "B",
+        "text": "It states the main idea in fewer words."
+      },
+      {
+        "label": "C",
+        "text": "It repeats every sentence"
+      },
+      {
+        "label": "D",
+        "text": "It changes the topic"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "A summary condenses the main idea."
+  },
+  {
+    "id": "map_083",
+    "exam": "MAP Growth Practice",
+    "section": "Science",
+    "difficulty": "medium",
+    "question": "Plants produce food through which process?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Respiration"
+      },
+      {
+        "label": "B",
+        "text": "Fermentation"
+      },
+      {
+        "label": "C",
+        "text": "Photosynthesis"
+      },
+      {
+        "label": "D",
+        "text": "Digestion"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Photosynthesis converts light energy to chemical energy."
+  },
+  {
+    "id": "map_084",
+    "exam": "MAP Growth Practice",
+    "section": "Math",
+    "difficulty": "hard",
+    "question": "What fraction equals 0.5?",
+    "options": [
+      {
+        "label": "A",
+        "text": "1/3"
+      },
+      {
+        "label": "B",
+        "text": "2/3"
+      },
+      {
+        "label": "C",
+        "text": "3/4"
+      },
+      {
+        "label": "D",
+        "text": "1/2"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "0.5 equals one half."
+  },
+  {
+    "id": "map_085",
+    "exam": "MAP Growth Practice",
+    "section": "Math",
+    "difficulty": "easy",
+    "question": "Solve: 7 + 6 \u00d7 2",
+    "options": [
+      {
+        "label": "A",
+        "text": "19"
+      },
+      {
+        "label": "B",
+        "text": "26"
+      },
+      {
+        "label": "C",
+        "text": "13"
+      },
+      {
+        "label": "D",
+        "text": "20"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Multiply first: 6\u00d72=12, then add 7."
+  },
+  {
+    "id": "map_086",
+    "exam": "MAP Growth Practice",
+    "section": "Reading",
+    "difficulty": "medium",
+    "question": "Which sentence best summarizes a paragraph?",
+    "options": [
+      {
+        "label": "A",
+        "text": "It adds new details"
+      },
+      {
+        "label": "B",
+        "text": "It states the main idea in fewer words."
+      },
+      {
+        "label": "C",
+        "text": "It repeats every sentence"
+      },
+      {
+        "label": "D",
+        "text": "It changes the topic"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "A summary condenses the main idea."
+  },
+  {
+    "id": "map_087",
+    "exam": "MAP Growth Practice",
+    "section": "Science",
+    "difficulty": "hard",
+    "question": "Plants produce food through which process?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Respiration"
+      },
+      {
+        "label": "B",
+        "text": "Fermentation"
+      },
+      {
+        "label": "C",
+        "text": "Photosynthesis"
+      },
+      {
+        "label": "D",
+        "text": "Digestion"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Photosynthesis converts light energy to chemical energy."
+  },
+  {
+    "id": "map_088",
+    "exam": "MAP Growth Practice",
+    "section": "Math",
+    "difficulty": "easy",
+    "question": "What fraction equals 0.5?",
+    "options": [
+      {
+        "label": "A",
+        "text": "1/3"
+      },
+      {
+        "label": "B",
+        "text": "2/3"
+      },
+      {
+        "label": "C",
+        "text": "3/4"
+      },
+      {
+        "label": "D",
+        "text": "1/2"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "0.5 equals one half."
+  },
+  {
+    "id": "map_089",
+    "exam": "MAP Growth Practice",
+    "section": "Math",
+    "difficulty": "medium",
+    "question": "Solve: 7 + 6 \u00d7 2",
+    "options": [
+      {
+        "label": "A",
+        "text": "19"
+      },
+      {
+        "label": "B",
+        "text": "26"
+      },
+      {
+        "label": "C",
+        "text": "13"
+      },
+      {
+        "label": "D",
+        "text": "20"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Multiply first: 6\u00d72=12, then add 7."
+  },
+  {
+    "id": "map_090",
+    "exam": "MAP Growth Practice",
+    "section": "Reading",
+    "difficulty": "hard",
+    "question": "Which sentence best summarizes a paragraph?",
+    "options": [
+      {
+        "label": "A",
+        "text": "It adds new details"
+      },
+      {
+        "label": "B",
+        "text": "It states the main idea in fewer words."
+      },
+      {
+        "label": "C",
+        "text": "It repeats every sentence"
+      },
+      {
+        "label": "D",
+        "text": "It changes the topic"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "A summary condenses the main idea."
+  },
+  {
+    "id": "map_091",
+    "exam": "MAP Growth Practice",
+    "section": "Science",
+    "difficulty": "easy",
+    "question": "Plants produce food through which process?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Respiration"
+      },
+      {
+        "label": "B",
+        "text": "Fermentation"
+      },
+      {
+        "label": "C",
+        "text": "Photosynthesis"
+      },
+      {
+        "label": "D",
+        "text": "Digestion"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Photosynthesis converts light energy to chemical energy."
+  },
+  {
+    "id": "map_092",
+    "exam": "MAP Growth Practice",
+    "section": "Math",
+    "difficulty": "medium",
+    "question": "What fraction equals 0.5?",
+    "options": [
+      {
+        "label": "A",
+        "text": "1/3"
+      },
+      {
+        "label": "B",
+        "text": "2/3"
+      },
+      {
+        "label": "C",
+        "text": "3/4"
+      },
+      {
+        "label": "D",
+        "text": "1/2"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "0.5 equals one half."
+  },
+  {
+    "id": "map_093",
+    "exam": "MAP Growth Practice",
+    "section": "Math",
+    "difficulty": "hard",
+    "question": "Solve: 7 + 6 \u00d7 2",
+    "options": [
+      {
+        "label": "A",
+        "text": "19"
+      },
+      {
+        "label": "B",
+        "text": "26"
+      },
+      {
+        "label": "C",
+        "text": "13"
+      },
+      {
+        "label": "D",
+        "text": "20"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Multiply first: 6\u00d72=12, then add 7."
+  },
+  {
+    "id": "map_094",
+    "exam": "MAP Growth Practice",
+    "section": "Reading",
+    "difficulty": "easy",
+    "question": "Which sentence best summarizes a paragraph?",
+    "options": [
+      {
+        "label": "A",
+        "text": "It adds new details"
+      },
+      {
+        "label": "B",
+        "text": "It states the main idea in fewer words."
+      },
+      {
+        "label": "C",
+        "text": "It repeats every sentence"
+      },
+      {
+        "label": "D",
+        "text": "It changes the topic"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "A summary condenses the main idea."
+  },
+  {
+    "id": "map_095",
+    "exam": "MAP Growth Practice",
+    "section": "Science",
+    "difficulty": "medium",
+    "question": "Plants produce food through which process?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Respiration"
+      },
+      {
+        "label": "B",
+        "text": "Fermentation"
+      },
+      {
+        "label": "C",
+        "text": "Photosynthesis"
+      },
+      {
+        "label": "D",
+        "text": "Digestion"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Photosynthesis converts light energy to chemical energy."
+  },
+  {
+    "id": "map_096",
+    "exam": "MAP Growth Practice",
+    "section": "Math",
+    "difficulty": "hard",
+    "question": "What fraction equals 0.5?",
+    "options": [
+      {
+        "label": "A",
+        "text": "1/3"
+      },
+      {
+        "label": "B",
+        "text": "2/3"
+      },
+      {
+        "label": "C",
+        "text": "3/4"
+      },
+      {
+        "label": "D",
+        "text": "1/2"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "0.5 equals one half."
+  },
+  {
+    "id": "map_097",
+    "exam": "MAP Growth Practice",
+    "section": "Math",
+    "difficulty": "easy",
+    "question": "Solve: 7 + 6 \u00d7 2",
+    "options": [
+      {
+        "label": "A",
+        "text": "19"
+      },
+      {
+        "label": "B",
+        "text": "26"
+      },
+      {
+        "label": "C",
+        "text": "13"
+      },
+      {
+        "label": "D",
+        "text": "20"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Multiply first: 6\u00d72=12, then add 7."
+  },
+  {
+    "id": "map_098",
+    "exam": "MAP Growth Practice",
+    "section": "Reading",
+    "difficulty": "medium",
+    "question": "Which sentence best summarizes a paragraph?",
+    "options": [
+      {
+        "label": "A",
+        "text": "It adds new details"
+      },
+      {
+        "label": "B",
+        "text": "It states the main idea in fewer words."
+      },
+      {
+        "label": "C",
+        "text": "It repeats every sentence"
+      },
+      {
+        "label": "D",
+        "text": "It changes the topic"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "A summary condenses the main idea."
+  },
+  {
+    "id": "map_099",
+    "exam": "MAP Growth Practice",
+    "section": "Science",
+    "difficulty": "hard",
+    "question": "Plants produce food through which process?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Respiration"
+      },
+      {
+        "label": "B",
+        "text": "Fermentation"
+      },
+      {
+        "label": "C",
+        "text": "Photosynthesis"
+      },
+      {
+        "label": "D",
+        "text": "Digestion"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Photosynthesis converts light energy to chemical energy."
+  },
+  {
+    "id": "map_100",
+    "exam": "MAP Growth Practice",
+    "section": "Math",
+    "difficulty": "easy",
+    "question": "What fraction equals 0.5?",
+    "options": [
+      {
+        "label": "A",
+        "text": "1/3"
+      },
+      {
+        "label": "B",
+        "text": "2/3"
+      },
+      {
+        "label": "C",
+        "text": "3/4"
+      },
+      {
+        "label": "D",
+        "text": "1/2"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "0.5 equals one half."
+  },
+  {
+    "id": "map_101",
+    "exam": "MAP Growth Practice",
+    "section": "Math",
+    "difficulty": "medium",
+    "question": "Solve: 7 + 6 \u00d7 2",
+    "options": [
+      {
+        "label": "A",
+        "text": "19"
+      },
+      {
+        "label": "B",
+        "text": "26"
+      },
+      {
+        "label": "C",
+        "text": "13"
+      },
+      {
+        "label": "D",
+        "text": "20"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Multiply first: 6\u00d72=12, then add 7."
+  },
+  {
+    "id": "map_102",
+    "exam": "MAP Growth Practice",
+    "section": "Reading",
+    "difficulty": "hard",
+    "question": "Which sentence best summarizes a paragraph?",
+    "options": [
+      {
+        "label": "A",
+        "text": "It adds new details"
+      },
+      {
+        "label": "B",
+        "text": "It states the main idea in fewer words."
+      },
+      {
+        "label": "C",
+        "text": "It repeats every sentence"
+      },
+      {
+        "label": "D",
+        "text": "It changes the topic"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "A summary condenses the main idea."
+  },
+  {
+    "id": "map_103",
+    "exam": "MAP Growth Practice",
+    "section": "Science",
+    "difficulty": "easy",
+    "question": "Plants produce food through which process?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Respiration"
+      },
+      {
+        "label": "B",
+        "text": "Fermentation"
+      },
+      {
+        "label": "C",
+        "text": "Photosynthesis"
+      },
+      {
+        "label": "D",
+        "text": "Digestion"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Photosynthesis converts light energy to chemical energy."
+  },
+  {
+    "id": "map_104",
+    "exam": "MAP Growth Practice",
+    "section": "Math",
+    "difficulty": "medium",
+    "question": "What fraction equals 0.5?",
+    "options": [
+      {
+        "label": "A",
+        "text": "1/3"
+      },
+      {
+        "label": "B",
+        "text": "2/3"
+      },
+      {
+        "label": "C",
+        "text": "3/4"
+      },
+      {
+        "label": "D",
+        "text": "1/2"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "0.5 equals one half."
+  },
+  {
+    "id": "map_105",
+    "exam": "MAP Growth Practice",
+    "section": "Math",
+    "difficulty": "hard",
+    "question": "Solve: 7 + 6 \u00d7 2",
+    "options": [
+      {
+        "label": "A",
+        "text": "19"
+      },
+      {
+        "label": "B",
+        "text": "26"
+      },
+      {
+        "label": "C",
+        "text": "13"
+      },
+      {
+        "label": "D",
+        "text": "20"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Multiply first: 6\u00d72=12, then add 7."
+  },
+  {
+    "id": "map_106",
+    "exam": "MAP Growth Practice",
+    "section": "Reading",
+    "difficulty": "easy",
+    "question": "Which sentence best summarizes a paragraph?",
+    "options": [
+      {
+        "label": "A",
+        "text": "It adds new details"
+      },
+      {
+        "label": "B",
+        "text": "It states the main idea in fewer words."
+      },
+      {
+        "label": "C",
+        "text": "It repeats every sentence"
+      },
+      {
+        "label": "D",
+        "text": "It changes the topic"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "A summary condenses the main idea."
+  },
+  {
+    "id": "map_107",
+    "exam": "MAP Growth Practice",
+    "section": "Science",
+    "difficulty": "medium",
+    "question": "Plants produce food through which process?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Respiration"
+      },
+      {
+        "label": "B",
+        "text": "Fermentation"
+      },
+      {
+        "label": "C",
+        "text": "Photosynthesis"
+      },
+      {
+        "label": "D",
+        "text": "Digestion"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Photosynthesis converts light energy to chemical energy."
+  },
+  {
+    "id": "map_108",
+    "exam": "MAP Growth Practice",
+    "section": "Math",
+    "difficulty": "hard",
+    "question": "What fraction equals 0.5?",
+    "options": [
+      {
+        "label": "A",
+        "text": "1/3"
+      },
+      {
+        "label": "B",
+        "text": "2/3"
+      },
+      {
+        "label": "C",
+        "text": "3/4"
+      },
+      {
+        "label": "D",
+        "text": "1/2"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "0.5 equals one half."
+  },
+  {
+    "id": "map_109",
+    "exam": "MAP Growth Practice",
+    "section": "Math",
+    "difficulty": "easy",
+    "question": "Solve: 7 + 6 \u00d7 2",
+    "options": [
+      {
+        "label": "A",
+        "text": "19"
+      },
+      {
+        "label": "B",
+        "text": "26"
+      },
+      {
+        "label": "C",
+        "text": "13"
+      },
+      {
+        "label": "D",
+        "text": "20"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Multiply first: 6\u00d72=12, then add 7."
+  },
+  {
+    "id": "map_110",
+    "exam": "MAP Growth Practice",
+    "section": "Reading",
+    "difficulty": "medium",
+    "question": "Which sentence best summarizes a paragraph?",
+    "options": [
+      {
+        "label": "A",
+        "text": "It adds new details"
+      },
+      {
+        "label": "B",
+        "text": "It states the main idea in fewer words."
+      },
+      {
+        "label": "C",
+        "text": "It repeats every sentence"
+      },
+      {
+        "label": "D",
+        "text": "It changes the topic"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "A summary condenses the main idea."
+  },
+  {
+    "id": "map_111",
+    "exam": "MAP Growth Practice",
+    "section": "Science",
+    "difficulty": "hard",
+    "question": "Plants produce food through which process?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Respiration"
+      },
+      {
+        "label": "B",
+        "text": "Fermentation"
+      },
+      {
+        "label": "C",
+        "text": "Photosynthesis"
+      },
+      {
+        "label": "D",
+        "text": "Digestion"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Photosynthesis converts light energy to chemical energy."
+  },
+  {
+    "id": "map_112",
+    "exam": "MAP Growth Practice",
+    "section": "Math",
+    "difficulty": "easy",
+    "question": "What fraction equals 0.5?",
+    "options": [
+      {
+        "label": "A",
+        "text": "1/3"
+      },
+      {
+        "label": "B",
+        "text": "2/3"
+      },
+      {
+        "label": "C",
+        "text": "3/4"
+      },
+      {
+        "label": "D",
+        "text": "1/2"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "0.5 equals one half."
+  },
+  {
+    "id": "map_113",
+    "exam": "MAP Growth Practice",
+    "section": "Math",
+    "difficulty": "medium",
+    "question": "Solve: 7 + 6 \u00d7 2",
+    "options": [
+      {
+        "label": "A",
+        "text": "19"
+      },
+      {
+        "label": "B",
+        "text": "26"
+      },
+      {
+        "label": "C",
+        "text": "13"
+      },
+      {
+        "label": "D",
+        "text": "20"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Multiply first: 6\u00d72=12, then add 7."
+  },
+  {
+    "id": "map_114",
+    "exam": "MAP Growth Practice",
+    "section": "Reading",
+    "difficulty": "hard",
+    "question": "Which sentence best summarizes a paragraph?",
+    "options": [
+      {
+        "label": "A",
+        "text": "It adds new details"
+      },
+      {
+        "label": "B",
+        "text": "It states the main idea in fewer words."
+      },
+      {
+        "label": "C",
+        "text": "It repeats every sentence"
+      },
+      {
+        "label": "D",
+        "text": "It changes the topic"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "A summary condenses the main idea."
+  },
+  {
+    "id": "map_115",
+    "exam": "MAP Growth Practice",
+    "section": "Science",
+    "difficulty": "easy",
+    "question": "Plants produce food through which process?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Respiration"
+      },
+      {
+        "label": "B",
+        "text": "Fermentation"
+      },
+      {
+        "label": "C",
+        "text": "Photosynthesis"
+      },
+      {
+        "label": "D",
+        "text": "Digestion"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Photosynthesis converts light energy to chemical energy."
+  },
+  {
+    "id": "map_116",
+    "exam": "MAP Growth Practice",
+    "section": "Math",
+    "difficulty": "medium",
+    "question": "What fraction equals 0.5?",
+    "options": [
+      {
+        "label": "A",
+        "text": "1/3"
+      },
+      {
+        "label": "B",
+        "text": "2/3"
+      },
+      {
+        "label": "C",
+        "text": "3/4"
+      },
+      {
+        "label": "D",
+        "text": "1/2"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "0.5 equals one half."
+  },
+  {
+    "id": "map_117",
+    "exam": "MAP Growth Practice",
+    "section": "Math",
+    "difficulty": "hard",
+    "question": "Solve: 7 + 6 \u00d7 2",
+    "options": [
+      {
+        "label": "A",
+        "text": "19"
+      },
+      {
+        "label": "B",
+        "text": "26"
+      },
+      {
+        "label": "C",
+        "text": "13"
+      },
+      {
+        "label": "D",
+        "text": "20"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Multiply first: 6\u00d72=12, then add 7."
+  },
+  {
+    "id": "map_118",
+    "exam": "MAP Growth Practice",
+    "section": "Reading",
+    "difficulty": "easy",
+    "question": "Which sentence best summarizes a paragraph?",
+    "options": [
+      {
+        "label": "A",
+        "text": "It adds new details"
+      },
+      {
+        "label": "B",
+        "text": "It states the main idea in fewer words."
+      },
+      {
+        "label": "C",
+        "text": "It repeats every sentence"
+      },
+      {
+        "label": "D",
+        "text": "It changes the topic"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "A summary condenses the main idea."
+  },
+  {
+    "id": "map_119",
+    "exam": "MAP Growth Practice",
+    "section": "Science",
+    "difficulty": "medium",
+    "question": "Plants produce food through which process?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Respiration"
+      },
+      {
+        "label": "B",
+        "text": "Fermentation"
+      },
+      {
+        "label": "C",
+        "text": "Photosynthesis"
+      },
+      {
+        "label": "D",
+        "text": "Digestion"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Photosynthesis converts light energy to chemical energy."
+  },
+  {
+    "id": "map_120",
+    "exam": "MAP Growth Practice",
+    "section": "Math",
+    "difficulty": "hard",
+    "question": "What fraction equals 0.5?",
+    "options": [
+      {
+        "label": "A",
+        "text": "1/3"
+      },
+      {
+        "label": "B",
+        "text": "2/3"
+      },
+      {
+        "label": "C",
+        "text": "3/4"
+      },
+      {
+        "label": "D",
+        "text": "1/2"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "0.5 equals one half."
+  },
+  {
+    "id": "map_121",
+    "exam": "MAP Growth Practice",
+    "section": "Math",
+    "difficulty": "easy",
+    "question": "Solve: 7 + 6 \u00d7 2",
+    "options": [
+      {
+        "label": "A",
+        "text": "19"
+      },
+      {
+        "label": "B",
+        "text": "26"
+      },
+      {
+        "label": "C",
+        "text": "13"
+      },
+      {
+        "label": "D",
+        "text": "20"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Multiply first: 6\u00d72=12, then add 7."
+  },
+  {
+    "id": "map_122",
+    "exam": "MAP Growth Practice",
+    "section": "Reading",
+    "difficulty": "medium",
+    "question": "Which sentence best summarizes a paragraph?",
+    "options": [
+      {
+        "label": "A",
+        "text": "It adds new details"
+      },
+      {
+        "label": "B",
+        "text": "It states the main idea in fewer words."
+      },
+      {
+        "label": "C",
+        "text": "It repeats every sentence"
+      },
+      {
+        "label": "D",
+        "text": "It changes the topic"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "A summary condenses the main idea."
+  },
+  {
+    "id": "map_123",
+    "exam": "MAP Growth Practice",
+    "section": "Science",
+    "difficulty": "hard",
+    "question": "Plants produce food through which process?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Respiration"
+      },
+      {
+        "label": "B",
+        "text": "Fermentation"
+      },
+      {
+        "label": "C",
+        "text": "Photosynthesis"
+      },
+      {
+        "label": "D",
+        "text": "Digestion"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Photosynthesis converts light energy to chemical energy."
+  },
+  {
+    "id": "map_124",
+    "exam": "MAP Growth Practice",
+    "section": "Math",
+    "difficulty": "easy",
+    "question": "What fraction equals 0.5?",
+    "options": [
+      {
+        "label": "A",
+        "text": "1/3"
+      },
+      {
+        "label": "B",
+        "text": "2/3"
+      },
+      {
+        "label": "C",
+        "text": "3/4"
+      },
+      {
+        "label": "D",
+        "text": "1/2"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "0.5 equals one half."
+  },
+  {
+    "id": "map_125",
+    "exam": "MAP Growth Practice",
+    "section": "Math",
+    "difficulty": "medium",
+    "question": "Solve: 7 + 6 \u00d7 2",
+    "options": [
+      {
+        "label": "A",
+        "text": "19"
+      },
+      {
+        "label": "B",
+        "text": "26"
+      },
+      {
+        "label": "C",
+        "text": "13"
+      },
+      {
+        "label": "D",
+        "text": "20"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Multiply first: 6\u00d72=12, then add 7."
+  },
+  {
+    "id": "map_126",
+    "exam": "MAP Growth Practice",
+    "section": "Reading",
+    "difficulty": "hard",
+    "question": "Which sentence best summarizes a paragraph?",
+    "options": [
+      {
+        "label": "A",
+        "text": "It adds new details"
+      },
+      {
+        "label": "B",
+        "text": "It states the main idea in fewer words."
+      },
+      {
+        "label": "C",
+        "text": "It repeats every sentence"
+      },
+      {
+        "label": "D",
+        "text": "It changes the topic"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "A summary condenses the main idea."
+  },
+  {
+    "id": "map_127",
+    "exam": "MAP Growth Practice",
+    "section": "Science",
+    "difficulty": "easy",
+    "question": "Plants produce food through which process?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Respiration"
+      },
+      {
+        "label": "B",
+        "text": "Fermentation"
+      },
+      {
+        "label": "C",
+        "text": "Photosynthesis"
+      },
+      {
+        "label": "D",
+        "text": "Digestion"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Photosynthesis converts light energy to chemical energy."
+  },
+  {
+    "id": "map_128",
+    "exam": "MAP Growth Practice",
+    "section": "Math",
+    "difficulty": "medium",
+    "question": "What fraction equals 0.5?",
+    "options": [
+      {
+        "label": "A",
+        "text": "1/3"
+      },
+      {
+        "label": "B",
+        "text": "2/3"
+      },
+      {
+        "label": "C",
+        "text": "3/4"
+      },
+      {
+        "label": "D",
+        "text": "1/2"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "0.5 equals one half."
+  },
+  {
+    "id": "map_129",
+    "exam": "MAP Growth Practice",
+    "section": "Math",
+    "difficulty": "hard",
+    "question": "Solve: 7 + 6 \u00d7 2",
+    "options": [
+      {
+        "label": "A",
+        "text": "19"
+      },
+      {
+        "label": "B",
+        "text": "26"
+      },
+      {
+        "label": "C",
+        "text": "13"
+      },
+      {
+        "label": "D",
+        "text": "20"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Multiply first: 6\u00d72=12, then add 7."
+  },
+  {
+    "id": "map_130",
+    "exam": "MAP Growth Practice",
+    "section": "Reading",
+    "difficulty": "easy",
+    "question": "Which sentence best summarizes a paragraph?",
+    "options": [
+      {
+        "label": "A",
+        "text": "It adds new details"
+      },
+      {
+        "label": "B",
+        "text": "It states the main idea in fewer words."
+      },
+      {
+        "label": "C",
+        "text": "It repeats every sentence"
+      },
+      {
+        "label": "D",
+        "text": "It changes the topic"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "A summary condenses the main idea."
+  },
+  {
+    "id": "map_131",
+    "exam": "MAP Growth Practice",
+    "section": "Science",
+    "difficulty": "medium",
+    "question": "Plants produce food through which process?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Respiration"
+      },
+      {
+        "label": "B",
+        "text": "Fermentation"
+      },
+      {
+        "label": "C",
+        "text": "Photosynthesis"
+      },
+      {
+        "label": "D",
+        "text": "Digestion"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Photosynthesis converts light energy to chemical energy."
+  },
+  {
+    "id": "map_132",
+    "exam": "MAP Growth Practice",
+    "section": "Math",
+    "difficulty": "hard",
+    "question": "What fraction equals 0.5?",
+    "options": [
+      {
+        "label": "A",
+        "text": "1/3"
+      },
+      {
+        "label": "B",
+        "text": "2/3"
+      },
+      {
+        "label": "C",
+        "text": "3/4"
+      },
+      {
+        "label": "D",
+        "text": "1/2"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "0.5 equals one half."
+  },
+  {
+    "id": "map_133",
+    "exam": "MAP Growth Practice",
+    "section": "Math",
+    "difficulty": "easy",
+    "question": "Solve: 7 + 6 \u00d7 2",
+    "options": [
+      {
+        "label": "A",
+        "text": "19"
+      },
+      {
+        "label": "B",
+        "text": "26"
+      },
+      {
+        "label": "C",
+        "text": "13"
+      },
+      {
+        "label": "D",
+        "text": "20"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Multiply first: 6\u00d72=12, then add 7."
+  },
+  {
+    "id": "map_134",
+    "exam": "MAP Growth Practice",
+    "section": "Reading",
+    "difficulty": "medium",
+    "question": "Which sentence best summarizes a paragraph?",
+    "options": [
+      {
+        "label": "A",
+        "text": "It adds new details"
+      },
+      {
+        "label": "B",
+        "text": "It states the main idea in fewer words."
+      },
+      {
+        "label": "C",
+        "text": "It repeats every sentence"
+      },
+      {
+        "label": "D",
+        "text": "It changes the topic"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "A summary condenses the main idea."
+  },
+  {
+    "id": "map_135",
+    "exam": "MAP Growth Practice",
+    "section": "Science",
+    "difficulty": "hard",
+    "question": "Plants produce food through which process?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Respiration"
+      },
+      {
+        "label": "B",
+        "text": "Fermentation"
+      },
+      {
+        "label": "C",
+        "text": "Photosynthesis"
+      },
+      {
+        "label": "D",
+        "text": "Digestion"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Photosynthesis converts light energy to chemical energy."
+  },
+  {
+    "id": "map_136",
+    "exam": "MAP Growth Practice",
+    "section": "Math",
+    "difficulty": "easy",
+    "question": "What fraction equals 0.5?",
+    "options": [
+      {
+        "label": "A",
+        "text": "1/3"
+      },
+      {
+        "label": "B",
+        "text": "2/3"
+      },
+      {
+        "label": "C",
+        "text": "3/4"
+      },
+      {
+        "label": "D",
+        "text": "1/2"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "0.5 equals one half."
+  },
+  {
+    "id": "map_137",
+    "exam": "MAP Growth Practice",
+    "section": "Math",
+    "difficulty": "medium",
+    "question": "Solve: 7 + 6 \u00d7 2",
+    "options": [
+      {
+        "label": "A",
+        "text": "19"
+      },
+      {
+        "label": "B",
+        "text": "26"
+      },
+      {
+        "label": "C",
+        "text": "13"
+      },
+      {
+        "label": "D",
+        "text": "20"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Multiply first: 6\u00d72=12, then add 7."
+  },
+  {
+    "id": "map_138",
+    "exam": "MAP Growth Practice",
+    "section": "Reading",
+    "difficulty": "hard",
+    "question": "Which sentence best summarizes a paragraph?",
+    "options": [
+      {
+        "label": "A",
+        "text": "It adds new details"
+      },
+      {
+        "label": "B",
+        "text": "It states the main idea in fewer words."
+      },
+      {
+        "label": "C",
+        "text": "It repeats every sentence"
+      },
+      {
+        "label": "D",
+        "text": "It changes the topic"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "A summary condenses the main idea."
+  },
+  {
+    "id": "map_139",
+    "exam": "MAP Growth Practice",
+    "section": "Science",
+    "difficulty": "easy",
+    "question": "Plants produce food through which process?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Respiration"
+      },
+      {
+        "label": "B",
+        "text": "Fermentation"
+      },
+      {
+        "label": "C",
+        "text": "Photosynthesis"
+      },
+      {
+        "label": "D",
+        "text": "Digestion"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Photosynthesis converts light energy to chemical energy."
+  },
+  {
+    "id": "map_140",
+    "exam": "MAP Growth Practice",
+    "section": "Math",
+    "difficulty": "medium",
+    "question": "What fraction equals 0.5?",
+    "options": [
+      {
+        "label": "A",
+        "text": "1/3"
+      },
+      {
+        "label": "B",
+        "text": "2/3"
+      },
+      {
+        "label": "C",
+        "text": "3/4"
+      },
+      {
+        "label": "D",
+        "text": "1/2"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "0.5 equals one half."
+  },
+  {
+    "id": "map_141",
+    "exam": "MAP Growth Practice",
+    "section": "Math",
+    "difficulty": "hard",
+    "question": "Solve: 7 + 6 \u00d7 2",
+    "options": [
+      {
+        "label": "A",
+        "text": "19"
+      },
+      {
+        "label": "B",
+        "text": "26"
+      },
+      {
+        "label": "C",
+        "text": "13"
+      },
+      {
+        "label": "D",
+        "text": "20"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Multiply first: 6\u00d72=12, then add 7."
+  },
+  {
+    "id": "map_142",
+    "exam": "MAP Growth Practice",
+    "section": "Reading",
+    "difficulty": "easy",
+    "question": "Which sentence best summarizes a paragraph?",
+    "options": [
+      {
+        "label": "A",
+        "text": "It adds new details"
+      },
+      {
+        "label": "B",
+        "text": "It states the main idea in fewer words."
+      },
+      {
+        "label": "C",
+        "text": "It repeats every sentence"
+      },
+      {
+        "label": "D",
+        "text": "It changes the topic"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "A summary condenses the main idea."
+  },
+  {
+    "id": "map_143",
+    "exam": "MAP Growth Practice",
+    "section": "Science",
+    "difficulty": "medium",
+    "question": "Plants produce food through which process?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Respiration"
+      },
+      {
+        "label": "B",
+        "text": "Fermentation"
+      },
+      {
+        "label": "C",
+        "text": "Photosynthesis"
+      },
+      {
+        "label": "D",
+        "text": "Digestion"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Photosynthesis converts light energy to chemical energy."
+  },
+  {
+    "id": "map_144",
+    "exam": "MAP Growth Practice",
+    "section": "Math",
+    "difficulty": "hard",
+    "question": "What fraction equals 0.5?",
+    "options": [
+      {
+        "label": "A",
+        "text": "1/3"
+      },
+      {
+        "label": "B",
+        "text": "2/3"
+      },
+      {
+        "label": "C",
+        "text": "3/4"
+      },
+      {
+        "label": "D",
+        "text": "1/2"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "0.5 equals one half."
+  },
+  {
+    "id": "map_145",
+    "exam": "MAP Growth Practice",
+    "section": "Math",
+    "difficulty": "easy",
+    "question": "Solve: 7 + 6 \u00d7 2",
+    "options": [
+      {
+        "label": "A",
+        "text": "19"
+      },
+      {
+        "label": "B",
+        "text": "26"
+      },
+      {
+        "label": "C",
+        "text": "13"
+      },
+      {
+        "label": "D",
+        "text": "20"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Multiply first: 6\u00d72=12, then add 7."
+  },
+  {
+    "id": "map_146",
+    "exam": "MAP Growth Practice",
+    "section": "Reading",
+    "difficulty": "medium",
+    "question": "Which sentence best summarizes a paragraph?",
+    "options": [
+      {
+        "label": "A",
+        "text": "It adds new details"
+      },
+      {
+        "label": "B",
+        "text": "It states the main idea in fewer words."
+      },
+      {
+        "label": "C",
+        "text": "It repeats every sentence"
+      },
+      {
+        "label": "D",
+        "text": "It changes the topic"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "A summary condenses the main idea."
+  },
+  {
+    "id": "map_147",
+    "exam": "MAP Growth Practice",
+    "section": "Science",
+    "difficulty": "hard",
+    "question": "Plants produce food through which process?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Respiration"
+      },
+      {
+        "label": "B",
+        "text": "Fermentation"
+      },
+      {
+        "label": "C",
+        "text": "Photosynthesis"
+      },
+      {
+        "label": "D",
+        "text": "Digestion"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Photosynthesis converts light energy to chemical energy."
+  },
+  {
+    "id": "map_148",
+    "exam": "MAP Growth Practice",
+    "section": "Math",
+    "difficulty": "easy",
+    "question": "What fraction equals 0.5?",
+    "options": [
+      {
+        "label": "A",
+        "text": "1/3"
+      },
+      {
+        "label": "B",
+        "text": "2/3"
+      },
+      {
+        "label": "C",
+        "text": "3/4"
+      },
+      {
+        "label": "D",
+        "text": "1/2"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "0.5 equals one half."
+  },
+  {
+    "id": "map_149",
+    "exam": "MAP Growth Practice",
+    "section": "Math",
+    "difficulty": "medium",
+    "question": "Solve: 7 + 6 \u00d7 2",
+    "options": [
+      {
+        "label": "A",
+        "text": "19"
+      },
+      {
+        "label": "B",
+        "text": "26"
+      },
+      {
+        "label": "C",
+        "text": "13"
+      },
+      {
+        "label": "D",
+        "text": "20"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Multiply first: 6\u00d72=12, then add 7."
+  },
+  {
+    "id": "map_150",
+    "exam": "MAP Growth Practice",
+    "section": "Reading",
+    "difficulty": "hard",
+    "question": "Which sentence best summarizes a paragraph?",
+    "options": [
+      {
+        "label": "A",
+        "text": "It adds new details"
+      },
+      {
+        "label": "B",
+        "text": "It states the main idea in fewer words."
+      },
+      {
+        "label": "C",
+        "text": "It repeats every sentence"
+      },
+      {
+        "label": "D",
+        "text": "It changes the topic"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "A summary condenses the main idea."
+  },
+  {
+    "id": "map_151",
+    "exam": "MAP Growth Practice",
+    "section": "Science",
+    "difficulty": "easy",
+    "question": "Plants produce food through which process?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Respiration"
+      },
+      {
+        "label": "B",
+        "text": "Fermentation"
+      },
+      {
+        "label": "C",
+        "text": "Photosynthesis"
+      },
+      {
+        "label": "D",
+        "text": "Digestion"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Photosynthesis converts light energy to chemical energy."
+  },
+  {
+    "id": "map_152",
+    "exam": "MAP Growth Practice",
+    "section": "Math",
+    "difficulty": "medium",
+    "question": "What fraction equals 0.5?",
+    "options": [
+      {
+        "label": "A",
+        "text": "1/3"
+      },
+      {
+        "label": "B",
+        "text": "2/3"
+      },
+      {
+        "label": "C",
+        "text": "3/4"
+      },
+      {
+        "label": "D",
+        "text": "1/2"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "0.5 equals one half."
+  },
+  {
+    "id": "map_153",
+    "exam": "MAP Growth Practice",
+    "section": "Math",
+    "difficulty": "hard",
+    "question": "Solve: 7 + 6 \u00d7 2",
+    "options": [
+      {
+        "label": "A",
+        "text": "19"
+      },
+      {
+        "label": "B",
+        "text": "26"
+      },
+      {
+        "label": "C",
+        "text": "13"
+      },
+      {
+        "label": "D",
+        "text": "20"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Multiply first: 6\u00d72=12, then add 7."
+  },
+  {
+    "id": "map_154",
+    "exam": "MAP Growth Practice",
+    "section": "Reading",
+    "difficulty": "easy",
+    "question": "Which sentence best summarizes a paragraph?",
+    "options": [
+      {
+        "label": "A",
+        "text": "It adds new details"
+      },
+      {
+        "label": "B",
+        "text": "It states the main idea in fewer words."
+      },
+      {
+        "label": "C",
+        "text": "It repeats every sentence"
+      },
+      {
+        "label": "D",
+        "text": "It changes the topic"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "A summary condenses the main idea."
+  },
+  {
+    "id": "map_155",
+    "exam": "MAP Growth Practice",
+    "section": "Science",
+    "difficulty": "medium",
+    "question": "Plants produce food through which process?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Respiration"
+      },
+      {
+        "label": "B",
+        "text": "Fermentation"
+      },
+      {
+        "label": "C",
+        "text": "Photosynthesis"
+      },
+      {
+        "label": "D",
+        "text": "Digestion"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Photosynthesis converts light energy to chemical energy."
+  },
+  {
+    "id": "map_156",
+    "exam": "MAP Growth Practice",
+    "section": "Math",
+    "difficulty": "hard",
+    "question": "What fraction equals 0.5?",
+    "options": [
+      {
+        "label": "A",
+        "text": "1/3"
+      },
+      {
+        "label": "B",
+        "text": "2/3"
+      },
+      {
+        "label": "C",
+        "text": "3/4"
+      },
+      {
+        "label": "D",
+        "text": "1/2"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "0.5 equals one half."
+  },
+  {
+    "id": "map_157",
+    "exam": "MAP Growth Practice",
+    "section": "Math",
+    "difficulty": "easy",
+    "question": "Solve: 7 + 6 \u00d7 2",
+    "options": [
+      {
+        "label": "A",
+        "text": "19"
+      },
+      {
+        "label": "B",
+        "text": "26"
+      },
+      {
+        "label": "C",
+        "text": "13"
+      },
+      {
+        "label": "D",
+        "text": "20"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Multiply first: 6\u00d72=12, then add 7."
+  },
+  {
+    "id": "map_158",
+    "exam": "MAP Growth Practice",
+    "section": "Reading",
+    "difficulty": "medium",
+    "question": "Which sentence best summarizes a paragraph?",
+    "options": [
+      {
+        "label": "A",
+        "text": "It adds new details"
+      },
+      {
+        "label": "B",
+        "text": "It states the main idea in fewer words."
+      },
+      {
+        "label": "C",
+        "text": "It repeats every sentence"
+      },
+      {
+        "label": "D",
+        "text": "It changes the topic"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "A summary condenses the main idea."
+  },
+  {
+    "id": "map_159",
+    "exam": "MAP Growth Practice",
+    "section": "Science",
+    "difficulty": "hard",
+    "question": "Plants produce food through which process?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Respiration"
+      },
+      {
+        "label": "B",
+        "text": "Fermentation"
+      },
+      {
+        "label": "C",
+        "text": "Photosynthesis"
+      },
+      {
+        "label": "D",
+        "text": "Digestion"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Photosynthesis converts light energy to chemical energy."
+  },
+  {
+    "id": "map_160",
+    "exam": "MAP Growth Practice",
+    "section": "Math",
+    "difficulty": "easy",
+    "question": "What fraction equals 0.5?",
+    "options": [
+      {
+        "label": "A",
+        "text": "1/3"
+      },
+      {
+        "label": "B",
+        "text": "2/3"
+      },
+      {
+        "label": "C",
+        "text": "3/4"
+      },
+      {
+        "label": "D",
+        "text": "1/2"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "0.5 equals one half."
+  },
+  {
+    "id": "map_161",
+    "exam": "MAP Growth Practice",
+    "section": "Math",
+    "difficulty": "medium",
+    "question": "Solve: 7 + 6 \u00d7 2",
+    "options": [
+      {
+        "label": "A",
+        "text": "19"
+      },
+      {
+        "label": "B",
+        "text": "26"
+      },
+      {
+        "label": "C",
+        "text": "13"
+      },
+      {
+        "label": "D",
+        "text": "20"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Multiply first: 6\u00d72=12, then add 7."
+  },
+  {
+    "id": "map_162",
+    "exam": "MAP Growth Practice",
+    "section": "Reading",
+    "difficulty": "hard",
+    "question": "Which sentence best summarizes a paragraph?",
+    "options": [
+      {
+        "label": "A",
+        "text": "It adds new details"
+      },
+      {
+        "label": "B",
+        "text": "It states the main idea in fewer words."
+      },
+      {
+        "label": "C",
+        "text": "It repeats every sentence"
+      },
+      {
+        "label": "D",
+        "text": "It changes the topic"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "A summary condenses the main idea."
+  },
+  {
+    "id": "map_163",
+    "exam": "MAP Growth Practice",
+    "section": "Science",
+    "difficulty": "easy",
+    "question": "Plants produce food through which process?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Respiration"
+      },
+      {
+        "label": "B",
+        "text": "Fermentation"
+      },
+      {
+        "label": "C",
+        "text": "Photosynthesis"
+      },
+      {
+        "label": "D",
+        "text": "Digestion"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Photosynthesis converts light energy to chemical energy."
+  },
+  {
+    "id": "map_164",
+    "exam": "MAP Growth Practice",
+    "section": "Math",
+    "difficulty": "medium",
+    "question": "What fraction equals 0.5?",
+    "options": [
+      {
+        "label": "A",
+        "text": "1/3"
+      },
+      {
+        "label": "B",
+        "text": "2/3"
+      },
+      {
+        "label": "C",
+        "text": "3/4"
+      },
+      {
+        "label": "D",
+        "text": "1/2"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "0.5 equals one half."
+  },
+  {
+    "id": "map_165",
+    "exam": "MAP Growth Practice",
+    "section": "Math",
+    "difficulty": "hard",
+    "question": "Solve: 7 + 6 \u00d7 2",
+    "options": [
+      {
+        "label": "A",
+        "text": "19"
+      },
+      {
+        "label": "B",
+        "text": "26"
+      },
+      {
+        "label": "C",
+        "text": "13"
+      },
+      {
+        "label": "D",
+        "text": "20"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Multiply first: 6\u00d72=12, then add 7."
+  },
+  {
+    "id": "map_166",
+    "exam": "MAP Growth Practice",
+    "section": "Reading",
+    "difficulty": "easy",
+    "question": "Which sentence best summarizes a paragraph?",
+    "options": [
+      {
+        "label": "A",
+        "text": "It adds new details"
+      },
+      {
+        "label": "B",
+        "text": "It states the main idea in fewer words."
+      },
+      {
+        "label": "C",
+        "text": "It repeats every sentence"
+      },
+      {
+        "label": "D",
+        "text": "It changes the topic"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "A summary condenses the main idea."
+  },
+  {
+    "id": "map_167",
+    "exam": "MAP Growth Practice",
+    "section": "Science",
+    "difficulty": "medium",
+    "question": "Plants produce food through which process?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Respiration"
+      },
+      {
+        "label": "B",
+        "text": "Fermentation"
+      },
+      {
+        "label": "C",
+        "text": "Photosynthesis"
+      },
+      {
+        "label": "D",
+        "text": "Digestion"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Photosynthesis converts light energy to chemical energy."
+  },
+  {
+    "id": "map_168",
+    "exam": "MAP Growth Practice",
+    "section": "Math",
+    "difficulty": "hard",
+    "question": "What fraction equals 0.5?",
+    "options": [
+      {
+        "label": "A",
+        "text": "1/3"
+      },
+      {
+        "label": "B",
+        "text": "2/3"
+      },
+      {
+        "label": "C",
+        "text": "3/4"
+      },
+      {
+        "label": "D",
+        "text": "1/2"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "0.5 equals one half."
+  },
+  {
+    "id": "map_169",
+    "exam": "MAP Growth Practice",
+    "section": "Math",
+    "difficulty": "easy",
+    "question": "Solve: 7 + 6 \u00d7 2",
+    "options": [
+      {
+        "label": "A",
+        "text": "19"
+      },
+      {
+        "label": "B",
+        "text": "26"
+      },
+      {
+        "label": "C",
+        "text": "13"
+      },
+      {
+        "label": "D",
+        "text": "20"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Multiply first: 6\u00d72=12, then add 7."
+  },
+  {
+    "id": "map_170",
+    "exam": "MAP Growth Practice",
+    "section": "Reading",
+    "difficulty": "medium",
+    "question": "Which sentence best summarizes a paragraph?",
+    "options": [
+      {
+        "label": "A",
+        "text": "It adds new details"
+      },
+      {
+        "label": "B",
+        "text": "It states the main idea in fewer words."
+      },
+      {
+        "label": "C",
+        "text": "It repeats every sentence"
+      },
+      {
+        "label": "D",
+        "text": "It changes the topic"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "A summary condenses the main idea."
+  },
+  {
+    "id": "map_171",
+    "exam": "MAP Growth Practice",
+    "section": "Science",
+    "difficulty": "hard",
+    "question": "Plants produce food through which process?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Respiration"
+      },
+      {
+        "label": "B",
+        "text": "Fermentation"
+      },
+      {
+        "label": "C",
+        "text": "Photosynthesis"
+      },
+      {
+        "label": "D",
+        "text": "Digestion"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Photosynthesis converts light energy to chemical energy."
+  },
+  {
+    "id": "map_172",
+    "exam": "MAP Growth Practice",
+    "section": "Math",
+    "difficulty": "easy",
+    "question": "What fraction equals 0.5?",
+    "options": [
+      {
+        "label": "A",
+        "text": "1/3"
+      },
+      {
+        "label": "B",
+        "text": "2/3"
+      },
+      {
+        "label": "C",
+        "text": "3/4"
+      },
+      {
+        "label": "D",
+        "text": "1/2"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "0.5 equals one half."
+  },
+  {
+    "id": "map_173",
+    "exam": "MAP Growth Practice",
+    "section": "Math",
+    "difficulty": "medium",
+    "question": "Solve: 7 + 6 \u00d7 2",
+    "options": [
+      {
+        "label": "A",
+        "text": "19"
+      },
+      {
+        "label": "B",
+        "text": "26"
+      },
+      {
+        "label": "C",
+        "text": "13"
+      },
+      {
+        "label": "D",
+        "text": "20"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Multiply first: 6\u00d72=12, then add 7."
+  },
+  {
+    "id": "map_174",
+    "exam": "MAP Growth Practice",
+    "section": "Reading",
+    "difficulty": "hard",
+    "question": "Which sentence best summarizes a paragraph?",
+    "options": [
+      {
+        "label": "A",
+        "text": "It adds new details"
+      },
+      {
+        "label": "B",
+        "text": "It states the main idea in fewer words."
+      },
+      {
+        "label": "C",
+        "text": "It repeats every sentence"
+      },
+      {
+        "label": "D",
+        "text": "It changes the topic"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "A summary condenses the main idea."
+  },
+  {
+    "id": "map_175",
+    "exam": "MAP Growth Practice",
+    "section": "Science",
+    "difficulty": "easy",
+    "question": "Plants produce food through which process?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Respiration"
+      },
+      {
+        "label": "B",
+        "text": "Fermentation"
+      },
+      {
+        "label": "C",
+        "text": "Photosynthesis"
+      },
+      {
+        "label": "D",
+        "text": "Digestion"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Photosynthesis converts light energy to chemical energy."
+  },
+  {
+    "id": "map_176",
+    "exam": "MAP Growth Practice",
+    "section": "Math",
+    "difficulty": "medium",
+    "question": "What fraction equals 0.5?",
+    "options": [
+      {
+        "label": "A",
+        "text": "1/3"
+      },
+      {
+        "label": "B",
+        "text": "2/3"
+      },
+      {
+        "label": "C",
+        "text": "3/4"
+      },
+      {
+        "label": "D",
+        "text": "1/2"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "0.5 equals one half."
+  },
+  {
+    "id": "map_177",
+    "exam": "MAP Growth Practice",
+    "section": "Math",
+    "difficulty": "hard",
+    "question": "Solve: 7 + 6 \u00d7 2",
+    "options": [
+      {
+        "label": "A",
+        "text": "19"
+      },
+      {
+        "label": "B",
+        "text": "26"
+      },
+      {
+        "label": "C",
+        "text": "13"
+      },
+      {
+        "label": "D",
+        "text": "20"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Multiply first: 6\u00d72=12, then add 7."
+  },
+  {
+    "id": "map_178",
+    "exam": "MAP Growth Practice",
+    "section": "Reading",
+    "difficulty": "easy",
+    "question": "Which sentence best summarizes a paragraph?",
+    "options": [
+      {
+        "label": "A",
+        "text": "It adds new details"
+      },
+      {
+        "label": "B",
+        "text": "It states the main idea in fewer words."
+      },
+      {
+        "label": "C",
+        "text": "It repeats every sentence"
+      },
+      {
+        "label": "D",
+        "text": "It changes the topic"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "A summary condenses the main idea."
+  },
+  {
+    "id": "map_179",
+    "exam": "MAP Growth Practice",
+    "section": "Science",
+    "difficulty": "medium",
+    "question": "Plants produce food through which process?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Respiration"
+      },
+      {
+        "label": "B",
+        "text": "Fermentation"
+      },
+      {
+        "label": "C",
+        "text": "Photosynthesis"
+      },
+      {
+        "label": "D",
+        "text": "Digestion"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Photosynthesis converts light energy to chemical energy."
+  },
+  {
+    "id": "map_180",
+    "exam": "MAP Growth Practice",
+    "section": "Math",
+    "difficulty": "hard",
+    "question": "What fraction equals 0.5?",
+    "options": [
+      {
+        "label": "A",
+        "text": "1/3"
+      },
+      {
+        "label": "B",
+        "text": "2/3"
+      },
+      {
+        "label": "C",
+        "text": "3/4"
+      },
+      {
+        "label": "D",
+        "text": "1/2"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "0.5 equals one half."
+  },
+  {
+    "id": "map_181",
+    "exam": "MAP Growth Practice",
+    "section": "Math",
+    "difficulty": "easy",
+    "question": "Solve: 7 + 6 \u00d7 2",
+    "options": [
+      {
+        "label": "A",
+        "text": "19"
+      },
+      {
+        "label": "B",
+        "text": "26"
+      },
+      {
+        "label": "C",
+        "text": "13"
+      },
+      {
+        "label": "D",
+        "text": "20"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Multiply first: 6\u00d72=12, then add 7."
+  },
+  {
+    "id": "map_182",
+    "exam": "MAP Growth Practice",
+    "section": "Reading",
+    "difficulty": "medium",
+    "question": "Which sentence best summarizes a paragraph?",
+    "options": [
+      {
+        "label": "A",
+        "text": "It adds new details"
+      },
+      {
+        "label": "B",
+        "text": "It states the main idea in fewer words."
+      },
+      {
+        "label": "C",
+        "text": "It repeats every sentence"
+      },
+      {
+        "label": "D",
+        "text": "It changes the topic"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "A summary condenses the main idea."
+  },
+  {
+    "id": "map_183",
+    "exam": "MAP Growth Practice",
+    "section": "Science",
+    "difficulty": "hard",
+    "question": "Plants produce food through which process?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Respiration"
+      },
+      {
+        "label": "B",
+        "text": "Fermentation"
+      },
+      {
+        "label": "C",
+        "text": "Photosynthesis"
+      },
+      {
+        "label": "D",
+        "text": "Digestion"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Photosynthesis converts light energy to chemical energy."
+  },
+  {
+    "id": "map_184",
+    "exam": "MAP Growth Practice",
+    "section": "Math",
+    "difficulty": "easy",
+    "question": "What fraction equals 0.5?",
+    "options": [
+      {
+        "label": "A",
+        "text": "1/3"
+      },
+      {
+        "label": "B",
+        "text": "2/3"
+      },
+      {
+        "label": "C",
+        "text": "3/4"
+      },
+      {
+        "label": "D",
+        "text": "1/2"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "0.5 equals one half."
+  },
+  {
+    "id": "map_185",
+    "exam": "MAP Growth Practice",
+    "section": "Math",
+    "difficulty": "medium",
+    "question": "Solve: 7 + 6 \u00d7 2",
+    "options": [
+      {
+        "label": "A",
+        "text": "19"
+      },
+      {
+        "label": "B",
+        "text": "26"
+      },
+      {
+        "label": "C",
+        "text": "13"
+      },
+      {
+        "label": "D",
+        "text": "20"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Multiply first: 6\u00d72=12, then add 7."
+  },
+  {
+    "id": "map_186",
+    "exam": "MAP Growth Practice",
+    "section": "Reading",
+    "difficulty": "hard",
+    "question": "Which sentence best summarizes a paragraph?",
+    "options": [
+      {
+        "label": "A",
+        "text": "It adds new details"
+      },
+      {
+        "label": "B",
+        "text": "It states the main idea in fewer words."
+      },
+      {
+        "label": "C",
+        "text": "It repeats every sentence"
+      },
+      {
+        "label": "D",
+        "text": "It changes the topic"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "A summary condenses the main idea."
+  },
+  {
+    "id": "map_187",
+    "exam": "MAP Growth Practice",
+    "section": "Science",
+    "difficulty": "easy",
+    "question": "Plants produce food through which process?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Respiration"
+      },
+      {
+        "label": "B",
+        "text": "Fermentation"
+      },
+      {
+        "label": "C",
+        "text": "Photosynthesis"
+      },
+      {
+        "label": "D",
+        "text": "Digestion"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Photosynthesis converts light energy to chemical energy."
+  },
+  {
+    "id": "map_188",
+    "exam": "MAP Growth Practice",
+    "section": "Math",
+    "difficulty": "medium",
+    "question": "What fraction equals 0.5?",
+    "options": [
+      {
+        "label": "A",
+        "text": "1/3"
+      },
+      {
+        "label": "B",
+        "text": "2/3"
+      },
+      {
+        "label": "C",
+        "text": "3/4"
+      },
+      {
+        "label": "D",
+        "text": "1/2"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "0.5 equals one half."
+  },
+  {
+    "id": "map_189",
+    "exam": "MAP Growth Practice",
+    "section": "Math",
+    "difficulty": "hard",
+    "question": "Solve: 7 + 6 \u00d7 2",
+    "options": [
+      {
+        "label": "A",
+        "text": "19"
+      },
+      {
+        "label": "B",
+        "text": "26"
+      },
+      {
+        "label": "C",
+        "text": "13"
+      },
+      {
+        "label": "D",
+        "text": "20"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Multiply first: 6\u00d72=12, then add 7."
+  },
+  {
+    "id": "map_190",
+    "exam": "MAP Growth Practice",
+    "section": "Reading",
+    "difficulty": "easy",
+    "question": "Which sentence best summarizes a paragraph?",
+    "options": [
+      {
+        "label": "A",
+        "text": "It adds new details"
+      },
+      {
+        "label": "B",
+        "text": "It states the main idea in fewer words."
+      },
+      {
+        "label": "C",
+        "text": "It repeats every sentence"
+      },
+      {
+        "label": "D",
+        "text": "It changes the topic"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "A summary condenses the main idea."
+  },
+  {
+    "id": "map_191",
+    "exam": "MAP Growth Practice",
+    "section": "Science",
+    "difficulty": "medium",
+    "question": "Plants produce food through which process?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Respiration"
+      },
+      {
+        "label": "B",
+        "text": "Fermentation"
+      },
+      {
+        "label": "C",
+        "text": "Photosynthesis"
+      },
+      {
+        "label": "D",
+        "text": "Digestion"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Photosynthesis converts light energy to chemical energy."
+  },
+  {
+    "id": "map_192",
+    "exam": "MAP Growth Practice",
+    "section": "Math",
+    "difficulty": "hard",
+    "question": "What fraction equals 0.5?",
+    "options": [
+      {
+        "label": "A",
+        "text": "1/3"
+      },
+      {
+        "label": "B",
+        "text": "2/3"
+      },
+      {
+        "label": "C",
+        "text": "3/4"
+      },
+      {
+        "label": "D",
+        "text": "1/2"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "0.5 equals one half."
+  },
+  {
+    "id": "map_193",
+    "exam": "MAP Growth Practice",
+    "section": "Math",
+    "difficulty": "easy",
+    "question": "Solve: 7 + 6 \u00d7 2",
+    "options": [
+      {
+        "label": "A",
+        "text": "19"
+      },
+      {
+        "label": "B",
+        "text": "26"
+      },
+      {
+        "label": "C",
+        "text": "13"
+      },
+      {
+        "label": "D",
+        "text": "20"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Multiply first: 6\u00d72=12, then add 7."
+  },
+  {
+    "id": "map_194",
+    "exam": "MAP Growth Practice",
+    "section": "Reading",
+    "difficulty": "medium",
+    "question": "Which sentence best summarizes a paragraph?",
+    "options": [
+      {
+        "label": "A",
+        "text": "It adds new details"
+      },
+      {
+        "label": "B",
+        "text": "It states the main idea in fewer words."
+      },
+      {
+        "label": "C",
+        "text": "It repeats every sentence"
+      },
+      {
+        "label": "D",
+        "text": "It changes the topic"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "A summary condenses the main idea."
+  },
+  {
+    "id": "map_195",
+    "exam": "MAP Growth Practice",
+    "section": "Science",
+    "difficulty": "hard",
+    "question": "Plants produce food through which process?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Respiration"
+      },
+      {
+        "label": "B",
+        "text": "Fermentation"
+      },
+      {
+        "label": "C",
+        "text": "Photosynthesis"
+      },
+      {
+        "label": "D",
+        "text": "Digestion"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Photosynthesis converts light energy to chemical energy."
+  },
+  {
+    "id": "map_196",
+    "exam": "MAP Growth Practice",
+    "section": "Math",
+    "difficulty": "easy",
+    "question": "What fraction equals 0.5?",
+    "options": [
+      {
+        "label": "A",
+        "text": "1/3"
+      },
+      {
+        "label": "B",
+        "text": "2/3"
+      },
+      {
+        "label": "C",
+        "text": "3/4"
+      },
+      {
+        "label": "D",
+        "text": "1/2"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "0.5 equals one half."
+  },
+  {
+    "id": "map_197",
+    "exam": "MAP Growth Practice",
+    "section": "Math",
+    "difficulty": "medium",
+    "question": "Solve: 7 + 6 \u00d7 2",
+    "options": [
+      {
+        "label": "A",
+        "text": "19"
+      },
+      {
+        "label": "B",
+        "text": "26"
+      },
+      {
+        "label": "C",
+        "text": "13"
+      },
+      {
+        "label": "D",
+        "text": "20"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Multiply first: 6\u00d72=12, then add 7."
+  },
+  {
+    "id": "map_198",
+    "exam": "MAP Growth Practice",
+    "section": "Reading",
+    "difficulty": "hard",
+    "question": "Which sentence best summarizes a paragraph?",
+    "options": [
+      {
+        "label": "A",
+        "text": "It adds new details"
+      },
+      {
+        "label": "B",
+        "text": "It states the main idea in fewer words."
+      },
+      {
+        "label": "C",
+        "text": "It repeats every sentence"
+      },
+      {
+        "label": "D",
+        "text": "It changes the topic"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "A summary condenses the main idea."
+  },
+  {
+    "id": "map_199",
+    "exam": "MAP Growth Practice",
+    "section": "Science",
+    "difficulty": "easy",
+    "question": "Plants produce food through which process?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Respiration"
+      },
+      {
+        "label": "B",
+        "text": "Fermentation"
+      },
+      {
+        "label": "C",
+        "text": "Photosynthesis"
+      },
+      {
+        "label": "D",
+        "text": "Digestion"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Photosynthesis converts light energy to chemical energy."
+  },
+  {
+    "id": "map_200",
+    "exam": "MAP Growth Practice",
+    "section": "Math",
+    "difficulty": "medium",
+    "question": "What fraction equals 0.5?",
+    "options": [
+      {
+        "label": "A",
+        "text": "1/3"
+      },
+      {
+        "label": "B",
+        "text": "2/3"
+      },
+      {
+        "label": "C",
+        "text": "3/4"
+      },
+      {
+        "label": "D",
+        "text": "1/2"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "0.5 equals one half."
+  }
+]
