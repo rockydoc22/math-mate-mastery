@@ -1,0 +1,40 @@
+{
+  "title": "DAT + OAT + CLT + Homeschool Original Pack 01",
+  "notes": [
+    "All questions are original and not copied from official exams.",
+    "Questions are inspired by skills and topic areas only.",
+    "Balanced correct answer distribution is included."
+  ],
+  "counts": {
+    "DAT": 240,
+    "OAT": 240,
+    "CLT": 180,
+    "Homeschool Mixed": 220
+  },
+  "answer_distribution": {
+    "DAT": {
+      "A": 60,
+      "B": 60,
+      "C": 60,
+      "D": 60
+    },
+    "OAT": {
+      "A": 60,
+      "B": 60,
+      "C": 60,
+      "D": 60
+    },
+    "CLT": {
+      "A": 45,
+      "B": 45,
+      "C": 45,
+      "D": 45
+    },
+    "Homeschool Mixed": {
+      "A": 55,
+      "B": 55,
+      "C": 55,
+      "D": 55
+    }
+  }
+}

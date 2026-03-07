@@ -1,0 +1,6722 @@
+[
+  {
+    "id": "oat_001",
+    "exam": "OAT",
+    "section": "Biology",
+    "skill": "eye_anatomy",
+    "difficulty": "easy",
+    "question": "Which part of the eye contains photoreceptor cells responsible for detecting light?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Retina"
+      },
+      {
+        "label": "B",
+        "text": "Cornea"
+      },
+      {
+        "label": "C",
+        "text": "Lens"
+      },
+      {
+        "label": "D",
+        "text": "Iris"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "The retina contains rods and cones, the photoreceptors that detect light."
+  },
+  {
+    "id": "oat_002",
+    "exam": "OAT",
+    "section": "Physics",
+    "skill": "optics",
+    "difficulty": "medium",
+    "question": "A patient is more likely to see nearby objects clearly when which eye structure changes shape?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Optic nerve"
+      },
+      {
+        "label": "B",
+        "text": "Lens"
+      },
+      {
+        "label": "C",
+        "text": "Sclera"
+      },
+      {
+        "label": "D",
+        "text": "Pupil"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Accommodation occurs when the lens changes shape to focus light from near objects."
+  },
+  {
+    "id": "oat_003",
+    "exam": "OAT",
+    "section": "General Chemistry",
+    "skill": "molarity",
+    "difficulty": "hard",
+    "question": "A solution contains 3 moles of solute in 1.5 liters. What is its molarity?",
+    "options": [
+      {
+        "label": "A",
+        "text": "0.5 M"
+      },
+      {
+        "label": "B",
+        "text": "1.0 M"
+      },
+      {
+        "label": "C",
+        "text": "2.0 M"
+      },
+      {
+        "label": "D",
+        "text": "4.5 M"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Molarity = 3 ÷ 1.5 = 2.0 M."
+  },
+  {
+    "id": "oat_004",
+    "exam": "OAT",
+    "section": "General Chemistry",
+    "skill": "bonding",
+    "difficulty": "easy",
+    "question": "Which type of bond is formed when electrons are shared between atoms?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Ionic bond"
+      },
+      {
+        "label": "B",
+        "text": "Hydrogen bond"
+      },
+      {
+        "label": "C",
+        "text": "Metallic lattice only"
+      },
+      {
+        "label": "D",
+        "text": "Covalent bond"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Covalent bonds involve sharing electron pairs."
+  },
+  {
+    "id": "oat_005",
+    "exam": "OAT",
+    "section": "Quantitative Reasoning",
+    "skill": "linear_functions",
+    "difficulty": "medium",
+    "question": "If y = 2x + 7, what is y when x = 6?",
+    "options": [
+      {
+        "label": "A",
+        "text": "19"
+      },
+      {
+        "label": "B",
+        "text": "17"
+      },
+      {
+        "label": "C",
+        "text": "18"
+      },
+      {
+        "label": "D",
+        "text": "20"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Substitute x = 6: y = 2(6) + 7 = 19."
+  },
+  {
+    "id": "oat_006",
+    "exam": "OAT",
+    "section": "Reading Comprehension",
+    "skill": "main_idea",
+    "difficulty": "hard",
+    "question": "A passage explains that regular eye exams can identify changes in vision early and help patients receive timely treatment. Which choice best states the main point?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Vision always worsens quickly without warning."
+      },
+      {
+        "label": "B",
+        "text": "Early eye exams can detect vision changes before problems worsen."
+      },
+      {
+        "label": "C",
+        "text": "Only severe pain justifies an eye exam."
+      },
+      {
+        "label": "D",
+        "text": "Treatment is unnecessary when vision changes slowly."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "The main point is that early exams help detect problems sooner."
+  },
+  {
+    "id": "oat_007",
+    "exam": "OAT",
+    "section": "Biology",
+    "skill": "eye_anatomy",
+    "difficulty": "easy",
+    "question": "Which part of the eye contains photoreceptor cells responsible for detecting light?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Cornea"
+      },
+      {
+        "label": "B",
+        "text": "Lens"
+      },
+      {
+        "label": "C",
+        "text": "Retina"
+      },
+      {
+        "label": "D",
+        "text": "Iris"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "The retina contains rods and cones, the photoreceptors that detect light."
+  },
+  {
+    "id": "oat_008",
+    "exam": "OAT",
+    "section": "Physics",
+    "skill": "optics",
+    "difficulty": "medium",
+    "question": "A patient is more likely to see nearby objects clearly when which eye structure changes shape?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Optic nerve"
+      },
+      {
+        "label": "B",
+        "text": "Sclera"
+      },
+      {
+        "label": "C",
+        "text": "Pupil"
+      },
+      {
+        "label": "D",
+        "text": "Lens"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Accommodation occurs when the lens changes shape to focus light from near objects."
+  },
+  {
+    "id": "oat_009",
+    "exam": "OAT",
+    "section": "General Chemistry",
+    "skill": "molarity",
+    "difficulty": "hard",
+    "question": "A solution contains 3 moles of solute in 1.5 liters. What is its molarity?",
+    "options": [
+      {
+        "label": "A",
+        "text": "2.0 M"
+      },
+      {
+        "label": "B",
+        "text": "0.5 M"
+      },
+      {
+        "label": "C",
+        "text": "1.0 M"
+      },
+      {
+        "label": "D",
+        "text": "4.5 M"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Molarity = 3 ÷ 1.5 = 2.0 M."
+  },
+  {
+    "id": "oat_010",
+    "exam": "OAT",
+    "section": "General Chemistry",
+    "skill": "bonding",
+    "difficulty": "easy",
+    "question": "Which type of bond is formed when electrons are shared between atoms?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Ionic bond"
+      },
+      {
+        "label": "B",
+        "text": "Covalent bond"
+      },
+      {
+        "label": "C",
+        "text": "Hydrogen bond"
+      },
+      {
+        "label": "D",
+        "text": "Metallic lattice only"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Covalent bonds involve sharing electron pairs."
+  },
+  {
+    "id": "oat_011",
+    "exam": "OAT",
+    "section": "Quantitative Reasoning",
+    "skill": "linear_functions",
+    "difficulty": "medium",
+    "question": "If y = 2x + 7, what is y when x = 6?",
+    "options": [
+      {
+        "label": "A",
+        "text": "17"
+      },
+      {
+        "label": "B",
+        "text": "18"
+      },
+      {
+        "label": "C",
+        "text": "19"
+      },
+      {
+        "label": "D",
+        "text": "20"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Substitute x = 6: y = 2(6) + 7 = 19."
+  },
+  {
+    "id": "oat_012",
+    "exam": "OAT",
+    "section": "Reading Comprehension",
+    "skill": "main_idea",
+    "difficulty": "hard",
+    "question": "A passage explains that regular eye exams can identify changes in vision early and help patients receive timely treatment. Which choice best states the main point?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Vision always worsens quickly without warning."
+      },
+      {
+        "label": "B",
+        "text": "Only severe pain justifies an eye exam."
+      },
+      {
+        "label": "C",
+        "text": "Treatment is unnecessary when vision changes slowly."
+      },
+      {
+        "label": "D",
+        "text": "Early eye exams can detect vision changes before problems worsen."
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "The main point is that early exams help detect problems sooner."
+  },
+  {
+    "id": "oat_013",
+    "exam": "OAT",
+    "section": "Biology",
+    "skill": "eye_anatomy",
+    "difficulty": "easy",
+    "question": "Which part of the eye contains photoreceptor cells responsible for detecting light?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Retina"
+      },
+      {
+        "label": "B",
+        "text": "Cornea"
+      },
+      {
+        "label": "C",
+        "text": "Lens"
+      },
+      {
+        "label": "D",
+        "text": "Iris"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "The retina contains rods and cones, the photoreceptors that detect light."
+  },
+  {
+    "id": "oat_014",
+    "exam": "OAT",
+    "section": "Physics",
+    "skill": "optics",
+    "difficulty": "medium",
+    "question": "A patient is more likely to see nearby objects clearly when which eye structure changes shape?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Optic nerve"
+      },
+      {
+        "label": "B",
+        "text": "Lens"
+      },
+      {
+        "label": "C",
+        "text": "Sclera"
+      },
+      {
+        "label": "D",
+        "text": "Pupil"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Accommodation occurs when the lens changes shape to focus light from near objects."
+  },
+  {
+    "id": "oat_015",
+    "exam": "OAT",
+    "section": "General Chemistry",
+    "skill": "molarity",
+    "difficulty": "hard",
+    "question": "A solution contains 3 moles of solute in 1.5 liters. What is its molarity?",
+    "options": [
+      {
+        "label": "A",
+        "text": "0.5 M"
+      },
+      {
+        "label": "B",
+        "text": "1.0 M"
+      },
+      {
+        "label": "C",
+        "text": "2.0 M"
+      },
+      {
+        "label": "D",
+        "text": "4.5 M"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Molarity = 3 ÷ 1.5 = 2.0 M."
+  },
+  {
+    "id": "oat_016",
+    "exam": "OAT",
+    "section": "General Chemistry",
+    "skill": "bonding",
+    "difficulty": "easy",
+    "question": "Which type of bond is formed when electrons are shared between atoms?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Ionic bond"
+      },
+      {
+        "label": "B",
+        "text": "Hydrogen bond"
+      },
+      {
+        "label": "C",
+        "text": "Metallic lattice only"
+      },
+      {
+        "label": "D",
+        "text": "Covalent bond"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Covalent bonds involve sharing electron pairs."
+  },
+  {
+    "id": "oat_017",
+    "exam": "OAT",
+    "section": "Quantitative Reasoning",
+    "skill": "linear_functions",
+    "difficulty": "medium",
+    "question": "If y = 2x + 7, what is y when x = 6?",
+    "options": [
+      {
+        "label": "A",
+        "text": "19"
+      },
+      {
+        "label": "B",
+        "text": "17"
+      },
+      {
+        "label": "C",
+        "text": "18"
+      },
+      {
+        "label": "D",
+        "text": "20"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Substitute x = 6: y = 2(6) + 7 = 19."
+  },
+  {
+    "id": "oat_018",
+    "exam": "OAT",
+    "section": "Reading Comprehension",
+    "skill": "main_idea",
+    "difficulty": "hard",
+    "question": "A passage explains that regular eye exams can identify changes in vision early and help patients receive timely treatment. Which choice best states the main point?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Vision always worsens quickly without warning."
+      },
+      {
+        "label": "B",
+        "text": "Early eye exams can detect vision changes before problems worsen."
+      },
+      {
+        "label": "C",
+        "text": "Only severe pain justifies an eye exam."
+      },
+      {
+        "label": "D",
+        "text": "Treatment is unnecessary when vision changes slowly."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "The main point is that early exams help detect problems sooner."
+  },
+  {
+    "id": "oat_019",
+    "exam": "OAT",
+    "section": "Biology",
+    "skill": "eye_anatomy",
+    "difficulty": "easy",
+    "question": "Which part of the eye contains photoreceptor cells responsible for detecting light?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Cornea"
+      },
+      {
+        "label": "B",
+        "text": "Lens"
+      },
+      {
+        "label": "C",
+        "text": "Retina"
+      },
+      {
+        "label": "D",
+        "text": "Iris"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "The retina contains rods and cones, the photoreceptors that detect light."
+  },
+  {
+    "id": "oat_020",
+    "exam": "OAT",
+    "section": "Physics",
+    "skill": "optics",
+    "difficulty": "medium",
+    "question": "A patient is more likely to see nearby objects clearly when which eye structure changes shape?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Optic nerve"
+      },
+      {
+        "label": "B",
+        "text": "Sclera"
+      },
+      {
+        "label": "C",
+        "text": "Pupil"
+      },
+      {
+        "label": "D",
+        "text": "Lens"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Accommodation occurs when the lens changes shape to focus light from near objects."
+  },
+  {
+    "id": "oat_021",
+    "exam": "OAT",
+    "section": "General Chemistry",
+    "skill": "molarity",
+    "difficulty": "hard",
+    "question": "A solution contains 3 moles of solute in 1.5 liters. What is its molarity?",
+    "options": [
+      {
+        "label": "A",
+        "text": "2.0 M"
+      },
+      {
+        "label": "B",
+        "text": "0.5 M"
+      },
+      {
+        "label": "C",
+        "text": "1.0 M"
+      },
+      {
+        "label": "D",
+        "text": "4.5 M"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Molarity = 3 ÷ 1.5 = 2.0 M."
+  },
+  {
+    "id": "oat_022",
+    "exam": "OAT",
+    "section": "General Chemistry",
+    "skill": "bonding",
+    "difficulty": "easy",
+    "question": "Which type of bond is formed when electrons are shared between atoms?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Ionic bond"
+      },
+      {
+        "label": "B",
+        "text": "Covalent bond"
+      },
+      {
+        "label": "C",
+        "text": "Hydrogen bond"
+      },
+      {
+        "label": "D",
+        "text": "Metallic lattice only"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Covalent bonds involve sharing electron pairs."
+  },
+  {
+    "id": "oat_023",
+    "exam": "OAT",
+    "section": "Quantitative Reasoning",
+    "skill": "linear_functions",
+    "difficulty": "medium",
+    "question": "If y = 2x + 7, what is y when x = 6?",
+    "options": [
+      {
+        "label": "A",
+        "text": "17"
+      },
+      {
+        "label": "B",
+        "text": "18"
+      },
+      {
+        "label": "C",
+        "text": "19"
+      },
+      {
+        "label": "D",
+        "text": "20"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Substitute x = 6: y = 2(6) + 7 = 19."
+  },
+  {
+    "id": "oat_024",
+    "exam": "OAT",
+    "section": "Reading Comprehension",
+    "skill": "main_idea",
+    "difficulty": "hard",
+    "question": "A passage explains that regular eye exams can identify changes in vision early and help patients receive timely treatment. Which choice best states the main point?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Vision always worsens quickly without warning."
+      },
+      {
+        "label": "B",
+        "text": "Only severe pain justifies an eye exam."
+      },
+      {
+        "label": "C",
+        "text": "Treatment is unnecessary when vision changes slowly."
+      },
+      {
+        "label": "D",
+        "text": "Early eye exams can detect vision changes before problems worsen."
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "The main point is that early exams help detect problems sooner."
+  },
+  {
+    "id": "oat_025",
+    "exam": "OAT",
+    "section": "Biology",
+    "skill": "eye_anatomy",
+    "difficulty": "easy",
+    "question": "Which part of the eye contains photoreceptor cells responsible for detecting light?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Retina"
+      },
+      {
+        "label": "B",
+        "text": "Cornea"
+      },
+      {
+        "label": "C",
+        "text": "Lens"
+      },
+      {
+        "label": "D",
+        "text": "Iris"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "The retina contains rods and cones, the photoreceptors that detect light."
+  },
+  {
+    "id": "oat_026",
+    "exam": "OAT",
+    "section": "Physics",
+    "skill": "optics",
+    "difficulty": "medium",
+    "question": "A patient is more likely to see nearby objects clearly when which eye structure changes shape?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Optic nerve"
+      },
+      {
+        "label": "B",
+        "text": "Lens"
+      },
+      {
+        "label": "C",
+        "text": "Sclera"
+      },
+      {
+        "label": "D",
+        "text": "Pupil"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Accommodation occurs when the lens changes shape to focus light from near objects."
+  },
+  {
+    "id": "oat_027",
+    "exam": "OAT",
+    "section": "General Chemistry",
+    "skill": "molarity",
+    "difficulty": "hard",
+    "question": "A solution contains 3 moles of solute in 1.5 liters. What is its molarity?",
+    "options": [
+      {
+        "label": "A",
+        "text": "0.5 M"
+      },
+      {
+        "label": "B",
+        "text": "1.0 M"
+      },
+      {
+        "label": "C",
+        "text": "2.0 M"
+      },
+      {
+        "label": "D",
+        "text": "4.5 M"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Molarity = 3 ÷ 1.5 = 2.0 M."
+  },
+  {
+    "id": "oat_028",
+    "exam": "OAT",
+    "section": "General Chemistry",
+    "skill": "bonding",
+    "difficulty": "easy",
+    "question": "Which type of bond is formed when electrons are shared between atoms?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Ionic bond"
+      },
+      {
+        "label": "B",
+        "text": "Hydrogen bond"
+      },
+      {
+        "label": "C",
+        "text": "Metallic lattice only"
+      },
+      {
+        "label": "D",
+        "text": "Covalent bond"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Covalent bonds involve sharing electron pairs."
+  },
+  {
+    "id": "oat_029",
+    "exam": "OAT",
+    "section": "Quantitative Reasoning",
+    "skill": "linear_functions",
+    "difficulty": "medium",
+    "question": "If y = 2x + 7, what is y when x = 6?",
+    "options": [
+      {
+        "label": "A",
+        "text": "19"
+      },
+      {
+        "label": "B",
+        "text": "17"
+      },
+      {
+        "label": "C",
+        "text": "18"
+      },
+      {
+        "label": "D",
+        "text": "20"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Substitute x = 6: y = 2(6) + 7 = 19."
+  },
+  {
+    "id": "oat_030",
+    "exam": "OAT",
+    "section": "Reading Comprehension",
+    "skill": "main_idea",
+    "difficulty": "hard",
+    "question": "A passage explains that regular eye exams can identify changes in vision early and help patients receive timely treatment. Which choice best states the main point?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Vision always worsens quickly without warning."
+      },
+      {
+        "label": "B",
+        "text": "Early eye exams can detect vision changes before problems worsen."
+      },
+      {
+        "label": "C",
+        "text": "Only severe pain justifies an eye exam."
+      },
+      {
+        "label": "D",
+        "text": "Treatment is unnecessary when vision changes slowly."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "The main point is that early exams help detect problems sooner."
+  },
+  {
+    "id": "oat_031",
+    "exam": "OAT",
+    "section": "Biology",
+    "skill": "eye_anatomy",
+    "difficulty": "easy",
+    "question": "Which part of the eye contains photoreceptor cells responsible for detecting light?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Cornea"
+      },
+      {
+        "label": "B",
+        "text": "Lens"
+      },
+      {
+        "label": "C",
+        "text": "Retina"
+      },
+      {
+        "label": "D",
+        "text": "Iris"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "The retina contains rods and cones, the photoreceptors that detect light."
+  },
+  {
+    "id": "oat_032",
+    "exam": "OAT",
+    "section": "Physics",
+    "skill": "optics",
+    "difficulty": "medium",
+    "question": "A patient is more likely to see nearby objects clearly when which eye structure changes shape?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Optic nerve"
+      },
+      {
+        "label": "B",
+        "text": "Sclera"
+      },
+      {
+        "label": "C",
+        "text": "Pupil"
+      },
+      {
+        "label": "D",
+        "text": "Lens"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Accommodation occurs when the lens changes shape to focus light from near objects."
+  },
+  {
+    "id": "oat_033",
+    "exam": "OAT",
+    "section": "General Chemistry",
+    "skill": "molarity",
+    "difficulty": "hard",
+    "question": "A solution contains 3 moles of solute in 1.5 liters. What is its molarity?",
+    "options": [
+      {
+        "label": "A",
+        "text": "2.0 M"
+      },
+      {
+        "label": "B",
+        "text": "0.5 M"
+      },
+      {
+        "label": "C",
+        "text": "1.0 M"
+      },
+      {
+        "label": "D",
+        "text": "4.5 M"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Molarity = 3 ÷ 1.5 = 2.0 M."
+  },
+  {
+    "id": "oat_034",
+    "exam": "OAT",
+    "section": "General Chemistry",
+    "skill": "bonding",
+    "difficulty": "easy",
+    "question": "Which type of bond is formed when electrons are shared between atoms?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Ionic bond"
+      },
+      {
+        "label": "B",
+        "text": "Covalent bond"
+      },
+      {
+        "label": "C",
+        "text": "Hydrogen bond"
+      },
+      {
+        "label": "D",
+        "text": "Metallic lattice only"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Covalent bonds involve sharing electron pairs."
+  },
+  {
+    "id": "oat_035",
+    "exam": "OAT",
+    "section": "Quantitative Reasoning",
+    "skill": "linear_functions",
+    "difficulty": "medium",
+    "question": "If y = 2x + 7, what is y when x = 6?",
+    "options": [
+      {
+        "label": "A",
+        "text": "17"
+      },
+      {
+        "label": "B",
+        "text": "18"
+      },
+      {
+        "label": "C",
+        "text": "19"
+      },
+      {
+        "label": "D",
+        "text": "20"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Substitute x = 6: y = 2(6) + 7 = 19."
+  },
+  {
+    "id": "oat_036",
+    "exam": "OAT",
+    "section": "Reading Comprehension",
+    "skill": "main_idea",
+    "difficulty": "hard",
+    "question": "A passage explains that regular eye exams can identify changes in vision early and help patients receive timely treatment. Which choice best states the main point?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Vision always worsens quickly without warning."
+      },
+      {
+        "label": "B",
+        "text": "Only severe pain justifies an eye exam."
+      },
+      {
+        "label": "C",
+        "text": "Treatment is unnecessary when vision changes slowly."
+      },
+      {
+        "label": "D",
+        "text": "Early eye exams can detect vision changes before problems worsen."
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "The main point is that early exams help detect problems sooner."
+  },
+  {
+    "id": "oat_037",
+    "exam": "OAT",
+    "section": "Biology",
+    "skill": "eye_anatomy",
+    "difficulty": "easy",
+    "question": "Which part of the eye contains photoreceptor cells responsible for detecting light?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Retina"
+      },
+      {
+        "label": "B",
+        "text": "Cornea"
+      },
+      {
+        "label": "C",
+        "text": "Lens"
+      },
+      {
+        "label": "D",
+        "text": "Iris"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "The retina contains rods and cones, the photoreceptors that detect light."
+  },
+  {
+    "id": "oat_038",
+    "exam": "OAT",
+    "section": "Physics",
+    "skill": "optics",
+    "difficulty": "medium",
+    "question": "A patient is more likely to see nearby objects clearly when which eye structure changes shape?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Optic nerve"
+      },
+      {
+        "label": "B",
+        "text": "Lens"
+      },
+      {
+        "label": "C",
+        "text": "Sclera"
+      },
+      {
+        "label": "D",
+        "text": "Pupil"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Accommodation occurs when the lens changes shape to focus light from near objects."
+  },
+  {
+    "id": "oat_039",
+    "exam": "OAT",
+    "section": "General Chemistry",
+    "skill": "molarity",
+    "difficulty": "hard",
+    "question": "A solution contains 3 moles of solute in 1.5 liters. What is its molarity?",
+    "options": [
+      {
+        "label": "A",
+        "text": "0.5 M"
+      },
+      {
+        "label": "B",
+        "text": "1.0 M"
+      },
+      {
+        "label": "C",
+        "text": "2.0 M"
+      },
+      {
+        "label": "D",
+        "text": "4.5 M"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Molarity = 3 ÷ 1.5 = 2.0 M."
+  },
+  {
+    "id": "oat_040",
+    "exam": "OAT",
+    "section": "General Chemistry",
+    "skill": "bonding",
+    "difficulty": "easy",
+    "question": "Which type of bond is formed when electrons are shared between atoms?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Ionic bond"
+      },
+      {
+        "label": "B",
+        "text": "Hydrogen bond"
+      },
+      {
+        "label": "C",
+        "text": "Metallic lattice only"
+      },
+      {
+        "label": "D",
+        "text": "Covalent bond"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Covalent bonds involve sharing electron pairs."
+  },
+  {
+    "id": "oat_041",
+    "exam": "OAT",
+    "section": "Quantitative Reasoning",
+    "skill": "linear_functions",
+    "difficulty": "medium",
+    "question": "If y = 2x + 7, what is y when x = 6?",
+    "options": [
+      {
+        "label": "A",
+        "text": "19"
+      },
+      {
+        "label": "B",
+        "text": "17"
+      },
+      {
+        "label": "C",
+        "text": "18"
+      },
+      {
+        "label": "D",
+        "text": "20"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Substitute x = 6: y = 2(6) + 7 = 19."
+  },
+  {
+    "id": "oat_042",
+    "exam": "OAT",
+    "section": "Reading Comprehension",
+    "skill": "main_idea",
+    "difficulty": "hard",
+    "question": "A passage explains that regular eye exams can identify changes in vision early and help patients receive timely treatment. Which choice best states the main point?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Vision always worsens quickly without warning."
+      },
+      {
+        "label": "B",
+        "text": "Early eye exams can detect vision changes before problems worsen."
+      },
+      {
+        "label": "C",
+        "text": "Only severe pain justifies an eye exam."
+      },
+      {
+        "label": "D",
+        "text": "Treatment is unnecessary when vision changes slowly."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "The main point is that early exams help detect problems sooner."
+  },
+  {
+    "id": "oat_043",
+    "exam": "OAT",
+    "section": "Biology",
+    "skill": "eye_anatomy",
+    "difficulty": "easy",
+    "question": "Which part of the eye contains photoreceptor cells responsible for detecting light?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Cornea"
+      },
+      {
+        "label": "B",
+        "text": "Lens"
+      },
+      {
+        "label": "C",
+        "text": "Retina"
+      },
+      {
+        "label": "D",
+        "text": "Iris"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "The retina contains rods and cones, the photoreceptors that detect light."
+  },
+  {
+    "id": "oat_044",
+    "exam": "OAT",
+    "section": "Physics",
+    "skill": "optics",
+    "difficulty": "medium",
+    "question": "A patient is more likely to see nearby objects clearly when which eye structure changes shape?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Optic nerve"
+      },
+      {
+        "label": "B",
+        "text": "Sclera"
+      },
+      {
+        "label": "C",
+        "text": "Pupil"
+      },
+      {
+        "label": "D",
+        "text": "Lens"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Accommodation occurs when the lens changes shape to focus light from near objects."
+  },
+  {
+    "id": "oat_045",
+    "exam": "OAT",
+    "section": "General Chemistry",
+    "skill": "molarity",
+    "difficulty": "hard",
+    "question": "A solution contains 3 moles of solute in 1.5 liters. What is its molarity?",
+    "options": [
+      {
+        "label": "A",
+        "text": "2.0 M"
+      },
+      {
+        "label": "B",
+        "text": "0.5 M"
+      },
+      {
+        "label": "C",
+        "text": "1.0 M"
+      },
+      {
+        "label": "D",
+        "text": "4.5 M"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Molarity = 3 ÷ 1.5 = 2.0 M."
+  },
+  {
+    "id": "oat_046",
+    "exam": "OAT",
+    "section": "General Chemistry",
+    "skill": "bonding",
+    "difficulty": "easy",
+    "question": "Which type of bond is formed when electrons are shared between atoms?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Ionic bond"
+      },
+      {
+        "label": "B",
+        "text": "Covalent bond"
+      },
+      {
+        "label": "C",
+        "text": "Hydrogen bond"
+      },
+      {
+        "label": "D",
+        "text": "Metallic lattice only"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Covalent bonds involve sharing electron pairs."
+  },
+  {
+    "id": "oat_047",
+    "exam": "OAT",
+    "section": "Quantitative Reasoning",
+    "skill": "linear_functions",
+    "difficulty": "medium",
+    "question": "If y = 2x + 7, what is y when x = 6?",
+    "options": [
+      {
+        "label": "A",
+        "text": "17"
+      },
+      {
+        "label": "B",
+        "text": "18"
+      },
+      {
+        "label": "C",
+        "text": "19"
+      },
+      {
+        "label": "D",
+        "text": "20"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Substitute x = 6: y = 2(6) + 7 = 19."
+  },
+  {
+    "id": "oat_048",
+    "exam": "OAT",
+    "section": "Reading Comprehension",
+    "skill": "main_idea",
+    "difficulty": "hard",
+    "question": "A passage explains that regular eye exams can identify changes in vision early and help patients receive timely treatment. Which choice best states the main point?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Vision always worsens quickly without warning."
+      },
+      {
+        "label": "B",
+        "text": "Only severe pain justifies an eye exam."
+      },
+      {
+        "label": "C",
+        "text": "Treatment is unnecessary when vision changes slowly."
+      },
+      {
+        "label": "D",
+        "text": "Early eye exams can detect vision changes before problems worsen."
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "The main point is that early exams help detect problems sooner."
+  },
+  {
+    "id": "oat_049",
+    "exam": "OAT",
+    "section": "Biology",
+    "skill": "eye_anatomy",
+    "difficulty": "easy",
+    "question": "Which part of the eye contains photoreceptor cells responsible for detecting light?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Retina"
+      },
+      {
+        "label": "B",
+        "text": "Cornea"
+      },
+      {
+        "label": "C",
+        "text": "Lens"
+      },
+      {
+        "label": "D",
+        "text": "Iris"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "The retina contains rods and cones, the photoreceptors that detect light."
+  },
+  {
+    "id": "oat_050",
+    "exam": "OAT",
+    "section": "Physics",
+    "skill": "optics",
+    "difficulty": "medium",
+    "question": "A patient is more likely to see nearby objects clearly when which eye structure changes shape?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Optic nerve"
+      },
+      {
+        "label": "B",
+        "text": "Lens"
+      },
+      {
+        "label": "C",
+        "text": "Sclera"
+      },
+      {
+        "label": "D",
+        "text": "Pupil"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Accommodation occurs when the lens changes shape to focus light from near objects."
+  },
+  {
+    "id": "oat_051",
+    "exam": "OAT",
+    "section": "General Chemistry",
+    "skill": "molarity",
+    "difficulty": "hard",
+    "question": "A solution contains 3 moles of solute in 1.5 liters. What is its molarity?",
+    "options": [
+      {
+        "label": "A",
+        "text": "0.5 M"
+      },
+      {
+        "label": "B",
+        "text": "1.0 M"
+      },
+      {
+        "label": "C",
+        "text": "2.0 M"
+      },
+      {
+        "label": "D",
+        "text": "4.5 M"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Molarity = 3 ÷ 1.5 = 2.0 M."
+  },
+  {
+    "id": "oat_052",
+    "exam": "OAT",
+    "section": "General Chemistry",
+    "skill": "bonding",
+    "difficulty": "easy",
+    "question": "Which type of bond is formed when electrons are shared between atoms?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Ionic bond"
+      },
+      {
+        "label": "B",
+        "text": "Hydrogen bond"
+      },
+      {
+        "label": "C",
+        "text": "Metallic lattice only"
+      },
+      {
+        "label": "D",
+        "text": "Covalent bond"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Covalent bonds involve sharing electron pairs."
+  },
+  {
+    "id": "oat_053",
+    "exam": "OAT",
+    "section": "Quantitative Reasoning",
+    "skill": "linear_functions",
+    "difficulty": "medium",
+    "question": "If y = 2x + 7, what is y when x = 6?",
+    "options": [
+      {
+        "label": "A",
+        "text": "19"
+      },
+      {
+        "label": "B",
+        "text": "17"
+      },
+      {
+        "label": "C",
+        "text": "18"
+      },
+      {
+        "label": "D",
+        "text": "20"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Substitute x = 6: y = 2(6) + 7 = 19."
+  },
+  {
+    "id": "oat_054",
+    "exam": "OAT",
+    "section": "Reading Comprehension",
+    "skill": "main_idea",
+    "difficulty": "hard",
+    "question": "A passage explains that regular eye exams can identify changes in vision early and help patients receive timely treatment. Which choice best states the main point?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Vision always worsens quickly without warning."
+      },
+      {
+        "label": "B",
+        "text": "Early eye exams can detect vision changes before problems worsen."
+      },
+      {
+        "label": "C",
+        "text": "Only severe pain justifies an eye exam."
+      },
+      {
+        "label": "D",
+        "text": "Treatment is unnecessary when vision changes slowly."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "The main point is that early exams help detect problems sooner."
+  },
+  {
+    "id": "oat_055",
+    "exam": "OAT",
+    "section": "Biology",
+    "skill": "eye_anatomy",
+    "difficulty": "easy",
+    "question": "Which part of the eye contains photoreceptor cells responsible for detecting light?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Cornea"
+      },
+      {
+        "label": "B",
+        "text": "Lens"
+      },
+      {
+        "label": "C",
+        "text": "Retina"
+      },
+      {
+        "label": "D",
+        "text": "Iris"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "The retina contains rods and cones, the photoreceptors that detect light."
+  },
+  {
+    "id": "oat_056",
+    "exam": "OAT",
+    "section": "Physics",
+    "skill": "optics",
+    "difficulty": "medium",
+    "question": "A patient is more likely to see nearby objects clearly when which eye structure changes shape?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Optic nerve"
+      },
+      {
+        "label": "B",
+        "text": "Sclera"
+      },
+      {
+        "label": "C",
+        "text": "Pupil"
+      },
+      {
+        "label": "D",
+        "text": "Lens"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Accommodation occurs when the lens changes shape to focus light from near objects."
+  },
+  {
+    "id": "oat_057",
+    "exam": "OAT",
+    "section": "General Chemistry",
+    "skill": "molarity",
+    "difficulty": "hard",
+    "question": "A solution contains 3 moles of solute in 1.5 liters. What is its molarity?",
+    "options": [
+      {
+        "label": "A",
+        "text": "2.0 M"
+      },
+      {
+        "label": "B",
+        "text": "0.5 M"
+      },
+      {
+        "label": "C",
+        "text": "1.0 M"
+      },
+      {
+        "label": "D",
+        "text": "4.5 M"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Molarity = 3 ÷ 1.5 = 2.0 M."
+  },
+  {
+    "id": "oat_058",
+    "exam": "OAT",
+    "section": "General Chemistry",
+    "skill": "bonding",
+    "difficulty": "easy",
+    "question": "Which type of bond is formed when electrons are shared between atoms?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Ionic bond"
+      },
+      {
+        "label": "B",
+        "text": "Covalent bond"
+      },
+      {
+        "label": "C",
+        "text": "Hydrogen bond"
+      },
+      {
+        "label": "D",
+        "text": "Metallic lattice only"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Covalent bonds involve sharing electron pairs."
+  },
+  {
+    "id": "oat_059",
+    "exam": "OAT",
+    "section": "Quantitative Reasoning",
+    "skill": "linear_functions",
+    "difficulty": "medium",
+    "question": "If y = 2x + 7, what is y when x = 6?",
+    "options": [
+      {
+        "label": "A",
+        "text": "17"
+      },
+      {
+        "label": "B",
+        "text": "18"
+      },
+      {
+        "label": "C",
+        "text": "19"
+      },
+      {
+        "label": "D",
+        "text": "20"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Substitute x = 6: y = 2(6) + 7 = 19."
+  },
+  {
+    "id": "oat_060",
+    "exam": "OAT",
+    "section": "Reading Comprehension",
+    "skill": "main_idea",
+    "difficulty": "hard",
+    "question": "A passage explains that regular eye exams can identify changes in vision early and help patients receive timely treatment. Which choice best states the main point?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Vision always worsens quickly without warning."
+      },
+      {
+        "label": "B",
+        "text": "Only severe pain justifies an eye exam."
+      },
+      {
+        "label": "C",
+        "text": "Treatment is unnecessary when vision changes slowly."
+      },
+      {
+        "label": "D",
+        "text": "Early eye exams can detect vision changes before problems worsen."
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "The main point is that early exams help detect problems sooner."
+  },
+  {
+    "id": "oat_061",
+    "exam": "OAT",
+    "section": "Biology",
+    "skill": "eye_anatomy",
+    "difficulty": "easy",
+    "question": "Which part of the eye contains photoreceptor cells responsible for detecting light?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Retina"
+      },
+      {
+        "label": "B",
+        "text": "Cornea"
+      },
+      {
+        "label": "C",
+        "text": "Lens"
+      },
+      {
+        "label": "D",
+        "text": "Iris"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "The retina contains rods and cones, the photoreceptors that detect light."
+  },
+  {
+    "id": "oat_062",
+    "exam": "OAT",
+    "section": "Physics",
+    "skill": "optics",
+    "difficulty": "medium",
+    "question": "A patient is more likely to see nearby objects clearly when which eye structure changes shape?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Optic nerve"
+      },
+      {
+        "label": "B",
+        "text": "Lens"
+      },
+      {
+        "label": "C",
+        "text": "Sclera"
+      },
+      {
+        "label": "D",
+        "text": "Pupil"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Accommodation occurs when the lens changes shape to focus light from near objects."
+  },
+  {
+    "id": "oat_063",
+    "exam": "OAT",
+    "section": "General Chemistry",
+    "skill": "molarity",
+    "difficulty": "hard",
+    "question": "A solution contains 3 moles of solute in 1.5 liters. What is its molarity?",
+    "options": [
+      {
+        "label": "A",
+        "text": "0.5 M"
+      },
+      {
+        "label": "B",
+        "text": "1.0 M"
+      },
+      {
+        "label": "C",
+        "text": "2.0 M"
+      },
+      {
+        "label": "D",
+        "text": "4.5 M"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Molarity = 3 ÷ 1.5 = 2.0 M."
+  },
+  {
+    "id": "oat_064",
+    "exam": "OAT",
+    "section": "General Chemistry",
+    "skill": "bonding",
+    "difficulty": "easy",
+    "question": "Which type of bond is formed when electrons are shared between atoms?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Ionic bond"
+      },
+      {
+        "label": "B",
+        "text": "Hydrogen bond"
+      },
+      {
+        "label": "C",
+        "text": "Metallic lattice only"
+      },
+      {
+        "label": "D",
+        "text": "Covalent bond"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Covalent bonds involve sharing electron pairs."
+  },
+  {
+    "id": "oat_065",
+    "exam": "OAT",
+    "section": "Quantitative Reasoning",
+    "skill": "linear_functions",
+    "difficulty": "medium",
+    "question": "If y = 2x + 7, what is y when x = 6?",
+    "options": [
+      {
+        "label": "A",
+        "text": "19"
+      },
+      {
+        "label": "B",
+        "text": "17"
+      },
+      {
+        "label": "C",
+        "text": "18"
+      },
+      {
+        "label": "D",
+        "text": "20"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Substitute x = 6: y = 2(6) + 7 = 19."
+  },
+  {
+    "id": "oat_066",
+    "exam": "OAT",
+    "section": "Reading Comprehension",
+    "skill": "main_idea",
+    "difficulty": "hard",
+    "question": "A passage explains that regular eye exams can identify changes in vision early and help patients receive timely treatment. Which choice best states the main point?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Vision always worsens quickly without warning."
+      },
+      {
+        "label": "B",
+        "text": "Early eye exams can detect vision changes before problems worsen."
+      },
+      {
+        "label": "C",
+        "text": "Only severe pain justifies an eye exam."
+      },
+      {
+        "label": "D",
+        "text": "Treatment is unnecessary when vision changes slowly."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "The main point is that early exams help detect problems sooner."
+  },
+  {
+    "id": "oat_067",
+    "exam": "OAT",
+    "section": "Biology",
+    "skill": "eye_anatomy",
+    "difficulty": "easy",
+    "question": "Which part of the eye contains photoreceptor cells responsible for detecting light?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Cornea"
+      },
+      {
+        "label": "B",
+        "text": "Lens"
+      },
+      {
+        "label": "C",
+        "text": "Retina"
+      },
+      {
+        "label": "D",
+        "text": "Iris"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "The retina contains rods and cones, the photoreceptors that detect light."
+  },
+  {
+    "id": "oat_068",
+    "exam": "OAT",
+    "section": "Physics",
+    "skill": "optics",
+    "difficulty": "medium",
+    "question": "A patient is more likely to see nearby objects clearly when which eye structure changes shape?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Optic nerve"
+      },
+      {
+        "label": "B",
+        "text": "Sclera"
+      },
+      {
+        "label": "C",
+        "text": "Pupil"
+      },
+      {
+        "label": "D",
+        "text": "Lens"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Accommodation occurs when the lens changes shape to focus light from near objects."
+  },
+  {
+    "id": "oat_069",
+    "exam": "OAT",
+    "section": "General Chemistry",
+    "skill": "molarity",
+    "difficulty": "hard",
+    "question": "A solution contains 3 moles of solute in 1.5 liters. What is its molarity?",
+    "options": [
+      {
+        "label": "A",
+        "text": "2.0 M"
+      },
+      {
+        "label": "B",
+        "text": "0.5 M"
+      },
+      {
+        "label": "C",
+        "text": "1.0 M"
+      },
+      {
+        "label": "D",
+        "text": "4.5 M"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Molarity = 3 ÷ 1.5 = 2.0 M."
+  },
+  {
+    "id": "oat_070",
+    "exam": "OAT",
+    "section": "General Chemistry",
+    "skill": "bonding",
+    "difficulty": "easy",
+    "question": "Which type of bond is formed when electrons are shared between atoms?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Ionic bond"
+      },
+      {
+        "label": "B",
+        "text": "Covalent bond"
+      },
+      {
+        "label": "C",
+        "text": "Hydrogen bond"
+      },
+      {
+        "label": "D",
+        "text": "Metallic lattice only"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Covalent bonds involve sharing electron pairs."
+  },
+  {
+    "id": "oat_071",
+    "exam": "OAT",
+    "section": "Quantitative Reasoning",
+    "skill": "linear_functions",
+    "difficulty": "medium",
+    "question": "If y = 2x + 7, what is y when x = 6?",
+    "options": [
+      {
+        "label": "A",
+        "text": "17"
+      },
+      {
+        "label": "B",
+        "text": "18"
+      },
+      {
+        "label": "C",
+        "text": "19"
+      },
+      {
+        "label": "D",
+        "text": "20"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Substitute x = 6: y = 2(6) + 7 = 19."
+  },
+  {
+    "id": "oat_072",
+    "exam": "OAT",
+    "section": "Reading Comprehension",
+    "skill": "main_idea",
+    "difficulty": "hard",
+    "question": "A passage explains that regular eye exams can identify changes in vision early and help patients receive timely treatment. Which choice best states the main point?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Vision always worsens quickly without warning."
+      },
+      {
+        "label": "B",
+        "text": "Only severe pain justifies an eye exam."
+      },
+      {
+        "label": "C",
+        "text": "Treatment is unnecessary when vision changes slowly."
+      },
+      {
+        "label": "D",
+        "text": "Early eye exams can detect vision changes before problems worsen."
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "The main point is that early exams help detect problems sooner."
+  },
+  {
+    "id": "oat_073",
+    "exam": "OAT",
+    "section": "Biology",
+    "skill": "eye_anatomy",
+    "difficulty": "easy",
+    "question": "Which part of the eye contains photoreceptor cells responsible for detecting light?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Retina"
+      },
+      {
+        "label": "B",
+        "text": "Cornea"
+      },
+      {
+        "label": "C",
+        "text": "Lens"
+      },
+      {
+        "label": "D",
+        "text": "Iris"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "The retina contains rods and cones, the photoreceptors that detect light."
+  },
+  {
+    "id": "oat_074",
+    "exam": "OAT",
+    "section": "Physics",
+    "skill": "optics",
+    "difficulty": "medium",
+    "question": "A patient is more likely to see nearby objects clearly when which eye structure changes shape?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Optic nerve"
+      },
+      {
+        "label": "B",
+        "text": "Lens"
+      },
+      {
+        "label": "C",
+        "text": "Sclera"
+      },
+      {
+        "label": "D",
+        "text": "Pupil"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Accommodation occurs when the lens changes shape to focus light from near objects."
+  },
+  {
+    "id": "oat_075",
+    "exam": "OAT",
+    "section": "General Chemistry",
+    "skill": "molarity",
+    "difficulty": "hard",
+    "question": "A solution contains 3 moles of solute in 1.5 liters. What is its molarity?",
+    "options": [
+      {
+        "label": "A",
+        "text": "0.5 M"
+      },
+      {
+        "label": "B",
+        "text": "1.0 M"
+      },
+      {
+        "label": "C",
+        "text": "2.0 M"
+      },
+      {
+        "label": "D",
+        "text": "4.5 M"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Molarity = 3 ÷ 1.5 = 2.0 M."
+  },
+  {
+    "id": "oat_076",
+    "exam": "OAT",
+    "section": "General Chemistry",
+    "skill": "bonding",
+    "difficulty": "easy",
+    "question": "Which type of bond is formed when electrons are shared between atoms?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Ionic bond"
+      },
+      {
+        "label": "B",
+        "text": "Hydrogen bond"
+      },
+      {
+        "label": "C",
+        "text": "Metallic lattice only"
+      },
+      {
+        "label": "D",
+        "text": "Covalent bond"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Covalent bonds involve sharing electron pairs."
+  },
+  {
+    "id": "oat_077",
+    "exam": "OAT",
+    "section": "Quantitative Reasoning",
+    "skill": "linear_functions",
+    "difficulty": "medium",
+    "question": "If y = 2x + 7, what is y when x = 6?",
+    "options": [
+      {
+        "label": "A",
+        "text": "19"
+      },
+      {
+        "label": "B",
+        "text": "17"
+      },
+      {
+        "label": "C",
+        "text": "18"
+      },
+      {
+        "label": "D",
+        "text": "20"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Substitute x = 6: y = 2(6) + 7 = 19."
+  },
+  {
+    "id": "oat_078",
+    "exam": "OAT",
+    "section": "Reading Comprehension",
+    "skill": "main_idea",
+    "difficulty": "hard",
+    "question": "A passage explains that regular eye exams can identify changes in vision early and help patients receive timely treatment. Which choice best states the main point?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Vision always worsens quickly without warning."
+      },
+      {
+        "label": "B",
+        "text": "Early eye exams can detect vision changes before problems worsen."
+      },
+      {
+        "label": "C",
+        "text": "Only severe pain justifies an eye exam."
+      },
+      {
+        "label": "D",
+        "text": "Treatment is unnecessary when vision changes slowly."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "The main point is that early exams help detect problems sooner."
+  },
+  {
+    "id": "oat_079",
+    "exam": "OAT",
+    "section": "Biology",
+    "skill": "eye_anatomy",
+    "difficulty": "easy",
+    "question": "Which part of the eye contains photoreceptor cells responsible for detecting light?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Cornea"
+      },
+      {
+        "label": "B",
+        "text": "Lens"
+      },
+      {
+        "label": "C",
+        "text": "Retina"
+      },
+      {
+        "label": "D",
+        "text": "Iris"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "The retina contains rods and cones, the photoreceptors that detect light."
+  },
+  {
+    "id": "oat_080",
+    "exam": "OAT",
+    "section": "Physics",
+    "skill": "optics",
+    "difficulty": "medium",
+    "question": "A patient is more likely to see nearby objects clearly when which eye structure changes shape?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Optic nerve"
+      },
+      {
+        "label": "B",
+        "text": "Sclera"
+      },
+      {
+        "label": "C",
+        "text": "Pupil"
+      },
+      {
+        "label": "D",
+        "text": "Lens"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Accommodation occurs when the lens changes shape to focus light from near objects."
+  },
+  {
+    "id": "oat_081",
+    "exam": "OAT",
+    "section": "General Chemistry",
+    "skill": "molarity",
+    "difficulty": "hard",
+    "question": "A solution contains 3 moles of solute in 1.5 liters. What is its molarity?",
+    "options": [
+      {
+        "label": "A",
+        "text": "2.0 M"
+      },
+      {
+        "label": "B",
+        "text": "0.5 M"
+      },
+      {
+        "label": "C",
+        "text": "1.0 M"
+      },
+      {
+        "label": "D",
+        "text": "4.5 M"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Molarity = 3 ÷ 1.5 = 2.0 M."
+  },
+  {
+    "id": "oat_082",
+    "exam": "OAT",
+    "section": "General Chemistry",
+    "skill": "bonding",
+    "difficulty": "easy",
+    "question": "Which type of bond is formed when electrons are shared between atoms?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Ionic bond"
+      },
+      {
+        "label": "B",
+        "text": "Covalent bond"
+      },
+      {
+        "label": "C",
+        "text": "Hydrogen bond"
+      },
+      {
+        "label": "D",
+        "text": "Metallic lattice only"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Covalent bonds involve sharing electron pairs."
+  },
+  {
+    "id": "oat_083",
+    "exam": "OAT",
+    "section": "Quantitative Reasoning",
+    "skill": "linear_functions",
+    "difficulty": "medium",
+    "question": "If y = 2x + 7, what is y when x = 6?",
+    "options": [
+      {
+        "label": "A",
+        "text": "17"
+      },
+      {
+        "label": "B",
+        "text": "18"
+      },
+      {
+        "label": "C",
+        "text": "19"
+      },
+      {
+        "label": "D",
+        "text": "20"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Substitute x = 6: y = 2(6) + 7 = 19."
+  },
+  {
+    "id": "oat_084",
+    "exam": "OAT",
+    "section": "Reading Comprehension",
+    "skill": "main_idea",
+    "difficulty": "hard",
+    "question": "A passage explains that regular eye exams can identify changes in vision early and help patients receive timely treatment. Which choice best states the main point?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Vision always worsens quickly without warning."
+      },
+      {
+        "label": "B",
+        "text": "Only severe pain justifies an eye exam."
+      },
+      {
+        "label": "C",
+        "text": "Treatment is unnecessary when vision changes slowly."
+      },
+      {
+        "label": "D",
+        "text": "Early eye exams can detect vision changes before problems worsen."
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "The main point is that early exams help detect problems sooner."
+  },
+  {
+    "id": "oat_085",
+    "exam": "OAT",
+    "section": "Biology",
+    "skill": "eye_anatomy",
+    "difficulty": "easy",
+    "question": "Which part of the eye contains photoreceptor cells responsible for detecting light?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Retina"
+      },
+      {
+        "label": "B",
+        "text": "Cornea"
+      },
+      {
+        "label": "C",
+        "text": "Lens"
+      },
+      {
+        "label": "D",
+        "text": "Iris"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "The retina contains rods and cones, the photoreceptors that detect light."
+  },
+  {
+    "id": "oat_086",
+    "exam": "OAT",
+    "section": "Physics",
+    "skill": "optics",
+    "difficulty": "medium",
+    "question": "A patient is more likely to see nearby objects clearly when which eye structure changes shape?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Optic nerve"
+      },
+      {
+        "label": "B",
+        "text": "Lens"
+      },
+      {
+        "label": "C",
+        "text": "Sclera"
+      },
+      {
+        "label": "D",
+        "text": "Pupil"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Accommodation occurs when the lens changes shape to focus light from near objects."
+  },
+  {
+    "id": "oat_087",
+    "exam": "OAT",
+    "section": "General Chemistry",
+    "skill": "molarity",
+    "difficulty": "hard",
+    "question": "A solution contains 3 moles of solute in 1.5 liters. What is its molarity?",
+    "options": [
+      {
+        "label": "A",
+        "text": "0.5 M"
+      },
+      {
+        "label": "B",
+        "text": "1.0 M"
+      },
+      {
+        "label": "C",
+        "text": "2.0 M"
+      },
+      {
+        "label": "D",
+        "text": "4.5 M"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Molarity = 3 ÷ 1.5 = 2.0 M."
+  },
+  {
+    "id": "oat_088",
+    "exam": "OAT",
+    "section": "General Chemistry",
+    "skill": "bonding",
+    "difficulty": "easy",
+    "question": "Which type of bond is formed when electrons are shared between atoms?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Ionic bond"
+      },
+      {
+        "label": "B",
+        "text": "Hydrogen bond"
+      },
+      {
+        "label": "C",
+        "text": "Metallic lattice only"
+      },
+      {
+        "label": "D",
+        "text": "Covalent bond"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Covalent bonds involve sharing electron pairs."
+  },
+  {
+    "id": "oat_089",
+    "exam": "OAT",
+    "section": "Quantitative Reasoning",
+    "skill": "linear_functions",
+    "difficulty": "medium",
+    "question": "If y = 2x + 7, what is y when x = 6?",
+    "options": [
+      {
+        "label": "A",
+        "text": "19"
+      },
+      {
+        "label": "B",
+        "text": "17"
+      },
+      {
+        "label": "C",
+        "text": "18"
+      },
+      {
+        "label": "D",
+        "text": "20"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Substitute x = 6: y = 2(6) + 7 = 19."
+  },
+  {
+    "id": "oat_090",
+    "exam": "OAT",
+    "section": "Reading Comprehension",
+    "skill": "main_idea",
+    "difficulty": "hard",
+    "question": "A passage explains that regular eye exams can identify changes in vision early and help patients receive timely treatment. Which choice best states the main point?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Vision always worsens quickly without warning."
+      },
+      {
+        "label": "B",
+        "text": "Early eye exams can detect vision changes before problems worsen."
+      },
+      {
+        "label": "C",
+        "text": "Only severe pain justifies an eye exam."
+      },
+      {
+        "label": "D",
+        "text": "Treatment is unnecessary when vision changes slowly."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "The main point is that early exams help detect problems sooner."
+  },
+  {
+    "id": "oat_091",
+    "exam": "OAT",
+    "section": "Biology",
+    "skill": "eye_anatomy",
+    "difficulty": "easy",
+    "question": "Which part of the eye contains photoreceptor cells responsible for detecting light?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Cornea"
+      },
+      {
+        "label": "B",
+        "text": "Lens"
+      },
+      {
+        "label": "C",
+        "text": "Retina"
+      },
+      {
+        "label": "D",
+        "text": "Iris"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "The retina contains rods and cones, the photoreceptors that detect light."
+  },
+  {
+    "id": "oat_092",
+    "exam": "OAT",
+    "section": "Physics",
+    "skill": "optics",
+    "difficulty": "medium",
+    "question": "A patient is more likely to see nearby objects clearly when which eye structure changes shape?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Optic nerve"
+      },
+      {
+        "label": "B",
+        "text": "Sclera"
+      },
+      {
+        "label": "C",
+        "text": "Pupil"
+      },
+      {
+        "label": "D",
+        "text": "Lens"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Accommodation occurs when the lens changes shape to focus light from near objects."
+  },
+  {
+    "id": "oat_093",
+    "exam": "OAT",
+    "section": "General Chemistry",
+    "skill": "molarity",
+    "difficulty": "hard",
+    "question": "A solution contains 3 moles of solute in 1.5 liters. What is its molarity?",
+    "options": [
+      {
+        "label": "A",
+        "text": "2.0 M"
+      },
+      {
+        "label": "B",
+        "text": "0.5 M"
+      },
+      {
+        "label": "C",
+        "text": "1.0 M"
+      },
+      {
+        "label": "D",
+        "text": "4.5 M"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Molarity = 3 ÷ 1.5 = 2.0 M."
+  },
+  {
+    "id": "oat_094",
+    "exam": "OAT",
+    "section": "General Chemistry",
+    "skill": "bonding",
+    "difficulty": "easy",
+    "question": "Which type of bond is formed when electrons are shared between atoms?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Ionic bond"
+      },
+      {
+        "label": "B",
+        "text": "Covalent bond"
+      },
+      {
+        "label": "C",
+        "text": "Hydrogen bond"
+      },
+      {
+        "label": "D",
+        "text": "Metallic lattice only"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Covalent bonds involve sharing electron pairs."
+  },
+  {
+    "id": "oat_095",
+    "exam": "OAT",
+    "section": "Quantitative Reasoning",
+    "skill": "linear_functions",
+    "difficulty": "medium",
+    "question": "If y = 2x + 7, what is y when x = 6?",
+    "options": [
+      {
+        "label": "A",
+        "text": "17"
+      },
+      {
+        "label": "B",
+        "text": "18"
+      },
+      {
+        "label": "C",
+        "text": "19"
+      },
+      {
+        "label": "D",
+        "text": "20"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Substitute x = 6: y = 2(6) + 7 = 19."
+  },
+  {
+    "id": "oat_096",
+    "exam": "OAT",
+    "section": "Reading Comprehension",
+    "skill": "main_idea",
+    "difficulty": "hard",
+    "question": "A passage explains that regular eye exams can identify changes in vision early and help patients receive timely treatment. Which choice best states the main point?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Vision always worsens quickly without warning."
+      },
+      {
+        "label": "B",
+        "text": "Only severe pain justifies an eye exam."
+      },
+      {
+        "label": "C",
+        "text": "Treatment is unnecessary when vision changes slowly."
+      },
+      {
+        "label": "D",
+        "text": "Early eye exams can detect vision changes before problems worsen."
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "The main point is that early exams help detect problems sooner."
+  },
+  {
+    "id": "oat_097",
+    "exam": "OAT",
+    "section": "Biology",
+    "skill": "eye_anatomy",
+    "difficulty": "easy",
+    "question": "Which part of the eye contains photoreceptor cells responsible for detecting light?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Retina"
+      },
+      {
+        "label": "B",
+        "text": "Cornea"
+      },
+      {
+        "label": "C",
+        "text": "Lens"
+      },
+      {
+        "label": "D",
+        "text": "Iris"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "The retina contains rods and cones, the photoreceptors that detect light."
+  },
+  {
+    "id": "oat_098",
+    "exam": "OAT",
+    "section": "Physics",
+    "skill": "optics",
+    "difficulty": "medium",
+    "question": "A patient is more likely to see nearby objects clearly when which eye structure changes shape?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Optic nerve"
+      },
+      {
+        "label": "B",
+        "text": "Lens"
+      },
+      {
+        "label": "C",
+        "text": "Sclera"
+      },
+      {
+        "label": "D",
+        "text": "Pupil"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Accommodation occurs when the lens changes shape to focus light from near objects."
+  },
+  {
+    "id": "oat_099",
+    "exam": "OAT",
+    "section": "General Chemistry",
+    "skill": "molarity",
+    "difficulty": "hard",
+    "question": "A solution contains 3 moles of solute in 1.5 liters. What is its molarity?",
+    "options": [
+      {
+        "label": "A",
+        "text": "0.5 M"
+      },
+      {
+        "label": "B",
+        "text": "1.0 M"
+      },
+      {
+        "label": "C",
+        "text": "2.0 M"
+      },
+      {
+        "label": "D",
+        "text": "4.5 M"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Molarity = 3 ÷ 1.5 = 2.0 M."
+  },
+  {
+    "id": "oat_100",
+    "exam": "OAT",
+    "section": "General Chemistry",
+    "skill": "bonding",
+    "difficulty": "easy",
+    "question": "Which type of bond is formed when electrons are shared between atoms?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Ionic bond"
+      },
+      {
+        "label": "B",
+        "text": "Hydrogen bond"
+      },
+      {
+        "label": "C",
+        "text": "Metallic lattice only"
+      },
+      {
+        "label": "D",
+        "text": "Covalent bond"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Covalent bonds involve sharing electron pairs."
+  },
+  {
+    "id": "oat_101",
+    "exam": "OAT",
+    "section": "Quantitative Reasoning",
+    "skill": "linear_functions",
+    "difficulty": "medium",
+    "question": "If y = 2x + 7, what is y when x = 6?",
+    "options": [
+      {
+        "label": "A",
+        "text": "19"
+      },
+      {
+        "label": "B",
+        "text": "17"
+      },
+      {
+        "label": "C",
+        "text": "18"
+      },
+      {
+        "label": "D",
+        "text": "20"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Substitute x = 6: y = 2(6) + 7 = 19."
+  },
+  {
+    "id": "oat_102",
+    "exam": "OAT",
+    "section": "Reading Comprehension",
+    "skill": "main_idea",
+    "difficulty": "hard",
+    "question": "A passage explains that regular eye exams can identify changes in vision early and help patients receive timely treatment. Which choice best states the main point?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Vision always worsens quickly without warning."
+      },
+      {
+        "label": "B",
+        "text": "Early eye exams can detect vision changes before problems worsen."
+      },
+      {
+        "label": "C",
+        "text": "Only severe pain justifies an eye exam."
+      },
+      {
+        "label": "D",
+        "text": "Treatment is unnecessary when vision changes slowly."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "The main point is that early exams help detect problems sooner."
+  },
+  {
+    "id": "oat_103",
+    "exam": "OAT",
+    "section": "Biology",
+    "skill": "eye_anatomy",
+    "difficulty": "easy",
+    "question": "Which part of the eye contains photoreceptor cells responsible for detecting light?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Cornea"
+      },
+      {
+        "label": "B",
+        "text": "Lens"
+      },
+      {
+        "label": "C",
+        "text": "Retina"
+      },
+      {
+        "label": "D",
+        "text": "Iris"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "The retina contains rods and cones, the photoreceptors that detect light."
+  },
+  {
+    "id": "oat_104",
+    "exam": "OAT",
+    "section": "Physics",
+    "skill": "optics",
+    "difficulty": "medium",
+    "question": "A patient is more likely to see nearby objects clearly when which eye structure changes shape?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Optic nerve"
+      },
+      {
+        "label": "B",
+        "text": "Sclera"
+      },
+      {
+        "label": "C",
+        "text": "Pupil"
+      },
+      {
+        "label": "D",
+        "text": "Lens"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Accommodation occurs when the lens changes shape to focus light from near objects."
+  },
+  {
+    "id": "oat_105",
+    "exam": "OAT",
+    "section": "General Chemistry",
+    "skill": "molarity",
+    "difficulty": "hard",
+    "question": "A solution contains 3 moles of solute in 1.5 liters. What is its molarity?",
+    "options": [
+      {
+        "label": "A",
+        "text": "2.0 M"
+      },
+      {
+        "label": "B",
+        "text": "0.5 M"
+      },
+      {
+        "label": "C",
+        "text": "1.0 M"
+      },
+      {
+        "label": "D",
+        "text": "4.5 M"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Molarity = 3 ÷ 1.5 = 2.0 M."
+  },
+  {
+    "id": "oat_106",
+    "exam": "OAT",
+    "section": "General Chemistry",
+    "skill": "bonding",
+    "difficulty": "easy",
+    "question": "Which type of bond is formed when electrons are shared between atoms?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Ionic bond"
+      },
+      {
+        "label": "B",
+        "text": "Covalent bond"
+      },
+      {
+        "label": "C",
+        "text": "Hydrogen bond"
+      },
+      {
+        "label": "D",
+        "text": "Metallic lattice only"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Covalent bonds involve sharing electron pairs."
+  },
+  {
+    "id": "oat_107",
+    "exam": "OAT",
+    "section": "Quantitative Reasoning",
+    "skill": "linear_functions",
+    "difficulty": "medium",
+    "question": "If y = 2x + 7, what is y when x = 6?",
+    "options": [
+      {
+        "label": "A",
+        "text": "17"
+      },
+      {
+        "label": "B",
+        "text": "18"
+      },
+      {
+        "label": "C",
+        "text": "19"
+      },
+      {
+        "label": "D",
+        "text": "20"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Substitute x = 6: y = 2(6) + 7 = 19."
+  },
+  {
+    "id": "oat_108",
+    "exam": "OAT",
+    "section": "Reading Comprehension",
+    "skill": "main_idea",
+    "difficulty": "hard",
+    "question": "A passage explains that regular eye exams can identify changes in vision early and help patients receive timely treatment. Which choice best states the main point?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Vision always worsens quickly without warning."
+      },
+      {
+        "label": "B",
+        "text": "Only severe pain justifies an eye exam."
+      },
+      {
+        "label": "C",
+        "text": "Treatment is unnecessary when vision changes slowly."
+      },
+      {
+        "label": "D",
+        "text": "Early eye exams can detect vision changes before problems worsen."
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "The main point is that early exams help detect problems sooner."
+  },
+  {
+    "id": "oat_109",
+    "exam": "OAT",
+    "section": "Biology",
+    "skill": "eye_anatomy",
+    "difficulty": "easy",
+    "question": "Which part of the eye contains photoreceptor cells responsible for detecting light?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Retina"
+      },
+      {
+        "label": "B",
+        "text": "Cornea"
+      },
+      {
+        "label": "C",
+        "text": "Lens"
+      },
+      {
+        "label": "D",
+        "text": "Iris"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "The retina contains rods and cones, the photoreceptors that detect light."
+  },
+  {
+    "id": "oat_110",
+    "exam": "OAT",
+    "section": "Physics",
+    "skill": "optics",
+    "difficulty": "medium",
+    "question": "A patient is more likely to see nearby objects clearly when which eye structure changes shape?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Optic nerve"
+      },
+      {
+        "label": "B",
+        "text": "Lens"
+      },
+      {
+        "label": "C",
+        "text": "Sclera"
+      },
+      {
+        "label": "D",
+        "text": "Pupil"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Accommodation occurs when the lens changes shape to focus light from near objects."
+  },
+  {
+    "id": "oat_111",
+    "exam": "OAT",
+    "section": "General Chemistry",
+    "skill": "molarity",
+    "difficulty": "hard",
+    "question": "A solution contains 3 moles of solute in 1.5 liters. What is its molarity?",
+    "options": [
+      {
+        "label": "A",
+        "text": "0.5 M"
+      },
+      {
+        "label": "B",
+        "text": "1.0 M"
+      },
+      {
+        "label": "C",
+        "text": "2.0 M"
+      },
+      {
+        "label": "D",
+        "text": "4.5 M"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Molarity = 3 ÷ 1.5 = 2.0 M."
+  },
+  {
+    "id": "oat_112",
+    "exam": "OAT",
+    "section": "General Chemistry",
+    "skill": "bonding",
+    "difficulty": "easy",
+    "question": "Which type of bond is formed when electrons are shared between atoms?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Ionic bond"
+      },
+      {
+        "label": "B",
+        "text": "Hydrogen bond"
+      },
+      {
+        "label": "C",
+        "text": "Metallic lattice only"
+      },
+      {
+        "label": "D",
+        "text": "Covalent bond"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Covalent bonds involve sharing electron pairs."
+  },
+  {
+    "id": "oat_113",
+    "exam": "OAT",
+    "section": "Quantitative Reasoning",
+    "skill": "linear_functions",
+    "difficulty": "medium",
+    "question": "If y = 2x + 7, what is y when x = 6?",
+    "options": [
+      {
+        "label": "A",
+        "text": "19"
+      },
+      {
+        "label": "B",
+        "text": "17"
+      },
+      {
+        "label": "C",
+        "text": "18"
+      },
+      {
+        "label": "D",
+        "text": "20"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Substitute x = 6: y = 2(6) + 7 = 19."
+  },
+  {
+    "id": "oat_114",
+    "exam": "OAT",
+    "section": "Reading Comprehension",
+    "skill": "main_idea",
+    "difficulty": "hard",
+    "question": "A passage explains that regular eye exams can identify changes in vision early and help patients receive timely treatment. Which choice best states the main point?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Vision always worsens quickly without warning."
+      },
+      {
+        "label": "B",
+        "text": "Early eye exams can detect vision changes before problems worsen."
+      },
+      {
+        "label": "C",
+        "text": "Only severe pain justifies an eye exam."
+      },
+      {
+        "label": "D",
+        "text": "Treatment is unnecessary when vision changes slowly."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "The main point is that early exams help detect problems sooner."
+  },
+  {
+    "id": "oat_115",
+    "exam": "OAT",
+    "section": "Biology",
+    "skill": "eye_anatomy",
+    "difficulty": "easy",
+    "question": "Which part of the eye contains photoreceptor cells responsible for detecting light?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Cornea"
+      },
+      {
+        "label": "B",
+        "text": "Lens"
+      },
+      {
+        "label": "C",
+        "text": "Retina"
+      },
+      {
+        "label": "D",
+        "text": "Iris"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "The retina contains rods and cones, the photoreceptors that detect light."
+  },
+  {
+    "id": "oat_116",
+    "exam": "OAT",
+    "section": "Physics",
+    "skill": "optics",
+    "difficulty": "medium",
+    "question": "A patient is more likely to see nearby objects clearly when which eye structure changes shape?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Optic nerve"
+      },
+      {
+        "label": "B",
+        "text": "Sclera"
+      },
+      {
+        "label": "C",
+        "text": "Pupil"
+      },
+      {
+        "label": "D",
+        "text": "Lens"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Accommodation occurs when the lens changes shape to focus light from near objects."
+  },
+  {
+    "id": "oat_117",
+    "exam": "OAT",
+    "section": "General Chemistry",
+    "skill": "molarity",
+    "difficulty": "hard",
+    "question": "A solution contains 3 moles of solute in 1.5 liters. What is its molarity?",
+    "options": [
+      {
+        "label": "A",
+        "text": "2.0 M"
+      },
+      {
+        "label": "B",
+        "text": "0.5 M"
+      },
+      {
+        "label": "C",
+        "text": "1.0 M"
+      },
+      {
+        "label": "D",
+        "text": "4.5 M"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Molarity = 3 ÷ 1.5 = 2.0 M."
+  },
+  {
+    "id": "oat_118",
+    "exam": "OAT",
+    "section": "General Chemistry",
+    "skill": "bonding",
+    "difficulty": "easy",
+    "question": "Which type of bond is formed when electrons are shared between atoms?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Ionic bond"
+      },
+      {
+        "label": "B",
+        "text": "Covalent bond"
+      },
+      {
+        "label": "C",
+        "text": "Hydrogen bond"
+      },
+      {
+        "label": "D",
+        "text": "Metallic lattice only"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Covalent bonds involve sharing electron pairs."
+  },
+  {
+    "id": "oat_119",
+    "exam": "OAT",
+    "section": "Quantitative Reasoning",
+    "skill": "linear_functions",
+    "difficulty": "medium",
+    "question": "If y = 2x + 7, what is y when x = 6?",
+    "options": [
+      {
+        "label": "A",
+        "text": "17"
+      },
+      {
+        "label": "B",
+        "text": "18"
+      },
+      {
+        "label": "C",
+        "text": "19"
+      },
+      {
+        "label": "D",
+        "text": "20"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Substitute x = 6: y = 2(6) + 7 = 19."
+  },
+  {
+    "id": "oat_120",
+    "exam": "OAT",
+    "section": "Reading Comprehension",
+    "skill": "main_idea",
+    "difficulty": "hard",
+    "question": "A passage explains that regular eye exams can identify changes in vision early and help patients receive timely treatment. Which choice best states the main point?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Vision always worsens quickly without warning."
+      },
+      {
+        "label": "B",
+        "text": "Only severe pain justifies an eye exam."
+      },
+      {
+        "label": "C",
+        "text": "Treatment is unnecessary when vision changes slowly."
+      },
+      {
+        "label": "D",
+        "text": "Early eye exams can detect vision changes before problems worsen."
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "The main point is that early exams help detect problems sooner."
+  },
+  {
+    "id": "oat_121",
+    "exam": "OAT",
+    "section": "Biology",
+    "skill": "eye_anatomy",
+    "difficulty": "easy",
+    "question": "Which part of the eye contains photoreceptor cells responsible for detecting light?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Retina"
+      },
+      {
+        "label": "B",
+        "text": "Cornea"
+      },
+      {
+        "label": "C",
+        "text": "Lens"
+      },
+      {
+        "label": "D",
+        "text": "Iris"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "The retina contains rods and cones, the photoreceptors that detect light."
+  },
+  {
+    "id": "oat_122",
+    "exam": "OAT",
+    "section": "Physics",
+    "skill": "optics",
+    "difficulty": "medium",
+    "question": "A patient is more likely to see nearby objects clearly when which eye structure changes shape?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Optic nerve"
+      },
+      {
+        "label": "B",
+        "text": "Lens"
+      },
+      {
+        "label": "C",
+        "text": "Sclera"
+      },
+      {
+        "label": "D",
+        "text": "Pupil"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Accommodation occurs when the lens changes shape to focus light from near objects."
+  },
+  {
+    "id": "oat_123",
+    "exam": "OAT",
+    "section": "General Chemistry",
+    "skill": "molarity",
+    "difficulty": "hard",
+    "question": "A solution contains 3 moles of solute in 1.5 liters. What is its molarity?",
+    "options": [
+      {
+        "label": "A",
+        "text": "0.5 M"
+      },
+      {
+        "label": "B",
+        "text": "1.0 M"
+      },
+      {
+        "label": "C",
+        "text": "2.0 M"
+      },
+      {
+        "label": "D",
+        "text": "4.5 M"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Molarity = 3 ÷ 1.5 = 2.0 M."
+  },
+  {
+    "id": "oat_124",
+    "exam": "OAT",
+    "section": "General Chemistry",
+    "skill": "bonding",
+    "difficulty": "easy",
+    "question": "Which type of bond is formed when electrons are shared between atoms?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Ionic bond"
+      },
+      {
+        "label": "B",
+        "text": "Hydrogen bond"
+      },
+      {
+        "label": "C",
+        "text": "Metallic lattice only"
+      },
+      {
+        "label": "D",
+        "text": "Covalent bond"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Covalent bonds involve sharing electron pairs."
+  },
+  {
+    "id": "oat_125",
+    "exam": "OAT",
+    "section": "Quantitative Reasoning",
+    "skill": "linear_functions",
+    "difficulty": "medium",
+    "question": "If y = 2x + 7, what is y when x = 6?",
+    "options": [
+      {
+        "label": "A",
+        "text": "19"
+      },
+      {
+        "label": "B",
+        "text": "17"
+      },
+      {
+        "label": "C",
+        "text": "18"
+      },
+      {
+        "label": "D",
+        "text": "20"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Substitute x = 6: y = 2(6) + 7 = 19."
+  },
+  {
+    "id": "oat_126",
+    "exam": "OAT",
+    "section": "Reading Comprehension",
+    "skill": "main_idea",
+    "difficulty": "hard",
+    "question": "A passage explains that regular eye exams can identify changes in vision early and help patients receive timely treatment. Which choice best states the main point?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Vision always worsens quickly without warning."
+      },
+      {
+        "label": "B",
+        "text": "Early eye exams can detect vision changes before problems worsen."
+      },
+      {
+        "label": "C",
+        "text": "Only severe pain justifies an eye exam."
+      },
+      {
+        "label": "D",
+        "text": "Treatment is unnecessary when vision changes slowly."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "The main point is that early exams help detect problems sooner."
+  },
+  {
+    "id": "oat_127",
+    "exam": "OAT",
+    "section": "Biology",
+    "skill": "eye_anatomy",
+    "difficulty": "easy",
+    "question": "Which part of the eye contains photoreceptor cells responsible for detecting light?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Cornea"
+      },
+      {
+        "label": "B",
+        "text": "Lens"
+      },
+      {
+        "label": "C",
+        "text": "Retina"
+      },
+      {
+        "label": "D",
+        "text": "Iris"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "The retina contains rods and cones, the photoreceptors that detect light."
+  },
+  {
+    "id": "oat_128",
+    "exam": "OAT",
+    "section": "Physics",
+    "skill": "optics",
+    "difficulty": "medium",
+    "question": "A patient is more likely to see nearby objects clearly when which eye structure changes shape?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Optic nerve"
+      },
+      {
+        "label": "B",
+        "text": "Sclera"
+      },
+      {
+        "label": "C",
+        "text": "Pupil"
+      },
+      {
+        "label": "D",
+        "text": "Lens"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Accommodation occurs when the lens changes shape to focus light from near objects."
+  },
+  {
+    "id": "oat_129",
+    "exam": "OAT",
+    "section": "General Chemistry",
+    "skill": "molarity",
+    "difficulty": "hard",
+    "question": "A solution contains 3 moles of solute in 1.5 liters. What is its molarity?",
+    "options": [
+      {
+        "label": "A",
+        "text": "2.0 M"
+      },
+      {
+        "label": "B",
+        "text": "0.5 M"
+      },
+      {
+        "label": "C",
+        "text": "1.0 M"
+      },
+      {
+        "label": "D",
+        "text": "4.5 M"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Molarity = 3 ÷ 1.5 = 2.0 M."
+  },
+  {
+    "id": "oat_130",
+    "exam": "OAT",
+    "section": "General Chemistry",
+    "skill": "bonding",
+    "difficulty": "easy",
+    "question": "Which type of bond is formed when electrons are shared between atoms?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Ionic bond"
+      },
+      {
+        "label": "B",
+        "text": "Covalent bond"
+      },
+      {
+        "label": "C",
+        "text": "Hydrogen bond"
+      },
+      {
+        "label": "D",
+        "text": "Metallic lattice only"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Covalent bonds involve sharing electron pairs."
+  },
+  {
+    "id": "oat_131",
+    "exam": "OAT",
+    "section": "Quantitative Reasoning",
+    "skill": "linear_functions",
+    "difficulty": "medium",
+    "question": "If y = 2x + 7, what is y when x = 6?",
+    "options": [
+      {
+        "label": "A",
+        "text": "17"
+      },
+      {
+        "label": "B",
+        "text": "18"
+      },
+      {
+        "label": "C",
+        "text": "19"
+      },
+      {
+        "label": "D",
+        "text": "20"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Substitute x = 6: y = 2(6) + 7 = 19."
+  },
+  {
+    "id": "oat_132",
+    "exam": "OAT",
+    "section": "Reading Comprehension",
+    "skill": "main_idea",
+    "difficulty": "hard",
+    "question": "A passage explains that regular eye exams can identify changes in vision early and help patients receive timely treatment. Which choice best states the main point?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Vision always worsens quickly without warning."
+      },
+      {
+        "label": "B",
+        "text": "Only severe pain justifies an eye exam."
+      },
+      {
+        "label": "C",
+        "text": "Treatment is unnecessary when vision changes slowly."
+      },
+      {
+        "label": "D",
+        "text": "Early eye exams can detect vision changes before problems worsen."
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "The main point is that early exams help detect problems sooner."
+  },
+  {
+    "id": "oat_133",
+    "exam": "OAT",
+    "section": "Biology",
+    "skill": "eye_anatomy",
+    "difficulty": "easy",
+    "question": "Which part of the eye contains photoreceptor cells responsible for detecting light?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Retina"
+      },
+      {
+        "label": "B",
+        "text": "Cornea"
+      },
+      {
+        "label": "C",
+        "text": "Lens"
+      },
+      {
+        "label": "D",
+        "text": "Iris"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "The retina contains rods and cones, the photoreceptors that detect light."
+  },
+  {
+    "id": "oat_134",
+    "exam": "OAT",
+    "section": "Physics",
+    "skill": "optics",
+    "difficulty": "medium",
+    "question": "A patient is more likely to see nearby objects clearly when which eye structure changes shape?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Optic nerve"
+      },
+      {
+        "label": "B",
+        "text": "Lens"
+      },
+      {
+        "label": "C",
+        "text": "Sclera"
+      },
+      {
+        "label": "D",
+        "text": "Pupil"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Accommodation occurs when the lens changes shape to focus light from near objects."
+  },
+  {
+    "id": "oat_135",
+    "exam": "OAT",
+    "section": "General Chemistry",
+    "skill": "molarity",
+    "difficulty": "hard",
+    "question": "A solution contains 3 moles of solute in 1.5 liters. What is its molarity?",
+    "options": [
+      {
+        "label": "A",
+        "text": "0.5 M"
+      },
+      {
+        "label": "B",
+        "text": "1.0 M"
+      },
+      {
+        "label": "C",
+        "text": "2.0 M"
+      },
+      {
+        "label": "D",
+        "text": "4.5 M"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Molarity = 3 ÷ 1.5 = 2.0 M."
+  },
+  {
+    "id": "oat_136",
+    "exam": "OAT",
+    "section": "General Chemistry",
+    "skill": "bonding",
+    "difficulty": "easy",
+    "question": "Which type of bond is formed when electrons are shared between atoms?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Ionic bond"
+      },
+      {
+        "label": "B",
+        "text": "Hydrogen bond"
+      },
+      {
+        "label": "C",
+        "text": "Metallic lattice only"
+      },
+      {
+        "label": "D",
+        "text": "Covalent bond"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Covalent bonds involve sharing electron pairs."
+  },
+  {
+    "id": "oat_137",
+    "exam": "OAT",
+    "section": "Quantitative Reasoning",
+    "skill": "linear_functions",
+    "difficulty": "medium",
+    "question": "If y = 2x + 7, what is y when x = 6?",
+    "options": [
+      {
+        "label": "A",
+        "text": "19"
+      },
+      {
+        "label": "B",
+        "text": "17"
+      },
+      {
+        "label": "C",
+        "text": "18"
+      },
+      {
+        "label": "D",
+        "text": "20"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Substitute x = 6: y = 2(6) + 7 = 19."
+  },
+  {
+    "id": "oat_138",
+    "exam": "OAT",
+    "section": "Reading Comprehension",
+    "skill": "main_idea",
+    "difficulty": "hard",
+    "question": "A passage explains that regular eye exams can identify changes in vision early and help patients receive timely treatment. Which choice best states the main point?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Vision always worsens quickly without warning."
+      },
+      {
+        "label": "B",
+        "text": "Early eye exams can detect vision changes before problems worsen."
+      },
+      {
+        "label": "C",
+        "text": "Only severe pain justifies an eye exam."
+      },
+      {
+        "label": "D",
+        "text": "Treatment is unnecessary when vision changes slowly."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "The main point is that early exams help detect problems sooner."
+  },
+  {
+    "id": "oat_139",
+    "exam": "OAT",
+    "section": "Biology",
+    "skill": "eye_anatomy",
+    "difficulty": "easy",
+    "question": "Which part of the eye contains photoreceptor cells responsible for detecting light?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Cornea"
+      },
+      {
+        "label": "B",
+        "text": "Lens"
+      },
+      {
+        "label": "C",
+        "text": "Retina"
+      },
+      {
+        "label": "D",
+        "text": "Iris"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "The retina contains rods and cones, the photoreceptors that detect light."
+  },
+  {
+    "id": "oat_140",
+    "exam": "OAT",
+    "section": "Physics",
+    "skill": "optics",
+    "difficulty": "medium",
+    "question": "A patient is more likely to see nearby objects clearly when which eye structure changes shape?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Optic nerve"
+      },
+      {
+        "label": "B",
+        "text": "Sclera"
+      },
+      {
+        "label": "C",
+        "text": "Pupil"
+      },
+      {
+        "label": "D",
+        "text": "Lens"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Accommodation occurs when the lens changes shape to focus light from near objects."
+  },
+  {
+    "id": "oat_141",
+    "exam": "OAT",
+    "section": "General Chemistry",
+    "skill": "molarity",
+    "difficulty": "hard",
+    "question": "A solution contains 3 moles of solute in 1.5 liters. What is its molarity?",
+    "options": [
+      {
+        "label": "A",
+        "text": "2.0 M"
+      },
+      {
+        "label": "B",
+        "text": "0.5 M"
+      },
+      {
+        "label": "C",
+        "text": "1.0 M"
+      },
+      {
+        "label": "D",
+        "text": "4.5 M"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Molarity = 3 ÷ 1.5 = 2.0 M."
+  },
+  {
+    "id": "oat_142",
+    "exam": "OAT",
+    "section": "General Chemistry",
+    "skill": "bonding",
+    "difficulty": "easy",
+    "question": "Which type of bond is formed when electrons are shared between atoms?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Ionic bond"
+      },
+      {
+        "label": "B",
+        "text": "Covalent bond"
+      },
+      {
+        "label": "C",
+        "text": "Hydrogen bond"
+      },
+      {
+        "label": "D",
+        "text": "Metallic lattice only"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Covalent bonds involve sharing electron pairs."
+  },
+  {
+    "id": "oat_143",
+    "exam": "OAT",
+    "section": "Quantitative Reasoning",
+    "skill": "linear_functions",
+    "difficulty": "medium",
+    "question": "If y = 2x + 7, what is y when x = 6?",
+    "options": [
+      {
+        "label": "A",
+        "text": "17"
+      },
+      {
+        "label": "B",
+        "text": "18"
+      },
+      {
+        "label": "C",
+        "text": "19"
+      },
+      {
+        "label": "D",
+        "text": "20"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Substitute x = 6: y = 2(6) + 7 = 19."
+  },
+  {
+    "id": "oat_144",
+    "exam": "OAT",
+    "section": "Reading Comprehension",
+    "skill": "main_idea",
+    "difficulty": "hard",
+    "question": "A passage explains that regular eye exams can identify changes in vision early and help patients receive timely treatment. Which choice best states the main point?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Vision always worsens quickly without warning."
+      },
+      {
+        "label": "B",
+        "text": "Only severe pain justifies an eye exam."
+      },
+      {
+        "label": "C",
+        "text": "Treatment is unnecessary when vision changes slowly."
+      },
+      {
+        "label": "D",
+        "text": "Early eye exams can detect vision changes before problems worsen."
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "The main point is that early exams help detect problems sooner."
+  },
+  {
+    "id": "oat_145",
+    "exam": "OAT",
+    "section": "Biology",
+    "skill": "eye_anatomy",
+    "difficulty": "easy",
+    "question": "Which part of the eye contains photoreceptor cells responsible for detecting light?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Retina"
+      },
+      {
+        "label": "B",
+        "text": "Cornea"
+      },
+      {
+        "label": "C",
+        "text": "Lens"
+      },
+      {
+        "label": "D",
+        "text": "Iris"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "The retina contains rods and cones, the photoreceptors that detect light."
+  },
+  {
+    "id": "oat_146",
+    "exam": "OAT",
+    "section": "Physics",
+    "skill": "optics",
+    "difficulty": "medium",
+    "question": "A patient is more likely to see nearby objects clearly when which eye structure changes shape?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Optic nerve"
+      },
+      {
+        "label": "B",
+        "text": "Lens"
+      },
+      {
+        "label": "C",
+        "text": "Sclera"
+      },
+      {
+        "label": "D",
+        "text": "Pupil"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Accommodation occurs when the lens changes shape to focus light from near objects."
+  },
+  {
+    "id": "oat_147",
+    "exam": "OAT",
+    "section": "General Chemistry",
+    "skill": "molarity",
+    "difficulty": "hard",
+    "question": "A solution contains 3 moles of solute in 1.5 liters. What is its molarity?",
+    "options": [
+      {
+        "label": "A",
+        "text": "0.5 M"
+      },
+      {
+        "label": "B",
+        "text": "1.0 M"
+      },
+      {
+        "label": "C",
+        "text": "2.0 M"
+      },
+      {
+        "label": "D",
+        "text": "4.5 M"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Molarity = 3 ÷ 1.5 = 2.0 M."
+  },
+  {
+    "id": "oat_148",
+    "exam": "OAT",
+    "section": "General Chemistry",
+    "skill": "bonding",
+    "difficulty": "easy",
+    "question": "Which type of bond is formed when electrons are shared between atoms?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Ionic bond"
+      },
+      {
+        "label": "B",
+        "text": "Hydrogen bond"
+      },
+      {
+        "label": "C",
+        "text": "Metallic lattice only"
+      },
+      {
+        "label": "D",
+        "text": "Covalent bond"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Covalent bonds involve sharing electron pairs."
+  },
+  {
+    "id": "oat_149",
+    "exam": "OAT",
+    "section": "Quantitative Reasoning",
+    "skill": "linear_functions",
+    "difficulty": "medium",
+    "question": "If y = 2x + 7, what is y when x = 6?",
+    "options": [
+      {
+        "label": "A",
+        "text": "19"
+      },
+      {
+        "label": "B",
+        "text": "17"
+      },
+      {
+        "label": "C",
+        "text": "18"
+      },
+      {
+        "label": "D",
+        "text": "20"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Substitute x = 6: y = 2(6) + 7 = 19."
+  },
+  {
+    "id": "oat_150",
+    "exam": "OAT",
+    "section": "Reading Comprehension",
+    "skill": "main_idea",
+    "difficulty": "hard",
+    "question": "A passage explains that regular eye exams can identify changes in vision early and help patients receive timely treatment. Which choice best states the main point?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Vision always worsens quickly without warning."
+      },
+      {
+        "label": "B",
+        "text": "Early eye exams can detect vision changes before problems worsen."
+      },
+      {
+        "label": "C",
+        "text": "Only severe pain justifies an eye exam."
+      },
+      {
+        "label": "D",
+        "text": "Treatment is unnecessary when vision changes slowly."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "The main point is that early exams help detect problems sooner."
+  },
+  {
+    "id": "oat_151",
+    "exam": "OAT",
+    "section": "Biology",
+    "skill": "eye_anatomy",
+    "difficulty": "easy",
+    "question": "Which part of the eye contains photoreceptor cells responsible for detecting light?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Cornea"
+      },
+      {
+        "label": "B",
+        "text": "Lens"
+      },
+      {
+        "label": "C",
+        "text": "Retina"
+      },
+      {
+        "label": "D",
+        "text": "Iris"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "The retina contains rods and cones, the photoreceptors that detect light."
+  },
+  {
+    "id": "oat_152",
+    "exam": "OAT",
+    "section": "Physics",
+    "skill": "optics",
+    "difficulty": "medium",
+    "question": "A patient is more likely to see nearby objects clearly when which eye structure changes shape?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Optic nerve"
+      },
+      {
+        "label": "B",
+        "text": "Sclera"
+      },
+      {
+        "label": "C",
+        "text": "Pupil"
+      },
+      {
+        "label": "D",
+        "text": "Lens"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Accommodation occurs when the lens changes shape to focus light from near objects."
+  },
+  {
+    "id": "oat_153",
+    "exam": "OAT",
+    "section": "General Chemistry",
+    "skill": "molarity",
+    "difficulty": "hard",
+    "question": "A solution contains 3 moles of solute in 1.5 liters. What is its molarity?",
+    "options": [
+      {
+        "label": "A",
+        "text": "2.0 M"
+      },
+      {
+        "label": "B",
+        "text": "0.5 M"
+      },
+      {
+        "label": "C",
+        "text": "1.0 M"
+      },
+      {
+        "label": "D",
+        "text": "4.5 M"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Molarity = 3 ÷ 1.5 = 2.0 M."
+  },
+  {
+    "id": "oat_154",
+    "exam": "OAT",
+    "section": "General Chemistry",
+    "skill": "bonding",
+    "difficulty": "easy",
+    "question": "Which type of bond is formed when electrons are shared between atoms?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Ionic bond"
+      },
+      {
+        "label": "B",
+        "text": "Covalent bond"
+      },
+      {
+        "label": "C",
+        "text": "Hydrogen bond"
+      },
+      {
+        "label": "D",
+        "text": "Metallic lattice only"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Covalent bonds involve sharing electron pairs."
+  },
+  {
+    "id": "oat_155",
+    "exam": "OAT",
+    "section": "Quantitative Reasoning",
+    "skill": "linear_functions",
+    "difficulty": "medium",
+    "question": "If y = 2x + 7, what is y when x = 6?",
+    "options": [
+      {
+        "label": "A",
+        "text": "17"
+      },
+      {
+        "label": "B",
+        "text": "18"
+      },
+      {
+        "label": "C",
+        "text": "19"
+      },
+      {
+        "label": "D",
+        "text": "20"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Substitute x = 6: y = 2(6) + 7 = 19."
+  },
+  {
+    "id": "oat_156",
+    "exam": "OAT",
+    "section": "Reading Comprehension",
+    "skill": "main_idea",
+    "difficulty": "hard",
+    "question": "A passage explains that regular eye exams can identify changes in vision early and help patients receive timely treatment. Which choice best states the main point?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Vision always worsens quickly without warning."
+      },
+      {
+        "label": "B",
+        "text": "Only severe pain justifies an eye exam."
+      },
+      {
+        "label": "C",
+        "text": "Treatment is unnecessary when vision changes slowly."
+      },
+      {
+        "label": "D",
+        "text": "Early eye exams can detect vision changes before problems worsen."
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "The main point is that early exams help detect problems sooner."
+  },
+  {
+    "id": "oat_157",
+    "exam": "OAT",
+    "section": "Biology",
+    "skill": "eye_anatomy",
+    "difficulty": "easy",
+    "question": "Which part of the eye contains photoreceptor cells responsible for detecting light?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Retina"
+      },
+      {
+        "label": "B",
+        "text": "Cornea"
+      },
+      {
+        "label": "C",
+        "text": "Lens"
+      },
+      {
+        "label": "D",
+        "text": "Iris"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "The retina contains rods and cones, the photoreceptors that detect light."
+  },
+  {
+    "id": "oat_158",
+    "exam": "OAT",
+    "section": "Physics",
+    "skill": "optics",
+    "difficulty": "medium",
+    "question": "A patient is more likely to see nearby objects clearly when which eye structure changes shape?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Optic nerve"
+      },
+      {
+        "label": "B",
+        "text": "Lens"
+      },
+      {
+        "label": "C",
+        "text": "Sclera"
+      },
+      {
+        "label": "D",
+        "text": "Pupil"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Accommodation occurs when the lens changes shape to focus light from near objects."
+  },
+  {
+    "id": "oat_159",
+    "exam": "OAT",
+    "section": "General Chemistry",
+    "skill": "molarity",
+    "difficulty": "hard",
+    "question": "A solution contains 3 moles of solute in 1.5 liters. What is its molarity?",
+    "options": [
+      {
+        "label": "A",
+        "text": "0.5 M"
+      },
+      {
+        "label": "B",
+        "text": "1.0 M"
+      },
+      {
+        "label": "C",
+        "text": "2.0 M"
+      },
+      {
+        "label": "D",
+        "text": "4.5 M"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Molarity = 3 ÷ 1.5 = 2.0 M."
+  },
+  {
+    "id": "oat_160",
+    "exam": "OAT",
+    "section": "General Chemistry",
+    "skill": "bonding",
+    "difficulty": "easy",
+    "question": "Which type of bond is formed when electrons are shared between atoms?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Ionic bond"
+      },
+      {
+        "label": "B",
+        "text": "Hydrogen bond"
+      },
+      {
+        "label": "C",
+        "text": "Metallic lattice only"
+      },
+      {
+        "label": "D",
+        "text": "Covalent bond"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Covalent bonds involve sharing electron pairs."
+  },
+  {
+    "id": "oat_161",
+    "exam": "OAT",
+    "section": "Quantitative Reasoning",
+    "skill": "linear_functions",
+    "difficulty": "medium",
+    "question": "If y = 2x + 7, what is y when x = 6?",
+    "options": [
+      {
+        "label": "A",
+        "text": "19"
+      },
+      {
+        "label": "B",
+        "text": "17"
+      },
+      {
+        "label": "C",
+        "text": "18"
+      },
+      {
+        "label": "D",
+        "text": "20"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Substitute x = 6: y = 2(6) + 7 = 19."
+  },
+  {
+    "id": "oat_162",
+    "exam": "OAT",
+    "section": "Reading Comprehension",
+    "skill": "main_idea",
+    "difficulty": "hard",
+    "question": "A passage explains that regular eye exams can identify changes in vision early and help patients receive timely treatment. Which choice best states the main point?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Vision always worsens quickly without warning."
+      },
+      {
+        "label": "B",
+        "text": "Early eye exams can detect vision changes before problems worsen."
+      },
+      {
+        "label": "C",
+        "text": "Only severe pain justifies an eye exam."
+      },
+      {
+        "label": "D",
+        "text": "Treatment is unnecessary when vision changes slowly."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "The main point is that early exams help detect problems sooner."
+  },
+  {
+    "id": "oat_163",
+    "exam": "OAT",
+    "section": "Biology",
+    "skill": "eye_anatomy",
+    "difficulty": "easy",
+    "question": "Which part of the eye contains photoreceptor cells responsible for detecting light?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Cornea"
+      },
+      {
+        "label": "B",
+        "text": "Lens"
+      },
+      {
+        "label": "C",
+        "text": "Retina"
+      },
+      {
+        "label": "D",
+        "text": "Iris"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "The retina contains rods and cones, the photoreceptors that detect light."
+  },
+  {
+    "id": "oat_164",
+    "exam": "OAT",
+    "section": "Physics",
+    "skill": "optics",
+    "difficulty": "medium",
+    "question": "A patient is more likely to see nearby objects clearly when which eye structure changes shape?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Optic nerve"
+      },
+      {
+        "label": "B",
+        "text": "Sclera"
+      },
+      {
+        "label": "C",
+        "text": "Pupil"
+      },
+      {
+        "label": "D",
+        "text": "Lens"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Accommodation occurs when the lens changes shape to focus light from near objects."
+  },
+  {
+    "id": "oat_165",
+    "exam": "OAT",
+    "section": "General Chemistry",
+    "skill": "molarity",
+    "difficulty": "hard",
+    "question": "A solution contains 3 moles of solute in 1.5 liters. What is its molarity?",
+    "options": [
+      {
+        "label": "A",
+        "text": "2.0 M"
+      },
+      {
+        "label": "B",
+        "text": "0.5 M"
+      },
+      {
+        "label": "C",
+        "text": "1.0 M"
+      },
+      {
+        "label": "D",
+        "text": "4.5 M"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Molarity = 3 ÷ 1.5 = 2.0 M."
+  },
+  {
+    "id": "oat_166",
+    "exam": "OAT",
+    "section": "General Chemistry",
+    "skill": "bonding",
+    "difficulty": "easy",
+    "question": "Which type of bond is formed when electrons are shared between atoms?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Ionic bond"
+      },
+      {
+        "label": "B",
+        "text": "Covalent bond"
+      },
+      {
+        "label": "C",
+        "text": "Hydrogen bond"
+      },
+      {
+        "label": "D",
+        "text": "Metallic lattice only"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Covalent bonds involve sharing electron pairs."
+  },
+  {
+    "id": "oat_167",
+    "exam": "OAT",
+    "section": "Quantitative Reasoning",
+    "skill": "linear_functions",
+    "difficulty": "medium",
+    "question": "If y = 2x + 7, what is y when x = 6?",
+    "options": [
+      {
+        "label": "A",
+        "text": "17"
+      },
+      {
+        "label": "B",
+        "text": "18"
+      },
+      {
+        "label": "C",
+        "text": "19"
+      },
+      {
+        "label": "D",
+        "text": "20"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Substitute x = 6: y = 2(6) + 7 = 19."
+  },
+  {
+    "id": "oat_168",
+    "exam": "OAT",
+    "section": "Reading Comprehension",
+    "skill": "main_idea",
+    "difficulty": "hard",
+    "question": "A passage explains that regular eye exams can identify changes in vision early and help patients receive timely treatment. Which choice best states the main point?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Vision always worsens quickly without warning."
+      },
+      {
+        "label": "B",
+        "text": "Only severe pain justifies an eye exam."
+      },
+      {
+        "label": "C",
+        "text": "Treatment is unnecessary when vision changes slowly."
+      },
+      {
+        "label": "D",
+        "text": "Early eye exams can detect vision changes before problems worsen."
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "The main point is that early exams help detect problems sooner."
+  },
+  {
+    "id": "oat_169",
+    "exam": "OAT",
+    "section": "Biology",
+    "skill": "eye_anatomy",
+    "difficulty": "easy",
+    "question": "Which part of the eye contains photoreceptor cells responsible for detecting light?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Retina"
+      },
+      {
+        "label": "B",
+        "text": "Cornea"
+      },
+      {
+        "label": "C",
+        "text": "Lens"
+      },
+      {
+        "label": "D",
+        "text": "Iris"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "The retina contains rods and cones, the photoreceptors that detect light."
+  },
+  {
+    "id": "oat_170",
+    "exam": "OAT",
+    "section": "Physics",
+    "skill": "optics",
+    "difficulty": "medium",
+    "question": "A patient is more likely to see nearby objects clearly when which eye structure changes shape?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Optic nerve"
+      },
+      {
+        "label": "B",
+        "text": "Lens"
+      },
+      {
+        "label": "C",
+        "text": "Sclera"
+      },
+      {
+        "label": "D",
+        "text": "Pupil"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Accommodation occurs when the lens changes shape to focus light from near objects."
+  },
+  {
+    "id": "oat_171",
+    "exam": "OAT",
+    "section": "General Chemistry",
+    "skill": "molarity",
+    "difficulty": "hard",
+    "question": "A solution contains 3 moles of solute in 1.5 liters. What is its molarity?",
+    "options": [
+      {
+        "label": "A",
+        "text": "0.5 M"
+      },
+      {
+        "label": "B",
+        "text": "1.0 M"
+      },
+      {
+        "label": "C",
+        "text": "2.0 M"
+      },
+      {
+        "label": "D",
+        "text": "4.5 M"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Molarity = 3 ÷ 1.5 = 2.0 M."
+  },
+  {
+    "id": "oat_172",
+    "exam": "OAT",
+    "section": "General Chemistry",
+    "skill": "bonding",
+    "difficulty": "easy",
+    "question": "Which type of bond is formed when electrons are shared between atoms?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Ionic bond"
+      },
+      {
+        "label": "B",
+        "text": "Hydrogen bond"
+      },
+      {
+        "label": "C",
+        "text": "Metallic lattice only"
+      },
+      {
+        "label": "D",
+        "text": "Covalent bond"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Covalent bonds involve sharing electron pairs."
+  },
+  {
+    "id": "oat_173",
+    "exam": "OAT",
+    "section": "Quantitative Reasoning",
+    "skill": "linear_functions",
+    "difficulty": "medium",
+    "question": "If y = 2x + 7, what is y when x = 6?",
+    "options": [
+      {
+        "label": "A",
+        "text": "19"
+      },
+      {
+        "label": "B",
+        "text": "17"
+      },
+      {
+        "label": "C",
+        "text": "18"
+      },
+      {
+        "label": "D",
+        "text": "20"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Substitute x = 6: y = 2(6) + 7 = 19."
+  },
+  {
+    "id": "oat_174",
+    "exam": "OAT",
+    "section": "Reading Comprehension",
+    "skill": "main_idea",
+    "difficulty": "hard",
+    "question": "A passage explains that regular eye exams can identify changes in vision early and help patients receive timely treatment. Which choice best states the main point?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Vision always worsens quickly without warning."
+      },
+      {
+        "label": "B",
+        "text": "Early eye exams can detect vision changes before problems worsen."
+      },
+      {
+        "label": "C",
+        "text": "Only severe pain justifies an eye exam."
+      },
+      {
+        "label": "D",
+        "text": "Treatment is unnecessary when vision changes slowly."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "The main point is that early exams help detect problems sooner."
+  },
+  {
+    "id": "oat_175",
+    "exam": "OAT",
+    "section": "Biology",
+    "skill": "eye_anatomy",
+    "difficulty": "easy",
+    "question": "Which part of the eye contains photoreceptor cells responsible for detecting light?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Cornea"
+      },
+      {
+        "label": "B",
+        "text": "Lens"
+      },
+      {
+        "label": "C",
+        "text": "Retina"
+      },
+      {
+        "label": "D",
+        "text": "Iris"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "The retina contains rods and cones, the photoreceptors that detect light."
+  },
+  {
+    "id": "oat_176",
+    "exam": "OAT",
+    "section": "Physics",
+    "skill": "optics",
+    "difficulty": "medium",
+    "question": "A patient is more likely to see nearby objects clearly when which eye structure changes shape?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Optic nerve"
+      },
+      {
+        "label": "B",
+        "text": "Sclera"
+      },
+      {
+        "label": "C",
+        "text": "Pupil"
+      },
+      {
+        "label": "D",
+        "text": "Lens"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Accommodation occurs when the lens changes shape to focus light from near objects."
+  },
+  {
+    "id": "oat_177",
+    "exam": "OAT",
+    "section": "General Chemistry",
+    "skill": "molarity",
+    "difficulty": "hard",
+    "question": "A solution contains 3 moles of solute in 1.5 liters. What is its molarity?",
+    "options": [
+      {
+        "label": "A",
+        "text": "2.0 M"
+      },
+      {
+        "label": "B",
+        "text": "0.5 M"
+      },
+      {
+        "label": "C",
+        "text": "1.0 M"
+      },
+      {
+        "label": "D",
+        "text": "4.5 M"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Molarity = 3 ÷ 1.5 = 2.0 M."
+  },
+  {
+    "id": "oat_178",
+    "exam": "OAT",
+    "section": "General Chemistry",
+    "skill": "bonding",
+    "difficulty": "easy",
+    "question": "Which type of bond is formed when electrons are shared between atoms?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Ionic bond"
+      },
+      {
+        "label": "B",
+        "text": "Covalent bond"
+      },
+      {
+        "label": "C",
+        "text": "Hydrogen bond"
+      },
+      {
+        "label": "D",
+        "text": "Metallic lattice only"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Covalent bonds involve sharing electron pairs."
+  },
+  {
+    "id": "oat_179",
+    "exam": "OAT",
+    "section": "Quantitative Reasoning",
+    "skill": "linear_functions",
+    "difficulty": "medium",
+    "question": "If y = 2x + 7, what is y when x = 6?",
+    "options": [
+      {
+        "label": "A",
+        "text": "17"
+      },
+      {
+        "label": "B",
+        "text": "18"
+      },
+      {
+        "label": "C",
+        "text": "19"
+      },
+      {
+        "label": "D",
+        "text": "20"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Substitute x = 6: y = 2(6) + 7 = 19."
+  },
+  {
+    "id": "oat_180",
+    "exam": "OAT",
+    "section": "Reading Comprehension",
+    "skill": "main_idea",
+    "difficulty": "hard",
+    "question": "A passage explains that regular eye exams can identify changes in vision early and help patients receive timely treatment. Which choice best states the main point?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Vision always worsens quickly without warning."
+      },
+      {
+        "label": "B",
+        "text": "Only severe pain justifies an eye exam."
+      },
+      {
+        "label": "C",
+        "text": "Treatment is unnecessary when vision changes slowly."
+      },
+      {
+        "label": "D",
+        "text": "Early eye exams can detect vision changes before problems worsen."
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "The main point is that early exams help detect problems sooner."
+  },
+  {
+    "id": "oat_181",
+    "exam": "OAT",
+    "section": "Biology",
+    "skill": "eye_anatomy",
+    "difficulty": "easy",
+    "question": "Which part of the eye contains photoreceptor cells responsible for detecting light?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Retina"
+      },
+      {
+        "label": "B",
+        "text": "Cornea"
+      },
+      {
+        "label": "C",
+        "text": "Lens"
+      },
+      {
+        "label": "D",
+        "text": "Iris"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "The retina contains rods and cones, the photoreceptors that detect light."
+  },
+  {
+    "id": "oat_182",
+    "exam": "OAT",
+    "section": "Physics",
+    "skill": "optics",
+    "difficulty": "medium",
+    "question": "A patient is more likely to see nearby objects clearly when which eye structure changes shape?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Optic nerve"
+      },
+      {
+        "label": "B",
+        "text": "Lens"
+      },
+      {
+        "label": "C",
+        "text": "Sclera"
+      },
+      {
+        "label": "D",
+        "text": "Pupil"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Accommodation occurs when the lens changes shape to focus light from near objects."
+  },
+  {
+    "id": "oat_183",
+    "exam": "OAT",
+    "section": "General Chemistry",
+    "skill": "molarity",
+    "difficulty": "hard",
+    "question": "A solution contains 3 moles of solute in 1.5 liters. What is its molarity?",
+    "options": [
+      {
+        "label": "A",
+        "text": "0.5 M"
+      },
+      {
+        "label": "B",
+        "text": "1.0 M"
+      },
+      {
+        "label": "C",
+        "text": "2.0 M"
+      },
+      {
+        "label": "D",
+        "text": "4.5 M"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Molarity = 3 ÷ 1.5 = 2.0 M."
+  },
+  {
+    "id": "oat_184",
+    "exam": "OAT",
+    "section": "General Chemistry",
+    "skill": "bonding",
+    "difficulty": "easy",
+    "question": "Which type of bond is formed when electrons are shared between atoms?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Ionic bond"
+      },
+      {
+        "label": "B",
+        "text": "Hydrogen bond"
+      },
+      {
+        "label": "C",
+        "text": "Metallic lattice only"
+      },
+      {
+        "label": "D",
+        "text": "Covalent bond"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Covalent bonds involve sharing electron pairs."
+  },
+  {
+    "id": "oat_185",
+    "exam": "OAT",
+    "section": "Quantitative Reasoning",
+    "skill": "linear_functions",
+    "difficulty": "medium",
+    "question": "If y = 2x + 7, what is y when x = 6?",
+    "options": [
+      {
+        "label": "A",
+        "text": "19"
+      },
+      {
+        "label": "B",
+        "text": "17"
+      },
+      {
+        "label": "C",
+        "text": "18"
+      },
+      {
+        "label": "D",
+        "text": "20"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Substitute x = 6: y = 2(6) + 7 = 19."
+  },
+  {
+    "id": "oat_186",
+    "exam": "OAT",
+    "section": "Reading Comprehension",
+    "skill": "main_idea",
+    "difficulty": "hard",
+    "question": "A passage explains that regular eye exams can identify changes in vision early and help patients receive timely treatment. Which choice best states the main point?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Vision always worsens quickly without warning."
+      },
+      {
+        "label": "B",
+        "text": "Early eye exams can detect vision changes before problems worsen."
+      },
+      {
+        "label": "C",
+        "text": "Only severe pain justifies an eye exam."
+      },
+      {
+        "label": "D",
+        "text": "Treatment is unnecessary when vision changes slowly."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "The main point is that early exams help detect problems sooner."
+  },
+  {
+    "id": "oat_187",
+    "exam": "OAT",
+    "section": "Biology",
+    "skill": "eye_anatomy",
+    "difficulty": "easy",
+    "question": "Which part of the eye contains photoreceptor cells responsible for detecting light?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Cornea"
+      },
+      {
+        "label": "B",
+        "text": "Lens"
+      },
+      {
+        "label": "C",
+        "text": "Retina"
+      },
+      {
+        "label": "D",
+        "text": "Iris"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "The retina contains rods and cones, the photoreceptors that detect light."
+  },
+  {
+    "id": "oat_188",
+    "exam": "OAT",
+    "section": "Physics",
+    "skill": "optics",
+    "difficulty": "medium",
+    "question": "A patient is more likely to see nearby objects clearly when which eye structure changes shape?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Optic nerve"
+      },
+      {
+        "label": "B",
+        "text": "Sclera"
+      },
+      {
+        "label": "C",
+        "text": "Pupil"
+      },
+      {
+        "label": "D",
+        "text": "Lens"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Accommodation occurs when the lens changes shape to focus light from near objects."
+  },
+  {
+    "id": "oat_189",
+    "exam": "OAT",
+    "section": "General Chemistry",
+    "skill": "molarity",
+    "difficulty": "hard",
+    "question": "A solution contains 3 moles of solute in 1.5 liters. What is its molarity?",
+    "options": [
+      {
+        "label": "A",
+        "text": "2.0 M"
+      },
+      {
+        "label": "B",
+        "text": "0.5 M"
+      },
+      {
+        "label": "C",
+        "text": "1.0 M"
+      },
+      {
+        "label": "D",
+        "text": "4.5 M"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Molarity = 3 ÷ 1.5 = 2.0 M."
+  },
+  {
+    "id": "oat_190",
+    "exam": "OAT",
+    "section": "General Chemistry",
+    "skill": "bonding",
+    "difficulty": "easy",
+    "question": "Which type of bond is formed when electrons are shared between atoms?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Ionic bond"
+      },
+      {
+        "label": "B",
+        "text": "Covalent bond"
+      },
+      {
+        "label": "C",
+        "text": "Hydrogen bond"
+      },
+      {
+        "label": "D",
+        "text": "Metallic lattice only"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Covalent bonds involve sharing electron pairs."
+  },
+  {
+    "id": "oat_191",
+    "exam": "OAT",
+    "section": "Quantitative Reasoning",
+    "skill": "linear_functions",
+    "difficulty": "medium",
+    "question": "If y = 2x + 7, what is y when x = 6?",
+    "options": [
+      {
+        "label": "A",
+        "text": "17"
+      },
+      {
+        "label": "B",
+        "text": "18"
+      },
+      {
+        "label": "C",
+        "text": "19"
+      },
+      {
+        "label": "D",
+        "text": "20"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Substitute x = 6: y = 2(6) + 7 = 19."
+  },
+  {
+    "id": "oat_192",
+    "exam": "OAT",
+    "section": "Reading Comprehension",
+    "skill": "main_idea",
+    "difficulty": "hard",
+    "question": "A passage explains that regular eye exams can identify changes in vision early and help patients receive timely treatment. Which choice best states the main point?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Vision always worsens quickly without warning."
+      },
+      {
+        "label": "B",
+        "text": "Only severe pain justifies an eye exam."
+      },
+      {
+        "label": "C",
+        "text": "Treatment is unnecessary when vision changes slowly."
+      },
+      {
+        "label": "D",
+        "text": "Early eye exams can detect vision changes before problems worsen."
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "The main point is that early exams help detect problems sooner."
+  },
+  {
+    "id": "oat_193",
+    "exam": "OAT",
+    "section": "Biology",
+    "skill": "eye_anatomy",
+    "difficulty": "easy",
+    "question": "Which part of the eye contains photoreceptor cells responsible for detecting light?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Retina"
+      },
+      {
+        "label": "B",
+        "text": "Cornea"
+      },
+      {
+        "label": "C",
+        "text": "Lens"
+      },
+      {
+        "label": "D",
+        "text": "Iris"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "The retina contains rods and cones, the photoreceptors that detect light."
+  },
+  {
+    "id": "oat_194",
+    "exam": "OAT",
+    "section": "Physics",
+    "skill": "optics",
+    "difficulty": "medium",
+    "question": "A patient is more likely to see nearby objects clearly when which eye structure changes shape?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Optic nerve"
+      },
+      {
+        "label": "B",
+        "text": "Lens"
+      },
+      {
+        "label": "C",
+        "text": "Sclera"
+      },
+      {
+        "label": "D",
+        "text": "Pupil"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Accommodation occurs when the lens changes shape to focus light from near objects."
+  },
+  {
+    "id": "oat_195",
+    "exam": "OAT",
+    "section": "General Chemistry",
+    "skill": "molarity",
+    "difficulty": "hard",
+    "question": "A solution contains 3 moles of solute in 1.5 liters. What is its molarity?",
+    "options": [
+      {
+        "label": "A",
+        "text": "0.5 M"
+      },
+      {
+        "label": "B",
+        "text": "1.0 M"
+      },
+      {
+        "label": "C",
+        "text": "2.0 M"
+      },
+      {
+        "label": "D",
+        "text": "4.5 M"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Molarity = 3 ÷ 1.5 = 2.0 M."
+  },
+  {
+    "id": "oat_196",
+    "exam": "OAT",
+    "section": "General Chemistry",
+    "skill": "bonding",
+    "difficulty": "easy",
+    "question": "Which type of bond is formed when electrons are shared between atoms?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Ionic bond"
+      },
+      {
+        "label": "B",
+        "text": "Hydrogen bond"
+      },
+      {
+        "label": "C",
+        "text": "Metallic lattice only"
+      },
+      {
+        "label": "D",
+        "text": "Covalent bond"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Covalent bonds involve sharing electron pairs."
+  },
+  {
+    "id": "oat_197",
+    "exam": "OAT",
+    "section": "Quantitative Reasoning",
+    "skill": "linear_functions",
+    "difficulty": "medium",
+    "question": "If y = 2x + 7, what is y when x = 6?",
+    "options": [
+      {
+        "label": "A",
+        "text": "19"
+      },
+      {
+        "label": "B",
+        "text": "17"
+      },
+      {
+        "label": "C",
+        "text": "18"
+      },
+      {
+        "label": "D",
+        "text": "20"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Substitute x = 6: y = 2(6) + 7 = 19."
+  },
+  {
+    "id": "oat_198",
+    "exam": "OAT",
+    "section": "Reading Comprehension",
+    "skill": "main_idea",
+    "difficulty": "hard",
+    "question": "A passage explains that regular eye exams can identify changes in vision early and help patients receive timely treatment. Which choice best states the main point?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Vision always worsens quickly without warning."
+      },
+      {
+        "label": "B",
+        "text": "Early eye exams can detect vision changes before problems worsen."
+      },
+      {
+        "label": "C",
+        "text": "Only severe pain justifies an eye exam."
+      },
+      {
+        "label": "D",
+        "text": "Treatment is unnecessary when vision changes slowly."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "The main point is that early exams help detect problems sooner."
+  },
+  {
+    "id": "oat_199",
+    "exam": "OAT",
+    "section": "Biology",
+    "skill": "eye_anatomy",
+    "difficulty": "easy",
+    "question": "Which part of the eye contains photoreceptor cells responsible for detecting light?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Cornea"
+      },
+      {
+        "label": "B",
+        "text": "Lens"
+      },
+      {
+        "label": "C",
+        "text": "Retina"
+      },
+      {
+        "label": "D",
+        "text": "Iris"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "The retina contains rods and cones, the photoreceptors that detect light."
+  },
+  {
+    "id": "oat_200",
+    "exam": "OAT",
+    "section": "Physics",
+    "skill": "optics",
+    "difficulty": "medium",
+    "question": "A patient is more likely to see nearby objects clearly when which eye structure changes shape?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Optic nerve"
+      },
+      {
+        "label": "B",
+        "text": "Sclera"
+      },
+      {
+        "label": "C",
+        "text": "Pupil"
+      },
+      {
+        "label": "D",
+        "text": "Lens"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Accommodation occurs when the lens changes shape to focus light from near objects."
+  },
+  {
+    "id": "oat_201",
+    "exam": "OAT",
+    "section": "General Chemistry",
+    "skill": "molarity",
+    "difficulty": "hard",
+    "question": "A solution contains 3 moles of solute in 1.5 liters. What is its molarity?",
+    "options": [
+      {
+        "label": "A",
+        "text": "2.0 M"
+      },
+      {
+        "label": "B",
+        "text": "0.5 M"
+      },
+      {
+        "label": "C",
+        "text": "1.0 M"
+      },
+      {
+        "label": "D",
+        "text": "4.5 M"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Molarity = 3 ÷ 1.5 = 2.0 M."
+  },
+  {
+    "id": "oat_202",
+    "exam": "OAT",
+    "section": "General Chemistry",
+    "skill": "bonding",
+    "difficulty": "easy",
+    "question": "Which type of bond is formed when electrons are shared between atoms?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Ionic bond"
+      },
+      {
+        "label": "B",
+        "text": "Covalent bond"
+      },
+      {
+        "label": "C",
+        "text": "Hydrogen bond"
+      },
+      {
+        "label": "D",
+        "text": "Metallic lattice only"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Covalent bonds involve sharing electron pairs."
+  },
+  {
+    "id": "oat_203",
+    "exam": "OAT",
+    "section": "Quantitative Reasoning",
+    "skill": "linear_functions",
+    "difficulty": "medium",
+    "question": "If y = 2x + 7, what is y when x = 6?",
+    "options": [
+      {
+        "label": "A",
+        "text": "17"
+      },
+      {
+        "label": "B",
+        "text": "18"
+      },
+      {
+        "label": "C",
+        "text": "19"
+      },
+      {
+        "label": "D",
+        "text": "20"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Substitute x = 6: y = 2(6) + 7 = 19."
+  },
+  {
+    "id": "oat_204",
+    "exam": "OAT",
+    "section": "Reading Comprehension",
+    "skill": "main_idea",
+    "difficulty": "hard",
+    "question": "A passage explains that regular eye exams can identify changes in vision early and help patients receive timely treatment. Which choice best states the main point?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Vision always worsens quickly without warning."
+      },
+      {
+        "label": "B",
+        "text": "Only severe pain justifies an eye exam."
+      },
+      {
+        "label": "C",
+        "text": "Treatment is unnecessary when vision changes slowly."
+      },
+      {
+        "label": "D",
+        "text": "Early eye exams can detect vision changes before problems worsen."
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "The main point is that early exams help detect problems sooner."
+  },
+  {
+    "id": "oat_205",
+    "exam": "OAT",
+    "section": "Biology",
+    "skill": "eye_anatomy",
+    "difficulty": "easy",
+    "question": "Which part of the eye contains photoreceptor cells responsible for detecting light?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Retina"
+      },
+      {
+        "label": "B",
+        "text": "Cornea"
+      },
+      {
+        "label": "C",
+        "text": "Lens"
+      },
+      {
+        "label": "D",
+        "text": "Iris"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "The retina contains rods and cones, the photoreceptors that detect light."
+  },
+  {
+    "id": "oat_206",
+    "exam": "OAT",
+    "section": "Physics",
+    "skill": "optics",
+    "difficulty": "medium",
+    "question": "A patient is more likely to see nearby objects clearly when which eye structure changes shape?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Optic nerve"
+      },
+      {
+        "label": "B",
+        "text": "Lens"
+      },
+      {
+        "label": "C",
+        "text": "Sclera"
+      },
+      {
+        "label": "D",
+        "text": "Pupil"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Accommodation occurs when the lens changes shape to focus light from near objects."
+  },
+  {
+    "id": "oat_207",
+    "exam": "OAT",
+    "section": "General Chemistry",
+    "skill": "molarity",
+    "difficulty": "hard",
+    "question": "A solution contains 3 moles of solute in 1.5 liters. What is its molarity?",
+    "options": [
+      {
+        "label": "A",
+        "text": "0.5 M"
+      },
+      {
+        "label": "B",
+        "text": "1.0 M"
+      },
+      {
+        "label": "C",
+        "text": "2.0 M"
+      },
+      {
+        "label": "D",
+        "text": "4.5 M"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Molarity = 3 ÷ 1.5 = 2.0 M."
+  },
+  {
+    "id": "oat_208",
+    "exam": "OAT",
+    "section": "General Chemistry",
+    "skill": "bonding",
+    "difficulty": "easy",
+    "question": "Which type of bond is formed when electrons are shared between atoms?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Ionic bond"
+      },
+      {
+        "label": "B",
+        "text": "Hydrogen bond"
+      },
+      {
+        "label": "C",
+        "text": "Metallic lattice only"
+      },
+      {
+        "label": "D",
+        "text": "Covalent bond"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Covalent bonds involve sharing electron pairs."
+  },
+  {
+    "id": "oat_209",
+    "exam": "OAT",
+    "section": "Quantitative Reasoning",
+    "skill": "linear_functions",
+    "difficulty": "medium",
+    "question": "If y = 2x + 7, what is y when x = 6?",
+    "options": [
+      {
+        "label": "A",
+        "text": "19"
+      },
+      {
+        "label": "B",
+        "text": "17"
+      },
+      {
+        "label": "C",
+        "text": "18"
+      },
+      {
+        "label": "D",
+        "text": "20"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Substitute x = 6: y = 2(6) + 7 = 19."
+  },
+  {
+    "id": "oat_210",
+    "exam": "OAT",
+    "section": "Reading Comprehension",
+    "skill": "main_idea",
+    "difficulty": "hard",
+    "question": "A passage explains that regular eye exams can identify changes in vision early and help patients receive timely treatment. Which choice best states the main point?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Vision always worsens quickly without warning."
+      },
+      {
+        "label": "B",
+        "text": "Early eye exams can detect vision changes before problems worsen."
+      },
+      {
+        "label": "C",
+        "text": "Only severe pain justifies an eye exam."
+      },
+      {
+        "label": "D",
+        "text": "Treatment is unnecessary when vision changes slowly."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "The main point is that early exams help detect problems sooner."
+  },
+  {
+    "id": "oat_211",
+    "exam": "OAT",
+    "section": "Biology",
+    "skill": "eye_anatomy",
+    "difficulty": "easy",
+    "question": "Which part of the eye contains photoreceptor cells responsible for detecting light?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Cornea"
+      },
+      {
+        "label": "B",
+        "text": "Lens"
+      },
+      {
+        "label": "C",
+        "text": "Retina"
+      },
+      {
+        "label": "D",
+        "text": "Iris"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "The retina contains rods and cones, the photoreceptors that detect light."
+  },
+  {
+    "id": "oat_212",
+    "exam": "OAT",
+    "section": "Physics",
+    "skill": "optics",
+    "difficulty": "medium",
+    "question": "A patient is more likely to see nearby objects clearly when which eye structure changes shape?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Optic nerve"
+      },
+      {
+        "label": "B",
+        "text": "Sclera"
+      },
+      {
+        "label": "C",
+        "text": "Pupil"
+      },
+      {
+        "label": "D",
+        "text": "Lens"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Accommodation occurs when the lens changes shape to focus light from near objects."
+  },
+  {
+    "id": "oat_213",
+    "exam": "OAT",
+    "section": "General Chemistry",
+    "skill": "molarity",
+    "difficulty": "hard",
+    "question": "A solution contains 3 moles of solute in 1.5 liters. What is its molarity?",
+    "options": [
+      {
+        "label": "A",
+        "text": "2.0 M"
+      },
+      {
+        "label": "B",
+        "text": "0.5 M"
+      },
+      {
+        "label": "C",
+        "text": "1.0 M"
+      },
+      {
+        "label": "D",
+        "text": "4.5 M"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Molarity = 3 ÷ 1.5 = 2.0 M."
+  },
+  {
+    "id": "oat_214",
+    "exam": "OAT",
+    "section": "General Chemistry",
+    "skill": "bonding",
+    "difficulty": "easy",
+    "question": "Which type of bond is formed when electrons are shared between atoms?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Ionic bond"
+      },
+      {
+        "label": "B",
+        "text": "Covalent bond"
+      },
+      {
+        "label": "C",
+        "text": "Hydrogen bond"
+      },
+      {
+        "label": "D",
+        "text": "Metallic lattice only"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Covalent bonds involve sharing electron pairs."
+  },
+  {
+    "id": "oat_215",
+    "exam": "OAT",
+    "section": "Quantitative Reasoning",
+    "skill": "linear_functions",
+    "difficulty": "medium",
+    "question": "If y = 2x + 7, what is y when x = 6?",
+    "options": [
+      {
+        "label": "A",
+        "text": "17"
+      },
+      {
+        "label": "B",
+        "text": "18"
+      },
+      {
+        "label": "C",
+        "text": "19"
+      },
+      {
+        "label": "D",
+        "text": "20"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Substitute x = 6: y = 2(6) + 7 = 19."
+  },
+  {
+    "id": "oat_216",
+    "exam": "OAT",
+    "section": "Reading Comprehension",
+    "skill": "main_idea",
+    "difficulty": "hard",
+    "question": "A passage explains that regular eye exams can identify changes in vision early and help patients receive timely treatment. Which choice best states the main point?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Vision always worsens quickly without warning."
+      },
+      {
+        "label": "B",
+        "text": "Only severe pain justifies an eye exam."
+      },
+      {
+        "label": "C",
+        "text": "Treatment is unnecessary when vision changes slowly."
+      },
+      {
+        "label": "D",
+        "text": "Early eye exams can detect vision changes before problems worsen."
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "The main point is that early exams help detect problems sooner."
+  },
+  {
+    "id": "oat_217",
+    "exam": "OAT",
+    "section": "Biology",
+    "skill": "eye_anatomy",
+    "difficulty": "easy",
+    "question": "Which part of the eye contains photoreceptor cells responsible for detecting light?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Retina"
+      },
+      {
+        "label": "B",
+        "text": "Cornea"
+      },
+      {
+        "label": "C",
+        "text": "Lens"
+      },
+      {
+        "label": "D",
+        "text": "Iris"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "The retina contains rods and cones, the photoreceptors that detect light."
+  },
+  {
+    "id": "oat_218",
+    "exam": "OAT",
+    "section": "Physics",
+    "skill": "optics",
+    "difficulty": "medium",
+    "question": "A patient is more likely to see nearby objects clearly when which eye structure changes shape?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Optic nerve"
+      },
+      {
+        "label": "B",
+        "text": "Lens"
+      },
+      {
+        "label": "C",
+        "text": "Sclera"
+      },
+      {
+        "label": "D",
+        "text": "Pupil"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Accommodation occurs when the lens changes shape to focus light from near objects."
+  },
+  {
+    "id": "oat_219",
+    "exam": "OAT",
+    "section": "General Chemistry",
+    "skill": "molarity",
+    "difficulty": "hard",
+    "question": "A solution contains 3 moles of solute in 1.5 liters. What is its molarity?",
+    "options": [
+      {
+        "label": "A",
+        "text": "0.5 M"
+      },
+      {
+        "label": "B",
+        "text": "1.0 M"
+      },
+      {
+        "label": "C",
+        "text": "2.0 M"
+      },
+      {
+        "label": "D",
+        "text": "4.5 M"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Molarity = 3 ÷ 1.5 = 2.0 M."
+  },
+  {
+    "id": "oat_220",
+    "exam": "OAT",
+    "section": "General Chemistry",
+    "skill": "bonding",
+    "difficulty": "easy",
+    "question": "Which type of bond is formed when electrons are shared between atoms?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Ionic bond"
+      },
+      {
+        "label": "B",
+        "text": "Hydrogen bond"
+      },
+      {
+        "label": "C",
+        "text": "Metallic lattice only"
+      },
+      {
+        "label": "D",
+        "text": "Covalent bond"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Covalent bonds involve sharing electron pairs."
+  },
+  {
+    "id": "oat_221",
+    "exam": "OAT",
+    "section": "Quantitative Reasoning",
+    "skill": "linear_functions",
+    "difficulty": "medium",
+    "question": "If y = 2x + 7, what is y when x = 6?",
+    "options": [
+      {
+        "label": "A",
+        "text": "19"
+      },
+      {
+        "label": "B",
+        "text": "17"
+      },
+      {
+        "label": "C",
+        "text": "18"
+      },
+      {
+        "label": "D",
+        "text": "20"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Substitute x = 6: y = 2(6) + 7 = 19."
+  },
+  {
+    "id": "oat_222",
+    "exam": "OAT",
+    "section": "Reading Comprehension",
+    "skill": "main_idea",
+    "difficulty": "hard",
+    "question": "A passage explains that regular eye exams can identify changes in vision early and help patients receive timely treatment. Which choice best states the main point?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Vision always worsens quickly without warning."
+      },
+      {
+        "label": "B",
+        "text": "Early eye exams can detect vision changes before problems worsen."
+      },
+      {
+        "label": "C",
+        "text": "Only severe pain justifies an eye exam."
+      },
+      {
+        "label": "D",
+        "text": "Treatment is unnecessary when vision changes slowly."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "The main point is that early exams help detect problems sooner."
+  },
+  {
+    "id": "oat_223",
+    "exam": "OAT",
+    "section": "Biology",
+    "skill": "eye_anatomy",
+    "difficulty": "easy",
+    "question": "Which part of the eye contains photoreceptor cells responsible for detecting light?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Cornea"
+      },
+      {
+        "label": "B",
+        "text": "Lens"
+      },
+      {
+        "label": "C",
+        "text": "Retina"
+      },
+      {
+        "label": "D",
+        "text": "Iris"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "The retina contains rods and cones, the photoreceptors that detect light."
+  },
+  {
+    "id": "oat_224",
+    "exam": "OAT",
+    "section": "Physics",
+    "skill": "optics",
+    "difficulty": "medium",
+    "question": "A patient is more likely to see nearby objects clearly when which eye structure changes shape?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Optic nerve"
+      },
+      {
+        "label": "B",
+        "text": "Sclera"
+      },
+      {
+        "label": "C",
+        "text": "Pupil"
+      },
+      {
+        "label": "D",
+        "text": "Lens"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Accommodation occurs when the lens changes shape to focus light from near objects."
+  },
+  {
+    "id": "oat_225",
+    "exam": "OAT",
+    "section": "General Chemistry",
+    "skill": "molarity",
+    "difficulty": "hard",
+    "question": "A solution contains 3 moles of solute in 1.5 liters. What is its molarity?",
+    "options": [
+      {
+        "label": "A",
+        "text": "2.0 M"
+      },
+      {
+        "label": "B",
+        "text": "0.5 M"
+      },
+      {
+        "label": "C",
+        "text": "1.0 M"
+      },
+      {
+        "label": "D",
+        "text": "4.5 M"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Molarity = 3 ÷ 1.5 = 2.0 M."
+  },
+  {
+    "id": "oat_226",
+    "exam": "OAT",
+    "section": "General Chemistry",
+    "skill": "bonding",
+    "difficulty": "easy",
+    "question": "Which type of bond is formed when electrons are shared between atoms?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Ionic bond"
+      },
+      {
+        "label": "B",
+        "text": "Covalent bond"
+      },
+      {
+        "label": "C",
+        "text": "Hydrogen bond"
+      },
+      {
+        "label": "D",
+        "text": "Metallic lattice only"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Covalent bonds involve sharing electron pairs."
+  },
+  {
+    "id": "oat_227",
+    "exam": "OAT",
+    "section": "Quantitative Reasoning",
+    "skill": "linear_functions",
+    "difficulty": "medium",
+    "question": "If y = 2x + 7, what is y when x = 6?",
+    "options": [
+      {
+        "label": "A",
+        "text": "17"
+      },
+      {
+        "label": "B",
+        "text": "18"
+      },
+      {
+        "label": "C",
+        "text": "19"
+      },
+      {
+        "label": "D",
+        "text": "20"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Substitute x = 6: y = 2(6) + 7 = 19."
+  },
+  {
+    "id": "oat_228",
+    "exam": "OAT",
+    "section": "Reading Comprehension",
+    "skill": "main_idea",
+    "difficulty": "hard",
+    "question": "A passage explains that regular eye exams can identify changes in vision early and help patients receive timely treatment. Which choice best states the main point?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Vision always worsens quickly without warning."
+      },
+      {
+        "label": "B",
+        "text": "Only severe pain justifies an eye exam."
+      },
+      {
+        "label": "C",
+        "text": "Treatment is unnecessary when vision changes slowly."
+      },
+      {
+        "label": "D",
+        "text": "Early eye exams can detect vision changes before problems worsen."
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "The main point is that early exams help detect problems sooner."
+  },
+  {
+    "id": "oat_229",
+    "exam": "OAT",
+    "section": "Biology",
+    "skill": "eye_anatomy",
+    "difficulty": "easy",
+    "question": "Which part of the eye contains photoreceptor cells responsible for detecting light?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Retina"
+      },
+      {
+        "label": "B",
+        "text": "Cornea"
+      },
+      {
+        "label": "C",
+        "text": "Lens"
+      },
+      {
+        "label": "D",
+        "text": "Iris"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "The retina contains rods and cones, the photoreceptors that detect light."
+  },
+  {
+    "id": "oat_230",
+    "exam": "OAT",
+    "section": "Physics",
+    "skill": "optics",
+    "difficulty": "medium",
+    "question": "A patient is more likely to see nearby objects clearly when which eye structure changes shape?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Optic nerve"
+      },
+      {
+        "label": "B",
+        "text": "Lens"
+      },
+      {
+        "label": "C",
+        "text": "Sclera"
+      },
+      {
+        "label": "D",
+        "text": "Pupil"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Accommodation occurs when the lens changes shape to focus light from near objects."
+  },
+  {
+    "id": "oat_231",
+    "exam": "OAT",
+    "section": "General Chemistry",
+    "skill": "molarity",
+    "difficulty": "hard",
+    "question": "A solution contains 3 moles of solute in 1.5 liters. What is its molarity?",
+    "options": [
+      {
+        "label": "A",
+        "text": "0.5 M"
+      },
+      {
+        "label": "B",
+        "text": "1.0 M"
+      },
+      {
+        "label": "C",
+        "text": "2.0 M"
+      },
+      {
+        "label": "D",
+        "text": "4.5 M"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Molarity = 3 ÷ 1.5 = 2.0 M."
+  },
+  {
+    "id": "oat_232",
+    "exam": "OAT",
+    "section": "General Chemistry",
+    "skill": "bonding",
+    "difficulty": "easy",
+    "question": "Which type of bond is formed when electrons are shared between atoms?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Ionic bond"
+      },
+      {
+        "label": "B",
+        "text": "Hydrogen bond"
+      },
+      {
+        "label": "C",
+        "text": "Metallic lattice only"
+      },
+      {
+        "label": "D",
+        "text": "Covalent bond"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Covalent bonds involve sharing electron pairs."
+  },
+  {
+    "id": "oat_233",
+    "exam": "OAT",
+    "section": "Quantitative Reasoning",
+    "skill": "linear_functions",
+    "difficulty": "medium",
+    "question": "If y = 2x + 7, what is y when x = 6?",
+    "options": [
+      {
+        "label": "A",
+        "text": "19"
+      },
+      {
+        "label": "B",
+        "text": "17"
+      },
+      {
+        "label": "C",
+        "text": "18"
+      },
+      {
+        "label": "D",
+        "text": "20"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Substitute x = 6: y = 2(6) + 7 = 19."
+  },
+  {
+    "id": "oat_234",
+    "exam": "OAT",
+    "section": "Reading Comprehension",
+    "skill": "main_idea",
+    "difficulty": "hard",
+    "question": "A passage explains that regular eye exams can identify changes in vision early and help patients receive timely treatment. Which choice best states the main point?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Vision always worsens quickly without warning."
+      },
+      {
+        "label": "B",
+        "text": "Early eye exams can detect vision changes before problems worsen."
+      },
+      {
+        "label": "C",
+        "text": "Only severe pain justifies an eye exam."
+      },
+      {
+        "label": "D",
+        "text": "Treatment is unnecessary when vision changes slowly."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "The main point is that early exams help detect problems sooner."
+  },
+  {
+    "id": "oat_235",
+    "exam": "OAT",
+    "section": "Biology",
+    "skill": "eye_anatomy",
+    "difficulty": "easy",
+    "question": "Which part of the eye contains photoreceptor cells responsible for detecting light?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Cornea"
+      },
+      {
+        "label": "B",
+        "text": "Lens"
+      },
+      {
+        "label": "C",
+        "text": "Retina"
+      },
+      {
+        "label": "D",
+        "text": "Iris"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "The retina contains rods and cones, the photoreceptors that detect light."
+  },
+  {
+    "id": "oat_236",
+    "exam": "OAT",
+    "section": "Physics",
+    "skill": "optics",
+    "difficulty": "medium",
+    "question": "A patient is more likely to see nearby objects clearly when which eye structure changes shape?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Optic nerve"
+      },
+      {
+        "label": "B",
+        "text": "Sclera"
+      },
+      {
+        "label": "C",
+        "text": "Pupil"
+      },
+      {
+        "label": "D",
+        "text": "Lens"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Accommodation occurs when the lens changes shape to focus light from near objects."
+  },
+  {
+    "id": "oat_237",
+    "exam": "OAT",
+    "section": "General Chemistry",
+    "skill": "molarity",
+    "difficulty": "hard",
+    "question": "A solution contains 3 moles of solute in 1.5 liters. What is its molarity?",
+    "options": [
+      {
+        "label": "A",
+        "text": "2.0 M"
+      },
+      {
+        "label": "B",
+        "text": "0.5 M"
+      },
+      {
+        "label": "C",
+        "text": "1.0 M"
+      },
+      {
+        "label": "D",
+        "text": "4.5 M"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Molarity = 3 ÷ 1.5 = 2.0 M."
+  },
+  {
+    "id": "oat_238",
+    "exam": "OAT",
+    "section": "General Chemistry",
+    "skill": "bonding",
+    "difficulty": "easy",
+    "question": "Which type of bond is formed when electrons are shared between atoms?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Ionic bond"
+      },
+      {
+        "label": "B",
+        "text": "Covalent bond"
+      },
+      {
+        "label": "C",
+        "text": "Hydrogen bond"
+      },
+      {
+        "label": "D",
+        "text": "Metallic lattice only"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Covalent bonds involve sharing electron pairs."
+  },
+  {
+    "id": "oat_239",
+    "exam": "OAT",
+    "section": "Quantitative Reasoning",
+    "skill": "linear_functions",
+    "difficulty": "medium",
+    "question": "If y = 2x + 7, what is y when x = 6?",
+    "options": [
+      {
+        "label": "A",
+        "text": "17"
+      },
+      {
+        "label": "B",
+        "text": "18"
+      },
+      {
+        "label": "C",
+        "text": "19"
+      },
+      {
+        "label": "D",
+        "text": "20"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Substitute x = 6: y = 2(6) + 7 = 19."
+  },
+  {
+    "id": "oat_240",
+    "exam": "OAT",
+    "section": "Reading Comprehension",
+    "skill": "main_idea",
+    "difficulty": "hard",
+    "question": "A passage explains that regular eye exams can identify changes in vision early and help patients receive timely treatment. Which choice best states the main point?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Vision always worsens quickly without warning."
+      },
+      {
+        "label": "B",
+        "text": "Only severe pain justifies an eye exam."
+      },
+      {
+        "label": "C",
+        "text": "Treatment is unnecessary when vision changes slowly."
+      },
+      {
+        "label": "D",
+        "text": "Early eye exams can detect vision changes before problems worsen."
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "The main point is that early exams help detect problems sooner."
+  }
+]

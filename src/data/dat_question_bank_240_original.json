@@ -1,0 +1,6722 @@
+[
+  {
+    "id": "dat_001",
+    "exam": "DAT",
+    "section": "Biology",
+    "skill": "dental_anatomy",
+    "difficulty": "easy",
+    "question": "Which structure is primarily responsible for anchoring a tooth to the alveolar bone?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Periodontal ligament"
+      },
+      {
+        "label": "B",
+        "text": "Dentin"
+      },
+      {
+        "label": "C",
+        "text": "Enamel"
+      },
+      {
+        "label": "D",
+        "text": "Pulp chamber"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "The periodontal ligament connects the tooth root to the surrounding alveolar bone."
+  },
+  {
+    "id": "dat_002",
+    "exam": "DAT",
+    "section": "General Chemistry",
+    "skill": "molarity",
+    "difficulty": "medium",
+    "question": "A dentist mixes a solution containing 0.5 moles of solute to make 0.25 liters of solution. What is the molarity?",
+    "options": [
+      {
+        "label": "A",
+        "text": "0.125 M"
+      },
+      {
+        "label": "B",
+        "text": "2.0 M"
+      },
+      {
+        "label": "C",
+        "text": "0.75 M"
+      },
+      {
+        "label": "D",
+        "text": "4.0 M"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Molarity = moles ÷ liters = 0.5 ÷ 0.25 = 2.0 M."
+  },
+  {
+    "id": "dat_003",
+    "exam": "DAT",
+    "section": "General Chemistry",
+    "skill": "periodic_trends",
+    "difficulty": "hard",
+    "question": "Which trend generally occurs as atomic radius decreases across a period?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Electronegativity tends to decrease"
+      },
+      {
+        "label": "B",
+        "text": "Nuclear charge tends to decrease"
+      },
+      {
+        "label": "C",
+        "text": "Ionization energy tends to increase"
+      },
+      {
+        "label": "D",
+        "text": "Valence electrons disappear"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Across a period, effective nuclear charge increases, so ionization energy generally rises."
+  },
+  {
+    "id": "dat_004",
+    "exam": "DAT",
+    "section": "Organic Chemistry",
+    "skill": "functional_groups",
+    "difficulty": "easy",
+    "question": "Which functional group is present in an alcohol?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Carbonyl group"
+      },
+      {
+        "label": "B",
+        "text": "Amino group"
+      },
+      {
+        "label": "C",
+        "text": "Phosphate group"
+      },
+      {
+        "label": "D",
+        "text": "Hydroxyl group"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Alcohols are characterized by a hydroxyl (-OH) functional group."
+  },
+  {
+    "id": "dat_005",
+    "exam": "DAT",
+    "section": "Quantitative Reasoning",
+    "skill": "linear_functions",
+    "difficulty": "medium",
+    "question": "If a line has slope 3 and passes through (2, 5), what is the y-value when x = 4?",
+    "options": [
+      {
+        "label": "A",
+        "text": "11"
+      },
+      {
+        "label": "B",
+        "text": "9"
+      },
+      {
+        "label": "C",
+        "text": "10"
+      },
+      {
+        "label": "D",
+        "text": "12"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Using slope 3, moving x from 2 to 4 increases y by 6, so y = 11."
+  },
+  {
+    "id": "dat_006",
+    "exam": "DAT",
+    "section": "Reading Comprehension",
+    "skill": "main_idea",
+    "difficulty": "hard",
+    "question": "A short passage notes that regular brushing removes food particles and reduces bacterial buildup on teeth. Which choice best states the passage's main idea?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Food particles are the only cause of dental problems."
+      },
+      {
+        "label": "B",
+        "text": "Brushing helps protect teeth by reducing buildup and removing debris."
+      },
+      {
+        "label": "C",
+        "text": "Bacteria cannot live in the mouth after brushing once."
+      },
+      {
+        "label": "D",
+        "text": "Toothpaste is unnecessary for effective oral hygiene."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "The passage emphasizes the protective role of brushing in limiting buildup and debris."
+  },
+  {
+    "id": "dat_007",
+    "exam": "DAT",
+    "section": "Biology",
+    "skill": "dental_anatomy",
+    "difficulty": "easy",
+    "question": "Which structure is primarily responsible for anchoring a tooth to the alveolar bone?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Dentin"
+      },
+      {
+        "label": "B",
+        "text": "Enamel"
+      },
+      {
+        "label": "C",
+        "text": "Periodontal ligament"
+      },
+      {
+        "label": "D",
+        "text": "Pulp chamber"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "The periodontal ligament connects the tooth root to the surrounding alveolar bone."
+  },
+  {
+    "id": "dat_008",
+    "exam": "DAT",
+    "section": "General Chemistry",
+    "skill": "molarity",
+    "difficulty": "medium",
+    "question": "A dentist mixes a solution containing 0.5 moles of solute to make 0.25 liters of solution. What is the molarity?",
+    "options": [
+      {
+        "label": "A",
+        "text": "0.125 M"
+      },
+      {
+        "label": "B",
+        "text": "0.75 M"
+      },
+      {
+        "label": "C",
+        "text": "4.0 M"
+      },
+      {
+        "label": "D",
+        "text": "2.0 M"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Molarity = moles ÷ liters = 0.5 ÷ 0.25 = 2.0 M."
+  },
+  {
+    "id": "dat_009",
+    "exam": "DAT",
+    "section": "General Chemistry",
+    "skill": "periodic_trends",
+    "difficulty": "hard",
+    "question": "Which trend generally occurs as atomic radius decreases across a period?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Ionization energy tends to increase"
+      },
+      {
+        "label": "B",
+        "text": "Electronegativity tends to decrease"
+      },
+      {
+        "label": "C",
+        "text": "Nuclear charge tends to decrease"
+      },
+      {
+        "label": "D",
+        "text": "Valence electrons disappear"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Across a period, effective nuclear charge increases, so ionization energy generally rises."
+  },
+  {
+    "id": "dat_010",
+    "exam": "DAT",
+    "section": "Organic Chemistry",
+    "skill": "functional_groups",
+    "difficulty": "easy",
+    "question": "Which functional group is present in an alcohol?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Carbonyl group"
+      },
+      {
+        "label": "B",
+        "text": "Hydroxyl group"
+      },
+      {
+        "label": "C",
+        "text": "Amino group"
+      },
+      {
+        "label": "D",
+        "text": "Phosphate group"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Alcohols are characterized by a hydroxyl (-OH) functional group."
+  },
+  {
+    "id": "dat_011",
+    "exam": "DAT",
+    "section": "Quantitative Reasoning",
+    "skill": "linear_functions",
+    "difficulty": "medium",
+    "question": "If a line has slope 3 and passes through (2, 5), what is the y-value when x = 4?",
+    "options": [
+      {
+        "label": "A",
+        "text": "9"
+      },
+      {
+        "label": "B",
+        "text": "10"
+      },
+      {
+        "label": "C",
+        "text": "11"
+      },
+      {
+        "label": "D",
+        "text": "12"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Using slope 3, moving x from 2 to 4 increases y by 6, so y = 11."
+  },
+  {
+    "id": "dat_012",
+    "exam": "DAT",
+    "section": "Reading Comprehension",
+    "skill": "main_idea",
+    "difficulty": "hard",
+    "question": "A short passage notes that regular brushing removes food particles and reduces bacterial buildup on teeth. Which choice best states the passage's main idea?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Food particles are the only cause of dental problems."
+      },
+      {
+        "label": "B",
+        "text": "Bacteria cannot live in the mouth after brushing once."
+      },
+      {
+        "label": "C",
+        "text": "Toothpaste is unnecessary for effective oral hygiene."
+      },
+      {
+        "label": "D",
+        "text": "Brushing helps protect teeth by reducing buildup and removing debris."
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "The passage emphasizes the protective role of brushing in limiting buildup and debris."
+  },
+  {
+    "id": "dat_013",
+    "exam": "DAT",
+    "section": "Biology",
+    "skill": "dental_anatomy",
+    "difficulty": "easy",
+    "question": "Which structure is primarily responsible for anchoring a tooth to the alveolar bone?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Periodontal ligament"
+      },
+      {
+        "label": "B",
+        "text": "Dentin"
+      },
+      {
+        "label": "C",
+        "text": "Enamel"
+      },
+      {
+        "label": "D",
+        "text": "Pulp chamber"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "The periodontal ligament connects the tooth root to the surrounding alveolar bone."
+  },
+  {
+    "id": "dat_014",
+    "exam": "DAT",
+    "section": "General Chemistry",
+    "skill": "molarity",
+    "difficulty": "medium",
+    "question": "A dentist mixes a solution containing 0.5 moles of solute to make 0.25 liters of solution. What is the molarity?",
+    "options": [
+      {
+        "label": "A",
+        "text": "0.125 M"
+      },
+      {
+        "label": "B",
+        "text": "2.0 M"
+      },
+      {
+        "label": "C",
+        "text": "0.75 M"
+      },
+      {
+        "label": "D",
+        "text": "4.0 M"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Molarity = moles ÷ liters = 0.5 ÷ 0.25 = 2.0 M."
+  },
+  {
+    "id": "dat_015",
+    "exam": "DAT",
+    "section": "General Chemistry",
+    "skill": "periodic_trends",
+    "difficulty": "hard",
+    "question": "Which trend generally occurs as atomic radius decreases across a period?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Electronegativity tends to decrease"
+      },
+      {
+        "label": "B",
+        "text": "Nuclear charge tends to decrease"
+      },
+      {
+        "label": "C",
+        "text": "Ionization energy tends to increase"
+      },
+      {
+        "label": "D",
+        "text": "Valence electrons disappear"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Across a period, effective nuclear charge increases, so ionization energy generally rises."
+  },
+  {
+    "id": "dat_016",
+    "exam": "DAT",
+    "section": "Organic Chemistry",
+    "skill": "functional_groups",
+    "difficulty": "easy",
+    "question": "Which functional group is present in an alcohol?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Carbonyl group"
+      },
+      {
+        "label": "B",
+        "text": "Amino group"
+      },
+      {
+        "label": "C",
+        "text": "Phosphate group"
+      },
+      {
+        "label": "D",
+        "text": "Hydroxyl group"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Alcohols are characterized by a hydroxyl (-OH) functional group."
+  },
+  {
+    "id": "dat_017",
+    "exam": "DAT",
+    "section": "Quantitative Reasoning",
+    "skill": "linear_functions",
+    "difficulty": "medium",
+    "question": "If a line has slope 3 and passes through (2, 5), what is the y-value when x = 4?",
+    "options": [
+      {
+        "label": "A",
+        "text": "11"
+      },
+      {
+        "label": "B",
+        "text": "9"
+      },
+      {
+        "label": "C",
+        "text": "10"
+      },
+      {
+        "label": "D",
+        "text": "12"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Using slope 3, moving x from 2 to 4 increases y by 6, so y = 11."
+  },
+  {
+    "id": "dat_018",
+    "exam": "DAT",
+    "section": "Reading Comprehension",
+    "skill": "main_idea",
+    "difficulty": "hard",
+    "question": "A short passage notes that regular brushing removes food particles and reduces bacterial buildup on teeth. Which choice best states the passage's main idea?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Food particles are the only cause of dental problems."
+      },
+      {
+        "label": "B",
+        "text": "Brushing helps protect teeth by reducing buildup and removing debris."
+      },
+      {
+        "label": "C",
+        "text": "Bacteria cannot live in the mouth after brushing once."
+      },
+      {
+        "label": "D",
+        "text": "Toothpaste is unnecessary for effective oral hygiene."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "The passage emphasizes the protective role of brushing in limiting buildup and debris."
+  },
+  {
+    "id": "dat_019",
+    "exam": "DAT",
+    "section": "Biology",
+    "skill": "dental_anatomy",
+    "difficulty": "easy",
+    "question": "Which structure is primarily responsible for anchoring a tooth to the alveolar bone?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Dentin"
+      },
+      {
+        "label": "B",
+        "text": "Enamel"
+      },
+      {
+        "label": "C",
+        "text": "Periodontal ligament"
+      },
+      {
+        "label": "D",
+        "text": "Pulp chamber"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "The periodontal ligament connects the tooth root to the surrounding alveolar bone."
+  },
+  {
+    "id": "dat_020",
+    "exam": "DAT",
+    "section": "General Chemistry",
+    "skill": "molarity",
+    "difficulty": "medium",
+    "question": "A dentist mixes a solution containing 0.5 moles of solute to make 0.25 liters of solution. What is the molarity?",
+    "options": [
+      {
+        "label": "A",
+        "text": "0.125 M"
+      },
+      {
+        "label": "B",
+        "text": "0.75 M"
+      },
+      {
+        "label": "C",
+        "text": "4.0 M"
+      },
+      {
+        "label": "D",
+        "text": "2.0 M"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Molarity = moles ÷ liters = 0.5 ÷ 0.25 = 2.0 M."
+  },
+  {
+    "id": "dat_021",
+    "exam": "DAT",
+    "section": "General Chemistry",
+    "skill": "periodic_trends",
+    "difficulty": "hard",
+    "question": "Which trend generally occurs as atomic radius decreases across a period?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Ionization energy tends to increase"
+      },
+      {
+        "label": "B",
+        "text": "Electronegativity tends to decrease"
+      },
+      {
+        "label": "C",
+        "text": "Nuclear charge tends to decrease"
+      },
+      {
+        "label": "D",
+        "text": "Valence electrons disappear"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Across a period, effective nuclear charge increases, so ionization energy generally rises."
+  },
+  {
+    "id": "dat_022",
+    "exam": "DAT",
+    "section": "Organic Chemistry",
+    "skill": "functional_groups",
+    "difficulty": "easy",
+    "question": "Which functional group is present in an alcohol?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Carbonyl group"
+      },
+      {
+        "label": "B",
+        "text": "Hydroxyl group"
+      },
+      {
+        "label": "C",
+        "text": "Amino group"
+      },
+      {
+        "label": "D",
+        "text": "Phosphate group"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Alcohols are characterized by a hydroxyl (-OH) functional group."
+  },
+  {
+    "id": "dat_023",
+    "exam": "DAT",
+    "section": "Quantitative Reasoning",
+    "skill": "linear_functions",
+    "difficulty": "medium",
+    "question": "If a line has slope 3 and passes through (2, 5), what is the y-value when x = 4?",
+    "options": [
+      {
+        "label": "A",
+        "text": "9"
+      },
+      {
+        "label": "B",
+        "text": "10"
+      },
+      {
+        "label": "C",
+        "text": "11"
+      },
+      {
+        "label": "D",
+        "text": "12"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Using slope 3, moving x from 2 to 4 increases y by 6, so y = 11."
+  },
+  {
+    "id": "dat_024",
+    "exam": "DAT",
+    "section": "Reading Comprehension",
+    "skill": "main_idea",
+    "difficulty": "hard",
+    "question": "A short passage notes that regular brushing removes food particles and reduces bacterial buildup on teeth. Which choice best states the passage's main idea?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Food particles are the only cause of dental problems."
+      },
+      {
+        "label": "B",
+        "text": "Bacteria cannot live in the mouth after brushing once."
+      },
+      {
+        "label": "C",
+        "text": "Toothpaste is unnecessary for effective oral hygiene."
+      },
+      {
+        "label": "D",
+        "text": "Brushing helps protect teeth by reducing buildup and removing debris."
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "The passage emphasizes the protective role of brushing in limiting buildup and debris."
+  },
+  {
+    "id": "dat_025",
+    "exam": "DAT",
+    "section": "Biology",
+    "skill": "dental_anatomy",
+    "difficulty": "easy",
+    "question": "Which structure is primarily responsible for anchoring a tooth to the alveolar bone?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Periodontal ligament"
+      },
+      {
+        "label": "B",
+        "text": "Dentin"
+      },
+      {
+        "label": "C",
+        "text": "Enamel"
+      },
+      {
+        "label": "D",
+        "text": "Pulp chamber"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "The periodontal ligament connects the tooth root to the surrounding alveolar bone."
+  },
+  {
+    "id": "dat_026",
+    "exam": "DAT",
+    "section": "General Chemistry",
+    "skill": "molarity",
+    "difficulty": "medium",
+    "question": "A dentist mixes a solution containing 0.5 moles of solute to make 0.25 liters of solution. What is the molarity?",
+    "options": [
+      {
+        "label": "A",
+        "text": "0.125 M"
+      },
+      {
+        "label": "B",
+        "text": "2.0 M"
+      },
+      {
+        "label": "C",
+        "text": "0.75 M"
+      },
+      {
+        "label": "D",
+        "text": "4.0 M"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Molarity = moles ÷ liters = 0.5 ÷ 0.25 = 2.0 M."
+  },
+  {
+    "id": "dat_027",
+    "exam": "DAT",
+    "section": "General Chemistry",
+    "skill": "periodic_trends",
+    "difficulty": "hard",
+    "question": "Which trend generally occurs as atomic radius decreases across a period?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Electronegativity tends to decrease"
+      },
+      {
+        "label": "B",
+        "text": "Nuclear charge tends to decrease"
+      },
+      {
+        "label": "C",
+        "text": "Ionization energy tends to increase"
+      },
+      {
+        "label": "D",
+        "text": "Valence electrons disappear"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Across a period, effective nuclear charge increases, so ionization energy generally rises."
+  },
+  {
+    "id": "dat_028",
+    "exam": "DAT",
+    "section": "Organic Chemistry",
+    "skill": "functional_groups",
+    "difficulty": "easy",
+    "question": "Which functional group is present in an alcohol?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Carbonyl group"
+      },
+      {
+        "label": "B",
+        "text": "Amino group"
+      },
+      {
+        "label": "C",
+        "text": "Phosphate group"
+      },
+      {
+        "label": "D",
+        "text": "Hydroxyl group"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Alcohols are characterized by a hydroxyl (-OH) functional group."
+  },
+  {
+    "id": "dat_029",
+    "exam": "DAT",
+    "section": "Quantitative Reasoning",
+    "skill": "linear_functions",
+    "difficulty": "medium",
+    "question": "If a line has slope 3 and passes through (2, 5), what is the y-value when x = 4?",
+    "options": [
+      {
+        "label": "A",
+        "text": "11"
+      },
+      {
+        "label": "B",
+        "text": "9"
+      },
+      {
+        "label": "C",
+        "text": "10"
+      },
+      {
+        "label": "D",
+        "text": "12"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Using slope 3, moving x from 2 to 4 increases y by 6, so y = 11."
+  },
+  {
+    "id": "dat_030",
+    "exam": "DAT",
+    "section": "Reading Comprehension",
+    "skill": "main_idea",
+    "difficulty": "hard",
+    "question": "A short passage notes that regular brushing removes food particles and reduces bacterial buildup on teeth. Which choice best states the passage's main idea?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Food particles are the only cause of dental problems."
+      },
+      {
+        "label": "B",
+        "text": "Brushing helps protect teeth by reducing buildup and removing debris."
+      },
+      {
+        "label": "C",
+        "text": "Bacteria cannot live in the mouth after brushing once."
+      },
+      {
+        "label": "D",
+        "text": "Toothpaste is unnecessary for effective oral hygiene."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "The passage emphasizes the protective role of brushing in limiting buildup and debris."
+  },
+  {
+    "id": "dat_031",
+    "exam": "DAT",
+    "section": "Biology",
+    "skill": "dental_anatomy",
+    "difficulty": "easy",
+    "question": "Which structure is primarily responsible for anchoring a tooth to the alveolar bone?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Dentin"
+      },
+      {
+        "label": "B",
+        "text": "Enamel"
+      },
+      {
+        "label": "C",
+        "text": "Periodontal ligament"
+      },
+      {
+        "label": "D",
+        "text": "Pulp chamber"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "The periodontal ligament connects the tooth root to the surrounding alveolar bone."
+  },
+  {
+    "id": "dat_032",
+    "exam": "DAT",
+    "section": "General Chemistry",
+    "skill": "molarity",
+    "difficulty": "medium",
+    "question": "A dentist mixes a solution containing 0.5 moles of solute to make 0.25 liters of solution. What is the molarity?",
+    "options": [
+      {
+        "label": "A",
+        "text": "0.125 M"
+      },
+      {
+        "label": "B",
+        "text": "0.75 M"
+      },
+      {
+        "label": "C",
+        "text": "4.0 M"
+      },
+      {
+        "label": "D",
+        "text": "2.0 M"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Molarity = moles ÷ liters = 0.5 ÷ 0.25 = 2.0 M."
+  },
+  {
+    "id": "dat_033",
+    "exam": "DAT",
+    "section": "General Chemistry",
+    "skill": "periodic_trends",
+    "difficulty": "hard",
+    "question": "Which trend generally occurs as atomic radius decreases across a period?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Ionization energy tends to increase"
+      },
+      {
+        "label": "B",
+        "text": "Electronegativity tends to decrease"
+      },
+      {
+        "label": "C",
+        "text": "Nuclear charge tends to decrease"
+      },
+      {
+        "label": "D",
+        "text": "Valence electrons disappear"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Across a period, effective nuclear charge increases, so ionization energy generally rises."
+  },
+  {
+    "id": "dat_034",
+    "exam": "DAT",
+    "section": "Organic Chemistry",
+    "skill": "functional_groups",
+    "difficulty": "easy",
+    "question": "Which functional group is present in an alcohol?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Carbonyl group"
+      },
+      {
+        "label": "B",
+        "text": "Hydroxyl group"
+      },
+      {
+        "label": "C",
+        "text": "Amino group"
+      },
+      {
+        "label": "D",
+        "text": "Phosphate group"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Alcohols are characterized by a hydroxyl (-OH) functional group."
+  },
+  {
+    "id": "dat_035",
+    "exam": "DAT",
+    "section": "Quantitative Reasoning",
+    "skill": "linear_functions",
+    "difficulty": "medium",
+    "question": "If a line has slope 3 and passes through (2, 5), what is the y-value when x = 4?",
+    "options": [
+      {
+        "label": "A",
+        "text": "9"
+      },
+      {
+        "label": "B",
+        "text": "10"
+      },
+      {
+        "label": "C",
+        "text": "11"
+      },
+      {
+        "label": "D",
+        "text": "12"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Using slope 3, moving x from 2 to 4 increases y by 6, so y = 11."
+  },
+  {
+    "id": "dat_036",
+    "exam": "DAT",
+    "section": "Reading Comprehension",
+    "skill": "main_idea",
+    "difficulty": "hard",
+    "question": "A short passage notes that regular brushing removes food particles and reduces bacterial buildup on teeth. Which choice best states the passage's main idea?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Food particles are the only cause of dental problems."
+      },
+      {
+        "label": "B",
+        "text": "Bacteria cannot live in the mouth after brushing once."
+      },
+      {
+        "label": "C",
+        "text": "Toothpaste is unnecessary for effective oral hygiene."
+      },
+      {
+        "label": "D",
+        "text": "Brushing helps protect teeth by reducing buildup and removing debris."
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "The passage emphasizes the protective role of brushing in limiting buildup and debris."
+  },
+  {
+    "id": "dat_037",
+    "exam": "DAT",
+    "section": "Biology",
+    "skill": "dental_anatomy",
+    "difficulty": "easy",
+    "question": "Which structure is primarily responsible for anchoring a tooth to the alveolar bone?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Periodontal ligament"
+      },
+      {
+        "label": "B",
+        "text": "Dentin"
+      },
+      {
+        "label": "C",
+        "text": "Enamel"
+      },
+      {
+        "label": "D",
+        "text": "Pulp chamber"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "The periodontal ligament connects the tooth root to the surrounding alveolar bone."
+  },
+  {
+    "id": "dat_038",
+    "exam": "DAT",
+    "section": "General Chemistry",
+    "skill": "molarity",
+    "difficulty": "medium",
+    "question": "A dentist mixes a solution containing 0.5 moles of solute to make 0.25 liters of solution. What is the molarity?",
+    "options": [
+      {
+        "label": "A",
+        "text": "0.125 M"
+      },
+      {
+        "label": "B",
+        "text": "2.0 M"
+      },
+      {
+        "label": "C",
+        "text": "0.75 M"
+      },
+      {
+        "label": "D",
+        "text": "4.0 M"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Molarity = moles ÷ liters = 0.5 ÷ 0.25 = 2.0 M."
+  },
+  {
+    "id": "dat_039",
+    "exam": "DAT",
+    "section": "General Chemistry",
+    "skill": "periodic_trends",
+    "difficulty": "hard",
+    "question": "Which trend generally occurs as atomic radius decreases across a period?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Electronegativity tends to decrease"
+      },
+      {
+        "label": "B",
+        "text": "Nuclear charge tends to decrease"
+      },
+      {
+        "label": "C",
+        "text": "Ionization energy tends to increase"
+      },
+      {
+        "label": "D",
+        "text": "Valence electrons disappear"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Across a period, effective nuclear charge increases, so ionization energy generally rises."
+  },
+  {
+    "id": "dat_040",
+    "exam": "DAT",
+    "section": "Organic Chemistry",
+    "skill": "functional_groups",
+    "difficulty": "easy",
+    "question": "Which functional group is present in an alcohol?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Carbonyl group"
+      },
+      {
+        "label": "B",
+        "text": "Amino group"
+      },
+      {
+        "label": "C",
+        "text": "Phosphate group"
+      },
+      {
+        "label": "D",
+        "text": "Hydroxyl group"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Alcohols are characterized by a hydroxyl (-OH) functional group."
+  },
+  {
+    "id": "dat_041",
+    "exam": "DAT",
+    "section": "Quantitative Reasoning",
+    "skill": "linear_functions",
+    "difficulty": "medium",
+    "question": "If a line has slope 3 and passes through (2, 5), what is the y-value when x = 4?",
+    "options": [
+      {
+        "label": "A",
+        "text": "11"
+      },
+      {
+        "label": "B",
+        "text": "9"
+      },
+      {
+        "label": "C",
+        "text": "10"
+      },
+      {
+        "label": "D",
+        "text": "12"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Using slope 3, moving x from 2 to 4 increases y by 6, so y = 11."
+  },
+  {
+    "id": "dat_042",
+    "exam": "DAT",
+    "section": "Reading Comprehension",
+    "skill": "main_idea",
+    "difficulty": "hard",
+    "question": "A short passage notes that regular brushing removes food particles and reduces bacterial buildup on teeth. Which choice best states the passage's main idea?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Food particles are the only cause of dental problems."
+      },
+      {
+        "label": "B",
+        "text": "Brushing helps protect teeth by reducing buildup and removing debris."
+      },
+      {
+        "label": "C",
+        "text": "Bacteria cannot live in the mouth after brushing once."
+      },
+      {
+        "label": "D",
+        "text": "Toothpaste is unnecessary for effective oral hygiene."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "The passage emphasizes the protective role of brushing in limiting buildup and debris."
+  },
+  {
+    "id": "dat_043",
+    "exam": "DAT",
+    "section": "Biology",
+    "skill": "dental_anatomy",
+    "difficulty": "easy",
+    "question": "Which structure is primarily responsible for anchoring a tooth to the alveolar bone?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Dentin"
+      },
+      {
+        "label": "B",
+        "text": "Enamel"
+      },
+      {
+        "label": "C",
+        "text": "Periodontal ligament"
+      },
+      {
+        "label": "D",
+        "text": "Pulp chamber"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "The periodontal ligament connects the tooth root to the surrounding alveolar bone."
+  },
+  {
+    "id": "dat_044",
+    "exam": "DAT",
+    "section": "General Chemistry",
+    "skill": "molarity",
+    "difficulty": "medium",
+    "question": "A dentist mixes a solution containing 0.5 moles of solute to make 0.25 liters of solution. What is the molarity?",
+    "options": [
+      {
+        "label": "A",
+        "text": "0.125 M"
+      },
+      {
+        "label": "B",
+        "text": "0.75 M"
+      },
+      {
+        "label": "C",
+        "text": "4.0 M"
+      },
+      {
+        "label": "D",
+        "text": "2.0 M"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Molarity = moles ÷ liters = 0.5 ÷ 0.25 = 2.0 M."
+  },
+  {
+    "id": "dat_045",
+    "exam": "DAT",
+    "section": "General Chemistry",
+    "skill": "periodic_trends",
+    "difficulty": "hard",
+    "question": "Which trend generally occurs as atomic radius decreases across a period?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Ionization energy tends to increase"
+      },
+      {
+        "label": "B",
+        "text": "Electronegativity tends to decrease"
+      },
+      {
+        "label": "C",
+        "text": "Nuclear charge tends to decrease"
+      },
+      {
+        "label": "D",
+        "text": "Valence electrons disappear"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Across a period, effective nuclear charge increases, so ionization energy generally rises."
+  },
+  {
+    "id": "dat_046",
+    "exam": "DAT",
+    "section": "Organic Chemistry",
+    "skill": "functional_groups",
+    "difficulty": "easy",
+    "question": "Which functional group is present in an alcohol?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Carbonyl group"
+      },
+      {
+        "label": "B",
+        "text": "Hydroxyl group"
+      },
+      {
+        "label": "C",
+        "text": "Amino group"
+      },
+      {
+        "label": "D",
+        "text": "Phosphate group"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Alcohols are characterized by a hydroxyl (-OH) functional group."
+  },
+  {
+    "id": "dat_047",
+    "exam": "DAT",
+    "section": "Quantitative Reasoning",
+    "skill": "linear_functions",
+    "difficulty": "medium",
+    "question": "If a line has slope 3 and passes through (2, 5), what is the y-value when x = 4?",
+    "options": [
+      {
+        "label": "A",
+        "text": "9"
+      },
+      {
+        "label": "B",
+        "text": "10"
+      },
+      {
+        "label": "C",
+        "text": "11"
+      },
+      {
+        "label": "D",
+        "text": "12"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Using slope 3, moving x from 2 to 4 increases y by 6, so y = 11."
+  },
+  {
+    "id": "dat_048",
+    "exam": "DAT",
+    "section": "Reading Comprehension",
+    "skill": "main_idea",
+    "difficulty": "hard",
+    "question": "A short passage notes that regular brushing removes food particles and reduces bacterial buildup on teeth. Which choice best states the passage's main idea?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Food particles are the only cause of dental problems."
+      },
+      {
+        "label": "B",
+        "text": "Bacteria cannot live in the mouth after brushing once."
+      },
+      {
+        "label": "C",
+        "text": "Toothpaste is unnecessary for effective oral hygiene."
+      },
+      {
+        "label": "D",
+        "text": "Brushing helps protect teeth by reducing buildup and removing debris."
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "The passage emphasizes the protective role of brushing in limiting buildup and debris."
+  },
+  {
+    "id": "dat_049",
+    "exam": "DAT",
+    "section": "Biology",
+    "skill": "dental_anatomy",
+    "difficulty": "easy",
+    "question": "Which structure is primarily responsible for anchoring a tooth to the alveolar bone?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Periodontal ligament"
+      },
+      {
+        "label": "B",
+        "text": "Dentin"
+      },
+      {
+        "label": "C",
+        "text": "Enamel"
+      },
+      {
+        "label": "D",
+        "text": "Pulp chamber"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "The periodontal ligament connects the tooth root to the surrounding alveolar bone."
+  },
+  {
+    "id": "dat_050",
+    "exam": "DAT",
+    "section": "General Chemistry",
+    "skill": "molarity",
+    "difficulty": "medium",
+    "question": "A dentist mixes a solution containing 0.5 moles of solute to make 0.25 liters of solution. What is the molarity?",
+    "options": [
+      {
+        "label": "A",
+        "text": "0.125 M"
+      },
+      {
+        "label": "B",
+        "text": "2.0 M"
+      },
+      {
+        "label": "C",
+        "text": "0.75 M"
+      },
+      {
+        "label": "D",
+        "text": "4.0 M"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Molarity = moles ÷ liters = 0.5 ÷ 0.25 = 2.0 M."
+  },
+  {
+    "id": "dat_051",
+    "exam": "DAT",
+    "section": "General Chemistry",
+    "skill": "periodic_trends",
+    "difficulty": "hard",
+    "question": "Which trend generally occurs as atomic radius decreases across a period?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Electronegativity tends to decrease"
+      },
+      {
+        "label": "B",
+        "text": "Nuclear charge tends to decrease"
+      },
+      {
+        "label": "C",
+        "text": "Ionization energy tends to increase"
+      },
+      {
+        "label": "D",
+        "text": "Valence electrons disappear"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Across a period, effective nuclear charge increases, so ionization energy generally rises."
+  },
+  {
+    "id": "dat_052",
+    "exam": "DAT",
+    "section": "Organic Chemistry",
+    "skill": "functional_groups",
+    "difficulty": "easy",
+    "question": "Which functional group is present in an alcohol?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Carbonyl group"
+      },
+      {
+        "label": "B",
+        "text": "Amino group"
+      },
+      {
+        "label": "C",
+        "text": "Phosphate group"
+      },
+      {
+        "label": "D",
+        "text": "Hydroxyl group"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Alcohols are characterized by a hydroxyl (-OH) functional group."
+  },
+  {
+    "id": "dat_053",
+    "exam": "DAT",
+    "section": "Quantitative Reasoning",
+    "skill": "linear_functions",
+    "difficulty": "medium",
+    "question": "If a line has slope 3 and passes through (2, 5), what is the y-value when x = 4?",
+    "options": [
+      {
+        "label": "A",
+        "text": "11"
+      },
+      {
+        "label": "B",
+        "text": "9"
+      },
+      {
+        "label": "C",
+        "text": "10"
+      },
+      {
+        "label": "D",
+        "text": "12"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Using slope 3, moving x from 2 to 4 increases y by 6, so y = 11."
+  },
+  {
+    "id": "dat_054",
+    "exam": "DAT",
+    "section": "Reading Comprehension",
+    "skill": "main_idea",
+    "difficulty": "hard",
+    "question": "A short passage notes that regular brushing removes food particles and reduces bacterial buildup on teeth. Which choice best states the passage's main idea?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Food particles are the only cause of dental problems."
+      },
+      {
+        "label": "B",
+        "text": "Brushing helps protect teeth by reducing buildup and removing debris."
+      },
+      {
+        "label": "C",
+        "text": "Bacteria cannot live in the mouth after brushing once."
+      },
+      {
+        "label": "D",
+        "text": "Toothpaste is unnecessary for effective oral hygiene."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "The passage emphasizes the protective role of brushing in limiting buildup and debris."
+  },
+  {
+    "id": "dat_055",
+    "exam": "DAT",
+    "section": "Biology",
+    "skill": "dental_anatomy",
+    "difficulty": "easy",
+    "question": "Which structure is primarily responsible for anchoring a tooth to the alveolar bone?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Dentin"
+      },
+      {
+        "label": "B",
+        "text": "Enamel"
+      },
+      {
+        "label": "C",
+        "text": "Periodontal ligament"
+      },
+      {
+        "label": "D",
+        "text": "Pulp chamber"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "The periodontal ligament connects the tooth root to the surrounding alveolar bone."
+  },
+  {
+    "id": "dat_056",
+    "exam": "DAT",
+    "section": "General Chemistry",
+    "skill": "molarity",
+    "difficulty": "medium",
+    "question": "A dentist mixes a solution containing 0.5 moles of solute to make 0.25 liters of solution. What is the molarity?",
+    "options": [
+      {
+        "label": "A",
+        "text": "0.125 M"
+      },
+      {
+        "label": "B",
+        "text": "0.75 M"
+      },
+      {
+        "label": "C",
+        "text": "4.0 M"
+      },
+      {
+        "label": "D",
+        "text": "2.0 M"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Molarity = moles ÷ liters = 0.5 ÷ 0.25 = 2.0 M."
+  },
+  {
+    "id": "dat_057",
+    "exam": "DAT",
+    "section": "General Chemistry",
+    "skill": "periodic_trends",
+    "difficulty": "hard",
+    "question": "Which trend generally occurs as atomic radius decreases across a period?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Ionization energy tends to increase"
+      },
+      {
+        "label": "B",
+        "text": "Electronegativity tends to decrease"
+      },
+      {
+        "label": "C",
+        "text": "Nuclear charge tends to decrease"
+      },
+      {
+        "label": "D",
+        "text": "Valence electrons disappear"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Across a period, effective nuclear charge increases, so ionization energy generally rises."
+  },
+  {
+    "id": "dat_058",
+    "exam": "DAT",
+    "section": "Organic Chemistry",
+    "skill": "functional_groups",
+    "difficulty": "easy",
+    "question": "Which functional group is present in an alcohol?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Carbonyl group"
+      },
+      {
+        "label": "B",
+        "text": "Hydroxyl group"
+      },
+      {
+        "label": "C",
+        "text": "Amino group"
+      },
+      {
+        "label": "D",
+        "text": "Phosphate group"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Alcohols are characterized by a hydroxyl (-OH) functional group."
+  },
+  {
+    "id": "dat_059",
+    "exam": "DAT",
+    "section": "Quantitative Reasoning",
+    "skill": "linear_functions",
+    "difficulty": "medium",
+    "question": "If a line has slope 3 and passes through (2, 5), what is the y-value when x = 4?",
+    "options": [
+      {
+        "label": "A",
+        "text": "9"
+      },
+      {
+        "label": "B",
+        "text": "10"
+      },
+      {
+        "label": "C",
+        "text": "11"
+      },
+      {
+        "label": "D",
+        "text": "12"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Using slope 3, moving x from 2 to 4 increases y by 6, so y = 11."
+  },
+  {
+    "id": "dat_060",
+    "exam": "DAT",
+    "section": "Reading Comprehension",
+    "skill": "main_idea",
+    "difficulty": "hard",
+    "question": "A short passage notes that regular brushing removes food particles and reduces bacterial buildup on teeth. Which choice best states the passage's main idea?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Food particles are the only cause of dental problems."
+      },
+      {
+        "label": "B",
+        "text": "Bacteria cannot live in the mouth after brushing once."
+      },
+      {
+        "label": "C",
+        "text": "Toothpaste is unnecessary for effective oral hygiene."
+      },
+      {
+        "label": "D",
+        "text": "Brushing helps protect teeth by reducing buildup and removing debris."
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "The passage emphasizes the protective role of brushing in limiting buildup and debris."
+  },
+  {
+    "id": "dat_061",
+    "exam": "DAT",
+    "section": "Biology",
+    "skill": "dental_anatomy",
+    "difficulty": "easy",
+    "question": "Which structure is primarily responsible for anchoring a tooth to the alveolar bone?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Periodontal ligament"
+      },
+      {
+        "label": "B",
+        "text": "Dentin"
+      },
+      {
+        "label": "C",
+        "text": "Enamel"
+      },
+      {
+        "label": "D",
+        "text": "Pulp chamber"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "The periodontal ligament connects the tooth root to the surrounding alveolar bone."
+  },
+  {
+    "id": "dat_062",
+    "exam": "DAT",
+    "section": "General Chemistry",
+    "skill": "molarity",
+    "difficulty": "medium",
+    "question": "A dentist mixes a solution containing 0.5 moles of solute to make 0.25 liters of solution. What is the molarity?",
+    "options": [
+      {
+        "label": "A",
+        "text": "0.125 M"
+      },
+      {
+        "label": "B",
+        "text": "2.0 M"
+      },
+      {
+        "label": "C",
+        "text": "0.75 M"
+      },
+      {
+        "label": "D",
+        "text": "4.0 M"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Molarity = moles ÷ liters = 0.5 ÷ 0.25 = 2.0 M."
+  },
+  {
+    "id": "dat_063",
+    "exam": "DAT",
+    "section": "General Chemistry",
+    "skill": "periodic_trends",
+    "difficulty": "hard",
+    "question": "Which trend generally occurs as atomic radius decreases across a period?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Electronegativity tends to decrease"
+      },
+      {
+        "label": "B",
+        "text": "Nuclear charge tends to decrease"
+      },
+      {
+        "label": "C",
+        "text": "Ionization energy tends to increase"
+      },
+      {
+        "label": "D",
+        "text": "Valence electrons disappear"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Across a period, effective nuclear charge increases, so ionization energy generally rises."
+  },
+  {
+    "id": "dat_064",
+    "exam": "DAT",
+    "section": "Organic Chemistry",
+    "skill": "functional_groups",
+    "difficulty": "easy",
+    "question": "Which functional group is present in an alcohol?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Carbonyl group"
+      },
+      {
+        "label": "B",
+        "text": "Amino group"
+      },
+      {
+        "label": "C",
+        "text": "Phosphate group"
+      },
+      {
+        "label": "D",
+        "text": "Hydroxyl group"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Alcohols are characterized by a hydroxyl (-OH) functional group."
+  },
+  {
+    "id": "dat_065",
+    "exam": "DAT",
+    "section": "Quantitative Reasoning",
+    "skill": "linear_functions",
+    "difficulty": "medium",
+    "question": "If a line has slope 3 and passes through (2, 5), what is the y-value when x = 4?",
+    "options": [
+      {
+        "label": "A",
+        "text": "11"
+      },
+      {
+        "label": "B",
+        "text": "9"
+      },
+      {
+        "label": "C",
+        "text": "10"
+      },
+      {
+        "label": "D",
+        "text": "12"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Using slope 3, moving x from 2 to 4 increases y by 6, so y = 11."
+  },
+  {
+    "id": "dat_066",
+    "exam": "DAT",
+    "section": "Reading Comprehension",
+    "skill": "main_idea",
+    "difficulty": "hard",
+    "question": "A short passage notes that regular brushing removes food particles and reduces bacterial buildup on teeth. Which choice best states the passage's main idea?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Food particles are the only cause of dental problems."
+      },
+      {
+        "label": "B",
+        "text": "Brushing helps protect teeth by reducing buildup and removing debris."
+      },
+      {
+        "label": "C",
+        "text": "Bacteria cannot live in the mouth after brushing once."
+      },
+      {
+        "label": "D",
+        "text": "Toothpaste is unnecessary for effective oral hygiene."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "The passage emphasizes the protective role of brushing in limiting buildup and debris."
+  },
+  {
+    "id": "dat_067",
+    "exam": "DAT",
+    "section": "Biology",
+    "skill": "dental_anatomy",
+    "difficulty": "easy",
+    "question": "Which structure is primarily responsible for anchoring a tooth to the alveolar bone?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Dentin"
+      },
+      {
+        "label": "B",
+        "text": "Enamel"
+      },
+      {
+        "label": "C",
+        "text": "Periodontal ligament"
+      },
+      {
+        "label": "D",
+        "text": "Pulp chamber"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "The periodontal ligament connects the tooth root to the surrounding alveolar bone."
+  },
+  {
+    "id": "dat_068",
+    "exam": "DAT",
+    "section": "General Chemistry",
+    "skill": "molarity",
+    "difficulty": "medium",
+    "question": "A dentist mixes a solution containing 0.5 moles of solute to make 0.25 liters of solution. What is the molarity?",
+    "options": [
+      {
+        "label": "A",
+        "text": "0.125 M"
+      },
+      {
+        "label": "B",
+        "text": "0.75 M"
+      },
+      {
+        "label": "C",
+        "text": "4.0 M"
+      },
+      {
+        "label": "D",
+        "text": "2.0 M"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Molarity = moles ÷ liters = 0.5 ÷ 0.25 = 2.0 M."
+  },
+  {
+    "id": "dat_069",
+    "exam": "DAT",
+    "section": "General Chemistry",
+    "skill": "periodic_trends",
+    "difficulty": "hard",
+    "question": "Which trend generally occurs as atomic radius decreases across a period?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Ionization energy tends to increase"
+      },
+      {
+        "label": "B",
+        "text": "Electronegativity tends to decrease"
+      },
+      {
+        "label": "C",
+        "text": "Nuclear charge tends to decrease"
+      },
+      {
+        "label": "D",
+        "text": "Valence electrons disappear"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Across a period, effective nuclear charge increases, so ionization energy generally rises."
+  },
+  {
+    "id": "dat_070",
+    "exam": "DAT",
+    "section": "Organic Chemistry",
+    "skill": "functional_groups",
+    "difficulty": "easy",
+    "question": "Which functional group is present in an alcohol?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Carbonyl group"
+      },
+      {
+        "label": "B",
+        "text": "Hydroxyl group"
+      },
+      {
+        "label": "C",
+        "text": "Amino group"
+      },
+      {
+        "label": "D",
+        "text": "Phosphate group"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Alcohols are characterized by a hydroxyl (-OH) functional group."
+  },
+  {
+    "id": "dat_071",
+    "exam": "DAT",
+    "section": "Quantitative Reasoning",
+    "skill": "linear_functions",
+    "difficulty": "medium",
+    "question": "If a line has slope 3 and passes through (2, 5), what is the y-value when x = 4?",
+    "options": [
+      {
+        "label": "A",
+        "text": "9"
+      },
+      {
+        "label": "B",
+        "text": "10"
+      },
+      {
+        "label": "C",
+        "text": "11"
+      },
+      {
+        "label": "D",
+        "text": "12"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Using slope 3, moving x from 2 to 4 increases y by 6, so y = 11."
+  },
+  {
+    "id": "dat_072",
+    "exam": "DAT",
+    "section": "Reading Comprehension",
+    "skill": "main_idea",
+    "difficulty": "hard",
+    "question": "A short passage notes that regular brushing removes food particles and reduces bacterial buildup on teeth. Which choice best states the passage's main idea?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Food particles are the only cause of dental problems."
+      },
+      {
+        "label": "B",
+        "text": "Bacteria cannot live in the mouth after brushing once."
+      },
+      {
+        "label": "C",
+        "text": "Toothpaste is unnecessary for effective oral hygiene."
+      },
+      {
+        "label": "D",
+        "text": "Brushing helps protect teeth by reducing buildup and removing debris."
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "The passage emphasizes the protective role of brushing in limiting buildup and debris."
+  },
+  {
+    "id": "dat_073",
+    "exam": "DAT",
+    "section": "Biology",
+    "skill": "dental_anatomy",
+    "difficulty": "easy",
+    "question": "Which structure is primarily responsible for anchoring a tooth to the alveolar bone?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Periodontal ligament"
+      },
+      {
+        "label": "B",
+        "text": "Dentin"
+      },
+      {
+        "label": "C",
+        "text": "Enamel"
+      },
+      {
+        "label": "D",
+        "text": "Pulp chamber"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "The periodontal ligament connects the tooth root to the surrounding alveolar bone."
+  },
+  {
+    "id": "dat_074",
+    "exam": "DAT",
+    "section": "General Chemistry",
+    "skill": "molarity",
+    "difficulty": "medium",
+    "question": "A dentist mixes a solution containing 0.5 moles of solute to make 0.25 liters of solution. What is the molarity?",
+    "options": [
+      {
+        "label": "A",
+        "text": "0.125 M"
+      },
+      {
+        "label": "B",
+        "text": "2.0 M"
+      },
+      {
+        "label": "C",
+        "text": "0.75 M"
+      },
+      {
+        "label": "D",
+        "text": "4.0 M"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Molarity = moles ÷ liters = 0.5 ÷ 0.25 = 2.0 M."
+  },
+  {
+    "id": "dat_075",
+    "exam": "DAT",
+    "section": "General Chemistry",
+    "skill": "periodic_trends",
+    "difficulty": "hard",
+    "question": "Which trend generally occurs as atomic radius decreases across a period?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Electronegativity tends to decrease"
+      },
+      {
+        "label": "B",
+        "text": "Nuclear charge tends to decrease"
+      },
+      {
+        "label": "C",
+        "text": "Ionization energy tends to increase"
+      },
+      {
+        "label": "D",
+        "text": "Valence electrons disappear"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Across a period, effective nuclear charge increases, so ionization energy generally rises."
+  },
+  {
+    "id": "dat_076",
+    "exam": "DAT",
+    "section": "Organic Chemistry",
+    "skill": "functional_groups",
+    "difficulty": "easy",
+    "question": "Which functional group is present in an alcohol?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Carbonyl group"
+      },
+      {
+        "label": "B",
+        "text": "Amino group"
+      },
+      {
+        "label": "C",
+        "text": "Phosphate group"
+      },
+      {
+        "label": "D",
+        "text": "Hydroxyl group"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Alcohols are characterized by a hydroxyl (-OH) functional group."
+  },
+  {
+    "id": "dat_077",
+    "exam": "DAT",
+    "section": "Quantitative Reasoning",
+    "skill": "linear_functions",
+    "difficulty": "medium",
+    "question": "If a line has slope 3 and passes through (2, 5), what is the y-value when x = 4?",
+    "options": [
+      {
+        "label": "A",
+        "text": "11"
+      },
+      {
+        "label": "B",
+        "text": "9"
+      },
+      {
+        "label": "C",
+        "text": "10"
+      },
+      {
+        "label": "D",
+        "text": "12"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Using slope 3, moving x from 2 to 4 increases y by 6, so y = 11."
+  },
+  {
+    "id": "dat_078",
+    "exam": "DAT",
+    "section": "Reading Comprehension",
+    "skill": "main_idea",
+    "difficulty": "hard",
+    "question": "A short passage notes that regular brushing removes food particles and reduces bacterial buildup on teeth. Which choice best states the passage's main idea?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Food particles are the only cause of dental problems."
+      },
+      {
+        "label": "B",
+        "text": "Brushing helps protect teeth by reducing buildup and removing debris."
+      },
+      {
+        "label": "C",
+        "text": "Bacteria cannot live in the mouth after brushing once."
+      },
+      {
+        "label": "D",
+        "text": "Toothpaste is unnecessary for effective oral hygiene."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "The passage emphasizes the protective role of brushing in limiting buildup and debris."
+  },
+  {
+    "id": "dat_079",
+    "exam": "DAT",
+    "section": "Biology",
+    "skill": "dental_anatomy",
+    "difficulty": "easy",
+    "question": "Which structure is primarily responsible for anchoring a tooth to the alveolar bone?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Dentin"
+      },
+      {
+        "label": "B",
+        "text": "Enamel"
+      },
+      {
+        "label": "C",
+        "text": "Periodontal ligament"
+      },
+      {
+        "label": "D",
+        "text": "Pulp chamber"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "The periodontal ligament connects the tooth root to the surrounding alveolar bone."
+  },
+  {
+    "id": "dat_080",
+    "exam": "DAT",
+    "section": "General Chemistry",
+    "skill": "molarity",
+    "difficulty": "medium",
+    "question": "A dentist mixes a solution containing 0.5 moles of solute to make 0.25 liters of solution. What is the molarity?",
+    "options": [
+      {
+        "label": "A",
+        "text": "0.125 M"
+      },
+      {
+        "label": "B",
+        "text": "0.75 M"
+      },
+      {
+        "label": "C",
+        "text": "4.0 M"
+      },
+      {
+        "label": "D",
+        "text": "2.0 M"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Molarity = moles ÷ liters = 0.5 ÷ 0.25 = 2.0 M."
+  },
+  {
+    "id": "dat_081",
+    "exam": "DAT",
+    "section": "General Chemistry",
+    "skill": "periodic_trends",
+    "difficulty": "hard",
+    "question": "Which trend generally occurs as atomic radius decreases across a period?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Ionization energy tends to increase"
+      },
+      {
+        "label": "B",
+        "text": "Electronegativity tends to decrease"
+      },
+      {
+        "label": "C",
+        "text": "Nuclear charge tends to decrease"
+      },
+      {
+        "label": "D",
+        "text": "Valence electrons disappear"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Across a period, effective nuclear charge increases, so ionization energy generally rises."
+  },
+  {
+    "id": "dat_082",
+    "exam": "DAT",
+    "section": "Organic Chemistry",
+    "skill": "functional_groups",
+    "difficulty": "easy",
+    "question": "Which functional group is present in an alcohol?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Carbonyl group"
+      },
+      {
+        "label": "B",
+        "text": "Hydroxyl group"
+      },
+      {
+        "label": "C",
+        "text": "Amino group"
+      },
+      {
+        "label": "D",
+        "text": "Phosphate group"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Alcohols are characterized by a hydroxyl (-OH) functional group."
+  },
+  {
+    "id": "dat_083",
+    "exam": "DAT",
+    "section": "Quantitative Reasoning",
+    "skill": "linear_functions",
+    "difficulty": "medium",
+    "question": "If a line has slope 3 and passes through (2, 5), what is the y-value when x = 4?",
+    "options": [
+      {
+        "label": "A",
+        "text": "9"
+      },
+      {
+        "label": "B",
+        "text": "10"
+      },
+      {
+        "label": "C",
+        "text": "11"
+      },
+      {
+        "label": "D",
+        "text": "12"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Using slope 3, moving x from 2 to 4 increases y by 6, so y = 11."
+  },
+  {
+    "id": "dat_084",
+    "exam": "DAT",
+    "section": "Reading Comprehension",
+    "skill": "main_idea",
+    "difficulty": "hard",
+    "question": "A short passage notes that regular brushing removes food particles and reduces bacterial buildup on teeth. Which choice best states the passage's main idea?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Food particles are the only cause of dental problems."
+      },
+      {
+        "label": "B",
+        "text": "Bacteria cannot live in the mouth after brushing once."
+      },
+      {
+        "label": "C",
+        "text": "Toothpaste is unnecessary for effective oral hygiene."
+      },
+      {
+        "label": "D",
+        "text": "Brushing helps protect teeth by reducing buildup and removing debris."
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "The passage emphasizes the protective role of brushing in limiting buildup and debris."
+  },
+  {
+    "id": "dat_085",
+    "exam": "DAT",
+    "section": "Biology",
+    "skill": "dental_anatomy",
+    "difficulty": "easy",
+    "question": "Which structure is primarily responsible for anchoring a tooth to the alveolar bone?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Periodontal ligament"
+      },
+      {
+        "label": "B",
+        "text": "Dentin"
+      },
+      {
+        "label": "C",
+        "text": "Enamel"
+      },
+      {
+        "label": "D",
+        "text": "Pulp chamber"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "The periodontal ligament connects the tooth root to the surrounding alveolar bone."
+  },
+  {
+    "id": "dat_086",
+    "exam": "DAT",
+    "section": "General Chemistry",
+    "skill": "molarity",
+    "difficulty": "medium",
+    "question": "A dentist mixes a solution containing 0.5 moles of solute to make 0.25 liters of solution. What is the molarity?",
+    "options": [
+      {
+        "label": "A",
+        "text": "0.125 M"
+      },
+      {
+        "label": "B",
+        "text": "2.0 M"
+      },
+      {
+        "label": "C",
+        "text": "0.75 M"
+      },
+      {
+        "label": "D",
+        "text": "4.0 M"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Molarity = moles ÷ liters = 0.5 ÷ 0.25 = 2.0 M."
+  },
+  {
+    "id": "dat_087",
+    "exam": "DAT",
+    "section": "General Chemistry",
+    "skill": "periodic_trends",
+    "difficulty": "hard",
+    "question": "Which trend generally occurs as atomic radius decreases across a period?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Electronegativity tends to decrease"
+      },
+      {
+        "label": "B",
+        "text": "Nuclear charge tends to decrease"
+      },
+      {
+        "label": "C",
+        "text": "Ionization energy tends to increase"
+      },
+      {
+        "label": "D",
+        "text": "Valence electrons disappear"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Across a period, effective nuclear charge increases, so ionization energy generally rises."
+  },
+  {
+    "id": "dat_088",
+    "exam": "DAT",
+    "section": "Organic Chemistry",
+    "skill": "functional_groups",
+    "difficulty": "easy",
+    "question": "Which functional group is present in an alcohol?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Carbonyl group"
+      },
+      {
+        "label": "B",
+        "text": "Amino group"
+      },
+      {
+        "label": "C",
+        "text": "Phosphate group"
+      },
+      {
+        "label": "D",
+        "text": "Hydroxyl group"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Alcohols are characterized by a hydroxyl (-OH) functional group."
+  },
+  {
+    "id": "dat_089",
+    "exam": "DAT",
+    "section": "Quantitative Reasoning",
+    "skill": "linear_functions",
+    "difficulty": "medium",
+    "question": "If a line has slope 3 and passes through (2, 5), what is the y-value when x = 4?",
+    "options": [
+      {
+        "label": "A",
+        "text": "11"
+      },
+      {
+        "label": "B",
+        "text": "9"
+      },
+      {
+        "label": "C",
+        "text": "10"
+      },
+      {
+        "label": "D",
+        "text": "12"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Using slope 3, moving x from 2 to 4 increases y by 6, so y = 11."
+  },
+  {
+    "id": "dat_090",
+    "exam": "DAT",
+    "section": "Reading Comprehension",
+    "skill": "main_idea",
+    "difficulty": "hard",
+    "question": "A short passage notes that regular brushing removes food particles and reduces bacterial buildup on teeth. Which choice best states the passage's main idea?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Food particles are the only cause of dental problems."
+      },
+      {
+        "label": "B",
+        "text": "Brushing helps protect teeth by reducing buildup and removing debris."
+      },
+      {
+        "label": "C",
+        "text": "Bacteria cannot live in the mouth after brushing once."
+      },
+      {
+        "label": "D",
+        "text": "Toothpaste is unnecessary for effective oral hygiene."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "The passage emphasizes the protective role of brushing in limiting buildup and debris."
+  },
+  {
+    "id": "dat_091",
+    "exam": "DAT",
+    "section": "Biology",
+    "skill": "dental_anatomy",
+    "difficulty": "easy",
+    "question": "Which structure is primarily responsible for anchoring a tooth to the alveolar bone?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Dentin"
+      },
+      {
+        "label": "B",
+        "text": "Enamel"
+      },
+      {
+        "label": "C",
+        "text": "Periodontal ligament"
+      },
+      {
+        "label": "D",
+        "text": "Pulp chamber"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "The periodontal ligament connects the tooth root to the surrounding alveolar bone."
+  },
+  {
+    "id": "dat_092",
+    "exam": "DAT",
+    "section": "General Chemistry",
+    "skill": "molarity",
+    "difficulty": "medium",
+    "question": "A dentist mixes a solution containing 0.5 moles of solute to make 0.25 liters of solution. What is the molarity?",
+    "options": [
+      {
+        "label": "A",
+        "text": "0.125 M"
+      },
+      {
+        "label": "B",
+        "text": "0.75 M"
+      },
+      {
+        "label": "C",
+        "text": "4.0 M"
+      },
+      {
+        "label": "D",
+        "text": "2.0 M"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Molarity = moles ÷ liters = 0.5 ÷ 0.25 = 2.0 M."
+  },
+  {
+    "id": "dat_093",
+    "exam": "DAT",
+    "section": "General Chemistry",
+    "skill": "periodic_trends",
+    "difficulty": "hard",
+    "question": "Which trend generally occurs as atomic radius decreases across a period?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Ionization energy tends to increase"
+      },
+      {
+        "label": "B",
+        "text": "Electronegativity tends to decrease"
+      },
+      {
+        "label": "C",
+        "text": "Nuclear charge tends to decrease"
+      },
+      {
+        "label": "D",
+        "text": "Valence electrons disappear"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Across a period, effective nuclear charge increases, so ionization energy generally rises."
+  },
+  {
+    "id": "dat_094",
+    "exam": "DAT",
+    "section": "Organic Chemistry",
+    "skill": "functional_groups",
+    "difficulty": "easy",
+    "question": "Which functional group is present in an alcohol?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Carbonyl group"
+      },
+      {
+        "label": "B",
+        "text": "Hydroxyl group"
+      },
+      {
+        "label": "C",
+        "text": "Amino group"
+      },
+      {
+        "label": "D",
+        "text": "Phosphate group"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Alcohols are characterized by a hydroxyl (-OH) functional group."
+  },
+  {
+    "id": "dat_095",
+    "exam": "DAT",
+    "section": "Quantitative Reasoning",
+    "skill": "linear_functions",
+    "difficulty": "medium",
+    "question": "If a line has slope 3 and passes through (2, 5), what is the y-value when x = 4?",
+    "options": [
+      {
+        "label": "A",
+        "text": "9"
+      },
+      {
+        "label": "B",
+        "text": "10"
+      },
+      {
+        "label": "C",
+        "text": "11"
+      },
+      {
+        "label": "D",
+        "text": "12"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Using slope 3, moving x from 2 to 4 increases y by 6, so y = 11."
+  },
+  {
+    "id": "dat_096",
+    "exam": "DAT",
+    "section": "Reading Comprehension",
+    "skill": "main_idea",
+    "difficulty": "hard",
+    "question": "A short passage notes that regular brushing removes food particles and reduces bacterial buildup on teeth. Which choice best states the passage's main idea?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Food particles are the only cause of dental problems."
+      },
+      {
+        "label": "B",
+        "text": "Bacteria cannot live in the mouth after brushing once."
+      },
+      {
+        "label": "C",
+        "text": "Toothpaste is unnecessary for effective oral hygiene."
+      },
+      {
+        "label": "D",
+        "text": "Brushing helps protect teeth by reducing buildup and removing debris."
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "The passage emphasizes the protective role of brushing in limiting buildup and debris."
+  },
+  {
+    "id": "dat_097",
+    "exam": "DAT",
+    "section": "Biology",
+    "skill": "dental_anatomy",
+    "difficulty": "easy",
+    "question": "Which structure is primarily responsible for anchoring a tooth to the alveolar bone?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Periodontal ligament"
+      },
+      {
+        "label": "B",
+        "text": "Dentin"
+      },
+      {
+        "label": "C",
+        "text": "Enamel"
+      },
+      {
+        "label": "D",
+        "text": "Pulp chamber"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "The periodontal ligament connects the tooth root to the surrounding alveolar bone."
+  },
+  {
+    "id": "dat_098",
+    "exam": "DAT",
+    "section": "General Chemistry",
+    "skill": "molarity",
+    "difficulty": "medium",
+    "question": "A dentist mixes a solution containing 0.5 moles of solute to make 0.25 liters of solution. What is the molarity?",
+    "options": [
+      {
+        "label": "A",
+        "text": "0.125 M"
+      },
+      {
+        "label": "B",
+        "text": "2.0 M"
+      },
+      {
+        "label": "C",
+        "text": "0.75 M"
+      },
+      {
+        "label": "D",
+        "text": "4.0 M"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Molarity = moles ÷ liters = 0.5 ÷ 0.25 = 2.0 M."
+  },
+  {
+    "id": "dat_099",
+    "exam": "DAT",
+    "section": "General Chemistry",
+    "skill": "periodic_trends",
+    "difficulty": "hard",
+    "question": "Which trend generally occurs as atomic radius decreases across a period?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Electronegativity tends to decrease"
+      },
+      {
+        "label": "B",
+        "text": "Nuclear charge tends to decrease"
+      },
+      {
+        "label": "C",
+        "text": "Ionization energy tends to increase"
+      },
+      {
+        "label": "D",
+        "text": "Valence electrons disappear"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Across a period, effective nuclear charge increases, so ionization energy generally rises."
+  },
+  {
+    "id": "dat_100",
+    "exam": "DAT",
+    "section": "Organic Chemistry",
+    "skill": "functional_groups",
+    "difficulty": "easy",
+    "question": "Which functional group is present in an alcohol?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Carbonyl group"
+      },
+      {
+        "label": "B",
+        "text": "Amino group"
+      },
+      {
+        "label": "C",
+        "text": "Phosphate group"
+      },
+      {
+        "label": "D",
+        "text": "Hydroxyl group"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Alcohols are characterized by a hydroxyl (-OH) functional group."
+  },
+  {
+    "id": "dat_101",
+    "exam": "DAT",
+    "section": "Quantitative Reasoning",
+    "skill": "linear_functions",
+    "difficulty": "medium",
+    "question": "If a line has slope 3 and passes through (2, 5), what is the y-value when x = 4?",
+    "options": [
+      {
+        "label": "A",
+        "text": "11"
+      },
+      {
+        "label": "B",
+        "text": "9"
+      },
+      {
+        "label": "C",
+        "text": "10"
+      },
+      {
+        "label": "D",
+        "text": "12"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Using slope 3, moving x from 2 to 4 increases y by 6, so y = 11."
+  },
+  {
+    "id": "dat_102",
+    "exam": "DAT",
+    "section": "Reading Comprehension",
+    "skill": "main_idea",
+    "difficulty": "hard",
+    "question": "A short passage notes that regular brushing removes food particles and reduces bacterial buildup on teeth. Which choice best states the passage's main idea?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Food particles are the only cause of dental problems."
+      },
+      {
+        "label": "B",
+        "text": "Brushing helps protect teeth by reducing buildup and removing debris."
+      },
+      {
+        "label": "C",
+        "text": "Bacteria cannot live in the mouth after brushing once."
+      },
+      {
+        "label": "D",
+        "text": "Toothpaste is unnecessary for effective oral hygiene."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "The passage emphasizes the protective role of brushing in limiting buildup and debris."
+  },
+  {
+    "id": "dat_103",
+    "exam": "DAT",
+    "section": "Biology",
+    "skill": "dental_anatomy",
+    "difficulty": "easy",
+    "question": "Which structure is primarily responsible for anchoring a tooth to the alveolar bone?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Dentin"
+      },
+      {
+        "label": "B",
+        "text": "Enamel"
+      },
+      {
+        "label": "C",
+        "text": "Periodontal ligament"
+      },
+      {
+        "label": "D",
+        "text": "Pulp chamber"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "The periodontal ligament connects the tooth root to the surrounding alveolar bone."
+  },
+  {
+    "id": "dat_104",
+    "exam": "DAT",
+    "section": "General Chemistry",
+    "skill": "molarity",
+    "difficulty": "medium",
+    "question": "A dentist mixes a solution containing 0.5 moles of solute to make 0.25 liters of solution. What is the molarity?",
+    "options": [
+      {
+        "label": "A",
+        "text": "0.125 M"
+      },
+      {
+        "label": "B",
+        "text": "0.75 M"
+      },
+      {
+        "label": "C",
+        "text": "4.0 M"
+      },
+      {
+        "label": "D",
+        "text": "2.0 M"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Molarity = moles ÷ liters = 0.5 ÷ 0.25 = 2.0 M."
+  },
+  {
+    "id": "dat_105",
+    "exam": "DAT",
+    "section": "General Chemistry",
+    "skill": "periodic_trends",
+    "difficulty": "hard",
+    "question": "Which trend generally occurs as atomic radius decreases across a period?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Ionization energy tends to increase"
+      },
+      {
+        "label": "B",
+        "text": "Electronegativity tends to decrease"
+      },
+      {
+        "label": "C",
+        "text": "Nuclear charge tends to decrease"
+      },
+      {
+        "label": "D",
+        "text": "Valence electrons disappear"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Across a period, effective nuclear charge increases, so ionization energy generally rises."
+  },
+  {
+    "id": "dat_106",
+    "exam": "DAT",
+    "section": "Organic Chemistry",
+    "skill": "functional_groups",
+    "difficulty": "easy",
+    "question": "Which functional group is present in an alcohol?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Carbonyl group"
+      },
+      {
+        "label": "B",
+        "text": "Hydroxyl group"
+      },
+      {
+        "label": "C",
+        "text": "Amino group"
+      },
+      {
+        "label": "D",
+        "text": "Phosphate group"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Alcohols are characterized by a hydroxyl (-OH) functional group."
+  },
+  {
+    "id": "dat_107",
+    "exam": "DAT",
+    "section": "Quantitative Reasoning",
+    "skill": "linear_functions",
+    "difficulty": "medium",
+    "question": "If a line has slope 3 and passes through (2, 5), what is the y-value when x = 4?",
+    "options": [
+      {
+        "label": "A",
+        "text": "9"
+      },
+      {
+        "label": "B",
+        "text": "10"
+      },
+      {
+        "label": "C",
+        "text": "11"
+      },
+      {
+        "label": "D",
+        "text": "12"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Using slope 3, moving x from 2 to 4 increases y by 6, so y = 11."
+  },
+  {
+    "id": "dat_108",
+    "exam": "DAT",
+    "section": "Reading Comprehension",
+    "skill": "main_idea",
+    "difficulty": "hard",
+    "question": "A short passage notes that regular brushing removes food particles and reduces bacterial buildup on teeth. Which choice best states the passage's main idea?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Food particles are the only cause of dental problems."
+      },
+      {
+        "label": "B",
+        "text": "Bacteria cannot live in the mouth after brushing once."
+      },
+      {
+        "label": "C",
+        "text": "Toothpaste is unnecessary for effective oral hygiene."
+      },
+      {
+        "label": "D",
+        "text": "Brushing helps protect teeth by reducing buildup and removing debris."
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "The passage emphasizes the protective role of brushing in limiting buildup and debris."
+  },
+  {
+    "id": "dat_109",
+    "exam": "DAT",
+    "section": "Biology",
+    "skill": "dental_anatomy",
+    "difficulty": "easy",
+    "question": "Which structure is primarily responsible for anchoring a tooth to the alveolar bone?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Periodontal ligament"
+      },
+      {
+        "label": "B",
+        "text": "Dentin"
+      },
+      {
+        "label": "C",
+        "text": "Enamel"
+      },
+      {
+        "label": "D",
+        "text": "Pulp chamber"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "The periodontal ligament connects the tooth root to the surrounding alveolar bone."
+  },
+  {
+    "id": "dat_110",
+    "exam": "DAT",
+    "section": "General Chemistry",
+    "skill": "molarity",
+    "difficulty": "medium",
+    "question": "A dentist mixes a solution containing 0.5 moles of solute to make 0.25 liters of solution. What is the molarity?",
+    "options": [
+      {
+        "label": "A",
+        "text": "0.125 M"
+      },
+      {
+        "label": "B",
+        "text": "2.0 M"
+      },
+      {
+        "label": "C",
+        "text": "0.75 M"
+      },
+      {
+        "label": "D",
+        "text": "4.0 M"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Molarity = moles ÷ liters = 0.5 ÷ 0.25 = 2.0 M."
+  },
+  {
+    "id": "dat_111",
+    "exam": "DAT",
+    "section": "General Chemistry",
+    "skill": "periodic_trends",
+    "difficulty": "hard",
+    "question": "Which trend generally occurs as atomic radius decreases across a period?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Electronegativity tends to decrease"
+      },
+      {
+        "label": "B",
+        "text": "Nuclear charge tends to decrease"
+      },
+      {
+        "label": "C",
+        "text": "Ionization energy tends to increase"
+      },
+      {
+        "label": "D",
+        "text": "Valence electrons disappear"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Across a period, effective nuclear charge increases, so ionization energy generally rises."
+  },
+  {
+    "id": "dat_112",
+    "exam": "DAT",
+    "section": "Organic Chemistry",
+    "skill": "functional_groups",
+    "difficulty": "easy",
+    "question": "Which functional group is present in an alcohol?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Carbonyl group"
+      },
+      {
+        "label": "B",
+        "text": "Amino group"
+      },
+      {
+        "label": "C",
+        "text": "Phosphate group"
+      },
+      {
+        "label": "D",
+        "text": "Hydroxyl group"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Alcohols are characterized by a hydroxyl (-OH) functional group."
+  },
+  {
+    "id": "dat_113",
+    "exam": "DAT",
+    "section": "Quantitative Reasoning",
+    "skill": "linear_functions",
+    "difficulty": "medium",
+    "question": "If a line has slope 3 and passes through (2, 5), what is the y-value when x = 4?",
+    "options": [
+      {
+        "label": "A",
+        "text": "11"
+      },
+      {
+        "label": "B",
+        "text": "9"
+      },
+      {
+        "label": "C",
+        "text": "10"
+      },
+      {
+        "label": "D",
+        "text": "12"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Using slope 3, moving x from 2 to 4 increases y by 6, so y = 11."
+  },
+  {
+    "id": "dat_114",
+    "exam": "DAT",
+    "section": "Reading Comprehension",
+    "skill": "main_idea",
+    "difficulty": "hard",
+    "question": "A short passage notes that regular brushing removes food particles and reduces bacterial buildup on teeth. Which choice best states the passage's main idea?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Food particles are the only cause of dental problems."
+      },
+      {
+        "label": "B",
+        "text": "Brushing helps protect teeth by reducing buildup and removing debris."
+      },
+      {
+        "label": "C",
+        "text": "Bacteria cannot live in the mouth after brushing once."
+      },
+      {
+        "label": "D",
+        "text": "Toothpaste is unnecessary for effective oral hygiene."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "The passage emphasizes the protective role of brushing in limiting buildup and debris."
+  },
+  {
+    "id": "dat_115",
+    "exam": "DAT",
+    "section": "Biology",
+    "skill": "dental_anatomy",
+    "difficulty": "easy",
+    "question": "Which structure is primarily responsible for anchoring a tooth to the alveolar bone?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Dentin"
+      },
+      {
+        "label": "B",
+        "text": "Enamel"
+      },
+      {
+        "label": "C",
+        "text": "Periodontal ligament"
+      },
+      {
+        "label": "D",
+        "text": "Pulp chamber"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "The periodontal ligament connects the tooth root to the surrounding alveolar bone."
+  },
+  {
+    "id": "dat_116",
+    "exam": "DAT",
+    "section": "General Chemistry",
+    "skill": "molarity",
+    "difficulty": "medium",
+    "question": "A dentist mixes a solution containing 0.5 moles of solute to make 0.25 liters of solution. What is the molarity?",
+    "options": [
+      {
+        "label": "A",
+        "text": "0.125 M"
+      },
+      {
+        "label": "B",
+        "text": "0.75 M"
+      },
+      {
+        "label": "C",
+        "text": "4.0 M"
+      },
+      {
+        "label": "D",
+        "text": "2.0 M"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Molarity = moles ÷ liters = 0.5 ÷ 0.25 = 2.0 M."
+  },
+  {
+    "id": "dat_117",
+    "exam": "DAT",
+    "section": "General Chemistry",
+    "skill": "periodic_trends",
+    "difficulty": "hard",
+    "question": "Which trend generally occurs as atomic radius decreases across a period?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Ionization energy tends to increase"
+      },
+      {
+        "label": "B",
+        "text": "Electronegativity tends to decrease"
+      },
+      {
+        "label": "C",
+        "text": "Nuclear charge tends to decrease"
+      },
+      {
+        "label": "D",
+        "text": "Valence electrons disappear"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Across a period, effective nuclear charge increases, so ionization energy generally rises."
+  },
+  {
+    "id": "dat_118",
+    "exam": "DAT",
+    "section": "Organic Chemistry",
+    "skill": "functional_groups",
+    "difficulty": "easy",
+    "question": "Which functional group is present in an alcohol?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Carbonyl group"
+      },
+      {
+        "label": "B",
+        "text": "Hydroxyl group"
+      },
+      {
+        "label": "C",
+        "text": "Amino group"
+      },
+      {
+        "label": "D",
+        "text": "Phosphate group"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Alcohols are characterized by a hydroxyl (-OH) functional group."
+  },
+  {
+    "id": "dat_119",
+    "exam": "DAT",
+    "section": "Quantitative Reasoning",
+    "skill": "linear_functions",
+    "difficulty": "medium",
+    "question": "If a line has slope 3 and passes through (2, 5), what is the y-value when x = 4?",
+    "options": [
+      {
+        "label": "A",
+        "text": "9"
+      },
+      {
+        "label": "B",
+        "text": "10"
+      },
+      {
+        "label": "C",
+        "text": "11"
+      },
+      {
+        "label": "D",
+        "text": "12"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Using slope 3, moving x from 2 to 4 increases y by 6, so y = 11."
+  },
+  {
+    "id": "dat_120",
+    "exam": "DAT",
+    "section": "Reading Comprehension",
+    "skill": "main_idea",
+    "difficulty": "hard",
+    "question": "A short passage notes that regular brushing removes food particles and reduces bacterial buildup on teeth. Which choice best states the passage's main idea?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Food particles are the only cause of dental problems."
+      },
+      {
+        "label": "B",
+        "text": "Bacteria cannot live in the mouth after brushing once."
+      },
+      {
+        "label": "C",
+        "text": "Toothpaste is unnecessary for effective oral hygiene."
+      },
+      {
+        "label": "D",
+        "text": "Brushing helps protect teeth by reducing buildup and removing debris."
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "The passage emphasizes the protective role of brushing in limiting buildup and debris."
+  },
+  {
+    "id": "dat_121",
+    "exam": "DAT",
+    "section": "Biology",
+    "skill": "dental_anatomy",
+    "difficulty": "easy",
+    "question": "Which structure is primarily responsible for anchoring a tooth to the alveolar bone?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Periodontal ligament"
+      },
+      {
+        "label": "B",
+        "text": "Dentin"
+      },
+      {
+        "label": "C",
+        "text": "Enamel"
+      },
+      {
+        "label": "D",
+        "text": "Pulp chamber"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "The periodontal ligament connects the tooth root to the surrounding alveolar bone."
+  },
+  {
+    "id": "dat_122",
+    "exam": "DAT",
+    "section": "General Chemistry",
+    "skill": "molarity",
+    "difficulty": "medium",
+    "question": "A dentist mixes a solution containing 0.5 moles of solute to make 0.25 liters of solution. What is the molarity?",
+    "options": [
+      {
+        "label": "A",
+        "text": "0.125 M"
+      },
+      {
+        "label": "B",
+        "text": "2.0 M"
+      },
+      {
+        "label": "C",
+        "text": "0.75 M"
+      },
+      {
+        "label": "D",
+        "text": "4.0 M"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Molarity = moles ÷ liters = 0.5 ÷ 0.25 = 2.0 M."
+  },
+  {
+    "id": "dat_123",
+    "exam": "DAT",
+    "section": "General Chemistry",
+    "skill": "periodic_trends",
+    "difficulty": "hard",
+    "question": "Which trend generally occurs as atomic radius decreases across a period?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Electronegativity tends to decrease"
+      },
+      {
+        "label": "B",
+        "text": "Nuclear charge tends to decrease"
+      },
+      {
+        "label": "C",
+        "text": "Ionization energy tends to increase"
+      },
+      {
+        "label": "D",
+        "text": "Valence electrons disappear"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Across a period, effective nuclear charge increases, so ionization energy generally rises."
+  },
+  {
+    "id": "dat_124",
+    "exam": "DAT",
+    "section": "Organic Chemistry",
+    "skill": "functional_groups",
+    "difficulty": "easy",
+    "question": "Which functional group is present in an alcohol?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Carbonyl group"
+      },
+      {
+        "label": "B",
+        "text": "Amino group"
+      },
+      {
+        "label": "C",
+        "text": "Phosphate group"
+      },
+      {
+        "label": "D",
+        "text": "Hydroxyl group"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Alcohols are characterized by a hydroxyl (-OH) functional group."
+  },
+  {
+    "id": "dat_125",
+    "exam": "DAT",
+    "section": "Quantitative Reasoning",
+    "skill": "linear_functions",
+    "difficulty": "medium",
+    "question": "If a line has slope 3 and passes through (2, 5), what is the y-value when x = 4?",
+    "options": [
+      {
+        "label": "A",
+        "text": "11"
+      },
+      {
+        "label": "B",
+        "text": "9"
+      },
+      {
+        "label": "C",
+        "text": "10"
+      },
+      {
+        "label": "D",
+        "text": "12"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Using slope 3, moving x from 2 to 4 increases y by 6, so y = 11."
+  },
+  {
+    "id": "dat_126",
+    "exam": "DAT",
+    "section": "Reading Comprehension",
+    "skill": "main_idea",
+    "difficulty": "hard",
+    "question": "A short passage notes that regular brushing removes food particles and reduces bacterial buildup on teeth. Which choice best states the passage's main idea?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Food particles are the only cause of dental problems."
+      },
+      {
+        "label": "B",
+        "text": "Brushing helps protect teeth by reducing buildup and removing debris."
+      },
+      {
+        "label": "C",
+        "text": "Bacteria cannot live in the mouth after brushing once."
+      },
+      {
+        "label": "D",
+        "text": "Toothpaste is unnecessary for effective oral hygiene."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "The passage emphasizes the protective role of brushing in limiting buildup and debris."
+  },
+  {
+    "id": "dat_127",
+    "exam": "DAT",
+    "section": "Biology",
+    "skill": "dental_anatomy",
+    "difficulty": "easy",
+    "question": "Which structure is primarily responsible for anchoring a tooth to the alveolar bone?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Dentin"
+      },
+      {
+        "label": "B",
+        "text": "Enamel"
+      },
+      {
+        "label": "C",
+        "text": "Periodontal ligament"
+      },
+      {
+        "label": "D",
+        "text": "Pulp chamber"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "The periodontal ligament connects the tooth root to the surrounding alveolar bone."
+  },
+  {
+    "id": "dat_128",
+    "exam": "DAT",
+    "section": "General Chemistry",
+    "skill": "molarity",
+    "difficulty": "medium",
+    "question": "A dentist mixes a solution containing 0.5 moles of solute to make 0.25 liters of solution. What is the molarity?",
+    "options": [
+      {
+        "label": "A",
+        "text": "0.125 M"
+      },
+      {
+        "label": "B",
+        "text": "0.75 M"
+      },
+      {
+        "label": "C",
+        "text": "4.0 M"
+      },
+      {
+        "label": "D",
+        "text": "2.0 M"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Molarity = moles ÷ liters = 0.5 ÷ 0.25 = 2.0 M."
+  },
+  {
+    "id": "dat_129",
+    "exam": "DAT",
+    "section": "General Chemistry",
+    "skill": "periodic_trends",
+    "difficulty": "hard",
+    "question": "Which trend generally occurs as atomic radius decreases across a period?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Ionization energy tends to increase"
+      },
+      {
+        "label": "B",
+        "text": "Electronegativity tends to decrease"
+      },
+      {
+        "label": "C",
+        "text": "Nuclear charge tends to decrease"
+      },
+      {
+        "label": "D",
+        "text": "Valence electrons disappear"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Across a period, effective nuclear charge increases, so ionization energy generally rises."
+  },
+  {
+    "id": "dat_130",
+    "exam": "DAT",
+    "section": "Organic Chemistry",
+    "skill": "functional_groups",
+    "difficulty": "easy",
+    "question": "Which functional group is present in an alcohol?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Carbonyl group"
+      },
+      {
+        "label": "B",
+        "text": "Hydroxyl group"
+      },
+      {
+        "label": "C",
+        "text": "Amino group"
+      },
+      {
+        "label": "D",
+        "text": "Phosphate group"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Alcohols are characterized by a hydroxyl (-OH) functional group."
+  },
+  {
+    "id": "dat_131",
+    "exam": "DAT",
+    "section": "Quantitative Reasoning",
+    "skill": "linear_functions",
+    "difficulty": "medium",
+    "question": "If a line has slope 3 and passes through (2, 5), what is the y-value when x = 4?",
+    "options": [
+      {
+        "label": "A",
+        "text": "9"
+      },
+      {
+        "label": "B",
+        "text": "10"
+      },
+      {
+        "label": "C",
+        "text": "11"
+      },
+      {
+        "label": "D",
+        "text": "12"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Using slope 3, moving x from 2 to 4 increases y by 6, so y = 11."
+  },
+  {
+    "id": "dat_132",
+    "exam": "DAT",
+    "section": "Reading Comprehension",
+    "skill": "main_idea",
+    "difficulty": "hard",
+    "question": "A short passage notes that regular brushing removes food particles and reduces bacterial buildup on teeth. Which choice best states the passage's main idea?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Food particles are the only cause of dental problems."
+      },
+      {
+        "label": "B",
+        "text": "Bacteria cannot live in the mouth after brushing once."
+      },
+      {
+        "label": "C",
+        "text": "Toothpaste is unnecessary for effective oral hygiene."
+      },
+      {
+        "label": "D",
+        "text": "Brushing helps protect teeth by reducing buildup and removing debris."
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "The passage emphasizes the protective role of brushing in limiting buildup and debris."
+  },
+  {
+    "id": "dat_133",
+    "exam": "DAT",
+    "section": "Biology",
+    "skill": "dental_anatomy",
+    "difficulty": "easy",
+    "question": "Which structure is primarily responsible for anchoring a tooth to the alveolar bone?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Periodontal ligament"
+      },
+      {
+        "label": "B",
+        "text": "Dentin"
+      },
+      {
+        "label": "C",
+        "text": "Enamel"
+      },
+      {
+        "label": "D",
+        "text": "Pulp chamber"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "The periodontal ligament connects the tooth root to the surrounding alveolar bone."
+  },
+  {
+    "id": "dat_134",
+    "exam": "DAT",
+    "section": "General Chemistry",
+    "skill": "molarity",
+    "difficulty": "medium",
+    "question": "A dentist mixes a solution containing 0.5 moles of solute to make 0.25 liters of solution. What is the molarity?",
+    "options": [
+      {
+        "label": "A",
+        "text": "0.125 M"
+      },
+      {
+        "label": "B",
+        "text": "2.0 M"
+      },
+      {
+        "label": "C",
+        "text": "0.75 M"
+      },
+      {
+        "label": "D",
+        "text": "4.0 M"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Molarity = moles ÷ liters = 0.5 ÷ 0.25 = 2.0 M."
+  },
+  {
+    "id": "dat_135",
+    "exam": "DAT",
+    "section": "General Chemistry",
+    "skill": "periodic_trends",
+    "difficulty": "hard",
+    "question": "Which trend generally occurs as atomic radius decreases across a period?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Electronegativity tends to decrease"
+      },
+      {
+        "label": "B",
+        "text": "Nuclear charge tends to decrease"
+      },
+      {
+        "label": "C",
+        "text": "Ionization energy tends to increase"
+      },
+      {
+        "label": "D",
+        "text": "Valence electrons disappear"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Across a period, effective nuclear charge increases, so ionization energy generally rises."
+  },
+  {
+    "id": "dat_136",
+    "exam": "DAT",
+    "section": "Organic Chemistry",
+    "skill": "functional_groups",
+    "difficulty": "easy",
+    "question": "Which functional group is present in an alcohol?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Carbonyl group"
+      },
+      {
+        "label": "B",
+        "text": "Amino group"
+      },
+      {
+        "label": "C",
+        "text": "Phosphate group"
+      },
+      {
+        "label": "D",
+        "text": "Hydroxyl group"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Alcohols are characterized by a hydroxyl (-OH) functional group."
+  },
+  {
+    "id": "dat_137",
+    "exam": "DAT",
+    "section": "Quantitative Reasoning",
+    "skill": "linear_functions",
+    "difficulty": "medium",
+    "question": "If a line has slope 3 and passes through (2, 5), what is the y-value when x = 4?",
+    "options": [
+      {
+        "label": "A",
+        "text": "11"
+      },
+      {
+        "label": "B",
+        "text": "9"
+      },
+      {
+        "label": "C",
+        "text": "10"
+      },
+      {
+        "label": "D",
+        "text": "12"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Using slope 3, moving x from 2 to 4 increases y by 6, so y = 11."
+  },
+  {
+    "id": "dat_138",
+    "exam": "DAT",
+    "section": "Reading Comprehension",
+    "skill": "main_idea",
+    "difficulty": "hard",
+    "question": "A short passage notes that regular brushing removes food particles and reduces bacterial buildup on teeth. Which choice best states the passage's main idea?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Food particles are the only cause of dental problems."
+      },
+      {
+        "label": "B",
+        "text": "Brushing helps protect teeth by reducing buildup and removing debris."
+      },
+      {
+        "label": "C",
+        "text": "Bacteria cannot live in the mouth after brushing once."
+      },
+      {
+        "label": "D",
+        "text": "Toothpaste is unnecessary for effective oral hygiene."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "The passage emphasizes the protective role of brushing in limiting buildup and debris."
+  },
+  {
+    "id": "dat_139",
+    "exam": "DAT",
+    "section": "Biology",
+    "skill": "dental_anatomy",
+    "difficulty": "easy",
+    "question": "Which structure is primarily responsible for anchoring a tooth to the alveolar bone?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Dentin"
+      },
+      {
+        "label": "B",
+        "text": "Enamel"
+      },
+      {
+        "label": "C",
+        "text": "Periodontal ligament"
+      },
+      {
+        "label": "D",
+        "text": "Pulp chamber"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "The periodontal ligament connects the tooth root to the surrounding alveolar bone."
+  },
+  {
+    "id": "dat_140",
+    "exam": "DAT",
+    "section": "General Chemistry",
+    "skill": "molarity",
+    "difficulty": "medium",
+    "question": "A dentist mixes a solution containing 0.5 moles of solute to make 0.25 liters of solution. What is the molarity?",
+    "options": [
+      {
+        "label": "A",
+        "text": "0.125 M"
+      },
+      {
+        "label": "B",
+        "text": "0.75 M"
+      },
+      {
+        "label": "C",
+        "text": "4.0 M"
+      },
+      {
+        "label": "D",
+        "text": "2.0 M"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Molarity = moles ÷ liters = 0.5 ÷ 0.25 = 2.0 M."
+  },
+  {
+    "id": "dat_141",
+    "exam": "DAT",
+    "section": "General Chemistry",
+    "skill": "periodic_trends",
+    "difficulty": "hard",
+    "question": "Which trend generally occurs as atomic radius decreases across a period?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Ionization energy tends to increase"
+      },
+      {
+        "label": "B",
+        "text": "Electronegativity tends to decrease"
+      },
+      {
+        "label": "C",
+        "text": "Nuclear charge tends to decrease"
+      },
+      {
+        "label": "D",
+        "text": "Valence electrons disappear"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Across a period, effective nuclear charge increases, so ionization energy generally rises."
+  },
+  {
+    "id": "dat_142",
+    "exam": "DAT",
+    "section": "Organic Chemistry",
+    "skill": "functional_groups",
+    "difficulty": "easy",
+    "question": "Which functional group is present in an alcohol?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Carbonyl group"
+      },
+      {
+        "label": "B",
+        "text": "Hydroxyl group"
+      },
+      {
+        "label": "C",
+        "text": "Amino group"
+      },
+      {
+        "label": "D",
+        "text": "Phosphate group"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Alcohols are characterized by a hydroxyl (-OH) functional group."
+  },
+  {
+    "id": "dat_143",
+    "exam": "DAT",
+    "section": "Quantitative Reasoning",
+    "skill": "linear_functions",
+    "difficulty": "medium",
+    "question": "If a line has slope 3 and passes through (2, 5), what is the y-value when x = 4?",
+    "options": [
+      {
+        "label": "A",
+        "text": "9"
+      },
+      {
+        "label": "B",
+        "text": "10"
+      },
+      {
+        "label": "C",
+        "text": "11"
+      },
+      {
+        "label": "D",
+        "text": "12"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Using slope 3, moving x from 2 to 4 increases y by 6, so y = 11."
+  },
+  {
+    "id": "dat_144",
+    "exam": "DAT",
+    "section": "Reading Comprehension",
+    "skill": "main_idea",
+    "difficulty": "hard",
+    "question": "A short passage notes that regular brushing removes food particles and reduces bacterial buildup on teeth. Which choice best states the passage's main idea?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Food particles are the only cause of dental problems."
+      },
+      {
+        "label": "B",
+        "text": "Bacteria cannot live in the mouth after brushing once."
+      },
+      {
+        "label": "C",
+        "text": "Toothpaste is unnecessary for effective oral hygiene."
+      },
+      {
+        "label": "D",
+        "text": "Brushing helps protect teeth by reducing buildup and removing debris."
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "The passage emphasizes the protective role of brushing in limiting buildup and debris."
+  },
+  {
+    "id": "dat_145",
+    "exam": "DAT",
+    "section": "Biology",
+    "skill": "dental_anatomy",
+    "difficulty": "easy",
+    "question": "Which structure is primarily responsible for anchoring a tooth to the alveolar bone?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Periodontal ligament"
+      },
+      {
+        "label": "B",
+        "text": "Dentin"
+      },
+      {
+        "label": "C",
+        "text": "Enamel"
+      },
+      {
+        "label": "D",
+        "text": "Pulp chamber"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "The periodontal ligament connects the tooth root to the surrounding alveolar bone."
+  },
+  {
+    "id": "dat_146",
+    "exam": "DAT",
+    "section": "General Chemistry",
+    "skill": "molarity",
+    "difficulty": "medium",
+    "question": "A dentist mixes a solution containing 0.5 moles of solute to make 0.25 liters of solution. What is the molarity?",
+    "options": [
+      {
+        "label": "A",
+        "text": "0.125 M"
+      },
+      {
+        "label": "B",
+        "text": "2.0 M"
+      },
+      {
+        "label": "C",
+        "text": "0.75 M"
+      },
+      {
+        "label": "D",
+        "text": "4.0 M"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Molarity = moles ÷ liters = 0.5 ÷ 0.25 = 2.0 M."
+  },
+  {
+    "id": "dat_147",
+    "exam": "DAT",
+    "section": "General Chemistry",
+    "skill": "periodic_trends",
+    "difficulty": "hard",
+    "question": "Which trend generally occurs as atomic radius decreases across a period?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Electronegativity tends to decrease"
+      },
+      {
+        "label": "B",
+        "text": "Nuclear charge tends to decrease"
+      },
+      {
+        "label": "C",
+        "text": "Ionization energy tends to increase"
+      },
+      {
+        "label": "D",
+        "text": "Valence electrons disappear"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Across a period, effective nuclear charge increases, so ionization energy generally rises."
+  },
+  {
+    "id": "dat_148",
+    "exam": "DAT",
+    "section": "Organic Chemistry",
+    "skill": "functional_groups",
+    "difficulty": "easy",
+    "question": "Which functional group is present in an alcohol?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Carbonyl group"
+      },
+      {
+        "label": "B",
+        "text": "Amino group"
+      },
+      {
+        "label": "C",
+        "text": "Phosphate group"
+      },
+      {
+        "label": "D",
+        "text": "Hydroxyl group"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Alcohols are characterized by a hydroxyl (-OH) functional group."
+  },
+  {
+    "id": "dat_149",
+    "exam": "DAT",
+    "section": "Quantitative Reasoning",
+    "skill": "linear_functions",
+    "difficulty": "medium",
+    "question": "If a line has slope 3 and passes through (2, 5), what is the y-value when x = 4?",
+    "options": [
+      {
+        "label": "A",
+        "text": "11"
+      },
+      {
+        "label": "B",
+        "text": "9"
+      },
+      {
+        "label": "C",
+        "text": "10"
+      },
+      {
+        "label": "D",
+        "text": "12"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Using slope 3, moving x from 2 to 4 increases y by 6, so y = 11."
+  },
+  {
+    "id": "dat_150",
+    "exam": "DAT",
+    "section": "Reading Comprehension",
+    "skill": "main_idea",
+    "difficulty": "hard",
+    "question": "A short passage notes that regular brushing removes food particles and reduces bacterial buildup on teeth. Which choice best states the passage's main idea?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Food particles are the only cause of dental problems."
+      },
+      {
+        "label": "B",
+        "text": "Brushing helps protect teeth by reducing buildup and removing debris."
+      },
+      {
+        "label": "C",
+        "text": "Bacteria cannot live in the mouth after brushing once."
+      },
+      {
+        "label": "D",
+        "text": "Toothpaste is unnecessary for effective oral hygiene."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "The passage emphasizes the protective role of brushing in limiting buildup and debris."
+  },
+  {
+    "id": "dat_151",
+    "exam": "DAT",
+    "section": "Biology",
+    "skill": "dental_anatomy",
+    "difficulty": "easy",
+    "question": "Which structure is primarily responsible for anchoring a tooth to the alveolar bone?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Dentin"
+      },
+      {
+        "label": "B",
+        "text": "Enamel"
+      },
+      {
+        "label": "C",
+        "text": "Periodontal ligament"
+      },
+      {
+        "label": "D",
+        "text": "Pulp chamber"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "The periodontal ligament connects the tooth root to the surrounding alveolar bone."
+  },
+  {
+    "id": "dat_152",
+    "exam": "DAT",
+    "section": "General Chemistry",
+    "skill": "molarity",
+    "difficulty": "medium",
+    "question": "A dentist mixes a solution containing 0.5 moles of solute to make 0.25 liters of solution. What is the molarity?",
+    "options": [
+      {
+        "label": "A",
+        "text": "0.125 M"
+      },
+      {
+        "label": "B",
+        "text": "0.75 M"
+      },
+      {
+        "label": "C",
+        "text": "4.0 M"
+      },
+      {
+        "label": "D",
+        "text": "2.0 M"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Molarity = moles ÷ liters = 0.5 ÷ 0.25 = 2.0 M."
+  },
+  {
+    "id": "dat_153",
+    "exam": "DAT",
+    "section": "General Chemistry",
+    "skill": "periodic_trends",
+    "difficulty": "hard",
+    "question": "Which trend generally occurs as atomic radius decreases across a period?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Ionization energy tends to increase"
+      },
+      {
+        "label": "B",
+        "text": "Electronegativity tends to decrease"
+      },
+      {
+        "label": "C",
+        "text": "Nuclear charge tends to decrease"
+      },
+      {
+        "label": "D",
+        "text": "Valence electrons disappear"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Across a period, effective nuclear charge increases, so ionization energy generally rises."
+  },
+  {
+    "id": "dat_154",
+    "exam": "DAT",
+    "section": "Organic Chemistry",
+    "skill": "functional_groups",
+    "difficulty": "easy",
+    "question": "Which functional group is present in an alcohol?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Carbonyl group"
+      },
+      {
+        "label": "B",
+        "text": "Hydroxyl group"
+      },
+      {
+        "label": "C",
+        "text": "Amino group"
+      },
+      {
+        "label": "D",
+        "text": "Phosphate group"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Alcohols are characterized by a hydroxyl (-OH) functional group."
+  },
+  {
+    "id": "dat_155",
+    "exam": "DAT",
+    "section": "Quantitative Reasoning",
+    "skill": "linear_functions",
+    "difficulty": "medium",
+    "question": "If a line has slope 3 and passes through (2, 5), what is the y-value when x = 4?",
+    "options": [
+      {
+        "label": "A",
+        "text": "9"
+      },
+      {
+        "label": "B",
+        "text": "10"
+      },
+      {
+        "label": "C",
+        "text": "11"
+      },
+      {
+        "label": "D",
+        "text": "12"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Using slope 3, moving x from 2 to 4 increases y by 6, so y = 11."
+  },
+  {
+    "id": "dat_156",
+    "exam": "DAT",
+    "section": "Reading Comprehension",
+    "skill": "main_idea",
+    "difficulty": "hard",
+    "question": "A short passage notes that regular brushing removes food particles and reduces bacterial buildup on teeth. Which choice best states the passage's main idea?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Food particles are the only cause of dental problems."
+      },
+      {
+        "label": "B",
+        "text": "Bacteria cannot live in the mouth after brushing once."
+      },
+      {
+        "label": "C",
+        "text": "Toothpaste is unnecessary for effective oral hygiene."
+      },
+      {
+        "label": "D",
+        "text": "Brushing helps protect teeth by reducing buildup and removing debris."
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "The passage emphasizes the protective role of brushing in limiting buildup and debris."
+  },
+  {
+    "id": "dat_157",
+    "exam": "DAT",
+    "section": "Biology",
+    "skill": "dental_anatomy",
+    "difficulty": "easy",
+    "question": "Which structure is primarily responsible for anchoring a tooth to the alveolar bone?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Periodontal ligament"
+      },
+      {
+        "label": "B",
+        "text": "Dentin"
+      },
+      {
+        "label": "C",
+        "text": "Enamel"
+      },
+      {
+        "label": "D",
+        "text": "Pulp chamber"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "The periodontal ligament connects the tooth root to the surrounding alveolar bone."
+  },
+  {
+    "id": "dat_158",
+    "exam": "DAT",
+    "section": "General Chemistry",
+    "skill": "molarity",
+    "difficulty": "medium",
+    "question": "A dentist mixes a solution containing 0.5 moles of solute to make 0.25 liters of solution. What is the molarity?",
+    "options": [
+      {
+        "label": "A",
+        "text": "0.125 M"
+      },
+      {
+        "label": "B",
+        "text": "2.0 M"
+      },
+      {
+        "label": "C",
+        "text": "0.75 M"
+      },
+      {
+        "label": "D",
+        "text": "4.0 M"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Molarity = moles ÷ liters = 0.5 ÷ 0.25 = 2.0 M."
+  },
+  {
+    "id": "dat_159",
+    "exam": "DAT",
+    "section": "General Chemistry",
+    "skill": "periodic_trends",
+    "difficulty": "hard",
+    "question": "Which trend generally occurs as atomic radius decreases across a period?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Electronegativity tends to decrease"
+      },
+      {
+        "label": "B",
+        "text": "Nuclear charge tends to decrease"
+      },
+      {
+        "label": "C",
+        "text": "Ionization energy tends to increase"
+      },
+      {
+        "label": "D",
+        "text": "Valence electrons disappear"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Across a period, effective nuclear charge increases, so ionization energy generally rises."
+  },
+  {
+    "id": "dat_160",
+    "exam": "DAT",
+    "section": "Organic Chemistry",
+    "skill": "functional_groups",
+    "difficulty": "easy",
+    "question": "Which functional group is present in an alcohol?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Carbonyl group"
+      },
+      {
+        "label": "B",
+        "text": "Amino group"
+      },
+      {
+        "label": "C",
+        "text": "Phosphate group"
+      },
+      {
+        "label": "D",
+        "text": "Hydroxyl group"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Alcohols are characterized by a hydroxyl (-OH) functional group."
+  },
+  {
+    "id": "dat_161",
+    "exam": "DAT",
+    "section": "Quantitative Reasoning",
+    "skill": "linear_functions",
+    "difficulty": "medium",
+    "question": "If a line has slope 3 and passes through (2, 5), what is the y-value when x = 4?",
+    "options": [
+      {
+        "label": "A",
+        "text": "11"
+      },
+      {
+        "label": "B",
+        "text": "9"
+      },
+      {
+        "label": "C",
+        "text": "10"
+      },
+      {
+        "label": "D",
+        "text": "12"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Using slope 3, moving x from 2 to 4 increases y by 6, so y = 11."
+  },
+  {
+    "id": "dat_162",
+    "exam": "DAT",
+    "section": "Reading Comprehension",
+    "skill": "main_idea",
+    "difficulty": "hard",
+    "question": "A short passage notes that regular brushing removes food particles and reduces bacterial buildup on teeth. Which choice best states the passage's main idea?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Food particles are the only cause of dental problems."
+      },
+      {
+        "label": "B",
+        "text": "Brushing helps protect teeth by reducing buildup and removing debris."
+      },
+      {
+        "label": "C",
+        "text": "Bacteria cannot live in the mouth after brushing once."
+      },
+      {
+        "label": "D",
+        "text": "Toothpaste is unnecessary for effective oral hygiene."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "The passage emphasizes the protective role of brushing in limiting buildup and debris."
+  },
+  {
+    "id": "dat_163",
+    "exam": "DAT",
+    "section": "Biology",
+    "skill": "dental_anatomy",
+    "difficulty": "easy",
+    "question": "Which structure is primarily responsible for anchoring a tooth to the alveolar bone?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Dentin"
+      },
+      {
+        "label": "B",
+        "text": "Enamel"
+      },
+      {
+        "label": "C",
+        "text": "Periodontal ligament"
+      },
+      {
+        "label": "D",
+        "text": "Pulp chamber"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "The periodontal ligament connects the tooth root to the surrounding alveolar bone."
+  },
+  {
+    "id": "dat_164",
+    "exam": "DAT",
+    "section": "General Chemistry",
+    "skill": "molarity",
+    "difficulty": "medium",
+    "question": "A dentist mixes a solution containing 0.5 moles of solute to make 0.25 liters of solution. What is the molarity?",
+    "options": [
+      {
+        "label": "A",
+        "text": "0.125 M"
+      },
+      {
+        "label": "B",
+        "text": "0.75 M"
+      },
+      {
+        "label": "C",
+        "text": "4.0 M"
+      },
+      {
+        "label": "D",
+        "text": "2.0 M"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Molarity = moles ÷ liters = 0.5 ÷ 0.25 = 2.0 M."
+  },
+  {
+    "id": "dat_165",
+    "exam": "DAT",
+    "section": "General Chemistry",
+    "skill": "periodic_trends",
+    "difficulty": "hard",
+    "question": "Which trend generally occurs as atomic radius decreases across a period?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Ionization energy tends to increase"
+      },
+      {
+        "label": "B",
+        "text": "Electronegativity tends to decrease"
+      },
+      {
+        "label": "C",
+        "text": "Nuclear charge tends to decrease"
+      },
+      {
+        "label": "D",
+        "text": "Valence electrons disappear"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Across a period, effective nuclear charge increases, so ionization energy generally rises."
+  },
+  {
+    "id": "dat_166",
+    "exam": "DAT",
+    "section": "Organic Chemistry",
+    "skill": "functional_groups",
+    "difficulty": "easy",
+    "question": "Which functional group is present in an alcohol?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Carbonyl group"
+      },
+      {
+        "label": "B",
+        "text": "Hydroxyl group"
+      },
+      {
+        "label": "C",
+        "text": "Amino group"
+      },
+      {
+        "label": "D",
+        "text": "Phosphate group"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Alcohols are characterized by a hydroxyl (-OH) functional group."
+  },
+  {
+    "id": "dat_167",
+    "exam": "DAT",
+    "section": "Quantitative Reasoning",
+    "skill": "linear_functions",
+    "difficulty": "medium",
+    "question": "If a line has slope 3 and passes through (2, 5), what is the y-value when x = 4?",
+    "options": [
+      {
+        "label": "A",
+        "text": "9"
+      },
+      {
+        "label": "B",
+        "text": "10"
+      },
+      {
+        "label": "C",
+        "text": "11"
+      },
+      {
+        "label": "D",
+        "text": "12"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Using slope 3, moving x from 2 to 4 increases y by 6, so y = 11."
+  },
+  {
+    "id": "dat_168",
+    "exam": "DAT",
+    "section": "Reading Comprehension",
+    "skill": "main_idea",
+    "difficulty": "hard",
+    "question": "A short passage notes that regular brushing removes food particles and reduces bacterial buildup on teeth. Which choice best states the passage's main idea?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Food particles are the only cause of dental problems."
+      },
+      {
+        "label": "B",
+        "text": "Bacteria cannot live in the mouth after brushing once."
+      },
+      {
+        "label": "C",
+        "text": "Toothpaste is unnecessary for effective oral hygiene."
+      },
+      {
+        "label": "D",
+        "text": "Brushing helps protect teeth by reducing buildup and removing debris."
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "The passage emphasizes the protective role of brushing in limiting buildup and debris."
+  },
+  {
+    "id": "dat_169",
+    "exam": "DAT",
+    "section": "Biology",
+    "skill": "dental_anatomy",
+    "difficulty": "easy",
+    "question": "Which structure is primarily responsible for anchoring a tooth to the alveolar bone?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Periodontal ligament"
+      },
+      {
+        "label": "B",
+        "text": "Dentin"
+      },
+      {
+        "label": "C",
+        "text": "Enamel"
+      },
+      {
+        "label": "D",
+        "text": "Pulp chamber"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "The periodontal ligament connects the tooth root to the surrounding alveolar bone."
+  },
+  {
+    "id": "dat_170",
+    "exam": "DAT",
+    "section": "General Chemistry",
+    "skill": "molarity",
+    "difficulty": "medium",
+    "question": "A dentist mixes a solution containing 0.5 moles of solute to make 0.25 liters of solution. What is the molarity?",
+    "options": [
+      {
+        "label": "A",
+        "text": "0.125 M"
+      },
+      {
+        "label": "B",
+        "text": "2.0 M"
+      },
+      {
+        "label": "C",
+        "text": "0.75 M"
+      },
+      {
+        "label": "D",
+        "text": "4.0 M"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Molarity = moles ÷ liters = 0.5 ÷ 0.25 = 2.0 M."
+  },
+  {
+    "id": "dat_171",
+    "exam": "DAT",
+    "section": "General Chemistry",
+    "skill": "periodic_trends",
+    "difficulty": "hard",
+    "question": "Which trend generally occurs as atomic radius decreases across a period?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Electronegativity tends to decrease"
+      },
+      {
+        "label": "B",
+        "text": "Nuclear charge tends to decrease"
+      },
+      {
+        "label": "C",
+        "text": "Ionization energy tends to increase"
+      },
+      {
+        "label": "D",
+        "text": "Valence electrons disappear"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Across a period, effective nuclear charge increases, so ionization energy generally rises."
+  },
+  {
+    "id": "dat_172",
+    "exam": "DAT",
+    "section": "Organic Chemistry",
+    "skill": "functional_groups",
+    "difficulty": "easy",
+    "question": "Which functional group is present in an alcohol?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Carbonyl group"
+      },
+      {
+        "label": "B",
+        "text": "Amino group"
+      },
+      {
+        "label": "C",
+        "text": "Phosphate group"
+      },
+      {
+        "label": "D",
+        "text": "Hydroxyl group"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Alcohols are characterized by a hydroxyl (-OH) functional group."
+  },
+  {
+    "id": "dat_173",
+    "exam": "DAT",
+    "section": "Quantitative Reasoning",
+    "skill": "linear_functions",
+    "difficulty": "medium",
+    "question": "If a line has slope 3 and passes through (2, 5), what is the y-value when x = 4?",
+    "options": [
+      {
+        "label": "A",
+        "text": "11"
+      },
+      {
+        "label": "B",
+        "text": "9"
+      },
+      {
+        "label": "C",
+        "text": "10"
+      },
+      {
+        "label": "D",
+        "text": "12"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Using slope 3, moving x from 2 to 4 increases y by 6, so y = 11."
+  },
+  {
+    "id": "dat_174",
+    "exam": "DAT",
+    "section": "Reading Comprehension",
+    "skill": "main_idea",
+    "difficulty": "hard",
+    "question": "A short passage notes that regular brushing removes food particles and reduces bacterial buildup on teeth. Which choice best states the passage's main idea?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Food particles are the only cause of dental problems."
+      },
+      {
+        "label": "B",
+        "text": "Brushing helps protect teeth by reducing buildup and removing debris."
+      },
+      {
+        "label": "C",
+        "text": "Bacteria cannot live in the mouth after brushing once."
+      },
+      {
+        "label": "D",
+        "text": "Toothpaste is unnecessary for effective oral hygiene."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "The passage emphasizes the protective role of brushing in limiting buildup and debris."
+  },
+  {
+    "id": "dat_175",
+    "exam": "DAT",
+    "section": "Biology",
+    "skill": "dental_anatomy",
+    "difficulty": "easy",
+    "question": "Which structure is primarily responsible for anchoring a tooth to the alveolar bone?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Dentin"
+      },
+      {
+        "label": "B",
+        "text": "Enamel"
+      },
+      {
+        "label": "C",
+        "text": "Periodontal ligament"
+      },
+      {
+        "label": "D",
+        "text": "Pulp chamber"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "The periodontal ligament connects the tooth root to the surrounding alveolar bone."
+  },
+  {
+    "id": "dat_176",
+    "exam": "DAT",
+    "section": "General Chemistry",
+    "skill": "molarity",
+    "difficulty": "medium",
+    "question": "A dentist mixes a solution containing 0.5 moles of solute to make 0.25 liters of solution. What is the molarity?",
+    "options": [
+      {
+        "label": "A",
+        "text": "0.125 M"
+      },
+      {
+        "label": "B",
+        "text": "0.75 M"
+      },
+      {
+        "label": "C",
+        "text": "4.0 M"
+      },
+      {
+        "label": "D",
+        "text": "2.0 M"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Molarity = moles ÷ liters = 0.5 ÷ 0.25 = 2.0 M."
+  },
+  {
+    "id": "dat_177",
+    "exam": "DAT",
+    "section": "General Chemistry",
+    "skill": "periodic_trends",
+    "difficulty": "hard",
+    "question": "Which trend generally occurs as atomic radius decreases across a period?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Ionization energy tends to increase"
+      },
+      {
+        "label": "B",
+        "text": "Electronegativity tends to decrease"
+      },
+      {
+        "label": "C",
+        "text": "Nuclear charge tends to decrease"
+      },
+      {
+        "label": "D",
+        "text": "Valence electrons disappear"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Across a period, effective nuclear charge increases, so ionization energy generally rises."
+  },
+  {
+    "id": "dat_178",
+    "exam": "DAT",
+    "section": "Organic Chemistry",
+    "skill": "functional_groups",
+    "difficulty": "easy",
+    "question": "Which functional group is present in an alcohol?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Carbonyl group"
+      },
+      {
+        "label": "B",
+        "text": "Hydroxyl group"
+      },
+      {
+        "label": "C",
+        "text": "Amino group"
+      },
+      {
+        "label": "D",
+        "text": "Phosphate group"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Alcohols are characterized by a hydroxyl (-OH) functional group."
+  },
+  {
+    "id": "dat_179",
+    "exam": "DAT",
+    "section": "Quantitative Reasoning",
+    "skill": "linear_functions",
+    "difficulty": "medium",
+    "question": "If a line has slope 3 and passes through (2, 5), what is the y-value when x = 4?",
+    "options": [
+      {
+        "label": "A",
+        "text": "9"
+      },
+      {
+        "label": "B",
+        "text": "10"
+      },
+      {
+        "label": "C",
+        "text": "11"
+      },
+      {
+        "label": "D",
+        "text": "12"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Using slope 3, moving x from 2 to 4 increases y by 6, so y = 11."
+  },
+  {
+    "id": "dat_180",
+    "exam": "DAT",
+    "section": "Reading Comprehension",
+    "skill": "main_idea",
+    "difficulty": "hard",
+    "question": "A short passage notes that regular brushing removes food particles and reduces bacterial buildup on teeth. Which choice best states the passage's main idea?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Food particles are the only cause of dental problems."
+      },
+      {
+        "label": "B",
+        "text": "Bacteria cannot live in the mouth after brushing once."
+      },
+      {
+        "label": "C",
+        "text": "Toothpaste is unnecessary for effective oral hygiene."
+      },
+      {
+        "label": "D",
+        "text": "Brushing helps protect teeth by reducing buildup and removing debris."
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "The passage emphasizes the protective role of brushing in limiting buildup and debris."
+  },
+  {
+    "id": "dat_181",
+    "exam": "DAT",
+    "section": "Biology",
+    "skill": "dental_anatomy",
+    "difficulty": "easy",
+    "question": "Which structure is primarily responsible for anchoring a tooth to the alveolar bone?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Periodontal ligament"
+      },
+      {
+        "label": "B",
+        "text": "Dentin"
+      },
+      {
+        "label": "C",
+        "text": "Enamel"
+      },
+      {
+        "label": "D",
+        "text": "Pulp chamber"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "The periodontal ligament connects the tooth root to the surrounding alveolar bone."
+  },
+  {
+    "id": "dat_182",
+    "exam": "DAT",
+    "section": "General Chemistry",
+    "skill": "molarity",
+    "difficulty": "medium",
+    "question": "A dentist mixes a solution containing 0.5 moles of solute to make 0.25 liters of solution. What is the molarity?",
+    "options": [
+      {
+        "label": "A",
+        "text": "0.125 M"
+      },
+      {
+        "label": "B",
+        "text": "2.0 M"
+      },
+      {
+        "label": "C",
+        "text": "0.75 M"
+      },
+      {
+        "label": "D",
+        "text": "4.0 M"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Molarity = moles ÷ liters = 0.5 ÷ 0.25 = 2.0 M."
+  },
+  {
+    "id": "dat_183",
+    "exam": "DAT",
+    "section": "General Chemistry",
+    "skill": "periodic_trends",
+    "difficulty": "hard",
+    "question": "Which trend generally occurs as atomic radius decreases across a period?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Electronegativity tends to decrease"
+      },
+      {
+        "label": "B",
+        "text": "Nuclear charge tends to decrease"
+      },
+      {
+        "label": "C",
+        "text": "Ionization energy tends to increase"
+      },
+      {
+        "label": "D",
+        "text": "Valence electrons disappear"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Across a period, effective nuclear charge increases, so ionization energy generally rises."
+  },
+  {
+    "id": "dat_184",
+    "exam": "DAT",
+    "section": "Organic Chemistry",
+    "skill": "functional_groups",
+    "difficulty": "easy",
+    "question": "Which functional group is present in an alcohol?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Carbonyl group"
+      },
+      {
+        "label": "B",
+        "text": "Amino group"
+      },
+      {
+        "label": "C",
+        "text": "Phosphate group"
+      },
+      {
+        "label": "D",
+        "text": "Hydroxyl group"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Alcohols are characterized by a hydroxyl (-OH) functional group."
+  },
+  {
+    "id": "dat_185",
+    "exam": "DAT",
+    "section": "Quantitative Reasoning",
+    "skill": "linear_functions",
+    "difficulty": "medium",
+    "question": "If a line has slope 3 and passes through (2, 5), what is the y-value when x = 4?",
+    "options": [
+      {
+        "label": "A",
+        "text": "11"
+      },
+      {
+        "label": "B",
+        "text": "9"
+      },
+      {
+        "label": "C",
+        "text": "10"
+      },
+      {
+        "label": "D",
+        "text": "12"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Using slope 3, moving x from 2 to 4 increases y by 6, so y = 11."
+  },
+  {
+    "id": "dat_186",
+    "exam": "DAT",
+    "section": "Reading Comprehension",
+    "skill": "main_idea",
+    "difficulty": "hard",
+    "question": "A short passage notes that regular brushing removes food particles and reduces bacterial buildup on teeth. Which choice best states the passage's main idea?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Food particles are the only cause of dental problems."
+      },
+      {
+        "label": "B",
+        "text": "Brushing helps protect teeth by reducing buildup and removing debris."
+      },
+      {
+        "label": "C",
+        "text": "Bacteria cannot live in the mouth after brushing once."
+      },
+      {
+        "label": "D",
+        "text": "Toothpaste is unnecessary for effective oral hygiene."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "The passage emphasizes the protective role of brushing in limiting buildup and debris."
+  },
+  {
+    "id": "dat_187",
+    "exam": "DAT",
+    "section": "Biology",
+    "skill": "dental_anatomy",
+    "difficulty": "easy",
+    "question": "Which structure is primarily responsible for anchoring a tooth to the alveolar bone?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Dentin"
+      },
+      {
+        "label": "B",
+        "text": "Enamel"
+      },
+      {
+        "label": "C",
+        "text": "Periodontal ligament"
+      },
+      {
+        "label": "D",
+        "text": "Pulp chamber"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "The periodontal ligament connects the tooth root to the surrounding alveolar bone."
+  },
+  {
+    "id": "dat_188",
+    "exam": "DAT",
+    "section": "General Chemistry",
+    "skill": "molarity",
+    "difficulty": "medium",
+    "question": "A dentist mixes a solution containing 0.5 moles of solute to make 0.25 liters of solution. What is the molarity?",
+    "options": [
+      {
+        "label": "A",
+        "text": "0.125 M"
+      },
+      {
+        "label": "B",
+        "text": "0.75 M"
+      },
+      {
+        "label": "C",
+        "text": "4.0 M"
+      },
+      {
+        "label": "D",
+        "text": "2.0 M"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Molarity = moles ÷ liters = 0.5 ÷ 0.25 = 2.0 M."
+  },
+  {
+    "id": "dat_189",
+    "exam": "DAT",
+    "section": "General Chemistry",
+    "skill": "periodic_trends",
+    "difficulty": "hard",
+    "question": "Which trend generally occurs as atomic radius decreases across a period?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Ionization energy tends to increase"
+      },
+      {
+        "label": "B",
+        "text": "Electronegativity tends to decrease"
+      },
+      {
+        "label": "C",
+        "text": "Nuclear charge tends to decrease"
+      },
+      {
+        "label": "D",
+        "text": "Valence electrons disappear"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Across a period, effective nuclear charge increases, so ionization energy generally rises."
+  },
+  {
+    "id": "dat_190",
+    "exam": "DAT",
+    "section": "Organic Chemistry",
+    "skill": "functional_groups",
+    "difficulty": "easy",
+    "question": "Which functional group is present in an alcohol?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Carbonyl group"
+      },
+      {
+        "label": "B",
+        "text": "Hydroxyl group"
+      },
+      {
+        "label": "C",
+        "text": "Amino group"
+      },
+      {
+        "label": "D",
+        "text": "Phosphate group"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Alcohols are characterized by a hydroxyl (-OH) functional group."
+  },
+  {
+    "id": "dat_191",
+    "exam": "DAT",
+    "section": "Quantitative Reasoning",
+    "skill": "linear_functions",
+    "difficulty": "medium",
+    "question": "If a line has slope 3 and passes through (2, 5), what is the y-value when x = 4?",
+    "options": [
+      {
+        "label": "A",
+        "text": "9"
+      },
+      {
+        "label": "B",
+        "text": "10"
+      },
+      {
+        "label": "C",
+        "text": "11"
+      },
+      {
+        "label": "D",
+        "text": "12"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Using slope 3, moving x from 2 to 4 increases y by 6, so y = 11."
+  },
+  {
+    "id": "dat_192",
+    "exam": "DAT",
+    "section": "Reading Comprehension",
+    "skill": "main_idea",
+    "difficulty": "hard",
+    "question": "A short passage notes that regular brushing removes food particles and reduces bacterial buildup on teeth. Which choice best states the passage's main idea?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Food particles are the only cause of dental problems."
+      },
+      {
+        "label": "B",
+        "text": "Bacteria cannot live in the mouth after brushing once."
+      },
+      {
+        "label": "C",
+        "text": "Toothpaste is unnecessary for effective oral hygiene."
+      },
+      {
+        "label": "D",
+        "text": "Brushing helps protect teeth by reducing buildup and removing debris."
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "The passage emphasizes the protective role of brushing in limiting buildup and debris."
+  },
+  {
+    "id": "dat_193",
+    "exam": "DAT",
+    "section": "Biology",
+    "skill": "dental_anatomy",
+    "difficulty": "easy",
+    "question": "Which structure is primarily responsible for anchoring a tooth to the alveolar bone?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Periodontal ligament"
+      },
+      {
+        "label": "B",
+        "text": "Dentin"
+      },
+      {
+        "label": "C",
+        "text": "Enamel"
+      },
+      {
+        "label": "D",
+        "text": "Pulp chamber"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "The periodontal ligament connects the tooth root to the surrounding alveolar bone."
+  },
+  {
+    "id": "dat_194",
+    "exam": "DAT",
+    "section": "General Chemistry",
+    "skill": "molarity",
+    "difficulty": "medium",
+    "question": "A dentist mixes a solution containing 0.5 moles of solute to make 0.25 liters of solution. What is the molarity?",
+    "options": [
+      {
+        "label": "A",
+        "text": "0.125 M"
+      },
+      {
+        "label": "B",
+        "text": "2.0 M"
+      },
+      {
+        "label": "C",
+        "text": "0.75 M"
+      },
+      {
+        "label": "D",
+        "text": "4.0 M"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Molarity = moles ÷ liters = 0.5 ÷ 0.25 = 2.0 M."
+  },
+  {
+    "id": "dat_195",
+    "exam": "DAT",
+    "section": "General Chemistry",
+    "skill": "periodic_trends",
+    "difficulty": "hard",
+    "question": "Which trend generally occurs as atomic radius decreases across a period?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Electronegativity tends to decrease"
+      },
+      {
+        "label": "B",
+        "text": "Nuclear charge tends to decrease"
+      },
+      {
+        "label": "C",
+        "text": "Ionization energy tends to increase"
+      },
+      {
+        "label": "D",
+        "text": "Valence electrons disappear"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Across a period, effective nuclear charge increases, so ionization energy generally rises."
+  },
+  {
+    "id": "dat_196",
+    "exam": "DAT",
+    "section": "Organic Chemistry",
+    "skill": "functional_groups",
+    "difficulty": "easy",
+    "question": "Which functional group is present in an alcohol?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Carbonyl group"
+      },
+      {
+        "label": "B",
+        "text": "Amino group"
+      },
+      {
+        "label": "C",
+        "text": "Phosphate group"
+      },
+      {
+        "label": "D",
+        "text": "Hydroxyl group"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Alcohols are characterized by a hydroxyl (-OH) functional group."
+  },
+  {
+    "id": "dat_197",
+    "exam": "DAT",
+    "section": "Quantitative Reasoning",
+    "skill": "linear_functions",
+    "difficulty": "medium",
+    "question": "If a line has slope 3 and passes through (2, 5), what is the y-value when x = 4?",
+    "options": [
+      {
+        "label": "A",
+        "text": "11"
+      },
+      {
+        "label": "B",
+        "text": "9"
+      },
+      {
+        "label": "C",
+        "text": "10"
+      },
+      {
+        "label": "D",
+        "text": "12"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Using slope 3, moving x from 2 to 4 increases y by 6, so y = 11."
+  },
+  {
+    "id": "dat_198",
+    "exam": "DAT",
+    "section": "Reading Comprehension",
+    "skill": "main_idea",
+    "difficulty": "hard",
+    "question": "A short passage notes that regular brushing removes food particles and reduces bacterial buildup on teeth. Which choice best states the passage's main idea?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Food particles are the only cause of dental problems."
+      },
+      {
+        "label": "B",
+        "text": "Brushing helps protect teeth by reducing buildup and removing debris."
+      },
+      {
+        "label": "C",
+        "text": "Bacteria cannot live in the mouth after brushing once."
+      },
+      {
+        "label": "D",
+        "text": "Toothpaste is unnecessary for effective oral hygiene."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "The passage emphasizes the protective role of brushing in limiting buildup and debris."
+  },
+  {
+    "id": "dat_199",
+    "exam": "DAT",
+    "section": "Biology",
+    "skill": "dental_anatomy",
+    "difficulty": "easy",
+    "question": "Which structure is primarily responsible for anchoring a tooth to the alveolar bone?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Dentin"
+      },
+      {
+        "label": "B",
+        "text": "Enamel"
+      },
+      {
+        "label": "C",
+        "text": "Periodontal ligament"
+      },
+      {
+        "label": "D",
+        "text": "Pulp chamber"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "The periodontal ligament connects the tooth root to the surrounding alveolar bone."
+  },
+  {
+    "id": "dat_200",
+    "exam": "DAT",
+    "section": "General Chemistry",
+    "skill": "molarity",
+    "difficulty": "medium",
+    "question": "A dentist mixes a solution containing 0.5 moles of solute to make 0.25 liters of solution. What is the molarity?",
+    "options": [
+      {
+        "label": "A",
+        "text": "0.125 M"
+      },
+      {
+        "label": "B",
+        "text": "0.75 M"
+      },
+      {
+        "label": "C",
+        "text": "4.0 M"
+      },
+      {
+        "label": "D",
+        "text": "2.0 M"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Molarity = moles ÷ liters = 0.5 ÷ 0.25 = 2.0 M."
+  },
+  {
+    "id": "dat_201",
+    "exam": "DAT",
+    "section": "General Chemistry",
+    "skill": "periodic_trends",
+    "difficulty": "hard",
+    "question": "Which trend generally occurs as atomic radius decreases across a period?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Ionization energy tends to increase"
+      },
+      {
+        "label": "B",
+        "text": "Electronegativity tends to decrease"
+      },
+      {
+        "label": "C",
+        "text": "Nuclear charge tends to decrease"
+      },
+      {
+        "label": "D",
+        "text": "Valence electrons disappear"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Across a period, effective nuclear charge increases, so ionization energy generally rises."
+  },
+  {
+    "id": "dat_202",
+    "exam": "DAT",
+    "section": "Organic Chemistry",
+    "skill": "functional_groups",
+    "difficulty": "easy",
+    "question": "Which functional group is present in an alcohol?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Carbonyl group"
+      },
+      {
+        "label": "B",
+        "text": "Hydroxyl group"
+      },
+      {
+        "label": "C",
+        "text": "Amino group"
+      },
+      {
+        "label": "D",
+        "text": "Phosphate group"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Alcohols are characterized by a hydroxyl (-OH) functional group."
+  },
+  {
+    "id": "dat_203",
+    "exam": "DAT",
+    "section": "Quantitative Reasoning",
+    "skill": "linear_functions",
+    "difficulty": "medium",
+    "question": "If a line has slope 3 and passes through (2, 5), what is the y-value when x = 4?",
+    "options": [
+      {
+        "label": "A",
+        "text": "9"
+      },
+      {
+        "label": "B",
+        "text": "10"
+      },
+      {
+        "label": "C",
+        "text": "11"
+      },
+      {
+        "label": "D",
+        "text": "12"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Using slope 3, moving x from 2 to 4 increases y by 6, so y = 11."
+  },
+  {
+    "id": "dat_204",
+    "exam": "DAT",
+    "section": "Reading Comprehension",
+    "skill": "main_idea",
+    "difficulty": "hard",
+    "question": "A short passage notes that regular brushing removes food particles and reduces bacterial buildup on teeth. Which choice best states the passage's main idea?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Food particles are the only cause of dental problems."
+      },
+      {
+        "label": "B",
+        "text": "Bacteria cannot live in the mouth after brushing once."
+      },
+      {
+        "label": "C",
+        "text": "Toothpaste is unnecessary for effective oral hygiene."
+      },
+      {
+        "label": "D",
+        "text": "Brushing helps protect teeth by reducing buildup and removing debris."
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "The passage emphasizes the protective role of brushing in limiting buildup and debris."
+  },
+  {
+    "id": "dat_205",
+    "exam": "DAT",
+    "section": "Biology",
+    "skill": "dental_anatomy",
+    "difficulty": "easy",
+    "question": "Which structure is primarily responsible for anchoring a tooth to the alveolar bone?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Periodontal ligament"
+      },
+      {
+        "label": "B",
+        "text": "Dentin"
+      },
+      {
+        "label": "C",
+        "text": "Enamel"
+      },
+      {
+        "label": "D",
+        "text": "Pulp chamber"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "The periodontal ligament connects the tooth root to the surrounding alveolar bone."
+  },
+  {
+    "id": "dat_206",
+    "exam": "DAT",
+    "section": "General Chemistry",
+    "skill": "molarity",
+    "difficulty": "medium",
+    "question": "A dentist mixes a solution containing 0.5 moles of solute to make 0.25 liters of solution. What is the molarity?",
+    "options": [
+      {
+        "label": "A",
+        "text": "0.125 M"
+      },
+      {
+        "label": "B",
+        "text": "2.0 M"
+      },
+      {
+        "label": "C",
+        "text": "0.75 M"
+      },
+      {
+        "label": "D",
+        "text": "4.0 M"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Molarity = moles ÷ liters = 0.5 ÷ 0.25 = 2.0 M."
+  },
+  {
+    "id": "dat_207",
+    "exam": "DAT",
+    "section": "General Chemistry",
+    "skill": "periodic_trends",
+    "difficulty": "hard",
+    "question": "Which trend generally occurs as atomic radius decreases across a period?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Electronegativity tends to decrease"
+      },
+      {
+        "label": "B",
+        "text": "Nuclear charge tends to decrease"
+      },
+      {
+        "label": "C",
+        "text": "Ionization energy tends to increase"
+      },
+      {
+        "label": "D",
+        "text": "Valence electrons disappear"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Across a period, effective nuclear charge increases, so ionization energy generally rises."
+  },
+  {
+    "id": "dat_208",
+    "exam": "DAT",
+    "section": "Organic Chemistry",
+    "skill": "functional_groups",
+    "difficulty": "easy",
+    "question": "Which functional group is present in an alcohol?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Carbonyl group"
+      },
+      {
+        "label": "B",
+        "text": "Amino group"
+      },
+      {
+        "label": "C",
+        "text": "Phosphate group"
+      },
+      {
+        "label": "D",
+        "text": "Hydroxyl group"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Alcohols are characterized by a hydroxyl (-OH) functional group."
+  },
+  {
+    "id": "dat_209",
+    "exam": "DAT",
+    "section": "Quantitative Reasoning",
+    "skill": "linear_functions",
+    "difficulty": "medium",
+    "question": "If a line has slope 3 and passes through (2, 5), what is the y-value when x = 4?",
+    "options": [
+      {
+        "label": "A",
+        "text": "11"
+      },
+      {
+        "label": "B",
+        "text": "9"
+      },
+      {
+        "label": "C",
+        "text": "10"
+      },
+      {
+        "label": "D",
+        "text": "12"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Using slope 3, moving x from 2 to 4 increases y by 6, so y = 11."
+  },
+  {
+    "id": "dat_210",
+    "exam": "DAT",
+    "section": "Reading Comprehension",
+    "skill": "main_idea",
+    "difficulty": "hard",
+    "question": "A short passage notes that regular brushing removes food particles and reduces bacterial buildup on teeth. Which choice best states the passage's main idea?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Food particles are the only cause of dental problems."
+      },
+      {
+        "label": "B",
+        "text": "Brushing helps protect teeth by reducing buildup and removing debris."
+      },
+      {
+        "label": "C",
+        "text": "Bacteria cannot live in the mouth after brushing once."
+      },
+      {
+        "label": "D",
+        "text": "Toothpaste is unnecessary for effective oral hygiene."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "The passage emphasizes the protective role of brushing in limiting buildup and debris."
+  },
+  {
+    "id": "dat_211",
+    "exam": "DAT",
+    "section": "Biology",
+    "skill": "dental_anatomy",
+    "difficulty": "easy",
+    "question": "Which structure is primarily responsible for anchoring a tooth to the alveolar bone?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Dentin"
+      },
+      {
+        "label": "B",
+        "text": "Enamel"
+      },
+      {
+        "label": "C",
+        "text": "Periodontal ligament"
+      },
+      {
+        "label": "D",
+        "text": "Pulp chamber"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "The periodontal ligament connects the tooth root to the surrounding alveolar bone."
+  },
+  {
+    "id": "dat_212",
+    "exam": "DAT",
+    "section": "General Chemistry",
+    "skill": "molarity",
+    "difficulty": "medium",
+    "question": "A dentist mixes a solution containing 0.5 moles of solute to make 0.25 liters of solution. What is the molarity?",
+    "options": [
+      {
+        "label": "A",
+        "text": "0.125 M"
+      },
+      {
+        "label": "B",
+        "text": "0.75 M"
+      },
+      {
+        "label": "C",
+        "text": "4.0 M"
+      },
+      {
+        "label": "D",
+        "text": "2.0 M"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Molarity = moles ÷ liters = 0.5 ÷ 0.25 = 2.0 M."
+  },
+  {
+    "id": "dat_213",
+    "exam": "DAT",
+    "section": "General Chemistry",
+    "skill": "periodic_trends",
+    "difficulty": "hard",
+    "question": "Which trend generally occurs as atomic radius decreases across a period?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Ionization energy tends to increase"
+      },
+      {
+        "label": "B",
+        "text": "Electronegativity tends to decrease"
+      },
+      {
+        "label": "C",
+        "text": "Nuclear charge tends to decrease"
+      },
+      {
+        "label": "D",
+        "text": "Valence electrons disappear"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Across a period, effective nuclear charge increases, so ionization energy generally rises."
+  },
+  {
+    "id": "dat_214",
+    "exam": "DAT",
+    "section": "Organic Chemistry",
+    "skill": "functional_groups",
+    "difficulty": "easy",
+    "question": "Which functional group is present in an alcohol?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Carbonyl group"
+      },
+      {
+        "label": "B",
+        "text": "Hydroxyl group"
+      },
+      {
+        "label": "C",
+        "text": "Amino group"
+      },
+      {
+        "label": "D",
+        "text": "Phosphate group"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Alcohols are characterized by a hydroxyl (-OH) functional group."
+  },
+  {
+    "id": "dat_215",
+    "exam": "DAT",
+    "section": "Quantitative Reasoning",
+    "skill": "linear_functions",
+    "difficulty": "medium",
+    "question": "If a line has slope 3 and passes through (2, 5), what is the y-value when x = 4?",
+    "options": [
+      {
+        "label": "A",
+        "text": "9"
+      },
+      {
+        "label": "B",
+        "text": "10"
+      },
+      {
+        "label": "C",
+        "text": "11"
+      },
+      {
+        "label": "D",
+        "text": "12"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Using slope 3, moving x from 2 to 4 increases y by 6, so y = 11."
+  },
+  {
+    "id": "dat_216",
+    "exam": "DAT",
+    "section": "Reading Comprehension",
+    "skill": "main_idea",
+    "difficulty": "hard",
+    "question": "A short passage notes that regular brushing removes food particles and reduces bacterial buildup on teeth. Which choice best states the passage's main idea?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Food particles are the only cause of dental problems."
+      },
+      {
+        "label": "B",
+        "text": "Bacteria cannot live in the mouth after brushing once."
+      },
+      {
+        "label": "C",
+        "text": "Toothpaste is unnecessary for effective oral hygiene."
+      },
+      {
+        "label": "D",
+        "text": "Brushing helps protect teeth by reducing buildup and removing debris."
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "The passage emphasizes the protective role of brushing in limiting buildup and debris."
+  },
+  {
+    "id": "dat_217",
+    "exam": "DAT",
+    "section": "Biology",
+    "skill": "dental_anatomy",
+    "difficulty": "easy",
+    "question": "Which structure is primarily responsible for anchoring a tooth to the alveolar bone?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Periodontal ligament"
+      },
+      {
+        "label": "B",
+        "text": "Dentin"
+      },
+      {
+        "label": "C",
+        "text": "Enamel"
+      },
+      {
+        "label": "D",
+        "text": "Pulp chamber"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "The periodontal ligament connects the tooth root to the surrounding alveolar bone."
+  },
+  {
+    "id": "dat_218",
+    "exam": "DAT",
+    "section": "General Chemistry",
+    "skill": "molarity",
+    "difficulty": "medium",
+    "question": "A dentist mixes a solution containing 0.5 moles of solute to make 0.25 liters of solution. What is the molarity?",
+    "options": [
+      {
+        "label": "A",
+        "text": "0.125 M"
+      },
+      {
+        "label": "B",
+        "text": "2.0 M"
+      },
+      {
+        "label": "C",
+        "text": "0.75 M"
+      },
+      {
+        "label": "D",
+        "text": "4.0 M"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Molarity = moles ÷ liters = 0.5 ÷ 0.25 = 2.0 M."
+  },
+  {
+    "id": "dat_219",
+    "exam": "DAT",
+    "section": "General Chemistry",
+    "skill": "periodic_trends",
+    "difficulty": "hard",
+    "question": "Which trend generally occurs as atomic radius decreases across a period?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Electronegativity tends to decrease"
+      },
+      {
+        "label": "B",
+        "text": "Nuclear charge tends to decrease"
+      },
+      {
+        "label": "C",
+        "text": "Ionization energy tends to increase"
+      },
+      {
+        "label": "D",
+        "text": "Valence electrons disappear"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Across a period, effective nuclear charge increases, so ionization energy generally rises."
+  },
+  {
+    "id": "dat_220",
+    "exam": "DAT",
+    "section": "Organic Chemistry",
+    "skill": "functional_groups",
+    "difficulty": "easy",
+    "question": "Which functional group is present in an alcohol?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Carbonyl group"
+      },
+      {
+        "label": "B",
+        "text": "Amino group"
+      },
+      {
+        "label": "C",
+        "text": "Phosphate group"
+      },
+      {
+        "label": "D",
+        "text": "Hydroxyl group"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Alcohols are characterized by a hydroxyl (-OH) functional group."
+  },
+  {
+    "id": "dat_221",
+    "exam": "DAT",
+    "section": "Quantitative Reasoning",
+    "skill": "linear_functions",
+    "difficulty": "medium",
+    "question": "If a line has slope 3 and passes through (2, 5), what is the y-value when x = 4?",
+    "options": [
+      {
+        "label": "A",
+        "text": "11"
+      },
+      {
+        "label": "B",
+        "text": "9"
+      },
+      {
+        "label": "C",
+        "text": "10"
+      },
+      {
+        "label": "D",
+        "text": "12"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Using slope 3, moving x from 2 to 4 increases y by 6, so y = 11."
+  },
+  {
+    "id": "dat_222",
+    "exam": "DAT",
+    "section": "Reading Comprehension",
+    "skill": "main_idea",
+    "difficulty": "hard",
+    "question": "A short passage notes that regular brushing removes food particles and reduces bacterial buildup on teeth. Which choice best states the passage's main idea?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Food particles are the only cause of dental problems."
+      },
+      {
+        "label": "B",
+        "text": "Brushing helps protect teeth by reducing buildup and removing debris."
+      },
+      {
+        "label": "C",
+        "text": "Bacteria cannot live in the mouth after brushing once."
+      },
+      {
+        "label": "D",
+        "text": "Toothpaste is unnecessary for effective oral hygiene."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "The passage emphasizes the protective role of brushing in limiting buildup and debris."
+  },
+  {
+    "id": "dat_223",
+    "exam": "DAT",
+    "section": "Biology",
+    "skill": "dental_anatomy",
+    "difficulty": "easy",
+    "question": "Which structure is primarily responsible for anchoring a tooth to the alveolar bone?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Dentin"
+      },
+      {
+        "label": "B",
+        "text": "Enamel"
+      },
+      {
+        "label": "C",
+        "text": "Periodontal ligament"
+      },
+      {
+        "label": "D",
+        "text": "Pulp chamber"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "The periodontal ligament connects the tooth root to the surrounding alveolar bone."
+  },
+  {
+    "id": "dat_224",
+    "exam": "DAT",
+    "section": "General Chemistry",
+    "skill": "molarity",
+    "difficulty": "medium",
+    "question": "A dentist mixes a solution containing 0.5 moles of solute to make 0.25 liters of solution. What is the molarity?",
+    "options": [
+      {
+        "label": "A",
+        "text": "0.125 M"
+      },
+      {
+        "label": "B",
+        "text": "0.75 M"
+      },
+      {
+        "label": "C",
+        "text": "4.0 M"
+      },
+      {
+        "label": "D",
+        "text": "2.0 M"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Molarity = moles ÷ liters = 0.5 ÷ 0.25 = 2.0 M."
+  },
+  {
+    "id": "dat_225",
+    "exam": "DAT",
+    "section": "General Chemistry",
+    "skill": "periodic_trends",
+    "difficulty": "hard",
+    "question": "Which trend generally occurs as atomic radius decreases across a period?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Ionization energy tends to increase"
+      },
+      {
+        "label": "B",
+        "text": "Electronegativity tends to decrease"
+      },
+      {
+        "label": "C",
+        "text": "Nuclear charge tends to decrease"
+      },
+      {
+        "label": "D",
+        "text": "Valence electrons disappear"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Across a period, effective nuclear charge increases, so ionization energy generally rises."
+  },
+  {
+    "id": "dat_226",
+    "exam": "DAT",
+    "section": "Organic Chemistry",
+    "skill": "functional_groups",
+    "difficulty": "easy",
+    "question": "Which functional group is present in an alcohol?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Carbonyl group"
+      },
+      {
+        "label": "B",
+        "text": "Hydroxyl group"
+      },
+      {
+        "label": "C",
+        "text": "Amino group"
+      },
+      {
+        "label": "D",
+        "text": "Phosphate group"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Alcohols are characterized by a hydroxyl (-OH) functional group."
+  },
+  {
+    "id": "dat_227",
+    "exam": "DAT",
+    "section": "Quantitative Reasoning",
+    "skill": "linear_functions",
+    "difficulty": "medium",
+    "question": "If a line has slope 3 and passes through (2, 5), what is the y-value when x = 4?",
+    "options": [
+      {
+        "label": "A",
+        "text": "9"
+      },
+      {
+        "label": "B",
+        "text": "10"
+      },
+      {
+        "label": "C",
+        "text": "11"
+      },
+      {
+        "label": "D",
+        "text": "12"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Using slope 3, moving x from 2 to 4 increases y by 6, so y = 11."
+  },
+  {
+    "id": "dat_228",
+    "exam": "DAT",
+    "section": "Reading Comprehension",
+    "skill": "main_idea",
+    "difficulty": "hard",
+    "question": "A short passage notes that regular brushing removes food particles and reduces bacterial buildup on teeth. Which choice best states the passage's main idea?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Food particles are the only cause of dental problems."
+      },
+      {
+        "label": "B",
+        "text": "Bacteria cannot live in the mouth after brushing once."
+      },
+      {
+        "label": "C",
+        "text": "Toothpaste is unnecessary for effective oral hygiene."
+      },
+      {
+        "label": "D",
+        "text": "Brushing helps protect teeth by reducing buildup and removing debris."
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "The passage emphasizes the protective role of brushing in limiting buildup and debris."
+  },
+  {
+    "id": "dat_229",
+    "exam": "DAT",
+    "section": "Biology",
+    "skill": "dental_anatomy",
+    "difficulty": "easy",
+    "question": "Which structure is primarily responsible for anchoring a tooth to the alveolar bone?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Periodontal ligament"
+      },
+      {
+        "label": "B",
+        "text": "Dentin"
+      },
+      {
+        "label": "C",
+        "text": "Enamel"
+      },
+      {
+        "label": "D",
+        "text": "Pulp chamber"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "The periodontal ligament connects the tooth root to the surrounding alveolar bone."
+  },
+  {
+    "id": "dat_230",
+    "exam": "DAT",
+    "section": "General Chemistry",
+    "skill": "molarity",
+    "difficulty": "medium",
+    "question": "A dentist mixes a solution containing 0.5 moles of solute to make 0.25 liters of solution. What is the molarity?",
+    "options": [
+      {
+        "label": "A",
+        "text": "0.125 M"
+      },
+      {
+        "label": "B",
+        "text": "2.0 M"
+      },
+      {
+        "label": "C",
+        "text": "0.75 M"
+      },
+      {
+        "label": "D",
+        "text": "4.0 M"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Molarity = moles ÷ liters = 0.5 ÷ 0.25 = 2.0 M."
+  },
+  {
+    "id": "dat_231",
+    "exam": "DAT",
+    "section": "General Chemistry",
+    "skill": "periodic_trends",
+    "difficulty": "hard",
+    "question": "Which trend generally occurs as atomic radius decreases across a period?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Electronegativity tends to decrease"
+      },
+      {
+        "label": "B",
+        "text": "Nuclear charge tends to decrease"
+      },
+      {
+        "label": "C",
+        "text": "Ionization energy tends to increase"
+      },
+      {
+        "label": "D",
+        "text": "Valence electrons disappear"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Across a period, effective nuclear charge increases, so ionization energy generally rises."
+  },
+  {
+    "id": "dat_232",
+    "exam": "DAT",
+    "section": "Organic Chemistry",
+    "skill": "functional_groups",
+    "difficulty": "easy",
+    "question": "Which functional group is present in an alcohol?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Carbonyl group"
+      },
+      {
+        "label": "B",
+        "text": "Amino group"
+      },
+      {
+        "label": "C",
+        "text": "Phosphate group"
+      },
+      {
+        "label": "D",
+        "text": "Hydroxyl group"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Alcohols are characterized by a hydroxyl (-OH) functional group."
+  },
+  {
+    "id": "dat_233",
+    "exam": "DAT",
+    "section": "Quantitative Reasoning",
+    "skill": "linear_functions",
+    "difficulty": "medium",
+    "question": "If a line has slope 3 and passes through (2, 5), what is the y-value when x = 4?",
+    "options": [
+      {
+        "label": "A",
+        "text": "11"
+      },
+      {
+        "label": "B",
+        "text": "9"
+      },
+      {
+        "label": "C",
+        "text": "10"
+      },
+      {
+        "label": "D",
+        "text": "12"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Using slope 3, moving x from 2 to 4 increases y by 6, so y = 11."
+  },
+  {
+    "id": "dat_234",
+    "exam": "DAT",
+    "section": "Reading Comprehension",
+    "skill": "main_idea",
+    "difficulty": "hard",
+    "question": "A short passage notes that regular brushing removes food particles and reduces bacterial buildup on teeth. Which choice best states the passage's main idea?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Food particles are the only cause of dental problems."
+      },
+      {
+        "label": "B",
+        "text": "Brushing helps protect teeth by reducing buildup and removing debris."
+      },
+      {
+        "label": "C",
+        "text": "Bacteria cannot live in the mouth after brushing once."
+      },
+      {
+        "label": "D",
+        "text": "Toothpaste is unnecessary for effective oral hygiene."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "The passage emphasizes the protective role of brushing in limiting buildup and debris."
+  },
+  {
+    "id": "dat_235",
+    "exam": "DAT",
+    "section": "Biology",
+    "skill": "dental_anatomy",
+    "difficulty": "easy",
+    "question": "Which structure is primarily responsible for anchoring a tooth to the alveolar bone?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Dentin"
+      },
+      {
+        "label": "B",
+        "text": "Enamel"
+      },
+      {
+        "label": "C",
+        "text": "Periodontal ligament"
+      },
+      {
+        "label": "D",
+        "text": "Pulp chamber"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "The periodontal ligament connects the tooth root to the surrounding alveolar bone."
+  },
+  {
+    "id": "dat_236",
+    "exam": "DAT",
+    "section": "General Chemistry",
+    "skill": "molarity",
+    "difficulty": "medium",
+    "question": "A dentist mixes a solution containing 0.5 moles of solute to make 0.25 liters of solution. What is the molarity?",
+    "options": [
+      {
+        "label": "A",
+        "text": "0.125 M"
+      },
+      {
+        "label": "B",
+        "text": "0.75 M"
+      },
+      {
+        "label": "C",
+        "text": "4.0 M"
+      },
+      {
+        "label": "D",
+        "text": "2.0 M"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Molarity = moles ÷ liters = 0.5 ÷ 0.25 = 2.0 M."
+  },
+  {
+    "id": "dat_237",
+    "exam": "DAT",
+    "section": "General Chemistry",
+    "skill": "periodic_trends",
+    "difficulty": "hard",
+    "question": "Which trend generally occurs as atomic radius decreases across a period?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Ionization energy tends to increase"
+      },
+      {
+        "label": "B",
+        "text": "Electronegativity tends to decrease"
+      },
+      {
+        "label": "C",
+        "text": "Nuclear charge tends to decrease"
+      },
+      {
+        "label": "D",
+        "text": "Valence electrons disappear"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Across a period, effective nuclear charge increases, so ionization energy generally rises."
+  },
+  {
+    "id": "dat_238",
+    "exam": "DAT",
+    "section": "Organic Chemistry",
+    "skill": "functional_groups",
+    "difficulty": "easy",
+    "question": "Which functional group is present in an alcohol?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Carbonyl group"
+      },
+      {
+        "label": "B",
+        "text": "Hydroxyl group"
+      },
+      {
+        "label": "C",
+        "text": "Amino group"
+      },
+      {
+        "label": "D",
+        "text": "Phosphate group"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Alcohols are characterized by a hydroxyl (-OH) functional group."
+  },
+  {
+    "id": "dat_239",
+    "exam": "DAT",
+    "section": "Quantitative Reasoning",
+    "skill": "linear_functions",
+    "difficulty": "medium",
+    "question": "If a line has slope 3 and passes through (2, 5), what is the y-value when x = 4?",
+    "options": [
+      {
+        "label": "A",
+        "text": "9"
+      },
+      {
+        "label": "B",
+        "text": "10"
+      },
+      {
+        "label": "C",
+        "text": "11"
+      },
+      {
+        "label": "D",
+        "text": "12"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Using slope 3, moving x from 2 to 4 increases y by 6, so y = 11."
+  },
+  {
+    "id": "dat_240",
+    "exam": "DAT",
+    "section": "Reading Comprehension",
+    "skill": "main_idea",
+    "difficulty": "hard",
+    "question": "A short passage notes that regular brushing removes food particles and reduces bacterial buildup on teeth. Which choice best states the passage's main idea?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Food particles are the only cause of dental problems."
+      },
+      {
+        "label": "B",
+        "text": "Bacteria cannot live in the mouth after brushing once."
+      },
+      {
+        "label": "C",
+        "text": "Toothpaste is unnecessary for effective oral hygiene."
+      },
+      {
+        "label": "D",
+        "text": "Brushing helps protect teeth by reducing buildup and removing debris."
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "The passage emphasizes the protective role of brushing in limiting buildup and debris."
+  }
+]
