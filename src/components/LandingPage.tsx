@@ -142,18 +142,17 @@ export const LandingPage = () => {
       <header className="px-4 pt-8 pb-12 text-center">
         <div className="max-w-2xl mx-auto">
           {/* Unified Logo */}
-          <div className="mb-6 flex justify-center">
-            <SATMasteryLogo
-              size="xl"
-              layout="stacked"
-              examType="sat"
-              showTagline={false}
-            />
+          <div className="mb-4 flex justify-center">
+            <div className="w-20 h-20 rounded-2xl bg-gradient-to-br from-primary to-accent flex items-center justify-center shadow-lg">
+              <span className="font-bold text-primary-foreground font-mono text-xl">40²</span>
+            </div>
           </div>
-          
+          <h1 className="text-3xl font-bold mb-2">40² Test Prep</h1>
+          <p className="text-sm text-muted-foreground mb-1">SAT • PSAT • ACT • AP</p>
+
           {/* Headline */}
           <p className="text-lg text-muted-foreground mb-6">
-            Free SAT prep that actually works. Practice smarter, not harder.
+            Free test prep that actually works. Practice smarter, not harder.
           </p>
 
           {/* SAT Countdown */}
