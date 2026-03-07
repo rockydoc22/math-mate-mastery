@@ -1,0 +1,35 @@
+{
+  "title": "Decision Rules",
+  "rules": [
+    {
+      "id": "confidence_builder_start",
+      "if": "recent_accuracy < 60 or streak_wrong >= 2",
+      "then": "start next session with 2 easier confidence-building items"
+    },
+    {
+      "id": "promote_difficulty",
+      "if": "recent_accuracy >= 80 and mastery rising in same skill bucket",
+      "then": "increase difficulty by one level for next 3-5 items"
+    },
+    {
+      "id": "mixed_review",
+      "if": "recent_accuracy between 60 and 79",
+      "then": "serve mixed review with 70 percent target skill and 30 percent easier support items"
+    },
+    {
+      "id": "conversation_reactivation",
+      "if": "conversation activity has not been used in 5 sessions",
+      "then": "recommend one conversation session as next activity"
+    },
+    {
+      "id": "fatigue_protection",
+      "if": "avg_time_per_item is rising while accuracy drops",
+      "then": "switch to shorter session or easier task type"
+    },
+    {
+      "id": "parent_limit_mode",
+      "if": "parent_time_limit is active",
+      "then": "prioritize short high-value tasks and defer long activities"
+    }
+  ]
+}

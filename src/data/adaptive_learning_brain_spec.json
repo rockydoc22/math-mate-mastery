@@ -1,0 +1,31 @@
+{
+  "title": "Adaptive Learning Brain",
+  "purpose": "Select the next best activity across language, testing, conversation, cognitive skills, and strategy practice.",
+  "core_inputs": [
+    "recent_accuracy",
+    "recent_time_spent",
+    "confidence_level",
+    "mastery_by_skill",
+    "mastery_by_language",
+    "streak_status",
+    "preferred_activity_types",
+    "age_band",
+    "parent_or_teacher_constraints",
+    "fatigue_signals"
+  ],
+  "core_outputs": [
+    "next_story",
+    "next_conversation",
+    "next_quiz_set",
+    "next_strategy_scenario",
+    "next_cognitive_skill_activity",
+    "recommended_session_length",
+    "recommended_difficulty"
+  ],
+  "design_goals": [
+    "Keep students progressing without feeling stuck.",
+    "Mix strengths, weak spots, and confidence-building items.",
+    "Prevent overloading the learner with too much difficulty too fast.",
+    "Support both short and long sessions."
+  ]
+}

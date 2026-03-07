@@ -1,0 +1,17 @@
+{
+  "title": "Cross-App Recommendation Logic",
+  "language_app_rules": [
+    "If vocabulary accuracy drops, recommend story or conversation activities using those words.",
+    "If conversation mastery stalls, recommend translation-reveal mode before shadowing mode.",
+    "If reading strength rises, unlock longer stories or harder CEFR layers."
+  ],
+  "testing_app_rules": [
+    "If time is weak but accuracy is decent, recommend timed mode.",
+    "If high-confidence wrong answers rise, recommend strategy scenarios before more volume.",
+    "If one exam section is clearly weakest, bias next session toward that section."
+  ],
+  "shared_rules": [
+    "Use coins and streaks to surface motivating but useful next tasks.",
+    "Alternate harder and easier modes to avoid burnout."
+  ]
+}

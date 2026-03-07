@@ -1,0 +1,34 @@
+{
+  "title": "Session Builder",
+  "templates": [
+    {
+      "name": "short_8_minute_session",
+      "flow": [
+        "1 confidence-building item",
+        "3 target-skill items",
+        "1 reward / easier item",
+        "1 progress summary"
+      ]
+    },
+    {
+      "name": "standard_15_minute_session",
+      "flow": [
+        "2 warm-up items",
+        "5 target-skill items",
+        "2 mixed review items",
+        "1 challenge item",
+        "1 progress summary"
+      ]
+    },
+    {
+      "name": "deep_25_minute_session",
+      "flow": [
+        "2 warm-up items",
+        "8 target-skill items",
+        "3 mixed review items",
+        "2 challenge items",
+        "1 mastery summary and next recommendation"
+      ]
+    }
+  ]
+}
