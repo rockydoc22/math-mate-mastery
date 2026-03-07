@@ -1,0 +1,19 @@
+{
+  "title": "Skill Graph / Knowledge Map Engine",
+  "purpose": "Represent learner progress as a visual network of connected skills across language, testing, conversation, strategy, and cognitive practice.",
+  "core_goals": [
+    "show what skills are mastered",
+    "show what skills are emerging",
+    "show what skills unlock next",
+    "support adaptive recommendations",
+    "make progress visualization more motivating than flat scores"
+  ],
+  "map_types": [
+    "language_skill_map",
+    "testing_skill_map",
+    "conversation_skill_map",
+    "strategy_skill_map",
+    "cognitive_skill_map",
+    "combined_growth_map"
+  ]
+}

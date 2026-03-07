@@ -1,0 +1,107 @@
+{
+  "title": "Sample Map Nodes and Edges",
+  "language_skill_map_nodes": [
+    {
+      "node_id": "lang_reading_a1",
+      "map_type": "language_skill_map",
+      "skill_name": "A1 Reading Basics",
+      "skill_category": "reading",
+      "difficulty_band": "A1",
+      "mastery_level": "N3",
+      "mastery_score": 0.78,
+      "prerequisite_nodes": [],
+      "unlock_nodes": [
+        "lang_reading_a2",
+        "lang_vocab_daily"
+      ],
+      "recommended_content_ids": [
+        "story_101",
+        "story_118"
+      ],
+      "last_practiced_at": "2026-03-07",
+      "evidence_count": 14
+    },
+    {
+      "node_id": "lang_conversation_intro",
+      "map_type": "conversation_skill_map",
+      "skill_name": "Intro Conversation Handling",
+      "skill_category": "conversation",
+      "difficulty_band": "A1",
+      "mastery_level": "N2",
+      "mastery_score": 0.56,
+      "prerequisite_nodes": [
+        "lang_vocab_daily"
+      ],
+      "unlock_nodes": [
+        "lang_conversation_daily"
+      ],
+      "recommended_content_ids": [
+        "gcp05_01",
+        "gcp05_02"
+      ],
+      "last_practiced_at": "2026-03-06",
+      "evidence_count": 7
+    }
+  ],
+  "testing_skill_map_nodes": [
+    {
+      "node_id": "test_algebra_linear",
+      "map_type": "testing_skill_map",
+      "skill_name": "Linear Equations",
+      "skill_category": "math",
+      "difficulty_band": "L2",
+      "mastery_level": "N4",
+      "mastery_score": 0.88,
+      "prerequisite_nodes": [],
+      "unlock_nodes": [
+        "test_algebra_word_problems"
+      ],
+      "recommended_content_ids": [
+        "sat_math_001",
+        "asvab_q_001"
+      ],
+      "last_practiced_at": "2026-03-07",
+      "evidence_count": 22
+    },
+    {
+      "node_id": "test_reading_inference",
+      "map_type": "testing_skill_map",
+      "skill_name": "Reading Inference",
+      "skill_category": "reading",
+      "difficulty_band": "L3",
+      "mastery_level": "N2",
+      "mastery_score": 0.51,
+      "prerequisite_nodes": [
+        "test_reading_main_idea"
+      ],
+      "unlock_nodes": [
+        "test_reading_argument_analysis"
+      ],
+      "recommended_content_ids": [
+        "lsat_lr_001"
+      ],
+      "last_practiced_at": "2026-03-05",
+      "evidence_count": 9
+    }
+  ],
+  "sample_edges": [
+    {
+      "edge_id": "e001",
+      "from_node": "lang_reading_a1",
+      "to_node": "lang_conversation_intro",
+      "relationship_type": "supports"
+    },
+    {
+      "edge_id": "e002",
+      "from_node": "test_algebra_linear",
+      "to_node": "test_algebra_word_problems",
+      "relationship_type": "prerequisite"
+    },
+    {
+      "edge_id": "e003",
+      "from_node": "test_reading_inference",
+      "to_node": "strategy_elimination_reading",
+      "relationship_type": "often_practiced_with"
+    }
+  ]
+}

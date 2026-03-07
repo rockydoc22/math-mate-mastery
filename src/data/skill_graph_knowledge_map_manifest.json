@@ -1,0 +1,12 @@
+{
+  "title": "Skill Graph / Knowledge Map Pack",
+  "files": [
+    "skill_graph_spec.json",
+    "skill_node_schema.json",
+    "skill_edge_schema.json",
+    "sample_skill_maps.json",
+    "mastery_update_rules.json",
+    "knowledge_map_ui_spec.json",
+    "knowledge_map_recommendation_hooks.json"
+  ]
+}

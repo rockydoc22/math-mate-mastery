@@ -1,0 +1,16 @@
+{
+  "title": "Skill Edge Schema",
+  "fields": [
+    "edge_id",
+    "from_node",
+    "to_node",
+    "relationship_type",
+    "strength_optional"
+  ],
+  "relationship_types": [
+    "prerequisite",
+    "supports",
+    "often_practiced_with",
+    "recommended_next"
+  ]
+}
