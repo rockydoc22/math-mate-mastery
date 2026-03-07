@@ -1,0 +1,35 @@
+{
+  "title": "Sample Next Activity Outputs",
+  "examples": [
+    {
+      "profile": "Language learner age 11 with weak recent conversation accuracy",
+      "recommended_next": {
+        "activity_type": "conversation_review",
+        "mode": "translation_reveal",
+        "difficulty": "A1",
+        "session_length_min": 8,
+        "reason": "Conversation was weak recently, so the engine recommends a shorter supported session."
+      }
+    },
+    {
+      "profile": "Test-prep student with strong algebra accuracy but weak pacing",
+      "recommended_next": {
+        "activity_type": "timed_quiz",
+        "mode": "speed_ladder",
+        "difficulty": "medium",
+        "session_length_min": 10,
+        "reason": "Accuracy is fine, but timing is weak, so timed mode is the highest-value next task."
+      }
+    },
+    {
+      "profile": "Teen with repeated high-confidence misses in reading inference",
+      "recommended_next": {
+        "activity_type": "strategy_scenarios",
+        "mode": "elimination_lab",
+        "difficulty": "L2",
+        "session_length_min": 12,
+        "reason": "High-confidence misses suggest misconception, so strategy work comes before more volume."
+      }
+    }
+  ]
+}

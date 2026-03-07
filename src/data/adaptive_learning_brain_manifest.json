@@ -1,0 +1,11 @@
+{
+  "title": "Adaptive Learning Brain Pack",
+  "files": [
+    "adaptive_learning_brain_spec.json",
+    "adaptive_learning_brain_decision_rules.json",
+    "adaptive_learning_brain_session_builder.json",
+    "adaptive_learning_brain_cross_app_logic.json",
+    "adaptive_learning_brain_student_state_schema.json",
+    "adaptive_learning_brain_sample_outputs.json"
+  ]
+}
