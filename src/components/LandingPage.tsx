@@ -78,7 +78,7 @@ const testimonials = [
     score: "1480"
   },
   {
-    quote: "Best SAT prep app I've used. Period.",
+    quote: "Best test prep app I've used. Period.",
     author: "Jordan T.",
     score: "1560"
   }
