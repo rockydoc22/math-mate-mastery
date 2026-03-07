@@ -1,0 +1,55 @@
+{
+  "title": "Teacher Assignment Templates",
+  "templates": [
+    {
+      "id": "template_language_light",
+      "name": "Light Language Homework",
+      "includes": [
+        "1 story",
+        "1 vocabulary review",
+        "1 short quiz"
+      ],
+      "estimated_minutes": 12
+    },
+    {
+      "id": "template_language_conversation",
+      "name": "Conversation Practice",
+      "includes": [
+        "1 conversation session",
+        "1 shadowing activity",
+        "1 comprehension check"
+      ],
+      "estimated_minutes": 10
+    },
+    {
+      "id": "template_test_strategy",
+      "name": "Test Strategy Mini-Pack",
+      "includes": [
+        "5 practice questions",
+        "2 strategy scenarios",
+        "1 review summary"
+      ],
+      "estimated_minutes": 15
+    },
+    {
+      "id": "template_timed_drill",
+      "name": "Timed Drill",
+      "includes": [
+        "1 timed round",
+        "1 pacing review",
+        "1 reflection prompt"
+      ],
+      "estimated_minutes": 12
+    },
+    {
+      "id": "template_cognitive_short",
+      "name": "Cognitive Skills Short Set",
+      "includes": [
+        "2 pattern items",
+        "2 memory items",
+        "1 logic item"
+      ],
+      "estimated_minutes": 8
+    }
+  ]
+}

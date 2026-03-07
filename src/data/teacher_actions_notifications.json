@@ -1,0 +1,18 @@
+{
+  "title": "Teacher Actions and Notifications",
+  "actions": [
+    "assign_now",
+    "save_as_template",
+    "duplicate_assignment",
+    "send_reminder",
+    "extend_due_date",
+    "mark_excused",
+    "export_results"
+  ],
+  "notification_rules": [
+    "Students get a visible in-app assignment card.",
+    "Parents can optionally receive assignment summaries.",
+    "Teachers get due-soon and overdue summaries.",
+    "Celebrate strong completion rates as well as flag support needs."
+  ]
+}
