@@ -1,0 +1,21 @@
+{
+  "title": "Leaderboard Metrics",
+  "core_metrics": [
+    "coins_earned",
+    "quests_completed",
+    "accuracy_average",
+    "minutes_practiced",
+    "stories_completed",
+    "conversations_completed",
+    "timed_rounds_completed",
+    "strategy_scenarios_completed",
+    "mastery_upgrades",
+    "duel_wins"
+  ],
+  "recommended_primary_metrics": [
+    "weekly_points",
+    "weekly_improvement",
+    "quest_completion_rate",
+    "streak_days"
+  ]
+}

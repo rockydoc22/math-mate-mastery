@@ -1,0 +1,17 @@
+{
+  "title": "Student Leaderboard + Classroom Competition Layer",
+  "purpose": "Add healthy competition for classes, groups, and friend circles without making the app feel punitive.",
+  "competition_types": [
+    "class_weekly_leaderboard",
+    "team_vs_team_challenge",
+    "friend_circle_leaderboard",
+    "quest_completion_race",
+    "accuracy_challenge",
+    "streak_challenge"
+  ],
+  "design_rules": [
+    "Reward improvement, consistency, and completion—not just top raw score.",
+    "Allow teachers and parents to disable rankings or hide names.",
+    "Use team-based views for younger learners."
+  ]
+}

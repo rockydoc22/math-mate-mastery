@@ -1,0 +1,16 @@
+{
+  "title": "Privacy and Safety Rules",
+  "rules": [
+    "Allow nickname-only display by default.",
+    "Allow teachers and parents to hide public rank positions.",
+    "Support opt-out from public leaderboards.",
+    "Do not show exact low ranks to all users in kid mode."
+  ],
+  "display_options": [
+    "full leaderboard",
+    "top_5_only",
+    "your_position_plus_neighbors",
+    "team_progress_only",
+    "hidden_rank_mode"
+  ]
+}

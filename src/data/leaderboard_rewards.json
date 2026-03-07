@@ -1,0 +1,28 @@
+{
+  "title": "Leaderboard Rewards",
+  "reward_types": [
+    "coins",
+    "badges",
+    "unlock_tokens",
+    "special themes",
+    "streak_freeze_token"
+  ],
+  "sample_rewards": [
+    {
+      "placement": "top_3",
+      "reward": "bonus coins + badge"
+    },
+    {
+      "placement": "top_improver",
+      "reward": "special improvement badge"
+    },
+    {
+      "placement": "completed_weekly_goal",
+      "reward": "coins + unlock token"
+    },
+    {
+      "placement": "team_winner",
+      "reward": "team badge + class celebration banner"
+    }
+  ]
+}

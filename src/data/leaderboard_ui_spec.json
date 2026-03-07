@@ -1,0 +1,20 @@
+{
+  "title": "Leaderboard UI Spec",
+  "views": [
+    "leaderboard_home",
+    "weekly_theme_banner",
+    "individual_rank_list",
+    "team_progress_view",
+    "improvement_badges",
+    "reward_claim_popup",
+    "end_of_week_summary"
+  ],
+  "widgets": [
+    "rank_card",
+    "progress_bar",
+    "team_meter",
+    "badge_chip",
+    "weekly_timer",
+    "claim_reward_button"
+  ]
+}
