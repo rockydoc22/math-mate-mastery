@@ -1,0 +1,8102 @@
+[
+  {
+    "id": "asvab_q_001",
+    "exam": "ASVAB",
+    "section": "Arithmetic Reasoning",
+    "difficulty": "easy",
+    "question": "If 2x + 3 = 11, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "4"
+      },
+      {
+        "label": "B",
+        "text": "5"
+      },
+      {
+        "label": "C",
+        "text": "3"
+      },
+      {
+        "label": "D",
+        "text": "11"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_002",
+    "exam": "ASVAB",
+    "section": "Mathematics Knowledge",
+    "difficulty": "medium",
+    "question": "If 3x + 4 = 19, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "6"
+      },
+      {
+        "label": "B",
+        "text": "5"
+      },
+      {
+        "label": "C",
+        "text": "4"
+      },
+      {
+        "label": "D",
+        "text": "19"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_003",
+    "exam": "ASVAB",
+    "section": "Word Knowledge",
+    "difficulty": "hard",
+    "question": "If 4x + 5 = 29, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "7"
+      },
+      {
+        "label": "B",
+        "text": "5"
+      },
+      {
+        "label": "C",
+        "text": "6"
+      },
+      {
+        "label": "D",
+        "text": "29"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_004",
+    "exam": "ASVAB",
+    "section": "Paragraph Comprehension",
+    "difficulty": "easy",
+    "question": "If 5x + 6 = 41, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "8"
+      },
+      {
+        "label": "B",
+        "text": "6"
+      },
+      {
+        "label": "C",
+        "text": "41"
+      },
+      {
+        "label": "D",
+        "text": "7"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_005",
+    "exam": "ASVAB",
+    "section": "Arithmetic Reasoning",
+    "difficulty": "medium",
+    "question": "If 6x + 7 = 55, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "8"
+      },
+      {
+        "label": "B",
+        "text": "9"
+      },
+      {
+        "label": "C",
+        "text": "7"
+      },
+      {
+        "label": "D",
+        "text": "55"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_006",
+    "exam": "ASVAB",
+    "section": "Mathematics Knowledge",
+    "difficulty": "hard",
+    "question": "If 7x + 3 = 66, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "10"
+      },
+      {
+        "label": "B",
+        "text": "9"
+      },
+      {
+        "label": "C",
+        "text": "8"
+      },
+      {
+        "label": "D",
+        "text": "66"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_007",
+    "exam": "ASVAB",
+    "section": "Word Knowledge",
+    "difficulty": "easy",
+    "question": "If 2x + 4 = 24, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "11"
+      },
+      {
+        "label": "B",
+        "text": "9"
+      },
+      {
+        "label": "C",
+        "text": "10"
+      },
+      {
+        "label": "D",
+        "text": "24"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_008",
+    "exam": "ASVAB",
+    "section": "Paragraph Comprehension",
+    "difficulty": "medium",
+    "question": "If 3x + 5 = 17, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "5"
+      },
+      {
+        "label": "B",
+        "text": "3"
+      },
+      {
+        "label": "C",
+        "text": "17"
+      },
+      {
+        "label": "D",
+        "text": "4"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_009",
+    "exam": "ASVAB",
+    "section": "Arithmetic Reasoning",
+    "difficulty": "hard",
+    "question": "If 4x + 6 = 26, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "5"
+      },
+      {
+        "label": "B",
+        "text": "6"
+      },
+      {
+        "label": "C",
+        "text": "4"
+      },
+      {
+        "label": "D",
+        "text": "26"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_010",
+    "exam": "ASVAB",
+    "section": "Mathematics Knowledge",
+    "difficulty": "easy",
+    "question": "If 5x + 7 = 37, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "7"
+      },
+      {
+        "label": "B",
+        "text": "6"
+      },
+      {
+        "label": "C",
+        "text": "5"
+      },
+      {
+        "label": "D",
+        "text": "37"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_011",
+    "exam": "ASVAB",
+    "section": "Word Knowledge",
+    "difficulty": "medium",
+    "question": "If 6x + 3 = 45, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "8"
+      },
+      {
+        "label": "B",
+        "text": "6"
+      },
+      {
+        "label": "C",
+        "text": "7"
+      },
+      {
+        "label": "D",
+        "text": "45"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_012",
+    "exam": "ASVAB",
+    "section": "Paragraph Comprehension",
+    "difficulty": "hard",
+    "question": "If 7x + 4 = 60, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "9"
+      },
+      {
+        "label": "B",
+        "text": "7"
+      },
+      {
+        "label": "C",
+        "text": "60"
+      },
+      {
+        "label": "D",
+        "text": "8"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_013",
+    "exam": "ASVAB",
+    "section": "Arithmetic Reasoning",
+    "difficulty": "easy",
+    "question": "If 2x + 5 = 23, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "9"
+      },
+      {
+        "label": "B",
+        "text": "10"
+      },
+      {
+        "label": "C",
+        "text": "8"
+      },
+      {
+        "label": "D",
+        "text": "23"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_014",
+    "exam": "ASVAB",
+    "section": "Mathematics Knowledge",
+    "difficulty": "medium",
+    "question": "If 3x + 6 = 36, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "11"
+      },
+      {
+        "label": "B",
+        "text": "10"
+      },
+      {
+        "label": "C",
+        "text": "9"
+      },
+      {
+        "label": "D",
+        "text": "36"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_015",
+    "exam": "ASVAB",
+    "section": "Word Knowledge",
+    "difficulty": "hard",
+    "question": "If 4x + 7 = 23, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "5"
+      },
+      {
+        "label": "B",
+        "text": "3"
+      },
+      {
+        "label": "C",
+        "text": "4"
+      },
+      {
+        "label": "D",
+        "text": "23"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_016",
+    "exam": "ASVAB",
+    "section": "Paragraph Comprehension",
+    "difficulty": "easy",
+    "question": "If 5x + 3 = 28, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "6"
+      },
+      {
+        "label": "B",
+        "text": "4"
+      },
+      {
+        "label": "C",
+        "text": "28"
+      },
+      {
+        "label": "D",
+        "text": "5"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_017",
+    "exam": "ASVAB",
+    "section": "Arithmetic Reasoning",
+    "difficulty": "medium",
+    "question": "If 6x + 4 = 40, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "6"
+      },
+      {
+        "label": "B",
+        "text": "7"
+      },
+      {
+        "label": "C",
+        "text": "5"
+      },
+      {
+        "label": "D",
+        "text": "40"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_018",
+    "exam": "ASVAB",
+    "section": "Mathematics Knowledge",
+    "difficulty": "hard",
+    "question": "If 7x + 5 = 54, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "8"
+      },
+      {
+        "label": "B",
+        "text": "7"
+      },
+      {
+        "label": "C",
+        "text": "6"
+      },
+      {
+        "label": "D",
+        "text": "54"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_019",
+    "exam": "ASVAB",
+    "section": "Word Knowledge",
+    "difficulty": "easy",
+    "question": "If 2x + 6 = 22, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "9"
+      },
+      {
+        "label": "B",
+        "text": "7"
+      },
+      {
+        "label": "C",
+        "text": "8"
+      },
+      {
+        "label": "D",
+        "text": "22"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_020",
+    "exam": "ASVAB",
+    "section": "Paragraph Comprehension",
+    "difficulty": "medium",
+    "question": "If 3x + 7 = 34, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "10"
+      },
+      {
+        "label": "B",
+        "text": "8"
+      },
+      {
+        "label": "C",
+        "text": "34"
+      },
+      {
+        "label": "D",
+        "text": "9"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_021",
+    "exam": "ASVAB",
+    "section": "Arithmetic Reasoning",
+    "difficulty": "hard",
+    "question": "If 4x + 3 = 43, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "10"
+      },
+      {
+        "label": "B",
+        "text": "11"
+      },
+      {
+        "label": "C",
+        "text": "9"
+      },
+      {
+        "label": "D",
+        "text": "43"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_022",
+    "exam": "ASVAB",
+    "section": "Mathematics Knowledge",
+    "difficulty": "easy",
+    "question": "If 5x + 4 = 24, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "5"
+      },
+      {
+        "label": "B",
+        "text": "4"
+      },
+      {
+        "label": "C",
+        "text": "3"
+      },
+      {
+        "label": "D",
+        "text": "24"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_023",
+    "exam": "ASVAB",
+    "section": "Word Knowledge",
+    "difficulty": "medium",
+    "question": "If 6x + 5 = 35, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "6"
+      },
+      {
+        "label": "B",
+        "text": "4"
+      },
+      {
+        "label": "C",
+        "text": "5"
+      },
+      {
+        "label": "D",
+        "text": "35"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_024",
+    "exam": "ASVAB",
+    "section": "Paragraph Comprehension",
+    "difficulty": "hard",
+    "question": "If 7x + 6 = 48, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "7"
+      },
+      {
+        "label": "B",
+        "text": "5"
+      },
+      {
+        "label": "C",
+        "text": "48"
+      },
+      {
+        "label": "D",
+        "text": "6"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_025",
+    "exam": "ASVAB",
+    "section": "Arithmetic Reasoning",
+    "difficulty": "easy",
+    "question": "If 2x + 7 = 21, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "7"
+      },
+      {
+        "label": "B",
+        "text": "8"
+      },
+      {
+        "label": "C",
+        "text": "6"
+      },
+      {
+        "label": "D",
+        "text": "21"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_026",
+    "exam": "ASVAB",
+    "section": "Mathematics Knowledge",
+    "difficulty": "medium",
+    "question": "If 3x + 3 = 27, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "9"
+      },
+      {
+        "label": "B",
+        "text": "8"
+      },
+      {
+        "label": "C",
+        "text": "7"
+      },
+      {
+        "label": "D",
+        "text": "27"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_027",
+    "exam": "ASVAB",
+    "section": "Word Knowledge",
+    "difficulty": "hard",
+    "question": "If 4x + 4 = 40, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "10"
+      },
+      {
+        "label": "B",
+        "text": "8"
+      },
+      {
+        "label": "C",
+        "text": "9"
+      },
+      {
+        "label": "D",
+        "text": "40"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_028",
+    "exam": "ASVAB",
+    "section": "Paragraph Comprehension",
+    "difficulty": "easy",
+    "question": "If 5x + 5 = 55, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "11"
+      },
+      {
+        "label": "B",
+        "text": "9"
+      },
+      {
+        "label": "C",
+        "text": "55"
+      },
+      {
+        "label": "D",
+        "text": "10"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_029",
+    "exam": "ASVAB",
+    "section": "Arithmetic Reasoning",
+    "difficulty": "medium",
+    "question": "If 6x + 6 = 30, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "4"
+      },
+      {
+        "label": "B",
+        "text": "5"
+      },
+      {
+        "label": "C",
+        "text": "3"
+      },
+      {
+        "label": "D",
+        "text": "30"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_030",
+    "exam": "ASVAB",
+    "section": "Mathematics Knowledge",
+    "difficulty": "hard",
+    "question": "If 7x + 7 = 42, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "6"
+      },
+      {
+        "label": "B",
+        "text": "5"
+      },
+      {
+        "label": "C",
+        "text": "4"
+      },
+      {
+        "label": "D",
+        "text": "42"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_031",
+    "exam": "ASVAB",
+    "section": "Word Knowledge",
+    "difficulty": "easy",
+    "question": "If 2x + 3 = 15, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "7"
+      },
+      {
+        "label": "B",
+        "text": "5"
+      },
+      {
+        "label": "C",
+        "text": "6"
+      },
+      {
+        "label": "D",
+        "text": "15"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_032",
+    "exam": "ASVAB",
+    "section": "Paragraph Comprehension",
+    "difficulty": "medium",
+    "question": "If 3x + 4 = 25, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "8"
+      },
+      {
+        "label": "B",
+        "text": "6"
+      },
+      {
+        "label": "C",
+        "text": "25"
+      },
+      {
+        "label": "D",
+        "text": "7"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_033",
+    "exam": "ASVAB",
+    "section": "Arithmetic Reasoning",
+    "difficulty": "hard",
+    "question": "If 4x + 5 = 37, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "8"
+      },
+      {
+        "label": "B",
+        "text": "9"
+      },
+      {
+        "label": "C",
+        "text": "7"
+      },
+      {
+        "label": "D",
+        "text": "37"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_034",
+    "exam": "ASVAB",
+    "section": "Mathematics Knowledge",
+    "difficulty": "easy",
+    "question": "If 5x + 6 = 51, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "10"
+      },
+      {
+        "label": "B",
+        "text": "9"
+      },
+      {
+        "label": "C",
+        "text": "8"
+      },
+      {
+        "label": "D",
+        "text": "51"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_035",
+    "exam": "ASVAB",
+    "section": "Word Knowledge",
+    "difficulty": "medium",
+    "question": "If 6x + 7 = 67, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "11"
+      },
+      {
+        "label": "B",
+        "text": "9"
+      },
+      {
+        "label": "C",
+        "text": "10"
+      },
+      {
+        "label": "D",
+        "text": "67"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_036",
+    "exam": "ASVAB",
+    "section": "Paragraph Comprehension",
+    "difficulty": "hard",
+    "question": "If 7x + 3 = 31, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "5"
+      },
+      {
+        "label": "B",
+        "text": "3"
+      },
+      {
+        "label": "C",
+        "text": "31"
+      },
+      {
+        "label": "D",
+        "text": "4"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_037",
+    "exam": "ASVAB",
+    "section": "Arithmetic Reasoning",
+    "difficulty": "easy",
+    "question": "If 2x + 4 = 14, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "5"
+      },
+      {
+        "label": "B",
+        "text": "6"
+      },
+      {
+        "label": "C",
+        "text": "4"
+      },
+      {
+        "label": "D",
+        "text": "14"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_038",
+    "exam": "ASVAB",
+    "section": "Mathematics Knowledge",
+    "difficulty": "medium",
+    "question": "If 3x + 5 = 23, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "7"
+      },
+      {
+        "label": "B",
+        "text": "6"
+      },
+      {
+        "label": "C",
+        "text": "5"
+      },
+      {
+        "label": "D",
+        "text": "23"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_039",
+    "exam": "ASVAB",
+    "section": "Word Knowledge",
+    "difficulty": "hard",
+    "question": "If 4x + 6 = 34, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "8"
+      },
+      {
+        "label": "B",
+        "text": "6"
+      },
+      {
+        "label": "C",
+        "text": "7"
+      },
+      {
+        "label": "D",
+        "text": "34"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_040",
+    "exam": "ASVAB",
+    "section": "Paragraph Comprehension",
+    "difficulty": "easy",
+    "question": "If 5x + 7 = 47, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "9"
+      },
+      {
+        "label": "B",
+        "text": "7"
+      },
+      {
+        "label": "C",
+        "text": "47"
+      },
+      {
+        "label": "D",
+        "text": "8"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_041",
+    "exam": "ASVAB",
+    "section": "Arithmetic Reasoning",
+    "difficulty": "medium",
+    "question": "If 6x + 3 = 57, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "9"
+      },
+      {
+        "label": "B",
+        "text": "10"
+      },
+      {
+        "label": "C",
+        "text": "8"
+      },
+      {
+        "label": "D",
+        "text": "57"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_042",
+    "exam": "ASVAB",
+    "section": "Mathematics Knowledge",
+    "difficulty": "hard",
+    "question": "If 7x + 4 = 74, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "11"
+      },
+      {
+        "label": "B",
+        "text": "10"
+      },
+      {
+        "label": "C",
+        "text": "9"
+      },
+      {
+        "label": "D",
+        "text": "74"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_043",
+    "exam": "ASVAB",
+    "section": "Word Knowledge",
+    "difficulty": "easy",
+    "question": "If 2x + 5 = 13, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "5"
+      },
+      {
+        "label": "B",
+        "text": "3"
+      },
+      {
+        "label": "C",
+        "text": "4"
+      },
+      {
+        "label": "D",
+        "text": "13"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_044",
+    "exam": "ASVAB",
+    "section": "Paragraph Comprehension",
+    "difficulty": "medium",
+    "question": "If 3x + 6 = 21, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "6"
+      },
+      {
+        "label": "B",
+        "text": "4"
+      },
+      {
+        "label": "C",
+        "text": "21"
+      },
+      {
+        "label": "D",
+        "text": "5"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_045",
+    "exam": "ASVAB",
+    "section": "Arithmetic Reasoning",
+    "difficulty": "hard",
+    "question": "If 4x + 7 = 31, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "6"
+      },
+      {
+        "label": "B",
+        "text": "7"
+      },
+      {
+        "label": "C",
+        "text": "5"
+      },
+      {
+        "label": "D",
+        "text": "31"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_046",
+    "exam": "ASVAB",
+    "section": "Mathematics Knowledge",
+    "difficulty": "easy",
+    "question": "If 5x + 3 = 38, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "8"
+      },
+      {
+        "label": "B",
+        "text": "7"
+      },
+      {
+        "label": "C",
+        "text": "6"
+      },
+      {
+        "label": "D",
+        "text": "38"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_047",
+    "exam": "ASVAB",
+    "section": "Word Knowledge",
+    "difficulty": "medium",
+    "question": "If 6x + 4 = 52, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "9"
+      },
+      {
+        "label": "B",
+        "text": "7"
+      },
+      {
+        "label": "C",
+        "text": "8"
+      },
+      {
+        "label": "D",
+        "text": "52"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_048",
+    "exam": "ASVAB",
+    "section": "Paragraph Comprehension",
+    "difficulty": "hard",
+    "question": "If 7x + 5 = 68, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "10"
+      },
+      {
+        "label": "B",
+        "text": "8"
+      },
+      {
+        "label": "C",
+        "text": "68"
+      },
+      {
+        "label": "D",
+        "text": "9"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_049",
+    "exam": "ASVAB",
+    "section": "Arithmetic Reasoning",
+    "difficulty": "easy",
+    "question": "If 2x + 6 = 26, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "10"
+      },
+      {
+        "label": "B",
+        "text": "11"
+      },
+      {
+        "label": "C",
+        "text": "9"
+      },
+      {
+        "label": "D",
+        "text": "26"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_050",
+    "exam": "ASVAB",
+    "section": "Mathematics Knowledge",
+    "difficulty": "medium",
+    "question": "If 3x + 7 = 19, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "5"
+      },
+      {
+        "label": "B",
+        "text": "4"
+      },
+      {
+        "label": "C",
+        "text": "3"
+      },
+      {
+        "label": "D",
+        "text": "19"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_051",
+    "exam": "ASVAB",
+    "section": "Word Knowledge",
+    "difficulty": "hard",
+    "question": "If 4x + 3 = 23, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "6"
+      },
+      {
+        "label": "B",
+        "text": "4"
+      },
+      {
+        "label": "C",
+        "text": "5"
+      },
+      {
+        "label": "D",
+        "text": "23"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_052",
+    "exam": "ASVAB",
+    "section": "Paragraph Comprehension",
+    "difficulty": "easy",
+    "question": "If 5x + 4 = 34, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "7"
+      },
+      {
+        "label": "B",
+        "text": "5"
+      },
+      {
+        "label": "C",
+        "text": "34"
+      },
+      {
+        "label": "D",
+        "text": "6"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_053",
+    "exam": "ASVAB",
+    "section": "Arithmetic Reasoning",
+    "difficulty": "medium",
+    "question": "If 6x + 5 = 47, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "7"
+      },
+      {
+        "label": "B",
+        "text": "8"
+      },
+      {
+        "label": "C",
+        "text": "6"
+      },
+      {
+        "label": "D",
+        "text": "47"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_054",
+    "exam": "ASVAB",
+    "section": "Mathematics Knowledge",
+    "difficulty": "hard",
+    "question": "If 7x + 6 = 62, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "9"
+      },
+      {
+        "label": "B",
+        "text": "8"
+      },
+      {
+        "label": "C",
+        "text": "7"
+      },
+      {
+        "label": "D",
+        "text": "62"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_055",
+    "exam": "ASVAB",
+    "section": "Word Knowledge",
+    "difficulty": "easy",
+    "question": "If 2x + 7 = 25, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "10"
+      },
+      {
+        "label": "B",
+        "text": "8"
+      },
+      {
+        "label": "C",
+        "text": "9"
+      },
+      {
+        "label": "D",
+        "text": "25"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_056",
+    "exam": "ASVAB",
+    "section": "Paragraph Comprehension",
+    "difficulty": "medium",
+    "question": "If 3x + 3 = 33, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "11"
+      },
+      {
+        "label": "B",
+        "text": "9"
+      },
+      {
+        "label": "C",
+        "text": "33"
+      },
+      {
+        "label": "D",
+        "text": "10"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_057",
+    "exam": "ASVAB",
+    "section": "Arithmetic Reasoning",
+    "difficulty": "hard",
+    "question": "If 4x + 4 = 20, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "4"
+      },
+      {
+        "label": "B",
+        "text": "5"
+      },
+      {
+        "label": "C",
+        "text": "3"
+      },
+      {
+        "label": "D",
+        "text": "20"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_058",
+    "exam": "ASVAB",
+    "section": "Mathematics Knowledge",
+    "difficulty": "easy",
+    "question": "If 5x + 5 = 30, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "6"
+      },
+      {
+        "label": "B",
+        "text": "5"
+      },
+      {
+        "label": "C",
+        "text": "4"
+      },
+      {
+        "label": "D",
+        "text": "30"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_059",
+    "exam": "ASVAB",
+    "section": "Word Knowledge",
+    "difficulty": "medium",
+    "question": "If 6x + 6 = 42, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "7"
+      },
+      {
+        "label": "B",
+        "text": "5"
+      },
+      {
+        "label": "C",
+        "text": "6"
+      },
+      {
+        "label": "D",
+        "text": "42"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_060",
+    "exam": "ASVAB",
+    "section": "Paragraph Comprehension",
+    "difficulty": "hard",
+    "question": "If 7x + 7 = 56, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "8"
+      },
+      {
+        "label": "B",
+        "text": "6"
+      },
+      {
+        "label": "C",
+        "text": "56"
+      },
+      {
+        "label": "D",
+        "text": "7"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_061",
+    "exam": "ASVAB",
+    "section": "Arithmetic Reasoning",
+    "difficulty": "easy",
+    "question": "If 2x + 3 = 19, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "8"
+      },
+      {
+        "label": "B",
+        "text": "9"
+      },
+      {
+        "label": "C",
+        "text": "7"
+      },
+      {
+        "label": "D",
+        "text": "19"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_062",
+    "exam": "ASVAB",
+    "section": "Mathematics Knowledge",
+    "difficulty": "medium",
+    "question": "If 3x + 4 = 31, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "10"
+      },
+      {
+        "label": "B",
+        "text": "9"
+      },
+      {
+        "label": "C",
+        "text": "8"
+      },
+      {
+        "label": "D",
+        "text": "31"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_063",
+    "exam": "ASVAB",
+    "section": "Word Knowledge",
+    "difficulty": "hard",
+    "question": "If 4x + 5 = 45, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "11"
+      },
+      {
+        "label": "B",
+        "text": "9"
+      },
+      {
+        "label": "C",
+        "text": "10"
+      },
+      {
+        "label": "D",
+        "text": "45"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_064",
+    "exam": "ASVAB",
+    "section": "Paragraph Comprehension",
+    "difficulty": "easy",
+    "question": "If 5x + 6 = 26, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "5"
+      },
+      {
+        "label": "B",
+        "text": "3"
+      },
+      {
+        "label": "C",
+        "text": "26"
+      },
+      {
+        "label": "D",
+        "text": "4"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_065",
+    "exam": "ASVAB",
+    "section": "Arithmetic Reasoning",
+    "difficulty": "medium",
+    "question": "If 6x + 7 = 37, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "5"
+      },
+      {
+        "label": "B",
+        "text": "6"
+      },
+      {
+        "label": "C",
+        "text": "4"
+      },
+      {
+        "label": "D",
+        "text": "37"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_066",
+    "exam": "ASVAB",
+    "section": "Mathematics Knowledge",
+    "difficulty": "hard",
+    "question": "If 7x + 3 = 45, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "7"
+      },
+      {
+        "label": "B",
+        "text": "6"
+      },
+      {
+        "label": "C",
+        "text": "5"
+      },
+      {
+        "label": "D",
+        "text": "45"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_067",
+    "exam": "ASVAB",
+    "section": "Word Knowledge",
+    "difficulty": "easy",
+    "question": "If 2x + 4 = 18, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "8"
+      },
+      {
+        "label": "B",
+        "text": "6"
+      },
+      {
+        "label": "C",
+        "text": "7"
+      },
+      {
+        "label": "D",
+        "text": "18"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_068",
+    "exam": "ASVAB",
+    "section": "Paragraph Comprehension",
+    "difficulty": "medium",
+    "question": "If 3x + 5 = 29, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "9"
+      },
+      {
+        "label": "B",
+        "text": "7"
+      },
+      {
+        "label": "C",
+        "text": "29"
+      },
+      {
+        "label": "D",
+        "text": "8"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_069",
+    "exam": "ASVAB",
+    "section": "Arithmetic Reasoning",
+    "difficulty": "hard",
+    "question": "If 4x + 6 = 42, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "9"
+      },
+      {
+        "label": "B",
+        "text": "10"
+      },
+      {
+        "label": "C",
+        "text": "8"
+      },
+      {
+        "label": "D",
+        "text": "42"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_070",
+    "exam": "ASVAB",
+    "section": "Mathematics Knowledge",
+    "difficulty": "easy",
+    "question": "If 5x + 7 = 57, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "11"
+      },
+      {
+        "label": "B",
+        "text": "10"
+      },
+      {
+        "label": "C",
+        "text": "9"
+      },
+      {
+        "label": "D",
+        "text": "57"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_071",
+    "exam": "ASVAB",
+    "section": "Word Knowledge",
+    "difficulty": "medium",
+    "question": "If 6x + 3 = 27, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "5"
+      },
+      {
+        "label": "B",
+        "text": "3"
+      },
+      {
+        "label": "C",
+        "text": "4"
+      },
+      {
+        "label": "D",
+        "text": "27"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_072",
+    "exam": "ASVAB",
+    "section": "Paragraph Comprehension",
+    "difficulty": "hard",
+    "question": "If 7x + 4 = 39, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "6"
+      },
+      {
+        "label": "B",
+        "text": "4"
+      },
+      {
+        "label": "C",
+        "text": "39"
+      },
+      {
+        "label": "D",
+        "text": "5"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_073",
+    "exam": "ASVAB",
+    "section": "Arithmetic Reasoning",
+    "difficulty": "easy",
+    "question": "If 2x + 5 = 17, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "6"
+      },
+      {
+        "label": "B",
+        "text": "7"
+      },
+      {
+        "label": "C",
+        "text": "5"
+      },
+      {
+        "label": "D",
+        "text": "17"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_074",
+    "exam": "ASVAB",
+    "section": "Mathematics Knowledge",
+    "difficulty": "medium",
+    "question": "If 3x + 6 = 27, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "8"
+      },
+      {
+        "label": "B",
+        "text": "7"
+      },
+      {
+        "label": "C",
+        "text": "6"
+      },
+      {
+        "label": "D",
+        "text": "27"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_075",
+    "exam": "ASVAB",
+    "section": "Word Knowledge",
+    "difficulty": "hard",
+    "question": "If 4x + 7 = 39, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "9"
+      },
+      {
+        "label": "B",
+        "text": "7"
+      },
+      {
+        "label": "C",
+        "text": "8"
+      },
+      {
+        "label": "D",
+        "text": "39"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_076",
+    "exam": "ASVAB",
+    "section": "Paragraph Comprehension",
+    "difficulty": "easy",
+    "question": "If 5x + 3 = 48, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "10"
+      },
+      {
+        "label": "B",
+        "text": "8"
+      },
+      {
+        "label": "C",
+        "text": "48"
+      },
+      {
+        "label": "D",
+        "text": "9"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_077",
+    "exam": "ASVAB",
+    "section": "Arithmetic Reasoning",
+    "difficulty": "medium",
+    "question": "If 6x + 4 = 64, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "10"
+      },
+      {
+        "label": "B",
+        "text": "11"
+      },
+      {
+        "label": "C",
+        "text": "9"
+      },
+      {
+        "label": "D",
+        "text": "64"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_078",
+    "exam": "ASVAB",
+    "section": "Mathematics Knowledge",
+    "difficulty": "hard",
+    "question": "If 7x + 5 = 33, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "5"
+      },
+      {
+        "label": "B",
+        "text": "4"
+      },
+      {
+        "label": "C",
+        "text": "3"
+      },
+      {
+        "label": "D",
+        "text": "33"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_079",
+    "exam": "ASVAB",
+    "section": "Word Knowledge",
+    "difficulty": "easy",
+    "question": "If 2x + 6 = 16, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "6"
+      },
+      {
+        "label": "B",
+        "text": "4"
+      },
+      {
+        "label": "C",
+        "text": "5"
+      },
+      {
+        "label": "D",
+        "text": "16"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_080",
+    "exam": "ASVAB",
+    "section": "Paragraph Comprehension",
+    "difficulty": "medium",
+    "question": "If 3x + 7 = 25, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "7"
+      },
+      {
+        "label": "B",
+        "text": "5"
+      },
+      {
+        "label": "C",
+        "text": "25"
+      },
+      {
+        "label": "D",
+        "text": "6"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_081",
+    "exam": "ASVAB",
+    "section": "Arithmetic Reasoning",
+    "difficulty": "hard",
+    "question": "If 4x + 3 = 31, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "7"
+      },
+      {
+        "label": "B",
+        "text": "8"
+      },
+      {
+        "label": "C",
+        "text": "6"
+      },
+      {
+        "label": "D",
+        "text": "31"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_082",
+    "exam": "ASVAB",
+    "section": "Mathematics Knowledge",
+    "difficulty": "easy",
+    "question": "If 5x + 4 = 44, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "9"
+      },
+      {
+        "label": "B",
+        "text": "8"
+      },
+      {
+        "label": "C",
+        "text": "7"
+      },
+      {
+        "label": "D",
+        "text": "44"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_083",
+    "exam": "ASVAB",
+    "section": "Word Knowledge",
+    "difficulty": "medium",
+    "question": "If 6x + 5 = 59, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "10"
+      },
+      {
+        "label": "B",
+        "text": "8"
+      },
+      {
+        "label": "C",
+        "text": "9"
+      },
+      {
+        "label": "D",
+        "text": "59"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_084",
+    "exam": "ASVAB",
+    "section": "Paragraph Comprehension",
+    "difficulty": "hard",
+    "question": "If 7x + 6 = 76, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "11"
+      },
+      {
+        "label": "B",
+        "text": "9"
+      },
+      {
+        "label": "C",
+        "text": "76"
+      },
+      {
+        "label": "D",
+        "text": "10"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_085",
+    "exam": "ASVAB",
+    "section": "Arithmetic Reasoning",
+    "difficulty": "easy",
+    "question": "If 2x + 7 = 15, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "4"
+      },
+      {
+        "label": "B",
+        "text": "5"
+      },
+      {
+        "label": "C",
+        "text": "3"
+      },
+      {
+        "label": "D",
+        "text": "15"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_086",
+    "exam": "ASVAB",
+    "section": "Mathematics Knowledge",
+    "difficulty": "medium",
+    "question": "If 3x + 3 = 18, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "6"
+      },
+      {
+        "label": "B",
+        "text": "5"
+      },
+      {
+        "label": "C",
+        "text": "4"
+      },
+      {
+        "label": "D",
+        "text": "18"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_087",
+    "exam": "ASVAB",
+    "section": "Word Knowledge",
+    "difficulty": "hard",
+    "question": "If 4x + 4 = 28, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "7"
+      },
+      {
+        "label": "B",
+        "text": "5"
+      },
+      {
+        "label": "C",
+        "text": "6"
+      },
+      {
+        "label": "D",
+        "text": "28"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_088",
+    "exam": "ASVAB",
+    "section": "Paragraph Comprehension",
+    "difficulty": "easy",
+    "question": "If 5x + 5 = 40, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "8"
+      },
+      {
+        "label": "B",
+        "text": "6"
+      },
+      {
+        "label": "C",
+        "text": "40"
+      },
+      {
+        "label": "D",
+        "text": "7"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_089",
+    "exam": "ASVAB",
+    "section": "Arithmetic Reasoning",
+    "difficulty": "medium",
+    "question": "If 6x + 6 = 54, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "8"
+      },
+      {
+        "label": "B",
+        "text": "9"
+      },
+      {
+        "label": "C",
+        "text": "7"
+      },
+      {
+        "label": "D",
+        "text": "54"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_090",
+    "exam": "ASVAB",
+    "section": "Mathematics Knowledge",
+    "difficulty": "hard",
+    "question": "If 7x + 7 = 70, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "10"
+      },
+      {
+        "label": "B",
+        "text": "9"
+      },
+      {
+        "label": "C",
+        "text": "8"
+      },
+      {
+        "label": "D",
+        "text": "70"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_091",
+    "exam": "ASVAB",
+    "section": "Word Knowledge",
+    "difficulty": "easy",
+    "question": "If 2x + 3 = 23, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "11"
+      },
+      {
+        "label": "B",
+        "text": "9"
+      },
+      {
+        "label": "C",
+        "text": "10"
+      },
+      {
+        "label": "D",
+        "text": "23"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_092",
+    "exam": "ASVAB",
+    "section": "Paragraph Comprehension",
+    "difficulty": "medium",
+    "question": "If 3x + 4 = 16, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "5"
+      },
+      {
+        "label": "B",
+        "text": "3"
+      },
+      {
+        "label": "C",
+        "text": "16"
+      },
+      {
+        "label": "D",
+        "text": "4"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_093",
+    "exam": "ASVAB",
+    "section": "Arithmetic Reasoning",
+    "difficulty": "hard",
+    "question": "If 4x + 5 = 25, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "5"
+      },
+      {
+        "label": "B",
+        "text": "6"
+      },
+      {
+        "label": "C",
+        "text": "4"
+      },
+      {
+        "label": "D",
+        "text": "25"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_094",
+    "exam": "ASVAB",
+    "section": "Mathematics Knowledge",
+    "difficulty": "easy",
+    "question": "If 5x + 6 = 36, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "7"
+      },
+      {
+        "label": "B",
+        "text": "6"
+      },
+      {
+        "label": "C",
+        "text": "5"
+      },
+      {
+        "label": "D",
+        "text": "36"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_095",
+    "exam": "ASVAB",
+    "section": "Word Knowledge",
+    "difficulty": "medium",
+    "question": "If 6x + 7 = 49, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "8"
+      },
+      {
+        "label": "B",
+        "text": "6"
+      },
+      {
+        "label": "C",
+        "text": "7"
+      },
+      {
+        "label": "D",
+        "text": "49"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_096",
+    "exam": "ASVAB",
+    "section": "Paragraph Comprehension",
+    "difficulty": "hard",
+    "question": "If 7x + 3 = 59, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "9"
+      },
+      {
+        "label": "B",
+        "text": "7"
+      },
+      {
+        "label": "C",
+        "text": "59"
+      },
+      {
+        "label": "D",
+        "text": "8"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_097",
+    "exam": "ASVAB",
+    "section": "Arithmetic Reasoning",
+    "difficulty": "easy",
+    "question": "If 2x + 4 = 22, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "9"
+      },
+      {
+        "label": "B",
+        "text": "10"
+      },
+      {
+        "label": "C",
+        "text": "8"
+      },
+      {
+        "label": "D",
+        "text": "22"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_098",
+    "exam": "ASVAB",
+    "section": "Mathematics Knowledge",
+    "difficulty": "medium",
+    "question": "If 3x + 5 = 35, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "11"
+      },
+      {
+        "label": "B",
+        "text": "10"
+      },
+      {
+        "label": "C",
+        "text": "9"
+      },
+      {
+        "label": "D",
+        "text": "35"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_099",
+    "exam": "ASVAB",
+    "section": "Word Knowledge",
+    "difficulty": "hard",
+    "question": "If 4x + 6 = 22, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "5"
+      },
+      {
+        "label": "B",
+        "text": "3"
+      },
+      {
+        "label": "C",
+        "text": "4"
+      },
+      {
+        "label": "D",
+        "text": "22"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_100",
+    "exam": "ASVAB",
+    "section": "Paragraph Comprehension",
+    "difficulty": "easy",
+    "question": "If 5x + 7 = 32, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "6"
+      },
+      {
+        "label": "B",
+        "text": "4"
+      },
+      {
+        "label": "C",
+        "text": "32"
+      },
+      {
+        "label": "D",
+        "text": "5"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_101",
+    "exam": "ASVAB",
+    "section": "Arithmetic Reasoning",
+    "difficulty": "medium",
+    "question": "If 6x + 3 = 39, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "6"
+      },
+      {
+        "label": "B",
+        "text": "7"
+      },
+      {
+        "label": "C",
+        "text": "5"
+      },
+      {
+        "label": "D",
+        "text": "39"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_102",
+    "exam": "ASVAB",
+    "section": "Mathematics Knowledge",
+    "difficulty": "hard",
+    "question": "If 7x + 4 = 53, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "8"
+      },
+      {
+        "label": "B",
+        "text": "7"
+      },
+      {
+        "label": "C",
+        "text": "6"
+      },
+      {
+        "label": "D",
+        "text": "53"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_103",
+    "exam": "ASVAB",
+    "section": "Word Knowledge",
+    "difficulty": "easy",
+    "question": "If 2x + 5 = 21, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "9"
+      },
+      {
+        "label": "B",
+        "text": "7"
+      },
+      {
+        "label": "C",
+        "text": "8"
+      },
+      {
+        "label": "D",
+        "text": "21"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_104",
+    "exam": "ASVAB",
+    "section": "Paragraph Comprehension",
+    "difficulty": "medium",
+    "question": "If 3x + 6 = 33, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "10"
+      },
+      {
+        "label": "B",
+        "text": "8"
+      },
+      {
+        "label": "C",
+        "text": "33"
+      },
+      {
+        "label": "D",
+        "text": "9"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_105",
+    "exam": "ASVAB",
+    "section": "Arithmetic Reasoning",
+    "difficulty": "hard",
+    "question": "If 4x + 7 = 47, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "10"
+      },
+      {
+        "label": "B",
+        "text": "11"
+      },
+      {
+        "label": "C",
+        "text": "9"
+      },
+      {
+        "label": "D",
+        "text": "47"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_106",
+    "exam": "ASVAB",
+    "section": "Mathematics Knowledge",
+    "difficulty": "easy",
+    "question": "If 5x + 3 = 23, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "5"
+      },
+      {
+        "label": "B",
+        "text": "4"
+      },
+      {
+        "label": "C",
+        "text": "3"
+      },
+      {
+        "label": "D",
+        "text": "23"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_107",
+    "exam": "ASVAB",
+    "section": "Word Knowledge",
+    "difficulty": "medium",
+    "question": "If 6x + 4 = 34, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "6"
+      },
+      {
+        "label": "B",
+        "text": "4"
+      },
+      {
+        "label": "C",
+        "text": "5"
+      },
+      {
+        "label": "D",
+        "text": "34"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_108",
+    "exam": "ASVAB",
+    "section": "Paragraph Comprehension",
+    "difficulty": "hard",
+    "question": "If 7x + 5 = 47, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "7"
+      },
+      {
+        "label": "B",
+        "text": "5"
+      },
+      {
+        "label": "C",
+        "text": "47"
+      },
+      {
+        "label": "D",
+        "text": "6"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_109",
+    "exam": "ASVAB",
+    "section": "Arithmetic Reasoning",
+    "difficulty": "easy",
+    "question": "If 2x + 6 = 20, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "7"
+      },
+      {
+        "label": "B",
+        "text": "8"
+      },
+      {
+        "label": "C",
+        "text": "6"
+      },
+      {
+        "label": "D",
+        "text": "20"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_110",
+    "exam": "ASVAB",
+    "section": "Mathematics Knowledge",
+    "difficulty": "medium",
+    "question": "If 3x + 7 = 31, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "9"
+      },
+      {
+        "label": "B",
+        "text": "8"
+      },
+      {
+        "label": "C",
+        "text": "7"
+      },
+      {
+        "label": "D",
+        "text": "31"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_111",
+    "exam": "ASVAB",
+    "section": "Word Knowledge",
+    "difficulty": "hard",
+    "question": "If 4x + 3 = 39, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "10"
+      },
+      {
+        "label": "B",
+        "text": "8"
+      },
+      {
+        "label": "C",
+        "text": "9"
+      },
+      {
+        "label": "D",
+        "text": "39"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_112",
+    "exam": "ASVAB",
+    "section": "Paragraph Comprehension",
+    "difficulty": "easy",
+    "question": "If 5x + 4 = 54, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "11"
+      },
+      {
+        "label": "B",
+        "text": "9"
+      },
+      {
+        "label": "C",
+        "text": "54"
+      },
+      {
+        "label": "D",
+        "text": "10"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_113",
+    "exam": "ASVAB",
+    "section": "Arithmetic Reasoning",
+    "difficulty": "medium",
+    "question": "If 6x + 5 = 29, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "4"
+      },
+      {
+        "label": "B",
+        "text": "5"
+      },
+      {
+        "label": "C",
+        "text": "3"
+      },
+      {
+        "label": "D",
+        "text": "29"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_114",
+    "exam": "ASVAB",
+    "section": "Mathematics Knowledge",
+    "difficulty": "hard",
+    "question": "If 7x + 6 = 41, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "6"
+      },
+      {
+        "label": "B",
+        "text": "5"
+      },
+      {
+        "label": "C",
+        "text": "4"
+      },
+      {
+        "label": "D",
+        "text": "41"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_115",
+    "exam": "ASVAB",
+    "section": "Word Knowledge",
+    "difficulty": "easy",
+    "question": "If 2x + 7 = 19, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "7"
+      },
+      {
+        "label": "B",
+        "text": "5"
+      },
+      {
+        "label": "C",
+        "text": "6"
+      },
+      {
+        "label": "D",
+        "text": "19"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_116",
+    "exam": "ASVAB",
+    "section": "Paragraph Comprehension",
+    "difficulty": "medium",
+    "question": "If 3x + 3 = 24, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "8"
+      },
+      {
+        "label": "B",
+        "text": "6"
+      },
+      {
+        "label": "C",
+        "text": "24"
+      },
+      {
+        "label": "D",
+        "text": "7"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_117",
+    "exam": "ASVAB",
+    "section": "Arithmetic Reasoning",
+    "difficulty": "hard",
+    "question": "If 4x + 4 = 36, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "8"
+      },
+      {
+        "label": "B",
+        "text": "9"
+      },
+      {
+        "label": "C",
+        "text": "7"
+      },
+      {
+        "label": "D",
+        "text": "36"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_118",
+    "exam": "ASVAB",
+    "section": "Mathematics Knowledge",
+    "difficulty": "easy",
+    "question": "If 5x + 5 = 50, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "10"
+      },
+      {
+        "label": "B",
+        "text": "9"
+      },
+      {
+        "label": "C",
+        "text": "8"
+      },
+      {
+        "label": "D",
+        "text": "50"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_119",
+    "exam": "ASVAB",
+    "section": "Word Knowledge",
+    "difficulty": "medium",
+    "question": "If 6x + 6 = 66, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "11"
+      },
+      {
+        "label": "B",
+        "text": "9"
+      },
+      {
+        "label": "C",
+        "text": "10"
+      },
+      {
+        "label": "D",
+        "text": "66"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_120",
+    "exam": "ASVAB",
+    "section": "Paragraph Comprehension",
+    "difficulty": "hard",
+    "question": "If 7x + 7 = 35, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "5"
+      },
+      {
+        "label": "B",
+        "text": "3"
+      },
+      {
+        "label": "C",
+        "text": "35"
+      },
+      {
+        "label": "D",
+        "text": "4"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_121",
+    "exam": "ASVAB",
+    "section": "Arithmetic Reasoning",
+    "difficulty": "easy",
+    "question": "If 2x + 3 = 13, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "5"
+      },
+      {
+        "label": "B",
+        "text": "6"
+      },
+      {
+        "label": "C",
+        "text": "4"
+      },
+      {
+        "label": "D",
+        "text": "13"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_122",
+    "exam": "ASVAB",
+    "section": "Mathematics Knowledge",
+    "difficulty": "medium",
+    "question": "If 3x + 4 = 22, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "7"
+      },
+      {
+        "label": "B",
+        "text": "6"
+      },
+      {
+        "label": "C",
+        "text": "5"
+      },
+      {
+        "label": "D",
+        "text": "22"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_123",
+    "exam": "ASVAB",
+    "section": "Word Knowledge",
+    "difficulty": "hard",
+    "question": "If 4x + 5 = 33, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "8"
+      },
+      {
+        "label": "B",
+        "text": "6"
+      },
+      {
+        "label": "C",
+        "text": "7"
+      },
+      {
+        "label": "D",
+        "text": "33"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_124",
+    "exam": "ASVAB",
+    "section": "Paragraph Comprehension",
+    "difficulty": "easy",
+    "question": "If 5x + 6 = 46, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "9"
+      },
+      {
+        "label": "B",
+        "text": "7"
+      },
+      {
+        "label": "C",
+        "text": "46"
+      },
+      {
+        "label": "D",
+        "text": "8"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_125",
+    "exam": "ASVAB",
+    "section": "Arithmetic Reasoning",
+    "difficulty": "medium",
+    "question": "If 6x + 7 = 61, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "9"
+      },
+      {
+        "label": "B",
+        "text": "10"
+      },
+      {
+        "label": "C",
+        "text": "8"
+      },
+      {
+        "label": "D",
+        "text": "61"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_126",
+    "exam": "ASVAB",
+    "section": "Mathematics Knowledge",
+    "difficulty": "hard",
+    "question": "If 7x + 3 = 73, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "11"
+      },
+      {
+        "label": "B",
+        "text": "10"
+      },
+      {
+        "label": "C",
+        "text": "9"
+      },
+      {
+        "label": "D",
+        "text": "73"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_127",
+    "exam": "ASVAB",
+    "section": "Word Knowledge",
+    "difficulty": "easy",
+    "question": "If 2x + 4 = 12, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "5"
+      },
+      {
+        "label": "B",
+        "text": "3"
+      },
+      {
+        "label": "C",
+        "text": "4"
+      },
+      {
+        "label": "D",
+        "text": "12"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_128",
+    "exam": "ASVAB",
+    "section": "Paragraph Comprehension",
+    "difficulty": "medium",
+    "question": "If 3x + 5 = 20, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "6"
+      },
+      {
+        "label": "B",
+        "text": "4"
+      },
+      {
+        "label": "C",
+        "text": "20"
+      },
+      {
+        "label": "D",
+        "text": "5"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_129",
+    "exam": "ASVAB",
+    "section": "Arithmetic Reasoning",
+    "difficulty": "hard",
+    "question": "If 4x + 6 = 30, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "6"
+      },
+      {
+        "label": "B",
+        "text": "7"
+      },
+      {
+        "label": "C",
+        "text": "5"
+      },
+      {
+        "label": "D",
+        "text": "30"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_130",
+    "exam": "ASVAB",
+    "section": "Mathematics Knowledge",
+    "difficulty": "easy",
+    "question": "If 5x + 7 = 42, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "8"
+      },
+      {
+        "label": "B",
+        "text": "7"
+      },
+      {
+        "label": "C",
+        "text": "6"
+      },
+      {
+        "label": "D",
+        "text": "42"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_131",
+    "exam": "ASVAB",
+    "section": "Word Knowledge",
+    "difficulty": "medium",
+    "question": "If 6x + 3 = 51, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "9"
+      },
+      {
+        "label": "B",
+        "text": "7"
+      },
+      {
+        "label": "C",
+        "text": "8"
+      },
+      {
+        "label": "D",
+        "text": "51"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_132",
+    "exam": "ASVAB",
+    "section": "Paragraph Comprehension",
+    "difficulty": "hard",
+    "question": "If 7x + 4 = 67, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "10"
+      },
+      {
+        "label": "B",
+        "text": "8"
+      },
+      {
+        "label": "C",
+        "text": "67"
+      },
+      {
+        "label": "D",
+        "text": "9"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_133",
+    "exam": "ASVAB",
+    "section": "Arithmetic Reasoning",
+    "difficulty": "easy",
+    "question": "If 2x + 5 = 25, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "10"
+      },
+      {
+        "label": "B",
+        "text": "11"
+      },
+      {
+        "label": "C",
+        "text": "9"
+      },
+      {
+        "label": "D",
+        "text": "25"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_134",
+    "exam": "ASVAB",
+    "section": "Mathematics Knowledge",
+    "difficulty": "medium",
+    "question": "If 3x + 6 = 18, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "5"
+      },
+      {
+        "label": "B",
+        "text": "4"
+      },
+      {
+        "label": "C",
+        "text": "3"
+      },
+      {
+        "label": "D",
+        "text": "18"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_135",
+    "exam": "ASVAB",
+    "section": "Word Knowledge",
+    "difficulty": "hard",
+    "question": "If 4x + 7 = 27, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "6"
+      },
+      {
+        "label": "B",
+        "text": "4"
+      },
+      {
+        "label": "C",
+        "text": "5"
+      },
+      {
+        "label": "D",
+        "text": "27"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_136",
+    "exam": "ASVAB",
+    "section": "Paragraph Comprehension",
+    "difficulty": "easy",
+    "question": "If 5x + 3 = 33, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "7"
+      },
+      {
+        "label": "B",
+        "text": "5"
+      },
+      {
+        "label": "C",
+        "text": "33"
+      },
+      {
+        "label": "D",
+        "text": "6"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_137",
+    "exam": "ASVAB",
+    "section": "Arithmetic Reasoning",
+    "difficulty": "medium",
+    "question": "If 6x + 4 = 46, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "7"
+      },
+      {
+        "label": "B",
+        "text": "8"
+      },
+      {
+        "label": "C",
+        "text": "6"
+      },
+      {
+        "label": "D",
+        "text": "46"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_138",
+    "exam": "ASVAB",
+    "section": "Mathematics Knowledge",
+    "difficulty": "hard",
+    "question": "If 7x + 5 = 61, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "9"
+      },
+      {
+        "label": "B",
+        "text": "8"
+      },
+      {
+        "label": "C",
+        "text": "7"
+      },
+      {
+        "label": "D",
+        "text": "61"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_139",
+    "exam": "ASVAB",
+    "section": "Word Knowledge",
+    "difficulty": "easy",
+    "question": "If 2x + 6 = 24, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "10"
+      },
+      {
+        "label": "B",
+        "text": "8"
+      },
+      {
+        "label": "C",
+        "text": "9"
+      },
+      {
+        "label": "D",
+        "text": "24"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_140",
+    "exam": "ASVAB",
+    "section": "Paragraph Comprehension",
+    "difficulty": "medium",
+    "question": "If 3x + 7 = 37, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "11"
+      },
+      {
+        "label": "B",
+        "text": "9"
+      },
+      {
+        "label": "C",
+        "text": "37"
+      },
+      {
+        "label": "D",
+        "text": "10"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_141",
+    "exam": "ASVAB",
+    "section": "Arithmetic Reasoning",
+    "difficulty": "hard",
+    "question": "If 4x + 3 = 19, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "4"
+      },
+      {
+        "label": "B",
+        "text": "5"
+      },
+      {
+        "label": "C",
+        "text": "3"
+      },
+      {
+        "label": "D",
+        "text": "19"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_142",
+    "exam": "ASVAB",
+    "section": "Mathematics Knowledge",
+    "difficulty": "easy",
+    "question": "If 5x + 4 = 29, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "6"
+      },
+      {
+        "label": "B",
+        "text": "5"
+      },
+      {
+        "label": "C",
+        "text": "4"
+      },
+      {
+        "label": "D",
+        "text": "29"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_143",
+    "exam": "ASVAB",
+    "section": "Word Knowledge",
+    "difficulty": "medium",
+    "question": "If 6x + 5 = 41, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "7"
+      },
+      {
+        "label": "B",
+        "text": "5"
+      },
+      {
+        "label": "C",
+        "text": "6"
+      },
+      {
+        "label": "D",
+        "text": "41"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_144",
+    "exam": "ASVAB",
+    "section": "Paragraph Comprehension",
+    "difficulty": "hard",
+    "question": "If 7x + 6 = 55, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "8"
+      },
+      {
+        "label": "B",
+        "text": "6"
+      },
+      {
+        "label": "C",
+        "text": "55"
+      },
+      {
+        "label": "D",
+        "text": "7"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_145",
+    "exam": "ASVAB",
+    "section": "Arithmetic Reasoning",
+    "difficulty": "easy",
+    "question": "If 2x + 7 = 23, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "8"
+      },
+      {
+        "label": "B",
+        "text": "9"
+      },
+      {
+        "label": "C",
+        "text": "7"
+      },
+      {
+        "label": "D",
+        "text": "23"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_146",
+    "exam": "ASVAB",
+    "section": "Mathematics Knowledge",
+    "difficulty": "medium",
+    "question": "If 3x + 3 = 30, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "10"
+      },
+      {
+        "label": "B",
+        "text": "9"
+      },
+      {
+        "label": "C",
+        "text": "8"
+      },
+      {
+        "label": "D",
+        "text": "30"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_147",
+    "exam": "ASVAB",
+    "section": "Word Knowledge",
+    "difficulty": "hard",
+    "question": "If 4x + 4 = 44, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "11"
+      },
+      {
+        "label": "B",
+        "text": "9"
+      },
+      {
+        "label": "C",
+        "text": "10"
+      },
+      {
+        "label": "D",
+        "text": "44"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_148",
+    "exam": "ASVAB",
+    "section": "Paragraph Comprehension",
+    "difficulty": "easy",
+    "question": "If 5x + 5 = 25, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "5"
+      },
+      {
+        "label": "B",
+        "text": "3"
+      },
+      {
+        "label": "C",
+        "text": "25"
+      },
+      {
+        "label": "D",
+        "text": "4"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_149",
+    "exam": "ASVAB",
+    "section": "Arithmetic Reasoning",
+    "difficulty": "medium",
+    "question": "If 6x + 6 = 36, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "5"
+      },
+      {
+        "label": "B",
+        "text": "6"
+      },
+      {
+        "label": "C",
+        "text": "4"
+      },
+      {
+        "label": "D",
+        "text": "36"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_150",
+    "exam": "ASVAB",
+    "section": "Mathematics Knowledge",
+    "difficulty": "hard",
+    "question": "If 7x + 7 = 49, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "7"
+      },
+      {
+        "label": "B",
+        "text": "6"
+      },
+      {
+        "label": "C",
+        "text": "5"
+      },
+      {
+        "label": "D",
+        "text": "49"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_151",
+    "exam": "ASVAB",
+    "section": "Word Knowledge",
+    "difficulty": "easy",
+    "question": "If 2x + 3 = 17, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "8"
+      },
+      {
+        "label": "B",
+        "text": "6"
+      },
+      {
+        "label": "C",
+        "text": "7"
+      },
+      {
+        "label": "D",
+        "text": "17"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_152",
+    "exam": "ASVAB",
+    "section": "Paragraph Comprehension",
+    "difficulty": "medium",
+    "question": "If 3x + 4 = 28, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "9"
+      },
+      {
+        "label": "B",
+        "text": "7"
+      },
+      {
+        "label": "C",
+        "text": "28"
+      },
+      {
+        "label": "D",
+        "text": "8"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_153",
+    "exam": "ASVAB",
+    "section": "Arithmetic Reasoning",
+    "difficulty": "hard",
+    "question": "If 4x + 5 = 41, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "9"
+      },
+      {
+        "label": "B",
+        "text": "10"
+      },
+      {
+        "label": "C",
+        "text": "8"
+      },
+      {
+        "label": "D",
+        "text": "41"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_154",
+    "exam": "ASVAB",
+    "section": "Mathematics Knowledge",
+    "difficulty": "easy",
+    "question": "If 5x + 6 = 56, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "11"
+      },
+      {
+        "label": "B",
+        "text": "10"
+      },
+      {
+        "label": "C",
+        "text": "9"
+      },
+      {
+        "label": "D",
+        "text": "56"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_155",
+    "exam": "ASVAB",
+    "section": "Word Knowledge",
+    "difficulty": "medium",
+    "question": "If 6x + 7 = 31, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "5"
+      },
+      {
+        "label": "B",
+        "text": "3"
+      },
+      {
+        "label": "C",
+        "text": "4"
+      },
+      {
+        "label": "D",
+        "text": "31"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_156",
+    "exam": "ASVAB",
+    "section": "Paragraph Comprehension",
+    "difficulty": "hard",
+    "question": "If 7x + 3 = 38, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "6"
+      },
+      {
+        "label": "B",
+        "text": "4"
+      },
+      {
+        "label": "C",
+        "text": "38"
+      },
+      {
+        "label": "D",
+        "text": "5"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_157",
+    "exam": "ASVAB",
+    "section": "Arithmetic Reasoning",
+    "difficulty": "easy",
+    "question": "If 2x + 4 = 16, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "6"
+      },
+      {
+        "label": "B",
+        "text": "7"
+      },
+      {
+        "label": "C",
+        "text": "5"
+      },
+      {
+        "label": "D",
+        "text": "16"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_158",
+    "exam": "ASVAB",
+    "section": "Mathematics Knowledge",
+    "difficulty": "medium",
+    "question": "If 3x + 5 = 26, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "8"
+      },
+      {
+        "label": "B",
+        "text": "7"
+      },
+      {
+        "label": "C",
+        "text": "6"
+      },
+      {
+        "label": "D",
+        "text": "26"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_159",
+    "exam": "ASVAB",
+    "section": "Word Knowledge",
+    "difficulty": "hard",
+    "question": "If 4x + 6 = 38, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "9"
+      },
+      {
+        "label": "B",
+        "text": "7"
+      },
+      {
+        "label": "C",
+        "text": "8"
+      },
+      {
+        "label": "D",
+        "text": "38"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_160",
+    "exam": "ASVAB",
+    "section": "Paragraph Comprehension",
+    "difficulty": "easy",
+    "question": "If 5x + 7 = 52, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "10"
+      },
+      {
+        "label": "B",
+        "text": "8"
+      },
+      {
+        "label": "C",
+        "text": "52"
+      },
+      {
+        "label": "D",
+        "text": "9"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_161",
+    "exam": "ASVAB",
+    "section": "Arithmetic Reasoning",
+    "difficulty": "medium",
+    "question": "If 6x + 3 = 63, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "10"
+      },
+      {
+        "label": "B",
+        "text": "11"
+      },
+      {
+        "label": "C",
+        "text": "9"
+      },
+      {
+        "label": "D",
+        "text": "63"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_162",
+    "exam": "ASVAB",
+    "section": "Mathematics Knowledge",
+    "difficulty": "hard",
+    "question": "If 7x + 4 = 32, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "5"
+      },
+      {
+        "label": "B",
+        "text": "4"
+      },
+      {
+        "label": "C",
+        "text": "3"
+      },
+      {
+        "label": "D",
+        "text": "32"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_163",
+    "exam": "ASVAB",
+    "section": "Word Knowledge",
+    "difficulty": "easy",
+    "question": "If 2x + 5 = 15, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "6"
+      },
+      {
+        "label": "B",
+        "text": "4"
+      },
+      {
+        "label": "C",
+        "text": "5"
+      },
+      {
+        "label": "D",
+        "text": "15"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_164",
+    "exam": "ASVAB",
+    "section": "Paragraph Comprehension",
+    "difficulty": "medium",
+    "question": "If 3x + 6 = 24, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "7"
+      },
+      {
+        "label": "B",
+        "text": "5"
+      },
+      {
+        "label": "C",
+        "text": "24"
+      },
+      {
+        "label": "D",
+        "text": "6"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_165",
+    "exam": "ASVAB",
+    "section": "Arithmetic Reasoning",
+    "difficulty": "hard",
+    "question": "If 4x + 7 = 35, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "7"
+      },
+      {
+        "label": "B",
+        "text": "8"
+      },
+      {
+        "label": "C",
+        "text": "6"
+      },
+      {
+        "label": "D",
+        "text": "35"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_166",
+    "exam": "ASVAB",
+    "section": "Mathematics Knowledge",
+    "difficulty": "easy",
+    "question": "If 5x + 3 = 43, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "9"
+      },
+      {
+        "label": "B",
+        "text": "8"
+      },
+      {
+        "label": "C",
+        "text": "7"
+      },
+      {
+        "label": "D",
+        "text": "43"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_167",
+    "exam": "ASVAB",
+    "section": "Word Knowledge",
+    "difficulty": "medium",
+    "question": "If 6x + 4 = 58, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "10"
+      },
+      {
+        "label": "B",
+        "text": "8"
+      },
+      {
+        "label": "C",
+        "text": "9"
+      },
+      {
+        "label": "D",
+        "text": "58"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_168",
+    "exam": "ASVAB",
+    "section": "Paragraph Comprehension",
+    "difficulty": "hard",
+    "question": "If 7x + 5 = 75, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "11"
+      },
+      {
+        "label": "B",
+        "text": "9"
+      },
+      {
+        "label": "C",
+        "text": "75"
+      },
+      {
+        "label": "D",
+        "text": "10"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_169",
+    "exam": "ASVAB",
+    "section": "Arithmetic Reasoning",
+    "difficulty": "easy",
+    "question": "If 2x + 6 = 14, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "4"
+      },
+      {
+        "label": "B",
+        "text": "5"
+      },
+      {
+        "label": "C",
+        "text": "3"
+      },
+      {
+        "label": "D",
+        "text": "14"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_170",
+    "exam": "ASVAB",
+    "section": "Mathematics Knowledge",
+    "difficulty": "medium",
+    "question": "If 3x + 7 = 22, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "6"
+      },
+      {
+        "label": "B",
+        "text": "5"
+      },
+      {
+        "label": "C",
+        "text": "4"
+      },
+      {
+        "label": "D",
+        "text": "22"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_171",
+    "exam": "ASVAB",
+    "section": "Word Knowledge",
+    "difficulty": "hard",
+    "question": "If 4x + 3 = 27, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "7"
+      },
+      {
+        "label": "B",
+        "text": "5"
+      },
+      {
+        "label": "C",
+        "text": "6"
+      },
+      {
+        "label": "D",
+        "text": "27"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_172",
+    "exam": "ASVAB",
+    "section": "Paragraph Comprehension",
+    "difficulty": "easy",
+    "question": "If 5x + 4 = 39, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "8"
+      },
+      {
+        "label": "B",
+        "text": "6"
+      },
+      {
+        "label": "C",
+        "text": "39"
+      },
+      {
+        "label": "D",
+        "text": "7"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_173",
+    "exam": "ASVAB",
+    "section": "Arithmetic Reasoning",
+    "difficulty": "medium",
+    "question": "If 6x + 5 = 53, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "8"
+      },
+      {
+        "label": "B",
+        "text": "9"
+      },
+      {
+        "label": "C",
+        "text": "7"
+      },
+      {
+        "label": "D",
+        "text": "53"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_174",
+    "exam": "ASVAB",
+    "section": "Mathematics Knowledge",
+    "difficulty": "hard",
+    "question": "If 7x + 6 = 69, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "10"
+      },
+      {
+        "label": "B",
+        "text": "9"
+      },
+      {
+        "label": "C",
+        "text": "8"
+      },
+      {
+        "label": "D",
+        "text": "69"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_175",
+    "exam": "ASVAB",
+    "section": "Word Knowledge",
+    "difficulty": "easy",
+    "question": "If 2x + 7 = 27, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "11"
+      },
+      {
+        "label": "B",
+        "text": "9"
+      },
+      {
+        "label": "C",
+        "text": "10"
+      },
+      {
+        "label": "D",
+        "text": "27"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_176",
+    "exam": "ASVAB",
+    "section": "Paragraph Comprehension",
+    "difficulty": "medium",
+    "question": "If 3x + 3 = 15, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "5"
+      },
+      {
+        "label": "B",
+        "text": "3"
+      },
+      {
+        "label": "C",
+        "text": "15"
+      },
+      {
+        "label": "D",
+        "text": "4"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_177",
+    "exam": "ASVAB",
+    "section": "Arithmetic Reasoning",
+    "difficulty": "hard",
+    "question": "If 4x + 4 = 24, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "5"
+      },
+      {
+        "label": "B",
+        "text": "6"
+      },
+      {
+        "label": "C",
+        "text": "4"
+      },
+      {
+        "label": "D",
+        "text": "24"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_178",
+    "exam": "ASVAB",
+    "section": "Mathematics Knowledge",
+    "difficulty": "easy",
+    "question": "If 5x + 5 = 35, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "7"
+      },
+      {
+        "label": "B",
+        "text": "6"
+      },
+      {
+        "label": "C",
+        "text": "5"
+      },
+      {
+        "label": "D",
+        "text": "35"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_179",
+    "exam": "ASVAB",
+    "section": "Word Knowledge",
+    "difficulty": "medium",
+    "question": "If 6x + 6 = 48, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "8"
+      },
+      {
+        "label": "B",
+        "text": "6"
+      },
+      {
+        "label": "C",
+        "text": "7"
+      },
+      {
+        "label": "D",
+        "text": "48"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_180",
+    "exam": "ASVAB",
+    "section": "Paragraph Comprehension",
+    "difficulty": "hard",
+    "question": "If 7x + 7 = 63, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "9"
+      },
+      {
+        "label": "B",
+        "text": "7"
+      },
+      {
+        "label": "C",
+        "text": "63"
+      },
+      {
+        "label": "D",
+        "text": "8"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_181",
+    "exam": "ASVAB",
+    "section": "Arithmetic Reasoning",
+    "difficulty": "easy",
+    "question": "If 2x + 3 = 21, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "9"
+      },
+      {
+        "label": "B",
+        "text": "10"
+      },
+      {
+        "label": "C",
+        "text": "8"
+      },
+      {
+        "label": "D",
+        "text": "21"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_182",
+    "exam": "ASVAB",
+    "section": "Mathematics Knowledge",
+    "difficulty": "medium",
+    "question": "If 3x + 4 = 34, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "11"
+      },
+      {
+        "label": "B",
+        "text": "10"
+      },
+      {
+        "label": "C",
+        "text": "9"
+      },
+      {
+        "label": "D",
+        "text": "34"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_183",
+    "exam": "ASVAB",
+    "section": "Word Knowledge",
+    "difficulty": "hard",
+    "question": "If 4x + 5 = 21, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "5"
+      },
+      {
+        "label": "B",
+        "text": "3"
+      },
+      {
+        "label": "C",
+        "text": "4"
+      },
+      {
+        "label": "D",
+        "text": "21"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_184",
+    "exam": "ASVAB",
+    "section": "Paragraph Comprehension",
+    "difficulty": "easy",
+    "question": "If 5x + 6 = 31, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "6"
+      },
+      {
+        "label": "B",
+        "text": "4"
+      },
+      {
+        "label": "C",
+        "text": "31"
+      },
+      {
+        "label": "D",
+        "text": "5"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_185",
+    "exam": "ASVAB",
+    "section": "Arithmetic Reasoning",
+    "difficulty": "medium",
+    "question": "If 6x + 7 = 43, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "6"
+      },
+      {
+        "label": "B",
+        "text": "7"
+      },
+      {
+        "label": "C",
+        "text": "5"
+      },
+      {
+        "label": "D",
+        "text": "43"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_186",
+    "exam": "ASVAB",
+    "section": "Mathematics Knowledge",
+    "difficulty": "hard",
+    "question": "If 7x + 3 = 52, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "8"
+      },
+      {
+        "label": "B",
+        "text": "7"
+      },
+      {
+        "label": "C",
+        "text": "6"
+      },
+      {
+        "label": "D",
+        "text": "52"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_187",
+    "exam": "ASVAB",
+    "section": "Word Knowledge",
+    "difficulty": "easy",
+    "question": "If 2x + 4 = 20, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "9"
+      },
+      {
+        "label": "B",
+        "text": "7"
+      },
+      {
+        "label": "C",
+        "text": "8"
+      },
+      {
+        "label": "D",
+        "text": "20"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_188",
+    "exam": "ASVAB",
+    "section": "Paragraph Comprehension",
+    "difficulty": "medium",
+    "question": "If 3x + 5 = 32, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "10"
+      },
+      {
+        "label": "B",
+        "text": "8"
+      },
+      {
+        "label": "C",
+        "text": "32"
+      },
+      {
+        "label": "D",
+        "text": "9"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_189",
+    "exam": "ASVAB",
+    "section": "Arithmetic Reasoning",
+    "difficulty": "hard",
+    "question": "If 4x + 6 = 46, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "10"
+      },
+      {
+        "label": "B",
+        "text": "11"
+      },
+      {
+        "label": "C",
+        "text": "9"
+      },
+      {
+        "label": "D",
+        "text": "46"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_190",
+    "exam": "ASVAB",
+    "section": "Mathematics Knowledge",
+    "difficulty": "easy",
+    "question": "If 5x + 7 = 27, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "5"
+      },
+      {
+        "label": "B",
+        "text": "4"
+      },
+      {
+        "label": "C",
+        "text": "3"
+      },
+      {
+        "label": "D",
+        "text": "27"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_191",
+    "exam": "ASVAB",
+    "section": "Word Knowledge",
+    "difficulty": "medium",
+    "question": "If 6x + 3 = 33, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "6"
+      },
+      {
+        "label": "B",
+        "text": "4"
+      },
+      {
+        "label": "C",
+        "text": "5"
+      },
+      {
+        "label": "D",
+        "text": "33"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_192",
+    "exam": "ASVAB",
+    "section": "Paragraph Comprehension",
+    "difficulty": "hard",
+    "question": "If 7x + 4 = 46, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "7"
+      },
+      {
+        "label": "B",
+        "text": "5"
+      },
+      {
+        "label": "C",
+        "text": "46"
+      },
+      {
+        "label": "D",
+        "text": "6"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_193",
+    "exam": "ASVAB",
+    "section": "Arithmetic Reasoning",
+    "difficulty": "easy",
+    "question": "If 2x + 5 = 19, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "7"
+      },
+      {
+        "label": "B",
+        "text": "8"
+      },
+      {
+        "label": "C",
+        "text": "6"
+      },
+      {
+        "label": "D",
+        "text": "19"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_194",
+    "exam": "ASVAB",
+    "section": "Mathematics Knowledge",
+    "difficulty": "medium",
+    "question": "If 3x + 6 = 30, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "9"
+      },
+      {
+        "label": "B",
+        "text": "8"
+      },
+      {
+        "label": "C",
+        "text": "7"
+      },
+      {
+        "label": "D",
+        "text": "30"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_195",
+    "exam": "ASVAB",
+    "section": "Word Knowledge",
+    "difficulty": "hard",
+    "question": "If 4x + 7 = 43, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "10"
+      },
+      {
+        "label": "B",
+        "text": "8"
+      },
+      {
+        "label": "C",
+        "text": "9"
+      },
+      {
+        "label": "D",
+        "text": "43"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_196",
+    "exam": "ASVAB",
+    "section": "Paragraph Comprehension",
+    "difficulty": "easy",
+    "question": "If 5x + 3 = 53, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "11"
+      },
+      {
+        "label": "B",
+        "text": "9"
+      },
+      {
+        "label": "C",
+        "text": "53"
+      },
+      {
+        "label": "D",
+        "text": "10"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_197",
+    "exam": "ASVAB",
+    "section": "Arithmetic Reasoning",
+    "difficulty": "medium",
+    "question": "If 6x + 4 = 28, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "4"
+      },
+      {
+        "label": "B",
+        "text": "5"
+      },
+      {
+        "label": "C",
+        "text": "3"
+      },
+      {
+        "label": "D",
+        "text": "28"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_198",
+    "exam": "ASVAB",
+    "section": "Mathematics Knowledge",
+    "difficulty": "hard",
+    "question": "If 7x + 5 = 40, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "6"
+      },
+      {
+        "label": "B",
+        "text": "5"
+      },
+      {
+        "label": "C",
+        "text": "4"
+      },
+      {
+        "label": "D",
+        "text": "40"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_199",
+    "exam": "ASVAB",
+    "section": "Word Knowledge",
+    "difficulty": "easy",
+    "question": "If 2x + 6 = 18, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "7"
+      },
+      {
+        "label": "B",
+        "text": "5"
+      },
+      {
+        "label": "C",
+        "text": "6"
+      },
+      {
+        "label": "D",
+        "text": "18"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_200",
+    "exam": "ASVAB",
+    "section": "Paragraph Comprehension",
+    "difficulty": "medium",
+    "question": "If 3x + 7 = 28, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "8"
+      },
+      {
+        "label": "B",
+        "text": "6"
+      },
+      {
+        "label": "C",
+        "text": "28"
+      },
+      {
+        "label": "D",
+        "text": "7"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_201",
+    "exam": "ASVAB",
+    "section": "Arithmetic Reasoning",
+    "difficulty": "hard",
+    "question": "If 4x + 3 = 35, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "8"
+      },
+      {
+        "label": "B",
+        "text": "9"
+      },
+      {
+        "label": "C",
+        "text": "7"
+      },
+      {
+        "label": "D",
+        "text": "35"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_202",
+    "exam": "ASVAB",
+    "section": "Mathematics Knowledge",
+    "difficulty": "easy",
+    "question": "If 5x + 4 = 49, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "10"
+      },
+      {
+        "label": "B",
+        "text": "9"
+      },
+      {
+        "label": "C",
+        "text": "8"
+      },
+      {
+        "label": "D",
+        "text": "49"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_203",
+    "exam": "ASVAB",
+    "section": "Word Knowledge",
+    "difficulty": "medium",
+    "question": "If 6x + 5 = 65, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "11"
+      },
+      {
+        "label": "B",
+        "text": "9"
+      },
+      {
+        "label": "C",
+        "text": "10"
+      },
+      {
+        "label": "D",
+        "text": "65"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_204",
+    "exam": "ASVAB",
+    "section": "Paragraph Comprehension",
+    "difficulty": "hard",
+    "question": "If 7x + 6 = 34, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "5"
+      },
+      {
+        "label": "B",
+        "text": "3"
+      },
+      {
+        "label": "C",
+        "text": "34"
+      },
+      {
+        "label": "D",
+        "text": "4"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_205",
+    "exam": "ASVAB",
+    "section": "Arithmetic Reasoning",
+    "difficulty": "easy",
+    "question": "If 2x + 7 = 17, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "5"
+      },
+      {
+        "label": "B",
+        "text": "6"
+      },
+      {
+        "label": "C",
+        "text": "4"
+      },
+      {
+        "label": "D",
+        "text": "17"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_206",
+    "exam": "ASVAB",
+    "section": "Mathematics Knowledge",
+    "difficulty": "medium",
+    "question": "If 3x + 3 = 21, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "7"
+      },
+      {
+        "label": "B",
+        "text": "6"
+      },
+      {
+        "label": "C",
+        "text": "5"
+      },
+      {
+        "label": "D",
+        "text": "21"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_207",
+    "exam": "ASVAB",
+    "section": "Word Knowledge",
+    "difficulty": "hard",
+    "question": "If 4x + 4 = 32, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "8"
+      },
+      {
+        "label": "B",
+        "text": "6"
+      },
+      {
+        "label": "C",
+        "text": "7"
+      },
+      {
+        "label": "D",
+        "text": "32"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_208",
+    "exam": "ASVAB",
+    "section": "Paragraph Comprehension",
+    "difficulty": "easy",
+    "question": "If 5x + 5 = 45, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "9"
+      },
+      {
+        "label": "B",
+        "text": "7"
+      },
+      {
+        "label": "C",
+        "text": "45"
+      },
+      {
+        "label": "D",
+        "text": "8"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_209",
+    "exam": "ASVAB",
+    "section": "Arithmetic Reasoning",
+    "difficulty": "medium",
+    "question": "If 6x + 6 = 60, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "9"
+      },
+      {
+        "label": "B",
+        "text": "10"
+      },
+      {
+        "label": "C",
+        "text": "8"
+      },
+      {
+        "label": "D",
+        "text": "60"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_210",
+    "exam": "ASVAB",
+    "section": "Mathematics Knowledge",
+    "difficulty": "hard",
+    "question": "If 7x + 7 = 77, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "11"
+      },
+      {
+        "label": "B",
+        "text": "10"
+      },
+      {
+        "label": "C",
+        "text": "9"
+      },
+      {
+        "label": "D",
+        "text": "77"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_211",
+    "exam": "ASVAB",
+    "section": "Word Knowledge",
+    "difficulty": "easy",
+    "question": "If 2x + 3 = 11, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "5"
+      },
+      {
+        "label": "B",
+        "text": "3"
+      },
+      {
+        "label": "C",
+        "text": "4"
+      },
+      {
+        "label": "D",
+        "text": "11"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_212",
+    "exam": "ASVAB",
+    "section": "Paragraph Comprehension",
+    "difficulty": "medium",
+    "question": "If 3x + 4 = 19, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "6"
+      },
+      {
+        "label": "B",
+        "text": "4"
+      },
+      {
+        "label": "C",
+        "text": "19"
+      },
+      {
+        "label": "D",
+        "text": "5"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_213",
+    "exam": "ASVAB",
+    "section": "Arithmetic Reasoning",
+    "difficulty": "hard",
+    "question": "If 4x + 5 = 29, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "6"
+      },
+      {
+        "label": "B",
+        "text": "7"
+      },
+      {
+        "label": "C",
+        "text": "5"
+      },
+      {
+        "label": "D",
+        "text": "29"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_214",
+    "exam": "ASVAB",
+    "section": "Mathematics Knowledge",
+    "difficulty": "easy",
+    "question": "If 5x + 6 = 41, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "8"
+      },
+      {
+        "label": "B",
+        "text": "7"
+      },
+      {
+        "label": "C",
+        "text": "6"
+      },
+      {
+        "label": "D",
+        "text": "41"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_215",
+    "exam": "ASVAB",
+    "section": "Word Knowledge",
+    "difficulty": "medium",
+    "question": "If 6x + 7 = 55, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "9"
+      },
+      {
+        "label": "B",
+        "text": "7"
+      },
+      {
+        "label": "C",
+        "text": "8"
+      },
+      {
+        "label": "D",
+        "text": "55"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_216",
+    "exam": "ASVAB",
+    "section": "Paragraph Comprehension",
+    "difficulty": "hard",
+    "question": "If 7x + 3 = 66, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "10"
+      },
+      {
+        "label": "B",
+        "text": "8"
+      },
+      {
+        "label": "C",
+        "text": "66"
+      },
+      {
+        "label": "D",
+        "text": "9"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_217",
+    "exam": "ASVAB",
+    "section": "Arithmetic Reasoning",
+    "difficulty": "easy",
+    "question": "If 2x + 4 = 24, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "10"
+      },
+      {
+        "label": "B",
+        "text": "11"
+      },
+      {
+        "label": "C",
+        "text": "9"
+      },
+      {
+        "label": "D",
+        "text": "24"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_218",
+    "exam": "ASVAB",
+    "section": "Mathematics Knowledge",
+    "difficulty": "medium",
+    "question": "If 3x + 5 = 17, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "5"
+      },
+      {
+        "label": "B",
+        "text": "4"
+      },
+      {
+        "label": "C",
+        "text": "3"
+      },
+      {
+        "label": "D",
+        "text": "17"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_219",
+    "exam": "ASVAB",
+    "section": "Word Knowledge",
+    "difficulty": "hard",
+    "question": "If 4x + 6 = 26, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "6"
+      },
+      {
+        "label": "B",
+        "text": "4"
+      },
+      {
+        "label": "C",
+        "text": "5"
+      },
+      {
+        "label": "D",
+        "text": "26"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_220",
+    "exam": "ASVAB",
+    "section": "Paragraph Comprehension",
+    "difficulty": "easy",
+    "question": "If 5x + 7 = 37, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "7"
+      },
+      {
+        "label": "B",
+        "text": "5"
+      },
+      {
+        "label": "C",
+        "text": "37"
+      },
+      {
+        "label": "D",
+        "text": "6"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_221",
+    "exam": "ASVAB",
+    "section": "Arithmetic Reasoning",
+    "difficulty": "medium",
+    "question": "If 6x + 3 = 45, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "7"
+      },
+      {
+        "label": "B",
+        "text": "8"
+      },
+      {
+        "label": "C",
+        "text": "6"
+      },
+      {
+        "label": "D",
+        "text": "45"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_222",
+    "exam": "ASVAB",
+    "section": "Mathematics Knowledge",
+    "difficulty": "hard",
+    "question": "If 7x + 4 = 60, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "9"
+      },
+      {
+        "label": "B",
+        "text": "8"
+      },
+      {
+        "label": "C",
+        "text": "7"
+      },
+      {
+        "label": "D",
+        "text": "60"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_223",
+    "exam": "ASVAB",
+    "section": "Word Knowledge",
+    "difficulty": "easy",
+    "question": "If 2x + 5 = 23, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "10"
+      },
+      {
+        "label": "B",
+        "text": "8"
+      },
+      {
+        "label": "C",
+        "text": "9"
+      },
+      {
+        "label": "D",
+        "text": "23"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_224",
+    "exam": "ASVAB",
+    "section": "Paragraph Comprehension",
+    "difficulty": "medium",
+    "question": "If 3x + 6 = 36, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "11"
+      },
+      {
+        "label": "B",
+        "text": "9"
+      },
+      {
+        "label": "C",
+        "text": "36"
+      },
+      {
+        "label": "D",
+        "text": "10"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_225",
+    "exam": "ASVAB",
+    "section": "Arithmetic Reasoning",
+    "difficulty": "hard",
+    "question": "If 4x + 7 = 23, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "4"
+      },
+      {
+        "label": "B",
+        "text": "5"
+      },
+      {
+        "label": "C",
+        "text": "3"
+      },
+      {
+        "label": "D",
+        "text": "23"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_226",
+    "exam": "ASVAB",
+    "section": "Mathematics Knowledge",
+    "difficulty": "easy",
+    "question": "If 5x + 3 = 28, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "6"
+      },
+      {
+        "label": "B",
+        "text": "5"
+      },
+      {
+        "label": "C",
+        "text": "4"
+      },
+      {
+        "label": "D",
+        "text": "28"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_227",
+    "exam": "ASVAB",
+    "section": "Word Knowledge",
+    "difficulty": "medium",
+    "question": "If 6x + 4 = 40, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "7"
+      },
+      {
+        "label": "B",
+        "text": "5"
+      },
+      {
+        "label": "C",
+        "text": "6"
+      },
+      {
+        "label": "D",
+        "text": "40"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_228",
+    "exam": "ASVAB",
+    "section": "Paragraph Comprehension",
+    "difficulty": "hard",
+    "question": "If 7x + 5 = 54, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "8"
+      },
+      {
+        "label": "B",
+        "text": "6"
+      },
+      {
+        "label": "C",
+        "text": "54"
+      },
+      {
+        "label": "D",
+        "text": "7"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_229",
+    "exam": "ASVAB",
+    "section": "Arithmetic Reasoning",
+    "difficulty": "easy",
+    "question": "If 2x + 6 = 22, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "8"
+      },
+      {
+        "label": "B",
+        "text": "9"
+      },
+      {
+        "label": "C",
+        "text": "7"
+      },
+      {
+        "label": "D",
+        "text": "22"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_230",
+    "exam": "ASVAB",
+    "section": "Mathematics Knowledge",
+    "difficulty": "medium",
+    "question": "If 3x + 7 = 34, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "10"
+      },
+      {
+        "label": "B",
+        "text": "9"
+      },
+      {
+        "label": "C",
+        "text": "8"
+      },
+      {
+        "label": "D",
+        "text": "34"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_231",
+    "exam": "ASVAB",
+    "section": "Word Knowledge",
+    "difficulty": "hard",
+    "question": "If 4x + 3 = 43, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "11"
+      },
+      {
+        "label": "B",
+        "text": "9"
+      },
+      {
+        "label": "C",
+        "text": "10"
+      },
+      {
+        "label": "D",
+        "text": "43"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_232",
+    "exam": "ASVAB",
+    "section": "Paragraph Comprehension",
+    "difficulty": "easy",
+    "question": "If 5x + 4 = 24, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "5"
+      },
+      {
+        "label": "B",
+        "text": "3"
+      },
+      {
+        "label": "C",
+        "text": "24"
+      },
+      {
+        "label": "D",
+        "text": "4"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_233",
+    "exam": "ASVAB",
+    "section": "Arithmetic Reasoning",
+    "difficulty": "medium",
+    "question": "If 6x + 5 = 35, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "5"
+      },
+      {
+        "label": "B",
+        "text": "6"
+      },
+      {
+        "label": "C",
+        "text": "4"
+      },
+      {
+        "label": "D",
+        "text": "35"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_234",
+    "exam": "ASVAB",
+    "section": "Mathematics Knowledge",
+    "difficulty": "hard",
+    "question": "If 7x + 6 = 48, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "7"
+      },
+      {
+        "label": "B",
+        "text": "6"
+      },
+      {
+        "label": "C",
+        "text": "5"
+      },
+      {
+        "label": "D",
+        "text": "48"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_235",
+    "exam": "ASVAB",
+    "section": "Word Knowledge",
+    "difficulty": "easy",
+    "question": "If 2x + 7 = 21, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "8"
+      },
+      {
+        "label": "B",
+        "text": "6"
+      },
+      {
+        "label": "C",
+        "text": "7"
+      },
+      {
+        "label": "D",
+        "text": "21"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_236",
+    "exam": "ASVAB",
+    "section": "Paragraph Comprehension",
+    "difficulty": "medium",
+    "question": "If 3x + 3 = 27, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "9"
+      },
+      {
+        "label": "B",
+        "text": "7"
+      },
+      {
+        "label": "C",
+        "text": "27"
+      },
+      {
+        "label": "D",
+        "text": "8"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_237",
+    "exam": "ASVAB",
+    "section": "Arithmetic Reasoning",
+    "difficulty": "hard",
+    "question": "If 4x + 4 = 40, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "9"
+      },
+      {
+        "label": "B",
+        "text": "10"
+      },
+      {
+        "label": "C",
+        "text": "8"
+      },
+      {
+        "label": "D",
+        "text": "40"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_238",
+    "exam": "ASVAB",
+    "section": "Mathematics Knowledge",
+    "difficulty": "easy",
+    "question": "If 5x + 5 = 55, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "11"
+      },
+      {
+        "label": "B",
+        "text": "10"
+      },
+      {
+        "label": "C",
+        "text": "9"
+      },
+      {
+        "label": "D",
+        "text": "55"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_239",
+    "exam": "ASVAB",
+    "section": "Word Knowledge",
+    "difficulty": "medium",
+    "question": "If 6x + 6 = 30, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "5"
+      },
+      {
+        "label": "B",
+        "text": "3"
+      },
+      {
+        "label": "C",
+        "text": "4"
+      },
+      {
+        "label": "D",
+        "text": "30"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_240",
+    "exam": "ASVAB",
+    "section": "Paragraph Comprehension",
+    "difficulty": "hard",
+    "question": "If 7x + 7 = 42, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "6"
+      },
+      {
+        "label": "B",
+        "text": "4"
+      },
+      {
+        "label": "C",
+        "text": "42"
+      },
+      {
+        "label": "D",
+        "text": "5"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_241",
+    "exam": "ASVAB",
+    "section": "Arithmetic Reasoning",
+    "difficulty": "easy",
+    "question": "If 2x + 3 = 15, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "6"
+      },
+      {
+        "label": "B",
+        "text": "7"
+      },
+      {
+        "label": "C",
+        "text": "5"
+      },
+      {
+        "label": "D",
+        "text": "15"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_242",
+    "exam": "ASVAB",
+    "section": "Mathematics Knowledge",
+    "difficulty": "medium",
+    "question": "If 3x + 4 = 25, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "8"
+      },
+      {
+        "label": "B",
+        "text": "7"
+      },
+      {
+        "label": "C",
+        "text": "6"
+      },
+      {
+        "label": "D",
+        "text": "25"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_243",
+    "exam": "ASVAB",
+    "section": "Word Knowledge",
+    "difficulty": "hard",
+    "question": "If 4x + 5 = 37, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "9"
+      },
+      {
+        "label": "B",
+        "text": "7"
+      },
+      {
+        "label": "C",
+        "text": "8"
+      },
+      {
+        "label": "D",
+        "text": "37"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_244",
+    "exam": "ASVAB",
+    "section": "Paragraph Comprehension",
+    "difficulty": "easy",
+    "question": "If 5x + 6 = 51, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "10"
+      },
+      {
+        "label": "B",
+        "text": "8"
+      },
+      {
+        "label": "C",
+        "text": "51"
+      },
+      {
+        "label": "D",
+        "text": "9"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_245",
+    "exam": "ASVAB",
+    "section": "Arithmetic Reasoning",
+    "difficulty": "medium",
+    "question": "If 6x + 7 = 67, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "10"
+      },
+      {
+        "label": "B",
+        "text": "11"
+      },
+      {
+        "label": "C",
+        "text": "9"
+      },
+      {
+        "label": "D",
+        "text": "67"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_246",
+    "exam": "ASVAB",
+    "section": "Mathematics Knowledge",
+    "difficulty": "hard",
+    "question": "If 7x + 3 = 31, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "5"
+      },
+      {
+        "label": "B",
+        "text": "4"
+      },
+      {
+        "label": "C",
+        "text": "3"
+      },
+      {
+        "label": "D",
+        "text": "31"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_247",
+    "exam": "ASVAB",
+    "section": "Word Knowledge",
+    "difficulty": "easy",
+    "question": "If 2x + 4 = 14, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "6"
+      },
+      {
+        "label": "B",
+        "text": "4"
+      },
+      {
+        "label": "C",
+        "text": "5"
+      },
+      {
+        "label": "D",
+        "text": "14"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_248",
+    "exam": "ASVAB",
+    "section": "Paragraph Comprehension",
+    "difficulty": "medium",
+    "question": "If 3x + 5 = 23, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "7"
+      },
+      {
+        "label": "B",
+        "text": "5"
+      },
+      {
+        "label": "C",
+        "text": "23"
+      },
+      {
+        "label": "D",
+        "text": "6"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_249",
+    "exam": "ASVAB",
+    "section": "Arithmetic Reasoning",
+    "difficulty": "hard",
+    "question": "If 4x + 6 = 34, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "7"
+      },
+      {
+        "label": "B",
+        "text": "8"
+      },
+      {
+        "label": "C",
+        "text": "6"
+      },
+      {
+        "label": "D",
+        "text": "34"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_250",
+    "exam": "ASVAB",
+    "section": "Mathematics Knowledge",
+    "difficulty": "easy",
+    "question": "If 5x + 7 = 47, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "9"
+      },
+      {
+        "label": "B",
+        "text": "8"
+      },
+      {
+        "label": "C",
+        "text": "7"
+      },
+      {
+        "label": "D",
+        "text": "47"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_251",
+    "exam": "ASVAB",
+    "section": "Word Knowledge",
+    "difficulty": "medium",
+    "question": "If 6x + 3 = 57, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "10"
+      },
+      {
+        "label": "B",
+        "text": "8"
+      },
+      {
+        "label": "C",
+        "text": "9"
+      },
+      {
+        "label": "D",
+        "text": "57"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_252",
+    "exam": "ASVAB",
+    "section": "Paragraph Comprehension",
+    "difficulty": "hard",
+    "question": "If 7x + 4 = 74, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "11"
+      },
+      {
+        "label": "B",
+        "text": "9"
+      },
+      {
+        "label": "C",
+        "text": "74"
+      },
+      {
+        "label": "D",
+        "text": "10"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_253",
+    "exam": "ASVAB",
+    "section": "Arithmetic Reasoning",
+    "difficulty": "easy",
+    "question": "If 2x + 5 = 13, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "4"
+      },
+      {
+        "label": "B",
+        "text": "5"
+      },
+      {
+        "label": "C",
+        "text": "3"
+      },
+      {
+        "label": "D",
+        "text": "13"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_254",
+    "exam": "ASVAB",
+    "section": "Mathematics Knowledge",
+    "difficulty": "medium",
+    "question": "If 3x + 6 = 21, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "6"
+      },
+      {
+        "label": "B",
+        "text": "5"
+      },
+      {
+        "label": "C",
+        "text": "4"
+      },
+      {
+        "label": "D",
+        "text": "21"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_255",
+    "exam": "ASVAB",
+    "section": "Word Knowledge",
+    "difficulty": "hard",
+    "question": "If 4x + 7 = 31, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "7"
+      },
+      {
+        "label": "B",
+        "text": "5"
+      },
+      {
+        "label": "C",
+        "text": "6"
+      },
+      {
+        "label": "D",
+        "text": "31"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_256",
+    "exam": "ASVAB",
+    "section": "Paragraph Comprehension",
+    "difficulty": "easy",
+    "question": "If 5x + 3 = 38, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "8"
+      },
+      {
+        "label": "B",
+        "text": "6"
+      },
+      {
+        "label": "C",
+        "text": "38"
+      },
+      {
+        "label": "D",
+        "text": "7"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_257",
+    "exam": "ASVAB",
+    "section": "Arithmetic Reasoning",
+    "difficulty": "medium",
+    "question": "If 6x + 4 = 52, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "8"
+      },
+      {
+        "label": "B",
+        "text": "9"
+      },
+      {
+        "label": "C",
+        "text": "7"
+      },
+      {
+        "label": "D",
+        "text": "52"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_258",
+    "exam": "ASVAB",
+    "section": "Mathematics Knowledge",
+    "difficulty": "hard",
+    "question": "If 7x + 5 = 68, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "10"
+      },
+      {
+        "label": "B",
+        "text": "9"
+      },
+      {
+        "label": "C",
+        "text": "8"
+      },
+      {
+        "label": "D",
+        "text": "68"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_259",
+    "exam": "ASVAB",
+    "section": "Word Knowledge",
+    "difficulty": "easy",
+    "question": "If 2x + 6 = 26, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "11"
+      },
+      {
+        "label": "B",
+        "text": "9"
+      },
+      {
+        "label": "C",
+        "text": "10"
+      },
+      {
+        "label": "D",
+        "text": "26"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_260",
+    "exam": "ASVAB",
+    "section": "Paragraph Comprehension",
+    "difficulty": "medium",
+    "question": "If 3x + 7 = 19, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "5"
+      },
+      {
+        "label": "B",
+        "text": "3"
+      },
+      {
+        "label": "C",
+        "text": "19"
+      },
+      {
+        "label": "D",
+        "text": "4"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_261",
+    "exam": "ASVAB",
+    "section": "Arithmetic Reasoning",
+    "difficulty": "hard",
+    "question": "If 4x + 3 = 23, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "5"
+      },
+      {
+        "label": "B",
+        "text": "6"
+      },
+      {
+        "label": "C",
+        "text": "4"
+      },
+      {
+        "label": "D",
+        "text": "23"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_262",
+    "exam": "ASVAB",
+    "section": "Mathematics Knowledge",
+    "difficulty": "easy",
+    "question": "If 5x + 4 = 34, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "7"
+      },
+      {
+        "label": "B",
+        "text": "6"
+      },
+      {
+        "label": "C",
+        "text": "5"
+      },
+      {
+        "label": "D",
+        "text": "34"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_263",
+    "exam": "ASVAB",
+    "section": "Word Knowledge",
+    "difficulty": "medium",
+    "question": "If 6x + 5 = 47, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "8"
+      },
+      {
+        "label": "B",
+        "text": "6"
+      },
+      {
+        "label": "C",
+        "text": "7"
+      },
+      {
+        "label": "D",
+        "text": "47"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_264",
+    "exam": "ASVAB",
+    "section": "Paragraph Comprehension",
+    "difficulty": "hard",
+    "question": "If 7x + 6 = 62, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "9"
+      },
+      {
+        "label": "B",
+        "text": "7"
+      },
+      {
+        "label": "C",
+        "text": "62"
+      },
+      {
+        "label": "D",
+        "text": "8"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_265",
+    "exam": "ASVAB",
+    "section": "Arithmetic Reasoning",
+    "difficulty": "easy",
+    "question": "If 2x + 7 = 25, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "9"
+      },
+      {
+        "label": "B",
+        "text": "10"
+      },
+      {
+        "label": "C",
+        "text": "8"
+      },
+      {
+        "label": "D",
+        "text": "25"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_266",
+    "exam": "ASVAB",
+    "section": "Mathematics Knowledge",
+    "difficulty": "medium",
+    "question": "If 3x + 3 = 33, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "11"
+      },
+      {
+        "label": "B",
+        "text": "10"
+      },
+      {
+        "label": "C",
+        "text": "9"
+      },
+      {
+        "label": "D",
+        "text": "33"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_267",
+    "exam": "ASVAB",
+    "section": "Word Knowledge",
+    "difficulty": "hard",
+    "question": "If 4x + 4 = 20, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "5"
+      },
+      {
+        "label": "B",
+        "text": "3"
+      },
+      {
+        "label": "C",
+        "text": "4"
+      },
+      {
+        "label": "D",
+        "text": "20"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_268",
+    "exam": "ASVAB",
+    "section": "Paragraph Comprehension",
+    "difficulty": "easy",
+    "question": "If 5x + 5 = 30, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "6"
+      },
+      {
+        "label": "B",
+        "text": "4"
+      },
+      {
+        "label": "C",
+        "text": "30"
+      },
+      {
+        "label": "D",
+        "text": "5"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_269",
+    "exam": "ASVAB",
+    "section": "Arithmetic Reasoning",
+    "difficulty": "medium",
+    "question": "If 6x + 6 = 42, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "6"
+      },
+      {
+        "label": "B",
+        "text": "7"
+      },
+      {
+        "label": "C",
+        "text": "5"
+      },
+      {
+        "label": "D",
+        "text": "42"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_270",
+    "exam": "ASVAB",
+    "section": "Mathematics Knowledge",
+    "difficulty": "hard",
+    "question": "If 7x + 7 = 56, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "8"
+      },
+      {
+        "label": "B",
+        "text": "7"
+      },
+      {
+        "label": "C",
+        "text": "6"
+      },
+      {
+        "label": "D",
+        "text": "56"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_271",
+    "exam": "ASVAB",
+    "section": "Word Knowledge",
+    "difficulty": "easy",
+    "question": "If 2x + 3 = 19, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "9"
+      },
+      {
+        "label": "B",
+        "text": "7"
+      },
+      {
+        "label": "C",
+        "text": "8"
+      },
+      {
+        "label": "D",
+        "text": "19"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_272",
+    "exam": "ASVAB",
+    "section": "Paragraph Comprehension",
+    "difficulty": "medium",
+    "question": "If 3x + 4 = 31, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "10"
+      },
+      {
+        "label": "B",
+        "text": "8"
+      },
+      {
+        "label": "C",
+        "text": "31"
+      },
+      {
+        "label": "D",
+        "text": "9"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_273",
+    "exam": "ASVAB",
+    "section": "Arithmetic Reasoning",
+    "difficulty": "hard",
+    "question": "If 4x + 5 = 45, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "10"
+      },
+      {
+        "label": "B",
+        "text": "11"
+      },
+      {
+        "label": "C",
+        "text": "9"
+      },
+      {
+        "label": "D",
+        "text": "45"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_274",
+    "exam": "ASVAB",
+    "section": "Mathematics Knowledge",
+    "difficulty": "easy",
+    "question": "If 5x + 6 = 26, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "5"
+      },
+      {
+        "label": "B",
+        "text": "4"
+      },
+      {
+        "label": "C",
+        "text": "3"
+      },
+      {
+        "label": "D",
+        "text": "26"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_275",
+    "exam": "ASVAB",
+    "section": "Word Knowledge",
+    "difficulty": "medium",
+    "question": "If 6x + 7 = 37, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "6"
+      },
+      {
+        "label": "B",
+        "text": "4"
+      },
+      {
+        "label": "C",
+        "text": "5"
+      },
+      {
+        "label": "D",
+        "text": "37"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_276",
+    "exam": "ASVAB",
+    "section": "Paragraph Comprehension",
+    "difficulty": "hard",
+    "question": "If 7x + 3 = 45, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "7"
+      },
+      {
+        "label": "B",
+        "text": "5"
+      },
+      {
+        "label": "C",
+        "text": "45"
+      },
+      {
+        "label": "D",
+        "text": "6"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_277",
+    "exam": "ASVAB",
+    "section": "Arithmetic Reasoning",
+    "difficulty": "easy",
+    "question": "If 2x + 4 = 18, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "7"
+      },
+      {
+        "label": "B",
+        "text": "8"
+      },
+      {
+        "label": "C",
+        "text": "6"
+      },
+      {
+        "label": "D",
+        "text": "18"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_278",
+    "exam": "ASVAB",
+    "section": "Mathematics Knowledge",
+    "difficulty": "medium",
+    "question": "If 3x + 5 = 29, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "9"
+      },
+      {
+        "label": "B",
+        "text": "8"
+      },
+      {
+        "label": "C",
+        "text": "7"
+      },
+      {
+        "label": "D",
+        "text": "29"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_279",
+    "exam": "ASVAB",
+    "section": "Word Knowledge",
+    "difficulty": "hard",
+    "question": "If 4x + 6 = 42, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "10"
+      },
+      {
+        "label": "B",
+        "text": "8"
+      },
+      {
+        "label": "C",
+        "text": "9"
+      },
+      {
+        "label": "D",
+        "text": "42"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_280",
+    "exam": "ASVAB",
+    "section": "Paragraph Comprehension",
+    "difficulty": "easy",
+    "question": "If 5x + 7 = 57, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "11"
+      },
+      {
+        "label": "B",
+        "text": "9"
+      },
+      {
+        "label": "C",
+        "text": "57"
+      },
+      {
+        "label": "D",
+        "text": "10"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_281",
+    "exam": "ASVAB",
+    "section": "Arithmetic Reasoning",
+    "difficulty": "medium",
+    "question": "If 6x + 3 = 27, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "4"
+      },
+      {
+        "label": "B",
+        "text": "5"
+      },
+      {
+        "label": "C",
+        "text": "3"
+      },
+      {
+        "label": "D",
+        "text": "27"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_282",
+    "exam": "ASVAB",
+    "section": "Mathematics Knowledge",
+    "difficulty": "hard",
+    "question": "If 7x + 4 = 39, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "6"
+      },
+      {
+        "label": "B",
+        "text": "5"
+      },
+      {
+        "label": "C",
+        "text": "4"
+      },
+      {
+        "label": "D",
+        "text": "39"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_283",
+    "exam": "ASVAB",
+    "section": "Word Knowledge",
+    "difficulty": "easy",
+    "question": "If 2x + 5 = 17, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "7"
+      },
+      {
+        "label": "B",
+        "text": "5"
+      },
+      {
+        "label": "C",
+        "text": "6"
+      },
+      {
+        "label": "D",
+        "text": "17"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_284",
+    "exam": "ASVAB",
+    "section": "Paragraph Comprehension",
+    "difficulty": "medium",
+    "question": "If 3x + 6 = 27, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "8"
+      },
+      {
+        "label": "B",
+        "text": "6"
+      },
+      {
+        "label": "C",
+        "text": "27"
+      },
+      {
+        "label": "D",
+        "text": "7"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_285",
+    "exam": "ASVAB",
+    "section": "Arithmetic Reasoning",
+    "difficulty": "hard",
+    "question": "If 4x + 7 = 39, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "8"
+      },
+      {
+        "label": "B",
+        "text": "9"
+      },
+      {
+        "label": "C",
+        "text": "7"
+      },
+      {
+        "label": "D",
+        "text": "39"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_286",
+    "exam": "ASVAB",
+    "section": "Mathematics Knowledge",
+    "difficulty": "easy",
+    "question": "If 5x + 3 = 48, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "10"
+      },
+      {
+        "label": "B",
+        "text": "9"
+      },
+      {
+        "label": "C",
+        "text": "8"
+      },
+      {
+        "label": "D",
+        "text": "48"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_287",
+    "exam": "ASVAB",
+    "section": "Word Knowledge",
+    "difficulty": "medium",
+    "question": "If 6x + 4 = 64, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "11"
+      },
+      {
+        "label": "B",
+        "text": "9"
+      },
+      {
+        "label": "C",
+        "text": "10"
+      },
+      {
+        "label": "D",
+        "text": "64"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_288",
+    "exam": "ASVAB",
+    "section": "Paragraph Comprehension",
+    "difficulty": "hard",
+    "question": "If 7x + 5 = 33, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "5"
+      },
+      {
+        "label": "B",
+        "text": "3"
+      },
+      {
+        "label": "C",
+        "text": "33"
+      },
+      {
+        "label": "D",
+        "text": "4"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_289",
+    "exam": "ASVAB",
+    "section": "Arithmetic Reasoning",
+    "difficulty": "easy",
+    "question": "If 2x + 6 = 16, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "5"
+      },
+      {
+        "label": "B",
+        "text": "6"
+      },
+      {
+        "label": "C",
+        "text": "4"
+      },
+      {
+        "label": "D",
+        "text": "16"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_290",
+    "exam": "ASVAB",
+    "section": "Mathematics Knowledge",
+    "difficulty": "medium",
+    "question": "If 3x + 7 = 25, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "7"
+      },
+      {
+        "label": "B",
+        "text": "6"
+      },
+      {
+        "label": "C",
+        "text": "5"
+      },
+      {
+        "label": "D",
+        "text": "25"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_291",
+    "exam": "ASVAB",
+    "section": "Word Knowledge",
+    "difficulty": "hard",
+    "question": "If 4x + 3 = 31, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "8"
+      },
+      {
+        "label": "B",
+        "text": "6"
+      },
+      {
+        "label": "C",
+        "text": "7"
+      },
+      {
+        "label": "D",
+        "text": "31"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_292",
+    "exam": "ASVAB",
+    "section": "Paragraph Comprehension",
+    "difficulty": "easy",
+    "question": "If 5x + 4 = 44, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "9"
+      },
+      {
+        "label": "B",
+        "text": "7"
+      },
+      {
+        "label": "C",
+        "text": "44"
+      },
+      {
+        "label": "D",
+        "text": "8"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_293",
+    "exam": "ASVAB",
+    "section": "Arithmetic Reasoning",
+    "difficulty": "medium",
+    "question": "If 6x + 5 = 59, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "9"
+      },
+      {
+        "label": "B",
+        "text": "10"
+      },
+      {
+        "label": "C",
+        "text": "8"
+      },
+      {
+        "label": "D",
+        "text": "59"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_294",
+    "exam": "ASVAB",
+    "section": "Mathematics Knowledge",
+    "difficulty": "hard",
+    "question": "If 7x + 6 = 76, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "11"
+      },
+      {
+        "label": "B",
+        "text": "10"
+      },
+      {
+        "label": "C",
+        "text": "9"
+      },
+      {
+        "label": "D",
+        "text": "76"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_295",
+    "exam": "ASVAB",
+    "section": "Word Knowledge",
+    "difficulty": "easy",
+    "question": "If 2x + 7 = 15, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "5"
+      },
+      {
+        "label": "B",
+        "text": "3"
+      },
+      {
+        "label": "C",
+        "text": "4"
+      },
+      {
+        "label": "D",
+        "text": "15"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_296",
+    "exam": "ASVAB",
+    "section": "Paragraph Comprehension",
+    "difficulty": "medium",
+    "question": "If 3x + 3 = 18, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "6"
+      },
+      {
+        "label": "B",
+        "text": "4"
+      },
+      {
+        "label": "C",
+        "text": "18"
+      },
+      {
+        "label": "D",
+        "text": "5"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_297",
+    "exam": "ASVAB",
+    "section": "Arithmetic Reasoning",
+    "difficulty": "hard",
+    "question": "If 4x + 4 = 28, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "6"
+      },
+      {
+        "label": "B",
+        "text": "7"
+      },
+      {
+        "label": "C",
+        "text": "5"
+      },
+      {
+        "label": "D",
+        "text": "28"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_298",
+    "exam": "ASVAB",
+    "section": "Mathematics Knowledge",
+    "difficulty": "easy",
+    "question": "If 5x + 5 = 40, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "8"
+      },
+      {
+        "label": "B",
+        "text": "7"
+      },
+      {
+        "label": "C",
+        "text": "6"
+      },
+      {
+        "label": "D",
+        "text": "40"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_299",
+    "exam": "ASVAB",
+    "section": "Word Knowledge",
+    "difficulty": "medium",
+    "question": "If 6x + 6 = 54, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "9"
+      },
+      {
+        "label": "B",
+        "text": "7"
+      },
+      {
+        "label": "C",
+        "text": "8"
+      },
+      {
+        "label": "D",
+        "text": "54"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  },
+  {
+    "id": "asvab_q_300",
+    "exam": "ASVAB",
+    "section": "Paragraph Comprehension",
+    "difficulty": "hard",
+    "question": "If 7x + 7 = 70, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "10"
+      },
+      {
+        "label": "B",
+        "text": "8"
+      },
+      {
+        "label": "C",
+        "text": "70"
+      },
+      {
+        "label": "D",
+        "text": "9"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Solve by isolating x: subtract the constant and divide by the coefficient."
+  }
+]
