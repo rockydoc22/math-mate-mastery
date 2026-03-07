@@ -1,0 +1,35 @@
+{
+  "title": "Sample Coach Outputs",
+  "examples": [
+    {
+      "profile": "Language learner age 10 after weak conversation session",
+      "output": {
+        "headline": "Good effort today.",
+        "what_went_well": "You completed the conversation and listened to every line.",
+        "what_to_fix_next": "A few lines still need review before they feel natural.",
+        "recommended_next_activity": "Do one short translation-reveal conversation review.",
+        "one_small_tip": "Listen once, then try saying the line before revealing the English."
+      }
+    },
+    {
+      "profile": "SAT student with high-confidence reading miss",
+      "output": {
+        "headline": "You are close.",
+        "what_went_well": "Your pacing improved.",
+        "what_to_fix_next": "This miss looks like a trap-answer issue rather than a content gap.",
+        "recommended_next_activity": "Complete 2 elimination strategy scenarios.",
+        "one_small_tip": "Choose the answer best supported by the text, not the one that sounds most interesting."
+      }
+    },
+    {
+      "profile": "Parent view for child under 10",
+      "output": {
+        "headline": "Nice session overall.",
+        "strength_this_session": "Your child completed today's story goal.",
+        "support_need": "Vocabulary recall was a little weaker today.",
+        "best_next_step": "A 5-minute word review tomorrow would help.",
+        "time_recommendation": "Keep it short and simple."
+      }
+    }
+  ]
+}

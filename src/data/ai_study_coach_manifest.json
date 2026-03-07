@@ -1,0 +1,12 @@
+{
+  "title": "AI Study Coach Layer Pack",
+  "files": [
+    "ai_study_coach_spec.json",
+    "study_coach_input_schema.json",
+    "study_coach_output_templates.json",
+    "mistake_explanation_engine.json",
+    "study_plan_generator.json",
+    "study_coach_ui_spec.json",
+    "sample_study_coach_outputs.json"
+  ]
+}
