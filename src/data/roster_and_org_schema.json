@@ -1,0 +1,42 @@
+{
+  "title": "Roster and Organization Schema",
+  "entities": {
+    "school": [
+      "school_id",
+      "school_name",
+      "admin_users",
+      "default_settings_profile"
+    ],
+    "classroom": [
+      "class_id",
+      "school_id",
+      "teacher_id",
+      "title",
+      "grade_band",
+      "subject_focus",
+      "student_ids"
+    ],
+    "student": [
+      "student_id",
+      "display_name",
+      "grade_band",
+      "assigned_classes",
+      "preferred_language_optional",
+      "parent_link_optional"
+    ],
+    "group": [
+      "group_id",
+      "class_id",
+      "group_name",
+      "student_ids",
+      "purpose"
+    ]
+  },
+  "group_purposes": [
+    "intervention",
+    "advanced_group",
+    "language_level_group",
+    "project_team",
+    "homeschool_cohort"
+  ]
+}
