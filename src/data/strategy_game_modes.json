@@ -1,0 +1,33 @@
+{
+  "title": "Strategy Game Modes for Testing App",
+  "modes": [
+    {
+      "id": "exam_arena",
+      "name": "Exam Arena",
+      "description": "Players compete through rounds of mixed difficulty questions.",
+      "reward_system": {
+        "correct_answer": 10,
+        "streak_bonus": 5
+      }
+    },
+    {
+      "id": "time_attack",
+      "name": "Time Attack",
+      "description": "Solve as many problems as possible within a fixed time window.",
+      "reward_system": {
+        "fast_correct": 12,
+        "correct": 8
+      }
+    },
+    {
+      "id": "boss_battle",
+      "name": "Boss Battle",
+      "description": "Defeat a 'boss' by answering several questions correctly in a row."
+    },
+    {
+      "id": "strategy_lab",
+      "name": "Strategy Lab",
+      "description": "Players practice elimination, backsolving, and estimation strategies."
+    }
+  ]
+}

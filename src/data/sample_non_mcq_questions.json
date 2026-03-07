@@ -1,0 +1,23 @@
+[
+  {
+    "id": "logic_order_001",
+    "type": "ordering",
+    "prompt": "Arrange the steps for solving a linear equation: 2x + 5 = 15",
+    "steps": [
+      "Subtract 5 from both sides",
+      "Divide both sides by 2",
+      "Simplify the equation"
+    ],
+    "correct_order": [
+      "Subtract 5 from both sides",
+      "Simplify the equation",
+      "Divide both sides by 2"
+    ]
+  },
+  {
+    "id": "spot_error_001",
+    "type": "spot_the_error",
+    "prompt": "A student solved 3x = 12 and wrote x = 12 \u2212 3. Identify the mistake.",
+    "correct_answer": "The student subtracted instead of dividing by 3."
+  }
+]

@@ -1,0 +1,36 @@
+{
+  "title": "Alternative Assessment Models (Non\u2011Multiple Choice)",
+  "goal": "Assess reasoning and strategy without relying on traditional MCQ formats.",
+  "models": [
+    {
+      "id": "elimination_mode",
+      "name": "Answer Elimination",
+      "description": "Students mark which options are clearly wrong before selecting a final answer.",
+      "benefit": "Teaches real test-taking strategy and reasoning instead of guessing."
+    },
+    {
+      "id": "confidence_rating",
+      "name": "Confidence Rating",
+      "description": "After answering, students rate confidence (High/Medium/Low).",
+      "benefit": "Builds metacognition and identifies knowledge gaps."
+    },
+    {
+      "id": "ordering_mode",
+      "name": "Ordering Challenge",
+      "description": "Students arrange steps, sentences, or reasoning in correct order.",
+      "benefit": "Tests comprehension and logical sequencing."
+    },
+    {
+      "id": "fill_gap_reasoning",
+      "name": "Fill the Gap Reasoning",
+      "description": "Students complete a short reasoning step or formula rather than picking an option.",
+      "benefit": "Closer to real problem solving."
+    },
+    {
+      "id": "spot_the_error",
+      "name": "Spot the Error",
+      "description": "Students examine a worked solution and identify the incorrect step.",
+      "benefit": "Teaches critical thinking and debugging skills."
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "title": "Review Analytics System",
+  "metrics": [
+    "accuracy_by_topic",
+    "average_time_per_question",
+    "confidence_vs_accuracy",
+    "most_common_wrong_answers"
+  ],
+  "dashboards": [
+    "student_progress_dashboard",
+    "teacher_or_parent_summary",
+    "weekly_performance_report"
+  ]
+}
