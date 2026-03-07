@@ -1,0 +1,44 @@
+{
+  "title": "Sample Assignment Outputs",
+  "examples": [
+    {
+      "teacher_goal": "French homework for beginners",
+      "output": {
+        "assignment_type": "story_pack",
+        "estimated_minutes": 12,
+        "due_in_days": 3,
+        "recommended_content": [
+          "1 A1 story",
+          "1 vocabulary review",
+          "1 short quiz"
+        ]
+      }
+    },
+    {
+      "teacher_goal": "SAT reading support group",
+      "output": {
+        "assignment_type": "strategy_scenarios",
+        "estimated_minutes": 15,
+        "due_in_days": 2,
+        "recommended_content": [
+          "5 reading questions",
+          "2 elimination scenarios",
+          "1 reflection prompt"
+        ]
+      }
+    },
+    {
+      "teacher_goal": "Short enrichment for ages 9-12",
+      "output": {
+        "assignment_type": "cognitive_skills_set",
+        "estimated_minutes": 8,
+        "due_in_days": 1,
+        "recommended_content": [
+          "2 pattern items",
+          "2 memory items",
+          "1 logic item"
+        ]
+      }
+    }
+  ]
+}

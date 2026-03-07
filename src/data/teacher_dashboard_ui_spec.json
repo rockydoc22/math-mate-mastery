@@ -1,0 +1,25 @@
+{
+  "title": "Teacher Dashboard UI",
+  "views": [
+    "assignment_home",
+    "create_assignment",
+    "template_picker",
+    "class_progress_table",
+    "student_detail_view",
+    "late_or_needs_support_view"
+  ],
+  "filters": [
+    "class",
+    "student",
+    "app_type",
+    "assignment_type",
+    "status",
+    "due_date"
+  ],
+  "ui_rules": [
+    "Show at-a-glance completion before deep analytics.",
+    "Allow quick resend / remind action.",
+    "Use sortable tables for teacher efficiency.",
+    "Keep creation flow simple for non-technical teachers."
+  ]
+}

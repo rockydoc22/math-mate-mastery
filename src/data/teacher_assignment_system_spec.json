@@ -1,0 +1,30 @@
+{
+  "title": "Teacher Assignment System",
+  "purpose": "Let teachers assign targeted work across language, testing, conversation, cognitive skills, and duel modes.",
+  "assignment_types": [
+    "story_pack",
+    "conversation_set",
+    "quiz_set",
+    "timed_mode",
+    "strategy_scenarios",
+    "cognitive_skills_set",
+    "daily_quest_bundle",
+    "duel_challenge"
+  ],
+  "core_features": [
+    "assign by student",
+    "assign by group",
+    "assign by class",
+    "due dates",
+    "required accuracy thresholds",
+    "required completion thresholds",
+    "auto-reminders",
+    "teacher notes"
+  ],
+  "design_rules": [
+    "Keep assignment creation to 3 to 5 clicks for common cases.",
+    "Allow reusable assignment templates.",
+    "Let teachers assign short and long formats.",
+    "Support both one-time assignments and recurring weekly practice."
+  ]
+}

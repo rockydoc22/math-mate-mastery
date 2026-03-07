@@ -1,0 +1,12 @@
+{
+  "title": "Teacher Assignment System Pack",
+  "files": [
+    "teacher_assignment_system_spec.json",
+    "teacher_assignment_schema.json",
+    "teacher_assignment_templates.json",
+    "teacher_assignment_progress_tracking.json",
+    "teacher_dashboard_ui_spec.json",
+    "teacher_actions_notifications.json",
+    "teacher_assignment_sample_outputs.json"
+  ]
+}

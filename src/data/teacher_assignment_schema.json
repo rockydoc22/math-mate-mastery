@@ -1,0 +1,39 @@
+{
+  "title": "Assignment Schema",
+  "fields": [
+    "assignment_id",
+    "title",
+    "app_type",
+    "assignment_type",
+    "target_group",
+    "target_students",
+    "content_ids",
+    "difficulty_level",
+    "estimated_minutes",
+    "due_date",
+    "required_accuracy",
+    "required_completion",
+    "teacher_note",
+    "reward_override_optional",
+    "is_recurring",
+    "recurrence_pattern_optional"
+  ],
+  "example_assignment": {
+    "assignment_id": "assign_001",
+    "title": "French Story Review Week 1",
+    "app_type": "language_app",
+    "assignment_type": "story_pack",
+    "target_group": "French 1 Period 2",
+    "content_ids": [
+      "story_101",
+      "story_118",
+      "story_126"
+    ],
+    "difficulty_level": "A1",
+    "estimated_minutes": 15,
+    "due_date": "2026-03-14",
+    "required_accuracy": 0.75,
+    "required_completion": 1.0,
+    "teacher_note": "Focus on reading for meaning before using translation."
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "title": "Assignment Progress Tracking",
+  "metrics": [
+    "assigned_count",
+    "started_count",
+    "completed_count",
+    "average_accuracy",
+    "average_time_spent",
+    "students_below_target",
+    "students_above_target",
+    "late_count"
+  ],
+  "student_level_fields": [
+    "student_id",
+    "assignment_id",
+    "started_at",
+    "completed_at",
+    "completion_rate",
+    "accuracy_rate",
+    "time_spent_minutes",
+    "status",
+    "teacher_feedback_optional"
+  ],
+  "status_values": [
+    "not_started",
+    "in_progress",
+    "completed",
+    "completed_below_target",
+    "late"
+  ]
+}
