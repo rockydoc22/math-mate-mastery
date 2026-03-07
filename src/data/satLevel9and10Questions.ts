@@ -44,8 +44,9 @@ function convertToEnglish(raw: RawJsonQuestion[]): EnglishQuestion[] {
   }));
 }
 
+export const satMathLevel9Questions: Question[] = convertToMath(satMath9Raw as RawJsonQuestion[]);
 export const satMathLevel10Questions: Question[] = convertToMath(satMath10Raw as RawJsonQuestion[]);
 export const satEnglishLevel9Questions: EnglishQuestion[] = convertToEnglish(satEnglish9Raw as RawJsonQuestion[]);
 export const satEnglishLevel10Questions: EnglishQuestion[] = convertToEnglish(satEnglish10Raw as RawJsonQuestion[]);
 
-console.log(`[SAT Level 9/10] Math L10: ${satMathLevel10Questions.length}, English L9: ${satEnglishLevel9Questions.length}, English L10: ${satEnglishLevel10Questions.length}`);
+console.log(`[SAT Level 9/10] Math L9: ${satMathLevel9Questions.length}, Math L10: ${satMathLevel10Questions.length}, English L9: ${satEnglishLevel9Questions.length}, English L10: ${satEnglishLevel10Questions.length}`);
