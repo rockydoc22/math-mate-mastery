@@ -1,0 +1,2402 @@
+[
+  {
+    "id": "strategy_001",
+    "type": "eliminate_wrong_answers",
+    "prompt": "Strategy scenario 1: Apply the strategy 'eliminate_wrong_answers' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "eliminate_wrong_answers",
+    "difficulty": "L1",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_002",
+    "type": "choose_skip_or_solve",
+    "prompt": "Strategy scenario 2: Apply the strategy 'choose_skip_or_solve' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "choose_skip_or_solve",
+    "difficulty": "L2",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_003",
+    "type": "estimate_before_calculating",
+    "prompt": "Strategy scenario 3: Apply the strategy 'estimate_before_calculating' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "estimate_before_calculating",
+    "difficulty": "L3",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_004",
+    "type": "spot_trap_answer",
+    "prompt": "Strategy scenario 4: Apply the strategy 'spot_trap_answer' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "spot_trap_answer",
+    "difficulty": "L1",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_005",
+    "type": "confidence_reflection",
+    "prompt": "Strategy scenario 5: Apply the strategy 'confidence_reflection' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "confidence_reflection",
+    "difficulty": "L2",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_006",
+    "type": "worked_solution_error",
+    "prompt": "Strategy scenario 6: Apply the strategy 'worked_solution_error' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "worked_solution_error",
+    "difficulty": "L3",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_007",
+    "type": "eliminate_wrong_answers",
+    "prompt": "Strategy scenario 7: Apply the strategy 'eliminate_wrong_answers' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "eliminate_wrong_answers",
+    "difficulty": "L1",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_008",
+    "type": "choose_skip_or_solve",
+    "prompt": "Strategy scenario 8: Apply the strategy 'choose_skip_or_solve' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "choose_skip_or_solve",
+    "difficulty": "L2",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_009",
+    "type": "estimate_before_calculating",
+    "prompt": "Strategy scenario 9: Apply the strategy 'estimate_before_calculating' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "estimate_before_calculating",
+    "difficulty": "L3",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_010",
+    "type": "spot_trap_answer",
+    "prompt": "Strategy scenario 10: Apply the strategy 'spot_trap_answer' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "spot_trap_answer",
+    "difficulty": "L1",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_011",
+    "type": "confidence_reflection",
+    "prompt": "Strategy scenario 11: Apply the strategy 'confidence_reflection' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "confidence_reflection",
+    "difficulty": "L2",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_012",
+    "type": "worked_solution_error",
+    "prompt": "Strategy scenario 12: Apply the strategy 'worked_solution_error' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "worked_solution_error",
+    "difficulty": "L3",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_013",
+    "type": "eliminate_wrong_answers",
+    "prompt": "Strategy scenario 13: Apply the strategy 'eliminate_wrong_answers' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "eliminate_wrong_answers",
+    "difficulty": "L1",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_014",
+    "type": "choose_skip_or_solve",
+    "prompt": "Strategy scenario 14: Apply the strategy 'choose_skip_or_solve' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "choose_skip_or_solve",
+    "difficulty": "L2",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_015",
+    "type": "estimate_before_calculating",
+    "prompt": "Strategy scenario 15: Apply the strategy 'estimate_before_calculating' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "estimate_before_calculating",
+    "difficulty": "L3",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_016",
+    "type": "spot_trap_answer",
+    "prompt": "Strategy scenario 16: Apply the strategy 'spot_trap_answer' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "spot_trap_answer",
+    "difficulty": "L1",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_017",
+    "type": "confidence_reflection",
+    "prompt": "Strategy scenario 17: Apply the strategy 'confidence_reflection' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "confidence_reflection",
+    "difficulty": "L2",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_018",
+    "type": "worked_solution_error",
+    "prompt": "Strategy scenario 18: Apply the strategy 'worked_solution_error' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "worked_solution_error",
+    "difficulty": "L3",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_019",
+    "type": "eliminate_wrong_answers",
+    "prompt": "Strategy scenario 19: Apply the strategy 'eliminate_wrong_answers' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "eliminate_wrong_answers",
+    "difficulty": "L1",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_020",
+    "type": "choose_skip_or_solve",
+    "prompt": "Strategy scenario 20: Apply the strategy 'choose_skip_or_solve' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "choose_skip_or_solve",
+    "difficulty": "L2",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_021",
+    "type": "estimate_before_calculating",
+    "prompt": "Strategy scenario 21: Apply the strategy 'estimate_before_calculating' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "estimate_before_calculating",
+    "difficulty": "L3",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_022",
+    "type": "spot_trap_answer",
+    "prompt": "Strategy scenario 22: Apply the strategy 'spot_trap_answer' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "spot_trap_answer",
+    "difficulty": "L1",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_023",
+    "type": "confidence_reflection",
+    "prompt": "Strategy scenario 23: Apply the strategy 'confidence_reflection' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "confidence_reflection",
+    "difficulty": "L2",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_024",
+    "type": "worked_solution_error",
+    "prompt": "Strategy scenario 24: Apply the strategy 'worked_solution_error' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "worked_solution_error",
+    "difficulty": "L3",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_025",
+    "type": "eliminate_wrong_answers",
+    "prompt": "Strategy scenario 25: Apply the strategy 'eliminate_wrong_answers' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "eliminate_wrong_answers",
+    "difficulty": "L1",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_026",
+    "type": "choose_skip_or_solve",
+    "prompt": "Strategy scenario 26: Apply the strategy 'choose_skip_or_solve' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "choose_skip_or_solve",
+    "difficulty": "L2",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_027",
+    "type": "estimate_before_calculating",
+    "prompt": "Strategy scenario 27: Apply the strategy 'estimate_before_calculating' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "estimate_before_calculating",
+    "difficulty": "L3",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_028",
+    "type": "spot_trap_answer",
+    "prompt": "Strategy scenario 28: Apply the strategy 'spot_trap_answer' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "spot_trap_answer",
+    "difficulty": "L1",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_029",
+    "type": "confidence_reflection",
+    "prompt": "Strategy scenario 29: Apply the strategy 'confidence_reflection' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "confidence_reflection",
+    "difficulty": "L2",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_030",
+    "type": "worked_solution_error",
+    "prompt": "Strategy scenario 30: Apply the strategy 'worked_solution_error' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "worked_solution_error",
+    "difficulty": "L3",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_031",
+    "type": "eliminate_wrong_answers",
+    "prompt": "Strategy scenario 31: Apply the strategy 'eliminate_wrong_answers' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "eliminate_wrong_answers",
+    "difficulty": "L1",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_032",
+    "type": "choose_skip_or_solve",
+    "prompt": "Strategy scenario 32: Apply the strategy 'choose_skip_or_solve' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "choose_skip_or_solve",
+    "difficulty": "L2",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_033",
+    "type": "estimate_before_calculating",
+    "prompt": "Strategy scenario 33: Apply the strategy 'estimate_before_calculating' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "estimate_before_calculating",
+    "difficulty": "L3",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_034",
+    "type": "spot_trap_answer",
+    "prompt": "Strategy scenario 34: Apply the strategy 'spot_trap_answer' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "spot_trap_answer",
+    "difficulty": "L1",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_035",
+    "type": "confidence_reflection",
+    "prompt": "Strategy scenario 35: Apply the strategy 'confidence_reflection' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "confidence_reflection",
+    "difficulty": "L2",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_036",
+    "type": "worked_solution_error",
+    "prompt": "Strategy scenario 36: Apply the strategy 'worked_solution_error' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "worked_solution_error",
+    "difficulty": "L3",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_037",
+    "type": "eliminate_wrong_answers",
+    "prompt": "Strategy scenario 37: Apply the strategy 'eliminate_wrong_answers' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "eliminate_wrong_answers",
+    "difficulty": "L1",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_038",
+    "type": "choose_skip_or_solve",
+    "prompt": "Strategy scenario 38: Apply the strategy 'choose_skip_or_solve' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "choose_skip_or_solve",
+    "difficulty": "L2",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_039",
+    "type": "estimate_before_calculating",
+    "prompt": "Strategy scenario 39: Apply the strategy 'estimate_before_calculating' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "estimate_before_calculating",
+    "difficulty": "L3",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_040",
+    "type": "spot_trap_answer",
+    "prompt": "Strategy scenario 40: Apply the strategy 'spot_trap_answer' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "spot_trap_answer",
+    "difficulty": "L1",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_041",
+    "type": "confidence_reflection",
+    "prompt": "Strategy scenario 41: Apply the strategy 'confidence_reflection' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "confidence_reflection",
+    "difficulty": "L2",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_042",
+    "type": "worked_solution_error",
+    "prompt": "Strategy scenario 42: Apply the strategy 'worked_solution_error' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "worked_solution_error",
+    "difficulty": "L3",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_043",
+    "type": "eliminate_wrong_answers",
+    "prompt": "Strategy scenario 43: Apply the strategy 'eliminate_wrong_answers' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "eliminate_wrong_answers",
+    "difficulty": "L1",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_044",
+    "type": "choose_skip_or_solve",
+    "prompt": "Strategy scenario 44: Apply the strategy 'choose_skip_or_solve' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "choose_skip_or_solve",
+    "difficulty": "L2",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_045",
+    "type": "estimate_before_calculating",
+    "prompt": "Strategy scenario 45: Apply the strategy 'estimate_before_calculating' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "estimate_before_calculating",
+    "difficulty": "L3",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_046",
+    "type": "spot_trap_answer",
+    "prompt": "Strategy scenario 46: Apply the strategy 'spot_trap_answer' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "spot_trap_answer",
+    "difficulty": "L1",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_047",
+    "type": "confidence_reflection",
+    "prompt": "Strategy scenario 47: Apply the strategy 'confidence_reflection' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "confidence_reflection",
+    "difficulty": "L2",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_048",
+    "type": "worked_solution_error",
+    "prompt": "Strategy scenario 48: Apply the strategy 'worked_solution_error' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "worked_solution_error",
+    "difficulty": "L3",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_049",
+    "type": "eliminate_wrong_answers",
+    "prompt": "Strategy scenario 49: Apply the strategy 'eliminate_wrong_answers' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "eliminate_wrong_answers",
+    "difficulty": "L1",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_050",
+    "type": "choose_skip_or_solve",
+    "prompt": "Strategy scenario 50: Apply the strategy 'choose_skip_or_solve' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "choose_skip_or_solve",
+    "difficulty": "L2",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_051",
+    "type": "estimate_before_calculating",
+    "prompt": "Strategy scenario 51: Apply the strategy 'estimate_before_calculating' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "estimate_before_calculating",
+    "difficulty": "L3",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_052",
+    "type": "spot_trap_answer",
+    "prompt": "Strategy scenario 52: Apply the strategy 'spot_trap_answer' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "spot_trap_answer",
+    "difficulty": "L1",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_053",
+    "type": "confidence_reflection",
+    "prompt": "Strategy scenario 53: Apply the strategy 'confidence_reflection' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "confidence_reflection",
+    "difficulty": "L2",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_054",
+    "type": "worked_solution_error",
+    "prompt": "Strategy scenario 54: Apply the strategy 'worked_solution_error' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "worked_solution_error",
+    "difficulty": "L3",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_055",
+    "type": "eliminate_wrong_answers",
+    "prompt": "Strategy scenario 55: Apply the strategy 'eliminate_wrong_answers' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "eliminate_wrong_answers",
+    "difficulty": "L1",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_056",
+    "type": "choose_skip_or_solve",
+    "prompt": "Strategy scenario 56: Apply the strategy 'choose_skip_or_solve' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "choose_skip_or_solve",
+    "difficulty": "L2",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_057",
+    "type": "estimate_before_calculating",
+    "prompt": "Strategy scenario 57: Apply the strategy 'estimate_before_calculating' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "estimate_before_calculating",
+    "difficulty": "L3",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_058",
+    "type": "spot_trap_answer",
+    "prompt": "Strategy scenario 58: Apply the strategy 'spot_trap_answer' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "spot_trap_answer",
+    "difficulty": "L1",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_059",
+    "type": "confidence_reflection",
+    "prompt": "Strategy scenario 59: Apply the strategy 'confidence_reflection' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "confidence_reflection",
+    "difficulty": "L2",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_060",
+    "type": "worked_solution_error",
+    "prompt": "Strategy scenario 60: Apply the strategy 'worked_solution_error' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "worked_solution_error",
+    "difficulty": "L3",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_061",
+    "type": "eliminate_wrong_answers",
+    "prompt": "Strategy scenario 61: Apply the strategy 'eliminate_wrong_answers' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "eliminate_wrong_answers",
+    "difficulty": "L1",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_062",
+    "type": "choose_skip_or_solve",
+    "prompt": "Strategy scenario 62: Apply the strategy 'choose_skip_or_solve' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "choose_skip_or_solve",
+    "difficulty": "L2",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_063",
+    "type": "estimate_before_calculating",
+    "prompt": "Strategy scenario 63: Apply the strategy 'estimate_before_calculating' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "estimate_before_calculating",
+    "difficulty": "L3",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_064",
+    "type": "spot_trap_answer",
+    "prompt": "Strategy scenario 64: Apply the strategy 'spot_trap_answer' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "spot_trap_answer",
+    "difficulty": "L1",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_065",
+    "type": "confidence_reflection",
+    "prompt": "Strategy scenario 65: Apply the strategy 'confidence_reflection' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "confidence_reflection",
+    "difficulty": "L2",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_066",
+    "type": "worked_solution_error",
+    "prompt": "Strategy scenario 66: Apply the strategy 'worked_solution_error' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "worked_solution_error",
+    "difficulty": "L3",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_067",
+    "type": "eliminate_wrong_answers",
+    "prompt": "Strategy scenario 67: Apply the strategy 'eliminate_wrong_answers' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "eliminate_wrong_answers",
+    "difficulty": "L1",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_068",
+    "type": "choose_skip_or_solve",
+    "prompt": "Strategy scenario 68: Apply the strategy 'choose_skip_or_solve' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "choose_skip_or_solve",
+    "difficulty": "L2",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_069",
+    "type": "estimate_before_calculating",
+    "prompt": "Strategy scenario 69: Apply the strategy 'estimate_before_calculating' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "estimate_before_calculating",
+    "difficulty": "L3",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_070",
+    "type": "spot_trap_answer",
+    "prompt": "Strategy scenario 70: Apply the strategy 'spot_trap_answer' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "spot_trap_answer",
+    "difficulty": "L1",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_071",
+    "type": "confidence_reflection",
+    "prompt": "Strategy scenario 71: Apply the strategy 'confidence_reflection' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "confidence_reflection",
+    "difficulty": "L2",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_072",
+    "type": "worked_solution_error",
+    "prompt": "Strategy scenario 72: Apply the strategy 'worked_solution_error' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "worked_solution_error",
+    "difficulty": "L3",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_073",
+    "type": "eliminate_wrong_answers",
+    "prompt": "Strategy scenario 73: Apply the strategy 'eliminate_wrong_answers' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "eliminate_wrong_answers",
+    "difficulty": "L1",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_074",
+    "type": "choose_skip_or_solve",
+    "prompt": "Strategy scenario 74: Apply the strategy 'choose_skip_or_solve' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "choose_skip_or_solve",
+    "difficulty": "L2",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_075",
+    "type": "estimate_before_calculating",
+    "prompt": "Strategy scenario 75: Apply the strategy 'estimate_before_calculating' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "estimate_before_calculating",
+    "difficulty": "L3",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_076",
+    "type": "spot_trap_answer",
+    "prompt": "Strategy scenario 76: Apply the strategy 'spot_trap_answer' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "spot_trap_answer",
+    "difficulty": "L1",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_077",
+    "type": "confidence_reflection",
+    "prompt": "Strategy scenario 77: Apply the strategy 'confidence_reflection' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "confidence_reflection",
+    "difficulty": "L2",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_078",
+    "type": "worked_solution_error",
+    "prompt": "Strategy scenario 78: Apply the strategy 'worked_solution_error' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "worked_solution_error",
+    "difficulty": "L3",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_079",
+    "type": "eliminate_wrong_answers",
+    "prompt": "Strategy scenario 79: Apply the strategy 'eliminate_wrong_answers' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "eliminate_wrong_answers",
+    "difficulty": "L1",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_080",
+    "type": "choose_skip_or_solve",
+    "prompt": "Strategy scenario 80: Apply the strategy 'choose_skip_or_solve' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "choose_skip_or_solve",
+    "difficulty": "L2",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_081",
+    "type": "estimate_before_calculating",
+    "prompt": "Strategy scenario 81: Apply the strategy 'estimate_before_calculating' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "estimate_before_calculating",
+    "difficulty": "L3",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_082",
+    "type": "spot_trap_answer",
+    "prompt": "Strategy scenario 82: Apply the strategy 'spot_trap_answer' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "spot_trap_answer",
+    "difficulty": "L1",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_083",
+    "type": "confidence_reflection",
+    "prompt": "Strategy scenario 83: Apply the strategy 'confidence_reflection' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "confidence_reflection",
+    "difficulty": "L2",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_084",
+    "type": "worked_solution_error",
+    "prompt": "Strategy scenario 84: Apply the strategy 'worked_solution_error' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "worked_solution_error",
+    "difficulty": "L3",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_085",
+    "type": "eliminate_wrong_answers",
+    "prompt": "Strategy scenario 85: Apply the strategy 'eliminate_wrong_answers' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "eliminate_wrong_answers",
+    "difficulty": "L1",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_086",
+    "type": "choose_skip_or_solve",
+    "prompt": "Strategy scenario 86: Apply the strategy 'choose_skip_or_solve' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "choose_skip_or_solve",
+    "difficulty": "L2",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_087",
+    "type": "estimate_before_calculating",
+    "prompt": "Strategy scenario 87: Apply the strategy 'estimate_before_calculating' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "estimate_before_calculating",
+    "difficulty": "L3",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_088",
+    "type": "spot_trap_answer",
+    "prompt": "Strategy scenario 88: Apply the strategy 'spot_trap_answer' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "spot_trap_answer",
+    "difficulty": "L1",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_089",
+    "type": "confidence_reflection",
+    "prompt": "Strategy scenario 89: Apply the strategy 'confidence_reflection' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "confidence_reflection",
+    "difficulty": "L2",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_090",
+    "type": "worked_solution_error",
+    "prompt": "Strategy scenario 90: Apply the strategy 'worked_solution_error' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "worked_solution_error",
+    "difficulty": "L3",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_091",
+    "type": "eliminate_wrong_answers",
+    "prompt": "Strategy scenario 91: Apply the strategy 'eliminate_wrong_answers' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "eliminate_wrong_answers",
+    "difficulty": "L1",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_092",
+    "type": "choose_skip_or_solve",
+    "prompt": "Strategy scenario 92: Apply the strategy 'choose_skip_or_solve' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "choose_skip_or_solve",
+    "difficulty": "L2",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_093",
+    "type": "estimate_before_calculating",
+    "prompt": "Strategy scenario 93: Apply the strategy 'estimate_before_calculating' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "estimate_before_calculating",
+    "difficulty": "L3",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_094",
+    "type": "spot_trap_answer",
+    "prompt": "Strategy scenario 94: Apply the strategy 'spot_trap_answer' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "spot_trap_answer",
+    "difficulty": "L1",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_095",
+    "type": "confidence_reflection",
+    "prompt": "Strategy scenario 95: Apply the strategy 'confidence_reflection' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "confidence_reflection",
+    "difficulty": "L2",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_096",
+    "type": "worked_solution_error",
+    "prompt": "Strategy scenario 96: Apply the strategy 'worked_solution_error' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "worked_solution_error",
+    "difficulty": "L3",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_097",
+    "type": "eliminate_wrong_answers",
+    "prompt": "Strategy scenario 97: Apply the strategy 'eliminate_wrong_answers' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "eliminate_wrong_answers",
+    "difficulty": "L1",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_098",
+    "type": "choose_skip_or_solve",
+    "prompt": "Strategy scenario 98: Apply the strategy 'choose_skip_or_solve' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "choose_skip_or_solve",
+    "difficulty": "L2",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_099",
+    "type": "estimate_before_calculating",
+    "prompt": "Strategy scenario 99: Apply the strategy 'estimate_before_calculating' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "estimate_before_calculating",
+    "difficulty": "L3",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_100",
+    "type": "spot_trap_answer",
+    "prompt": "Strategy scenario 100: Apply the strategy 'spot_trap_answer' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "spot_trap_answer",
+    "difficulty": "L1",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_101",
+    "type": "confidence_reflection",
+    "prompt": "Strategy scenario 101: Apply the strategy 'confidence_reflection' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "confidence_reflection",
+    "difficulty": "L2",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_102",
+    "type": "worked_solution_error",
+    "prompt": "Strategy scenario 102: Apply the strategy 'worked_solution_error' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "worked_solution_error",
+    "difficulty": "L3",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_103",
+    "type": "eliminate_wrong_answers",
+    "prompt": "Strategy scenario 103: Apply the strategy 'eliminate_wrong_answers' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "eliminate_wrong_answers",
+    "difficulty": "L1",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_104",
+    "type": "choose_skip_or_solve",
+    "prompt": "Strategy scenario 104: Apply the strategy 'choose_skip_or_solve' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "choose_skip_or_solve",
+    "difficulty": "L2",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_105",
+    "type": "estimate_before_calculating",
+    "prompt": "Strategy scenario 105: Apply the strategy 'estimate_before_calculating' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "estimate_before_calculating",
+    "difficulty": "L3",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_106",
+    "type": "spot_trap_answer",
+    "prompt": "Strategy scenario 106: Apply the strategy 'spot_trap_answer' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "spot_trap_answer",
+    "difficulty": "L1",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_107",
+    "type": "confidence_reflection",
+    "prompt": "Strategy scenario 107: Apply the strategy 'confidence_reflection' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "confidence_reflection",
+    "difficulty": "L2",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_108",
+    "type": "worked_solution_error",
+    "prompt": "Strategy scenario 108: Apply the strategy 'worked_solution_error' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "worked_solution_error",
+    "difficulty": "L3",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_109",
+    "type": "eliminate_wrong_answers",
+    "prompt": "Strategy scenario 109: Apply the strategy 'eliminate_wrong_answers' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "eliminate_wrong_answers",
+    "difficulty": "L1",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_110",
+    "type": "choose_skip_or_solve",
+    "prompt": "Strategy scenario 110: Apply the strategy 'choose_skip_or_solve' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "choose_skip_or_solve",
+    "difficulty": "L2",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_111",
+    "type": "estimate_before_calculating",
+    "prompt": "Strategy scenario 111: Apply the strategy 'estimate_before_calculating' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "estimate_before_calculating",
+    "difficulty": "L3",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_112",
+    "type": "spot_trap_answer",
+    "prompt": "Strategy scenario 112: Apply the strategy 'spot_trap_answer' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "spot_trap_answer",
+    "difficulty": "L1",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_113",
+    "type": "confidence_reflection",
+    "prompt": "Strategy scenario 113: Apply the strategy 'confidence_reflection' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "confidence_reflection",
+    "difficulty": "L2",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_114",
+    "type": "worked_solution_error",
+    "prompt": "Strategy scenario 114: Apply the strategy 'worked_solution_error' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "worked_solution_error",
+    "difficulty": "L3",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_115",
+    "type": "eliminate_wrong_answers",
+    "prompt": "Strategy scenario 115: Apply the strategy 'eliminate_wrong_answers' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "eliminate_wrong_answers",
+    "difficulty": "L1",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_116",
+    "type": "choose_skip_or_solve",
+    "prompt": "Strategy scenario 116: Apply the strategy 'choose_skip_or_solve' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "choose_skip_or_solve",
+    "difficulty": "L2",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_117",
+    "type": "estimate_before_calculating",
+    "prompt": "Strategy scenario 117: Apply the strategy 'estimate_before_calculating' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "estimate_before_calculating",
+    "difficulty": "L3",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_118",
+    "type": "spot_trap_answer",
+    "prompt": "Strategy scenario 118: Apply the strategy 'spot_trap_answer' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "spot_trap_answer",
+    "difficulty": "L1",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_119",
+    "type": "confidence_reflection",
+    "prompt": "Strategy scenario 119: Apply the strategy 'confidence_reflection' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "confidence_reflection",
+    "difficulty": "L2",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_120",
+    "type": "worked_solution_error",
+    "prompt": "Strategy scenario 120: Apply the strategy 'worked_solution_error' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "worked_solution_error",
+    "difficulty": "L3",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_121",
+    "type": "eliminate_wrong_answers",
+    "prompt": "Strategy scenario 121: Apply the strategy 'eliminate_wrong_answers' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "eliminate_wrong_answers",
+    "difficulty": "L1",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_122",
+    "type": "choose_skip_or_solve",
+    "prompt": "Strategy scenario 122: Apply the strategy 'choose_skip_or_solve' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "choose_skip_or_solve",
+    "difficulty": "L2",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_123",
+    "type": "estimate_before_calculating",
+    "prompt": "Strategy scenario 123: Apply the strategy 'estimate_before_calculating' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "estimate_before_calculating",
+    "difficulty": "L3",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_124",
+    "type": "spot_trap_answer",
+    "prompt": "Strategy scenario 124: Apply the strategy 'spot_trap_answer' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "spot_trap_answer",
+    "difficulty": "L1",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_125",
+    "type": "confidence_reflection",
+    "prompt": "Strategy scenario 125: Apply the strategy 'confidence_reflection' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "confidence_reflection",
+    "difficulty": "L2",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_126",
+    "type": "worked_solution_error",
+    "prompt": "Strategy scenario 126: Apply the strategy 'worked_solution_error' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "worked_solution_error",
+    "difficulty": "L3",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_127",
+    "type": "eliminate_wrong_answers",
+    "prompt": "Strategy scenario 127: Apply the strategy 'eliminate_wrong_answers' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "eliminate_wrong_answers",
+    "difficulty": "L1",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_128",
+    "type": "choose_skip_or_solve",
+    "prompt": "Strategy scenario 128: Apply the strategy 'choose_skip_or_solve' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "choose_skip_or_solve",
+    "difficulty": "L2",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_129",
+    "type": "estimate_before_calculating",
+    "prompt": "Strategy scenario 129: Apply the strategy 'estimate_before_calculating' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "estimate_before_calculating",
+    "difficulty": "L3",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_130",
+    "type": "spot_trap_answer",
+    "prompt": "Strategy scenario 130: Apply the strategy 'spot_trap_answer' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "spot_trap_answer",
+    "difficulty": "L1",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_131",
+    "type": "confidence_reflection",
+    "prompt": "Strategy scenario 131: Apply the strategy 'confidence_reflection' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "confidence_reflection",
+    "difficulty": "L2",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_132",
+    "type": "worked_solution_error",
+    "prompt": "Strategy scenario 132: Apply the strategy 'worked_solution_error' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "worked_solution_error",
+    "difficulty": "L3",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_133",
+    "type": "eliminate_wrong_answers",
+    "prompt": "Strategy scenario 133: Apply the strategy 'eliminate_wrong_answers' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "eliminate_wrong_answers",
+    "difficulty": "L1",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_134",
+    "type": "choose_skip_or_solve",
+    "prompt": "Strategy scenario 134: Apply the strategy 'choose_skip_or_solve' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "choose_skip_or_solve",
+    "difficulty": "L2",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_135",
+    "type": "estimate_before_calculating",
+    "prompt": "Strategy scenario 135: Apply the strategy 'estimate_before_calculating' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "estimate_before_calculating",
+    "difficulty": "L3",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_136",
+    "type": "spot_trap_answer",
+    "prompt": "Strategy scenario 136: Apply the strategy 'spot_trap_answer' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "spot_trap_answer",
+    "difficulty": "L1",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_137",
+    "type": "confidence_reflection",
+    "prompt": "Strategy scenario 137: Apply the strategy 'confidence_reflection' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "confidence_reflection",
+    "difficulty": "L2",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_138",
+    "type": "worked_solution_error",
+    "prompt": "Strategy scenario 138: Apply the strategy 'worked_solution_error' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "worked_solution_error",
+    "difficulty": "L3",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_139",
+    "type": "eliminate_wrong_answers",
+    "prompt": "Strategy scenario 139: Apply the strategy 'eliminate_wrong_answers' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "eliminate_wrong_answers",
+    "difficulty": "L1",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_140",
+    "type": "choose_skip_or_solve",
+    "prompt": "Strategy scenario 140: Apply the strategy 'choose_skip_or_solve' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "choose_skip_or_solve",
+    "difficulty": "L2",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_141",
+    "type": "estimate_before_calculating",
+    "prompt": "Strategy scenario 141: Apply the strategy 'estimate_before_calculating' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "estimate_before_calculating",
+    "difficulty": "L3",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_142",
+    "type": "spot_trap_answer",
+    "prompt": "Strategy scenario 142: Apply the strategy 'spot_trap_answer' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "spot_trap_answer",
+    "difficulty": "L1",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_143",
+    "type": "confidence_reflection",
+    "prompt": "Strategy scenario 143: Apply the strategy 'confidence_reflection' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "confidence_reflection",
+    "difficulty": "L2",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_144",
+    "type": "worked_solution_error",
+    "prompt": "Strategy scenario 144: Apply the strategy 'worked_solution_error' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "worked_solution_error",
+    "difficulty": "L3",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_145",
+    "type": "eliminate_wrong_answers",
+    "prompt": "Strategy scenario 145: Apply the strategy 'eliminate_wrong_answers' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "eliminate_wrong_answers",
+    "difficulty": "L1",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_146",
+    "type": "choose_skip_or_solve",
+    "prompt": "Strategy scenario 146: Apply the strategy 'choose_skip_or_solve' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "choose_skip_or_solve",
+    "difficulty": "L2",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_147",
+    "type": "estimate_before_calculating",
+    "prompt": "Strategy scenario 147: Apply the strategy 'estimate_before_calculating' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "estimate_before_calculating",
+    "difficulty": "L3",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_148",
+    "type": "spot_trap_answer",
+    "prompt": "Strategy scenario 148: Apply the strategy 'spot_trap_answer' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "spot_trap_answer",
+    "difficulty": "L1",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_149",
+    "type": "confidence_reflection",
+    "prompt": "Strategy scenario 149: Apply the strategy 'confidence_reflection' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "confidence_reflection",
+    "difficulty": "L2",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_150",
+    "type": "worked_solution_error",
+    "prompt": "Strategy scenario 150: Apply the strategy 'worked_solution_error' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "worked_solution_error",
+    "difficulty": "L3",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_151",
+    "type": "eliminate_wrong_answers",
+    "prompt": "Strategy scenario 151: Apply the strategy 'eliminate_wrong_answers' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "eliminate_wrong_answers",
+    "difficulty": "L1",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_152",
+    "type": "choose_skip_or_solve",
+    "prompt": "Strategy scenario 152: Apply the strategy 'choose_skip_or_solve' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "choose_skip_or_solve",
+    "difficulty": "L2",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_153",
+    "type": "estimate_before_calculating",
+    "prompt": "Strategy scenario 153: Apply the strategy 'estimate_before_calculating' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "estimate_before_calculating",
+    "difficulty": "L3",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_154",
+    "type": "spot_trap_answer",
+    "prompt": "Strategy scenario 154: Apply the strategy 'spot_trap_answer' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "spot_trap_answer",
+    "difficulty": "L1",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_155",
+    "type": "confidence_reflection",
+    "prompt": "Strategy scenario 155: Apply the strategy 'confidence_reflection' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "confidence_reflection",
+    "difficulty": "L2",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_156",
+    "type": "worked_solution_error",
+    "prompt": "Strategy scenario 156: Apply the strategy 'worked_solution_error' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "worked_solution_error",
+    "difficulty": "L3",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_157",
+    "type": "eliminate_wrong_answers",
+    "prompt": "Strategy scenario 157: Apply the strategy 'eliminate_wrong_answers' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "eliminate_wrong_answers",
+    "difficulty": "L1",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_158",
+    "type": "choose_skip_or_solve",
+    "prompt": "Strategy scenario 158: Apply the strategy 'choose_skip_or_solve' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "choose_skip_or_solve",
+    "difficulty": "L2",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_159",
+    "type": "estimate_before_calculating",
+    "prompt": "Strategy scenario 159: Apply the strategy 'estimate_before_calculating' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "estimate_before_calculating",
+    "difficulty": "L3",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_160",
+    "type": "spot_trap_answer",
+    "prompt": "Strategy scenario 160: Apply the strategy 'spot_trap_answer' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "spot_trap_answer",
+    "difficulty": "L1",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_161",
+    "type": "confidence_reflection",
+    "prompt": "Strategy scenario 161: Apply the strategy 'confidence_reflection' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "confidence_reflection",
+    "difficulty": "L2",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_162",
+    "type": "worked_solution_error",
+    "prompt": "Strategy scenario 162: Apply the strategy 'worked_solution_error' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "worked_solution_error",
+    "difficulty": "L3",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_163",
+    "type": "eliminate_wrong_answers",
+    "prompt": "Strategy scenario 163: Apply the strategy 'eliminate_wrong_answers' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "eliminate_wrong_answers",
+    "difficulty": "L1",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_164",
+    "type": "choose_skip_or_solve",
+    "prompt": "Strategy scenario 164: Apply the strategy 'choose_skip_or_solve' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "choose_skip_or_solve",
+    "difficulty": "L2",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_165",
+    "type": "estimate_before_calculating",
+    "prompt": "Strategy scenario 165: Apply the strategy 'estimate_before_calculating' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "estimate_before_calculating",
+    "difficulty": "L3",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_166",
+    "type": "spot_trap_answer",
+    "prompt": "Strategy scenario 166: Apply the strategy 'spot_trap_answer' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "spot_trap_answer",
+    "difficulty": "L1",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_167",
+    "type": "confidence_reflection",
+    "prompt": "Strategy scenario 167: Apply the strategy 'confidence_reflection' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "confidence_reflection",
+    "difficulty": "L2",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_168",
+    "type": "worked_solution_error",
+    "prompt": "Strategy scenario 168: Apply the strategy 'worked_solution_error' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "worked_solution_error",
+    "difficulty": "L3",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_169",
+    "type": "eliminate_wrong_answers",
+    "prompt": "Strategy scenario 169: Apply the strategy 'eliminate_wrong_answers' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "eliminate_wrong_answers",
+    "difficulty": "L1",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_170",
+    "type": "choose_skip_or_solve",
+    "prompt": "Strategy scenario 170: Apply the strategy 'choose_skip_or_solve' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "choose_skip_or_solve",
+    "difficulty": "L2",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_171",
+    "type": "estimate_before_calculating",
+    "prompt": "Strategy scenario 171: Apply the strategy 'estimate_before_calculating' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "estimate_before_calculating",
+    "difficulty": "L3",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_172",
+    "type": "spot_trap_answer",
+    "prompt": "Strategy scenario 172: Apply the strategy 'spot_trap_answer' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "spot_trap_answer",
+    "difficulty": "L1",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_173",
+    "type": "confidence_reflection",
+    "prompt": "Strategy scenario 173: Apply the strategy 'confidence_reflection' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "confidence_reflection",
+    "difficulty": "L2",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_174",
+    "type": "worked_solution_error",
+    "prompt": "Strategy scenario 174: Apply the strategy 'worked_solution_error' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "worked_solution_error",
+    "difficulty": "L3",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_175",
+    "type": "eliminate_wrong_answers",
+    "prompt": "Strategy scenario 175: Apply the strategy 'eliminate_wrong_answers' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "eliminate_wrong_answers",
+    "difficulty": "L1",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_176",
+    "type": "choose_skip_or_solve",
+    "prompt": "Strategy scenario 176: Apply the strategy 'choose_skip_or_solve' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "choose_skip_or_solve",
+    "difficulty": "L2",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_177",
+    "type": "estimate_before_calculating",
+    "prompt": "Strategy scenario 177: Apply the strategy 'estimate_before_calculating' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "estimate_before_calculating",
+    "difficulty": "L3",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_178",
+    "type": "spot_trap_answer",
+    "prompt": "Strategy scenario 178: Apply the strategy 'spot_trap_answer' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "spot_trap_answer",
+    "difficulty": "L1",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_179",
+    "type": "confidence_reflection",
+    "prompt": "Strategy scenario 179: Apply the strategy 'confidence_reflection' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "confidence_reflection",
+    "difficulty": "L2",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_180",
+    "type": "worked_solution_error",
+    "prompt": "Strategy scenario 180: Apply the strategy 'worked_solution_error' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "worked_solution_error",
+    "difficulty": "L3",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_181",
+    "type": "eliminate_wrong_answers",
+    "prompt": "Strategy scenario 181: Apply the strategy 'eliminate_wrong_answers' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "eliminate_wrong_answers",
+    "difficulty": "L1",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_182",
+    "type": "choose_skip_or_solve",
+    "prompt": "Strategy scenario 182: Apply the strategy 'choose_skip_or_solve' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "choose_skip_or_solve",
+    "difficulty": "L2",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_183",
+    "type": "estimate_before_calculating",
+    "prompt": "Strategy scenario 183: Apply the strategy 'estimate_before_calculating' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "estimate_before_calculating",
+    "difficulty": "L3",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_184",
+    "type": "spot_trap_answer",
+    "prompt": "Strategy scenario 184: Apply the strategy 'spot_trap_answer' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "spot_trap_answer",
+    "difficulty": "L1",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_185",
+    "type": "confidence_reflection",
+    "prompt": "Strategy scenario 185: Apply the strategy 'confidence_reflection' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "confidence_reflection",
+    "difficulty": "L2",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_186",
+    "type": "worked_solution_error",
+    "prompt": "Strategy scenario 186: Apply the strategy 'worked_solution_error' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "worked_solution_error",
+    "difficulty": "L3",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_187",
+    "type": "eliminate_wrong_answers",
+    "prompt": "Strategy scenario 187: Apply the strategy 'eliminate_wrong_answers' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "eliminate_wrong_answers",
+    "difficulty": "L1",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_188",
+    "type": "choose_skip_or_solve",
+    "prompt": "Strategy scenario 188: Apply the strategy 'choose_skip_or_solve' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "choose_skip_or_solve",
+    "difficulty": "L2",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_189",
+    "type": "estimate_before_calculating",
+    "prompt": "Strategy scenario 189: Apply the strategy 'estimate_before_calculating' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "estimate_before_calculating",
+    "difficulty": "L3",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_190",
+    "type": "spot_trap_answer",
+    "prompt": "Strategy scenario 190: Apply the strategy 'spot_trap_answer' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "spot_trap_answer",
+    "difficulty": "L1",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_191",
+    "type": "confidence_reflection",
+    "prompt": "Strategy scenario 191: Apply the strategy 'confidence_reflection' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "confidence_reflection",
+    "difficulty": "L2",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_192",
+    "type": "worked_solution_error",
+    "prompt": "Strategy scenario 192: Apply the strategy 'worked_solution_error' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "worked_solution_error",
+    "difficulty": "L3",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_193",
+    "type": "eliminate_wrong_answers",
+    "prompt": "Strategy scenario 193: Apply the strategy 'eliminate_wrong_answers' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "eliminate_wrong_answers",
+    "difficulty": "L1",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_194",
+    "type": "choose_skip_or_solve",
+    "prompt": "Strategy scenario 194: Apply the strategy 'choose_skip_or_solve' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "choose_skip_or_solve",
+    "difficulty": "L2",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_195",
+    "type": "estimate_before_calculating",
+    "prompt": "Strategy scenario 195: Apply the strategy 'estimate_before_calculating' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "estimate_before_calculating",
+    "difficulty": "L3",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_196",
+    "type": "spot_trap_answer",
+    "prompt": "Strategy scenario 196: Apply the strategy 'spot_trap_answer' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "spot_trap_answer",
+    "difficulty": "L1",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_197",
+    "type": "confidence_reflection",
+    "prompt": "Strategy scenario 197: Apply the strategy 'confidence_reflection' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "confidence_reflection",
+    "difficulty": "L2",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_198",
+    "type": "worked_solution_error",
+    "prompt": "Strategy scenario 198: Apply the strategy 'worked_solution_error' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "worked_solution_error",
+    "difficulty": "L3",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_199",
+    "type": "eliminate_wrong_answers",
+    "prompt": "Strategy scenario 199: Apply the strategy 'eliminate_wrong_answers' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "eliminate_wrong_answers",
+    "difficulty": "L1",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_200",
+    "type": "choose_skip_or_solve",
+    "prompt": "Strategy scenario 200: Apply the strategy 'choose_skip_or_solve' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "choose_skip_or_solve",
+    "difficulty": "L2",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_201",
+    "type": "estimate_before_calculating",
+    "prompt": "Strategy scenario 201: Apply the strategy 'estimate_before_calculating' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "estimate_before_calculating",
+    "difficulty": "L3",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_202",
+    "type": "spot_trap_answer",
+    "prompt": "Strategy scenario 202: Apply the strategy 'spot_trap_answer' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "spot_trap_answer",
+    "difficulty": "L1",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_203",
+    "type": "confidence_reflection",
+    "prompt": "Strategy scenario 203: Apply the strategy 'confidence_reflection' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "confidence_reflection",
+    "difficulty": "L2",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_204",
+    "type": "worked_solution_error",
+    "prompt": "Strategy scenario 204: Apply the strategy 'worked_solution_error' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "worked_solution_error",
+    "difficulty": "L3",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_205",
+    "type": "eliminate_wrong_answers",
+    "prompt": "Strategy scenario 205: Apply the strategy 'eliminate_wrong_answers' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "eliminate_wrong_answers",
+    "difficulty": "L1",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_206",
+    "type": "choose_skip_or_solve",
+    "prompt": "Strategy scenario 206: Apply the strategy 'choose_skip_or_solve' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "choose_skip_or_solve",
+    "difficulty": "L2",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_207",
+    "type": "estimate_before_calculating",
+    "prompt": "Strategy scenario 207: Apply the strategy 'estimate_before_calculating' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "estimate_before_calculating",
+    "difficulty": "L3",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_208",
+    "type": "spot_trap_answer",
+    "prompt": "Strategy scenario 208: Apply the strategy 'spot_trap_answer' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "spot_trap_answer",
+    "difficulty": "L1",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_209",
+    "type": "confidence_reflection",
+    "prompt": "Strategy scenario 209: Apply the strategy 'confidence_reflection' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "confidence_reflection",
+    "difficulty": "L2",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_210",
+    "type": "worked_solution_error",
+    "prompt": "Strategy scenario 210: Apply the strategy 'worked_solution_error' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "worked_solution_error",
+    "difficulty": "L3",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_211",
+    "type": "eliminate_wrong_answers",
+    "prompt": "Strategy scenario 211: Apply the strategy 'eliminate_wrong_answers' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "eliminate_wrong_answers",
+    "difficulty": "L1",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_212",
+    "type": "choose_skip_or_solve",
+    "prompt": "Strategy scenario 212: Apply the strategy 'choose_skip_or_solve' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "choose_skip_or_solve",
+    "difficulty": "L2",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_213",
+    "type": "estimate_before_calculating",
+    "prompt": "Strategy scenario 213: Apply the strategy 'estimate_before_calculating' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "estimate_before_calculating",
+    "difficulty": "L3",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_214",
+    "type": "spot_trap_answer",
+    "prompt": "Strategy scenario 214: Apply the strategy 'spot_trap_answer' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "spot_trap_answer",
+    "difficulty": "L1",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_215",
+    "type": "confidence_reflection",
+    "prompt": "Strategy scenario 215: Apply the strategy 'confidence_reflection' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "confidence_reflection",
+    "difficulty": "L2",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_216",
+    "type": "worked_solution_error",
+    "prompt": "Strategy scenario 216: Apply the strategy 'worked_solution_error' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "worked_solution_error",
+    "difficulty": "L3",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_217",
+    "type": "eliminate_wrong_answers",
+    "prompt": "Strategy scenario 217: Apply the strategy 'eliminate_wrong_answers' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "eliminate_wrong_answers",
+    "difficulty": "L1",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_218",
+    "type": "choose_skip_or_solve",
+    "prompt": "Strategy scenario 218: Apply the strategy 'choose_skip_or_solve' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "choose_skip_or_solve",
+    "difficulty": "L2",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_219",
+    "type": "estimate_before_calculating",
+    "prompt": "Strategy scenario 219: Apply the strategy 'estimate_before_calculating' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "estimate_before_calculating",
+    "difficulty": "L3",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_220",
+    "type": "spot_trap_answer",
+    "prompt": "Strategy scenario 220: Apply the strategy 'spot_trap_answer' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "spot_trap_answer",
+    "difficulty": "L1",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_221",
+    "type": "confidence_reflection",
+    "prompt": "Strategy scenario 221: Apply the strategy 'confidence_reflection' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "confidence_reflection",
+    "difficulty": "L2",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_222",
+    "type": "worked_solution_error",
+    "prompt": "Strategy scenario 222: Apply the strategy 'worked_solution_error' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "worked_solution_error",
+    "difficulty": "L3",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_223",
+    "type": "eliminate_wrong_answers",
+    "prompt": "Strategy scenario 223: Apply the strategy 'eliminate_wrong_answers' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "eliminate_wrong_answers",
+    "difficulty": "L1",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_224",
+    "type": "choose_skip_or_solve",
+    "prompt": "Strategy scenario 224: Apply the strategy 'choose_skip_or_solve' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "choose_skip_or_solve",
+    "difficulty": "L2",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_225",
+    "type": "estimate_before_calculating",
+    "prompt": "Strategy scenario 225: Apply the strategy 'estimate_before_calculating' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "estimate_before_calculating",
+    "difficulty": "L3",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_226",
+    "type": "spot_trap_answer",
+    "prompt": "Strategy scenario 226: Apply the strategy 'spot_trap_answer' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "spot_trap_answer",
+    "difficulty": "L1",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_227",
+    "type": "confidence_reflection",
+    "prompt": "Strategy scenario 227: Apply the strategy 'confidence_reflection' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "confidence_reflection",
+    "difficulty": "L2",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_228",
+    "type": "worked_solution_error",
+    "prompt": "Strategy scenario 228: Apply the strategy 'worked_solution_error' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "worked_solution_error",
+    "difficulty": "L3",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_229",
+    "type": "eliminate_wrong_answers",
+    "prompt": "Strategy scenario 229: Apply the strategy 'eliminate_wrong_answers' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "eliminate_wrong_answers",
+    "difficulty": "L1",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_230",
+    "type": "choose_skip_or_solve",
+    "prompt": "Strategy scenario 230: Apply the strategy 'choose_skip_or_solve' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "choose_skip_or_solve",
+    "difficulty": "L2",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_231",
+    "type": "estimate_before_calculating",
+    "prompt": "Strategy scenario 231: Apply the strategy 'estimate_before_calculating' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "estimate_before_calculating",
+    "difficulty": "L3",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_232",
+    "type": "spot_trap_answer",
+    "prompt": "Strategy scenario 232: Apply the strategy 'spot_trap_answer' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "spot_trap_answer",
+    "difficulty": "L1",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_233",
+    "type": "confidence_reflection",
+    "prompt": "Strategy scenario 233: Apply the strategy 'confidence_reflection' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "confidence_reflection",
+    "difficulty": "L2",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_234",
+    "type": "worked_solution_error",
+    "prompt": "Strategy scenario 234: Apply the strategy 'worked_solution_error' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "worked_solution_error",
+    "difficulty": "L3",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_235",
+    "type": "eliminate_wrong_answers",
+    "prompt": "Strategy scenario 235: Apply the strategy 'eliminate_wrong_answers' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "eliminate_wrong_answers",
+    "difficulty": "L1",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_236",
+    "type": "choose_skip_or_solve",
+    "prompt": "Strategy scenario 236: Apply the strategy 'choose_skip_or_solve' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "choose_skip_or_solve",
+    "difficulty": "L2",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_237",
+    "type": "estimate_before_calculating",
+    "prompt": "Strategy scenario 237: Apply the strategy 'estimate_before_calculating' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "estimate_before_calculating",
+    "difficulty": "L3",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_238",
+    "type": "spot_trap_answer",
+    "prompt": "Strategy scenario 238: Apply the strategy 'spot_trap_answer' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "spot_trap_answer",
+    "difficulty": "L1",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_239",
+    "type": "confidence_reflection",
+    "prompt": "Strategy scenario 239: Apply the strategy 'confidence_reflection' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "confidence_reflection",
+    "difficulty": "L2",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_240",
+    "type": "worked_solution_error",
+    "prompt": "Strategy scenario 240: Apply the strategy 'worked_solution_error' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "worked_solution_error",
+    "difficulty": "L3",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_241",
+    "type": "eliminate_wrong_answers",
+    "prompt": "Strategy scenario 241: Apply the strategy 'eliminate_wrong_answers' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "eliminate_wrong_answers",
+    "difficulty": "L1",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_242",
+    "type": "choose_skip_or_solve",
+    "prompt": "Strategy scenario 242: Apply the strategy 'choose_skip_or_solve' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "choose_skip_or_solve",
+    "difficulty": "L2",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_243",
+    "type": "estimate_before_calculating",
+    "prompt": "Strategy scenario 243: Apply the strategy 'estimate_before_calculating' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "estimate_before_calculating",
+    "difficulty": "L3",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_244",
+    "type": "spot_trap_answer",
+    "prompt": "Strategy scenario 244: Apply the strategy 'spot_trap_answer' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "spot_trap_answer",
+    "difficulty": "L1",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_245",
+    "type": "confidence_reflection",
+    "prompt": "Strategy scenario 245: Apply the strategy 'confidence_reflection' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "confidence_reflection",
+    "difficulty": "L2",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_246",
+    "type": "worked_solution_error",
+    "prompt": "Strategy scenario 246: Apply the strategy 'worked_solution_error' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "worked_solution_error",
+    "difficulty": "L3",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_247",
+    "type": "eliminate_wrong_answers",
+    "prompt": "Strategy scenario 247: Apply the strategy 'eliminate_wrong_answers' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "eliminate_wrong_answers",
+    "difficulty": "L1",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_248",
+    "type": "choose_skip_or_solve",
+    "prompt": "Strategy scenario 248: Apply the strategy 'choose_skip_or_solve' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "choose_skip_or_solve",
+    "difficulty": "L2",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_249",
+    "type": "estimate_before_calculating",
+    "prompt": "Strategy scenario 249: Apply the strategy 'estimate_before_calculating' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "estimate_before_calculating",
+    "difficulty": "L3",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_250",
+    "type": "spot_trap_answer",
+    "prompt": "Strategy scenario 250: Apply the strategy 'spot_trap_answer' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "spot_trap_answer",
+    "difficulty": "L1",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_251",
+    "type": "confidence_reflection",
+    "prompt": "Strategy scenario 251: Apply the strategy 'confidence_reflection' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "confidence_reflection",
+    "difficulty": "L2",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_252",
+    "type": "worked_solution_error",
+    "prompt": "Strategy scenario 252: Apply the strategy 'worked_solution_error' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "worked_solution_error",
+    "difficulty": "L3",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_253",
+    "type": "eliminate_wrong_answers",
+    "prompt": "Strategy scenario 253: Apply the strategy 'eliminate_wrong_answers' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "eliminate_wrong_answers",
+    "difficulty": "L1",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_254",
+    "type": "choose_skip_or_solve",
+    "prompt": "Strategy scenario 254: Apply the strategy 'choose_skip_or_solve' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "choose_skip_or_solve",
+    "difficulty": "L2",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_255",
+    "type": "estimate_before_calculating",
+    "prompt": "Strategy scenario 255: Apply the strategy 'estimate_before_calculating' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "estimate_before_calculating",
+    "difficulty": "L3",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_256",
+    "type": "spot_trap_answer",
+    "prompt": "Strategy scenario 256: Apply the strategy 'spot_trap_answer' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "spot_trap_answer",
+    "difficulty": "L1",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_257",
+    "type": "confidence_reflection",
+    "prompt": "Strategy scenario 257: Apply the strategy 'confidence_reflection' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "confidence_reflection",
+    "difficulty": "L2",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_258",
+    "type": "worked_solution_error",
+    "prompt": "Strategy scenario 258: Apply the strategy 'worked_solution_error' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "worked_solution_error",
+    "difficulty": "L3",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_259",
+    "type": "eliminate_wrong_answers",
+    "prompt": "Strategy scenario 259: Apply the strategy 'eliminate_wrong_answers' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "eliminate_wrong_answers",
+    "difficulty": "L1",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_260",
+    "type": "choose_skip_or_solve",
+    "prompt": "Strategy scenario 260: Apply the strategy 'choose_skip_or_solve' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "choose_skip_or_solve",
+    "difficulty": "L2",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_261",
+    "type": "estimate_before_calculating",
+    "prompt": "Strategy scenario 261: Apply the strategy 'estimate_before_calculating' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "estimate_before_calculating",
+    "difficulty": "L3",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_262",
+    "type": "spot_trap_answer",
+    "prompt": "Strategy scenario 262: Apply the strategy 'spot_trap_answer' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "spot_trap_answer",
+    "difficulty": "L1",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_263",
+    "type": "confidence_reflection",
+    "prompt": "Strategy scenario 263: Apply the strategy 'confidence_reflection' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "confidence_reflection",
+    "difficulty": "L2",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_264",
+    "type": "worked_solution_error",
+    "prompt": "Strategy scenario 264: Apply the strategy 'worked_solution_error' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "worked_solution_error",
+    "difficulty": "L3",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_265",
+    "type": "eliminate_wrong_answers",
+    "prompt": "Strategy scenario 265: Apply the strategy 'eliminate_wrong_answers' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "eliminate_wrong_answers",
+    "difficulty": "L1",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_266",
+    "type": "choose_skip_or_solve",
+    "prompt": "Strategy scenario 266: Apply the strategy 'choose_skip_or_solve' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "choose_skip_or_solve",
+    "difficulty": "L2",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_267",
+    "type": "estimate_before_calculating",
+    "prompt": "Strategy scenario 267: Apply the strategy 'estimate_before_calculating' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "estimate_before_calculating",
+    "difficulty": "L3",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_268",
+    "type": "spot_trap_answer",
+    "prompt": "Strategy scenario 268: Apply the strategy 'spot_trap_answer' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "spot_trap_answer",
+    "difficulty": "L1",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_269",
+    "type": "confidence_reflection",
+    "prompt": "Strategy scenario 269: Apply the strategy 'confidence_reflection' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "confidence_reflection",
+    "difficulty": "L2",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_270",
+    "type": "worked_solution_error",
+    "prompt": "Strategy scenario 270: Apply the strategy 'worked_solution_error' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "worked_solution_error",
+    "difficulty": "L3",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_271",
+    "type": "eliminate_wrong_answers",
+    "prompt": "Strategy scenario 271: Apply the strategy 'eliminate_wrong_answers' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "eliminate_wrong_answers",
+    "difficulty": "L1",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_272",
+    "type": "choose_skip_or_solve",
+    "prompt": "Strategy scenario 272: Apply the strategy 'choose_skip_or_solve' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "choose_skip_or_solve",
+    "difficulty": "L2",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_273",
+    "type": "estimate_before_calculating",
+    "prompt": "Strategy scenario 273: Apply the strategy 'estimate_before_calculating' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "estimate_before_calculating",
+    "difficulty": "L3",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_274",
+    "type": "spot_trap_answer",
+    "prompt": "Strategy scenario 274: Apply the strategy 'spot_trap_answer' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "spot_trap_answer",
+    "difficulty": "L1",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_275",
+    "type": "confidence_reflection",
+    "prompt": "Strategy scenario 275: Apply the strategy 'confidence_reflection' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "confidence_reflection",
+    "difficulty": "L2",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_276",
+    "type": "worked_solution_error",
+    "prompt": "Strategy scenario 276: Apply the strategy 'worked_solution_error' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "worked_solution_error",
+    "difficulty": "L3",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_277",
+    "type": "eliminate_wrong_answers",
+    "prompt": "Strategy scenario 277: Apply the strategy 'eliminate_wrong_answers' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "eliminate_wrong_answers",
+    "difficulty": "L1",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_278",
+    "type": "choose_skip_or_solve",
+    "prompt": "Strategy scenario 278: Apply the strategy 'choose_skip_or_solve' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "choose_skip_or_solve",
+    "difficulty": "L2",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_279",
+    "type": "estimate_before_calculating",
+    "prompt": "Strategy scenario 279: Apply the strategy 'estimate_before_calculating' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "estimate_before_calculating",
+    "difficulty": "L3",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_280",
+    "type": "spot_trap_answer",
+    "prompt": "Strategy scenario 280: Apply the strategy 'spot_trap_answer' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "spot_trap_answer",
+    "difficulty": "L1",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_281",
+    "type": "confidence_reflection",
+    "prompt": "Strategy scenario 281: Apply the strategy 'confidence_reflection' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "confidence_reflection",
+    "difficulty": "L2",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_282",
+    "type": "worked_solution_error",
+    "prompt": "Strategy scenario 282: Apply the strategy 'worked_solution_error' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "worked_solution_error",
+    "difficulty": "L3",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_283",
+    "type": "eliminate_wrong_answers",
+    "prompt": "Strategy scenario 283: Apply the strategy 'eliminate_wrong_answers' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "eliminate_wrong_answers",
+    "difficulty": "L1",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_284",
+    "type": "choose_skip_or_solve",
+    "prompt": "Strategy scenario 284: Apply the strategy 'choose_skip_or_solve' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "choose_skip_or_solve",
+    "difficulty": "L2",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_285",
+    "type": "estimate_before_calculating",
+    "prompt": "Strategy scenario 285: Apply the strategy 'estimate_before_calculating' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "estimate_before_calculating",
+    "difficulty": "L3",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_286",
+    "type": "spot_trap_answer",
+    "prompt": "Strategy scenario 286: Apply the strategy 'spot_trap_answer' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "spot_trap_answer",
+    "difficulty": "L1",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_287",
+    "type": "confidence_reflection",
+    "prompt": "Strategy scenario 287: Apply the strategy 'confidence_reflection' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "confidence_reflection",
+    "difficulty": "L2",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_288",
+    "type": "worked_solution_error",
+    "prompt": "Strategy scenario 288: Apply the strategy 'worked_solution_error' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "worked_solution_error",
+    "difficulty": "L3",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_289",
+    "type": "eliminate_wrong_answers",
+    "prompt": "Strategy scenario 289: Apply the strategy 'eliminate_wrong_answers' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "eliminate_wrong_answers",
+    "difficulty": "L1",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_290",
+    "type": "choose_skip_or_solve",
+    "prompt": "Strategy scenario 290: Apply the strategy 'choose_skip_or_solve' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "choose_skip_or_solve",
+    "difficulty": "L2",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_291",
+    "type": "estimate_before_calculating",
+    "prompt": "Strategy scenario 291: Apply the strategy 'estimate_before_calculating' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "estimate_before_calculating",
+    "difficulty": "L3",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_292",
+    "type": "spot_trap_answer",
+    "prompt": "Strategy scenario 292: Apply the strategy 'spot_trap_answer' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "spot_trap_answer",
+    "difficulty": "L1",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_293",
+    "type": "confidence_reflection",
+    "prompt": "Strategy scenario 293: Apply the strategy 'confidence_reflection' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "confidence_reflection",
+    "difficulty": "L2",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_294",
+    "type": "worked_solution_error",
+    "prompt": "Strategy scenario 294: Apply the strategy 'worked_solution_error' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "worked_solution_error",
+    "difficulty": "L3",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_295",
+    "type": "eliminate_wrong_answers",
+    "prompt": "Strategy scenario 295: Apply the strategy 'eliminate_wrong_answers' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "eliminate_wrong_answers",
+    "difficulty": "L1",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_296",
+    "type": "choose_skip_or_solve",
+    "prompt": "Strategy scenario 296: Apply the strategy 'choose_skip_or_solve' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "choose_skip_or_solve",
+    "difficulty": "L2",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_297",
+    "type": "estimate_before_calculating",
+    "prompt": "Strategy scenario 297: Apply the strategy 'estimate_before_calculating' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "estimate_before_calculating",
+    "difficulty": "L3",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_298",
+    "type": "spot_trap_answer",
+    "prompt": "Strategy scenario 298: Apply the strategy 'spot_trap_answer' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "spot_trap_answer",
+    "difficulty": "L1",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_299",
+    "type": "confidence_reflection",
+    "prompt": "Strategy scenario 299: Apply the strategy 'confidence_reflection' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "confidence_reflection",
+    "difficulty": "L2",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  },
+  {
+    "id": "strategy_300",
+    "type": "worked_solution_error",
+    "prompt": "Strategy scenario 300: Apply the strategy 'worked_solution_error' to determine the best next action for solving the problem efficiently.",
+    "recommended_strategy": "worked_solution_error",
+    "difficulty": "L3",
+    "explanation": "This scenario trains the student to apply a test\u2011taking strategy instead of immediately solving the problem."
+  }
+]
