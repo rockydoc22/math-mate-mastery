@@ -1,0 +1,31 @@
+{
+  "title": "Review Analytics Dashboard Spec",
+  "student_dashboard": [
+    "accuracy by exam",
+    "accuracy by skill",
+    "time per question",
+    "confidence vs correctness",
+    "streak history",
+    "most improved skill",
+    "most missed trap type"
+  ],
+  "parent_teacher_dashboard": [
+    "weekly activity minutes",
+    "questions completed",
+    "accuracy trend",
+    "top strengths",
+    "top intervention areas",
+    "recommended next mode"
+  ],
+  "question_level_tracking": [
+    "question_id",
+    "skill",
+    "difficulty",
+    "answer_choice",
+    "correct",
+    "time_spent_sec",
+    "confidence_level",
+    "used_hint",
+    "used_elimination_mode"
+  ]
+}

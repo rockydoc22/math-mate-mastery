@@ -1,0 +1,25 @@
+{
+  "title": "Recommended Build Order After This Pack",
+  "order": [
+    {
+      "step": 1,
+      "feature": "Adaptive engine wiring",
+      "why": "Turns static question banks into personalized learning."
+    },
+    {
+      "step": 2,
+      "feature": "Strategy scenario bank",
+      "why": "Differentiates your app from generic prep tools."
+    },
+    {
+      "step": 3,
+      "feature": "Timed modes",
+      "why": "Essential for realistic exam training."
+    },
+    {
+      "step": 4,
+      "feature": "Review analytics UI",
+      "why": "Makes the app sticky and parent/teacher friendly."
+    }
+  ]
+}

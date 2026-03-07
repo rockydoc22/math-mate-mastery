@@ -1,0 +1,51 @@
+{
+  "title": "Adaptive Learning Engine for Test App",
+  "goal": "Automatically adjust difficulty, topic mix, and review timing based on performance.",
+  "master_rules": {
+    "promotion_rule": "If accuracy >= 80% across the last 20 items in a skill bucket, increase difficulty by one level.",
+    "stabilize_rule": "If accuracy is between 60% and 79%, keep difficulty the same and add mixed review.",
+    "support_rule": "If accuracy < 60% across the last 12 items in a skill bucket, lower difficulty or assign scaffolded strategy items.",
+    "review_rule": "Missed concepts reappear within 1-2 sessions with shorter simpler items first."
+  },
+  "difficulty_levels": [
+    {
+      "id": "L1",
+      "label": "Foundation"
+    },
+    {
+      "id": "L2",
+      "label": "Core"
+    },
+    {
+      "id": "L3",
+      "label": "Exam Ready"
+    },
+    {
+      "id": "L4",
+      "label": "Stretch"
+    }
+  ],
+  "student_state_fields": [
+    "current_exam",
+    "current_section",
+    "current_difficulty",
+    "accuracy_rolling_20",
+    "avg_time_per_question",
+    "confidence_accuracy_gap",
+    "weakest_skills",
+    "most_recently_missed_topics",
+    "streak_correct",
+    "streak_wrong"
+  ],
+  "session_builder_logic": [
+    "Start with 2 confidence-building items.",
+    "Then serve 5-8 targeted items from weak skills.",
+    "Then mix in 3 medium transfer items from nearby skills.",
+    "End with 1 challenge item if recent accuracy is strong."
+  ],
+  "anti_frustration_rules": [
+    "Never give more than 3 hard misses in a row without a simpler rebound item.",
+    "Insert a strategy-tip card after 2 misses in the same skill.",
+    "Offer untimed retry mode after repeated low-confidence errors."
+  ]
+}

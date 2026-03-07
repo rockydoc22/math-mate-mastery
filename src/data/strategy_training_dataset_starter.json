@@ -1,0 +1,53 @@
+{
+  "title": "Strategy Training Dataset Starter",
+  "scenario_types": [
+    "eliminate_two_wrong_choices",
+    "choose_skip_or_solve",
+    "estimate_before_solving",
+    "spot_the_trap_answer",
+    "confidence_check",
+    "worked_solution_error_check"
+  ],
+  "sample_scenarios": [
+    {
+      "id": "strat_001",
+      "type": "eliminate_two_wrong_choices",
+      "exam": "GRE",
+      "section": "Quantitative",
+      "prompt": "A student solves a percent question and gets answer choice C. Which two answer choices can be eliminated first because they are not reasonable estimates?",
+      "skills": [
+        "estimation",
+        "answer_elimination"
+      ],
+      "difficulty": "L2"
+    },
+    {
+      "id": "strat_002",
+      "type": "choose_skip_or_solve",
+      "exam": "GMAT",
+      "section": "Quantitative",
+      "prompt": "You have spent 70 seconds on a difficult algebra problem and still have no equation set up. What is the best strategy now?",
+      "skills": [
+        "pacing",
+        "triage"
+      ],
+      "difficulty": "L2"
+    },
+    {
+      "id": "strat_003",
+      "type": "worked_solution_error_check",
+      "exam": "SAT",
+      "section": "Math",
+      "prompt": "A student wrote 4x = 28, then x = 24. Identify the mistake.",
+      "skills": [
+        "error_analysis"
+      ],
+      "difficulty": "L1"
+    }
+  ],
+  "recommended_target_size": {
+    "phase_1": 250,
+    "phase_2": 500,
+    "phase_3": 1000
+  }
+}
