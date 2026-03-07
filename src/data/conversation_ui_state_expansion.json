@@ -1,0 +1,25 @@
+{
+  "title": "Conversation UI State Expansion",
+  "views": [
+    "conversation_home",
+    "line_reader",
+    "audio_focus_view",
+    "shadowing_view",
+    "quiz_view",
+    "review_queue_view",
+    "mastery_summary_view"
+  ],
+  "recommended_badges": [
+    "new line",
+    "needs review",
+    "strong line",
+    "mastered line"
+  ],
+  "top_level_metrics_to_show": [
+    "conversation score",
+    "mastered lines",
+    "lines needing review",
+    "best language mode used",
+    "coins earned"
+  ]
+}

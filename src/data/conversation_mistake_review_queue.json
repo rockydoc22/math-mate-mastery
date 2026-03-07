@@ -1,0 +1,17 @@
+{
+  "title": "Mistake Review Queue",
+  "purpose": "Reinsert weak lines and missed comprehension items into short follow-up sessions.",
+  "queue_rules": [
+    "Add a line if comprehension tied to that line is missed.",
+    "Add a line if it is replayed more than 3 times in one session.",
+    "Prioritize lines with low mastery and recent misses.",
+    "Surface 3-5 review items at the start of the next short session."
+  ],
+  "review_modes": [
+    "listen again",
+    "translation reveal",
+    "shadowing retry",
+    "who_said_it",
+    "line_ordering"
+  ]
+}

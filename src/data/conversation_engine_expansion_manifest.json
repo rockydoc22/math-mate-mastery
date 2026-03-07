@@ -1,0 +1,11 @@
+{
+  "title": "Conversation Practice Engine Expansion Pack",
+  "files": [
+    "conversation_engine_expansion_spec.json",
+    "conversation_audio_state_model.json",
+    "conversation_scoring_engine.json",
+    "conversation_line_mastery_schema.json",
+    "conversation_mistake_review_queue.json",
+    "conversation_ui_state_expansion.json"
+  ]
+}
