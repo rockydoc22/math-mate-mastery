@@ -1,0 +1,30 @@
+{
+  "title": "Personality + EQ Results Engine",
+  "purpose": "Convert non-clinical self-assessment responses into helpful educational reports.",
+  "required_banner": "Educational self-assessment only. Not a clinical, diagnostic, or licensed psychological instrument.",
+  "supported_tracks": [
+    "big_five_style",
+    "eq_skills",
+    "learning_preferences"
+  ],
+  "score_bands": [
+    {
+      "band": "low",
+      "label": "Lower / less frequent"
+    },
+    {
+      "band": "moderate",
+      "label": "Moderate / mixed"
+    },
+    {
+      "band": "high",
+      "label": "Higher / more frequent"
+    }
+  ],
+  "rules": [
+    "Reverse-score items flagged with scoring_direction = -1.",
+    "Average item responses within each domain.",
+    "Map averages to low / moderate / high bands.",
+    "Return strengths, watch-outs, and practical study / communication suggestions."
+  ]
+}

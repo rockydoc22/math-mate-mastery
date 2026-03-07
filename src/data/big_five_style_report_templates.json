@@ -1,0 +1,183 @@
+{
+  "title": "Big Five Style Report Templates",
+  "domains": {
+    "openness": {
+      "high": {
+        "strengths": [
+          "You may enjoy novelty, creativity, and exploratory learning.",
+          "You may respond well to big-picture ideas and unusual connections."
+        ],
+        "watch_outs": [
+          "Too much novelty can sometimes reduce consistency.",
+          "You may need stronger routines to finish repetitive tasks."
+        ],
+        "coaching": [
+          "Use project-based learning and open-ended prompts.",
+          "Pair creative exploration with clear deadlines."
+        ]
+      },
+      "moderate": {
+        "strengths": [
+          "You may balance curiosity with practicality."
+        ],
+        "watch_outs": [
+          "You may hesitate between trying new approaches and staying with familiar ones."
+        ],
+        "coaching": [
+          "Try one new learning strategy at a time."
+        ]
+      },
+      "low": {
+        "strengths": [
+          "You may prefer clear instructions and familiar methods."
+        ],
+        "watch_outs": [
+          "You may avoid useful experimentation."
+        ],
+        "coaching": [
+          "Introduce change in small, predictable steps."
+        ]
+      }
+    },
+    "conscientiousness": {
+      "high": {
+        "strengths": [
+          "You may do well with structure, checklists, and deadlines."
+        ],
+        "watch_outs": [
+          "You may become overly perfectionistic under pressure."
+        ],
+        "coaching": [
+          "Use time blocks and clear milestones, but set 'good enough' checkpoints."
+        ]
+      },
+      "moderate": {
+        "strengths": [
+          "You may adapt between structure and flexibility."
+        ],
+        "watch_outs": [
+          "Consistency may vary depending on motivation."
+        ],
+        "coaching": [
+          "Use simple routines for high-value tasks."
+        ]
+      },
+      "low": {
+        "strengths": [
+          "You may be flexible and less rigid when plans change."
+        ],
+        "watch_outs": [
+          "You may need extra support with organization and follow-through."
+        ],
+        "coaching": [
+          "Use reminders, short checklists, and visual progress trackers."
+        ]
+      }
+    },
+    "extraversion": {
+      "high": {
+        "strengths": [
+          "You may learn well through discussion, collaboration, and speaking."
+        ],
+        "watch_outs": [
+          "Quiet independent work may feel draining."
+        ],
+        "coaching": [
+          "Use study groups, verbal rehearsal, and teaching others."
+        ]
+      },
+      "moderate": {
+        "strengths": [
+          "You may shift well between solo and group work."
+        ],
+        "watch_outs": [
+          "Your ideal study setting may depend heavily on the task."
+        ],
+        "coaching": [
+          "Match solo work to deep thinking and group work to review."
+        ]
+      },
+      "low": {
+        "strengths": [
+          "You may prefer reflection, depth, and quieter focus."
+        ],
+        "watch_outs": [
+          "You may delay asking for help or sharing ideas."
+        ],
+        "coaching": [
+          "Use private reflection first, then bring one prepared question to others."
+        ]
+      }
+    },
+    "agreeableness": {
+      "high": {
+        "strengths": [
+          "You may value harmony, teamwork, and supportive communication."
+        ],
+        "watch_outs": [
+          "You may avoid needed conflict or over-accommodate."
+        ],
+        "coaching": [
+          "Practice clear disagreement without apology overload."
+        ]
+      },
+      "moderate": {
+        "strengths": [
+          "You may balance kindness with directness."
+        ],
+        "watch_outs": [
+          "You may shift tone depending on stress."
+        ],
+        "coaching": [
+          "Use scripted phrases for calm disagreement."
+        ]
+      },
+      "low": {
+        "strengths": [
+          "You may be more direct, skeptical, or debate-oriented."
+        ],
+        "watch_outs": [
+          "Others may experience you as harsher than intended."
+        ],
+        "coaching": [
+          "Pair direct feedback with one sentence of empathy or context."
+        ]
+      }
+    },
+    "emotional_stability": {
+      "high": {
+        "strengths": [
+          "You may stay steadier under stress and recover more quickly."
+        ],
+        "watch_outs": [
+          "You may underestimate how stressful something feels for others."
+        ],
+        "coaching": [
+          "Use your calm as a strength, but still build reflection habits."
+        ]
+      },
+      "moderate": {
+        "strengths": [
+          "You may handle some pressure well while still needing recovery time."
+        ],
+        "watch_outs": [
+          "Stress may show up when workload stacks too quickly."
+        ],
+        "coaching": [
+          "Use pacing, sleep routines, and short reset breaks."
+        ]
+      },
+      "low": {
+        "strengths": [
+          "You may be emotionally sensitive and highly aware of pressure."
+        ],
+        "watch_outs": [
+          "Stress may interfere with performance unless managed early."
+        ],
+        "coaching": [
+          "Use shorter sessions, preview upcoming work, and practice calm-reset routines."
+        ]
+      }
+    }
+  }
+}

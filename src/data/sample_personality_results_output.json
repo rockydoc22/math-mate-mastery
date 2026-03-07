@@ -1,0 +1,25 @@
+{
+  "title": "Sample Results Output",
+  "sample_profile": {
+    "track": "big_five_style",
+    "band_results": {
+      "openness": "high",
+      "conscientiousness": "moderate",
+      "extraversion": "low",
+      "agreeableness": "moderate",
+      "emotional_stability": "low"
+    },
+    "strengths": [
+      "Enjoys new ideas and creative learning",
+      "Can reflect deeply before responding"
+    ],
+    "growth_areas": [
+      "May need more visible routines for follow-through",
+      "May need stronger stress-management habits under pressure"
+    ],
+    "practical_tips": [
+      "Pair creative tasks with deadlines and checklists",
+      "Break stressful work into shorter sessions with reset breaks"
+    ]
+  }
+}
