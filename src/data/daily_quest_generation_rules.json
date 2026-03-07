@@ -1,0 +1,16 @@
+{
+  "title": "Quest Generation Rules",
+  "rules": [
+    "Choose 2 easy / medium quests and 1 stretch quest each day.",
+    "Avoid repeating the exact same quest two days in a row unless the user is very young.",
+    "Bias quest selection toward underused but valuable modes like conversation practice and strategy training.",
+    "If a user is on a long streak, add one bonus quest.",
+    "If parent time limits are active, cut quest count from 3 to 2."
+  ],
+  "stretch_quest_examples": [
+    "Get 90% accuracy on a short set",
+    "Complete a conversation without translation mode",
+    "Finish a timed round and review missed questions",
+    "Solve 3 logic items in a row"
+  ]
+}

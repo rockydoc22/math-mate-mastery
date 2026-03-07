@@ -1,0 +1,11 @@
+{
+  "title": "Daily Quest System Pack",
+  "files": [
+    "daily_quest_system_spec.json",
+    "daily_quest_templates.json",
+    "daily_quest_generation_rules.json",
+    "daily_quest_rewards_and_streaks.json",
+    "daily_quest_ui_spec.json",
+    "daily_quest_sample_outputs.json"
+  ]
+}

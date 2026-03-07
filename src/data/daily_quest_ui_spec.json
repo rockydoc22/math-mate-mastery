@@ -1,0 +1,22 @@
+{
+  "title": "Daily Quest UI Spec",
+  "views": [
+    "daily_quest_home",
+    "quest_card_list",
+    "quest_progress_tracker",
+    "quest_complete_popup",
+    "weekly_quest_summary"
+  ],
+  "ui_rules": [
+    "Show 2 to 3 quests only, not a large checklist.",
+    "Use clear progress bars under each quest.",
+    "Show reward value on the card.",
+    "Use a 'claim reward' action when a quest finishes."
+  ],
+  "recommended_visuals": [
+    "quest stars",
+    "mini chest unlock",
+    "streak flame",
+    "progress ring"
+  ]
+}
