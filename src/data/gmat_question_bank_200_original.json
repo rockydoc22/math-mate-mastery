@@ -1,0 +1,5202 @@
+[
+  {
+    "id": "gmat_q_001",
+    "exam": "GMAT",
+    "section": "Quantitative",
+    "question": "In the function y = 4x + 3, what is y when x = 6?",
+    "options": [
+      {
+        "label": "A",
+        "text": "29"
+      },
+      {
+        "label": "B",
+        "text": "25"
+      },
+      {
+        "label": "C",
+        "text": "27"
+      },
+      {
+        "label": "D",
+        "text": "7"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Substitute x into the linear function."
+  },
+  {
+    "id": "gmat_q_002",
+    "exam": "GMAT",
+    "section": "Quantitative",
+    "question": "In the function y = 5x + 4, what is y when x = 7?",
+    "options": [
+      {
+        "label": "A",
+        "text": "41"
+      },
+      {
+        "label": "B",
+        "text": "37"
+      },
+      {
+        "label": "C",
+        "text": "9"
+      },
+      {
+        "label": "D",
+        "text": "39"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Substitute x into the linear function."
+  },
+  {
+    "id": "gmat_q_003",
+    "exam": "GMAT",
+    "section": "Quantitative",
+    "question": "In the function y = 6x + 5, what is y when x = 8?",
+    "options": [
+      {
+        "label": "A",
+        "text": "53"
+      },
+      {
+        "label": "B",
+        "text": "55"
+      },
+      {
+        "label": "C",
+        "text": "51"
+      },
+      {
+        "label": "D",
+        "text": "11"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Substitute x into the linear function."
+  },
+  {
+    "id": "gmat_q_004",
+    "exam": "GMAT",
+    "section": "Quantitative",
+    "question": "In the function y = 7x + 6, what is y when x = 5?",
+    "options": [
+      {
+        "label": "A",
+        "text": "43"
+      },
+      {
+        "label": "B",
+        "text": "41"
+      },
+      {
+        "label": "C",
+        "text": "39"
+      },
+      {
+        "label": "D",
+        "text": "13"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Substitute x into the linear function."
+  },
+  {
+    "id": "gmat_q_005",
+    "exam": "GMAT",
+    "section": "Quantitative",
+    "question": "In the function y = 8x + 2, what is y when x = 6?",
+    "options": [
+      {
+        "label": "A",
+        "text": "52"
+      },
+      {
+        "label": "B",
+        "text": "48"
+      },
+      {
+        "label": "C",
+        "text": "50"
+      },
+      {
+        "label": "D",
+        "text": "10"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Substitute x into the linear function."
+  },
+  {
+    "id": "gmat_q_006",
+    "exam": "GMAT",
+    "section": "Quantitative",
+    "question": "In the function y = 3x + 3, what is y when x = 7?",
+    "options": [
+      {
+        "label": "A",
+        "text": "26"
+      },
+      {
+        "label": "B",
+        "text": "22"
+      },
+      {
+        "label": "C",
+        "text": "6"
+      },
+      {
+        "label": "D",
+        "text": "24"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Substitute x into the linear function."
+  },
+  {
+    "id": "gmat_q_007",
+    "exam": "GMAT",
+    "section": "Quantitative",
+    "question": "In the function y = 4x + 4, what is y when x = 8?",
+    "options": [
+      {
+        "label": "A",
+        "text": "36"
+      },
+      {
+        "label": "B",
+        "text": "38"
+      },
+      {
+        "label": "C",
+        "text": "34"
+      },
+      {
+        "label": "D",
+        "text": "8"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Substitute x into the linear function."
+  },
+  {
+    "id": "gmat_q_008",
+    "exam": "GMAT",
+    "section": "Quantitative",
+    "question": "In the function y = 5x + 5, what is y when x = 5?",
+    "options": [
+      {
+        "label": "A",
+        "text": "32"
+      },
+      {
+        "label": "B",
+        "text": "30"
+      },
+      {
+        "label": "C",
+        "text": "28"
+      },
+      {
+        "label": "D",
+        "text": "10"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Substitute x into the linear function."
+  },
+  {
+    "id": "gmat_q_009",
+    "exam": "GMAT",
+    "section": "Quantitative",
+    "question": "In the function y = 6x + 6, what is y when x = 6?",
+    "options": [
+      {
+        "label": "A",
+        "text": "44"
+      },
+      {
+        "label": "B",
+        "text": "40"
+      },
+      {
+        "label": "C",
+        "text": "42"
+      },
+      {
+        "label": "D",
+        "text": "12"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Substitute x into the linear function."
+  },
+  {
+    "id": "gmat_q_010",
+    "exam": "GMAT",
+    "section": "Quantitative",
+    "question": "In the function y = 7x + 2, what is y when x = 7?",
+    "options": [
+      {
+        "label": "A",
+        "text": "53"
+      },
+      {
+        "label": "B",
+        "text": "49"
+      },
+      {
+        "label": "C",
+        "text": "9"
+      },
+      {
+        "label": "D",
+        "text": "51"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Substitute x into the linear function."
+  },
+  {
+    "id": "gmat_q_011",
+    "exam": "GMAT",
+    "section": "Quantitative",
+    "question": "In the function y = 8x + 3, what is y when x = 8?",
+    "options": [
+      {
+        "label": "A",
+        "text": "67"
+      },
+      {
+        "label": "B",
+        "text": "69"
+      },
+      {
+        "label": "C",
+        "text": "65"
+      },
+      {
+        "label": "D",
+        "text": "11"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Substitute x into the linear function."
+  },
+  {
+    "id": "gmat_q_012",
+    "exam": "GMAT",
+    "section": "Quantitative",
+    "question": "In the function y = 3x + 4, what is y when x = 5?",
+    "options": [
+      {
+        "label": "A",
+        "text": "21"
+      },
+      {
+        "label": "B",
+        "text": "19"
+      },
+      {
+        "label": "C",
+        "text": "17"
+      },
+      {
+        "label": "D",
+        "text": "7"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Substitute x into the linear function."
+  },
+  {
+    "id": "gmat_q_013",
+    "exam": "GMAT",
+    "section": "Quantitative",
+    "question": "In the function y = 4x + 5, what is y when x = 6?",
+    "options": [
+      {
+        "label": "A",
+        "text": "31"
+      },
+      {
+        "label": "B",
+        "text": "27"
+      },
+      {
+        "label": "C",
+        "text": "29"
+      },
+      {
+        "label": "D",
+        "text": "9"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Substitute x into the linear function."
+  },
+  {
+    "id": "gmat_q_014",
+    "exam": "GMAT",
+    "section": "Quantitative",
+    "question": "In the function y = 5x + 6, what is y when x = 7?",
+    "options": [
+      {
+        "label": "A",
+        "text": "43"
+      },
+      {
+        "label": "B",
+        "text": "39"
+      },
+      {
+        "label": "C",
+        "text": "11"
+      },
+      {
+        "label": "D",
+        "text": "41"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Substitute x into the linear function."
+  },
+  {
+    "id": "gmat_q_015",
+    "exam": "GMAT",
+    "section": "Quantitative",
+    "question": "In the function y = 6x + 2, what is y when x = 8?",
+    "options": [
+      {
+        "label": "A",
+        "text": "50"
+      },
+      {
+        "label": "B",
+        "text": "52"
+      },
+      {
+        "label": "C",
+        "text": "48"
+      },
+      {
+        "label": "D",
+        "text": "8"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Substitute x into the linear function."
+  },
+  {
+    "id": "gmat_q_016",
+    "exam": "GMAT",
+    "section": "Quantitative",
+    "question": "In the function y = 7x + 3, what is y when x = 5?",
+    "options": [
+      {
+        "label": "A",
+        "text": "40"
+      },
+      {
+        "label": "B",
+        "text": "38"
+      },
+      {
+        "label": "C",
+        "text": "36"
+      },
+      {
+        "label": "D",
+        "text": "10"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Substitute x into the linear function."
+  },
+  {
+    "id": "gmat_q_017",
+    "exam": "GMAT",
+    "section": "Quantitative",
+    "question": "In the function y = 8x + 4, what is y when x = 6?",
+    "options": [
+      {
+        "label": "A",
+        "text": "54"
+      },
+      {
+        "label": "B",
+        "text": "50"
+      },
+      {
+        "label": "C",
+        "text": "52"
+      },
+      {
+        "label": "D",
+        "text": "12"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Substitute x into the linear function."
+  },
+  {
+    "id": "gmat_q_018",
+    "exam": "GMAT",
+    "section": "Quantitative",
+    "question": "In the function y = 3x + 5, what is y when x = 7?",
+    "options": [
+      {
+        "label": "A",
+        "text": "28"
+      },
+      {
+        "label": "B",
+        "text": "24"
+      },
+      {
+        "label": "C",
+        "text": "8"
+      },
+      {
+        "label": "D",
+        "text": "26"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Substitute x into the linear function."
+  },
+  {
+    "id": "gmat_q_019",
+    "exam": "GMAT",
+    "section": "Quantitative",
+    "question": "In the function y = 4x + 6, what is y when x = 8?",
+    "options": [
+      {
+        "label": "A",
+        "text": "38"
+      },
+      {
+        "label": "B",
+        "text": "40"
+      },
+      {
+        "label": "C",
+        "text": "36"
+      },
+      {
+        "label": "D",
+        "text": "10"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Substitute x into the linear function."
+  },
+  {
+    "id": "gmat_q_020",
+    "exam": "GMAT",
+    "section": "Quantitative",
+    "question": "In the function y = 5x + 2, what is y when x = 5?",
+    "options": [
+      {
+        "label": "A",
+        "text": "29"
+      },
+      {
+        "label": "B",
+        "text": "27"
+      },
+      {
+        "label": "C",
+        "text": "25"
+      },
+      {
+        "label": "D",
+        "text": "7"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Substitute x into the linear function."
+  },
+  {
+    "id": "gmat_q_021",
+    "exam": "GMAT",
+    "section": "Quantitative",
+    "question": "In the function y = 6x + 3, what is y when x = 6?",
+    "options": [
+      {
+        "label": "A",
+        "text": "41"
+      },
+      {
+        "label": "B",
+        "text": "37"
+      },
+      {
+        "label": "C",
+        "text": "39"
+      },
+      {
+        "label": "D",
+        "text": "9"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Substitute x into the linear function."
+  },
+  {
+    "id": "gmat_q_022",
+    "exam": "GMAT",
+    "section": "Quantitative",
+    "question": "In the function y = 7x + 4, what is y when x = 7?",
+    "options": [
+      {
+        "label": "A",
+        "text": "55"
+      },
+      {
+        "label": "B",
+        "text": "51"
+      },
+      {
+        "label": "C",
+        "text": "11"
+      },
+      {
+        "label": "D",
+        "text": "53"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Substitute x into the linear function."
+  },
+  {
+    "id": "gmat_q_023",
+    "exam": "GMAT",
+    "section": "Quantitative",
+    "question": "In the function y = 8x + 5, what is y when x = 8?",
+    "options": [
+      {
+        "label": "A",
+        "text": "69"
+      },
+      {
+        "label": "B",
+        "text": "71"
+      },
+      {
+        "label": "C",
+        "text": "67"
+      },
+      {
+        "label": "D",
+        "text": "13"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Substitute x into the linear function."
+  },
+  {
+    "id": "gmat_q_024",
+    "exam": "GMAT",
+    "section": "Quantitative",
+    "question": "In the function y = 3x + 6, what is y when x = 5?",
+    "options": [
+      {
+        "label": "A",
+        "text": "23"
+      },
+      {
+        "label": "B",
+        "text": "21"
+      },
+      {
+        "label": "C",
+        "text": "19"
+      },
+      {
+        "label": "D",
+        "text": "9"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Substitute x into the linear function."
+  },
+  {
+    "id": "gmat_q_025",
+    "exam": "GMAT",
+    "section": "Quantitative",
+    "question": "In the function y = 4x + 2, what is y when x = 6?",
+    "options": [
+      {
+        "label": "A",
+        "text": "28"
+      },
+      {
+        "label": "B",
+        "text": "24"
+      },
+      {
+        "label": "C",
+        "text": "26"
+      },
+      {
+        "label": "D",
+        "text": "6"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Substitute x into the linear function."
+  },
+  {
+    "id": "gmat_q_026",
+    "exam": "GMAT",
+    "section": "Quantitative",
+    "question": "In the function y = 5x + 3, what is y when x = 7?",
+    "options": [
+      {
+        "label": "A",
+        "text": "40"
+      },
+      {
+        "label": "B",
+        "text": "36"
+      },
+      {
+        "label": "C",
+        "text": "8"
+      },
+      {
+        "label": "D",
+        "text": "38"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Substitute x into the linear function."
+  },
+  {
+    "id": "gmat_q_027",
+    "exam": "GMAT",
+    "section": "Quantitative",
+    "question": "In the function y = 6x + 4, what is y when x = 8?",
+    "options": [
+      {
+        "label": "A",
+        "text": "52"
+      },
+      {
+        "label": "B",
+        "text": "54"
+      },
+      {
+        "label": "C",
+        "text": "50"
+      },
+      {
+        "label": "D",
+        "text": "10"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Substitute x into the linear function."
+  },
+  {
+    "id": "gmat_q_028",
+    "exam": "GMAT",
+    "section": "Quantitative",
+    "question": "In the function y = 7x + 5, what is y when x = 5?",
+    "options": [
+      {
+        "label": "A",
+        "text": "42"
+      },
+      {
+        "label": "B",
+        "text": "40"
+      },
+      {
+        "label": "C",
+        "text": "38"
+      },
+      {
+        "label": "D",
+        "text": "12"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Substitute x into the linear function."
+  },
+  {
+    "id": "gmat_q_029",
+    "exam": "GMAT",
+    "section": "Quantitative",
+    "question": "In the function y = 8x + 6, what is y when x = 6?",
+    "options": [
+      {
+        "label": "A",
+        "text": "56"
+      },
+      {
+        "label": "B",
+        "text": "52"
+      },
+      {
+        "label": "C",
+        "text": "54"
+      },
+      {
+        "label": "D",
+        "text": "14"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Substitute x into the linear function."
+  },
+  {
+    "id": "gmat_q_030",
+    "exam": "GMAT",
+    "section": "Quantitative",
+    "question": "In the function y = 3x + 2, what is y when x = 7?",
+    "options": [
+      {
+        "label": "A",
+        "text": "25"
+      },
+      {
+        "label": "B",
+        "text": "21"
+      },
+      {
+        "label": "C",
+        "text": "5"
+      },
+      {
+        "label": "D",
+        "text": "23"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Substitute x into the linear function."
+  },
+  {
+    "id": "gmat_q_031",
+    "exam": "GMAT",
+    "section": "Quantitative",
+    "question": "In the function y = 4x + 3, what is y when x = 8?",
+    "options": [
+      {
+        "label": "A",
+        "text": "35"
+      },
+      {
+        "label": "B",
+        "text": "37"
+      },
+      {
+        "label": "C",
+        "text": "33"
+      },
+      {
+        "label": "D",
+        "text": "7"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Substitute x into the linear function."
+  },
+  {
+    "id": "gmat_q_032",
+    "exam": "GMAT",
+    "section": "Quantitative",
+    "question": "In the function y = 5x + 4, what is y when x = 5?",
+    "options": [
+      {
+        "label": "A",
+        "text": "31"
+      },
+      {
+        "label": "B",
+        "text": "29"
+      },
+      {
+        "label": "C",
+        "text": "27"
+      },
+      {
+        "label": "D",
+        "text": "9"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Substitute x into the linear function."
+  },
+  {
+    "id": "gmat_q_033",
+    "exam": "GMAT",
+    "section": "Quantitative",
+    "question": "In the function y = 6x + 5, what is y when x = 6?",
+    "options": [
+      {
+        "label": "A",
+        "text": "43"
+      },
+      {
+        "label": "B",
+        "text": "39"
+      },
+      {
+        "label": "C",
+        "text": "41"
+      },
+      {
+        "label": "D",
+        "text": "11"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Substitute x into the linear function."
+  },
+  {
+    "id": "gmat_q_034",
+    "exam": "GMAT",
+    "section": "Quantitative",
+    "question": "In the function y = 7x + 6, what is y when x = 7?",
+    "options": [
+      {
+        "label": "A",
+        "text": "57"
+      },
+      {
+        "label": "B",
+        "text": "53"
+      },
+      {
+        "label": "C",
+        "text": "13"
+      },
+      {
+        "label": "D",
+        "text": "55"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Substitute x into the linear function."
+  },
+  {
+    "id": "gmat_q_035",
+    "exam": "GMAT",
+    "section": "Quantitative",
+    "question": "In the function y = 8x + 2, what is y when x = 8?",
+    "options": [
+      {
+        "label": "A",
+        "text": "66"
+      },
+      {
+        "label": "B",
+        "text": "68"
+      },
+      {
+        "label": "C",
+        "text": "64"
+      },
+      {
+        "label": "D",
+        "text": "10"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Substitute x into the linear function."
+  },
+  {
+    "id": "gmat_q_036",
+    "exam": "GMAT",
+    "section": "Quantitative",
+    "question": "In the function y = 3x + 3, what is y when x = 5?",
+    "options": [
+      {
+        "label": "A",
+        "text": "20"
+      },
+      {
+        "label": "B",
+        "text": "18"
+      },
+      {
+        "label": "C",
+        "text": "16"
+      },
+      {
+        "label": "D",
+        "text": "6"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Substitute x into the linear function."
+  },
+  {
+    "id": "gmat_q_037",
+    "exam": "GMAT",
+    "section": "Quantitative",
+    "question": "In the function y = 4x + 4, what is y when x = 6?",
+    "options": [
+      {
+        "label": "A",
+        "text": "30"
+      },
+      {
+        "label": "B",
+        "text": "26"
+      },
+      {
+        "label": "C",
+        "text": "28"
+      },
+      {
+        "label": "D",
+        "text": "8"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Substitute x into the linear function."
+  },
+  {
+    "id": "gmat_q_038",
+    "exam": "GMAT",
+    "section": "Quantitative",
+    "question": "In the function y = 5x + 5, what is y when x = 7?",
+    "options": [
+      {
+        "label": "A",
+        "text": "42"
+      },
+      {
+        "label": "B",
+        "text": "38"
+      },
+      {
+        "label": "C",
+        "text": "10"
+      },
+      {
+        "label": "D",
+        "text": "40"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Substitute x into the linear function."
+  },
+  {
+    "id": "gmat_q_039",
+    "exam": "GMAT",
+    "section": "Quantitative",
+    "question": "In the function y = 6x + 6, what is y when x = 8?",
+    "options": [
+      {
+        "label": "A",
+        "text": "54"
+      },
+      {
+        "label": "B",
+        "text": "56"
+      },
+      {
+        "label": "C",
+        "text": "52"
+      },
+      {
+        "label": "D",
+        "text": "12"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Substitute x into the linear function."
+  },
+  {
+    "id": "gmat_q_040",
+    "exam": "GMAT",
+    "section": "Quantitative",
+    "question": "In the function y = 7x + 2, what is y when x = 5?",
+    "options": [
+      {
+        "label": "A",
+        "text": "39"
+      },
+      {
+        "label": "B",
+        "text": "37"
+      },
+      {
+        "label": "C",
+        "text": "35"
+      },
+      {
+        "label": "D",
+        "text": "9"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Substitute x into the linear function."
+  },
+  {
+    "id": "gmat_q_041",
+    "exam": "GMAT",
+    "section": "Quantitative",
+    "question": "In the function y = 8x + 3, what is y when x = 6?",
+    "options": [
+      {
+        "label": "A",
+        "text": "53"
+      },
+      {
+        "label": "B",
+        "text": "49"
+      },
+      {
+        "label": "C",
+        "text": "51"
+      },
+      {
+        "label": "D",
+        "text": "11"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Substitute x into the linear function."
+  },
+  {
+    "id": "gmat_q_042",
+    "exam": "GMAT",
+    "section": "Quantitative",
+    "question": "In the function y = 3x + 4, what is y when x = 7?",
+    "options": [
+      {
+        "label": "A",
+        "text": "27"
+      },
+      {
+        "label": "B",
+        "text": "23"
+      },
+      {
+        "label": "C",
+        "text": "7"
+      },
+      {
+        "label": "D",
+        "text": "25"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Substitute x into the linear function."
+  },
+  {
+    "id": "gmat_q_043",
+    "exam": "GMAT",
+    "section": "Quantitative",
+    "question": "In the function y = 4x + 5, what is y when x = 8?",
+    "options": [
+      {
+        "label": "A",
+        "text": "37"
+      },
+      {
+        "label": "B",
+        "text": "39"
+      },
+      {
+        "label": "C",
+        "text": "35"
+      },
+      {
+        "label": "D",
+        "text": "9"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Substitute x into the linear function."
+  },
+  {
+    "id": "gmat_q_044",
+    "exam": "GMAT",
+    "section": "Quantitative",
+    "question": "In the function y = 5x + 6, what is y when x = 5?",
+    "options": [
+      {
+        "label": "A",
+        "text": "33"
+      },
+      {
+        "label": "B",
+        "text": "31"
+      },
+      {
+        "label": "C",
+        "text": "29"
+      },
+      {
+        "label": "D",
+        "text": "11"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Substitute x into the linear function."
+  },
+  {
+    "id": "gmat_q_045",
+    "exam": "GMAT",
+    "section": "Quantitative",
+    "question": "In the function y = 6x + 2, what is y when x = 6?",
+    "options": [
+      {
+        "label": "A",
+        "text": "40"
+      },
+      {
+        "label": "B",
+        "text": "36"
+      },
+      {
+        "label": "C",
+        "text": "38"
+      },
+      {
+        "label": "D",
+        "text": "8"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Substitute x into the linear function."
+  },
+  {
+    "id": "gmat_q_046",
+    "exam": "GMAT",
+    "section": "Quantitative",
+    "question": "In the function y = 7x + 3, what is y when x = 7?",
+    "options": [
+      {
+        "label": "A",
+        "text": "54"
+      },
+      {
+        "label": "B",
+        "text": "50"
+      },
+      {
+        "label": "C",
+        "text": "10"
+      },
+      {
+        "label": "D",
+        "text": "52"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Substitute x into the linear function."
+  },
+  {
+    "id": "gmat_q_047",
+    "exam": "GMAT",
+    "section": "Quantitative",
+    "question": "In the function y = 8x + 4, what is y when x = 8?",
+    "options": [
+      {
+        "label": "A",
+        "text": "68"
+      },
+      {
+        "label": "B",
+        "text": "70"
+      },
+      {
+        "label": "C",
+        "text": "66"
+      },
+      {
+        "label": "D",
+        "text": "12"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Substitute x into the linear function."
+  },
+  {
+    "id": "gmat_q_048",
+    "exam": "GMAT",
+    "section": "Quantitative",
+    "question": "In the function y = 3x + 5, what is y when x = 5?",
+    "options": [
+      {
+        "label": "A",
+        "text": "22"
+      },
+      {
+        "label": "B",
+        "text": "20"
+      },
+      {
+        "label": "C",
+        "text": "18"
+      },
+      {
+        "label": "D",
+        "text": "8"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Substitute x into the linear function."
+  },
+  {
+    "id": "gmat_q_049",
+    "exam": "GMAT",
+    "section": "Quantitative",
+    "question": "In the function y = 4x + 6, what is y when x = 6?",
+    "options": [
+      {
+        "label": "A",
+        "text": "32"
+      },
+      {
+        "label": "B",
+        "text": "28"
+      },
+      {
+        "label": "C",
+        "text": "30"
+      },
+      {
+        "label": "D",
+        "text": "10"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Substitute x into the linear function."
+  },
+  {
+    "id": "gmat_q_050",
+    "exam": "GMAT",
+    "section": "Quantitative",
+    "question": "In the function y = 5x + 2, what is y when x = 7?",
+    "options": [
+      {
+        "label": "A",
+        "text": "39"
+      },
+      {
+        "label": "B",
+        "text": "35"
+      },
+      {
+        "label": "C",
+        "text": "7"
+      },
+      {
+        "label": "D",
+        "text": "37"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Substitute x into the linear function."
+  },
+  {
+    "id": "gmat_q_051",
+    "exam": "GMAT",
+    "section": "Quantitative",
+    "question": "In the function y = 6x + 3, what is y when x = 8?",
+    "options": [
+      {
+        "label": "A",
+        "text": "51"
+      },
+      {
+        "label": "B",
+        "text": "53"
+      },
+      {
+        "label": "C",
+        "text": "49"
+      },
+      {
+        "label": "D",
+        "text": "9"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Substitute x into the linear function."
+  },
+  {
+    "id": "gmat_q_052",
+    "exam": "GMAT",
+    "section": "Quantitative",
+    "question": "In the function y = 7x + 4, what is y when x = 5?",
+    "options": [
+      {
+        "label": "A",
+        "text": "41"
+      },
+      {
+        "label": "B",
+        "text": "39"
+      },
+      {
+        "label": "C",
+        "text": "37"
+      },
+      {
+        "label": "D",
+        "text": "11"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Substitute x into the linear function."
+  },
+  {
+    "id": "gmat_q_053",
+    "exam": "GMAT",
+    "section": "Quantitative",
+    "question": "In the function y = 8x + 5, what is y when x = 6?",
+    "options": [
+      {
+        "label": "A",
+        "text": "55"
+      },
+      {
+        "label": "B",
+        "text": "51"
+      },
+      {
+        "label": "C",
+        "text": "53"
+      },
+      {
+        "label": "D",
+        "text": "13"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Substitute x into the linear function."
+  },
+  {
+    "id": "gmat_q_054",
+    "exam": "GMAT",
+    "section": "Quantitative",
+    "question": "In the function y = 3x + 6, what is y when x = 7?",
+    "options": [
+      {
+        "label": "A",
+        "text": "29"
+      },
+      {
+        "label": "B",
+        "text": "25"
+      },
+      {
+        "label": "C",
+        "text": "9"
+      },
+      {
+        "label": "D",
+        "text": "27"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Substitute x into the linear function."
+  },
+  {
+    "id": "gmat_q_055",
+    "exam": "GMAT",
+    "section": "Quantitative",
+    "question": "In the function y = 4x + 2, what is y when x = 8?",
+    "options": [
+      {
+        "label": "A",
+        "text": "34"
+      },
+      {
+        "label": "B",
+        "text": "36"
+      },
+      {
+        "label": "C",
+        "text": "32"
+      },
+      {
+        "label": "D",
+        "text": "6"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Substitute x into the linear function."
+  },
+  {
+    "id": "gmat_q_056",
+    "exam": "GMAT",
+    "section": "Quantitative",
+    "question": "In the function y = 5x + 3, what is y when x = 5?",
+    "options": [
+      {
+        "label": "A",
+        "text": "30"
+      },
+      {
+        "label": "B",
+        "text": "28"
+      },
+      {
+        "label": "C",
+        "text": "26"
+      },
+      {
+        "label": "D",
+        "text": "8"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Substitute x into the linear function."
+  },
+  {
+    "id": "gmat_q_057",
+    "exam": "GMAT",
+    "section": "Quantitative",
+    "question": "In the function y = 6x + 4, what is y when x = 6?",
+    "options": [
+      {
+        "label": "A",
+        "text": "42"
+      },
+      {
+        "label": "B",
+        "text": "38"
+      },
+      {
+        "label": "C",
+        "text": "40"
+      },
+      {
+        "label": "D",
+        "text": "10"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Substitute x into the linear function."
+  },
+  {
+    "id": "gmat_q_058",
+    "exam": "GMAT",
+    "section": "Quantitative",
+    "question": "In the function y = 7x + 5, what is y when x = 7?",
+    "options": [
+      {
+        "label": "A",
+        "text": "56"
+      },
+      {
+        "label": "B",
+        "text": "52"
+      },
+      {
+        "label": "C",
+        "text": "12"
+      },
+      {
+        "label": "D",
+        "text": "54"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Substitute x into the linear function."
+  },
+  {
+    "id": "gmat_q_059",
+    "exam": "GMAT",
+    "section": "Quantitative",
+    "question": "In the function y = 8x + 6, what is y when x = 8?",
+    "options": [
+      {
+        "label": "A",
+        "text": "70"
+      },
+      {
+        "label": "B",
+        "text": "72"
+      },
+      {
+        "label": "C",
+        "text": "68"
+      },
+      {
+        "label": "D",
+        "text": "14"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Substitute x into the linear function."
+  },
+  {
+    "id": "gmat_q_060",
+    "exam": "GMAT",
+    "section": "Quantitative",
+    "question": "In the function y = 3x + 2, what is y when x = 5?",
+    "options": [
+      {
+        "label": "A",
+        "text": "19"
+      },
+      {
+        "label": "B",
+        "text": "17"
+      },
+      {
+        "label": "C",
+        "text": "15"
+      },
+      {
+        "label": "D",
+        "text": "5"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Substitute x into the linear function."
+  },
+  {
+    "id": "gmat_q_061",
+    "exam": "GMAT",
+    "section": "Quantitative",
+    "question": "In the function y = 4x + 3, what is y when x = 6?",
+    "options": [
+      {
+        "label": "A",
+        "text": "29"
+      },
+      {
+        "label": "B",
+        "text": "25"
+      },
+      {
+        "label": "C",
+        "text": "27"
+      },
+      {
+        "label": "D",
+        "text": "7"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Substitute x into the linear function."
+  },
+  {
+    "id": "gmat_q_062",
+    "exam": "GMAT",
+    "section": "Quantitative",
+    "question": "In the function y = 5x + 4, what is y when x = 7?",
+    "options": [
+      {
+        "label": "A",
+        "text": "41"
+      },
+      {
+        "label": "B",
+        "text": "37"
+      },
+      {
+        "label": "C",
+        "text": "9"
+      },
+      {
+        "label": "D",
+        "text": "39"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Substitute x into the linear function."
+  },
+  {
+    "id": "gmat_q_063",
+    "exam": "GMAT",
+    "section": "Quantitative",
+    "question": "In the function y = 6x + 5, what is y when x = 8?",
+    "options": [
+      {
+        "label": "A",
+        "text": "53"
+      },
+      {
+        "label": "B",
+        "text": "55"
+      },
+      {
+        "label": "C",
+        "text": "51"
+      },
+      {
+        "label": "D",
+        "text": "11"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Substitute x into the linear function."
+  },
+  {
+    "id": "gmat_q_064",
+    "exam": "GMAT",
+    "section": "Quantitative",
+    "question": "In the function y = 7x + 6, what is y when x = 5?",
+    "options": [
+      {
+        "label": "A",
+        "text": "43"
+      },
+      {
+        "label": "B",
+        "text": "41"
+      },
+      {
+        "label": "C",
+        "text": "39"
+      },
+      {
+        "label": "D",
+        "text": "13"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Substitute x into the linear function."
+  },
+  {
+    "id": "gmat_q_065",
+    "exam": "GMAT",
+    "section": "Quantitative",
+    "question": "In the function y = 8x + 2, what is y when x = 6?",
+    "options": [
+      {
+        "label": "A",
+        "text": "52"
+      },
+      {
+        "label": "B",
+        "text": "48"
+      },
+      {
+        "label": "C",
+        "text": "50"
+      },
+      {
+        "label": "D",
+        "text": "10"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Substitute x into the linear function."
+  },
+  {
+    "id": "gmat_q_066",
+    "exam": "GMAT",
+    "section": "Quantitative",
+    "question": "In the function y = 3x + 3, what is y when x = 7?",
+    "options": [
+      {
+        "label": "A",
+        "text": "26"
+      },
+      {
+        "label": "B",
+        "text": "22"
+      },
+      {
+        "label": "C",
+        "text": "6"
+      },
+      {
+        "label": "D",
+        "text": "24"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Substitute x into the linear function."
+  },
+  {
+    "id": "gmat_q_067",
+    "exam": "GMAT",
+    "section": "Quantitative",
+    "question": "In the function y = 4x + 4, what is y when x = 8?",
+    "options": [
+      {
+        "label": "A",
+        "text": "36"
+      },
+      {
+        "label": "B",
+        "text": "38"
+      },
+      {
+        "label": "C",
+        "text": "34"
+      },
+      {
+        "label": "D",
+        "text": "8"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Substitute x into the linear function."
+  },
+  {
+    "id": "gmat_q_068",
+    "exam": "GMAT",
+    "section": "Quantitative",
+    "question": "In the function y = 5x + 5, what is y when x = 5?",
+    "options": [
+      {
+        "label": "A",
+        "text": "32"
+      },
+      {
+        "label": "B",
+        "text": "30"
+      },
+      {
+        "label": "C",
+        "text": "28"
+      },
+      {
+        "label": "D",
+        "text": "10"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Substitute x into the linear function."
+  },
+  {
+    "id": "gmat_q_069",
+    "exam": "GMAT",
+    "section": "Quantitative",
+    "question": "In the function y = 6x + 6, what is y when x = 6?",
+    "options": [
+      {
+        "label": "A",
+        "text": "44"
+      },
+      {
+        "label": "B",
+        "text": "40"
+      },
+      {
+        "label": "C",
+        "text": "42"
+      },
+      {
+        "label": "D",
+        "text": "12"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Substitute x into the linear function."
+  },
+  {
+    "id": "gmat_q_070",
+    "exam": "GMAT",
+    "section": "Quantitative",
+    "question": "In the function y = 7x + 2, what is y when x = 7?",
+    "options": [
+      {
+        "label": "A",
+        "text": "53"
+      },
+      {
+        "label": "B",
+        "text": "49"
+      },
+      {
+        "label": "C",
+        "text": "9"
+      },
+      {
+        "label": "D",
+        "text": "51"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Substitute x into the linear function."
+  },
+  {
+    "id": "gmat_q_071",
+    "exam": "GMAT",
+    "section": "Quantitative",
+    "question": "In the function y = 8x + 3, what is y when x = 8?",
+    "options": [
+      {
+        "label": "A",
+        "text": "67"
+      },
+      {
+        "label": "B",
+        "text": "69"
+      },
+      {
+        "label": "C",
+        "text": "65"
+      },
+      {
+        "label": "D",
+        "text": "11"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Substitute x into the linear function."
+  },
+  {
+    "id": "gmat_q_072",
+    "exam": "GMAT",
+    "section": "Quantitative",
+    "question": "In the function y = 3x + 4, what is y when x = 5?",
+    "options": [
+      {
+        "label": "A",
+        "text": "21"
+      },
+      {
+        "label": "B",
+        "text": "19"
+      },
+      {
+        "label": "C",
+        "text": "17"
+      },
+      {
+        "label": "D",
+        "text": "7"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Substitute x into the linear function."
+  },
+  {
+    "id": "gmat_q_073",
+    "exam": "GMAT",
+    "section": "Quantitative",
+    "question": "In the function y = 4x + 5, what is y when x = 6?",
+    "options": [
+      {
+        "label": "A",
+        "text": "31"
+      },
+      {
+        "label": "B",
+        "text": "27"
+      },
+      {
+        "label": "C",
+        "text": "29"
+      },
+      {
+        "label": "D",
+        "text": "9"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Substitute x into the linear function."
+  },
+  {
+    "id": "gmat_q_074",
+    "exam": "GMAT",
+    "section": "Quantitative",
+    "question": "In the function y = 5x + 6, what is y when x = 7?",
+    "options": [
+      {
+        "label": "A",
+        "text": "43"
+      },
+      {
+        "label": "B",
+        "text": "39"
+      },
+      {
+        "label": "C",
+        "text": "11"
+      },
+      {
+        "label": "D",
+        "text": "41"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Substitute x into the linear function."
+  },
+  {
+    "id": "gmat_q_075",
+    "exam": "GMAT",
+    "section": "Quantitative",
+    "question": "In the function y = 6x + 2, what is y when x = 8?",
+    "options": [
+      {
+        "label": "A",
+        "text": "50"
+      },
+      {
+        "label": "B",
+        "text": "52"
+      },
+      {
+        "label": "C",
+        "text": "48"
+      },
+      {
+        "label": "D",
+        "text": "8"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Substitute x into the linear function."
+  },
+  {
+    "id": "gmat_q_076",
+    "exam": "GMAT",
+    "section": "Quantitative",
+    "question": "In the function y = 7x + 3, what is y when x = 5?",
+    "options": [
+      {
+        "label": "A",
+        "text": "40"
+      },
+      {
+        "label": "B",
+        "text": "38"
+      },
+      {
+        "label": "C",
+        "text": "36"
+      },
+      {
+        "label": "D",
+        "text": "10"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Substitute x into the linear function."
+  },
+  {
+    "id": "gmat_q_077",
+    "exam": "GMAT",
+    "section": "Quantitative",
+    "question": "In the function y = 8x + 4, what is y when x = 6?",
+    "options": [
+      {
+        "label": "A",
+        "text": "54"
+      },
+      {
+        "label": "B",
+        "text": "50"
+      },
+      {
+        "label": "C",
+        "text": "52"
+      },
+      {
+        "label": "D",
+        "text": "12"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Substitute x into the linear function."
+  },
+  {
+    "id": "gmat_q_078",
+    "exam": "GMAT",
+    "section": "Quantitative",
+    "question": "In the function y = 3x + 5, what is y when x = 7?",
+    "options": [
+      {
+        "label": "A",
+        "text": "28"
+      },
+      {
+        "label": "B",
+        "text": "24"
+      },
+      {
+        "label": "C",
+        "text": "8"
+      },
+      {
+        "label": "D",
+        "text": "26"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Substitute x into the linear function."
+  },
+  {
+    "id": "gmat_q_079",
+    "exam": "GMAT",
+    "section": "Quantitative",
+    "question": "In the function y = 4x + 6, what is y when x = 8?",
+    "options": [
+      {
+        "label": "A",
+        "text": "38"
+      },
+      {
+        "label": "B",
+        "text": "40"
+      },
+      {
+        "label": "C",
+        "text": "36"
+      },
+      {
+        "label": "D",
+        "text": "10"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Substitute x into the linear function."
+  },
+  {
+    "id": "gmat_q_080",
+    "exam": "GMAT",
+    "section": "Quantitative",
+    "question": "In the function y = 5x + 2, what is y when x = 5?",
+    "options": [
+      {
+        "label": "A",
+        "text": "29"
+      },
+      {
+        "label": "B",
+        "text": "27"
+      },
+      {
+        "label": "C",
+        "text": "25"
+      },
+      {
+        "label": "D",
+        "text": "7"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Substitute x into the linear function."
+  },
+  {
+    "id": "gmat_q_081",
+    "exam": "GMAT",
+    "section": "Quantitative",
+    "question": "In the function y = 6x + 3, what is y when x = 6?",
+    "options": [
+      {
+        "label": "A",
+        "text": "41"
+      },
+      {
+        "label": "B",
+        "text": "37"
+      },
+      {
+        "label": "C",
+        "text": "39"
+      },
+      {
+        "label": "D",
+        "text": "9"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Substitute x into the linear function."
+  },
+  {
+    "id": "gmat_q_082",
+    "exam": "GMAT",
+    "section": "Quantitative",
+    "question": "In the function y = 7x + 4, what is y when x = 7?",
+    "options": [
+      {
+        "label": "A",
+        "text": "55"
+      },
+      {
+        "label": "B",
+        "text": "51"
+      },
+      {
+        "label": "C",
+        "text": "11"
+      },
+      {
+        "label": "D",
+        "text": "53"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Substitute x into the linear function."
+  },
+  {
+    "id": "gmat_q_083",
+    "exam": "GMAT",
+    "section": "Quantitative",
+    "question": "In the function y = 8x + 5, what is y when x = 8?",
+    "options": [
+      {
+        "label": "A",
+        "text": "69"
+      },
+      {
+        "label": "B",
+        "text": "71"
+      },
+      {
+        "label": "C",
+        "text": "67"
+      },
+      {
+        "label": "D",
+        "text": "13"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Substitute x into the linear function."
+  },
+  {
+    "id": "gmat_q_084",
+    "exam": "GMAT",
+    "section": "Quantitative",
+    "question": "In the function y = 3x + 6, what is y when x = 5?",
+    "options": [
+      {
+        "label": "A",
+        "text": "23"
+      },
+      {
+        "label": "B",
+        "text": "21"
+      },
+      {
+        "label": "C",
+        "text": "19"
+      },
+      {
+        "label": "D",
+        "text": "9"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Substitute x into the linear function."
+  },
+  {
+    "id": "gmat_q_085",
+    "exam": "GMAT",
+    "section": "Quantitative",
+    "question": "In the function y = 4x + 2, what is y when x = 6?",
+    "options": [
+      {
+        "label": "A",
+        "text": "28"
+      },
+      {
+        "label": "B",
+        "text": "24"
+      },
+      {
+        "label": "C",
+        "text": "26"
+      },
+      {
+        "label": "D",
+        "text": "6"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Substitute x into the linear function."
+  },
+  {
+    "id": "gmat_q_086",
+    "exam": "GMAT",
+    "section": "Quantitative",
+    "question": "In the function y = 5x + 3, what is y when x = 7?",
+    "options": [
+      {
+        "label": "A",
+        "text": "40"
+      },
+      {
+        "label": "B",
+        "text": "36"
+      },
+      {
+        "label": "C",
+        "text": "8"
+      },
+      {
+        "label": "D",
+        "text": "38"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Substitute x into the linear function."
+  },
+  {
+    "id": "gmat_q_087",
+    "exam": "GMAT",
+    "section": "Quantitative",
+    "question": "In the function y = 6x + 4, what is y when x = 8?",
+    "options": [
+      {
+        "label": "A",
+        "text": "52"
+      },
+      {
+        "label": "B",
+        "text": "54"
+      },
+      {
+        "label": "C",
+        "text": "50"
+      },
+      {
+        "label": "D",
+        "text": "10"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Substitute x into the linear function."
+  },
+  {
+    "id": "gmat_q_088",
+    "exam": "GMAT",
+    "section": "Quantitative",
+    "question": "In the function y = 7x + 5, what is y when x = 5?",
+    "options": [
+      {
+        "label": "A",
+        "text": "42"
+      },
+      {
+        "label": "B",
+        "text": "40"
+      },
+      {
+        "label": "C",
+        "text": "38"
+      },
+      {
+        "label": "D",
+        "text": "12"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Substitute x into the linear function."
+  },
+  {
+    "id": "gmat_q_089",
+    "exam": "GMAT",
+    "section": "Quantitative",
+    "question": "In the function y = 8x + 6, what is y when x = 6?",
+    "options": [
+      {
+        "label": "A",
+        "text": "56"
+      },
+      {
+        "label": "B",
+        "text": "52"
+      },
+      {
+        "label": "C",
+        "text": "54"
+      },
+      {
+        "label": "D",
+        "text": "14"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Substitute x into the linear function."
+  },
+  {
+    "id": "gmat_q_090",
+    "exam": "GMAT",
+    "section": "Quantitative",
+    "question": "In the function y = 3x + 2, what is y when x = 7?",
+    "options": [
+      {
+        "label": "A",
+        "text": "25"
+      },
+      {
+        "label": "B",
+        "text": "21"
+      },
+      {
+        "label": "C",
+        "text": "5"
+      },
+      {
+        "label": "D",
+        "text": "23"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Substitute x into the linear function."
+  },
+  {
+    "id": "gmat_q_091",
+    "exam": "GMAT",
+    "section": "Quantitative",
+    "question": "In the function y = 4x + 3, what is y when x = 8?",
+    "options": [
+      {
+        "label": "A",
+        "text": "35"
+      },
+      {
+        "label": "B",
+        "text": "37"
+      },
+      {
+        "label": "C",
+        "text": "33"
+      },
+      {
+        "label": "D",
+        "text": "7"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Substitute x into the linear function."
+  },
+  {
+    "id": "gmat_q_092",
+    "exam": "GMAT",
+    "section": "Quantitative",
+    "question": "In the function y = 5x + 4, what is y when x = 5?",
+    "options": [
+      {
+        "label": "A",
+        "text": "31"
+      },
+      {
+        "label": "B",
+        "text": "29"
+      },
+      {
+        "label": "C",
+        "text": "27"
+      },
+      {
+        "label": "D",
+        "text": "9"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Substitute x into the linear function."
+  },
+  {
+    "id": "gmat_q_093",
+    "exam": "GMAT",
+    "section": "Quantitative",
+    "question": "In the function y = 6x + 5, what is y when x = 6?",
+    "options": [
+      {
+        "label": "A",
+        "text": "43"
+      },
+      {
+        "label": "B",
+        "text": "39"
+      },
+      {
+        "label": "C",
+        "text": "41"
+      },
+      {
+        "label": "D",
+        "text": "11"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Substitute x into the linear function."
+  },
+  {
+    "id": "gmat_q_094",
+    "exam": "GMAT",
+    "section": "Quantitative",
+    "question": "In the function y = 7x + 6, what is y when x = 7?",
+    "options": [
+      {
+        "label": "A",
+        "text": "57"
+      },
+      {
+        "label": "B",
+        "text": "53"
+      },
+      {
+        "label": "C",
+        "text": "13"
+      },
+      {
+        "label": "D",
+        "text": "55"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Substitute x into the linear function."
+  },
+  {
+    "id": "gmat_q_095",
+    "exam": "GMAT",
+    "section": "Quantitative",
+    "question": "In the function y = 8x + 2, what is y when x = 8?",
+    "options": [
+      {
+        "label": "A",
+        "text": "66"
+      },
+      {
+        "label": "B",
+        "text": "68"
+      },
+      {
+        "label": "C",
+        "text": "64"
+      },
+      {
+        "label": "D",
+        "text": "10"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Substitute x into the linear function."
+  },
+  {
+    "id": "gmat_q_096",
+    "exam": "GMAT",
+    "section": "Quantitative",
+    "question": "In the function y = 3x + 3, what is y when x = 5?",
+    "options": [
+      {
+        "label": "A",
+        "text": "20"
+      },
+      {
+        "label": "B",
+        "text": "18"
+      },
+      {
+        "label": "C",
+        "text": "16"
+      },
+      {
+        "label": "D",
+        "text": "6"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Substitute x into the linear function."
+  },
+  {
+    "id": "gmat_q_097",
+    "exam": "GMAT",
+    "section": "Quantitative",
+    "question": "In the function y = 4x + 4, what is y when x = 6?",
+    "options": [
+      {
+        "label": "A",
+        "text": "30"
+      },
+      {
+        "label": "B",
+        "text": "26"
+      },
+      {
+        "label": "C",
+        "text": "28"
+      },
+      {
+        "label": "D",
+        "text": "8"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Substitute x into the linear function."
+  },
+  {
+    "id": "gmat_q_098",
+    "exam": "GMAT",
+    "section": "Quantitative",
+    "question": "In the function y = 5x + 5, what is y when x = 7?",
+    "options": [
+      {
+        "label": "A",
+        "text": "42"
+      },
+      {
+        "label": "B",
+        "text": "38"
+      },
+      {
+        "label": "C",
+        "text": "10"
+      },
+      {
+        "label": "D",
+        "text": "40"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Substitute x into the linear function."
+  },
+  {
+    "id": "gmat_q_099",
+    "exam": "GMAT",
+    "section": "Quantitative",
+    "question": "In the function y = 6x + 6, what is y when x = 8?",
+    "options": [
+      {
+        "label": "A",
+        "text": "54"
+      },
+      {
+        "label": "B",
+        "text": "56"
+      },
+      {
+        "label": "C",
+        "text": "52"
+      },
+      {
+        "label": "D",
+        "text": "12"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Substitute x into the linear function."
+  },
+  {
+    "id": "gmat_q_100",
+    "exam": "GMAT",
+    "section": "Quantitative",
+    "question": "In the function y = 7x + 2, what is y when x = 5?",
+    "options": [
+      {
+        "label": "A",
+        "text": "39"
+      },
+      {
+        "label": "B",
+        "text": "37"
+      },
+      {
+        "label": "C",
+        "text": "35"
+      },
+      {
+        "label": "D",
+        "text": "9"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Substitute x into the linear function."
+  },
+  {
+    "id": "gmat_ds_001",
+    "exam": "GMAT",
+    "section": "Data Interpretation",
+    "question": "A company increased sales by 20% from 101 units. What is the increase in units?",
+    "options": [
+      {
+        "label": "A",
+        "text": "101"
+      },
+      {
+        "label": "B",
+        "text": "20"
+      },
+      {
+        "label": "C",
+        "text": "30"
+      },
+      {
+        "label": "D",
+        "text": "20"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Multiply the original value by the percent increase."
+  },
+  {
+    "id": "gmat_ds_002",
+    "exam": "GMAT",
+    "section": "Data Interpretation",
+    "question": "A company increased sales by 30% from 102 units. What is the increase in units?",
+    "options": [
+      {
+        "label": "A",
+        "text": "30"
+      },
+      {
+        "label": "B",
+        "text": "102"
+      },
+      {
+        "label": "C",
+        "text": "30"
+      },
+      {
+        "label": "D",
+        "text": "40"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Multiply the original value by the percent increase."
+  },
+  {
+    "id": "gmat_ds_003",
+    "exam": "GMAT",
+    "section": "Data Interpretation",
+    "question": "A company increased sales by 40% from 103 units. What is the increase in units?",
+    "options": [
+      {
+        "label": "A",
+        "text": "103"
+      },
+      {
+        "label": "B",
+        "text": "41"
+      },
+      {
+        "label": "C",
+        "text": "40"
+      },
+      {
+        "label": "D",
+        "text": "51"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Multiply the original value by the percent increase."
+  },
+  {
+    "id": "gmat_ds_004",
+    "exam": "GMAT",
+    "section": "Data Interpretation",
+    "question": "A company increased sales by 50% from 104 units. What is the increase in units?",
+    "options": [
+      {
+        "label": "A",
+        "text": "104"
+      },
+      {
+        "label": "B",
+        "text": "50"
+      },
+      {
+        "label": "C",
+        "text": "52"
+      },
+      {
+        "label": "D",
+        "text": "62"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Multiply the original value by the percent increase."
+  },
+  {
+    "id": "gmat_ds_005",
+    "exam": "GMAT",
+    "section": "Data Interpretation",
+    "question": "A company increased sales by 10% from 105 units. What is the increase in units?",
+    "options": [
+      {
+        "label": "A",
+        "text": "105"
+      },
+      {
+        "label": "B",
+        "text": "10"
+      },
+      {
+        "label": "C",
+        "text": "20"
+      },
+      {
+        "label": "D",
+        "text": "10"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Multiply the original value by the percent increase."
+  },
+  {
+    "id": "gmat_ds_006",
+    "exam": "GMAT",
+    "section": "Data Interpretation",
+    "question": "A company increased sales by 20% from 106 units. What is the increase in units?",
+    "options": [
+      {
+        "label": "A",
+        "text": "21"
+      },
+      {
+        "label": "B",
+        "text": "106"
+      },
+      {
+        "label": "C",
+        "text": "20"
+      },
+      {
+        "label": "D",
+        "text": "31"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Multiply the original value by the percent increase."
+  },
+  {
+    "id": "gmat_ds_007",
+    "exam": "GMAT",
+    "section": "Data Interpretation",
+    "question": "A company increased sales by 30% from 107 units. What is the increase in units?",
+    "options": [
+      {
+        "label": "A",
+        "text": "107"
+      },
+      {
+        "label": "B",
+        "text": "32"
+      },
+      {
+        "label": "C",
+        "text": "30"
+      },
+      {
+        "label": "D",
+        "text": "42"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Multiply the original value by the percent increase."
+  },
+  {
+    "id": "gmat_ds_008",
+    "exam": "GMAT",
+    "section": "Data Interpretation",
+    "question": "A company increased sales by 40% from 108 units. What is the increase in units?",
+    "options": [
+      {
+        "label": "A",
+        "text": "108"
+      },
+      {
+        "label": "B",
+        "text": "40"
+      },
+      {
+        "label": "C",
+        "text": "43"
+      },
+      {
+        "label": "D",
+        "text": "53"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Multiply the original value by the percent increase."
+  },
+  {
+    "id": "gmat_ds_009",
+    "exam": "GMAT",
+    "section": "Data Interpretation",
+    "question": "A company increased sales by 50% from 109 units. What is the increase in units?",
+    "options": [
+      {
+        "label": "A",
+        "text": "109"
+      },
+      {
+        "label": "B",
+        "text": "50"
+      },
+      {
+        "label": "C",
+        "text": "64"
+      },
+      {
+        "label": "D",
+        "text": "54"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Multiply the original value by the percent increase."
+  },
+  {
+    "id": "gmat_ds_010",
+    "exam": "GMAT",
+    "section": "Data Interpretation",
+    "question": "A company increased sales by 10% from 110 units. What is the increase in units?",
+    "options": [
+      {
+        "label": "A",
+        "text": "11"
+      },
+      {
+        "label": "B",
+        "text": "110"
+      },
+      {
+        "label": "C",
+        "text": "10"
+      },
+      {
+        "label": "D",
+        "text": "21"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Multiply the original value by the percent increase."
+  },
+  {
+    "id": "gmat_ds_011",
+    "exam": "GMAT",
+    "section": "Data Interpretation",
+    "question": "A company increased sales by 20% from 111 units. What is the increase in units?",
+    "options": [
+      {
+        "label": "A",
+        "text": "111"
+      },
+      {
+        "label": "B",
+        "text": "22"
+      },
+      {
+        "label": "C",
+        "text": "20"
+      },
+      {
+        "label": "D",
+        "text": "32"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Multiply the original value by the percent increase."
+  },
+  {
+    "id": "gmat_ds_012",
+    "exam": "GMAT",
+    "section": "Data Interpretation",
+    "question": "A company increased sales by 30% from 112 units. What is the increase in units?",
+    "options": [
+      {
+        "label": "A",
+        "text": "112"
+      },
+      {
+        "label": "B",
+        "text": "30"
+      },
+      {
+        "label": "C",
+        "text": "33"
+      },
+      {
+        "label": "D",
+        "text": "43"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Multiply the original value by the percent increase."
+  },
+  {
+    "id": "gmat_ds_013",
+    "exam": "GMAT",
+    "section": "Data Interpretation",
+    "question": "A company increased sales by 40% from 113 units. What is the increase in units?",
+    "options": [
+      {
+        "label": "A",
+        "text": "113"
+      },
+      {
+        "label": "B",
+        "text": "40"
+      },
+      {
+        "label": "C",
+        "text": "55"
+      },
+      {
+        "label": "D",
+        "text": "45"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Multiply the original value by the percent increase."
+  },
+  {
+    "id": "gmat_ds_014",
+    "exam": "GMAT",
+    "section": "Data Interpretation",
+    "question": "A company increased sales by 50% from 114 units. What is the increase in units?",
+    "options": [
+      {
+        "label": "A",
+        "text": "57"
+      },
+      {
+        "label": "B",
+        "text": "114"
+      },
+      {
+        "label": "C",
+        "text": "50"
+      },
+      {
+        "label": "D",
+        "text": "67"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Multiply the original value by the percent increase."
+  },
+  {
+    "id": "gmat_ds_015",
+    "exam": "GMAT",
+    "section": "Data Interpretation",
+    "question": "A company increased sales by 10% from 115 units. What is the increase in units?",
+    "options": [
+      {
+        "label": "A",
+        "text": "115"
+      },
+      {
+        "label": "B",
+        "text": "11"
+      },
+      {
+        "label": "C",
+        "text": "10"
+      },
+      {
+        "label": "D",
+        "text": "21"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Multiply the original value by the percent increase."
+  },
+  {
+    "id": "gmat_ds_016",
+    "exam": "GMAT",
+    "section": "Data Interpretation",
+    "question": "A company increased sales by 20% from 116 units. What is the increase in units?",
+    "options": [
+      {
+        "label": "A",
+        "text": "116"
+      },
+      {
+        "label": "B",
+        "text": "20"
+      },
+      {
+        "label": "C",
+        "text": "23"
+      },
+      {
+        "label": "D",
+        "text": "33"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Multiply the original value by the percent increase."
+  },
+  {
+    "id": "gmat_ds_017",
+    "exam": "GMAT",
+    "section": "Data Interpretation",
+    "question": "A company increased sales by 30% from 117 units. What is the increase in units?",
+    "options": [
+      {
+        "label": "A",
+        "text": "117"
+      },
+      {
+        "label": "B",
+        "text": "30"
+      },
+      {
+        "label": "C",
+        "text": "45"
+      },
+      {
+        "label": "D",
+        "text": "35"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Multiply the original value by the percent increase."
+  },
+  {
+    "id": "gmat_ds_018",
+    "exam": "GMAT",
+    "section": "Data Interpretation",
+    "question": "A company increased sales by 40% from 118 units. What is the increase in units?",
+    "options": [
+      {
+        "label": "A",
+        "text": "47"
+      },
+      {
+        "label": "B",
+        "text": "118"
+      },
+      {
+        "label": "C",
+        "text": "40"
+      },
+      {
+        "label": "D",
+        "text": "57"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Multiply the original value by the percent increase."
+  },
+  {
+    "id": "gmat_ds_019",
+    "exam": "GMAT",
+    "section": "Data Interpretation",
+    "question": "A company increased sales by 50% from 119 units. What is the increase in units?",
+    "options": [
+      {
+        "label": "A",
+        "text": "119"
+      },
+      {
+        "label": "B",
+        "text": "59"
+      },
+      {
+        "label": "C",
+        "text": "50"
+      },
+      {
+        "label": "D",
+        "text": "69"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Multiply the original value by the percent increase."
+  },
+  {
+    "id": "gmat_ds_020",
+    "exam": "GMAT",
+    "section": "Data Interpretation",
+    "question": "A company increased sales by 10% from 120 units. What is the increase in units?",
+    "options": [
+      {
+        "label": "A",
+        "text": "120"
+      },
+      {
+        "label": "B",
+        "text": "10"
+      },
+      {
+        "label": "C",
+        "text": "12"
+      },
+      {
+        "label": "D",
+        "text": "22"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Multiply the original value by the percent increase."
+  },
+  {
+    "id": "gmat_ds_021",
+    "exam": "GMAT",
+    "section": "Data Interpretation",
+    "question": "A company increased sales by 20% from 121 units. What is the increase in units?",
+    "options": [
+      {
+        "label": "A",
+        "text": "121"
+      },
+      {
+        "label": "B",
+        "text": "20"
+      },
+      {
+        "label": "C",
+        "text": "34"
+      },
+      {
+        "label": "D",
+        "text": "24"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Multiply the original value by the percent increase."
+  },
+  {
+    "id": "gmat_ds_022",
+    "exam": "GMAT",
+    "section": "Data Interpretation",
+    "question": "A company increased sales by 30% from 122 units. What is the increase in units?",
+    "options": [
+      {
+        "label": "A",
+        "text": "36"
+      },
+      {
+        "label": "B",
+        "text": "122"
+      },
+      {
+        "label": "C",
+        "text": "30"
+      },
+      {
+        "label": "D",
+        "text": "46"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Multiply the original value by the percent increase."
+  },
+  {
+    "id": "gmat_ds_023",
+    "exam": "GMAT",
+    "section": "Data Interpretation",
+    "question": "A company increased sales by 40% from 123 units. What is the increase in units?",
+    "options": [
+      {
+        "label": "A",
+        "text": "123"
+      },
+      {
+        "label": "B",
+        "text": "49"
+      },
+      {
+        "label": "C",
+        "text": "40"
+      },
+      {
+        "label": "D",
+        "text": "59"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Multiply the original value by the percent increase."
+  },
+  {
+    "id": "gmat_ds_024",
+    "exam": "GMAT",
+    "section": "Data Interpretation",
+    "question": "A company increased sales by 50% from 124 units. What is the increase in units?",
+    "options": [
+      {
+        "label": "A",
+        "text": "124"
+      },
+      {
+        "label": "B",
+        "text": "50"
+      },
+      {
+        "label": "C",
+        "text": "62"
+      },
+      {
+        "label": "D",
+        "text": "72"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Multiply the original value by the percent increase."
+  },
+  {
+    "id": "gmat_ds_025",
+    "exam": "GMAT",
+    "section": "Data Interpretation",
+    "question": "A company increased sales by 10% from 125 units. What is the increase in units?",
+    "options": [
+      {
+        "label": "A",
+        "text": "125"
+      },
+      {
+        "label": "B",
+        "text": "10"
+      },
+      {
+        "label": "C",
+        "text": "22"
+      },
+      {
+        "label": "D",
+        "text": "12"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Multiply the original value by the percent increase."
+  },
+  {
+    "id": "gmat_ds_026",
+    "exam": "GMAT",
+    "section": "Data Interpretation",
+    "question": "A company increased sales by 20% from 126 units. What is the increase in units?",
+    "options": [
+      {
+        "label": "A",
+        "text": "25"
+      },
+      {
+        "label": "B",
+        "text": "126"
+      },
+      {
+        "label": "C",
+        "text": "20"
+      },
+      {
+        "label": "D",
+        "text": "35"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Multiply the original value by the percent increase."
+  },
+  {
+    "id": "gmat_ds_027",
+    "exam": "GMAT",
+    "section": "Data Interpretation",
+    "question": "A company increased sales by 30% from 127 units. What is the increase in units?",
+    "options": [
+      {
+        "label": "A",
+        "text": "127"
+      },
+      {
+        "label": "B",
+        "text": "38"
+      },
+      {
+        "label": "C",
+        "text": "30"
+      },
+      {
+        "label": "D",
+        "text": "48"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Multiply the original value by the percent increase."
+  },
+  {
+    "id": "gmat_ds_028",
+    "exam": "GMAT",
+    "section": "Data Interpretation",
+    "question": "A company increased sales by 40% from 128 units. What is the increase in units?",
+    "options": [
+      {
+        "label": "A",
+        "text": "128"
+      },
+      {
+        "label": "B",
+        "text": "40"
+      },
+      {
+        "label": "C",
+        "text": "51"
+      },
+      {
+        "label": "D",
+        "text": "61"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Multiply the original value by the percent increase."
+  },
+  {
+    "id": "gmat_ds_029",
+    "exam": "GMAT",
+    "section": "Data Interpretation",
+    "question": "A company increased sales by 50% from 129 units. What is the increase in units?",
+    "options": [
+      {
+        "label": "A",
+        "text": "129"
+      },
+      {
+        "label": "B",
+        "text": "50"
+      },
+      {
+        "label": "C",
+        "text": "74"
+      },
+      {
+        "label": "D",
+        "text": "64"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Multiply the original value by the percent increase."
+  },
+  {
+    "id": "gmat_ds_030",
+    "exam": "GMAT",
+    "section": "Data Interpretation",
+    "question": "A company increased sales by 10% from 130 units. What is the increase in units?",
+    "options": [
+      {
+        "label": "A",
+        "text": "13"
+      },
+      {
+        "label": "B",
+        "text": "130"
+      },
+      {
+        "label": "C",
+        "text": "10"
+      },
+      {
+        "label": "D",
+        "text": "23"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Multiply the original value by the percent increase."
+  },
+  {
+    "id": "gmat_ds_031",
+    "exam": "GMAT",
+    "section": "Data Interpretation",
+    "question": "A company increased sales by 20% from 131 units. What is the increase in units?",
+    "options": [
+      {
+        "label": "A",
+        "text": "131"
+      },
+      {
+        "label": "B",
+        "text": "26"
+      },
+      {
+        "label": "C",
+        "text": "20"
+      },
+      {
+        "label": "D",
+        "text": "36"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Multiply the original value by the percent increase."
+  },
+  {
+    "id": "gmat_ds_032",
+    "exam": "GMAT",
+    "section": "Data Interpretation",
+    "question": "A company increased sales by 30% from 132 units. What is the increase in units?",
+    "options": [
+      {
+        "label": "A",
+        "text": "132"
+      },
+      {
+        "label": "B",
+        "text": "30"
+      },
+      {
+        "label": "C",
+        "text": "39"
+      },
+      {
+        "label": "D",
+        "text": "49"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Multiply the original value by the percent increase."
+  },
+  {
+    "id": "gmat_ds_033",
+    "exam": "GMAT",
+    "section": "Data Interpretation",
+    "question": "A company increased sales by 40% from 133 units. What is the increase in units?",
+    "options": [
+      {
+        "label": "A",
+        "text": "133"
+      },
+      {
+        "label": "B",
+        "text": "40"
+      },
+      {
+        "label": "C",
+        "text": "63"
+      },
+      {
+        "label": "D",
+        "text": "53"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Multiply the original value by the percent increase."
+  },
+  {
+    "id": "gmat_ds_034",
+    "exam": "GMAT",
+    "section": "Data Interpretation",
+    "question": "A company increased sales by 50% from 134 units. What is the increase in units?",
+    "options": [
+      {
+        "label": "A",
+        "text": "67"
+      },
+      {
+        "label": "B",
+        "text": "134"
+      },
+      {
+        "label": "C",
+        "text": "50"
+      },
+      {
+        "label": "D",
+        "text": "77"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Multiply the original value by the percent increase."
+  },
+  {
+    "id": "gmat_ds_035",
+    "exam": "GMAT",
+    "section": "Data Interpretation",
+    "question": "A company increased sales by 10% from 135 units. What is the increase in units?",
+    "options": [
+      {
+        "label": "A",
+        "text": "135"
+      },
+      {
+        "label": "B",
+        "text": "13"
+      },
+      {
+        "label": "C",
+        "text": "10"
+      },
+      {
+        "label": "D",
+        "text": "23"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Multiply the original value by the percent increase."
+  },
+  {
+    "id": "gmat_ds_036",
+    "exam": "GMAT",
+    "section": "Data Interpretation",
+    "question": "A company increased sales by 20% from 136 units. What is the increase in units?",
+    "options": [
+      {
+        "label": "A",
+        "text": "136"
+      },
+      {
+        "label": "B",
+        "text": "20"
+      },
+      {
+        "label": "C",
+        "text": "27"
+      },
+      {
+        "label": "D",
+        "text": "37"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Multiply the original value by the percent increase."
+  },
+  {
+    "id": "gmat_ds_037",
+    "exam": "GMAT",
+    "section": "Data Interpretation",
+    "question": "A company increased sales by 30% from 137 units. What is the increase in units?",
+    "options": [
+      {
+        "label": "A",
+        "text": "137"
+      },
+      {
+        "label": "B",
+        "text": "30"
+      },
+      {
+        "label": "C",
+        "text": "51"
+      },
+      {
+        "label": "D",
+        "text": "41"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Multiply the original value by the percent increase."
+  },
+  {
+    "id": "gmat_ds_038",
+    "exam": "GMAT",
+    "section": "Data Interpretation",
+    "question": "A company increased sales by 40% from 138 units. What is the increase in units?",
+    "options": [
+      {
+        "label": "A",
+        "text": "55"
+      },
+      {
+        "label": "B",
+        "text": "138"
+      },
+      {
+        "label": "C",
+        "text": "40"
+      },
+      {
+        "label": "D",
+        "text": "65"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Multiply the original value by the percent increase."
+  },
+  {
+    "id": "gmat_ds_039",
+    "exam": "GMAT",
+    "section": "Data Interpretation",
+    "question": "A company increased sales by 50% from 139 units. What is the increase in units?",
+    "options": [
+      {
+        "label": "A",
+        "text": "139"
+      },
+      {
+        "label": "B",
+        "text": "69"
+      },
+      {
+        "label": "C",
+        "text": "50"
+      },
+      {
+        "label": "D",
+        "text": "79"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Multiply the original value by the percent increase."
+  },
+  {
+    "id": "gmat_ds_040",
+    "exam": "GMAT",
+    "section": "Data Interpretation",
+    "question": "A company increased sales by 10% from 100 units. What is the increase in units?",
+    "options": [
+      {
+        "label": "A",
+        "text": "100"
+      },
+      {
+        "label": "B",
+        "text": "10"
+      },
+      {
+        "label": "C",
+        "text": "10"
+      },
+      {
+        "label": "D",
+        "text": "20"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Multiply the original value by the percent increase."
+  },
+  {
+    "id": "gmat_ds_041",
+    "exam": "GMAT",
+    "section": "Data Interpretation",
+    "question": "A company increased sales by 20% from 101 units. What is the increase in units?",
+    "options": [
+      {
+        "label": "A",
+        "text": "101"
+      },
+      {
+        "label": "B",
+        "text": "20"
+      },
+      {
+        "label": "C",
+        "text": "30"
+      },
+      {
+        "label": "D",
+        "text": "20"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Multiply the original value by the percent increase."
+  },
+  {
+    "id": "gmat_ds_042",
+    "exam": "GMAT",
+    "section": "Data Interpretation",
+    "question": "A company increased sales by 30% from 102 units. What is the increase in units?",
+    "options": [
+      {
+        "label": "A",
+        "text": "30"
+      },
+      {
+        "label": "B",
+        "text": "102"
+      },
+      {
+        "label": "C",
+        "text": "30"
+      },
+      {
+        "label": "D",
+        "text": "40"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Multiply the original value by the percent increase."
+  },
+  {
+    "id": "gmat_ds_043",
+    "exam": "GMAT",
+    "section": "Data Interpretation",
+    "question": "A company increased sales by 40% from 103 units. What is the increase in units?",
+    "options": [
+      {
+        "label": "A",
+        "text": "103"
+      },
+      {
+        "label": "B",
+        "text": "41"
+      },
+      {
+        "label": "C",
+        "text": "40"
+      },
+      {
+        "label": "D",
+        "text": "51"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Multiply the original value by the percent increase."
+  },
+  {
+    "id": "gmat_ds_044",
+    "exam": "GMAT",
+    "section": "Data Interpretation",
+    "question": "A company increased sales by 50% from 104 units. What is the increase in units?",
+    "options": [
+      {
+        "label": "A",
+        "text": "104"
+      },
+      {
+        "label": "B",
+        "text": "50"
+      },
+      {
+        "label": "C",
+        "text": "52"
+      },
+      {
+        "label": "D",
+        "text": "62"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Multiply the original value by the percent increase."
+  },
+  {
+    "id": "gmat_ds_045",
+    "exam": "GMAT",
+    "section": "Data Interpretation",
+    "question": "A company increased sales by 10% from 105 units. What is the increase in units?",
+    "options": [
+      {
+        "label": "A",
+        "text": "105"
+      },
+      {
+        "label": "B",
+        "text": "10"
+      },
+      {
+        "label": "C",
+        "text": "20"
+      },
+      {
+        "label": "D",
+        "text": "10"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Multiply the original value by the percent increase."
+  },
+  {
+    "id": "gmat_ds_046",
+    "exam": "GMAT",
+    "section": "Data Interpretation",
+    "question": "A company increased sales by 20% from 106 units. What is the increase in units?",
+    "options": [
+      {
+        "label": "A",
+        "text": "21"
+      },
+      {
+        "label": "B",
+        "text": "106"
+      },
+      {
+        "label": "C",
+        "text": "20"
+      },
+      {
+        "label": "D",
+        "text": "31"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Multiply the original value by the percent increase."
+  },
+  {
+    "id": "gmat_ds_047",
+    "exam": "GMAT",
+    "section": "Data Interpretation",
+    "question": "A company increased sales by 30% from 107 units. What is the increase in units?",
+    "options": [
+      {
+        "label": "A",
+        "text": "107"
+      },
+      {
+        "label": "B",
+        "text": "32"
+      },
+      {
+        "label": "C",
+        "text": "30"
+      },
+      {
+        "label": "D",
+        "text": "42"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Multiply the original value by the percent increase."
+  },
+  {
+    "id": "gmat_ds_048",
+    "exam": "GMAT",
+    "section": "Data Interpretation",
+    "question": "A company increased sales by 40% from 108 units. What is the increase in units?",
+    "options": [
+      {
+        "label": "A",
+        "text": "108"
+      },
+      {
+        "label": "B",
+        "text": "40"
+      },
+      {
+        "label": "C",
+        "text": "43"
+      },
+      {
+        "label": "D",
+        "text": "53"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Multiply the original value by the percent increase."
+  },
+  {
+    "id": "gmat_ds_049",
+    "exam": "GMAT",
+    "section": "Data Interpretation",
+    "question": "A company increased sales by 50% from 109 units. What is the increase in units?",
+    "options": [
+      {
+        "label": "A",
+        "text": "109"
+      },
+      {
+        "label": "B",
+        "text": "50"
+      },
+      {
+        "label": "C",
+        "text": "64"
+      },
+      {
+        "label": "D",
+        "text": "54"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Multiply the original value by the percent increase."
+  },
+  {
+    "id": "gmat_ds_050",
+    "exam": "GMAT",
+    "section": "Data Interpretation",
+    "question": "A company increased sales by 10% from 110 units. What is the increase in units?",
+    "options": [
+      {
+        "label": "A",
+        "text": "11"
+      },
+      {
+        "label": "B",
+        "text": "110"
+      },
+      {
+        "label": "C",
+        "text": "10"
+      },
+      {
+        "label": "D",
+        "text": "21"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Multiply the original value by the percent increase."
+  },
+  {
+    "id": "gmat_ds_051",
+    "exam": "GMAT",
+    "section": "Data Interpretation",
+    "question": "A company increased sales by 20% from 111 units. What is the increase in units?",
+    "options": [
+      {
+        "label": "A",
+        "text": "111"
+      },
+      {
+        "label": "B",
+        "text": "22"
+      },
+      {
+        "label": "C",
+        "text": "20"
+      },
+      {
+        "label": "D",
+        "text": "32"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Multiply the original value by the percent increase."
+  },
+  {
+    "id": "gmat_ds_052",
+    "exam": "GMAT",
+    "section": "Data Interpretation",
+    "question": "A company increased sales by 30% from 112 units. What is the increase in units?",
+    "options": [
+      {
+        "label": "A",
+        "text": "112"
+      },
+      {
+        "label": "B",
+        "text": "30"
+      },
+      {
+        "label": "C",
+        "text": "33"
+      },
+      {
+        "label": "D",
+        "text": "43"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Multiply the original value by the percent increase."
+  },
+  {
+    "id": "gmat_ds_053",
+    "exam": "GMAT",
+    "section": "Data Interpretation",
+    "question": "A company increased sales by 40% from 113 units. What is the increase in units?",
+    "options": [
+      {
+        "label": "A",
+        "text": "113"
+      },
+      {
+        "label": "B",
+        "text": "40"
+      },
+      {
+        "label": "C",
+        "text": "55"
+      },
+      {
+        "label": "D",
+        "text": "45"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Multiply the original value by the percent increase."
+  },
+  {
+    "id": "gmat_ds_054",
+    "exam": "GMAT",
+    "section": "Data Interpretation",
+    "question": "A company increased sales by 50% from 114 units. What is the increase in units?",
+    "options": [
+      {
+        "label": "A",
+        "text": "57"
+      },
+      {
+        "label": "B",
+        "text": "114"
+      },
+      {
+        "label": "C",
+        "text": "50"
+      },
+      {
+        "label": "D",
+        "text": "67"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Multiply the original value by the percent increase."
+  },
+  {
+    "id": "gmat_ds_055",
+    "exam": "GMAT",
+    "section": "Data Interpretation",
+    "question": "A company increased sales by 10% from 115 units. What is the increase in units?",
+    "options": [
+      {
+        "label": "A",
+        "text": "115"
+      },
+      {
+        "label": "B",
+        "text": "11"
+      },
+      {
+        "label": "C",
+        "text": "10"
+      },
+      {
+        "label": "D",
+        "text": "21"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Multiply the original value by the percent increase."
+  },
+  {
+    "id": "gmat_ds_056",
+    "exam": "GMAT",
+    "section": "Data Interpretation",
+    "question": "A company increased sales by 20% from 116 units. What is the increase in units?",
+    "options": [
+      {
+        "label": "A",
+        "text": "116"
+      },
+      {
+        "label": "B",
+        "text": "20"
+      },
+      {
+        "label": "C",
+        "text": "23"
+      },
+      {
+        "label": "D",
+        "text": "33"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Multiply the original value by the percent increase."
+  },
+  {
+    "id": "gmat_ds_057",
+    "exam": "GMAT",
+    "section": "Data Interpretation",
+    "question": "A company increased sales by 30% from 117 units. What is the increase in units?",
+    "options": [
+      {
+        "label": "A",
+        "text": "117"
+      },
+      {
+        "label": "B",
+        "text": "30"
+      },
+      {
+        "label": "C",
+        "text": "45"
+      },
+      {
+        "label": "D",
+        "text": "35"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Multiply the original value by the percent increase."
+  },
+  {
+    "id": "gmat_ds_058",
+    "exam": "GMAT",
+    "section": "Data Interpretation",
+    "question": "A company increased sales by 40% from 118 units. What is the increase in units?",
+    "options": [
+      {
+        "label": "A",
+        "text": "47"
+      },
+      {
+        "label": "B",
+        "text": "118"
+      },
+      {
+        "label": "C",
+        "text": "40"
+      },
+      {
+        "label": "D",
+        "text": "57"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Multiply the original value by the percent increase."
+  },
+  {
+    "id": "gmat_ds_059",
+    "exam": "GMAT",
+    "section": "Data Interpretation",
+    "question": "A company increased sales by 50% from 119 units. What is the increase in units?",
+    "options": [
+      {
+        "label": "A",
+        "text": "119"
+      },
+      {
+        "label": "B",
+        "text": "59"
+      },
+      {
+        "label": "C",
+        "text": "50"
+      },
+      {
+        "label": "D",
+        "text": "69"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Multiply the original value by the percent increase."
+  },
+  {
+    "id": "gmat_ds_060",
+    "exam": "GMAT",
+    "section": "Data Interpretation",
+    "question": "A company increased sales by 10% from 120 units. What is the increase in units?",
+    "options": [
+      {
+        "label": "A",
+        "text": "120"
+      },
+      {
+        "label": "B",
+        "text": "10"
+      },
+      {
+        "label": "C",
+        "text": "12"
+      },
+      {
+        "label": "D",
+        "text": "22"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Multiply the original value by the percent increase."
+  },
+  {
+    "id": "gmat_ds_061",
+    "exam": "GMAT",
+    "section": "Data Interpretation",
+    "question": "A company increased sales by 20% from 121 units. What is the increase in units?",
+    "options": [
+      {
+        "label": "A",
+        "text": "121"
+      },
+      {
+        "label": "B",
+        "text": "20"
+      },
+      {
+        "label": "C",
+        "text": "34"
+      },
+      {
+        "label": "D",
+        "text": "24"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Multiply the original value by the percent increase."
+  },
+  {
+    "id": "gmat_ds_062",
+    "exam": "GMAT",
+    "section": "Data Interpretation",
+    "question": "A company increased sales by 30% from 122 units. What is the increase in units?",
+    "options": [
+      {
+        "label": "A",
+        "text": "36"
+      },
+      {
+        "label": "B",
+        "text": "122"
+      },
+      {
+        "label": "C",
+        "text": "30"
+      },
+      {
+        "label": "D",
+        "text": "46"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Multiply the original value by the percent increase."
+  },
+  {
+    "id": "gmat_ds_063",
+    "exam": "GMAT",
+    "section": "Data Interpretation",
+    "question": "A company increased sales by 40% from 123 units. What is the increase in units?",
+    "options": [
+      {
+        "label": "A",
+        "text": "123"
+      },
+      {
+        "label": "B",
+        "text": "49"
+      },
+      {
+        "label": "C",
+        "text": "40"
+      },
+      {
+        "label": "D",
+        "text": "59"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Multiply the original value by the percent increase."
+  },
+  {
+    "id": "gmat_ds_064",
+    "exam": "GMAT",
+    "section": "Data Interpretation",
+    "question": "A company increased sales by 50% from 124 units. What is the increase in units?",
+    "options": [
+      {
+        "label": "A",
+        "text": "124"
+      },
+      {
+        "label": "B",
+        "text": "50"
+      },
+      {
+        "label": "C",
+        "text": "62"
+      },
+      {
+        "label": "D",
+        "text": "72"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Multiply the original value by the percent increase."
+  },
+  {
+    "id": "gmat_ds_065",
+    "exam": "GMAT",
+    "section": "Data Interpretation",
+    "question": "A company increased sales by 10% from 125 units. What is the increase in units?",
+    "options": [
+      {
+        "label": "A",
+        "text": "125"
+      },
+      {
+        "label": "B",
+        "text": "10"
+      },
+      {
+        "label": "C",
+        "text": "22"
+      },
+      {
+        "label": "D",
+        "text": "12"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Multiply the original value by the percent increase."
+  },
+  {
+    "id": "gmat_ds_066",
+    "exam": "GMAT",
+    "section": "Data Interpretation",
+    "question": "A company increased sales by 20% from 126 units. What is the increase in units?",
+    "options": [
+      {
+        "label": "A",
+        "text": "25"
+      },
+      {
+        "label": "B",
+        "text": "126"
+      },
+      {
+        "label": "C",
+        "text": "20"
+      },
+      {
+        "label": "D",
+        "text": "35"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Multiply the original value by the percent increase."
+  },
+  {
+    "id": "gmat_ds_067",
+    "exam": "GMAT",
+    "section": "Data Interpretation",
+    "question": "A company increased sales by 30% from 127 units. What is the increase in units?",
+    "options": [
+      {
+        "label": "A",
+        "text": "127"
+      },
+      {
+        "label": "B",
+        "text": "38"
+      },
+      {
+        "label": "C",
+        "text": "30"
+      },
+      {
+        "label": "D",
+        "text": "48"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Multiply the original value by the percent increase."
+  },
+  {
+    "id": "gmat_ds_068",
+    "exam": "GMAT",
+    "section": "Data Interpretation",
+    "question": "A company increased sales by 40% from 128 units. What is the increase in units?",
+    "options": [
+      {
+        "label": "A",
+        "text": "128"
+      },
+      {
+        "label": "B",
+        "text": "40"
+      },
+      {
+        "label": "C",
+        "text": "51"
+      },
+      {
+        "label": "D",
+        "text": "61"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Multiply the original value by the percent increase."
+  },
+  {
+    "id": "gmat_ds_069",
+    "exam": "GMAT",
+    "section": "Data Interpretation",
+    "question": "A company increased sales by 50% from 129 units. What is the increase in units?",
+    "options": [
+      {
+        "label": "A",
+        "text": "129"
+      },
+      {
+        "label": "B",
+        "text": "50"
+      },
+      {
+        "label": "C",
+        "text": "74"
+      },
+      {
+        "label": "D",
+        "text": "64"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Multiply the original value by the percent increase."
+  },
+  {
+    "id": "gmat_ds_070",
+    "exam": "GMAT",
+    "section": "Data Interpretation",
+    "question": "A company increased sales by 10% from 130 units. What is the increase in units?",
+    "options": [
+      {
+        "label": "A",
+        "text": "13"
+      },
+      {
+        "label": "B",
+        "text": "130"
+      },
+      {
+        "label": "C",
+        "text": "10"
+      },
+      {
+        "label": "D",
+        "text": "23"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Multiply the original value by the percent increase."
+  },
+  {
+    "id": "gmat_ds_071",
+    "exam": "GMAT",
+    "section": "Data Interpretation",
+    "question": "A company increased sales by 20% from 131 units. What is the increase in units?",
+    "options": [
+      {
+        "label": "A",
+        "text": "131"
+      },
+      {
+        "label": "B",
+        "text": "26"
+      },
+      {
+        "label": "C",
+        "text": "20"
+      },
+      {
+        "label": "D",
+        "text": "36"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Multiply the original value by the percent increase."
+  },
+  {
+    "id": "gmat_ds_072",
+    "exam": "GMAT",
+    "section": "Data Interpretation",
+    "question": "A company increased sales by 30% from 132 units. What is the increase in units?",
+    "options": [
+      {
+        "label": "A",
+        "text": "132"
+      },
+      {
+        "label": "B",
+        "text": "30"
+      },
+      {
+        "label": "C",
+        "text": "39"
+      },
+      {
+        "label": "D",
+        "text": "49"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Multiply the original value by the percent increase."
+  },
+  {
+    "id": "gmat_ds_073",
+    "exam": "GMAT",
+    "section": "Data Interpretation",
+    "question": "A company increased sales by 40% from 133 units. What is the increase in units?",
+    "options": [
+      {
+        "label": "A",
+        "text": "133"
+      },
+      {
+        "label": "B",
+        "text": "40"
+      },
+      {
+        "label": "C",
+        "text": "63"
+      },
+      {
+        "label": "D",
+        "text": "53"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Multiply the original value by the percent increase."
+  },
+  {
+    "id": "gmat_ds_074",
+    "exam": "GMAT",
+    "section": "Data Interpretation",
+    "question": "A company increased sales by 50% from 134 units. What is the increase in units?",
+    "options": [
+      {
+        "label": "A",
+        "text": "67"
+      },
+      {
+        "label": "B",
+        "text": "134"
+      },
+      {
+        "label": "C",
+        "text": "50"
+      },
+      {
+        "label": "D",
+        "text": "77"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Multiply the original value by the percent increase."
+  },
+  {
+    "id": "gmat_ds_075",
+    "exam": "GMAT",
+    "section": "Data Interpretation",
+    "question": "A company increased sales by 10% from 135 units. What is the increase in units?",
+    "options": [
+      {
+        "label": "A",
+        "text": "135"
+      },
+      {
+        "label": "B",
+        "text": "13"
+      },
+      {
+        "label": "C",
+        "text": "10"
+      },
+      {
+        "label": "D",
+        "text": "23"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Multiply the original value by the percent increase."
+  },
+  {
+    "id": "gmat_ds_076",
+    "exam": "GMAT",
+    "section": "Data Interpretation",
+    "question": "A company increased sales by 20% from 136 units. What is the increase in units?",
+    "options": [
+      {
+        "label": "A",
+        "text": "136"
+      },
+      {
+        "label": "B",
+        "text": "20"
+      },
+      {
+        "label": "C",
+        "text": "27"
+      },
+      {
+        "label": "D",
+        "text": "37"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Multiply the original value by the percent increase."
+  },
+  {
+    "id": "gmat_ds_077",
+    "exam": "GMAT",
+    "section": "Data Interpretation",
+    "question": "A company increased sales by 30% from 137 units. What is the increase in units?",
+    "options": [
+      {
+        "label": "A",
+        "text": "137"
+      },
+      {
+        "label": "B",
+        "text": "30"
+      },
+      {
+        "label": "C",
+        "text": "51"
+      },
+      {
+        "label": "D",
+        "text": "41"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Multiply the original value by the percent increase."
+  },
+  {
+    "id": "gmat_ds_078",
+    "exam": "GMAT",
+    "section": "Data Interpretation",
+    "question": "A company increased sales by 40% from 138 units. What is the increase in units?",
+    "options": [
+      {
+        "label": "A",
+        "text": "55"
+      },
+      {
+        "label": "B",
+        "text": "138"
+      },
+      {
+        "label": "C",
+        "text": "40"
+      },
+      {
+        "label": "D",
+        "text": "65"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Multiply the original value by the percent increase."
+  },
+  {
+    "id": "gmat_ds_079",
+    "exam": "GMAT",
+    "section": "Data Interpretation",
+    "question": "A company increased sales by 50% from 139 units. What is the increase in units?",
+    "options": [
+      {
+        "label": "A",
+        "text": "139"
+      },
+      {
+        "label": "B",
+        "text": "69"
+      },
+      {
+        "label": "C",
+        "text": "50"
+      },
+      {
+        "label": "D",
+        "text": "79"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Multiply the original value by the percent increase."
+  },
+  {
+    "id": "gmat_ds_080",
+    "exam": "GMAT",
+    "section": "Data Interpretation",
+    "question": "A company increased sales by 10% from 100 units. What is the increase in units?",
+    "options": [
+      {
+        "label": "A",
+        "text": "100"
+      },
+      {
+        "label": "B",
+        "text": "10"
+      },
+      {
+        "label": "C",
+        "text": "10"
+      },
+      {
+        "label": "D",
+        "text": "20"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Multiply the original value by the percent increase."
+  },
+  {
+    "id": "gmat_ds_081",
+    "exam": "GMAT",
+    "section": "Data Interpretation",
+    "question": "A company increased sales by 20% from 101 units. What is the increase in units?",
+    "options": [
+      {
+        "label": "A",
+        "text": "101"
+      },
+      {
+        "label": "B",
+        "text": "20"
+      },
+      {
+        "label": "C",
+        "text": "30"
+      },
+      {
+        "label": "D",
+        "text": "20"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Multiply the original value by the percent increase."
+  },
+  {
+    "id": "gmat_ds_082",
+    "exam": "GMAT",
+    "section": "Data Interpretation",
+    "question": "A company increased sales by 30% from 102 units. What is the increase in units?",
+    "options": [
+      {
+        "label": "A",
+        "text": "30"
+      },
+      {
+        "label": "B",
+        "text": "102"
+      },
+      {
+        "label": "C",
+        "text": "30"
+      },
+      {
+        "label": "D",
+        "text": "40"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Multiply the original value by the percent increase."
+  },
+  {
+    "id": "gmat_ds_083",
+    "exam": "GMAT",
+    "section": "Data Interpretation",
+    "question": "A company increased sales by 40% from 103 units. What is the increase in units?",
+    "options": [
+      {
+        "label": "A",
+        "text": "103"
+      },
+      {
+        "label": "B",
+        "text": "41"
+      },
+      {
+        "label": "C",
+        "text": "40"
+      },
+      {
+        "label": "D",
+        "text": "51"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Multiply the original value by the percent increase."
+  },
+  {
+    "id": "gmat_ds_084",
+    "exam": "GMAT",
+    "section": "Data Interpretation",
+    "question": "A company increased sales by 50% from 104 units. What is the increase in units?",
+    "options": [
+      {
+        "label": "A",
+        "text": "104"
+      },
+      {
+        "label": "B",
+        "text": "50"
+      },
+      {
+        "label": "C",
+        "text": "52"
+      },
+      {
+        "label": "D",
+        "text": "62"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Multiply the original value by the percent increase."
+  },
+  {
+    "id": "gmat_ds_085",
+    "exam": "GMAT",
+    "section": "Data Interpretation",
+    "question": "A company increased sales by 10% from 105 units. What is the increase in units?",
+    "options": [
+      {
+        "label": "A",
+        "text": "105"
+      },
+      {
+        "label": "B",
+        "text": "10"
+      },
+      {
+        "label": "C",
+        "text": "20"
+      },
+      {
+        "label": "D",
+        "text": "10"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Multiply the original value by the percent increase."
+  },
+  {
+    "id": "gmat_ds_086",
+    "exam": "GMAT",
+    "section": "Data Interpretation",
+    "question": "A company increased sales by 20% from 106 units. What is the increase in units?",
+    "options": [
+      {
+        "label": "A",
+        "text": "21"
+      },
+      {
+        "label": "B",
+        "text": "106"
+      },
+      {
+        "label": "C",
+        "text": "20"
+      },
+      {
+        "label": "D",
+        "text": "31"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Multiply the original value by the percent increase."
+  },
+  {
+    "id": "gmat_ds_087",
+    "exam": "GMAT",
+    "section": "Data Interpretation",
+    "question": "A company increased sales by 30% from 107 units. What is the increase in units?",
+    "options": [
+      {
+        "label": "A",
+        "text": "107"
+      },
+      {
+        "label": "B",
+        "text": "32"
+      },
+      {
+        "label": "C",
+        "text": "30"
+      },
+      {
+        "label": "D",
+        "text": "42"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Multiply the original value by the percent increase."
+  },
+  {
+    "id": "gmat_ds_088",
+    "exam": "GMAT",
+    "section": "Data Interpretation",
+    "question": "A company increased sales by 40% from 108 units. What is the increase in units?",
+    "options": [
+      {
+        "label": "A",
+        "text": "108"
+      },
+      {
+        "label": "B",
+        "text": "40"
+      },
+      {
+        "label": "C",
+        "text": "43"
+      },
+      {
+        "label": "D",
+        "text": "53"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Multiply the original value by the percent increase."
+  },
+  {
+    "id": "gmat_ds_089",
+    "exam": "GMAT",
+    "section": "Data Interpretation",
+    "question": "A company increased sales by 50% from 109 units. What is the increase in units?",
+    "options": [
+      {
+        "label": "A",
+        "text": "109"
+      },
+      {
+        "label": "B",
+        "text": "50"
+      },
+      {
+        "label": "C",
+        "text": "64"
+      },
+      {
+        "label": "D",
+        "text": "54"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Multiply the original value by the percent increase."
+  },
+  {
+    "id": "gmat_ds_090",
+    "exam": "GMAT",
+    "section": "Data Interpretation",
+    "question": "A company increased sales by 10% from 110 units. What is the increase in units?",
+    "options": [
+      {
+        "label": "A",
+        "text": "11"
+      },
+      {
+        "label": "B",
+        "text": "110"
+      },
+      {
+        "label": "C",
+        "text": "10"
+      },
+      {
+        "label": "D",
+        "text": "21"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Multiply the original value by the percent increase."
+  },
+  {
+    "id": "gmat_ds_091",
+    "exam": "GMAT",
+    "section": "Data Interpretation",
+    "question": "A company increased sales by 20% from 111 units. What is the increase in units?",
+    "options": [
+      {
+        "label": "A",
+        "text": "111"
+      },
+      {
+        "label": "B",
+        "text": "22"
+      },
+      {
+        "label": "C",
+        "text": "20"
+      },
+      {
+        "label": "D",
+        "text": "32"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Multiply the original value by the percent increase."
+  },
+  {
+    "id": "gmat_ds_092",
+    "exam": "GMAT",
+    "section": "Data Interpretation",
+    "question": "A company increased sales by 30% from 112 units. What is the increase in units?",
+    "options": [
+      {
+        "label": "A",
+        "text": "112"
+      },
+      {
+        "label": "B",
+        "text": "30"
+      },
+      {
+        "label": "C",
+        "text": "33"
+      },
+      {
+        "label": "D",
+        "text": "43"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Multiply the original value by the percent increase."
+  },
+  {
+    "id": "gmat_ds_093",
+    "exam": "GMAT",
+    "section": "Data Interpretation",
+    "question": "A company increased sales by 40% from 113 units. What is the increase in units?",
+    "options": [
+      {
+        "label": "A",
+        "text": "113"
+      },
+      {
+        "label": "B",
+        "text": "40"
+      },
+      {
+        "label": "C",
+        "text": "55"
+      },
+      {
+        "label": "D",
+        "text": "45"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Multiply the original value by the percent increase."
+  },
+  {
+    "id": "gmat_ds_094",
+    "exam": "GMAT",
+    "section": "Data Interpretation",
+    "question": "A company increased sales by 50% from 114 units. What is the increase in units?",
+    "options": [
+      {
+        "label": "A",
+        "text": "57"
+      },
+      {
+        "label": "B",
+        "text": "114"
+      },
+      {
+        "label": "C",
+        "text": "50"
+      },
+      {
+        "label": "D",
+        "text": "67"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Multiply the original value by the percent increase."
+  },
+  {
+    "id": "gmat_ds_095",
+    "exam": "GMAT",
+    "section": "Data Interpretation",
+    "question": "A company increased sales by 10% from 115 units. What is the increase in units?",
+    "options": [
+      {
+        "label": "A",
+        "text": "115"
+      },
+      {
+        "label": "B",
+        "text": "11"
+      },
+      {
+        "label": "C",
+        "text": "10"
+      },
+      {
+        "label": "D",
+        "text": "21"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Multiply the original value by the percent increase."
+  },
+  {
+    "id": "gmat_ds_096",
+    "exam": "GMAT",
+    "section": "Data Interpretation",
+    "question": "A company increased sales by 20% from 116 units. What is the increase in units?",
+    "options": [
+      {
+        "label": "A",
+        "text": "116"
+      },
+      {
+        "label": "B",
+        "text": "20"
+      },
+      {
+        "label": "C",
+        "text": "23"
+      },
+      {
+        "label": "D",
+        "text": "33"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Multiply the original value by the percent increase."
+  },
+  {
+    "id": "gmat_ds_097",
+    "exam": "GMAT",
+    "section": "Data Interpretation",
+    "question": "A company increased sales by 30% from 117 units. What is the increase in units?",
+    "options": [
+      {
+        "label": "A",
+        "text": "117"
+      },
+      {
+        "label": "B",
+        "text": "30"
+      },
+      {
+        "label": "C",
+        "text": "45"
+      },
+      {
+        "label": "D",
+        "text": "35"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Multiply the original value by the percent increase."
+  },
+  {
+    "id": "gmat_ds_098",
+    "exam": "GMAT",
+    "section": "Data Interpretation",
+    "question": "A company increased sales by 40% from 118 units. What is the increase in units?",
+    "options": [
+      {
+        "label": "A",
+        "text": "47"
+      },
+      {
+        "label": "B",
+        "text": "118"
+      },
+      {
+        "label": "C",
+        "text": "40"
+      },
+      {
+        "label": "D",
+        "text": "57"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Multiply the original value by the percent increase."
+  },
+  {
+    "id": "gmat_ds_099",
+    "exam": "GMAT",
+    "section": "Data Interpretation",
+    "question": "A company increased sales by 50% from 119 units. What is the increase in units?",
+    "options": [
+      {
+        "label": "A",
+        "text": "119"
+      },
+      {
+        "label": "B",
+        "text": "59"
+      },
+      {
+        "label": "C",
+        "text": "50"
+      },
+      {
+        "label": "D",
+        "text": "69"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Multiply the original value by the percent increase."
+  },
+  {
+    "id": "gmat_ds_100",
+    "exam": "GMAT",
+    "section": "Data Interpretation",
+    "question": "A company increased sales by 10% from 120 units. What is the increase in units?",
+    "options": [
+      {
+        "label": "A",
+        "text": "120"
+      },
+      {
+        "label": "B",
+        "text": "10"
+      },
+      {
+        "label": "C",
+        "text": "12"
+      },
+      {
+        "label": "D",
+        "text": "22"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Multiply the original value by the percent increase."
+  }
+]
