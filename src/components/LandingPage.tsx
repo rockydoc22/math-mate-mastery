@@ -382,7 +382,7 @@ export const LandingPage = () => {
       <section className="px-4 py-12 bg-muted/30">
         <div className="max-w-2xl mx-auto text-center">
           <h2 className="text-2xl font-bold mb-4">Start Practicing Now</h2>
-          <p className="text-muted-foreground mb-6">Choose your subject and begin your journey to 1600</p>
+          <p className="text-muted-foreground mb-6">Choose your subject and begin your journey</p>
           
           <div className="grid grid-cols-2 gap-4 mb-6">
             <Button 
