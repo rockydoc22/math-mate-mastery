@@ -29,7 +29,7 @@ export const ShareAppButton = () => {
   const handleNativeShare = async () => {
     if (navigator.share) {
       try {
-        await navigator.share({ title: "1600: The SAT App", text: SHARE_TEXT, url: APP_URL });
+        await navigator.share({ title: "40² Test Prep", text: SHARE_TEXT, url: APP_URL });
       } catch {}
     } else {
       handleCopyLink();
