@@ -1,0 +1,5202 @@
+[
+  {
+    "id": "gre_q_001",
+    "exam": "GRE",
+    "section": "Quantitative",
+    "question": "If 3x + 4 = 19, what is x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "5"
+      },
+      {
+        "label": "B",
+        "text": "6"
+      },
+      {
+        "label": "C",
+        "text": "4"
+      },
+      {
+        "label": "D",
+        "text": "19"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Solve by isolating x: subtract the constant then divide by the coefficient."
+  },
+  {
+    "id": "gre_q_002",
+    "exam": "GRE",
+    "section": "Quantitative",
+    "question": "If 4x + 5 = 29, what is x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "7"
+      },
+      {
+        "label": "B",
+        "text": "6"
+      },
+      {
+        "label": "C",
+        "text": "5"
+      },
+      {
+        "label": "D",
+        "text": "29"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Solve by isolating x: subtract the constant then divide by the coefficient."
+  },
+  {
+    "id": "gre_q_003",
+    "exam": "GRE",
+    "section": "Quantitative",
+    "question": "If 5x + 6 = 41, what is x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "8"
+      },
+      {
+        "label": "B",
+        "text": "6"
+      },
+      {
+        "label": "C",
+        "text": "7"
+      },
+      {
+        "label": "D",
+        "text": "41"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Solve by isolating x: subtract the constant then divide by the coefficient."
+  },
+  {
+    "id": "gre_q_004",
+    "exam": "GRE",
+    "section": "Quantitative",
+    "question": "If 6x + 7 = 55, what is x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "9"
+      },
+      {
+        "label": "B",
+        "text": "7"
+      },
+      {
+        "label": "C",
+        "text": "55"
+      },
+      {
+        "label": "D",
+        "text": "8"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Solve by isolating x: subtract the constant then divide by the coefficient."
+  },
+  {
+    "id": "gre_q_005",
+    "exam": "GRE",
+    "section": "Quantitative",
+    "question": "If 2x + 8 = 26, what is x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "9"
+      },
+      {
+        "label": "B",
+        "text": "10"
+      },
+      {
+        "label": "C",
+        "text": "8"
+      },
+      {
+        "label": "D",
+        "text": "26"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Solve by isolating x: subtract the constant then divide by the coefficient."
+  },
+  {
+    "id": "gre_q_006",
+    "exam": "GRE",
+    "section": "Quantitative",
+    "question": "If 3x + 9 = 21, what is x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "5"
+      },
+      {
+        "label": "B",
+        "text": "4"
+      },
+      {
+        "label": "C",
+        "text": "3"
+      },
+      {
+        "label": "D",
+        "text": "21"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Solve by isolating x: subtract the constant then divide by the coefficient."
+  },
+  {
+    "id": "gre_q_007",
+    "exam": "GRE",
+    "section": "Quantitative",
+    "question": "If 4x + 3 = 23, what is x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "6"
+      },
+      {
+        "label": "B",
+        "text": "4"
+      },
+      {
+        "label": "C",
+        "text": "5"
+      },
+      {
+        "label": "D",
+        "text": "23"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Solve by isolating x: subtract the constant then divide by the coefficient."
+  },
+  {
+    "id": "gre_q_008",
+    "exam": "GRE",
+    "section": "Quantitative",
+    "question": "If 5x + 4 = 34, what is x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "7"
+      },
+      {
+        "label": "B",
+        "text": "5"
+      },
+      {
+        "label": "C",
+        "text": "34"
+      },
+      {
+        "label": "D",
+        "text": "6"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Solve by isolating x: subtract the constant then divide by the coefficient."
+  },
+  {
+    "id": "gre_q_009",
+    "exam": "GRE",
+    "section": "Quantitative",
+    "question": "If 6x + 5 = 47, what is x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "7"
+      },
+      {
+        "label": "B",
+        "text": "8"
+      },
+      {
+        "label": "C",
+        "text": "6"
+      },
+      {
+        "label": "D",
+        "text": "47"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Solve by isolating x: subtract the constant then divide by the coefficient."
+  },
+  {
+    "id": "gre_q_010",
+    "exam": "GRE",
+    "section": "Quantitative",
+    "question": "If 2x + 6 = 22, what is x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "9"
+      },
+      {
+        "label": "B",
+        "text": "8"
+      },
+      {
+        "label": "C",
+        "text": "7"
+      },
+      {
+        "label": "D",
+        "text": "22"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Solve by isolating x: subtract the constant then divide by the coefficient."
+  },
+  {
+    "id": "gre_q_011",
+    "exam": "GRE",
+    "section": "Quantitative",
+    "question": "If 3x + 7 = 34, what is x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "10"
+      },
+      {
+        "label": "B",
+        "text": "8"
+      },
+      {
+        "label": "C",
+        "text": "9"
+      },
+      {
+        "label": "D",
+        "text": "34"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Solve by isolating x: subtract the constant then divide by the coefficient."
+  },
+  {
+    "id": "gre_q_012",
+    "exam": "GRE",
+    "section": "Quantitative",
+    "question": "If 4x + 8 = 24, what is x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "5"
+      },
+      {
+        "label": "B",
+        "text": "3"
+      },
+      {
+        "label": "C",
+        "text": "24"
+      },
+      {
+        "label": "D",
+        "text": "4"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Solve by isolating x: subtract the constant then divide by the coefficient."
+  },
+  {
+    "id": "gre_q_013",
+    "exam": "GRE",
+    "section": "Quantitative",
+    "question": "If 5x + 9 = 34, what is x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "5"
+      },
+      {
+        "label": "B",
+        "text": "6"
+      },
+      {
+        "label": "C",
+        "text": "4"
+      },
+      {
+        "label": "D",
+        "text": "34"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Solve by isolating x: subtract the constant then divide by the coefficient."
+  },
+  {
+    "id": "gre_q_014",
+    "exam": "GRE",
+    "section": "Quantitative",
+    "question": "If 6x + 3 = 39, what is x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "7"
+      },
+      {
+        "label": "B",
+        "text": "6"
+      },
+      {
+        "label": "C",
+        "text": "5"
+      },
+      {
+        "label": "D",
+        "text": "39"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Solve by isolating x: subtract the constant then divide by the coefficient."
+  },
+  {
+    "id": "gre_q_015",
+    "exam": "GRE",
+    "section": "Quantitative",
+    "question": "If 2x + 4 = 18, what is x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "8"
+      },
+      {
+        "label": "B",
+        "text": "6"
+      },
+      {
+        "label": "C",
+        "text": "7"
+      },
+      {
+        "label": "D",
+        "text": "18"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Solve by isolating x: subtract the constant then divide by the coefficient."
+  },
+  {
+    "id": "gre_q_016",
+    "exam": "GRE",
+    "section": "Quantitative",
+    "question": "If 3x + 5 = 29, what is x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "9"
+      },
+      {
+        "label": "B",
+        "text": "7"
+      },
+      {
+        "label": "C",
+        "text": "29"
+      },
+      {
+        "label": "D",
+        "text": "8"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Solve by isolating x: subtract the constant then divide by the coefficient."
+  },
+  {
+    "id": "gre_q_017",
+    "exam": "GRE",
+    "section": "Quantitative",
+    "question": "If 4x + 6 = 42, what is x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "9"
+      },
+      {
+        "label": "B",
+        "text": "10"
+      },
+      {
+        "label": "C",
+        "text": "8"
+      },
+      {
+        "label": "D",
+        "text": "42"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Solve by isolating x: subtract the constant then divide by the coefficient."
+  },
+  {
+    "id": "gre_q_018",
+    "exam": "GRE",
+    "section": "Quantitative",
+    "question": "If 5x + 7 = 27, what is x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "5"
+      },
+      {
+        "label": "B",
+        "text": "4"
+      },
+      {
+        "label": "C",
+        "text": "3"
+      },
+      {
+        "label": "D",
+        "text": "27"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Solve by isolating x: subtract the constant then divide by the coefficient."
+  },
+  {
+    "id": "gre_q_019",
+    "exam": "GRE",
+    "section": "Quantitative",
+    "question": "If 6x + 8 = 38, what is x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "6"
+      },
+      {
+        "label": "B",
+        "text": "4"
+      },
+      {
+        "label": "C",
+        "text": "5"
+      },
+      {
+        "label": "D",
+        "text": "38"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Solve by isolating x: subtract the constant then divide by the coefficient."
+  },
+  {
+    "id": "gre_q_020",
+    "exam": "GRE",
+    "section": "Quantitative",
+    "question": "If 2x + 9 = 21, what is x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "7"
+      },
+      {
+        "label": "B",
+        "text": "5"
+      },
+      {
+        "label": "C",
+        "text": "21"
+      },
+      {
+        "label": "D",
+        "text": "6"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Solve by isolating x: subtract the constant then divide by the coefficient."
+  },
+  {
+    "id": "gre_q_021",
+    "exam": "GRE",
+    "section": "Quantitative",
+    "question": "If 3x + 3 = 24, what is x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "7"
+      },
+      {
+        "label": "B",
+        "text": "8"
+      },
+      {
+        "label": "C",
+        "text": "6"
+      },
+      {
+        "label": "D",
+        "text": "24"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Solve by isolating x: subtract the constant then divide by the coefficient."
+  },
+  {
+    "id": "gre_q_022",
+    "exam": "GRE",
+    "section": "Quantitative",
+    "question": "If 4x + 4 = 36, what is x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "9"
+      },
+      {
+        "label": "B",
+        "text": "8"
+      },
+      {
+        "label": "C",
+        "text": "7"
+      },
+      {
+        "label": "D",
+        "text": "36"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Solve by isolating x: subtract the constant then divide by the coefficient."
+  },
+  {
+    "id": "gre_q_023",
+    "exam": "GRE",
+    "section": "Quantitative",
+    "question": "If 5x + 5 = 50, what is x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "10"
+      },
+      {
+        "label": "B",
+        "text": "8"
+      },
+      {
+        "label": "C",
+        "text": "9"
+      },
+      {
+        "label": "D",
+        "text": "50"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Solve by isolating x: subtract the constant then divide by the coefficient."
+  },
+  {
+    "id": "gre_q_024",
+    "exam": "GRE",
+    "section": "Quantitative",
+    "question": "If 6x + 6 = 30, what is x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "5"
+      },
+      {
+        "label": "B",
+        "text": "3"
+      },
+      {
+        "label": "C",
+        "text": "30"
+      },
+      {
+        "label": "D",
+        "text": "4"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Solve by isolating x: subtract the constant then divide by the coefficient."
+  },
+  {
+    "id": "gre_q_025",
+    "exam": "GRE",
+    "section": "Quantitative",
+    "question": "If 2x + 7 = 17, what is x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "5"
+      },
+      {
+        "label": "B",
+        "text": "6"
+      },
+      {
+        "label": "C",
+        "text": "4"
+      },
+      {
+        "label": "D",
+        "text": "17"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Solve by isolating x: subtract the constant then divide by the coefficient."
+  },
+  {
+    "id": "gre_q_026",
+    "exam": "GRE",
+    "section": "Quantitative",
+    "question": "If 3x + 8 = 26, what is x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "7"
+      },
+      {
+        "label": "B",
+        "text": "6"
+      },
+      {
+        "label": "C",
+        "text": "5"
+      },
+      {
+        "label": "D",
+        "text": "26"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Solve by isolating x: subtract the constant then divide by the coefficient."
+  },
+  {
+    "id": "gre_q_027",
+    "exam": "GRE",
+    "section": "Quantitative",
+    "question": "If 4x + 9 = 37, what is x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "8"
+      },
+      {
+        "label": "B",
+        "text": "6"
+      },
+      {
+        "label": "C",
+        "text": "7"
+      },
+      {
+        "label": "D",
+        "text": "37"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Solve by isolating x: subtract the constant then divide by the coefficient."
+  },
+  {
+    "id": "gre_q_028",
+    "exam": "GRE",
+    "section": "Quantitative",
+    "question": "If 5x + 3 = 43, what is x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "9"
+      },
+      {
+        "label": "B",
+        "text": "7"
+      },
+      {
+        "label": "C",
+        "text": "43"
+      },
+      {
+        "label": "D",
+        "text": "8"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Solve by isolating x: subtract the constant then divide by the coefficient."
+  },
+  {
+    "id": "gre_q_029",
+    "exam": "GRE",
+    "section": "Quantitative",
+    "question": "If 6x + 4 = 58, what is x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "9"
+      },
+      {
+        "label": "B",
+        "text": "10"
+      },
+      {
+        "label": "C",
+        "text": "8"
+      },
+      {
+        "label": "D",
+        "text": "58"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Solve by isolating x: subtract the constant then divide by the coefficient."
+  },
+  {
+    "id": "gre_q_030",
+    "exam": "GRE",
+    "section": "Quantitative",
+    "question": "If 2x + 5 = 13, what is x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "5"
+      },
+      {
+        "label": "B",
+        "text": "4"
+      },
+      {
+        "label": "C",
+        "text": "3"
+      },
+      {
+        "label": "D",
+        "text": "13"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Solve by isolating x: subtract the constant then divide by the coefficient."
+  },
+  {
+    "id": "gre_q_031",
+    "exam": "GRE",
+    "section": "Quantitative",
+    "question": "If 3x + 6 = 21, what is x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "6"
+      },
+      {
+        "label": "B",
+        "text": "4"
+      },
+      {
+        "label": "C",
+        "text": "5"
+      },
+      {
+        "label": "D",
+        "text": "21"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Solve by isolating x: subtract the constant then divide by the coefficient."
+  },
+  {
+    "id": "gre_q_032",
+    "exam": "GRE",
+    "section": "Quantitative",
+    "question": "If 4x + 7 = 31, what is x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "7"
+      },
+      {
+        "label": "B",
+        "text": "5"
+      },
+      {
+        "label": "C",
+        "text": "31"
+      },
+      {
+        "label": "D",
+        "text": "6"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Solve by isolating x: subtract the constant then divide by the coefficient."
+  },
+  {
+    "id": "gre_q_033",
+    "exam": "GRE",
+    "section": "Quantitative",
+    "question": "If 5x + 8 = 43, what is x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "7"
+      },
+      {
+        "label": "B",
+        "text": "8"
+      },
+      {
+        "label": "C",
+        "text": "6"
+      },
+      {
+        "label": "D",
+        "text": "43"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Solve by isolating x: subtract the constant then divide by the coefficient."
+  },
+  {
+    "id": "gre_q_034",
+    "exam": "GRE",
+    "section": "Quantitative",
+    "question": "If 6x + 9 = 57, what is x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "9"
+      },
+      {
+        "label": "B",
+        "text": "8"
+      },
+      {
+        "label": "C",
+        "text": "7"
+      },
+      {
+        "label": "D",
+        "text": "57"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Solve by isolating x: subtract the constant then divide by the coefficient."
+  },
+  {
+    "id": "gre_q_035",
+    "exam": "GRE",
+    "section": "Quantitative",
+    "question": "If 2x + 3 = 21, what is x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "10"
+      },
+      {
+        "label": "B",
+        "text": "8"
+      },
+      {
+        "label": "C",
+        "text": "9"
+      },
+      {
+        "label": "D",
+        "text": "21"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Solve by isolating x: subtract the constant then divide by the coefficient."
+  },
+  {
+    "id": "gre_q_036",
+    "exam": "GRE",
+    "section": "Quantitative",
+    "question": "If 3x + 4 = 16, what is x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "5"
+      },
+      {
+        "label": "B",
+        "text": "3"
+      },
+      {
+        "label": "C",
+        "text": "16"
+      },
+      {
+        "label": "D",
+        "text": "4"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Solve by isolating x: subtract the constant then divide by the coefficient."
+  },
+  {
+    "id": "gre_q_037",
+    "exam": "GRE",
+    "section": "Quantitative",
+    "question": "If 4x + 5 = 25, what is x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "5"
+      },
+      {
+        "label": "B",
+        "text": "6"
+      },
+      {
+        "label": "C",
+        "text": "4"
+      },
+      {
+        "label": "D",
+        "text": "25"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Solve by isolating x: subtract the constant then divide by the coefficient."
+  },
+  {
+    "id": "gre_q_038",
+    "exam": "GRE",
+    "section": "Quantitative",
+    "question": "If 5x + 6 = 36, what is x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "7"
+      },
+      {
+        "label": "B",
+        "text": "6"
+      },
+      {
+        "label": "C",
+        "text": "5"
+      },
+      {
+        "label": "D",
+        "text": "36"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Solve by isolating x: subtract the constant then divide by the coefficient."
+  },
+  {
+    "id": "gre_q_039",
+    "exam": "GRE",
+    "section": "Quantitative",
+    "question": "If 6x + 7 = 49, what is x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "8"
+      },
+      {
+        "label": "B",
+        "text": "6"
+      },
+      {
+        "label": "C",
+        "text": "7"
+      },
+      {
+        "label": "D",
+        "text": "49"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Solve by isolating x: subtract the constant then divide by the coefficient."
+  },
+  {
+    "id": "gre_q_040",
+    "exam": "GRE",
+    "section": "Quantitative",
+    "question": "If 2x + 8 = 24, what is x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "9"
+      },
+      {
+        "label": "B",
+        "text": "7"
+      },
+      {
+        "label": "C",
+        "text": "24"
+      },
+      {
+        "label": "D",
+        "text": "8"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Solve by isolating x: subtract the constant then divide by the coefficient."
+  },
+  {
+    "id": "gre_q_041",
+    "exam": "GRE",
+    "section": "Quantitative",
+    "question": "If 3x + 9 = 36, what is x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "9"
+      },
+      {
+        "label": "B",
+        "text": "10"
+      },
+      {
+        "label": "C",
+        "text": "8"
+      },
+      {
+        "label": "D",
+        "text": "36"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Solve by isolating x: subtract the constant then divide by the coefficient."
+  },
+  {
+    "id": "gre_q_042",
+    "exam": "GRE",
+    "section": "Quantitative",
+    "question": "If 4x + 3 = 19, what is x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "5"
+      },
+      {
+        "label": "B",
+        "text": "4"
+      },
+      {
+        "label": "C",
+        "text": "3"
+      },
+      {
+        "label": "D",
+        "text": "19"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Solve by isolating x: subtract the constant then divide by the coefficient."
+  },
+  {
+    "id": "gre_q_043",
+    "exam": "GRE",
+    "section": "Quantitative",
+    "question": "If 5x + 4 = 29, what is x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "6"
+      },
+      {
+        "label": "B",
+        "text": "4"
+      },
+      {
+        "label": "C",
+        "text": "5"
+      },
+      {
+        "label": "D",
+        "text": "29"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Solve by isolating x: subtract the constant then divide by the coefficient."
+  },
+  {
+    "id": "gre_q_044",
+    "exam": "GRE",
+    "section": "Quantitative",
+    "question": "If 6x + 5 = 41, what is x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "7"
+      },
+      {
+        "label": "B",
+        "text": "5"
+      },
+      {
+        "label": "C",
+        "text": "41"
+      },
+      {
+        "label": "D",
+        "text": "6"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Solve by isolating x: subtract the constant then divide by the coefficient."
+  },
+  {
+    "id": "gre_q_045",
+    "exam": "GRE",
+    "section": "Quantitative",
+    "question": "If 2x + 6 = 20, what is x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "7"
+      },
+      {
+        "label": "B",
+        "text": "8"
+      },
+      {
+        "label": "C",
+        "text": "6"
+      },
+      {
+        "label": "D",
+        "text": "20"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Solve by isolating x: subtract the constant then divide by the coefficient."
+  },
+  {
+    "id": "gre_q_046",
+    "exam": "GRE",
+    "section": "Quantitative",
+    "question": "If 3x + 7 = 31, what is x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "9"
+      },
+      {
+        "label": "B",
+        "text": "8"
+      },
+      {
+        "label": "C",
+        "text": "7"
+      },
+      {
+        "label": "D",
+        "text": "31"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Solve by isolating x: subtract the constant then divide by the coefficient."
+  },
+  {
+    "id": "gre_q_047",
+    "exam": "GRE",
+    "section": "Quantitative",
+    "question": "If 4x + 8 = 44, what is x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "10"
+      },
+      {
+        "label": "B",
+        "text": "8"
+      },
+      {
+        "label": "C",
+        "text": "9"
+      },
+      {
+        "label": "D",
+        "text": "44"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Solve by isolating x: subtract the constant then divide by the coefficient."
+  },
+  {
+    "id": "gre_q_048",
+    "exam": "GRE",
+    "section": "Quantitative",
+    "question": "If 5x + 9 = 29, what is x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "5"
+      },
+      {
+        "label": "B",
+        "text": "3"
+      },
+      {
+        "label": "C",
+        "text": "29"
+      },
+      {
+        "label": "D",
+        "text": "4"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Solve by isolating x: subtract the constant then divide by the coefficient."
+  },
+  {
+    "id": "gre_q_049",
+    "exam": "GRE",
+    "section": "Quantitative",
+    "question": "If 6x + 3 = 33, what is x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "5"
+      },
+      {
+        "label": "B",
+        "text": "6"
+      },
+      {
+        "label": "C",
+        "text": "4"
+      },
+      {
+        "label": "D",
+        "text": "33"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Solve by isolating x: subtract the constant then divide by the coefficient."
+  },
+  {
+    "id": "gre_q_050",
+    "exam": "GRE",
+    "section": "Quantitative",
+    "question": "If 2x + 4 = 16, what is x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "7"
+      },
+      {
+        "label": "B",
+        "text": "6"
+      },
+      {
+        "label": "C",
+        "text": "5"
+      },
+      {
+        "label": "D",
+        "text": "16"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Solve by isolating x: subtract the constant then divide by the coefficient."
+  },
+  {
+    "id": "gre_q_051",
+    "exam": "GRE",
+    "section": "Quantitative",
+    "question": "If 3x + 5 = 26, what is x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "8"
+      },
+      {
+        "label": "B",
+        "text": "6"
+      },
+      {
+        "label": "C",
+        "text": "7"
+      },
+      {
+        "label": "D",
+        "text": "26"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Solve by isolating x: subtract the constant then divide by the coefficient."
+  },
+  {
+    "id": "gre_q_052",
+    "exam": "GRE",
+    "section": "Quantitative",
+    "question": "If 4x + 6 = 38, what is x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "9"
+      },
+      {
+        "label": "B",
+        "text": "7"
+      },
+      {
+        "label": "C",
+        "text": "38"
+      },
+      {
+        "label": "D",
+        "text": "8"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Solve by isolating x: subtract the constant then divide by the coefficient."
+  },
+  {
+    "id": "gre_q_053",
+    "exam": "GRE",
+    "section": "Quantitative",
+    "question": "If 5x + 7 = 52, what is x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "9"
+      },
+      {
+        "label": "B",
+        "text": "10"
+      },
+      {
+        "label": "C",
+        "text": "8"
+      },
+      {
+        "label": "D",
+        "text": "52"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Solve by isolating x: subtract the constant then divide by the coefficient."
+  },
+  {
+    "id": "gre_q_054",
+    "exam": "GRE",
+    "section": "Quantitative",
+    "question": "If 6x + 8 = 32, what is x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "5"
+      },
+      {
+        "label": "B",
+        "text": "4"
+      },
+      {
+        "label": "C",
+        "text": "3"
+      },
+      {
+        "label": "D",
+        "text": "32"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Solve by isolating x: subtract the constant then divide by the coefficient."
+  },
+  {
+    "id": "gre_q_055",
+    "exam": "GRE",
+    "section": "Quantitative",
+    "question": "If 2x + 9 = 19, what is x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "6"
+      },
+      {
+        "label": "B",
+        "text": "4"
+      },
+      {
+        "label": "C",
+        "text": "5"
+      },
+      {
+        "label": "D",
+        "text": "19"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Solve by isolating x: subtract the constant then divide by the coefficient."
+  },
+  {
+    "id": "gre_q_056",
+    "exam": "GRE",
+    "section": "Quantitative",
+    "question": "If 3x + 3 = 21, what is x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "7"
+      },
+      {
+        "label": "B",
+        "text": "5"
+      },
+      {
+        "label": "C",
+        "text": "21"
+      },
+      {
+        "label": "D",
+        "text": "6"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Solve by isolating x: subtract the constant then divide by the coefficient."
+  },
+  {
+    "id": "gre_q_057",
+    "exam": "GRE",
+    "section": "Quantitative",
+    "question": "If 4x + 4 = 32, what is x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "7"
+      },
+      {
+        "label": "B",
+        "text": "8"
+      },
+      {
+        "label": "C",
+        "text": "6"
+      },
+      {
+        "label": "D",
+        "text": "32"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Solve by isolating x: subtract the constant then divide by the coefficient."
+  },
+  {
+    "id": "gre_q_058",
+    "exam": "GRE",
+    "section": "Quantitative",
+    "question": "If 5x + 5 = 45, what is x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "9"
+      },
+      {
+        "label": "B",
+        "text": "8"
+      },
+      {
+        "label": "C",
+        "text": "7"
+      },
+      {
+        "label": "D",
+        "text": "45"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Solve by isolating x: subtract the constant then divide by the coefficient."
+  },
+  {
+    "id": "gre_q_059",
+    "exam": "GRE",
+    "section": "Quantitative",
+    "question": "If 6x + 6 = 60, what is x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "10"
+      },
+      {
+        "label": "B",
+        "text": "8"
+      },
+      {
+        "label": "C",
+        "text": "9"
+      },
+      {
+        "label": "D",
+        "text": "60"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Solve by isolating x: subtract the constant then divide by the coefficient."
+  },
+  {
+    "id": "gre_q_060",
+    "exam": "GRE",
+    "section": "Quantitative",
+    "question": "If 2x + 7 = 15, what is x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "5"
+      },
+      {
+        "label": "B",
+        "text": "3"
+      },
+      {
+        "label": "C",
+        "text": "15"
+      },
+      {
+        "label": "D",
+        "text": "4"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Solve by isolating x: subtract the constant then divide by the coefficient."
+  },
+  {
+    "id": "gre_q_061",
+    "exam": "GRE",
+    "section": "Quantitative",
+    "question": "If 3x + 8 = 23, what is x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "5"
+      },
+      {
+        "label": "B",
+        "text": "6"
+      },
+      {
+        "label": "C",
+        "text": "4"
+      },
+      {
+        "label": "D",
+        "text": "23"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Solve by isolating x: subtract the constant then divide by the coefficient."
+  },
+  {
+    "id": "gre_q_062",
+    "exam": "GRE",
+    "section": "Quantitative",
+    "question": "If 4x + 9 = 33, what is x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "7"
+      },
+      {
+        "label": "B",
+        "text": "6"
+      },
+      {
+        "label": "C",
+        "text": "5"
+      },
+      {
+        "label": "D",
+        "text": "33"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Solve by isolating x: subtract the constant then divide by the coefficient."
+  },
+  {
+    "id": "gre_q_063",
+    "exam": "GRE",
+    "section": "Quantitative",
+    "question": "If 5x + 3 = 38, what is x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "8"
+      },
+      {
+        "label": "B",
+        "text": "6"
+      },
+      {
+        "label": "C",
+        "text": "7"
+      },
+      {
+        "label": "D",
+        "text": "38"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Solve by isolating x: subtract the constant then divide by the coefficient."
+  },
+  {
+    "id": "gre_q_064",
+    "exam": "GRE",
+    "section": "Quantitative",
+    "question": "If 6x + 4 = 52, what is x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "9"
+      },
+      {
+        "label": "B",
+        "text": "7"
+      },
+      {
+        "label": "C",
+        "text": "52"
+      },
+      {
+        "label": "D",
+        "text": "8"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Solve by isolating x: subtract the constant then divide by the coefficient."
+  },
+  {
+    "id": "gre_q_065",
+    "exam": "GRE",
+    "section": "Quantitative",
+    "question": "If 2x + 5 = 23, what is x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "9"
+      },
+      {
+        "label": "B",
+        "text": "10"
+      },
+      {
+        "label": "C",
+        "text": "8"
+      },
+      {
+        "label": "D",
+        "text": "23"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Solve by isolating x: subtract the constant then divide by the coefficient."
+  },
+  {
+    "id": "gre_q_066",
+    "exam": "GRE",
+    "section": "Quantitative",
+    "question": "If 3x + 6 = 18, what is x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "5"
+      },
+      {
+        "label": "B",
+        "text": "4"
+      },
+      {
+        "label": "C",
+        "text": "3"
+      },
+      {
+        "label": "D",
+        "text": "18"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Solve by isolating x: subtract the constant then divide by the coefficient."
+  },
+  {
+    "id": "gre_q_067",
+    "exam": "GRE",
+    "section": "Quantitative",
+    "question": "If 4x + 7 = 27, what is x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "6"
+      },
+      {
+        "label": "B",
+        "text": "4"
+      },
+      {
+        "label": "C",
+        "text": "5"
+      },
+      {
+        "label": "D",
+        "text": "27"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Solve by isolating x: subtract the constant then divide by the coefficient."
+  },
+  {
+    "id": "gre_q_068",
+    "exam": "GRE",
+    "section": "Quantitative",
+    "question": "If 5x + 8 = 38, what is x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "7"
+      },
+      {
+        "label": "B",
+        "text": "5"
+      },
+      {
+        "label": "C",
+        "text": "38"
+      },
+      {
+        "label": "D",
+        "text": "6"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Solve by isolating x: subtract the constant then divide by the coefficient."
+  },
+  {
+    "id": "gre_q_069",
+    "exam": "GRE",
+    "section": "Quantitative",
+    "question": "If 6x + 9 = 51, what is x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "7"
+      },
+      {
+        "label": "B",
+        "text": "8"
+      },
+      {
+        "label": "C",
+        "text": "6"
+      },
+      {
+        "label": "D",
+        "text": "51"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Solve by isolating x: subtract the constant then divide by the coefficient."
+  },
+  {
+    "id": "gre_q_070",
+    "exam": "GRE",
+    "section": "Quantitative",
+    "question": "If 2x + 3 = 19, what is x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "9"
+      },
+      {
+        "label": "B",
+        "text": "8"
+      },
+      {
+        "label": "C",
+        "text": "7"
+      },
+      {
+        "label": "D",
+        "text": "19"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Solve by isolating x: subtract the constant then divide by the coefficient."
+  },
+  {
+    "id": "gre_q_071",
+    "exam": "GRE",
+    "section": "Quantitative",
+    "question": "If 3x + 4 = 31, what is x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "10"
+      },
+      {
+        "label": "B",
+        "text": "8"
+      },
+      {
+        "label": "C",
+        "text": "9"
+      },
+      {
+        "label": "D",
+        "text": "31"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Solve by isolating x: subtract the constant then divide by the coefficient."
+  },
+  {
+    "id": "gre_q_072",
+    "exam": "GRE",
+    "section": "Quantitative",
+    "question": "If 4x + 5 = 21, what is x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "5"
+      },
+      {
+        "label": "B",
+        "text": "3"
+      },
+      {
+        "label": "C",
+        "text": "21"
+      },
+      {
+        "label": "D",
+        "text": "4"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Solve by isolating x: subtract the constant then divide by the coefficient."
+  },
+  {
+    "id": "gre_q_073",
+    "exam": "GRE",
+    "section": "Quantitative",
+    "question": "If 5x + 6 = 31, what is x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "5"
+      },
+      {
+        "label": "B",
+        "text": "6"
+      },
+      {
+        "label": "C",
+        "text": "4"
+      },
+      {
+        "label": "D",
+        "text": "31"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Solve by isolating x: subtract the constant then divide by the coefficient."
+  },
+  {
+    "id": "gre_q_074",
+    "exam": "GRE",
+    "section": "Quantitative",
+    "question": "If 6x + 7 = 43, what is x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "7"
+      },
+      {
+        "label": "B",
+        "text": "6"
+      },
+      {
+        "label": "C",
+        "text": "5"
+      },
+      {
+        "label": "D",
+        "text": "43"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Solve by isolating x: subtract the constant then divide by the coefficient."
+  },
+  {
+    "id": "gre_q_075",
+    "exam": "GRE",
+    "section": "Quantitative",
+    "question": "If 2x + 8 = 22, what is x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "8"
+      },
+      {
+        "label": "B",
+        "text": "6"
+      },
+      {
+        "label": "C",
+        "text": "7"
+      },
+      {
+        "label": "D",
+        "text": "22"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Solve by isolating x: subtract the constant then divide by the coefficient."
+  },
+  {
+    "id": "gre_q_076",
+    "exam": "GRE",
+    "section": "Quantitative",
+    "question": "If 3x + 9 = 33, what is x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "9"
+      },
+      {
+        "label": "B",
+        "text": "7"
+      },
+      {
+        "label": "C",
+        "text": "33"
+      },
+      {
+        "label": "D",
+        "text": "8"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Solve by isolating x: subtract the constant then divide by the coefficient."
+  },
+  {
+    "id": "gre_q_077",
+    "exam": "GRE",
+    "section": "Quantitative",
+    "question": "If 4x + 3 = 39, what is x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "9"
+      },
+      {
+        "label": "B",
+        "text": "10"
+      },
+      {
+        "label": "C",
+        "text": "8"
+      },
+      {
+        "label": "D",
+        "text": "39"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Solve by isolating x: subtract the constant then divide by the coefficient."
+  },
+  {
+    "id": "gre_q_078",
+    "exam": "GRE",
+    "section": "Quantitative",
+    "question": "If 5x + 4 = 24, what is x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "5"
+      },
+      {
+        "label": "B",
+        "text": "4"
+      },
+      {
+        "label": "C",
+        "text": "3"
+      },
+      {
+        "label": "D",
+        "text": "24"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Solve by isolating x: subtract the constant then divide by the coefficient."
+  },
+  {
+    "id": "gre_q_079",
+    "exam": "GRE",
+    "section": "Quantitative",
+    "question": "If 6x + 5 = 35, what is x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "6"
+      },
+      {
+        "label": "B",
+        "text": "4"
+      },
+      {
+        "label": "C",
+        "text": "5"
+      },
+      {
+        "label": "D",
+        "text": "35"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Solve by isolating x: subtract the constant then divide by the coefficient."
+  },
+  {
+    "id": "gre_q_080",
+    "exam": "GRE",
+    "section": "Quantitative",
+    "question": "If 2x + 6 = 18, what is x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "7"
+      },
+      {
+        "label": "B",
+        "text": "5"
+      },
+      {
+        "label": "C",
+        "text": "18"
+      },
+      {
+        "label": "D",
+        "text": "6"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Solve by isolating x: subtract the constant then divide by the coefficient."
+  },
+  {
+    "id": "gre_q_081",
+    "exam": "GRE",
+    "section": "Quantitative",
+    "question": "If 3x + 7 = 28, what is x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "7"
+      },
+      {
+        "label": "B",
+        "text": "8"
+      },
+      {
+        "label": "C",
+        "text": "6"
+      },
+      {
+        "label": "D",
+        "text": "28"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Solve by isolating x: subtract the constant then divide by the coefficient."
+  },
+  {
+    "id": "gre_q_082",
+    "exam": "GRE",
+    "section": "Quantitative",
+    "question": "If 4x + 8 = 40, what is x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "9"
+      },
+      {
+        "label": "B",
+        "text": "8"
+      },
+      {
+        "label": "C",
+        "text": "7"
+      },
+      {
+        "label": "D",
+        "text": "40"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Solve by isolating x: subtract the constant then divide by the coefficient."
+  },
+  {
+    "id": "gre_q_083",
+    "exam": "GRE",
+    "section": "Quantitative",
+    "question": "If 5x + 9 = 54, what is x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "10"
+      },
+      {
+        "label": "B",
+        "text": "8"
+      },
+      {
+        "label": "C",
+        "text": "9"
+      },
+      {
+        "label": "D",
+        "text": "54"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Solve by isolating x: subtract the constant then divide by the coefficient."
+  },
+  {
+    "id": "gre_q_084",
+    "exam": "GRE",
+    "section": "Quantitative",
+    "question": "If 6x + 3 = 27, what is x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "5"
+      },
+      {
+        "label": "B",
+        "text": "3"
+      },
+      {
+        "label": "C",
+        "text": "27"
+      },
+      {
+        "label": "D",
+        "text": "4"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Solve by isolating x: subtract the constant then divide by the coefficient."
+  },
+  {
+    "id": "gre_q_085",
+    "exam": "GRE",
+    "section": "Quantitative",
+    "question": "If 2x + 4 = 14, what is x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "5"
+      },
+      {
+        "label": "B",
+        "text": "6"
+      },
+      {
+        "label": "C",
+        "text": "4"
+      },
+      {
+        "label": "D",
+        "text": "14"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Solve by isolating x: subtract the constant then divide by the coefficient."
+  },
+  {
+    "id": "gre_q_086",
+    "exam": "GRE",
+    "section": "Quantitative",
+    "question": "If 3x + 5 = 23, what is x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "7"
+      },
+      {
+        "label": "B",
+        "text": "6"
+      },
+      {
+        "label": "C",
+        "text": "5"
+      },
+      {
+        "label": "D",
+        "text": "23"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Solve by isolating x: subtract the constant then divide by the coefficient."
+  },
+  {
+    "id": "gre_q_087",
+    "exam": "GRE",
+    "section": "Quantitative",
+    "question": "If 4x + 6 = 34, what is x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "8"
+      },
+      {
+        "label": "B",
+        "text": "6"
+      },
+      {
+        "label": "C",
+        "text": "7"
+      },
+      {
+        "label": "D",
+        "text": "34"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Solve by isolating x: subtract the constant then divide by the coefficient."
+  },
+  {
+    "id": "gre_q_088",
+    "exam": "GRE",
+    "section": "Quantitative",
+    "question": "If 5x + 7 = 47, what is x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "9"
+      },
+      {
+        "label": "B",
+        "text": "7"
+      },
+      {
+        "label": "C",
+        "text": "47"
+      },
+      {
+        "label": "D",
+        "text": "8"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Solve by isolating x: subtract the constant then divide by the coefficient."
+  },
+  {
+    "id": "gre_q_089",
+    "exam": "GRE",
+    "section": "Quantitative",
+    "question": "If 6x + 8 = 62, what is x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "9"
+      },
+      {
+        "label": "B",
+        "text": "10"
+      },
+      {
+        "label": "C",
+        "text": "8"
+      },
+      {
+        "label": "D",
+        "text": "62"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Solve by isolating x: subtract the constant then divide by the coefficient."
+  },
+  {
+    "id": "gre_q_090",
+    "exam": "GRE",
+    "section": "Quantitative",
+    "question": "If 2x + 9 = 17, what is x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "5"
+      },
+      {
+        "label": "B",
+        "text": "4"
+      },
+      {
+        "label": "C",
+        "text": "3"
+      },
+      {
+        "label": "D",
+        "text": "17"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Solve by isolating x: subtract the constant then divide by the coefficient."
+  },
+  {
+    "id": "gre_q_091",
+    "exam": "GRE",
+    "section": "Quantitative",
+    "question": "If 3x + 3 = 18, what is x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "6"
+      },
+      {
+        "label": "B",
+        "text": "4"
+      },
+      {
+        "label": "C",
+        "text": "5"
+      },
+      {
+        "label": "D",
+        "text": "18"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Solve by isolating x: subtract the constant then divide by the coefficient."
+  },
+  {
+    "id": "gre_q_092",
+    "exam": "GRE",
+    "section": "Quantitative",
+    "question": "If 4x + 4 = 28, what is x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "7"
+      },
+      {
+        "label": "B",
+        "text": "5"
+      },
+      {
+        "label": "C",
+        "text": "28"
+      },
+      {
+        "label": "D",
+        "text": "6"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Solve by isolating x: subtract the constant then divide by the coefficient."
+  },
+  {
+    "id": "gre_q_093",
+    "exam": "GRE",
+    "section": "Quantitative",
+    "question": "If 5x + 5 = 40, what is x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "7"
+      },
+      {
+        "label": "B",
+        "text": "8"
+      },
+      {
+        "label": "C",
+        "text": "6"
+      },
+      {
+        "label": "D",
+        "text": "40"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Solve by isolating x: subtract the constant then divide by the coefficient."
+  },
+  {
+    "id": "gre_q_094",
+    "exam": "GRE",
+    "section": "Quantitative",
+    "question": "If 6x + 6 = 54, what is x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "9"
+      },
+      {
+        "label": "B",
+        "text": "8"
+      },
+      {
+        "label": "C",
+        "text": "7"
+      },
+      {
+        "label": "D",
+        "text": "54"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Solve by isolating x: subtract the constant then divide by the coefficient."
+  },
+  {
+    "id": "gre_q_095",
+    "exam": "GRE",
+    "section": "Quantitative",
+    "question": "If 2x + 7 = 25, what is x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "10"
+      },
+      {
+        "label": "B",
+        "text": "8"
+      },
+      {
+        "label": "C",
+        "text": "9"
+      },
+      {
+        "label": "D",
+        "text": "25"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Solve by isolating x: subtract the constant then divide by the coefficient."
+  },
+  {
+    "id": "gre_q_096",
+    "exam": "GRE",
+    "section": "Quantitative",
+    "question": "If 3x + 8 = 20, what is x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "5"
+      },
+      {
+        "label": "B",
+        "text": "3"
+      },
+      {
+        "label": "C",
+        "text": "20"
+      },
+      {
+        "label": "D",
+        "text": "4"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Solve by isolating x: subtract the constant then divide by the coefficient."
+  },
+  {
+    "id": "gre_q_097",
+    "exam": "GRE",
+    "section": "Quantitative",
+    "question": "If 4x + 9 = 29, what is x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "5"
+      },
+      {
+        "label": "B",
+        "text": "6"
+      },
+      {
+        "label": "C",
+        "text": "4"
+      },
+      {
+        "label": "D",
+        "text": "29"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Solve by isolating x: subtract the constant then divide by the coefficient."
+  },
+  {
+    "id": "gre_q_098",
+    "exam": "GRE",
+    "section": "Quantitative",
+    "question": "If 5x + 3 = 33, what is x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "7"
+      },
+      {
+        "label": "B",
+        "text": "6"
+      },
+      {
+        "label": "C",
+        "text": "5"
+      },
+      {
+        "label": "D",
+        "text": "33"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Solve by isolating x: subtract the constant then divide by the coefficient."
+  },
+  {
+    "id": "gre_q_099",
+    "exam": "GRE",
+    "section": "Quantitative",
+    "question": "If 6x + 4 = 46, what is x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "8"
+      },
+      {
+        "label": "B",
+        "text": "6"
+      },
+      {
+        "label": "C",
+        "text": "7"
+      },
+      {
+        "label": "D",
+        "text": "46"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Solve by isolating x: subtract the constant then divide by the coefficient."
+  },
+  {
+    "id": "gre_q_100",
+    "exam": "GRE",
+    "section": "Quantitative",
+    "question": "If 2x + 5 = 21, what is x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "9"
+      },
+      {
+        "label": "B",
+        "text": "7"
+      },
+      {
+        "label": "C",
+        "text": "21"
+      },
+      {
+        "label": "D",
+        "text": "8"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Solve by isolating x: subtract the constant then divide by the coefficient."
+  },
+  {
+    "id": "gre_v_001",
+    "exam": "GRE",
+    "section": "Verbal",
+    "question": "In most contexts, the word 'concise' most nearly means:",
+    "options": [
+      {
+        "label": "A",
+        "text": "confusing"
+      },
+      {
+        "label": "B",
+        "text": "brief"
+      },
+      {
+        "label": "C",
+        "text": "temporary"
+      },
+      {
+        "label": "D",
+        "text": "loud"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Vocabulary-in-context style GRE question using common academic synonyms."
+  },
+  {
+    "id": "gre_v_002",
+    "exam": "GRE",
+    "section": "Verbal",
+    "question": "In most contexts, the word 'candid' most nearly means:",
+    "options": [
+      {
+        "label": "A",
+        "text": "confusing"
+      },
+      {
+        "label": "B",
+        "text": "temporary"
+      },
+      {
+        "label": "C",
+        "text": "honest"
+      },
+      {
+        "label": "D",
+        "text": "loud"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Vocabulary-in-context style GRE question using common academic synonyms."
+  },
+  {
+    "id": "gre_v_003",
+    "exam": "GRE",
+    "section": "Verbal",
+    "question": "In most contexts, the word 'meticulous' most nearly means:",
+    "options": [
+      {
+        "label": "A",
+        "text": "confusing"
+      },
+      {
+        "label": "B",
+        "text": "temporary"
+      },
+      {
+        "label": "C",
+        "text": "loud"
+      },
+      {
+        "label": "D",
+        "text": "careful"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Vocabulary-in-context style GRE question using common academic synonyms."
+  },
+  {
+    "id": "gre_v_004",
+    "exam": "GRE",
+    "section": "Verbal",
+    "question": "In most contexts, the word 'innovative' most nearly means:",
+    "options": [
+      {
+        "label": "A",
+        "text": "creative"
+      },
+      {
+        "label": "B",
+        "text": "confusing"
+      },
+      {
+        "label": "C",
+        "text": "temporary"
+      },
+      {
+        "label": "D",
+        "text": "loud"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Vocabulary-in-context style GRE question using common academic synonyms."
+  },
+  {
+    "id": "gre_v_005",
+    "exam": "GRE",
+    "section": "Verbal",
+    "question": "In most contexts, the word 'abundant' most nearly means:",
+    "options": [
+      {
+        "label": "A",
+        "text": "confusing"
+      },
+      {
+        "label": "B",
+        "text": "plentiful"
+      },
+      {
+        "label": "C",
+        "text": "temporary"
+      },
+      {
+        "label": "D",
+        "text": "loud"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Vocabulary-in-context style GRE question using common academic synonyms."
+  },
+  {
+    "id": "gre_v_006",
+    "exam": "GRE",
+    "section": "Verbal",
+    "question": "In most contexts, the word 'concise' most nearly means:",
+    "options": [
+      {
+        "label": "A",
+        "text": "confusing"
+      },
+      {
+        "label": "B",
+        "text": "temporary"
+      },
+      {
+        "label": "C",
+        "text": "brief"
+      },
+      {
+        "label": "D",
+        "text": "loud"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Vocabulary-in-context style GRE question using common academic synonyms."
+  },
+  {
+    "id": "gre_v_007",
+    "exam": "GRE",
+    "section": "Verbal",
+    "question": "In most contexts, the word 'candid' most nearly means:",
+    "options": [
+      {
+        "label": "A",
+        "text": "confusing"
+      },
+      {
+        "label": "B",
+        "text": "temporary"
+      },
+      {
+        "label": "C",
+        "text": "loud"
+      },
+      {
+        "label": "D",
+        "text": "honest"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Vocabulary-in-context style GRE question using common academic synonyms."
+  },
+  {
+    "id": "gre_v_008",
+    "exam": "GRE",
+    "section": "Verbal",
+    "question": "In most contexts, the word 'meticulous' most nearly means:",
+    "options": [
+      {
+        "label": "A",
+        "text": "careful"
+      },
+      {
+        "label": "B",
+        "text": "confusing"
+      },
+      {
+        "label": "C",
+        "text": "temporary"
+      },
+      {
+        "label": "D",
+        "text": "loud"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Vocabulary-in-context style GRE question using common academic synonyms."
+  },
+  {
+    "id": "gre_v_009",
+    "exam": "GRE",
+    "section": "Verbal",
+    "question": "In most contexts, the word 'innovative' most nearly means:",
+    "options": [
+      {
+        "label": "A",
+        "text": "confusing"
+      },
+      {
+        "label": "B",
+        "text": "creative"
+      },
+      {
+        "label": "C",
+        "text": "temporary"
+      },
+      {
+        "label": "D",
+        "text": "loud"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Vocabulary-in-context style GRE question using common academic synonyms."
+  },
+  {
+    "id": "gre_v_010",
+    "exam": "GRE",
+    "section": "Verbal",
+    "question": "In most contexts, the word 'abundant' most nearly means:",
+    "options": [
+      {
+        "label": "A",
+        "text": "confusing"
+      },
+      {
+        "label": "B",
+        "text": "temporary"
+      },
+      {
+        "label": "C",
+        "text": "plentiful"
+      },
+      {
+        "label": "D",
+        "text": "loud"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Vocabulary-in-context style GRE question using common academic synonyms."
+  },
+  {
+    "id": "gre_v_011",
+    "exam": "GRE",
+    "section": "Verbal",
+    "question": "In most contexts, the word 'concise' most nearly means:",
+    "options": [
+      {
+        "label": "A",
+        "text": "confusing"
+      },
+      {
+        "label": "B",
+        "text": "temporary"
+      },
+      {
+        "label": "C",
+        "text": "loud"
+      },
+      {
+        "label": "D",
+        "text": "brief"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Vocabulary-in-context style GRE question using common academic synonyms."
+  },
+  {
+    "id": "gre_v_012",
+    "exam": "GRE",
+    "section": "Verbal",
+    "question": "In most contexts, the word 'candid' most nearly means:",
+    "options": [
+      {
+        "label": "A",
+        "text": "honest"
+      },
+      {
+        "label": "B",
+        "text": "confusing"
+      },
+      {
+        "label": "C",
+        "text": "temporary"
+      },
+      {
+        "label": "D",
+        "text": "loud"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Vocabulary-in-context style GRE question using common academic synonyms."
+  },
+  {
+    "id": "gre_v_013",
+    "exam": "GRE",
+    "section": "Verbal",
+    "question": "In most contexts, the word 'meticulous' most nearly means:",
+    "options": [
+      {
+        "label": "A",
+        "text": "confusing"
+      },
+      {
+        "label": "B",
+        "text": "careful"
+      },
+      {
+        "label": "C",
+        "text": "temporary"
+      },
+      {
+        "label": "D",
+        "text": "loud"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Vocabulary-in-context style GRE question using common academic synonyms."
+  },
+  {
+    "id": "gre_v_014",
+    "exam": "GRE",
+    "section": "Verbal",
+    "question": "In most contexts, the word 'innovative' most nearly means:",
+    "options": [
+      {
+        "label": "A",
+        "text": "confusing"
+      },
+      {
+        "label": "B",
+        "text": "temporary"
+      },
+      {
+        "label": "C",
+        "text": "creative"
+      },
+      {
+        "label": "D",
+        "text": "loud"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Vocabulary-in-context style GRE question using common academic synonyms."
+  },
+  {
+    "id": "gre_v_015",
+    "exam": "GRE",
+    "section": "Verbal",
+    "question": "In most contexts, the word 'abundant' most nearly means:",
+    "options": [
+      {
+        "label": "A",
+        "text": "confusing"
+      },
+      {
+        "label": "B",
+        "text": "temporary"
+      },
+      {
+        "label": "C",
+        "text": "loud"
+      },
+      {
+        "label": "D",
+        "text": "plentiful"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Vocabulary-in-context style GRE question using common academic synonyms."
+  },
+  {
+    "id": "gre_v_016",
+    "exam": "GRE",
+    "section": "Verbal",
+    "question": "In most contexts, the word 'concise' most nearly means:",
+    "options": [
+      {
+        "label": "A",
+        "text": "brief"
+      },
+      {
+        "label": "B",
+        "text": "confusing"
+      },
+      {
+        "label": "C",
+        "text": "temporary"
+      },
+      {
+        "label": "D",
+        "text": "loud"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Vocabulary-in-context style GRE question using common academic synonyms."
+  },
+  {
+    "id": "gre_v_017",
+    "exam": "GRE",
+    "section": "Verbal",
+    "question": "In most contexts, the word 'candid' most nearly means:",
+    "options": [
+      {
+        "label": "A",
+        "text": "confusing"
+      },
+      {
+        "label": "B",
+        "text": "honest"
+      },
+      {
+        "label": "C",
+        "text": "temporary"
+      },
+      {
+        "label": "D",
+        "text": "loud"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Vocabulary-in-context style GRE question using common academic synonyms."
+  },
+  {
+    "id": "gre_v_018",
+    "exam": "GRE",
+    "section": "Verbal",
+    "question": "In most contexts, the word 'meticulous' most nearly means:",
+    "options": [
+      {
+        "label": "A",
+        "text": "confusing"
+      },
+      {
+        "label": "B",
+        "text": "temporary"
+      },
+      {
+        "label": "C",
+        "text": "careful"
+      },
+      {
+        "label": "D",
+        "text": "loud"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Vocabulary-in-context style GRE question using common academic synonyms."
+  },
+  {
+    "id": "gre_v_019",
+    "exam": "GRE",
+    "section": "Verbal",
+    "question": "In most contexts, the word 'innovative' most nearly means:",
+    "options": [
+      {
+        "label": "A",
+        "text": "confusing"
+      },
+      {
+        "label": "B",
+        "text": "temporary"
+      },
+      {
+        "label": "C",
+        "text": "loud"
+      },
+      {
+        "label": "D",
+        "text": "creative"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Vocabulary-in-context style GRE question using common academic synonyms."
+  },
+  {
+    "id": "gre_v_020",
+    "exam": "GRE",
+    "section": "Verbal",
+    "question": "In most contexts, the word 'abundant' most nearly means:",
+    "options": [
+      {
+        "label": "A",
+        "text": "plentiful"
+      },
+      {
+        "label": "B",
+        "text": "confusing"
+      },
+      {
+        "label": "C",
+        "text": "temporary"
+      },
+      {
+        "label": "D",
+        "text": "loud"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Vocabulary-in-context style GRE question using common academic synonyms."
+  },
+  {
+    "id": "gre_v_021",
+    "exam": "GRE",
+    "section": "Verbal",
+    "question": "In most contexts, the word 'concise' most nearly means:",
+    "options": [
+      {
+        "label": "A",
+        "text": "confusing"
+      },
+      {
+        "label": "B",
+        "text": "brief"
+      },
+      {
+        "label": "C",
+        "text": "temporary"
+      },
+      {
+        "label": "D",
+        "text": "loud"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Vocabulary-in-context style GRE question using common academic synonyms."
+  },
+  {
+    "id": "gre_v_022",
+    "exam": "GRE",
+    "section": "Verbal",
+    "question": "In most contexts, the word 'candid' most nearly means:",
+    "options": [
+      {
+        "label": "A",
+        "text": "confusing"
+      },
+      {
+        "label": "B",
+        "text": "temporary"
+      },
+      {
+        "label": "C",
+        "text": "honest"
+      },
+      {
+        "label": "D",
+        "text": "loud"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Vocabulary-in-context style GRE question using common academic synonyms."
+  },
+  {
+    "id": "gre_v_023",
+    "exam": "GRE",
+    "section": "Verbal",
+    "question": "In most contexts, the word 'meticulous' most nearly means:",
+    "options": [
+      {
+        "label": "A",
+        "text": "confusing"
+      },
+      {
+        "label": "B",
+        "text": "temporary"
+      },
+      {
+        "label": "C",
+        "text": "loud"
+      },
+      {
+        "label": "D",
+        "text": "careful"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Vocabulary-in-context style GRE question using common academic synonyms."
+  },
+  {
+    "id": "gre_v_024",
+    "exam": "GRE",
+    "section": "Verbal",
+    "question": "In most contexts, the word 'innovative' most nearly means:",
+    "options": [
+      {
+        "label": "A",
+        "text": "creative"
+      },
+      {
+        "label": "B",
+        "text": "confusing"
+      },
+      {
+        "label": "C",
+        "text": "temporary"
+      },
+      {
+        "label": "D",
+        "text": "loud"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Vocabulary-in-context style GRE question using common academic synonyms."
+  },
+  {
+    "id": "gre_v_025",
+    "exam": "GRE",
+    "section": "Verbal",
+    "question": "In most contexts, the word 'abundant' most nearly means:",
+    "options": [
+      {
+        "label": "A",
+        "text": "confusing"
+      },
+      {
+        "label": "B",
+        "text": "plentiful"
+      },
+      {
+        "label": "C",
+        "text": "temporary"
+      },
+      {
+        "label": "D",
+        "text": "loud"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Vocabulary-in-context style GRE question using common academic synonyms."
+  },
+  {
+    "id": "gre_v_026",
+    "exam": "GRE",
+    "section": "Verbal",
+    "question": "In most contexts, the word 'concise' most nearly means:",
+    "options": [
+      {
+        "label": "A",
+        "text": "confusing"
+      },
+      {
+        "label": "B",
+        "text": "temporary"
+      },
+      {
+        "label": "C",
+        "text": "brief"
+      },
+      {
+        "label": "D",
+        "text": "loud"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Vocabulary-in-context style GRE question using common academic synonyms."
+  },
+  {
+    "id": "gre_v_027",
+    "exam": "GRE",
+    "section": "Verbal",
+    "question": "In most contexts, the word 'candid' most nearly means:",
+    "options": [
+      {
+        "label": "A",
+        "text": "confusing"
+      },
+      {
+        "label": "B",
+        "text": "temporary"
+      },
+      {
+        "label": "C",
+        "text": "loud"
+      },
+      {
+        "label": "D",
+        "text": "honest"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Vocabulary-in-context style GRE question using common academic synonyms."
+  },
+  {
+    "id": "gre_v_028",
+    "exam": "GRE",
+    "section": "Verbal",
+    "question": "In most contexts, the word 'meticulous' most nearly means:",
+    "options": [
+      {
+        "label": "A",
+        "text": "careful"
+      },
+      {
+        "label": "B",
+        "text": "confusing"
+      },
+      {
+        "label": "C",
+        "text": "temporary"
+      },
+      {
+        "label": "D",
+        "text": "loud"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Vocabulary-in-context style GRE question using common academic synonyms."
+  },
+  {
+    "id": "gre_v_029",
+    "exam": "GRE",
+    "section": "Verbal",
+    "question": "In most contexts, the word 'innovative' most nearly means:",
+    "options": [
+      {
+        "label": "A",
+        "text": "confusing"
+      },
+      {
+        "label": "B",
+        "text": "creative"
+      },
+      {
+        "label": "C",
+        "text": "temporary"
+      },
+      {
+        "label": "D",
+        "text": "loud"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Vocabulary-in-context style GRE question using common academic synonyms."
+  },
+  {
+    "id": "gre_v_030",
+    "exam": "GRE",
+    "section": "Verbal",
+    "question": "In most contexts, the word 'abundant' most nearly means:",
+    "options": [
+      {
+        "label": "A",
+        "text": "confusing"
+      },
+      {
+        "label": "B",
+        "text": "temporary"
+      },
+      {
+        "label": "C",
+        "text": "plentiful"
+      },
+      {
+        "label": "D",
+        "text": "loud"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Vocabulary-in-context style GRE question using common academic synonyms."
+  },
+  {
+    "id": "gre_v_031",
+    "exam": "GRE",
+    "section": "Verbal",
+    "question": "In most contexts, the word 'concise' most nearly means:",
+    "options": [
+      {
+        "label": "A",
+        "text": "confusing"
+      },
+      {
+        "label": "B",
+        "text": "temporary"
+      },
+      {
+        "label": "C",
+        "text": "loud"
+      },
+      {
+        "label": "D",
+        "text": "brief"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Vocabulary-in-context style GRE question using common academic synonyms."
+  },
+  {
+    "id": "gre_v_032",
+    "exam": "GRE",
+    "section": "Verbal",
+    "question": "In most contexts, the word 'candid' most nearly means:",
+    "options": [
+      {
+        "label": "A",
+        "text": "honest"
+      },
+      {
+        "label": "B",
+        "text": "confusing"
+      },
+      {
+        "label": "C",
+        "text": "temporary"
+      },
+      {
+        "label": "D",
+        "text": "loud"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Vocabulary-in-context style GRE question using common academic synonyms."
+  },
+  {
+    "id": "gre_v_033",
+    "exam": "GRE",
+    "section": "Verbal",
+    "question": "In most contexts, the word 'meticulous' most nearly means:",
+    "options": [
+      {
+        "label": "A",
+        "text": "confusing"
+      },
+      {
+        "label": "B",
+        "text": "careful"
+      },
+      {
+        "label": "C",
+        "text": "temporary"
+      },
+      {
+        "label": "D",
+        "text": "loud"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Vocabulary-in-context style GRE question using common academic synonyms."
+  },
+  {
+    "id": "gre_v_034",
+    "exam": "GRE",
+    "section": "Verbal",
+    "question": "In most contexts, the word 'innovative' most nearly means:",
+    "options": [
+      {
+        "label": "A",
+        "text": "confusing"
+      },
+      {
+        "label": "B",
+        "text": "temporary"
+      },
+      {
+        "label": "C",
+        "text": "creative"
+      },
+      {
+        "label": "D",
+        "text": "loud"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Vocabulary-in-context style GRE question using common academic synonyms."
+  },
+  {
+    "id": "gre_v_035",
+    "exam": "GRE",
+    "section": "Verbal",
+    "question": "In most contexts, the word 'abundant' most nearly means:",
+    "options": [
+      {
+        "label": "A",
+        "text": "confusing"
+      },
+      {
+        "label": "B",
+        "text": "temporary"
+      },
+      {
+        "label": "C",
+        "text": "loud"
+      },
+      {
+        "label": "D",
+        "text": "plentiful"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Vocabulary-in-context style GRE question using common academic synonyms."
+  },
+  {
+    "id": "gre_v_036",
+    "exam": "GRE",
+    "section": "Verbal",
+    "question": "In most contexts, the word 'concise' most nearly means:",
+    "options": [
+      {
+        "label": "A",
+        "text": "brief"
+      },
+      {
+        "label": "B",
+        "text": "confusing"
+      },
+      {
+        "label": "C",
+        "text": "temporary"
+      },
+      {
+        "label": "D",
+        "text": "loud"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Vocabulary-in-context style GRE question using common academic synonyms."
+  },
+  {
+    "id": "gre_v_037",
+    "exam": "GRE",
+    "section": "Verbal",
+    "question": "In most contexts, the word 'candid' most nearly means:",
+    "options": [
+      {
+        "label": "A",
+        "text": "confusing"
+      },
+      {
+        "label": "B",
+        "text": "honest"
+      },
+      {
+        "label": "C",
+        "text": "temporary"
+      },
+      {
+        "label": "D",
+        "text": "loud"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Vocabulary-in-context style GRE question using common academic synonyms."
+  },
+  {
+    "id": "gre_v_038",
+    "exam": "GRE",
+    "section": "Verbal",
+    "question": "In most contexts, the word 'meticulous' most nearly means:",
+    "options": [
+      {
+        "label": "A",
+        "text": "confusing"
+      },
+      {
+        "label": "B",
+        "text": "temporary"
+      },
+      {
+        "label": "C",
+        "text": "careful"
+      },
+      {
+        "label": "D",
+        "text": "loud"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Vocabulary-in-context style GRE question using common academic synonyms."
+  },
+  {
+    "id": "gre_v_039",
+    "exam": "GRE",
+    "section": "Verbal",
+    "question": "In most contexts, the word 'innovative' most nearly means:",
+    "options": [
+      {
+        "label": "A",
+        "text": "confusing"
+      },
+      {
+        "label": "B",
+        "text": "temporary"
+      },
+      {
+        "label": "C",
+        "text": "loud"
+      },
+      {
+        "label": "D",
+        "text": "creative"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Vocabulary-in-context style GRE question using common academic synonyms."
+  },
+  {
+    "id": "gre_v_040",
+    "exam": "GRE",
+    "section": "Verbal",
+    "question": "In most contexts, the word 'abundant' most nearly means:",
+    "options": [
+      {
+        "label": "A",
+        "text": "plentiful"
+      },
+      {
+        "label": "B",
+        "text": "confusing"
+      },
+      {
+        "label": "C",
+        "text": "temporary"
+      },
+      {
+        "label": "D",
+        "text": "loud"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Vocabulary-in-context style GRE question using common academic synonyms."
+  },
+  {
+    "id": "gre_v_041",
+    "exam": "GRE",
+    "section": "Verbal",
+    "question": "In most contexts, the word 'concise' most nearly means:",
+    "options": [
+      {
+        "label": "A",
+        "text": "confusing"
+      },
+      {
+        "label": "B",
+        "text": "brief"
+      },
+      {
+        "label": "C",
+        "text": "temporary"
+      },
+      {
+        "label": "D",
+        "text": "loud"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Vocabulary-in-context style GRE question using common academic synonyms."
+  },
+  {
+    "id": "gre_v_042",
+    "exam": "GRE",
+    "section": "Verbal",
+    "question": "In most contexts, the word 'candid' most nearly means:",
+    "options": [
+      {
+        "label": "A",
+        "text": "confusing"
+      },
+      {
+        "label": "B",
+        "text": "temporary"
+      },
+      {
+        "label": "C",
+        "text": "honest"
+      },
+      {
+        "label": "D",
+        "text": "loud"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Vocabulary-in-context style GRE question using common academic synonyms."
+  },
+  {
+    "id": "gre_v_043",
+    "exam": "GRE",
+    "section": "Verbal",
+    "question": "In most contexts, the word 'meticulous' most nearly means:",
+    "options": [
+      {
+        "label": "A",
+        "text": "confusing"
+      },
+      {
+        "label": "B",
+        "text": "temporary"
+      },
+      {
+        "label": "C",
+        "text": "loud"
+      },
+      {
+        "label": "D",
+        "text": "careful"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Vocabulary-in-context style GRE question using common academic synonyms."
+  },
+  {
+    "id": "gre_v_044",
+    "exam": "GRE",
+    "section": "Verbal",
+    "question": "In most contexts, the word 'innovative' most nearly means:",
+    "options": [
+      {
+        "label": "A",
+        "text": "creative"
+      },
+      {
+        "label": "B",
+        "text": "confusing"
+      },
+      {
+        "label": "C",
+        "text": "temporary"
+      },
+      {
+        "label": "D",
+        "text": "loud"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Vocabulary-in-context style GRE question using common academic synonyms."
+  },
+  {
+    "id": "gre_v_045",
+    "exam": "GRE",
+    "section": "Verbal",
+    "question": "In most contexts, the word 'abundant' most nearly means:",
+    "options": [
+      {
+        "label": "A",
+        "text": "confusing"
+      },
+      {
+        "label": "B",
+        "text": "plentiful"
+      },
+      {
+        "label": "C",
+        "text": "temporary"
+      },
+      {
+        "label": "D",
+        "text": "loud"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Vocabulary-in-context style GRE question using common academic synonyms."
+  },
+  {
+    "id": "gre_v_046",
+    "exam": "GRE",
+    "section": "Verbal",
+    "question": "In most contexts, the word 'concise' most nearly means:",
+    "options": [
+      {
+        "label": "A",
+        "text": "confusing"
+      },
+      {
+        "label": "B",
+        "text": "temporary"
+      },
+      {
+        "label": "C",
+        "text": "brief"
+      },
+      {
+        "label": "D",
+        "text": "loud"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Vocabulary-in-context style GRE question using common academic synonyms."
+  },
+  {
+    "id": "gre_v_047",
+    "exam": "GRE",
+    "section": "Verbal",
+    "question": "In most contexts, the word 'candid' most nearly means:",
+    "options": [
+      {
+        "label": "A",
+        "text": "confusing"
+      },
+      {
+        "label": "B",
+        "text": "temporary"
+      },
+      {
+        "label": "C",
+        "text": "loud"
+      },
+      {
+        "label": "D",
+        "text": "honest"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Vocabulary-in-context style GRE question using common academic synonyms."
+  },
+  {
+    "id": "gre_v_048",
+    "exam": "GRE",
+    "section": "Verbal",
+    "question": "In most contexts, the word 'meticulous' most nearly means:",
+    "options": [
+      {
+        "label": "A",
+        "text": "careful"
+      },
+      {
+        "label": "B",
+        "text": "confusing"
+      },
+      {
+        "label": "C",
+        "text": "temporary"
+      },
+      {
+        "label": "D",
+        "text": "loud"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Vocabulary-in-context style GRE question using common academic synonyms."
+  },
+  {
+    "id": "gre_v_049",
+    "exam": "GRE",
+    "section": "Verbal",
+    "question": "In most contexts, the word 'innovative' most nearly means:",
+    "options": [
+      {
+        "label": "A",
+        "text": "confusing"
+      },
+      {
+        "label": "B",
+        "text": "creative"
+      },
+      {
+        "label": "C",
+        "text": "temporary"
+      },
+      {
+        "label": "D",
+        "text": "loud"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Vocabulary-in-context style GRE question using common academic synonyms."
+  },
+  {
+    "id": "gre_v_050",
+    "exam": "GRE",
+    "section": "Verbal",
+    "question": "In most contexts, the word 'abundant' most nearly means:",
+    "options": [
+      {
+        "label": "A",
+        "text": "confusing"
+      },
+      {
+        "label": "B",
+        "text": "temporary"
+      },
+      {
+        "label": "C",
+        "text": "plentiful"
+      },
+      {
+        "label": "D",
+        "text": "loud"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Vocabulary-in-context style GRE question using common academic synonyms."
+  },
+  {
+    "id": "gre_v_051",
+    "exam": "GRE",
+    "section": "Verbal",
+    "question": "In most contexts, the word 'concise' most nearly means:",
+    "options": [
+      {
+        "label": "A",
+        "text": "confusing"
+      },
+      {
+        "label": "B",
+        "text": "temporary"
+      },
+      {
+        "label": "C",
+        "text": "loud"
+      },
+      {
+        "label": "D",
+        "text": "brief"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Vocabulary-in-context style GRE question using common academic synonyms."
+  },
+  {
+    "id": "gre_v_052",
+    "exam": "GRE",
+    "section": "Verbal",
+    "question": "In most contexts, the word 'candid' most nearly means:",
+    "options": [
+      {
+        "label": "A",
+        "text": "honest"
+      },
+      {
+        "label": "B",
+        "text": "confusing"
+      },
+      {
+        "label": "C",
+        "text": "temporary"
+      },
+      {
+        "label": "D",
+        "text": "loud"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Vocabulary-in-context style GRE question using common academic synonyms."
+  },
+  {
+    "id": "gre_v_053",
+    "exam": "GRE",
+    "section": "Verbal",
+    "question": "In most contexts, the word 'meticulous' most nearly means:",
+    "options": [
+      {
+        "label": "A",
+        "text": "confusing"
+      },
+      {
+        "label": "B",
+        "text": "careful"
+      },
+      {
+        "label": "C",
+        "text": "temporary"
+      },
+      {
+        "label": "D",
+        "text": "loud"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Vocabulary-in-context style GRE question using common academic synonyms."
+  },
+  {
+    "id": "gre_v_054",
+    "exam": "GRE",
+    "section": "Verbal",
+    "question": "In most contexts, the word 'innovative' most nearly means:",
+    "options": [
+      {
+        "label": "A",
+        "text": "confusing"
+      },
+      {
+        "label": "B",
+        "text": "temporary"
+      },
+      {
+        "label": "C",
+        "text": "creative"
+      },
+      {
+        "label": "D",
+        "text": "loud"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Vocabulary-in-context style GRE question using common academic synonyms."
+  },
+  {
+    "id": "gre_v_055",
+    "exam": "GRE",
+    "section": "Verbal",
+    "question": "In most contexts, the word 'abundant' most nearly means:",
+    "options": [
+      {
+        "label": "A",
+        "text": "confusing"
+      },
+      {
+        "label": "B",
+        "text": "temporary"
+      },
+      {
+        "label": "C",
+        "text": "loud"
+      },
+      {
+        "label": "D",
+        "text": "plentiful"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Vocabulary-in-context style GRE question using common academic synonyms."
+  },
+  {
+    "id": "gre_v_056",
+    "exam": "GRE",
+    "section": "Verbal",
+    "question": "In most contexts, the word 'concise' most nearly means:",
+    "options": [
+      {
+        "label": "A",
+        "text": "brief"
+      },
+      {
+        "label": "B",
+        "text": "confusing"
+      },
+      {
+        "label": "C",
+        "text": "temporary"
+      },
+      {
+        "label": "D",
+        "text": "loud"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Vocabulary-in-context style GRE question using common academic synonyms."
+  },
+  {
+    "id": "gre_v_057",
+    "exam": "GRE",
+    "section": "Verbal",
+    "question": "In most contexts, the word 'candid' most nearly means:",
+    "options": [
+      {
+        "label": "A",
+        "text": "confusing"
+      },
+      {
+        "label": "B",
+        "text": "honest"
+      },
+      {
+        "label": "C",
+        "text": "temporary"
+      },
+      {
+        "label": "D",
+        "text": "loud"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Vocabulary-in-context style GRE question using common academic synonyms."
+  },
+  {
+    "id": "gre_v_058",
+    "exam": "GRE",
+    "section": "Verbal",
+    "question": "In most contexts, the word 'meticulous' most nearly means:",
+    "options": [
+      {
+        "label": "A",
+        "text": "confusing"
+      },
+      {
+        "label": "B",
+        "text": "temporary"
+      },
+      {
+        "label": "C",
+        "text": "careful"
+      },
+      {
+        "label": "D",
+        "text": "loud"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Vocabulary-in-context style GRE question using common academic synonyms."
+  },
+  {
+    "id": "gre_v_059",
+    "exam": "GRE",
+    "section": "Verbal",
+    "question": "In most contexts, the word 'innovative' most nearly means:",
+    "options": [
+      {
+        "label": "A",
+        "text": "confusing"
+      },
+      {
+        "label": "B",
+        "text": "temporary"
+      },
+      {
+        "label": "C",
+        "text": "loud"
+      },
+      {
+        "label": "D",
+        "text": "creative"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Vocabulary-in-context style GRE question using common academic synonyms."
+  },
+  {
+    "id": "gre_v_060",
+    "exam": "GRE",
+    "section": "Verbal",
+    "question": "In most contexts, the word 'abundant' most nearly means:",
+    "options": [
+      {
+        "label": "A",
+        "text": "plentiful"
+      },
+      {
+        "label": "B",
+        "text": "confusing"
+      },
+      {
+        "label": "C",
+        "text": "temporary"
+      },
+      {
+        "label": "D",
+        "text": "loud"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Vocabulary-in-context style GRE question using common academic synonyms."
+  },
+  {
+    "id": "gre_v_061",
+    "exam": "GRE",
+    "section": "Verbal",
+    "question": "In most contexts, the word 'concise' most nearly means:",
+    "options": [
+      {
+        "label": "A",
+        "text": "confusing"
+      },
+      {
+        "label": "B",
+        "text": "brief"
+      },
+      {
+        "label": "C",
+        "text": "temporary"
+      },
+      {
+        "label": "D",
+        "text": "loud"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Vocabulary-in-context style GRE question using common academic synonyms."
+  },
+  {
+    "id": "gre_v_062",
+    "exam": "GRE",
+    "section": "Verbal",
+    "question": "In most contexts, the word 'candid' most nearly means:",
+    "options": [
+      {
+        "label": "A",
+        "text": "confusing"
+      },
+      {
+        "label": "B",
+        "text": "temporary"
+      },
+      {
+        "label": "C",
+        "text": "honest"
+      },
+      {
+        "label": "D",
+        "text": "loud"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Vocabulary-in-context style GRE question using common academic synonyms."
+  },
+  {
+    "id": "gre_v_063",
+    "exam": "GRE",
+    "section": "Verbal",
+    "question": "In most contexts, the word 'meticulous' most nearly means:",
+    "options": [
+      {
+        "label": "A",
+        "text": "confusing"
+      },
+      {
+        "label": "B",
+        "text": "temporary"
+      },
+      {
+        "label": "C",
+        "text": "loud"
+      },
+      {
+        "label": "D",
+        "text": "careful"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Vocabulary-in-context style GRE question using common academic synonyms."
+  },
+  {
+    "id": "gre_v_064",
+    "exam": "GRE",
+    "section": "Verbal",
+    "question": "In most contexts, the word 'innovative' most nearly means:",
+    "options": [
+      {
+        "label": "A",
+        "text": "creative"
+      },
+      {
+        "label": "B",
+        "text": "confusing"
+      },
+      {
+        "label": "C",
+        "text": "temporary"
+      },
+      {
+        "label": "D",
+        "text": "loud"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Vocabulary-in-context style GRE question using common academic synonyms."
+  },
+  {
+    "id": "gre_v_065",
+    "exam": "GRE",
+    "section": "Verbal",
+    "question": "In most contexts, the word 'abundant' most nearly means:",
+    "options": [
+      {
+        "label": "A",
+        "text": "confusing"
+      },
+      {
+        "label": "B",
+        "text": "plentiful"
+      },
+      {
+        "label": "C",
+        "text": "temporary"
+      },
+      {
+        "label": "D",
+        "text": "loud"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Vocabulary-in-context style GRE question using common academic synonyms."
+  },
+  {
+    "id": "gre_v_066",
+    "exam": "GRE",
+    "section": "Verbal",
+    "question": "In most contexts, the word 'concise' most nearly means:",
+    "options": [
+      {
+        "label": "A",
+        "text": "confusing"
+      },
+      {
+        "label": "B",
+        "text": "temporary"
+      },
+      {
+        "label": "C",
+        "text": "brief"
+      },
+      {
+        "label": "D",
+        "text": "loud"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Vocabulary-in-context style GRE question using common academic synonyms."
+  },
+  {
+    "id": "gre_v_067",
+    "exam": "GRE",
+    "section": "Verbal",
+    "question": "In most contexts, the word 'candid' most nearly means:",
+    "options": [
+      {
+        "label": "A",
+        "text": "confusing"
+      },
+      {
+        "label": "B",
+        "text": "temporary"
+      },
+      {
+        "label": "C",
+        "text": "loud"
+      },
+      {
+        "label": "D",
+        "text": "honest"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Vocabulary-in-context style GRE question using common academic synonyms."
+  },
+  {
+    "id": "gre_v_068",
+    "exam": "GRE",
+    "section": "Verbal",
+    "question": "In most contexts, the word 'meticulous' most nearly means:",
+    "options": [
+      {
+        "label": "A",
+        "text": "careful"
+      },
+      {
+        "label": "B",
+        "text": "confusing"
+      },
+      {
+        "label": "C",
+        "text": "temporary"
+      },
+      {
+        "label": "D",
+        "text": "loud"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Vocabulary-in-context style GRE question using common academic synonyms."
+  },
+  {
+    "id": "gre_v_069",
+    "exam": "GRE",
+    "section": "Verbal",
+    "question": "In most contexts, the word 'innovative' most nearly means:",
+    "options": [
+      {
+        "label": "A",
+        "text": "confusing"
+      },
+      {
+        "label": "B",
+        "text": "creative"
+      },
+      {
+        "label": "C",
+        "text": "temporary"
+      },
+      {
+        "label": "D",
+        "text": "loud"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Vocabulary-in-context style GRE question using common academic synonyms."
+  },
+  {
+    "id": "gre_v_070",
+    "exam": "GRE",
+    "section": "Verbal",
+    "question": "In most contexts, the word 'abundant' most nearly means:",
+    "options": [
+      {
+        "label": "A",
+        "text": "confusing"
+      },
+      {
+        "label": "B",
+        "text": "temporary"
+      },
+      {
+        "label": "C",
+        "text": "plentiful"
+      },
+      {
+        "label": "D",
+        "text": "loud"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Vocabulary-in-context style GRE question using common academic synonyms."
+  },
+  {
+    "id": "gre_v_071",
+    "exam": "GRE",
+    "section": "Verbal",
+    "question": "In most contexts, the word 'concise' most nearly means:",
+    "options": [
+      {
+        "label": "A",
+        "text": "confusing"
+      },
+      {
+        "label": "B",
+        "text": "temporary"
+      },
+      {
+        "label": "C",
+        "text": "loud"
+      },
+      {
+        "label": "D",
+        "text": "brief"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Vocabulary-in-context style GRE question using common academic synonyms."
+  },
+  {
+    "id": "gre_v_072",
+    "exam": "GRE",
+    "section": "Verbal",
+    "question": "In most contexts, the word 'candid' most nearly means:",
+    "options": [
+      {
+        "label": "A",
+        "text": "honest"
+      },
+      {
+        "label": "B",
+        "text": "confusing"
+      },
+      {
+        "label": "C",
+        "text": "temporary"
+      },
+      {
+        "label": "D",
+        "text": "loud"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Vocabulary-in-context style GRE question using common academic synonyms."
+  },
+  {
+    "id": "gre_v_073",
+    "exam": "GRE",
+    "section": "Verbal",
+    "question": "In most contexts, the word 'meticulous' most nearly means:",
+    "options": [
+      {
+        "label": "A",
+        "text": "confusing"
+      },
+      {
+        "label": "B",
+        "text": "careful"
+      },
+      {
+        "label": "C",
+        "text": "temporary"
+      },
+      {
+        "label": "D",
+        "text": "loud"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Vocabulary-in-context style GRE question using common academic synonyms."
+  },
+  {
+    "id": "gre_v_074",
+    "exam": "GRE",
+    "section": "Verbal",
+    "question": "In most contexts, the word 'innovative' most nearly means:",
+    "options": [
+      {
+        "label": "A",
+        "text": "confusing"
+      },
+      {
+        "label": "B",
+        "text": "temporary"
+      },
+      {
+        "label": "C",
+        "text": "creative"
+      },
+      {
+        "label": "D",
+        "text": "loud"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Vocabulary-in-context style GRE question using common academic synonyms."
+  },
+  {
+    "id": "gre_v_075",
+    "exam": "GRE",
+    "section": "Verbal",
+    "question": "In most contexts, the word 'abundant' most nearly means:",
+    "options": [
+      {
+        "label": "A",
+        "text": "confusing"
+      },
+      {
+        "label": "B",
+        "text": "temporary"
+      },
+      {
+        "label": "C",
+        "text": "loud"
+      },
+      {
+        "label": "D",
+        "text": "plentiful"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Vocabulary-in-context style GRE question using common academic synonyms."
+  },
+  {
+    "id": "gre_v_076",
+    "exam": "GRE",
+    "section": "Verbal",
+    "question": "In most contexts, the word 'concise' most nearly means:",
+    "options": [
+      {
+        "label": "A",
+        "text": "brief"
+      },
+      {
+        "label": "B",
+        "text": "confusing"
+      },
+      {
+        "label": "C",
+        "text": "temporary"
+      },
+      {
+        "label": "D",
+        "text": "loud"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Vocabulary-in-context style GRE question using common academic synonyms."
+  },
+  {
+    "id": "gre_v_077",
+    "exam": "GRE",
+    "section": "Verbal",
+    "question": "In most contexts, the word 'candid' most nearly means:",
+    "options": [
+      {
+        "label": "A",
+        "text": "confusing"
+      },
+      {
+        "label": "B",
+        "text": "honest"
+      },
+      {
+        "label": "C",
+        "text": "temporary"
+      },
+      {
+        "label": "D",
+        "text": "loud"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Vocabulary-in-context style GRE question using common academic synonyms."
+  },
+  {
+    "id": "gre_v_078",
+    "exam": "GRE",
+    "section": "Verbal",
+    "question": "In most contexts, the word 'meticulous' most nearly means:",
+    "options": [
+      {
+        "label": "A",
+        "text": "confusing"
+      },
+      {
+        "label": "B",
+        "text": "temporary"
+      },
+      {
+        "label": "C",
+        "text": "careful"
+      },
+      {
+        "label": "D",
+        "text": "loud"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Vocabulary-in-context style GRE question using common academic synonyms."
+  },
+  {
+    "id": "gre_v_079",
+    "exam": "GRE",
+    "section": "Verbal",
+    "question": "In most contexts, the word 'innovative' most nearly means:",
+    "options": [
+      {
+        "label": "A",
+        "text": "confusing"
+      },
+      {
+        "label": "B",
+        "text": "temporary"
+      },
+      {
+        "label": "C",
+        "text": "loud"
+      },
+      {
+        "label": "D",
+        "text": "creative"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Vocabulary-in-context style GRE question using common academic synonyms."
+  },
+  {
+    "id": "gre_v_080",
+    "exam": "GRE",
+    "section": "Verbal",
+    "question": "In most contexts, the word 'abundant' most nearly means:",
+    "options": [
+      {
+        "label": "A",
+        "text": "plentiful"
+      },
+      {
+        "label": "B",
+        "text": "confusing"
+      },
+      {
+        "label": "C",
+        "text": "temporary"
+      },
+      {
+        "label": "D",
+        "text": "loud"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Vocabulary-in-context style GRE question using common academic synonyms."
+  },
+  {
+    "id": "gre_v_081",
+    "exam": "GRE",
+    "section": "Verbal",
+    "question": "In most contexts, the word 'concise' most nearly means:",
+    "options": [
+      {
+        "label": "A",
+        "text": "confusing"
+      },
+      {
+        "label": "B",
+        "text": "brief"
+      },
+      {
+        "label": "C",
+        "text": "temporary"
+      },
+      {
+        "label": "D",
+        "text": "loud"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Vocabulary-in-context style GRE question using common academic synonyms."
+  },
+  {
+    "id": "gre_v_082",
+    "exam": "GRE",
+    "section": "Verbal",
+    "question": "In most contexts, the word 'candid' most nearly means:",
+    "options": [
+      {
+        "label": "A",
+        "text": "confusing"
+      },
+      {
+        "label": "B",
+        "text": "temporary"
+      },
+      {
+        "label": "C",
+        "text": "honest"
+      },
+      {
+        "label": "D",
+        "text": "loud"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Vocabulary-in-context style GRE question using common academic synonyms."
+  },
+  {
+    "id": "gre_v_083",
+    "exam": "GRE",
+    "section": "Verbal",
+    "question": "In most contexts, the word 'meticulous' most nearly means:",
+    "options": [
+      {
+        "label": "A",
+        "text": "confusing"
+      },
+      {
+        "label": "B",
+        "text": "temporary"
+      },
+      {
+        "label": "C",
+        "text": "loud"
+      },
+      {
+        "label": "D",
+        "text": "careful"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Vocabulary-in-context style GRE question using common academic synonyms."
+  },
+  {
+    "id": "gre_v_084",
+    "exam": "GRE",
+    "section": "Verbal",
+    "question": "In most contexts, the word 'innovative' most nearly means:",
+    "options": [
+      {
+        "label": "A",
+        "text": "creative"
+      },
+      {
+        "label": "B",
+        "text": "confusing"
+      },
+      {
+        "label": "C",
+        "text": "temporary"
+      },
+      {
+        "label": "D",
+        "text": "loud"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Vocabulary-in-context style GRE question using common academic synonyms."
+  },
+  {
+    "id": "gre_v_085",
+    "exam": "GRE",
+    "section": "Verbal",
+    "question": "In most contexts, the word 'abundant' most nearly means:",
+    "options": [
+      {
+        "label": "A",
+        "text": "confusing"
+      },
+      {
+        "label": "B",
+        "text": "plentiful"
+      },
+      {
+        "label": "C",
+        "text": "temporary"
+      },
+      {
+        "label": "D",
+        "text": "loud"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Vocabulary-in-context style GRE question using common academic synonyms."
+  },
+  {
+    "id": "gre_v_086",
+    "exam": "GRE",
+    "section": "Verbal",
+    "question": "In most contexts, the word 'concise' most nearly means:",
+    "options": [
+      {
+        "label": "A",
+        "text": "confusing"
+      },
+      {
+        "label": "B",
+        "text": "temporary"
+      },
+      {
+        "label": "C",
+        "text": "brief"
+      },
+      {
+        "label": "D",
+        "text": "loud"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Vocabulary-in-context style GRE question using common academic synonyms."
+  },
+  {
+    "id": "gre_v_087",
+    "exam": "GRE",
+    "section": "Verbal",
+    "question": "In most contexts, the word 'candid' most nearly means:",
+    "options": [
+      {
+        "label": "A",
+        "text": "confusing"
+      },
+      {
+        "label": "B",
+        "text": "temporary"
+      },
+      {
+        "label": "C",
+        "text": "loud"
+      },
+      {
+        "label": "D",
+        "text": "honest"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Vocabulary-in-context style GRE question using common academic synonyms."
+  },
+  {
+    "id": "gre_v_088",
+    "exam": "GRE",
+    "section": "Verbal",
+    "question": "In most contexts, the word 'meticulous' most nearly means:",
+    "options": [
+      {
+        "label": "A",
+        "text": "careful"
+      },
+      {
+        "label": "B",
+        "text": "confusing"
+      },
+      {
+        "label": "C",
+        "text": "temporary"
+      },
+      {
+        "label": "D",
+        "text": "loud"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Vocabulary-in-context style GRE question using common academic synonyms."
+  },
+  {
+    "id": "gre_v_089",
+    "exam": "GRE",
+    "section": "Verbal",
+    "question": "In most contexts, the word 'innovative' most nearly means:",
+    "options": [
+      {
+        "label": "A",
+        "text": "confusing"
+      },
+      {
+        "label": "B",
+        "text": "creative"
+      },
+      {
+        "label": "C",
+        "text": "temporary"
+      },
+      {
+        "label": "D",
+        "text": "loud"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Vocabulary-in-context style GRE question using common academic synonyms."
+  },
+  {
+    "id": "gre_v_090",
+    "exam": "GRE",
+    "section": "Verbal",
+    "question": "In most contexts, the word 'abundant' most nearly means:",
+    "options": [
+      {
+        "label": "A",
+        "text": "confusing"
+      },
+      {
+        "label": "B",
+        "text": "temporary"
+      },
+      {
+        "label": "C",
+        "text": "plentiful"
+      },
+      {
+        "label": "D",
+        "text": "loud"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Vocabulary-in-context style GRE question using common academic synonyms."
+  },
+  {
+    "id": "gre_v_091",
+    "exam": "GRE",
+    "section": "Verbal",
+    "question": "In most contexts, the word 'concise' most nearly means:",
+    "options": [
+      {
+        "label": "A",
+        "text": "confusing"
+      },
+      {
+        "label": "B",
+        "text": "temporary"
+      },
+      {
+        "label": "C",
+        "text": "loud"
+      },
+      {
+        "label": "D",
+        "text": "brief"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Vocabulary-in-context style GRE question using common academic synonyms."
+  },
+  {
+    "id": "gre_v_092",
+    "exam": "GRE",
+    "section": "Verbal",
+    "question": "In most contexts, the word 'candid' most nearly means:",
+    "options": [
+      {
+        "label": "A",
+        "text": "honest"
+      },
+      {
+        "label": "B",
+        "text": "confusing"
+      },
+      {
+        "label": "C",
+        "text": "temporary"
+      },
+      {
+        "label": "D",
+        "text": "loud"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Vocabulary-in-context style GRE question using common academic synonyms."
+  },
+  {
+    "id": "gre_v_093",
+    "exam": "GRE",
+    "section": "Verbal",
+    "question": "In most contexts, the word 'meticulous' most nearly means:",
+    "options": [
+      {
+        "label": "A",
+        "text": "confusing"
+      },
+      {
+        "label": "B",
+        "text": "careful"
+      },
+      {
+        "label": "C",
+        "text": "temporary"
+      },
+      {
+        "label": "D",
+        "text": "loud"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Vocabulary-in-context style GRE question using common academic synonyms."
+  },
+  {
+    "id": "gre_v_094",
+    "exam": "GRE",
+    "section": "Verbal",
+    "question": "In most contexts, the word 'innovative' most nearly means:",
+    "options": [
+      {
+        "label": "A",
+        "text": "confusing"
+      },
+      {
+        "label": "B",
+        "text": "temporary"
+      },
+      {
+        "label": "C",
+        "text": "creative"
+      },
+      {
+        "label": "D",
+        "text": "loud"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Vocabulary-in-context style GRE question using common academic synonyms."
+  },
+  {
+    "id": "gre_v_095",
+    "exam": "GRE",
+    "section": "Verbal",
+    "question": "In most contexts, the word 'abundant' most nearly means:",
+    "options": [
+      {
+        "label": "A",
+        "text": "confusing"
+      },
+      {
+        "label": "B",
+        "text": "temporary"
+      },
+      {
+        "label": "C",
+        "text": "loud"
+      },
+      {
+        "label": "D",
+        "text": "plentiful"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Vocabulary-in-context style GRE question using common academic synonyms."
+  },
+  {
+    "id": "gre_v_096",
+    "exam": "GRE",
+    "section": "Verbal",
+    "question": "In most contexts, the word 'concise' most nearly means:",
+    "options": [
+      {
+        "label": "A",
+        "text": "brief"
+      },
+      {
+        "label": "B",
+        "text": "confusing"
+      },
+      {
+        "label": "C",
+        "text": "temporary"
+      },
+      {
+        "label": "D",
+        "text": "loud"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Vocabulary-in-context style GRE question using common academic synonyms."
+  },
+  {
+    "id": "gre_v_097",
+    "exam": "GRE",
+    "section": "Verbal",
+    "question": "In most contexts, the word 'candid' most nearly means:",
+    "options": [
+      {
+        "label": "A",
+        "text": "confusing"
+      },
+      {
+        "label": "B",
+        "text": "honest"
+      },
+      {
+        "label": "C",
+        "text": "temporary"
+      },
+      {
+        "label": "D",
+        "text": "loud"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Vocabulary-in-context style GRE question using common academic synonyms."
+  },
+  {
+    "id": "gre_v_098",
+    "exam": "GRE",
+    "section": "Verbal",
+    "question": "In most contexts, the word 'meticulous' most nearly means:",
+    "options": [
+      {
+        "label": "A",
+        "text": "confusing"
+      },
+      {
+        "label": "B",
+        "text": "temporary"
+      },
+      {
+        "label": "C",
+        "text": "careful"
+      },
+      {
+        "label": "D",
+        "text": "loud"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Vocabulary-in-context style GRE question using common academic synonyms."
+  },
+  {
+    "id": "gre_v_099",
+    "exam": "GRE",
+    "section": "Verbal",
+    "question": "In most contexts, the word 'innovative' most nearly means:",
+    "options": [
+      {
+        "label": "A",
+        "text": "confusing"
+      },
+      {
+        "label": "B",
+        "text": "temporary"
+      },
+      {
+        "label": "C",
+        "text": "loud"
+      },
+      {
+        "label": "D",
+        "text": "creative"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Vocabulary-in-context style GRE question using common academic synonyms."
+  },
+  {
+    "id": "gre_v_100",
+    "exam": "GRE",
+    "section": "Verbal",
+    "question": "In most contexts, the word 'abundant' most nearly means:",
+    "options": [
+      {
+        "label": "A",
+        "text": "plentiful"
+      },
+      {
+        "label": "B",
+        "text": "confusing"
+      },
+      {
+        "label": "C",
+        "text": "temporary"
+      },
+      {
+        "label": "D",
+        "text": "loud"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Vocabulary-in-context style GRE question using common academic synonyms."
+  }
+]
