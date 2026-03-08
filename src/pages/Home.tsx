@@ -670,6 +670,8 @@ const Home = () => {
               { id: 'daily-quests', icon: Star, label: 'Daily Quests', color: 'bg-amber-100 dark:bg-amber-900/30', iconColor: 'text-amber-600 dark:text-amber-400', to: '/daily-quests', exams: ['sat', 'psat', 'act'] },
               { id: 'pro-exams', icon: GraduationCap, label: 'Pro Exams', color: 'bg-slate-100 dark:bg-slate-900/30', iconColor: 'text-slate-600 dark:text-slate-400', to: '/pro-exams', exams: ['sat', 'psat', 'act'] },
               { id: 'teacher', icon: Users, label: 'Teacher Hub', color: 'bg-sky-100 dark:bg-sky-900/30', iconColor: 'text-sky-600 dark:text-sky-400', to: '/teacher', exams: ['sat', 'psat', 'act'] },
+              { id: 'parent', icon: Eye, label: 'Parent View', color: 'bg-pink-100 dark:bg-pink-900/30', iconColor: 'text-pink-600 dark:text-pink-400', to: '/parent', exams: ['sat', 'psat', 'act'] },
+              { id: 'next-steps', icon: Brain, label: 'What\'s Next', color: 'bg-fuchsia-100 dark:bg-fuchsia-900/30', iconColor: 'text-fuchsia-600 dark:text-fuchsia-400', to: '/next-steps', exams: ['sat', 'psat', 'act'] },
             ];
 
             // Filter tiles to only show those relevant to the current exam
