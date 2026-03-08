@@ -52,6 +52,8 @@ const VocabTrainer = lazy(() => import("./pages/VocabTrainer"));
 const EssayGrader = lazy(() => import("./pages/EssayGrader"));
 const FRQPractice = lazy(() => import("./pages/FRQPractice"));
 const WritingLab = lazy(() => import("./pages/WritingLab"));
+const EnduranceRun = lazy(() => import("./pages/EnduranceRun"));
+const StudyCoach = lazy(() => import("./pages/StudyCoach"));
 
 const queryClient = new QueryClient();
 
