@@ -56,6 +56,15 @@ const APStudy = () => {
   const [esQuestions, setEsQuestions] = useState<Record<string, Question[]>>(apESQuestionsByUnit);
   const [cspQuestions, setCspQuestions] = useState<Record<string, Question[]>>(apCSPQuestionsByUnit);
   const [phys2Questions, setPhys2Questions] = useState<Record<string, Question[]>>(apPhys2QuestionsByUnit);
+  const [bioQuestions, setBioQuestions] = useState<Record<string, Question[]>>(apBioQuestionsByUnit);
+  const [phys1Questions, setPhys1Questions] = useState<Record<string, Question[]>>(apPhys1QuestionsByUnit);
+  const [usgovQuestions, setUsgovQuestions] = useState<Record<string, Question[]>>(apUSGovQuestionsByUnit);
+  const [macroQuestions, setMacroQuestions] = useState<Record<string, Question[]>>(apMacroQuestionsByUnit);
+  const [microQuestions, setMicroQuestions] = useState<Record<string, Question[]>>(apMicroQuestionsByUnit);
+  const [germanQuestions, setGermanQuestions] = useState<Record<string, Question[]>>(apGermanQuestionsByUnit);
+  const [italianQuestions, setItalianQuestions] = useState<Record<string, Question[]>>(apItalianQuestionsByUnit);
+  const [frenchLangQuestions, setFrenchLangQuestions] = useState<Record<string, Question[]>>(apFrenchLangQuestionsByUnit);
+  const [spanishLitQuestions, setSpanishLitQuestions] = useState<Record<string, Question[]>>(apSpanishLitQuestionsByUnit);
 
   useEffect(() => {
     if (subjectId === 'ap-chemistry') {
