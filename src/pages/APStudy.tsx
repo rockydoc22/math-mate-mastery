@@ -286,8 +286,13 @@ const APStudy = () => {
           <div className="text-sm font-medium text-muted-foreground">
             Unit {view.unit.unitNumber} • Q{view.currentIndex + 1}/{view.questions.length}
           </div>
-          <div className="text-sm font-semibold text-primary">
-            {view.score}/{view.answered}
+          <div className="flex items-center gap-2">
+            <div className="text-sm font-semibold text-primary">
+              {view.score}/{view.answered}
+            </div>
+            <Button variant="ghost" size="icon" className="h-8 w-8 text-muted-foreground hover:text-destructive" onClick={() => setIsFlagModalOpen(true)} title="Report issue">
+              <Flag className="w-4 h-4" />
+            </Button>
           </div>
         </div>
 
