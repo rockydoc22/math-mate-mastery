@@ -696,6 +696,8 @@ const Home = () => {
               { id: 'quick-review', icon: RefreshCw, label: 'Quick Review', color: 'bg-lime-100 dark:bg-lime-900/30', iconColor: 'text-lime-600 dark:text-lime-400', to: '/quick-review', exams: ['sat', 'psat', 'act'] },
               { id: 'score-predictor', icon: TrendingUp, label: 'Score Predictor', color: 'bg-violet-100 dark:bg-violet-900/30', iconColor: 'text-violet-600 dark:text-violet-400', to: '/score-predictor', exams: ['sat', 'psat', 'act'] },
               { id: 'study-planner', icon: CalendarDays, label: 'Study Planner', color: 'bg-sky-100 dark:bg-sky-900/30', iconColor: 'text-sky-600 dark:text-sky-400', to: '/study-planner', exams: ['sat', 'psat', 'act'] },
+              { id: 'cheat-sheet', icon: FileQuestion, label: 'Cheat Sheet', color: 'bg-fuchsia-100 dark:bg-fuchsia-900/30', iconColor: 'text-fuchsia-600 dark:text-fuchsia-400', to: '/cheat-sheet', exams: ['sat', 'psat', 'act'] },
+              { id: 'speed-drill', icon: Bolt, label: 'Speed Drill', color: 'bg-amber-100 dark:bg-amber-900/30', iconColor: 'text-amber-600 dark:text-amber-400', to: '/speed-drill', exams: ['sat', 'psat', 'act'] },
             ];
 
             // Filter tiles to only show those relevant to the current exam
