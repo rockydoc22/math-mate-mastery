@@ -87,11 +87,23 @@ export const ExamSelector = ({ onSelect, isModal = false }: ExamSelectorProps) =
             <span className="text-4xl">🎓</span>
             <div className="flex items-center gap-1">
               <h3 className="font-bold text-lg">Professional Exams</h3>
+            </div>
+            <p className="text-xs text-muted-foreground">GRE, GMAT, LSAT, MCAT, NCLEX, TEAS, TOEFL, IB & more</p>
+          </Card>
+
+          {/* IQ & Personality */}
+          <Card
+            className="p-4 cursor-pointer border-2 transition-all hover:scale-[1.02] hover:shadow-lg hover:border-primary/50 flex flex-col items-center text-center gap-2 col-span-2"
+            onClick={() => navigate("/iq-personality")}
+          >
+            <span className="text-4xl">🧠</span>
+            <div className="flex items-center gap-1">
+              <h3 className="font-bold text-lg">IQ & Personality Tests</h3>
               <span className="text-[10px] px-1.5 py-0.5 rounded-full bg-primary/10 text-primary font-medium">
                 NEW
               </span>
             </div>
-            <p className="text-xs text-muted-foreground">GRE, GMAT, LSAT, MCAT, ASVAB, CLT, DAT, OAT</p>
+            <p className="text-xs text-muted-foreground">Big Five, MBTI, DISC, Enneagram, IQ & Sentence Completion</p>
           </Card>
         </div>
 
