@@ -604,7 +604,7 @@ const Home = () => {
 
         {/* Tagline */}
         <h2 className="text-lg font-bold text-foreground text-center mb-4">
-          Be one of the <InlineMath math={examConfig.branding.mathTaglineKatex} /> {examConfig.branding.mathTaglineLabel}
+          Be one of the <LazyInlineMath math={examConfig.branding.mathTaglineKatex} /> {examConfig.branding.mathTaglineLabel}
         </h2>
         {examConfig.branding.extraMathFlair && examConfig.branding.extraMathFlair.length > 0 && (
           <div className="flex items-center justify-center gap-3 mb-4">
