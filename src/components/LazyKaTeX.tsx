@@ -1,27 +1,26 @@
-import { lazy, Suspense, useEffect, useState } from "react";
+import { Suspense, useEffect, useState } from "react";
+import { InlineMath } from 'react-katex';
 
-// Lazy-load KaTeX CSS only when component mounts
-const KaTeXStyles = () => {
+// Lazy-load KaTeX CSS only when this component mounts
+const useKaTeXStyles = () => {
   const [loaded, setLoaded] = useState(false);
   useEffect(() => {
-    import('katex/dist/katex.min.css').then(() => setLoaded(true));
+    const link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.href = 'https://cdn.jsdelivr.net/npm/katex@0.16.27/dist/katex.min.css';
+    link.onload = () => setLoaded(true);
+    document.head.appendChild(link);
+    return () => { document.head.removeChild(link); };
   }, []);
-  return null;
+  return loaded;
 };
-
-const InlineMathLazy = lazy(() =>
-  import('react-katex').then((mod) => ({ default: mod.InlineMath }))
-);
 
 interface LazyInlineMathProps {
   math: string;
 }
 
 export const LazyInlineMath = ({ math }: LazyInlineMathProps) => {
-  return (
-    <Suspense fallback={<span className="font-mono text-sm">{math}</span>}>
-      <KaTeXStyles />
-      <InlineMathLazy math={math} />
-    </Suspense>
-  );
+  const loaded = useKaTeXStyles();
+  if (!loaded) return <span className="font-mono text-sm opacity-70">{math}</span>;
+  return <InlineMath math={math} />;
 };
