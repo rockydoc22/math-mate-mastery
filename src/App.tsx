@@ -67,6 +67,7 @@ const SchoolAdmin = lazy(() => import("./pages/SchoolAdmin"));
 const PersonalityAssessment = lazy(() => import("./pages/PersonalityAssessment"));
 const CognitiveSkills = lazy(() => import("./pages/CognitiveSkills"));
 const IQTest = lazy(() => import("./pages/IQTest"));
+const HealthScreening = lazy(() => import("./pages/HealthScreening"));
 const StrategyPractice = lazy(() => import("./pages/StrategyPractice"));
 const Notifications = lazy(() => import("./pages/Notifications"));
 const ConversationPractice = lazy(() => import("./pages/ConversationPractice"));
@@ -180,6 +181,7 @@ const App = () => (
               <Route path="/personality" element={<PersonalityAssessment />} />
               <Route path="/cognitive" element={<CognitiveSkills />} />
               <Route path="/iq-test" element={<IQTest />} />
+              <Route path="/health-screening" element={<HealthScreening />} />
               <Route path="/strategy" element={<StrategyPractice />} />
               <Route path="/notifications" element={<Notifications />} />
               <Route path="/conversations" element={<ConversationPractice />} />
