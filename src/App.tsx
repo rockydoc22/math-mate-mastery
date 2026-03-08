@@ -159,6 +159,8 @@ const App = () => (
               <Route path="/portfolio" element={<Portfolio />} />
               <Route path="/shop" element={<CoinShop />} />
               <Route path="/timer" element={<StudyTimer />} />
+              <Route path="/flashcards" element={<Flashcards />} />
+              <Route path="/study-groups" element={<StudyGroups />} />
               {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
               <Route path="*" element={<NotFound />} />
             </Routes>
