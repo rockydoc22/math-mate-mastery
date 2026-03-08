@@ -94,6 +94,8 @@ const ProExamFRQ = lazy(() => import("./pages/ProExamFRQ"));
 const ProExamStudyGuide = lazy(() => import("./pages/ProExamStudyGuide"));
 const ProExamScoreTracker = lazy(() => import("./pages/ProExamScoreTracker"));
 const LogicGames = lazy(() => import("./pages/LogicGames"));
+const ExamSimulator = lazy(() => import("./pages/ExamSimulator"));
+const AITutorChat = lazy(() => import("./pages/AITutorChat"));
 
 const queryClient = new QueryClient();
 
