@@ -59,6 +59,8 @@ const ProExams = lazy(() => import("./pages/ProExams"));
 const ProExamQuiz = lazy(() => import("./pages/ProExamQuiz"));
 const DailyQuests = lazy(() => import("./pages/DailyQuests"));
 const TeacherDashboard = lazy(() => import("./pages/TeacherDashboard"));
+const ParentDashboard = lazy(() => import("./pages/ParentDashboard"));
+const AdaptiveLearning = lazy(() => import("./pages/AdaptiveLearning"));
 
 const queryClient = new QueryClient();
 
@@ -131,6 +133,8 @@ const App = () => (
               <Route path="/pro-exam/:examId" element={<ProExamQuiz />} />
               <Route path="/daily-quests" element={<DailyQuests />} />
               <Route path="/teacher" element={<TeacherDashboard />} />
+              <Route path="/parent" element={<ParentDashboard />} />
+              <Route path="/next-steps" element={<AdaptiveLearning />} />
               {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
               <Route path="*" element={<NotFound />} />
             </Routes>
