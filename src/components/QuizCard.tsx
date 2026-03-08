@@ -27,6 +27,12 @@ export const QuizCard = ({ question, selectedAnswer, onSelectAnswer, showResult,
   const visualQuestion = question as VisualQuestion;
   const imageQuestion = question as ImageQuestion;
 
+  // Reset UI state when question changes
+  useEffect(() => {
+    setShowKeyConcept(false);
+    setShowPathAnalysis(false);
+  }, [question.id]);
+
   // Find the relevant key concept for this question
   const keyConcept = useMemo(() => {
     return findKeyConcept(question.skill, question.domain, questionType);
