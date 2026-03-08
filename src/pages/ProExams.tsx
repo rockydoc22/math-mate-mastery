@@ -61,7 +61,7 @@ const ProExams = () => {
           checkboxLabel={IP_CHECKBOX}
         >
           {categories.map(([catKey, catMeta]) => {
-            const exams = PRO_EXAMS.filter(e => e.category === catKey && !GATED_EXAMS.includes(e.id));
+            const exams = PRO_EXAMS.filter(e => e.category === catKey && !FRQ_ONLY_EXAMS.includes(e.id));
             if (exams.length === 0) return null;
             return (
               <div key={catKey} className="mb-6">
