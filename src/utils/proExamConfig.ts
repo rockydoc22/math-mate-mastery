@@ -28,7 +28,7 @@ export const PRO_EXAMS: ProExamConfig[] = [
     sections: ['Quantitative', 'Verbal', 'Analytical Writing'],
     description: 'Graduate Record Examination for graduate school admissions',
     timePerQuestion: 90,
-    jsonFiles: ['gre_question_bank_200_original.json', 'gre_question_bank_expansion_300.json', 'gre_question_bank_expansion_300_b2.json', 'gre_question_bank_expansion_300_b3.json'],
+    jsonFiles: ['gre_question_bank_200_original.json'],
   },
   {
     id: 'gmat', name: 'GMAT', shortName: 'GMAT', icon: '📊',
@@ -37,7 +37,7 @@ export const PRO_EXAMS: ProExamConfig[] = [
     sections: ['Quantitative', 'Verbal', 'Data Insights'],
     description: 'Graduate Management Admission Test for business school',
     timePerQuestion: 120,
-    jsonFiles: ['gmat_question_bank_200_original.json', 'gmat_question_bank_expansion_300.json', 'gmat_question_bank_expansion_300_b2.json', 'gmat_question_bank_expansion_300_b3.json'],
+    jsonFiles: ['gmat_question_bank_200_original.json'],
   },
   {
     id: 'lsat', name: 'LSAT', shortName: 'LSAT', icon: '⚖️',
@@ -46,7 +46,7 @@ export const PRO_EXAMS: ProExamConfig[] = [
     sections: ['Logical Reasoning', 'Analytical Reasoning', 'Reading Comprehension'],
     description: 'Law School Admission Test',
     timePerQuestion: 85,
-    jsonFiles: ['lsat_question_bank_250_original.json', 'lsat_question_bank_expansion_300.json', 'lsat_question_bank_expansion_300_b2.json', 'lsat_question_bank_expansion_300_b3.json'],
+    jsonFiles: ['lsat_question_bank_250_original.json'],
   },
   {
     id: 'mcat', name: 'MCAT', shortName: 'MCAT', icon: '🔬',
@@ -55,7 +55,7 @@ export const PRO_EXAMS: ProExamConfig[] = [
     sections: ['Chemical and Physical Foundations', 'Biological and Biochemical Foundations', 'Psychological, Social, and Biological Foundations', 'Critical Analysis and Reasoning'],
     description: 'Medical College Admission Test',
     timePerQuestion: 95,
-    jsonFiles: ['mcat_question_bank_300_original.json', 'mcat_question_bank_expansion_300.json', 'mcat_question_bank_expansion_300_b2.json', 'mcat_question_bank_expansion_300_b3.json', 'mcat_question_bank_expansion_300_b4.json'],
+    jsonFiles: ['mcat_question_bank_300_original.json'],
   },
   {
     id: 'dat', name: 'DAT', shortName: 'DAT', icon: '🦷',
@@ -82,7 +82,7 @@ export const PRO_EXAMS: ProExamConfig[] = [
     sections: ['Arithmetic Reasoning', 'Word Knowledge', 'Paragraph Comprehension', 'Mathematics Knowledge', 'General Science', 'Electronics Information', 'Auto & Shop Information', 'Mechanical Comprehension'],
     description: 'Armed Services Vocational Aptitude Battery',
     timePerQuestion: 60,
-    jsonFiles: ['asvab_question_bank_300_original.json', 'asvab_question_bank_expansion_300.json', 'asvab_question_bank_expansion_300_b2.json', 'asvab_question_bank_expansion_300_b3.json', 'asvab_question_bank_expansion_300_b4.json'],
+    jsonFiles: ['asvab_question_bank_300_original.json'],
   },
   {
     id: 'clt', name: 'CLT', shortName: 'CLT', icon: '✝️',
