@@ -23,6 +23,7 @@ interface QuizCardProps {
 export const QuizCard = ({ question, selectedAnswer, onSelectAnswer, showResult, questionType = 'math' }: QuizCardProps) => {
   const [isFlagModalOpen, setIsFlagModalOpen] = useState(false);
   const [showKeyConcept, setShowKeyConcept] = useState(false);
+  const [showPathAnalysis, setShowPathAnalysis] = useState(false);
   const visualQuestion = question as VisualQuestion;
   const imageQuestion = question as ImageQuestion;
 
