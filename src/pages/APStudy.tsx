@@ -2,7 +2,8 @@ import { useState, useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { ArrowLeft, BookOpen, Brain, ChevronRight, CheckCircle2, XCircle, Sparkles } from "lucide-react";
+import { ArrowLeft, BookOpen, Brain, ChevronRight, CheckCircle2, XCircle, Sparkles, Flag } from "lucide-react";
+import { FlagQuestionModal } from "@/components/FlagQuestionModal";
 import { getAPSubject } from "@/utils/apConfig";
 import { AP_CHEM_UNITS, apChemQuestionsByUnit, loadAPChemQuestions, type APChemUnit } from "@/data/apChemistryQuestions";
 import { AP_USH_UNITS, apUSHQuestionsByUnit, loadAPUSHQuestions } from "@/data/apUSHistoryQuestions";
@@ -33,6 +34,7 @@ const APStudy = () => {
   const subject = subjectId ? getAPSubject(subjectId) : undefined;
   const [view, setView] = useState<ViewState>({ mode: 'units' });
   const [showAITutor, setShowAITutor] = useState(false);
+  const [isFlagModalOpen, setIsFlagModalOpen] = useState(false);
   const [chemQuestions, setChemQuestions] = useState<Record<string, Question[]>>(apChemQuestionsByUnit);
   const [ushQuestions, setUshQuestions] = useState<Record<string, Question[]>>(apUSHQuestionsByUnit);
   const [litQuestions, setLitQuestions] = useState<Record<string, Question[]>>(apLitQuestionsByUnit);
@@ -284,8 +286,13 @@ const APStudy = () => {
           <div className="text-sm font-medium text-muted-foreground">
             Unit {view.unit.unitNumber} • Q{view.currentIndex + 1}/{view.questions.length}
           </div>
-          <div className="text-sm font-semibold text-primary">
-            {view.score}/{view.answered}
+          <div className="flex items-center gap-2">
+            <div className="text-sm font-semibold text-primary">
+              {view.score}/{view.answered}
+            </div>
+            <Button variant="ghost" size="icon" className="h-8 w-8 text-muted-foreground hover:text-destructive" onClick={() => setIsFlagModalOpen(true)} title="Report issue">
+              <Flag className="w-4 h-4" />
+            </Button>
           </div>
         </div>
 
@@ -383,6 +390,15 @@ const APStudy = () => {
             </Button>
           )}
         </div>
+        {view.mode === 'quiz' && (
+          <FlagQuestionModal
+            isOpen={isFlagModalOpen}
+            onClose={() => setIsFlagModalOpen(false)}
+            questionId={q.id}
+            questionType="science"
+            questionData={{ question: q.question, options: q.options, correctAnswer: q.correctAnswer, explanation: q.explanation }}
+          />
+        )}
       </div>
     </div>
   );
