@@ -68,6 +68,8 @@ const PersonalityAssessment = lazy(() => import("./pages/PersonalityAssessment")
 const CognitiveSkills = lazy(() => import("./pages/CognitiveSkills"));
 const StrategyPractice = lazy(() => import("./pages/StrategyPractice"));
 const Notifications = lazy(() => import("./pages/Notifications"));
+const ConversationPractice = lazy(() => import("./pages/ConversationPractice"));
+const Portfolio = lazy(() => import("./pages/Portfolio"));
 
 const queryClient = new QueryClient();
 
@@ -149,6 +151,8 @@ const App = () => (
               <Route path="/cognitive" element={<CognitiveSkills />} />
               <Route path="/strategy" element={<StrategyPractice />} />
               <Route path="/notifications" element={<Notifications />} />
+              <Route path="/conversations" element={<ConversationPractice />} />
+              <Route path="/portfolio" element={<Portfolio />} />
               {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
               <Route path="*" element={<NotFound />} />
             </Routes>
