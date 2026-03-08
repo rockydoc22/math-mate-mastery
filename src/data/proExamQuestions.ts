@@ -48,6 +48,9 @@ const FILE_IMPORTERS: Record<string, () => Promise<any>> = {
   'dat_question_bank_240_original.json': () => import('./dat_question_bank_240_original.json'),
   'oat_question_bank_240_original.json': () => import('./oat_question_bank_240_original.json'),
   'clt_question_bank_180_original.json': () => import('./clt_question_bank_180_original.json'),
+  'homeschool_iowa_stanford10_question_bank_220_original.json': () => import('./homeschool_iowa_stanford10_question_bank_220_original.json'),
+  'terranova_question_bank_200_original.json': () => import('./terranova_question_bank_200_original.json'),
+  'map_growth_question_bank_200_original.json': () => import('./map_growth_question_bank_200_original.json'),
 };
 
 export async function loadProExamQuestions(jsonFiles: string[]): Promise<Question[]> {

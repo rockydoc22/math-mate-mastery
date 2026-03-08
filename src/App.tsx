@@ -64,6 +64,9 @@ const AdaptiveLearning = lazy(() => import("./pages/AdaptiveLearning"));
 const JoinClass = lazy(() => import("./pages/JoinClass"));
 const MyAssignments = lazy(() => import("./pages/MyAssignments"));
 const SchoolAdmin = lazy(() => import("./pages/SchoolAdmin"));
+const PersonalityAssessment = lazy(() => import("./pages/PersonalityAssessment"));
+const CognitiveSkills = lazy(() => import("./pages/CognitiveSkills"));
+const StrategyPractice = lazy(() => import("./pages/StrategyPractice"));
 
 const queryClient = new QueryClient();
 
@@ -141,6 +144,9 @@ const App = () => (
               <Route path="/join-class" element={<JoinClass />} />
               <Route path="/my-assignments" element={<MyAssignments />} />
               <Route path="/school-admin" element={<SchoolAdmin />} />
+              <Route path="/personality" element={<PersonalityAssessment />} />
+              <Route path="/cognitive" element={<CognitiveSkills />} />
+              <Route path="/strategy" element={<StrategyPractice />} />
               {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
               <Route path="*" element={<NotFound />} />
             </Routes>
