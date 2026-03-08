@@ -39,6 +39,7 @@ const FILE_IMPORTERS: Record<string, () => Promise<any>> = {
   'lsat_question_bank_250_original.json': () => import('./lsat_question_bank_250_original.json'),
   'lsat_question_bank_expansion_300.json': () => import('./lsat_question_bank_expansion_300.json'),
   'lsat_question_bank_expansion_300_b2.json': () => import('./lsat_question_bank_expansion_300_b2.json'),
+  'lsat_question_bank_expansion_300_b3.json': () => import('./lsat_question_bank_expansion_300_b3.json'),
   'mcat_question_bank_300_original.json': () => import('./mcat_question_bank_300_original.json'),
   'mcat_question_bank_expansion_300.json': () => import('./mcat_question_bank_expansion_300.json'),
   'mcat_question_bank_expansion_300_b2.json': () => import('./mcat_question_bank_expansion_300_b2.json'),
