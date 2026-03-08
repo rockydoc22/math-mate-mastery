@@ -110,6 +110,8 @@ const AlternativeAssessments = lazy(() => import("./pages/AlternativeAssessments
 const StrategyGameModes = lazy(() => import("./pages/StrategyGameModes"));
 const TimedModes = lazy(() => import("./pages/TimedModes"));
 const ReviewAnalytics = lazy(() => import("./pages/ReviewAnalytics"));
+const HomeworkSolver = lazy(() => import("./pages/HomeworkSolver"));
+const ThinkPath = lazy(() => import("./pages/ThinkPath"));
 
 const queryClient = new QueryClient();
 
