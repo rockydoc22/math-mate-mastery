@@ -610,7 +610,7 @@ const Home = () => {
           <div className="flex items-center justify-center gap-3 mb-4">
             {examConfig.branding.extraMathFlair.map((expr, i) => (
               <span key={i} className="text-sm text-muted-foreground font-mono opacity-70">
-                <InlineMath math={expr} />
+                <LazyInlineMath math={expr} />
               </span>
             ))}
           </div>
