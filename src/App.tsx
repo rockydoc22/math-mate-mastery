@@ -191,6 +191,8 @@ const App = () => (
               <Route path="/friend-compare" element={<FriendCompare />} />
               <Route path="/concepts" element={<ConceptExplainer />} />
               <Route path="/practice-log" element={<PracticeLog />} />
+              <Route path="/word-of-day" element={<WordOfTheDay />} />
+              <Route path="/math-tricks" element={<MathTricks />} />
               {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
               <Route path="*" element={<NotFound />} />
             </Routes>
