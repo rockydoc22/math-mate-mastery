@@ -390,6 +390,15 @@ const APStudy = () => {
             </Button>
           )}
         </div>
+        {view.mode === 'quiz' && (
+          <FlagQuestionModal
+            isOpen={isFlagModalOpen}
+            onClose={() => setIsFlagModalOpen(false)}
+            questionId={q.id}
+            questionType="science"
+            questionData={{ question: q.question, options: q.options, correctAnswer: q.correctAnswer, explanation: q.explanation }}
+          />
+        )}
       </div>
     </div>
   );
