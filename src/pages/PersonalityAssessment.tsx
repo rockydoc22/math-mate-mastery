@@ -55,11 +55,11 @@ const PersonalityAssessment = () => {
   const [answers, setAnswers] = useState<Record<string, number>>({});
   const [results, setResults] = useState<TraitScore[]>([]);
 
-  const loadItems = async (type: "big5" | "eq") => {
-    const mod =
-      type === "big5"
-        ? await import("@/data/big_five_style_items_60.json")
-        : await import("@/data/eq_items_50.json");
+  const loadItems = async (type: "big5" | "eq" | "lp") => {
+    let mod: any;
+    if (type === "big5") mod = await import("@/data/big_five_style_items_60.json");
+    else if (type === "eq") mod = await import("@/data/eq_items_50.json");
+    else mod = await import("@/data/learning_preferences_items_32.json");
     const data = (mod.default || mod) as PersonalityItem[];
     setItems(data);
     setCurrentIndex(0);
