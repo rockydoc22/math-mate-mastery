@@ -195,6 +195,8 @@ const App = () => (
               <Route path="/practice-log" element={<PracticeLog />} />
               <Route path="/word-of-day" element={<WordOfTheDay />} />
               <Route path="/math-tricks" element={<MathTricks />} />
+              <Route path="/pro-exam-frq/:examId" element={<ProExamFRQ />} />
+              <Route path="/logic-games" element={<LogicGames />} />
               {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
               <Route path="*" element={<NotFound />} />
             </Routes>

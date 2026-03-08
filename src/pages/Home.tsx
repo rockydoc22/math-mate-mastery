@@ -704,6 +704,7 @@ const Home = () => {
               { id: 'practice-log', icon: NotebookPen, label: 'Practice Log', color: 'bg-teal-100 dark:bg-teal-900/30', iconColor: 'text-teal-600 dark:text-teal-400', to: '/practice-log', exams: ['sat', 'psat', 'act'] },
               { id: 'word-of-day', icon: TextQuote, label: 'Word of Day', color: 'bg-pink-100 dark:bg-pink-900/30', iconColor: 'text-pink-600 dark:text-pink-400', to: '/word-of-day', exams: ['sat', 'psat', 'act'] },
               { id: 'math-tricks', icon: Wand2, label: 'Math Tricks', color: 'bg-cyan-100 dark:bg-cyan-900/30', iconColor: 'text-cyan-600 dark:text-cyan-400', to: '/math-tricks', exams: ['sat', 'psat', 'act'] },
+              { id: 'logic-games', icon: Brain, label: 'Logic Games', color: 'bg-violet-100 dark:bg-violet-900/30', iconColor: 'text-violet-600 dark:text-violet-400', to: '/logic-games', exams: ['sat', 'psat', 'act'] },
             ];
 
             // Filter tiles to only show those relevant to the current exam
