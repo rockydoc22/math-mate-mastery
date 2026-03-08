@@ -17,6 +17,15 @@ import { AP_HUG_UNITS, apHuGQuestionsByUnit, loadAPHuGQuestions } from "@/data/a
 import { AP_ES_UNITS, apESQuestionsByUnit, loadAPESQuestions } from "@/data/apEnvironmentalScienceQuestions";
 import { AP_CSP_UNITS, apCSPQuestionsByUnit, loadAPCSPQuestions } from "@/data/apCSPQuestions";
 import { AP_PHYS2_UNITS, apPhys2QuestionsByUnit, loadAPPhys2Questions } from "@/data/apPhysics2Questions";
+import { AP_BIO_UNITS, apBioQuestionsByUnit, loadAPBioQuestions } from "@/data/apBiologyQuestions";
+import { AP_PHYS1_UNITS, apPhys1QuestionsByUnit, loadAPPhys1Questions } from "@/data/apPhysics1Questions";
+import { AP_USGOV_UNITS, apUSGovQuestionsByUnit, loadAPUSGovQuestions } from "@/data/apUSGovQuestions";
+import { AP_MACRO_UNITS, apMacroQuestionsByUnit, loadAPMacroQuestions } from "@/data/apMacroQuestions";
+import { AP_MICRO_UNITS, apMicroQuestionsByUnit, loadAPMicroQuestions } from "@/data/apMicroQuestions";
+import { AP_GERMAN_UNITS, apGermanQuestionsByUnit, loadAPGermanQuestions } from "@/data/apGermanQuestions";
+import { AP_ITALIAN_UNITS, apItalianQuestionsByUnit, loadAPItalianQuestions } from "@/data/apItalianQuestions";
+import { AP_FRENCH_LANG_UNITS, apFrenchLangQuestionsByUnit, loadAPFrenchLangQuestions } from "@/data/apFrenchLangQuestions";
+import { AP_SPANISH_LIT_UNITS, apSpanishLitQuestionsByUnit, loadAPSpanishLitQuestions } from "@/data/apSpanishLitQuestions";
 import { Question } from "@/data/questions";
 import { MathText } from "@/components/MathText";
 import { AITutorExplanation } from "@/components/AITutorExplanation";
@@ -47,32 +56,65 @@ const APStudy = () => {
   const [esQuestions, setEsQuestions] = useState<Record<string, Question[]>>(apESQuestionsByUnit);
   const [cspQuestions, setCspQuestions] = useState<Record<string, Question[]>>(apCSPQuestionsByUnit);
   const [phys2Questions, setPhys2Questions] = useState<Record<string, Question[]>>(apPhys2QuestionsByUnit);
+  const [bioQuestions, setBioQuestions] = useState<Record<string, Question[]>>(apBioQuestionsByUnit);
+  const [phys1Questions, setPhys1Questions] = useState<Record<string, Question[]>>(apPhys1QuestionsByUnit);
+  const [usgovQuestions, setUsgovQuestions] = useState<Record<string, Question[]>>(apUSGovQuestionsByUnit);
+  const [macroQuestions, setMacroQuestions] = useState<Record<string, Question[]>>(apMacroQuestionsByUnit);
+  const [microQuestions, setMicroQuestions] = useState<Record<string, Question[]>>(apMicroQuestionsByUnit);
+  const [germanQuestions, setGermanQuestions] = useState<Record<string, Question[]>>(apGermanQuestionsByUnit);
+  const [italianQuestions, setItalianQuestions] = useState<Record<string, Question[]>>(apItalianQuestionsByUnit);
+  const [frenchLangQuestions, setFrenchLangQuestions] = useState<Record<string, Question[]>>(apFrenchLangQuestionsByUnit);
+  const [spanishLitQuestions, setSpanishLitQuestions] = useState<Record<string, Question[]>>(apSpanishLitQuestionsByUnit);
 
   useEffect(() => {
-    if (subjectId === 'ap-chemistry') {
-      loadAPChemQuestions().then(setChemQuestions);
-    } else if (subjectId === 'ap-us-history') {
-      loadAPUSHQuestions().then(setUshQuestions);
-    } else if (subjectId === 'ap-english-lit') {
-      loadAPLitQuestions().then(setLitQuestions);
-    } else if (subjectId === 'ap-calculus-bc') {
-      loadAPCalcBCQuestions().then(setCalcBCQuestions);
-    } else if (subjectId === 'ap-lang') {
-      loadAPLangQuestions().then(setLangQuestions);
-    } else if (subjectId === 'ap-calculus-ab') {
-      loadAPCalcABQuestions().then(setCalcABQuestions);
-    } else if (subjectId === 'ap-statistics') {
-      loadAPStatsQuestions().then(setStatsQuestions);
-    } else if (subjectId === 'ap-euro-history') {
-      loadAPEuroQuestions().then(setEuroQuestions);
-    } else if (subjectId === 'ap-human-geo') {
-      loadAPHuGQuestions().then(setHugQuestions);
-    } else if (subjectId === 'ap-environmental-science') {
-      loadAPESQuestions().then(setEsQuestions);
-    } else if (subjectId === 'ap-csp') {
-      loadAPCSPQuestions().then(setCspQuestions);
-    } else if (subjectId === 'ap-physics-2') {
-      loadAPPhys2Questions().then(setPhys2Questions);
+    const loaders: Record<string, () => Promise<Record<string, Question[]>>> = {
+      'ap-chemistry': loadAPChemQuestions,
+      'ap-us-history': loadAPUSHQuestions,
+      'ap-english-lit': loadAPLitQuestions,
+      'ap-calculus-bc': loadAPCalcBCQuestions,
+      'ap-lang': loadAPLangQuestions,
+      'ap-calculus-ab': loadAPCalcABQuestions,
+      'ap-statistics': loadAPStatsQuestions,
+      'ap-euro-history': loadAPEuroQuestions,
+      'ap-human-geo': loadAPHuGQuestions,
+      'ap-environmental-science': loadAPESQuestions,
+      'ap-csp': loadAPCSPQuestions,
+      'ap-physics-2': loadAPPhys2Questions,
+      'ap-biology': loadAPBioQuestions,
+      'ap-physics-1': loadAPPhys1Questions,
+      'ap-us-gov': loadAPUSGovQuestions,
+      'ap-macro': loadAPMacroQuestions,
+      'ap-micro': loadAPMicroQuestions,
+      'ap-german': loadAPGermanQuestions,
+      'ap-italian': loadAPItalianQuestions,
+      'ap-french': loadAPFrenchLangQuestions,
+      'ap-spanish-lit': loadAPSpanishLitQuestions,
+    };
+    const setters: Record<string, (v: Record<string, Question[]>) => void> = {
+      'ap-chemistry': setChemQuestions,
+      'ap-us-history': setUshQuestions,
+      'ap-english-lit': setLitQuestions,
+      'ap-calculus-bc': setCalcBCQuestions,
+      'ap-lang': setLangQuestions,
+      'ap-calculus-ab': setCalcABQuestions,
+      'ap-statistics': setStatsQuestions,
+      'ap-euro-history': setEuroQuestions,
+      'ap-human-geo': setHugQuestions,
+      'ap-environmental-science': setEsQuestions,
+      'ap-csp': setCspQuestions,
+      'ap-physics-2': setPhys2Questions,
+      'ap-biology': setBioQuestions,
+      'ap-physics-1': setPhys1Questions,
+      'ap-us-gov': setUsgovQuestions,
+      'ap-macro': setMacroQuestions,
+      'ap-micro': setMicroQuestions,
+      'ap-german': setGermanQuestions,
+      'ap-italian': setItalianQuestions,
+      'ap-french': setFrenchLangQuestions,
+      'ap-spanish-lit': setSpanishLitQuestions,
+    };
+    if (subjectId && loaders[subjectId]) {
+      loaders[subjectId]().then(setters[subjectId]);
     }
   }, [subjectId]);
 
@@ -102,6 +144,15 @@ const APStudy = () => {
     'ap-environmental-science': { units: AP_ES_UNITS, questions: esQuestions },
     'ap-csp': { units: AP_CSP_UNITS, questions: cspQuestions },
     'ap-physics-2': { units: AP_PHYS2_UNITS, questions: phys2Questions },
+    'ap-biology': { units: AP_BIO_UNITS, questions: bioQuestions },
+    'ap-physics-1': { units: AP_PHYS1_UNITS, questions: phys1Questions },
+    'ap-us-gov': { units: AP_USGOV_UNITS, questions: usgovQuestions },
+    'ap-macro': { units: AP_MACRO_UNITS, questions: macroQuestions },
+    'ap-micro': { units: AP_MICRO_UNITS, questions: microQuestions },
+    'ap-german': { units: AP_GERMAN_UNITS, questions: germanQuestions },
+    'ap-italian': { units: AP_ITALIAN_UNITS, questions: italianQuestions },
+    'ap-french': { units: AP_FRENCH_LANG_UNITS, questions: frenchLangQuestions },
+    'ap-spanish-lit': { units: AP_SPANISH_LIT_UNITS, questions: spanishLitQuestions },
   };
   const current = subjectMap[subjectId || ''] || { units: [], questions: {} };
   const units = current.units;

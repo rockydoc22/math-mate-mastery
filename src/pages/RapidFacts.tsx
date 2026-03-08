@@ -4,7 +4,8 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Progress } from "@/components/ui/progress";
 import { Badge } from "@/components/ui/badge";
-import { ArrowLeft, Zap, Trophy, Timer, RotateCcw, Brain, BookOpen, PenTool, Lightbulb, FlaskConical, ChevronDown, ChevronUp, XCircle } from "lucide-react";
+import { ArrowLeft, Zap, Trophy, Timer, RotateCcw, Brain, BookOpen, PenTool, Lightbulb, FlaskConical, ChevronDown, ChevronUp, XCircle, Flag } from "lucide-react";
+import { FlagQuestionModal } from "@/components/FlagQuestionModal";
 import { satFacts, SATFact, ExamType } from "@/data/satFacts";
 
 type Category = "all" | "math" | "vocab" | "grammar" | "strategy" | "science";
@@ -57,6 +58,7 @@ const RapidFacts = () => {
   const [missedQuestions, setMissedQuestions] = useState<MissedQuestion[]>([]);
   const [allAnswered, setAllAnswered] = useState<AnsweredQuestion[]>([]);
   const [expandedMissed, setExpandedMissed] = useState<Set<string>>(new Set());
+  const [isFlagModalOpen, setIsFlagModalOpen] = useState(false);
   const [showMissed, setShowMissed] = useState(false);
   const [highScore, setHighScore] = useState(() => {
     const stored = localStorage.getItem(HIGH_SCORE_KEY);
@@ -415,9 +417,14 @@ const RapidFacts = () => {
         <Progress value={timerPct} className="h-2" />
 
         <Card className="p-6">
-          <div className="flex items-center gap-2 mb-4">
-            <catCfg.icon className={`w-4 h-4 ${catCfg.color}`} />
-            <span className={`text-xs font-medium uppercase tracking-wide ${catCfg.color}`}>{catCfg.label}</span>
+          <div className="flex items-center justify-between mb-4">
+            <div className="flex items-center gap-2">
+              <catCfg.icon className={`w-4 h-4 ${catCfg.color}`} />
+              <span className={`text-xs font-medium uppercase tracking-wide ${catCfg.color}`}>{catCfg.label}</span>
+            </div>
+            <Button variant="ghost" size="icon" className="h-8 w-8 text-muted-foreground hover:text-destructive" onClick={() => setIsFlagModalOpen(true)} title="Report issue">
+              <Flag className="w-4 h-4" />
+            </Button>
           </div>
           <h2 className="text-xl font-bold mb-6">{currentFact.question}</h2>
 
@@ -453,6 +460,16 @@ const RapidFacts = () => {
             })}
           </div>
         </Card>
+
+        {currentFact && (
+          <FlagQuestionModal
+            isOpen={isFlagModalOpen}
+            onClose={() => setIsFlagModalOpen(false)}
+            questionId={currentFact.id}
+            questionType="math"
+            questionData={{ question: currentFact.question, options: choices.map((c, i) => ({ letter: String.fromCharCode(65 + i), text: c })), correctAnswer: currentFact.correctAnswer, explanation: '' }}
+          />
+        )}
       </div>
     </div>
   );
