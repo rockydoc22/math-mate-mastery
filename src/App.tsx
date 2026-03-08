@@ -144,6 +144,9 @@ const App = () => (
               <Route path="/join-class" element={<JoinClass />} />
               <Route path="/my-assignments" element={<MyAssignments />} />
               <Route path="/school-admin" element={<SchoolAdmin />} />
+              <Route path="/personality" element={<PersonalityAssessment />} />
+              <Route path="/cognitive" element={<CognitiveSkills />} />
+              <Route path="/strategy" element={<StrategyPractice />} />
               {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
               <Route path="*" element={<NotFound />} />
             </Routes>
