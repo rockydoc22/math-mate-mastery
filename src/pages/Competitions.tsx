@@ -6,10 +6,10 @@ import { BottomNav } from "@/components/BottomNav";
 
 const LANGUAGE_COMPETITIONS = [
   { id: 'french', name: 'French Competition', flag: '🇫🇷', description: 'CCFF-style grammar, culture, listening & elite phrases', route: '/french-competition', tools: ['/french-lightning', '/french-upgrade'] },
-  { id: 'spanish', name: 'Spanish Competition', flag: '🇪🇸', description: 'Grammar, culture, vocabulary & conversation practice', route: '/spanish-competition', tools: [] },
-  { id: 'german', name: 'German Competition', flag: '🇩🇪', description: 'Grammar, culture, vocabulary & reading comprehension', route: '/german-competition', tools: [] },
-  { id: 'italian', name: 'Italian Competition', flag: '🇮🇹', description: 'Grammar, culture, vocabulary & literary analysis', route: '/italian-competition', tools: [] },
-  { id: 'latin', name: 'Latin Competition', flag: '🏛️', description: 'Grammar, mythology, Roman culture & translation', route: '/latin-competition', tools: [] },
+  { id: 'spanish', name: 'Spanish Competition', flag: '🇪🇸', description: 'Grammar, culture, vocabulary & conversation practice', route: '/competition/spanish', tools: [] },
+  { id: 'german', name: 'German Competition', flag: '🇩🇪', description: 'Grammar, culture, vocabulary & reading comprehension', route: '/competition/german', tools: [] },
+  { id: 'italian', name: 'Italian Competition', flag: '🇮🇹', description: 'Grammar, culture, vocabulary & literary analysis', route: '/competition/italian', tools: [] },
+  { id: 'latin', name: 'Latin Competition', flag: '🏛️', description: 'Grammar, mythology, Roman culture & translation', route: '/competition/latin', tools: [] },
 ];
 
 const DEBATE_FORMATS = [

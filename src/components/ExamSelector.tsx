@@ -64,16 +64,19 @@ export const ExamSelector = ({ onSelect, isModal = false }: ExamSelectorProps) =
             </p>
           </Card>
 
-          {/* French Competition */}
+          {/* Competitions (Languages + Debate) */}
           <Card
             className="p-4 cursor-pointer border-2 transition-all hover:scale-[1.02] hover:shadow-lg hover:border-primary/50 flex flex-col items-center text-center gap-2 col-span-2"
-            onClick={() => navigate("/french-competition")}
+            onClick={() => navigate("/competitions")}
           >
-            <span className="text-4xl">🇫🇷</span>
+            <span className="text-4xl">🏆</span>
             <div className="flex items-center gap-1">
-              <h3 className="font-bold text-lg">French Competition</h3>
+              <h3 className="font-bold text-lg">Competitions</h3>
+              <span className="text-[10px] px-1.5 py-0.5 rounded-full bg-primary/10 text-primary font-medium">
+                NEW
+              </span>
             </div>
-            <p className="text-xs text-muted-foreground">Grammar, culture, listening & elite phrases</p>
+            <p className="text-xs text-muted-foreground">French, Spanish, German, Italian, Latin & Debate</p>
           </Card>
 
           {/* Professional Exams */}
