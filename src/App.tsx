@@ -112,6 +112,8 @@ const TimedModes = lazy(() => import("./pages/TimedModes"));
 const ReviewAnalytics = lazy(() => import("./pages/ReviewAnalytics"));
 const HomeworkSolver = lazy(() => import("./pages/HomeworkSolver"));
 const ThinkPath = lazy(() => import("./pages/ThinkPath"));
+const IQPersonalityHub = lazy(() => import("./pages/IQPersonalityHub"));
+const SentenceCompletion = lazy(() => import("./pages/SentenceCompletion"));
 
 const queryClient = new QueryClient();
 
