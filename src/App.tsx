@@ -67,6 +67,7 @@ const SchoolAdmin = lazy(() => import("./pages/SchoolAdmin"));
 const PersonalityAssessment = lazy(() => import("./pages/PersonalityAssessment"));
 const CognitiveSkills = lazy(() => import("./pages/CognitiveSkills"));
 const IQTest = lazy(() => import("./pages/IQTest"));
+const HealthScreening = lazy(() => import("./pages/HealthScreening"));
 const StrategyPractice = lazy(() => import("./pages/StrategyPractice"));
 const Notifications = lazy(() => import("./pages/Notifications"));
 const ConversationPractice = lazy(() => import("./pages/ConversationPractice"));
