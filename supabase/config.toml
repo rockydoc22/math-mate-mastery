@@ -8,3 +8,9 @@ verify_jwt = false
 
 [functions.ai-fix-question]
 verify_jwt = false
+
+[functions.study-coach]
+verify_jwt = false
+
+[functions.ai-tutor]
+verify_jwt = false
