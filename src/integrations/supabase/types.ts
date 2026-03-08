@@ -902,6 +902,39 @@ export type Database = {
         }
         Relationships: []
       }
+      solution_analyses: {
+        Row: {
+          ai_analysis: string
+          created_at: string
+          id: string
+          question_id: string
+          question_text: string
+          question_type: string
+          student_approach: string
+          user_id: string
+        }
+        Insert: {
+          ai_analysis: string
+          created_at?: string
+          id?: string
+          question_id: string
+          question_text: string
+          question_type?: string
+          student_approach: string
+          user_id: string
+        }
+        Update: {
+          ai_analysis?: string
+          created_at?: string
+          id?: string
+          question_id?: string
+          question_text?: string
+          question_type?: string
+          student_approach?: string
+          user_id?: string
+        }
+        Relationships: []
+      }
       streaks: {
         Row: {
           current_streak: number
