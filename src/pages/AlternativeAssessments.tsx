@@ -241,22 +241,16 @@ const AlternativeAssessments = () => {
             ) : mode === "elimination" && currentMCQ ? (
               <EliminationMode
                 question={currentMCQ.question}
-                options={currentMCQ.options.map((text, i) => ({
-                  letter: String.fromCharCode(65 + i),
-                  text,
-                }))}
-                correctAnswer={String.fromCharCode(65 + currentMCQ.options.indexOf(currentMCQ.correctAnswer))}
+                options={currentMCQ.options}
+                correctAnswer={currentMCQ.correctAnswer}
                 onAnswer={handleAnswer}
                 explanation={currentMCQ.explanation}
               />
             ) : mode === "confidence" && currentMCQ ? (
               <EliminationMode
                 question={currentMCQ.question}
-                options={currentMCQ.options.map((text, i) => ({
-                  letter: String.fromCharCode(65 + i),
-                  text,
-                }))}
-                correctAnswer={String.fromCharCode(65 + currentMCQ.options.indexOf(currentMCQ.correctAnswer))}
+                options={currentMCQ.options}
+                correctAnswer={currentMCQ.correctAnswer}
                 onAnswer={handleAnswer}
                 explanation={currentMCQ.explanation}
               />
