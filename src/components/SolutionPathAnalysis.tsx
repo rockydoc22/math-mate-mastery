@@ -154,7 +154,7 @@ export const SolutionPathAnalysis = ({
 
             {analysis && (
               <div className="prose prose-sm dark:prose-invert max-w-none text-sm">
-                <p className="whitespace-pre-wrap">{analysis}</p>
+                <ReactMarkdown>{analysis}</ReactMarkdown>
               </div>
             )}
 
