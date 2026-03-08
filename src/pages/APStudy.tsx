@@ -144,6 +144,15 @@ const APStudy = () => {
     'ap-environmental-science': { units: AP_ES_UNITS, questions: esQuestions },
     'ap-csp': { units: AP_CSP_UNITS, questions: cspQuestions },
     'ap-physics-2': { units: AP_PHYS2_UNITS, questions: phys2Questions },
+    'ap-biology': { units: AP_BIO_UNITS, questions: bioQuestions },
+    'ap-physics-1': { units: AP_PHYS1_UNITS, questions: phys1Questions },
+    'ap-us-gov': { units: AP_USGOV_UNITS, questions: usgovQuestions },
+    'ap-macro': { units: AP_MACRO_UNITS, questions: macroQuestions },
+    'ap-micro': { units: AP_MICRO_UNITS, questions: microQuestions },
+    'ap-german': { units: AP_GERMAN_UNITS, questions: germanQuestions },
+    'ap-italian': { units: AP_ITALIAN_UNITS, questions: italianQuestions },
+    'ap-french': { units: AP_FRENCH_LANG_UNITS, questions: frenchLangQuestions },
+    'ap-spanish-lit': { units: AP_SPANISH_LIT_UNITS, questions: spanishLitQuestions },
   };
   const current = subjectMap[subjectId || ''] || { units: [], questions: {} };
   const units = current.units;
