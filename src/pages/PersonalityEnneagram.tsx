@@ -100,7 +100,7 @@ const PersonalityEnneagram = () => {
           </div>
         </div>
         <div className="max-w-2xl mx-auto px-4 py-6 space-y-6">
-          <Card className="p-4 border-amber-500/30 bg-amber-500/5"><p className="text-xs text-muted-foreground"><strong>⚠️</strong> Educational self-assessment only. Not a clinical instrument.</p></Card>
+          <Card className="p-4 border-amber-500/30 bg-amber-500/5"><p className="text-xs text-muted-foreground"><strong>⚠️</strong> Educational self-assessment only. Not a clinical or diagnostic instrument. If you have concerns about your mental health, please consult a licensed professional.</p></Card>
           <Card className="p-6 text-center space-y-2">
             <span className="text-5xl">{info.icon}</span>
             <h2 className="text-3xl font-black text-primary">{info.name}</h2>
