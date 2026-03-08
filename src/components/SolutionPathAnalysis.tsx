@@ -4,6 +4,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Textarea } from "@/components/ui/textarea";
 import { Brain, Loader2, X, Sparkles, Route } from "lucide-react";
 import { toast } from "sonner";
+import ReactMarkdown from "react-markdown";
 
 interface SolutionPathAnalysisProps {
   question: string;
@@ -153,7 +154,7 @@ export const SolutionPathAnalysis = ({
 
             {analysis && (
               <div className="prose prose-sm dark:prose-invert max-w-none text-sm">
-                <p className="whitespace-pre-wrap">{analysis}</p>
+                <ReactMarkdown>{analysis}</ReactMarkdown>
               </div>
             )}
 
