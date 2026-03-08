@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { ArrowLeft, ChevronDown, ChevronUp, CheckCircle, XCircle, Lightbulb, Trophy, Clock, Users, BookOpen } from "lucide-react";
 import { BottomNav } from "@/components/BottomNav";
+import { SolutionPathAnalysis } from "@/components/SolutionPathAnalysis";
 import { STEM_COMPETITION_CATEGORIES, type Competition, type SampleQuestion } from "@/data/stem_competitions";
 
 const DIFFICULTY_COLORS: Record<string, string> = {
@@ -25,6 +26,7 @@ const CompetitionHub = () => {
   const [activeQuestion, setActiveQuestion] = useState<string | null>(null);
   const [selectedAnswers, setSelectedAnswers] = useState<Record<string, string>>({});
   const [revealedAnswers, setRevealedAnswers] = useState<Set<string>>(new Set());
+  const [showPathAnalysis, setShowPathAnalysis] = useState<Set<string>>(new Set());
 
   // Find the competition
   let competition: Competition | null = null;
@@ -117,7 +119,28 @@ const CompetitionHub = () => {
               {isCorrect ? 'Correct!' : `Incorrect — Answer: ${q.answer}`}
             </div>
             <p className="text-muted-foreground text-xs leading-relaxed">{q.explanation}</p>
+            {!showPathAnalysis.has(q.id) && (
+              <Button
+                size="sm"
+                variant="outline"
+                className="mt-2 gap-2 text-xs"
+                onClick={() => setShowPathAnalysis(prev => new Set(prev).add(q.id))}
+              >
+                <Lightbulb className="w-3 h-3" />
+                Analyze My Solution Path
+              </Button>
+            )}
           </div>
+        )}
+
+        {isRevealed && showPathAnalysis.has(q.id) && (
+          <SolutionPathAnalysis
+            question={q.question}
+            options={q.options?.map((opt, i) => ({ letter: String.fromCharCode(65 + i), text: opt }))}
+            correctAnswer={q.answer}
+            competitionType={competition?.name || 'academic competition'}
+            onClose={() => setShowPathAnalysis(prev => { const n = new Set(prev); n.delete(q.id); return n; })}
+          />
         )}
       </Card>
     );
