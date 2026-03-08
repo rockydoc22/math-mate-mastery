@@ -100,9 +100,12 @@ const IQPersonalityHub = () => {
 
       <div className="max-w-2xl mx-auto px-4 py-6 space-y-8">
         {/* Disclaimer */}
-        <Card className="p-4 border-amber-500/30 bg-amber-500/5">
+        <Card className="p-4 border-amber-500/30 bg-amber-500/5 space-y-2">
           <p className="text-xs text-muted-foreground">
-            <strong className="text-foreground">⚠️ Non-Clinical:</strong> These assessments are for self-discovery and educational purposes only. They are not diagnostic tools and should not replace professional psychological evaluation.
+            <strong className="text-foreground">⚠️ Important Disclaimer:</strong> These assessments are for <strong>self-discovery and educational purposes only</strong>. They are <strong>not</strong> official, licensed, or clinically validated diagnostic instruments. Results should not be used for medical, psychiatric, or employment decisions.
+          </p>
+          <p className="text-xs text-muted-foreground">
+            If you are experiencing emotional distress, mental health concerns, or suspect a psychiatric condition, <strong>please consult a licensed mental health professional</strong> (psychologist, psychiatrist, or counselor). These tools do not replace professional evaluation, diagnosis, or treatment.
           </p>
         </Card>
 
