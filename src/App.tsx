@@ -122,6 +122,7 @@ const App = () => (
               <Route path="/install" element={<InstallApp />} />
               <Route path="/endurance" element={<EnduranceRun />} />
               <Route path="/coach" element={<StudyCoach />} />
+              <Route path="/skill-map" element={<SkillGraph />} />
               {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
               <Route path="*" element={<NotFound />} />
             </Routes>
