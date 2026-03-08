@@ -216,6 +216,27 @@ export const QuizCard = ({ question, selectedAnswer, onSelectAnswer, showResult,
                   )}
                 </div>
               )}
+
+              {/* Solution Path Analysis */}
+              {!showPathAnalysis ? (
+                <Button
+                  variant="outline"
+                  size="sm"
+                  onClick={() => setShowPathAnalysis(true)}
+                  className="w-full justify-start gap-2 text-xs sm:text-sm"
+                >
+                  <Route className="w-4 h-4 text-accent-foreground" />
+                  Analyze My Solution Path
+                </Button>
+              ) : (
+                <SolutionPathAnalysis
+                  question={question.question}
+                  options={question.options.map(o => ({ letter: o.letter, text: o.text }))}
+                  correctAnswer={question.correctAnswer}
+                  competitionType={questionType === 'math' ? 'SAT Math' : questionType === 'english' ? 'SAT English' : 'Academic'}
+                  onClose={() => setShowPathAnalysis(false)}
+                />
+              )}
             </div>
           )}
         </div>
