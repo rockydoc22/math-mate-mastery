@@ -51,20 +51,20 @@
     "id": "lsat-passage-3",
     "section": "Reading Comprehension",
     "difficulty": "beginner",
-    "passage": "Legal scholars have long debated the appropriate standard of judicial review for administrative agency decisions. The 'Chevron doctrine,' established in Chevron U.S.A. v. Natural Resources Defense Council (1984), holds that courts should defer to an agency's interpretation of an ambiguous statute it administers, so long as the interpretation is 'reasonable.' This framework has been enormously influential, cited in thousands of subsequent cases.\n\nProponents argue that Chevron deference is justified on both practical and democratic grounds. Agencies possess technical expertise that generalist judges lack, making them better positioned to interpret complex regulatory statutes. Additionally, agency heads are appointed by elected officials, creating a chain of democratic accountability that is absent from the judiciary.\n\nCritics counter that Chevron deference effectively transfers legislative power to the executive branch, undermining the separation of powers. They argue that interpreting statutes is a core judicial function under Article III of the Constitution. Recent Supreme Court decisions have signaled a willingness to reconsider the breadth of Chevron deference, with several justices expressing concern about the 'major questions doctrine' — the idea that agencies should not be permitted to resolve questions of vast economic or political significance without clear congressional authorization.",
+    "passage": "Legal scholars have long debated the appropriate standard of judicial review for administrative agency decisions. The 'Chevron doctrine,' established in Chevron U.S.A., Inc. v. Natural Resources Defense Council (1984), created a two-step framework: first, courts ask whether Congress has directly spoken to the precise question at issue; if the statute is ambiguous, courts defer to the agency's reasonable interpretation.\n\nCritics of Chevron deference argue that it effectively allows executive agencies to act as both lawmakers and law-interpreters, violating the separation of powers. They contend that Marbury v. Madison (1803) established the judiciary as the final arbiter of legal meaning, and that Chevron inappropriately shifts this power to unelected bureaucrats.\n\nDefenders respond that agencies possess subject-matter expertise that generalist judges lack, and that democratic accountability flows through the President's appointment and oversight of agency heads. They note that Congress often intentionally leaves statutory gaps for agencies to fill through rulemaking, recognizing the practical impossibility of legislating every technical detail.\n\nRecent developments suggest the Court may be moving toward the 'major questions doctrine,' which holds that courts should not defer to agency interpretations on questions of vast economic or political significance absent clear congressional authorization.",
     "questions": [
       {
         "id": "lsat-p3-q1",
-        "prompt": "Summarize the key arguments for and against Chevron deference as presented in the passage. Then, evaluate which set of arguments is more persuasive, explaining your reasoning.",
-        "rubric_points": ["Accurately summarizes pro-deference arguments (expertise + democratic accountability)", "Accurately summarizes anti-deference arguments (separation of powers + Article III)", "Takes a clear position with logical justification", "Addresses potential counterarguments to the chosen position"],
+        "prompt": "Analyze the strongest argument for and against Chevron deference. For each, identify the underlying constitutional principle at stake and explain how the argument draws on that principle.",
+        "rubric_points": ["For Chevron: expertise argument grounded in practical governance and implicit congressional delegation", "Against Chevron: separation of powers argument citing Marbury and judicial review as core Article III function", "Identifies tension between democratic accountability (executive) and rule of law (judiciary)", "Evaluates which constitutional principle should take priority and why"],
         "max_score": 4,
         "time_minutes": 10,
         "difficulty": "beginner"
       },
       {
         "id": "lsat-p3-q2",
-        "prompt": "The 'major questions doctrine' represents a limitation on Chevron deference. Construct an argument for why this doctrine is necessary AND an argument for why it creates more problems than it solves. Which position do you find stronger?",
-        "rubric_points": ["Argues for: prevents executive overreach on issues requiring democratic deliberation", "Argues against: 'major questions' is vague, creates uncertainty, invites judicial activism", "Both arguments use logical reasoning, not just assertion", "Takes a defensible position with clear rationale"],
+        "prompt": "How might the 'major questions doctrine' serve as a middle ground between full Chevron deference and no deference? Analyze its strengths and potential weaknesses as a judicial standard.",
+        "rubric_points": ["MQD preserves agency discretion on routine/technical matters while reclaiming judicial role on big questions", "Strength: prevents agency overreach on issues Congress should explicitly authorize", "Weakness: 'vast economic or political significance' is subjective and could be manipulated", "Discusses whether MQD creates more legal uncertainty by adding another layer of analysis"],
         "max_score": 4,
         "time_minutes": 10,
         "difficulty": "intermediate"
@@ -75,23 +75,23 @@
     "id": "lsat-passage-4",
     "section": "Logical Reasoning Analysis",
     "difficulty": "intermediate",
-    "passage": "A university study found that students who attended optional review sessions scored an average of 15 points higher on final exams than students who did not attend. The study tracked 500 students across 10 introductory courses over two semesters. The university's provost concluded that review sessions are highly effective and recommended making attendance mandatory for all students.\n\nHowever, a statistics professor pointed out several methodological concerns. Students who attended review sessions also had higher GPAs on average (3.4 vs. 2.8), attended regular lectures more frequently (92% vs. 71%), and were more likely to have completed all homework assignments (88% vs. 54%). When the study controlled for prior GPA and lecture attendance, the score difference associated with review session attendance dropped to 4 points.\n\nThe provost responded that even a 4-point improvement justifies the policy. The statistics professor replied that mandatory attendance would likely produce different results than voluntary attendance, since the students who currently skip review sessions may have different learning styles or time constraints.",
+    "passage": "A university study found that students who attended optional review sessions scored an average of 15 points higher on final exams than students who did not attend. The study tracked 500 students across 20 sections of introductory biology over three semesters. Review sessions were held weekly, led by graduate teaching assistants, and covered problem-solving strategies.\n\nThe university's provost cited this study in proposing mandatory review sessions for all introductory courses, arguing that requiring attendance would improve overall student performance. The Faculty Senate objected, noting several concerns:\n\n1. Students who voluntarily attend review sessions may be more motivated generally\n2. The study did not control for prior academic achievement (GPA)\n3. Some sections had different TAs with varying teaching quality\n4. Students who work part-time jobs are disproportionately unable to attend optional sessions\n5. Correlation between attendance and scores does not prove causation",
     "questions": [
       {
         "id": "lsat-p4-q1",
-        "prompt": "Identify and explain the main logical flaw in the provost's initial conclusion. What type of reasoning error is being committed, and how do the statistics professor's observations reveal this error?",
-        "rubric_points": ["Identifies selection bias / confounding variables as the core flaw", "Explains that review session attendees were already stronger students", "Notes that correlation does not imply causation in this context", "Shows how controlling for confounders reduced the effect dramatically (15 → 4 points)"],
+        "prompt": "Evaluate each of the Faculty Senate's five objections. For each, explain whether it represents a valid methodological concern and how it could be addressed through improved study design.",
+        "rubric_points": ["Self-selection bias (objection 1) is the strongest threat — propensity score matching could address it", "GPA control (objection 2) is valid — regression with GPA covariate would isolate session effect", "TA quality (objection 3) is valid — random assignment of TAs or TA fixed effects in analysis", "Objection 5 correctly identifies correlation ≠ causation; randomized controlled trial needed"],
         "max_score": 4,
-        "time_minutes": 8,
-        "difficulty": "beginner"
+        "time_minutes": 12,
+        "difficulty": "intermediate"
       },
       {
         "id": "lsat-p4-q2",
-        "prompt": "The statistics professor argues that mandatory attendance would produce different results than voluntary attendance. Construct a logical argument supporting this claim, and explain what additional evidence would be needed to properly test the effectiveness of review sessions.",
-        "rubric_points": ["Explains the voluntary vs. mandatory distinction (motivation, learning style differences)", "Notes that forcing attendance doesn't replicate the conditions of voluntary choice", "Suggests a randomized controlled trial as proper test methodology", "Identifies what should be controlled: prior GPA, attendance, homework completion"],
+        "prompt": "Design a study that would more convincingly test whether review sessions cause improved performance. Specify your methodology, controls, and how you would address the self-selection problem.",
+        "rubric_points": ["Proposes randomized controlled trial or natural experiment (lottery-based admission to limited seats)", "Controls for GPA, demographics, course section, and TA quality", "Addresses self-selection through random assignment, eliminating motivation confound", "Discusses ethical considerations of randomly denying students access to beneficial resources"],
         "max_score": 4,
         "time_minutes": 10,
-        "difficulty": "intermediate"
+        "difficulty": "advanced"
       }
     ]
   },
@@ -99,20 +99,140 @@
     "id": "lsat-passage-5",
     "section": "Analytical Reasoning",
     "difficulty": "advanced",
-    "passage": "A conference organizer must schedule exactly 6 presentations into 3 time slots (morning, afternoon, evening). Each time slot has exactly 2 presentations running simultaneously in Room 1 and Room 2. The presentations are: Constitutional Law (C), Environmental Policy (E), International Trade (I), Labor Rights (L), Tax Reform (T), and Urban Planning (U).\n\nConstraints:\n1. Constitutional Law must be in the morning.\n2. Tax Reform and Labor Rights cannot be in the same time slot.\n3. Environmental Policy must be scheduled before International Trade (earlier time slot).\n4. Urban Planning must be in Room 1.\n5. If Labor Rights is in the evening, then Constitutional Law must be in Room 1.\n6. International Trade and Tax Reform must be in different rooms when in adjacent time slots.",
+    "passage": "A conference organizer must schedule six presentations — Art History (A), Biology (B), Chemistry (C), Data Science (D), Environmental Policy (E), and Urban Planning (U) — into three time slots (Morning, Afternoon, Evening), with exactly two presentations per slot.\n\nConstraints:\n1. A and B cannot be in the same time slot.\n2. C must be scheduled before D (i.e., in an earlier time slot).\n3. E must be in the Afternoon.\n4. If B is in the Morning, then U must be in the Evening.\n5. D and U cannot both be in the Evening.\n6. A cannot be in the Evening.",
     "questions": [
       {
         "id": "lsat-p5-q1",
-        "prompt": "Determine all valid schedules that satisfy every constraint. For each valid schedule, specify which presentation is in which room and time slot. Show your deductive reasoning at each step.",
-        "rubric_points": ["Places C in morning correctly, then systematically applies constraint 3 (E before I)", "Correctly handles constraint 2 (T and L in different time slots)", "Applies room constraints (U in Room 1) and conditional (constraint 5)", "Arrives at complete valid schedules with clear chain of deduction"],
+        "prompt": "Determine all valid schedules that satisfy all six constraints. Show your work by systematically considering E's placement (fixed in Afternoon by constraint 3), then building outward. Present results as Morning/Afternoon/Evening groupings.",
+        "rubric_points": ["Correctly fixes E in Afternoon, then determines E's partner from remaining letters", "Applies C before D constraint to limit possible slot assignments", "Correctly applies conditional (if B morning then U evening) and D/U evening exclusion", "Arrives at complete and correct set of valid schedules with clear deductive steps"],
         "max_score": 4,
         "time_minutes": 15,
-        "difficulty": "advanced"
+        "difficulty": "intermediate"
       },
       {
         "id": "lsat-p5-q2",
         "prompt": "If a 7th constraint is added — 'Environmental Policy and Urban Planning cannot be in the same time slot' — which, if any, of your previously valid schedules are eliminated? Explain the logical impact of this new constraint.",
         "rubric_points": ["Correctly identifies which valid schedules have E and U in the same slot", "Eliminates those schedules and confirms remaining ones still satisfy all 7 constraints", "Shows clear deductive chain for why specific schedules are invalidated", "Discusses whether the new constraint makes the problem over-constrained or still solvable"],
+        "max_score": 4,
+        "time_minutes": 10,
+        "difficulty": "advanced"
+      }
+    ]
+  },
+  {
+    "id": "lsat-passage-6",
+    "section": "Logical Reasoning Analysis",
+    "difficulty": "beginner",
+    "passage": "The town council of Lakewood is debating whether to build a new community center or renovate the existing library. The council has $3 million in available funds.\n\nCouncilmember Torres argues: 'The community center would serve 5,000 residents per month compared to the library's current 2,000 monthly visitors. More people served means more public benefit per dollar spent. The community center also brings health benefits through its gym and pool facilities, which will reduce healthcare costs in the long run.'\n\nCouncilmember Patel responds: 'Library usage has declined because the building is deteriorating, not because demand is low. A renovated library with modern technology, study rooms, and community spaces would attract 4,000 monthly visitors at half the cost. Furthermore, libraries provide educational resources that compound over generations — children who read perform better in school, earn higher incomes, and commit fewer crimes.'",
+    "questions": [
+      {
+        "id": "lsat-p6-q1",
+        "prompt": "Identify the logical flaw in Torres's comparison of 5,000 projected vs. 2,000 current library visitors. What type of reasoning error is this, and what additional information would be needed to make the comparison fair?",
+        "rubric_points": ["Identifies false comparison: projected (optimistic) numbers vs. current (suppressed) numbers", "Library's 2,000 reflects a deteriorated facility, not true demand — an unfair baseline", "Need projected visitors for BOTH options under comparable conditions", "This is an example of comparing apples to oranges / stacking the deck fallacy"],
+        "max_score": 4,
+        "time_minutes": 8,
+        "difficulty": "beginner"
+      },
+      {
+        "id": "lsat-p6-q2",
+        "prompt": "Both councilmembers make utilitarian arguments (maximizing public benefit). Evaluate whose utilitarian reasoning is stronger, and identify any hidden assumptions in each argument. Consider short-term vs. long-term benefits.",
+        "rubric_points": ["Torres assumes visitor count = public benefit, ignoring quality/type of benefit", "Patel's argument about generational compounding is stronger but assumes renovation will achieve projected numbers", "Torres's healthcare savings claim needs evidence — correlation between gym availability and reduced costs is uncertain", "Evaluates time horizon: community center has immediate but potentially shallow impact; library has delayed but deeper impact"],
+        "max_score": 4,
+        "time_minutes": 10,
+        "difficulty": "intermediate"
+      }
+    ]
+  },
+  {
+    "id": "lsat-passage-7",
+    "section": "Analytical Reasoning",
+    "difficulty": "beginner",
+    "passage": "Five law students — Kim, Lee, Martinez, Nguyen, and O'Brien — must each be assigned to one of three legal clinics: Criminal Defense (CD), Immigration (IM), or Environmental Law (EL). Each clinic must have at least one student, and no clinic can have more than two students.\n\nConditions:\n1. Kim and Lee cannot be in the same clinic.\n2. Martinez must be in Immigration.\n3. If Nguyen is in Criminal Defense, then O'Brien must be in Environmental Law.\n4. O'Brien and Martinez cannot be in the same clinic.\n5. Kim cannot be in Environmental Law.",
+    "questions": [
+      {
+        "id": "lsat-p7-q1",
+        "prompt": "Find all valid assignments of students to clinics. Show your step-by-step reasoning, starting with the fixed placements and working through the conditional constraints.",
+        "rubric_points": ["Correctly fixes Martinez in IM, then O'Brien cannot be in IM (condition 4)", "Systematically places remaining students considering Kim/Lee separation and Kim/EL exclusion", "Correctly handles Nguyen/O'Brien conditional and clinic size limits", "Lists all valid assignments with clear justification"],
+        "max_score": 4,
+        "time_minutes": 12,
+        "difficulty": "beginner"
+      },
+      {
+        "id": "lsat-p7-q2",
+        "prompt": "If a new condition is added — 'Lee must be in the same clinic as at least one other student' — how does this reduce the solution set? Show which previously valid assignments are now eliminated.",
+        "rubric_points": ["Identifies assignments where Lee is alone in a clinic", "Eliminates those assignments and verifies remaining ones satisfy all 6 conditions", "Shows understanding that this constraint forces Lee into a 2-person clinic", "Demonstrates clear logical deduction chain"],
+        "max_score": 4,
+        "time_minutes": 8,
+        "difficulty": "intermediate"
+      }
+    ]
+  },
+  {
+    "id": "lsat-passage-8",
+    "section": "Reading Comprehension",
+    "difficulty": "intermediate",
+    "passage": "The debate over qualified immunity — the legal doctrine that shields government officials from civil lawsuits unless they violated 'clearly established' constitutional rights — has intensified in recent years.\n\nProponents argue qualified immunity is necessary to prevent a flood of frivolous lawsuits against police officers and other officials who must make split-second decisions under pressure. Without it, they claim, competent individuals would refuse to serve in public safety roles, and officers would be paralyzed by fear of personal liability, leading to 'de-policing.'\n\nCritics counter that qualified immunity has evolved far beyond its original purpose. The 'clearly established' standard requires that a prior case with nearly identical facts exists — meaning the first person to suffer a novel constitutional violation has no remedy. Courts have denied claims because previous cases involved slightly different weapons, locations, or circumstances, even when the underlying rights violation was obvious.\n\nReformers have proposed several alternatives: (1) eliminating qualified immunity entirely while requiring governmental indemnification of officers, (2) replacing the 'clearly established' test with a 'reasonable officer' standard, or (3) creating a federal cause of action against government entities rather than individual officers.",
+    "questions": [
+      {
+        "id": "lsat-p8-q1",
+        "prompt": "Analyze the 'clearly established' standard's logical structure. Why does requiring near-identical precedent create a Catch-22, and what does this reveal about the relationship between legal precedent and justice?",
+        "rubric_points": ["Catch-22: novel violations can never be 'clearly established' because no prior case exists with those facts", "This creates an expanding zone of unaccountable conduct for any 'creative' rights violation", "Reveals tension between rule-following (stare decisis) and equity (justice in individual cases)", "The standard confuses 'factual similarity' with 'legal principle' — the right can be clear even if the facts are new"],
+        "max_score": 4,
+        "time_minutes": 10,
+        "difficulty": "intermediate"
+      },
+      {
+        "id": "lsat-p8-q2",
+        "prompt": "Evaluate the three proposed alternatives to qualified immunity. For each, identify its strengths, weaknesses, and which stakeholders it most benefits or harms. Which proposal best balances accountability and governance?",
+        "rubric_points": ["Option 1: eliminates officer fear but costs shift to taxpayers; removes personal deterrence effect", "Option 2: more flexible standard but 'reasonable officer' is subjective and may still protect misconduct", "Option 3: entity liability ensures deeper pockets for victims but removes individual accountability", "Evaluates tradeoffs between deterrence, compensation, governance, and administrability"],
+        "max_score": 4,
+        "time_minutes": 12,
+        "difficulty": "advanced"
+      }
+    ]
+  },
+  {
+    "id": "lsat-passage-9",
+    "section": "Logical Reasoning Analysis",
+    "difficulty": "advanced",
+    "passage": "A pharmaceutical company claims its new drug, CardioShield, reduces the risk of heart attacks by 50%. The claim is based on a clinical trial of 10,000 participants aged 50-70 with elevated cholesterol, conducted over 5 years.\n\nDetailed results:\n- Control group (5,000 participants): 200 heart attacks (4% rate)\n- Treatment group (5,000 participants): 100 heart attacks (2% rate)\n- Relative risk reduction: 50%\n- Absolute risk reduction: 2 percentage points\n- Number needed to treat (NNT): 50\n- Side effects: 15% of treatment group experienced muscle pain; 3% experienced liver enzyme elevation\n- Cost: $2,400 per year per patient\n- The trial excluded patients with diabetes, prior heart attacks, or kidney disease",
+    "questions": [
+      {
+        "id": "lsat-p9-q1",
+        "prompt": "Explain why the company's '50% reduction' claim, while technically accurate, may be misleading. Distinguish between relative risk reduction, absolute risk reduction, and NNT. How should this information be communicated to patients making treatment decisions?",
+        "rubric_points": ["50% relative risk reduction sounds dramatic but only reflects 2% absolute reduction (4% → 2%)", "NNT of 50 means 50 people must take the drug for 5 years to prevent ONE heart attack", "49 of those 50 people get no heart attack benefit but face side effects and costs", "Informed consent requires presenting absolute numbers, NNT, and side effect rates together"],
+        "max_score": 4,
+        "time_minutes": 10,
+        "difficulty": "intermediate"
+      },
+      {
+        "id": "lsat-p9-q2",
+        "prompt": "The trial excluded patients with diabetes, prior heart attacks, or kidney disease. Analyze how this exclusion affects the generalizability of the results. Should a physician prescribe CardioShield to a patient with diabetes based on this trial? Construct both sides of the argument.",
+        "rubric_points": ["Exclusion criteria mean results only strictly apply to the studied population (healthy elevated cholesterol)", "Diabetic patients may have different risk-benefit profiles — higher baseline risk could improve NNT", "But diabetics also have different drug metabolism (kidney/liver issues) — side effects could be worse", "Physician should weigh extrapolation risks against patient's individual risk profile and discuss uncertainty"],
+        "max_score": 4,
+        "time_minutes": 12,
+        "difficulty": "advanced"
+      }
+    ]
+  },
+  {
+    "id": "lsat-passage-10",
+    "section": "Analytical Reasoning",
+    "difficulty": "advanced",
+    "passage": "A judicial panel must assign four judges — Foster, Grant, Hernandez, and Ito — to hear four cases this week: Antitrust (AT), Bankruptcy (BK), Civil Rights (CR), and Drug Enforcement (DE). Each judge hears exactly one case, and each case is heard by exactly one judge.\n\nConstraints:\n1. Foster has a conflict of interest and cannot hear the Antitrust case.\n2. Grant must hear either Bankruptcy or Civil Rights.\n3. If Hernandez hears Drug Enforcement, then Ito must hear Antitrust.\n4. Ito cannot hear Bankruptcy.\n5. Foster and Grant cannot both be assigned to cases that start with the same letter (i.e., if Foster hears BK, Grant cannot hear BK — trivially satisfied — but if Foster hears CR, Grant cannot hear CR).\n6. Hernandez prefers not to hear Civil Rights, but will if no other valid assignment exists.",
+    "questions": [
+      {
+        "id": "lsat-p10-q1",
+        "prompt": "Ignoring constraint 6 (Hernandez's preference), find all valid assignments. Then apply constraint 6 to determine the optimal assignment. Show your complete reasoning.",
+        "rubric_points": ["Systematically applies constraints 1-5 to narrow possibilities", "Correctly handles the conditional in constraint 3 and biconditional implications", "Lists all valid assignments before applying preference constraint", "Identifies the optimal assignment that avoids Hernandez hearing CR when possible"],
+        "max_score": 4,
+        "time_minutes": 15,
+        "difficulty": "advanced"
+      },
+      {
+        "id": "lsat-p10-q2",
+        "prompt": "If Judge Kim is added as a fifth judge who can serve as an alternate for any case, and a new rule states 'no judge can hear a case if they have published academic work on that topic,' how would you structure the assignment process? Discuss the logical principles for resolving constraint satisfaction with preferences.",
+        "rubric_points": ["Introduces the concept of constraint propagation and backtracking", "With 5 judges and 4 cases, one judge is unassigned — this adds flexibility", "Published-work constraint requires additional information input but follows same logical structure", "Discusses priority ordering: hard constraints first, then preferences, then optimization"],
         "max_score": 4,
         "time_minutes": 10,
         "difficulty": "advanced"
