@@ -208,6 +208,13 @@ const App = () => (
               <Route path="/logic-games" element={<LogicGames />} />
               <Route path="/exam-simulator" element={<ExamSimulator />} />
               <Route path="/ai-tutor" element={<AITutorChat />} />
+              <Route path="/competitions" element={<Competitions />} />
+              <Route path="/competition/:langId" element={<LanguageCompetition />} />
+              <Route path="/spanish-competition" element={<LanguageCompetition />} />
+              <Route path="/german-competition" element={<LanguageCompetition />} />
+              <Route path="/italian-competition" element={<LanguageCompetition />} />
+              <Route path="/latin-competition" element={<LanguageCompetition />} />
+              <Route path="/debate" element={<DebatePractice />} />
               {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
               <Route path="*" element={<NotFound />} />
             </Routes>
