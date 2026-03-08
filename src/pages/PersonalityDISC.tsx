@@ -86,7 +86,7 @@ const PersonalityDISC = () => {
         </div>
         <div className="max-w-2xl mx-auto px-4 py-6 space-y-6">
           <Card className="p-4 border-amber-500/30 bg-amber-500/5">
-            <p className="text-xs text-muted-foreground"><strong>⚠️ Non-Clinical:</strong> Educational self-assessment only.</p>
+            <p className="text-xs text-muted-foreground"><strong>⚠️ Non-Clinical:</strong> Educational self-assessment only. Not a diagnostic tool. If you have mental health concerns, please consult a licensed professional.</p>
           </Card>
           <Card className="p-6 text-center space-y-2">
             <span className="text-5xl">{info.icon}</span>
@@ -129,7 +129,7 @@ const PersonalityDISC = () => {
         <Progress value={(answeredCount / QUESTIONS.length) * 100} className="mt-2 h-1.5" />
       </div>
       <div className="max-w-2xl mx-auto px-4 py-6 space-y-6">
-        <Card className="p-4 border-amber-500/30 bg-amber-500/5"><p className="text-xs text-muted-foreground"><strong>⚠️</strong> Educational self-assessment only.</p></Card>
+        <Card className="p-4 border-amber-500/30 bg-amber-500/5"><p className="text-xs text-muted-foreground"><strong>⚠️</strong> Educational self-assessment only. Not a clinical instrument. If you have mental health concerns, please seek professional help.</p></Card>
         {pageQs.map(q => (
           <Card key={q.id} className="p-4 space-y-3">
             <p className="text-sm font-medium">{q.id}. {q.text}</p>

@@ -118,7 +118,7 @@ const PersonalityStrengths = () => {
           </div>
         </div>
         <div className="max-w-2xl mx-auto px-4 py-6 space-y-6">
-          <Card className="p-4 border-amber-500/30 bg-amber-500/5"><p className="text-xs text-muted-foreground"><strong>⚠️</strong> Educational self-assessment inspired by strengths-based frameworks. Not affiliated with Gallup®.</p></Card>
+          <Card className="p-4 border-amber-500/30 bg-amber-500/5"><p className="text-xs text-muted-foreground"><strong>⚠️</strong> Educational self-assessment inspired by strengths-based frameworks. Not affiliated with Gallup®. Not a clinical instrument. If you have mental health concerns, please consult a licensed professional.</p></Card>
           <Card className="p-5 space-y-1 text-center">
             <h2 className="text-xl font-bold">Your Top 5 Talent Themes</h2>
             <p className="text-xs text-muted-foreground">These are the areas where you naturally excel</p>
@@ -178,7 +178,7 @@ const PersonalityStrengths = () => {
         <Progress value={(answeredCount / QUESTIONS.length) * 100} className="mt-2 h-1.5" />
       </div>
       <div className="max-w-2xl mx-auto px-4 py-6 space-y-6">
-        <Card className="p-4 border-amber-500/30 bg-amber-500/5"><p className="text-xs text-muted-foreground"><strong>⚠️</strong> Educational assessment inspired by strengths-based frameworks.</p></Card>
+        <Card className="p-4 border-amber-500/30 bg-amber-500/5"><p className="text-xs text-muted-foreground"><strong>⚠️</strong> Educational assessment inspired by strengths-based frameworks. Not a diagnostic tool. If you have mental health concerns, please seek professional help.</p></Card>
         {pageQs.map(q => (
           <Card key={q.id} className="p-4 space-y-3">
             <p className="text-sm font-medium">{q.id}. {q.text}</p>
