@@ -6,6 +6,7 @@ import { Progress } from "@/components/ui/progress";
 import { Badge } from "@/components/ui/badge";
 import { ArrowLeft, BookOpen, RotateCcw, Check, X, ChevronRight, Flame, Brain, Volume2, Eye, EyeOff, Sparkles } from "lucide-react";
 import { SAT_VOCAB_WORDS, VocabWord, generateVocabQuiz, getNextReviewTime } from "@/data/satVocab";
+import { ALL_PRO_VOCAB, ProVocabWord } from "@/data/proVocab";
 import { useExamType } from "@/hooks/useExamType";
 
 const MASTERY_KEY = "vocab_mastery";
@@ -44,10 +45,21 @@ const VocabTrainer = () => {
   const [sessionWords, setSessionWords] = useState<VocabWord[]>([]);
   const [sessionResults, setSessionResults] = useState<{ word: VocabWord; correct: boolean }[]>([]);
 
+  // Check if exam type matches a pro vocab bank (from URL or localStorage)
+  const proExamId = typeof window !== 'undefined' ? new URLSearchParams(window.location.search).get('exam') : null;
+  const isProExam = proExamId && ['gre', 'gmat', 'lsat', 'mcat'].includes(proExamId);
+  const baseWords: VocabWord[] = useMemo(() => {
+    if (isProExam && proExamId) {
+      const proWords = ALL_PRO_VOCAB.filter(w => w.exam === proExamId);
+      return [...SAT_VOCAB_WORDS, ...proWords];
+    }
+    return SAT_VOCAB_WORDS;
+  }, [isProExam, proExamId]);
+
   const filteredWords = useMemo(() => {
-    if (category === "all") return SAT_VOCAB_WORDS;
-    return SAT_VOCAB_WORDS.filter(w => w.category === category);
-  }, [category]);
+    if (category === "all") return baseWords;
+    return baseWords.filter(w => w.category === category);
+  }, [category, baseWords]);
 
   // Stats
   const masteredCount = Object.values(mastery).filter(m => m.correctStreak >= 3).length;
@@ -168,7 +180,7 @@ const VocabTrainer = () => {
             </Link>
             <div>
               <h1 className="text-xl font-bold">{examType.toUpperCase()} Vocabulary Trainer</h1>
-              <p className="text-sm text-muted-foreground">Master {SAT_VOCAB_WORDS.length} high-frequency words</p>
+              <p className="text-sm text-muted-foreground">Master {baseWords.length} high-frequency words{isProExam && proExamId ? ` (incl. ${proExamId.toUpperCase()} vocab)` : ''}</p>
             </div>
           </div>
 
@@ -192,8 +204,8 @@ const VocabTrainer = () => {
                 <p className="text-[10px] text-muted-foreground">Due Review</p>
               </div>
             </div>
-            <Progress value={(masteredCount / SAT_VOCAB_WORDS.length) * 100} className="mt-3 h-2" />
-            <p className="text-xs text-muted-foreground mt-1 text-center">{Math.round((masteredCount / SAT_VOCAB_WORDS.length) * 100)}% mastered</p>
+            <Progress value={(masteredCount / baseWords.length) * 100} className="mt-3 h-2" />
+            <p className="text-xs text-muted-foreground mt-1 text-center">{Math.round((masteredCount / baseWords.length) * 100)}% mastered</p>
           </Card>
 
           {/* Category Filter */}
