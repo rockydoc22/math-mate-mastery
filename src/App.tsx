@@ -152,8 +152,8 @@ const App = () => (
               <Route path="/rulebook" element={<Rulebook />} />
               <Route path="/demo" element={<DemoMode />} />
               <Route path="/settings" element={<Settings />} />
-              <Route path="/printable-questions" element={<PrintableQuestions />} />
-              <Route path="/duplicate-detector" element={<DuplicateDetector />} />
+              <Route path="/printable-questions" element={<ProtectedRoute><PrintableQuestions /></ProtectedRoute>} />
+              <Route path="/duplicate-detector" element={<ProtectedRoute><DuplicateDetector /></ProtectedRoute>} />
               <Route path="/starter-kit" element={<StarterKitDownload />} />
               <Route path="/key-principles" element={<KeyPrinciples />} />
               <Route path="/rapid-facts" element={<RapidFacts />} />
