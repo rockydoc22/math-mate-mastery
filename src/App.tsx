@@ -90,6 +90,8 @@ const ConceptExplainer = lazy(() => import("./pages/ConceptExplainer"));
 const PracticeLog = lazy(() => import("./pages/PracticeLog"));
 const WordOfTheDay = lazy(() => import("./pages/WordOfTheDay"));
 const MathTricks = lazy(() => import("./pages/MathTricks"));
+const ProExamFRQ = lazy(() => import("./pages/ProExamFRQ"));
+const LogicGames = lazy(() => import("./pages/LogicGames"));
 
 const queryClient = new QueryClient();
 
