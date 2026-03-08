@@ -104,20 +104,60 @@ const ProExams = () => {
           </div>
         </div>
 
-        {/* Logic Games */}
-        <Card
-          className="p-4 cursor-pointer hover:shadow-md transition-all hover:border-primary/40"
-          onClick={() => navigate('/logic-games')}
-        >
-          <div className="flex items-center gap-4">
-            <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center text-2xl shrink-0">🧩</div>
-            <div className="flex-1">
-              <h3 className="font-bold text-foreground">Logic Games</h3>
-              <p className="text-xs text-muted-foreground">LSAT-style sequencing, grouping & conditional puzzles</p>
-            </div>
-            <ChevronRight className="w-5 h-5 text-muted-foreground" />
+        {/* Study Guides */}
+        <div>
+          <div className="flex items-center gap-2 mb-3">
+            <span className="text-xl">📖</span>
+            <h2 className="text-lg font-bold">Study Guides</h2>
           </div>
-        </Card>
+          <div className="grid grid-cols-2 gap-3">
+            {['gre', 'gmat', 'lsat', 'mcat'].map(id => {
+              const exam = PRO_EXAMS.find(e => e.id === id);
+              if (!exam) return null;
+              return (
+                <Card
+                  key={id}
+                  className="p-4 cursor-pointer hover:shadow-md transition-all hover:border-primary/40 group"
+                  onClick={() => navigate(`/pro-exam-study/${id}`)}
+                >
+                  <div className="flex flex-col items-center text-center gap-2">
+                    <span className="text-2xl">{exam.icon}</span>
+                    <h3 className="font-bold text-sm text-foreground">{exam.shortName} Guide</h3>
+                    <span className="text-[10px] text-muted-foreground">Strategies & formulas</span>
+                  </div>
+                </Card>
+              );
+            })}
+          </div>
+        </div>
+
+        {/* Tools Row */}
+        <div className="grid grid-cols-2 gap-3">
+          <Card
+            className="p-4 cursor-pointer hover:shadow-md transition-all hover:border-primary/40"
+            onClick={() => navigate('/logic-games')}
+          >
+            <div className="flex items-center gap-3">
+              <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center text-xl shrink-0">🧩</div>
+              <div>
+                <h3 className="font-bold text-sm text-foreground">Logic Games</h3>
+                <p className="text-[10px] text-muted-foreground">LSAT puzzles</p>
+              </div>
+            </div>
+          </Card>
+          <Card
+            className="p-4 cursor-pointer hover:shadow-md transition-all hover:border-primary/40"
+            onClick={() => navigate('/pro-exam-scores')}
+          >
+            <div className="flex items-center gap-3">
+              <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center text-xl shrink-0">📊</div>
+              <div>
+                <h3 className="font-bold text-sm text-foreground">Score Tracker</h3>
+                <p className="text-[10px] text-muted-foreground">Track progress</p>
+              </div>
+            </div>
+          </Card>
+        </div>
       </div>
       <BottomNav />
     </div>
