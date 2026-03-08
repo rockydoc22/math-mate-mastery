@@ -37,6 +37,14 @@ const TRAIT_LABELS: Record<string, string> = {
   motivation: "Motivation",
   empathy: "Empathy",
   social_skills: "Social Skills",
+  independent_vs_collaborative: "Independent vs Collaborative",
+  fast_vs_deep: "Fast vs Deep",
+  visual_vs_verbal: "Visual vs Verbal",
+  structured_vs_exploratory: "Structured vs Exploratory",
+  competitive_vs_personal: "Competitive vs Personal",
+  morning_vs_evening: "Morning vs Evening",
+  quiet_vs_social: "Quiet vs Social",
+  digital_vs_analog: "Digital vs Analog",
 };
 
 const PersonalityAssessment = () => {
