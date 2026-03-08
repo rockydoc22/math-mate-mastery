@@ -86,7 +86,7 @@ const PersonalityDISC = () => {
         </div>
         <div className="max-w-2xl mx-auto px-4 py-6 space-y-6">
           <Card className="p-4 border-amber-500/30 bg-amber-500/5">
-            <p className="text-xs text-muted-foreground"><strong>⚠️ Non-Clinical:</strong> Educational self-assessment only.</p>
+            <p className="text-xs text-muted-foreground"><strong>⚠️ Non-Clinical:</strong> Educational self-assessment only. Not a diagnostic tool. If you have mental health concerns, please consult a licensed professional.</p>
           </Card>
           <Card className="p-6 text-center space-y-2">
             <span className="text-5xl">{info.icon}</span>
