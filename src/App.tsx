@@ -96,6 +96,9 @@ const ProExamScoreTracker = lazy(() => import("./pages/ProExamScoreTracker"));
 const LogicGames = lazy(() => import("./pages/LogicGames"));
 const ExamSimulator = lazy(() => import("./pages/ExamSimulator"));
 const AITutorChat = lazy(() => import("./pages/AITutorChat"));
+const Competitions = lazy(() => import("./pages/Competitions"));
+const LanguageCompetition = lazy(() => import("./pages/LanguageCompetition"));
+const DebatePractice = lazy(() => import("./pages/DebatePractice"));
 
 const queryClient = new QueryClient();
 
@@ -205,6 +208,9 @@ const App = () => (
               <Route path="/logic-games" element={<LogicGames />} />
               <Route path="/exam-simulator" element={<ExamSimulator />} />
               <Route path="/ai-tutor" element={<AITutorChat />} />
+              <Route path="/competitions" element={<Competitions />} />
+              <Route path="/competition/:langId" element={<LanguageCompetition />} />
+              <Route path="/debate" element={<DebatePractice />} />
               {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
               <Route path="*" element={<NotFound />} />
             </Routes>
