@@ -222,6 +222,7 @@ const App = () => (
               <Route path="/competition/:langId" element={<LanguageCompetition />} />
               <Route path="/debate" element={<DebatePractice />} />
               <Route path="/anatomy-atlas" element={<AnatomyAtlas />} />
+              <Route path="/competition-hub/:competitionId" element={<CompetitionHub />} />
               {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
               <Route path="*" element={<NotFound />} />
             </Routes>
