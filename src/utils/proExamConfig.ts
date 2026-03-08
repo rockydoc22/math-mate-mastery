@@ -123,7 +123,6 @@ export const PRO_EXAMS: ProExamConfig[] = [
     timePerQuestion: 60,
     jsonFiles: ['map_growth_question_bank_200_original.json'],
   },
-];
 
   // --- Nursing & Healthcare ---
   {
