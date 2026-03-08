@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { ArrowLeft, ChevronDown, ChevronUp, CheckCircle, XCircle, Lightbulb, Trophy, Clock, Users, BookOpen } from "lucide-react";
 import { BottomNav } from "@/components/BottomNav";
+import { SolutionPathAnalysis } from "@/components/SolutionPathAnalysis";
 import { STEM_COMPETITION_CATEGORIES, type Competition, type SampleQuestion } from "@/data/stem_competitions";
 
 const DIFFICULTY_COLORS: Record<string, string> = {
