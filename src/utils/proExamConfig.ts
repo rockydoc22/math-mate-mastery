@@ -55,7 +55,7 @@ export const PRO_EXAMS: ProExamConfig[] = [
     sections: ['Chemical and Physical Foundations', 'Biological and Biochemical Foundations', 'Psychological, Social, and Biological Foundations', 'Critical Analysis and Reasoning'],
     description: 'Medical College Admission Test',
     timePerQuestion: 95,
-    jsonFiles: ['mcat_question_bank_300_original.json', 'mcat_question_bank_expansion_300.json', 'mcat_question_bank_expansion_300_b2.json'],
+    jsonFiles: ['mcat_question_bank_300_original.json', 'mcat_question_bank_expansion_300.json', 'mcat_question_bank_expansion_300_b2.json', 'mcat_question_bank_expansion_300_b3.json'],
   },
   {
     id: 'dat', name: 'DAT', shortName: 'DAT', icon: '🦷',
@@ -82,7 +82,7 @@ export const PRO_EXAMS: ProExamConfig[] = [
     sections: ['Arithmetic Reasoning', 'Word Knowledge', 'Paragraph Comprehension', 'Mathematics Knowledge', 'General Science', 'Electronics Information', 'Auto & Shop Information', 'Mechanical Comprehension'],
     description: 'Armed Services Vocational Aptitude Battery',
     timePerQuestion: 60,
-    jsonFiles: ['asvab_question_bank_300_original.json', 'asvab_question_bank_expansion_300.json', 'asvab_question_bank_expansion_300_b2.json'],
+    jsonFiles: ['asvab_question_bank_300_original.json', 'asvab_question_bank_expansion_300.json', 'asvab_question_bank_expansion_300_b2.json', 'asvab_question_bank_expansion_300_b3.json'],
   },
   {
     id: 'clt', name: 'CLT', shortName: 'CLT', icon: '✝️',

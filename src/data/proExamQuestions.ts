@@ -45,6 +45,8 @@ const FILE_IMPORTERS: Record<string, () => Promise<any>> = {
   'asvab_question_bank_300_original.json': () => import('./asvab_question_bank_300_original.json'),
   'asvab_question_bank_expansion_300.json': () => import('./asvab_question_bank_expansion_300.json'),
   'asvab_question_bank_expansion_300_b2.json': () => import('./asvab_question_bank_expansion_300_b2.json'),
+  'asvab_question_bank_expansion_300_b3.json': () => import('./asvab_question_bank_expansion_300_b3.json'),
+  'mcat_question_bank_expansion_300_b3.json': () => import('./mcat_question_bank_expansion_300_b3.json'),
   'dat_question_bank_240_original.json': () => import('./dat_question_bank_240_original.json'),
   'oat_question_bank_240_original.json': () => import('./oat_question_bank_240_original.json'),
   'clt_question_bank_180_original.json': () => import('./clt_question_bank_180_original.json'),
