@@ -17,7 +17,7 @@ interface PersonalityItem {
   scoring_direction?: number;
 }
 
-type AssessmentMode = "select" | "big5" | "eq" | "results";
+type AssessmentMode = "select" | "big5" | "eq" | "lp" | "results";
 
 interface TraitScore {
   trait: string;
@@ -37,6 +37,14 @@ const TRAIT_LABELS: Record<string, string> = {
   motivation: "Motivation",
   empathy: "Empathy",
   social_skills: "Social Skills",
+  independent_vs_collaborative: "Independent vs Collaborative",
+  fast_vs_deep: "Fast vs Deep",
+  visual_vs_verbal: "Visual vs Verbal",
+  structured_vs_exploratory: "Structured vs Exploratory",
+  competitive_vs_personal: "Competitive vs Personal",
+  morning_vs_evening: "Morning vs Evening",
+  quiet_vs_social: "Quiet vs Social",
+  digital_vs_analog: "Digital vs Analog",
 };
 
 const PersonalityAssessment = () => {
@@ -47,11 +55,11 @@ const PersonalityAssessment = () => {
   const [answers, setAnswers] = useState<Record<string, number>>({});
   const [results, setResults] = useState<TraitScore[]>([]);
 
-  const loadItems = async (type: "big5" | "eq") => {
-    const mod =
-      type === "big5"
-        ? await import("@/data/big_five_style_items_60.json")
-        : await import("@/data/eq_items_50.json");
+  const loadItems = async (type: "big5" | "eq" | "lp") => {
+    let mod: any;
+    if (type === "big5") mod = await import("@/data/big_five_style_items_60.json");
+    else if (type === "eq") mod = await import("@/data/eq_items_50.json");
+    else mod = await import("@/data/learning_preferences_items_32.json");
     const data = (mod.default || mod) as PersonalityItem[];
     setItems(data);
     setCurrentIndex(0);
@@ -155,10 +163,26 @@ const PersonalityAssessment = () => {
                 <ChevronRight className="w-5 h-5 text-muted-foreground" />
               </div>
             </Card>
+
+            <Card
+              className="p-6 cursor-pointer hover:border-primary/50 transition-colors"
+              onClick={() => loadItems("lp")}
+            >
+              <div className="flex items-center gap-4">
+                <div className="text-4xl">📚</div>
+                <div className="flex-1">
+                  <h3 className="font-bold">Learning Preferences</h3>
+                  <p className="text-sm text-muted-foreground">
+                    32 questions • Discover how you learn best
+                  </p>
+                </div>
+                <ChevronRight className="w-5 h-5 text-muted-foreground" />
+              </div>
+            </Card>
           </div>
         )}
 
-        {(mode === "big5" || mode === "eq") && currentItem && (
+        {(mode === "big5" || mode === "eq" || mode === "lp") && currentItem && (
           <div className="space-y-6">
             <div className="flex items-center gap-2">
               <Progress value={progress} className="flex-1 h-2" />
