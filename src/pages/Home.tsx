@@ -8,7 +8,7 @@ import {
   Calculator, PenTool, Trophy, Zap, Users, LogIn, User, 
   Award, Swords, ChevronRight, Flame, Brain, X,
   Target, RotateCcw, BookOpen, RefreshCw, FileText, Crown, GraduationCap,
-  Clock, Sparkles, Download, Lightbulb, Play, Skull, Settings, Gamepad2, Smartphone, Map
+  Clock, Sparkles, Download, Lightbulb, Play, Skull, Settings, Gamepad2, Smartphone, Map, Star
 } from "lucide-react";
 import { useNavigate, Link } from "react-router-dom";
 import { useAuth } from "@/hooks/useAuth";
@@ -667,6 +667,9 @@ const Home = () => {
               { id: 'endurance', icon: Flame, label: 'Endurance Run', color: 'bg-orange-100 dark:bg-orange-900/30', iconColor: 'text-orange-600 dark:text-orange-400', to: '/endurance', exams: ['sat', 'psat', 'act'] },
               { id: 'coach', icon: Sparkles, label: 'AI Coach', color: 'bg-violet-100 dark:bg-violet-900/30', iconColor: 'text-violet-600 dark:text-violet-400', to: '/coach', exams: ['sat', 'psat', 'act'] },
               { id: 'skill-map', icon: Map, label: 'Skill Map', color: 'bg-cyan-100 dark:bg-cyan-900/30', iconColor: 'text-cyan-600 dark:text-cyan-400', to: '/skill-map', exams: ['sat', 'psat', 'act'] },
+              { id: 'daily-quests', icon: Star, label: 'Daily Quests', color: 'bg-amber-100 dark:bg-amber-900/30', iconColor: 'text-amber-600 dark:text-amber-400', to: '/daily-quests', exams: ['sat', 'psat', 'act'] },
+              { id: 'pro-exams', icon: GraduationCap, label: 'Pro Exams', color: 'bg-slate-100 dark:bg-slate-900/30', iconColor: 'text-slate-600 dark:text-slate-400', to: '/pro-exams', exams: ['sat', 'psat', 'act'] },
+              { id: 'teacher', icon: Users, label: 'Teacher Hub', color: 'bg-sky-100 dark:bg-sky-900/30', iconColor: 'text-sky-600 dark:text-sky-400', to: '/teacher', exams: ['sat', 'psat', 'act'] },
             ];
 
             // Filter tiles to only show those relevant to the current exam

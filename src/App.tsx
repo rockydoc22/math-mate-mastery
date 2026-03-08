@@ -55,6 +55,10 @@ const WritingLab = lazy(() => import("./pages/WritingLab"));
 const EnduranceRun = lazy(() => import("./pages/EnduranceRun"));
 const StudyCoach = lazy(() => import("./pages/StudyCoach"));
 const SkillGraph = lazy(() => import("./pages/SkillGraph"));
+const ProExams = lazy(() => import("./pages/ProExams"));
+const ProExamQuiz = lazy(() => import("./pages/ProExamQuiz"));
+const DailyQuests = lazy(() => import("./pages/DailyQuests"));
+const TeacherDashboard = lazy(() => import("./pages/TeacherDashboard"));
 
 const queryClient = new QueryClient();
 
@@ -123,6 +127,10 @@ const App = () => (
               <Route path="/endurance" element={<EnduranceRun />} />
               <Route path="/coach" element={<StudyCoach />} />
               <Route path="/skill-map" element={<SkillGraph />} />
+              <Route path="/pro-exams" element={<ProExams />} />
+              <Route path="/pro-exam/:examId" element={<ProExamQuiz />} />
+              <Route path="/daily-quests" element={<DailyQuests />} />
+              <Route path="/teacher" element={<TeacherDashboard />} />
               {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
               <Route path="*" element={<NotFound />} />
             </Routes>
