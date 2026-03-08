@@ -45,10 +45,20 @@ const VocabTrainer = () => {
   const [sessionWords, setSessionWords] = useState<VocabWord[]>([]);
   const [sessionResults, setSessionResults] = useState<{ word: VocabWord; correct: boolean }[]>([]);
 
+  // Combine SAT + Pro vocab based on exam type
+  const isProExam = ['gre', 'gmat', 'lsat', 'mcat'].includes(examType);
+  const baseWords: VocabWord[] = useMemo(() => {
+    if (isProExam) {
+      const proWords = ALL_PRO_VOCAB.filter(w => w.exam === examType);
+      return [...SAT_VOCAB_WORDS, ...proWords];
+    }
+    return SAT_VOCAB_WORDS;
+  }, [examType, isProExam]);
+
   const filteredWords = useMemo(() => {
-    if (category === "all") return SAT_VOCAB_WORDS;
-    return SAT_VOCAB_WORDS.filter(w => w.category === category);
-  }, [category]);
+    if (category === "all") return baseWords;
+    return baseWords.filter(w => w.category === category);
+  }, [category, baseWords]);
 
   // Stats
   const masteredCount = Object.values(mastery).filter(m => m.correctStreak >= 3).length;
