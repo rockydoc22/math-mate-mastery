@@ -46,7 +46,7 @@ export const PRO_EXAMS: ProExamConfig[] = [
     sections: ['Logical Reasoning', 'Analytical Reasoning', 'Reading Comprehension'],
     description: 'Law School Admission Test',
     timePerQuestion: 85,
-    jsonFiles: ['lsat_question_bank_250_original.json', 'lsat_question_bank_expansion_300.json', 'lsat_question_bank_expansion_300_b2.json'],
+    jsonFiles: ['lsat_question_bank_250_original.json', 'lsat_question_bank_expansion_300.json', 'lsat_question_bank_expansion_300_b2.json', 'lsat_question_bank_expansion_300_b3.json'],
   },
   {
     id: 'mcat', name: 'MCAT', shortName: 'MCAT', icon: '🔬',
