@@ -690,6 +690,8 @@ const Home = () => {
               { id: 'weekly-goals', icon: CircleDot, label: 'Weekly Goals', color: 'bg-violet-100 dark:bg-violet-900/30', iconColor: 'text-violet-600 dark:text-violet-400', to: '/weekly-goals', exams: ['sat', 'psat', 'act'] },
               { id: 'achievements', icon: Award, label: 'Achievements', color: 'bg-amber-100 dark:bg-amber-900/30', iconColor: 'text-amber-600 dark:text-amber-400', to: '/achievements', exams: ['sat', 'psat', 'act'] },
               { id: 'mistake-journal', icon: BookMarked, label: 'Mistake Journal', color: 'bg-red-100 dark:bg-red-900/30', iconColor: 'text-red-600 dark:text-red-400', to: '/mistake-journal', exams: ['sat', 'psat', 'act'] },
+              { id: 'progress-report', icon: FileBarChart, label: 'Report Card', color: 'bg-indigo-100 dark:bg-indigo-900/30', iconColor: 'text-indigo-600 dark:text-indigo-400', to: '/progress-report', exams: ['sat', 'psat', 'act'] },
+              { id: 'quick-review', icon: RefreshCw, label: 'Quick Review', color: 'bg-lime-100 dark:bg-lime-900/30', iconColor: 'text-lime-600 dark:text-lime-400', to: '/quick-review', exams: ['sat', 'psat', 'act'] },
             ];
 
             // Filter tiles to only show those relevant to the current exam
