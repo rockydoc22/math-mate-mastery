@@ -77,6 +77,47 @@ const ProExams = () => {
             </div>
           );
         })}
+        {/* FRQ Practice Section */}
+        <div>
+          <div className="flex items-center gap-2 mb-3">
+            <span className="text-xl">✍️</span>
+            <h2 className="text-lg font-bold">Free Response Practice</h2>
+          </div>
+          <div className="grid grid-cols-2 gap-3">
+            {['gre', 'gmat', 'lsat', 'mcat'].map(id => {
+              const exam = PRO_EXAMS.find(e => e.id === id);
+              if (!exam) return null;
+              return (
+                <Card
+                  key={id}
+                  className="p-4 cursor-pointer hover:shadow-md transition-all hover:border-primary/40 group"
+                  onClick={() => navigate(`/pro-exam-frq/${id}`)}
+                >
+                  <div className="flex flex-col items-center text-center gap-2">
+                    <span className="text-2xl">{exam.icon}</span>
+                    <h3 className="font-bold text-sm text-foreground">{exam.shortName} FRQ</h3>
+                    <span className="text-[10px] text-muted-foreground">Written analysis</span>
+                  </div>
+                </Card>
+              );
+            })}
+          </div>
+        </div>
+
+        {/* Logic Games */}
+        <Card
+          className="p-4 cursor-pointer hover:shadow-md transition-all hover:border-primary/40"
+          onClick={() => navigate('/logic-games')}
+        >
+          <div className="flex items-center gap-4">
+            <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center text-2xl shrink-0">🧩</div>
+            <div className="flex-1">
+              <h3 className="font-bold text-foreground">Logic Games</h3>
+              <p className="text-xs text-muted-foreground">LSAT-style sequencing, grouping & conditional puzzles</p>
+            </div>
+            <ChevronRight className="w-5 h-5 text-muted-foreground" />
+          </div>
+        </Card>
       </div>
       <BottomNav />
     </div>

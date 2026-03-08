@@ -90,6 +90,8 @@ const ConceptExplainer = lazy(() => import("./pages/ConceptExplainer"));
 const PracticeLog = lazy(() => import("./pages/PracticeLog"));
 const WordOfTheDay = lazy(() => import("./pages/WordOfTheDay"));
 const MathTricks = lazy(() => import("./pages/MathTricks"));
+const ProExamFRQ = lazy(() => import("./pages/ProExamFRQ"));
+const LogicGames = lazy(() => import("./pages/LogicGames"));
 
 const queryClient = new QueryClient();
 
@@ -193,6 +195,8 @@ const App = () => (
               <Route path="/practice-log" element={<PracticeLog />} />
               <Route path="/word-of-day" element={<WordOfTheDay />} />
               <Route path="/math-tricks" element={<MathTricks />} />
+              <Route path="/pro-exam-frq/:examId" element={<ProExamFRQ />} />
+              <Route path="/logic-games" element={<LogicGames />} />
               {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
               <Route path="*" element={<NotFound />} />
             </Routes>
