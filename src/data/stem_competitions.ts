@@ -503,4 +503,100 @@ export const STEM_COMPETITION_CATEGORIES: CompetitionCategory[] = [
       },
     ]
   },
+  },
+  {
+    id: 'history',
+    name: 'History',
+    icon: '📜',
+    description: 'History knowledge competitions & academic bowls',
+    competitions: [
+      {
+        id: 'national-history-bee',
+        name: 'National History Bee',
+        abbr: 'NHB',
+        icon: '🐝',
+        description: 'Individual buzzer-based history competition covering world and US history from ancient to modern times.',
+        format: 'Buzzer rounds with tossup questions. Regional → National qualifiers.',
+        difficulty: 'Intermediate',
+        teamSize: 'Individual',
+        tips: ['Study chronologically — build a mental timeline', 'Practice buzzing early on clues', 'Cover both US and world history equally'],
+        sampleQuestions: [
+          { id: 'nhb-1', difficulty: 'Easy', question: 'Which ancient civilization built the pyramids at Giza?', options: ['Roman Empire', 'Ancient Egypt', 'Mesopotamia', 'Ancient Greece'], answer: 'Ancient Egypt', explanation: 'The Great Pyramids at Giza were built by the ancient Egyptians during the Old Kingdom period, around 2580-2560 BCE.', topic: 'Ancient History' },
+          { id: 'nhb-2', difficulty: 'Medium', question: 'The Treaty of Westphalia (1648) is significant because it:', options: ['Ended the American Revolution', 'Established the concept of state sovereignty', 'Created the United Nations', 'Ended World War I'], answer: 'Established the concept of state sovereignty', explanation: 'The Peace of Westphalia ended the Thirty Years\' War and established the modern concept of state sovereignty and the nation-state system in Europe.', topic: 'European History' },
+          { id: 'nhb-3', difficulty: 'Hard', question: 'Which emperor issued the Edict of Milan in 313 CE?', options: ['Augustus', 'Nero', 'Constantine', 'Justinian'], answer: 'Constantine', explanation: 'Emperor Constantine issued the Edict of Milan in 313 CE, which proclaimed religious tolerance and effectively ended the persecution of Christians in the Roman Empire.', topic: 'Ancient History' },
+        ]
+      },
+      {
+        id: 'history-bowl',
+        name: 'History Bowl',
+        abbr: 'HB',
+        icon: '🏆',
+        description: 'Team-based history quiz bowl competition with buzzer rounds covering all eras and regions of history.',
+        format: 'Teams of 4. Tossup + bonus questions. Preliminary rounds → playoffs → nationals.',
+        difficulty: 'Advanced',
+        teamSize: 'Team (4)',
+        tips: ['Assign team members era/region specialties', 'Practice bonus question collaboration', 'Study primary source excerpts — they appear frequently'],
+        sampleQuestions: [
+          { id: 'hb-1', difficulty: 'Easy', question: 'The Magna Carta, signed in 1215, primarily limited the power of which English king?', options: ['Henry VIII', 'King John', 'Richard the Lionheart', 'Edward I'], answer: 'King John', explanation: 'The Magna Carta was signed by King John of England in 1215, forced by rebellious barons. It established the principle that the king was subject to law.', topic: 'Medieval History' },
+          { id: 'hb-2', difficulty: 'Medium', question: 'The Scramble for Africa was primarily driven by European nations during which century?', options: ['17th century', '18th century', '19th century', '20th century'], answer: '19th century', explanation: 'The Scramble for Africa (1881-1914) was the rapid colonization of Africa by European powers during the late 19th century, formalized at the Berlin Conference of 1884-85.', topic: 'Imperialism' },
+          { id: 'hb-3', difficulty: 'Hard', question: 'The Meiji Restoration of 1868 transformed Japan from a feudal society into a:', options: ['Communist state', 'Modern industrial nation', 'Theocracy', 'Direct democracy'], answer: 'Modern industrial nation', explanation: 'The Meiji Restoration ended the Tokugawa shogunate and rapidly modernized Japan, establishing a constitutional government, modern military, and industrial economy.', topic: 'Asian History' },
+        ]
+      },
+      {
+        id: 'we-the-people',
+        name: 'We The People',
+        abbr: 'WTP',
+        icon: '🇺🇸',
+        description: 'The premier civic education competition where students present and defend positions on constitutional principles.',
+        format: 'Teams prepare 4-minute presentations on constitutional topics, then face 6-minute follow-up questioning from judges.',
+        difficulty: 'Advanced',
+        teamSize: 'Team (class-based)',
+        tips: ['Master the Federalist Papers and key Supreme Court cases', 'Practice both prepared statements and impromptu responses', 'Connect historical principles to modern issues'],
+        sampleQuestions: [
+          { id: 'wtp-1', difficulty: 'Medium', question: 'The concept of "separation of powers" was most influenced by the writings of:', options: ['John Locke', 'Montesquieu', 'Thomas Hobbes', 'Jean-Jacques Rousseau'], answer: 'Montesquieu', explanation: 'Montesquieu\'s "The Spirit of the Laws" (1748) articulated the separation of powers into legislative, executive, and judicial branches, directly influencing the U.S. Constitution.', topic: 'Constitutional Principles' },
+          { id: 'wtp-2', difficulty: 'Hard', question: 'In Marbury v. Madison (1803), Chief Justice Marshall established the principle of:', options: ['Executive privilege', 'Judicial review', 'Federalism', 'Habeas corpus'], answer: 'Judicial review', explanation: 'Marbury v. Madison established that the Supreme Court has the power of judicial review — the ability to declare laws unconstitutional — making it a co-equal branch of government.', topic: 'Constitutional Law' },
+        ]
+      },
+    ]
+  },
+  {
+    id: 'geography',
+    name: 'Geography',
+    icon: '🌍',
+    description: 'Geography knowledge & spatial reasoning competitions',
+    competitions: [
+      {
+        id: 'geo-bee',
+        name: 'National Geographic Bee',
+        abbr: 'GeoBee',
+        icon: '🗺️',
+        description: 'National Geographic\'s premier geography competition testing knowledge of physical, cultural, and political geography worldwide.',
+        format: 'School → State → National levels. Oral questions, map-based challenges, and final championship round.',
+        difficulty: 'Intermediate',
+        teamSize: 'Individual',
+        tips: ['Study atlases and world maps regularly', 'Learn country capitals, rivers, and mountain ranges', 'Practice with National Geographic resources and past questions'],
+        sampleQuestions: [
+          { id: 'geo-1', difficulty: 'Easy', question: 'Which is the longest river in South America?', options: ['Orinoco', 'Paraná', 'Amazon', 'São Francisco'], answer: 'Amazon', explanation: 'The Amazon River, at approximately 6,400 km (3,976 miles), is the longest river in South America and the second longest in the world.', topic: 'Physical Geography' },
+          { id: 'geo-2', difficulty: 'Medium', question: 'The Strait of Malacca connects the Indian Ocean to which body of water?', options: ['Pacific Ocean', 'South China Sea', 'Java Sea', 'Andaman Sea'], answer: 'South China Sea', explanation: 'The Strait of Malacca, between the Malay Peninsula and Sumatra, connects the Indian Ocean to the South China Sea and is one of the world\'s most important shipping lanes.', topic: 'Maritime Geography' },
+          { id: 'geo-3', difficulty: 'Hard', question: 'Which African country is completely surrounded by South Africa?', options: ['Swaziland', 'Lesotho', 'Malawi', 'Botswana'], answer: 'Lesotho', explanation: 'Lesotho is a small, mountainous country that is entirely enclosed within the borders of South Africa, making it one of only three enclaved countries in the world.', topic: 'Political Geography' },
+        ]
+      },
+      {
+        id: 'igo',
+        name: 'International Geography Olympiad',
+        abbr: 'iGeo',
+        icon: '🏅',
+        description: 'The world\'s premier geography competition for secondary students, testing fieldwork, written analysis, and multimedia skills.',
+        format: 'Three tests: Written (40%), Fieldwork (40%), Multimedia (20%). National teams of 4 students.',
+        difficulty: 'Elite',
+        teamSize: 'National Team (4)',
+        tips: ['Master GIS and spatial analysis concepts', 'Practice fieldwork techniques — surveying, data collection', 'Study human geography patterns alongside physical geography'],
+        sampleQuestions: [
+          { id: 'igeo-1', difficulty: 'Medium', question: 'The demographic transition model suggests that as countries industrialize, what happens to birth and death rates?', options: ['Both increase', 'Both decrease', 'Birth rates increase, death rates decrease', 'Birth rates decrease, death rates increase'], answer: 'Both decrease', explanation: 'The demographic transition model shows that industrialization leads to declining death rates (better healthcare) followed by declining birth rates (urbanization, education), eventually stabilizing population growth.', topic: 'Human Geography' },
+          { id: 'igeo-2', difficulty: 'Hard', question: 'Which type of plate boundary is responsible for the formation of the Himalayas?', options: ['Divergent', 'Convergent (continental-continental)', 'Transform', 'Convergent (oceanic-continental)'], answer: 'Convergent (continental-continental)', explanation: 'The Himalayas formed from the collision of the Indian and Eurasian tectonic plates — a continental-continental convergent boundary that has been pushing the mountains upward for about 50 million years.', topic: 'Physical Geography' },
+          { id: 'igeo-3', difficulty: 'Hard', question: 'Christaller\'s Central Place Theory primarily explains the:', options: ['Distribution of natural resources', 'Spacing and hierarchy of urban settlements', 'Migration patterns of populations', 'Formation of political boundaries'], answer: 'Spacing and hierarchy of urban settlements', explanation: 'Central Place Theory explains why cities are distributed in a hierarchical pattern across a landscape, with larger cities spaced farther apart and providing more specialized services.', topic: 'Urban Geography' },
+        ]
+      },
+    ]
+  },
 ];
