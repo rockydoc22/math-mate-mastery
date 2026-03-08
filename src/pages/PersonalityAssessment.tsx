@@ -182,7 +182,7 @@ const PersonalityAssessment = () => {
           </div>
         )}
 
-        {(mode === "big5" || mode === "eq") && currentItem && (
+        {(mode === "big5" || mode === "eq" || mode === "lp") && currentItem && (
           <div className="space-y-6">
             <div className="flex items-center gap-2">
               <Progress value={progress} className="flex-1 h-2" />
