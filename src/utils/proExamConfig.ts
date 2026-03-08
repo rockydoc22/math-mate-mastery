@@ -18,6 +18,9 @@ export const PRO_EXAM_CATEGORIES: Record<string, { label: string; icon: string }
   military: { label: 'Military & Vocational', icon: '🎖️' },
   'faith-based': { label: 'Faith-Based', icon: '✝️' },
   k12: { label: 'K-12 Assessments', icon: '🏫' },
+  nursing: { label: 'Nursing & Healthcare', icon: '🏥' },
+  career: { label: 'Career & Equivalency', icon: '💼' },
+  international: { label: 'International & Language', icon: '🌍' },
 };
 
 export const PRO_EXAMS: ProExamConfig[] = [
