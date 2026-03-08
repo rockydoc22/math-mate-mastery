@@ -84,6 +84,8 @@ const ScorePredictor = lazy(() => import("./pages/ScorePredictor"));
 const StudyPlanner = lazy(() => import("./pages/StudyPlanner"));
 const CheatSheet = lazy(() => import("./pages/CheatSheet"));
 const SpeedDrill = lazy(() => import("./pages/SpeedDrill"));
+const TestDayTips = lazy(() => import("./pages/TestDayTips"));
+const FriendCompare = lazy(() => import("./pages/FriendCompare"));
 
 const queryClient = new QueryClient();
 
