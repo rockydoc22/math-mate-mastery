@@ -45,15 +45,16 @@ const VocabTrainer = () => {
   const [sessionWords, setSessionWords] = useState<VocabWord[]>([]);
   const [sessionResults, setSessionResults] = useState<{ word: VocabWord; correct: boolean }[]>([]);
 
-  // Combine SAT + Pro vocab based on exam type
-  const isProExam = ['gre', 'gmat', 'lsat', 'mcat'].includes(examType);
+  // Check if exam type matches a pro vocab bank (from URL or localStorage)
+  const proExamId = typeof window !== 'undefined' ? new URLSearchParams(window.location.search).get('exam') : null;
+  const isProExam = proExamId && ['gre', 'gmat', 'lsat', 'mcat'].includes(proExamId);
   const baseWords: VocabWord[] = useMemo(() => {
-    if (isProExam) {
-      const proWords = ALL_PRO_VOCAB.filter(w => w.exam === examType);
+    if (isProExam && proExamId) {
+      const proWords = ALL_PRO_VOCAB.filter(w => w.exam === proExamId);
       return [...SAT_VOCAB_WORDS, ...proWords];
     }
     return SAT_VOCAB_WORDS;
-  }, [examType, isProExam]);
+  }, [isProExam, proExamId]);
 
   const filteredWords = useMemo(() => {
     if (category === "all") return baseWords;
