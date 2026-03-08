@@ -9,8 +9,7 @@ import {
   Award, Swords, ChevronRight, Flame, Brain, X,
   Target, RotateCcw, BookOpen, RefreshCw, FileText, Crown, GraduationCap,
   Clock, Sparkles, Download, Lightbulb, Play, Skull, Settings, Gamepad2, Smartphone, Map, Star, Eye,
-  UserPlus, ClipboardList, Building2, Heart, Bell, MessageCircle, FolderOpen, Coins, Timer, Layers, UsersRound, Calendar, CircleDot
-} from "lucide-react";
+  UserPlus, ClipboardList, Building2, Heart, Bell, MessageCircle, FolderOpen, Coins, Timer, Layers, UsersRound, Calendar, CircleDot, Award, BookMarked
 import { useNavigate, Link } from "react-router-dom";
 import { useAuth } from "@/hooks/useAuth";
 import { useGameStats } from "@/hooks/useGameStats";
