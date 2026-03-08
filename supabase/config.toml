@@ -17,3 +17,6 @@ verify_jwt = false
 
 [functions.solution-path-analysis]
 verify_jwt = false
+
+[functions.homework-solver]
+verify_jwt = false

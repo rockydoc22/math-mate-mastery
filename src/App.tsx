@@ -233,6 +233,8 @@ const App = () => (
               <Route path="/strategy-games" element={<StrategyGameModes />} />
               <Route path="/timed-modes" element={<TimedModes />} />
               <Route path="/review-analytics" element={<ReviewAnalytics />} />
+              <Route path="/homework-solver" element={<HomeworkSolver />} />
+              <Route path="/thinkpath" element={<ThinkPath />} />
               {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
               <Route path="*" element={<NotFound />} />
             </Routes>
