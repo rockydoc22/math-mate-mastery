@@ -700,6 +700,8 @@ const Home = () => {
               { id: 'speed-drill', icon: Bolt, label: 'Speed Drill', color: 'bg-amber-100 dark:bg-amber-900/30', iconColor: 'text-amber-600 dark:text-amber-400', to: '/speed-drill', exams: ['sat', 'psat', 'act'] },
               { id: 'test-day-tips', icon: HeartPulse, label: 'Test Day Tips', color: 'bg-rose-100 dark:bg-rose-900/30', iconColor: 'text-rose-600 dark:text-rose-400', to: '/test-day-tips', exams: ['sat', 'psat', 'act'] },
               { id: 'friend-compare', icon: GitCompareArrows, label: 'Compare', color: 'bg-indigo-100 dark:bg-indigo-900/30', iconColor: 'text-indigo-600 dark:text-indigo-400', to: '/friend-compare', exams: ['sat', 'psat', 'act'] },
+              { id: 'concepts', icon: Microscope, label: 'Concepts', color: 'bg-purple-100 dark:bg-purple-900/30', iconColor: 'text-purple-600 dark:text-purple-400', to: '/concepts', exams: ['sat', 'psat', 'act'] },
+              { id: 'practice-log', icon: NotebookPen, label: 'Practice Log', color: 'bg-teal-100 dark:bg-teal-900/30', iconColor: 'text-teal-600 dark:text-teal-400', to: '/practice-log', exams: ['sat', 'psat', 'act'] },
             ];
 
             // Filter tiles to only show those relevant to the current exam
