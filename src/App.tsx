@@ -181,6 +181,7 @@ const App = () => (
               <Route path="/personality" element={<PersonalityAssessment />} />
               <Route path="/cognitive" element={<CognitiveSkills />} />
               <Route path="/iq-test" element={<IQTest />} />
+              <Route path="/health-screening" element={<HealthScreening />} />
               <Route path="/strategy" element={<StrategyPractice />} />
               <Route path="/notifications" element={<Notifications />} />
               <Route path="/conversations" element={<ConversationPractice />} />
