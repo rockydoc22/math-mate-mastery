@@ -417,9 +417,15 @@ const RapidFacts = () => {
         <Progress value={timerPct} className="h-2" />
 
         <Card className="p-6">
-          <div className="flex items-center gap-2 mb-4">
-            <catCfg.icon className={`w-4 h-4 ${catCfg.color}`} />
-            <span className={`text-xs font-medium uppercase tracking-wide ${catCfg.color}`}>{catCfg.label}</span>
+          <div className="flex items-center justify-between mb-4">
+            <div className="flex items-center gap-2">
+              <catCfg.icon className={`w-4 h-4 ${catCfg.color}`} />
+              <span className={`text-xs font-medium uppercase tracking-wide ${catCfg.color}`}>{catCfg.label}</span>
+            </div>
+            <Button variant="ghost" size="icon" className="h-8 w-8 text-muted-foreground hover:text-destructive" onClick={() => setIsFlagModalOpen(true)} title="Report issue">
+              <Flag className="w-4 h-4" />
+            </Button>
+          </div>
           </div>
           <h2 className="text-xl font-bold mb-6">{currentFact.question}</h2>
 
