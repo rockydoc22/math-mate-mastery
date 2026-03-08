@@ -107,6 +107,9 @@ const DebatePractice = lazy(() => import("./pages/DebatePractice"));
 const AnatomyAtlas = lazy(() => import("./pages/AnatomyAtlas"));
 const CompetitionHub = lazy(() => import("./pages/CompetitionHub"));
 const AlternativeAssessments = lazy(() => import("./pages/AlternativeAssessments"));
+const StrategyGameModes = lazy(() => import("./pages/StrategyGameModes"));
+const TimedModes = lazy(() => import("./pages/TimedModes"));
+const ReviewAnalytics = lazy(() => import("./pages/ReviewAnalytics"));
 
 const queryClient = new QueryClient();
 
@@ -225,6 +228,9 @@ const App = () => (
               <Route path="/anatomy-atlas" element={<AnatomyAtlas />} />
               <Route path="/competition-hub/:competitionId" element={<CompetitionHub />} />
               <Route path="/alt-assessments" element={<AlternativeAssessments />} />
+              <Route path="/strategy-games" element={<StrategyGameModes />} />
+              <Route path="/timed-modes" element={<TimedModes />} />
+              <Route path="/review-analytics" element={<ReviewAnalytics />} />
               {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
               <Route path="*" element={<NotFound />} />
             </Routes>
