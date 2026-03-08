@@ -4,12 +4,13 @@ import { Button } from "@/components/ui/button";
 import { Question } from "@/data/questions";
 import { VisualQuestion } from "@/data/visualQuestions";
 import { ImageQuestion } from "@/data/importedSATQuestions";
-import { CheckCircle2, XCircle, Flag, Lightbulb, AlertTriangle } from "lucide-react";
+import { CheckCircle2, XCircle, Flag, Lightbulb, AlertTriangle, Route } from "lucide-react";
 import { FlagQuestionModal } from "./FlagQuestionModal";
 import { QuestionVisual } from "./QuestionVisual";
 import { MathText } from "./MathText";
 import { ClickableText } from "./ClickableText";
 import { findKeyConcept, KeyConcept } from "@/data/satKeyConcepts";
+import { SolutionPathAnalysis } from "./SolutionPathAnalysis";
 
 interface QuizCardProps {
   question: Question | VisualQuestion | ImageQuestion;
