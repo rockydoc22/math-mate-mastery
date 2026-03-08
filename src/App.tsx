@@ -54,6 +54,7 @@ const FRQPractice = lazy(() => import("./pages/FRQPractice"));
 const WritingLab = lazy(() => import("./pages/WritingLab"));
 const EnduranceRun = lazy(() => import("./pages/EnduranceRun"));
 const StudyCoach = lazy(() => import("./pages/StudyCoach"));
+const SkillGraph = lazy(() => import("./pages/SkillGraph"));
 
 const queryClient = new QueryClient();
 
