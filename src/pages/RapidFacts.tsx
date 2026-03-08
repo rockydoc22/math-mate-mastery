@@ -461,6 +461,16 @@ const RapidFacts = () => {
             })}
           </div>
         </Card>
+
+        {currentFact && (
+          <FlagQuestionModal
+            isOpen={isFlagModalOpen}
+            onClose={() => setIsFlagModalOpen(false)}
+            questionId={currentFact.id}
+            questionType="math"
+            questionData={{ question: currentFact.question, options: choices.map((c, i) => ({ letter: String.fromCharCode(65 + i), text: c })), correctAnswer: currentFact.correctAnswer, explanation: '' }}
+          />
+        )}
       </div>
     </div>
   );
