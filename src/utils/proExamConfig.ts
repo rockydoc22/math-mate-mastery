@@ -93,6 +93,33 @@ export const PRO_EXAMS: ProExamConfig[] = [
     timePerQuestion: 75,
     jsonFiles: ['clt_question_bank_180_original.json'],
   },
+  {
+    id: 'homeschool', name: 'Homeschool / Iowa / Stanford 10', shortName: 'Homeschool', icon: '🏠',
+    category: 'k12',
+    scoreRange: { min: 0, max: 100 },
+    sections: ['Reading', 'Language', 'Mathematics', 'Science', 'Social Studies'],
+    description: 'Standardized testing for homeschool students',
+    timePerQuestion: 60,
+    jsonFiles: ['homeschool_iowa_stanford10_question_bank_220_original.json'],
+  },
+  {
+    id: 'terranova', name: 'TerraNova / CTBS', shortName: 'TerraNova', icon: '📝',
+    category: 'k12',
+    scoreRange: { min: 0, max: 100 },
+    sections: ['Reading/Language Arts', 'Mathematics', 'Science', 'Social Studies'],
+    description: 'TerraNova achievement test for K-12',
+    timePerQuestion: 55,
+    jsonFiles: ['terranova_question_bank_200_original.json'],
+  },
+  {
+    id: 'mapgrowth', name: 'MAP Growth', shortName: 'MAP', icon: '📈',
+    category: 'k12',
+    scoreRange: { min: 100, max: 300 },
+    sections: ['Reading', 'Language Usage', 'Mathematics', 'Science'],
+    description: 'NWEA MAP Growth adaptive assessment',
+    timePerQuestion: 60,
+    jsonFiles: ['map_growth_question_bank_200_original.json'],
+  },
 ];
 
 export function getProExam(id: string): ProExamConfig | undefined {
