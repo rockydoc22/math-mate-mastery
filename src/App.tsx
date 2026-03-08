@@ -155,6 +155,8 @@ const App = () => (
               <Route path="/notifications" element={<Notifications />} />
               <Route path="/conversations" element={<ConversationPractice />} />
               <Route path="/portfolio" element={<Portfolio />} />
+              <Route path="/shop" element={<CoinShop />} />
+              <Route path="/timer" element={<StudyTimer />} />
               {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
               <Route path="*" element={<NotFound />} />
             </Routes>
