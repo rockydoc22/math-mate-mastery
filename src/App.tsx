@@ -163,6 +163,8 @@ const App = () => (
               <Route path="/timer" element={<StudyTimer />} />
               <Route path="/flashcards" element={<Flashcards />} />
               <Route path="/study-groups" element={<StudyGroups />} />
+              <Route path="/streak-calendar" element={<StreakCalendar />} />
+              <Route path="/weekly-goals" element={<WeeklyGoals />} />
               {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
               <Route path="*" element={<NotFound />} />
             </Routes>
