@@ -203,6 +203,8 @@ const App = () => (
               <Route path="/pro-exam-study/:examId" element={<ProExamStudyGuide />} />
               <Route path="/pro-exam-scores" element={<ProExamScoreTracker />} />
               <Route path="/logic-games" element={<LogicGames />} />
+              <Route path="/exam-simulator" element={<ExamSimulator />} />
+              <Route path="/ai-tutor" element={<AITutorChat />} />
               {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
               <Route path="*" element={<NotFound />} />
             </Routes>
