@@ -74,6 +74,8 @@ const CoinShop = lazy(() => import("./pages/CoinShop"));
 const StudyTimer = lazy(() => import("./pages/StudyTimer"));
 const Flashcards = lazy(() => import("./pages/Flashcards"));
 const StudyGroups = lazy(() => import("./pages/StudyGroups"));
+const StreakCalendar = lazy(() => import("./pages/StreakCalendar"));
+const WeeklyGoals = lazy(() => import("./pages/WeeklyGoals"));
 
 const queryClient = new QueryClient();
 
@@ -161,6 +163,8 @@ const App = () => (
               <Route path="/timer" element={<StudyTimer />} />
               <Route path="/flashcards" element={<Flashcards />} />
               <Route path="/study-groups" element={<StudyGroups />} />
+              <Route path="/streak-calendar" element={<StreakCalendar />} />
+              <Route path="/weekly-goals" element={<WeeklyGoals />} />
               {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
               <Route path="*" element={<NotFound />} />
             </Routes>
