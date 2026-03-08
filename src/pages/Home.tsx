@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import { toast } from "@/hooks/use-toast";
-import 'katex/dist/katex.min.css';
-import { InlineMath } from 'react-katex';
+import { LazyInlineMath } from '@/components/LazyKaTeX';
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { 
