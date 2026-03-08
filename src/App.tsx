@@ -55,6 +55,10 @@ const WritingLab = lazy(() => import("./pages/WritingLab"));
 const EnduranceRun = lazy(() => import("./pages/EnduranceRun"));
 const StudyCoach = lazy(() => import("./pages/StudyCoach"));
 const SkillGraph = lazy(() => import("./pages/SkillGraph"));
+const ProExams = lazy(() => import("./pages/ProExams"));
+const ProExamQuiz = lazy(() => import("./pages/ProExamQuiz"));
+const DailyQuests = lazy(() => import("./pages/DailyQuests"));
+const TeacherDashboard = lazy(() => import("./pages/TeacherDashboard"));
 
 const queryClient = new QueryClient();
 
