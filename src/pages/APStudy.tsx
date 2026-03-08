@@ -67,30 +67,54 @@ const APStudy = () => {
   const [spanishLitQuestions, setSpanishLitQuestions] = useState<Record<string, Question[]>>(apSpanishLitQuestionsByUnit);
 
   useEffect(() => {
-    if (subjectId === 'ap-chemistry') {
-      loadAPChemQuestions().then(setChemQuestions);
-    } else if (subjectId === 'ap-us-history') {
-      loadAPUSHQuestions().then(setUshQuestions);
-    } else if (subjectId === 'ap-english-lit') {
-      loadAPLitQuestions().then(setLitQuestions);
-    } else if (subjectId === 'ap-calculus-bc') {
-      loadAPCalcBCQuestions().then(setCalcBCQuestions);
-    } else if (subjectId === 'ap-lang') {
-      loadAPLangQuestions().then(setLangQuestions);
-    } else if (subjectId === 'ap-calculus-ab') {
-      loadAPCalcABQuestions().then(setCalcABQuestions);
-    } else if (subjectId === 'ap-statistics') {
-      loadAPStatsQuestions().then(setStatsQuestions);
-    } else if (subjectId === 'ap-euro-history') {
-      loadAPEuroQuestions().then(setEuroQuestions);
-    } else if (subjectId === 'ap-human-geo') {
-      loadAPHuGQuestions().then(setHugQuestions);
-    } else if (subjectId === 'ap-environmental-science') {
-      loadAPESQuestions().then(setEsQuestions);
-    } else if (subjectId === 'ap-csp') {
-      loadAPCSPQuestions().then(setCspQuestions);
-    } else if (subjectId === 'ap-physics-2') {
-      loadAPPhys2Questions().then(setPhys2Questions);
+    const loaders: Record<string, () => Promise<Record<string, Question[]>>> = {
+      'ap-chemistry': loadAPChemQuestions,
+      'ap-us-history': loadAPUSHQuestions,
+      'ap-english-lit': loadAPLitQuestions,
+      'ap-calculus-bc': loadAPCalcBCQuestions,
+      'ap-lang': loadAPLangQuestions,
+      'ap-calculus-ab': loadAPCalcABQuestions,
+      'ap-statistics': loadAPStatsQuestions,
+      'ap-euro-history': loadAPEuroQuestions,
+      'ap-human-geo': loadAPHuGQuestions,
+      'ap-environmental-science': loadAPESQuestions,
+      'ap-csp': loadAPCSPQuestions,
+      'ap-physics-2': loadAPPhys2Questions,
+      'ap-biology': loadAPBioQuestions,
+      'ap-physics-1': loadAPPhys1Questions,
+      'ap-us-gov': loadAPUSGovQuestions,
+      'ap-macro': loadAPMacroQuestions,
+      'ap-micro': loadAPMicroQuestions,
+      'ap-german': loadAPGermanQuestions,
+      'ap-italian': loadAPItalianQuestions,
+      'ap-french': loadAPFrenchLangQuestions,
+      'ap-spanish-lit': loadAPSpanishLitQuestions,
+    };
+    const setters: Record<string, (v: Record<string, Question[]>) => void> = {
+      'ap-chemistry': setChemQuestions,
+      'ap-us-history': setUshQuestions,
+      'ap-english-lit': setLitQuestions,
+      'ap-calculus-bc': setCalcBCQuestions,
+      'ap-lang': setLangQuestions,
+      'ap-calculus-ab': setCalcABQuestions,
+      'ap-statistics': setStatsQuestions,
+      'ap-euro-history': setEuroQuestions,
+      'ap-human-geo': setHugQuestions,
+      'ap-environmental-science': setEsQuestions,
+      'ap-csp': setCspQuestions,
+      'ap-physics-2': setPhys2Questions,
+      'ap-biology': setBioQuestions,
+      'ap-physics-1': setPhys1Questions,
+      'ap-us-gov': setUsgovQuestions,
+      'ap-macro': setMacroQuestions,
+      'ap-micro': setMicroQuestions,
+      'ap-german': setGermanQuestions,
+      'ap-italian': setItalianQuestions,
+      'ap-french': setFrenchLangQuestions,
+      'ap-spanish-lit': setSpanishLitQuestions,
+    };
+    if (subjectId && loaders[subjectId]) {
+      loaders[subjectId]().then(setters[subjectId]);
     }
   }, [subjectId]);
 
