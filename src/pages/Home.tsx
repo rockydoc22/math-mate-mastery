@@ -679,6 +679,7 @@ const Home = () => {
               { id: 'personality', icon: Heart, label: 'Personality', color: 'bg-violet-100 dark:bg-violet-900/30', iconColor: 'text-violet-600 dark:text-violet-400', to: '/personality', exams: ['sat', 'psat', 'act'] },
               { id: 'cognitive', icon: Brain, label: 'Brain Games', color: 'bg-cyan-100 dark:bg-cyan-900/30', iconColor: 'text-cyan-600 dark:text-cyan-400', to: '/cognitive', exams: ['sat', 'psat', 'act'] },
               { id: 'strategy', icon: Target, label: 'Strategy', color: 'bg-orange-100 dark:bg-orange-900/30', iconColor: 'text-orange-600 dark:text-orange-400', to: '/strategy', exams: ['sat', 'psat', 'act'] },
+              { id: 'notifications', icon: Bell, label: 'Inbox', color: 'bg-red-100 dark:bg-red-900/30', iconColor: 'text-red-600 dark:text-red-400', to: '/notifications', exams: ['sat', 'psat', 'act'] },
             ];
 
             // Filter tiles to only show those relevant to the current exam
