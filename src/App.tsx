@@ -103,6 +103,7 @@ const AITutorChat = lazy(() => import("./pages/AITutorChat"));
 const Competitions = lazy(() => import("./pages/Competitions"));
 const LanguageCompetition = lazy(() => import("./pages/LanguageCompetition"));
 const DebatePractice = lazy(() => import("./pages/DebatePractice"));
+const AnatomyAtlas = lazy(() => import("./pages/AnatomyAtlas"));
 
 const queryClient = new QueryClient();
 
