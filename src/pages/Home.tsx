@@ -680,6 +680,7 @@ const Home = () => {
               { id: 'school-admin', icon: Building2, label: 'School Admin', color: 'bg-rose-100 dark:bg-rose-900/30', iconColor: 'text-rose-600 dark:text-rose-400', to: '/school-admin', exams: ['sat', 'psat', 'act'] },
               { id: 'personality', icon: Heart, label: 'Personality', color: 'bg-violet-100 dark:bg-violet-900/30', iconColor: 'text-violet-600 dark:text-violet-400', to: '/personality', exams: ['sat', 'psat', 'act'] },
               { id: 'cognitive', icon: Brain, label: 'Brain Games', color: 'bg-cyan-100 dark:bg-cyan-900/30', iconColor: 'text-cyan-600 dark:text-cyan-400', to: '/cognitive', exams: ['sat', 'psat', 'act'] },
+              { id: 'iq-test', icon: Brain, label: 'IQ Test', color: 'bg-amber-100 dark:bg-amber-900/30', iconColor: 'text-amber-600 dark:text-amber-400', to: '/iq-test', exams: ['sat', 'psat', 'act'] },
               { id: 'strategy', icon: Target, label: 'Strategy', color: 'bg-orange-100 dark:bg-orange-900/30', iconColor: 'text-orange-600 dark:text-orange-400', to: '/strategy', exams: ['sat', 'psat', 'act'] },
               { id: 'notifications', icon: Bell, label: 'Inbox', color: 'bg-red-100 dark:bg-red-900/30', iconColor: 'text-red-600 dark:text-red-400', to: '/notifications', exams: ['sat', 'psat', 'act'] },
               { id: 'conversations', icon: MessageCircle, label: 'Conversations', color: 'bg-lime-100 dark:bg-lime-900/30', iconColor: 'text-lime-600 dark:text-lime-400', to: '/conversations', exams: ['sat', 'psat', 'act'] },
