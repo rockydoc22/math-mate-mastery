@@ -74,6 +74,8 @@ const CoinShop = lazy(() => import("./pages/CoinShop"));
 const StudyTimer = lazy(() => import("./pages/StudyTimer"));
 const Flashcards = lazy(() => import("./pages/Flashcards"));
 const StudyGroups = lazy(() => import("./pages/StudyGroups"));
+const StreakCalendar = lazy(() => import("./pages/StreakCalendar"));
+const WeeklyGoals = lazy(() => import("./pages/WeeklyGoals"));
 
 const queryClient = new QueryClient();
 
