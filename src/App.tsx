@@ -78,6 +78,8 @@ const StreakCalendar = lazy(() => import("./pages/StreakCalendar"));
 const WeeklyGoals = lazy(() => import("./pages/WeeklyGoals"));
 const Achievements = lazy(() => import("./pages/Achievements"));
 const MistakeJournal = lazy(() => import("./pages/MistakeJournal"));
+const ProgressReport = lazy(() => import("./pages/ProgressReport"));
+const QuickReview = lazy(() => import("./pages/QuickReview"));
 
 const queryClient = new QueryClient();
 
