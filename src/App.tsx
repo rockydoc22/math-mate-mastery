@@ -8,6 +8,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { AuthProvider } from "@/hooks/useAuth";
 import { PWAUpdatePrompt } from "@/components/PWAUpdatePrompt";
 import { LandingPage } from "@/components/LandingPage";
+import { ProtectedRoute } from "@/components/ProtectedRoute";
 
 // Core pages loaded eagerly (Home + Auth are always needed)
 import Home from "./pages/Home";
