@@ -84,6 +84,8 @@ const ScorePredictor = lazy(() => import("./pages/ScorePredictor"));
 const StudyPlanner = lazy(() => import("./pages/StudyPlanner"));
 const CheatSheet = lazy(() => import("./pages/CheatSheet"));
 const SpeedDrill = lazy(() => import("./pages/SpeedDrill"));
+const TestDayTips = lazy(() => import("./pages/TestDayTips"));
+const FriendCompare = lazy(() => import("./pages/FriendCompare"));
 
 const queryClient = new QueryClient();
 
@@ -181,6 +183,8 @@ const App = () => (
               <Route path="/study-planner" element={<StudyPlanner />} />
               <Route path="/cheat-sheet" element={<CheatSheet />} />
               <Route path="/speed-drill" element={<SpeedDrill />} />
+              <Route path="/test-day-tips" element={<TestDayTips />} />
+              <Route path="/friend-compare" element={<FriendCompare />} />
               {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
               <Route path="*" element={<NotFound />} />
             </Routes>

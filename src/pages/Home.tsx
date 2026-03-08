@@ -11,7 +11,7 @@ import {
   Clock, Sparkles, Download, Lightbulb, Play, Skull, Settings, Gamepad2,
   Smartphone, Map, Star, Eye, UserPlus, ClipboardList, Building2, Heart,
   Bell, MessageCircle, FolderOpen, Coins, Timer, Layers, UsersRound,
-  Calendar, CircleDot, BookMarked, FileBarChart, TrendingUp, CalendarDays, FileQuestion, Bolt
+  Calendar, CircleDot, BookMarked, FileBarChart, TrendingUp, CalendarDays, FileQuestion, Bolt, HeartPulse, GitCompareArrows
 } from "lucide-react";
 import { useNavigate, Link } from "react-router-dom";
 import { useAuth } from "@/hooks/useAuth";
@@ -698,6 +698,8 @@ const Home = () => {
               { id: 'study-planner', icon: CalendarDays, label: 'Study Planner', color: 'bg-sky-100 dark:bg-sky-900/30', iconColor: 'text-sky-600 dark:text-sky-400', to: '/study-planner', exams: ['sat', 'psat', 'act'] },
               { id: 'cheat-sheet', icon: FileQuestion, label: 'Cheat Sheet', color: 'bg-fuchsia-100 dark:bg-fuchsia-900/30', iconColor: 'text-fuchsia-600 dark:text-fuchsia-400', to: '/cheat-sheet', exams: ['sat', 'psat', 'act'] },
               { id: 'speed-drill', icon: Bolt, label: 'Speed Drill', color: 'bg-amber-100 dark:bg-amber-900/30', iconColor: 'text-amber-600 dark:text-amber-400', to: '/speed-drill', exams: ['sat', 'psat', 'act'] },
+              { id: 'test-day-tips', icon: HeartPulse, label: 'Test Day Tips', color: 'bg-rose-100 dark:bg-rose-900/30', iconColor: 'text-rose-600 dark:text-rose-400', to: '/test-day-tips', exams: ['sat', 'psat', 'act'] },
+              { id: 'friend-compare', icon: GitCompareArrows, label: 'Compare', color: 'bg-indigo-100 dark:bg-indigo-900/30', iconColor: 'text-indigo-600 dark:text-indigo-400', to: '/friend-compare', exams: ['sat', 'psat', 'act'] },
             ];
 
             // Filter tiles to only show those relevant to the current exam
