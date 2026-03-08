@@ -17,7 +17,7 @@ interface PersonalityItem {
   scoring_direction?: number;
 }
 
-type AssessmentMode = "select" | "big5" | "eq" | "results";
+type AssessmentMode = "select" | "big5" | "eq" | "lp" | "results";
 
 interface TraitScore {
   trait: string;
