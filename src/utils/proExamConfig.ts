@@ -125,6 +125,85 @@ export const PRO_EXAMS: ProExamConfig[] = [
   },
 ];
 
+  // --- Nursing & Healthcare ---
+  {
+    id: 'nclex', name: 'NCLEX-RN', shortName: 'NCLEX', icon: '🏥',
+    category: 'nursing',
+    scoreRange: { min: 0, max: 100 },
+    sections: ['Safe and Effective Care', 'Health Promotion', 'Psychosocial Integrity', 'Physiological Integrity'],
+    description: 'National Council Licensure Examination for Registered Nurses',
+    timePerQuestion: 78,
+    jsonFiles: ['nclex_question_bank_200.json'],
+  },
+  {
+    id: 'teas', name: 'ATI TEAS', shortName: 'TEAS', icon: '💉',
+    category: 'nursing',
+    scoreRange: { min: 0, max: 100 },
+    sections: ['Reading', 'Math', 'Science', 'English and Language Usage'],
+    description: 'Test of Essential Academic Skills for nursing programs',
+    timePerQuestion: 64,
+    jsonFiles: ['teas_question_bank_200.json'],
+  },
+
+  // --- Career & Equivalency ---
+  {
+    id: 'ged', name: 'GED', shortName: 'GED', icon: '📜',
+    category: 'career',
+    scoreRange: { min: 100, max: 200 },
+    sections: ['Mathematical Reasoning', 'Reasoning Through Language Arts', 'Science', 'Social Studies'],
+    description: 'General Educational Development — high school equivalency',
+    timePerQuestion: 90,
+    jsonFiles: ['ged_question_bank_200.json'],
+  },
+  {
+    id: 'hiset', name: 'HiSET', shortName: 'HiSET', icon: '📋',
+    category: 'career',
+    scoreRange: { min: 1, max: 20 },
+    sections: ['Mathematics', 'Reading', 'Writing', 'Science', 'Social Studies'],
+    description: 'High School Equivalency Test',
+    timePerQuestion: 75,
+    jsonFiles: ['hiset_question_bank_200.json'],
+  },
+  {
+    id: 'accuplacer', name: 'ACCUPLACER', shortName: 'ACCUPLACER', icon: '🎯',
+    category: 'career',
+    scoreRange: { min: 200, max: 300 },
+    sections: ['Reading', 'Writing', 'Arithmetic', 'Quantitative Reasoning', 'Advanced Algebra'],
+    description: 'College placement exam by College Board',
+    timePerQuestion: 90,
+    jsonFiles: ['accuplacer_question_bank_200.json'],
+  },
+  {
+    id: 'sbac', name: 'SBAC / Smarter Balanced', shortName: 'SBAC', icon: '📊',
+    category: 'k12',
+    scoreRange: { min: 2000, max: 3000 },
+    sections: ['English Language Arts', 'Mathematics'],
+    description: 'Smarter Balanced Assessment for grades 3-8 and 11',
+    timePerQuestion: 90,
+    jsonFiles: ['sbac_question_bank_200.json'],
+  },
+
+  // --- International & Language ---
+  {
+    id: 'toefl', name: 'TOEFL iBT', shortName: 'TOEFL', icon: '🌐',
+    category: 'international',
+    scoreRange: { min: 0, max: 120 },
+    sections: ['Reading', 'Listening', 'Speaking', 'Writing'],
+    description: 'Test of English as a Foreign Language',
+    timePerQuestion: 90,
+    jsonFiles: ['toefl_question_bank_200.json'],
+  },
+  {
+    id: 'ib', name: 'IB Diploma Programme', shortName: 'IB', icon: '🌍',
+    category: 'international',
+    scoreRange: { min: 1, max: 45 },
+    sections: ['Language & Literature', 'Language Acquisition', 'Individuals & Societies', 'Sciences', 'Mathematics', 'The Arts'],
+    description: 'International Baccalaureate Diploma exams',
+    timePerQuestion: 90,
+    jsonFiles: ['ib_question_bank_200.json'],
+  },
+];
+
 export function getProExam(id: string): ProExamConfig | undefined {
   return PRO_EXAMS.find(e => e.id === id);
 }
