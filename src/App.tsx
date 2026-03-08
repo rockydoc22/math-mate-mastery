@@ -114,6 +114,10 @@ const HomeworkSolver = lazy(() => import("./pages/HomeworkSolver"));
 const ThinkPath = lazy(() => import("./pages/ThinkPath"));
 const IQPersonalityHub = lazy(() => import("./pages/IQPersonalityHub"));
 const SentenceCompletion = lazy(() => import("./pages/SentenceCompletion"));
+const PersonalityMBTI = lazy(() => import("./pages/PersonalityMBTI"));
+const PersonalityDISC = lazy(() => import("./pages/PersonalityDISC"));
+const PersonalityEnneagram = lazy(() => import("./pages/PersonalityEnneagram"));
+const PersonalityStrengths = lazy(() => import("./pages/PersonalityStrengths"));
 
 const queryClient = new QueryClient();
 
