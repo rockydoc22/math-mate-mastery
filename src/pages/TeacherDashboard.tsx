@@ -186,7 +186,23 @@ const TeacherDashboard = () => {
     if (error) {
       toast({ title: "Error", description: error.message, variant: "destructive" });
     } else {
-      toast({ title: "Assignment created!" });
+      // Auto-notify students in the class
+      const { data: members } = await supabase
+        .from('classroom_members')
+        .select('user_id')
+        .eq('classroom_id', newAssignment.classroomId);
+      if (members) {
+        for (const m of members) {
+          await supabase.from('user_notifications').insert({
+            user_id: m.user_id,
+            title: '📋 New Assignment',
+            message: `"${newAssignment.title}" has been assigned. Due ${newAssignment.dueDate}.`,
+            type: 'assignment',
+            link: '/my-assignments',
+          });
+        }
+      }
+      toast({ title: "Assignment created!", description: `${members?.length || 0} students notified` });
       setNewAssignment({ title: '', subject: 'math', questionCount: 10, dueDate: '', classroomId: '' });
       setShowNewAssignment(false);
       loadData();
