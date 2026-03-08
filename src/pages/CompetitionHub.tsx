@@ -26,6 +26,7 @@ const CompetitionHub = () => {
   const [activeQuestion, setActiveQuestion] = useState<string | null>(null);
   const [selectedAnswers, setSelectedAnswers] = useState<Record<string, string>>({});
   const [revealedAnswers, setRevealedAnswers] = useState<Set<string>>(new Set());
+  const [showPathAnalysis, setShowPathAnalysis] = useState<Set<string>>(new Set());
 
   // Find the competition
   let competition: Competition | null = null;
