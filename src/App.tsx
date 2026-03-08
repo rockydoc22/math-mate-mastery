@@ -106,6 +106,7 @@ const LanguageCompetition = lazy(() => import("./pages/LanguageCompetition"));
 const DebatePractice = lazy(() => import("./pages/DebatePractice"));
 const AnatomyAtlas = lazy(() => import("./pages/AnatomyAtlas"));
 const CompetitionHub = lazy(() => import("./pages/CompetitionHub"));
+const AlternativeAssessments = lazy(() => import("./pages/AlternativeAssessments"));
 
 const queryClient = new QueryClient();
 
@@ -223,6 +224,7 @@ const App = () => (
               <Route path="/debate" element={<DebatePractice />} />
               <Route path="/anatomy-atlas" element={<AnatomyAtlas />} />
               <Route path="/competition-hub/:competitionId" element={<CompetitionHub />} />
+              <Route path="/alt-assessments" element={<AlternativeAssessments />} />
               {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
               <Route path="*" element={<NotFound />} />
             </Routes>
