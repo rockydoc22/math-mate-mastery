@@ -119,6 +119,8 @@ const App = () => (
               <Route path="/essay-grader" element={<EssayGrader />} />
               <Route path="/writing-lab" element={<WritingLab />} />
               <Route path="/install" element={<InstallApp />} />
+              <Route path="/endurance" element={<EnduranceRun />} />
+              <Route path="/coach" element={<StudyCoach />} />
               {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
               <Route path="*" element={<NotFound />} />
             </Routes>
