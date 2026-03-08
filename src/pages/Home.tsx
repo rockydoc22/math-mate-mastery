@@ -125,53 +125,24 @@ const Home = () => {
     setHasChosenExamThisSession(sessionStorage.getItem(key) === "true");
   }, [user]);
 
-  // Fetch player stats
+  // Fetch player stats — single consolidated DB call
   useEffect(() => {
     const fetchPlayerStats = async () => {
       if (!user) return;
       
-      const { count: totalCount } = await supabase
-        .from("question_attempts")
-        .select("*", { count: "exact", head: true })
-        .eq("user_id", user.id);
+      const { data, error } = await supabase.rpc('get_home_dashboard_stats', {
+        p_user_id: user.id,
+      });
       
-      setTotalQuestionsAnswered(totalCount || 0);
+      if (error || !data) return;
       
-      const weekAgo = new Date();
-      weekAgo.setDate(weekAgo.getDate() - 7);
-      
-      const { count: recentCount } = await supabase
-        .from("question_attempts")
-        .select("*", { count: "exact", head: true })
-        .eq("user_id", user.id)
-        .eq("is_correct", true)
-        .gte("created_at", weekAgo.toISOString());
-      
-      setRecentCorrectAnswers(recentCount || 0);
-      
-      const { data: profile } = await supabase
-        .from("profiles")
-        .select("username, avatar_emoji, pinned_subjects")
-        .eq("id", user.id)
-        .maybeSingle();
-      
-      if (profile) {
-        setPlayerUsername(profile.username || "Fighter");
-        setPlayerAvatar(profile.avatar_emoji || "🧑‍🚀");
-        setPinnedSubjects((profile as any).pinned_subjects || []);
-      }
-
-      const calStart = new Date();
-      calStart.setDate(calStart.getDate() - 84);
-      const { data: dateRows } = await supabase
-        .from("question_attempts")
-        .select("created_at")
-        .eq("user_id", user.id)
-        .gte("created_at", calStart.toISOString());
-      if (dateRows) {
-        const uniqueDates = [...new Set(dateRows.map(r => r.created_at.split("T")[0]))];
-        setPracticeDates(uniqueDates);
-      }
+      const stats = data as any;
+      setTotalQuestionsAnswered(stats.total_questions || 0);
+      setRecentCorrectAnswers(stats.recent_correct || 0);
+      setPlayerUsername(stats.username || "Fighter");
+      setPlayerAvatar(stats.avatar_emoji || "🧑‍🚀");
+      setPinnedSubjects(stats.pinned_subjects || []);
+      setPracticeDates(stats.practice_dates || []);
     };
     
     fetchPlayerStats();
