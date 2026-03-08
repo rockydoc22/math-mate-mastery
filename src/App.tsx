@@ -88,6 +88,8 @@ const TestDayTips = lazy(() => import("./pages/TestDayTips"));
 const FriendCompare = lazy(() => import("./pages/FriendCompare"));
 const ConceptExplainer = lazy(() => import("./pages/ConceptExplainer"));
 const PracticeLog = lazy(() => import("./pages/PracticeLog"));
+const WordOfTheDay = lazy(() => import("./pages/WordOfTheDay"));
+const MathTricks = lazy(() => import("./pages/MathTricks"));
 
 const queryClient = new QueryClient();
 
