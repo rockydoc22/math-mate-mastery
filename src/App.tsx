@@ -61,6 +61,9 @@ const DailyQuests = lazy(() => import("./pages/DailyQuests"));
 const TeacherDashboard = lazy(() => import("./pages/TeacherDashboard"));
 const ParentDashboard = lazy(() => import("./pages/ParentDashboard"));
 const AdaptiveLearning = lazy(() => import("./pages/AdaptiveLearning"));
+const JoinClass = lazy(() => import("./pages/JoinClass"));
+const MyAssignments = lazy(() => import("./pages/MyAssignments"));
+const SchoolAdmin = lazy(() => import("./pages/SchoolAdmin"));
 
 const queryClient = new QueryClient();
 
