@@ -180,7 +180,7 @@ const VocabTrainer = () => {
             </Link>
             <div>
               <h1 className="text-xl font-bold">{examType.toUpperCase()} Vocabulary Trainer</h1>
-              <p className="text-sm text-muted-foreground">Master {baseWords.length} high-frequency words{isProExam ? ` (incl. ${examType.toUpperCase()} vocab)` : ''}</p>
+              <p className="text-sm text-muted-foreground">Master {baseWords.length} high-frequency words{isProExam && proExamId ? ` (incl. ${proExamId.toUpperCase()} vocab)` : ''}</p>
             </div>
           </div>
 
