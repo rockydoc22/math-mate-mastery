@@ -17,6 +17,15 @@ import { AP_HUG_UNITS, apHuGQuestionsByUnit, loadAPHuGQuestions } from "@/data/a
 import { AP_ES_UNITS, apESQuestionsByUnit, loadAPESQuestions } from "@/data/apEnvironmentalScienceQuestions";
 import { AP_CSP_UNITS, apCSPQuestionsByUnit, loadAPCSPQuestions } from "@/data/apCSPQuestions";
 import { AP_PHYS2_UNITS, apPhys2QuestionsByUnit, loadAPPhys2Questions } from "@/data/apPhysics2Questions";
+import { AP_BIO_UNITS, apBioQuestionsByUnit, loadAPBioQuestions } from "@/data/apBiologyQuestions";
+import { AP_PHYS1_UNITS, apPhys1QuestionsByUnit, loadAPPhys1Questions } from "@/data/apPhysics1Questions";
+import { AP_USGOV_UNITS, apUSGovQuestionsByUnit, loadAPUSGovQuestions } from "@/data/apUSGovQuestions";
+import { AP_MACRO_UNITS, apMacroQuestionsByUnit, loadAPMacroQuestions } from "@/data/apMacroQuestions";
+import { AP_MICRO_UNITS, apMicroQuestionsByUnit, loadAPMicroQuestions } from "@/data/apMicroQuestions";
+import { AP_GERMAN_UNITS, apGermanQuestionsByUnit, loadAPGermanQuestions } from "@/data/apGermanQuestions";
+import { AP_ITALIAN_UNITS, apItalianQuestionsByUnit, loadAPItalianQuestions } from "@/data/apItalianQuestions";
+import { AP_FRENCH_LANG_UNITS, apFrenchLangQuestionsByUnit, loadAPFrenchLangQuestions } from "@/data/apFrenchLangQuestions";
+import { AP_SPANISH_LIT_UNITS, apSpanishLitQuestionsByUnit, loadAPSpanishLitQuestions } from "@/data/apSpanishLitQuestions";
 import { Question } from "@/data/questions";
 import { MathText } from "@/components/MathText";
 import { AITutorExplanation } from "@/components/AITutorExplanation";
