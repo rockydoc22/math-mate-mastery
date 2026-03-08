@@ -183,6 +183,8 @@ const App = () => (
               <Route path="/study-planner" element={<StudyPlanner />} />
               <Route path="/cheat-sheet" element={<CheatSheet />} />
               <Route path="/speed-drill" element={<SpeedDrill />} />
+              <Route path="/test-day-tips" element={<TestDayTips />} />
+              <Route path="/friend-compare" element={<FriendCompare />} />
               {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
               <Route path="*" element={<NotFound />} />
             </Routes>
