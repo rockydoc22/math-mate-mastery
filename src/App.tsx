@@ -123,8 +123,9 @@ const App = () => (
         <Toaster />
         <Sonner />
         <BrowserRouter>
-          <Suspense fallback={<PageLoader />}>
-            <Routes>
+          <ErrorBoundary>
+            <Suspense fallback={<PageLoader />}>
+              <Routes>
               <Route path="/" element={<Home />} />
               {/* Marketing / homepage preview (useful even when logged in) */}
               <Route path="/landing" element={<LandingPage />} />
