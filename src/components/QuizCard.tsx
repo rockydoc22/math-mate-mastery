@@ -4,12 +4,13 @@ import { Button } from "@/components/ui/button";
 import { Question } from "@/data/questions";
 import { VisualQuestion } from "@/data/visualQuestions";
 import { ImageQuestion } from "@/data/importedSATQuestions";
-import { CheckCircle2, XCircle, Flag, Lightbulb, AlertTriangle } from "lucide-react";
+import { CheckCircle2, XCircle, Flag, Lightbulb, AlertTriangle, Route } from "lucide-react";
 import { FlagQuestionModal } from "./FlagQuestionModal";
 import { QuestionVisual } from "./QuestionVisual";
 import { MathText } from "./MathText";
 import { ClickableText } from "./ClickableText";
 import { findKeyConcept, KeyConcept } from "@/data/satKeyConcepts";
+import { SolutionPathAnalysis } from "./SolutionPathAnalysis";
 
 interface QuizCardProps {
   question: Question | VisualQuestion | ImageQuestion;
@@ -22,6 +23,7 @@ interface QuizCardProps {
 export const QuizCard = ({ question, selectedAnswer, onSelectAnswer, showResult, questionType = 'math' }: QuizCardProps) => {
   const [isFlagModalOpen, setIsFlagModalOpen] = useState(false);
   const [showKeyConcept, setShowKeyConcept] = useState(false);
+  const [showPathAnalysis, setShowPathAnalysis] = useState(false);
   const visualQuestion = question as VisualQuestion;
   const imageQuestion = question as ImageQuestion;
 
@@ -213,6 +215,27 @@ export const QuizCard = ({ question, selectedAnswer, onSelectAnswer, showResult,
                     </div>
                   )}
                 </div>
+              )}
+
+              {/* Solution Path Analysis */}
+              {!showPathAnalysis ? (
+                <Button
+                  variant="outline"
+                  size="sm"
+                  onClick={() => setShowPathAnalysis(true)}
+                  className="w-full justify-start gap-2 text-xs sm:text-sm"
+                >
+                  <Route className="w-4 h-4 text-accent-foreground" />
+                  Analyze My Solution Path
+                </Button>
+              ) : (
+                <SolutionPathAnalysis
+                  question={question.question}
+                  options={question.options.map(o => ({ letter: o.letter, text: o.text }))}
+                  correctAnswer={question.correctAnswer}
+                  competitionType={questionType === 'math' ? 'SAT Math' : questionType === 'english' ? 'SAT English' : 'Academic'}
+                  onClose={() => setShowPathAnalysis(false)}
+                />
               )}
             </div>
           )}
