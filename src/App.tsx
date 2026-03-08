@@ -54,6 +54,7 @@ const FRQPractice = lazy(() => import("./pages/FRQPractice"));
 const WritingLab = lazy(() => import("./pages/WritingLab"));
 const EnduranceRun = lazy(() => import("./pages/EnduranceRun"));
 const StudyCoach = lazy(() => import("./pages/StudyCoach"));
+const SkillGraph = lazy(() => import("./pages/SkillGraph"));
 
 const queryClient = new QueryClient();
 
@@ -121,6 +122,7 @@ const App = () => (
               <Route path="/install" element={<InstallApp />} />
               <Route path="/endurance" element={<EnduranceRun />} />
               <Route path="/coach" element={<StudyCoach />} />
+              <Route path="/skill-map" element={<SkillGraph />} />
               {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
               <Route path="*" element={<NotFound />} />
             </Routes>

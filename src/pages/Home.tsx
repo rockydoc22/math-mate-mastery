@@ -8,7 +8,7 @@ import {
   Calculator, PenTool, Trophy, Zap, Users, LogIn, User, 
   Award, Swords, ChevronRight, Flame, Brain, X,
   Target, RotateCcw, BookOpen, RefreshCw, FileText, Crown, GraduationCap,
-  Clock, Sparkles, Download, Lightbulb, Play, Skull, Settings, Gamepad2, Smartphone
+  Clock, Sparkles, Download, Lightbulb, Play, Skull, Settings, Gamepad2, Smartphone, Map
 } from "lucide-react";
 import { useNavigate, Link } from "react-router-dom";
 import { useAuth } from "@/hooks/useAuth";
@@ -666,6 +666,7 @@ const Home = () => {
               { id: 'install', icon: Smartphone, label: 'Install App', color: 'bg-teal-100 dark:bg-teal-900/30', iconColor: 'text-teal-600 dark:text-teal-400', to: '/install', exams: ['sat', 'psat', 'act'] },
               { id: 'endurance', icon: Flame, label: 'Endurance Run', color: 'bg-orange-100 dark:bg-orange-900/30', iconColor: 'text-orange-600 dark:text-orange-400', to: '/endurance', exams: ['sat', 'psat', 'act'] },
               { id: 'coach', icon: Sparkles, label: 'AI Coach', color: 'bg-violet-100 dark:bg-violet-900/30', iconColor: 'text-violet-600 dark:text-violet-400', to: '/coach', exams: ['sat', 'psat', 'act'] },
+              { id: 'skill-map', icon: Map, label: 'Skill Map', color: 'bg-cyan-100 dark:bg-cyan-900/30', iconColor: 'text-cyan-600 dark:text-cyan-400', to: '/skill-map', exams: ['sat', 'psat', 'act'] },
             ];
 
             // Filter tiles to only show those relevant to the current exam
