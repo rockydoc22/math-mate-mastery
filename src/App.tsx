@@ -82,6 +82,8 @@ const ProgressReport = lazy(() => import("./pages/ProgressReport"));
 const QuickReview = lazy(() => import("./pages/QuickReview"));
 const ScorePredictor = lazy(() => import("./pages/ScorePredictor"));
 const StudyPlanner = lazy(() => import("./pages/StudyPlanner"));
+const CheatSheet = lazy(() => import("./pages/CheatSheet"));
+const SpeedDrill = lazy(() => import("./pages/SpeedDrill"));
 
 const queryClient = new QueryClient();
 
@@ -177,6 +179,8 @@ const App = () => (
               <Route path="/quick-review" element={<QuickReview />} />
               <Route path="/score-predictor" element={<ScorePredictor />} />
               <Route path="/study-planner" element={<StudyPlanner />} />
+              <Route path="/cheat-sheet" element={<CheatSheet />} />
+              <Route path="/speed-drill" element={<SpeedDrill />} />
               {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
               <Route path="*" element={<NotFound />} />
             </Routes>
