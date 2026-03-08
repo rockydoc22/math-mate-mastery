@@ -110,6 +110,8 @@ const AlternativeAssessments = lazy(() => import("./pages/AlternativeAssessments
 const StrategyGameModes = lazy(() => import("./pages/StrategyGameModes"));
 const TimedModes = lazy(() => import("./pages/TimedModes"));
 const ReviewAnalytics = lazy(() => import("./pages/ReviewAnalytics"));
+const HomeworkSolver = lazy(() => import("./pages/HomeworkSolver"));
+const ThinkPath = lazy(() => import("./pages/ThinkPath"));
 
 const queryClient = new QueryClient();
 
@@ -231,6 +233,8 @@ const App = () => (
               <Route path="/strategy-games" element={<StrategyGameModes />} />
               <Route path="/timed-modes" element={<TimedModes />} />
               <Route path="/review-analytics" element={<ReviewAnalytics />} />
+              <Route path="/homework-solver" element={<HomeworkSolver />} />
+              <Route path="/thinkpath" element={<ThinkPath />} />
               {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
               <Route path="*" element={<NotFound />} />
             </Routes>
