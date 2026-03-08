@@ -72,6 +72,8 @@ const ConversationPractice = lazy(() => import("./pages/ConversationPractice"));
 const Portfolio = lazy(() => import("./pages/Portfolio"));
 const CoinShop = lazy(() => import("./pages/CoinShop"));
 const StudyTimer = lazy(() => import("./pages/StudyTimer"));
+const Flashcards = lazy(() => import("./pages/Flashcards"));
+const StudyGroups = lazy(() => import("./pages/StudyGroups"));
 
 const queryClient = new QueryClient();
 
