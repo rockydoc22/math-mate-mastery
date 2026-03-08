@@ -1,0 +1,78 @@
+/**
+ * Pro Exam Vocabulary Banks for GRE, GMAT, LSAT
+ * High-frequency words with mnemonics and usage
+ */
+
+import { VocabWord } from './satVocab';
+
+export interface ProVocabWord extends VocabWord {
+  exam: 'gre' | 'gmat' | 'lsat' | 'mcat';
+  mnemonic?: string;
+}
+
+export const GRE_VOCAB: ProVocabWord[] = [
+  { id: 'gre001', word: 'Abscond', definition: 'To leave hurriedly and secretly, typically to escape', partOfSpeech: 'v', example: 'The embezzler absconded with company funds.', synonyms: ['flee', 'escape', 'bolt'], difficulty: 4, category: 'elite', exam: 'gre', mnemonic: 'AB + SCOND → "absent from the scene" → ran away' },
+  { id: 'gre002', word: 'Acumen', definition: 'The ability to make good judgments and quick decisions', partOfSpeech: 'n', example: 'Her business acumen led to a successful startup.', synonyms: ['shrewdness', 'astuteness', 'insight'], difficulty: 3, category: 'advanced', exam: 'gre', mnemonic: 'A-CU-MEN → "a cute mind" → sharp thinking' },
+  { id: 'gre003', word: 'Anomalous', definition: 'Deviating from what is standard, normal, or expected', partOfSpeech: 'adj', example: 'The anomalous data point skewed the results.', synonyms: ['irregular', 'aberrant', 'atypical'], difficulty: 3, category: 'advanced', exam: 'gre', mnemonic: 'A-NORMAL-ous → not normal' },
+  { id: 'gre004', word: 'Antipathy', definition: 'A deep-seated feeling of dislike; aversion', partOfSpeech: 'n', example: 'She felt antipathy toward the new regulations.', synonyms: ['aversion', 'hostility', 'animosity'], difficulty: 4, category: 'elite', exam: 'gre', mnemonic: 'ANTI + PATHY(feeling) → against feeling → dislike' },
+  { id: 'gre005', word: 'Approbation', definition: 'Approval or praise', partOfSpeech: 'n', example: 'The plan received approbation from the committee.', synonyms: ['approval', 'endorsement', 'sanction'], difficulty: 4, category: 'elite', exam: 'gre', mnemonic: 'APPROVE + ATION → approval' },
+  { id: 'gre006', word: 'Arduous', definition: 'Involving or requiring strenuous effort; difficult and tiring', partOfSpeech: 'adj', example: 'The arduous hike took twelve hours.', synonyms: ['strenuous', 'laborious', 'grueling'], difficulty: 3, category: 'advanced', exam: 'gre' },
+  { id: 'gre007', word: 'Artless', definition: 'Without guile or deception; natural and simple', partOfSpeech: 'adj', example: 'Her artless charm won over the audience.', synonyms: ['ingenuous', 'naive', 'sincere'], difficulty: 3, category: 'advanced', exam: 'gre', mnemonic: 'Without ART (trickery) → genuine' },
+  { id: 'gre008', word: 'Assiduous', definition: 'Showing great care, attention, and effort', partOfSpeech: 'adj', example: 'The assiduous student reviewed notes daily.', synonyms: ['diligent', 'meticulous', 'industrious'], difficulty: 4, category: 'elite', exam: 'gre' },
+  { id: 'gre009', word: 'Calumny', definition: 'The making of false and defamatory statements; slander', partOfSpeech: 'n', example: 'The politician was a victim of calumny.', synonyms: ['slander', 'defamation', 'libel'], difficulty: 5, category: 'elite', exam: 'gre', mnemonic: 'CALAMITY of words → false harmful statements' },
+  { id: 'gre010', word: 'Chicanery', definition: 'The use of trickery to achieve a political or legal purpose', partOfSpeech: 'n', example: 'The deal was full of financial chicanery.', synonyms: ['trickery', 'deception', 'fraud'], difficulty: 5, category: 'elite', exam: 'gre' },
+  { id: 'gre011', word: 'Cogent', definition: 'Clear, logical, and convincing', partOfSpeech: 'adj', example: 'She made a cogent argument for reform.', synonyms: ['convincing', 'compelling', 'persuasive'], difficulty: 3, category: 'advanced', exam: 'gre' },
+  { id: 'gre012', word: 'Contrite', definition: 'Feeling or expressing remorse', partOfSpeech: 'adj', example: 'He was contrite after realizing his mistake.', synonyms: ['remorseful', 'penitent', 'repentant'], difficulty: 3, category: 'advanced', exam: 'gre' },
+  { id: 'gre013', word: 'Desiccate', definition: 'To remove moisture from; to dry out completely', partOfSpeech: 'v', example: 'The desert sun desiccated the vegetation.', synonyms: ['dehydrate', 'parch', 'dry'], difficulty: 4, category: 'elite', exam: 'gre', mnemonic: 'DRY + SICATE → dry it out' },
+  { id: 'gre014', word: 'Didactic', definition: 'Intended to teach, particularly in having moral instruction', partOfSpeech: 'adj', example: 'The novel had a didactic purpose.', synonyms: ['instructive', 'educational', 'pedagogic'], difficulty: 4, category: 'elite', exam: 'gre' },
+  { id: 'gre015', word: 'Disabuse', definition: 'To persuade someone that an idea or belief is mistaken', partOfSpeech: 'v', example: 'Let me disabuse you of that notion.', synonyms: ['correct', 'enlighten', 'undeceive'], difficulty: 4, category: 'elite', exam: 'gre', mnemonic: 'DIS + ABUSE → stop the abuse of wrong belief' },
+  { id: 'gre016', word: 'Enervate', definition: 'To cause someone to feel drained of energy', partOfSpeech: 'v', example: 'The long commute enervated the workers.', synonyms: ['exhaust', 'weaken', 'fatigue'], difficulty: 4, category: 'elite', exam: 'gre', mnemonic: 'Sounds like "no-nerve-ate" → weakened' },
+  { id: 'gre017', word: 'Ephemeral', definition: 'Lasting for a very short time', partOfSpeech: 'adj', example: 'Fame on social media is often ephemeral.', synonyms: ['fleeting', 'transient', 'brief'], difficulty: 3, category: 'advanced', exam: 'gre' },
+  { id: 'gre018', word: 'Garrulous', definition: 'Excessively talkative, especially on trivial matters', partOfSpeech: 'adj', example: 'The garrulous neighbor talked for hours.', synonyms: ['loquacious', 'verbose', 'chatty'], difficulty: 4, category: 'elite', exam: 'gre' },
+  { id: 'gre019', word: 'Harangue', definition: 'A lengthy and aggressive speech; to lecture aggressively', partOfSpeech: 'n/v', example: 'The coach harangued the team after the loss.', synonyms: ['tirade', 'diatribe', 'lecture'], difficulty: 4, category: 'elite', exam: 'gre' },
+  { id: 'gre020', word: 'Iconoclast', definition: 'A person who attacks or criticizes cherished beliefs or institutions', partOfSpeech: 'n', example: 'The artist was an iconoclast who challenged tradition.', synonyms: ['rebel', 'dissenter', 'heretic'], difficulty: 4, category: 'elite', exam: 'gre', mnemonic: 'ICON + CLAST(break) → breaks icons/traditions' },
+  { id: 'gre021', word: 'Laconic', definition: 'Using very few words; terse', partOfSpeech: 'adj', example: 'His laconic reply revealed nothing.', synonyms: ['brief', 'concise', 'terse'], difficulty: 4, category: 'elite', exam: 'gre' },
+  { id: 'gre022', word: 'Limpid', definition: 'Completely clear and transparent', partOfSpeech: 'adj', example: 'The limpid stream revealed the rocky bottom.', synonyms: ['clear', 'transparent', 'pellucid'], difficulty: 4, category: 'elite', exam: 'gre' },
+  { id: 'gre023', word: 'Magnanimous', definition: 'Very generous or forgiving, especially toward a rival', partOfSpeech: 'adj', example: 'The magnanimous winner praised her opponent.', synonyms: ['generous', 'benevolent', 'noble'], difficulty: 3, category: 'advanced', exam: 'gre', mnemonic: 'MAGNA(great) + ANIMUS(spirit) → great spirit' },
+  { id: 'gre024', word: 'Obsequious', definition: 'Obedient or attentive to an excessive degree', partOfSpeech: 'adj', example: 'The obsequious assistant agreed with everything.', synonyms: ['sycophantic', 'servile', 'fawning'], difficulty: 5, category: 'elite', exam: 'gre' },
+  { id: 'gre025', word: 'Perfidious', definition: 'Deceitful and untrustworthy', partOfSpeech: 'adj', example: 'The perfidious ally betrayed their trust.', synonyms: ['treacherous', 'disloyal', 'faithless'], difficulty: 5, category: 'elite', exam: 'gre', mnemonic: 'PER(through) + FID(faith) → through/breaking faith → treacherous' },
+];
+
+export const GMAT_VOCAB: ProVocabWord[] = [
+  { id: 'gmat001', word: 'Accrue', definition: 'To accumulate or receive over time', partOfSpeech: 'v', example: 'Interest accrues on the savings account monthly.', synonyms: ['accumulate', 'amass', 'build up'], difficulty: 3, category: 'advanced', exam: 'gmat', mnemonic: 'A-CREW → crew gathers/accumulates' },
+  { id: 'gmat002', word: 'Catalyst', definition: 'An agent that provokes or speeds significant change', partOfSpeech: 'n', example: 'The new CEO was a catalyst for corporate reform.', synonyms: ['stimulus', 'impetus', 'trigger'], difficulty: 2, category: 'common', exam: 'gmat' },
+  { id: 'gmat003', word: 'Curtail', definition: 'To reduce in extent or quantity; impose a restriction on', partOfSpeech: 'v', example: 'Budget cuts will curtail research programs.', synonyms: ['reduce', 'cut back', 'diminish'], difficulty: 3, category: 'advanced', exam: 'gmat' },
+  { id: 'gmat004', word: 'Discretionary', definition: 'Available for use at the judgment of the user', partOfSpeech: 'adj', example: 'Discretionary spending was cut to balance the budget.', synonyms: ['optional', 'voluntary', 'elective'], difficulty: 3, category: 'advanced', exam: 'gmat' },
+  { id: 'gmat005', word: 'Empirical', definition: 'Based on observation or experience rather than theory', partOfSpeech: 'adj', example: 'The study relied on empirical data.', synonyms: ['experimental', 'observed', 'factual'], difficulty: 3, category: 'advanced', exam: 'gmat' },
+  { id: 'gmat006', word: 'Fiduciary', definition: 'Involving trust, especially regarding financial matters', partOfSpeech: 'adj/n', example: 'The advisor has a fiduciary duty to clients.', synonyms: ['trustee', 'custodial'], difficulty: 4, category: 'elite', exam: 'gmat' },
+  { id: 'gmat007', word: 'Hedge', definition: 'To limit or qualify by conditions or exceptions', partOfSpeech: 'v', example: 'The CEO hedged her predictions about growth.', synonyms: ['qualify', 'equivocate', 'mitigate'], difficulty: 3, category: 'advanced', exam: 'gmat' },
+  { id: 'gmat008', word: 'Incumbent', definition: 'Necessary for someone as a duty; currently holding office', partOfSpeech: 'adj/n', example: 'It is incumbent upon managers to ensure safety.', synonyms: ['obligatory', 'binding', 'necessary'], difficulty: 3, category: 'advanced', exam: 'gmat' },
+  { id: 'gmat009', word: 'Leverage', definition: 'Use something to maximum advantage; borrowed capital', partOfSpeech: 'n/v', example: 'The firm leveraged its assets to secure financing.', synonyms: ['influence', 'power', 'advantage'], difficulty: 2, category: 'common', exam: 'gmat' },
+  { id: 'gmat010', word: 'Mitigate', definition: 'To make less severe, serious, or painful', partOfSpeech: 'v', example: 'Steps were taken to mitigate the environmental damage.', synonyms: ['alleviate', 'reduce', 'lessen'], difficulty: 3, category: 'advanced', exam: 'gmat' },
+  { id: 'gmat011', word: 'Paradigm', definition: 'A typical example or pattern; a model', partOfSpeech: 'n', example: 'The discovery created a paradigm shift in the field.', synonyms: ['model', 'framework', 'archetype'], difficulty: 3, category: 'advanced', exam: 'gmat' },
+  { id: 'gmat012', word: 'Precipitate', definition: 'To cause something to happen suddenly or prematurely', partOfSpeech: 'v/adj', example: 'The scandal precipitated his resignation.', synonyms: ['hasten', 'accelerate', 'trigger'], difficulty: 3, category: 'advanced', exam: 'gmat' },
+  { id: 'gmat013', word: 'Rescind', definition: 'To revoke, cancel, or repeal a law, order, or agreement', partOfSpeech: 'v', example: 'The company rescinded the offer after the audit.', synonyms: ['revoke', 'repeal', 'annul'], difficulty: 3, category: 'advanced', exam: 'gmat' },
+  { id: 'gmat014', word: 'Scrutinize', definition: 'To examine or inspect closely and thoroughly', partOfSpeech: 'v', example: 'Auditors scrutinized the financial statements.', synonyms: ['examine', 'inspect', 'analyze'], difficulty: 2, category: 'common', exam: 'gmat' },
+  { id: 'gmat015', word: 'Volatile', definition: 'Liable to change rapidly and unpredictably', partOfSpeech: 'adj', example: 'The volatile market worried investors.', synonyms: ['unstable', 'unpredictable', 'erratic'], difficulty: 3, category: 'advanced', exam: 'gmat' },
+];
+
+export const LSAT_VOCAB: ProVocabWord[] = [
+  { id: 'lsat001', word: 'Adjudicate', definition: 'To make a formal judgment or decision about a problem', partOfSpeech: 'v', example: 'The court will adjudicate the dispute.', synonyms: ['judge', 'arbitrate', 'decide'], difficulty: 3, category: 'advanced', exam: 'lsat' },
+  { id: 'lsat002', word: 'Amicus', definition: 'A friend of the court; one who advises the court', partOfSpeech: 'n', example: 'An amicus brief was filed by the civil liberties group.', synonyms: ['advisor', 'counselor'], difficulty: 4, category: 'elite', exam: 'lsat' },
+  { id: 'lsat003', word: 'Codify', definition: 'To arrange laws or rules into a systematic code', partOfSpeech: 'v', example: 'The legislature moved to codify the regulation.', synonyms: ['systematize', 'organize', 'classify'], difficulty: 3, category: 'advanced', exam: 'lsat' },
+  { id: 'lsat004', word: 'De facto', definition: 'In fact, whether by right or not; existing in practice', partOfSpeech: 'adj/adv', example: 'She was the de facto leader of the organization.', synonyms: ['actual', 'effective', 'real'], difficulty: 3, category: 'advanced', exam: 'lsat' },
+  { id: 'lsat005', word: 'Exculpate', definition: 'To acquit or clear from alleged fault or guilt', partOfSpeech: 'v', example: 'New DNA evidence exculpated the defendant.', synonyms: ['acquit', 'exonerate', 'vindicate'], difficulty: 4, category: 'elite', exam: 'lsat', mnemonic: 'EX + CULP(guilt) → remove guilt' },
+  { id: 'lsat006', word: 'Jurisprudence', definition: 'The theory or philosophy of law', partOfSpeech: 'n', example: 'Her expertise in constitutional jurisprudence was renowned.', synonyms: ['legal theory', 'law'], difficulty: 3, category: 'advanced', exam: 'lsat' },
+  { id: 'lsat007', word: 'Precedent', definition: 'An earlier event or action serving as an example or guide', partOfSpeech: 'n', example: 'The ruling set a precedent for future cases.', synonyms: ['example', 'model', 'standard'], difficulty: 2, category: 'common', exam: 'lsat' },
+  { id: 'lsat008', word: 'Recidivism', definition: 'The tendency to relapse into criminal behavior', partOfSpeech: 'n', example: 'Programs aim to reduce recidivism among offenders.', synonyms: ['relapse', 'backsliding'], difficulty: 4, category: 'elite', exam: 'lsat' },
+  { id: 'lsat009', word: 'Stipulate', definition: 'To demand or specify a requirement as part of an agreement', partOfSpeech: 'v', example: 'The contract stipulates a 30-day notice period.', synonyms: ['specify', 'require', 'mandate'], difficulty: 2, category: 'common', exam: 'lsat' },
+  { id: 'lsat010', word: 'Tort', definition: 'A wrongful act leading to civil legal liability', partOfSpeech: 'n', example: 'Negligence is the most common tort in civil law.', synonyms: ['wrong', 'offense', 'infringement'], difficulty: 3, category: 'advanced', exam: 'lsat' },
+  { id: 'lsat011', word: 'Abrogate', definition: 'To repeal or do away with a law, right, or formal agreement', partOfSpeech: 'v', example: 'The treaty was abrogated after the conflict.', synonyms: ['abolish', 'annul', 'revoke'], difficulty: 4, category: 'elite', exam: 'lsat' },
+  { id: 'lsat012', word: 'Litigious', definition: 'Tending or too ready to take legal action', partOfSpeech: 'adj', example: 'The company avoided the litigious environment.', synonyms: ['contentious', 'quarrelsome'], difficulty: 3, category: 'advanced', exam: 'lsat' },
+];
+
+export const ALL_PRO_VOCAB: ProVocabWord[] = [...GRE_VOCAB, ...GMAT_VOCAB, ...LSAT_VOCAB];
+
+export function getProVocabByExam(exam: string): ProVocabWord[] {
+  return ALL_PRO_VOCAB.filter(w => w.exam === exam);
+}
