@@ -426,7 +426,6 @@ const RapidFacts = () => {
               <Flag className="w-4 h-4" />
             </Button>
           </div>
-          </div>
           <h2 className="text-xl font-bold mb-6">{currentFact.question}</h2>
 
           <div className="grid gap-3">
