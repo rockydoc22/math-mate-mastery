@@ -91,6 +91,8 @@ const PracticeLog = lazy(() => import("./pages/PracticeLog"));
 const WordOfTheDay = lazy(() => import("./pages/WordOfTheDay"));
 const MathTricks = lazy(() => import("./pages/MathTricks"));
 const ProExamFRQ = lazy(() => import("./pages/ProExamFRQ"));
+const ProExamStudyGuide = lazy(() => import("./pages/ProExamStudyGuide"));
+const ProExamScoreTracker = lazy(() => import("./pages/ProExamScoreTracker"));
 const LogicGames = lazy(() => import("./pages/LogicGames"));
 
 const queryClient = new QueryClient();
