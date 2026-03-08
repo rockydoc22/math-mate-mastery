@@ -70,6 +70,8 @@ const StrategyPractice = lazy(() => import("./pages/StrategyPractice"));
 const Notifications = lazy(() => import("./pages/Notifications"));
 const ConversationPractice = lazy(() => import("./pages/ConversationPractice"));
 const Portfolio = lazy(() => import("./pages/Portfolio"));
+const CoinShop = lazy(() => import("./pages/CoinShop"));
+const StudyTimer = lazy(() => import("./pages/StudyTimer"));
 
 const queryClient = new QueryClient();
 
@@ -153,6 +155,8 @@ const App = () => (
               <Route path="/notifications" element={<Notifications />} />
               <Route path="/conversations" element={<ConversationPractice />} />
               <Route path="/portfolio" element={<Portfolio />} />
+              <Route path="/shop" element={<CoinShop />} />
+              <Route path="/timer" element={<StudyTimer />} />
               {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
               <Route path="*" element={<NotFound />} />
             </Routes>

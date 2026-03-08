@@ -9,7 +9,7 @@ import {
   Award, Swords, ChevronRight, Flame, Brain, X,
   Target, RotateCcw, BookOpen, RefreshCw, FileText, Crown, GraduationCap,
   Clock, Sparkles, Download, Lightbulb, Play, Skull, Settings, Gamepad2, Smartphone, Map, Star, Eye,
-  UserPlus, ClipboardList, Building2, Heart, Bell, MessageCircle, FolderOpen
+  UserPlus, ClipboardList, Building2, Heart, Bell, MessageCircle, FolderOpen, Coins, Timer
 } from "lucide-react";
 import { useNavigate, Link } from "react-router-dom";
 import { useAuth } from "@/hooks/useAuth";
@@ -682,6 +682,8 @@ const Home = () => {
               { id: 'notifications', icon: Bell, label: 'Inbox', color: 'bg-red-100 dark:bg-red-900/30', iconColor: 'text-red-600 dark:text-red-400', to: '/notifications', exams: ['sat', 'psat', 'act'] },
               { id: 'conversations', icon: MessageCircle, label: 'Conversations', color: 'bg-lime-100 dark:bg-lime-900/30', iconColor: 'text-lime-600 dark:text-lime-400', to: '/conversations', exams: ['sat', 'psat', 'act'] },
               { id: 'portfolio', icon: FolderOpen, label: 'Portfolio', color: 'bg-emerald-100 dark:bg-emerald-900/30', iconColor: 'text-emerald-600 dark:text-emerald-400', to: '/portfolio', exams: ['sat', 'psat', 'act'] },
+              { id: 'shop', icon: Coins, label: 'Coin Shop', color: 'bg-yellow-100 dark:bg-yellow-900/30', iconColor: 'text-yellow-600 dark:text-yellow-400', to: '/shop', exams: ['sat', 'psat', 'act'] },
+              { id: 'timer', icon: Timer, label: 'Study Timer', color: 'bg-rose-100 dark:bg-rose-900/30', iconColor: 'text-rose-600 dark:text-rose-400', to: '/timer', exams: ['sat', 'psat', 'act'] },
             ];
 
             // Filter tiles to only show those relevant to the current exam
