@@ -4,7 +4,8 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Progress } from "@/components/ui/progress";
 import { Badge } from "@/components/ui/badge";
-import { ArrowLeft, Zap, Trophy, Timer, RotateCcw, Brain, BookOpen, PenTool, Lightbulb, FlaskConical, ChevronDown, ChevronUp, XCircle } from "lucide-react";
+import { ArrowLeft, Zap, Trophy, Timer, RotateCcw, Brain, BookOpen, PenTool, Lightbulb, FlaskConical, ChevronDown, ChevronUp, XCircle, Flag } from "lucide-react";
+import { FlagQuestionModal } from "@/components/FlagQuestionModal";
 import { satFacts, SATFact, ExamType } from "@/data/satFacts";
 
 type Category = "all" | "math" | "vocab" | "grammar" | "strategy" | "science";
