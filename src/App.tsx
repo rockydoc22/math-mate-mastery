@@ -107,6 +107,9 @@ const DebatePractice = lazy(() => import("./pages/DebatePractice"));
 const AnatomyAtlas = lazy(() => import("./pages/AnatomyAtlas"));
 const CompetitionHub = lazy(() => import("./pages/CompetitionHub"));
 const AlternativeAssessments = lazy(() => import("./pages/AlternativeAssessments"));
+const StrategyGameModes = lazy(() => import("./pages/StrategyGameModes"));
+const TimedModes = lazy(() => import("./pages/TimedModes"));
+const ReviewAnalytics = lazy(() => import("./pages/ReviewAnalytics"));
 
 const queryClient = new QueryClient();
 
