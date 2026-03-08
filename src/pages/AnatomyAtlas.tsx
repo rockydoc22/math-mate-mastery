@@ -224,7 +224,7 @@ export default function AnatomyAtlas() {
               <h2 className="text-2xl font-bold mb-2">Quiz Complete!</h2>
               <p className="text-lg text-muted-foreground mb-4">{selectedDiagram.title}</p>
 
-              <div className="text-5xl font-black mb-2" style={{ color: percentage >= 70 ? "hsl(var(--chart-2))" : "hsl(var(--destructive))" }}>
+              <div className={`text-5xl font-black mb-2 ${percentage >= 70 ? "text-green-600 dark:text-green-400" : "text-destructive"}`}>
                 {percentage}%
               </div>
               <p className="text-muted-foreground mb-6">
