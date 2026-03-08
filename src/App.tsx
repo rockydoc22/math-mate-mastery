@@ -175,7 +175,7 @@ const App = () => (
               <Route path="/pro-exams" element={<ProExams />} />
               <Route path="/pro-exam/:examId" element={<ProExamQuiz />} />
               <Route path="/daily-quests" element={<DailyQuests />} />
-              <Route path="/teacher" element={<TeacherDashboard />} />
+              <Route path="/teacher" element={<ProtectedRoute><TeacherDashboard /></ProtectedRoute>} />
               <Route path="/parent" element={<ParentDashboard />} />
               <Route path="/next-steps" element={<AdaptiveLearning />} />
               <Route path="/join-class" element={<JoinClass />} />
