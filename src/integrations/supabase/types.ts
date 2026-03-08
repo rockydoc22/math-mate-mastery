@@ -1028,6 +1028,33 @@ export type Database = {
         }
         Relationships: []
       }
+      user_consents: {
+        Row: {
+          agreed_at: string
+          consent_key: string
+          consent_type: string
+          id: string
+          ip_address: string | null
+          user_id: string
+        }
+        Insert: {
+          agreed_at?: string
+          consent_key: string
+          consent_type: string
+          id?: string
+          ip_address?: string | null
+          user_id: string
+        }
+        Update: {
+          agreed_at?: string
+          consent_key?: string
+          consent_type?: string
+          id?: string
+          ip_address?: string | null
+          user_id?: string
+        }
+        Relationships: []
+      }
       user_feedback: {
         Row: {
           created_at: string
