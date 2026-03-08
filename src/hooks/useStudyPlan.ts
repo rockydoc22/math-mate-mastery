@@ -18,6 +18,15 @@ interface AcceleratorSummary {
   recentCredits: number;
 }
 
+export interface AdaptiveRecommendation {
+  type: 'weak_skill' | 'review_needed' | 'strength' | 'time_management';
+  title: string;
+  description: string;
+  action: string;
+  actionRoute?: string;
+  priority: 'high' | 'medium' | 'low';
+}
+
 export const useStudyPlan = () => {
   const { user } = useAuth();
   const [activePlan, setActivePlan] = useState<StudyPlan | null>(null);
@@ -25,6 +34,7 @@ export const useStudyPlan = () => {
   const [showReminder, setShowReminder] = useState(false);
   const [acceleratorCredits, setAcceleratorCredits] = useState<AcceleratorSummary>({ totalCredits: 0, recentCredits: 0 });
   const [pendingReviewCount, setPendingReviewCount] = useState(0);
+  const [recommendations, setRecommendations] = useState<AdaptiveRecommendation[]>([]);
 
   useEffect(() => {
     const fetchPlan = async () => {
@@ -46,13 +56,11 @@ export const useStudyPlan = () => {
         if (data) {
           setActivePlan(data);
           
-          // Check if we should show reminder (once per session/day)
           const lastShown = data.last_reminder_shown 
             ? new Date(data.last_reminder_shown) 
             : null;
           const now = new Date();
           
-          // Show reminder if never shown or last shown was more than 8 hours ago
           if (!lastShown || (now.getTime() - lastShown.getTime()) > 8 * 60 * 60 * 1000) {
             setShowReminder(true);
           }
@@ -73,7 +81,7 @@ export const useStudyPlan = () => {
           setAcceleratorCredits({ totalCredits, recentCredits });
         }
 
-        // Fetch pending review count (missed questions not yet mastered)
+        // Fetch pending review count
         const { count: reviewCount } = await supabase
           .from("question_attempts")
           .select("*", { count: "exact", head: true })
@@ -81,6 +89,19 @@ export const useStudyPlan = () => {
           .eq("is_correct", false);
 
         setPendingReviewCount(reviewCount || 0);
+
+        // Generate adaptive recommendations from recent attempts
+        const twoWeeksAgo = new Date(Date.now() - 14 * 24 * 60 * 60 * 1000).toISOString();
+        const { data: recentAttempts } = await supabase
+          .from("question_attempts")
+          .select("skill, domain, is_correct, question_type")
+          .eq("user_id", user.id)
+          .gte("created_at", twoWeeksAgo);
+
+        if (recentAttempts && recentAttempts.length > 0) {
+          const recs = generateRecommendations(recentAttempts, reviewCount || 0);
+          setRecommendations(recs);
+        }
       } catch (error) {
         console.error("Error fetching study plan:", error);
       } finally {
@@ -108,7 +129,6 @@ export const useStudyPlan = () => {
 
   const weeksUntilExam = Math.ceil(daysUntilExam / 7);
 
-  // Calculate workplan if we have an active plan
   const workplan: WorkplanEstimate | null = activePlan 
     ? calculateWorkplan(
         activePlan.baseline_score || 1000,
@@ -118,7 +138,6 @@ export const useStudyPlan = () => {
       )
     : null;
 
-  // Calculate adjusted workplan with accelerator credits
   const adjustedWorkplan = useMemo(() => {
     if (!workplan) return null;
     
@@ -137,7 +156,6 @@ export const useStudyPlan = () => {
     };
   }, [workplan, acceleratorCredits, weeksUntilExam]);
 
-  // Alert thresholds for pending reviews
   const showReviewAlert = pendingReviewCount >= 10;
 
   return {
@@ -151,5 +169,95 @@ export const useStudyPlan = () => {
     pendingReviewCount,
     showReviewAlert,
     acceleratorCredits,
+    recommendations,
   };
 };
+
+function generateRecommendations(
+  attempts: { skill: string; domain: string; is_correct: boolean; question_type: string }[],
+  pendingReviewCount: number
+): AdaptiveRecommendation[] {
+  const recs: AdaptiveRecommendation[] = [];
+
+  // Analyze skill accuracy
+  const skillStats: Record<string, { correct: number; total: number }> = {};
+  const domainStats: Record<string, { correct: number; total: number }> = {};
+
+  for (const a of attempts) {
+    if (!skillStats[a.skill]) skillStats[a.skill] = { correct: 0, total: 0 };
+    skillStats[a.skill].total++;
+    if (a.is_correct) skillStats[a.skill].correct++;
+
+    if (!domainStats[a.domain]) domainStats[a.domain] = { correct: 0, total: 0 };
+    domainStats[a.domain].total++;
+    if (a.is_correct) domainStats[a.domain].correct++;
+  }
+
+  // Find weakest skills (< 50% accuracy with at least 3 attempts)
+  const weakSkills = Object.entries(skillStats)
+    .filter(([, s]) => s.total >= 3 && (s.correct / s.total) < 0.5)
+    .sort((a, b) => (a[1].correct / a[1].total) - (b[1].correct / b[1].total))
+    .slice(0, 2);
+
+  for (const [skill, stats] of weakSkills) {
+    const accuracy = Math.round((stats.correct / stats.total) * 100);
+    recs.push({
+      type: 'weak_skill',
+      title: `Focus on: ${skill}`,
+      description: `Your accuracy is ${accuracy}% (${stats.correct}/${stats.total}). This skill needs more practice.`,
+      action: 'Practice Now',
+      actionRoute: '/quiz',
+      priority: accuracy < 30 ? 'high' : 'medium',
+    });
+  }
+
+  // Find strongest skills (> 85% accuracy, 5+ attempts)
+  const strongSkills = Object.entries(skillStats)
+    .filter(([, s]) => s.total >= 5 && (s.correct / s.total) > 0.85)
+    .sort((a, b) => (b[1].correct / b[1].total) - (a[1].correct / a[1].total))
+    .slice(0, 1);
+
+  for (const [skill, stats] of strongSkills) {
+    const accuracy = Math.round((stats.correct / stats.total) * 100);
+    recs.push({
+      type: 'strength',
+      title: `Strong at: ${skill}`,
+      description: `${accuracy}% accuracy — consider moving to harder difficulty or focusing elsewhere.`,
+      action: 'Try Elite Mode',
+      actionRoute: '/elite-practice',
+      priority: 'low',
+    });
+  }
+
+  // Review recommendation
+  if (pendingReviewCount >= 10) {
+    recs.push({
+      type: 'review_needed',
+      title: `${pendingReviewCount} questions to review`,
+      description: 'Reviewing missed questions is the fastest way to improve your score.',
+      action: 'Review Mistakes',
+      actionRoute: '/saved-questions',
+      priority: 'high',
+    });
+  }
+
+  // Time management check — if overall accuracy is above 70% but low volume
+  const totalAttempts = attempts.length;
+  const totalCorrect = attempts.filter(a => a.is_correct).length;
+  const overallAccuracy = totalAttempts > 0 ? totalCorrect / totalAttempts : 0;
+
+  if (overallAccuracy > 0.7 && totalAttempts < 20) {
+    recs.push({
+      type: 'time_management',
+      title: 'Increase practice volume',
+      description: `You're accurate (${Math.round(overallAccuracy * 100)}%) but only ${totalAttempts} questions in 2 weeks. Try to practice more consistently.`,
+      action: 'Daily Challenge',
+      actionRoute: '/daily-challenge',
+      priority: 'medium',
+    });
+  }
+
+  // Sort by priority
+  const priorityOrder = { high: 0, medium: 1, low: 2 };
+  return recs.sort((a, b) => priorityOrder[a.priority] - priorityOrder[b.priority]);
+}

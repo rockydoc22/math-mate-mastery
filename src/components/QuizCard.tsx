@@ -1,4 +1,4 @@
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect } from "react";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Question } from "@/data/questions";
@@ -26,6 +26,12 @@ export const QuizCard = ({ question, selectedAnswer, onSelectAnswer, showResult,
   const [showPathAnalysis, setShowPathAnalysis] = useState(false);
   const visualQuestion = question as VisualQuestion;
   const imageQuestion = question as ImageQuestion;
+
+  // Reset UI state when question changes
+  useEffect(() => {
+    setShowKeyConcept(false);
+    setShowPathAnalysis(false);
+  }, [question.id]);
 
   // Find the relevant key concept for this question
   const keyConcept = useMemo(() => {
@@ -231,6 +237,8 @@ export const QuizCard = ({ question, selectedAnswer, onSelectAnswer, showResult,
               ) : (
                 <SolutionPathAnalysis
                   question={question.question}
+                  questionId={question.id}
+                  questionType={questionType}
                   options={question.options.map(o => ({ letter: o.letter, text: o.text }))}
                   correctAnswer={question.correctAnswer}
                   competitionType={questionType === 'math' ? 'SAT Math' : questionType === 'english' ? 'SAT English' : 'Academic'}
