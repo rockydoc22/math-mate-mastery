@@ -41,6 +41,14 @@ const FILE_IMPORTERS: Record<string, () => Promise<any>> = {
   'homeschool_iowa_stanford10_question_bank_220_original.json': () => import('./homeschool_iowa_stanford10_question_bank_220_original.json'),
   'terranova_question_bank_200_original.json': () => import('./terranova_question_bank_200_original.json'),
   'map_growth_question_bank_200_original.json': () => import('./map_growth_question_bank_200_original.json'),
+  'nclex_question_bank_200.json': () => import('./nclex_question_bank_200.json'),
+  'teas_question_bank_200.json': () => import('./teas_question_bank_200.json'),
+  'ged_question_bank_200.json': () => import('./ged_question_bank_200.json'),
+  'hiset_question_bank_200.json': () => import('./hiset_question_bank_200.json'),
+  'accuplacer_question_bank_200.json': () => import('./accuplacer_question_bank_200.json'),
+  'sbac_question_bank_200.json': () => import('./sbac_question_bank_200.json'),
+  'toefl_question_bank_200.json': () => import('./toefl_question_bank_200.json'),
+  'ib_question_bank_200.json': () => import('./ib_question_bank_200.json'),
 };
 
 export async function loadProExamQuestions(jsonFiles: string[]): Promise<Question[]> {

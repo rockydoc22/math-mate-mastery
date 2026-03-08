@@ -112,6 +112,8 @@ const TimedModes = lazy(() => import("./pages/TimedModes"));
 const ReviewAnalytics = lazy(() => import("./pages/ReviewAnalytics"));
 const HomeworkSolver = lazy(() => import("./pages/HomeworkSolver"));
 const ThinkPath = lazy(() => import("./pages/ThinkPath"));
+const IQPersonalityHub = lazy(() => import("./pages/IQPersonalityHub"));
+const SentenceCompletion = lazy(() => import("./pages/SentenceCompletion"));
 
 const queryClient = new QueryClient();
 
@@ -235,6 +237,8 @@ const App = () => (
               <Route path="/review-analytics" element={<ReviewAnalytics />} />
               <Route path="/homework-solver" element={<HomeworkSolver />} />
               <Route path="/thinkpath" element={<ThinkPath />} />
+              <Route path="/iq-personality" element={<IQPersonalityHub />} />
+              <Route path="/sentence-completion" element={<SentenceCompletion />} />
               {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
               <Route path="*" element={<NotFound />} />
             </Routes>
