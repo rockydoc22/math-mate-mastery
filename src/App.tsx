@@ -175,6 +175,8 @@ const App = () => (
               <Route path="/mistake-journal" element={<MistakeJournal />} />
               <Route path="/progress-report" element={<ProgressReport />} />
               <Route path="/quick-review" element={<QuickReview />} />
+              <Route path="/score-predictor" element={<ScorePredictor />} />
+              <Route path="/study-planner" element={<StudyPlanner />} />
               {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
               <Route path="*" element={<NotFound />} />
             </Routes>
