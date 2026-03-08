@@ -28,8 +28,8 @@ If you believe any content on this platform infringes on intellectual property r
 
 const IP_CHECKBOX = "I have read and understand this notice. I acknowledge that this platform uses only original content and is not affiliated with or endorsed by official testing organizations. I agree to use this platform responsibly.";
 
-// MCAT and LSAT are gated - hidden from main list until approved
-const GATED_EXAMS = ['mcat', 'lsat'];
+// MCAT and LSAT are now FRQ-only (no multiple choice to avoid IP issues)
+const FRQ_ONLY_EXAMS = ['mcat', 'lsat'];
 
 const ProExams = () => {
   const navigate = useNavigate();
