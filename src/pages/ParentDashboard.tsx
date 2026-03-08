@@ -271,6 +271,43 @@ const ParentDashboard = () => {
               </Card>
             )}
 
+            {/* Export Report */}
+            <Card className="p-4">
+              <h3 className="font-bold text-sm mb-3 flex items-center gap-2">
+                <Download className="w-4 h-4 text-primary" /> Export Progress Report
+              </h3>
+              <p className="text-xs text-muted-foreground mb-3">Download a printable summary of your child's progress.</p>
+              <div className="flex gap-2">
+                <Button size="sm" variant="outline" className="gap-1" onClick={() => {
+                  const child = children.find(c => c.id === selectedChild);
+                  const report = [
+                    `Progress Report — ${child?.username || 'Student'}`,
+                    `Generated: ${new Date().toLocaleDateString()}`,
+                    ``,
+                    `Questions Answered: ${childStats.questionsAnswered}`,
+                    `Overall Accuracy: ${childStats.accuracy}%`,
+                    `Current Streak: ${childStats.streak} days`,
+                    `Quizzes Completed: ${childStats.quizzesCompleted}`,
+                    ``,
+                    `--- Domain Breakdown ---`,
+                    ...childStats.recentDomains.map(d => `${d.domain}: ${d.accuracy}% (${d.count} questions)`),
+                  ].join('\n');
+                  const blob = new Blob([report], { type: 'text/plain' });
+                  const url = URL.createObjectURL(blob);
+                  const a = document.createElement('a');
+                  a.href = url;
+                  a.download = `progress-report-${child?.username || 'student'}.txt`;
+                  a.click();
+                  URL.revokeObjectURL(url);
+                }}>
+                  <Download className="w-3 h-3" /> Download TXT
+                </Button>
+                <Button size="sm" variant="outline" className="gap-1" onClick={() => window.print()}>
+                  <Printer className="w-3 h-3" /> Print
+                </Button>
+              </div>
+            </Card>
+
             {/* Add another child */}
             <Card className="p-4 border-dashed">
               <h3 className="font-bold text-sm mb-2">Link Another Child</h3>
