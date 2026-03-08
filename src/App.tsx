@@ -243,6 +243,10 @@ const App = () => (
               <Route path="/thinkpath" element={<ThinkPath />} />
               <Route path="/iq-personality" element={<IQPersonalityHub />} />
               <Route path="/sentence-completion" element={<SentenceCompletion />} />
+              <Route path="/personality-mbti" element={<PersonalityMBTI />} />
+              <Route path="/personality-disc" element={<PersonalityDISC />} />
+              <Route path="/personality-enneagram" element={<PersonalityEnneagram />} />
+              <Route path="/personality-strengths" element={<PersonalityStrengths />} />
               {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
               <Route path="*" element={<NotFound />} />
             </Routes>
