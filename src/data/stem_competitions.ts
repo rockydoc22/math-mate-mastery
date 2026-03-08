@@ -503,7 +503,6 @@ export const STEM_COMPETITION_CATEGORIES: CompetitionCategory[] = [
       },
     ]
   },
-  },
   {
     id: 'history',
     name: 'History',
