@@ -237,6 +237,8 @@ export const QuizCard = ({ question, selectedAnswer, onSelectAnswer, showResult,
               ) : (
                 <SolutionPathAnalysis
                   question={question.question}
+                  questionId={question.id}
+                  questionType={questionType}
                   options={question.options.map(o => ({ letter: o.letter, text: o.text }))}
                   correctAnswer={question.correctAnswer}
                   competitionType={questionType === 'math' ? 'SAT Math' : questionType === 'english' ? 'SAT English' : 'Academic'}
