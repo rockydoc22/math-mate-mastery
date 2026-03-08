@@ -135,8 +135,8 @@ export const AITutorExplanation = ({
         )}
         {aiExplanation && (
           <div className="prose prose-sm dark:prose-invert max-w-none">
-            <p className="whitespace-pre-wrap">{aiExplanation}</p>
-          </div>
+                <ReactMarkdown>{aiExplanation}</ReactMarkdown>
+              </div>
         )}
         {!hasLoaded && !isLoading && (
           <Button onClick={fetchExplanation} variant="outline" className="gap-2">
