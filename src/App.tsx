@@ -76,6 +76,8 @@ const Flashcards = lazy(() => import("./pages/Flashcards"));
 const StudyGroups = lazy(() => import("./pages/StudyGroups"));
 const StreakCalendar = lazy(() => import("./pages/StreakCalendar"));
 const WeeklyGoals = lazy(() => import("./pages/WeeklyGoals"));
+const Achievements = lazy(() => import("./pages/Achievements"));
+const MistakeJournal = lazy(() => import("./pages/MistakeJournal"));
 
 const queryClient = new QueryClient();
 
@@ -165,6 +167,8 @@ const App = () => (
               <Route path="/study-groups" element={<StudyGroups />} />
               <Route path="/streak-calendar" element={<StreakCalendar />} />
               <Route path="/weekly-goals" element={<WeeklyGoals />} />
+              <Route path="/achievements" element={<Achievements />} />
+              <Route path="/mistake-journal" element={<MistakeJournal />} />
               {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
               <Route path="*" element={<NotFound />} />
             </Routes>
