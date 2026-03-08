@@ -37,7 +37,7 @@ export const PRO_EXAMS: ProExamConfig[] = [
     sections: ['Quantitative', 'Verbal', 'Data Insights'],
     description: 'Graduate Management Admission Test for business school',
     timePerQuestion: 120,
-    jsonFiles: ['gmat_question_bank_200_original.json', 'gmat_question_bank_expansion_300.json', 'gmat_question_bank_expansion_300_b2.json'],
+    jsonFiles: ['gmat_question_bank_200_original.json', 'gmat_question_bank_expansion_300.json', 'gmat_question_bank_expansion_300_b2.json', 'gmat_question_bank_expansion_300_b3.json'],
   },
   {
     id: 'lsat', name: 'LSAT', shortName: 'LSAT', icon: '⚖️',
