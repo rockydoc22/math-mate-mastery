@@ -6,6 +6,10 @@ import satEnglish9B2Raw from './sat_english_level9_100_b2.json';
 import satEnglish10B2Raw from './sat_english_level10_100_b2.json';
 import satMath9B2Raw from './sat_math_level9_100_b2.json';
 import satMath10B2Raw from './sat_math_level10_100_b2.json';
+import satEnglish9B3Raw from './sat_english_level9_100_b3.json';
+import satEnglish10B3Raw from './sat_english_level10_100_b3.json';
+import satMath9B3Raw from './sat_math_level9_100_b3.json';
+import satMath10B3Raw from './sat_math_level10_100_b3.json';
 import type { Question } from './questions';
 import type { EnglishQuestion } from './englishQuestions';
 
@@ -51,18 +55,22 @@ function convertToEnglish(raw: RawJsonQuestion[], idPrefix = ''): EnglishQuestio
 export const satMathLevel9Questions: Question[] = [
   ...convertToMath(satMath9Raw as RawJsonQuestion[]),
   ...convertToMath(satMath9B2Raw as RawJsonQuestion[], 'b2_'),
+  ...convertToMath(satMath9B3Raw as RawJsonQuestion[], 'b3_'),
 ];
 export const satMathLevel10Questions: Question[] = [
   ...convertToMath(satMath10Raw as RawJsonQuestion[]),
   ...convertToMath(satMath10B2Raw as RawJsonQuestion[], 'b2_'),
+  ...convertToMath(satMath10B3Raw as RawJsonQuestion[], 'b3_'),
 ];
 export const satEnglishLevel9Questions: EnglishQuestion[] = [
   ...convertToEnglish(satEnglish9Raw as RawJsonQuestion[]),
   ...convertToEnglish(satEnglish9B2Raw as RawJsonQuestion[], 'b2_'),
+  ...convertToEnglish(satEnglish9B3Raw as RawJsonQuestion[], 'b3_'),
 ];
 export const satEnglishLevel10Questions: EnglishQuestion[] = [
   ...convertToEnglish(satEnglish10Raw as RawJsonQuestion[]),
   ...convertToEnglish(satEnglish10B2Raw as RawJsonQuestion[], 'b2_'),
+  ...convertToEnglish(satEnglish10B3Raw as RawJsonQuestion[], 'b3_'),
 ];
 
 console.log(`[SAT Level 9/10] Math L9: ${satMathLevel9Questions.length}, Math L10: ${satMathLevel10Questions.length}, English L9: ${satEnglishLevel9Questions.length}, English L10: ${satEnglishLevel10Questions.length}`);
