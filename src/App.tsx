@@ -105,6 +105,7 @@ const Competitions = lazy(() => import("./pages/Competitions"));
 const LanguageCompetition = lazy(() => import("./pages/LanguageCompetition"));
 const DebatePractice = lazy(() => import("./pages/DebatePractice"));
 const AnatomyAtlas = lazy(() => import("./pages/AnatomyAtlas"));
+const CompetitionHub = lazy(() => import("./pages/CompetitionHub"));
 
 const queryClient = new QueryClient();
 
