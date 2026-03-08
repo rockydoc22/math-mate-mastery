@@ -1,100 +1,103 @@
-import { useState } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
-import { ArrowLeft, Send, CheckCircle2, Loader2, RotateCcw, ChevronRight } from 'lucide-react';
+import { ArrowLeft, Send, CheckCircle2, Loader2, RotateCcw, ChevronRight, Clock, BookOpen } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { BottomNav } from '@/components/BottomNav';
 import { useAuth } from '@/hooks/useAuth';
 import { supabase } from '@/integrations/supabase/client';
 
-// FRQ prompt banks for each pro exam
-const FRQ_BANKS: Record<string, { id: string; section: string; prompt: string; rubric: string[]; sampleOutline: string[]; timeMinutes: number }[]> = {
+// Types for passage-based FRQ
+interface PassageQuestion {
+  id: string;
+  prompt: string;
+  rubric_points: string[];
+  max_score: number;
+  time_minutes: number;
+}
+
+interface Passage {
+  id: string;
+  section: string;
+  passage: string;
+  questions: PassageQuestion[];
+}
+
+// Legacy FRQ format (GRE/GMAT analytical writing)
+interface LegacyPrompt {
+  id: string;
+  section: string;
+  prompt: string;
+  rubric: string[];
+  sampleOutline: string[];
+  timeMinutes: number;
+}
+
+// Legacy FRQ banks for GRE/GMAT (essay-style)
+const LEGACY_FRQ_BANKS: Record<string, LegacyPrompt[]> = {
   gre: [
     {
       id: 'gre-aw-1', section: 'Analytical Writing – Issue',
-      prompt: 'Educational institutions have a responsibility to dissuade students from pursuing fields of study in which they are unlikely to succeed. Write a response in which you discuss the extent to which you agree or disagree with the claim. In developing and supporting your position, be sure to address the most compelling reasons and/or examples that could be used to challenge your position.',
-      rubric: ['Clear thesis with nuanced position', 'Logically sound reasoning with specific examples', 'Considers counterarguments and refutes them', 'Well-organized with coherent transitions', 'Precise language and varied sentence structure', 'Minimal grammatical errors'],
-      sampleOutline: ['Take a qualified stance (partial agreement)', 'Acknowledge that data-driven guidance helps students', 'Argue that discouraging students undermines autonomy and growth', 'Provide examples: late bloomers, career pivots, innovation from "unlikely" fields', 'Concede practical constraints (e.g., limited resources)', 'Conclude with a balanced synthesis'],
+      prompt: 'Educational institutions have a responsibility to dissuade students from pursuing fields of study in which they are unlikely to succeed. Write a response in which you discuss the extent to which you agree or disagree with the claim.',
+      rubric: ['Clear thesis with nuanced position', 'Logically sound reasoning with specific examples', 'Considers counterarguments', 'Well-organized with coherent transitions', 'Precise language and varied sentence structure', 'Minimal grammatical errors'],
+      sampleOutline: ['Take a qualified stance', 'Acknowledge data-driven guidance helps', 'Argue discouraging students undermines autonomy', 'Provide examples: late bloomers, career pivots', 'Concede practical constraints', 'Conclude with balanced synthesis'],
       timeMinutes: 30,
     },
     {
       id: 'gre-aw-2', section: 'Analytical Writing – Argument',
-      prompt: 'The following appeared in a memo from the director of a large city\'s council on the arts: "In a recent citywide poll, 15 percent more residents said they watch television programs about the visual arts than said they visit art museums. This suggests that the residents of our city prefer visual art in a home setting. Therefore, the council on the arts should allocate more funding to a program that makes video recordings of exhibits available for home viewing." Write a response examining the stated and/or unstated assumptions of the argument. Be sure to explain how the argument depends on these assumptions and what the implications are for the argument if the assumptions prove unwarranted.',
-      rubric: ['Identifies key assumptions clearly', 'Explains how each assumption affects the conclusion', 'Provides alternative explanations for the evidence', 'Suggests what additional evidence would strengthen the argument', 'Logical organization', 'Clear, precise prose'],
-      sampleOutline: ['Identify assumption: watching TV about art ≠ preferring art at home', 'Identify assumption: poll respondents represent actual behavior', 'Alternative explanation: convenience, not preference', 'Question: What if museum attendance is limited by cost/location?', 'Suggest needed evidence: reasons for not visiting museums', 'Conclude: argument is flawed without addressing these gaps'],
+      prompt: 'The following appeared in a memo from the director of a large city\'s council on the arts: "In a recent citywide poll, 15 percent more residents said they watch television programs about the visual arts than said they visit art museums. Therefore, the council should allocate more funding to video recordings of exhibits for home viewing." Write a response examining the assumptions of this argument.',
+      rubric: ['Identifies key assumptions', 'Explains how assumptions affect conclusion', 'Provides alternative explanations', 'Suggests needed evidence', 'Logical organization', 'Clear, precise prose'],
+      sampleOutline: ['Assumption: watching TV ≠ preferring art at home', 'Assumption: poll represents actual behavior', 'Alternative: convenience, not preference', 'Question cost/location barriers', 'Suggest needed evidence', 'Conclude argument is flawed'],
       timeMinutes: 30,
     },
     {
       id: 'gre-aw-3', section: 'Analytical Writing – Issue',
-      prompt: 'Claim: Governments must ensure that their major cities receive the financial support they need in order to thrive. Reason: It is primarily in cities that a nation\'s cultural traditions are preserved and generated. Write a response discussing the extent to which you agree or disagree with the claim and the reason on which it is based.',
-      rubric: ['Addresses both claim and reason separately', 'Provides concrete historical/cultural examples', 'Considers rural and non-urban cultural contributions', 'Demonstrates analytical depth', 'Organized paragraphs with clear transitions', 'Sophisticated vocabulary and syntax'],
-      sampleOutline: ['Agree that cities are cultural hubs but challenge exclusivity of the reason', 'Examples: museums, theaters, universities in cities', 'Counterexamples: folk traditions, indigenous cultures in rural areas', 'Argue for balanced funding approach', 'Conclude with nuanced position on urban funding'],
+      prompt: 'Claim: Governments must ensure that their major cities receive the financial support they need in order to thrive. Reason: It is primarily in cities that a nation\'s cultural traditions are preserved and generated. Discuss the extent to which you agree or disagree with the claim and the reason on which it is based.',
+      rubric: ['Addresses both claim and reason', 'Concrete historical/cultural examples', 'Considers rural cultural contributions', 'Analytical depth', 'Organized paragraphs', 'Sophisticated vocabulary'],
+      sampleOutline: ['Cities are cultural hubs but not exclusively', 'Museums, theaters in cities', 'Folk traditions in rural areas', 'Balanced funding approach', 'Nuanced conclusion'],
       timeMinutes: 30,
     },
   ],
   gmat: [
     {
       id: 'gmat-aw-1', section: 'Analytical Writing',
-      prompt: 'The following appeared in an article in the Grandview Beacon: "For many years the city of Grandview has provided free public health clinics to low-income residents. These clinics have been an essential safety net. Yet, last year, the weights of low-income residents surveyed were on average 12% higher than a decade ago. Clearly, the clinics are failing in their mission, and the city should redirect funding to subsidize gym memberships instead." Discuss how well-reasoned you find this argument.',
-      rubric: ['Identifies logical flaws in the argument', 'Questions the causal link between clinics and weight gain', 'Considers confounding factors (diet, economics, stress)', 'Evaluates whether gym subsidies address root causes', 'Clear structure with introduction, body, conclusion', 'Professional tone and grammar'],
-      sampleOutline: ['Flaw 1: Correlation ≠ causation (clinics didn\'t cause weight gain)', 'Flaw 2: Weight is one health metric—clinics serve broader purposes', 'Flaw 3: Survey may not be representative', 'Flaw 4: Gym memberships don\'t guarantee usage or health improvement', 'Suggest what evidence would be needed', 'Conclude: argument is poorly reasoned'],
+      prompt: 'The following appeared in an article: "For many years Grandview provided free public health clinics. Yet, last year, low-income residents weighed 12% more than a decade ago. The clinics are failing, and the city should redirect funding to subsidize gym memberships instead." Discuss how well-reasoned this argument is.',
+      rubric: ['Identifies logical flaws', 'Questions causal link', 'Considers confounding factors', 'Evaluates gym subsidies', 'Clear structure', 'Professional tone'],
+      sampleOutline: ['Correlation ≠ causation', 'Weight is one metric', 'Survey representativeness', 'Gym memberships ≠ usage', 'Needed evidence', 'Conclude poorly reasoned'],
       timeMinutes: 30,
     },
     {
       id: 'gmat-aw-2', section: 'Analytical Writing',
-      prompt: 'The following appeared in a business journal: "Companies that offer employees the option to work from home at least three days a week report 20% lower turnover rates. Therefore, all companies seeking to reduce employee turnover should adopt remote work policies immediately." Discuss how well-reasoned you find this argument.',
-      rubric: ['Identifies selection bias (companies offering WFH may differ systematically)', 'Questions generalizability across industries', 'Considers alternative explanations for lower turnover', 'Evaluates feasibility of "immediate" adoption', 'Well-structured analysis', 'Clear and concise writing'],
-      sampleOutline: ['Flaw 1: Self-selection—companies with WFH may already have better culture', 'Flaw 2: Not all industries can go remote (manufacturing, healthcare)', 'Flaw 3: 20% lower turnover may have other causes (pay, benefits)', 'Flaw 4: "Immediately" ignores implementation challenges', 'What would strengthen the argument', 'Conclusion'],
-      timeMinutes: 30,
-    },
-  ],
-  lsat: [
-    {
-      id: 'lsat-lr-1', section: 'Logical Reasoning – Written Analysis',
-      prompt: 'A university professor argues: "Students who take notes by hand perform better on conceptual questions than those who type notes on laptops. Therefore, universities should ban laptops from lecture halls." Identify and explain at least two flaws in this reasoning. Then, describe what additional evidence would be needed to evaluate the professor\'s conclusion.',
-      rubric: ['Identifies at least 2 distinct logical flaws', 'Explains why each flaw undermines the conclusion', 'Distinguishes correlation from causation', 'Considers alternative explanations', 'Identifies specific evidence that would help evaluate the argument', 'Clear, lawyer-like analytical prose'],
-      sampleOutline: ['Flaw 1: Assumes performance difference is entirely due to note-taking method', 'Flaw 2: Banning laptops removes benefits (accessibility, organization)', 'Flaw 3: May conflate causation—motivated students may choose handwriting', 'Evidence needed: controlled studies, accessibility data, student preferences', 'Alternative: teach effective note-taking instead of banning tools', 'Conclusion: argument is oversimplified'],
-      timeMinutes: 35,
-    },
-    {
-      id: 'lsat-lr-2', section: 'Logical Reasoning – Written Analysis',
-      prompt: 'A city council member states: "Since the installation of red-light cameras at 50 intersections, the number of accidents at those intersections has decreased by 30%. The city should install cameras at all remaining intersections to further reduce accidents." Analyze the reasoning in this argument. Identify assumptions and evaluate whether the evidence supports the conclusion.',
-      rubric: ['Identifies assumption that correlation implies causation', 'Questions whether results would generalize to all intersections', 'Considers regression to the mean', 'Notes potential negative effects (rear-end collisions)', 'Suggests what evidence would strengthen or weaken the argument', 'Logical flow and precise language'],
-      sampleOutline: ['Assumption: cameras caused the decrease (vs. other factors)', 'Assumption: all intersections have similar accident profiles', 'Consider: regression to the mean at high-accident sites', 'Consider: rear-end collision increases documented elsewhere', 'Evidence needed: comparison with control intersections', 'Conclusion: evidence is insufficient for blanket policy'],
-      timeMinutes: 35,
-    },
-  ],
-  mcat: [
-    {
-      id: 'mcat-cars-1', section: 'Critical Analysis & Reasoning – Written Response',
-      prompt: 'A public health researcher argues that mandatory vaccination programs are justified because herd immunity protects vulnerable populations who cannot be vaccinated. However, critics contend that such mandates infringe on individual bodily autonomy. Evaluate both perspectives. Under what conditions, if any, might mandatory vaccination be ethically justified? Support your reasoning with specific ethical principles.',
-      rubric: ['Presents both perspectives fairly', 'Applies specific ethical frameworks (utilitarianism, autonomy, justice)', 'Considers real-world nuances (medical exemptions, enforcement)', 'Develops a reasoned position with qualifications', 'Demonstrates understanding of public health vs. individual rights tension', 'Well-organized with clear thesis'],
-      sampleOutline: ['Present utilitarian case: greatest good, herd immunity data', 'Present autonomy case: informed consent, bodily sovereignty', 'Apply justice framework: who bears the risk?', 'Propose conditions: severity of disease, availability of alternatives', 'Consider: medical exemptions vs. philosophical exemptions', 'Conclude with qualified position'],
-      timeMinutes: 30,
-    },
-    {
-      id: 'mcat-cars-2', section: 'Critical Analysis & Reasoning – Written Response',
-      prompt: 'Recent studies suggest that social media use is correlated with increased rates of anxiety and depression among adolescents. Some policymakers have proposed age-based restrictions on social media access. Critically evaluate this proposal. What assumptions does it make, and what alternative approaches might address the underlying concerns?',
-      rubric: ['Identifies assumptions in the age-restriction proposal', 'Evaluates strength of correlation evidence', 'Considers confounding variables', 'Proposes evidence-based alternatives', 'Demonstrates nuanced thinking about causation', 'Clear argumentative structure'],
-      sampleOutline: ['Assumption: correlation = causation', 'Assumption: age restrictions are enforceable', 'Confounders: pre-existing mental health, socioeconomic factors', 'Alternative: digital literacy education', 'Alternative: platform design regulation', 'Conclude: restrictions alone are insufficient'],
+      prompt: '"Companies offering remote work 3+ days report 20% lower turnover. Therefore, all companies should adopt remote work immediately." Discuss how well-reasoned this argument is.',
+      rubric: ['Identifies selection bias', 'Questions generalizability', 'Considers alternative explanations', 'Evaluates feasibility', 'Well-structured', 'Clear writing'],
+      sampleOutline: ['Self-selection bias', 'Industry differences', 'Other turnover causes', 'Implementation challenges', 'Strengthening evidence', 'Conclusion'],
       timeMinutes: 30,
     },
   ],
 };
 
-type FRQState = 'select' | 'writing' | 'reviewing' | 'grading' | 'results';
+type FRQState = 'select' | 'passage' | 'writing' | 'grading' | 'results';
 
 const ProExamFRQ = () => {
   const { examId } = useParams<{ examId: string }>();
   const { user } = useAuth();
-  const prompts = FRQ_BANKS[examId || ''] || [];
+
+  // Passage-based data (MCAT/LSAT)
+  const [passages, setPassages] = useState<Passage[]>([]);
+  const [selectedPassage, setSelectedPassage] = useState<Passage | null>(null);
+  const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
+
+  // Legacy data (GRE/GMAT)
+  const legacyPrompts = LEGACY_FRQ_BANKS[examId || ''] || [];
+  const [selectedLegacy, setSelectedLegacy] = useState<LegacyPrompt | null>(null);
+
+  const isPassageBased = examId === 'mcat' || examId === 'lsat';
 
   const [state, setState] = useState<FRQState>('select');
-  const [selectedPrompt, setSelectedPrompt] = useState<typeof prompts[0] | null>(null);
   const [response, setResponse] = useState('');
   const [showOutline, setShowOutline] = useState(false);
-  const [gradeResult, setGradeResult] = useState<{ score: number; maxScore: number; feedback: string; strengths: string[]; improvements: string[] } | null>(null);
+  const [gradeResult, setGradeResult] = useState<any>(null);
   const [grading, setGrading] = useState(false);
   const [timeLeft, setTimeLeft] = useState(0);
   const [timerActive, setTimerActive] = useState(false);
@@ -102,8 +105,24 @@ const ProExamFRQ = () => {
   const examNames: Record<string, string> = { gre: 'GRE', gmat: 'GMAT', lsat: 'LSAT', mcat: 'MCAT' };
   const examName = examNames[examId || ''] || 'Exam';
 
-  // Timer effect
-  useState(() => {
+  // Load passage-based questions
+  useEffect(() => {
+    if (!isPassageBased) return;
+    const loadPassages = async () => {
+      try {
+        const mod = examId === 'mcat'
+          ? await import('@/data/mcat_frq_passages_original.json')
+          : await import('@/data/lsat_frq_passages_original.json');
+        setPassages(mod.default as Passage[]);
+      } catch (e) {
+        console.error('Failed to load passages:', e);
+      }
+    };
+    loadPassages();
+  }, [examId, isPassageBased]);
+
+  // Timer
+  useEffect(() => {
     if (!timerActive || timeLeft <= 0) return;
     const interval = setInterval(() => {
       setTimeLeft(prev => {
@@ -112,53 +131,84 @@ const ProExamFRQ = () => {
       });
     }, 1000);
     return () => clearInterval(interval);
-  });
+  }, [timerActive, timeLeft]);
 
-  const startWriting = (prompt: typeof prompts[0]) => {
-    setSelectedPrompt(prompt);
+  const currentQuestion = selectedPassage?.questions[currentQuestionIndex];
+
+  const startPassage = (passage: Passage) => {
+    setSelectedPassage(passage);
+    setCurrentQuestionIndex(0);
     setResponse('');
-    setShowOutline(false);
     setGradeResult(null);
+    setState('passage');
+  };
+
+  const startQuestion = (qIndex: number) => {
+    setCurrentQuestionIndex(qIndex);
+    setResponse('');
+    setGradeResult(null);
+    const q = selectedPassage!.questions[qIndex];
+    setTimeLeft(q.time_minutes * 60);
+    setTimerActive(true);
+    setState('writing');
+  };
+
+  const startLegacy = (prompt: LegacyPrompt) => {
+    setSelectedLegacy(prompt);
+    setResponse('');
+    setGradeResult(null);
+    setShowOutline(false);
     setTimeLeft(prompt.timeMinutes * 60);
     setTimerActive(true);
     setState('writing');
   };
 
   const submitForGrading = async () => {
-    if (!selectedPrompt || response.trim().length < 50) return;
+    if (response.trim().length < 30) return;
     setState('grading');
     setGrading(true);
     setTimerActive(false);
 
     try {
+      let rubricType: string;
+      let promptText: string;
+      let scoringGuidelines: any;
+
+      if (isPassageBased && selectedPassage && currentQuestion) {
+        rubricType = examId === 'mcat' ? 'mcat_frq' : 'lsat_frq';
+        promptText = `PASSAGE:\n${selectedPassage.passage}\n\nQUESTION:\n${currentQuestion.prompt}`;
+        scoringGuidelines = { rubric_points: currentQuestion.rubric_points, max_score: currentQuestion.max_score };
+      } else if (selectedLegacy) {
+        rubricType = 'pro_exam_frq';
+        promptText = selectedLegacy.prompt;
+        scoringGuidelines = { rubric_items: selectedLegacy.rubric };
+      } else {
+        throw new Error('No question selected');
+      }
+
       const { data, error } = await supabase.functions.invoke('ai-grade-essay', {
         body: {
           essay: response,
-          prompt: selectedPrompt.prompt,
-          rubric: `${examName} ${selectedPrompt.section}`,
-          rubric_items: selectedPrompt.rubric,
+          rubric_type: rubricType,
+          prompt_text: promptText,
+          scoring_guidelines: scoringGuidelines,
         },
       });
 
       if (error) throw error;
-
-      setGradeResult({
-        score: data?.score ?? 4,
-        maxScore: 6,
-        feedback: data?.feedback ?? 'Your response demonstrates understanding of the topic.',
-        strengths: data?.strengths ?? ['Clear position stated'],
-        improvements: data?.improvements ?? ['Add more specific examples'],
-      });
-    } catch {
-      // Fallback local grading
+      setGradeResult(data?.grading || data);
+    } catch (err) {
+      // Fallback grading
       const wordCount = response.split(/\s+/).length;
-      const score = Math.min(6, Math.max(1, Math.round(wordCount / 80)));
+      const maxScore = isPassageBased ? 4 : 6;
+      const score = Math.min(maxScore, Math.max(1, Math.round((wordCount / 100) * (maxScore / 3))));
       setGradeResult({
-        score,
-        maxScore: 6,
-        feedback: `Your ${wordCount}-word response has been evaluated. ${score >= 4 ? 'Strong analytical work!' : 'Consider developing your arguments further with specific examples.'}`,
-        strengths: wordCount > 200 ? ['Adequate length', 'Addressed the prompt'] : ['Addressed the prompt'],
-        improvements: wordCount < 300 ? ['Expand your analysis with more examples', 'Develop counterarguments'] : ['Refine your thesis for more precision'],
+        total_score: score,
+        score: score,
+        max_score: maxScore,
+        overall_feedback: `Your ${wordCount}-word response has been evaluated. ${score >= maxScore * 0.6 ? 'Solid analytical work!' : 'Consider developing your arguments further.'}`,
+        strengths: ['Addressed the prompt'],
+        improvements: ['Add more specific evidence and reasoning'],
       });
     }
 
@@ -172,7 +222,11 @@ const ProExamFRQ = () => {
     return `${m}:${s.toString().padStart(2, '0')}`;
   };
 
-  if (!prompts.length) {
+  const getScore = () => gradeResult?.total_score ?? gradeResult?.score ?? 0;
+  const getMaxScore = () => gradeResult?.max_score ?? (isPassageBased ? 4 : 6);
+
+  // Empty state
+  if (!isPassageBased && legacyPrompts.length === 0 && passages.length === 0) {
     return (
       <div className="min-h-screen flex items-center justify-center p-4 bg-gradient-to-br from-background via-primary/5 to-accent/10">
         <Card className="p-8 text-center space-y-4 max-w-md">
@@ -185,11 +239,20 @@ const ProExamFRQ = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-background via-primary/5 to-accent/10 pb-24">
+      {/* Header */}
       <div className="sticky top-0 z-10 bg-background/95 backdrop-blur border-b border-border px-4 py-3">
         <div className="max-w-3xl mx-auto flex items-center gap-3">
-          <Link to={state === 'select' ? `/pro-exam/${examId}` : '#'} onClick={state !== 'select' ? (e) => { e.preventDefault(); setState('select'); } : undefined}>
-            <Button variant="ghost" size="icon"><ArrowLeft className="w-5 h-5" /></Button>
-          </Link>
+          <Button
+            variant="ghost" size="icon"
+            onClick={() => {
+              if (state === 'select') window.history.back();
+              else if (state === 'passage') setState('select');
+              else if (state === 'results' && isPassageBased) setState('passage');
+              else setState('select');
+            }}
+          >
+            <ArrowLeft className="w-5 h-5" />
+          </Button>
           <h1 className="text-lg font-bold flex-1">{examName} Free Response</h1>
           {state === 'writing' && timeLeft > 0 && (
             <span className={`text-sm font-mono font-bold ${timeLeft < 300 ? 'text-destructive' : 'text-muted-foreground'}`}>
@@ -201,120 +264,264 @@ const ProExamFRQ = () => {
 
       <div className="max-w-3xl mx-auto p-4 space-y-4">
         <AnimatePresence mode="wait">
-          {/* Prompt Selection */}
+          {/* ═══ SELECT ═══ */}
           {state === 'select' && (
             <motion.div key="select" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} className="space-y-4">
-              <p className="text-muted-foreground text-sm">Choose an FRQ prompt to practice. You'll write a timed response and receive AI-powered feedback.</p>
-              {prompts.map((p) => (
-                <Card key={p.id} className="p-4 cursor-pointer hover:shadow-md hover:border-primary/40 transition-all group" onClick={() => startWriting(p)}>
+              {isPassageBased ? (
+                <>
+                  <div className="flex items-center gap-2 mb-2">
+                    <BookOpen className="w-5 h-5 text-primary" />
+                    <p className="text-sm text-muted-foreground">
+                      Choose a passage. Each contains {examId === 'mcat' ? 'science-based' : 'analytical reasoning'} questions graded by AI.
+                    </p>
+                  </div>
+                  {passages.map((p) => (
+                    <Card key={p.id} className="p-4 cursor-pointer hover:shadow-md hover:border-primary/40 transition-all group" onClick={() => startPassage(p)}>
+                      <div className="flex items-start gap-3">
+                        <div className="flex-1 space-y-2">
+                          <span className="text-xs font-medium text-primary bg-primary/10 px-2 py-0.5 rounded-full">{p.section}</span>
+                          <p className="text-sm text-foreground line-clamp-3">{p.passage.slice(0, 180)}…</p>
+                          <div className="flex items-center gap-3 text-xs text-muted-foreground">
+                            <span>📝 {p.questions.length} questions</span>
+                            <span>⏱ {p.questions.reduce((s, q) => s + q.time_minutes, 0)} min total</span>
+                          </div>
+                        </div>
+                        <ChevronRight className="w-5 h-5 text-muted-foreground group-hover:text-primary transition-colors mt-2" />
+                      </div>
+                    </Card>
+                  ))}
+                </>
+              ) : (
+                <>
+                  <p className="text-sm text-muted-foreground">Choose a prompt for timed analytical writing with AI feedback.</p>
+                  {legacyPrompts.map((p) => (
+                    <Card key={p.id} className="p-4 cursor-pointer hover:shadow-md hover:border-primary/40 transition-all group" onClick={() => startLegacy(p)}>
+                      <div className="flex items-start gap-3">
+                        <div className="flex-1 space-y-2">
+                          <span className="text-xs font-medium text-primary bg-primary/10 px-2 py-0.5 rounded-full">{p.section}</span>
+                          <p className="text-sm text-foreground line-clamp-3">{p.prompt.slice(0, 200)}…</p>
+                          <span className="text-xs text-muted-foreground">⏱ {p.timeMinutes} min</span>
+                        </div>
+                        <ChevronRight className="w-5 h-5 text-muted-foreground group-hover:text-primary mt-2" />
+                      </div>
+                    </Card>
+                  ))}
+                </>
+              )}
+            </motion.div>
+          )}
+
+          {/* ═══ PASSAGE VIEW (MCAT/LSAT) ═══ */}
+          {state === 'passage' && selectedPassage && (
+            <motion.div key="passage" initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0 }} className="space-y-4">
+              <Card className="p-4 bg-primary/5 border-primary/20">
+                <span className="text-xs font-medium text-primary">{selectedPassage.section}</span>
+                <p className="text-sm mt-2 text-foreground leading-relaxed whitespace-pre-line">{selectedPassage.passage}</p>
+              </Card>
+
+              <h3 className="text-sm font-semibold text-muted-foreground uppercase tracking-wide">Questions</h3>
+              {selectedPassage.questions.map((q, i) => (
+                <Card
+                  key={q.id}
+                  className="p-4 cursor-pointer hover:shadow-md hover:border-primary/40 transition-all group"
+                  onClick={() => startQuestion(i)}
+                >
                   <div className="flex items-start gap-3">
-                    <div className="flex-1 space-y-2">
-                      <span className="text-xs font-medium text-primary bg-primary/10 px-2 py-0.5 rounded-full">{p.section}</span>
-                      <p className="text-sm text-foreground line-clamp-3">{p.prompt.slice(0, 200)}…</p>
-                      <span className="text-xs text-muted-foreground">⏱ {p.timeMinutes} min</span>
+                    <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center text-sm font-bold text-primary shrink-0">
+                      {i + 1}
                     </div>
-                    <ChevronRight className="w-5 h-5 text-muted-foreground group-hover:text-primary transition-colors mt-2" />
+                    <div className="flex-1 space-y-1">
+                      <p className="text-sm text-foreground line-clamp-2">{q.prompt.slice(0, 150)}…</p>
+                      <div className="flex items-center gap-3 text-xs text-muted-foreground">
+                        <span>⏱ {q.time_minutes} min</span>
+                        <span>📊 {q.max_score} pts</span>
+                      </div>
+                    </div>
+                    <ChevronRight className="w-5 h-5 text-muted-foreground group-hover:text-primary mt-1" />
                   </div>
                 </Card>
               ))}
             </motion.div>
           )}
 
-          {/* Writing */}
-          {state === 'writing' && selectedPrompt && (
+          {/* ═══ WRITING ═══ */}
+          {state === 'writing' && (
             <motion.div key="writing" initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0 }} className="space-y-4">
-              <Card className="p-4 bg-primary/5 border-primary/20">
-                <span className="text-xs font-medium text-primary">{selectedPrompt.section}</span>
-                <p className="text-sm mt-2 text-foreground leading-relaxed">{selectedPrompt.prompt}</p>
-              </Card>
-
-              <div className="flex gap-2">
-                <Button variant="outline" size="sm" onClick={() => setShowOutline(!showOutline)}>
-                  {showOutline ? 'Hide' : 'Show'} Sample Outline
-                </Button>
-              </div>
-
-              {showOutline && (
-                <Card className="p-4 bg-muted/50 border-dashed">
-                  <p className="text-xs font-semibold text-muted-foreground mb-2">SAMPLE OUTLINE (for reference)</p>
-                  <ul className="space-y-1">
-                    {selectedPrompt.sampleOutline.map((item, i) => (
-                      <li key={i} className="text-xs text-muted-foreground flex gap-2">
-                        <span className="text-primary font-bold">{i + 1}.</span> {item}
-                      </li>
-                    ))}
-                  </ul>
-                </Card>
+              {/* Show passage context for passage-based */}
+              {isPassageBased && selectedPassage && (
+                <details className="group">
+                  <summary className="cursor-pointer text-xs font-medium text-primary flex items-center gap-1">
+                    <BookOpen className="w-3.5 h-3.5" /> View Passage
+                  </summary>
+                  <Card className="p-3 mt-2 bg-muted/50 border-dashed text-xs leading-relaxed max-h-48 overflow-y-auto">
+                    {selectedPassage.passage}
+                  </Card>
+                </details>
               )}
 
+              {/* Question prompt */}
+              <Card className="p-4 bg-primary/5 border-primary/20">
+                <span className="text-xs font-medium text-primary">
+                  {isPassageBased && currentQuestion
+                    ? `Question ${currentQuestionIndex + 1} of ${selectedPassage!.questions.length}`
+                    : selectedLegacy?.section}
+                </span>
+                <p className="text-sm mt-2 text-foreground leading-relaxed">
+                  {isPassageBased ? currentQuestion?.prompt : selectedLegacy?.prompt}
+                </p>
+              </Card>
+
+              {/* Legacy outline toggle */}
+              {!isPassageBased && selectedLegacy && (
+                <>
+                  <Button variant="outline" size="sm" onClick={() => setShowOutline(!showOutline)}>
+                    {showOutline ? 'Hide' : 'Show'} Sample Outline
+                  </Button>
+                  {showOutline && (
+                    <Card className="p-4 bg-muted/50 border-dashed">
+                      <p className="text-xs font-semibold text-muted-foreground mb-2">SAMPLE OUTLINE</p>
+                      <ul className="space-y-1">
+                        {selectedLegacy.sampleOutline.map((item, i) => (
+                          <li key={i} className="text-xs text-muted-foreground">• {item}</li>
+                        ))}
+                      </ul>
+                    </Card>
+                  )}
+                </>
+              )}
+
+              {/* Text area */}
               <textarea
-                className="w-full min-h-[300px] p-4 rounded-lg border border-border bg-card text-foreground text-sm leading-relaxed resize-y focus:outline-none focus:ring-2 focus:ring-primary/30"
-                placeholder="Begin your response here..."
+                className="w-full min-h-[280px] p-4 border border-border rounded-lg bg-background text-sm leading-relaxed resize-y focus:ring-2 focus:ring-primary/30 focus:border-primary"
+                placeholder={isPassageBased
+                  ? "Write your answer here. Be specific and reference evidence from the passage..."
+                  : "Write your essay response here..."
+                }
                 value={response}
                 onChange={(e) => setResponse(e.target.value)}
+                autoFocus
               />
 
               <div className="flex items-center justify-between">
-                <span className="text-xs text-muted-foreground">{response.split(/\s+/).filter(Boolean).length} words</span>
-                <Button onClick={submitForGrading} disabled={response.trim().length < 50} className="gap-2">
-                  <Send className="w-4 h-4" /> Submit for Grading
+                <span className="text-xs text-muted-foreground">
+                  {response.split(/\s+/).filter(Boolean).length} words
+                </span>
+                <Button
+                  onClick={submitForGrading}
+                  disabled={response.trim().length < 30}
+                  className="gap-2"
+                >
+                  <Send className="w-4 h-4" />
+                  Submit for AI Grading
                 </Button>
               </div>
             </motion.div>
           )}
 
-          {/* Grading */}
+          {/* ═══ GRADING ═══ */}
           {state === 'grading' && (
             <motion.div key="grading" initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="flex flex-col items-center justify-center py-20 gap-4">
-              <Loader2 className="w-10 h-10 animate-spin text-primary" />
-              <p className="text-muted-foreground font-medium">AI is grading your response…</p>
+              <Loader2 className="w-10 h-10 text-primary animate-spin" />
+              <p className="text-lg font-bold text-foreground">AI is grading your response...</p>
+              <p className="text-sm text-muted-foreground">Analyzing reasoning, evidence, and structure</p>
             </motion.div>
           )}
 
-          {/* Results */}
-          {state === 'results' && gradeResult && selectedPrompt && (
+          {/* ═══ RESULTS ═══ */}
+          {state === 'results' && gradeResult && (
             <motion.div key="results" initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="space-y-4">
-              <Card className="p-6 text-center space-y-3">
-                <div className="text-5xl font-bold text-primary">{gradeResult.score}<span className="text-lg text-muted-foreground">/{gradeResult.maxScore}</span></div>
-                <p className="text-sm text-muted-foreground">{selectedPrompt.section}</p>
-                <p className="text-sm text-foreground">{gradeResult.feedback}</p>
+              {/* Score */}
+              <Card className="p-6 text-center border-2 border-primary/30">
+                <div className="text-4xl font-bold text-primary mb-1">
+                  {getScore()}/{getMaxScore()}
+                </div>
+                <p className="text-sm text-muted-foreground">
+                  {getScore() >= getMaxScore() * 0.75 ? '🎉 Excellent!' : getScore() >= getMaxScore() * 0.5 ? '👍 Good work' : '📚 Keep practicing'}
+                </p>
               </Card>
 
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <Card className="p-4 space-y-2">
-                  <h3 className="text-sm font-bold text-emerald-600 dark:text-emerald-400 flex items-center gap-2"><CheckCircle2 className="w-4 h-4" /> Strengths</h3>
-                  <ul className="space-y-1">
-                    {gradeResult.strengths.map((s, i) => (
-                      <li key={i} className="text-xs text-muted-foreground">✓ {s}</li>
-                    ))}
-                  </ul>
+              {/* Point-by-point breakdown (passage-based) */}
+              {gradeResult.points_earned && (
+                <Card className="p-4 space-y-3">
+                  <h3 className="text-sm font-bold">Rubric Breakdown</h3>
+                  {gradeResult.points_earned.map((pt: any, i: number) => (
+                    <div key={i} className={`p-3 rounded-lg border ${pt.earned ? 'bg-emerald-500/10 border-emerald-500/30' : 'bg-destructive/10 border-destructive/30'}`}>
+                      <div className="flex items-start gap-2">
+                        <CheckCircle2 className={`w-4 h-4 mt-0.5 shrink-0 ${pt.earned ? 'text-emerald-500' : 'text-destructive'}`} />
+                        <div>
+                          <p className="text-xs font-medium">{pt.criterion}</p>
+                          <p className="text-xs text-muted-foreground mt-1">{pt.feedback}</p>
+                        </div>
+                      </div>
+                    </div>
+                  ))}
                 </Card>
-                <Card className="p-4 space-y-2">
-                  <h3 className="text-sm font-bold text-amber-600 dark:text-amber-400">Areas to Improve</h3>
-                  <ul className="space-y-1">
-                    {gradeResult.improvements.map((s, i) => (
-                      <li key={i} className="text-xs text-muted-foreground">→ {s}</li>
-                    ))}
-                  </ul>
+              )}
+
+              {/* Dimension scores (legacy essay) */}
+              {gradeResult.dimension_scores && (
+                <Card className="p-4 space-y-3">
+                  <h3 className="text-sm font-bold">Score Breakdown</h3>
+                  {Object.entries(gradeResult.dimension_scores).map(([dim, val]: [string, any]) => (
+                    <div key={dim} className="flex items-center justify-between">
+                      <span className="text-xs capitalize text-muted-foreground">{dim}</span>
+                      <span className="text-sm font-bold text-primary">{val.score}</span>
+                    </div>
+                  ))}
                 </Card>
+              )}
+
+              {/* Feedback */}
+              <Card className="p-4">
+                <h3 className="text-sm font-bold mb-2">Feedback</h3>
+                <p className="text-sm text-muted-foreground leading-relaxed">
+                  {gradeResult.overall_feedback || gradeResult.feedback}
+                </p>
+              </Card>
+
+              {/* Strengths & Improvements */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                {gradeResult.strengths?.length > 0 && (
+                  <Card className="p-4">
+                    <h3 className="text-sm font-bold text-emerald-600 mb-2">✅ Strengths</h3>
+                    <ul className="space-y-1">
+                      {gradeResult.strengths.map((s: string, i: number) => (
+                        <li key={i} className="text-xs text-muted-foreground">• {s}</li>
+                      ))}
+                    </ul>
+                  </Card>
+                )}
+                {gradeResult.improvements?.length > 0 && (
+                  <Card className="p-4">
+                    <h3 className="text-sm font-bold text-amber-600 mb-2">🔧 To Improve</h3>
+                    <ul className="space-y-1">
+                      {gradeResult.improvements.map((s: string, i: number) => (
+                        <li key={i} className="text-xs text-muted-foreground">• {s}</li>
+                      ))}
+                    </ul>
+                  </Card>
+                )}
               </div>
 
-              <Card className="p-4 space-y-2">
-                <h3 className="text-sm font-bold text-foreground">Rubric Checklist</h3>
-                {selectedPrompt.rubric.map((r, i) => (
-                  <div key={i} className="flex items-center gap-2 text-xs text-muted-foreground">
-                    <CheckCircle2 className="w-3 h-3 text-primary" /> {r}
-                  </div>
-                ))}
-              </Card>
+              {/* Key concept (MCAT/LSAT) */}
+              {(gradeResult.key_concept_review || gradeResult.reasoning_quality) && (
+                <Card className="p-4 bg-primary/5 border-primary/20">
+                  <h3 className="text-sm font-bold mb-1">💡 {isPassageBased && examId === 'mcat' ? 'Key Concept' : 'Reasoning Assessment'}</h3>
+                  <p className="text-xs text-muted-foreground">{gradeResult.key_concept_review || gradeResult.reasoning_quality}</p>
+                </Card>
+              )}
 
+              {/* Actions */}
               <div className="flex gap-3">
-                <Button variant="outline" className="flex-1 gap-2" onClick={() => startWriting(selectedPrompt)}>
-                  <RotateCcw className="w-4 h-4" /> Try Again
-                </Button>
-                <Button className="flex-1" onClick={() => setState('select')}>
-                  Next Prompt
-                </Button>
+                {isPassageBased && selectedPassage && currentQuestionIndex < selectedPassage.questions.length - 1 ? (
+                  <Button className="flex-1 gap-2" onClick={() => startQuestion(currentQuestionIndex + 1)}>
+                    Next Question <ChevronRight className="w-4 h-4" />
+                  </Button>
+                ) : (
+                  <Button className="flex-1 gap-2" variant="outline" onClick={() => setState('select')}>
+                    <RotateCcw className="w-4 h-4" /> Try Another
+                  </Button>
+                )}
               </div>
             </motion.div>
           )}

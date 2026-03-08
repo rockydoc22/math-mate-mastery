@@ -1,0 +1,107 @@
+[
+  {
+    "id": "lsat-passage-1",
+    "section": "Logical Reasoning Analysis",
+    "passage": "The city of Millbrook recently implemented a ban on single-use plastic bags in all retail establishments. The mayor cited a 60% reduction in plastic bag litter in the neighboring city of Greendale after a similar ban was enacted two years ago. However, the Millbrook Chamber of Commerce opposes the ban, arguing that it will increase costs for small businesses by $2,000-$5,000 annually for paper and reusable bag alternatives. A local environmental group counters that the long-term environmental savings, including reduced water treatment costs and decreased marine pollution, outweigh short-term business expenses.\n\nA recent survey of Millbrook residents found that 72% support the ban, while 68% of those same supporters stated they would be unwilling to pay more than $0.10 per shopping trip for alternative bags. Currently, no subsidy program exists to offset small business costs. The mayor has proposed a six-month transition period before full enforcement begins.",
+    "questions": [
+      {
+        "id": "lsat-p1-q1",
+        "prompt": "Identify and explain at least three logical assumptions the mayor makes in using Greendale's results to justify the Millbrook ban. For each assumption, explain how its failure would weaken the argument.",
+        "rubric_points": ["Identifies assumption of comparable demographics/geography between cities", "Identifies assumption that litter reduction was caused by the ban (not confounding factors)", "Identifies assumption that consumer and business impacts will be similar", "Explains clearly how each assumption's failure would undermine the conclusion"],
+        "max_score": 4,
+        "time_minutes": 10
+      },
+      {
+        "id": "lsat-p1-q2",
+        "prompt": "The survey reveals a tension between stated support (72%) and willingness to bear costs ($0.10 limit). Analyze this discrepancy. What principle of behavioral economics or social psychology does this illustrate, and what implications does it have for the ban's likely success?",
+        "rubric_points": ["Identifies the attitude-behavior gap or hypothetical bias", "Explains that stated preferences often differ from revealed preferences", "Discusses implications: support may erode when costs are felt directly", "Suggests how this could lead to political backlash or non-compliance"],
+        "max_score": 4,
+        "time_minutes": 10
+      }
+    ]
+  },
+  {
+    "id": "lsat-passage-2",
+    "section": "Analytical Reasoning",
+    "passage": "A law school admissions committee must select exactly 5 students from a pool of 8 applicants: A, B, C, D, E, F, G, and H. The selection must satisfy the following conditions:\n\n1. If A is selected, then B must also be selected.\n2. If C is selected, then D cannot be selected.\n3. Either E or F must be selected, but not both.\n4. G can only be selected if H is also selected.\n5. At least one of A or C must be selected.\n6. B and F cannot both be selected.",
+    "questions": [
+      {
+        "id": "lsat-p2-q1",
+        "prompt": "Determine all possible groups of 5 students that satisfy every condition. Show your reasoning step by step, explaining how you eliminate invalid combinations. Present your final answer as a list of valid groups.",
+        "rubric_points": ["Systematically considers cases based on condition 5 (A selected, C selected, both)", "Correctly applies conditional logic chains (e.g., A→B, B→¬F, ¬F→E)", "Correctly identifies all valid combinations without omissions", "Shows clear logical reasoning with each constraint applied"],
+        "max_score": 4,
+        "time_minutes": 15
+      },
+      {
+        "id": "lsat-p2-q2",
+        "prompt": "Suppose a seventh condition is added: 'D must be selected.' Explain whether any valid group of 5 can still be formed, and if so, what it must be. If not, explain which conditions create an irreconcilable conflict.",
+        "rubric_points": ["Notes that D selected → C not selected (condition 2)", "Applies condition 5: C not selected → A must be selected", "Traces the chain: A → B (condition 1), B → ¬F (condition 6), ¬F → E (condition 3)", "Correctly determines the forced group and whether it reaches exactly 5"],
+        "max_score": 4,
+        "time_minutes": 10
+      }
+    ]
+  },
+  {
+    "id": "lsat-passage-3",
+    "section": "Reading Comprehension Analysis",
+    "passage": "Legal scholars have long debated whether constitutional interpretation should be guided primarily by originalism—the view that the Constitution should be interpreted according to its original public meaning at the time of ratification—or by living constitutionalism, which holds that constitutional meaning should evolve to reflect changing societal values and circumstances.\n\nProponents of originalism argue that it constrains judicial discretion, preserving the rule of law by anchoring decisions in historical text rather than judges' personal preferences. Justice Antonin Scalia famously argued that the Constitution is 'dead, dead, dead,' meaning its meaning was fixed at ratification. Critics counter that originalism is itself subjective: historians frequently disagree about original meanings, and the framers themselves held divergent views on many provisions.\n\nLiving constitutionalists contend that a rigid originalist approach would produce absurd results—for example, the Eighth Amendment's prohibition on 'cruel and unusual punishment' would be frozen to 18th-century standards, potentially permitting practices now universally condemned. However, originalists respond that the amendment process exists precisely to update constitutional standards when society's values change, making judicial reinterpretation unnecessary and democratically illegitimate.\n\nA third position, 'original methods originalism,' proposed by legal theorists McGinnis and Rappaport, argues that the Constitution should be interpreted using the interpretive methods that were accepted at the time of ratification, which themselves included room for evolution on certain matters. This hybrid approach attempts to honor both textual fidelity and practical adaptability.",
+    "questions": [
+      {
+        "id": "lsat-p3-q1",
+        "prompt": "Evaluate the claim that originalism 'constrains judicial discretion.' In your analysis, consider the critics' objection about historical disagreement and explain whether this objection successfully undermines the constraining function originalists claim. Support your reasoning with specific examples or analogies.",
+        "rubric_points": ["Explains the originalist claim: fixed meaning limits judicial creativity", "Presents the counter-argument: historical ambiguity reintroduces discretion", "Evaluates whether disagreement among historians is fatal to the constraint thesis or merely limits it", "Uses specific examples or reasoning to support a clear analytical conclusion"],
+        "max_score": 4,
+        "time_minutes": 12
+      },
+      {
+        "id": "lsat-p3-q2",
+        "prompt": "Assess whether 'original methods originalism' successfully resolves the tension between originalism and living constitutionalism. Identify at least one strength and one potential weakness of this hybrid approach that the passage does not explicitly address.",
+        "rubric_points": ["Accurately describes the hybrid approach from the passage", "Identifies a genuine strength (e.g., respects text while allowing evolution)", "Identifies a weakness not stated in the passage (e.g., who determines which methods were 'accepted'?)", "Demonstrates analytical depth beyond mere summary"],
+        "max_score": 4,
+        "time_minutes": 12
+      }
+    ]
+  },
+  {
+    "id": "lsat-passage-4",
+    "section": "Logical Reasoning Analysis",
+    "passage": "A hospital administrator argues: 'Over the past three years, Hospital A has maintained a patient mortality rate 15% lower than Hospital B. Both hospitals serve the same metropolitan area and have similar staffing levels. Therefore, Hospital A provides superior medical care, and the health department should redirect funding from Hospital B to Hospital A to maximize patient outcomes.'\n\nAdditional context: Hospital A is a specialty cardiac center that primarily treats scheduled surgical patients who undergo pre-operative screening. Hospital B is a Level 1 trauma center that receives all emergency cases, including the most critically injured patients, from the entire region. Hospital B also operates the area's only burn unit and neonatal intensive care unit.",
+    "questions": [
+      {
+        "id": "lsat-p4-q1",
+        "prompt": "Identify the primary flaw in the administrator's reasoning and explain how the additional context exposes this flaw. Name the specific logical fallacy or reasoning error involved.",
+        "rubric_points": ["Identifies the comparison as fundamentally flawed due to different patient populations", "Names the specific error: failure to account for confounding variables / selection bias / comparing non-equivalent groups", "Explains that Hospital B's higher-acuity cases naturally produce higher mortality regardless of care quality", "Notes that mortality rate alone is an inadequate measure when patient severity differs"],
+        "max_score": 4,
+        "time_minutes": 8
+      },
+      {
+        "id": "lsat-p4-q2",
+        "prompt": "Propose a more appropriate methodology for comparing the quality of care between these two hospitals. Describe at least two specific metrics or approaches that would control for the differences in patient populations, and explain why each is superior to raw mortality rate comparison.",
+        "rubric_points": ["Proposes risk-adjusted mortality rates (controlling for patient severity/acuity)", "Suggests case-mix-specific comparisons (comparing only similar procedure types)", "Explains why each method controls for patient population differences", "Demonstrates understanding that valid comparison requires equivalent baselines"],
+        "max_score": 4,
+        "time_minutes": 10
+      }
+    ]
+  },
+  {
+    "id": "lsat-passage-5",
+    "section": "Analytical Reasoning",
+    "passage": "A judicial panel must schedule oral arguments for six cases—Employment, Finance, Healthcare, Immigration, Patent, and Taxation—over three days (Monday, Tuesday, Wednesday), with exactly two cases heard each day. The following constraints apply:\n\n1. The Healthcare case cannot be heard on the same day as the Immigration case.\n2. The Finance case must be heard before the Patent case (on an earlier day).\n3. The Employment case must be heard on Monday.\n4. The Taxation case cannot be heard on Wednesday.\n5. If the Healthcare case is heard on Tuesday, then the Finance case must be heard on Monday.",
+    "questions": [
+      {
+        "id": "lsat-p5-q1",
+        "prompt": "Determine all possible valid schedules. For each valid schedule, list which two cases are heard on each day. Show your reasoning process, explaining how you apply each constraint to narrow the possibilities.",
+        "rubric_points": ["Correctly fixes Employment on Monday (constraint 3)", "Systematically explores remaining placements with constraints", "Correctly applies Finance < Patent ordering and Taxation ≠ Wednesday", "Identifies all valid schedules without errors"],
+        "max_score": 4,
+        "time_minutes": 15
+      },
+      {
+        "id": "lsat-p5-q2",
+        "prompt": "If a sixth constraint is added—'The Patent case must be heard on Wednesday'—determine whether any valid schedule still exists. Explain your reasoning fully, showing how the constraints interact.",
+        "rubric_points": ["Recognizes Patent on Wednesday → Finance must be Monday or Tuesday (constraint 2)", "Correctly applies all constraints to the reduced possibility space", "Shows clear chain of logical deductions", "Arrives at correct conclusion about whether valid schedules exist"],
+        "max_score": 4,
+        "time_minutes": 10
+      }
+    ]
+  }
+]

@@ -28,8 +28,8 @@ If you believe any content on this platform infringes on intellectual property r
 
 const IP_CHECKBOX = "I have read and understand this notice. I acknowledge that this platform uses only original content and is not affiliated with or endorsed by official testing organizations. I agree to use this platform responsibly.";
 
-// MCAT and LSAT are gated - hidden from main list until approved
-const GATED_EXAMS = ['mcat', 'lsat'];
+// MCAT and LSAT are now FRQ-only (no multiple choice to avoid IP issues)
+const FRQ_ONLY_EXAMS = ['mcat', 'lsat'];
 
 const ProExams = () => {
   const navigate = useNavigate();
@@ -61,7 +61,7 @@ const ProExams = () => {
           checkboxLabel={IP_CHECKBOX}
         >
           {categories.map(([catKey, catMeta]) => {
-            const exams = PRO_EXAMS.filter(e => e.category === catKey && !GATED_EXAMS.includes(e.id));
+            const exams = PRO_EXAMS.filter(e => e.category === catKey && !FRQ_ONLY_EXAMS.includes(e.id));
             if (exams.length === 0) return null;
             return (
               <div key={catKey} className="mb-6">
@@ -110,29 +110,38 @@ const ProExams = () => {
             );
           })}
 
-          {/* MCAT/LSAT Coming Soon */}
+          {/* MCAT/LSAT — FRQ-Only Section */}
           <div className="mb-6">
             <div className="flex items-center gap-2 mb-3">
-              <span className="text-xl">🔒</span>
-              <h2 className="text-lg font-bold">Coming Soon</h2>
+              <span className="text-xl">✍️</span>
+              <h2 className="text-lg font-bold">MCAT & LSAT — Free Response Only</h2>
             </div>
+            <p className="text-xs text-muted-foreground mb-3">
+              Original passage-based reasoning questions with AI grading. No multiple choice — all free response to avoid any IP concerns.
+            </p>
             <div className="grid gap-3">
-              {GATED_EXAMS.map(id => {
+              {FRQ_ONLY_EXAMS.map(id => {
                 const exam = PRO_EXAMS.find(e => e.id === id);
                 if (!exam) return null;
                 return (
-                  <Card key={id} className="p-4 opacity-60">
+                  <Card
+                    key={id}
+                    className="p-4 cursor-pointer hover:shadow-md transition-all hover:border-primary/40 group border-2 border-primary/20"
+                    onClick={() => navigate(`/pro-exam-frq/${id}`)}
+                  >
                     <div className="flex items-center gap-4">
-                      <div className="w-12 h-12 rounded-xl bg-muted flex items-center justify-center text-2xl shrink-0">
+                      <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center text-2xl shrink-0">
                         {exam.icon}
                       </div>
                       <div className="flex-1 min-w-0">
                         <div className="flex items-center gap-2">
                           <h3 className="font-bold text-foreground">{exam.shortName}</h3>
-                          <span className="text-[10px] px-1.5 py-0.5 rounded-full bg-muted text-muted-foreground font-medium">Coming Soon</span>
+                          <span className="text-[10px] px-1.5 py-0.5 rounded-full bg-primary/10 text-primary font-medium">FRQ Only</span>
                         </div>
-                        <p className="text-xs text-muted-foreground">{exam.description} — Original FRQ content in development</p>
+                        <p className="text-xs text-muted-foreground">{exam.description}</p>
+                        <p className="text-[10px] text-primary mt-1">Original passages • AI-graded • No IP risk</p>
                       </div>
+                      <ChevronRight className="w-5 h-5 text-muted-foreground group-hover:text-primary transition-colors shrink-0" />
                     </div>
                   </Card>
                 );
@@ -140,11 +149,11 @@ const ProExams = () => {
             </div>
           </div>
 
-          {/* FRQ Practice Section - exclude gated exams */}
+          {/* GRE/GMAT FRQ Practice Section */}
           <div className="mb-6">
             <div className="flex items-center gap-2 mb-3">
-              <span className="text-xl">✍️</span>
-              <h2 className="text-lg font-bold">Free Response Practice</h2>
+              <span className="text-xl">📝</span>
+              <h2 className="text-lg font-bold">Analytical Writing Practice</h2>
             </div>
             <div className="grid grid-cols-2 gap-3">
               {['gre', 'gmat'].map(id => {

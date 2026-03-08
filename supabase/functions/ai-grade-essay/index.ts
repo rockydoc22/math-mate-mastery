@@ -145,6 +145,91 @@ Return JSON:
   "next_steps": ["actionable tip 1", "actionable tip 2"]
 }`,
   },
+  // MCAT passage-based FRQ
+  mcat_frq: {
+    maxScore: 4,
+    systemPrompt: `You are an expert MCAT tutor grading a student's free-response answer to a passage-based reasoning question. This is NOT an official MCAT question — it is original content for practice.
+
+GRADING CRITERIA (each worth 1 point, max 4):
+The rubric points for each question are provided in the prompt. Award 1 point for each rubric point the student adequately addresses.
+
+EVALUATION APPROACH:
+- Assess scientific accuracy and depth of understanding
+- Check that the student uses evidence from the passage when relevant
+- Evaluate logical reasoning and the ability to connect concepts
+- Look for precise use of scientific terminology
+- Give partial credit where appropriate — a mostly correct explanation with minor errors can still earn the point
+
+Return JSON:
+{
+  "points_earned": [
+    { "criterion": "description of rubric point", "earned": true|false, "feedback": "specific feedback" }
+  ],
+  "total_score": 0-4,
+  "max_score": 4,
+  "overall_feedback": "2-3 sentences of encouragement and top priority improvement",
+  "strengths": ["what the student did well"],
+  "improvements": ["specific areas to improve"],
+  "key_concept_review": "Brief explanation of the core concept being tested"
+}`,
+  },
+  // LSAT passage-based FRQ
+  lsat_frq: {
+    maxScore: 4,
+    systemPrompt: `You are an expert LSAT tutor grading a student's free-response answer to a passage-based analytical reasoning question. This is NOT an official LSAT question — it is original content for practice.
+
+GRADING CRITERIA (each worth 1 point, max 4):
+The rubric points for each question are provided in the prompt. Award 1 point for each rubric point the student adequately addresses.
+
+EVALUATION APPROACH:
+- Assess logical rigor and precision of reasoning
+- Check that the student identifies specific logical structures (assumptions, flaws, inferences)
+- Evaluate whether conclusions follow from premises
+- Look for clear, structured analysis (lawyer-like reasoning)
+- For logic games: verify the student's deductions are valid and complete
+- Give partial credit where appropriate
+
+Return JSON:
+{
+  "points_earned": [
+    { "criterion": "description of rubric point", "earned": true|false, "feedback": "specific feedback" }
+  ],
+  "total_score": 0-4,
+  "max_score": 4,
+  "overall_feedback": "2-3 sentences of encouragement and top priority improvement",
+  "strengths": ["what the student did well"],
+  "improvements": ["specific areas to improve"],
+  "reasoning_quality": "Brief assessment of the student's logical reasoning approach"
+}`,
+  },
+  // Generic pro-exam FRQ (for GRE, GMAT analytical writing)
+  pro_exam_frq: {
+    maxScore: 6,
+    systemPrompt: `You are an expert grader for graduate-level analytical writing. Grade the student's essay response.
+
+Evaluate on these dimensions:
+1. Thesis clarity and defensibility (0-1)
+2. Quality of reasoning and evidence (0-2)
+3. Organization and coherence (0-1)
+4. Language precision and style (0-1)
+5. Analytical depth — counterarguments, nuance (0-1)
+
+Return JSON:
+{
+  "score": 0-6,
+  "max_score": 6,
+  "feedback": "Overall assessment paragraph",
+  "strengths": ["strength 1", "strength 2"],
+  "improvements": ["improvement 1", "improvement 2"],
+  "dimension_scores": {
+    "thesis": { "score": 0|1, "note": "..." },
+    "reasoning": { "score": 0|1|2, "note": "..." },
+    "organization": { "score": 0|1, "note": "..." },
+    "language": { "score": 0|1, "note": "..." },
+    "depth": { "score": 0|1, "note": "..." }
+  }
+}`,
+  },
 };
 
 serve(async (req) => {
