@@ -55,7 +55,7 @@ export const PRO_EXAMS: ProExamConfig[] = [
     sections: ['Chemical and Physical Foundations', 'Biological and Biochemical Foundations', 'Psychological, Social, and Biological Foundations', 'Critical Analysis and Reasoning'],
     description: 'Medical College Admission Test',
     timePerQuestion: 95,
-    jsonFiles: ['mcat_question_bank_300_original.json', 'mcat_question_bank_expansion_300.json', 'mcat_question_bank_expansion_300_b2.json', 'mcat_question_bank_expansion_300_b3.json'],
+    jsonFiles: ['mcat_question_bank_300_original.json', 'mcat_question_bank_expansion_300.json', 'mcat_question_bank_expansion_300_b2.json', 'mcat_question_bank_expansion_300_b3.json', 'mcat_question_bank_expansion_300_b4.json'],
   },
   {
     id: 'dat', name: 'DAT', shortName: 'DAT', icon: '🦷',
