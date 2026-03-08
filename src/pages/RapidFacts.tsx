@@ -58,6 +58,7 @@ const RapidFacts = () => {
   const [missedQuestions, setMissedQuestions] = useState<MissedQuestion[]>([]);
   const [allAnswered, setAllAnswered] = useState<AnsweredQuestion[]>([]);
   const [expandedMissed, setExpandedMissed] = useState<Set<string>>(new Set());
+  const [isFlagModalOpen, setIsFlagModalOpen] = useState(false);
   const [showMissed, setShowMissed] = useState(false);
   const [highScore, setHighScore] = useState(() => {
     const stored = localStorage.getItem(HIGH_SCORE_KEY);
