@@ -10,7 +10,7 @@ import {
   Clock, Sparkles, Download, Lightbulb, Play, Skull, Settings, Gamepad2,
   Smartphone, Map, Star, Eye, UserPlus, ClipboardList, Building2, Heart,
   Bell, MessageCircle, FolderOpen, Coins, Timer, Layers, UsersRound,
-  Calendar, CircleDot, BookMarked, FileBarChart, TrendingUp, CalendarDays, FileQuestion, Bolt, HeartPulse, GitCompareArrows, NotebookPen, Microscope, TextQuote, Wand2
+  Calendar, CircleDot, BookMarked, FileBarChart, TrendingUp, CalendarDays, FileQuestion, Bolt, HeartPulse, GitCompareArrows, NotebookPen, Microscope, TextQuote, Wand2, BookOpenCheck, Route
 } from "lucide-react";
 import { useNavigate, Link } from "react-router-dom";
 import { useAuth } from "@/hooks/useAuth";
@@ -663,6 +663,8 @@ const Home = () => {
               { id: 'iq-test', icon: Brain, label: 'IQ Test', color: 'bg-amber-100 dark:bg-amber-900/30', iconColor: 'text-amber-600 dark:text-amber-400', to: '/iq-test', exams: ['sat', 'psat', 'act'], category: 'assessments', mobileVisible: false },
               { id: 'health-screening', icon: Heart, label: 'Health Checks', color: 'bg-red-100 dark:bg-red-900/30', iconColor: 'text-red-600 dark:text-red-400', to: '/health-screening', exams: ['sat', 'psat', 'act'], category: 'assessments', mobileVisible: false },
               { id: 'logic-games', icon: Brain, label: 'Logic Games', color: 'bg-violet-100 dark:bg-violet-900/30', iconColor: 'text-violet-600 dark:text-violet-400', to: '/logic-games', exams: ['sat', 'psat', 'act'], category: 'assessments', mobileVisible: false },
+              { id: 'homework-solver', icon: BookOpenCheck, label: 'HW Solver', color: 'bg-emerald-100 dark:bg-emerald-900/30', iconColor: 'text-emerald-600 dark:text-emerald-400', to: '/homework-solver', exams: ['sat', 'psat', 'act'], category: 'assessments', mobileVisible: true },
+              { id: 'thinkpath', icon: Route, label: 'ThinkPath', color: 'bg-fuchsia-100 dark:bg-fuchsia-900/30', iconColor: 'text-fuchsia-600 dark:text-fuchsia-400', to: '/thinkpath', exams: ['sat', 'psat', 'act'], category: 'assessments', mobileVisible: true },
 
               // ADVANCED — planning, tracking, admin
               { id: 'skill-map', icon: Map, label: 'Skill Map', color: 'bg-cyan-100 dark:bg-cyan-900/30', iconColor: 'text-cyan-600 dark:text-cyan-400', to: '/skill-map', exams: ['sat', 'psat', 'act'], category: 'advanced', mobileVisible: false },
