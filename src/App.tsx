@@ -68,6 +68,8 @@ const PersonalityAssessment = lazy(() => import("./pages/PersonalityAssessment")
 const CognitiveSkills = lazy(() => import("./pages/CognitiveSkills"));
 const StrategyPractice = lazy(() => import("./pages/StrategyPractice"));
 const Notifications = lazy(() => import("./pages/Notifications"));
+const ConversationPractice = lazy(() => import("./pages/ConversationPractice"));
+const Portfolio = lazy(() => import("./pages/Portfolio"));
 
 const queryClient = new QueryClient();
 
