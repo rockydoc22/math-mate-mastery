@@ -6,6 +6,7 @@ import { Progress } from "@/components/ui/progress";
 import { Badge } from "@/components/ui/badge";
 import { ArrowLeft, BookOpen, RotateCcw, Check, X, ChevronRight, Flame, Brain, Volume2, Eye, EyeOff, Sparkles } from "lucide-react";
 import { SAT_VOCAB_WORDS, VocabWord, generateVocabQuiz, getNextReviewTime } from "@/data/satVocab";
+import { ALL_PRO_VOCAB, ProVocabWord } from "@/data/proVocab";
 import { useExamType } from "@/hooks/useExamType";
 
 const MASTERY_KEY = "vocab_mastery";
