@@ -133,7 +133,7 @@ const App = () => (
               <Route path="/quiz" element={<Quiz />} />
               <Route path="/math" element={<MathQuiz />} />
               <Route path="/english" element={<EnglishQuiz />} />
-              <Route path="/admin" element={<Admin />} />
+              <Route path="/admin" element={<ProtectedRoute><Admin /></ProtectedRoute>} />
               <Route path="/auth" element={<Auth />} />
               <Route path="/leaderboard" element={<Leaderboard />} />
               <Route path="/study" element={<StudyMode />} />
