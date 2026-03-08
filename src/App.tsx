@@ -180,7 +180,7 @@ const App = () => (
               <Route path="/next-steps" element={<AdaptiveLearning />} />
               <Route path="/join-class" element={<JoinClass />} />
               <Route path="/my-assignments" element={<MyAssignments />} />
-              <Route path="/school-admin" element={<SchoolAdmin />} />
+              <Route path="/school-admin" element={<ProtectedRoute><SchoolAdmin /></ProtectedRoute>} />
               <Route path="/personality" element={<PersonalityAssessment />} />
               <Route path="/cognitive" element={<CognitiveSkills />} />
               <Route path="/iq-test" element={<IQTest />} />
