@@ -163,6 +163,22 @@ const PersonalityAssessment = () => {
                 <ChevronRight className="w-5 h-5 text-muted-foreground" />
               </div>
             </Card>
+
+            <Card
+              className="p-6 cursor-pointer hover:border-primary/50 transition-colors"
+              onClick={() => loadItems("lp")}
+            >
+              <div className="flex items-center gap-4">
+                <div className="text-4xl">📚</div>
+                <div className="flex-1">
+                  <h3 className="font-bold">Learning Preferences</h3>
+                  <p className="text-sm text-muted-foreground">
+                    32 questions • Discover how you learn best
+                  </p>
+                </div>
+                <ChevronRight className="w-5 h-5 text-muted-foreground" />
+              </div>
+            </Card>
           </div>
         )}
 
