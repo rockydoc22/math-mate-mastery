@@ -149,6 +149,36 @@ const ProExams = () => {
             </div>
           </div>
 
+          {/* Anatomy Atlas - MCAT Specific */}
+          <div className="mb-6">
+            <div className="flex items-center gap-2 mb-3">
+              <span className="text-xl">🫀</span>
+              <h2 className="text-lg font-bold">Anatomy Atlas</h2>
+            </div>
+            <p className="text-xs text-muted-foreground mb-3">
+              Interactive body identification — like the game Operation! Identify muscles, bones, and structures.
+            </p>
+            <Card
+              className="p-4 cursor-pointer hover:shadow-md transition-all hover:border-primary/40 group border-2 border-primary/20"
+              onClick={() => navigate('/anatomy-atlas')}
+            >
+              <div className="flex items-center gap-4">
+                <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center text-2xl shrink-0">
+                  🦴
+                </div>
+                <div className="flex-1 min-w-0">
+                  <div className="flex items-center gap-2">
+                    <h3 className="font-bold text-foreground">Musculoskeletal Atlas</h3>
+                    <span className="text-[10px] px-1.5 py-0.5 rounded-full bg-primary/10 text-primary font-medium">Interactive</span>
+                  </div>
+                  <p className="text-xs text-muted-foreground">Identify muscles & bones on interactive SVG diagrams</p>
+                  <p className="text-[10px] text-primary mt-1">Desktop: free-text • Mobile: tap labels • Fuzzy spelling</p>
+                </div>
+                <ChevronRight className="w-5 h-5 text-muted-foreground group-hover:text-primary transition-colors shrink-0" />
+              </div>
+            </Card>
+          </div>
+
           {/* GRE/GMAT FRQ Practice Section */}
           <div className="mb-6">
             <div className="flex items-center gap-2 mb-3">
