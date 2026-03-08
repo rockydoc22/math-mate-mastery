@@ -12,6 +12,7 @@ import {
 import { useAuth } from "@/hooks/useAuth";
 import { supabase } from "@/integrations/supabase/client";
 import { toast } from "@/hooks/use-toast";
+import { AssignmentCompletionView } from "@/components/teacher/AssignmentCompletionView";
 
 interface ClassRoom {
   id: string;
@@ -401,6 +402,13 @@ const TeacherDashboard = () => {
                   </div>
                   <ChevronRight className="w-5 h-5 text-muted-foreground" />
                 </div>
+                <AssignmentCompletionView
+                  assignmentId={a.id}
+                  assignmentTitle={a.title}
+                  questionCount={a.question_count}
+                  dueDate={a.due_date}
+                  classroomId={a.classroom_id}
+                />
               </Card>
             ))}
           </TabsContent>
