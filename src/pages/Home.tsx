@@ -639,7 +639,7 @@ const Home = () => {
           </Link>
         </div>
 
-        {/* Activities Grid - Filtered by exam type */}
+        {/* Activities Grid - Categorized & Mobile-Gated */}
         <div className="mb-4">
           <div className="flex items-center justify-between mb-3">
             <h3 className="text-sm font-semibold text-muted-foreground uppercase tracking-wide">Activities</h3>
@@ -649,93 +649,165 @@ const Home = () => {
             </Button>
           </div>
           {(() => {
-            // Define all tiles with exam scope
-            // 'all' = shows on SAT/PSAT/ACT, 'sat-psat-act' specific combos
+            type TileCategory = 'core' | 'study-tools' | 'social' | 'assessments' | 'advanced' | 'admin';
             const allTiles: Array<{
               id: string; icon: any; label: string; color: string; iconColor: string; to: string;
-              exams: ('sat' | 'psat' | 'act')[];
+              exams: ('sat' | 'psat' | 'act')[]; category: TileCategory; mobileVisible: boolean;
             }> = [
-              { id: 'arcade', icon: Gamepad2, label: 'Arcade', color: 'bg-indigo-100 dark:bg-indigo-900/30', iconColor: 'text-indigo-600 dark:text-indigo-400', to: '/arcade', exams: ['sat', 'psat', 'act'] },
-              { id: 'full-test', icon: FileText, label: 'Full Test', color: 'bg-emerald-100 dark:bg-emerald-900/30', iconColor: 'text-emerald-600 dark:text-emerald-400', to: '/practice-test?mode=full', exams: ['sat', 'psat', 'act'] },
-              { id: 'study-progress', icon: Trophy, label: 'Study Progress', color: 'bg-amber-100 dark:bg-amber-900/30', iconColor: 'text-amber-600 dark:text-amber-400', to: '/mastery', exams: ['sat', 'psat', 'act'] },
-              { id: 'by-topic', icon: BookOpen, label: 'By Topic', color: 'bg-blue-100 dark:bg-blue-900/30', iconColor: 'text-blue-600 dark:text-blue-400', to: '/problems-by-topic', exams: ['sat', 'psat', 'act'] },
-              { id: 'weaknesses', icon: Target, label: 'Weaknesses', color: 'bg-red-100 dark:bg-red-900/30', iconColor: 'text-red-600 dark:text-red-400', to: '/study?mode=weakness', exams: ['sat', 'psat', 'act'] },
-              { id: 'review-missed', icon: RotateCcw, label: 'Review Missed', color: 'bg-orange-100 dark:bg-orange-900/30', iconColor: 'text-orange-600 dark:text-orange-400', to: '/review', exams: ['sat', 'psat', 'act'] },
-              { id: 'insights', icon: Brain, label: 'Insights', color: 'bg-purple-100 dark:bg-purple-900/30', iconColor: 'text-purple-600 dark:text-purple-400', to: '/insights', exams: ['sat', 'psat', 'act'] },
-              { id: 'key-rules', icon: Lightbulb, label: `Key ${examConfig.shortName} Rules`, color: 'bg-yellow-100 dark:bg-yellow-900/30', iconColor: 'text-yellow-600 dark:text-yellow-400', to: '/key-principles', exams: ['sat', 'psat', 'act'] },
-              { id: 'boss-battle', icon: Skull, label: 'Boss Battle', color: 'bg-rose-100 dark:bg-rose-900/30', iconColor: 'text-rose-600 dark:text-rose-400', to: '/boss-battle', exams: ['sat', 'psat', 'act'] },
-              { id: 'elite-practice', icon: Crown, label: 'Elite Practice', color: 'bg-gradient-to-br from-amber-100 to-orange-100 dark:from-amber-900/30 dark:to-orange-900/30', iconColor: 'text-amber-500', to: '/elite-practice', exams: ['sat', 'psat', 'act'] },
-              { id: 'sat-vocab', icon: BookOpen, label: `${examConfig.shortName} Vocabulary`, color: 'bg-emerald-100 dark:bg-emerald-900/30', iconColor: 'text-emerald-600 dark:text-emerald-400', to: '/vocab', exams: ['sat', 'psat', 'act'] },
-              { id: 'install', icon: Smartphone, label: 'Install App', color: 'bg-teal-100 dark:bg-teal-900/30', iconColor: 'text-teal-600 dark:text-teal-400', to: '/install', exams: ['sat', 'psat', 'act'] },
-              { id: 'endurance', icon: Flame, label: 'Endurance Run', color: 'bg-orange-100 dark:bg-orange-900/30', iconColor: 'text-orange-600 dark:text-orange-400', to: '/endurance', exams: ['sat', 'psat', 'act'] },
-              { id: 'coach', icon: Sparkles, label: 'AI Coach', color: 'bg-violet-100 dark:bg-violet-900/30', iconColor: 'text-violet-600 dark:text-violet-400', to: '/coach', exams: ['sat', 'psat', 'act'] },
-              { id: 'skill-map', icon: Map, label: 'Skill Map', color: 'bg-cyan-100 dark:bg-cyan-900/30', iconColor: 'text-cyan-600 dark:text-cyan-400', to: '/skill-map', exams: ['sat', 'psat', 'act'] },
-              { id: 'daily-quests', icon: Star, label: 'Daily Quests', color: 'bg-amber-100 dark:bg-amber-900/30', iconColor: 'text-amber-600 dark:text-amber-400', to: '/daily-quests', exams: ['sat', 'psat', 'act'] },
-              { id: 'pro-exams', icon: GraduationCap, label: 'Pro Exams', color: 'bg-slate-100 dark:bg-slate-900/30', iconColor: 'text-slate-600 dark:text-slate-400', to: '/pro-exams', exams: ['sat', 'psat', 'act'] },
-              { id: 'teacher', icon: Users, label: 'Teacher Hub', color: 'bg-sky-100 dark:bg-sky-900/30', iconColor: 'text-sky-600 dark:text-sky-400', to: '/teacher', exams: ['sat', 'psat', 'act'] },
-              { id: 'parent', icon: Eye, label: 'Parent View', color: 'bg-pink-100 dark:bg-pink-900/30', iconColor: 'text-pink-600 dark:text-pink-400', to: '/parent', exams: ['sat', 'psat', 'act'] },
-              { id: 'next-steps', icon: Brain, label: 'What\'s Next', color: 'bg-fuchsia-100 dark:bg-fuchsia-900/30', iconColor: 'text-fuchsia-600 dark:text-fuchsia-400', to: '/next-steps', exams: ['sat', 'psat', 'act'] },
-              { id: 'join-class', icon: UserPlus, label: 'Join Class', color: 'bg-teal-100 dark:bg-teal-900/30', iconColor: 'text-teal-600 dark:text-teal-400', to: '/join-class', exams: ['sat', 'psat', 'act'] },
-              { id: 'my-assignments', icon: ClipboardList, label: 'Assignments', color: 'bg-indigo-100 dark:bg-indigo-900/30', iconColor: 'text-indigo-600 dark:text-indigo-400', to: '/my-assignments', exams: ['sat', 'psat', 'act'] },
-              { id: 'school-admin', icon: Building2, label: 'School Admin', color: 'bg-rose-100 dark:bg-rose-900/30', iconColor: 'text-rose-600 dark:text-rose-400', to: '/school-admin', exams: ['sat', 'psat', 'act'] },
-              { id: 'personality', icon: Heart, label: 'Personality', color: 'bg-violet-100 dark:bg-violet-900/30', iconColor: 'text-violet-600 dark:text-violet-400', to: '/personality', exams: ['sat', 'psat', 'act'] },
-              { id: 'cognitive', icon: Brain, label: 'Brain Games', color: 'bg-cyan-100 dark:bg-cyan-900/30', iconColor: 'text-cyan-600 dark:text-cyan-400', to: '/cognitive', exams: ['sat', 'psat', 'act'] },
-              { id: 'iq-test', icon: Brain, label: 'IQ Test', color: 'bg-amber-100 dark:bg-amber-900/30', iconColor: 'text-amber-600 dark:text-amber-400', to: '/iq-test', exams: ['sat', 'psat', 'act'] },
-              { id: 'health-screening', icon: Heart, label: 'Health Checks', color: 'bg-red-100 dark:bg-red-900/30', iconColor: 'text-red-600 dark:text-red-400', to: '/health-screening', exams: ['sat', 'psat', 'act'] },
-              { id: 'strategy', icon: Target, label: 'Strategy', color: 'bg-orange-100 dark:bg-orange-900/30', iconColor: 'text-orange-600 dark:text-orange-400', to: '/strategy', exams: ['sat', 'psat', 'act'] },
-              { id: 'notifications', icon: Bell, label: 'Inbox', color: 'bg-red-100 dark:bg-red-900/30', iconColor: 'text-red-600 dark:text-red-400', to: '/notifications', exams: ['sat', 'psat', 'act'] },
-              { id: 'conversations', icon: MessageCircle, label: 'Conversations', color: 'bg-lime-100 dark:bg-lime-900/30', iconColor: 'text-lime-600 dark:text-lime-400', to: '/conversations', exams: ['sat', 'psat', 'act'] },
-              { id: 'portfolio', icon: FolderOpen, label: 'Portfolio', color: 'bg-emerald-100 dark:bg-emerald-900/30', iconColor: 'text-emerald-600 dark:text-emerald-400', to: '/portfolio', exams: ['sat', 'psat', 'act'] },
-              { id: 'shop', icon: Coins, label: 'Coin Shop', color: 'bg-yellow-100 dark:bg-yellow-900/30', iconColor: 'text-yellow-600 dark:text-yellow-400', to: '/shop', exams: ['sat', 'psat', 'act'] },
-              { id: 'timer', icon: Timer, label: 'Study Timer', color: 'bg-rose-100 dark:bg-rose-900/30', iconColor: 'text-rose-600 dark:text-rose-400', to: '/timer', exams: ['sat', 'psat', 'act'] },
-              { id: 'flashcards', icon: Layers, label: 'Flashcards', color: 'bg-sky-100 dark:bg-sky-900/30', iconColor: 'text-sky-600 dark:text-sky-400', to: '/flashcards', exams: ['sat', 'psat', 'act'] },
-              { id: 'study-groups', icon: UsersRound, label: 'Study Groups', color: 'bg-teal-100 dark:bg-teal-900/30', iconColor: 'text-teal-600 dark:text-teal-400', to: '/study-groups', exams: ['sat', 'psat', 'act'] },
-              { id: 'streak-calendar', icon: Calendar, label: 'Calendar', color: 'bg-green-100 dark:bg-green-900/30', iconColor: 'text-green-600 dark:text-green-400', to: '/streak-calendar', exams: ['sat', 'psat', 'act'] },
-              { id: 'weekly-goals', icon: CircleDot, label: 'Weekly Goals', color: 'bg-violet-100 dark:bg-violet-900/30', iconColor: 'text-violet-600 dark:text-violet-400', to: '/weekly-goals', exams: ['sat', 'psat', 'act'] },
-              { id: 'achievements', icon: Award, label: 'Achievements', color: 'bg-amber-100 dark:bg-amber-900/30', iconColor: 'text-amber-600 dark:text-amber-400', to: '/achievements', exams: ['sat', 'psat', 'act'] },
-              { id: 'mistake-journal', icon: BookMarked, label: 'Mistake Journal', color: 'bg-red-100 dark:bg-red-900/30', iconColor: 'text-red-600 dark:text-red-400', to: '/mistake-journal', exams: ['sat', 'psat', 'act'] },
-              { id: 'progress-report', icon: FileBarChart, label: 'Report Card', color: 'bg-indigo-100 dark:bg-indigo-900/30', iconColor: 'text-indigo-600 dark:text-indigo-400', to: '/progress-report', exams: ['sat', 'psat', 'act'] },
-              { id: 'quick-review', icon: RefreshCw, label: 'Quick Review', color: 'bg-lime-100 dark:bg-lime-900/30', iconColor: 'text-lime-600 dark:text-lime-400', to: '/quick-review', exams: ['sat', 'psat', 'act'] },
-              { id: 'score-predictor', icon: TrendingUp, label: 'Score Predictor', color: 'bg-violet-100 dark:bg-violet-900/30', iconColor: 'text-violet-600 dark:text-violet-400', to: '/score-predictor', exams: ['sat', 'psat', 'act'] },
-              { id: 'study-planner', icon: CalendarDays, label: 'Study Planner', color: 'bg-sky-100 dark:bg-sky-900/30', iconColor: 'text-sky-600 dark:text-sky-400', to: '/study-planner', exams: ['sat', 'psat', 'act'] },
-              { id: 'cheat-sheet', icon: FileQuestion, label: 'Cheat Sheet', color: 'bg-fuchsia-100 dark:bg-fuchsia-900/30', iconColor: 'text-fuchsia-600 dark:text-fuchsia-400', to: '/cheat-sheet', exams: ['sat', 'psat', 'act'] },
-              { id: 'speed-drill', icon: Bolt, label: 'Speed Drill', color: 'bg-amber-100 dark:bg-amber-900/30', iconColor: 'text-amber-600 dark:text-amber-400', to: '/speed-drill', exams: ['sat', 'psat', 'act'] },
-              { id: 'test-day-tips', icon: HeartPulse, label: 'Test Day Tips', color: 'bg-rose-100 dark:bg-rose-900/30', iconColor: 'text-rose-600 dark:text-rose-400', to: '/test-day-tips', exams: ['sat', 'psat', 'act'] },
-              { id: 'friend-compare', icon: GitCompareArrows, label: 'Compare', color: 'bg-indigo-100 dark:bg-indigo-900/30', iconColor: 'text-indigo-600 dark:text-indigo-400', to: '/friend-compare', exams: ['sat', 'psat', 'act'] },
-              { id: 'concepts', icon: Microscope, label: 'Concepts', color: 'bg-purple-100 dark:bg-purple-900/30', iconColor: 'text-purple-600 dark:text-purple-400', to: '/concepts', exams: ['sat', 'psat', 'act'] },
-              { id: 'practice-log', icon: NotebookPen, label: 'Practice Log', color: 'bg-teal-100 dark:bg-teal-900/30', iconColor: 'text-teal-600 dark:text-teal-400', to: '/practice-log', exams: ['sat', 'psat', 'act'] },
-              { id: 'word-of-day', icon: TextQuote, label: 'Word of Day', color: 'bg-pink-100 dark:bg-pink-900/30', iconColor: 'text-pink-600 dark:text-pink-400', to: '/word-of-day', exams: ['sat', 'psat', 'act'] },
-              { id: 'math-tricks', icon: Wand2, label: 'Math Tricks', color: 'bg-cyan-100 dark:bg-cyan-900/30', iconColor: 'text-cyan-600 dark:text-cyan-400', to: '/math-tricks', exams: ['sat', 'psat', 'act'] },
-              { id: 'logic-games', icon: Brain, label: 'Logic Games', color: 'bg-violet-100 dark:bg-violet-900/30', iconColor: 'text-violet-600 dark:text-violet-400', to: '/logic-games', exams: ['sat', 'psat', 'act'] },
-              { id: 'exam-simulator', icon: Clock, label: 'Exam Simulator', color: 'bg-rose-100 dark:bg-rose-900/30', iconColor: 'text-rose-600 dark:text-rose-400', to: '/exam-simulator', exams: ['sat', 'psat', 'act'] },
-              { id: 'ai-tutor', icon: MessageCircle, label: 'AI Tutor', color: 'bg-indigo-100 dark:bg-indigo-900/30', iconColor: 'text-indigo-600 dark:text-indigo-400', to: '/ai-tutor', exams: ['sat', 'psat', 'act'] },
+              // CORE — always visible on mobile
+              { id: 'by-topic', icon: BookOpen, label: 'By Topic', color: 'bg-blue-100 dark:bg-blue-900/30', iconColor: 'text-blue-600 dark:text-blue-400', to: '/problems-by-topic', exams: ['sat', 'psat', 'act'], category: 'core', mobileVisible: true },
+              { id: 'review-missed', icon: RotateCcw, label: 'Review Missed', color: 'bg-orange-100 dark:bg-orange-900/30', iconColor: 'text-orange-600 dark:text-orange-400', to: '/review', exams: ['sat', 'psat', 'act'], category: 'core', mobileVisible: true },
+              { id: 'weaknesses', icon: Target, label: 'Weaknesses', color: 'bg-red-100 dark:bg-red-900/30', iconColor: 'text-red-600 dark:text-red-400', to: '/study?mode=weakness', exams: ['sat', 'psat', 'act'], category: 'core', mobileVisible: true },
+              { id: 'full-test', icon: FileText, label: 'Full Test', color: 'bg-emerald-100 dark:bg-emerald-900/30', iconColor: 'text-emerald-600 dark:text-emerald-400', to: '/practice-test?mode=full', exams: ['sat', 'psat', 'act'], category: 'core', mobileVisible: true },
+              { id: 'study-progress', icon: Trophy, label: 'Study Progress', color: 'bg-amber-100 dark:bg-amber-900/30', iconColor: 'text-amber-600 dark:text-amber-400', to: '/mastery', exams: ['sat', 'psat', 'act'], category: 'core', mobileVisible: true },
+              { id: 'insights', icon: Brain, label: 'Insights', color: 'bg-purple-100 dark:bg-purple-900/30', iconColor: 'text-purple-600 dark:text-purple-400', to: '/insights', exams: ['sat', 'psat', 'act'], category: 'core', mobileVisible: true },
+              { id: 'daily-quests', icon: Star, label: 'Daily Quests', color: 'bg-amber-100 dark:bg-amber-900/30', iconColor: 'text-amber-600 dark:text-amber-400', to: '/daily-quests', exams: ['sat', 'psat', 'act'], category: 'core', mobileVisible: true },
+              { id: 'quick-review', icon: RefreshCw, label: 'Quick Review', color: 'bg-lime-100 dark:bg-lime-900/30', iconColor: 'text-lime-600 dark:text-lime-400', to: '/quick-review', exams: ['sat', 'psat', 'act'], category: 'core', mobileVisible: true },
+
+              // STUDY TOOLS
+              { id: 'sat-vocab', icon: BookOpen, label: `${examConfig.shortName} Vocabulary`, color: 'bg-emerald-100 dark:bg-emerald-900/30', iconColor: 'text-emerald-600 dark:text-emerald-400', to: '/vocab', exams: ['sat', 'psat', 'act'], category: 'study-tools', mobileVisible: true },
+              { id: 'flashcards', icon: Layers, label: 'Flashcards', color: 'bg-sky-100 dark:bg-sky-900/30', iconColor: 'text-sky-600 dark:text-sky-400', to: '/flashcards', exams: ['sat', 'psat', 'act'], category: 'study-tools', mobileVisible: true },
+              { id: 'key-rules', icon: Lightbulb, label: `Key ${examConfig.shortName} Rules`, color: 'bg-yellow-100 dark:bg-yellow-900/30', iconColor: 'text-yellow-600 dark:text-yellow-400', to: '/key-principles', exams: ['sat', 'psat', 'act'], category: 'study-tools', mobileVisible: true },
+              { id: 'cheat-sheet', icon: FileQuestion, label: 'Cheat Sheet', color: 'bg-fuchsia-100 dark:bg-fuchsia-900/30', iconColor: 'text-fuchsia-600 dark:text-fuchsia-400', to: '/cheat-sheet', exams: ['sat', 'psat', 'act'], category: 'study-tools', mobileVisible: true },
+              { id: 'word-of-day', icon: TextQuote, label: 'Word of Day', color: 'bg-pink-100 dark:bg-pink-900/30', iconColor: 'text-pink-600 dark:text-pink-400', to: '/word-of-day', exams: ['sat', 'psat', 'act'], category: 'study-tools', mobileVisible: true },
+              { id: 'math-tricks', icon: Wand2, label: 'Math Tricks', color: 'bg-cyan-100 dark:bg-cyan-900/30', iconColor: 'text-cyan-600 dark:text-cyan-400', to: '/math-tricks', exams: ['sat', 'psat', 'act'], category: 'study-tools', mobileVisible: false },
+              { id: 'concepts', icon: Microscope, label: 'Concepts', color: 'bg-purple-100 dark:bg-purple-900/30', iconColor: 'text-purple-600 dark:text-purple-400', to: '/concepts', exams: ['sat', 'psat', 'act'], category: 'study-tools', mobileVisible: false },
+              { id: 'test-day-tips', icon: HeartPulse, label: 'Test Day Tips', color: 'bg-rose-100 dark:bg-rose-900/30', iconColor: 'text-rose-600 dark:text-rose-400', to: '/test-day-tips', exams: ['sat', 'psat', 'act'], category: 'study-tools', mobileVisible: false },
+
+              // SOCIAL & COMPETITIVE
+              { id: 'arcade', icon: Gamepad2, label: 'Arcade', color: 'bg-indigo-100 dark:bg-indigo-900/30', iconColor: 'text-indigo-600 dark:text-indigo-400', to: '/arcade', exams: ['sat', 'psat', 'act'], category: 'social', mobileVisible: true },
+              { id: 'boss-battle', icon: Skull, label: 'Boss Battle', color: 'bg-rose-100 dark:bg-rose-900/30', iconColor: 'text-rose-600 dark:text-rose-400', to: '/boss-battle', exams: ['sat', 'psat', 'act'], category: 'social', mobileVisible: true },
+              { id: 'endurance', icon: Flame, label: 'Endurance Run', color: 'bg-orange-100 dark:bg-orange-900/30', iconColor: 'text-orange-600 dark:text-orange-400', to: '/endurance', exams: ['sat', 'psat', 'act'], category: 'social', mobileVisible: false },
+              { id: 'speed-drill', icon: Bolt, label: 'Speed Drill', color: 'bg-amber-100 dark:bg-amber-900/30', iconColor: 'text-amber-600 dark:text-amber-400', to: '/speed-drill', exams: ['sat', 'psat', 'act'], category: 'social', mobileVisible: false },
+              { id: 'elite-practice', icon: Crown, label: 'Elite Practice', color: 'bg-gradient-to-br from-amber-100 to-orange-100 dark:from-amber-900/30 dark:to-orange-900/30', iconColor: 'text-amber-500', to: '/elite-practice', exams: ['sat', 'psat', 'act'], category: 'social', mobileVisible: false },
+              { id: 'friend-compare', icon: GitCompareArrows, label: 'Compare', color: 'bg-indigo-100 dark:bg-indigo-900/30', iconColor: 'text-indigo-600 dark:text-indigo-400', to: '/friend-compare', exams: ['sat', 'psat', 'act'], category: 'social', mobileVisible: false },
+              { id: 'study-groups', icon: UsersRound, label: 'Study Groups', color: 'bg-teal-100 dark:bg-teal-900/30', iconColor: 'text-teal-600 dark:text-teal-400', to: '/study-groups', exams: ['sat', 'psat', 'act'], category: 'social', mobileVisible: false },
+              { id: 'conversations', icon: MessageCircle, label: 'Conversations', color: 'bg-lime-100 dark:bg-lime-900/30', iconColor: 'text-lime-600 dark:text-lime-400', to: '/conversations', exams: ['sat', 'psat', 'act'], category: 'social', mobileVisible: false },
+
+              // ASSESSMENTS & AI
+              { id: 'coach', icon: Sparkles, label: 'AI Coach', color: 'bg-violet-100 dark:bg-violet-900/30', iconColor: 'text-violet-600 dark:text-violet-400', to: '/coach', exams: ['sat', 'psat', 'act'], category: 'assessments', mobileVisible: true },
+              { id: 'ai-tutor', icon: MessageCircle, label: 'AI Tutor', color: 'bg-indigo-100 dark:bg-indigo-900/30', iconColor: 'text-indigo-600 dark:text-indigo-400', to: '/ai-tutor', exams: ['sat', 'psat', 'act'], category: 'assessments', mobileVisible: true },
+              { id: 'score-predictor', icon: TrendingUp, label: 'Score Predictor', color: 'bg-violet-100 dark:bg-violet-900/30', iconColor: 'text-violet-600 dark:text-violet-400', to: '/score-predictor', exams: ['sat', 'psat', 'act'], category: 'assessments', mobileVisible: false },
+              { id: 'personality', icon: Heart, label: 'Personality', color: 'bg-violet-100 dark:bg-violet-900/30', iconColor: 'text-violet-600 dark:text-violet-400', to: '/personality', exams: ['sat', 'psat', 'act'], category: 'assessments', mobileVisible: false },
+              { id: 'cognitive', icon: Brain, label: 'Brain Games', color: 'bg-cyan-100 dark:bg-cyan-900/30', iconColor: 'text-cyan-600 dark:text-cyan-400', to: '/cognitive', exams: ['sat', 'psat', 'act'], category: 'assessments', mobileVisible: false },
+              { id: 'iq-test', icon: Brain, label: 'IQ Test', color: 'bg-amber-100 dark:bg-amber-900/30', iconColor: 'text-amber-600 dark:text-amber-400', to: '/iq-test', exams: ['sat', 'psat', 'act'], category: 'assessments', mobileVisible: false },
+              { id: 'health-screening', icon: Heart, label: 'Health Checks', color: 'bg-red-100 dark:bg-red-900/30', iconColor: 'text-red-600 dark:text-red-400', to: '/health-screening', exams: ['sat', 'psat', 'act'], category: 'assessments', mobileVisible: false },
+              { id: 'logic-games', icon: Brain, label: 'Logic Games', color: 'bg-violet-100 dark:bg-violet-900/30', iconColor: 'text-violet-600 dark:text-violet-400', to: '/logic-games', exams: ['sat', 'psat', 'act'], category: 'assessments', mobileVisible: false },
+
+              // ADVANCED — planning, tracking, admin
+              { id: 'skill-map', icon: Map, label: 'Skill Map', color: 'bg-cyan-100 dark:bg-cyan-900/30', iconColor: 'text-cyan-600 dark:text-cyan-400', to: '/skill-map', exams: ['sat', 'psat', 'act'], category: 'advanced', mobileVisible: false },
+              { id: 'study-planner', icon: CalendarDays, label: 'Study Planner', color: 'bg-sky-100 dark:bg-sky-900/30', iconColor: 'text-sky-600 dark:text-sky-400', to: '/study-planner', exams: ['sat', 'psat', 'act'], category: 'advanced', mobileVisible: false },
+              { id: 'streak-calendar', icon: Calendar, label: 'Calendar', color: 'bg-green-100 dark:bg-green-900/30', iconColor: 'text-green-600 dark:text-green-400', to: '/streak-calendar', exams: ['sat', 'psat', 'act'], category: 'advanced', mobileVisible: false },
+              { id: 'weekly-goals', icon: CircleDot, label: 'Weekly Goals', color: 'bg-violet-100 dark:bg-violet-900/30', iconColor: 'text-violet-600 dark:text-violet-400', to: '/weekly-goals', exams: ['sat', 'psat', 'act'], category: 'advanced', mobileVisible: false },
+              { id: 'achievements', icon: Award, label: 'Achievements', color: 'bg-amber-100 dark:bg-amber-900/30', iconColor: 'text-amber-600 dark:text-amber-400', to: '/achievements', exams: ['sat', 'psat', 'act'], category: 'advanced', mobileVisible: false },
+              { id: 'mistake-journal', icon: BookMarked, label: 'Mistake Journal', color: 'bg-red-100 dark:bg-red-900/30', iconColor: 'text-red-600 dark:text-red-400', to: '/mistake-journal', exams: ['sat', 'psat', 'act'], category: 'advanced', mobileVisible: false },
+              { id: 'progress-report', icon: FileBarChart, label: 'Report Card', color: 'bg-indigo-100 dark:bg-indigo-900/30', iconColor: 'text-indigo-600 dark:text-indigo-400', to: '/progress-report', exams: ['sat', 'psat', 'act'], category: 'advanced', mobileVisible: false },
+              { id: 'practice-log', icon: NotebookPen, label: 'Practice Log', color: 'bg-teal-100 dark:bg-teal-900/30', iconColor: 'text-teal-600 dark:text-teal-400', to: '/practice-log', exams: ['sat', 'psat', 'act'], category: 'advanced', mobileVisible: false },
+              { id: 'portfolio', icon: FolderOpen, label: 'Portfolio', color: 'bg-emerald-100 dark:bg-emerald-900/30', iconColor: 'text-emerald-600 dark:text-emerald-400', to: '/portfolio', exams: ['sat', 'psat', 'act'], category: 'advanced', mobileVisible: false },
+              { id: 'strategy', icon: Target, label: 'Strategy', color: 'bg-orange-100 dark:bg-orange-900/30', iconColor: 'text-orange-600 dark:text-orange-400', to: '/strategy', exams: ['sat', 'psat', 'act'], category: 'advanced', mobileVisible: false },
+              { id: 'exam-simulator', icon: Clock, label: 'Exam Simulator', color: 'bg-rose-100 dark:bg-rose-900/30', iconColor: 'text-rose-600 dark:text-rose-400', to: '/exam-simulator', exams: ['sat', 'psat', 'act'], category: 'advanced', mobileVisible: false },
+              { id: 'next-steps', icon: Brain, label: 'What\'s Next', color: 'bg-fuchsia-100 dark:bg-fuchsia-900/30', iconColor: 'text-fuchsia-600 dark:text-fuchsia-400', to: '/next-steps', exams: ['sat', 'psat', 'act'], category: 'advanced', mobileVisible: false },
+
+              // ADMIN — role-specific
+              { id: 'pro-exams', icon: GraduationCap, label: 'Pro Exams', color: 'bg-slate-100 dark:bg-slate-900/30', iconColor: 'text-slate-600 dark:text-slate-400', to: '/pro-exams', exams: ['sat', 'psat', 'act'], category: 'admin', mobileVisible: false },
+              { id: 'teacher', icon: Users, label: 'Teacher Hub', color: 'bg-sky-100 dark:bg-sky-900/30', iconColor: 'text-sky-600 dark:text-sky-400', to: '/teacher', exams: ['sat', 'psat', 'act'], category: 'admin', mobileVisible: false },
+              { id: 'parent', icon: Eye, label: 'Parent View', color: 'bg-pink-100 dark:bg-pink-900/30', iconColor: 'text-pink-600 dark:text-pink-400', to: '/parent', exams: ['sat', 'psat', 'act'], category: 'admin', mobileVisible: false },
+              { id: 'join-class', icon: UserPlus, label: 'Join Class', color: 'bg-teal-100 dark:bg-teal-900/30', iconColor: 'text-teal-600 dark:text-teal-400', to: '/join-class', exams: ['sat', 'psat', 'act'], category: 'admin', mobileVisible: false },
+              { id: 'my-assignments', icon: ClipboardList, label: 'Assignments', color: 'bg-indigo-100 dark:bg-indigo-900/30', iconColor: 'text-indigo-600 dark:text-indigo-400', to: '/my-assignments', exams: ['sat', 'psat', 'act'], category: 'admin', mobileVisible: false },
+              { id: 'school-admin', icon: Building2, label: 'School Admin', color: 'bg-rose-100 dark:bg-rose-900/30', iconColor: 'text-rose-600 dark:text-rose-400', to: '/school-admin', exams: ['sat', 'psat', 'act'], category: 'admin', mobileVisible: false },
+              { id: 'shop', icon: Coins, label: 'Coin Shop', color: 'bg-yellow-100 dark:bg-yellow-900/30', iconColor: 'text-yellow-600 dark:text-yellow-400', to: '/shop', exams: ['sat', 'psat', 'act'], category: 'admin', mobileVisible: false },
+              { id: 'timer', icon: Timer, label: 'Study Timer', color: 'bg-rose-100 dark:bg-rose-900/30', iconColor: 'text-rose-600 dark:text-rose-400', to: '/timer', exams: ['sat', 'psat', 'act'], category: 'admin', mobileVisible: false },
+              { id: 'notifications', icon: Bell, label: 'Inbox', color: 'bg-red-100 dark:bg-red-900/30', iconColor: 'text-red-600 dark:text-red-400', to: '/notifications', exams: ['sat', 'psat', 'act'], category: 'admin', mobileVisible: false },
+              { id: 'install', icon: Smartphone, label: 'Install App', color: 'bg-teal-100 dark:bg-teal-900/30', iconColor: 'text-teal-600 dark:text-teal-400', to: '/install', exams: ['sat', 'psat', 'act'], category: 'admin', mobileVisible: true },
             ];
 
-            // Filter tiles to only show those relevant to the current exam
             const filtered = allTiles.filter(tile => tile.exams.includes(examType as any));
 
-            // Sort: pinned first, then unpinned in original order
-            const sorted = [...filtered].sort((a, b) => {
+            // On mobile: only show mobileVisible tiles + any pinned tiles
+            const visibleTiles = isMobile
+              ? filtered.filter(t => t.mobileVisible || pinnedSubjects.includes(t.id))
+              : filtered;
+
+            // Sort: pinned first
+            const sorted = [...visibleTiles].sort((a, b) => {
               const aPin = pinnedSubjects.includes(a.id) ? 0 : 1;
               const bPin = pinnedSubjects.includes(b.id) ? 0 : 1;
               return aPin - bPin;
             });
 
-            return (
-              <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
-                {sorted.map((item) => (
-                  <Link key={item.id} to={item.to}>
-                    <div className={`${item.color} rounded-xl p-3 sm:p-4 flex flex-col items-center text-center gap-2 aspect-square justify-center hover:scale-105 transition-transform cursor-pointer border ${pinnedSubjects.includes(item.id) ? 'border-primary/50 ring-1 ring-primary/20' : 'border-border/50'}`}>
-                      <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-background/60 flex items-center justify-center relative">
-                        <item.icon className={`w-6 h-6 sm:w-7 sm:h-7 ${item.iconColor}`} />
-                        {pinnedSubjects.includes(item.id) && (
-                          <Pin className="w-3 h-3 text-primary absolute -top-1 -right-1" />
-                        )}
+            const hiddenCount = filtered.length - visibleTiles.length;
+
+            const categoryLabels: Record<TileCategory, string> = {
+              'core': '📚 Core Practice',
+              'study-tools': '🔧 Study Tools',
+              'social': '⚔️ Games & Social',
+              'assessments': '🧠 AI & Assessments',
+              'advanced': '📊 Planning & Tracking',
+              'admin': '🏫 Classroom & More',
+            };
+
+            // On desktop, group by category
+            if (!isMobile) {
+              const categories: TileCategory[] = ['core', 'study-tools', 'social', 'assessments', 'advanced', 'admin'];
+              return (
+                <div className="space-y-6">
+                  {categories.map(cat => {
+                    const catTiles = sorted.filter(t => t.category === cat);
+                    if (catTiles.length === 0) return null;
+                    return (
+                      <div key={cat}>
+                        <h4 className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-2">{categoryLabels[cat]}</h4>
+                        <div className="grid grid-cols-4 gap-3">
+                          {catTiles.map((item) => (
+                            <Link key={item.id} to={item.to}>
+                              <div className={`${item.color} rounded-xl p-4 flex flex-col items-center text-center gap-2 aspect-square justify-center hover:scale-105 transition-transform cursor-pointer border ${pinnedSubjects.includes(item.id) ? 'border-primary/50 ring-1 ring-primary/20' : 'border-border/50'}`}>
+                                <div className="w-14 h-14 rounded-full bg-background/60 flex items-center justify-center relative">
+                                  <item.icon className={`w-7 h-7 ${item.iconColor}`} />
+                                  {pinnedSubjects.includes(item.id) && (
+                                    <Pin className="w-3 h-3 text-primary absolute -top-1 -right-1" />
+                                  )}
+                                </div>
+                                <span className="text-xs font-semibold leading-tight text-foreground">{item.label}</span>
+                              </div>
+                            </Link>
+                          ))}
+                        </div>
                       </div>
-                      <span className="text-xs font-semibold leading-tight text-foreground">{item.label}</span>
+                    );
+                  })}
+                </div>
+              );
+            }
+
+            // Mobile: flat grid, compact
+            return (
+              <div className="space-y-3">
+                <div className="grid grid-cols-3 gap-2">
+                  {sorted.map((item) => (
+                    <Link key={item.id} to={item.to}>
+                      <div className={`${item.color} rounded-xl p-2.5 flex flex-col items-center text-center gap-1.5 justify-center hover:scale-105 transition-transform cursor-pointer border ${pinnedSubjects.includes(item.id) ? 'border-primary/50 ring-1 ring-primary/20' : 'border-border/50'}`}>
+                        <div className="w-10 h-10 rounded-full bg-background/60 flex items-center justify-center relative">
+                          <item.icon className={`w-5 h-5 ${item.iconColor}`} />
+                          {pinnedSubjects.includes(item.id) && (
+                            <Pin className="w-2.5 h-2.5 text-primary absolute -top-0.5 -right-0.5" />
+                          )}
+                        </div>
+                        <span className="text-[10px] font-semibold leading-tight text-foreground">{item.label}</span>
+                      </div>
+                    </Link>
+                  ))}
+                </div>
+                {hiddenCount > 0 && (
+                  <Card className="p-3 border-dashed border-primary/30 bg-primary/5 text-center">
+                    <div className="flex items-center justify-center gap-2 text-sm text-primary">
+                      <Smartphone className="w-4 h-4" />
+                      <span className="font-medium">{hiddenCount} more tools on desktop</span>
                     </div>
-                  </Link>
-                ))}
+                    <p className="text-[10px] text-muted-foreground mt-1">
+                      Pin favorites via Customize to access them here
+                    </p>
+                  </Card>
+                )}
               </div>
             );
           })()}
