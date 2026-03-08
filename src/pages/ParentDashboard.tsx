@@ -6,7 +6,7 @@ import { Input } from "@/components/ui/input";
 import { Progress } from "@/components/ui/progress";
 import {
   ArrowLeft, Eye, Shield, Link2, Flame, BarChart3, BookOpen,
-  CheckCircle2, Clock, TrendingUp, Copy
+  CheckCircle2, Clock, TrendingUp, Copy, Download, Printer
 } from "lucide-react";
 import { useAuth } from "@/hooks/useAuth";
 import { supabase } from "@/integrations/supabase/client";
