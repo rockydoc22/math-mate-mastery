@@ -366,11 +366,34 @@ const TeacherDashboard = () => {
           </TabsContent>
 
           <TabsContent value="assignments" className="space-y-4">
-            <Button onClick={() => setShowNewAssignment(!showNewAssignment)} className="w-full gap-2">
-              <Plus className="w-4 h-4" /> Create Assignment
-            </Button>
+            <div className="flex gap-2">
+              <Button onClick={() => setShowNewAssignment(!showNewAssignment)} className="flex-1 gap-2">
+                <Plus className="w-4 h-4" /> Create Assignment
+              </Button>
+            </div>
+
+            {/* Quick Templates */}
             {showNewAssignment && (
               <Card className="p-4 space-y-3 border-primary/30">
+                <p className="text-xs font-bold text-muted-foreground">Quick Templates</p>
+                <div className="flex flex-wrap gap-2">
+                  {[
+                    { label: "📖 Light Homework", title: "Light Language Homework", count: 10 },
+                    { label: "🎯 Strategy Pack", title: "Test Strategy Mini-Pack", count: 7 },
+                    { label: "⏱️ Timed Drill", title: "Timed Drill", count: 15 },
+                    { label: "🧠 Cognitive Set", title: "Cognitive Skills Short Set", count: 5 },
+                  ].map(t => (
+                    <Button
+                      key={t.label}
+                      variant="outline"
+                      size="sm"
+                      className="text-xs"
+                      onClick={() => setNewAssignment(p => ({ ...p, title: t.title, questionCount: t.count }))}
+                    >
+                      {t.label}
+                    </Button>
+                  ))}
+                </div>
                 <Input placeholder="Assignment title" value={newAssignment.title} onChange={e => setNewAssignment(p => ({ ...p, title: e.target.value }))} />
                 <div className="grid grid-cols-2 gap-2">
                   <select className="rounded-md border border-input bg-background px-3 py-2 text-sm" value={newAssignment.classroomId} onChange={e => setNewAssignment(p => ({ ...p, classroomId: e.target.value }))}>
@@ -393,24 +416,58 @@ const TeacherDashboard = () => {
                 </div>
               </Card>
             )}
-            {assignments.map(a => (
-              <Card key={a.id} className="p-4">
-                <div className="flex items-center justify-between">
-                  <div>
-                    <h4 className="font-bold text-sm">{a.title}</h4>
-                    <p className="text-xs text-muted-foreground">{a.question_count} questions • {a.subject} • Due {a.due_date}</p>
+
+            {assignments.map(a => {
+              const isOverdue = new Date(a.due_date) < new Date();
+              return (
+                <Card key={a.id} className={`p-4 ${isOverdue ? 'border-destructive/30' : ''}`}>
+                  <div className="flex items-center justify-between">
+                    <div>
+                      <h4 className="font-bold text-sm">{a.title}</h4>
+                      <p className="text-xs text-muted-foreground">
+                        {a.question_count} questions • {a.subject} • Due {a.due_date}
+                        {isOverdue && <span className="ml-1 text-destructive font-bold">⚠ Overdue</span>}
+                      </p>
+                    </div>
+                    <div className="flex gap-1">
+                      <Button
+                        variant="ghost"
+                        size="sm"
+                        className="text-xs h-7 px-2"
+                        onClick={async () => {
+                          // Send reminder notification to all class students
+                          const { data: members } = await supabase
+                            .from('classroom_members')
+                            .select('user_id')
+                            .eq('classroom_id', a.classroom_id);
+                          if (members) {
+                            for (const m of members) {
+                              await supabase.from('user_notifications').insert({
+                                user_id: m.user_id,
+                                title: '📋 Assignment Reminder',
+                                message: `"${a.title}" is due ${a.due_date}. Don't forget to complete it!`,
+                                type: 'assignment',
+                                link: '/my-assignments',
+                              });
+                            }
+                            toast({ title: "Reminders sent!", description: `Notified ${members.length} students` });
+                          }
+                        }}
+                      >
+                        <Send className="w-3 h-3 mr-1" /> Remind
+                      </Button>
+                    </div>
                   </div>
-                  <ChevronRight className="w-5 h-5 text-muted-foreground" />
-                </div>
-                <AssignmentCompletionView
-                  assignmentId={a.id}
-                  assignmentTitle={a.title}
-                  questionCount={a.question_count}
-                  dueDate={a.due_date}
-                  classroomId={a.classroom_id}
-                />
-              </Card>
-            ))}
+                  <AssignmentCompletionView
+                    assignmentId={a.id}
+                    assignmentTitle={a.title}
+                    questionCount={a.question_count}
+                    dueDate={a.due_date}
+                    classroomId={a.classroom_id}
+                  />
+                </Card>
+              );
+            })}
           </TabsContent>
         </Tabs>
       </div>
