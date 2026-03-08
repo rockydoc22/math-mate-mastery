@@ -1,4 +1,5 @@
 import { lazy, Suspense } from "react";
+import { ErrorBoundary } from "@/components/ErrorBoundary";
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -7,6 +8,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { AuthProvider } from "@/hooks/useAuth";
 import { PWAUpdatePrompt } from "@/components/PWAUpdatePrompt";
 import { LandingPage } from "@/components/LandingPage";
+import { ProtectedRoute } from "@/components/ProtectedRoute";
 
 // Core pages loaded eagerly (Home + Auth are always needed)
 import Home from "./pages/Home";
@@ -122,15 +124,16 @@ const App = () => (
         <Toaster />
         <Sonner />
         <BrowserRouter>
-          <Suspense fallback={<PageLoader />}>
-            <Routes>
+          <ErrorBoundary>
+            <Suspense fallback={<PageLoader />}>
+              <Routes>
               <Route path="/" element={<Home />} />
               {/* Marketing / homepage preview (useful even when logged in) */}
               <Route path="/landing" element={<LandingPage />} />
               <Route path="/quiz" element={<Quiz />} />
               <Route path="/math" element={<MathQuiz />} />
               <Route path="/english" element={<EnglishQuiz />} />
-              <Route path="/admin" element={<Admin />} />
+              <Route path="/admin" element={<ProtectedRoute><Admin /></ProtectedRoute>} />
               <Route path="/auth" element={<Auth />} />
               <Route path="/leaderboard" element={<Leaderboard />} />
               <Route path="/study" element={<StudyMode />} />
@@ -149,8 +152,8 @@ const App = () => (
               <Route path="/rulebook" element={<Rulebook />} />
               <Route path="/demo" element={<DemoMode />} />
               <Route path="/settings" element={<Settings />} />
-              <Route path="/printable-questions" element={<PrintableQuestions />} />
-              <Route path="/duplicate-detector" element={<DuplicateDetector />} />
+              <Route path="/printable-questions" element={<ProtectedRoute><PrintableQuestions /></ProtectedRoute>} />
+              <Route path="/duplicate-detector" element={<ProtectedRoute><DuplicateDetector /></ProtectedRoute>} />
               <Route path="/starter-kit" element={<StarterKitDownload />} />
               <Route path="/key-principles" element={<KeyPrinciples />} />
               <Route path="/rapid-facts" element={<RapidFacts />} />
@@ -172,12 +175,12 @@ const App = () => (
               <Route path="/pro-exams" element={<ProExams />} />
               <Route path="/pro-exam/:examId" element={<ProExamQuiz />} />
               <Route path="/daily-quests" element={<DailyQuests />} />
-              <Route path="/teacher" element={<TeacherDashboard />} />
+              <Route path="/teacher" element={<ProtectedRoute><TeacherDashboard /></ProtectedRoute>} />
               <Route path="/parent" element={<ParentDashboard />} />
               <Route path="/next-steps" element={<AdaptiveLearning />} />
               <Route path="/join-class" element={<JoinClass />} />
               <Route path="/my-assignments" element={<MyAssignments />} />
-              <Route path="/school-admin" element={<SchoolAdmin />} />
+              <Route path="/school-admin" element={<ProtectedRoute><SchoolAdmin /></ProtectedRoute>} />
               <Route path="/personality" element={<PersonalityAssessment />} />
               <Route path="/cognitive" element={<CognitiveSkills />} />
               <Route path="/iq-test" element={<IQTest />} />
@@ -219,6 +222,7 @@ const App = () => (
               <Route path="*" element={<NotFound />} />
             </Routes>
           </Suspense>
+          </ErrorBoundary>
         </BrowserRouter>
       </TooltipProvider>
     </AuthProvider>
