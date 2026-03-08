@@ -4,7 +4,7 @@ export interface ProExamConfig {
   name: string;
   shortName: string;
   icon: string;
-  category: 'graduate' | 'professional' | 'military' | 'faith-based';
+  category: 'graduate' | 'professional' | 'military' | 'faith-based' | 'k12';
   scoreRange: { min: number; max: number };
   sections: string[];
   description: string;
