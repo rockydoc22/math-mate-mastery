@@ -1,0 +1,114 @@
+[
+  {
+    "id": "mcat-passage-1",
+    "section": "Biological & Biochemical Foundations",
+    "passage": "A research team investigated the effects of a novel enzyme inhibitor, Compound X, on the glycolytic pathway in hepatocytes. In their experiment, they treated isolated rat liver cells with varying concentrations of Compound X (0, 10, 50, and 100 μM) and measured the intracellular concentrations of key glycolytic intermediates after 30 minutes.\n\nResults showed that fructose-1,6-bisphosphate (F1,6BP) levels decreased by 85% at 100 μM, while fructose-6-phosphate (F6P) levels increased by 300% compared to untreated controls. Glucose-6-phosphate levels remained relatively unchanged. ATP levels dropped by 40%, and lactate production decreased by 70%. When pyruvate was added exogenously to treated cells, mitochondrial oxygen consumption remained at normal levels.\n\nThe researchers also noted that cells treated with 100 μM Compound X showed a 50% increase in AMP-activated protein kinase (AMPK) activity and a corresponding increase in fatty acid oxidation rates.",
+    "questions": [
+      {
+        "id": "mcat-p1-q1",
+        "prompt": "Based on the experimental data, identify which glycolytic enzyme Compound X most likely inhibits. Explain your reasoning using specific evidence from the passage, including the changes in intermediate concentrations.",
+        "rubric_points": ["Correctly identifies phosphofructokinase-1 (PFK-1) as the inhibited enzyme", "Uses F6P accumulation and F1,6BP depletion as evidence", "Explains that substrate accumulates upstream and product decreases downstream of inhibited step", "Notes that G6P stability rules out hexokinase"],
+        "max_score": 4,
+        "time_minutes": 8
+      },
+      {
+        "id": "mcat-p1-q2",
+        "prompt": "Explain why AMPK activity increased in cells treated with Compound X. In your answer, describe the molecular mechanism by which AMPK is activated and how this relates to the metabolic state of the cell.",
+        "rubric_points": ["Explains that ATP depletion leads to elevated AMP:ATP ratio", "Describes AMPK as an energy sensor activated by AMP binding", "Connects glycolytic inhibition to reduced ATP production", "Notes that AMPK activation promotes catabolic pathways like fatty acid oxidation"],
+        "max_score": 4,
+        "time_minutes": 8
+      },
+      {
+        "id": "mcat-p1-q3",
+        "prompt": "The researchers observed that mitochondrial oxygen consumption remained normal when exogenous pyruvate was added. Explain what this finding reveals about the site of Compound X's action and the functional status of the electron transport chain.",
+        "rubric_points": ["Explains that normal O2 consumption with pyruvate indicates functional mitochondria/ETC", "Concludes that Compound X acts upstream of pyruvate (in glycolysis, not TCA/ETC)", "Notes that the block prevents pyruvate generation from glucose, not its utilization", "Demonstrates understanding that ETC requires NADH/FADH2 from TCA cycle fed by pyruvate"],
+        "max_score": 4,
+        "time_minutes": 8
+      }
+    ]
+  },
+  {
+    "id": "mcat-passage-2",
+    "section": "Chemical & Physical Foundations",
+    "passage": "A pharmaceutical company is developing a new drug delivery system using pH-sensitive liposomes. The liposomes are composed of a synthetic phospholipid with a titratable histidine-like headgroup (pKa = 6.5). At physiological pH (7.4), the headgroup is predominantly uncharged, and the liposomes maintain a stable bilayer structure. When the pH drops below 6.5, the headgroup becomes protonated and positively charged.\n\nIn laboratory tests, the researchers measured the percent drug release from the liposomes at various pH values:\n- pH 7.4: 5% release after 4 hours\n- pH 6.8: 20% release after 4 hours\n- pH 6.0: 78% release after 4 hours\n- pH 5.0: 95% release after 4 hours\n\nThe researchers hypothesize that this system could be particularly useful for targeting tumor microenvironments, which typically have a pH of 6.5-6.8, and lysosomes (pH 4.5-5.0) after cellular uptake via endocytosis.",
+    "questions": [
+      {
+        "id": "mcat-p2-q1",
+        "prompt": "Using the Henderson-Hasselbalch equation, calculate the ratio of protonated to unprotonated headgroups at pH 7.4 and at pH 6.0. Show your work and explain how this difference accounts for the drug release pattern observed.",
+        "rubric_points": ["Correctly applies Henderson-Hasselbalch: pH = pKa + log([A⁻]/[HA])", "At pH 7.4: ratio ≈ 1:8 (protonated:unprotonated), calculates correctly", "At pH 6.0: ratio ≈ 3:1 (protonated:unprotonated), calculates correctly", "Explains that protonation causes charge repulsion, destabilizing the bilayer and releasing drug"],
+        "max_score": 4,
+        "time_minutes": 10
+      },
+      {
+        "id": "mcat-p2-q2",
+        "prompt": "Explain the biological basis for why tumor microenvironments have a lower pH than normal tissues. Include the relevant metabolic pathways and the concept of the Warburg effect in your answer.",
+        "rubric_points": ["Describes the Warburg effect: cancer cells preferentially use glycolysis even in oxygen presence", "Explains that increased glycolysis produces excess lactate and H+ ions", "Notes that poor tumor vasculature limits buffering capacity and waste removal", "Connects metabolic acid production to the acidic microenvironment (pH 6.5-6.8)"],
+        "max_score": 4,
+        "time_minutes": 8
+      }
+    ]
+  },
+  {
+    "id": "mcat-passage-3",
+    "section": "Psychological & Social Foundations",
+    "passage": "Dr. Okafor conducted a longitudinal study examining the relationship between childhood socioeconomic status (SES) and adult health outcomes in a cohort of 2,400 participants followed from age 5 to age 45. Participants were categorized into low, middle, and high SES groups based on parental income, education, and occupation during childhood.\n\nKey findings:\n- Low childhood SES was associated with a 2.3x higher risk of cardiovascular disease by age 45, even after controlling for adult SES\n- Participants who moved from low to high SES during adulthood still showed elevated inflammatory markers (C-reactive protein) compared to those born into high SES\n- The relationship between childhood SES and adult health was partially mediated by chronic stress exposure, as measured by cortisol levels\n- Social support networks moderated the relationship: low-SES individuals with strong social ties showed health outcomes similar to middle-SES individuals\n- Participants from low-SES backgrounds who reported high levels of perceived discrimination showed the worst health outcomes across all groups",
+    "questions": [
+      {
+        "id": "mcat-p3-q1",
+        "prompt": "Explain how the concept of 'biological embedding' helps account for the finding that upward social mobility did not fully eliminate the health effects of low childhood SES. Include specific physiological mechanisms in your answer.",
+        "rubric_points": ["Defines biological embedding: early experiences alter biological systems in lasting ways", "Explains HPA axis dysregulation from chronic childhood stress", "Describes epigenetic modifications (e.g., DNA methylation) that persist into adulthood", "Connects elevated inflammatory markers to early programming of immune responses"],
+        "max_score": 4,
+        "time_minutes": 8
+      },
+      {
+        "id": "mcat-p3-q2",
+        "prompt": "The study found that social support moderated the SES-health relationship. Using concepts from social psychology and health psychology, explain the mechanisms through which social support could buffer against the negative health effects of low SES.",
+        "rubric_points": ["Describes the stress-buffering model of social support", "Explains how social support reduces perceived stress and cortisol response", "Discusses tangible support (access to resources, healthcare information)", "Mentions self-efficacy and locus of control as psychological mediators"],
+        "max_score": 4,
+        "time_minutes": 8
+      }
+    ]
+  },
+  {
+    "id": "mcat-passage-4",
+    "section": "Critical Analysis & Reasoning Skills",
+    "passage": "The concept of 'epistemic injustice,' introduced by philosopher Miranda Fricker, describes a wrong done to someone specifically in their capacity as a knower. Fricker identifies two primary forms: testimonial injustice, where a speaker receives a deflated level of credibility due to prejudice on the part of the hearer, and hermeneutical injustice, where gaps in collective interpretive resources put someone at an unfair disadvantage when it comes to making sense of their social experiences.\n\nConsider the medical context. A patient describes chronic pain symptoms to a physician. The physician, influenced by implicit biases about the patient's demographic background, dismisses the symptoms as exaggerated or psychosomatic. This is a clear case of testimonial injustice. But hermeneutical injustice may also be at play: if the medical field lacks adequate conceptual frameworks for understanding certain types of chronic pain (historically understudied in certain populations), the patient may struggle to articulate their experience in terms that the medical establishment recognizes as legitimate.\n\nCritics of Fricker's framework argue that it overemphasizes individual cognitive biases while underemphasizing structural and institutional factors. They contend that epistemic injustice is better understood as a systemic phenomenon rooted in power structures rather than individual prejudice. Others have extended the concept to include 'contributory injustice,' where marginalized groups possess valuable knowledge that dominant groups refuse to engage with, even when it is clearly articulated.",
+    "questions": [
+      {
+        "id": "mcat-p4-q1",
+        "prompt": "Distinguish between testimonial and hermeneutical injustice using the medical example from the passage. Then, explain how 'contributory injustice' differs from both, and provide an original example from healthcare that illustrates contributory injustice.",
+        "rubric_points": ["Accurately distinguishes testimonial injustice (credibility deficit due to prejudice)", "Accurately explains hermeneutical injustice (lack of interpretive frameworks)", "Correctly defines contributory injustice (refusal to engage with marginalized knowledge)", "Provides a plausible original healthcare example of contributory injustice"],
+        "max_score": 4,
+        "time_minutes": 10
+      },
+      {
+        "id": "mcat-p4-q2",
+        "prompt": "Evaluate the critics' argument that Fricker's framework overemphasizes individual bias. Do you agree that epistemic injustice is better understood as systemic? Support your position with reasoning that addresses both perspectives.",
+        "rubric_points": ["Presents Fricker's individual-level framework accurately", "Presents the systemic critique clearly", "Takes a reasoned position with supporting logic", "Acknowledges limitations of their chosen position or synthesizes both views"],
+        "max_score": 4,
+        "time_minutes": 10
+      }
+    ]
+  },
+  {
+    "id": "mcat-passage-5",
+    "section": "Biological & Biochemical Foundations",
+    "passage": "Researchers studying a rare genetic disorder identified a mutation in the gene encoding aquaporin-2 (AQP2), a water channel protein primarily expressed in the collecting duct of the kidney. The mutation (R187C) substitutes a cysteine for an arginine residue in the protein's extracellular loop.\n\nPatients with this mutation present with:\n- Urine output of 8-12 liters per day (normal: 1-2 L/day)\n- Serum sodium consistently above 150 mEq/L (normal: 135-145 mEq/L)\n- Normal ADH (vasopressin) levels in the blood\n- No response to exogenous desmopressin (synthetic ADH analog) administration\n\nIn cell culture experiments, the mutant AQP2 protein was synthesized at normal levels but remained in the endoplasmic reticulum rather than trafficking to the apical membrane. Treatment with a chemical chaperone (glycerol) partially rescued membrane localization and reduced urine output by 40% in animal models carrying the equivalent mutation.",
+    "questions": [
+      {
+        "id": "mcat-p5-q1",
+        "prompt": "Explain why patients with the R187C mutation produce such large volumes of dilute urine despite having normal ADH levels. Your answer should trace the normal ADH signaling pathway and identify where it is disrupted.",
+        "rubric_points": ["Describes normal ADH pathway: ADH binds V2 receptor → cAMP → PKA → AQP2 insertion into apical membrane", "Explains that without functional AQP2 at the membrane, water cannot be reabsorbed from collecting duct", "Notes that the signaling pathway is intact (normal ADH levels) but the effector protein is mislocalized", "Explains why desmopressin also fails: it acts on V2 receptor, but the problem is downstream at AQP2"],
+        "max_score": 4,
+        "time_minutes": 8
+      },
+      {
+        "id": "mcat-p5-q2",
+        "prompt": "The R187C mutation introduces a cysteine residue. Explain why this specific amino acid substitution might cause the protein to be retained in the endoplasmic reticulum. Consider protein folding, quality control, and the chemical properties of cysteine.",
+        "rubric_points": ["Notes that cysteine's thiol group can form aberrant disulfide bonds", "Explains ER quality control: misfolded proteins are retained by chaperones (e.g., BiP/GRP78)", "Discusses how replacing a charged arginine with a smaller, reactive cysteine disrupts protein structure", "Connects to the chemical chaperone rescue: glycerol stabilizes folding, allowing ER export"],
+        "max_score": 4,
+        "time_minutes": 8
+      }
+    ]
+  }
+]
