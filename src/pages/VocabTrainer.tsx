@@ -203,8 +203,8 @@ const VocabTrainer = () => {
                 <p className="text-[10px] text-muted-foreground">Due Review</p>
               </div>
             </div>
-            <Progress value={(masteredCount / SAT_VOCAB_WORDS.length) * 100} className="mt-3 h-2" />
-            <p className="text-xs text-muted-foreground mt-1 text-center">{Math.round((masteredCount / SAT_VOCAB_WORDS.length) * 100)}% mastered</p>
+            <Progress value={(masteredCount / baseWords.length) * 100} className="mt-3 h-2" />
+            <p className="text-xs text-muted-foreground mt-1 text-center">{Math.round((masteredCount / baseWords.length) * 100)}% mastered</p>
           </Card>
 
           {/* Category Filter */}
