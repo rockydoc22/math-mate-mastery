@@ -28,7 +28,7 @@ export const PRO_EXAMS: ProExamConfig[] = [
     sections: ['Quantitative', 'Verbal', 'Analytical Writing'],
     description: 'Graduate Record Examination for graduate school admissions',
     timePerQuestion: 90,
-    jsonFiles: ['gre_question_bank_200_original.json', 'gre_question_bank_expansion_300.json', 'gre_question_bank_expansion_300_b2.json'],
+    jsonFiles: ['gre_question_bank_200_original.json', 'gre_question_bank_expansion_300.json', 'gre_question_bank_expansion_300_b2.json', 'gre_question_bank_expansion_300_b3.json'],
   },
   {
     id: 'gmat', name: 'GMAT', shortName: 'GMAT', icon: '📊',
