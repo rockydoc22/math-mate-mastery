@@ -687,7 +687,7 @@ const Home = () => {
               { id: 'flashcards', icon: Layers, label: 'Flashcards', color: 'bg-sky-100 dark:bg-sky-900/30', iconColor: 'text-sky-600 dark:text-sky-400', to: '/flashcards', exams: ['sat', 'psat', 'act'] },
               { id: 'study-groups', icon: UsersRound, label: 'Study Groups', color: 'bg-teal-100 dark:bg-teal-900/30', iconColor: 'text-teal-600 dark:text-teal-400', to: '/study-groups', exams: ['sat', 'psat', 'act'] },
               { id: 'streak-calendar', icon: Calendar, label: 'Calendar', color: 'bg-green-100 dark:bg-green-900/30', iconColor: 'text-green-600 dark:text-green-400', to: '/streak-calendar', exams: ['sat', 'psat', 'act'] },
-              { id: 'weekly-goals', icon: Goal, label: 'Weekly Goals', color: 'bg-violet-100 dark:bg-violet-900/30', iconColor: 'text-violet-600 dark:text-violet-400', to: '/weekly-goals', exams: ['sat', 'psat', 'act'] },
+              { id: 'weekly-goals', icon: CircleDot, label: 'Weekly Goals', color: 'bg-violet-100 dark:bg-violet-900/30', iconColor: 'text-violet-600 dark:text-violet-400', to: '/weekly-goals', exams: ['sat', 'psat', 'act'] },
             ];
 
             // Filter tiles to only show those relevant to the current exam
