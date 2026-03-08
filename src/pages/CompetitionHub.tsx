@@ -119,7 +119,28 @@ const CompetitionHub = () => {
               {isCorrect ? 'Correct!' : `Incorrect — Answer: ${q.answer}`}
             </div>
             <p className="text-muted-foreground text-xs leading-relaxed">{q.explanation}</p>
+            {!showPathAnalysis.has(q.id) && (
+              <Button
+                size="sm"
+                variant="outline"
+                className="mt-2 gap-2 text-xs"
+                onClick={() => setShowPathAnalysis(prev => new Set(prev).add(q.id))}
+              >
+                <Lightbulb className="w-3 h-3" />
+                Analyze My Solution Path
+              </Button>
+            )}
           </div>
+        )}
+
+        {isRevealed && showPathAnalysis.has(q.id) && (
+          <SolutionPathAnalysis
+            question={q.question}
+            options={q.options?.map((opt, i) => ({ letter: String.fromCharCode(65 + i), text: opt }))}
+            correctAnswer={q.answer}
+            competitionType={competition?.name || 'academic competition'}
+            onClose={() => setShowPathAnalysis(prev => { const n = new Set(prev); n.delete(q.id); return n; })}
+          />
         )}
       </Card>
     );
