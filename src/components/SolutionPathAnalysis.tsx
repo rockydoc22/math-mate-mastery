@@ -2,12 +2,15 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Textarea } from "@/components/ui/textarea";
-import { Brain, Loader2, X, Sparkles, Route } from "lucide-react";
+import { Brain, Loader2, X, Sparkles, Route, Save, Check } from "lucide-react";
 import { toast } from "sonner";
 import ReactMarkdown from "react-markdown";
+import { supabase } from "@/integrations/supabase/client";
 
 interface SolutionPathAnalysisProps {
   question: string;
+  questionId?: string;
+  questionType?: string;
   options?: { letter: string; text: string }[];
   correctAnswer: string;
   competitionType: string;
@@ -18,6 +21,8 @@ const ANALYSIS_URL = `${import.meta.env.VITE_SUPABASE_URL}/functions/v1/solution
 
 export const SolutionPathAnalysis = ({
   question,
+  questionId,
+  questionType = 'math',
   options,
   correctAnswer,
   competitionType,
@@ -27,6 +32,7 @@ export const SolutionPathAnalysis = ({
   const [analysis, setAnalysis] = useState("");
   const [isLoading, setIsLoading] = useState(false);
   const [hasSubmitted, setHasSubmitted] = useState(false);
+  const [isSaved, setIsSaved] = useState(false);
 
   const fetchAnalysis = async () => {
     if (!approach.trim()) {
@@ -37,6 +43,7 @@ export const SolutionPathAnalysis = ({
     setIsLoading(true);
     setAnalysis("");
     setHasSubmitted(true);
+    setIsSaved(false);
 
     try {
       const resp = await fetch(ANALYSIS_URL, {
@@ -105,6 +112,32 @@ export const SolutionPathAnalysis = ({
     }
   };
 
+  const saveAnalysis = async () => {
+    try {
+      const { data: { user } } = await supabase.auth.getUser();
+      if (!user) {
+        toast.error("Sign in to save your analysis");
+        return;
+      }
+
+      const { error } = await supabase.from('solution_analyses').insert({
+        user_id: user.id,
+        question_id: questionId || 'unknown',
+        question_type: questionType,
+        question_text: question.substring(0, 500),
+        student_approach: approach,
+        ai_analysis: analysis,
+      });
+
+      if (error) throw error;
+      setIsSaved(true);
+      toast.success("Analysis saved for review!");
+    } catch (error) {
+      console.error("Save analysis error:", error);
+      toast.error("Failed to save analysis");
+    }
+  };
+
   return (
     <Card className="border-accent/30 bg-accent/5 mt-3">
       <CardHeader className="pb-2 flex flex-row items-center justify-between">
@@ -159,19 +192,32 @@ export const SolutionPathAnalysis = ({
             )}
 
             {!isLoading && analysis && (
-              <Button
-                variant="outline"
-                size="sm"
-                onClick={() => {
-                  setHasSubmitted(false);
-                  setAnalysis("");
-                  setApproach("");
-                }}
-                className="gap-2"
-              >
-                <Sparkles className="w-4 h-4" />
-                Try Different Approach
-              </Button>
+              <div className="flex gap-2 flex-wrap">
+                <Button
+                  variant="outline"
+                  size="sm"
+                  onClick={() => {
+                    setHasSubmitted(false);
+                    setAnalysis("");
+                    setApproach("");
+                    setIsSaved(false);
+                  }}
+                  className="gap-2"
+                >
+                  <Sparkles className="w-4 h-4" />
+                  Try Different Approach
+                </Button>
+                <Button
+                  variant={isSaved ? "secondary" : "outline"}
+                  size="sm"
+                  onClick={saveAnalysis}
+                  disabled={isSaved}
+                  className="gap-2"
+                >
+                  {isSaved ? <Check className="w-4 h-4" /> : <Save className="w-4 h-4" />}
+                  {isSaved ? 'Saved' : 'Save Analysis'}
+                </Button>
+              </div>
             )}
           </>
         )}
