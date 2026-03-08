@@ -34,6 +34,7 @@ const APStudy = () => {
   const subject = subjectId ? getAPSubject(subjectId) : undefined;
   const [view, setView] = useState<ViewState>({ mode: 'units' });
   const [showAITutor, setShowAITutor] = useState(false);
+  const [isFlagModalOpen, setIsFlagModalOpen] = useState(false);
   const [chemQuestions, setChemQuestions] = useState<Record<string, Question[]>>(apChemQuestionsByUnit);
   const [ushQuestions, setUshQuestions] = useState<Record<string, Question[]>>(apUSHQuestionsByUnit);
   const [litQuestions, setLitQuestions] = useState<Record<string, Question[]>>(apLitQuestionsByUnit);
