@@ -185,7 +185,21 @@ const PersonalityDISC = () => {
         ))}
         <div className="flex gap-3">
           {currentPage > 0 && <Button variant="outline" className="flex-1" onClick={() => setCurrentPage(p => p - 1)}>Previous</Button>}
-          {currentPage < totalPages - 1 ? <Button className="flex-1" onClick={() => setCurrentPage(p => p + 1)}>Next</Button> : <Button className="flex-1" onClick={() => setCompleted(true)} disabled={answeredCount < QUESTIONS.length * 0.8}>See Results</Button>}
+          {currentPage < totalPages - 1 ? (
+            <Button className="flex-1" onClick={() => setCurrentPage(p => p + 1)}>Next</Button>
+          ) : (
+            <Button 
+              className="flex-1" 
+              onClick={async () => {
+                const profileData = calculateProfile();
+                const saved = await saveResults(profileData);
+                setCompleted(true);
+              }}
+              disabled={answeredCount < QUESTIONS.length * 0.8 || saving}
+            >
+              {saving ? "Saving..." : "See Results"}
+            </Button>
+          )}
         </div>
       </div>
       <BottomNav />
