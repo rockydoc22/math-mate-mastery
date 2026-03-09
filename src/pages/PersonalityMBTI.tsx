@@ -5,6 +5,9 @@ import { Button } from "@/components/ui/button";
 import { ArrowLeft, ChevronRight } from "lucide-react";
 import { BottomNav } from "@/components/BottomNav";
 import { Progress } from "@/components/ui/progress";
+import { supabase } from "@/integrations/supabase/client";
+import { useAuth } from "@/hooks/useAuth";
+import { toast } from "@/hooks/use-toast";
 
 interface MBTIQuestion { id: number; text: string; dimA: string; dimB: string; }
 
@@ -113,9 +116,11 @@ const TYPE_DESCRIPTIONS: Record<string, { title: string; description: string; st
 };
 
 const PersonalityMBTI = () => {
+  const { user } = useAuth();
   const [answers, setAnswers] = useState<Record<number, number>>({});
   const [currentPage, setCurrentPage] = useState(0);
   const [completed, setCompleted] = useState(false);
+  const [saving, setSaving] = useState(false);
   const questionsPerPage = 5;
   const totalPages = Math.ceil(QUESTIONS.length / questionsPerPage);
   const pageQuestions = QUESTIONS.slice(currentPage * questionsPerPage, (currentPage + 1) * questionsPerPage);
@@ -143,7 +148,47 @@ const PersonalityMBTI = () => {
     return { type, percentages, scores };
   };
 
-  const handleComplete = () => setCompleted(true);
+  const saveResults = async (resultData: { type: string; percentages: Record<string, number>; scores: Record<string, number> }) => {
+    if (!user) return false;
+    
+    setSaving(true);
+    try {
+      const { error } = await supabase
+        .from("personality_results")
+        .insert({
+          user_id: user.id,
+          assessment_type: "mbti",
+          raw_scores: resultData.scores,
+          result_type: resultData.type,
+          result_data: {
+            percentages: resultData.percentages,
+            profile: TYPE_DESCRIPTIONS[resultData.type],
+            answers: answers
+          }
+        });
+
+      if (error) throw error;
+      
+      toast({ title: "Results saved successfully!" });
+      return true;
+    } catch (error) {
+      console.error("Error saving MBTI results:", error);
+      toast({ 
+        title: "Failed to save results", 
+        description: "Your results are still displayed, but couldn't be saved to your profile.",
+        variant: "destructive" 
+      });
+      return false;
+    } finally {
+      setSaving(false);
+    }
+  };
+
+  const handleComplete = async () => {
+    const resultData = calculateType();
+    await saveResults(resultData);
+    setCompleted(true);
+  };
 
   if (completed) {
     const { type, percentages } = calculateType();
@@ -235,7 +280,9 @@ const PersonalityMBTI = () => {
           {currentPage < totalPages - 1 ? (
             <Button className="flex-1" onClick={() => setCurrentPage(p => p + 1)}>Next</Button>
           ) : (
-            <Button className="flex-1" onClick={handleComplete} disabled={answeredCount < QUESTIONS.length * 0.8}>See Results</Button>
+            <Button className="flex-1" onClick={handleComplete} disabled={answeredCount < QUESTIONS.length * 0.8 || saving}>
+              {saving ? "Saving..." : "See Results"}
+            </Button>
           )}
         </div>
       </div>

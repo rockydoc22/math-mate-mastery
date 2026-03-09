@@ -597,6 +597,42 @@ export type Database = {
         }
         Relationships: []
       }
+      personality_results: {
+        Row: {
+          assessment_type: string
+          completed_at: string
+          created_at: string
+          id: string
+          raw_scores: Json
+          result_data: Json
+          result_type: string
+          updated_at: string
+          user_id: string
+        }
+        Insert: {
+          assessment_type: string
+          completed_at?: string
+          created_at?: string
+          id?: string
+          raw_scores: Json
+          result_data: Json
+          result_type: string
+          updated_at?: string
+          user_id: string
+        }
+        Update: {
+          assessment_type?: string
+          completed_at?: string
+          created_at?: string
+          id?: string
+          raw_scores?: Json
+          result_data?: Json
+          result_type?: string
+          updated_at?: string
+          user_id?: string
+        }
+        Relationships: []
+      }
       practice_tests: {
         Row: {
           completed_at: string

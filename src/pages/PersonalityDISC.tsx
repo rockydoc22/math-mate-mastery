@@ -5,6 +5,9 @@ import { Button } from "@/components/ui/button";
 import { ArrowLeft } from "lucide-react";
 import { BottomNav } from "@/components/BottomNav";
 import { Progress } from "@/components/ui/progress";
+import { supabase } from "@/integrations/supabase/client";
+import { useAuth } from "@/hooks/useAuth";
+import { toast } from "@/hooks/use-toast";
 
 interface DISCQuestion { id: number; text: string; dim: "D" | "I" | "S" | "C"; }
 
@@ -55,9 +58,11 @@ const PROFILES: Record<string, { icon: string; title: string; desc: string; stre
 };
 
 const PersonalityDISC = () => {
+  const { user } = useAuth();
   const [answers, setAnswers] = useState<Record<number, number>>({});
   const [currentPage, setCurrentPage] = useState(0);
   const [completed, setCompleted] = useState(false);
+  const [saving, setSaving] = useState(false);
   const qpp = 7;
   const totalPages = Math.ceil(QUESTIONS.length / qpp);
   const pageQs = QUESTIONS.slice(currentPage * qpp, (currentPage + 1) * qpp);
@@ -70,6 +75,42 @@ const PersonalityDISC = () => {
     const pcts = { D: Math.round((scores.D / total) * 100), I: Math.round((scores.I / total) * 100), S: Math.round((scores.S / total) * 100), C: Math.round((scores.C / total) * 100) };
     const primary = (Object.entries(scores).sort((a, b) => b[1] - a[1])[0][0]) as keyof typeof PROFILES;
     return { scores, pcts, primary };
+  };
+
+  const saveResults = async (profileData: { scores: Record<string, number>; pcts: Record<string, number>; primary: keyof typeof PROFILES }) => {
+    if (!user) return false;
+    
+    setSaving(true);
+    try {
+      const { error } = await supabase
+        .from("personality_results")
+        .insert({
+          user_id: user.id,
+          assessment_type: "disc",
+          raw_scores: profileData.scores,
+          result_type: profileData.primary,
+          result_data: {
+            percentages: profileData.pcts,
+            profile: PROFILES[profileData.primary],
+            answers: answers
+          }
+        });
+
+      if (error) throw error;
+      
+      toast({ title: "Results saved successfully!" });
+      return true;
+    } catch (error) {
+      console.error("Error saving DISC results:", error);
+      toast({ 
+        title: "Failed to save results", 
+        description: "Your results are still displayed, but couldn't be saved to your profile.",
+        variant: "destructive" 
+      });
+      return false;
+    } finally {
+      setSaving(false);
+    }
   };
 
   if (completed) {
@@ -144,7 +185,21 @@ const PersonalityDISC = () => {
         ))}
         <div className="flex gap-3">
           {currentPage > 0 && <Button variant="outline" className="flex-1" onClick={() => setCurrentPage(p => p - 1)}>Previous</Button>}
-          {currentPage < totalPages - 1 ? <Button className="flex-1" onClick={() => setCurrentPage(p => p + 1)}>Next</Button> : <Button className="flex-1" onClick={() => setCompleted(true)} disabled={answeredCount < QUESTIONS.length * 0.8}>See Results</Button>}
+          {currentPage < totalPages - 1 ? (
+            <Button className="flex-1" onClick={() => setCurrentPage(p => p + 1)}>Next</Button>
+          ) : (
+            <Button 
+              className="flex-1" 
+              onClick={async () => {
+                const profileData = calculateProfile();
+                const saved = await saveResults(profileData);
+                setCompleted(true);
+              }}
+              disabled={answeredCount < QUESTIONS.length * 0.8 || saving}
+            >
+              {saving ? "Saving..." : "See Results"}
+            </Button>
+          )}
         </div>
       </div>
       <BottomNav />
