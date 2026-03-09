@@ -277,7 +277,9 @@ const PersonalityMBTI = () => {
           {currentPage < totalPages - 1 ? (
             <Button className="flex-1" onClick={() => setCurrentPage(p => p + 1)}>Next</Button>
           ) : (
-            <Button className="flex-1" onClick={handleComplete} disabled={answeredCount < QUESTIONS.length * 0.8}>See Results</Button>
+            <Button className="flex-1" onClick={handleComplete} disabled={answeredCount < QUESTIONS.length * 0.8 || saving}>
+              {saving ? "Saving..." : "See Results"}
+            </Button>
           )}
         </div>
       </div>
