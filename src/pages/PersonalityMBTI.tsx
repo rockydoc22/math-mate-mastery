@@ -145,7 +145,47 @@ const PersonalityMBTI = () => {
     return { type, percentages, scores };
   };
 
-  const handleComplete = () => setCompleted(true);
+  const saveResults = async (resultData: { type: string; percentages: Record<string, number>; scores: Record<string, number> }) => {
+    if (!user) return false;
+    
+    setSaving(true);
+    try {
+      const { error } = await supabase
+        .from("personality_results")
+        .insert({
+          user_id: user.id,
+          assessment_type: "mbti",
+          raw_scores: resultData.scores,
+          result_type: resultData.type,
+          result_data: {
+            percentages: resultData.percentages,
+            profile: TYPE_DESCRIPTIONS[resultData.type],
+            answers: answers
+          }
+        });
+
+      if (error) throw error;
+      
+      toast({ title: "Results saved successfully!" });
+      return true;
+    } catch (error) {
+      console.error("Error saving MBTI results:", error);
+      toast({ 
+        title: "Failed to save results", 
+        description: "Your results are still displayed, but couldn't be saved to your profile.",
+        variant: "destructive" 
+      });
+      return false;
+    } finally {
+      setSaving(false);
+    }
+  };
+
+  const handleComplete = async () => {
+    const resultData = calculateType();
+    await saveResults(resultData);
+    setCompleted(true);
+  };
 
   if (completed) {
     const { type, percentages } = calculateType();
