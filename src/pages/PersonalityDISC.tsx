@@ -77,6 +77,42 @@ const PersonalityDISC = () => {
     return { scores, pcts, primary };
   };
 
+  const saveResults = async (profileData: { scores: Record<string, number>; pcts: Record<string, number>; primary: keyof typeof PROFILES }) => {
+    if (!user) return false;
+    
+    setSaving(true);
+    try {
+      const { error } = await supabase
+        .from("personality_results")
+        .insert({
+          user_id: user.id,
+          assessment_type: "disc",
+          raw_scores: profileData.scores,
+          result_type: profileData.primary,
+          result_data: {
+            percentages: profileData.pcts,
+            profile: PROFILES[profileData.primary],
+            answers: answers
+          }
+        });
+
+      if (error) throw error;
+      
+      toast({ title: "Results saved successfully!" });
+      return true;
+    } catch (error) {
+      console.error("Error saving DISC results:", error);
+      toast({ 
+        title: "Failed to save results", 
+        description: "Your results are still displayed, but couldn't be saved to your profile.",
+        variant: "destructive" 
+      });
+      return false;
+    } finally {
+      setSaving(false);
+    }
+  };
+
   if (completed) {
     const { pcts, primary } = calculateProfile();
     const info = PROFILES[primary];
