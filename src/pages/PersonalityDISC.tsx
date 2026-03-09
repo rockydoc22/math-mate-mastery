@@ -58,9 +58,11 @@ const PROFILES: Record<string, { icon: string; title: string; desc: string; stre
 };
 
 const PersonalityDISC = () => {
+  const { user } = useAuth();
   const [answers, setAnswers] = useState<Record<number, number>>({});
   const [currentPage, setCurrentPage] = useState(0);
   const [completed, setCompleted] = useState(false);
+  const [saving, setSaving] = useState(false);
   const qpp = 7;
   const totalPages = Math.ceil(QUESTIONS.length / qpp);
   const pageQs = QUESTIONS.slice(currentPage * qpp, (currentPage + 1) * qpp);
