@@ -2214,7 +2214,7 @@ export const hardMathQuestions: Question[] = [
   }),
   addRating({
     id: 'hard-math-145',
-    question: 'A biomedical engineer designs drug delivery. A nanoparticle drug release follows Higuchi kinetics: Q = K_H × √t, where K_H = 5 mg/(cm²·h^0.5). The particle has surface area 0.1 cm² and drug loading 10 mg. Find the release rate at t = 4 hours, cumulative release at t = 9 hours, and time for 80% release.',
+    question: 'A biomedical engineer designs a nutrient delivery system. A nanoparticle compound release follows Higuchi kinetics: Q = K_H × √t, where K_H = 5 mg/(cm²·h^0.5). The particle has surface area 0.1 cm² and compound loading 10 mg. Find the release rate at t = 4 hours, cumulative release at t = 9 hours, and time for 80% release.',
     options: [
       { letter: 'A', text: 'Rate(4h) = 0.125 mg/h, Q(9h) = 1.5 mg, t_80% = 256 hours' },
       { letter: 'B', text: 'Rate(4h) = 0.250 mg/h, Q(9h) = 2.0 mg, t_80% = 144 hours' },
