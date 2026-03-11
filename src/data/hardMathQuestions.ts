@@ -2919,7 +2919,7 @@ export const hardMathQuestions: Question[] = [
   }),
   addRating({
     id: 'hard-math-192',
-    question: 'A pharmacologist studies drug interactions. Drug A inhibits the metabolism of Drug B. Drug B normally has half-life t½ = 4 hours and clearance CL = 10 L/h. If Drug A reduces clearance by 50%, calculate the new half-life and the steady-state concentration ratio (with/without inhibitor) at the same dose rate.',
+    question: 'A researcher studies compound interactions. Compound A inhibits the metabolism of Compound B. Compound B normally has half-life t½ = 4 hours and clearance CL = 10 L/h. If Compound A reduces clearance by 50%, calculate the new half-life and the steady-state concentration ratio (with/without inhibitor) at the same dose rate.',
     options: [
       { letter: 'A', text: 'New t½ = 8 hours, C_ss ratio = 2' },
       { letter: 'B', text: 'New t½ = 2 hours, C_ss ratio = 0.5' },
