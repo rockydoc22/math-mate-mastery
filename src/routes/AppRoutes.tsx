@@ -7,6 +7,7 @@ import { GlobalFeedbackFAB } from "@/components/GlobalFeedbackFAB";
 // Core pages loaded eagerly (Home + Auth are always needed)
 import Home from "@/pages/Home";
 import Auth from "@/pages/Auth";
+import AuthCallback from "@/pages/AuthCallback";
 import NotFound from "@/pages/NotFound";
 
 // Everything else lazy-loaded for code splitting
