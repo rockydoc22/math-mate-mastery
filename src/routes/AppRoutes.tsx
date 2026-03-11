@@ -125,6 +125,7 @@ const AppRoutes = () => (
       <Route path="/english" element={<EnglishQuiz />} />
       <Route path="/admin" element={<ProtectedRoute><Admin /></ProtectedRoute>} />
       <Route path="/auth" element={<Auth />} />
+      <Route path="/auth/callback" element={<AuthCallback />} />
       <Route path="/leaderboard" element={<Leaderboard />} />
       <Route path="/study" element={<StudyMode />} />
       <Route path="/problems-by-topic" element={<ProblemsByTopic />} />
