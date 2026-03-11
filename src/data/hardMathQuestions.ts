@@ -3534,7 +3534,7 @@ export const hardMathQuestions: Question[] = [
   }),
   addRating({
     id: 'hard-math-233',
-    question: 'A pharmacologist models drug elimination. A drug follows first-order kinetics with elimination rate constant k = 0.1/hr. Initial concentration is C₀ = 100 μg/mL. Calculate concentration at t = 12 hours, clearance if volume of distribution V_d = 50 L, and dosing interval to maintain C_min > 25 μg/mL.',
+    question: 'A scientist models compound elimination. A compound follows first-order kinetics with elimination rate constant k = 0.1/hr. Initial concentration is C₀ = 100 μg/mL. Calculate concentration at t = 12 hours, clearance if volume of distribution V_d = 50 L, and dosing interval to maintain C_min > 25 μg/mL.',
     options: [
       { letter: 'A', text: 'C(12) = 30.1 μg/mL, CL = 5 L/hr, τ < 14 hours' },
       { letter: 'B', text: 'C(12) = 50 μg/mL, CL = 10 L/hr, τ < 7 hours' },
