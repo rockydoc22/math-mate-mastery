@@ -5,6 +5,9 @@ import { Button } from "@/components/ui/button";
 import { ArrowLeft } from "lucide-react";
 import { BottomNav } from "@/components/BottomNav";
 import { Progress } from "@/components/ui/progress";
+import { supabase } from "@/integrations/supabase/client";
+import { useAuth } from "@/hooks/useAuth";
+import { toast } from "@/hooks/use-toast";
 
 interface SQuestion { id: number; text: string; theme: string; }
 
@@ -83,9 +86,11 @@ const LIKERT = [
 ];
 
 const PersonalityStrengths = () => {
+  const { user } = useAuth();
   const [answers, setAnswers] = useState<Record<number, number>>({});
   const [currentPage, setCurrentPage] = useState(0);
   const [completed, setCompleted] = useState(false);
+  const [saving, setSaving] = useState(false);
   const qpp = 8;
   const totalPages = Math.ceil(QUESTIONS.length / qpp);
   const pageQs = QUESTIONS.slice(currentPage * qpp, (currentPage + 1) * qpp);
@@ -193,7 +198,31 @@ const PersonalityStrengths = () => {
         ))}
         <div className="flex gap-3">
           {currentPage > 0 && <Button variant="outline" className="flex-1" onClick={() => setCurrentPage(p => p - 1)}>Previous</Button>}
-          {currentPage < totalPages - 1 ? <Button className="flex-1" onClick={() => setCurrentPage(p => p + 1)}>Next</Button> : <Button className="flex-1" onClick={() => setCompleted(true)} disabled={answeredCount < QUESTIONS.length * 0.8}>See Results</Button>}
+          {currentPage < totalPages - 1 ? (
+            <Button className="flex-1" onClick={() => setCurrentPage(p => p + 1)}>Next</Button>
+          ) : (
+            <Button className="flex-1" disabled={answeredCount < QUESTIONS.length * 0.8 || saving} onClick={async () => {
+              const sorted = calculate();
+              const top5 = sorted.slice(0, 5);
+              if (user) {
+                setSaving(true);
+                try {
+                  await supabase.from("personality_results").insert({
+                    user_id: user.id,
+                    assessment_type: "strengths",
+                    raw_scores: Object.fromEntries(sorted.map(s => [s.theme, s.score])),
+                    result_type: top5.map(s => s.theme).join(", "),
+                    result_data: { top5: top5.map(s => s.theme), allRanked: sorted, answers },
+                  });
+                  toast({ title: "Results saved!" });
+                } catch { toast({ title: "Failed to save", variant: "destructive" }); }
+                setSaving(false);
+              }
+              setCompleted(true);
+            }}>
+              {saving ? "Saving..." : "See Results"}
+            </Button>
+          )}
         </div>
       </div>
       <BottomNav />
