@@ -2604,7 +2604,7 @@ export const hardMathQuestions: Question[] = [
   }),
   addRating({
     id: 'hard-math-171',
-    question: 'A pharmacokineticist models drug distribution. A two-compartment model has rate constants k₁₂ = 0.5/h (central→peripheral), k₂₁ = 0.2/h (peripheral→central), and elimination k₁₀ = 0.3/h. After IV bolus of 100 mg, find the macro rate constants α and β, and the distribution and elimination half-lives.',
+    question: 'A scientist models compound distribution. A two-compartment model has rate constants k₁₂ = 0.5/h (central→peripheral), k₂₁ = 0.2/h (peripheral→central), and elimination k₁₀ = 0.3/h. After IV bolus of 100 mg, find the macro rate constants α and β, and the distribution and elimination half-lives.',
     options: [
       { letter: 'A', text: 'α = 0.8/h, β = 0.2/h, t½,α = 0.87 h, t½,β = 3.5 h' },
       { letter: 'B', text: 'α = 0.5/h, β = 0.3/h, t½,α = 1.4 h, t½,β = 2.3 h' },
