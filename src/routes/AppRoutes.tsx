@@ -7,6 +7,7 @@ import { GlobalFeedbackFAB } from "@/components/GlobalFeedbackFAB";
 // Core pages loaded eagerly (Home + Auth are always needed)
 import Home from "@/pages/Home";
 import Auth from "@/pages/Auth";
+import AuthCallback from "@/pages/AuthCallback";
 import NotFound from "@/pages/NotFound";
 
 // Everything else lazy-loaded for code splitting
@@ -124,6 +125,7 @@ const AppRoutes = () => (
       <Route path="/english" element={<EnglishQuiz />} />
       <Route path="/admin" element={<ProtectedRoute><Admin /></ProtectedRoute>} />
       <Route path="/auth" element={<Auth />} />
+      <Route path="/auth/callback" element={<AuthCallback />} />
       <Route path="/leaderboard" element={<Leaderboard />} />
       <Route path="/study" element={<StudyMode />} />
       <Route path="/problems-by-topic" element={<ProblemsByTopic />} />
