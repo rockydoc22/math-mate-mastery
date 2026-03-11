@@ -165,7 +165,7 @@ const Profile = () => {
           <FighterCustomizer achievements={achievements} />
         </Card>
 
-
+import { AssessmentHistory } from "@/components/AssessmentHistory";
         {/* Achievements */}
         <Card className="p-6">
           <h3 className="font-semibold mb-4">Achievements ({achievements.length}/{Object.keys(achievementDefs).length})</h3>
