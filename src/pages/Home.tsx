@@ -279,28 +279,14 @@ const Home = () => {
             />
           </div>
 
-          {/* Exam badge switcher */}
-          <div className="flex flex-wrap items-center justify-center gap-2 sm:gap-3 mb-2 max-w-full">
-            {(['sat', 'psat', 'act'] as const).map((type) => {
-              const cfg = EXAM_CONFIGS[type];
-              const isActive = examType === type;
-              return (
-                <button
-                  key={type}
-                  onClick={() => {
-                    setExamType(type);
-                    toast({ title: `Switched to ${cfg.name} mode ${cfg.icon}` });
-                  }}
-                  className={`text-base px-4 sm:px-5 py-2.5 sm:py-3 rounded-full font-bold transition-all ${
-                    isActive
-                      ? 'bg-primary text-primary-foreground shadow-md scale-105'
-                      : 'bg-muted text-muted-foreground hover:bg-muted/80 cursor-pointer'
-                  }`}
-                >
-                  {cfg.icon} {cfg.shortName}
-                </button>
-              );
-            })}
+          {/* Current exam indicator */}
+          <div className="flex items-center justify-center mb-2">
+            <button
+              onClick={handle40SquaredClick}
+              className="text-base px-5 py-2.5 rounded-full font-bold bg-primary text-primary-foreground shadow-md"
+            >
+              {examConfig.icon} {examConfig.shortName} Mode
+            </button>
           </div>
 
           {/* Exam Countdown */}
