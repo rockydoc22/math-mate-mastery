@@ -2930,7 +2930,7 @@ export const hardMathQuestions: Question[] = [
     explanation: 't½ = (0.693 × Vd)/CL. If CL decreases by 50%, t½ doubles: new t½ = 8 hours. Steady-state concentration: C_ss = (Dose rate)/CL. If CL halves, C_ss doubles. Ratio = 2. This is a common mechanism of compound-compound interactions affecting concentration.',
     difficulty: 'hard',
     domain: 'Advanced Algebra',
-    skill: 'Drug interaction pharmacokinetics'
+    skill: 'Compound interaction pharmacokinetics'
   }),
   addRating({
     id: 'hard-math-193',
