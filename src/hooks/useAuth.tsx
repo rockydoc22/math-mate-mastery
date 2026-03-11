@@ -36,7 +36,7 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
 
   const signUp = async (email: string, password: string, username: string) => {
     const redirectUrl = `${window.location.origin}/auth/callback`;
-    const { error } = await supabase.auth.signUp({
+    const { data, error } = await supabase.auth.signUp({
       email,
       password,
       options: {
@@ -44,7 +44,11 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
         data: { username }
       }
     });
-    return { error };
+
+    return {
+      error,
+      requiresEmailVerification: !data.session,
+    };
   };
 
   const signIn = async (email: string, password: string) => {

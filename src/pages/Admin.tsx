@@ -513,6 +513,9 @@ const Admin = () => {
           <TabsContent value="questions" className="mt-4">
             <QuestionDistribution />
           </TabsContent>
+          <TabsContent value="email" className="mt-4">
+            <EmailDeliveryDiagnostics />
+          </TabsContent>
           <TabsContent value="retention" className="space-y-4 mt-4">
             {/* Summary stats */}
             <div className="grid grid-cols-3 gap-4">
