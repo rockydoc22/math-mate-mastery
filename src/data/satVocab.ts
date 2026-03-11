@@ -95,7 +95,7 @@ export const SAT_VOCAB_WORDS: VocabWord[] = [
   
   // More common/advanced for breadth
   { id: 'v071', word: 'Advocate', definition: 'To publicly recommend or support', partOfSpeech: 'v/n', example: 'She advocates for environmental protection.', synonyms: ['champion', 'support', 'promote'], difficulty: 2, category: 'common' },
-  { id: 'v072', word: 'Complement', definition: 'A thing that completes or brings to perfection', partOfSpeech: 'n/v', example: 'The wine perfectly complemented the meal.', synonyms: ['enhance', 'supplement', 'complete'], difficulty: 2, category: 'common' },
+  { id: 'v072', word: 'Complement', definition: 'A thing that completes or brings to perfection', partOfSpeech: 'n/v', example: 'The sauce perfectly complemented the dish.', synonyms: ['enhance', 'supplement', 'complete'], difficulty: 2, category: 'common' },
   { id: 'v073', word: 'Elaborate', definition: 'To develop or present in further detail', partOfSpeech: 'v/adj', example: 'Could you elaborate on your proposal?', synonyms: ['expand', 'explain', 'develop'], difficulty: 2, category: 'common' },
   { id: 'v074', word: 'Fluctuate', definition: 'To rise and fall irregularly in number or amount', partOfSpeech: 'v', example: 'Oil prices fluctuate based on global demand.', synonyms: ['vary', 'oscillate', 'waver'], difficulty: 2, category: 'common' },
   { id: 'v075', word: 'Inherent', definition: 'Existing in something as a permanent, essential quality', partOfSpeech: 'adj', example: 'Creativity is an inherent part of human nature.', synonyms: ['intrinsic', 'innate', 'built-in'], difficulty: 3, category: 'advanced' },

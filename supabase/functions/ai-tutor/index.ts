@@ -100,7 +100,12 @@ Your goal is to:
 3. Teach the underlying concept or skill being tested
 4. Provide a memorable tip or trick for similar questions
 5. Keep explanations concise but thorough (2-3 paragraphs max)
-Use encouraging, supportive language appropriate for high school students.`;
+Use encouraging, supportive language appropriate for high school students.
+
+CONTENT GUARDRAILS — STRICTLY ENFORCED:
+- Do NOT generate, reference, or discuss any content related to: LGBTQ+ topics, transgender issues, sexually explicit material, profanity, vulgar language, alcohol, drugs, tobacco, or any age-inappropriate content.
+- If a question or topic touches on these areas, politely redirect to the academic concept being tested without engaging with prohibited content.
+- Keep all examples and analogies family-friendly and appropriate for K-12 students.`;
 
     const userPrompt = `Question: ${question}
 

@@ -495,7 +495,7 @@ export const hardMathQuestions: Question[] = [
   // Batch 3: More Advanced Problems
   addRating({
     id: 'hard-math-031',
-    question: 'A pharmaceutical company is testing drug absorption rates. Drug A follows first-order kinetics with concentration C_A(t) = 500e^(-0.15t) mg/L, where t is hours. Drug B is modeled by C_B(t) = 600t·e^(-0.2t) mg/L. A patient takes both drugs simultaneously. At what time does the total drug concentration in the bloodstream reach its maximum, and what is this maximum concentration?',
+    question: 'A research lab is testing nutrient absorption rates. Nutrient A follows first-order kinetics with concentration C_A(t) = 500e^(-0.15t) mg/L, where t is hours. Nutrient B is modeled by C_B(t) = 600t·e^(-0.2t) mg/L. A subject takes both nutrients simultaneously. At what time does the total nutrient concentration in the bloodstream reach its maximum, and what is this maximum concentration?',
     options: [
       { letter: 'A', text: 't = 3.2 hours, max = 412 mg/L' },
       { letter: 'B', text: 't = 4.5 hours, max = 385 mg/L' },
@@ -1342,7 +1342,7 @@ export const hardMathQuestions: Question[] = [
   }),
   addRating({
     id: 'hard-math-087',
-    question: 'A pharmacokinetic model describes drug distribution. A two-compartment model has equations: dC₁/dt = -(k₁₂ + k_el)C₁ + k₂₁C₂ and dC₂/dt = k₁₂C₁ - k₂₁C₂, where C₁ = plasma concentration, C₂ = tissue concentration, k₁₂ = 0.5/hr (plasma→tissue), k₂₁ = 0.2/hr (tissue→plasma), k_el = 0.3/hr (elimination). After IV bolus of 100 mg, what is C₁ after 4 hours?',
+    question: 'A pharmacokinetic model describes compound distribution. A two-compartment model has equations: dC₁/dt = -(k₁₂ + k_el)C₁ + k₂₁C₂ and dC₂/dt = k₁₂C₁ - k₂₁C₂, where C₁ = plasma concentration, C₂ = tissue concentration, k₁₂ = 0.5/hr (plasma→tissue), k₂₁ = 0.2/hr (tissue→plasma), k_el = 0.3/hr (elimination). After IV bolus of 100 mg, what is C₁ after 4 hours?',
     options: [
       { letter: 'A', text: 'C₁ = 12.5 mg/L' },
       { letter: 'B', text: 'C₁ = 18.2 mg/L' },
@@ -2214,7 +2214,7 @@ export const hardMathQuestions: Question[] = [
   }),
   addRating({
     id: 'hard-math-145',
-    question: 'A biomedical engineer designs drug delivery. A nanoparticle drug release follows Higuchi kinetics: Q = K_H × √t, where K_H = 5 mg/(cm²·h^0.5). The particle has surface area 0.1 cm² and drug loading 10 mg. Find the release rate at t = 4 hours, cumulative release at t = 9 hours, and time for 80% release.',
+    question: 'A biomedical engineer designs a nutrient delivery system. A nanoparticle compound release follows Higuchi kinetics: Q = K_H × √t, where K_H = 5 mg/(cm²·h^0.5). The particle has surface area 0.1 cm² and compound loading 10 mg. Find the release rate at t = 4 hours, cumulative release at t = 9 hours, and time for 80% release.',
     options: [
       { letter: 'A', text: 'Rate(4h) = 0.125 mg/h, Q(9h) = 1.5 mg, t_80% = 256 hours' },
       { letter: 'B', text: 'Rate(4h) = 0.250 mg/h, Q(9h) = 2.0 mg, t_80% = 144 hours' },
@@ -2225,7 +2225,7 @@ export const hardMathQuestions: Question[] = [
     explanation: 'Q = 5 × 0.1 × √t = 0.5√t mg. At t = 9h: Q = 0.5 × 3 = 1.5 mg. Release rate: dQ/dt = 0.5/(2√t) = 0.25/√t. At t = 4h: rate = 0.25/2 = 0.125 mg/h. For 80% release: 0.8 × 10 = 0.5√t → √t = 16 → t = 256 hours.',
     difficulty: 'hard',
     domain: 'Advanced Algebra',
-    skill: 'Drug release kinetics'
+    skill: 'Compound release kinetics'
   }),
   addRating({
     id: 'hard-math-146',
@@ -2604,7 +2604,7 @@ export const hardMathQuestions: Question[] = [
   }),
   addRating({
     id: 'hard-math-171',
-    question: 'A pharmacokineticist models drug distribution. A two-compartment model has rate constants k₁₂ = 0.5/h (central→peripheral), k₂₁ = 0.2/h (peripheral→central), and elimination k₁₀ = 0.3/h. After IV bolus of 100 mg, find the macro rate constants α and β, and the distribution and elimination half-lives.',
+    question: 'A scientist models compound distribution. A two-compartment model has rate constants k₁₂ = 0.5/h (central→peripheral), k₂₁ = 0.2/h (peripheral→central), and elimination k₁₀ = 0.3/h. After IV bolus of 100 mg, find the macro rate constants α and β, and the distribution and elimination half-lives.',
     options: [
       { letter: 'A', text: 'α = 0.8/h, β = 0.2/h, t½,α = 0.87 h, t½,β = 3.5 h' },
       { letter: 'B', text: 'α = 0.5/h, β = 0.3/h, t½,α = 1.4 h, t½,β = 2.3 h' },
@@ -2919,7 +2919,7 @@ export const hardMathQuestions: Question[] = [
   }),
   addRating({
     id: 'hard-math-192',
-    question: 'A pharmacologist studies drug interactions. Drug A inhibits the metabolism of Drug B. Drug B normally has half-life t½ = 4 hours and clearance CL = 10 L/h. If Drug A reduces clearance by 50%, calculate the new half-life and the steady-state concentration ratio (with/without inhibitor) at the same dose rate.',
+    question: 'A researcher studies compound interactions. Compound A inhibits the metabolism of Compound B. Compound B normally has half-life t½ = 4 hours and clearance CL = 10 L/h. If Compound A reduces clearance by 50%, calculate the new half-life and the steady-state concentration ratio (with/without inhibitor) at the same dose rate.',
     options: [
       { letter: 'A', text: 'New t½ = 8 hours, C_ss ratio = 2' },
       { letter: 'B', text: 'New t½ = 2 hours, C_ss ratio = 0.5' },
@@ -2927,10 +2927,10 @@ export const hardMathQuestions: Question[] = [
       { letter: 'D', text: 'New t½ = 6 hours, C_ss ratio = 1.5' }
     ],
     correctAnswer: 'A',
-    explanation: 't½ = (0.693 × Vd)/CL. If CL decreases by 50%, t½ doubles: new t½ = 8 hours. Steady-state concentration: C_ss = (Dose rate)/CL. If CL halves, C_ss doubles. Ratio = 2. This is a common mechanism of drug-drug interactions causing toxicity.',
+    explanation: 't½ = (0.693 × Vd)/CL. If CL decreases by 50%, t½ doubles: new t½ = 8 hours. Steady-state concentration: C_ss = (Dose rate)/CL. If CL halves, C_ss doubles. Ratio = 2. This is a common mechanism of compound-compound interactions affecting concentration.',
     difficulty: 'hard',
     domain: 'Advanced Algebra',
-    skill: 'Drug interaction pharmacokinetics'
+    skill: 'Compound interaction pharmacokinetics'
   }),
   addRating({
     id: 'hard-math-193',
@@ -3534,7 +3534,7 @@ export const hardMathQuestions: Question[] = [
   }),
   addRating({
     id: 'hard-math-233',
-    question: 'A pharmacologist models drug elimination. A drug follows first-order kinetics with elimination rate constant k = 0.1/hr. Initial concentration is C₀ = 100 μg/mL. Calculate concentration at t = 12 hours, clearance if volume of distribution V_d = 50 L, and dosing interval to maintain C_min > 25 μg/mL.',
+    question: 'A scientist models compound elimination. A compound follows first-order kinetics with elimination rate constant k = 0.1/hr. Initial concentration is C₀ = 100 μg/mL. Calculate concentration at t = 12 hours, clearance if volume of distribution V_d = 50 L, and dosing interval to maintain C_min > 25 μg/mL.',
     options: [
       { letter: 'A', text: 'C(12) = 30.1 μg/mL, CL = 5 L/hr, τ < 14 hours' },
       { letter: 'B', text: 'C(12) = 50 μg/mL, CL = 10 L/hr, τ < 7 hours' },
@@ -4164,7 +4164,7 @@ export const hardMathQuestions: Question[] = [
   }),
   addRating({
     id: 'hard-math-275',
-    question: 'A pharmacometrician models drug clearance. A two-compartment model has central volume V_c = 10 L, peripheral volume V_p = 20 L, intercompartmental clearance Q = 5 L/h, and elimination clearance CL = 2 L/h. Calculate the distribution and elimination half-lives.',
+    question: 'A researcher models compound clearance. A two-compartment model has central volume V_c = 10 L, peripheral volume V_p = 20 L, intercompartmental clearance Q = 5 L/h, and elimination clearance CL = 2 L/h. Calculate the distribution and elimination half-lives.',
     options: [
       { letter: 'A', text: 't½,α ≈ 1.5 h (distribution), t½,β ≈ 14 h (elimination)' },
       { letter: 'B', text: 't½,α ≈ 5 h, t½,β ≈ 5 h' },

@@ -51,7 +51,9 @@ serve(async (req) => {
 2. One area to focus on next
 3. A recommended next activity
 4. One small actionable tip
-Keep it to 3-4 short paragraphs. Use supportive, motivating language for a high school student.`;
+Keep it to 3-4 short paragraphs. Use supportive, motivating language for a high school student.
+
+CONTENT GUARDRAILS: Do NOT reference LGBTQ+ topics, transgender issues, sexually explicit material, profanity, alcohol, drugs, or any age-inappropriate content. Keep all content family-friendly and appropriate for K-12 students.`;
 
       userPrompt = `Session stats:
 - Questions answered: ${recentStats?.answered || 0}
