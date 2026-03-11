@@ -6,9 +6,10 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { supabase } from "@/integrations/supabase/client";
 import { toast } from "@/hooks/use-toast";
 import { Link } from "react-router-dom";
-import { ArrowLeft, Trash2, Check, Eye, ShieldAlert, Users, Flag, GraduationCap, BarChart3, TrendingUp } from "lucide-react";
+import { ArrowLeft, Trash2, Check, Eye, ShieldAlert, Users, Flag, GraduationCap, BarChart3, TrendingUp, Mail } from "lucide-react";
 import { useAuth } from "@/hooks/useAuth";
 import { QuestionDistribution } from "@/components/admin/QuestionDistribution";
+import { EmailDeliveryDiagnostics } from "@/components/admin/EmailDeliveryDiagnostics";
 import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer, LineChart, Line, CartesianGrid } from "recharts";
 
 interface FlaggedQuestion {
@@ -392,7 +393,7 @@ const Admin = () => {
         </div>
 
         <Tabs defaultValue="users" className="w-full">
-          <TabsList className="grid w-full grid-cols-4">
+          <TabsList className="grid w-full grid-cols-5">
             <TabsTrigger value="users" className="gap-2">
               <Users className="w-4 h-4" />
               Users ({userStats.length})
@@ -400,6 +401,10 @@ const Admin = () => {
             <TabsTrigger value="flags" className="gap-2">
               <Flag className="w-4 h-4" />
               Flagged ({flaggedQuestions.length})
+            </TabsTrigger>
+            <TabsTrigger value="email" className="gap-2">
+              <Mail className="w-4 h-4" />
+              Email
             </TabsTrigger>
             <TabsTrigger value="questions" className="gap-2">
               <BarChart3 className="w-4 h-4" />
@@ -507,6 +512,9 @@ const Admin = () => {
 
           <TabsContent value="questions" className="mt-4">
             <QuestionDistribution />
+          </TabsContent>
+          <TabsContent value="email" className="mt-4">
+            <EmailDeliveryDiagnostics />
           </TabsContent>
           <TabsContent value="retention" className="space-y-4 mt-4">
             {/* Summary stats */}

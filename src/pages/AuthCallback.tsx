@@ -1,44 +1,97 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { supabase } from "@/integrations/supabase/client";
 
+type SupportedOtpType = "signup" | "invite" | "magiclink" | "recovery" | "email_change" | "email";
+
+const supportedOtpTypes = new Set<SupportedOtpType>([
+  "signup",
+  "invite",
+  "magiclink",
+  "recovery",
+  "email_change",
+  "email",
+]);
+
+const isSupportedOtpType = (value: string | null): value is SupportedOtpType =>
+  value !== null && supportedOtpTypes.has(value as SupportedOtpType);
+
 const AuthCallback = () => {
   const navigate = useNavigate();
+  const [statusText, setStatusText] = useState("Verifying your email…");
 
   useEffect(() => {
-    const handleCallback = async () => {
-      const url = new URL(window.location.href);
-      const code = url.searchParams.get("code");
-      const error = url.searchParams.get("error");
-      const errorDescription = url.searchParams.get("error_description");
+    let isMounted = true;
 
-      if (error) {
-        console.error("Auth callback error:", error, errorDescription);
-        navigate("/auth", { replace: true });
-        return;
+    const updateStatus = (message: string) => {
+      if (isMounted) {
+        setStatusText(message);
       }
-
-      if (code) {
-        const { error: exchangeError } = await supabase.auth.exchangeCodeForSession(code);
-        if (exchangeError) {
-          console.error("Code exchange failed:", exchangeError.message);
-          navigate("/auth", { replace: true });
-          return;
-        }
-      }
-
-      // Successfully authenticated — go to home
-      navigate("/", { replace: true });
     };
 
-    handleCallback();
+    const handleCallback = async () => {
+      try {
+        const url = new URL(window.location.href);
+        const params = url.searchParams;
+        const hashParams = new URLSearchParams(window.location.hash.replace(/^#/, ""));
+
+        const error = params.get("error") ?? hashParams.get("error");
+        const errorDescription =
+          params.get("error_description") ?? hashParams.get("error_description");
+
+        if (error) {
+          throw new Error(errorDescription ?? error);
+        }
+
+        const code = params.get("code");
+        const tokenHash = params.get("token_hash") ?? hashParams.get("token_hash");
+        const otpType = params.get("type") ?? hashParams.get("type");
+        const accessToken = hashParams.get("access_token") ?? params.get("access_token");
+        const refreshToken = hashParams.get("refresh_token") ?? params.get("refresh_token");
+
+        if (code) {
+          updateStatus("Signing you in…");
+          const { error: exchangeError } = await supabase.auth.exchangeCodeForSession(code);
+          if (exchangeError) throw exchangeError;
+        } else if (tokenHash && isSupportedOtpType(otpType)) {
+          updateStatus("Confirming your email…");
+          const { error: verifyError } = await supabase.auth.verifyOtp({
+            token_hash: tokenHash,
+            type: otpType,
+          });
+          if (verifyError) throw verifyError;
+        } else if (accessToken && refreshToken) {
+          updateStatus("Finalizing your session…");
+          const { error: sessionError } = await supabase.auth.setSession({
+            access_token: accessToken,
+            refresh_token: refreshToken,
+          });
+          if (sessionError) throw sessionError;
+        }
+
+        const {
+          data: { session },
+        } = await supabase.auth.getSession();
+
+        navigate(session ? "/" : "/auth", { replace: true });
+      } catch (error) {
+        console.error("Auth callback error:", error);
+        navigate("/auth", { replace: true });
+      }
+    };
+
+    void handleCallback();
+
+    return () => {
+      isMounted = false;
+    };
   }, [navigate]);
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-background">
       <div className="text-center">
         <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-primary mx-auto mb-4" />
-        <p className="text-muted-foreground">Verifying your email…</p>
+        <p className="text-muted-foreground">{statusText}</p>
       </div>
     </div>
   );

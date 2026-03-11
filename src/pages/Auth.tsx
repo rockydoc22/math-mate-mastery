@@ -135,9 +135,20 @@ const Auth = () => {
           return;
         }
         
-        const { error } = await signUp(form.email, form.password, form.username);
+        const { error, requiresEmailVerification } = await signUp(form.email, form.password, form.username);
         if (error) throw error;
-        toast({ title: "Account created! Welcome aboard! 🎮" });
+        toast({
+          title: requiresEmailVerification
+            ? "Check your email to verify your account"
+            : "Account created! Welcome aboard! 🎮",
+          description: requiresEmailVerification
+            ? "Open the verification email and click the link to finish signing in."
+            : undefined,
+        });
+
+        if (requiresEmailVerification) {
+          setMode("signIn");
+        }
       } else if (mode === "signIn") {
         const identifier = form.emailOrUsername.trim();
 
