@@ -149,6 +149,7 @@ const MathQuiz = () => {
               onSelectAnswer={handleSelectAnswer}
               showResult={showResult}
               questionType="math"
+              onFlagged={handleFlagged}
             />
           </div>
 
