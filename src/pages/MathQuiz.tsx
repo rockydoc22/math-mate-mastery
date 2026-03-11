@@ -22,6 +22,7 @@ const MathQuiz = () => {
   const [screenShake, setScreenShake] = useState(false);
   const [showConfetti, setShowConfetti] = useState(false);
   const [activeMilestone, setActiveMilestone] = useState<string | null>(null);
+  const [flaggedQuestions, setFlaggedQuestions] = useState<Set<number>>(new Set());
   const { combo, registerCorrect, registerIncorrect, getComboMessage, getComboIntensity, resetCombo } = useComboSystem();
   const { playCorrect, playWrong, playCombo } = useSoundEffects();
 
