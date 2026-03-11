@@ -19,6 +19,7 @@ import { PWAUpdateButton } from "@/components/PWAUpdateButton";
 import { FighterCustomizer } from "@/components/FighterCustomizer";
 import { FighterVisual } from "@/components/FighterVisual";
 import { useFighterAvatar } from "@/hooks/useFighterAvatar";
+import { AssessmentHistory } from "@/components/AssessmentHistory";
 
 const AVATAR_OPTIONS = ["😎", "🧑‍🎓", "🦊", "🐱", "🐶", "🦁", "🐼", "🦄", "🚀", "⭐", "🔥", "💎", "👑", "🎯", "🧠", "💪"];
 const THEME_OPTIONS = [
