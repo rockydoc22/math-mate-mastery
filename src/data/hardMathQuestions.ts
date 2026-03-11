@@ -4164,7 +4164,7 @@ export const hardMathQuestions: Question[] = [
   }),
   addRating({
     id: 'hard-math-275',
-    question: 'A pharmacometrician models drug clearance. A two-compartment model has central volume V_c = 10 L, peripheral volume V_p = 20 L, intercompartmental clearance Q = 5 L/h, and elimination clearance CL = 2 L/h. Calculate the distribution and elimination half-lives.',
+    question: 'A researcher models compound clearance. A two-compartment model has central volume V_c = 10 L, peripheral volume V_p = 20 L, intercompartmental clearance Q = 5 L/h, and elimination clearance CL = 2 L/h. Calculate the distribution and elimination half-lives.',
     options: [
       { letter: 'A', text: 't½,α ≈ 1.5 h (distribution), t½,β ≈ 14 h (elimination)' },
       { letter: 'B', text: 't½,α ≈ 5 h, t½,β ≈ 5 h' },
