@@ -18,9 +18,10 @@ interface QuizCardProps {
   onSelectAnswer: (answer: string) => void;
   showResult: boolean;
   questionType?: 'math' | 'english';
+  onFlagged?: () => void;
 }
 
-export const QuizCard = ({ question, selectedAnswer, onSelectAnswer, showResult, questionType = 'math' }: QuizCardProps) => {
+export const QuizCard = ({ question, selectedAnswer, onSelectAnswer, showResult, questionType = 'math', onFlagged }: QuizCardProps) => {
   const [isFlagModalOpen, setIsFlagModalOpen] = useState(false);
   const [showKeyConcept, setShowKeyConcept] = useState(false);
   const [showPathAnalysis, setShowPathAnalysis] = useState(false);
@@ -255,6 +256,7 @@ export const QuizCard = ({ question, selectedAnswer, onSelectAnswer, showResult,
         onClose={() => setIsFlagModalOpen(false)}
         questionId={question.id}
         questionType={questionType}
+        onFlagged={onFlagged}
       />
     </>
   );
