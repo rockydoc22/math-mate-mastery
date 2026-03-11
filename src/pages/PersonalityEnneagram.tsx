@@ -71,9 +71,11 @@ const TYPE_INFO: Record<number, { name: string; icon: string; title: string; des
 };
 
 const PersonalityEnneagram = () => {
+  const { user } = useAuth();
   const [answers, setAnswers] = useState<Record<number, number>>({});
   const [currentPage, setCurrentPage] = useState(0);
   const [completed, setCompleted] = useState(false);
+  const [saving, setSaving] = useState(false);
   const qpp = 9;
   const totalPages = Math.ceil(QUESTIONS.length / qpp);
   const pageQs = QUESTIONS.slice(currentPage * qpp, (currentPage + 1) * qpp);
