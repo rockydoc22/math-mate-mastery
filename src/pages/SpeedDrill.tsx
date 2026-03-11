@@ -55,7 +55,7 @@ const SpeedDrill = () => {
   const [answers, setAnswers] = useState<(number | null)[]>([]);
   const [timeLeft, setTimeLeft] = useState(TIME_PER_QUESTION);
   const [totalTime, setTotalTime] = useState(0);
-  const timerRef = useRef<NodeJS.Timeout | null>(null);
+  const timerRef = useRef<ReturnType<typeof setInterval> | null>(null);
   const startTimeRef = useRef<number>(0);
 
   const startDrill = (subject: "math" | "english" | "both") => {

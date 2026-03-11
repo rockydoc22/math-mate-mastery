@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
 import { supabase } from "@/integrations/supabase/client";
 import { toast } from "@/hooks/use-toast";
+import { AlertTriangle, SkipForward } from "lucide-react";
 
 interface FlagQuestionModalProps {
   isOpen: boolean;
@@ -11,11 +12,13 @@ interface FlagQuestionModalProps {
   questionId: string;
   questionType: 'math' | 'english' | 'science';
   questionData?: Record<string, any>;
+  onFlagged?: () => void;
 }
 
-export const FlagQuestionModal = ({ isOpen, onClose, questionId, questionType, questionData }: FlagQuestionModalProps) => {
+export const FlagQuestionModal = ({ isOpen, onClose, questionId, questionType, questionData, onFlagged }: FlagQuestionModalProps) => {
   const [notes, setNotes] = useState('');
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitted, setSubmitted] = useState(false);
   const [userId, setUserId] = useState<string | null>(null);
 
   useEffect(() => {
@@ -25,6 +28,14 @@ export const FlagQuestionModal = ({ isOpen, onClose, questionId, questionType, q
     };
     getUser();
   }, []);
+
+  // Reset state when modal opens
+  useEffect(() => {
+    if (isOpen) {
+      setSubmitted(false);
+      setNotes('');
+    }
+  }, [isOpen]);
 
   const handleSubmit = async () => {
     if (!userId) {
@@ -68,10 +79,9 @@ export const FlagQuestionModal = ({ isOpen, onClose, questionId, questionType, q
 
       toast({ 
         title: "Thank you for letting us know! 🙏", 
-        description: "We will review, adjust, and let you know when it's fixed." 
+        description: "We will review and fix this question." 
       });
-      onClose();
-      setNotes('');
+      setSubmitted(true);
     } catch (error) {
       console.error('Error flagging question:', error);
       toast({ title: "Error", description: "Failed to flag question. Please try again.", variant: "destructive" });
@@ -79,6 +89,54 @@ export const FlagQuestionModal = ({ isOpen, onClose, questionId, questionType, q
       setIsSubmitting(false);
     }
   };
+
+  const handleSkip = () => {
+    onFlagged?.();
+    onClose();
+  };
+
+  const handleCloseAfterSubmit = () => {
+    onClose();
+  };
+
+  if (submitted) {
+    return (
+      <Dialog open={isOpen} onOpenChange={handleCloseAfterSubmit}>
+        <DialogContent className="sm:max-w-md">
+          <DialogHeader>
+            <DialogTitle className="flex items-center gap-2">
+              <AlertTriangle className="w-5 h-5 text-amber-500" />
+              Question Flagged
+            </DialogTitle>
+            <DialogDescription>
+              This question has been reported and will be reviewed.
+            </DialogDescription>
+          </DialogHeader>
+          
+          <div className="py-4 space-y-4">
+            <div className="bg-muted/50 rounded-lg p-4 space-y-2">
+              <p className="text-sm font-medium">No penalty for this question! 🛡️</p>
+              <ul className="text-xs text-muted-foreground space-y-1">
+                <li>• <strong>Guess and get it right?</strong> You still get full credit! ✅</li>
+                <li>• <strong>Guess and get it wrong?</strong> No penalty at all — it's the question's fault, not yours. 🙅</li>
+                <li>• <strong>Want to skip?</strong> Move on with no effect on your score.</li>
+              </ul>
+            </div>
+          </div>
+
+          <DialogFooter className="flex-col gap-2 sm:flex-col">
+            <Button onClick={handleSkip} variant="outline" className="w-full gap-2">
+              <SkipForward className="w-4 h-4" />
+              Skip Without Penalty
+            </Button>
+            <Button onClick={handleCloseAfterSubmit} className="w-full">
+              Try Answering (No Penalty if Wrong)
+            </Button>
+          </DialogFooter>
+        </DialogContent>
+      </Dialog>
+    );
+  }
 
   return (
     <Dialog open={isOpen} onOpenChange={onClose}>

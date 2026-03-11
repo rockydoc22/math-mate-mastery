@@ -74,7 +74,7 @@ const TestDayTips = () => {
   const [breathPhase, setBreathPhase] = useState<"idle" | "inhale" | "hold1" | "exhale" | "hold2">("idle");
   const [breathCount, setBreathCount] = useState(0);
   const [breathTimer, setBreathTimer] = useState(0);
-  const breathRef = useRef<NodeJS.Timeout | null>(null);
+  const breathRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   const toggleTip = (id: string) => {
     setExpandedTip(expandedTip === id ? null : id);
