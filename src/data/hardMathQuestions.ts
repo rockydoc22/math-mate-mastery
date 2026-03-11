@@ -2927,7 +2927,7 @@ export const hardMathQuestions: Question[] = [
       { letter: 'D', text: 'New t½ = 6 hours, C_ss ratio = 1.5' }
     ],
     correctAnswer: 'A',
-    explanation: 't½ = (0.693 × Vd)/CL. If CL decreases by 50%, t½ doubles: new t½ = 8 hours. Steady-state concentration: C_ss = (Dose rate)/CL. If CL halves, C_ss doubles. Ratio = 2. This is a common mechanism of drug-drug interactions causing toxicity.',
+    explanation: 't½ = (0.693 × Vd)/CL. If CL decreases by 50%, t½ doubles: new t½ = 8 hours. Steady-state concentration: C_ss = (Dose rate)/CL. If CL halves, C_ss doubles. Ratio = 2. This is a common mechanism of compound-compound interactions affecting concentration.',
     difficulty: 'hard',
     domain: 'Advanced Algebra',
     skill: 'Drug interaction pharmacokinetics'
