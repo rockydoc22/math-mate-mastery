@@ -495,7 +495,7 @@ export const hardMathQuestions: Question[] = [
   // Batch 3: More Advanced Problems
   addRating({
     id: 'hard-math-031',
-    question: 'A pharmaceutical company is testing drug absorption rates. Drug A follows first-order kinetics with concentration C_A(t) = 500e^(-0.15t) mg/L, where t is hours. Drug B is modeled by C_B(t) = 600t·e^(-0.2t) mg/L. A patient takes both drugs simultaneously. At what time does the total drug concentration in the bloodstream reach its maximum, and what is this maximum concentration?',
+    question: 'A research lab is testing nutrient absorption rates. Nutrient A follows first-order kinetics with concentration C_A(t) = 500e^(-0.15t) mg/L, where t is hours. Nutrient B is modeled by C_B(t) = 600t·e^(-0.2t) mg/L. A subject takes both nutrients simultaneously. At what time does the total nutrient concentration in the bloodstream reach its maximum, and what is this maximum concentration?',
     options: [
       { letter: 'A', text: 't = 3.2 hours, max = 412 mg/L' },
       { letter: 'B', text: 't = 4.5 hours, max = 385 mg/L' },
