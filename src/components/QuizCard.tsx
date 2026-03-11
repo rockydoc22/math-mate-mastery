@@ -256,6 +256,7 @@ export const QuizCard = ({ question, selectedAnswer, onSelectAnswer, showResult,
         onClose={() => setIsFlagModalOpen(false)}
         questionId={question.id}
         questionType={questionType}
+        onFlagged={onFlagged}
       />
     </>
   );
