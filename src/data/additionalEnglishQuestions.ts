@@ -1403,10 +1403,10 @@ export const additionalEnglishQuestions: EnglishQuestion[] = [
     id: "add-eng-088",
     question: "Which choice best uses an analogy to clarify a complex concept?",
     options: [
-      { letter: "A", text: "The economy is complicated." },
-      { letter: "B", text: "The economy works in mysterious ways." },
+      { letter: "A", text: "Much like how a thermostat maintains temperature through constant adjustment, the Federal Reserve uses interest rates to regulate economic activity." },
+      { letter: "B", text: "The economy functions as a series of interconnected markets, each responding to shifts in supply and demand across multiple sectors simultaneously." },
       { letter: "C", text: "Like a garden requiring constant attention—watering, pruning, and protection from pests—a healthy economy demands ongoing cultivation through careful policy decisions." },
-      { letter: "D", text: "The economy involves money and trade." }
+      { letter: "D", text: "Economic growth depends on a complex interplay of consumer spending, business investment, government policy, and international trade balances." }
     ],
     correctAnswer: "C",
     explanation: "The garden analogy makes abstract economic concepts more accessible.",
