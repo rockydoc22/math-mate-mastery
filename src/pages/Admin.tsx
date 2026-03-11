@@ -9,6 +9,7 @@ import { Link } from "react-router-dom";
 import { ArrowLeft, Trash2, Check, Eye, ShieldAlert, Users, Flag, GraduationCap, BarChart3, TrendingUp, Mail } from "lucide-react";
 import { useAuth } from "@/hooks/useAuth";
 import { QuestionDistribution } from "@/components/admin/QuestionDistribution";
+import { EmailDeliveryDiagnostics } from "@/components/admin/EmailDeliveryDiagnostics";
 import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer, LineChart, Line, CartesianGrid } from "recharts";
 
 interface FlaggedQuestion {
