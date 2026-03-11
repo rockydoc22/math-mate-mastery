@@ -2225,7 +2225,7 @@ export const hardMathQuestions: Question[] = [
     explanation: 'Q = 5 × 0.1 × √t = 0.5√t mg. At t = 9h: Q = 0.5 × 3 = 1.5 mg. Release rate: dQ/dt = 0.5/(2√t) = 0.25/√t. At t = 4h: rate = 0.25/2 = 0.125 mg/h. For 80% release: 0.8 × 10 = 0.5√t → √t = 16 → t = 256 hours.',
     difficulty: 'hard',
     domain: 'Advanced Algebra',
-    skill: 'Drug release kinetics'
+    skill: 'Compound release kinetics'
   }),
   addRating({
     id: 'hard-math-146',
