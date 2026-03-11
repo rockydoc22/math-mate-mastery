@@ -1342,7 +1342,7 @@ export const hardMathQuestions: Question[] = [
   }),
   addRating({
     id: 'hard-math-087',
-    question: 'A pharmacokinetic model describes drug distribution. A two-compartment model has equations: dC₁/dt = -(k₁₂ + k_el)C₁ + k₂₁C₂ and dC₂/dt = k₁₂C₁ - k₂₁C₂, where C₁ = plasma concentration, C₂ = tissue concentration, k₁₂ = 0.5/hr (plasma→tissue), k₂₁ = 0.2/hr (tissue→plasma), k_el = 0.3/hr (elimination). After IV bolus of 100 mg, what is C₁ after 4 hours?',
+    question: 'A pharmacokinetic model describes compound distribution. A two-compartment model has equations: dC₁/dt = -(k₁₂ + k_el)C₁ + k₂₁C₂ and dC₂/dt = k₁₂C₁ - k₂₁C₂, where C₁ = plasma concentration, C₂ = tissue concentration, k₁₂ = 0.5/hr (plasma→tissue), k₂₁ = 0.2/hr (tissue→plasma), k_el = 0.3/hr (elimination). After IV bolus of 100 mg, what is C₁ after 4 hours?',
     options: [
       { letter: 'A', text: 'C₁ = 12.5 mg/L' },
       { letter: 'B', text: 'C₁ = 18.2 mg/L' },
