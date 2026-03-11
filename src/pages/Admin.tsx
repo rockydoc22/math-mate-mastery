@@ -393,7 +393,7 @@ const Admin = () => {
         </div>
 
         <Tabs defaultValue="users" className="w-full">
-          <TabsList className="grid w-full grid-cols-4">
+          <TabsList className="grid w-full grid-cols-5">
             <TabsTrigger value="users" className="gap-2">
               <Users className="w-4 h-4" />
               Users ({userStats.length})
@@ -401,6 +401,10 @@ const Admin = () => {
             <TabsTrigger value="flags" className="gap-2">
               <Flag className="w-4 h-4" />
               Flagged ({flaggedQuestions.length})
+            </TabsTrigger>
+            <TabsTrigger value="email" className="gap-2">
+              <Mail className="w-4 h-4" />
+              Email
             </TabsTrigger>
             <TabsTrigger value="questions" className="gap-2">
               <BarChart3 className="w-4 h-4" />
