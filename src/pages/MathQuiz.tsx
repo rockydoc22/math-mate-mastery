@@ -36,16 +36,16 @@ const MathQuiz = () => {
   const handleSubmit = () => {
     setShowResult(true);
     const isCorrect = selectedAnswer === currentQuestion.correctAnswer;
+    const isFlagged = flaggedQuestions.has(currentQuestionIndex);
+    
     if (isCorrect) {
       setScore(score + 1);
       playCorrect();
       registerCorrect();
       
-      // Show confetti
       setShowConfetti(true);
       setTimeout(() => setShowConfetti(false), 600);
       
-      // Combo sounds and milestones
       const newComboCount = combo.count + 1;
       if (newComboCount >= 3) {
         playCombo(newComboCount);
@@ -60,10 +60,19 @@ const MathQuiz = () => {
         setScreenShake(true);
         setTimeout(() => setScreenShake(false), 300);
       }
+    } else if (isFlagged) {
+      // No penalty for flagged questions - don't register as incorrect
+      // Just move on without affecting combo or score
     } else {
       playWrong();
       registerIncorrect();
     }
+  };
+
+  const handleFlagged = () => {
+    // Mark current question as flagged (no penalty) and skip to next
+    setFlaggedQuestions(prev => new Set(prev).add(currentQuestionIndex));
+    handleNext();
   };
 
   const handleNext = () => {
