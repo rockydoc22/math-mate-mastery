@@ -71,8 +71,8 @@ const ASSESSMENTS: AssessmentItem[] = [
 
 const CATEGORIES = [
   { key: 'personality', label: 'Personality Assessments', icon: '🧩', description: 'Self-assessments + knowledge quizzes' },
-  { key: 'iq', label: 'IQ & Cognitive Skills', icon: '🧠', description: 'Non-clinical reasoning exercises' },
-  { key: 'sentence-completion', label: 'Sentence Completion', icon: '✏️', description: 'Vocabulary & reasoning drills' },
+  { key: 'iq', label: 'IQ & Cognitive Tests', icon: '🧠', description: 'IQ reasoning test + cognitive skills test (separate assessments)' },
+  { key: 'sentence-completion', label: 'Vocabulary Builder', icon: '📚', description: 'Learn words through context' },
 ];
 
 const IQPersonalityHub = () => {
