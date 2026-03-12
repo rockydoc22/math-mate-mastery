@@ -167,9 +167,10 @@ const CognitiveSkills = () => {
     const speed = generateSpeedChallenges();
     const attention = generateAttentionChallenges();
 
-    // Pick from each category proportionally
+    // Pick from each category proportionally, applying rotation to avoid repeats
     const all = [...memory, ...speed, ...attention].sort(() => Math.random() - 0.5);
-    const selected = all.slice(0, QUESTION_COUNT);
+    const rotated = applyRotation(all, QUESTION_COUNT, "cognitive");
+    const selected = rotated.slice(0, QUESTION_COUNT);
     setChallenges(selected);
     setCurrentIndex(0);
     setSelectedAnswer(null);
