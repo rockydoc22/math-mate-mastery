@@ -13,6 +13,17 @@ interface AuthContextType {
 
 const AuthContext = createContext<AuthContextType | undefined>(undefined);
 
+const AUTH_CALLBACK_PATH = "/auth/callback";
+const PUBLISHED_AUTH_ORIGIN = "https://math-mate-mastery.lovable.app";
+
+const getAuthRedirectUrl = () => {
+  const { origin, hostname } = window.location;
+  const isPreviewHost =
+    hostname.includes("lovableproject.com") || hostname.includes("id-preview--");
+
+  return `${isPreviewHost ? PUBLISHED_AUTH_ORIGIN : origin}${AUTH_CALLBACK_PATH}`;
+};
+
 export const AuthProvider = ({ children }: { children: ReactNode }) => {
   const [user, setUser] = useState<User | null>(null);
   const [session, setSession] = useState<Session | null>(null);

@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { supabase } from "@/integrations/supabase/client";
+import { toast } from "@/hooks/use-toast";
 
 type SupportedOtpType = "signup" | "invite" | "magiclink" | "recovery" | "email_change" | "email";
 
