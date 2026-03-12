@@ -77,6 +77,17 @@ const AuthCallback = () => {
         navigate(session ? "/" : "/auth", { replace: true });
       } catch (error) {
         console.error("Auth callback error:", error);
+        const message =
+          error instanceof Error && error.message
+            ? error.message
+            : "Your verification link is invalid or expired.";
+
+        toast({
+          title: "Couldn’t verify your email",
+          description: message,
+          variant: "destructive",
+        });
+
         navigate("/auth", { replace: true });
       }
     };
