@@ -6,6 +6,7 @@ import { ArrowLeft, Clock, CheckCircle2, XCircle, RotateCcw, Filter } from "luci
 import { getK12Exam } from "@/utils/k12ExamConfig";
 import { loadK12ExamQuestions, getK12QuestionsBySubject } from "@/data/k12Questions";
 import { Question } from "@/data/questions";
+import { shuffleAllQuestionOptions } from "@/utils/optionShuffler";
 import { useAuth } from "@/hooks/useAuth";
 import { supabase } from "@/integrations/supabase/client";
 import { toast } from "@/hooks/use-toast";
