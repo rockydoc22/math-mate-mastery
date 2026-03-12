@@ -65,6 +65,12 @@ const PACK_IMPORTERS = [
   () => import('./k12_pack_04.json'),
   () => import('./k12_pack_05.json'),
   () => import('./k12_pack_06.json'),
+  () => import('./k12_pack_07.json'),
+  () => import('./k12_pack_08.json'),
+  () => import('./k12_pack_09.json'),
+  () => import('./k12_pack_10.json'),
+  () => import('./k12_pack_11.json'),
+  () => import('./k12_pack_12.json'),
 ];
 
 // Legacy file importers

@@ -1,11 +1,59 @@
+import { useState, useEffect } from "react";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft, ChevronRight } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import { K12_EXAMS } from "@/utils/k12ExamConfig";
+import { loadK12ExamQuestions } from "@/data/k12Questions";
+import { ConsentGate } from "@/components/ConsentGate";
+
+const K12_DISCLAIMER = `Important Disclaimer
+
+This application provides original practice questions and materials created independently.
+
+This app is not affiliated with, endorsed by, sponsored by, or in any way officially connected to:
+
+• Riverside Insights (Iowa Assessments / ITBS)
+• GED Testing Service or Pearson VUE
+• ETS (HiSET)
+• Data Recognition Corporation (TASC)
+• NWEA (MAP Growth)
+• Renaissance Learning (STAR Assessments)
+• Pearson (Stanford 10 / SAT-10)
+• Data Recognition Corporation (TerraNova / CAT-6)
+• Pennsylvania Department of Education (PSSA)
+• New York State Education Department (Regents Exams)
+• Any other official testing organization or standardized exam
+
+None of the questions or content in this app are copied from, derived from, or reproduce official exams. This app is intended solely as an independent study aid.
+
+The use of exam names is for informational purposes only and does not imply any official relationship or approval.
+
+For official preparation materials, please visit the respective official websites.
+
+40² assumes no responsibility for how users perform on actual standardized exams.`;
+
+const K12_CHECKBOX = "I understand this platform uses only original content and is not affiliated with official testing organizations.";
 
 const K12Exams = () => {
   const navigate = useNavigate();
+  const [questionCounts, setQuestionCounts] = useState<Record<string, number>>({});
+  const [loadingCounts, setLoadingCounts] = useState(true);
+
+  useEffect(() => {
+    // Load counts for all exams in parallel
+    Promise.all(
+      K12_EXAMS.map(async (exam) => {
+        const qs = await loadK12ExamQuestions(exam.examKeys, exam.legacyJsonFiles);
+        return { id: exam.id, count: qs.length };
+      })
+    ).then((results) => {
+      const counts: Record<string, number> = {};
+      results.forEach(r => { counts[r.id] = r.count; });
+      setQuestionCounts(counts);
+      setLoadingCounts(false);
+    });
+  }, []);
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-background via-primary/5 to-accent/10 p-4">
@@ -21,24 +69,34 @@ const K12Exams = () => {
           <p className="text-sm text-muted-foreground">Standardized tests for homeschool and K-12 students</p>
         </div>
 
-        <div className="space-y-3">
-          {K12_EXAMS.map((exam) => (
-            <Card
-              key={exam.id}
-              className="p-4 border-2 cursor-pointer transition-all hover:border-primary/30 hover:scale-[1.01] hover:shadow-md"
-              onClick={() => navigate(`/k12-exam/${exam.id}`)}
-            >
-              <div className="flex items-center gap-4">
-                <span className="text-3xl">{exam.icon}</span>
-                <div className="flex-1">
-                  <h3 className="font-bold text-sm">{exam.name}</h3>
-                  <p className="text-xs text-muted-foreground">{exam.description}</p>
-                </div>
-                <ChevronRight className="w-5 h-5 text-muted-foreground" />
-              </div>
-            </Card>
-          ))}
-        </div>
+        <ConsentGate consentKey="k12_ip_disclaimer" title="Important Disclaimer" body={K12_DISCLAIMER} checkboxLabel={K12_CHECKBOX}>
+          <div className="space-y-3">
+            {K12_EXAMS.map((exam) => {
+              const count = questionCounts[exam.id];
+              return (
+                <Card
+                  key={exam.id}
+                  className="p-4 border-2 cursor-pointer transition-all hover:border-primary/30 hover:scale-[1.01] hover:shadow-md"
+                  onClick={() => navigate(`/k12-exam/${exam.id}`)}
+                >
+                  <div className="flex items-center gap-4">
+                    <span className="text-3xl">{exam.icon}</span>
+                    <div className="flex-1">
+                      <h3 className="font-bold text-sm">{exam.name}</h3>
+                      <p className="text-xs text-muted-foreground">{exam.description}</p>
+                      {!loadingCounts && count !== undefined && (
+                        <span className="inline-block mt-1 text-[10px] px-2 py-0.5 rounded-full bg-primary/10 text-primary font-medium">
+                          {count.toLocaleString()} questions
+                        </span>
+                      )}
+                    </div>
+                    <ChevronRight className="w-5 h-5 text-muted-foreground" />
+                  </div>
+                </Card>
+              );
+            })}
+          </div>
+        </ConsentGate>
       </div>
     </div>
   );
