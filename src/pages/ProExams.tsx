@@ -7,24 +7,29 @@ import { PRO_EXAMS, PRO_EXAM_CATEGORIES, type ProExamConfig } from "@/utils/proE
 import { BottomNav } from "@/components/BottomNav";
 import { ConsentGate } from "@/components/ConsentGate";
 
-const IP_DISCLAIMER = `INTELLECTUAL PROPERTY NOTICE & USER AGREEMENT
+const IP_DISCLAIMER = `Important Disclaimer
 
-This platform respects the intellectual property rights of all standardized test organizations including but not limited to ETS (GRE), GMAC (GMAT), LSAC (LSAT), AAMC (MCAT), ADA (DAT), and others.
+This application provides original, free-response format (FRC) practice questions and materials created independently. Multiple Choice questions are specifically limited.
 
-Our Content Policy:
-• All practice questions on this platform are ORIGINAL content created specifically for educational preparation purposes
-• We do NOT reproduce, copy, or distribute actual exam questions from any testing organization
-• Our questions are designed to test similar skills and concepts as the actual exams but are independently authored
-• Question formats, styles, and structures are inspired by publicly available test specifications but do not replicate proprietary content
-• If any content is identified as potentially infringing, we will promptly review and modify or remove it
+This app is not affiliated with, endorsed by, sponsored by, or in any way officially connected to:
 
-By continuing, you acknowledge and agree that:
-1. This is a third-party test preparation tool, NOT affiliated with or endorsed by the official testing organizations
-2. Practice scores are estimates and may not reflect actual exam performance
-3. You will not attempt to reproduce, share, or distribute content from this platform in ways that could infringe on any party's intellectual property
-4. You understand that official exam content is the property of its respective organizations
+• The Law School Admission Council (LSAC)
+• The LSAT® or any LSAT-related products or services
+• The Graduate Management Admission Council (GMAC)
+• The GMAT™ exam or any GMAT-related products or services
+• ACT Inc. (ACT)
+• ETS (GRE, TOEFL, Praxis, etc.)
+• College Board (SAT, PSAT, AP)
+• NCBE (bar exam components like MBE, MEE, MPT)
+• Any other official testing organization or standardized exam
 
-If you believe any content on this platform infringes on intellectual property rights, please contact us immediately for prompt resolution.`;
+None of the questions, passages, prompts, or content in this app are copied from, derived from, or reproduce official exams, questions, books, websites, or other protected exam materials. This app is intended solely as an independent study aid to help users practice logical reasoning, reading comprehension, analytical writing, quantitative reasoning, and related skills in a free-response format.
+
+The use of terms such as "LSAT-style," "GMAT-style," or similar descriptive phrases is for informational purposes only and does not imply any official relationship or approval.
+
+For official preparation materials, practice tests, registration, and policies, please visit the official respective websites.
+
+40² assumes no responsibility for how users perform on actual standardized exams. Success on the LSAT, GMAT, or any other test depends on many factors beyond practice with this application.`;
 
 const IP_CHECKBOX = "I have read and understand this notice. I acknowledge that this platform uses only original content and is not affiliated with or endorsed by official testing organizations. I agree to use this platform responsibly.";
 
