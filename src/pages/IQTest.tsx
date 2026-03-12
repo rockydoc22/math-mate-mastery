@@ -10,6 +10,7 @@ import { toast } from "@/hooks/use-toast";
 import { motion, AnimatePresence } from "framer-motion";
 import { BottomNav } from "@/components/BottomNav";
 import { format } from "date-fns";
+import { applyRotation, markQuestionCorrect } from "@/utils/questionRotation";
 
 interface IQItem {
   id: string;
