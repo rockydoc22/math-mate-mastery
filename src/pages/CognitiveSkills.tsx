@@ -203,6 +203,7 @@ const CognitiveSkills = () => {
     if (!selectedAnswer) return;
     const challenge = challenges[currentIndex];
     const isCorrect = selectedAnswer === challenge.answer;
+    if (isCorrect) markQuestionCorrect(challenge.id, "cognitive");
 
     setAnswers(prev => [...prev, {
       id: challenge.id,

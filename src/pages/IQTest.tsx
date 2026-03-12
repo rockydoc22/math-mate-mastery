@@ -173,6 +173,8 @@ const IQTest = () => {
       if (finalAnswers[it.id] === it.answer) {
         domainMap[it.domain].correct += 1;
         weightedScore += weight;
+        // Mark correctly answered for rotation
+        markQuestionCorrect(it.id, `iq-${ageRange}`);
       }
     });
 
