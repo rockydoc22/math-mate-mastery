@@ -6,6 +6,7 @@ import { ArrowLeft, Clock, CheckCircle2, XCircle, RotateCcw, Filter } from "luci
 import { getK12Exam } from "@/utils/k12ExamConfig";
 import { loadK12ExamQuestions, getK12QuestionsBySubject } from "@/data/k12Questions";
 import { Question } from "@/data/questions";
+import { shuffleAllQuestionOptions } from "@/utils/optionShuffler";
 import { useAuth } from "@/hooks/useAuth";
 import { supabase } from "@/integrations/supabase/client";
 import { toast } from "@/hooks/use-toast";
@@ -49,13 +50,17 @@ const K12ExamQuiz = () => {
     return Object.entries(counts).sort((a, b) => b[1] - a[1]);
   }, [allQuestions]);
 
-  const startQuiz = useCallback((subject?: string) => {
+  const startQuiz = useCallback((subject?: string, difficulty?: string) => {
     let pool = subject ? getK12QuestionsBySubject(allQuestions, subject) : allQuestions;
-    const shuffled = [...pool].sort(() => Math.random() - 0.5).slice(0, QUIZ_SIZE);
-    if (shuffled.length === 0) {
-      toast({ title: "No questions available", description: "This subject has no questions yet." });
+    if (difficulty) {
+      pool = pool.filter(q => q.difficulty.toLowerCase() === difficulty.toLowerCase());
+    }
+    const selected = [...pool].sort(() => Math.random() - 0.5).slice(0, QUIZ_SIZE);
+    if (selected.length === 0) {
+      toast({ title: "No questions available", description: "No questions match that filter." });
       return;
     }
+    const shuffled = shuffleAllQuestionOptions(selected);
     setQuizQuestions(shuffled);
     setCurrentIndex(0);
     setSelectedAnswer(null);
@@ -248,12 +253,27 @@ const K12ExamQuiz = () => {
           <p className="text-sm text-muted-foreground">{allQuestions.length.toLocaleString()} questions available</p>
         </div>
 
-        <Card className="p-4 cursor-pointer border-2 hover:border-primary/50 transition-all" onClick={() => startQuiz()}>
-          <div className="text-center space-y-1">
-            <h3 className="font-bold">🎲 Random Mix</h3>
-            <p className="text-xs text-muted-foreground">10 questions from all subjects</p>
+        {/* Difficulty filter */}
+        <div className="space-y-2">
+          <h3 className="text-sm font-semibold">🎯 Difficulty</h3>
+          <div className="grid grid-cols-4 gap-2">
+            {[
+              { label: 'All', value: undefined, emoji: '🎲' },
+              { label: 'Easy', value: 'Easy', emoji: '🟢' },
+              { label: 'Medium', value: 'Medium', emoji: '🟡' },
+              { label: 'Hard', value: 'Hard', emoji: '🔴' },
+            ].map(d => (
+              <Card
+                key={d.label}
+                className="p-3 cursor-pointer border-2 hover:border-primary/50 transition-all text-center"
+                onClick={() => startQuiz(undefined, d.value)}
+              >
+                <span className="text-lg">{d.emoji}</span>
+                <p className="text-xs font-medium mt-1">{d.label}</p>
+              </Card>
+            ))}
           </div>
-        </Card>
+        </div>
 
         <div className="space-y-2">
           <h3 className="text-sm font-semibold flex items-center gap-2">
