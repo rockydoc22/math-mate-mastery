@@ -5,6 +5,7 @@ import { useNavigate } from "react-router-dom";
 import { EXAM_CONFIGS, type ExamType } from "@/utils/examConfig";
 import { useExamType } from "@/hooks/useExamType";
 import { useAuth } from "@/hooks/useAuth";
+import { toast } from "sonner";
 
 const HighSchoolExams = () => {
   const navigate = useNavigate();
