@@ -143,7 +143,11 @@ const IQTest = () => {
     }
     selected.sort(() => Math.random() - 0.5);
 
-    setItems(selected);
+    // Apply rotation to avoid repeating correctly-answered questions
+    const rotated = applyRotation(selected, QUESTION_COUNT, `iq-${age}`);
+    const finalItems = rotated.slice(0, QUESTION_COUNT);
+
+    setItems(finalItems);
     setAgeRange(age);
     setCurrentIndex(0);
     setAnswers({});
