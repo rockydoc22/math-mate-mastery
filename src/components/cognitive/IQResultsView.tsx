@@ -1,7 +1,16 @@
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Brain, Clock, Check, X, TrendingUp } from "lucide-react";
-import type { IQItem, UserAnswer } from "@/pages/CognitiveSkills";
+import type { IQItem } from "@/components/cognitive/IQQuestionCard";
+
+export interface UserAnswer {
+  questionId: string;
+  selected: string;
+  correct: string;
+  isCorrect: boolean;
+  difficulty: string;
+  domain: string;
+}
 
 interface Props {
   answers: UserAnswer[];
