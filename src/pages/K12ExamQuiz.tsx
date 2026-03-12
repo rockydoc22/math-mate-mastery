@@ -253,12 +253,27 @@ const K12ExamQuiz = () => {
           <p className="text-sm text-muted-foreground">{allQuestions.length.toLocaleString()} questions available</p>
         </div>
 
-        <Card className="p-4 cursor-pointer border-2 hover:border-primary/50 transition-all" onClick={() => startQuiz()}>
-          <div className="text-center space-y-1">
-            <h3 className="font-bold">🎲 Random Mix</h3>
-            <p className="text-xs text-muted-foreground">10 questions from all subjects</p>
+        {/* Difficulty filter */}
+        <div className="space-y-2">
+          <h3 className="text-sm font-semibold">🎯 Difficulty</h3>
+          <div className="grid grid-cols-4 gap-2">
+            {[
+              { label: 'All', value: undefined, emoji: '🎲' },
+              { label: 'Easy', value: 'Easy', emoji: '🟢' },
+              { label: 'Medium', value: 'Medium', emoji: '🟡' },
+              { label: 'Hard', value: 'Hard', emoji: '🔴' },
+            ].map(d => (
+              <Card
+                key={d.label}
+                className="p-3 cursor-pointer border-2 hover:border-primary/50 transition-all text-center"
+                onClick={() => startQuiz(undefined, d.value)}
+              >
+                <span className="text-lg">{d.emoji}</span>
+                <p className="text-xs font-medium mt-1">{d.label}</p>
+              </Card>
+            ))}
           </div>
-        </Card>
+        </div>
 
         <div className="space-y-2">
           <h3 className="text-sm font-semibold flex items-center gap-2">
