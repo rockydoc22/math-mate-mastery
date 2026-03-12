@@ -9,6 +9,7 @@ import { supabase } from "@/integrations/supabase/client";
 import { toast } from "@/hooks/use-toast";
 import { motion, AnimatePresence } from "framer-motion";
 import { BottomNav } from "@/components/BottomNav";
+import { applyRotation, markQuestionCorrect } from "@/utils/questionRotation";
 
 // ── Cognitive test: memory, processing speed, attention ──
 
@@ -166,9 +167,10 @@ const CognitiveSkills = () => {
     const speed = generateSpeedChallenges();
     const attention = generateAttentionChallenges();
 
-    // Pick from each category proportionally
+    // Pick from each category proportionally, applying rotation to avoid repeats
     const all = [...memory, ...speed, ...attention].sort(() => Math.random() - 0.5);
-    const selected = all.slice(0, QUESTION_COUNT);
+    const rotated = applyRotation(all, QUESTION_COUNT, "cognitive");
+    const selected = rotated.slice(0, QUESTION_COUNT);
     setChallenges(selected);
     setCurrentIndex(0);
     setSelectedAnswer(null);
@@ -201,6 +203,7 @@ const CognitiveSkills = () => {
     if (!selectedAnswer) return;
     const challenge = challenges[currentIndex];
     const isCorrect = selectedAnswer === challenge.answer;
+    if (isCorrect) markQuestionCorrect(challenge.id, "cognitive");
 
     setAnswers(prev => [...prev, {
       id: challenge.id,

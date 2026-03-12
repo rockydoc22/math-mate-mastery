@@ -10,6 +10,7 @@ import { toast } from "@/hooks/use-toast";
 import { motion, AnimatePresence } from "framer-motion";
 import { BottomNav } from "@/components/BottomNav";
 import { format } from "date-fns";
+import { applyRotation, markQuestionCorrect } from "@/utils/questionRotation";
 
 interface IQItem {
   id: string;
@@ -142,7 +143,11 @@ const IQTest = () => {
     }
     selected.sort(() => Math.random() - 0.5);
 
-    setItems(selected);
+    // Apply rotation to avoid repeating correctly-answered questions
+    const rotated = applyRotation(selected, QUESTION_COUNT, `iq-${age}`);
+    const finalItems = rotated.slice(0, QUESTION_COUNT);
+
+    setItems(finalItems);
     setAgeRange(age);
     setCurrentIndex(0);
     setAnswers({});
@@ -168,6 +173,8 @@ const IQTest = () => {
       if (finalAnswers[it.id] === it.answer) {
         domainMap[it.domain].correct += 1;
         weightedScore += weight;
+        // Mark correctly answered for rotation
+        markQuestionCorrect(it.id, `iq-${ageRange}`);
       }
     });
 
