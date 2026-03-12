@@ -114,6 +114,7 @@ const PersonalityEnneagram = lazy(() => import("@/pages/PersonalityEnneagram"));
 const PersonalityStrengths = lazy(() => import("@/pages/PersonalityStrengths"));
 const HighSchoolExams = lazy(() => import("@/pages/HighSchoolExams"));
 const K12Exams = lazy(() => import("@/pages/K12Exams"));
+const K12ExamQuiz = lazy(() => import("@/pages/K12ExamQuiz"));
 
 const AppRoutes = () => (
   <>
