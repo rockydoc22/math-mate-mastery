@@ -108,7 +108,13 @@ const Home = () => {
   const [practiceDates, setPracticeDates] = useState<string[]>([]);
   const { streak: perfectStreak } = usePerfectStreak();
   const [showExamSelector, setShowExamSelector] = useState(false);
-  const [hasChosenExamThisSession, setHasChosenExamThisSession] = useState(false);
+  const [hasChosenExamThisSession, setHasChosenExamThisSession] = useState(() => {
+    try {
+      const userId = JSON.parse(sessionStorage.getItem('sb-ebzrddwipeogyffvlfqm-auth-token') || '{}')?.user?.id;
+      if (userId) return sessionStorage.getItem(`exam_choice_session_${userId}`) === "true";
+    } catch {}
+    return false;
+  });
   const [pinnedSubjects, setPinnedSubjects] = useState<string[]>([]);
   const [showPinManager, setShowPinManager] = useState(false);
 
