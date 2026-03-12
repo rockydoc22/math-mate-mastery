@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { supabase } from "@/integrations/supabase/client";
+import { toast } from "@/hooks/use-toast";
 
 type SupportedOtpType = "signup" | "invite" | "magiclink" | "recovery" | "email_change" | "email";
 
@@ -76,6 +77,17 @@ const AuthCallback = () => {
         navigate(session ? "/" : "/auth", { replace: true });
       } catch (error) {
         console.error("Auth callback error:", error);
+        const message =
+          error instanceof Error && error.message
+            ? error.message
+            : "Your verification link is invalid or expired.";
+
+        toast({
+          title: "Couldn’t verify your email",
+          description: message,
+          variant: "destructive",
+        });
+
         navigate("/auth", { replace: true });
       }
     };
