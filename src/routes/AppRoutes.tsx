@@ -226,6 +226,7 @@ const AppRoutes = () => (
       <Route path="/personality-strengths" element={<PersonalityStrengths />} />
       <Route path="/high-school-exams" element={<HighSchoolExams />} />
       <Route path="/k12-exams" element={<K12Exams />} />
+      <Route path="/k12-exam/:examId" element={<K12ExamQuiz />} />
       {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
       <Route path="*" element={<NotFound />} />
     </Routes>
