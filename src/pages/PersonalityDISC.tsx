@@ -8,6 +8,9 @@ import { Progress } from "@/components/ui/progress";
 import { supabase } from "@/integrations/supabase/client";
 import { useAuth } from "@/hooks/useAuth";
 import { toast } from "@/hooks/use-toast";
+import { DISCSliderQuestion } from "@/components/disc/DISCSliderQuestion";
+import { DISCResultsView } from "@/components/disc/DISCResultsView";
+import { DISCHistory } from "@/components/disc/DISCHistory";
 
 interface DISCQuestion { id: number; text: string; dim: "D" | "I" | "S" | "C"; }
 
@@ -42,118 +45,91 @@ const QUESTIONS: DISCQuestion[] = [
   {id:28,text:"I set high standards for myself and others.",dim:"C"},
 ];
 
-const LIKERT = [
-  { value: 1, label: "Strongly Disagree" },
-  { value: 2, label: "Disagree" },
-  { value: 3, label: "Neutral" },
-  { value: 4, label: "Agree" },
-  { value: 5, label: "Strongly Agree" },
-];
-
-const PROFILES: Record<string, { icon: string; title: string; desc: string; strengths: string[]; growth: string[]; color: string }> = {
-  D: { icon: "🔴", title: "Dominance", desc: "You are results-oriented, direct, and decisive. You thrive on challenges and taking charge.", strengths: ["Strong leadership", "Quick decision-making", "Results-focused", "Confident under pressure"], growth: ["Practice active listening", "Show patience with details", "Consider others' feelings", "Delegate with trust"], color: "text-red-500" },
-  I: { icon: "🟡", title: "Influence", desc: "You are enthusiastic, optimistic, and collaborative. You excel at motivating and persuading others.", strengths: ["Inspirational communication", "Team building", "Creative problem-solving", "Positive energy"], growth: ["Follow through on commitments", "Focus on details and data", "Manage time carefully", "Be objective in decisions"], color: "text-yellow-500" },
-  S: { icon: "🟢", title: "Steadiness", desc: "You are patient, reliable, and supportive. You value consistency and create harmonious environments.", strengths: ["Reliable and dependable", "Excellent listener", "Team-oriented", "Patient and calm"], growth: ["Speak up for your needs", "Embrace necessary change", "Set clear boundaries", "Express disagreement when needed"], color: "text-green-500" },
-  C: { icon: "🔵", title: "Conscientiousness", desc: "You are analytical, detail-oriented, and systematic. You value accuracy and maintain high standards.", strengths: ["Thorough analysis", "Quality-focused", "Systematic approach", "Objective decision-making"], growth: ["Accept 'good enough' sometimes", "Be open to intuitive approaches", "Share your reasoning with others", "Take action before perfect information"], color: "text-blue-500" },
-};
-
 const PersonalityDISC = () => {
   const { user } = useAuth();
+  // Slider values: 0-100 for each question, default 50 (neutral)
   const [answers, setAnswers] = useState<Record<number, number>>({});
   const [currentPage, setCurrentPage] = useState(0);
   const [completed, setCompleted] = useState(false);
   const [saving, setSaving] = useState(false);
+  const [resultData, setResultData] = useState<{ pcts: Record<string, number>; primary: string } | null>(null);
+
   const qpp = 7;
   const totalPages = Math.ceil(QUESTIONS.length / qpp);
   const pageQs = QUESTIONS.slice(currentPage * qpp, (currentPage + 1) * qpp);
   const answeredCount = Object.keys(answers).length;
 
+  const handleSliderChange = (id: number, value: number) => {
+    setAnswers(prev => ({ ...prev, [id]: value }));
+  };
+
   const calculateProfile = () => {
     const scores: Record<string, number> = { D: 0, I: 0, S: 0, C: 0 };
-    QUESTIONS.forEach(q => { scores[q.dim] += answers[q.id] || 3; });
+    QUESTIONS.forEach(q => {
+      // Convert 0-100 slider to 1-5 scale for scoring
+      const raw = answers[q.id] ?? 50;
+      const scaled = 1 + (raw / 100) * 4; // 0→1, 50→3, 100→5
+      scores[q.dim] += scaled;
+    });
     const total = scores.D + scores.I + scores.S + scores.C;
-    const pcts = { D: Math.round((scores.D / total) * 100), I: Math.round((scores.I / total) * 100), S: Math.round((scores.S / total) * 100), C: Math.round((scores.C / total) * 100) };
-    const primary = (Object.entries(scores).sort((a, b) => b[1] - a[1])[0][0]) as keyof typeof PROFILES;
+    const pcts = {
+      D: Math.round((scores.D / total) * 100),
+      I: Math.round((scores.I / total) * 100),
+      S: Math.round((scores.S / total) * 100),
+      C: Math.round((scores.C / total) * 100),
+    };
+    const primary = Object.entries(scores).sort((a, b) => b[1] - a[1])[0][0];
     return { scores, pcts, primary };
   };
 
-  const saveResults = async (profileData: { scores: Record<string, number>; pcts: Record<string, number>; primary: keyof typeof PROFILES }) => {
-    if (!user) return false;
-    
-    setSaving(true);
-    try {
-      const { error } = await supabase
-        .from("personality_results")
-        .insert({
-          user_id: user.id,
-          assessment_type: "disc",
-          raw_scores: profileData.scores,
-          result_type: profileData.primary,
-          result_data: {
-            percentages: profileData.pcts,
-            profile: PROFILES[profileData.primary],
-            answers: answers
-          }
-        });
+  const handleComplete = async () => {
+    const profileData = calculateProfile();
+    setResultData({ pcts: profileData.pcts, primary: profileData.primary });
 
-      if (error) throw error;
-      
-      toast({ title: "Results saved successfully!" });
-      return true;
-    } catch (error) {
-      console.error("Error saving DISC results:", error);
-      toast({ 
-        title: "Failed to save results", 
-        description: "Your results are still displayed, but couldn't be saved to your profile.",
-        variant: "destructive" 
-      });
-      return false;
-    } finally {
-      setSaving(false);
+    if (user) {
+      setSaving(true);
+      try {
+        const { error } = await supabase
+          .from("personality_results")
+          .insert({
+            user_id: user.id,
+            assessment_type: "disc",
+            raw_scores: profileData.scores,
+            result_type: profileData.primary,
+            result_data: {
+              percentages: profileData.pcts,
+              answers: answers,
+            },
+          });
+        if (error) throw error;
+        toast({ title: "Results saved!" });
+      } catch {
+        toast({ title: "Results displayed but couldn't save", variant: "destructive" });
+      } finally {
+        setSaving(false);
+      }
     }
+    setCompleted(true);
   };
 
-  if (completed) {
-    const { pcts, primary } = calculateProfile();
-    const info = PROFILES[primary];
-    const sorted = Object.entries(pcts).sort((a, b) => b[1] - a[1]);
+  if (completed && resultData) {
     return (
       <div className="min-h-screen bg-background pb-24">
         <div className="sticky top-0 z-10 bg-background/95 backdrop-blur border-b border-border px-4 py-3">
           <div className="max-w-2xl mx-auto flex items-center gap-3">
             <Link to="/iq-personality"><Button variant="ghost" size="icon"><ArrowLeft className="w-5 h-5" /></Button></Link>
-            <h1 className="text-xl font-bold">Your DISC Profile</h1>
+            <h1 className="text-xl font-bold text-foreground">Your DISC Profile</h1>
           </div>
         </div>
-        <div className="max-w-2xl mx-auto px-4 py-6 space-y-6">
-          <Card className="p-4 border-amber-500/30 bg-amber-500/5">
-            <p className="text-xs text-muted-foreground"><strong>⚠️ Non-Clinical:</strong> Educational self-assessment only. Not a diagnostic tool. If you have mental health concerns, please consult a licensed professional.</p>
-          </Card>
-          <Card className="p-6 text-center space-y-2">
-            <span className="text-5xl">{info.icon}</span>
-            <h2 className={`text-3xl font-black ${info.color}`}>{info.title}</h2>
-            <p className="text-sm text-muted-foreground max-w-md mx-auto">{info.desc}</p>
-          </Card>
-          <Card className="p-5 space-y-4">
-            <h3 className="font-bold">Profile Breakdown</h3>
-            {sorted.map(([dim, pct]) => (
-              <div key={dim} className="space-y-1">
-                <div className="flex justify-between text-xs"><span className="font-medium">{PROFILES[dim].icon} {PROFILES[dim].title}</span><span>{pct}%</span></div>
-                <div className="h-3 bg-muted rounded-full overflow-hidden">
-                  <div className="h-full bg-primary rounded-full transition-all" style={{ width: `${pct}%` }} />
-                </div>
-              </div>
-            ))}
-          </Card>
-          <Card className="p-5 space-y-3">
-            <h3 className="font-bold text-green-600">💪 Strengths</h3>
-            {info.strengths.map((s, i) => <p key={i} className="text-sm pl-4 border-l-2 border-green-500/30">{s}</p>)}
-          </Card>
-          <Card className="p-5 space-y-3">
-            <h3 className="font-bold text-amber-600">🌱 Growth Areas</h3>
-            {info.growth.map((g, i) => <p key={i} className="text-sm pl-4 border-l-2 border-amber-500/30">{g}</p>)}
-          </Card>
-          <Button onClick={() => { setAnswers({}); setCurrentPage(0); setCompleted(false); }} className="w-full">Retake</Button>
+        <div className="max-w-2xl mx-auto px-4 py-6">
+          <DISCResultsView
+            pcts={resultData.pcts}
+            primary={resultData.primary}
+            onRetake={() => { setAnswers({}); setCurrentPage(0); setCompleted(false); setResultData(null); }}
+          />
+          <div className="mt-6">
+            <DISCHistory />
+          </div>
         </div>
         <BottomNav />
       </div>
@@ -165,37 +141,44 @@ const PersonalityDISC = () => {
       <div className="sticky top-0 z-10 bg-background/95 backdrop-blur border-b border-border px-4 py-3">
         <div className="max-w-2xl mx-auto flex items-center gap-3">
           <Link to="/iq-personality"><Button variant="ghost" size="icon"><ArrowLeft className="w-5 h-5" /></Button></Link>
-          <div className="flex-1"><h1 className="text-lg font-bold">DISC Profile Assessment</h1><p className="text-xs text-muted-foreground">{answeredCount}/{QUESTIONS.length}</p></div>
+          <div className="flex-1">
+            <h1 className="text-lg font-bold text-foreground">DISC Profile Assessment</h1>
+            <p className="text-xs text-muted-foreground">{answeredCount}/{QUESTIONS.length}</p>
+          </div>
         </div>
         <Progress value={(answeredCount / QUESTIONS.length) * 100} className="mt-2 h-1.5" />
       </div>
-      <div className="max-w-2xl mx-auto px-4 py-6 space-y-6">
-        <Card className="p-4 border-amber-500/30 bg-amber-500/5"><p className="text-xs text-muted-foreground"><strong>⚠️</strong> Educational self-assessment only. Not a clinical instrument. If you have mental health concerns, please seek professional help.</p></Card>
+
+      <div className="max-w-2xl mx-auto px-4 py-6 space-y-4">
+        <Card className="p-4 border-amber-500/30 bg-amber-500/5">
+          <p className="text-xs text-muted-foreground">
+            <strong>⚠️</strong> Educational self-assessment only. Slide the bar to where you feel best represents you — anywhere along the line, not just the endpoints.
+          </p>
+        </Card>
+
         {pageQs.map(q => (
-          <Card key={q.id} className="p-4 space-y-3">
-            <p className="text-sm font-medium">{q.id}. {q.text}</p>
-            <div className="flex gap-1.5 flex-wrap">
-              {LIKERT.map(l => (
-                <Button key={l.value} size="sm" variant={answers[q.id] === l.value ? "default" : "outline"} className="text-xs flex-1 min-w-[60px]" onClick={() => setAnswers(p => ({ ...p, [q.id]: l.value }))}>
-                  {l.label}
-                </Button>
-              ))}
-            </div>
-          </Card>
+          <DISCSliderQuestion
+            key={q.id}
+            questionId={q.id}
+            text={q.text}
+            value={answers[q.id] ?? 50}
+            onChange={handleSliderChange}
+          />
         ))}
+
         <div className="flex gap-3">
-          {currentPage > 0 && <Button variant="outline" className="flex-1" onClick={() => setCurrentPage(p => p - 1)}>Previous</Button>}
+          {currentPage > 0 && (
+            <Button variant="outline" className="flex-1" onClick={() => setCurrentPage(p => p - 1)}>
+              Previous
+            </Button>
+          )}
           {currentPage < totalPages - 1 ? (
             <Button className="flex-1" onClick={() => setCurrentPage(p => p + 1)}>Next</Button>
           ) : (
-            <Button 
-              className="flex-1" 
-              onClick={async () => {
-                const profileData = calculateProfile();
-                const saved = await saveResults(profileData);
-                setCompleted(true);
-              }}
-              disabled={answeredCount < QUESTIONS.length * 0.8 || saving}
+            <Button
+              className="flex-1"
+              onClick={handleComplete}
+              disabled={answeredCount < QUESTIONS.length * 0.5 || saving}
             >
               {saving ? "Saving..." : "See Results"}
             </Button>
