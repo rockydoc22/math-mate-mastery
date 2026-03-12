@@ -69,7 +69,7 @@ const K12Exams = () => {
           <p className="text-sm text-muted-foreground">Standardized tests for homeschool and K-12 students</p>
         </div>
 
-        <ConsentGate consentKey="k12_ip_disclaimer" title="Important Disclaimer" body={K12_DISCLAIMER} checkboxLabel={K12_CHECKBOX}>
+        <ConsentGate consentType="k12_ip" consentKey="k12_disclaimer" title="Important Disclaimer" disclaimerText={K12_DISCLAIMER} checkboxLabel={K12_CHECKBOX}>
           <div className="space-y-3">
             {K12_EXAMS.map((exam) => {
               const count = questionCounts[exam.id];
