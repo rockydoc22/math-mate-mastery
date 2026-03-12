@@ -5,6 +5,7 @@ import { useNavigate } from "react-router-dom";
 import { EXAM_CONFIGS, type ExamType } from "@/utils/examConfig";
 import { useExamType } from "@/hooks/useExamType";
 import { useAuth } from "@/hooks/useAuth";
+import { toast } from "sonner";
 
 const HighSchoolExams = () => {
   const navigate = useNavigate();
@@ -14,6 +15,9 @@ const HighSchoolExams = () => {
   const handleExamSelect = async (type: ExamType) => {
     await setExamType(type);
     if (user) sessionStorage.setItem(`exam_choice_session_${user.id}`, "true");
+    toast.success(`Switched to ${EXAM_CONFIGS[type].name || type.toUpperCase()}!`, {
+      description: "You can change this anytime in Settings.",
+    });
     navigate("/");
   };
 
