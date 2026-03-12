@@ -57,23 +57,12 @@ function convertLegacyQuestion(raw: RawLegacyQuestion): Question {
   };
 }
 
-// Lazy importers for the 6 pack files
-const PACK_IMPORTERS = [
-  () => import('./k12_pack_01.json'),
-  () => import('./k12_pack_02.json'),
-  () => import('./k12_pack_03.json'),
-  () => import('./k12_pack_04.json'),
-  () => import('./k12_pack_05.json'),
-  () => import('./k12_pack_06.json'),
-  () => import('./k12_pack_07.json'),
-  () => import('./k12_pack_08.json'),
-  () => import('./k12_pack_09.json'),
-  () => import('./k12_pack_10.json'),
-  () => import('./k12_pack_11.json'),
-  () => import('./k12_pack_12.json'),
-];
+// Pack files served from public/ — fetched at runtime, not bundled
+const PACK_FILES = Array.from({ length: 12 }, (_, i) =>
+  `/data/k12_pack_${String(i + 1).padStart(2, '0')}.json`
+);
 
-// Legacy file importers
+// Legacy file importers (small files, safe to bundle)
 const LEGACY_IMPORTERS: Record<string, () => Promise<any>> = {
   'ged_question_bank_200.json': () => import('./ged_question_bank_200.json'),
   'hiset_question_bank_200.json': () => import('./hiset_question_bank_200.json'),
@@ -82,7 +71,7 @@ const LEGACY_IMPORTERS: Record<string, () => Promise<any>> = {
   'map_growth_question_bank_200_original.json': () => import('./map_growth_question_bank_200_original.json'),
 };
 
-// Cache: examId -> questions
+// Cache
 const _cache: Record<string, Question[]> = {};
 const _packLoaded: Record<string, Question[]> = {};
 let _packPromise: Promise<void> | null = null;
@@ -92,18 +81,19 @@ async function loadAllPacks(): Promise<void> {
   if (_packPromise) return _packPromise;
 
   _packPromise = (async () => {
-    for (const importer of PACK_IMPORTERS) {
-      try {
-        const mod = await importer();
-        const data = mod.default || mod;
-        const questions = data.questions || [];
-        for (const raw of questions) {
-          const examKey = raw.exam as string;
-          if (!_packLoaded[examKey]) _packLoaded[examKey] = [];
-          _packLoaded[examKey].push(convertPackQuestion(raw as RawK12PackQuestion));
-        }
-      } catch (e) {
-        console.warn('Failed to load K12 pack:', e);
+    // Load pack files in parallel via fetch (not bundled by Vite)
+    const results = await Promise.allSettled(
+      PACK_FILES.map(url => fetch(url).then(r => r.json()))
+    );
+
+    for (const result of results) {
+      if (result.status !== 'fulfilled') continue;
+      const data = result.value;
+      const questions = data.questions || [];
+      for (const raw of questions) {
+        const examKey = raw.exam as string;
+        if (!_packLoaded[examKey]) _packLoaded[examKey] = [];
+        _packLoaded[examKey].push(convertPackQuestion(raw as RawK12PackQuestion));
       }
     }
   })();
@@ -141,7 +131,7 @@ export async function loadK12ExamQuestions(
     }
   }
 
-  // Load from 30k pack
+  // Load from 30k+ packs (fetched at runtime)
   await loadAllPacks();
   for (const key of examKeys) {
     const packQs = _packLoaded[key] || [];
