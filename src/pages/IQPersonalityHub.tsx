@@ -48,27 +48,23 @@ const ASSESSMENTS: AssessmentItem[] = [
     category: 'personality', type: 'both', route: '/personality',
   },
 
-  // IQ-Style Tests
+  // IQ Test
   {
-    id: 'iq-cognitive', name: 'Cognitive Skills (IQ-Style)', icon: '🧠',
-    description: 'Pattern recognition, analogies, sequences, logic — non-clinical',
+    id: 'iq-test', name: 'IQ Assessment', icon: '🧠',
+    description: 'Pattern recognition, spatial reasoning, verbal & numerical logic — estimates IQ score',
+    category: 'iq', type: 'exercise', route: '/iq-test',
+  },
+  // Cognitive Skills Test
+  {
+    id: 'cognitive-skills', name: 'Cognitive Skills Test', icon: '⚡',
+    description: 'Working memory, processing speed, and attention — tracks cognitive performance',
     category: 'iq', type: 'exercise', route: '/cognitive',
   },
-  {
-    id: 'wais-style', name: 'WAIS-Style Reasoning', icon: '🔬',
-    description: 'Verbal comprehension, working memory, processing speed tasks',
-    category: 'iq', type: 'exercise', route: '/iq-test',
-  },
-  {
-    id: 'stanford-binet', name: 'Stanford-Binet Style', icon: '📐',
-    description: 'Fluid reasoning, knowledge, quantitative, visual-spatial, working memory',
-    category: 'iq', type: 'exercise', route: '/iq-test',
-  },
 
-  // Sentence Completion
+  // Vocabulary Builder
   {
-    id: 'sentence-completion', name: 'Sentence Completion', icon: '✏️',
-    description: 'Fill-in-the-blank vocabulary & reasoning exercises',
+    id: 'vocab-builder', name: 'Vocabulary Builder', icon: '📚',
+    description: 'Learn high-value words through context — boosts reading & test scores',
     category: 'sentence-completion', type: 'exercise', route: '/sentence-completion',
   },
 ];
