@@ -1,7 +1,16 @@
 import { Card } from "@/components/ui/card";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { Label } from "@/components/ui/label";
-import type { IQItem } from "@/pages/CognitiveSkills";
+
+export interface IQItem {
+  id: string;
+  age_range: string;
+  domain: string;
+  prompt: string;
+  options: string[];
+  answer: string;
+  difficulty: string;
+}
 
 interface Props {
   item: IQItem;

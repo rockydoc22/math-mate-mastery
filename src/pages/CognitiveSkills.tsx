@@ -239,13 +239,13 @@ const CognitiveSkills = () => {
   const saveResults = useCallback(async (score: number, total: number, domainBreakdown: any) => {
     if (!user) return;
     try {
-      await supabase.from("personality_results").insert({
+      await supabase.from("personality_results").insert([{
         user_id: user.id,
         assessment_type: "cognitive",
-        raw_scores: domainBreakdown,
+        raw_scores: domainBreakdown as any,
         result_type: `${Math.round((score / total) * 100)}%`,
-        result_data: { answers, totalTime, score, total },
-      });
+        result_data: { answers, totalTime, score, total } as any,
+      }]);
     } catch {}
   }, [user, answers, totalTime]);
 
