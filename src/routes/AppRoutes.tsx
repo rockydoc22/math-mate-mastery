@@ -114,6 +114,7 @@ const PersonalityEnneagram = lazy(() => import("@/pages/PersonalityEnneagram"));
 const PersonalityStrengths = lazy(() => import("@/pages/PersonalityStrengths"));
 const HighSchoolExams = lazy(() => import("@/pages/HighSchoolExams"));
 const K12Exams = lazy(() => import("@/pages/K12Exams"));
+const K12ExamQuiz = lazy(() => import("@/pages/K12ExamQuiz"));
 
 const AppRoutes = () => (
   <>
@@ -225,6 +226,7 @@ const AppRoutes = () => (
       <Route path="/personality-strengths" element={<PersonalityStrengths />} />
       <Route path="/high-school-exams" element={<HighSchoolExams />} />
       <Route path="/k12-exams" element={<K12Exams />} />
+      <Route path="/k12-exam/:examId" element={<K12ExamQuiz />} />
       {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
       <Route path="*" element={<NotFound />} />
     </Routes>

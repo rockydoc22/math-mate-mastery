@@ -1,20 +1,8 @@
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { ArrowLeft } from "lucide-react";
+import { ArrowLeft, ChevronRight } from "lucide-react";
 import { useNavigate } from "react-router-dom";
-
-const k12Exams = [
-  { name: "Iowa Assessments (ITBS)", emoji: "📋", desc: "Iowa Tests of Basic Skills & Educational Development" },
-  { name: "GED", emoji: "📖", desc: "General Educational Development test" },
-  { name: "HiSET", emoji: "📝", desc: "High School Equivalency Test" },
-  { name: "TASC", emoji: "✅", desc: "Test Assessing Secondary Completion" },
-  { name: "MAP Growth", emoji: "📊", desc: "Measures of Academic Progress" },
-  { name: "STAR Assessments", emoji: "⭐", desc: "Renaissance STAR Reading & Math" },
-  { name: "Stanford 10 (SAT-10)", emoji: "🏫", desc: "Stanford Achievement Test Series" },
-  { name: "TerraNova (CAT/6)", emoji: "🌎", desc: "Comprehensive Tests of Basic Skills" },
-  { name: "PSSA", emoji: "🔑", desc: "Pennsylvania System of School Assessment" },
-  { name: "Regents Exams", emoji: "🗽", desc: "New York State Regents Examinations" },
-];
+import { K12_EXAMS } from "@/utils/k12ExamConfig";
 
 const K12Exams = () => {
   const navigate = useNavigate();
@@ -34,18 +22,19 @@ const K12Exams = () => {
         </div>
 
         <div className="space-y-3">
-          {k12Exams.map((exam) => (
+          {K12_EXAMS.map((exam) => (
             <Card
-              key={exam.name}
-              className="p-4 border-2 transition-all hover:border-primary/30 opacity-80"
+              key={exam.id}
+              className="p-4 border-2 cursor-pointer transition-all hover:border-primary/30 hover:scale-[1.01] hover:shadow-md"
+              onClick={() => navigate(`/k12-exam/${exam.id}`)}
             >
               <div className="flex items-center gap-4">
-                <span className="text-3xl">{exam.emoji}</span>
-                <div>
+                <span className="text-3xl">{exam.icon}</span>
+                <div className="flex-1">
                   <h3 className="font-bold text-sm">{exam.name}</h3>
-                  <p className="text-xs text-muted-foreground">{exam.desc}</p>
-                  <p className="text-[10px] text-primary font-medium mt-1">Coming soon</p>
+                  <p className="text-xs text-muted-foreground">{exam.description}</p>
                 </div>
+                <ChevronRight className="w-5 h-5 text-muted-foreground" />
               </div>
             </Card>
           ))}
