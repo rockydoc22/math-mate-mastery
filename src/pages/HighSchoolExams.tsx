@@ -4,14 +4,16 @@ import { ArrowLeft } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import { EXAM_CONFIGS, type ExamType } from "@/utils/examConfig";
 import { useExamType } from "@/hooks/useExamType";
+import { useAuth } from "@/hooks/useAuth";
 
 const HighSchoolExams = () => {
   const navigate = useNavigate();
   const { setExamType } = useExamType();
+  const { user } = useAuth();
 
-  const handleExamSelect = (type: ExamType) => {
-    setExamType(type);
-    sessionStorage.setItem(`exam_choice_session_${Date.now()}`, "true");
+  const handleExamSelect = async (type: ExamType) => {
+    await setExamType(type);
+    if (user) sessionStorage.setItem(`exam_choice_session_${user.id}`, "true");
     navigate("/");
   };
 
