@@ -1,6 +1,6 @@
 import { Question } from './questions';
 
-// Raw format from the 30k pack (choices as object)
+// Raw format from the 30k+ packs (choices as object)
 interface RawK12PackQuestion {
   id: string;
   exam: string;
@@ -11,6 +11,9 @@ interface RawK12PackQuestion {
   answer: string;
   explanation: string;
   skill?: string;
+  skill_tag?: string;
+  grade_band?: string;
+  source_test_alignment?: string;
 }
 
 // Raw format from existing 200-question banks (options as array)
@@ -40,7 +43,7 @@ function convertPackQuestion(raw: RawK12PackQuestion): Question {
     explanation: raw.explanation,
     difficulty: raw.difficulty === 'hard' ? 'Hard' : raw.difficulty === 'easy' ? 'Easy' : 'Medium',
     domain: raw.subject,
-    skill: raw.skill || raw.subject,
+    skill: raw.skill || raw.skill_tag || raw.subject,
   };
 }
 
@@ -58,7 +61,7 @@ function convertLegacyQuestion(raw: RawLegacyQuestion): Question {
 }
 
 // Pack files served from public/ — fetched at runtime, not bundled
-const PACK_FILES = Array.from({ length: 12 }, (_, i) =>
+const PACK_FILES = Array.from({ length: 18 }, (_, i) =>
   `/data/k12_pack_${String(i + 1).padStart(2, '0')}.json`
 );
 
