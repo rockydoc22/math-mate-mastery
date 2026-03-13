@@ -5,7 +5,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { useAuth } from "@/hooks/useAuth";
 import { supabase } from "@/integrations/supabase/client";
 import { toast } from "sonner";
-import { ArrowLeft, Crown, Copy, Users, Trophy, Loader2, Clock, Skull, ChevronDown, ChevronUp, CheckCircle, XCircle, LogOut, Bot, Flag } from "lucide-react";
+import { ArrowLeft, Crown, Copy, Users, Trophy, Loader2, Clock, Skull, ChevronDown, ChevronUp, CheckCircle, XCircle, LogOut, Bot, Flag, Swords } from "lucide-react";
 import { FlagQuestionModal } from "@/components/FlagQuestionModal";
 import { BattleResultsFighter } from "@/components/BattleResultsFighter";
 import { questions } from "@/data/questions";
