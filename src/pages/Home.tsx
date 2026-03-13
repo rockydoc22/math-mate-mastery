@@ -137,10 +137,21 @@ const Home = () => {
     setHasChosenExamThisSession(sessionStorage.getItem(key) === "true");
   }, [user]);
 
-  // Fetch player stats — single consolidated DB call
+  // Fetch player stats — single consolidated DB call + onboarding check
   useEffect(() => {
     const fetchPlayerStats = async () => {
       if (!user) return;
+      
+      // Check if onboarding is needed
+      const { data: profile } = await supabase
+        .from("profiles")
+        .select("grade_level, primary_goal")
+        .eq("id", user.id)
+        .maybeSingle();
+      
+      if (profile && !profile.grade_level && !profile.primary_goal) {
+        setNeedsOnboarding(true);
+      }
       
       const { data, error } = await supabase.rpc('get_home_dashboard_stats', {
         p_user_id: user.id,
