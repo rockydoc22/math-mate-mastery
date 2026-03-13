@@ -38,6 +38,11 @@ import { WelcomeModal } from "@/components/WelcomeModal";
 import { SubjectPinManager } from "@/components/SubjectPinManager";
 import { useIsMobile } from "@/hooks/use-mobile";
 import { Pin } from "lucide-react";
+import { RecommendedPracticeWidget } from "@/components/RecommendedPracticeWidget";
+import { NextBestActionWidget } from "@/components/NextBestActionWidget";
+import { QuickDuelEntry } from "@/components/QuickDuelEntry";
+import { StreakFreezeWidget } from "@/components/StreakFreezeWidget";
+import { OnboardingFlow } from "@/components/OnboardingFlow";
 
 // Motivational messages for non-logged in or idle users
 const motivationalMessages = [
