@@ -1,0 +1,23 @@
+{
+  "pack_name": "HighSchool_Runtime_and_Engagement_Mega_Pack_02",
+  "version": "1.0",
+  "supported_exams": [
+    "Iowa/ITBS",
+    "GED",
+    "HiSET",
+    "TASC",
+    "MAP Growth",
+    "STAR Assessments",
+    "Stanford 10",
+    "TerraNova",
+    "PSSA",
+    "Regents Exams (New York State)"
+  ],
+  "supported_subjects": [
+    "Math",
+    "Reading",
+    "Writing",
+    "Science",
+    "Social Studies"
+  ]
+}
