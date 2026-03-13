@@ -186,7 +186,12 @@ const K12ExamQuiz = () => {
                 <Clock className="w-3 h-3" /> {timeLeft}s
               </span>
             </div>
-            <span className="text-sm font-medium text-primary">{score} ✓</span>
+            <div className="flex items-center gap-2">
+              <Button variant="ghost" size="sm" onClick={() => setIsFlagModalOpen(true)} className="text-muted-foreground hover:text-destructive p-1">
+                <Flag className="w-4 h-4" />
+              </Button>
+              <span className="text-sm font-medium text-primary">{score} ✓</span>
+            </div>
           </div>
 
           <Card className="p-5">
