@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { ArrowLeft, ChevronRight } from "lucide-react";
+import { ArrowLeft, ChevronRight, Calendar, Brain } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import { K12_EXAMS } from "@/utils/k12ExamConfig";
 import { loadK12ExamQuestions } from "@/data/k12Questions";
