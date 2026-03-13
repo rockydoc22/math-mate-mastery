@@ -1,0 +1,26 @@
+{
+  "scoring_and_prediction": {
+    "estimated_outcomes": {
+      "MAP Growth": "projected_RIT_band",
+      "GED": "readiness_band",
+      "HiSET": "readiness_band",
+      "TASC": "readiness_band",
+      "Regents exams": "projected_performance_band",
+      "default": "projected_percent_correct_band"
+    },
+    "inputs": [
+      "accuracy",
+      "difficulty_reached",
+      "confidence",
+      "time_usage",
+      "skill_distribution"
+    ],
+    "report_sections": [
+      "score_snapshot",
+      "projected_readiness",
+      "top_three_strengths",
+      "top_three_growth_areas",
+      "recommended_next_set"
+    ]
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "adaptive_exam_simulator": {
+    "enabled": true,
+    "merge_if_exists": true,
+    "supported_exams": [
+      "Iowa/ITBS",
+      "GED",
+      "HiSET",
+      "TASC",
+      "MAP Growth",
+      "STAR Assessments",
+      "Stanford 10",
+      "TerraNova",
+      "PSSA",
+      "Regents exams"
+    ],
+    "session_types": [
+      "full_simulation",
+      "half_length",
+      "skill_targeted_sim",
+      "rapid_fire_checkpoint"
+    ],
+    "adaptive_rules": {
+      "start_band": "based_on_recent_mastery_or_medium_default",
+      "increase_after": "3_correct_with_good_confidence",
+      "decrease_after": "2_wrong_or_time_pressure_guess_pattern",
+      "lock_sections_when_needed": true
+    },
+    "assembly_rules": {
+      "balance_by_subject": true,
+      "respect_exam_blueprint_when_available": true,
+      "avoid_repeat_question_ids": true,
+      "prefer_unmastered_skills": true
+    },
+    "post_exam_outputs": [
+      "estimated_band",
+      "strengths",
+      "weaknesses",
+      "next_best_actions",
+      "confidence_summary",
+      "pacing_summary"
+    ]
+  }
+}
