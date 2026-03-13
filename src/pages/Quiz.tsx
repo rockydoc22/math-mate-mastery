@@ -26,6 +26,10 @@ import { usePerfectStreak } from "@/hooks/usePerfectStreak";
 import { useMysteryBox } from "@/hooks/useMysteryBox";
 import { MysteryBoxPopup } from "@/components/MysteryBoxPopup";
 import { PerfectStreakDisplay } from "@/components/PerfectStreakDisplay";
+import { useMomentum } from "@/hooks/useMomentum";
+import { useMistakeCoach } from "@/hooks/useMistakeCoach";
+import { MomentumMeter } from "@/components/MomentumMeter";
+import { MistakeCoachCard } from "@/components/MistakeCoachCard";
 import { useExamType } from "@/hooks/useExamType";
 import { EXAM_CONFIGS } from "@/utils/examConfig";
 import { actScienceQuestions } from "@/data/actScienceQuestions";
@@ -59,6 +63,8 @@ const Quiz = () => {
   const { pendingReward, recordQuestion, dismissReward, questionsUntilBox } = useMysteryBox();
   const { examType } = useExamType();
   const examConfig = EXAM_CONFIGS[examType];
+  const momentum = useMomentum();
+  const mistakeCoach = useMistakeCoach();
   
   // Define isAdvancedSubject early so it can be used in useMemo
   const isAdvancedSubject = subject === "physics" || subject === "precalc" || subject === "calculus";
@@ -270,9 +276,20 @@ const Quiz = () => {
     } else {
       playWrong();
     }
-    // Track perfect streak and mystery box
+    // Track perfect streak, mystery box, momentum & mistake coach
     recordPerfectAnswer(isCorrect);
     recordQuestion();
+    momentum.recordAnswer(isCorrect);
+    if (!isCorrect) {
+      const domain = currentQuestion.type === "english" ? "english" : currentQuestion.type === "science" ? "science" : "math";
+      mistakeCoach.onIncorrectAnswer(
+        (currentQuestion as any).skill || domain,
+        domain,
+        currentQuestion.question,
+      );
+    } else {
+      mistakeCoach.clearFeedback();
+    }
 
     // Update skill rating
     if (user && currentQuestion.difficultyRating) {
@@ -319,6 +336,8 @@ const Quiz = () => {
     setScore(0);
     setFinished(false);
     setScoreRecorded(false);
+    momentum.reset();
+    mistakeCoach.clearFeedback();
   };
 
   // Record score when quiz finishes
@@ -448,6 +467,16 @@ const Quiz = () => {
             </span>
           </div>
           <Progress value={progress} className="h-2" />
+
+          {/* Momentum Meter */}
+          {momentum.answerCount >= 3 && (
+            <MomentumMeter
+              mode={momentum.mode}
+              score={momentum.score}
+              label={momentum.label}
+              message={momentum.message}
+            />
+          )}
         </div>
 
         <QuizCard
@@ -458,6 +487,13 @@ const Quiz = () => {
           questionType={currentQuestion.type === "science" ? "math" : currentQuestion.type}
         />
 
+        {/* Mistake Coach feedback after wrong answer */}
+        {showResult && mistakeCoach.lastFeedback && (
+          <MistakeCoachCard
+            feedback={mistakeCoach.lastFeedback}
+            onDismiss={mistakeCoach.clearFeedback}
+          />
+        )}
         <div className="flex gap-3">
           {!showResult ? (
             <Button
