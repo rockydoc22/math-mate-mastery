@@ -1,0 +1,444 @@
+{
+  "competitive_modes": [
+    {
+      "mode_id": "mat_blitz",
+      "subject": "Math",
+      "name": "Math Blitz",
+      "rules": {
+        "question_count": 10,
+        "time_limit_sec": 180,
+        "scoring": "accuracy_then_speed",
+        "tie_breaker": "highest_accuracy"
+      },
+      "matchmaking": {
+        "by_exam": true,
+        "by_estimated_skill_band": true,
+        "max_rank_gap": 1
+      },
+      "post_match_feedback": [
+        "show strongest skill",
+        "show one growth area",
+        "offer rematch",
+        "suggest 3-question targeted practice"
+      ]
+    },
+    {
+      "mode_id": "mat_accuracy",
+      "subject": "Math",
+      "name": "Math Accuracy",
+      "rules": {
+        "question_count": 10,
+        "time_limit_sec": 120,
+        "scoring": "accuracy_then_speed",
+        "tie_breaker": "highest_accuracy"
+      },
+      "matchmaking": {
+        "by_exam": true,
+        "by_estimated_skill_band": true,
+        "max_rank_gap": 1
+      },
+      "post_match_feedback": [
+        "show strongest skill",
+        "show one growth area",
+        "offer rematch",
+        "suggest 3-question targeted practice"
+      ]
+    },
+    {
+      "mode_id": "mat_climb",
+      "subject": "Math",
+      "name": "Math Climb",
+      "rules": {
+        "question_count": 10,
+        "time_limit_sec": 90,
+        "scoring": "accuracy_then_speed",
+        "tie_breaker": "fewest_hints"
+      },
+      "matchmaking": {
+        "by_exam": true,
+        "by_estimated_skill_band": true,
+        "max_rank_gap": 1
+      },
+      "post_match_feedback": [
+        "show strongest skill",
+        "show one growth area",
+        "offer rematch",
+        "suggest 3-question targeted practice"
+      ]
+    },
+    {
+      "mode_id": "mat_boss_battle",
+      "subject": "Math",
+      "name": "Math Boss Battle",
+      "rules": {
+        "question_count": 10,
+        "time_limit_sec": 180,
+        "scoring": "accuracy_then_speed",
+        "tie_breaker": "fastest_final_correct"
+      },
+      "matchmaking": {
+        "by_exam": true,
+        "by_estimated_skill_band": true,
+        "max_rank_gap": 3
+      },
+      "post_match_feedback": [
+        "show strongest skill",
+        "show one growth area",
+        "offer rematch",
+        "suggest 3-question targeted practice"
+      ]
+    },
+    {
+      "mode_id": "rea_blitz",
+      "subject": "Reading",
+      "name": "Reading Blitz",
+      "rules": {
+        "question_count": 7,
+        "time_limit_sec": 60,
+        "scoring": "correct_minus_time",
+        "tie_breaker": "fewest_hints"
+      },
+      "matchmaking": {
+        "by_exam": true,
+        "by_estimated_skill_band": true,
+        "max_rank_gap": 3
+      },
+      "post_match_feedback": [
+        "show strongest skill",
+        "show one growth area",
+        "offer rematch",
+        "suggest 3-question targeted practice"
+      ]
+    },
+    {
+      "mode_id": "rea_accuracy",
+      "subject": "Reading",
+      "name": "Reading Accuracy",
+      "rules": {
+        "question_count": 5,
+        "time_limit_sec": 90,
+        "scoring": "correct_minus_time",
+        "tie_breaker": "fastest_final_correct"
+      },
+      "matchmaking": {
+        "by_exam": true,
+        "by_estimated_skill_band": true,
+        "max_rank_gap": 2
+      },
+      "post_match_feedback": [
+        "show strongest skill",
+        "show one growth area",
+        "offer rematch",
+        "suggest 3-question targeted practice"
+      ]
+    },
+    {
+      "mode_id": "rea_climb",
+      "subject": "Reading",
+      "name": "Reading Climb",
+      "rules": {
+        "question_count": 7,
+        "time_limit_sec": 120,
+        "scoring": "correct_minus_time",
+        "tie_breaker": "highest_accuracy"
+      },
+      "matchmaking": {
+        "by_exam": true,
+        "by_estimated_skill_band": true,
+        "max_rank_gap": 1
+      },
+      "post_match_feedback": [
+        "show strongest skill",
+        "show one growth area",
+        "offer rematch",
+        "suggest 3-question targeted practice"
+      ]
+    },
+    {
+      "mode_id": "rea_boss_battle",
+      "subject": "Reading",
+      "name": "Reading Boss Battle",
+      "rules": {
+        "question_count": 7,
+        "time_limit_sec": 60,
+        "scoring": "correct_minus_time",
+        "tie_breaker": "fastest_final_correct"
+      },
+      "matchmaking": {
+        "by_exam": true,
+        "by_estimated_skill_band": true,
+        "max_rank_gap": 1
+      },
+      "post_match_feedback": [
+        "show strongest skill",
+        "show one growth area",
+        "offer rematch",
+        "suggest 3-question targeted practice"
+      ]
+    },
+    {
+      "mode_id": "wri_blitz",
+      "subject": "Writing",
+      "name": "Writing Blitz",
+      "rules": {
+        "question_count": 5,
+        "time_limit_sec": 60,
+        "scoring": "correct_minus_time",
+        "tie_breaker": "fewest_hints"
+      },
+      "matchmaking": {
+        "by_exam": true,
+        "by_estimated_skill_band": true,
+        "max_rank_gap": 3
+      },
+      "post_match_feedback": [
+        "show strongest skill",
+        "show one growth area",
+        "offer rematch",
+        "suggest 3-question targeted practice"
+      ]
+    },
+    {
+      "mode_id": "wri_accuracy",
+      "subject": "Writing",
+      "name": "Writing Accuracy",
+      "rules": {
+        "question_count": 5,
+        "time_limit_sec": 120,
+        "scoring": "streak_multiplier",
+        "tie_breaker": "fewest_hints"
+      },
+      "matchmaking": {
+        "by_exam": true,
+        "by_estimated_skill_band": true,
+        "max_rank_gap": 1
+      },
+      "post_match_feedback": [
+        "show strongest skill",
+        "show one growth area",
+        "offer rematch",
+        "suggest 3-question targeted practice"
+      ]
+    },
+    {
+      "mode_id": "wri_climb",
+      "subject": "Writing",
+      "name": "Writing Climb",
+      "rules": {
+        "question_count": 7,
+        "time_limit_sec": 90,
+        "scoring": "accuracy_then_speed",
+        "tie_breaker": "fastest_final_correct"
+      },
+      "matchmaking": {
+        "by_exam": true,
+        "by_estimated_skill_band": true,
+        "max_rank_gap": 2
+      },
+      "post_match_feedback": [
+        "show strongest skill",
+        "show one growth area",
+        "offer rematch",
+        "suggest 3-question targeted practice"
+      ]
+    },
+    {
+      "mode_id": "wri_boss_battle",
+      "subject": "Writing",
+      "name": "Writing Boss Battle",
+      "rules": {
+        "question_count": 7,
+        "time_limit_sec": 120,
+        "scoring": "correct_minus_time",
+        "tie_breaker": "fastest_final_correct"
+      },
+      "matchmaking": {
+        "by_exam": true,
+        "by_estimated_skill_band": true,
+        "max_rank_gap": 3
+      },
+      "post_match_feedback": [
+        "show strongest skill",
+        "show one growth area",
+        "offer rematch",
+        "suggest 3-question targeted practice"
+      ]
+    },
+    {
+      "mode_id": "sci_blitz",
+      "subject": "Science",
+      "name": "Science Blitz",
+      "rules": {
+        "question_count": 5,
+        "time_limit_sec": 60,
+        "scoring": "streak_multiplier",
+        "tie_breaker": "fastest_final_correct"
+      },
+      "matchmaking": {
+        "by_exam": true,
+        "by_estimated_skill_band": true,
+        "max_rank_gap": 1
+      },
+      "post_match_feedback": [
+        "show strongest skill",
+        "show one growth area",
+        "offer rematch",
+        "suggest 3-question targeted practice"
+      ]
+    },
+    {
+      "mode_id": "sci_accuracy",
+      "subject": "Science",
+      "name": "Science Accuracy",
+      "rules": {
+        "question_count": 7,
+        "time_limit_sec": 120,
+        "scoring": "correct_minus_time",
+        "tie_breaker": "fewest_hints"
+      },
+      "matchmaking": {
+        "by_exam": true,
+        "by_estimated_skill_band": true,
+        "max_rank_gap": 3
+      },
+      "post_match_feedback": [
+        "show strongest skill",
+        "show one growth area",
+        "offer rematch",
+        "suggest 3-question targeted practice"
+      ]
+    },
+    {
+      "mode_id": "sci_climb",
+      "subject": "Science",
+      "name": "Science Climb",
+      "rules": {
+        "question_count": 7,
+        "time_limit_sec": 120,
+        "scoring": "correct_minus_time",
+        "tie_breaker": "fewest_hints"
+      },
+      "matchmaking": {
+        "by_exam": true,
+        "by_estimated_skill_band": true,
+        "max_rank_gap": 1
+      },
+      "post_match_feedback": [
+        "show strongest skill",
+        "show one growth area",
+        "offer rematch",
+        "suggest 3-question targeted practice"
+      ]
+    },
+    {
+      "mode_id": "sci_boss_battle",
+      "subject": "Science",
+      "name": "Science Boss Battle",
+      "rules": {
+        "question_count": 7,
+        "time_limit_sec": 180,
+        "scoring": "streak_multiplier",
+        "tie_breaker": "highest_accuracy"
+      },
+      "matchmaking": {
+        "by_exam": true,
+        "by_estimated_skill_band": true,
+        "max_rank_gap": 1
+      },
+      "post_match_feedback": [
+        "show strongest skill",
+        "show one growth area",
+        "offer rematch",
+        "suggest 3-question targeted practice"
+      ]
+    },
+    {
+      "mode_id": "soc_blitz",
+      "subject": "Social Studies",
+      "name": "Social Studies Blitz",
+      "rules": {
+        "question_count": 7,
+        "time_limit_sec": 60,
+        "scoring": "accuracy_then_speed",
+        "tie_breaker": "fastest_final_correct"
+      },
+      "matchmaking": {
+        "by_exam": true,
+        "by_estimated_skill_band": true,
+        "max_rank_gap": 3
+      },
+      "post_match_feedback": [
+        "show strongest skill",
+        "show one growth area",
+        "offer rematch",
+        "suggest 3-question targeted practice"
+      ]
+    },
+    {
+      "mode_id": "soc_accuracy",
+      "subject": "Social Studies",
+      "name": "Social Studies Accuracy",
+      "rules": {
+        "question_count": 5,
+        "time_limit_sec": 90,
+        "scoring": "accuracy_then_speed",
+        "tie_breaker": "fastest_final_correct"
+      },
+      "matchmaking": {
+        "by_exam": true,
+        "by_estimated_skill_band": true,
+        "max_rank_gap": 3
+      },
+      "post_match_feedback": [
+        "show strongest skill",
+        "show one growth area",
+        "offer rematch",
+        "suggest 3-question targeted practice"
+      ]
+    },
+    {
+      "mode_id": "soc_climb",
+      "subject": "Social Studies",
+      "name": "Social Studies Climb",
+      "rules": {
+        "question_count": 7,
+        "time_limit_sec": 180,
+        "scoring": "accuracy_then_speed",
+        "tie_breaker": "fewest_hints"
+      },
+      "matchmaking": {
+        "by_exam": true,
+        "by_estimated_skill_band": true,
+        "max_rank_gap": 2
+      },
+      "post_match_feedback": [
+        "show strongest skill",
+        "show one growth area",
+        "offer rematch",
+        "suggest 3-question targeted practice"
+      ]
+    },
+    {
+      "mode_id": "soc_boss_battle",
+      "subject": "Social Studies",
+      "name": "Social Studies Boss Battle",
+      "rules": {
+        "question_count": 7,
+        "time_limit_sec": 120,
+        "scoring": "correct_minus_time",
+        "tie_breaker": "fewest_hints"
+      },
+      "matchmaking": {
+        "by_exam": true,
+        "by_estimated_skill_band": true,
+        "max_rank_gap": 1
+      },
+      "post_match_feedback": [
+        "show strongest skill",
+        "show one growth area",
+        "offer rematch",
+        "suggest 3-question targeted practice"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "leaderboards": {
+    "boards": [
+      {
+        "board_id": "global_xp",
+        "name": "Global XP",
+        "sort_by": "xp_total",
+        "reset": "never"
+      },
+      {
+        "board_id": "weekly_streak",
+        "name": "Weekly Streak",
+        "sort_by": "current_week_points",
+        "reset": "weekly"
+      },
+      {
+        "board_id": "math_speed",
+        "name": "Math Speed Run",
+        "sort_by": "math_speed_score",
+        "reset": "monthly"
+      },
+      {
+        "board_id": "reading_accuracy",
+        "name": "Reading Accuracy",
+        "sort_by": "reading_accuracy",
+        "reset": "monthly"
+      },
+      {
+        "board_id": "school_board",
+        "name": "School Board",
+        "sort_by": "school_points",
+        "reset": "weekly"
+      },
+      {
+        "board_id": "friends_board",
+        "name": "Friends Board",
+        "sort_by": "friend_points",
+        "reset": "weekly"
+      }
+    ],
+    "xp_rules": {
+      "correct_easy": 8,
+      "correct_medium": 10,
+      "correct_hard": 14,
+      "streak_bonus_3": 5,
+      "streak_bonus_5": 10,
+      "perfect_quiz_bonus": 20,
+      "daily_challenge_bonus": 25,
+      "weekly_event_bonus": 40,
+      "head_to_head_win": 35
+    },
+    "anti_abuse_rules": [
+      "ignore_duplicate_quiz_submissions_within_60_seconds",
+      "cap_repeat_practice_xp_after_five_attempts_per_skill_per_day",
+      "require_minimum_60_percent_accuracy_for_competitive_xp",
+      "downweight_ultra_fast_guesses_below_2_seconds"
+    ]
+  }
+}
