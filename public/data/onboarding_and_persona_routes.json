@@ -1,0 +1,164 @@
+{
+  "onboarding_routes": [
+    {
+      "persona": "anxious test taker",
+      "questions": [
+        "Which subject feels easiest right now?",
+        "Which subject feels most frustrating?",
+        "How much time can you study on a normal day?",
+        "Do you prefer quick wins, deep explanations, or competition?"
+      ],
+      "routing_rules": [
+        "map_user_to_default_session_length",
+        "map_user_to_tutor_tone",
+        "map_user_to_notification_frequency",
+        "map_user_to_first_recommended_mode"
+      ],
+      "recommended_defaults": {
+        "session_length_min": 15,
+        "tutor_tone": "encouraging",
+        "first_mode": "story_mission"
+      }
+    },
+    {
+      "persona": "high performer",
+      "questions": [
+        "Which subject feels easiest right now?",
+        "Which subject feels most frustrating?",
+        "How much time can you study on a normal day?",
+        "Do you prefer quick wins, deep explanations, or competition?"
+      ],
+      "routing_rules": [
+        "map_user_to_default_session_length",
+        "map_user_to_tutor_tone",
+        "map_user_to_notification_frequency",
+        "map_user_to_first_recommended_mode"
+      ],
+      "recommended_defaults": {
+        "session_length_min": 20,
+        "tutor_tone": "concise",
+        "first_mode": "head_to_head"
+      }
+    },
+    {
+      "persona": "inconsistent starter",
+      "questions": [
+        "Which subject feels easiest right now?",
+        "Which subject feels most frustrating?",
+        "How much time can you study on a normal day?",
+        "Do you prefer quick wins, deep explanations, or competition?"
+      ],
+      "routing_rules": [
+        "map_user_to_default_session_length",
+        "map_user_to_tutor_tone",
+        "map_user_to_notification_frequency",
+        "map_user_to_first_recommended_mode"
+      ],
+      "recommended_defaults": {
+        "session_length_min": 10,
+        "tutor_tone": "socratic",
+        "first_mode": "head_to_head"
+      }
+    },
+    {
+      "persona": "competitive learner",
+      "questions": [
+        "Which subject feels easiest right now?",
+        "Which subject feels most frustrating?",
+        "How much time can you study on a normal day?",
+        "Do you prefer quick wins, deep explanations, or competition?"
+      ],
+      "routing_rules": [
+        "map_user_to_default_session_length",
+        "map_user_to_tutor_tone",
+        "map_user_to_notification_frequency",
+        "map_user_to_first_recommended_mode"
+      ],
+      "recommended_defaults": {
+        "session_length_min": 25,
+        "tutor_tone": "socratic",
+        "first_mode": "head_to_head"
+      }
+    },
+    {
+      "persona": "quiet grinder",
+      "questions": [
+        "Which subject feels easiest right now?",
+        "Which subject feels most frustrating?",
+        "How much time can you study on a normal day?",
+        "Do you prefer quick wins, deep explanations, or competition?"
+      ],
+      "routing_rules": [
+        "map_user_to_default_session_length",
+        "map_user_to_tutor_tone",
+        "map_user_to_notification_frequency",
+        "map_user_to_first_recommended_mode"
+      ],
+      "recommended_defaults": {
+        "session_length_min": 10,
+        "tutor_tone": "encouraging",
+        "first_mode": "story_mission"
+      }
+    },
+    {
+      "persona": "last-minute crammer",
+      "questions": [
+        "Which subject feels easiest right now?",
+        "Which subject feels most frustrating?",
+        "How much time can you study on a normal day?",
+        "Do you prefer quick wins, deep explanations, or competition?"
+      ],
+      "routing_rules": [
+        "map_user_to_default_session_length",
+        "map_user_to_tutor_tone",
+        "map_user_to_notification_frequency",
+        "map_user_to_first_recommended_mode"
+      ],
+      "recommended_defaults": {
+        "session_length_min": 25,
+        "tutor_tone": "socratic",
+        "first_mode": "daily_challenge"
+      }
+    },
+    {
+      "persona": "curious explorer",
+      "questions": [
+        "Which subject feels easiest right now?",
+        "Which subject feels most frustrating?",
+        "How much time can you study on a normal day?",
+        "Do you prefer quick wins, deep explanations, or competition?"
+      ],
+      "routing_rules": [
+        "map_user_to_default_session_length",
+        "map_user_to_tutor_tone",
+        "map_user_to_notification_frequency",
+        "map_user_to_first_recommended_mode"
+      ],
+      "recommended_defaults": {
+        "session_length_min": 20,
+        "tutor_tone": "socratic",
+        "first_mode": "daily_challenge"
+      }
+    },
+    {
+      "persona": "language learner",
+      "questions": [
+        "Which subject feels easiest right now?",
+        "Which subject feels most frustrating?",
+        "How much time can you study on a normal day?",
+        "Do you prefer quick wins, deep explanations, or competition?"
+      ],
+      "routing_rules": [
+        "map_user_to_default_session_length",
+        "map_user_to_tutor_tone",
+        "map_user_to_notification_frequency",
+        "map_user_to_first_recommended_mode"
+      ],
+      "recommended_defaults": {
+        "session_length_min": 20,
+        "tutor_tone": "encouraging",
+        "first_mode": "daily_challenge"
+      }
+    }
+  ]
+}
