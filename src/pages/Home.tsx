@@ -122,6 +122,7 @@ const Home = () => {
   });
   const [pinnedSubjects, setPinnedSubjects] = useState<string[]>([]);
   const [showPinManager, setShowPinManager] = useState(false);
+  const [needsOnboarding, setNeedsOnboarding] = useState(false);
 
   const nextSAT = getNextExamDate(examType);
 
