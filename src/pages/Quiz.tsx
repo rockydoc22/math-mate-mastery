@@ -63,6 +63,8 @@ const Quiz = () => {
   const { pendingReward, recordQuestion, dismissReward, questionsUntilBox } = useMysteryBox();
   const { examType } = useExamType();
   const examConfig = EXAM_CONFIGS[examType];
+  const momentum = useMomentum();
+  const mistakeCoach = useMistakeCoach();
   
   // Define isAdvancedSubject early so it can be used in useMemo
   const isAdvancedSubject = subject === "physics" || subject === "precalc" || subject === "calculus";
