@@ -452,9 +452,12 @@ const Home = () => {
                 </div>
                 <div className="flex items-center justify-center gap-4">
                   {streak && streak.current_streak > 0 && (
-                    <div className="flex items-center gap-1 px-3 py-1 rounded-full bg-orange-500/10 text-orange-600 dark:text-orange-400">
-                      <Flame className="w-4 h-4" />
-                      <span className="font-bold">{streak.current_streak}</span>
+                    <div className="flex flex-col items-center gap-1">
+                      <div className="flex items-center gap-1 px-3 py-1 rounded-full bg-orange-500/10 text-orange-600 dark:text-orange-400">
+                        <Flame className="w-4 h-4" />
+                        <span className="font-bold">{streak.current_streak}</span>
+                      </div>
+                      <StreakFreezeWidget />
                     </div>
                   )}
                   <div className="flex items-center gap-1 text-xs text-muted-foreground">

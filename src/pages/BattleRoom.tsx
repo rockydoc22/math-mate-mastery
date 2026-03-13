@@ -642,6 +642,44 @@ const BattleRoom = () => {
             </div>
           )}
 
+          {/* Quick Duel Near-Win & Rematch Prompts */}
+          {room?.battle_mode === "quick_duel" && (() => {
+            const myP = resultsParticipants.find(p => p.user_id === user?.id);
+            const opponent = resultsParticipants.find(p => p.user_id !== user?.id);
+            const lostByOne = myP && opponent && opponent.answers_correct - myP.answers_correct === 1;
+            const iWon = myP && resultsParticipants[0]?.user_id === user?.id;
+
+            return (
+              <Card className="mt-6 p-5 border-2 border-primary/30 bg-gradient-to-r from-primary/5 to-blue-500/5 text-center">
+                {lostByOne && (
+                  <p className="text-sm font-bold text-amber-500 mb-2">
+                    ⚡ You were one answer away. Rematch?
+                  </p>
+                )}
+                {!lostByOne && !iWon && (
+                  <p className="text-sm text-muted-foreground mb-2">
+                    Good game! Want another round?
+                  </p>
+                )}
+                {iWon && (
+                  <p className="text-sm font-bold text-emerald-500 mb-2">
+                    🏆 Victory! Keep the streak going?
+                  </p>
+                )}
+                <p className="text-xs text-muted-foreground mb-3">
+                  Rematch now for <span className="font-bold text-primary">+10 bonus XP</span>
+                </p>
+                <Button
+                  onClick={() => navigate("/battle?mode=quick_duel")}
+                  className="gap-2"
+                >
+                  <Swords className="w-4 h-4" />
+                  Instant Rematch
+                </Button>
+              </Card>
+            );
+          })()}
+
           <div className="mt-8 flex gap-4 justify-center">
             <Button onClick={() => navigate("/battle")} variant="outline">
               New Battle
