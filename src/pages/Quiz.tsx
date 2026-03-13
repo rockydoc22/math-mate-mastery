@@ -276,9 +276,20 @@ const Quiz = () => {
     } else {
       playWrong();
     }
-    // Track perfect streak and mystery box
+    // Track perfect streak, mystery box, momentum & mistake coach
     recordPerfectAnswer(isCorrect);
     recordQuestion();
+    momentum.recordAnswer(isCorrect);
+    if (!isCorrect) {
+      const domain = currentQuestion.type === "english" ? "english" : currentQuestion.type === "science" ? "science" : "math";
+      mistakeCoach.onIncorrectAnswer(
+        (currentQuestion as any).skill || domain,
+        domain,
+        currentQuestion.question,
+      );
+    } else {
+      mistakeCoach.clearFeedback();
+    }
 
     // Update skill rating
     if (user && currentQuestion.difficultyRating) {
