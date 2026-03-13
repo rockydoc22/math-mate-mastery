@@ -2,7 +2,7 @@ import { useState, useEffect, useMemo, useCallback } from "react";
 import { useParams, useNavigate, useSearchParams } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { ArrowLeft, Clock, CheckCircle2, XCircle, RotateCcw, Filter, Flag } from "lucide-react";
+import { ArrowLeft, Clock, CheckCircle2, XCircle, RotateCcw, Filter, Flag, Brain } from "lucide-react";
 import { getK12Exam } from "@/utils/k12ExamConfig";
 import { loadK12ExamQuestions, getK12QuestionsBySubject } from "@/data/k12Questions";
 import { Question } from "@/data/questions";
