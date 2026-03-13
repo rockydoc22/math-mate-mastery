@@ -1,0 +1,18 @@
+{
+  "pack_name": "Adaptive_Exam_Simulator_Mega_Pack_05",
+  "version": "1.0",
+  "type": "configuration_layer",
+  "purpose": [
+    "adaptive_exam_simulator",
+    "creative_exam_modes"
+  ],
+  "merge_strategy": "additive_merge_prefer_existing",
+  "entry_points": [
+    "adaptive_exam_simulator_core.json",
+    "creative_modes_and_scenarios.json",
+    "scoring_and_prediction_config.json",
+    "timer_and_pacing_config.json",
+    "ui_copy_and_integration_notes.json"
+  ],
+  "attachment_count": 6
+}
