@@ -229,6 +229,8 @@ const AppRoutes = () => (
       <Route path="/high-school-exams" element={<HighSchoolExams />} />
       <Route path="/k12-exams" element={<K12Exams />} />
       <Route path="/k12-exam/:examId" element={<K12ExamQuiz />} />
+      <Route path="/k12-daily" element={<K12DailyChallenge />} />
+      <Route path="/k12-tutor/:examId" element={<K12AdaptiveTutor />} />
       {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
       <Route path="*" element={<NotFound />} />
     </Routes>

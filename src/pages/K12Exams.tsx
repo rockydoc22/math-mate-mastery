@@ -70,6 +70,30 @@ const K12Exams = () => {
         </div>
 
         <ConsentGate consentType="k12_ip" consentKey="k12_disclaimer" title="Important Disclaimer" disclaimerText={K12_DISCLAIMER} checkboxLabel={K12_CHECKBOX}>
+          {/* Daily Challenge + Adaptive Tutor shortcuts */}
+          <div className="grid grid-cols-2 gap-3 mb-4">
+            <Card
+              className="p-4 border-2 cursor-pointer transition-all hover:border-primary/30 hover:scale-[1.01] hover:shadow-md bg-gradient-to-br from-orange-50 to-amber-50 dark:from-orange-950/20 dark:to-amber-950/20"
+              onClick={() => navigate("/k12-daily")}
+            >
+              <div className="text-center space-y-1">
+                <Calendar className="w-6 h-6 mx-auto text-orange-500" />
+                <h3 className="font-bold text-sm">Daily Challenge</h3>
+                <p className="text-[10px] text-muted-foreground">Unique daily questions targeting your weak skills</p>
+              </div>
+            </Card>
+            <Card
+              className="p-4 border-2 cursor-pointer transition-all hover:border-primary/30 hover:scale-[1.01] hover:shadow-md bg-gradient-to-br from-violet-50 to-purple-50 dark:from-violet-950/20 dark:to-purple-950/20"
+              onClick={() => navigate("/k12-tutor/ged")}
+            >
+              <div className="text-center space-y-1">
+                <Brain className="w-6 h-6 mx-auto text-primary" />
+                <h3 className="font-bold text-sm">Adaptive Tutor</h3>
+                <p className="text-[10px] text-muted-foreground">AI-powered hints & difficulty that adapts to you</p>
+              </div>
+            </Card>
+          </div>
+
           <div className="space-y-3">
             {K12_EXAMS.map((exam) => {
               const count = questionCounts[exam.id];
