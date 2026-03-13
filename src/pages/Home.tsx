@@ -392,6 +392,15 @@ const Home = () => {
           </div>
         </Card>
 
+        {/* Next Best Action Widget */}
+        <NextBestActionWidget />
+
+        {/* Quick Duel Entry */}
+        <QuickDuelEntry />
+
+        {/* Recommended Practice Widget */}
+        <RecommendedPracticeWidget />
+
         {/* Carpe Diem Daily Challenge */}
         <Link to="/daily" className="mb-4 block">
           <Button size="lg" className="w-full font-bold gap-2 bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 text-white">
