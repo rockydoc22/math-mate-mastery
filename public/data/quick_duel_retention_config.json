@@ -1,0 +1,22 @@
+{
+  "retention_loops": {
+    "quick_duel": {
+      "mode": "near_win_loop",
+      "questions_per_match": 3,
+      "time_limit_seconds": 45,
+      "instant_rematch_enabled": true,
+      "retry_bonus_window_seconds": 60,
+      "retry_bonus_xp": 10,
+      "messaging": {
+        "near_win": "You were one answer away. Want a quick rematch?",
+        "rematch_bonus": "Rematch now for bonus XP.",
+        "mastery_tie_in": "Rematch uses similar skills so you can level up fast."
+      },
+      "safeguards": {
+        "session_soft_cap_matches": 6,
+        "weaker_skill_injection_enabled": true,
+        "randomization_only_disabled": true
+      }
+    }
+  }
+}
