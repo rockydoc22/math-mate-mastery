@@ -336,6 +336,8 @@ const Quiz = () => {
     setScore(0);
     setFinished(false);
     setScoreRecorded(false);
+    momentum.reset();
+    mistakeCoach.clearFeedback();
   };
 
   // Record score when quiz finishes
