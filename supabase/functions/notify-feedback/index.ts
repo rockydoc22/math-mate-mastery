@@ -42,17 +42,10 @@ serve(async (req: Request) => {
       );
     }
 
-    const adminEmails: string[] = [];
+    const adminEmails: string[] = ["rockydoc@gmail.com"];
     for (const admin of adminRoles) {
       const { data: userData } = await serviceClient.auth.admin.getUserById(admin.user_id);
-      if (userData?.user?.email) adminEmails.push(userData.user.email);
-    }
-
-    if (adminEmails.length === 0) {
-      return new Response(
-        JSON.stringify({ message: "No admin emails found" }),
-        { status: 200, headers: { "Content-Type": "application/json", ...corsHeaders } }
-      );
+      if (userData?.user?.email && !adminEmails.includes(userData.user.email)) adminEmails.push(userData.user.email);
     }
 
     // In-app notifications

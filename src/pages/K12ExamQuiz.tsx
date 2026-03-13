@@ -239,6 +239,14 @@ const K12ExamQuiz = () => {
             </Card>
           )}
         </div>
+        <FlagQuestionModal
+          isOpen={isFlagModalOpen}
+          onClose={() => setIsFlagModalOpen(false)}
+          questionId={current.id}
+          questionType="math"
+          questionData={{ ...current }}
+          onFlagged={() => nextQuestion()}
+        />
         <BottomNav />
       </div>
     );

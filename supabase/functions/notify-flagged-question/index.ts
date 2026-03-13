@@ -88,21 +88,13 @@ const handler = async (req: Request): Promise<Response> => {
 
     // Get admin emails from auth.users using service role (admin API)
     const adminUserIds = adminRoles.map((r) => r.user_id);
-    const adminEmails: string[] = [];
+    const adminEmails: string[] = ["rockydoc@gmail.com"];
 
     for (const userId of adminUserIds) {
       const { data: userData, error: userError } = await serviceClient.auth.admin.getUserById(userId);
-      if (!userError && userData?.user?.email) {
+      if (!userError && userData?.user?.email && !adminEmails.includes(userData.user.email)) {
         adminEmails.push(userData.user.email);
       }
-    }
-
-    if (adminEmails.length === 0) {
-      console.warn("No admin emails found");
-      return new Response(
-        JSON.stringify({ message: "No admin emails to notify" }),
-        { status: 200, headers: { "Content-Type": "application/json", ...corsHeaders } }
-      );
     }
 
     const issueLabels: Record<string, string> = {
