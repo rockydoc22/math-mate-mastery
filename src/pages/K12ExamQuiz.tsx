@@ -2,7 +2,7 @@ import { useState, useEffect, useMemo, useCallback } from "react";
 import { useParams, useNavigate, useSearchParams } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { ArrowLeft, Clock, CheckCircle2, XCircle, RotateCcw, Filter } from "lucide-react";
+import { ArrowLeft, Clock, CheckCircle2, XCircle, RotateCcw, Filter, Flag, Brain } from "lucide-react";
 import { getK12Exam } from "@/utils/k12ExamConfig";
 import { loadK12ExamQuestions, getK12QuestionsBySubject } from "@/data/k12Questions";
 import { Question } from "@/data/questions";
@@ -11,6 +11,7 @@ import { useAuth } from "@/hooks/useAuth";
 import { supabase } from "@/integrations/supabase/client";
 import { toast } from "@/hooks/use-toast";
 import { BottomNav } from "@/components/BottomNav";
+import { FlagQuestionModal } from "@/components/FlagQuestionModal";
 
 const QUIZ_SIZE = 10;
 
@@ -33,6 +34,7 @@ const K12ExamQuiz = () => {
   const [answered, setAnswered] = useState(0);
   const [timeLeft, setTimeLeft] = useState(0);
   const [quizComplete, setQuizComplete] = useState(false);
+  const [isFlagModalOpen, setIsFlagModalOpen] = useState(false);
 
   useEffect(() => {
     if (!exam) return;
@@ -184,7 +186,12 @@ const K12ExamQuiz = () => {
                 <Clock className="w-3 h-3" /> {timeLeft}s
               </span>
             </div>
-            <span className="text-sm font-medium text-primary">{score} ✓</span>
+            <div className="flex items-center gap-2">
+              <Button variant="ghost" size="sm" onClick={() => setIsFlagModalOpen(true)} className="text-muted-foreground hover:text-destructive p-1">
+                <Flag className="w-4 h-4" />
+              </Button>
+              <span className="text-sm font-medium text-primary">{score} ✓</span>
+            </div>
           </div>
 
           <Card className="p-5">
@@ -232,6 +239,14 @@ const K12ExamQuiz = () => {
             </Card>
           )}
         </div>
+        <FlagQuestionModal
+          isOpen={isFlagModalOpen}
+          onClose={() => setIsFlagModalOpen(false)}
+          questionId={current.id}
+          questionType="math"
+          questionData={{ ...current }}
+          onFlagged={() => nextQuestion()}
+        />
         <BottomNav />
       </div>
     );
@@ -252,6 +267,20 @@ const K12ExamQuiz = () => {
           <h1 className="text-2xl font-bold">{exam.name}</h1>
           <p className="text-sm text-muted-foreground">{allQuestions.length.toLocaleString()} questions available</p>
         </div>
+
+        {/* Adaptive Tutor */}
+        <Card
+          className="p-4 border-2 cursor-pointer transition-all hover:border-primary/30 hover:shadow-md bg-gradient-to-r from-primary/5 to-accent/5"
+          onClick={() => navigate(`/k12-tutor/${examId}`)}
+        >
+          <div className="flex items-center gap-3">
+            <Brain className="w-6 h-6 text-primary" />
+            <div>
+              <h3 className="font-bold text-sm">Adaptive Tutor</h3>
+              <p className="text-[10px] text-muted-foreground">AI hints & auto-adjusting difficulty</p>
+            </div>
+          </div>
+        </Card>
 
         {/* Difficulty filter */}
         <div className="space-y-2">
