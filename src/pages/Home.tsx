@@ -38,6 +38,11 @@ import { WelcomeModal } from "@/components/WelcomeModal";
 import { SubjectPinManager } from "@/components/SubjectPinManager";
 import { useIsMobile } from "@/hooks/use-mobile";
 import { Pin } from "lucide-react";
+import { RecommendedPracticeWidget } from "@/components/RecommendedPracticeWidget";
+import { NextBestActionWidget } from "@/components/NextBestActionWidget";
+import { QuickDuelEntry } from "@/components/QuickDuelEntry";
+import { StreakFreezeWidget } from "@/components/StreakFreezeWidget";
+import { OnboardingFlow } from "@/components/OnboardingFlow";
 
 // Motivational messages for non-logged in or idle users
 const motivationalMessages = [
@@ -117,6 +122,7 @@ const Home = () => {
   });
   const [pinnedSubjects, setPinnedSubjects] = useState<string[]>([]);
   const [showPinManager, setShowPinManager] = useState(false);
+  const [needsOnboarding, setNeedsOnboarding] = useState(false);
 
   const nextSAT = getNextExamDate(examType);
 
@@ -131,10 +137,21 @@ const Home = () => {
     setHasChosenExamThisSession(sessionStorage.getItem(key) === "true");
   }, [user]);
 
-  // Fetch player stats — single consolidated DB call
+  // Fetch player stats — single consolidated DB call + onboarding check
   useEffect(() => {
     const fetchPlayerStats = async () => {
       if (!user) return;
+      
+      // Check if onboarding is needed
+      const { data: profile } = await supabase
+        .from("profiles")
+        .select("grade_level, primary_goal")
+        .eq("id", user.id)
+        .maybeSingle();
+      
+      if (profile && !profile.grade_level && !profile.primary_goal) {
+        setNeedsOnboarding(true);
+      }
       
       const { data, error } = await supabase.rpc('get_home_dashboard_stats', {
         p_user_id: user.id,
@@ -200,6 +217,25 @@ const Home = () => {
   // Show landing page for guests
   if (!user) {
     return <LandingPage />;
+  }
+
+  // Show onboarding flow if grade/goal not set
+  if (needsOnboarding) {
+    return (
+      <OnboardingFlow
+        onComplete={({ gradeLevel, primaryGoal, targetExam }) => {
+          setNeedsOnboarding(false);
+          // Map exam to exam type for the selector
+          const examMap: Record<string, string> = { SAT: 'sat', PSAT: 'psat', ACT: 'act' };
+          const mapped = examMap[targetExam];
+          if (mapped) {
+            setExamType(mapped as any);
+            setHasChosenExamThisSession(true);
+            sessionStorage.setItem(`exam_choice_session_${user.id}`, "true");
+          }
+        }}
+      />
+    );
   }
 
   // Show exam selector on first authenticated screen, or when manually toggled
@@ -356,6 +392,15 @@ const Home = () => {
           </div>
         </Card>
 
+        {/* Next Best Action Widget */}
+        <NextBestActionWidget />
+
+        {/* Quick Duel Entry */}
+        <QuickDuelEntry />
+
+        {/* Recommended Practice Widget */}
+        <RecommendedPracticeWidget />
+
         {/* Carpe Diem Daily Challenge */}
         <Link to="/daily" className="mb-4 block">
           <Button size="lg" className="w-full font-bold gap-2 bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 text-white">
@@ -407,9 +452,12 @@ const Home = () => {
                 </div>
                 <div className="flex items-center justify-center gap-4">
                   {streak && streak.current_streak > 0 && (
-                    <div className="flex items-center gap-1 px-3 py-1 rounded-full bg-orange-500/10 text-orange-600 dark:text-orange-400">
-                      <Flame className="w-4 h-4" />
-                      <span className="font-bold">{streak.current_streak}</span>
+                    <div className="flex flex-col items-center gap-1">
+                      <div className="flex items-center gap-1 px-3 py-1 rounded-full bg-orange-500/10 text-orange-600 dark:text-orange-400">
+                        <Flame className="w-4 h-4" />
+                        <span className="font-bold">{streak.current_streak}</span>
+                      </div>
+                      <StreakFreezeWidget />
                     </div>
                   )}
                   <div className="flex items-center gap-1 text-xs text-muted-foreground">
