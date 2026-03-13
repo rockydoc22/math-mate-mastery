@@ -61,7 +61,7 @@ function convertLegacyQuestion(raw: RawLegacyQuestion): Question {
 }
 
 // Pack files served from public/ — fetched at runtime, not bundled
-const PACK_FILES = Array.from({ length: 12 }, (_, i) =>
+const PACK_FILES = Array.from({ length: 18 }, (_, i) =>
   `/data/k12_pack_${String(i + 1).padStart(2, '0')}.json`
 );
 
