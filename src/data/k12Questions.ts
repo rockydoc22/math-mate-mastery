@@ -43,7 +43,7 @@ function convertPackQuestion(raw: RawK12PackQuestion): Question {
     explanation: raw.explanation,
     difficulty: raw.difficulty === 'hard' ? 'Hard' : raw.difficulty === 'easy' ? 'Easy' : 'Medium',
     domain: raw.subject,
-    skill: raw.skill || raw.subject,
+    skill: raw.skill || raw.skill_tag || raw.subject,
   };
 }
 
