@@ -24,6 +24,45 @@ const BattleLobby = () => {
   const [isJoining, setIsJoining] = useState(false);
   const [isCreatingSolo, setIsCreatingSolo] = useState(false);
 
+  // Auto-start Quick Duel if ?mode=quick_duel
+  useEffect(() => {
+    if (searchParams.get("mode") === "quick_duel" && user && !isCreatingSolo) {
+      startQuickDuel();
+    }
+  }, []);
+
+  const startQuickDuel = async () => {
+    if (!user || isCreatingSolo) return;
+    setIsCreatingSolo(true);
+    try {
+      const code = generateRoomCode();
+      const { data: room, error } = await supabase
+        .from("battle_rooms")
+        .insert({
+          host_id: user.id,
+          room_code: code,
+          subject: "both",
+          question_count: 3,
+          max_players: 2,
+          time_limit_seconds: 45,
+          battle_mode: "quick_duel",
+          is_solo: true,
+          status: "in_progress",
+          started_at: new Date().toISOString(),
+        })
+        .select()
+        .single();
+      if (error) throw error;
+      await supabase.from("battle_participants").insert({ room_id: room.id, user_id: user.id });
+      navigate(`/battle/${code}`);
+    } catch (e) {
+      console.error("Quick Duel error:", e);
+      toast.error("Failed to start Quick Duel");
+    } finally {
+      setIsCreatingSolo(false);
+    }
+  };
+
   const generateRoomCode = () => {
     const chars = "ABCDEFGHJKLMNPQRSTUVWXYZ23456789";
     let code = "";
