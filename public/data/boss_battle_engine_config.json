@@ -1,0 +1,14 @@
+{
+  "boss_battles": [
+    {
+      "name": "Algebra Boss",
+      "questions": 10,
+      "mistakes_allowed": 3
+    },
+    {
+      "name": "Reading Boss",
+      "questions": 8,
+      "mistakes_allowed": 2
+    }
+  ]
+}

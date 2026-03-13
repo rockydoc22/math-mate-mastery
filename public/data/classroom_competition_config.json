@@ -1,0 +1,12 @@
+{
+  "events": [
+    {
+      "name": "Weekly Challenge",
+      "duration_days": 7
+    },
+    {
+      "name": "Math Marathon",
+      "duration_days": 3
+    }
+  ]
+}
