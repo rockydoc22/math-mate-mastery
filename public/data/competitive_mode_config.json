@@ -1,0 +1,6 @@
+{
+  "mode": "head_to_head",
+  "questions_per_match": 5,
+  "time_limit_sec": 60,
+  "elo_enabled": true
+}

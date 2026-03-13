@@ -1,0 +1,16 @@
+{
+  "skills": [
+    {
+      "id": "algebra_linear",
+      "unlock_after": null
+    },
+    {
+      "id": "algebra_quadratic",
+      "unlock_after": "algebra_linear"
+    },
+    {
+      "id": "reading_inference",
+      "unlock_after": null
+    }
+  ]
+}
