@@ -268,6 +268,20 @@ const K12ExamQuiz = () => {
           <p className="text-sm text-muted-foreground">{allQuestions.length.toLocaleString()} questions available</p>
         </div>
 
+        {/* Adaptive Tutor */}
+        <Card
+          className="p-4 border-2 cursor-pointer transition-all hover:border-primary/30 hover:shadow-md bg-gradient-to-r from-primary/5 to-accent/5"
+          onClick={() => navigate(`/k12-tutor/${examId}`)}
+        >
+          <div className="flex items-center gap-3">
+            <Brain className="w-6 h-6 text-primary" />
+            <div>
+              <h3 className="font-bold text-sm">Adaptive Tutor</h3>
+              <p className="text-[10px] text-muted-foreground">AI hints & auto-adjusting difficulty</p>
+            </div>
+          </div>
+        </Card>
+
         {/* Difficulty filter */}
         <div className="space-y-2">
           <h3 className="text-sm font-semibold">🎯 Difficulty</h3>
