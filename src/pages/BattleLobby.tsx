@@ -13,6 +13,7 @@ import { Link } from "react-router-dom";
 const BattleLobby = () => {
   const { user } = useAuth();
   const navigate = useNavigate();
+  const [searchParams] = useSearchParams();
   const [joinCode, setJoinCode] = useState("");
   const [subject, setSubject] = useState("both");
   const [questionCount, setQuestionCount] = useState("10");
