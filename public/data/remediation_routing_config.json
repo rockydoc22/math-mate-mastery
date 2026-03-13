@@ -1,0 +1,36 @@
+{
+  "remediation_routing": {
+    "on_detected_pattern": [
+      {
+        "pattern": "sign_error",
+        "route_to": [
+          "mini_lesson_algebra_signs",
+          "practice_set_easy_5",
+          "check_for_recurrence_after_8_questions"
+        ]
+      },
+      {
+        "pattern": "detail_vs_main_idea",
+        "route_to": [
+          "mini_lesson_main_idea",
+          "reading_passage_short",
+          "recheck_mastery_after_6_questions"
+        ]
+      },
+      {
+        "pattern": "variable_confusion",
+        "route_to": [
+          "mini_lesson_variables",
+          "lab_question_set",
+          "recheck_after_5_questions"
+        ]
+      }
+    ],
+    "momentum_based_routing": {
+      "rising": "increase_difficulty_by_one_band_if_confidence_high",
+      "steady": "maintain_band_and_target_weak_skill",
+      "slipping": "decrease_band_and_enable_hint_first",
+      "recovery": "keep_band_but_reduce_timer_pressure"
+    }
+  }
+}

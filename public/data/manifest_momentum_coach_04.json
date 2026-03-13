@@ -1,0 +1,17 @@
+{
+  "pack_name": "Momentum_and_Mistake_Coach_Pack_04",
+  "version": "1.0",
+  "type": "configuration_layer",
+  "purpose": [
+    "mistake_coach",
+    "momentum_meter"
+  ],
+  "merge_strategy": "additive_merge_prefer_existing",
+  "entry_points": [
+    "momentum_meter_config.json",
+    "mistake_coach_config.json",
+    "remediation_routing_config.json",
+    "ui_copy_and_prompts.json"
+  ],
+  "attachment_count": 5
+}

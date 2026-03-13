@@ -1,0 +1,67 @@
+{
+  "momentum_meter": {
+    "enabled": true,
+    "merge_if_exists": true,
+    "display_modes": [
+      "rising",
+      "steady",
+      "slipping",
+      "recovery"
+    ],
+    "score_formula": {
+      "recent_accuracy_weight": 0.5,
+      "streak_weight": 0.2,
+      "response_speed_weight": 0.1,
+      "consistency_weight": 0.1,
+      "difficulty_progression_weight": 0.1
+    },
+    "thresholds": {
+      "rising": {
+        "min": 75
+      },
+      "steady": {
+        "min": 55,
+        "max": 74
+      },
+      "slipping": {
+        "min": 35,
+        "max": 54
+      },
+      "recovery": {
+        "special_rule": "accuracy_improving_after_slip"
+      }
+    },
+    "student_messages": {
+      "rising": [
+        "You are gaining momentum. Keep pushing.",
+        "Strong run. Try one harder set."
+      ],
+      "steady": [
+        "Good pace. One focused round can push you higher."
+      ],
+      "slipping": [
+        "Momentum dipped a bit. Take a short reset and do a quick win set."
+      ],
+      "recovery": [
+        "Nice comeback. Your accuracy is rebounding."
+      ]
+    },
+    "recommended_actions": {
+      "rising": [
+        "offer_harder_set",
+        "offer_boss_battle"
+      ],
+      "steady": [
+        "offer_targeted_practice",
+        "offer_daily_challenge"
+      ],
+      "slipping": [
+        "offer_hint_mode",
+        "offer_5_minute_recovery_set"
+      ],
+      "recovery": [
+        "offer_confidence_builder_set"
+      ]
+    }
+  }
+}
