@@ -759,8 +759,10 @@ export type Database = {
           avatar_url: string | null
           created_at: string
           exam_type: string
+          grade_level: string | null
           id: string
           pinned_subjects: string[]
+          primary_goal: string | null
           show_on_leaderboards: boolean
           theme_color: string | null
           updated_at: string
@@ -771,8 +773,10 @@ export type Database = {
           avatar_url?: string | null
           created_at?: string
           exam_type?: string
+          grade_level?: string | null
           id: string
           pinned_subjects?: string[]
+          primary_goal?: string | null
           show_on_leaderboards?: boolean
           theme_color?: string | null
           updated_at?: string
@@ -783,8 +787,10 @@ export type Database = {
           avatar_url?: string | null
           created_at?: string
           exam_type?: string
+          grade_level?: string | null
           id?: string
           pinned_subjects?: string[]
+          primary_goal?: string | null
           show_on_leaderboards?: boolean
           theme_color?: string | null
           updated_at?: string
@@ -1061,6 +1067,9 @@ export type Database = {
       streaks: {
         Row: {
           current_streak: number
+          freeze_month: string | null
+          freeze_tokens: number
+          freezes_used_this_month: number
           id: string
           last_practice_date: string | null
           longest_streak: number
@@ -1069,6 +1078,9 @@ export type Database = {
         }
         Insert: {
           current_streak?: number
+          freeze_month?: string | null
+          freeze_tokens?: number
+          freezes_used_this_month?: number
           id?: string
           last_practice_date?: string | null
           longest_streak?: number
@@ -1077,6 +1089,9 @@ export type Database = {
         }
         Update: {
           current_streak?: number
+          freeze_month?: string | null
+          freeze_tokens?: number
+          freezes_used_this_month?: number
           id?: string
           last_practice_date?: string | null
           longest_streak?: number
