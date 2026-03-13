@@ -465,6 +465,16 @@ const Quiz = () => {
             </span>
           </div>
           <Progress value={progress} className="h-2" />
+
+          {/* Momentum Meter */}
+          {momentum.answerCount >= 3 && (
+            <MomentumMeter
+              mode={momentum.mode}
+              score={momentum.score}
+              label={momentum.label}
+              message={momentum.message}
+            />
+          )}
         </div>
 
         <QuizCard
@@ -475,6 +485,13 @@ const Quiz = () => {
           questionType={currentQuestion.type === "science" ? "math" : currentQuestion.type}
         />
 
+        {/* Mistake Coach feedback after wrong answer */}
+        {showResult && mistakeCoach.lastFeedback && (
+          <MistakeCoachCard
+            feedback={mistakeCoach.lastFeedback}
+            onDismiss={mistakeCoach.clearFeedback}
+          />
+        )}
         <div className="flex gap-3">
           {!showResult ? (
             <Button
