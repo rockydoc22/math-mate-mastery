@@ -12,6 +12,8 @@ import { englishQuestions } from "@/data/englishQuestions";
 import { useMomentum } from "@/hooks/useMomentum";
 import { MomentumMeter } from "@/components/MomentumMeter";
 import { toast } from "sonner";
+import { useAuth } from "@/hooks/useAuth";
+import { supabase } from "@/integrations/supabase/client";
 
 // --- Types ---
 interface ExamSection {
