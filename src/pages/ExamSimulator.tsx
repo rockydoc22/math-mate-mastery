@@ -213,6 +213,7 @@ function getAdaptiveBand(correct: number, total: number): { min: number; max: nu
 
 // --- Component ---
 const ExamSimulator = () => {
+  const { user } = useAuth();
   const [phase, setPhase] = useState<Phase>("select");
   const [blueprint, setBlueprint] = useState<ExamBlueprint | null>(null);
   const [sessionType, setSessionType] = useState<SessionType>("full_simulation");
