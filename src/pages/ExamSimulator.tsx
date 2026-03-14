@@ -302,6 +302,8 @@ const ExamSimulator = () => {
     const nextIdx = sectionIndex + 1;
     if (nextIdx >= blueprint.sections.length) {
       setPhase("results");
+      // Persist results to practice_tests
+      saveExamResults([...sectionResults, { name: currentSection.name, correct, total: qCount, timeUsed }]);
     } else if (blueprint.breakAfterSection?.includes(sectionIndex)) {
       setPhase("break");
       setTimeLeft(blueprint.breakMinutes * 60);
