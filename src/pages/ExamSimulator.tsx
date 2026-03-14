@@ -12,6 +12,8 @@ import { englishQuestions } from "@/data/englishQuestions";
 import { useMomentum } from "@/hooks/useMomentum";
 import { MomentumMeter } from "@/components/MomentumMeter";
 import { toast } from "sonner";
+import { useAuth } from "@/hooks/useAuth";
+import { supabase } from "@/integrations/supabase/client";
 
 // --- Types ---
 interface ExamSection {
@@ -211,6 +213,7 @@ function getAdaptiveBand(correct: number, total: number): { min: number; max: nu
 
 // --- Component ---
 const ExamSimulator = () => {
+  const { user } = useAuth();
   const [phase, setPhase] = useState<Phase>("select");
   const [blueprint, setBlueprint] = useState<ExamBlueprint | null>(null);
   const [sessionType, setSessionType] = useState<SessionType>("full_simulation");
@@ -299,6 +302,8 @@ const ExamSimulator = () => {
     const nextIdx = sectionIndex + 1;
     if (nextIdx >= blueprint.sections.length) {
       setPhase("results");
+      // Persist results to practice_tests
+      saveExamResults([...sectionResults, { name: currentSection.name, correct, total: qCount, timeUsed }]);
     } else if (blueprint.breakAfterSection?.includes(sectionIndex)) {
       setPhase("break");
       setTimeLeft(blueprint.breakMinutes * 60);
@@ -309,6 +314,39 @@ const ExamSimulator = () => {
       setPhase("countdown");
     }
   }, [currentSection, blueprint, sectionIndex, answers, sectionStartTime, sectionQuestions]);
+
+  const saveExamResults = async (allResults: { name: string; correct: number; total: number; timeUsed: number }[]) => {
+    if (!user || !blueprint) return;
+    try {
+      const totalC = allResults.reduce((a, r) => a + r.correct, 0);
+      const totalT = allResults.reduce((a, r) => a + r.total, 0);
+      const totalTime = allResults.reduce((a, r) => a + r.timeUsed, 0);
+      const mathResults = allResults.filter(r => {
+        const sec = blueprint.sections.find(s => s.name === r.name);
+        return sec && ["math", "quantitative", "science"].includes(sec.subject);
+      });
+      const engResults = allResults.filter(r => {
+        const sec = blueprint.sections.find(s => s.name === r.name);
+        return sec && ["english", "verbal", "reading"].includes(sec.subject);
+      });
+      const mathCorrect = mathResults.reduce((a, r) => a + r.correct, 0);
+      const mathTotal = mathResults.reduce((a, r) => a + r.total, 0);
+      const engCorrect = engResults.reduce((a, r) => a + r.correct, 0);
+      const engTotal = engResults.reduce((a, r) => a + r.total, 0);
+
+      await supabase.from("practice_tests").insert({
+        user_id: user.id,
+        test_type: blueprint.id,
+        math_score: mathTotal > 0 ? Math.round((mathCorrect / mathTotal) * 100) : null,
+        english_score: engTotal > 0 ? Math.round((engCorrect / engTotal) * 100) : null,
+        total_score: totalT > 0 ? Math.round((totalC / totalT) * 100) : 0,
+        time_taken_seconds: totalTime,
+      });
+      toast.success("Results saved to your progress!");
+    } catch (e) {
+      console.error("Failed to save exam results:", e);
+    }
+  };
 
   // Break timer
   useEffect(() => {

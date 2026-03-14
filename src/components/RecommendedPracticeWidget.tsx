@@ -29,6 +29,13 @@ export function RecommendedPracticeWidget() {
     if (!user) return;
 
     try {
+      // Fetch profile for onboarding data
+      const { data: profile } = await supabase
+        .from("profiles")
+        .select("primary_goal, exam_type, grade_level")
+        .eq("id", user.id)
+        .maybeSingle();
+
       // Fetch topic mastery for weakness detection
       const { data: mastery } = await supabase
         .from("topic_mastery")
@@ -51,15 +58,21 @@ export function RecommendedPracticeWidget() {
         .eq("user_id", user.id)
         .maybeSingle();
 
+      const goalLabel = profile?.primary_goal;
+      const examType = profile?.exam_type;
+
       // Priority 1: Weakest unmastered topic with attempts
       const weakestTopic = mastery?.find(t => !t.is_mastered && t.questions_attempted > 0);
       if (weakestTopic && weakestTopic.accuracy_percentage < 60) {
+        const examNote = examType && examType !== "general_practice"
+          ? ` — aligned with your ${examType.toUpperCase()} prep`
+          : "";
         setRec({
           label: `Practice ${weakestTopic.topic_name}`,
-          reason: `${Math.round(weakestTopic.accuracy_percentage)}% accuracy — your weakest current skill`,
+          reason: `${Math.round(weakestTopic.accuracy_percentage)}% accuracy — your weakest current skill${examNote}`,
           action: `/quiz?subject=${weakestTopic.subject}&count=5&difficulty=all&timer=false`,
           icon: Target,
-          color: "text-red-500",
+          color: "text-destructive",
         });
         setLoading(false);
         return;
@@ -78,7 +91,7 @@ export function RecommendedPracticeWidget() {
             reason: `${topMistake[1]} recent mistakes — focused practice recommended`,
             action: `/quiz?subject=both&count=5&difficulty=all&timer=false`,
             icon: Brain,
-            color: "text-amber-500",
+            color: "text-accent-foreground",
           });
           setLoading(false);
           return;
@@ -95,14 +108,39 @@ export function RecommendedPracticeWidget() {
             reason: "Momentum is slipping — do a quick confidence builder",
             action: "/quiz?subject=both&count=5&difficulty=easy&timer=false",
             icon: TrendingDown,
-            color: "text-orange-500",
+            color: "text-muted-foreground",
           });
           setLoading(false);
           return;
         }
       }
 
-      // Priority 4: Weaker subject based on ratings
+      // Priority 4: Goal-based routing
+      if (goalLabel === "prepare_exam" && examType) {
+        setRec({
+          label: `${examType.toUpperCase()} Exam Practice`,
+          reason: `Your goal is exam prep — stay focused on ${examType.toUpperCase()} skills`,
+          action: "/exam-simulator",
+          icon: Target,
+          color: "text-primary",
+        });
+        setLoading(false);
+        return;
+      }
+
+      if (goalLabel === "challenge_friends") {
+        setRec({
+          label: "Quick Duel",
+          reason: "You love competition — jump into a fast match",
+          action: "/battle?mode=quick_duel",
+          icon: Zap,
+          color: "text-primary",
+        });
+        setLoading(false);
+        return;
+      }
+
+      // Priority 5: Weaker subject based on ratings
       if (ratings) {
         const weaker = ratings.math_rating < ratings.english_rating ? "math" : "english";
         const weakerName = weaker === "math" ? "Math" : "English";
@@ -111,13 +149,13 @@ export function RecommendedPracticeWidget() {
           reason: `Your ${weakerName} rating is lower — closing the gap helps overall`,
           action: `/quiz?subject=${weaker}&count=10&difficulty=all&timer=true`,
           icon: BookOpen,
-          color: "text-blue-500",
+          color: "text-primary",
         });
         setLoading(false);
         return;
       }
 
-      // Priority 5: Near mastery topic
+      // Priority 6: Near mastery topic
       const nearMastery = mastery?.find(t => !t.is_mastered && t.accuracy_percentage >= 70 && t.questions_attempted >= 3);
       if (nearMastery) {
         setRec({
@@ -125,7 +163,7 @@ export function RecommendedPracticeWidget() {
           reason: `You're close to mastery — one more set to lock it in`,
           action: `/quiz?subject=${nearMastery.subject}&count=5&difficulty=all&timer=false`,
           icon: Zap,
-          color: "text-emerald-500",
+          color: "text-primary",
         });
         setLoading(false);
         return;

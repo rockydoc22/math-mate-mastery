@@ -29,6 +29,13 @@ export function NextBestActionWidget() {
     if (!user) return;
 
     try {
+      // Fetch profile for goal-based routing
+      const { data: profile } = await supabase
+        .from("profiles")
+        .select("primary_goal, exam_type")
+        .eq("id", user.id)
+        .maybeSingle();
+
       // 1. Check daily challenge
       const today = new Date().toISOString().split("T")[0];
       const { data: dailyDone } = await supabase
@@ -119,16 +126,38 @@ export function NextBestActionWidget() {
         }
       }
 
-      // 5. Quick Duel opportunity
-      setAction({
-        label: "Quick Duel",
-        description: "3-question lightning sprint — test your speed",
-        path: "/battle?mode=quick_duel",
-        icon: Swords,
-        gradient: "from-blue-500 to-cyan-500",
-      });
+      // 5. Goal-based fallback: route based on onboarding goal
+      if (profile?.primary_goal === "challenge_friends") {
+        setAction({
+          label: "Quick Duel",
+          description: "3-question lightning sprint — test your speed",
+          path: "/battle?mode=quick_duel",
+          icon: Swords,
+          gradient: "from-blue-500 to-cyan-500",
+        });
+        setLoading(false);
+        // Still check streak below
+      } else if (profile?.primary_goal === "prepare_exam") {
+        setAction({
+          label: "Exam Simulator",
+          description: `Practice a ${(profile.exam_type || "").toUpperCase() || "timed"} simulation`,
+          path: "/exam-simulator",
+          icon: Clock,
+          gradient: "from-violet-500 to-purple-500",
+        });
+        setLoading(false);
+      } else {
+        setAction({
+          label: "Quick Duel",
+          description: "3-question lightning sprint — test your speed",
+          path: "/battle?mode=quick_duel",
+          icon: Swords,
+          gradient: "from-blue-500 to-cyan-500",
+        });
+        setLoading(false);
+      }
 
-      // 6. Check streak at risk
+      // 6. Check streak at risk — override if urgent
       const { data: streak } = await supabase
         .from("streaks")
         .select("current_streak, last_practice_date")
