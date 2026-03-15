@@ -5,6 +5,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { supabase } from "@/integrations/supabase/client";
 import { toast } from "@/hooks/use-toast";
 import { AlertTriangle, SkipForward } from "lucide-react";
+import { useAuth } from "@/hooks/useAuth";
 
 interface FlagQuestionModalProps {
   isOpen: boolean;
@@ -19,15 +20,7 @@ export const FlagQuestionModal = ({ isOpen, onClose, questionId, questionType, q
   const [notes, setNotes] = useState('');
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
-  const [userId, setUserId] = useState<string | null>(null);
-
-  useEffect(() => {
-    const getUser = async () => {
-      const { data: { user } } = await supabase.auth.getUser();
-      setUserId(user?.id || null);
-    };
-    getUser();
-  }, []);
+  const { user } = useAuth();
 
   // Reset state when modal opens
   useEffect(() => {
@@ -38,8 +31,13 @@ export const FlagQuestionModal = ({ isOpen, onClose, questionId, questionType, q
   }, [isOpen]);
 
   const handleSubmit = async () => {
-    if (!userId) {
+    if (!user?.id) {
       toast({ title: "Please sign in to flag questions", variant: "destructive" });
+      return;
+    }
+
+    if (!questionId) {
+      toast({ title: "Error", description: "Missing question ID. Please try again.", variant: "destructive" });
       return;
     }
 
@@ -50,10 +48,13 @@ export const FlagQuestionModal = ({ isOpen, onClose, questionId, questionType, q
         question_type: questionType,
         issue_type: 'user_report',
         notes: notes.trim() || null,
-        user_id: userId,
+        user_id: user.id,
       }).select('id').single();
 
-      if (error) throw error;
+      if (error) {
+        console.error('Flag insert error:', error);
+        throw error;
+      }
 
       // Send email notification to admins (fire and forget)
       supabase.functions.invoke('notify-flagged-question', {
@@ -82,9 +83,13 @@ export const FlagQuestionModal = ({ isOpen, onClose, questionId, questionType, q
         description: "We will review and fix this question." 
       });
       setSubmitted(true);
-    } catch (error) {
+    } catch (error: any) {
       console.error('Error flagging question:', error);
-      toast({ title: "Error", description: "Failed to flag question. Please try again.", variant: "destructive" });
+      toast({ 
+        title: "Error", 
+        description: error?.message || "Failed to flag question. Please try again.", 
+        variant: "destructive" 
+      });
     } finally {
       setIsSubmitting(false);
     }
@@ -161,8 +166,8 @@ export const FlagQuestionModal = ({ isOpen, onClose, questionId, questionType, q
 
         <DialogFooter>
           <Button variant="outline" onClick={onClose}>Cancel</Button>
-          <Button onClick={handleSubmit} disabled={isSubmitting}>
-            {isSubmitting ? "Submitting..." : "Submit"}
+          <Button onClick={handleSubmit} disabled={isSubmitting || !user}>
+            {isSubmitting ? "Submitting..." : !user ? "Sign in to flag" : "Submit"}
           </Button>
         </DialogFooter>
       </DialogContent>
