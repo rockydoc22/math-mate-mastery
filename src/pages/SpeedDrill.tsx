@@ -56,6 +56,7 @@ const SpeedDrill = () => {
   const [answers, setAnswers] = useState<(number | null)[]>([]);
   const [timeLeft, setTimeLeft] = useState(TIME_PER_QUESTION);
   const [totalTime, setTotalTime] = useState(0);
+  const [isFlagModalOpen, setIsFlagModalOpen] = useState(false);
   const timerRef = useRef<ReturnType<typeof setInterval> | null>(null);
   const startTimeRef = useRef<number>(0);
 
