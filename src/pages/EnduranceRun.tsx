@@ -54,6 +54,7 @@ export default function EnduranceRun() {
   const [answered, setAnswered] = useState(0);
   const [correct, setCorrect] = useState(0);
   const [shieldActive, setShieldActive] = useState(false);
+  const [isFlagModalOpen, setIsFlagModalOpen] = useState(false);
 
   // Personal best
   const [personalBest, setPersonalBest] = useState(() => {
