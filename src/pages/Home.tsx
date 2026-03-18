@@ -263,6 +263,22 @@ const Home = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-background via-primary/5 to-accent/10 flex flex-col pb-16">
+      {/* Kid selector modal for parent accounts */}
+      <Dialog open={showKidSelector} onOpenChange={setShowKidSelector}>
+        <DialogContent className="sm:max-w-md">
+          <KidSelector
+            onSelectKid={(kidId) => {
+              setActiveKidId(kidId);
+              setShowKidSelector(false);
+              if (user) sessionStorage.setItem(`kid_selected_${user.id}`, kidId || "parent");
+            }}
+            onContinueAsParent={() => {
+              setShowKidSelector(false);
+              if (user) sessionStorage.setItem(`kid_selected_${user.id}`, "parent");
+            }}
+          />
+        </DialogContent>
+      </Dialog>
       {/* PWA Update Banner */}
       {hasUpdate && (
         <div className="px-4 py-2 bg-primary/10 text-center">
