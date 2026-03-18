@@ -43,7 +43,8 @@ import { NextBestActionWidget } from "@/components/NextBestActionWidget";
 import { QuickDuelEntry } from "@/components/QuickDuelEntry";
 import { StreakFreezeWidget } from "@/components/StreakFreezeWidget";
 import { OnboardingFlow } from "@/components/OnboardingFlow";
-
+import { KidSelector } from "@/components/KidSelector";
+import { Dialog, DialogContent } from "@/components/ui/dialog";
 // Motivational messages for non-logged in or idle users
 const motivationalMessages = [
   "Ready to crush the SAT? Start with 10 questions!",
@@ -123,7 +124,8 @@ const Home = () => {
   const [pinnedSubjects, setPinnedSubjects] = useState<string[]>([]);
   const [showPinManager, setShowPinManager] = useState(false);
   const [needsOnboarding, setNeedsOnboarding] = useState(false);
-
+  const [showKidSelector, setShowKidSelector] = useState(false);
+  const [activeKidId, setActiveKidId] = useState<string | null>(null);
   const nextSAT = getNextExamDate(examType);
 
   // Require an explicit exam choice once per browser session after login
@@ -145,12 +147,17 @@ const Home = () => {
       // Check if onboarding is needed
       const { data: profile } = await supabase
         .from("profiles")
-        .select("grade_level, primary_goal")
+        .select("grade_level, primary_goal, is_parent")
         .eq("id", user.id)
         .maybeSingle();
       
       if (profile && !profile.grade_level && !profile.primary_goal) {
         setNeedsOnboarding(true);
+      }
+      
+      // Show kid selector for parent accounts
+      if (profile?.is_parent && !sessionStorage.getItem(`kid_selected_${user.id}`)) {
+        setShowKidSelector(true);
       }
       
       const { data, error } = await supabase.rpc('get_home_dashboard_stats', {
@@ -256,6 +263,22 @@ const Home = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-background via-primary/5 to-accent/10 flex flex-col pb-16">
+      {/* Kid selector modal for parent accounts */}
+      <Dialog open={showKidSelector} onOpenChange={setShowKidSelector}>
+        <DialogContent className="sm:max-w-md">
+          <KidSelector
+            onSelectKid={(kidId) => {
+              setActiveKidId(kidId);
+              setShowKidSelector(false);
+              if (user) sessionStorage.setItem(`kid_selected_${user.id}`, kidId || "parent");
+            }}
+            onContinueAsParent={() => {
+              setShowKidSelector(false);
+              if (user) sessionStorage.setItem(`kid_selected_${user.id}`, "parent");
+            }}
+          />
+        </DialogContent>
+      </Dialog>
       {/* PWA Update Banner */}
       {hasUpdate && (
         <div className="px-4 py-2 bg-primary/10 text-center">

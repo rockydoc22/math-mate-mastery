@@ -4,11 +4,13 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Card } from "@/components/ui/card";
 import { Label } from "@/components/ui/label";
+import { Checkbox } from "@/components/ui/checkbox";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { useAuth } from "@/hooks/useAuth";
 import { toast } from "@/hooks/use-toast";
 import { supabase } from "@/integrations/supabase/client";
 import { lovable } from "@/integrations/lovable";
-import { User, Mail, Lock, ArrowLeft, Eye, EyeOff } from "lucide-react";
+import { User, Mail, Lock, ArrowLeft, Eye, EyeOff, Users } from "lucide-react";
 
 type AuthMode = "signIn" | "signUp" | "resetPassword" | "magicLink";
 
@@ -55,6 +57,8 @@ const Auth = () => {
     username: "", 
     confirmPassword: "" 
   });
+  const [isParent, setIsParent] = useState(false);
+  const [numKids, setNumKids] = useState("1");
 
   const handleGoogleSignIn = async () => {
     setGoogleLoading(true);
@@ -135,8 +139,14 @@ const Auth = () => {
           return;
         }
         
-        const { error, requiresEmailVerification } = await signUp(form.email, form.password, form.username);
+        const { error, requiresEmailVerification } = await signUp(
+          form.email, 
+          form.password, 
+          form.username,
+          isParent ? { isParent: true, numKids: parseInt(numKids) } : undefined
+        );
         if (error) throw error;
+        
         toast({
           title: requiresEmailVerification
             ? "Check your email to verify your account"
@@ -340,6 +350,41 @@ const Auth = () => {
                     required
                   />
                 </div>
+              </div>
+            )}
+
+            {/* Parent option during sign-up */}
+            {mode === "signUp" && (
+              <div className="space-y-3 rounded-lg border border-border p-3">
+                <div className="flex items-center gap-2">
+                  <Checkbox
+                    id="isParent"
+                    checked={isParent}
+                    onCheckedChange={(checked) => setIsParent(checked === true)}
+                  />
+                  <Label htmlFor="isParent" className="flex items-center gap-1.5 cursor-pointer text-sm">
+                    <Users className="w-4 h-4 text-primary" />
+                    I'm a parent signing up for my kids
+                  </Label>
+                </div>
+                {isParent && (
+                  <div className="space-y-2 pl-6">
+                    <Label htmlFor="numKids" className="text-sm">How many kids?</Label>
+                    <Select value={numKids} onValueChange={setNumKids}>
+                      <SelectTrigger className="w-24">
+                        <SelectValue />
+                      </SelectTrigger>
+                      <SelectContent>
+                        {[1, 2, 3, 4, 5].map((n) => (
+                          <SelectItem key={n} value={String(n)}>{n}</SelectItem>
+                        ))}
+                      </SelectContent>
+                    </Select>
+                    <p className="text-xs text-muted-foreground">
+                      After signing up, you can create profiles for each kid from the Parent Dashboard.
+                    </p>
+                  </div>
+                )}
               </div>
             )}
 

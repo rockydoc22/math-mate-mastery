@@ -630,6 +630,36 @@ export type Database = {
         }
         Relationships: []
       }
+      kid_profiles: {
+        Row: {
+          avatar_emoji: string | null
+          created_at: string
+          display_name: string
+          grade_level: string | null
+          id: string
+          parent_id: string
+          updated_at: string
+        }
+        Insert: {
+          avatar_emoji?: string | null
+          created_at?: string
+          display_name: string
+          grade_level?: string | null
+          id?: string
+          parent_id: string
+          updated_at?: string
+        }
+        Update: {
+          avatar_emoji?: string | null
+          created_at?: string
+          display_name?: string
+          grade_level?: string | null
+          id?: string
+          parent_id?: string
+          updated_at?: string
+        }
+        Relationships: []
+      }
       parent_links: {
         Row: {
           child_id: string
@@ -761,6 +791,8 @@ export type Database = {
           exam_type: string
           grade_level: string | null
           id: string
+          is_parent: boolean
+          num_kids: number
           pinned_subjects: string[]
           primary_goal: string | null
           show_on_leaderboards: boolean
@@ -775,6 +807,8 @@ export type Database = {
           exam_type?: string
           grade_level?: string | null
           id: string
+          is_parent?: boolean
+          num_kids?: number
           pinned_subjects?: string[]
           primary_goal?: string | null
           show_on_leaderboards?: boolean
@@ -789,6 +823,8 @@ export type Database = {
           exam_type?: string
           grade_level?: string | null
           id?: string
+          is_parent?: boolean
+          num_kids?: number
           pinned_subjects?: string[]
           primary_goal?: string | null
           show_on_leaderboards?: boolean
