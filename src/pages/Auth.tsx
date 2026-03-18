@@ -359,6 +359,40 @@ const Auth = () => {
               </div>
             )}
 
+            {/* Parent option during sign-up */}
+            {mode === "signUp" && (
+              <div className="space-y-3 rounded-lg border border-border p-3">
+                <div className="flex items-center gap-2">
+                  <Checkbox
+                    id="isParent"
+                    checked={isParent}
+                    onCheckedChange={(checked) => setIsParent(checked === true)}
+                  />
+                  <Label htmlFor="isParent" className="flex items-center gap-1.5 cursor-pointer text-sm">
+                    <Users className="w-4 h-4 text-primary" />
+                    I'm a parent signing up for my kids
+                  </Label>
+                </div>
+                {isParent && (
+                  <div className="space-y-2 pl-6">
+                    <Label htmlFor="numKids" className="text-sm">How many kids?</Label>
+                    <Select value={numKids} onValueChange={setNumKids}>
+                      <SelectTrigger className="w-24">
+                        <SelectValue />
+                      </SelectTrigger>
+                      <SelectContent>
+                        {[1, 2, 3, 4, 5].map((n) => (
+                          <SelectItem key={n} value={String(n)}>{n}</SelectItem>
+                        ))}
+                      </SelectContent>
+                    </Select>
+                    <p className="text-xs text-muted-foreground">
+                      After signing up, you can create profiles for each kid from the Parent Dashboard.
+                    </p>
+                  </div>
+                )}
+              </div>
+
             {(mode === "signIn" || mode === "signUp" || mode === "resetPassword") && (
               <div className="space-y-2">
                 <Label htmlFor="password">{mode === "resetPassword" ? "New Password" : "Password"}</Label>
