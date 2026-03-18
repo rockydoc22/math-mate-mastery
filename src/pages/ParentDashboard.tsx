@@ -76,16 +76,11 @@ const ParentDashboard = () => {
     if (!user) return;
     setStatsLoading(true);
 
-    // Use raw PostgREST filter for kid_profile_id (not in generated types yet)
-    const attemptsQuery = supabase
-      .from("question_attempts")
-      .select("id, is_correct, domain")
-      .eq("user_id", user.id);
-    // @ts-ignore - kid_profile_id exists but isn't in generated types
-    attemptsQuery.url.searchParams.append("kid_profile_id", `eq.${kidId}`);
-
     const [attemptsRes, streakRes, quizzesRes] = await Promise.all([
-      attemptsQuery,
+      supabase
+        .from("question_attempts")
+        .select("id, is_correct, domain, kid_profile_id" as any)
+        .eq("user_id", user.id),
       supabase
         .from("streaks")
         .select("current_streak")
@@ -97,7 +92,9 @@ const ParentDashboard = () => {
         .eq("user_id", user.id),
     ]);
 
-    const attempts = (attemptsRes.data || []) as any[];
+    // Filter client-side by kid_profile_id since column isn't in generated types
+    const allAttempts = (attemptsRes.data || []) as any[];
+    const attempts = allAttempts.filter((a: any) => a.kid_profile_id === kidId);
     const totalQ = attempts.length;
     const correctQ = attempts.filter((a: any) => a.is_correct).length;
     const accuracy = totalQ > 0 ? Math.round((correctQ / totalQ) * 100) : 0;
