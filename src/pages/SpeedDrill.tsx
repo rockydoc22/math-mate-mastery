@@ -104,6 +104,7 @@ const SpeedDrill = () => {
       setPhase("results");
       // Save attempts
       if (user) {
+        const kidId = sessionStorage.getItem(`kid_selected_${user.id}`);
         questions.forEach((q, i) => {
           const isCorrect = newAnswers[i] === q.correct;
           supabase.from("question_attempts").insert({
@@ -113,7 +114,8 @@ const SpeedDrill = () => {
             domain: "speed_drill",
             skill: q.skill,
             is_correct: isCorrect,
-          }).then(() => {});
+            kid_profile_id: kidId && kidId !== 'parent' ? kidId : null,
+          } as any).then(() => {});
         });
       }
     } else {
