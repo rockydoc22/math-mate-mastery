@@ -2,11 +2,12 @@ import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { ArrowLeft, ChevronRight, CheckCircle2, XCircle, Sparkles, Trophy, Zap } from "lucide-react";
+import { ArrowLeft, ChevronRight, CheckCircle2, XCircle, Sparkles, Trophy, Zap, Flag } from "lucide-react";
 import { Link } from "react-router-dom";
 import { FRENCH_CATEGORIES, loadFrenchQuestions, frenchQuestionsByCategory, type FrenchCategory } from "@/data/frenchCompetitionQuestions";
 import { Question } from "@/data/questions";
 import { AITutorExplanation } from "@/components/AITutorExplanation";
+import { FlagQuestionModal } from "@/components/FlagQuestionModal";
 
 type ViewState =
   | { mode: "categories" }
