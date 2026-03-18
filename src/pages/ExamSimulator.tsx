@@ -267,6 +267,7 @@ const ExamSimulator = () => {
   const [questionTimings, setQuestionTimings] = useState<QuestionTiming[]>([]);
   const [questionStartTime, setQuestionStartTime] = useState(0);
   const [lostLifeAnim, setLostLifeAnim] = useState(false);
+  const [isFlagModalOpen, setIsFlagModalOpen] = useState(false);
   const timerRef = useRef<ReturnType<typeof setInterval> | null>(null);
   const momentum = useMomentum();
 
