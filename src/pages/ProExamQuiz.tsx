@@ -33,6 +33,7 @@ const ProExamQuiz = () => {
   const [answered, setAnswered] = useState(0);
   const [timeLeft, setTimeLeft] = useState(0);
   const [quizComplete, setQuizComplete] = useState(false);
+  const [isFlagModalOpen, setIsFlagModalOpen] = useState(false);
 
   useEffect(() => {
     if (!exam) return;
