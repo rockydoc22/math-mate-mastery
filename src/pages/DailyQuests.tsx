@@ -1,125 +1,156 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useMemo } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Progress } from "@/components/ui/progress";
-import { ArrowLeft, Gift, Star, Flame, CheckCircle2, Clock, Zap, Target, BookOpen, Brain, Trophy } from "lucide-react";
+import { ArrowLeft, Star, Zap, Trophy, RotateCcw } from "lucide-react";
 import { useAuth } from "@/hooks/useAuth";
 import { supabase } from "@/integrations/supabase/client";
-import { toast } from "@/hooks/use-toast";
 import { BottomNav } from "@/components/BottomNav";
+import { selectDailyQuests, type DailyQuest } from "@/lib/dailyQuestEngine";
+import { questTemplates } from "@/data/questTemplates";
 
-interface Quest {
-  id: string;
-  title: string;
-  description: string;
-  icon: string;
-  target: number;
-  current: number;
-  xpReward: number;
-  route: string;
-  completed: boolean;
+// Map quest IDs to emoji icons & routes
+const questMeta: Record<string, { icon: string; route: string }> = {
+  "q-practice-10": { icon: "📝", route: "/quiz" },
+  "q-practice-20": { icon: "🔥", route: "/quiz" },
+  "q-math-5": { icon: "🧮", route: "/math" },
+  "q-english-5": { icon: "✍️", route: "/english" },
+  "q-review-3": { icon: "🔄", route: "/review" },
+  "q-streak": { icon: "🔥", route: "/quiz" },
+  "q-boss": { icon: "💀", route: "/boss-battle" },
+  "q-endurance": { icon: "🏃", route: "/endurance" },
+  "q-topic": { icon: "🎯", route: "/problems-by-topic" },
+  "q-rapid": { icon: "⚡", route: "/rapid-facts" },
+  "q-vocab": { icon: "📚", route: "/vocab" },
+  "q-mastery": { icon: "📊", route: "/mastery" },
+  "q-survival": { icon: "💀", route: "/survival" },
+  "q-speed-drill": { icon: "⏱️", route: "/speed-drill" },
+  "q-flashcards": { icon: "🃏", route: "/flashcards" },
+};
+
+// Derive quest target from goal text
+function extractTarget(goal: string): number {
+  const match = goal.match(/(\d+)/);
+  return match ? parseInt(match[1], 10) : 1;
 }
 
-// Generate daily quests based on date seed
-function generateDailyQuests(dateStr: string, stats: { questionsToday: number; streakDays: number; reviewedToday: number }): Quest[] {
-  const seed = dateStr.split('-').reduce((a, b) => a + parseInt(b), 0);
-  
-  const questPool: Omit<Quest, 'current' | 'completed'>[] = [
-    { id: 'q-practice-10', title: 'Daily Grind', description: 'Answer 10 practice questions', icon: '📝', target: 10, xpReward: 50, route: '/quiz' },
-    { id: 'q-practice-20', title: 'Double Down', description: 'Answer 20 practice questions', icon: '🔥', target: 20, xpReward: 100, route: '/quiz' },
-    { id: 'q-math-5', title: 'Math Focus', description: 'Complete 5 math questions', icon: '🧮', target: 5, xpReward: 40, route: '/math' },
-    { id: 'q-english-5', title: 'Word Power', description: 'Complete 5 English questions', icon: '✍️', target: 5, xpReward: 40, route: '/english' },
-    { id: 'q-review-3', title: 'Learn From Mistakes', description: 'Review 3 missed questions', icon: '🔄', target: 3, xpReward: 60, route: '/review' },
-    { id: 'q-streak', title: 'Keep the Fire', description: 'Maintain your daily streak', icon: '🔥', target: 1, xpReward: 30, route: '/quiz' },
-    { id: 'q-boss', title: 'Boss Slayer', description: 'Complete a Boss Battle', icon: '💀', target: 1, xpReward: 75, route: '/boss-battle' },
-    { id: 'q-endurance', title: 'Endurance Runner', description: 'Start an Endurance Run', icon: '🏃', target: 1, xpReward: 60, route: '/endurance' },
-    { id: 'q-topic', title: 'Topic Deep Dive', description: 'Practice questions from one topic', icon: '🎯', target: 5, xpReward: 50, route: '/problems-by-topic' },
-    { id: 'q-rapid', title: 'Quick Recall', description: 'Complete a Rapid Facts round', icon: '⚡', target: 1, xpReward: 35, route: '/rapid-facts' },
-    { id: 'q-vocab', title: 'Vocab Builder', description: 'Learn 5 vocabulary words', icon: '📚', target: 5, xpReward: 40, route: '/vocab' },
-    { id: 'q-mastery', title: 'Skill Check', description: 'Check your topic mastery', icon: '📊', target: 1, xpReward: 25, route: '/mastery' },
-  ];
-
-  // Select 3 quests deterministically from the pool using the date seed
-  const selected: typeof questPool = [];
-  const indices = new Set<number>();
-  let s = seed;
-  while (selected.length < 3 && indices.size < questPool.length) {
-    s = (s * 1103515245 + 12345) & 0x7fffffff;
-    const idx = s % questPool.length;
-    if (!indices.has(idx)) {
-      indices.add(idx);
-      selected.push(questPool[idx]);
-    }
-  }
-
-  return selected.map(q => {
-    let current = 0;
-    if (q.id.includes('practice')) current = stats.questionsToday;
-    else if (q.id === 'q-math-5') current = Math.floor(stats.questionsToday / 2);
-    else if (q.id === 'q-english-5') current = Math.floor(stats.questionsToday / 2);
-    else if (q.id === 'q-review-3') current = stats.reviewedToday;
-    else if (q.id === 'q-streak') current = stats.streakDays > 0 ? 1 : 0;
-
-    return {
-      ...q,
-      current: Math.min(current, q.target),
-      completed: current >= q.target,
-    };
-  });
+interface QuestWithProgress extends DailyQuest {
+  icon: string;
+  route: string;
+  target: number;
+  current: number;
+  completed: boolean;
 }
 
 const DailyQuests = () => {
   const { user } = useAuth();
-  const [quests, setQuests] = useState<Quest[]>([]);
+  const [quests, setQuests] = useState<QuestWithProgress[]>([]);
   const [loading, setLoading] = useState(true);
-  const [totalXPEarned, setTotalXPEarned] = useState(0);
 
   useEffect(() => {
-    const loadStats = async () => {
-      const today = new Date().toISOString().split('T')[0];
+    const load = async () => {
+      const today = new Date();
+      const todayStr = today.toISOString().split("T")[0];
+
+      // Fetch user profile for grade-level
+      let gradeNum = 9;
+      let recentDomains: string[] = [];
+
+      if (user) {
+        const { data: profile } = await supabase
+          .from("profiles")
+          .select("grade_level")
+          .eq("id", user.id)
+          .maybeSingle();
+
+        if (profile?.grade_level) {
+          const parsed = parseInt(profile.grade_level, 10);
+          if (!isNaN(parsed)) gradeNum = parsed;
+        }
+
+        // Recent activity domains (last 7 days)
+        const weekAgo = new Date(today);
+        weekAgo.setDate(weekAgo.getDate() - 7);
+        const { data: recentAttempts } = await supabase
+          .from("question_attempts")
+          .select("domain")
+          .eq("user_id", user.id)
+          .gte("created_at", weekAgo.toISOString())
+          .limit(100);
+
+        if (recentAttempts) {
+          recentDomains = [...new Set(recentAttempts.map((a) => a.domain.toLowerCase()))];
+        }
+      }
+
+      // Select quests via engine
+      const selected = selectDailyQuests({
+        profile: { age: gradeNum + 5, grade: gradeNum, recentActivityDomains: recentDomains },
+        today,
+        templates: questTemplates,
+      });
+
+      // Load progress for each quest
       let questionsToday = 0;
       let streakDays = 0;
       let reviewedToday = 0;
 
       if (user) {
-        // Count today's question attempts
         const { count: attemptCount } = await supabase
-          .from('question_attempts')
-          .select('*', { count: 'exact', head: true })
-          .eq('user_id', user.id)
-          .gte('created_at', `${today}T00:00:00`);
+          .from("question_attempts")
+          .select("*", { count: "exact", head: true })
+          .eq("user_id", user.id)
+          .gte("created_at", `${todayStr}T00:00:00`);
         questionsToday = attemptCount || 0;
 
-        // Get streak
         const { data: streakData } = await supabase
-          .from('streaks')
-          .select('current_streak')
-          .eq('user_id', user.id)
+          .from("streaks")
+          .select("current_streak")
+          .eq("user_id", user.id)
           .maybeSingle();
         streakDays = streakData?.current_streak || 0;
 
-        // Count today's reviews (re-attempts on previously missed)
         const { count: reviewCount } = await supabase
-          .from('question_attempts')
-          .select('*', { count: 'exact', head: true })
-          .eq('user_id', user.id)
-          .gt('review_count', 0)
-          .gte('created_at', `${today}T00:00:00`);
+          .from("question_attempts")
+          .select("*", { count: "exact", head: true })
+          .eq("user_id", user.id)
+          .gt("review_count", 0)
+          .gte("created_at", `${todayStr}T00:00:00`);
         reviewedToday = reviewCount || 0;
       }
 
-      const dailyQuests = generateDailyQuests(today, { questionsToday, streakDays, reviewedToday });
-      setQuests(dailyQuests);
-      setTotalXPEarned(dailyQuests.filter(q => q.completed).reduce((sum, q) => sum + q.xpReward, 0));
+      const withProgress: QuestWithProgress[] = selected.map((q) => {
+        const meta = questMeta[q.id] || { icon: "🎯", route: "/quiz" };
+        const target = extractTarget(q.goal);
+
+        let current = 0;
+        if (q.id.includes("practice")) current = questionsToday;
+        else if (q.id === "q-math-5") current = Math.floor(questionsToday / 2);
+        else if (q.id === "q-english-5") current = Math.floor(questionsToday / 2);
+        else if (q.id === "q-review-3") current = reviewedToday;
+        else if (q.id === "q-streak") current = streakDays > 0 ? 1 : 0;
+
+        return {
+          ...q,
+          icon: meta.icon,
+          route: meta.route,
+          target,
+          current: Math.min(current, target),
+          completed: current >= target,
+        };
+      });
+
+      setQuests(withProgress);
       setLoading(false);
     };
 
-    loadStats();
+    load();
   }, [user]);
 
-  const totalXPAvailable = quests.reduce((sum, q) => sum + q.xpReward, 0);
-  const completedCount = quests.filter(q => q.completed).length;
+  const totalXPEarned = quests.filter((q) => q.completed).reduce((s, q) => s + q.reward_coins, 0);
+  const totalXPAvailable = quests.reduce((s, q) => s + q.reward_coins, 0);
+  const completedCount = quests.filter((q) => q.completed).length;
 
   if (loading) {
     return (
@@ -134,12 +165,14 @@ const DailyQuests = () => {
       <div className="sticky top-0 z-10 bg-background/95 backdrop-blur border-b border-border px-4 py-3">
         <div className="max-w-2xl mx-auto flex items-center gap-3">
           <Link to="/">
-            <Button variant="ghost" size="icon"><ArrowLeft className="w-5 h-5" /></Button>
+            <Button variant="ghost" size="icon">
+              <ArrowLeft className="w-5 h-5" />
+            </Button>
           </Link>
           <div className="flex-1">
             <h1 className="text-xl font-bold">Daily Quests</h1>
             <p className="text-xs text-muted-foreground">
-              {new Date().toLocaleDateString('en-US', { weekday: 'long', month: 'short', day: 'numeric' })}
+              {new Date().toLocaleDateString("en-US", { weekday: "long", month: "short", day: "numeric" })}
             </p>
           </div>
           <div className="flex items-center gap-1 px-3 py-1.5 rounded-full bg-primary/10">
@@ -161,37 +194,61 @@ const DailyQuests = () => {
               {completedCount}/{quests.length} done
             </span>
           </div>
-          <Progress value={(completedCount / quests.length) * 100} className="h-3" />
+          <Progress value={quests.length > 0 ? (completedCount / quests.length) * 100 : 0} className="h-3" />
           <p className="text-xs text-muted-foreground mt-2">
-            {completedCount === quests.length 
-              ? '🎉 All quests completed! Come back tomorrow for new ones.' 
-              : `${totalXPAvailable - totalXPEarned} XP remaining to earn today`
-            }
+            {completedCount === quests.length
+              ? "🎉 All quests completed! Come back tomorrow for new ones."
+              : `${totalXPAvailable - totalXPEarned} XP remaining to earn today`}
           </p>
         </Card>
 
         {/* Quest cards */}
-        {quests.map(quest => (
+        {quests.map((quest) => (
           <Link key={quest.id} to={quest.route}>
-            <Card className={`p-4 transition-all hover:shadow-md ${quest.completed ? 'bg-emerald-50/50 dark:bg-emerald-900/10 border-emerald-200 dark:border-emerald-800' : 'hover:border-primary/40'}`}>
+            <Card
+              className={`p-4 transition-all hover:shadow-md ${
+                quest.completed
+                  ? "bg-emerald-50/50 dark:bg-emerald-900/10 border-emerald-200 dark:border-emerald-800"
+                  : "hover:border-primary/40"
+              }`}
+            >
               <div className="flex items-start gap-4">
-                <div className={`w-12 h-12 rounded-xl flex items-center justify-center text-2xl shrink-0 ${quest.completed ? 'bg-emerald-100 dark:bg-emerald-900/30' : 'bg-primary/10'}`}>
-                  {quest.completed ? '✅' : quest.icon}
+                <div
+                  className={`w-12 h-12 rounded-xl flex items-center justify-center text-2xl shrink-0 ${
+                    quest.completed ? "bg-emerald-100 dark:bg-emerald-900/30" : "bg-primary/10"
+                  }`}
+                >
+                  {quest.completed ? "✅" : quest.icon}
                 </div>
                 <div className="flex-1 min-w-0">
                   <div className="flex items-center gap-2 mb-1">
-                    <h3 className={`font-bold text-sm ${quest.completed ? 'text-emerald-700 dark:text-emerald-400 line-through' : ''}`}>
-                      {quest.title}
+                    <h3
+                      className={`font-bold text-sm ${
+                        quest.completed ? "text-emerald-700 dark:text-emerald-400 line-through" : ""
+                      }`}
+                    >
+                      {quest.name}
                     </h3>
                     <span className="text-[10px] px-1.5 py-0.5 rounded-full bg-primary/10 text-primary font-bold">
-                      +{quest.xpReward} XP
+                      +{quest.reward_coins} coins
+                    </span>
+                    <span
+                      className={`text-[10px] px-1.5 py-0.5 rounded-full font-bold ${
+                        quest.difficulty === "hard"
+                          ? "bg-destructive/10 text-destructive"
+                          : quest.difficulty === "medium"
+                          ? "bg-amber-500/10 text-amber-600"
+                          : "bg-emerald-500/10 text-emerald-600"
+                      }`}
+                    >
+                      {quest.difficulty}
                     </span>
                   </div>
-                  <p className="text-xs text-muted-foreground mb-2">{quest.description}</p>
+                  <p className="text-xs text-muted-foreground mb-2">{quest.goal}</p>
                   <div className="flex items-center gap-2">
-                    <Progress 
-                      value={(quest.current / quest.target) * 100} 
-                      className={`h-2 flex-1 ${quest.completed ? '[&>div]:bg-emerald-500' : ''}`} 
+                    <Progress
+                      value={(quest.current / quest.target) * 100}
+                      className={`h-2 flex-1 ${quest.completed ? "[&>div]:bg-emerald-500" : ""}`}
                     />
                     <span className="text-xs font-mono text-muted-foreground whitespace-nowrap">
                       {quest.current}/{quest.target}
@@ -210,7 +267,7 @@ const DailyQuests = () => {
             <span className="text-sm font-bold">Bonus Tip</span>
           </div>
           <p className="text-xs text-muted-foreground">
-            Complete all 3 daily quests to earn a streak bonus! Consecutive days with all quests completed multiply your XP rewards.
+            Quests are personalized to your grade level and recent activity. Complete all daily quests to earn a streak bonus!
           </p>
         </Card>
       </div>
