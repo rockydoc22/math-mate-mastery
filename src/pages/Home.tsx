@@ -43,7 +43,8 @@ import { NextBestActionWidget } from "@/components/NextBestActionWidget";
 import { QuickDuelEntry } from "@/components/QuickDuelEntry";
 import { StreakFreezeWidget } from "@/components/StreakFreezeWidget";
 import { OnboardingFlow } from "@/components/OnboardingFlow";
-
+import { KidSelector } from "@/components/KidSelector";
+import { Dialog, DialogContent } from "@/components/ui/dialog";
 // Motivational messages for non-logged in or idle users
 const motivationalMessages = [
   "Ready to crush the SAT? Start with 10 questions!",
