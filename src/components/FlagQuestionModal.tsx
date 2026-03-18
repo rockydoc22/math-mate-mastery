@@ -45,7 +45,7 @@ export const FlagQuestionModal = ({ isOpen, onClose, questionId, questionType, q
     try {
       const { data: flagData, error } = await supabase.from('flagged_questions').insert({
         question_id: questionId,
-        question_type: questionType,
+        question_type: questionType === 'science' ? 'math' : questionType,
         issue_type: 'user_report',
         notes: notes.trim() || null,
         user_id: user.id,
