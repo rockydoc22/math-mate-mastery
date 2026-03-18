@@ -247,6 +247,7 @@ const SpeedDrill = () => {
               questionId={currentQ.id}
               questionType={currentQ.subject}
             />
+          </motion.div>
         )}
 
         {phase === "results" && (
