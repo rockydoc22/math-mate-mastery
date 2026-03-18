@@ -18,6 +18,7 @@ const FrenchCompetition = () => {
   const navigate = useNavigate();
   const [view, setView] = useState<ViewState>({ mode: "categories" });
   const [showAITutor, setShowAITutor] = useState(false);
+  const [isFlagModalOpen, setIsFlagModalOpen] = useState(false);
   const [questions, setQuestions] = useState<Record<string, Question[]>>(frenchQuestionsByCategory);
 
   useEffect(() => {
