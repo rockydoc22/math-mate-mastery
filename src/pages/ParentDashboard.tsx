@@ -9,7 +9,7 @@ import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogFooter } from "
 import { Label } from "@/components/ui/label";
 import {
   ArrowLeft, Eye, Flame, BarChart3, BookOpen,
-  CheckCircle2, TrendingUp, Download, Printer, Plus, Pencil, UserCircle
+  CheckCircle2, Plus, Pencil, UserCircle
 } from "lucide-react";
 import { useAuth } from "@/hooks/useAuth";
 import { supabase } from "@/integrations/supabase/client";
@@ -28,8 +28,7 @@ interface KidStats {
   accuracy: number;
   streak: number;
   quizzesCompleted: number;
-  recentActivity: { date: string; count: number }[];
-  recentDomains: { domain: string; count: number; accuracy: number }[];
+  recentDomains: { domain: string; count: number; correct: number }[];
 }
 
 const AVATAR_OPTIONS = ["🧑‍🎓", "👧", "👦", "🦸", "🧙", "🐱", "🐶", "🦊", "🐼", "🦄", "🤖", "👽", "🧑‍🚀", "🎯", "⭐", "🔥"];
@@ -41,6 +40,7 @@ const ParentDashboard = () => {
   const [selectedKid, setSelectedKid] = useState<string | null>(null);
   const [kidStats, setKidStats] = useState<KidStats | null>(null);
   const [loading, setLoading] = useState(true);
+  const [statsLoading, setStatsLoading] = useState(false);
   const [editingKid, setEditingKid] = useState<KidProfile | null>(null);
   const [editAvatar, setEditAvatar] = useState("");
   const [editGrade, setEditGrade] = useState("");
@@ -53,6 +53,10 @@ const ParentDashboard = () => {
     loadKids();
   }, [user]);
 
+  useEffect(() => {
+    if (selectedKid && user) loadKidStats(selectedKid);
+  }, [selectedKid, user]);
+
   const loadKids = async () => {
     if (!user) return;
     const { data } = await supabase
@@ -64,11 +68,54 @@ const ParentDashboard = () => {
     setKids(profiles);
     if (profiles.length > 0 && !selectedKid) {
       setSelectedKid(profiles[0].id);
-      // Stats are loaded via the kid_profiles — since kids don't have auth accounts,
-      // we show the parent's own question_attempts filtered by kid session.
-      // For now, show placeholder stats since kid_profiles are sub-profiles.
     }
     setLoading(false);
+  };
+
+  const loadKidStats = async (kidId: string) => {
+    if (!user) return;
+    setStatsLoading(true);
+
+    const [attemptsRes, streakRes, quizzesRes] = await Promise.all([
+      supabase
+        .from("question_attempts")
+        .select("id, is_correct, domain")
+        .eq("user_id", user.id)
+        .eq("kid_profile_id" as any, kidId),
+      supabase
+        .from("streaks")
+        .select("current_streak")
+        .eq("user_id", user.id)
+        .maybeSingle(),
+      supabase
+        .from("quiz_scores")
+        .select("id")
+        .eq("user_id", user.id),
+    ]);
+
+    const attempts = (attemptsRes.data || []) as any[];
+    const totalQ = attempts.length;
+    const correctQ = attempts.filter((a: any) => a.is_correct).length;
+    const accuracy = totalQ > 0 ? Math.round((correctQ / totalQ) * 100) : 0;
+
+    // Domain breakdown
+    const domainMap = new Map<string, { count: number; correct: number }>();
+    for (const a of attempts) {
+      const d = a.domain || "Unknown";
+      const entry = domainMap.get(d) || { count: 0, correct: 0 };
+      entry.count++;
+      if (a.is_correct) entry.correct++;
+      domainMap.set(d, entry);
+    }
+
+    setKidStats({
+      questionsAnswered: totalQ,
+      accuracy,
+      streak: streakRes.data?.current_streak || 0,
+      quizzesCompleted: (quizzesRes.data || []).length,
+      recentDomains: Array.from(domainMap.entries()).map(([domain, v]) => ({ domain, ...v })),
+    });
+    setStatsLoading(false);
   };
 
   const handleAddKid = async () => {
@@ -139,7 +186,6 @@ const ParentDashboard = () => {
 
   return (
     <div className="min-h-screen bg-background pb-24">
-      {/* Header */}
       <div className="sticky top-0 z-10 bg-background/95 backdrop-blur border-b border-border px-4 py-3">
         <div className="max-w-2xl mx-auto flex items-center gap-3">
           <Link to="/"><Button variant="ghost" size="icon"><ArrowLeft className="w-5 h-5" /></Button></Link>
@@ -149,17 +195,10 @@ const ParentDashboard = () => {
             </h1>
             <p className="text-xs text-muted-foreground">Manage & monitor your kids</p>
           </div>
-          <Button size="sm" variant="outline" className="gap-1" onClick={() => {
-            setNewKidName("");
-            setAddingKid(false);
-          }}>
-            <Plus className="w-4 h-4" />
-          </Button>
         </div>
       </div>
 
       <div className="max-w-2xl mx-auto p-4 space-y-4">
-        {/* Kid selector tabs */}
         {kids.length > 0 && (
           <div className="flex gap-2 overflow-x-auto pb-2">
             {kids.map(kid => (
@@ -177,7 +216,6 @@ const ParentDashboard = () => {
           </div>
         )}
 
-        {/* No kids yet */}
         {kids.length === 0 && (
           <Card className="p-6 text-center border-dashed space-y-3">
             <UserCircle className="w-10 h-10 text-muted-foreground mx-auto" />
@@ -197,18 +235,16 @@ const ParentDashboard = () => {
           </Card>
         )}
 
-        {/* Selected kid profile + stats */}
         {currentKid && (
           <>
-            {/* Profile card */}
             <Card className="p-4">
               <div className="flex items-center gap-4">
                 <span className="text-4xl">{currentKid.avatar_emoji || "🧑‍🎓"}</span>
                 <div className="flex-1">
                   <h2 className="text-lg font-bold">{currentKid.display_name}</h2>
-                  <div className="flex gap-2 text-xs text-muted-foreground">
-                    {currentKid.grade_level && <span>Grade: {currentKid.grade_level}</span>}
-                  </div>
+                  {currentKid.grade_level && (
+                    <span className="text-xs text-muted-foreground">Grade: {currentKid.grade_level}</span>
+                  )}
                 </div>
                 <Button size="sm" variant="ghost" onClick={() => openEditKid(currentKid)}>
                   <Pencil className="w-4 h-4" />
@@ -216,44 +252,66 @@ const ParentDashboard = () => {
               </div>
             </Card>
 
-            {/* Stats overview — since kid_profiles are sub-profiles without auth,
-                real stats tracking requires the app to tag activity with kid_id.
-                For now we show the profile info and a coming-soon note for stats. */}
-            <Card className="p-4 bg-muted/30">
-              <h3 className="font-bold text-sm mb-3 flex items-center gap-2">
-                <BarChart3 className="w-4 h-4 text-primary" /> Activity Summary
-              </h3>
-              <p className="text-sm text-muted-foreground">
-                Activity tracking for kid profiles is being set up. Once your kids start practicing under their profile, 
-                their questions answered, accuracy, streaks, and domain breakdowns will appear here.
-              </p>
-            </Card>
+            {statsLoading ? (
+              <div className="flex justify-center py-8">
+                <div className="w-6 h-6 border-3 border-primary border-t-transparent rounded-full animate-spin" />
+              </div>
+            ) : kidStats ? (
+              <>
+                <div className="grid grid-cols-2 gap-3">
+                  <Card className="p-3 text-center">
+                    <BookOpen className="w-5 h-5 text-primary mx-auto mb-1" />
+                    <p className="text-2xl font-bold">{kidStats.questionsAnswered}</p>
+                    <p className="text-[10px] text-muted-foreground">Questions Done</p>
+                  </Card>
+                  <Card className="p-3 text-center">
+                    <BarChart3 className="w-5 h-5 text-primary mx-auto mb-1" />
+                    <p className="text-2xl font-bold">{kidStats.accuracy}%</p>
+                    <p className="text-[10px] text-muted-foreground">Accuracy</p>
+                  </Card>
+                  <Card className="p-3 text-center">
+                    <Flame className="w-5 h-5 text-primary mx-auto mb-1" />
+                    <p className="text-2xl font-bold">{kidStats.streak}</p>
+                    <p className="text-[10px] text-muted-foreground">Day Streak</p>
+                  </Card>
+                  <Card className="p-3 text-center">
+                    <CheckCircle2 className="w-5 h-5 text-primary mx-auto mb-1" />
+                    <p className="text-2xl font-bold">{kidStats.quizzesCompleted}</p>
+                    <p className="text-[10px] text-muted-foreground">Quizzes Done</p>
+                  </Card>
+                </div>
 
-            {/* Quick actions */}
-            <div className="grid grid-cols-2 gap-3">
-              <Card className="p-3 text-center">
-                <BookOpen className="w-5 h-5 text-primary mx-auto mb-1" />
-                <p className="text-2xl font-bold">—</p>
-                <p className="text-[10px] text-muted-foreground">Questions Done</p>
-              </Card>
-              <Card className="p-3 text-center">
-                <BarChart3 className="w-5 h-5 text-emerald-500 mx-auto mb-1" />
-                <p className="text-2xl font-bold">—</p>
-                <p className="text-[10px] text-muted-foreground">Accuracy</p>
-              </Card>
-              <Card className="p-3 text-center">
-                <Flame className="w-5 h-5 text-orange-500 mx-auto mb-1" />
-                <p className="text-2xl font-bold">—</p>
-                <p className="text-[10px] text-muted-foreground">Day Streak</p>
-              </Card>
-              <Card className="p-3 text-center">
-                <CheckCircle2 className="w-5 h-5 text-blue-500 mx-auto mb-1" />
-                <p className="text-2xl font-bold">—</p>
-                <p className="text-[10px] text-muted-foreground">Quizzes Done</p>
-              </Card>
-            </div>
+                {kidStats.recentDomains.length > 0 && (
+                  <Card className="p-4">
+                    <h3 className="font-bold text-sm mb-3 flex items-center gap-2">
+                      <BarChart3 className="w-4 h-4 text-primary" /> Domain Breakdown
+                    </h3>
+                    <div className="space-y-3">
+                      {kidStats.recentDomains.map(d => (
+                        <div key={d.domain}>
+                          <div className="flex justify-between text-xs mb-1">
+                            <span className="font-medium capitalize">{d.domain}</span>
+                            <span className="text-muted-foreground">
+                              {d.correct}/{d.count} correct ({d.count > 0 ? Math.round((d.correct / d.count) * 100) : 0}%)
+                            </span>
+                          </div>
+                          <Progress value={d.count > 0 ? (d.correct / d.count) * 100 : 0} className="h-2" />
+                        </div>
+                      ))}
+                    </div>
+                  </Card>
+                )}
 
-            {/* Add another kid */}
+                {kidStats.questionsAnswered === 0 && (
+                  <Card className="p-4 bg-muted/30">
+                    <p className="text-sm text-muted-foreground text-center">
+                      No activity yet for {currentKid.display_name}. Once they start practicing under their profile, stats will appear here.
+                    </p>
+                  </Card>
+                )}
+              </>
+            ) : null}
+
             <Card className="p-4 border-dashed">
               <h3 className="font-bold text-sm mb-2">Add Another Kid</h3>
               <div className="flex gap-2">
@@ -272,7 +330,6 @@ const ParentDashboard = () => {
         )}
       </div>
 
-      {/* Edit kid dialog */}
       <Dialog open={!!editingKid} onOpenChange={() => setEditingKid(null)}>
         <DialogContent className="sm:max-w-md">
           <DialogHeader>
