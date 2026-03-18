@@ -43,11 +43,10 @@ export const FlagQuestionModal = ({ isOpen, onClose, questionId, questionType, q
 
     setIsSubmitting(true);
     try {
-      const safeQuestionType = questionType === 'science' ? 'math' : questionType;
       const { data: flagData, error } = await supabase.from('flagged_questions').insert({
         question_id: questionId,
-        question_type: safeQuestionType,
-        issue_type: 'other',
+        question_type: questionType === 'science' ? 'math' : questionType,
+        issue_type: 'user_report',
         notes: notes.trim() || null,
         user_id: user.id,
       }).select('id').single();
