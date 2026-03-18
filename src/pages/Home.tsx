@@ -147,12 +147,17 @@ const Home = () => {
       // Check if onboarding is needed
       const { data: profile } = await supabase
         .from("profiles")
-        .select("grade_level, primary_goal")
+        .select("grade_level, primary_goal, is_parent")
         .eq("id", user.id)
         .maybeSingle();
       
       if (profile && !profile.grade_level && !profile.primary_goal) {
         setNeedsOnboarding(true);
+      }
+      
+      // Show kid selector for parent accounts
+      if (profile?.is_parent && !sessionStorage.getItem(`kid_selected_${user.id}`)) {
+        setShowKidSelector(true);
       }
       
       const { data, error } = await supabase.rpc('get_home_dashboard_stats', {
