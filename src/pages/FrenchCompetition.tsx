@@ -240,7 +240,10 @@ const FrenchCompetition = () => {
           />
         )}
 
-        <div className="flex justify-end gap-3">
+        <div className="flex justify-between gap-3">
+          <Button variant="ghost" size="sm" className="gap-1 text-muted-foreground" onClick={() => setIsFlagModalOpen(true)}>
+            <Flag className="w-3 h-3" /> Flag
+          </Button>
           {!view.showResult ? (
             <Button onClick={handleConfirm} disabled={!view.selectedAnswer} className="min-w-[120px]">Check Answer</Button>
           ) : (
@@ -249,6 +252,13 @@ const FrenchCompetition = () => {
             </Button>
           )}
         </div>
+
+        <FlagQuestionModal
+          isOpen={isFlagModalOpen}
+          onClose={() => setIsFlagModalOpen(false)}
+          questionId={q.id}
+          questionType="english"
+        />
       </div>
     </div>
   );

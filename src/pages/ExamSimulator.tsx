@@ -709,6 +709,14 @@ const ExamSimulator = () => {
                 </div>
               </Card>
             )}
+          {currentQ && (
+            <FlagQuestionModal
+              isOpen={isFlagModalOpen}
+              onClose={() => setIsFlagModalOpen(false)}
+              questionId={currentQ.id}
+              questionType={currentSection?.subject || "math"}
+            />
+          )}
           </div>
         )}
 

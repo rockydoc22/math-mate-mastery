@@ -389,9 +389,14 @@ export default function EnduranceRun() {
                     <p className="text-xs text-muted-foreground mt-1 line-clamp-3">{currentQuestion.explanation}</p>
                   </div>
                   {health > 0 && (
-                    <Button onClick={nextQuestion} className="w-full mt-3">
-                      Next Question →
-                    </Button>
+                    <div className="flex gap-2 mt-3">
+                      <Button variant="ghost" size="sm" className="gap-1 text-muted-foreground" onClick={() => setIsFlagModalOpen(true)}>
+                        <Flag className="w-3 h-3" /> Flag
+                      </Button>
+                      <Button onClick={nextQuestion} className="flex-1">
+                        Next Question →
+                      </Button>
+                    </div>
                   )}
                 </motion.div>
               )}
