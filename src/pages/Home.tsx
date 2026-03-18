@@ -124,7 +124,8 @@ const Home = () => {
   const [pinnedSubjects, setPinnedSubjects] = useState<string[]>([]);
   const [showPinManager, setShowPinManager] = useState(false);
   const [needsOnboarding, setNeedsOnboarding] = useState(false);
-
+  const [showKidSelector, setShowKidSelector] = useState(false);
+  const [activeKidId, setActiveKidId] = useState<string | null>(null);
   const nextSAT = getNextExamDate(examType);
 
   // Require an explicit exam choice once per browser session after login
