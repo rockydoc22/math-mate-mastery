@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Progress } from "@/components/ui/progress";
 import { Badge } from "@/components/ui/badge";
-import { ArrowLeft, Clock, Play, Pause, SkipForward, CheckCircle2, BarChart3, Rocket, Shield, Heart, MessageCircle, Zap, Target, TrendingUp, TrendingDown, Timer, AlertTriangle } from "lucide-react";
+import { ArrowLeft, Clock, Play, Pause, SkipForward, CheckCircle2, BarChart3, Rocket, Shield, Heart, MessageCircle, Zap, Target, TrendingUp, TrendingDown, Timer, AlertTriangle, Flag } from "lucide-react";
 import { BottomNav } from "@/components/BottomNav";
 import { motion, AnimatePresence } from "framer-motion";
 import { questions } from "@/data/questions";

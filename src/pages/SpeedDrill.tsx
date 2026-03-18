@@ -231,11 +231,22 @@ const SpeedDrill = () => {
               </div>
             </Card>
 
-            {/* Skip button */}
-            <Button variant="ghost" className="w-full text-xs text-muted-foreground" onClick={() => handleAnswer(null)}>
-              Skip →
-            </Button>
-          </motion.div>
+            {/* Flag + Skip */}
+            <div className="flex justify-between">
+              <Button variant="ghost" size="sm" className="text-xs text-muted-foreground gap-1" onClick={() => setIsFlagModalOpen(true)}>
+                <Flag className="w-3 h-3" /> Flag
+              </Button>
+              <Button variant="ghost" className="text-xs text-muted-foreground" onClick={() => handleAnswer(null)}>
+                Skip →
+              </Button>
+            </div>
+
+            <FlagQuestionModal
+              isOpen={isFlagModalOpen}
+              onClose={() => setIsFlagModalOpen(false)}
+              questionId={currentQ.id}
+              questionType={currentQ.subject}
+            />
         )}
 
         {phase === "results" && (
