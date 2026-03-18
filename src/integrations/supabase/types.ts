@@ -842,6 +842,7 @@ export type Database = {
           first_missed_at: string | null
           id: string
           is_correct: boolean
+          kid_profile_id: string | null
           miss_reason: string | null
           miss_reason_noted_at: string | null
           next_review_at: string | null
@@ -859,6 +860,7 @@ export type Database = {
           first_missed_at?: string | null
           id?: string
           is_correct: boolean
+          kid_profile_id?: string | null
           miss_reason?: string | null
           miss_reason_noted_at?: string | null
           next_review_at?: string | null
@@ -876,6 +878,7 @@ export type Database = {
           first_missed_at?: string | null
           id?: string
           is_correct?: boolean
+          kid_profile_id?: string | null
           miss_reason?: string | null
           miss_reason_noted_at?: string | null
           next_review_at?: string | null
@@ -886,7 +889,15 @@ export type Database = {
           time_taken_ms?: number | null
           user_id?: string
         }
-        Relationships: []
+        Relationships: [
+          {
+            foreignKeyName: "question_attempts_kid_profile_id_fkey"
+            columns: ["kid_profile_id"]
+            isOneToOne: false
+            referencedRelation: "kid_profiles"
+            referencedColumns: ["id"]
+          },
+        ]
       }
       quiz_scores: {
         Row: {
