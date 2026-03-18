@@ -699,7 +699,10 @@ const ExamSimulator = () => {
                   </motion.p>
                 )}
 
-                <div className="flex justify-end gap-2">
+                <div className="flex justify-between gap-2">
+                  <Button variant="ghost" size="sm" className="gap-1 text-muted-foreground" onClick={() => setIsFlagModalOpen(true)}>
+                    <Flag className="w-3 h-3" /> Flag
+                  </Button>
                   <Button onClick={nextQuestion} disabled={!answered}>
                     {questionIndex + 1 >= sectionQuestions.length ? "Finish Section" : "Next"} <SkipForward className="w-4 h-4 ml-1" />
                   </Button>
