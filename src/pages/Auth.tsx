@@ -141,6 +141,18 @@ const Auth = () => {
         
         const { error, requiresEmailVerification } = await signUp(form.email, form.password, form.username);
         if (error) throw error;
+        
+        // If parent, update profile after signup
+        if (isParent && !requiresEmailVerification) {
+          const { data: { user: newUser } } = await supabase.auth.getUser();
+          if (newUser) {
+            await supabase.from('profiles').update({
+              is_parent: true,
+              num_kids: parseInt(numKids),
+            }).eq('id', newUser.id);
+          }
+        }
+        
         toast({
           title: requiresEmailVerification
             ? "Check your email to verify your account"
