@@ -90,6 +90,7 @@ const ProExamQuiz = () => {
 
     // Record attempt
     if (user) {
+      const kidId = sessionStorage.getItem(`kid_selected_${user.id}`);
       supabase.from('question_attempts').insert({
         user_id: user.id,
         question_id: q.id,
@@ -98,7 +99,8 @@ const ProExamQuiz = () => {
         domain: q.domain,
         skill: q.skill || q.domain,
         time_taken_ms: (exam!.timePerQuestion - timeLeft) * 1000,
-      }).then(() => {});
+        kid_profile_id: kidId && kidId !== 'parent' ? kidId : null,
+      } as any).then(() => {});
     }
   };
 

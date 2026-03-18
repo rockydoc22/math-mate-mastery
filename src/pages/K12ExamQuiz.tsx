@@ -94,6 +94,7 @@ const K12ExamQuiz = () => {
     setAnswered(a => a + 1);
 
     if (user) {
+      const kidId = sessionStorage.getItem(`kid_selected_${user.id}`);
       supabase.from('question_attempts').insert({
         user_id: user.id,
         question_id: current.id,
@@ -101,7 +102,8 @@ const K12ExamQuiz = () => {
         is_correct: isCorrect,
         domain: current.domain,
         skill: current.skill,
-      }).then();
+        kid_profile_id: kidId && kidId !== 'parent' ? kidId : null,
+      } as any).then();
     }
   }, [showExplanation, quizQuestions, currentIndex, user, examId]);
 
