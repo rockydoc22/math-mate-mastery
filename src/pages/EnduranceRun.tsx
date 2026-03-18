@@ -403,6 +403,13 @@ export default function EnduranceRun() {
             </Card>
           </motion.div>
         </AnimatePresence>
+
+        <FlagQuestionModal
+          isOpen={isFlagModalOpen}
+          onClose={() => setIsFlagModalOpen(false)}
+          questionId={currentQuestion.id}
+          questionType={currentQuestion.qType}
+        />
       </div>
     </div>
   );
