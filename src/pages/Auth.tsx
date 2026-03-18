@@ -392,6 +392,7 @@ const Auth = () => {
                   </div>
                 )}
               </div>
+            )}
 
             {(mode === "signIn" || mode === "signUp" || mode === "resetPassword") && (
               <div className="space-y-2">
