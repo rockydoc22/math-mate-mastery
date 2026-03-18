@@ -139,19 +139,13 @@ const Auth = () => {
           return;
         }
         
-        const { error, requiresEmailVerification } = await signUp(form.email, form.password, form.username);
+        const { error, requiresEmailVerification } = await signUp(
+          form.email, 
+          form.password, 
+          form.username,
+          isParent ? { isParent: true, numKids: parseInt(numKids) } : undefined
+        );
         if (error) throw error;
-        
-        // If parent, update profile after signup
-        if (isParent && !requiresEmailVerification) {
-          const { data: { user: newUser } } = await supabase.auth.getUser();
-          if (newUser) {
-            await supabase.from('profiles').update({
-              is_parent: true,
-              num_kids: parseInt(numKids),
-            }).eq('id', newUser.id);
-          }
-        }
         
         toast({
           title: requiresEmailVerification
