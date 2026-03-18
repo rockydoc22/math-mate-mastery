@@ -57,6 +57,8 @@ const Auth = () => {
     username: "", 
     confirmPassword: "" 
   });
+  const [isParent, setIsParent] = useState(false);
+  const [numKids, setNumKids] = useState("1");
 
   const handleGoogleSignIn = async () => {
     setGoogleLoading(true);
