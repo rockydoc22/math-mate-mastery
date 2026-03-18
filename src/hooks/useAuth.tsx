@@ -45,14 +45,18 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
     return () => subscription.unsubscribe();
   }, []);
 
-  const signUp = async (email: string, password: string, username: string) => {
+  const signUp = async (email: string, password: string, username: string, options?: { isParent?: boolean; numKids?: number }) => {
     const redirectUrl = getAuthRedirectUrl();
     const { data, error } = await supabase.auth.signUp({
       email,
       password,
       options: {
         emailRedirectTo: redirectUrl,
-        data: { username }
+        data: { 
+          username,
+          is_parent: options?.isParent || false,
+          num_kids: options?.numKids || 0,
+        }
       }
     });
 
