@@ -2,11 +2,12 @@ import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { ArrowLeft, ChevronRight, CheckCircle2, XCircle, Sparkles, Trophy, Zap } from "lucide-react";
+import { ArrowLeft, ChevronRight, CheckCircle2, XCircle, Sparkles, Trophy, Zap, Flag } from "lucide-react";
 import { Link } from "react-router-dom";
 import { FRENCH_CATEGORIES, loadFrenchQuestions, frenchQuestionsByCategory, type FrenchCategory } from "@/data/frenchCompetitionQuestions";
 import { Question } from "@/data/questions";
 import { AITutorExplanation } from "@/components/AITutorExplanation";
+import { FlagQuestionModal } from "@/components/FlagQuestionModal";
 
 type ViewState =
   | { mode: "categories" }
@@ -17,6 +18,7 @@ const FrenchCompetition = () => {
   const navigate = useNavigate();
   const [view, setView] = useState<ViewState>({ mode: "categories" });
   const [showAITutor, setShowAITutor] = useState(false);
+  const [isFlagModalOpen, setIsFlagModalOpen] = useState(false);
   const [questions, setQuestions] = useState<Record<string, Question[]>>(frenchQuestionsByCategory);
 
   useEffect(() => {
@@ -238,7 +240,10 @@ const FrenchCompetition = () => {
           />
         )}
 
-        <div className="flex justify-end gap-3">
+        <div className="flex justify-between gap-3">
+          <Button variant="ghost" size="sm" className="gap-1 text-muted-foreground" onClick={() => setIsFlagModalOpen(true)}>
+            <Flag className="w-3 h-3" /> Flag
+          </Button>
           {!view.showResult ? (
             <Button onClick={handleConfirm} disabled={!view.selectedAnswer} className="min-w-[120px]">Check Answer</Button>
           ) : (
@@ -247,6 +252,13 @@ const FrenchCompetition = () => {
             </Button>
           )}
         </div>
+
+        <FlagQuestionModal
+          isOpen={isFlagModalOpen}
+          onClose={() => setIsFlagModalOpen(false)}
+          questionId={q.id}
+          questionType="english"
+        />
       </div>
     </div>
   );

@@ -4,8 +4,9 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Progress } from "@/components/ui/progress";
 import { Badge } from "@/components/ui/badge";
-import { ArrowLeft, Clock, Play, Pause, SkipForward, CheckCircle2, BarChart3, Rocket, Shield, Heart, MessageCircle, Zap, Target, TrendingUp, TrendingDown, Timer, AlertTriangle } from "lucide-react";
+import { ArrowLeft, Clock, Play, Pause, SkipForward, CheckCircle2, BarChart3, Rocket, Shield, Heart, MessageCircle, Zap, Target, TrendingUp, TrendingDown, Timer, AlertTriangle, Flag } from "lucide-react";
 import { BottomNav } from "@/components/BottomNav";
+import { FlagQuestionModal } from "@/components/FlagQuestionModal";
 import { motion, AnimatePresence } from "framer-motion";
 import { questions } from "@/data/questions";
 import { englishQuestions } from "@/data/englishQuestions";
@@ -266,6 +267,7 @@ const ExamSimulator = () => {
   const [questionTimings, setQuestionTimings] = useState<QuestionTiming[]>([]);
   const [questionStartTime, setQuestionStartTime] = useState(0);
   const [lostLifeAnim, setLostLifeAnim] = useState(false);
+  const [isFlagModalOpen, setIsFlagModalOpen] = useState(false);
   const timerRef = useRef<ReturnType<typeof setInterval> | null>(null);
   const momentum = useMomentum();
 
@@ -697,13 +699,24 @@ const ExamSimulator = () => {
                   </motion.p>
                 )}
 
-                <div className="flex justify-end gap-2">
+                <div className="flex justify-between gap-2">
+                  <Button variant="ghost" size="sm" className="gap-1 text-muted-foreground" onClick={() => setIsFlagModalOpen(true)}>
+                    <Flag className="w-3 h-3" /> Flag
+                  </Button>
                   <Button onClick={nextQuestion} disabled={!answered}>
                     {questionIndex + 1 >= sectionQuestions.length ? "Finish Section" : "Next"} <SkipForward className="w-4 h-4 ml-1" />
                   </Button>
                 </div>
               </Card>
             )}
+          {currentQ && (
+            <FlagQuestionModal
+              isOpen={isFlagModalOpen}
+              onClose={() => setIsFlagModalOpen(false)}
+              questionId={currentQ.id}
+              questionType={currentSection?.subject || "math"}
+            />
+          )}
           </div>
         )}
 

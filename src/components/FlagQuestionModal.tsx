@@ -11,7 +11,7 @@ interface FlagQuestionModalProps {
   isOpen: boolean;
   onClose: () => void;
   questionId: string;
-  questionType: 'math' | 'english' | 'science';
+  questionType: string;
   questionData?: Record<string, any>;
   onFlagged?: () => void;
 }

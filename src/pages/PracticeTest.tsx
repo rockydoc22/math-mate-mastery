@@ -188,19 +188,21 @@ const PracticeTest = () => {
         total_score: totalScore,
       });
 
+      const kidId = sessionStorage.getItem(`kid_selected_${user.id}`);
       const attempts = ptConfig.sections.flatMap(section => {
         const qs = sectionQuestions[section.key] || [];
         return qs.map((q, i) => ({
           user_id: user.id,
           question_id: q.id,
-          question_type: section.key === 'science' ? 'math' : section.key, // store science as math for DB compat
+          question_type: section.key === 'science' ? 'math' : section.key,
           domain: q.domain,
           skill: q.skill,
           is_correct: answers[`${section.key}-${i}`] === q.correctAnswer,
+          kid_profile_id: kidId && kidId !== 'parent' ? kidId : null,
         }));
       });
 
-      await supabase.from("question_attempts").insert(attempts);
+      await supabase.from("question_attempts").insert(attempts as any);
     }
   };
 

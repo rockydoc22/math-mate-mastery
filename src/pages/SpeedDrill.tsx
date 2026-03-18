@@ -3,10 +3,11 @@ import { useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Progress } from "@/components/ui/progress";
-import { ArrowLeft, Zap, Clock, CheckCircle2, XCircle, Trophy } from "lucide-react";
+import { ArrowLeft, Zap, Clock, CheckCircle2, XCircle, Trophy, Flag } from "lucide-react";
 import { useAuth } from "@/hooks/useAuth";
 import { supabase } from "@/integrations/supabase/client";
 import { BottomNav } from "@/components/BottomNav";
+import { FlagQuestionModal } from "@/components/FlagQuestionModal";
 import { motion, AnimatePresence } from "framer-motion";
 import 'katex/dist/katex.min.css';
 import { InlineMath } from 'react-katex';
@@ -55,6 +56,7 @@ const SpeedDrill = () => {
   const [answers, setAnswers] = useState<(number | null)[]>([]);
   const [timeLeft, setTimeLeft] = useState(TIME_PER_QUESTION);
   const [totalTime, setTotalTime] = useState(0);
+  const [isFlagModalOpen, setIsFlagModalOpen] = useState(false);
   const timerRef = useRef<ReturnType<typeof setInterval> | null>(null);
   const startTimeRef = useRef<number>(0);
 
@@ -103,6 +105,7 @@ const SpeedDrill = () => {
       setPhase("results");
       // Save attempts
       if (user) {
+        const kidId = sessionStorage.getItem(`kid_selected_${user.id}`);
         questions.forEach((q, i) => {
           const isCorrect = newAnswers[i] === q.correct;
           supabase.from("question_attempts").insert({
@@ -112,7 +115,8 @@ const SpeedDrill = () => {
             domain: "speed_drill",
             skill: q.skill,
             is_correct: isCorrect,
-          }).then(() => {});
+            kid_profile_id: kidId && kidId !== 'parent' ? kidId : null,
+          } as any).then(() => {});
         });
       }
     } else {
@@ -227,10 +231,22 @@ const SpeedDrill = () => {
               </div>
             </Card>
 
-            {/* Skip button */}
-            <Button variant="ghost" className="w-full text-xs text-muted-foreground" onClick={() => handleAnswer(null)}>
-              Skip →
-            </Button>
+            {/* Flag + Skip */}
+            <div className="flex justify-between">
+              <Button variant="ghost" size="sm" className="text-xs text-muted-foreground gap-1" onClick={() => setIsFlagModalOpen(true)}>
+                <Flag className="w-3 h-3" /> Flag
+              </Button>
+              <Button variant="ghost" className="text-xs text-muted-foreground" onClick={() => handleAnswer(null)}>
+                Skip →
+              </Button>
+            </div>
+
+            <FlagQuestionModal
+              isOpen={isFlagModalOpen}
+              onClose={() => setIsFlagModalOpen(false)}
+              questionId={currentQ.id}
+              questionType={currentQ.subject}
+            />
           </motion.div>
         )}
 

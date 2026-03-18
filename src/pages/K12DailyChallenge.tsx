@@ -142,6 +142,7 @@ const K12DailyChallenge = () => {
       setShowExplanation(true);
 
       if (user) {
+        const kidId = sessionStorage.getItem(`kid_selected_${user.id}`);
         supabase
           .from("question_attempts")
           .insert({
@@ -151,7 +152,8 @@ const K12DailyChallenge = () => {
             is_correct: isCorrect,
             domain: current.domain,
             skill: current.skill,
-          })
+            kid_profile_id: kidId && kidId !== 'parent' ? kidId : null,
+          } as any)
           .then();
       }
     },

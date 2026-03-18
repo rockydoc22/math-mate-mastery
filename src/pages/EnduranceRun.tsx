@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Progress } from "@/components/ui/progress";
-import { ArrowLeft, Heart, Flame, Trophy, Zap, RotateCcw, Shield } from "lucide-react";
+import { ArrowLeft, Heart, Flame, Trophy, Zap, RotateCcw, Shield, Flag } from "lucide-react";
 import { questions, Question } from "@/data/questions";
 import { englishQuestions, EnglishQuestion } from "@/data/englishQuestions";
 import { useAuth } from "@/hooks/useAuth";
@@ -12,6 +12,7 @@ import { MathText } from "@/components/MathText";
 import { ClickableText } from "@/components/ClickableText";
 import { motion, AnimatePresence } from "framer-motion";
 import { toast } from "sonner";
+import { FlagQuestionModal } from "@/components/FlagQuestionModal";
 
 type RunQuestion = (Question | EnglishQuestion) & { qType: "math" | "english" };
 
@@ -53,6 +54,7 @@ export default function EnduranceRun() {
   const [answered, setAnswered] = useState(0);
   const [correct, setCorrect] = useState(0);
   const [shieldActive, setShieldActive] = useState(false);
+  const [isFlagModalOpen, setIsFlagModalOpen] = useState(false);
 
   // Personal best
   const [personalBest, setPersonalBest] = useState(() => {
@@ -387,15 +389,27 @@ export default function EnduranceRun() {
                     <p className="text-xs text-muted-foreground mt-1 line-clamp-3">{currentQuestion.explanation}</p>
                   </div>
                   {health > 0 && (
-                    <Button onClick={nextQuestion} className="w-full mt-3">
-                      Next Question →
-                    </Button>
+                    <div className="flex gap-2 mt-3">
+                      <Button variant="ghost" size="sm" className="gap-1 text-muted-foreground" onClick={() => setIsFlagModalOpen(true)}>
+                        <Flag className="w-3 h-3" /> Flag
+                      </Button>
+                      <Button onClick={nextQuestion} className="flex-1">
+                        Next Question →
+                      </Button>
+                    </div>
                   )}
                 </motion.div>
               )}
             </Card>
           </motion.div>
         </AnimatePresence>
+
+        <FlagQuestionModal
+          isOpen={isFlagModalOpen}
+          onClose={() => setIsFlagModalOpen(false)}
+          questionId={currentQuestion.id}
+          questionType={currentQuestion.qType}
+        />
       </div>
     </div>
   );

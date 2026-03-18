@@ -2,7 +2,7 @@ import { useState, useEffect, useMemo, useCallback } from "react";
 import { useParams, Link, useNavigate, useSearchParams } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { ArrowLeft, ChevronRight, Clock, CheckCircle2, XCircle, RotateCcw, Filter } from "lucide-react";
+import { ArrowLeft, ChevronRight, Clock, CheckCircle2, XCircle, RotateCcw, Filter, Flag } from "lucide-react";
 import { getProExam } from "@/utils/proExamConfig";
 import { loadProExamQuestions, getQuestionsBySection } from "@/data/proExamQuestions";
 import { Question } from "@/data/questions";
@@ -10,6 +10,7 @@ import { useAuth } from "@/hooks/useAuth";
 import { supabase } from "@/integrations/supabase/client";
 import { toast } from "@/hooks/use-toast";
 import { BottomNav } from "@/components/BottomNav";
+import { FlagQuestionModal } from "@/components/FlagQuestionModal";
 
 const QUIZ_SIZE = 10;
 
@@ -32,6 +33,7 @@ const ProExamQuiz = () => {
   const [answered, setAnswered] = useState(0);
   const [timeLeft, setTimeLeft] = useState(0);
   const [quizComplete, setQuizComplete] = useState(false);
+  const [isFlagModalOpen, setIsFlagModalOpen] = useState(false);
 
   useEffect(() => {
     if (!exam) return;
@@ -244,12 +246,24 @@ const ProExamQuiz = () => {
             <Card className="p-4 bg-muted/50 border-primary/20 space-y-2">
               <p className="text-sm font-medium text-primary">Explanation</p>
               <p className="text-sm text-muted-foreground leading-relaxed">{q.explanation}</p>
-              <Button onClick={nextQuestion} className="w-full mt-2 gap-2">
-                {currentIndex + 1 >= quizQuestions.length ? 'See Results' : 'Next Question'}
-                <ChevronRight className="w-4 h-4" />
-              </Button>
+              <div className="flex gap-2">
+                <Button variant="ghost" size="sm" className="gap-1 text-muted-foreground" onClick={() => setIsFlagModalOpen(true)}>
+                  <Flag className="w-3 h-3" /> Flag
+                </Button>
+                <Button onClick={nextQuestion} className="flex-1 gap-2">
+                  {currentIndex + 1 >= quizQuestions.length ? 'See Results' : 'Next Question'}
+                  <ChevronRight className="w-4 h-4" />
+                </Button>
+              </div>
             </Card>
           )}
+
+          <FlagQuestionModal
+            isOpen={isFlagModalOpen}
+            onClose={() => setIsFlagModalOpen(false)}
+            questionId={q.id}
+            questionType={`pro-${examId}`}
+          />
         </div>
       </div>
     );
