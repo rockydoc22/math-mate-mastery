@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Progress } from "@/components/ui/progress";
-import { ArrowLeft, Heart, Flame, Trophy, Zap, RotateCcw, Shield } from "lucide-react";
+import { ArrowLeft, Heart, Flame, Trophy, Zap, RotateCcw, Shield, Flag } from "lucide-react";
 import { questions, Question } from "@/data/questions";
 import { englishQuestions, EnglishQuestion } from "@/data/englishQuestions";
 import { useAuth } from "@/hooks/useAuth";
@@ -12,6 +12,7 @@ import { MathText } from "@/components/MathText";
 import { ClickableText } from "@/components/ClickableText";
 import { motion, AnimatePresence } from "framer-motion";
 import { toast } from "sonner";
+import { FlagQuestionModal } from "@/components/FlagQuestionModal";
 
 type RunQuestion = (Question | EnglishQuestion) & { qType: "math" | "english" };
 
