@@ -4,11 +4,13 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Card } from "@/components/ui/card";
 import { Label } from "@/components/ui/label";
+import { Checkbox } from "@/components/ui/checkbox";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { useAuth } from "@/hooks/useAuth";
 import { toast } from "@/hooks/use-toast";
 import { supabase } from "@/integrations/supabase/client";
 import { lovable } from "@/integrations/lovable";
-import { User, Mail, Lock, ArrowLeft, Eye, EyeOff } from "lucide-react";
+import { User, Mail, Lock, ArrowLeft, Eye, EyeOff, Users } from "lucide-react";
 
 type AuthMode = "signIn" | "signUp" | "resetPassword" | "magicLink";
 
