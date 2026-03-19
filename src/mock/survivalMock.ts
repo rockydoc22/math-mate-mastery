@@ -1,5 +1,14 @@
-import { Timing } from '@/components/PacingSummary';
-import { SurvivalQuestion } from '@/components/SurvivalMode';
+export type SurvivalQuestion = {
+  question: string;
+  options: string[];
+  correctIndex: number;
+};
+
+export type Timing = {
+  questionIndex: number;
+  timeMs: number;
+  isCorrect: boolean;
+};
 
 export const mockSurvivalQuestions: SurvivalQuestion[] = [
   { question: 'What is the value of x if 2x + 6 = 14?', options: ['2', '3', '4', '5'], correctIndex: 2 },
