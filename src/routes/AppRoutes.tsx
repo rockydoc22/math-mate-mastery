@@ -118,6 +118,7 @@ const K12ExamQuiz = lazy(() => import("@/pages/K12ExamQuiz"));
 const K12DailyChallenge = lazy(() => import("@/pages/K12DailyChallenge"));
 const K12AdaptiveTutor = lazy(() => import("@/pages/K12AdaptiveTutor"));
 const SurvivalModePage = lazy(() => import("@/pages/SurvivalModePage"));
+const PracticeTools = lazy(() => import("@/pages/PracticeTools"));
 
 const AppRoutes = () => (
   <>
@@ -233,6 +234,7 @@ const AppRoutes = () => (
       <Route path="/k12-daily" element={<K12DailyChallenge />} />
       <Route path="/survival" element={<SurvivalModePage />} />
       <Route path="/k12-tutor/:examId" element={<K12AdaptiveTutor />} />
+      <Route path="/practice-tools" element={<PracticeTools />} />
       {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
       <Route path="*" element={<NotFound />} />
     </Routes>
