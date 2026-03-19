@@ -539,14 +539,15 @@ const Auth = () => {
                     <button
                       type="button"
                       className="text-muted-foreground hover:text-primary flex items-center gap-1"
-                      onClick={() => {
-                        // If user is logged in, go to settings to change password
-                        if (user) {
-                          navigate("/settings");
-                        } else {
-                          setMode("magicLink");
-                        }
-                      }}
+                      onClick={() => setMode("magicLink")}
+                    >
+                      <Lock className="w-3 h-3" />
+                      Forgot password?
+                    </button>
+                    <button
+                      type="button"
+                      className="text-muted-foreground hover:text-primary flex items-center gap-1"
+                      onClick={() => setMode("magicLink")}
                     >
                       <Mail className="w-3 h-3" />
                       Sign in with magic link
