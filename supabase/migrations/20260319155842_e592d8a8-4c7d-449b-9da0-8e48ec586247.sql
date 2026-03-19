@@ -1,0 +1,1 @@
+UPDATE flagged_questions SET status = 'resolved', resolution_notes = 'Test submission - resolved', resolved_at = now() WHERE id IN ('15393367-85fb-4678-af20-89bd4088268b', 'c41053e5-bbc8-4f8e-a4be-8865d4feaa4d', '16507202-457e-4bba-b829-bd3ba835f841');
