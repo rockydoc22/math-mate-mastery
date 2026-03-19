@@ -15,6 +15,7 @@ import { MomentumMeter } from "@/components/MomentumMeter";
 import { toast } from "sonner";
 import { useAuth } from "@/hooks/useAuth";
 import { supabase } from "@/integrations/supabase/client";
+import PacingSummary from "@/components/PacingSummary";
 
 // --- Types ---
 interface ExamSection {
@@ -844,6 +845,16 @@ const ExamSimulator = () => {
                 )}
               </Card>
             )}
+
+            {/* Recharts Pacing Summary */}
+            <PacingSummary
+              timings={questionTimings.map((t, i) => ({
+                questionIndex: i,
+                timeMs: t.timeSpentMs,
+                isCorrect: t.wasCorrect,
+              }))}
+              totalTimeMs={questionTimings.reduce((a, t) => a + t.timeSpentMs, 0)}
+            />
 
             {/* Section breakdown */}
             <h3 className="font-bold text-lg flex items-center gap-2"><BarChart3 className="w-5 h-5" /> Section Breakdown</h3>
