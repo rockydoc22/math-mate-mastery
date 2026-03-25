@@ -236,6 +236,7 @@ const AppRoutes = () => (
       <Route path="/survival" element={<SurvivalModePage />} />
       <Route path="/k12-tutor/:examId" element={<K12AdaptiveTutor />} />
       <Route path="/practice-tools" element={<PracticeTools />} />
+      <Route path="/story-missions" element={<StoryMissions />} />
       {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
       <Route path="*" element={<NotFound />} />
     </Routes>
