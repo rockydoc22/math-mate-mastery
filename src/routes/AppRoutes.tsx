@@ -119,6 +119,7 @@ const K12DailyChallenge = lazy(() => import("@/pages/K12DailyChallenge"));
 const K12AdaptiveTutor = lazy(() => import("@/pages/K12AdaptiveTutor"));
 const SurvivalModePage = lazy(() => import("@/pages/SurvivalModePage"));
 const PracticeTools = lazy(() => import("@/pages/PracticeTools"));
+const StoryMissions = lazy(() => import("@/pages/StoryMissions"));
 
 const AppRoutes = () => (
   <>
