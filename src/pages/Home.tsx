@@ -10,7 +10,7 @@ import {
   Clock, Sparkles, Download, Lightbulb, Play, Skull, Settings, Gamepad2,
   Smartphone, Map, Star, Eye, UserPlus, ClipboardList, Building2, Heart,
   Bell, MessageCircle, FolderOpen, Coins, Timer, Layers, UsersRound,
-  Calendar, CircleDot, BookMarked, FileBarChart, TrendingUp, CalendarDays, FileQuestion, Bolt, HeartPulse, GitCompareArrows, NotebookPen, Microscope, TextQuote, Wand2, BookOpenCheck, Route
+  Calendar, CircleDot, BookMarked, FileBarChart, TrendingUp, CalendarDays, FileQuestion, Bolt, HeartPulse, GitCompareArrows, NotebookPen, Microscope, TextQuote, Wand2, BookOpenCheck, Route, Rocket
 } from "lucide-react";
 import { useNavigate, Link } from "react-router-dom";
 import { useAuth } from "@/hooks/useAuth";
@@ -712,6 +712,7 @@ const Home = () => {
               { id: 'boss-battle', icon: Skull, label: 'Boss Battle', color: 'bg-rose-100 dark:bg-rose-900/30', iconColor: 'text-rose-600 dark:text-rose-400', to: '/boss-battle', exams: ['sat', 'psat', 'act'], category: 'social', mobileVisible: true },
               { id: 'endurance', icon: Flame, label: 'Endurance Run', color: 'bg-orange-100 dark:bg-orange-900/30', iconColor: 'text-orange-600 dark:text-orange-400', to: '/endurance', exams: ['sat', 'psat', 'act'], category: 'social', mobileVisible: false },
               { id: 'speed-drill', icon: Bolt, label: 'Speed Drill', color: 'bg-amber-100 dark:bg-amber-900/30', iconColor: 'text-amber-600 dark:text-amber-400', to: '/speed-drill', exams: ['sat', 'psat', 'act'], category: 'social', mobileVisible: false },
+              { id: 'story-missions', icon: Rocket, label: 'Story Missions', color: 'bg-violet-100 dark:bg-violet-900/30', iconColor: 'text-violet-600 dark:text-violet-400', to: '/story-missions', exams: ['sat', 'psat', 'act'], category: 'social', mobileVisible: true },
               { id: 'elite-practice', icon: Crown, label: 'Elite Practice', color: 'bg-gradient-to-br from-amber-100 to-orange-100 dark:from-amber-900/30 dark:to-orange-900/30', iconColor: 'text-amber-500', to: '/elite-practice', exams: ['sat', 'psat', 'act'], category: 'social', mobileVisible: false },
               { id: 'friend-compare', icon: GitCompareArrows, label: 'Compare', color: 'bg-indigo-100 dark:bg-indigo-900/30', iconColor: 'text-indigo-600 dark:text-indigo-400', to: '/friend-compare', exams: ['sat', 'psat', 'act'], category: 'social', mobileVisible: false },
               { id: 'study-groups', icon: UsersRound, label: 'Study Groups', color: 'bg-teal-100 dark:bg-teal-900/30', iconColor: 'text-teal-600 dark:text-teal-400', to: '/study-groups', exams: ['sat', 'psat', 'act'], category: 'social', mobileVisible: false },

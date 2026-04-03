@@ -3,7 +3,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Progress } from "@/components/ui/progress";
-import { ArrowLeft, Rocket, Zap, Star, Trophy, ChevronRight, Shield, Swords, BookOpen, Brain, CheckCircle2, XCircle, RotateCcw } from "lucide-react";
+import { ArrowLeft, Rocket, Zap, Star, Trophy, ChevronRight, Shield, Swords, BookOpen, Brain, CheckCircle2, XCircle, RotateCcw, Lightbulb, ChevronDown, ChevronUp } from "lucide-react";
 import { BottomNav } from "@/components/BottomNav";
 import { useAuth } from "@/hooks/useAuth";
 import { supabase } from "@/integrations/supabase/client";
@@ -21,6 +21,20 @@ interface StoryMission {
   objective: string;
   chapters: { chapter: number; beats: string[] }[];
   rewards: string[];
+}
+
+interface HintTemplate {
+  skill_id: string;
+  subject: string;
+  difficulty: string;
+  hint_sequence: string[];
+}
+
+interface ReflectionPrompt {
+  id: string;
+  subject: string;
+  prompt: string;
+  followups: string[];
 }
 
 type MissionPhase = "select" | "briefing" | "question" | "checkpoint" | "boss" | "summary";
@@ -49,11 +63,9 @@ function getQuestionsForSubject(subject: string, difficulty: string, count: numb
   } else if (["reading", "writing", "english"].includes(subjectLower)) {
     pool = [...englishQuestions];
   } else {
-    // For science/social studies, use math as fallback
     pool = [...mathQuestions, ...englishQuestions];
   }
 
-  // Filter by difficulty
   if (difficulty === "easy") {
     pool = pool.filter(q => ["Easy", "easy", "Medium", "medium"].includes(q.difficulty));
   } else if (difficulty === "hard") {
@@ -62,8 +74,22 @@ function getQuestionsForSubject(subject: string, difficulty: string, count: numb
 
   if (pool.length < count) pool = [...mathQuestions, ...englishQuestions];
 
-  // Shuffle and take
   return pool.sort(() => Math.random() - 0.5).slice(0, count);
+}
+
+function getHintsForQuestion(hints: HintTemplate[], subject: string, difficulty: string): string[] {
+  // Try exact match first, then subject match, then generic
+  const subjectHints = hints.filter(h => h.subject.toLowerCase() === subject.toLowerCase());
+  const exact = subjectHints.find(h => h.difficulty === difficulty);
+  if (exact) return exact.hint_sequence;
+  if (subjectHints.length > 0) return subjectHints[0].hint_sequence;
+  // Fallback generic hints
+  return [
+    "Read the question carefully. What is it really asking?",
+    "Identify the key information given.",
+    "Try eliminating obviously wrong answers first.",
+    "Break the problem into smaller steps."
+  ];
 }
 
 const StoryMissions = () => {
@@ -82,11 +108,27 @@ const StoryMissions = () => {
   const [subjectFilter, setSubjectFilter] = useState<string | null>(null);
   const [difficultyFilter, setDifficultyFilter] = useState<string | null>(null);
 
+  // Hint system state
+  const [hintTemplates, setHintTemplates] = useState<HintTemplate[]>([]);
+  const [currentHintIndex, setCurrentHintIndex] = useState(-1);
+  const [showHints, setShowHints] = useState(false);
+
+  // Reflection state
+  const [reflectionPrompts, setReflectionPrompts] = useState<ReflectionPrompt[]>([]);
+  const [showReflection, setShowReflection] = useState(false);
+  const [selectedFollowup, setSelectedFollowup] = useState<string | null>(null);
+
   useEffect(() => {
-    fetch("/data/story_missions.json")
-      .then(r => r.json())
-      .then(d => { setMissions(d.story_missions || []); setLoading(false); })
-      .catch(() => setLoading(false));
+    Promise.all([
+      fetch("/data/story_missions.json").then(r => r.json()),
+      fetch("/data/tutor_and_hint_system.json").then(r => r.json()).catch(() => ({ hint_templates: [] })),
+      fetch("/data/reflection_journal_prompts.json").then(r => r.json()).catch(() => ({ reflection_prompts: [] })),
+    ]).then(([mData, hData, rData]) => {
+      setMissions(mData.story_missions || []);
+      setHintTemplates(hData.hint_templates || []);
+      setReflectionPrompts(rData.reflection_prompts || []);
+      setLoading(false);
+    }).catch(() => setLoading(false));
   }, []);
 
   const subjects = useMemo(() => [...new Set(missions.map(m => m.subject))], [missions]);
@@ -100,6 +142,23 @@ const StoryMissions = () => {
     });
   }, [missions, subjectFilter, difficultyFilter]);
 
+  const currentHints = useMemo(() => {
+    if (!selectedMission) return [];
+    return getHintsForQuestion(hintTemplates, selectedMission.subject, selectedMission.difficulty);
+  }, [selectedMission, hintTemplates]);
+
+  const currentReflection = useMemo(() => {
+    if (!selectedMission) return null;
+    const subjectPrompts = reflectionPrompts.filter(
+      p => p.subject.toLowerCase() === selectedMission.subject.toLowerCase()
+    );
+    if (subjectPrompts.length === 0) {
+      // fallback to any prompt
+      return reflectionPrompts.length > 0 ? reflectionPrompts[Math.floor(Math.random() * reflectionPrompts.length)] : null;
+    }
+    return subjectPrompts[Math.floor(Math.random() * subjectPrompts.length)];
+  }, [selectedMission, reflectionPrompts]);
+
   const startMission = useCallback((mission: StoryMission) => {
     const count = extractQuestionCount(mission.objective);
     const qs = getQuestionsForSubject(mission.subject, mission.difficulty, count);
@@ -109,6 +168,10 @@ const StoryMissions = () => {
     setScore(0);
     setSelectedAnswer(null);
     setShowResult(false);
+    setCurrentHintIndex(-1);
+    setShowHints(false);
+    setShowReflection(false);
+    setSelectedFollowup(null);
     setPhase("briefing");
   }, []);
 
@@ -120,7 +183,6 @@ const StoryMissions = () => {
     const correct = letter === q.correctAnswer;
     if (correct) setScore(s => s + 1);
 
-    // Record attempt
     if (user) {
       supabase.from("question_attempts").insert({
         user_id: user.id,
@@ -133,10 +195,20 @@ const StoryMissions = () => {
     }
   }, [showResult, missionQuestions, currentIndex, user, selectedMission]);
 
+  const revealNextHint = useCallback(() => {
+    if (currentHintIndex < currentHints.length - 1) {
+      setCurrentHintIndex(i => i + 1);
+      setShowHints(true);
+    }
+  }, [currentHintIndex, currentHints]);
+
   const handleNext = useCallback(() => {
     const nextIdx = currentIndex + 1;
     const total = missionQuestions.length;
     const isBossIndex = total - 1;
+
+    setCurrentHintIndex(-1);
+    setShowHints(false);
 
     if (nextIdx >= total) {
       setPhase("summary");
@@ -192,7 +264,6 @@ const StoryMissions = () => {
           </div>
         </div>
         <div className="max-w-2xl mx-auto p-4 space-y-4">
-          {/* Filters */}
           <div className="flex flex-wrap gap-2">
             <Button size="sm" variant={subjectFilter === null ? "default" : "outline"} onClick={() => setSubjectFilter(null)}>All</Button>
             {subjects.map(s => (
@@ -257,6 +328,10 @@ const StoryMissions = () => {
               <span className={`px-2 py-1 rounded-full capitalize ${difficultyColors[selectedMission.difficulty]}`}>{selectedMission.difficulty}</span>
               <span className="text-muted-foreground">{missionQuestions.length} questions</span>
             </div>
+            <div className="p-3 rounded-lg bg-muted/50 text-left">
+              <p className="text-xs font-semibold text-muted-foreground mb-1">💡 Hints available during questions</p>
+              <p className="text-xs text-muted-foreground">Tap the lightbulb icon for progressive hints — no penalty!</p>
+            </div>
             <div className="flex gap-2 justify-center">
               <Button variant="outline" onClick={resetToSelect}>Back</Button>
               <Button onClick={() => setPhase("question")} className="gap-2"><Rocket className="w-4 h-4" /> Launch Mission</Button>
@@ -303,7 +378,7 @@ const StoryMissions = () => {
     );
   }
 
-  // ── SUMMARY ──
+  // ── SUMMARY WITH REFLECTION ──
   if (phase === "summary" && selectedMission) {
     const total = missionQuestions.length;
     const pct = Math.round((score / total) * 100);
@@ -333,6 +408,48 @@ const StoryMissions = () => {
                 <span key={r} className="text-xs px-2 py-1 rounded-full bg-amber-500/10 text-amber-600 font-bold capitalize">{r.replace("_", " ")} ✓</span>
               ))}
             </div>
+
+            {/* Reflection Journal */}
+            {currentReflection && (
+              <div className="text-left space-y-3">
+                <button
+                  onClick={() => setShowReflection(!showReflection)}
+                  className="flex items-center gap-2 text-sm font-semibold text-primary w-full"
+                >
+                  <BookOpen className="w-4 h-4" />
+                  Reflection Journal
+                  {showReflection ? <ChevronUp className="w-4 h-4 ml-auto" /> : <ChevronDown className="w-4 h-4 ml-auto" />}
+                </button>
+                {showReflection && (
+                  <motion.div initial={{ opacity: 0, height: 0 }} animate={{ opacity: 1, height: "auto" }} className="space-y-3">
+                    <p className="text-sm text-muted-foreground italic bg-muted/50 p-3 rounded-lg">
+                      "{currentReflection.prompt}"
+                    </p>
+                    <div className="flex flex-wrap gap-2">
+                      {currentReflection.followups.map((f, i) => (
+                        <button
+                          key={i}
+                          onClick={() => setSelectedFollowup(selectedFollowup === f ? null : f)}
+                          className={`text-xs px-3 py-1.5 rounded-full border transition-all ${
+                            selectedFollowup === f
+                              ? "border-primary bg-primary/10 text-primary"
+                              : "border-border text-muted-foreground hover:border-primary/50"
+                          }`}
+                        >
+                          {f}
+                        </button>
+                      ))}
+                    </div>
+                    {selectedFollowup && (
+                      <p className="text-xs text-muted-foreground p-2 bg-primary/5 rounded-lg">
+                        💭 Think about: <strong>{selectedFollowup}</strong> — jot your thoughts in a notebook for best results.
+                      </p>
+                    )}
+                  </motion.div>
+                )}
+              </div>
+            )}
+
             <div className="flex gap-2 justify-center">
               <Button variant="outline" onClick={resetToSelect}>All Missions</Button>
               <Button onClick={() => startMission(selectedMission)} className="gap-2"><RotateCcw className="w-4 h-4" /> Retry</Button>
@@ -343,11 +460,14 @@ const StoryMissions = () => {
     );
   }
 
-  // ── QUESTION PHASE ──
+  // ── QUESTION PHASE WITH HINTS ──
   const q = missionQuestions[currentIndex];
   if (!q || !selectedMission) return null;
 
   const isBoss = currentIndex === missionQuestions.length - 1;
+  const hintsAvailable = currentHints.length > 0;
+  const hintsRevealed = currentHintIndex + 1;
+  const allHintsShown = hintsRevealed >= currentHints.length;
 
   return (
     <div className="min-h-screen bg-background p-4">
@@ -361,7 +481,21 @@ const StoryMissions = () => {
               {currentIndex + 1}/{missionQuestions.length}
             </span>
           </div>
-          <Button variant="ghost" size="sm" onClick={() => setIsFlagOpen(true)}>🚩</Button>
+          <div className="flex items-center gap-1">
+            {hintsAvailable && !showResult && (
+              <Button
+                variant="ghost"
+                size="sm"
+                onClick={revealNextHint}
+                disabled={allHintsShown}
+                className="gap-1 text-amber-600"
+              >
+                <Lightbulb className="w-4 h-4" />
+                {allHintsShown ? `${hintsRevealed}/${currentHints.length}` : "Hint"}
+              </Button>
+            )}
+            <Button variant="ghost" size="sm" onClick={() => setIsFlagOpen(true)}>🚩</Button>
+          </div>
         </div>
 
         <Progress value={((currentIndex + 1) / missionQuestions.length) * 100} className={`h-2 ${isBoss ? "[&>div]:bg-destructive" : ""}`} />
@@ -371,6 +505,27 @@ const StoryMissions = () => {
           <span className="font-medium text-primary">{score * 15} XP</span>
           <span className="text-muted-foreground">• {selectedMission.title}</span>
         </div>
+
+        {/* Hints Panel */}
+        {showHints && hintsRevealed > 0 && !showResult && (
+          <motion.div initial={{ opacity: 0, y: -10 }} animate={{ opacity: 1, y: 0 }}>
+            <Card className="p-3 border-amber-500/30 bg-amber-50/50 dark:bg-amber-900/10 space-y-2">
+              <p className="text-xs font-semibold text-amber-700 dark:text-amber-400 flex items-center gap-1">
+                <Lightbulb className="w-3 h-3" /> Hints ({hintsRevealed}/{currentHints.length})
+              </p>
+              {currentHints.slice(0, hintsRevealed).map((hint, i) => (
+                <p key={i} className="text-xs text-amber-800 dark:text-amber-300">
+                  {i + 1}. {hint}
+                </p>
+              ))}
+              {!allHintsShown && (
+                <button onClick={revealNextHint} className="text-xs text-amber-600 underline">
+                  Show next hint →
+                </button>
+              )}
+            </Card>
+          </motion.div>
+        )}
 
         {/* Question */}
         <AnimatePresence mode="wait">
