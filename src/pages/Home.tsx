@@ -308,7 +308,7 @@ const Home = () => {
         {/* Hero Header */}
         <header className="flex flex-col items-center text-center mb-4 pt-4 relative w-full max-w-full">
           {/* Update button at top left */}
-          <div className="absolute top-4 left-0">
+          <div className="absolute top-4 left-0 flex items-center gap-1">
             <Button
               onClick={forceUpdate}
               disabled={isUpdating}
@@ -317,7 +317,7 @@ const Home = () => {
               className={`gap-1 text-[10px] h-7 px-2 ${hasUpdate ? 'animate-pulse bg-emerald-500 hover:bg-emerald-600 text-white' : ''}`}
             >
               <RefreshCw className={`w-3 h-3 ${isUpdating ? "animate-spin" : ""}`} />
-              {isUpdating ? "..." : hasUpdate ? `🆕 Update v${APP_VERSION}` : `v${APP_VERSION}`}
+              {isUpdating ? "..." : hasUpdate ? `🆕 v${APP_VERSION}` : `v${APP_VERSION}`}
             </Button>
           </div>
 
