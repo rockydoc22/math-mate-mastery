@@ -126,6 +126,10 @@ const Home = () => {
   const [needsOnboarding, setNeedsOnboarding] = useState(false);
   const [showKidSelector, setShowKidSelector] = useState(false);
   const [activeKidId, setActiveKidId] = useState<string | null>(null);
+  const [focusMode, setFocusMode] = useState(() => {
+    try { return localStorage.getItem('ao_focus_mode') === 'true'; } catch { return false; }
+  });
+  const [expandedSections, setExpandedSections] = useState<Record<string, boolean>>({});
   const nextSAT = getNextExamDate(examType);
 
   // Require an explicit exam choice once per browser session after login
