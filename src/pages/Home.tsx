@@ -47,8 +47,8 @@ import { KidSelector } from "@/components/KidSelector";
 import { Dialog, DialogContent } from "@/components/ui/dialog";
 // Motivational messages for non-logged in or idle users
 const motivationalMessages = [
-  "Ready to crush your next test? Start with 10 questions!",
-  "Top scorers practice daily. Join them!",
+  "You've got this. Start with just 10 minutes today.",
+  "Small wins build big scores. Let's go!",
   "One app, every test. Take the first step!",
 ];
 
@@ -126,6 +126,10 @@ const Home = () => {
   const [needsOnboarding, setNeedsOnboarding] = useState(false);
   const [showKidSelector, setShowKidSelector] = useState(false);
   const [activeKidId, setActiveKidId] = useState<string | null>(null);
+  const [focusMode, setFocusMode] = useState(() => {
+    try { return localStorage.getItem('ao_focus_mode') === 'true'; } catch { return false; }
+  });
+  const [expandedSections, setExpandedSections] = useState<Record<string, boolean>>({});
   const nextSAT = getNextExamDate(examType);
 
   // Require an explicit exam choice once per browser session after login
@@ -218,6 +222,16 @@ const Home = () => {
     setShowExamSelector(true);
   };
 
+  const toggleFocusMode = () => {
+    const next = !focusMode;
+    setFocusMode(next);
+    try { localStorage.setItem('ao_focus_mode', String(next)); } catch {}
+  };
+
+  const toggleSection = (key: string) => {
+    setExpandedSections(prev => ({ ...prev, [key]: !prev[key] }));
+  };
+
   const projectedScore = ratings ? ratingToExamScore(ratings.overallRating, examType) : null;
   const skillLevel = ratings ? getSkillLevel(ratings.overallRating) : null;
 
@@ -294,7 +308,7 @@ const Home = () => {
         {/* Hero Header */}
         <header className="flex flex-col items-center text-center mb-4 pt-4 relative w-full max-w-full">
           {/* Update button at top left */}
-          <div className="absolute top-4 left-0">
+          <div className="absolute top-4 left-0 flex items-center gap-1">
             <Button
               onClick={forceUpdate}
               disabled={isUpdating}
@@ -303,7 +317,7 @@ const Home = () => {
               className={`gap-1 text-[10px] h-7 px-2 ${hasUpdate ? 'animate-pulse bg-emerald-500 hover:bg-emerald-600 text-white' : ''}`}
             >
               <RefreshCw className={`w-3 h-3 ${isUpdating ? "animate-spin" : ""}`} />
-              {isUpdating ? "..." : hasUpdate ? `🆕 Update v${APP_VERSION}` : `v${APP_VERSION}`}
+              {isUpdating ? "..." : hasUpdate ? `🆕 v${APP_VERSION}` : `v${APP_VERSION}`}
             </Button>
           </div>
 
@@ -333,24 +347,31 @@ const Home = () => {
             </div>
           </div>
 
-          {/* Logo */}
-          <div className="mb-4 mt-14 pt-2 w-full max-w-full overflow-hidden">
-            <SATMasteryLogo
-              size={isMobile ? "lg" : "xl"}
-              layout={isMobile ? "stacked" : "row"}
-              clickable
-              onClick={handle40SquaredClick}
-              examType={examType}
-            />
+          {/* Greeting */}
+          <div className="mt-14 pt-2 text-center mb-4">
+            <h1 className="text-xl font-bold">
+              {new Date().getHours() < 12 ? 'Good morning' : new Date().getHours() < 18 ? 'Good afternoon' : 'Good evening'}, {playerUsername}!
+            </h1>
+            <p className="text-sm text-muted-foreground mt-1">Ready to crush today?</p>
           </div>
 
-          {/* Current exam indicator */}
-          <div className="flex items-center justify-center mb-2">
+          {/* Exam Mode + Focus Mode Toggle */}
+          <div className="flex items-center justify-center gap-3 mb-2">
             <button
               onClick={handle40SquaredClick}
-              className="text-base px-5 py-2.5 rounded-full font-bold bg-primary text-primary-foreground shadow-md"
+              className="text-sm px-4 py-2 rounded-full font-bold bg-primary text-primary-foreground shadow-md"
             >
               {examConfig.icon} {examConfig.shortName} Mode
+            </button>
+            <button
+              onClick={toggleFocusMode}
+              className={`text-xs px-3 py-1.5 rounded-full font-medium border transition-all ${
+                focusMode 
+                  ? "bg-primary/10 border-primary/30 text-primary" 
+                  : "border-border text-muted-foreground hover:border-primary/30"
+              }`}
+            >
+              {focusMode ? "🧘 Focus On" : "🧘 Focus"}
             </button>
           </div>
 
@@ -416,13 +437,13 @@ const Home = () => {
         </Card>
 
         {/* Next Best Action Widget */}
-        <NextBestActionWidget />
+        {!focusMode && <NextBestActionWidget />}
 
         {/* Quick Duel Entry */}
-        <QuickDuelEntry />
+        {!focusMode && <QuickDuelEntry />}
 
         {/* Recommended Practice Widget */}
-        <RecommendedPracticeWidget />
+        {!focusMode && <RecommendedPracticeWidget />}
 
         {/* Carpe Diem Daily Challenge */}
         <Link to="/daily" className="mb-4 block">
