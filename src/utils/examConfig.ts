@@ -53,7 +53,7 @@ export const EXAM_CONFIGS: Record<ExamType, ExamConfig> = {
     branding: {
       logoText: '40²',
       logoKatex: '40^2',
-      appTitle: 'The SAT App',
+      appTitle: '40² SAT Prep',
       heroTagline: 'Free SAT prep that actually works',
       mathTaglineKatex: '40^2 \\times \\left(\\pi + \\sum_{k=1}^{\\infty} \\frac{1}{k^2} - e\\right)',
       mathTaglineLabel: 'who crush the SAT',
