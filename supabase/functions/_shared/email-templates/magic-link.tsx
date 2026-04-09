@@ -21,13 +21,13 @@ interface MagicLinkEmailProps {
 export const MagicLinkEmail = ({ siteName, confirmationUrl }: MagicLinkEmailProps) => (
   <Html lang="en" dir="ltr">
     <Head />
-    <Preview>Your magic link for 40² — click to sign in ✨</Preview>
+    <Preview>Your magic link for AlphaOmega — click to sign in ✨</Preview>
     <Body style={main}>
       <Container style={container}>
-        <div style={logoWrap}><span style={logo}>40²</span></div>
+        <div style={logoWrap}><span style={logo}>AΩ</span></div>
         <Heading style={h1}>Your magic link ✨</Heading>
         <Text style={text}>
-          Click below to sign in to 40² instantly — no password needed. This link expires shortly, so don't wait!
+          Click below to sign in to AlphaOmega instantly — no password needed. This link expires shortly, so don't wait!
         </Text>
         <Button style={button} href={confirmationUrl}>Sign In</Button>
         <Text style={footer}>If you didn't request this link, you can safely ignore this email.</Text>

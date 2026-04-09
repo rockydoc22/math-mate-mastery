@@ -21,10 +21,10 @@ interface RecoveryEmailProps {
 export const RecoveryEmail = ({ siteName, confirmationUrl }: RecoveryEmailProps) => (
   <Html lang="en" dir="ltr">
     <Head />
-    <Preview>Reset your 40² password</Preview>
+    <Preview>Reset your AlphaOmega password</Preview>
     <Body style={main}>
       <Container style={container}>
-        <div style={logoWrap}><span style={logo}>40²</span></div>
+        <div style={logoWrap}><span style={logo}>AΩ</span></div>
         <Heading style={h1}>Reset your password</Heading>
         <Text style={text}>
           No worries — it happens to the best of us! Click below to choose a new password and get back to practicing. 💪

@@ -19,10 +19,10 @@ interface ReauthenticationEmailProps {
 export const ReauthenticationEmail = ({ token }: ReauthenticationEmailProps) => (
   <Html lang="en" dir="ltr">
     <Head />
-    <Preview>Your 40² verification code</Preview>
+    <Preview>Your AlphaOmega verification code</Preview>
     <Body style={main}>
       <Container style={container}>
-        <div style={logoWrap}><span style={logo}>40²</span></div>
+        <div style={logoWrap}><span style={logo}>AΩ</span></div>
         <Heading style={h1}>Verification code</Heading>
         <Text style={text}>Use this code to confirm your identity:</Text>
         <Text style={codeStyle}>{token}</Text>
