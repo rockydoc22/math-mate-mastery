@@ -437,13 +437,13 @@ const Home = () => {
         </Card>
 
         {/* Next Best Action Widget */}
-        <NextBestActionWidget />
+        {!focusMode && <NextBestActionWidget />}
 
         {/* Quick Duel Entry */}
-        <QuickDuelEntry />
+        {!focusMode && <QuickDuelEntry />}
 
         {/* Recommended Practice Widget */}
-        <RecommendedPracticeWidget />
+        {!focusMode && <RecommendedPracticeWidget />}
 
         {/* Carpe Diem Daily Challenge */}
         <Link to="/daily" className="mb-4 block">
