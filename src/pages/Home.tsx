@@ -47,8 +47,8 @@ import { KidSelector } from "@/components/KidSelector";
 import { Dialog, DialogContent } from "@/components/ui/dialog";
 // Motivational messages for non-logged in or idle users
 const motivationalMessages = [
-  "Ready to crush your next test? Start with 10 questions!",
-  "Top scorers practice daily. Join them!",
+  "You've got this. Start with just 10 minutes today.",
+  "Small wins build big scores. Let's go!",
   "One app, every test. Take the first step!",
 ];
 
