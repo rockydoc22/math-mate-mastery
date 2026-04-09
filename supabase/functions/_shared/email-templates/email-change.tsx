@@ -24,10 +24,10 @@ interface EmailChangeEmailProps {
 export const EmailChangeEmail = ({ siteName, email, newEmail, confirmationUrl }: EmailChangeEmailProps) => (
   <Html lang="en" dir="ltr">
     <Head />
-    <Preview>Confirm your email change for 40²</Preview>
+    <Preview>Confirm your email change for AlphaOmega</Preview>
     <Body style={main}>
       <Container style={container}>
-        <div style={logoWrap}><span style={logo}>40²</span></div>
+        <div style={logoWrap}><span style={logo}>AΩ</span></div>
         <Heading style={h1}>Confirm your email change</Heading>
         <Text style={text}>
           You requested to change your email from{' '}

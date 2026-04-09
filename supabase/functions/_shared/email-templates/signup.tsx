@@ -29,16 +29,16 @@ export const SignupEmail = ({
 }: SignupEmailProps) => (
   <Html lang="en" dir="ltr">
     <Head />
-    <Preview>Welcome to 40² — confirm your email to start grinding 🎮</Preview>
+    <Preview>Welcome to AlphaOmega — confirm your email to start grinding 🎮</Preview>
     <Body style={main}>
       <Container style={container}>
         <div style={logoWrap}>
-          <span style={logo}>40²</span>
+          <span style={logo}>AΩ</span>
         </div>
         <Heading style={h1}>Welcome aboard! 🎮</Heading>
         <Text style={text}>
           You're one step away from joining{' '}
-          <Link href={siteUrl} style={link}><strong>40²</strong></Link>.
+          <Link href={siteUrl} style={link}><strong>AlphaOmega</strong></Link>.
           Let's get you verified so you can start practicing!
         </Text>
         <Text style={text}>

@@ -22,13 +22,13 @@ interface InviteEmailProps {
 export const InviteEmail = ({ siteName, siteUrl, confirmationUrl }: InviteEmailProps) => (
   <Html lang="en" dir="ltr">
     <Head />
-    <Preview>You've been invited to join 40² 🏆</Preview>
+    <Preview>You've been invited to join AlphaOmega 🏆</Preview>
     <Body style={main}>
       <Container style={container}>
-        <div style={logoWrap}><span style={logo}>40²</span></div>
+        <div style={logoWrap}><span style={logo}>AΩ</span></div>
         <Heading style={h1}>You've been invited! 🏆</Heading>
         <Text style={text}>
-          Someone thinks you'd be great at 40². Accept the invitation below to create your account and start practicing!
+          Someone thinks you'd be great at AlphaOmega. Accept the invitation below to create your account and start practicing!
         </Text>
         <Button style={button} href={confirmationUrl}>Accept Invitation</Button>
         <Text style={footer}>If you weren't expecting this, you can safely ignore this email.</Text>

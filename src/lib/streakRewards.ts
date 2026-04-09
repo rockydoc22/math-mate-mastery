@@ -25,11 +25,12 @@ const milestoneRewards: Record<number, StreakReward> = {
   3: { title: "3-Day Spark", description: "You started building momentum.", coins: 20, badge: "⚡" },
   7: { title: "7-Day Streak", description: "A full week of consistency.", coins: 50, badge: "🔥" },
   14: { title: "14-Day Run", description: "Your study habit is taking shape.", coins: 100, badge: "🏆" },
+  21: { title: "21-Day Habit", description: "Three weeks strong — this is who you are now.", coins: 175, badge: "🎯" },
   30: { title: "30-Day Mastery Run", description: "Serious consistency unlocked.", coins: 250, badge: "👑" },
 };
 
 function getNextMilestone(currentStreak: number): number {
-  const milestones = [3, 7, 14, 30];
+  const milestones = [3, 7, 14, 21, 30];
   for (const milestone of milestones) {
     if (currentStreak < milestone) return milestone;
   }

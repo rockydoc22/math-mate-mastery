@@ -144,11 +144,11 @@ export const LandingPage = () => {
           {/* Unified Logo */}
           <div className="mb-4 flex justify-center">
             <div className="w-20 h-20 rounded-2xl bg-gradient-to-br from-primary to-accent flex items-center justify-center shadow-lg">
-              <span className="font-bold text-primary-foreground font-mono text-xl">40²</span>
+              <span className="font-bold text-primary-foreground font-mono text-xl">AΩ</span>
             </div>
           </div>
-          <h1 className="text-3xl font-bold mb-2">40² Test Prep</h1>
-          <p className="text-sm text-muted-foreground mb-1">SAT • PSAT • ACT • AP</p>
+          <h1 className="text-3xl font-bold mb-2">AlphaOmega</h1>
+          <p className="text-sm text-muted-foreground mb-1">One App, Every Test</p>
 
           {/* Headline */}
           <p className="text-lg text-muted-foreground mb-6">
@@ -411,7 +411,7 @@ export const LandingPage = () => {
       <section className="px-4 py-6 bg-muted/20">
         <div className="max-w-2xl mx-auto">
           <p className="text-[10px] text-muted-foreground text-center leading-relaxed">
-            40² Test Prep is not affiliated with, endorsed by, or sponsored by College Board®, ACT Inc.®, 
+            AlphaOmega is not affiliated with, endorsed by, or sponsored by College Board®, ACT Inc.®, 
             the International Baccalaureate Organization®, or any other test maker. SAT® and AP® are registered 
             trademarks of College Board. ACT® is a registered trademark of ACT Inc. PSAT/NMSQT® is a registered 
             trademark of College Board and National Merit Scholarship Corporation. All practice questions are for 
@@ -423,7 +423,7 @@ export const LandingPage = () => {
       {/* Footer */}
       <footer className="px-4 py-6 border-t border-border">
         <div className="max-w-2xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-muted-foreground">
-          <span>© 2025 40² Test Prep</span>
+          <span>© 2025 AlphaOmega</span>
           <div className="flex items-center gap-3">
             <ShareAppButton />
             <InstallAppButton />

@@ -31,7 +31,7 @@ The use of exam names is for informational purposes only and does not imply any 
 
 For official preparation materials, please visit the respective official websites.
 
-40² assumes no responsibility for how users perform on actual standardized exams.`;
+AlphaOmega assumes no responsibility for how users perform on actual standardized exams.`;
 
 const K12_CHECKBOX = "I understand this platform uses only original content and is not affiliated with official testing organizations.";
 
