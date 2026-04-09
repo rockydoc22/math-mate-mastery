@@ -347,24 +347,31 @@ const Home = () => {
             </div>
           </div>
 
-          {/* Logo */}
-          <div className="mb-4 mt-14 pt-2 w-full max-w-full overflow-hidden">
-            <SATMasteryLogo
-              size={isMobile ? "lg" : "xl"}
-              layout={isMobile ? "stacked" : "row"}
-              clickable
-              onClick={handle40SquaredClick}
-              examType={examType}
-            />
+          {/* Greeting */}
+          <div className="mt-14 pt-2 text-center mb-4">
+            <h1 className="text-xl font-bold">
+              {new Date().getHours() < 12 ? 'Good morning' : new Date().getHours() < 18 ? 'Good afternoon' : 'Good evening'}, {playerUsername}!
+            </h1>
+            <p className="text-sm text-muted-foreground mt-1">Ready to crush today?</p>
           </div>
 
-          {/* Current exam indicator */}
-          <div className="flex items-center justify-center mb-2">
+          {/* Exam Mode + Focus Mode Toggle */}
+          <div className="flex items-center justify-center gap-3 mb-2">
             <button
               onClick={handle40SquaredClick}
-              className="text-base px-5 py-2.5 rounded-full font-bold bg-primary text-primary-foreground shadow-md"
+              className="text-sm px-4 py-2 rounded-full font-bold bg-primary text-primary-foreground shadow-md"
             >
               {examConfig.icon} {examConfig.shortName} Mode
+            </button>
+            <button
+              onClick={toggleFocusMode}
+              className={`text-xs px-3 py-1.5 rounded-full font-medium border transition-all ${
+                focusMode 
+                  ? "bg-primary/10 border-primary/30 text-primary" 
+                  : "border-border text-muted-foreground hover:border-primary/30"
+              }`}
+            >
+              {focusMode ? "🧘 Focus On" : "🧘 Focus"}
             </button>
           </div>
 
