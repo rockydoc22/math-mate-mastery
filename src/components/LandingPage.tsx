@@ -4,104 +4,51 @@ import { Card } from "@/components/ui/card";
 import { 
   Sparkles, Clock, Target, Trophy, Users, Zap, 
   CheckCircle, Star, ArrowRight, Calculator, PenTool,
-  Brain, Swords, Crown, Medal, Gamepad2
+  Brain, Swords, Crown, Medal, Gamepad2, BookOpen, GraduationCap, Briefcase
 } from "lucide-react";
 import { Link, useNavigate } from "react-router-dom";
 import { usePWAUpdate, APP_VERSION } from "@/hooks/usePWAUpdate";
 import { RefreshCw } from "lucide-react";
 import { supabase } from "@/integrations/supabase/client";
 import { lovable } from "@/integrations/lovable";
-import { SATMasteryLogo } from "@/components/SATMasteryLogo";
 import { FeedbackButton } from "@/components/FeedbackButton";
 import { InstallAppButton } from "@/components/InstallAppButton";
 import { ShareAppButton } from "@/components/ShareAppButton";
 import { toast } from "@/hooks/use-toast";
-import upwardCurveIcon from "@/assets/upward-curve-icon.png";
-// Official SAT dates: https://satsuite.collegeboard.org/sat/dates-deadlines
-const upcomingSATDates = [
-  new Date("2026-03-14"),
-  new Date("2026-05-02"),
-  new Date("2026-06-06"),
-  new Date("2026-08-22"),
-  new Date("2026-09-12"),
-  new Date("2026-10-03"),
-];
-
-function getNextSATDate(): { date: Date; daysUntil: number } {
-  const now = new Date();
-  for (const satDate of upcomingSATDates) {
-    if (satDate > now) {
-      const daysUntil = Math.ceil((satDate.getTime() - now.getTime()) / (1000 * 60 * 60 * 24));
-      return { date: satDate, daysUntil };
-    }
-  }
-  return { date: upcomingSATDates[0], daysUntil: 0 };
-}
 
 const features = [
   {
     icon: Brain,
     title: "AI-Powered Practice",
-    description: "Questions adapt to your skill level with ELO-based difficulty matching"
+    description: "Questions adapt to your skill level automatically"
   },
   {
     icon: Target,
-    title: "Elite Training Modes",
-    description: "Advanced practice designed for top scorers across SAT, PSAT, ACT & AP"
+    title: "Every Test Covered",
+    description: "SAT, ACT, AP, GED, MCAT, GRE, LSAT & more — all in one place"
   },
   {
     icon: Swords,
-    title: "Fight Club Battles",
-    description: "Compete head-to-head with other students in real-time"
-  },
-  {
-    icon: Gamepad2,
-    title: "Learning Arcade",
-    description: "Play Zalaga, Hangman & Chess while mastering test concepts"
+    title: "Battle Friends",
+    description: "Compete head-to-head in real-time study battles"
   },
   {
     icon: Trophy,
-    title: "Track Your Progress",
-    description: "Detailed insights, streaks, and achievement badges"
+    title: "Track Progress",
+    description: "Streaks, score predictions & achievement badges"
   }
 ];
 
-const testimonials = [
-  {
-    quote: "Went from 1320 to 1510 in 6 weeks!",
-    author: "Alex M.",
-    score: "1510"
-  },
-  {
-    quote: "The Fight Club mode made studying actually fun.",
-    author: "Sarah K.",
-    score: "1480"
-  },
-  {
-    quote: "Best test prep app I've used. Period.",
-    author: "Jordan T.",
-    score: "1560"
-  }
+const examCategories = [
+  { icon: BookOpen, label: "High School", exams: "SAT · ACT · PSAT · AP", color: "text-blue-600 dark:text-blue-400", bg: "bg-blue-50 dark:bg-blue-950/30" },
+  { icon: GraduationCap, label: "College & K-12", exams: "GED · MAP · STAR · Iowa", color: "text-teal-600 dark:text-teal-400", bg: "bg-teal-50 dark:bg-teal-950/30" },
+  { icon: Briefcase, label: "Grad & Professional", exams: "MCAT · GRE · LSAT · GMAT", color: "text-purple-600 dark:text-purple-400", bg: "bg-purple-50 dark:bg-purple-950/30" },
 ];
 
 export const LandingPage = () => {
   const navigate = useNavigate();
-  const nextSAT = getNextSATDate();
-  const [topPlayers, setTopPlayers] = useState<{ username: string; total_score: number; avatar_emoji: string | null }[]>([]);
   const [oauthLoading, setOauthLoading] = useState(false);
   const { forceUpdate, isUpdating, hasUpdate } = usePWAUpdate();
-
-  useEffect(() => {
-    const fetchTop = async () => {
-      const { data } = await supabase
-        .from('leaderboard_scores')
-        .select('username, total_score, avatar_emoji')
-        .order('total_score', { ascending: false })
-        .limit(5);
-      if (data) setTopPlayers(data);
-    };
-    fetchTop();
-  }, []);
 
   const handleOAuthSignIn = async (provider: "google" | "apple") => {
     setOauthLoading(true);
@@ -119,310 +66,193 @@ export const LandingPage = () => {
     }
   };
 
-  const handleTry3Questions = () => {
-    navigate(`/quiz?subject=both&count=3&difficulty=easy&timer=false`);
-  };
-
   return (
-    <div className="min-h-screen bg-gradient-to-br from-background via-primary/5 to-accent/10">
-      {/* Check for Updates - always visible for PWA/iPhone users */}
-      <div className="px-4 py-2 text-center">
-        <Button
-          onClick={forceUpdate}
-          disabled={isUpdating}
-          variant={hasUpdate ? "default" : "outline"}
-          size="sm"
-          className={`gap-2 w-full max-w-xs ${hasUpdate ? 'animate-pulse bg-emerald-500 hover:bg-emerald-600 text-white' : ''}`}
-        >
-          <RefreshCw className={`w-4 h-4 ${isUpdating ? "animate-spin" : ""}`} />
-          {isUpdating ? "Updating..." : hasUpdate ? `🆕 Update v${APP_VERSION} — Tap Now` : `Update v${APP_VERSION}`}
-        </Button>
-      </div>
-      {/* Hero Section */}
-      <header className="px-4 pt-8 pb-12 text-center">
-        <div className="max-w-2xl mx-auto">
-          {/* Unified Logo */}
-          <div className="mb-4 flex justify-center">
-            <div className="w-20 h-20 rounded-2xl bg-gradient-to-br from-primary to-accent flex items-center justify-center shadow-lg">
-              <span className="font-bold text-primary-foreground font-mono text-xl">AΩ</span>
+    <div className="min-h-screen bg-background">
+      {/* Update banner */}
+      {hasUpdate && (
+        <div className="px-4 py-2 text-center">
+          <Button onClick={forceUpdate} disabled={isUpdating} size="sm" className="gap-2">
+            <RefreshCw className={`w-4 h-4 ${isUpdating ? "animate-spin" : ""}`} />
+            {isUpdating ? "Updating..." : `🆕 Update v${APP_VERSION}`}
+          </Button>
+        </div>
+      )}
+
+      {/* ═══════════ Hero — Clean & Calm ═══════════ */}
+      <header className="px-6 pt-12 pb-16 text-center">
+        <div className="max-w-lg mx-auto space-y-6">
+          {/* Logo */}
+          <div className="flex justify-center">
+            <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-primary to-accent flex items-center justify-center shadow-lg">
+              <span className="font-bold text-primary-foreground font-mono text-lg">AΩ</span>
             </div>
           </div>
-          <h1 className="text-3xl font-bold mb-2">AlphaOmega</h1>
-          <p className="text-sm text-muted-foreground mb-1">One App, Every Test</p>
 
-          {/* Headline */}
-          <p className="text-lg text-muted-foreground mb-6">
-            Free test prep that actually works. Practice smarter, not harder.
+          {/* Title & tagline */}
+          <div>
+            <h1 className="text-3xl font-bold tracking-tight mb-1">AlphaOmega</h1>
+            <p className="text-sm text-muted-foreground font-medium">One app. Every test.</p>
+          </div>
+
+          {/* Subheadline */}
+          <p className="text-base text-muted-foreground leading-relaxed max-w-sm mx-auto">
+            From SAT to MCAT — free test prep that adapts to you. 
+            Start with just 10 minutes today.
           </p>
 
-          {/* SAT Countdown */}
-          <div className="mb-6">
-            <div className="flex items-center justify-center gap-2 mb-2">
-              <Clock className="w-4 h-4 text-primary" />
-              <span className="text-sm text-muted-foreground">
-                Next SAT: {nextSAT.date.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}
-              </span>
-            </div>
-            <div className="text-4xl font-bold text-primary">
-              {nextSAT.daysUntil} days
-            </div>
+          {/* Primary CTAs */}
+          <div className="flex flex-col items-center gap-3 pt-2">
+            <Link to="/auth" className="w-full max-w-xs">
+              <Button size="lg" className="w-full gap-2 h-14 text-base font-semibold shadow-md">
+                <Sparkles className="w-5 h-5" />
+                I'm new — let's get started
+              </Button>
+            </Link>
+            <Link to="/auth">
+              <Button variant="ghost" className="text-muted-foreground text-sm">
+                I already have an account — Log in
+              </Button>
+            </Link>
           </div>
 
-          {/* CTAs */}
-          <div className="flex flex-col items-center gap-3">
-            <div className="text-center mb-2">
-              <p className="text-sm font-semibold text-primary">🎉 100% Free — No catch!</p>
-              <p className="text-base font-medium text-foreground mt-1">
-                In exchange, leave comments & suggestions to help us make it better.
-              </p>
-            </div>
-            <Link to="/auth">
-              <Button size="lg" className="gap-2 bg-gradient-to-r from-emerald-500 to-teal-500 hover:from-emerald-600 hover:to-teal-600 text-white font-bold text-lg shadow-lg hover:shadow-xl transition-all hover:scale-105 px-8 py-6">
-                <Sparkles className="w-5 h-5" />
-                Get Started — It's Free
-                <ArrowRight className="w-4 h-4 flex-shrink-0" />
-              </Button>
-            </Link>
-
-            <div className="flex items-center gap-3 w-full max-w-xs">
-              <div className="flex-1 border-t border-border" />
-              <span className="text-xs text-muted-foreground uppercase">Or sign in with</span>
-              <div className="flex-1 border-t border-border" />
-            </div>
-
-            <div className="flex gap-3">
-              <Button
-                variant="outline"
-                size="lg"
-                onClick={() => handleOAuthSignIn("google")}
-                disabled={oauthLoading}
-                className="gap-2"
-              >
-                <svg className="w-5 h-5" viewBox="0 0 24 24">
-                  <path fill="currentColor" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" />
-                  <path fill="currentColor" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" />
-                  <path fill="currentColor" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" />
-                  <path fill="currentColor" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" />
-                </svg>
-                Google
-              </Button>
-              <Button
-                variant="outline"
-                size="lg"
-                onClick={() => handleOAuthSignIn("apple")}
-                disabled={oauthLoading}
-                className="gap-2"
-              >
-                <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/>
-                </svg>
-                Apple
-              </Button>
-            </div>
-
-            <Link to="/auth">
-              <Button variant="link" className="text-muted-foreground text-sm">
-                Already have an account? Sign in
-              </Button>
-            </Link>
+          {/* OAuth */}
+          <div className="flex items-center gap-3 max-w-xs mx-auto">
+            <div className="flex-1 border-t border-border" />
+            <span className="text-xs text-muted-foreground">or continue with</span>
+            <div className="flex-1 border-t border-border" />
+          </div>
+          <div className="flex gap-3 justify-center">
+            <Button variant="outline" size="lg" onClick={() => handleOAuthSignIn("google")} disabled={oauthLoading} className="gap-2">
+              <svg className="w-5 h-5" viewBox="0 0 24 24">
+                <path fill="currentColor" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" />
+                <path fill="currentColor" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" />
+                <path fill="currentColor" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" />
+                <path fill="currentColor" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" />
+              </svg>
+              Google
+            </Button>
+            <Button variant="outline" size="lg" onClick={() => handleOAuthSignIn("apple")} disabled={oauthLoading} className="gap-2">
+              <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/>
+              </svg>
+              Apple
+            </Button>
           </div>
         </div>
       </header>
 
-      {/* Top Players */}
-      {topPlayers.length > 0 && (
-        <section className="px-4 py-8">
-          <div className="max-w-2xl mx-auto">
-            <h2 className="text-xl font-bold text-center mb-4 flex items-center justify-center gap-2">
-              <Trophy className="w-5 h-5 text-primary" />
-              Top Players
-            </h2>
-            <Card className="divide-y divide-border">
-              {topPlayers.map((player, i) => (
-                <div key={player.username} className="flex items-center gap-3 px-4 py-3">
-                  <div className="w-6 flex justify-center">
-                    {i === 0 ? <Crown className="w-5 h-5 text-yellow-500" /> :
-                     i === 1 ? <Medal className="w-5 h-5 text-gray-400" /> :
-                     i === 2 ? <Medal className="w-5 h-5 text-amber-600" /> :
-                     <span className="text-sm font-bold text-muted-foreground">{i + 1}</span>}
-                  </div>
-                  <span className="text-lg">{player.avatar_emoji || "👤"}</span>
-                  <span className="font-semibold text-lg flex-1">{player.username}</span>
-                  <span className="font-bold text-primary">{player.total_score}</span>
-                </div>
-              ))}
-            </Card>
-          </div>
-        </section>
-      )}
-
-      {/* Arcade Preview - moved up for visibility */}
-      <section className="px-4 py-8">
-        <div className="max-w-2xl mx-auto text-center">
-          <h2 className="text-2xl font-bold mb-4 flex items-center justify-center gap-2">
-            <Gamepad2 className="w-6 h-6 text-primary" />
-            Learning Arcade
-          </h2>
-          <p className="text-muted-foreground mb-6">Master test concepts through games</p>
-          <div className="grid grid-cols-3 gap-4 mb-6">
-            <Card className="p-4 text-center">
-              <span className="text-3xl mb-2 block">🚀</span>
-              <span className="text-sm font-semibold">Zalaga</span>
-            </Card>
-            <Card className="p-4 text-center">
-              <span className="text-3xl mb-2 block">🪢</span>
-              <span className="text-sm font-semibold">Hangman</span>
-            </Card>
-            <Card className="p-4 text-center">
-              <span className="text-3xl mb-2 block">♟️</span>
-              <span className="text-sm font-semibold">Chess</span>
-            </Card>
-          </div>
-        </div>
-      </section>
-
-      {/* Social Proof */}
-      <section className="px-4 py-8 bg-muted/30">
-        <div className="max-w-2xl mx-auto text-center">
-          <div className="flex items-center justify-center gap-8 flex-wrap">
-            <div>
-              <div className="text-2xl font-bold text-primary">10,000+</div>
-              <div className="text-xs text-muted-foreground">Questions Answered</div>
+      {/* ═══════════ What's Covered ═══════════ */}
+      <section className="px-6 py-10 bg-muted/30">
+        <div className="max-w-lg mx-auto space-y-4">
+          <h2 className="text-lg font-semibold text-center mb-6">Every test. One dashboard.</h2>
+          {examCategories.map((cat, i) => (
+            <div key={i} className={`${cat.bg} rounded-xl p-4 flex items-center gap-4`}>
+              <div className={`p-2 rounded-lg bg-background/60`}>
+                <cat.icon className={`w-5 h-5 ${cat.color}`} />
+              </div>
+              <div>
+                <p className="font-semibold text-sm">{cat.label}</p>
+                <p className="text-xs text-muted-foreground">{cat.exams}</p>
+              </div>
             </div>
-            <div>
-              <div className="text-2xl font-bold text-primary">500+</div>
-              <div className="text-xs text-muted-foreground">Students</div>
-            </div>
-            <div>
-              <div className="text-2xl font-bold text-primary">150+</div>
-              <div className="text-xs text-muted-foreground">Avg Score Increase</div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Features */}
-      <section className="px-4 py-12">
-        <div className="max-w-2xl mx-auto">
-          <h2 className="text-2xl font-bold text-center mb-8">Why Students Love Us</h2>
-          <div className="grid gap-4">
-            {features.map((feature, idx) => (
-              <Card key={idx} className="p-6 flex flex-col items-center text-center gap-3">
-                <div className="p-3 rounded-lg bg-primary/10">
-                  <feature.icon className="w-6 h-6 text-primary" />
-                </div>
-                <div>
-                  <h3 className="font-semibold mb-1">{feature.title}</h3>
-                  <p className="text-sm text-muted-foreground">{feature.description}</p>
-                </div>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* What You Get */}
-      <section className="px-4 py-12 bg-muted/30">
-        <div className="max-w-2xl mx-auto text-center">
-          <h2 className="text-2xl font-bold mb-8">Everything You Need</h2>
-          <div className="flex items-start gap-4 max-w-lg mx-auto">
-            <div className="grid gap-3 text-left flex-1">
-              {[
-                "15,000+ questions across SAT, PSAT, ACT & AP",
-                "Adaptive difficulty that matches your level",
-                "Real-time battle mode against other students",
-                "Score prediction based on your performance",
-                "Learning Arcade: Zalaga, Hangman & Chess",
-                "Daily challenges to build consistency",
-                "Detailed explanations for every question",
-                "Track progress with insights dashboard",
-                "100% free to use"
-              ].map((item, idx) => (
-                <div key={idx} className="flex items-center gap-3 justify-start">
-                  <CheckCircle className="w-5 h-5 text-emerald-500 flex-shrink-0" />
-                  <span className="text-sm">{item}</span>
-                </div>
-              ))}
-            </div>
-            <img 
-              src={upwardCurveIcon} 
-              alt="Score improvement arrow" 
-              className="w-28 h-28 flex-shrink-0 dark:invert opacity-90 mix-blend-multiply dark:mix-blend-screen drop-shadow-lg hue-rotate-[200deg] saturate-150 mt-4"
-              style={{ background: 'transparent', filter: 'drop-shadow(0 4px 12px hsl(var(--primary) / 0.4))' }}
-            />
-          </div>
-        </div>
-      </section>
-
-      {/* Testimonials */}
-      <section className="px-4 py-12">
-        <div className="max-w-2xl mx-auto">
-          <h2 className="text-2xl font-bold text-center mb-8">Student Results</h2>
-          <div className="grid gap-4">
-            {testimonials.map((testimonial, idx) => (
-              <Card key={idx} className="p-5 text-center">
-                <div className="flex justify-center gap-0.5 mb-3">
-                  {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="w-4 h-4 fill-amber-400 text-amber-400" />
-                  ))}
-                </div>
-                <p className="text-sm font-medium mb-3">"{testimonial.quote}"</p>
-                <div className="flex items-center justify-center gap-2">
-                  <span className="text-xs text-muted-foreground">— {testimonial.author}</span>
-                  <span className="text-xs font-bold text-primary">{testimonial.score}</span>
-                </div>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
-
-
-      {/* Start Practicing Now */}
-      <section className="px-4 py-12 bg-muted/30">
-        <div className="max-w-2xl mx-auto text-center">
-          <h2 className="text-2xl font-bold mb-4">Start Practicing Now</h2>
-          <p className="text-muted-foreground mb-6">Choose your subject and begin your journey</p>
-          
-          <div className="grid grid-cols-2 gap-4 mb-6">
-            <Button 
-              size="lg" 
-              className="h-16 text-lg gap-2"
-              onClick={() => navigate('/quiz?subject=math&count=10&difficulty=all&timer=true')}
-            >
-              <Calculator className="w-5 h-5" />
-              Math
-            </Button>
-            <Button 
-              size="lg" 
-              variant="secondary"
-              className="h-16 text-lg gap-2"
-              onClick={() => navigate('/quiz?subject=english&count=10&difficulty=all&timer=true')}
-            >
-              <PenTool className="w-5 h-5" />
-              English
-            </Button>
-          </div>
-        </div>
-      </section>
-
-
-      {/* Legal Disclaimer */}
-      <section className="px-4 py-6 bg-muted/20">
-        <div className="max-w-2xl mx-auto">
-          <p className="text-[10px] text-muted-foreground text-center leading-relaxed">
-            AlphaOmega is not affiliated with, endorsed by, or sponsored by College Board®, ACT Inc.®, 
-            the International Baccalaureate Organization®, or any other test maker. SAT® and AP® are registered 
-            trademarks of College Board. ACT® is a registered trademark of ACT Inc. PSAT/NMSQT® is a registered 
-            trademark of College Board and National Merit Scholarship Corporation. All practice questions are for 
-            educational purposes only and are original or derived from publicly available retired materials.
+          ))}
+          <p className="text-center text-xs text-muted-foreground pt-2">
+            50,000+ practice questions across all exams
           </p>
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="px-4 py-6 border-t border-border">
-        <div className="max-w-2xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-muted-foreground">
+      {/* ═══════════ Why Students Love Us ═══════════ */}
+      <section className="px-6 py-12">
+        <div className="max-w-lg mx-auto">
+          <h2 className="text-lg font-semibold text-center mb-8">Why students love it</h2>
+          <div className="grid grid-cols-2 gap-4">
+            {features.map((feature, idx) => (
+              <Card key={idx} className="p-5 flex flex-col items-center text-center gap-3 border-border/50">
+                <div className="p-2.5 rounded-xl bg-primary/10">
+                  <feature.icon className="w-5 h-5 text-primary" />
+                </div>
+                <div>
+                  <h3 className="font-semibold text-sm mb-1">{feature.title}</h3>
+                  <p className="text-xs text-muted-foreground leading-relaxed">{feature.description}</p>
+                </div>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ═══════════ Everything You Get ═══════════ */}
+      <section className="px-6 py-10 bg-muted/30">
+        <div className="max-w-lg mx-auto text-center">
+          <h2 className="text-lg font-semibold mb-6">Everything included. Free.</h2>
+          <div className="grid gap-2.5 text-left max-w-sm mx-auto">
+            {[
+              "50,000+ questions across every exam",
+              "AI that adapts to your level",
+              "Real-time multiplayer battles",
+              "Score prediction & progress tracking",
+              "Story missions & learning arcade",
+              "Daily challenges to build consistency",
+              "Step-by-step explanations",
+              "100% free. No catch.",
+            ].map((item, idx) => (
+              <div key={idx} className="flex items-center gap-3">
+                <CheckCircle className="w-4 h-4 text-primary flex-shrink-0" />
+                <span className="text-sm text-foreground">{item}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ═══════════ Encouraging CTA ═══════════ */}
+      <section className="px-6 py-12">
+        <div className="max-w-lg mx-auto text-center space-y-4">
+          <p className="text-base font-medium text-foreground">
+            Not sure where to start? That's okay.
+          </p>
+          <p className="text-sm text-muted-foreground">
+            Tell us your test and we'll build a personalized plan in 30 seconds.
+          </p>
+          <Link to="/auth">
+            <Button size="lg" className="gap-2 mt-2">
+              Get Started Free
+              <ArrowRight className="w-4 h-4" />
+            </Button>
+          </Link>
+          <p className="text-xs text-muted-foreground italic">
+            "You've got this. Start with just 10 minutes today."
+          </p>
+        </div>
+      </section>
+
+      {/* ═══════════ Feedback Request ═══════════ */}
+      <section className="px-6 py-8 bg-muted/30">
+        <div className="max-w-lg mx-auto text-center space-y-3">
+          <p className="text-sm font-semibold text-primary">🎉 100% Free — No catch!</p>
+          <p className="text-sm text-foreground">
+            In exchange, leave comments & suggestions to help us improve.
+          </p>
+          <FeedbackButton />
+        </div>
+      </section>
+
+      {/* ═══════════ Legal ═══════════ */}
+      <section className="px-6 py-6">
+        <div className="max-w-lg mx-auto">
+          <p className="text-[10px] text-muted-foreground text-center leading-relaxed">
+            AlphaOmega is not affiliated with, endorsed by, or sponsored by College Board®, ACT Inc.®, 
+            the International Baccalaureate Organization®, AAMC®, ETS®, LSAC®, GMAC®, or any other test maker. 
+            All trademarks are property of their respective owners. All practice questions are original 
+            and for educational purposes only.
+          </p>
+        </div>
+      </section>
+
+      {/* ═══════════ Footer ═══════════ */}
+      <footer className="px-6 py-6 border-t border-border">
+        <div className="max-w-lg mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-muted-foreground">
           <span>© 2025 AlphaOmega</span>
           <div className="flex items-center gap-3">
             <ShareAppButton />
