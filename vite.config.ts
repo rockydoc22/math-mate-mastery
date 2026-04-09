@@ -17,9 +17,9 @@ export default defineConfig(({ mode }) => ({
       registerType: "autoUpdate",
       includeAssets: ["favicon.ico", "apple-touch-icon.png", "mask-icon.svg"],
       manifest: {
-        name: "40² - The Path to 1600",
-        short_name: "40²",
-        description: "Master the SAT with 1000+ hard practice questions",
+        name: "AlphaOmega — One App, Every Test",
+        short_name: "AlphaOmega",
+        description: "Free test prep for SAT, ACT, AP, GED, MAP & more — 15,000+ questions",
         theme_color: "#6366f1",
         background_color: "#0f0f23",
         display: "standalone",

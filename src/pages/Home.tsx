@@ -47,9 +47,9 @@ import { KidSelector } from "@/components/KidSelector";
 import { Dialog, DialogContent } from "@/components/ui/dialog";
 // Motivational messages for non-logged in or idle users
 const motivationalMessages = [
-  "Ready to crush the SAT? Start with 10 questions!",
+  "Ready to crush your next test? Start with 10 questions!",
   "Top scorers practice daily. Join them!",
-  "1600 club awaits. Take the first step!",
+  "One app, every test. Take the first step!",
 ];
 
 // Official exam test dates by type

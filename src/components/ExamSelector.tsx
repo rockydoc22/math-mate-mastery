@@ -81,7 +81,7 @@ export const ExamSelector = ({ onSelect, isModal = false }: ExamSelectorProps) =
         {/* Title */}
         <div className="text-center space-y-2">
           <div className="mx-auto w-14 h-14 rounded-2xl bg-gradient-to-br from-primary to-accent flex items-center justify-center">
-            <span className="text-xl font-bold text-primary-foreground">40²</span>
+            <span className="text-xl font-bold text-primary-foreground">AΩ</span>
           </div>
           <h1 className="text-2xl font-bold">What are you studying for?</h1>
           <p className="text-sm text-muted-foreground">

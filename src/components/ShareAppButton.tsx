@@ -10,7 +10,7 @@ import { Share2, Copy, Check, MessageCircle } from "lucide-react";
 import { toast } from "sonner";
 
 const APP_URL = "https://math-mate-mastery.lovable.app";
-const SHARE_TEXT = "Check out this free test prep app for SAT, PSAT, ACT & AP — 15,000+ questions, AI practice & multiplayer battles!";
+const SHARE_TEXT = "Check out AlphaOmega — one app, every test! Free SAT, ACT, AP, GED & K-12 prep with 15,000+ questions, AI practice & multiplayer battles!";
 
 export const ShareAppButton = () => {
   const [copied, setCopied] = useState(false);
@@ -29,7 +29,7 @@ export const ShareAppButton = () => {
   const handleNativeShare = async () => {
     if (navigator.share) {
       try {
-        await navigator.share({ title: "40² Test Prep", text: SHARE_TEXT, url: APP_URL });
+        await navigator.share({ title: "AlphaOmega — One App, Every Test", text: SHARE_TEXT, url: APP_URL });
       } catch {}
     } else {
       handleCopyLink();

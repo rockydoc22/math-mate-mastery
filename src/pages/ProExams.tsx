@@ -29,7 +29,7 @@ The use of terms such as "LSAT-style," "GMAT-style," or similar descriptive phra
 
 For official preparation materials, practice tests, registration, and policies, please visit the official respective websites.
 
-40² assumes no responsibility for how users perform on actual standardized exams. Success on the LSAT, GMAT, or any other test depends on many factors beyond practice with this application.`;
+AlphaOmega assumes no responsibility for how users perform on actual standardized exams. Success on the LSAT, GMAT, or any other test depends on many factors beyond practice with this application.`;
 
 const IP_CHECKBOX = "I have read and understand this notice. I acknowledge that this platform uses only original content and is not affiliated with or endorsed by official testing organizations. I agree to use this platform responsibly.";
 
