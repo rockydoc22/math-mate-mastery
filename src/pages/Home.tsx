@@ -222,6 +222,16 @@ const Home = () => {
     setShowExamSelector(true);
   };
 
+  const toggleFocusMode = () => {
+    const next = !focusMode;
+    setFocusMode(next);
+    try { localStorage.setItem('ao_focus_mode', String(next)); } catch {}
+  };
+
+  const toggleSection = (key: string) => {
+    setExpandedSections(prev => ({ ...prev, [key]: !prev[key] }));
+  };
+
   const projectedScore = ratings ? ratingToExamScore(ratings.overallRating, examType) : null;
   const skillLevel = ratings ? getSkillLevel(ratings.overallRating) : null;
 
