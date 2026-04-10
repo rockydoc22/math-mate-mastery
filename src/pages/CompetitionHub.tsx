@@ -2,9 +2,10 @@ import { useState } from "react";
 import { useParams, Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { ArrowLeft, ChevronDown, ChevronUp, CheckCircle, XCircle, Lightbulb, Trophy, Clock, Users, BookOpen } from "lucide-react";
+import { ArrowLeft, ChevronDown, ChevronUp, CheckCircle, XCircle, Lightbulb, Trophy, Clock, Users, BookOpen, Flag } from "lucide-react";
 import { BottomNav } from "@/components/BottomNav";
 import { SolutionPathAnalysis } from "@/components/SolutionPathAnalysis";
+import { FlagQuestionModal } from "@/components/FlagQuestionModal";
 import { STEM_COMPETITION_CATEGORIES, type Competition, type SampleQuestion } from "@/data/stem_competitions";
 
 const DIFFICULTY_COLORS: Record<string, string> = {
