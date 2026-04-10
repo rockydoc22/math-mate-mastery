@@ -28,6 +28,8 @@ const CompetitionHub = () => {
   const [selectedAnswers, setSelectedAnswers] = useState<Record<string, string>>({});
   const [revealedAnswers, setRevealedAnswers] = useState<Set<string>>(new Set());
   const [showPathAnalysis, setShowPathAnalysis] = useState<Set<string>>(new Set());
+  const [flagQuestionId, setFlagQuestionId] = useState<string | null>(null);
+  const [flagQuestionData, setFlagQuestionData] = useState<Record<string, any> | undefined>(undefined);
 
   // Find the competition
   let competition: Competition | null = null;
