@@ -2,9 +2,10 @@ import { useState } from "react";
 import { useParams, Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { ArrowLeft, ChevronDown, ChevronUp, CheckCircle, XCircle, Lightbulb, Trophy, Clock, Users, BookOpen } from "lucide-react";
+import { ArrowLeft, ChevronDown, ChevronUp, CheckCircle, XCircle, Lightbulb, Trophy, Clock, Users, BookOpen, Flag } from "lucide-react";
 import { BottomNav } from "@/components/BottomNav";
 import { SolutionPathAnalysis } from "@/components/SolutionPathAnalysis";
+import { FlagQuestionModal } from "@/components/FlagQuestionModal";
 import { STEM_COMPETITION_CATEGORIES, type Competition, type SampleQuestion } from "@/data/stem_competitions";
 
 const DIFFICULTY_COLORS: Record<string, string> = {
@@ -27,6 +28,8 @@ const CompetitionHub = () => {
   const [selectedAnswers, setSelectedAnswers] = useState<Record<string, string>>({});
   const [revealedAnswers, setRevealedAnswers] = useState<Set<string>>(new Set());
   const [showPathAnalysis, setShowPathAnalysis] = useState<Set<string>>(new Set());
+  const [flagQuestionId, setFlagQuestionId] = useState<string | null>(null);
+  const [flagQuestionData, setFlagQuestionData] = useState<Record<string, any> | undefined>(undefined);
 
   // Find the competition
   let competition: Competition | null = null;
@@ -74,6 +77,16 @@ const CompetitionHub = () => {
           <span className="text-[10px] px-2 py-0.5 rounded-full bg-muted text-muted-foreground font-medium">
             {q.topic}
           </span>
+          <button
+            className="ml-auto text-muted-foreground hover:text-amber-500 transition-colors p-1"
+            title="Flag this question"
+            onClick={() => {
+              setFlagQuestionId(q.id);
+              setFlagQuestionData({ question: q.question, options: q.options, answer: q.answer, topic: q.topic, competition: competition?.name });
+            }}
+          >
+            <Flag className="w-4 h-4" />
+          </button>
         </div>
         <p className="text-sm font-medium text-foreground leading-relaxed">{q.question}</p>
 
@@ -247,6 +260,13 @@ const CompetitionHub = () => {
           </Card>
         )}
       </div>
+      <FlagQuestionModal
+        isOpen={!!flagQuestionId}
+        onClose={() => { setFlagQuestionId(null); setFlagQuestionData(undefined); }}
+        questionId={flagQuestionId || ''}
+        questionType="competition"
+        questionData={flagQuestionData}
+      />
       <BottomNav />
     </div>
   );
