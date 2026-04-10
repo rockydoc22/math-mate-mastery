@@ -77,6 +77,16 @@ const CompetitionHub = () => {
           <span className="text-[10px] px-2 py-0.5 rounded-full bg-muted text-muted-foreground font-medium">
             {q.topic}
           </span>
+          <button
+            className="ml-auto text-muted-foreground hover:text-amber-500 transition-colors p-1"
+            title="Flag this question"
+            onClick={() => {
+              setFlagQuestionId(q.id);
+              setFlagQuestionData({ question: q.question, options: q.options, answer: q.answer, topic: q.topic, competition: competition?.name });
+            }}
+          >
+            <Flag className="w-4 h-4" />
+          </button>
         </div>
         <p className="text-sm font-medium text-foreground leading-relaxed">{q.question}</p>
 
