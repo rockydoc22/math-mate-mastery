@@ -260,6 +260,13 @@ const CompetitionHub = () => {
           </Card>
         )}
       </div>
+      <FlagQuestionModal
+        isOpen={!!flagQuestionId}
+        onClose={() => { setFlagQuestionId(null); setFlagQuestionData(undefined); }}
+        questionId={flagQuestionId || ''}
+        questionType="competition"
+        questionData={flagQuestionData}
+      />
       <BottomNav />
     </div>
   );
