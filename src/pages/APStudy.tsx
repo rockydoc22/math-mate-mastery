@@ -31,6 +31,8 @@ import { MathText } from "@/components/MathText";
 import { AITutorExplanation } from "@/components/AITutorExplanation";
 import { FRQ_SUBJECT_MAP } from "@/data/frqDataLoaders";
 import { PenLine } from "lucide-react";
+import { useProgressiveHints } from "@/hooks/useProgressiveHints";
+import { ProgressiveHintPanel } from "@/components/ProgressiveHintPanel";
 
 type ViewState =
   | { mode: 'units' }
