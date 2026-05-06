@@ -116,7 +116,7 @@ export function OnboardingFlow({ onComplete }: OnboardingFlowProps) {
           {STAGES.map(s => (
             <button
               key={s.value}
-              onClick={() => { setStage(s.value); setStep(1); }}
+              onClick={() => { setStage(s.value); track("stage_selected", { step_index: 0, stage: s.value }); setStep(1); }}
               className={`w-full p-4 rounded-xl border-2 flex items-center gap-4 text-left transition-all ${
                 stage === s.value ? "border-primary bg-primary/5" : "border-border hover:border-primary/40"
               }`}
@@ -141,7 +141,7 @@ export function OnboardingFlow({ onComplete }: OnboardingFlowProps) {
           {GOALS.map(g => (
             <button
               key={g.value}
-              onClick={() => { setGoal(g.value); setStep(2); }}
+              onClick={() => { setGoal(g.value); track("goal_selected", { step_index: 1, goal: g.value }); setStep(2); }}
               className={`w-full p-4 rounded-xl border-2 text-left text-sm font-medium transition-all flex items-center gap-3 ${
                 goal === g.value ? "border-primary bg-primary/5" : "border-border hover:border-primary/40"
               }`}
@@ -161,7 +161,7 @@ export function OnboardingFlow({ onComplete }: OnboardingFlowProps) {
           {availableExams.map(e => (
             <button
               key={e}
-              onClick={() => setExam(e)}
+              onClick={() => { setExam(e); track("exam_selected", { step_index: 2, exam: e }); }}
               className={`w-full p-3 rounded-xl border-2 text-left text-sm font-medium transition-all ${
                 exam === e ? "border-primary bg-primary/5" : "border-border hover:border-primary/40"
               }`}
