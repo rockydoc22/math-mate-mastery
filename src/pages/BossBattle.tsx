@@ -7,6 +7,7 @@ import { questions } from "@/data/questions";
 import { englishQuestions } from "@/data/englishQuestions";
 import { useAuth } from "@/hooks/useAuth";
 import { QuizCard } from "@/components/QuizCard";
+import { ReflectionJournalCard } from "@/components/ReflectionJournalCard";
 
 const BOSS_KEY = "boss_battle_daily";
 
@@ -224,6 +225,14 @@ const BossBattle = () => {
                 )}
                 <Link to="/"><Button className="mt-2">Back to Home</Button></Link>
               </Card>
+            )}
+
+            {showResult && (
+              <ReflectionJournalCard
+                subject={bossQuestion.type === "math" ? "Math" : "Reading"}
+                sessionKey={`boss_${today}`}
+                context={`Daily Boss Battle · ${today} · ${bossState?.correct ? "won" : "lost"}`}
+              />
             )}
           </>
         )}
