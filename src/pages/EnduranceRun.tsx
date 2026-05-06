@@ -2,6 +2,7 @@ import { useState, useEffect, useMemo, useCallback } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
+import { ReflectionJournalCard } from "@/components/ReflectionJournalCard";
 import { Progress } from "@/components/ui/progress";
 import { ArrowLeft, Heart, Flame, Trophy, Zap, RotateCcw, Shield, Flag } from "lucide-react";
 import { questions, Question } from "@/data/questions";
@@ -272,6 +273,14 @@ export default function EnduranceRun() {
             <Link to="/" className="flex-1">
               <Button variant="outline" className="w-full">Home</Button>
             </Link>
+          </div>
+
+          <div className="mt-6 text-left">
+            <ReflectionJournalCard
+              subject={subject}
+              sessionKey={`endurance_${subject}_${score}_${answered}`}
+              context={`Endurance Run · ${subject} · score ${score} · accuracy ${accuracy}%`}
+            />
           </div>
         </div>
       </div>
