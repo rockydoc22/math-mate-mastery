@@ -63,9 +63,15 @@
   <body>
     <div id="root">
       <!-- Inline loading state for iOS PWA blank screen prevention -->
-      <div id="pwa-loader" style="position:fixed;inset:0;background:#0f0f23;display:flex;flex-direction:column;align-items:center;justify-content:center;font-family:system-ui,-apple-system,sans-serif;color:#f3f4f6;z-index:9999;">
-        <div style="font-size:28px;font-weight:800;margin-bottom:8px;">AΩ</div>
-        <div style="font-size:14px;opacity:0.7;">Loading...</div>
+      <div id="pwa-loader" style="position:fixed;inset:0;background:linear-gradient(160deg,#0f0f23 0%,#1a1a3a 60%,#2d1a4a 100%);display:flex;flex-direction:column;align-items:center;justify-content:center;font-family:system-ui,-apple-system,sans-serif;color:#f3f4f6;z-index:9999;padding:24px;text-align:center;">
+        <div style="font-size:42px;font-weight:900;letter-spacing:-1px;margin-bottom:12px;background:linear-gradient(135deg,#a78bfa,#60a5fa);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">AlphaΩ</div>
+        <h1 style="font-size:22px;font-weight:700;margin:0 0 8px;max-width:480px;line-height:1.2;">One App. Every Test.</h1>
+        <p style="font-size:14px;opacity:0.7;margin:0 0 20px;max-width:420px;">Free SAT, ACT, AP &amp; K-12 prep with adaptive AI and multiplayer battles.</p>
+        <div style="display:inline-flex;align-items:center;gap:8px;font-size:12px;opacity:0.5;">
+          <div style="width:6px;height:6px;border-radius:50%;background:#a78bfa;animation:pulse 1.4s ease-in-out infinite;"></div>
+          Loading your dashboard…
+        </div>
+        <style>@keyframes pulse{0%,100%{opacity:0.3}50%{opacity:1}}</style>
         <noscript><div style="margin-top:20px;color:#ef4444;">Please enable JavaScript to use this app.</div></noscript>
       </div>
     </div>
