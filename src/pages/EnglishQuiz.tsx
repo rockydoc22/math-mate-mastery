@@ -6,6 +6,8 @@ import { englishQuestions } from "@/data/englishQuestions";
 import { ArrowRight, ArrowLeft } from "lucide-react";
 import { Progress } from "@/components/ui/progress";
 import { Link } from "react-router-dom";
+import { useProgressiveHints } from "@/hooks/useProgressiveHints";
+import { ProgressiveHintPanel } from "@/components/ProgressiveHintPanel";
 
 const EnglishQuiz = () => {
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
@@ -16,6 +18,13 @@ const EnglishQuiz = () => {
 
   const currentQuestion = englishQuestions[currentQuestionIndex];
   const progress = ((currentQuestionIndex + 1) / englishQuestions.length) * 100;
+
+  const hints = useProgressiveHints({
+    questionKey: currentQuestion?.id,
+    subject: "Reading",
+    difficulty: (currentQuestion as any)?.difficultyRating,
+    skillId: (currentQuestion as any)?.skill,
+  });
 
   const handleSelectAnswer = (answer: string) => {
     setSelectedAnswer(answer);
@@ -90,6 +99,16 @@ const EnglishQuiz = () => {
           showResult={showResult}
           questionType="english"
         />
+
+        {!showResult && (
+          <ProgressiveHintPanel
+            hints={hints.hints}
+            revealedCount={hints.revealedCount}
+            allShown={hints.allShown}
+            onRevealNext={hints.revealNext}
+            compact
+          />
+        )}
 
         <div className="flex gap-3">
           {!showResult ? (
