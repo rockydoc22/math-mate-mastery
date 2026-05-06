@@ -277,7 +277,7 @@ export default function EnduranceRun() {
 
           <div className="mt-6 text-left">
             <ReflectionJournalCard
-              subject={subject}
+              subject={subject === "math" ? "Math" : subject === "english" ? "Reading" : "General"}
               sessionKey={`endurance_${subject}_${score}_${answered}`}
               context={`Endurance Run · ${subject} · score ${score} · accuracy ${accuracy}%`}
             />
