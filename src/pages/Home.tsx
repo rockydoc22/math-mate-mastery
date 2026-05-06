@@ -10,7 +10,7 @@ import {
   Clock, Sparkles, Download, Lightbulb, Play, Skull, Settings, Gamepad2,
   Smartphone, Map, Star, Eye, UserPlus, ClipboardList, Building2, Heart,
   Bell, MessageCircle, FolderOpen, Coins, Timer, Layers, UsersRound,
-  Calendar, CircleDot, BookMarked, FileBarChart, TrendingUp, CalendarDays, FileQuestion, Bolt, HeartPulse, GitCompareArrows, NotebookPen, Microscope, TextQuote, Wand2, BookOpenCheck, Route, Rocket
+  Calendar, CircleDot, BookMarked, FileBarChart, TrendingUp, CalendarDays, FileQuestion, Bolt, HeartPulse, GitCompareArrows, NotebookPen, Microscope, TextQuote, Wand2, BookOpenCheck, Route, Rocket, ChevronDown
 } from "lucide-react";
 import { useNavigate, Link } from "react-router-dom";
 import { useAuth } from "@/hooks/useAuth";
