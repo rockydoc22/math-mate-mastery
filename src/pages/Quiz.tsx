@@ -496,6 +496,16 @@ const Quiz = () => {
           questionType={currentQuestion.type === "science" ? "math" : currentQuestion.type}
         />
 
+        {!showResult && (
+          <ProgressiveHintPanel
+            hints={hints.hints}
+            revealedCount={hints.revealedCount}
+            allShown={hints.allShown}
+            onRevealNext={hints.revealNext}
+            compact
+          />
+        )}
+
         {/* Mistake Coach feedback after wrong answer */}
         {showResult && mistakeCoach.lastFeedback && (
           <MistakeCoachCard
