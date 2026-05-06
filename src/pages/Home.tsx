@@ -45,6 +45,7 @@ import { StreakFreezeWidget } from "@/components/StreakFreezeWidget";
 import { OnboardingFlow } from "@/components/OnboardingFlow";
 import { KidSelector } from "@/components/KidSelector";
 import { Dialog, DialogContent } from "@/components/ui/dialog";
+import { ImportSummaryWidget } from "@/components/ImportSummaryWidget";
 // Motivational messages for non-logged in or idle users
 const motivationalMessages = [
   "You've got this. Start with just 10 minutes today.",
@@ -438,6 +439,9 @@ const Home = () => {
 
         {/* Next Best Action Widget */}
         {!focusMode && <NextBestActionWidget />}
+
+        {/* New Import Summary */}
+        {!focusMode && <ImportSummaryWidget />}
 
         {/* Quick Duel Entry */}
         {!focusMode && <QuickDuelEntry />}
