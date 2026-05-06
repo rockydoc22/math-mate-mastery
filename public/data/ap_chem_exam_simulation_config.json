@@ -1,0 +1,33 @@
+{
+  "exam_simulation_config": {
+    "section_1_mcq": {
+      "total_questions": 60,
+      "time_limit_minutes": 90,
+      "calculator_allowed": false,
+      "unit_weighting_percent": {
+        "Unit 1: Atomic Structure": 7,
+        "Unit 2: Molecular Structure": 9,
+        "Unit 3: IMF & Properties": 22,
+        "Unit 4: Chemical Reactions": 9,
+        "Unit 5: Kinetics": 9,
+        "Unit 6: Thermochemistry": 9,
+        "Unit 7: Equilibrium": 9,
+        "Unit 8: Acids & Bases": 15,
+        "Unit 9: Applications of Thermo": 11
+      }
+    },
+    "section_2_frq": {
+      "total_questions": 7,
+      "long_questions": 3,
+      "short_questions": 4,
+      "time_limit_minutes": 105,
+      "calculator_allowed": true
+    }
+  },
+  "simulation_script": {
+    "step_1": "Filter the 'Hard' question array to ensure at least 18 (30%) of the 60 MCQs are high-rigor.",
+    "step_2": "Apply the Unit Weighting percentages to select the specific number of questions from each unit folder.",
+    "step_3": "Randomize the 'Correct Answer' positions to ensure an even distribution of A, B, C, and D.",
+    "step_4": "Inject 'Trap Answers' into the distractors (e.g., forgetting to divide by 2 in stoichiometry)."
+  }
+}
