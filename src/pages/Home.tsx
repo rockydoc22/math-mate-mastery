@@ -807,35 +807,73 @@ const Home = () => {
               'admin': '🏫 Classroom & More',
             };
 
-            // On desktop, group by category
+            // On desktop, group by category — collapsible to reduce overload.
+            // Core is open by default; all other sections are collapsed until clicked.
             if (!isMobile) {
               const categories: TileCategory[] = ['core', 'study-tools', 'social', 'assessments', 'advanced', 'admin'];
+              const pinnedTiles = sorted.filter(t => pinnedSubjects.includes(t.id));
               return (
-                <div className="space-y-6">
+                <div className="space-y-3">
+                  {pinnedTiles.length > 0 && (
+                    <div>
+                      <h4 className="text-xs font-semibold text-primary uppercase tracking-wider mb-2 flex items-center gap-1">
+                        <Pin className="w-3 h-3" /> Your Pinned
+                      </h4>
+                      <div className="grid grid-cols-4 gap-3">
+                        {pinnedTiles.map((item) => (
+                          <Link key={item.id} to={item.to}>
+                            <div className={`${item.color} rounded-xl p-4 flex flex-col items-center text-center gap-2 aspect-square justify-center hover:scale-105 transition-transform cursor-pointer border border-primary/50 ring-1 ring-primary/20`}>
+                              <div className="w-14 h-14 rounded-full bg-background/60 flex items-center justify-center relative">
+                                <item.icon className={`w-7 h-7 ${item.iconColor}`} />
+                                <Pin className="w-3 h-3 text-primary absolute -top-1 -right-1" />
+                              </div>
+                              <span className="text-xs font-semibold leading-tight text-foreground">{item.label}</span>
+                            </div>
+                          </Link>
+                        ))}
+                      </div>
+                    </div>
+                  )}
                   {categories.map(cat => {
                     const catTiles = sorted.filter(t => t.category === cat);
                     if (catTiles.length === 0) return null;
+                    const isOpen = expandedSections[cat] ?? (cat === 'core');
                     return (
-                      <div key={cat}>
-                        <h4 className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-2">{categoryLabels[cat]}</h4>
-                        <div className="grid grid-cols-4 gap-3">
-                          {catTiles.map((item) => (
-                            <Link key={item.id} to={item.to}>
-                              <div className={`${item.color} rounded-xl p-4 flex flex-col items-center text-center gap-2 aspect-square justify-center hover:scale-105 transition-transform cursor-pointer border ${pinnedSubjects.includes(item.id) ? 'border-primary/50 ring-1 ring-primary/20' : 'border-border/50'}`}>
-                                <div className="w-14 h-14 rounded-full bg-background/60 flex items-center justify-center relative">
-                                  <item.icon className={`w-7 h-7 ${item.iconColor}`} />
-                                  {pinnedSubjects.includes(item.id) && (
-                                    <Pin className="w-3 h-3 text-primary absolute -top-1 -right-1" />
-                                  )}
+                      <div key={cat} className="border border-border/50 rounded-lg overflow-hidden">
+                        <button
+                          type="button"
+                          onClick={() => toggleSection(cat)}
+                          className="w-full flex items-center justify-between px-3 py-2.5 bg-muted/30 hover:bg-muted/50 transition-colors"
+                        >
+                          <div className="flex items-center gap-2">
+                            <h4 className="text-xs font-semibold text-foreground uppercase tracking-wider">{categoryLabels[cat]}</h4>
+                            <span className="text-[10px] text-muted-foreground bg-background/60 rounded-full px-1.5 py-0.5">{catTiles.length}</span>
+                          </div>
+                          <ChevronDown className={`w-4 h-4 text-muted-foreground transition-transform ${isOpen ? 'rotate-180' : ''}`} />
+                        </button>
+                        {isOpen && (
+                          <div className="grid grid-cols-4 gap-3 p-3">
+                            {catTiles.map((item) => (
+                              <Link key={item.id} to={item.to}>
+                                <div className={`${item.color} rounded-xl p-4 flex flex-col items-center text-center gap-2 aspect-square justify-center hover:scale-105 transition-transform cursor-pointer border ${pinnedSubjects.includes(item.id) ? 'border-primary/50 ring-1 ring-primary/20' : 'border-border/50'}`}>
+                                  <div className="w-14 h-14 rounded-full bg-background/60 flex items-center justify-center relative">
+                                    <item.icon className={`w-7 h-7 ${item.iconColor}`} />
+                                    {pinnedSubjects.includes(item.id) && (
+                                      <Pin className="w-3 h-3 text-primary absolute -top-1 -right-1" />
+                                    )}
+                                  </div>
+                                  <span className="text-xs font-semibold leading-tight text-foreground">{item.label}</span>
                                 </div>
-                                <span className="text-xs font-semibold leading-tight text-foreground">{item.label}</span>
-                              </div>
-                            </Link>
-                          ))}
-                        </div>
+                              </Link>
+                            ))}
+                          </div>
+                        )}
                       </div>
                     );
                   })}
+                  <p className="text-[10px] text-center text-muted-foreground pt-1">
+                    Tip: pin your favorites with <span className="font-medium">Customize</span> so they appear at the top.
+                  </p>
                 </div>
               );
             }
