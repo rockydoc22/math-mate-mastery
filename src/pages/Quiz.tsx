@@ -31,6 +31,8 @@ import { useMistakeCoach } from "@/hooks/useMistakeCoach";
 import { MomentumMeter } from "@/components/MomentumMeter";
 import { MistakeCoachCard } from "@/components/MistakeCoachCard";
 import { useExamType } from "@/hooks/useExamType";
+import { useProgressiveHints } from "@/hooks/useProgressiveHints";
+import { ProgressiveHintPanel } from "@/components/ProgressiveHintPanel";
 import { EXAM_CONFIGS } from "@/utils/examConfig";
 import { actScienceQuestions } from "@/data/actScienceQuestions";
 import { interleaveQuestions } from "@/utils/questionInterleaver";
