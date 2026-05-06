@@ -12,6 +12,8 @@ import { MiniConfetti } from "@/components/ConfettiExplosion";
 import { MilestoneCelebration } from "@/components/MilestoneCelebration";
 import { useSoundEffects } from "@/hooks/useSoundEffects";
 import { DesmosCalculator } from "@/components/DesmosCalculator";
+import { useProgressiveHints } from "@/hooks/useProgressiveHints";
+import { ProgressiveHintPanel } from "@/components/ProgressiveHintPanel";
 
 const MathQuiz = () => {
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
@@ -28,6 +30,13 @@ const MathQuiz = () => {
 
   const currentQuestion = questions[currentQuestionIndex];
   const progress = ((currentQuestionIndex + 1) / questions.length) * 100;
+
+  const hints = useProgressiveHints({
+    questionKey: currentQuestion?.id,
+    subject: "Math",
+    difficulty: (currentQuestion as any)?.difficultyRating,
+    skillId: (currentQuestion as any)?.skill,
+  });
 
   const handleSelectAnswer = (answer: string) => {
     setSelectedAnswer(answer);
@@ -152,6 +161,16 @@ const MathQuiz = () => {
               onFlagged={handleFlagged}
             />
           </div>
+
+          {!showResult && (
+            <ProgressiveHintPanel
+              hints={hints.hints}
+              revealedCount={hints.revealedCount}
+              allShown={hints.allShown}
+              onRevealNext={hints.revealNext}
+              compact
+            />
+          )}
 
           <div className="flex gap-3">
             {!showResult ? (
