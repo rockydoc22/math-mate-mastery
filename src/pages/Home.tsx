@@ -386,8 +386,11 @@ const Home = () => {
           </div>
         </header>
 
-        {/* ══════════ #1 PRIMARY CTA: Practice 10 Questions ══════════ */}
-        <Card className="p-4 mb-4 border-2 border-primary/30 bg-gradient-to-r from-primary/5 to-primary/10">
+        {/* ══════════ #1 HERO: What to do next (NBA-driven) ══════════ */}
+        {!focusMode && <NextBestActionWidget variant="hero" />}
+
+        {/* ══════════ #2 SECONDARY CTA: Practice 10 Questions ══════════ */}
+        <Card className="p-4 mb-4 border border-primary/20 bg-card">
           <Button 
             size="lg"
             className="w-full gap-3 bg-gradient-to-r from-primary to-primary/80 hover:from-primary/90 hover:to-primary/70 text-primary-foreground font-bold text-lg shadow-lg hover:shadow-xl transition-all hover:scale-[1.02] h-14"
@@ -436,9 +439,6 @@ const Home = () => {
             )}
           </div>
         </Card>
-
-        {/* Next Best Action Widget */}
-        {!focusMode && <NextBestActionWidget />}
 
         {/* New Import Summary */}
         {!focusMode && <ImportSummaryWidget />}
@@ -747,11 +747,7 @@ const Home = () => {
               { id: 'coach', icon: Sparkles, label: 'AI Coach', color: 'bg-violet-100 dark:bg-violet-900/30', iconColor: 'text-violet-600 dark:text-violet-400', to: '/coach', exams: ['sat', 'psat', 'act'], category: 'assessments', mobileVisible: true },
               { id: 'ai-tutor', icon: MessageCircle, label: 'AI Tutor', color: 'bg-indigo-100 dark:bg-indigo-900/30', iconColor: 'text-indigo-600 dark:text-indigo-400', to: '/ai-tutor', exams: ['sat', 'psat', 'act'], category: 'assessments', mobileVisible: true },
               { id: 'score-predictor', icon: TrendingUp, label: 'Score Predictor', color: 'bg-violet-100 dark:bg-violet-900/30', iconColor: 'text-violet-600 dark:text-violet-400', to: '/score-predictor', exams: ['sat', 'psat', 'act'], category: 'assessments', mobileVisible: false },
-              { id: 'personality', icon: Heart, label: 'Personality', color: 'bg-violet-100 dark:bg-violet-900/30', iconColor: 'text-violet-600 dark:text-violet-400', to: '/personality', exams: ['sat', 'psat', 'act'], category: 'assessments', mobileVisible: false },
-              { id: 'cognitive', icon: Brain, label: 'Brain Games', color: 'bg-cyan-100 dark:bg-cyan-900/30', iconColor: 'text-cyan-600 dark:text-cyan-400', to: '/cognitive', exams: ['sat', 'psat', 'act'], category: 'assessments', mobileVisible: false },
-              { id: 'iq-test', icon: Brain, label: 'IQ Test', color: 'bg-amber-100 dark:bg-amber-900/30', iconColor: 'text-amber-600 dark:text-amber-400', to: '/iq-test', exams: ['sat', 'psat', 'act'], category: 'assessments', mobileVisible: false },
-              { id: 'health-screening', icon: Heart, label: 'Health Checks', color: 'bg-red-100 dark:bg-red-900/30', iconColor: 'text-red-600 dark:text-red-400', to: '/health-screening', exams: ['sat', 'psat', 'act'], category: 'assessments', mobileVisible: false },
-              { id: 'logic-games', icon: Brain, label: 'Logic Games', color: 'bg-violet-100 dark:bg-violet-900/30', iconColor: 'text-violet-600 dark:text-violet-400', to: '/logic-games', exams: ['sat', 'psat', 'act'], category: 'assessments', mobileVisible: false },
+              { id: 'explore', icon: Sparkles, label: 'Explore', color: 'bg-violet-100 dark:bg-violet-900/30', iconColor: 'text-violet-600 dark:text-violet-400', to: '/iq-personality', exams: ['sat', 'psat', 'act'], category: 'assessments', mobileVisible: false },
               { id: 'homework-solver', icon: BookOpenCheck, label: 'HW Solver', color: 'bg-emerald-100 dark:bg-emerald-900/30', iconColor: 'text-emerald-600 dark:text-emerald-400', to: '/homework-solver', exams: ['sat', 'psat', 'act'], category: 'assessments', mobileVisible: true },
               { id: 'thinkpath', icon: Route, label: 'ThinkPath', color: 'bg-fuchsia-100 dark:bg-fuchsia-900/30', iconColor: 'text-fuchsia-600 dark:text-fuchsia-400', to: '/thinkpath', exams: ['sat', 'psat', 'act'], category: 'assessments', mobileVisible: true },
 

@@ -37,12 +37,33 @@ export function OnboardingFlow({ onComplete }: OnboardingFlowProps) {
   const [saving, setSaving] = useState(false);
   const [showLoading, setShowLoading] = useState(false);
 
+  // Fire-and-forget analytics
+  const track = (event: string, extra: Record<string, any> = {}) => {
+    supabase.from("onboarding_events").insert({
+      user_id: user?.id ?? null,
+      event,
+      step_index: extra.step_index ?? null,
+      stage: extra.stage ?? stage ?? null,
+      goal: extra.goal ?? goal ?? null,
+      exam: extra.exam ?? exam ?? null,
+      meta: extra.meta ?? {},
+    }).then(() => {}, () => {});
+  };
+
+  // View tracking on each step
+  useEffect(() => {
+    track("step_viewed", { step_index: step });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [step]);
+
   const availableExams = EXAMS_BY_STAGE[stage] || [];
 
   const handleFinish = async () => {
     if (!user) return;
     setShowLoading(true);
     setSaving(true);
+
+    track("completed", { step_index: 2, exam });
 
     // Derive grade_level from stage
     const gradeMap: Record<string, string> = { high_school: "10", college: "college", grad: "grad" };
@@ -95,7 +116,7 @@ export function OnboardingFlow({ onComplete }: OnboardingFlowProps) {
           {STAGES.map(s => (
             <button
               key={s.value}
-              onClick={() => { setStage(s.value); setStep(1); }}
+              onClick={() => { setStage(s.value); track("stage_selected", { step_index: 0, stage: s.value }); setStep(1); }}
               className={`w-full p-4 rounded-xl border-2 flex items-center gap-4 text-left transition-all ${
                 stage === s.value ? "border-primary bg-primary/5" : "border-border hover:border-primary/40"
               }`}
@@ -120,7 +141,7 @@ export function OnboardingFlow({ onComplete }: OnboardingFlowProps) {
           {GOALS.map(g => (
             <button
               key={g.value}
-              onClick={() => { setGoal(g.value); setStep(2); }}
+              onClick={() => { setGoal(g.value); track("goal_selected", { step_index: 1, goal: g.value }); setStep(2); }}
               className={`w-full p-4 rounded-xl border-2 text-left text-sm font-medium transition-all flex items-center gap-3 ${
                 goal === g.value ? "border-primary bg-primary/5" : "border-border hover:border-primary/40"
               }`}
@@ -140,7 +161,7 @@ export function OnboardingFlow({ onComplete }: OnboardingFlowProps) {
           {availableExams.map(e => (
             <button
               key={e}
-              onClick={() => setExam(e)}
+              onClick={() => { setExam(e); track("exam_selected", { step_index: 2, exam: e }); }}
               className={`w-full p-3 rounded-xl border-2 text-left text-sm font-medium transition-all ${
                 exam === e ? "border-primary bg-primary/5" : "border-border hover:border-primary/40"
               }`}

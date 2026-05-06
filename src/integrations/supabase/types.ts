@@ -660,6 +660,42 @@ export type Database = {
         }
         Relationships: []
       }
+      onboarding_events: {
+        Row: {
+          created_at: string
+          event: string
+          exam: string | null
+          goal: string | null
+          id: string
+          meta: Json | null
+          stage: string | null
+          step_index: number | null
+          user_id: string | null
+        }
+        Insert: {
+          created_at?: string
+          event: string
+          exam?: string | null
+          goal?: string | null
+          id?: string
+          meta?: Json | null
+          stage?: string | null
+          step_index?: number | null
+          user_id?: string | null
+        }
+        Update: {
+          created_at?: string
+          event?: string
+          exam?: string | null
+          goal?: string | null
+          id?: string
+          meta?: Json | null
+          stage?: string | null
+          step_index?: number | null
+          user_id?: string | null
+        }
+        Relationships: []
+      }
       parent_links: {
         Row: {
           child_id: string
