@@ -431,6 +431,16 @@ const APStudy = () => {
           )}
         </Card>
 
+        {!view.showResult && (
+          <ProgressiveHintPanel
+            hints={hints.hints}
+            revealedCount={hints.revealedCount}
+            allShown={hints.allShown}
+            onRevealNext={hints.revealNext}
+            compact
+          />
+        )}
+
         {/* AI Tutor */}
         {showAITutor && view.showResult && (
           <AITutorExplanation
