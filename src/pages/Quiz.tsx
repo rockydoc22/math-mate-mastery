@@ -31,6 +31,8 @@ import { useMistakeCoach } from "@/hooks/useMistakeCoach";
 import { MomentumMeter } from "@/components/MomentumMeter";
 import { MistakeCoachCard } from "@/components/MistakeCoachCard";
 import { useExamType } from "@/hooks/useExamType";
+import { useProgressiveHints } from "@/hooks/useProgressiveHints";
+import { ProgressiveHintPanel } from "@/components/ProgressiveHintPanel";
 import { EXAM_CONFIGS } from "@/utils/examConfig";
 import { actScienceQuestions } from "@/data/actScienceQuestions";
 import { interleaveQuestions } from "@/utils/questionInterleaver";
@@ -262,6 +264,13 @@ const Quiz = () => {
   const currentQuestion = quizQuestions[currentQuestionIndex];
   const progress = ((currentQuestionIndex + 1) / quizQuestions.length) * 100;
 
+  const hints = useProgressiveHints({
+    questionKey: currentQuestion?.id,
+    subject: currentQuestion?.type,
+    difficulty: currentQuestion?.difficultyRating,
+    skillId: (currentQuestion as any)?.skill,
+  });
+
   const handleSelectAnswer = (answer: string) => {
     setSelectedAnswer(answer);
   };
@@ -486,6 +495,16 @@ const Quiz = () => {
           showResult={showResult}
           questionType={currentQuestion.type === "science" ? "math" : currentQuestion.type}
         />
+
+        {!showResult && (
+          <ProgressiveHintPanel
+            hints={hints.hints}
+            revealedCount={hints.revealedCount}
+            allShown={hints.allShown}
+            onRevealNext={hints.revealNext}
+            compact
+          />
+        )}
 
         {/* Mistake Coach feedback after wrong answer */}
         {showResult && mistakeCoach.lastFeedback && (
