@@ -14,7 +14,11 @@ interface NextAction {
   gradient: string;
 }
 
-export function NextBestActionWidget() {
+interface NextBestActionWidgetProps {
+  variant?: "default" | "hero";
+}
+
+export function NextBestActionWidget({ variant = "default" }: NextBestActionWidgetProps = {}) {
   const { user } = useAuth();
   const navigate = useNavigate();
   const [action, setAction] = useState<NextAction | null>(null);
@@ -194,6 +198,31 @@ export function NextBestActionWidget() {
   if (loading || !action) return null;
 
   const Icon = action.icon;
+
+  if (variant === "hero") {
+    return (
+      <Card className="mb-4 overflow-hidden border-2 border-primary/30 bg-gradient-to-br from-primary/5 via-background to-accent/5">
+        <button
+          onClick={() => navigate(action.path)}
+          className="w-full p-5 text-left hover:bg-muted/30 transition-colors"
+        >
+          <p className="text-[10px] font-bold text-primary uppercase tracking-widest mb-2">
+            ✨ What to do next
+          </p>
+          <div className="flex items-center gap-4">
+            <div className={`p-4 rounded-2xl bg-gradient-to-br ${action.gradient} text-white shrink-0 shadow-lg`}>
+              <Icon className="w-7 h-7" />
+            </div>
+            <div className="flex-1 min-w-0">
+              <p className="text-lg font-bold text-foreground leading-tight">{action.label}</p>
+              <p className="text-sm text-muted-foreground mt-1">{action.description}</p>
+            </div>
+            <div className="text-2xl text-muted-foreground">›</div>
+          </div>
+        </button>
+      </Card>
+    );
+  }
 
   return (
     <Card className="mb-4 overflow-hidden">
