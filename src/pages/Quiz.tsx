@@ -264,6 +264,13 @@ const Quiz = () => {
   const currentQuestion = quizQuestions[currentQuestionIndex];
   const progress = ((currentQuestionIndex + 1) / quizQuestions.length) * 100;
 
+  const hints = useProgressiveHints({
+    questionKey: currentQuestion?.id,
+    subject: currentQuestion?.type,
+    difficulty: currentQuestion?.difficultyRating,
+    skillId: (currentQuestion as any)?.skill,
+  });
+
   const handleSelectAnswer = (answer: string) => {
     setSelectedAnswer(answer);
   };
