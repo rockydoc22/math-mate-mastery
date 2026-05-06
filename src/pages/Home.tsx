@@ -386,8 +386,11 @@ const Home = () => {
           </div>
         </header>
 
-        {/* ══════════ #1 PRIMARY CTA: Practice 10 Questions ══════════ */}
-        <Card className="p-4 mb-4 border-2 border-primary/30 bg-gradient-to-r from-primary/5 to-primary/10">
+        {/* ══════════ #1 HERO: What to do next (NBA-driven) ══════════ */}
+        {!focusMode && <NextBestActionWidget variant="hero" />}
+
+        {/* ══════════ #2 SECONDARY CTA: Practice 10 Questions ══════════ */}
+        <Card className="p-4 mb-4 border border-primary/20 bg-card">
           <Button 
             size="lg"
             className="w-full gap-3 bg-gradient-to-r from-primary to-primary/80 hover:from-primary/90 hover:to-primary/70 text-primary-foreground font-bold text-lg shadow-lg hover:shadow-xl transition-all hover:scale-[1.02] h-14"
@@ -436,9 +439,6 @@ const Home = () => {
             )}
           </div>
         </Card>
-
-        {/* Next Best Action Widget */}
-        {!focusMode && <NextBestActionWidget />}
 
         {/* New Import Summary */}
         {!focusMode && <ImportSummaryWidget />}
