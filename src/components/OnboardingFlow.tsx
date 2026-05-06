@@ -37,12 +37,33 @@ export function OnboardingFlow({ onComplete }: OnboardingFlowProps) {
   const [saving, setSaving] = useState(false);
   const [showLoading, setShowLoading] = useState(false);
 
+  // Fire-and-forget analytics
+  const track = (event: string, extra: Record<string, any> = {}) => {
+    supabase.from("onboarding_events").insert({
+      user_id: user?.id ?? null,
+      event,
+      step_index: extra.step_index ?? null,
+      stage: extra.stage ?? stage ?? null,
+      goal: extra.goal ?? goal ?? null,
+      exam: extra.exam ?? exam ?? null,
+      meta: extra.meta ?? {},
+    }).then(() => {}, () => {});
+  };
+
+  // View tracking on each step
+  useEffect(() => {
+    track("step_viewed", { step_index: step });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [step]);
+
   const availableExams = EXAMS_BY_STAGE[stage] || [];
 
   const handleFinish = async () => {
     if (!user) return;
     setShowLoading(true);
     setSaving(true);
+
+    track("completed", { step_index: 2, exam });
 
     // Derive grade_level from stage
     const gradeMap: Record<string, string> = { high_school: "10", college: "college", grad: "grad" };
