@@ -120,6 +120,18 @@ const APStudy = () => {
     }
   }, [subjectId]);
 
+  // Progressive hints — derived from current quiz question (if any). Hook must run unconditionally.
+  const activeQ = view.mode === 'quiz' ? view.questions[view.currentIndex] : undefined;
+  const hintSubject = subject?.name?.includes('Math') || subject?.name?.includes('Calc') || subject?.name?.includes('Stat') || subject?.name?.includes('Phys') || subject?.name?.includes('Chem') || subject?.name?.includes('Bio')
+    ? 'Math'
+    : 'Reading';
+  const hints = useProgressiveHints({
+    questionKey: activeQ?.id,
+    subject: hintSubject,
+    difficulty: (activeQ as any)?.difficultyRating,
+    skillId: activeQ?.skill,
+  });
+
   if (!subject) {
     return (
       <div className="min-h-screen flex items-center justify-center p-4">
