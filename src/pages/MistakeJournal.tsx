@@ -12,6 +12,8 @@ import { useAuth } from "@/hooks/useAuth";
 import { supabase } from "@/integrations/supabase/client";
 import { BottomNav } from "@/components/BottomNav";
 import { motion } from "framer-motion";
+import { BookOpen } from "lucide-react";
+import { getReflectionEntries, type ReflectionEntry } from "@/hooks/useReflectionPrompts";
 
 interface MistakeEntry {
   id: string;
@@ -258,6 +260,8 @@ const MistakeJournal = () => {
             )}
           </TabsContent>
         </Tabs>
+
+        <ReflectionsSection />
       </div>
       <BottomNav />
     </div>
@@ -265,3 +269,33 @@ const MistakeJournal = () => {
 };
 
 export default MistakeJournal;
+
+function ReflectionsSection() {
+  const [entries, setEntries] = useState<ReflectionEntry[]>([]);
+  useEffect(() => {
+    setEntries(getReflectionEntries());
+  }, []);
+  if (entries.length === 0) return null;
+  return (
+    <div className="mt-8">
+      <div className="flex items-center gap-2 mb-3">
+        <BookOpen className="w-5 h-5 text-amber-500" />
+        <h2 className="text-lg font-bold">Your Reflections</h2>
+        <span className="text-xs text-muted-foreground ml-auto">{entries.length} entries</span>
+      </div>
+      <div className="space-y-3">
+        {entries.slice(0, 10).map((e) => (
+          <Card key={e.id} className="p-3 space-y-2">
+            <div className="flex items-center justify-between text-[10px] text-muted-foreground">
+              <span className="uppercase tracking-wide">{e.subject}</span>
+              <span>{new Date(e.createdAt).toLocaleDateString()}</span>
+            </div>
+            {e.context && <p className="text-[11px] text-muted-foreground italic">{e.context}</p>}
+            <p className="text-xs text-muted-foreground">{e.prompt}</p>
+            <p className="text-sm text-foreground whitespace-pre-wrap">{e.response}</p>
+          </Card>
+        ))}
+      </div>
+    </div>
+  );
+}

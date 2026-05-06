@@ -16,6 +16,7 @@ import { toast } from "sonner";
 import { useAuth } from "@/hooks/useAuth";
 import { supabase } from "@/integrations/supabase/client";
 import PacingSummary from "@/components/PacingSummary";
+import { ReflectionJournalCard } from "@/components/ReflectionJournalCard";
 
 // --- Types ---
 interface ExamSection {
@@ -907,6 +908,12 @@ const ExamSimulator = () => {
             </Card>
 
             <Button className="w-full" onClick={() => { setPhase("select"); setBlueprint(null); }}>Try Another Exam</Button>
+
+            <ReflectionJournalCard
+              subject="General"
+              sessionKey={`exam_${blueprint.id}_${overallPct}`}
+              context={`Exam Simulator · ${blueprint.name} · ${overallPct}% overall`}
+            />
           </div>
         )}
       </div>
