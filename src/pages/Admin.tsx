@@ -51,6 +51,7 @@ interface StreakData {
 const Admin = () => {
   const { user, loading: authLoading } = useAuth();
   const [flaggedQuestions, setFlaggedQuestions] = useState<FlaggedQuestion[]>([]);
+  const [expandedFix, setExpandedFix] = useState<string | null>(null);
   const [userStats, setUserStats] = useState<UserStats[]>([]);
   const [retentionData, setRetentionData] = useState<RetentionWeek[]>([]);
   const [streakData, setStreakData] = useState<StreakData[]>([]);
@@ -490,6 +491,9 @@ const Admin = () => {
                           </p>
                         </div>
                         <div className="flex gap-2">
+                          <Button size="sm" variant="default" onClick={() => setExpandedFix(expandedFix === flag.id ? null : flag.id)}>
+                            {expandedFix === flag.id ? "Close" : "Fix"}
+                          </Button>
                           {flag.status === 'pending' && (
                             <Button size="sm" variant="outline" onClick={() => updateStatus(flag.id, 'reviewed')}>
                               <Eye className="w-4 h-4" />
@@ -505,6 +509,9 @@ const Admin = () => {
                           </Button>
                         </div>
                       </div>
+                      {expandedFix === flag.id && (
+                        <FlagFixInPlace flag={flag} onSaved={() => { setExpandedFix(null); fetchFlaggedQuestions(); }} />
+                      )}
                     </CardContent>
                   </Card>
                 ))}
