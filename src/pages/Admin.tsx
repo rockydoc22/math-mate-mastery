@@ -10,6 +10,7 @@ import { ArrowLeft, Trash2, Check, Eye, ShieldAlert, Users, Flag, GraduationCap,
 import { useAuth } from "@/hooks/useAuth";
 import { QuestionDistribution } from "@/components/admin/QuestionDistribution";
 import { EmailDeliveryDiagnostics } from "@/components/admin/EmailDeliveryDiagnostics";
+import { FlagFixInPlace } from "@/components/admin/FlagFixInPlace";
 import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer, LineChart, Line, CartesianGrid } from "recharts";
 
 interface FlaggedQuestion {
@@ -23,6 +24,7 @@ interface FlaggedQuestion {
   user_id: string | null;
   resolved_at: string | null;
   resolution_notes: string | null;
+  ai_suggested_fix?: any;
 }
 
 interface UserStats {
