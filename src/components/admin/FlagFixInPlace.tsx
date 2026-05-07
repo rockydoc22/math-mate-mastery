@@ -62,7 +62,7 @@ export function FlagFixInPlace({ flag, onSaved }: { flag: Flag; onSaved: () => v
   const save = async () => {
     setSaving(true);
     try {
-      const override_data = { question, options: opts, correctAnswer: correct, explanation };
+      const override_data: any = { question, options: opts, correctAnswer: correct, explanation };
       const { error } = await supabase.from("question_overrides").upsert([{
         question_id: flag.question_id,
         question_type: flag.question_type,
