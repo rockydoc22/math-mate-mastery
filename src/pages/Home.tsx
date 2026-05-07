@@ -252,6 +252,7 @@ const Home = () => {
       <OnboardingFlow
         onComplete={({ gradeLevel, primaryGoal, targetExam }) => {
           setNeedsOnboarding(false);
+          setNeedsDiagnostic(true);
           // Map exam to exam type for the selector
           const examMap: Record<string, string> = { SAT: 'sat', PSAT: 'psat', ACT: 'act' };
           const mapped = examMap[targetExam];
@@ -261,6 +262,15 @@ const Home = () => {
             sessionStorage.setItem(`exam_choice_session_${user.id}`, "true");
           }
         }}
+      />
+    );
+  }
+
+  if (needsDiagnostic && !diagnosticSkipped) {
+    return (
+      <DiagnosticFlow
+        onComplete={() => { setNeedsDiagnostic(false); }}
+        onSkip={() => { setDiagnosticSkipped(true); setNeedsDiagnostic(false); }}
       />
     );
   }
