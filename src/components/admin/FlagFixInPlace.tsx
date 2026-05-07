@@ -14,7 +14,7 @@ interface Flag {
   question_id: string;
   question_type: string;
   notes: string | null;
-  ai_suggested_fix: any | null;
+  ai_suggested_fix?: any | null;
 }
 
 interface OptionEdit { letter: string; text: string }
