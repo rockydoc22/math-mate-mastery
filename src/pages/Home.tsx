@@ -43,6 +43,7 @@ import { NextBestActionWidget } from "@/components/NextBestActionWidget";
 import { QuickDuelEntry } from "@/components/QuickDuelEntry";
 import { StreakFreezeWidget } from "@/components/StreakFreezeWidget";
 import { OnboardingFlow } from "@/components/OnboardingFlow";
+import { DiagnosticFlow } from "@/components/DiagnosticFlow";
 import { KidSelector } from "@/components/KidSelector";
 import { Dialog, DialogContent } from "@/components/ui/dialog";
 import { ImportSummaryWidget } from "@/components/ImportSummaryWidget";
@@ -125,6 +126,8 @@ const Home = () => {
   const [pinnedSubjects, setPinnedSubjects] = useState<string[]>([]);
   const [showPinManager, setShowPinManager] = useState(false);
   const [needsOnboarding, setNeedsOnboarding] = useState(false);
+  const [needsDiagnostic, setNeedsDiagnostic] = useState(false);
+  const [diagnosticSkipped, setDiagnosticSkipped] = useState(false);
   const [showKidSelector, setShowKidSelector] = useState(false);
   const [activeKidId, setActiveKidId] = useState<string | null>(null);
   const [focusMode, setFocusMode] = useState(() => {
@@ -152,12 +155,14 @@ const Home = () => {
       // Check if onboarding is needed
       const { data: profile } = await supabase
         .from("profiles")
-        .select("grade_level, primary_goal, is_parent")
+        .select("grade_level, primary_goal, is_parent, diagnostic_completed_at")
         .eq("id", user.id)
         .maybeSingle();
       
       if (profile && !profile.grade_level && !profile.primary_goal) {
         setNeedsOnboarding(true);
+      } else if (profile && !profile.diagnostic_completed_at) {
+        setNeedsDiagnostic(true);
       }
       
       // Show kid selector for parent accounts
