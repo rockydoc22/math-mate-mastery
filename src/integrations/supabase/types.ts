@@ -824,6 +824,7 @@ export type Database = {
           avatar_emoji: string | null
           avatar_url: string | null
           created_at: string
+          diagnostic_completed_at: string | null
           exam_type: string
           grade_level: string | null
           id: string
@@ -840,6 +841,7 @@ export type Database = {
           avatar_emoji?: string | null
           avatar_url?: string | null
           created_at?: string
+          diagnostic_completed_at?: string | null
           exam_type?: string
           grade_level?: string | null
           id: string
@@ -856,6 +858,7 @@ export type Database = {
           avatar_emoji?: string | null
           avatar_url?: string | null
           created_at?: string
+          diagnostic_completed_at?: string | null
           exam_type?: string
           grade_level?: string | null
           id?: string
@@ -934,6 +937,42 @@ export type Database = {
             referencedColumns: ["id"]
           },
         ]
+      }
+      question_overrides: {
+        Row: {
+          created_at: string
+          edited_by: string | null
+          id: string
+          notes: string | null
+          override_data: Json
+          question_id: string
+          question_type: string
+          source_flag_id: string | null
+          updated_at: string
+        }
+        Insert: {
+          created_at?: string
+          edited_by?: string | null
+          id?: string
+          notes?: string | null
+          override_data: Json
+          question_id: string
+          question_type: string
+          source_flag_id?: string | null
+          updated_at?: string
+        }
+        Update: {
+          created_at?: string
+          edited_by?: string | null
+          id?: string
+          notes?: string | null
+          override_data?: Json
+          question_id?: string
+          question_type?: string
+          source_flag_id?: string | null
+          updated_at?: string
+        }
+        Relationships: []
       }
       quiz_scores: {
         Row: {
