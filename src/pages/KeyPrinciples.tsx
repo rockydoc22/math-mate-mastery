@@ -463,6 +463,24 @@ const KeyPrinciples = () => {
         title="Key SAT Principles — Concepts, Tips & Traps"
         description="Browse and quiz yourself on the highest-leverage SAT Math and Reading principles, traps, and 1600-level insights."
         path="/key-principles"
+        type="article"
+        jsonLd={{
+          "@context": "https://schema.org",
+          "@type": "Article",
+          headline: "Key SAT Principles — Concepts, Tips & Traps",
+          description:
+            "The highest-leverage SAT Math and Reading principles, common traps, and 1600-level insights with built-in self-quiz.",
+          author: { "@type": "Organization", name: "AlphaOmega" },
+          publisher: {
+            "@type": "Organization",
+            name: "AlphaOmega",
+            logo: {
+              "@type": "ImageObject",
+              url: "https://40squared.club/pwa-512x512.png",
+            },
+          },
+          mainEntityOfPage: "https://40squared.club/key-principles",
+        }}
       />
       <div className="max-w-2xl mx-auto">
         {/* Header */}
