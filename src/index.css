@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+/* Fonts are loaded via <link rel="preconnect"> + <link rel="stylesheet"> in index.html
+   for faster discovery (avoids CSS @import render-blocking waterfall). */
 
 @tailwind base;
 @tailwind components;
