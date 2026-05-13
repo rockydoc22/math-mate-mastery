@@ -365,10 +365,10 @@ const Home = () => {
 
           {/* Greeting */}
           <div className="mt-14 pt-2 text-center mb-4">
-            <h1 className="text-xl font-bold">
-              {new Date().getHours() < 12 ? 'Good morning' : new Date().getHours() < 18 ? 'Good afternoon' : 'Good evening'}, {playerUsername}!
-            </h1>
-            <p className="text-sm text-muted-foreground mt-1">Ready to crush today?</p>
+            <h1 className="text-xl font-bold">Your Study Dashboard</h1>
+            <p className="text-sm text-muted-foreground mt-1">
+              {new Date().getHours() < 12 ? 'Good morning' : new Date().getHours() < 18 ? 'Good afternoon' : 'Good evening'}, {playerUsername} — ready to crush today?
+            </p>
           </div>
 
           {/* Exam Mode + Focus Mode Toggle */}
