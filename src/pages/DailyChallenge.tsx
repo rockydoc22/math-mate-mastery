@@ -21,6 +21,7 @@ import { applyRotation, markQuestionCorrect as markCorrectRotation } from "@/uti
 import { interleaveQuestions } from "@/utils/questionInterleaver";
 import { useExamType } from "@/hooks/useExamType";
 import { EXAM_CONFIGS } from "@/utils/examConfig";
+import { SEO } from "@/components/SEO";
 
 const DAILY_QUESTIONS = 10;
 const MATH_QUESTIONS = 5;
@@ -248,6 +249,11 @@ const DailyChallenge = () => {
 
   return (
     <ScreenShakeWrapper shake={screenShake} intensity={getComboIntensity(combo.count) === "ultra" ? "high" : getComboIntensity(combo.count) === "high" ? "medium" : "low"}>
+      <SEO
+        title="Daily Challenge — 10 Questions a Day"
+        description="Build your streak with a fresh 10-question SAT challenge every day. Mix of Math and Reading, with bonus XP."
+        path="/daily"
+      />
       <div className="min-h-screen bg-gradient-to-br from-primary/10 via-accent/10 to-secondary/10 p-4 py-8 overflow-x-hidden">
         <div className="max-w-3xl mx-auto space-y-6">
           <div className="flex items-center gap-2 sm:gap-4 flex-wrap">

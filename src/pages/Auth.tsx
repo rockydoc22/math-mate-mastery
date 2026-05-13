@@ -11,6 +11,7 @@ import { toast } from "@/hooks/use-toast";
 import { supabase } from "@/integrations/supabase/client";
 import { lovable } from "@/integrations/lovable";
 import { User, Mail, Lock, ArrowLeft, Eye, EyeOff, Users } from "lucide-react";
+import { SEO } from "@/components/SEO";
 
 type AuthMode = "signIn" | "signUp" | "resetPassword" | "magicLink";
 
@@ -270,6 +271,12 @@ const Auth = () => {
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-background via-primary/5 to-accent/10 p-4">
+      <SEO
+        title="Sign In to AlphaOmega"
+        description="Sign in or create a free AlphaOmega account to track your progress across SAT, ACT, AP and more."
+        path="/auth"
+        noindex
+      />
       <div className="w-full max-w-md space-y-8 animate-in fade-in duration-500">
         <div className="text-center">
           <div className="flex justify-center">
