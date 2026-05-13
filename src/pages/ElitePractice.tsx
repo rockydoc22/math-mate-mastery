@@ -25,6 +25,7 @@ import { EliteTierCard } from "@/components/EliteTierCard";
 import { QuizResults } from "@/components/QuizResults";
 import { RatingChangePopup } from "@/components/RatingChangePopup";
 import { getDifficultyColor } from "@/utils/difficultyRating";
+import { SEO } from "@/components/SEO";
 
 type CombinedQuestion = {
   id: string;
@@ -302,6 +303,11 @@ const ElitePractice = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-primary/5 via-secondary/5 to-accent/5 p-4 py-8">
+      <SEO
+        title="Elite Practice — 1600 Club & Breakthrough Tiers"
+        description="Hardest-difficulty SAT practice for top scorers. 1600 Club, Elite, and Breakthrough tiers with timed pacing alerts."
+        path="/elite-practice"
+      />
       {/* Pacing Alert */}
       <PacingAlert
         startTime={questionStartTime}

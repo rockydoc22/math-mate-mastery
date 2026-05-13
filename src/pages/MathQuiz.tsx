@@ -14,6 +14,7 @@ import { useSoundEffects } from "@/hooks/useSoundEffects";
 import { DesmosCalculator } from "@/components/DesmosCalculator";
 import { useProgressiveHints } from "@/hooks/useProgressiveHints";
 import { ProgressiveHintPanel } from "@/components/ProgressiveHintPanel";
+import { SEO } from "@/components/SEO";
 
 const MathQuiz = () => {
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
@@ -117,6 +118,11 @@ const MathQuiz = () => {
 
   return (
     <ScreenShakeWrapper shake={screenShake} intensity={getComboIntensity(combo.count) === "ultra" ? "high" : getComboIntensity(combo.count) === "high" ? "medium" : "low"}>
+      <SEO
+        title="Free SAT Math Practice Questions"
+        description="Sharpen your SAT Math skills with adaptive practice questions, instant explanations, and a built-in graphing calculator."
+        path="/math"
+      />
       <div className="min-h-screen bg-gradient-to-br from-primary/5 via-secondary/5 to-accent/5 p-4 py-8 pb-28 sm:pb-8">
         <div className="max-w-3xl mx-auto space-y-6">
           <div className="flex flex-wrap items-center gap-3">

@@ -36,6 +36,7 @@ import { ProgressiveHintPanel } from "@/components/ProgressiveHintPanel";
 import { EXAM_CONFIGS } from "@/utils/examConfig";
 import { actScienceQuestions } from "@/data/actScienceQuestions";
 import { interleaveQuestions } from "@/utils/questionInterleaver";
+import { SEO } from "@/components/SEO";
 
 type CombinedQuestion = (Question | EnglishQuestion | VisualQuestion | ImageQuestion) & { type: "math" | "english" | "science"; difficultyRating?: number };
 
@@ -412,6 +413,11 @@ const Quiz = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-primary/5 via-secondary/5 to-accent/5 p-4 py-8 pb-28 sm:pb-8">
+      <SEO
+        title="Adaptive Practice Quiz"
+        description="Mixed Math, Reading & Writing practice that adapts to your level. Free, untimed, with instant explanations."
+        path="/quiz"
+      />
       <div className="max-w-3xl mx-auto space-y-6">
         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
           <div className="flex items-center gap-3 min-w-0">

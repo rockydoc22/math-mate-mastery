@@ -8,6 +8,7 @@ import { Progress } from "@/components/ui/progress";
 import { Link } from "react-router-dom";
 import { useProgressiveHints } from "@/hooks/useProgressiveHints";
 import { ProgressiveHintPanel } from "@/components/ProgressiveHintPanel";
+import { SEO } from "@/components/SEO";
 
 const EnglishQuiz = () => {
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
@@ -69,6 +70,11 @@ const EnglishQuiz = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-primary/5 via-secondary/5 to-accent/5 p-4 py-8">
+      <SEO
+        title="Free SAT Reading & Writing Practice"
+        description="Practice authentic SAT Reading and Writing passages with instant feedback and detailed answer explanations."
+        path="/english"
+      />
       <div className="max-w-3xl mx-auto space-y-6">
         <div className="flex items-center gap-4">
           <Link to="/">

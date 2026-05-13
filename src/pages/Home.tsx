@@ -26,6 +26,7 @@ import { SATBossArena } from "@/components/SATBossArena";
 import { LandingPage } from "@/components/LandingPage";
 import { SATMasteryLogo } from "@/components/SATMasteryLogo";
 import { ExamSelector } from "@/components/ExamSelector";
+import { SEO } from "@/components/SEO";
 import { useExamType } from "@/hooks/useExamType";
 import { EXAM_CONFIGS, ratingToExamScore, ratingToSectionScore } from "@/utils/examConfig";
 import { SubjectDuelCard } from "@/components/SubjectDuelCard";
@@ -293,6 +294,11 @@ const Home = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-background via-primary/5 to-accent/10 flex flex-col pb-16">
+      <SEO
+        title="Your Study Dashboard"
+        description="Track your progress, daily streak, and personalized practice across SAT, ACT, AP and more."
+        path="/"
+      />
       {/* Kid selector modal for parent accounts */}
       <Dialog open={showKidSelector} onOpenChange={setShowKidSelector}>
         <DialogContent className="sm:max-w-md">

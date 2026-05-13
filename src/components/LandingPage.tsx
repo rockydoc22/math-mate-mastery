@@ -14,6 +14,7 @@ import { lovable } from "@/integrations/lovable";
 import { FeedbackButton } from "@/components/FeedbackButton";
 import { InstallAppButton } from "@/components/InstallAppButton";
 import { ShareAppButton } from "@/components/ShareAppButton";
+import { SEO } from "@/components/SEO";
 import { toast } from "@/hooks/use-toast";
 
 const features = [
@@ -68,6 +69,11 @@ export const LandingPage = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <SEO
+        title="AlphaOmega — One App, Every Test | Free Test Prep"
+        description="Free adaptive test prep for SAT, ACT, AP, GED, MAP & more. 15,000+ practice questions, AI tutoring, and multiplayer battles."
+        path="/landing"
+      />
       {/* Update banner */}
       {hasUpdate && (
         <div className="px-4 py-2 text-center">

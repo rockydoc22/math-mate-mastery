@@ -1,4 +1,5 @@
 import { createRoot } from "react-dom/client";
+import { HelmetProvider } from "react-helmet-async";
 import App from "./App.tsx";
 import "./index.css";
 
@@ -55,7 +56,11 @@ declare global {
 }
 
 const root = document.getElementById("root")!;
-createRoot(root).render(<App />);
+createRoot(root).render(
+  <HelmetProvider>
+    <App />
+  </HelmetProvider>
+);
 
 // Tell the bootstrap script we loaded successfully
 requestAnimationFrame(() => {

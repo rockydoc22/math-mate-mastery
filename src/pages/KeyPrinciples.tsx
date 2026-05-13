@@ -12,6 +12,7 @@ import {
 } from "lucide-react";
 import { mathKeyConcepts, englishKeyConcepts, KeyConcept } from "@/data/satKeyConcepts";
 import { Progress } from "@/components/ui/progress";
+import { SEO } from "@/components/SEO";
 
 // LocalStorage key for bookmarks
 const BOOKMARKS_KEY = "sat-concept-bookmarks";
@@ -458,6 +459,11 @@ const KeyPrinciples = () => {
   // Normal Browse Mode
   return (
     <div className="min-h-screen bg-gradient-to-br from-background via-primary/5 to-accent/10 p-4">
+      <SEO
+        title="Key SAT Principles — Concepts, Tips & Traps"
+        description="Browse and quiz yourself on the highest-leverage SAT Math and Reading principles, traps, and 1600-level insights."
+        path="/key-principles"
+      />
       <div className="max-w-2xl mx-auto">
         {/* Header */}
         <div className="flex items-center gap-4 mb-6">
