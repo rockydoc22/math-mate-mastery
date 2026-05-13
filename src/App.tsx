@@ -30,7 +30,9 @@ const App = () => (
         <BrowserRouter>
           <ErrorBoundary>
             <Suspense fallback={<PageLoader />}>
-              <AppRoutes />
+              <main id="main-content">
+                <AppRoutes />
+              </main>
             </Suspense>
           </ErrorBoundary>
         </BrowserRouter>
