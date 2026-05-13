@@ -115,8 +115,10 @@ const Settings = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-background via-primary/5 to-accent/10 p-4">
       <div className="max-w-md mx-auto space-y-6">
+        <h1 className="sr-only">Account Settings</h1>
         <button
           type="button"
+            aria-label="Back to home"
           className="flex items-center gap-1 text-muted-foreground hover:text-foreground text-sm"
           onClick={() => navigate("/")}
         >

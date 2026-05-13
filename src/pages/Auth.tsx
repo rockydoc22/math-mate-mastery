@@ -280,6 +280,7 @@ const Auth = () => {
         </div>
 
         <Card className="p-6 border-2 border-border bg-card/80 backdrop-blur">
+          <h1 className="sr-only">Sign in to AlphaOmega</h1>
           {(mode === "resetPassword" || mode === "magicLink") && (
             <button
               type="button"
@@ -405,6 +406,7 @@ const Auth = () => {
                   />
                   <button
                     type="button"
+                    aria-label={showPassword ? "Hide password" : "Show password"}
                     className="absolute right-3 top-3 text-muted-foreground hover:text-foreground"
                     onClick={() => setShowPassword(!showPassword)}
                     tabIndex={-1}
@@ -437,6 +439,7 @@ const Auth = () => {
                   />
                   <button
                     type="button"
+                    aria-label={showConfirmPassword ? "Hide confirm password" : "Show confirm password"}
                     className="absolute right-3 top-3 text-muted-foreground hover:text-foreground"
                     onClick={() => setShowConfirmPassword(!showConfirmPassword)}
                     tabIndex={-1}

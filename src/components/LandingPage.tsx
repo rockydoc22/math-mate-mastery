@@ -90,8 +90,8 @@ export const LandingPage = () => {
 
           {/* Title & tagline */}
           <div>
-            <h1 className="text-3xl font-bold tracking-tight mb-1">AlphaOmega</h1>
-            <p className="text-sm text-muted-foreground font-medium">One app. Every test.</p>
+            <h1 className="text-3xl font-bold tracking-tight mb-1">AlphaOmega — One app. Every test.</h1>
+            <p className="text-sm text-muted-foreground font-medium">Free adaptive prep for SAT, ACT, AP & more.</p>
           </div>
 
           {/* Subheadline */}
