@@ -73,6 +73,18 @@ export const LandingPage = () => {
         title="AlphaOmega — One App, Every Test | Free Test Prep"
         description="Free adaptive test prep for SAT, ACT, AP, GED, MAP & more. 15,000+ practice questions, AI tutoring, and multiplayer battles."
         path="/landing"
+        jsonLd={{
+          "@context": "https://schema.org",
+          "@type": "WebSite",
+          name: "AlphaOmega",
+          url: "https://40squared.club/",
+          potentialAction: {
+            "@type": "SearchAction",
+            target:
+              "https://40squared.club/key-principles?search={search_term_string}",
+            "query-input": "required name=search_term_string",
+          },
+        }}
       />
       {/* Update banner */}
       {hasUpdate && (

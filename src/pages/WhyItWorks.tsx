@@ -23,6 +23,24 @@ const WhyItWorks = () => {
         title="Why AlphaOmega Works — The Science of Test Prep"
         description="See the research behind AlphaOmega: spaced repetition, the forgetting curve, and compound practice for a perfect score."
         path="/why-it-works"
+        type="article"
+        jsonLd={{
+          "@context": "https://schema.org",
+          "@type": "Article",
+          headline: "Why AlphaOmega Works — The Science of Test Prep",
+          description:
+            "The research behind AlphaOmega: spaced repetition, the forgetting curve, and compound practice for a perfect score.",
+          author: { "@type": "Organization", name: "AlphaOmega" },
+          publisher: {
+            "@type": "Organization",
+            name: "AlphaOmega",
+            logo: {
+              "@type": "ImageObject",
+              url: "https://40squared.club/pwa-512x512.png",
+            },
+          },
+          mainEntityOfPage: "https://40squared.club/why-it-works",
+        }}
       />
       <div className="max-w-4xl mx-auto p-4 py-8">
         {/* Header */}
