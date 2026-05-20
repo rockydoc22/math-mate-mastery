@@ -11,6 +11,7 @@ import { supabase } from "@/integrations/supabase/client";
 import { toast } from "@/hooks/use-toast";
 import { BottomNav } from "@/components/BottomNav";
 import { FlagQuestionModal } from "@/components/FlagQuestionModal";
+import { shuffleAllQuestionOptions } from "@/utils/optionShuffler";
 
 const QUIZ_SIZE = 10;
 
@@ -54,7 +55,7 @@ const ProExamQuiz = () => {
   const startQuiz = useCallback((section?: string) => {
     let pool = section ? getQuestionsBySection(allQuestions, section) : allQuestions;
     // Shuffle and pick
-    const shuffled = [...pool].sort(() => Math.random() - 0.5).slice(0, QUIZ_SIZE);
+    const shuffled = shuffleAllQuestionOptions([...pool].sort(() => Math.random() - 0.5).slice(0, QUIZ_SIZE));
     if (shuffled.length === 0) {
       toast({ title: "No questions available", description: "This section has no questions yet." });
       return;
