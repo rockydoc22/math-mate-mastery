@@ -185,7 +185,7 @@ function assembleQuestions(subject: ExamSection["subject"], count: number, _sess
   }
 
   const shuffled = [...pool].sort(() => Math.random() - 0.5);
-  return shuffled.slice(0, Math.min(count, shuffled.length));
+  return shuffleAllQuestionOptions(shuffled.slice(0, Math.min(count, shuffled.length))) as SimQuestion[];
 }
 
 function getAdaptiveBand(correct: number, total: number): { min: number; max: number; label: string } {

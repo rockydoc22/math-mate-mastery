@@ -8,6 +8,7 @@ import { FRENCH_CATEGORIES, loadFrenchQuestions, frenchQuestionsByCategory, type
 import { Question } from "@/data/questions";
 import { AITutorExplanation } from "@/components/AITutorExplanation";
 import { FlagQuestionModal } from "@/components/FlagQuestionModal";
+import { shuffleAllQuestionOptions } from "@/utils/optionShuffler";
 
 type ViewState =
   | { mode: "categories" }
@@ -30,7 +31,7 @@ const FrenchCompetition = () => {
     if (qs.length === 0) return;
     // Shuffle
     const shuffled = [...qs].sort(() => Math.random() - 0.5);
-    setView({ mode: "quiz", category: cat, questions: shuffled, currentIndex: 0, selectedAnswer: null, showResult: false, score: 0, answered: 0 });
+    setView({ mode: "quiz", category: cat, questions: shuffleAllQuestionOptions(shuffled) as Question[], currentIndex: 0, selectedAnswer: null, showResult: false, score: 0, answered: 0 });
     setShowAITutor(false);
   };
 

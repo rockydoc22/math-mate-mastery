@@ -175,7 +175,7 @@ const APStudy = () => {
   const startQuiz = (unit: APChemUnit) => {
     const questions = questionsByUnit[unit.id] || [];
     if (questions.length === 0) return;
-    setView({ mode: 'quiz', unit, questions, currentIndex: 0, selectedAnswer: null, showResult: false, score: 0, answered: 0 });
+    setView({ mode: 'quiz', unit, questions: shuffleAllQuestionOptions(questions), currentIndex: 0, selectedAnswer: null, showResult: false, score: 0, answered: 0 });
     setShowAITutor(false);
   };
 

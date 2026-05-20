@@ -6,6 +6,7 @@ import { Progress } from "@/components/ui/progress";
 import { ArrowLeft, Rocket, Zap, Star, Trophy, ChevronRight, Shield, Swords, BookOpen, Brain, CheckCircle2, XCircle, RotateCcw, Lightbulb, ChevronDown, ChevronUp } from "lucide-react";
 import { BottomNav } from "@/components/BottomNav";
 import { useAuth } from "@/hooks/useAuth";
+import { shuffleAllQuestionOptions } from "@/utils/optionShuffler";
 import { supabase } from "@/integrations/supabase/client";
 import { questions as mathQuestions, Question } from "@/data/questions";
 import { englishQuestions } from "@/data/englishQuestions";
@@ -163,7 +164,7 @@ const StoryMissions = () => {
     const count = extractQuestionCount(mission.objective);
     const qs = getQuestionsForSubject(mission.subject, mission.difficulty, count);
     setSelectedMission(mission);
-    setMissionQuestions(qs);
+    setMissionQuestions(shuffleAllQuestionOptions(qs as any) as typeof qs);
     setCurrentIndex(0);
     setScore(0);
     setSelectedAnswer(null);
