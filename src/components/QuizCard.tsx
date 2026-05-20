@@ -11,6 +11,7 @@ import { MathText } from "./MathText";
 import { ClickableText } from "./ClickableText";
 import { findKeyConcept, KeyConcept } from "@/data/satKeyConcepts";
 import { SolutionPathAnalysis } from "./SolutionPathAnalysis";
+import { shuffleQuestionOptions } from "@/utils/optionShuffler";
 
 interface QuizCardProps {
   question: Question | VisualQuestion | ImageQuestion;
@@ -21,7 +22,25 @@ interface QuizCardProps {
   onFlagged?: () => void;
 }
 
-export const QuizCard = ({ question, selectedAnswer, onSelectAnswer, showResult, questionType = 'math', onFlagged }: QuizCardProps) => {
+export const QuizCard = ({ question: rawQuestion, selectedAnswer, onSelectAnswer, showResult, questionType = 'math', onFlagged }: QuizCardProps) => {
+  // Deterministically shuffle MCQ options for display ONLY so the correct
+  // letter is balanced across the bank. Parents continue to receive the
+  // ORIGINAL letter via onSelectAnswer and compare against the ORIGINAL
+  // correctAnswer — they don't need to change.
+  const { question, origToShuffled, shuffledToOrig } = useMemo(() => {
+    const shuffled = shuffleQuestionOptions(rawQuestion as any) as typeof rawQuestion;
+    const o2s: Record<string, string> = {};
+    const s2o: Record<string, string> = {};
+    if (Array.isArray((rawQuestion as any).options) && Array.isArray(shuffled.options)) {
+      (rawQuestion as any).options.forEach((origOpt: any) => {
+        const match = shuffled.options.find(s => s.text === origOpt.text);
+        if (match) { o2s[origOpt.letter] = match.letter; s2o[match.letter] = origOpt.letter; }
+      });
+    }
+    return { question: shuffled, origToShuffled: o2s, shuffledToOrig: s2o };
+  }, [rawQuestion]);
+  const displaySelected = selectedAnswer ? (origToShuffled[selectedAnswer] ?? selectedAnswer) : null;
+  const handleSelect = (shuffledLetter: string) => onSelectAnswer(shuffledToOrig[shuffledLetter] ?? shuffledLetter);
   const [isFlagModalOpen, setIsFlagModalOpen] = useState(false);
   const [showKeyConcept, setShowKeyConcept] = useState(false);
   const [showPathAnalysis, setShowPathAnalysis] = useState(false);
@@ -96,7 +115,7 @@ export const QuizCard = ({ question, selectedAnswer, onSelectAnswer, showResult,
 
           <div className="space-y-2 sm:space-y-3">
             {question.options.map((option) => {
-              const isSelected = selectedAnswer === option.letter;
+              const isSelected = displaySelected === option.letter;
               const isCorrect = option.letter === question.correctAnswer;
               const showCorrect = showResult && isCorrect;
               const showWrong = showResult && isSelected && !isCorrect;
@@ -104,7 +123,7 @@ export const QuizCard = ({ question, selectedAnswer, onSelectAnswer, showResult,
               return (
                 <button
                   key={option.letter}
-                  onClick={() => !showResult && onSelectAnswer(option.letter)}
+                  onClick={() => !showResult && handleSelect(option.letter)}
                   disabled={showResult}
                   className={`
                     w-full p-3 sm:p-4 rounded-lg border-2 text-left transition-all

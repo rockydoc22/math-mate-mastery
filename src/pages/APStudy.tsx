@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { ArrowLeft, BookOpen, Brain, ChevronRight, CheckCircle2, XCircle, Sparkles, Flag } from "lucide-react";
 import { FlagQuestionModal } from "@/components/FlagQuestionModal";
+import { shuffleAllQuestionOptions } from "@/utils/optionShuffler";
 import { getAPSubject } from "@/utils/apConfig";
 import { AP_CHEM_UNITS, apChemQuestionsByUnit, loadAPChemQuestions, type APChemUnit } from "@/data/apChemistryQuestions";
 import { AP_USH_UNITS, apUSHQuestionsByUnit, loadAPUSHQuestions } from "@/data/apUSHistoryQuestions";
@@ -175,7 +176,7 @@ const APStudy = () => {
   const startQuiz = (unit: APChemUnit) => {
     const questions = questionsByUnit[unit.id] || [];
     if (questions.length === 0) return;
-    setView({ mode: 'quiz', unit, questions, currentIndex: 0, selectedAnswer: null, showResult: false, score: 0, answered: 0 });
+    setView({ mode: 'quiz', unit, questions: shuffleAllQuestionOptions(questions), currentIndex: 0, selectedAnswer: null, showResult: false, score: 0, answered: 0 });
     setShowAITutor(false);
   };
 

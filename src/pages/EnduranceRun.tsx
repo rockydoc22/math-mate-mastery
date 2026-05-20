@@ -14,6 +14,7 @@ import { ClickableText } from "@/components/ClickableText";
 import { motion, AnimatePresence } from "framer-motion";
 import { toast } from "sonner";
 import { FlagQuestionModal } from "@/components/FlagQuestionModal";
+import { shuffleAllQuestionOptions } from "@/utils/optionShuffler";
 
 type RunQuestion = (Question | EnglishQuestion) & { qType: "math" | "english" };
 
@@ -67,9 +68,9 @@ export default function EnduranceRun() {
   const allQuestions = useMemo(() => {
     const mathQ: RunQuestion[] = questions.map(q => ({ ...q, qType: "math" as const }));
     const engQ: RunQuestion[] = englishQuestions.map(q => ({ ...q, qType: "english" as const }));
-    if (subject === "math") return shuffle(mathQ);
-    if (subject === "english") return shuffle(engQ);
-    return shuffle([...mathQ, ...engQ]);
+    if (subject === "math") return shuffleAllQuestionOptions(shuffle(mathQ)) as RunQuestion[];
+    if (subject === "english") return shuffleAllQuestionOptions(shuffle(engQ)) as RunQuestion[];
+    return shuffleAllQuestionOptions(shuffle([...mathQ, ...engQ])) as RunQuestion[];
   }, [subject]);
 
   // Difficulty ramp: as you answer more questions, minimum difficulty rises
