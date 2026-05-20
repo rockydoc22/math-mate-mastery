@@ -115,7 +115,7 @@ export const QuizCard = ({ question: rawQuestion, selectedAnswer, onSelectAnswer
 
           <div className="space-y-2 sm:space-y-3">
             {question.options.map((option) => {
-              const isSelected = selectedAnswer === option.letter;
+              const isSelected = displaySelected === option.letter;
               const isCorrect = option.letter === question.correctAnswer;
               const showCorrect = showResult && isCorrect;
               const showWrong = showResult && isSelected && !isCorrect;
@@ -123,7 +123,7 @@ export const QuizCard = ({ question: rawQuestion, selectedAnswer, onSelectAnswer
               return (
                 <button
                   key={option.letter}
-                  onClick={() => !showResult && onSelectAnswer(option.letter)}
+                  onClick={() => !showResult && handleSelect(option.letter)}
                   disabled={showResult}
                   className={`
                     w-full p-3 sm:p-4 rounded-lg border-2 text-left transition-all
