@@ -23,10 +23,24 @@ interface QuizCardProps {
 }
 
 export const QuizCard = ({ question: rawQuestion, selectedAnswer, onSelectAnswer, showResult, questionType = 'math', onFlagged }: QuizCardProps) => {
-  // Deterministically shuffle MCQ options so the correct letter is balanced
-  // across the whole bank. Keyed by question.id so the same student sees the
-  // same order on re-render and across sessions.
-  const question = useMemo(() => shuffleQuestionOptions(rawQuestion as any) as typeof rawQuestion, [rawQuestion]);
+  // Deterministically shuffle MCQ options for display ONLY so the correct
+  // letter is balanced across the bank. Parents continue to receive the
+  // ORIGINAL letter via onSelectAnswer and compare against the ORIGINAL
+  // correctAnswer — they don't need to change.
+  const { question, origToShuffled, shuffledToOrig } = useMemo(() => {
+    const shuffled = shuffleQuestionOptions(rawQuestion as any) as typeof rawQuestion;
+    const o2s: Record<string, string> = {};
+    const s2o: Record<string, string> = {};
+    if (Array.isArray((rawQuestion as any).options) && Array.isArray(shuffled.options)) {
+      (rawQuestion as any).options.forEach((origOpt: any) => {
+        const match = shuffled.options.find(s => s.text === origOpt.text);
+        if (match) { o2s[origOpt.letter] = match.letter; s2o[match.letter] = origOpt.letter; }
+      });
+    }
+    return { question: shuffled, origToShuffled: o2s, shuffledToOrig: s2o };
+  }, [rawQuestion]);
+  const displaySelected = selectedAnswer ? (origToShuffled[selectedAnswer] ?? selectedAnswer) : null;
+  const handleSelect = (shuffledLetter: string) => onSelectAnswer(shuffledToOrig[shuffledLetter] ?? shuffledLetter);
   const [isFlagModalOpen, setIsFlagModalOpen] = useState(false);
   const [showKeyConcept, setShowKeyConcept] = useState(false);
   const [showPathAnalysis, setShowPathAnalysis] = useState(false);
