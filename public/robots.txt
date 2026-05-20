@@ -1,4 +1,5 @@
 # robots.txt for 40² SAT Prep
+# Allow all major crawlers
 User-agent: Googlebot
 Allow: /
 
@@ -13,6 +14,20 @@ Allow: /
 
 User-agent: *
 Allow: /
+
+# Internal / non-public pages — do not crawl
+Disallow: /auth
+Disallow: /auth-callback
+Disallow: /admin
+Disallow: /school-admin
+Disallow: /teacher-dashboard
+Disallow: /parent-dashboard
+Disallow: /join-class
+Disallow: /demo-mode
+Disallow: /duplicate-detector
+Disallow: /quick-fix.html
+Disallow: /install-app
+Disallow: /not-found
 
 # Sitemap location
 Sitemap: https://40squared.club/sitemap.xml
