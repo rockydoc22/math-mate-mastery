@@ -6,6 +6,7 @@ import { useNavigate } from "react-router-dom";
 import { K12_EXAMS } from "@/utils/k12ExamConfig";
 import { loadK12ExamQuestions } from "@/data/k12Questions";
 import { ConsentGate } from "@/components/ConsentGate";
+import { SEO } from "@/components/SEO";
 
 const K12_DISCLAIMER = `Important Disclaimer
 
@@ -57,6 +58,11 @@ const K12Exams = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-background via-primary/5 to-accent/10 p-4">
+      <SEO
+        title="Free K-12 State & Standardized Test Prep"
+        description="Free practice for MAP Growth, GED, HiSET, TASC, PSSA, Regents, Iowa Assessments, STAR, and more — adaptive and aligned to each exam."
+        path="/k12-exams"
+      />
       <div className="max-w-lg mx-auto space-y-5 animate-in fade-in duration-300">
         <div className="flex items-center gap-2 pt-2">
           <Button variant="ghost" size="sm" onClick={() => navigate("/")} className="gap-1">

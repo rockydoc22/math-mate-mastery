@@ -17,6 +17,7 @@ import {
 } from "@/data/alternativeAssessmentQuestions";
 import { questions } from "@/data/questions";
 import { motion, AnimatePresence } from "framer-motion";
+import { SEO } from "@/components/SEO";
 
 type Mode = "menu" | "ordering" | "spot_the_error" | "fill_the_gap" | "elimination" | "confidence" | "mixed";
 
@@ -189,6 +190,11 @@ const AlternativeAssessments = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-primary/5 via-secondary/5 to-accent/5 p-4 py-8 pb-28 sm:pb-8">
+      <SEO
+        title="Alternative Assessments — Beyond Multiple Choice"
+        description="Practice with ordering, spot-the-error, fill-the-gap, elimination, and confidence-rating modes. Build deeper skills than standard MCQs."
+        path="/alternative-assessments"
+      />
       <div className="max-w-3xl mx-auto space-y-6">
         {/* Header */}
         <div className="flex items-center justify-between">

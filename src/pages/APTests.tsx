@@ -3,6 +3,7 @@ import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft, FlaskConical, Lock } from "lucide-react";
 import { AP_SUBJECTS, AP_CATEGORIES, AP_CATEGORY_ORDER } from "@/utils/apConfig";
+import { SEO } from "@/components/SEO";
 
 const APTests = () => {
   const navigate = useNavigate();
@@ -14,6 +15,18 @@ const APTests = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-background via-primary/5 to-accent/10 p-4">
+      <SEO
+        title="Free AP Exam Practice — All Subjects"
+        description="Free AP practice questions across every AP subject. Adaptive difficulty, instant explanations, and unit-level progress tracking. No signup required."
+        path="/ap-tests"
+        jsonLd={{
+          "@context": "https://schema.org",
+          "@type": "Course",
+          name: "AP Exam Practice",
+          description: "Comprehensive free AP exam prep across all College Board AP subjects.",
+          provider: { "@type": "Organization", name: "AlphaOmega" },
+        }}
+      />
       <div className="max-w-2xl mx-auto space-y-6">
         {/* Header */}
         <div className="flex items-center gap-3">

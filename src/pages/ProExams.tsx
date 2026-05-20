@@ -6,6 +6,7 @@ import { ArrowLeft, ChevronRight } from "lucide-react";
 import { PRO_EXAMS, PRO_EXAM_CATEGORIES, type ProExamConfig } from "@/utils/proExamConfig";
 import { BottomNav } from "@/components/BottomNav";
 import { ConsentGate } from "@/components/ConsentGate";
+import { SEO } from "@/components/SEO";
 
 const IP_DISCLAIMER = `Important Disclaimer
 
@@ -42,6 +43,11 @@ const ProExams = () => {
 
   return (
     <div className="min-h-screen bg-background pb-24">
+      <SEO
+        title="Free Pro & Grad Exam Practice — LSAT, GMAT, GRE & More"
+        description="Original, free-response practice for LSAT, GMAT, GRE, MCAT, bar exam prep, and more. 100% free, AI-generated, with instant feedback."
+        path="/pro-exams"
+      />
       {/* Header */}
       <div className="sticky top-0 z-10 bg-background/95 backdrop-blur border-b border-border px-4 py-3">
         <div className="max-w-2xl mx-auto flex items-center gap-3">
