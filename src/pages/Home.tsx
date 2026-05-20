@@ -407,6 +407,54 @@ const Home = () => {
           </div>
         </header>
 
+        {/* ══════════ Concierge Coach Promo (advertise the differentiator) ══════════ */}
+        {!focusMode && (
+          <Card
+            className="p-4 mb-4 border-2 border-violet-300 dark:border-violet-700 bg-gradient-to-br from-violet-50 via-rose-50 to-amber-50 dark:from-violet-950/40 dark:via-rose-950/30 dark:to-amber-950/20 cursor-pointer hover:shadow-lg transition-all"
+            onClick={() => navigate('/booster')}
+            role="button"
+            aria-label="Open your AI Concierge Coach"
+          >
+            <div className="flex items-start gap-3">
+              <div className="text-3xl">🎯</div>
+              <div className="flex-1 min-w-0">
+                <div className="flex items-center gap-2 mb-1">
+                  <span className="text-xs font-bold uppercase tracking-wider text-violet-700 dark:text-violet-300">
+                    New · Only here
+                  </span>
+                  <span className="text-[10px] px-1.5 py-0.5 rounded-full bg-rose-500 text-white font-bold">
+                    AI
+                  </span>
+                </div>
+                <h3 className="font-bold text-base leading-tight mb-1">
+                  Your Personal Concierge Coach
+                </h3>
+                <p className="text-xs text-muted-foreground leading-snug mb-2">
+                  After ~25 questions we diagnose your exact weak spots, build a one-page study guide just for you, and run a Booster Test that drills only what you keep missing. No other prep app does this.
+                </p>
+                <div className="flex flex-wrap gap-2">
+                  <Button
+                    size="sm"
+                    variant="default"
+                    className="h-7 text-xs"
+                    onClick={(e) => { e.stopPropagation(); navigate('/booster'); }}
+                  >
+                    Run Booster
+                  </Button>
+                  <Button
+                    size="sm"
+                    variant="outline"
+                    className="h-7 text-xs"
+                    onClick={(e) => { e.stopPropagation(); navigate('/study-guide'); }}
+                  >
+                    My Study Guide
+                  </Button>
+                </div>
+              </div>
+            </div>
+          </Card>
+        )}
+
         {/* ══════════ #1 HERO: What to do next (NBA-driven) ══════════ */}
         {!focusMode && <NextBestActionWidget variant="hero" />}
 

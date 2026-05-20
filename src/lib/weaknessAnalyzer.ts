@@ -50,8 +50,10 @@ export async function loadWeakAreas(userId: string, limit = 6): Promise<{
     buckets.set(key, b);
   }
 
+  // Reliable per-skill signal needs ~8 attempts (Cronbach α ≥ 0.7 for short
+  // skill quizzes). Below that, accuracy swings too much from luck.
   const all = Array.from(buckets.values())
-    .filter((b) => b.attempts >= 3)
+    .filter((b) => b.attempts >= 8)
     .map((b) => {
       b.accuracy = b.correct / b.attempts;
       b.avgTimeMs = Math.round(b.avgTimeMs / b.attempts);

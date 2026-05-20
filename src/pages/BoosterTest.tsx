@@ -17,7 +17,11 @@ import { toast } from "sonner";
 
 type Phase = "loading" | "diagnosis" | "quiz" | "summary";
 
-const MIN_ATTEMPTS_FOR_BOOSTER = 8;
+// Minimum total attempts before the diagnostic can confidently identify weak
+// areas. Per-skill reliability needs ~8 attempts in a single skill; across
+// the bank, ~25 mixed attempts gives us enough coverage to find at least one
+// genuinely weak skill rather than a noisy outlier.
+const MIN_ATTEMPTS_FOR_BOOSTER = 25;
 
 const BoosterTest = () => {
   const { user } = useAuth();
