@@ -133,7 +133,7 @@ const BoosterTest = () => {
 
   return (
     <div className="min-h-screen bg-background">
-      <SEO title="Booster Test — Personalized Weakness Quiz" description="Targeted retest built only from your weakest skills, with elaborate explanations on every miss." canonical="/booster" />
+      <SEO title="Booster Test — Personalized Weakness Quiz" description="Targeted retest built only from your weakest skills, with elaborate explanations on every miss." path="/booster" />
       <div className="max-w-3xl mx-auto p-4 sm:p-6">
         <Button variant="ghost" size="sm" onClick={() => navigate(-1)} className="mb-4">
           <ArrowLeft className="w-4 h-4 mr-1" /> Back
