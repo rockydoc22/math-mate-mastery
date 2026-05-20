@@ -6,6 +6,7 @@ import { ArrowLeft, ChevronRight } from "lucide-react";
 import { PRO_EXAMS, PRO_EXAM_CATEGORIES, type ProExamConfig } from "@/utils/proExamConfig";
 import { BottomNav } from "@/components/BottomNav";
 import { ConsentGate } from "@/components/ConsentGate";
+import { SEO } from "@/components/SEO";
 
 const IP_DISCLAIMER = `Important Disclaimer
 
