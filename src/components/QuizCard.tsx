@@ -11,6 +11,7 @@ import { MathText } from "./MathText";
 import { ClickableText } from "./ClickableText";
 import { findKeyConcept, KeyConcept } from "@/data/satKeyConcepts";
 import { SolutionPathAnalysis } from "./SolutionPathAnalysis";
+import { shuffleQuestionOptions } from "@/utils/optionShuffler";
 
 interface QuizCardProps {
   question: Question | VisualQuestion | ImageQuestion;
@@ -21,7 +22,11 @@ interface QuizCardProps {
   onFlagged?: () => void;
 }
 
-export const QuizCard = ({ question, selectedAnswer, onSelectAnswer, showResult, questionType = 'math', onFlagged }: QuizCardProps) => {
+export const QuizCard = ({ question: rawQuestion, selectedAnswer, onSelectAnswer, showResult, questionType = 'math', onFlagged }: QuizCardProps) => {
+  // Deterministically shuffle MCQ options so the correct letter is balanced
+  // across the whole bank. Keyed by question.id so the same student sees the
+  // same order on re-render and across sessions.
+  const question = useMemo(() => shuffleQuestionOptions(rawQuestion as any) as typeof rawQuestion, [rawQuestion]);
   const [isFlagModalOpen, setIsFlagModalOpen] = useState(false);
   const [showKeyConcept, setShowKeyConcept] = useState(false);
   const [showPathAnalysis, setShowPathAnalysis] = useState(false);
