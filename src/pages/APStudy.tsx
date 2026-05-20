@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { ArrowLeft, BookOpen, Brain, ChevronRight, CheckCircle2, XCircle, Sparkles, Flag } from "lucide-react";
 import { FlagQuestionModal } from "@/components/FlagQuestionModal";
+import { shuffleAllQuestionOptions } from "@/utils/optionShuffler";
 import { getAPSubject } from "@/utils/apConfig";
 import { AP_CHEM_UNITS, apChemQuestionsByUnit, loadAPChemQuestions, type APChemUnit } from "@/data/apChemistryQuestions";
 import { AP_USH_UNITS, apUSHQuestionsByUnit, loadAPUSHQuestions } from "@/data/apUSHistoryQuestions";

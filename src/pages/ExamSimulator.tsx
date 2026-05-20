@@ -7,6 +7,7 @@ import { Badge } from "@/components/ui/badge";
 import { ArrowLeft, Clock, Play, Pause, SkipForward, CheckCircle2, BarChart3, Rocket, Shield, Heart, MessageCircle, Zap, Target, TrendingUp, TrendingDown, Timer, AlertTriangle, Flag } from "lucide-react";
 import { BottomNav } from "@/components/BottomNav";
 import { FlagQuestionModal } from "@/components/FlagQuestionModal";
+import { shuffleAllQuestionOptions } from "@/utils/optionShuffler";
 import { motion, AnimatePresence } from "framer-motion";
 import { questions } from "@/data/questions";
 import { englishQuestions } from "@/data/englishQuestions";
