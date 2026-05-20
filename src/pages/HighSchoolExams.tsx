@@ -6,6 +6,7 @@ import { EXAM_CONFIGS, type ExamType } from "@/utils/examConfig";
 import { useExamType } from "@/hooks/useExamType";
 import { useAuth } from "@/hooks/useAuth";
 import { toast } from "sonner";
+import { SEO } from "@/components/SEO";
 
 const HighSchoolExams = () => {
   const navigate = useNavigate();
@@ -23,6 +24,18 @@ const HighSchoolExams = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-background via-primary/5 to-accent/10 p-4">
+      <SEO
+        title="Free SAT, ACT & PSAT Practice"
+        description="Authentic SAT practice questions plus full ACT and PSAT prep — 100% free. Adaptive quizzes, score prediction, and instant explanations."
+        path="/high-school-exams"
+        jsonLd={{
+          "@context": "https://schema.org",
+          "@type": "Course",
+          name: "SAT, ACT & PSAT Prep",
+          description: "Free adaptive prep for the SAT, ACT, and PSAT.",
+          provider: { "@type": "Organization", name: "AlphaOmega" },
+        }}
+      />
       <div className="max-w-lg mx-auto space-y-5 animate-in fade-in duration-300">
         <div className="flex items-center gap-2 pt-2">
           <Button variant="ghost" size="sm" onClick={() => navigate("/")} className="gap-1">
