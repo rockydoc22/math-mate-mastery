@@ -74,6 +74,93 @@ export type Database = {
         }
         Relationships: []
       }
+      adaptive_teaching_sections: {
+        Row: {
+          exam_family: string
+          example_problems: Json | null
+          generated_at: string
+          id: string
+          markdown_body: string
+          model: string
+          section: string
+          skill: string
+          user_id: string
+        }
+        Insert: {
+          exam_family: string
+          example_problems?: Json | null
+          generated_at?: string
+          id?: string
+          markdown_body: string
+          model?: string
+          section: string
+          skill: string
+          user_id: string
+        }
+        Update: {
+          exam_family?: string
+          example_problems?: Json | null
+          generated_at?: string
+          id?: string
+          markdown_body?: string
+          model?: string
+          section?: string
+          skill?: string
+          user_id?: string
+        }
+        Relationships: []
+      }
+      adaptive_weakness_clusters: {
+        Row: {
+          accuracy: number
+          attempts_count: number
+          avg_time_ratio: number
+          domain: string
+          exam_family: string
+          id: string
+          last_attempt_at: string | null
+          mastery_level: number
+          priority_score: number
+          section: string
+          skill: string
+          trap_susceptibility: number
+          updated_at: string
+          user_id: string
+        }
+        Insert: {
+          accuracy?: number
+          attempts_count?: number
+          avg_time_ratio?: number
+          domain: string
+          exam_family: string
+          id?: string
+          last_attempt_at?: string | null
+          mastery_level?: number
+          priority_score?: number
+          section: string
+          skill: string
+          trap_susceptibility?: number
+          updated_at?: string
+          user_id: string
+        }
+        Update: {
+          accuracy?: number
+          attempts_count?: number
+          avg_time_ratio?: number
+          domain?: string
+          exam_family?: string
+          id?: string
+          last_attempt_at?: string | null
+          mastery_level?: number
+          priority_score?: number
+          section?: string
+          skill?: string
+          trap_susceptibility?: number
+          updated_at?: string
+          user_id?: string
+        }
+        Relationships: []
+      }
       ap_subject_progress: {
         Row: {
           created_at: string
@@ -107,6 +194,69 @@ export type Database = {
           unit_id?: string
           updated_at?: string
           user_id?: string
+        }
+        Relationships: []
+      }
+      assessment_questions: {
+        Row: {
+          cognitive_tags: string[] | null
+          correct_key: string
+          created_at: string
+          difficulty: number
+          domain: string
+          exam_family: string
+          id: string
+          options: Json
+          section: string
+          skill: string
+          solution_markdown: string | null
+          stem: string
+          subskill: string | null
+          test_code: string | null
+          time_target_seconds: number | null
+          trap_type: string | null
+          updated_at: string
+          wrong_answer_explanations: Json | null
+        }
+        Insert: {
+          cognitive_tags?: string[] | null
+          correct_key: string
+          created_at?: string
+          difficulty: number
+          domain: string
+          exam_family: string
+          id?: string
+          options: Json
+          section: string
+          skill: string
+          solution_markdown?: string | null
+          stem: string
+          subskill?: string | null
+          test_code?: string | null
+          time_target_seconds?: number | null
+          trap_type?: string | null
+          updated_at?: string
+          wrong_answer_explanations?: Json | null
+        }
+        Update: {
+          cognitive_tags?: string[] | null
+          correct_key?: string
+          created_at?: string
+          difficulty?: number
+          domain?: string
+          exam_family?: string
+          id?: string
+          options?: Json
+          section?: string
+          skill?: string
+          solution_markdown?: string | null
+          stem?: string
+          subskill?: string | null
+          test_code?: string | null
+          time_target_seconds?: number | null
+          trap_type?: string | null
+          updated_at?: string
+          wrong_answer_explanations?: Json | null
         }
         Relationships: []
       }
@@ -1222,6 +1372,53 @@ export type Database = {
         }
         Relationships: []
       }
+      student_attempts: {
+        Row: {
+          chosen_key: string | null
+          confidence: number | null
+          created_at: string
+          flagged: boolean
+          id: string
+          is_correct: boolean
+          question_id: string
+          session_id: string | null
+          time_seconds: number
+          user_id: string
+        }
+        Insert: {
+          chosen_key?: string | null
+          confidence?: number | null
+          created_at?: string
+          flagged?: boolean
+          id?: string
+          is_correct: boolean
+          question_id: string
+          session_id?: string | null
+          time_seconds?: number
+          user_id: string
+        }
+        Update: {
+          chosen_key?: string | null
+          confidence?: number | null
+          created_at?: string
+          flagged?: boolean
+          id?: string
+          is_correct?: boolean
+          question_id?: string
+          session_id?: string | null
+          time_seconds?: number
+          user_id?: string
+        }
+        Relationships: [
+          {
+            foreignKeyName: "student_attempts_question_id_fkey"
+            columns: ["question_id"]
+            isOneToOne: false
+            referencedRelation: "assessment_questions"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
       study_plans: {
         Row: {
           baseline_score: number | null
@@ -1626,6 +1823,10 @@ export type Database = {
           msg_id: number
           read_ct: number
         }[]
+      }
+      recompute_weakness_clusters: {
+        Args: { _exam_family?: string; _user_id: string }
+        Returns: number
       }
     }
     Enums: {
