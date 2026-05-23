@@ -3,7 +3,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { ArrowLeft, Sparkles, Loader2, Target, Printer } from "lucide-react";
+import { ArrowLeft, Sparkles, Loader2, Target, Printer, RefreshCw } from "lucide-react";
 import { useAuth } from "@/hooks/useAuth";
 import { supabase } from "@/integrations/supabase/client";
 import { loadWeakAreas, type WeakArea } from "@/lib/weaknessAnalyzer";
@@ -23,6 +23,19 @@ const PersonalStudyGuide = () => {
   const [recentAccuracy, setRecentAccuracy] = useState(0);
   const [guide, setGuide] = useState<string>("");
   const [examType, setExamType] = useState<string>("sat");
+  const [teaching, setTeaching] = useState<any[]>([]);
+  const [diagnosing, setDiagnosing] = useState(false);
+
+  const loadTeaching = async () => {
+    if (!user) return;
+    const { data } = await supabase
+      .from("adaptive_teaching_sections")
+      .select("id, exam_family, section, skill, markdown_body, generated_at")
+      .eq("user_id", user.id)
+      .order("generated_at", { ascending: false })
+      .limit(6);
+    setTeaching(data ?? []);
+  };
 
   useEffect(() => {
     if (!user) return;
@@ -36,9 +49,24 @@ const PersonalStudyGuide = () => {
       setWeakAreas(w.weakAreas);
       setTotalAttempts(w.totalAttempts);
       setRecentAccuracy(w.recentAccuracy);
+      await loadTeaching();
       setLoading(false);
     })();
   }, [user]);
+
+  const rediagnose = async () => {
+    setDiagnosing(true);
+    try {
+      const { error } = await supabase.functions.invoke("adaptive-diagnose", { body: { scope: {} } });
+      if (error) throw error;
+      await loadTeaching();
+      toast.success("Refreshed teaching sections from your latest data.");
+    } catch {
+      toast.error("Could not refresh teaching sections.");
+    } finally {
+      setDiagnosing(false);
+    }
+  };
 
   const generate = async () => {
     setGenerating(true);
@@ -132,6 +160,38 @@ const PersonalStudyGuide = () => {
                 </div>
               </Card>
             )}
+
+            <Card className="p-5 mt-4 print:shadow-none print:border-0">
+              <div className="flex items-center justify-between mb-3">
+                <h2 className="font-semibold">Per-skill teaching sections</h2>
+                <Button size="sm" variant="outline" onClick={rediagnose} disabled={diagnosing} className="gap-2 print:hidden">
+                  {diagnosing ? <Loader2 className="w-4 h-4 animate-spin" /> : <RefreshCw className="w-4 h-4" />}
+                  Refresh from latest data
+                </Button>
+              </div>
+              {teaching.length === 0 ? (
+                <p className="text-sm text-muted-foreground">
+                  No adaptive teaching sections yet. Click <b>Refresh from latest data</b> to generate one micro-lesson per top weak skill (includes worked example and practice prompts).
+                </p>
+              ) : (
+                <div className="space-y-4">
+                  {teaching.map((t) => (
+                    <div key={t.id} className="border rounded-lg p-4">
+                      <div className="text-xs text-muted-foreground mb-2">
+                        {String(t.exam_family).toUpperCase()} · {t.section} · <b>{t.skill}</b>
+                      </div>
+                      <div className="prose prose-sm dark:prose-invert max-w-none">
+                        <ReactMarkdown>{t.markdown_body}</ReactMarkdown>
+                      </div>
+                    </div>
+                  ))}
+                  <div className="flex flex-wrap gap-2 print:hidden">
+                    <Link to="/weakness-retest"><Button size="sm"><Target className="w-4 h-4 mr-1" /> Weakness retest</Button></Link>
+                    <Link to="/adaptive"><Button size="sm" variant="outline">Adaptive dashboard</Button></Link>
+                  </div>
+                </div>
+              )}
+            </Card>
           </>
         )}
       </div>
