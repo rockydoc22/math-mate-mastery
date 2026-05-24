@@ -10,6 +10,8 @@ import { ArrowLeft, Target, Loader2, Sparkles, RefreshCw } from "lucide-react";
 import { SEO } from "@/components/SEO";
 import { toast } from "sonner";
 import { DeepExplanationsPanel, type AnsweredItem } from "@/components/DeepExplanationsPanel";
+import ReactMarkdown from "react-markdown";
+import { Printer, Share2 } from "lucide-react";
 
 type Cluster = {
   exam_family: string; section: string; domain: string; skill: string;
@@ -19,12 +21,43 @@ type AQ = {
   id: string; stem: string; options: any; correct_key: string;
   skill: string; domain: string; section: string; exam_family: string;
   trap_type: string | null; wrong_answer_explanations: any;
-  time_target_seconds: number | null;
+  time_target_seconds: number | null; difficulty: number | null;
 };
 type Phase = "loading" | "diagnosis" | "quiz" | "rediagnosing" | "summary";
 
 const TOP_CLUSTERS = 3;
 const PER_CLUSTER = 4;
+
+// Smart picker: balance difficulty buckets (easy 1-3, med 4-6, hard 7-10) and sections.
+function smartPick(pool: AQ[], count: number): AQ[] {
+  if (pool.length <= count) return [...pool].sort(() => Math.random() - 0.5);
+  const bucket = (d: number | null) => (d == null ? "med" : d <= 3 ? "easy" : d <= 6 ? "med" : "hard");
+  const buckets: Record<string, AQ[]> = { easy: [], med: [], hard: [] };
+  pool.forEach((q) => buckets[bucket(q.difficulty)].push(q));
+  Object.values(buckets).forEach((arr) => arr.sort(() => Math.random() - 0.5));
+  const order = ["easy", "med", "hard"];
+  const picked: AQ[] = [];
+  const seenSections = new Set<string>();
+  // First pass: try to get one per bucket from distinct sections
+  for (const b of order) {
+    const q = buckets[b].find((x) => !seenSections.has(x.section));
+    if (q && picked.length < count) {
+      picked.push(q);
+      seenSections.add(q.section);
+      buckets[b] = buckets[b].filter((x) => x.id !== q.id);
+    }
+  }
+  // Round-robin fill remaining slots
+  let i = 0;
+  while (picked.length < count) {
+    const b = order[i % order.length];
+    const q = buckets[b].shift() || buckets[order[(i + 1) % 3]].shift() || buckets[order[(i + 2) % 3]].shift();
+    if (!q) break;
+    picked.push(q);
+    i++;
+  }
+  return picked.sort(() => Math.random() - 0.5);
+}
 
 const normalizeOptions = (raw: any): { letter: string; text: string }[] => {
   if (Array.isArray(raw)) {
@@ -52,6 +85,8 @@ const WeaknessRetest = () => {
   const [questionStartedAt, setQuestionStartedAt] = useState<number>(0);
   const [answers, setAnswers] = useState<AnsweredItem[]>([]);
   const [updatedClusters, setUpdatedClusters] = useState<Cluster[] | null>(null);
+  const [recommended, setRecommended] = useState<any[]>([]);
+  const [shareUrl, setShareUrl] = useState<string>("");
 
   const loadClusters = async () => {
     if (!user) return;
@@ -82,11 +117,11 @@ const WeaknessRetest = () => {
     for (const c of clusters) {
       const { data } = await supabase
         .from("assessment_questions")
-        .select("id, stem, options, correct_key, skill, domain, section, exam_family, trap_type, wrong_answer_explanations, time_target_seconds")
+        .select("id, stem, options, correct_key, skill, domain, section, exam_family, trap_type, wrong_answer_explanations, time_target_seconds, difficulty")
         .eq("exam_family", c.exam_family)
         .eq("skill", c.skill)
-        .limit(PER_CLUSTER * 3);
-      const picked = ((data as AQ[]) ?? []).sort(() => Math.random() - 0.5).slice(0, PER_CLUSTER);
+        .limit(PER_CLUSTER * 6);
+      const picked = smartPick((data as AQ[]) ?? [], PER_CLUSTER);
       all.push(...picked);
     }
     if (all.length === 0) {
@@ -94,12 +129,25 @@ const WeaknessRetest = () => {
       setPhase("diagnosis");
       return;
     }
-    setItems(all.sort(() => Math.random() - 0.5));
+    // Interleave so consecutive items aren't from the same section/skill
+    const interleaved: AQ[] = [];
+    const bySkill: Record<string, AQ[]> = {};
+    all.forEach((q) => { (bySkill[q.skill] ||= []).push(q); });
+    const skills = Object.keys(bySkill);
+    while (interleaved.length < all.length) {
+      for (const s of skills) {
+        const q = bySkill[s].shift();
+        if (q) interleaved.push(q);
+      }
+    }
+    setItems(interleaved);
     setIdx(0);
     setSelected(null);
     setShowResult(false);
     setAnswers([]);
     setUpdatedClusters(null);
+    setRecommended([]);
+    setShareUrl("");
     setQuestionStartedAt(Date.now());
     setPhase("quiz");
   };
@@ -146,6 +194,19 @@ const WeaknessRetest = () => {
       } catch {}
       const c = await loadClusters();
       setUpdatedClusters(c ?? []);
+      // Load recommended practice from teaching sections for top remaining weak skills
+      if (user && c && c.length) {
+        const topSkills = c.slice(0, 3).map((x) => x.skill);
+        const { data: recs } = await supabase
+          .from("adaptive_teaching_sections")
+          .select("id, exam_family, section, skill, markdown_body, generated_at")
+          .eq("user_id", user.id)
+          .in("skill", topSkills)
+          .order("generated_at", { ascending: false })
+          .limit(3);
+        setRecommended(recs ?? []);
+      }
+      setShareUrl(`${window.location.origin}/study-guide`);
       setPhase("summary");
       return;
     }
@@ -156,6 +217,15 @@ const WeaknessRetest = () => {
   };
 
   const correctCount = answers.filter((a) => a.isCorrect).length;
+
+  const copyShare = async () => {
+    try {
+      await navigator.clipboard.writeText(shareUrl);
+      toast.success("Study guide link copied to clipboard.");
+    } catch {
+      toast.error("Could not copy link.");
+    }
+  };
 
   if (!user) {
     return (
@@ -288,15 +358,23 @@ const WeaknessRetest = () => {
 
         {phase === "summary" && (
           <div className="space-y-4">
-            <Card className="p-6 text-center">
+            <Card className="p-6 text-center print:shadow-none print:border-0">
               <h2 className="text-2xl font-bold">Retest complete</h2>
               <p className="mt-2 text-muted-foreground">
                 {correctCount} of {items.length} correct ({Math.round((correctCount / items.length) * 100)}%)
               </p>
-              <div className="flex flex-wrap justify-center gap-2 mt-4">
+              <div className="flex flex-wrap justify-center gap-2 mt-4 print:hidden">
                 <Button onClick={start}><RefreshCw className="w-4 h-4 mr-1" /> Run another retest</Button>
                 <Link to="/adaptive"><Button variant="outline">Open adaptive dashboard</Button></Link>
                 <Link to="/study-guide"><Button variant="ghost">Updated study guide</Button></Link>
+              </div>
+              <div className="flex flex-wrap justify-center gap-2 mt-2 print:hidden">
+                <Button size="sm" variant="outline" onClick={() => window.print()}>
+                  <Printer className="w-4 h-4 mr-1" /> Export PDF
+                </Button>
+                <Button size="sm" variant="outline" onClick={copyShare}>
+                  <Share2 className="w-4 h-4 mr-1" /> Copy share link
+                </Button>
               </div>
             </Card>
 
@@ -312,6 +390,34 @@ const WeaknessRetest = () => {
                       </span>
                     </div>
                   ))}
+                </div>
+              </Card>
+            )}
+
+            {recommended.length > 0 && (
+              <Card className="p-5">
+                <div className="flex items-center gap-2 mb-3">
+                  <Sparkles className="w-5 h-5 text-primary" />
+                  <h3 className="font-semibold">Recommended practice</h3>
+                </div>
+                <p className="text-sm text-muted-foreground mb-4">
+                  Pulled from your strongest remaining weak skills — start with these prompts next.
+                </p>
+                <div className="space-y-4">
+                  {recommended.map((r) => (
+                    <div key={r.id} className="border rounded-lg p-4">
+                      <div className="text-xs text-muted-foreground mb-2">
+                        {String(r.exam_family).toUpperCase()} · {r.section} · <b>{r.skill}</b>
+                      </div>
+                      <div className="prose prose-sm dark:prose-invert max-w-none">
+                        <ReactMarkdown>{r.markdown_body}</ReactMarkdown>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+                <div className="mt-4 flex flex-wrap gap-2 print:hidden">
+                  <Link to="/study-guide"><Button size="sm">Open full study guide</Button></Link>
+                  <Button size="sm" variant="outline" onClick={start}>Practice these now</Button>
                 </div>
               </Card>
             )}
