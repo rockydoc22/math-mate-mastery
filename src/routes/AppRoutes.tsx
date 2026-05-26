@@ -15,6 +15,7 @@ const Quiz = lazy(() => import("@/pages/Quiz"));
 const MathQuiz = lazy(() => import("@/pages/MathQuiz"));
 const EnglishQuiz = lazy(() => import("@/pages/EnglishQuiz"));
 const Admin = lazy(() => import("@/pages/Admin"));
+const AdminSeedQuestions = lazy(() => import("@/pages/AdminSeedQuestions"));
 const Leaderboard = lazy(() => import("@/pages/Leaderboard"));
 const StudyMode = lazy(() => import("@/pages/StudyMode"));
 const ProblemsByTopic = lazy(() => import("@/pages/ProblemsByTopic"));
@@ -134,6 +135,7 @@ const AppRoutes = () => (
       <Route path="/math" element={<MathQuiz />} />
       <Route path="/english" element={<EnglishQuiz />} />
       <Route path="/admin" element={<ProtectedRoute><Admin /></ProtectedRoute>} />
+      <Route path="/admin/seed-questions" element={<ProtectedRoute><AdminSeedQuestions /></ProtectedRoute>} />
       <Route path="/auth" element={<Auth />} />
       <Route path="/auth/callback" element={<AuthCallback />} />
       <Route path="/leaderboard" element={<Leaderboard />} />
