@@ -490,6 +490,11 @@ const WeaknessRetest = () => {
                       <div className="prose prose-sm dark:prose-invert max-w-none">
                         <ReactMarkdown>{r.markdown_body}</ReactMarkdown>
                       </div>
+                      <div className="mt-3 print:hidden">
+                        <Button size="sm" onClick={() => startFocused(r.exam_family, r.skill, r.section)}>
+                          Start this practice
+                        </Button>
+                      </div>
                     </div>
                   ))}
                 </div>
