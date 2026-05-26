@@ -242,6 +242,34 @@ const WeaknessRetest = () => {
 
   const correctCount = answers.filter((a) => a.isCorrect).length;
 
+  // Launch a focused practice flow scoped to a single skill from a recommended prompt.
+  const startFocused = async (exam_family: string, skill: string, section: string) => {
+    setPhase("loading");
+    const { data } = await supabase
+      .from("assessment_questions")
+      .select("id, stem, options, correct_key, skill, domain, section, exam_family, trap_type, wrong_answer_explanations, time_target_seconds, difficulty")
+      .eq("exam_family", exam_family)
+      .eq("skill", skill)
+      .limit(perCluster * 6);
+    const picked = smartPick((data as AQ[]) ?? [], perCluster, { easy: mixEasy, med: mixMed, hard: mixHard });
+    if (!picked.length) {
+      toast.error(`No questions available yet for ${skill}.`);
+      setPhase("summary");
+      return;
+    }
+    setItems(picked);
+    setIdx(0);
+    setSelected(null);
+    setShowResult(false);
+    setAnswers([]);
+    setUpdatedClusters(null);
+    setRecommended([]);
+    setShareUrl("");
+    setQuestionStartedAt(Date.now());
+    setPhase("quiz");
+    toast.success(`Focused practice: ${skill} (${section})`);
+  };
+
   const copyShare = async () => {
     try {
       await navigator.clipboard.writeText(shareUrl);
