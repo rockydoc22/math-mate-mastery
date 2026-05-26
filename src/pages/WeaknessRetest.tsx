@@ -314,11 +314,37 @@ const WeaknessRetest = () => {
                     ))}
                   </div>
                 </Card>
+                <Card className="p-5">
+                  <h3 className="font-semibold mb-3">Retest settings</h3>
+                  <div className="space-y-4">
+                    <div>
+                      <Label className="text-sm">Questions per weakness cluster: <b>{perCluster}</b></Label>
+                      <Slider value={[perCluster]} min={2} max={10} step={1} onValueChange={(v) => setPerCluster(v[0])} className="mt-2" />
+                    </div>
+                    <div className="grid grid-cols-3 gap-3">
+                      <div>
+                        <Label className="text-xs">Easy weight: {mixEasy}</Label>
+                        <Slider value={[mixEasy]} min={0} max={5} step={1} onValueChange={(v) => setMixEasy(v[0])} className="mt-2" />
+                      </div>
+                      <div>
+                        <Label className="text-xs">Medium weight: {mixMed}</Label>
+                        <Slider value={[mixMed]} min={0} max={5} step={1} onValueChange={(v) => setMixMed(v[0])} className="mt-2" />
+                      </div>
+                      <div>
+                        <Label className="text-xs">Hard weight: {mixHard}</Label>
+                        <Slider value={[mixHard]} min={0} max={5} step={1} onValueChange={(v) => setMixHard(v[0])} className="mt-2" />
+                      </div>
+                    </div>
+                    <p className="text-xs text-muted-foreground">
+                      Weights set the easy/medium/hard ratio within each cluster. Set one to 0 to skip that band.
+                    </p>
+                  </div>
+                </Card>
                 <Card className="p-5 bg-primary/5 border-primary/30">
                   <div className="flex items-start gap-3">
                     <Sparkles className="w-5 h-5 text-primary mt-1" />
                     <div className="text-sm text-muted-foreground">
-                      We'll pull up to {TOP_CLUSTERS * PER_CLUSTER} questions from these {clusters.length} skill{clusters.length > 1 ? "s" : ""}, log your answers, and re-run diagnosis so your weakness map updates instantly.
+                      We'll pull up to {clusters.length * perCluster} questions from these {clusters.length} skill{clusters.length > 1 ? "s" : ""}, log your answers, and re-run diagnosis so your weakness map updates instantly.
                     </div>
                   </div>
                   <div className="mt-4 flex flex-wrap gap-2">
