@@ -12,6 +12,8 @@ import { toast } from "sonner";
 import { DeepExplanationsPanel, type AnsweredItem } from "@/components/DeepExplanationsPanel";
 import ReactMarkdown from "react-markdown";
 import { Printer, Share2 } from "lucide-react";
+import { Label } from "@/components/ui/label";
+import { Slider } from "@/components/ui/slider";
 
 type Cluster = {
   exam_family: string; section: string; domain: string; skill: string;
@@ -26,28 +28,45 @@ type AQ = {
 type Phase = "loading" | "diagnosis" | "quiz" | "rediagnosing" | "summary";
 
 const TOP_CLUSTERS = 3;
-const PER_CLUSTER = 4;
 
-// Smart picker: balance difficulty buckets (easy 1-3, med 4-6, hard 7-10) and sections.
-function smartPick(pool: AQ[], count: number): AQ[] {
+type Mix = { easy: number; med: number; hard: number };
+
+// Smart picker: balance difficulty buckets (easy 1-3, med 4-6, hard 7-10) and sections,
+// honoring a target ratio.
+function smartPick(pool: AQ[], count: number, mix: Mix): AQ[] {
   if (pool.length <= count) return [...pool].sort(() => Math.random() - 0.5);
   const bucket = (d: number | null) => (d == null ? "med" : d <= 3 ? "easy" : d <= 6 ? "med" : "hard");
   const buckets: Record<string, AQ[]> = { easy: [], med: [], hard: [] };
   pool.forEach((q) => buckets[bucket(q.difficulty)].push(q));
   Object.values(buckets).forEach((arr) => arr.sort(() => Math.random() - 0.5));
-  const order = ["easy", "med", "hard"];
+  const order: (keyof Mix)[] = ["easy", "med", "hard"];
+  const totalMix = Math.max(1, mix.easy + mix.med + mix.hard);
+  const targets: Record<string, number> = {
+    easy: Math.round((mix.easy / totalMix) * count),
+    med: Math.round((mix.med / totalMix) * count),
+    hard: Math.round((mix.hard / totalMix) * count),
+  };
+  // fix rounding drift
+  let drift = count - (targets.easy + targets.med + targets.hard);
+  while (drift !== 0) {
+    const k = order[Math.abs(drift) % 3];
+    targets[k] += drift > 0 ? 1 : -1;
+    drift += drift > 0 ? -1 : 1;
+  }
   const picked: AQ[] = [];
   const seenSections = new Set<string>();
-  // First pass: try to get one per bucket from distinct sections
+  // Take per-bucket targets, preferring distinct sections
   for (const b of order) {
-    const q = buckets[b].find((x) => !seenSections.has(x.section));
-    if (q && picked.length < count) {
+    let need = targets[b];
+    while (need > 0 && buckets[b].length) {
+      const idx = buckets[b].findIndex((x) => !seenSections.has(x.section));
+      const q = idx >= 0 ? buckets[b].splice(idx, 1)[0] : buckets[b].shift()!;
       picked.push(q);
       seenSections.add(q.section);
-      buckets[b] = buckets[b].filter((x) => x.id !== q.id);
+      need--;
     }
   }
-  // Round-robin fill remaining slots
+  // Backfill any remaining slots from whichever buckets still have items
   let i = 0;
   while (picked.length < count) {
     const b = order[i % order.length];
@@ -87,6 +106,11 @@ const WeaknessRetest = () => {
   const [updatedClusters, setUpdatedClusters] = useState<Cluster[] | null>(null);
   const [recommended, setRecommended] = useState<any[]>([]);
   const [shareUrl, setShareUrl] = useState<string>("");
+  // Smart picker settings (tunable before starting)
+  const [perCluster, setPerCluster] = useState<number>(4);
+  const [mixEasy, setMixEasy] = useState<number>(1);
+  const [mixMed, setMixMed] = useState<number>(2);
+  const [mixHard, setMixHard] = useState<number>(1);
 
   const loadClusters = async () => {
     if (!user) return;
@@ -120,8 +144,8 @@ const WeaknessRetest = () => {
         .select("id, stem, options, correct_key, skill, domain, section, exam_family, trap_type, wrong_answer_explanations, time_target_seconds, difficulty")
         .eq("exam_family", c.exam_family)
         .eq("skill", c.skill)
-        .limit(PER_CLUSTER * 6);
-      const picked = smartPick((data as AQ[]) ?? [], PER_CLUSTER);
+        .limit(perCluster * 6);
+      const picked = smartPick((data as AQ[]) ?? [], perCluster, { easy: mixEasy, med: mixMed, hard: mixHard });
       all.push(...picked);
     }
     if (all.length === 0) {
