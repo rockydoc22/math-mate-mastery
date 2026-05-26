@@ -12,6 +12,8 @@ import { toast } from "sonner";
 import { DeepExplanationsPanel, type AnsweredItem } from "@/components/DeepExplanationsPanel";
 import ReactMarkdown from "react-markdown";
 import { Printer, Share2 } from "lucide-react";
+import { Label } from "@/components/ui/label";
+import { Slider } from "@/components/ui/slider";
 
 type Cluster = {
   exam_family: string; section: string; domain: string; skill: string;
@@ -26,28 +28,45 @@ type AQ = {
 type Phase = "loading" | "diagnosis" | "quiz" | "rediagnosing" | "summary";
 
 const TOP_CLUSTERS = 3;
-const PER_CLUSTER = 4;
 
-// Smart picker: balance difficulty buckets (easy 1-3, med 4-6, hard 7-10) and sections.
-function smartPick(pool: AQ[], count: number): AQ[] {
+type Mix = { easy: number; med: number; hard: number };
+
+// Smart picker: balance difficulty buckets (easy 1-3, med 4-6, hard 7-10) and sections,
+// honoring a target ratio.
+function smartPick(pool: AQ[], count: number, mix: Mix): AQ[] {
   if (pool.length <= count) return [...pool].sort(() => Math.random() - 0.5);
   const bucket = (d: number | null) => (d == null ? "med" : d <= 3 ? "easy" : d <= 6 ? "med" : "hard");
   const buckets: Record<string, AQ[]> = { easy: [], med: [], hard: [] };
   pool.forEach((q) => buckets[bucket(q.difficulty)].push(q));
   Object.values(buckets).forEach((arr) => arr.sort(() => Math.random() - 0.5));
-  const order = ["easy", "med", "hard"];
+  const order: (keyof Mix)[] = ["easy", "med", "hard"];
+  const totalMix = Math.max(1, mix.easy + mix.med + mix.hard);
+  const targets: Record<string, number> = {
+    easy: Math.round((mix.easy / totalMix) * count),
+    med: Math.round((mix.med / totalMix) * count),
+    hard: Math.round((mix.hard / totalMix) * count),
+  };
+  // fix rounding drift
+  let drift = count - (targets.easy + targets.med + targets.hard);
+  while (drift !== 0) {
+    const k = order[Math.abs(drift) % 3];
+    targets[k] += drift > 0 ? 1 : -1;
+    drift += drift > 0 ? -1 : 1;
+  }
   const picked: AQ[] = [];
   const seenSections = new Set<string>();
-  // First pass: try to get one per bucket from distinct sections
+  // Take per-bucket targets, preferring distinct sections
   for (const b of order) {
-    const q = buckets[b].find((x) => !seenSections.has(x.section));
-    if (q && picked.length < count) {
+    let need = targets[b];
+    while (need > 0 && buckets[b].length) {
+      const idx = buckets[b].findIndex((x) => !seenSections.has(x.section));
+      const q = idx >= 0 ? buckets[b].splice(idx, 1)[0] : buckets[b].shift()!;
       picked.push(q);
       seenSections.add(q.section);
-      buckets[b] = buckets[b].filter((x) => x.id !== q.id);
+      need--;
     }
   }
-  // Round-robin fill remaining slots
+  // Backfill any remaining slots from whichever buckets still have items
   let i = 0;
   while (picked.length < count) {
     const b = order[i % order.length];
@@ -87,6 +106,11 @@ const WeaknessRetest = () => {
   const [updatedClusters, setUpdatedClusters] = useState<Cluster[] | null>(null);
   const [recommended, setRecommended] = useState<any[]>([]);
   const [shareUrl, setShareUrl] = useState<string>("");
+  // Smart picker settings (tunable before starting)
+  const [perCluster, setPerCluster] = useState<number>(4);
+  const [mixEasy, setMixEasy] = useState<number>(1);
+  const [mixMed, setMixMed] = useState<number>(2);
+  const [mixHard, setMixHard] = useState<number>(1);
 
   const loadClusters = async () => {
     if (!user) return;
@@ -120,8 +144,8 @@ const WeaknessRetest = () => {
         .select("id, stem, options, correct_key, skill, domain, section, exam_family, trap_type, wrong_answer_explanations, time_target_seconds, difficulty")
         .eq("exam_family", c.exam_family)
         .eq("skill", c.skill)
-        .limit(PER_CLUSTER * 6);
-      const picked = smartPick((data as AQ[]) ?? [], PER_CLUSTER);
+        .limit(perCluster * 6);
+      const picked = smartPick((data as AQ[]) ?? [], perCluster, { easy: mixEasy, med: mixMed, hard: mixHard });
       all.push(...picked);
     }
     if (all.length === 0) {
@@ -218,6 +242,34 @@ const WeaknessRetest = () => {
 
   const correctCount = answers.filter((a) => a.isCorrect).length;
 
+  // Launch a focused practice flow scoped to a single skill from a recommended prompt.
+  const startFocused = async (exam_family: string, skill: string, section: string) => {
+    setPhase("loading");
+    const { data } = await supabase
+      .from("assessment_questions")
+      .select("id, stem, options, correct_key, skill, domain, section, exam_family, trap_type, wrong_answer_explanations, time_target_seconds, difficulty")
+      .eq("exam_family", exam_family)
+      .eq("skill", skill)
+      .limit(perCluster * 6);
+    const picked = smartPick((data as AQ[]) ?? [], perCluster, { easy: mixEasy, med: mixMed, hard: mixHard });
+    if (!picked.length) {
+      toast.error(`No questions available yet for ${skill}.`);
+      setPhase("summary");
+      return;
+    }
+    setItems(picked);
+    setIdx(0);
+    setSelected(null);
+    setShowResult(false);
+    setAnswers([]);
+    setUpdatedClusters(null);
+    setRecommended([]);
+    setShareUrl("");
+    setQuestionStartedAt(Date.now());
+    setPhase("quiz");
+    toast.success(`Focused practice: ${skill} (${section})`);
+  };
+
   const copyShare = async () => {
     try {
       await navigator.clipboard.writeText(shareUrl);
@@ -290,11 +342,37 @@ const WeaknessRetest = () => {
                     ))}
                   </div>
                 </Card>
+                <Card className="p-5">
+                  <h3 className="font-semibold mb-3">Retest settings</h3>
+                  <div className="space-y-4">
+                    <div>
+                      <Label className="text-sm">Questions per weakness cluster: <b>{perCluster}</b></Label>
+                      <Slider value={[perCluster]} min={2} max={10} step={1} onValueChange={(v) => setPerCluster(v[0])} className="mt-2" />
+                    </div>
+                    <div className="grid grid-cols-3 gap-3">
+                      <div>
+                        <Label className="text-xs">Easy weight: {mixEasy}</Label>
+                        <Slider value={[mixEasy]} min={0} max={5} step={1} onValueChange={(v) => setMixEasy(v[0])} className="mt-2" />
+                      </div>
+                      <div>
+                        <Label className="text-xs">Medium weight: {mixMed}</Label>
+                        <Slider value={[mixMed]} min={0} max={5} step={1} onValueChange={(v) => setMixMed(v[0])} className="mt-2" />
+                      </div>
+                      <div>
+                        <Label className="text-xs">Hard weight: {mixHard}</Label>
+                        <Slider value={[mixHard]} min={0} max={5} step={1} onValueChange={(v) => setMixHard(v[0])} className="mt-2" />
+                      </div>
+                    </div>
+                    <p className="text-xs text-muted-foreground">
+                      Weights set the easy/medium/hard ratio within each cluster. Set one to 0 to skip that band.
+                    </p>
+                  </div>
+                </Card>
                 <Card className="p-5 bg-primary/5 border-primary/30">
                   <div className="flex items-start gap-3">
                     <Sparkles className="w-5 h-5 text-primary mt-1" />
                     <div className="text-sm text-muted-foreground">
-                      We'll pull up to {TOP_CLUSTERS * PER_CLUSTER} questions from these {clusters.length} skill{clusters.length > 1 ? "s" : ""}, log your answers, and re-run diagnosis so your weakness map updates instantly.
+                      We'll pull up to {clusters.length * perCluster} questions from these {clusters.length} skill{clusters.length > 1 ? "s" : ""}, log your answers, and re-run diagnosis so your weakness map updates instantly.
                     </div>
                   </div>
                   <div className="mt-4 flex flex-wrap gap-2">
@@ -411,6 +489,11 @@ const WeaknessRetest = () => {
                       </div>
                       <div className="prose prose-sm dark:prose-invert max-w-none">
                         <ReactMarkdown>{r.markdown_body}</ReactMarkdown>
+                      </div>
+                      <div className="mt-3 print:hidden">
+                        <Button size="sm" onClick={() => startFocused(r.exam_family, r.skill, r.section)}>
+                          Start this practice
+                        </Button>
                       </div>
                     </div>
                   ))}
