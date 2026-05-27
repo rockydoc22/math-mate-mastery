@@ -6,6 +6,14 @@ const corsHeaders = {
   "Access-Control-Allow-Headers": "authorization, x-client-info, apikey, content-type",
 };
 
+async function sha256Hex(input: string): Promise<string> {
+  const bytes = new TextEncoder().encode(input);
+  const digest = await crypto.subtle.digest("SHA-256", bytes);
+  return Array.from(new Uint8Array(digest))
+    .map((b) => b.toString(16).padStart(2, "0"))
+    .join("");
+}
+
 interface VerifyCodeRequest {
   email: string;
   code: string;
@@ -40,12 +48,13 @@ const handler = async (req: Request): Promise<Response> => {
     const supabaseServiceKey = Deno.env.get("SUPABASE_SERVICE_ROLE_KEY")!;
     const supabase = createClient(supabaseUrl, supabaseServiceKey);
 
-    // Find the code
+    // Find the code (compare against stored SHA-256 hash)
+    const codeHash = await sha256Hex(code);
     const { data: codeData, error: codeError } = await supabase
       .from("password_reset_codes")
       .select("*")
       .eq("email", email.toLowerCase())
-      .eq("code", code)
+      .eq("code", codeHash)
       .eq("used", false)
       .gte("expires_at", new Date().toISOString())
       .single();
