@@ -1,5 +1,6 @@
 import { serve } from "https://deno.land/std@0.168.0/http/server.ts";
 import { createClient } from "https://esm.sh/@supabase/supabase-js@2";
+import { requireUser } from "../_shared/auth.ts";
 
 const corsHeaders = {
   "Access-Control-Allow-Origin": "*",
@@ -13,11 +14,25 @@ serve(async (req: Request) => {
   }
 
   try {
-    // Verify auth
-    const authHeader = req.headers.get("Authorization");
-    if (!authHeader?.startsWith("Bearer ")) {
-      return new Response(JSON.stringify({ error: "Unauthorized" }), {
-        status: 401,
+    // Verify auth — real JWT validation
+    const auth = await requireUser(req);
+    if (auth instanceof Response) return auth;
+
+    // Require admin or moderator role
+    const roleClient = createClient(
+      Deno.env.get("SUPABASE_URL") ?? "",
+      Deno.env.get("SUPABASE_SERVICE_ROLE_KEY") ?? ""
+    );
+    const { data: roles } = await roleClient
+      .from("user_roles")
+      .select("role")
+      .eq("user_id", auth.userId);
+    const allowed = (roles ?? []).some(
+      (r: any) => r.role === "admin" || r.role === "moderator"
+    );
+    if (!allowed) {
+      return new Response(JSON.stringify({ error: "Forbidden" }), {
+        status: 403,
         headers: { "Content-Type": "application/json", ...corsHeaders },
       });
     }
