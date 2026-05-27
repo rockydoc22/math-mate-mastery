@@ -1,5 +1,6 @@
 import { serve } from "https://deno.land/std@0.168.0/http/server.ts";
 import { createClient } from "https://esm.sh/@supabase/supabase-js@2";
+import { requireUser, escapeHtml } from "../_shared/auth.ts";
 
 const RESEND_API_KEY = Deno.env.get("RESEND_API_KEY");
 
@@ -15,6 +16,9 @@ serve(async (req: Request) => {
   }
 
   try {
+    const auth = await requireUser(req);
+    if (auth instanceof Response) return auth;
+
     const { feedbackType, message, email: userEmail } = await req.json();
 
     if (!feedbackType || !message) {
@@ -23,6 +27,11 @@ serve(async (req: Request) => {
         { status: 400, headers: { "Content-Type": "application/json", ...corsHeaders } }
       );
     }
+
+    const allowedTypes = new Set(["suggestion", "bug", "comment", "other"]);
+    const safeType = allowedTypes.has(String(feedbackType)) ? String(feedbackType) : "other";
+    const safeMessage = escapeHtml(String(message).slice(0, 5000));
+    const safeUserEmail = userEmail ? escapeHtml(String(userEmail).slice(0, 320)) : "";
 
     const serviceClient = createClient(
       Deno.env.get("SUPABASE_URL") ?? "",
@@ -71,10 +80,10 @@ serve(async (req: Request) => {
         <h1 style="color: #7c3aed; margin-bottom: 20px;">${typeEmojis[feedbackType] || "📝"} New User Feedback</h1>
         
         <div style="background: #f3f4f6; border-radius: 8px; padding: 20px; margin-bottom: 20px;">
-          <p style="margin: 0 0 10px 0;"><strong>Type:</strong> ${feedbackType}</p>
+          <p style="margin: 0 0 10px 0;"><strong>Type:</strong> ${escapeHtml(safeType)}</p>
           <p style="margin: 0 0 10px 0;"><strong>Message:</strong></p>
-          <p style="margin: 0; white-space: pre-wrap;">${message}</p>
-          ${userEmail ? `<p style="margin: 10px 0 0 0;"><strong>Reply to:</strong> ${userEmail}</p>` : ""}
+          <p style="margin: 0; white-space: pre-wrap;">${safeMessage}</p>
+          ${safeUserEmail ? `<p style="margin: 10px 0 0 0;"><strong>Reply to:</strong> ${safeUserEmail}</p>` : ""}
         </div>
         
         <a href="https://math-mate-mastery.lovable.app/admin" 
