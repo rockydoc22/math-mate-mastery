@@ -15,6 +15,25 @@ interface MagicLinkRequest {
 const RATE_LIMIT_MAX = 3; // Max requests per hour
 const RATE_LIMIT_WINDOW_MS = 60 * 60 * 1000; // 1 hour
 
+const ALLOWED_REDIRECT_ORIGINS = [
+  "https://math-mate-mastery.lovable.app",
+  "https://40squared.club",
+  "https://id-preview--3a005222-7662-4928-b3c7-d329b9f11de7.lovable.app",
+  "http://localhost:5173",
+  "http://localhost:8080",
+];
+
+function safeRedirect(input: string | undefined, fallbackOrigin: string | null): string {
+  const fallback = `${fallbackOrigin ?? ALLOWED_REDIRECT_ORIGINS[0]}/`;
+  if (!input) return fallback;
+  try {
+    const url = new URL(input);
+    const origin = `${url.protocol}//${url.host}`;
+    if (ALLOWED_REDIRECT_ORIGINS.includes(origin)) return input;
+  } catch (_) { /* fall through */ }
+  return fallback;
+}
+
 async function checkRateLimit(supabase: any, email: string, endpoint: string): Promise<boolean> {
   const windowStart = new Date(Date.now() - RATE_LIMIT_WINDOW_MS).toISOString();
   
@@ -106,11 +125,15 @@ const handler = async (req: Request): Promise<Response> => {
     await recordRequest(supabase, resolvedEmail, "send-magic-link");
 
     // Generate magic link using Supabase Auth
+    const origin = req.headers.get("origin");
+    const safeFallbackOrigin = origin && ALLOWED_REDIRECT_ORIGINS.includes(origin)
+      ? origin
+      : ALLOWED_REDIRECT_ORIGINS[0];
     const { data, error } = await supabase.auth.admin.generateLink({
       type: "magiclink",
       email: resolvedEmail,
       options: {
-        redirectTo: redirectTo || `${req.headers.get("origin")}/`,
+        redirectTo: safeRedirect(redirectTo, safeFallbackOrigin),
       },
     });
 
