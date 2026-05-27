@@ -61,7 +61,7 @@ serve(async (req: Request) => {
     const notifications = adminRoles.map((admin) => ({
       user_id: admin.user_id,
       title: "💬 New User Feedback",
-      message: `${feedbackType}: ${message.slice(0, 100)}${message.length > 100 ? '...' : ''}`,
+      message: `${safeType}: ${String(message).slice(0, 100)}${String(message).length > 100 ? '...' : ''}`,
       type: "info",
       link: "/admin",
     }));
@@ -77,7 +77,7 @@ serve(async (req: Request) => {
 
     const emailHtml = `
       <div style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px;">
-        <h1 style="color: #7c3aed; margin-bottom: 20px;">${typeEmojis[feedbackType] || "📝"} New User Feedback</h1>
+        <h1 style="color: #7c3aed; margin-bottom: 20px;">${typeEmojis[safeType] || "📝"} New User Feedback</h1>
         
         <div style="background: #f3f4f6; border-radius: 8px; padding: 20px; margin-bottom: 20px;">
           <p style="margin: 0 0 10px 0;"><strong>Type:</strong> ${escapeHtml(safeType)}</p>
@@ -104,7 +104,7 @@ serve(async (req: Request) => {
       body: JSON.stringify({
         from: "1600² SAT Prep <onboarding@resend.dev>",
         to: adminEmails,
-        subject: `${typeEmojis[feedbackType] || "📝"} New Feedback: ${feedbackType}`,
+        subject: `${typeEmojis[safeType] || "📝"} New Feedback: ${safeType}`,
         html: emailHtml,
       }),
     });
