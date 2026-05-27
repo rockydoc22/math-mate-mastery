@@ -1,5 +1,6 @@
 import { serve } from "https://deno.land/std@0.168.0/http/server.ts";
 import { createClient } from "https://esm.sh/@supabase/supabase-js@2";
+import { escapeHtml } from "../_shared/auth.ts";
 
 const RESEND_API_KEY = Deno.env.get("RESEND_API_KEY");
 
@@ -130,10 +131,10 @@ const handler = async (req: Request): Promise<Response> => {
         <h1 style="color: #7c3aed; margin-bottom: 20px;">🚩 New Flagged Question</h1>
         
         <div style="background: #f3f4f6; border-radius: 8px; padding: 20px; margin-bottom: 20px;">
-          <p style="margin: 0 0 10px 0;"><strong>Question ID:</strong> ${questionId}</p>
-          <p style="margin: 0 0 10px 0;"><strong>Type:</strong> ${questionType.toUpperCase()}</p>
-          <p style="margin: 0 0 10px 0;"><strong>Issue:</strong> ${issueLabel}</p>
-          ${notes ? `<p style="margin: 0;"><strong>Notes:</strong> ${notes}</p>` : ""}
+          <p style="margin: 0 0 10px 0;"><strong>Question ID:</strong> ${escapeHtml(questionId)}</p>
+          <p style="margin: 0 0 10px 0;"><strong>Type:</strong> ${escapeHtml(questionType).toUpperCase()}</p>
+          <p style="margin: 0 0 10px 0;"><strong>Issue:</strong> ${escapeHtml(issueLabel)}</p>
+          ${notes ? `<p style="margin: 0;"><strong>Notes:</strong> ${escapeHtml(notes)}</p>` : ""}
         </div>
         
         <p style="color: #6b7280; font-size: 14px;">
