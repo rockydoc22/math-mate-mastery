@@ -1,8 +1,11 @@
 import { corsHeaders } from 'npm:@supabase/supabase-js@2/cors';
+import { requireUser } from "../_shared/auth.ts";
 
 Deno.serve(async (req) => {
   if (req.method === 'OPTIONS') return new Response('ok', { headers: corsHeaders });
   try {
+    const auth = await requireUser(req);
+    if (auth instanceof Response) return auth;
     const { question, options, correctAnswer, studentAnswer, skill, domain } = await req.json();
     if (!question || !correctAnswer) {
       return new Response(JSON.stringify({ error: 'question and correctAnswer required' }), {
