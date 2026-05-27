@@ -36,6 +36,22 @@ interface SendCodeRequest {
 const RATE_LIMIT_MAX = 3; // Max requests per hour
 const RATE_LIMIT_WINDOW_MS = 60 * 60 * 1000; // 1 hour
 
+async function sha256Hex(input: string): Promise<string> {
+  const bytes = new TextEncoder().encode(input);
+  const digest = await crypto.subtle.digest("SHA-256", bytes);
+  return Array.from(new Uint8Array(digest))
+    .map((b) => b.toString(16).padStart(2, "0"))
+    .join("");
+}
+
+function generateNumericCode(digits: number): string {
+  const max = 10 ** digits;
+  const min = 10 ** (digits - 1);
+  const buf = new Uint32Array(1);
+  crypto.getRandomValues(buf);
+  return String(min + (buf[0] % (max - min)));
+}
+
 async function checkRateLimit(supabase: any, email: string, endpoint: string): Promise<boolean> {
   const windowStart = new Date(Date.now() - RATE_LIMIT_WINDOW_MS).toISOString();
   
@@ -113,8 +129,9 @@ const handler = async (req: Request): Promise<Response> => {
       );
     }
 
-    // Generate 6-digit code
-    const code = Math.floor(100000 + Math.random() * 900000).toString();
+    // Generate cryptographically secure 6-digit code
+    const code = generateNumericCode(6);
+    const codeHash = await sha256Hex(code);
 
     // Delete any existing unused codes for this email
     await supabase
@@ -123,12 +140,12 @@ const handler = async (req: Request): Promise<Response> => {
       .eq("email", email.toLowerCase())
       .eq("used", false);
 
-    // Insert new code
+    // Insert new code (store SHA-256 hash, never the plaintext)
     const { error: insertError } = await supabase
       .from("password_reset_codes")
       .insert({
         email: email.toLowerCase(),
-        code: code,
+        code: codeHash,
         expires_at: new Date(Date.now() + 15 * 60 * 1000).toISOString(),
       });
 
