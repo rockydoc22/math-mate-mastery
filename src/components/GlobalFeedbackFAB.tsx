@@ -23,6 +23,7 @@ import { supabase } from "@/integrations/supabase/client";
 import { useAuth } from "@/hooks/useAuth";
 import { useLocation } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
+import { Gift, UserCircle2 } from "lucide-react";
 
 type FeedbackType = "suggestion" | "bug" | "comment" | "content_issue" | "feature_request" | "other";
 
@@ -39,11 +40,23 @@ export const GlobalFeedbackFAB = () => {
   const [open, setOpen] = useState(false);
   const [feedbackType, setFeedbackType] = useState<FeedbackType>("suggestion");
   const [message, setMessage] = useState("");
-  const [email, setEmail] = useState("");
+  const [displayName, setDisplayName] = useState("");
+  const [swagEmail, setSwagEmail] = useState("");
+  const [wantsSwag, setWantsSwag] = useState(false);
+  const [username, setUsername] = useState<string | null>(null);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const { toast } = useToast();
   const { user } = useAuth();
   const location = useLocation();
+
+  // Fetch username for logged-in users so we can show "Submitting as @name"
+  useEffect(() => {
+    if (!user?.id) { setUsername(null); return; }
+    let cancelled = false;
+    supabase.from("profiles").select("username").eq("id", user.id).maybeSingle()
+      .then(({ data }) => { if (!cancelled) setUsername(data?.username ?? null); });
+    return () => { cancelled = true; };
+  }, [user?.id]);
 
   // Don't show on landing page (it has its own feedback button)
   const isLandingPage = location.pathname === "/landing";
@@ -62,23 +75,36 @@ export const GlobalFeedbackFAB = () => {
 
     setIsSubmitting(true);
     try {
-      const fullMessage = `[Page: ${location.pathname}] ${message.trim().slice(0, 1900)}`;
+      const submitter = user
+        ? `@${username ?? "user"} (${user.email ?? user.id})`
+        : (displayName.trim() ? `Guest: ${displayName.trim().slice(0, 60)}` : "Anonymous guest");
+      const swagLine = wantsSwag && swagEmail.trim()
+        ? `\n🎁 SWAG ENTRY: ${swagEmail.trim().slice(0, 255)}`
+        : "";
+      const fullMessage =
+        `[Page: ${location.pathname}] [From: ${submitter}] ${message.trim().slice(0, 1700)}${swagLine}`;
       const { error } = await supabase.from("user_feedback").insert({
         user_id: user?.id || null,
         feedback_type: feedbackType,
         message: fullMessage,
-        email: email.trim().slice(0, 255) || null,
+        email: (wantsSwag ? swagEmail.trim() : user?.email ?? "").slice(0, 255) || null,
       });
 
       if (error) throw error;
 
       supabase.functions.invoke("notify-feedback", {
-        body: { feedbackType, message: fullMessage, email: email.trim() || undefined },
+        body: {
+          feedbackType,
+          message: fullMessage,
+          email: (wantsSwag && swagEmail.trim()) ? swagEmail.trim() : (user?.email || undefined),
+        },
       }).catch(() => {});
 
       toast({ title: "Thank you! 🎉", description: "Your feedback has been submitted." });
       setMessage("");
-      setEmail("");
+      setDisplayName("");
+      setSwagEmail("");
+      setWantsSwag(false);
       setFeedbackType("suggestion");
       setOpen(false);
     } catch (error: any) {
@@ -172,20 +198,54 @@ export const GlobalFeedbackFAB = () => {
               </div>
             </div>
 
-            {!user && (
+            {/* Who's submitting */}
+            {user ? (
+              <div className="flex items-center gap-2 rounded-md border bg-muted/40 px-3 py-2 text-xs text-muted-foreground">
+                <UserCircle2 className="h-4 w-4 text-primary" />
+                <span>
+                  Submitting as <strong className="text-foreground">@{username ?? "you"}</strong>
+                  {" "}— no need to enter your email.
+                </span>
+              </div>
+            ) : (
               <div className="space-y-2">
-                <Label htmlFor="g-email">Email (optional)</Label>
+                <Label htmlFor="g-name">Your name or username (optional)</Label>
                 <Input
-                  id="g-email"
-                  type="email"
-                  placeholder="your@email.com"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  maxLength={255}
+                  id="g-name"
+                  type="text"
+                  placeholder="e.g. Alex, or @alex123"
+                  value={displayName}
+                  onChange={(e) => setDisplayName(e.target.value)}
+                  maxLength={60}
                 />
-                <p className="text-xs text-muted-foreground">Leave your email for follow-up</p>
               </div>
             )}
+
+            {/* Swag entry — clearly separated */}
+            <div className="rounded-lg border border-dashed border-primary/40 bg-primary/5 p-3 space-y-2">
+              <button
+                type="button"
+                onClick={() => setWantsSwag((v) => !v)}
+                className="flex items-center gap-2 text-sm font-medium text-foreground"
+              >
+                <Gift className="h-4 w-4 text-primary" />
+                {wantsSwag ? "✓ Entered for swag review" : "Enter to qualify for swag 🎁"}
+              </button>
+              <p className="text-[11px] text-muted-foreground">
+                Helpful, detailed reports may qualify for free AlphaOmega swag. Add an email so we can reach you if you win — separate from your account.
+              </p>
+              {wantsSwag && (
+                <Input
+                  id="g-swag-email"
+                  type="email"
+                  placeholder="email for swag delivery"
+                  value={swagEmail}
+                  onChange={(e) => setSwagEmail(e.target.value)}
+                  maxLength={255}
+                  className="bg-background"
+                />
+              )}
+            </div>
 
             <Button type="submit" className="w-full" disabled={isSubmitting || !message.trim()}>
               {isSubmitting ? "Submitting..." : "Submit Feedback"}
