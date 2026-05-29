@@ -125,6 +125,7 @@ const BoosterTest = lazy(() => import("@/pages/BoosterTest"));
 const PersonalStudyGuide = lazy(() => import("@/pages/PersonalStudyGuide"));
 const AdaptiveDashboard = lazy(() => import("@/pages/AdaptiveDashboard"));
 const WeaknessRetest = lazy(() => import("@/pages/WeaknessRetest"));
+const TestCatalog = lazy(() => import("@/pages/TestCatalog"));
 
 const AppRoutes = () => (
   <>
@@ -247,6 +248,8 @@ const AppRoutes = () => (
       <Route path="/study-guide" element={<ProtectedRoute><PersonalStudyGuide /></ProtectedRoute>} />
       <Route path="/adaptive" element={<ProtectedRoute><AdaptiveDashboard /></ProtectedRoute>} />
       <Route path="/weakness-retest" element={<ProtectedRoute><WeaknessRetest /></ProtectedRoute>} />
+      <Route path="/tests" element={<TestCatalog />} />
+      <Route path="/search" element={<TestCatalog />} />
       {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
       <Route path="*" element={<NotFound />} />
     </Routes>
