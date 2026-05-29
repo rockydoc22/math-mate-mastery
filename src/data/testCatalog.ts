@@ -34,16 +34,16 @@ export const TEST_CATALOG: CatalogItem[] = [
   // ───────── Downloadable courses / books ─────────
   {
     id: "aops-prealgebra",
-    title: "AoPS Pre-Algebra Mastery Test (90 Q)",
+    title: "Pre-Algebra Mastery Test (90 Q)",
     description:
-      "10 moderately hard questions per chapter across 9 AoPS Pre-Algebra chapters, with full answer key and worked explanations. PDF download.",
+      "10 moderately hard questions per chapter across 9 Pre-Algebra chapters, with instant feedback, full answer key, and an AI-powered weakness report.",
     type: "course",
     grades: ["5", "6", "7", "8"],
     ageMin: 10, ageMax: 14,
     href: "/aops-prealgebra",
     external: false,
     icon: "📐",
-    keywords: ["prealgebra", "pre-algebra", "aops", "art of problem solving", "math", "fractions", "ratios", "percents", "statistics"],
+    keywords: ["prealgebra", "pre-algebra", "math", "fractions", "ratios", "percents", "statistics"],
   },
 
   // ───────── Standardized high-school exams ─────────
