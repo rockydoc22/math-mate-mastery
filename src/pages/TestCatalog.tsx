@@ -161,31 +161,27 @@ export default function TestCatalog() {
 
         <div className="grid gap-2">
           {results.map(item => (
-            <Card
-              key={item.id}
-              asChild
-              className="p-0 cursor-pointer hover:border-primary/40 hover:shadow-md transition-all"
-            >
-            {item.external || item.href.startsWith("http") ? (
+            item.external || item.href.startsWith("http") ? (
               <a
+                key={item.id}
                 href={item.href}
                 target="_blank"
                 rel="noopener noreferrer"
                 download={item.href.endsWith(".pdf") ? "" : undefined}
-                className="block p-3"
+                className="block p-3 rounded-lg border bg-card text-card-foreground shadow-sm hover:border-primary/40 hover:shadow-md transition-all"
               >
                 <CardBody item={item} />
               </a>
             ) : (
               <button
+                key={item.id}
                 type="button"
                 onClick={() => navigate(item.href)}
-                className="block w-full text-left p-3"
+                className="block w-full text-left p-3 rounded-lg border bg-card text-card-foreground shadow-sm hover:border-primary/40 hover:shadow-md transition-all"
               >
                 <CardBody item={item} />
               </button>
-            )}
-            </Card>
+            )
           ))}
 
           {results.length === 0 && (
