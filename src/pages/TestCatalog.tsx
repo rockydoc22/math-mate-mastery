@@ -163,12 +163,47 @@ export default function TestCatalog() {
           {results.map(item => (
             <Card
               key={item.id}
-              className="p-3 cursor-pointer hover:border-primary/40 hover:shadow-md transition-all"
-              onClick={() => open(item.href, item.external)}
-              role="button"
-              tabIndex={0}
-              onKeyDown={(e) => { if (e.key === "Enter") open(item.href, item.external); }}
+              asChild
+              className="p-0 cursor-pointer hover:border-primary/40 hover:shadow-md transition-all"
             >
+            {item.external || item.href.startsWith("http") ? (
+              <a
+                href={item.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                download={item.href.endsWith(".pdf") ? "" : undefined}
+                className="block p-3"
+              >
+                <CardBody item={item} />
+              </a>
+            ) : (
+              <button
+                type="button"
+                onClick={() => navigate(item.href)}
+                className="block w-full text-left p-3"
+              >
+                <CardBody item={item} />
+              </button>
+            )}
+            </Card>
+          ))}
+
+          {results.length === 0 && (
+            <Card className="p-6 text-center">
+              <p className="text-sm text-muted-foreground">
+                No tests match your search. Try clearing filters or different keywords.
+              </p>
+              <Button variant="outline" size="sm" className="mt-3" onClick={clearAll}>Clear filters</Button>
+            </Card>
+          )}
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function CardBody({ item }: { item: ReturnType<typeof searchCatalog>[number] }) {
+  return (
               <div className="flex items-start gap-3">
                 <span className="text-2xl shrink-0">{item.icon ?? "📚"}</span>
                 <div className="flex-1 min-w-0">
@@ -195,20 +230,6 @@ export default function TestCatalog() {
                 </div>
                 {item.external && <ExternalLink className="w-4 h-4 text-muted-foreground shrink-0 mt-1" />}
               </div>
-            </Card>
-          ))}
-
-          {results.length === 0 && (
-            <Card className="p-6 text-center">
-              <p className="text-sm text-muted-foreground">
-                No tests match your search. Try clearing filters or different keywords.
-              </p>
-              <Button variant="outline" size="sm" className="mt-3" onClick={clearAll}>Clear filters</Button>
-            </Card>
-          )}
-        </div>
-      </div>
-    </div>
   );
 }
 
