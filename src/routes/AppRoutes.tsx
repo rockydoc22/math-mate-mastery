@@ -251,6 +251,7 @@ const AppRoutes = () => (
       <Route path="/weakness-retest" element={<ProtectedRoute><WeaknessRetest /></ProtectedRoute>} />
       <Route path="/tests" element={<TestCatalog />} />
       <Route path="/search" element={<TestCatalog />} />
+      <Route path="/aops-prealgebra" element={<AopsPrealgebraQuiz />} />
       {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
       <Route path="*" element={<NotFound />} />
     </Routes>
