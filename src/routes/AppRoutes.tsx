@@ -126,6 +126,7 @@ const PersonalStudyGuide = lazy(() => import("@/pages/PersonalStudyGuide"));
 const AdaptiveDashboard = lazy(() => import("@/pages/AdaptiveDashboard"));
 const WeaknessRetest = lazy(() => import("@/pages/WeaknessRetest"));
 const TestCatalog = lazy(() => import("@/pages/TestCatalog"));
+const AopsPrealgebraQuiz = lazy(() => import("@/pages/AopsPrealgebraQuiz"));
 
 const AppRoutes = () => (
   <>
