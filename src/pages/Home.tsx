@@ -3,6 +3,7 @@ import { toast } from "@/hooks/use-toast";
 import { LazyInlineMath } from '@/components/LazyKaTeX';
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
+import { Input } from "@/components/ui/input";
 import { 
   Calculator, PenTool, Trophy, Zap, Users, LogIn, User, 
   Award, Swords, ChevronRight, Flame, Brain, X,
@@ -10,7 +11,7 @@ import {
   Clock, Sparkles, Download, Lightbulb, Play, Skull, Settings, Gamepad2,
   Smartphone, Map, Star, Eye, UserPlus, ClipboardList, Building2, Heart,
   Bell, MessageCircle, FolderOpen, Coins, Timer, Layers, UsersRound,
-  Calendar, CircleDot, BookMarked, FileBarChart, TrendingUp, CalendarDays, FileQuestion, Bolt, HeartPulse, GitCompareArrows, NotebookPen, Microscope, TextQuote, Wand2, BookOpenCheck, Route, Rocket, ChevronDown
+  Calendar, CircleDot, BookMarked, FileBarChart, TrendingUp, CalendarDays, FileQuestion, Bolt, HeartPulse, GitCompareArrows, NotebookPen, Microscope, TextQuote, Wand2, BookOpenCheck, Route, Rocket, ChevronDown, Search
 } from "lucide-react";
 import { useNavigate, Link } from "react-router-dom";
 import { useAuth } from "@/hooks/useAuth";
@@ -131,11 +132,17 @@ const Home = () => {
   const [diagnosticSkipped, setDiagnosticSkipped] = useState(false);
   const [showKidSelector, setShowKidSelector] = useState(false);
   const [activeKidId, setActiveKidId] = useState<string | null>(null);
+  const [testSearchQuery, setTestSearchQuery] = useState("");
   const [focusMode, setFocusMode] = useState(() => {
     try { return localStorage.getItem('ao_focus_mode') === 'true'; } catch { return false; }
   });
   const [expandedSections, setExpandedSections] = useState<Record<string, boolean>>({});
   const nextSAT = getNextExamDate(examType);
+
+  const openTestSearch = () => {
+    const q = testSearchQuery.trim();
+    navigate(q ? `/tests?q=${encodeURIComponent(q)}` : "/tests");
+  };
 
   // Require an explicit exam choice once per browser session after login
   useEffect(() => {
@@ -408,23 +415,35 @@ const Home = () => {
         </header>
 
         {/* ══════════ Find-a-test search ══════════ */}
-        <Card
-          className="p-3 mb-4 border border-primary/20 bg-card cursor-pointer hover:border-primary/40 hover:shadow-md transition-all"
-          onClick={() => navigate('/tests')}
-          role="button"
-          aria-label="Search all tests, courses, and practice"
-        >
-          <div className="flex items-center gap-3">
+        <Card className="p-3 mb-4 border border-primary/20 bg-card">
+          <div className="flex items-center gap-3 mb-3">
             <div className="w-9 h-9 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
               <BookOpen className="w-4 h-4 text-primary" />
             </div>
             <div className="flex-1 min-w-0">
               <div className="text-sm font-semibold leading-tight">Find a test or course</div>
               <div className="text-xs text-muted-foreground truncate">
-                Search by grade, age, or type — SAT, AP, GED, Pre-Algebra…
+                Try algebra, prealgebra, GED, AP Chem, MBTI…
               </div>
             </div>
-            <ChevronRight className="w-4 h-4 text-muted-foreground" />
+          </div>
+          <div className="flex gap-2">
+            <div className="relative flex-1">
+              <Search className="w-4 h-4 absolute left-3 top-1/2 -translate-y-1/2 text-muted-foreground" />
+              <Input
+                value={testSearchQuery}
+                onChange={(e) => setTestSearchQuery(e.target.value)}
+                onKeyDown={(e) => {
+                  if (e.key === "Enter") openTestSearch();
+                }}
+                placeholder="Search algebra or prealgebra"
+                className="pl-9"
+                aria-label="Search all tests and courses"
+              />
+            </div>
+            <Button onClick={openTestSearch} className="shrink-0" aria-label="Search tests">
+              <ChevronRight className="w-4 h-4" />
+            </Button>
           </div>
         </Card>
 

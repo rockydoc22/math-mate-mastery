@@ -1,7 +1,8 @@
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
 import { EXAM_CONFIGS, type ExamType } from "@/utils/examConfig";
-import { Settings, User, RefreshCw, Bell } from "lucide-react";
+import { Search, Settings, User, RefreshCw, Bell } from "lucide-react";
 import { useNavigate, Link } from "react-router-dom";
 import { usePWAUpdate, APP_VERSION } from "@/hooks/usePWAUpdate";
 import { useAuth } from "@/hooks/useAuth";
@@ -19,6 +20,12 @@ export const ExamSelector = ({ onSelect, isModal = false }: ExamSelectorProps) =
   const { user } = useAuth();
   const [playerUsername, setPlayerUsername] = useState("Student");
   const [playerAvatar, setPlayerAvatar] = useState("🧑‍🚀");
+  const [testSearchQuery, setTestSearchQuery] = useState("");
+
+  const openTestSearch = () => {
+    const q = testSearchQuery.trim();
+    navigate(q ? `/tests?q=${encodeURIComponent(q)}` : "/tests");
+  };
 
   useEffect(() => {
     const fetchProfile = async () => {
@@ -88,6 +95,27 @@ export const ExamSelector = ({ onSelect, isModal = false }: ExamSelectorProps) =
             Choose your exam. You can switch anytime in Settings.
           </p>
         </div>
+
+        <Card className="p-3 border border-primary/20 bg-card">
+          <div className="flex gap-2">
+            <div className="relative flex-1">
+              <Search className="w-4 h-4 absolute left-3 top-1/2 -translate-y-1/2 text-muted-foreground" />
+              <Input
+                value={testSearchQuery}
+                onChange={(e) => setTestSearchQuery(e.target.value)}
+                onKeyDown={(e) => {
+                  if (e.key === "Enter") openTestSearch();
+                }}
+                placeholder="Search algebra or prealgebra"
+                className="pl-9"
+                aria-label="Search all tests and courses"
+              />
+            </div>
+            <Button onClick={openTestSearch} className="shrink-0">
+              Search
+            </Button>
+          </div>
+        </Card>
 
         {/* Category cards — all full-width */}
         <div className="space-y-3">
