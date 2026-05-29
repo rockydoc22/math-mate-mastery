@@ -126,6 +126,7 @@ const PersonalStudyGuide = lazy(() => import("@/pages/PersonalStudyGuide"));
 const AdaptiveDashboard = lazy(() => import("@/pages/AdaptiveDashboard"));
 const WeaknessRetest = lazy(() => import("@/pages/WeaknessRetest"));
 const TestCatalog = lazy(() => import("@/pages/TestCatalog"));
+const AopsPrealgebraQuiz = lazy(() => import("@/pages/AopsPrealgebraQuiz"));
 
 const AppRoutes = () => (
   <>
@@ -250,6 +251,7 @@ const AppRoutes = () => (
       <Route path="/weakness-retest" element={<ProtectedRoute><WeaknessRetest /></ProtectedRoute>} />
       <Route path="/tests" element={<TestCatalog />} />
       <Route path="/search" element={<TestCatalog />} />
+      <Route path="/aops-prealgebra" element={<AopsPrealgebraQuiz />} />
       {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
       <Route path="*" element={<NotFound />} />
     </Routes>
