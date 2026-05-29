@@ -3,6 +3,7 @@ import { toast } from "@/hooks/use-toast";
 import { LazyInlineMath } from '@/components/LazyKaTeX';
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
+import { Input } from "@/components/ui/input";
 import { 
   Calculator, PenTool, Trophy, Zap, Users, LogIn, User, 
   Award, Swords, ChevronRight, Flame, Brain, X,
@@ -10,7 +11,7 @@ import {
   Clock, Sparkles, Download, Lightbulb, Play, Skull, Settings, Gamepad2,
   Smartphone, Map, Star, Eye, UserPlus, ClipboardList, Building2, Heart,
   Bell, MessageCircle, FolderOpen, Coins, Timer, Layers, UsersRound,
-  Calendar, CircleDot, BookMarked, FileBarChart, TrendingUp, CalendarDays, FileQuestion, Bolt, HeartPulse, GitCompareArrows, NotebookPen, Microscope, TextQuote, Wand2, BookOpenCheck, Route, Rocket, ChevronDown
+  Calendar, CircleDot, BookMarked, FileBarChart, TrendingUp, CalendarDays, FileQuestion, Bolt, HeartPulse, GitCompareArrows, NotebookPen, Microscope, TextQuote, Wand2, BookOpenCheck, Route, Rocket, ChevronDown, Search
 } from "lucide-react";
 import { useNavigate, Link } from "react-router-dom";
 import { useAuth } from "@/hooks/useAuth";
@@ -131,11 +132,17 @@ const Home = () => {
   const [diagnosticSkipped, setDiagnosticSkipped] = useState(false);
   const [showKidSelector, setShowKidSelector] = useState(false);
   const [activeKidId, setActiveKidId] = useState<string | null>(null);
+  const [testSearchQuery, setTestSearchQuery] = useState("");
   const [focusMode, setFocusMode] = useState(() => {
     try { return localStorage.getItem('ao_focus_mode') === 'true'; } catch { return false; }
   });
   const [expandedSections, setExpandedSections] = useState<Record<string, boolean>>({});
   const nextSAT = getNextExamDate(examType);
+
+  const openTestSearch = () => {
+    const q = testSearchQuery.trim();
+    navigate(q ? `/tests?q=${encodeURIComponent(q)}` : "/tests");
+  };
 
   // Require an explicit exam choice once per browser session after login
   useEffect(() => {
