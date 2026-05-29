@@ -4,7 +4,7 @@ import { Card } from "@/components/ui/card";
 import { 
   Sparkles, Clock, Target, Trophy, Users, Zap, 
   CheckCircle, Star, ArrowRight, Calculator, PenTool,
-  Brain, Swords, Crown, Medal, Gamepad2, BookOpen, GraduationCap, Briefcase
+  Brain, Swords, Crown, Medal, Gamepad2, BookOpen, GraduationCap, Briefcase, Search
 } from "lucide-react";
 import { Link, useNavigate } from "react-router-dom";
 import { usePWAUpdate, APP_VERSION } from "@/hooks/usePWAUpdate";
@@ -111,6 +111,17 @@ export const LandingPage = () => {
             <h1 className="text-3xl font-bold tracking-tight mb-1">AlphaOmega — One app. Every test.</h1>
             <p className="text-sm text-muted-foreground font-medium">Free adaptive prep for SAT, ACT, AP & more.</p>
           </div>
+
+          {/* Search / Find a test */}
+          <Link to="/tests" className="block">
+            <div className="flex items-center gap-2 px-4 py-3 rounded-xl border border-border bg-card hover:border-primary/50 hover:shadow-sm transition-all text-left">
+              <Search className="w-4 h-4 text-muted-foreground shrink-0" />
+              <span className="text-sm text-muted-foreground flex-1">
+                Search tests, courses & PDFs (e.g. "prealgebra")
+              </span>
+              <ArrowRight className="w-4 h-4 text-muted-foreground" />
+            </div>
+          </Link>
 
           {/* Subheadline */}
           <p className="text-base text-muted-foreground leading-relaxed max-w-sm mx-auto">
