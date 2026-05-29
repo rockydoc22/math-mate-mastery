@@ -407,6 +407,27 @@ const Home = () => {
           </div>
         </header>
 
+        {/* ══════════ Find-a-test search ══════════ */}
+        <Card
+          className="p-3 mb-4 border border-primary/20 bg-card cursor-pointer hover:border-primary/40 hover:shadow-md transition-all"
+          onClick={() => navigate('/tests')}
+          role="button"
+          aria-label="Search all tests, courses, and practice"
+        >
+          <div className="flex items-center gap-3">
+            <div className="w-9 h-9 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
+              <BookOpen className="w-4 h-4 text-primary" />
+            </div>
+            <div className="flex-1 min-w-0">
+              <div className="text-sm font-semibold leading-tight">Find a test or course</div>
+              <div className="text-xs text-muted-foreground truncate">
+                Search by grade, age, or type — SAT, AP, GED, Pre-Algebra…
+              </div>
+            </div>
+            <ChevronRight className="w-4 h-4 text-muted-foreground" />
+          </div>
+        </Card>
+
         {/* ══════════ Concierge Coach Promo (advertise the differentiator) ══════════ */}
         {!focusMode && (
           <Card
