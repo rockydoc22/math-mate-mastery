@@ -113,13 +113,13 @@ export default function AopsPrealgebraQuiz() {
   if (phase === "intro") {
     return (
       <div className="min-h-screen bg-gradient-to-br from-background via-primary/5 to-accent/10 p-4">
-        <SEO title="AoPS Pre-Algebra Mastery Test — Interactive" description="Take the 90-question AoPS Pre-Algebra mastery test interactively with instant feedback and an AI-powered weakness report." path="/aops-prealgebra" />
+        <SEO title="Pre-Algebra Mastery Test — Interactive" description="Take the 90-question Pre-Algebra mastery test interactively with instant feedback and an AI-powered weakness report." path="/aops-prealgebra" />
         <div className="max-w-2xl mx-auto space-y-4 pt-2">
           <Button variant="ghost" size="sm" onClick={() => navigate(-1)} className="gap-1">
             <ArrowLeft className="w-4 h-4" /> Back
           </Button>
           <Card className="p-6 space-y-4">
-            <h1 className="text-2xl font-bold flex items-center gap-2">📐 AoPS Pre-Algebra Mastery</h1>
+            <h1 className="text-2xl font-bold flex items-center gap-2">📐 Pre-Algebra Mastery</h1>
             <p className="text-sm text-muted-foreground">
               90 multiple-choice questions across 9 chapters. Instant feedback per question, plus an AI-powered weakness report emailed to the teacher when you finish.
             </p>
@@ -229,7 +229,7 @@ export default function AopsPrealgebraQuiz() {
   const pct = Math.round((stats.score / stats.total) * 100);
   return (
     <div className="min-h-screen bg-gradient-to-br from-background via-primary/5 to-accent/10 p-4">
-      <SEO title="AoPS Pre-Algebra — Results" description="Mastery results and weakness analysis." path="/aops-prealgebra" />
+      <SEO title="Pre-Algebra — Results" description="Mastery results and weakness analysis." path="/aops-prealgebra" />
       <div className="max-w-2xl mx-auto space-y-4 pt-2">
         <Button variant="ghost" size="sm" onClick={() => navigate("/tests")} className="gap-1">
           <ArrowLeft className="w-4 h-4" /> Back to tests
