@@ -1245,15 +1245,15 @@ export const AOPS_QUESTIONS: AopsQuestion[] = [
     "num": 88,
     "chapter": "Statistics, Data & Probability",
     "chapterId": "ch14",
-    "prompt": "Where is Q1 (25%) in an ordered list of 20 values (rank $n\\cdot p/100$)?",
+    "prompt": "The data set $\\{4, 7, 9, 12, 15, 18, 21\\}$ has what median?",
     "options": {
-      "A": "4th value",
-      "B": "10th value",
-      "C": "15th value",
-      "D": "5th-6th value"
+      "A": "9",
+      "B": "12",
+      "C": "13",
+      "D": "15"
     },
-    "answer": "D",
-    "explanation": "$20\\times 0.25=5$, so Q1 is between 5th and 6th."
+    "answer": "B",
+    "explanation": "With 7 ordered values, the median is the 4th value, which is 12."
   },
   {
     "num": 89,
