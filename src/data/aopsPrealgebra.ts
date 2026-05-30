@@ -433,7 +433,7 @@ export const AOPS_QUESTIONS: AopsQuestion[] = [
     "num": 30,
     "chapter": "Number Theory",
     "chapterId": "ch3",
-    "prompt": "How many positive integers less than 15 are coprime to 15?",
+    "prompt": "How many positive integers less than 15 are relatively prime to 15?",
     "options": {
       "A": "6",
       "B": "8",
