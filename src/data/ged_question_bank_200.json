@@ -7698,5 +7698,706 @@
     "explanation": "Personification is giving human qualities or abilities to inanimate objects or abstract ideas. Here, the wind (inanimate) is described as 'whispering' (a human action). Hyperbole is exaggeration. Alliteration is the repetition of initial consonant sounds. Onomatopoeia is a word that imitates a sound.",
     "skill": "Identifying literary devices (personification)",
     "difficulty": "medium"
+  },
+  {
+    "id": "ged_276",
+    "exam": "GED",
+    "section": "Mathematical Reasoning",
+    "question": "What is the value of x in the equation 3x + 7 = 22?",
+    "options": [
+      {
+        "label": "A",
+        "text": "3"
+      },
+      {
+        "label": "B",
+        "text": "5"
+      },
+      {
+        "label": "C",
+        "text": "7"
+      },
+      {
+        "label": "D",
+        "text": "9"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "To solve for x, first subtract 7 from both sides of the equation: 3x + 7 - 7 = 22 - 7, which simplifies to 3x = 15. Then, divide both sides by 3: 3x / 3 = 15 / 3, which gives x = 5.",
+    "skill": "Algebra: Solving linear equations",
+    "difficulty": "Easy"
+  },
+  {
+    "id": "ged_277",
+    "exam": "GED",
+    "section": "Mathematical Reasoning",
+    "question": "A rectangle has a length of 12 units and a width of 5 units. What is its perimeter?",
+    "options": [
+      {
+        "label": "A",
+        "text": "17 units"
+      },
+      {
+        "label": "B",
+        "text": "34 units"
+      },
+      {
+        "label": "C",
+        "text": "60 units"
+      },
+      {
+        "label": "D",
+        "text": "120 units"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "The formula for the perimeter of a rectangle is P = 2(length + width). Substituting the given values, P = 2(12 + 5) = 2(17) = 34 units.",
+    "skill": "Geometry: Perimeter of a rectangle",
+    "difficulty": "Easy"
+  },
+  {
+    "id": "ged_278",
+    "exam": "GED",
+    "section": "Mathematical Reasoning",
+    "question": "What is the median of the following set of numbers: 10, 15, 5, 20, 10?",
+    "options": [
+      {
+        "label": "A",
+        "text": "5"
+      },
+      {
+        "label": "B",
+        "text": "10"
+      },
+      {
+        "label": "C",
+        "text": "12"
+      },
+      {
+        "label": "D",
+        "text": "15"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "To find the median, first arrange the numbers in ascending order: 5, 10, 10, 15, 20. The median is the middle number, which is 10.",
+    "skill": "Data Analysis: Median",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "ged_279",
+    "exam": "GED",
+    "section": "Mathematical Reasoning",
+    "question": "Simplify the expression: 4^2 - (8 / 2) + 3",
+    "options": [
+      {
+        "label": "A",
+        "text": "10"
+      },
+      {
+        "label": "B",
+        "text": "15"
+      },
+      {
+        "label": "C",
+        "text": "19"
+      },
+      {
+        "label": "D",
+        "text": "22"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Follow the order of operations (PEMDAS/BODMAS): Parentheses/Brackets first: (8 / 2) = 4. Exponents next: 4^2 = 16. Then, perform subtraction and addition from left to right: 16 - 4 + 3 = 12 + 3 = 15.",
+    "skill": "Number Sense: Order of operations",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "ged_280",
+    "exam": "GED",
+    "section": "Mathematical Reasoning",
+    "question": "If a car travels at an average speed of 60 miles per hour, how far will it travel in 2.5 hours?",
+    "options": [
+      {
+        "label": "A",
+        "text": "120 miles"
+      },
+      {
+        "label": "B",
+        "text": "150 miles"
+      },
+      {
+        "label": "C",
+        "text": "180 miles"
+      },
+      {
+        "label": "D",
+        "text": "200 miles"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Distance = Speed x Time. So, Distance = 60 miles/hour * 2.5 hours = 150 miles.",
+    "skill": "Algebra: Real-world problems",
+    "difficulty": "Easy"
+  },
+  {
+    "id": "ged_281",
+    "exam": "GED",
+    "section": "Mathematical Reasoning",
+    "question": "What is the area of a circle with a radius of 7 units? (Use pi approximately = 3.14)",
+    "options": [
+      {
+        "label": "A",
+        "text": "21.98 square units"
+      },
+      {
+        "label": "B",
+        "text": "43.96 square units"
+      },
+      {
+        "label": "C",
+        "text": "153.86 square units"
+      },
+      {
+        "label": "D",
+        "text": "307.72 square units"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "The formula for the area of a circle is A = pi * r^2. Substituting r = 7 and pi = 3.14, A = 3.14 * (7^2) = 3.14 * 49 = 153.86 square units.",
+    "skill": "Geometry: Area of a circle",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "ged_282",
+    "exam": "GED",
+    "section": "Mathematical Reasoning",
+    "question": "A survey asked 200 people their favorite color. 80 people chose blue. What percentage of people chose blue?",
+    "options": [
+      {
+        "label": "A",
+        "text": "20%"
+      },
+      {
+        "label": "B",
+        "text": "40%"
+      },
+      {
+        "label": "C",
+        "text": "60%"
+      },
+      {
+        "label": "D",
+        "text": "80%"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "To find the percentage, divide the number of people who chose blue by the total number of people and multiply by 100: (80 / 200) * 100 = 0.4 * 100 = 40%.",
+    "skill": "Data Analysis: Percentages",
+    "difficulty": "Easy"
+  },
+  {
+    "id": "ged_283",
+    "exam": "GED",
+    "section": "Mathematical Reasoning",
+    "question": "Which of the following is equivalent to (x^3)^2?",
+    "options": [
+      {
+        "label": "A",
+        "text": "x^5"
+      },
+      {
+        "label": "B",
+        "text": "x^6"
+      },
+      {
+        "label": "C",
+        "text": "x^9"
+      },
+      {
+        "label": "D",
+        "text": "2x^3"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "When raising a power to another power, you multiply the exponents: (x^m)^n = x^(m*n). So, (x^3)^2 = x^(3*2) = x^6.",
+    "skill": "Algebra: Exponent rules",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "ged_284",
+    "exam": "GED",
+    "section": "Mathematical Reasoning",
+    "question": "A square has an area of 36 square inches. What is the length of one side?",
+    "options": [
+      {
+        "label": "A",
+        "text": "4 inches"
+      },
+      {
+        "label": "B",
+        "text": "6 inches"
+      },
+      {
+        "label": "C",
+        "text": "9 inches"
+      },
+      {
+        "label": "D",
+        "text": "18 inches"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "The area of a square is given by the formula A = s^2, where s is the length of a side. So, s^2 = 36. To find s, take the square root of 36: s = sqrt(36) = 6 inches.",
+    "skill": "Geometry: Area of a square",
+    "difficulty": "Easy"
+  },
+  {
+    "id": "ged_285",
+    "exam": "GED",
+    "section": "Mathematical Reasoning",
+    "question": "What is the value of 0.75 as a fraction in simplest form?",
+    "options": [
+      {
+        "label": "A",
+        "text": "1/4"
+      },
+      {
+        "label": "B",
+        "text": "3/4"
+      },
+      {
+        "label": "C",
+        "text": "7/5"
+      },
+      {
+        "label": "D",
+        "text": "75/100"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "0.75 can be written as 75/100. To simplify this fraction, divide both the numerator and the denominator by their greatest common divisor, which is 25. So, 75 / 25 = 3 and 100 / 25 = 4. The simplified fraction is 3/4.",
+    "skill": "Number Sense: Converting decimals to fractions",
+    "difficulty": "Easy"
+  },
+  {
+    "id": "ged_286",
+    "exam": "GED",
+    "section": "Mathematical Reasoning",
+    "question": "Which of the following expressions is equivalent to 2(x + 5) - 3x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "5x + 10"
+      },
+      {
+        "label": "B",
+        "text": "-x + 10"
+      },
+      {
+        "label": "C",
+        "text": "2x + 5 - 3x"
+      },
+      {
+        "label": "D",
+        "text": "-x + 5"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "First, distribute the 2 into the parentheses: 2 * x + 2 * 5 - 3x = 2x + 10 - 3x. Then combine like terms: (2x - 3x) + 10 = -x + 10.",
+    "skill": "Algebra: Simplifying algebraic expressions",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "ged_287",
+    "exam": "GED",
+    "section": "Mathematical Reasoning",
+    "question": "A circular garden has a diameter of 10 feet. What is the circumference of the garden? (Use pi approximately = 3.14)",
+    "options": [
+      {
+        "label": "A",
+        "text": "15.7 feet"
+      },
+      {
+        "label": "B",
+        "text": "31.4 feet"
+      },
+      {
+        "label": "C",
+        "text": "78.5 feet"
+      },
+      {
+        "label": "D",
+        "text": "100 feet"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "The formula for the circumference of a circle is C = pi * d, where d is the diameter. Given d = 10, C = 3.14 * 10 = 31.4 feet.",
+    "skill": "Geometry: Circumference of a circle",
+    "difficulty": "Easy"
+  },
+  {
+    "id": "ged_288",
+    "exam": "GED",
+    "section": "Mathematical Reasoning",
+    "question": "The temperatures recorded for five days were: 68, 72, 70, 75, 65. What is the mean (average) temperature?",
+    "options": [
+      {
+        "label": "A",
+        "text": "68 degrees"
+      },
+      {
+        "label": "B",
+        "text": "70 degrees"
+      },
+      {
+        "label": "C",
+        "text": "72 degrees"
+      },
+      {
+        "label": "D",
+        "text": "75 degrees"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "To find the mean, sum all the temperatures and divide by the number of days: (68 + 72 + 70 + 75 + 65) / 5 = 350 / 5 = 70 degrees.",
+    "skill": "Data Analysis: Mean",
+    "difficulty": "Easy"
+  },
+  {
+    "id": "ged_289",
+    "exam": "GED",
+    "section": "Mathematical Reasoning",
+    "question": "If a shirt costs $25 and is on sale for 20% off, what is the sale price?",
+    "options": [
+      {
+        "label": "A",
+        "text": "$5.00"
+      },
+      {
+        "label": "B",
+        "text": "$15.00"
+      },
+      {
+        "label": "C",
+        "text": "$20.00"
+      },
+      {
+        "label": "D",
+        "text": "$30.00"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "First, calculate the discount amount: 20% of $25 = 0.20 * 25 = $5.00. Then, subtract the discount from the original price: $25 - $5 = $20.00.",
+    "skill": "Number Sense: Percentages and discounts",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "ged_290",
+    "exam": "GED",
+    "section": "Mathematical Reasoning",
+    "question": "Solve for y: 2y - 4 = 16",
+    "options": [
+      {
+        "label": "A",
+        "text": "6"
+      },
+      {
+        "label": "B",
+        "text": "8"
+      },
+      {
+        "label": "C",
+        "text": "10"
+      },
+      {
+        "label": "D",
+        "text": "12"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Add 4 to both sides: 2y - 4 + 4 = 16 + 4, which simplifies to 2y = 20. Then, divide both sides by 2: 2y / 2 = 20 / 2, which gives y = 10.",
+    "skill": "Algebra: Solving linear equations",
+    "difficulty": "Easy"
+  },
+  {
+    "id": "ged_291",
+    "exam": "GED",
+    "section": "Mathematical Reasoning",
+    "question": "What is the volume of a rectangular prism with length = 5 cm, width = 3 cm, and height = 4 cm?",
+    "options": [
+      {
+        "label": "A",
+        "text": "12 cubic cm"
+      },
+      {
+        "label": "B",
+        "text": "20 cubic cm"
+      },
+      {
+        "label": "C",
+        "text": "30 cubic cm"
+      },
+      {
+        "label": "D",
+        "text": "60 cubic cm"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "The formula for the volume of a rectangular prism is V = length * width * height. So, V = 5 * 3 * 4 = 60 cubic cm.",
+    "skill": "Geometry: Volume of a rectangular prism",
+    "difficulty": "Easy"
+  },
+  {
+    "id": "ged_292",
+    "exam": "GED",
+    "section": "Mathematical Reasoning",
+    "question": "A bag contains 5 red marbles, 3 blue marbles, and 2 green marbles. If one marble is chosen at random, what is the probability of choosing a blue marble?",
+    "options": [
+      {
+        "label": "A",
+        "text": "1/10"
+      },
+      {
+        "label": "B",
+        "text": "3/10"
+      },
+      {
+        "label": "C",
+        "text": "1/2"
+      },
+      {
+        "label": "D",
+        "text": "3/5"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "First, find the total number of marbles: 5 + 3 + 2 = 10. The number of blue marbles is 3. The probability of choosing a blue marble is the number of blue marbles divided by the total number of marbles: 3/10.",
+    "skill": "Data Analysis: Probability",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "ged_293",
+    "exam": "GED",
+    "section": "Mathematical Reasoning",
+    "question": "Which of the following is an irrational number?",
+    "options": [
+      {
+        "label": "A",
+        "text": "1/2"
+      },
+      {
+        "label": "B",
+        "text": "sqrt(4)"
+      },
+      {
+        "label": "C",
+        "text": "0.333..."
+      },
+      {
+        "label": "D",
+        "text": "sqrt(3)"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "An irrational number cannot be expressed as a simple fraction. 1/2 is a rational number. sqrt(4) = 2, which is rational. 0.333... is a repeating decimal, which can be expressed as 1/3, so it's rational. sqrt(3) is an unending, non-repeating decimal, making it irrational.",
+    "skill": "Number Sense: Rational and irrational numbers",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "ged_294",
+    "exam": "GED",
+    "section": "Mathematical Reasoning",
+    "question": "What is the slope of the line that passes through the points (2, 3) and (4, 7)?",
+    "options": [
+      {
+        "label": "A",
+        "text": "1/2"
+      },
+      {
+        "label": "B",
+        "text": "1"
+      },
+      {
+        "label": "C",
+        "text": "2"
+      },
+      {
+        "label": "D",
+        "text": "4"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "The formula for the slope (m) is (y2 - y1) / (x2 - x1). Using the points (2, 3) and (4, 7), m = (7 - 3) / (4 - 2) = 4 / 2 = 2.",
+    "skill": "Algebra: Slope of a line",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "ged_295",
+    "exam": "GED",
+    "section": "Mathematical Reasoning",
+    "question": "A tree casts a shadow 15 feet long. At the same time, a 6-foot tall person casts a 3-foot long shadow. How tall is the tree?",
+    "options": [
+      {
+        "label": "A",
+        "text": "20 feet"
+      },
+      {
+        "label": "B",
+        "text": "25 feet"
+      },
+      {
+        "label": "C",
+        "text": "30 feet"
+      },
+      {
+        "label": "D",
+        "text": "35 feet"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "This is a similar triangles problem. The ratio of height to shadow length is constant. Let H be the height of the tree. H/15 = 6/3. Simplify the ratio for the person: 6/3 = 2. So, H/15 = 2. Multiply both sides by 15: H = 2 * 15 = 30 feet.",
+    "skill": "Geometry: Similar triangles and ratios",
+    "difficulty": "Hard"
+  },
+  {
+    "id": "ged_296",
+    "exam": "GED",
+    "section": "Mathematical Reasoning",
+    "question": "What is 15% of 80?",
+    "options": [
+      {
+        "label": "A",
+        "text": "8"
+      },
+      {
+        "label": "B",
+        "text": "12"
+      },
+      {
+        "label": "C",
+        "text": "15"
+      },
+      {
+        "label": "D",
+        "text": "20"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "To find 15% of 80, convert the percentage to a decimal (0.15) and multiply by 80: 0.15 * 80 = 12.",
+    "skill": "Number Sense: Percentages",
+    "difficulty": "Easy"
+  },
+  {
+    "id": "ged_297",
+    "exam": "GED",
+    "section": "Mathematical Reasoning",
+    "question": "Simplify the expression: (x - 3)(x + 4)",
+    "options": [
+      {
+        "label": "A",
+        "text": "x^2 - 12"
+      },
+      {
+        "label": "B",
+        "text": "x^2 + x - 12"
+      },
+      {
+        "label": "C",
+        "text": "x^2 + x + 12"
+      },
+      {
+        "label": "D",
+        "text": "x^2 - x - 12"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Use the FOIL method (First, Outer, Inner, Last): \nFirst: x * x = x^2\nOuter: x * 4 = 4x\nInner: -3 * x = -3x\nLast: -3 * 4 = -12\nCombine these terms: x^2 + 4x - 3x - 12 = x^2 + x - 12.",
+    "skill": "Algebra: Multiplying binomials",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "ged_298",
+    "exam": "GED",
+    "section": "Mathematical Reasoning",
+    "question": "What is the value of 'a' in the right triangle shown, if the hypotenuse is 13 and one leg is 5?",
+    "options": [
+      {
+        "label": "A",
+        "text": "8"
+      },
+      {
+        "label": "B",
+        "text": "10"
+      },
+      {
+        "label": "C",
+        "text": "12"
+      },
+      {
+        "label": "D",
+        "text": "14"
+      }
+    ],
+    "question_image": "Pythagorean_Theorem_Triangle.png",
+    "correctAnswer": "C",
+    "explanation": "Use the Pythagorean theorem: a^2 + b^2 = c^2, where c is the hypotenuse. We have a^2 + 5^2 = 13^2. So, a^2 + 25 = 169. Subtract 25 from both sides: a^2 = 144. Take the square root of both sides: a = sqrt(144) = 12.",
+    "skill": "Geometry: Pythagorean theorem",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "ged_299",
+    "exam": "GED",
+    "section": "Mathematical Reasoning",
+    "question": "A recipe calls for 2 cups of flour for every 3 cups of sugar. If you use 6 cups of flour, how many cups of sugar do you need?",
+    "options": [
+      {
+        "label": "A",
+        "text": "4 cups"
+      },
+      {
+        "label": "B",
+        "text": "6 cups"
+      },
+      {
+        "label": "C",
+        "text": "9 cups"
+      },
+      {
+        "label": "D",
+        "text": "12 cups"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Set up a proportion: 2/3 = 6/x. Cross-multiply: 2 * x = 3 * 6. This gives 2x = 18. Divide by 2: x = 9 cups of sugar.",
+    "skill": "Number Sense: Ratios and proportions",
+    "difficulty": "Medium"
+  },
+  {
+    "id": "ged_300",
+    "exam": "GED",
+    "section": "Mathematical Reasoning",
+    "question": "A farmer harvested 3/4 of his corn crop on Monday and 1/8 of his crop on Tuesday. What fraction of his corn crop has he harvested in total?",
+    "options": [
+      {
+        "label": "A",
+        "text": "4/12"
+      },
+      {
+        "label": "B",
+        "text": "1/2"
+      },
+      {
+        "label": "C",
+        "text": "7/8"
+      },
+      {
+        "label": "D",
+        "text": "5/4"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "To add fractions, they must have a common denominator. The least common multiple of 4 and 8 is 8. Convert 3/4 to eighths: (3 * 2) / (4 * 2) = 6/8. Now add the fractions: 6/8 + 1/8 = 7/8.",
+    "skill": "Number Sense: Adding fractions",
+    "difficulty": "Medium"
   }
 ]
