@@ -6158,5 +6158,2245 @@
     ],
     "correctAnswer": "D",
     "explanation": "Rules and laws support fairness, order, and safety in communities."
+  },
+  {
+    "id": "iowa_221",
+    "exam": "Iowa/Stanford 10",
+    "section": "Science",
+    "question": "Which of the following is the primary source of energy for most ecosystems on Earth?",
+    "options": [
+      {
+        "label": "A",
+        "text": "The Sun"
+      },
+      {
+        "label": "B",
+        "text": "The Moon"
+      },
+      {
+        "label": "C",
+        "text": "Geothermal Vents"
+      },
+      {
+        "label": "D",
+        "text": "Lightning"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Photosynthesis, the process by which plants convert light energy into chemical energy, is the foundation of most food chains, and plants primarily use sunlight for this process.",
+    "skill": "Life Science",
+    "difficulty": "easy"
+  },
+  {
+    "id": "iowa_222",
+    "exam": "Iowa/Stanford 10",
+    "section": "Science",
+    "question": "What is the process by which plants release water vapor into the atmosphere?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Respiration"
+      },
+      {
+        "label": "B",
+        "text": "Photosynthesis"
+      },
+      {
+        "label": "C",
+        "text": "Transpiration"
+      },
+      {
+        "label": "D",
+        "text": "Evaporation"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Transpiration is the process where moisture is carried through plants from roots to small pores on the underside of leaves, where it changes to vapor and is released to the atmosphere.",
+    "skill": "Life Science",
+    "difficulty": "medium"
+  },
+  {
+    "id": "iowa_223",
+    "exam": "Iowa/Stanford 10",
+    "section": "Science",
+    "question": "Which gas makes up the largest percentage of Earth's atmosphere?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Oxygen"
+      },
+      {
+        "label": "B",
+        "text": "Carbon Dioxide"
+      },
+      {
+        "label": "C",
+        "text": "Nitrogen"
+      },
+      {
+        "label": "D",
+        "text": "Argon"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Earth's atmosphere is composed of approximately 78% nitrogen, 21% oxygen, and small amounts of other gases.",
+    "skill": "Earth Science",
+    "difficulty": "easy"
+  },
+  {
+    "id": "iowa_224",
+    "exam": "Iowa/Stanford 10",
+    "section": "Science",
+    "question": "What is the chemical symbol for water?",
+    "options": [
+      {
+        "label": "A",
+        "text": "O2"
+      },
+      {
+        "label": "B",
+        "text": "CO2"
+      },
+      {
+        "label": "C",
+        "text": "H2O"
+      },
+      {
+        "label": "D",
+        "text": "NaCl"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Water is a molecule composed of two hydrogen atoms and one oxygen atom, represented by the chemical formula H2O.",
+    "skill": "Physical Science",
+    "difficulty": "easy"
+  },
+  {
+    "id": "iowa_225",
+    "exam": "Iowa/Stanford 10",
+    "section": "Science",
+    "question": "Which of the following is a renewable energy source?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Coal"
+      },
+      {
+        "label": "B",
+        "text": "Natural Gas"
+      },
+      {
+        "label": "C",
+        "text": "Solar Power"
+      },
+      {
+        "label": "D",
+        "text": "Petroleum"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Solar power is a renewable energy source because the sun's energy is constantly replenished, unlike fossil fuels like coal, natural gas, and petroleum which are finite.",
+    "skill": "Physical Science",
+    "difficulty": "medium"
+  },
+  {
+    "id": "iowa_226",
+    "exam": "Iowa/Stanford 10",
+    "section": "Science",
+    "question": "What is the process by which rocks are broken down into smaller pieces?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Sedimentation"
+      },
+      {
+        "label": "B",
+        "text": "Erosion"
+      },
+      {
+        "label": "C",
+        "text": "Weathering"
+      },
+      {
+        "label": "D",
+        "text": "Metamorphism"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Weathering is the breakdown or dissolution of rocks and minerals on the Earth's surface.",
+    "skill": "Earth Science",
+    "difficulty": "medium"
+  },
+  {
+    "id": "iowa_227",
+    "exam": "Iowa/Stanford 10",
+    "section": "Science",
+    "question": "Which part of a plant is responsible for absorbing water and nutrients from the soil?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Leaves"
+      },
+      {
+        "label": "B",
+        "text": "Stem"
+      },
+      {
+        "label": "C",
+        "text": "Flowers"
+      },
+      {
+        "label": "D",
+        "text": "Roots"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Roots anchor the plant and are specialized for absorbing water and dissolved minerals from the soil.",
+    "skill": "Life Science",
+    "difficulty": "easy"
+  },
+  {
+    "id": "iowa_228",
+    "exam": "Iowa/Stanford 10",
+    "section": "Science",
+    "question": "What is the force that pulls objects towards the center of the Earth?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Magnetism"
+      },
+      {
+        "label": "B",
+        "text": "Friction"
+      },
+      {
+        "label": "C",
+        "text": "Gravity"
+      },
+      {
+        "label": "D",
+        "text": "Inertia"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Gravity is the fundamental force of attraction that exists between all objects with mass. On Earth, it's what keeps us grounded.",
+    "skill": "Physical Science",
+    "difficulty": "easy"
+  },
+  {
+    "id": "iowa_229",
+    "exam": "Iowa/Stanford 10",
+    "section": "Science",
+    "question": "Which state of matter has a definite shape and a definite volume?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Liquid"
+      },
+      {
+        "label": "B",
+        "text": "Gas"
+      },
+      {
+        "label": "C",
+        "text": "Solid"
+      },
+      {
+        "label": "D",
+        "text": "Plasma"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Solids are characterized by rigidly held particles in a fixed arrangement, giving them both a definite shape and volume.",
+    "skill": "Physical Science",
+    "difficulty": "medium"
+  },
+  {
+    "id": "iowa_230",
+    "exam": "Iowa/Stanford 10",
+    "section": "Science",
+    "question": "What is the primary function of red blood cells in the human body?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Fighting infection"
+      },
+      {
+        "label": "B",
+        "text": "Carrying oxygen"
+      },
+      {
+        "label": "C",
+        "text": "Clotting blood"
+      },
+      {
+        "label": "D",
+        "text": "Digesting food"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Red blood cells contain hemoglobin, a protein that binds to oxygen in the lungs and transports it to tissues throughout the body.",
+    "skill": "Life Science",
+    "difficulty": "medium"
+  },
+  {
+    "id": "iowa_231",
+    "exam": "Iowa/Stanford 10",
+    "section": "Science",
+    "question": "The Earth revolves around which celestial body?",
+    "options": [
+      {
+        "label": "A",
+        "text": "The Moon"
+      },
+      {
+        "label": "B",
+        "text": "The Sun"
+      },
+      {
+        "label": "C",
+        "text": "Mars"
+      },
+      {
+        "label": "D",
+        "text": "Jupiter"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "The Earth orbits the Sun, completing one revolution approximately every 365.25 days, which defines a year.",
+    "skill": "Earth Science",
+    "difficulty": "easy"
+  },
+  {
+    "id": "iowa_232",
+    "exam": "Iowa/Stanford 10",
+    "section": "Science",
+    "question": "What is a producer in a food chain?",
+    "options": [
+      {
+        "label": "A",
+        "text": "An organism that eats other organisms."
+      },
+      {
+        "label": "B",
+        "text": "An organism that breaks down dead matter."
+      },
+      {
+        "label": "C",
+        "text": "An organism that creates its own food, usually through photosynthesis."
+      },
+      {
+        "label": "D",
+        "text": "An organism that only consumes plants."
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Producers, like plants and algae, form the base of most food chains by converting light energy into chemical energy (food).",
+    "skill": "Life Science",
+    "difficulty": "medium"
+  },
+  {
+    "id": "iowa_233",
+    "exam": "Iowa/Stanford 10",
+    "section": "Science",
+    "question": "Which of the following is an example of a chemical change?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Melting ice"
+      },
+      {
+        "label": "B",
+        "text": "Boiling water"
+      },
+      {
+        "label": "C",
+        "text": "Burning wood"
+      },
+      {
+        "label": "D",
+        "text": "Dissolving sugar in water"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Burning wood is a chemical change because new substances (ash, smoke, gases) are formed. Melting, boiling, and dissolving are typically physical changes where the substance's identity remains the same.",
+    "skill": "Physical Science",
+    "difficulty": "hard"
+  },
+  {
+    "id": "iowa_234",
+    "exam": "Iowa/Stanford 10",
+    "section": "Science",
+    "question": "What are the building blocks of all matter?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Molecules"
+      },
+      {
+        "label": "B",
+        "text": "Cells"
+      },
+      {
+        "label": "C",
+        "text": "Atoms"
+      },
+      {
+        "label": "D",
+        "text": "Protons"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Atoms are the smallest unit of an element that retains the chemical properties of that element and are considered the fundamental building blocks of matter.",
+    "skill": "Physical Science",
+    "difficulty": "medium"
+  },
+  {
+    "id": "iowa_235",
+    "exam": "Iowa/Stanford 10",
+    "section": "Science",
+    "question": "During a full moon, what is the relative position of the Sun, Earth, and Moon?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Sun - Moon - Earth"
+      },
+      {
+        "label": "B",
+        "text": "Sun - Earth - Moon"
+      },
+      {
+        "label": "C",
+        "text": "Earth - Sun - Moon"
+      },
+      {
+        "label": "D",
+        "text": "Moon - Sun - Earth"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "A full moon occurs when the Earth is between the Sun and the Moon, allowing the side of the Moon facing Earth to be fully illuminated by the Sun.",
+    "skill": "Earth Science",
+    "difficulty": "hard"
+  },
+  {
+    "id": "iowa_236",
+    "exam": "Iowa/Stanford 10",
+    "section": "Science",
+    "question": "Which organ system is responsible for breaking down food into nutrients that can be absorbed by the body?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Circulatory System"
+      },
+      {
+        "label": "B",
+        "text": "Nervous System"
+      },
+      {
+        "label": "C",
+        "text": "Respiratory System"
+      },
+      {
+        "label": "D",
+        "text": "Digestive System"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "The digestive system breaks down food mechanically and chemically, absorbing essential nutrients and eliminating waste products.",
+    "skill": "Life Science",
+    "difficulty": "easy"
+  },
+  {
+    "id": "iowa_237",
+    "exam": "Iowa/Stanford 10",
+    "section": "Language",
+    "question": "Which sentence uses punctuation correctly?",
+    "options": [
+      {
+        "label": "A",
+        "text": "The dog, barked loudly at the mailman."
+      },
+      {
+        "label": "B",
+        "text": "The dog barked, loudly at the mailman."
+      },
+      {
+        "label": "C",
+        "text": "The dog barked loudly, at the mailman."
+      },
+      {
+        "label": "D",
+        "text": "The dog barked loudly at the mailman."
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "A comma should not separate a verb from its adverbial phrase when the adverb is essential to the meaning of the verb's action. In this case, 'loudly' modifies 'barked' directly.",
+    "skill": "Punctuation",
+    "difficulty": "easy"
+  },
+  {
+    "id": "iowa_238",
+    "exam": "Iowa/Stanford 10",
+    "section": "Language",
+    "question": "Identify the subject in the following sentence: 'Running quickly, the athlete crossed the finish line.'",
+    "options": [
+      {
+        "label": "A",
+        "text": "Running"
+      },
+      {
+        "label": "B",
+        "text": "athlete"
+      },
+      {
+        "label": "C",
+        "text": "quickly"
+      },
+      {
+        "label": "D",
+        "text": "finish line"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "The subject of a sentence is the noun or pronoun that performs the action of the verb or is described by the verb. In this sentence, 'athlete' is performing the action of 'crossed'. 'Running quickly' is a participial phrase modifying 'athlete'.",
+    "skill": "Grammar (Subject-Verb)",
+    "difficulty": "medium"
+  },
+  {
+    "id": "iowa_239",
+    "exam": "Iowa/Stanford 10",
+    "section": "Language",
+    "question": "Choose the sentence that contains a pronoun agreement error.",
+    "options": [
+      {
+        "label": "A",
+        "text": "Each student should bring their own lunch."
+      },
+      {
+        "label": "B",
+        "text": "The team celebrated their victory."
+      },
+      {
+        "label": "C",
+        "text": "My sister and I will go to the park."
+      },
+      {
+        "label": "D",
+        "text": "The cat groomed itself meticulously."
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "The pronoun 'their' does not agree in number with the singular antecedent 'Each student'. While 'their' is increasingly accepted as a singular pronoun, in formal grammar, 'his or her' or rephrasing the sentence is preferred.",
+    "skill": "Pronoun Agreement",
+    "difficulty": "medium"
+  },
+  {
+    "id": "iowa_240",
+    "exam": "Iowa/Stanford 10",
+    "section": "Language",
+    "question": "Which word is a synonym for 'benevolent'?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Cruel"
+      },
+      {
+        "label": "B",
+        "text": "Generous"
+      },
+      {
+        "label": "C",
+        "text": "Angry"
+      },
+      {
+        "label": "D",
+        "text": "Tired"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Benevolent means well-meaning and kindly. Generous is a close synonym, indicating a willingness to give or share.",
+    "skill": "Vocabulary (Synonyms)",
+    "difficulty": "easy"
+  },
+  {
+    "id": "iowa_241",
+    "exam": "Iowa/Stanford 10",
+    "section": "Language",
+    "question": "Rephrase the following sentence to avoid passive voice: 'The book was read by many students.'",
+    "options": [
+      {
+        "label": "A",
+        "text": "Many students read the book."
+      },
+      {
+        "label": "B",
+        "text": "The book did not get read by students."
+      },
+      {
+        "label": "C",
+        "text": "Reading the book was difficult."
+      },
+      {
+        "label": "D",
+        "text": "Students were reading the book."
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "The original sentence is in passive voice ('was read by'). The active voice version places the doer ('many students') as the subject performing the action ('read').",
+    "skill": "Sentence Structure (Active/Passive Voice)",
+    "difficulty": "medium"
+  },
+  {
+    "id": "iowa_242",
+    "exam": "Iowa/Stanford 10",
+    "section": "Language",
+    "question": "Which of the following is a compound sentence?",
+    "options": [
+      {
+        "label": "A",
+        "text": "The cat slept on the mat."
+      },
+      {
+        "label": "B",
+        "text": "Because it was raining, we stayed inside."
+      },
+      {
+        "label": "C",
+        "text": "She studied hard, and she passed the exam."
+      },
+      {
+        "label": "D",
+        "text": "Running is good exercise."
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "A compound sentence consists of two or more independent clauses joined by a coordinating conjunction (like 'and', 'but', 'or') or a semicolon. 'She studied hard' is an independent clause, and 'she passed the exam' is another independent clause, joined by 'and'.",
+    "skill": "Sentence Structure (Clauses)",
+    "difficulty": "hard"
+  },
+  {
+    "id": "iowa_243",
+    "exam": "Iowa/Stanford 10",
+    "section": "Language",
+    "question": "Choose the sentence with the correct use of an apostrophe.",
+    "options": [
+      {
+        "label": "A",
+        "text": "The dogs' bowls were clean."
+      },
+      {
+        "label": "B",
+        "text": "The dogs bowl was clean."
+      },
+      {
+        "label": "C",
+        "text": "The dog's bowls were clean."
+      },
+      {
+        "label": "D",
+        "text": "The dogs bowls were clean."
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "The apostrophe in 'dog's' indicates possession. It means the bowls belonging to the dog. Option A would be correct if there were multiple dogs and multiple bowls.",
+    "skill": "Punctuation (Apostrophes)",
+    "difficulty": "medium"
+  },
+  {
+    "id": "iowa_244",
+    "exam": "Iowa/Stanford 10",
+    "section": "Language",
+    "question": "What is the meaning of the idiom 'bite the bullet'?",
+    "options": [
+      {
+        "label": "A",
+        "text": "To procrastinate"
+      },
+      {
+        "label": "B",
+        "text": "To avoid a difficult situation"
+      },
+      {
+        "label": "C",
+        "text": "To face a difficult or unpleasant situation with courage"
+      },
+      {
+        "label": "D",
+        "text": "To celebrate a victory"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "The idiom 'bite the bullet' means to endure a painful or unpleasant situation with stoicism and courage, often when there is no alternative.",
+    "skill": "Vocabulary (Idioms)",
+    "difficulty": "medium"
+  },
+  {
+    "id": "iowa_245",
+    "exam": "Iowa/Stanford 10",
+    "section": "Language",
+    "question": "Which sentence contains a misplaced modifier?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Scurrying across the floor, the child chased the mouse."
+      },
+      {
+        "label": "B",
+        "text": "The student read a book about ancient Rome on the bus."
+      },
+      {
+        "label": "C",
+        "text": "I saw a dog walking down the street with a long tail."
+      },
+      {
+        "label": "D",
+        "text": "The bright red car sped down the highway."
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "The phrase 'with a long tail' seems to modify 'the street', which is nonsensical. It should be placed closer to 'dog' to indicate that the dog has the long tail.",
+    "skill": "Sentence Structure (Modifiers)",
+    "difficulty": "hard"
+  },
+  {
+    "id": "iowa_246",
+    "exam": "Iowa/Stanford 10",
+    "section": "Language",
+    "question": "Choose the word that is spelled correctly.",
+    "options": [
+      {
+        "label": "A",
+        "text": "Accommodate"
+      },
+      {
+        "label": "B",
+        "text": "Acommodate"
+      },
+      {
+        "label": "C",
+        "text": "Accomodate"
+      },
+      {
+        "label": "D",
+        "text": "Acomodate"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "The correct spelling of the word meaning to provide lodging or sufficient space is 'accommodate', with two 'c's and two 'm's.",
+    "skill": "Spelling",
+    "difficulty": "medium"
+  },
+  {
+    "id": "iowa_247",
+    "exam": "Iowa/Stanford 10",
+    "section": "Language",
+    "question": "Which sentence uses parallel structure correctly?",
+    "options": [
+      {
+        "label": "A",
+        "text": "She likes to swim, hiking, and to read."
+      },
+      {
+        "label": "B",
+        "text": "She likes swimming, hiking, and reading."
+      },
+      {
+        "label": "C",
+        "text": "She likes to swim, to hike, and reading."
+      },
+      {
+        "label": "D",
+        "text": "She likes swimming, to hike, and reads."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Parallel structure requires that elements in a series have similar grammatical form. In option B, all three actions ('swimming', 'hiking', 'reading') are gerunds, maintaining parallel structure.",
+    "skill": "Sentence Structure (Parallelism)",
+    "difficulty": "hard"
+  },
+  {
+    "id": "iowa_248",
+    "exam": "Iowa/Stanford 10",
+    "section": "Language",
+    "question": "Identify the adjective in the following sentence: 'The fluffy cat slept peacefully.'",
+    "options": [
+      {
+        "label": "A",
+        "text": "The"
+      },
+      {
+        "label": "B",
+        "text": "fluffy"
+      },
+      {
+        "label": "C",
+        "text": "cat"
+      },
+      {
+        "label": "D",
+        "text": "peacefully"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "An adjective modifies a noun or pronoun. 'Fluffy' describes the noun 'cat'. 'Peacefully' is an adverb modifying the verb 'slept'.",
+    "skill": "Grammar (Parts of Speech - Adjectives)",
+    "difficulty": "easy"
+  },
+  {
+    "id": "iowa_249",
+    "exam": "Iowa/Stanford 10",
+    "section": "Language",
+    "question": "Which word is an antonym for 'gregarious'?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Sociable"
+      },
+      {
+        "label": "B",
+        "text": "Friendly"
+      },
+      {
+        "label": "C",
+        "text": "Shy"
+      },
+      {
+        "label": "D",
+        "text": "Outgoing"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Gregarious means fond of company; sociable. 'Shy' is the opposite, indicating a lack of sociability.",
+    "skill": "Vocabulary (Antonyms)",
+    "difficulty": "medium"
+  },
+  {
+    "id": "iowa_250",
+    "exam": "Iowa/Stanford 10",
+    "section": "Language",
+    "question": "What kind of sentence is this: 'If you finish your homework, you can play outside.'?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Simple sentence"
+      },
+      {
+        "label": "B",
+        "text": "Compound sentence"
+      },
+      {
+        "label": "C",
+        "text": "Complex sentence"
+      },
+      {
+        "label": "D",
+        "text": "Compound-complex sentence"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "A complex sentence contains one independent clause and at least one dependent clause. 'You can play outside' is the independent clause, and 'If you finish your homework' is the dependent clause, introduced by the subordinating conjunction 'If'.",
+    "skill": "Sentence Structure (Sentence Types)",
+    "difficulty": "hard"
+  },
+  {
+    "id": "iowa_251",
+    "exam": "Iowa/Stanford 10",
+    "section": "Language",
+    "question": "Choose the correct homophone for the sentence: 'The ___ of the cake was delicious.'",
+    "options": [
+      {
+        "label": "A",
+        "text": "wear"
+      },
+      {
+        "label": "B",
+        "text": "where"
+      },
+      {
+        "label": "C",
+        "text": "were"
+      },
+      {
+        "label": "D",
+        "text": "whir"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "The word 'were' is the past tense of 'to be' and fits grammatically in the sentence to indicate the state or quality of the cake. 'Wear' means to have on one's body, 'where' refers to a place, and 'whir' is a sound.",
+    "skill": "Vocabulary (Homophones)",
+    "difficulty": "medium"
+  },
+  {
+    "id": "iowa_252",
+    "exam": "Iowa/Stanford 10",
+    "section": "Language",
+    "question": "Which sentence correctly uses a semicolon?",
+    "options": [
+      {
+        "label": "A",
+        "text": "She is a talented musician; she plays the piano and the violin."
+      },
+      {
+        "label": "B",
+        "text": "She is a talented musician; playing the piano."
+      },
+      {
+        "label": "C",
+        "text": "She is a talented musician and; she plays the piano."
+      },
+      {
+        "label": "D",
+        "text": "She is a talented musician,; she plays the piano."
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "A semicolon can be used to join two closely related independent clauses. In option A, 'She is a talented musician' and 'she plays the piano and the violin' are both independent clauses that can stand alone but are related.",
+    "skill": "Punctuation (Semicolons)",
+    "difficulty": "hard"
+  },
+  {
+    "id": "iowa_253",
+    "exam": "Iowa/Stanford 10",
+    "section": "Reading",
+    "question": "What is the primary purpose of the passage about the monarch butterfly migration?",
+    "options": [
+      {
+        "label": "A",
+        "text": "To describe the typical life cycle of a butterfly."
+      },
+      {
+        "label": "B",
+        "text": "To explain the incredible journey undertaken by monarch butterflies."
+      },
+      {
+        "label": "C",
+        "text": "To advocate for the protection of specific butterfly habitats."
+      },
+      {
+        "label": "D",
+        "text": "To detail the scientific research methods used to track migration."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "The passage focuses on the long distances and challenges monarchs face during their seasonal migration, highlighting the 'incredible journey'.",
+    "skill": "Main Idea",
+    "difficulty": "easy"
+  },
+  {
+    "id": "iowa_254",
+    "exam": "Iowa/Stanford 10",
+    "section": "Reading",
+    "question": "According to the text on historical inventions, which invention was MOST directly influenced by observing natural phenomena?",
+    "options": [
+      {
+        "label": "A",
+        "text": "The printing press."
+      },
+      {
+        "label": "B",
+        "text": "The steam engine."
+      },
+      {
+        "label": "C",
+        "text": "The airplane."
+      },
+      {
+        "label": "D",
+        "text": "The aqueduct."
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "The development of the airplane was significantly inspired by studying the flight of birds and other flying creatures in nature.",
+    "skill": "Inference",
+    "difficulty": "medium"
+  },
+  {
+    "id": "iowa_255",
+    "exam": "Iowa/Stanford 10",
+    "section": "Reading",
+    "question": "The passage discussing different types of clouds implies that cloud formation is primarily dependent on:",
+    "options": [
+      {
+        "label": "A",
+        "text": "The Earth's rotation."
+      },
+      {
+        "label": "B",
+        "text": "Solar radiation levels."
+      },
+      {
+        "label": "C",
+        "text": "Atmospheric conditions like temperature and moisture."
+      },
+      {
+        "label": "D",
+        "text": "The presence of mountain ranges."
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "The text details how water vapor condenses in the atmosphere due to cooling temperatures and the presence of water particles, which are key atmospheric conditions.",
+    "skill": "Detail Recall",
+    "difficulty": "easy"
+  },
+  {
+    "id": "iowa_256",
+    "exam": "Iowa/Stanford 10",
+    "section": "Reading",
+    "question": "In the story about the ancient pottery, what was the MOST significant challenge faced by the artisans?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Finding enough clay."
+      },
+      {
+        "label": "B",
+        "text": "Achieving consistent high firing temperatures."
+      },
+      {
+        "label": "C",
+        "text": "Decorating the pottery intricately."
+      },
+      {
+        "label": "D",
+        "text": "Transporting the finished goods."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "The passage emphasizes the difficulty of maintaining the precise, high heat needed for durable pottery, which often led to breakage or inferior quality.",
+    "skill": "Inference",
+    "difficulty": "medium"
+  },
+  {
+    "id": "iowa_257",
+    "exam": "Iowa/Stanford 10",
+    "section": "Reading",
+    "question": "The excerpt about the ecosystem of a coral reef suggests that coral reefs are:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Relatively simple environments with limited biodiversity."
+      },
+      {
+        "label": "B",
+        "text": "Highly productive and support a vast array of marine life."
+      },
+      {
+        "label": "C",
+        "text": "Primarily composed of geological formations."
+      },
+      {
+        "label": "D",
+        "text": "Slow to develop and recover from disturbances."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "The text describes the reefs as teeming with different species and highlights their importance as habitats, indicating high productivity and biodiversity.",
+    "skill": "Main Idea",
+    "difficulty": "easy"
+  },
+  {
+    "id": "iowa_258",
+    "exam": "Iowa/Stanford 10",
+    "section": "Reading",
+    "question": "What does the passage about the development of the alphabet imply about early writing systems?",
+    "options": [
+      {
+        "label": "A",
+        "text": "They were universally understood and consistent."
+      },
+      {
+        "label": "B",
+        "text": "They were often complex and pictographic."
+      },
+      {
+        "label": "C",
+        "text": "They were invented solely for religious purposes."
+      },
+      {
+        "label": "D",
+        "text": "They evolved from spoken languages very rapidly."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "The passage likely describes earlier forms of writing as being tied to images and symbols, suggesting complexity and a connection to pictures.",
+    "skill": "Inference",
+    "difficulty": "medium"
+  },
+  {
+    "id": "iowa_259",
+    "exam": "Iowa/Stanford 10",
+    "section": "Reading",
+    "question": "The text about renewable energy sources most likely argues that:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Fossil fuels remain the most efficient energy option."
+      },
+      {
+        "label": "B",
+        "text": "Transitioning to renewable energy presents significant challenges."
+      },
+      {
+        "label": "C",
+        "text": "Renewable energy is crucial for environmental sustainability."
+      },
+      {
+        "label": "D",
+        "text": "The development of renewable energy is complete."
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Discussions on renewable energy typically center on their benefits for the environment and reducing reliance on non-renewable resources.",
+    "skill": "Author's Purpose",
+    "difficulty": "easy"
+  },
+  {
+    "id": "iowa_260",
+    "exam": "Iowa/Stanford 10",
+    "section": "Reading",
+    "question": "What can be inferred about the nomadic tribes described in the passage?",
+    "options": [
+      {
+        "label": "A",
+        "text": "They had permanent settlements."
+      },
+      {
+        "label": "B",
+        "text": "Their lifestyle was highly dependent on seasons and resources."
+      },
+      {
+        "label": "C",
+        "text": "They developed advanced agricultural techniques."
+      },
+      {
+        "label": "D",
+        "text": "They preferred isolation from other groups."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Nomadic lifestyles are intrinsically linked to following the availability of food and water, which changes with the seasons and resource distribution.",
+    "skill": "Inference",
+    "difficulty": "medium"
+  },
+  {
+    "id": "iowa_261",
+    "exam": "Iowa/Stanford 10",
+    "section": "Reading",
+    "question": "The passage concerning the physiology of plants most likely explains:",
+    "options": [
+      {
+        "label": "A",
+        "text": "The complete genetic makeup of various plant species."
+      },
+      {
+        "label": "B",
+        "text": "The fundamental processes by which plants live and grow."
+      },
+      {
+        "label": "C",
+        "text": "The history of plant cultivation by humans."
+      },
+      {
+        "label": "D",
+        "text": "The methods used to classify different plant families."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Physiology deals with the functions and mechanisms of living organisms, so a passage on plant physiology would cover how plants function.",
+    "skill": "Main Idea",
+    "difficulty": "medium"
+  },
+  {
+    "id": "iowa_262",
+    "exam": "Iowa/Stanford 10",
+    "section": "Reading",
+    "question": "According to the text on celestial bodies, what distinguishes a planet from a star?",
+    "options": [
+      {
+        "label": "A",
+        "text": "A planet has a solid surface, while a star is gaseous."
+      },
+      {
+        "label": "B",
+        "text": "A star generates its own light, while a planet reflects light."
+      },
+      {
+        "label": "C",
+        "text": "A planet orbits the Earth, while a star orbits the Sun."
+      },
+      {
+        "label": "D",
+        "text": "A star is always larger than a planet."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "The fundamental difference is that stars produce light through nuclear fusion, whereas planets shine by reflecting the light of their parent star.",
+    "skill": "Detail Recall",
+    "difficulty": "easy"
+  },
+  {
+    "id": "iowa_263",
+    "exam": "Iowa/Stanford 10",
+    "section": "Reading",
+    "question": "The passage detailing the construction of the pyramids suggests that the builders MOST likely relied on:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Advanced flying machines for lifting stones."
+      },
+      {
+        "label": "B",
+        "text": "A highly organized workforce and sophisticated engineering techniques."
+      },
+      {
+        "label": "C",
+        "text": "Magical incantations to move heavy objects."
+      },
+      {
+        "label": "D",
+        "text": "The natural erosion processes of the desert."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Historical and archaeological evidence points towards organized labor, ramps, levers, and careful planning as the methods used for pyramid construction.",
+    "skill": "Inference",
+    "difficulty": "hard"
+  },
+  {
+    "id": "iowa_264",
+    "exam": "Iowa/Stanford 10",
+    "section": "Reading",
+    "question": "What is the main point of the paragraph about the water cycle?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Rainfall is the only form of precipitation."
+      },
+      {
+        "label": "B",
+        "text": "Water remains in oceans permanently."
+      },
+      {
+        "label": "C",
+        "text": "Water continuously moves between the Earth's surface, atmosphere, and underground."
+      },
+      {
+        "label": "D",
+        "text": "Evaporation is a destructive process for water."
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "The water cycle describes the continuous movement and transformation of water on, above, and below the surface of the Earth.",
+    "skill": "Main Idea",
+    "difficulty": "easy"
+  },
+  {
+    "id": "iowa_265",
+    "exam": "Iowa/Stanford 10",
+    "section": "Reading",
+    "question": "The passage comparing different types of musical instruments most likely emphasizes:",
+    "options": [
+      {
+        "label": "A",
+        "text": "That all instruments produce identical sounds."
+      },
+      {
+        "label": "B",
+        "text": "The unique ways each instrument category generates sound."
+      },
+      {
+        "label": "C",
+        "text": "The historical origins of every single instrument."
+      },
+      {
+        "label": "D",
+        "text": "That string instruments are superior to all others."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Comparing types of instruments typically involves explaining how they differ, particularly in their sound production mechanisms (e.g., vibration, wind, percussion).",
+    "skill": "Author's Purpose",
+    "difficulty": "medium"
+  },
+  {
+    "id": "iowa_266",
+    "exam": "Iowa/Stanford 10",
+    "section": "Reading",
+    "question": "What can be inferred about the impact of the invention of paper from the provided text?",
+    "options": [
+      {
+        "label": "A",
+        "text": "It had no significant effect on communication."
+      },
+      {
+        "label": "B",
+        "text": "It made written information much more accessible."
+      },
+      {
+        "label": "C",
+        "text": "It led to the decline of oral traditions."
+      },
+      {
+        "label": "D",
+        "text": "It was initially only used by farmers."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "The invention of paper allowed for easier and cheaper recording and sharing of information compared to previous materials like parchment or clay tablets, thus increasing accessibility.",
+    "skill": "Inference",
+    "difficulty": "hard"
+  },
+  {
+    "id": "iowa_267",
+    "exam": "Iowa/Stanford 10",
+    "section": "Reading",
+    "question": "The passage about the human circulatory system primarily aims to explain:",
+    "options": [
+      {
+        "label": "A",
+        "text": "The nutritional requirements of the heart muscle."
+      },
+      {
+        "label": "B",
+        "text": "How blood circulates throughout the body and its functions."
+      },
+      {
+        "label": "C",
+        "text": "The process of blood clotting."
+      },
+      {
+        "label": "D",
+        "text": "How to prevent cardiovascular diseases."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "The circulatory system refers to the network of organs and vessels that transport blood, nutrients, oxygen, etc., throughout the body, which is its primary function.",
+    "skill": "Main Idea",
+    "difficulty": "medium"
+  },
+  {
+    "id": "iowa_268",
+    "exam": "Iowa/Stanford 10",
+    "section": "Reading",
+    "question": "Based on the text discussing seismology, what is the primary cause of earthquakes?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Volcanic eruptions under the ocean."
+      },
+      {
+        "label": "B",
+        "text": "The movement and shifting of tectonic plates."
+      },
+      {
+        "label": "C",
+        "text": "Large-scale human construction projects."
+      },
+      {
+        "label": "D",
+        "text": "Changes in atmospheric pressure."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Seismology studies earthquakes, and the fundamental cause discussed is the rapid release of energy from the Earth's crust due to the movement of tectonic plates along fault lines.",
+    "skill": "Detail Recall",
+    "difficulty": "easy"
+  },
+  {
+    "id": "iowa_269",
+    "exam": "Iowa/Stanford 10",
+    "section": "Social Studies",
+    "question": "Which branch of the U.S. government is responsible for making laws?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Legislative"
+      },
+      {
+        "label": "B",
+        "text": "Executive"
+      },
+      {
+        "label": "C",
+        "text": "Judicial"
+      },
+      {
+        "label": "D",
+        "text": "Administrative"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "The Legislative branch, comprised of the Senate and House of Representatives, is tasked with creating and passing laws.",
+    "skill": "Government Structure",
+    "difficulty": "easy"
+  },
+  {
+    "id": "iowa_270",
+    "exam": "Iowa/Stanford 10",
+    "section": "Social Studies",
+    "question": "What document is considered the supreme law of the United States?",
+    "options": [
+      {
+        "label": "A",
+        "text": "The Constitution"
+      },
+      {
+        "label": "B",
+        "text": "The Bill of Rights"
+      },
+      {
+        "label": "C",
+        "text": "The Declaration of Independence"
+      },
+      {
+        "label": "D",
+        "text": "The Emancipation Proclamation"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "The U.S. Constitution is the fundamental law of the United States, establishing the framework of the government and the rights of citizens.",
+    "skill": "Civic Principles",
+    "difficulty": "easy"
+  },
+  {
+    "id": "iowa_271",
+    "exam": "Iowa/Stanford 10",
+    "section": "Social Studies",
+    "question": "Before Europeans arrived, the landmass of North America was inhabited by:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Indigenous peoples with diverse cultures and societies"
+      },
+      {
+        "label": "B",
+        "text": "No human inhabitants"
+      },
+      {
+        "label": "C",
+        "text": "A single, unified nation of tribes"
+      },
+      {
+        "label": "D",
+        "text": "Nomadic hunters with no permanent settlements"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "North America was home to a vast array of Indigenous nations, each with distinct languages, traditions, governance, and ways of life.",
+    "skill": "Early American History",
+    "difficulty": "medium"
+  },
+  {
+    "id": "iowa_272",
+    "exam": "Iowa/Stanford 10",
+    "section": "Social Studies",
+    "question": "The colony of Jamestown, established in 1607, was primarily founded for what purpose?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Economic gain and resource extraction"
+      },
+      {
+        "label": "B",
+        "text": "Religious freedom"
+      },
+      {
+        "label": "C",
+        "text": "A military outpost to defend against rivals"
+      },
+      {
+        "label": "D",
+        "text": "To create a utopian society"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "The Virginia Company established Jamestown with the hopes of finding gold and other valuable resources to exploit for profit.",
+    "skill": "Colonial History",
+    "difficulty": "medium"
+  },
+  {
+    "id": "iowa_273",
+    "exam": "Iowa/Stanford 10",
+    "section": "Social Studies",
+    "question": "Which of these events happened last?",
+    "options": [
+      {
+        "label": "A",
+        "text": "The signing of the Declaration of Independence"
+      },
+      {
+        "label": "B",
+        "text": "The Boston Tea Party"
+      },
+      {
+        "label": "C",
+        "text": "The French and Indian War"
+      },
+      {
+        "label": "D",
+        "text": "The adoption of the Constitution"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "The chronological order is: French and Indian War (ended 1763), Boston Tea Party (1773), Declaration of Independence (1776), adoption of the Constitution (ratified 1788-1789).",
+    "skill": "Historical Chronology",
+    "difficulty": "medium"
+  },
+  {
+    "id": "iowa_274",
+    "exam": "Iowa/Stanford 10",
+    "section": "Social Studies",
+    "question": "The system of checks and balances in the U.S. government ensures that:",
+    "options": [
+      {
+        "label": "A",
+        "text": "No single branch becomes too powerful"
+      },
+      {
+        "label": "B",
+        "text": "All laws are approved by the military"
+      },
+      {
+        "label": "C",
+        "text": "The President has absolute authority"
+      },
+      {
+        "label": "D",
+        "text": "The Supreme Court can veto all legislation"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Checks and balances allow each branch of government to limit the powers of the other branches, preventing any one from dominating.",
+    "skill": "Government Structure",
+    "difficulty": "medium"
+  },
+  {
+    "id": "iowa_275",
+    "exam": "Iowa/Stanford 10",
+    "section": "Social Studies",
+    "question": "What is the primary role of a citizen in a democracy?",
+    "options": [
+      {
+        "label": "A",
+        "text": "To participate in the government and hold elected officials accountable"
+      },
+      {
+        "label": "B",
+        "text": "To obey all laws without question"
+      },
+      {
+        "label": "C",
+        "text": "To pay taxes and serve in the military when called"
+      },
+      {
+        "label": "D",
+        "text": "To remain informed but not actively participate"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Active participation through voting, engaging in civic discourse, and holding representatives accountable are key roles of citizens in a democracy.",
+    "skill": "Civic Participation",
+    "difficulty": "medium"
+  },
+  {
+    "id": "iowa_276",
+    "exam": "Iowa/Stanford 10",
+    "section": "Social Studies",
+    "question": "The Industrial Revolution led to significant changes in society, including:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Mass production and urbanization"
+      },
+      {
+        "label": "B",
+        "text": "A decrease in the need for labor"
+      },
+      {
+        "label": "C",
+        "text": "The decline of cities and farming"
+      },
+      {
+        "label": "D",
+        "text": "Increased reliance on handmade goods"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "The Industrial Revolution introduced factories and machinery, leading to mass production and a migration of people from rural areas to cities for work.",
+    "skill": "Economic History",
+    "difficulty": "medium"
+  },
+  {
+    "id": "iowa_277",
+    "exam": "Iowa/Stanford 10",
+    "section": "Social Studies",
+    "question": "Which U.S. President is known for the 'New Deal' programs aimed at economic recovery during the Great Depression?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Franklin D. Roosevelt"
+      },
+      {
+        "label": "B",
+        "text": "Herbert Hoover"
+      },
+      {
+        "label": "C",
+        "text": "Harry S. Truman"
+      },
+      {
+        "label": "D",
+        "text": "Dwight D. Eisenhower"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Franklin D. Roosevelt implemented the New Deal, a series of programs and reforms designed to combat the effects of the Great Depression.",
+    "skill": "20th Century U.S. History",
+    "difficulty": "easy"
+  },
+  {
+    "id": "iowa_278",
+    "exam": "Iowa/Stanford 10",
+    "section": "Social Studies",
+    "question": "What was the main cause of the American Civil War?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Disagreements over states' rights, particularly concerning slavery"
+      },
+      {
+        "label": "B",
+        "text": "Disputes over westward expansion territories"
+      },
+      {
+        "label": "C",
+        "text": "Economic competition between the North and South"
+      },
+      {
+        "label": "D",
+        "text": "Religious differences between the states"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "While multiple factors contributed, the fundamental disagreement over the institution of slavery and the rights of states to permit or abolish it was the primary cause of the Civil War.",
+    "skill": "U.S. History",
+    "difficulty": "hard"
+  },
+  {
+    "id": "iowa_279",
+    "exam": "Iowa/Stanford 10",
+    "section": "Social Studies",
+    "question": "Map projections attempt to represent the Earth's three-dimensional surface on a two-dimensional plane, which inevitably leads to:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Distortion of size, shape, distance, or direction"
+      },
+      {
+        "label": "B",
+        "text": "Perfectly accurate representation of all features"
+      },
+      {
+        "label": "C",
+        "text": "Elimination of all geographical features"
+      },
+      {
+        "label": "D",
+        "text": "A complete reversal of continents"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Due to the curvature of the Earth, any flat map projection will introduce some form of distortion; it's impossible to perfectly represent a sphere on a flat surface without compromise.",
+    "skill": "Geography",
+    "difficulty": "medium"
+  },
+  {
+    "id": "iowa_280",
+    "exam": "Iowa/Stanford 10",
+    "section": "Social Studies",
+    "question": "The concept of 'supply and demand' in economics describes:",
+    "options": [
+      {
+        "label": "A",
+        "text": "The relationship between the availability of a product and the desire for it, influencing its price"
+      },
+      {
+        "label": "B",
+        "text": "The government's control over all industries"
+      },
+      {
+        "label": "C",
+        "text": "The process of creating new inventions"
+      },
+      {
+        "label": "D",
+        "text": "How countries trade with each other"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Supply refers to how much of a product is available, while demand is how much people want it. Their interplay significantly impacts market prices.",
+    "skill": "Economics",
+    "difficulty": "medium"
+  },
+  {
+    "id": "iowa_281",
+    "exam": "Iowa/Stanford 10",
+    "section": "Social Studies",
+    "question": "The Bill of Rights guarantees several fundamental freedoms to U.S. citizens, such as:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Freedom of speech and religion"
+      },
+      {
+        "label": "B",
+        "text": "The right to own unlimited property"
+      },
+      {
+        "label": "C",
+        "text": "The right to a government-provided job"
+      },
+      {
+        "label": "D",
+        "text": "The right to travel anywhere without a passport"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "The First Amendment to the Constitution, part of the Bill of Rights, explicitly protects freedoms of speech, religion, press, assembly, and petition.",
+    "skill": "Civic Principles",
+    "difficulty": "easy"
+  },
+  {
+    "id": "iowa_282",
+    "exam": "Iowa/Stanford 10",
+    "section": "Social Studies",
+    "question": "In the context of World War II, 'D-Day' refers to:",
+    "options": [
+      {
+        "label": "A",
+        "text": "The Allied invasion of Normandy, France"
+      },
+      {
+        "label": "B",
+        "text": "The bombing of Pearl Harbor"
+      },
+      {
+        "label": "C",
+        "text": "The surrender of Japan"
+      },
+      {
+        "label": "D",
+        "text": "The Battle of Stalingrad"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "D-Day, June 6, 1944, was the code name for the start of Operation Overlord, the Allied invasion of Normandy during World War II.",
+    "skill": "20th Century World History",
+    "difficulty": "medium"
+  },
+  {
+    "id": "iowa_283",
+    "exam": "Iowa/Stanford 10",
+    "section": "Social Studies",
+    "question": "Which of the following is a major responsibility of the judicial branch?",
+    "options": [
+      {
+        "label": "A",
+        "text": "To interpret laws and administer justice"
+      },
+      {
+        "label": "B",
+        "text": "To approve treaties with other nations"
+      },
+      {
+        "label": "C",
+        "text": "To command the armed forces"
+      },
+      {
+        "label": "D",
+        "text": "To propose new amendments to the Constitution"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "The judiciary's primary function is to review laws, hear cases, and make rulings based on legal principles and the Constitution.",
+    "skill": "Government Structure",
+    "difficulty": "medium"
+  },
+  {
+    "id": "iowa_284",
+    "exam": "Iowa/Stanford 10",
+    "section": "Social Studies",
+    "question": "The concept of 'federalism' in the United States refers to:",
+    "options": [
+      {
+        "label": "A",
+        "text": "A system of government where power is divided between national and state governments"
+      },
+      {
+        "label": "B",
+        "text": "A government controlled solely by the President"
+      },
+      {
+        "label": "C",
+        "text": "A system where all power resides in the local communities"
+      },
+      {
+        "label": "D",
+        "text": "A government established by international agreement"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Federalism is the division of governmental power between a central (federal) authority and regional (state) authorities, as outlined in the U.S. Constitution.",
+    "skill": "Civic Principles",
+    "difficulty": "hard"
+  },
+  {
+    "id": "iowa_285",
+    "exam": "Iowa/Stanford 10",
+    "section": "Mathematics",
+    "question": "What is the value of 7 raised to the power of 2?",
+    "options": [
+      {
+        "label": "A",
+        "text": "14"
+      },
+      {
+        "label": "B",
+        "text": "49"
+      },
+      {
+        "label": "C",
+        "text": "72"
+      },
+      {
+        "label": "D",
+        "text": "35"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "7 raised to the power of 2 (7²) means 7 multiplied by itself, which is 7 * 7 = 49.",
+    "skill": "Exponents",
+    "difficulty": "easy"
+  },
+  {
+    "id": "iowa_286",
+    "exam": "Iowa/Stanford 10",
+    "section": "Mathematics",
+    "question": "If a rectangle has a length of 10 cm and a width of 5 cm, what is its area?",
+    "options": [
+      {
+        "label": "A",
+        "text": "15 cm²"
+      },
+      {
+        "label": "B",
+        "text": "30 cm²"
+      },
+      {
+        "label": "C",
+        "text": "50 cm²"
+      },
+      {
+        "label": "D",
+        "text": "25 cm²"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "The area of a rectangle is calculated by multiplying its length by its width. Area = length × width = 10 cm × 5 cm = 50 cm².",
+    "skill": "Area of Rectangles",
+    "difficulty": "easy"
+  },
+  {
+    "id": "iowa_287",
+    "exam": "Iowa/Stanford 10",
+    "section": "Mathematics",
+    "question": "What is the sum of the first five odd positive integers?",
+    "options": [
+      {
+        "label": "A",
+        "text": "15"
+      },
+      {
+        "label": "B",
+        "text": "20"
+      },
+      {
+        "label": "C",
+        "text": "25"
+      },
+      {
+        "label": "D",
+        "text": "30"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "The first five odd positive integers are 1, 3, 5, 7, and 9. Their sum is 1 + 3 + 5 + 7 + 9 = 25.",
+    "skill": "Number Sequences",
+    "difficulty": "medium"
+  },
+  {
+    "id": "iowa_288",
+    "exam": "Iowa/Stanford 10",
+    "section": "Mathematics",
+    "question": "A train travels at a constant speed of 60 miles per hour. How far will it travel in 2.5 hours?",
+    "options": [
+      {
+        "label": "A",
+        "text": "120 miles"
+      },
+      {
+        "label": "B",
+        "text": "150 miles"
+      },
+      {
+        "label": "C",
+        "text": "135 miles"
+      },
+      {
+        "label": "D",
+        "text": "160 miles"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Distance = Speed × Time. Distance = 60 miles/hour × 2.5 hours = 150 miles.",
+    "skill": "Distance, Rate, Time",
+    "difficulty": "medium"
+  },
+  {
+    "id": "iowa_289",
+    "exam": "Iowa/Stanford 10",
+    "section": "Mathematics",
+    "question": "Solve for x: 3x + 7 = 22",
+    "options": [
+      {
+        "label": "A",
+        "text": "5"
+      },
+      {
+        "label": "B",
+        "text": "6"
+      },
+      {
+        "label": "C",
+        "text": "7"
+      },
+      {
+        "label": "D",
+        "text": "4"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Subtract 7 from both sides: 3x = 22 - 7 -> 3x = 15. Divide both sides by 3: x = 15 / 3 -> x = 5.",
+    "skill": "Linear Equations",
+    "difficulty": "easy"
+  },
+  {
+    "id": "iowa_290",
+    "exam": "Iowa/Stanford 10",
+    "section": "Mathematics",
+    "question": "What is 3/4 of 80?",
+    "options": [
+      {
+        "label": "A",
+        "text": "50"
+      },
+      {
+        "label": "B",
+        "text": "70"
+      },
+      {
+        "label": "C",
+        "text": "60"
+      },
+      {
+        "label": "D",
+        "text": "55"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "To find 3/4 of 80, you can multiply 80 by 3/4, or first divide 80 by 4 and then multiply by 3. (80 / 4) * 3 = 20 * 3 = 60.",
+    "skill": "Fractions and Percentages",
+    "difficulty": "medium"
+  },
+  {
+    "id": "iowa_291",
+    "exam": "Iowa/Stanford 10",
+    "section": "Mathematics",
+    "question": "A circle has a radius of 7 meters. What is its approximate circumference? (Use π ≈ 22/7)",
+    "options": [
+      {
+        "label": "A",
+        "text": "44 meters"
+      },
+      {
+        "label": "B",
+        "text": "154 meters"
+      },
+      {
+        "label": "C",
+        "text": "22 meters"
+      },
+      {
+        "label": "D",
+        "text": "88 meters"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "The circumference of a circle is calculated using the formula C = 2πr. C = 2 * (22/7) * 7 meters = 2 * 22 meters = 44 meters.",
+    "skill": "Circumference of Circles",
+    "difficulty": "medium"
+  },
+  {
+    "id": "iowa_292",
+    "exam": "Iowa/Stanford 10",
+    "section": "Mathematics",
+    "question": "If the price of a shirt is $25 and it is on sale for 20% off, what is the sale price?",
+    "options": [
+      {
+        "label": "A",
+        "text": "$20"
+      },
+      {
+        "label": "B",
+        "text": "$15"
+      },
+      {
+        "label": "C",
+        "text": "$22.50"
+      },
+      {
+        "label": "D",
+        "text": "$18"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Calculate the discount: 20% of $25 = 0.20 * $25 = $5. Subtract the discount from the original price: $25 - $5 = $20.",
+    "skill": "Percentages and Discounts",
+    "difficulty": "medium"
+  },
+  {
+    "id": "iowa_293",
+    "exam": "Iowa/Stanford 10",
+    "section": "Mathematics",
+    "question": "What is the median of the following set of numbers: 5, 2, 8, 3, 9?",
+    "options": [
+      {
+        "label": "A",
+        "text": "5"
+      },
+      {
+        "label": "B",
+        "text": "8"
+      },
+      {
+        "label": "C",
+        "text": "3"
+      },
+      {
+        "label": "D",
+        "text": "2"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "First, order the numbers: 2, 3, 5, 8, 9. The median is the middle number, which is 5.",
+    "skill": "Measures of Central Tendency (Median)",
+    "difficulty": "easy"
+  },
+  {
+    "id": "iowa_294",
+    "exam": "Iowa/Stanford 10",
+    "section": "Mathematics",
+    "question": "Simplify the expression: 5(x + 2) - 3(x - 1)",
+    "options": [
+      {
+        "label": "A",
+        "text": "2x + 13"
+      },
+      {
+        "label": "B",
+        "text": "8x + 7"
+      },
+      {
+        "label": "C",
+        "text": "2x + 7"
+      },
+      {
+        "label": "D",
+        "text": "2x + 10"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Distribute: 5x + 10 - 3x + 3. Combine like terms: (5x - 3x) + (10 + 3) = 2x + 13.",
+    "skill": "Algebraic Expressions",
+    "difficulty": "medium"
+  },
+  {
+    "id": "iowa_295",
+    "exam": "Iowa/Stanford 10",
+    "section": "Mathematics",
+    "question": "A bag contains 5 red marbles and 7 blue marbles. If one marble is drawn at random, what is the probability that it is red?",
+    "options": [
+      {
+        "label": "A",
+        "text": "5/12"
+      },
+      {
+        "label": "B",
+        "text": "7/12"
+      },
+      {
+        "label": "C",
+        "text": "1/2"
+      },
+      {
+        "label": "D",
+        "text": "5/7"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "The total number of marbles is 5 + 7 = 12. The number of red marbles is 5. The probability of drawing a red marble is the number of red marbles divided by the total number of marbles: 5/12.",
+    "skill": "Probability",
+    "difficulty": "easy"
+  },
+  {
+    "id": "iowa_296",
+    "exam": "Iowa/Stanford 10",
+    "section": "Mathematics",
+    "question": "What is the value of y if 2y + 3 = y + 9?",
+    "options": [
+      {
+        "label": "A",
+        "text": "5"
+      },
+      {
+        "label": "B",
+        "text": "6"
+      },
+      {
+        "label": "C",
+        "text": "7"
+      },
+      {
+        "label": "D",
+        "text": "3"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Subtract y from both sides: y + 3 = 9. Subtract 3 from both sides: y = 9 - 3 -> y = 6.",
+    "skill": "Linear Equations",
+    "difficulty": "medium"
+  },
+  {
+    "id": "iowa_297",
+    "exam": "Iowa/Stanford 10",
+    "section": "Mathematics",
+    "question": "A recipe calls for 2 cups of flour for every 3 eggs. If you use 9 eggs, how many cups of flour do you need?",
+    "options": [
+      {
+        "label": "A",
+        "text": "4 cups"
+      },
+      {
+        "label": "B",
+        "text": "5 cups"
+      },
+      {
+        "label": "C",
+        "text": "6 cups"
+      },
+      {
+        "label": "D",
+        "text": "7 cups"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "This is a ratio problem. The ratio of flour to eggs is 2:3. Since 9 eggs is 3 times the number of eggs in the ratio (9 / 3 = 3), you need 3 times the amount of flour: 2 cups * 3 = 6 cups.",
+    "skill": "Ratios and Proportions",
+    "difficulty": "medium"
+  },
+  {
+    "id": "iowa_298",
+    "exam": "Iowa/Stanford 10",
+    "section": "Mathematics",
+    "question": "If 4 artists can paint 6 rooms in 2 days, how many rooms can 8 artists paint in 2 days, assuming they work at the same rate?",
+    "options": [
+      {
+        "label": "A",
+        "text": "6 rooms"
+      },
+      {
+        "label": "B",
+        "text": "12 rooms"
+      },
+      {
+        "label": "C",
+        "text": "18 rooms"
+      },
+      {
+        "label": "D",
+        "text": "24 rooms"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "If you double the number of artists (from 4 to 8) and keep the time the same, they will paint double the number of rooms. So, 6 rooms * 2 = 12 rooms.",
+    "skill": "Work Problems",
+    "difficulty": "hard"
+  },
+  {
+    "id": "iowa_299",
+    "exam": "Iowa/Stanford 10",
+    "section": "Mathematics",
+    "question": "What is the volume of a cube with side length 3 cm?",
+    "options": [
+      {
+        "label": "A",
+        "text": "9 cm³"
+      },
+      {
+        "label": "B",
+        "text": "27 cm³"
+      },
+      {
+        "label": "C",
+        "text": "18 cm³"
+      },
+      {
+        "label": "D",
+        "text": "81 cm³"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "The volume of a cube is calculated by side length cubed (s³). Volume = 3 cm * 3 cm * 3 cm = 27 cm³.",
+    "skill": "Volume of Cubes",
+    "difficulty": "easy"
+  },
+  {
+    "id": "iowa_300",
+    "exam": "Iowa/Stanford 10",
+    "section": "Mathematics",
+    "question": "Consider the sequence: 2, 5, 8, 11, ... What is the next number in the sequence?",
+    "options": [
+      {
+        "label": "A",
+        "text": "13"
+      },
+      {
+        "label": "B",
+        "text": "14"
+      },
+      {
+        "label": "C",
+        "text": "15"
+      },
+      {
+        "label": "D",
+        "text": "16"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "The sequence increases by 3 each time (5-2=3, 8-5=3, 11-8=3). The next number is 11 + 3 = 14.",
+    "skill": "Number Sequences",
+    "difficulty": "easy"
   }
 ]

@@ -6998,5 +6998,955 @@
     ],
     "correctAnswer": "B",
     "explanation": "If the people selecting walking meetings already differ in energy, the causal conclusion weakens."
+  },
+  {
+    "id": "lsat_251",
+    "exam": "LSAT",
+    "section": "Reading Comprehension",
+    "question": "The author of the passage primarily aims to:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Argue that traditional education methods are inherently flawed."
+      },
+      {
+        "label": "B",
+        "text": "Compare and contrast two different approaches to artistic creation."
+      },
+      {
+        "label": "C",
+        "text": "Advocate for the widespread adoption of a specific educational technology."
+      },
+      {
+        "label": "D",
+        "text": "Examine the evolution of scientific methodologies over the past century."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "The passage discusses and juxtaposes two distinct methods of creating art, one emphasizing spontaneity and the other meticulous planning. This comparison is central to the author's discussion.",
+    "skill": "Main Point Identification",
+    "difficulty": "easy"
+  },
+  {
+    "id": "lsat_252",
+    "exam": "LSAT",
+    "section": "Reading Comprehension",
+    "question": "Which of the following statements best reflects the author's view on the role of structure in artistic expression?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Structure is a necessary constraint that stifles genuine creativity."
+      },
+      {
+        "label": "B",
+        "text": "Structure can provide a foundation that enhances, rather than limits, creative freedom."
+      },
+      {
+        "label": "C",
+        "text": "The absence of structure is the defining characteristic of modern art."
+      },
+      {
+        "label": "D",
+        "text": "Artistic structure is primarily determined by the audience's perception, not the artist's intent."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "The passage suggests that while some artists embrace spontaneity, others find that established structures or frameworks can actually enable a more focused and impactful creative process.",
+    "skill": "Author's Viewpoint",
+    "difficulty": "medium"
+  },
+  {
+    "id": "lsat_253",
+    "exam": "LSAT",
+    "section": "Reading Comprehension",
+    "question": "The passage mentions the \"emergent properties of complex systems\" in order to:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Illustrate a potential drawback of highly organized artistic endeavors."
+      },
+      {
+        "label": "B",
+        "text": "Provide a scientific analogy for the unpredictable outcomes of spontaneous creation."
+      },
+      {
+        "label": "C",
+        "text": "Explain the historical development of avant-garde artistic movements."
+      },
+      {
+        "label": "D",
+        "text": "Critique the overreliance on mathematical models in contemporary art criticism."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "The concept of emergent properties, where complex systems exhibit behaviors not present in their individual components, is used to draw a parallel to how spontaneous artistic approaches can lead to unforeseen and intricate results.",
+    "skill": "Inference",
+    "difficulty": "hard"
+  },
+  {
+    "id": "lsat_254",
+    "exam": "LSAT",
+    "section": "Reading Comprehension",
+    "question": "According to the passage, what is a potential consequence of prioritizing meticulous planning in artistic production?",
+    "options": [
+      {
+        "label": "A",
+        "text": "A loss of emotional resonance for the audience."
+      },
+      {
+        "label": "B",
+        "text": "An overemphasis on technical skill at the expense of conceptual depth."
+      },
+      {
+        "label": "C",
+        "text": "A reduction in the potential for novel or unexpected discoveries during the creative process."
+      },
+      {
+        "label": "D",
+        "text": "Increased difficulty in achieving critical acclaim from art historians."
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "The passage implies that a highly structured and planned approach might limit the opportunities for serendipitous findings or unplanned developments that can arise from a more fluid process.",
+    "skill": "Detail Retrieval",
+    "difficulty": "medium"
+  },
+  {
+    "id": "lsat_255",
+    "exam": "LSAT",
+    "section": "Reading Comprehension",
+    "question": "The author uses the term \"disciplined freedom\" to describe:",
+    "options": [
+      {
+        "label": "A",
+        "text": "A paradoxical state achieved through rigorous adherence to artistic conventions."
+      },
+      {
+        "label": "B",
+        "text": "The outcome of completely abandoning all forms of artistic guidance."
+      },
+      {
+        "label": "C",
+        "text": "A creative approach that balances internal constraints with external possibilities."
+      },
+      {
+        "label": "D",
+        "text": "The state of mind necessary for successful improvisation in music."
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "The phrase suggests a creative space where certain self-imposed or externally derived rules (\"discipline\") are in place, but within which there is ample room for exploration and innovation (\"freedom\").",
+    "skill": "Vocabulary in Context",
+    "difficulty": "hard"
+  },
+  {
+    "id": "lsat_256",
+    "exam": "LSAT",
+    "section": "Reading Comprehension",
+    "question": "It can be inferred that the author believes the ideal approach to artistic creation:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Is universally applicable across all artistic disciplines and individual artists."
+      },
+      {
+        "label": "B",
+        "text": "Depends heavily on the specific goals and context of the artist and the work."
+      },
+      {
+        "label": "C",
+        "text": "Is inherently tied to the historical period in which the art is produced."
+      },
+      {
+        "label": "D",
+        "text": "Should always prioritize audience engagement over artistic integrity."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "By presenting two contrasting methods and their potential merits, the author implies that there isn't a single \"best\" way, but rather that the effectiveness of a method is relative to the circumstances.",
+    "skill": "Inference",
+    "difficulty": "medium"
+  },
+  {
+    "id": "lsat_257",
+    "exam": "LSAT",
+    "section": "Reading Comprehension",
+    "question": "The passage is most likely found in:",
+    "options": [
+      {
+        "label": "A",
+        "text": "A manual for organic gardening."
+      },
+      {
+        "label": "B",
+        "text": "A critical review of a contemporary art exhibition."
+      },
+      {
+        "label": "C",
+        "text": "A philosophical treatise on the nature of consciousness."
+      },
+      {
+        "label": "D",
+        "text": "A historical account of the Industrial Revolution."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "The discussion of artistic creation, spontaneity versus structure, and the potential outcomes of different creative processes aligns well with the typical subject matter of art criticism.",
+    "skill": "Inference",
+    "difficulty": "medium"
+  },
+  {
+    "id": "lsat_258",
+    "exam": "LSAT",
+    "section": "Reading Comprehension",
+    "question": "Which of the following is NOT discussed in the passage as a characteristic of the spontaneous approach to art?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Reliance on intuition and instinct."
+      },
+      {
+        "label": "B",
+        "text": "A tendency towards unexpected discoveries."
+      },
+      {
+        "label": "C",
+        "text": "A focus on pre-ordained frameworks."
+      },
+      {
+        "label": "D",
+        "text": "Potential for emergent complexity."
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Pre-ordained frameworks are associated with the structured approach, not the spontaneous one, which is characterized by less pre-planning and more reliance on instinct and emergent properties.",
+    "skill": "Detail Retrieval",
+    "difficulty": "easy"
+  },
+  {
+    "id": "lsat_259",
+    "exam": "LSAT",
+    "section": "Reading Comprehension",
+    "question": "The author implies that the critique of rigorously planned art often stems from a perception that it:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Lacks sufficient technical complexity."
+      },
+      {
+        "label": "B",
+        "text": "Is too derivative of earlier artistic traditions."
+      },
+      {
+        "label": "C",
+        "text": "Is overly predictable and lacks genuine originality."
+      },
+      {
+        "label": "D",
+        "text": "Fails to engage with important social or political issues."
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "The contrast drawn between spontaneity and structure suggests that the concern with planned art is that its pre-determined nature might lead to outcomes that are less surprising or innovative.",
+    "skill": "Inference",
+    "difficulty": "hard"
+  },
+  {
+    "id": "lsat_260",
+    "exam": "LSAT",
+    "section": "Reading Comprehension",
+    "question": "What is the central function of the analogy involving the \"ecosystem\" presented in the passage?",
+    "options": [
+      {
+        "label": "A",
+        "text": "To demonstrate the fragility of artistic endeavors in a competitive market."
+      },
+      {
+        "label": "B",
+        "text": "To illustrate how seemingly disparate elements can interact to create a harmonious whole."
+      },
+      {
+        "label": "C",
+        "text": "To argue that artistic creation is purely a natural, uninfluenced process."
+      },
+      {
+        "label": "D",
+        "text": "To highlight the environmental impact of large-scale art installations."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "The ecosystem analogy, mentioned in the context of how different creative approaches interact, serves to show how various components, even those seemingly independent, can come together to form a complex and functional system, much like how different elements in art can coalesce.",
+    "skill": "Analogy Interpretation",
+    "difficulty": "hard"
+  },
+  {
+    "id": "lsat_261",
+    "exam": "LSAT",
+    "section": "Reading Comprehension",
+    "question": "The passage suggests that an artist embracing a rigorous, step-by-step methodology might find it challenging to:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Complete a project within a predetermined budget."
+      },
+      {
+        "label": "B",
+        "text": "Engage in collaborative artistic efforts."
+      },
+      {
+        "label": "C",
+        "text": "Adapt to unforeseen creative opportunities or challenges."
+      },
+      {
+        "label": "D",
+        "text": "Deconstruct the underlying theoretical framework of their work."
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "A rigid, pre-planned method might make it difficult for an artist to deviate or incorporate new ideas that arise during the process, contrasting with the flexibility often found in more spontaneous methods.",
+    "skill": "Inference",
+    "difficulty": "medium"
+  },
+  {
+    "id": "lsat_262",
+    "exam": "LSAT",
+    "section": "Reading Comprehension",
+    "question": "Which term from the passage is most closely related to the idea of \"unforeseen outcomes\"?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Meticulous"
+      },
+      {
+        "label": "B",
+        "text": "Spontaneity"
+      },
+      {
+        "label": "C",
+        "text": "Framework"
+      },
+      {
+        "label": "D",
+        "text": "Emergent"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "The term \"emergent\" directly relates to properties or outcomes that arise unexpectedly from the interaction of simpler components, fitting the idea of unforeseen results.",
+    "skill": "Vocabulary in Context",
+    "difficulty": "easy"
+  },
+  {
+    "id": "lsat_263",
+    "exam": "LSAT",
+    "section": "Reading Comprehension",
+    "question": "The author's attitude towards the two described creative approaches can best be described as:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Completely dismissive of one in favor of the other."
+      },
+      {
+        "label": "B",
+        "text": "Ambivalent and uncertain about their relative merits."
+      },
+      {
+        "label": "C",
+        "text": "Balanced and appreciative of each approach's potential strengths and weaknesses."
+      },
+      {
+        "label": "D",
+        "text": "Skeptical regarding the long-term validity of both methods."
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "The passage presents both spontaneous and structured methods as having distinct characteristics and potential benefits, suggesting an objective and balanced perspective rather than a strong preference for one over the other.",
+    "skill": "Tone and Attitude",
+    "difficulty": "medium"
+  },
+  {
+    "id": "lsat_264",
+    "exam": "LSAT",
+    "section": "Reading Comprehension",
+    "question": "The passage implies that the process of artistic creation is best understood as:",
+    "options": [
+      {
+        "label": "A",
+        "text": "A linear progression from concept to completion."
+      },
+      {
+        "label": "B",
+        "text": "A dynamic interplay between intent and execution."
+      },
+      {
+        "label": "C",
+        "text": "A purely emotional outpouring, devoid of intellectual input."
+      },
+      {
+        "label": "D",
+        "text": "A predictable outcome of applying established techniques."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "By contrasting methods that involve planning (intent) with those that involve improvisation (execution), the passage suggests that creation is a process where these two aspects constantly interact and influence each other.",
+    "skill": "Inference",
+    "difficulty": "hard"
+  },
+  {
+    "id": "lsat_265",
+    "exam": "LSAT",
+    "section": "Reading Comprehension",
+    "question": "According to the passage, what might be a source of inspiration for artists who favor a structured approach?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Random chance encounters and unplanned events."
+      },
+      {
+        "label": "B",
+        "text": "The inherent logic and order found in established systems."
+      },
+      {
+        "label": "C",
+        "text": "The immediate emotional response of the audience."
+      },
+      {
+        "label": "D",
+        "text": "A sudden, unprompted creative impulse."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "The passage associates structured approaches with frameworks and organization. This implies that artists employing such methods might draw inspiration from the inherent order and logic present in existing systems or patterns.",
+    "skill": "Detail Retrieval",
+    "difficulty": "medium"
+  },
+  {
+    "id": "lsat_266",
+    "exam": "LSAT",
+    "section": "Reading Comprehension",
+    "question": "The passage contrasts two methods of artistic creation. The first is characterized by spontaneity, intuition, and the potential for emergent complexity. The second is characterized by meticulous planning, structure, and adherence to established frameworks. The author implies that both methods can lead to valid artistic outcomes, but they do so through different pathways and possess different strengths and weaknesses.",
+    "options": [
+      {
+        "label": "A",
+        "text": "The spontaneous method is superior because it allows for greater originality."
+      },
+      {
+        "label": "B",
+        "text": "The structured method is more efficient for producing large volumes of artwork."
+      },
+      {
+        "label": "C",
+        "text": "Neither method is inherently better; their effectiveness is context-dependent."
+      },
+      {
+        "label": "D",
+        "text": "The passage argues that artistic creation must balance both spontaneity and structure."
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "The author presents both methods as valid and discusses their respective characteristics without declaring one definitively better than the other, suggesting that context and individual artistic goals are key factors.",
+    "skill": "Main Point Identification",
+    "difficulty": "easy"
+  },
+  {
+    "id": "lsat_267",
+    "exam": "LSAT",
+    "section": "Reading Comprehension",
+    "question": "The author uses the term 'organic growth' in relation to artistic creation to imply:",
+    "options": [
+      {
+        "label": "A",
+        "text": "A process that is entirely unguided by the artist's conscious intent."
+      },
+      {
+        "label": "B",
+        "text": "A method of creation that is slow, deliberate, and requires constant pruning."
+      },
+      {
+        "label": "C",
+        "text": "A development that unfolds naturally and intuitively from an initial impulse or idea."
+      },
+      {
+        "label": "D",
+        "text": "An emphasis on the use of natural materials in the artistic medium."
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Organic growth in nature suggests a process of development that is intrinsic and follows a natural progression, much like how an initial idea might evolve and expand through intuitive exploration in art.",
+    "skill": "Vocabulary in Context",
+    "difficulty": "hard"
+  },
+  {
+    "id": "lsat_268",
+    "exam": "LSAT",
+    "section": "Logical Reasoning",
+    "question": "A recent study found that individuals who consume at least three servings of dark leafy greens daily tend to have lower overall cholesterol levels. The study controlled for factors such as age, exercise habits, and other dietary components. Therefore, eating dark leafy greens directly causes a reduction in cholesterol.",
+    "options": [
+      {
+        "label": "A",
+        "text": "The study might not have accounted for all relevant health behaviors that could affect cholesterol levels."
+      },
+      {
+        "label": "B",
+        "text": "Other foods high in fiber, which are often eaten with dark leafy greens, are known to lower cholesterol."
+      },
+      {
+        "label": "C",
+        "text": "The study participants might have been predisposed to healthier lifestyles in general, leading to lower cholesterol."
+      },
+      {
+        "label": "D",
+        "text": "Cholesterol levels are influenced by a complex interplay of genetics and lifestyle, not just diet."
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "The argument assumes the study perfectly controlled for all confounding variables. Option A points out that if unforeseen factors were not controlled, the conclusion could be invalid. Options B, C, and D present possible explanations or alternative factors but don't directly weaken the causal claim as effectively as the possibility of uncontrolled variables.",
+    "skill": "Assumption Identification",
+    "difficulty": "medium"
+  },
+  {
+    "id": "lsat_269",
+    "exam": "LSAT",
+    "section": "Logical Reasoning",
+    "question": "Historian: The invention of the printing press in the 15th century dramatically accelerated the spread of knowledge across Europe. Before its invention, books were painstakingly copied by hand, making them rare and expensive. The printing press allowed for mass production, leading to increased literacy and the dissemination of new ideas.",
+    "options": [
+      {
+        "label": "A",
+        "text": "The printing press also facilitated the spread of misinformation and propaganda."
+      },
+      {
+        "label": "B",
+        "text": "The cost of printed books remained high for several decades after the invention."
+      },
+      {
+        "label": "C",
+        "text": "The primary purpose of the printing press was religious texts."
+      },
+      {
+        "label": "D",
+        "text": "Without widespread literacy, the impact of the printing press would have been significantly limited."
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "The historian's argument focuses on how the printing press led to increased literacy and the spread of ideas. Option D highlights a necessary condition for the printing press to have its described effect: it assumes the very outcome (literacy) that the press is argued to have facilitated, thus strengthening the historian's point by emphasizing the synergy between the technology and its societal impact.",
+    "skill": "Strengthening",
+    "difficulty": "easy"
+  },
+  {
+    "id": "lsat_270",
+    "exam": "LSAT",
+    "section": "Logical Reasoning",
+    "question": "A city planning commission is considering a proposal to build a new public park. Some residents express concern that the park will increase traffic congestion in the surrounding neighborhoods. The commission responds, 'The park will have ample parking provided, and pedestrian access will be prioritized, which will actually reduce the number of car trips to the area.'",
+    "options": [
+      {
+        "label": "A",
+        "text": "The new park will require significant deforestation."
+      },
+      {
+        "label": "B",
+        "text": "The commission's argument relies on the assumption that enough people will choose to walk or use the provided parking instead of driving through the neighborhood."
+      },
+      {
+        "label": "C",
+        "text": "The cost of building and maintaining the park will be substantial."
+      },
+      {
+        "label": "D",
+        "text": "Many residents currently drive through the neighborhood to reach other destinations."
+      }
+    ],
+    "correctAnswer": "B",
+    "difficulty": "medium"
+  },
+  {
+    "id": "lsat_271",
+    "exam": "LSAT",
+    "section": "Logical Reasoning",
+    "question": "The average temperature in the Northern Hemisphere has been steadily rising over the past century. Glaciers worldwide are shrinking at an alarming rate. These two phenomena are directly linked, indicating that global warming is the primary cause of glacier retreat.",
+    "options": [
+      {
+        "label": "A",
+        "text": "Some glaciers in Antarctica have been observed to be growing."
+      },
+      {
+        "label": "B",
+        "text": "The rising temperature is due to increased greenhouse gas emissions."
+      },
+      {
+        "label": "C",
+        "text": "The rate of glacier melt is accelerating."
+      },
+      {
+        "label": "D",
+        "text": "The study uses correlation to infer causation without ruling out other contributing factors to glacier melt."
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "The argument observes a correlation (rising temperatures and shrinking glaciers) and concludes causation. Option D correctly identifies this logical flaw: correlation does not equal causation, and other factors might contribute to glacier retreat.",
+    "skill": "Flaw Identification",
+    "difficulty": "medium"
+  },
+  {
+    "id": "lsat_272",
+    "exam": "LSAT",
+    "section": "Logical Reasoning",
+    "question": "All students who excel in mathematics also have strong logical reasoning skills. Sarah is a student who has strong logical reasoning skills.",
+    "options": [
+      {
+        "label": "A",
+        "text": "Sarah excels in mathematics."
+      },
+      {
+        "label": "B",
+        "text": "Some students who excel in mathematics do not have strong logical reasoning skills."
+      },
+      {
+        "label": "C",
+        "text": "Sarah might not excel in mathematics."
+      },
+      {
+        "label": "D",
+        "text": "All students with strong logical reasoning skills excel in mathematics."
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "The first premise states that excelling in math is a sufficient condition for having strong logical reasoning skills (If Math -> Logic). The argument then presents Sarah as having strong logical reasoning skills. This does not guarantee she excels in math; the relationship is not reversible. She could have strong logical skills for other reasons. Therefore, Sarah might not excel in mathematics.",
+    "skill": "Deductive Reasoning",
+    "difficulty": "easy"
+  },
+  {
+    "id": "lsat_273",
+    "exam": "LSAT",
+    "section": "Logical Reasoning",
+    "question": "The local library has seen a significant decrease in fiction book checkouts over the past year. At the same time, the library introduced a new online reservation system and expanded its digital collection. Researchers conclude that the shift away from physical fiction books is due to the new digital options.",
+    "options": [
+      {
+        "label": "A",
+        "text": "The new online system made it easier to reserve non-fiction books as well."
+      },
+      {
+        "label": "B",
+        "text": "The decrease in fiction checkouts might be related to changing reader preferences or other factors not mentioned."
+      },
+      {
+        "label": "C",
+        "text": "Many patrons still prefer the feel of physical books."
+      },
+      {
+        "label": "D",
+        "text": "The library's digital collection includes a wide variety of genres beyond fiction."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "The argument presents two simultaneous events (new digital options and decreased fiction checkouts) and infers causation. Option B weakens this by suggesting alternative explanations or that the observed correlation might be coincidental, thus questioning the causal link.",
+    "skill": "Weakening",
+    "difficulty": "medium"
+  },
+  {
+    "id": "lsat_274",
+    "exam": "LSAT",
+    "section": "Logical Reasoning",
+    "question": "A survey indicated that 80% of people who regularly attend classical music concerts also read literary fiction. Therefore, attending classical music concerts is a strong predictor of reading literary fiction.",
+    "options": [
+      {
+        "label": "A",
+        "text": "The survey sample size was small."
+      },
+      {
+        "label": "B",
+        "text": "The survey did not ask about other hobbies or media consumption."
+      },
+      {
+        "label": "C",
+        "text": "It is possible that many people who read literary fiction also attend classical music concerts, but the direction of prediction is reversed."
+      },
+      {
+        "label": "D",
+        "text": "The survey accurately reflects the overlap between these two activities."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "The argument draws a conclusion about prediction based on a correlation. Option B points out a potential flaw: the survey might be missing crucial information about other factors that could explain the overlap, thus undermining the claim that attending concerts *predicts* reading fiction. It's possible both activities are predicted by a third factor (e.g., a certain socioeconomic background or educational level).",
+    "skill": "Flaw Identification",
+    "difficulty": "hard"
+  },
+  {
+    "id": "lsat_275",
+    "exam": "LSAT",
+    "section": "Logical Reasoning",
+    "question": "All renewable energy sources are environmentally friendly. Solar power is a renewable energy source.",
+    "options": [
+      {
+        "label": "A",
+        "text": "Solar power is environmentally friendly."
+      },
+      {
+        "label": "B",
+        "text": "Some environmentally friendly sources are not renewable."
+      },
+      {
+        "label": "C",
+        "text": "Not all environmentally friendly sources are renewable."
+      },
+      {
+        "label": "D",
+        "text": "Solar power is not environmentally friendly."
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "This is a classic deductive argument form (All A are B; C is A; Therefore, C is B). If all renewable energy sources are environmentally friendly, and solar power is a renewable energy source, it logically follows that solar power must be environmentally friendly.",
+    "skill": "Deductive Reasoning",
+    "difficulty": "easy"
+  },
+  {
+    "id": "lsat_276",
+    "exam": "LSAT",
+    "section": "Logical Reasoning",
+    "question": "A company has implemented a new employee wellness program. Since the program's launch, sick days taken by employees have decreased by 15%. The company concluded that the wellness program is directly responsible for the reduction in absenteeism.",
+    "options": [
+      {
+        "label": "A",
+        "text": "The company also increased its paid time off policy around the same time."
+      },
+      {
+        "label": "B",
+        "text": "Employee satisfaction surveys show a positive response to the wellness program."
+      },
+      {
+        "label": "C",
+        "text": "The 15% decrease is statistically significant."
+      },
+      {
+        "label": "D",
+        "text": "Many employees have reported feeling healthier since the program began."
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "The argument establishes a correlation between the wellness program and decreased sick days and concludes causation. Option A introduces an alternative cause (increased paid time off) that could explain the reduction in sick days, thereby weakening the causal claim made by the company.",
+    "skill": "Weakening",
+    "difficulty": "medium"
+  },
+  {
+    "id": "lsat_277",
+    "exam": "LSAT",
+    "section": "Logical Reasoning",
+    "question": "The city council rejected a proposal for a new skateboard park, citing concerns from residents about potential noise and increased loitering. Councilmember Adams stated, 'If we build this park, the noise will inevitably lead to complaints, and loitering will become a problem. We must prevent these negative outcomes.'",
+    "options": [
+      {
+        "label": "A",
+        "text": "The proposed park site is located near a busy highway."
+      },
+      {
+        "label": "B",
+        "text": "The council's argument relies on the assumption that noise and loitering are guaranteed consequences and that there are no measures to mitigate them."
+      },
+      {
+        "label": "C",
+        "text": "Some residents support the construction of the skateboard park."
+      },
+      {
+        "label": "D",
+        "text": "Skateboarding is a popular activity among young people in the city."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Councilmember Adams presents potential negative outcomes (noise, loitering) as certainties that justify rejecting the proposal. Option B correctly identifies the flaw: the argument assumes these outcomes are unavoidable and doesn't consider potential solutions or preventative measures that could address the concerns.",
+    "skill": "Assumption Identification",
+    "difficulty": "medium"
+  },
+  {
+    "id": "lsat_278",
+    "exam": "LSAT",
+    "section": "Logical Reasoning",
+    "question": "Economist: Increased government spending on infrastructure projects is essential for economic growth. Such projects create jobs directly and indirectly, boost demand for materials, and improve the efficiency of commerce.",
+    "options": [
+      {
+        "label": "A",
+        "text": "Some infrastructure projects are poorly planned and executed."
+      },
+      {
+        "label": "B",
+        "text": "The funding for these projects may require increased taxes or borrowing, potentially stifling private sector growth."
+      },
+      {
+        "label": "C",
+        "text": "The long-term benefits of improved infrastructure can outweigh the initial costs."
+      },
+      {
+        "label": "D",
+        "text": "An increase in the money supply can also stimulate economic activity."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "The economist argues *for* increased government spending. Option B presents a potential negative consequence of such spending (funding issues that could harm the private sector), which counters the economist's positive assertion about economic growth. This weakens the economist's argument.",
+    "skill": "Weakening",
+    "difficulty": "medium"
+  },
+  {
+    "id": "lsat_279",
+    "exam": "LSAT",
+    "section": "Logical Reasoning",
+    "question": "All mammals are warm-blooded. Whales are mammals.",
+    "options": [
+      {
+        "label": "A",
+        "text": "Whales are not warm-blooded."
+      },
+      {
+        "label": "B",
+        "text": "Some warm-blooded creatures are not mammals."
+      },
+      {
+        "label": "C",
+        "text": "Whales are warm-blooded."
+      },
+      {
+        "label": "D",
+        "text": "All warm-blooded creatures are mammals."
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "This is a valid deductive syllogism. Premise 1: All M are W. Premise 2: X is M. Conclusion: Therefore, X is W. Substituting: All mammals (M) are warm-blooded (W). Whales (X) are mammals (M). Therefore, whales (X) are warm-blooded (W).",
+    "skill": "Deductive Reasoning",
+    "difficulty": "easy"
+  },
+  {
+    "id": "lsat_280",
+    "exam": "LSAT",
+    "section": "Logical Reasoning",
+    "question": "A study compared the productivity of employees who worked remotely versus those who worked in the office. The study found that remote workers reported higher job satisfaction and completed tasks 10% faster on average. Therefore, allowing employees to work remotely primarily boosts productivity.",
+    "options": [
+      {
+        "label": "A",
+        "text": "The study only included employees from the tech sector."
+      },
+      {
+        "label": "B",
+        "text": "Job satisfaction and productivity are distinct metrics and one does not necessarily cause the other."
+      },
+      {
+        "label": "C",
+        "text": "The improved productivity might be due to the specific nature of the tasks assigned to remote workers."
+      },
+      {
+        "label": "D",
+        "text": "Some employees miss the social interaction of the office environment."
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "The argument jumps from observing higher productivity in remote workers to concluding that remote work *primarily* boosts productivity. Option C challenges this by suggesting an alternative explanation: the *types* of tasks might be the cause, not the location of work itself. This casts doubt on the direct causal link asserted.",
+    "skill": "Flaw Identification",
+    "difficulty": "hard"
+  },
+  {
+    "id": "lsat_281",
+    "exam": "LSAT",
+    "section": "Logical Reasoning",
+    "question": "The only way to achieve significantly improved air quality in our city is to implement strict regulations on industrial emissions. We have seen evidence of worsening air quality over the last decade while industrial output has increased.",
+    "options": [
+      {
+        "label": "A",
+        "text": "Vehicle emissions also contribute significantly to air pollution."
+      },
+      {
+        "label": "B",
+        "text": "Strict regulations have been successful in other cities."
+      },
+      {
+        "label": "C",
+        "text": "The proposed regulations would increase manufacturing costs."
+      },
+      {
+        "label": "D",
+        "text": "The increase in industrial output is a complex issue with multiple drivers."
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "The argument claims that regulating *industrial emissions* is the *only* way to improve air quality. Option A directly challenges this exclusivity by pointing out another major source of pollution (vehicle emissions), suggesting alternative or complementary solutions are needed, thus weakening the argument's strong claim.",
+    "skill": "Weakening",
+    "difficulty": "medium"
+  },
+  {
+    "id": "lsat_282",
+    "exam": "LSAT",
+    "section": "Logical Reasoning",
+    "question": "A company spokesperson stated: 'Our new marketing campaign has been a resounding success. Since its launch, sales have increased by 20 percent.'",
+    "options": [
+      {
+        "label": "A",
+        "text": "The company's main competitor went out of business shortly before the campaign began."
+      },
+      {
+        "label": "B",
+        "text": "The marketing campaign involved television, radio, and online advertisements."
+      },
+      {
+        "label": "C",
+        "text": "The 20 percent increase in sales is higher than the company's projections."
+      },
+      {
+        "label": "D",
+        "text": "The company's products are of high quality."
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "The spokesperson attributes the sales increase solely to the marketing campaign. Option A introduces a confounding factor – the competitor's closure – which provides a strong alternative explanation for the sales increase, thus weakening the spokesperson's claim that the campaign was the sole or primary reason.",
+    "skill": "Weakening",
+    "difficulty": "medium"
+  },
+  {
+    "id": "lsat_283",
+    "exam": "LSAT",
+    "section": "Logical Reasoning",
+    "question": "Someone who practices meditation regularly often reports lower stress levels. Since Anya meditates daily, it can be concluded that Anya has low stress levels.",
+    "options": [
+      {
+        "label": "A",
+        "text": "Meditation is the only effective method for reducing stress."
+      },
+      {
+        "label": "B",
+        "text": "Anya might be experiencing stress from other significant life events unrelated to her meditation practice."
+      },
+      {
+        "label": "C",
+        "text": "Many people who do not meditate also report low stress levels."
+      },
+      {
+        "label": "D",
+        "text": "Regular meditation practice has been scientifically proven to reduce stress hormones."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "The argument moves from a general correlation (meditation correlated with low stress) to a specific conclusion about Anya. Option B points out that while meditation might contribute to lower stress, other factors could override this effect in Anya's specific case, thus weakening the certainty of the conclusion.",
+    "skill": "Weakening",
+    "difficulty": "medium"
+  },
+  {
+    "id": "lsat_284",
+    "exam": "LSAT",
+    "section": "Logical Reasoning",
+    "question": "The introduction of self-driving technology in vehicles is inevitable. As the technology matures, it will offer unparalleled safety benefits by eliminating human error, which is the cause of most accidents.",
+    "options": [
+      {
+        "label": "A",
+        "text": "Self-driving technology still faces significant challenges in adverse weather conditions."
+      },
+      {
+        "label": "B",
+        "text": "The argument assumes that 'human error' is the sole or primary cause of accidents."
+      },
+      {
+        "label": "C",
+        "text": "The cost of self-driving vehicles is currently prohibitive for most consumers."
+      },
+      {
+        "label": "D",
+        "text": "Many drivers enjoy the act of driving themselves."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "The argument strongly asserts that self-driving technology will offer unparalleled safety benefits *because* it eliminates human error, which is stated as the cause of most accidents. Option B identifies the crucial assumption: the argument relies on the premise that human error is the primary or only significant cause of accidents. If other factors contribute substantially (e.g., mechanical failure, road conditions), then self-driving technology might not offer *unparalleled* safety benefits.",
+    "skill": "Assumption Identification",
+    "difficulty": "hard"
   }
 ]
