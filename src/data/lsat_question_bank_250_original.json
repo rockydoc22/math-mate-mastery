@@ -7948,5 +7948,517 @@
     "explanation": "The argument strongly asserts that self-driving technology will offer unparalleled safety benefits *because* it eliminates human error, which is stated as the cause of most accidents. Option B identifies the crucial assumption: the argument relies on the premise that human error is the primary or only significant cause of accidents. If other factors contribute substantially (e.g., mechanical failure, road conditions), then self-driving technology might not offer *unparalleled* safety benefits.",
     "skill": "Assumption Identification",
     "difficulty": "hard"
+  },
+  {
+    "question": "The primary purpose of the passage is to:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Argue for a specific legislative approach to environmental regulation."
+      },
+      {
+        "label": "B",
+        "text": "Introduce and explain the concept of ecosystem services and their economic valuation."
+      },
+      {
+        "label": "C",
+        "text": "Critique the effectiveness of current market-based environmental policies."
+      },
+      {
+        "label": "D",
+        "text": "Compare and contrast different scientific methodologies for assessing biodiversity."
+      },
+      {
+        "label": "E",
+        "text": "Advocate for increased funding for ecological research."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "The passage systematically defines ecosystem services, provides examples, explains why they are often undervalued, and discusses the rationale and challenges of their economic valuation. This strongly aligns with introducing and explaining the concept.",
+    "skill": "Primary Purpose",
+    "difficulty": "easy",
+    "id": "lsat_285",
+    "exam": "LSAT",
+    "section": "Reading Comprehension"
+  },
+  {
+    "question": "According to the passage, which of the following is LEAST likely to be considered an ecosystem service?",
+    "options": [
+      {
+        "label": "A",
+        "text": "The purification of water by wetlands."
+      },
+      {
+        "label": "B",
+        "text": "The pollination of crops by insects."
+      },
+      {
+        "label": "C",
+        "text": "The aesthetic beauty of a mountain landscape."
+      },
+      {
+        "label": "D",
+        "text": "The regulation of climate by forests."
+      },
+      {
+        "label": "E",
+        "text": "The production of oxygen by plants."
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "While aesthetic beauty is a benefit derived from nature, the passage emphasizes tangible, functional benefits that directly support human well-being and economic activity. While some might argue for its inclusion, it's less directly tied to essential processes than the other options. The passage focuses on services that are directly instrumental to human survival and economic systems.",
+    "skill": "Inference",
+    "difficulty": "medium",
+    "id": "lsat_286",
+    "exam": "LSAT",
+    "section": "Reading Comprehension"
+  },
+  {
+    "question": "The author mentions the difficulty in assigning economic value to ecosystem services primarily to:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Highlight the limitations of economic models in ecological studies."
+      },
+      {
+        "label": "B",
+        "text": "Suggest that conservation efforts should focus on non-economic benefits."
+      },
+      {
+        "label": "C",
+        "text": "Explain why many ecosystem services are currently underprotected."
+      },
+      {
+        "label": "D",
+        "text": "Argue that natural ecosystems are inherently priceless."
+      },
+      {
+        "label": "E",
+        "text": "Demonstrate the complexity of ecological systems."
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "The passage explicitly states that because these services are 'often invisible and unpriced,' they are vulnerable to degradation. The difficulty in valuation directly leads to their underprotection.",
+    "skill": "Author's Reasoning",
+    "difficulty": "medium",
+    "id": "lsat_287",
+    "exam": "LSAT",
+    "section": "Reading Comprehension"
+  },
+  {
+    "question": "The passage suggests that a key reason for the 'market failure' related to ecosystem services is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "The lack of government intervention in environmental markets."
+      },
+      {
+        "label": "B",
+        "text": "The absence of a clear property rights structure for natural resources."
+      },
+      {
+        "label": "C",
+        "text": "The inherent inefficiency of free markets."
+      },
+      {
+        "label": "D",
+        "text": "The high cost of implementing environmental regulations."
+      },
+      {
+        "label": "E",
+        "text": "The limited demand for environmental goods and services."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "The passage links market failure to the fact that these services are 'public goods' or 'common pool resources,' which often lack well-defined property rights, leading to overuse or degradation. This indirectly points to the issue of property rights structures.",
+    "skill": "Inference",
+    "difficulty": "hard",
+    "id": "lsat_288",
+    "exam": "LSAT",
+    "section": "Reading Comprehension"
+  },
+  {
+    "question": "The author's tone in discussing the economic valuation of ecosystem services can best be described as:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Indifferent and detached."
+      },
+      {
+        "label": "B",
+        "text": "Enthusiastic and optimistic."
+      },
+      {
+        "label": "C",
+        "text": "Cautious but hopeful."
+      },
+      {
+        "label": "D",
+        "text": "Skeptical and dismissive."
+      },
+      {
+        "label": "E",
+        "text": "Critical and denunciatory."
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "The author acknowledges the challenges ('difficulties,' 'complex') but also highlights the necessity and potential benefits ('crucial step,' 'powerful tool') of economic valuation, suggesting a measured approach that sees potential despite obstacles.",
+    "skill": "Tone",
+    "difficulty": "medium",
+    "id": "lsat_289",
+    "exam": "LSAT",
+    "section": "Reading Comprehension"
+  },
+  {
+    "question": "Which of the following statements is most consistent with the passage's view on the relationship between human well-being and natural ecosystems?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Human well-being is largely independent of the health of natural ecosystems."
+      },
+      {
+        "label": "B",
+        "text": "Natural ecosystems provide a range of essential benefits that directly support human well-being."
+      },
+      {
+        "label": "C",
+        "text": "The economic value of natural ecosystems is primarily derived from their aesthetic qualities."
+      },
+      {
+        "label": "D",
+        "text": "Human societies can thrive indefinitely without concern for ecological degradation."
+      },
+      {
+        "label": "E",
+        "text": "Technological advancements have rendered natural ecosystems largely irrelevant to human survival."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "The entire concept of ecosystem services, as presented in the passage, revolves around the idea that natural ecosystems provide numerous indispensable services that directly contribute to human welfare and economic prosperity.",
+    "skill": "Main Idea",
+    "difficulty": "easy",
+    "id": "lsat_290",
+    "exam": "LSAT",
+    "section": "Reading Comprehension"
+  },
+  {
+    "question": "The passage implies that the conventional approach to measuring economic progress often overlooks:",
+    "options": [
+      {
+        "label": "A",
+        "text": "The depletion of non-renewable resources."
+      },
+      {
+        "label": "B",
+        "text": "The environmental externalities of industrial production."
+      },
+      {
+        "label": "C",
+        "text": "The contribution of natural capital to economic output."
+      },
+      {
+        "label": "D",
+        "text": "All of the above."
+      },
+      {
+        "label": "E",
+        "text": "None of the above."
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "By focusing on ecosystem services and the difficulty in valuing them, the passage implies that traditional economic metrics fail to account for the degradation of natural capital (C) and the negative externalities (B), both of which are closely linked to resource depletion (A).",
+    "skill": "Inference",
+    "difficulty": "hard",
+    "id": "lsat_291",
+    "exam": "LSAT",
+    "section": "Reading Comprehension"
+  },
+  {
+    "question": "The author uses the term 'natural capital' to suggest that:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Natural resources are inherently less valuable than manufactured capital."
+      },
+      {
+        "label": "B",
+        "text": "Natural ecosystems represent a form of wealth that can yield ongoing benefits."
+      },
+      {
+        "label": "C",
+        "text": "Environmental degradation is an unavoidable consequence of economic development."
+      },
+      {
+        "label": "D",
+        "text": "The focus should be solely on the monetary value of natural resources."
+      },
+      {
+        "label": "E",
+        "text": "Ecological systems are fundamentally different from economic systems."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "The analogy to 'capital' implies a store of value that generates returns. In this context, natural capital refers to the stock of natural assets that provide a flow of benefits (ecosystem services).",
+    "skill": "Vocabulary in Context",
+    "difficulty": "medium",
+    "id": "lsat_292",
+    "exam": "LSAT",
+    "section": "Reading Comprehension"
+  },
+  {
+    "question": "What is the central tension discussed in the passage concerning the field of law?",
+    "options": [
+      {
+        "label": "A",
+        "text": "The conflict between statutory law and common law in environmental cases."
+      },
+      {
+        "label": "B",
+        "text": "The struggle to adapt legal frameworks to encompass the value of natural processes."
+      },
+      {
+        "label": "C",
+        "text": "The debate over whether environmental regulations should be enforced federally or by states."
+      },
+      {
+        "label": "D",
+        "text": "The increasing complexity of environmental litigation."
+      },
+      {
+        "label": "E",
+        "text": "The difficulty in proving causation in environmental damage lawsuits."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "The passage discusses how traditional legal systems, often anthropocentric and focused on human property rights, struggle to incorporate the intrinsic value and essential functions of natural systems, leading to challenges in legal protection and remedy for environmental harm.",
+    "skill": "Main Idea",
+    "difficulty": "hard",
+    "id": "lsat_293",
+    "exam": "LSAT",
+    "section": "Reading Comprehension"
+  },
+  {
+    "question": "The author would most likely agree with which of the following statements?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Environmental law is primarily concerned with protecting individual property rights from pollution."
+      },
+      {
+        "label": "B",
+        "text": "Sustainable development requires legal mechanisms that reflect the interconnectedness of human and natural systems."
+      },
+      {
+        "label": "C",
+        "text": "The legal system adequately protects the interests of non-human entities."
+      },
+      {
+        "label": "D",
+        "text": "Monetary valuation is the only legitimate basis for environmental protection under the law."
+      },
+      {
+        "label": "E",
+        "text": "Legal battles over environmental issues have led to significant advancements in ecological science."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "The passage highlights the limitations of existing legal frameworks and implicitly advocates for approaches that recognize ecological integrity and the essential role of natural systems. Sustainable development, as envisioned in the passage, would necessitate such legal adaptations.",
+    "skill": "Inference",
+    "difficulty": "hard",
+    "id": "lsat_294",
+    "exam": "LSAT",
+    "section": "Reading Comprehension"
+  },
+  {
+    "question": "The passage uses the example of a river's capacity to dilute pollutants to illustrate:",
+    "options": [
+      {
+        "label": "A",
+        "text": "The limitations of scientific measurement in environmental studies."
+      },
+      {
+        "label": "B",
+        "text": "How natural processes can be exploited for industrial purposes without accounting for their cost."
+      },
+      {
+        "label": "C",
+        "text": "The inherent resilience of natural ecosystems to human interference."
+      },
+      {
+        "label": "D",
+        "text": "The need for stricter government regulations on industrial waste."
+      },
+      {
+        "label": "E",
+        "text": "The primary function of rivers in supporting aquatic life."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "This capacity is a service provided by the river ecosystem. When industries use the river to dilute pollutants without paying for this service or accounting for its potential degradation, it exemplifies the problem of unpriced externalities and the exploitation of natural processes.",
+    "skill": "Example Application",
+    "difficulty": "medium",
+    "id": "lsat_295",
+    "exam": "LSAT",
+    "section": "Reading Comprehension"
+  },
+  {
+    "question": "Which of the following best describes the relationship between the 'tragedy of the commons' and the issues discussed in the passage?",
+    "options": [
+      {
+        "label": "A",
+        "text": "The tragedy of the commons is a proposed solution to the problem of environmental degradation."
+      },
+      {
+        "label": "B",
+        "text": "The issues discussed in the passage are a direct consequence of the tragedy of the commons principle."
+      },
+      {
+        "label": "C",
+        "text": "The tragedy of the commons is irrelevant to the economic valuation of ecosystem services."
+      },
+      {
+        "label": "D",
+        "text": "The passage rejects the principles of the tragedy of the commons as outdated."
+      },
+      {
+        "label": "E",
+        "text": "The tragedy of the commons explains the overexploitation of privately owned natural resources."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "The concept of the tragedy of the commons, which describes the depletion of a shared resource by individuals acting in their own self-interest, directly applies to the description of many ecosystem services as public goods or common pool resources vulnerable to overuse and degradation.",
+    "skill": "Concept Application",
+    "difficulty": "hard",
+    "id": "lsat_296",
+    "exam": "LSAT",
+    "section": "Reading Comprehension"
+  },
+  {
+    "question": "The author's argument implies that a more effective approach to environmental protection would involve:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Strictly limiting all forms of economic development."
+      },
+      {
+        "label": "B",
+        "text": "Relying solely on international treaties and agreements."
+      },
+      {
+        "label": "C",
+        "text": "Integrating the value of ecosystem services into decision-making processes."
+      },
+      {
+        "label": "D",
+        "text": "Educating the public about the beauty of nature."
+      },
+      {
+        "label": "E",
+        "text": "Developing advanced technologies to replace all natural processes."
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "The entire premise of the passage is that by recognizing and valuing ecosystem services, we can make more informed decisions that lead to better environmental outcomes. This directly supports the idea of integrating this value into decision-making.",
+    "skill": "Author's Recommendation",
+    "difficulty": "medium",
+    "id": "lsat_297",
+    "exam": "LSAT",
+    "section": "Reading Comprehension"
+  },
+  {
+    "question": "According to the passage, the challenge of assigning value to ecosystem services is compounded by:",
+    "options": [
+      {
+        "label": "A",
+        "text": "The fact that many services are non-rivalrous and non-excludable."
+      },
+      {
+        "label": "B",
+        "text": "The lack of scientific understanding of ecological processes."
+      },
+      {
+        "label": "C",
+        "text": "The preference humans have for manufactured goods over natural ones."
+      },
+      {
+        "label": "D",
+        "text": "The consistent overestimation of the benefits of healthy ecosystems."
+      },
+      {
+        "label": "E",
+        "text": "The legal prohibition on valuing natural resources."
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "The passage explicitly mentions that many ecosystem services are public goods, characterized by non-rivalry (one person's use doesn't diminish another's) and non-excludability (it's hard to prevent people from benefiting). These characteristics are precisely why they are difficult to value using traditional market mechanisms.",
+    "skill": "Supporting Detail",
+    "difficulty": "medium",
+    "id": "lsat_298",
+    "exam": "LSAT",
+    "section": "Reading Comprehension"
+  },
+  {
+    "question": "The passage contrasts the valuation of ecosystem services with the valuation of:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Public infrastructure projects."
+      },
+      {
+        "label": "B",
+        "text": "Manufactured goods and commodities."
+      },
+      {
+        "label": "C",
+        "text": "Historical artifacts."
+      },
+      {
+        "label": "D",
+        "text": "Scientific research grants."
+      },
+      {
+        "label": "E",
+        "text": "Artistic creations."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "The passage implicitly or explicitly contrasts the unpriced nature of ecosystem services with the standard market mechanisms used to value manufactured goods, where supply and demand typically determine price.",
+    "skill": "Comparison",
+    "difficulty": "easy",
+    "id": "lsat_299",
+    "exam": "LSAT",
+    "section": "Reading Comprehension"
+  },
+  {
+    "question": "Which of the following best sums up the author's perspective on the future of environmental policy?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Environmental policy is destined to fail without radical economic restructuring."
+      },
+      {
+        "label": "B",
+        "text": "Existing environmental policies are adequate and require only minor adjustments."
+      },
+      {
+        "label": "C",
+        "text": "Greater integration of ecological and economic considerations is essential for effective policy."
+      },
+      {
+        "label": "D",
+        "text": "Technological innovation will eventually solve all environmental problems, rendering policy moot."
+      },
+      {
+        "label": "E",
+        "text": "International cooperation is the only viable path forward for environmental policy."
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "The passage's central theme is the need to recognize and value ecosystem services. This inherently points towards a future where environmental considerations are more deeply interwoven with economic and policy frameworks.",
+    "skill": "Overall Perspective",
+    "difficulty": "medium",
+    "id": "lsat_300",
+    "exam": "LSAT",
+    "section": "Reading Comprehension"
   }
 ]
