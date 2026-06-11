@@ -908,5 +908,395 @@
     "answer": "B",
     "difficulty": 5,
     "explanation": "Le mot 'passionnant' décrit quelque chose qui suscite une forte émotion, un grand intérêt ou une passion."
+  },
+  {
+    "id": "AP_French_71",
+    "question": "Quel est le synonyme le plus proche de « émoustiller » ?",
+    "choices": {
+      "A": "Calmer",
+      "B": "Stimuler",
+      "C": "Endormir",
+      "D": "Exciter"
+    },
+    "answer": "B",
+    "difficulty": 6,
+    "explanation": "« Émoustiller » signifie éveiller l'intérêt, stimuler l'imagination ou les sens. « Stimuler » est le synonyme le plus approchant."
+  },
+  {
+    "id": "AP_French_72",
+    "question": "Dans la phrase « Il a beau insister, il n'obtiendra rien. », que signifie « avoir beau » ?",
+    "choices": {
+      "A": "Être généreux",
+      "B": "Être en vain",
+      "C": "Être fortuné",
+      "D": "Être capable"
+    },
+    "answer": "B",
+    "difficulty": 7,
+    "explanation": "L'expression « avoir beau faire quelque chose » signifie faire quelque chose en vain, sans succès."
+  },
+  {
+    "id": "AP_French_73",
+    "question": "Quel mot n'appartient pas à la même famille que les autres ?",
+    "choices": {
+      "A": "Fleurir",
+      "B": "Floraison",
+      "C": "Fleuriste",
+      "D": "Flocon"
+    },
+    "answer": "D",
+    "difficulty": 5,
+    "explanation": "Les mots « fleurir », « floraison » et « fleuriste » sont liés au concept de fleur. « Flocon » est lié à la neige."
+  },
+  {
+    "id": "AP_French_74",
+    "question": "Choisissez le meilleur connecteur pour relier ces deux idées : « Il pleut des cordes. Il faut donc rester à l'intérieur. »",
+    "choices": {
+      "A": "Cependant",
+      "B": "Par conséquent",
+      "C": "De plus",
+      "D": "Malgré"
+    },
+    "answer": "B",
+    "difficulty": 6,
+    "explanation": "« Par conséquent » exprime une conséquence logique entre les deux phrases."
+  },
+  {
+    "id": "AP_French_75",
+    "question": "Quel est le temps correct pour compléter la phrase : « Lorsque nous _______ (arriver), le film avait déjà commencé. »",
+    "choices": {
+      "A": "arriverons",
+      "B": "arrivâmes",
+      "C": "arrivions",
+      "D": "arriverions"
+    },
+    "answer": "B",
+    "difficulty": 8,
+    "explanation": "La phrase décrit une action passée qui s'est produite avant une autre action passée (« avait déjà commencé »). Le passé simple (« arrivâmes ») est approprié ici pour une action ponctuelle dans le passé."
+  },
+  {
+    "id": "AP_French_76",
+    "question": "Quel pays francophone est célèbre pour ses festivals de jazz, notamment celui de Montréal ?",
+    "choices": {
+      "A": "Belgique",
+      "B": "Suisse",
+      "C": "Maroc",
+      "D": "Canada"
+    },
+    "answer": "D",
+    "difficulty": 6,
+    "explanation": "Le Canada, et plus particulièrement le Québec, est connu pour ses festivals culturels, dont le Festival International de Jazz de Montréal."
+  },
+  {
+    "id": "AP_French_77",
+    "question": "Quelle est la bonne orthographe ?",
+    "choices": {
+      "A": "J'ai acheté des pommes de terre.",
+      "B": "J'ai acheté des pommes de terre.",
+      "C": "J'ai acheté des pommes de terre.",
+      "D": "J'ai acheté des pommes de terre."
+    },
+    "answer": "A",
+    "difficulty": 5,
+    "explanation": "La phrase correcte est « J'ai acheté des pommes de terre ». Les autres options présentent des erreurs d'accord ou de vocabulaire."
+  },
+  {
+    "id": "AP_French_78",
+    "question": "Que signifie l'expression idiomatique « avoir le cafard » ?",
+    "choices": {
+      "A": "Être très enthousiaste",
+      "B": "Être de mauvaise humeur ou mélancolique",
+      "C": "Avoir peur",
+      "D": "Être en colère"
+    },
+    "answer": "B",
+    "difficulty": 7,
+    "explanation": "« Avoir le cafard » signifie être triste, dépressif, avoir le moral bas."
+  },
+  {
+    "id": "AP_French_79",
+    "question": "Quel est l'antonyme de « taciturne » ?",
+    "choices": {
+      "A": "Silencieux",
+      "B": "Bavard",
+      "C": "Mystérieux",
+      "D": "Réservé"
+    },
+    "answer": "B",
+    "difficulty": 6,
+    "explanation": "« Taciturne » décrit quelqu'un qui parle peu. « Bavard » est son opposé."
+  },
+  {
+    "id": "AP_French_80",
+    "question": "Complétez la phrase avec le pronom relatif correct : « C'est le livre _______ j'ai parlé hier. »",
+    "choices": {
+      "A": "qui",
+      "B": "que",
+      "C": "dont",
+      "D": "où"
+    },
+    "answer": "C",
+    "difficulty": 7,
+    "explanation": "Le verbe « parler » se construit avec la préposition « de » (« parler de quelque chose »). Le pronom relatif « dont » remplace un complément introduit par « de »."
+  },
+  {
+    "id": "AP_French_81",
+    "question": "Quel auteur est connu pour son roman « L'Étranger » ?",
+    "choices": {
+      "A": "Victor Hugo",
+      "B": "Albert Camus",
+      "C": "Gustave Flaubert",
+      "D": "Émile Zola"
+    },
+    "answer": "B",
+    "difficulty": 5,
+    "explanation": "Albert Camus est l'auteur de « L'Étranger », une œuvre majeure de la littérature du XXe siècle."
+  },
+  {
+    "id": "AP_French_82",
+    "question": "Choisissez la forme verbale correcte : « Si j'_______ plus de temps, je lirais ce livre. »",
+    "choices": {
+      "A": "ai",
+      "B": "avais",
+      "C": "aurai",
+      "D": "eusse"
+    },
+    "answer": "B",
+    "difficulty": 7,
+    "explanation": "La structure « si + imparfait, conditionnel présent » est utilisée pour exprimer une hypothèse irréelle dans le présent ou le futur. L'imparfait est donc requis."
+  },
+  {
+    "id": "AP_French_83",
+    "question": "Quel pays d'Afrique francophone est connu pour sa richesse culturelle et ses musées d'art, comme le Musée des Civilisations Noires à Dakar ?",
+    "choices": {
+      "A": "Algérie",
+      "B": "Sénégal",
+      "C": "Tunisie",
+      "D": "Côte d'Ivoire"
+    },
+    "answer": "B",
+    "difficulty": 6,
+    "explanation": "Le Sénégal, avec sa capitale Dakar, est un centre culturel important en Afrique de l'Ouest, abritant notamment le Musée des Civilisations Noires."
+  },
+  {
+    "id": "AP_French_84",
+    "question": "Que signifie « se ronger les sangs » ?",
+    "choices": {
+      "A": "Manger avec appétit",
+      "B": "Être très inquiet ou angoissé",
+      "C": "Se blesser",
+      "D": "Être en bonne santé"
+    },
+    "answer": "B",
+    "difficulty": 7,
+    "explanation": "« Se ronger les sangs » est une expression signifiant être excessivement inquiet, se faire du souci."
+  },
+  {
+    "id": "AP_French_85",
+    "question": "Quel est le participe passé du verbe « croire » ?",
+    "choices": {
+      "A": "Croyé",
+      "B": "Cru",
+      "C": "Croyant",
+      "D": "Cruyé"
+    },
+    "answer": "B",
+    "difficulty": 5,
+    "explanation": "Le participe passé du verbe irrégulier « croire » est « cru »."
+  },
+  {
+    "id": "AP_French_86",
+    "question": "Quelle préposition faut-il utiliser pour indiquer l'origine dans la phrase : « Elle vient _______ Paris. »",
+    "choices": {
+      "A": "de",
+      "B": "à",
+      "C": "en",
+      "D": "dans"
+    },
+    "answer": "A",
+    "difficulty": 5,
+    "explanation": "La préposition « de » est utilisée pour indiquer l'origine géographique, surtout avec les villes."
+  },
+  {
+    "id": "AP_French_87",
+    "question": "Quel film français de 1997, réalisé par Luc Besson, met en scène Milla Jovovich dans le rôle d'une guerrière du futur ?",
+    "choices": {
+      "A": "Le Cinquième Élément",
+      "B": "Léon",
+      "C": "Jeanne d'Arc",
+      "D": "Nikita"
+    },
+    "answer": "A",
+    "difficulty": 6,
+    "explanation": "« Le Cinquième Élément » est un film de science-fiction français emblématique réalisé par Luc Besson."
+  },
+  {
+    "id": "AP_French_88",
+    "question": "Choisissez le mot qui décrit le mieux quelqu'un qui est « loquace » :",
+    "choices": {
+      "A": "Mystérieux",
+      "B": "Parleur",
+      "C": "Timide",
+      "D": "Intelligent"
+    },
+    "answer": "B",
+    "difficulty": 6,
+    "explanation": "« Loquace » signifie qui parle beaucoup, qui est bavard."
+  },
+  {
+    "id": "AP_French_89",
+    "question": "Quel est le féminin de « héros » ?",
+    "choices": {
+      "A": "Héroïne",
+      "B": "Héroesse",
+      "C": "Héroïne",
+      "D": "Héronne"
+    },
+    "answer": "A",
+    "difficulty": 5,
+    "explanation": "Le féminin de « héros » est « héroïne », bien que le terme puisse aussi désigner le médicament."
+  },
+  {
+    "id": "AP_French_90",
+    "question": "Complétez la phrase avec le bon accord du participe passé : « Les lettres que j'_______ (écrire) étaient longues. »",
+    "choices": {
+      "A": "ai écrit",
+      "B": "ai écrites",
+      "C": "ai écris",
+      "D": "ai écrite"
+    },
+    "answer": "B",
+    "difficulty": 8,
+    "explanation": "Le participe passé employé avec « avoir » s'accorde avec le complément d'objet direct (COD) si celui-ci est placé avant le verbe. Ici, « que » remplace « les lettres » (féminin pluriel), donc « écrites » s'accorde au féminin pluriel."
+  },
+  {
+    "id": "AP_French_91",
+    "question": "Quel écrivain québécois est l'auteur de « Bonheur d'occasion » ?",
+    "choices": {
+      "A": "Réjean Ducharme",
+      "B": "Gabrielle Roy",
+      "C": "Michel Tremblay",
+      "D": "Marie-Claire Blais"
+    },
+    "answer": "B",
+    "difficulty": 7,
+    "explanation": "Gabrielle Roy est une figure majeure de la littérature québécoise, et « Bonheur d'occasion » est l'un de ses romans les plus célèbres."
+  },
+  {
+    "id": "AP_French_92",
+    "question": "Quelle est la signification de l'expression « mettre les points sur les i » ?",
+    "choices": {
+      "A": "Faire des reproches",
+      "B": "Être très précis, clarifier les choses",
+      "C": "Se disputer violemment",
+      "D": "Se concentrer sur un détail"
+    },
+    "answer": "B",
+    "difficulty": 7,
+    "explanation": "« Mettre les points sur les i » signifie apporter des précisions nécessaires pour éviter toute ambiguïté, clarifier une situation."
+  },
+  {
+    "id": "AP_French_93",
+    "question": "Quel est le mot correct ?",
+    "choices": {
+      "A": "Un devis",
+      "B": "Un devise",
+      "C": "Un devis",
+      "D": "Un devise"
+    },
+    "answer": "A",
+    "difficulty": 5,
+    "explanation": "« Un devis » est un document qui estime le coût d'un travail ou d'une prestation. « Une devise » est une monnaie ou une maxime."
+  },
+  {
+    "id": "AP_French_94",
+    "question": "Complétez la phrase avec le bon adverbe de manière : « Elle travaille _______ pour réussir son examen. »",
+    "choices": {
+      "A": "dure",
+      "B": "dur",
+      "C": "durement",
+      "D": "durément"
+    },
+    "answer": "B",
+    "difficulty": 6,
+    "explanation": "Dans ce contexte, « dur » fonctionne comme un adverbe de manière signifiant « avec effort ». « Dur » est invariable quand il modifie un verbe."
+  },
+  {
+    "id": "AP_French_95",
+    "question": "Quel pays francophone est également connu sous le nom de « l'Hexagone » ?",
+    "choices": {
+      "A": "Canada",
+      "B": "Belgique",
+      "C": "France",
+      "D": "Suisse"
+    },
+    "answer": "C",
+    "difficulty": 5,
+    "explanation": "La France est souvent appelée « l'Hexagone » en raison de la forme approximativement hexagonale de son territoire métropolitain."
+  },
+  {
+    "id": "AP_French_96",
+    "question": "Quel est le synonyme le plus proche de « frugal » ?",
+    "choices": {
+      "A": "Généreux",
+      "B": "Copieux",
+      "C": "Économe",
+      "D": "Opulent"
+    },
+    "answer": "C",
+    "difficulty": 7,
+    "explanation": "« Frugal » se dit de quelqu'un qui mange peu, simplement, et par extension, qui est économe dans ses dépenses."
+  },
+  {
+    "id": "AP_French_97",
+    "question": "Quelle conjonction de subordination introduit une cause ?",
+    "choices": {
+      "A": "Bien que",
+      "B": "Pour que",
+      "C": "Puisque",
+      "D": "Alors que"
+    },
+    "answer": "C",
+    "difficulty": 6,
+    "explanation": "« Puisque » introduit une explication, une cause connue ou évidente."
+  },
+  {
+    "id": "AP_French_98",
+    "question": "Complétez la phrase au subjonctif : « Il faut que tu _______ tes devoirs. »",
+    "choices": {
+      "A": "fais",
+      "B": "faites",
+      "C": "fasses",
+      "D": "faisais"
+    },
+    "answer": "C",
+    "difficulty": 7,
+    "explanation": "L'expression impersonnelle « il faut que » suivie d'un sujet différent commande l'emploi du subjonctif. La forme correcte du subjonctif présent pour « tu » est « fasses »."
+  },
+  {
+    "id": "AP_French_99",
+    "question": "Quel artiste belge est célèbre pour ses bandes dessinées surréalistes, notamment « Tintin » ?",
+    "choices": {
+      "A": "Victor Horta",
+      "B": "René Magritte",
+      "C": "Hergé",
+      "D": "Jacques Brel"
+    },
+    "answer": "C",
+    "difficulty": 6,
+    "explanation": "Hergé (Georges Remi) est le créateur emblématique de Tintin, un personnage de bande dessinée mondialement connu."
+  },
+  {
+    "id": "AP_French_100",
+    "question": "Que signifie l'expression « prendre ses jambes à son cou » ?",
+    "choices": {
+      "A": "Courir très vite pour s'enfuir",
+      "B": "Être très fatigué",
+      "C": "Se préparer pour un marathon",
+      "D": "Manquer de courage"
+    },
+    "answer": "A",
+    "difficulty": 7,
+    "explanation": "« Prendre ses jambes à son cou » signifie s'enfuir rapidement, partir en courant."
   }
 ]
