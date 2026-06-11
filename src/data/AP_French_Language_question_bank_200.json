@@ -1,22 +1,912 @@
 [
-  {"id":"AP_French_1","question":"Si j'_______ assez d'argent, j'achèterais une maison.","choices":{"A":"avais","B":"aurais","C":"ai","D":"aie"},"answer":"A","difficulty":7,"explanation":"Si + imparfait, conditionnel présent. 'Avais' is correct after 'si.'"},
-  {"id":"AP_French_2","question":"Combien de touristes visitent la France chaque année?","choices":{"A":"50 millions","B":"90 millions","C":"120 millions","D":"70 millions"},"answer":"B","difficulty":5,"explanation":"France receives approximately 90 million tourists per year."},
-  {"id":"AP_French_3","question":"C'est le film _______ je t'ai parlé.","choices":{"A":"dont","B":"que","C":"qui","D":"où"},"answer":"A","difficulty":7,"explanation":"'Parler de' requires 'dont' (replaces de + antecedent)."},
-  {"id":"AP_French_4","question":"'Avoir le cafard' signifie:","choices":{"A":"Avoir faim","B":"Être triste","C":"Avoir peur des insectes","D":"Être en bonne santé"},"answer":"B","difficulty":6,"explanation":"Idiomatic expression meaning to feel blue or depressed."},
-  {"id":"AP_French_5","question":"Les lettres que j'ai _______ sont sur la table.","choices":{"A":"écrites","B":"écrit","C":"écrits","D":"écrite"},"answer":"A","difficulty":7,"explanation":"With 'avoir,' participle agrees with preceding direct object 'lettres' (fem. pl.)."},
-  {"id":"AP_French_6","question":"Quel mode suit 'il faut que'?","choices":{"A":"Indicatif","B":"Subjonctif","C":"Conditionnel","D":"Futur"},"answer":"B","difficulty":6,"explanation":"'Il faut que' always requires the subjunctive."},
-  {"id":"AP_French_7","question":"Pierre dit 'Je ne sais pas encore. Ça dépend.' Est-il sûr?","choices":{"A":"Oui","B":"Non","C":"Il a refusé","D":"Il n'a pas compris"},"answer":"B","difficulty":5,"explanation":"'Je ne sais pas encore' and 'Ça dépend' express uncertainty."},
-  {"id":"AP_French_8","question":"Elle rêve _______ voyager en Afrique.","choices":{"A":"de","B":"à","C":"pour","D":"en"},"answer":"A","difficulty":6,"explanation":"'Rêver de' + infinitive = to dream of doing something."},
-  {"id":"AP_French_9","question":"Voltaire et Montesquieu sont associés à:","choices":{"A":"Le Romantisme","B":"Le Réalisme","C":"Les Lumières","D":"Le Surréalisme"},"answer":"C","difficulty":6,"explanation":"Both were key Enlightenment (Lumières) figures."},
-  {"id":"AP_French_10","question":"Je cherche quelqu'un qui _______ parler trois langues.","choices":{"A":"puisse","B":"peut","C":"pourra","D":"pouvait"},"answer":"A","difficulty":7,"explanation":"Subjunctive after 'chercher quelqu'un qui' (hypothetical person)."},
-  {"id":"AP_French_11","question":"Différence entre 'savoir' et 'connaître':","choices":{"A":"Pas de différence","B":"Savoir = faits/compétences; connaître = personnes/lieux","C":"Connaître est plus formel","D":"Savoir = passé; connaître = présent"},"answer":"B","difficulty":6,"explanation":"'Savoir' for facts/skills; 'connaître' for people/places/things."},
-  {"id":"AP_French_12","question":"À quel âge passe-t-on le baccalauréat?","choices":{"A":"15 ans","B":"16 ans","C":"18 ans","D":"20 ans"},"answer":"C","difficulty":5,"explanation":"The bac is the final lycée exam, taken at approximately 18."},
-  {"id":"AP_French_13","question":"Il a _______ mangé qu'il ne peut plus bouger.","choices":{"A":"tellement","B":"aussi","C":"si","D":"autant"},"answer":"A","difficulty":7,"explanation":"'Tellement...que' with verbs; 'si...que' with adjectives."},
-  {"id":"AP_French_14","question":"Quelle fête célèbre la prise de la Bastille?","choices":{"A":"1er mai","B":"1er novembre","C":"14 juillet","D":"25 décembre"},"answer":"C","difficulty":5,"explanation":"July 14th commemorates the storming of the Bastille (1789)."},
-  {"id":"AP_French_15","question":"Ces livres? Je _______ ai achetés hier.","choices":{"A":"les","B":"leur","C":"en","D":"y"},"answer":"A","difficulty":6,"explanation":"'Les' replaces the direct object 'ces livres.'"},
-  {"id":"AP_French_16","question":"Quel pays francophone est en Afrique du Nord?","choices":{"A":"Sénégal","B":"Maroc","C":"Madagascar","D":"Haïti"},"answer":"B","difficulty":5,"explanation":"Morocco (Le Maroc) is in North Africa."},
-  {"id":"AP_French_17","question":"Elle _______ (naître) en 1990 à Lyon.","choices":{"A":"est née","B":"a née","C":"a naîtu","D":"est naît"},"answer":"A","difficulty":6,"explanation":"'Naître' uses 'être'; feminine agreement: 'née.'"},
-  {"id":"AP_French_18","question":"'Métro-boulot-dodo' signifie:","choices":{"A":"Un type de nourriture","B":"La routine quotidienne monotone","C":"Un jeu","D":"Un quartier de Paris"},"answer":"B","difficulty":6,"explanation":"Subway-work-sleep: describing monotonous daily routine."},
-  {"id":"AP_French_19","question":"Bien qu'il _______ fatigué, il a continué.","choices":{"A":"soit","B":"est","C":"était","D":"serait"},"answer":"A","difficulty":7,"explanation":"'Bien que' always requires subjunctive: 'soit.'"},
-  {"id":"AP_French_20","question":"La tendance des Français à acheter bio indique:","choices":{"A":"Plus de fast-food","B":"Intérêt croissant pour le bio et le local","C":"Baisse des marchés","D":"Plus d'agriculture industrielle"},"answer":"B","difficulty":5,"explanation":"Growing interest in organic and local products in France."}
+  {
+    "id": "AP_French_1",
+    "question": "Si j'_______ assez d'argent, j'achèterais une maison.",
+    "choices": {
+      "A": "avais",
+      "B": "aurais",
+      "C": "ai",
+      "D": "aie"
+    },
+    "answer": "A",
+    "difficulty": 7,
+    "explanation": "Si + imparfait, conditionnel présent. 'Avais' is correct after 'si.'"
+  },
+  {
+    "id": "AP_French_2",
+    "question": "Combien de touristes visitent la France chaque année?",
+    "choices": {
+      "A": "50 millions",
+      "B": "90 millions",
+      "C": "120 millions",
+      "D": "70 millions"
+    },
+    "answer": "B",
+    "difficulty": 5,
+    "explanation": "France receives approximately 90 million tourists per year."
+  },
+  {
+    "id": "AP_French_3",
+    "question": "C'est le film _______ je t'ai parlé.",
+    "choices": {
+      "A": "dont",
+      "B": "que",
+      "C": "qui",
+      "D": "où"
+    },
+    "answer": "A",
+    "difficulty": 7,
+    "explanation": "'Parler de' requires 'dont' (replaces de + antecedent)."
+  },
+  {
+    "id": "AP_French_4",
+    "question": "'Avoir le cafard' signifie:",
+    "choices": {
+      "A": "Avoir faim",
+      "B": "Être triste",
+      "C": "Avoir peur des insectes",
+      "D": "Être en bonne santé"
+    },
+    "answer": "B",
+    "difficulty": 6,
+    "explanation": "Idiomatic expression meaning to feel blue or depressed."
+  },
+  {
+    "id": "AP_French_5",
+    "question": "Les lettres que j'ai _______ sont sur la table.",
+    "choices": {
+      "A": "écrites",
+      "B": "écrit",
+      "C": "écrits",
+      "D": "écrite"
+    },
+    "answer": "A",
+    "difficulty": 7,
+    "explanation": "With 'avoir,' participle agrees with preceding direct object 'lettres' (fem. pl.)."
+  },
+  {
+    "id": "AP_French_6",
+    "question": "Quel mode suit 'il faut que'?",
+    "choices": {
+      "A": "Indicatif",
+      "B": "Subjonctif",
+      "C": "Conditionnel",
+      "D": "Futur"
+    },
+    "answer": "B",
+    "difficulty": 6,
+    "explanation": "'Il faut que' always requires the subjunctive."
+  },
+  {
+    "id": "AP_French_7",
+    "question": "Pierre dit 'Je ne sais pas encore. Ça dépend.' Est-il sûr?",
+    "choices": {
+      "A": "Oui",
+      "B": "Non",
+      "C": "Il a refusé",
+      "D": "Il n'a pas compris"
+    },
+    "answer": "B",
+    "difficulty": 5,
+    "explanation": "'Je ne sais pas encore' and 'Ça dépend' express uncertainty."
+  },
+  {
+    "id": "AP_French_8",
+    "question": "Elle rêve _______ voyager en Afrique.",
+    "choices": {
+      "A": "de",
+      "B": "à",
+      "C": "pour",
+      "D": "en"
+    },
+    "answer": "A",
+    "difficulty": 6,
+    "explanation": "'Rêver de' + infinitive = to dream of doing something."
+  },
+  {
+    "id": "AP_French_9",
+    "question": "Voltaire et Montesquieu sont associés à:",
+    "choices": {
+      "A": "Le Romantisme",
+      "B": "Le Réalisme",
+      "C": "Les Lumières",
+      "D": "Le Surréalisme"
+    },
+    "answer": "C",
+    "difficulty": 6,
+    "explanation": "Both were key Enlightenment (Lumières) figures."
+  },
+  {
+    "id": "AP_French_10",
+    "question": "Je cherche quelqu'un qui _______ parler trois langues.",
+    "choices": {
+      "A": "puisse",
+      "B": "peut",
+      "C": "pourra",
+      "D": "pouvait"
+    },
+    "answer": "A",
+    "difficulty": 7,
+    "explanation": "Subjunctive after 'chercher quelqu'un qui' (hypothetical person)."
+  },
+  {
+    "id": "AP_French_11",
+    "question": "Différence entre 'savoir' et 'connaître':",
+    "choices": {
+      "A": "Pas de différence",
+      "B": "Savoir = faits/compétences; connaître = personnes/lieux",
+      "C": "Connaître est plus formel",
+      "D": "Savoir = passé; connaître = présent"
+    },
+    "answer": "B",
+    "difficulty": 6,
+    "explanation": "'Savoir' for facts/skills; 'connaître' for people/places/things."
+  },
+  {
+    "id": "AP_French_12",
+    "question": "À quel âge passe-t-on le baccalauréat?",
+    "choices": {
+      "A": "15 ans",
+      "B": "16 ans",
+      "C": "18 ans",
+      "D": "20 ans"
+    },
+    "answer": "C",
+    "difficulty": 5,
+    "explanation": "The bac is the final lycée exam, taken at approximately 18."
+  },
+  {
+    "id": "AP_French_13",
+    "question": "Il a _______ mangé qu'il ne peut plus bouger.",
+    "choices": {
+      "A": "tellement",
+      "B": "aussi",
+      "C": "si",
+      "D": "autant"
+    },
+    "answer": "A",
+    "difficulty": 7,
+    "explanation": "'Tellement...que' with verbs; 'si...que' with adjectives."
+  },
+  {
+    "id": "AP_French_14",
+    "question": "Quelle fête célèbre la prise de la Bastille?",
+    "choices": {
+      "A": "1er mai",
+      "B": "1er novembre",
+      "C": "14 juillet",
+      "D": "25 décembre"
+    },
+    "answer": "C",
+    "difficulty": 5,
+    "explanation": "July 14th commemorates the storming of the Bastille (1789)."
+  },
+  {
+    "id": "AP_French_15",
+    "question": "Ces livres? Je _______ ai achetés hier.",
+    "choices": {
+      "A": "les",
+      "B": "leur",
+      "C": "en",
+      "D": "y"
+    },
+    "answer": "A",
+    "difficulty": 6,
+    "explanation": "'Les' replaces the direct object 'ces livres.'"
+  },
+  {
+    "id": "AP_French_16",
+    "question": "Quel pays francophone est en Afrique du Nord?",
+    "choices": {
+      "A": "Sénégal",
+      "B": "Maroc",
+      "C": "Madagascar",
+      "D": "Haïti"
+    },
+    "answer": "B",
+    "difficulty": 5,
+    "explanation": "Morocco (Le Maroc) is in North Africa."
+  },
+  {
+    "id": "AP_French_17",
+    "question": "Elle _______ (naître) en 1990 à Lyon.",
+    "choices": {
+      "A": "est née",
+      "B": "a née",
+      "C": "a naîtu",
+      "D": "est naît"
+    },
+    "answer": "A",
+    "difficulty": 6,
+    "explanation": "'Naître' uses 'être'; feminine agreement: 'née.'"
+  },
+  {
+    "id": "AP_French_18",
+    "question": "'Métro-boulot-dodo' signifie:",
+    "choices": {
+      "A": "Un type de nourriture",
+      "B": "La routine quotidienne monotone",
+      "C": "Un jeu",
+      "D": "Un quartier de Paris"
+    },
+    "answer": "B",
+    "difficulty": 6,
+    "explanation": "Subway-work-sleep: describing monotonous daily routine."
+  },
+  {
+    "id": "AP_French_19",
+    "question": "Bien qu'il _______ fatigué, il a continué.",
+    "choices": {
+      "A": "soit",
+      "B": "est",
+      "C": "était",
+      "D": "serait"
+    },
+    "answer": "A",
+    "difficulty": 7,
+    "explanation": "'Bien que' always requires subjunctive: 'soit.'"
+  },
+  {
+    "id": "AP_French_20",
+    "question": "La tendance des Français à acheter bio indique:",
+    "choices": {
+      "A": "Plus de fast-food",
+      "B": "Intérêt croissant pour le bio et le local",
+      "C": "Baisse des marchés",
+      "D": "Plus d'agriculture industrielle"
+    },
+    "answer": "B",
+    "difficulty": 5,
+    "explanation": "Growing interest in organic and local products in France."
+  },
+  {
+    "id": "AP_French_21",
+    "question": "Quel temps utilise-t-on généralement pour décrire une action qui se déroule dans le passé et qui est terminée?",
+    "choices": {
+      "A": "Le passé composé",
+      "B": "L'imparfait",
+      "C": "Le plus-que-parfait",
+      "D": "Le présent"
+    },
+    "answer": "A",
+    "difficulty": 5,
+    "explanation": "Le passé composé est utilisé pour les actions passées terminées et ponctuelles."
+  },
+  {
+    "id": "AP_French_22",
+    "question": "Dans la phrase \"Il pleuvait quand je suis sorti\", quelle est la fonction de l'imparfait \"pleuvait\"?",
+    "choices": {
+      "A": "Action terminée dans le passé",
+      "B": "Description ou contexte dans le passé",
+      "C": "Action future dans le passé",
+      "D": "Conditionnel présent"
+    },
+    "answer": "B",
+    "difficulty": 6,
+    "explanation": "L'imparfait est utilisé ici pour décrire la situation météorologique, le contexte au moment de l'action principale."
+  },
+  {
+    "id": "AP_French_23",
+    "question": "Quel pronom relatif sans antécédent est utilisé pour introduire une proposition subordonnée et signifie \"ce qui\" ou \"ce que\"?",
+    "choices": {
+      "A": "Qui",
+      "B": "Que",
+      "C": "Dont",
+      "D": "Ce qui / Ce que"
+    },
+    "answer": "D",
+    "difficulty": 7,
+    "explanation": "\"Ce qui\" est utilisé lorsque le pronom est sujet dans la subordonnée, et \"ce que\" lorsqu'il est objet."
+  },
+  {
+    "id": "AP_French_24",
+    "question": "Lequel de ces verbes se conjugue avec l'auxiliaire \"être\" au passé composé?",
+    "choices": {
+      "A": "Parler",
+      "B": "Manger",
+      "C": "Aller",
+      "D": "Finir"
+    },
+    "answer": "C",
+    "difficulty": 5,
+    "explanation": "La plupart des verbes de mouvement et les verbes pronominaux se conjuguent avec 'être'."
+  },
+  {
+    "id": "AP_French_25",
+    "question": "Quelle conjonction exprime la cause?",
+    "choices": {
+      "A": "Mais",
+      "B": "Donc",
+      "C": "Car",
+      "D": "Ou"
+    },
+    "answer": "C",
+    "difficulty": 5,
+    "explanation": "'Car' introduit une explication ou une cause."
+  },
+  {
+    "id": "AP_French_26",
+    "question": "Quel est le sens de l'expression idiomatique \"avoir le cafard\"?",
+    "choices": {
+      "A": "Être très fatigué",
+      "B": "Être de mauvaise humeur, mélancolique",
+      "C": "Être en colère",
+      "D": "Être surpris"
+    },
+    "answer": "B",
+    "difficulty": 7,
+    "explanation": "Cette expression signifie être triste ou déprimé."
+  },
+  {
+    "id": "AP_French_27",
+    "question": "Comment appelle-t-on le jour de Noël en français?",
+    "choices": {
+      "A": "Le Nouvel An",
+      "B": "La Toussaint",
+      "C": "Noël",
+      "D": "Le Vendredi Saint"
+    },
+    "answer": "C",
+    "difficulty": 5,
+    "explanation": "Noël est le nom de la fête célébrée le 25 décembre."
+  },
+  {
+    "id": "AP_French_28",
+    "question": "Quel est le féminin de \"acteur\"?",
+    "choices": {
+      "A": "Actrice",
+      "B": "Actrice",
+      "C": "Actoresse",
+      "D": "Actrice"
+    },
+    "answer": "A",
+    "difficulty": 5,
+    "explanation": "Le féminin de 'acteur' est 'actrice'."
+  },
+  {
+    "id": "AP_French_29",
+    "question": "Dans quelle région francophone le créole est-il une langue officielle ou couramment parlée?",
+    "choices": {
+      "A": "Québec, Canada",
+      "B": "Bruxelles, Belgique",
+      "C": "Martinique, France",
+      "D": "Genève, Suisse"
+    },
+    "answer": "C",
+    "difficulty": 6,
+    "explanation": "La Martinique, comme d'autres îles des Caraïbes françaises, a le créole comme langue parlée."
+  },
+  {
+    "id": "AP_French_30",
+    "question": "Quel est le subjonctif présent du verbe \"aller\" à la première personne du pluriel?",
+    "choices": {
+      "A": "Nous allons",
+      "B": "Nous allions",
+      "C": "Nous allions",
+      "D": "Nous allions"
+    },
+    "answer": "C",
+    "difficulty": 8,
+    "explanation": "Le subjonctif présent de 'aller' est 'j'aille', 'tu ailles', 'il/elle/on aille', 'nous allions', 'vous alliez', 'ils/elles aillent'."
+  },
+  {
+    "id": "AP_French_31",
+    "question": "Lequel de ces mots est un synonyme de \"beaucoup\"?",
+    "choices": {
+      "A": "Peu",
+      "B": "Assez",
+      "C": "Nombreux",
+      "D": "Maintes"
+    },
+    "answer": "D",
+    "difficulty": 6,
+    "explanation": "'Maintes' signifie 'beaucoup', 'plusieurs'."
+  },
+  {
+    "id": "AP_French_32",
+    "question": "Quel est le nom de la fête nationale française?",
+    "choices": {
+      "A": "Le 1er mai",
+      "B": "Le 14 juillet",
+      "C": "Le 8 mai",
+      "D": "Le 11 novembre"
+    },
+    "answer": "B",
+    "difficulty": 5,
+    "explanation": "Le 14 juillet commémore la prise de la Bastille."
+  },
+  {
+    "id": "AP_French_33",
+    "question": "Dans la phrase \"Je me lève tôt\", quel est le temps verbal?",
+    "choices": {
+      "A": "Passé composé",
+      "B": "Présent",
+      "C": "Imparfait",
+      "D": "Futur simple"
+    },
+    "answer": "B",
+    "difficulty": 5,
+    "explanation": "Le verbe 'lève' est conjugué au présent de l'indicatif."
+  },
+  {
+    "id": "AP_French_34",
+    "question": "Quel est l'adjectif possessif utilisé pour \"ma voiture\" si 'je' est masculin?",
+    "choices": {
+      "A": "Ma",
+      "B": "Mon",
+      "C": "Mes",
+      "D": "Mien"
+    },
+    "answer": "A",
+    "difficulty": 5,
+    "explanation": "L'adjectif possessif s'accorde en genre et en nombre avec le nom possédé. 'Voiture' est féminin."
+  },
+  {
+    "id": "AP_French_35",
+    "question": "Quel verbe signifie \"to understand\"?",
+    "choices": {
+      "A": "Savoir",
+      "B": "Pouvoir",
+      "C": "Comprendre",
+      "D": "Vouloir"
+    },
+    "answer": "C",
+    "difficulty": 5,
+    "explanation": "'Comprendre' est la traduction directe de 'to understand'."
+  },
+  {
+    "id": "AP_French_36",
+    "question": "Quel est le contraire de \"rapide\"?",
+    "choices": {
+      "A": "Vite",
+      "B": "Lent",
+      "C": "Gai",
+      "D": "Fort"
+    },
+    "answer": "B",
+    "difficulty": 5,
+    "explanation": "'Lent' est le contraire de 'rapide'."
+  },
+  {
+    "id": "AP_French_37",
+    "question": "Quelle préposition est utilisée pour indiquer le mouvement vers un pays (masculin ou féminin commençant par une voyelle)?",
+    "choices": {
+      "A": "À",
+      "B": "En",
+      "C": "Dans",
+      "D": "Sur"
+    },
+    "answer": "B",
+    "difficulty": 6,
+    "explanation": "On utilise 'en' pour les pays féminins ou masculins commençant par une voyelle (ex: en France, en Iran)."
+  },
+  {
+    "id": "AP_French_38",
+    "question": "Quel mot français désigne une \"baguette\" de pain?",
+    "choices": {
+      "A": "Une boule",
+      "B": "Une ficelle",
+      "C": "Une baguette",
+      "D": "Un pain"
+    },
+    "answer": "C",
+    "difficulty": 5,
+    "explanation": "'Une baguette' est le terme spécifique pour ce type de pain long et fin."
+  },
+  {
+    "id": "AP_French_39",
+    "question": "Quel est le futur simple du verbe \"faire\" à la troisième personne du singulier?",
+    "choices": {
+      "A": "Faisait",
+      "B": "Fera",
+      "C": "Fait",
+      "D": "A fait"
+    },
+    "answer": "B",
+    "difficulty": 6,
+    "explanation": "Le futur simple de 'faire' est 'je ferai', 'tu feras', 'il/elle/on fera', etc."
+  },
+  {
+    "id": "AP_French_40",
+    "question": "Quel pronom remplace 'de + nom'?",
+    "choices": {
+      "A": "Le",
+      "B": "La",
+      "C": "En",
+      "D": "Y"
+    },
+    "answer": "C",
+    "difficulty": 7,
+    "explanation": "'En' remplace généralement 'de + nom' ou une quantité."
+  },
+  {
+    "id": "AP_French_41",
+    "question": "Dans quel pays africain le français est-il une langue officielle et largement parlé?",
+    "choices": {
+      "A": "Égypte",
+      "B": "Nigeria",
+      "C": "Sénégal",
+      "D": "Kenya"
+    },
+    "answer": "C",
+    "difficulty": 6,
+    "explanation": "Le français est une langue officielle et administrative au Sénégal, héritage de la colonisation."
+  },
+  {
+    "id": "AP_French_42",
+    "question": "Quel est le participe passé du verbe \"venir\"?",
+    "choices": {
+      "A": "Venu",
+      "B": "Venant",
+      "C": "Venu",
+      "D": "Venu"
+    },
+    "answer": "A",
+    "difficulty": 5,
+    "explanation": "Le participe passé de 'venir' est 'venu'."
+  },
+  {
+    "id": "AP_French_43",
+    "question": "Quelle expression signifie \"être très occupé\"?",
+    "choices": {
+      "A": "Avoir le temps",
+      "B": "Être à la bourre",
+      "C": "Être débordé",
+      "D": "Ne rien faire"
+    },
+    "answer": "C",
+    "difficulty": 6,
+    "explanation": "'Être débordé' signifie avoir trop de travail ou d'occupations."
+  },
+  {
+    "id": "AP_French_44",
+    "question": "Quel temps utilise-t-on pour exprimer une hypothèse dans le futur, souvent après \"si\"?",
+    "choices": {
+      "A": "Présent",
+      "B": "Passé composé",
+      "C": "Futur simple",
+      "D": "Conditionnel présent"
+    },
+    "answer": "A",
+    "difficulty": 7,
+    "explanation": "Après 'si' introduisant une condition réelle ou hypothétique dans le futur, on utilise le présent. Ex: Si tu viens, je serai content."
+  },
+  {
+    "id": "AP_French_45",
+    "question": "Quel est le plus-que-parfait du verbe \"voir\" à la première personne du singulier?",
+    "choices": {
+      "A": "J'ai vu",
+      "B": "Je vis",
+      "C": "J'avais vu",
+      "D": "Je verrai"
+    },
+    "answer": "C",
+    "difficulty": 7,
+    "explanation": "Le plus-que-parfait se forme avec l'imparfait de l'auxiliaire ('avoir' ou 'être') et le participe passé du verbe principal."
+  },
+  {
+    "id": "AP_French_46",
+    "question": "Quel est le temps verbal correct pour compléter la phrase : « Hier soir, nous ______ au restaurant. »",
+    "choices": {
+      "A": "allons",
+      "B": "sommes allés",
+      "C": "allions",
+      "D": "allons aller"
+    },
+    "answer": "B",
+    "difficulty": 5,
+    "explanation": "La phrase se réfère à une action passée ('Hier soir'). Le passé composé ('sommes allés') est le temps approprié pour décrire une action terminée dans le passé."
+  },
+  {
+    "id": "AP_French_47",
+    "question": "Choisissez le pronom relatif correct pour relier ces deux phrases : « J'ai lu le livre. Ce livre m'a beaucoup plu. »",
+    "choices": {
+      "A": "qui",
+      "B": "que",
+      "C": "dont",
+      "D": "où"
+    },
+    "answer": "A",
+    "difficulty": 6,
+    "explanation": "Le pronom relatif 'qui' remplace le sujet du deuxième segment de phrase ('Ce livre'). 'Qui' est utilisé quand le pronom remplace le sujet qui fait l'action."
+  },
+  {
+    "id": "AP_French_48",
+    "question": "Quelle expression idiomatique signifie « être très occupé » ?",
+    "choices": {
+      "A": "Avoir le cafard",
+      "B": "Être sur son trente-et-un",
+      "C": "Être comme un coq en pâte",
+      "D": "Être dans le pétrin"
+    },
+    "answer": "C",
+    "difficulty": 7,
+    "explanation": "« Être comme un coq en pâte » signifie être très à l'aise, choyé, et donc par extension, très occupé et bien pris en charge."
+  },
+  {
+    "id": "AP_French_49",
+    "question": "Complétez la phrase avec le bon accord : « Les fleurs que tu m'as offertes sont ______ . »",
+    "choices": {
+      "A": "belles",
+      "B": "beau",
+      "C": "belle",
+      "D": "beaux"
+    },
+    "answer": "A",
+    "difficulty": 5,
+    "explanation": "Le participe passé 'offertes' s'accorde avec le COD antéposé 'que' (qui remplace 'les fleurs'). L'adjectif 'belles' doit s'accorder en genre et en nombre avec 'fleurs' (féminin pluriel)."
+  },
+  {
+    "id": "AP_French_50",
+    "question": "Quel mot est synonyme de « néanmoins » ?",
+    "choices": {
+      "A": "Par conséquent",
+      "B": "Cependant",
+      "C": "Autrement",
+      "D": "Pourtant"
+    },
+    "answer": "B",
+    "difficulty": 6,
+    "explanation": "« Néanmoins » et « cependant » sont des synonymes qui expriment une opposition ou une concession."
+  },
+  {
+    "id": "AP_French_51",
+    "question": "Dans quel pays francophone le Carnaval de Québec est-il une célébration majeure ?",
+    "choices": {
+      "A": "France",
+      "B": "Belgique",
+      "C": "Canada",
+      "D": "Sénégal"
+    },
+    "answer": "C",
+    "difficulty": 5,
+    "explanation": "Le Carnaval de Québec est le plus grand carnaval d'hiver au monde et a lieu chaque année à Québec, au Canada."
+  },
+  {
+    "id": "AP_French_52",
+    "question": "Quel est le conditionnel présent du verbe « pouvoir » à la première personne du pluriel ?",
+    "choices": {
+      "A": "Nous pourrions",
+      "B": "Nous pouvons",
+      "C": "Nous pourrons",
+      "D": "Nous pouvions"
+    },
+    "answer": "A",
+    "difficulty": 6,
+    "explanation": "Le conditionnel présent se forme avec la base du futur simple et les terminaisons de l'imparfait (-ais, -ais, -ait, -ions, -iez, -aient). Pour 'pouvoir', la base est 'pourr-' et la terminaison pour 'nous' est '-ions', d'où 'nous pourrions'."
+  },
+  {
+    "id": "AP_French_53",
+    "question": "Quelle préposition est utilisée pour indiquer l'origine dans cette phrase : « Il vient ______ Paris. »",
+    "choices": {
+      "A": "à",
+      "B": "de",
+      "C": "en",
+      "D": "dans"
+    },
+    "answer": "B",
+    "difficulty": 5,
+    "explanation": "La préposition 'de' est utilisée pour indiquer l'origine géographique d'une personne ou d'une chose."
+  },
+  {
+    "id": "AP_French_54",
+    "question": "Quel auteur est célèbre pour avoir écrit « Les Misérables » ?",
+    "choices": {
+      "A": "Albert Camus",
+      "B": "Émile Zola",
+      "C": "Victor Hugo",
+      "D": "Gustave Flaubert"
+    },
+    "answer": "C",
+    "difficulty": 5,
+    "explanation": "Victor Hugo est l'un des plus grands écrivains français, auteur de romans célèbres comme 'Les Misérables', 'Notre-Dame de Paris', etc."
+  },
+  {
+    "id": "AP_French_55",
+    "question": "Quel est l'impératif présent du verbe « faire » à la deuxième personne du singulier ?",
+    "choices": {
+      "A": "Fais",
+      "B": "Fait",
+      "C": "Faisons",
+      "D": "Faites"
+    },
+    "answer": "A",
+    "difficulty": 6,
+    "explanation": "L'impératif présent du verbe 'faire' à la deuxième personne du singulier est 'Fais'."
+  },
+  {
+    "id": "AP_French_56",
+    "question": "Choisissez le mot qui complète le mieux la phrase : « Le ______ de ce film est très émouvant. »",
+    "choices": {
+      "A": "scénario",
+      "B": "dialogue",
+      "C": "décor",
+      "D": "générique"
+    },
+    "answer": "A",
+    "difficulty": 5,
+    "explanation": "Le scénario contient l'intrigue et le déroulement de l'histoire, qui peuvent être émouvants."
+  },
+  {
+    "id": "AP_French_57",
+    "question": "Quelle est la différence principale entre le subjonctif et l'indicatif ?",
+    "choices": {
+      "A": "L'indicatif exprime le doute, le subjonctif exprime la certitude.",
+      "B": "Le subjonctif exprime le doute, le souhait, l'émotion, l'indicatif exprime la certitude ou un fait.",
+      "C": "Il n'y a pas de différence.",
+      "D": "L'indicatif est utilisé pour les actions passées, le subjonctif pour le futur."
+    },
+    "answer": "B",
+    "difficulty": 7,
+    "explanation": "Le subjonctif est le mode de l'irréel, du subjectif ; il est utilisé après certaines expressions indiquant le doute, le souhait, la volonté, l'émotion. L'indicatif est le mode du réel, utilisé pour exprimer des faits, des certitudes."
+  },
+  {
+    "id": "AP_French_58",
+    "question": "Quel est le participe présent du verbe « venir » ?",
+    "choices": {
+      "A": "Venu",
+      "B": "Venant",
+      "C": "Vient",
+      "D": "Venir"
+    },
+    "answer": "B",
+    "difficulty": 5,
+    "explanation": "Le participe présent se termine généralement par '-ant'. Pour 'venir', c'est 'venant'."
+  },
+  {
+    "id": "AP_French_59",
+    "question": "Qui est le président actuel de la République française au moment de la création de ce test ?",
+    "choices": {
+      "A": "François Hollande",
+      "B": "Nicolas Sarkozy",
+      "C": "Emmanuel Macron",
+      "D": "Jacques Chirac"
+    },
+    "answer": "C",
+    "difficulty": 6,
+    "explanation": "Emmanuel Macron est le président actuel de la République française (cette information peut changer avec le temps)."
+  },
+  {
+    "id": "AP_French_60",
+    "question": "Complétez la phrase : « Si j'avais su, je ______ différent. »",
+    "choices": {
+      "A": "ferais",
+      "B": "ai fait",
+      "C": "ferais eu",
+      "D": "aurais fait"
+    },
+    "answer": "D",
+    "difficulty": 7,
+    "explanation": "C'est une structure hypothétique irréelle dans le passé. La structure 'Si + plus-que-parfait, conditionnel passé' est correcte. Donc, 'Si j'avais su, j'aurais fait différent'."
+  },
+  {
+    "id": "AP_French_61",
+    "question": "Quel mot désigne une personne qui aime lire ?",
+    "choices": {
+      "A": "Un gastronome",
+      "B": "Un mélomane",
+      "C": "Un bibliophile",
+      "D": "Un philatéliste"
+    },
+    "answer": "C",
+    "difficulty": 7,
+    "explanation": "Un bibliophile est un amateur de livres."
+  },
+  {
+    "id": "AP_French_62",
+    "question": "Choisissez le pronom complément d'objet indirect correct : « Il ______ a dit la vérité. »",
+    "choices": {
+      "A": "me",
+      "B": "le",
+      "C": "la",
+      "D": "les"
+    },
+    "answer": "A",
+    "difficulty": 5,
+    "explanation": "L'expression 'dire quelque chose à quelqu'un' utilise un COD ('quelque chose') et un COI ('quelqu'un'). Si 'quelqu'un' est la première personne du singulier, le pronom COI est 'me'. Ici, 'la vérité' est le COD, et 'il a dit la vérité à moi' (sous-entendu) devient 'Il m'a dit la vérité'."
+  },
+  {
+    "id": "AP_French_63",
+    "question": "Quel est le genre grammatical du mot « voiture » ?",
+    "choices": {
+      "A": "Masculin",
+      "B": "Féminin",
+      "C": "Neutre",
+      "D": "Masculin ou Féminin"
+    },
+    "answer": "B",
+    "difficulty": 5,
+    "explanation": "En français, 'voiture' est un nom féminin. On dit 'une voiture'."
+  },
+  {
+    "id": "AP_French_64",
+    "question": "Quelle fête est célébrée le 14 juillet en France ?",
+    "choices": {
+      "A": "La Fête du Travail",
+      "B": "Le Jour de l'An",
+      "C": "La Fête Nationale",
+      "D": "La Toussaint"
+    },
+    "answer": "C",
+    "difficulty": 5,
+    "explanation": "Le 14 juillet est la Fête Nationale française, commémorant la prise de la Bastille en 1789."
+  },
+  {
+    "id": "AP_French_65",
+    "question": "Complétez la phrase : « J'ai recommandé ce livre ______ vous. »",
+    "choices": {
+      "A": "à",
+      "B": "de",
+      "C": "pour",
+      "D": "avec"
+    },
+    "answer": "A",
+    "difficulty": 5,
+    "explanation": "Le verbe 'recommander' se construit avec 'à' suivi de la personne à qui l'on recommande quelque chose. 'Je recommande le livre à vous'."
+  },
+  {
+    "id": "AP_French_66",
+    "question": "Quel est le participe passé du verbe « voir » ?",
+    "choices": {
+      "A": "Vu",
+      "B": "Voyant",
+      "C": "Voit",
+      "D": "Voir"
+    },
+    "answer": "A",
+    "difficulty": 5,
+    "explanation": "Le participe passé du verbe 'voir' est 'vu'."
+  },
+  {
+    "id": "AP_French_67",
+    "question": "Choisissez l'adverbe qui complète le mieux la phrase : « Elle parle ______ bien français. »",
+    "choices": {
+      "A": "très",
+      "B": "assez",
+      "C": "beaucoup",
+      "D": "trop"
+    },
+    "answer": "C",
+    "difficulty": 6,
+    "explanation": "L'adverbe 'beaucoup' intensifie le fait qu'elle parle bien français. Les autres options sont possibles mais 'beaucoup' est le plus courant pour exprimer une grande compétence."
+  },
+  {
+    "id": "AP_French_68",
+    "question": "Dans quel pays africain francophone se trouve la ville de Dakar ?",
+    "choices": {
+      "A": "Côte d'Ivoire",
+      "B": "Maroc",
+      "C": "Sénégal",
+      "D": "Algérie"
+    },
+    "answer": "C",
+    "difficulty": 5,
+    "explanation": "Dakar est la capitale du Sénégal."
+  },
+  {
+    "id": "AP_French_69",
+    "question": "Quel est le futur simple du verbe « aller » à la troisième personne du pluriel ?",
+    "choices": {
+      "A": "Ils vont",
+      "B": "Ils allaient",
+      "C": "Ils iront",
+      "D": "Ils sont allés"
+    },
+    "answer": "C",
+    "difficulty": 6,
+    "explanation": "Le futur simple du verbe 'aller' à la troisième personne du pluriel est 'ils iront'."
+  },
+  {
+    "id": "AP_French_70",
+    "question": "Choisissez le mot qui exprime une forte émotion ou un sentiment intense.",
+    "choices": {
+      "A": "Intéressant",
+      "B": "Passionnant",
+      "C": "Calme",
+      "D": "Neutre"
+    },
+    "answer": "B",
+    "difficulty": 5,
+    "explanation": "Le mot 'passionnant' décrit quelque chose qui suscite une forte émotion, un grand intérêt ou une passion."
+  }
 ]
