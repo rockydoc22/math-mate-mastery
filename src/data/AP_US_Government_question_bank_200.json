@@ -3261,5 +3261,642 @@
     "answer": "B",
     "difficulty": 7,
     "explanation": "The punditocracy refers to the perceived influence and dominance of political commentators and analysts in shaping public opinion and political discourse, often through media."
+  },
+  {
+    "id": "AP_US_Government_252",
+    "question": "Which of the following scenarios best illustrates the concept of 'pork barrel spending' in the legislative process?",
+    "choices": {
+      "A": "A senator introduces a bill to increase national funding for scientific research, benefiting universities across all states.",
+      "B": "Congress passes a comprehensive healthcare reform bill that establishes new regulations for insurance providers nationwide.",
+      "C": "A representative successfully adds an amendment to an appropriations bill, allocating funds for a new bridge in their home district, despite its low priority for national infrastructure.",
+      "D": "The President issues an executive order streamlining agricultural subsidies, impacting farmers equally across numerous states."
+    },
+    "answer": "C",
+    "difficulty": 4,
+    "explanation": "Pork barrel spending refers to the appropriation of government spending for localized projects secured solely or primarily to bring money to a representative's district. Option C directly describes this practice, where a representative secures funding for a local project (a bridge) through an amendment to a larger bill, often to benefit their constituents and potentially aid their re-election, even if the project isn't a national priority."
+  },
+  {
+    "id": "AP_US_Government_253",
+    "question": "The Supreme Court's decision in Wisconsin v. Yoder (1972), which held that Amish children could not be compelled to attend public school beyond the eighth grade, primarily centered on which constitutional principle?",
+    "choices": {
+      "A": "The Equal Protection Clause of the Fourteenth Amendment",
+      "B": "The Establishment Clause of the First Amendment",
+      "C": "The Free Exercise Clause of the First Amendment",
+      "D": "The Takings Clause of the Fifth Amendment"
+    },
+    "answer": "C",
+    "difficulty": 6,
+    "explanation": "Wisconsin v. Yoder dealt with the conflict between compulsory education laws and the religious beliefs of the Amish community. The Supreme Court ruled in favor of the Amish parents, citing their rights under the Free Exercise Clause of the First Amendment, which protects citizens' right to practice their religion freely."
+  },
+  {
+    "id": "AP_US_Government_254",
+    "question": "A key difference between a unitary system of government and a federal system of government is that in a unitary system, the power is...",
+    "choices": {
+      "A": "divided equally between states and the national government.",
+      "B": "concentrated in the hands of regional governments.",
+      "C": "held primarily by a central government, with limited powers delegated to subnational units.",
+      "D": "distributed among a confederation of independent states."
+    },
+    "answer": "C",
+    "difficulty": 3,
+    "explanation": "In a unitary system, the central government holds the most power, and any subnational units (like states or provinces) derive their authority from the central government. In contrast, a federal system divides power between a national government and state/regional governments, each with distinct powers. Option C accurately describes the power distribution in a unitary system."
+  },
+  {
+    "id": "AP_US_Government_255",
+    "question": "Which of the following is an example of an unfunded mandate?",
+    "choices": {
+      "A": "A federal law that provides grants to states for building new highways, contingent on the states matching a portion of the funds.",
+      "B": "A federal regulation requiring states to upgrade their voting equipment to meet new security standards, without providing federal funding for the upgrades.",
+      "C": "A state law that prohibits local governments from levying property taxes above a certain percentage.",
+      "D": "A constitutional amendment that grants new powers to local governments to regulate land use."
+    },
+    "answer": "B",
+    "difficulty": 5,
+    "explanation": "An unfunded mandate is a statute or regulation that requires a state or local government to perform certain actions, with no money provided for fulfilling the requirements. Option B describes such a scenario, where states are required to upgrade equipment but receive no federal funds to do so."
+  },
+  {
+    "id": "AP_US_Government_256",
+    "question": "The concept of 'critical elections' in American politics is most closely associated with which of the following phenomena?",
+    "choices": {
+      "A": "Elections where a third-party candidate wins a significant number of electoral votes.",
+      "B": "Elections that lead to a major realignment of voter loyalties and party platforms.",
+      "C": "Elections with exceptionally high voter turnout rates compared to previous elections.",
+      "D": "Elections where the popular vote winner does not win the Electoral College."
+    },
+    "answer": "B",
+    "difficulty": 7,
+    "explanation": "A critical election (or 'realigning election') is one where new issues emerge, new coalitions replace old ones, and the dominant party is often displaced by a minority party, or the existing party is re-shaped significantly. These elections often mark a significant shift in political ideology and voter alignment, leading to a new political era."
+  },
+  {
+    "id": "AP_US_Government_257",
+    "question": "Federalist No. 10 argues that a large republic is better suited to control the effects of factions because...",
+    "choices": {
+      "A": "it ensures that the national government remains weak and subservient to state governments.",
+      "B": "it encourages the development of a single, unified public opinion.",
+      "C": "the greater number of diverse interests makes it less likely for a single faction to dominate.",
+      "D": "it promotes direct democracy, allowing citizens to vote on all policy decisions."
+    },
+    "answer": "C",
+    "difficulty": 5,
+    "explanation": "In Federalist No. 10, James Madison argues that a large republic, with its numerous and diverse interests, makes it difficult for any single faction to gain enough power to oppress the others. The sheer number of factions would force compromise and prevent any one group from becoming dominant, thereby protecting minority rights and the public good. He feared direct democracy would make it easier for a majority faction to oppress minorities."
+  },
+  {
+    "id": "AP_US_Government_258",
+    "question": "Which of the following is a power reserved to the states by the Tenth Amendment?",
+    "choices": {
+      "A": "The power to declare war.",
+      "B": "The power to coin money.",
+      "C": "The power to establish and maintain public schools.",
+      "D": "The power to establish post offices."
+    },
+    "answer": "C",
+    "difficulty": 4,
+    "explanation": "The Tenth Amendment states that powers not delegated to the United States by the Constitution, nor prohibited by it to the States, are reserved to the States respectively, or to the people. Establishing and maintaining public schools is a classic example of a power reserved to the states, as it is not granted to the federal government in the Constitution. The other options are powers specifically granted to the federal government."
+  },
+  {
+    "id": "AP_US_Government_259",
+    "question": "A president's ability to refuse to spend money appropriated by Congress for certain programs is known as...",
+    "choices": {
+      "A": "a line-item veto.",
+      "B": "impoundment of funds.",
+      "C": "an executive agreement.",
+      "D": "pocket veto."
+    },
+    "answer": "B",
+    "difficulty": 7,
+    "explanation": "Impoundment of funds is a presidential action that involves setting aside or refusing to spend money that Congress has appropriated for a specific purpose. While presidents historically used this power, its use has been significantly curtailed by the Congressional Budget and Impoundment Control Act of 1974. A line-item veto (which is not available to the president for most bills), an executive agreement, and a pocket veto are distinct presidential powers."
+  },
+  {
+    "id": "AP_US_Government_260",
+    "question": "The process of 'gerrymandering' is primarily intended to...",
+    "choices": {
+      "A": "ensure that all congressional districts have roughly the same population.",
+      "B": "create electoral districts that favor one political party or demographic group.",
+      "C": "promote non-partisan redistricting through independent commissions.",
+      "D": "increase voter turnout in sparsely populated areas."
+    },
+    "answer": "B",
+    "difficulty": 4,
+    "explanation": "Gerrymandering is a practice that involves drawing electoral district boundaries to give one political party an unfair advantage over another in elections. This often results in oddly shaped districts designed to 'pack' opposition voters into a few districts or 'crack' them across many districts, diluting their voting power. Option A describes malapportionment which gerrymandering aims to avoid while still manipulating electoral outcomes. Options C and D are not related to the primary intent of gerrymandering."
+  },
+  {
+    "id": "AP_US_Government_261",
+    "question": "Which of the following scenarios best illustrates the concept of selective incorporation?",
+    "choices": {
+      "A": "A state establishes its own rules for presidential primaries, differing from federal guidelines.",
+      "B": "A federal law expanding voting rights is applied to all states, overriding previous state restrictions.",
+      "C": "The Supreme Court rules that a state law banning certain forms of speech violates the First Amendment.",
+      "D": "Congress uses its power under the Commerce Clause to regulate economic activity within a single state."
+    },
+    "answer": "C",
+    "difficulty": 6,
+    "explanation": "Selective incorporation is the process by which the Supreme Court has nationalized civil liberties by applying most of the provisions of the Bill of Rights to the states through the Fourteenth Amendment's Due Process Clause. Option C directly demonstrates this by striking down a state law based on a First Amendment protection."
+  },
+  {
+    "id": "AP_US_Government_262",
+    "question": "A political action committee (PAC) contributes a significant amount of money to a candidate's campaign for the House of Representatives. In return, the PAC hopes the candidate will support legislation favorable to their industry. This interaction best exemplifies which of the following models of democracy?",
+    "choices": {
+      "A": "Participatory democracy",
+      "B": "Pluralist democracy",
+      "C": "Elite democracy",
+      "D": "Direct democracy"
+    },
+    "answer": "B",
+    "difficulty": 7,
+    "explanation": "Pluralist democracy suggests that power is distributed among many different groups that compete for influence in government. PACs and interest groups are central to this model, advocating for their specific interests. Elite democracy suggests power is held by a small, wealthy, and educated segment of society, while participatory democracy emphasizes broad citizen involvement. Direct democracy involves citizens directly making policy decisions."
+  },
+  {
+    "id": "AP_US_Government_263",
+    "question": "Which of the following is an example of an unfunded mandate?",
+    "choices": {
+      "A": "The federal government provides grants to states for road construction projects.",
+      "B": "States are required to implement new welfare programs but receive no federal funds to do so.",
+      "C": "A state receives federal funds to improve its educational infrastructure.",
+      "D": "The federal government issues a block grant to states for social services, allowing them discretion in spending."
+    },
+    "answer": "B",
+    "difficulty": 5,
+    "explanation": "An unfunded mandate is a statute or regulation that requires a state or local government to perform certain actions, with no money provided for fulfilling the requirements. Option B clearly demonstrates this by requiring states to act without financial assistance."
+  },
+  {
+    "id": "AP_US_Government_264",
+    "question": "The power of the purse, held by Congress, relates most directly to which concept of government?",
+    "choices": {
+      "A": "Checks and balances",
+      "B": "Federalism",
+      "C": "Judicial review",
+      "D": "Popular sovereignty"
+    },
+    "answer": "A",
+    "difficulty": 4,
+    "explanation": "The 'power of the purse' refers to Congress's exclusive power to authorize government spending. This power allows Congress to limit the executive branch's ability to act and serves as a crucial component of the system of checks and balances, ensuring no single branch becomes too powerful."
+  },
+  {
+    "id": "AP_US_Government_265",
+    "question": "During the ratification debates for the U.S. Constitution, which of the following arguments was most likely made by an Anti-Federalist?",
+    "choices": {
+      "A": "A strong central government is necessary to ensure national unity and economic stability.",
+      "B": "The proposed Constitution adequately protects individual liberties through a system of checks and balances.",
+      "C": "The absence of a Bill of Rights poses a significant threat to the rights of citizens.",
+      "D": "A large republic will prevent factions from dominating political discourse."
+    },
+    "answer": "C",
+    "difficulty": 6,
+    "explanation": "Anti-Federalists were deeply concerned about the potential for a powerful central government to infringe upon individual liberties. Their primary objection to the original Constitution was the lack of a Bill of Rights, which they believed was essential to protect citizens from government overreach. The other options reflect Federalist arguments."
+  },
+  {
+    "id": "AP_US_Government_266",
+    "question": "Which of the following Supreme Court cases established the principle of 'one person, one vote' in state legislative districts?",
+    "choices": {
+      "A": "Marbury v. Madison (1803)",
+      "B": "McCulloch v. Maryland (1819)",
+      "C": "Baker v. Carr (1962)",
+      "D": "United States v. Lopez (1995)"
+    },
+    "answer": "C",
+    "difficulty": 7,
+    "explanation": "Baker v. Carr (1962) was a landmark Supreme Court case that decided that redistricting issues present justiciable questions, thus enabling federal courts to intervene and to decide redistricting cases. This led to the principle of 'one person, one vote,' ensuring equal representation in state legislatures."
+  },
+  {
+    "id": "AP_US_Government_267",
+    "question": "Congress passes a law that restricts the sale of certain firearms. This action would most likely be challenged on the grounds that it violates which constitutional amendment?",
+    "choices": {
+      "A": "First Amendment",
+      "B": "Second Amendment",
+      "C": "Fifth Amendment",
+      "D": "Eighth Amendment"
+    },
+    "answer": "B",
+    "difficulty": 4,
+    "explanation": "The Second Amendment protects the right of the people to keep and bear arms. Laws restricting firearm sales are often challenged on the basis of this amendment."
+  },
+  {
+    "id": "AP_US_Government_268",
+    "question": "Which of the following is a primary function of political parties in the United States?",
+    "choices": {
+      "A": "To conduct judicial reviews of legislative actions.",
+      "B": "To ensure direct citizen participation in all policy decisions.",
+      "C": "To mobilize voters and articulate policy alternatives for the electorate.",
+      "D": "To advise the President on matters of foreign policy."
+    },
+    "answer": "C",
+    "difficulty": 5,
+    "explanation": "Political parties serve several functions, including nominating candidates, mobilizing voters, campaigning, and articulating specific policy platforms. They act as intermediaries between citizens and the government by offering choices and helping to translate public opinion into policy."
+  },
+  {
+    "id": "AP_US_Government_269",
+    "question": "In the context of the legislative process, a 'filibuster' is a tactic used in which chamber of Congress?",
+    "choices": {
+      "A": "House of Representatives",
+      "B": "Senate",
+      "C": "Both the House and the Senate",
+      "D": "Neither; it's a presidential power"
+    },
+    "answer": "B",
+    "difficulty": 5,
+    "explanation": "A filibuster is a tactic used in the Senate by a minority of senators to delay or block a vote on a bill or other measure by talking for an extended period. The House of Representatives has stricter rules on debate that prevent filibustering."
+  },
+  {
+    "id": "AP_US_Government_270",
+    "question": "The concept of 'stare decisis' is most central to the operation of which branch of government?",
+    "choices": {
+      "A": "Legislative branch",
+      "B": "Executive branch",
+      "C": "Judicial branch",
+      "D": "Bureaucracy"
+    },
+    "answer": "C",
+    "difficulty": 6,
+    "explanation": "Stare decisis is a legal principle by which judges are obliged to respect the precedents established by prior decisions. This principle is fundamental to the judicial branch, ensuring consistency and predictability in legal rulings."
+  },
+  {
+    "id": "AP_US_Government_271",
+    "question": "Which of the following accurately describes the establishment clause of the First Amendment?",
+    "choices": {
+      "A": "It ensures individuals the right to practice any religion they choose.",
+      "B": "It prevents the government from establishing or endorsing a religion.",
+      "C": "It allows Congress to fund religious institutions if they provide public services.",
+      "D": "It establishes a national religion but prohibits further governmental interference with other faiths."
+    },
+    "answer": "B",
+    "difficulty": 5,
+    "explanation": "The Establishment Clause states that 'Congress shall make no law respecting an establishment of religion.' This means the government cannot establish an official religion, favor one religion over another, or endorse religion in general. Option A describes the free exercise clause."
+  },
+  {
+    "id": "AP_US_Government_272",
+    "question": "A president issues an executive order to implement a new policy without congressional approval. This action is most likely a demonstration of which presidential power?",
+    "choices": {
+      "A": "Commander-in-chief",
+      "B": "Chief diplomat",
+      "C": "Chief legislator",
+      "D": "Informal powers and implied powers"
+    },
+    "answer": "D",
+    "difficulty": 7,
+    "explanation": "Executive orders are an example of the President's informal or implied powers, as they are not explicitly mentioned in the Constitution but have evolved as a way for presidents to manage the executive branch and implement policy. While they carry the force of law, they can be overturned by Congress or the courts."
+  },
+  {
+    "id": "AP_US_Government_273",
+    "question": "Which of the following is a consequence of the winner-take-all system in presidential elections?",
+    "choices": {
+      "A": "It encourages third parties by giving them a greater chance of winning electoral votes.",
+      "B": "It often leads candidates to focus heavily on swing states with significant electoral votes.",
+      "C": "It ensures that the popular vote winner always wins the presidency.",
+      "D": "It mandates proportional representation in the Electoral College."
+    },
+    "answer": "B",
+    "difficulty": 6,
+    "explanation": "In most states, the winner-take-all system awards all of a state's electoral votes to the candidate who wins the popular vote in that state. This incentivizes candidates to focus their campaign efforts and resources on a few 'swing states' where the outcome is uncertain and a large number of electoral votes can be secured."
+  },
+  {
+    "id": "AP_US_Government_274",
+    "question": "The concept of 'devolution' in American federalism refers to:",
+    "choices": {
+      "A": "The increasing power of the federal government over state governments.",
+      "B": "The transfer of power and responsibilities from the federal government to state and local governments.",
+      "C": "The expansion of the Supreme Court's power of judicial review.",
+      "D": "The process by which states challenge federal laws as unconstitutional."
+    },
+    "answer": "B",
+    "difficulty": 6,
+    "explanation": "Devolution is the statutory delegation of powers from the central government of a sovereign state to govern at a subnational level, such as a regional or local level. In U.S. federalism, it specifically refers to returning power and responsibility to state and local governments."
+  },
+  {
+    "id": "AP_US_Government_275",
+    "question": "The U.S. Constitution's Necessary and Proper Clause (Elastic Clause) has been used most frequently to:",
+    "choices": {
+      "A": "Limit congressional power to only enumerated powers.",
+      "B": "Expand the power of the federal government in areas not explicitly listed in the Constitution.",
+      "C": "Establish a strong system of checks and balances between the branches.",
+      "D": "Define the specific powers reserved to the states."
+    },
+    "answer": "B",
+    "difficulty": 7,
+    "explanation": "The Necessary and Proper Clause (Article I, Section 8, Clause 18) grants Congress the power to pass all laws 'necessary and proper' for carrying into execution the foregoing powers. This has been interpreted broadly by the Supreme Court (e.g., in McCulloch v. Maryland) to allow Congress to exercise powers not explicitly listed in the Constitution, thus expanding federal authority."
+  },
+  {
+    "id": "AP_US_Government_276",
+    "question": "Which of the following is a key difference between block grants and categorical grants?",
+    "choices": {
+      "A": "Block grants are mandatory, while categorical grants are optional.",
+      "B": "Categorical grants provide states with more discretion in spending funds than block grants.",
+      "C": "Block grants offer states greater flexibility in how they spend federal money compared to categorical grants.",
+      "D": "Block grants are allocated based on population, while categorical grants are based on need."
+    },
+    "answer": "C",
+    "difficulty": 6,
+    "explanation": "Categorical grants are federal funds given to states for specific purposes, often with strict conditions on how the money can be spent. Block grants, on the other hand, provide states with a much broader general purpose and fewer strings attached, giving them more flexibility and discretion in their use."
+  },
+  {
+    "id": "AP_US_Government_277",
+    "question": "An interest group hires lobbyists to persuade members of Congress to vote a certain way on an upcoming bill. This is an example of which type of interest group activity?",
+    "choices": {
+      "A": "Grassroots lobbying",
+      "B": "Electioneering",
+      "C": "Direct lobbying",
+      "D": "Litigation"
+    },
+    "answer": "C",
+    "difficulty": 4,
+    "explanation": "Direct lobbying involves directly communicating with policymakers (like members of Congress) to influence their decisions on legislation. Grassroots lobbying involves mobilizing public support, electioneering involves supporting candidates, and litigation involves using the courts."
+  },
+  {
+    "id": "AP_US_Government_278",
+    "question": "Which of the following best describes the role of the bureaucracy in the policymaking process?",
+    "choices": {
+      "A": "Primarily responsible for drafting and passing legislation.",
+      "B": "Enforces and implements laws passed by Congress and signed by the President.",
+      "C": "Exercises judicial review over executive orders.",
+      "D": "Serves as the primary source of campaign funding for political parties."
+    },
+    "answer": "B",
+    "difficulty": 5,
+    "explanation": "The bureaucracy, composed of various federal departments and agencies, is responsible for executing and enforcing the laws that Congress passes. This involves implementing policies, making rules, and providing services to the public."
+  },
+  {
+    "id": "AP_US_Government_279",
+    "question": "The Supreme Court's power of judicial review was most clearly established in which case?",
+    "choices": {
+      "A": "McCulloch v. Maryland (1819)",
+      "B": "Gibbons v. Ogden (1824)",
+      "C": "Marbury v. Madison (1803)",
+      "D": "Dred Scott v. Sandford (1857)"
+    },
+    "answer": "C",
+    "difficulty": 5,
+    "explanation": "Marbury v. Madison (1803) was a landmark Supreme Court case that established the principle of judicial review in the United States, meaning that American courts have the power to strike down laws and statutes they find to violate the Constitution of the United States."
+  },
+  {
+    "id": "AP_US_Government_280",
+    "question": "A citizen's right to privacy, though not explicitly mentioned in the Constitution, has been interpreted by the Supreme Court based on which of the following?",
+    "choices": {
+      "A": "The Tenth Amendment, reserving powers to the states.",
+      "B": "The Preamble to the Constitution, promoting general welfare.",
+      "C": "Various amendments, creating 'penumbras' of protection.",
+      "D": "The Commerce Clause, regulating interstate trade."
+    },
+    "answer": "C",
+    "difficulty": 8,
+    "explanation": "The right to privacy has been established through the concept of 'penumbras,' or implied rights, derived from various amendments (like the First, Third, Fourth, Fifth, Ninth, and Fourteenth Amendments), particularly in cases like Griswold v. Connecticut. These 'shadows' or 'emanations' of other constitutional protections create a zone of privacy."
+  },
+  {
+    "id": "AP_US_Government_281",
+    "question": "Which of the following scenarios best illustrates popular sovereignty?",
+    "choices": {
+      "A": "A state legislature passes a law banning certain types of firearms.",
+      "B": "The Supreme Court overturns a federal law, citing constitutional violations.",
+      "C": "Citizens vote in a referendum to approve or reject a proposed amendment to the state constitution.",
+      "D": "The President issues an executive order establishing new environmental protection regulations."
+    },
+    "answer": "C",
+    "difficulty": 4,
+    "explanation": "Popular sovereignty is the principle that the authority of a state and its government are created and sustained by the consent of its people, through their elected representatives, who are the source of all political power. A referendum directly involves citizens in approving or rejecting a law or amendment, which is a direct manifestation of popular sovereignty."
+  },
+  {
+    "id": "AP_US_Government_282",
+    "question": "The reserved powers of the states, as outlined in the Tenth Amendment, are best exemplified by which of the following governmental actions?",
+    "choices": {
+      "A": "The federal government establishing national environmental standards.",
+      "B": "A state government setting rules for public education and teacher certification.",
+      "C": "Congress levying taxes on personal income to fund federal programs.",
+      "D": "The Supreme Court interpreting the meaning of the Commerce Clause."
+    },
+    "answer": "B",
+    "difficulty": 5,
+    "explanation": "The Tenth Amendment reserves powers not delegated to the federal government nor prohibited to the states, to the states respectively, or to the people. Establishing rules for public education is a classic example of a power traditionally reserved to state governments."
+  },
+  {
+    "id": "AP_US_Government_283",
+    "question": "Which of the following is an accurate comparison of Federalist No. 10 and Brutus No. 1?",
+    "choices": {
+      "A": "Federalist No. 10 argued for a strong central government, while Brutus No. 1 advocated for retaining the Articles of Confederation.",
+      "B": "Federalist No. 10 argued that a large republic would control factions, while Brutus No. 1 feared a large republic would lead to tyranny.",
+      "C": "Federalist No. 10 emphasized the need for a Bill of Rights, while Brutus No. 1 argued against it.",
+      "D": "Federalist No. 10 supported direct democracy, while Brutus No. 1 favored representative democracy."
+    },
+    "answer": "B",
+    "difficulty": 6,
+    "explanation": "Federalist No. 10 (Madison) argued that a large republic, through the multitude of interests and greater number of representatives, would make it more difficult for any single faction to dominate. Brutus No. 1, an Anti-Federalist essay, expressed concerns that a large republic would lead to a consolidation of power, remove government too far from the people, and inevitably lead to tyranny."
+  },
+  {
+    "id": "AP_US_Government_284",
+    "question": "A president's ability to exert influence over the legislative agenda is significantly enhanced by which of the following factors?",
+    "choices": {
+      "A": "A divided government where the opposing party controls Congress.",
+      "B": "Low public approval ratings for the president.",
+      "C": "Unified government, where the president's party controls both houses of Congress.",
+      "D": "A strong economy with low unemployment rates."
+    },
+    "answer": "C",
+    "difficulty": 5,
+    "explanation": "Unified government, where the president's party controls the House and Senate, significantly reduces obstacles to passing legislation. The president can work more closely with congressional leadership from their own party to advance their agenda."
+  },
+  {
+    "id": "AP_US_Government_285",
+    "question": "Which of the following demographic shifts is most likely to lead to a realignment of political parties in urban areas?",
+    "choices": {
+      "A": "An increase in the number of college graduates.",
+      "B": "A decline in the overall population of the city.",
+      "C": "A significant influx of new immigrants who typically vote for one party.",
+      "D": "An aging population with a lower birth rate."
+    },
+    "answer": "C",
+    "difficulty": 7,
+    "explanation": "A significant and concentrated influx of new immigrants, if they consistently affiliate and vote for one particular party, can shift the electoral landscape of urban areas and contribute to a party realignment, changing the dominant party in those regions."
+  },
+  {
+    "id": "AP_US_Government_286",
+    "question": "The concept of 'pork barrel spending' in Congress refers to:",
+    "choices": {
+      "A": "Funding allocated for national defense and intelligence agencies.",
+      "B": "Expenditures that are part of the mandatory budget, such as Social Security.",
+      "C": "Legislation that provides tangible benefits, such as a dam or a bridge, to a legislator's constituents with the hope of winning their vote.",
+      "D": "Government spending designed to stimulate the economy during a recession."
+    },
+    "answer": "C",
+    "difficulty": 4,
+    "explanation": "Pork barrel spending refers to appropriations made by legislative bodies for local projects that are often not critically needed but are created with the purpose of pleasing voters or campaign contributors in a specific district, thereby securing re-election for the legislator."
+  },
+  {
+    "id": "AP_US_Government_287",
+    "question": "Which of the following is a consequence of the Supreme Court's ruling in Baker v. Carr (1962)?",
+    "choices": {
+      "A": "It established the principle of 'one person, one vote' for congressional districts.",
+      "B": "It mandated that states conduct their presidential primary elections on the same day.",
+      "C": "It granted the federal government more power over state election procedures.",
+      "D": "It struck down racial gerrymandering as unconstitutional."
+    },
+    "answer": "A",
+    "difficulty": 6,
+    "explanation": "Baker v. Carr (1962) established that legislative apportionment was a justiciable issue, meaning it could be reviewed by federal courts. This paved the way for subsequent rulings, most notably Reynolds v. Sims, which articulated the 'one person, one vote' principle for state legislative districts, and Wesberry v. Sanders for congressional districts, requiring substantial equality in population among districts."
+  },
+  {
+    "id": "AP_US_Government_288",
+    "question": "The Bipartisan Campaign Reform Act of 2002 (McCain-Feingold Act) primarily aimed to address which of the following campaign finance issues?",
+    "choices": {
+      "A": "The lack of disclosure requirements for campaign donations.",
+      "B": "The influence of 'soft money' contributions to political parties.",
+      "C": "Restrictions on individual contributions to federal campaigns.",
+      "D": "The rise of Super PACs in presidential elections."
+    },
+    "answer": "B",
+    "difficulty": 7,
+    "explanation": "The Bipartisan Campaign Reform Act (BCRA), also known as McCain-Feingold, aimed to eliminate the use of 'soft money' - unregulated money given to political parties for party-building activities – by prohibiting national parties from raising or spending it. It also restricted issue ads closer to elections."
+  },
+  {
+    "id": "AP_US_Government_289",
+    "question": "Which of the following actions by an interest group would be considered direct lobbying?",
+    "choices": {
+      "A": "Running a television advertisement criticizing a proposed bill.",
+      "B": "Mobilizing members to write letters to their congressional representatives.",
+      "C": "Holding a protest rally outside the Capitol Building.",
+      "D": "Meeting with a member of Congress to present policy arguments for a specific piece of legislation."
+    },
+    "answer": "D",
+    "difficulty": 5,
+    "explanation": "Direct lobbying involves direct interaction with policymakers to influence legislation or policy. Meeting directly with members of Congress to advocate for specific legislation is a prime example of direct lobbying. The other options are examples of indirect or grassroots lobbying."
+  },
+  {
+    "id": "AP_US_Government_290",
+    "question": "The selective incorporation doctrine, developed by the Supreme Court, applies the protections of the Bill of Rights to the states through which constitutional amendment?",
+    "choices": {
+      "A": "First Amendment",
+      "B": "Fourth Amendment",
+      "C": "Fifth Amendment",
+      "D": "Fourteenth Amendment"
+    },
+    "answer": "D",
+    "difficulty": 3,
+    "explanation": "The selective incorporation doctrine uses the Due Process Clause of the Fourteenth Amendment to apply most, but not all, of the protections of the Bill of Rights to the states on a case-by-case basis. The other amendments list specific rights but do not contain the mechanism for applying them to the states."
+  },
+  {
+    "id": "AP_US_Government_291",
+    "question": "Which of the following is true regarding executive orders?",
+    "choices": {
+      "A": "They must be approved by Congress before taking effect.",
+      "B": "They have the force of law but can be overturned by a future president or declared unconstitutional by courts.",
+      "C": "They are explicitly granted to the President by Article II of the Constitution.",
+      "D": "They can only be issued during times of national emergency."
+    },
+    "answer": "B",
+    "difficulty": 6,
+    "explanation": "Executive orders are directives issued by the President of the United States that manage operations of the federal government. They have the force of law and do not require congressional approval, but they can be overturned by a subsequent president, challenged in court (and potentially declared unconstitutional), or superseded by federal legislation."
+  },
+  {
+    "id": "AP_US_Government_292",
+    "question": "A filibuster in the Senate is most likely to be used by which of the following?",
+    "choices": {
+      "A": "A senator attempting to quickly pass a popular bill.",
+      "B": "A small group of senators from the minority party seeking to block a bill.",
+      "C": "The Majority Leader to expedite debate on a presidential nomination.",
+      "D": "The Speaker of the House to prevent a bill from coming to a vote."
+    },
+    "answer": "B",
+    "difficulty": 5,
+    "explanation": "A filibuster is a procedural tactic used by a minority of senators to delay or block a vote on a bill, amendment, or other measure. It is typically employed by the minority party or a small group of senators to prevent the majority from passing legislation they oppose."
+  },
+  {
+    "id": "AP_US_Government_293",
+    "question": "Which of the following best describes the principle of 'stare decisis' in the Supreme Court?",
+    "choices": {
+      "A": "The requirement that all cases involve a federal question.",
+      "B": "The practice of relying on precedent, or previous judicial decisions, when making rulings.",
+      "C": "The right of the court to declare a law unconstitutional.",
+      "D": "The process by which the court chooses which cases to hear."
+    },
+    "answer": "B",
+    "difficulty": 4,
+    "explanation": "Stare decisis is Latin for 'to stand by things decided.' It is the legal principle by which judges are obliged to respect the precedents established by prior decisions. This principle ensures predictability and consistency in the law."
+  },
+  {
+    "id": "AP_US_Government_294",
+    "question": "Compared to the general population, voters in presidential primary elections are more likely to be:",
+    "choices": {
+      "A": "Younger and less affluent.",
+      "B": "Less educated and less politically engaged.",
+      "C": "Older and more ideologically extreme.",
+      "D": "More diverse in terms of ethnicity and socio-economic status."
+    },
+    "answer": "C",
+    "difficulty": 7,
+    "explanation": "Voters who participate in primary elections tend to be more engaged and have stronger ideological beliefs than the average voter. They are often older, more educated, and more likely to hold extreme views within their party, as moderates are less likely to participate in the often lower-turnout primary elections."
+  },
+  {
+    "id": "AP_US_Government_295",
+    "question": "Which of the following statements about political socialization is most accurate?",
+    "choices": {
+      "A": "Political socialization primarily occurs during adulthood through media consumption.",
+      "B": "Family is typically the first and most influential agent of political socialization.",
+      "C": "Education plays a minimal role in shaping an individual's political beliefs.",
+      "D": "Peer groups are the sole determinant of an individual's political party affiliation."
+    },
+    "answer": "B",
+    "difficulty": 4,
+    "explanation": "Political socialization is the process by which individuals acquire their political beliefs and values. The family is widely considered the dominant and earliest agent of socialization, shaping fundamental political attitudes and party identification. Other agents like schools, media, and peer groups also contribute, but often later in life or in a reinforcing role."
+  },
+  {
+    "id": "AP_US_Government_296",
+    "question": "The concept of 'devolution' in American federalism refers to:",
+    "choices": {
+      "A": "The transfer of power from state governments to the federal government.",
+      "B": "The process by which federal courts interpret the Constitution.",
+      "C": "The delegation of power from the federal government to state and local governments.",
+      "D": "The power of the people to influence direct democracy initiatives."
+    },
+    "answer": "C",
+    "difficulty": 5,
+    "explanation": "Devolution is the statutory delegation of powers from the central government of a sovereign state to govern at a subnational level, such as states or regions. In American federalism, it specifically refers to the transfer of responsibilities and funding from the federal government to state and local governments."
+  },
+  {
+    "id": "AP_US_Government_297",
+    "question": "Which of the following is a significant impact of third parties on the American political system?",
+    "choices": {
+      "A": "They frequently win presidential elections, creating a multi-party system.",
+      "B": "They consistently gain a majority of seats in Congress, leading to coalition governments.",
+      "C": "They often introduce new ideas and push major parties to address neglected issues.",
+      "D": "They primarily serve to divide the electorate along racial and ethnic lines."
+    },
+    "answer": "C",
+    "difficulty": 5,
+    "explanation": "While third parties rarely win major elections due to systemic disadvantages (like winner-take-all elections), they can still have a significant impact by bringing new ideas and neglected issues to the forefront. If these issues gain public traction, larger parties may adopt them to capture broader support."
+  },
+  {
+    "id": "AP_US_Government_298",
+    "question": "The 'Revolving Door' phenomenon in Washington D.C. refers to:",
+    "choices": {
+      "A": "The frequent changes in leadership within congressional committees.",
+      "B": "The ability of high-level government officials to quickly transition to lucrative lobbying positions.",
+      "C": "The cyclical nature of economic booms and busts affecting federal budgeting.",
+      "D": "The process of presidents appointing former cabinet members to judicial posts."
+    },
+    "answer": "B",
+    "difficulty": 6,
+    "explanation": "The 'revolving door' describes the practice of former government officials, regulators, and legislators taking positions as lobbyists or consultants for industries they once regulated or legislated over. This raises concerns about undue influence and potential conflicts of interest."
+  },
+  {
+    "id": "AP_US_Government_299",
+    "question": "In which of the following cases did the Supreme Court establish the 'Lemon Test' for examining the constitutionality of religious establishment?",
+    "choices": {
+      "A": "Engle v. Vitale (1962)",
+      "B": "Wisconsin v. Yoder (1972)",
+      "C": "Lemon v. Kurtzman (1971)",
+      "D": "Tinker v. Des Moines (1969)"
+    },
+    "answer": "C",
+    "difficulty": 7,
+    "explanation": "In Lemon v. Kurtzman (1971), the Supreme Court established the 'Lemon Test' to determine whether a statute or practice violates the Establishment Clause of the First Amendment. The three prongs are: it must have a secular legislative purpose, its primary effect must neither advance nor inhibit religion, and it must not foster an excessive government entanglement with religion."
+  },
+  {
+    "id": "AP_US_Government_300",
+    "question": "The power of the House Rules Committee is best described as:",
+    "choices": {
+      "A": "The ability to introduce all revenue-generating legislation.",
+      "B": "Setting the conditions and time for debate and amendment of a bill.",
+      "C": "Negotiating conference committee reports between the House and Senate.",
+      "D": "Confirming presidential appointments to federal agencies."
+    },
+    "answer": "B",
+    "difficulty": 5,
+    "explanation": "The House Rules Committee is one of the most powerful committees in Congress. It determines which bills will be considered by the full House, for how long they will be debated, and whether amendments can be offered. It acts as a 'gatekeeper' for legislation."
   }
 ]

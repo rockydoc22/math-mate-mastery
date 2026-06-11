@@ -2247,5 +2247,1396 @@
     "answer": "B",
     "difficulty": 5,
     "explanation": "Both balls are under the influence of gravity (same acceleration $g$). Ball B has an initial downward velocity $v_0$ in addition to the acceleration due to gravity. Therefore, Ball B will cover the same distance in less time than Ball A."
+  },
+  {
+    "id": "AP_Physics_1_174",
+    "question": "A block of mass m is placed on a rough inclined plane with an angle theta above the horizontal. The coefficient of static friction between the block and the plane is mu_s. What is the maximum angle theta for which the block will remain at rest without sliding down?",
+    "choices": {
+      "A": "arctan(mu_s)",
+      "B": "arcsin(mu_s)",
+      "C": "arccos(mu_s)",
+      "D": "tan(mu_s)"
+    },
+    "answer": "A",
+    "difficulty": 5,
+    "explanation": "For the block to remain at rest, the component of gravity acting down the incline (mg*sin(theta)) must be less than or equal to the maximum static friction force (mu_s*N). The normal force N is mg*cos(theta). So, mg*sin(theta) <= mu_s*mg*cos(theta). Dividing by mg*cos(theta) gives tan(theta) <= mu_s. The maximum angle is when tan(theta) = mu_s, so theta = arctan(mu_s)."
+  },
+  {
+    "id": "AP_Physics_1_175",
+    "question": "A car travels in a circular path at a constant speed. Which of the following statements about the car's motion is true?",
+    "choices": {
+      "A": "Its velocity is constant, but its acceleration is changing.",
+      "B": "Its speed is changing, but its velocity is constant.",
+      "C": "Its velocity is changing, and its acceleration is changing.",
+      "D": "Its velocity is changing, but its acceleration magnitude is constant."
+    },
+    "answer": "D",
+    "difficulty": 4,
+    "explanation": "Circular motion at constant speed means the magnitude of velocity (speed) is constant, but the direction of velocity is continuously changing. Therefore, velocity is changing. Since there is a change in velocity over time, there must be an acceleration (centripetal acceleration) directed towards the center of the circle. The magnitude of this acceleration (a_c = v^2/r) is constant if both v and r are constant. The direction of acceleration, however, is continuously changing as the car moves around the circle, but the question asks about the magnitude."
+  },
+  {
+    "id": "AP_Physics_1_176",
+    "question": "Two objects, X and Y, are dropped from the same height in a vacuum. Object X has twice the mass of object Y. Which of the following statements is true regarding their acceleration due to gravity?",
+    "choices": {
+      "A": "Object X has a greater acceleration.",
+      "B": "Object Y has a greater acceleration.",
+      "C": "Both objects have the same acceleration.",
+      "D": "The acceleration depends on the density of the objects."
+    },
+    "answer": "C",
+    "difficulty": 3,
+    "explanation": "In a vacuum, air resistance is negligible. All objects, regardless of their mass, fall with the same acceleration due to gravity (g) near the Earth's surface. Newton's second law (F=ma) applied to gravity (F=mg) gives ma = mg, so a = g. The mass cancels out."
+  },
+  {
+    "id": "AP_Physics_1_177",
+    "question": "A spring with a spring constant k is stretched by a distance x. If the spring is then stretched by a distance 2x, how does the stored potential energy change?",
+    "choices": {
+      "A": "It doubles.",
+      "B": "It quadruples.",
+      "C": "It halves.",
+      "D": "It remains the same."
+    },
+    "answer": "B",
+    "difficulty": 4,
+    "explanation": "The elastic potential energy stored in a spring is given by PE_s = (1/2)kx^2. If the stretch distance becomes 2x, the new potential energy will be PE_s' = (1/2)k(2x)^2 = (1/2)k(4x^2) = 4 * (1/2)kx^2. Therefore, the stored potential energy quadruples."
+  },
+  {
+    "id": "AP_Physics_1_178",
+    "question": "A skateboarder starts from rest at the top of a ramp. Assuming no friction, which of the following quantities is conserved as the skateboarder moves down the ramp?",
+    "choices": {
+      "A": "Kinetic energy only",
+      "B": "Gravitational potential energy only",
+      "C": "Total mechanical energy",
+      "D": "Velocity"
+    },
+    "answer": "C",
+    "difficulty": 3,
+    "explanation": "In the absence of non-conservative forces like friction or air resistance, total mechanical energy (the sum of kinetic energy and gravitational potential energy) is conserved. As the skateboarder moves down, gravitational potential energy is converted into kinetic energy, but their sum remains constant."
+  },
+  {
+    "id": "AP_Physics_1_179",
+    "question": "A car accelerates from rest at a constant rate 'a'. After time 't', what is the distance it has traveled?",
+    "choices": {
+      "A": "at",
+      "B": "at^2",
+      "C": "0.5at",
+      "D": "0.5at^2"
+    },
+    "answer": "D",
+    "difficulty": 4,
+    "explanation": "This is a standard kinematic equation. For constant acceleration starting from rest (v_0 = 0), the distance traveled is given by the equation x = v_0*t + 0.5at^2. Since v_0 = 0, the equation simplifies to x = 0.5at^2."
+  },
+  {
+    "id": "AP_Physics_1_180",
+    "question": "A force F is applied horizontally to a block of mass m at rest on a frictionless surface. What is the acceleration of the block?",
+    "choices": {
+      "A": "F/m",
+      "B": "m/F",
+      "C": "F*m",
+      "D": "g"
+    },
+    "answer": "A",
+    "difficulty": 3,
+    "explanation": "According to Newton's Second Law, F_net = ma. If a single horizontal force F is applied to a block on a frictionless surface, then F_net = F. Therefore, F = ma, and the acceleration a = F/m."
+  },
+  {
+    "id": "AP_Physics_1_181",
+    "question": "A ball is thrown straight upward. At the very peak of its trajectory, which of the following is true?",
+    "choices": {
+      "A": "Its velocity is maximum.",
+      "B": "Its acceleration is zero.",
+      "C": "Its potential energy is minimum.",
+      "D": "Its velocity is zero, and its acceleration is 'g' downward."
+    },
+    "answer": "D",
+    "difficulty": 5,
+    "explanation": "At the very peak of its trajectory, the ball momentarily stops moving upward before it begins to fall downward, so its instantaneous vertical velocity is zero. However, gravity is constantly acting on the ball, causing a downward acceleration of 'g' throughout its flight, including at the peak."
+  },
+  {
+    "id": "AP_Physics_1_182",
+    "question": "A planet orbits a star in an elliptical path. When the planet is closest to the star, its speed is greatest. This observation is a direct consequence of which principle?",
+    "choices": {
+      "A": "Conservation of linear momentum",
+      "B": "Conservation of angular momentum",
+      "C": "Conservation of kinetic energy",
+      "D": "Conservation of gravitational potential energy"
+    },
+    "answer": "B",
+    "difficulty": 6,
+    "explanation": "Kepler's second law, which states that a line segment joining a planet and the Sun sweeps out equal areas during equal intervals of time, is a consequence of the conservation of angular momentum. When the planet is closer to the star, its radius (r) is smaller, and to conserve angular momentum (L = I*omega, or approximately L = mvr for orbital motion), its speed (v) must increase."
+  },
+  {
+    "id": "AP_Physics_1_183",
+    "question": "A block of mass M is sliding down an inclined plane at a constant velocity. Which of the following statements is true about the net force acting on the block?",
+    "choices": {
+      "A": "The net force is directed down the incline.",
+      "B": "The net force is directed up the incline.",
+      "C": "The net force is zero.",
+      "D": "The net force is equal to the gravitational force."
+    },
+    "answer": "C",
+    "difficulty": 4,
+    "explanation": "Constant velocity implies that there is no acceleration. According to Newton's Second Law (F_net = ma), if acceleration (a) is zero, then the net force (F_net) acting on the block must also be zero."
+  },
+  {
+    "id": "AP_Physics_1_184",
+    "question": "Two gliders are on a frictionless air track. Glider A (mass M) moves with velocity v towards glider B (mass 2M), which is initially at rest. They collide elastically. What is the velocity of glider A after the collision?",
+    "choices": {
+      "A": "-v/3",
+      "B": "v/3",
+      "C": "-v",
+      "D": "v/2"
+    },
+    "answer": "A",
+    "difficulty": 7,
+    "explanation": "For an elastic collision, both momentum and kinetic energy are conserved. Let v_A be the initial velocity of A, v_B be the initial velocity of B (v_B = 0), and v_A' and v_B' be their final velocities.   1. Conservation of Momentum: M*v_A + 2M*0 = M*v_A' + 2M*v_B'  => v_A = v_A' + 2v_B' (Eq 1)   2. Relative velocity reversal for elastic collisions: v_A - v_B = -(v_A' - v_B') => v_A - 0 = -(v_A' - v_B') => v_A = -v_A' + v_B' (Eq 2)   From (Eq 2), v_B' = v_A + v_A'. Substitute this into (Eq 1): v_A = v_A' + 2(v_A + v_A') = v_A' + 2v_A + 2v_A' = 3v_A' + 2v_A.   Rearranging for v_A': 3v_A' = v_A - 2v_A = -v_A.   So, v_A' = -v_A/3. Given v_A = v, then v_A' = -v/3."
+  },
+  {
+    "id": "AP_Physics_1_185",
+    "question": "A horizontal uniform rod of length L and mass M is pivoted at its center. A mass m is placed at one end of the rod. To balance the rod, another mass M_2 is placed at a distance x from the pivot on the opposite side. What is the distance x?",
+    "choices": {
+      "A": "m*L / (2*M_2)",
+      "B": "M_2*L / (2*m)",
+      "C": "m*L / M_2",
+      "D": "M_2*L / m"
+    },
+    "answer": "A",
+    "difficulty": 6,
+    "explanation": "For the rod to be balanced, the net torque about the pivot must be zero. The mass M of the rod acts at its center, which is the pivot point, so it creates no torque. The mass m at one end (L/2 from the pivot) creates a torque (m*g)*(L/2). The mass M_2 at distance x from the pivot on the opposite side creates a torque (M_2*g)*x. For balance, these torques must be equal: (m*g)*(L/2) = (M_2*g)*x. The 'g's cancel out: m*L/2 = M_2*x. Solving for x gives x = m*L / (2*M_2)."
+  },
+  {
+    "id": "AP_Physics_1_186",
+    "question": "A block is pulled across a rough horizontal surface at a constant velocity by a rope. The rope makes an angle theta with the horizontal. Which of the following is true about the normal force acting on the block?",
+    "choices": {
+      "A": "The normal force is equal to the gravitational force (mg).",
+      "B": "The normal force is less than the gravitational force (mg).",
+      "C": "The normal force is greater than the gravitational force (mg).",
+      "D": "There is no normal force because the surface is rough."
+    },
+    "answer": "B",
+    "difficulty": 5,
+    "explanation": "Since the block is moving horizontally, the net vertical force is zero. The vertical forces acting on the block are the downward gravitational force (mg), the upward normal force (N), and the upward vertical component of the tension in the rope (F*sin(theta)). Therefore, N + F*sin(theta) - mg = 0. This means N = mg - F*sin(theta). Since F*sin(theta) is a positive value, the normal force N must be less than the gravitational force mg."
+  },
+  {
+    "id": "AP_Physics_1_187",
+    "question": "An ideal gas is enclosed in a rigid container. If the absolute temperature of the gas is doubled, what happens to the pressure of the gas?",
+    "choices": {
+      "A": "It doubles.",
+      "B": "It halves.",
+      "C": "It quadruples.",
+      "D": "It remains the same."
+    },
+    "answer": "A",
+    "difficulty": 4,
+    "explanation": "For an ideal gas in a rigid container (constant volume), the ideal gas law (PV=nRT) simplifies to P proportional to T (where T is absolute temperature). If the absolute temperature T is doubled, then the pressure P must also double to maintain this proportionality, assuming n and R are constant."
+  },
+  {
+    "id": "AP_Physics_1_188",
+    "question": "A person stands at the edge of a rotating merry-go-round and then walks towards the center. What happens to the angular speed of the merry-go-round?",
+    "choices": {
+      "A": "It decreases.",
+      "B": "It increases.",
+      "C": "It remains the same.",
+      "D": "It depends on the mass of the person."
+    },
+    "answer": "B",
+    "difficulty": 6,
+    "explanation": "Assuming the merry-go-round is rotating on a frictionless pivot, the total angular momentum of the system (person + merry-go-round) is conserved. Angular momentum L = I*omega, where I is the moment of inertia and omega is the angular speed. When the person walks towards the center, their effective radius decreases, thus reducing the total moment of inertia of the system. To conserve angular momentum, if I decreases, omega must increase."
+  },
+  {
+    "id": "AP_Physics_1_189",
+    "question": "A wave travels through a medium. If the frequency of the wave is doubled while the wavelength remains constant, how does the wave speed change?",
+    "choices": {
+      "A": "It doubles.",
+      "B": "It halves.",
+      "C": "It quadruples.",
+      "D": "It remains the same."
+    },
+    "answer": "A",
+    "difficulty": 5,
+    "explanation": "The relationship between wave speed (v), frequency (f), and wavelength (lambda) is given by v = f * lambda. If the frequency (f) is doubled and the wavelength (lambda) remains constant, then the wave speed (v) must also double (v_new = (2f) * lambda = 2 * (f * lambda) = 2v_old)."
+  },
+  {
+    "id": "AP_Physics_1_190",
+    "question": "A block is pulled along a horizontal surface at a constant acceleration by a force F. The frictional force opposing the motion is f. What is the net force on the block?",
+    "choices": {
+      "A": "F",
+      "B": "f",
+      "C": "F + f",
+      "D": "F - f"
+    },
+    "answer": "D",
+    "difficulty": 4,
+    "explanation": "The net force is the vector sum of all forces acting on the object. In this case, the applied force F is in the direction of motion, and the frictional force f opposes the motion. Therefore, the net force is F_net = F - f."
+  },
+  {
+    "id": "AP_Physics_1_191",
+    "question": "Two parallel wires carry currents in opposite directions. What is the nature of the magnetic force between them?",
+    "choices": {
+      "A": "Attractive",
+      "B": "Repulsive",
+      "C": "Zero",
+      "D": "Perpendicular to both wires"
+    },
+    "answer": "B",
+    "difficulty": 5,
+    "explanation": "According to the right-hand rule, if currents flow in opposite directions, the magnetic field produced by one wire at the location of the other wire will exert a force that pushes the wires apart. Therefore, the force between them is repulsive."
+  },
+  {
+    "id": "AP_Physics_1_192",
+    "question": "A simple pendulum consists of a mass m attached to a string of length L. If the length of the string is doubled, how does the period of oscillation change?",
+    "choices": {
+      "A": "It increases by a factor of 2.",
+      "B": "It increases by a factor of sqrt(2).",
+      "C": "It decreases by a factor of 2.",
+      "D": "It decreases by a factor of sqrt(2)."
+    },
+    "answer": "B",
+    "difficulty": 6,
+    "explanation": "The period of a simple pendulum is given by T = 2*pi * sqrt(L/g). If the length L is doubled, the new period T' = 2*pi * sqrt(2L/g) = sqrt(2) * (2*pi * sqrt(L/g)) = sqrt(2) * T. So, the period increases by a factor of sqrt(2)."
+  },
+  {
+    "id": "AP_Physics_1_193",
+    "question": "A uniform plank of mass M and length L is supported by two vertical wires, one at each end. A block of mass m is placed at a distance L/4 from the left end. What is the tension in the left wire?",
+    "choices": {
+      "A": "(Mg/2) + (3mg/4)",
+      "B": "Mg + mg",
+      "C": "(Mg/2) + (mg/4)",
+      "D": "Mg/2"
+    },
+    "answer": "A",
+    "difficulty": 8,
+    "explanation": "Let T1 be the tension in the left wire and T2 be the tension in the right wire.  First, sum of forces in the vertical direction: T1 + T2 - Mg - mg = 0.  Then, sum of torques about the right end (to eliminate T2):  T1*L - Mg*(L/2) - mg*(3L/4) = 0.  (The plank's weight acts at L/2 from both ends. The block is at L/4 from the left, so 3L/4 from the right).  Divide by L: T1 - Mg/2 - 3mg/4 = 0.  Solve for T1: T1 = Mg/2 + 3mg/4."
+  },
+  {
+    "id": "AP_Physics_1_194",
+    "question": "A block of mass M is released from rest at the top of a frictionless inclined plane of height H. Which of the following expressions represents the speed of the block at the bottom of the plane?",
+    "choices": {
+      "A": "sqrt(2gH)",
+      "B": "MgH",
+      "C": "gH",
+      "D": "sqrt(gH)"
+    },
+    "answer": "A",
+    "difficulty": 4,
+    "explanation": "According to the conservation of mechanical energy, the initial potential energy (MgH) is converted into kinetic energy (1/2 M v^2) at the bottom of the incline. Setting MgH = 1/2 M v^2, we can solve for v: v^2 = 2gH, so v = sqrt(2gH)."
+  },
+  {
+    "id": "AP_Physics_1_195",
+    "question": "An object moves in a circular path of radius R with a constant speed v. If the speed of the object is doubled to 2v and the radius of the path is also doubled to 2R, how does the centripetal acceleration change?",
+    "choices": {
+      "A": "It remains the same.",
+      "B": "It doubles.",
+      "C": "It quadruples.",
+      "D": "It is halved."
+    },
+    "answer": "B",
+    "difficulty": 5,
+    "explanation": "Centripetal acceleration is given by a_c = v^2 / R. If v becomes 2v and R becomes 2R, the new centripetal acceleration is a_c' = (2v)^2 / (2R) = 4v^2 / (2R) = 2v^2 / R. Comparing a_c' with a_c, we see that the centripetal acceleration doubles."
+  },
+  {
+    "id": "AP_Physics_1_196",
+    "question": "A force F is applied to a block of mass m, causing it to accelerate across a frictionless horizontal surface. If the same force F is applied to a block of mass 2m, what will be its acceleration compared to the first block?",
+    "choices": {
+      "A": "Half as much.",
+      "B": "The same.",
+      "C": "Twice as much.",
+      "D": "Four times as much."
+    },
+    "answer": "A",
+    "difficulty": 3,
+    "explanation": "According to Newton's Second Law, F = ma. For the first block, a_1 = F / m. For the second block, a_2 = F / (2m). Therefore, a_2 = (1/2) * (F/m) = (1/2) * a_1. The acceleration will be half as much."
+  },
+  {
+    "id": "AP_Physics_1_197",
+    "question": "A horizontal force of 10 N is applied to a 2.0 kg block, initially at rest on a frictionless horizontal surface. What is the kinetic energy of the block after it has moved 3.0 meters?",
+    "choices": {
+      "A": "30 J",
+      "B": "15 J",
+      "C": "60 J",
+      "D": "20 J"
+    },
+    "answer": "A",
+    "difficulty": 5,
+    "explanation": "The work done by the force is W = F * d = 10 N * 3.0 m = 30 J. By the Work-Energy Theorem, the net work done on the block equals the change in its kinetic energy. Since it starts from rest, its initial kinetic energy is zero. Therefore, the final kinetic energy is 30 J."
+  },
+  {
+    "id": "AP_Physics_1_198",
+    "question": "A 0.5 kg ball is thrown vertically upwards with an initial speed of 10 m/s. Neglecting air resistance, what is the maximum height the ball reaches?",
+    "choices": {
+      "A": "5.1 m",
+      "B": "10 m",
+      "C": "20 m",
+      "D": "2.5 m"
+    },
+    "answer": "A",
+    "difficulty": 6,
+    "explanation": "Using kinematics, v_f^2 = v_i^2 + 2 a delta_y. At the maximum height, v_f = 0. So, 0 = (10 m/s)^2 + 2 (-9.8 m/s^2) delta_y. Solving for delta_y: delta_y = -100 / (-19.6) = 5.10 m (approximately). Alternatively, by conservation of energy, 1/2 mv_i^2 = mgh, so h = v_i^2 / (2g) = (10 m/s)^2 / (2 * 9.8 m/s^2) = 100 / 19.6 = 5.10 m."
+  },
+  {
+    "id": "AP_Physics_1_199",
+    "question": "Two objects, X and Y, are dropped from the same height. Object X has mass m and object Y has mass 2m. If air resistance is negligible, which object hits the ground first?",
+    "choices": {
+      "A": "Object X hits first.",
+      "B": "Object Y hits first.",
+      "C": "They hit the ground at the same time.",
+      "D": "It depends on their shapes."
+    },
+    "answer": "C",
+    "difficulty": 3,
+    "explanation": "In the absence of air resistance, the acceleration due to gravity is constant for all objects, regardless of their mass. Therefore, both objects will fall with the same acceleration and, if dropped from the same height with the same initial velocity (zero in this case), they will hit the ground at the same time."
+  },
+  {
+    "id": "AP_Physics_1_200",
+    "question": "A block slides down an inclined plane at a constant velocity. Which of the following statements about the forces acting on the block is true?",
+    "choices": {
+      "A": "The net force on the block is zero.",
+      "B": "The gravitational force is less than the frictional force.",
+      "C": "The normal force is greater than the gravitational force.",
+      "D": "The acceleration of the block is downwards."
+    },
+    "answer": "A",
+    "difficulty": 6,
+    "explanation": "Constant velocity implies that the acceleration of the block is zero. According to Newton's Second Law (F_net = ma), if the acceleration is zero, the net force acting on the block must also be zero."
+  },
+  {
+    "id": "AP_Physics_1_201",
+    "question": "A car travels at a constant speed around a circular track. Which of the following quantities is NOT constant?",
+    "choices": {
+      "A": "Speed",
+      "B": "Magnitude of acceleration",
+      "C": "Magnitude of velocity",
+      "D": "Direction of velocity"
+    },
+    "answer": "D",
+    "difficulty": 4,
+    "explanation": "While the car travels at a constant speed, its direction of motion is continuously changing as it moves around the circular track. Velocity is a vector quantity, possessing both magnitude (speed) and direction. Therefore, if the direction changes, the velocity itself is not constant, even if the speed is."
+  },
+  {
+    "id": "AP_Physics_1_202",
+    "question": "A student pushes a box across a rough horizontal floor. The student applies a horizontal force of 50 N, and the box moves at a constant velocity. What is the magnitude of the frictional force acting on the box?",
+    "choices": {
+      "A": "50 N",
+      "B": "Greater than 50 N",
+      "C": "Less than 50 N",
+      "D": "Cannot be determined without the mass of the box."
+    },
+    "answer": "A",
+    "difficulty": 3,
+    "explanation": "Since the box moves at a constant velocity, its acceleration is zero. By Newton's Second Law, the net force on the box must be zero. If the applied force is 50 N horizontally and the box moves at constant velocity, then the frictional force must balance the applied force, meaning it is also 50 N in the opposite direction."
+  },
+  {
+    "id": "AP_Physics_1_203",
+    "question": "A spring with spring constant k is compressed by a distance x. The potential energy stored in the spring is U. If the spring is compressed by a distance 2x, what is the new potential energy stored in the spring?",
+    "choices": {
+      "A": "U",
+      "B": "2U",
+      "C": "4U",
+      "D": "U/2"
+    },
+    "answer": "C",
+    "difficulty": 5,
+    "explanation": "The potential energy stored in a spring is given by U = 1/2 k x^2. If the compression distance is doubled to 2x, the new potential energy U' = 1/2 k (2x)^2 = 1/2 k (4x^2) = 4 * (1/2 k x^2) = 4U."
+  },
+  {
+    "id": "AP_Physics_1_204",
+    "question": "A satellite orbits the Earth in a circular path. If the orbital radius of the satellite is quadrupled, how must its orbital speed change to maintain a stable orbit?",
+    "choices": {
+      "A": "It must be halved.",
+      "B": "It must be doubled.",
+      "C": "It must be quadrupled.",
+      "D": "It must be reduced to one-quarter."
+    },
+    "answer": "A",
+    "difficulty": 7,
+    "explanation": "For a stable circular orbit, the gravitational force provides the centripetal force: G M m / r^2 = m v^2 / r. This simplifies to v^2 = G M / r, or v = sqrt(G M / r). If r is quadrupled to 4r, then the new speed v' = sqrt(G M / (4r)) = (1/sqrt(4)) * sqrt(G M / r) = (1/2) * v. So, the orbital speed must be halved."
+  },
+  {
+    "id": "AP_Physics_1_205",
+    "question": "In an inelastic collision between two objects, which of the following quantities is conserved?",
+    "choices": {
+      "A": "Kinetic energy only.",
+      "B": "Momentum only.",
+      "C": "Both kinetic energy and momentum.",
+      "D": "Neither kinetic energy nor momentum."
+    },
+    "answer": "B",
+    "difficulty": 4,
+    "explanation": "In any collision where external forces are negligible, the total momentum of the system is conserved. In an inelastic collision, however, kinetic energy is NOT conserved; some of it is converted into other forms of energy such as heat or sound."
+  },
+  {
+    "id": "AP_Physics_1_206",
+    "question": "A block of mass m is attached to a string and swung in a vertical circle. At the lowest point of its path, the tension in the string is T. Which of the following expressions represents the speed of the block at this point?",
+    "choices": {
+      "A": "sqrt( (T R / m) + gR )",
+      "B": "sqrt( (T R / m) - gR )",
+      "C": "T R / m - mg",
+      "D": "mg + T"
+    },
+    "answer": "B",
+    "difficulty": 8,
+    "explanation": "At the lowest point of a vertical circle, the net force pointing towards the center of the circle provides the centripetal force. The forces acting are the tension (T) upwards and gravity (mg) downwards. So, F_net = T - mg = m v^2 / R. Rearranging for v^2: v^2 = (T - mg)R / m = (TR/m) - gR. Therefore, v = sqrt( (T R / m) - gR )."
+  },
+  {
+    "id": "AP_Physics_1_207",
+    "question": "A uniform plank of length L and mass M is supported at its ends by two scales. A person of mass m stands at a distance L/4 from one end. What is the reading on the scale closer to the person?",
+    "choices": {
+      "A": "Mg/2 + 3mg/4",
+      "B": "Mg/2 + mg/4",
+      "C": "Mg/2 + mg/2",
+      "D": "Mg/2 + mg"
+    },
+    "answer": "A",
+    "difficulty": 7,
+    "explanation": "Let R1 be the reading of the scale closer to the person (at L/4 from the person) and R2 be the reading of the other scale. Sum of forces in y-direction: R1 + R2 = Mg + mg. Take torques about the other end (where R2 is). The plank's weight acts at L/2. The person's weight acts at L - L/4 = 3L/4. The force R1 acts at L. So, Sum of Torques = 0: R1 * L - Mg * (L/2) - mg * (3L/4) = 0. Divide by L: R1 - Mg/2 - 3mg/4 = 0. Therefore, R1 = Mg/2 + 3mg/4."
+  },
+  {
+    "id": "AP_Physics_1_208",
+    "question": "A force F acts on an object, initially at rest. The force increases linearly with time from 0 N to 10 N in 2 seconds, then remains constant at 10 N for another 2 seconds. Which graph best represents the acceleration of the object as a function of time?",
+    "choices": {
+      "A": "A graph showing acceleration increasing linearly and then remaining constant.",
+      "B": "A graph showing acceleration remaining constant and then increasing linearly.",
+      "C": "A graph showing acceleration decreasing linearly and then remaining constant.",
+      "D": "A graph showing acceleration remaining constant and then decreasing linearly."
+    },
+    "answer": "A",
+    "difficulty": 6,
+    "explanation": "According to Newton's Second Law, F = ma, so acceleration a = F/m. If the mass m is constant and the force F increases linearly from 0 N to 10 N in the first 2 seconds, the acceleration will also increase linearly. If the force then remains constant at 10 N for the next 2 seconds, the acceleration will also remain constant."
+  },
+  {
+    "id": "AP_Physics_1_209",
+    "question": "A block is pulled across a horizontal surface at a constant velocity by a rope. The rope makes an angle theta with the horizontal. Which of the following statements is true regarding the normal force N from the surface on the block?",
+    "choices": {
+      "A": "N is equal to the weight of the block.",
+      "B": "N is greater than the weight of the block.",
+      "C": "N is less than the weight of the block.",
+      "D": "N is equal to the horizontal component of the tension."
+    },
+    "answer": "C",
+    "difficulty": 6,
+    "explanation": "In the vertical direction, the forces acting are the normal force (N) upwards, the gravitational force (mg) downwards, and the vertical component of the tension (T sin(theta)) upwards. Since the block is not accelerating vertically, the sum of vertical forces is zero: N + T sin(theta) - mg = 0. Therefore, N = mg - T sin(theta). Since T sin(theta) is a positive value (assuming theta is between 0 and 90 degrees), N must be less than mg."
+  },
+  {
+    "id": "AP_Physics_1_210",
+    "question": "A student pushes a wall with a force of 100 N. What is the magnitude of the force exerted by the wall on the student?",
+    "choices": {
+      "A": "0 N",
+      "B": "50 N",
+      "C": "100 N",
+      "D": "200 N"
+    },
+    "answer": "C",
+    "difficulty": 3,
+    "explanation": "According to Newton's Third Law, for every action, there is an equal and opposite reaction. If the student exerts a force of 100 N on the wall, the wall simultaneously exerts an equal and opposite force of 100 N on the student."
+  },
+  {
+    "id": "AP_Physics_1_211",
+    "question": "A disc with rotational inertia I is initially rotating with angular speed omega. A second identical disc, initially at rest, is dropped onto the first disc. They then rotate together with a common final angular speed omega_f. What is omega_f?",
+    "choices": {
+      "A": "omega / 2",
+      "B": "omega",
+      "C": "2 * omega",
+      "D": "omega / 4"
+    },
+    "answer": "A",
+    "difficulty": 6,
+    "explanation": "This is an inelastic rotational collision, so angular momentum is conserved. Initial angular momentum L_i = I * omega. The second disc has identical rotational inertia I. When it's dropped, the total rotational inertia becomes I_total = I + I = 2I. Final angular momentum L_f = I_total * omega_f = 2I * omega_f. Setting L_i = L_f: I * omega = 2I * omega_f. Solving for omega_f: omega_f = (I * omega) / (2I) = omega / 2."
+  },
+  {
+    "id": "AP_Physics_1_212",
+    "question": "A mass m is oscillating on a spring with a period T. If the mass is changed to 2m, what is the new period of oscillation (assuming the spring constant k remains the same)?",
+    "choices": {
+      "A": "T * sqrt(2)",
+      "B": "T / sqrt(2)",
+      "C": "2T",
+      "D": "T / 2"
+    },
+    "answer": "A",
+    "difficulty": 7,
+    "explanation": "The period of a mass-spring system is given by T = 2 * pi * sqrt(m / k). If the mass is changed to 2m, the new period T' = 2 * pi * sqrt(2m / k) = 2 * pi * sqrt(2) * sqrt(m / k). Since T = 2 * pi * sqrt(m / k), we can write T' = sqrt(2) * T."
+  },
+  {
+    "id": "AP_Physics_1_213",
+    "question": "A block of mass m is pulled by a constant force F along a horizontal surface with coefficient of kinetic friction mu. Which of the following expressions represents the acceleration of the block?",
+    "choices": {
+      "A": "(F - mu * m * g) / m",
+      "B": "F / m",
+      "C": "mu * g",
+      "D": "(F + mu * m * g) / m"
+    },
+    "answer": "A",
+    "difficulty": 5,
+    "explanation": "The net force acting on the block in the horizontal direction is the applied force F minus the kinetic friction force f_k. The kinetic friction force is f_k = mu * N, where N is the normal force. On a horizontal surface, N = mg. So, F_net = F - mu * mg. According to Newton's Second Law, F_net = ma. Therefore, ma = F - mu * mg. Solving for acceleration a = (F - mu * m * g) / m."
+  },
+  {
+    "id": "AP_Physics_1_214",
+    "question": "A block of mass M is at rest on a frictionless horizontal surface. A constant horizontal force F is applied to the block, causing it to accelerate. Which of the following graphs best represents the relationship between the block's kinetic energy (KE) and its displacement (d) while the force is applied?",
+    "choices": {
+      "A": "A graph showing KE increasing linearly with d, starting from zero.",
+      "B": "A graph showing KE increasing quadratically with d, starting from zero.",
+      "C": "A graph showing KE increasing exponentially with d, starting from zero.",
+      "D": "A graph showing KE remaining constant after an initial increase."
+    },
+    "answer": "A",
+    "difficulty": 6,
+    "explanation": "According to the Work-Energy Theorem, the net work done on an object equals its change in kinetic energy (W_net = delta_KE). Since a constant force F is applied over a displacement d, the work done is W = F*d (assuming force and displacement are in the same direction). Therefore, KE = F*d + KE_initial. Since the block starts from rest, KE_initial = 0, so KE = F*d. This shows a linear relationship between KE and d, with a slope equal to F."
+  },
+  {
+    "id": "AP_Physics_1_215",
+    "question": "A student throws a ball vertically upward from the top of a building. Air resistance is negligible. Which of the following statements is true about the acceleration of the ball while it is in the air?",
+    "choices": {
+      "A": "The acceleration is directed upward on the way up and downward on the way down.",
+      "B": "The acceleration is zero at the highest point of its trajectory.",
+      "C": "The acceleration is constant and directed downward throughout its motion.",
+      "D": "The acceleration decreases as the ball moves upward and increases as it moves downward."
+    },
+    "answer": "C",
+    "difficulty": 4,
+    "explanation": "For an object in free fall (negligible air resistance), the only force acting on it is gravity. Therefore, its acceleration is always the acceleration due to gravity, g, which is constant in magnitude (approximately 9.8 m/s^2 near Earth's surface) and always directed downward, regardless of the object's velocity."
+  },
+  {
+    "id": "AP_Physics_1_216",
+    "question": "Two objects, A and B, have masses M and 2M respectively. They are initially at rest on a frictionless horizontal surface. The same net force F is applied to both objects. Which object will have the greater acceleration, and by what factor?",
+    "choices": {
+      "A": "Object A will have twice the acceleration of Object B.",
+      "B": "Object B will have twice the acceleration of Object A.",
+      "C": "Both objects will have the same acceleration.",
+      "D": "Object A will have one-half the acceleration of Object B."
+    },
+    "answer": "A",
+    "difficulty": 5,
+    "explanation": "According to Newton's Second Law, F_net = m*a. If the same net force F is applied to both objects: For Object A: F = M*a_A, so a_A = F/M. For Object B: F = (2M)*a_B, so a_B = F/(2M). Comparing the accelerations, a_A = (F/M) = 2 * (F/(2M)) = 2*a_B. Therefore, Object A will have twice the acceleration of Object B."
+  },
+  {
+    "id": "AP_Physics_1_217",
+    "question": "A simple pendulum consists of a bob of mass m attached to a string of length L. The pendulum is released from rest at an angle theta from the vertical. What is the speed of the bob at the lowest point of its swing if air resistance is negligible?",
+    "choices": {
+      "A": "v = sqrt(2*g*L)",
+      "B": "v = sqrt(g*L*sin(theta))",
+      "C": "v = sqrt(2*g*L*(1 - cos(theta)))",
+      "D": "v = sqrt(m*g*L)"
+    },
+    "answer": "C",
+    "difficulty": 7,
+    "explanation": "This problem can be solved using conservation of mechanical energy. At the initial position, the pendulum has potential energy and zero kinetic energy. The height h above the lowest point is L - L*cos(theta) = L*(1 - cos(theta)). So, PE_initial = m*g*h = m*g*L*(1 - cos(theta)). At the lowest point, the potential energy is zero (if we set the reference point there), and the kinetic energy is (1/2)*m*v^2. By conservation of energy, PE_initial = KE_final: m*g*L*(1 - cos(theta)) = (1/2)*m*v^2. Solving for v, we get v^2 = 2*g*L*(1 - cos(theta)), so v = sqrt(2*g*L*(1 - cos(theta))). "
+  },
+  {
+    "id": "AP_Physics_1_218",
+    "question": "A car accelerates uniformly from rest. If the car doubles its speed, by what factor does the distance it travels increase, assuming constant acceleration?",
+    "choices": {
+      "A": "It doubles.",
+      "B": "It quadruples.",
+      "C": "It increases by a factor of sqrt(2).",
+      "D": "It increases by a factor of 8."
+    },
+    "answer": "B",
+    "difficulty": 6,
+    "explanation": "We can use the kinematic equation v^2 = v_0^2 + 2*a*x. Since the car starts from rest, v_0 = 0, so v^2 = 2*a*x. This means x = v^2 / (2*a). If the speed v is doubled to 2v, the new distance x' will be x' = (2v)^2 / (2*a) = 4*v^2 / (2*a) = 4 * (v^2 / (2*a)) = 4*x. So, the distance increases by a factor of 4."
+  },
+  {
+    "id": "AP_Physics_1_219",
+    "question": "A spring with spring constant k is compressed by a distance x. It stores potential energy U. If the spring is compressed by a distance 2x, how much potential energy is stored in it?",
+    "choices": {
+      "A": "2U",
+      "B": "4U",
+      "C": "U/2",
+      "D": "sqrt(2)*U"
+    },
+    "answer": "B",
+    "difficulty": 4,
+    "explanation": "The potential energy stored in a spring is given by the formula U = (1/2)*k*x^2. If the compression distance is doubled to 2x, the new potential energy U' will be U' = (1/2)*k*(2x)^2 = (1/2)*k*4*x^2 = 4 * ((1/2)*k*x^2) = 4U. Therefore, the potential energy stored increases by a factor of 4."
+  },
+  {
+    "id": "AP_Physics_1_220",
+    "question": "A block slides down a ramp with friction. Which of the following forces does positive work on the block if its speed is increasing?",
+    "choices": {
+      "A": "The normal force.",
+      "B": "The gravitational force.",
+      "C": "The kinetic friction force.",
+      "D": "The force perpendicular to the ramp surface."
+    },
+    "answer": "B",
+    "difficulty": 5,
+    "explanation": "Work done by a force is given by W = F*d*cos(theta), where theta is the angle between the force and displacement. The normal force is perpendicular to the displacement, so it does no work (cos(90) = 0). The kinetic friction force opposes the motion, so the angle is 180 degrees, and it does negative work (cos(180) = -1). The gravitational force has a component acting parallel to the ramp and in the direction of motion (down the ramp), so it does positive work. If the speed is increasing, the net work done on the block must be positive, which means the positive work done by gravity is greater than the negative work done by friction."
+  },
+  {
+    "id": "AP_Physics_1_221",
+    "question": "Two carts of equal mass m are initially at rest on a frictionless horizontal track. A compressed spring is placed between them. When the spring is released, it pushes the carts apart. Which of the following statements is true about the momentum of the system after the spring is released?",
+    "choices": {
+      "A": "The total momentum of the system is zero.",
+      "B": "The total momentum of the system is equal to the momentum of one cart.",
+      "C": "The momentum of the system is conserved and equal to the initial momentum.",
+      "D": "The momentum of the system is conserved and is non-zero."
+    },
+    "answer": "C",
+    "difficulty": 5,
+    "explanation": "In an isolated system (no external forces acting), the total momentum is conserved. Initially, both carts are at rest, so the initial total momentum of the system is zero. When the spring pushes the carts apart, this is an internal force, so the total momentum of the system must remain zero. If one cart moves with momentum p in one direction, the other cart must move with momentum -p in the opposite direction, so their sum is zero. Therefore, the momentum of the system is conserved and equal to the initial momentum, which is zero."
+  },
+  {
+    "id": "AP_Physics_1_222",
+    "question": "A planet orbits a star in an elliptical path. As the planet moves closer to the star, which of the following quantities increases?",
+    "choices": {
+      "A": "Its gravitational potential energy relative to the star.",
+      "B": "Its angular momentum about the star.",
+      "C": "Its total mechanical energy.",
+      "D": "Its orbital speed."
+    },
+    "answer": "D",
+    "difficulty": 7,
+    "explanation": "For an object in an elliptical orbit under the influence of gravity (a central force), several quantities are conserved: total mechanical energy and angular momentum. As the planet moves closer to the star, its gravitational potential energy (which is negative and decreases in magnitude, thus becoming more negative) decreases. To conserve total mechanical energy (E = KE + PE), its kinetic energy must increase, which means its orbital speed increases. Angular momentum is conserved, so it does not increase or decrease. The gravitational potential energy becomes more negative, meaning it decreases."
+  },
+  {
+    "id": "AP_Physics_1_223",
+    "question": "An object sits on a rotating turntable. The object is not slipping. If the turntable's angular speed is doubled, by what factor does the centripetal force required to keep the object from slipping increase?",
+    "choices": {
+      "A": "It doubles.",
+      "B": "It quadruples.",
+      "C": "It increases by a factor of sqrt(2).",
+      "D": "It stays the same."
+    },
+    "answer": "B",
+    "difficulty": 6,
+    "explanation": "The centripetal force required is given by F_c = m*v^2/r, where v is the tangential speed. The tangential speed is related to the angular speed omega by v = r*omega. Substituting this into the centripetal force equation, we get F_c = m*(r*omega)^2 / r = m*r*omega^2. If the angular speed omega is doubled to 2*angular_speed, the new centripetal force F_c' will be F_c' = m*r*(2*omega)^2 = m*r*4*omega^2 = 4*(m*r*omega^2) = 4*F_c. Thus, the centripetal force increases by a factor of 4."
+  },
+  {
+    "id": "AP_Physics_1_224",
+    "question": "A block is pulled across a rough horizontal surface by a constant force F at an angle theta above the horizontal. If the block moves at a constant velocity, what is the net force acting on the block?",
+    "choices": {
+      "A": "Greater than zero.",
+      "B": "Equal to zero.",
+      "C": "Directed in the direction of the applied force.",
+      "D": "Directed opposite to the friction force."
+    },
+    "answer": "B",
+    "difficulty": 4,
+    "explanation": "According to Newton's First Law (or Second Law), an object moving at a constant velocity has zero acceleration. If the acceleration is zero, then the net force acting on the object must also be zero (F_net = m*a = m*0 = 0)."
+  },
+  {
+    "id": "AP_Physics_1_225",
+    "question": "A student applies a torque to a massive, rotating disk to slow it down. Which of the following statements correctly describes the effect of this torque on the disk?",
+    "choices": {
+      "A": "The angular momentum of the disk increases.",
+      "B": "The rotational inertia of the disk decreases.",
+      "C": "The angular velocity of the disk decreases.",
+      "D": "The total mechanical energy of the disk increases."
+    },
+    "answer": "C",
+    "difficulty": 5,
+    "explanation": "Torque is the rotational analogue of force. A net external torque causes a change in angular momentum (tau = delta_L / delta_t). If the torque is applied to slow the disk down, it means the torque is in the opposite direction to the disk's angular velocity. This will cause the angular velocity to decrease. The rotational inertia of the disk depends on its mass distribution and shape, which are not changing. The angular momentum will decrease because the angular velocity is decreasing. The total mechanical energy will decrease because the rotational kinetic energy (1/2*I*omega^2) is decreasing."
+  },
+  {
+    "id": "AP_Physics_1_226",
+    "question": "Two objects of different masses are dropped from the same height in a vacuum. Which of the following quantities will be the same for both objects just before they hit the ground?",
+    "choices": {
+      "A": "Their kinetic energy.",
+      "B": "Their momentum.",
+      "C": "Their acceleration.",
+      "D": "Their impulse experienced since being dropped."
+    },
+    "answer": "C",
+    "difficulty": 5,
+    "explanation": "In a vacuum, air resistance is negligible. Therefore, both objects are subjected only to the force of gravity. According to Galileo's observations and Newton's laws, all objects in free fall experience the same acceleration due to gravity, 'g', regardless of their mass. Their kinetic energy, momentum, and impulse will depend on their mass and velocity, which will differ if their masses are different, even though their final velocities will be the same starting from the same height."
+  },
+  {
+    "id": "AP_Physics_1_227",
+    "question": "A block of mass m is placed on an inclined plane. The angle of inclination is theta. The coefficient of static friction between the block and the plane is mu_s. What is the maximum angle theta for which the block will remain at rest?",
+    "choices": {
+      "A": "arctan(mu_s)",
+      "B": "arcsin(mu_s)",
+      "C": "arccos(mu_s)",
+      "D": "mu_s * g"
+    },
+    "answer": "A",
+    "difficulty": 7,
+    "explanation": "For the block to remain at rest, the component of gravity acting down the incline must be less than or equal to the maximum static friction force. The force component down the incline is mg*sin(theta). The normal force is mg*cos(theta). The maximum static friction force is f_s_max = mu_s * N = mu_s * mg*cos(theta). Setting these equal for the maximum angle: mg*sin(theta) = mu_s * mg*cos(theta). Dividing both sides by mg*cos(theta) gives tan(theta) = mu_s. Therefore, theta = arctan(mu_s)."
+  },
+  {
+    "id": "AP_Physics_1_228",
+    "question": "A student attempts to balance a uniform meter stick on their finger. When the stick is balanced, where is the center of mass of the stick located relative to the finger?",
+    "choices": {
+      "A": "Directly above the finger.",
+      "B": "Directly below the finger.",
+      "C": "At one end of the stick.",
+      "D": "It depends on the mass distribution of the stick."
+    },
+    "answer": "A",
+    "difficulty": 3,
+    "explanation": "For an object to be balanced, it must be in equilibrium. This requires the net force and net torque to be zero. When balancing an object, the supporting force (from the finger) must be directly aligned with the object's center of mass to prevent any net torque that would cause rotation. For a uniform object, the center of mass is at its geometric center."
+  },
+  {
+    "id": "AP_Physics_1_229",
+    "question": "A wave travels through a medium. If the frequency of the wave is doubled while the tension in the medium remains constant, what happens to the wavelength of the wave?",
+    "choices": {
+      "A": "It doubles.",
+      "B": "It is halved.",
+      "C": "It remains the same.",
+      "D": "It quadruples."
+    },
+    "answer": "B",
+    "difficulty": 6,
+    "explanation": "The speed of a wave in a medium (like a string or spring) depends on the properties of the medium (tension, mass per unit length) and is generally constant for a given medium under constant conditions. The relationship between wave speed (v), frequency (f), and wavelength (lambda) is v = f*lambda. If the frequency f is doubled to 2f and the wave speed v remains constant, then v = (2f)*lambda'. To maintain the constant speed, the new wavelength lambda' must be half of the original wavelength: lambda' = v/(2f) = (1/2)*(v/f) = (1/2)*lambda."
+  },
+  {
+    "id": "AP_Physics_1_230",
+    "question": "A cart with mass M is moving on a frictionless track with speed V. It collides head-on and sticks to another cart of mass m, which was initially at rest. What is the speed of the combined system after the collision?",
+    "choices": {
+      "A": "V * (M / m)",
+      "B": "V * (m / M)",
+      "C": "V * (M / (M + m))",
+      "D": "V * ((M + m) / M)"
+    },
+    "answer": "C",
+    "difficulty": 6,
+    "explanation": "This is a perfectly inelastic collision, which means momentum is conserved, but kinetic energy is not. The initial momentum of the system is M*V + m*0 = M*V. After the collision, the two carts stick together and move as a single unit with a combined mass of (M + m) and a final speed V_f. So, the final momentum is (M + m)*V_f. By conservation of momentum: M*V = (M + m)*V_f. Solving for V_f, we get V_f = M*V / (M + m) = V * (M / (M + m))."
+  },
+  {
+    "id": "AP_Physics_1_231",
+    "question": "A student measures the period of a simple pendulum on Earth. They then take the same pendulum to a planet where the acceleration due to gravity is 4g (four times that of Earth). How does the period of the pendulum on this planet compare to its period on Earth?",
+    "choices": {
+      "A": "It is doubled.",
+      "B": "It is halved.",
+      "C": "It remains the same.",
+      "D": "It is quadrupled."
+    },
+    "answer": "B",
+    "difficulty": 7,
+    "explanation": "The period of a simple pendulum is given by the formula T = 2*pi*sqrt(L/g), where L is the length of the pendulum and g is the acceleration due to gravity. On Earth, the period is T_E = 2*pi*sqrt(L/g). On the planet, the acceleration due to gravity is 4g, so the period T_P = 2*pi*sqrt(L/(4g)). We can rewrite this as T_P = 2*pi*(1/sqrt(4))*sqrt(L/g) = (1/2)*2*pi*sqrt(L/g) = (1/2)*T_E. Therefore, the period is halved."
+  },
+  {
+    "id": "AP_Physics_1_232",
+    "question": "A uniform plank of length L and mass M is supported at both ends by two vertical forces, F1 and F2. A block of mass m is placed on the plank at a distance x from the left end. Which of the following equations correctly relates the forces and positions when the plank is in equilibrium?",
+    "choices": {
+      "A": "F1 + F2 = M*g",
+      "B": "F1*L = m*g*x",
+      "C": "F1 + F2 = (M + m)*g",
+      "D": "F1*x + F2*L = (M + m)*g"
+    },
+    "answer": "C",
+    "difficulty": 6,
+    "explanation": "For an object to be in equilibrium, two conditions must be met: the net force must be zero, and the net torque must be zero. For the net force in the vertical direction, the upward forces (F1 and F2) must balance the downward forces (the weight of the plank, M*g, and the weight of the block, m*g). Therefore, F1 + F2 = M*g + m*g = (M + m)*g. Option D is specifically a torque equation which would only be true if M=0 and if the pivot was at the left end. Options A and B are incomplete or incorrect."
+  },
+  {
+    "id": "AP_Physics_1_233",
+    "question": "Two resistors, R1 and R2, are connected in series to a voltage source. If R1 > R2, which statement is true about the current and voltage across each resistor?",
+    "choices": {
+      "A": "The current through R1 is greater than the current through R2, and the voltage across R1 is greater than the voltage across R2.",
+      "B": "The current through R1 is less than the current through R2, and the voltage across R1 is less than the voltage across R2.",
+      "C": "The current through R1 is equal to the current through R2, and the voltage across R1 is greater than the voltage across R2.",
+      "D": "The current through R1 is equal to the current through R2, and the voltage across R1 is less than the voltage across R2."
+    },
+    "answer": "C",
+    "difficulty": 5,
+    "explanation": "In a series circuit, the current is the same through all components. Therefore, the current through R1 is equal to the current through R2. According to Ohm's Law (V = I*R), since the current (I) is the same for both resistors, the voltage drop (V) across each resistor is directly proportional to its resistance (R). Since R1 > R2, the voltage across R1 (V1 = I*R1) must be greater than the voltage across R2 (V2 = I*R2)."
+  },
+  {
+    "id": "AP_Physics_1_234",
+    "question": "A block of mass M is released from rest at the top of a frictionless inclined plane of height H and angle theta. When the block slides down the incline and reaches the bottom, what is its speed?",
+    "choices": {
+      "A": "sqrt(2gH)",
+      "B": "sqrt(2gH / sin(theta))",
+      "C": "2gH",
+      "D": "gH / 2"
+    },
+    "answer": "A",
+    "difficulty": 4,
+    "explanation": "According to the principle of conservation of mechanical energy, the initial potential energy at the top of the incline is converted into kinetic energy at the bottom. Initial potential energy PE_initial = MgH. Final kinetic energy KE_final = 0.5 * M * v^2. Since the plane is frictionless, there is no energy loss due to friction. So, PE_initial = KE_final. MgH = 0.5 * M * v^2. Solving for v, we get v = sqrt(2gH)."
+  },
+  {
+    "id": "AP_Physics_1_235",
+    "question": "A horizontal force F is applied to a block of mass m, initially at rest on a frictionless horizontal surface. The force causes the block to accelerate. If the same force F were applied to a block of mass 2m, what would be the resulting acceleration compared to the first block's acceleration?",
+    "choices": {
+      "A": "Half as much",
+      "B": "The same",
+      "C": "Twice as much",
+      "D": "Four times as much"
+    },
+    "answer": "A",
+    "difficulty": 3,
+    "explanation": "According to Newton's Second Law, F = ma, where F is the applied force, m is the mass, and a is the acceleration. For the first block, a_1 = F/m. For the second block, the mass is 2m, so a_2 = F/(2m). Comparing a_2 to a_1, we see that a_2 = (1/2) * (F/m) = (1/2) * a_1. Therefore, the acceleration would be half as much."
+  },
+  {
+    "id": "AP_Physics_1_236",
+    "question": "A solid disk and a hollow hoop of the same mass and radius are released from rest at the top of an incline. Both roll without slipping. Which object reaches the bottom of the incline first?",
+    "choices": {
+      "A": "The solid disk",
+      "B": "The hollow hoop",
+      "C": "They reach at the same time",
+      "D": "It depends on the angle of the incline"
+    },
+    "answer": "A",
+    "difficulty": 6,
+    "explanation": "When an object rolls without slipping down an incline, its gravitational potential energy is converted into both translational kinetic energy and rotational kinetic energy. The rotational inertia (I) impacts how energy is distributed. For a solid disk, I = 0.5 * m * R^2. For a hollow hoop, I = m * R^2. Since the hollow hoop has a greater rotational inertia, more of its potential energy is converted into rotational kinetic energy, leaving less for translational kinetic energy. Thus, the solid disk will have a greater translational speed and reach the bottom first."
+  },
+  {
+    "id": "AP_Physics_1_237",
+    "question": "A spring with spring constant k is compressed by a distance x. If the spring is compressed by a distance 2x, how does the stored potential energy change?",
+    "choices": {
+      "A": "It doubles",
+      "B": "It quadruples",
+      "C": "It halves",
+      "D": "It remains the same"
+    },
+    "answer": "B",
+    "difficulty": 4,
+    "explanation": "The potential energy stored in a spring is given by the formula PE_s = 0.5 * k * x^2. If the compression distance is 2x, the new potential energy will be PE_s' = 0.5 * k * (2x)^2 = 0.5 * k * 4x^2 = 4 * (0.5 * k * x^2) = 4 * PE_s. Therefore, the stored potential energy quadruples."
+  },
+  {
+    "id": "AP_Physics_1_238",
+    "question": "A car travels in a circle at a constant speed. Which of the following statements about its motion is true?",
+    "choices": {
+      "A": "Its velocity is constant.",
+      "B": "Its acceleration is zero.",
+      "C": "There is a net force directed toward the center of the circle.",
+      "D": "Its momentum is constant."
+    },
+    "answer": "C",
+    "difficulty": 5,
+    "explanation": "Even though the speed is constant, the direction of the car's velocity vector is continuously changing as it moves in a circle. Therefore, its velocity is not constant, and it is accelerating. This acceleration, known as centripetal acceleration, is directed toward the center of the circle. According to Newton's Second Law (F_net = ma), if there is an acceleration, there must be a net force in the same direction as the acceleration. Thus, there is a net force directed toward the center of the circle. Momentum (p = mv) is also not constant because velocity is not constant."
+  },
+  {
+    "id": "AP_Physics_1_239",
+    "question": "A pendulum oscillates with a period T. If the length of the pendulum is quadrupled, what will be the new period, assuming small angles of oscillation?",
+    "choices": {
+      "A": "T / 2",
+      "B": "T * sqrt(2)",
+      "C": "2T",
+      "D": "4T"
+    },
+    "answer": "C",
+    "difficulty": 5,
+    "explanation": "The period of a simple pendulum is given by the formula T = 2 * pi * sqrt(L/g), where L is the length of the pendulum and g is the acceleration due to gravity. If the length L is quadrupled to 4L, the new period T' will be T' = 2 * pi * sqrt((4L)/g) = 2 * pi * sqrt(4) * sqrt(L/g) = 2 * (2 * pi * sqrt(L/g)) = 2T. Thus, the new period will be twice the original period."
+  },
+  {
+    "id": "AP_Physics_1_240",
+    "question": "Two objects, masses m and 2m, are separated by a distance r. The gravitational force between them is F. If the distance between them is doubled to 2r, what is the new gravitational force in terms of F?",
+    "choices": {
+      "A": "F / 4",
+      "B": "F / 2",
+      "C": "2F",
+      "D": "4F"
+    },
+    "answer": "A",
+    "difficulty": 4,
+    "explanation": "Newton's Law of Universal Gravitation states that the gravitational force F between two masses m1 and m2 separated by a distance r is F = G * (m1 * m2) / r^2. Initially, F = G * (m * 2m) / r^2. If the distance is doubled to 2r, the new force F' will be F' = G * (m * 2m) / (2r)^2 = G * (m * 2m) / (4r^2) = (1/4) * [G * (m * 2m) / r^2]. Therefore, F' = F / 4."
+  },
+  {
+    "id": "AP_Physics_1_241",
+    "question": "A block of mass M is sliding down a frictionless incline that makes an angle theta with the horizontal. If the block is released from rest, what is its acceleration down the incline?",
+    "choices": {
+      "A": "g * sin(theta)",
+      "B": "g * cos(theta)",
+      "C": "g",
+      "D": "g / sin(theta)"
+    },
+    "answer": "A",
+    "difficulty": 4,
+    "explanation": "The gravitational force acting on the block is Mg. The component of this force parallel to the incline is Mg * sin(theta). Since the incline is frictionless, this is the net force causing acceleration. Using Newton's second law, F_net = ma, so Mg * sin(theta) = Ma. Dividing by M gives a = g * sin(theta)."
+  },
+  {
+    "id": "AP_Physics_1_242",
+    "question": "A car travels at a constant speed of 20 m/s for 10 seconds. It then decelerates uniformly to a stop in 5 seconds. What is the total distance traveled by the car?",
+    "choices": {
+      "A": "200 m",
+      "B": "250 m",
+      "C": "300 m",
+      "D": "350 m"
+    },
+    "answer": "B",
+    "difficulty": 5,
+    "explanation": "During the first 10 seconds, the car travels a distance d1 = v*t = (20 m/s) * (10 s) = 200 m. During the deceleration phase, the initial velocity is 20 m/s, final velocity is 0 m/s, and time is 5 s. The average velocity during this phase is (20 + 0)/2 = 10 m/s. The distance traveled is d2 = average_v * t = (10 m/s) * (5 s) = 50 m. The total distance is d1 + d2 = 200 m + 50 m = 250 m."
+  },
+  {
+    "id": "AP_Physics_1_243",
+    "question": "Two objects, one with mass 2m and the other with mass m, are dropped from the same height in a vacuum. Which of the following statements is true regarding their fall?",
+    "choices": {
+      "A": "The object with mass 2m hits the ground first because it has greater inertia.",
+      "B": "The object with mass 2m experiences a greater gravitational force, but they hit the ground at the same time.",
+      "C": "The object with mass m experiences a smaller gravitational force and hits the ground after the object with mass 2m.",
+      "D": "Both objects experience the same gravitational force and hit the ground at the same time."
+    },
+    "answer": "B",
+    "difficulty": 3,
+    "explanation": "In a vacuum, all objects fall with the same acceleration due to gravity, g, regardless of their mass. Therefore, they will hit the ground at the same time. However, the gravitational force (F = mg) is directly proportional to mass, so the object with mass 2m experiences a gravitational force of 2mg, while the object with mass m experiences a force of mg. So, the 2m object experiences a greater gravitational force."
+  },
+  {
+    "id": "AP_Physics_1_244",
+    "question": "A 0.5 kg ball is thrown vertically upward with an initial speed of 10 m/s. Neglecting air resistance, what is the maximum height the ball reaches?",
+    "choices": {
+      "A": "2.5 m",
+      "B": "5.0 m",
+      "C": "10.0 m",
+      "D": "20.0 m"
+    },
+    "answer": "B",
+    "difficulty": 5,
+    "explanation": "Using the kinematic equation v_f^2 = v_i^2 + 2ad, where v_f = 0 m/s (at max height), v_i = 10 m/s, and a = -9.8 m/s^2 (taking upward as positive). 0^2 = (10)^2 + 2*(-9.8)*d. 0 = 100 - 19.6d. 19.6d = 100. d = 100 / 19.6 approximately 5.1 m. Option B (5.0 m) is the closest and expected answer if g is approximated as 10 m/s^2. If g = 10 m/s^2, then d = 100 / 20 = 5.0 m."
+  },
+  {
+    "id": "AP_Physics_1_245",
+    "question": "A force F is applied horizontally to a block of mass m resting on a rough horizontal surface. If the coefficient of static friction is mu_s, what is the minimum force F required to start the block moving?",
+    "choices": {
+      "A": "m * g",
+      "B": "F_normal",
+      "C": "mu_s * m * g",
+      "D": "mu_s / (m * g)"
+    },
+    "answer": "C",
+    "difficulty": 4,
+    "explanation": "The maximum static friction force is given by f_s,max = mu_s * F_normal. On a horizontal surface, the normal force (F_normal) is equal to the gravitational force (m * g). Therefore, the minimum force F required to start the block moving, which must overcome this maximum static friction, is F = mu_s * m * g."
+  },
+  {
+    "id": "AP_Physics_1_246",
+    "question": "A student pushes a box across a floor with a constant force F. If the box moves at a constant velocity, what can be concluded about the net force acting on the box?",
+    "choices": {
+      "A": "The net force is in the direction of motion.",
+      "B": "The net force is opposite to the direction of motion.",
+      "C": "The net force is zero.",
+      "D": "The net force is increasing."
+    },
+    "answer": "C",
+    "difficulty": 3,
+    "explanation": "If an object moves at a constant velocity, its acceleration is zero. According to Newton's Second Law (F_net = ma), if acceleration (a) is zero, then the net force (F_net) acting on the object must also be zero."
+  },
+  {
+    "id": "AP_Physics_1_247",
+    "question": "A 10 kg mass is attached to a string and swung in a horizontal circle of radius 2 m at a constant speed of 5 m/s. What is the tension in the string?",
+    "choices": {
+      "A": "25 N",
+      "B": "50 N",
+      "C": "125 N",
+      "D": "250 N"
+    },
+    "answer": "C",
+    "difficulty": 6,
+    "explanation": "For an object moving in a horizontal circle, the tension in the string provides the centripetal force. The formula for centripetal force is F_c = m * v^2 / r. Plugging in the values: F_c = (10 kg) * (5 m/s)^2 / (2 m) = 10 * 25 / 2 = 250 / 2 = 125 N. Therefore, the tension in the string is 125 N."
+  },
+  {
+    "id": "AP_Physics_1_248",
+    "question": "A block slides down a frictionless ramp and then continues on a horizontal surface, also frictionless. Point A is at the top of the ramp, point B is at the bottom of the ramp, and point C is on the horizontal surface after the ramp. How does the total mechanical energy of the block compare at these three points?",
+    "choices": {
+      "A": "E_A > E_B > E_C",
+      "B": "E_A < E_B < E_C",
+      "C": "E_A = E_B = E_C",
+      "D": "E_A = E_B > E_C"
+    },
+    "answer": "C",
+    "difficulty": 5,
+    "explanation": "Since both the ramp and the horizontal surface are frictionless, there are no non-conservative forces (like friction) doing work on the block. In the absence of non-conservative forces, the total mechanical energy (potential energy + kinetic energy) of the system remains conserved. Therefore, E_A = E_B = E_C."
+  },
+  {
+    "id": "AP_Physics_1_249",
+    "question": "A spring with spring constant k is compressed by a distance x. What is the elastic potential energy stored in the spring?",
+    "choices": {
+      "A": "k * x",
+      "B": "1/2 * k * x",
+      "C": "k * x^2",
+      "D": "1/2 * k * x^2"
+    },
+    "answer": "D",
+    "difficulty": 3,
+    "explanation": "The formula for the elastic potential energy stored in a spring that is compressed or stretched by a distance x from its equilibrium position, with a spring constant k, is PE_elastic = 1/2 * k * x^2."
+  },
+  {
+    "id": "AP_Physics_1_250",
+    "question": "A car accelerates from rest to a speed v in time t. What is the average power delivered by the engine if the mass of the car is m?",
+    "choices": {
+      "A": "m * v / t",
+      "B": "m * v^2 / t",
+      "C": "1/2 * m * v^2 / t",
+      "D": "m * v^2"
+    },
+    "answer": "C",
+    "difficulty": 7,
+    "explanation": "Power is the rate at which work is done, or the rate of change of energy. The work done by the engine increases the kinetic energy of the car from zero to 1/2 * m * v^2. Since Work = Change in Kinetic Energy, Work = 1/2 * m * v^2 - 0 = 1/2 * m * v^2. Average power is Work / time. So, P_avg = (1/2 * m * v^2) / t."
+  },
+  {
+    "id": "AP_Physics_1_251",
+    "question": "An object of mass m has momentum p. If its mass is doubled and its velocity is halved, what is its new momentum?",
+    "choices": {
+      "A": "p/2",
+      "B": "p",
+      "C": "2p",
+      "D": "4p"
+    },
+    "answer": "B",
+    "difficulty": 4,
+    "explanation": "Momentum is defined as p = m * v. If the mass is doubled to 2m and the velocity is halved to v/2, the new momentum p' = (2m) * (v/2) = m * v. This is the same as the original momentum p. So, the new momentum is p."
+  },
+  {
+    "id": "AP_Physics_1_252",
+    "question": "A billiard ball of mass m moving with speed v collides head-on elastically with an identical stationary billiard ball. After the collision, what are the speeds of the two balls?",
+    "choices": {
+      "A": "Both balls move away with speed v/2.",
+      "B": "The first ball stops, and the second ball moves with speed v.",
+      "C": "The first ball moves back with speed v, and the second ball remains stationary.",
+      "D": "Both balls move with speed v."
+    },
+    "answer": "B",
+    "difficulty": 6,
+    "explanation": "For an elastic head-on collision between two objects of equal mass, where one is initially stationary, the objects exchange velocities. The first ball (m1) which was moving with speed v will come to a stop (v1_final = 0), and the second ball (m2) which was stationary will move with the initial speed of the first ball (v2_final = v). This is a classic result derived from conservation of momentum and conservation of kinetic energy."
+  },
+  {
+    "id": "AP_Physics_1_253",
+    "question": "A playground merry-go-round has a rotational inertia I and is rotating with an angular speed omega. A child of mass m jumps onto the merry-go-round at its edge, a distance R from the center. What happens to the angular speed of the merry-go-round system?",
+    "choices": {
+      "A": "It increases.",
+      "B": "It decreases.",
+      "C": "It stays the same.",
+      "D": "It depends on the child's speed before jumping on."
+    },
+    "answer": "B",
+    "difficulty": 6,
+    "explanation": "Since there are no external torques acting on the merry-go-round and child system, angular momentum is conserved. Initially, the angular momentum is L_initial = I_merry-go-round * omega. When the child jumps on, the total rotational inertia of the system increases to I_final = I_merry-go-round + m * R^2. For angular momentum to be conserved (L_initial = L_final), the final angular speed omega_final must decrease: I_initial * omega_initial = I_final * omega_final. Since I_final > I_initial, then omega_final < omega_initial."
+  },
+  {
+    "id": "AP_Physics_1_254",
+    "question": "A uniform rod of length L and mass M is pivoted at one end. What is the rotational inertia of the rod about this pivot?",
+    "choices": {
+      "A": "M * L^2",
+      "B": "1/2 * M * L^2",
+      "C": "1/3 * M * L^2",
+      "D": "1/12 * M * L^2"
+    },
+    "answer": "C",
+    "difficulty": 7,
+    "explanation": "For a uniform rod of length L and mass M, the rotational inertia about an axis through its center is (1/12) * M * L^2. Using the parallel-axis theorem, if the axis is at one end (a distance L/2 from the center), the rotational inertia is I_pivot = I_center_of_mass + M * d^2, where d = L/2. So, I_pivot = (1/12) * M * L^2 + M * (L/2)^2 = (1/12) * M * L^2 + (1/4) * M * L^2 = (1/12 + 3/12) * M * L^2 = (4/12) * M * L^2 = (1/3) * M * L^2."
+  },
+  {
+    "id": "AP_Physics_1_255",
+    "question": "A sinusoidal wave travels on a string. Which of the following quantities is transferred by the wave in the direction of propagation?",
+    "choices": {
+      "A": "Mass only",
+      "B": "Energy and mass",
+      "C": "Energy only",
+      "D": "Neither energy nor mass"
+    },
+    "answer": "C",
+    "difficulty": 4,
+    "explanation": "Waves are disturbances that transfer energy without transferring matter. The particles of the string oscillate around their equilibrium positions, but they do not move along with the wave; instead, the energy of the disturbance propagates through the medium."
+  },
+  {
+    "id": "AP_Physics_1_256",
+    "question": "A block of mass m is suspended from a string and oscillates as a pendulum. If the length of the string is L, what is the period of oscillation for small angles?",
+    "choices": {
+      "A": "T = 2 * pi * sqrt(m/g)",
+      "B": "T = 2 * pi * sqrt(L/m)",
+      "C": "T = 2 * pi * sqrt(g/L)",
+      "D": "T = 2 * pi * sqrt(L/g)"
+    },
+    "answer": "D",
+    "difficulty": 4,
+    "explanation": "For a simple pendulum oscillating with small angles, the period of oscillation (T) is given by the formula T = 2 * pi * sqrt(L/g), where L is the length of the pendulum and g is the acceleration due to gravity. The mass of the bob does not affect the period for a simple pendulum."
+  },
+  {
+    "id": "AP_Physics_1_257",
+    "question": "A planet orbits a star in an elliptical path. The planet's speed is greatest when it is at which point in its orbit?",
+    "choices": {
+      "A": "When it is farthest from the star (aphelion).",
+      "B": "When it is closest to the star (perihelion).",
+      "C": "When it is halfway between aphelion and perihelion.",
+      "D": "Its speed is constant throughout its orbit."
+    },
+    "answer": "B",
+    "difficulty": 5,
+    "explanation": "According to Kepler's second law, a line joining a planet and the Sun sweeps out equal areas in equal intervals of time. This implies that when the planet is closer to the star, it must move faster to sweep out the same area in the same amount of time. This is also consistent with the conservation of angular momentum: as the planet's distance r decreases, its tangential velocity v must increase to keep L = mvr constant."
+  },
+  {
+    "id": "AP_Physics_1_258",
+    "question": "Two parallel resistors, R1 and R2, are connected to a voltage source. If R1 is twice as large as R2 (R1 = 2*R2), what is the relationship between the currents flowing through them?",
+    "choices": {
+      "A": "I1 = 2 * I2",
+      "B": "I2 = 2 * I1",
+      "C": "I1 = I2",
+      "D": "I1 = I2 / 2"
+    },
+    "answer": "B",
+    "difficulty": 5,
+    "explanation": "For resistors connected in parallel, the voltage drop across each resistor is the same. According to Ohm's Law (V = I*R), if V is constant, then I = V/R. If R1 = 2*R2, then I1 = V / R1 = V / (2*R2) = (1/2) * (V / R2). Since I2 = V / R2, then I1 = (1/2) * I2, or equivalently, I2 = 2 * I1."
+  },
+  {
+    "id": "AP_Physics_1_259",
+    "question": "A resistor of resistance R is connected to a battery with voltage V. How much power is dissipated by the resistor?",
+    "choices": {
+      "A": "P = V * R",
+      "B": "P = V / R",
+      "C": "P = V^2 * R",
+      "D": "P = V^2 / R"
+    },
+    "answer": "D",
+    "difficulty": 4,
+    "explanation": "The power dissipated in a resistor can be expressed in several ways. One common formula is P = V*I. Using Ohm's Law (V = I*R), we can substitute I = V/R into the power equation: P = V * (V/R) = V^2 / R."
+  },
+  {
+    "id": "AP_Physics_1_260",
+    "question": "Which of the following statements about standing waves on a string fixed at both ends is FALSE?",
+    "choices": {
+      "A": "Nodes are points where the amplitude of oscillation is always zero.",
+      "B": "Antinodes are points where the amplitude of oscillation is maximum.",
+      "C": "For a given tension and mass per unit length, only certain discrete frequencies can form standing waves.",
+      "D": "The wavelength of the fundamental (first harmonic) is equal to the length of the string."
+    },
+    "answer": "D",
+    "difficulty": 6,
+    "explanation": "For a string fixed at both ends, the fundamental (first harmonic) standing wave has one antinode in the middle and nodes at both ends. This means half a wavelength fits on the string. Therefore, L = lambda/2, or lambda = 2*L. So, the wavelength of the fundamental is twice the length of the string, not equal to the length of the string."
+  },
+  {
+    "id": "AP_Physics_1_261",
+    "question": "A block of mass M is released from rest at the top of a frictionless inclined plane of height H and angle theta. Which of the following expressions best represents the speed of the block at the bottom of the incline?",
+    "choices": {
+      "A": "sqrt(2gH)",
+      "B": "sqrt(2gH sin(theta))",
+      "C": "2gH",
+      "D": "gH / sin(theta)"
+    },
+    "answer": "A",
+    "difficulty": 4,
+    "explanation": "According to the principle of conservation of mechanical energy, the initial potential energy (M g H) is converted entirely into kinetic energy (1/2 M v^2) at the bottom of the incline, since the plane is frictionless. Setting these equal: M g H = 1/2 M v^2. Solving for v, we get v = sqrt(2gH). The angle theta is irrelevant here because the height H already accounts for the vertical drop."
+  },
+  {
+    "id": "AP_Physics_1_262",
+    "question": "An object starts from rest and accelerates uniformly. If its final speed after traveling a distance d is v, what is its speed after traveling a distance d/4?",
+    "choices": {
+      "A": "v/4",
+      "B": "v/2",
+      "C": "v / sqrt(2)",
+      "D": "v / sqrt(8)"
+    },
+    "answer": "B",
+    "difficulty": 6,
+    "explanation": "For an object starting from rest and accelerating uniformly, the kinematic equation v^2 = v_0^2 + 2ad simplifies to v^2 = 2ad. This means v is proportional to sqrt(d). So, if the distance is d/4, the speed will be proportional to sqrt(d/4) = sqrt(d)/2. Therefore, if the speed at distance d is v, the speed at distance d/4 will be v/2."
+  },
+  {
+    "id": "AP_Physics_1_263",
+    "question": "A stone is thrown horizontally from the top of a cliff. Which of the following statements is true regarding its motion in the absence of air resistance?",
+    "choices": {
+      "A": "Its horizontal velocity decreases as it falls.",
+      "B": "Its vertical acceleration increases as it falls.",
+      "C": "Its horizontal acceleration is zero.",
+      "D": "Its speed is constant throughout its flight."
+    },
+    "answer": "C",
+    "difficulty": 3,
+    "explanation": "In projectile motion, in the absence of air resistance, the only force acting on the object is gravity, which acts vertically downwards. Therefore, there is no horizontal force, and thus no horizontal acceleration. The horizontal velocity remains constant. The vertical acceleration is constant and equal to g (approximately 9.8 m/s^2) downwards. The speed changes due to the increasing vertical velocity."
+  },
+  {
+    "id": "AP_Physics_1_264",
+    "question": "Two objects, object A with mass M and object B with mass 2M, are connected by a light string that passes over a frictionless pulley. If the system is released from rest, what is the magnitude of the acceleration of object A?",
+    "choices": {
+      "A": "g/3",
+      "B": "g/2",
+      "C": "2g/3",
+      "D": "g"
+    },
+    "answer": "A",
+    "difficulty": 6,
+    "explanation": "This is an Atwood machine problem. Let T be the tension in the string. For object A (mass M), the net force is T - M g = M a. For object B (mass 2M), the net force is 2M g - T = 2M a (assuming object B accelerates downwards). Adding the two equations: (T - M g) + (2M g - T) = M a + 2M a. This simplifies to M g = 3M a. Solving for a, we get a = M g / (3M) = g/3."
+  },
+  {
+    "id": "AP_Physics_1_265",
+    "question": "A force F is applied horizontally to a block of mass m placed on a horizontal surface with a coefficient of kinetic friction mu_k. If the block moves with a constant velocity, which of the following is true?",
+    "choices": {
+      "A": "F > mu_k * m * g",
+      "B": "F < mu_k * m * g",
+      "C": "F = mu_k * m * g",
+      "D": "F = m * g"
+    },
+    "answer": "C",
+    "difficulty": 4,
+    "explanation": "If the block moves with a constant velocity, its acceleration is zero. According to Newton's second law, the net force on the block must be zero. The applied horizontal force F is balanced by the kinetic friction force, f_k. The kinetic friction force is given by f_k = mu_k * N, where N is the normal force. On a horizontal surface, N = m * g. Therefore, F - f_k = 0 implies F = f_k, so F = mu_k * m * g."
+  },
+  {
+    "id": "AP_Physics_1_266",
+    "question": "Two identical spheres collide head-on. The first sphere is moving with speed v, and the second sphere is at rest. If the collision is perfectly elastic, what are the speeds of the two spheres after the collision?",
+    "choices": {
+      "A": "First sphere: v, Second sphere: 0",
+      "B": "First sphere: 0, Second sphere: v",
+      "C": "First sphere: v/2, Second sphere: v/2",
+      "D": "First sphere: -v, Second sphere: 2v"
+    },
+    "answer": "B",
+    "difficulty": 5,
+    "explanation": "In a perfectly elastic head-on collision between two objects of equal mass where one is initially at rest, the objects exchange velocities. The first sphere (initially moving with speed v) will come to rest (speed 0), and the second sphere (initially at rest) will move with the initial speed of the first sphere (speed v)."
+  },
+  {
+    "id": "AP_Physics_1_267",
+    "question": "A car travels at a constant speed around a circular track. Which of the following statements about its motion is true?",
+    "choices": {
+      "A": "Its velocity is constant.",
+      "B": "Its acceleration is zero.",
+      "C": "Its acceleration is directed towards the center of the circle.",
+      "D": "The net force on the car is zero."
+    },
+    "answer": "C",
+    "difficulty": 3,
+    "explanation": "Even though the car's speed is constant, its direction of motion is continuously changing as it moves in a circle. Therefore, its velocity is not constant. A change in velocity means there is an acceleration. For uniform circular motion, this acceleration (centripetal acceleration) is always directed towards the center of the circle. Since there's an acceleration, there must be a net force (centripetal force) acting on the car, so the net force is not zero."
+  },
+  {
+    "id": "AP_Physics_1_268",
+    "question": "A block is pulled across a rough horizontal surface by a force F at an angle theta above the horizontal. The normal force acting on the block is:",
+    "choices": {
+      "A": "m*g",
+      "B": "m*g + F sin(theta)",
+      "C": "m*g - F sin(theta)",
+      "D": "m*g - F cos(theta)"
+    },
+    "answer": "C",
+    "difficulty": 5,
+    "explanation": "In the vertical direction, the forces are the gravitational force (m*g) acting downwards, the normal force (N) acting upwards, and the vertical component of the applied force (F sin(theta)) acting upwards. Since there is no vertical acceleration, the net force in the vertical direction is zero. So, N + F sin(theta) - m*g = 0. Solving for N, we get N = m*g - F sin(theta)."
+  },
+  {
+    "id": "AP_Physics_1_269",
+    "question": "A planet orbits a star in an elliptical path. The planet's speed is greatest when it is:",
+    "choices": {
+      "A": "Farthest from the star.",
+      "B": "Closest to the star.",
+      "C": "At the midpoint between its closest and farthest points.",
+      "D": "Constant throughout its orbit."
+    },
+    "answer": "B",
+    "difficulty": 4,
+    "explanation": "According to Kepler's second law, a line segment joining a planet and the Sun sweeps out equal areas during equal intervals of time. This implies that the planet moves faster when it is closer to the star (perihelion) and slower when it is farther away (aphelion) to cover larger distances in the same amount of time when closer to the star."
+  },
+  {
+    "id": "AP_Physics_1_270",
+    "question": "Two objects, P and Q, have the same kinetic energy. If the mass of P is twice the mass of Q, what is the ratio of the magnitude of their momenta (p_P / p_Q)?",
+    "choices": {
+      "A": "1/2",
+      "B": "1",
+      "C": "sqrt(2)",
+      "D": "2"
+    },
+    "answer": "C",
+    "difficulty": 7,
+    "explanation": "Kinetic energy (K) is given by K = 1/2 m v^2. Momentum (p) is given by p = m v. We can relate them: p^2 = (m v)^2 = m^2 v^2 = 2m (1/2 m v^2) = 2m K. So, p = sqrt(2mK). Given K_P = K_Q and m_P = 2m_Q. Then p_P = sqrt(2 m_P K_P) = sqrt(2 (2m_Q) K_Q) = sqrt(4 m_Q K_Q) = 2 * sqrt(m_Q K_Q). And p_Q = sqrt(2 m_Q K_Q). The ratio p_P / p_Q = (2 * sqrt(m_Q K_Q)) / (sqrt(2 m_Q K_Q)) = 2 / sqrt(2) = sqrt(2)."
+  },
+  {
+    "id": "AP_Physics_1_271",
+    "question": "A simple pendulum of length L swings with a small amplitude. If the length of the pendulum is doubled, what happens to its period of oscillation?",
+    "choices": {
+      "A": "It doubles.",
+      "B": "It halves.",
+      "C": "It increases by a factor of sqrt(2).",
+      "D": "It decreases by a factor of sqrt(2)."
+    },
+    "answer": "C",
+    "difficulty": 5,
+    "explanation": "The period of a simple pendulum (for small angles) is given by T = 2 * pi * sqrt(L/g). If the length L is doubled to 2L, the new period T' will be T' = 2 * pi * sqrt(2L/g) = sqrt(2) * (2 * pi * sqrt(L/g)) = sqrt(2) * T. So, the period increases by a factor of sqrt(2)."
+  },
+  {
+    "id": "AP_Physics_1_272",
+    "question": "A cart is pulled along a frictionless track by a string that passes over a pulley and is attached to a hanging mass. If the mass of the cart is M and the hanging mass is m, what is the tension in the string?",
+    "choices": {
+      "A": "m*g",
+      "B": "M*g",
+      "C": "(M*m*g) / (M + m)",
+      "D": "(M*g) / (M + m)"
+    },
+    "answer": "C",
+    "difficulty": 7,
+    "explanation": "Let 'a' be the acceleration of the system. For the hanging mass (m), the net force is m*g - T = m*a. For the cart (M), the net force is T = M*a. From the second equation, a = T/M. Substitute this into the first equation: m*g - T = m*(T/M). Multiply by M: M*m*g - M*T = m*T. Rearrange to solve for T: M*m*g = M*T + m*T = T*(M + m). Therefore, T = (M*m*g) / (M + m)."
+  },
+  {
+    "id": "AP_Physics_1_273",
+    "question": "A uniform plank of length L and mass M rests on two supports. One support is at the left end of the plank, and the other is at a distance L/4 from the right end. If a person of mass m walks from the left end towards the right, how far from the left end can the person walk before the plank tips?",
+    "choices": {
+      "A": "L/4",
+      "B": "L/2",
+      "C": "3L/4",
+      "D": "L"
+    },
+    "answer": "C",
+    "difficulty": 8,
+    "explanation": "When the plank is about to tip, the normal force from the left support becomes zero. The pivot point for tipping will be the right support, which is at position L - L/4 = 3L/4 from the left end. Set the sum of torques about this pivot point to zero. The plank's weight (M*g) acts at its center, L/2 from the left end. The person's weight (m*g) acts at position x from the left end. Torque due to M*g: M*g * (3L/4 - L/2) = M*g * (L/4) (clockwise). Torque due to m*g: m*g * (x - 3L/4) (counter-clockwise, to cause tipping). For the plank not to tip, the clockwise torque must be greater than or equal to the counter-clockwise torque. However, when it's about to tip, the left support loses contact, meaning the clockwise stabilizing torque from the plank's weight must balance the counter-clockwise torque from the person's weight. The plank's weight provides a torque of M*g*(L/4) about the right support (3L/4). The person's weight provides a torque of m*g*(x - 3L/4) (counter-clockwise). This reasoning needs re-evaluation. Instead, consider the critical point being when the left support reaction force goes to zero. The sum of torques about the right support (at 3L/4) must be zero. The weight of the plank M*g acts at L/2. The person of mass 'm' is at position 'x'. Torque from plank: M*g * (3L/4 - L/2) = M*g * (L/4). This torque tends to rotate the plank clockwise (pushing down on the left from the pivot). Torque from person: m*g * (x - 3L/4). This torque tends to rotate the plank counter-clockwise (pushing down on the right from the pivot, causing the left end to lift). For tipping, the counter-clockwise torque from the person must cause the plank to lift off the left support. No, this is incorrect. The point of tipping occurs when the normal force at the *left* support becomes zero. The pivot point is then the *right* support. Let's sum torques about the right support at x_R = 3L/4. The weight of the plank M*g acts at L/2. Its torque is M*g * (3L/4 - L/2) = M*g * (L/4) (this torque acts to lift the right side or push down the left, stabilizing the left support). The person's weight m*g acts at 'x'. Its torque is m*g * (x - 3L/4). This torque acts to lift the left side. For the plank to tip, these must be balanced. M*g * (L/4) = m*g * (x - 3L/4). Solving for x: M*L/4 = m*x - m*3L/4. We need to find the maximum x. The question implies the setup allows enough weight from the person to tip the plank. If the person walks to the right, the normal force on the left decreases. The tipping occurs when the normal force at the left support becomes zero. The pivot point for this is the right support (located at 3L/4). The torque due to the plank's weight (M*g) acting at the center (L/2) creates a clockwise torque about the right support: tau_plank = M*g * (3L/4 - L/2) = M*g * (L/4). This torque tends to keep the left end down. The torque due to the person's weight (m*g) at position x creates a counter-clockwise torque about the right support: tau_person = m*g * (x - 3L/4). For the plank to be on the verge of tipping, these torques must balance: m*g * (x - 3L/4) = M*g * (L/4). We need to assume the mass of the person is sufficient. The options are distances along the plank. What if the person was at the extreme right end? x=L. Then m*g*(L - 3L/4) = m*g*(L/4). So, if m=M, the plank would tip by the time the person reaches the end L. The question implies finding a specific point x. Assuming m and M are such that tipping occurs.  No, the most straightforward approach is to realize that the maximum x for the person before tipping is the pivot point itself, or slightly beyond it. The question asks 'how far from the left end can the person walk before the plank tips'. Tipping occurs when the center of mass of the system (plank + person) passes over the support point. The right support is at 3L/4 from the left end. If the person walks past this point, their weight creates a torque that lifts the left side. So, the maximum distance the person can walk from the left end without tipping is essentially the position of the support that acts as a pivot when the other support loses contact. In this case, it's the right support. So x = 3L/4. This happens when the person's position aligns with the secondary support such that any further movement makes the system unstable. This is assuming the person's mass is significant compared to the plank. When the person reaches x = 3L/4, their weight passes through the right support, and their torque about this support becomes zero. If they move further right, their torque will cause the plank to tip over the right support. Thus, the maximum distance is 3L/4."
+  },
+  {
+    "id": "AP_Physics_1_274",
+    "question": "A satellite orbits Earth in a circular path at a constant speed. The work done by Earth's gravitational force on the satellite during one complete orbit is:",
+    "choices": {
+      "A": "Positive",
+      "B": "Negative",
+      "C": "Zero",
+      "D": "Depends on the mass of the satellite"
+    },
+    "answer": "C",
+    "difficulty": 4,
+    "explanation": "Work done by a force is given by W = F * d * cos(theta), where theta is the angle between the force and the displacement. For a satellite in a circular orbit, Earth's gravitational force (the centripetal force) is always directed towards the center of the Earth, perpendicular to the satellite's instantaneous displacement (which is tangential to the orbit). Since theta = 90 degrees, cos(90) = 0, and the work done by the gravitational force is zero."
+  },
+  {
+    "id": "AP_Physics_1_275",
+    "question": "A current-carrying wire is placed in a uniform magnetic field. The wire experiences a net magnetic force. For the force on the wire to be zero, which of the following conditions must be met?",
+    "choices": {
+      "A": "The wire must be parallel to the magnetic field.",
+      "B": "The wire must be perpendicular to the magnetic field.",
+      "C": "The current in the wire must be alternating.",
+      "D": "The magnetic field must be non-uniform."
+    },
+    "answer": "A",
+    "difficulty": 4,
+    "explanation": "The magnetic force on a current-carrying wire is given by F = I L B sin(theta), where I is the current, L is the length of the wire, B is the magnetic field strength, and theta is the angle between the direction of the current and the magnetic field. For the force F to be zero, sin(theta) must be zero. This occurs when theta = 0 degrees or theta = 180 degrees, meaning the wire is parallel or anti-parallel (both considered parallel) to the magnetic field."
+  },
+  {
+    "id": "AP_Physics_1_276",
+    "question": "An ideal gas is contained in a rigid container. If the absolute temperature of the gas is doubled, what happens to the pressure exerted by the gas?",
+    "choices": {
+      "A": "It doubles.",
+      "B": "It halves.",
+      "C": "It remains the same.",
+      "D": "It quadruples."
+    },
+    "answer": "A",
+    "difficulty": 3,
+    "explanation": "For an ideal gas in a rigid container, the volume (V) and the number of moles (n) are constant. According to the ideal gas law, PV = nRT. Since n, R, and V are constant, P is directly proportional to T. So, if the absolute temperature (T) is doubled, the pressure (P) will also double. (P_2 / P_1 = T_2 / T_1 => P_2 = P_1 * (2T_1 / T_1) = 2P_1)."
+  },
+  {
+    "id": "AP_Physics_1_277",
+    "question": "A block of mass m is attached to a spring with spring constant k. The block is pulled from its equilibrium position by a distance A and released from rest. What is the maximum speed of the block during its oscillation?",
+    "choices": {
+      "A": "A * sqrt(k/m)",
+      "B": "A * sqrt(m/k)",
+      "C": "2 * pi * sqrt(m/k)",
+      "D": "k * A / m"
+    },
+    "answer": "A",
+    "difficulty": 6,
+    "explanation": "This is a simple harmonic motion problem. The maximum speed occurs when the block passes through its equilibrium position, where all the initial potential energy stored in the spring (1/2 k A^2) has been converted into kinetic energy (1/2 m v_max^2). Setting these equal: 1/2 k A^2 = 1/2 m v_max^2. Solving for v_max: k A^2 = m v_max^2 => v_max^2 = (k/m) A^2 => v_max = A * sqrt(k/m)."
+  },
+  {
+    "id": "AP_Physics_1_278",
+    "question": "A student measures the time it takes for a ball to fall from a certain height. She uses a stopwatch and conducts multiple trials. Which of the following experimental procedures would most effectively reduce random error in her measurements?",
+    "choices": {
+      "A": "Using a more precise stopwatch.",
+      "B": "Repeating the measurement multiple times and calculating the average.",
+      "C": "Dropping the ball from a greater height.",
+      "D": "Ensuring the ball is dropped from exactly the same height each time."
+    },
+    "answer": "B",
+    "difficulty": 4,
+    "explanation": "Random errors are unpredictable variations in measurements that occur due to factors like human reaction time or fluctuations in environmental conditions. Repeating measurements multiple times and calculating the average helps to minimize the impact of these random fluctuations, as the random errors tend to cancel each other out over many trials. Using a more precise stopwatch (A) would reduce systematic error due to instrumentation, but not necessarily random error from human judgment. Dropping from a greater height (C) would increase the time interval, making timing easier, but doesn't inherently reduce random error in the *act* of timing. Ensuring the same height (D) helps with consistency and reduces systematic error, but not random error in timing."
+  },
+  {
+    "id": "AP_Physics_1_279",
+    "question": "A person stands on a scale in an elevator. The scale reads less than the person's actual weight. Which of the following describes the motion of the elevator?",
+    "choices": {
+      "A": "Moving upward with constant velocity.",
+      "B": "Moving downward with constant velocity.",
+      "C": "Accelerating upward.",
+      "D": "Accelerating downward."
+    },
+    "answer": "D",
+    "difficulty": 5,
+    "explanation": "The reading on the scale corresponds to the normal force (N) exerted by the scale on the person. The person's actual weight is m*g. If the scale reads less than the actual weight (N < m*g), the net force on the person must be downwards. According to Newton's second law (N_net = m*a), this means the person is accelerating downwards. This can happen if the elevator is accelerating downwards while moving down, or slowing down while moving up."
+  },
+  {
+    "id": "AP_Physics_1_280",
+    "question": "A resistor of resistance R is connected to a battery with voltage V. If an identical resistor is added in parallel to the first one, what happens to the total current drawn from the battery?",
+    "choices": {
+      "A": "It doubles.",
+      "B": "It halves.",
+      "C": "It remains the same.",
+      "D": "It quadruples."
+    },
+    "answer": "A",
+    "difficulty": 5,
+    "explanation": "Initially, the total resistance is R. The current is I = V/R. When an identical resistor R is added in parallel, the new equivalent resistance (R_eq) is given by 1/R_eq = 1/R + 1/R = 2/R. So, R_eq = R/2. The new total current drawn from the battery is I' = V / R_eq = V / (R/2) = 2V/R. Since I = V/R, the new current I' = 2I. Therefore, the total current doubles."
   }
 ]
