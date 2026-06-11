@@ -3313,5 +3313,590 @@
     "answer": "A",
     "difficulty": 5,
     "explanation": "Oxidative phosphorylation, which includes the electron transport chain and chemiosmosis, is where the vast majority of ATP is generated during aerobic respiration, leveraging the proton gradient established by electron transport."
+  },
+  {
+    "id": "AP_Biology_256",
+    "question": "A population of deer is introduced into a new habitat with abundant food and no natural predators. Which of the following best describes the initial growth pattern of this population?",
+    "choices": {
+      "A": "Logistic growth, slowing as resources become limited.",
+      "B": "Exponential growth, as the population size increases rapidly.",
+      "C": "Stable growth, with birth rates equaling death rates.",
+      "D": "Declining growth, due to the stress of a new environment."
+    },
+    "answer": "B",
+    "difficulty": 4,
+    "explanation": "In a new environment with ample resources and no limiting factors like predators, a population will initially experience exponential growth, where the rate of increase is proportional to the population size."
+  },
+  {
+    "id": "AP_Biology_257",
+    "question": "Which of the following is the primary function of RNA polymerase in transcription?",
+    "choices": {
+      "A": "To catalyze the synthesis of RNA by adding complementary ribonucleotides to a DNA template.",
+      "B": "To bind to the promoter region of a gene and initiate DNA replication.",
+      "C": "To unwind the DNA double helix to expose the template strand.",
+      "D": "To connect Okazaki fragments during DNA replication."
+    },
+    "answer": "A",
+    "difficulty": 5,
+    "explanation": "RNA polymerase is the enzyme responsible for transcription; it reads the DNA template strand and synthesizes a complementary RNA molecule."
+  },
+  {
+    "id": "AP_Biology_258",
+    "question": "A plant cell is placed in a solution with a higher solute concentration than its cytoplasm. What will happen to the cell?",
+    "choices": {
+      "A": "The cell will plasmolyze as water moves out by osmosis.",
+      "B": "The cell will swell and potentially burst as water moves in.",
+      "C": "The cell's turgor pressure will increase.",
+      "D": "The cell wall will prevent any net movement of water."
+    },
+    "answer": "A",
+    "difficulty": 6,
+    "explanation": "When a plant cell is in a hypertonic solution, the water potential outside the cell is lower than inside. Water will move out of the cell by osmosis, causing the plasma membrane to pull away from the cell wall, a process called plasmolysis."
+  },
+  {
+    "id": "AP_Biology_259",
+    "question": "Which of the following correctly describes the role of ATP in cellular respiration?",
+    "choices": {
+      "A": "ATP is the primary energy currency, produced during glycolysis and the Krebs cycle, and used to power cellular work.",
+      "B": "ATP is a reactant that is broken down to release electrons for the electron transport chain.",
+      "C": "ATP is synthesized and released as a waste product during photosynthesis.",
+      "D": "ATP functions as an enzyme to speed up the breakdown of glucose."
+    },
+    "answer": "A",
+    "difficulty": 5,
+    "explanation": "ATP (adenosine triphosphate) is the main molecule that cells use for energy. It is produced during cellular respiration and its hydrolysis releases energy to drive metabolic processes."
+  },
+  {
+    "id": "AP_Biology_260",
+    "question": "A scientist observes a mutation that causes a single amino acid substitution in a protein. This type of mutation is most likely a result of:",
+    "choices": {
+      "A": "A frameshift mutation.",
+      "B": "A point mutation, specifically a silent or missense mutation.",
+      "C": "A chromosomal duplication.",
+      "D": "A translocation of a gene segment."
+    },
+    "answer": "B",
+    "difficulty": 7,
+    "explanation": "A point mutation involves a change in a single nucleotide base. Depending on the altered codon, it can result in a silent mutation (no amino acid change), a missense mutation (different amino acid), or a nonsense mutation (premature stop)."
+  },
+  {
+    "id": "AP_Biology_261",
+    "question": "Which of these processes best explains the movement of oxygen across the alveolar membrane in the lungs?",
+    "choices": {
+      "A": "Facilitated diffusion",
+      "B": "Active transport",
+      "C": "Simple diffusion",
+      "D": "Osmosis"
+    },
+    "answer": "C",
+    "difficulty": 5,
+    "explanation": "Oxygen moves from an area of high concentration (alveoli) to an area of low concentration (blood) across the alveolar membrane by simple diffusion, driven by the partial pressure gradient."
+  },
+  {
+    "id": "AP_Biology_262",
+    "question": "In a dihybrid cross between two heterozygous pea plants for seed shape (round/wrinkled) and seed color (yellow/green), what is the expected phenotypic ratio of the offspring if the genes are unlinked?",
+    "choices": {
+      "A": "9:3:3:1",
+      "B": "3:1",
+      "C": "1:2:1",
+      "D": "1:1:1:1"
+    },
+    "answer": "A",
+    "difficulty": 6,
+    "explanation": "This is a classic Mendelian dihybrid cross. When genes are unlinked, the F2 generation typically exhibits a 9:3:3:1 phenotypic ratio (9 dominant-dominant, 3 dominant-recessive, 3 recessive-dominant, 1 recessive-recessive)."
+  },
+  {
+    "id": "AP_Biology_263",
+    "question": "What is the role of NADPH in the Calvin cycle of photosynthesis?",
+    "choices": {
+      "A": "To provide reducing power (electrons) to convert carbon dioxide into carbohydrates.",
+      "B": "To absorb light energy for the light-dependent reactions.",
+      "C": "To act as an enzyme that catalyzes the fixation of carbon.",
+      "D": "To transport glucose molecules out of the chloroplast."
+    },
+    "answer": "A",
+    "difficulty": 5,
+    "explanation": "NADPH is a high-energy electron carrier produced during the light-dependent reactions. It donates electrons (reducing power) to the Calvin cycle, enabling the conversion of CO2 into sugar."
+  },
+  {
+    "id": "AP_Biology_264",
+    "question": "Which of the following describes a population's carrying capacity?",
+    "choices": {
+      "A": "The maximum population size that an environment can sustainably support indefinitely.",
+      "B": "The rate at which new individuals are born into the population.",
+      "C": "The total number of individuals in a population at a given time.",
+      "D": "The minimum population size required for a species to survive."
+    },
+    "answer": "A",
+    "difficulty": 5,
+    "explanation": "Carrying capacity (K) represents the upper limit on the population size that an environment can support due to limited resources like food, water, and space."
+  },
+  {
+    "id": "AP_Biology_265",
+    "question": "In prokaryotic cells, where does the majority of ATP synthesis occur?",
+    "choices": {
+      "A": "Plasma membrane",
+      "B": "Nucleoid region",
+      "C": "Ribosomes",
+      "D": "Cytoplasm"
+    },
+    "answer": "A",
+    "difficulty": 6,
+    "explanation": "Prokaryotes lack mitochondria. The electron transport chain, crucial for ATP synthesis via chemiosmosis, is located in the plasma membrane of prokaryotic cells."
+  },
+  {
+    "id": "AP_Biology_266",
+    "question": "Which type of cell junction in animal tissues allows for direct cytoplasmic connections between adjacent cells, facilitating rapid communication?",
+    "choices": {
+      "A": "Tight junctions",
+      "B": "Gap junctions",
+      "C": "Desmosomes",
+      "D": "Adherens junctions"
+    },
+    "answer": "B",
+    "difficulty": 7,
+    "explanation": "Gap junctions are protein-lined channels that connect the cytoplasm of neighboring cells, allowing for the passage of ions and small molecules, thus enabling rapid communication."
+  },
+  {
+    "id": "AP_Biology_267",
+    "question": "A scientist is studying the process of meiosis. At which stage does homologous chromosome pairing and crossing over occur?",
+    "choices": {
+      "A": "Prophase I",
+      "B": "Metaphase II",
+      "C": "Anaphase I",
+      "D": "Telophase II"
+    },
+    "answer": "A",
+    "difficulty": 5,
+    "explanation": "During Prophase I of meiosis, homologous chromosomes pair up (synapsis) and exchange genetic material through crossing over, which contributes to genetic variation."
+  },
+  {
+    "id": "AP_Biology_268",
+    "question": "Which of the following best describes the role of enzymes in biological systems?",
+    "choices": {
+      "A": "Enzymes are biological catalysts that speed up chemical reactions without being consumed in the process.",
+      "B": "Enzymes are responsible for storing genetic information in the cell.",
+      "C": "Enzymes are energy-producing molecules used in cellular respiration.",
+      "D": "Enzymes are structural components that provide support to cells."
+    },
+    "answer": "A",
+    "difficulty": 4,
+    "explanation": "Enzymes are proteins that act as biological catalysts, lowering the activation energy of specific biochemical reactions, thereby increasing the reaction rate."
+  },
+  {
+    "id": "AP_Biology_269",
+    "question": "Epinephrine (adrenaline) is a hormone that binds to receptors on the surface of liver cells, triggering a signaling cascade that leads to the breakdown of glycogen into glucose. This is an example of:",
+    "choices": {
+      "A": "Signal transduction",
+      "B": "Endocytosis",
+      "C": "DNA replication",
+      "D": "Transcription"
+    },
+    "answer": "A",
+    "difficulty": 6,
+    "explanation": "Signal transduction is the process by which a cell converts an external signal (like epinephrine binding to a receptor) into a specific cellular response."
+  },
+  {
+    "id": "AP_Biology_270",
+    "question": "What is the primary function of the vascular cambium in dicot stems?",
+    "choices": {
+      "A": "To produce secondary xylem and secondary phloem, increasing stem diameter.",
+      "B": "To absorb water and minerals from the soil.",
+      "C": "To conduct photosynthesis in the stem.",
+      "D": "To store food reserves in the pith."
+    },
+    "answer": "A",
+    "difficulty": 7,
+    "explanation": "The vascular cambium is a lateral meristem responsible for secondary growth in dicot stems and roots, producing secondary xylem (wood) and secondary phloem."
+  },
+  {
+    "id": "AP_Biology_271",
+    "question": "A mutation occurs in the gene that codes for the enzyme RuBisCO. This mutation is most likely to affect which process?",
+    "choices": {
+      "A": "Carbon fixation during the Calvin cycle.",
+      "B": "Photolysis of water during the light-dependent reactions.",
+      "C": "ATP synthesis in the mitochondria.",
+      "D": "Electron transport in cellular respiration."
+    },
+    "answer": "A",
+    "difficulty": 8,
+    "explanation": "RuBisCO is the enzyme that catalyzes the initial step of carbon fixation in the Calvin cycle, where CO2 is attached to RuBP."
+  },
+  {
+    "id": "AP_Biology_272",
+    "question": "Which of the following is a key characteristic of a keystone species in an ecosystem?",
+    "choices": {
+      "A": "It has a relatively low population density but a disproportionately large effect on the ecosystem's structure.",
+      "B": "It is the most abundant species in the ecosystem.",
+      "C": "It only consumes producers.",
+      "D": "Its population size is solely determined by abiotic factors."
+    },
+    "answer": "A",
+    "difficulty": 7,
+    "explanation": "Keystone species are those that exert a strong influence on the structure of their ecological communities, often by controlling the populations of other species. Their impact is much greater than their abundance would suggest."
+  },
+  {
+    "id": "AP_Biology_273",
+    "question": "The backbone of a DNA molecule is primarily composed of:",
+    "choices": {
+      "A": "Alternating deoxyribose sugar and phosphate groups.",
+      "B": "Nitrogenous bases linked by hydrogen bonds.",
+      "C": "Amino acids connected by peptide bonds.",
+      "D": "Ribose sugar and uracil."
+    },
+    "answer": "A",
+    "difficulty": 5,
+    "explanation": "The DNA double helix has a sugar-phosphate backbone, formed by alternating deoxyribose sugar molecules and phosphate groups linked by phosphodiester bonds."
+  },
+  {
+    "id": "AP_Biology_274",
+    "question": "During anaphase of mitosis, what separates and moves towards opposite poles of the cell?",
+    "choices": {
+      "A": "Sister chromatids",
+      "B": "Homologous chromosomes",
+      "C": "Centromeres",
+      "D": "Spindle fibers"
+    },
+    "answer": "A",
+    "difficulty": 5,
+    "explanation": "In anaphase of mitosis, the centromeres divide, and the sister chromatids, now considered individual chromosomes, are pulled apart towards opposite poles of the cell."
+  },
+  {
+    "id": "AP_Biology_275",
+    "question": "Which of the following describes the phenomenon where gene expression can be modified without altering the underlying DNA sequence?",
+    "choices": {
+      "A": "Epigenetics",
+      "B": "Gene cloning",
+      "C": "Polymerase chain reaction (PCR)",
+      "D": "Restriction digestion"
+    },
+    "answer": "A",
+    "difficulty": 6,
+    "explanation": "Epigenetics refers to heritable changes in gene expression that occur without a change in the DNA sequence itself, often involving DNA methylation or histone modification."
+  },
+  {
+    "id": "AP_Biology_276",
+    "question": "In a population of rabbits, individuals with longer hind legs are better able to escape predators. Over many generations, which of the following would most likely occur due to natural selection?",
+    "choices": {
+      "A": "The average hind leg length of the rabbit population will decrease.",
+      "B": "The frequency of alleles conferring longer hind legs will increase.",
+      "C": "The variation in hind leg length within the population will be eliminated.",
+      "D": "Rabbits with shorter hind legs will reproduce more successfully."
+    },
+    "answer": "B",
+    "difficulty": 4,
+    "explanation": "Natural selection favors traits that enhance survival and reproduction. In this scenario, longer hind legs provide a survival advantage, leading to increased reproductive success for individuals possessing the alleles for longer legs. Consequently, the frequency of these alleles will rise in the gene pool over time."
+  },
+  {
+    "id": "AP_Biology_277",
+    "question": "Which of the following best describes the role of enzymes in biological systems?",
+    "choices": {
+      "A": "Enzymes are consumed during the reaction and must be replenished.",
+      "B": "Enzymes increase the activation energy required for a reaction to occur.",
+      "C": "Enzymes act as catalysts, speeding up biochemical reactions without being permanently altered.",
+      "D": "Enzymes provide the energy needed to drive metabolic processes."
+    },
+    "answer": "C",
+    "difficulty": 3,
+    "explanation": "Enzymes are biological catalysts. They lower the activation energy of reactions, allowing them to proceed at a faster rate. Enzymes are not consumed in the reactions they catalyze and can be reused."
+  },
+  {
+    "id": "AP_Biology_278",
+    "question": "A cell is placed in a hypotonic solution. Which of the following will occur?",
+    "choices": {
+      "A": "Water will move out of the cell, causing it to shrink.",
+      "B": "Water will move into the cell, causing it to swell.",
+      "C": "Solutes will move into the cell, equalizing concentration.",
+      "D": "The cell membrane will break down due to osmotic pressure."
+    },
+    "answer": "B",
+    "difficulty": 5,
+    "explanation": "A hypotonic solution has a lower solute concentration (and thus a higher water concentration) than the cell. Water moves by osmosis from an area of higher water concentration to an area of lower water concentration, meaning water will enter the cell, causing it to swell."
+  },
+  {
+    "id": "AP_Biology_279",
+    "question": "Mitochondria are often referred to as the \"powerhouses\" of the cell because they are the primary site of which process?",
+    "choices": {
+      "A": "Photosynthesis",
+      "B": "Protein synthesis",
+      "C": "Cellular respiration",
+      "D": "DNA replication"
+    },
+    "answer": "C",
+    "difficulty": 2,
+    "explanation": "Mitochondria are the organelles responsible for cellular respiration, the metabolic process that converts chemical energy stored in glucose and other fuel molecules into adenosine triphosphate (ATP), the main energy currency of the cell."
+  },
+  {
+    "id": "AP_Biology_280",
+    "question": "The process by which a bacterium engulfs a larger particle not living or not living is called:",
+    "choices": {
+      "A": "Pinocytosis",
+      "B": "Phagocytosis",
+      "C": "Exocytosis",
+      "D": "Active transport"
+    },
+    "answer": "B",
+    "difficulty": 6,
+    "explanation": "Phagocytosis is a form of endocytosis where the cell membrane engulfs large particles or whole cells. Pinocytosis is the uptake of fluids, exocytosis is the release of substances from the cell, and active transport requires energy to move molecules against their concentration gradient."
+  },
+  {
+    "id": "AP_Biology_281",
+    "question": "What is the primary function of ribosomes in a eukaryotic cell?",
+    "choices": {
+      "A": "To store genetic information",
+      "B": "To synthesize proteins",
+      "C": "To package and modify proteins",
+      "D": "To generate ATP"
+    },
+    "answer": "B",
+    "difficulty": 3,
+    "explanation": "Ribosomes are the cellular machinery responsible for protein synthesis (translation), where they read messenger RNA (mRNA) sequences and assemble amino acids into polypeptide chains."
+  },
+  {
+    "id": "AP_Biology_282",
+    "question": "A DNA molecule consists of two polynucleotide strands. The backbone of each strand is formed by alternating units of:",
+    "choices": {
+      "A": "Phosphate and nitrogenous bases",
+      "B": "Deoxyribose sugar and nitrogenous bases",
+      "C": "Phosphate and deoxyribose sugar",
+      "D": "Ribose sugar and phosphate"
+    },
+    "answer": "C",
+    "difficulty": 5,
+    "explanation": "The sugar-phosphate backbone of a DNA strand is formed by covalent linkages between the phosphate group of one nucleotide and the deoxyribose sugar of the next nucleotide."
+  },
+  {
+    "id": "AP_Biology_283",
+    "question": "During meiosis, homologous chromosomes separate during which phase?",
+    "choices": {
+      "A": "Anaphase I",
+      "B": "Metaphase II",
+      "C": "Anaphase II",
+      "D": "Prophase I"
+    },
+    "answer": "A",
+    "difficulty": 6,
+    "explanation": "In Anaphase I of meiosis, homologous chromosomes (pairs of chromosomes) are pulled apart and move to opposite poles of the cell. Sister chromatids remain attached."
+  },
+  {
+    "id": "AP_Biology_284",
+    "question": "Which of the following is a key characteristic of a prokaryotic cell?",
+    "choices": {
+      "A": "Presence of a membrane-bound nucleus",
+      "B": "Absence of a cell wall",
+      "C": "Presence of membrane-bound organelles",
+      "D": "Presence of a nucleoid region containing DNA"
+    },
+    "answer": "D",
+    "difficulty": 4,
+    "explanation": "Prokaryotic cells lack a membrane-bound nucleus and other membrane-bound organelles. Their genetic material (DNA) is located in a region called the nucleoid, which is not enclosed by a membrane."
+  },
+  {
+    "id": "AP_Biology_285",
+    "question": "Epigenetic modifications, such as DNA methylation, can alter gene expression without changing the underlying DNA sequence. This is an example of:",
+    "choices": {
+      "A": "Gene flow",
+      "B": "Genetic drift",
+      "C": "A mechanism of inheritable variation",
+      "D": "A form of mutation"
+    },
+    "answer": "C",
+    "difficulty": 7,
+    "explanation": "Epigenetic changes can influence which genes are turned on or off and can sometimes be passed down to offspring. This represents a mechanism of variation that is inheritable, though it does not involve changes to the DNA sequence itself."
+  },
+  {
+    "id": "AP_Biology_286",
+    "question": "The Calvin cycle, which occurs during the light-independent reactions of photosynthesis, utilizes ATP and NADPH to convert carbon dioxide into:",
+    "choices": {
+      "A": "Oxygen",
+      "B": "Glucose",
+      "C": "Water",
+      "D": "Chlorophyll"
+    },
+    "answer": "B",
+    "difficulty": 5,
+    "explanation": "The primary output of the Calvin cycle is G3P (glyceraldehyde-3-phosphate), which is then used to synthesize glucose and other organic molecules. Therefore, the cycle effectively converts carbon dioxide into sugars."
+  },
+  {
+    "id": "AP_Biology_287",
+    "question": "A genetic cross between two heterozygous individuals (Aa) for a particular trait results in offspring with genotypes AA, Aa, and aa. This pattern of inheritance is known as:",
+    "choices": {
+      "A": "Sex-linked inheritance",
+      "B": "Incomplete dominance",
+      "C": "Codominance",
+      "D": "Mendelian (or complete) dominance"
+    },
+    "answer": "D",
+    "difficulty": 4,
+    "explanation": "In Mendelian or complete dominance, one allele (dominant) masks the expression of the other allele (recessive) when both are present. Crossing two heterozygotes (Aa x Aa) produces offspring in a 1:2:1 genotypic ratio (AA:Aa:aa) and a 3:1 phenotypic ratio if one allele is completely dominant over the other."
+  },
+  {
+    "id": "AP_Biology_288",
+    "question": "Which of the following statements about viruses is true?",
+    "choices": {
+      "A": "Viruses can reproduce independently of a host cell.",
+      "B": "Viruses are composed of cells.",
+      "C": "Viruses are obligate intracellular parasites.",
+      "D": "Viruses are capable of carrying out metabolic processes."
+    },
+    "answer": "C",
+    "difficulty": 5,
+    "explanation": "Viruses lack the machinery for self-replication and must infect a host cell to reproduce. They are considered obligate intracellular parasites because they depend entirely on the host's cellular machinery for their replication."
+  },
+  {
+    "id": "AP_Biology_289",
+    "question": "The theory of endosymbiosis proposes that certain organelles in eukaryotic cells, such as mitochondria and chloroplasts, originated from:",
+    "choices": {
+      "A": "Membrane infoldings of the plasma membrane",
+      "B": "Independent prokaryotic organisms that were engulfed by other cells",
+      "C": "The fusion of multiple smaller vesicles",
+      "D": "Self-assembly from precursor molecules"
+    },
+    "answer": "B",
+    "difficulty": 6,
+    "explanation": "The endosymbiotic theory suggests that mitochondria and chloroplasts were once free-living prokaryotes that were engulfed by an ancestral eukaryotic cell. Over time, these engulfed organisms developed a symbiotic relationship with the host cell, eventually becoming integrated organelles."
+  },
+  {
+    "id": "AP_Biology_290",
+    "question": "Which type of cell signaling involves signaling molecules (ligands) that travel long distances through the circulatory system to target cells?",
+    "choices": {
+      "A": "Paracrine signaling",
+      "B": "Autocrine signaling",
+      "C": "Synaptic signaling",
+      "D": "Endocrine signaling"
+    },
+    "answer": "D",
+    "difficulty": 5,
+    "explanation": "Endocrine signaling is a form of cell-cell communication where hormones (signaling molecules) are produced by endocrine glands and travel through the bloodstream to target cells located throughout the body."
+  },
+  {
+    "id": "AP_Biology_291",
+    "question": "During transcription, the enzyme RNA polymerase synthesizes an mRNA molecule by reading the template strand of DNA and adding complementary nucleotides. Which base pairing rule applies?",
+    "choices": {
+      "A": "A with T, and G with C",
+      "B": "A with U, and G with C",
+      "C": "A with C, and G with T",
+      "D": "A with G, and C with T"
+    },
+    "answer": "B",
+    "difficulty": 4,
+    "explanation": "During transcription, RNA polymerase uses a DNA template strand to synthesize an mRNA molecule. The base pairing rules are Adenine (A) pairs with Uracil (U) in RNA, and Guanine (G) pairs with Cytosine (C)."
+  },
+  {
+    "id": "AP_Biology_292",
+    "question": "The primary role of decomposers, such as bacteria and fungi, in an ecosystem is to:",
+    "choices": {
+      "A": "Produce energy through photosynthesis",
+      "B": "Transfer energy to higher trophic levels",
+      "C": "Break down dead organic matter and return nutrients to the soil",
+      "D": "Control the population size of producers"
+    },
+    "answer": "C",
+    "difficulty": 4,
+    "explanation": "Decomposers play a crucial role in nutrient cycling by breaking down dead organisms and waste products. This process releases essential nutrients back into the environment, making them available for producers to use."
+  },
+  {
+    "id": "AP_Biology_293",
+    "question": "A population of deer is introduced into a new forest habitat with abundant food and no natural predators. Initially, the population growth is exponential. However, over time, the growth rate slows down and eventually levels off. This pattern of population growth is known as:",
+    "choices": {
+      "A": "Zero population growth",
+      "B": "Logistic growth",
+      "C": "Geometric growth",
+      "D": "Density-independent growth"
+    },
+    "answer": "B",
+    "difficulty": 5,
+    "explanation": "Logistic growth describes population growth that starts exponentially but then slows down as the population approaches the carrying capacity of its environment, limited by factors like resource availability and competition."
+  },
+  {
+    "id": "AP_Biology_294",
+    "question": "Which of the following is the correct order of organization in living organisms, from simplest to most complex?",
+    "choices": {
+      "A": "Cell, tissue, organ, organ system, organism",
+      "B": "Organism, organ system, organ, tissue, cell",
+      "C": "Tissue, cell, organ, organ system, organism",
+      "D": "Cell, organ, tissue, organ system, organism"
+    },
+    "answer": "A",
+    "difficulty": 4,
+    "explanation": "The biological hierarchy of organization typically progresses from the basic unit of life (cell) to more complex structures: cells group to form tissues, tissues organize into organs, organs work together in organ systems, and all organ systems constitute a complete organism."
+  },
+  {
+    "id": "AP_Biology_295",
+    "question": "A gene mutation occurs in a somatic cell of an animal. Which of the following statements about the consequence of this mutation is most likely true?",
+    "choices": {
+      "A": "The mutation will be passed on to the organism's offspring.",
+      "B": "The mutation will affect all cells in the organism.",
+      "C": "The mutation will likely not be passed on to offspring.",
+      "D": "The mutation will always result in a lethal condition."
+    },
+    "answer": "C",
+    "difficulty": 6,
+    "explanation": "Mutations in somatic cells (body cells) affect only the individual and cannot be passed on to their reproductive cells (gametes). Therefore, such mutations are not inherited by offspring. Germ-line mutations, occurring in gametes, are heritable."
+  },
+  {
+    "id": "AP_Biology_296",
+    "question": "The process of natural selection acts directly upon:",
+    "choices": {
+      "A": "Allele frequencies within a population",
+      "B": "The genetic makeup of an individual",
+      "C": "The observable traits (phenotypes) of individuals",
+      "D": "The rate of mutation"
+    },
+    "answer": "C",
+    "difficulty": 5,
+    "explanation": "Natural selection favors individuals with advantageous phenotypes, which are the observable expressions of their genotypes. Individuals with advantageous traits are more likely to survive and reproduce, thus indirectly influencing allele frequencies over generations."
+  },
+  {
+    "id": "AP_Biology_297",
+    "question": "Which of the following best describes the role of ATP in cellular metabolism?",
+    "choices": {
+      "A": "It is a structural component of cell membranes.",
+      "B": "It stores and transfers chemical energy for cellular work.",
+      "C": "It serves as the primary genetic material of the cell.",
+      "D": "It acts as a catalyst for most biochemical reactions."
+    },
+    "answer": "B",
+    "difficulty": 3,
+    "explanation": "Adenosine triphosphate (ATP) is the main energy currency of the cell. It stores energy released from the breakdown of glucose and other fuel molecules and releases this energy when its phosphate bond is broken to power cellular processes."
+  },
+  {
+    "id": "AP_Biology_298",
+    "question": "A plant cell is suddenly placed in an extremely salty solution. What is likely to happen to the plant cell?",
+    "choices": {
+      "A": "The cell will absorb water and become turgid.",
+      "B": "The cell will lose water and undergo plasmolysis.",
+      "C": "The salt will enter the cell, disrupting its internal processes.",
+      "D": "The cell wall will prevent any water movement."
+    },
+    "answer": "B",
+    "difficulty": 5,
+    "explanation": "A very salty solution is hypertonic to the plant cell's cytoplasm. Water will move out of the cell by osmosis from an area of higher water concentration (inside the cell) to an area of lower water concentration (outside the cell). This loss of water causes the cell membrane to pull away from the cell wall, a process called plasmolysis."
+  },
+  {
+    "id": "AP_Biology_299",
+    "question": "The breakdown of glucose into pyruvate during the initial stage of cellular respiration occurs in the cytoplasm and is called:",
+    "choices": {
+      "A": "The Krebs cycle",
+      "B": "Oxidative phosphorylation",
+      "C": "Glycolysis",
+      "D": "Fermentation"
+    },
+    "answer": "C",
+    "difficulty": 4,
+    "explanation": "Glycolysis is the first stage of cellular respiration, occurring in the cytoplasm. It involves the anaerobic breakdown of one molecule of glucose into two molecules of pyruvate, producing a small amount of ATP and NADH."
+  },
+  {
+    "id": "AP_Biology_300",
+    "question": "Which of the following is an example of a density-dependent factor that can limit population growth?",
+    "choices": {
+      "A": "A sudden flood",
+      "B": "A severe drought",
+      "C": "Competition for resources",
+      "D": "A devastating wildfire"
+    },
+    "answer": "C",
+    "difficulty": 6,
+    "explanation": "Density-dependent factors are those whose effects on the size or growth of the population vary with the population density. Competition for resources (food, water, space) intensifies as population density increases, thus limiting growth."
   }
 ]
