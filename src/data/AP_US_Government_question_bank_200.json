@@ -1,22 +1,3265 @@
 [
-  {"id":"AP_USGov_1","question":"Which of the following best describes the concept of federalism as established by the U.S. Constitution?","choices":{"A":"Power is concentrated in the national government with states serving as administrative units","B":"Power is divided between a national government and state governments, each with distinct areas of authority","C":"States retain all sovereignty and delegate limited powers to a central coordinating body","D":"The judiciary determines the distribution of power between national and state governments on a case-by-case basis"},"answer":"B","difficulty":5,"explanation":"Federalism divides power between national and state governments. The Constitution enumerates specific federal powers while the 10th Amendment reserves remaining powers to the states."},
-  {"id":"AP_USGov_2","question":"The Supreme Court case McCulloch v. Maryland (1819) established which two important constitutional principles?","choices":{"A":"Judicial review and the exclusionary rule","B":"Implied powers and national supremacy","C":"Strict scrutiny and equal protection","D":"Executive privilege and separation of powers"},"answer":"B","difficulty":6,"explanation":"Chief Justice Marshall ruled that the Necessary and Proper Clause grants Congress implied powers (establishing a national bank) and that states cannot tax federal institutions (national supremacy)."},
-  {"id":"AP_USGov_3","question":"A member of the House of Representatives who votes according to the preferences of their constituents regardless of personal beliefs is acting as a:","choices":{"A":"Trustee","B":"Delegate","C":"Partisan","D":"Politico"},"answer":"B","difficulty":5,"explanation":"The delegate model of representation holds that elected officials should vote according to constituents' wishes. The trustee model involves voting based on personal judgment."},
-  {"id":"AP_USGov_4","question":"Which of the following scenarios best illustrates the concept of selective incorporation?","choices":{"A":"Congress passes a law that applies equally to all 50 states","B":"The Supreme Court rules that a specific Bill of Rights protection applies to state governments through the 14th Amendment","C":"A state legislature adopts federal guidelines voluntarily","D":"The President issues an executive order binding on all states"},"answer":"B","difficulty":7,"explanation":"Selective incorporation is the process by which the Supreme Court applies individual Bill of Rights protections to the states through the Due Process Clause of the 14th Amendment, done on a case-by-case basis."},
-  {"id":"AP_USGov_5","question":"The War Powers Resolution of 1973 was designed primarily to:","choices":{"A":"Increase the President's authority to deploy military forces","B":"Require congressional authorization for extended military engagements","C":"Establish the Department of Defense","D":"Grant the President emergency wartime powers"},"answer":"B","difficulty":6,"explanation":"Passed over Nixon's veto, the War Powers Resolution requires the President to notify Congress within 48 hours of deploying troops and limits deployment to 60 days without congressional authorization."},
-  {"id":"AP_USGov_6","question":"Which of the following is an example of checks and balances in the U.S. government?","choices":{"A":"The Speaker of the House presiding over House debates","B":"The Senate confirming presidential judicial nominations","C":"A congressional committee holding hearings on proposed legislation","D":"State governors issuing proclamations"},"answer":"B","difficulty":5,"explanation":"Senate confirmation of judicial nominees is a check by the legislative branch on the executive branch's appointment power, illustrating the system of checks and balances."},
-  {"id":"AP_USGov_7","question":"In Engel v. Vitale (1962), the Supreme Court ruled that:","choices":{"A":"Schools may lead students in nondenominational prayer","B":"State-sponsored prayer in public schools violates the Establishment Clause","C":"Students may not pray privately in schools","D":"Religious clubs cannot meet on school property"},"answer":"B","difficulty":6,"explanation":"The Court held that government-directed prayer in public schools violates the First Amendment's Establishment Clause, even if the prayer is nondenominational and voluntary."},
-  {"id":"AP_USGov_8","question":"The concept of 'iron triangles' in American politics refers to:","choices":{"A":"The three branches of government","B":"The relationship between congressional committees, bureaucratic agencies, and interest groups","C":"The balance of power between federal, state, and local governments","D":"The three stages of the legislative process"},"answer":"B","difficulty":7,"explanation":"Iron triangles describe the mutually beneficial relationships among congressional committees, executive agencies, and interest groups that influence policy in specific areas."},
-  {"id":"AP_USGov_9","question":"Which amendment to the Constitution abolished slavery?","choices":{"A":"13th Amendment","B":"14th Amendment","C":"15th Amendment","D":"19th Amendment"},"answer":"A","difficulty":5,"explanation":"The 13th Amendment (1865) abolished slavery and involuntary servitude. The 14th granted citizenship and equal protection; the 15th prohibited racial discrimination in voting; the 19th granted women's suffrage."},
-  {"id":"AP_USGov_10","question":"The practice of gerrymandering is most directly related to:","choices":{"A":"The selection of committee chairs in Congress","B":"The drawing of legislative district boundaries to benefit a political party","C":"The process of amending the Constitution","D":"The allocation of electoral votes among states"},"answer":"B","difficulty":6,"explanation":"Gerrymandering involves manipulating the boundaries of electoral districts to give one party an unfair advantage, often through 'packing' or 'cracking' opposition voters."},
-  {"id":"AP_USGov_11","question":"The Supreme Court case Gideon v. Wainwright (1963) established that:","choices":{"A":"Defendants have the right to remain silent during interrogation","B":"States must provide attorneys for defendants who cannot afford one in felony cases","C":"Evidence obtained through illegal searches is inadmissible","D":"Defendants have the right to a speedy trial"},"answer":"B","difficulty":6,"explanation":"The Court ruled that the 6th Amendment right to counsel is fundamental, requiring states to provide attorneys for indigent defendants in felony cases through the 14th Amendment."},
-  {"id":"AP_USGov_12","question":"Which of the following best describes a characteristic of political socialization?","choices":{"A":"It occurs only during formal education","B":"It is a lifelong process influenced by family, media, peers, and education","C":"It affects only politically active citizens","D":"It primarily shapes economic preferences rather than political attitudes"},"answer":"B","difficulty":5,"explanation":"Political socialization is the lifelong process through which individuals develop political beliefs and values, influenced by agents including family, schools, media, peers, and significant events."},
-  {"id":"AP_USGov_13","question":"The filibuster is a legislative tactic available in:","choices":{"A":"The House of Representatives only","B":"The Senate only","C":"Both chambers of Congress","D":"State legislatures only"},"answer":"B","difficulty":6,"explanation":"The filibuster is a Senate procedure allowing unlimited debate to delay or prevent a vote. The House has strict time limits on debate. Ending a filibuster requires cloture (60 votes)."},
-  {"id":"AP_USGov_14","question":"A conservative political ideology generally favors:","choices":{"A":"Expanded social welfare programs and increased government regulation of business","B":"Limited government intervention in the economy and traditional social values","C":"Elimination of all government programs and total free-market economics","D":"Centralized economic planning and progressive social policies"},"answer":"B","difficulty":5,"explanation":"American conservatism generally advocates for limited government, free-market economics, lower taxes, traditional social values, and a strong national defense."},
-  {"id":"AP_USGov_15","question":"In the Electoral College system, what happens if no candidate receives a majority of electoral votes?","choices":{"A":"The sitting Vice President breaks the tie","B":"A new election is held within 30 days","C":"The House of Representatives elects the President","D":"The candidate with the most popular votes wins"},"answer":"C","difficulty":7,"explanation":"Under the 12th Amendment, if no candidate wins a majority (270) of electoral votes, the House selects the President from the top three candidates, with each state delegation casting one vote."},
-  {"id":"AP_USGov_16","question":"The concept of judicial review was established in which Supreme Court case?","choices":{"A":"Marbury v. Madison (1803)","B":"McCulloch v. Maryland (1819)","C":"Gibbons v. Ogden (1824)","D":"Fletcher v. Peck (1810)"},"answer":"A","difficulty":6,"explanation":"In Marbury v. Madison, Chief Justice Marshall established judicial review—the power of the Supreme Court to declare laws unconstitutional—making the judiciary a coequal branch of government."},
-  {"id":"AP_USGov_17","question":"Which of the following best illustrates the concept of linkage institutions?","choices":{"A":"The separation of powers among the three branches of government","B":"Political parties, interest groups, and media connecting citizens to government","C":"Federal agencies implementing congressional legislation","D":"The process by which the Supreme Court selects cases for review"},"answer":"B","difficulty":7,"explanation":"Linkage institutions—parties, interest groups, elections, and media—connect citizens to government by translating public preferences into policy demands and facilitating political participation."},
-  {"id":"AP_USGov_18","question":"The Voting Rights Act of 1965 primarily addressed:","choices":{"A":"Women's suffrage","B":"The voting age for citizens","C":"Racial discrimination in voting practices, particularly in the South","D":"Campaign finance regulations"},"answer":"C","difficulty":6,"explanation":"The VRA banned literacy tests and other discriminatory practices used to disenfranchise African American voters, and authorized federal oversight of elections in jurisdictions with histories of discrimination."},
-  {"id":"AP_USGov_19","question":"The principle of 'one person, one vote' established in Reynolds v. Sims (1964) requires that:","choices":{"A":"All citizens must vote in every election","B":"Legislative districts must be roughly equal in population","C":"Each state must have equal representation in the Senate","D":"Political parties must give equal time to all candidates"},"answer":"B","difficulty":7,"explanation":"The Court ruled that state legislative districts must be approximately equal in population to ensure equal representation under the Equal Protection Clause of the 14th Amendment."},
-  {"id":"AP_USGov_20","question":"Which of the following powers is shared by both the national and state governments (concurrent powers)?","choices":{"A":"Coining money","B":"Conducting foreign policy","C":"Levying taxes","D":"Establishing post offices"},"answer":"C","difficulty":5,"explanation":"Concurrent powers are those exercised by both levels of government. Both federal and state governments can levy taxes. Coining money, foreign policy, and post offices are exclusive federal powers."}
+  {
+    "id": "AP_USGov_1",
+    "question": "Which of the following best describes the concept of federalism as established by the U.S. Constitution?",
+    "choices": {
+      "A": "Power is concentrated in the national government with states serving as administrative units",
+      "B": "Power is divided between a national government and state governments, each with distinct areas of authority",
+      "C": "States retain all sovereignty and delegate limited powers to a central coordinating body",
+      "D": "The judiciary determines the distribution of power between national and state governments on a case-by-case basis"
+    },
+    "answer": "B",
+    "difficulty": 5,
+    "explanation": "Federalism divides power between national and state governments. The Constitution enumerates specific federal powers while the 10th Amendment reserves remaining powers to the states."
+  },
+  {
+    "id": "AP_USGov_2",
+    "question": "The Supreme Court case McCulloch v. Maryland (1819) established which two important constitutional principles?",
+    "choices": {
+      "A": "Judicial review and the exclusionary rule",
+      "B": "Implied powers and national supremacy",
+      "C": "Strict scrutiny and equal protection",
+      "D": "Executive privilege and separation of powers"
+    },
+    "answer": "B",
+    "difficulty": 6,
+    "explanation": "Chief Justice Marshall ruled that the Necessary and Proper Clause grants Congress implied powers (establishing a national bank) and that states cannot tax federal institutions (national supremacy)."
+  },
+  {
+    "id": "AP_USGov_3",
+    "question": "A member of the House of Representatives who votes according to the preferences of their constituents regardless of personal beliefs is acting as a:",
+    "choices": {
+      "A": "Trustee",
+      "B": "Delegate",
+      "C": "Partisan",
+      "D": "Politico"
+    },
+    "answer": "B",
+    "difficulty": 5,
+    "explanation": "The delegate model of representation holds that elected officials should vote according to constituents' wishes. The trustee model involves voting based on personal judgment."
+  },
+  {
+    "id": "AP_USGov_4",
+    "question": "Which of the following scenarios best illustrates the concept of selective incorporation?",
+    "choices": {
+      "A": "Congress passes a law that applies equally to all 50 states",
+      "B": "The Supreme Court rules that a specific Bill of Rights protection applies to state governments through the 14th Amendment",
+      "C": "A state legislature adopts federal guidelines voluntarily",
+      "D": "The President issues an executive order binding on all states"
+    },
+    "answer": "B",
+    "difficulty": 7,
+    "explanation": "Selective incorporation is the process by which the Supreme Court applies individual Bill of Rights protections to the states through the Due Process Clause of the 14th Amendment, done on a case-by-case basis."
+  },
+  {
+    "id": "AP_USGov_5",
+    "question": "The War Powers Resolution of 1973 was designed primarily to:",
+    "choices": {
+      "A": "Increase the President's authority to deploy military forces",
+      "B": "Require congressional authorization for extended military engagements",
+      "C": "Establish the Department of Defense",
+      "D": "Grant the President emergency wartime powers"
+    },
+    "answer": "B",
+    "difficulty": 6,
+    "explanation": "Passed over Nixon's veto, the War Powers Resolution requires the President to notify Congress within 48 hours of deploying troops and limits deployment to 60 days without congressional authorization."
+  },
+  {
+    "id": "AP_USGov_6",
+    "question": "Which of the following is an example of checks and balances in the U.S. government?",
+    "choices": {
+      "A": "The Speaker of the House presiding over House debates",
+      "B": "The Senate confirming presidential judicial nominations",
+      "C": "A congressional committee holding hearings on proposed legislation",
+      "D": "State governors issuing proclamations"
+    },
+    "answer": "B",
+    "difficulty": 5,
+    "explanation": "Senate confirmation of judicial nominees is a check by the legislative branch on the executive branch's appointment power, illustrating the system of checks and balances."
+  },
+  {
+    "id": "AP_USGov_7",
+    "question": "In Engel v. Vitale (1962), the Supreme Court ruled that:",
+    "choices": {
+      "A": "Schools may lead students in nondenominational prayer",
+      "B": "State-sponsored prayer in public schools violates the Establishment Clause",
+      "C": "Students may not pray privately in schools",
+      "D": "Religious clubs cannot meet on school property"
+    },
+    "answer": "B",
+    "difficulty": 6,
+    "explanation": "The Court held that government-directed prayer in public schools violates the First Amendment's Establishment Clause, even if the prayer is nondenominational and voluntary."
+  },
+  {
+    "id": "AP_USGov_8",
+    "question": "The concept of 'iron triangles' in American politics refers to:",
+    "choices": {
+      "A": "The three branches of government",
+      "B": "The relationship between congressional committees, bureaucratic agencies, and interest groups",
+      "C": "The balance of power between federal, state, and local governments",
+      "D": "The three stages of the legislative process"
+    },
+    "answer": "B",
+    "difficulty": 7,
+    "explanation": "Iron triangles describe the mutually beneficial relationships among congressional committees, executive agencies, and interest groups that influence policy in specific areas."
+  },
+  {
+    "id": "AP_USGov_9",
+    "question": "Which amendment to the Constitution abolished slavery?",
+    "choices": {
+      "A": "13th Amendment",
+      "B": "14th Amendment",
+      "C": "15th Amendment",
+      "D": "19th Amendment"
+    },
+    "answer": "A",
+    "difficulty": 5,
+    "explanation": "The 13th Amendment (1865) abolished slavery and involuntary servitude. The 14th granted citizenship and equal protection; the 15th prohibited racial discrimination in voting; the 19th granted women's suffrage."
+  },
+  {
+    "id": "AP_USGov_10",
+    "question": "The practice of gerrymandering is most directly related to:",
+    "choices": {
+      "A": "The selection of committee chairs in Congress",
+      "B": "The drawing of legislative district boundaries to benefit a political party",
+      "C": "The process of amending the Constitution",
+      "D": "The allocation of electoral votes among states"
+    },
+    "answer": "B",
+    "difficulty": 6,
+    "explanation": "Gerrymandering involves manipulating the boundaries of electoral districts to give one party an unfair advantage, often through 'packing' or 'cracking' opposition voters."
+  },
+  {
+    "id": "AP_USGov_11",
+    "question": "The Supreme Court case Gideon v. Wainwright (1963) established that:",
+    "choices": {
+      "A": "Defendants have the right to remain silent during interrogation",
+      "B": "States must provide attorneys for defendants who cannot afford one in felony cases",
+      "C": "Evidence obtained through illegal searches is inadmissible",
+      "D": "Defendants have the right to a speedy trial"
+    },
+    "answer": "B",
+    "difficulty": 6,
+    "explanation": "The Court ruled that the 6th Amendment right to counsel is fundamental, requiring states to provide attorneys for indigent defendants in felony cases through the 14th Amendment."
+  },
+  {
+    "id": "AP_USGov_12",
+    "question": "Which of the following best describes a characteristic of political socialization?",
+    "choices": {
+      "A": "It occurs only during formal education",
+      "B": "It is a lifelong process influenced by family, media, peers, and education",
+      "C": "It affects only politically active citizens",
+      "D": "It primarily shapes economic preferences rather than political attitudes"
+    },
+    "answer": "B",
+    "difficulty": 5,
+    "explanation": "Political socialization is the lifelong process through which individuals develop political beliefs and values, influenced by agents including family, schools, media, peers, and significant events."
+  },
+  {
+    "id": "AP_USGov_13",
+    "question": "The filibuster is a legislative tactic available in:",
+    "choices": {
+      "A": "The House of Representatives only",
+      "B": "The Senate only",
+      "C": "Both chambers of Congress",
+      "D": "State legislatures only"
+    },
+    "answer": "B",
+    "difficulty": 6,
+    "explanation": "The filibuster is a Senate procedure allowing unlimited debate to delay or prevent a vote. The House has strict time limits on debate. Ending a filibuster requires cloture (60 votes)."
+  },
+  {
+    "id": "AP_USGov_14",
+    "question": "A conservative political ideology generally favors:",
+    "choices": {
+      "A": "Expanded social welfare programs and increased government regulation of business",
+      "B": "Limited government intervention in the economy and traditional social values",
+      "C": "Elimination of all government programs and total free-market economics",
+      "D": "Centralized economic planning and progressive social policies"
+    },
+    "answer": "B",
+    "difficulty": 5,
+    "explanation": "American conservatism generally advocates for limited government, free-market economics, lower taxes, traditional social values, and a strong national defense."
+  },
+  {
+    "id": "AP_USGov_15",
+    "question": "In the Electoral College system, what happens if no candidate receives a majority of electoral votes?",
+    "choices": {
+      "A": "The sitting Vice President breaks the tie",
+      "B": "A new election is held within 30 days",
+      "C": "The House of Representatives elects the President",
+      "D": "The candidate with the most popular votes wins"
+    },
+    "answer": "C",
+    "difficulty": 7,
+    "explanation": "Under the 12th Amendment, if no candidate wins a majority (270) of electoral votes, the House selects the President from the top three candidates, with each state delegation casting one vote."
+  },
+  {
+    "id": "AP_USGov_16",
+    "question": "The concept of judicial review was established in which Supreme Court case?",
+    "choices": {
+      "A": "Marbury v. Madison (1803)",
+      "B": "McCulloch v. Maryland (1819)",
+      "C": "Gibbons v. Ogden (1824)",
+      "D": "Fletcher v. Peck (1810)"
+    },
+    "answer": "A",
+    "difficulty": 6,
+    "explanation": "In Marbury v. Madison, Chief Justice Marshall established judicial review—the power of the Supreme Court to declare laws unconstitutional—making the judiciary a coequal branch of government."
+  },
+  {
+    "id": "AP_USGov_17",
+    "question": "Which of the following best illustrates the concept of linkage institutions?",
+    "choices": {
+      "A": "The separation of powers among the three branches of government",
+      "B": "Political parties, interest groups, and media connecting citizens to government",
+      "C": "Federal agencies implementing congressional legislation",
+      "D": "The process by which the Supreme Court selects cases for review"
+    },
+    "answer": "B",
+    "difficulty": 7,
+    "explanation": "Linkage institutions—parties, interest groups, elections, and media—connect citizens to government by translating public preferences into policy demands and facilitating political participation."
+  },
+  {
+    "id": "AP_USGov_18",
+    "question": "The Voting Rights Act of 1965 primarily addressed:",
+    "choices": {
+      "A": "Women's suffrage",
+      "B": "The voting age for citizens",
+      "C": "Racial discrimination in voting practices, particularly in the South",
+      "D": "Campaign finance regulations"
+    },
+    "answer": "C",
+    "difficulty": 6,
+    "explanation": "The VRA banned literacy tests and other discriminatory practices used to disenfranchise African American voters, and authorized federal oversight of elections in jurisdictions with histories of discrimination."
+  },
+  {
+    "id": "AP_USGov_19",
+    "question": "The principle of 'one person, one vote' established in Reynolds v. Sims (1964) requires that:",
+    "choices": {
+      "A": "All citizens must vote in every election",
+      "B": "Legislative districts must be roughly equal in population",
+      "C": "Each state must have equal representation in the Senate",
+      "D": "Political parties must give equal time to all candidates"
+    },
+    "answer": "B",
+    "difficulty": 7,
+    "explanation": "The Court ruled that state legislative districts must be approximately equal in population to ensure equal representation under the Equal Protection Clause of the 14th Amendment."
+  },
+  {
+    "id": "AP_USGov_20",
+    "question": "Which of the following powers is shared by both the national and state governments (concurrent powers)?",
+    "choices": {
+      "A": "Coining money",
+      "B": "Conducting foreign policy",
+      "C": "Levying taxes",
+      "D": "Establishing post offices"
+    },
+    "answer": "C",
+    "difficulty": 5,
+    "explanation": "Concurrent powers are those exercised by both levels of government. Both federal and state governments can levy taxes. Coining money, foreign policy, and post offices are exclusive federal powers."
+  },
+  {
+    "id": "AP_US_Government_21",
+    "question": "The primary function of the Federal Reserve System is to:",
+    "choices": {
+      "A": "Conduct foreign policy and negotiate treaties.",
+      "B": "Regulate interstate commerce and set trade policies.",
+      "C": "Manage the nation's money supply and influence interest rates.",
+      "D": "Oversee the federal court system and appoint judges."
+    },
+    "answer": "C",
+    "difficulty": 5,
+    "explanation": "The Federal Reserve, often called the 'Fed,' is responsible for monetary policy, which includes controlling the money supply to achieve goals like stable prices and maximum employment. The other options describe functions of the State Department, Congress, and the judiciary, respectively."
+  },
+  {
+    "id": "AP_US_Government_22",
+    "question": "Which of the following scenarios best exemplifies the concept of selective incorporation?",
+    "choices": {
+      "A": "The Supreme Court ruling that all states must provide free public education to all citizens.",
+      "B": "Congress passing a law that applies equally to all states regarding national security.",
+      "C": "The Supreme Court applying specific protections from the Bill of Rights to state governments on a case-by-case basis.",
+      "D": "The President issuing an executive order that overrides state laws concerning environmental protection."
+    },
+    "answer": "C",
+    "difficulty": 7,
+    "explanation": "Selective incorporation is the process by which the Supreme Court has applied most of the rights in the Bill of Rights to the states through the Due Process Clause of the Fourteenth Amendment. This is done gradually, on a case-by-case basis, rather than all at once."
+  },
+  {
+    "id": "AP_US_Government_23",
+    "question": "A third-party candidate running for president is most likely to face which of the following challenges?",
+    "choices": {
+      "A": "Receiving too much media attention, overshadowing major party candidates.",
+      "B": "Difficulty in raising sufficient funds and gaining ballot access in all states.",
+      "C": "Being unable to criticize the policies of the two major parties.",
+      "D": "Experiencing a spontaneous surge in popularity due to a lack of strong major party candidates."
+    },
+    "answer": "B",
+    "difficulty": 6,
+    "explanation": "Third-party candidates often struggle with significant structural barriers, including fundraising challenges and the complex, state-by-state process of getting their names on the ballot, which is designed to favor established parties."
+  },
+  {
+    "id": "AP_US_Government_24",
+    "question": "The process by which citizens learn about government and politics, and develop their political attitudes, values, and beliefs, is known as:",
+    "choices": {
+      "A": "Political socialization.",
+      "B": "Political efficacy.",
+      "C": "Political polarization.",
+      "D": "Political participation."
+    },
+    "answer": "A",
+    "difficulty": 4,
+    "explanation": "Political socialization is the lifelong process through which individuals acquire political attitudes and behaviors, influenced by family, school, peers, and media."
+  },
+  {
+    "id": "AP_US_Government_25",
+    "question": "Which of the following best describes a potential consequence of gerrymandering?",
+    "choices": {
+      "A": "Increased competition between candidates in most congressional districts.",
+      "B": "Reduced polarization within political parties.",
+      "C": "Creation of \"safe\" districts that are unlikely to change party control.",
+      "D": "Greater representation of minority groups in Congress."
+    },
+    "answer": "C",
+    "difficulty": 6,
+    "explanation": "Gerrymandering, the practice of drawing electoral district boundaries to favor one party or group, often results in the creation of districts designed to be predictably won by one party, thus reducing electoral competition."
+  },
+  {
+    "id": "AP_US_Government_26",
+    "question": "The establishment clause of the First Amendment has been interpreted by the Supreme Court to mean that:",
+    "choices": {
+      "A": "Individuals have the right to practice any religion they choose, even if it disrupts public order.",
+      "B": "Government cannot establish an official religion nor favor one religion over another.",
+      "C": "Religious organizations are exempt from all federal taxes and regulations.",
+      "D": "Public schools must offer daily prayer services for students of all faiths."
+    },
+    "answer": "B",
+    "difficulty": 5,
+    "explanation": "The establishment clause prohibits the government from establishing a religion. The Supreme Court has consistently interpreted this to mean the government must remain neutral in matters of religion, neither establishing a national religion nor endorsing any particular faith."
+  },
+  {
+    "id": "AP_US_Government_27",
+    "question": "When citing the \"necessary and proper\" clause, Congress is exercising which of its powers?",
+    "choices": {
+      "A": "Enumerated powers.",
+      "B": "Reserved powers.",
+      "C": "Implied powers.",
+      "D": "Concurrent powers."
+    },
+    "answer": "C",
+    "difficulty": 7,
+    "explanation": "The necessary and proper clause (Article I, Section 8) grants Congress the power to make laws that are needed to carry out its enumerated powers, even if those specific powers are not explicitly listed in the Constitution. These are known as implied powers."
+  },
+  {
+    "id": "AP_US_Government_28",
+    "question": "Which of the following is a primary function of political parties in the United States?",
+    "choices": {
+      "A": "To act as the ultimate arbiters of constitutionality.",
+      "B": "To nominate candidates for public office.",
+      "C": "To directly administer federal agencies.",
+      "D": "To guarantee equal representation for all citizens in Congress."
+    },
+    "answer": "B",
+    "difficulty": 4,
+    "explanation": "A core function of political parties is to identify, recruit, and nominate candidates to run for office, aiming to win elections and control government."
+  },
+  {
+    "id": "AP_US_Government_29",
+    "question": "The concept of \"devolution\" in American politics refers to:",
+    "choices": {
+      "A": "The process of impeaching and removing a president from office.",
+      "B": "The transfer of powers and responsibilities from the federal government to state and local governments.",
+      "C": "The gradual erosion of civil liberties due to national security concerns.",
+      "D": "The increasing influence of the judiciary over legislative matters."
+    },
+    "answer": "B",
+    "difficulty": 6,
+    "explanation": "Devolution describes the Reagan-era policy shift (and subsequent trends) aimed at reducing the size and scope of the federal government by returning power and responsibility to state and local governments."
+  },
+  {
+    "id": "AP_US_Government_30",
+    "question": "Which of the following Supreme Court cases established the principle of judicial review?",
+    "choices": {
+      "A": "Gideon v. Wainwright",
+      "B": "Marbury v. Madison",
+      "C": "Miranda v. Arizona",
+      "D": "Brown v. Board of Education"
+    },
+    "answer": "B",
+    "difficulty": 5,
+    "explanation": "Marbury v. Madison (1803) is the landmark Supreme Court case that established the power of judicial review, allowing the Court to declare laws unconstitutional."
+  },
+  {
+    "id": "AP_US_Government_31",
+    "question": "A lobbyist for the AARP (American Association of Retired Persons) would most likely be advocating for policies related to:",
+    "choices": {
+      "A": "Increased funding for K-12 education.",
+      "B": "Stricter environmental regulations.",
+      "C": "Social Security and Medicare benefits.",
+      "D": "Lower tariffs on imported technology."
+    },
+    "answer": "C",
+    "difficulty": 5,
+    "explanation": "AARP is a powerful interest group primarily focused on issues affecting older Americans, with Social Security and Medicare being central to its advocacy efforts."
+  },
+  {
+    "id": "AP_US_Government_32",
+    "question": "The Bill of Rights was added to the Constitution primarily to:",
+    "choices": {
+      "A": "Grant more power to the federal government.",
+      "B": "Protect individual liberties from potential government overreach.",
+      "C": "Establish a system of checks and balances.",
+      "D": "Define the process for amending the Constitution."
+    },
+    "answer": "B",
+    "difficulty": 4,
+    "explanation": "The first ten amendments, known as the Bill of Rights, were added to appease Anti-Federalists and to explicitly safeguard fundamental rights and freedoms of citizens against the power of the newly formed federal government."
+  },
+  {
+    "id": "AP_US_Government_33",
+    "question": "A significant difference between the House of Representatives and the Senate is:",
+    "choices": {
+      "A": "Members of the Senate are elected every two years, while House members serve six-year terms.",
+      "B": "The Senate has the sole power to impeach federal officials.",
+      "C": "The House represents districts of equal population, while the Senate provides equal representation for each state.",
+      "D": "Only Senators can vote on confirming presidential appointments."
+    },
+    "answer": "C",
+    "difficulty": 5,
+    "explanation": "The House of Representatives is designed to be proportional to population (representation by district), while the Senate provides equal representation to all states (two senators per state), regardless of population size."
+  },
+  {
+    "id": "AP_US_Government_34",
+    "question": "The term \"iron triangle\" describes a relationship between:",
+    "choices": {
+      "A": "The President, the Vice President, and the Speaker of the House.",
+      "B": "The judiciary, the executive bureaucracy, and the legislative oversight committees.",
+      "C": "Interest groups, congressional committees, and federal agencies.",
+      "D": "The Democratic Party, the Republican Party, and independent voters."
+    },
+    "answer": "C",
+    "difficulty": 7,
+    "explanation": "An iron triangle is a model that describes the mutually beneficial relationship between interest groups, congressional committees, and federal agencies that lobby and provide targeted services, policy benefits, and political support for each other."
+  },
+  {
+    "id": "AP_US_Government_35",
+    "question": "Which amendment to the Constitution guarantees the right to counsel in criminal proceedings?",
+    "choices": {
+      "A": "Fourth Amendment",
+      "B": "Fifth Amendment",
+      "C": "Sixth Amendment",
+      "D": "Eighth Amendment"
+    },
+    "answer": "C",
+    "difficulty": 5,
+    "explanation": "The Sixth Amendment explicitly guarantees the right to a speedy and public trial, the right to an attorney, and the right to confront one's accusers. Gideon v. Wainwright incorporated this right to the states."
+  },
+  {
+    "id": "AP_US_Government_36",
+    "question": "The Speaker of the House of Representatives is:",
+    "choices": {
+      "A": "An elected official by popular vote nationwide.",
+      "B": "The leader of the majority party and presides over the House.",
+      "C": "Appointed by the President to manage congressional relations.",
+      "D": "A non-partisan position elected by a two-thirds vote."
+    },
+    "answer": "B",
+    "difficulty": 5,
+    "explanation": "The Speaker of the House is the presiding officer of the House and is chosen by the members of the majority party. They are a key figure in setting the legislative agenda."
+  },
+  {
+    "id": "AP_US_Government_37",
+    "question": "Which of the following is a key characteristic of a bureaucracy?",
+    "choices": {
+      "A": "Decentralized decision-making and minimal rules.",
+      "B": "A clear hierarchy of authority and specialized division of labor.",
+      "C": "Short, temporary assignments for most employees.",
+      "D": "Emphasis on charismatic leadership rather than formal structure."
+    },
+    "answer": "B",
+    "difficulty": 6,
+    "explanation": "Bureaucracies, as described by Max Weber and observed in practice, are characterized by hierarchical structures, formal rules and procedures, division of labor, and impersonality."
+  },
+  {
+    "id": "AP_US_Government_38",
+    "question": "The \"full faith and credit\" clause of the Constitution requires states to:",
+    "choices": {
+      "A": "Submit all proposed laws to Congress for approval.",
+      "B": "Respect the public acts, records, and judicial proceedings of other states.",
+      "C": "Share federal tax revenue equally among all states.",
+      "D": "Allow citizens of any state to run for governor in their state."
+    },
+    "answer": "B",
+    "difficulty": 6,
+    "explanation": "Article IV, Section 1, mandates that states must honor official documents and judgments of other states. For example, a marriage or divorce granted in one state must be recognized in others."
+  },
+  {
+    "id": "AP_US_Government_39",
+    "question": "When a president uses a presidential memorandum or proclamation, they are primarily relying on which type of power?",
+    "choices": {
+      "A": "Legislative power granted by Congress.",
+      "B": "Judicial power established by the courts.",
+      "C": "Executive power derived from the Constitution.",
+      "D": "Treaty-making power with foreign nations."
+    },
+    "answer": "C",
+    "difficulty": 7,
+    "explanation": "Presidential memorandums and proclamations are tools used by the president to direct the executive branch and implement policy based on the inherent executive powers granted by Article II of the Constitution."
+  },
+  {
+    "id": "AP_US_Government_40",
+    "question": "Which of the following ideologies most emphasizes individual liberty, limited government intervention in the economy, and traditional social values?",
+    "choices": {
+      "A": "Socialism",
+      "B": "Liberalism",
+      "C": "Conservatism",
+      "D": "Libertarianism"
+    },
+    "answer": "C",
+    "difficulty": 5,
+    "explanation": "Conservatism typically advocates for free markets, lower taxes, reduced government spending, and a strong national defense, often coupled with a respect for traditional institutions and values."
+  },
+  {
+    "id": "AP_US_Government_41",
+    "question": "The \"Miranda warning\" is an example of the application of which amendment's protections?",
+    "choices": {
+      "A": "First Amendment",
+      "B": "Second Amendment",
+      "C": "Fourth Amendment",
+      "D": "Fifth Amendment"
+    },
+    "answer": "D",
+    "difficulty": 5,
+    "explanation": "The Miranda warning, which informs suspects of their right to remain silent and their right to an attorney, protects against self-incrimination, a key guarantee of the Fifth Amendment."
+  },
+  {
+    "id": "AP_US_Government_42",
+    "question": "What is the primary role of the Department of Justice?",
+    "choices": {
+      "A": "To conduct foreign diplomacy and manage international relations.",
+      "B": "To enforce federal laws, administer justice, and prosecute federal crimes.",
+      "C": "To oversee the nation's monetary policy and banking system.",
+      "D": "To regulate interstate transportation and infrastructure projects."
+    },
+    "answer": "B",
+    "difficulty": 5,
+    "explanation": "The Department of Justice, headed by the Attorney General, is the federal agency responsible for enforcing federal laws, represented by the U.S. Attorney's office in prosecutions and the FBI for investigations."
+  },
+  {
+    "id": "AP_US_Government_43",
+    "question": "The opinion of the Supreme Court that disagrees with the majority ruling is called a(n):",
+    "choices": {
+      "A": "Concurring opinion.",
+      "B": "Dissenting opinion.",
+      "C": "Amicus curiae brief.",
+      "D": "Majority opinion."
+    },
+    "answer": "B",
+    "difficulty": 4,
+    "explanation": "A dissenting opinion is written by one or more judges who disagree with the legal reasoning or conclusion of the majority opinion."
+  },
+  {
+    "id": "AP_US_Government_44",
+    "question": "Interest groups often engage in litigation to advance their policy goals by:",
+    "choices": {
+      "A": "Directly enacting new laws through the court system.",
+      "B": "Challenging existing laws or government actions in court.",
+      "C": "Appointing judges who will rule in their favor.",
+      "D": "Negotiating plea bargains for their members."
+    },
+    "answer": "B",
+    "difficulty": 7,
+    "explanation": "Litigation is a common strategy for interest groups to influence policy. They can file lawsuits to challenge laws or policies they oppose or to compel government action, effectively using the judiciary to shape public policy."
+  },
+  {
+    "id": "AP_US_Government_45",
+    "question": "The principle of \"federalism\" as established by the U.S. Constitution refers to:",
+    "choices": {
+      "A": "The division of power between the President and Congress.",
+      "B": "The division of power between the national government and state governments.",
+      "C": "The separation of powers among the legislative, executive, and judicial branches.",
+      "D": "The protection of individual rights from government infringement."
+    },
+    "answer": "B",
+    "difficulty": 4,
+    "explanation": "Federalism is a system of government in which power is divided and shared between a central national government and various regional or state governments."
+  },
+  {
+    "id": "AP_US_Government_46",
+    "question": "Which of the following is a formal check that Congress has on the President?",
+    "choices": {
+      "A": "The power to declare executive orders unconstitutional.",
+      "B": "The power to line-item veto parts of legislation passed by the President.",
+      "C": "The power to override a presidential veto with a two-thirds vote.",
+      "D": "The power to appoint cabinet members without presidential consultation."
+    },
+    "answer": "C",
+    "difficulty": 6,
+    "explanation": "Congress can override a presidential veto with a two-thirds majority vote in both the House and the Senate, demonstrating a significant check on the presidential power to reject legislation."
+  },
+  {
+    "id": "AP_US_Government_47",
+    "question": "The primary purpose of the Bill of Rights, as established in early Supreme Court interpretations, was to:",
+    "choices": {
+      "A": "Protect against actions of private individuals and corporations.",
+      "B": "Limit the power of state governments and prevent infringement on individual liberties.",
+      "C": "Grant new rights and privileges to citizens beyond those enumerated in the Constitution.",
+      "D": "Ensure the federal government had ultimate authority over all matters of public safety."
+    },
+    "answer": "B",
+    "difficulty": 4,
+    "explanation": "The Bill of Rights was initially intended to protect citizens from the potential overreach of the federal government. Through the process of incorporation via the Fourteenth Amendment, these protections were later applied to state governments."
+  },
+  {
+    "id": "AP_US_Government_48",
+    "question": "A political party's official stance on a particular issue, often detailed in its platform, is best described as its:",
+    "choices": {
+      "A": "Party identification",
+      "B": "Party organization",
+      "C": "Party ideology",
+      "D": "Party-in-government"
+    },
+    "answer": "C",
+    "difficulty": 3,
+    "explanation": "Party ideology refers to the system of beliefs and values that guide a political party's policy positions and overall goals."
+  },
+  {
+    "id": "AP_US_Government_49",
+    "question": "Which of the following scenarios best illustrates the concept of \"selective incorporation\"?",
+    "choices": {
+      "A": "The Supreme Court ruling that the Second Amendment applies to all states, not just the federal government.",
+      "B": "Congress passing a law that standardizes national educational requirements.",
+      "C": "A state legislature creating a new tax to fund public transportation.",
+      "D": "The President issuing an executive order to increase military spending."
+    },
+    "answer": "A",
+    "difficulty": 5,
+    "explanation": "Selective incorporation is the process by which the Supreme Court has selectively applied provisions of the Bill of Rights to the states through the Due Process Clause of the Fourteenth Amendment. The Second Amendment's application to states is a prime example."
+  },
+  {
+    "id": "AP_US_Government_50",
+    "question": "The \"iron triangle\" describes a mutually beneficial relationship between:",
+    "choices": {
+      "A": "The President, the Supreme Court, and the electorate.",
+      "B": "Lawmakers, lobbyists, and federal agencies.",
+      "C": "The Speaker of the House, the Senate Majority Leader, and the Chief Justice.",
+      "D": "Voters, media outlets, and political parties."
+    },
+    "answer": "B",
+    "difficulty": 6,
+    "explanation": "The iron triangle consists of congressional committees (lawmakers), interest groups (lobbyists), and bureaucratic agencies, which together often influence policy."
+  },
+  {
+    "id": "AP_US_Government_51",
+    "question": "Which of the following is a formal power of the President as Commander-in-Chief?",
+    "choices": {
+      "A": "To declare war",
+      "B": "To ratify treaties",
+      "C": "To deploy troops overseas",
+      "D": "To impeach and remove military officials"
+    },
+    "answer": "C",
+    "difficulty": 4,
+    "explanation": "While Congress has the power to declare war, the President, as Commander-in-Chief, has the authority to deploy military forces."
+  },
+  {
+    "id": "AP_US_Government_52",
+    "question": "A government system where power is divided between a national government and regional governments is known as:",
+    "choices": {
+      "A": "Unitary",
+      "B": "Federal",
+      "C": "Confederal",
+      "D": "Authoritarian"
+    },
+    "answer": "B",
+    "difficulty": 3,
+    "explanation": "Federalism is a system of government in which power is divided between a central, national government and state, regional, or local governments."
+  },
+  {
+    "id": "AP_US_Government_53",
+    "question": "The primary function of a political party's nomination process is to:",
+    "choices": {
+      "A": "Engage independent voters in the electoral process.",
+      "B": "Select the candidate who will represent the party in the general election.",
+      "C": "Raise campaign funds for all party members.",
+      "D": "Educate the public on the intricacies of the legislative process."
+    },
+    "answer": "B",
+    "difficulty": 5,
+    "explanation": "The nomination process, through primaries and caucuses, is the mechanism by which political parties choose their single candidate to compete in a general election."
+  },
+  {
+    "id": "AP_US_Government_54",
+    "question": "The \"necessary and proper\" clause, found in Article I, Section 8 of the Constitution, is significant because it:",
+    "choices": {
+      "A": "Explicitly limits the powers of Congress to those enumerated in the Constitution.",
+      "B": "Establishes the principle of judicial review.",
+      "C": "Grants Congress implied powers to carry out its enumerated powers.",
+      "D": "Defines the limits of state sovereignty."
+    },
+    "answer": "C",
+    "difficulty": 6,
+    "explanation": "The necessary and proper clause (also known as the elastic clause) allows Congress to pass laws that are not explicitly listed in the Constitution but are deemed necessary to execute its enumerated powers."
+  },
+  {
+    "id": "AP_US_Government_55",
+    "question": "A US Senator is elected for a term of:",
+    "choices": {
+      "A": "Two years",
+      "B": "Four years",
+      "C": "Six years",
+      "D": "Eight years"
+    },
+    "answer": "C",
+    "difficulty": 3,
+    "explanation": "Senators serve six-year terms, with elections staggered every two years so that approximately one-third of the Senate is up for election at any given time."
+  },
+  {
+    "id": "AP_US_Government_56",
+    "question": "The process by which individuals acquire their political attitudes and beliefs is called:",
+    "choices": {
+      "A": "Political socialization",
+      "B": "Political engagement",
+      "C": "Civic duty",
+      "D": "Party realignment"
+    },
+    "answer": "A",
+    "difficulty": 4,
+    "explanation": "Political socialization is the lifelong process through which individuals develop their political values, attitudes, and beliefs, influenced by family, education, peers, and media."
+  },
+  {
+    "id": "AP_US_Government_57",
+    "question": "Which of the following is a characteristic of a government that operates under a parliamentary system?",
+    "choices": {
+      "A": "The head of government is directly elected by the people independently of the legislature.",
+      "B": "The executive branch is separate from the legislative branch.",
+      "C": "The legislative branch is supreme and can dismiss the executive.",
+      "D": "There is a strict separation of powers between the executive and legislative branches."
+    },
+    "answer": "C",
+    "difficulty": 7,
+    "explanation": "In a parliamentary system, the executive (Prime Minister and cabinet) is drawn from the legislature and is accountable to it; the legislature can remove the executive through a vote of no confidence."
+  },
+  {
+    "id": "AP_US_Government_58",
+    "question": "The Communications Act of 1934, which established the Federal Communications Commission (FCC), is an example of:",
+    "choices": {
+      "A": "A legislative act creating a regulatory agency.",
+      "B": "A Supreme Court ruling on freedom of speech.",
+      "C": "A treaty between the United States and another country.",
+      "D": "A constitutional amendment limiting broadcast media."
+    },
+    "answer": "A",
+    "difficulty": 5,
+    "explanation": "The Communications Act of 1934 created the FCC, a federal agency tasked with regulating interstate and international communications by radio, television, wire, satellite, and cable."
+  },
+  {
+    "id": "AP_US_Government_59",
+    "question": "When interest groups attempt to influence public policy by contacting government officials directly, they are engaging in:",
+    "choices": {
+      "A": "Grassroots lobbying",
+      "B": "Public relations campaigns",
+      "C": "Direct lobbying",
+      "D": "Amicus curiae briefs"
+    },
+    "answer": "C",
+    "difficulty": 5,
+    "explanation": "Direct lobbying involves organized efforts by interest groups to influence policy by communicating directly with elected officials and their staffs."
+  },
+  {
+    "id": "AP_US_Government_60",
+    "question": "Which of the following Supreme Court cases established the principle of judicial review?",
+    "choices": {
+      "A": "Marbury v. Madison",
+      "B": "McCulloch v. Maryland",
+      "C": "Gideon v. Wainwright",
+      "D": "Miranda v. Arizona"
+    },
+    "answer": "A",
+    "difficulty": 4,
+    "explanation": "Marbury v. Madison (1803) is the landmark Supreme Court case that established the principle of judicial review, empowering the Court to declare laws unconstitutional."
+  },
+  {
+    "id": "AP_US_Government_61",
+    "question": "The process by which a bill becomes a law involves multiple steps, including committee review, floor debate, and presidential action. Which of the following is a key check on presidential power in this process?",
+    "choices": {
+      "A": "The Senate's power to filibuster",
+      "B": "The House's power to impeach",
+      "C": "Congressional override of a presidential veto",
+      "D": "The Supreme Court's power of judicial review"
+    },
+    "answer": "C",
+    "difficulty": 5,
+    "explanation": "Congress can override a presidential veto with a two-thirds vote in both the House and the Senate, thus acting as a check on the President's ability to reject legislation."
+  },
+  {
+    "id": "AP_US_Government_62",
+    "question": "A voter who emphasizes a candidate's policy positions and voting record over personal characteristics is best described as a voter who prioritizes:",
+    "choices": {
+      "A": "Party-line voting",
+      "B": "Issue voting",
+      "C": "Retrospective voting",
+      "D": "Candidate-centered voting"
+    },
+    "answer": "B",
+    "difficulty": 6,
+    "explanation": "Issue voting occurs when voters cast their ballots based on a candidate's or party's stance on specific policy issues."
+  },
+  {
+    "id": "AP_US_Government_63",
+    "question": "The US Constitution can be amended through a process that requires:",
+    "choices": {
+      "A": "A simple majority vote in both houses of Congress.",
+      "B": "A presidential executive order.",
+      "C": "Proposal by Congress and ratification by three-fourths of the states.",
+      "D": "A decision by the Supreme Court."
+    },
+    "answer": "C",
+    "difficulty": 5,
+    "explanation": "The most common method for amending the Constitution involves proposal by two-thirds of both houses of Congress and ratification by three-fourths of the state legislatures or conventions."
+  },
+  {
+    "id": "AP_US_Government_64",
+    "question": "Which of the following is an example of a civil liberty protected by the US Constitution?",
+    "choices": {
+      "A": "The right to vote for all citizens",
+      "B": "The freedom of speech",
+      "C": "The right to public education",
+      "D": "The right to a government-provided healthcare"
+    },
+    "answer": "B",
+    "difficulty": 4,
+    "explanation": "The freedom of speech is a fundamental civil liberty enshrined in the First Amendment of the US Constitution, protecting individuals from government censorship."
+  },
+  {
+    "id": "AP_US_Government_65",
+    "question": "A \"divided government\" occurs when:",
+    "choices": {
+      "A": "The President is from one party and Congress is controlled by the same party.",
+      "B": "The President is from one party and Congress is controlled by the opposing party.",
+      "C": "The Supreme Court overrules a law passed by Congress and signed by the President.",
+      "D": "State governments refuse to enforce federal laws."
+    },
+    "answer": "B",
+    "difficulty": 5,
+    "explanation": "Divided government refers to a situation where the executive branch (President) is controlled by one political party, and the legislative branch (Congress) is controlled by the opposing political party."
+  },
+  {
+    "id": "AP_US_Government_66",
+    "question": "The concept of \"stare decisis\" is most closely associated with:",
+    "choices": {
+      "A": "The President's power of executive privilege.",
+      "B": "The legislative process of overriding a veto.",
+      "C": "The judiciary's practice of following precedent.",
+      "D": "The Amendment process for the Constitution."
+    },
+    "answer": "C",
+    "difficulty": 6,
+    "explanation": "Stare decisis is a legal principle that guides courts to follow previous court decisions (precedents) when making rulings on similar cases."
+  },
+  {
+    "id": "AP_US_Government_67",
+    "question": "Which amendment prohibits the quartering of soldiers without the owner's consent?",
+    "choices": {
+      "A": "Third Amendment",
+      "B": "Fourth Amendment",
+      "C": "Fifth Amendment",
+      "D": "Sixth Amendment"
+    },
+    "answer": "A",
+    "difficulty": 4,
+    "explanation": "The Third Amendment to the US Constitution explicitly states that no soldier shall, in time of peace, be quartered in any house without the consent of the owner, nor in time of war, but in a manner prescribed by law."
+  },
+  {
+    "id": "AP_US_Government_68",
+    "question": "The \"pluralist theory\" of American politics suggests that:",
+    "choices": {
+      "A": "A single elite group controls government policy.",
+      "B": "Political power is fragmented among many competing interest groups.",
+      "C": "The majority of citizens directly influence policy decisions.",
+      "D": "Political parties are the primary drivers of policy outcomes."
+    },
+    "answer": "B",
+    "difficulty": 7,
+    "explanation": "Pluralism posits that power is dispersed among various groups with competing interests, and bargaining and compromise among these groups shape public policy."
+  },
+  {
+    "id": "AP_US_Government_69",
+    "question": "When the federal government spends more money than it collects in revenue, it incurs a:",
+    "choices": {
+      "A": "Trade surplus",
+      "B": "Budget surplus",
+      "C": "National debt",
+      "D": "Trade deficit"
+    },
+    "answer": "C",
+    "difficulty": 4,
+    "explanation": "The national debt is the total amount of money that the federal government owes to its creditors, accumulated through annual budget deficits (when spending exceeds revenue)."
+  },
+  {
+    "id": "AP_US_Government_70",
+    "question": "The primary role of the bureaucracy in the US federal government is to:",
+    "choices": {
+      "A": "Create legislation",
+      "B": "Interpret laws and render judgments.",
+      "C": "Implement and enforce laws passed by Congress.",
+      "D": "Appoint federal judges"
+    },
+    "answer": "C",
+    "difficulty": 5,
+    "explanation": "Bureaucracies, at the federal level, are responsible for the day-to-day administration and enforcement of policies and laws enacted by Congress and the President."
+  },
+  {
+    "id": "AP_US_Government_71",
+    "question": "Which of the following is a form of political participation that is NOT considered conventional?",
+    "choices": {
+      "A": "Voting in an election",
+      "B": "Donating to a political campaign",
+      "C": "Attending a political rally",
+      "D": "Engaging in civil disobedience"
+    },
+    "answer": "D",
+    "difficulty": 6,
+    "explanation": "Civil disobedience, such as protests or boycotts that break established laws, is considered unconventional political participation as it falls outside the standard, accepted forms of engagement like voting or campaign work."
+  },
+  {
+    "id": "AP_US_Government_72",
+    "question": "The concept of 'stare decisis' is most closely associated with which branch of the US government?",
+    "choices": {
+      "A": "The Legislative Branch",
+      "B": "The Executive Branch",
+      "C": "The Judicial Branch",
+      "D": "The Bureaucratic Agencies"
+    },
+    "answer": "C",
+    "difficulty": 6,
+    "explanation": "'Stare decisis' is a Latin term meaning 'to stand by things decided.' It is a fundamental principle of the common law system, where courts look to past, similar issues to guide their decisions. This is a core tenet of how the judicial branch operates."
+  },
+  {
+    "id": "AP_US_Government_73",
+    "question": "A policy that provides benefits to all citizens, regardless of their socioeconomic status, such as Social Security, is an example of what type of policy?",
+    "choices": {
+      "A": "Regulatory policy",
+      "B": "Distributive policy",
+      "C": "Redistributive policy",
+      "D": "Competitive policy"
+    },
+    "answer": "B",
+    "difficulty": 5,
+    "explanation": "Distributive policies distribute benefits broadly to the entire population or a large segment of it, often without directly taking from any specific group. Social Security is a prime example of a program that provides benefits to many individuals."
+  },
+  {
+    "id": "AP_US_Government_74",
+    "question": "The Lemon test, established in Lemon v. Kurtzman, is used by the Supreme Court to determine the constitutionality of laws concerning:",
+    "choices": {
+      "A": "Freedom of speech",
+      "B": "The right to bear arms",
+      "C": "The establishment of religion",
+      "D": "The right to privacy"
+    },
+    "answer": "C",
+    "difficulty": 7,
+    "explanation": "The Lemon test is a three-pronged rule used to assess whether a law violates the Establishment Clause of the First Amendment, which prohibits government endorsement of religion. The law must have a secular legislative purpose, its primary effect must not advance or inhibit religion, and it must not foster excessive government entanglement with religion."
+  },
+  {
+    "id": "AP_US_Government_75",
+    "question": "Which of the following powers is exclusively held by the Senate?",
+    "choices": {
+      "A": "Initiating revenue bills",
+      "B": "Impeaching and removing civil officers",
+      "C": "Confirming presidential appointments (e.g., cabinet secretaries, federal judges)",
+      "D": "Declaring war"
+    },
+    "answer": "C",
+    "difficulty": 4,
+    "explanation": "While the House has the power to impeach, the Senate has the sole power to try all impeachments. The Senate also has the exclusive power to confirm major presidential appointments and to ratify treaties. Initiating revenue bills is the House's power, and declaring war requires action from both chambers."
+  },
+  {
+    "id": "AP_US_Government_76",
+    "question": "The process by which citizens adopt their political beliefs and values is known as:",
+    "choices": {
+      "A": "Political socialization",
+      "B": "Political participation",
+      "C": "Political alienation",
+      "D": "Political efficacy"
+    },
+    "answer": "A",
+    "difficulty": 3,
+    "explanation": "Political socialization is the lifelong process through which individuals acquire political attitudes, values, and behaviors. This process is influenced by family, education, peer groups, and media."
+  },
+  {
+    "id": "AP_US_Government_77",
+    "question": "Which constitutional principle divides power between the national government and state governments?",
+    "choices": {
+      "A": "Separation of powers",
+      "B": "Checks and balances",
+      "C": "Federalism",
+      "D": "Judicial review"
+    },
+    "answer": "C",
+    "difficulty": 2,
+    "explanation": "Federalism is a system of government in which power is divided and shared between a central national government and state or regional governments."
+  },
+  {
+    "id": "AP_US_Government_78",
+    "question": "Pork-barrel spending refers to:",
+    "choices": {
+      "A": "Campaign finance regulations",
+      "B": "Appeals court rulings",
+      "C": "Legislation that directs specific funds to a member's home district or state",
+      "D": "The process of judicial review"
+    },
+    "answer": "C",
+    "difficulty": 5,
+    "explanation": "Pork-barrel legislation is a provision in a bill that provides a direct benefit to a specific district or state, often inserted into larger legislative packages. It is frequently criticized as wasteful spending but can be politically popular in the districts that receive the benefits."
+  },
+  {
+    "id": "AP_US_Government_79",
+    "question": "Which amendment to the Constitution guarantees the right to counsel in criminal proceedings?",
+    "choices": {
+      "A": "Fourth Amendment",
+      "B": "Fifth Amendment",
+      "C": "Sixth Amendment",
+      "D": "Eighth Amendment"
+    },
+    "answer": "C",
+    "difficulty": 6,
+    "explanation": "The Sixth Amendment to the U.S. Constitution guarantees, among other rights, the right to have the assistance of counsel for one's defense in criminal prosecutions. This was famously affirmed in Gideon v. Wainwright."
+  },
+  {
+    "id": "AP_US_Government_80",
+    "question": "A primary goal of the Founders in creating the Electoral College was to:",
+    "choices": {
+      "A": "Ensure that the popular vote winner always becomes president.",
+      "B": "Prevent the election of a president solely by popular vote, without sufficient intermediary support.",
+      "C": "Grant direct power to the states in presidential elections.",
+      "D": "Allow citizens to directly elect the president."
+    },
+    "answer": "B",
+    "difficulty": 7,
+    "explanation": "The Electoral College was a compromise between electing the president by popular vote and electing the president by a congressional vote. The Founders were concerned about an uninformed populace and preventing a demagogue from winning the presidency solely based on majority appeal without some level of elite or indirect input."
+  },
+  {
+    "id": "AP_US_Government_81",
+    "question": "The Supreme Court ruling in *Marbury v. Madison* (1803) established the principle of:",
+    "choices": {
+      "A": "Equal protection under the law",
+      "B": "Judicial review",
+      "C": "Federal supremacy",
+      "D": "Freedom of the press"
+    },
+    "answer": "B",
+    "difficulty": 4,
+    "explanation": "*Marbury v. Madison* is a landmark Supreme Court case that established the principle of judicial review, which is the power of the courts to declare laws or executive actions unconstitutional."
+  },
+  {
+    "id": "AP_US_Government_82",
+    "question": "Which of the following is an example of a civil liberty protected by the U.S. Constitution?",
+    "choices": {
+      "A": "The right to vote for any candidate",
+      "B": "Freedom of speech",
+      "C": "The right to a government-provided job",
+      "D": "The right to healthcare"
+    },
+    "answer": "B",
+    "difficulty": 3,
+    "explanation": "Civil liberties are freedoms that are guaranteed to individuals and protected from government intrusion, such as freedom of speech, religion, and the press, primarily found in the Bill of Rights. The other options are not guaranteed as fundamental rights by the Constitution."
+  },
+  {
+    "id": "AP_US_Government_83",
+    "question": "The principal function of the Department of Homeland Security is to:",
+    "choices": {
+      "A": "Regulate interstate commerce",
+      "B": "Oversee foreign diplomatic relations",
+      "C": "Protect the nation from domestic and international threats",
+      "D": "Manage the national budget"
+    },
+    "answer": "C",
+    "difficulty": 4,
+    "explanation": "Established after the September 11th attacks, the Department of Homeland Security consolidates various agencies to coordinate national efforts to prevent terrorism, improve immigration and customs enforcement, and respond to natural disasters."
+  },
+  {
+    "id": "AP_US_Government_84",
+    "question": "Which amendment guarantees that no person shall be compelled in any criminal case to be a witness against himself (the right against self-incrimination)?",
+    "choices": {
+      "A": "Third Amendment",
+      "B": "Fourth Amendment",
+      "C": "Fifth Amendment",
+      "D": "Seventh Amendment"
+    },
+    "answer": "C",
+    "difficulty": 5,
+    "explanation": "The Fifth Amendment contains several protections for individuals accused of crimes, including the right to remain silent and protection against double jeopardy. The right against self-incrimination is colloquially known as 'pleading the fifth.'"
+  },
+  {
+    "id": "AP_US_Government_85",
+    "question": "When a court draws upon precedent to guide its decisions, it is adhering to the principle of:",
+    "choices": {
+      "A": "Originalism",
+      "B": "Judicial activism",
+      "C": "Stare decisis",
+      "D": "Nullification"
+    },
+    "answer": "C",
+    "difficulty": 5,
+    "explanation": "As mentioned in question AP_US_Government_72, stare decisis, or 'to stand by things decided,' is the legal principle of determining points in litigation according to precedent."
+  },
+  {
+    "id": "AP_US_Government_86",
+    "question": "Which of the following is a characteristic of a divided government?",
+    "choices": {
+      "A": "The same political party controls the presidency, the House, and the Senate.",
+      "B": "Different political parties control the presidency and one or both houses of Congress.",
+      "C": "The Supreme Court is controlled by the same party as the presidency.",
+      "D": "All branches of government are controlled by independent politicians."
+    },
+    "answer": "B",
+    "difficulty": 4,
+    "explanation": "Divided government occurs when the political party controlling the executive branch (the presidency) is different from the political party that controls one or both chambers of the legislative branch (Congress)."
+  },
+  {
+    "id": "AP_US_Government_87",
+    "question": "Interest groups primarily seek to influence government policy by:",
+    "choices": {
+      "A": "Running their own candidates for office",
+      "B": "Lobbying elected officials and informing the public",
+      "C": "Directly enacting legislation",
+      "D": "Appointing federal judges"
+    },
+    "answer": "B",
+    "difficulty": 3,
+    "explanation": "Interest groups advocate for specific policies or issues by engaging in activities like lobbying, which involves direct communication with policymakers, and public relations efforts to shape public opinion."
+  },
+  {
+    "id": "AP_US_Government_88",
+    "question": "The Fourteenth Amendment's Equal Protection Clause has been interpreted by the Supreme Court to apply to actions taken by:",
+    "choices": {
+      "A": "Only the federal government",
+      "B": "Private businesses and individuals",
+      "C": "State and local governments",
+      "D": "International organizations"
+    },
+    "answer": "C",
+    "difficulty": 6,
+    "explanation": "The Equal Protection Clause of the Fourteenth Amendment prohibits states from denying any person within their jurisdiction the equal protection of the laws. While its application has been debated, its primary and most direct application is to state and local government actions."
+  },
+  {
+    "id": "AP_US_Government_89",
+    "question": "Which of the following is a formal power of the President of the United States?",
+    "choices": {
+      "A": "To declare war",
+      "B": "To command the armed forces",
+      "C": "To create new federal agencies",
+      "D": "To overturn Supreme Court decisions"
+    },
+    "answer": "B",
+    "difficulty": 3,
+    "explanation": "As Commander-in-Chief, the President has the explicit constitutional power to command the nation's armed forces. The other powers listed are either exclusively legislative (declaring war, creating agencies) or judicial (overturning court decisions)."
+  },
+  {
+    "id": "AP_US_Government_90",
+    "question": "The process by which a bill becomes a law involves multiple steps, including committee review, floor debate, and:",
+    "choices": {
+      "A": "Direct appeal to the Supreme Court",
+      "B": "Signature or veto by the President",
+      "C": "Unanimous consent of all citizens",
+      "D": "Approval by foreign governments"
+    },
+    "answer": "B",
+    "difficulty": 2,
+    "explanation": "After a bill passes both houses of Congress, it is sent to the President, who can sign it into law or veto it. This is a crucial step in the legislative process."
+  },
+  {
+    "id": "AP_US_Government_91",
+    "question": "What is the primary role of the Federal Reserve System?",
+    "choices": {
+      "A": "To collect taxes",
+      "B": "To manage the national debt",
+      "C": "To conduct monetary policy",
+      "D": "To enforce environmental regulations"
+    },
+    "answer": "C",
+    "difficulty": 5,
+    "explanation": "The Federal Reserve is the central banking system of the United States and is responsible for implementing monetary policy, which includes managing interest rates and the money supply to promote maximum employment, stable prices, and moderate long-term interest rates."
+  },
+  {
+    "id": "AP_US_Government_92",
+    "question": "The concept of a 'filibuster' is a tactic used in which legislative body?",
+    "choices": {
+      "A": "The House of Representatives",
+      "B": "The Senate",
+      "C": "The Supreme Court",
+      "D": "State legislatures only"
+    },
+    "answer": "B",
+    "difficulty": 6,
+    "explanation": "A filibuster is a parliamentary procedure in the Senate that allows a single senator or a group of senators to delay or block a vote on a bill or other measure by extending debate indefinitely. While some state legislatures have similar tactics, the term is most famously associated with the U.S. Senate."
+  },
+  {
+    "id": "AP_US_Government_93",
+    "question": "Which Supreme Court case incorporated the First Amendment's freedom of speech to apply to the states through the Due Process Clause of the Fourteenth Amendment?",
+    "choices": {
+      "A": "Gideon v. Wainwright",
+      "B": "Miranda v. Arizona",
+      "C": "Engel v. Vitale",
+      "D": "Gitlow v. New York"
+    },
+    "answer": "D",
+    "difficulty": 9,
+    "explanation": "In Gitlow v. New York (1925), the Supreme Court first applied freedom of speech protections from the First Amendment to the states via the Fourteenth Amendment's Due Process Clause, even though Gitlow's speech was not protected in that instance. This began the process of selective incorporation."
+  },
+  {
+    "id": "AP_US_Government_94",
+    "question": "A primary function of the bureaucracy in the United States is to:",
+    "choices": {
+      "A": "Make laws",
+      "B": "Interpret laws",
+      "C": "Implement and enforce laws",
+      "D": "Serve as the commander-in-chief"
+    },
+    "answer": "C",
+    "difficulty": 4,
+    "explanation": "The bureaucracy, composed of federal agencies, is responsible for carrying out and administering the laws passed by Congress and signed by the President. This involves creating regulations, issuing permits, and providing services."
+  },
+  {
+    "id": "AP_US_Government_95",
+    "question": "The Bill of Rights was added to the Constitution primarily to:",
+    "choices": {
+      "A": "Grant more power to the federal government",
+      "B": "Protect individual liberties from government infringement",
+      "C": "Establish the system of checks and balances",
+      "D": "Define the process for impeaching a president"
+    },
+    "answer": "B",
+    "difficulty": 3,
+    "explanation": "The Bill of Rights consists of the first ten amendments to the U.S. Constitution, which were added to appease Anti-Federalist concerns and explicitly guarantee fundamental rights and freedoms to individuals, thereby limiting the power of the federal government."
+  },
+  {
+    "id": "AP_US_Government_96",
+    "question": "Which of the following is a primary function of the bureaucracy in the United States?",
+    "choices": {
+      "A": "Directly electing members of Congress",
+      "B": "Implementing and enforcing laws passed by Congress",
+      "C": "Vetoing legislation passed by Congress",
+      "D": "Appointing federal judges without Senate confirmation"
+    },
+    "answer": "B",
+    "difficulty": 4,
+    "explanation": "The bureaucracy, comprised of federal agencies, is responsible for carrying out the day-to-day work of the government, which includes developing regulations and implementing the laws enacted by Congress."
+  },
+  {
+    "id": "AP_US_Government_97",
+    "question": "The concept of judicial review, established in *Marbury v. Madison*, is the power of the courts to:",
+    "choices": {
+      "A": "Impeach and remove federal officials",
+      "B": "Propose amendments to the Constitution",
+      "C": "Declare laws and executive actions unconstitutional",
+      "D": "Overrule decisions made by the President"
+    },
+    "answer": "C",
+    "difficulty": 5,
+    "explanation": "Judicial review grants the judicial branch the authority to review actions of the legislative and executive branches and determine if they comply with the Constitution."
+  },
+  {
+    "id": "AP_US_Government_98",
+    "question": "Which amendment to the Constitution guarantees the right to bear arms?",
+    "choices": {
+      "A": "First Amendment",
+      "B": "Second Amendment",
+      "C": "Fourth Amendment",
+      "D": "Fifth Amendment"
+    },
+    "answer": "B",
+    "difficulty": 3,
+    "explanation": "The Second Amendment protects the right of the people to keep and bear arms."
+  },
+  {
+    "id": "AP_US_Government_99",
+    "question": "A system of government where power is divided between a national government and state governments is known as:",
+    "choices": {
+      "A": "Unitary system",
+      "B": "Confederation",
+      "C": "Federalism",
+      "D": "Authoritarianism"
+    },
+    "answer": "C",
+    "difficulty": 4,
+    "explanation": "Federalism is a system characterized by the division of powers between a central government and regional governments (states)."
+  },
+  {
+    "id": "AP_US_Government_100",
+    "question": "In the U.S. Congress, the Speaker of the House is a member of which party and is responsible for:",
+    "choices": {
+      "A": "Minority party; presiding over the Senate",
+      "B": "Majority party; presiding over the House of Representatives",
+      "C": "Minority party; leading the opposition",
+      "D": "Majority party; serving as Chief Justice of the Supreme Court"
+    },
+    "answer": "B",
+    "difficulty": 5,
+    "explanation": "The Speaker of the House is the leader of the majority party in the House and presides over its sessions, setting the agenda and maintaining order."
+  },
+  {
+    "id": "AP_US_Government_101",
+    "question": "The primary role of political parties in the United States is to:",
+    "choices": {
+      "A": "Advise the President on foreign policy",
+      "B": "Nominate candidates for public office and contest elections",
+      "C": "Interpret the Constitution during court cases",
+      "D": "Oversee the implementation of federal regulations"
+    },
+    "answer": "B",
+    "difficulty": 4,
+    "explanation": "Political parties are organizations that aim to win elections and control government by nominating candidates and mobilizing voters."
+  },
+  {
+    "id": "AP_US_Government_102",
+    "question": "Which clause of the Constitution has been interpreted to allow the federal government to expand its powers beyond those explicitly listed?",
+    "choices": {
+      "A": "Supremacy Clause",
+      "B": "Commerce Clause",
+      "C": "Necessary and Proper Clause",
+      "D": "Equal Protection Clause"
+    },
+    "answer": "C",
+    "difficulty": 7,
+    "explanation": "The Necessary and Proper Clause (also known as the Elastic Clause) grants Congress the power to make laws that are necessary and proper for carrying into execution its enumerated powers, allowing for broad interpretation."
+  },
+  {
+    "id": "AP_US_Government_103",
+    "question": "The process by which citizens learn about political values and beliefs is called:",
+    "choices": {
+      "A": "Political socialization",
+      "B": "Civic engagement",
+      "C": "Gerrymandering",
+      "D": "Filibustering"
+    },
+    "answer": "A",
+    "difficulty": 4,
+    "explanation": "Political socialization is the lifelong process through which individuals acquire political attitudes, values, and beliefs, often influenced by family, education, and media."
+  },
+  {
+    "id": "AP_US_Government_104",
+    "question": "A case that reaches the Supreme Court most commonly involves an appeal from a:",
+    "choices": {
+      "A": "State supreme court or a federal circuit court of appeals",
+      "B": "Local town council",
+      "C": "Presidential candidate",
+      "D": "Member of the House of Representatives"
+    },
+    "answer": "A",
+    "difficulty": 6,
+    "explanation": "The Supreme Court primarily hears cases on appeal from lower federal courts (circuit courts) or the highest state courts when a federal question is involved."
+  },
+  {
+    "id": "AP_US_Government_105",
+    "question": "Which of the following is a power reserved to the states by the Tenth Amendment?",
+    "choices": {
+      "A": "Coining money",
+      "B": "Regulating interstate commerce",
+      "C": "Conducting elections",
+      "D": "Declaring war"
+    },
+    "answer": "C",
+    "difficulty": 5,
+    "explanation": "The Tenth Amendment reserves powers not delegated to the federal government, nor prohibited to the states, to the states respectively, or to the people. Conducting elections falls under this category."
+  },
+  {
+    "id": "AP_US_Government_106",
+    "question": "The free exercise clause of the First Amendment protects citizens' right to:",
+    "choices": {
+      "A": "Assemble peacefully",
+      "B": "Publish their opinions in newspapers",
+      "C": "Practice any religion",
+      "D": "Petition the government for redress of grievances"
+    },
+    "answer": "C",
+    "difficulty": 5,
+    "explanation": "The free exercise clause specifically protects the right of individuals to practice their religion without government interference."
+  },
+  {
+    "id": "AP_US_Government_107",
+    "question": "The Voting Rights Act of 1965 aimed to overcome legal barriers at the state and local levels that prevented African Americans from exercising their right to vote, primarily by:",
+    "choices": {
+      "A": "Establishing a national voting age",
+      "B": "Outlawing literacy tests and other discriminatory practices",
+      "C": "Requiring all elections to be held on Tuesdays",
+      "D": "Creating a national voter registration database"
+    },
+    "answer": "B",
+    "difficulty": 6,
+    "explanation": "The Voting Rights Act directly addressed and prohibited discriminatory voting practices such as poll taxes and literacy tests that had historically disenfranchised African Americans."
+  },
+  {
+    "id": "AP_US_Government_108",
+    "question": "Which of the following is a formal check the President has on the legislative branch?",
+    "choices": {
+      "A": "The power to line-item veto legislation",
+      "B": "The power to appoint members of congressional committees",
+      "C": "The power to veto legislation passed by Congress",
+      "D": "The power to impeach members of Congress"
+    },
+    "answer": "C",
+    "difficulty": 4,
+    "explanation": "The President can veto bills passed by Congress, preventing them from becoming law, though Congress can override a veto with a two-thirds vote."
+  },
+  {
+    "id": "AP_US_Government_109",
+    "question": "The establishment clause of the First Amendment has been interpreted by the Supreme Court to mean that:",
+    "choices": {
+      "A": "Individuals can be compelled to salute the flag",
+      "B": "Government cannot establish a religion or favor one religion over others",
+      "C": "Religious symbols are banned from public spaces",
+      "D": "Schools must offer religious instruction"
+    },
+    "answer": "B",
+    "difficulty": 7,
+    "explanation": "The establishment clause prevents the government from creating an official religion or showing preference for any particular religion, ensuring separation of church and state."
+  },
+  {
+    "id": "AP_US_Government_110",
+    "question": "When interest groups try to influence public policy by directly contacting government officials, they are engaging in:",
+    "choices": {
+      "A": "Grassroots lobbying",
+      "B": "Electioneering",
+      "C": "Direct lobbying",
+      "D": "Public relations"
+    },
+    "answer": "C",
+    "difficulty": 5,
+    "explanation": "Direct lobbying involves interest groups communicating directly with policymakers (legislators, bureaucrats) to persuade them on specific issues."
+  },
+  {
+    "id": "AP_US_Government_111",
+    "question": "In the U.S. Constitution, the principle of separation of powers divides governmental authority among:",
+    "choices": {
+      "A": "The federal government and state governments",
+      "B": "The executive, legislative, and judicial branches",
+      "C": "The military, the police, and the emergency services",
+      "D": "The President, the Vice President, and the Cabinet"
+    },
+    "answer": "B",
+    "difficulty": 4,
+    "explanation": "The U.S. Constitution establishes three distinct branches of government (executive, legislative, and judicial) with their own powers and responsibilities."
+  },
+  {
+    "id": "AP_US_Government_112",
+    "question": "The concept of \"full faith and credit\" as applied to the states means that:",
+    "choices": {
+      "A": "States must provide equal protection under the law",
+      "B": "States must honor the public acts, records, and judicial proceedings of other states",
+      "C": "States cannot discriminate against citizens of other states",
+      "D": "States must extradite criminals to the state where the crime was committed"
+    },
+    "answer": "B",
+    "difficulty": 6,
+    "explanation": "Article IV of the Constitution mandates that states must respect the laws and court decisions of other states."
+  },
+  {
+    "id": "AP_US_Government_113",
+    "question": "Which of the following is a key characteristic of a federal bureaucracy?",
+    "choices": {
+      "A": "It is directly elected by the populace",
+      "B": "It operates under the direction of the President and Congress",
+      "C": "It is completely independent of any government oversight",
+      "D": "Its primary function is to pass laws"
+    },
+    "answer": "B",
+    "difficulty": 5,
+    "explanation": "Bureaucracies are designed to implement and administer federal laws, and they operate within the framework established by the executive (President) and legislative (Congress) branches."
+  },
+  {
+    "id": "AP_US_Government_114",
+    "question": "A primary criticism of the Electoral College is that it:",
+    "choices": {
+      "A": "Always results in a clear winner of the presidency",
+      "B": "Can lead to a president winning without winning the popular vote",
+      "C": "Increases voter turnout in presidential elections",
+      "D": "Grants too much power to individual voters"
+    },
+    "answer": "B",
+    "difficulty": 7,
+    "explanation": "The Electoral College system allows for a candidate to win the presidency by securing a majority of electoral votes, even if they do not win the national popular vote."
+  },
+  {
+    "id": "AP_US_Government_115",
+    "question": "The term \"iron triangle\" refers to the policy-making relationship among:",
+    "choices": {
+      "A": "The President, the Supreme Court, and the Senate",
+      "B": "Interest groups, congressional committees, and government agencies",
+      "C": "The media, political parties, and voters",
+      "D": "The military, the police, and the FBI"
+    },
+    "answer": "B",
+    "difficulty": 7,
+    "explanation": "An iron triangle describes a mutually beneficial relationship between an interest group, a congressional committee (or subcommittee), and a bureaucratic agency that often dominates a particular policy area."
+  },
+  {
+    "id": "AP_US_Government_116",
+    "question": "Which Supreme Court case incorporated the exclusionary rule to the states?",
+    "choices": {
+      "A": "*Gideon v. Wainwright*",
+      "B": "*Miranda v. Arizona*",
+      "C": "*Mapp v. Ohio*",
+      "D": "*Tinker v. Des Moines*"
+    },
+    "answer": "C",
+    "difficulty": 8,
+    "explanation": "In *Mapp v. Ohio* (1961), the Supreme Court ruled that evidence obtained in violation of the Fourth Amendment is inadmissible in court at the state level."
+  },
+  {
+    "id": "AP_US_Government_117",
+    "question": "The Fourteenth Amendment's Equal Protection Clause has primarily been used to strike down laws that:",
+    "choices": {
+      "A": "Prohibit the free exercise of religion",
+      "B": "Discriminate against specific groups of people",
+      "C": "Restrict freedom of speech",
+      "D": "Allow for unreasonable searches and seizures"
+    },
+    "answer": "B",
+    "difficulty": 6,
+    "explanation": "The Equal Protection Clause requires that states treat all individuals within their jurisdiction equally under the law, and it has been a crucial tool in challenging discriminatory legislation."
+  },
+  {
+    "id": "AP_US_Government_118",
+    "question": "A government in which independent states grant significant powers to a central government, but retain sovereignty, is most closely described as a:",
+    "choices": {
+      "A": "Federal system",
+      "B": "Unitary system",
+      "C": "Confederation",
+      "D": "Parliamentary system"
+    },
+    "answer": "C",
+    "difficulty": 5,
+    "explanation": "A confederation is a system where sovereign states delegate certain powers to a central government but retain ultimate authority."
+  },
+  {
+    "id": "AP_US_Government_119",
+    "question": "Which of the following is an example of a linkage institution?",
+    "choices": {
+      "A": "The Supreme Court",
+      "B": "The Department of Defense",
+      "C": "A political party",
+      "D": "The House of Representatives"
+    },
+    "answer": "C",
+    "difficulty": 4,
+    "explanation": "Linkage institutions connect citizens to the government by helping to shape public opinion and influence policy. Political parties, interest groups, media, and elections are examples."
+  },
+  {
+    "id": "AP_US_Government_120",
+    "question": "The \"banana republic\" phenomenon, often discussed in political science, refers to a state that is:",
+    "choices": {
+      "A": "Extremely wealthy due to natural resources",
+      "B": "Politically unstable and economically dependent on a single export",
+      "C": "A model of direct democracy",
+      "D": "A strong, centralized state with minimal corruption"
+    },
+    "answer": "B",
+    "difficulty": 8,
+    "explanation": "The term 'banana republic' is generally used to describe a politically unstable country, typically in Latin America, whose economy is dominated by foreign companies and is dependent on a single export crop, leading to significant inequality and corruption."
+  },
+  {
+    "id": "AP_US_Government_121",
+    "question": "A provision in a bill that directs funds to a specific project or recipient in a legislator's district, often added through the appropriations process, is known as a(n):",
+    "choices": {
+      "A": "filibuster",
+      "B": "pork-barrel spending",
+      "C": "logrolling",
+      "D": "cloture"
+    },
+    "answer": "B",
+    "difficulty": 4,
+    "explanation": "Pork-barrel spending refers to government spending for localized projects that are secured through a legislator's efforts to bring funds to their home district. Filibusters and cloture are Senate procedures related to debate, and logrolling is the practice of exchanging votes."
+  },
+  {
+    "id": "AP_US_Government_122",
+    "question": "The Supreme Court case *Marbury v. Madison* (1803) is most significant for establishing the principle of:",
+    "choices": {
+      "A": "separation of powers",
+      "B": "federalism",
+      "C": "judicial review",
+      "D": "popular sovereignty"
+    },
+    "answer": "C",
+    "difficulty": 3,
+    "explanation": "*Marbury v. Madison* established the Supreme Court's power to review the constitutionality of laws passed by Congress and actions taken by the executive branch, a power known as judicial review."
+  },
+  {
+    "id": "AP_US_Government_123",
+    "question": "Which of the following is a primary function of political parties in the United States?",
+    "choices": {
+      "A": "Acting as independent arbiters of truth in political discourse",
+      "B": "Recruiting, nominating, and supporting candidates for public office",
+      "C": "Ensuring strict adherence to bureaucratic regulations",
+      "D": "Directly administering federal election processes"
+    },
+    "answer": "B",
+    "difficulty": 5,
+    "explanation": "A core function of political parties is to mobilize voters and support candidates for elected positions. The other options describe roles that are not primary functions of political parties."
+  },
+  {
+    "id": "AP_US_Government_124",
+    "question": "The process by which individuals gain their political attitudes and values is known as:",
+    "choices": {
+      "A": "civic engagement",
+      "B": "political socialization",
+      "C": "gerrymandering",
+      "D": "party realignment"
+    },
+    "answer": "B",
+    "difficulty": 4,
+    "explanation": "Political socialization is the lifelong process through which individuals acquire their political beliefs and values, influenced by family, education, media, and other social factors."
+  },
+  {
+    "id": "AP_US_Government_125",
+    "question": "Which clause of the First Amendment protects citizens' right to believe in any religion or none at all and prohibits government from establishing a religion?",
+    "choices": {
+      "A": "Free Exercise Clause",
+      "B": "Establishment Clause",
+      "C": "Freedom of Speech Clause",
+      "D": "Freedom of the Press Clause"
+    },
+    "answer": "B",
+    "difficulty": 3,
+    "explanation": "The Establishment Clause of the First Amendment prevents the government from establishing or endorsing a religion, ensuring a separation between church and state. The Free Exercise Clause protects the right to practice religion freely."
+  },
+  {
+    "id": "AP_US_Government_126",
+    "question": "Which of the following is NOT a power reserved to the states by the Tenth Amendment?",
+    "choices": {
+      "A": "Establishing local governments",
+      "B": "Regulating interstate commerce",
+      "C": "Conducting elections",
+      "D": "Issuing driver's licenses"
+    },
+    "answer": "B",
+    "difficulty": 7,
+    "explanation": "The power to regulate interstate commerce is an enumerated power of the federal government, as stated in Article I, Section 8 of the Constitution. Powers like establishing local governments, conducting elections, and issuing licenses are typically reserved to the states."
+  },
+  {
+    "id": "AP_US_Government_127",
+    "question": "In the United States, lobbying is a way for:",
+    "choices": {
+      "A": "Lobbyists to directly enact legislation",
+      "B": "Interest groups to influence policymakers",
+      "C": "The judiciary to interpret laws",
+      "D": "Political parties to raise campaign funds exclusively"
+    },
+    "answer": "B",
+    "difficulty": 5,
+    "explanation": "Lobbying is the act of attempting to influence decisions made by officials in a government, most often legislators or members of regulatory agencies. It is a key activity for interest groups."
+  },
+  {
+    "id": "AP_US_Government_128",
+    "question": "The principle of *stare decisis* is most closely associated with which aspect of the judicial system?",
+    "choices": {
+      "A": "The appointment of federal judges",
+      "B": "The adherence to precedent in court decisions",
+      "C": "The process of impeachment for judges",
+      "D": "The power of judicial review"
+    },
+    "answer": "B",
+    "difficulty": 6,
+    "explanation": "*Stare decisis* is Latin for 'to stand by things decided.' It is the legal principle of determining points in litigation according to precedent, meaning courts look to past decisions for guidance."
+  },
+  {
+    "id": "AP_US_Government_129",
+    "question": "A government system where power is divided between a national government and regional governments is called:",
+    "choices": {
+      "A": "Unitary system",
+      "B": "Confederal system",
+      "C": "Federal system",
+      "D": "Authoritarian system"
+    },
+    "answer": "C",
+    "difficulty": 3,
+    "explanation": "A federal system is characterized by the division of powers between a central (national) government and constituent political units (states or provinces)."
+  },
+  {
+    "id": "AP_US_Government_130",
+    "question": "The Supreme Court case *Gideon v. Wainwright* (1963) guaranteed the right to:",
+    "choices": {
+      "A": "Remain silent during police interrogation",
+      "B": "Have an attorney present during questioning and trial",
+      "C": "Be free from unreasonable searches and seizures",
+      "D": "Practice religion freely"
+    },
+    "answer": "B",
+    "difficulty": 4,
+    "explanation": "*Gideon v. Wainwright* established that the Sixth Amendment requires states to provide legal counsel to indigent defendants in felony cases. This is often referred to as the right to an attorney."
+  },
+  {
+    "id": "AP_US_Government_131",
+    "question": "Which of the following is a formal check that the legislative branch has on the executive branch?",
+    "choices": {
+      "A": "Issuing executive orders",
+      "B": "Impeaching and removing the President",
+      "C": "Appointing Supreme Court justices",
+      "D": "Declaring laws unconstitutional"
+    },
+    "answer": "B",
+    "difficulty": 6,
+    "explanation": "Congress has the power to impeach and remove the President from office. Issuing executive orders is an executive power, appointing justices is an executive power (with Senate confirmation), and declaring laws unconstitutional is a judicial power."
+  },
+  {
+    "id": "AP_US_Government_132",
+    "question": "The concept of cooperative federalism, sometimes referred to as 'marble-cake federalism,' is characterized by:",
+    "choices": {
+      "A": "Strict separation of powers between federal and state governments",
+      "B": "Clear divisions of authority between different levels of government",
+      "C": "Intermingled responsibilities and cooperation between federal and state governments",
+      "D": "Dominance of state governments over the federal government"
+    },
+    "answer": "C",
+    "difficulty": 7,
+    "explanation": "Cooperative federalism describes a system where the federal and state governments share powers and responsibilities, leading to an intermingling of functions, unlike the clearer distinctions in dual federalism ('layer-cake federalism')."
+  },
+  {
+    "id": "AP_US_Government_133",
+    "question": "Which of the following best describes the role of the bureaucracy in the United States?",
+    "choices": {
+      "A": "To create legislation that governs the nation",
+      "B": "To interpret laws passed by Congress",
+      "C": "To implement and enforce public policy",
+      "D": "To directly oversee judicial appointments"
+    },
+    "answer": "C",
+    "difficulty": 4,
+    "explanation": "The bureaucracy, comprising executive agencies, is primarily responsible for carrying out the laws enacted by Congress and managing the day-to-day operations of the government. They implement and enforce policy."
+  },
+  {
+    "id": "AP_US_Government_134",
+    "question": "The Fourteenth Amendment's Equal Protection Clause has been interpreted by the Supreme Court to apply to:",
+    "choices": {
+      "A": "Only actions taken by the federal government",
+      "B": "Only actions taken by state governments",
+      "C": "Actions taken by both federal and state governments",
+      "D": "Only actions related to voting rights"
+    },
+    "answer": "C",
+    "difficulty": 6,
+    "explanation": "While originally applied to states, the Supreme Court has incorporated most of the Bill of Rights to apply to the states through the Fourteenth Amendment, and the Equal Protection Clause itself is a cornerstone of civil rights protections against both state and federal actions."
+  },
+  {
+    "id": "AP_US_Government_135",
+    "question": "A primary difference between civil liberties and civil rights is that:",
+    "choices": {
+      "A": "Civil liberties are protections against government actions, while civil rights are protections against discrimination.",
+      "B": "Civil rights apply to all individuals, while civil liberties only apply to citizens.",
+      "C": "Civil liberties involve economic freedoms, while civil rights involve political freedoms.",
+      "D": "There is no significant difference between them."
+    },
+    "answer": "A",
+    "difficulty": 5,
+    "explanation": "Civil liberties are fundamental rights and freedoms that protect individuals from arbitrary government interference (e.g., freedom of speech). Civil rights are guarantees of equal treatment and protection under the law, particularly against discrimination by governments and private individuals."
+  },
+  {
+    "id": "AP_US_Government_136",
+    "question": "Which of the following is an example of fiscal policy?",
+    "choices": {
+      "A": "The Federal Reserve raising interest rates",
+      "B": "Congress passing a bill to increase government spending on infrastructure",
+      "C": "The President issuing a directive to a regulatory agency",
+      "D": "The Supreme Court ruling on the constitutionality of a tax law"
+    },
+    "answer": "B",
+    "difficulty": 5,
+    "explanation": "Fiscal policy refers to the use of government spending and taxation to influence the economy. Congress's decision to increase spending on infrastructure is a direct example of fiscal policy. Raising interest rates is monetary policy."
+  },
+  {
+    "id": "AP_US_Government_137",
+    "question": "What is the primary role of the Speaker of the House?",
+    "choices": {
+      "A": "To preside over the Senate",
+      "B": "To interpret the Constitution",
+      "C": "To lead the majority party in the House and preside over its sessions",
+      "D": "To lead the Department of Justice"
+    },
+    "answer": "C",
+    "difficulty": 4,
+    "explanation": "The Speaker of the House is the presiding officer of the House of Representatives and the leader of the majority party within the House. This individual plays a crucial role in setting the legislative agenda."
+  },
+  {
+    "id": "AP_US_Government_138",
+    "question": "The media's role in agenda-setting primarily involves:",
+    "choices": {
+      "A": "Deciding which court cases to hear",
+      "B": "Influencing which issues the public and policymakers consider important",
+      "C": "Directly writing legislation for Congress",
+      "D": "Controlling the outcome of presidential elections"
+    },
+    "answer": "B",
+    "difficulty": 6,
+    "explanation": "Agenda-setting is the concept that the media influences the importance placed on the topics they cover. By choosing what to report and how much attention to give it, the media can shape public perception of what issues are most critical."
+  },
+  {
+    "id": "AP_US_Government_139",
+    "question": "A direct democracy is a system where:",
+    "choices": {
+      "A": "Citizens elect representatives to make decisions on their behalf",
+      "B": "Citizens directly participate in decision-making and law-making",
+      "C": "A single leader holds absolute power",
+      "D": "Power is divided between a national and regional government"
+    },
+    "answer": "B",
+    "difficulty": 4,
+    "explanation": "In a direct democracy, citizens participate directly in decision-making, often through mechanisms like referendums and initiatives, rather than electing representatives. The US is primarily a representative democracy."
+  },
+  {
+    "id": "AP_US_Government_140",
+    "question": "The 'full faith and credit' clause of the Constitution requires states to:",
+    "choices": {
+      "A": "Grant citizens of other states the same rights and privileges",
+      "B": "Respect the public acts, records, and judicial proceedings of other states",
+      "C": "Cooperate on matters of national defense",
+      "D": "Submit all proposed laws to the federal government for approval"
+    },
+    "answer": "B",
+    "difficulty": 5,
+    "explanation": "The 'full faith and credit' clause (Article IV, Section 1) mandates that states must recognize and respect the legal decisions and documents of other states. Article IV, Section 2 covers privileges and immunities of citizens amongst states."
+  },
+  {
+    "id": "AP_US_Government_141",
+    "question": "Which of the following actions is an example of the President exercising informal powers?",
+    "choices": {
+      "A": "Appointing a Supreme Court justice",
+      "B": "Vetoing a bill passed by Congress",
+      "C": "Issuing an executive order to change a government policy",
+      "D": "Negotiating a treaty with a foreign nation"
+    },
+    "answer": "C",
+    "difficulty": 6,
+    "explanation": "Formal powers are explicitly granted by the Constitution (e.g., appointing justices, vetoing bills, making treaties). Executive orders are a means by which presidents can exert influence without explicit congressional approval, thus often considered an informal power, although their scope is debated."
+  },
+  {
+    "id": "AP_US_Government_142",
+    "question": "A political system in which power is held by a small group of people who are not accountable to the electorate is best described as:",
+    "choices": {
+      "A": "Democracy",
+      "B": "Oligarchy",
+      "C": "Monarchy",
+      "D": "Anarchy"
+    },
+    "answer": "B",
+    "difficulty": 4,
+    "explanation": "An oligarchy is a form of power structure in which power rests with a small number of people. These people might be distinguished by nobility, wealth, family ties, education, or corporate, religious or military control."
+  },
+  {
+    "id": "AP_US_Government_143",
+    "question": "The 'clear and present danger' test, established in *Schenck v. United States* (1919), was a standard used by the courts to determine:",
+    "choices": {
+      "A": "The constitutionality of search warrants",
+      "B": "The limits of freedom of speech",
+      "C": "The legality of corporate campaign donations",
+      "D": "The rights of defendants in criminal trials"
+    },
+    "answer": "B",
+    "difficulty": 7,
+    "explanation": "The 'clear and present danger' test was an early framework used by courts to determine if speech was protected under the First Amendment. Speech that posed a clear and present danger of causing harm could be restricted."
+  },
+  {
+    "id": "AP_US_Government_144",
+    "question": "Which of the following is a key concern for advocates of campaign finance reform?",
+    "choices": {
+      "A": "Ensuring voter turnout is as high as possible",
+      "B": "Preventing corruption and the appearance of corruption in politics",
+      "C": "Strengthening the influence of political parties",
+      "D": "Reducing the amount of media coverage of elections"
+    },
+    "answer": "B",
+    "difficulty": 5,
+    "explanation": "Campaign finance reform efforts often aim to limit the influence of money in politics to prevent quid pro quo corruption and maintain public trust by avoiding situations that might appear corrupt, even if not explicitly illegal."
+  },
+  {
+    "id": "AP_US_Government_145",
+    "question": "The process by which the Supreme Court has applied most of the Bill of Rights to the states is called:",
+    "choices": {
+      "A": "Judicial activism",
+      "B": "Selective incorporation",
+      "C": "Stare decisis",
+      "D": "Writ of certiorari"
+    },
+    "answer": "B",
+    "difficulty": 6,
+    "explanation": "Selective incorporation is the process through which the Supreme Court has applied individual rights from the Bill of Rights to the states using the Due Process Clause of the Fourteenth Amendment."
+  },
+  {
+    "id": "AP_US_Government_146",
+    "question": "When government regulations become overly burdensome and stifle economic activity, critics often argue that this demonstrates:",
+    "choices": {
+      "A": "The benefits of a laissez-faire economy",
+      "B": "The effectiveness of checks and balances",
+      "C": "The overreach of bureaucratic power",
+      "D": "The importance of civil liberties"
+    },
+    "answer": "C",
+    "difficulty": 5,
+    "explanation": "This scenario describes a common criticism of the bureaucracy, where extensive regulations, even if well-intentioned, can lead to excessive red tape and hinder economic efficiency. This is seen as an example of bureaucratic overreach."
+  },
+  {
+    "id": "AP_US_Government_147",
+    "question": "Which of the following scenarios best illustrates the concept of cooperative federalism?",
+    "choices": {
+      "A": "The federal government mandates specific environmental regulations that all states must adhere to, providing no financial assistance.",
+      "B": "The Supreme Court strikes down a state law for violating a clause in the U.S. Constitution.",
+      "C": "The federal government provides funding to states for highway construction, requiring states to meet certain federal guidelines for the use of those funds.",
+      "D": "States independently create their own unique systems for voter registration without any federal oversight or standardized procedures."
+    },
+    "answer": "C",
+    "difficulty": 4,
+    "explanation": "Cooperative federalism, also known as marble-cake federalism, is characterized by shared powers and responsibilities between the federal and state governments, often seen in federal grants-in-aid programs where the federal government provides funding and states implement programs under federal guidelines."
+  },
+  {
+    "id": "AP_US_Government_148",
+    "question": "A citizen is concerned about the potential for a president to abuse executive power. Which constitutional principle is most directly aimed at preventing such abuse?",
+    "choices": {
+      "A": "Federalism",
+      "B": "Judicial Review",
+      "C": "Separation of Powers",
+      "D": "Popular Sovereignty"
+    },
+    "answer": "C",
+    "difficulty": 5,
+    "explanation": "The separation of powers divides governmental authority among three distinct branches (legislative, executive, and judicial) to prevent any one branch from becoming too powerful, thus mitigating the risk of executive abuse."
+  },
+  {
+    "id": "AP_US_Government_149",
+    "question": "The Free Exercise Clause of the First Amendment protects citizens' right to:",
+    "choices": {
+      "A": "Practice any religion they choose, as long as it does not infringe on public safety or order.",
+      "B": "Disestablish a national religion and prevent government funding of religious institutions.",
+      "C": "Express their religious beliefs through public protests and demonstrations.",
+      "D": "Hold religious ceremonies in public schools without government interference."
+    },
+    "answer": "A",
+    "difficulty": 6,
+    "explanation": "The Free Exercise Clause protects individuals' right to believe and practice their religion freely. This right is not absolute and can be limited if the practice violates neutral laws of general applicability or endangers public safety."
+  },
+  {
+    "id": "AP_US_Government_150",
+    "question": "Which of the following is a primary function of political parties in the United States?",
+    "choices": {
+      "A": "To act as independent arbiters of truth in political discourse.",
+      "B": "To nominate candidates for public office and run campaigns.",
+      "C": "To directly conduct all election processes without public involvement.",
+      "D": "To interpret laws and resolve legal disputes between citizens."
+    },
+    "answer": "B",
+    "difficulty": 3,
+    "explanation": "A core function of political parties is to recruit, nominate, and support candidates for elected office, thereby organizing the electoral process and providing a choice for voters."
+  },
+  {
+    "id": "AP_US_Government_151",
+    "question": "The Supreme Court case *Marbury v. Madison* (1803) established which significant principle?",
+    "choices": {
+      "A": "The right to privacy.",
+      "B": "The power of judicial review.",
+      "C": "The concept of equal protection under the law.",
+      "D": "The limits of federal power over interstate commerce."
+    },
+    "answer": "B",
+    "difficulty": 5,
+    "explanation": "*Marbury v. Madison* is a landmark case that established the principle of judicial review, giving the Supreme Court the authority to declare acts of Congress unconstitutional."
+  },
+  {
+    "id": "AP_US_Government_152",
+    "question": "Which Amendment to the Constitution most directly addresses the issue of voting rights and was crucial for expanding suffrage to African American men?",
+    "choices": {
+      "A": "The Fourth Amendment",
+      "B": "The Thirteenth Amendment",
+      "C": "The Fifteenth Amendment",
+      "D": "The Nineteenth Amendment"
+    },
+    "answer": "C",
+    "difficulty": 4,
+    "explanation": "The Fifteenth Amendment, ratified in 1870, explicitly prohibits the denial of suffrage based on race, color, or previous condition of servitude, thereby extending voting rights to African American men."
+  },
+  {
+    "id": "AP_US_Government_153",
+    "question": "A lobbyist is attempting to influence a member of Congress. Which of these activities is LEAST likely to be a tactic employed by the lobbyist?",
+    "choices": {
+      "A": "Providing research and data to support a specific policy position.",
+      "B": "Organizing grassroots campaigns to pressure the legislator.",
+      "C": "Donating directly to the legislator's personal bank account to secure favor.",
+      "D": "Testifying at congressional hearings on relevant legislation."
+    },
+    "answer": "C",
+    "difficulty": 7,
+    "explanation": "Directly donating to a legislator's personal bank account is illegal. Lobbyists can contribute to campaign committees or political action committees (PACs), but not directly to personal accounts. The other options are common lobbying activities."
+  },
+  {
+    "id": "AP_US_Government_154",
+    "question": "The process by which citizens learn about politics and develop their political attitudes is known as:",
+    "choices": {
+      "A": "Political socialization",
+      "B": "Civic engagement",
+      "C": "Public opinion formation",
+      "D": "Political participation"
+    },
+    "answer": "A",
+    "difficulty": 4,
+    "explanation": "Political socialization refers to the lifelong process through which individuals acquire political values, beliefs, and attitudes from various sources like family, school, peers, and the media."
+  },
+  {
+    "id": "AP_US_Government_155",
+    "question": "Which of the following powers is exercised by the legislative branch primarily through its oversight function?",
+    "choices": {
+      "A": "Declaring war",
+      "B": "Impeaching federal officials",
+      "C": "Investigating the actions of the executive branch",
+      "D": "Appointing Supreme Court justices"
+    },
+    "answer": "C",
+    "difficulty": 6,
+    "explanation": "Congressional oversight involves the review, monitoring, and supervision of federal agencies, programs, and activities by the legislative branch to ensure accountability and effectiveness."
+  },
+  {
+    "id": "AP_US_Government_156",
+    "question": "When a president issues an executive order, they are:",
+    "choices": {
+      "A": "Asking Congress to pass a new law.",
+      "B": "Negotiating a treaty with a foreign nation.",
+      "C": "Directing the executive branch on how to implement or enforce existing law.",
+      "D": "Appointing a new ambassador to represent the U.S."
+    },
+    "answer": "C",
+    "difficulty": 5,
+    "explanation": "Executive orders are directives issued by the President to federal agencies that have the force of law, typically used to manage operations of the federal government or clarify existing legislation."
+  },
+  {
+    "id": "AP_US_Government_157",
+    "question": "The process by which federal courts review laws and actions by the executive and legislative branches to determine their constitutionality is called:",
+    "choices": {
+      "A": " Habeas Corpus",
+      "B": "Stare Decisis",
+      "C": "Judicial Review",
+      "D": "Amicus Curiae"
+    },
+    "answer": "C",
+    "difficulty": 4,
+    "explanation": "Judicial review is the power of the courts to examine the actions of the legislative, executive, and administrative branches of government and determine whether such actions are consistent with the Constitution."
+  },
+  {
+    "id": "AP_US_Government_158",
+    "question": "Which of the following best describes a 'filibuster' in the U.S. Senate?",
+    "choices": {
+      "A": "A procedure to limit debate on a bill.",
+      "B": "A formal vote to end discussion on a bill.",
+      "C": "An extended speech or series of speeches to delay or block a vote on a bill.",
+      "D": "A committee review of proposed legislation."
+    },
+    "answer": "C",
+    "difficulty": 5,
+    "explanation": "A filibuster is a tactic used in the Senate where one or more senators attempt to delay or block a vote on a bill or other measure by holding the floor and speaking for an extended period."
+  },
+  {
+    "id": "AP_US_Government_159",
+    "question": "The Equal Protection Clause of the Fourteenth Amendment has been most frequently invoked in cases involving:",
+    "choices": {
+      "A": "Freedom of speech and expression.",
+      "B": "Protection against unreasonable searches and seizures.",
+      "C": "Discrimination based on race, gender, or other classifications.",
+      "D": "The right to bear arms."
+    },
+    "answer": "C",
+    "difficulty": 6,
+    "explanation": "The Equal Protection Clause mandates that states treat all individuals within their jurisdiction equally under the law. It has been the basis for challenging discriminatory laws and practices."
+  },
+  {
+    "id": "AP_US_Government_160",
+    "question": "Which type of committee in Congress is responsible for investigating and reconciling differences between House and Senate versions of a bill?",
+    "choices": {
+      "A": "Standing Committee",
+      "B": "Select Committee",
+      "C": "Joint Committee",
+      "D": "Conference Committee"
+    },
+    "answer": "D",
+    "difficulty": 5,
+    "explanation": "A conference committee is a temporary committee formed to resolve disagreements between the House and Senate on a particular bill, reconciling their different versions before it can be sent to the president."
+  },
+  {
+    "id": "AP_US_Government_161",
+    "question": "Public opinion polls are most effective at measuring:",
+    "choices": {
+      "A": "The long-term stability of political ideologies.",
+      "B": "The collective attitudes of individuals on a specific issue at a given time.",
+      "C": "The actual behavior of voters in an election.",
+      "D": "The influence of media bias on policy outcomes."
+    },
+    "answer": "B",
+    "difficulty": 5,
+    "explanation": "Public opinion polls are designed to gauge the prevailing attitudes or viewpoints of a population on a variety of subjects at a particular moment, providing a snapshot of public sentiment."
+  },
+  {
+    "id": "AP_US_Government_162",
+    "question": "The 'iron triangle' refers to the policy-making relationship among:",
+    "choices": {
+      "A": "The President, the Supreme Court, and the public.",
+      "B": "Congressional committees, executive agencies, and interest groups.",
+      "C": "Political parties, media organizations, and voters.",
+      "D": "State legislatures, local governments, and federal agencies."
+    },
+    "answer": "B",
+    "difficulty": 7,
+    "explanation": "The iron triangle describes a mutually beneficial, often stable, relationship between a congressional committee (overseeing a specific policy area), an executive agency (implementing that policy), and interest groups (advocating for policies in that area)."
+  },
+  {
+    "id": "AP_US_Government_163",
+    "question": "The establishment of the U.S. Department of Homeland Security is an example of:",
+    "choices": {
+      "A": "A devolution of power to the states.",
+      "B": "The creation of a new executive department to address national priorities.",
+      "C": "The strengthening of independent regulatory agencies.",
+      "D": "A reduction in the size of the federal bureaucracy."
+    },
+    "answer": "B",
+    "difficulty": 5,
+    "explanation": "The creation of the Department of Homeland Security in 2003 consolidated numerous federal agencies and functions to address national security concerns, representing the establishment of a new cabinet-level department."
+  },
+  {
+    "id": "AP_US_Government_164",
+    "question": "Which of the following best describes a fundamental difference between civil liberties and civil rights?",
+    "choices": {
+      "A": "Civil liberties are protections for individuals from government infringement, while civil rights are protections against discrimination by government or private actors.",
+      "B": "Civil liberties apply only to U.S. citizens, whereas civil rights extend to all people.",
+      "C": "Civil liberties primarily concern economic freedoms, while civil rights focus on political freedoms.",
+      "D": "Civil liberties are guaranteed in the Bill of Rights, while civil rights are established by treaties."
+    },
+    "answer": "A",
+    "difficulty": 6,
+    "explanation": "Civil liberties are fundamental rights and freedoms that individuals possess that protect them from unreasonable governmental interference (e.g., freedom of speech). Civil rights are guarantees of equal protection and equal treatment under the law, protecting against discrimination (e.g., the right to vote, equal opportunity)."
+  },
+  {
+    "id": "AP_US_Government_165",
+    "question": "The 'full faith and credit' clause of the Constitution requires states to:",
+    "choices": {
+      "A": "Provide equal protection to all citizens within their borders.",
+      "B": "Respect the public acts, records, and judicial proceedings of every other state.",
+      "C": "Enter into treaties or alliances with other states.",
+      "D": "Coin their own money and regulate its value."
+    },
+    "answer": "B",
+    "difficulty": 5,
+    "explanation": "The full faith and credit clause (Article IV, Section 1) ensures that states recognize and honor the legal judgments, public records, and official acts of other states."
+  },
+  {
+    "id": "AP_US_Government_166",
+    "question": "Which of the following is a common criticism of the Electoral College system?",
+    "choices": {
+      "A": "It guarantees that the popular vote winner always becomes president.",
+      "B": "It gives disproportionate power to voters in smaller states.",
+      "C": "It allows for a greater diversity of candidates to win the presidency.",
+      "D": "It encourages higher voter turnout due to direct accountability."
+    },
+    "answer": "B",
+    "difficulty": 6,
+    "explanation": "A key criticism of the Electoral College is that it can lead to a president winning the election without winning the popular vote, and it gives smaller states more electoral weight per capita than larger states, potentially skewing representation."
+  },
+  {
+    "id": "AP_US_Government_167",
+    "question": "The 'necessary and proper' clause, found in Article I, Section 8 of the Constitution, grants Congress:",
+    "choices": {
+      "A": "The power to veto laws passed by state legislatures.",
+      "B": "Implied powers to carry out its enumerated powers.",
+      "C": "The exclusive right to declare war.",
+      "D": "The authority to amend the Constitution unilaterally."
+    },
+    "answer": "B",
+    "difficulty": 5,
+    "explanation": "The necessary and proper clause (also known as the elastic clause) allows Congress to make laws that are necessary and proper for carrying into execution its enumerated powers, thereby granting implied powers beyond those explicitly stated."
+  },
+  {
+    "id": "AP_US_Government_168",
+    "question": "When the President appoints a new cabinet secretary, this action is an example of checks and balances involving:",
+    "choices": {
+      "A": "The President and the bureaucracy.",
+      "B": "The executive and legislative branches.",
+      "C": "The President and the judiciary.",
+      "D": "The executive branch and the states."
+    },
+    "answer": "B",
+    "difficulty": 4,
+    "explanation": "While the President makes the appointment, it must be confirmed by the Senate, illustrating a check by the legislative branch on the executive branch's power."
+  },
+  {
+    "id": "AP_US_Government_169",
+    "question": "Which of the following is a primary characteristic of a unitary system of government?",
+    "choices": {
+      "A": "Power is divided equally between national and subnational levels of government.",
+      "B": "Subnational governments hold significant independent authority.",
+      "C": "All significant governmental power resides with the central government.",
+      "D": "Regional governments have the power to nullify national laws."
+    },
+    "answer": "C",
+    "difficulty": 6,
+    "explanation": "In a unitary system, the central government is supreme, and any powers held by regional or local governments are delegated by the central authority and can be revoked."
+  },
+  {
+    "id": "AP_US_Government_170",
+    "question": "The Miranda warning, informing suspects of their right to remain silent and their right to an attorney, originates from which Supreme Court decision?",
+    "choices": {
+      "A": " *Gideon v. Wainwright*",
+      "B": " *Tinker v. Des Moines*",
+      "C": " *Miranda v. Arizona*",
+      "D": " *Brown v. Board of Education*"
+    },
+    "answer": "C",
+    "difficulty": 5,
+    "explanation": "The Supreme Court case *Miranda v. Arizona* (1966) established that criminal suspects must be informed of their constitutional rights, including the right to remain silent and the right to an attorney, before police questioning."
+  },
+  {
+    "id": "AP_US_Government_171",
+    "question": "Which of the following powers is exclusively held by the U.S. Senate?",
+    "choices": {
+      "A": "The power to initiate revenue bills.",
+      "B": "The power to ratify treaties.",
+      "C": "The power to declare war.",
+      "D": "The power to impeach federal officials."
+    },
+    "answer": "B",
+    "difficulty": 6,
+    "explanation": "While the House can initiate revenue bills and both chambers have the power to declare war and impeach officials (with the House impeaching and the Senate trying), only the Senate has the power to ratify treaties by a two-thirds vote."
+  },
+  {
+    "id": "AP_US_Government_172",
+    "question": "The Supreme Court's decision in *Marbury v. Madison* (1803) established which foundational principle of American constitutional law?",
+    "choices": {
+      "A": "The necessity of a warrant for all searches.",
+      "B": "The federal government's supremacy over state governments.",
+      "C": "The power of judicial review.",
+      "D": "The right to counsel in criminal cases."
+    },
+    "answer": "C",
+    "difficulty": 4,
+    "explanation": "*Marbury v. Madison* is the landmark case that established the Supreme Court's power to review the constitutionality of laws passed by Congress and actions taken by the executive branch."
+  },
+  {
+    "id": "AP_US_Government_173",
+    "question": "Which of the following is a primary function of political parties in the United States?",
+    "choices": {
+      "A": "To appoint judges to the federal judiciary.",
+      "B": "To mediate disputes between states.",
+      "C": "To nominate candidates for public office.",
+      "D": "To directly enforce environmental regulations."
+    },
+    "answer": "C",
+    "difficulty": 2,
+    "explanation": "A core, defining function of political parties is to recruit, vet, and nominate candidates to run for elected positions at all levels of government."
+  },
+  {
+    "id": "AP_US_Government_174",
+    "question": "The Fourteenth Amendment's Equal Protection Clause has primarily been used to challenge discrimination based on which of the following?",
+    "choices": {
+      "A": "Religious affiliation.",
+      "B": "National origin and race.",
+      "C": "Socioeconomic status.",
+      "D": "Age."
+    },
+    "answer": "B",
+    "difficulty": 6,
+    "explanation": "The Equal Protection Clause has been central to major civil rights litigation, particularly concerning racial segregation and discrimination, as well as discrimination based on national origin."
+  },
+  {
+    "id": "AP_US_Government_175",
+    "question": "In the context of federalism, which of the following powers is EXCLUSIVELY held by the national government?",
+    "choices": {
+      "A": "The power to establish schools.",
+      "B": "The power to conduct foreign policy and declare war.",
+      "C": "The power to establish local governments.",
+      "D": "The power to license marriage and driver's licenses."
+    },
+    "answer": "B",
+    "difficulty": 5,
+    "explanation": "The Constitution grants the national government exclusive powers in areas such as foreign affairs and national defense, while states retain powers over education, local governance, and licensing."
+  },
+  {
+    "id": "AP_US_Government_176",
+    "question": "The term 'iron triangle' refers to a mutually beneficial relationship between which three sets of actors in the policy-making process?",
+    "choices": {
+      "A": "President, Supreme Court, and voters.",
+      "B": "Lobbyists, congressional committees, and federal agencies.",
+      "C": "Political parties, state legislatures, and the media.",
+      "D": "Interest groups, international organizations, and the public."
+    },
+    "answer": "B",
+    "difficulty": 7,
+    "explanation": "An iron triangle illustrates the close and often informal connections between interest groups (lobbyists), the congressional committees that oversee them, and the federal bureaucracy (agencies) responsible for implementing policy in that area."
+  },
+  {
+    "id": "AP_US_Government_177",
+    "question": "Which clause in the Constitution states that the federal government can pass laws that are necessary and proper for executing its enumerated powers?",
+    "choices": {
+      "A": "The Supremacy Clause.",
+      "B": "The Commerce Clause.",
+      "C": "The Necessary and Proper Clause.",
+      "D": "The Full Faith and Credit Clause."
+    },
+    "answer": "C",
+    "difficulty": 3,
+    "explanation": "The Necessary and Proper Clause, found in Article I, Section 8 of the Constitution, grants Congress implied powers beyond those explicitly listed."
+  },
+  {
+    "id": "AP_US_Government_178",
+    "question": "A citizen is unhappy with a recent Supreme Court decision. Which of the following is the MOST direct constitutional method available to try and overturn that decision?",
+    "choices": {
+      "A": "Vote the Justices out of office.",
+      "B": "Amend the Constitution.",
+      "C": "Pass a new law through Congress that contradicts the ruling.",
+      "D": "File a lawsuit asking the Supreme Court to reconsider its own ruling immediately."
+    },
+    "answer": "B",
+    "difficulty": 8,
+    "explanation": "Supreme Court rulings are the final word on constitutional interpretation, unless the Constitution itself is amended to address the issue."
+  },
+  {
+    "id": "AP_US_Government_179",
+    "question": "The primary purpose of the Bill of Rights is to:",
+    "choices": {
+      "A": "Grant specific powers to the federal government.",
+      "B": "Establish the process for impeachment.",
+      "C": "Protect individual liberties from government infringement.",
+      "D": "Outline the structure of the presidency."
+    },
+    "answer": "C",
+    "difficulty": 2,
+    "explanation": "The Bill of Rights consists of the first ten amendments to the Constitution, specifically added to ensure the protection of fundamental rights and freedoms of individuals against potential overreach by the federal government."
+  },
+  {
+    "id": "AP_US_Government_180",
+    "question": "Which of the following characteristics of the US political system makes it difficult for third parties to gain significant traction?",
+    "choices": {
+      "A": "The presence of a unicameral legislature.",
+      "B": "A proportional representation system.",
+      "C": "Winner-take-all electoral rules.",
+      "D": "Strong national party leadership."
+    },
+    "answer": "C",
+    "difficulty": 6,
+    "explanation": "In a winner-take-all system, the candidate with the most votes wins, and there is no reward for second or third place. This structural feature significantly disadvantages third parties, as their votes do not translate into representation."
+  },
+  {
+    "id": "AP_US_Government_181",
+    "question": "The concept of 'pork barrel' spending refers to:",
+    "choices": {
+      "A": "Federal funds used for national defense projects.",
+      "B": "Legislation that directs funds to specific local projects.",
+      "C": "The President's discretionary budget.",
+      "D": "Campaign finance regulations."
+    },
+    "answer": "B",
+    "difficulty": 5,
+    "explanation": "Pork barrel spending involves elected officials securing government spending for local projects that benefit their constituents, often viewed as a way to win political favor."
+  },
+  {
+    "id": "AP_US_Government_182",
+    "question": "The process by which the Supreme Court applies portions of the Bill of Rights to the states is known as:",
+    "choices": {
+      "A": "Judicial review.",
+      "B": "Federalism.",
+      "C": "Selective incorporation.",
+      "D": "Stare decisis."
+    },
+    "answer": "C",
+    "difficulty": 6,
+    "explanation": "Selective incorporation is the process by which the Supreme Court has applied individual rights listed in the Bill of Rights to the states through the Due Process Clause of the Fourteenth Amendment."
+  },
+  {
+    "id": "AP_US_Government_183",
+    "question": "Which of the following is a concurrent power shared by both the federal and state governments?",
+    "choices": {
+      "A": "The power to coin money.",
+      "B": "The power to grant titles of nobility.",
+      "C": "The power to tax.",
+      "D": "The power to enter into treaties with foreign nations."
+    },
+    "answer": "C",
+    "difficulty": 4,
+    "explanation": "Concurrent powers are those that both the federal and state governments can exercise, such as the power to tax, build roads, and establish courts."
+  },
+  {
+    "id": "AP_US_Government_184",
+    "question": "A primary criticism of the Electoral College is that it:",
+    "choices": {
+      "A": "Favors candidates with broad national appeal.",
+      "B": "Can result in a president winning without winning the popular vote.",
+      "C": "Increases voter turnout in swing states.",
+      "D": "Ensures representation for smaller states."
+    },
+    "answer": "B",
+    "difficulty": 7,
+    "explanation": "The Electoral College system has been criticized because the winner of the national popular vote can lose the election if they do not win enough electoral votes, as has happened in several US presidential elections."
+  },
+  {
+    "id": "AP_US_Government_185",
+    "question": "The 'opinion of the Court' in a Supreme Court decision is:",
+    "choices": {
+      "A": "The dissenting opinion written by the losing justices.",
+      "B": "The majority opinion explaining the Court's reasoning and decision.",
+      "C": "The concurring opinion written by a justice who agrees with the outcome but for different reasons.",
+      "D": "The Chief Justice's personal thoughts on the case."
+    },
+    "answer": "B",
+    "difficulty": 3,
+    "explanation": "The opinion of the Court, also known as the majority opinion, outlines the legal reasoning and the decision reached by the majority of the justices on the Supreme Court."
+  },
+  {
+    "id": "AP_US_Government_186",
+    "question": "Which of the following is a key role of the House Rules Committee?",
+    "choices": {
+      "A": "To conduct impeachment trials.",
+      "B": "To set the terms for debate on legislation.",
+      "C": "To ratify treaties negotiated by the President.",
+      "D": "To confirm presidential appointments."
+    },
+    "answer": "B",
+    "difficulty": 6,
+    "explanation": "The House Rules Committee plays a crucial role in determining the conditions under which legislation will be debated on the House floor, including setting time limits and specifying whether amendments can be offered."
+  },
+  {
+    "id": "AP_US_Government_187",
+    "question": "The doctrine of 'stare decisis' is most closely related to which principle of the judicial system?",
+    "choices": {
+      "A": "The use of judicial activism.",
+      "B": "The concept of precedent.",
+      "C": "The power of judicial review.",
+      "D": "The principle of checks and balances."
+    },
+    "answer": "B",
+    "difficulty": 5,
+    "explanation": "Stare decisis, Latin for 'to stand by things decided,' means that courts should generally follow the precedent established by previous court decisions when ruling on similar cases."
+  },
+  {
+    "id": "AP_US_Government_188",
+    "question": "Which of the following is an example of a 'check' that the legislative branch has over the executive branch?",
+    "choices": {
+      "A": "The President vetoing a bill passed by Congress.",
+      "B": "The Supreme Court declaring an executive order unconstitutional.",
+      "C": "Congress overriding a presidential veto.",
+      "D": "The President appointing cabinet members."
+    },
+    "answer": "C",
+    "difficulty": 4,
+    "explanation": "Congress can override a presidential veto with a two-thirds vote in both houses, demonstrating a legislative check on executive power. The other options represent checks by the executive or judicial branches."
+  },
+  {
+    "id": "AP_US_Government_189",
+    "question": "The principle of 'separation of powers' in the US Constitution primarily divides governmental authority among:",
+    "choices": {
+      "A": "Federal, state, and local governments.",
+      "B": "The President, the Speaker of the House, and the Chief Justice.",
+      "C": "The legislative, executive, and judicial branches.",
+      "D": "The military, intelligence agencies, and law enforcement."
+    },
+    "answer": "C",
+    "difficulty": 2,
+    "explanation": "The Constitution divides governmental power among three distinct branches: the legislative (Congress), the executive (President), and the judicial (Supreme Court and lower federal courts)."
+  },
+  {
+    "id": "AP_US_Government_190",
+    "question": "Which federal agency is primarily responsible for enforcing environmental regulations?",
+    "choices": {
+      "A": "The Department of Homeland Security.",
+      "B": "The Environmental Protection Agency (EPA).",
+      "C": "The Department of Transportation.",
+      "D": "The Federal Communications Commission (FCC)."
+    },
+    "answer": "B",
+    "difficulty": 3,
+    "explanation": "The Environmental Protection Agency (EPA) is the federal agency tasked with protecting human health and the environment through the enforcement of environmental laws and regulations."
+  },
+  {
+    "id": "AP_US_Government_191",
+    "question": "The 'full faith and credit' clause of the Constitution (Article IV) requires states to:",
+    "choices": {
+      "A": "Provide equal educational opportunities to all citizens.",
+      "B": "Recognize public acts, records, and judicial proceedings of other states.",
+      "C": "Allow citizens of other states to vote in their elections.",
+      "D": "Exempt businesses from taxation if they operate in multiple states."
+    },
+    "answer": "B",
+    "difficulty": 5,
+    "explanation": "The full faith and credit clause ensures that legal judgments, public records, and official acts from one state are generally honored in all other states."
+  },
+  {
+    "id": "AP_US_Government_192",
+    "question": "Which of the following is the MOST significant impact of the media on the policy-making process?",
+    "choices": {
+      "A": "Directly voting on proposed legislation.",
+      "B": "Setting the judicial agenda for the Supreme Court.",
+      "C": "Shaping public opinion and influencing the political agenda.",
+      "D": "Appointing members of Congress."
+    },
+    "answer": "C",
+    "difficulty": 6,
+    "explanation": "The media plays a crucial role in informing the public, framing issues, and drawing attention to certain policy problems, thereby influencing what issues policymakers consider important and how the public perceives them."
+  },
+  {
+    "id": "AP_US_Government_193",
+    "question": "The Twenty-Sixth Amendment to the Constitution was a direct response to:",
+    "choices": {
+      "A": "The Watergate scandal.",
+      "B": "The Vietnam War.",
+      "C": "The Civil Rights Movement.",
+      "D": "The Great Depression."
+    },
+    "answer": "B",
+    "difficulty": 7,
+    "explanation": "The argument 'old enough to fight, old enough to vote' during the Vietnam War led to the ratification of the Twenty-Sixth Amendment, lowering the voting age to 18."
+  },
+  {
+    "id": "AP_US_Government_194",
+    "question": "In US v. Lopez (1995), the Supreme Court limited the power of Congress under which constitutional clause?",
+    "choices": {
+      "A": "The Necessary and Proper Clause.",
+      "B": "The First Amendment's freedom of speech.",
+      "C": "The Commerce Clause.",
+      "D": "The Equal Protection Clause."
+    },
+    "answer": "C",
+    "difficulty": 8,
+    "explanation": "*US v. Lopez* was a landmark case where the Supreme Court ruled that Congress had exceeded its authority under the Commerce Clause by passing the Gun-Free School Zones Act, finding that the possession of a gun in a local school zone was not an economic activity that substantially affected interstate commerce."
+  },
+  {
+    "id": "AP_US_Government_195",
+    "question": "Which of the following is a primary responsibility of the Department of State?",
+    "choices": {
+      "A": "Managing the national currency.",
+      "B": "Conducting foreign policy and diplomacy.",
+      "C": "Overseeing the armed forces.",
+      "D": "Enforcing federal laws within the US."
+    },
+    "answer": "B",
+    "difficulty": 4,
+    "explanation": "The Department of State, led by the Secretary of State, is the lead US agency responsible for conducting foreign relations, diplomacy, and managing embassies and consulates abroad."
+  },
+  {
+    "id": "AP_US_Government_196",
+    "question": "The concept of 'divided government' occurs when:",
+    "choices": {
+      "A": "The President is from one political party and Congress is controlled by the same party.",
+      "B": "Different branches of government are controlled by different political parties.",
+      "C": "The Supreme Court has a liberal majority and Congress is conservative.",
+      "D": "The President has impeached members of Congress."
+    },
+    "answer": "B",
+    "difficulty": 5,
+    "explanation": "Divided government occurs when the presidency is held by one political party, while the opposing party controls one or both houses of Congress."
+  },
+  {
+    "id": "AP_US_Government_197",
+    "question": "Which of the following scenarios best illustrates the concept of selective incorporation?",
+    "choices": {
+      "A": "The Supreme Court rules that a state law requiring all citizens to attend religious services violates the Establishment Clause of the First Amendment, thereby applying this federal protection to state-level actions.",
+      "B": "Congress passes a law expanding federal jurisdiction over civil rights cases, overriding a state's discriminatory practices.",
+      "C": "A state legislature amends its constitution to guarantee a right to privacy, mirroring a right previously recognized at the federal level.",
+      "D": "The President issues an executive order that prevents states from implementing certain immigration policies."
+    },
+    "answer": "A",
+    "difficulty": 6,
+    "explanation": "Selective incorporation is the process by which the Supreme Court has incorporated the Bill of Rights, one by one, to apply to the states through the Due Process Clause of the Fourteenth Amendment. Option A demonstrates this by applying a First Amendment protection (Establishment Clause) to a state law."
+  },
+  {
+    "id": "AP_US_Government_198",
+    "question": "The \"Electoral Connection\" described by David Mayhew suggests that members of Congress are primarily motivated by:",
+    "choices": {
+      "A": "Developing complex legislative policy to address national problems.",
+      "B": "Building a reputation for ideological purity among their peers.",
+      "C": "Engaging in activities that aid their efforts to win reelection.",
+      "D": "Serving as delegates on all issues, reflecting the direct will of their constituents."
+    },
+    "answer": "C",
+    "difficulty": 7,
+    "explanation": "David Mayhew's seminal work, 'The Electoral Connection,' argues that members of Congress focus on three main activities: advertising, credit claiming, and position taking, all aimed at increasing their chances of reelection. While other motivations exist, reelection is presented as a primary driver."
+  },
+  {
+    "id": "AP_US_Government_199",
+    "question": "Which of the following is a key difference between iron triangles and issue networks?",
+    "choices": {
+      "A": "Iron triangles involve more numerous and diverse participants than issue networks.",
+      "B": "Issue networks are generally more stable and enduring than iron triangles.",
+      "C": "Iron triangles are characterized by established, mutually reinforcing relationships, while issue networks are more fluid and contestable.",
+      "D": "Iron triangles primarily focus on broad policy areas, whereas issue networks concentrate on specific legislative details."
+    },
+    "answer": "C",
+    "difficulty": 5,
+    "explanation": "Iron triangles are stable, long-term relationships between congressional committees, administrative agencies, and interest groups that dominate a particular policy area. Issue networks are larger, more fluid, and often contentious coalitions of various actors (including experts, bureaucrats, academics, and interest groups) that coalesce around a specific issue, often challenging existing policy frameworks."
+  },
+  {
+    "id": "AP_US_Government_200",
+    "question": "The power of judicial review, established in Marbury v. Madison, allows the Supreme Court to:",
+    "choices": {
+      "A": "Impeach and remove federal judges.",
+      "B": "Determine the constitutionality of laws passed by Congress and actions taken by the President.",
+      "C": "Initiate legislation on matters of national importance.",
+      "D": "Approve or reject presidential appointments to the cabinet."
+    },
+    "answer": "B",
+    "difficulty": 4,
+    "explanation": "Marbury v. Madison (1803) is a landmark Supreme Court case that established the principle of judicial review, granting the Court the authority to review laws and actions of the legislative and executive branches and declare them unconstitutional if they conflict with the Constitution."
+  },
+  {
+    "id": "AP_US_Government_201",
+    "question": "A politician who consistently votes in favor of policies that align with the direct preferences of their constituents, even if those preferences conflict with their own beliefs, is acting as a:",
+    "choices": {
+      "A": "Trustee",
+      "B": "Politico",
+      "C": "Delegate",
+      "D": "Party Leader"
+    },
+    "answer": "C",
+    "difficulty": 3,
+    "explanation": "A delegate is a representative who acts in accordance with the wishes of their constituents, essentially serving as a mouthpiece for their district or state's opinions."
+  },
+  {
+    "id": "AP_US_Government_202",
+    "question": "Which constitutional principle is most directly reflected in the system of checks and balances?",
+    "choices": {
+      "A": "Federalism",
+      "B": "Separation of Powers",
+      "C": "Popular Sovereignty",
+      "D": "Limited Government"
+    },
+    "answer": "B",
+    "difficulty": 5,
+    "explanation": "The system of checks and balances is fundamentally designed to prevent any one branch of government from becoming too powerful by giving each branch some oversight and control over the others. This is a direct outgrowth of the principle of separation of powers, which divides governmental authority among distinct branches."
+  },
+  {
+    "id": "AP_US_Government_203",
+    "question": "The primary function of the House Rules Committee is to:",
+    "choices": {
+      "A": "Investigate potential violations of lobbying regulations.",
+      "B": "Schedule bills for debate and set the rules for their consideration on the House floor.",
+      "C": "Oversee the budget appropriations process for executive agencies.",
+      "D": "Approve or reject presidential nominations for federal judgeships."
+    },
+    "answer": "B",
+    "difficulty": 6,
+    "explanation": "The House Rules Committee is a powerful committee that acts as a gatekeeper for legislation. It determines when debated bills will be brought to the floor, how much time will be allocated for debate, and whether amendments will be permitted, significantly influencing the legislative process in the House."
+  },
+  {
+    "id": "AP_US_Government_204",
+    "question": "Which of the following best describes the outcome of the Supreme Court's decision in *Gideon v. Wainwright*?",
+    "choices": {
+      "A": "It established that the Second Amendment right to bear arms applies to the states.",
+      "B": "It guaranteed the right to counsel for indigent defendants in felony cases at the state level.",
+      "C": "It affirmed the principle of \"separate but equal\" in public education.",
+      "D": "It declared that flag burning is a form of protected symbolic speech."
+    },
+    "answer": "B",
+    "difficulty": 4,
+    "explanation": "*Gideon v. Wainwright* (1963) ruled that the Sixth Amendment's guarantee of counsel applies to criminal defendants in state courts, requiring states to provide an attorney to those who cannot afford one. This was a significant expansion of defendants' rights through selective incorporation."
+  },
+  {
+    "id": "AP_US_Government_205",
+    "question": "The concept of \"pork barrel\" legislation refers to:",
+    "choices": {
+      "A": "A bipartisan effort to reduce the national debt.",
+      "B": "Legislative appropriations that benefit a specific district or state, often seen as politically motivated.",
+      "C": "A mechanism for overriding presidential vetoes.",
+      "D": "The process of amending the Constitution."
+    },
+    "answer": "B",
+    "difficulty": 3,
+    "explanation": "Pork barrel spending involves earmarks or appropriations that direct federal funds to specific, often narrow, projects in a legislator's home district or state, typically to secure political support. It is often criticized for diverting funds and not serving the broader national interest."
+  },
+  {
+    "id": "AP_US_Government_206",
+    "question": "Which of the following is a core tenet of pluralism as a theory of American politics?",
+    "choices": {
+      "A": "A single elite group controls all political power.",
+      "B": "Interest groups compete for influence, and policy outcomes are the result of bargaining and compromise.",
+      "C": "The masses, not organized groups, are the primary drivers of political change.",
+      "D": "Government institutions inherently favor the status quo and resist group influence."
+    },
+    "answer": "B",
+    "difficulty": 5,
+    "explanation": "Pluralism posits that power in a democracy is widely dispersed among various competing interest groups, and policy is made through negotiation and compromise among these groups and the government. No single group dominates."
+  },
+  {
+    "id": "AP_US_Government_207",
+    "question": "The process by which citizens acquire their political beliefs and values is known as:",
+    "choices": {
+      "A": "Political socialization",
+      "B": "Party identification",
+      "C": "Public opinion formation",
+      "D": "Civic engagement"
+    },
+    "answer": "A",
+    "difficulty": 3,
+    "explanation": "Political socialization is the lifelong process through which individuals develop their political attitudes, values, and beliefs, influenced by family, schools, peers, and media."
+  },
+  {
+    "id": "AP_US_Government_208",
+    "question": "What is the primary purpose of the Equal Pay Act of 1963?",
+    "choices": {
+      "A": "To prohibit discrimination in housing based on race and gender.",
+      "B": "To require equal wages for men and women performing substantially equal work.",
+      "C": "To mandate affirmative action policies in federal contracting.",
+      "D": "To protect the rights of unionized workers in the private sector."
+    },
+    "answer": "B",
+    "difficulty": 4,
+    "explanation": "The Equal Pay Act of 1963 specifically addresses the wage gap between men and women by mandating that employers pay equal wages for equal work, regardless of gender. It is a foundational piece of legislation for gender equality in the workplace."
+  },
+  {
+    "id": "AP_US_Government_209",
+    "question": "A senator who votes against a bill supported by their constituents because they believe it is detrimental to the long-term national interest is acting as a:",
+    "choices": {
+      "A": "Delegate",
+      "B": "Politico",
+      "C": "Trustee",
+      "D": "Lobbyist"
+    },
+    "answer": "C",
+    "difficulty": 3,
+    "explanation": "A trustee is a representative who votes based on their own judgment and conscience, believing they are best equipped to make decisions for the good of the nation, even if it goes against the immediate wishes of their constituents."
+  },
+  {
+    "id": "AP_US_Government_210",
+    "question": "The \"full faith and credit\" clause of the Constitution (Article IV, Section 1) requires states to:",
+    "choices": {
+      "A": "Provide equal protection under the law to all citizens within their borders.",
+      "B": "Respect the public acts, records, and judicial proceedings of every other state.",
+      "C": "Allow citizens of other states to travel freely through their territory.",
+      "D": "Cooperate with federal law enforcement agencies in apprehending fugitives."
+    },
+    "answer": "B",
+    "difficulty": 5,
+    "explanation": "The full faith and credit clause mandates that states must recognize and honor the legal documents and decisions of other states, such as contracts, marriage licenses, and court judgments. This promotes national unity and prevents individuals from escaping legal obligations by moving between states."
+  },
+  {
+    "id": "AP_US_Government_211",
+    "question": "Which of the following is a primary function of a political party's national committee?",
+    "choices": {
+      "A": "To select candidates for local elections.",
+      "B": "To organize and coordinate national campaign efforts and raise funds.",
+      "C": "To draft the party's platform at the state level.",
+      "D": "To conduct independent research on policy issues."
+    },
+    "answer": "B",
+    "difficulty": 4,
+    "explanation": "The national committee of a political party, such as the Democratic National Committee (DNC) or the Republican National Committee (RNC), is responsible for furthering the party's goals and strategies at the national level, including managing presidential campaigns, raising money, and promoting the party's message."
+  },
+  {
+    "id": "AP_US_Government_212",
+    "question": "The phenomenon where a president uses public appeals to persuade citizens to support their policies, thereby pressuring Congress, is known as:",
+    "choices": {
+      "A": "Logrolling",
+      "B": "Filibustering",
+      "C": "Going public",
+      "D": "Gerrymandering"
+    },
+    "answer": "C",
+    "difficulty": 6,
+    "explanation": "\"Going public\" is a strategy employed by presidents to communicate directly with the American people, often through media events and speeches, to build public support for their policy agenda and exert pressure on Congress to enact their proposals."
+  },
+  {
+    "id": "AP_US_Government_213",
+    "question": "A critical election, in the context of voting behavior, is one that:",
+    "choices": {
+      "A": "Involves a large number of voters participating.",
+      "B": "Leads to a significant and lasting shift in the balance of power between parties.",
+      "C": "Is decided by a very narrow margin.",
+      "D": "Features a major third-party candidate's strong performance."
+    },
+    "answer": "B",
+    "difficulty": 7,
+    "explanation": "Critical elections, often associated with the concept of 'realigning elections,' are moments when voters' party loyalties shift dramatically, leading to a fundamental and enduring change in the dominant political party or coalition."
+  },
+  {
+    "id": "AP_US_Government_214",
+    "question": "Which of the following is a key characteristic of a bureaucracy?",
+    "choices": {
+      "A": "Decentralized decision-making and informal communication.",
+      "B": "A clear hierarchical structure, division of labor, and written rules.",
+      "C": "Decision-making based primarily on personal relationships and favors.",
+      "D": "Limited scope of responsibilities and minimal oversight."
+    },
+    "answer": "B",
+    "difficulty": 4,
+    "explanation": "Max Weber's model of bureaucracy emphasizes a hierarchical structure, specialization of tasks (division of labor), formal rules and procedures, impersonality, and merit-based advancement as key features facilitating efficient and rational administration."
+  },
+  {
+    "id": "AP_US_Government_215",
+    "question": "The primary purpose of the Voting Rights Act of 1965 was to:",
+    "choices": {
+      "A": "Establish a national voter registration system.",
+      "B": "Ban the use of poll taxes in state and local elections.",
+      "C": "Prohibit discriminatory voting practices, such as literacy tests and voter intimidation, particularly in the South.",
+      "D": "Lower the voting age to 18 for all federal elections."
+    },
+    "answer": "C",
+    "difficulty": 5,
+    "explanation": "The Voting Rights Act of 1965 was a landmark piece of federal legislation designed to overcome legal barriers at the state and local levels that prevented African Americans from exercising their right to vote, as guaranteed under the Fifteenth Amendment. It specifically targeted practices like literacy tests and grandfather clauses."
+  },
+  {
+    "id": "AP_US_Government_216",
+    "question": "When a court hears a case for the first time, involving original testimony and evidence, it is said to be exercising:",
+    "choices": {
+      "A": "Appellate jurisdiction",
+      "B": "Original jurisdiction",
+      "C": "Concurrent jurisdiction",
+      "D": "Exclusive jurisdiction"
+    },
+    "answer": "B",
+    "difficulty": 4,
+    "explanation": "Original jurisdiction refers to a court's power to hear a case initially, as opposed to appellate jurisdiction, which is the power to review decisions of lower courts. Trial courts typically have original jurisdiction."
+  },
+  {
+    "id": "AP_US_Government_217",
+    "question": "The term \"gerrymandering\" refers to the practice of:",
+    "choices": {
+      "A": "Drawing congressional district boundaries to favor one political party or group.",
+      "B": "Negotiating compromises on complex legislation.",
+      "C": "Appointing judges based on their judicial philosophy.",
+      "D": "Lobbying federal agencies for favorable regulations."
+    },
+    "answer": "A",
+    "difficulty": 3,
+    "explanation": "Gerrymandering is the manipulation of electoral district boundaries to give one party an unfair advantage in elections. This practice can dilute the voting power of opposing groups or concentrate their votes into a few districts."
+  },
+  {
+    "id": "AP_US_Government_218",
+    "question": "The Establishment Clause of the First Amendment prevents the government from:",
+    "choices": {
+      "A": "Restricting freedom of speech in public forums.",
+      "B": "Establishing an official religion or favoring one religion over others.",
+      "C": "Depriving citizens of life, liberty, or property without due process.",
+      "D": "Compelling individuals to house soldiers in their homes."
+    },
+    "answer": "B",
+    "difficulty": 4,
+    "explanation": "The Establishment Clause prohibits the government from establishing or endorsing a religion, ensuring a separation of church and state. The Free Exercise Clause, also in the First Amendment, protects individuals' rights to practice their religion freely."
+  },
+  {
+    "id": "AP_US_Government_219",
+    "question": "The \"Miranda warning\" is an example of the Supreme Court applying which constitutional amendment to state criminal proceedings?",
+    "choices": {
+      "A": "First Amendment",
+      "B": "Fourth Amendment",
+      "C": "Fifth Amendment",
+      "D": "Eighth Amendment"
+    },
+    "answer": "C",
+    "difficulty": 6,
+    "explanation": "The Miranda warning, stemming from *Miranda v. Arizona* (1966), informs individuals of their rights, including the right to remain silent and the right to an attorney, which are protections found in the Fifth Amendment (protection against self-incrimination) and Sixth Amendment (right to counsel)."
+  },
+  {
+    "id": "AP_US_Government_220",
+    "question": "Which of the following best describes the concept of \"checks and balances\"?",
+    "choices": {
+      "A": "The division of governmental power among three distinct branches: legislative, executive, and judicial.",
+      "B": "The process by which laws are made through the introduction and passage of bills.",
+      "C": "The system of oversight and control that each branch of government has over the others.",
+      "D": "The principle that ultimate governmental authority rests with the people."
+    },
+    "answer": "C",
+    "difficulty": 4,
+    "explanation": "Checks and balances refer to the specific powers each branch of government holds that allow it to limit the power of the other branches, ensuring no single branch becomes too dominant. Examples include presidential veto power, Senate confirmation of appointments, and judicial review."
+  },
+  {
+    "id": "AP_US_Government_221",
+    "question": "A civil servant who works for an independent regulatory agency and is responsible for implementing environmental regulations is part of the:",
+    "choices": {
+      "A": "Legislative branch",
+      "B": "Judicial branch",
+      "C": "Executive bureaucracy",
+      "D": "Foreign diplomatic corps"
+    },
+    "answer": "C",
+    "difficulty": 4,
+    "explanation": "Independent regulatory agencies, though independent in certain functions, are generally considered part of the executive branch bureaucracy. Their personnel are civil servants tasked with administering and enforcing laws passed by Congress and executive orders."
+  },
+  {
+    "id": "AP_US_Government_222",
+    "question": "The \"Miranda rule\" originates from the Supreme Court's interpretation of the:",
+    "choices": {
+      "A": "Commerce Clause",
+      "B": "Equal Protection Clause",
+      "C": "Due Process Clause of the Fifth Amendment",
+      "D": "Supremacy Clause"
+    },
+    "answer": "C",
+    "difficulty": 6,
+    "explanation": "The landmark Supreme Court case *Miranda v. Arizona* (1966) centered on the Fifth Amendment's protection against self-incrimination, establishing the requirement that suspects be informed of their rights before custodial interrogation."
+  },
+  {
+    "id": "AP_US_Government_223",
+    "question": "Which of the following best describes the primary function of a filibuster in the United States Senate?",
+    "choices": {
+      "A": "To force a vote on a stalled bill.",
+      "B": "To delay or block a vote on proposed legislation.",
+      "C": "To formally end debate and bring a bill to a vote.",
+      "D": "To introduce amendments to a bill during floor debate."
+    },
+    "answer": "B",
+    "difficulty": 4,
+    "explanation": "A filibuster is a legislative tactic where a senator or a group of senators attempts to delay or block a vote on a bill or other measure by extending debate indefinitely. Options A and C describe other procedural functions, and D is a regular part of legislative debate, not the specific defining characteristic of a filibuster."
+  },
+  {
+    "id": "AP_US_Government_224",
+    "question": "The concept of 'stare decisis' is most directly related to the practice of:",
+    "choices": {
+      "A": "Judicial review by the Supreme Court.",
+      "B": "The appointment of federal judges.",
+      "C": "Following precedent in judicial decisions.",
+      "D": "The impeachment process for federal judges."
+    },
+    "answer": "C",
+    "difficulty": 6,
+    "explanation": "Stare decisis is a Latin phrase meaning 'to stand by things decided.' It refers to the legal principle of determining points in litigation according to precedent, meaning that courts will adhere to previous rulings in similar cases. This is fundamental to the operation of the common law system."
+  },
+  {
+    "id": "AP_US_Government_225",
+    "question": "A federal bureaucracy is characterized by all of the following EXCEPT:",
+    "choices": {
+      "A": "Hierarchical authority structure.",
+      "B": "Standardized procedures and rules.",
+      "C": "Oversight by elected officials.",
+      "D": "Impersonal and merit-based administration."
+    },
+    "answer": "C",
+    "difficulty": 5,
+    "explanation": "While federal bureaucracies are subject to oversight by elected officials (through Congress and the President), it is not an inherent characteristic of the bureaucracy itself in the same way as hierarchy, standardized procedures, and merit-based administration are core principles of bureaucratic organization as described by Max Weber."
+  },
+  {
+    "id": "AP_US_Government_226",
+    "question": "The Voting Rights Act of 1965 was a landmark piece of legislation primarily aimed at:",
+    "choices": {
+      "A": "Establishing a national standard for voter registration.",
+      "B": "Eliminating discriminatory voting practices that disenfranchised African Americans.",
+      "C": "Increasing voter turnout through mandatory registration.",
+      "D": "Granting voting rights to citizens under the age of 18."
+    },
+    "answer": "B",
+    "difficulty": 4,
+    "explanation": "The Voting Rights Act of 1965 was enacted to overcome legal barriers at the state and local levels that prevented African Americans from exercising their right to vote, as guaranteed under the 15th Amendment. It targeted practices like literacy tests and poll taxes."
+  },
+  {
+    "id": "AP_US_Government_227",
+    "question": "Which of the following constitutional principles is most directly reflected in the establishment of the Bill of Rights?",
+    "choices": {
+      "A": "Federalism",
+      "B": "Separation of Powers",
+      "C": "Popular Sovereignty",
+      "D": "Limited Government"
+    },
+    "answer": "D",
+    "difficulty": 3,
+    "explanation": "The Bill of Rights, consisting of the first ten amendments to the Constitution, explicitly enumerates certain rights that the federal government cannot infringe upon. This places specific restrictions on government power and serves as a cornerstone of limited government."
+  },
+  {
+    "id": "AP_US_Government_228",
+    "question": "The concept of \"selective incorporation\" primarily impacts which aspect of American government?",
+    "choices": {
+      "A": "The enumerated powers of Congress.",
+      "B": "The appointment process for Supreme Court justices.",
+      "C": "The application of the Bill of Rights to state governments.",
+      "D": "The process of impeaching federal officials."
+    },
+    "answer": "C",
+    "difficulty": 7,
+    "explanation": "Selective incorporation is the process by which the Supreme Court has, over time, applied most of the protections of the Bill of Rights to the states through the Due Process Clause of the Fourteenth Amendment."
+  },
+  {
+    "id": "AP_US_Government_229",
+    "question": "A civil servant who anonymously leaks information about government corruption to a journalist is acting as a:",
+    "choices": {
+      "A": "Lobbyist",
+      "B": "Whistleblower",
+      "C": "Bureaucrat",
+      "D": "Party activist"
+    },
+    "answer": "B",
+    "difficulty": 4,
+    "explanation": "A whistleblower is a person who exposes secret information or misconduct within an organization, often to a public body or the media."
+  },
+  {
+    "id": "AP_US_Government_230",
+    "question": "Which of the following best describes the primary function of a \"filibuster\" in the Senate?",
+    "choices": {
+      "A": "To expedite the passage of legislation.",
+      "B": "To force a vote on a controversial bill.",
+      "C": "To delay or block a vote on a bill.",
+      "D": "To allow for extensive amendments to a bill."
+    },
+    "answer": "C",
+    "difficulty": 5,
+    "explanation": "A filibuster is a parliamentary tactic in the Senate where a senator, or group of senators, attempts to delay or prevent a vote on a bill by extending debate."
+  },
+  {
+    "id": "AP_US_Government_231",
+    "question": "The establishment clause of the First Amendment has been interpreted by the Supreme Court to:",
+    "choices": {
+      "A": "Require mandatory prayer in public schools.",
+      "B": "Prohibit the government from establishing a religion.",
+      "C": "Allow for the taxation of religious institutions.",
+      "D": "Guarantee freedom of speech for religious leaders."
+    },
+    "answer": "B",
+    "difficulty": 6,
+    "explanation": "The establishment clause prohibits the government from establishing or endorsing a religion, which has been interpreted to mean a separation between church and state."
+  },
+  {
+    "id": "AP_US_Government_232",
+    "question": "Which of the following is a primary role of the Electoral College in presidential elections?",
+    "choices": {
+      "A": "To ensure the popular vote winner always becomes president.",
+      "B": "To allocate electoral votes proportionally based on the national popular vote.",
+      "C": "To determine the number of electors each state receives.",
+      "D": "To provide a majority of votes to a candidate winning a majority of states."
+    },
+    "answer": "C",
+    "difficulty": 5,
+    "explanation": "The number of electors each state receives is based on its total number of representatives in Congress (House + Senate). The Electoral College's goal is not to guarantee the popular vote winner, nor is it proportional based on the national vote."
+  },
+  {
+    "id": "AP_US_Government_233",
+    "question": "Stare decisis is a legal principle that encourages courts to:",
+    "choices": {
+      "A": "Rule based on the perceived intent of the framers.",
+      "B": "Base decisions on current public opinion.",
+      "C": "Adhere to precedent and previous rulings.",
+      "D": "Interpret laws narrowly to limit government power."
+    },
+    "answer": "C",
+    "difficulty": 6,
+    "explanation": "Stare decisis, Latin for 'to stand by things decided,' is the doctrine that obligates courts to follow historical cases when making a ruling. This provides consistency and predictability in the law."
+  },
+  {
+    "id": "AP_US_Government_234",
+    "question": "The \"Miranda rights\" inform individuals in police custody of their constitutional protections under which amendment?",
+    "choices": {
+      "A": "First Amendment",
+      "B": "Fourth Amendment",
+      "C": "Fifth Amendment",
+      "D": "Eighth Amendment"
+    },
+    "answer": "C",
+    "difficulty": 4,
+    "explanation": "Miranda v. Arizona established that criminal suspects must be informed of their constitutional rights, including the right to remain silent and the right to an attorney, which are derived from the Fifth Amendment's protection against self-incrimination and the Sixth Amendment's right to counsel."
+  },
+  {
+    "id": "AP_US_Government_235",
+    "question": "Which of the following is an example of cooperative federalism?",
+    "choices": {
+      "A": "The imposition of a federal mandate on states without funding.",
+      "B": "A federal program that provides funding to states for highways, with states matching a portion of the funds.",
+      "C": "The Supreme Court ruling that federal law supersedes state law.",
+      "D": "Congress passing a law that completely deregulates an industry previously regulated by the federal government."
+    },
+    "answer": "B",
+    "difficulty": 7,
+    "explanation": "Cooperative federalism involves collaboration between federal and state governments, often seen in joint funding and administration of programs like highway construction. Option A is an example of coercive federalism, and C is related to national supremacy."
+  },
+  {
+    "id": "AP_US_Government_236",
+    "question": "The primary purpose of the \"full faith and credit\" clause of the Constitution is to ensure:",
+    "choices": {
+      "A": "States cannot discriminate against citizens of other states.",
+      "B": "States respect the public acts, records, and judicial proceedings of other states.",
+      "C": "The federal government can overturn state laws.",
+      "D": "All states adhere to the same economic regulations."
+    },
+    "answer": "B",
+    "difficulty": 5,
+    "explanation": "The full faith and credit clause (Article IV, Section 1) requires states to recognize and honor the legal judgments, public records, and acts of other states."
+  },
+  {
+    "id": "AP_US_Government_237",
+    "question": "Which of the following is a key characteristic of a bureaucracy?",
+    "choices": {
+      "A": "Decentralized decision-making",
+      "B": "Hierarchical structure",
+      "C": "Informal communication channels",
+      "D": "Emphasis on individual discretion"
+    },
+    "answer": "B",
+    "difficulty": 5,
+    "explanation": "Bureaucracies are typically characterized by a hierarchical structure, a division of labor, explicit rules, and impersonal relationships, which facilitate clear lines of authority and standardized procedures."
+  },
+  {
+    "id": "AP_US_Government_238",
+    "question": "The \"clear and present danger\" test, established in *Schenck v. United States*, is used to determine when speech can be restricted based on:",
+    "choices": {
+      "A": "Religious advocacy",
+      "B": "Offensive language",
+      "C": "Incitement to violence or illegal action",
+      "D": "Political dissent"
+    },
+    "answer": "C",
+    "difficulty": 7,
+    "explanation": "The clear and present danger test allows for the restriction of speech if it poses a direct threat of imminent lawless action."
+  },
+  {
+    "id": "AP_US_Government_239",
+    "question": "Which of the following best describes the concept of \"pork barrel\" legislation?",
+    "choices": {
+      "A": "Legislation that addresses a national crisis.",
+      "B": "Efforts to attract money or projects to a specific district or state.",
+      "C": "Bipartisan bills with widespread support.",
+      "D": "Laws passed to increase presidential power."
+    },
+    "answer": "B",
+    "difficulty": 5,
+    "explanation": "Pork barrel legislation refers to appropriations or provisions in bills that benefit a specific, narrow interest, often at taxpayer expense, and are seen as benefiting a legislator's constituents or campaign donors."
+  },
+  {
+    "id": "AP_US_Government_240",
+    "question": "The Civil Rights Act of 1964 primarily aimed to end discrimination based on:",
+    "choices": {
+      "A": "Age and disability",
+      "B": "Sexual orientation and gender identity",
+      "C": "Race, color, religion, sex, and national origin",
+      "D": "Socioeconomic status"
+    },
+    "answer": "C",
+    "difficulty": 4,
+    "explanation": "The Civil Rights Act of 1964 outlawed discrimination based on race, color, religion, sex, or national origin, affecting employment, public accommodations, and other areas."
+  },
+  {
+    "id": "AP_US_Government_241",
+    "question": "What is the primary role of the Senate Judiciary Committee?",
+    "choices": {
+      "A": "To oversee the national budget.",
+      "B": "To conduct hearings and make recommendations on presidential nominations, particularly for federal judgeships.",
+      "C": "To draft legislation related to foreign policy.",
+      "D": "To investigate alleged misconduct by members of Congress."
+    },
+    "answer": "B",
+    "difficulty": 6,
+    "explanation": "The Senate Judiciary Committee plays a crucial role in the confirmation process for federal judges, including Supreme Court justices, by holding hearings and recommending approval or rejection to the full Senate."
+  },
+  {
+    "id": "AP_US_Government_242",
+    "question": "An amicus curiae brief is a document filed in court by a person or group who is:",
+    "choices": {
+      "A": "The plaintiff in the case",
+      "B": "The defendant in the case",
+      "C": "A party with a strong interest in the outcome of the case, but not directly involved",
+      "D": "The judge presiding over the case"
+    },
+    "answer": "C",
+    "difficulty": 7,
+    "explanation": "An amicus curiae ('friend of the court') brief offers information, expertise, or a legal argument that may influence the court's decision, filed by parties not directly involved in the litigation."
+  },
+  {
+    "id": "AP_US_Government_243",
+    "question": "Which of the following is a primary mechanism for the President to influence the federal judiciary?",
+    "choices": {
+      "A": "Issuing executive orders",
+      "B": "Vetoing legislation passed by Congress",
+      "C": "Appointing federal judges who share the President's judicial philosophy",
+      "D": "Directly ordering judges to rule in a certain way"
+    },
+    "answer": "C",
+    "difficulty": 5,
+    "explanation": "The President's most significant long-term influence on the judiciary comes from appointing federal judges, including Supreme Court justices, who will interpret laws according to their judicial philosophy."
+  },
+  {
+    "id": "AP_US_Government_244",
+    "question": "The \"iron triangle\" in American politics refers to the relationship between:",
+    "choices": {
+      "A": "The President, Vice President, and Speaker of the House.",
+      "B": "Congressional committees, interest groups, and bureaucratic agencies.",
+      "C": "The Supreme Court, the Attorney General, and the FBI.",
+      "D": "State governments, local governments, and the federal government."
+    },
+    "answer": "B",
+    "difficulty": 6,
+    "explanation": "The iron triangle describes a mutually beneficial relationship between interest groups, congressional committees, and bureaucratic agencies that often dominates policymaking in specific areas."
+  },
+  {
+    "id": "AP_US_Government_245",
+    "question": "The \"marketplace of ideas\" concept suggests that:",
+    "choices": {
+      "A": "Government regulation of media is necessary for fairness.",
+      "B": "The truth and merit of ideas will eventually emerge through free and open debate.",
+      "C": "Only popular opinions should be amplified.",
+      "D": "Economic principles should guide public discourse."
+    },
+    "answer": "B",
+    "difficulty": 5,
+    "explanation": "This concept, often associated with freedom of speech, posits that in a free exchange of ideas, the most rational and true ideas will prevail over false or less valid ones."
+  },
+  {
+    "id": "AP_US_Government_246",
+    "question": "Which of the following is the most direct consequence of increased polarization in Congress?",
+    "choices": {
+      "A": "Faster legislative progress and compromise.",
+      "B": "Greater bipartisan cooperation on complex issues.",
+      "C": "Difficulty in passing legislation and increased gridlock.",
+      "D": "Reduced influence of party leadership."
+    },
+    "answer": "C",
+    "difficulty": 7,
+    "explanation": "Political polarization often leads to entrenched ideological divides, making compromise and consensus-building much harder, resulting in legislative gridlock."
+  },
+  {
+    "id": "AP_US_Government_247",
+    "question": "The term \"pluralism\" in political science refers to:",
+    "choices": {
+      "A": "A system where one political party dominates.",
+      "B": "A system where multiple groups compete for political power and influence.",
+      "C": "A belief in the divine right of kings.",
+      "D": "A government controlled by a single, all-powerful leader."
+    },
+    "answer": "B",
+    "difficulty": 5,
+    "explanation": "Pluralism describes a political system where power is dispersed among various competing interest groups, each seeking to influence public policy."
+  },
+  {
+    "id": "AP_US_Government_248",
+    "question": "Which amendment to the Constitution most directly protects against unreasonable searches and seizures?",
+    "choices": {
+      "A": "First Amendment",
+      "B": "Second Amendment",
+      "C": "Third Amendment",
+      "D": "Fourth Amendment"
+    },
+    "answer": "D",
+    "difficulty": 4,
+    "explanation": "The Fourth Amendment protects individuals from unreasonable searches and seizures and requires warrants to be judicially sanctioned and supported by probable cause."
+  },
+  {
+    "id": "AP_US_Government_249",
+    "question": "A policy that aims to reduce poverty by providing direct cash assistance to low-income families is an example of:",
+    "choices": {
+      "A": "Monetary policy",
+      "B": "Fiscal policy",
+      "C": "Regulatory policy",
+      "D": "Foreign policy"
+    },
+    "answer": "B",
+    "difficulty": 6,
+    "explanation": "Fiscal policy involves the use of government spending and taxation to influence the economy. Direct cash assistance is a form of government spending."
+  },
+  {
+    "id": "AP_US_Government_250",
+    "question": "The \"thirteenth, fourteenth, and fifteenth amendments\" are collectively known as the:",
+    "choices": {
+      "A": "Bill of Rights",
+      "B": "New Deal Amendments",
+      "C": "Reconstruction Amendments",
+      "D": "Progressive Era Amendments"
+    },
+    "answer": "C",
+    "difficulty": 5,
+    "explanation": "These amendments, ratified after the Civil War, abolished slavery, granted citizenship and equal protection under the law, and prohibited the denial of suffrage based on race."
+  },
+  {
+    "id": "AP_US_Government_251",
+    "question": "Which of the following best describes the \"punditocracy\"?",
+    "choices": {
+      "A": "A system of government where experts rule.",
+      "B": "A reliance on political commentators and analysts for public interpretation of events.",
+      "C": "A form of direct democracy.",
+      "D": "A government dominated by a military elite."
+    },
+    "answer": "B",
+    "difficulty": 7,
+    "explanation": "The punditocracy refers to the perceived influence and dominance of political commentators and analysts in shaping public opinion and political discourse, often through media."
+  }
 ]
