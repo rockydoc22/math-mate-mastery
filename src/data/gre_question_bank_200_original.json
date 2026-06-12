@@ -5233,23 +5233,23 @@
     "options": [
       {
         "label": "A",
-        "text": "3\u03c0"
+        "text": "3π"
       },
       {
         "label": "B",
-        "text": "6\u03c0"
+        "text": "6π"
       },
       {
         "label": "C",
-        "text": "9\u03c0"
+        "text": "9π"
       },
       {
         "label": "D",
-        "text": "12\u03c0"
+        "text": "12π"
       }
     ],
     "correctAnswer": "B",
-    "explanation": "If the area of the square is 36, then the side length of the square is \u221a36 = 6 units. Since the circle is inscribed in the square, the diameter of the circle is equal to the side length of the square, which is 6 units. The radius of the circle is half of the diameter, so r = 3 units. The circumference of the circle is 2\u03c0r = 2\u03c0(3) = 6\u03c0."
+    "explanation": "If the area of the square is 36, then the side length of the square is √36 = 6 units. Since the circle is inscribed in the square, the diameter of the circle is equal to the side length of the square, which is 6 units. The radius of the circle is half of the diameter, so r = 3 units. The circumference of the circle is 2πr = 2π(3) = 6π."
   },
   {
     "id": "gre_q_103",
@@ -5389,29 +5389,29 @@
     "options": [
       {
         "label": "A",
-        "text": "64 cm\u00b2"
+        "text": "64 cm²"
       },
       {
         "label": "B",
-        "text": "96 cm\u00b2"
+        "text": "96 cm²"
       },
       {
         "label": "C",
-        "text": "128 cm\u00b2"
+        "text": "128 cm²"
       },
       {
         "label": "D",
-        "text": "144 cm\u00b2"
+        "text": "144 cm²"
       }
     ],
     "correctAnswer": "C",
-    "explanation": "Let the width of the rectangle be w. Then the length is 2w. The perimeter of a rectangle is 2(length + width). So, 2(2w + w) = 48. This simplifies to 2(3w) = 48, or 6w = 48, so w = 8 cm. The length is 2w = 2 * 8 = 16 cm. The area of the rectangle is length * width = 16 * 8 = 128 cm\u00b2."
+    "explanation": "Let the width of the rectangle be w. Then the length is 2w. The perimeter of a rectangle is 2(length + width). So, 2(2w + w) = 48. This simplifies to 2(3w) = 48, or 6w = 48, so w = 8 cm. The length is 2w = 2 * 8 = 16 cm. The area of the rectangle is length * width = 16 * 8 = 128 cm²."
   },
   {
     "id": "gre_q_109",
     "exam": "GRE",
     "section": "Quantitative",
-    "question": "What is the value of \u221a(144 + 25)?",
+    "question": "What is the value of √(144 + 25)?",
     "options": [
       {
         "label": "A",
@@ -5493,23 +5493,23 @@
     "options": [
       {
         "label": "A",
-        "text": "96 cm\u00b2"
+        "text": "96 cm²"
       },
       {
         "label": "B",
-        "text": "84 cm\u00b2"
+        "text": "84 cm²"
       },
       {
         "label": "C",
-        "text": "72 cm\u00b2"
+        "text": "72 cm²"
       },
       {
         "label": "D",
-        "text": "60 cm\u00b2"
+        "text": "60 cm²"
       }
     ],
     "correctAnswer": "A",
-    "explanation": "Let the width be w and the length be l. We are given that 2(l + w) = 40, so l + w = 20. We are also given that l = w + 4. Substituting this into the first equation: (w + 4) + w = 20 => 2w + 4 = 20 => 2w = 16 => w = 8. Then l = 8 + 4 = 12. The area is l * w = 12 * 8 = 96 cm\u00b2."
+    "explanation": "Let the width be w and the length be l. We are given that 2(l + w) = 40, so l + w = 20. We are also given that l = w + 4. Substituting this into the first equation: (w + 4) + w = 20 => 2w + 4 = 20 => 2w = 16 => w = 8. Then l = 8 + 4 = 12. The area is l * w = 12 * 8 = 96 cm²."
   },
   {
     "id": "gre_q_113",
@@ -5645,27 +5645,27 @@
     "id": "gre_q_118",
     "exam": "GRE",
     "section": "Quantitative",
-    "question": "A circle has an area of 16\u03c0 square units. What is the circumference of the circle?",
+    "question": "A circle has an area of 16π square units. What is the circumference of the circle?",
     "options": [
       {
         "label": "A",
-        "text": "8\u03c0 units"
+        "text": "8π units"
       },
       {
         "label": "B",
-        "text": "16\u03c0 units"
+        "text": "16π units"
       },
       {
         "label": "C",
-        "text": "4\u03c0 units"
+        "text": "4π units"
       },
       {
         "label": "D",
-        "text": "2\u03c0 units"
+        "text": "2π units"
       }
     ],
     "correctAnswer": "A",
-    "explanation": "The area of a circle is given by A = \u03c0r\u00b2. We are given A = 16\u03c0, so 16\u03c0 = \u03c0r\u00b2. Dividing by \u03c0, we get r\u00b2 = 16, so r = 4. The circumference of a circle is given by C = 2\u03c0r. Substituting r = 4, we get C = 2\u03c0(4) = 8\u03c0 units."
+    "explanation": "The area of a circle is given by A = πr². We are given A = 16π, so 16π = πr². Dividing by π, we get r² = 16, so r = 4. The circumference of a circle is given by C = 2πr. Substituting r = 4, we get C = 2π(4) = 8π units."
   },
   {
     "id": "gre_q_119",
@@ -5743,7 +5743,7 @@
       }
     ],
     "correctAnswer": "B",
-    "explanation": "Speed = 60 miles/hour. Time = 75 minutes = 75/60 hours = 5/4 hours. Distance = Speed \u00d7 Time = 60 \u00d7 (5/4) = 15 \u00d7 5 = 75 miles."
+    "explanation": "Speed = 60 miles/hour. Time = 75 minutes = 75/60 hours = 5/4 hours. Distance = Speed × Time = 60 × (5/4) = 15 × 5 = 75 miles."
   },
   {
     "id": "gre_q_122",
@@ -5847,7 +5847,7 @@
       }
     ],
     "correctAnswer": "A",
-    "explanation": "If 60% are girls, then 100% - 60% = 40% are boys. Number of boys = 40% of 30 = (40/100) \u00d7 30 = 0.40 \u00d7 30 = 12 boys."
+    "explanation": "If 60% are girls, then 100% - 60% = 40% are boys. Number of boys = 40% of 30 = (40/100) × 30 = 0.40 × 30 = 12 boys."
   },
   {
     "id": "gre_q_126",
@@ -5879,27 +5879,27 @@
     "id": "gre_q_127",
     "exam": "GRE",
     "section": "Quantitative",
-    "question": "A circle has a circumference of 10\u03c0 units. What is its area?",
+    "question": "A circle has a circumference of 10π units. What is its area?",
     "options": [
       {
         "label": "A",
-        "text": "5\u03c0 square units"
+        "text": "5π square units"
       },
       {
         "label": "B",
-        "text": "10\u03c0 square units"
+        "text": "10π square units"
       },
       {
         "label": "C",
-        "text": "25\u03c0 square units"
+        "text": "25π square units"
       },
       {
         "label": "D",
-        "text": "100\u03c0 square units"
+        "text": "100π square units"
       }
     ],
     "correctAnswer": "C",
-    "explanation": "The formula for the circumference of a circle is C = 2\u03c0r. Given C = 10\u03c0, we have 2\u03c0r = 10\u03c0, so r = 5 units. The formula for the area of a circle is A = \u03c0r^2. So, A = \u03c0(5^2) = 25\u03c0 square units."
+    "explanation": "The formula for the circumference of a circle is C = 2πr. Given C = 10π, we have 2πr = 10π, so r = 5 units. The formula for the area of a circle is A = πr^2. So, A = π(5^2) = 25π square units."
   },
   {
     "id": "gre_q_128",
@@ -5951,7 +5951,7 @@
       }
     ],
     "correctAnswer": "C",
-    "explanation": "The discount amount is 20% of $40 = (20/100) \u00d7 40 = 0.20 \u00d7 40 = $8. The sale price is the original price minus the discount: $40 - $8 = $32."
+    "explanation": "The discount amount is 20% of $40 = (20/100) × 40 = 0.20 × 40 = $8. The sale price is the original price minus the discount: $40 - $8 = $32."
   },
   {
     "id": "gre_q_130",
@@ -5977,7 +5977,7 @@
       }
     ],
     "correctAnswer": "C",
-    "explanation": "First, find the car's fuel efficiency in miles per gallon: 180 miles / 6 gallons = 30 miles/gallon. Then, multiply this efficiency by the new amount of gasoline: 30 miles/gallon \u00d7 10 gallons = 300 miles."
+    "explanation": "First, find the car's fuel efficiency in miles per gallon: 180 miles / 6 gallons = 30 miles/gallon. Then, multiply this efficiency by the new amount of gasoline: 30 miles/gallon × 10 gallons = 300 miles."
   },
   {
     "id": "gre_q_131",
@@ -6133,7 +6133,7 @@
       }
     ],
     "correctAnswer": "D",
-    "explanation": "The original radius is r = 6 cm. The original area is A = \u03c0r^2 = \u03c0(6^2) = 36\u03c0 square cm. The new radius is 6 + 0.50 * 6 = 6 + 3 = 9 cm. The new area is A' = \u03c0(9^2) = 81\u03c0 square cm. The increase in area is A' - A = 81\u03c0 - 36\u03c0 = 45\u03c0. The percentage increase is (increase / original area) * 100% = (45\u03c0 / 36\u03c0) * 100% = (5/4) * 100% = 125%."
+    "explanation": "The original radius is r = 6 cm. The original area is A = πr^2 = π(6^2) = 36π square cm. The new radius is 6 + 0.50 * 6 = 6 + 3 = 9 cm. The new area is A' = π(9^2) = 81π square cm. The increase in area is A' - A = 81π - 36π = 45π. The percentage increase is (increase / original area) * 100% = (45π / 36π) * 100% = (5/4) * 100% = 125%."
   },
   {
     "id": "gre_q_137",
@@ -6419,7 +6419,7 @@
       }
     ],
     "correctAnswer": "B",
-    "explanation": "The dimensions of the garden are length L = 15 m and width W = 8 m. The area of the garden is A_garden = L * W = 15 * 8 = 120 square meters. A path of uniform width x meters is built around the garden. This means the new length of the garden including the path will be L' = L + 2x = 15 + 2x, and the new width will be W' = W + 2x = 8 + 2x. The area of the garden including the path is A_total = (15 + 2x)(8 + 2x). The area of the path is given as 114 square meters. The area of the path is the total area minus the garden area: A_path = A_total - A_garden. So, 114 = (15 + 2x)(8 + 2x) - 120. Add 120 to both sides: 114 + 120 = (15 + 2x)(8 + 2x). 234 = (15 + 2x)(8 + 2x). Expand the right side: 234 = 15*8 + 15*2x + 2x*8 + 2x*2x = 120 + 30x + 16x + 4x^2. 234 = 120 + 46x + 4x^2. Rearrange into a standard quadratic equation: 4x^2 + 46x + 120 - 234 = 0. 4x^2 + 46x - 114 = 0. Divide the entire equation by 2 to simplify: 2x^2 + 23x - 57 = 0. We can solve this quadratic equation using the quadratic formula x = [-b \u00b1 sqrt(b^2 - 4ac)] / 2a. Here, a=2, b=23, c=-57. x = [-23 \u00b1 sqrt(23^2 - 4*2*(-57))] / (2*2). x = [-23 \u00b1 sqrt(529 + 456)] / 4. x = [-23 \u00b1 sqrt(985)] / 4. The square root of 985 is approximately 31.38. x = [-23 \u00b1 31.38] / 4. We need a positive value for x (width). x = (-23 + 31.38) / 4 = 8.38 / 4 = 2.095. Let's recheck the arithmetic or consider factoring. Let's try to factor the quadratic equation 2x^2 + 23x - 57 = 0. We need two numbers that multiply to 2*-57 = -114 and add to 23. Consider factors of 114: (1, 114), (2, 57), (3, 38), (6, 19). For 38 and -3, 38*(-3) = -114 and 38 - 3 = 35 (not 23). For 19 and -6, 19*(-6) = -114 and 19-6 = 13 (not 23). Let's check factors of 2 and 57. (2x - 3)(x + 19) = 2x^2 + 38x - 3x - 57 = 2x^2 + 35x - 57. This is not it. (2x + 19)(x - 3) = 2x^2 - 6x + 19x - 57 = 2x^2 + 13x - 57. Let's try combining. (2x - ) (x + ). Let's try factors that multiply to -114 and sum to 23. This seems unlikely. Let's re-examine the equation 234 = (15 + 2x)(8 + 2x). If x = 1.5, then 15 + 2(1.5) = 15 + 3 = 18. And 8 + 2(1.5) = 8 + 3 = 11. 18 * 11 = 198. This is not 234. Let's re-examine the original steps. A_total = A_garden + A_path = 120 + 114 = 234. Length with path = 15 + 2x. Width with path = 8 + 2x. (15 + 2x)(8 + 2x) = 234. Let's try the options. If x = 1, (15+2)(8+2) = 17*10 = 170. Not 234. If x = 1.5, (15+3)(8+3) = 18*11 = 198. Not 234. If x = 2, (15+4)(8+4) = 19*12 = 228. Not 234. Let me double check calculations. 4x^2 + 46x - 114 = 0. Divide by 2: 2x^2 + 23x - 57 = 0. This quadratic equation is correct. Let's use the quadratic formula again to be sure: x = (-23 + sqrt(23^2 - 4*2*(-57))) / (2*2). x = (-23 + sqrt(529 + 456)) / 4. x = (-23 + sqrt(985)) / 4. sqrt(985) is approximately 31.38. x = (-23 + 31.38) / 4 = 8.38 / 4 = 2.095.  It seems none of the options fit if I did the calculations correctly. Let me re-examine the problem or the options. Perhaps there's a simple error in expansion. (15 + 2x)(8 + 2x) = 120 + 30x + 16x + 4x^2 = 4x^2 + 46x + 120. This is correct. So 4x^2 + 46x + 120 = 234. 4x^2 + 46x - 114 = 0. This is correct. Let's analyze the factorization of 2x^2 + 23x - 57 = 0. Factors of 2 are (2,1). Factors of -57 are (1, -57), (-1, 57), (3, -19), (-3, 19). Let's try (2x - 3)(x + 19) = 2x^2 + 38x - 3x - 57 = 2x^2 + 35x - 57. No. Let's try (2x + 19)(x - 3) = 2x^2 - 6x + 19x - 57 = 2x^2 + 13x - 57. No. Let's try (2x - ?)(x + ?). We need the inner and outer products to sum to 23x.  Let's consider possible integer or half-integer solutions given the options. If x = 1.5, then the original equation (15 + 2x)(8 + 2x) = 234 becomes (15 + 3)(8 + 3) = 18 * 11 = 198. This does not equal 234. There seems to be an issue with the provided options or the desired answer for a path of uniform width x=1.5 and path area 114. Let me assume I need to find the option that is numerically closest or retry to see if there is an error in my arithmetic. Let's check the options again. The equation is 4x^2 + 46x - 114 = 0. Or 2x^2 + 23x - 57 = 0. I will re-examine for x=1.5. If I plug x=1.5 into 2x^2 + 23x - 57: 2(1.5)^2 + 23(1.5) - 57 = 2(2.25) + 34.5 - 57 = 4.5 + 34.5 - 57 = 39 - 57 = -18. Not 0. So 1.5 is not the correct solution to my quadratic. Let me check the original problem statement carefully one more time. "
+    "explanation": "The dimensions of the garden are length L = 15 m and width W = 8 m. The area of the garden is A_garden = L * W = 15 * 8 = 120 square meters. A path of uniform width x meters is built around the garden. This means the new length of the garden including the path will be L' = L + 2x = 15 + 2x, and the new width will be W' = W + 2x = 8 + 2x. The area of the garden including the path is A_total = (15 + 2x)(8 + 2x). The area of the path is given as 114 square meters. The area of the path is the total area minus the garden area: A_path = A_total - A_garden. So, 114 = (15 + 2x)(8 + 2x) - 120. Add 120 to both sides: 114 + 120 = (15 + 2x)(8 + 2x). 234 = (15 + 2x)(8 + 2x). Expand the right side: 234 = 15*8 + 15*2x + 2x*8 + 2x*2x = 120 + 30x + 16x + 4x^2. 234 = 120 + 46x + 4x^2. Rearrange into a standard quadratic equation: 4x^2 + 46x + 120 - 234 = 0. 4x^2 + 46x - 114 = 0. Divide the entire equation by 2 to simplify: 2x^2 + 23x - 57 = 0. We can solve this quadratic equation using the quadratic formula x = [-b ± sqrt(b^2 - 4ac)] / 2a. Here, a=2, b=23, c=-57. x = [-23 ± sqrt(23^2 - 4*2*(-57))] / (2*2). x = [-23 ± sqrt(529 + 456)] / 4. x = [-23 ± sqrt(985)] / 4. The square root of 985 is approximately 31.38. x = [-23 ± 31.38] / 4. We need a positive value for x (width). x = (-23 + 31.38) / 4 = 8.38 / 4 = 2.095. Let's recheck the arithmetic or consider factoring. Let's try to factor the quadratic equation 2x^2 + 23x - 57 = 0. We need two numbers that multiply to 2*-57 = -114 and add to 23. Consider factors of 114: (1, 114), (2, 57), (3, 38), (6, 19). For 38 and -3, 38*(-3) = -114 and 38 - 3 = 35 (not 23). For 19 and -6, 19*(-6) = -114 and 19-6 = 13 (not 23). Let's check factors of 2 and 57. (2x - 3)(x + 19) = 2x^2 + 38x - 3x - 57 = 2x^2 + 35x - 57. This is not it. (2x + 19)(x - 3) = 2x^2 - 6x + 19x - 57 = 2x^2 + 13x - 57. Let's try combining. (2x - ) (x + ). Let's try factors that multiply to -114 and sum to 23. This seems unlikely. Let's re-examine the equation 234 = (15 + 2x)(8 + 2x). If x = 1.5, then 15 + 2(1.5) = 15 + 3 = 18. And 8 + 2(1.5) = 8 + 3 = 11. 18 * 11 = 198. This is not 234. Let's re-examine the original steps. A_total = A_garden + A_path = 120 + 114 = 234. Length with path = 15 + 2x. Width with path = 8 + 2x. (15 + 2x)(8 + 2x) = 234. Let's try the options. If x = 1, (15+2)(8+2) = 17*10 = 170. Not 234. If x = 1.5, (15+3)(8+3) = 18*11 = 198. Not 234. If x = 2, (15+4)(8+4) = 19*12 = 228. Not 234. Let me double check calculations. 4x^2 + 46x - 114 = 0. Divide by 2: 2x^2 + 23x - 57 = 0. This quadratic equation is correct. Let's use the quadratic formula again to be sure: x = (-23 + sqrt(23^2 - 4*2*(-57))) / (2*2). x = (-23 + sqrt(529 + 456)) / 4. x = (-23 + sqrt(985)) / 4. sqrt(985) is approximately 31.38. x = (-23 + 31.38) / 4 = 8.38 / 4 = 2.095.  It seems none of the options fit if I did the calculations correctly. Let me re-examine the problem or the options. Perhaps there's a simple error in expansion. (15 + 2x)(8 + 2x) = 120 + 30x + 16x + 4x^2 = 4x^2 + 46x + 120. This is correct. So 4x^2 + 46x + 120 = 234. 4x^2 + 46x - 114 = 0. This is correct. Let's analyze the factorization of 2x^2 + 23x - 57 = 0. Factors of 2 are (2,1). Factors of -57 are (1, -57), (-1, 57), (3, -19), (-3, 19). Let's try (2x - 3)(x + 19) = 2x^2 + 38x - 3x - 57 = 2x^2 + 35x - 57. No. Let's try (2x + 19)(x - 3) = 2x^2 - 6x + 19x - 57 = 2x^2 + 13x - 57. No. Let's try (2x - ?)(x + ?). We need the inner and outer products to sum to 23x.  Let's consider possible integer or half-integer solutions given the options. If x = 1.5, then the original equation (15 + 2x)(8 + 2x) = 234 becomes (15 + 3)(8 + 3) = 18 * 11 = 198. This does not equal 234. There seems to be an issue with the provided options or the desired answer for a path of uniform width x=1.5 and path area 114. Let me assume I need to find the option that is numerically closest or retry to see if there is an error in my arithmetic. Let's check the options again. The equation is 4x^2 + 46x - 114 = 0. Or 2x^2 + 23x - 57 = 0. I will re-examine for x=1.5. If I plug x=1.5 into 2x^2 + 23x - 57: 2(1.5)^2 + 23(1.5) - 57 = 2(2.25) + 34.5 - 57 = 4.5 + 34.5 - 57 = 39 - 57 = -18. Not 0. So 1.5 is not the correct solution to my quadratic. Let me check the original problem statement carefully one more time. "
   },
   {
     "id": "gre_q_148",
@@ -6429,23 +6429,23 @@
     "options": [
       {
         "label": "A",
-        "text": "\u221a5"
+        "text": "√5"
       },
       {
         "label": "B",
-        "text": "\u221a8"
+        "text": "√8"
       },
       {
         "label": "C",
-        "text": "\u221a10"
+        "text": "√10"
       },
       {
         "label": "D",
-        "text": "2\u221a5"
+        "text": "2√5"
       }
     ],
     "correctAnswer": "B",
-    "explanation": "The standard equation of a circle is (x - a)^2 + (y - b)^2 = r^2, where (a, b) is the center and r is the radius. We are given that the center of the circle is (1, 2), so a = 1 and b = 2. We are also given that the point (3, 4) is on the circle. Substitute these values into the circle equation: (3 - 1)^2 + (4 - 2)^2 = r^2. (2)^2 + (2)^2 = r^2. 4 + 4 = r^2. 8 = r^2. So, r = \u221a8. The radius of the circle is \u221a8."
+    "explanation": "The standard equation of a circle is (x - a)^2 + (y - b)^2 = r^2, where (a, b) is the center and r is the radius. We are given that the center of the circle is (1, 2), so a = 1 and b = 2. We are also given that the point (3, 4) is on the circle. Substitute these values into the circle equation: (3 - 1)^2 + (4 - 2)^2 = r^2. (2)^2 + (2)^2 = r^2. 4 + 4 = r^2. 8 = r^2. So, r = √8. The radius of the circle is √8."
   },
   {
     "id": "gre_q_149",
@@ -6581,7 +6581,7 @@
     "id": "gre_q_154",
     "exam": "GRE",
     "section": "Quantitative",
-    "question": "Simplify the expression: (x^2 - 4) / (x - 2), where x \u2260 2.",
+    "question": "Simplify the expression: (x^2 - 4) / (x - 2), where x ≠ 2.",
     "options": [
       {
         "label": "A",
@@ -6601,7 +6601,7 @@
       }
     ],
     "correctAnswer": "B",
-    "explanation": "The expression is (x^2 - 4) / (x - 2). The numerator, x^2 - 4, is a difference of squares, which can be factored as (x - 2)(x + 2). So, the expression becomes [(x - 2)(x + 2)] / (x - 2). Since x \u2260 2, we know that x - 2 \u2260 0, so we can cancel out the (x - 2) term from the numerator and the denominator. This leaves us with x + 2. Therefore, the simplified expression is x + 2."
+    "explanation": "The expression is (x^2 - 4) / (x - 2). The numerator, x^2 - 4, is a difference of squares, which can be factored as (x - 2)(x + 2). So, the expression becomes [(x - 2)(x + 2)] / (x - 2). Since x ≠ 2, we know that x - 2 ≠ 0, so we can cancel out the (x - 2) term from the numerator and the denominator. This leaves us with x + 2. Therefore, the simplified expression is x + 2."
   },
   {
     "id": "gre_q_155",
@@ -7049,7 +7049,7 @@
     "id": "gre_q_172",
     "exam": "GRE",
     "section": "Verbal",
-    "question": "The artist\u2019s later works, a stark departure from the vibrant hues of his early period, were characterized by a pervasive _________, reflecting a growing disillusionment with the societal upheavals of his time.",
+    "question": "The artist’s later works, a stark departure from the vibrant hues of his early period, were characterized by a pervasive _________, reflecting a growing disillusionment with the societal upheavals of his time.",
     "options": [
       {
         "label": "A",
@@ -7283,7 +7283,7 @@
     "id": "gre_q_181",
     "exam": "GRE",
     "section": "Verbal",
-    "question": "The ancient philosopher\u2019s writings are so __________ that centuries of scholars have devoted their careers to deciphering their complex meanings.",
+    "question": "The ancient philosopher’s writings are so __________ that centuries of scholars have devoted their careers to deciphering their complex meanings.",
     "options": [
       {
         "label": "A",
@@ -7335,7 +7335,7 @@
     "id": "gre_q_183",
     "exam": "GRE",
     "section": "Verbal",
-    "question": "The committee\u2019s report was remarkably __________, detailing every minute aspect of the problematic project without omitting a single significant fact.",
+    "question": "The committee’s report was remarkably __________, detailing every minute aspect of the problematic project without omitting a single significant fact.",
     "options": [
       {
         "label": "A",
@@ -7439,7 +7439,7 @@
     "id": "gre_q_187",
     "exam": "GRE",
     "section": "Verbal",
-    "question": "Professor Ramirez\u2019s groundbreaking study on ancient civilizations was met with both widespread acclaim and considerable ______, particularly from scholars whose long-held theories were directly contradicted by her findings.",
+    "question": "Professor Ramirez’s groundbreaking study on ancient civilizations was met with both widespread acclaim and considerable ______, particularly from scholars whose long-held theories were directly contradicted by her findings.",
     "options": [
       {
         "label": "A",
@@ -7465,7 +7465,7 @@
     "id": "gre_q_188",
     "exam": "GRE",
     "section": "Verbal",
-    "question": "While the author\u2019s earlier works were characterized by their ______ and accessible prose, her later novels adopted a more esoteric and demanding style, alienating some of her former readers.",
+    "question": "While the author’s earlier works were characterized by their ______ and accessible prose, her later novels adopted a more esoteric and demanding style, alienating some of her former readers.",
     "options": [
       {
         "label": "A",
@@ -7491,7 +7491,7 @@
     "id": "gre_q_189",
     "exam": "GRE",
     "section": "Verbal",
-    "question": "The committee\u2019s decision to ______ the controversial proposal ultimately saved the organization from a divisive internal conflict, though some members remained dissatisfied with the compromise.",
+    "question": "The committee’s decision to ______ the controversial proposal ultimately saved the organization from a divisive internal conflict, though some members remained dissatisfied with the compromise.",
     "options": [
       {
         "label": "A",
@@ -7543,7 +7543,7 @@
     "id": "gre_q_191",
     "exam": "GRE",
     "section": "Verbal",
-    "question": "The documentary\u2019s ______ approach to historical events, relying heavily on speculation rather than verifiable facts, ultimately undermined its credibility.",
+    "question": "The documentary’s ______ approach to historical events, relying heavily on speculation rather than verifiable facts, ultimately undermined its credibility.",
     "options": [
       {
         "label": "A",
@@ -7595,7 +7595,7 @@
     "id": "gre_q_193",
     "exam": "GRE",
     "section": "Verbal",
-    "question": "The politician\u2019s ______ rhetoric, filled with vague promises and empty slogans, failed to inspire any real confidence among the discerning electorate.",
+    "question": "The politician’s ______ rhetoric, filled with vague promises and empty slogans, failed to inspire any real confidence among the discerning electorate.",
     "options": [
       {
         "label": "A",
@@ -7621,7 +7621,7 @@
     "id": "gre_q_194",
     "exam": "GRE",
     "section": "Verbal",
-    "question": "The architect\u2019s latest design proposal was lauded for its innovative use of sustainable materials and its ______ integration of natural light, creating a truly harmonious living space.",
+    "question": "The architect’s latest design proposal was lauded for its innovative use of sustainable materials and its ______ integration of natural light, creating a truly harmonious living space.",
     "options": [
       {
         "label": "A",
@@ -7725,7 +7725,7 @@
     "id": "gre_q_198",
     "exam": "GRE",
     "section": "Verbal",
-    "question": "The philosopher\u2019s treatise, while outwardly appearing to champion radical individualism, ultimately posited that truly authentic self-realization can only be achieved through ______ to a collective purpose.",
+    "question": "The philosopher’s treatise, while outwardly appearing to champion radical individualism, ultimately posited that truly authentic self-realization can only be achieved through ______ to a collective purpose.",
     "options": [
       {
         "label": "A",
@@ -7829,7 +7829,7 @@
     "id": "gre_q_202",
     "exam": "GRE",
     "section": "Verbal",
-    "question": "The author\u2019s latest novel is a masterclass in ______, weaving together multiple seemingly disparate narratives into a cohesive and impactful whole.",
+    "question": "The author’s latest novel is a masterclass in ______, weaving together multiple seemingly disparate narratives into a cohesive and impactful whole.",
     "options": [
       {
         "label": "A",
