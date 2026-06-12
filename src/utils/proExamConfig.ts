@@ -10,6 +10,7 @@ export interface ProExamConfig {
   description: string;
   timePerQuestion: number; // seconds
   jsonFiles: string[]; // JSON bank file names in src/data/
+  fresh?: boolean; // recently expanded to 300+ items
 }
 
 export const PRO_EXAM_CATEGORIES: Record<string, { label: string; icon: string }> = {
