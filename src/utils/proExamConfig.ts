@@ -10,6 +10,7 @@ export interface ProExamConfig {
   description: string;
   timePerQuestion: number; // seconds
   jsonFiles: string[]; // JSON bank file names in src/data/
+  fresh?: boolean; // recently expanded to 300+ items
 }
 
 export const PRO_EXAM_CATEGORIES: Record<string, { label: string; icon: string }> = {
@@ -133,6 +134,7 @@ export const PRO_EXAMS: ProExamConfig[] = [
     description: 'National Council Licensure Examination for Registered Nurses',
     timePerQuestion: 78,
     jsonFiles: ['nclex_question_bank_200.json'],
+    fresh: true,
   },
   {
     id: 'teas', name: 'ATI TEAS', shortName: 'TEAS', icon: '💉',
@@ -142,6 +144,7 @@ export const PRO_EXAMS: ProExamConfig[] = [
     description: 'Test of Essential Academic Skills for nursing programs',
     timePerQuestion: 64,
     jsonFiles: ['teas_question_bank_200.json'],
+    fresh: true,
   },
 
   // --- Career & Equivalency ---
@@ -153,6 +156,7 @@ export const PRO_EXAMS: ProExamConfig[] = [
     description: 'General Educational Development — high school equivalency',
     timePerQuestion: 90,
     jsonFiles: ['ged_question_bank_200.json'],
+    fresh: true,
   },
   {
     id: 'hiset', name: 'HiSET', shortName: 'HiSET', icon: '📋',
@@ -162,6 +166,7 @@ export const PRO_EXAMS: ProExamConfig[] = [
     description: 'High School Equivalency Test',
     timePerQuestion: 75,
     jsonFiles: ['hiset_question_bank_200.json'],
+    fresh: true,
   },
   {
     id: 'accuplacer', name: 'ACCUPLACER', shortName: 'ACCUPLACER', icon: '🎯',
@@ -171,6 +176,7 @@ export const PRO_EXAMS: ProExamConfig[] = [
     description: 'College placement exam by College Board',
     timePerQuestion: 90,
     jsonFiles: ['accuplacer_question_bank_200.json'],
+    fresh: true,
   },
   {
     id: 'sbac', name: 'SBAC / Smarter Balanced', shortName: 'SBAC', icon: '📊',
@@ -180,6 +186,7 @@ export const PRO_EXAMS: ProExamConfig[] = [
     description: 'Smarter Balanced Assessment for grades 3-8 and 11',
     timePerQuestion: 90,
     jsonFiles: ['sbac_question_bank_200.json'],
+    fresh: true,
   },
 
   // --- International & Language ---
@@ -191,6 +198,7 @@ export const PRO_EXAMS: ProExamConfig[] = [
     description: 'Test of English as a Foreign Language',
     timePerQuestion: 90,
     jsonFiles: ['toefl_question_bank_200.json'],
+    fresh: true,
   },
   {
     id: 'ib', name: 'IB Diploma Programme', shortName: 'IB', icon: '🌍',
@@ -200,6 +208,7 @@ export const PRO_EXAMS: ProExamConfig[] = [
     description: 'International Baccalaureate Diploma exams',
     timePerQuestion: 90,
     jsonFiles: ['ib_question_bank_200.json'],
+    fresh: true,
   },
 ];
 

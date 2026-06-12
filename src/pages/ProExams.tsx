@@ -97,6 +97,11 @@ const ProExams = () => {
                             <span className="text-[10px] px-1.5 py-0.5 rounded-full bg-accent text-accent-foreground font-medium">
                               {exam.scoreRange.min}–{exam.scoreRange.max}
                             </span>
+                            {exam.fresh && (
+                              <span className="text-[10px] px-1.5 py-0.5 rounded-full bg-emerald-500/15 text-emerald-600 dark:text-emerald-400 font-semibold border border-emerald-500/30">
+                                ✨ Fresh 300+
+                              </span>
+                            )}
                           </div>
                           <p className="text-xs text-muted-foreground truncate">{exam.description}</p>
                           <div className="flex gap-1 mt-1 flex-wrap">
