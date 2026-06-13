@@ -133,13 +133,46 @@ export default function FamilyHub() {
               })}
             </div>
 
-            <Card className="p-4 mb-6 bg-gradient-to-br from-primary/10 to-accent/10">
-              <h3 className="font-semibold mb-1">Family Challenge of the Week</h3>
-              <p className="text-sm text-muted-foreground mb-2">
-                Every family member completes at least <strong>3 days</strong> of practice. Highest combined accuracy wins bragging rights.
-              </p>
-              <Link to="/path"><Button size="sm">Start today's session</Button></Link>
-            </Card>
+            {(() => {
+              const totalAttempts = Object.values(stats).reduce((a, s) => a + s.attempts, 0);
+              const totalCorrect = Object.values(stats).reduce((a, s) => a + s.correct, 0);
+              const allMetGoal = kids.length > 0 && kids.every(k => (stats[k.id]?.daysActive || 0) >= 3);
+              const familyAcc = totalAttempts > 0 ? Math.round((totalCorrect/totalAttempts)*100) : 0;
+              const goalPct = kids.length > 0
+                ? Math.round((kids.reduce((a, k) => a + Math.min(3, stats[k.id]?.daysActive || 0), 0) / (kids.length * 3)) * 100)
+                : 0;
+              const leader = [...kids].sort((a,b) => (stats[b.id]?.attempts||0) - (stats[a.id]?.attempts||0))[0];
+              return (
+                <Card className="p-4 mb-6 bg-gradient-to-br from-primary/10 to-accent/10">
+                  <h3 className="font-semibold mb-1">Family Challenge of the Week</h3>
+                  <p className="text-sm text-muted-foreground mb-3">
+                    Goal: every family member practices <strong>3 days</strong>. Highest combined accuracy wins.
+                  </p>
+                  <div className="space-y-2 mb-3">
+                    <div className="flex justify-between text-xs">
+                      <span>Family goal progress</span>
+                      <span className="font-semibold">{goalPct}%</span>
+                    </div>
+                    <Progress value={goalPct} className="h-2" />
+                    <div className="flex justify-between text-xs">
+                      <span>Combined accuracy</span>
+                      <span className="font-semibold">{familyAcc}%</span>
+                    </div>
+                    <Progress value={familyAcc} className="h-2" />
+                  </div>
+                  {leader && (stats[leader.id]?.attempts || 0) > 0 && (
+                    <div className="text-xs mb-3">
+                      <Trophy className="inline w-3 h-3 text-yellow-500 mr-1" />
+                      This week's leader: <strong>{leader.display_name}</strong> ({stats[leader.id]?.attempts} questions)
+                    </div>
+                  )}
+                  {allMetGoal && (
+                    <div className="text-sm font-semibold text-emerald-600 dark:text-emerald-400 mb-2">🎉 Family goal complete this week!</div>
+                  )}
+                  <Link to="/path"><Button size="sm">Start today's session</Button></Link>
+                </Card>
+              );
+            })()}
           </>
         )}
 

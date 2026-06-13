@@ -1,10 +1,11 @@
 import { useState } from "react";
+import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Textarea } from "@/components/ui/textarea";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
-import { ArrowLeft, Languages, Sparkles, Loader2 } from "lucide-react";
+import { ArrowLeft, Languages, Sparkles, Loader2, Bookmark, BookOpen, Trash2 } from "lucide-react";
 import { Volume2 } from "lucide-react";
 import { supabase } from "@/integrations/supabase/client";
 import { useAuth } from "@/hooks/useAuth";
@@ -61,6 +62,42 @@ export default function InterpretationLab() {
   const [text, setText] = useState(SAMPLES.fr);
   const [loading, setLoading] = useState(false);
   const [result, setResult] = useState<string>("");
+  const [history, setHistory] = useState<{ lang: string; text: string; result: string; at: number }[]>([]);
+
+  useEffect(() => {
+    try { setHistory(JSON.parse(localStorage.getItem("ao_interp_history") || "[]")); } catch {}
+  }, []);
+
+  const saveToHistory = (entry: { lang: string; text: string; result: string }) => {
+    const next = [{ ...entry, at: Date.now() }, ...history].slice(0, 20);
+    setHistory(next);
+    try { localStorage.setItem("ao_interp_history", JSON.stringify(next)); } catch {}
+    toast({ title: "Saved to your library" });
+  };
+
+  const clearHistory = () => {
+    setHistory([]);
+    try { localStorage.removeItem("ao_interp_history"); } catch {}
+  };
+
+  const exportFlashcards = () => {
+    // Extract single foreign words (length 2-20, no spaces) from saved passages.
+    const words = new Set<string>();
+    history.forEach(h => {
+      h.text.split(/[\s.,;:!?¡¿«»"'()\[\]]+/).forEach(w => {
+        const clean = w.trim();
+        if (clean.length >= 2 && clean.length <= 20 && !/^\d+$/.test(clean)) words.add(clean);
+      });
+    });
+    if (words.size === 0) { toast({ title: "Nothing to export yet" }); return; }
+    const csv = "front,back\n" + Array.from(words).slice(0, 200).map(w => `"${w}","(translate)"`).join("\n");
+    const blob = new Blob([csv], { type: "text/csv" });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement("a");
+    a.href = url; a.download = "flashcards.csv"; a.click();
+    URL.revokeObjectURL(url);
+    toast({ title: `Exported ${Math.min(words.size, 200)} flashcards` });
+  };
 
   const interpret = async () => {
     if (!text.trim()) return;
@@ -71,7 +108,8 @@ export default function InterpretationLab() {
         body: { language: lang, text: text.trim() },
       });
       if (error) throw error;
-      setResult((data as any)?.interpretation || "No interpretation returned.");
+        const out = (data as any)?.interpretation || "No interpretation returned.";
+        setResult(out);
     } catch (e: any) {
       toast({ title: "Could not interpret", description: e.message || "Try again", variant: "destructive" });
     } finally {
@@ -139,8 +177,33 @@ export default function InterpretationLab() {
         </Card>
 
         {result && (
-          <Card className="p-4 mt-4 prose prose-sm dark:prose-invert max-w-none whitespace-pre-wrap">
-            {result}
+          <Card className="p-4 mt-4">
+            <div className="prose prose-sm dark:prose-invert max-w-none whitespace-pre-wrap">{result}</div>
+            <Button size="sm" variant="outline" className="mt-3 gap-1" onClick={() => saveToHistory({ lang, text, result })}>
+              <Bookmark className="w-4 h-4" /> Save to library
+            </Button>
+          </Card>
+        )}
+
+        {history.length > 0 && (
+          <Card className="p-4 mt-4">
+            <div className="flex items-center justify-between mb-2">
+              <div className="flex items-center gap-2 font-semibold"><BookOpen className="w-4 h-4 text-primary" /> Your library ({history.length})</div>
+              <div className="flex gap-2">
+                <Button size="sm" variant="outline" onClick={exportFlashcards}>Export flashcards</Button>
+                <Button size="sm" variant="ghost" onClick={clearHistory} className="text-muted-foreground gap-1">
+                  <Trash2 className="w-3 h-3" /> Clear
+                </Button>
+              </div>
+            </div>
+            <div className="space-y-2 max-h-72 overflow-y-auto">
+              {history.map((h, i) => (
+                <div key={i} className="text-xs border border-border rounded-md p-2">
+                  <div className="text-muted-foreground mb-1">{LANGS.find(l => l.id === h.lang)?.label} • {new Date(h.at).toLocaleDateString()}</div>
+                  <div className="font-serif italic truncate">{h.text}</div>
+                </div>
+              ))}
+            </div>
           </Card>
         )}
 

@@ -16,6 +16,7 @@ import { InstallAppButton } from "@/components/InstallAppButton";
 import { ShareAppButton } from "@/components/ShareAppButton";
 import { SEO } from "@/components/SEO";
 import { toast } from "@/hooks/use-toast";
+import HowFamiliesUse from "@/components/landing/HowFamiliesUse";
 
 const features = [
   {
@@ -221,6 +222,8 @@ export const LandingPage = () => {
           </div>
         </div>
       </section>
+
+      <HowFamiliesUse />
 
       {/* ═══════════ Everything You Get ═══════════ */}
       <section className="px-6 py-10 bg-muted/30">
