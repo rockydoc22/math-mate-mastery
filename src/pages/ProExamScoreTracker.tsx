@@ -114,7 +114,6 @@ const ProExamScoreTracker = () => {
     return ((score - exam.scoreRange.min) / (exam.scoreRange.max - exam.scoreRange.min)) * 100;
   };
 
-  const targetExams = PRO_EXAMS.filter(e => ['gre', 'gmat', 'lsat', 'mcat'].includes(e.id));
   // Expand selector to ALL ProExams so every exam gets parity.
   const allExams = PRO_EXAMS;
 
