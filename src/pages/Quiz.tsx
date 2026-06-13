@@ -30,6 +30,8 @@ import { useMomentum } from "@/hooks/useMomentum";
 import { useMistakeCoach } from "@/hooks/useMistakeCoach";
 import { MomentumMeter } from "@/components/MomentumMeter";
 import { MistakeCoachCard } from "@/components/MistakeCoachCard";
+import ExplainBack from "@/components/learning/ExplainBack";
+import { recordAttempt } from "@/lib/recordAttempt";
 import { useExamType } from "@/hooks/useExamType";
 import { useProgressiveHints } from "@/hooks/useProgressiveHints";
 import { ProgressiveHintPanel } from "@/components/ProgressiveHintPanel";
@@ -517,6 +519,15 @@ const Quiz = () => {
           <MistakeCoachCard
             feedback={mistakeCoach.lastFeedback}
             onDismiss={mistakeCoach.clearFeedback}
+          />
+        )}
+        {showResult && selectedAnswer !== currentQuestion.correctAnswer && (
+          <ExplainBack
+            question={currentQuestion.question}
+            correctAnswer={String(currentQuestion.correctAnswer)}
+            userAnswer={String(selectedAnswer ?? "")}
+            domain={currentQuestion.type}
+            skill={(currentQuestion as any).skill}
           />
         )}
         <div className="flex gap-3">
