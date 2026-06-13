@@ -4,6 +4,7 @@ import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { ArrowLeft, Globe2, Sparkles } from "lucide-react";
 import { INTL_EXAMS } from "@/data/intlExamsRegistry";
+import { INTL_SAMPLE_BANKS } from "@/data/intlSampleQuestions";
 import { SEO } from "@/components/SEO";
 import { useMemo, useState } from "react";
 import { Input } from "@/components/ui/input";
@@ -55,17 +56,26 @@ export default function InternationalTests() {
             <div key={region}>
               <h2 className="text-sm font-semibold uppercase tracking-wide text-muted-foreground mb-2">{region}</h2>
               <div className="grid sm:grid-cols-2 gap-3">
-                {exams.map(e => (
-                  <Card key={e.id} className="p-4 flex items-start justify-between gap-3">
-                    <div>
-                      <div className="font-semibold">{e.name}</div>
-                      <div className="text-xs text-muted-foreground">{e.description}</div>
-                    </div>
-                    <Badge variant="secondary" className="shrink-0 gap-1">
-                      <Sparkles className="w-3 h-3" /> Coming soon
-                    </Badge>
-                  </Card>
-                ))}
+                {exams.map(e => {
+                  const hasSample = !!INTL_SAMPLE_BANKS[e.id];
+                  return (
+                    <Card key={e.id} className="p-4 flex items-start justify-between gap-3">
+                      <div className="min-w-0">
+                        <div className="font-semibold">{e.name}</div>
+                        <div className="text-xs text-muted-foreground">{e.description}</div>
+                      </div>
+                      {hasSample ? (
+                        <Link to={`/international/${e.id}`} className="shrink-0">
+                          <Button size="sm">Try sample</Button>
+                        </Link>
+                      ) : (
+                        <Badge variant="secondary" className="shrink-0 gap-1">
+                          <Sparkles className="w-3 h-3" /> Coming soon
+                        </Badge>
+                      )}
+                    </Card>
+                  );
+                })}
               </div>
             </div>
           ))}
