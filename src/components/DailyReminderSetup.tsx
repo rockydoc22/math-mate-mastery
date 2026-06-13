@@ -1,8 +1,9 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { Bell, BellOff, Check } from "lucide-react";
+import { Bell, BellOff, Check, Zap } from "lucide-react";
 import { toast } from "@/hooks/use-toast";
 import { enableReminder, clearReminder, getReminderTime } from "@/lib/dailyReminder";
 
@@ -47,8 +48,15 @@ export default function DailyReminderSetup() {
   return (
     <Card className="p-4 space-y-3">
       {missed && missed >= 1 && (
-        <div className="px-3 py-2 rounded-lg bg-amber-500/10 text-amber-700 dark:text-amber-300 text-sm">
-          ⏰ Welcome back! It's been {missed} {missed === 1 ? "day" : "days"}. Want a quick 3-question warmup to reignite your streak?
+        <div className="px-3 py-2 rounded-lg bg-amber-500/10 text-amber-700 dark:text-amber-300 text-sm flex items-center justify-between gap-2 flex-wrap">
+          <span>
+            ⏰ Welcome back! It's been {missed} {missed === 1 ? "day" : "days"}. Quick warmup to reignite your streak?
+          </span>
+          <Link to="/daily">
+            <Button size="sm" variant="secondary" className="gap-1">
+              <Zap className="w-3 h-3" /> Start warmup
+            </Button>
+          </Link>
         </div>
       )}
       <div className="flex items-center gap-2">

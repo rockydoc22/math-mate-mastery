@@ -3,11 +3,12 @@ import { useNavigate, Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Progress } from "@/components/ui/progress";
-import { ArrowLeft, Users, Flame, Trophy, Bell, Heart, ShieldCheck } from "lucide-react";
+import { ArrowLeft, Users, Flame, Trophy, Bell, Heart, ShieldCheck, Share2 } from "lucide-react";
 import { useAuth } from "@/hooks/useAuth";
 import { supabase } from "@/integrations/supabase/client";
 import { SEO } from "@/components/SEO";
 import DailyReminderSetup from "@/components/DailyReminderSetup";
+import { toast } from "@/hooks/use-toast";
 
 interface KidRow {
   id: string;
@@ -169,7 +170,27 @@ export default function FamilyHub() {
                   {allMetGoal && (
                     <div className="text-sm font-semibold text-emerald-600 dark:text-emerald-400 mb-2">🎉 Family goal complete this week!</div>
                   )}
-                  <Link to="/path"><Button size="sm">Start today's session</Button></Link>
+                  <div className="flex gap-2 flex-wrap">
+                    <Link to="/path"><Button size="sm">Start today's session</Button></Link>
+                    <Button
+                      size="sm"
+                      variant="outline"
+                      className="gap-1"
+                      onClick={async () => {
+                        const text = `Our family practiced ${totalAttempts} questions this week on AlphaOmega with ${familyAcc}% accuracy! 🎯 One app, every test — free & family-safe. https://40squared.club`;
+                        try {
+                          if (navigator.share) {
+                            await navigator.share({ title: "AlphaOmega Family Progress", text });
+                          } else {
+                            await navigator.clipboard.writeText(text);
+                            toast({ title: "Copied!", description: "Paste it anywhere to share." });
+                          }
+                        } catch {}
+                      }}
+                    >
+                      <Share2 className="w-3 h-3" /> Share our progress
+                    </Button>
+                  </div>
                 </Card>
               );
             })()}
