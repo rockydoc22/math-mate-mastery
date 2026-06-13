@@ -498,6 +498,25 @@ const Home = () => {
         {/* ══════════ #1 HERO: What to do next (NBA-driven) ══════════ */}
         {!focusMode && <NextBestActionWidget variant="hero" />}
 
+        {/* AlphaPath entry — one app, every test */}
+        {!focusMode && (
+          <Card
+            className="p-4 mb-4 border border-primary/30 bg-gradient-to-r from-primary/10 to-accent/10 cursor-pointer hover:shadow-md transition"
+            onClick={() => navigate('/path')}
+          >
+            <div className="flex items-center gap-3">
+              <Route className="w-6 h-6 text-primary shrink-0" />
+              <div className="flex-1 min-w-0">
+                <div className="font-bold text-sm">Your AlphaOmega Path</div>
+                <div className="text-xs text-muted-foreground truncate">
+                  Pick a test, set a date, get a personalized plan — free.
+                </div>
+              </div>
+              <ChevronRight className="w-4 h-4 text-muted-foreground" />
+            </div>
+          </Card>
+        )}
+
         {/* ══════════ #2 SECONDARY CTA: Practice 10 Questions ══════════ */}
         <Card className="p-4 mb-4 border border-primary/20 bg-card">
           <Button 
