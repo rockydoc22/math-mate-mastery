@@ -147,9 +147,11 @@ const BossBattle = () => {
           <Link to="/"><Button variant="ghost" size="icon"><ArrowLeft className="w-5 h-5" /></Button></Link>
           <div>
             <h1 className="text-2xl font-bold flex items-center gap-2">
-              <Skull className="w-6 h-6 text-destructive" /> Daily Boss Battle
+              <Skull className="w-6 h-6 text-destructive" /> {proExam ? `${proExam.shortName} Boss` : "Daily Boss Battle"}
             </h1>
-            <p className="text-sm text-muted-foreground">One ultra-hard question. One chance. Come back tomorrow.</p>
+            <p className="text-sm text-muted-foreground">
+              {proExam ? `One hard ${proExam.shortName} question per day. Make it count.` : "One ultra-hard question. One chance. Come back tomorrow."}
+            </p>
           </div>
         </div>
 
@@ -191,7 +193,7 @@ const BossBattle = () => {
             {!showResult && (
               <Card className="p-4 text-center bg-destructive/5 border-destructive/20">
                 <Swords className="w-8 h-8 text-destructive mx-auto mb-2" />
-                <p className="text-sm font-medium">⚔️ Today's Boss: Level {bossQuestion.diffNum} {bossQuestion.type === "math" ? "Math" : "English"}</p>
+                <p className="text-sm font-medium">⚔️ Today's Boss: {proExam ? `${proExam.shortName} · ${(bossQuestion as any).domain || "Mixed"}` : `Level ${bossQuestion.diffNum} ${bossQuestion.type === "math" ? "Math" : "English"}`}</p>
                 <p className="text-xs text-muted-foreground">You only get ONE shot!</p>
               </Card>
             )}
