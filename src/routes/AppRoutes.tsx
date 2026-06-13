@@ -3,6 +3,8 @@ import { Routes, Route } from "react-router-dom";
 import { ProtectedRoute } from "@/components/ProtectedRoute";
 import { LandingPage } from "@/components/LandingPage";
 import { GlobalFeedbackFAB } from "@/components/GlobalFeedbackFAB";
+import WhatNowFAB from "@/components/global/WhatNowFAB";
+import GlobalStatsBar from "@/components/global/GlobalStatsBar";
 
 // Core pages loaded eagerly (Home + Auth are always needed)
 import Home from "@/pages/Home";
@@ -128,6 +130,7 @@ const WeaknessRetest = lazy(() => import("@/pages/WeaknessRetest"));
 const TestCatalog = lazy(() => import("@/pages/TestCatalog"));
 const AopsPrealgebraQuiz = lazy(() => import("@/pages/AopsPrealgebraQuiz"));
 const AlphaPath = lazy(() => import("@/pages/AlphaPath"));
+const ReviewQueue = lazy(() => import("@/pages/ReviewQueue"));
 
 const AppRoutes = () => (
   <>
@@ -254,11 +257,14 @@ const AppRoutes = () => (
       <Route path="/search" element={<TestCatalog />} />
       <Route path="/path" element={<AlphaPath />} />
       <Route path="/start" element={<AlphaPath />} />
+      <Route path="/review-queue" element={<ReviewQueue />} />
       <Route path="/aops-prealgebra" element={<AopsPrealgebraQuiz />} />
       {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
       <Route path="*" element={<NotFound />} />
     </Routes>
     <GlobalFeedbackFAB />
+    <WhatNowFAB />
+    <GlobalStatsBar />
   </>
 );
 
