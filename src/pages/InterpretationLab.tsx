@@ -5,6 +5,7 @@ import { Card } from "@/components/ui/card";
 import { Textarea } from "@/components/ui/textarea";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { ArrowLeft, Languages, Sparkles, Loader2 } from "lucide-react";
+import { Volume2 } from "lucide-react";
 import { supabase } from "@/integrations/supabase/client";
 import { useAuth } from "@/hooks/useAuth";
 import { SEO } from "@/components/SEO";
@@ -26,6 +27,24 @@ const LANGS = [
   { id: "ko", label: "Korean" },
   { id: "ru", label: "Russian" },
 ];
+
+// Map our lang IDs to BCP-47 tags the Web Speech API understands.
+const SPEECH_LOCALE: Record<string, string> = {
+  fr: "fr-FR", es: "es-ES", de: "de-DE", it: "it-IT", pt: "pt-PT",
+  la: "it-IT", el: "el-GR", grc: "el-GR", he: "he-IL", ar: "ar-SA",
+  zh: "zh-CN", ja: "ja-JP", ko: "ko-KR", ru: "ru-RU",
+};
+
+function speak(text: string, langId: string) {
+  if (typeof window === "undefined" || !("speechSynthesis" in window)) return;
+  try {
+    window.speechSynthesis.cancel();
+    const u = new SpeechSynthesisUtterance(text);
+    u.lang = SPEECH_LOCALE[langId] || "en-US";
+    u.rate = 0.9;
+    window.speechSynthesis.speak(u);
+  } catch {}
+}
 
 const SAMPLES: Record<string, string> = {
   fr: "Le petit prince habitait une planète à peine plus grande que lui.",
@@ -106,6 +125,15 @@ export default function InterpretationLab() {
           <Button onClick={interpret} disabled={loading || !user} className="gap-2">
             {loading ? <Loader2 className="w-4 h-4 animate-spin" /> : <Sparkles className="w-4 h-4" />}
             {loading ? "Interpreting…" : "Interpret"}
+          </Button>
+          <Button
+            type="button"
+            variant="outline"
+            onClick={() => speak(text, lang)}
+            disabled={!text.trim()}
+            className="gap-2 ml-2"
+          >
+            <Volume2 className="w-4 h-4" /> Listen
           </Button>
           {!user && <p className="text-xs text-muted-foreground">Sign in to use interpretation.</p>}
         </Card>
