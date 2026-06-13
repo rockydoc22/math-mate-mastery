@@ -84,7 +84,12 @@ const MCAT_SKILLS = [
   { id: "mcat-cars", name: "Critical Analysis & Reasoning", category: "CARS", prereqs: [] },
 ];
 
-type SkillNode = typeof MATH_SKILLS[0];
+interface SkillNode {
+  id: string;
+  name: string;
+  category: string;
+  prereqs: string[];
+}
 
 const TAB_LABELS: Record<string, string> = {
   math: "📐 Math",
