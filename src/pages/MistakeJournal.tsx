@@ -272,6 +272,49 @@ const MistakeJournal = () => {
               </div>
             )}
           </TabsContent>
+
+          <TabsContent value="proexams">
+            {proExamGroups.length === 0 ? (
+              <div className="text-center py-10">
+                <BookMarked className="w-10 h-10 text-muted-foreground/30 mx-auto mb-3" />
+                <p className="text-muted-foreground text-sm">No Pro Exam mistakes yet</p>
+                <p className="text-muted-foreground text-xs">Practice a Pro Exam to see grouped misses here</p>
+              </div>
+            ) : (
+              <div className="space-y-2">
+                {proExamGroups.map(g => {
+                  // Section breakdown
+                  const sections: Record<string, number> = {};
+                  g.items.forEach(it => {
+                    const s = it.domain || 'Other';
+                    sections[s] = (sections[s] || 0) + 1;
+                  });
+                  const top = Object.entries(sections).sort((a, b) => b[1] - a[1]).slice(0, 3);
+                  return (
+                    <Card key={g.exam.id} className="p-3">
+                      <div className="flex items-center gap-2 mb-2">
+                        <span className="text-lg">{g.exam.icon}</span>
+                        <p className="font-bold text-sm flex-1">{g.exam.shortName}</p>
+                        <span className="text-xs font-bold text-red-500">{g.count} misses</span>
+                      </div>
+                      <div className="flex flex-wrap gap-1.5 mb-2">
+                        {top.map(([sec, ct]) => (
+                          <span key={sec} className="text-[10px] px-2 py-0.5 rounded-full bg-muted text-muted-foreground">
+                            {sec}: {ct}
+                          </span>
+                        ))}
+                      </div>
+                      <Link to={`/pro-exam/${g.exam.id}`}>
+                        <Button size="sm" variant="outline" className="w-full h-7 text-xs">
+                          Retry weak {g.exam.shortName} questions
+                        </Button>
+                      </Link>
+                    </Card>
+                  );
+                })}
+              </div>
+            )}
+          </TabsContent>
         </Tabs>
 
         <ReflectionsSection />
