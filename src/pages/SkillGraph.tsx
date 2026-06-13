@@ -184,7 +184,7 @@ export default function SkillGraph() {
   }, [topicData, attemptStats, activeTab]);
 
   const skills = getSkillsForTab(activeTab);
-  const categories = [...new Set(skills.map(s => s.category))];
+  const categories = Array.from(new Set(skills.map(s => s.category))) as string[];
 
   // Stats
   const totalSkills = skills.length;
