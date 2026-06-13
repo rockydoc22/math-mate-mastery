@@ -566,6 +566,13 @@ const Home = () => {
           </Button>
         </Link>
 
+        {/* AlphaOmega Path entry */}
+        <Link to="/path" className="mb-4 block">
+          <Button size="lg" variant="outline" className="w-full font-bold gap-2 border-primary/40 hover:bg-primary/10">
+            🎯 Build my AlphaOmega Path — pick your test
+          </Button>
+        </Link>
+
         {/* Personalized Stats - compact */}
         {user && ratings && (ratings.mathQuestionsAnswered + ratings.englishQuestionsAnswered > 0) && (() => {
           const r = ratings.overallRating;
