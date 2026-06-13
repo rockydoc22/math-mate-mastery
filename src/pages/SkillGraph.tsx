@@ -48,7 +48,66 @@ const ENGLISH_SKILLS = [
   { id: "craft-structure", name: "Text Structure", category: "Craft & Structure", prereqs: ["reading-main-idea"] },
 ];
 
-type SkillNode = typeof MATH_SKILLS[0];
+// Day 5 — Seed SkillGraph nodes for top 3 ProExams (GRE, NCLEX, MCAT)
+const GRE_SKILLS = [
+  { id: "gre-arithmetic", name: "Arithmetic", category: "Quantitative", prereqs: [] },
+  { id: "gre-algebra", name: "Algebra", category: "Quantitative", prereqs: ["gre-arithmetic"] },
+  { id: "gre-geometry", name: "Geometry", category: "Quantitative", prereqs: ["gre-arithmetic"] },
+  { id: "gre-data-analysis", name: "Data Analysis", category: "Quantitative", prereqs: ["gre-algebra"] },
+  { id: "gre-vocab", name: "Vocabulary", category: "Verbal", prereqs: [] },
+  { id: "gre-text-completion", name: "Text Completion", category: "Verbal", prereqs: ["gre-vocab"] },
+  { id: "gre-sentence-equiv", name: "Sentence Equivalence", category: "Verbal", prereqs: ["gre-vocab"] },
+  { id: "gre-reading-comp", name: "Reading Comprehension", category: "Verbal", prereqs: ["gre-text-completion"] },
+  { id: "gre-analytical-writing", name: "Analytical Writing", category: "Writing", prereqs: ["gre-reading-comp"] },
+];
+
+const NCLEX_SKILLS = [
+  { id: "nclex-safe-care", name: "Safe & Effective Care", category: "Safe Care", prereqs: [] },
+  { id: "nclex-infection-control", name: "Infection Control", category: "Safe Care", prereqs: ["nclex-safe-care"] },
+  { id: "nclex-health-promotion", name: "Health Promotion", category: "Promotion", prereqs: [] },
+  { id: "nclex-psychosocial", name: "Psychosocial Integrity", category: "Psychosocial", prereqs: [] },
+  { id: "nclex-basic-care", name: "Basic Care & Comfort", category: "Physiological", prereqs: [] },
+  { id: "nclex-pharmacology", name: "Pharmacological Therapies", category: "Physiological", prereqs: ["nclex-basic-care"] },
+  { id: "nclex-risk-reduction", name: "Risk Reduction", category: "Physiological", prereqs: ["nclex-basic-care"] },
+  { id: "nclex-physio-adaptation", name: "Physiological Adaptation", category: "Physiological", prereqs: ["nclex-pharmacology", "nclex-risk-reduction"] },
+];
+
+const MCAT_SKILLS = [
+  { id: "mcat-chem-gen", name: "General Chemistry", category: "Chem/Phys", prereqs: [] },
+  { id: "mcat-physics", name: "Physics", category: "Chem/Phys", prereqs: [] },
+  { id: "mcat-chem-org", name: "Organic Chemistry", category: "Chem/Phys", prereqs: ["mcat-chem-gen"] },
+  { id: "mcat-biochem", name: "Biochemistry", category: "Bio/Biochem", prereqs: ["mcat-chem-org"] },
+  { id: "mcat-bio-cell", name: "Cell Biology", category: "Bio/Biochem", prereqs: [] },
+  { id: "mcat-bio-systems", name: "Body Systems", category: "Bio/Biochem", prereqs: ["mcat-bio-cell"] },
+  { id: "mcat-psych", name: "Psychology", category: "Psych/Soc", prereqs: [] },
+  { id: "mcat-soc", name: "Sociology", category: "Psych/Soc", prereqs: [] },
+  { id: "mcat-cars", name: "Critical Analysis & Reasoning", category: "CARS", prereqs: [] },
+];
+
+interface SkillNode {
+  id: string;
+  name: string;
+  category: string;
+  prereqs: string[];
+}
+
+const TAB_LABELS: Record<string, string> = {
+  math: "📐 Math",
+  english: "📝 English",
+  gre: "🎓 GRE",
+  nclex: "🏥 NCLEX",
+  mcat: "🔬 MCAT",
+};
+
+function getSkillsForTab(tab: string): SkillNode[] {
+  switch (tab) {
+    case "english": return ENGLISH_SKILLS;
+    case "gre": return GRE_SKILLS;
+    case "nclex": return NCLEX_SKILLS;
+    case "mcat": return MCAT_SKILLS;
+    default: return MATH_SKILLS;
+  }
+}
 
 function getMasteryLevel(accuracy: number, attempts: number): number {
   if (attempts === 0) return 0; // N0
@@ -66,7 +125,7 @@ function isUnlocked(node: SkillNode, masteryMap: Record<string, number>): boolea
 
 export default function SkillGraph() {
   const { user } = useAuth();
-  const [activeTab, setActiveTab] = useState<"math" | "english">("math");
+  const [activeTab, setActiveTab] = useState<"math" | "english" | "gre" | "nclex" | "mcat">("math");
   const [selectedNode, setSelectedNode] = useState<string | null>(null);
 
   // Load topic mastery data
@@ -106,7 +165,7 @@ export default function SkillGraph() {
   // Build mastery map
   const masteryMap = useMemo(() => {
     const map: Record<string, number> = {};
-    const skills = activeTab === "math" ? MATH_SKILLS : ENGLISH_SKILLS;
+    const skills = getSkillsForTab(activeTab);
     
     for (const skill of skills) {
       // Check topic_mastery first
@@ -129,8 +188,8 @@ export default function SkillGraph() {
     return map;
   }, [topicData, attemptStats, activeTab]);
 
-  const skills = activeTab === "math" ? MATH_SKILLS : ENGLISH_SKILLS;
-  const categories = [...new Set(skills.map(s => s.category))];
+  const skills = getSkillsForTab(activeTab);
+  const categories = Array.from(new Set(skills.map(s => s.category))) as string[];
 
   // Stats
   const totalSkills = skills.length;
@@ -174,18 +233,18 @@ export default function SkillGraph() {
         </div>
 
         {/* Tab switcher */}
-        <div className="flex gap-2 mb-4">
-          {(["math", "english"] as const).map(tab => (
+        <div className="flex gap-2 mb-4 overflow-x-auto pb-1">
+          {(["math", "english", "gre", "nclex", "mcat"] as const).map(tab => (
             <button
               key={tab}
               onClick={() => { setActiveTab(tab); setSelectedNode(null); }}
-              className={`flex-1 py-2 px-4 rounded-lg text-sm font-semibold transition-all ${
+              className={`shrink-0 py-2 px-4 rounded-lg text-sm font-semibold transition-all ${
                 activeTab === tab 
                   ? "bg-primary text-primary-foreground" 
                   : "bg-card border border-border text-muted-foreground hover:text-foreground"
               }`}
             >
-              {tab === "math" ? "📐 Math" : "📝 English"}
+              {TAB_LABELS[tab]}
             </button>
           ))}
         </div>
