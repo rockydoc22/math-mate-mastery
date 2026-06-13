@@ -131,6 +131,9 @@ const TestCatalog = lazy(() => import("@/pages/TestCatalog"));
 const AopsPrealgebraQuiz = lazy(() => import("@/pages/AopsPrealgebraQuiz"));
 const AlphaPath = lazy(() => import("@/pages/AlphaPath"));
 const ReviewQueue = lazy(() => import("@/pages/ReviewQueue"));
+const FamilyHub = lazy(() => import("@/pages/FamilyHub"));
+const InternationalTests = lazy(() => import("@/pages/InternationalTests"));
+const InterpretationLab = lazy(() => import("@/pages/InterpretationLab"));
 
 const AppRoutes = () => (
   <>
@@ -259,6 +262,9 @@ const AppRoutes = () => (
       <Route path="/start" element={<AlphaPath />} />
       <Route path="/review-queue" element={<ReviewQueue />} />
       <Route path="/aops-prealgebra" element={<AopsPrealgebraQuiz />} />
+      <Route path="/family" element={<FamilyHub />} />
+      <Route path="/international" element={<InternationalTests />} />
+      <Route path="/interpretation" element={<InterpretationLab />} />
       {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
       <Route path="*" element={<NotFound />} />
     </Routes>

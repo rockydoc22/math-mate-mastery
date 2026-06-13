@@ -19,3 +19,5 @@ project_id = "ebzrddwipeogyffvlfqm"
     verify_jwt = false
   [functions.study-coach]
     verify_jwt = false
+  [functions.interpret-passage]
+    verify_jwt = true
