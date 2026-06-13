@@ -6,6 +6,7 @@ import { ArrowLeft, Check, X, Sparkles } from "lucide-react";
 import { SEO } from "@/components/SEO";
 import { INTL_EXAMS } from "@/data/intlExamsRegistry";
 import { getIntlBank } from "@/data/intlSampleQuestions";
+import { cacheQuestion } from "@/lib/offlineCache";
 
 export default function IntlSampleQuiz() {
   const { examId = "" } = useParams();
@@ -42,6 +43,15 @@ export default function IntlSampleQuiz() {
     if (picked !== null) return;
     setPicked(i);
     if (i === q.correctIndex) setCorrectCount(c => c + 1);
+    // Cache for offline practice
+    cacheQuestion({
+      id: `${examId}-${q.id}`,
+      prompt: q.prompt,
+      choices: q.choices,
+      correctIndex: q.correctIndex,
+      explanation: q.explanation,
+      subject: exam?.name,
+    });
   };
 
   const next = () => {

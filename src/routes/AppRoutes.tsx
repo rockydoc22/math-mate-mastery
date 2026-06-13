@@ -135,6 +135,7 @@ const FamilyHub = lazy(() => import("@/pages/FamilyHub"));
 const InternationalTests = lazy(() => import("@/pages/InternationalTests"));
 const InterpretationLab = lazy(() => import("@/pages/InterpretationLab"));
 const IntlSampleQuiz = lazy(() => import("@/pages/IntlSampleQuiz"));
+const OfflinePractice = lazy(() => import("@/pages/OfflinePractice"));
 
 const AppRoutes = () => (
   <>
@@ -267,6 +268,7 @@ const AppRoutes = () => (
       <Route path="/international" element={<InternationalTests />} />
       <Route path="/international/:examId" element={<IntlSampleQuiz />} />
       <Route path="/interpretation" element={<InterpretationLab />} />
+      <Route path="/offline" element={<OfflinePractice />} />
       {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
       <Route path="*" element={<NotFound />} />
     </Routes>
