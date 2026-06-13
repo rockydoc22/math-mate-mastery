@@ -136,6 +136,7 @@ const InternationalTests = lazy(() => import("@/pages/InternationalTests"));
 const InterpretationLab = lazy(() => import("@/pages/InterpretationLab"));
 const IntlSampleQuiz = lazy(() => import("@/pages/IntlSampleQuiz"));
 const OfflinePractice = lazy(() => import("@/pages/OfflinePractice"));
+const Warmup = lazy(() => import("@/pages/Warmup"));
 
 const AppRoutes = () => (
   <>
