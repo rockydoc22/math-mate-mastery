@@ -1,5 +1,5 @@
 import { useState, useEffect, useMemo } from "react";
-import { Link } from "react-router-dom";
+import { Link, useSearchParams } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { ArrowLeft, Skull, Trophy, Lock, Swords } from "lucide-react";
@@ -8,6 +8,9 @@ import { englishQuestions } from "@/data/englishQuestions";
 import { useAuth } from "@/hooks/useAuth";
 import { QuizCard } from "@/components/QuizCard";
 import { ReflectionJournalCard } from "@/components/ReflectionJournalCard";
+import { getProExam } from "@/utils/proExamConfig";
+import { loadProExamQuestions } from "@/data/proExamQuestions";
+import type { Question } from "@/data/questions";
 
 const BOSS_KEY = "boss_battle_daily";
 
@@ -32,10 +35,15 @@ function seededRandom(seed: string) {
 
 const BossBattle = () => {
   const { user } = useAuth();
+  const [searchParams] = useSearchParams();
+  const examId = searchParams.get("exam") || "";
+  const proExam = examId ? getProExam(examId) : undefined;
   const today = getTodayStr();
 
+  const stateKey = proExam ? `${BOSS_KEY}_${proExam.id}` : BOSS_KEY;
+
   const [bossState, setBossState] = useState<BossState | null>(() => {
-    const stored = localStorage.getItem(BOSS_KEY);
+    const stored = localStorage.getItem(stateKey);
     if (stored) {
       const parsed = JSON.parse(stored) as BossState;
       if (parsed.date === today) return parsed;
@@ -46,12 +54,35 @@ const BossBattle = () => {
   const [selectedAnswer, setSelectedAnswer] = useState<string | null>(null);
   const [showResult, setShowResult] = useState(false);
   const [wins, setWins] = useState(() => {
-    const stored = localStorage.getItem("boss_battle_wins");
+    const stored = localStorage.getItem(proExam ? `boss_battle_wins_${proExam.id}` : "boss_battle_wins");
     return stored ? parseInt(stored, 10) : 0;
   });
 
+  const [proPool, setProPool] = useState<Question[] | null>(null);
+
+  useEffect(() => {
+    if (!proExam) return;
+    let cancelled = false;
+    loadProExamQuestions(proExam.jsonFiles).then(qs => {
+      if (!cancelled) setProPool(qs);
+    });
+    return () => { cancelled = true; };
+  }, [proExam]);
+
   // Pick today's boss question deterministically - hardest questions only
   const bossQuestion = useMemo(() => {
+    if (proExam) {
+      if (!proPool || proPool.length === 0) return null;
+      const hard = proPool.filter(q => q.difficulty === "Hard");
+      const pool = hard.length > 0 ? hard : proPool;
+      const seed = seededRandom(`${proExam.id}:${today}`);
+      const q = pool[seed % pool.length];
+      return {
+        ...q,
+        diffNum: 10,
+        type: "math" as const, // label only
+      };
+    }
     const allHard = [
       ...questions.filter(q => (q.difficultyRating || 0) >= 9).map(q => ({ ...q, diffNum: q.difficultyRating || 9, type: "math" as const })),
       ...englishQuestions.filter(q => (q.difficultyRating || 0) >= 9).map(q => ({
@@ -70,7 +101,7 @@ const BossBattle = () => {
     const seed = seededRandom(today);
     const idx = seed % allHard.length;
     return allHard[idx];
-  }, [today]);
+  }, [today, proExam, proPool]);
 
   // If already answered today, use stored state
   const alreadyAnswered = bossState?.date === today && bossState.answered;
@@ -88,12 +119,12 @@ const BossBattle = () => {
       questionId: bossQuestion?.id || "",
     };
     setBossState(state);
-    localStorage.setItem(BOSS_KEY, JSON.stringify(state));
+    localStorage.setItem(stateKey, JSON.stringify(state));
 
     if (correct) {
       const newWins = wins + 1;
       setWins(newWins);
-      localStorage.setItem("boss_battle_wins", String(newWins));
+      localStorage.setItem(proExam ? `boss_battle_wins_${proExam.id}` : "boss_battle_wins", String(newWins));
     }
   };
 
