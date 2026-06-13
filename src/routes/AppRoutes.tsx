@@ -270,6 +270,7 @@ const AppRoutes = () => (
       <Route path="/international/:examId" element={<IntlSampleQuiz />} />
       <Route path="/interpretation" element={<InterpretationLab />} />
       <Route path="/offline" element={<OfflinePractice />} />
+      <Route path="/warmup" element={<Warmup />} />
       {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
       <Route path="*" element={<NotFound />} />
     </Routes>
