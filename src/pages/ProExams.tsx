@@ -276,6 +276,36 @@ const ProExams = () => {
               </div>
             </Card>
           </div>
+
+          {/* ProExam Boss Battles */}
+          <div className="mt-6">
+            <div className="flex items-center gap-2 mb-3">
+              <span className="text-xl">💀</span>
+              <h2 className="text-lg font-bold">Daily ProExam Boss</h2>
+            </div>
+            <p className="text-xs text-muted-foreground mb-3">
+              One hard question per exam, per day. Beat the boss to prove mastery.
+            </p>
+            <div className="grid grid-cols-3 gap-2">
+              {['gre', 'gmat', 'lsat', 'mcat', 'nclex', 'teas'].map(id => {
+                const exam = PRO_EXAMS.find(e => e.id === id);
+                if (!exam) return null;
+                return (
+                  <Card
+                    key={id}
+                    className="p-3 cursor-pointer hover:shadow-md transition-all hover:border-destructive/40 group"
+                    onClick={() => navigate(`/boss-battle?exam=${id}`)}
+                  >
+                    <div className="flex flex-col items-center text-center gap-1">
+                      <span className="text-xl">{exam.icon}</span>
+                      <h3 className="font-bold text-xs text-foreground">{exam.shortName}</h3>
+                      <span className="text-[10px] text-destructive">⚔️ Boss</span>
+                    </div>
+                  </Card>
+                );
+              })}
+            </div>
+          </div>
         </ConsentGate>
       </div>
       <BottomNav />
