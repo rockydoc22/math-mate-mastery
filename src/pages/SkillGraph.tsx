@@ -86,6 +86,24 @@ const MCAT_SKILLS = [
 
 type SkillNode = typeof MATH_SKILLS[0];
 
+const TAB_LABELS: Record<string, string> = {
+  math: "📐 Math",
+  english: "📝 English",
+  gre: "🎓 GRE",
+  nclex: "🏥 NCLEX",
+  mcat: "🔬 MCAT",
+};
+
+function getSkillsForTab(tab: string): SkillNode[] {
+  switch (tab) {
+    case "english": return ENGLISH_SKILLS;
+    case "gre": return GRE_SKILLS;
+    case "nclex": return NCLEX_SKILLS;
+    case "mcat": return MCAT_SKILLS;
+    default: return MATH_SKILLS;
+  }
+}
+
 function getMasteryLevel(accuracy: number, attempts: number): number {
   if (attempts === 0) return 0; // N0
   if (attempts < 3) return 1; // N1
