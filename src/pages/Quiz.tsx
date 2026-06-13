@@ -305,6 +305,16 @@ const Quiz = () => {
 
     // Update skill rating
     if (user && currentQuestion.difficultyRating) {
+      // Unified attempt write — feeds skill graph + spaced repetition.
+      recordAttempt({
+        userId: user.id,
+        questionId: String(currentQuestion.id),
+        isCorrect,
+        difficulty: currentQuestion.difficultyRating,
+        domain: currentQuestion.type,
+        skill: (currentQuestion as any).skill,
+        source: "quiz",
+      });
       const ratingType: "math" | "english" = currentQuestion.type === "english" ? "english" : "math";
       const result = await updateRating(
         ratingType,
