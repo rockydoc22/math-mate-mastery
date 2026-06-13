@@ -14,6 +14,7 @@ import { BottomNav } from "@/components/BottomNav";
 import { motion } from "framer-motion";
 import { BookOpen } from "lucide-react";
 import { getReflectionEntries, type ReflectionEntry } from "@/hooks/useReflectionPrompts";
+import { PRO_EXAMS } from "@/utils/proExamConfig";
 
 interface MistakeEntry {
   id: string;
@@ -89,6 +90,17 @@ const MistakeJournal = () => {
     ? patterns
     : patterns.filter(p => p.domain === filterDomain);
 
+  // Group mistakes by Pro Exam (matched via question_id prefix). Day 5 starter.
+  const proExamGroups = PRO_EXAMS.map(ex => {
+    const prefix = ex.id.toLowerCase();
+    const items = mistakes.filter(m =>
+      typeof m.question_id === 'string' &&
+      m.question_id.toLowerCase().startsWith(prefix + '_' ) ||
+      (typeof m.question_id === 'string' && m.question_id.toLowerCase().startsWith(prefix + '-'))
+    );
+    return { exam: ex, count: items.length, items };
+  }).filter(g => g.count > 0).sort((a, b) => b.count - a.count);
+
   const formatTime = (ms: number | null) => {
     if (!ms) return "—";
     const secs = Math.round(ms / 1000);
@@ -159,9 +171,10 @@ const MistakeJournal = () => {
         </div>
 
         <Tabs value={activeTab} onValueChange={setActiveTab}>
-          <TabsList className="grid grid-cols-2 w-full mb-4">
+          <TabsList className="grid grid-cols-3 w-full mb-4">
             <TabsTrigger value="recent">Recent Mistakes</TabsTrigger>
             <TabsTrigger value="patterns">Patterns</TabsTrigger>
+            <TabsTrigger value="proexams">By Exam</TabsTrigger>
           </TabsList>
 
           <TabsContent value="recent">
