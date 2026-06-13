@@ -18,6 +18,19 @@ interface ScoreEntry {
   notes: string;
 }
 
+interface ExamGoal {
+  examId: string;
+  target: number;
+  deadline?: string;
+}
+
+// Rough percentile mapping (linear within scoreRange). Used as a study heuristic only.
+function estimatePercentile(exam: ProExamConfig, score: number): number {
+  const { min, max } = exam.scoreRange;
+  const pct = ((score - min) / (max - min)) * 100;
+  return Math.max(1, Math.min(99, Math.round(pct)));
+}
+
 const ProExamScoreTracker = () => {
   const navigate = useNavigate();
   const [selectedExam, setSelectedExam] = useState<string>('gre');
@@ -25,16 +38,41 @@ const ProExamScoreTracker = () => {
     const saved = localStorage.getItem('pro-exam-scores');
     return saved ? JSON.parse(saved) : [];
   });
+  const [goals, setGoals] = useState<ExamGoal[]>(() => {
+    const saved = localStorage.getItem('pro-exam-goals');
+    return saved ? JSON.parse(saved) : [];
+  });
+  const [newGoal, setNewGoal] = useState('');
   const [newScore, setNewScore] = useState('');
   const [newNotes, setNewNotes] = useState('');
   const [showAdd, setShowAdd] = useState(false);
 
   const exam = PRO_EXAMS.find(e => e.id === selectedExam);
   const examEntries = entries.filter(e => e.examId === selectedExam).sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+  const goal = goals.find(g => g.examId === selectedExam);
 
   const save = (updated: ScoreEntry[]) => {
     setEntries(updated);
     localStorage.setItem('pro-exam-scores', JSON.stringify(updated));
+  };
+
+  const saveGoals = (updated: ExamGoal[]) => {
+    setGoals(updated);
+    localStorage.setItem('pro-exam-goals', JSON.stringify(updated));
+  };
+
+  const setGoal = () => {
+    if (!exam) return;
+    const t = parseInt(newGoal);
+    if (isNaN(t) || t < exam.scoreRange.min || t > exam.scoreRange.max) {
+      toast({ title: 'Invalid target', description: `Enter a score between ${exam.scoreRange.min} and ${exam.scoreRange.max}`, variant: 'destructive' });
+      return;
+    }
+    const next = goals.filter(g => g.examId !== selectedExam);
+    next.push({ examId: selectedExam, target: t });
+    saveGoals(next);
+    setNewGoal('');
+    toast({ title: '🎯 Target set!', description: `Aiming for ${t} on ${exam.shortName}` });
   };
 
   const addEntry = () => {
@@ -76,7 +114,8 @@ const ProExamScoreTracker = () => {
     return ((score - exam.scoreRange.min) / (exam.scoreRange.max - exam.scoreRange.min)) * 100;
   };
 
-  const targetExams = PRO_EXAMS.filter(e => ['gre', 'gmat', 'lsat', 'mcat'].includes(e.id));
+  // Expand selector to ALL ProExams so every exam gets parity.
+  const allExams = PRO_EXAMS;
 
   return (
     <div className="min-h-screen bg-background pb-24">
@@ -95,7 +134,7 @@ const ProExamScoreTracker = () => {
       <div className="max-w-2xl mx-auto p-4 space-y-4">
         {/* Exam Selector */}
         <div className="flex gap-2 overflow-x-auto pb-1">
-          {targetExams.map(e => (
+          {allExams.map(e => (
             <button
               key={e.id}
               onClick={() => setSelectedExam(e.id)}
@@ -109,6 +148,36 @@ const ProExamScoreTracker = () => {
             </button>
           ))}
         </div>
+
+        {/* Goal Setter */}
+        {exam && (
+          <Card className="p-3 flex items-center gap-2">
+            <span className="text-lg">🎯</span>
+            <div className="flex-1 min-w-0">
+              <p className="text-[10px] uppercase text-muted-foreground">Target Score</p>
+              {goal ? (
+                <p className="text-sm font-bold text-foreground">
+                  {goal.target}
+                  {best != null && (
+                    <span className="ml-2 text-[10px] font-medium text-muted-foreground">
+                      {best >= goal.target ? '✅ Reached!' : `${goal.target - best} to go`}
+                    </span>
+                  )}
+                </p>
+              ) : (
+                <p className="text-xs text-muted-foreground">Set a target to track progress</p>
+              )}
+            </div>
+            <Input
+              type="number"
+              placeholder={`${exam.scoreRange.min}–${exam.scoreRange.max}`}
+              value={newGoal}
+              onChange={e => setNewGoal(e.target.value)}
+              className="w-24 h-8 text-xs"
+            />
+            <Button size="sm" variant="outline" onClick={setGoal} className="h-8">Set</Button>
+          </Card>
+        )}
 
         {/* Stats Summary */}
         {exam && examEntries.length > 0 && (
@@ -128,6 +197,11 @@ const ProExamScoreTracker = () => {
                   <p className="text-2xl font-black text-foreground">{avg}</p>
                 </div>
               </div>
+              {best != null && (
+                <p className="mt-2 text-center text-[10px] text-muted-foreground">
+                  Est. percentile (heuristic): ~{estimatePercentile(exam, best)}th
+                </p>
+              )}
               {trend !== null && (
                 <div className={`mt-3 text-center text-xs font-medium ${trend > 0 ? 'text-emerald-600 dark:text-emerald-400' : trend < 0 ? 'text-destructive' : 'text-muted-foreground'}`}>
                   {trend > 0 ? `📈 +${trend} from last` : trend < 0 ? `📉 ${trend} from last` : '➡️ Same as last'}
