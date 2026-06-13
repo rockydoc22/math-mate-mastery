@@ -48,7 +48,7 @@ export const NotificationBell = () => {
 
     // Subscribe to new notifications
     const channel = supabase
-      .channel("user_notifications")
+      .channel(`user:${user.id}`)
       .on(
         "postgres_changes",
         {
