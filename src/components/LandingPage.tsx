@@ -115,7 +115,7 @@ export const LandingPage = () => {
                 🛡️ Family-safe content
               </span>
               <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-xs font-medium bg-pink-500/10 text-pink-600 dark:text-pink-400">
-                ❤️ Built for families
+                ❤️ Safe for all ages
               </span>
               <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-xs font-medium bg-primary/10 text-primary">
                 100% Free
