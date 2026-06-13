@@ -6,13 +6,26 @@ import { Bell, BellOff, Check } from "lucide-react";
 import { toast } from "@/hooks/use-toast";
 import { enableReminder, clearReminder, getReminderTime } from "@/lib/dailyReminder";
 
+const LAST_SEEN_KEY = "ao_last_seen_date";
+function checkMissedDay() {
+  if (typeof window === "undefined") return null;
+  const today = new Date().toISOString().slice(0,10);
+  const last = localStorage.getItem(LAST_SEEN_KEY);
+  localStorage.setItem(LAST_SEEN_KEY, today);
+  if (!last || last === today) return null;
+  const days = Math.floor((Date.parse(today) - Date.parse(last)) / 86400000);
+  return days >= 1 ? days : null;
+}
+
 export default function DailyReminderSetup() {
   const [time, setTime] = useState("17:00");
   const [active, setActive] = useState<string | null>(null);
+  const [missed, setMissed] = useState<number | null>(null);
 
   useEffect(() => {
     const t = getReminderTime();
     if (t) { setActive(t); setTime(t); }
+    setMissed(checkMissedDay());
   }, []);
 
   const enable = async () => {
@@ -33,6 +46,11 @@ export default function DailyReminderSetup() {
 
   return (
     <Card className="p-4 space-y-3">
+      {missed && missed >= 1 && (
+        <div className="px-3 py-2 rounded-lg bg-amber-500/10 text-amber-700 dark:text-amber-300 text-sm">
+          ⏰ Welcome back! It's been {missed} {missed === 1 ? "day" : "days"}. Want a quick 3-question warmup to reignite your streak?
+        </div>
+      )}
       <div className="flex items-center gap-2">
         <Bell className="w-5 h-5 text-primary" />
         <h3 className="font-semibold">Daily practice reminder</h3>
