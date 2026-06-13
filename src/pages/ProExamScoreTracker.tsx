@@ -18,6 +18,19 @@ interface ScoreEntry {
   notes: string;
 }
 
+interface ExamGoal {
+  examId: string;
+  target: number;
+  deadline?: string;
+}
+
+// Rough percentile mapping (linear within scoreRange). Used as a study heuristic only.
+function estimatePercentile(exam: ProExamConfig, score: number): number {
+  const { min, max } = exam.scoreRange;
+  const pct = ((score - min) / (max - min)) * 100;
+  return Math.max(1, Math.min(99, Math.round(pct)));
+}
+
 const ProExamScoreTracker = () => {
   const navigate = useNavigate();
   const [selectedExam, setSelectedExam] = useState<string>('gre');
@@ -25,16 +38,41 @@ const ProExamScoreTracker = () => {
     const saved = localStorage.getItem('pro-exam-scores');
     return saved ? JSON.parse(saved) : [];
   });
+  const [goals, setGoals] = useState<ExamGoal[]>(() => {
+    const saved = localStorage.getItem('pro-exam-goals');
+    return saved ? JSON.parse(saved) : [];
+  });
+  const [newGoal, setNewGoal] = useState('');
   const [newScore, setNewScore] = useState('');
   const [newNotes, setNewNotes] = useState('');
   const [showAdd, setShowAdd] = useState(false);
 
   const exam = PRO_EXAMS.find(e => e.id === selectedExam);
   const examEntries = entries.filter(e => e.examId === selectedExam).sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+  const goal = goals.find(g => g.examId === selectedExam);
 
   const save = (updated: ScoreEntry[]) => {
     setEntries(updated);
     localStorage.setItem('pro-exam-scores', JSON.stringify(updated));
+  };
+
+  const saveGoals = (updated: ExamGoal[]) => {
+    setGoals(updated);
+    localStorage.setItem('pro-exam-goals', JSON.stringify(updated));
+  };
+
+  const setGoal = () => {
+    if (!exam) return;
+    const t = parseInt(newGoal);
+    if (isNaN(t) || t < exam.scoreRange.min || t > exam.scoreRange.max) {
+      toast({ title: 'Invalid target', description: `Enter a score between ${exam.scoreRange.min} and ${exam.scoreRange.max}`, variant: 'destructive' });
+      return;
+    }
+    const next = goals.filter(g => g.examId !== selectedExam);
+    next.push({ examId: selectedExam, target: t });
+    saveGoals(next);
+    setNewGoal('');
+    toast({ title: '🎯 Target set!', description: `Aiming for ${t} on ${exam.shortName}` });
   };
 
   const addEntry = () => {
@@ -77,6 +115,8 @@ const ProExamScoreTracker = () => {
   };
 
   const targetExams = PRO_EXAMS.filter(e => ['gre', 'gmat', 'lsat', 'mcat'].includes(e.id));
+  // Expand selector to ALL ProExams so every exam gets parity.
+  const allExams = PRO_EXAMS;
 
   return (
     <div className="min-h-screen bg-background pb-24">
