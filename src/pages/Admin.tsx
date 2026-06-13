@@ -205,7 +205,7 @@ const Admin = () => {
       
       // Subscribe to new flagged questions in realtime
       const channel = supabase
-        .channel('admin-flags')
+        .channel('admin:flags')
         .on(
           'postgres_changes',
           {

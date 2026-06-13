@@ -239,7 +239,7 @@ const BattleRoom = () => {
     if (!room?.id) return;
 
     const roomChannel = supabase
-      .channel(`room-${room.id}`)
+      .channel(`battle:${room.id}`)
       .on(
         "postgres_changes",
         { event: "*", schema: "public", table: "battle_rooms", filter: `id=eq.${room.id}` },
