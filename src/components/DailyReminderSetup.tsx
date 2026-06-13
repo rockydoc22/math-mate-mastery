@@ -52,7 +52,7 @@ export default function DailyReminderSetup() {
           <span>
             ⏰ Welcome back! It's been {missed} {missed === 1 ? "day" : "days"}. Quick warmup to reignite your streak?
           </span>
-          <Link to="/daily">
+          <Link to="/warmup">
             <Button size="sm" variant="secondary" className="gap-1">
               <Zap className="w-3 h-3" /> Start warmup
             </Button>

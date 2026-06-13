@@ -136,6 +136,7 @@ const InternationalTests = lazy(() => import("@/pages/InternationalTests"));
 const InterpretationLab = lazy(() => import("@/pages/InterpretationLab"));
 const IntlSampleQuiz = lazy(() => import("@/pages/IntlSampleQuiz"));
 const OfflinePractice = lazy(() => import("@/pages/OfflinePractice"));
+const Warmup = lazy(() => import("@/pages/Warmup"));
 
 const AppRoutes = () => (
   <>
@@ -269,6 +270,7 @@ const AppRoutes = () => (
       <Route path="/international/:examId" element={<IntlSampleQuiz />} />
       <Route path="/interpretation" element={<InterpretationLab />} />
       <Route path="/offline" element={<OfflinePractice />} />
+      <Route path="/warmup" element={<Warmup />} />
       {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
       <Route path="*" element={<NotFound />} />
     </Routes>
