@@ -14,6 +14,8 @@ import {
   getTest,
 } from "@/data/usaNationalTests";
 import { INTL_EXAMS } from "@/data/intlExamsRegistry";
+import CoachMyTest from "@/components/path/CoachMyTest";
+import MicroPlan from "@/components/path/MicroPlan";
 
 const STORAGE_KEY = "alpha_path_v1";
 
@@ -193,6 +195,14 @@ const AlphaPath = () => {
             })}
           </div>
         </div>
+
+        {/* Day 6-7: AI Coach + 7-day micro plan, only shown after a test is picked */}
+        {target && (
+          <div className="grid md:grid-cols-2 gap-4">
+            <CoachMyTest target={target} daysUntil={days} focus={state.focus} />
+            <MicroPlan target={target} daysUntil={days} focus={state.focus} />
+          </div>
+        )}
 
         {/* Age + search */}
         <Card className="p-4 space-y-4" id="tests">
