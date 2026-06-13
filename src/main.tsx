@@ -2,6 +2,7 @@ import { createRoot } from "react-dom/client";
 import { HelmetProvider } from "react-helmet-async";
 import App from "./App.tsx";
 import "./index.css";
+import { bootReminder } from "./lib/dailyReminder";
 
 // iOS Safari + PWA service workers can occasionally serve stale HTML that points
 // to removed build chunks, resulting in a blank screen. This "self-heal" clears
@@ -61,6 +62,9 @@ createRoot(root).render(
     <App />
   </HelmetProvider>
 );
+
+// Re-arm the daily reminder if user previously opted in
+try { bootReminder(); } catch {}
 
 // Tell the bootstrap script we loaded successfully
 requestAnimationFrame(() => {

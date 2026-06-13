@@ -110,6 +110,17 @@ export const LandingPage = () => {
           <div>
             <h1 className="text-3xl font-bold tracking-tight mb-1">AlphaOmega — One app. Every test.</h1>
             <p className="text-sm text-muted-foreground font-medium">Free adaptive prep for SAT, ACT, AP & more.</p>
+            <div className="flex flex-wrap justify-center gap-2 mt-3">
+              <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-xs font-medium bg-emerald-500/10 text-emerald-600 dark:text-emerald-400">
+                🛡️ Family-safe content
+              </span>
+              <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-xs font-medium bg-pink-500/10 text-pink-600 dark:text-pink-400">
+                ❤️ Built for families
+              </span>
+              <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-xs font-medium bg-primary/10 text-primary">
+                100% Free
+              </span>
+            </div>
           </div>
 
           {/* Search / Find a test */}

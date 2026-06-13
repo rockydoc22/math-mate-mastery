@@ -517,6 +517,37 @@ const Home = () => {
           </Card>
         )}
 
+        {/* Family-safe + family tools strip */}
+        {!focusMode && (
+          <div className="mb-4 space-y-2">
+            <div className="flex flex-wrap gap-1.5">
+              <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[11px] font-medium bg-emerald-500/10 text-emerald-600 dark:text-emerald-400">
+                🛡️ Family-safe
+              </span>
+              <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[11px] font-medium bg-pink-500/10 text-pink-600 dark:text-pink-400">
+                ❤️ Family-oriented
+              </span>
+              <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[11px] font-medium bg-primary/10 text-primary">
+                100% Free
+              </span>
+            </div>
+            <div className="grid grid-cols-3 gap-2">
+              <Card className="p-2 cursor-pointer hover:shadow-md transition text-center" onClick={() => navigate('/family')}>
+                <UsersRound className="w-5 h-5 mx-auto text-primary mb-1" />
+                <div className="text-[11px] font-semibold">Family Hub</div>
+              </Card>
+              <Card className="p-2 cursor-pointer hover:shadow-md transition text-center" onClick={() => navigate('/international')}>
+                <Map className="w-5 h-5 mx-auto text-primary mb-1" />
+                <div className="text-[11px] font-semibold">International</div>
+              </Card>
+              <Card className="p-2 cursor-pointer hover:shadow-md transition text-center" onClick={() => navigate('/interpretation')}>
+                <BookOpen className="w-5 h-5 mx-auto text-primary mb-1" />
+                <div className="text-[11px] font-semibold">Interpret Lab</div>
+              </Card>
+            </div>
+          </div>
+        )}
+
         {/* ══════════ #2 SECONDARY CTA: Practice 10 Questions ══════════ */}
         <Card className="p-4 mb-4 border border-primary/20 bg-card">
           <Button 
