@@ -8,13 +8,12 @@ const corsHeaders = {
   "Access-Control-Allow-Headers": "authorization, x-client-info, apikey, content-type",
 };
 
-// Generate a random temporary password
+// Generate a cryptographically secure random temporary password
 function generateTempPassword(): string {
   const chars = "ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnpqrstuvwxyz23456789";
-  let password = "";
-  for (let i = 0; i < 12; i++) {
-    password += chars.charAt(Math.floor(Math.random() * chars.length));
-  }
+  const buf = new Uint8Array(12);
+  crypto.getRandomValues(buf);
+  const password = Array.from(buf, (b) => chars[b % chars.length]).join("");
   // Ensure it meets requirements: add a number, uppercase, lowercase
   return password + "1Aa";
 }

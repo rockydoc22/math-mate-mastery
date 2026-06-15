@@ -1,4 +1,5 @@
 import { serve } from "https://deno.land/std@0.168.0/http/server.ts";
+import { requireUser } from "../_shared/auth.ts";
 
 const RESEND_API_KEY = Deno.env.get("RESEND_API_KEY");
 const LOVABLE_API_KEY = Deno.env.get("LOVABLE_API_KEY");
@@ -197,6 +198,9 @@ serve(async (req: Request) => {
   if (req.method === "OPTIONS") return new Response(null, { headers: corsHeaders });
 
   try {
+    const auth = await requireUser(req);
+    if (auth instanceof Response) return auth;
+
     const body = (await req.json()) as RequestBody;
 
     if (!body || typeof body.score !== "number" || typeof body.total !== "number" || !Array.isArray(body.chapterStats)) {
