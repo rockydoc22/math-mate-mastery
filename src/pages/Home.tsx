@@ -432,7 +432,8 @@ const Home = () => {
           </div>
         </header>
 
-        {/* ══════════ Find-a-test search ══════════ */}
+        {/* ══════════ Find-a-test search — only when no exam picked yet ══════════ */}
+        {!hasChosenExamThisSession && (
         <Card className="p-3 mb-4 border border-primary/20 bg-card">
           <div className="flex items-center gap-3 mb-3">
             <div className="w-9 h-9 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
@@ -464,6 +465,7 @@ const Home = () => {
             </Button>
           </div>
         </Card>
+        )}
 
         {/* ══════════ Concierge Coach Promo (advertise the differentiator) ══════════ */}
         {!focusMode && (
@@ -617,8 +619,8 @@ const Home = () => {
           </div>
         </Card>
 
-        {/* New Import Summary */}
-        {!focusMode && <ImportSummaryWidget />}
+        {/* Import summary — only relevant to AP-track users */}
+        {!focusMode && examType !== 'psat' && examType !== 'sat' && examType !== 'act' && <ImportSummaryWidget />}
 
         {/* Quick Duel Entry */}
         {!focusMode && <QuickDuelEntry />}
@@ -626,11 +628,11 @@ const Home = () => {
         {/* Recommended Practice Widget */}
         {!focusMode && <RecommendedPracticeWidget />}
 
-        {/* Carpe Diem Daily Challenge */}
+        {/* Daily challenge — distinct from generic practice, curated set */}
         <Link to="/daily" className="mb-4 block">
           <Button size="lg" className="w-full font-bold gap-2 bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 text-white">
             <Zap className="w-5 h-5" />
-            Carpe Diem: 10 Daily Questions
+            Today's Daily Challenge
           </Button>
         </Link>
 
