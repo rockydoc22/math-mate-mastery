@@ -1197,6 +1197,7 @@ const Home = () => {
         onClose={() => setShowPinManager(false)}
         pinnedSubjects={pinnedSubjects}
         onSave={setPinnedSubjects}
+        examType={examType}
       />
 
       {/* Persistent Bottom Navigation */}
