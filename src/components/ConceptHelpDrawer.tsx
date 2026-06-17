@@ -5,7 +5,6 @@ import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
 import { BookOpen, Sparkles, Youtube, Loader2 } from "lucide-react";
 import { supabase } from "@/integrations/supabase/client";
 import ReactMarkdown from "react-markdown";
-import remarkGfm from "remark-gfm";
 
 interface Props {
   question: string;
@@ -109,7 +108,7 @@ export function ConceptHelpDrawer({ question, skill, domain }: Props) {
 
             <TabsContent value="short" className="mt-4">
               <div className="prose prose-sm max-w-none dark:prose-invert">
-                <ReactMarkdown remarkPlugins={[remarkGfm]}>{data.short}</ReactMarkdown>
+                <ReactMarkdown>{data.short}</ReactMarkdown>
               </div>
               <p className="text-[11px] text-muted-foreground mt-3">
                 Still fuzzy? Tap <span className="font-medium">Deep dive</span> or watch the video.
@@ -124,7 +123,7 @@ export function ConceptHelpDrawer({ question, skill, domain }: Props) {
               )}
               {!deepLoading && deep && (
                 <div className="prose prose-sm max-w-none dark:prose-invert">
-                  <ReactMarkdown remarkPlugins={[remarkGfm]}>{deep}</ReactMarkdown>
+                  <ReactMarkdown>{deep}</ReactMarkdown>
                 </div>
               )}
               {!deepLoading && !deep && (
