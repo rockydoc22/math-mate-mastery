@@ -46,7 +46,7 @@ import { QuickDuelEntry } from "@/components/QuickDuelEntry";
 import { StreakFreezeWidget } from "@/components/StreakFreezeWidget";
 import { OnboardingFlow } from "@/components/OnboardingFlow";
 import { DiagnosticFlow } from "@/components/DiagnosticFlow";
-import { PsatFocusLanding } from "@/components/PsatFocusLanding";
+import { ExamFocusLanding } from "@/components/ExamFocusLanding";
 import { KidSelector } from "@/components/KidSelector";
 import { Dialog, DialogContent } from "@/components/ui/dialog";
 import { ImportSummaryWidget } from "@/components/ImportSummaryWidget";
@@ -137,10 +137,23 @@ const Home = () => {
   const [focusMode, setFocusMode] = useState(() => {
     try { return localStorage.getItem('ao_focus_mode') === 'true'; } catch { return false; }
   });
-  // PSAT users see a stripped-down landing by default; they can opt into the full dashboard.
-  const [psatShowFull, setPsatShowFull] = useState(() => {
-    try { return localStorage.getItem('ao_psat_show_full') === 'true'; } catch { return false; }
+  // Standardized-test users see a stripped-down landing by default; they can opt into the full dashboard.
+  // Per-exam toggle so SAT/PSAT/ACT each remember their own preference.
+  const [showFullByExam, setShowFullByExam] = useState<Record<string, boolean>>(() => {
+    const read = (k: string) => {
+      try { return localStorage.getItem(k) === 'true'; } catch { return false; }
+    };
+    return {
+      sat:  read('ao_sat_show_full'),
+      psat: read('ao_psat_show_full'),
+      act:  read('ao_act_show_full'),
+    };
   });
+  const showFull = !!showFullByExam[examType];
+  const setShowFull = (val: boolean) => {
+    setShowFullByExam(prev => ({ ...prev, [examType]: val }));
+    try { localStorage.setItem(`ao_${examType}_show_full`, val ? 'true' : 'false'); } catch {}
+  };
   const [expandedSections, setExpandedSections] = useState<Record<string, boolean>>({});
   const nextSAT = getNextExamDate(examType);
 
