@@ -376,6 +376,16 @@ const ParentDashboard = () => {
                   <Pencil className="w-4 h-4" />
                 </Button>
               </div>
+              {kidStats && (
+                <Button
+                  size="sm"
+                  variant="outline"
+                  className="w-full mt-3 gap-2"
+                  onClick={downloadReport}
+                >
+                  <Download className="w-4 h-4" /> Download printable report (PDF)
+                </Button>
+              )}
             </Card>
 
             {statsLoading ? (
