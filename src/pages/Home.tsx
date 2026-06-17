@@ -1057,6 +1057,7 @@ const Home = () => {
               const pinnedTiles = sorted.filter(t => pinnedSubjects.includes(t.id));
               return (
                 <div className="space-y-3">
+                  {mascotSection}
                   {pinnedTiles.length > 0 && (
                     <div>
                       <h4 className="text-xs font-semibold text-primary uppercase tracking-wider mb-2 flex items-center gap-1">
@@ -1124,6 +1125,7 @@ const Home = () => {
             // Mobile: flat grid, compact
             return (
               <div className="space-y-3">
+                {mascotSection}
                 <div className="grid grid-cols-3 gap-2">
                   {sorted.map((item) => (
                     <Link key={item.id} to={item.to}>
