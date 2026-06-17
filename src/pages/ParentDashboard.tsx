@@ -9,7 +9,7 @@ import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogFooter } from "
 import { Label } from "@/components/ui/label";
 import {
   ArrowLeft, Eye, Flame, BarChart3, BookOpen,
-  CheckCircle2, Plus, Pencil, UserCircle
+  CheckCircle2, Plus, Pencil, UserCircle, Clock, CalendarCheck
 } from "lucide-react";
 import { useAuth } from "@/hooks/useAuth";
 import { supabase } from "@/integrations/supabase/client";
@@ -29,6 +29,11 @@ interface KidStats {
   streak: number;
   quizzesCompleted: number;
   recentDomains: { domain: string; count: number; correct: number }[];
+  minutesStudied: number;
+  daysActive14: number; // active days in last 14
+  activeDates: string[]; // ISO yyyy-mm-dd, last 14 days, ordered oldest→newest
+  examSplit: { exam: string; count: number; correct: number }[]; // sat/psat/act/other
+  lastActive: string | null; // ISO date or null
 }
 
 const AVATAR_OPTIONS = ["🧑‍🎓", "👧", "👦", "🦸", "🧙", "🐱", "🐶", "🦊", "🐼", "🦄", "🤖", "👽", "🧑‍🚀", "🎯", "⭐", "🔥"];
@@ -79,7 +84,7 @@ const ParentDashboard = () => {
     const [attemptsRes, streakRes, quizzesRes] = await Promise.all([
       supabase
         .from("question_attempts")
-        .select("id, is_correct, domain, kid_profile_id" as any)
+        .select("id, is_correct, domain, kid_profile_id, time_taken_ms, created_at, question_id" as any)
         .eq("user_id", user.id),
       supabase
         .from("streaks")
@@ -109,12 +114,62 @@ const ParentDashboard = () => {
       domainMap.set(d, entry);
     }
 
+    // Time studied — sum of time_taken_ms, capped per-question at 5min so an
+    // idle-tab attempt doesn't blow up the total.
+    const totalMs = attempts.reduce((sum: number, a: any) => {
+      const t = Math.min(a.time_taken_ms || 0, 5 * 60 * 1000);
+      return sum + t;
+    }, 0);
+    const minutesStudied = Math.round(totalMs / 60000);
+
+    // Active-day rollup over last 14 days
+    const today = new Date();
+    today.setHours(0, 0, 0, 0);
+    const dayKeys: string[] = [];
+    for (let i = 13; i >= 0; i--) {
+      const d = new Date(today);
+      d.setDate(today.getDate() - i);
+      dayKeys.push(d.toISOString().slice(0, 10));
+    }
+    const activeSet = new Set<string>();
+    let lastActive: string | null = null;
+    for (const a of attempts) {
+      if (!a.created_at) continue;
+      const key = new Date(a.created_at).toISOString().slice(0, 10);
+      activeSet.add(key);
+      if (!lastActive || key > lastActive) lastActive = key;
+    }
+    const activeDates = dayKeys.filter(k => activeSet.has(k));
+    const daysActive14 = dayKeys.filter(k => activeSet.has(k)).length;
+
+    // Exam split — infer from question_id prefix (sat / psat / act / other)
+    const examMap = new Map<string, { count: number; correct: number }>();
+    for (const a of attempts) {
+      const qid = String(a.question_id || "").toLowerCase();
+      let exam = "other";
+      if (qid.startsWith("psat")) exam = "PSAT";
+      else if (qid.startsWith("actsci") || qid.startsWith("act")) exam = "ACT";
+      else if (qid.startsWith("sat")) exam = "SAT";
+      const e = examMap.get(exam) || { count: 0, correct: 0 };
+      e.count++;
+      if (a.is_correct) e.correct++;
+      examMap.set(exam, e);
+    }
+    const examSplit = Array.from(examMap.entries())
+      .map(([exam, v]) => ({ exam, ...v }))
+      .sort((a, b) => b.count - a.count);
+
     setKidStats({
       questionsAnswered: totalQ,
       accuracy,
       streak: streakRes.data?.current_streak || 0,
       quizzesCompleted: (quizzesRes.data || []).length,
       recentDomains: Array.from(domainMap.entries()).map(([domain, v]) => ({ domain, ...v })),
+      minutesStudied,
+      daysActive14,
+      activeDates,
+      examSplit,
+      lastActive,
     });
     setStatsLoading(false);
   };
