@@ -898,10 +898,23 @@ const Home = () => {
         <div className="mb-4">
           <div className="flex items-center justify-between mb-3">
             <h3 className="text-sm font-semibold text-muted-foreground uppercase tracking-wide">Activities</h3>
-            <Button variant="ghost" size="sm" className="h-7 gap-1 text-xs text-muted-foreground" onClick={() => setShowPinManager(true)}>
-              <Pin className="w-3 h-3" />
-              Customize
-            </Button>
+            <div className="flex items-center gap-1">
+              {(examType === 'sat' || examType === 'psat' || examType === 'act') && (
+                <Button
+                  variant="ghost"
+                  size="sm"
+                  className="h-7 gap-1 text-xs text-muted-foreground"
+                  onClick={() => setShowFull(false)}
+                  title="Back to the simple landing"
+                >
+                  ← Focus view
+                </Button>
+              )}
+              <Button variant="ghost" size="sm" className="h-7 gap-1 text-xs text-muted-foreground" onClick={() => setShowPinManager(true)}>
+                <Pin className="w-3 h-3" />
+                Customize
+              </Button>
+            </div>
           </div>
           {(() => {
             type TileCategory = 'core' | 'study-tools' | 'social' | 'assessments' | 'advanced' | 'admin';
