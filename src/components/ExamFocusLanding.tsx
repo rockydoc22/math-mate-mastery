@@ -1,7 +1,9 @@
 import { useNavigate } from "react-router-dom";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Play, Calculator, PenTool, BookOpen, FlaskConical, TrendingUp, Target, Layout } from "lucide-react";
+import { Play, Calculator, PenTool, BookOpen, FlaskConical, TrendingUp, Target, Layout, ArrowLeftRight } from "lucide-react";
+import { useAuth } from "@/hooks/useAuth";
+import { supabase } from "@/integrations/supabase/client";
 import { useSkillRating } from "@/hooks/useSkillRating";
 import { useTopicMastery } from "@/hooks/useTopicMastery";
 import { EXAM_CONFIGS, ratingToExamScore, ratingToSectionScore, type ExamType } from "@/utils/examConfig";
@@ -42,6 +44,7 @@ export function ExamFocusLanding({
   onShowFull: () => void;
 }) {
   const navigate = useNavigate();
+  const { user } = useAuth();
   const { ratings } = useSkillRating();
   const { weakestMathTopics, weakestEnglishTopics } = useTopicMastery();
 
@@ -65,12 +68,32 @@ export function ExamFocusLanding({
 
   const weakAreas = [...weakestMathTopics, ...weakestEnglishTopics].slice(0, 3);
 
+  const switchExam = () => {
+    if (user) {
+      try { sessionStorage.removeItem(`exam_choice_session_${user.id}`); } catch {}
+    }
+    // Clear stored show-full flags so user lands on a clean focus view next time.
+    try {
+      ['sat', 'psat', 'act'].forEach(e => localStorage.removeItem(`ao_${e}_show_full`));
+    } catch {}
+    // Reload so Home re-evaluates and shows the exam selector.
+    window.location.reload();
+  };
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-background via-primary/5 to-accent/10 px-4 py-6">
       <div className="max-w-md mx-auto space-y-4">
         <div className="text-center space-y-1">
           <p className="text-xs text-muted-foreground uppercase tracking-wider">{TAGLINES[examType]}</p>
           <h1 className="text-2xl font-bold">Ready when you are</h1>
+          <Button
+            variant="link"
+            size="sm"
+            className="text-xs gap-1 h-auto py-0 text-muted-foreground"
+            onClick={switchExam}
+          >
+            <ArrowLeftRight className="w-3 h-3" /> Switch to a different test
+          </Button>
         </div>
 
         {/* 1. Continue where you left off */}
