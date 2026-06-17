@@ -35,6 +35,7 @@ import { recordAttempt } from "@/lib/recordAttempt";
 import { useExamType } from "@/hooks/useExamType";
 import { useProgressiveHints } from "@/hooks/useProgressiveHints";
 import { ProgressiveHintPanel } from "@/components/ProgressiveHintPanel";
+import { ConceptHelpDrawer } from "@/components/ConceptHelpDrawer";
 import { EXAM_CONFIGS } from "@/utils/examConfig";
 import { actScienceQuestions } from "@/data/actScienceQuestions";
 import { interleaveQuestions } from "@/utils/questionInterleaver";
@@ -515,13 +516,20 @@ const Quiz = () => {
         />
 
         {!showResult && (
-          <ProgressiveHintPanel
-            hints={hints.hints}
-            revealedCount={hints.revealedCount}
-            allShown={hints.allShown}
-            onRevealNext={hints.revealNext}
-            compact
-          />
+          <div className="flex flex-wrap items-center gap-2">
+            <ProgressiveHintPanel
+              hints={hints.hints}
+              revealedCount={hints.revealedCount}
+              allShown={hints.allShown}
+              onRevealNext={hints.revealNext}
+              compact
+            />
+            <ConceptHelpDrawer
+              question={currentQuestion.question}
+              skill={(currentQuestion as any).skill}
+              domain={currentQuestion.type}
+            />
+          </div>
         )}
 
         {/* Mistake Coach feedback after wrong answer */}
