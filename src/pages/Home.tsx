@@ -318,14 +318,12 @@ const Home = () => {
     );
   }
 
-  // Simplified PSAT landing — just Continue, Practice by section, Score + weak areas.
-  if (examType === 'psat' && !psatShowFull) {
+  // Simplified focus landing for SAT/PSAT/ACT — just Continue, Practice by section, Score + weak areas.
+  if ((examType === 'sat' || examType === 'psat' || examType === 'act') && !showFull) {
     return (
-      <PsatFocusLanding
-        onShowFull={() => {
-          setPsatShowFull(true);
-          try { localStorage.setItem('ao_psat_show_full', 'true'); } catch {}
-        }}
+      <ExamFocusLanding
+        examType={examType}
+        onShowFull={() => setShowFull(true)}
       />
     );
   }
