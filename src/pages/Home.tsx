@@ -47,6 +47,9 @@ import { StreakFreezeWidget } from "@/components/StreakFreezeWidget";
 import { OnboardingFlow } from "@/components/OnboardingFlow";
 import { DiagnosticFlow } from "@/components/DiagnosticFlow";
 import { ExamFocusLanding } from "@/components/ExamFocusLanding";
+import { MascotDashboard } from "@/components/MascotDashboard";
+import { FirstRunCoachTip } from "@/components/FirstRunCoachTip";
+import { TOOL_META } from "@/data/toolPitches";
 import { KidSelector } from "@/components/KidSelector";
 import { Dialog, DialogContent } from "@/components/ui/dialog";
 import { ImportSummaryWidget } from "@/components/ImportSummaryWidget";
@@ -153,6 +156,21 @@ const Home = () => {
   const setShowFull = (val: boolean) => {
     setShowFullByExam(prev => ({ ...prev, [examType]: val }));
     try { localStorage.setItem(`ao_${examType}_show_full`, val ? 'true' : 'false'); } catch {}
+  };
+
+  // Toggle pin from the mascot drawer (writes to profiles, mirrors SubjectPinManager).
+  const togglePinnedSubject = async (id: string) => {
+    const next = pinnedSubjects.includes(id)
+      ? pinnedSubjects.filter(s => s !== id)
+      : [...pinnedSubjects, id];
+    setPinnedSubjects(next);
+    if (!user) return;
+    try {
+      await supabase
+        .from("profiles")
+        .update({ pinned_subjects: next } as any)
+        .eq("id", user.id);
+    } catch {}
   };
   const [expandedSections, setExpandedSections] = useState<Record<string, boolean>>({});
   const nextSAT = getNextExamDate(examType);
