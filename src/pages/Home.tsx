@@ -1024,6 +1024,23 @@ const Home = () => {
 
             const hiddenCount = filtered.length - visibleTiles.length;
 
+            // Tools that have a mascot mapping — feeds the character drawer.
+            const mascotTools = filtered
+              .filter(t => TOOL_META[t.id])
+              .map(t => ({ id: t.id, label: t.label, to: t.to }));
+
+            const mascotSection = (
+              <>
+                <FirstRunCoachTip />
+                <MascotDashboard
+                  availableTools={mascotTools}
+                  pinnedIds={pinnedSubjects}
+                  onTogglePin={togglePinnedSubject}
+                />
+                <div className="my-4 h-px bg-border/60" />
+              </>
+            );
+
             const categoryLabels: Record<TileCategory, string> = {
               'core': '📚 Core Practice',
               'study-tools': '🔧 Study Tools',
