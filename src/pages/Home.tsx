@@ -47,6 +47,9 @@ import { StreakFreezeWidget } from "@/components/StreakFreezeWidget";
 import { OnboardingFlow } from "@/components/OnboardingFlow";
 import { DiagnosticFlow } from "@/components/DiagnosticFlow";
 import { ExamFocusLanding } from "@/components/ExamFocusLanding";
+import { MascotDashboard } from "@/components/MascotDashboard";
+import { FirstRunCoachTip } from "@/components/FirstRunCoachTip";
+import { TOOL_META } from "@/data/toolPitches";
 import { KidSelector } from "@/components/KidSelector";
 import { Dialog, DialogContent } from "@/components/ui/dialog";
 import { ImportSummaryWidget } from "@/components/ImportSummaryWidget";
@@ -153,6 +156,21 @@ const Home = () => {
   const setShowFull = (val: boolean) => {
     setShowFullByExam(prev => ({ ...prev, [examType]: val }));
     try { localStorage.setItem(`ao_${examType}_show_full`, val ? 'true' : 'false'); } catch {}
+  };
+
+  // Toggle pin from the mascot drawer (writes to profiles, mirrors SubjectPinManager).
+  const togglePinnedSubject = async (id: string) => {
+    const next = pinnedSubjects.includes(id)
+      ? pinnedSubjects.filter(s => s !== id)
+      : [...pinnedSubjects, id];
+    setPinnedSubjects(next);
+    if (!user) return;
+    try {
+      await supabase
+        .from("profiles")
+        .update({ pinned_subjects: next } as any)
+        .eq("id", user.id);
+    } catch {}
   };
   const [expandedSections, setExpandedSections] = useState<Record<string, boolean>>({});
   const nextSAT = getNextExamDate(examType);
@@ -1006,6 +1024,23 @@ const Home = () => {
 
             const hiddenCount = filtered.length - visibleTiles.length;
 
+            // Tools that have a mascot mapping — feeds the character drawer.
+            const mascotTools = filtered
+              .filter(t => TOOL_META[t.id])
+              .map(t => ({ id: t.id, label: t.label, to: t.to }));
+
+            const mascotSection = (
+              <>
+                <FirstRunCoachTip />
+                <MascotDashboard
+                  availableTools={mascotTools}
+                  pinnedIds={pinnedSubjects}
+                  onTogglePin={togglePinnedSubject}
+                />
+                <div className="my-4 h-px bg-border/60" />
+              </>
+            );
+
             const categoryLabels: Record<TileCategory, string> = {
               'core': '📚 Core Practice',
               'study-tools': '🔧 Study Tools',
@@ -1022,6 +1057,7 @@ const Home = () => {
               const pinnedTiles = sorted.filter(t => pinnedSubjects.includes(t.id));
               return (
                 <div className="space-y-3">
+                  {mascotSection}
                   {pinnedTiles.length > 0 && (
                     <div>
                       <h4 className="text-xs font-semibold text-primary uppercase tracking-wider mb-2 flex items-center gap-1">
@@ -1029,13 +1065,18 @@ const Home = () => {
                       </h4>
                       <div className="grid grid-cols-4 gap-3">
                         {pinnedTiles.map((item) => (
-                          <Link key={item.id} to={item.to}>
+                          <Link key={item.id} to={item.to} title={TOOL_META[item.id]?.pitch}>
                             <div className={`${item.color} rounded-xl p-4 flex flex-col items-center text-center gap-2 aspect-square justify-center hover:scale-105 transition-transform cursor-pointer border border-primary/50 ring-1 ring-primary/20`}>
                               <div className="w-14 h-14 rounded-full bg-background/60 flex items-center justify-center relative">
                                 <item.icon className={`w-7 h-7 ${item.iconColor}`} />
                                 <Pin className="w-3 h-3 text-primary absolute -top-1 -right-1" />
                               </div>
                               <span className="text-xs font-semibold leading-tight text-foreground">{item.label}</span>
+                              {TOOL_META[item.id]?.pitch && (
+                                <span className="text-[10px] text-muted-foreground leading-tight line-clamp-2">
+                                  {TOOL_META[item.id]?.pitch}
+                                </span>
+                              )}
                             </div>
                           </Link>
                         ))}
@@ -1062,7 +1103,7 @@ const Home = () => {
                         {isOpen && (
                           <div className="grid grid-cols-4 gap-3 p-3">
                             {catTiles.map((item) => (
-                              <Link key={item.id} to={item.to}>
+                              <Link key={item.id} to={item.to} title={TOOL_META[item.id]?.pitch}>
                                 <div className={`${item.color} rounded-xl p-4 flex flex-col items-center text-center gap-2 aspect-square justify-center hover:scale-105 transition-transform cursor-pointer border ${pinnedSubjects.includes(item.id) ? 'border-primary/50 ring-1 ring-primary/20' : 'border-border/50'}`}>
                                   <div className="w-14 h-14 rounded-full bg-background/60 flex items-center justify-center relative">
                                     <item.icon className={`w-7 h-7 ${item.iconColor}`} />
@@ -1089,9 +1130,10 @@ const Home = () => {
             // Mobile: flat grid, compact
             return (
               <div className="space-y-3">
+                {mascotSection}
                 <div className="grid grid-cols-3 gap-2">
                   {sorted.map((item) => (
-                    <Link key={item.id} to={item.to}>
+                    <Link key={item.id} to={item.to} title={TOOL_META[item.id]?.pitch}>
                       <div className={`${item.color} rounded-xl p-2.5 flex flex-col items-center text-center gap-1.5 justify-center hover:scale-105 transition-transform cursor-pointer border ${pinnedSubjects.includes(item.id) ? 'border-primary/50 ring-1 ring-primary/20' : 'border-border/50'}`}>
                         <div className="w-10 h-10 rounded-full bg-background/60 flex items-center justify-center relative">
                           <item.icon className={`w-5 h-5 ${item.iconColor}`} />

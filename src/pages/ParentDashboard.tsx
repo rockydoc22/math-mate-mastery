@@ -9,7 +9,7 @@ import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogFooter } from "
 import { Label } from "@/components/ui/label";
 import {
   ArrowLeft, Eye, Flame, BarChart3, BookOpen,
-  CheckCircle2, Plus, Pencil, UserCircle
+  CheckCircle2, Plus, Pencil, UserCircle, Clock, CalendarCheck
 } from "lucide-react";
 import { useAuth } from "@/hooks/useAuth";
 import { supabase } from "@/integrations/supabase/client";
@@ -29,6 +29,11 @@ interface KidStats {
   streak: number;
   quizzesCompleted: number;
   recentDomains: { domain: string; count: number; correct: number }[];
+  minutesStudied: number;
+  daysActive14: number; // active days in last 14
+  activeDates: string[]; // ISO yyyy-mm-dd, last 14 days, ordered oldest→newest
+  examSplit: { exam: string; count: number; correct: number }[]; // sat/psat/act/other
+  lastActive: string | null; // ISO date or null
 }
 
 const AVATAR_OPTIONS = ["🧑‍🎓", "👧", "👦", "🦸", "🧙", "🐱", "🐶", "🦊", "🐼", "🦄", "🤖", "👽", "🧑‍🚀", "🎯", "⭐", "🔥"];
@@ -79,7 +84,7 @@ const ParentDashboard = () => {
     const [attemptsRes, streakRes, quizzesRes] = await Promise.all([
       supabase
         .from("question_attempts")
-        .select("id, is_correct, domain, kid_profile_id" as any)
+        .select("id, is_correct, domain, kid_profile_id, time_taken_ms, created_at, question_id" as any)
         .eq("user_id", user.id),
       supabase
         .from("streaks")
@@ -109,12 +114,62 @@ const ParentDashboard = () => {
       domainMap.set(d, entry);
     }
 
+    // Time studied — sum of time_taken_ms, capped per-question at 5min so an
+    // idle-tab attempt doesn't blow up the total.
+    const totalMs = attempts.reduce((sum: number, a: any) => {
+      const t = Math.min(a.time_taken_ms || 0, 5 * 60 * 1000);
+      return sum + t;
+    }, 0);
+    const minutesStudied = Math.round(totalMs / 60000);
+
+    // Active-day rollup over last 14 days
+    const today = new Date();
+    today.setHours(0, 0, 0, 0);
+    const dayKeys: string[] = [];
+    for (let i = 13; i >= 0; i--) {
+      const d = new Date(today);
+      d.setDate(today.getDate() - i);
+      dayKeys.push(d.toISOString().slice(0, 10));
+    }
+    const activeSet = new Set<string>();
+    let lastActive: string | null = null;
+    for (const a of attempts) {
+      if (!a.created_at) continue;
+      const key = new Date(a.created_at).toISOString().slice(0, 10);
+      activeSet.add(key);
+      if (!lastActive || key > lastActive) lastActive = key;
+    }
+    const activeDates = dayKeys.filter(k => activeSet.has(k));
+    const daysActive14 = dayKeys.filter(k => activeSet.has(k)).length;
+
+    // Exam split — infer from question_id prefix (sat / psat / act / other)
+    const examMap = new Map<string, { count: number; correct: number }>();
+    for (const a of attempts) {
+      const qid = String(a.question_id || "").toLowerCase();
+      let exam = "other";
+      if (qid.startsWith("psat")) exam = "PSAT";
+      else if (qid.startsWith("actsci") || qid.startsWith("act")) exam = "ACT";
+      else if (qid.startsWith("sat")) exam = "SAT";
+      const e = examMap.get(exam) || { count: 0, correct: 0 };
+      e.count++;
+      if (a.is_correct) e.correct++;
+      examMap.set(exam, e);
+    }
+    const examSplit = Array.from(examMap.entries())
+      .map(([exam, v]) => ({ exam, ...v }))
+      .sort((a, b) => b.count - a.count);
+
     setKidStats({
       questionsAnswered: totalQ,
       accuracy,
       streak: streakRes.data?.current_streak || 0,
       quizzesCompleted: (quizzesRes.data || []).length,
       recentDomains: Array.from(domainMap.entries()).map(([domain, v]) => ({ domain, ...v })),
+      minutesStudied,
+      daysActive14,
+      activeDates,
+      examSplit,
+      lastActive,
     });
     setStatsLoading(false);
   };
@@ -280,7 +335,81 @@ const ParentDashboard = () => {
                     <p className="text-2xl font-bold">{kidStats.quizzesCompleted}</p>
                     <p className="text-[10px] text-muted-foreground">Quizzes Done</p>
                   </Card>
+                  <Card className="p-3 text-center">
+                    <Clock className="w-5 h-5 text-primary mx-auto mb-1" />
+                    <p className="text-2xl font-bold">
+                      {kidStats.minutesStudied >= 60
+                        ? `${Math.floor(kidStats.minutesStudied / 60)}h ${kidStats.minutesStudied % 60}m`
+                        : `${kidStats.minutesStudied}m`}
+                    </p>
+                    <p className="text-[10px] text-muted-foreground">Time Studied</p>
+                  </Card>
+                  <Card className="p-3 text-center">
+                    <CalendarCheck className="w-5 h-5 text-primary mx-auto mb-1" />
+                    <p className="text-2xl font-bold">{kidStats.daysActive14}/14</p>
+                    <p className="text-[10px] text-muted-foreground">Active Days (2 wks)</p>
+                  </Card>
                 </div>
+
+                {/* Consistency strip — last 14 days */}
+                <Card className="p-4">
+                  <div className="flex items-center justify-between mb-2">
+                    <h3 className="font-bold text-sm flex items-center gap-2">
+                      <CalendarCheck className="w-4 h-4 text-primary" /> Consistency (last 14 days)
+                    </h3>
+                    {kidStats.lastActive && (
+                      <span className="text-[10px] text-muted-foreground">
+                        Last seen {kidStats.lastActive}
+                      </span>
+                    )}
+                  </div>
+                  <div className="flex gap-1">
+                    {(() => {
+                      const today = new Date(); today.setHours(0,0,0,0);
+                      const days: string[] = [];
+                      for (let i = 13; i >= 0; i--) {
+                        const d = new Date(today); d.setDate(today.getDate() - i);
+                        days.push(d.toISOString().slice(0,10));
+                      }
+                      const active = new Set(kidStats.activeDates);
+                      return days.map(k => (
+                        <div
+                          key={k}
+                          title={k}
+                          className={`flex-1 h-6 rounded ${active.has(k) ? 'bg-primary' : 'bg-muted'}`}
+                        />
+                      ));
+                    })()}
+                  </div>
+                  <p className="text-[10px] text-muted-foreground mt-2">
+                    Filled bar = practiced that day. Aim for at least 5 of 7 days.
+                  </p>
+                </Card>
+
+                {/* Per-exam focus */}
+                {kidStats.examSplit.length > 0 && (
+                  <Card className="p-4">
+                    <h3 className="font-bold text-sm mb-3 flex items-center gap-2">
+                      <BookOpen className="w-4 h-4 text-primary" /> What they're focused on
+                    </h3>
+                    <div className="space-y-2">
+                      {kidStats.examSplit.map(e => {
+                        const pct = e.count > 0 ? Math.round((e.correct / e.count) * 100) : 0;
+                        const share = kidStats.questionsAnswered > 0
+                          ? Math.round((e.count / kidStats.questionsAnswered) * 100)
+                          : 0;
+                        return (
+                          <div key={e.exam} className="flex items-center justify-between text-xs">
+                            <span className="font-medium">{e.exam}</span>
+                            <span className="text-muted-foreground">
+                              {e.count} questions ({share}%) · {pct}% correct
+                            </span>
+                          </div>
+                        );
+                      })}
+                    </div>
+                  </Card>
+                )}
 
                 {kidStats.recentDomains.length > 0 && (
                   <Card className="p-4">
