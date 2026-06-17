@@ -274,16 +274,8 @@ const Home = () => {
     );
   }
 
-  if (needsDiagnostic && !diagnosticSkipped) {
-    return (
-      <DiagnosticFlow
-        onComplete={() => { setNeedsDiagnostic(false); }}
-        onSkip={() => { setDiagnosticSkipped(true); setNeedsDiagnostic(false); }}
-      />
-    );
-  }
-
-  // Show exam selector on first authenticated screen, or when manually toggled
+  // Show exam selector FIRST — never prompt for a diagnostic before we know
+  // what the student is studying.
   if (needsSelection || showExamSelector || !hasChosenExamThisSession) {
     return (
       <ExamSelector
@@ -295,6 +287,15 @@ const Home = () => {
             sessionStorage.setItem(`exam_choice_session_${user.id}`, "true");
           }
         }}
+      />
+    );
+  }
+
+  if (needsDiagnostic && !diagnosticSkipped) {
+    return (
+      <DiagnosticFlow
+        onComplete={() => { setNeedsDiagnostic(false); }}
+        onSkip={() => { setDiagnosticSkipped(true); setNeedsDiagnostic(false); }}
       />
     );
   }
