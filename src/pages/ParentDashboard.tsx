@@ -335,7 +335,81 @@ const ParentDashboard = () => {
                     <p className="text-2xl font-bold">{kidStats.quizzesCompleted}</p>
                     <p className="text-[10px] text-muted-foreground">Quizzes Done</p>
                   </Card>
+                  <Card className="p-3 text-center">
+                    <Clock className="w-5 h-5 text-primary mx-auto mb-1" />
+                    <p className="text-2xl font-bold">
+                      {kidStats.minutesStudied >= 60
+                        ? `${Math.floor(kidStats.minutesStudied / 60)}h ${kidStats.minutesStudied % 60}m`
+                        : `${kidStats.minutesStudied}m`}
+                    </p>
+                    <p className="text-[10px] text-muted-foreground">Time Studied</p>
+                  </Card>
+                  <Card className="p-3 text-center">
+                    <CalendarCheck className="w-5 h-5 text-primary mx-auto mb-1" />
+                    <p className="text-2xl font-bold">{kidStats.daysActive14}/14</p>
+                    <p className="text-[10px] text-muted-foreground">Active Days (2 wks)</p>
+                  </Card>
                 </div>
+
+                {/* Consistency strip — last 14 days */}
+                <Card className="p-4">
+                  <div className="flex items-center justify-between mb-2">
+                    <h3 className="font-bold text-sm flex items-center gap-2">
+                      <CalendarCheck className="w-4 h-4 text-primary" /> Consistency (last 14 days)
+                    </h3>
+                    {kidStats.lastActive && (
+                      <span className="text-[10px] text-muted-foreground">
+                        Last seen {kidStats.lastActive}
+                      </span>
+                    )}
+                  </div>
+                  <div className="flex gap-1">
+                    {(() => {
+                      const today = new Date(); today.setHours(0,0,0,0);
+                      const days: string[] = [];
+                      for (let i = 13; i >= 0; i--) {
+                        const d = new Date(today); d.setDate(today.getDate() - i);
+                        days.push(d.toISOString().slice(0,10));
+                      }
+                      const active = new Set(kidStats.activeDates);
+                      return days.map(k => (
+                        <div
+                          key={k}
+                          title={k}
+                          className={`flex-1 h-6 rounded ${active.has(k) ? 'bg-primary' : 'bg-muted'}`}
+                        />
+                      ));
+                    })()}
+                  </div>
+                  <p className="text-[10px] text-muted-foreground mt-2">
+                    Filled bar = practiced that day. Aim for at least 5 of 7 days.
+                  </p>
+                </Card>
+
+                {/* Per-exam focus */}
+                {kidStats.examSplit.length > 0 && (
+                  <Card className="p-4">
+                    <h3 className="font-bold text-sm mb-3 flex items-center gap-2">
+                      <BookOpen className="w-4 h-4 text-primary" /> What they're focused on
+                    </h3>
+                    <div className="space-y-2">
+                      {kidStats.examSplit.map(e => {
+                        const pct = e.count > 0 ? Math.round((e.correct / e.count) * 100) : 0;
+                        const share = kidStats.questionsAnswered > 0
+                          ? Math.round((e.count / kidStats.questionsAnswered) * 100)
+                          : 0;
+                        return (
+                          <div key={e.exam} className="flex items-center justify-between text-xs">
+                            <span className="font-medium">{e.exam}</span>
+                            <span className="text-muted-foreground">
+                              {e.count} questions ({share}%) · {pct}% correct
+                            </span>
+                          </div>
+                        );
+                      })}
+                    </div>
+                  </Card>
+                )}
 
                 {kidStats.recentDomains.length > 0 && (
                   <Card className="p-4">
