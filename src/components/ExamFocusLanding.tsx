@@ -3,7 +3,6 @@ import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Play, Calculator, PenTool, BookOpen, FlaskConical, TrendingUp, Target, Layout, ArrowLeftRight } from "lucide-react";
 import { useAuth } from "@/hooks/useAuth";
-import { supabase } from "@/integrations/supabase/client";
 import { useSkillRating } from "@/hooks/useSkillRating";
 import { useTopicMastery } from "@/hooks/useTopicMastery";
 import { EXAM_CONFIGS, ratingToExamScore, ratingToSectionScore, type ExamType } from "@/utils/examConfig";
