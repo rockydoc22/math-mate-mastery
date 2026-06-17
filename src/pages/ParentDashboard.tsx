@@ -9,7 +9,7 @@ import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogFooter } from "
 import { Label } from "@/components/ui/label";
 import {
   ArrowLeft, Eye, Flame, BarChart3, BookOpen,
-  CheckCircle2, Plus, Pencil, UserCircle, Clock, CalendarCheck
+  CheckCircle2, Plus, Pencil, UserCircle, Clock, CalendarCheck, Download
 } from "lucide-react";
 import { useAuth } from "@/hooks/useAuth";
 import { supabase } from "@/integrations/supabase/client";
@@ -220,6 +220,76 @@ const ParentDashboard = () => {
   };
 
   const currentKid = kids.find(k => k.id === selectedKid);
+
+  const downloadReport = () => {
+    if (!currentKid || !kidStats) return;
+    const today = new Date().toLocaleDateString();
+    const mins = kidStats.minutesStudied;
+    const timeStr = mins >= 60 ? `${Math.floor(mins / 60)}h ${mins % 60}m` : `${mins}m`;
+    const days: string[] = [];
+    const t = new Date(); t.setHours(0,0,0,0);
+    for (let i = 13; i >= 0; i--) {
+      const d = new Date(t); d.setDate(t.getDate() - i);
+      days.push(d.toISOString().slice(0,10));
+    }
+    const active = new Set(kidStats.activeDates);
+    const strip = days.map(k =>
+      `<span style="display:inline-block;width:18px;height:18px;margin-right:2px;background:${active.has(k) ? '#7c3aed' : '#e5e7eb'};border-radius:3px;" title="${k}"></span>`
+    ).join("");
+    const examRows = kidStats.examSplit.map(e => {
+      const pct = e.count > 0 ? Math.round((e.correct / e.count) * 100) : 0;
+      return `<tr><td>${e.exam}</td><td>${e.count}</td><td>${pct}%</td></tr>`;
+    }).join("");
+    const domainRows = kidStats.recentDomains
+      .sort((a,b) => b.count - a.count)
+      .slice(0, 8)
+      .map(d => {
+        const pct = d.count > 0 ? Math.round((d.correct / d.count) * 100) : 0;
+        return `<tr><td style="text-transform:capitalize">${d.domain}</td><td>${d.count}</td><td>${pct}%</td></tr>`;
+      }).join("");
+    const html = `<!doctype html><html><head><title>${currentKid.display_name} — Study Report</title>
+<style>
+  body{font-family:-apple-system,Segoe UI,sans-serif;color:#111;max-width:720px;margin:32px auto;padding:0 24px;}
+  h1{margin:0;font-size:24px;} h2{font-size:14px;text-transform:uppercase;color:#666;letter-spacing:.05em;margin-top:28px;}
+  .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:12px;}
+  .stat{border:1px solid #e5e7eb;border-radius:8px;padding:12px;text-align:center;}
+  .stat .v{font-size:22px;font-weight:700;} .stat .l{font-size:10px;color:#666;text-transform:uppercase;}
+  table{width:100%;border-collapse:collapse;margin-top:8px;font-size:13px;}
+  th,td{text-align:left;padding:6px 8px;border-bottom:1px solid #e5e7eb;}
+  th{font-size:11px;color:#666;text-transform:uppercase;}
+  .meta{color:#666;font-size:12px;margin-top:4px;}
+  @media print { body{margin:0;} }
+</style></head><body>
+<h1>${currentKid.display_name} — Study Report</h1>
+<p class="meta">Generated ${today} · Grade ${currentKid.grade_level || '—'}</p>
+
+<div class="stats">
+  <div class="stat"><div class="v">${kidStats.questionsAnswered}</div><div class="l">Questions</div></div>
+  <div class="stat"><div class="v">${kidStats.accuracy}%</div><div class="l">Accuracy</div></div>
+  <div class="stat"><div class="v">${timeStr}</div><div class="l">Time Studied</div></div>
+  <div class="stat"><div class="v">${kidStats.daysActive14}/14</div><div class="l">Active Days</div></div>
+</div>
+
+<h2>Consistency (last 14 days)</h2>
+<div>${strip}</div>
+<p class="meta">Filled = practiced. Last seen: ${kidStats.lastActive || '—'}</p>
+
+<h2>What they're focused on</h2>
+<table><thead><tr><th>Exam</th><th>Questions</th><th>Accuracy</th></tr></thead>
+<tbody>${examRows || '<tr><td colspan="3">No data yet.</td></tr>'}</tbody></table>
+
+<h2>Top topics</h2>
+<table><thead><tr><th>Topic</th><th>Questions</th><th>Accuracy</th></tr></thead>
+<tbody>${domainRows || '<tr><td colspan="3">No data yet.</td></tr>'}</tbody></table>
+
+<p class="meta" style="margin-top:32px;">Tip: aim for at least 5 active days a week. Watch any topic under 60% accuracy.</p>
+<script>window.onload=()=>setTimeout(()=>window.print(),200);</script>
+</body></html>`;
+    const w = window.open("", "_blank");
+    if (!w) { toast({ title: "Pop-ups blocked — allow pop-ups to download", variant: "destructive" }); return; }
+    w.document.write(html);
+    w.document.close();
+  };
 
   if (!user) {
     return (
