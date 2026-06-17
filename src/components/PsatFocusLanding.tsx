@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Play, Calculator, PenTool, TrendingUp, Target, Layout } from "lucide-react";
 import { useSkillRating } from "@/hooks/useSkillRating";
 import { useTopicMastery } from "@/hooks/useTopicMastery";
-import { ratingToExamScore, ratingToSectionScore } from "@/utils/eloRating";
+import { ratingToExamScore, ratingToSectionScore } from "@/utils/examConfig";
 
 const LAST_PSAT_QUIZ_KEY = "ao_last_psat_quiz";
 
@@ -18,7 +18,8 @@ export function PsatFocusLanding({ onShowFull }: { onShowFull: () => void }) {
     try { return localStorage.getItem(LAST_PSAT_QUIZ_KEY) || ""; } catch { return ""; }
   })();
 
-  const projected = ratings ? ratingToExamScore(ratings.overallRating, 'psat') : null;
+  const projectedRange = ratings ? ratingToExamScore(ratings.overallRating, 'psat') : null;
+  const projected = projectedRange ? Math.round((projectedRange.min + projectedRange.max) / 2) : null;
   const mathScore = ratings ? ratingToSectionScore(ratings.mathRating, 'psat') : null;
   const engScore = ratings ? ratingToSectionScore(ratings.englishRating, 'psat') : null;
 
