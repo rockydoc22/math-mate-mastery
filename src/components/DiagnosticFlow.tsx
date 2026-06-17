@@ -5,6 +5,7 @@ import { questions as mathBank } from "@/data/questions";
 import { supabase } from "@/integrations/supabase/client";
 import { useAuth } from "@/hooks/useAuth";
 import { Sparkles, Clock, ChevronRight } from "lucide-react";
+import { shuffleQuestionOptions } from "@/utils/optionShuffler";
 
 interface Props {
   onComplete: () => void;
@@ -13,18 +14,43 @@ interface Props {
 
 const TOTAL_SECONDS = 300; // 5 min
 const Q_COUNT = 5;
+const CHECKPOINT_KEY = "ao_diagnostic_checkpoint_v1";
+
+interface Checkpoint {
+  ids: string[];
+  idx: number;
+  correct: number;
+  secondsLeft: number;
+  started: boolean;
+  done: boolean;
+}
 
 export function DiagnosticFlow({ onComplete, onSkip }: Props) {
   const { user } = useAuth();
-  const [started, setStarted] = useState(false);
-  const [idx, setIdx] = useState(0);
+  // Read any saved checkpoint (crash recovery)
+  const saved: Checkpoint | null = (() => {
+    try {
+      const raw = localStorage.getItem(CHECKPOINT_KEY);
+      return raw ? JSON.parse(raw) as Checkpoint : null;
+    } catch { return null; }
+  })();
+
+  const [started, setStarted] = useState(saved?.started ?? false);
+  const [idx, setIdx] = useState(saved?.idx ?? 0);
   const [picked, setPicked] = useState<string | null>(null);
-  const [correct, setCorrect] = useState(0);
-  const [secondsLeft, setSecondsLeft] = useState(TOTAL_SECONDS);
-  const [done, setDone] = useState(false);
+  const [correct, setCorrect] = useState(saved?.correct ?? 0);
+  const [secondsLeft, setSecondsLeft] = useState(saved?.secondsLeft ?? TOTAL_SECONDS);
+  const [done, setDone] = useState(saved?.done ?? false);
 
   const items = useMemo(() => {
-    // Spread difficulty across 5 buckets so the baseline is meaningful
+    // If resuming, rehydrate the exact same items by id so the student doesn't
+    // get a fresh question set after a crash.
+    if (saved?.ids?.length === Q_COUNT) {
+      const byId = new Map(mathBank.map(q => [q.id, q]));
+      const restored = saved.ids.map(id => byId.get(id)).filter(Boolean) as typeof mathBank;
+      if (restored.length === Q_COUNT) return restored.map(shuffleQuestionOptions);
+    }
+    // Fresh set: spread difficulty across 5 buckets
     const buckets = [3, 5, 6, 7, 9];
     const out: typeof mathBank = [];
     for (const b of buckets) {
@@ -32,8 +58,22 @@ export function DiagnosticFlow({ onComplete, onSkip }: Props) {
       if (pool.length) out.push(pool[Math.floor(Math.random() * pool.length)]);
     }
     while (out.length < Q_COUNT) out.push(mathBank[Math.floor(Math.random() * mathBank.length)]);
-    return out.slice(0, Q_COUNT);
+    // Deterministically shuffle option positions so A/B/C/D stays balanced
+    return out.slice(0, Q_COUNT).map(shuffleQuestionOptions);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
+
+  // Persist progress on every state change so a crash auto-resumes
+  useEffect(() => {
+    if (!started || done) return;
+    try {
+      const cp: Checkpoint = {
+        ids: items.map(q => q.id).filter(Boolean) as string[],
+        idx, correct, secondsLeft, started, done,
+      };
+      localStorage.setItem(CHECKPOINT_KEY, JSON.stringify(cp));
+    } catch {}
+  }, [started, done, idx, correct, secondsLeft, items]);
 
   useEffect(() => {
     if (!started || done) return;
@@ -48,6 +88,7 @@ export function DiagnosticFlow({ onComplete, onSkip }: Props) {
 
   const finalize = async () => {
     setDone(true);
+    try { localStorage.removeItem(CHECKPOINT_KEY); } catch {}
     const accuracy = correct / Q_COUNT;
     // Map accuracy to a rough Elo baseline (900–1500)
     const baseline = Math.round(900 + accuracy * 600);

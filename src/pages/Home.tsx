@@ -46,6 +46,7 @@ import { QuickDuelEntry } from "@/components/QuickDuelEntry";
 import { StreakFreezeWidget } from "@/components/StreakFreezeWidget";
 import { OnboardingFlow } from "@/components/OnboardingFlow";
 import { DiagnosticFlow } from "@/components/DiagnosticFlow";
+import { PsatFocusLanding } from "@/components/PsatFocusLanding";
 import { KidSelector } from "@/components/KidSelector";
 import { Dialog, DialogContent } from "@/components/ui/dialog";
 import { ImportSummaryWidget } from "@/components/ImportSummaryWidget";
@@ -135,6 +136,10 @@ const Home = () => {
   const [testSearchQuery, setTestSearchQuery] = useState("");
   const [focusMode, setFocusMode] = useState(() => {
     try { return localStorage.getItem('ao_focus_mode') === 'true'; } catch { return false; }
+  });
+  // PSAT users see a stripped-down landing by default; they can opt into the full dashboard.
+  const [psatShowFull, setPsatShowFull] = useState(() => {
+    try { return localStorage.getItem('ao_psat_show_full') === 'true'; } catch { return false; }
   });
   const [expandedSections, setExpandedSections] = useState<Record<string, boolean>>({});
   const nextSAT = getNextExamDate(examType);
@@ -274,16 +279,8 @@ const Home = () => {
     );
   }
 
-  if (needsDiagnostic && !diagnosticSkipped) {
-    return (
-      <DiagnosticFlow
-        onComplete={() => { setNeedsDiagnostic(false); }}
-        onSkip={() => { setDiagnosticSkipped(true); setNeedsDiagnostic(false); }}
-      />
-    );
-  }
-
-  // Show exam selector on first authenticated screen, or when manually toggled
+  // Show exam selector FIRST — never prompt for a diagnostic before we know
+  // what the student is studying.
   if (needsSelection || showExamSelector || !hasChosenExamThisSession) {
     return (
       <ExamSelector
@@ -294,6 +291,27 @@ const Home = () => {
           if (user) {
             sessionStorage.setItem(`exam_choice_session_${user.id}`, "true");
           }
+        }}
+      />
+    );
+  }
+
+  if (needsDiagnostic && !diagnosticSkipped) {
+    return (
+      <DiagnosticFlow
+        onComplete={() => { setNeedsDiagnostic(false); }}
+        onSkip={() => { setDiagnosticSkipped(true); setNeedsDiagnostic(false); }}
+      />
+    );
+  }
+
+  // Simplified PSAT landing — just Continue, Practice by section, Score + weak areas.
+  if (examType === 'psat' && !psatShowFull) {
+    return (
+      <PsatFocusLanding
+        onShowFull={() => {
+          setPsatShowFull(true);
+          try { localStorage.setItem('ao_psat_show_full', 'true'); } catch {}
         }}
       />
     );
