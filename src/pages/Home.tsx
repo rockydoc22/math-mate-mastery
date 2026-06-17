@@ -1065,13 +1065,18 @@ const Home = () => {
                       </h4>
                       <div className="grid grid-cols-4 gap-3">
                         {pinnedTiles.map((item) => (
-                          <Link key={item.id} to={item.to}>
+                          <Link key={item.id} to={item.to} title={TOOL_META[item.id]?.pitch}>
                             <div className={`${item.color} rounded-xl p-4 flex flex-col items-center text-center gap-2 aspect-square justify-center hover:scale-105 transition-transform cursor-pointer border border-primary/50 ring-1 ring-primary/20`}>
                               <div className="w-14 h-14 rounded-full bg-background/60 flex items-center justify-center relative">
                                 <item.icon className={`w-7 h-7 ${item.iconColor}`} />
                                 <Pin className="w-3 h-3 text-primary absolute -top-1 -right-1" />
                               </div>
                               <span className="text-xs font-semibold leading-tight text-foreground">{item.label}</span>
+                              {TOOL_META[item.id]?.pitch && (
+                                <span className="text-[10px] text-muted-foreground leading-tight line-clamp-2">
+                                  {TOOL_META[item.id]?.pitch}
+                                </span>
+                              )}
                             </div>
                           </Link>
                         ))}
@@ -1098,7 +1103,7 @@ const Home = () => {
                         {isOpen && (
                           <div className="grid grid-cols-4 gap-3 p-3">
                             {catTiles.map((item) => (
-                              <Link key={item.id} to={item.to}>
+                              <Link key={item.id} to={item.to} title={TOOL_META[item.id]?.pitch}>
                                 <div className={`${item.color} rounded-xl p-4 flex flex-col items-center text-center gap-2 aspect-square justify-center hover:scale-105 transition-transform cursor-pointer border ${pinnedSubjects.includes(item.id) ? 'border-primary/50 ring-1 ring-primary/20' : 'border-border/50'}`}>
                                   <div className="w-14 h-14 rounded-full bg-background/60 flex items-center justify-center relative">
                                     <item.icon className={`w-7 h-7 ${item.iconColor}`} />
@@ -1128,7 +1133,7 @@ const Home = () => {
                 {mascotSection}
                 <div className="grid grid-cols-3 gap-2">
                   {sorted.map((item) => (
-                    <Link key={item.id} to={item.to}>
+                    <Link key={item.id} to={item.to} title={TOOL_META[item.id]?.pitch}>
                       <div className={`${item.color} rounded-xl p-2.5 flex flex-col items-center text-center gap-1.5 justify-center hover:scale-105 transition-transform cursor-pointer border ${pinnedSubjects.includes(item.id) ? 'border-primary/50 ring-1 ring-primary/20' : 'border-border/50'}`}>
                         <div className="w-10 h-10 rounded-full bg-background/60 flex items-center justify-center relative">
                           <item.icon className={`w-5 h-5 ${item.iconColor}`} />
