@@ -46,7 +46,7 @@ import { QuickDuelEntry } from "@/components/QuickDuelEntry";
 import { StreakFreezeWidget } from "@/components/StreakFreezeWidget";
 import { OnboardingFlow } from "@/components/OnboardingFlow";
 import { DiagnosticFlow } from "@/components/DiagnosticFlow";
-import { PsatFocusLanding } from "@/components/PsatFocusLanding";
+import { ExamFocusLanding } from "@/components/ExamFocusLanding";
 import { KidSelector } from "@/components/KidSelector";
 import { Dialog, DialogContent } from "@/components/ui/dialog";
 import { ImportSummaryWidget } from "@/components/ImportSummaryWidget";
@@ -137,10 +137,23 @@ const Home = () => {
   const [focusMode, setFocusMode] = useState(() => {
     try { return localStorage.getItem('ao_focus_mode') === 'true'; } catch { return false; }
   });
-  // PSAT users see a stripped-down landing by default; they can opt into the full dashboard.
-  const [psatShowFull, setPsatShowFull] = useState(() => {
-    try { return localStorage.getItem('ao_psat_show_full') === 'true'; } catch { return false; }
+  // Standardized-test users see a stripped-down landing by default; they can opt into the full dashboard.
+  // Per-exam toggle so SAT/PSAT/ACT each remember their own preference.
+  const [showFullByExam, setShowFullByExam] = useState<Record<string, boolean>>(() => {
+    const read = (k: string) => {
+      try { return localStorage.getItem(k) === 'true'; } catch { return false; }
+    };
+    return {
+      sat:  read('ao_sat_show_full'),
+      psat: read('ao_psat_show_full'),
+      act:  read('ao_act_show_full'),
+    };
   });
+  const showFull = !!showFullByExam[examType];
+  const setShowFull = (val: boolean) => {
+    setShowFullByExam(prev => ({ ...prev, [examType]: val }));
+    try { localStorage.setItem(`ao_${examType}_show_full`, val ? 'true' : 'false'); } catch {}
+  };
   const [expandedSections, setExpandedSections] = useState<Record<string, boolean>>({});
   const nextSAT = getNextExamDate(examType);
 
@@ -305,14 +318,12 @@ const Home = () => {
     );
   }
 
-  // Simplified PSAT landing — just Continue, Practice by section, Score + weak areas.
-  if (examType === 'psat' && !psatShowFull) {
+  // Simplified focus landing for SAT/PSAT/ACT — just Continue, Practice by section, Score + weak areas.
+  if ((examType === 'sat' || examType === 'psat' || examType === 'act') && !showFull) {
     return (
-      <PsatFocusLanding
-        onShowFull={() => {
-          setPsatShowFull(true);
-          try { localStorage.setItem('ao_psat_show_full', 'true'); } catch {}
-        }}
+      <ExamFocusLanding
+        examType={examType}
+        onShowFull={() => setShowFull(true)}
       />
     );
   }
@@ -887,10 +898,23 @@ const Home = () => {
         <div className="mb-4">
           <div className="flex items-center justify-between mb-3">
             <h3 className="text-sm font-semibold text-muted-foreground uppercase tracking-wide">Activities</h3>
-            <Button variant="ghost" size="sm" className="h-7 gap-1 text-xs text-muted-foreground" onClick={() => setShowPinManager(true)}>
-              <Pin className="w-3 h-3" />
-              Customize
-            </Button>
+            <div className="flex items-center gap-1">
+              {(examType === 'sat' || examType === 'psat' || examType === 'act') && (
+                <Button
+                  variant="ghost"
+                  size="sm"
+                  className="h-7 gap-1 text-xs text-muted-foreground"
+                  onClick={() => setShowFull(false)}
+                  title="Back to the simple landing"
+                >
+                  ← Focus view
+                </Button>
+              )}
+              <Button variant="ghost" size="sm" className="h-7 gap-1 text-xs text-muted-foreground" onClick={() => setShowPinManager(true)}>
+                <Pin className="w-3 h-3" />
+                Customize
+              </Button>
+            </div>
           </div>
           {(() => {
             type TileCategory = 'core' | 'study-tools' | 'social' | 'assessments' | 'advanced' | 'admin';
