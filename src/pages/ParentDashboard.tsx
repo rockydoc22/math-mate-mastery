@@ -7,9 +7,10 @@ import { Progress } from "@/components/ui/progress";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogFooter } from "@/components/ui/dialog";
 import { Label } from "@/components/ui/label";
+import { Switch } from "@/components/ui/switch";
 import {
   ArrowLeft, Eye, Flame, BarChart3, BookOpen,
-  CheckCircle2, Plus, Pencil, UserCircle, Clock, CalendarCheck, Download
+  CheckCircle2, Plus, Pencil, UserCircle, Clock, CalendarCheck, Download, Mail, Send
 } from "lucide-react";
 import { useAuth } from "@/hooks/useAuth";
 import { supabase } from "@/integrations/supabase/client";
@@ -52,11 +53,51 @@ const ParentDashboard = () => {
   const [editName, setEditName] = useState("");
   const [addingKid, setAddingKid] = useState(false);
   const [newKidName, setNewKidName] = useState("");
+  const [weeklyEnabled, setWeeklyEnabled] = useState(false);
+  const [summaryEmail, setSummaryEmail] = useState("");
+  const [savingPrefs, setSavingPrefs] = useState(false);
+  const [sendingTest, setSendingTest] = useState(false);
 
   useEffect(() => {
     if (!user) { setLoading(false); return; }
     loadKids();
+    loadEmailPrefs();
   }, [user]);
+
+  const loadEmailPrefs = async () => {
+    if (!user) return;
+    const { data } = await supabase
+      .from("profiles")
+      .select("weekly_summary_enabled,summary_email")
+      .eq("id", user.id)
+      .single();
+    if (data) {
+      setWeeklyEnabled(!!(data as any).weekly_summary_enabled);
+      setSummaryEmail((data as any).summary_email || user.email || "");
+    } else {
+      setSummaryEmail(user.email || "");
+    }
+  };
+
+  const savePrefs = async (enabled: boolean, email: string) => {
+    if (!user) return;
+    setSavingPrefs(true);
+    const { error } = await supabase
+      .from("profiles")
+      .update({ weekly_summary_enabled: enabled, summary_email: email || null } as any)
+      .eq("id", user.id);
+    setSavingPrefs(false);
+    if (error) toast({ title: "Couldn't save email preferences", variant: "destructive" });
+    else toast({ title: enabled ? "Weekly summary on" : "Weekly summary off" });
+  };
+
+  const sendTestSummary = async () => {
+    setSendingTest(true);
+    const { error } = await supabase.functions.invoke("weekly-parent-summary", { body: {} });
+    setSendingTest(false);
+    if (error) toast({ title: "Send failed", description: error.message, variant: "destructive" });
+    else toast({ title: "Summary sent — check your inbox" });
+  };
 
   useEffect(() => {
     if (selectedKid && user) loadKidStats(selectedKid);
