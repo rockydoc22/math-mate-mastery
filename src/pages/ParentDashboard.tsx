@@ -57,6 +57,20 @@ const ParentDashboard = () => {
   const [summaryEmail, setSummaryEmail] = useState("");
   const [savingPrefs, setSavingPrefs] = useState(false);
   const [sendingTest, setSendingTest] = useState(false);
+  const [emailError, setEmailError] = useState<string | null>(null);
+  const [testRecipient, setTestRecipient] = useState("");
+  const [testRecipientError, setTestRecipientError] = useState<string | null>(null);
+  const [sendingToTest, setSendingToTest] = useState(false);
+  const [previewing, setPreviewing] = useState(false);
+
+  const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
+  const validateEmail = (e: string): string | null => {
+    const v = e.trim();
+    if (!v) return "Email is required";
+    if (v.length > 254) return "Email is too long";
+    if (!EMAIL_RE.test(v)) return "That doesn't look like a valid email";
+    return null;
+  };
 
   useEffect(() => {
     if (!user) { setLoading(false); return; }
@@ -81,6 +95,16 @@ const ParentDashboard = () => {
 
   const savePrefs = async (enabled: boolean, email: string) => {
     if (!user) return;
+    if (enabled) {
+      const err = validateEmail(email);
+      if (err) {
+        setEmailError(err);
+        setWeeklyEnabled(false);
+        toast({ title: "Fix the email first", description: err, variant: "destructive" });
+        return;
+      }
+    }
+    setEmailError(null);
     setSavingPrefs(true);
     const { error } = await supabase
       .from("profiles")
@@ -92,11 +116,57 @@ const ParentDashboard = () => {
   };
 
   const sendTestSummary = async () => {
+    const err = validateEmail(summaryEmail);
+    if (err) { setEmailError(err); toast({ title: err, variant: "destructive" }); return; }
     setSendingTest(true);
-    const { error } = await supabase.functions.invoke("weekly-parent-summary", { body: {} });
+    const { data, error } = await supabase.functions.invoke("weekly-parent-summary", { body: {} });
     setSendingTest(false);
-    if (error) toast({ title: "Send failed", description: error.message, variant: "destructive" });
-    else toast({ title: "Summary sent — check your inbox" });
+    if (error || (data && (data as any).error)) {
+      toast({ title: "Send failed", description: error?.message || (data as any)?.message, variant: "destructive" });
+    } else {
+      toast({ title: `Sent to ${(data as any)?.sent_to ?? summaryEmail}` });
+    }
+  };
+
+  const sendToTestRecipient = async () => {
+    const err = validateEmail(testRecipient);
+    if (err) { setTestRecipientError(err); return; }
+    setTestRecipientError(null);
+    setSendingToTest(true);
+    const { data, error } = await supabase.functions.invoke("weekly-parent-summary", {
+      body: { test_recipient: testRecipient.trim() },
+    });
+    setSendingToTest(false);
+    if (error || (data && (data as any).error)) {
+      toast({ title: "Send failed", description: error?.message || (data as any)?.message, variant: "destructive" });
+    } else {
+      toast({ title: `Test sent to ${testRecipient.trim()}` });
+    }
+  };
+
+  const previewSummary = async () => {
+    setPreviewing(true);
+    const { data, error } = await supabase.functions.invoke("weekly-parent-summary", {
+      body: { preview: true },
+    });
+    setPreviewing(false);
+    if (error || !(data as any)?.html) {
+      toast({ title: "Preview failed", description: error?.message, variant: "destructive" });
+      return;
+    }
+    const w = window.open("", "_blank");
+    if (!w) {
+      toast({ title: "Pop-ups blocked — allow pop-ups to preview", variant: "destructive" });
+      return;
+    }
+    w.document.write(
+      `<!doctype html><html><head><title>Preview · ${(data as any).subject}</title></head>` +
+      `<body style="margin:0;background:#f3f4f6;">` +
+      `<div style="background:#1f2937;color:#fff;padding:10px 16px;font:13px -apple-system,Segoe UI,sans-serif;">` +
+      `<strong>Preview</strong> — Subject: ${(data as any).subject}</div>` +
+      `<div style="padding:24px;">${(data as any).html}</div></body></html>`
+    );
+    w.document.close();
   };
 
   useEffect(() => {
@@ -383,14 +453,14 @@ const ParentDashboard = () => {
           </div>
         )}
 
-        <Card className="p-4 space-y-3">
+        <Card className="p-4 space-y-4">
           <div className="flex items-start justify-between gap-3">
             <div>
               <h3 className="font-semibold flex items-center gap-2 text-sm">
                 <Mail className="w-4 h-4 text-primary" /> Weekly email summary
               </h3>
               <p className="text-xs text-muted-foreground mt-0.5">
-                Get Time Studied, Active Days, and top focus areas every Sunday.
+                Sundays at 8 AM CT · Time Studied, Active Days, and top focus areas — broken down by PSAT / SAT / ACT.
               </p>
             </div>
             <Switch
@@ -399,24 +469,74 @@ const ParentDashboard = () => {
               onCheckedChange={(v) => { setWeeklyEnabled(v); savePrefs(v, summaryEmail); }}
             />
           </div>
-          <div className="flex gap-2">
+
+          <div className="space-y-1">
+            <Label htmlFor="summary-email" className="text-xs">Send to</Label>
             <Input
+              id="summary-email"
               type="email"
               placeholder="you@email.com"
               value={summaryEmail}
-              onChange={(e) => setSummaryEmail(e.target.value)}
-              onBlur={() => weeklyEnabled && savePrefs(weeklyEnabled, summaryEmail)}
-              className="text-sm"
+              onChange={(e) => { setSummaryEmail(e.target.value); if (emailError) setEmailError(null); }}
+              onBlur={() => {
+                const err = validateEmail(summaryEmail);
+                setEmailError(err);
+                if (!err && weeklyEnabled) savePrefs(weeklyEnabled, summaryEmail);
+              }}
+              aria-invalid={!!emailError}
+              className={`text-sm ${emailError ? "border-destructive" : ""}`}
             />
+            {emailError && <p className="text-xs text-destructive">{emailError}</p>}
+          </div>
+
+          <div className="grid grid-cols-2 gap-2">
             <Button
               size="sm"
               variant="outline"
-              onClick={sendTestSummary}
-              disabled={sendingTest || !summaryEmail}
-              className="gap-1.5 shrink-0"
+              onClick={previewSummary}
+              disabled={previewing}
+              className="gap-1.5"
             >
-              <Send className="w-3.5 h-3.5" /> {sendingTest ? "Sending…" : "Send now"}
+              <Eye className="w-3.5 h-3.5" /> {previewing ? "Building…" : "Preview"}
             </Button>
+            <Button
+              size="sm"
+              variant="default"
+              onClick={sendTestSummary}
+              disabled={sendingTest || !summaryEmail || !!emailError}
+              className="gap-1.5"
+            >
+              <Send className="w-3.5 h-3.5" /> {sendingTest ? "Sending…" : "Send to me"}
+            </Button>
+          </div>
+
+          <div className="pt-2 border-t border-border space-y-1">
+            <Label htmlFor="test-recipient" className="text-xs flex items-center justify-between">
+              <span>Send a one-off test to a different address</span>
+            </Label>
+            <div className="flex gap-2">
+              <Input
+                id="test-recipient"
+                type="email"
+                placeholder="spouse@email.com"
+                value={testRecipient}
+                onChange={(e) => { setTestRecipient(e.target.value); if (testRecipientError) setTestRecipientError(null); }}
+                onBlur={() => setTestRecipientError(validateEmail(testRecipient))}
+                aria-invalid={!!testRecipientError}
+                className={`text-sm ${testRecipientError ? "border-destructive" : ""}`}
+              />
+              <Button
+                size="sm"
+                variant="outline"
+                onClick={sendToTestRecipient}
+                disabled={sendingToTest || !testRecipient || !!testRecipientError}
+                className="gap-1.5 shrink-0"
+              >
+                <Send className="w-3.5 h-3.5" /> {sendingToTest ? "…" : "Test"}
+              </Button>
+            </div>
+            {testRecipientError && <p className="text-xs text-destructive">{testRecipientError}</p>}
+            <p className="text-[10px] text-muted-foreground">Doesn't change your saved address — just sends one copy.</p>
           </div>
         </Card>
 
