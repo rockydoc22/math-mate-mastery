@@ -57,6 +57,20 @@ const ParentDashboard = () => {
   const [summaryEmail, setSummaryEmail] = useState("");
   const [savingPrefs, setSavingPrefs] = useState(false);
   const [sendingTest, setSendingTest] = useState(false);
+  const [emailError, setEmailError] = useState<string | null>(null);
+  const [testRecipient, setTestRecipient] = useState("");
+  const [testRecipientError, setTestRecipientError] = useState<string | null>(null);
+  const [sendingToTest, setSendingToTest] = useState(false);
+  const [previewing, setPreviewing] = useState(false);
+
+  const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
+  const validateEmail = (e: string): string | null => {
+    const v = e.trim();
+    if (!v) return "Email is required";
+    if (v.length > 254) return "Email is too long";
+    if (!EMAIL_RE.test(v)) return "That doesn't look like a valid email";
+    return null;
+  };
 
   useEffect(() => {
     if (!user) { setLoading(false); return; }
@@ -81,6 +95,16 @@ const ParentDashboard = () => {
 
   const savePrefs = async (enabled: boolean, email: string) => {
     if (!user) return;
+    if (enabled) {
+      const err = validateEmail(email);
+      if (err) {
+        setEmailError(err);
+        setWeeklyEnabled(false);
+        toast({ title: "Fix the email first", description: err, variant: "destructive" });
+        return;
+      }
+    }
+    setEmailError(null);
     setSavingPrefs(true);
     const { error } = await supabase
       .from("profiles")
@@ -92,11 +116,57 @@ const ParentDashboard = () => {
   };
 
   const sendTestSummary = async () => {
+    const err = validateEmail(summaryEmail);
+    if (err) { setEmailError(err); toast({ title: err, variant: "destructive" }); return; }
     setSendingTest(true);
-    const { error } = await supabase.functions.invoke("weekly-parent-summary", { body: {} });
+    const { data, error } = await supabase.functions.invoke("weekly-parent-summary", { body: {} });
     setSendingTest(false);
-    if (error) toast({ title: "Send failed", description: error.message, variant: "destructive" });
-    else toast({ title: "Summary sent — check your inbox" });
+    if (error || (data && (data as any).error)) {
+      toast({ title: "Send failed", description: error?.message || (data as any)?.message, variant: "destructive" });
+    } else {
+      toast({ title: `Sent to ${(data as any)?.sent_to ?? summaryEmail}` });
+    }
+  };
+
+  const sendToTestRecipient = async () => {
+    const err = validateEmail(testRecipient);
+    if (err) { setTestRecipientError(err); return; }
+    setTestRecipientError(null);
+    setSendingToTest(true);
+    const { data, error } = await supabase.functions.invoke("weekly-parent-summary", {
+      body: { test_recipient: testRecipient.trim() },
+    });
+    setSendingToTest(false);
+    if (error || (data && (data as any).error)) {
+      toast({ title: "Send failed", description: error?.message || (data as any)?.message, variant: "destructive" });
+    } else {
+      toast({ title: `Test sent to ${testRecipient.trim()}` });
+    }
+  };
+
+  const previewSummary = async () => {
+    setPreviewing(true);
+    const { data, error } = await supabase.functions.invoke("weekly-parent-summary", {
+      body: { preview: true },
+    });
+    setPreviewing(false);
+    if (error || !(data as any)?.html) {
+      toast({ title: "Preview failed", description: error?.message, variant: "destructive" });
+      return;
+    }
+    const w = window.open("", "_blank");
+    if (!w) {
+      toast({ title: "Pop-ups blocked — allow pop-ups to preview", variant: "destructive" });
+      return;
+    }
+    w.document.write(
+      `<!doctype html><html><head><title>Preview · ${(data as any).subject}</title></head>` +
+      `<body style="margin:0;background:#f3f4f6;">` +
+      `<div style="background:#1f2937;color:#fff;padding:10px 16px;font:13px -apple-system,Segoe UI,sans-serif;">` +
+      `<strong>Preview</strong> — Subject: ${(data as any).subject}</div>` +
+      `<div style="padding:24px;">${(data as any).html}</div></body></html>`
+    );
+    w.document.close();
   };
 
   useEffect(() => {
