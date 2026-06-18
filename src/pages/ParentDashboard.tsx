@@ -383,6 +383,43 @@ const ParentDashboard = () => {
           </div>
         )}
 
+        <Card className="p-4 space-y-3">
+          <div className="flex items-start justify-between gap-3">
+            <div>
+              <h3 className="font-semibold flex items-center gap-2 text-sm">
+                <Mail className="w-4 h-4 text-primary" /> Weekly email summary
+              </h3>
+              <p className="text-xs text-muted-foreground mt-0.5">
+                Get Time Studied, Active Days, and top focus areas every Sunday.
+              </p>
+            </div>
+            <Switch
+              checked={weeklyEnabled}
+              disabled={savingPrefs}
+              onCheckedChange={(v) => { setWeeklyEnabled(v); savePrefs(v, summaryEmail); }}
+            />
+          </div>
+          <div className="flex gap-2">
+            <Input
+              type="email"
+              placeholder="you@email.com"
+              value={summaryEmail}
+              onChange={(e) => setSummaryEmail(e.target.value)}
+              onBlur={() => weeklyEnabled && savePrefs(weeklyEnabled, summaryEmail)}
+              className="text-sm"
+            />
+            <Button
+              size="sm"
+              variant="outline"
+              onClick={sendTestSummary}
+              disabled={sendingTest || !summaryEmail}
+              className="gap-1.5 shrink-0"
+            >
+              <Send className="w-3.5 h-3.5" /> {sendingTest ? "Sending…" : "Send now"}
+            </Button>
+          </div>
+        </Card>
+
         {kids.length === 0 && (
           <Card className="p-6 text-center border-dashed space-y-3">
             <UserCircle className="w-10 h-10 text-muted-foreground mx-auto" />
