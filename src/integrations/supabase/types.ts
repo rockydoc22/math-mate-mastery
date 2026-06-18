@@ -983,9 +983,11 @@ export type Database = {
           pinned_subjects: string[]
           primary_goal: string | null
           show_on_leaderboards: boolean
+          summary_email: string | null
           theme_color: string | null
           updated_at: string
           username: string
+          weekly_summary_enabled: boolean
         }
         Insert: {
           avatar_emoji?: string | null
@@ -1000,9 +1002,11 @@ export type Database = {
           pinned_subjects?: string[]
           primary_goal?: string | null
           show_on_leaderboards?: boolean
+          summary_email?: string | null
           theme_color?: string | null
           updated_at?: string
           username: string
+          weekly_summary_enabled?: boolean
         }
         Update: {
           avatar_emoji?: string | null
@@ -1017,9 +1021,11 @@ export type Database = {
           pinned_subjects?: string[]
           primary_goal?: string | null
           show_on_leaderboards?: boolean
+          summary_email?: string | null
           theme_color?: string | null
           updated_at?: string
           username?: string
+          weekly_summary_enabled?: boolean
         }
         Relationships: []
       }
