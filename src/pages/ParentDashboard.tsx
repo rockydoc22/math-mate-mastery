@@ -453,14 +453,14 @@ const ParentDashboard = () => {
           </div>
         )}
 
-        <Card className="p-4 space-y-3">
+        <Card className="p-4 space-y-4">
           <div className="flex items-start justify-between gap-3">
             <div>
               <h3 className="font-semibold flex items-center gap-2 text-sm">
                 <Mail className="w-4 h-4 text-primary" /> Weekly email summary
               </h3>
               <p className="text-xs text-muted-foreground mt-0.5">
-                Get Time Studied, Active Days, and top focus areas every Sunday.
+                Sundays at 8 AM CT · Time Studied, Active Days, and top focus areas — broken down by PSAT / SAT / ACT.
               </p>
             </div>
             <Switch
@@ -469,24 +469,74 @@ const ParentDashboard = () => {
               onCheckedChange={(v) => { setWeeklyEnabled(v); savePrefs(v, summaryEmail); }}
             />
           </div>
-          <div className="flex gap-2">
+
+          <div className="space-y-1">
+            <Label htmlFor="summary-email" className="text-xs">Send to</Label>
             <Input
+              id="summary-email"
               type="email"
               placeholder="you@email.com"
               value={summaryEmail}
-              onChange={(e) => setSummaryEmail(e.target.value)}
-              onBlur={() => weeklyEnabled && savePrefs(weeklyEnabled, summaryEmail)}
-              className="text-sm"
+              onChange={(e) => { setSummaryEmail(e.target.value); if (emailError) setEmailError(null); }}
+              onBlur={() => {
+                const err = validateEmail(summaryEmail);
+                setEmailError(err);
+                if (!err && weeklyEnabled) savePrefs(weeklyEnabled, summaryEmail);
+              }}
+              aria-invalid={!!emailError}
+              className={`text-sm ${emailError ? "border-destructive" : ""}`}
             />
+            {emailError && <p className="text-xs text-destructive">{emailError}</p>}
+          </div>
+
+          <div className="grid grid-cols-2 gap-2">
             <Button
               size="sm"
               variant="outline"
-              onClick={sendTestSummary}
-              disabled={sendingTest || !summaryEmail}
-              className="gap-1.5 shrink-0"
+              onClick={previewSummary}
+              disabled={previewing}
+              className="gap-1.5"
             >
-              <Send className="w-3.5 h-3.5" /> {sendingTest ? "Sending…" : "Send now"}
+              <Eye className="w-3.5 h-3.5" /> {previewing ? "Building…" : "Preview"}
             </Button>
+            <Button
+              size="sm"
+              variant="default"
+              onClick={sendTestSummary}
+              disabled={sendingTest || !summaryEmail || !!emailError}
+              className="gap-1.5"
+            >
+              <Send className="w-3.5 h-3.5" /> {sendingTest ? "Sending…" : "Send to me"}
+            </Button>
+          </div>
+
+          <div className="pt-2 border-t border-border space-y-1">
+            <Label htmlFor="test-recipient" className="text-xs flex items-center justify-between">
+              <span>Send a one-off test to a different address</span>
+            </Label>
+            <div className="flex gap-2">
+              <Input
+                id="test-recipient"
+                type="email"
+                placeholder="spouse@email.com"
+                value={testRecipient}
+                onChange={(e) => { setTestRecipient(e.target.value); if (testRecipientError) setTestRecipientError(null); }}
+                onBlur={() => setTestRecipientError(validateEmail(testRecipient))}
+                aria-invalid={!!testRecipientError}
+                className={`text-sm ${testRecipientError ? "border-destructive" : ""}`}
+              />
+              <Button
+                size="sm"
+                variant="outline"
+                onClick={sendToTestRecipient}
+                disabled={sendingToTest || !testRecipient || !!testRecipientError}
+                className="gap-1.5 shrink-0"
+              >
+                <Send className="w-3.5 h-3.5" /> {sendingToTest ? "…" : "Test"}
+              </Button>
+            </div>
+            {testRecipientError && <p className="text-xs text-destructive">{testRecipientError}</p>}
+            <p className="text-[10px] text-muted-foreground">Doesn't change your saved address — just sends one copy.</p>
           </div>
         </Card>
 
