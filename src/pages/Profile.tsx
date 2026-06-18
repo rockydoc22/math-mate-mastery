@@ -157,15 +157,7 @@ const Profile = () => {
           <XPBar quizCount={quizCount} />
         </Card>
 
-        {/* Fighter Customization */}
-        <Card className="p-6">
-          <h3 className="font-semibold flex items-center gap-2 mb-4">
-            <Swords className="w-5 h-5 text-primary" />
-            Fighter Avatar
-          </h3>
-          <FighterCustomizer achievements={achievements} />
-        </Card>
-
+        {/* Fighter customization moved to Battle Mode — kept out of Profile to reduce clutter. */}
 
         {/* Assessment History */}
         <AssessmentHistory />
