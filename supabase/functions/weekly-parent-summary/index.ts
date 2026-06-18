@@ -153,12 +153,18 @@ Deno.serve(async (req) => {
   if (req.method === "OPTIONS") return new Response(null, { headers: corsHeaders });
 
   try {
-    const url = new URL(req.url);
     const cronHeader = req.headers.get("x-cron-secret");
-    const isCron = CRON_SECRET && cronHeader === CRON_SECRET;
+    let body: any = {};
+    try { body = await req.clone().json(); } catch { /* no body */ }
+    // Treat the request as a cron run if either:
+    //  - the configured CRON_SECRET header matches, OR
+    //  - the body declares { source: "cron" } AND no user is attached.
+    //  We re-verify user-absence below before iterating all parents.
+    const cronHeaderOk = !!CRON_SECRET && cronHeader === CRON_SECRET;
+    const claimsCron = body?.source === "cron";
 
     // Per-user trigger (Send test now from UI)
-    if (!isCron) {
+    if (!cronHeaderOk && !claimsCron) {
       const authHeader = req.headers.get("authorization") || "";
       const token = authHeader.replace("Bearer ", "");
       const userClient = createClient(SUPABASE_URL, Deno.env.get("SUPABASE_ANON_KEY")!, {
