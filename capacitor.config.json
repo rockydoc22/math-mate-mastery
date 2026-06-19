@@ -1,0 +1,13 @@
+{
+  "appId": "app.lovable.3a00522276624928b3c7d329b9f11de7",
+  "appName": "AlphaOmega",
+  "webDir": "dist",
+  "server": {
+    "url": "https://3a005222-7662-4928-b3c7-d329b9f11de7.lovableproject.com?forceHideBadge=true",
+    "cleartext": true
+  },
+  "ios": {
+    "contentInset": "always",
+    "limitsNavigationsToAppBoundDomains": false
+  }
+}
