@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Swords, Share2, Copy, Check } from "lucide-react";
 import { toast } from "@/hooks/use-toast";
+import { useParentalGate } from "@/hooks/useParentalGate";
 
 interface ChallengeAFriendProps {
   score: number;
@@ -12,10 +13,11 @@ interface ChallengeAFriendProps {
 
 export function ChallengeAFriend({ score, totalQuestions, subject, percentage }: ChallengeAFriendProps) {
   const [copied, setCopied] = useState(false);
+  const { guard, gate } = useParentalGate();
 
   const challengeText = `🏆 I scored ${score}/${totalQuestions} (${percentage}%) on ${subject}! Can you beat me?\n\nTry it free: ${window.location.origin}/quiz?subject=${subject.toLowerCase()}&count=${totalQuestions}&difficulty=all&timer=true`;
 
-  const handleShare = async () => {
+  const handleShare = () => guard(async () => {
     if (navigator.share) {
       try {
         await navigator.share({
@@ -28,7 +30,7 @@ export function ChallengeAFriend({ score, totalQuestions, subject, percentage }:
     } else {
       handleCopy();
     }
-  };
+  }, { reason: "Sharing this challenge opens another app. A parent must continue." });
 
   const handleCopy = () => {
     navigator.clipboard.writeText(challengeText);
@@ -65,6 +67,7 @@ export function ChallengeAFriend({ score, totalQuestions, subject, percentage }:
           {copied ? 'Copied!' : 'Copy Link'}
         </Button>
       </div>
+      {gate}
     </div>
   );
 }
