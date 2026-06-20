@@ -29,7 +29,32 @@ npm run build
 npx cap sync ios
 ```
 
-Hot reload from the Lovable preview is already enabled via the `server.url` field in `capacitor.config.json`. **Remove that `server` block before submitting to TestFlight** — App Store builds must load the bundled `dist/` web assets, not a remote URL.
+Production `capacitor.config.json` ships **without** a `server.url` block, so App Store builds load the bundled `dist/` web assets. For live-reload during local dev, copy `capacitor.config.dev.json` over `capacitor.config.json` before running `npx cap sync ios`, then revert before archiving:
+
+```bash
+# Dev (hot reload from Lovable preview)
+cp capacitor.config.dev.json capacitor.config.json && npx cap sync ios
+
+# Back to production (bundled assets) before TestFlight / App Store
+git checkout capacitor.config.json && npm run build && npx cap sync ios
+```
+
+## Required public URLs (App Store Connect)
+
+- **Privacy Policy URL:** https://40squared.club/privacy
+- **Support URL:** https://40squared.club/support
+
+Both routes are live in the app and must remain reachable for the lifetime of the listing.
+
+## Sign in with Apple
+
+Apple requires Sign in with Apple whenever any other third-party social login is offered. The Auth page already renders the Apple button and the `apple` provider is enabled in Lovable Cloud auth. In Xcode, open the App target → **Signing & Capabilities** → **+ Capability** → **Sign in with Apple** so the entitlement is included in the build.
+
+## COPPA / Kids Category
+
+- Age rating: **4+** (no objectionable content per our guardrails).
+- No third-party ad SDKs are bundled — verify with `npm ls` before each release.
+- Use `<ParentalGate />` (`src/components/ParentalGate.tsx`) + `openExternal()` (`src/lib/openExternal.ts`) for any link that leaves the app, mailto link, or future in-app purchase. The gate uses a 2-digit multiplication challenge that satisfies Apple's "parental gate" guideline 1.3.
 
 ## 2. App Store assets checklist
 
