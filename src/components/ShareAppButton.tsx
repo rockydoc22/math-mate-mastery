@@ -8,12 +8,15 @@ import {
 } from "@/components/ui/dropdown-menu";
 import { Share2, Copy, Check, MessageCircle } from "lucide-react";
 import { toast } from "sonner";
+import { useParentalGate } from "@/hooks/useParentalGate";
 
 const APP_URL = "https://math-mate-mastery.lovable.app";
 const SHARE_TEXT = "Check out AlphaOmega — one app, every test! Free SAT, ACT, AP, GED & K-12 prep with 15,000+ questions, AI practice & multiplayer battles!";
 
 export const ShareAppButton = () => {
   const [copied, setCopied] = useState(false);
+  const { guard, gate } = useParentalGate();
+  const gateReason = "Sharing opens another app or website. A parent must continue.";
 
   const handleCopyLink = async () => {
     try {
@@ -26,7 +29,7 @@ export const ShareAppButton = () => {
     }
   };
 
-  const handleNativeShare = async () => {
+  const handleNativeShare = () => guard(async () => {
     if (navigator.share) {
       try {
         await navigator.share({ title: "AlphaOmega — One App, Every Test", text: SHARE_TEXT, url: APP_URL });
@@ -34,21 +37,22 @@ export const ShareAppButton = () => {
     } else {
       handleCopyLink();
     }
-  };
+  }, { reason: gateReason });
 
-  const shareToX = () => {
+  const shareToX = () => guard(() => {
     window.open(`https://x.com/intent/tweet?text=${encodeURIComponent(SHARE_TEXT)}&url=${encodeURIComponent(APP_URL)}`, "_blank");
-  };
+  }, { reason: gateReason });
 
-  const shareToWhatsApp = () => {
+  const shareToWhatsApp = () => guard(() => {
     window.open(`https://wa.me/?text=${encodeURIComponent(SHARE_TEXT + " " + APP_URL)}`, "_blank");
-  };
+  }, { reason: gateReason });
 
-  const shareToReddit = () => {
+  const shareToReddit = () => guard(() => {
     window.open(`https://www.reddit.com/submit?url=${encodeURIComponent(APP_URL)}&title=${encodeURIComponent("Free SAT Prep App - 2000+ Questions, AI Practice & Multiplayer")}`, "_blank");
-  };
+  }, { reason: gateReason });
 
   return (
+    <>
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
         <Button variant="outline" size="sm" className="gap-2">
@@ -79,5 +83,7 @@ export const ShareAppButton = () => {
         </DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>
+    {gate}
+    </>
   );
 };

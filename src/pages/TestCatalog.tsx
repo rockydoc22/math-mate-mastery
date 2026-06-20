@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { ArrowLeft, Search, ExternalLink, Download, X } from "lucide-react";
 import { SEO } from "@/components/SEO";
+import { useParentalGate } from "@/hooks/useParentalGate";
 import {
   TEST_CATALOG, TEST_TYPE_LABELS, GRADE_BUCKETS, AGE_BUCKETS,
   searchCatalog, type TestType,
@@ -15,6 +16,7 @@ const ALL_TYPES = Object.keys(TEST_TYPE_LABELS) as TestType[];
 export default function TestCatalog() {
   const navigate = useNavigate();
   const [params, setParams] = useSearchParams();
+  const { guard, gate } = useParentalGate();
   const [q, setQ] = useState(params.get("q") ?? "");
   const [types, setTypes] = useState<TestType[]>(
     (params.get("type")?.split(",").filter(Boolean) as TestType[]) ?? []
@@ -162,16 +164,17 @@ export default function TestCatalog() {
         <div className="grid gap-2">
           {results.map(item => (
             item.external || item.href.startsWith("http") ? (
-              <a
+              <button
                 key={item.id}
-                href={item.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                download={item.href.endsWith(".pdf") ? "" : undefined}
-                className="block p-3 rounded-lg border bg-card text-card-foreground shadow-sm hover:border-primary/40 hover:shadow-md transition-all"
+                type="button"
+                onClick={() => guard(
+                  () => window.open(item.href, "_blank", "noopener,noreferrer"),
+                  { reason: "This opens an external download or website. A parent must continue." }
+                )}
+                className="block w-full text-left p-3 rounded-lg border bg-card text-card-foreground shadow-sm hover:border-primary/40 hover:shadow-md transition-all"
               >
                 <CardBody item={item} />
-              </a>
+              </button>
             ) : (
               <button
                 key={item.id}
@@ -193,6 +196,7 @@ export default function TestCatalog() {
             </Card>
           )}
         </div>
+        {gate}
       </div>
     </div>
   );

@@ -1,8 +1,14 @@
 import { Link } from "react-router-dom";
 import { ArrowLeft } from "lucide-react";
 import { SEO } from "@/components/SEO";
+import { useParentalGate } from "@/hooks/useParentalGate";
 
-const Privacy = () => (
+const Privacy = () => {
+  const { guard, gate } = useParentalGate();
+  const mail = (to: string) =>
+    guard(() => { window.location.href = `mailto:${to}`; },
+          { reason: "Opening your email app to contact us. A parent must continue." });
+  return (
   <div className="min-h-screen bg-background">
     <SEO
       title="Privacy Policy — AlphaOmega"
@@ -70,11 +76,17 @@ const Privacy = () => (
 
         <section>
           <h2 className="text-xl font-semibold">Contact</h2>
-          <p>Questions or privacy requests: <a className="text-primary underline" href="mailto:support@40squared.club">support@40squared.club</a></p>
+          <p>Questions or privacy requests:{" "}
+            <button type="button" onClick={() => mail("support@40squared.club")} className="text-primary underline">
+              support@40squared.club
+            </button>
+          </p>
         </section>
       </div>
+      {gate}
     </div>
   </div>
-);
+  );
+};
 
 export default Privacy;
