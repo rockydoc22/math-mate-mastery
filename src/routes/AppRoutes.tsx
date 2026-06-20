@@ -273,6 +273,8 @@ const AppRoutes = () => (
       <Route path="/interpretation" element={<InterpretationLab />} />
       <Route path="/offline" element={<OfflinePractice />} />
       <Route path="/warmup" element={<Warmup />} />
+      <Route path="/privacy" element={<Privacy />} />
+      <Route path="/support" element={<Support />} />
       {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
       <Route path="*" element={<NotFound />} />
     </Routes>
