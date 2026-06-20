@@ -39,6 +39,32 @@ cp capacitor.config.dev.json capacitor.config.json && npx cap sync ios
 git checkout capacitor.config.json && npm run build && npx cap sync ios
 ```
 
+### Pre-archive guard
+
+Always run the verification script before opening Xcode to archive. It fails fast if `server.url`, `cleartext`, or any other staging-only setting leaked into `capacitor.config.json`, and confirms `dist/` exists.
+
+```bash
+npm run build
+./scripts/verify-ios-prod.sh
+npx cap sync ios
+npx cap open ios
+# In Xcode: Product → Archive → Distribute App → App Store Connect → Upload
+```
+
+If the script exits non-zero, do **not** archive — fix the config first.
+
+## Parental gate coverage
+
+Every link that leaves the app is wrapped with `useParentalGate()` (`src/hooks/useParentalGate.tsx`), which renders `<ParentalGate />` and only fires the underlying action after a correct multiplication answer. Gated surfaces:
+
+- `Support` and `Privacy` — `mailto:` links to support@40squared.club
+- `ShareAppButton` — native share, X, WhatsApp, Reddit
+- `ShareResults` — Tweet button after a quiz
+- `ChallengeAFriend` — native share of a challenge link
+- `TestCatalog` — external PDFs and any `http(s)` catalog entries
+
+When wiring future IAP / App Store flows (`@capacitor-community/in-app-purchases`), wrap the purchase trigger the same way: `guard(() => store.order(product), { reason: "This is a paid upgrade. A parent must approve." })`.
+
 ## Required public URLs (App Store Connect)
 
 - **Privacy Policy URL:** https://40squared.club/privacy
