@@ -2,8 +2,14 @@ import { Link } from "react-router-dom";
 import { ArrowLeft, Mail, BookOpen, MessageCircle } from "lucide-react";
 import { Card } from "@/components/ui/card";
 import { SEO } from "@/components/SEO";
+import { useParentalGate } from "@/hooks/useParentalGate";
 
-const Support = () => (
+const Support = () => {
+  const { guard, gate } = useParentalGate();
+  const openMail = (to: string) =>
+    guard(() => { window.location.href = `mailto:${to}`; },
+          { reason: "Opening your email app to contact support. A parent must continue." });
+  return (
   <div className="min-h-screen bg-background">
     <SEO
       title="Support — AlphaOmega"
@@ -22,7 +28,13 @@ const Support = () => (
         <div>
           <h2 className="font-semibold">Email us</h2>
           <p className="text-sm text-muted-foreground mb-1">For account, billing, privacy, or content questions.</p>
-          <a className="text-primary underline" href="mailto:support@40squared.club">support@40squared.club</a>
+          <button
+            type="button"
+            onClick={() => openMail("support@40squared.club")}
+            className="text-primary underline"
+          >
+            support@40squared.club
+          </button>
         </div>
       </Card>
 
@@ -50,8 +62,10 @@ const Support = () => (
       <p className="text-xs text-muted-foreground mt-8 text-center">
         AlphaOmega · 40squared.club · One App, Every Test
       </p>
+      {gate}
     </div>
   </div>
-);
+  );
+};
 
 export default Support;
