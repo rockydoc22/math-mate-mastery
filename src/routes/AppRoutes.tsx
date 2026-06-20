@@ -137,6 +137,8 @@ const InterpretationLab = lazy(() => import("@/pages/InterpretationLab"));
 const IntlSampleQuiz = lazy(() => import("@/pages/IntlSampleQuiz"));
 const OfflinePractice = lazy(() => import("@/pages/OfflinePractice"));
 const Warmup = lazy(() => import("@/pages/Warmup"));
+const Privacy = lazy(() => import("@/pages/Privacy"));
+const Support = lazy(() => import("@/pages/Support"));
 
 const AppRoutes = () => (
   <>
@@ -271,6 +273,8 @@ const AppRoutes = () => (
       <Route path="/interpretation" element={<InterpretationLab />} />
       <Route path="/offline" element={<OfflinePractice />} />
       <Route path="/warmup" element={<Warmup />} />
+      <Route path="/privacy" element={<Privacy />} />
+      <Route path="/support" element={<Support />} />
       {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
       <Route path="*" element={<NotFound />} />
     </Routes>
