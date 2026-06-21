@@ -49,7 +49,7 @@ export const TEST_CATALOG: CatalogItem[] = [
   // ───────── Standardized high-school exams ─────────
   { id: "sat",  title: "SAT Practice",  description: "Digital SAT math + reading/writing practice with adaptive difficulty.", type: "standardized", grades: ["10","11","12"], ageMin: 15, ageMax: 18, href: "/quiz", icon: "🎓", keywords: ["sat","digital sat","college board"] },
   { id: "act",  title: "ACT Practice",  description: "Full ACT-style practice across English, Math, Reading, Science.", type: "standardized", grades: ["10","11","12"], ageMin: 15, ageMax: 18, href: "/quiz?exam=act", icon: "📘", keywords: ["act"] },
-  { id: "psat", title: "PSAT Practice", description: "PSAT/NMSQT prep with section scoring.", type: "standardized", grades: ["9","10","11"], ageMin: 14, ageMax: 17, href: "/quiz?exam=psat", icon: "📗", keywords: ["psat","nmsqt"] },
+  { id: "psat", title: "PSAT / NMSQT Practice", description: "PSAT and NMSQT are the same College Board test (Preliminary SAT / National Merit Scholarship Qualifying Test). Adaptive Reading, Writing, and Math practice.", type: "standardized", grades: ["9","10","11"], ageMin: 14, ageMax: 17, href: "/quiz?exam=psat", icon: "📗", keywords: ["psat","nmsqt","national merit","preliminary sat","psat 10","psat 8/9"] },
   { id: "math", title: "Math Practice", description: "Math-only adaptive quiz across all topics.", type: "subject", grades: ["8","9","10","11","12"], ageMin: 13, ageMax: 18, href: "/math", icon: "🧮", keywords: ["math","algebra","geometry","trig"] },
   { id: "english", title: "English / Reading & Writing", description: "Reading comprehension, grammar, and writing practice.", type: "subject", grades: ["8","9","10","11","12"], ageMin: 13, ageMax: 18, href: "/english", icon: "📖", keywords: ["english","reading","writing","grammar"] },
   { id: "vocab", title: "Vocabulary Trainer", description: "Spaced-repetition vocabulary for SAT/ACT.", type: "subject", grades: ["7","8","9","10","11","12"], ageMin: 12, ageMax: 18, href: "/vocab", icon: "🔤", keywords: ["vocab","vocabulary","words"] },
@@ -129,15 +129,39 @@ export function searchCatalog(
     ? AGE_BUCKETS.find(a => a.id === filters.ageBucket)
     : undefined;
 
-  return TEST_CATALOG.filter(item => {
+  const passesFilters = (item: CatalogItem) => {
     if (filters.types && filters.types.length > 0 && !filters.types.includes(item.type)) return false;
     if (gradeIds.length > 0 && !item.grades.some(g => gradeIds.includes(g))) return false;
     if (age && !(item.ageMax >= age.min && item.ageMin <= age.max)) return false;
-    if (!q) return true;
-    const hay = [
-      item.title, item.description, item.type,
-      ...(item.keywords ?? []), ...item.grades,
-    ].join(" ").toLowerCase();
-    return q.split(/\s+/).every(tok => hay.includes(tok));
+    return true;
+  };
+
+  const filtered = TEST_CATALOG.filter(passesFilters);
+  if (!q) return filtered;
+
+  const tokens = q.split(/\s+/).filter(Boolean);
+
+  // Precise pass: title/keyword/id whole-word or exact-keyword match for EVERY token.
+  // This makes "psat" return PSAT only, not anything whose description happens
+  // to mention SAT/PSSA/etc.
+  const wordRe = (tok: string) => new RegExp(`(^|[^a-z0-9])${tok.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}([^a-z0-9]|$)`, "i");
+  const preciseHay = (item: CatalogItem) =>
+    [item.id, item.title, ...(item.keywords ?? [])].join(" ").toLowerCase();
+  const precise = filtered.filter(item => {
+    const hay = preciseHay(item);
+    return tokens.every(tok =>
+      (item.keywords ?? []).some(k => k.toLowerCase() === tok) ||
+      wordRe(tok).test(hay)
+    );
+  });
+  if (precise.length > 0) return precise;
+
+  // Fallback: broader substring search over description too.
+  const broadHay = (item: CatalogItem) =>
+    [item.title, item.description, item.type, ...(item.keywords ?? []), ...item.grades]
+      .join(" ").toLowerCase();
+  return filtered.filter(item => {
+    const hay = broadHay(item);
+    return tokens.every(tok => hay.includes(tok));
   });
 }
