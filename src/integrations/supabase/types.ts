@@ -1766,6 +1766,18 @@ export type Database = {
       }
     }
     Functions: {
+      award_accelerator_credits: {
+        Args: {
+          _base_questions?: number
+          _credit_type: string
+          _days_since_miss?: number
+          _difficulty_rating?: number
+          _metadata?: Json
+          _question_id?: string
+          _source_id?: string
+        }
+        Returns: string
+      }
       delete_email: {
         Args: { message_id: number; queue_name: string }
         Returns: boolean
@@ -1792,6 +1804,13 @@ export type Database = {
         Returns: {
           avatar_emoji: string
           username: string
+        }[]
+      }
+      get_my_email_prefs: {
+        Args: never
+        Returns: {
+          summary_email: string
+          weekly_summary_enabled: boolean
         }[]
       }
       has_role: {
