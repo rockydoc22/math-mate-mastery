@@ -25,6 +25,10 @@ const EnglishQuiz = () => {
     subject: "Reading",
     difficulty: (currentQuestion as any)?.difficultyRating,
     skillId: (currentQuestion as any)?.skill,
+    question: currentQuestion?.question,
+    options: currentQuestion?.options as any,
+    correctAnswer: currentQuestion ? String(currentQuestion.correctAnswer) : undefined,
+    explanation: (currentQuestion as any)?.explanation,
   });
 
   const handleSelectAnswer = (answer: string) => {
@@ -112,6 +116,7 @@ const EnglishQuiz = () => {
             revealedCount={hints.revealedCount}
             allShown={hints.allShown}
             onRevealNext={hints.revealNext}
+            loading={hints.loading}
             compact
           />
         )}

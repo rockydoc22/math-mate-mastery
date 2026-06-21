@@ -526,6 +526,7 @@ const Quiz = () => {
               revealedCount={hints.revealedCount}
               allShown={hints.allShown}
               onRevealNext={hints.revealNext}
+              loading={hints.loading}
               compact
             />
             <ConceptHelpDrawer
