@@ -442,6 +442,7 @@ const APStudy = () => {
             revealedCount={hints.revealedCount}
             allShown={hints.allShown}
             onRevealNext={hints.revealNext}
+            loading={hints.loading}
             compact
           />
         )}
