@@ -53,6 +53,31 @@ npx cap open ios
 
 If the script exits non-zero, do **not** archive — fix the config first.
 
+### Final preflight (run on Mac before every archive)
+
+`./scripts/ios-preflight.sh` runs the full submission checklist and exits non-zero on any blocker:
+
+1. Capacitor config clean (delegates to `verify-ios-prod.sh`)
+2. `dist/` bundle present
+3. `ios/App/` synced
+4. `CFBundleShortVersionString`, `CFBundleVersion`, `CFBundleIdentifier` set; no `NSAllowsArbitraryLoads`
+5. `com.apple.developer.applesignin` entitlement present in `App.entitlements`
+6. 1024×1024 marketing icon exists, correct dimensions, no alpha channel
+7. Screenshots staged (or warn to upload directly in App Store Connect)
+8. `https://40squared.club/privacy` and `/support` return 200
+9. No tracking/ad SDKs in `package.json` (Kids Category requirement)
+10. No raw `window.open(...https...)` or `location.href = "https..."` outside `useParentalGate` / `openExternal`
+
+Run order on your Mac:
+
+```bash
+npm install
+npm run build
+./scripts/ios-preflight.sh        # must exit 0
+npx cap sync ios
+npx cap open ios                  # Xcode → bump build number → Product → Archive
+```
+
 ## Parental gate coverage
 
 Every link that leaves the app is wrapped with `useParentalGate()` (`src/hooks/useParentalGate.tsx`), which renders `<ParentalGate />` and only fires the underlying action after a correct multiplication answer. Gated surfaces:
