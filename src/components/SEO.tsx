@@ -33,8 +33,15 @@ export const SEO = ({
   const resolvedPath =
     path ?? (typeof window !== "undefined" ? window.location.pathname : "/");
   const url = `${SITE_URL}${resolvedPath}`;
+  // Keep final <title> under 60 chars: only append brand suffix if it fits.
+  const BRAND_SUFFIX = " | AlphaOmega";
+  const withSuffix = `${title}${BRAND_SUFFIX}`;
   const fullTitle =
-    title.length > 50 ? title : `${title} | AlphaOmega`;
+    withSuffix.length <= 60
+      ? withSuffix
+      : title.length <= 60
+        ? title
+        : `${title.slice(0, 57)}…`;
 
   return (
     <Helmet>

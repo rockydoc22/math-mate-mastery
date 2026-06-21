@@ -401,12 +401,12 @@ const Home = () => {
           <div className="absolute top-4 right-0 flex flex-col items-end gap-1 max-w-[45%]">
             <div className="flex items-center gap-1">
               <Link to="/leaderboard">
-                <Button variant="ghost" size="sm" className="h-8 w-8 p-0">
+                <Button variant="ghost" size="sm" className="h-8 w-8 p-0" aria-label="Leaderboard">
                   <Trophy className="w-5 h-5" />
                 </Button>
               </Link>
               <Link to="/profile">
-                <Button variant="ghost" size="sm" className="h-8 w-8 p-0">
+                <Button variant="ghost" size="sm" className="h-8 w-8 p-0" aria-label="Your profile">
                   <User className="w-5 h-5" />
                 </Button>
               </Link>
@@ -416,7 +416,7 @@ const Home = () => {
                 {playerAvatar} <span className="font-semibold text-foreground">{playerUsername}</span>
               </p>
               <Link to="/settings">
-                <Button variant="ghost" size="sm" className="h-5 w-5 p-0">
+                <Button variant="ghost" size="sm" className="h-5 w-5 p-0" aria-label="Settings">
                   <Settings className="w-3 h-3 text-muted-foreground" />
                 </Button>
               </Link>
@@ -515,9 +515,9 @@ const Home = () => {
                     AI
                   </span>
                 </div>
-                <h3 className="font-bold text-base leading-tight mb-1">
+                <h2 className="font-bold text-base leading-tight mb-1">
                   Your Personal Concierge Coach
-                </h3>
+                </h2>
                 <p className="text-xs text-muted-foreground leading-snug mb-2">
                   After ~25 questions we diagnose your exact weak spots, build a one-page study guide just for you, and run a Booster Test that drills only what you keep missing. No other prep app does this.
                 </p>
@@ -762,7 +762,7 @@ const Home = () => {
                   <Button size="sm" className="mt-2">Start Today's Practice</Button>
                 </Link>
               </div>
-              <Button variant="ghost" size="icon" onClick={dismissReminder} className="flex-shrink-0">
+              <Button variant="ghost" size="icon" onClick={dismissReminder} className="flex-shrink-0" aria-label="Dismiss study plan reminder">
                 <X className="w-4 h-4" />
               </Button>
             </div>
