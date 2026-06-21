@@ -5,7 +5,6 @@ import {
   AcceleratorType, 
   AcceleratorSummary, 
   summarizeCredits, 
-  calculateCredits,
   PREDICTION_TEST_COMPLETION_BONUS 
 } from "@/utils/acceleratorCalculator";
 
@@ -85,29 +84,15 @@ export const useAcceleratorCredits = () => {
     if (!user) return null;
 
     const baseQuestions = options?.baseQuestions || 1;
-    const { multiplier, credits: earnedCredits } = calculateCredits(type, baseQuestions, {
-      daysSinceMiss: options?.daysSinceMiss,
-      difficultyRating: options?.difficultyRating,
-      isWin: options?.isWin,
+    const { data, error } = await supabase.rpc("award_accelerator_credits", {
+      _credit_type: type,
+      _base_questions: baseQuestions,
+      _question_id: options?.questionId ?? null,
+      _source_id: options?.sourceId ?? null,
+      _days_since_miss: options?.daysSinceMiss ?? null,
+      _difficulty_rating: options?.difficultyRating ?? null,
+      _metadata: options?.metadata ? (JSON.parse(JSON.stringify(options.metadata)) as any) : null,
     });
-
-    // Don't award if multiplier is 0 (e.g., spaced rep reviewed too soon)
-    if (multiplier === 0) return null;
-
-    const { data, error } = await supabase
-      .from("accelerator_credits")
-      .insert([{
-        user_id: user.id,
-        credit_type: type,
-        question_id: options?.questionId || null,
-        source_id: options?.sourceId || null,
-        base_questions: baseQuestions,
-        multiplier,
-        earned_credits: earnedCredits,
-        metadata: options?.metadata ? JSON.parse(JSON.stringify(options.metadata)) : null,
-      }])
-      .select()
-      .single();
 
     if (error) {
       console.error("Error awarding credits:", error);
