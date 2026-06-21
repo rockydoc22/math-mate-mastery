@@ -273,6 +273,10 @@ const Quiz = () => {
     subject: currentQuestion?.type,
     difficulty: currentQuestion?.difficultyRating,
     skillId: (currentQuestion as any)?.skill,
+    question: currentQuestion?.question,
+    options: currentQuestion?.options as any,
+    correctAnswer: currentQuestion ? String(currentQuestion.correctAnswer) : undefined,
+    explanation: (currentQuestion as any)?.explanation,
   });
 
   const handleSelectAnswer = (answer: string) => {
