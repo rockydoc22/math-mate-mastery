@@ -131,6 +131,10 @@ const APStudy = () => {
     subject: hintSubject,
     difficulty: (activeQ as any)?.difficultyRating,
     skillId: activeQ?.skill,
+    question: (activeQ as any)?.question,
+    options: (activeQ as any)?.options,
+    correctAnswer: activeQ ? String((activeQ as any).correctAnswer) : undefined,
+    explanation: (activeQ as any)?.explanation,
   });
 
   if (!subject) {
@@ -438,6 +442,7 @@ const APStudy = () => {
             revealedCount={hints.revealedCount}
             allShown={hints.allShown}
             onRevealNext={hints.revealNext}
+            loading={hints.loading}
             compact
           />
         )}

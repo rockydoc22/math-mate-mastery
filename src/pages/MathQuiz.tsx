@@ -37,6 +37,10 @@ const MathQuiz = () => {
     subject: "Math",
     difficulty: (currentQuestion as any)?.difficultyRating,
     skillId: (currentQuestion as any)?.skill,
+    question: currentQuestion?.question,
+    options: (currentQuestion as any)?.options,
+    correctAnswer: currentQuestion ? String(currentQuestion.correctAnswer) : undefined,
+    explanation: (currentQuestion as any)?.explanation,
   });
 
   const handleSelectAnswer = (answer: string) => {
@@ -174,6 +178,7 @@ const MathQuiz = () => {
               revealedCount={hints.revealedCount}
               allShown={hints.allShown}
               onRevealNext={hints.revealNext}
+              loading={hints.loading}
               compact
             />
           )}
