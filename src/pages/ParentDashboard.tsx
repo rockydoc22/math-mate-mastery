@@ -80,14 +80,11 @@ const ParentDashboard = () => {
 
   const loadEmailPrefs = async () => {
     if (!user) return;
-    const { data } = await supabase
-      .from("profiles")
-      .select("weekly_summary_enabled,summary_email")
-      .eq("id", user.id)
-      .single();
-    if (data) {
-      setWeeklyEnabled(!!(data as any).weekly_summary_enabled);
-      setSummaryEmail((data as any).summary_email || user.email || "");
+    const { data } = await supabase.rpc("get_my_email_prefs");
+    const row = Array.isArray(data) ? data[0] : (data as any);
+    if (row) {
+      setWeeklyEnabled(!!row.weekly_summary_enabled);
+      setSummaryEmail(row.summary_email || user.email || "");
     } else {
       setSummaryEmail(user.email || "");
     }
