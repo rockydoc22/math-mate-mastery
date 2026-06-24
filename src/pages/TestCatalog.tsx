@@ -91,6 +91,28 @@ export default function TestCatalog() {
           />
         </div>
 
+        {/* Quick shortcuts */}
+        <div className="flex flex-wrap gap-1.5">
+          <span className="text-[11px] font-semibold uppercase tracking-wider text-muted-foreground self-center mr-1">
+            Shortcuts:
+          </span>
+          {[
+            { label: "PSAT / NMSQT", q: "psat" },
+            { label: "SAT", q: "sat" },
+            { label: "ACT", q: "act" },
+            { label: "AP", q: "ap" },
+            { label: "GED", q: "ged" },
+          ].map(s => (
+            <button
+              key={s.q}
+              onClick={() => { setQ(s.q); setTypes([]); setGradeBucket(""); setAgeBucket(""); setTimeout(sync, 0); }}
+              className="text-xs px-2.5 py-1 rounded-full border border-border text-muted-foreground hover:border-primary/40 hover:text-foreground transition-colors"
+            >
+              {s.label}
+            </button>
+          ))}
+        </div>
+
         {/* Filters */}
         <Card className="p-3 space-y-3">
           <div>
