@@ -121,7 +121,29 @@ export function searchCatalog(
   query: string,
   filters: { types?: TestType[]; gradeBucket?: string; ageBucket?: string } = {},
 ): CatalogItem[] {
-  const q = query.trim().toLowerCase();
+  const rawQ = query.trim().toLowerCase();
+  // Synonym + typo normalization. Common misspellings/aliases map to a
+  // canonical token so "nmst", "psatnmsqt", "p sat" all hit PSAT.
+  const SYNONYMS: Record<string, string> = {
+    nmst: "nmsqt",
+    nmsq: "nmsqt",
+    psatnmsqt: "psat",
+    "psat/nmsqt": "psat",
+    "psat-nmsqt": "psat",
+    preliminary: "psat",
+    merit: "nmsqt",
+    "national-merit": "nmsqt",
+  };
+  // If the query is a known alias for PSAT/NMSQT, short-circuit to the
+  // PSAT card so students never see unrelated tests.
+  const PSAT_ALIASES = new Set(["psat", "nmsqt", "nmst", "nmsq", "psatnmsqt", "psat/nmsqt", "psat-nmsqt", "preliminary sat", "national merit"]);
+  if (PSAT_ALIASES.has(rawQ)) {
+    return TEST_CATALOG.filter(i => i.id === "psat");
+  }
+  const q = rawQ
+    .split(/\s+/)
+    .map(t => SYNONYMS[t] ?? t)
+    .join(" ");
   const gradeIds = filters.gradeBucket
     ? GRADE_BUCKETS.find(g => g.id === filters.gradeBucket)?.grades ?? []
     : [];
@@ -141,6 +163,23 @@ export function searchCatalog(
 
   const tokens = q.split(/\s+/).filter(Boolean);
 
+  // 1-char typo tolerance (Levenshtein ≤ 1) used as a fallback only when
+  // exact/word matches yield zero results.
+  const lev1 = (a: string, b: string): boolean => {
+    if (a === b) return true;
+    if (Math.abs(a.length - b.length) > 1) return false;
+    let i = 0, j = 0, edits = 0;
+    while (i < a.length && j < b.length) {
+      if (a[i] === b[j]) { i++; j++; continue; }
+      if (++edits > 1) return false;
+      if (a.length > b.length) i++;
+      else if (b.length > a.length) j++;
+      else { i++; j++; }
+    }
+    if (i < a.length || j < b.length) edits++;
+    return edits <= 1;
+  };
+
   // Precise pass: title/keyword/id whole-word or exact-keyword match for EVERY token.
   // This makes "psat" return PSAT only, not anything whose description happens
   // to mention SAT/PSSA/etc.
@@ -155,6 +194,19 @@ export function searchCatalog(
     );
   });
   if (precise.length > 0) return precise;
+
+  // Typo-tolerant pass against ids/titles/keywords only (still scoped,
+  // not a broad description search) — catches "psta", "nmsqr", etc.
+  const fuzzyTokens = (item: CatalogItem) =>
+    [item.id, ...item.title.toLowerCase().split(/[^a-z0-9]+/), ...(item.keywords ?? []).map(k => k.toLowerCase())]
+      .filter(Boolean);
+  const fuzzy = filtered.filter(item => {
+    const toks = fuzzyTokens(item);
+    return tokens.every(tok =>
+      tok.length >= 4 && toks.some(t => lev1(t, tok))
+    );
+  });
+  if (fuzzy.length > 0) return fuzzy;
 
   // Fallback: broader substring search over description too.
   const broadHay = (item: CatalogItem) =>
