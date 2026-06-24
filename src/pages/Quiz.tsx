@@ -557,7 +557,10 @@ const Quiz = () => {
         {showResult && selectedAnswer && selectedAnswer !== currentQuestion.correctAnswer && (
           <WrongAnswerCoach
             question={currentQuestion.question}
-            options={(currentQuestion.options || []).map((t: string, i: number) => ({ letter: String.fromCharCode(65 + i), text: t }))}
+            options={((currentQuestion.options as any[]) || []).map((t, i) => ({
+              letter: String.fromCharCode(65 + i),
+              text: typeof t === "string" ? t : (t?.text ?? String(t)),
+            }))}
             correctAnswer={String(currentQuestion.correctAnswer)}
             studentAnswer={String(selectedAnswer)}
             skill={(currentQuestion as any).skill}
