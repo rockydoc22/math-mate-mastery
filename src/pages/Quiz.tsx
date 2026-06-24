@@ -31,6 +31,7 @@ import { useMistakeCoach } from "@/hooks/useMistakeCoach";
 import { MomentumMeter } from "@/components/MomentumMeter";
 import { MistakeCoachCard } from "@/components/MistakeCoachCard";
 import ExplainBack from "@/components/learning/ExplainBack";
+import { WrongAnswerCoach } from "@/components/WrongAnswerCoach";
 import { recordAttempt } from "@/lib/recordAttempt";
 import { useExamType } from "@/hooks/useExamType";
 import { useProgressiveHints } from "@/hooks/useProgressiveHints";
@@ -551,6 +552,17 @@ const Quiz = () => {
             userAnswer={String(selectedAnswer ?? "")}
             domain={currentQuestion.type}
             skill={(currentQuestion as any).skill}
+          />
+        )}
+        {showResult && selectedAnswer && selectedAnswer !== currentQuestion.correctAnswer && (
+          <WrongAnswerCoach
+            question={currentQuestion.question}
+            options={(currentQuestion.options || []).map((t: string, i: number) => ({ letter: String.fromCharCode(65 + i), text: t }))}
+            correctAnswer={String(currentQuestion.correctAnswer)}
+            studentAnswer={String(selectedAnswer)}
+            skill={(currentQuestion as any).skill}
+            domain={currentQuestion.type}
+            difficulty={(currentQuestion as any).difficulty}
           />
         )}
         <div className="flex gap-3">
