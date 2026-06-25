@@ -19,6 +19,7 @@ const EnglishQuiz = lazy(() => import("@/pages/EnglishQuiz"));
 const Admin = lazy(() => import("@/pages/Admin"));
 const AdminSeedQuestions = lazy(() => import("@/pages/AdminSeedQuestions"));
 const AdminBulkGenerate = lazy(() => import("@/pages/AdminBulkGenerate"));
+const AdminBulkJobs = lazy(() => import("@/pages/AdminBulkJobs"));
 const Leaderboard = lazy(() => import("@/pages/Leaderboard"));
 const StudyMode = lazy(() => import("@/pages/StudyMode"));
 const ProblemsByTopic = lazy(() => import("@/pages/ProblemsByTopic"));
