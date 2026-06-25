@@ -472,6 +472,63 @@ export type Database = {
         }
         Relationships: []
       }
+      bulk_generate_jobs: {
+        Row: {
+          batches_run: number
+          completed_at: string | null
+          created_at: string
+          failures: number
+          id: string
+          inserted: number
+          label: string
+          last_error: string | null
+          preset_key: string
+          priority: number
+          spec: Json
+          started_at: string | null
+          status: string
+          target: number
+          total_runtime_ms: number
+          updated_at: string
+        }
+        Insert: {
+          batches_run?: number
+          completed_at?: string | null
+          created_at?: string
+          failures?: number
+          id?: string
+          inserted?: number
+          label: string
+          last_error?: string | null
+          preset_key: string
+          priority?: number
+          spec: Json
+          started_at?: string | null
+          status?: string
+          target: number
+          total_runtime_ms?: number
+          updated_at?: string
+        }
+        Update: {
+          batches_run?: number
+          completed_at?: string | null
+          created_at?: string
+          failures?: number
+          id?: string
+          inserted?: number
+          label?: string
+          last_error?: string | null
+          preset_key?: string
+          priority?: number
+          spec?: Json
+          started_at?: string | null
+          status?: string
+          target?: number
+          total_runtime_ms?: number
+          updated_at?: string
+        }
+        Relationships: []
+      }
       classroom_members: {
         Row: {
           classroom_id: string
