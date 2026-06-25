@@ -153,6 +153,7 @@ const AppRoutes = () => (
       <Route path="/admin" element={<ProtectedRoute><Admin /></ProtectedRoute>} />
       <Route path="/admin/seed-questions" element={<ProtectedRoute><AdminSeedQuestions /></ProtectedRoute>} />
       <Route path="/admin/bulk-generate" element={<ProtectedRoute><AdminBulkGenerate /></ProtectedRoute>} />
+      <Route path="/admin/bulk-jobs" element={<ProtectedRoute><AdminBulkJobs /></ProtectedRoute>} />
       <Route path="/auth" element={<Auth />} />
       <Route path="/auth/callback" element={<AuthCallback />} />
       <Route path="/leaderboard" element={<Leaderboard />} />
