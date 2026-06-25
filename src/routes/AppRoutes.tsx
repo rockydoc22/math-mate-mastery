@@ -19,6 +19,7 @@ const EnglishQuiz = lazy(() => import("@/pages/EnglishQuiz"));
 const Admin = lazy(() => import("@/pages/Admin"));
 const AdminSeedQuestions = lazy(() => import("@/pages/AdminSeedQuestions"));
 const AdminBulkGenerate = lazy(() => import("@/pages/AdminBulkGenerate"));
+const AdminBulkJobs = lazy(() => import("@/pages/AdminBulkJobs"));
 const Leaderboard = lazy(() => import("@/pages/Leaderboard"));
 const StudyMode = lazy(() => import("@/pages/StudyMode"));
 const ProblemsByTopic = lazy(() => import("@/pages/ProblemsByTopic"));
@@ -152,6 +153,7 @@ const AppRoutes = () => (
       <Route path="/admin" element={<ProtectedRoute><Admin /></ProtectedRoute>} />
       <Route path="/admin/seed-questions" element={<ProtectedRoute><AdminSeedQuestions /></ProtectedRoute>} />
       <Route path="/admin/bulk-generate" element={<ProtectedRoute><AdminBulkGenerate /></ProtectedRoute>} />
+      <Route path="/admin/bulk-jobs" element={<ProtectedRoute><AdminBulkJobs /></ProtectedRoute>} />
       <Route path="/auth" element={<Auth />} />
       <Route path="/auth/callback" element={<AuthCallback />} />
       <Route path="/leaderboard" element={<Leaderboard />} />
