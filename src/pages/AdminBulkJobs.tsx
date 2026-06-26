@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import { supabase } from "@/integrations/supabase/client";
 import { useAuth } from "@/hooks/useAuth";
@@ -48,6 +48,32 @@ function formatDuration(ms: number) {
   return `${h}h ${m % 60}m`;
 }
 
+// Rolling-window throughput per job. We sample (timestamp, inserted) on each
+// poll and keep the last WINDOW_MS of samples to estimate items/sec recently.
+const WINDOW_MS = 15 * 60 * 1000; // 15 min of recent activity
+type Sample = { t: number; inserted: number };
+
+function rateRange(samples: Sample[]): { mid: number; lo: number; hi: number; n: number } {
+  if (!samples || samples.length < 2) return { mid: 0, lo: 0, hi: 0, n: samples?.length ?? 0 };
+  // Per-interval rates (items / sec) between consecutive samples that show progress.
+  const rates: number[] = [];
+  for (let i = 1; i < samples.length; i++) {
+    const dt = (samples[i].t - samples[i - 1].t) / 1000;
+    const di = samples[i].inserted - samples[i - 1].inserted;
+    if (dt > 0 && di >= 0) rates.push(di / dt);
+  }
+  if (rates.length === 0) return { mid: 0, lo: 0, hi: 0, n: samples.length };
+  const sorted = [...rates].sort((a, b) => a - b);
+  const q = (p: number) => sorted[Math.min(sorted.length - 1, Math.max(0, Math.floor(p * (sorted.length - 1))))];
+  // Overall recent rate uses first/last sample so idle gaps count as slow.
+  const first = samples[0];
+  const last = samples[samples.length - 1];
+  const dtAll = (last.t - first.t) / 1000;
+  const diAll = last.inserted - first.inserted;
+  const mid = dtAll > 0 ? Math.max(0, diAll / dtAll) : 0;
+  return { mid, lo: q(0.25), hi: q(0.75), n: rates.length };
+}
+
 function statusVariant(s: Job["status"]) {
   switch (s) {
     case "completed": return "default" as const;
@@ -63,6 +89,8 @@ export default function AdminBulkJobs() {
   const [jobs, setJobs] = useState<Job[]>([]);
   const [loading, setLoading] = useState(true);
   const [ticking, setTicking] = useState(false);
+  // Per-job rolling samples kept across polls (not persisted).
+  const samplesRef = useRef<Record<string, Sample[]>>({});
 
   useEffect(() => {
     (async () => {
@@ -80,7 +108,19 @@ export default function AdminBulkJobs() {
       .order("priority", { ascending: true })
       .order("created_at", { ascending: true });
     if (error) toast.error(error.message);
-    setJobs((data as Job[]) ?? []);
+    const list = (data as Job[]) ?? [];
+    const now = Date.now();
+    const next = samplesRef.current;
+    for (const j of list) {
+      const arr = (next[j.id] ||= []);
+      const last = arr[arr.length - 1];
+      if (!last || last.inserted !== j.inserted || now - last.t > 30_000) {
+        arr.push({ t: now, inserted: j.inserted });
+      }
+      // Trim old samples beyond the window (keep at least 2).
+      while (arr.length > 2 && now - arr[0].t > WINDOW_MS) arr.shift();
+    }
+    setJobs(list);
     setLoading(false);
   };
 
@@ -198,8 +238,20 @@ export default function AdminBulkJobs() {
                 {list.map((j) => {
                   const pct = j.target > 0 ? Math.min(100, Math.round((j.inserted / j.target) * 100)) : 0;
                   const remaining = Math.max(0, j.target - j.inserted);
-                  const avgPerItem = j.inserted > 0 && j.total_runtime_ms > 0 ? j.total_runtime_ms / j.inserted : 0;
-                  const etaMs = avgPerItem > 0 ? avgPerItem * remaining : 0;
+                  // Recent throughput from rolling samples, with confidence range.
+                  const samples = samplesRef.current[j.id] ?? [];
+                  const { mid, lo, hi, n } = rateRange(samples);
+                  // Fallback to lifetime average if no recent data yet.
+                  const avgItemsPerSec = j.inserted > 0 && j.total_runtime_ms > 0
+                    ? j.inserted / (j.total_runtime_ms / 1000)
+                    : 0;
+                  const useRecent = mid > 0;
+                  const etaMid = useRecent && mid > 0 ? (remaining / mid) * 1000
+                    : avgItemsPerSec > 0 ? (remaining / avgItemsPerSec) * 1000 : 0;
+                  const etaLo = hi > 0 ? (remaining / hi) * 1000 : etaMid;
+                  const etaHi = lo > 0 ? (remaining / lo) * 1000 : etaMid;
+                  const showRange = useRecent && n >= 2 && hi > lo && remaining > 0;
+                  const confidence = n >= 4 ? "high" : n >= 2 ? "med" : "low";
                   return (
                     <Card key={j.id} className="p-3">
                       <div className="flex items-start justify-between gap-2 mb-2">
@@ -210,8 +262,20 @@ export default function AdminBulkJobs() {
                       <div className="mt-2 grid grid-cols-3 gap-2 text-xs text-muted-foreground">
                         <div><span className="text-foreground font-medium">{j.inserted}</span> / {j.target}</div>
                         <div>{j.batches_run} batches</div>
-                        <div className="flex items-center gap-1"><Clock className="h-3 w-3" />ETA {formatDuration(etaMs)}</div>
+                        <div className="flex items-center gap-1" title={useRecent ? `Recent rate ${(mid * 60).toFixed(1)} items/min (${n} samples, ${confidence} confidence)` : "Using lifetime average"}>
+                          <Clock className="h-3 w-3" />
+                          {remaining === 0 ? "Done" : showRange
+                            ? <>ETA {formatDuration(etaLo)}–{formatDuration(etaHi)}</>
+                            : <>ETA {formatDuration(etaMid)}{useRecent ? "" : "*"}</>}
+                        </div>
                       </div>
+                      {remaining > 0 && (
+                        <div className="mt-1 text-[10px] text-muted-foreground">
+                          {useRecent
+                            ? <>~{(mid * 60).toFixed(1)} items/min recent · {confidence} confidence</>
+                            : <>* lifetime average — recent rate not yet sampled</>}
+                        </div>
+                      )}
                       {j.last_error && (
                         <div className="mt-2 text-xs text-destructive line-clamp-2" title={j.last_error}>
                           {j.failures} fail{j.failures === 1 ? "" : "s"} · {j.last_error}
