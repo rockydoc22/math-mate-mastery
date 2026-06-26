@@ -387,12 +387,20 @@ const Admin = () => {
             </Link>
             <h1 className="text-2xl font-bold">Admin Dashboard</h1>
           </div>
-          <Link to="/demo">
-            <Button variant="outline" size="sm" className="gap-2">
-              <GraduationCap className="w-4 h-4" />
-              Demo Mode
-            </Button>
-          </Link>
+          <div className="flex items-center gap-2">
+            <Link to="/admin/bulk-jobs">
+              <Button variant="outline" size="sm">Bulk jobs</Button>
+            </Link>
+            <Link to="/admin/bulk-generate">
+              <Button variant="outline" size="sm">Bulk generate</Button>
+            </Link>
+            <Link to="/demo">
+              <Button variant="outline" size="sm" className="gap-2">
+                <GraduationCap className="w-4 h-4" />
+                Demo Mode
+              </Button>
+            </Link>
+          </div>
         </div>
 
         <Tabs defaultValue="users" className="w-full">
