@@ -51,8 +51,8 @@ export const EXAM_CONFIGS: Record<ExamType, ExamConfig> = {
     icon: '📐',
     color: 'primary',
     branding: {
-      logoText: '40²',
-      logoKatex: '40^2',
+      logoText: 'AΩ',
+      logoKatex: 'A\\Omega',
       appTitle: '40² SAT Prep',
       heroTagline: 'Free SAT prep that actually works',
       mathTaglineKatex: '40^2 \\times \\left(\\pi + \\sum_{k=1}^{\\infty} \\frac{1}{k^2} - e\\right)',
@@ -88,8 +88,8 @@ export const EXAM_CONFIGS: Record<ExamType, ExamConfig> = {
     icon: '🎯',
     color: 'blue-500',
     branding: {
-      logoText: '39²+i²',
-      logoKatex: '39^2 + i^2',
+      logoText: 'AΩ',
+      logoKatex: 'A\\Omega',
       appTitle: 'National Merit Starts Here',
       heroTagline: 'Free PSAT prep — chase the 1520',
       mathTaglineKatex: '39^2 + i^2 = 1520',
@@ -126,8 +126,8 @@ export const EXAM_CONFIGS: Record<ExamType, ExamConfig> = {
     icon: '🎓',
     color: 'emerald-500',
     branding: {
-      logoText: 'Σ8',
-      logoKatex: '\\Sigma 8',
+      logoText: 'AΩ',
+      logoKatex: 'A\\Omega',
       appTitle: 'ACT',
       heroTagline: 'The sum of everything — destination 36',
       mathTaglineKatex: '\\sum_{k=1}^{8} k',
