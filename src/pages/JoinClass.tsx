@@ -42,47 +42,22 @@ const JoinClass = () => {
     if (!user || !code.trim()) return;
     setLoading(true);
 
-    // Find classroom by code
-    const { data: classroom, error: findErr } = await supabase
-      .from("classrooms")
-      .select("id, name")
-      .eq("class_code", code.trim().toUpperCase())
-      .maybeSingle();
-
-    if (findErr || !classroom) {
-      toast({ title: "Not found", description: "No class with that code. Check with your teacher.", variant: "destructive" });
-      setLoading(false);
-      return;
-    }
-
-    // Check if already joined
-    const { data: existing } = await supabase
-      .from("classroom_members")
-      .select("id")
-      .eq("classroom_id", classroom.id)
-      .eq("user_id", user.id)
-      .maybeSingle();
-
-    if (existing) {
-      toast({ title: "Already joined", description: `You're already in ${classroom.name}` });
-      setLoading(false);
-      return;
-    }
-
-    // Join
-    const { error } = await supabase.from("classroom_members").insert({
-      classroom_id: classroom.id,
-      user_id: user.id,
-      role: "student",
+    // Find + join atomically via secure RPC (students don't need read access to class_code)
+    const { data, error } = await supabase.rpc('join_classroom_by_code', {
+      _code: code.trim().toUpperCase(),
     });
-
-    if (error) {
-      toast({ title: "Error", description: error.message, variant: "destructive" });
-    } else {
-      toast({ title: "Joined! 🎉", description: `Welcome to ${classroom.name}` });
-      setCode("");
-      loadJoinedClasses();
+    const row = Array.isArray(data) ? data[0] : data;
+    if (error || !row) {
+      const msg = (error?.message || '').includes('not_found')
+        ? "No class with that code. Check with your teacher."
+        : (error?.message || "Couldn't join that class.");
+      toast({ title: "Not found", description: msg, variant: "destructive" });
+      setLoading(false);
+      return;
     }
+    toast({ title: "Joined! 🎉", description: `Welcome to ${row.name}` });
+    setCode("");
+    loadJoinedClasses();
     setLoading(false);
   };
 
