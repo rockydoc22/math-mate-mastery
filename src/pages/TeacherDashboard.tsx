@@ -61,17 +61,22 @@ const TeacherDashboard = () => {
     if (!user) return;
     setLoading(true);
 
-    // Load classrooms
+    // Load classrooms (class_code retrieved via secure RPC)
     const { data: classData } = await supabase
       .from('classrooms')
-      .select('*')
+      .select('id, name, description, created_at')
       .eq('teacher_id', user.id)
       .order('created_at', { ascending: false });
 
-    const classrooms: ClassRoom[] = (classData || []).map((c: any) => ({
-      id: c.id, name: c.name, class_code: c.class_code,
-      description: c.description || '', created_at: c.created_at,
-    }));
+    const classrooms: ClassRoom[] = await Promise.all(
+      (classData || []).map(async (c: any) => {
+        const { data: code } = await supabase.rpc('get_classroom_code', { _classroom_id: c.id });
+        return {
+          id: c.id, name: c.name, class_code: (code as string) || '',
+          description: c.description || '', created_at: c.created_at,
+        };
+      })
+    );
 
     // Get member counts
     for (const cls of classrooms) {
