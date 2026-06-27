@@ -36,6 +36,7 @@ const EnglishQuiz = () => {
   };
 
   const handleSubmit = () => {
+    if (!selectedAnswer || showResult) return;
     setShowResult(true);
     if (selectedAnswer === currentQuestion.correctAnswer) {
       setScore(score + 1);
