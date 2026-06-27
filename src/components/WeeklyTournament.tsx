@@ -64,14 +64,14 @@ export function WeeklyTournament() {
       // Fetch profiles for these users
       const userIds = [...userMap.keys()];
       const { data: profiles } = await supabase
-        .from("profiles")
-        .select("id, username, avatar_emoji, show_on_leaderboards")
+        .from("profiles_public")
+        .select("id, username, avatar_emoji")
         .in("id", userIds);
 
       const results: TournamentEntry[] = [];
       for (const [userId, stats] of userMap.entries()) {
         const profile = profiles?.find(p => p.id === userId);
-        if (profile && profile.show_on_leaderboards) {
+        if (profile) {
           results.push({
             user_id: userId,
             username: profile.username,
