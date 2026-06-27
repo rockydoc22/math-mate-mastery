@@ -36,6 +36,7 @@ const EnglishQuiz = () => {
   };
 
   const handleSubmit = () => {
+    if (!selectedAnswer || showResult) return;
     setShowResult(true);
     if (selectedAnswer === currentQuestion.correctAnswer) {
       setScore(score + 1);
@@ -125,9 +126,9 @@ const EnglishQuiz = () => {
           {!showResult ? (
             <Button
               onClick={handleSubmit}
-              disabled={!selectedAnswer}
               size="lg"
               className="w-full"
+              aria-disabled={!selectedAnswer}
             >
               Submit Answer
             </Button>

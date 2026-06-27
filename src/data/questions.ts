@@ -139,9 +139,10 @@ for (const q of questionsWithoutImages) {
 }
 
 // Cap difficulty ratings at 10 (remove levels 11-13)
-// Also filter out trivially easy questions (difficulty 1-2) that are not SAT level
-// SAT questions start at difficulty 3+
-const MIN_SAT_DIFFICULTY = 3;
+// SAT is a high-school assessment — filter out anything rated below
+// 9th-grade level (difficulty 5+) such as elementary perimeter, rounding,
+// or basic decimal addition problems that don't match real SAT material.
+const MIN_SAT_DIFFICULTY = 5;
 
 // Fix any questions that have duplicate option values
 function fixDuplicateOptions(q: Question): Question {

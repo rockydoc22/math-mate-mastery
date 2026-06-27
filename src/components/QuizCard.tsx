@@ -122,8 +122,12 @@ export const QuizCard = ({ question: rawQuestion, selectedAnswer, onSelectAnswer
 
               return (
                 <button
-                  key={option.letter}
-                  onClick={() => !showResult && handleSelect(option.letter)}
+                  key={`${question.id}-${option.letter}`}
+                  onClick={(e) => {
+                    if (showResult) return;
+                    handleSelect(option.letter);
+                    (e.currentTarget as HTMLButtonElement).blur();
+                  }}
                   disabled={showResult}
                   className={`
                     w-full p-3 sm:p-4 rounded-lg border-2 text-left transition-all

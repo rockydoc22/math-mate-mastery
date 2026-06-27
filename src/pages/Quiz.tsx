@@ -285,6 +285,7 @@ const Quiz = () => {
   };
 
   const handleSubmit = async () => {
+    if (!selectedAnswer || showResult) return;
     setShowResult(true);
     const isCorrect = selectedAnswer === currentQuestion.correctAnswer;
     if (isCorrect) {
@@ -572,9 +573,9 @@ const Quiz = () => {
           {!showResult ? (
             <Button
               onClick={handleSubmit}
-              disabled={!selectedAnswer}
               size="lg"
               className="w-full"
+              aria-disabled={!selectedAnswer}
             >
               Submit Answer
             </Button>

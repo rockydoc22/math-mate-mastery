@@ -17,6 +17,7 @@ import { ShareAppButton } from "@/components/ShareAppButton";
 import { SEO } from "@/components/SEO";
 import { toast } from "@/hooks/use-toast";
 import HowFamiliesUse from "@/components/landing/HowFamiliesUse";
+import { PreviewQuiz } from "@/components/landing/PreviewQuiz";
 
 const features = [
   {
@@ -124,16 +125,21 @@ export const LandingPage = () => {
             </div>
           </div>
 
-          {/* Search / Find a test */}
-          <Link to="/tests" className="block">
-            <div className="flex items-center gap-2 px-4 py-3 rounded-xl border border-border bg-card hover:border-primary/50 hover:shadow-sm transition-all text-left">
-              <Search className="w-4 h-4 text-muted-foreground shrink-0" />
-              <span className="text-sm text-muted-foreground flex-1">
-                Search tests, courses & PDFs (e.g. "prealgebra")
-              </span>
-              <ArrowRight className="w-4 h-4 text-muted-foreground" />
-            </div>
-          </Link>
+          {/* Search / Find a test — primary CTA */}
+          <div className="text-left space-y-2">
+            <label htmlFor="landing-search" className="block text-sm font-semibold text-foreground">
+              Find your test or subject
+            </label>
+            <Link to="/tests" className="block" id="landing-search">
+              <div className="flex items-center gap-3 px-5 py-4 rounded-2xl border-2 border-primary/40 bg-card hover:border-primary hover:shadow-lg shadow-md transition-all text-left">
+                <Search className="w-5 h-5 text-primary shrink-0" />
+                <span className="text-base text-foreground flex-1">
+                  Search tests, courses & PDFs (e.g. "PSAT", "prealgebra")
+                </span>
+                <ArrowRight className="w-5 h-5 text-primary" />
+              </div>
+            </Link>
+          </div>
 
           {/* Subheadline */}
           <p className="text-base text-muted-foreground leading-relaxed max-w-sm mx-auto">
@@ -143,13 +149,13 @@ export const LandingPage = () => {
 
           {/* Primary CTAs */}
           <div className="flex flex-col items-center gap-3 pt-2">
-            <Link to="/auth" className="w-full max-w-xs">
+            <Link to="/auth?mode=signup" className="w-full max-w-xs">
               <Button size="lg" className="w-full gap-2 h-14 text-base font-semibold shadow-md">
                 <Sparkles className="w-5 h-5" />
                 I'm new — let's get started
               </Button>
             </Link>
-            <Link to="/auth">
+            <Link to="/auth?mode=signin">
               <Button variant="ghost" className="text-muted-foreground text-sm">
                 I already have an account — Log in
               </Button>
@@ -225,6 +231,8 @@ export const LandingPage = () => {
 
       <HowFamiliesUse />
 
+      <PreviewQuiz />
+
       {/* ═══════════ Everything You Get ═══════════ */}
       <section className="px-6 py-10 bg-muted/30">
         <div className="max-w-lg mx-auto text-center">
@@ -258,7 +266,7 @@ export const LandingPage = () => {
           <p className="text-sm text-muted-foreground">
             Tell us your test and we'll build a personalized plan in 30 seconds.
           </p>
-          <Link to="/auth">
+          <Link to="/auth?mode=signup">
             <Button size="lg" className="gap-2 mt-2">
               Get Started Free
               <ArrowRight className="w-4 h-4" />
@@ -296,7 +304,7 @@ export const LandingPage = () => {
       {/* ═══════════ Footer ═══════════ */}
       <footer className="px-6 py-6 border-t border-border">
         <div className="max-w-lg mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-muted-foreground">
-          <span>© 2025 AlphaOmega</span>
+          <span>© 2026 AlphaOmega</span>
           <div className="flex items-center gap-3">
             <ShareAppButton />
             <InstallAppButton />

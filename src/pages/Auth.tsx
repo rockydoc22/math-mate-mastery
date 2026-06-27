@@ -45,8 +45,14 @@ const Auth = () => {
   // Immediately check URL for reset mode on first render
   const isResetMode = searchParams.get("reset") === "true" || 
     window.location.hash.includes("type=recovery");
+  const initialModeParam = searchParams.get("mode");
+  const initialMode: AuthMode = isResetMode
+    ? "resetPassword"
+    : initialModeParam === "signup"
+      ? "signUp"
+      : "signIn";
   
-  const [mode, setMode] = useState<AuthMode>(isResetMode ? "resetPassword" : "signIn");
+  const [mode, setMode] = useState<AuthMode>(initialMode);
   const [loading, setLoading] = useState(false);
   const [googleLoading, setGoogleLoading] = useState(false);
   const [showPassword, setShowPassword] = useState(false);
@@ -247,7 +253,7 @@ const Auth = () => {
 
   const getTitle = () => {
     switch (mode) {
-      case "signUp": return "Create your account to start grinding";
+      case "signUp": return "Create your account to start practicing";
       case "magicLink": return "Sign in with magic link";
       case "resetPassword": return "Enter your new password";
       default: return "Sign in to continue your journey";
@@ -280,8 +286,8 @@ const Auth = () => {
       <div className="w-full max-w-md space-y-8 animate-in fade-in duration-500">
         <div className="text-center">
           <div className="flex justify-center">
-            <div className="px-6 py-4 rounded-2xl bg-gradient-to-br from-primary to-accent">
-              <span className="text-3xl font-bold text-primary-foreground">40²</span>
+            <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-primary to-accent flex items-center justify-center shadow-lg">
+              <span className="font-bold text-primary-foreground font-mono text-lg">AΩ</span>
             </div>
           </div>
         </div>

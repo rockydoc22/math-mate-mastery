@@ -48,6 +48,7 @@ const MathQuiz = () => {
   };
 
   const handleSubmit = () => {
+    if (!selectedAnswer || showResult) return;
     setShowResult(true);
     const isCorrect = selectedAnswer === currentQuestion.correctAnswer;
     const isFlagged = flaggedQuestions.has(currentQuestionIndex);
@@ -187,9 +188,9 @@ const MathQuiz = () => {
             {!showResult ? (
               <Button
                 onClick={handleSubmit}
-                disabled={!selectedAnswer}
                 size="lg"
                 className="w-full"
+                aria-disabled={!selectedAnswer}
               >
                 Submit Answer
               </Button>
