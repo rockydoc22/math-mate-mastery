@@ -1855,6 +1855,7 @@ export type Database = {
           username: string
         }[]
       }
+      get_classroom_code: { Args: { _classroom_id: string }; Returns: string }
       get_home_dashboard_stats: { Args: { p_user_id: string }; Returns: Json }
       get_leaderboard_profile: {
         Args: { profile_id: string }
@@ -1888,6 +1889,13 @@ export type Database = {
       is_room_participant: {
         Args: { _room_id: string; _user_id: string }
         Returns: boolean
+      }
+      join_classroom_by_code: {
+        Args: { _code: string }
+        Returns: {
+          id: string
+          name: string
+        }[]
       }
       move_to_dlq: {
         Args: {
