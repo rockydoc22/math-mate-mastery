@@ -126,9 +126,9 @@ const EnglishQuiz = () => {
           {!showResult ? (
             <Button
               onClick={handleSubmit}
-              disabled={!selectedAnswer}
               size="lg"
               className="w-full"
+              aria-disabled={!selectedAnswer}
             >
               Submit Answer
             </Button>
