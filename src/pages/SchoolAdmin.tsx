@@ -54,10 +54,16 @@ const SchoolAdmin = () => {
     // Get all classrooms (admin can see all)
     const { data: allClasses } = await supabase
       .from("classrooms")
-      .select("id, name, class_code, teacher_id")
+      .select("id, name, teacher_id")
       .order("created_at", { ascending: false });
 
-    const classrooms = allClasses || [];
+    const classroomsBase = allClasses || [];
+    const classrooms = await Promise.all(
+      classroomsBase.map(async (c: any) => {
+        const { data: code } = await supabase.rpc('get_classroom_code', { _classroom_id: c.id });
+        return { ...c, class_code: (code as string) || '—' };
+      })
+    );
 
     // Get teacher names
     const teacherIds = [...new Set(classrooms.map((c) => c.teacher_id))];
