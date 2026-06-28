@@ -1,5 +1,6 @@
 import { useEffect, useState, useMemo, useCallback } from "react";
 import { supabase } from "@/integrations/supabase/client";
+import { fetchProtectedJson } from "@/lib/protectedAsset";
 
 export interface HintTemplate {
   skill_id: string;
@@ -20,8 +21,7 @@ let cachePromise: Promise<HintTemplate[]> | null = null;
 async function loadHintTemplates(): Promise<HintTemplate[]> {
   if (cache) return cache;
   if (cachePromise) return cachePromise;
-  cachePromise = fetch("/data/tutor_and_hint_system.json")
-    .then((r) => r.json())
+  cachePromise = fetchProtectedJson<{ hint_templates?: HintTemplate[] }>("ai/tutor_and_hint_system.json")
     .then((d) => {
       cache = d.hint_templates || [];
       return cache!;
