@@ -1,68 +1,68 @@
 [
   {
-    "id": "AP_German_1",
-    "question": "Lesen Sie den folgenden Satz und wählen Sie die beste Ergänzung:\n\nDie Familie Müller hat beschlossen, dieses Jahr nach Spanien zu fahren, _______ sie dort noch nie waren.",
+    "id": "AP_German_27",
+    "question": "Wer schrieb die 'Die Leiden des jungen Werthers'?",
     "choices": {
-      "A": "weil",
-      "B": "obwohl",
-      "C": "damit",
-      "D": "trotzdem"
+      "A": "Friedrich Schiller",
+      "B": "Hermann Hesse",
+      "C": "Thomas Mann",
+      "D": "Johann Wolfgang von Goethe"
     },
-    "answer": "A",
+    "answer": "D",
     "difficulty": 6,
-    "explanation": "'Weil' (because) introduces a causal subordinate clause explaining why they chose Spain. 'Obwohl' (although) and 'trotzdem' (nevertheless) express concession; 'damit' (so that) expresses purpose."
+    "explanation": "Johann Wolfgang von Goethe ist der Autor dieses berühmten Romans der Sturm-und-Drang-Periode."
   },
   {
-    "id": "AP_German_2",
-    "question": "Welches Wort passt am besten in die Lücke?\n\nDie Schüler haben _______ auf die Prüfung vorbereitet, dass sie alle bestanden haben.",
+    "id": "AP_German_22",
+    "question": "Welches Wort passt am besten in die Lücke: 'Er hat mir einen ________ Brief geschrieben.'",
     "choices": {
-      "A": "sich so gut",
-      "B": "so gut sich",
-      "C": "gut sich so",
-      "D": "sich gut so"
+      "A": "lieb",
+      "B": "liebes",
+      "C": "lieben",
+      "D": "lieber"
     },
-    "answer": "A",
-    "difficulty": 7,
-    "explanation": "The correlative 'so...dass' (so...that) construction requires 'sich so gut' with the reflexive pronoun before the adverb. German word order places the reflexive pronoun early in the middle field."
+    "answer": "D",
+    "difficulty": 5,
+    "explanation": "Nach einem Possessivpronomen ('einen') folgt ein Adjektiv im schwachen Deklinationsmuster. Da 'Brief' maskulin ist und im Akkusativ steht, ist die Endung '-en'."
   },
   {
     "id": "AP_German_3",
     "question": "Was bedeutet das Sprichwort 'Der Apfel fällt nicht weit vom Stamm'?",
     "choices": {
       "A": "Man soll Äpfel nicht von Bäumen stehlen",
-      "B": "Kinder ähneln oft ihren Eltern",
+      "B": "Die Natur ist wichtiger als die Stadt",
       "C": "Man muss hart arbeiten, um Erfolg zu haben",
-      "D": "Die Natur ist wichtiger als die Stadt"
+      "D": "Kinder ähneln oft ihren Eltern"
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 5,
     "explanation": "This proverb (literally: 'The apple doesn't fall far from the trunk') means children often resemble their parents in character or behavior—equivalent to 'The apple doesn't fall far from the tree.'"
   },
   {
-    "id": "AP_German_4",
-    "question": "Ergänzen Sie den Satz mit der richtigen Präposition:\n\nIch freue mich _______ deinen Besuch nächste Woche.",
+    "id": "AP_German_23",
+    "question": "Was bedeutet die umgangssprachliche Wendung 'jemandem auf den Keks gehen'?",
     "choices": {
-      "A": "auf",
-      "B": "über",
-      "C": "für",
-      "D": "an"
+      "A": "Jemandem ein Geschenk machen",
+      "B": "Jemandem helfen",
+      "C": "Jemandem auf die Nerven gehen",
+      "D": "Jemandem etwas Gutes tun"
     },
-    "answer": "A",
-    "difficulty": 6,
-    "explanation": "'Sich freuen auf' means to look forward to (future event). 'Sich freuen über' means to be happy about (something that already happened). Since the visit is next week, 'auf' is correct."
+    "answer": "C",
+    "difficulty": 7,
+    "explanation": "Diese Redewendung ist ein umgangssprachlicher Ausdruck für 'jemanden nerven' oder 'jemandes Geduld strapazieren'."
   },
   {
-    "id": "AP_German_5",
-    "question": "Lesen Sie den Text:\n\nIn Deutschland gibt es immer mehr erneuerbare Energiequellen. Windparks an der Nordseeküste und Solaranlagen in Süddeutschland liefern einen wachsenden Anteil des Stroms.\n\nWelche Aussage stimmt mit dem Text überein?",
+    "id": "AP_German_25",
+    "question": "Was ist ein typisches deutsches Frühstück?",
     "choices": {
-      "A": "Deutschland baut seine erneuerbaren Energien aus",
-      "B": "Deutschland hat keine Windkraftanlagen",
-      "C": "Solarenergie wird nur in Norddeutschland genutzt",
-      "D": "Der Anteil erneuerbarer Energien sinkt"
+      "A": "Pancakes mit Ahornsirup",
+      "B": "Croissants mit Marmelade",
+      "C": "Brot/Brötchen mit Wurst und Käse",
+      "D": "Bagel mit Frischkäse"
     },
-    "answer": "A",
-    "difficulty": 5,
-    "explanation": "The text states there are increasingly more renewable energy sources ('immer mehr'), with wind farms on the North Sea coast and solar systems in southern Germany providing a growing share of electricity."
+    "answer": "C",
+    "difficulty": 6,
+    "explanation": "Ein traditionelles deutsches Frühstück besteht oft aus verschiedenen Brotsorten, Wurst, Käse, Marmelade und gekochten Eiern. Pancakes, Croissants und Bagels sind eher untypisch für ein alltägliches deutsches Frühstück."
   },
   {
     "id": "AP_German_6",
@@ -95,11 +95,11 @@
     "question": "Lesen Sie den Dialog:\n\nAnna: 'Hast du Lust, heute Abend ins Kino zu gehen?'\nMax: 'Das geht leider nicht. Ich muss noch für die Klausur lernen.'\n\nWas macht Max heute Abend?",
     "choices": {
       "A": "Er geht ins Kino",
-      "B": "Er lernt für eine Prüfung",
+      "B": "Er geht früh schlafen",
       "C": "Er trifft sich mit Anna",
-      "D": "Er geht früh schlafen"
+      "D": "Er lernt für eine Prüfung"
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 5,
     "explanation": "Max declines the cinema invitation saying he must study for the exam ('für die Klausur lernen'). 'Das geht leider nicht' is a polite refusal."
   },
@@ -121,11 +121,11 @@
     "question": "Was ist ein typisches Merkmal des deutschen Bildungssystems?",
     "choices": {
       "A": "Alle Schüler besuchen bis zum 18. Lebensjahr dieselbe Schule",
-      "B": "Nach der Grundschule werden Schüler auf verschiedene Schultypen aufgeteilt",
+      "B": "Der Kindergarten ist in Deutschland verboten",
       "C": "Es gibt keine öffentlichen Universitäten in Deutschland",
-      "D": "Der Kindergarten ist in Deutschland verboten"
+      "D": "Nach der Grundschule werden Schüler auf verschiedene Schultypen aufgeteilt"
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 6,
     "explanation": "The German education system is characterized by early tracking (Mehrgliedriges Schulsystem): after Grundschule (elementary school), students are divided into Hauptschule, Realschule, or Gymnasium based on ability."
   },
@@ -186,11 +186,11 @@
     "question": "Was ist der Unterschied zwischen 'kennen' und 'wissen'?",
     "choices": {
       "A": "'Kennen' wird für Fakten benutzt, 'wissen' für Personen",
-      "B": "'Kennen' wird für Personen/Orte benutzt, 'wissen' für Fakten/Informationen",
+      "B": "'Wissen' ist formell, 'kennen' ist informell",
       "C": "Es gibt keinen Unterschied",
-      "D": "'Wissen' ist formell, 'kennen' ist informell"
+      "D": "'Kennen' wird für Personen/Orte benutzt, 'wissen' für Fakten/Informationen"
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 6,
     "explanation": "'Kennen' means to know/be acquainted with (people, places, things). 'Wissen' means to know facts or information. This distinction is similar to French 'connaître' vs. 'savoir.'"
   },
@@ -212,11 +212,11 @@
     "question": "Welche Aussage über das Oktoberfest ist richtig?",
     "choices": {
       "A": "Es findet hauptsächlich im Oktober statt",
-      "B": "Es beginnt im September und endet Anfang Oktober",
+      "B": "Es ist ein religiöser Feiertag",
       "C": "Es wird nur in Berlin gefeiert",
-      "D": "Es ist ein religiöser Feiertag"
+      "D": "Es beginnt im September und endet Anfang Oktober"
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 5,
     "explanation": "Despite its name, Oktoberfest begins in mid-September and ends in the first week of October. It's held in Munich (not Berlin) and is a beer festival, not a religious holiday."
   },
@@ -238,11 +238,11 @@
     "question": "Was versteht man unter 'Wanderlust'?",
     "choices": {
       "A": "Angst vor dem Reisen",
-      "B": "Ein starker Wunsch, die Welt zu erkunden und zu reisen",
+      "B": "Heimweh",
       "C": "Müdigkeit nach einer langen Reise",
-      "D": "Heimweh"
+      "D": "Ein starker Wunsch, die Welt zu erkunden und zu reisen"
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 5,
     "explanation": "'Wanderlust' combines 'wandern' (to hike/wander) and 'Lust' (desire/pleasure), meaning a strong desire to travel and explore the world. It has been adopted into English with the same meaning."
   },
@@ -260,43 +260,43 @@
     "explanation": "'Schüler' (students) is plural, requiring the plural possessive 'ihre' (their). 'Handys' is neuter plural accusative. 'Ihre Handys' = their phones. 'Seinen' and 'sein' are singular masculine."
   },
   {
-    "id": "AP_German_21",
-    "question": "Welcher Satz ist im Konjunktiv II?",
+    "id": "AP_German_1",
+    "question": "Lesen Sie den folgenden Satz und wählen Sie die beste Ergänzung:\n\nDie Familie Müller hat beschlossen, dieses Jahr nach Spanien zu fahren, _______ sie dort noch nie waren.",
     "choices": {
-      "A": "Er sagt, dass er kommt.",
-      "B": "Wenn er käme, würde ich mich freuen.",
-      "C": "Sie hat gesagt, sie sei krank gewesen.",
-      "D": "Ich glaube, er wird die Prüfung bestehen."
+      "A": "weil",
+      "B": "obwohl",
+      "C": "damit",
+      "D": "trotzdem"
     },
-    "answer": "B",
+    "answer": "A",
     "difficulty": 6,
-    "explanation": "Konjunktiv II wird verwendet, um irreale Wünsche, Bedingungen oder Höflichkeitsformen auszudrücken. Satz B 'Wenn er käme, würde ich mich freuen' drückt eine irreale Bedingung aus."
+    "explanation": "'Weil' (because) introduces a causal subordinate clause explaining why they chose Spain. 'Obwohl' (although) and 'trotzdem' (nevertheless) express concession; 'damit' (so that) expresses purpose."
   },
   {
-    "id": "AP_German_22",
-    "question": "Welches Wort passt am besten in die Lücke: 'Er hat mir einen ________ Brief geschrieben.'",
+    "id": "AP_German_2",
+    "question": "Welches Wort passt am besten in die Lücke?\n\nDie Schüler haben _______ auf die Prüfung vorbereitet, dass sie alle bestanden haben.",
     "choices": {
-      "A": "lieb",
-      "B": "lieber",
-      "C": "lieben",
-      "D": "liebes"
+      "A": "sich so gut",
+      "B": "so gut sich",
+      "C": "gut sich so",
+      "D": "sich gut so"
     },
-    "answer": "B",
-    "difficulty": 5,
-    "explanation": "Nach einem Possessivpronomen ('einen') folgt ein Adjektiv im schwachen Deklinationsmuster. Da 'Brief' maskulin ist und im Akkusativ steht, ist die Endung '-en'."
-  },
-  {
-    "id": "AP_German_23",
-    "question": "Was bedeutet die umgangssprachliche Wendung 'jemandem auf den Keks gehen'?",
-    "choices": {
-      "A": "Jemandem ein Geschenk machen",
-      "B": "Jemandem helfen",
-      "C": "Jemandem auf die Nerven gehen",
-      "D": "Jemandem etwas Gutes tun"
-    },
-    "answer": "C",
+    "answer": "A",
     "difficulty": 7,
-    "explanation": "Diese Redewendung ist ein umgangssprachlicher Ausdruck für 'jemanden nerven' oder 'jemandes Geduld strapazieren'."
+    "explanation": "The correlative 'so...dass' (so...that) construction requires 'sich so gut' with the reflexive pronoun before the adverb. German word order places the reflexive pronoun early in the middle field."
+  },
+  {
+    "id": "AP_German_4",
+    "question": "Ergänzen Sie den Satz mit der richtigen Präposition:\n\nIch freue mich _______ deinen Besuch nächste Woche.",
+    "choices": {
+      "A": "auf",
+      "B": "über",
+      "C": "für",
+      "D": "an"
+    },
+    "answer": "A",
+    "difficulty": 6,
+    "explanation": "'Sich freuen auf' means to look forward to (future event). 'Sich freuen über' means to be happy about (something that already happened). Since the visit is next week, 'auf' is correct."
   },
   {
     "id": "AP_German_24",
@@ -312,17 +312,17 @@
     "explanation": "Bewegungsverben im Perfekt bilden das Hilfsverb mit 'sein', nicht mit 'haben'. 'Ankommen' drückt eine Bewegung aus."
   },
   {
-    "id": "AP_German_25",
-    "question": "Was ist ein typisches deutsches Frühstück?",
+    "id": "AP_German_5",
+    "question": "Lesen Sie den Text:\n\nIn Deutschland gibt es immer mehr erneuerbare Energiequellen. Windparks an der Nordseeküste und Solaranlagen in Süddeutschland liefern einen wachsenden Anteil des Stroms.\n\nWelche Aussage stimmt mit dem Text überein?",
     "choices": {
-      "A": "Pancakes mit Ahornsirup",
-      "B": "Croissants mit Marmelade",
-      "C": "Brot/Brötchen mit Wurst und Käse",
-      "D": "Bagel mit Frischkäse"
+      "A": "Deutschland baut seine erneuerbaren Energien aus",
+      "B": "Deutschland hat keine Windkraftanlagen",
+      "C": "Solarenergie wird nur in Norddeutschland genutzt",
+      "D": "Der Anteil erneuerbarer Energien sinkt"
     },
-    "answer": "C",
-    "difficulty": 6,
-    "explanation": "Ein traditionelles deutsches Frühstück besteht oft aus verschiedenen Brotsorten, Wurst, Käse, Marmelade und gekochten Eiern. Pancakes, Croissants und Bagels sind eher untypisch für ein alltägliches deutsches Frühstück."
+    "answer": "A",
+    "difficulty": 5,
+    "explanation": "The text states there are increasingly more renewable energy sources ('immer mehr'), with wind farms on the North Sea coast and solar systems in southern Germany providing a growing share of electricity."
   },
   {
     "id": "AP_German_26",
@@ -338,28 +338,28 @@
     "explanation": "'Trotzdem' leitet einen Hauptsatz ein, der einen Gegensatz ausdrückt. 'Obgleich' leitet einen Nebensatz ein."
   },
   {
-    "id": "AP_German_27",
-    "question": "Wer schrieb die 'Die Leiden des jungen Werthers'?",
+    "id": "AP_German_150",
+    "question": "Welcher Relativsatz ist korrekt konstruiert?",
     "choices": {
-      "A": "Friedrich Schiller",
-      "B": "Johann Wolfgang von Goethe",
-      "C": "Thomas Mann",
-      "D": "Hermann Hesse"
+      "A": "Das ist der Mann, der sein Auto verkauft hat.",
+      "B": "Das ist der Mann, wen sein Auto verkauft hat.",
+      "C": "Das ist der Mann, wessen Auto verkauft hat.",
+      "D": "Das ist der Mann, dem sein Auto verkauft hat."
     },
-    "answer": "B",
+    "answer": "A",
     "difficulty": 6,
-    "explanation": "Johann Wolfgang von Goethe ist der Autor dieses berühmten Romans der Sturm-und-Drang-Periode."
+    "explanation": "In einem Relativsatz bezieht sich das Pronomen auf das Bezugswort ('der Mann'). 'Der' ist hier das Subjekt des Relativsatzes, daher wird der Nominativ verwendet."
   },
   {
     "id": "AP_German_28",
     "question": "Welche Präposition erfordert den Dativ?",
     "choices": {
       "A": "durch",
-      "B": "für",
+      "B": "gegen",
       "C": "ohne",
-      "D": "gegen"
+      "D": "für"
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 5,
     "explanation": "'Für' ist eine Präposition, die immer den Akkusativ verlangt. Die anderen genannten Präpositionen verlangen den Akkusativ (durch, gegen) oder den Akkusativ (ohne)."
   },
@@ -381,11 +381,11 @@
     "question": "Welcher Satz ist im Passiv?",
     "choices": {
       "A": "Der Junge liest das Buch.",
-      "B": "Das Buch wird von dem Jungen gelesen.",
+      "B": "Das Buch gefällt dem Jungen.",
       "C": "Der Junge hat das Buch gelesen.",
-      "D": "Das Buch gefällt dem Jungen."
+      "D": "Das Buch wird von dem Jungen gelesen."
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 5,
     "explanation": "Der Passivsatz wird mit dem Hilfsverb 'werden' und dem Partizip Perfekt gebildet. Hier ist es 'wird gelesen'."
   },
@@ -420,11 +420,11 @@
     "question": "Was ist die Hauptstadt von Österreich?",
     "choices": {
       "A": "Berlin",
-      "B": "Wien",
+      "B": "Bern",
       "C": "Zürich",
-      "D": "Bern"
+      "D": "Wien"
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 5,
     "explanation": "Wien ist die Hauptstadt der Republik Österreich."
   },
@@ -512,10 +512,10 @@
     "choices": {
       "A": "sagen",
       "B": "machen",
-      "C": "schlafen",
-      "D": "lernen"
+      "C": "lernen",
+      "D": "schlafen"
     },
-    "answer": "C",
+    "answer": "D",
     "difficulty": 6,
     "explanation": "Starke Verben ändern ihren Stammvokal im Präteritum und Partizip II. 'schlafen' -> 'schlief' -> 'geschlafen'."
   },
@@ -628,11 +628,11 @@
     "question": "Was bedeutet die Redewendung 'jemandem auf den Wecker gehen'?",
     "choices": {
       "A": "Jemanden wecken",
-      "B": "Jemanden stören oder nerven",
+      "B": "Jemanden um Hilfe bitten",
       "C": "Jemanden loben",
-      "D": "Jemanden um Hilfe bitten"
+      "D": "Jemanden stören oder nerven"
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 6,
     "explanation": "Die Redewendung 'jemandem auf den Wecker gehen' bedeutet, jemanden zu nerven oder zu stören. Es ist ein umgangssprachlicher Ausdruck."
   },
@@ -680,11 +680,11 @@
     "question": "Welcher Relativsatz ist korrekt? Der Mann, ______ ich treffe, ist mein Bruder.",
     "choices": {
       "A": "der",
-      "B": "den",
+      "B": "dessen",
       "C": "dem",
-      "D": "dessen"
+      "D": "den"
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 6,
     "explanation": "Das Personalpronomen 'ich' ist das Subjekt, also ist 'der Mann' das Objekt des Relativsatzes. Das Objekt im Akkusativ ist 'den'."
   },
@@ -706,11 +706,11 @@
     "question": "Welcher Tag ist 'Karfreitag'?",
     "choices": {
       "A": "Der Ostersonntag",
-      "B": "Der Tag vor Ostersonntag",
+      "B": "Der Pfingstmontag",
       "C": "Der Tag nach Ostersonntag",
-      "D": "Der Pfingstmontag"
+      "D": "Der Tag vor Ostersonntag"
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 7,
     "explanation": "Karfreitag ist der Freitag vor Ostersonntag und ein christlicher Feiertag zum Gedenken an die Kreuzigung Jesu Christi."
   },
@@ -806,19 +806,6 @@
     "explanation": "Wenn das Substantiv maskulin oder neutrum ist und im Genitiv steht (z.B. als Possessivattribut), wird 'des' verwendet. 'Er hat des Buches gelesen' ist grammatisch korrekt, aber 'Er hat sein Buch gelesen' ist gebräuchlicher. Hier ist die Genitivform des Artikels gefragt."
   },
   {
-    "id": "AP_German_63",
-    "question": "Was bedeutet die Redewendung 'den Nagel auf den Kopf treffen'?",
-    "choices": {
-      "A": "Etwas kaputt machen",
-      "B": "Genau das Richtige sagen oder tun",
-      "C": "Einen Fehler machen",
-      "D": "Sehr müde sein"
-    },
-    "answer": "B",
-    "difficulty": 6,
-    "explanation": "Diese Redewendung bedeutet, dass jemand mit seiner Aussage oder Handlung genau ins Schwarze trifft, also die Wahrheit oder die Lösung erkannt hat."
-  },
-  {
     "id": "AP_German_64",
     "question": "Welches Verb erfordert hier den Akkusativ? Ich helfe ______ Freund.",
     "choices": {
@@ -828,7 +815,8 @@
       "D": "mir"
     },
     "answer": "D",
-    "explanation": "Das Verb 'helfen' verlangt den Dativ. Daher ist 'mir' die korrekte Form, wenn es um die erste Person Singular geht: 'Ich helfe mir' (selbst) oder auch 'Ich helfe meinem Freund'."
+    "explanation": "Das Verb 'helfen' verlangt den Dativ. Daher ist 'mir' die korrekte Form, wenn es um die erste Person Singular geht: 'Ich helfe mir' (selbst) oder auch 'Ich helfe meinem Freund'.",
+    "difficulty": 4
   },
   {
     "id": "AP_German_65",
@@ -861,11 +849,11 @@
     "question": "Was bedeutet 'Das ist mir Wurst'?",
     "choices": {
       "A": "Ich bin hungrig.",
-      "B": "Das ist mir egal.",
+      "B": "Ich bin müde.",
       "C": "Ich mag keine Wurst.",
-      "D": "Ich bin müde."
+      "D": "Das ist mir egal."
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 6,
     "explanation": "Diese umgangssprachliche Redewendung bedeutet, dass dem Sprecher etwas gleichgültig ist."
   },
@@ -887,11 +875,11 @@
     "question": "Welcher Fall wird nach der Präposition 'wegen' verwendet, wenn sie 'Ursache' bedeutet?",
     "choices": {
       "A": "Nominativ",
-      "B": "Genitiv",
+      "B": "Akkusativ",
       "C": "Dativ",
-      "D": "Akkusativ"
+      "D": "Genitiv"
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 6,
     "explanation": "Die Präposition 'wegen' verlangt traditionell den Genitiv (z.B. 'wegen des Regens'). Im modernen Sprachgebrauch wird oft auch der Dativ verwendet, aber der Genitiv ist die korrekte, formelle Variante."
   },
@@ -946,19 +934,6 @@
     "answer": "C",
     "difficulty": 5,
     "explanation": "'weil' ist die gebräuchlichste Konjunktion, um einen Grund in einem Nebensatz anzugeben."
-  },
-  {
-    "id": "AP_German_74",
-    "question": "Was bedeutet die Redewendung 'jemandem auf den Wecker gehen'?",
-    "choices": {
-      "A": "jemanden wecken",
-      "B": "jemanden nerven",
-      "C": "jemandem helfen",
-      "D": "jemanden loben"
-    },
-    "answer": "B",
-    "difficulty": 6,
-    "explanation": "Diese Redewendung bedeutet, dass jemand eine andere Person sehr ärgert oder stört."
   },
   {
     "id": "AP_German_75",
@@ -1043,11 +1018,11 @@
     "question": "Was ist 'das Oktoberfest' in München?",
     "choices": {
       "A": "Ein klassisches Musikfestival",
-      "B": "Ein jährliches Bierfest und Volksfest",
+      "B": "Ein traditionelles Karnevalsevent",
       "C": "Eine internationale Buchmesse",
-      "D": "Ein traditionelles Karnevalsevent"
+      "D": "Ein jährliches Bierfest und Volksfest"
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 7,
     "explanation": "Das Oktoberfest ist weltberühmt als das größte Volksfest und Bierfest der Welt."
   },
@@ -1082,11 +1057,11 @@
     "question": "Was bedeutet die Abkürzung 'z.B.'?",
     "choices": {
       "A": "zu Beginn",
-      "B": "zum Beispiel",
+      "B": "zur Bezahlung",
       "C": "zu Bedenken",
-      "D": "zur Bezahlung"
+      "D": "zum Beispiel"
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 5,
     "explanation": "'z.B.' ist die gängige Abkürzung für 'zum Beispiel', die verwendet wird, um Beispiele zu nennen."
   },
@@ -1121,11 +1096,11 @@
     "question": "Welcher Satz benutzt den Konjunktiv I?",
     "choices": {
       "A": "Er sagt, er kommt später.",
-      "B": "Er sagt, er komme später.",
+      "B": "Er sagt, er würde kommen.",
       "C": "Er sagte, er kam später.",
-      "D": "Er sagt, er würde kommen."
+      "D": "Er sagt, er komme später."
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 8,
     "explanation": "Der Konjunktiv I wird oft in der indirekten Rede verwendet. 'komme' ist die Konjunktiv I Form von 'kommen'."
   },
@@ -1154,19 +1129,6 @@
     "answer": "A",
     "difficulty": 5,
     "explanation": "Die Standard-Wortstellung im deutschen Hauptsatz ist Subjekt-Verb-Objekt, ähnlich wie im Englischen."
-  },
-  {
-    "id": "AP_German_90",
-    "question": "Was bedeutet die Redewendung 'jemandem die Daumen drücken'?",
-    "choices": {
-      "A": "jemanden umarmen",
-      "B": "jemandem Glück wünschen",
-      "C": "jemanden festhalten",
-      "D": "jemanden enttäuschen"
-    },
-    "answer": "B",
-    "difficulty": 6,
-    "explanation": "Diese Geste wird verwendet, um jemandem Glück oder Erfolg für eine bevorstehende Aufgabe zu wünschen."
   },
   {
     "id": "AP_German_91",
@@ -1199,11 +1161,11 @@
     "question": "Was bedeutet die deutsche Festivität 'Karneval' oder 'Fasching'?",
     "choices": {
       "A": "Ein Fest der Ernte",
-      "B": "Eine Zeit der Besinnung vor Ostern mit Verkleidungen und Umzügen",
+      "B": "Ein Fest der Sommersonnenwende",
       "C": "Ein Gedenktag für historische Ereignisse",
-      "D": "Ein Fest der Sommersonnenwende"
+      "D": "Eine Zeit der Besinnung vor Ostern mit Verkleidungen und Umzügen"
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 7,
     "explanation": "Karneval/Fasching ist eine traditionelle Festzeit, die vor der Fastenzeit gefeiert wird und für ausgelassenes Feiern bekannt ist."
   },
@@ -1251,11 +1213,11 @@
     "question": "Was bedeutet das Wort 'gemütlich'?",
     "choices": {
       "A": "gefährlich",
-      "B": "bequem und angenehm",
+      "B": "kalt",
       "C": "schnell",
-      "D": "kalt"
+      "D": "bequem und angenehm"
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 6,
     "explanation": "'Gemütlich' beschreibt eine Atmosphäre oder einen Zustand, der warm, behaglich und angenehm ist."
   },
@@ -1286,28 +1248,15 @@
     "explanation": "Konjunktiv II drückt irreale Bedingungen oder Wünsche aus. 'Wenn er käme, würde ich ihm helfen' bedeutet 'If he were to come, I would help him'."
   },
   {
-    "id": "AP_German_100",
-    "question": "Was bedeutet die Redewendung 'den Nagel auf den Kopf treffen'?",
-    "choices": {
-      "A": "Etwas kaputt machen",
-      "B": "Das Richtige sagen oder tun",
-      "C": "Geld ausgeben",
-      "D": "Sehr müde sein"
-    },
-    "answer": "B",
-    "difficulty": 6,
-    "explanation": "Diese Redewendung bedeutet, dass man genau das Richtige getroffen oder gesagt hat, also ins Schwarze getroffen hat."
-  },
-  {
     "id": "AP_German_101",
     "question": "Welches Wort passt nicht in die Reihe?",
     "choices": {
-      "A": "der Apfel",
+      "A": "die Kartoffel",
       "B": "die Birne",
-      "C": "die Kartoffel",
+      "C": "der Apfel",
       "D": "die Banane"
     },
-    "answer": "C",
+    "answer": "A",
     "difficulty": 5,
     "explanation": "Apfel, Birne und Banane sind Obst. Die Kartoffel ist ein Gemüse."
   },
@@ -1323,19 +1272,6 @@
     "answer": "B",
     "difficulty": 5,
     "explanation": "Deutschland hat 16 Bundesländer."
-  },
-  {
-    "id": "AP_German_103",
-    "question": "Welches Wort ist ein starkes Verb?",
-    "choices": {
-      "A": "spielen",
-      "B": "lernen",
-      "C": "gehen",
-      "D": "kaufen"
-    },
-    "answer": "C",
-    "difficulty": 6,
-    "explanation": "Starke Verben ändern ihren Stammvokal im Präteritum und Partizip II (gehen - ging - gegangen)."
   },
   {
     "id": "AP_German_104",
@@ -1367,12 +1303,12 @@
     "id": "AP_German_106",
     "question": "Welches ist kein typisches deutsches Frühstück?",
     "choices": {
-      "A": "Brötchen mit Wurst und Käse",
+      "A": "Pfannkuchen mit Ahornsirup",
       "B": "Müsli",
-      "C": "Pfannkuchen mit Ahornsirup",
+      "C": "Brötchen mit Wurst und Käse",
       "D": "Eier und Speck"
     },
-    "answer": "C",
+    "answer": "A",
     "difficulty": 7,
     "explanation": "Pfannkuchen mit Ahornsirup sind eher typisch für Nordamerika. Die anderen Optionen sind gängige deutsche Frühstücksoptionen."
   },
@@ -1407,11 +1343,11 @@
     "question": "Was bedeutet 'jemandem die Daumen drücken'?",
     "choices": {
       "A": "Jemandem helfen",
-      "B": "Jemandem Glück wünschen",
+      "B": "Jemandem vertrauen",
       "C": "Jemandem etwas vergeben",
-      "D": "Jemandem vertrauen"
+      "D": "Jemandem Glück wünschen"
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 6,
     "explanation": "Diese Redewendung bedeutet, jemandem Glück zu wünschen, oft vor einer Prüfung oder einem wichtigen Ereignis."
   },
@@ -1446,11 +1382,11 @@
     "question": "Welches Wort ist ein Adjektiv?",
     "choices": {
       "A": "rennen",
-      "B": "schnell",
+      "B": "schnell laufen",
       "C": "das Rennen",
-      "D": "schnell laufen"
+      "D": "schnell"
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 5,
     "explanation": "'Schnell' beschreibt ein Nomen und ist daher ein Adjektiv."
   },
@@ -1576,11 +1512,11 @@
     "question": "Was bedeutet die Redewendung 'kalte Füße bekommen'?",
     "choices": {
       "A": "Krank werden",
-      "B": "Angst bekommen, einen Rückzieher machen",
+      "B": "Etwas nicht mögen",
       "C": "Sehr kalt sein",
-      "D": "Etwas nicht mögen"
+      "D": "Angst bekommen, einen Rückzieher machen"
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 6,
     "explanation": "Diese Redewendung bedeutet, dass man vor einer wichtigen Entscheidung oder einem Vorhaben Angst bekommt und es nicht mehr tun möchte."
   },
@@ -1615,11 +1551,11 @@
     "question": "Welcher Satz steht im Konjunktiv II?",
     "choices": {
       "A": "Ich esse gern pizza.",
-      "B": "Wenn ich Zeit hätte, würde ich reisen.",
+      "B": "Sie geht nach Hause.",
       "C": "Er hat das Buch gelesen.",
-      "D": "Sie geht nach Hause."
+      "D": "Wenn ich Zeit hätte, würde ich reisen."
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 7,
     "explanation": "Der Konjunktiv II wird hier durch 'hätte' und 'würde reisen' ausgedrückt und dient zur Darstellung einer unwahrscheinlichen oder irreellen Bedingung. Die anderen Sätze stehen im Indikativ."
   },
@@ -1628,11 +1564,11 @@
     "question": "Was bedeutet die deutsche Redewendung 'jemandem die Daumen drücken'?",
     "choices": {
       "A": "Jemanden umarmen",
-      "B": "Jemanden unterstützen oder jemandem Glück wünschen",
+      "B": "Jemanden ignorieren",
       "C": "Jemanden entlassen",
-      "D": "Jemanden ignorieren"
+      "D": "Jemanden unterstützen oder jemandem Glück wünschen"
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 6,
     "explanation": "Die Redewendung 'jemandem die Daumen drücken' ist das deutsche Äquivalent zu 'to cross one's fingers' oder 'to wish someone luck'."
   },
@@ -1655,62 +1591,23 @@
     "choices": {
       "A": "der Tisch",
       "B": "das Haus",
-      "C": "die Lampe",
-      "D": "der Stuhl"
+      "C": "der Stuhl",
+      "D": "die Lampe"
     },
-    "answer": "C",
+    "answer": "D",
     "difficulty": 5,
     "explanation": "Substantive im Deutschen haben ein grammatisches Geschlecht. 'die Lampe' ist feminin. 'der Tisch' und 'der Stuhl' sind maskulin, 'das Haus' ist neutral."
-  },
-  {
-    "id": "AP_German_129",
-    "question": "Was ist die Hauptstadt von Österreich?",
-    "choices": {
-      "A": "Berlin",
-      "B": "Zürich",
-      "C": "Wien",
-      "D": "Bern"
-    },
-    "answer": "C",
-    "difficulty": 5,
-    "explanation": "Wien ist die Hauptstadt von Österreich. Berlin ist die Hauptstadt von Deutschland, Zürich und Bern sind Städte in der Schweiz."
-  },
-  {
-    "id": "AP_German_130",
-    "question": "Welcher Satz ist grammatikalisch korrekt?",
-    "choices": {
-      "A": "Er gibt mir das Buch.",
-      "B": "Er gibt mich das Buch.",
-      "C": "Er gibt das Buch mich.",
-      "D": "Er gibt mich das Buch."
-    },
-    "answer": "A",
-    "difficulty": 5,
-    "explanation": "Das Verb 'geben' erfordert im Deutschen einen Dativ (wem?) und einen Akkusativ (wen oder was?). 'Er gibt mir (Dativ) das Buch (Akkusativ)' ist die korrekte Konstruktion."
-  },
-  {
-    "id": "AP_German_131",
-    "question": "Was bedeutet das Wort 'gemütlich'?",
-    "choices": {
-      "A": "Formal",
-      "B": "Anstrengend",
-      "C": "Behaglich, heimelig",
-      "D": "Laut"
-    },
-    "answer": "C",
-    "difficulty": 6,
-    "explanation": "'Gemütlich' beschreibt eine Atmosphäre oder ein Gefühl von Behaglichkeit, Wärme und Entspannung. Es ist ein wichtiges Konzept in der deutschen Kultur."
   },
   {
     "id": "AP_German_132",
     "question": "Wählen Sie die richtige Form des Perfekts von 'schwimmen'.",
     "choices": {
       "A": "hat geschwommen",
-      "B": "ist geschwommen",
+      "B": "ist schwamm",
       "C": "hat schwamm",
-      "D": "ist schwamm"
+      "D": "ist geschwommen"
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 7,
     "explanation": "Viele Verben, die eine Orts- oder Richtungsänderung oder eine Zustandsveränderung ausdrücken, bilden das Perfekt mit 'sein'. 'Schwimmen' kann beides ausdrücken, aber wenn es eine Bewegung impliziert, wird 'sein' verwendet. 'Ich bin gestern im See geschwommen.'"
   },
@@ -1836,11 +1733,11 @@
     "question": "Welcher Satz ist im passiven Perfekt?",
     "choices": {
       "A": "Das Buch wurde gelesen.",
-      "B": "Das Buch ist gelesen worden.",
+      "B": "Das Buch hat gelesen.",
       "C": "Das Buch wird gelesen.",
-      "D": "Das Buch hat gelesen."
+      "D": "Das Buch ist gelesen worden."
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 8,
     "explanation": "Das passive Perfekt wird mit 'sein' + Partizip II + 'worden' gebildet. 'Das Buch ist gelesen worden' bedeutet, dass das Lesen des Buches in der Vergangenheit abgeschlossen wurde."
   },
@@ -1923,30 +1820,17 @@
     "explanation": "Der Konjunktiv II mit 'würde' + Infinitiv wird oft für irreale oder unwahrscheinliche Bedingungen in der Gegenwart verwendet. Satz B ist perfekt, aber drückt eine irreale Bedingung in der Vergangenheit aus. Satz A ist Futur I und drückt eine reale Bedingung aus."
   },
   {
-    "id": "AP_German_149",
-    "question": "Was bedeutet die Redewendung 'jemandem die Daumen drücken'?",
+    "id": "AP_German_21",
+    "question": "Welcher Satz ist im Konjunktiv II?",
     "choices": {
-      "A": "Jemanden umarmen.",
-      "B": "Jemandem Glück wünschen.",
-      "C": "Jemandem helfen.",
-      "D": "Jemanden enttäuschen."
+      "A": "Er sagt, dass er kommt.",
+      "B": "Wenn er käme, würde ich mich freuen.",
+      "C": "Sie hat gesagt, sie sei krank gewesen.",
+      "D": "Ich glaube, er wird die Prüfung bestehen."
     },
     "answer": "B",
-    "difficulty": 5,
-    "explanation": "Die Redewendung 'jemandem die Daumen drücken' ist die deutsche Entsprechung des englischen 'to keep one's fingers crossed' und bedeutet, jemandem Glück zu wünschen."
-  },
-  {
-    "id": "AP_German_150",
-    "question": "Welcher Relativsatz ist korrekt konstruiert?",
-    "choices": {
-      "A": "Das ist der Mann, der sein Auto verkauft hat.",
-      "B": "Das ist der Mann, wen sein Auto verkauft hat.",
-      "C": "Das ist der Mann, wessen Auto verkauft hat.",
-      "D": "Das ist der Mann, dem sein Auto verkauft hat."
-    },
-    "answer": "A",
     "difficulty": 6,
-    "explanation": "In einem Relativsatz bezieht sich das Pronomen auf das Bezugswort ('der Mann'). 'Der' ist hier das Subjekt des Relativsatzes, daher wird der Nominativ verwendet."
+    "explanation": "Konjunktiv II wird verwendet, um irreale Wünsche, Bedingungen oder Höflichkeitsformen auszudrücken. Satz B 'Wenn er käme, würde ich mich freuen' drückt eine irreale Bedingung aus."
   },
   {
     "id": "AP_German_151",
@@ -1966,11 +1850,11 @@
     "question": "Welcher Ausdruck wird verwendet, um eine unerwartete Wendung oder Überraschung auszudrücken?",
     "choices": {
       "A": "Das ist mir egal.",
-      "B": "Ach du meine Güte!",
+      "B": "Das ist ja toll!",
       "C": "Keine Ursache.",
-      "D": "Das ist ja toll!"
+      "D": "Ach du meine Güte!"
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 5,
     "explanation": "'Ach du meine Güte!' ist ein Ausruf der Überraschung oder des Erstaunens, ähnlich wie 'Oh my goodness!' im Englischen."
   },
@@ -1986,19 +1870,6 @@
     "answer": "A",
     "difficulty": 5,
     "explanation": "Das Partizip Perfekt von 'lesen' ist 'gelesen'. Es ist ein starkes Verb mit Stammvokalwechsel und der Vorsilbe 'ge-' sowie der Endung '-en'."
-  },
-  {
-    "id": "AP_German_154",
-    "question": "Welcher Satz ist grammatikalisch korrekt?",
-    "choices": {
-      "A": "Er hat mehr Bücher als ich gelesen.",
-      "B": "Er hat mehr Bücher als ich gelesen haben.",
-      "C": "Er hat mehr Bücher als ich gelesen habe.",
-      "D": "Er hat mehr Bücher als ich gelesen hätte."
-    },
-    "answer": "A",
-    "difficulty": 6,
-    "explanation": "Beim Vergleich mit 'als' wird der Satzbau oft verkürzt. Hier ist eine Ellipse des Verbs im Nebensatz üblich ('als ich [sie] gelesen [habe]'). Satz C ist auch akzeptabel, aber A ist prägnanter."
   },
   {
     "id": "AP_German_155",
@@ -2053,19 +1924,6 @@
     "explanation": "'Sich schämen' bedeutet, Scham zu empfinden, sich für etwas zu genieren oder sich zu schämen. Es ist ein reflexives Verb."
   },
   {
-    "id": "AP_German_159",
-    "question": "Welcher Satz verwendet den Passiv korrekt?",
-    "choices": {
-      "A": "Das Buch wird gelesen.",
-      "B": "Das Buch ist gelesen.",
-      "C": "Das Buch ist gelesen worden.",
-      "D": "Das Buch liest."
-    },
-    "answer": "A",
-    "difficulty": 5,
-    "explanation": "Das Vorgangspassiv im Präsens wird mit 'werden' + Partizip Perfekt gebildet ('wird gelesen'). Satz B ist Zustandspassiv. Satz C ist Perfektpassiv."
-  },
-  {
     "id": "AP_German_160",
     "question": "Was ist ein 'Biergarten'?",
     "choices": {
@@ -2118,19 +1976,6 @@
     "explanation": "Das Verb 'gedenken' verlangt traditionell den Genitiv ('seiner Eltern'). In der modernen Umgangssprache wird oft der Dativ ('den Eltern') verwendet, aber der Genitiv ist formal korrekt."
   },
   {
-    "id": "AP_German_164",
-    "question": "Was ist ein 'Feierabend'?",
-    "choices": {
-      "A": "Ein Feiertag.",
-      "B": "Das Ende des Arbeitstages und der Beginn der Freizeit.",
-      "C": "Eine Feier am Abend.",
-      "D": "Ein Arbeitsbeginn."
-    },
-    "answer": "B",
-    "difficulty": 6,
-    "explanation": "'Feierabend' bezieht sich auf das Ende der Arbeitszeit und den Beginn der Freizeit am Abend. Es ist ein wichtiger kultureller Begriff, der die Trennung von Arbeit und Privatleben betont."
-  },
-  {
     "id": "AP_German_165",
     "question": "Welcher Satz mit einem trennbaren Verb ist korrekt?",
     "choices": {
@@ -2148,11 +1993,11 @@
     "question": "Was bedeutet 'zu Händen von'?",
     "choices": {
       "A": "An die Adresse von.",
-      "B": "In die Hände von.",
+      "B": "Zur Information von.",
       "C": "Für die Aufmerksamkeit von.",
-      "D": "Zur Information von."
+      "D": "In die Hände von."
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 7,
     "explanation": "'Zu Händen von' ist eine formelle Wendung, die in Geschäftsbriefen verwendet wird, um anzugeben, dass ein Brief oder ein Dokument für eine bestimmte Person bestimmt ist. Es bedeutet wörtlich 'in die Hände von'."
   },
@@ -2168,19 +2013,6 @@
     "answer": "A",
     "difficulty": 6,
     "explanation": "Der Superlativ des Adjektivs 'hoch' ist 'höchste'. Die Konstruktion mit 'am' + Adjektiv im Superlativ wird für Adverbien verwendet ('am höchsten'). Hier wird das Adjektiv flektiert."
-  },
-  {
-    "id": "AP_German_168",
-    "question": "Was bedeutet 'Das ist mir Wurst!'?",
-    "choices": {
-      "A": "Das ist mir egal.",
-      "B": "Das ist mir sehr wichtig.",
-      "C": "Das ist mir peinlich.",
-      "D": "Das ist mir unangenehm."
-    },
-    "answer": "A",
-    "difficulty": 6,
-    "explanation": "Diese umgangssprachliche Redewendung bedeutet, dass jemandem etwas gleichgültig ist, dass es ihm egal ist. Die Herkunft ist umstritten, aber die Bedeutung ist klar."
   },
   {
     "id": "AP_German_169",
@@ -2200,50 +2032,24 @@
     "question": "Was ist ein 'Kaffee und Kuchen'?",
     "choices": {
       "A": "Ein Mittagessen.",
-      "B": "Eine Mahlzeit am späten Nachmittag mit Kaffee und Gebäck.",
+      "B": "Ein Kuchenrezept.",
       "C": "Ein Getränk.",
-      "D": "Ein Kuchenrezept."
+      "D": "Eine Mahlzeit am späten Nachmittag mit Kaffee und Gebäck."
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 6,
     "explanation": "'Kaffee und Kuchen' ist eine deutsche Tradition, die oft am Sonntagnachmittag oder zu besonderen Anlässen stattfindet. Es ist eine gesellige Zusammenkunft bei Kaffee und Gebäck oder Kuchen."
-  },
-  {
-    "id": "AP_German_171",
-    "question": "Welcher Satz ist grammatikalisch korrekt?",
-    "choices": {
-      "A": "Ich bin schneller gelaufen als du.",
-      "B": "Ich bin schneller gelaufen als du hast.",
-      "C": "Ich bin schneller gelaufen als du gelaufen bist.",
-      "D": "Ich bin schneller gelaufen als du gelaufen hätte."
-    },
-    "answer": "A",
-    "difficulty": 6,
-    "explanation": "Beim Vergleich mit 'als' wird der Satzbau oft verkürzt. Hier ist eine Ellipse des Verbs im Nebensatz üblich ('als du [schneller gelaufen bist]'). Satz A ist prägnant und korrekt."
-  },
-  {
-    "id": "AP_German_172",
-    "question": "Was bedeutet die Redewendung 'jemandem auf den Wecker gehen'?",
-    "choices": {
-      "A": "Jemanden wecken.",
-      "B": "Jemanden stören oder nerven.",
-      "C": "Jemanden ermutigen.",
-      "D": "Jemanden begrüßen."
-    },
-    "answer": "B",
-    "difficulty": 6,
-    "explanation": "Diese umgangssprachliche Redewendung bedeutet, dass jemand eine andere Person stört, nervt oder auf die Nerven geht. Sie ist vergleichbar mit dem englischen 'to get on someone's nerves'."
   },
   {
     "id": "AP_German_173",
     "question": "Welches Wort beschreibt am besten die typische deutsche Arbeitsmoral?",
     "choices": {
       "A": "Laissez-faire",
-      "B": "Fleiß und Pünktlichkeit",
+      "B": "Kreatives Chaos",
       "C": "Spontanität",
-      "D": "Kreatives Chaos"
+      "D": "Fleiß und Pünktlichkeit"
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 6,
     "explanation": "Die deutsche Kultur ist bekannt für ihre Betonung von Fleiß (Diligence) und Pünktlichkeit (Punctuality), was sich in der Arbeitswelt widerspiegelt. Laissez-faire, Spontanität und kreatives Chaos sind eher mit anderen Kulturen assoziiert."
   },
@@ -2265,11 +2071,11 @@
     "question": "Welcher Konjunktiv wird verwendet, um einen unwirklichen Wunsch auszudrücken, z.B. 'Hätte ich doch mehr Zeit!'?",
     "choices": {
       "A": "Konjunktiv I",
-      "B": "Konjunktiv II des Präsens",
+      "B": "Indikativ",
       "C": "Konjunktiv II des Perfekts",
-      "D": "Indikativ"
+      "D": "Konjunktiv II des Präsens"
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 8,
     "explanation": "Der Konjunktiv II des Präsens wird verwendet, um irreale Wünsche, Bedingungen oder Höflichkeitsformen auszudrücken. 'Hätte ich doch mehr Zeit!' ist ein klassisches Beispiel für einen unwirklichen Wunsch."
   },
@@ -2300,28 +2106,15 @@
     "explanation": "'Umsichtig' bedeutet vorausschauend, vorsichtig und bedacht. 'Leichtsinnig' und 'reckless' (ein Anglizismus, eigentlich 'leichtsinnig') bedeuten das Gegenteil. 'Impulsiv' bedeutet, ohne nachzudenken zu handeln."
   },
   {
-    "id": "AP_German_178",
-    "question": "Welcher Satz ist grammatikalisch korrekt?",
-    "choices": {
-      "A": "Ich gehe ins Kino mit meinem Freund.",
-      "B": "Ich gehe zum Kino mit meinem Freund.",
-      "C": "Ich gehe ins Kino mit meine Freund.",
-      "D": "Ich gehe zum Kino mit meine Freund."
-    },
-    "answer": "A",
-    "difficulty": 8,
-    "explanation": "Bei Bewegungsrichtungen in eine Richtung hinein (z.B. Kino, Haus) wird 'in' + Akkusativ verwendet ('ins Kino'). 'Mit' verlangt den Dativ, daher 'mit meinem Freund'."
-  },
-  {
     "id": "AP_German_179",
     "question": "Was bedeutet das deutsche Sprichwort 'Man soll den Tag nicht vor dem Abend loben'?",
     "choices": {
       "A": "Man sollte früh aufstehen.",
-      "B": "Man sollte nicht zu früh feiern, da noch etwas schiefgehen kann.",
+      "B": "Man sollte seine Arbeit pünktlich beenden.",
       "C": "Der Abend ist die beste Tageszeit.",
-      "D": "Man sollte seine Arbeit pünktlich beenden."
+      "D": "Man sollte nicht zu früh feiern, da noch etwas schiefgehen kann."
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 7,
     "explanation": "Dieses Sprichwort rät dazu, vorsichtig zu sein und Erfolge nicht voreilig zu verkünden oder zu feiern, da sich die Situation noch ändern kann. Es bedeutet, dass man bis zum Ende abwarten sollte."
   },
@@ -2421,26 +2214,13 @@
     "question": "Welcher Satz verwendet den korrekten Gebrauch des Perfekts?",
     "choices": {
       "A": "Ich habe ins Kino gegangen.",
-      "B": "Ich bin ins Kino gegangen.",
+      "B": "Ich gehe ins Kino gegangen.",
       "C": "Ich war ins Kino gegangen.",
-      "D": "Ich gehe ins Kino gegangen."
+      "D": "Ich bin ins Kino gegangen."
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 7,
     "explanation": "Verben der Bewegung (wie 'gehen') bilden das Perfekt mit dem Hilfsverb 'sein'. Daher 'Ich bin ins Kino gegangen'."
-  },
-  {
-    "id": "AP_German_188",
-    "question": "Was ist eine typische deutsche 'Brotzeit'?",
-    "choices": {
-      "A": "Ein warmes Abendessen.",
-      "B": "Eine leichte Mahlzeit am Nachmittag, oft mit Brot, Wurst und Käse.",
-      "C": "Ein süßes Dessert.",
-      "D": "Ein Frühstück mit Eiern und Speck."
-    },
-    "answer": "B",
-    "difficulty": 7,
-    "explanation": "Die 'Brotzeit', besonders in Süddeutschland, ist eine deftige Zwischenmahlzeit am Nachmittag oder Abend, die typischerweise aus Brot, Aufschnitt und Käse besteht."
   },
   {
     "id": "AP_German_189",
@@ -2499,11 +2279,11 @@
     "question": "Welcher Satz verwendet den korrekten Dativ nach der Präposition 'zu'?",
     "choices": {
       "A": "Ich gehe zu mein Haus.",
-      "B": "Ich gehe zu meinem Haus.",
+      "B": "Ich gehe zu meinem Hause.",
       "C": "Ich gehe zu mein Hause.",
-      "D": "Ich gehe zu meinem Hause."
+      "D": "Ich gehe zu meinem Haus."
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 8,
     "explanation": "Die Präposition 'zu' verlangt immer den Dativ. 'Haus' ist Neutrum, daher ist der Dativ 'meinem Haus'. Die Endung '-e' bei 'Hause' ist veraltet oder in bestimmten festen Wendungen üblich, aber 'meinem Haus' ist die Standardform."
   },
@@ -2577,26 +2357,13 @@
     "question": "Welcher Konjunktiv wird in diesem Satz verwendet? \"Wenn ich mehr Zeit hätte, würde ich öfter reisen.\"",
     "choices": {
       "A": "Konjunktiv I",
-      "B": "Konjunktiv II",
+      "B": "Imperativ",
       "C": "Indikativ",
-      "D": "Imperativ"
+      "D": "Konjunktiv II"
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 5,
     "explanation": "Der Satz drückt eine irreale Bedingung in der Gegenwart aus, was typisch für den Konjunktiv II ist. Die Form 'hätte' und 'würde reisen' sind Kennzeichen des Konjunktiv II."
-  },
-  {
-    "id": "AP_German_200",
-    "question": "Was bedeutet die Redewendung \"Tomaten auf den Augen haben\"?",
-    "choices": {
-      "A": "Sehr hungrig sein",
-      "B": "Etwas Offensichtliches nicht sehen können",
-      "C": "Verliebt sein",
-      "D": "Geld verschwenden"
-    },
-    "answer": "B",
-    "difficulty": 6,
-    "explanation": "Diese Redewendung beschreibt jemanden, der etwas so Deutliches übersieht, dass es ist, als hätte er Tomaten vor den Augen, die die Sicht behindern."
   },
   {
     "id": "AP_German_201",
@@ -2638,19 +2405,6 @@
     "explanation": "Gemütlich bedeutet, dass etwas behaglich, bequem und angenehm ist."
   },
   {
-    "id": "AP_German_204",
-    "question": "Welcher Satz ist grammatikalisch korrekt?",
-    "choices": {
-      "A": "Ich gehe ins Kino mit mein Freund.",
-      "B": "Ich gehe mit meinem Freund ins Kino.",
-      "C": "Ich gehe ins Kino mit meine Freund.",
-      "D": "Ich gehe mit mein Freund ins Kino."
-    },
-    "answer": "B",
-    "difficulty": 6,
-    "explanation": "Nach der Präposition 'mit' folgt immer der Dativ. 'Mein Freund' im Nominativ wird zu 'meinem Freund' im Dativ."
-  },
-  {
     "id": "AP_German_205",
     "question": "Was bedeutet \"Fernweh\"?",
     "choices": {
@@ -2677,19 +2431,6 @@
     "explanation": "Das Perfekt wird mit einer Form von 'haben' oder 'sein' als Hilfsverb und dem Partizip II des Vollverbs gebildet. Hier ist es 'hat geschrieben'."
   },
   {
-    "id": "AP_German_207",
-    "question": "Was ist ein typisches deutsches Gericht?",
-    "choices": {
-      "A": "Sushi",
-      "B": "Pizza",
-      "C": "Bratwurst",
-      "D": "Tacos"
-    },
-    "answer": "C",
-    "difficulty": 5,
-    "explanation": "Bratwurst ist eine weit verbreitete und traditionelle deutsche Wurstspezialität."
-  },
-  {
     "id": "AP_German_208",
     "question": "Welche Präposition erfordert den Genitiv?",
     "choices": {
@@ -2714,19 +2455,6 @@
     "answer": "C",
     "difficulty": 5,
     "explanation": "Ostern ist ein wichtiges christliches Fest, das die Auferstehung Jesu Christi feiert und im Frühling stattfindet."
-  },
-  {
-    "id": "AP_German_210",
-    "question": "Welches Wort ist ein Adjektiv?",
-    "choices": {
-      "A": "schnell",
-      "B": "schnell",
-      "C": "schnell",
-      "D": "schnell"
-    },
-    "answer": "A",
-    "difficulty": 5,
-    "explanation": " 'Schnell' beschreibt eine Eigenschaft (wie schnell etwas ist) und ist daher ein Adjektiv. Die anderen Optionen sind vermutlich Fehler, da alle gleich sind."
   },
   {
     "id": "AP_German_211",
@@ -2759,26 +2487,13 @@
     "question": "Welcher Satz verwendet das starke Verb \"sehen\" korrekt im Präteritum?",
     "choices": {
       "A": "Ich sehe den Film gestern.",
-      "B": "Ich sah den Film gestern.",
+      "B": "Ich werde den Film gestern sehen.",
       "C": "Ich habe den Film gestern gesehen.",
-      "D": "Ich werde den Film gestern sehen."
+      "D": "Ich sah den Film gestern."
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 5,
     "explanation": " 'Sah' ist die Präteritumform von 'sehen'. Da 'gestern' angegeben ist, ist das Präteritum hier eine passende Zeitform, obwohl das Perfekt (C) auch möglich wäre."
-  },
-  {
-    "id": "AP_German_214",
-    "question": "Was bedeutet \"Schadenfreude\"?",
-    "choices": {
-      "A": "Die Freude über den eigenen Erfolg",
-      "B": "Das Bedauern über das Unglück anderer",
-      "C": "Die Freude über das Unglück oder Missgeschick anderer",
-      "D": "Die Angst vor Schaden"
-    },
-    "answer": "C",
-    "difficulty": 6,
-    "explanation": "Schadenfreude ist ein deutsches Wort, das die Freude beschreibt, die man empfindet, wenn jemand anderem etwas Schlechtes passiert."
   },
   {
     "id": "AP_German_215",
@@ -2798,11 +2513,11 @@
     "question": "Was ist die \"Glocke\" in Deutschland?",
     "choices": {
       "A": "Ein Musikinstrument",
-      "B": "Ein religiöses Symbol und ein Teil von Kirchen",
+      "B": "Eine Art von Kuchen",
       "C": "Ein Werkzeug zum Nachschlagen von Informationen",
-      "D": "Eine Art von Kuchen"
+      "D": "Ein religiöses Symbol und ein Teil von Kirchen"
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 5,
     "explanation": "Glocken sind traditionell in Kirchtürmen zu finden und läuten zu Gottesdiensten oder zu besonderen Anlässen."
   },
@@ -2815,7 +2530,7 @@
       "C": "Ich weiß nicht, er ist wo.",
       "D": "Ich weiß nicht, wo er ist."
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 6,
     "explanation": "In deutschen Nebensätzen steht das konjugierte Verb am Ende. Hier ist 'ist' das konjugierte Verb von 'er ist'."
   },
@@ -2898,19 +2613,6 @@
     "explanation": "In dieser Art von Frage (mit 'doch') drückt der Sprecher aus, dass er erwartet, dass die andere Person mitkommt, oder er ist leicht überrascht, wenn es nicht so sein sollte. Es ist keine reine Bestätigungsfrage im Sinne von 'Ja/Nein'."
   },
   {
-    "id": "AP_German_224",
-    "question": "Welcher Satz verwendet den Konjunktiv II korrekt, um eine irreale Bedingung auszudrücken?",
-    "choices": {
-      "A": "Wenn ich Zeit gehabt hätte, wäre ich gekommen.",
-      "B": "Wenn ich Zeit gehabt hätte, würde ich gekommen sein.",
-      "C": "Wenn ich Zeit gehabt hätte, bin ich gekommen.",
-      "D": "Wenn ich Zeit gehabt hätte, werde ich gekommen sein."
-    },
-    "answer": "A",
-    "difficulty": 7,
-    "explanation": "Der Konjunktiv II wird hier korrekt verwendet, um eine irreale Bedingung in der Vergangenheit auszudrücken ('hätte gehabt') mit einer entsprechenden Folge im Konjunktiv II ('wäre gekommen'). Option B ist grammatisch falsch, da die Struktur 'würde + Infinitiv Perfekt' nicht die typische Form für reale oder irreale Bedingungen ist. Option C verwendet das Indikativ. Option D ist ebenfalls grammatisch falsch."
-  },
-  {
     "id": "AP_German_225",
     "question": "Welches Wort passt am besten in die Lücke: 'Die alte Frau erzählte uns _______ Geschichten aus ihrer Kindheit.'",
     "choices": {
@@ -2922,19 +2624,6 @@
     "answer": "A",
     "difficulty": 6,
     "explanation": "'Spannend' ist hier das Adjektiv, das die Geschichten beschreibt. 'Spannendste' wäre der Superlativ, der eine Steigerung erfordert. 'Spannendlich' existiert nicht als Adjektiv. 'Gespannt' ist ein Adjektiv, das sich auf eine Person bezieht, die Erwartung oder Neugier verspürt."
-  },
-  {
-    "id": "AP_German_226",
-    "question": "Was bedeutet die Redewendung 'jemandem auf den Wecker gehen'?",
-    "choices": {
-      "A": "Jemanden wecken.",
-      "B": "Jemanden stören oder nerven.",
-      "C": "Jemanden zur Eile antreiben.",
-      "D": "Jemanden etwas vergessen lassen."
-    },
-    "answer": "B",
-    "difficulty": 7,
-    "explanation": "Die Redewendung 'jemandem auf den Wecker gehen' bedeutet, jemanden zu nerven oder zu stören. Die anderen Optionen sind nicht korrekt."
   },
   {
     "id": "AP_German_227",
@@ -2976,28 +2665,15 @@
     "explanation": "Das Oktoberfest ist weltweit bekannt als ein großes Bierfest und Volksfest, das hauptsächlich in München gefeiert wird. Die anderen Optionen beschreiben andere Arten von Veranstaltungen."
   },
   {
-    "id": "AP_German_230",
-    "question": "Welches Wort ist ein Synonym für 'gemütlich'?",
-    "choices": {
-      "A": "hektisch",
-      "B": "bequem",
-      "C": "langweilig",
-      "D": "gefährlich"
-    },
-    "answer": "B",
-    "difficulty": 6,
-    "explanation": "'Gemütlich' beschreibt eine Atmosphäre oder einen Zustand der Behaglichkeit und Bequemlichkeit. 'Bequem' ist ein gutes Synonym dafür. 'Hektisch', 'langweilig' und 'gefährlich' haben gegenteilige oder völlig andere Bedeutungen."
-  },
-  {
     "id": "AP_German_231",
     "question": "Wählen Sie die korrekte Präposition und den richtigen Kasus:",
     "choices": {
       "A": "Er geht nach Haus.",
-      "B": "Er geht nach Hause.",
+      "B": "Er geht zu Hause.",
       "C": "Er geht zu Haus.",
-      "D": "Er geht zu Hause."
+      "D": "Er geht nach Hause."
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 6,
     "explanation": "Die Präposition 'nach' wird mit Ortsnamen und 'Hause' (wenn es eine Richtung bezeichnet) verwendet. 'Zu Hause' bedeutet 'at home' (Ort). 'Nach Haus' ist grammatisch nicht korrekt. 'Zu Haus' ist veraltet oder dialektal. Die korrekte Form für die Richtung ist 'nach Hause'."
   },
@@ -3013,19 +2689,6 @@
     "answer": "B",
     "difficulty": 7,
     "explanation": "Die Hanse (oder Hansebund) war ein mächtiger Handelsbund mittelalterlicher Städte, der den Handel in Nord- und Osteuropa dominierte. Die anderen Optionen sind falsch."
-  },
-  {
-    "id": "AP_German_233",
-    "question": "Welcher Satz ist im Passiv?",
-    "choices": {
-      "A": "Der Lehrer erklärt die Regel.",
-      "B": "Die Regel wird vom Lehrer erklärt.",
-      "C": "Der Lehrer hat die Regel erklärt.",
-      "D": "Der Lehrer erklärt die Regel gern."
-    },
-    "answer": "B",
-    "difficulty": 5,
-    "explanation": "Der Passivsatz wird durch die Form von 'werden' + Partizip II gebildet. In Option B ist dies 'wird erklärt'."
   },
   {
     "id": "AP_German_234",
@@ -3054,19 +2717,6 @@
     "explanation": "Der Genitiv kann durch die Possessivkonstruktion mit '-s' am Substantiv ausgedrückt werden. 'Peters Freund' ist die korrekte Genitivform. 'Der Freund von Peter' ist eine alternative Konstruktion, aber 'Peters Freund' ist die direkte Genitivform. C und D sind grammatisch falsch."
   },
   {
-    "id": "AP_German_236",
-    "question": "Welches Wort passt nicht in die Reihe?",
-    "choices": {
-      "A": "der Apfel",
-      "B": "die Birne",
-      "C": "die Kartoffel",
-      "D": "die Banane"
-    },
-    "answer": "C",
-    "difficulty": 5,
-    "explanation": "Apfel, Birne und Banane sind Obstsorten. Die Kartoffel ist ein Gemüse (eine Knolle)."
-  },
-  {
     "id": "AP_German_237",
     "question": "Welcher Satz verwendet den Relativsatz korrekt?",
     "choices": {
@@ -3084,11 +2734,11 @@
     "question": "Was ist die Bedeutung von 'Feierabend'?",
     "choices": {
       "A": "Ein religiöser Feiertag.",
-      "B": "Das Ende der Arbeitszeit am Tag.",
+      "B": "Die Mittagspause.",
       "C": "Eine festliche Veranstaltung.",
-      "D": "Die Mittagspause."
+      "D": "Das Ende der Arbeitszeit am Tag."
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 5,
     "explanation": "'Feierabend' bezeichnet das Ende der täglichen Arbeitszeit, wenn man nach Hause geht und den Rest des Tages frei hat."
   },
@@ -3110,39 +2760,13 @@
     "question": "Welcher Satz drückt eine Empfehlung aus?",
     "choices": {
       "A": "Du musst das Buch lesen.",
-      "B": "Du solltest das Buch lesen.",
+      "B": "Du darfst das Buch lesen.",
       "C": "Du wirst das Buch lesen.",
-      "D": "Du darfst das Buch lesen."
+      "D": "Du solltest das Buch lesen."
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 6,
     "explanation": "Das Modalverb 'sollen' im Konjunktiv II ('solltest') wird verwendet, um eine Empfehlung oder einen Rat auszudrücken. 'Müssen' drückt eine Notwendigkeit aus, 'werden' eine zukünftige Handlung und 'dürfen' eine Erlaubnis."
-  },
-  {
-    "id": "AP_German_241",
-    "question": "Was ist die Hauptstadt von Österreich?",
-    "choices": {
-      "A": "Berlin",
-      "B": "Wien",
-      "C": "Zürich",
-      "D": "Bern"
-    },
-    "answer": "B",
-    "difficulty": 5,
-    "explanation": "Wien ist die Hauptstadt von Österreich. Berlin ist die Hauptstadt von Deutschland, Zürich und Bern sind wichtige Städte in der Schweiz."
-  },
-  {
-    "id": "AP_German_242",
-    "question": "Welches Wort ist ein Adverb?",
-    "choices": {
-      "A": "schnell",
-      "B": "Schnelligkeit",
-      "C": "schnelllich",
-      "D": "schnellste"
-    },
-    "answer": "A",
-    "difficulty": 6,
-    "explanation": "'Schnell' kann als Adjektiv (z.B. ein schnelles Auto) oder als Adverb (z.B. er fährt schnell) verwendet werden. 'Schnelligkeit' ist ein Nomen. 'Schnelllich' ist kein gebräuchliches Wort. 'Schnellste' ist die Superlativform des Adjektivs."
   },
   {
     "id": "AP_German_243",
@@ -3197,19 +2821,6 @@
     "explanation": "In der indirekten Rede im Deutschen wird im Allgemeinen der Konjunktiv I verwendet. Wenn der Konjunktiv I nicht vom Indikativ zu unterscheiden ist, wird der Konjunktiv II verwendet. Hier ist 'habe' die korrekte Form des Konjunktiv I. Option B verwendet Konjunktiv II, was auch akzeptabel wäre, aber Konjunktiv I ist primär. Option C verwendet Indikativ, was falsch ist. Option D lässt 'dass' weg, was möglich ist, aber die Verbform ist falsch."
   },
   {
-    "id": "AP_German_247",
-    "question": "Was bedeutet die Abkürzung 'z.B.'?",
-    "choices": {
-      "A": "zum Beispiel",
-      "B": "zu Beginn",
-      "C": "zu Bedenken",
-      "D": "zurückbehalten"
-    },
-    "answer": "A",
-    "difficulty": 5,
-    "explanation": "'z.B.' ist die Abkürzung für 'zum Beispiel' und wird verwendet, um Beispiele aufzuzählen."
-  },
-  {
     "id": "AP_German_248",
     "question": "Welcher Satz ist im Futur I?",
     "choices": {
@@ -3227,11 +2838,11 @@
     "question": "Was ist die Bedeutung von 'Heimat'?",
     "choices": {
       "A": "Ein beliebiger Ort zum Leben.",
-      "B": "Der Geburtsort oder Wohnort, der starke emotionale Bindungen hervorruft.",
+      "B": "Ein Arbeitsplatz.",
       "C": "Ein Ort, an dem man Urlaub macht.",
-      "D": "Ein Arbeitsplatz."
+      "D": "Der Geburtsort oder Wohnort, der starke emotionale Bindungen hervorruft."
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 7,
     "explanation": "'Heimat' ist ein sehr bedeutungsvolles Wort im Deutschen, das über den reinen Wohnort hinausgeht und ein tiefes Gefühl der Zugehörigkeit, Identität und Verbundenheit beschreibt."
   },
@@ -3262,19 +2873,6 @@
     "explanation": "Der Konjunktiv II drückt Wünsche, irreale Bedingungen oder Höflichkeit aus. 'Wenn ich doch jetzt im Urlaub wäre!' verwendet 'wäre' (Konjunktiv II von 'sein'), um einen aktuellen, unerfüllbaren Wunsch auszudrücken."
   },
   {
-    "id": "AP_German_252",
-    "question": "Was bedeutet die Redewendung 'jemandem die Daumen drücken'?",
-    "choices": {
-      "A": "Jemandem Kraft geben",
-      "B": "Jemandem Glück wünschen",
-      "C": "Jemandem helfen",
-      "D": "Jemandem danken"
-    },
-    "answer": "B",
-    "difficulty": 5,
-    "explanation": "'Die Daumen drücken' ist eine gängige deutsche Redewendung, die bedeutet, jemandem Glück oder Erfolg zu wünschen, oft in einer herausfordernden Situation."
-  },
-  {
     "id": "AP_German_253",
     "question": "Welches Wort ist kein Teil des menschlichen Körpers?",
     "choices": {
@@ -3299,19 +2897,6 @@
     "answer": "A",
     "difficulty": 5,
     "explanation": "Der Plural von 'das Auto' ist regelmäßig und wird mit '-s' gebildet: 'die Autos'."
-  },
-  {
-    "id": "AP_German_255",
-    "question": "Welcher Satz ist grammatikalisch korrekt?",
-    "choices": {
-      "A": "Ich gehe gern spazieren in dem Park.",
-      "B": "Ich gehe gern spazieren im Park.",
-      "C": "Ich gehe gern spazieren an dem Park.",
-      "D": "Ich gehe gern spazieren auf dem Park."
-    },
-    "answer": "B",
-    "difficulty": 6,
-    "explanation": "'Im Park' ist die Kontraktion von 'in dem Park'. 'In' mit Dativ wird hier verwendet, um einen Ort anzugeben ('wo?'). Die Optionen C und D sind falsch, da 'an' und 'auf' hier keine passende Bedeutung haben oder die falsche Präposition verwenden."
   },
   {
     "id": "AP_German_256",
@@ -3345,10 +2930,10 @@
     "choices": {
       "A": "Ich spiele.",
       "B": "Ich spielte.",
-      "C": "Ich habe gespielt.",
-      "D": "Ich werde spielen."
+      "C": "Ich werde spielen.",
+      "D": "Ich habe gespielt."
     },
-    "answer": "C",
+    "answer": "D",
     "difficulty": 5,
     "explanation": "Das Perfekt wird mit dem Hilfsverb 'haben' oder 'sein' im Präsens und dem Partizip II des Hauptverbs gebildet. 'Ich habe gespielt' ist das Perfekt von 'spielen'."
   },
@@ -3362,7 +2947,8 @@
       "D": "Sag mal, gib mir das Buch."
     },
     "answer": "C",
-    "explanation": "Die Verwendung von 'Könnten Sie' (Konjunktiv II) und 'bitte' macht diese Anfrage zur höflichsten Form. Option B ist auch höflich, aber weniger formell als C. Option A und D sind direkte Aufforderungen."
+    "explanation": "Die Verwendung von 'Könnten Sie' (Konjunktiv II) und 'bitte' macht diese Anfrage zur höflichsten Form. Option B ist auch höflich, aber weniger formell als C. Option A und D sind direkte Aufforderungen.",
+    "difficulty": 4
   },
   {
     "id": "AP_German_260",
@@ -3404,19 +2990,6 @@
     "explanation": "Dieses Sprichwort betont die Vorteile des frühen Aufstehens und Produktivseins am Morgen."
   },
   {
-    "id": "AP_German_263",
-    "question": "Welcher Satz ist im Passiv?",
-    "choices": {
-      "A": "Der Hund jagt die Katze.",
-      "B": "Die Katze wird vom Hund gejagt.",
-      "C": "Der Hund jagte die Katze.",
-      "D": "Die Katze jagt den Hund."
-    },
-    "answer": "B",
-    "difficulty": 6,
-    "explanation": "Der Passivsatz wird mit dem Hilfsverb 'werden' und dem Partizip II des Hauptverbs gebildet. Hier wird die Katze zum Subjekt, und die Handlung wird an ihr ausgeführt."
-  },
-  {
     "id": "AP_German_264",
     "question": "Wähle das richtige Adjektiv, um den Satz zu vervollständigen: 'Das Wetter ist heute ____.'",
     "choices": {
@@ -3456,19 +3029,6 @@
     "explanation": "Der Relativsatz muss sich auf 'der Mann' beziehen. Da 'der Mann' das Subjekt des Hauptsatzes ist und das Subjekt im Relativsatz sein soll, wird das maskuline Nominativ-Relativpronomen 'der' verwendet. 'Wo' wird für Orte verwendet, 'wen' für den Akkusativ und 'wem' für den Dativ."
   },
   {
-    "id": "AP_German_267",
-    "question": "Was bedeutet das Wort 'gemütlich'?",
-    "choices": {
-      "A": "Hektisch",
-      "B": "Unbequem",
-      "C": "Warm und behaglich",
-      "D": "Laut"
-    },
-    "answer": "C",
-    "difficulty": 6,
-    "explanation": "'Gemütlich' beschreibt eine Atmosphäre oder ein Gefühl von Wärme, Behaglichkeit, Entspannung und Wohlbefinden."
-  },
-  {
     "id": "AP_German_268",
     "question": "Welches Wort ist ein Nomen (Substantiv)?",
     "choices": {
@@ -3485,12 +3045,12 @@
     "id": "AP_German_269",
     "question": "Welches Bundesland liegt im Norden Deutschlands?",
     "choices": {
-      "A": "Bayern",
+      "A": "Schleswig-Holstein",
       "B": "Sachsen",
-      "C": "Schleswig-Holstein",
+      "C": "Bayern",
       "D": "Hessen"
     },
-    "answer": "C",
+    "answer": "A",
     "difficulty": 6,
     "explanation": "Schleswig-Holstein ist das nördlichste Bundesland Deutschlands und grenzt an Dänemark und die Nord- und Ostsee."
   },
@@ -3499,26 +3059,13 @@
     "question": "Welcher Satz verwendet den Konjunktiv I (oder eine indirekte Rede-Form)?",
     "choices": {
       "A": "Er sagt, er ist müde.",
-      "B": "Er sagt, er sei müde.",
+      "B": "Er sagt, müde er ist.",
       "C": "Er sagte, er war müde.",
-      "D": "Er sagt, müde er ist."
+      "D": "Er sagt, er sei müde."
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 7,
     "explanation": "Wenn über das Gesagte einer anderen Person berichtet wird (indirekte Rede), wird oft der Konjunktiv I verwendet. 'Er sagt, er sei müde' ist die korrekte indirekte Rede im Konjunktiv I. 'Er sagt, er ist müde' verwendet den Indikativ, was im gesprochenen Deutsch häufig vorkommt, aber formell weniger korrekt ist."
-  },
-  {
-    "id": "AP_German_271",
-    "question": "Was bedeutet die Abkürzung 'z.B.'?",
-    "choices": {
-      "A": "zum Beispiel",
-      "B": "zu Beginn",
-      "C": "zwischendurch",
-      "D": "zur besonderen Erinnerung"
-    },
-    "answer": "A",
-    "difficulty": 5,
-    "explanation": "'z.B.' ist die gebräuchliche Abkürzung für 'zum Beispiel' und wird verwendet, um Beispiele aufzuführen."
   },
   {
     "id": "AP_German_272",
@@ -3532,19 +3079,6 @@
     "answer": "D",
     "difficulty": 6,
     "explanation": "'Kummer' bezeichnet tiefen Kummer, Sorge oder Traurigkeit."
-  },
-  {
-    "id": "AP_German_273",
-    "question": "Welcher Satz ist im Futur I?",
-    "choices": {
-      "A": "Ich gehe jetzt.",
-      "B": "Ich ging gestern.",
-      "C": "Ich werde gehen.",
-      "D": "Ich bin gegangen."
-    },
-    "answer": "C",
-    "difficulty": 5,
-    "explanation": "Das Futur I wird mit dem Hilfsverb 'werden' im Präsens und dem Infinitiv des Hauptverbs gebildet. 'Ich werde gehen' drückt eine zukünftige Handlung aus."
   },
   {
     "id": "AP_German_274",
@@ -3577,11 +3111,11 @@
     "question": "Welches Wort passt am besten in die Lücke: Das Unternehmen hat ______________ die Umweltauflagen erfüllt.",
     "choices": {
       "A": "widerwillig",
-      "B": "wider Erwarten",
+      "B": "wider alles",
       "C": "wider aller Erwartung",
-      "D": "wider alles"
+      "D": "wider Erwarten"
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 6,
     "explanation": "Die idiomatische Wendung 'wider Erwarten' bedeutet 'entgegen den Erwartungen'. Die anderen Optionen sind grammatisch nicht korrekt oder weniger gebräuchlich."
   },
@@ -3638,28 +3172,15 @@
     "explanation": "Das Relativpronomen muss sich auf 'das Buch' (sächlich, Akkusativ) beziehen. 'Das' ist die korrekte Form im Akkusativ für sächliche Nomen."
   },
   {
-    "id": "AP_German_281",
-    "question": "Was bedeutet die Redewendung 'jemandem auf den Wecker gehen'?",
-    "choices": {
-      "A": "jemanden wecken",
-      "B": "jemanden stören oder nerven",
-      "C": "jemanden zur Arbeit schicken",
-      "D": "jemanden beruhigen"
-    },
-    "answer": "B",
-    "difficulty": 7,
-    "explanation": "Diese Redewendung wird verwendet, um auszudrücken, dass jemand eine andere Person nervt oder stört."
-  },
-  {
     "id": "AP_German_282",
     "question": "Wählen Sie die korrekte Perfektform: Sie ______ gerade zu Hause angekommen.",
     "choices": {
       "A": "hat",
-      "B": "ist",
+      "B": "sind",
       "C": "war",
-      "D": "sind"
+      "D": "ist"
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 5,
     "explanation": "Das Perfekt von 'ankommen' wird mit 'sein' gebildet, da es eine Richtungsänderung oder Bewegung ausdrückt. 'Sie' bezieht sich hier auf eine einzelne weibliche Person (Singular)."
   },
@@ -3694,11 +3215,11 @@
     "question": "Was ist die Bedeutung von 'Heimweh'?",
     "choices": {
       "A": "Freude über die Heimat",
-      "B": "Sehnsucht nach der Heimat",
+      "B": "Stolz auf die Heimat",
       "C": "Angst vor der Heimat",
-      "D": "Stolz auf die Heimat"
+      "D": "Sehnsucht nach der Heimat"
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 5,
     "explanation": "'Heimweh' beschreibt das Gefühl der Sehnsucht nach der eigenen Heimat, wenn man von ihr weg ist."
   },
@@ -3714,19 +3235,6 @@
     "answer": "C",
     "difficulty": 5,
     "explanation": "Die Frage ist etwas redundant, da sie nach einem Synonym für 'berühmt' fragt und 'berühmt' selbst als Option anbietet. 'Bekannt' ist ein engeres Synonym, aber 'berühmt' ist das exakteste."
-  },
-  {
-    "id": "AP_German_287",
-    "question": "Welcher Fall wird nach der Präposition 'wegen' verwendet?",
-    "choices": {
-      "A": "Nominativ",
-      "B": "Genitiv",
-      "C": "Dativ",
-      "D": "Akkusativ"
-    },
-    "answer": "B",
-    "difficulty": 7,
-    "explanation": "Streng genommen verlangt 'wegen' den Genitiv. Umgangssprachlich wird aber auch oft der Dativ verwendet."
   },
   {
     "id": "AP_German_288",
@@ -3820,28 +3328,15 @@
     "explanation": "Nach 'wünschte' folgt eine irreale Aussage, die den Konjunktiv II erfordert. Die korrekte Form für die 2. Person Singular von 'sein' im Konjunktiv II ist 'wärst'."
   },
   {
-    "id": "AP_German_295",
-    "question": "Was bedeutet das Wort 'gemütlich'?",
-    "choices": {
-      "A": "hektisch",
-      "B": "unbequem",
-      "C": "behaglich, angenehm",
-      "D": "gefährlich"
-    },
-    "answer": "C",
-    "difficulty": 6,
-    "explanation": "'Gemütlich' beschreibt eine Atmosphäre der Behaglichkeit, des Wohlfühlens und der Entspannung."
-  },
-  {
     "id": "AP_German_296",
     "question": "Welches Relativpronomen ist korrekt: Die Frau, _______ ich geholfen habe, war sehr dankbar.",
     "choices": {
       "A": "deren",
-      "B": "der",
+      "B": "die",
       "C": "dem",
-      "D": "die"
+      "D": "der"
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 5,
     "explanation": "Das Relativpronomen bezieht sich auf 'Die Frau' (feminin, Dativ), da sie die Person ist, der geholfen wurde. 'der' ist die korrekte Form im Dativ für feminine Nomen."
   },
@@ -3876,11 +3371,11 @@
     "question": "Was bedeutet die Redewendung 'Ich verstehe nur Bahnhof'?",
     "choices": {
       "A": "Ich verstehe alles.",
-      "B": "Ich verstehe nichts.",
+      "B": "Ich verstehe nur Züge.",
       "C": "Ich verstehe ein bisschen.",
-      "D": "Ich verstehe nur Züge."
+      "D": "Ich verstehe nichts."
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 7,
     "explanation": "Diese Redewendung drückt aus, dass man etwas überhaupt nicht versteht oder versteht, als würde man nur Bahnhofssignale hören."
   },

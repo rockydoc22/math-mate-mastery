@@ -1,16 +1,16 @@
 [
   {
-    "id": "AP_Micro_1",
-    "question": "A perfectly competitive firm should shut down in the short run when:",
+    "id": "AP_Microeconomics_23",
+    "question": "A consumer maximizes utility when the marginal utility per dollar spent is equal across all goods consumed. This is known as the:",
     "choices": {
-      "A": "Price is below average total cost",
-      "B": "Price is below average variable cost",
-      "C": "Marginal cost exceeds marginal revenue",
-      "D": "Total revenue is less than total cost"
+      "A": "Law of Diminishing Marginal Returns.",
+      "B": "Income Effect.",
+      "C": "Substitution Effect.",
+      "D": "Equimarginal Principle."
     },
-    "answer": "B",
-    "difficulty": 7,
-    "explanation": "Shut down when P < AVC because the firm cannot cover variable costs."
+    "answer": "D",
+    "difficulty": 4,
+    "explanation": "The Equimarginal Principle states that utility is maximized when the ratio of marginal utility to price is the same for all goods, meaning consumers get the same 'bang for their buck' from each additional dollar spent on any good."
   },
   {
     "id": "AP_Micro_2",
@@ -39,17 +39,17 @@
     "explanation": "Price increase of X leads to decreased demand for Y—characteristic of complements."
   },
   {
-    "id": "AP_Micro_4",
-    "question": "A monopolist maximizes profit by producing where:",
+    "id": "AP_Microeconomics_85",
+    "question": "The law of diminishing marginal utility states that as a consumer consumes more units of a good, the:",
     "choices": {
-      "A": "P = MC",
-      "B": "MR = MC",
-      "C": "ATC is minimized",
-      "D": "TR is maximized"
+      "A": "Total utility decreases.",
+      "B": "Marginal utility gained from each additional unit decreases.",
+      "C": "Price of the good decreases.",
+      "D": "Demand for the good increases."
     },
     "answer": "B",
-    "difficulty": 6,
-    "explanation": "All profit-maximizing firms produce where MR = MC."
+    "difficulty": 4,
+    "explanation": "The law of diminishing marginal utility is a fundamental concept in consumer theory. It posits that as a person increases their consumption of a particular good or service, the additional satisfaction (marginal utility) they derive from each subsequent unit will eventually decrease, assuming consumption of other goods remains constant."
   },
   {
     "id": "AP_Micro_5",
@@ -95,11 +95,11 @@
     "question": "In the prisoners' dilemma, the dominant strategy leads to:",
     "choices": {
       "A": "Best outcome for both",
-      "B": "A non-Pareto optimal outcome",
+      "B": "No Nash equilibrium",
       "C": "One winner, one loser",
-      "D": "No Nash equilibrium"
+      "D": "A non-Pareto optimal outcome"
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 7,
     "explanation": "Both defecting is Nash equilibrium but not Pareto optimal—cooperation would benefit both."
   },
@@ -108,11 +108,11 @@
     "question": "If MC shifts up for a monopolist:",
     "choices": {
       "A": "Q increases, P decreases",
-      "B": "Q decreases, P increases",
+      "B": "Both decrease",
       "C": "Both increase",
-      "D": "Both decrease"
+      "D": "Q decreases, P increases"
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 7,
     "explanation": "Higher MC → lower MR=MC quantity → higher price on demand curve."
   },
@@ -134,11 +134,11 @@
     "question": "A negative externality causes the market to produce:",
     "choices": {
       "A": "Less than optimal",
-      "B": "More than optimal",
+      "B": "At price above social MC",
       "C": "Exactly optimal",
-      "D": "At price above social MC"
+      "D": "More than optimal"
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 6,
     "explanation": "Social cost > private cost, so the market overproduces."
   },
@@ -173,11 +173,11 @@
     "question": "Public goods are:",
     "choices": {
       "A": "Rival and excludable",
-      "B": "Non-rival and non-excludable",
-      "C": "Rival and non-excludable",
+      "B": "Rival and non-excludable",
+      "C": "Non-rival and non-excludable",
       "D": "Non-rival and excludable"
     },
-    "answer": "B",
+    "answer": "C",
     "difficulty": 5,
     "explanation": "Public goods like national defense are non-rival and non-excludable."
   },
@@ -198,12 +198,12 @@
     "id": "AP_Micro_16",
     "question": "The Lorenz curve illustrates:",
     "choices": {
-      "A": "Inflation-unemployment tradeoff",
-      "B": "Income distribution inequality",
+      "A": "Income distribution inequality",
+      "B": "Inflation-unemployment tradeoff",
       "C": "Marginal cost",
       "D": "Consumer surplus"
     },
-    "answer": "B",
+    "answer": "A",
     "difficulty": 6,
     "explanation": "The Lorenz curve plots cumulative income vs. cumulative population."
   },
@@ -238,11 +238,11 @@
     "question": "Economies of scale occur when:",
     "choices": {
       "A": "Short-run AC increases",
-      "B": "Long-run AC decreases as output increases",
+      "B": "Diminishing returns",
       "C": "MC > ATC",
-      "D": "Diminishing returns"
+      "D": "Long-run AC decreases as output increases"
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 6,
     "explanation": "Increasing production leads to lower long-run average costs."
   },
@@ -251,52 +251,39 @@
     "question": "A monopsony has:",
     "choices": {
       "A": "One seller of labor",
-      "B": "One buyer of labor",
+      "B": "Many competing employers",
       "C": "Wages above competitive level",
-      "D": "Many competing employers"
+      "D": "One buyer of labor"
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 7,
     "explanation": "Monopsony = single buyer of labor, paying below competitive wages."
   },
   {
-    "id": "AP_Microeconomics_21",
-    "question": "A perfectly competitive firm's demand curve is:",
+    "id": "AP_Micro_1",
+    "question": "A perfectly competitive firm should shut down in the short run when:",
     "choices": {
-      "A": "Downward sloping, reflecting market power.",
-      "B": "Perfectly elastic, set by the market price.",
-      "C": "Upward sloping, as price increases quantity demanded.",
-      "D": "Unit elastic, with changes in quantity leaving total revenue unchanged."
+      "A": "Price is below average total cost",
+      "B": "Price is below average variable cost",
+      "C": "Marginal cost exceeds marginal revenue",
+      "D": "Total revenue is less than total cost"
     },
     "answer": "B",
-    "difficulty": 3,
-    "explanation": "In perfect competition, individual firms are price takers. They can sell any quantity at the prevailing market price, making their demand curve horizontal and perfectly elastic."
-  },
-  {
-    "id": "AP_Microeconomics_22",
-    "question": "Which of the following is most likely to lead to a decrease in the equilibrium price and quantity of a normal good in a market?",
-    "choices": {
-      "A": "An increase in consumer income.",
-      "B": "A decrease in the price of a complementary good.",
-      "C": "A decrease in the cost of production.",
-      "D": "A decrease in consumer income and an increase in the price of a substitute good."
-    },
-    "answer": "D",
     "difficulty": 7,
-    "explanation": "A decrease in consumer income shifts the demand for a normal good leftward (decreasing equilibrium price and quantity). An increase in the price of a substitute good also shifts demand leftward. Both shifts lead to a lower equilibrium price and quantity."
+    "explanation": "Shut down when P < AVC because the firm cannot cover variable costs."
   },
   {
-    "id": "AP_Microeconomics_23",
-    "question": "A consumer maximizes utility when the marginal utility per dollar spent is equal across all goods consumed. This is known as the:",
+    "id": "AP_Microeconomics_88",
+    "question": "In the short run, if a firm is producing at a quantity where price is less than average total cost but greater than average variable cost, the firm should:",
     "choices": {
-      "A": "Law of Diminishing Marginal Returns.",
-      "B": "Equimarginal Principle.",
-      "C": "Substitution Effect.",
-      "D": "Income Effect."
+      "A": "Shut down immediately.",
+      "B": "Continue to operate.",
+      "C": "Increase production to lower average total cost.",
+      "D": "Decrease production to increase price."
     },
     "answer": "B",
-    "difficulty": 4,
-    "explanation": "The Equimarginal Principle states that utility is maximized when the ratio of marginal utility to price is the same for all goods, meaning consumers get the same 'bang for their buck' from each additional dollar spent on any good."
+    "difficulty": 6,
+    "explanation": "In the short run, a firm should continue to operate as long as the price covers its average variable cost (AVC). If P > AVC, the firm is covering the variable costs of production and contributing something towards its fixed costs. Shutting down (P < AVC) would mean losing all fixed costs plus the variable costs, resulting in a larger loss than continuing to produce."
   },
   {
     "id": "AP_Microeconomics_24",
@@ -323,19 +310,6 @@
     "answer": "C",
     "difficulty": 5,
     "explanation": "Total Cost (TC) = Total Fixed Cost (TFC) + Total Variable Cost (TVC). TC = $500 + $800 = $1300. Average Total Cost (ATC) = TC / Quantity. ATC = $1300 / 100 = $13.00."
-  },
-  {
-    "id": "AP_Microeconomics_26",
-    "question": "Which of the following market structures is characterized by a single seller of a unique product with no close substitutes?",
-    "choices": {
-      "A": "Oligopoly",
-      "B": "Monopolistic Competition",
-      "C": "Monopoly",
-      "D": "Perfect Competition"
-    },
-    "answer": "C",
-    "difficulty": 3,
-    "explanation": "A monopoly is defined by the presence of a single seller in a market for a product with no close substitutes, giving the firm significant market power."
   },
   {
     "id": "AP_Microeconomics_27",
@@ -510,12 +484,12 @@
     "id": "AP_Microeconomics_40",
     "question": "If a firm experiences economies of scale, this means that as its output increases, its:",
     "choices": {
-      "A": "Marginal cost is increasing.",
-      "B": "Average total cost is decreasing.",
+      "A": "Average total cost is decreasing.",
+      "B": "Marginal cost is increasing.",
       "C": "Total fixed cost is decreasing.",
       "D": "Average variable cost is increasing."
     },
-    "answer": "B",
+    "answer": "A",
     "difficulty": 4,
     "explanation": "Economies of scale occur when a firm's average total cost decreases as output increases. This is often due to factors like specialization, bulk purchasing, and efficient use of capital."
   },
@@ -537,11 +511,11 @@
     "question": "A cartel attempts to maximize its collective profits by:",
     "choices": {
       "A": "Increasing output to gain market share.",
-      "B": "Behaving like a single monopolist.",
+      "B": "Lowering prices to attract more customers.",
       "C": "Encouraging competition among its members.",
-      "D": "Lowering prices to attract more customers."
+      "D": "Behaving like a single monopolist."
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 6,
     "explanation": "A cartel is a group of firms that collude to act like a single monopolist. They agree to restrict output and raise prices to maximize their joint profits, essentially behaving as one entity controlling the market supply."
   },
@@ -585,28 +559,15 @@
     "explanation": "Allocative efficiency occurs when resources are allocated to produce the goods and services that society most desires. This happens when the marginal benefit (which is equal to the price consumers are willing to pay) equals the marginal cost of production (P = MC)."
   },
   {
-    "id": "AP_Microeconomics_46",
-    "question": "A production possibilities frontier (PPF) illustrates the maximum combination of two goods that can be produced with the available resources and technology. If a society is operating *inside* its PPF, which of the following is true?",
-    "choices": {
-      "A": "Resources are being used inefficiently.",
-      "B": "The society has reached its maximum potential output.",
-      "C": "There are no opportunity costs associated with producing more of either good.",
-      "D": "The society is experiencing economic growth."
-    },
-    "answer": "A",
-    "difficulty": 3,
-    "explanation": "Operating inside the PPF means that resources are not fully employed or are being used in a way that does not maximize output. This indicates inefficiency. Operating on the PPF represents efficiency, and moving outward from the PPF represents economic growth."
-  },
-  {
     "id": "AP_Microeconomics_47",
     "question": "Consider a perfectly competitive market for wheat. If the government imposes a price ceiling below the equilibrium price, what is the most likely outcome?",
     "choices": {
-      "A": "A surplus of wheat.",
-      "B": "A shortage of wheat.",
+      "A": "A shortage of wheat.",
+      "B": "A surplus of wheat.",
       "C": "An increase in the quantity of wheat supplied.",
       "D": "A decrease in the quantity of wheat demanded."
     },
-    "answer": "B",
+    "answer": "A",
     "difficulty": 5,
     "explanation": "A price ceiling set below the equilibrium price is a binding price ceiling. At this lower price, the quantity demanded will exceed the quantity supplied, leading to a shortage."
   },
@@ -615,11 +576,11 @@
     "question": "A consumer's demand curve for a normal good will shift to the right when which of the following occurs?",
     "choices": {
       "A": "The price of the good decreases.",
-      "B": "Consumer income increases.",
+      "B": "The consumer expects the price of the good to decrease in the future.",
       "C": "The price of a substitute good increases.",
-      "D": "The consumer expects the price of the good to decrease in the future."
+      "D": "Consumer income increases."
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 4,
     "explanation": "For a normal good, an increase in consumer income leads to an increase in demand, causing the demand curve to shift right. A decrease in the price of the good results in a movement *along* the demand curve, not a shift. An increase in the price of a substitute good would also cause a rightward shift, but the question asks about consumer income. An expected future price decrease would cause a leftward shift today."
   },
@@ -627,12 +588,12 @@
     "id": "AP_Microeconomics_49",
     "question": "Which of the following is a characteristic of a natural monopoly?",
     "choices": {
-      "A": "The firm faces significant competition from new entrants.",
-      "B": "Average total cost declines over the entire range of output relevant to the market.",
+      "A": "Average total cost declines over the entire range of output relevant to the market.",
+      "B": "The firm faces significant competition from new entrants.",
       "C": "The firm experiences diseconomies of scale at all levels of output.",
       "D": "The firm can achieve lower average costs than multiple smaller firms serving the same market."
     },
-    "answer": "B",
+    "answer": "A",
     "difficulty": 6,
     "explanation": "A natural monopoly arises when economies of scale are so large that one firm can supply the entire market at a lower average cost than two or more firms. This is characterized by declining average total cost over the relevant range of output."
   },
@@ -667,11 +628,11 @@
     "question": "Which of the following best describes a public good?",
     "choices": {
       "A": "A good that is rivalrous and excludable.",
-      "B": "A good that is non-rivalrous and non-excludable.",
+      "B": "A good that is non-rivalrous and excludable.",
       "C": "A good that is rivalrous and non-excludable.",
-      "D": "A good that is non-rivalrous and excludable."
+      "D": "A good that is non-rivalrous and non-excludable."
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 4,
     "explanation": "Public goods are characterized by non-rivalry (one person's consumption does not prevent another's) and non-excludability (it is difficult or impossible to prevent people from consuming the good, even if they don't pay for it). Examples include national defense and street lighting."
   },
@@ -702,19 +663,6 @@
     "explanation": "Monopolistic competition involves numerous firms competing with each other, but each firm sells a product that is slightly different from its competitors (product differentiation). This gives each firm some degree of market power, but less than a monopolist."
   },
   {
-    "id": "AP_Microeconomics_55",
-    "question": "The law of diminishing marginal returns states that:",
-    "choices": {
-      "A": "As more units of a variable input are added to fixed inputs, total product will eventually decrease.",
-      "B": "As more units of a variable input are added to fixed inputs, the marginal product of the variable input will eventually decrease.",
-      "C": "As more units of a variable input are added to fixed inputs, average product will eventually decrease.",
-      "D": "Total cost will eventually increase as output increases."
-    },
-    "answer": "B",
-    "difficulty": 5,
-    "explanation": "The law of diminishing marginal returns states that when additional units of a variable input are added to a fixed input, the additional output (marginal product) generated by each additional unit of the variable input will eventually decline."
-  },
-  {
     "id": "AP_Microeconomics_56",
     "question": "If a firm has market power, it can:",
     "choices": {
@@ -732,11 +680,11 @@
     "question": "Which of the following is an example of a negative externality?",
     "choices": {
       "A": "A beekeeper's bees pollinating a nearby farmer's crops.",
-      "B": "A factory discharging pollution into a river.",
+      "B": "A company investing in research and development that leads to new technologies.",
       "C": "A homeowner planting a beautiful garden that improves neighborhood aesthetics.",
-      "D": "A company investing in research and development that leads to new technologies."
+      "D": "A factory discharging pollution into a river."
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 5,
     "explanation": "A negative externality is a cost imposed on a third party not directly involved in the production or consumption of a good or service. Pollution from a factory is a cost borne by society (e.g., health problems, environmental damage) that is not reflected in the factory's production costs."
   },
@@ -854,7 +802,9 @@
       "D": "There are many close substitutes available."
     },
     "answer": "C",
-    "<bos>explanation": "Cartels aim to act like a monopoly. For a cartel to effectively raise prices and restrict output, the demand for its product should be inelastic. This means that consumers will not significantly reduce their purchases in response to higher prices, allowing the cartel to increase its total revenue. Many firms and many substitutes make collusion difficult and reduce market power."
+    "<bos>explanation": "Cartels aim to act like a monopoly. For a cartel to effectively raise prices and restrict output, the demand for its product should be inelastic. This means that consumers will not significantly reduce their purchases in response to higher prices, allowing the cartel to increase its total revenue. Many firms and many substitutes make collusion difficult and reduce market power.",
+    "difficulty": 4,
+    "explanation": ""
   },
   {
     "id": "AP_Microeconomics_67",
@@ -900,11 +850,11 @@
     "question": "Which of the following is a characteristic of a purely private good?",
     "choices": {
       "A": "It is non-rivalrous and non-excludable.",
-      "B": "It is rivalrous and excludable.",
+      "B": "It is rivalrous and non-excludable.",
       "C": "It is non-rivalrous and excludable.",
-      "D": "It is rivalrous and non-excludable."
+      "D": "It is rivalrous and excludable."
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 4,
     "explanation": "A purely private good is both rivalrous (one person's consumption prevents another's) and excludable (it is possible to prevent non-payers from consuming it). Most goods we buy in a store, like a shirt or a sandwich, are private goods."
   },
@@ -952,11 +902,11 @@
     "question": "A perfectly competitive firm is currently producing where its marginal cost (MC) is $15 and its marginal revenue (MR) is $10. To maximize profit, the firm should:",
     "choices": {
       "A": "Increase output because MR > MC.",
-      "B": "Decrease output because MC > MR.",
+      "B": "Decrease output because MR > MC.",
       "C": "Increase output because MC > MR.",
-      "D": "Decrease output because MR > MC."
+      "D": "Decrease output because MC > MR."
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 4,
     "explanation": "A perfectly competitive firm maximizes profit where MR = MC. Currently, MC ($15) is greater than MR ($10). This means the cost of producing the last unit is greater than the revenue gained from selling it. To increase profit (or reduce losses), the firm should decrease output until MC falls to equal MR."
   },
@@ -965,11 +915,11 @@
     "question": "Which of the following best describes a situation of asymmetric information?",
     "choices": {
       "A": "A buyer and seller have identical knowledge about a product's quality.",
-      "B": "A seller knows more about a product's quality than the buyer.",
+      "B": "Two firms compete intensely in the same market.",
       "C": "A government agency sets the price for a good.",
-      "D": "Two firms compete intensely in the same market."
+      "D": "A seller knows more about a product's quality than the buyer."
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 5,
     "explanation": "Asymmetric information occurs when one party in a transaction has more or better information than the other. In this case, the seller possessing superior knowledge about the product's quality compared to the buyer is a classic example of adverse selection or moral hazard, depending on the context."
   },
@@ -1030,11 +980,11 @@
     "question": "If the cross-price elasticity of demand between good X and good Y is positive, then goods X and Y are:",
     "choices": {
       "A": "Complements.",
-      "B": "Substitutes.",
+      "B": "Giffen goods.",
       "C": "Inferior goods.",
-      "D": "Giffen goods."
+      "D": "Substitutes."
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 4,
     "explanation": "Cross-price elasticity of demand measures how the quantity demanded of one good responds to a change in the price of another good. A positive cross-price elasticity indicates that as the price of good Y increases, the quantity demanded of good X increases. This relationship is characteristic of substitute goods, where consumers switch to the relatively cheaper good when the price of the other rises."
   },
@@ -1091,17 +1041,17 @@
     "explanation": "In monopolistic competition, there are many firms, but each firm sells a differentiated product. Product differentiation means that each firm has some control over its price, leading to a downward-sloping demand curve for the individual firm. Barriers to entry are low, and products are not identical (unlike perfect competition)."
   },
   {
-    "id": "AP_Microeconomics_85",
-    "question": "The law of diminishing marginal utility states that as a consumer consumes more units of a good, the:",
+    "id": "AP_Micro_4",
+    "question": "A monopolist maximizes profit by producing where:",
     "choices": {
-      "A": "Total utility decreases.",
-      "B": "Marginal utility gained from each additional unit decreases.",
-      "C": "Price of the good decreases.",
-      "D": "Demand for the good increases."
+      "A": "P = MC",
+      "B": "TR is maximized",
+      "C": "ATC is minimized",
+      "D": "MR = MC"
     },
-    "answer": "B",
-    "difficulty": 4,
-    "explanation": "The law of diminishing marginal utility is a fundamental concept in consumer theory. It posits that as a person increases their consumption of a particular good or service, the additional satisfaction (marginal utility) they derive from each subsequent unit will eventually decrease, assuming consumption of other goods remains constant."
+    "answer": "D",
+    "difficulty": 6,
+    "explanation": "All profit-maximizing firms produce where MR = MC."
   },
   {
     "id": "AP_Microeconomics_86",
@@ -1117,30 +1067,17 @@
     "explanation": "A perfectly price-discriminating monopolist charges each customer the maximum price they are willing to pay. This means the monopolist captures all consumer surplus and effectively acts like a perfectly competitive market by producing where the demand curve (which represents willingness to pay) intersects the marginal cost curve. Thus, the output level is the same as in perfect competition."
   },
   {
-    "id": "AP_Microeconomics_87",
-    "question": "Which of the following is an example of a negative externality?",
+    "id": "AP_Microeconomics_22",
+    "question": "Which of the following is most likely to lead to a decrease in the equilibrium price and quantity of a normal good in a market?",
     "choices": {
-      "A": "A beekeeper's bees pollinating nearby orchards.",
-      "B": "A factory releasing pollutants into a river.",
-      "C": "A university providing education to its students.",
-      "D": "A musician performing a free concert in the park."
+      "A": "An increase in consumer income.",
+      "B": "A decrease in the price of a complementary good.",
+      "C": "A decrease in the cost of production.",
+      "D": "A decrease in consumer income and an increase in the price of a substitute good."
     },
-    "answer": "B",
-    "difficulty": 5,
-    "explanation": "A negative externality is a cost imposed on a third party not directly involved in the production or consumption of a good or service. A factory polluting a river imposes costs (e.g., cleanup, health issues, loss of recreation) on society and the environment that are not borne by the factory itself."
-  },
-  {
-    "id": "AP_Microeconomics_88",
-    "question": "In the short run, if a firm is producing at a quantity where price is less than average total cost but greater than average variable cost, the firm should:",
-    "choices": {
-      "A": "Shut down immediately.",
-      "B": "Continue to operate.",
-      "C": "Increase production to lower average total cost.",
-      "D": "Decrease production to increase price."
-    },
-    "answer": "B",
-    "difficulty": 6,
-    "explanation": "In the short run, a firm should continue to operate as long as the price covers its average variable cost (AVC). If P > AVC, the firm is covering the variable costs of production and contributing something towards its fixed costs. Shutting down (P < AVC) would mean losing all fixed costs plus the variable costs, resulting in a larger loss than continuing to produce."
+    "answer": "D",
+    "difficulty": 7,
+    "explanation": "A decrease in consumer income shifts the demand for a normal good leftward (decreasing equilibrium price and quantity). An increase in the price of a substitute good also shifts demand leftward. Both shifts lead to a lower equilibrium price and quantity."
   },
   {
     "id": "AP_Microeconomics_89",
@@ -1225,11 +1162,11 @@
     "question": "In game theory, a Nash equilibrium is a situation where:",
     "choices": {
       "A": "All players achieve their best possible outcome.",
-      "B": "No player can improve their outcome by unilaterally changing their strategy, given the other players' strategies.",
+      "B": "Players cooperate to achieve a mutually beneficial outcome.",
       "C": "One player has a dominant strategy.",
-      "D": "Players cooperate to achieve a mutually beneficial outcome."
+      "D": "No player can improve their outcome by unilaterally changing their strategy, given the other players' strategies."
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 7,
     "explanation": "A Nash equilibrium is a state in a game where each player's chosen strategy is the best response to the strategies chosen by the other players. If any player were to unilaterally deviate from their chosen strategy, they would not improve their payoff. It does not necessarily mean the outcome is the best possible for everyone, nor does it require cooperation."
   },
@@ -1290,26 +1227,13 @@
     "question": "A positive externality in production leads to:",
     "choices": {
       "A": "An overproduction of the good by the market.",
-      "B": "An underproduction of the good by the market.",
+      "B": "A decrease in the marginal social cost relative to marginal private cost.",
       "C": "An efficient outcome with no government intervention.",
-      "D": "A decrease in the marginal social cost relative to marginal private cost."
+      "D": "An underproduction of the good by the market."
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 7,
     "explanation": "A positive externality means that the marginal social benefit (MSB) is greater than the marginal private benefit (MPB). In production, a positive externality like technological spillover benefits others. The market, driven by private costs and benefits, will produce less than the socially optimal quantity because the full social benefits are not captured by producers."
-  },
-  {
-    "id": "AP_Microeconomics_101",
-    "question": "Which of the following is a characteristic of a natural monopoly?",
-    "choices": {
-      "A": "High fixed costs and economies of scale over the entire range of market demand.",
-      "B": "Low barriers to entry, leading to intense competition.",
-      "C": "Diseconomies of scale that make large firms inefficient.",
-      "D": "A perfectly elastic long-run average total cost curve."
-    },
-    "answer": "A",
-    "difficulty": 5,
-    "explanation": "A natural monopoly arises when a single firm can supply the entire market at a lower cost than two or more firms. This is due to significant economies of scale, meaning average total cost declines over the relevant range of output, often driven by high initial fixed costs (like infrastructure)."
   },
   {
     "id": "AP_Microeconomics_102",
@@ -1380,12 +1304,12 @@
     "id": "AP_Microeconomics_107",
     "question": "A cartel aims to maximize profits by:",
     "choices": {
-      "A": "Increasing output to achieve economies of scale.",
-      "B": "Coordinating production and pricing decisions to act like a single monopolist.",
+      "A": "Coordinating production and pricing decisions to act like a single monopolist.",
+      "B": "Increasing output to achieve economies of scale.",
       "C": "Engaging in aggressive price competition to gain market share.",
       "D": "Encouraging new firms to enter the market to increase overall supply."
     },
-    "answer": "B",
+    "answer": "A",
     "difficulty": 5,
     "explanation": "A cartel is a group of firms that collude to control market output and prices. By acting as a unified entity, they attempt to mimic the behavior of a monopolist, restricting output and raising prices to achieve higher collective profits than they would under competitive conditions."
   },
@@ -1433,11 +1357,11 @@
     "question": "Which of the following best describes the Prisoner's Dilemma?",
     "choices": {
       "A": "A situation where cooperation leads to mutually beneficial outcomes for all involved.",
-      "B": "A game theory scenario where individual rational choices lead to a collectively suboptimal outcome.",
+      "B": "An economic model where perfect information exists for all market participants.",
       "C": "A market structure where firms compete on non-price factors like quality and advertising.",
-      "D": "An economic model where perfect information exists for all market participants."
+      "D": "A game theory scenario where individual rational choices lead to a collectively suboptimal outcome."
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 7,
     "explanation": "The Prisoner's Dilemma illustrates a situation in game theory where two individuals acting in their own self-interest do not produce the optimal outcome. Neither player has an incentive to deviate from their chosen strategy, even though they would both be better off if they had cooperated."
   },
@@ -1445,12 +1369,12 @@
     "id": "AP_Microeconomics_112",
     "question": "If the cross-price elasticity of demand between good X and good Y is negative, then goods X and Y are:",
     "choices": {
-      "A": "Substitutes",
-      "B": "Complements",
+      "A": "Complements",
+      "B": "Substitutes",
       "C": "Unrelated",
       "D": "Inferior goods"
     },
-    "answer": "B",
+    "answer": "A",
     "difficulty": 5,
     "explanation": "Cross-price elasticity of demand measures how the quantity demanded of one good responds to a change in the price of another good. A negative cross-price elasticity indicates that the goods are complements; as the price of one good increases, the quantity demanded of the other good decreases."
   },
@@ -1516,18 +1440,19 @@
       "D": "The market demand curve must be perfectly inelastic."
     },
     "answer": "D",
-    "explanation": "While a firm needs market power (A, B) and the ability to prevent resale (C) for perfect price discrimination, the demand curve does not need to be perfectly inelastic. In fact, price discrimination is most effective when demand elasticities vary among consumers."
+    "explanation": "While a firm needs market power (A, B) and the ability to prevent resale (C) for perfect price discrimination, the demand curve does not need to be perfectly inelastic. In fact, price discrimination is most effective when demand elasticities vary among consumers.",
+    "difficulty": 4
   },
   {
     "id": "AP_Microeconomics_118",
     "question": "An increase in the price of a substitute good will cause:",
     "choices": {
       "A": "A decrease in the demand for the original good.",
-      "B": "An increase in the demand for the original good.",
+      "B": "A decrease in the quantity demanded of the original good.",
       "C": "A movement along the demand curve for the original good.",
-      "D": "A decrease in the quantity demanded of the original good."
+      "D": "An increase in the demand for the original good."
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 4,
     "explanation": "Substitute goods are those that can be used in place of each other. If the price of a substitute good increases, consumers will switch to the relatively cheaper original good, increasing the demand for it (shifting the demand curve to the right)."
   },
@@ -1587,12 +1512,12 @@
     "id": "AP_Microeconomics_123",
     "question": "Consider a market with a binding price ceiling. If the demand for the good increases, what is the likely outcome?",
     "choices": {
-      "A": "The shortage at the ceiling price will decrease.",
-      "B": "The shortage at the ceiling price will increase.",
+      "A": "The shortage at the ceiling price will increase.",
+      "B": "The shortage at the ceiling price will decrease.",
       "C": "The price will rise to the equilibrium level.",
       "D": "The quantity supplied will increase to meet demand."
     },
-    "answer": "B",
+    "answer": "A",
     "difficulty": 6,
     "explanation": "A binding price ceiling is set below the equilibrium price, creating a shortage (quantity demanded exceeds quantity supplied). If demand increases, the demand curve shifts to the right. At the fixed, binding price ceiling, the quantity demanded will now be even greater, and the quantity supplied will remain the same (or may even fall if suppliers are discouraged). This leads to a larger shortage."
   },
@@ -1601,11 +1526,11 @@
     "question": "A rational consumer allocates their budget such that the marginal utility per dollar spent is equal across all goods. This is known as:",
     "choices": {
       "A": "The law of diminishing marginal utility.",
-      "B": "Consumer equilibrium.",
+      "B": "The substitution effect.",
       "C": "The income effect.",
-      "D": "The substitution effect."
+      "D": "Consumer equilibrium."
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 4,
     "explanation": "Consumer equilibrium occurs when a consumer maximizes their utility given their budget constraint. This is achieved when the ratio of marginal utility to price (marginal utility per dollar) is equal for all goods purchased, ensuring that no reallocation of spending could increase total utility."
   },
@@ -1623,28 +1548,15 @@
     "explanation": "Total Cost (TC) = Fixed Cost (FC) + Variable Cost (VC). Given TC = $500 and FC = $100, then VC = TC - FC = $500 - $100 = $400. Average Variable Cost (AVC) = VC / Quantity (Q). So, AVC = $400 / 100 units = $4.00 per unit."
   },
   {
-    "id": "AP_Microeconomics_126",
-    "question": "Which of the following is a characteristic of a natural monopoly?",
-    "choices": {
-      "A": "High barriers to entry due to patent protection.",
-      "B": "The firm experiences economies of scale over the entire range of market demand.",
-      "C": "The firm earns zero economic profit in the long run.",
-      "D": "The firm produces at the minimum efficient scale."
-    },
-    "answer": "B",
-    "difficulty": 7,
-    "explanation": "A natural monopoly arises when a single firm can supply the entire market output at a lower cost than two or more firms. This occurs because the firm experiences significant economies of scale, meaning its average total cost decreases as output increases, over the entire range of market demand."
-  },
-  {
     "id": "AP_Microeconomics_127",
     "question": "If the cross-price elasticity of demand between good X and good Y is negative, what is the relationship between these two goods?",
     "choices": {
       "A": "They are substitutes.",
-      "B": "They are complements.",
+      "B": "They are inferior goods.",
       "C": "They are normal goods.",
-      "D": "They are inferior goods."
+      "D": "They are complements."
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 5,
     "explanation": "Cross-price elasticity of demand measures how the quantity demanded of one good responds to a change in the price of another good. A negative cross-price elasticity indicates that as the price of good Y increases, the quantity demanded of good X decreases. This inverse relationship signifies that the goods are complements; they are typically used together."
   },
@@ -1665,12 +1577,12 @@
     "id": "AP_Microeconomics_129",
     "question": "A government imposes a specific tax on each unit of a good sold. The burden of this tax will be shared between consumers and producers. The tax incidence primarily depends on:",
     "choices": {
-      "A": "The total revenue of the producers.",
-      "B": "The elasticity of supply and demand.",
+      "A": "The elasticity of supply and demand.",
+      "B": "The total revenue of the producers.",
       "C": "The government's administrative costs.",
       "D": "The income level of consumers."
     },
-    "answer": "B",
+    "answer": "A",
     "difficulty": 7,
     "explanation": "Tax incidence, or the distribution of the tax burden, is determined by the relative elasticities of supply and demand. The more inelastic side of the market (whether consumers or producers) will bear a larger portion of the tax burden because they are less able to adjust their quantity in response to the price change caused by the tax."
   },
@@ -1692,37 +1604,24 @@
     "question": "A firm in monopolistic competition is currently maximizing its profit. In the long run, what is likely to happen to this firm?",
     "choices": {
       "A": "It will earn positive economic profits.",
-      "B": "It will earn zero economic profit.",
+      "B": "It will merge with other firms to form a monopoly.",
       "C": "It will experience a decrease in demand and an increase in marginal cost.",
-      "D": "It will merge with other firms to form a monopoly."
+      "D": "It will earn zero economic profit."
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 6,
     "explanation": "In monopolistic competition, the existence of economic profits in the short run attracts new firms to enter the market. This entry increases the number of substitutes available, shifting the demand curve faced by existing firms to the left (decreasing demand) and making it more elastic. This process continues until firms are earning zero economic profit in the long run, where price equals average total cost."
-  },
-  {
-    "id": "AP_Microeconomics_132",
-    "question": "The law of diminishing marginal returns states that:",
-    "choices": {
-      "A": "As more of a variable input is added to a fixed input, the total product will eventually decrease.",
-      "B": "As more of a variable input is added to a fixed input, the marginal product of the variable input will eventually decrease.",
-      "C": "As production increases, average fixed costs will always decrease.",
-      "D": "As production increases, total costs will eventually increase at an increasing rate."
-    },
-    "answer": "B",
-    "difficulty": 4,
-    "explanation": "The law of diminishing marginal returns (or diminishing marginal product) states that if you add more units of a variable input (like labor) to a fixed input (like capital), the additional output (marginal product) generated by each additional unit of the variable input will eventually decline."
   },
   {
     "id": "AP_Microeconomics_133",
     "question": "Consider a public good. Why does the free market tend to underprovide public goods?",
     "choices": {
       "A": "Because they are rivalrous in consumption.",
-      "B": "Because they are non-excludable, leading to the free-rider problem.",
+      "B": "Because they are rivalrous and non-excludable, leading to overcrowding.",
       "C": "Because they are excludable, making it difficult to charge for them.",
-      "D": "Because they are rivalrous and non-excludable, leading to overcrowding."
+      "D": "Because they are non-excludable, leading to the free-rider problem."
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 7,
     "explanation": "Public goods are characterized by non-excludability (it's difficult to prevent people from consuming the good even if they don't pay for it) and non-rivalry (one person's consumption does not diminish another's). The non-excludability leads to the free-rider problem, where individuals can benefit from the good without paying, thus reducing the incentive for private firms to produce and supply it efficiently."
   },
@@ -1744,11 +1643,11 @@
     "question": "Which of the following actions by a government is an example of addressing a positive externality?",
     "choices": {
       "A": "Imposing a tax on the production of plastic bags.",
-      "B": "Providing a subsidy for education or vaccinations.",
+      "B": "Setting a price ceiling on rental apartments.",
       "C": "Regulating the amount of pollution a factory can emit.",
-      "D": "Setting a price ceiling on rental apartments."
+      "D": "Providing a subsidy for education or vaccinations."
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 5,
     "explanation": "Positive externalities occur when the production or consumption of a good benefits third parties. To encourage the socially beneficial level of activity, governments often provide subsidies or grants for goods with positive externalities, such as education or vaccinations, where the societal benefits exceed the private benefits."
   },
@@ -1805,32 +1704,6 @@
     "explanation": "In the long run, firms in perfect competition produce where Price = Marginal Cost (P=MC) and Price = Minimum Average Total Cost (P=min ATC). This zero economic profit condition ensures firms are both profit-maximizing and productively efficient in the long run equilibrium."
   },
   {
-    "id": "AP_Microeconomics_140",
-    "question": "A decrease in the price of a good, holding all other factors constant, will result in:",
-    "choices": {
-      "A": "A decrease in quantity supplied.",
-      "B": "An increase in quantity supplied.",
-      "C": "A decrease in supply.",
-      "D": "An increase in supply."
-    },
-    "answer": "B",
-    "difficulty": 3,
-    "explanation": "A decrease in the price of a good leads to a movement *along* the supply curve. Producers are willing and able to supply less of the good at a lower price. This is a change in quantity supplied, not a shift in the supply curve itself."
-  },
-  {
-    "id": "AP_Microeconomics_141",
-    "question": "When a single firm holds all the market power in an industry, this is known as:",
-    "choices": {
-      "A": "Oligopoly.",
-      "B": "Monopolistic competition.",
-      "C": "Monopoly.",
-      "D": "Perfect competition."
-    },
-    "answer": "C",
-    "difficulty": 3,
-    "explanation": "Monopoly is a market structure characterized by a single seller of a unique product with no close substitutes and significant barriers to entry."
-  },
-  {
     "id": "AP_Microeconomics_142",
     "question": "A firm has a total revenue of $1000 when it sells 100 units. Its total cost is $800. What is its profit?",
     "choices": {
@@ -1861,11 +1734,11 @@
     "question": "The difference between total cost and fixed cost is:",
     "choices": {
       "A": "Average variable cost.",
-      "B": "Variable cost.",
+      "B": "Economic profit.",
       "C": "Marginal cost.",
-      "D": "Economic profit."
+      "D": "Variable cost."
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 4,
     "explanation": "Total Cost (TC) is the sum of Fixed Cost (FC) and Variable Cost (VC). Therefore, Total Cost minus Fixed Cost equals Variable Cost (TC - FC = VC)."
   },
@@ -1896,43 +1769,17 @@
     "explanation": "In perfect competition, a firm maximizes profit where Price (Marginal Revenue) equals Marginal Cost (P=MC). Since the current market price ($8) is greater than the marginal cost ($5) at 100 units, the firm can increase profits by producing more units until MC rises to equal $8."
   },
   {
-    "id": "AP_Microeconomics_147",
-    "question": "Which of the following is a characteristic of a natural monopoly?",
-    "choices": {
-      "A": "High barriers to entry due to patents.",
-      "B": "The firm experiences decreasing average total costs over the entire range of market demand.",
-      "C": "It is easily contestable by new entrants.",
-      "D": "The firm produces at an output level where average total cost is rising."
-    },
-    "answer": "B",
-    "difficulty": 6,
-    "explanation": "A natural monopoly arises when a single firm can supply the entire market demand at a lower cost than two or more firms. This occurs because the firm experiences economies of scale, meaning its average total cost (ATC) decreases as output increases over the relevant range of production."
-  },
-  {
     "id": "AP_Microeconomics_148",
     "question": "The price elasticity of demand for a good is -0.5. If the price of the good increases by 10%, what will be the approximate percentage change in the quantity demanded?",
     "choices": {
       "A": "+5%",
-      "B": "-5%",
+      "B": "-20%",
       "C": "+20%",
-      "D": "-20%"
+      "D": "-5%"
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 5,
     "explanation": "The formula for price elasticity of demand is (% Change in Quantity Demanded) / (% Change in Price). Given an elasticity of -0.5 and a +10% change in price, the formula becomes -0.5 = (% Change in Quantity Demanded) / 10%. Solving for the percentage change in quantity demanded gives -5%."
-  },
-  {
-    "id": "AP_Microeconomics_149",
-    "question": "An economy is operating inside its Production Possibilities Frontier (PPF). This indicates:",
-    "choices": {
-      "A": "The economy is experiencing economic growth.",
-      "B": "Resources are being used inefficiently.",
-      "C": "The economy has reached its maximum potential output.",
-      "D": "There are no unemployed resources in the economy."
-    },
-    "answer": "B",
-    "difficulty": 3,
-    "explanation": "A point inside the PPF represents a situation where the economy is not producing at its full potential. This implies that resources are either unemployed or are being used inefficiently, meaning more output could be produced with the available resources."
   },
   {
     "id": "AP_Microeconomics_150",
@@ -1961,19 +1808,6 @@
     "explanation": "Substitutes are goods that can be used in place of each other. If the price of a substitute good decreases, it becomes relatively cheaper, making consumers more likely to switch to the substitute. This leads to a decrease in the demand for the original good, shifting its demand curve to the left."
   },
   {
-    "id": "AP_Microeconomics_152",
-    "question": "The law of diminishing marginal utility states that:",
-    "choices": {
-      "A": "As more of a good is consumed, total utility eventually falls.",
-      "B": "As more of a good is consumed, the additional satisfaction from each extra unit decreases.",
-      "C": "The utility derived from consuming a good is directly proportional to its price.",
-      "D": "Producers will eventually reduce output as marginal cost rises."
-    },
-    "answer": "B",
-    "difficulty": 4,
-    "explanation": "The law of diminishing marginal utility explains that as an individual consumes increasing quantities of a particular good, the additional satisfaction (marginal utility) gained from each successive unit of that good will eventually decline."
-  },
-  {
     "id": "AP_Microeconomics_153",
     "question": "In the short run, a firm in perfect competition will shut down if:",
     "choices": {
@@ -1991,11 +1825,11 @@
     "question": "Which of the following is an example of a positive externality?",
     "choices": {
       "A": "A factory pollutes a local river.",
-      "B": "A person gets a flu shot, reducing the chance of spreading the flu to others.",
+      "B": "A gambler's winnings are taxed by the government.",
       "C": "A company cuts down trees without replanting them.",
-      "D": "A gambler's winnings are taxed by the government."
+      "D": "A person gets a flu shot, reducing the chance of spreading the flu to others."
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 5,
     "explanation": "A positive externality occurs when the production or consumption of a good or service creates a benefit for a third party. Getting a flu shot benefits not only the individual but also society by reducing the transmission of the disease."
   },
@@ -2030,11 +1864,11 @@
     "question": "Which of the following represents the marginal cost curve?",
     "choices": {
       "A": "The slope of the total variable cost curve.",
-      "B": "The slope of the total cost curve.",
+      "B": "The difference between total cost and total variable cost.",
       "C": "The slope of the average variable cost curve.",
-      "D": "The difference between total cost and total variable cost."
+      "D": "The slope of the total cost curve."
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 5,
     "explanation": "Marginal cost (MC) is defined as the change in total cost (or change in total variable cost, since fixed costs do not change with output) resulting from producing one more unit of output. Therefore, the marginal cost curve is the slope of the total cost (or total variable cost) curve."
   },
@@ -2104,28 +1938,15 @@
     "explanation": "Economies of scale occur when the average cost per unit of output decreases as the scale of production increases. This means that as the firm produces more, its average total cost (ATC) falls."
   },
   {
-    "id": "AP_Microeconomics_163",
-    "question": "In game theory, a Nash equilibrium is a situation where:",
-    "choices": {
-      "A": "Each player chooses the best possible strategy, regardless of the other players' strategies.",
-      "B": "Each player chooses the strategy that maximizes their payoff, given the strategies of the other players.",
-      "C": "All players cooperate to achieve a mutually beneficial outcome.",
-      "D": "One player has a dominant strategy that is better than all other strategies."
-    },
-    "answer": "B",
-    "difficulty": 7,
-    "explanation": "A Nash equilibrium is a state in a game where no player can improve their outcome by unilaterally changing their strategy, assuming the other players' strategies remain unchanged. Essentially, each player is doing the best they can, given what the other players are doing."
-  },
-  {
     "id": "AP_Microeconomics_164",
     "question": "Which of the following is a characteristic of a perfectly inelastic demand curve?",
     "choices": {
       "A": "A horizontal demand curve.",
-      "B": "A vertical demand curve.",
+      "B": "A demand curve that is convex to the origin.",
       "C": "A demand curve with a slope of -1.",
-      "D": "A demand curve that is convex to the origin."
+      "D": "A vertical demand curve."
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 6,
     "explanation": "A perfectly inelastic demand curve is a vertical line, indicating that the quantity demanded remains constant regardless of the price. The price elasticity of demand is zero."
   },
@@ -2154,32 +1975,6 @@
     "answer": "A",
     "difficulty": 7,
     "explanation": "A profit-maximizing firm hires labor up to the point where the Value of the Marginal Product of Labor (VMPL) equals the wage rate. VMPL = MPL * Price. In this case, VMPL = 10 units * $4/unit = $40. Since the wage rate is $20, and $40 > $20, the firm is not hiring enough labor and should hire more until VMPL falls to $20."
-  },
-  {
-    "id": "AP_Microeconomics_167",
-    "question": "Which of the following is a characteristic of a natural monopoly?",
-    "choices": {
-      "A": "High barriers to entry due to economies of scale.",
-      "B": "The firm experiences increasing average total costs over the entire range of market demand.",
-      "C": "There is intense price competition among many firms.",
-      "D": "The firm is a price taker."
-    },
-    "answer": "A",
-    "difficulty": 6,
-    "explanation": "Natural monopolies arise due to significant economies of scale, which create a high barrier to entry for potential competitors. As output increases, the average total cost for a single firm decreases over the entire relevant range of demand, making it difficult for smaller firms to compete on cost."
-  },
-  {
-    "id": "AP_Microeconomics_168",
-    "question": "If the income elasticity of demand for a good is positive, the good is:",
-    "choices": {
-      "A": "An inferior good.",
-      "B": "A normal good.",
-      "C": "A substitute good.",
-      "D": "A complementary good."
-    },
-    "answer": "B",
-    "difficulty": 5,
-    "explanation": "Income elasticity of demand measures how the quantity demanded of a good responds to a change in consumer income. A positive income elasticity indicates that as income rises, the quantity demanded of the good also rises, which is the definition of a normal good."
   },
   {
     "id": "AP_Microeconomics_169",
@@ -2225,50 +2020,24 @@
     "question": "A government might impose a tax on a good that generates negative externalities in order to:",
     "choices": {
       "A": "Increase the production of the good.",
-      "B": "Encourage the producers to reduce the negative impact of the externality.",
+      "B": "Generate revenue for programs unrelated to the externality.",
       "C": "Reduce the price of the good for consumers.",
-      "D": "Generate revenue for programs unrelated to the externality."
+      "D": "Encourage the producers to reduce the negative impact of the externality."
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 5,
     "explanation": "A tax on a good that creates a negative externality (a Pigouvian tax) is designed to internalize the externality. By increasing the cost of production or consumption, the tax aims to discourage behavior that creates the externality, thus moving the market outcome closer to the socially optimal level of output."
-  },
-  {
-    "id": "AP_Microeconomics_173",
-    "question": "If the price elasticity of demand for a good is -0.5, demand is considered:",
-    "choices": {
-      "A": "Elastic",
-      "B": "Inelastic",
-      "C": "Unit elastic",
-      "D": "Perfectly elastic"
-    },
-    "answer": "B",
-    "difficulty": 3,
-    "explanation": "Price elasticity of demand measures the responsiveness of quantity demanded to a change in price. If the absolute value of the elasticity coefficient is less than 1 (e.g., -0.5), demand is considered inelastic, meaning quantity demanded changes proportionally less than price."
-  },
-  {
-    "id": "AP_Microeconomics_174",
-    "question": "The law of diminishing marginal utility states that:",
-    "choices": {
-      "A": "As a consumer consumes more of a good, total utility will eventually decrease.",
-      "B": "As a consumer consumes more of a good, the additional satisfaction gained from each extra unit will eventually decrease.",
-      "C": "As a consumer consumes more of a good, the price of the good will eventually decrease.",
-      "D": "As a consumer consumes more of a good, the marginal cost of producing the good will eventually decrease."
-    },
-    "answer": "B",
-    "difficulty": 4,
-    "explanation": "The law of diminishing marginal utility is a fundamental concept in consumer theory. It states that, holding other factors constant, the marginal utility (additional satisfaction) derived from consuming successive units of a good decreases."
   },
   {
     "id": "AP_Microeconomics_175",
     "question": "A production possibilities frontier (PPF) that is bowed outward (concave to the origin) illustrates:",
     "choices": {
-      "A": "Constant opportunity costs.",
-      "B": "Increasing opportunity costs.",
+      "A": "Increasing opportunity costs.",
+      "B": "Constant opportunity costs.",
       "C": "Decreasing opportunity costs.",
       "D": "Zero opportunity costs."
     },
-    "answer": "B",
+    "answer": "A",
     "difficulty": 6,
     "explanation": "A bowed-out PPF indicates that as the production of one good increases, the opportunity cost of producing that good (in terms of the other good forgone) also increases. This is due to factors like differing resource suitability and specialization."
   },
@@ -2277,11 +2046,11 @@
     "question": "In the long run, a firm in monopolistic competition will earn:",
     "choices": {
       "A": "Positive economic profits.",
-      "B": "Zero economic profits.",
+      "B": "Economic profits equal to those of a monopoly.",
       "C": "Negative economic profits.",
-      "D": "Economic profits equal to those of a monopoly."
+      "D": "Zero economic profits."
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 7,
     "explanation": "In monopolistic competition, firms have some market power due to product differentiation, allowing for short-run profits. However, the ease of entry of new firms in the long run erodes these profits, driving them down to the level of zero economic profit, where price equals average total cost."
   },
@@ -2297,19 +2066,6 @@
     "answer": "B",
     "difficulty": 5,
     "explanation": "A binding price ceiling is set below the equilibrium price. This results in a quantity demanded that exceeds the quantity supplied, creating a shortage. Producers are unwilling to supply as much at the lower price, while consumers demand more."
-  },
-  {
-    "id": "AP_Microeconomics_178",
-    "question": "Which of the following is a characteristic of a public good?",
-    "choices": {
-      "A": "Excludability and rivalry.",
-      "B": "Non-excludability and rivalry.",
-      "C": "Excludability and non-rivalry.",
-      "D": "Non-excludability and non-rivalry."
-    },
-    "answer": "D",
-    "difficulty": 6,
-    "explanation": "Public goods are defined by two key characteristics: non-excludability (it is difficult or impossible to prevent people from consuming the good, even if they don't pay for it) and non-rivalry (one person's consumption of the good does not diminish another person's ability to consume it)."
   },
   {
     "id": "AP_Microeconomics_179",
@@ -2329,11 +2085,11 @@
     "question": "When the demand for a normal good decreases, assuming all other factors remain constant, what happens to the equilibrium price and quantity in a competitive market?",
     "choices": {
       "A": "Price increases, quantity decreases.",
-      "B": "Price decreases, quantity decreases.",
+      "B": "Price decreases, quantity increases.",
       "C": "Price increases, quantity increases.",
-      "D": "Price decreases, quantity increases."
+      "D": "Price decreases, quantity decreases."
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 4,
     "explanation": "A decrease in demand shifts the demand curve to the left. At the original equilibrium price, there is now a surplus. This surplus puts downward pressure on the price. As the price falls, quantity demanded increases (movement along the new demand curve) and quantity supplied decreases (movement along the supply curve) until a new, lower equilibrium price and quantity are reached."
   },
@@ -2455,19 +2211,6 @@
     "explanation": "A firm's shutdown point in the short run occurs when the price falls below its average variable cost (AVC). If the price is below AVC, the firm is not covering its variable costs and would lose less by shutting down and only incurring fixed costs."
   },
   {
-    "id": "AP_Microeconomics_190",
-    "question": "The difference between total revenue and total economic cost is known as:",
-    "choices": {
-      "A": "Accounting profit.",
-      "B": "Economic profit.",
-      "C": "Consumer surplus.",
-      "D": "Producer surplus."
-    },
-    "answer": "B",
-    "difficulty": 3,
-    "explanation": "Economic profit (or net profit) is calculated by subtracting all explicit and implicit costs (total economic cost) from total revenue. Accounting profit typically only considers explicit costs."
-  },
-  {
     "id": "AP_Microeconomics_191",
     "question": "Which of the following best describes a natural monopoly?",
     "choices": {
@@ -2563,11 +2306,11 @@
     "question": "Which of the following best describes a situation where government intervention is most likely to improve economic efficiency?",
     "choices": {
       "A": "A purely private good with no consumption externalities.",
-      "B": "A public good with significant free-rider problems.",
+      "B": "A situation with no externalities or market power.",
       "C": "A market with perfect information for all participants.",
-      "D": "A situation with no externalities or market power."
+      "D": "A public good with significant free-rider problems."
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 6,
     "explanation": "Government intervention is often justified to correct market failures. Public goods, like national defense, are non-excludable and non-rivalrous, leading to free-rider problems where individuals can benefit without paying, resulting in underproduction by the private market. Government provision or funding can ensure adequate supply."
   },
@@ -2598,19 +2341,6 @@
     "explanation": "Monopolistically competitive firms, in the long run, earn zero economic profit due to the free entry of new firms, which erodes any short-run profits. They typically operate with excess capacity and face a downward-sloping demand curve, but the long-run equilibrium is characterized by P = ATC, leading to zero economic profit. While economies of scale are relevant in the short run for determining cost structure, the long-run zero-profit condition is the defining characteristic."
   },
   {
-    "id": "AP_Microeconomics_201",
-    "question": "Which of the following describes a positive externality?",
-    "choices": {
-      "A": "A beekeeper's activities that lead to increased pollination for nearby apple orchards.",
-      "B": "A factory releasing pollution into a river, harming downstream fishing.",
-      "C": "A person receiving a flu vaccination, reducing the spread of illness to others.",
-      "D": "A newly built highway that increases traffic congestion in surrounding areas."
-    },
-    "answer": "A",
-    "difficulty": 3,
-    "explanation": "A positive externality occurs when the production or consumption of a good or service creates a benefit for a third party who is not directly involved in the transaction. The beekeeper's bees pollinating apple orchards benefits the orchard owners without any direct payment from them to the beekeeper."
-  },
-  {
     "id": "AP_Microeconomics_202",
     "question": "A decrease in the price of a substitute good will lead to:",
     "choices": {
@@ -2622,32 +2352,6 @@
     "answer": "A",
     "difficulty": 4,
     "explanation": "Substitute goods are those that can be used in place of one another. If the price of a substitute good decreases, consumers will find it more attractive to purchase the substitute. This will lead to a decrease in the demand for the original good, causing the entire demand curve for the original good to shift to the left."
-  },
-  {
-    "id": "AP_Microeconomics_203",
-    "question": "The law of diminishing marginal utility states that:",
-    "choices": {
-      "A": "As a consumer consumes more of a good, total utility will eventually decrease.",
-      "B": "As a consumer consumes more of a good, the additional utility gained from each extra unit will eventually decrease.",
-      "C": "As a consumer consumes more of a good, the price they are willing to pay will increase.",
-      "D": "As a consumer consumes more of a good, their total expenditure on the good will decrease."
-    },
-    "answer": "B",
-    "difficulty": 3,
-    "explanation": "The law of diminishing marginal utility is a fundamental concept in consumer theory. It posits that once a certain level of consumption is reached, the additional satisfaction (marginal utility) derived from consuming one more unit of a good or service declines."
-  },
-  {
-    "id": "AP_Microeconomics_204",
-    "question": "Which of the following is a characteristic of a natural monopoly?",
-    "choices": {
-      "A": "High barriers to entry due to control over essential resources.",
-      "B": "The firm faces a downward-sloping marginal cost curve.",
-      "C": "Average total cost declines over the entire range of output relevant to the market.",
-      "D": "The firm has a perfectly elastic demand curve."
-    },
-    "answer": "C",
-    "difficulty": 6,
-    "explanation": "A natural monopoly arises when a single firm can supply the entire market demand for a good or service at a lower cost than two or more firms could. This occurs because the firm experiences economies of scale over the relevant range of output, meaning its average total cost decreases as output increases."
   },
   {
     "id": "AP_Microeconomics_205",
@@ -2687,19 +2391,6 @@
     "answer": "A",
     "difficulty": 4,
     "explanation": "Complement goods are consumed together. If the price of a complement good increases, consumers will tend to buy less of it. Since the original good is consumed with the complement, a decrease in the consumption of the complement will lead to a decrease in the demand for the original good, causing its demand curve to shift to the left."
-  },
-  {
-    "id": "AP_Microeconomics_208",
-    "question": "Which of the following market structures is characterized by product differentiation and a large number of firms?",
-    "choices": {
-      "A": "Oligopoly",
-      "B": "Monopoly",
-      "C": "Perfect Competition",
-      "D": "Monopolistic Competition"
-    },
-    "answer": "D",
-    "difficulty": 3,
-    "explanation": "Monopolistic competition is defined by having many firms selling products that are similar but not identical (product differentiation). This allows each firm a degree of market power, but the large number of competitors limits it significantly."
   },
   {
     "id": "AP_Microeconomics_209",
@@ -2758,11 +2449,11 @@
     "question": "In the theory of consumer choice, indifference curves:",
     "choices": {
       "A": "Are upward sloping and convex to the origin.",
-      "B": "Are downward sloping and convex to the origin.",
+      "B": "Are upward sloping and concave to the origin.",
       "C": "Are downward sloping and concave to the origin.",
-      "D": "Are upward sloping and concave to the origin."
+      "D": "Are downward sloping and convex to the origin."
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 5,
     "explanation": "Indifference curves are downward sloping because to maintain the same level of utility, consuming more of one good requires consuming less of another. They are typically convex to the origin due to the principle of diminishing marginal rate of substitution – as a consumer has more of one good, they are willing to give up progressively less of the other good to obtain an additional unit."
   },
@@ -2806,19 +2497,6 @@
     "explanation": "Allocative efficiency occurs when resources are allocated to produce the goods and services that society most desires. This condition is met when the marginal benefit (the additional satisfaction or value consumers get from one more unit) equals the marginal cost (the additional cost of producing one more unit). At this point, society is getting the maximum possible net benefit from its resources."
   },
   {
-    "id": "AP_Microeconomics_217",
-    "question": "Which of the following costs is a fixed cost?",
-    "choices": {
-      "A": "Wages paid to assembly line workers who are hired on an hourly basis.",
-      "B": "Cost of raw materials used in production.",
-      "C": "Interest payments on a loan used to purchase factory equipment.",
-      "D": "Electricity consumed by the production machinery."
-    },
-    "answer": "C",
-    "difficulty": 3,
-    "explanation": "Fixed costs are expenses that do not vary with the level of output in the short run. Interest payments on a loan for equipment, like rent or salaries of permanent administrative staff, remain constant regardless of how much is produced."
-  },
-  {
     "id": "AP_Microeconomics_218",
     "question": "A firm in a perfectly competitive industry is making economic losses. In the long run, some firms will exit the industry, causing the market:",
     "choices": {
@@ -2848,66 +2526,14 @@
     "id": "AP_Microeconomics_220",
     "question": "The Herfindahl-Hirschman Index (HHI) is used to measure:",
     "choices": {
-      "A": "The elasticity of demand for a product.",
-      "B": "The degree of market concentration in an industry.",
+      "A": "The degree of market concentration in an industry.",
+      "B": "The elasticity of demand for a product.",
       "C": "The difference between price and marginal cost.",
       "D": "The level of economic profits in a market."
     },
-    "answer": "B",
+    "answer": "A",
     "difficulty": 7,
     "explanation": "The HHI is calculated by squaring the market share of each firm in an industry and summing the results. A higher HHI number indicates a greater degree of market concentration, suggesting that a few firms hold a large portion of the market share, which is characteristic of oligopolies or monopolies and may indicate reduced competition."
-  },
-  {
-    "id": "AP_Microeconomics_221",
-    "question": "Which of the following is an example of a public good?",
-    "choices": {
-      "A": "A smartphone",
-      "B": "A private car",
-      "C": "National defense",
-      "D": "A movie ticket"
-    },
-    "answer": "C",
-    "difficulty": 3,
-    "explanation": "A public good is characterized by non-rivalry (one person's consumption does not prevent another's) and non-excludability (it's difficult or impossible to prevent people from consuming it even if they don't pay). National defense fits this definition; everyone benefits, and one person's protection doesn't diminish another's. Smartphones, cars, and movie tickets are private goods."
-  },
-  {
-    "id": "AP_Microeconomics_222",
-    "question": "A perfectly competitive firm's marginal revenue is equal to:",
-    "choices": {
-      "A": "The price of the good it sells.",
-      "B": "The firm's total cost.",
-      "C": "The firm's average total cost.",
-      "D": "The market supply curve."
-    },
-    "answer": "A",
-    "difficulty": 3,
-    "explanation": "In perfect competition, firms are price takers. They can sell any quantity at the prevailing market price. Therefore, the additional revenue from selling one more unit (marginal revenue) is equal to the market price."
-  },
-  {
-    "id": "AP_Microeconomics_223",
-    "question": "When a consumer's income increases, the demand for a normal good will:",
-    "choices": {
-      "A": "Increase.",
-      "B": "Decrease.",
-      "C": "Stay the same.",
-      "D": "Shift to the left."
-    },
-    "answer": "A",
-    "difficulty": 2,
-    "explanation": "A normal good is defined as a good for which demand increases as consumer income rises. Conversely, demand for an inferior good decreases as income rises."
-  },
-  {
-    "id": "AP_Microeconomics_224",
-    "question": "The law of diminishing marginal utility states that:",
-    "choices": {
-      "A": "As a consumer consumes more of a good, the total utility gained will eventually decrease.",
-      "B": "As a consumer consumes more of a good, the additional satisfaction from consuming one more unit will eventually decrease.",
-      "C": "The cost of producing additional units of a good will eventually decrease.",
-      "D": "The price of a good will fall as more of it is produced."
-    },
-    "answer": "B",
-    "difficulty": 4,
-    "explanation": "The law of diminishing marginal utility explains that while total utility typically increases with consumption, the marginal utility (the extra satisfaction from each additional unit) tends to fall as consumption rises. For example, the first slice of pizza provides more satisfaction than the tenth."
   },
   {
     "id": "AP_Microeconomics_225",
@@ -2949,19 +2575,6 @@
     "explanation": "Monopolistically competitive firms sell differentiated products. This differentiation gives them some market power, meaning they face a downward-sloping demand curve. However, because there are many close substitutes available from competitors, this demand curve is more elastic than that of a pure monopolist."
   },
   {
-    "id": "AP_Microeconomics_228",
-    "question": "If the cross-price elasticity of demand between good X and good Y is positive, then goods X and Y are:",
-    "choices": {
-      "A": "Complements.",
-      "B": "Substitutes.",
-      "C": "Independent.",
-      "D": "Inferior goods."
-    },
-    "answer": "B",
-    "difficulty": 5,
-    "explanation": "Cross-price elasticity of demand measures how the quantity demanded of one good responds to a change in the price of another good. A positive elasticity indicates that an increase in the price of good Y leads to an increase in the quantity demanded of good X, which is the definition of substitutes."
-  },
-  {
     "id": "AP_Microeconomics_229",
     "question": "In the long run, a perfectly competitive firm will earn zero economic profit because of:",
     "choices": {
@@ -2975,28 +2588,15 @@
     "explanation": "The ability of firms to freely enter and exit a perfectly competitive market in the long run drives economic profits to zero. If firms are making positive economic profits, new firms will enter, increasing supply and driving down prices until profits are eliminated. Conversely, if firms are making losses, some will exit, decreasing supply and raising prices until losses are eliminated."
   },
   {
-    "id": "AP_Microeconomics_230",
-    "question": "Which of the following is a characteristic of a natural monopoly?",
-    "choices": {
-      "A": "High barriers to entry due to patents.",
-      "B": "Significant economies of scale over the relevant range of output.",
-      "C": "Products that are highly differentiated.",
-      "D": "A small market share for the single firm."
-    },
-    "answer": "B",
-    "difficulty": 6,
-    "explanation": "Natural monopolies arise when a single firm can supply a good or service to an entire market at a lower cost than two or more firms could. This is typically due to substantial economies of scale, where average costs fall continuously over the entire range of market demand. This creates a barrier to entry for potential competitors."
-  },
-  {
     "id": "AP_Microeconomics_231",
     "question": "If a government imposes a price ceiling below the equilibrium price, the result will be:",
     "choices": {
       "A": "A surplus of the good.",
-      "B": "A shortage of the good.",
+      "B": "No change in the market outcome.",
       "C": "An increase in quantity supplied.",
-      "D": "No change in the market outcome."
+      "D": "A shortage of the good."
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 5,
     "explanation": "A price ceiling set below the equilibrium price is binding. At this lower price, the quantity demanded will exceed the quantity supplied, leading to a shortage. Producers are unwilling or unable to supply as much as consumers wish to buy at the artificially low price."
   },
@@ -3012,32 +2612,6 @@
     "answer": "C",
     "difficulty": 7,
     "explanation": "A firm will shut down in the short run if the price it receives is less than its average variable cost (AVC). At this point, the revenue generated from sales does not even cover the variable costs of production, meaning the firm incurs losses greater than its fixed costs. If the price is above AVC, the firm will continue to produce, as it can cover its variable costs and contribute to covering some of its fixed costs."
-  },
-  {
-    "id": "AP_Microeconomics_233",
-    "question": "Which of the following is a potential benefit of international trade for a country?",
-    "choices": {
-      "A": "Reduced consumer choice.",
-      "B": "Decreased efficiency due to specialization.",
-      "C": "Greater availability of goods and services.",
-      "D": "Increased vulnerability to global price fluctuations."
-    },
-    "answer": "C",
-    "difficulty": 3,
-    "explanation": "International trade allows countries to specialize in producing goods and services where they have a comparative advantage, leading to increased global output. For consumers, this often translates to a wider variety of goods and services available at potentially lower prices due to competition and specialization."
-  },
-  {
-    "id": "AP_Microeconomics_234",
-    "question": "Price discrimination is the practice of:",
-    "choices": {
-      "A": "Selling the same good at different prices to different customers.",
-      "B": "Charging all customers the same price.",
-      "C": "Producing a good with different quality levels.",
-      "D": "Colluding with competitors to set a single price."
-    },
-    "answer": "A",
-    "difficulty": 4,
-    "explanation": "Price discrimination involves selling a product or service at different prices to different buyers, even when the cost of production is the same. This requires the seller to have some market power and the ability to prevent arbitrage (resale between different customer groups)."
   },
   {
     "id": "AP_Microeconomics_235",
@@ -3083,11 +2657,11 @@
     "question": "If the price of labor (a variable input) increases, a profit-maximizing firm will likely:",
     "choices": {
       "A": "Increase its use of labor.",
-      "B": "Decrease its use of labor.",
+      "B": "Exit the market immediately.",
       "C": "Maintain the same level of labor usage.",
-      "D": "Exit the market immediately."
+      "D": "Decrease its use of labor."
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 4,
     "explanation": "A profit-maximizing firm will continue to hire labor as long as the marginal revenue product of labor (MRP_L) is greater than or equal to the wage rate (W). If the wage rate increases, and MRP_L does not change proportionally, the firm will hire less labor to ensure that W <= MRP_L."
   },
@@ -3157,19 +2731,6 @@
     "explanation": "Like a monopolist, a firm in monopolistic competition maximizes profit by producing where marginal revenue (MR) equals marginal cost (MC). However, because its demand curve is downward sloping, its price will be greater than its marginal cost at this profit-maximizing output."
   },
   {
-    "id": "AP_Microeconomics_244",
-    "question": "Which of the following is a characteristic of a pure monopoly?",
-    "choices": {
-      "A": "Many sellers offering differentiated products.",
-      "B": "Few sellers who are interdependent.",
-      "C": "One seller with a unique product and high barriers to entry.",
-      "D": "Many sellers offering identical products."
-    },
-    "answer": "C",
-    "difficulty": 3,
-    "explanation": "A pure monopoly is defined by having a single seller in a market, producing a product with no close substitutes, and facing significant barriers to entry that prevent other firms from competing."
-  },
-  {
     "id": "AP_Microeconomics_245",
     "question": "If the marginal product of labor is falling, then:",
     "choices": {
@@ -3194,19 +2755,6 @@
     "answer": "A",
     "difficulty": 4,
     "explanation": "Consumer surplus is a measure of the economic benefit consumers receive when they purchase a good or service. It is calculated as the difference between the maximum price a consumer is willing to pay for a unit of a good and the actual market price they pay."
-  },
-  {
-    "id": "AP_Microeconomics_247",
-    "question": "A perfectly competitive firm's marginal revenue is equal to its:",
-    "choices": {
-      "A": "Average total cost",
-      "B": "Price",
-      "C": "Total cost",
-      "D": "Marginal cost"
-    },
-    "answer": "B",
-    "difficulty": 3,
-    "explanation": "In perfect competition, firms are price takers. They can sell any quantity at the market price, so each additional unit sold adds that market price to their total revenue. Therefore, marginal revenue (MR) equals price (P)."
   },
   {
     "id": "AP_Microeconomics_248",
@@ -3248,41 +2796,15 @@
     "explanation": "A positive externality is a spillover benefit. The actions of one party create benefits for others who do not pay for them. Examples include vaccinations or education."
   },
   {
-    "id": "AP_Microeconomics_251",
-    "question": "A Giffen good is a good for which demand:",
-    "choices": {
-      "A": "Increases as income increases",
-      "B": "Decreases as price increases, consistent with the law of demand",
-      "C": "Increases as price increases, due to a strong negative substitution effect",
-      "D": "Increases as price increases, due to a strong positive income effect that outweighs the substitution effect"
-    },
-    "answer": "D",
-    "difficulty": 8,
-    "explanation": "A Giffen good is a rare, inferior good where the income effect (which is positive and outweighs the substitution effect) dominates the substitution effect (which is negative). As the price rises, consumers buy more of it because they become poorer and can only afford more of this inferior good."
-  },
-  {
-    "id": "AP_Microeconomics_252",
-    "question": "The demand for labor is derived from:",
-    "choices": {
-      "A": "The supply of labor",
-      "B": "The marginal product of labor and the demand for the product labor helps produce",
-      "C": "Government regulations on wages",
-      "D": "The total profit of the firm"
-    },
-    "answer": "B",
-    "difficulty": 5,
-    "explanation": "A firm hires labor to produce goods or services. The value of an additional worker to the firm is determined by how much output they produce (marginal product) and how much that output can be sold for (demand for the product)."
-  },
-  {
     "id": "AP_Microeconomics_253",
     "question": "Economies of scale exist when:",
     "choices": {
       "A": "Long-run average total cost increases as output increases",
-      "B": "Long-run average total cost decreases as output increases",
+      "B": "Short-run average total cost decreases as output increases",
       "C": "Short-run average total cost increases as output increases",
-      "D": "Short-run average total cost decreases as output increases"
+      "D": "Long-run average total cost decreases as output increases"
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 4,
     "explanation": "Economies of scale refer to the cost advantages that a business obtains due to its size, with cost per unit of output decreasing as the scale of production increases. This is reflected in a downward-sloping long-run average total cost curve."
   },
@@ -3298,19 +2820,6 @@
     "answer": "D",
     "difficulty": 7,
     "explanation": "In monopolistic competition, firms face downward-sloping demand curves. They maximize profit where MR=MC, but because the demand curve is downward sloping, Price (from the demand curve) will be greater than MR. Thus, P > MC at the profit-maximizing output. Also, in the long run, P = ATC, so profits are zero, but P > MC."
-  },
-  {
-    "id": "AP_Microeconomics_255",
-    "question": "Which of the following is a characteristic of a natural monopoly?",
-    "choices": {
-      "A": "High barriers to entry due to control of a key resource",
-      "B": "The firm has economies of scale over the entire range of market demand",
-      "C": "The product is differentiated from competitors' products",
-      "D": "The firm earns positive economic profits in the long run due to intense competition"
-    },
-    "answer": "B",
-    "difficulty": 6,
-    "explanation": "A natural monopoly arises when a single firm can supply the entire market at a lower cost than two or more firms could. This occurs when there are economies of scale over the relevant range of output, meaning average costs fall as output rises."
   },
   {
     "id": "AP_Microeconomics_256",
@@ -3330,11 +2839,11 @@
     "question": "The concept of 'consumer surplus' is best defined as:",
     "choices": {
       "A": "The total amount consumers spend on a good.",
-      "B": "The difference between the maximum price consumers are willing to pay and the price they actually pay.",
+      "B": "The profit earned by firms in a competitive market.",
       "C": "The additional satisfaction a consumer gains from consuming one more unit of a good.",
-      "D": "The profit earned by firms in a competitive market."
+      "D": "The difference between the maximum price consumers are willing to pay and the price they actually pay."
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 4,
     "explanation": "Consumer surplus represents the net benefit consumers receive from purchasing a good or service. It is the difference between the highest price a consumer is willing to pay for a unit and the market price they actually pay."
   },
@@ -3376,19 +2885,6 @@
     "answer": "C",
     "difficulty": 4,
     "explanation": "Fixed costs are costs that do not change with the level of output in the short run. Rent on a factory building is typically a contractual obligation that must be paid regardless of how much the factory produces."
-  },
-  {
-    "id": "AP_Microeconomics_261",
-    "question": "The Herfindahl-Hirschman Index (HHI) is used to measure:",
-    "choices": {
-      "A": "The elasticity of demand for a firm's product",
-      "B": "The degree of market concentration",
-      "C": "The total revenue of firms in an industry",
-      "D": "The efficiency of resource allocation"
-    },
-    "answer": "B",
-    "difficulty": 7,
-    "explanation": "The HHI is calculated by squaring the market share of each firm in an industry and then summing the resulting numbers. It provides a measure of market concentration, with higher values indicating a more concentrated (less competitive) market."
   },
   {
     "id": "AP_Microeconomics_262",
@@ -3446,12 +2942,12 @@
     "id": "AP_Microeconomics_266",
     "question": "In the long run, a firm in a perfectly competitive industry will earn zero economic profit because:",
     "choices": {
-      "A": "Price equals marginal cost.",
-      "B": "Of the threat of new firms entering the market.",
+      "A": "Of the threat of new firms entering the market.",
+      "B": "Price equals marginal cost.",
       "C": "Price equals average fixed cost.",
       "D": "Marginal revenue equals average total cost."
     },
-    "answer": "B",
+    "answer": "A",
     "difficulty": 5,
     "explanation": "The ability of firms to enter a perfectly competitive market if profits are positive drives prices down until economic profits are zero. Conversely, firms exiting a market if profits are negative drives prices up. This free entry and exit mechanism ensures zero economic profit in the long run."
   },
@@ -3482,19 +2978,6 @@
     "explanation": "A tax on a negative externality, often called a Pigouvian tax, is designed to internalize the externality. By increasing the cost of production for the firm, it reduces the quantity produced to a level that reflects the true social cost, thereby moving towards the socially optimal output."
   },
   {
-    "id": "AP_Microeconomics_269",
-    "question": "The law of diminishing marginal utility states that:",
-    "choices": {
-      "A": "As a consumer consumes more of a good, total utility increases at an increasing rate.",
-      "B": "As a consumer consumes more of a good, the additional satisfaction from consuming each additional unit eventually decreases.",
-      "C": "As a consumer consumes more of a good, total utility decreases.",
-      "D": "As a consumer consumes more of a good, marginal utility increases."
-    },
-    "answer": "B",
-    "difficulty": 4,
-    "explanation": "The law of diminishing marginal utility is a fundamental principle in economics stating that as a person increases consumption of a good or service, the marginal utility derived from each additional unit of the good or service typically decreases, assuming other factors remain constant."
-  },
-  {
     "id": "AP_Microeconomics_270",
     "question": "If a firm has market power, it means the firm:",
     "choices": {
@@ -3506,19 +2989,6 @@
     "answer": "C",
     "difficulty": 4,
     "explanation": "Market power refers to the ability of a firm to affect the market price of its product. Firms with market power can raise prices above marginal cost without losing all their customers, which is characteristic of markets other than perfect competition."
-  },
-  {
-    "id": "AP_Microeconomics_271",
-    "question": "Which of the following is a characteristic of a public good?",
-    "choices": {
-      "A": "It is rivalrous and excludable.",
-      "B": "It is rivalrous and non-excludable.",
-      "C": "It is non-rivalrous and excludable.",
-      "D": "It is non-rivalrous and non-excludable."
-    },
-    "answer": "D",
-    "difficulty": 6,
-    "explanation": "Public goods are defined by two characteristics: non-rivalry (one person's consumption does not prevent another's) and non-excludability (it is difficult or impossible to prevent people from consuming the good). Examples include national defense or streetlights."
   },
   {
     "id": "AP_Microeconomics_272",
@@ -3573,19 +3043,6 @@
     "explanation": "In monopolistic competition, firms face a downward-sloping demand curve, meaning Price (P) > Marginal Cost (MC) in equilibrium. However, in the long run, the entry of new firms driven by short-run profits (or exit due to short-run losses) will drive economic profits to zero. This zero economic profit occurs where the demand curve is tangent to the average total cost (ATC) curve, meaning P = ATC. So, in the long run, firms in monopolistically competitive markets produce where P > MC but P = ATC, resulting in zero economic profit."
   },
   {
-    "id": "AP_Microeconomics_276",
-    "question": "Consider the production possibilities frontier (PPF) for a country producing only two goods: wheat and computers. If the opportunity cost of producing computers increases as more computers are produced, this indicates:",
-    "choices": {
-      "A": "A linear PPF.",
-      "B": "Increasing opportunity costs.",
-      "C": "Constant opportunity costs.",
-      "D": "Decreasing opportunity costs."
-    },
-    "answer": "B",
-    "difficulty": 3,
-    "explanation": "The shape of the production possibilities frontier illustrates the opportunity costs of production. A linear PPF represents constant opportunity costs, meaning the trade-off between producing the two goods remains the same regardless of the production levels. A PPF that bows outward (is concave to the origin) indicates increasing opportunity costs. This occurs because resources are not perfectly substitutable between the production of the two goods; as production of one good increases, resources that are better suited for the other good must be reallocated, leading to a higher sacrifice of the other good for each additional unit produced."
-  },
-  {
     "id": "AP_Microeconomics_277",
     "question": "If a country experiences technological advancements that increase the productivity of labor, assuming all other factors remain constant, this will most likely lead to:",
     "choices": {
@@ -3612,43 +3069,17 @@
     "explanation": "The utility maximization rule states that a consumer maximizes utility when the marginal utility per dollar spent on each good is equal. This means MUx/Px = MUy/Py for goods X and Y. Option B (total utility is maximized) is not necessarily true; the consumer reaches the optimal point where the last dollar spent yields the same satisfaction across all goods. Option C is incorrect as different goods have different prices. Option D relates to profit maximization in production, not utility maximization for consumers."
   },
   {
-    "id": "AP_Microeconomics_279",
-    "question": "Which of the following is a characteristic of a natural monopoly?",
-    "choices": {
-      "A": "High barriers to entry due to patent protection.",
-      "B": "The firm experiences economies of scale over the entire range of market demand.",
-      "C": "The firm produces a differentiated product.",
-      "D": "The firm operates in a market with many small competitors."
-    },
-    "answer": "B",
-    "difficulty": 7,
-    "explanation": "A natural monopoly arises when a single firm can supply the entire market output at a lower cost than two or more firms could. This typically occurs because of significant economies of scale, where average total cost declines over the entire relevant range of demand. Options A and C describe aspects of other market structures or firm strategies. Option D contradicts the definition of a monopoly."
-  },
-  {
     "id": "AP_Microeconomics_280",
     "question": "If the government imposes a price ceiling below the equilibrium price in a market, what is the predictable outcome?",
     "choices": {
-      "A": "A surplus of the good.",
-      "B": "A shortage of the good.",
+      "A": "A shortage of the good.",
+      "B": "A surplus of the good.",
       "C": "An increase in producer surplus.",
       "D": "No change in the quantity traded."
     },
-    "answer": "B",
+    "answer": "A",
     "difficulty": 5,
     "explanation": "A price ceiling set below the equilibrium price is a binding price ceiling. At this lower price, the quantity demanded will exceed the quantity supplied, leading to a shortage."
-  },
-  {
-    "id": "AP_Microeconomics_281",
-    "question": "The law of diminishing marginal returns states that:",
-    "choices": {
-      "A": "as more of a variable input is added to a fixed input, the total output will eventually decrease.",
-      "B": "as more of a variable input is added to a fixed input, the marginal product of the variable input will eventually decrease.",
-      "C": "as the quantity of a good produced increases, the marginal cost will eventually increase.",
-      "D": "as more of all inputs are increased, the average cost will eventually increase."
-    },
-    "answer": "B",
-    "difficulty": 4,
-    "explanation": "The law of diminishing marginal returns focuses on the marginal product. It states that when at least one input is fixed, adding more of a variable input will, after some point, result in smaller and smaller increases in output (i.e., a decreasing marginal product)."
   },
   {
     "id": "AP_Microeconomics_282",
@@ -3662,32 +3093,6 @@
     "answer": "A",
     "difficulty": 8,
     "explanation": "Deadweight loss from a tax represents the loss of economic efficiency. It is created because the tax distorts the market outcome, reducing the quantity traded below the efficient level. The size of the deadweight loss is directly related to the elasticities of supply and demand. When demand is more elastic than supply, consumers are more responsive to price changes, leading to a larger reduction in quantity traded and thus a larger deadweight loss in response to the tax."
-  },
-  {
-    "id": "AP_Microeconomics_283",
-    "question": "Which of the following is an example of a positive externality?",
-    "choices": {
-      "A": "A factory polluting a nearby river.",
-      "B": "A student choosing to get vaccinated against a contagious disease.",
-      "C": "A noisy construction project disturbing neighbors.",
-      "D": "A company using excessive resources, raising input prices for others."
-    },
-    "answer": "B",
-    "difficulty": 5,
-    "explanation": "A positive externality occurs when the production or consumption of a good or service creates a benefit for a third party not directly involved in the transaction. A vaccination benefits not only the individual but also society by reducing the spread of disease (herd immunity)."
-  },
-  {
-    "id": "AP_Microeconomics_284",
-    "question": "In the short run, a firm in monopolistic competition will shut down if:",
-    "choices": {
-      "A": "price is less than average total cost.",
-      "B": "price is less than average variable cost.",
-      "C": "marginal revenue is less than marginal cost.",
-      "D": "the firm is making an economic loss."
-    },
-    "answer": "B",
-    "difficulty": 7,
-    "explanation": "In the short run, a firm should continue to operate as long as the price it receives covers its average variable costs. If the price falls below average variable cost, the firm is not even covering the variable costs of production, and it is better off shutting down to minimize its losses (which would be limited to its fixed costs)."
   },
   {
     "id": "AP_Microeconomics_285",
@@ -3714,19 +3119,6 @@
     "answer": "B",
     "difficulty": 6,
     "explanation": "Price discrimination occurs when a seller charges different prices to different consumers for the same good or service, based on their willingness to pay. This allows the seller to capture some of the consumer surplus that would otherwise be lost in a single-price market."
-  },
-  {
-    "id": "AP_Microeconomics_287",
-    "question": "A Giffen good is a good for which demand:",
-    "choices": {
-      "A": "increases as income increases.",
-      "B": "decreases as the price decreases, violating the law of demand.",
-      "C": "increases as the price decreases, and decreases as the price increases.",
-      "D": "is perfectly elastic."
-    },
-    "answer": "B",
-    "difficulty": 8,
-    "explanation": "A Giffen good is a rare exception to the law of demand. For a Giffen good, the income effect (which is strongly negative) outweighs the substitution effect, causing the demand curve to slope upward. That is, as the price falls, consumers buy less of it, and as the price rises, they buy more."
   },
   {
     "id": "AP_Microeconomics_288",
@@ -3772,11 +3164,11 @@
     "question": "Which of the following concepts best explains why a firm might choose to hire more workers even if the wage rate is relatively high?",
     "choices": {
       "A": "The law of demand",
-      "B": "The law of diminishing marginal returns",
+      "B": "The theory of perfect competition",
       "C": "The concept of economies of scale",
-      "D": "The theory of perfect competition"
+      "D": "The law of diminishing marginal returns"
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 5,
     "explanation": "While the wage rate is a cost, firms hire based on the marginal product of labor and the revenue it generates. The law of diminishing marginal returns implies that as more workers are hired, each additional worker might produce less than the previous one. However, as long as the marginal revenue product (value of the additional output) is greater than the wage, hiring more workers can still be profitable, even if marginal returns are diminishing."
   },
@@ -3863,24 +3255,24 @@
     "question": "If a firm is experiencing economies of scale, this means that as its output increases, its:",
     "choices": {
       "A": "marginal cost is increasing.",
-      "B": "average total cost is decreasing.",
+      "B": "average fixed cost is increasing.",
       "C": "total cost is decreasing.",
-      "D": "average fixed cost is increasing."
+      "D": "average total cost is decreasing."
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 4,
-    "explanation": "Economies of scale are a long-run concept where average total costs fall as output increases. This is often due to specialization, indivisibilities, or increased efficiency. Option C is incorrect as total cost will always increase with output. Option A is typical at higher output levels after economies of scale cease. Option D is incorrect as average fixed cost always decreases with output."
+    "explanation": "Economies of scale are a long-run concept where average total costs fall as output increases. This is often due to specialization, indivisibilities, or increased efficiency. Option C is incorrect as total cost will always increase with output. Option A is typical at higher output levels after economies of scale cease. Option B is incorrect as average fixed cost always decreases with output."
   },
   {
     "id": "AP_Microeconomics_299",
     "question": "A cartel is most likely to be successful in maintaining high prices if:",
     "choices": {
       "A": "there are many firms in the cartel with diverse production costs.",
-      "B": "there are few firms in the cartel and they cooperate effectively.",
+      "B": "the product is easily substitutable.",
       "C": "there are significant opportunities for new firms to enter the market.",
-      "D": "the product is easily substitutable."
+      "D": "there are few firms in the cartel and they cooperate effectively."
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 7,
     "explanation": "Cartels aim to act like a monopoly by restricting output and raising prices. Their success depends on factors that limit competition and facilitate cooperation. Having few members reduces the complexity of coordination and monitoring. Diverse production costs among members can create incentives for some to cheat. Ease of entry and substitutability increase competition, making it harder for a cartel to sustain high prices."
   },

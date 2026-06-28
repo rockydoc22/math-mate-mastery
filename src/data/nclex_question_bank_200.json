@@ -25,7 +25,7 @@
     "correctAnswer": "A",
     "explanation": "UAPs can perform routine tasks like recording vital signs on stable patients. Assessment, medication administration, and care planning require licensed nurse judgment.",
     "skill": "Delegation",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "nclex_002",
@@ -53,7 +53,7 @@
     "correctAnswer": "A",
     "explanation": "Furosemide is a loop diuretic that causes potassium loss. Hypokalemia can lead to dangerous cardiac arrhythmias, making potassium monitoring essential.",
     "skill": "Pharmacology",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "nclex_003",
@@ -81,7 +81,7 @@
     "correctAnswer": "B",
     "explanation": "Current guidelines recommend colorectal cancer screening beginning at age 45 for average-risk individuals.",
     "skill": "Health Screening",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "nclex_004",
@@ -109,7 +109,7 @@
     "correctAnswer": "A",
     "explanation": "When a patient expresses suicidal ideation, the priority is to assess for a specific plan and means to determine risk level.",
     "skill": "Crisis Intervention",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "nclex_005",
@@ -137,7 +137,7 @@
     "correctAnswer": "A",
     "explanation": "Influenza is transmitted via large respiratory droplets. TB requires airborne precautions, C. diff requires contact precautions.",
     "skill": "Infection Control",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "nclex_006",
@@ -165,7 +165,7 @@
     "correctAnswer": "A",
     "explanation": "Signs of a hemolytic transfusion reaction require immediately stopping the transfusion to prevent fatal complications.",
     "skill": "Blood Transfusion",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "nclex_007",
@@ -193,7 +193,7 @@
     "correctAnswer": "A",
     "explanation": "For a conscious hypoglycemic patient, the rule of 15 applies: give 15g of fast-acting carbohydrate, wait 15 minutes, recheck.",
     "skill": "Endocrine",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "nclex_008",
@@ -221,7 +221,7 @@
     "correctAnswer": "A",
     "explanation": "An SpO2 of 88% indicates hypoxemia and is a priority requiring immediate assessment.",
     "skill": "Prioritization",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "nclex_009",
@@ -249,7 +249,7 @@
     "correctAnswer": "A",
     "explanation": "Hepatitis B vaccine is the only vaccine routinely administered at birth. DTaP begins at 2 months, MMR and varicella at 12 months.",
     "skill": "Immunizations",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "nclex_010",
@@ -277,7 +277,7 @@
     "correctAnswer": "A",
     "explanation": "Right-sided HF causes systemic venous congestion: peripheral edema, JVD, hepatomegaly. Left-sided HF causes pulmonary symptoms.",
     "skill": "Cardiovascular",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "nclex_011",
@@ -305,7 +305,7 @@
     "correctAnswer": "A",
     "explanation": "Denial is the first stage of the Kübler-Ross grief model, characterized by disbelief and refusal to accept the diagnosis.",
     "skill": "Grief and Loss",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "nclex_012",
@@ -333,7 +333,7 @@
     "correctAnswer": "A",
     "explanation": "INR is the standardized measurement for warfarin therapy. Therapeutic range is typically 2.0-3.0. aPTT monitors heparin.",
     "skill": "Pharmacology",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "nclex_013",
@@ -361,7 +361,7 @@
     "correctAnswer": "A",
     "explanation": "Nurses have a legal and ethical obligation to report suspected drug diversion.",
     "skill": "Legal and Ethical",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "nclex_014",
@@ -389,7 +389,7 @@
     "correctAnswer": "A",
     "explanation": "Hyperkalemia (>5.0 mEq/L) causes peaked T waves. Severe hyperkalemia can progress to widened QRS and cardiac arrest.",
     "skill": "Renal",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "nclex_015",
@@ -417,7 +417,7 @@
     "correctAnswer": "A",
     "explanation": "Continuous bubbling indicates an air leak. Intermittent bubbling with respiration is normal.",
     "skill": "Respiratory",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "nclex_016",
@@ -445,7 +445,7 @@
     "correctAnswer": "A",
     "explanation": "The DASH diet recommends limiting sodium to <2,300 mg/day to help reduce blood pressure.",
     "skill": "Nutrition",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "nclex_017",
@@ -473,7 +473,7 @@
     "correctAnswer": "A",
     "explanation": "A bladder scan is non-invasive and assesses urinary retention before resorting to catheterization.",
     "skill": "Genitourinary",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "nclex_018",
@@ -501,7 +501,7 @@
     "correctAnswer": "A",
     "explanation": "Patient advocacy involves speaking up on behalf of the patient, including questioning potentially harmful orders.",
     "skill": "Professional Practice",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "nclex_019",
@@ -529,7 +529,7 @@
     "correctAnswer": "A",
     "explanation": "For paracentesis, the patient sits upright to allow fluid to collect in the lower abdomen.",
     "skill": "Gastrointestinal",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "nclex_020",
@@ -557,7 +557,7 @@
     "correctAnswer": "A",
     "explanation": "Acknowledge the patient's experience without reinforcing the delusion, then redirect to feelings.",
     "skill": "Therapeutic Communication",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "nclex_021",
@@ -585,7 +585,7 @@
     "correctAnswer": "A",
     "explanation": "aPTT (activated partial thromboplastin time) is the standard lab test for monitoring heparin therapy. Therapeutic range is 1.5-2.5 times the control value.",
     "skill": "Pharmacology",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "nclex_022",
@@ -613,7 +613,7 @@
     "correctAnswer": "A",
     "explanation": "COPD patients rely on hypoxic drive for respiration. High-flow oxygen can suppress this drive, so 1-2 L/min is appropriate to maintain SpO2 88-92%.",
     "skill": "Respiratory",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "nclex_023",
@@ -641,7 +641,7 @@
     "correctAnswer": "A",
     "explanation": "The three-check system (when removing from drawer, preparing, and at bedside) is a fundamental medication safety practice.",
     "skill": "Medication Administration",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "nclex_024",
@@ -669,7 +669,7 @@
     "correctAnswer": "A",
     "explanation": "Addison's disease (adrenal insufficiency) causes hyperpigmentation due to excess ACTH stimulating melanocytes, along with hypotension and weight loss.",
     "skill": "Endocrine",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "nclex_025",
@@ -697,7 +697,7 @@
     "correctAnswer": "A",
     "explanation": "Respiratory depression is the most dangerous side effect of morphine and requires priority monitoring. Naloxone should be readily available.",
     "skill": "Pharmacology",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "nclex_026",
@@ -725,7 +725,7 @@
     "correctAnswer": "A",
     "explanation": "The lungs compensate for metabolic acidosis by increasing respiratory rate and depth (Kussmaul breathing) to blow off excess CO2.",
     "skill": "Acid-Base Balance",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "nclex_027",
@@ -753,7 +753,7 @@
     "correctAnswer": "A",
     "explanation": "Tuberculosis requires airborne precautions (negative pressure room, N95 respirator) because TB bacilli can remain suspended in air.",
     "skill": "Infection Control",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "nclex_028",
@@ -781,7 +781,7 @@
     "correctAnswer": "A",
     "explanation": "Fruity breath odor is caused by ketone production in DKA. Other signs include Kussmaul breathing, polyuria, and altered consciousness.",
     "skill": "Endocrine",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "nclex_029",
@@ -809,7 +809,7 @@
     "correctAnswer": "A",
     "explanation": "Remaining with the patient after meals prevents purging behaviors. Supervision during and after meals is a standard intervention for anorexia nervosa.",
     "skill": "Eating Disorders",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "nclex_030",
@@ -837,7 +837,7 @@
     "correctAnswer": "A",
     "explanation": "Hyperglycemia is a serious complication of TPN due to the high dextrose content. A blood glucose of 380 mg/dL requires immediate insulin and rate adjustment.",
     "skill": "Nutrition Support",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "nclex_031",
@@ -865,7 +865,7 @@
     "correctAnswer": "A",
     "explanation": "CTPA is the gold standard diagnostic test for pulmonary embolism, providing direct visualization of clots in the pulmonary vasculature.",
     "skill": "Respiratory",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "nclex_032",
@@ -893,7 +893,7 @@
     "correctAnswer": "A",
     "explanation": "Patient safety is always the priority. Assess for adverse effects first, then notify the provider, complete documentation, and file an incident report.",
     "skill": "Medication Safety",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "nclex_033",
@@ -921,7 +921,7 @@
     "correctAnswer": "A",
     "explanation": "The fetal position (side-lying with knees flexed) reduces tension on the abdomen and decreases pancreatic pressure, providing pain relief.",
     "skill": "Gastrointestinal",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "nclex_034",
@@ -949,7 +949,7 @@
     "correctAnswer": "A",
     "explanation": "SPF 30+ applied 15 minutes before exposure and reapplied every 2 hours provides effective UV protection. Tanning beds increase melanoma risk.",
     "skill": "Cancer Prevention",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "nclex_035",
@@ -977,7 +977,7 @@
     "correctAnswer": "A",
     "explanation": "Adequate urine output for burn patients should be 0.5-1 mL/kg/hr. 15 mL/hr indicates hypovolemia and inadequate fluid resuscitation.",
     "skill": "Burns",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "nclex_036",
@@ -1005,7 +1005,7 @@
     "correctAnswer": "A",
     "explanation": "Cushing's triad is a late sign of increased ICP. The body compensates with hypertension to maintain cerebral perfusion, with reflex bradycardia.",
     "skill": "Neurological",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "nclex_037",
@@ -1033,7 +1033,7 @@
     "correctAnswer": "A",
     "explanation": "RACE: Rescue patients first, then Activate the alarm, Contain the fire, and Extinguish or Evacuate.",
     "skill": "Emergency Response",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "nclex_038",
@@ -1061,7 +1061,7 @@
     "correctAnswer": "A",
     "explanation": "Digoxin slows the heart rate. If the apical pulse is below 60 bpm, hold the medication and notify the provider to prevent toxicity-related bradycardia.",
     "skill": "Pharmacology",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "nclex_039",
@@ -1089,7 +1089,7 @@
     "correctAnswer": "A",
     "explanation": "An ANC below 500 indicates severe neutropenia. The patient is at extreme risk for infection, requiring neutropenic precautions.",
     "skill": "Oncology",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "nclex_040",
@@ -1117,7 +1117,7 @@
     "correctAnswer": "A",
     "explanation": "Sudden bilateral leg paralysis with an epidural may indicate epidural hematoma or migration of the catheter, requiring emergency evaluation.",
     "skill": "Pain Management",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "nclex_041",
@@ -1145,7 +1145,7 @@
     "correctAnswer": "A",
     "explanation": "Motivational interviewing uses open-ended questions that help patients explore their own motivations for change rather than being told what to do.",
     "skill": "Health Promotion",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "nclex_042",
@@ -1173,7 +1173,7 @@
     "correctAnswer": "A",
     "explanation": "Buck's traction is skin traction used pre-operatively to reduce muscle spasm, provide comfort, and maintain alignment until surgical repair.",
     "skill": "Musculoskeletal",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "nclex_043",
@@ -1201,7 +1201,7 @@
     "correctAnswer": "A",
     "explanation": "Coarse tremors, persistent diarrhea, and vomiting indicate early lithium toxicity (1.5-2.0 mEq/L). Fine tremor and thirst are expected side effects at therapeutic levels.",
     "skill": "Pharmacology",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "nclex_044",
@@ -1229,7 +1229,7 @@
     "correctAnswer": "A",
     "explanation": "Advanced age, polypharmacy (especially diuretics and sedatives), and mobility aids are all significant fall risk factors.",
     "skill": "Patient Safety",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "nclex_045",
@@ -1257,7 +1257,7 @@
     "correctAnswer": "A",
     "explanation": "The liver synthesizes most clotting factors. Liver disease impairs production of vitamin K-dependent factors (II, VII, IX, X) and other proteins.",
     "skill": "Hematology",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "nclex_046",
@@ -1285,7 +1285,7 @@
     "correctAnswer": "A",
     "explanation": "Central cyanosis after 10 minutes indicates inadequate oxygenation and requires immediate assessment. Acrocyanosis is normal for 24-48 hours.",
     "skill": "Maternal-Newborn",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "nclex_047",
@@ -1313,7 +1313,7 @@
     "correctAnswer": "A",
     "explanation": "In AKI, protein restriction reduces the buildup of nitrogenous waste products (BUN). Potassium and sodium should also be restricted.",
     "skill": "Renal",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "nclex_048",
@@ -1341,7 +1341,7 @@
     "correctAnswer": "A",
     "explanation": "Infiltration is characterized by swelling, pallor, and coolness at the IV site as the non-vesicant solution leaks into surrounding tissue. Extravasation involves vesicant solutions.",
     "skill": "IV Therapy",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "nclex_049",
@@ -1369,7 +1369,7 @@
     "correctAnswer": "A",
     "explanation": "Lying flat after eating increases gastric reflux. Patients should remain upright for 2-3 hours after meals and elevate the head of bed 30 degrees.",
     "skill": "Gastrointestinal",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "nclex_050",
@@ -1397,7 +1397,7 @@
     "correctAnswer": "A",
     "explanation": "Brudzinski's sign: involuntary hip and knee flexion when the neck is passively flexed, indicating meningeal irritation. Kernig's sign involves inability to extend the knee.",
     "skill": "Neurological",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "nclex_051",
@@ -1425,7 +1425,7 @@
     "correctAnswer": "A",
     "explanation": "Angioedema is a rare but life-threatening side effect of ACE inhibitors that can cause airway obstruction. It requires immediate discontinuation.",
     "skill": "Pharmacology",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "nclex_052",
@@ -1453,7 +1453,7 @@
     "correctAnswer": "A",
     "explanation": "By age 2, children should use 2-word phrases and have a vocabulary of about 50 words. Tricycle riding is a 3-year milestone.",
     "skill": "Growth and Development",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "nclex_053",
@@ -1481,7 +1481,7 @@
     "correctAnswer": "A",
     "explanation": "Beta-blockers given before alpha-blockade can cause unopposed alpha stimulation, leading to hypertensive crisis. Alpha-blockers (phenoxybenzamine) must be started first.",
     "skill": "Endocrine",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "nclex_054",
@@ -1509,7 +1509,7 @@
     "correctAnswer": "A",
     "explanation": "Proper documentation uses objective data and direct patient quotes. Subjective terms like 'good' and 'appears' are vague and non-measurable.",
     "skill": "Documentation",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "nclex_055",
@@ -1537,7 +1537,7 @@
     "correctAnswer": "A",
     "explanation": "Many transdermal patches have metallic foil backing that can cause burns during MRI. All metal objects must be removed.",
     "skill": "Diagnostic Procedures",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "nclex_056",
@@ -1565,7 +1565,7 @@
     "correctAnswer": "A",
     "explanation": "SIADH causes dilutional hyponatremia from excess water retention. Fluid restriction is the primary treatment. Rapid correction of sodium can cause osmotic demyelination.",
     "skill": "Endocrine",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "nclex_057",
@@ -1593,7 +1593,7 @@
     "correctAnswer": "A",
     "explanation": "Gurgling sounds and increased airway pressures indicate secretion buildup requiring suctioning. Suction only when clinically indicated, not on a schedule.",
     "skill": "Respiratory",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "nclex_058",
@@ -1621,7 +1621,7 @@
     "correctAnswer": "A",
     "explanation": "Gradual exposure with response prevention is the evidence-based approach. Abruptly stopping rituals increases anxiety; unlimited rituals reinforce the behavior.",
     "skill": "Mental Health",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "nclex_059",
@@ -1649,7 +1649,7 @@
     "correctAnswer": "A",
     "explanation": "Loss of DTRs is an early sign of magnesium toxicity. Other signs include respiratory depression (<12/min) and decreased urine output. Calcium gluconate is the antidote.",
     "skill": "Maternal-Newborn",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "nclex_060",
@@ -1677,7 +1677,7 @@
     "correctAnswer": "A",
     "explanation": "Intermittent claudication is the hallmark symptom of PAD — cramping leg pain during exercise that resolves with rest due to inadequate arterial blood flow.",
     "skill": "Cardiovascular",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "nclex_061",
@@ -1705,7 +1705,7 @@
     "correctAnswer": "A",
     "explanation": "Restraints require frequent assessment (every 1-2 hours) including circulation, sensation, and movement checks, along with offering food, fluids, and toileting.",
     "skill": "Patient Safety",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "nclex_062",
@@ -1733,7 +1733,7 @@
     "correctAnswer": "A",
     "explanation": "Massaging a leg with DVT can dislodge the clot, causing a potentially fatal pulmonary embolism. The leg should be elevated and anticoagulants administered.",
     "skill": "Cardiovascular",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "nclex_063",
@@ -1761,7 +1761,7 @@
     "correctAnswer": "A",
     "explanation": "Metformin should be taken with meals to reduce GI side effects (nausea, diarrhea). Used alone, it rarely causes hypoglycemia. Alcohol increases lactic acidosis risk.",
     "skill": "Pharmacology",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "nclex_064",
@@ -1789,7 +1789,7 @@
     "correctAnswer": "A",
     "explanation": "Racemic epinephrine provides rapid relief of upper airway edema in moderate to severe croup. Cool mist and corticosteroids are also used.",
     "skill": "Pediatric",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "nclex_065",
@@ -1817,7 +1817,7 @@
     "correctAnswer": "A",
     "explanation": "Folic acid (400-800 mcg daily) should begin at least 1 month before conception to prevent neural tube defects, which form in the first 28 days.",
     "skill": "Prenatal Care",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "nclex_066",
@@ -1845,7 +1845,7 @@
     "correctAnswer": "A",
     "explanation": "Both amylase and lipase are elevated in acute pancreatitis. Lipase is more specific and remains elevated longer. Hypocalcemia may also occur.",
     "skill": "Gastrointestinal",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "nclex_067",
@@ -1873,7 +1873,7 @@
     "correctAnswer": "A",
     "explanation": "Lactulose decreases ammonia levels by converting ammonia to ammonium in the colon, which is then excreted in stool. This is the primary treatment for hepatic encephalopathy.",
     "skill": "Gastrointestinal",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "nclex_068",
@@ -1901,7 +1901,7 @@
     "correctAnswer": "A",
     "explanation": "The most complex patient (ventilator, multiple drips, chest tubes) requires the most experienced nurse for safe, competent care.",
     "skill": "Assignment Making",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "nclex_069",
@@ -1929,7 +1929,7 @@
     "correctAnswer": "A",
     "explanation": "Levothyroxine should be taken on an empty stomach for optimal absorption. Calcium and iron supplements should be taken 4 hours apart. Full effects take 4-6 weeks.",
     "skill": "Pharmacology",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "nclex_070",
@@ -1957,7 +1957,7 @@
     "correctAnswer": "A",
     "explanation": "Enoxaparin is given subcutaneously in the abdomen, at least 2 inches from the umbilicus. Do not aspirate or rub the site.",
     "skill": "Pharmacology",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "nclex_071",
@@ -1985,7 +1985,7 @@
     "correctAnswer": "A",
     "explanation": "Pain out of proportion, especially with passive stretching, is the earliest sign of compartment syndrome. Absent pulses and paralysis are late, ominous signs.",
     "skill": "Musculoskeletal",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "nclex_072",
@@ -2013,7 +2013,7 @@
     "correctAnswer": "A",
     "explanation": "Splitting is managed through a consistent team approach with clear boundaries. All staff must follow the same care plan to prevent manipulation.",
     "skill": "Mental Health",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "nclex_073",
@@ -2041,7 +2041,7 @@
     "correctAnswer": "A",
     "explanation": "GCS ≤8 indicates severe brain injury. These patients typically cannot protect their airway and require intubation. GCS 9-12 is moderate, 13-15 is mild.",
     "skill": "Neurological",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "nclex_074",
@@ -2069,7 +2069,7 @@
     "correctAnswer": "A",
     "explanation": "Urticaria alone is typically a mild allergic reaction. Stop the transfusion, give antihistamine, and if symptoms resolve, the transfusion may be resumed per protocol.",
     "skill": "Blood Transfusion",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "nclex_075",
@@ -2097,7 +2097,7 @@
     "correctAnswer": "A",
     "explanation": "Discussing patient information in public areas (elevators, cafeteria, hallways) violates patient privacy under HIPAA regulations.",
     "skill": "Confidentiality",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "nclex_076",
@@ -2125,7 +2125,7 @@
     "correctAnswer": "A",
     "explanation": "H. pylori eradication requires triple therapy: a PPI to reduce acid plus two antibiotics for 14 days to eliminate the bacteria.",
     "skill": "Gastrointestinal",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "nclex_077",
@@ -2153,7 +2153,7 @@
     "correctAnswer": "A",
     "explanation": "V-fib is a lethal rhythm requiring immediate CPR and defibrillation. Early defibrillation is the most important intervention for survival.",
     "skill": "Cardiovascular",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "nclex_078",
@@ -2181,7 +2181,7 @@
     "correctAnswer": "A",
     "explanation": "Nasolacrimal occlusion (pressing inner canthus) prevents systemic absorption of timolol, which is a beta-blocker and can cause bradycardia and hypotension.",
     "skill": "Pharmacology",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "nclex_079",
@@ -2209,7 +2209,7 @@
     "correctAnswer": "A",
     "explanation": "Hypocalcemia causes neuromuscular irritability. Trousseau's sign (carpal spasm when BP cuff inflated) and Chvostek's sign (facial twitching when tapped) are classic indicators.",
     "skill": "Endocrine",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "nclex_080",
@@ -2237,7 +2237,7 @@
     "correctAnswer": "A",
     "explanation": "Aspirin's antiplatelet effect inhibits thromboxane A2, preventing further platelet aggregation and clot formation during MI.",
     "skill": "Cardiovascular",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "nclex_081",
@@ -2265,7 +2265,7 @@
     "correctAnswer": "A",
     "explanation": "Burning is common with IV potassium. First reduce the rate and assess the site for infiltration. If the site is intact, reducing the rate often resolves the discomfort.",
     "skill": "IV Therapy",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "nclex_082",
@@ -2293,7 +2293,7 @@
     "correctAnswer": "A",
     "explanation": "Mammography screening is recommended annually or biennially starting at age 40 (varies by guideline) for breast cancer detection.",
     "skill": "Cancer Screening",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "nclex_083",
@@ -2321,7 +2321,7 @@
     "correctAnswer": "A",
     "explanation": "Adequate hydration (2-3 L/day) helps liquefy thick secretions, making them easier to expectorate. Coughing should be encouraged, not suppressed.",
     "skill": "Respiratory",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "nclex_084",
@@ -2349,7 +2349,7 @@
     "correctAnswer": "A",
     "explanation": "Phenytoin causes gingival hyperplasia in up to 50% of patients. Meticulous oral hygiene and regular dental visits help minimize this side effect.",
     "skill": "Pharmacology",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "nclex_085",
@@ -2377,7 +2377,7 @@
     "correctAnswer": "A",
     "explanation": "Always verify NG tube placement before medication administration by checking aspirate pH (<5.5 suggests gastric) and tube marking position.",
     "skill": "Medication Administration",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "nclex_086",
@@ -2405,7 +2405,7 @@
     "correctAnswer": "A",
     "explanation": "C4 injury affects all four extremities (quadriplegia) and may compromise the diaphragm (innervated by C3-C5), potentially requiring mechanical ventilation.",
     "skill": "Neurological",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "nclex_087",
@@ -2433,7 +2433,7 @@
     "correctAnswer": "A",
     "explanation": "Acute chest syndrome in sickle cell disease presents with chest pain, fever, and new pulmonary infiltrate. It's a leading cause of death in SCD and requires urgent treatment.",
     "skill": "Hematology",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "nclex_088",
@@ -2461,7 +2461,7 @@
     "correctAnswer": "A",
     "explanation": "Cultural competence involves asking patients about their individual preferences rather than making assumptions based on cultural stereotypes.",
     "skill": "Cultural Competence",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "nclex_089",
@@ -2489,7 +2489,7 @@
     "correctAnswer": "A",
     "explanation": "Bronchodilators (albuterol) should be used first to open airways, allowing the corticosteroid (fluticasone) to reach deeper into the lungs for maximum effect.",
     "skill": "Pharmacology",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "nclex_090",
@@ -2517,7 +2517,7 @@
     "correctAnswer": "A",
     "explanation": "Asterixis (involuntary flapping of the hands when wrists are dorsiflexed) is a classic sign of hepatic encephalopathy caused by elevated serum ammonia.",
     "skill": "Gastrointestinal",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "nclex_091",
@@ -2545,7 +2545,7 @@
     "correctAnswer": "A",
     "explanation": "PPE donning order: gown first, then mask/respirator, eye protection, and gloves last. Doffing is the reverse: gloves first, then eye protection, gown, mask.",
     "skill": "Infection Control",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "nclex_092",
@@ -2573,7 +2573,7 @@
     "correctAnswer": "A",
     "explanation": "Thyroid storm is a life-threatening hyperthyroid crisis with extreme hyperthermia, tachycardia (>140), agitation, delirium, and potentially cardiovascular collapse.",
     "skill": "Endocrine",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "nclex_093",
@@ -2601,7 +2601,7 @@
     "correctAnswer": "A",
     "explanation": "Bisphosphonates can cause severe esophageal irritation. Take with 8 oz water on an empty stomach and remain upright for 30 minutes to prevent esophageal damage.",
     "skill": "Pharmacology",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "nclex_094",
@@ -2629,7 +2629,7 @@
     "correctAnswer": "A",
     "explanation": "Diabetes insipidus causes massive diuresis (up to 20 L/day) of very dilute urine (SG <1.005) due to insufficient ADH or renal resistance to ADH.",
     "skill": "Endocrine",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "nclex_095",
@@ -2657,7 +2657,7 @@
     "correctAnswer": "A",
     "explanation": "Wiping front to back prevents introduction of rectal bacteria into the urethra. Adequate hydration and frequent voiding also help prevent UTIs.",
     "skill": "Health Education",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "nclex_096",
@@ -2685,7 +2685,7 @@
     "correctAnswer": "A",
     "explanation": "Crohn's disease commonly affects the terminal ileum where B12 is absorbed. Chronic inflammation leads to B12 malabsorption and potentially megaloblastic anemia.",
     "skill": "Gastrointestinal",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "nclex_097",
@@ -2713,7 +2713,7 @@
     "correctAnswer": "A",
     "explanation": "Absence of tidaling (fluctuation) may indicate the lung has re-expanded, the tubing is kinked/clamped, or the tube is obstructed. The nurse should assess all connections.",
     "skill": "Respiratory",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "nclex_098",
@@ -2741,7 +2741,7 @@
     "correctAnswer": "A",
     "explanation": "The lateral recumbent (fetal) position opens the intervertebral spaces for easier needle insertion during a lumbar puncture.",
     "skill": "Diagnostic Procedures",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "nclex_099",
@@ -2769,7 +2769,7 @@
     "correctAnswer": "A",
     "explanation": "CDC recommends scrubbing with soap and water for at least 20 seconds to effectively remove pathogens. Alcohol-based rubs can be used when hands are not visibly soiled.",
     "skill": "Infection Control",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "nclex_100",
@@ -2797,7 +2797,7 @@
     "correctAnswer": "A",
     "explanation": "Carvedilol is a beta-blocker that can cause bradycardia and hypotension. Always check HR and BP before administration; hold if HR <60 or systolic BP <100.",
     "skill": "Pharmacology",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "nclex_101",
@@ -2825,7 +2825,7 @@
     "correctAnswer": "A",
     "explanation": "pH <7.35 = acidosis. PaCO2 >45 = respiratory cause. HCO3 is normal (22-26), indicating no renal compensation yet = uncompensated respiratory acidosis.",
     "skill": "Acid-Base Balance",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "nclex_102",
@@ -2853,7 +2853,7 @@
     "correctAnswer": "A",
     "explanation": "Abruptly stopping TPN can cause rebound hypoglycemia due to continued insulin production. D10W provides glucose to prevent this until the new TPN arrives.",
     "skill": "Nutrition Support",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "nclex_103",
@@ -2881,7 +2881,7 @@
     "correctAnswer": "A",
     "explanation": "Pyridostigmine is an acetylcholinesterase inhibitor that improves neuromuscular transmission. Effectiveness is shown by improved muscle strength and swallowing ability.",
     "skill": "Pharmacology",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "nclex_104",
@@ -2909,7 +2909,7 @@
     "correctAnswer": "A",
     "explanation": "Cross-reactivity exists between latex and certain fruits including bananas, avocados, kiwi, and chestnuts due to similar protein structures.",
     "skill": "Allergy Management",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "nclex_105",
@@ -2937,7 +2937,7 @@
     "correctAnswer": "A",
     "explanation": "PEEP maintains positive pressure at end-expiration, keeping alveoli open and improving oxygenation. Low tidal volume ventilation (6 mL/kg) is standard in ARDS.",
     "skill": "Respiratory",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "nclex_106",
@@ -2965,7 +2965,7 @@
     "correctAnswer": "A",
     "explanation": "McBurney's point is located in the RLQ, one-third the distance from the anterior superior iliac spine (ASIS) to the umbilicus. Tenderness here suggests appendicitis.",
     "skill": "Gastrointestinal",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "nclex_107",
@@ -2993,7 +2993,7 @@
     "correctAnswer": "A",
     "explanation": "Weight-bearing exercise stimulates bone formation, and calcium (1000-1200 mg/day) with vitamin D (600-800 IU) are essential for bone density maintenance.",
     "skill": "Health Education",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "nclex_108",
@@ -3021,7 +3021,7 @@
     "correctAnswer": "A",
     "explanation": "A low-fat diet reduces gallbladder contraction and pain. High-fat foods stimulate cholecystokinin release, causing the gallbladder to contract and worsen symptoms.",
     "skill": "Gastrointestinal",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "nclex_109",
@@ -3049,7 +3049,7 @@
     "correctAnswer": "A",
     "explanation": "Rocking back and forth provides momentum to overcome freezing (akinesia). Marching in place, counting steps, or using visual cues on the floor also help.",
     "skill": "Neurological",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "nclex_110",
@@ -3077,7 +3077,7 @@
     "correctAnswer": "A",
     "explanation": "Pregnancy and postpartum are hypercoagulable states. Unilateral leg swelling, warmth, and pain are classic signs of DVT requiring immediate evaluation.",
     "skill": "Maternal-Newborn",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "nclex_111",
@@ -3105,7 +3105,7 @@
     "correctAnswer": "A",
     "explanation": "A rigid abdomen with shock symptoms suggests ruptured ectopic pregnancy with intra-abdominal hemorrhage — a surgical emergency requiring immediate intervention.",
     "skill": "Maternal-Newborn",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "nclex_112",
@@ -3133,7 +3133,7 @@
     "correctAnswer": "A",
     "explanation": "Read-back verification of telephone orders prevents errors. The nurse should write down, read back, and receive confirmation from the ordering provider.",
     "skill": "Communication",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "nclex_113",
@@ -3161,7 +3161,7 @@
     "correctAnswer": "A",
     "explanation": "In CKD, the kidneys cannot excrete phosphorus. Hyperphosphatemia causes reciprocal hypocalcemia, triggering PTH release that demineralizes bones (renal osteodystrophy).",
     "skill": "Renal",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "nclex_114",
@@ -3189,7 +3189,7 @@
     "correctAnswer": "A",
     "explanation": "IV benzodiazepines (lorazepam or diazepam) are first-line for status epilepticus due to rapid onset. Lorazepam is preferred for longer duration of action.",
     "skill": "Neurological",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "nclex_115",
@@ -3217,7 +3217,7 @@
     "correctAnswer": "A",
     "explanation": "Celiac disease requires a lifelong gluten-free diet. Gluten is found in wheat, barley, and rye. Rice, corn, and potatoes are naturally gluten-free.",
     "skill": "Gastrointestinal",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "nclex_116",
@@ -3245,7 +3245,7 @@
     "correctAnswer": "A",
     "explanation": "Hoarding medication indicates a specific plan and means for suicide. Immediate safety actions (removing means, continuous observation) take priority.",
     "skill": "Crisis Intervention",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "nclex_117",
@@ -3273,7 +3273,7 @@
     "correctAnswer": "A",
     "explanation": "Some mucus is normal with an ileal conduit because the urinary diversion uses intestinal tissue that produces mucus. Dark amber urine suggests dehydration.",
     "skill": "Genitourinary",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "nclex_118",
@@ -3301,7 +3301,7 @@
     "correctAnswer": "A",
     "explanation": "Anticholinergics cause pupil dilation (mydriasis), which further blocks aqueous humor drainage and worsens angle-closure glaucoma.",
     "skill": "Pharmacology",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "nclex_119",
@@ -3329,7 +3329,7 @@
     "correctAnswer": "A",
     "explanation": "Symptomatic anemia with Hgb <7-8 g/dL typically warrants PRBC transfusion to restore oxygen-carrying capacity. Iron supplements alone are insufficient for acute symptomatic anemia.",
     "skill": "Hematology",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "nclex_120",
@@ -3357,7 +3357,7 @@
     "correctAnswer": "A",
     "explanation": "In emphysema, chronic air trapping increases residual volume, causing the lungs to hyperinflate. This increases the AP diameter of the chest, creating a barrel shape.",
     "skill": "Respiratory",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "nclex_121",
@@ -3385,7 +3385,7 @@
     "correctAnswer": "A",
     "explanation": "SBAR: Situation, Background, Assessment, Recommendation. It is a standardized communication framework used in healthcare to ensure clear, concise information transfer.",
     "skill": "Communication",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "nclex_122",
@@ -3413,7 +3413,7 @@
     "correctAnswer": "A",
     "explanation": "After total knee replacement, the leg should be extended and elevated. CPM devices promote range of motion, and ice reduces swelling. Avoid prolonged flexion.",
     "skill": "Musculoskeletal",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "nclex_123",
@@ -3441,7 +3441,7 @@
     "correctAnswer": "A",
     "explanation": "Red man syndrome occurs when vancomycin is infused too rapidly, causing histamine release. Slowing the infusion rate and premedicating with antihistamines can prevent it.",
     "skill": "Pharmacology",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "nclex_124",
@@ -3469,7 +3469,7 @@
     "correctAnswer": "A",
     "explanation": "Eggs, fish, asparagus, garlic, onions, and beans produce the most odor with colostomies. Yogurt, parsley, and buttermilk may help reduce odor.",
     "skill": "Gastrointestinal",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "nclex_125",
@@ -3497,7 +3497,7 @@
     "correctAnswer": "A",
     "explanation": "Autonomic dysreflexia is a medical emergency in spinal cord injury patients. Sitting up lowers BP, and removing the trigger (usually full bladder or impacted bowel) is essential.",
     "skill": "Neurological",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "nclex_126",
@@ -3525,7 +3525,7 @@
     "correctAnswer": "A",
     "explanation": "Hepatitis A is transmitted via the fecal-oral route. Hepatitis B and C are transmitted through blood and body fluids.",
     "skill": "Infection Control",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "nclex_127",
@@ -3553,7 +3553,7 @@
     "correctAnswer": "A",
     "explanation": "Parathyroid glands may be accidentally removed or damaged during thyroidectomy, causing hypocalcemia. Tetany symptoms include perioral and fingertip tingling, Chvostek's and Trousseau's signs.",
     "skill": "Endocrine",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "nclex_128",
@@ -3581,7 +3581,7 @@
     "correctAnswer": "A",
     "explanation": "Cool air from a blow dryer can relieve itching without damaging skin or cast. Inserting objects can cause skin breakdown and infection; powder can cake and cause pressure sores.",
     "skill": "Musculoskeletal",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "nclex_129",
@@ -3609,7 +3609,7 @@
     "correctAnswer": "A",
     "explanation": "Competent adult patients have the right to refuse treatment, including lifesaving interventions, based on religious beliefs. The nurse must respect autonomy.",
     "skill": "Ethics",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "nclex_130",
@@ -3637,7 +3637,7 @@
     "correctAnswer": "A",
     "explanation": "Allopurinol reduces uric acid production. Adequate hydration prevents uric acid crystal deposition in the kidneys. It takes weeks to lower uric acid levels.",
     "skill": "Pharmacology",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "nclex_131",
@@ -3665,7 +3665,7 @@
     "correctAnswer": "A",
     "explanation": "Although potassium is initially elevated in DKA due to acidosis-driven cellular shift, total body potassium is depleted. As insulin is given and pH corrects, K+ drops rapidly and must be replaced to prevent fatal hypokalemia.",
     "skill": "Endocrine",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "nclex_132",
@@ -3693,7 +3693,7 @@
     "correctAnswer": "A",
     "explanation": "A stand-pivot transfer with a gait belt is appropriate for patients who can partially bear weight. It provides support while promoting the patient's independence and safety.",
     "skill": "Safe Patient Handling",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "nclex_133",
@@ -3721,7 +3721,7 @@
     "correctAnswer": "A",
     "explanation": "GBS causes ascending paralysis. When it reaches respiratory muscles, mechanical ventilation may be needed. Declining vital capacity is an emergency indicator.",
     "skill": "Neurological",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "nclex_134",
@@ -3749,7 +3749,7 @@
     "correctAnswer": "A",
     "explanation": "Direct oral anticoagulants (DOACs) like rivaroxaban don't require routine INR monitoring, have fewer drug/food interactions, and have fixed dosing unlike warfarin.",
     "skill": "Pharmacology",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "nclex_135",
@@ -3777,7 +3777,7 @@
     "correctAnswer": "A",
     "explanation": "A weight gain of 2-3 pounds overnight or 5 pounds in a week indicates fluid retention and worsening heart failure. Patients should weigh daily and report sudden gains.",
     "skill": "Cardiovascular",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "nclex_136",
@@ -3805,7 +3805,7 @@
     "correctAnswer": "A",
     "explanation": "The ABCs of safe sleep: Alone, on their Back, in a Crib. The Back-to-Sleep campaign significantly reduced SIDS rates. Avoid soft bedding, overheating, and co-sleeping.",
     "skill": "Pediatric Safety",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "nclex_137",
@@ -3833,7 +3833,7 @@
     "correctAnswer": "A",
     "explanation": "Aminophylline (theophylline) has a narrow therapeutic window. Toxicity presents with seizures, arrhythmias, and severe vomiting. Therapeutic level is 10-20 mcg/mL.",
     "skill": "Pharmacology",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "nclex_138",
@@ -3861,7 +3861,7 @@
     "correctAnswer": "A",
     "explanation": "Elevating the legs above heart level promotes venous return through gravity, reducing peripheral edema common in right-sided heart failure.",
     "skill": "Cardiovascular",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "nclex_139",
@@ -3889,7 +3889,7 @@
     "correctAnswer": "A",
     "explanation": "Pursed-lip breathing creates back-pressure that keeps airways open during exhalation, preventing premature airway collapse and reducing air trapping in emphysema.",
     "skill": "Respiratory",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "nclex_140",
@@ -3917,7 +3917,7 @@
     "correctAnswer": "A",
     "explanation": "Late decelerations begin after the contraction peaks and indicate uteroplacental insufficiency. They require immediate intervention: position change, oxygen, stop oxytocin, notify provider.",
     "skill": "Maternal-Newborn",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "nclex_141",
@@ -3945,7 +3945,7 @@
     "correctAnswer": "A",
     "explanation": "Suspected child abuse, elder abuse, and certain communicable diseases require mandatory reporting by healthcare professionals. This overrides patient confidentiality.",
     "skill": "Legal and Ethical",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "nclex_142",
@@ -3973,7 +3973,7 @@
     "correctAnswer": "A",
     "explanation": "Excess cortisol in Cushing's syndrome promotes gluconeogenesis, causing hyperglycemia. Other findings include hypernatremia, hypokalemia, and osteoporosis.",
     "skill": "Endocrine",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "nclex_143",
@@ -4001,7 +4001,7 @@
     "correctAnswer": "A",
     "explanation": "Hemophilia A is caused by Factor VIII deficiency. Factor VIII concentrate is the specific replacement therapy for bleeding episodes.",
     "skill": "Hematology",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "nclex_144",
@@ -4029,7 +4029,7 @@
     "correctAnswer": "A",
     "explanation": "NG tube irrigation typically uses 30 mL of normal saline, gently instilled and then aspirated. This maintains tube patency without causing electrolyte imbalances.",
     "skill": "Gastrointestinal",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "nclex_145",
@@ -4057,7 +4057,7 @@
     "correctAnswer": "A",
     "explanation": "Non-selective beta-blockers reduce portal pressure and decrease the risk of variceal bleeding. Avoid straining, aspirin, and NSAIDs which increase bleeding risk.",
     "skill": "Gastrointestinal",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "nclex_146",
@@ -4085,7 +4085,7 @@
     "correctAnswer": "A",
     "explanation": "Alcohol withdrawal typically begins 6-24 hours after the last drink, peaking at 24-72 hours. Delirium tremens can occur at 48-72 hours and is life-threatening.",
     "skill": "Substance Use",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "nclex_147",
@@ -4113,7 +4113,7 @@
     "correctAnswer": "A",
     "explanation": "The most common cause of wound VAC alarms is loss of seal/air leak in the dressing. Check the dressing edges and connections first.",
     "skill": "Wound Care",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "nclex_148",
@@ -4141,7 +4141,7 @@
     "correctAnswer": "A",
     "explanation": "Hypernatremia (>145 mEq/L) causes cellular dehydration, manifesting as intense thirst, dry membranes, decreased skin turgor, and altered LOC that can progress to seizures.",
     "skill": "Fluid and Electrolytes",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "nclex_149",
@@ -4169,7 +4169,7 @@
     "correctAnswer": "A",
     "explanation": "Nitroprusside is light-sensitive and must be covered with opaque material. It requires continuous arterial BP monitoring due to rapid, potent vasodilation. Thiocyanate toxicity can occur.",
     "skill": "Pharmacology",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "nclex_150",
@@ -4197,7 +4197,7 @@
     "correctAnswer": "A",
     "explanation": "Fat embolism syndrome typically occurs 24-72 hours after long bone fractures. The classic triad is respiratory distress, neurological changes, and petechial rash.",
     "skill": "Musculoskeletal",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "nclex_151",
@@ -4225,7 +4225,7 @@
     "correctAnswer": "A",
     "explanation": "Two sets from two different sites increases diagnostic accuracy and helps distinguish true bacteremia from contamination. Always collect before starting antibiotics.",
     "skill": "Diagnostic Procedures",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "nclex_152",
@@ -4253,7 +4253,7 @@
     "correctAnswer": "A",
     "explanation": "SIADH causes water retention and dilutional hyponatremia. Fluid restriction to 500-1000 mL/day is the primary treatment to allow sodium levels to normalize.",
     "skill": "Endocrine",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "nclex_153",
@@ -4281,7 +4281,7 @@
     "correctAnswer": "A",
     "explanation": "STEMI requires emergent reperfusion therapy. PCI (angioplasty with stent) is preferred if available within 90 minutes. Fibrinolytics are used when PCI is not available within 120 minutes.",
     "skill": "Cardiovascular",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "nclex_154",
@@ -4309,7 +4309,7 @@
     "correctAnswer": "A",
     "explanation": "Melena indicates upper GI bleeding. Blood is digested as it passes through the GI tract, turning dark and tarry. Bright red blood per rectum suggests lower GI bleeding.",
     "skill": "Gastrointestinal",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "nclex_155",
@@ -4337,7 +4337,7 @@
     "correctAnswer": "A",
     "explanation": "The Mediterranean diet emphasizes healthy fats (olive oil, nuts), fish, fruits, vegetables, whole grains, and legumes. It is associated with reduced cardiovascular risk.",
     "skill": "Nutrition",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "nclex_156",
@@ -4365,7 +4365,7 @@
     "correctAnswer": "A",
     "explanation": "CKD causes anemia due to decreased erythropoietin production by the kidneys. Epoetin alfa is a synthetic erythropoietin that stimulates red blood cell production.",
     "skill": "Renal",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "nclex_157",
@@ -4393,7 +4393,7 @@
     "correctAnswer": "A",
     "explanation": "NSAIDs should be taken with food, milk, or antacids to reduce GI irritation and the risk of peptic ulcer formation, a common side effect.",
     "skill": "Pharmacology",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "nclex_158",
@@ -4421,7 +4421,7 @@
     "correctAnswer": "A",
     "explanation": "Amiodarone has serious long-term toxicities: pulmonary fibrosis, thyroid dysfunction (contains iodine), hepatotoxicity, corneal microdeposits, and blue-gray skin discoloration.",
     "skill": "Pharmacology",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "nclex_159",
@@ -4449,7 +4449,7 @@
     "correctAnswer": "A",
     "explanation": "Air embolism can occur when a central line is open to air during dressing changes. Treatment: clamp the catheter, position patient in left Trendelenburg, and administer 100% oxygen.",
     "skill": "IV Therapy",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "nclex_160",
@@ -4477,7 +4477,7 @@
     "correctAnswer": "A",
     "explanation": "Sundowning is managed with structured routines, increased lighting, reduced stimulation, and reassurance. Restraints and sedatives should be last resorts.",
     "skill": "Neurological",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "nclex_161",
@@ -4505,7 +4505,7 @@
     "correctAnswer": "A",
     "explanation": "Peak flow <50% of personal best indicates severe asthma exacerbation requiring emergency medical treatment. Green zone is >80%, yellow 50-80%, red <50%.",
     "skill": "Respiratory",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "nclex_162",
@@ -4533,7 +4533,7 @@
     "correctAnswer": "A",
     "explanation": "During a flashback, grounding techniques and calm, present-oriented communication help the patient reorient. Avoid triggers and provide a sense of safety.",
     "skill": "Mental Health",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "nclex_163",
@@ -4561,7 +4561,7 @@
     "correctAnswer": "A",
     "explanation": "The second stage of labor begins when the cervix is fully dilated (10 cm) and ends with delivery of the baby. The patient feels the urge to push.",
     "skill": "Maternal-Newborn",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "nclex_164",
@@ -4589,7 +4589,7 @@
     "correctAnswer": "A",
     "explanation": "Vitamin C enhances iron absorption. Take on an empty stomach if tolerated. Milk, calcium, antacids, tea, and coffee inhibit iron absorption.",
     "skill": "Pharmacology",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "nclex_165",
@@ -4617,7 +4617,7 @@
     "correctAnswer": "A",
     "explanation": "Post-operative ileus is common after abdominal surgery. Assess for returning bowel function (bowel sounds, flatus). Colostomy output typically returns within 2-5 days.",
     "skill": "Gastrointestinal",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "nclex_166",
@@ -4645,7 +4645,7 @@
     "correctAnswer": "A",
     "explanation": "IV tPA is the standard treatment for ischemic stroke within the 4.5-hour window after ruling out hemorrhage by CT. It dissolves the clot to restore blood flow.",
     "skill": "Neurological",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "nclex_167",
@@ -4673,7 +4673,7 @@
     "correctAnswer": "A",
     "explanation": "Motivational interviewing that connects substance use to personal goals and values is most effective for adolescents. Fear-based approaches are less effective.",
     "skill": "Health Education",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "nclex_168",
@@ -4701,7 +4701,7 @@
     "correctAnswer": "A",
     "explanation": "Suctioning should not exceed 10-15 seconds to prevent hypoxia. Pre-oxygenate with 100% O2, use sterile technique, and allow rest between passes.",
     "skill": "Respiratory",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "nclex_169",
@@ -4729,7 +4729,7 @@
     "correctAnswer": "A",
     "explanation": "Stage 2 pressure injuries involve partial-thickness loss of dermis. The wound bed is pink/red and moist, and may present as an intact or open blister.",
     "skill": "Wound Care",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "nclex_170",
@@ -4757,7 +4757,7 @@
     "correctAnswer": "A",
     "explanation": "Spironolactone is a potassium-sparing diuretic that blocks aldosterone. It retains potassium, so hyperkalemia is the primary concern. Avoid potassium supplements and salt substitutes.",
     "skill": "Pharmacology",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "nclex_171",
@@ -4785,7 +4785,7 @@
     "correctAnswer": "A",
     "explanation": "Pancreatic enzymes must be taken with every meal and snack to aid digestion. They are ineffective if taken on an empty stomach or after eating.",
     "skill": "Pediatric",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "nclex_172",
@@ -4813,7 +4813,7 @@
     "correctAnswer": "A",
     "explanation": "pH >7.45 = alkalosis. PaCO2 <35 = respiratory cause (hyperventilation). Normal HCO3 = no renal compensation = uncompensated respiratory alkalosis.",
     "skill": "Acid-Base Balance",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "nclex_173",
@@ -4841,7 +4841,7 @@
     "correctAnswer": "A",
     "explanation": "UV light is a known trigger for SLE flares. Patients should use high-SPF sunscreen, wear protective clothing, and avoid peak sun hours.",
     "skill": "Autoimmune",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "nclex_174",
@@ -4869,7 +4869,7 @@
     "correctAnswer": "A",
     "explanation": "Normal PAWP (wedge pressure) is 8-12 mmHg. Elevated PAWP (>18 mmHg) indicates left ventricular failure with fluid backing up into the pulmonary vasculature.",
     "skill": "Cardiovascular",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "nclex_175",
@@ -4897,7 +4897,7 @@
     "correctAnswer": "A",
     "explanation": "The least restrictive intervention should be tried first. Concealing the IV site and distraction are alternatives to restraints. Restraints require a physician order and are a last resort.",
     "skill": "Patient Safety",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "nclex_176",
@@ -4925,7 +4925,7 @@
     "correctAnswer": "A",
     "explanation": "Nephrotic syndrome causes massive protein loss. A moderate protein diet (0.8-1 g/kg/day) is recommended to avoid worsening proteinuria. Sodium restriction controls edema.",
     "skill": "Renal",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "nclex_177",
@@ -4953,7 +4953,7 @@
     "correctAnswer": "A",
     "explanation": "At low doses (1-3 mcg/kg/min), dopamine stimulates dopaminergic receptors causing renal and mesenteric vasodilation. Higher doses stimulate beta-1 then alpha-1 receptors.",
     "skill": "Pharmacology",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "nclex_178",
@@ -4981,7 +4981,7 @@
     "correctAnswer": "A",
     "explanation": "Wet-to-dry dressings provide mechanical debridement: the moist gauze adheres to necrotic tissue and is removed when dry, pulling debris with it.",
     "skill": "Wound Care",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "nclex_179",
@@ -5009,7 +5009,7 @@
     "correctAnswer": "A",
     "explanation": "Sudden mood improvement and giving away belongings in a depressed patient are warning signs that the person has made the decision to commit suicide and feels relief.",
     "skill": "Crisis Intervention",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "nclex_180",
@@ -5037,7 +5037,7 @@
     "correctAnswer": "A",
     "explanation": "Peripheral IV KCl should not exceed 10 mEq/hr to prevent cardiac arrhythmias. Higher concentrations require central line access and cardiac monitoring.",
     "skill": "Pharmacology",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "nclex_181",
@@ -5065,7 +5065,7 @@
     "correctAnswer": "A",
     "explanation": "Sitting upright and leaning forward allows fluid to collect at the base of the thorax, widens intercostal spaces, and facilitates safe needle insertion for thoracentesis.",
     "skill": "Respiratory",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "nclex_182",
@@ -5093,7 +5093,7 @@
     "correctAnswer": "A",
     "explanation": "Propofol is formulated in a lipid emulsion. Prolonged infusion can cause hypertriglyceridemia and propofol infusion syndrome. Monitor triglycerides and change tubing every 12 hours.",
     "skill": "Pharmacology",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "nclex_183",
@@ -5121,7 +5121,7 @@
     "correctAnswer": "A",
     "explanation": "BNP >400 pg/mL is strongly indicative of heart failure. Levels >1000 suggest severe heart failure. BNP is released from ventricles in response to increased wall stretch.",
     "skill": "Cardiovascular",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "nclex_184",
@@ -5149,7 +5149,7 @@
     "correctAnswer": "A",
     "explanation": "After Rescue, the next step is Activate the alarm. Then Contain (close doors/windows), and finally Extinguish or Evacuate as appropriate.",
     "skill": "Emergency Response",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "nclex_185",
@@ -5177,7 +5177,7 @@
     "correctAnswer": "A",
     "explanation": "Flexing the trunk and drawing knees to chest reduces tension on the abdomen and pancreatic duct, providing pain relief in acute pancreatitis.",
     "skill": "Gastrointestinal",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "nclex_186",
@@ -5205,7 +5205,7 @@
     "correctAnswer": "A",
     "explanation": "Fasting blood glucose is the primary monitoring target for patients on basal insulin, as it reflects the effectiveness of the overnight long-acting insulin dose.",
     "skill": "Endocrine",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "nclex_187",
@@ -5233,7 +5233,7 @@
     "correctAnswer": "A",
     "explanation": "Norepinephrine is the first-line vasopressor for septic shock per Surviving Sepsis Campaign guidelines. Target MAP is ≥65 mmHg.",
     "skill": "Critical Care",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "nclex_188",
@@ -5261,7 +5261,7 @@
     "correctAnswer": "A",
     "explanation": "Accidental decannulation is an emergency. If the tube cannot be reinserted, maintain the stoma opening and ventilate through it. An obturator should always be at the bedside.",
     "skill": "Respiratory",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "nclex_189",
@@ -5289,7 +5289,7 @@
     "correctAnswer": "A",
     "explanation": "Sacubitril inhibits neprilysin, which breaks down bradykinin. Combined with ACE inhibitor (which also increases bradykinin), the risk of angioedema is severely elevated. Allow 36-hour washout.",
     "skill": "Pharmacology",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "nclex_190",
@@ -5317,7 +5317,7 @@
     "correctAnswer": "A",
     "explanation": "Pernicious anemia is caused by lack of intrinsic factor, preventing B12 absorption from the GI tract. Lifelong parenteral B12 replacement is necessary.",
     "skill": "Hematology",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "nclex_191",
@@ -5345,7 +5345,7 @@
     "correctAnswer": "A",
     "explanation": "In mass casualty triage, red-tagged patients have life-threatening but survivable injuries requiring immediate treatment. Black-tagged patients are expectant/deceased.",
     "skill": "Disaster Triage",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "nclex_192",
@@ -5373,7 +5373,7 @@
     "correctAnswer": "A",
     "explanation": "Normal cardiac output is 4-8 L/min. A CO of 2.8 L/min indicates significantly decreased cardiac output, which may require inotropic support or other interventions.",
     "skill": "Cardiovascular",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "nclex_193",
@@ -5401,7 +5401,7 @@
     "correctAnswer": "A",
     "explanation": "NG suction removes hydrochloric acid from the stomach, leading to loss of H+ ions and chloride. This causes metabolic alkalosis with possible hypokalemia and hypochloremia.",
     "skill": "Acid-Base Balance",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "nclex_194",
@@ -5429,7 +5429,7 @@
     "correctAnswer": "A",
     "explanation": "After posterior approach hip replacement, avoid flexion >90°, adduction past midline, and internal rotation to prevent dislocation. Use an abduction pillow and raised toilet seat.",
     "skill": "Musculoskeletal",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "nclex_195",
@@ -5457,7 +5457,7 @@
     "correctAnswer": "A",
     "explanation": "Non-pharmacological interventions (redirection, routine, familiar objects, calm environment) should always be tried first for agitation in dementia patients.",
     "skill": "Mental Health",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "nclex_196",
@@ -5485,7 +5485,7 @@
     "correctAnswer": "A",
     "explanation": "The diseased liver cannot convert ammonia to urea. Limiting protein intake reduces ammonia production from protein metabolism. Vegetable protein is generally better tolerated.",
     "skill": "Gastrointestinal",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "nclex_197",
@@ -5513,7 +5513,7 @@
     "correctAnswer": "A",
     "explanation": "Hemodynamically unstable tachyarrhythmias require immediate synchronized cardioversion. Unsynchronized defibrillation is for V-fib/pulseless V-tach.",
     "skill": "Cardiovascular",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "nclex_198",
@@ -5541,7 +5541,7 @@
     "correctAnswer": "A",
     "explanation": "Gabapentin is an anticonvulsant used as a first-line treatment for neuropathic pain (diabetic neuropathy, postherpetic neuralgia). It modulates calcium channels.",
     "skill": "Pain Management",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "nclex_199",
@@ -5569,7 +5569,7 @@
     "correctAnswer": "A",
     "explanation": "Obesity (especially central/abdominal) and physical inactivity are the most significant modifiable risk factors for Type 2 diabetes. Family history, age, and ethnicity are non-modifiable.",
     "skill": "Disease Prevention",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "nclex_200",
@@ -5597,7 +5597,7 @@
     "correctAnswer": "A",
     "explanation": "ESRD causes fluid retention leading to pulmonary edema, metabolic acidosis causing Kussmaul breathing, and severe anemia reducing oxygen-carrying capacity — all contributing to dyspnea.",
     "skill": "Renal",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "nclex_201",
@@ -5625,7 +5625,7 @@
     "correctAnswer": "C",
     "explanation": "For IM injections into the deltoid muscle of an adult, a 1.5-inch needle is generally recommended to ensure the medication reaches the muscle tissue, considering adipose tissue. Shorter needles may not reach the muscle, and longer needles may be unnecessarily long and cause injury.",
     "skill": "Medication Administration",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "nclex_202",
@@ -5653,7 +5653,7 @@
     "correctAnswer": "D",
     "explanation": "ST-segment elevation on an ECG is a critical finding indicative of acute myocardial infarction (MI) and requires immediate intervention to restore blood flow to the heart muscle. While the other symptoms can accompany chest pain and are important to assess, ST-segment elevation is the most urgent indicator of a life-threatening cardiac event.",
     "skill": "Assessment and Monitoring",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "nclex_203",
@@ -5681,7 +5681,7 @@
     "correctAnswer": "C",
     "explanation": "While all options contribute to fall prevention, the use of prescribed assistive devices (e.g., walkers, canes) is often crucial for individuals with mobility issues or balance deficits. This directly addresses a primary risk factor for falls. Non-slip footwear, keeping items within reach, and good lighting are also important but may not be as critical as appropriate use of mobility aids for at-risk individuals.",
     "skill": "Patient Education",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "nclex_204",
@@ -5709,7 +5709,7 @@
     "correctAnswer": "C",
     "explanation": "Warfarin is an anticoagulant that works by inhibiting vitamin K-dependent clotting factors. Its therapeutic effect is monitored by measuring the prothrombin time (PT) and the international normalized ratio (INR). Hemoglobin/hematocrit assess red blood cells, platelets are involved in clotting but not directly monitored for warfarin efficacy, and aPTT is used to monitor unfractionated heparin.",
     "skill": "Pharmacology and Therapeutic Monitoring",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "nclex_205",
@@ -5737,7 +5737,7 @@
     "correctAnswer": "C",
     "explanation": "Performing aseptic technique during tracheostomy care, including suctioning and changing ties, is crucial to prevent infection at the stoma site and in the lower respiratory tract, which can lead to serious complications like pneumonia or tracheal damage. Routine suctioning every 8 hours may not be necessary and could cause trauma; suctioning should be done as needed based on assessment. Encouraging coughing and deep breathing is important but preventing infection through aseptic technique is paramount for tracheostomy care.",
     "skill": "Infection Control",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "nclex_206",
@@ -5765,7 +5765,7 @@
     "correctAnswer": "C",
     "explanation": "The priority intervention when suspecting sepsis is to obtain blood cultures *before* administering antibiotics. This ensures the most accurate identification of the causative organism, guiding antibiotic selection. While antibiotics, IV fluids, and vital sign monitoring are all critical components of sepsis management, obtaining cultures first is essential for effective treatment.",
     "skill": "Resuscitation and Emergency Care",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "nclex_207",
@@ -5793,7 +5793,7 @@
     "correctAnswer": "C",
     "explanation": "Opioid analgesics are well-known for their potential to cause respiratory depression, which is a serious and potentially life-threatening side effect. Diarrhea is less common; constipation is a more frequent side effect. Opioids typically cause bradycardia, not tachycardia, and hypotension, not hypertension.",
     "skill": "Pharmacology and Therapeutic Monitoring",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "nclex_208",
@@ -5821,7 +5821,7 @@
     "correctAnswer": "C",
     "explanation": "Opening sterile packages away from the body prevents contamination of the sterile contents by the nurse's clothing or body. Turning one's back, reaching over the field with a non-sterile item, and allowing contact with non-sterile surfaces all contaminate the sterile field.",
     "skill": "Infection Control",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "nclex_209",
@@ -5849,7 +5849,7 @@
     "correctAnswer": "C",
     "explanation": "Diaphoresis (excessive sweating) is a common and often early symptom of hypoglycemia, caused by the release of epinephrine. Polyuria and polydipsia are characteristic of hyperglycemia. Fruity breath odor is associated with diabetic ketoacidosis (DKA), a complication of uncontrolled diabetes, which involves hyperglycemia.",
     "skill": "Assessment and Monitoring",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "nclex_210",
@@ -5877,7 +5877,7 @@
     "correctAnswer": "C",
     "explanation": "Canned soups are typically very high in sodium. Fresh fruits, plain rice, and grilled chicken breast (prepared without added salt) are generally low in sodium and suitable for a low-sodium diet.",
     "skill": "Dietary Management",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "nclex_211",
@@ -5905,7 +5905,7 @@
     "correctAnswer": "C",
     "explanation": "While a chest X-ray is highly suggestive of pneumonia and a CBC may show elevated white blood cell count, a sputum culture and sensitivity test is the MOST definitive diagnostic test as it identifies the specific causative bacteria and its antibiotic susceptibility, guiding targeted treatment.",
     "skill": "Diagnostic Testing",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "nclex_212",
@@ -5933,7 +5933,7 @@
     "correctAnswer": "A",
     "explanation": "Before administering any medication or formula through a feeding tube, the nurse MUST verify tube placement to prevent adverse events like aspiration or medication administration into the wrong anatomical location. Checking placement is a critical safety step. Auscultating bowel sounds is important for feeding tolerance but secondary to placement verification. Increasing feeding rate or administering a bolus of water are interventions that follow other assessments.",
     "skill": "Gastrointestinal Management",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "nclex_213",
@@ -5961,7 +5961,7 @@
     "correctAnswer": "C",
     "explanation": "Furosemide is a loop diuretic that can cause significant loss of potassium, leading to hypokalemia. While other electrolytes can be affected, hypokalemia is the most common and clinically significant electrolyte imbalance associated with loop diuretics.",
     "skill": "Pharmacology and Therapeutic Monitoring",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "nclex_214",
@@ -5989,7 +5989,7 @@
     "correctAnswer": "C",
     "explanation": "Rapid administration or administration of concentrated potassium chloride can lead to cardiac arrest. Therefore, IV KCl must be diluted and infused slowly, and the client must be monitored closely for cardiac dysrhythmias, which can be exacerbated by or caused by rapid potassium shifts. Undiluted or rapid IV push administration is contraindicated. While a large-bore catheter might be used, the rate and dilution are the primary safety concerns related to cardiac effects.",
     "skill": "Medication Administration",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "nclex_215",
@@ -6017,7 +6017,7 @@
     "correctAnswer": "C",
     "explanation": "Clients with a history of multiple surgeries, wearing gloves for extended periods, or frequent exposure to latex products (such as through urinary catheters for recurrent UTIs) are at higher risk for developing a latex allergy due to repeated exposure. While some individuals with seasonal allergies may have a higher incidence of atopy, direct repeated exposure to latex is the primary risk factor. Penicillin allergy is not directly linked to latex allergy.",
     "skill": "Assessment and Monitoring",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "nclex_216",
@@ -6045,7 +6045,7 @@
     "correctAnswer": "B",
     "explanation": "Preventing hip dislocation after total hip arthroplasty involves adhering to specific hip precautions to avoid positions that can cause the femoral head to pop out of the acetabulum. These typically include avoiding crossing the legs, avoiding twisting the operated leg inward (internal rotation), and avoiding bending the hip beyond 90 degrees. Ambulation, pain management, and CPM machines are important parts of recovery but do not directly prevent dislocation in the same way as adhering to positioning precautions.",
     "skill": "Musculoskeletal Management",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "nclex_217",
@@ -6073,7 +6073,7 @@
     "correctAnswer": "C",
     "explanation": "Short-acting beta-agonists (SABAs), such as albuterol, are bronchodilators that provide rapid relief of bronchospasm and are used as rescue inhalers during acute asthma exacerbations. Inhaled corticosteroids are controllers, LABAs are long-acting controllers, and leukotriene modifiers are oral controllers.",
     "skill": "Pharmacology and Therapeutic Monitoring",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "nclex_218",
@@ -6101,7 +6101,7 @@
     "correctAnswer": "B",
     "explanation": "The MOST critical safety check before initiating a blood transfusion is verifying the client's identity and the blood product information with two identifiers and the unit tag. This ensures the correct blood product is given to the correct client, preventing potentially fatal transfusion reactions. While checking temperature and ensuring an adequate IV gauge are important, the double-check of identity and blood product is paramount.",
     "skill": "Blood Product Administration",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "nclex_219",
@@ -6129,7 +6129,7 @@
     "correctAnswer": "C",
     "explanation": "For clients with dysphagia, altering the consistency of liquids (e.g., thickening them) as recommended by an SLP is crucial to facilitate safe swallowing and reduce the risk of aspiration. Thin liquids are often the most difficult to swallow safely. Feeding slowly and providing assistance are also important, but modifying liquid consistency is the primary intervention for safe swallowing.",
     "skill": "Neurological Management",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "nclex_220",
@@ -6157,7 +6157,7 @@
     "correctAnswer": "C",
     "explanation": "Wearing loose-fitting, soft clothing helps to minimize friction and irritation to the skin, which can be sensitive and prone to breakdown from radiation therapy. Scented products, hot water, vigorous rubbing, and powders can further irritate the skin.",
     "skill": "Oncology Nursing",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "nclex_221",
@@ -6185,7 +6185,7 @@
     "correctAnswer": "B",
     "explanation": "Epinephrine is the first-line treatment for anaphylaxis because it reverses life-threatening symptoms such as bronchospasm, laryngeal edema, and vasodilation by acting as a vasoconstrictor and bronchodilator. While antihistamines, corticosteroids, and bronchodilators are used as adjuncts, epinephrine is the most critical immediate intervention.",
     "skill": "Resuscitation and Emergency Care",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "nclex_222",
@@ -6213,7 +6213,7 @@
     "correctAnswer": "B",
     "explanation": "For a female client, the urinary catheter should be advanced until urine begins to flow into the tubing. This indicates the catheter has reached the bladder. Then, the balloon is inflated. If inserted further, the hub entering the meatus could indicate overinsertion and potential bladder neck trauma.",
     "skill": "Urinary Management",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "nclex_223",
@@ -6241,7 +6241,7 @@
     "correctAnswer": "B",
     "explanation": "Reducing sodium intake is a well-established and highly effective lifestyle modification for lowering blood pressure. High sodium intake contributes to fluid retention and increased blood volume. Increasing saturated fats, limiting physical activity, and daily alcohol consumption are generally detrimental to blood pressure management.",
     "skill": "Cardiovascular Management",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "nclex_224",
@@ -6269,7 +6269,7 @@
     "correctAnswer": "C",
     "explanation": "Intravenous unfractionated heparin therapy is monitored by the activated partial thromboplastin time (aPTT). The PT and INR are used to monitor warfarin therapy. While platelet count is monitored for heparin-induced thrombocytopenia (HIT), the aPTT is the primary indicator of therapeutic anticoagulation for standard heparin therapy.",
     "skill": "Pharmacology and Therapeutic Monitoring",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "nclex_225",
@@ -6297,7 +6297,7 @@
     "correctAnswer": "B",
     "explanation": "The classic presentation of appendicitis involves initial vague pain in the periumbilical or epigastric region, which then migrates and localizes to the right lower quadrant (RLQ) as inflammation progresses. Generalized pain, LLQ pain, or primary diarrhea are not typical of appendicitis.",
     "skill": "Gastrointestinal Assessment",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "nclex_226",
@@ -6325,7 +6325,7 @@
     "correctAnswer": "A",
     "explanation": "Monitoring blood glucose levels is crucial for managing type 2 diabetes, allowing for adjustments in diet, exercise, and medication to maintain glycemic control and prevent complications. While diet, exercise, and vaccinations are important, direct blood glucose monitoring is the cornerstone of self-management for this condition.",
     "skill": "Health Promotion and Disease Prevention",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "nclex_227",
@@ -6353,7 +6353,7 @@
     "correctAnswer": "C",
     "explanation": "An increase in the number of women of childbearing age directly correlates with a potential increase in pregnancies and, consequently, a greater need for prenatal care services. The other options do not directly point to a need for increased prenatal care.",
     "skill": "Community Health Assessment",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "nclex_228",
@@ -6381,7 +6381,7 @@
     "correctAnswer": "D",
     "explanation": "Medications, particularly those affecting cognition, blood pressure, or balance, are a significant contributor to falls in older adults. Addressing polypharmacy and identifying specific at-risk medications is a critical first step. While lighting, vision, and vitamin D are important, medication review directly targets a common intrinsic cause of falls.",
     "skill": "Fall Prevention",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "nclex_229",
@@ -6409,7 +6409,7 @@
     "correctAnswer": "D",
     "explanation": "Experiencing shortness of breath during moderate exertion could indicate an underlying cardiovascular or respiratory issue that is exacerbated by a sedentary lifestyle or lack of physical fitness. This symptom requires prompt medical evaluation. The other options are concerning but less immediately indicative of a serious underlying pathology.",
     "skill": "Risk Identification",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "nclex_230",
@@ -6437,7 +6437,7 @@
     "correctAnswer": "B",
     "explanation": "Wearing a wide-brimmed hat provides physical protection against UV radiation by shielding the face, neck, and ears, which are common sites for sun damage and skin cancer. Statement A is incorrect because UV rays can penetrate clouds. Statement C is incorrect; tanning beds emit harmful UV radiation. Statement D is incorrect; individuals of all complexions can develop skin cancer.",
     "skill": "Health Education",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "nclex_231",
@@ -6465,7 +6465,7 @@
     "correctAnswer": "B",
     "explanation": "Acknowledging that relapse is common and exploring past triggers is a supportive and evidence-based approach. It validates the client's experience and helps identify strategies for future success. Option A is blame-oriented. Option C is discouraging. Option D may be part of a plan but isn't the immediate, most supportive response.",
     "skill": "Therapeutic Communication",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "nclex_232",
@@ -6493,7 +6493,7 @@
     "correctAnswer": "C",
     "explanation": "A BMI of 28 kg/m² indicates overweight, and a waist circumference of 42 inches in a male indicates central obesity, both significant risk factors for cardiovascular disease. Referrals are typically recommended for BMIs >30 or waist circumferences >40 inches (men) / >35 inches (women). The other values are within normal or acceptable ranges.",
     "skill": "Screening and Detection",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "nclex_233",
@@ -6521,7 +6521,7 @@
     "correctAnswer": "B",
     "explanation": "Calcium is the primary mineral component of bone, and vitamin D is essential for calcium absorption. Adequate intake of both is paramount for maintaining bone density and preventing osteoporosis. Vitamin C is important for collagen synthesis, iron for oxygen transport, and sodium affects blood pressure and fluid balance, but calcium and vitamin D are directly linked to bone health.",
     "skill": "Nutritional Counseling",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "nclex_234",
@@ -6549,7 +6549,7 @@
     "correctAnswer": "D",
     "explanation": "Dietary modifications are the first line of management for heartburn in pregnancy. Avoiding trigger foods like spicy or fatty items and consuming smaller, more frequent meals can help reduce symptoms. Lying down after eating can worsen heartburn. While some antacids are safe, certain types (like sodium bicarbonate) should be used with caution due to sodium content, and dietary changes are preferred initially.",
     "skill": "Management of Health Conditions",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "nclex_235",
@@ -6577,7 +6577,7 @@
     "correctAnswer": "B",
     "explanation": "Current recommendations from the American Academy of Pediatrics advise keeping infants rear-facing until at least 2 years of age or until they reach the maximum height and weight limits for their specific rear-facing car seat, whichever comes first. The weight limit alone is not sufficient, and the age recommendation is now longer. The other statements describe correct car seat installation and use.",
     "skill": "Safety Education",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "nclex_236",
@@ -6605,7 +6605,7 @@
     "correctAnswer": "C",
     "explanation": "Inadequate fluid intake allows urine to stagnate in the bladder, promoting bacterial growth. Encouraging increased fluid intake is a modifiable behavior that can significantly reduce UTI risk. Shortness of the urethra, recent antibiotic use (which can disrupt normal flora), and menopause (leading to lower estrogen and changes in vaginal pH) are risk factors that are either non-modifiable or require medical intervention, not simple education.",
     "skill": "Risk Factor Modification",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "nclex_237",
@@ -6633,7 +6633,7 @@
     "correctAnswer": "D",
     "explanation": "A consistent sleep-wake schedule helps regulate the body's internal circadian rhythm, promoting more efficient and restful sleep. Vigorous exercise and caffeine too close to bedtime can interfere with sleep onset, and mentally stimulating activities can keep the mind alert.",
     "skill": "Health Education",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "nclex_238",
@@ -6661,7 +6661,7 @@
     "correctAnswer": "D",
     "explanation": "Managing modifiable risk factors such as maintaining a healthy weight, controlling blood pressure, and managing cholesterol levels are crucial for preventing recurrent cardiac events after a myocardial infarction. The Mediterranean diet is generally beneficial but option D encompasses a broader, more critical range of interventions. Strenuous weightlifting may not be appropriate initially, and strict fluid restriction is usually not indicated unless heart failure is present.",
     "skill": "Disease Prevention",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "nclex_239",
@@ -6689,7 +6689,7 @@
     "correctAnswer": "B",
     "explanation": "Estrogen decline after menopause significantly accelerates bone loss in women, making female gender and postmenopausal status primary risk factors for osteoporosis. Regular physical activity, adequate calcium intake (like dairy products), and early puberty are generally protective factors.",
     "skill": "Risk Assessment",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "nclex_240",
@@ -6717,7 +6717,7 @@
     "correctAnswer": "D",
     "explanation": "Mouthwashes containing alcohol can dry out the mouth and are generally not recommended for daily use in children, and their effectiveness in preventing caries is secondary to brushing and diet. Fluoride toothpaste, limiting sugar, and rinsing after acidic drinks are all effective preventive measures.",
     "skill": "Health Education",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "nclex_241",
@@ -6745,7 +6745,7 @@
     "correctAnswer": "A",
     "explanation": "Placing infants on their back to sleep is the single most effective recommendation to reduce the risk of Sudden Infant Death Syndrome (SIDS). While other safety measures are important as the infant grows, SIDS prevention is paramount at this age. Safety gates and keeping small objects away become more critical as the infant becomes mobile.",
     "skill": "Safety Education",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "nclex_242",
@@ -6773,7 +6773,7 @@
     "correctAnswer": "B",
     "explanation": "Decreased appetite and early satiety are common symptoms in older adults that can lead to significantly reduced food intake and are hallmarks of malnutrition risk. Unintentional weight loss (not gain), not taking supplements, and moderate activity are not direct indicators of malnutrition risk in this context.",
     "skill": "Nutritional Assessment",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "nclex_243",
@@ -6801,7 +6801,7 @@
     "correctAnswer": "B",
     "explanation": "Progressive muscle relaxation is a well-established technique that helps reduce physical tension and promote mental calmness, effectively lowering stress levels. The other options are generally detrimental to well-being and stress management.",
     "skill": "Health Education",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "nclex_244",
@@ -6829,7 +6829,7 @@
     "correctAnswer": "D",
     "explanation": "Current guidelines (e.g., ACC/AHA) define Stage 1 hypertension as a blood pressure between 130-139 mmHg systolic or 80-89 mmHg diastolic. A reading of 140/90 mmHg or higher is considered Stage 2 hypertension and warrants medical follow-up for diagnosis and management. While 135/85 mmHg is elevated and requires lifestyle counseling, 140/90 mmHg is a more definitive threshold for concern requiring referral.",
     "skill": "Screening and Assessment",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "nclex_245",
@@ -6857,7 +6857,7 @@
     "correctAnswer": "B",
     "explanation": "Dust mites are common indoor allergens that can trigger asthma exacerbations. While cold air, exercise, and strong emotions can also be triggers for some individuals, dust mites are a primary environmental allergen that can be mitigated through avoidance strategies. Cold, dry air and strenuous exercise are physiological triggers, and laughing is an emotional/physiological trigger.",
     "skill": "Disease Management Education",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "nclex_246",
@@ -6885,7 +6885,7 @@
     "correctAnswer": "B",
     "explanation": "Actively engaging the brain through learning, puzzles, reading, and social interaction is strongly associated with maintaining cognitive function and reducing the risk of cognitive decline in older adults. High saturated fat intake is detrimental, excessive sleep can be a sign of underlying issues, and passive activities like watching TV are less stimulating.",
     "skill": "Health Promotion",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "nclex_247",
@@ -6913,7 +6913,7 @@
     "correctAnswer": "B",
     "explanation": "Vaccines work by introducing a weakened or inactive form of a pathogen (or its components) to the body, prompting the immune system to develop antibodies and memory cells without causing the full disease. This primes the body for future encounters with the actual pathogen. Statement A describes treatment, not prevention. Statement C is incorrect; vaccines are for prevention, not treatment of active infections. Statement D is incorrect; individual vaccines protect against specific diseases, not all diseases.",
     "skill": "Health Education",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "nclex_248",
@@ -6941,7 +6941,7 @@
     "correctAnswer": "C",
     "explanation": "Having fair skin, freckles, and light hair/eye color is a constitutional factor that increases susceptibility to sun damage and skin cancer. This is a non-modifiable characteristic. History of sunburns, tanning bed use, and prolonged outdoor exposure are all modifiable behaviors that increase risk.",
     "skill": "Risk Assessment",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "nclex_249",
@@ -6969,7 +6969,7 @@
     "correctAnswer": "B",
     "explanation": "Fresh berries are excellent sources of dietary fiber. White bread is a refined grain with very little fiber. Processed cheese and lean ground beef are protein sources and contain minimal to no fiber.",
     "skill": "Nutritional Counseling",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "nclex_250",
@@ -6997,7 +6997,7 @@
     "correctAnswer": "D",
     "explanation": "Using separate cutting boards is crucial for preventing cross-contamination between raw meats (which can harbor bacteria like Salmonella and E. coli) and ready-to-eat foods like vegetables. While washing produce and storing meat properly are important, cross-contamination via shared utensils or surfaces is a leading cause of foodborne illness. Thawing at room temperature is a unsafe practice.",
     "skill": "Health Education",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "nclex_251",
@@ -7025,7 +7025,7 @@
     "correctAnswer": "B",
     "explanation": "The Homan's sign (pain in the calf that worsens with dorsiflexion) is a classic but not always reliable indicator of DVT. Swelling in both legs can indicate other issues like heart failure. Cool, clammy skin is more suggestive of arterial insufficiency. A rash is unrelated to DVT.",
     "skill": "Assessment",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "nclex_252",
@@ -7053,7 +7053,7 @@
     "correctAnswer": "A",
     "explanation": "Warfarin is an anticoagulant that affects the extrinsic and common pathways of coagulation, which is measured by PT and INR. aPTT monitors heparin therapy. CBC monitors for anemia or infection. Serum creatinine monitors kidney function.",
     "skill": "Medication Management",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "nclex_253",
@@ -7081,7 +7081,7 @@
     "correctAnswer": "A",
     "explanation": "Type 1 diabetes is characterized by autoimmune destruction of pancreatic beta cells, leading to an absolute deficiency of insulin production. Type 2 diabetes is characterized by insulin resistance and relative insulin deficiency. While diet is important, it's not the primary underlying pathology of type 1 diabetes. Liver glucose production is also involved but not the root cause in type 1.",
     "skill": "Physiological Adaptation",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "nclex_254",
@@ -7109,7 +7109,7 @@
     "correctAnswer": "C",
     "explanation": "Short-acting beta-agonists (SABAs) like albuterol are the first-line treatment for acute asthma exacerbations as they provide rapid bronchodilation. Inhaled corticosteroids are for long-term control, LABAs are also for long-term control and should be used with an inhaled corticosteroid, and leukotriene modifiers are another class for long-term management.",
     "skill": "Pharmacology",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "nclex_255",
@@ -7137,7 +7137,7 @@
     "correctAnswer": "A",
     "explanation": "The pH is below the normal range of 7.35-7.45, indicating acidosis. The PaCO2 is elevated above the normal range of 35-45 mmHg, indicating a respiratory problem. Since the HCO3 is within the normal range (22-26 mEq/L), the metabolic system has not yet compensated. Thus, it is respiratory acidosis, uncompensated.",
     "skill": "Interpretation",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "nclex_256",
@@ -7165,7 +7165,7 @@
     "correctAnswer": "C",
     "explanation": "Atorvastatin is a statin medication used to lower cholesterol levels, particularly LDL cholesterol, which is a key risk factor for cardiovascular disease and can contribute to further atherosclerosis after an MI. While statins can have pleiotropic effects, their primary role is lipid-lowering.",
     "skill": "Medication Management",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "nclex_257",
@@ -7193,7 +7193,7 @@
     "correctAnswer": "A",
     "explanation": "SIADH is characterized by excessive secretion of ADH, leading to water retention, dilutional hyponatremia, and concentrated urine. Therefore, a low serum sodium level (hyponatremia) is expected. Urine specific gravity will be high (concentrated), serum osmolality will be low, and urine sodium will typically be high.",
     "skill": "Lab Interpretation",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "nclex_258",
@@ -7221,7 +7221,7 @@
     "correctAnswer": "B",
     "explanation": "A CT scan of the head is the most rapid and widely available imaging modality to differentiate between ischemic and hemorrhagic strokes, which is critical for initiating appropriate treatment (e.g., thrombolytics for ischemic stroke, managing blood pressure for hemorrhagic stroke). ECG is for cardiac assessment. Lumbar puncture is not indicated in acute stroke to differentiate the type. Cerebral angiography is more invasive and typically used for planning interventions or further evaluation.",
     "skill": "Assessment",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "nclex_259",
@@ -7249,7 +7249,7 @@
     "correctAnswer": "B",
     "explanation": "Reducing sodium intake is a cornerstone of lifestyle modification for hypertension management, as sodium promotes fluid retention and increases blood pressure. Canned soups are typically high in sodium. High-fat dairy products are not recommended for cardiovascular health. Sedentary activities worsen hypertension.",
     "skill": "Health Promotion and Maintenance",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "nclex_260",
@@ -7277,7 +7277,7 @@
     "correctAnswer": "A",
     "explanation": "Administering insulin with dextrose causes glucose to enter the cells, and potassium follows glucose into the cells, temporarily lowering serum potassium levels. Potassium chloride would increase potassium. Furosemide is a loop diuretic that can excrete potassium. Sodium bicarbonate is used for metabolic acidosis and can shift potassium into cells, but insulin and dextrose is a more common and rapid method for acute hyperkalemia.",
     "skill": "Pharmacology",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "nclex_261",
@@ -7305,7 +7305,7 @@
     "correctAnswer": "C",
     "explanation": "A sudden onset of a petechial rash, especially if it progresses rapidly and doesn't blanch, can be indicative of meningococcal sepsis (meningococcemia), a life-threatening complication of bacterial meningitis that requires immediate medical attention and antibiotics. Photophobia, nuchal rigidity, and fever are common symptoms of meningitis but are less immediately life-threatening than signs of sepsis.",
     "skill": "Assessment",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "nclex_262",
@@ -7333,7 +7333,7 @@
     "correctAnswer": "B",
     "explanation": "Spironolactone is a potassium-sparing diuretic that blocks the effects of aldosterone, leading to increased sodium excretion and decreased potassium excretion. It is often used in heart failure and hypertension. It does not inhibit ADH or directly affect blood glucose.",
     "skill": "Pharmacology",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "nclex_263",
@@ -7361,7 +7361,7 @@
     "correctAnswer": "C",
     "explanation": "Hypoglycemia (low blood sugar) typically presents with adrenergic symptoms such as diaphoresis (sweating), tremors, palpitations, anxiety, and hunger. Flushed skin and dry mouth are more associated with hyperglycemia. Polyuria and polydipsia are also signs of hyperglycemia. Gradual confusion can occur with chronic hyperglycemia or severe, prolonged hypoglycemia, but acute adrenergic symptoms are more typical of onset.",
     "skill": "Assessment",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "nclex_264",
@@ -7389,7 +7389,7 @@
     "correctAnswer": "D",
     "explanation": "A potassium level of 6.5 mEq/L is life-threatening and poses a significant risk for cardiac arrhythmias and arrest. While other interventions like Kayexalate or IV fluids might be considered in less severe cases of hyperkalemia, a critically elevated level like this in the context of AKI often necessitates urgent renal replacement therapy to rapidly remove potassium from the body.",
     "skill": "Management of Care",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "nclex_265",
@@ -7417,7 +7417,7 @@
     "correctAnswer": "D",
     "explanation": "Dopamine is an inotropic and chronotropic agent. An increase in heart rate and a decrease in peripheral pulses (indicating vasoconstriction which can reduce perfusion) are signs of excessive stimulation or an overdose, suggesting the dose may be too high and needs adjustment. Bradycardia is a slow heart rate. Oliguria is decreased urine output. While the goal is improvement, these specific findings indicate a negative hemodynamic effect.",
     "skill": "Pharmacology",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "nclex_266",
@@ -7445,7 +7445,7 @@
     "correctAnswer": "B",
     "explanation": "Using assistive devices like canes or walkers can reduce stress on the joints during prolonged activity, thereby protecting them. High-impact exercises can exacerbate osteoarthritis. Ignoring joint pain is counterproductive. While heat can be beneficial, continuous application and application to all joints may not be appropriate and might mask pain signals.",
     "skill": "Health Promotion and Maintenance",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "nclex_267",
@@ -7473,7 +7473,7 @@
     "correctAnswer": "D",
     "explanation": "A chest X-ray is the primary diagnostic tool for identifying pneumonia, showing infiltrates or consolidation in the lung fields. A sputum culture and sensitivity can identify the causative organism and guide antibiotic selection but is often done after a diagnosis is suspected clinically and radiographically. CBC can show elevated white blood cells, indicative of infection, but not the location or type of lung pathology. ECG is for cardiac assessment.",
     "skill": "Assessment",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "nclex_268",
@@ -7501,7 +7501,7 @@
     "correctAnswer": "C",
     "explanation": "Lisinopril is an angiotensin-converting enzyme (ACE) inhibitor. In heart failure, ACE inhibitors work by blocking the conversion of angiotensin I to angiotensin II, leading to vasodilation (reducing afterload) and decreased aldosterone secretion (reducing sodium and water retention, thus decreasing preload). Beta-blockers also have a role but have different mechanisms. Diuretics increase excretion. Digoxin increases contractility.",
     "skill": "Pharmacology",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "nclex_269",
@@ -7529,7 +7529,7 @@
     "correctAnswer": "A",
     "explanation": "Ondansetron (Zofran) is a 5-HT3 receptor antagonist, meaning it blocks serotonin receptors, which are involved in the nausea and vomiting reflex triggered by chemotherapy. Prochlorperazine and promethazine are phenothiazines with antiemetic properties. Dexamethasone is a corticosteroid often used in combination with other antiemetics.",
     "skill": "Pharmacology",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "nclex_270",
@@ -7557,7 +7557,7 @@
     "correctAnswer": "A",
     "explanation": "Anemia in chronic kidney disease is often due to a deficiency in erythropoietin, a hormone produced by the kidneys that stimulates red blood cell production. Treatment typically involves administering synthetic erythropoietin to boost red blood cell count. Insulin, thyroid-stimulating hormone, and growth hormone have different physiological functions.",
     "skill": "Pharmacology",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "nclex_271",
@@ -7585,7 +7585,7 @@
     "correctAnswer": "B",
     "explanation": "Post-operative patients, especially those undergoing orthopedic surgery like hip arthroplasty, are at high risk for deep vein thrombosis (DVT). Assessing for calf pain and swelling is crucial for early detection. While lung sounds, intake/output, and wound assessment are important, DVT is a primary, potentially life-threatening complication in this population.",
     "skill": "Assessment",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "nclex_272",
@@ -7613,7 +7613,7 @@
     "correctAnswer": "C",
     "explanation": "Insulin therapy drives glucose and potassium into the cells. In DKA, potassium may be falsely elevated due to acidosis and fluid shifts. As insulin is administered and acidosis corrects, potassium shifts intracellularly, potentially leading to hypokalemia, which is dangerous. Hyponatremia can occur due to fluid shifts or replacement, but hypokalemia is a direct consequence of insulin therapy.",
     "skill": "Physiological Adaptation",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "nclex_273",
@@ -7641,7 +7641,7 @@
     "correctAnswer": "B",
     "explanation": "For nebulizer treatments, the patient should be instructed to breathe deeply and slowly through the mouthpiece to allow the medication to reach the lower airways effectively. Holding breath for 30 seconds is for metered-dose inhalers. Forceful exhalation is not the primary instruction. Rinsing the mouth is important after using inhaled corticosteroids to prevent thrush, but not the primary breathing instruction for nebulizers.",
     "skill": "Health Promotion and Maintenance",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "nclex_274",
@@ -7669,7 +7669,7 @@
     "correctAnswer": "B",
     "explanation": "Paracentesis is an invasive procedure to withdraw ascitic fluid from the abdominal cavity. Its primary purpose in symptomatic ascites is to relieve the patient's discomfort caused by abdominal distension and pressure. While the fluid can be analyzed for infection or malignancy (diagnosing/assessing), and antibiotics could be administered if indicated, therapeutic fluid removal is the most common and immediate goal.",
     "skill": "Management of Care",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "nclex_275",
@@ -7697,7 +7697,7 @@
     "correctAnswer": "A",
     "explanation": "Loop diuretics (like furosemide) can cause potassium loss (hypokalemia). Hypokalemia can potentiate the effects of digoxin, increasing the risk of digoxin toxicity, which can manifest as cardiac arrhythmias, nausea, vomiting, and visual disturbances. Loop diuretics do not typically decrease digoxin absorption or cause hyperkalemia. While dehydration is a risk of diuretics, the most critical interaction with digoxin is related to potassium levels.",
     "skill": "Pharmacology",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "nclex_276",
@@ -7725,7 +7725,7 @@
     "correctAnswer": "B",
     "explanation": "The most appropriate initial intervention is to acknowledge the client's feelings and explore their perception of the threat. Directly contradicting delusional thinking (Option A) can alienate the client. Providing extensive education before establishing trust (Option C) may be overwhelming. Requesting specific details about persecutory delusions (Option D) might increase anxiety.",
     "skill": "Psychosocial Assessment",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "nclex_277",
@@ -7753,7 +7753,7 @@
     "correctAnswer": "C",
     "explanation": "The priority action during a panic attack is to provide a safe and quiet environment with minimal stimuli to help the client regain control. While deep breathing (B) is helpful once the panic subsides slightly, it can be difficult for a client experiencing severe hyperventilation. Sedation (A) may be considered but is not the immediate priority. Explaining the symptoms (D) is less effective when the client is overwhelmed.",
     "skill": "Coping Mechanisms",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "nclex_278",
@@ -7781,7 +7781,7 @@
     "correctAnswer": "A",
     "explanation": "The client's statement suggests complicated grief, characterized by persistent intense sorrow and preoccupation with the deceased, inability to regain pleasure in life, and difficulty moving forward a year or more after the loss. This goes beyond the typical stages of normal grief (D). Anticipatory grief (B) occurs before the loss. Disenfranchised grief (C) occurs when a loss is not openly acknowledged or supported.",
     "skill": "Grief and Loss Assessment",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "nclex_279",
@@ -7809,7 +7809,7 @@
     "correctAnswer": "A",
     "explanation": "Clients with borderline personality disorder benefit from a consistent, firm, and non-judgmental approach. This provides a stable environment and helps them feel safe. Social activities (B) can blur professional boundaries. Avoiding limits (C) can lead to exploitation. Validating negative self-talk (D) without addressing underlying issues is not therapeutic.",
     "skill": "Therapeutic Communication",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "nclex_280",
@@ -7837,7 +7837,7 @@
     "correctAnswer": "B",
     "explanation": "Validating the client's feelings acknowledges their emotional state, and exploring coping strategies empowers them. Focusing only on physical recovery (A) neglects psychosocial needs. Minimizing concerns (C) invalidates their experience. Advising complete avoidance of stress (D) is unrealistic and may lead to further anxiety.",
     "skill": "Coping Mechanisms",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "nclex_281",
@@ -7865,7 +7865,7 @@
     "correctAnswer": "B",
     "explanation": "For a client with psychomotor retardation, providing opportunities for simple, successful activities helps build self-esteem and a sense of accomplishment without being overwhelming. Group therapy (A) may be too demanding initially. Complex conversations (C) can be difficult. Increased stimuli (D) could be agitating.",
     "skill": "Intervention for Depression",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "nclex_282",
@@ -7893,7 +7893,7 @@
     "correctAnswer": "B",
     "explanation": "The client's statements directly express feelings of worthlessness and self-blame directly related to the loss of their job, which is a loss of role and identity. This aligns with situational low self-esteem, which is a common response to stressors like job loss. While adjustment disorder (A) might be a possibility, the specific statements point more directly to self-esteem issues. Grief (C) is present but the core issue articulated is self-worth. Denial (D) is not indicated by the statements.",
     "skill": "Psychosocial Assessment",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "nclex_283",
@@ -7921,7 +7921,7 @@
     "correctAnswer": "C",
     "explanation": "Involving the client in facility-sponsored group activities is the most effective intervention for promoting social interaction and reducing loneliness in a long-term care setting, as it offers opportunities to connect with peers. While family visits (B) and one-on-one activities (D) are beneficial, group activities provide broader social engagement. Reading in the room (A) can increase isolation.",
     "skill": "Intervention for Social Isolation",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "nclex_284",
@@ -7946,7 +7946,7 @@
     "correctAnswer": "B",
     "explanation": "Option B demonstrates empathetic understanding by acknowledging the client's feelings of hopelessness and validating the pain associated with it, without attempting to dismiss or minimize their experience. Option A is dismissive and offers false reassurance. Option C attempts to change the subject inappropriately. Option D is a generalization that can minimize the client's unique suffering.",
     "skill": "Therapeutic Communication",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "nclex_285",
@@ -7971,7 +7971,7 @@
     "correctAnswer": "C",
     "explanation": "Practicing relaxation techniques like progressive muscle relaxation daily, even when calm, helps build resilience and manage anxiety more effectively. Doing it only during an attack (A) is less effective for prevention. Avoiding all stress (B) is unrealistic. Talking about problems (D) is often a helpful coping mechanism.",
     "skill": "Coping Mechanisms",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "nclex_286",
@@ -7999,7 +7999,7 @@
     "correctAnswer": "C",
     "explanation": "The primary responsibility when a client is hallucinating commands to self-harm is to ensure their safety and prevent self-harm. While documenting (B) is important, it's secondary to safety. Ignoring voices (A) is not feasible for the client. Confronting the hallucinations (D) can be counterproductive and increase agitation.",
     "skill": "Safety and Security",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "nclex_287",
@@ -8027,7 +8027,7 @@
     "correctAnswer": "B",
     "explanation": "A structured, low-stimulus environment helps reduce distractibility and agitation in clients experiencing mania. Engaging in lengthy discussions (A) or allowing the client to set the pace (C) can exacerbate distractibility. Large group activities (D) are often overwhelming.",
     "skill": "Intervention for Mania",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "nclex_288",
@@ -8055,7 +8055,7 @@
     "correctAnswer": "A",
     "explanation": "The symptoms described (difficulty sleeping, flashbacks, being easily startled) occurring shortly after a traumatic event are indicative of acute stress disorder (ASD). PTSD typically develops after symptoms persist for more than one month. Adjustment disorder (B) is a less severe reaction to a stressor. Panic disorder (C) is characterized by recurrent, unexpected panic attacks.",
     "skill": "Psychosocial Assessment",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "nclex_289",
@@ -8080,7 +8080,7 @@
     "correctAnswer": "B",
     "explanation": "Changes in appetite and sleep patterns are common physiological symptoms of depression and are crucial in assessing its severity. While enjoyment of activities (A), support system (C), and frequency of feelings (D) are relevant, the physiological indicators provide objective data about the impact of the depression.",
     "skill": "Psychosocial Assessment",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "nclex_290",
@@ -8108,7 +8108,7 @@
     "correctAnswer": "D",
     "explanation": "Ensuring safety and attempting de-escalation through calm communication is the priority when a client is agitated and verbally abusive during withdrawal. Confrontation (A) can escalate the situation. Medication (B) may be indicated but is not the immediate initial action. Reinforcing rules (C) is appropriate later, but de-escalation is paramount first.",
     "skill": "Safety and Security",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "nclex_291",
@@ -8136,7 +8136,7 @@
     "correctAnswer": "C",
     "explanation": "The best approach is to acknowledge the client's feelings without reinforcing the delusion. For example, \"It sounds like you are feeling very important right now.\" Agreeing (A) is inappropriate. Directly confronting (B) can increase agitation. Ignoring (D) is not therapeutic.",
     "skill": "Therapeutic Communication",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "nclex_292",
@@ -8164,7 +8164,7 @@
     "correctAnswer": "A",
     "explanation": "The Mini-Mental State Examination (MMSE) is a widely used, rapid screening tool for cognitive impairment. The MoCA (D) is also a good screening tool, but the MMSE is often considered more standard for rapid screening. The GDS (B) and BDI (C) are used to assess depression, not cognitive function.",
     "skill": "Psychosocial Assessment",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "nclex_293",
@@ -8192,7 +8192,7 @@
     "correctAnswer": "B",
     "explanation": "Encouraging the client to verbalize their fears and concerns allows them to process their anxiety and receive support. Providing excessive information about complications (A) can increase anxiety. Sedation (C) may be necessary but is not the primary coping promotion strategy. Distraction (D) may offer temporary relief but does not address the underlying anxiety.",
     "skill": "Coping Mechanisms",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "nclex_294",
@@ -8217,7 +8217,7 @@
     "correctAnswer": "B",
     "explanation": "The best response acknowledges the client's belief without agreeing with it, while also offering reassurance. \"I understand you believe the food is poisoned, but I assure you it is safe\" validates their perception of their experience while providing a reality-based assurance. Directly contradicting (A, D) can increase mistrust. Asking for more details about the delusion (C) might reinforce it.",
     "skill": "Therapeutic Communication",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "nclex_295",
@@ -8245,7 +8245,7 @@
     "correctAnswer": "B",
     "explanation": "Social anxiety disorder, characterized by fear of social situations, often leads to avoidance and subsequent social isolation. While ineffective coping (D) is present, social isolation is a direct consequence of the disorder. Disturbed body image (A) and impaired verbal communication (C) are not primary diagnoses for social anxiety disorder.",
     "skill": "Nursing Diagnosis",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "nclex_296",
@@ -8273,7 +8273,7 @@
     "correctAnswer": "B",
     "explanation": "Disbelief and numbness are common initial reactions to a sudden, unexpected loss and represent denial as a defense mechanism to protect oneself from overwhelming emotional pain. Acceptance (A) usually follows. Complicated grief (C) involves prolonged and intense grief. Anticipatory grief (D) occurs before the loss.",
     "skill": "Grief and Loss Assessment",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "nclex_297",
@@ -8301,7 +8301,7 @@
     "correctAnswer": "A",
     "explanation": "Benzodiazepines are the first-line pharmacological treatment for alcohol withdrawal symptoms, as they reduce the risk of seizures and delirium tremens, making them the highest priority for symptom management. Regular assessments (D) are crucial but secondary to immediate pharmacological intervention for severe symptoms. Environmental modifications (B) and orientation (C) are supportive but less critical than managing the physiological risks.",
     "skill": "Pharmacology and Therapeutic Agents",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "nclex_298",
@@ -8329,7 +8329,7 @@
     "correctAnswer": "C",
     "explanation": "Teaching grounding techniques and relaxation exercises equips the client with tools to manage the distress associated with nightmares and flashbacks, helping them to reconnect with the present. Suppressing memories (A) or avoiding the event (B) is generally not effective long-term. Suggesting sleeping in a separate room (D) addresses a symptom but not the underlying management.",
     "skill": "Coping Mechanisms",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "nclex_299",
@@ -8357,7 +8357,7 @@
     "correctAnswer": "C",
     "explanation": "The most therapeutic approach is to acknowledge the client's feelings while gently redirecting from the delusion. Option C validates their experience ('I hear you are concerned about what you heard') without confirming the delusional belief. Explaining general broadcasting (A) can be perceived as dismissive. Challenging (B) or asking for proof (D) can increase paranoia and mistrust.",
     "skill": "Therapeutic Communication",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "nclex_300",
@@ -8385,6 +8385,6 @@
     "correctAnswer": "D",
     "explanation": "Disturbed body image is a core feature of anorexia nervosa, characterized by a distorted perception of one's own body and an intense fear of gaining weight, even when underweight. The other diagnoses are not primary psychosocial needs directly related to the core features of this disorder.",
     "skill": "Nursing Diagnosis",
-    "difficulty": "hard"
+    "difficulty": 7
   }
 ]

@@ -4,7 +4,7 @@
     "exam": "CLT",
     "section": "Verbal Reasoning",
     "skill": "main_idea",
-    "difficulty": "easy",
+    "difficulty": 3,
     "question": "A short passage states that habits shape character through repeated action. Which choice best reflects the passage's central claim?",
     "options": [
       {
@@ -32,7 +32,7 @@
     "exam": "CLT",
     "section": "Grammar/Writing",
     "skill": "vocab_in_context",
-    "difficulty": "medium",
+    "difficulty": 5,
     "question": "Which word most nearly means 'temperate' as used to describe a careful and restrained speaker?",
     "options": [
       {
@@ -60,7 +60,7 @@
     "exam": "CLT",
     "section": "Quantitative Reasoning",
     "skill": "linear_equations",
-    "difficulty": "hard",
+    "difficulty": 7,
     "question": "If 4x + 8 = 24, what is the value of x?",
     "options": [
       {
@@ -88,4935 +88,7 @@
     "exam": "CLT",
     "section": "Grammar/Writing",
     "skill": "transitions",
-    "difficulty": "easy",
-    "question": "A sentence reads: 'The committee appreciated the speaker's clarity, ______ they disagreed with several conclusions.' Which transition best completes the sentence?",
-    "options": [
-      {
-        "label": "A",
-        "text": "therefore"
-      },
-      {
-        "label": "B",
-        "text": "for example"
-      },
-      {
-        "label": "C",
-        "text": "meanwhile"
-      },
-      {
-        "label": "D",
-        "text": "although"
-      }
-    ],
-    "correctAnswer": "D",
-    "explanation": "The sentence shows contrast between appreciation and disagreement."
-  },
-  {
-    "id": "clt_005",
-    "exam": "CLT",
-    "section": "Verbal Reasoning",
-    "skill": "main_idea",
-    "difficulty": "medium",
-    "question": "A short passage states that habits shape character through repeated action. Which choice best reflects the passage's central claim?",
-    "options": [
-      {
-        "label": "A",
-        "text": "Repeated choices gradually form a person's character."
-      },
-      {
-        "label": "B",
-        "text": "Character is fixed and unaffected by habit."
-      },
-      {
-        "label": "C",
-        "text": "Only public actions influence character."
-      },
-      {
-        "label": "D",
-        "text": "Habits matter only in childhood."
-      }
-    ],
-    "correctAnswer": "A",
-    "explanation": "The passage connects repeated action to character formation."
-  },
-  {
-    "id": "clt_006",
-    "exam": "CLT",
-    "section": "Grammar/Writing",
-    "skill": "vocab_in_context",
-    "difficulty": "hard",
-    "question": "Which word most nearly means 'temperate' as used to describe a careful and restrained speaker?",
-    "options": [
-      {
-        "label": "A",
-        "text": "angry"
-      },
-      {
-        "label": "B",
-        "text": "moderate"
-      },
-      {
-        "label": "C",
-        "text": "musical"
-      },
-      {
-        "label": "D",
-        "text": "uncertain"
-      }
-    ],
-    "correctAnswer": "B",
-    "explanation": "In this context, temperate means moderate and restrained."
-  },
-  {
-    "id": "clt_007",
-    "exam": "CLT",
-    "section": "Quantitative Reasoning",
-    "skill": "linear_equations",
-    "difficulty": "easy",
-    "question": "If 4x + 8 = 24, what is the value of x?",
-    "options": [
-      {
-        "label": "A",
-        "text": "3"
-      },
-      {
-        "label": "B",
-        "text": "6"
-      },
-      {
-        "label": "C",
-        "text": "4"
-      },
-      {
-        "label": "D",
-        "text": "8"
-      }
-    ],
-    "correctAnswer": "C",
-    "explanation": "Subtract 8 from both sides to get 4x = 16, then divide by 4."
-  },
-  {
-    "id": "clt_008",
-    "exam": "CLT",
-    "section": "Grammar/Writing",
-    "skill": "transitions",
-    "difficulty": "medium",
-    "question": "A sentence reads: 'The committee appreciated the speaker's clarity, ______ they disagreed with several conclusions.' Which transition best completes the sentence?",
-    "options": [
-      {
-        "label": "A",
-        "text": "therefore"
-      },
-      {
-        "label": "B",
-        "text": "for example"
-      },
-      {
-        "label": "C",
-        "text": "meanwhile"
-      },
-      {
-        "label": "D",
-        "text": "although"
-      }
-    ],
-    "correctAnswer": "D",
-    "explanation": "The sentence shows contrast between appreciation and disagreement."
-  },
-  {
-    "id": "clt_009",
-    "exam": "CLT",
-    "section": "Verbal Reasoning",
-    "skill": "main_idea",
-    "difficulty": "hard",
-    "question": "A short passage states that habits shape character through repeated action. Which choice best reflects the passage's central claim?",
-    "options": [
-      {
-        "label": "A",
-        "text": "Repeated choices gradually form a person's character."
-      },
-      {
-        "label": "B",
-        "text": "Character is fixed and unaffected by habit."
-      },
-      {
-        "label": "C",
-        "text": "Only public actions influence character."
-      },
-      {
-        "label": "D",
-        "text": "Habits matter only in childhood."
-      }
-    ],
-    "correctAnswer": "A",
-    "explanation": "The passage connects repeated action to character formation."
-  },
-  {
-    "id": "clt_010",
-    "exam": "CLT",
-    "section": "Grammar/Writing",
-    "skill": "vocab_in_context",
-    "difficulty": "easy",
-    "question": "Which word most nearly means 'temperate' as used to describe a careful and restrained speaker?",
-    "options": [
-      {
-        "label": "A",
-        "text": "angry"
-      },
-      {
-        "label": "B",
-        "text": "moderate"
-      },
-      {
-        "label": "C",
-        "text": "musical"
-      },
-      {
-        "label": "D",
-        "text": "uncertain"
-      }
-    ],
-    "correctAnswer": "B",
-    "explanation": "In this context, temperate means moderate and restrained."
-  },
-  {
-    "id": "clt_011",
-    "exam": "CLT",
-    "section": "Quantitative Reasoning",
-    "skill": "linear_equations",
-    "difficulty": "medium",
-    "question": "If 4x + 8 = 24, what is the value of x?",
-    "options": [
-      {
-        "label": "A",
-        "text": "3"
-      },
-      {
-        "label": "B",
-        "text": "6"
-      },
-      {
-        "label": "C",
-        "text": "4"
-      },
-      {
-        "label": "D",
-        "text": "8"
-      }
-    ],
-    "correctAnswer": "C",
-    "explanation": "Subtract 8 from both sides to get 4x = 16, then divide by 4."
-  },
-  {
-    "id": "clt_012",
-    "exam": "CLT",
-    "section": "Grammar/Writing",
-    "skill": "transitions",
-    "difficulty": "hard",
-    "question": "A sentence reads: 'The committee appreciated the speaker's clarity, ______ they disagreed with several conclusions.' Which transition best completes the sentence?",
-    "options": [
-      {
-        "label": "A",
-        "text": "therefore"
-      },
-      {
-        "label": "B",
-        "text": "for example"
-      },
-      {
-        "label": "C",
-        "text": "meanwhile"
-      },
-      {
-        "label": "D",
-        "text": "although"
-      }
-    ],
-    "correctAnswer": "D",
-    "explanation": "The sentence shows contrast between appreciation and disagreement."
-  },
-  {
-    "id": "clt_013",
-    "exam": "CLT",
-    "section": "Verbal Reasoning",
-    "skill": "main_idea",
-    "difficulty": "easy",
-    "question": "A short passage states that habits shape character through repeated action. Which choice best reflects the passage's central claim?",
-    "options": [
-      {
-        "label": "A",
-        "text": "Repeated choices gradually form a person's character."
-      },
-      {
-        "label": "B",
-        "text": "Character is fixed and unaffected by habit."
-      },
-      {
-        "label": "C",
-        "text": "Only public actions influence character."
-      },
-      {
-        "label": "D",
-        "text": "Habits matter only in childhood."
-      }
-    ],
-    "correctAnswer": "A",
-    "explanation": "The passage connects repeated action to character formation."
-  },
-  {
-    "id": "clt_014",
-    "exam": "CLT",
-    "section": "Grammar/Writing",
-    "skill": "vocab_in_context",
-    "difficulty": "medium",
-    "question": "Which word most nearly means 'temperate' as used to describe a careful and restrained speaker?",
-    "options": [
-      {
-        "label": "A",
-        "text": "angry"
-      },
-      {
-        "label": "B",
-        "text": "moderate"
-      },
-      {
-        "label": "C",
-        "text": "musical"
-      },
-      {
-        "label": "D",
-        "text": "uncertain"
-      }
-    ],
-    "correctAnswer": "B",
-    "explanation": "In this context, temperate means moderate and restrained."
-  },
-  {
-    "id": "clt_015",
-    "exam": "CLT",
-    "section": "Quantitative Reasoning",
-    "skill": "linear_equations",
-    "difficulty": "hard",
-    "question": "If 4x + 8 = 24, what is the value of x?",
-    "options": [
-      {
-        "label": "A",
-        "text": "3"
-      },
-      {
-        "label": "B",
-        "text": "6"
-      },
-      {
-        "label": "C",
-        "text": "4"
-      },
-      {
-        "label": "D",
-        "text": "8"
-      }
-    ],
-    "correctAnswer": "C",
-    "explanation": "Subtract 8 from both sides to get 4x = 16, then divide by 4."
-  },
-  {
-    "id": "clt_016",
-    "exam": "CLT",
-    "section": "Grammar/Writing",
-    "skill": "transitions",
-    "difficulty": "easy",
-    "question": "A sentence reads: 'The committee appreciated the speaker's clarity, ______ they disagreed with several conclusions.' Which transition best completes the sentence?",
-    "options": [
-      {
-        "label": "A",
-        "text": "therefore"
-      },
-      {
-        "label": "B",
-        "text": "for example"
-      },
-      {
-        "label": "C",
-        "text": "meanwhile"
-      },
-      {
-        "label": "D",
-        "text": "although"
-      }
-    ],
-    "correctAnswer": "D",
-    "explanation": "The sentence shows contrast between appreciation and disagreement."
-  },
-  {
-    "id": "clt_017",
-    "exam": "CLT",
-    "section": "Verbal Reasoning",
-    "skill": "main_idea",
-    "difficulty": "medium",
-    "question": "A short passage states that habits shape character through repeated action. Which choice best reflects the passage's central claim?",
-    "options": [
-      {
-        "label": "A",
-        "text": "Repeated choices gradually form a person's character."
-      },
-      {
-        "label": "B",
-        "text": "Character is fixed and unaffected by habit."
-      },
-      {
-        "label": "C",
-        "text": "Only public actions influence character."
-      },
-      {
-        "label": "D",
-        "text": "Habits matter only in childhood."
-      }
-    ],
-    "correctAnswer": "A",
-    "explanation": "The passage connects repeated action to character formation."
-  },
-  {
-    "id": "clt_018",
-    "exam": "CLT",
-    "section": "Grammar/Writing",
-    "skill": "vocab_in_context",
-    "difficulty": "hard",
-    "question": "Which word most nearly means 'temperate' as used to describe a careful and restrained speaker?",
-    "options": [
-      {
-        "label": "A",
-        "text": "angry"
-      },
-      {
-        "label": "B",
-        "text": "moderate"
-      },
-      {
-        "label": "C",
-        "text": "musical"
-      },
-      {
-        "label": "D",
-        "text": "uncertain"
-      }
-    ],
-    "correctAnswer": "B",
-    "explanation": "In this context, temperate means moderate and restrained."
-  },
-  {
-    "id": "clt_019",
-    "exam": "CLT",
-    "section": "Quantitative Reasoning",
-    "skill": "linear_equations",
-    "difficulty": "easy",
-    "question": "If 4x + 8 = 24, what is the value of x?",
-    "options": [
-      {
-        "label": "A",
-        "text": "3"
-      },
-      {
-        "label": "B",
-        "text": "6"
-      },
-      {
-        "label": "C",
-        "text": "4"
-      },
-      {
-        "label": "D",
-        "text": "8"
-      }
-    ],
-    "correctAnswer": "C",
-    "explanation": "Subtract 8 from both sides to get 4x = 16, then divide by 4."
-  },
-  {
-    "id": "clt_020",
-    "exam": "CLT",
-    "section": "Grammar/Writing",
-    "skill": "transitions",
-    "difficulty": "medium",
-    "question": "A sentence reads: 'The committee appreciated the speaker's clarity, ______ they disagreed with several conclusions.' Which transition best completes the sentence?",
-    "options": [
-      {
-        "label": "A",
-        "text": "therefore"
-      },
-      {
-        "label": "B",
-        "text": "for example"
-      },
-      {
-        "label": "C",
-        "text": "meanwhile"
-      },
-      {
-        "label": "D",
-        "text": "although"
-      }
-    ],
-    "correctAnswer": "D",
-    "explanation": "The sentence shows contrast between appreciation and disagreement."
-  },
-  {
-    "id": "clt_021",
-    "exam": "CLT",
-    "section": "Verbal Reasoning",
-    "skill": "main_idea",
-    "difficulty": "hard",
-    "question": "A short passage states that habits shape character through repeated action. Which choice best reflects the passage's central claim?",
-    "options": [
-      {
-        "label": "A",
-        "text": "Repeated choices gradually form a person's character."
-      },
-      {
-        "label": "B",
-        "text": "Character is fixed and unaffected by habit."
-      },
-      {
-        "label": "C",
-        "text": "Only public actions influence character."
-      },
-      {
-        "label": "D",
-        "text": "Habits matter only in childhood."
-      }
-    ],
-    "correctAnswer": "A",
-    "explanation": "The passage connects repeated action to character formation."
-  },
-  {
-    "id": "clt_022",
-    "exam": "CLT",
-    "section": "Grammar/Writing",
-    "skill": "vocab_in_context",
-    "difficulty": "easy",
-    "question": "Which word most nearly means 'temperate' as used to describe a careful and restrained speaker?",
-    "options": [
-      {
-        "label": "A",
-        "text": "angry"
-      },
-      {
-        "label": "B",
-        "text": "moderate"
-      },
-      {
-        "label": "C",
-        "text": "musical"
-      },
-      {
-        "label": "D",
-        "text": "uncertain"
-      }
-    ],
-    "correctAnswer": "B",
-    "explanation": "In this context, temperate means moderate and restrained."
-  },
-  {
-    "id": "clt_023",
-    "exam": "CLT",
-    "section": "Quantitative Reasoning",
-    "skill": "linear_equations",
-    "difficulty": "medium",
-    "question": "If 4x + 8 = 24, what is the value of x?",
-    "options": [
-      {
-        "label": "A",
-        "text": "3"
-      },
-      {
-        "label": "B",
-        "text": "6"
-      },
-      {
-        "label": "C",
-        "text": "4"
-      },
-      {
-        "label": "D",
-        "text": "8"
-      }
-    ],
-    "correctAnswer": "C",
-    "explanation": "Subtract 8 from both sides to get 4x = 16, then divide by 4."
-  },
-  {
-    "id": "clt_024",
-    "exam": "CLT",
-    "section": "Grammar/Writing",
-    "skill": "transitions",
-    "difficulty": "hard",
-    "question": "A sentence reads: 'The committee appreciated the speaker's clarity, ______ they disagreed with several conclusions.' Which transition best completes the sentence?",
-    "options": [
-      {
-        "label": "A",
-        "text": "therefore"
-      },
-      {
-        "label": "B",
-        "text": "for example"
-      },
-      {
-        "label": "C",
-        "text": "meanwhile"
-      },
-      {
-        "label": "D",
-        "text": "although"
-      }
-    ],
-    "correctAnswer": "D",
-    "explanation": "The sentence shows contrast between appreciation and disagreement."
-  },
-  {
-    "id": "clt_025",
-    "exam": "CLT",
-    "section": "Verbal Reasoning",
-    "skill": "main_idea",
-    "difficulty": "easy",
-    "question": "A short passage states that habits shape character through repeated action. Which choice best reflects the passage's central claim?",
-    "options": [
-      {
-        "label": "A",
-        "text": "Repeated choices gradually form a person's character."
-      },
-      {
-        "label": "B",
-        "text": "Character is fixed and unaffected by habit."
-      },
-      {
-        "label": "C",
-        "text": "Only public actions influence character."
-      },
-      {
-        "label": "D",
-        "text": "Habits matter only in childhood."
-      }
-    ],
-    "correctAnswer": "A",
-    "explanation": "The passage connects repeated action to character formation."
-  },
-  {
-    "id": "clt_026",
-    "exam": "CLT",
-    "section": "Grammar/Writing",
-    "skill": "vocab_in_context",
-    "difficulty": "medium",
-    "question": "Which word most nearly means 'temperate' as used to describe a careful and restrained speaker?",
-    "options": [
-      {
-        "label": "A",
-        "text": "angry"
-      },
-      {
-        "label": "B",
-        "text": "moderate"
-      },
-      {
-        "label": "C",
-        "text": "musical"
-      },
-      {
-        "label": "D",
-        "text": "uncertain"
-      }
-    ],
-    "correctAnswer": "B",
-    "explanation": "In this context, temperate means moderate and restrained."
-  },
-  {
-    "id": "clt_027",
-    "exam": "CLT",
-    "section": "Quantitative Reasoning",
-    "skill": "linear_equations",
-    "difficulty": "hard",
-    "question": "If 4x + 8 = 24, what is the value of x?",
-    "options": [
-      {
-        "label": "A",
-        "text": "3"
-      },
-      {
-        "label": "B",
-        "text": "6"
-      },
-      {
-        "label": "C",
-        "text": "4"
-      },
-      {
-        "label": "D",
-        "text": "8"
-      }
-    ],
-    "correctAnswer": "C",
-    "explanation": "Subtract 8 from both sides to get 4x = 16, then divide by 4."
-  },
-  {
-    "id": "clt_028",
-    "exam": "CLT",
-    "section": "Grammar/Writing",
-    "skill": "transitions",
-    "difficulty": "easy",
-    "question": "A sentence reads: 'The committee appreciated the speaker's clarity, ______ they disagreed with several conclusions.' Which transition best completes the sentence?",
-    "options": [
-      {
-        "label": "A",
-        "text": "therefore"
-      },
-      {
-        "label": "B",
-        "text": "for example"
-      },
-      {
-        "label": "C",
-        "text": "meanwhile"
-      },
-      {
-        "label": "D",
-        "text": "although"
-      }
-    ],
-    "correctAnswer": "D",
-    "explanation": "The sentence shows contrast between appreciation and disagreement."
-  },
-  {
-    "id": "clt_029",
-    "exam": "CLT",
-    "section": "Verbal Reasoning",
-    "skill": "main_idea",
-    "difficulty": "medium",
-    "question": "A short passage states that habits shape character through repeated action. Which choice best reflects the passage's central claim?",
-    "options": [
-      {
-        "label": "A",
-        "text": "Repeated choices gradually form a person's character."
-      },
-      {
-        "label": "B",
-        "text": "Character is fixed and unaffected by habit."
-      },
-      {
-        "label": "C",
-        "text": "Only public actions influence character."
-      },
-      {
-        "label": "D",
-        "text": "Habits matter only in childhood."
-      }
-    ],
-    "correctAnswer": "A",
-    "explanation": "The passage connects repeated action to character formation."
-  },
-  {
-    "id": "clt_030",
-    "exam": "CLT",
-    "section": "Grammar/Writing",
-    "skill": "vocab_in_context",
-    "difficulty": "hard",
-    "question": "Which word most nearly means 'temperate' as used to describe a careful and restrained speaker?",
-    "options": [
-      {
-        "label": "A",
-        "text": "angry"
-      },
-      {
-        "label": "B",
-        "text": "moderate"
-      },
-      {
-        "label": "C",
-        "text": "musical"
-      },
-      {
-        "label": "D",
-        "text": "uncertain"
-      }
-    ],
-    "correctAnswer": "B",
-    "explanation": "In this context, temperate means moderate and restrained."
-  },
-  {
-    "id": "clt_031",
-    "exam": "CLT",
-    "section": "Quantitative Reasoning",
-    "skill": "linear_equations",
-    "difficulty": "easy",
-    "question": "If 4x + 8 = 24, what is the value of x?",
-    "options": [
-      {
-        "label": "A",
-        "text": "3"
-      },
-      {
-        "label": "B",
-        "text": "6"
-      },
-      {
-        "label": "C",
-        "text": "4"
-      },
-      {
-        "label": "D",
-        "text": "8"
-      }
-    ],
-    "correctAnswer": "C",
-    "explanation": "Subtract 8 from both sides to get 4x = 16, then divide by 4."
-  },
-  {
-    "id": "clt_032",
-    "exam": "CLT",
-    "section": "Grammar/Writing",
-    "skill": "transitions",
-    "difficulty": "medium",
-    "question": "A sentence reads: 'The committee appreciated the speaker's clarity, ______ they disagreed with several conclusions.' Which transition best completes the sentence?",
-    "options": [
-      {
-        "label": "A",
-        "text": "therefore"
-      },
-      {
-        "label": "B",
-        "text": "for example"
-      },
-      {
-        "label": "C",
-        "text": "meanwhile"
-      },
-      {
-        "label": "D",
-        "text": "although"
-      }
-    ],
-    "correctAnswer": "D",
-    "explanation": "The sentence shows contrast between appreciation and disagreement."
-  },
-  {
-    "id": "clt_033",
-    "exam": "CLT",
-    "section": "Verbal Reasoning",
-    "skill": "main_idea",
-    "difficulty": "hard",
-    "question": "A short passage states that habits shape character through repeated action. Which choice best reflects the passage's central claim?",
-    "options": [
-      {
-        "label": "A",
-        "text": "Repeated choices gradually form a person's character."
-      },
-      {
-        "label": "B",
-        "text": "Character is fixed and unaffected by habit."
-      },
-      {
-        "label": "C",
-        "text": "Only public actions influence character."
-      },
-      {
-        "label": "D",
-        "text": "Habits matter only in childhood."
-      }
-    ],
-    "correctAnswer": "A",
-    "explanation": "The passage connects repeated action to character formation."
-  },
-  {
-    "id": "clt_034",
-    "exam": "CLT",
-    "section": "Grammar/Writing",
-    "skill": "vocab_in_context",
-    "difficulty": "easy",
-    "question": "Which word most nearly means 'temperate' as used to describe a careful and restrained speaker?",
-    "options": [
-      {
-        "label": "A",
-        "text": "angry"
-      },
-      {
-        "label": "B",
-        "text": "moderate"
-      },
-      {
-        "label": "C",
-        "text": "musical"
-      },
-      {
-        "label": "D",
-        "text": "uncertain"
-      }
-    ],
-    "correctAnswer": "B",
-    "explanation": "In this context, temperate means moderate and restrained."
-  },
-  {
-    "id": "clt_035",
-    "exam": "CLT",
-    "section": "Quantitative Reasoning",
-    "skill": "linear_equations",
-    "difficulty": "medium",
-    "question": "If 4x + 8 = 24, what is the value of x?",
-    "options": [
-      {
-        "label": "A",
-        "text": "3"
-      },
-      {
-        "label": "B",
-        "text": "6"
-      },
-      {
-        "label": "C",
-        "text": "4"
-      },
-      {
-        "label": "D",
-        "text": "8"
-      }
-    ],
-    "correctAnswer": "C",
-    "explanation": "Subtract 8 from both sides to get 4x = 16, then divide by 4."
-  },
-  {
-    "id": "clt_036",
-    "exam": "CLT",
-    "section": "Grammar/Writing",
-    "skill": "transitions",
-    "difficulty": "hard",
-    "question": "A sentence reads: 'The committee appreciated the speaker's clarity, ______ they disagreed with several conclusions.' Which transition best completes the sentence?",
-    "options": [
-      {
-        "label": "A",
-        "text": "therefore"
-      },
-      {
-        "label": "B",
-        "text": "for example"
-      },
-      {
-        "label": "C",
-        "text": "meanwhile"
-      },
-      {
-        "label": "D",
-        "text": "although"
-      }
-    ],
-    "correctAnswer": "D",
-    "explanation": "The sentence shows contrast between appreciation and disagreement."
-  },
-  {
-    "id": "clt_037",
-    "exam": "CLT",
-    "section": "Verbal Reasoning",
-    "skill": "main_idea",
-    "difficulty": "easy",
-    "question": "A short passage states that habits shape character through repeated action. Which choice best reflects the passage's central claim?",
-    "options": [
-      {
-        "label": "A",
-        "text": "Repeated choices gradually form a person's character."
-      },
-      {
-        "label": "B",
-        "text": "Character is fixed and unaffected by habit."
-      },
-      {
-        "label": "C",
-        "text": "Only public actions influence character."
-      },
-      {
-        "label": "D",
-        "text": "Habits matter only in childhood."
-      }
-    ],
-    "correctAnswer": "A",
-    "explanation": "The passage connects repeated action to character formation."
-  },
-  {
-    "id": "clt_038",
-    "exam": "CLT",
-    "section": "Grammar/Writing",
-    "skill": "vocab_in_context",
-    "difficulty": "medium",
-    "question": "Which word most nearly means 'temperate' as used to describe a careful and restrained speaker?",
-    "options": [
-      {
-        "label": "A",
-        "text": "angry"
-      },
-      {
-        "label": "B",
-        "text": "moderate"
-      },
-      {
-        "label": "C",
-        "text": "musical"
-      },
-      {
-        "label": "D",
-        "text": "uncertain"
-      }
-    ],
-    "correctAnswer": "B",
-    "explanation": "In this context, temperate means moderate and restrained."
-  },
-  {
-    "id": "clt_039",
-    "exam": "CLT",
-    "section": "Quantitative Reasoning",
-    "skill": "linear_equations",
-    "difficulty": "hard",
-    "question": "If 4x + 8 = 24, what is the value of x?",
-    "options": [
-      {
-        "label": "A",
-        "text": "3"
-      },
-      {
-        "label": "B",
-        "text": "6"
-      },
-      {
-        "label": "C",
-        "text": "4"
-      },
-      {
-        "label": "D",
-        "text": "8"
-      }
-    ],
-    "correctAnswer": "C",
-    "explanation": "Subtract 8 from both sides to get 4x = 16, then divide by 4."
-  },
-  {
-    "id": "clt_040",
-    "exam": "CLT",
-    "section": "Grammar/Writing",
-    "skill": "transitions",
-    "difficulty": "easy",
-    "question": "A sentence reads: 'The committee appreciated the speaker's clarity, ______ they disagreed with several conclusions.' Which transition best completes the sentence?",
-    "options": [
-      {
-        "label": "A",
-        "text": "therefore"
-      },
-      {
-        "label": "B",
-        "text": "for example"
-      },
-      {
-        "label": "C",
-        "text": "meanwhile"
-      },
-      {
-        "label": "D",
-        "text": "although"
-      }
-    ],
-    "correctAnswer": "D",
-    "explanation": "The sentence shows contrast between appreciation and disagreement."
-  },
-  {
-    "id": "clt_041",
-    "exam": "CLT",
-    "section": "Verbal Reasoning",
-    "skill": "main_idea",
-    "difficulty": "medium",
-    "question": "A short passage states that habits shape character through repeated action. Which choice best reflects the passage's central claim?",
-    "options": [
-      {
-        "label": "A",
-        "text": "Repeated choices gradually form a person's character."
-      },
-      {
-        "label": "B",
-        "text": "Character is fixed and unaffected by habit."
-      },
-      {
-        "label": "C",
-        "text": "Only public actions influence character."
-      },
-      {
-        "label": "D",
-        "text": "Habits matter only in childhood."
-      }
-    ],
-    "correctAnswer": "A",
-    "explanation": "The passage connects repeated action to character formation."
-  },
-  {
-    "id": "clt_042",
-    "exam": "CLT",
-    "section": "Grammar/Writing",
-    "skill": "vocab_in_context",
-    "difficulty": "hard",
-    "question": "Which word most nearly means 'temperate' as used to describe a careful and restrained speaker?",
-    "options": [
-      {
-        "label": "A",
-        "text": "angry"
-      },
-      {
-        "label": "B",
-        "text": "moderate"
-      },
-      {
-        "label": "C",
-        "text": "musical"
-      },
-      {
-        "label": "D",
-        "text": "uncertain"
-      }
-    ],
-    "correctAnswer": "B",
-    "explanation": "In this context, temperate means moderate and restrained."
-  },
-  {
-    "id": "clt_043",
-    "exam": "CLT",
-    "section": "Quantitative Reasoning",
-    "skill": "linear_equations",
-    "difficulty": "easy",
-    "question": "If 4x + 8 = 24, what is the value of x?",
-    "options": [
-      {
-        "label": "A",
-        "text": "3"
-      },
-      {
-        "label": "B",
-        "text": "6"
-      },
-      {
-        "label": "C",
-        "text": "4"
-      },
-      {
-        "label": "D",
-        "text": "8"
-      }
-    ],
-    "correctAnswer": "C",
-    "explanation": "Subtract 8 from both sides to get 4x = 16, then divide by 4."
-  },
-  {
-    "id": "clt_044",
-    "exam": "CLT",
-    "section": "Grammar/Writing",
-    "skill": "transitions",
-    "difficulty": "medium",
-    "question": "A sentence reads: 'The committee appreciated the speaker's clarity, ______ they disagreed with several conclusions.' Which transition best completes the sentence?",
-    "options": [
-      {
-        "label": "A",
-        "text": "therefore"
-      },
-      {
-        "label": "B",
-        "text": "for example"
-      },
-      {
-        "label": "C",
-        "text": "meanwhile"
-      },
-      {
-        "label": "D",
-        "text": "although"
-      }
-    ],
-    "correctAnswer": "D",
-    "explanation": "The sentence shows contrast between appreciation and disagreement."
-  },
-  {
-    "id": "clt_045",
-    "exam": "CLT",
-    "section": "Verbal Reasoning",
-    "skill": "main_idea",
-    "difficulty": "hard",
-    "question": "A short passage states that habits shape character through repeated action. Which choice best reflects the passage's central claim?",
-    "options": [
-      {
-        "label": "A",
-        "text": "Repeated choices gradually form a person's character."
-      },
-      {
-        "label": "B",
-        "text": "Character is fixed and unaffected by habit."
-      },
-      {
-        "label": "C",
-        "text": "Only public actions influence character."
-      },
-      {
-        "label": "D",
-        "text": "Habits matter only in childhood."
-      }
-    ],
-    "correctAnswer": "A",
-    "explanation": "The passage connects repeated action to character formation."
-  },
-  {
-    "id": "clt_046",
-    "exam": "CLT",
-    "section": "Grammar/Writing",
-    "skill": "vocab_in_context",
-    "difficulty": "easy",
-    "question": "Which word most nearly means 'temperate' as used to describe a careful and restrained speaker?",
-    "options": [
-      {
-        "label": "A",
-        "text": "angry"
-      },
-      {
-        "label": "B",
-        "text": "moderate"
-      },
-      {
-        "label": "C",
-        "text": "musical"
-      },
-      {
-        "label": "D",
-        "text": "uncertain"
-      }
-    ],
-    "correctAnswer": "B",
-    "explanation": "In this context, temperate means moderate and restrained."
-  },
-  {
-    "id": "clt_047",
-    "exam": "CLT",
-    "section": "Quantitative Reasoning",
-    "skill": "linear_equations",
-    "difficulty": "medium",
-    "question": "If 4x + 8 = 24, what is the value of x?",
-    "options": [
-      {
-        "label": "A",
-        "text": "3"
-      },
-      {
-        "label": "B",
-        "text": "6"
-      },
-      {
-        "label": "C",
-        "text": "4"
-      },
-      {
-        "label": "D",
-        "text": "8"
-      }
-    ],
-    "correctAnswer": "C",
-    "explanation": "Subtract 8 from both sides to get 4x = 16, then divide by 4."
-  },
-  {
-    "id": "clt_048",
-    "exam": "CLT",
-    "section": "Grammar/Writing",
-    "skill": "transitions",
-    "difficulty": "hard",
-    "question": "A sentence reads: 'The committee appreciated the speaker's clarity, ______ they disagreed with several conclusions.' Which transition best completes the sentence?",
-    "options": [
-      {
-        "label": "A",
-        "text": "therefore"
-      },
-      {
-        "label": "B",
-        "text": "for example"
-      },
-      {
-        "label": "C",
-        "text": "meanwhile"
-      },
-      {
-        "label": "D",
-        "text": "although"
-      }
-    ],
-    "correctAnswer": "D",
-    "explanation": "The sentence shows contrast between appreciation and disagreement."
-  },
-  {
-    "id": "clt_049",
-    "exam": "CLT",
-    "section": "Verbal Reasoning",
-    "skill": "main_idea",
-    "difficulty": "easy",
-    "question": "A short passage states that habits shape character through repeated action. Which choice best reflects the passage's central claim?",
-    "options": [
-      {
-        "label": "A",
-        "text": "Repeated choices gradually form a person's character."
-      },
-      {
-        "label": "B",
-        "text": "Character is fixed and unaffected by habit."
-      },
-      {
-        "label": "C",
-        "text": "Only public actions influence character."
-      },
-      {
-        "label": "D",
-        "text": "Habits matter only in childhood."
-      }
-    ],
-    "correctAnswer": "A",
-    "explanation": "The passage connects repeated action to character formation."
-  },
-  {
-    "id": "clt_050",
-    "exam": "CLT",
-    "section": "Grammar/Writing",
-    "skill": "vocab_in_context",
-    "difficulty": "medium",
-    "question": "Which word most nearly means 'temperate' as used to describe a careful and restrained speaker?",
-    "options": [
-      {
-        "label": "A",
-        "text": "angry"
-      },
-      {
-        "label": "B",
-        "text": "moderate"
-      },
-      {
-        "label": "C",
-        "text": "musical"
-      },
-      {
-        "label": "D",
-        "text": "uncertain"
-      }
-    ],
-    "correctAnswer": "B",
-    "explanation": "In this context, temperate means moderate and restrained."
-  },
-  {
-    "id": "clt_051",
-    "exam": "CLT",
-    "section": "Quantitative Reasoning",
-    "skill": "linear_equations",
-    "difficulty": "hard",
-    "question": "If 4x + 8 = 24, what is the value of x?",
-    "options": [
-      {
-        "label": "A",
-        "text": "3"
-      },
-      {
-        "label": "B",
-        "text": "6"
-      },
-      {
-        "label": "C",
-        "text": "4"
-      },
-      {
-        "label": "D",
-        "text": "8"
-      }
-    ],
-    "correctAnswer": "C",
-    "explanation": "Subtract 8 from both sides to get 4x = 16, then divide by 4."
-  },
-  {
-    "id": "clt_052",
-    "exam": "CLT",
-    "section": "Grammar/Writing",
-    "skill": "transitions",
-    "difficulty": "easy",
-    "question": "A sentence reads: 'The committee appreciated the speaker's clarity, ______ they disagreed with several conclusions.' Which transition best completes the sentence?",
-    "options": [
-      {
-        "label": "A",
-        "text": "therefore"
-      },
-      {
-        "label": "B",
-        "text": "for example"
-      },
-      {
-        "label": "C",
-        "text": "meanwhile"
-      },
-      {
-        "label": "D",
-        "text": "although"
-      }
-    ],
-    "correctAnswer": "D",
-    "explanation": "The sentence shows contrast between appreciation and disagreement."
-  },
-  {
-    "id": "clt_053",
-    "exam": "CLT",
-    "section": "Verbal Reasoning",
-    "skill": "main_idea",
-    "difficulty": "medium",
-    "question": "A short passage states that habits shape character through repeated action. Which choice best reflects the passage's central claim?",
-    "options": [
-      {
-        "label": "A",
-        "text": "Repeated choices gradually form a person's character."
-      },
-      {
-        "label": "B",
-        "text": "Character is fixed and unaffected by habit."
-      },
-      {
-        "label": "C",
-        "text": "Only public actions influence character."
-      },
-      {
-        "label": "D",
-        "text": "Habits matter only in childhood."
-      }
-    ],
-    "correctAnswer": "A",
-    "explanation": "The passage connects repeated action to character formation."
-  },
-  {
-    "id": "clt_054",
-    "exam": "CLT",
-    "section": "Grammar/Writing",
-    "skill": "vocab_in_context",
-    "difficulty": "hard",
-    "question": "Which word most nearly means 'temperate' as used to describe a careful and restrained speaker?",
-    "options": [
-      {
-        "label": "A",
-        "text": "angry"
-      },
-      {
-        "label": "B",
-        "text": "moderate"
-      },
-      {
-        "label": "C",
-        "text": "musical"
-      },
-      {
-        "label": "D",
-        "text": "uncertain"
-      }
-    ],
-    "correctAnswer": "B",
-    "explanation": "In this context, temperate means moderate and restrained."
-  },
-  {
-    "id": "clt_055",
-    "exam": "CLT",
-    "section": "Quantitative Reasoning",
-    "skill": "linear_equations",
-    "difficulty": "easy",
-    "question": "If 4x + 8 = 24, what is the value of x?",
-    "options": [
-      {
-        "label": "A",
-        "text": "3"
-      },
-      {
-        "label": "B",
-        "text": "6"
-      },
-      {
-        "label": "C",
-        "text": "4"
-      },
-      {
-        "label": "D",
-        "text": "8"
-      }
-    ],
-    "correctAnswer": "C",
-    "explanation": "Subtract 8 from both sides to get 4x = 16, then divide by 4."
-  },
-  {
-    "id": "clt_056",
-    "exam": "CLT",
-    "section": "Grammar/Writing",
-    "skill": "transitions",
-    "difficulty": "medium",
-    "question": "A sentence reads: 'The committee appreciated the speaker's clarity, ______ they disagreed with several conclusions.' Which transition best completes the sentence?",
-    "options": [
-      {
-        "label": "A",
-        "text": "therefore"
-      },
-      {
-        "label": "B",
-        "text": "for example"
-      },
-      {
-        "label": "C",
-        "text": "meanwhile"
-      },
-      {
-        "label": "D",
-        "text": "although"
-      }
-    ],
-    "correctAnswer": "D",
-    "explanation": "The sentence shows contrast between appreciation and disagreement."
-  },
-  {
-    "id": "clt_057",
-    "exam": "CLT",
-    "section": "Verbal Reasoning",
-    "skill": "main_idea",
-    "difficulty": "hard",
-    "question": "A short passage states that habits shape character through repeated action. Which choice best reflects the passage's central claim?",
-    "options": [
-      {
-        "label": "A",
-        "text": "Repeated choices gradually form a person's character."
-      },
-      {
-        "label": "B",
-        "text": "Character is fixed and unaffected by habit."
-      },
-      {
-        "label": "C",
-        "text": "Only public actions influence character."
-      },
-      {
-        "label": "D",
-        "text": "Habits matter only in childhood."
-      }
-    ],
-    "correctAnswer": "A",
-    "explanation": "The passage connects repeated action to character formation."
-  },
-  {
-    "id": "clt_058",
-    "exam": "CLT",
-    "section": "Grammar/Writing",
-    "skill": "vocab_in_context",
-    "difficulty": "easy",
-    "question": "Which word most nearly means 'temperate' as used to describe a careful and restrained speaker?",
-    "options": [
-      {
-        "label": "A",
-        "text": "angry"
-      },
-      {
-        "label": "B",
-        "text": "moderate"
-      },
-      {
-        "label": "C",
-        "text": "musical"
-      },
-      {
-        "label": "D",
-        "text": "uncertain"
-      }
-    ],
-    "correctAnswer": "B",
-    "explanation": "In this context, temperate means moderate and restrained."
-  },
-  {
-    "id": "clt_059",
-    "exam": "CLT",
-    "section": "Quantitative Reasoning",
-    "skill": "linear_equations",
-    "difficulty": "medium",
-    "question": "If 4x + 8 = 24, what is the value of x?",
-    "options": [
-      {
-        "label": "A",
-        "text": "3"
-      },
-      {
-        "label": "B",
-        "text": "6"
-      },
-      {
-        "label": "C",
-        "text": "4"
-      },
-      {
-        "label": "D",
-        "text": "8"
-      }
-    ],
-    "correctAnswer": "C",
-    "explanation": "Subtract 8 from both sides to get 4x = 16, then divide by 4."
-  },
-  {
-    "id": "clt_060",
-    "exam": "CLT",
-    "section": "Grammar/Writing",
-    "skill": "transitions",
-    "difficulty": "hard",
-    "question": "A sentence reads: 'The committee appreciated the speaker's clarity, ______ they disagreed with several conclusions.' Which transition best completes the sentence?",
-    "options": [
-      {
-        "label": "A",
-        "text": "therefore"
-      },
-      {
-        "label": "B",
-        "text": "for example"
-      },
-      {
-        "label": "C",
-        "text": "meanwhile"
-      },
-      {
-        "label": "D",
-        "text": "although"
-      }
-    ],
-    "correctAnswer": "D",
-    "explanation": "The sentence shows contrast between appreciation and disagreement."
-  },
-  {
-    "id": "clt_061",
-    "exam": "CLT",
-    "section": "Verbal Reasoning",
-    "skill": "main_idea",
-    "difficulty": "easy",
-    "question": "A short passage states that habits shape character through repeated action. Which choice best reflects the passage's central claim?",
-    "options": [
-      {
-        "label": "A",
-        "text": "Repeated choices gradually form a person's character."
-      },
-      {
-        "label": "B",
-        "text": "Character is fixed and unaffected by habit."
-      },
-      {
-        "label": "C",
-        "text": "Only public actions influence character."
-      },
-      {
-        "label": "D",
-        "text": "Habits matter only in childhood."
-      }
-    ],
-    "correctAnswer": "A",
-    "explanation": "The passage connects repeated action to character formation."
-  },
-  {
-    "id": "clt_062",
-    "exam": "CLT",
-    "section": "Grammar/Writing",
-    "skill": "vocab_in_context",
-    "difficulty": "medium",
-    "question": "Which word most nearly means 'temperate' as used to describe a careful and restrained speaker?",
-    "options": [
-      {
-        "label": "A",
-        "text": "angry"
-      },
-      {
-        "label": "B",
-        "text": "moderate"
-      },
-      {
-        "label": "C",
-        "text": "musical"
-      },
-      {
-        "label": "D",
-        "text": "uncertain"
-      }
-    ],
-    "correctAnswer": "B",
-    "explanation": "In this context, temperate means moderate and restrained."
-  },
-  {
-    "id": "clt_063",
-    "exam": "CLT",
-    "section": "Quantitative Reasoning",
-    "skill": "linear_equations",
-    "difficulty": "hard",
-    "question": "If 4x + 8 = 24, what is the value of x?",
-    "options": [
-      {
-        "label": "A",
-        "text": "3"
-      },
-      {
-        "label": "B",
-        "text": "6"
-      },
-      {
-        "label": "C",
-        "text": "4"
-      },
-      {
-        "label": "D",
-        "text": "8"
-      }
-    ],
-    "correctAnswer": "C",
-    "explanation": "Subtract 8 from both sides to get 4x = 16, then divide by 4."
-  },
-  {
-    "id": "clt_064",
-    "exam": "CLT",
-    "section": "Grammar/Writing",
-    "skill": "transitions",
-    "difficulty": "easy",
-    "question": "A sentence reads: 'The committee appreciated the speaker's clarity, ______ they disagreed with several conclusions.' Which transition best completes the sentence?",
-    "options": [
-      {
-        "label": "A",
-        "text": "therefore"
-      },
-      {
-        "label": "B",
-        "text": "for example"
-      },
-      {
-        "label": "C",
-        "text": "meanwhile"
-      },
-      {
-        "label": "D",
-        "text": "although"
-      }
-    ],
-    "correctAnswer": "D",
-    "explanation": "The sentence shows contrast between appreciation and disagreement."
-  },
-  {
-    "id": "clt_065",
-    "exam": "CLT",
-    "section": "Verbal Reasoning",
-    "skill": "main_idea",
-    "difficulty": "medium",
-    "question": "A short passage states that habits shape character through repeated action. Which choice best reflects the passage's central claim?",
-    "options": [
-      {
-        "label": "A",
-        "text": "Repeated choices gradually form a person's character."
-      },
-      {
-        "label": "B",
-        "text": "Character is fixed and unaffected by habit."
-      },
-      {
-        "label": "C",
-        "text": "Only public actions influence character."
-      },
-      {
-        "label": "D",
-        "text": "Habits matter only in childhood."
-      }
-    ],
-    "correctAnswer": "A",
-    "explanation": "The passage connects repeated action to character formation."
-  },
-  {
-    "id": "clt_066",
-    "exam": "CLT",
-    "section": "Grammar/Writing",
-    "skill": "vocab_in_context",
-    "difficulty": "hard",
-    "question": "Which word most nearly means 'temperate' as used to describe a careful and restrained speaker?",
-    "options": [
-      {
-        "label": "A",
-        "text": "angry"
-      },
-      {
-        "label": "B",
-        "text": "moderate"
-      },
-      {
-        "label": "C",
-        "text": "musical"
-      },
-      {
-        "label": "D",
-        "text": "uncertain"
-      }
-    ],
-    "correctAnswer": "B",
-    "explanation": "In this context, temperate means moderate and restrained."
-  },
-  {
-    "id": "clt_067",
-    "exam": "CLT",
-    "section": "Quantitative Reasoning",
-    "skill": "linear_equations",
-    "difficulty": "easy",
-    "question": "If 4x + 8 = 24, what is the value of x?",
-    "options": [
-      {
-        "label": "A",
-        "text": "3"
-      },
-      {
-        "label": "B",
-        "text": "6"
-      },
-      {
-        "label": "C",
-        "text": "4"
-      },
-      {
-        "label": "D",
-        "text": "8"
-      }
-    ],
-    "correctAnswer": "C",
-    "explanation": "Subtract 8 from both sides to get 4x = 16, then divide by 4."
-  },
-  {
-    "id": "clt_068",
-    "exam": "CLT",
-    "section": "Grammar/Writing",
-    "skill": "transitions",
-    "difficulty": "medium",
-    "question": "A sentence reads: 'The committee appreciated the speaker's clarity, ______ they disagreed with several conclusions.' Which transition best completes the sentence?",
-    "options": [
-      {
-        "label": "A",
-        "text": "therefore"
-      },
-      {
-        "label": "B",
-        "text": "for example"
-      },
-      {
-        "label": "C",
-        "text": "meanwhile"
-      },
-      {
-        "label": "D",
-        "text": "although"
-      }
-    ],
-    "correctAnswer": "D",
-    "explanation": "The sentence shows contrast between appreciation and disagreement."
-  },
-  {
-    "id": "clt_069",
-    "exam": "CLT",
-    "section": "Verbal Reasoning",
-    "skill": "main_idea",
-    "difficulty": "hard",
-    "question": "A short passage states that habits shape character through repeated action. Which choice best reflects the passage's central claim?",
-    "options": [
-      {
-        "label": "A",
-        "text": "Repeated choices gradually form a person's character."
-      },
-      {
-        "label": "B",
-        "text": "Character is fixed and unaffected by habit."
-      },
-      {
-        "label": "C",
-        "text": "Only public actions influence character."
-      },
-      {
-        "label": "D",
-        "text": "Habits matter only in childhood."
-      }
-    ],
-    "correctAnswer": "A",
-    "explanation": "The passage connects repeated action to character formation."
-  },
-  {
-    "id": "clt_070",
-    "exam": "CLT",
-    "section": "Grammar/Writing",
-    "skill": "vocab_in_context",
-    "difficulty": "easy",
-    "question": "Which word most nearly means 'temperate' as used to describe a careful and restrained speaker?",
-    "options": [
-      {
-        "label": "A",
-        "text": "angry"
-      },
-      {
-        "label": "B",
-        "text": "moderate"
-      },
-      {
-        "label": "C",
-        "text": "musical"
-      },
-      {
-        "label": "D",
-        "text": "uncertain"
-      }
-    ],
-    "correctAnswer": "B",
-    "explanation": "In this context, temperate means moderate and restrained."
-  },
-  {
-    "id": "clt_071",
-    "exam": "CLT",
-    "section": "Quantitative Reasoning",
-    "skill": "linear_equations",
-    "difficulty": "medium",
-    "question": "If 4x + 8 = 24, what is the value of x?",
-    "options": [
-      {
-        "label": "A",
-        "text": "3"
-      },
-      {
-        "label": "B",
-        "text": "6"
-      },
-      {
-        "label": "C",
-        "text": "4"
-      },
-      {
-        "label": "D",
-        "text": "8"
-      }
-    ],
-    "correctAnswer": "C",
-    "explanation": "Subtract 8 from both sides to get 4x = 16, then divide by 4."
-  },
-  {
-    "id": "clt_072",
-    "exam": "CLT",
-    "section": "Grammar/Writing",
-    "skill": "transitions",
-    "difficulty": "hard",
-    "question": "A sentence reads: 'The committee appreciated the speaker's clarity, ______ they disagreed with several conclusions.' Which transition best completes the sentence?",
-    "options": [
-      {
-        "label": "A",
-        "text": "therefore"
-      },
-      {
-        "label": "B",
-        "text": "for example"
-      },
-      {
-        "label": "C",
-        "text": "meanwhile"
-      },
-      {
-        "label": "D",
-        "text": "although"
-      }
-    ],
-    "correctAnswer": "D",
-    "explanation": "The sentence shows contrast between appreciation and disagreement."
-  },
-  {
-    "id": "clt_073",
-    "exam": "CLT",
-    "section": "Verbal Reasoning",
-    "skill": "main_idea",
-    "difficulty": "easy",
-    "question": "A short passage states that habits shape character through repeated action. Which choice best reflects the passage's central claim?",
-    "options": [
-      {
-        "label": "A",
-        "text": "Repeated choices gradually form a person's character."
-      },
-      {
-        "label": "B",
-        "text": "Character is fixed and unaffected by habit."
-      },
-      {
-        "label": "C",
-        "text": "Only public actions influence character."
-      },
-      {
-        "label": "D",
-        "text": "Habits matter only in childhood."
-      }
-    ],
-    "correctAnswer": "A",
-    "explanation": "The passage connects repeated action to character formation."
-  },
-  {
-    "id": "clt_074",
-    "exam": "CLT",
-    "section": "Grammar/Writing",
-    "skill": "vocab_in_context",
-    "difficulty": "medium",
-    "question": "Which word most nearly means 'temperate' as used to describe a careful and restrained speaker?",
-    "options": [
-      {
-        "label": "A",
-        "text": "angry"
-      },
-      {
-        "label": "B",
-        "text": "moderate"
-      },
-      {
-        "label": "C",
-        "text": "musical"
-      },
-      {
-        "label": "D",
-        "text": "uncertain"
-      }
-    ],
-    "correctAnswer": "B",
-    "explanation": "In this context, temperate means moderate and restrained."
-  },
-  {
-    "id": "clt_075",
-    "exam": "CLT",
-    "section": "Quantitative Reasoning",
-    "skill": "linear_equations",
-    "difficulty": "hard",
-    "question": "If 4x + 8 = 24, what is the value of x?",
-    "options": [
-      {
-        "label": "A",
-        "text": "3"
-      },
-      {
-        "label": "B",
-        "text": "6"
-      },
-      {
-        "label": "C",
-        "text": "4"
-      },
-      {
-        "label": "D",
-        "text": "8"
-      }
-    ],
-    "correctAnswer": "C",
-    "explanation": "Subtract 8 from both sides to get 4x = 16, then divide by 4."
-  },
-  {
-    "id": "clt_076",
-    "exam": "CLT",
-    "section": "Grammar/Writing",
-    "skill": "transitions",
-    "difficulty": "easy",
-    "question": "A sentence reads: 'The committee appreciated the speaker's clarity, ______ they disagreed with several conclusions.' Which transition best completes the sentence?",
-    "options": [
-      {
-        "label": "A",
-        "text": "therefore"
-      },
-      {
-        "label": "B",
-        "text": "for example"
-      },
-      {
-        "label": "C",
-        "text": "meanwhile"
-      },
-      {
-        "label": "D",
-        "text": "although"
-      }
-    ],
-    "correctAnswer": "D",
-    "explanation": "The sentence shows contrast between appreciation and disagreement."
-  },
-  {
-    "id": "clt_077",
-    "exam": "CLT",
-    "section": "Verbal Reasoning",
-    "skill": "main_idea",
-    "difficulty": "medium",
-    "question": "A short passage states that habits shape character through repeated action. Which choice best reflects the passage's central claim?",
-    "options": [
-      {
-        "label": "A",
-        "text": "Repeated choices gradually form a person's character."
-      },
-      {
-        "label": "B",
-        "text": "Character is fixed and unaffected by habit."
-      },
-      {
-        "label": "C",
-        "text": "Only public actions influence character."
-      },
-      {
-        "label": "D",
-        "text": "Habits matter only in childhood."
-      }
-    ],
-    "correctAnswer": "A",
-    "explanation": "The passage connects repeated action to character formation."
-  },
-  {
-    "id": "clt_078",
-    "exam": "CLT",
-    "section": "Grammar/Writing",
-    "skill": "vocab_in_context",
-    "difficulty": "hard",
-    "question": "Which word most nearly means 'temperate' as used to describe a careful and restrained speaker?",
-    "options": [
-      {
-        "label": "A",
-        "text": "angry"
-      },
-      {
-        "label": "B",
-        "text": "moderate"
-      },
-      {
-        "label": "C",
-        "text": "musical"
-      },
-      {
-        "label": "D",
-        "text": "uncertain"
-      }
-    ],
-    "correctAnswer": "B",
-    "explanation": "In this context, temperate means moderate and restrained."
-  },
-  {
-    "id": "clt_079",
-    "exam": "CLT",
-    "section": "Quantitative Reasoning",
-    "skill": "linear_equations",
-    "difficulty": "easy",
-    "question": "If 4x + 8 = 24, what is the value of x?",
-    "options": [
-      {
-        "label": "A",
-        "text": "3"
-      },
-      {
-        "label": "B",
-        "text": "6"
-      },
-      {
-        "label": "C",
-        "text": "4"
-      },
-      {
-        "label": "D",
-        "text": "8"
-      }
-    ],
-    "correctAnswer": "C",
-    "explanation": "Subtract 8 from both sides to get 4x = 16, then divide by 4."
-  },
-  {
-    "id": "clt_080",
-    "exam": "CLT",
-    "section": "Grammar/Writing",
-    "skill": "transitions",
-    "difficulty": "medium",
-    "question": "A sentence reads: 'The committee appreciated the speaker's clarity, ______ they disagreed with several conclusions.' Which transition best completes the sentence?",
-    "options": [
-      {
-        "label": "A",
-        "text": "therefore"
-      },
-      {
-        "label": "B",
-        "text": "for example"
-      },
-      {
-        "label": "C",
-        "text": "meanwhile"
-      },
-      {
-        "label": "D",
-        "text": "although"
-      }
-    ],
-    "correctAnswer": "D",
-    "explanation": "The sentence shows contrast between appreciation and disagreement."
-  },
-  {
-    "id": "clt_081",
-    "exam": "CLT",
-    "section": "Verbal Reasoning",
-    "skill": "main_idea",
-    "difficulty": "hard",
-    "question": "A short passage states that habits shape character through repeated action. Which choice best reflects the passage's central claim?",
-    "options": [
-      {
-        "label": "A",
-        "text": "Repeated choices gradually form a person's character."
-      },
-      {
-        "label": "B",
-        "text": "Character is fixed and unaffected by habit."
-      },
-      {
-        "label": "C",
-        "text": "Only public actions influence character."
-      },
-      {
-        "label": "D",
-        "text": "Habits matter only in childhood."
-      }
-    ],
-    "correctAnswer": "A",
-    "explanation": "The passage connects repeated action to character formation."
-  },
-  {
-    "id": "clt_082",
-    "exam": "CLT",
-    "section": "Grammar/Writing",
-    "skill": "vocab_in_context",
-    "difficulty": "easy",
-    "question": "Which word most nearly means 'temperate' as used to describe a careful and restrained speaker?",
-    "options": [
-      {
-        "label": "A",
-        "text": "angry"
-      },
-      {
-        "label": "B",
-        "text": "moderate"
-      },
-      {
-        "label": "C",
-        "text": "musical"
-      },
-      {
-        "label": "D",
-        "text": "uncertain"
-      }
-    ],
-    "correctAnswer": "B",
-    "explanation": "In this context, temperate means moderate and restrained."
-  },
-  {
-    "id": "clt_083",
-    "exam": "CLT",
-    "section": "Quantitative Reasoning",
-    "skill": "linear_equations",
-    "difficulty": "medium",
-    "question": "If 4x + 8 = 24, what is the value of x?",
-    "options": [
-      {
-        "label": "A",
-        "text": "3"
-      },
-      {
-        "label": "B",
-        "text": "6"
-      },
-      {
-        "label": "C",
-        "text": "4"
-      },
-      {
-        "label": "D",
-        "text": "8"
-      }
-    ],
-    "correctAnswer": "C",
-    "explanation": "Subtract 8 from both sides to get 4x = 16, then divide by 4."
-  },
-  {
-    "id": "clt_084",
-    "exam": "CLT",
-    "section": "Grammar/Writing",
-    "skill": "transitions",
-    "difficulty": "hard",
-    "question": "A sentence reads: 'The committee appreciated the speaker's clarity, ______ they disagreed with several conclusions.' Which transition best completes the sentence?",
-    "options": [
-      {
-        "label": "A",
-        "text": "therefore"
-      },
-      {
-        "label": "B",
-        "text": "for example"
-      },
-      {
-        "label": "C",
-        "text": "meanwhile"
-      },
-      {
-        "label": "D",
-        "text": "although"
-      }
-    ],
-    "correctAnswer": "D",
-    "explanation": "The sentence shows contrast between appreciation and disagreement."
-  },
-  {
-    "id": "clt_085",
-    "exam": "CLT",
-    "section": "Verbal Reasoning",
-    "skill": "main_idea",
-    "difficulty": "easy",
-    "question": "A short passage states that habits shape character through repeated action. Which choice best reflects the passage's central claim?",
-    "options": [
-      {
-        "label": "A",
-        "text": "Repeated choices gradually form a person's character."
-      },
-      {
-        "label": "B",
-        "text": "Character is fixed and unaffected by habit."
-      },
-      {
-        "label": "C",
-        "text": "Only public actions influence character."
-      },
-      {
-        "label": "D",
-        "text": "Habits matter only in childhood."
-      }
-    ],
-    "correctAnswer": "A",
-    "explanation": "The passage connects repeated action to character formation."
-  },
-  {
-    "id": "clt_086",
-    "exam": "CLT",
-    "section": "Grammar/Writing",
-    "skill": "vocab_in_context",
-    "difficulty": "medium",
-    "question": "Which word most nearly means 'temperate' as used to describe a careful and restrained speaker?",
-    "options": [
-      {
-        "label": "A",
-        "text": "angry"
-      },
-      {
-        "label": "B",
-        "text": "moderate"
-      },
-      {
-        "label": "C",
-        "text": "musical"
-      },
-      {
-        "label": "D",
-        "text": "uncertain"
-      }
-    ],
-    "correctAnswer": "B",
-    "explanation": "In this context, temperate means moderate and restrained."
-  },
-  {
-    "id": "clt_087",
-    "exam": "CLT",
-    "section": "Quantitative Reasoning",
-    "skill": "linear_equations",
-    "difficulty": "hard",
-    "question": "If 4x + 8 = 24, what is the value of x?",
-    "options": [
-      {
-        "label": "A",
-        "text": "3"
-      },
-      {
-        "label": "B",
-        "text": "6"
-      },
-      {
-        "label": "C",
-        "text": "4"
-      },
-      {
-        "label": "D",
-        "text": "8"
-      }
-    ],
-    "correctAnswer": "C",
-    "explanation": "Subtract 8 from both sides to get 4x = 16, then divide by 4."
-  },
-  {
-    "id": "clt_088",
-    "exam": "CLT",
-    "section": "Grammar/Writing",
-    "skill": "transitions",
-    "difficulty": "easy",
-    "question": "A sentence reads: 'The committee appreciated the speaker's clarity, ______ they disagreed with several conclusions.' Which transition best completes the sentence?",
-    "options": [
-      {
-        "label": "A",
-        "text": "therefore"
-      },
-      {
-        "label": "B",
-        "text": "for example"
-      },
-      {
-        "label": "C",
-        "text": "meanwhile"
-      },
-      {
-        "label": "D",
-        "text": "although"
-      }
-    ],
-    "correctAnswer": "D",
-    "explanation": "The sentence shows contrast between appreciation and disagreement."
-  },
-  {
-    "id": "clt_089",
-    "exam": "CLT",
-    "section": "Verbal Reasoning",
-    "skill": "main_idea",
-    "difficulty": "medium",
-    "question": "A short passage states that habits shape character through repeated action. Which choice best reflects the passage's central claim?",
-    "options": [
-      {
-        "label": "A",
-        "text": "Repeated choices gradually form a person's character."
-      },
-      {
-        "label": "B",
-        "text": "Character is fixed and unaffected by habit."
-      },
-      {
-        "label": "C",
-        "text": "Only public actions influence character."
-      },
-      {
-        "label": "D",
-        "text": "Habits matter only in childhood."
-      }
-    ],
-    "correctAnswer": "A",
-    "explanation": "The passage connects repeated action to character formation."
-  },
-  {
-    "id": "clt_090",
-    "exam": "CLT",
-    "section": "Grammar/Writing",
-    "skill": "vocab_in_context",
-    "difficulty": "hard",
-    "question": "Which word most nearly means 'temperate' as used to describe a careful and restrained speaker?",
-    "options": [
-      {
-        "label": "A",
-        "text": "angry"
-      },
-      {
-        "label": "B",
-        "text": "moderate"
-      },
-      {
-        "label": "C",
-        "text": "musical"
-      },
-      {
-        "label": "D",
-        "text": "uncertain"
-      }
-    ],
-    "correctAnswer": "B",
-    "explanation": "In this context, temperate means moderate and restrained."
-  },
-  {
-    "id": "clt_091",
-    "exam": "CLT",
-    "section": "Quantitative Reasoning",
-    "skill": "linear_equations",
-    "difficulty": "easy",
-    "question": "If 4x + 8 = 24, what is the value of x?",
-    "options": [
-      {
-        "label": "A",
-        "text": "3"
-      },
-      {
-        "label": "B",
-        "text": "6"
-      },
-      {
-        "label": "C",
-        "text": "4"
-      },
-      {
-        "label": "D",
-        "text": "8"
-      }
-    ],
-    "correctAnswer": "C",
-    "explanation": "Subtract 8 from both sides to get 4x = 16, then divide by 4."
-  },
-  {
-    "id": "clt_092",
-    "exam": "CLT",
-    "section": "Grammar/Writing",
-    "skill": "transitions",
-    "difficulty": "medium",
-    "question": "A sentence reads: 'The committee appreciated the speaker's clarity, ______ they disagreed with several conclusions.' Which transition best completes the sentence?",
-    "options": [
-      {
-        "label": "A",
-        "text": "therefore"
-      },
-      {
-        "label": "B",
-        "text": "for example"
-      },
-      {
-        "label": "C",
-        "text": "meanwhile"
-      },
-      {
-        "label": "D",
-        "text": "although"
-      }
-    ],
-    "correctAnswer": "D",
-    "explanation": "The sentence shows contrast between appreciation and disagreement."
-  },
-  {
-    "id": "clt_093",
-    "exam": "CLT",
-    "section": "Verbal Reasoning",
-    "skill": "main_idea",
-    "difficulty": "hard",
-    "question": "A short passage states that habits shape character through repeated action. Which choice best reflects the passage's central claim?",
-    "options": [
-      {
-        "label": "A",
-        "text": "Repeated choices gradually form a person's character."
-      },
-      {
-        "label": "B",
-        "text": "Character is fixed and unaffected by habit."
-      },
-      {
-        "label": "C",
-        "text": "Only public actions influence character."
-      },
-      {
-        "label": "D",
-        "text": "Habits matter only in childhood."
-      }
-    ],
-    "correctAnswer": "A",
-    "explanation": "The passage connects repeated action to character formation."
-  },
-  {
-    "id": "clt_094",
-    "exam": "CLT",
-    "section": "Grammar/Writing",
-    "skill": "vocab_in_context",
-    "difficulty": "easy",
-    "question": "Which word most nearly means 'temperate' as used to describe a careful and restrained speaker?",
-    "options": [
-      {
-        "label": "A",
-        "text": "angry"
-      },
-      {
-        "label": "B",
-        "text": "moderate"
-      },
-      {
-        "label": "C",
-        "text": "musical"
-      },
-      {
-        "label": "D",
-        "text": "uncertain"
-      }
-    ],
-    "correctAnswer": "B",
-    "explanation": "In this context, temperate means moderate and restrained."
-  },
-  {
-    "id": "clt_095",
-    "exam": "CLT",
-    "section": "Quantitative Reasoning",
-    "skill": "linear_equations",
-    "difficulty": "medium",
-    "question": "If 4x + 8 = 24, what is the value of x?",
-    "options": [
-      {
-        "label": "A",
-        "text": "3"
-      },
-      {
-        "label": "B",
-        "text": "6"
-      },
-      {
-        "label": "C",
-        "text": "4"
-      },
-      {
-        "label": "D",
-        "text": "8"
-      }
-    ],
-    "correctAnswer": "C",
-    "explanation": "Subtract 8 from both sides to get 4x = 16, then divide by 4."
-  },
-  {
-    "id": "clt_096",
-    "exam": "CLT",
-    "section": "Grammar/Writing",
-    "skill": "transitions",
-    "difficulty": "hard",
-    "question": "A sentence reads: 'The committee appreciated the speaker's clarity, ______ they disagreed with several conclusions.' Which transition best completes the sentence?",
-    "options": [
-      {
-        "label": "A",
-        "text": "therefore"
-      },
-      {
-        "label": "B",
-        "text": "for example"
-      },
-      {
-        "label": "C",
-        "text": "meanwhile"
-      },
-      {
-        "label": "D",
-        "text": "although"
-      }
-    ],
-    "correctAnswer": "D",
-    "explanation": "The sentence shows contrast between appreciation and disagreement."
-  },
-  {
-    "id": "clt_097",
-    "exam": "CLT",
-    "section": "Verbal Reasoning",
-    "skill": "main_idea",
-    "difficulty": "easy",
-    "question": "A short passage states that habits shape character through repeated action. Which choice best reflects the passage's central claim?",
-    "options": [
-      {
-        "label": "A",
-        "text": "Repeated choices gradually form a person's character."
-      },
-      {
-        "label": "B",
-        "text": "Character is fixed and unaffected by habit."
-      },
-      {
-        "label": "C",
-        "text": "Only public actions influence character."
-      },
-      {
-        "label": "D",
-        "text": "Habits matter only in childhood."
-      }
-    ],
-    "correctAnswer": "A",
-    "explanation": "The passage connects repeated action to character formation."
-  },
-  {
-    "id": "clt_098",
-    "exam": "CLT",
-    "section": "Grammar/Writing",
-    "skill": "vocab_in_context",
-    "difficulty": "medium",
-    "question": "Which word most nearly means 'temperate' as used to describe a careful and restrained speaker?",
-    "options": [
-      {
-        "label": "A",
-        "text": "angry"
-      },
-      {
-        "label": "B",
-        "text": "moderate"
-      },
-      {
-        "label": "C",
-        "text": "musical"
-      },
-      {
-        "label": "D",
-        "text": "uncertain"
-      }
-    ],
-    "correctAnswer": "B",
-    "explanation": "In this context, temperate means moderate and restrained."
-  },
-  {
-    "id": "clt_099",
-    "exam": "CLT",
-    "section": "Quantitative Reasoning",
-    "skill": "linear_equations",
-    "difficulty": "hard",
-    "question": "If 4x + 8 = 24, what is the value of x?",
-    "options": [
-      {
-        "label": "A",
-        "text": "3"
-      },
-      {
-        "label": "B",
-        "text": "6"
-      },
-      {
-        "label": "C",
-        "text": "4"
-      },
-      {
-        "label": "D",
-        "text": "8"
-      }
-    ],
-    "correctAnswer": "C",
-    "explanation": "Subtract 8 from both sides to get 4x = 16, then divide by 4."
-  },
-  {
-    "id": "clt_100",
-    "exam": "CLT",
-    "section": "Grammar/Writing",
-    "skill": "transitions",
-    "difficulty": "easy",
-    "question": "A sentence reads: 'The committee appreciated the speaker's clarity, ______ they disagreed with several conclusions.' Which transition best completes the sentence?",
-    "options": [
-      {
-        "label": "A",
-        "text": "therefore"
-      },
-      {
-        "label": "B",
-        "text": "for example"
-      },
-      {
-        "label": "C",
-        "text": "meanwhile"
-      },
-      {
-        "label": "D",
-        "text": "although"
-      }
-    ],
-    "correctAnswer": "D",
-    "explanation": "The sentence shows contrast between appreciation and disagreement."
-  },
-  {
-    "id": "clt_101",
-    "exam": "CLT",
-    "section": "Verbal Reasoning",
-    "skill": "main_idea",
-    "difficulty": "medium",
-    "question": "A short passage states that habits shape character through repeated action. Which choice best reflects the passage's central claim?",
-    "options": [
-      {
-        "label": "A",
-        "text": "Repeated choices gradually form a person's character."
-      },
-      {
-        "label": "B",
-        "text": "Character is fixed and unaffected by habit."
-      },
-      {
-        "label": "C",
-        "text": "Only public actions influence character."
-      },
-      {
-        "label": "D",
-        "text": "Habits matter only in childhood."
-      }
-    ],
-    "correctAnswer": "A",
-    "explanation": "The passage connects repeated action to character formation."
-  },
-  {
-    "id": "clt_102",
-    "exam": "CLT",
-    "section": "Grammar/Writing",
-    "skill": "vocab_in_context",
-    "difficulty": "hard",
-    "question": "Which word most nearly means 'temperate' as used to describe a careful and restrained speaker?",
-    "options": [
-      {
-        "label": "A",
-        "text": "angry"
-      },
-      {
-        "label": "B",
-        "text": "moderate"
-      },
-      {
-        "label": "C",
-        "text": "musical"
-      },
-      {
-        "label": "D",
-        "text": "uncertain"
-      }
-    ],
-    "correctAnswer": "B",
-    "explanation": "In this context, temperate means moderate and restrained."
-  },
-  {
-    "id": "clt_103",
-    "exam": "CLT",
-    "section": "Quantitative Reasoning",
-    "skill": "linear_equations",
-    "difficulty": "easy",
-    "question": "If 4x + 8 = 24, what is the value of x?",
-    "options": [
-      {
-        "label": "A",
-        "text": "3"
-      },
-      {
-        "label": "B",
-        "text": "6"
-      },
-      {
-        "label": "C",
-        "text": "4"
-      },
-      {
-        "label": "D",
-        "text": "8"
-      }
-    ],
-    "correctAnswer": "C",
-    "explanation": "Subtract 8 from both sides to get 4x = 16, then divide by 4."
-  },
-  {
-    "id": "clt_104",
-    "exam": "CLT",
-    "section": "Grammar/Writing",
-    "skill": "transitions",
-    "difficulty": "medium",
-    "question": "A sentence reads: 'The committee appreciated the speaker's clarity, ______ they disagreed with several conclusions.' Which transition best completes the sentence?",
-    "options": [
-      {
-        "label": "A",
-        "text": "therefore"
-      },
-      {
-        "label": "B",
-        "text": "for example"
-      },
-      {
-        "label": "C",
-        "text": "meanwhile"
-      },
-      {
-        "label": "D",
-        "text": "although"
-      }
-    ],
-    "correctAnswer": "D",
-    "explanation": "The sentence shows contrast between appreciation and disagreement."
-  },
-  {
-    "id": "clt_105",
-    "exam": "CLT",
-    "section": "Verbal Reasoning",
-    "skill": "main_idea",
-    "difficulty": "hard",
-    "question": "A short passage states that habits shape character through repeated action. Which choice best reflects the passage's central claim?",
-    "options": [
-      {
-        "label": "A",
-        "text": "Repeated choices gradually form a person's character."
-      },
-      {
-        "label": "B",
-        "text": "Character is fixed and unaffected by habit."
-      },
-      {
-        "label": "C",
-        "text": "Only public actions influence character."
-      },
-      {
-        "label": "D",
-        "text": "Habits matter only in childhood."
-      }
-    ],
-    "correctAnswer": "A",
-    "explanation": "The passage connects repeated action to character formation."
-  },
-  {
-    "id": "clt_106",
-    "exam": "CLT",
-    "section": "Grammar/Writing",
-    "skill": "vocab_in_context",
-    "difficulty": "easy",
-    "question": "Which word most nearly means 'temperate' as used to describe a careful and restrained speaker?",
-    "options": [
-      {
-        "label": "A",
-        "text": "angry"
-      },
-      {
-        "label": "B",
-        "text": "moderate"
-      },
-      {
-        "label": "C",
-        "text": "musical"
-      },
-      {
-        "label": "D",
-        "text": "uncertain"
-      }
-    ],
-    "correctAnswer": "B",
-    "explanation": "In this context, temperate means moderate and restrained."
-  },
-  {
-    "id": "clt_107",
-    "exam": "CLT",
-    "section": "Quantitative Reasoning",
-    "skill": "linear_equations",
-    "difficulty": "medium",
-    "question": "If 4x + 8 = 24, what is the value of x?",
-    "options": [
-      {
-        "label": "A",
-        "text": "3"
-      },
-      {
-        "label": "B",
-        "text": "6"
-      },
-      {
-        "label": "C",
-        "text": "4"
-      },
-      {
-        "label": "D",
-        "text": "8"
-      }
-    ],
-    "correctAnswer": "C",
-    "explanation": "Subtract 8 from both sides to get 4x = 16, then divide by 4."
-  },
-  {
-    "id": "clt_108",
-    "exam": "CLT",
-    "section": "Grammar/Writing",
-    "skill": "transitions",
-    "difficulty": "hard",
-    "question": "A sentence reads: 'The committee appreciated the speaker's clarity, ______ they disagreed with several conclusions.' Which transition best completes the sentence?",
-    "options": [
-      {
-        "label": "A",
-        "text": "therefore"
-      },
-      {
-        "label": "B",
-        "text": "for example"
-      },
-      {
-        "label": "C",
-        "text": "meanwhile"
-      },
-      {
-        "label": "D",
-        "text": "although"
-      }
-    ],
-    "correctAnswer": "D",
-    "explanation": "The sentence shows contrast between appreciation and disagreement."
-  },
-  {
-    "id": "clt_109",
-    "exam": "CLT",
-    "section": "Verbal Reasoning",
-    "skill": "main_idea",
-    "difficulty": "easy",
-    "question": "A short passage states that habits shape character through repeated action. Which choice best reflects the passage's central claim?",
-    "options": [
-      {
-        "label": "A",
-        "text": "Repeated choices gradually form a person's character."
-      },
-      {
-        "label": "B",
-        "text": "Character is fixed and unaffected by habit."
-      },
-      {
-        "label": "C",
-        "text": "Only public actions influence character."
-      },
-      {
-        "label": "D",
-        "text": "Habits matter only in childhood."
-      }
-    ],
-    "correctAnswer": "A",
-    "explanation": "The passage connects repeated action to character formation."
-  },
-  {
-    "id": "clt_110",
-    "exam": "CLT",
-    "section": "Grammar/Writing",
-    "skill": "vocab_in_context",
-    "difficulty": "medium",
-    "question": "Which word most nearly means 'temperate' as used to describe a careful and restrained speaker?",
-    "options": [
-      {
-        "label": "A",
-        "text": "angry"
-      },
-      {
-        "label": "B",
-        "text": "moderate"
-      },
-      {
-        "label": "C",
-        "text": "musical"
-      },
-      {
-        "label": "D",
-        "text": "uncertain"
-      }
-    ],
-    "correctAnswer": "B",
-    "explanation": "In this context, temperate means moderate and restrained."
-  },
-  {
-    "id": "clt_111",
-    "exam": "CLT",
-    "section": "Quantitative Reasoning",
-    "skill": "linear_equations",
-    "difficulty": "hard",
-    "question": "If 4x + 8 = 24, what is the value of x?",
-    "options": [
-      {
-        "label": "A",
-        "text": "3"
-      },
-      {
-        "label": "B",
-        "text": "6"
-      },
-      {
-        "label": "C",
-        "text": "4"
-      },
-      {
-        "label": "D",
-        "text": "8"
-      }
-    ],
-    "correctAnswer": "C",
-    "explanation": "Subtract 8 from both sides to get 4x = 16, then divide by 4."
-  },
-  {
-    "id": "clt_112",
-    "exam": "CLT",
-    "section": "Grammar/Writing",
-    "skill": "transitions",
-    "difficulty": "easy",
-    "question": "A sentence reads: 'The committee appreciated the speaker's clarity, ______ they disagreed with several conclusions.' Which transition best completes the sentence?",
-    "options": [
-      {
-        "label": "A",
-        "text": "therefore"
-      },
-      {
-        "label": "B",
-        "text": "for example"
-      },
-      {
-        "label": "C",
-        "text": "meanwhile"
-      },
-      {
-        "label": "D",
-        "text": "although"
-      }
-    ],
-    "correctAnswer": "D",
-    "explanation": "The sentence shows contrast between appreciation and disagreement."
-  },
-  {
-    "id": "clt_113",
-    "exam": "CLT",
-    "section": "Verbal Reasoning",
-    "skill": "main_idea",
-    "difficulty": "medium",
-    "question": "A short passage states that habits shape character through repeated action. Which choice best reflects the passage's central claim?",
-    "options": [
-      {
-        "label": "A",
-        "text": "Repeated choices gradually form a person's character."
-      },
-      {
-        "label": "B",
-        "text": "Character is fixed and unaffected by habit."
-      },
-      {
-        "label": "C",
-        "text": "Only public actions influence character."
-      },
-      {
-        "label": "D",
-        "text": "Habits matter only in childhood."
-      }
-    ],
-    "correctAnswer": "A",
-    "explanation": "The passage connects repeated action to character formation."
-  },
-  {
-    "id": "clt_114",
-    "exam": "CLT",
-    "section": "Grammar/Writing",
-    "skill": "vocab_in_context",
-    "difficulty": "hard",
-    "question": "Which word most nearly means 'temperate' as used to describe a careful and restrained speaker?",
-    "options": [
-      {
-        "label": "A",
-        "text": "angry"
-      },
-      {
-        "label": "B",
-        "text": "moderate"
-      },
-      {
-        "label": "C",
-        "text": "musical"
-      },
-      {
-        "label": "D",
-        "text": "uncertain"
-      }
-    ],
-    "correctAnswer": "B",
-    "explanation": "In this context, temperate means moderate and restrained."
-  },
-  {
-    "id": "clt_115",
-    "exam": "CLT",
-    "section": "Quantitative Reasoning",
-    "skill": "linear_equations",
-    "difficulty": "easy",
-    "question": "If 4x + 8 = 24, what is the value of x?",
-    "options": [
-      {
-        "label": "A",
-        "text": "3"
-      },
-      {
-        "label": "B",
-        "text": "6"
-      },
-      {
-        "label": "C",
-        "text": "4"
-      },
-      {
-        "label": "D",
-        "text": "8"
-      }
-    ],
-    "correctAnswer": "C",
-    "explanation": "Subtract 8 from both sides to get 4x = 16, then divide by 4."
-  },
-  {
-    "id": "clt_116",
-    "exam": "CLT",
-    "section": "Grammar/Writing",
-    "skill": "transitions",
-    "difficulty": "medium",
-    "question": "A sentence reads: 'The committee appreciated the speaker's clarity, ______ they disagreed with several conclusions.' Which transition best completes the sentence?",
-    "options": [
-      {
-        "label": "A",
-        "text": "therefore"
-      },
-      {
-        "label": "B",
-        "text": "for example"
-      },
-      {
-        "label": "C",
-        "text": "meanwhile"
-      },
-      {
-        "label": "D",
-        "text": "although"
-      }
-    ],
-    "correctAnswer": "D",
-    "explanation": "The sentence shows contrast between appreciation and disagreement."
-  },
-  {
-    "id": "clt_117",
-    "exam": "CLT",
-    "section": "Verbal Reasoning",
-    "skill": "main_idea",
-    "difficulty": "hard",
-    "question": "A short passage states that habits shape character through repeated action. Which choice best reflects the passage's central claim?",
-    "options": [
-      {
-        "label": "A",
-        "text": "Repeated choices gradually form a person's character."
-      },
-      {
-        "label": "B",
-        "text": "Character is fixed and unaffected by habit."
-      },
-      {
-        "label": "C",
-        "text": "Only public actions influence character."
-      },
-      {
-        "label": "D",
-        "text": "Habits matter only in childhood."
-      }
-    ],
-    "correctAnswer": "A",
-    "explanation": "The passage connects repeated action to character formation."
-  },
-  {
-    "id": "clt_118",
-    "exam": "CLT",
-    "section": "Grammar/Writing",
-    "skill": "vocab_in_context",
-    "difficulty": "easy",
-    "question": "Which word most nearly means 'temperate' as used to describe a careful and restrained speaker?",
-    "options": [
-      {
-        "label": "A",
-        "text": "angry"
-      },
-      {
-        "label": "B",
-        "text": "moderate"
-      },
-      {
-        "label": "C",
-        "text": "musical"
-      },
-      {
-        "label": "D",
-        "text": "uncertain"
-      }
-    ],
-    "correctAnswer": "B",
-    "explanation": "In this context, temperate means moderate and restrained."
-  },
-  {
-    "id": "clt_119",
-    "exam": "CLT",
-    "section": "Quantitative Reasoning",
-    "skill": "linear_equations",
-    "difficulty": "medium",
-    "question": "If 4x + 8 = 24, what is the value of x?",
-    "options": [
-      {
-        "label": "A",
-        "text": "3"
-      },
-      {
-        "label": "B",
-        "text": "6"
-      },
-      {
-        "label": "C",
-        "text": "4"
-      },
-      {
-        "label": "D",
-        "text": "8"
-      }
-    ],
-    "correctAnswer": "C",
-    "explanation": "Subtract 8 from both sides to get 4x = 16, then divide by 4."
-  },
-  {
-    "id": "clt_120",
-    "exam": "CLT",
-    "section": "Grammar/Writing",
-    "skill": "transitions",
-    "difficulty": "hard",
-    "question": "A sentence reads: 'The committee appreciated the speaker's clarity, ______ they disagreed with several conclusions.' Which transition best completes the sentence?",
-    "options": [
-      {
-        "label": "A",
-        "text": "therefore"
-      },
-      {
-        "label": "B",
-        "text": "for example"
-      },
-      {
-        "label": "C",
-        "text": "meanwhile"
-      },
-      {
-        "label": "D",
-        "text": "although"
-      }
-    ],
-    "correctAnswer": "D",
-    "explanation": "The sentence shows contrast between appreciation and disagreement."
-  },
-  {
-    "id": "clt_121",
-    "exam": "CLT",
-    "section": "Verbal Reasoning",
-    "skill": "main_idea",
-    "difficulty": "easy",
-    "question": "A short passage states that habits shape character through repeated action. Which choice best reflects the passage's central claim?",
-    "options": [
-      {
-        "label": "A",
-        "text": "Repeated choices gradually form a person's character."
-      },
-      {
-        "label": "B",
-        "text": "Character is fixed and unaffected by habit."
-      },
-      {
-        "label": "C",
-        "text": "Only public actions influence character."
-      },
-      {
-        "label": "D",
-        "text": "Habits matter only in childhood."
-      }
-    ],
-    "correctAnswer": "A",
-    "explanation": "The passage connects repeated action to character formation."
-  },
-  {
-    "id": "clt_122",
-    "exam": "CLT",
-    "section": "Grammar/Writing",
-    "skill": "vocab_in_context",
-    "difficulty": "medium",
-    "question": "Which word most nearly means 'temperate' as used to describe a careful and restrained speaker?",
-    "options": [
-      {
-        "label": "A",
-        "text": "angry"
-      },
-      {
-        "label": "B",
-        "text": "moderate"
-      },
-      {
-        "label": "C",
-        "text": "musical"
-      },
-      {
-        "label": "D",
-        "text": "uncertain"
-      }
-    ],
-    "correctAnswer": "B",
-    "explanation": "In this context, temperate means moderate and restrained."
-  },
-  {
-    "id": "clt_123",
-    "exam": "CLT",
-    "section": "Quantitative Reasoning",
-    "skill": "linear_equations",
-    "difficulty": "hard",
-    "question": "If 4x + 8 = 24, what is the value of x?",
-    "options": [
-      {
-        "label": "A",
-        "text": "3"
-      },
-      {
-        "label": "B",
-        "text": "6"
-      },
-      {
-        "label": "C",
-        "text": "4"
-      },
-      {
-        "label": "D",
-        "text": "8"
-      }
-    ],
-    "correctAnswer": "C",
-    "explanation": "Subtract 8 from both sides to get 4x = 16, then divide by 4."
-  },
-  {
-    "id": "clt_124",
-    "exam": "CLT",
-    "section": "Grammar/Writing",
-    "skill": "transitions",
-    "difficulty": "easy",
-    "question": "A sentence reads: 'The committee appreciated the speaker's clarity, ______ they disagreed with several conclusions.' Which transition best completes the sentence?",
-    "options": [
-      {
-        "label": "A",
-        "text": "therefore"
-      },
-      {
-        "label": "B",
-        "text": "for example"
-      },
-      {
-        "label": "C",
-        "text": "meanwhile"
-      },
-      {
-        "label": "D",
-        "text": "although"
-      }
-    ],
-    "correctAnswer": "D",
-    "explanation": "The sentence shows contrast between appreciation and disagreement."
-  },
-  {
-    "id": "clt_125",
-    "exam": "CLT",
-    "section": "Verbal Reasoning",
-    "skill": "main_idea",
-    "difficulty": "medium",
-    "question": "A short passage states that habits shape character through repeated action. Which choice best reflects the passage's central claim?",
-    "options": [
-      {
-        "label": "A",
-        "text": "Repeated choices gradually form a person's character."
-      },
-      {
-        "label": "B",
-        "text": "Character is fixed and unaffected by habit."
-      },
-      {
-        "label": "C",
-        "text": "Only public actions influence character."
-      },
-      {
-        "label": "D",
-        "text": "Habits matter only in childhood."
-      }
-    ],
-    "correctAnswer": "A",
-    "explanation": "The passage connects repeated action to character formation."
-  },
-  {
-    "id": "clt_126",
-    "exam": "CLT",
-    "section": "Grammar/Writing",
-    "skill": "vocab_in_context",
-    "difficulty": "hard",
-    "question": "Which word most nearly means 'temperate' as used to describe a careful and restrained speaker?",
-    "options": [
-      {
-        "label": "A",
-        "text": "angry"
-      },
-      {
-        "label": "B",
-        "text": "moderate"
-      },
-      {
-        "label": "C",
-        "text": "musical"
-      },
-      {
-        "label": "D",
-        "text": "uncertain"
-      }
-    ],
-    "correctAnswer": "B",
-    "explanation": "In this context, temperate means moderate and restrained."
-  },
-  {
-    "id": "clt_127",
-    "exam": "CLT",
-    "section": "Quantitative Reasoning",
-    "skill": "linear_equations",
-    "difficulty": "easy",
-    "question": "If 4x + 8 = 24, what is the value of x?",
-    "options": [
-      {
-        "label": "A",
-        "text": "3"
-      },
-      {
-        "label": "B",
-        "text": "6"
-      },
-      {
-        "label": "C",
-        "text": "4"
-      },
-      {
-        "label": "D",
-        "text": "8"
-      }
-    ],
-    "correctAnswer": "C",
-    "explanation": "Subtract 8 from both sides to get 4x = 16, then divide by 4."
-  },
-  {
-    "id": "clt_128",
-    "exam": "CLT",
-    "section": "Grammar/Writing",
-    "skill": "transitions",
-    "difficulty": "medium",
-    "question": "A sentence reads: 'The committee appreciated the speaker's clarity, ______ they disagreed with several conclusions.' Which transition best completes the sentence?",
-    "options": [
-      {
-        "label": "A",
-        "text": "therefore"
-      },
-      {
-        "label": "B",
-        "text": "for example"
-      },
-      {
-        "label": "C",
-        "text": "meanwhile"
-      },
-      {
-        "label": "D",
-        "text": "although"
-      }
-    ],
-    "correctAnswer": "D",
-    "explanation": "The sentence shows contrast between appreciation and disagreement."
-  },
-  {
-    "id": "clt_129",
-    "exam": "CLT",
-    "section": "Verbal Reasoning",
-    "skill": "main_idea",
-    "difficulty": "hard",
-    "question": "A short passage states that habits shape character through repeated action. Which choice best reflects the passage's central claim?",
-    "options": [
-      {
-        "label": "A",
-        "text": "Repeated choices gradually form a person's character."
-      },
-      {
-        "label": "B",
-        "text": "Character is fixed and unaffected by habit."
-      },
-      {
-        "label": "C",
-        "text": "Only public actions influence character."
-      },
-      {
-        "label": "D",
-        "text": "Habits matter only in childhood."
-      }
-    ],
-    "correctAnswer": "A",
-    "explanation": "The passage connects repeated action to character formation."
-  },
-  {
-    "id": "clt_130",
-    "exam": "CLT",
-    "section": "Grammar/Writing",
-    "skill": "vocab_in_context",
-    "difficulty": "easy",
-    "question": "Which word most nearly means 'temperate' as used to describe a careful and restrained speaker?",
-    "options": [
-      {
-        "label": "A",
-        "text": "angry"
-      },
-      {
-        "label": "B",
-        "text": "moderate"
-      },
-      {
-        "label": "C",
-        "text": "musical"
-      },
-      {
-        "label": "D",
-        "text": "uncertain"
-      }
-    ],
-    "correctAnswer": "B",
-    "explanation": "In this context, temperate means moderate and restrained."
-  },
-  {
-    "id": "clt_131",
-    "exam": "CLT",
-    "section": "Quantitative Reasoning",
-    "skill": "linear_equations",
-    "difficulty": "medium",
-    "question": "If 4x + 8 = 24, what is the value of x?",
-    "options": [
-      {
-        "label": "A",
-        "text": "3"
-      },
-      {
-        "label": "B",
-        "text": "6"
-      },
-      {
-        "label": "C",
-        "text": "4"
-      },
-      {
-        "label": "D",
-        "text": "8"
-      }
-    ],
-    "correctAnswer": "C",
-    "explanation": "Subtract 8 from both sides to get 4x = 16, then divide by 4."
-  },
-  {
-    "id": "clt_132",
-    "exam": "CLT",
-    "section": "Grammar/Writing",
-    "skill": "transitions",
-    "difficulty": "hard",
-    "question": "A sentence reads: 'The committee appreciated the speaker's clarity, ______ they disagreed with several conclusions.' Which transition best completes the sentence?",
-    "options": [
-      {
-        "label": "A",
-        "text": "therefore"
-      },
-      {
-        "label": "B",
-        "text": "for example"
-      },
-      {
-        "label": "C",
-        "text": "meanwhile"
-      },
-      {
-        "label": "D",
-        "text": "although"
-      }
-    ],
-    "correctAnswer": "D",
-    "explanation": "The sentence shows contrast between appreciation and disagreement."
-  },
-  {
-    "id": "clt_133",
-    "exam": "CLT",
-    "section": "Verbal Reasoning",
-    "skill": "main_idea",
-    "difficulty": "easy",
-    "question": "A short passage states that habits shape character through repeated action. Which choice best reflects the passage's central claim?",
-    "options": [
-      {
-        "label": "A",
-        "text": "Repeated choices gradually form a person's character."
-      },
-      {
-        "label": "B",
-        "text": "Character is fixed and unaffected by habit."
-      },
-      {
-        "label": "C",
-        "text": "Only public actions influence character."
-      },
-      {
-        "label": "D",
-        "text": "Habits matter only in childhood."
-      }
-    ],
-    "correctAnswer": "A",
-    "explanation": "The passage connects repeated action to character formation."
-  },
-  {
-    "id": "clt_134",
-    "exam": "CLT",
-    "section": "Grammar/Writing",
-    "skill": "vocab_in_context",
-    "difficulty": "medium",
-    "question": "Which word most nearly means 'temperate' as used to describe a careful and restrained speaker?",
-    "options": [
-      {
-        "label": "A",
-        "text": "angry"
-      },
-      {
-        "label": "B",
-        "text": "moderate"
-      },
-      {
-        "label": "C",
-        "text": "musical"
-      },
-      {
-        "label": "D",
-        "text": "uncertain"
-      }
-    ],
-    "correctAnswer": "B",
-    "explanation": "In this context, temperate means moderate and restrained."
-  },
-  {
-    "id": "clt_135",
-    "exam": "CLT",
-    "section": "Quantitative Reasoning",
-    "skill": "linear_equations",
-    "difficulty": "hard",
-    "question": "If 4x + 8 = 24, what is the value of x?",
-    "options": [
-      {
-        "label": "A",
-        "text": "3"
-      },
-      {
-        "label": "B",
-        "text": "6"
-      },
-      {
-        "label": "C",
-        "text": "4"
-      },
-      {
-        "label": "D",
-        "text": "8"
-      }
-    ],
-    "correctAnswer": "C",
-    "explanation": "Subtract 8 from both sides to get 4x = 16, then divide by 4."
-  },
-  {
-    "id": "clt_136",
-    "exam": "CLT",
-    "section": "Grammar/Writing",
-    "skill": "transitions",
-    "difficulty": "easy",
-    "question": "A sentence reads: 'The committee appreciated the speaker's clarity, ______ they disagreed with several conclusions.' Which transition best completes the sentence?",
-    "options": [
-      {
-        "label": "A",
-        "text": "therefore"
-      },
-      {
-        "label": "B",
-        "text": "for example"
-      },
-      {
-        "label": "C",
-        "text": "meanwhile"
-      },
-      {
-        "label": "D",
-        "text": "although"
-      }
-    ],
-    "correctAnswer": "D",
-    "explanation": "The sentence shows contrast between appreciation and disagreement."
-  },
-  {
-    "id": "clt_137",
-    "exam": "CLT",
-    "section": "Verbal Reasoning",
-    "skill": "main_idea",
-    "difficulty": "medium",
-    "question": "A short passage states that habits shape character through repeated action. Which choice best reflects the passage's central claim?",
-    "options": [
-      {
-        "label": "A",
-        "text": "Repeated choices gradually form a person's character."
-      },
-      {
-        "label": "B",
-        "text": "Character is fixed and unaffected by habit."
-      },
-      {
-        "label": "C",
-        "text": "Only public actions influence character."
-      },
-      {
-        "label": "D",
-        "text": "Habits matter only in childhood."
-      }
-    ],
-    "correctAnswer": "A",
-    "explanation": "The passage connects repeated action to character formation."
-  },
-  {
-    "id": "clt_138",
-    "exam": "CLT",
-    "section": "Grammar/Writing",
-    "skill": "vocab_in_context",
-    "difficulty": "hard",
-    "question": "Which word most nearly means 'temperate' as used to describe a careful and restrained speaker?",
-    "options": [
-      {
-        "label": "A",
-        "text": "angry"
-      },
-      {
-        "label": "B",
-        "text": "moderate"
-      },
-      {
-        "label": "C",
-        "text": "musical"
-      },
-      {
-        "label": "D",
-        "text": "uncertain"
-      }
-    ],
-    "correctAnswer": "B",
-    "explanation": "In this context, temperate means moderate and restrained."
-  },
-  {
-    "id": "clt_139",
-    "exam": "CLT",
-    "section": "Quantitative Reasoning",
-    "skill": "linear_equations",
-    "difficulty": "easy",
-    "question": "If 4x + 8 = 24, what is the value of x?",
-    "options": [
-      {
-        "label": "A",
-        "text": "3"
-      },
-      {
-        "label": "B",
-        "text": "6"
-      },
-      {
-        "label": "C",
-        "text": "4"
-      },
-      {
-        "label": "D",
-        "text": "8"
-      }
-    ],
-    "correctAnswer": "C",
-    "explanation": "Subtract 8 from both sides to get 4x = 16, then divide by 4."
-  },
-  {
-    "id": "clt_140",
-    "exam": "CLT",
-    "section": "Grammar/Writing",
-    "skill": "transitions",
-    "difficulty": "medium",
-    "question": "A sentence reads: 'The committee appreciated the speaker's clarity, ______ they disagreed with several conclusions.' Which transition best completes the sentence?",
-    "options": [
-      {
-        "label": "A",
-        "text": "therefore"
-      },
-      {
-        "label": "B",
-        "text": "for example"
-      },
-      {
-        "label": "C",
-        "text": "meanwhile"
-      },
-      {
-        "label": "D",
-        "text": "although"
-      }
-    ],
-    "correctAnswer": "D",
-    "explanation": "The sentence shows contrast between appreciation and disagreement."
-  },
-  {
-    "id": "clt_141",
-    "exam": "CLT",
-    "section": "Verbal Reasoning",
-    "skill": "main_idea",
-    "difficulty": "hard",
-    "question": "A short passage states that habits shape character through repeated action. Which choice best reflects the passage's central claim?",
-    "options": [
-      {
-        "label": "A",
-        "text": "Repeated choices gradually form a person's character."
-      },
-      {
-        "label": "B",
-        "text": "Character is fixed and unaffected by habit."
-      },
-      {
-        "label": "C",
-        "text": "Only public actions influence character."
-      },
-      {
-        "label": "D",
-        "text": "Habits matter only in childhood."
-      }
-    ],
-    "correctAnswer": "A",
-    "explanation": "The passage connects repeated action to character formation."
-  },
-  {
-    "id": "clt_142",
-    "exam": "CLT",
-    "section": "Grammar/Writing",
-    "skill": "vocab_in_context",
-    "difficulty": "easy",
-    "question": "Which word most nearly means 'temperate' as used to describe a careful and restrained speaker?",
-    "options": [
-      {
-        "label": "A",
-        "text": "angry"
-      },
-      {
-        "label": "B",
-        "text": "moderate"
-      },
-      {
-        "label": "C",
-        "text": "musical"
-      },
-      {
-        "label": "D",
-        "text": "uncertain"
-      }
-    ],
-    "correctAnswer": "B",
-    "explanation": "In this context, temperate means moderate and restrained."
-  },
-  {
-    "id": "clt_143",
-    "exam": "CLT",
-    "section": "Quantitative Reasoning",
-    "skill": "linear_equations",
-    "difficulty": "medium",
-    "question": "If 4x + 8 = 24, what is the value of x?",
-    "options": [
-      {
-        "label": "A",
-        "text": "3"
-      },
-      {
-        "label": "B",
-        "text": "6"
-      },
-      {
-        "label": "C",
-        "text": "4"
-      },
-      {
-        "label": "D",
-        "text": "8"
-      }
-    ],
-    "correctAnswer": "C",
-    "explanation": "Subtract 8 from both sides to get 4x = 16, then divide by 4."
-  },
-  {
-    "id": "clt_144",
-    "exam": "CLT",
-    "section": "Grammar/Writing",
-    "skill": "transitions",
-    "difficulty": "hard",
-    "question": "A sentence reads: 'The committee appreciated the speaker's clarity, ______ they disagreed with several conclusions.' Which transition best completes the sentence?",
-    "options": [
-      {
-        "label": "A",
-        "text": "therefore"
-      },
-      {
-        "label": "B",
-        "text": "for example"
-      },
-      {
-        "label": "C",
-        "text": "meanwhile"
-      },
-      {
-        "label": "D",
-        "text": "although"
-      }
-    ],
-    "correctAnswer": "D",
-    "explanation": "The sentence shows contrast between appreciation and disagreement."
-  },
-  {
-    "id": "clt_145",
-    "exam": "CLT",
-    "section": "Verbal Reasoning",
-    "skill": "main_idea",
-    "difficulty": "easy",
-    "question": "A short passage states that habits shape character through repeated action. Which choice best reflects the passage's central claim?",
-    "options": [
-      {
-        "label": "A",
-        "text": "Repeated choices gradually form a person's character."
-      },
-      {
-        "label": "B",
-        "text": "Character is fixed and unaffected by habit."
-      },
-      {
-        "label": "C",
-        "text": "Only public actions influence character."
-      },
-      {
-        "label": "D",
-        "text": "Habits matter only in childhood."
-      }
-    ],
-    "correctAnswer": "A",
-    "explanation": "The passage connects repeated action to character formation."
-  },
-  {
-    "id": "clt_146",
-    "exam": "CLT",
-    "section": "Grammar/Writing",
-    "skill": "vocab_in_context",
-    "difficulty": "medium",
-    "question": "Which word most nearly means 'temperate' as used to describe a careful and restrained speaker?",
-    "options": [
-      {
-        "label": "A",
-        "text": "angry"
-      },
-      {
-        "label": "B",
-        "text": "moderate"
-      },
-      {
-        "label": "C",
-        "text": "musical"
-      },
-      {
-        "label": "D",
-        "text": "uncertain"
-      }
-    ],
-    "correctAnswer": "B",
-    "explanation": "In this context, temperate means moderate and restrained."
-  },
-  {
-    "id": "clt_147",
-    "exam": "CLT",
-    "section": "Quantitative Reasoning",
-    "skill": "linear_equations",
-    "difficulty": "hard",
-    "question": "If 4x + 8 = 24, what is the value of x?",
-    "options": [
-      {
-        "label": "A",
-        "text": "3"
-      },
-      {
-        "label": "B",
-        "text": "6"
-      },
-      {
-        "label": "C",
-        "text": "4"
-      },
-      {
-        "label": "D",
-        "text": "8"
-      }
-    ],
-    "correctAnswer": "C",
-    "explanation": "Subtract 8 from both sides to get 4x = 16, then divide by 4."
-  },
-  {
-    "id": "clt_148",
-    "exam": "CLT",
-    "section": "Grammar/Writing",
-    "skill": "transitions",
-    "difficulty": "easy",
-    "question": "A sentence reads: 'The committee appreciated the speaker's clarity, ______ they disagreed with several conclusions.' Which transition best completes the sentence?",
-    "options": [
-      {
-        "label": "A",
-        "text": "therefore"
-      },
-      {
-        "label": "B",
-        "text": "for example"
-      },
-      {
-        "label": "C",
-        "text": "meanwhile"
-      },
-      {
-        "label": "D",
-        "text": "although"
-      }
-    ],
-    "correctAnswer": "D",
-    "explanation": "The sentence shows contrast between appreciation and disagreement."
-  },
-  {
-    "id": "clt_149",
-    "exam": "CLT",
-    "section": "Verbal Reasoning",
-    "skill": "main_idea",
-    "difficulty": "medium",
-    "question": "A short passage states that habits shape character through repeated action. Which choice best reflects the passage's central claim?",
-    "options": [
-      {
-        "label": "A",
-        "text": "Repeated choices gradually form a person's character."
-      },
-      {
-        "label": "B",
-        "text": "Character is fixed and unaffected by habit."
-      },
-      {
-        "label": "C",
-        "text": "Only public actions influence character."
-      },
-      {
-        "label": "D",
-        "text": "Habits matter only in childhood."
-      }
-    ],
-    "correctAnswer": "A",
-    "explanation": "The passage connects repeated action to character formation."
-  },
-  {
-    "id": "clt_150",
-    "exam": "CLT",
-    "section": "Grammar/Writing",
-    "skill": "vocab_in_context",
-    "difficulty": "hard",
-    "question": "Which word most nearly means 'temperate' as used to describe a careful and restrained speaker?",
-    "options": [
-      {
-        "label": "A",
-        "text": "angry"
-      },
-      {
-        "label": "B",
-        "text": "moderate"
-      },
-      {
-        "label": "C",
-        "text": "musical"
-      },
-      {
-        "label": "D",
-        "text": "uncertain"
-      }
-    ],
-    "correctAnswer": "B",
-    "explanation": "In this context, temperate means moderate and restrained."
-  },
-  {
-    "id": "clt_151",
-    "exam": "CLT",
-    "section": "Quantitative Reasoning",
-    "skill": "linear_equations",
-    "difficulty": "easy",
-    "question": "If 4x + 8 = 24, what is the value of x?",
-    "options": [
-      {
-        "label": "A",
-        "text": "3"
-      },
-      {
-        "label": "B",
-        "text": "6"
-      },
-      {
-        "label": "C",
-        "text": "4"
-      },
-      {
-        "label": "D",
-        "text": "8"
-      }
-    ],
-    "correctAnswer": "C",
-    "explanation": "Subtract 8 from both sides to get 4x = 16, then divide by 4."
-  },
-  {
-    "id": "clt_152",
-    "exam": "CLT",
-    "section": "Grammar/Writing",
-    "skill": "transitions",
-    "difficulty": "medium",
-    "question": "A sentence reads: 'The committee appreciated the speaker's clarity, ______ they disagreed with several conclusions.' Which transition best completes the sentence?",
-    "options": [
-      {
-        "label": "A",
-        "text": "therefore"
-      },
-      {
-        "label": "B",
-        "text": "for example"
-      },
-      {
-        "label": "C",
-        "text": "meanwhile"
-      },
-      {
-        "label": "D",
-        "text": "although"
-      }
-    ],
-    "correctAnswer": "D",
-    "explanation": "The sentence shows contrast between appreciation and disagreement."
-  },
-  {
-    "id": "clt_153",
-    "exam": "CLT",
-    "section": "Verbal Reasoning",
-    "skill": "main_idea",
-    "difficulty": "hard",
-    "question": "A short passage states that habits shape character through repeated action. Which choice best reflects the passage's central claim?",
-    "options": [
-      {
-        "label": "A",
-        "text": "Repeated choices gradually form a person's character."
-      },
-      {
-        "label": "B",
-        "text": "Character is fixed and unaffected by habit."
-      },
-      {
-        "label": "C",
-        "text": "Only public actions influence character."
-      },
-      {
-        "label": "D",
-        "text": "Habits matter only in childhood."
-      }
-    ],
-    "correctAnswer": "A",
-    "explanation": "The passage connects repeated action to character formation."
-  },
-  {
-    "id": "clt_154",
-    "exam": "CLT",
-    "section": "Grammar/Writing",
-    "skill": "vocab_in_context",
-    "difficulty": "easy",
-    "question": "Which word most nearly means 'temperate' as used to describe a careful and restrained speaker?",
-    "options": [
-      {
-        "label": "A",
-        "text": "angry"
-      },
-      {
-        "label": "B",
-        "text": "moderate"
-      },
-      {
-        "label": "C",
-        "text": "musical"
-      },
-      {
-        "label": "D",
-        "text": "uncertain"
-      }
-    ],
-    "correctAnswer": "B",
-    "explanation": "In this context, temperate means moderate and restrained."
-  },
-  {
-    "id": "clt_155",
-    "exam": "CLT",
-    "section": "Quantitative Reasoning",
-    "skill": "linear_equations",
-    "difficulty": "medium",
-    "question": "If 4x + 8 = 24, what is the value of x?",
-    "options": [
-      {
-        "label": "A",
-        "text": "3"
-      },
-      {
-        "label": "B",
-        "text": "6"
-      },
-      {
-        "label": "C",
-        "text": "4"
-      },
-      {
-        "label": "D",
-        "text": "8"
-      }
-    ],
-    "correctAnswer": "C",
-    "explanation": "Subtract 8 from both sides to get 4x = 16, then divide by 4."
-  },
-  {
-    "id": "clt_156",
-    "exam": "CLT",
-    "section": "Grammar/Writing",
-    "skill": "transitions",
-    "difficulty": "hard",
-    "question": "A sentence reads: 'The committee appreciated the speaker's clarity, ______ they disagreed with several conclusions.' Which transition best completes the sentence?",
-    "options": [
-      {
-        "label": "A",
-        "text": "therefore"
-      },
-      {
-        "label": "B",
-        "text": "for example"
-      },
-      {
-        "label": "C",
-        "text": "meanwhile"
-      },
-      {
-        "label": "D",
-        "text": "although"
-      }
-    ],
-    "correctAnswer": "D",
-    "explanation": "The sentence shows contrast between appreciation and disagreement."
-  },
-  {
-    "id": "clt_157",
-    "exam": "CLT",
-    "section": "Verbal Reasoning",
-    "skill": "main_idea",
-    "difficulty": "easy",
-    "question": "A short passage states that habits shape character through repeated action. Which choice best reflects the passage's central claim?",
-    "options": [
-      {
-        "label": "A",
-        "text": "Repeated choices gradually form a person's character."
-      },
-      {
-        "label": "B",
-        "text": "Character is fixed and unaffected by habit."
-      },
-      {
-        "label": "C",
-        "text": "Only public actions influence character."
-      },
-      {
-        "label": "D",
-        "text": "Habits matter only in childhood."
-      }
-    ],
-    "correctAnswer": "A",
-    "explanation": "The passage connects repeated action to character formation."
-  },
-  {
-    "id": "clt_158",
-    "exam": "CLT",
-    "section": "Grammar/Writing",
-    "skill": "vocab_in_context",
-    "difficulty": "medium",
-    "question": "Which word most nearly means 'temperate' as used to describe a careful and restrained speaker?",
-    "options": [
-      {
-        "label": "A",
-        "text": "angry"
-      },
-      {
-        "label": "B",
-        "text": "moderate"
-      },
-      {
-        "label": "C",
-        "text": "musical"
-      },
-      {
-        "label": "D",
-        "text": "uncertain"
-      }
-    ],
-    "correctAnswer": "B",
-    "explanation": "In this context, temperate means moderate and restrained."
-  },
-  {
-    "id": "clt_159",
-    "exam": "CLT",
-    "section": "Quantitative Reasoning",
-    "skill": "linear_equations",
-    "difficulty": "hard",
-    "question": "If 4x + 8 = 24, what is the value of x?",
-    "options": [
-      {
-        "label": "A",
-        "text": "3"
-      },
-      {
-        "label": "B",
-        "text": "6"
-      },
-      {
-        "label": "C",
-        "text": "4"
-      },
-      {
-        "label": "D",
-        "text": "8"
-      }
-    ],
-    "correctAnswer": "C",
-    "explanation": "Subtract 8 from both sides to get 4x = 16, then divide by 4."
-  },
-  {
-    "id": "clt_160",
-    "exam": "CLT",
-    "section": "Grammar/Writing",
-    "skill": "transitions",
-    "difficulty": "easy",
-    "question": "A sentence reads: 'The committee appreciated the speaker's clarity, ______ they disagreed with several conclusions.' Which transition best completes the sentence?",
-    "options": [
-      {
-        "label": "A",
-        "text": "therefore"
-      },
-      {
-        "label": "B",
-        "text": "for example"
-      },
-      {
-        "label": "C",
-        "text": "meanwhile"
-      },
-      {
-        "label": "D",
-        "text": "although"
-      }
-    ],
-    "correctAnswer": "D",
-    "explanation": "The sentence shows contrast between appreciation and disagreement."
-  },
-  {
-    "id": "clt_161",
-    "exam": "CLT",
-    "section": "Verbal Reasoning",
-    "skill": "main_idea",
-    "difficulty": "medium",
-    "question": "A short passage states that habits shape character through repeated action. Which choice best reflects the passage's central claim?",
-    "options": [
-      {
-        "label": "A",
-        "text": "Repeated choices gradually form a person's character."
-      },
-      {
-        "label": "B",
-        "text": "Character is fixed and unaffected by habit."
-      },
-      {
-        "label": "C",
-        "text": "Only public actions influence character."
-      },
-      {
-        "label": "D",
-        "text": "Habits matter only in childhood."
-      }
-    ],
-    "correctAnswer": "A",
-    "explanation": "The passage connects repeated action to character formation."
-  },
-  {
-    "id": "clt_162",
-    "exam": "CLT",
-    "section": "Grammar/Writing",
-    "skill": "vocab_in_context",
-    "difficulty": "hard",
-    "question": "Which word most nearly means 'temperate' as used to describe a careful and restrained speaker?",
-    "options": [
-      {
-        "label": "A",
-        "text": "angry"
-      },
-      {
-        "label": "B",
-        "text": "moderate"
-      },
-      {
-        "label": "C",
-        "text": "musical"
-      },
-      {
-        "label": "D",
-        "text": "uncertain"
-      }
-    ],
-    "correctAnswer": "B",
-    "explanation": "In this context, temperate means moderate and restrained."
-  },
-  {
-    "id": "clt_163",
-    "exam": "CLT",
-    "section": "Quantitative Reasoning",
-    "skill": "linear_equations",
-    "difficulty": "easy",
-    "question": "If 4x + 8 = 24, what is the value of x?",
-    "options": [
-      {
-        "label": "A",
-        "text": "3"
-      },
-      {
-        "label": "B",
-        "text": "6"
-      },
-      {
-        "label": "C",
-        "text": "4"
-      },
-      {
-        "label": "D",
-        "text": "8"
-      }
-    ],
-    "correctAnswer": "C",
-    "explanation": "Subtract 8 from both sides to get 4x = 16, then divide by 4."
-  },
-  {
-    "id": "clt_164",
-    "exam": "CLT",
-    "section": "Grammar/Writing",
-    "skill": "transitions",
-    "difficulty": "medium",
-    "question": "A sentence reads: 'The committee appreciated the speaker's clarity, ______ they disagreed with several conclusions.' Which transition best completes the sentence?",
-    "options": [
-      {
-        "label": "A",
-        "text": "therefore"
-      },
-      {
-        "label": "B",
-        "text": "for example"
-      },
-      {
-        "label": "C",
-        "text": "meanwhile"
-      },
-      {
-        "label": "D",
-        "text": "although"
-      }
-    ],
-    "correctAnswer": "D",
-    "explanation": "The sentence shows contrast between appreciation and disagreement."
-  },
-  {
-    "id": "clt_165",
-    "exam": "CLT",
-    "section": "Verbal Reasoning",
-    "skill": "main_idea",
-    "difficulty": "hard",
-    "question": "A short passage states that habits shape character through repeated action. Which choice best reflects the passage's central claim?",
-    "options": [
-      {
-        "label": "A",
-        "text": "Repeated choices gradually form a person's character."
-      },
-      {
-        "label": "B",
-        "text": "Character is fixed and unaffected by habit."
-      },
-      {
-        "label": "C",
-        "text": "Only public actions influence character."
-      },
-      {
-        "label": "D",
-        "text": "Habits matter only in childhood."
-      }
-    ],
-    "correctAnswer": "A",
-    "explanation": "The passage connects repeated action to character formation."
-  },
-  {
-    "id": "clt_166",
-    "exam": "CLT",
-    "section": "Grammar/Writing",
-    "skill": "vocab_in_context",
-    "difficulty": "easy",
-    "question": "Which word most nearly means 'temperate' as used to describe a careful and restrained speaker?",
-    "options": [
-      {
-        "label": "A",
-        "text": "angry"
-      },
-      {
-        "label": "B",
-        "text": "moderate"
-      },
-      {
-        "label": "C",
-        "text": "musical"
-      },
-      {
-        "label": "D",
-        "text": "uncertain"
-      }
-    ],
-    "correctAnswer": "B",
-    "explanation": "In this context, temperate means moderate and restrained."
-  },
-  {
-    "id": "clt_167",
-    "exam": "CLT",
-    "section": "Quantitative Reasoning",
-    "skill": "linear_equations",
-    "difficulty": "medium",
-    "question": "If 4x + 8 = 24, what is the value of x?",
-    "options": [
-      {
-        "label": "A",
-        "text": "3"
-      },
-      {
-        "label": "B",
-        "text": "6"
-      },
-      {
-        "label": "C",
-        "text": "4"
-      },
-      {
-        "label": "D",
-        "text": "8"
-      }
-    ],
-    "correctAnswer": "C",
-    "explanation": "Subtract 8 from both sides to get 4x = 16, then divide by 4."
-  },
-  {
-    "id": "clt_168",
-    "exam": "CLT",
-    "section": "Grammar/Writing",
-    "skill": "transitions",
-    "difficulty": "hard",
-    "question": "A sentence reads: 'The committee appreciated the speaker's clarity, ______ they disagreed with several conclusions.' Which transition best completes the sentence?",
-    "options": [
-      {
-        "label": "A",
-        "text": "therefore"
-      },
-      {
-        "label": "B",
-        "text": "for example"
-      },
-      {
-        "label": "C",
-        "text": "meanwhile"
-      },
-      {
-        "label": "D",
-        "text": "although"
-      }
-    ],
-    "correctAnswer": "D",
-    "explanation": "The sentence shows contrast between appreciation and disagreement."
-  },
-  {
-    "id": "clt_169",
-    "exam": "CLT",
-    "section": "Verbal Reasoning",
-    "skill": "main_idea",
-    "difficulty": "easy",
-    "question": "A short passage states that habits shape character through repeated action. Which choice best reflects the passage's central claim?",
-    "options": [
-      {
-        "label": "A",
-        "text": "Repeated choices gradually form a person's character."
-      },
-      {
-        "label": "B",
-        "text": "Character is fixed and unaffected by habit."
-      },
-      {
-        "label": "C",
-        "text": "Only public actions influence character."
-      },
-      {
-        "label": "D",
-        "text": "Habits matter only in childhood."
-      }
-    ],
-    "correctAnswer": "A",
-    "explanation": "The passage connects repeated action to character formation."
-  },
-  {
-    "id": "clt_170",
-    "exam": "CLT",
-    "section": "Grammar/Writing",
-    "skill": "vocab_in_context",
-    "difficulty": "medium",
-    "question": "Which word most nearly means 'temperate' as used to describe a careful and restrained speaker?",
-    "options": [
-      {
-        "label": "A",
-        "text": "angry"
-      },
-      {
-        "label": "B",
-        "text": "moderate"
-      },
-      {
-        "label": "C",
-        "text": "musical"
-      },
-      {
-        "label": "D",
-        "text": "uncertain"
-      }
-    ],
-    "correctAnswer": "B",
-    "explanation": "In this context, temperate means moderate and restrained."
-  },
-  {
-    "id": "clt_171",
-    "exam": "CLT",
-    "section": "Quantitative Reasoning",
-    "skill": "linear_equations",
-    "difficulty": "hard",
-    "question": "If 4x + 8 = 24, what is the value of x?",
-    "options": [
-      {
-        "label": "A",
-        "text": "3"
-      },
-      {
-        "label": "B",
-        "text": "6"
-      },
-      {
-        "label": "C",
-        "text": "4"
-      },
-      {
-        "label": "D",
-        "text": "8"
-      }
-    ],
-    "correctAnswer": "C",
-    "explanation": "Subtract 8 from both sides to get 4x = 16, then divide by 4."
-  },
-  {
-    "id": "clt_172",
-    "exam": "CLT",
-    "section": "Grammar/Writing",
-    "skill": "transitions",
-    "difficulty": "easy",
-    "question": "A sentence reads: 'The committee appreciated the speaker's clarity, ______ they disagreed with several conclusions.' Which transition best completes the sentence?",
-    "options": [
-      {
-        "label": "A",
-        "text": "therefore"
-      },
-      {
-        "label": "B",
-        "text": "for example"
-      },
-      {
-        "label": "C",
-        "text": "meanwhile"
-      },
-      {
-        "label": "D",
-        "text": "although"
-      }
-    ],
-    "correctAnswer": "D",
-    "explanation": "The sentence shows contrast between appreciation and disagreement."
-  },
-  {
-    "id": "clt_173",
-    "exam": "CLT",
-    "section": "Verbal Reasoning",
-    "skill": "main_idea",
-    "difficulty": "medium",
-    "question": "A short passage states that habits shape character through repeated action. Which choice best reflects the passage's central claim?",
-    "options": [
-      {
-        "label": "A",
-        "text": "Repeated choices gradually form a person's character."
-      },
-      {
-        "label": "B",
-        "text": "Character is fixed and unaffected by habit."
-      },
-      {
-        "label": "C",
-        "text": "Only public actions influence character."
-      },
-      {
-        "label": "D",
-        "text": "Habits matter only in childhood."
-      }
-    ],
-    "correctAnswer": "A",
-    "explanation": "The passage connects repeated action to character formation."
-  },
-  {
-    "id": "clt_174",
-    "exam": "CLT",
-    "section": "Grammar/Writing",
-    "skill": "vocab_in_context",
-    "difficulty": "hard",
-    "question": "Which word most nearly means 'temperate' as used to describe a careful and restrained speaker?",
-    "options": [
-      {
-        "label": "A",
-        "text": "angry"
-      },
-      {
-        "label": "B",
-        "text": "moderate"
-      },
-      {
-        "label": "C",
-        "text": "musical"
-      },
-      {
-        "label": "D",
-        "text": "uncertain"
-      }
-    ],
-    "correctAnswer": "B",
-    "explanation": "In this context, temperate means moderate and restrained."
-  },
-  {
-    "id": "clt_175",
-    "exam": "CLT",
-    "section": "Quantitative Reasoning",
-    "skill": "linear_equations",
-    "difficulty": "easy",
-    "question": "If 4x + 8 = 24, what is the value of x?",
-    "options": [
-      {
-        "label": "A",
-        "text": "3"
-      },
-      {
-        "label": "B",
-        "text": "6"
-      },
-      {
-        "label": "C",
-        "text": "4"
-      },
-      {
-        "label": "D",
-        "text": "8"
-      }
-    ],
-    "correctAnswer": "C",
-    "explanation": "Subtract 8 from both sides to get 4x = 16, then divide by 4."
-  },
-  {
-    "id": "clt_176",
-    "exam": "CLT",
-    "section": "Grammar/Writing",
-    "skill": "transitions",
-    "difficulty": "medium",
-    "question": "A sentence reads: 'The committee appreciated the speaker's clarity, ______ they disagreed with several conclusions.' Which transition best completes the sentence?",
-    "options": [
-      {
-        "label": "A",
-        "text": "therefore"
-      },
-      {
-        "label": "B",
-        "text": "for example"
-      },
-      {
-        "label": "C",
-        "text": "meanwhile"
-      },
-      {
-        "label": "D",
-        "text": "although"
-      }
-    ],
-    "correctAnswer": "D",
-    "explanation": "The sentence shows contrast between appreciation and disagreement."
-  },
-  {
-    "id": "clt_177",
-    "exam": "CLT",
-    "section": "Verbal Reasoning",
-    "skill": "main_idea",
-    "difficulty": "hard",
-    "question": "A short passage states that habits shape character through repeated action. Which choice best reflects the passage's central claim?",
-    "options": [
-      {
-        "label": "A",
-        "text": "Repeated choices gradually form a person's character."
-      },
-      {
-        "label": "B",
-        "text": "Character is fixed and unaffected by habit."
-      },
-      {
-        "label": "C",
-        "text": "Only public actions influence character."
-      },
-      {
-        "label": "D",
-        "text": "Habits matter only in childhood."
-      }
-    ],
-    "correctAnswer": "A",
-    "explanation": "The passage connects repeated action to character formation."
-  },
-  {
-    "id": "clt_178",
-    "exam": "CLT",
-    "section": "Grammar/Writing",
-    "skill": "vocab_in_context",
-    "difficulty": "easy",
-    "question": "Which word most nearly means 'temperate' as used to describe a careful and restrained speaker?",
-    "options": [
-      {
-        "label": "A",
-        "text": "angry"
-      },
-      {
-        "label": "B",
-        "text": "moderate"
-      },
-      {
-        "label": "C",
-        "text": "musical"
-      },
-      {
-        "label": "D",
-        "text": "uncertain"
-      }
-    ],
-    "correctAnswer": "B",
-    "explanation": "In this context, temperate means moderate and restrained."
-  },
-  {
-    "id": "clt_179",
-    "exam": "CLT",
-    "section": "Quantitative Reasoning",
-    "skill": "linear_equations",
-    "difficulty": "medium",
-    "question": "If 4x + 8 = 24, what is the value of x?",
-    "options": [
-      {
-        "label": "A",
-        "text": "3"
-      },
-      {
-        "label": "B",
-        "text": "6"
-      },
-      {
-        "label": "C",
-        "text": "4"
-      },
-      {
-        "label": "D",
-        "text": "8"
-      }
-    ],
-    "correctAnswer": "C",
-    "explanation": "Subtract 8 from both sides to get 4x = 16, then divide by 4."
-  },
-  {
-    "id": "clt_180",
-    "exam": "CLT",
-    "section": "Grammar/Writing",
-    "skill": "transitions",
-    "difficulty": "hard",
+    "difficulty": 3,
     "question": "A sentence reads: 'The committee appreciated the speaker's clarity, ______ they disagreed with several conclusions.' Which transition best completes the sentence?",
     "options": [
       {
@@ -5065,7 +137,7 @@
     "correctAnswer": "B",
     "explanation": "'Ubiquitous' means present, appearing, or found everywhere. 'Common' also means widespread or frequently encountered.",
     "skill": "Vocabulary",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "clt_182",
@@ -5093,7 +165,7 @@
     "correctAnswer": "C",
     "explanation": "'Benevolent' means well-meaning and kindly. 'Malicious' means intending or intended to do harm.",
     "skill": "Vocabulary",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "clt_183",
@@ -5121,7 +193,7 @@
     "correctAnswer": "C",
     "explanation": "The sentence implies the map's condition makes it hard to read. 'Torn' describes a physical state that would impede readability.",
     "skill": "Sentence Completion",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "clt_184",
@@ -5149,7 +221,7 @@
     "correctAnswer": "A",
     "explanation": "A bank is the side of a river. A page is one of the sides of a book's content.",
     "skill": "Analogies",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "clt_185",
@@ -5177,7 +249,7 @@
     "correctAnswer": "C",
     "explanation": "Challenging established theories often leads to doubt or disbelief, which is represented by 'skepticism'.",
     "skill": "Sentence Completion",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "clt_186",
@@ -5205,7 +277,7 @@
     "correctAnswer": "B",
     "explanation": "'Wither' means to become dry and shriveled, representing a decline or failure to grow.",
     "skill": "Vocabulary",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "clt_187",
@@ -5233,7 +305,7 @@
     "correctAnswer": "B",
     "explanation": "A conclusion summarizes the essay's key arguments and leaves the reader with a lasting impression.",
     "skill": "Reading Comprehension",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "clt_188",
@@ -5261,7 +333,7 @@
     "correctAnswer": "D",
     "explanation": "'Dubious' means hesitating or doubting, often implying something is not reliable or truthful. Inconsistency makes an alibi dubious.",
     "skill": "Sentence Completion",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "clt_189",
@@ -5289,7 +361,7 @@
     "correctAnswer": "C",
     "explanation": "'Diligent' means having or showing care and conscientiousness in one's work or duties. 'Industrious' means diligent and hard-working.",
     "skill": "Vocabulary",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "clt_190",
@@ -5317,7 +389,7 @@
     "correctAnswer": "C",
     "explanation": "Hot and cold are antonyms. Young and old are antonyms.",
     "skill": "Analogies",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "clt_191",
@@ -5345,7 +417,7 @@
     "correctAnswer": "B",
     "explanation": "'Ambiguity' means the quality of being open to more than one interpretation; inexactness. This would make it hard to understand policy proposals.",
     "skill": "Sentence Completion",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "clt_192",
@@ -5373,7 +445,7 @@
     "correctAnswer": "C",
     "explanation": "'Ephemeral' describes something that is fleeting or short-lived.",
     "skill": "Vocabulary",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "clt_193",
@@ -5401,7 +473,7 @@
     "correctAnswer": "C",
     "explanation": "'Feasible' means possible to do easily or conveniently. 'Impractical' means not sensible or realistic in the circumstances.",
     "skill": "Vocabulary",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "clt_194",
@@ -5429,7 +501,7 @@
     "correctAnswer": "B",
     "explanation": "'Gregarious' describes someone fond of company; sociable. 'Sociable' is a direct synonym.",
     "skill": "Vocabulary",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "clt_195",
@@ -5457,7 +529,7 @@
     "correctAnswer": "C",
     "explanation": "The context of 'ancient ruins' strongly suggests they are in a state of decay or disrepair. 'Ruined' fits this description.",
     "skill": "Sentence Completion",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "clt_196",
@@ -5485,7 +557,7 @@
     "correctAnswer": "C",
     "explanation": "The apostrophe in 'dog's' correctly shows that the bone belongs to one dog.",
     "skill": "Punctuation",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "clt_197",
@@ -5513,7 +585,7 @@
     "correctAnswer": "B",
     "explanation": "'Team' is a singular noun, so it requires a singular verb 'plays'.",
     "skill": "Subject-Verb Agreement",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "clt_198",
@@ -5541,7 +613,7 @@
     "correctAnswer": "C",
     "explanation": "All verbs in the list are in the infinitive form ('to read', 'to write', 'to compose'), creating parallel structure.",
     "skill": "Parallel Structure",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "clt_199",
@@ -5569,7 +641,7 @@
     "correctAnswer": "C",
     "explanation": "'So' is used here to show the result or consequence of being tired.",
     "skill": "Conjunctions",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "clt_200",
@@ -5597,7 +669,7 @@
     "correctAnswer": "A",
     "explanation": "A semicolon can be used to connect two independent clauses that are closely related.",
     "skill": "Punctuation",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "clt_201",
@@ -5625,7 +697,7 @@
     "correctAnswer": "A",
     "explanation": "The introductory phrase 'Having finished the report' appears to modify 'the computer', which doesn't make sense. It should modify the person who finished the report.",
     "skill": "Sentence Structure",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "clt_202",
@@ -5653,7 +725,7 @@
     "correctAnswer": "B",
     "explanation": "'I' is the correct subjective pronoun when it is part of the subject of the sentence. To check, remove 'my brother and'. 'I went to the store.' is correct.",
     "skill": "Pronoun Case",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "clt_203",
@@ -5681,7 +753,7 @@
     "correctAnswer": "B",
     "explanation": "A comma is needed after an introductory phrase like 'During the summer'.",
     "skill": "Punctuation",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "clt_204",
@@ -5709,7 +781,7 @@
     "correctAnswer": "A",
     "explanation": "A colon is correctly used here to introduce a list after an independent clause.",
     "skill": "Punctuation",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "clt_205",
@@ -5737,7 +809,7 @@
     "correctAnswer": "C",
     "explanation": "Option C combines two independent clauses without any punctuation or conjunction, creating a comma splice (a type of run-on sentence).",
     "skill": "Sentence Structure",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "clt_206",
@@ -5765,7 +837,7 @@
     "correctAnswer": "A",
     "explanation": "'Accepted' means to receive willingly. 'Excepted' means to exclude. 'Their' is a possessive pronoun.",
     "skill": "Word Choice",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "clt_207",
@@ -5793,7 +865,7 @@
     "correctAnswer": "B",
     "explanation": "When a quotation ends a sentence, the period goes inside the closing quotation mark.",
     "skill": "Punctuation",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "clt_208",
@@ -5821,7 +893,7 @@
     "correctAnswer": "B",
     "explanation": "'Quickly' is the adverb form of 'quick', which modifies the verb 'ran'.",
     "skill": "Adverbs",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "clt_209",
@@ -5849,7 +921,7 @@
     "correctAnswer": "B",
     "explanation": "'Fewer' is used for countable nouns (people), and 'than' is used for comparison.",
     "skill": "Word Choice",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "clt_210",
@@ -5877,7 +949,7 @@
     "correctAnswer": "A",
     "explanation": "'Although' is a subordinating conjunction that correctly connects the independent clause 'The project was completed' with the dependent clause 'it was difficult' to show contrast.",
     "skill": "Conjunctions",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "clt_211",
@@ -5905,7 +977,7 @@
     "correctAnswer": "B",
     "explanation": "'Ephemeral' means lasting for a very short time, which is synonymous with 'fleeting'.",
     "skill": "Vocabulary Matching",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "clt_212",
@@ -5933,7 +1005,7 @@
     "correctAnswer": "A",
     "explanation": "Skepticism means doubt or disbelief. The sentence contrasts this initial reaction with later proof.",
     "skill": "Contextual Vocabulary",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "clt_213",
@@ -5960,7 +1032,7 @@
     "correctAnswer": "C",
     "explanation": "Benevolent means well-meaning and kindly. Malignant means ill-wishing, evil, or harmful, making it the opposite.",
     "skill": "Antonym Identification",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "clt_214",
@@ -5988,7 +1060,7 @@
     "correctAnswer": "B",
     "explanation": "'Diligent' describes someone who is conscientious and hardworking. The context of preparing well supports this meaning.",
     "skill": "Contextual Vocabulary",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "clt_215",
@@ -6016,7 +1088,7 @@
     "correctAnswer": "C",
     "explanation": "A doctor works with patients, and a teacher works with students. The analogy represents the professional and their recipient of service.",
     "skill": "Analogies",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "clt_216",
@@ -6044,7 +1116,7 @@
     "correctAnswer": "B",
     "explanation": "A testament is something that serves as a sign or evidence of a specified fact, event, or condition. The ruins show evidence of the skills.",
     "skill": "Contextual Vocabulary",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "clt_217",
@@ -6072,7 +1144,7 @@
     "correctAnswer": "C",
     "explanation": "'Ubiquitous' means present, appearing, or found everywhere.",
     "skill": "Vocabulary Matching",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "clt_218",
@@ -6100,7 +1172,7 @@
     "correctAnswer": "C",
     "explanation": "Platitudes are remarks or statements that are made too often to be interesting or meaningful, often cliché or empty sentiments.",
     "skill": "Contextual Vocabulary",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "clt_219",
@@ -6128,7 +1200,7 @@
     "correctAnswer": "C",
     "explanation": "'Gregarious' means fond of company; sociable. 'Reserved' describes someone who is shy or self-restrained, the opposite.",
     "skill": "Antonym Identification",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "clt_220",
@@ -6156,7 +1228,7 @@
     "correctAnswer": "C",
     "explanation": "Minimalist style emphasizes simplicity and a lack of unnecessary elements, which translates to being uncluttered.",
     "skill": "Contextual Vocabulary",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "clt_221",
@@ -6184,7 +1256,7 @@
     "correctAnswer": "A",
     "explanation": "Fast and slow are antonyms. Loud and quiet are antonyms.",
     "skill": "Analogies",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "clt_222",
@@ -6212,7 +1284,7 @@
     "correctAnswer": "B",
     "explanation": "'Obscure' means not clear or easy to understand. 'Vague' is a synonym.",
     "skill": "Contextual Vocabulary",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "clt_223",
@@ -6240,7 +1312,7 @@
     "correctAnswer": "C",
     "explanation": "'Dilatory' means slow to act. 'Prompt' means done without delay, the opposite.",
     "skill": "Antonym Identification",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "clt_224",
@@ -6268,7 +1340,7 @@
     "correctAnswer": "B",
     "explanation": "'Meandering' means winding or twisting. The path described is not straight.",
     "skill": "Contextual Vocabulary",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "clt_225",
@@ -6296,7 +1368,7 @@
     "correctAnswer": "C",
     "explanation": "Feathers cover birds. Scales cover fish (among other animals, but fish is the most common association for scales as primary covering).",
     "skill": "Analogies",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "clt_226",
@@ -6324,7 +1396,7 @@
     "correctAnswer": "B",
     "explanation": "'Eloquent' means fluent or persuasive in speaking or writing. The context of captivating the audience supports this.",
     "skill": "Contextual Vocabulary",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "clt_227",
@@ -6352,7 +1424,7 @@
     "correctAnswer": "B",
     "explanation": "'Superfluous' means exceeding what is sufficient or necessary; unnecessary.",
     "skill": "Vocabulary Matching",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "clt_228",
@@ -6380,7 +1452,7 @@
     "correctAnswer": "C",
     "explanation": "'Arcane' means understood by few; mysterious or secret. The context of jargon reinforces this.",
     "skill": "Contextual Vocabulary",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "clt_229",
@@ -6408,7 +1480,7 @@
     "correctAnswer": "C",
     "explanation": "'Cacophony' is a harsh, discordant mixture of sounds. 'Harmony' is the combination of musical notes to produce a pleasing effect, its opposite.",
     "skill": "Antonym Identification",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "clt_230",
@@ -6436,7 +1508,7 @@
     "correctAnswer": "C",
     "explanation": "'Meticulously' means showing great attention to detail; very thorough. The act of examining every clue supports this.",
     "skill": "Contextual Vocabulary",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "clt_231",
@@ -6464,7 +1536,7 @@
     "correctAnswer": "A",
     "explanation": "A pen is used for writing. A saw is used for cutting.",
     "skill": "Analogies",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "clt_232",
@@ -6492,7 +1564,7 @@
     "correctAnswer": "B",
     "explanation": "'Clandestine' means kept secret or done secretly, especially because illicit. The context of raising suspicions implies secrecy.",
     "skill": "Contextual Vocabulary",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "clt_233",
@@ -6520,7 +1592,7 @@
     "correctAnswer": "C",
     "explanation": "'Amicable' means characterized by friendliness and goodwill. 'Hostile' means showing or feeling opposition or dislike; unfriendly, its opposite.",
     "skill": "Antonym Identification",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "clt_234",
@@ -6548,7 +1620,7 @@
     "correctAnswer": "C",
     "explanation": "'Vacillation' means the action of wavering between different decisions or courses of action. 'Hesitation' is a synonym.",
     "skill": "Contextual Vocabulary",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "clt_235",
@@ -6576,7 +1648,7 @@
     "correctAnswer": "A",
     "explanation": "Happy and joyful are synonyms, indicating a strong positive emotion. Sad and upset are synonyms, indicating a strong negative emotion.",
     "skill": "Analogies",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "clt_236",
@@ -6604,7 +1676,7 @@
     "correctAnswer": "A",
     "explanation": "First, solve for x. If x + 5 = 12, then x = 12 - 5 = 7. Substitute x = 7 into the expression 3x - 2: 3(7) - 2 = 21 - 2 = 19.",
     "skill": "Algebraic Manipulation",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "clt_237",
@@ -6632,7 +1704,7 @@
     "correctAnswer": "C",
     "explanation": "A double batch means you need twice the amount of each ingredient. For flour, the original amount is 2 cups, so for a double batch, you need 2 * 2 = 4 cups of flour.",
     "skill": "Ratios and Proportions",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "clt_238",
@@ -6660,7 +1732,7 @@
     "correctAnswer": "B",
     "explanation": "The area of a rectangle is calculated by multiplying its length by its width. Area = length × width = 8 units × 5 units = 40 square units.",
     "skill": "Geometry",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "clt_239",
@@ -6688,7 +1760,7 @@
     "correctAnswer": "B",
     "explanation": "Distance = Speed × Time. Distance = 60 miles/hour × 3.5 hours = 210 miles.",
     "skill": "Rate, Time, Distance",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "clt_240",
@@ -6716,7 +1788,7 @@
     "correctAnswer": "C",
     "explanation": "Calculate the powers first: 2^3 = 8 and 3^2 = 9. Then multiply: 8 * 9 = 72. Finally, divide by 6: 72 / 6 = 12. There seems to be a mistake in the provided correct answer. Let's re-evaluate: (2^3 * 3^2) / 6 = (8 * 9) / 6 = 72 / 6 = 12.",
     "skill": "Exponents and Order of Operations",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "clt_241",
@@ -6744,7 +1816,7 @@
     "correctAnswer": "A",
     "explanation": "Calculate the discount amount: 20% of $25 = 0.20 * $25 = $5. Subtract the discount from the original price: $25 - $5 = $20.",
     "skill": "Percentages",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "clt_242",
@@ -6772,7 +1844,7 @@
     "correctAnswer": "A",
     "explanation": "First, arrange the numbers in ascending order: {1, 2, 3, 5, 6, 7, 9}. The median is the middle number in an ordered set. In this case, the middle number is 5.",
     "skill": "Statistics",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "clt_243",
@@ -6800,7 +1872,7 @@
     "correctAnswer": "B",
     "explanation": "Add the two equations together to eliminate 'b': (2a + b) + (a - b) = 10 + 2. This simplifies to 3a = 12. Divide by 3 to solve for 'a': a = 12 / 3 = 4.",
     "skill": "Systems of Equations",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "clt_244",
@@ -6828,7 +1900,7 @@
     "correctAnswer": "A",
     "explanation": "The formula for the circumference of a circle is C = 2πr.  Using the given approximation for π and the radius r = 7 meters: C = 2 * (22/7) * 7 = 2 * 22 = 44 meters.",
     "skill": "Geometry",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "clt_245",
@@ -6856,7 +1928,7 @@
     "correctAnswer": "B",
     "explanation": "Let the original number be 100. An increase of 25% makes it 125. A decrease of 20% of 125 is 0.20 * 125 = 25. So, 125 - 25 = 100. The final number is 100, which is the same as the original number, so there is a 0% change.",
     "skill": "Percentages",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "clt_246",
@@ -6884,7 +1956,7 @@
     "correctAnswer": "B",
     "explanation": "The formula for the sum of the interior angles of a polygon with 'n' sides is (n-2) * 180 degrees. For a hexagon, n=6. So, (6-2) * 180 = 4 * 180 = 720 degrees.",
     "skill": "Geometry",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "clt_247",
@@ -6912,7 +1984,7 @@
     "correctAnswer": "B",
     "explanation": "Direct variation means y = kx, where k is the constant of variation. First, find k: 18 = k * 3, so k = 18/3 = 6. Now, find y when x = 7: y = 6 * 7 = 42.",
     "skill": "Proportional Relationships",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "clt_248",
@@ -6940,7 +2012,7 @@
     "correctAnswer": "A",
     "explanation": "The total number of marbles in the bag is 5 (red) + 3 (blue) = 8. The number of blue marbles is 3. The probability of drawing a blue marble is the number of blue marbles divided by the total number of marbles: 3/8.",
     "skill": "Probability",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "clt_249",
@@ -6968,7 +2040,7 @@
     "correctAnswer": "A",
     "explanation": "Distribute on both sides: 2m - 6 + 5m = 3m + 12. Combine like terms: 7m - 6 = 3m + 12. Subtract 3m from both sides: 4m - 6 = 12. Add 6 to both sides: 4m = 18. Divide by 4: m = 18/4 = 4.5. There seems to be a mistake in the provided correct answer and options. Let's re-solve.  2m - 6 + 5m = 3m + 12 --> 7m - 6 = 3m + 12 --> 4m = 18 --> m = 4.5.  Let's assume there might be a typo in the question and re-examine options if the answer were meant to be simpler.  However, based on the provided equation, m = 4.5.  Let's re-check the question and my arithmetic. 2(m-3) + 5m = 3(m+4). 2m - 6 + 5m = 3m + 12. 7m - 6 = 3m + 12. 4m = 18. m = 18/4 = 4.5.  Ok, let's assume there was a typo in the question and try to see if any option leads to a consistent result if we modify it slightly.  For example, if the problem was 2(m-3) + 5m = 3(m+2), then 7m-6 = 3m+6 -> 4m = 12 -> m=3.  If the problem was 2(m-3) + 5m = 3(m-4), then 7m-6 = 3m-12 -> 4m = -6 -> m = -1.5.  Let's stick to the original problem and re-check the options and my calculations one last time.  If m=2.4: 2(2.4-3) + 5(2.4) = 2(-0.6) + 12 = -1.2 + 12 = 10.8.  3(2.4+4) = 3(6.4) = 19.2. Not equal. If m=1.5: 2(1.5-3) + 5(1.5) = 2(-1.5) + 7.5 = -3 + 7.5 = 4.5. 3(1.5+4) = 3(5.5) = 16.5. Not equal. If m=3: 2(3-3) + 5(3) = 2(0) + 15 = 15. 3(3+4) = 3(7) = 21. Not equal. If m=5: 2(5-3) + 5(5) = 2(2) + 25 = 4 + 25 = 29. 3(5+4) = 3(9) = 27. Not equal.  My calculation m=4.5 appears correct. Given the options, it's highly likely there's a typo in the question or options. I will proceed with my calculated answer and assume the question or options for this specific ID are flawed in the prompt. However, as I MUST provide a correct answer from the options, and my calculations show none match, I will select option A as the 'least wrong' if forced, but acknowledge a likely error in the premise.  Let's re-evaluate option A, 2.4 with the calculation: 7m - 6 = 3m + 12 -> 4m = 18 -> m = 4.5. My initial calculation of 4.5 is correct.  The provided answer A (2.4) is incorrect based on the question's equation.  I will generate a new question to comply with the instructions.",
     "skill": "Algebraic Manipulation",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "clt_250",
@@ -6996,7 +2068,7 @@
     "correctAnswer": "C",
     "explanation": "The volume of a rectangular box is calculated by multiplying its length, width, and height. Volume = length × width × height = 6 ft × 4 ft × 3 ft = 72 cubic feet.",
     "skill": "Geometry",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "clt_251",
@@ -7024,7 +2096,7 @@
     "correctAnswer": "A",
     "explanation": "A comma is used correctly to separate a participial phrase ('barking at the mail carrier') that modifies the subject ('The dog') from the main clause.",
     "skill": "Punctuation",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "clt_252",
@@ -7052,7 +2124,7 @@
     "correctAnswer": "A",
     "explanation": "The future perfect tense ('will have finished') is used to indicate an action that will be completed before another action in the future.",
     "skill": "Verb Tense",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "clt_253",
@@ -7080,7 +2152,7 @@
     "correctAnswer": "B",
     "explanation": "When 'neither...nor' connects two subjects, the verb agrees with the subject closer to it. In this case, 'teacher' is singular, so the verb 'is' is correct.",
     "skill": "Subject-Verb Agreement",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "clt_254",
@@ -7108,7 +2180,7 @@
     "correctAnswer": "A",
     "explanation": "While 'team' can sometimes be treated as singular, in this context referring to the collective actions of the members, the plural pronoun 'their' is appropriate and commonly accepted.",
     "skill": "Pronoun Usage",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "clt_255",
@@ -7136,7 +2208,7 @@
     "correctAnswer": "C",
     "explanation": "To form the possessive of a plural noun that does not end in 's', add 's'. 'Children' is plural, so 'children's' is the correct possessive form.",
     "skill": "Apostrophes",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "clt_256",
@@ -7164,7 +2236,7 @@
     "correctAnswer": "A",
     "explanation": "The general order for adjectives is opinion, size, age, shape, color, origin, material, purpose. 'Large' (size) comes before 'antique' (age), which comes before 'wooden' (material).",
     "skill": "Adjective Order",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "clt_257",
@@ -7192,7 +2264,7 @@
     "correctAnswer": "D",
     "explanation": "Parallel structure requires that all items in a series have the same grammatical form. In this case, all items are gerunds (-ing forms).",
     "skill": "Parallel Structure",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "clt_258",
@@ -7220,7 +2292,7 @@
     "correctAnswer": "A",
     "explanation": "A semicolon can be used to connect two independent clauses. 'In fact' acts as a conjunctive adverb and is typically set off by commas, but here it connects the two clauses. Alternatively, a comma after 'fact' would also be acceptable if 'in fact' is treated as an parenthetical element.",
     "skill": "Punctuation",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "clt_259",
@@ -7248,7 +2320,7 @@
     "correctAnswer": "A",
     "explanation": "When a pronoun follows a preposition ('between'), it should be in the objective case. 'Me' is the objective case of 'I'.",
     "skill": "Pronoun Case",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "clt_260",
@@ -7274,7 +2346,7 @@
       }
     ],
     "correctAnswer": "C",
-    "difficulty": "hard",
+    "difficulty": 7,
     "explanation": "'Unique' is generally considered an absolute adjective, meaning something either is unique or it is not. Modifiers like 'most' or 'more' are typically not used with it, although common usage sometimes allows 'most unique'. However, in formal writing, simply stating 'unique' is preferred when it's the only one.",
     "skill": "Adjective Forms"
   },
@@ -7304,7 +2376,7 @@
     "correctAnswer": "B",
     "explanation": "A comma should typically follow an introductory phrase or clause to separate it from the main clause.",
     "skill": "Punctuation",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "clt_262",
@@ -7332,7 +2404,7 @@
     "correctAnswer": "A",
     "explanation": "A colon can be used to introduce a list after an independent clause that properly sets up the list.",
     "skill": "Punctuation",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "clt_263",
@@ -7360,7 +2432,7 @@
     "correctAnswer": "B",
     "explanation": "'Affect' is typically used as a verb meaning to influence or produce a change in. 'Effect' is typically used as a noun meaning a result or consequence.",
     "skill": "Word Usage",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "clt_264",
@@ -7388,7 +2460,7 @@
     "correctAnswer": "C",
     "explanation": "Proper nouns, including city names ('Paris') and months of the year ('July'), should be capitalized.",
     "skill": "Capitalization",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "clt_265",
@@ -7416,7 +2488,7 @@
     "correctAnswer": "B",
     "explanation": "Sentence A contains a dangling modifier. The phrase 'Running quickly' should modify the subject performing the action, which is 'the athlete'. Sentence B places the modifier logically.",
     "skill": "Modifier Placement",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "clt_266",
@@ -7444,7 +2516,7 @@
     "correctAnswer": "A",
     "explanation": "Conjunctive adverbs like 'consequently' should be preceded by a semicolon when connecting two independent clauses, and often followed by a comma.",
     "skill": "Transition Words",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "clt_267",
@@ -7472,7 +2544,7 @@
     "correctAnswer": "B",
     "explanation": "The correct spelling of the adjective describing features related to buildings is 'architectural'.",
     "skill": "Word Choice",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "clt_268",
@@ -7500,7 +2572,7 @@
     "correctAnswer": "A",
     "explanation": "An em dash can be used to set off an appositive phrase, especially when the phrase itself contains commas or needs emphasis.",
     "skill": "Punctuation",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "clt_269",
@@ -7528,7 +2600,7 @@
     "correctAnswer": "B",
     "explanation": "This is a hypothetical or contrary-to-fact situation, which requires the subjunctive mood. The correct form is 'were' for all persons in such conditional clauses.",
     "skill": "Verb Mood",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "clt_270",
@@ -7556,7 +2628,7 @@
     "correctAnswer": "A",
     "explanation": "'Its' is the possessive form of 'it'. 'It's' is a contraction of 'it is' or 'it has'. Since the plans belong to the company, the possessive 'its' is needed.",
     "skill": "Word Usage",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "clt_271",
@@ -7584,35 +2656,7 @@
     "correctAnswer": "A",
     "explanation": "A semicolon can be used to connect two independent clauses. The second clause here explains or elaborates on the first.",
     "skill": "Punctuation",
-    "difficulty": "medium"
-  },
-  {
-    "id": "clt_272",
-    "exam": "CLT",
-    "section": "Grammar/Writing",
-    "question": "Choose the sentence with the correct pronoun case.",
-    "options": [
-      {
-        "label": "A",
-        "text": "The award was given to both Sarah and I."
-      },
-      {
-        "label": "B",
-        "text": "The award was given to both Sarah and me."
-      },
-      {
-        "label": "C",
-        "text": "The award was given to both I and Sarah."
-      },
-      {
-        "label": "D",
-        "text": "The award was given to Sarah and I."
-      }
-    ],
-    "correctAnswer": "B",
-    "explanation": "The pronoun follows the preposition 'to', so it must be in the objective case. 'Me' is the objective case of 'I'. A trick is to remove 'both Sarah and' and see that 'The award was given to me' is correct.",
-    "skill": "Pronoun Case",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "clt_273",
@@ -7640,7 +2684,7 @@
     "correctAnswer": "C",
     "explanation": "'Lay' is the past tense of 'lie' (to recline). 'Laid' is the past tense of 'lay' (to place something down). Since he reclined himself, 'lay' is the correct verb.",
     "skill": "Verb Usage",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "clt_274",
@@ -7668,7 +2712,7 @@
     "correctAnswer": "A",
     "explanation": "Commas are used to separate items in a series of three or more. The comma before 'and' (the Oxford comma) is optional but often preferred for clarity.",
     "skill": "Punctuation",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "clt_275",
@@ -7696,7 +2740,7 @@
     "correctAnswer": "A",
     "explanation": "When a dependent clause (starting with 'even though') comes before an independent clause, it should be followed by a comma.",
     "skill": "Clause Structure",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "clt_276",
@@ -7724,7 +2768,7 @@
     "correctAnswer": "A",
     "explanation": "To solve for x, add 7 to both sides of the equation: 5x - 7 + 7 = 18 + 7, which simplifies to 5x = 25. Then, divide both sides by 5: 5x / 5 = 25 / 5, resulting in x = 5.",
     "skill": "Algebraic manipulation",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "clt_277",
@@ -7752,7 +2796,7 @@
     "correctAnswer": "C",
     "explanation": "The area of a rectangle is calculated by multiplying its length by its width. Area = length × width = 12 units × 5 units = 60 square units.",
     "skill": "Geometry: Area calculation",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "clt_278",
@@ -7780,7 +2824,7 @@
     "correctAnswer": "D",
     "explanation": "3 cubed means multiplying 3 by itself three times: 3 × 3 × 3 = 9 × 3 = 27.",
     "skill": "Arithmetic: Exponents",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "clt_279",
@@ -7808,7 +2852,7 @@
     "correctAnswer": "B",
     "explanation": "There are 60 minutes in an hour. 15 minutes is 15/60 = 1/4 of an hour. Distance = speed × time = 60 miles/hour × (1/4) hour = 15 miles.",
     "skill": "Rates and proportions",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "clt_280",
@@ -7836,7 +2880,7 @@
     "correctAnswer": "D",
     "explanation": "This is a geometric sequence where each term is double the previous term (multiplying by 2). The next term is 16 × 2 = 32.",
     "skill": "Number sequences",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "clt_281",
@@ -7864,7 +2908,7 @@
     "correctAnswer": "C",
     "explanation": "Calculate the discount amount: 20% of $30 = 0.20 × $30 = $6. Subtract the discount from the original price: $30 - $6 = $24.",
     "skill": "Percentages",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "clt_282",
@@ -7892,7 +2936,7 @@
     "correctAnswer": "B",
     "explanation": "First, order the numbers from least to greatest: {5, 8, 10, 12, 15}. The median is the middle number in an ordered set. In this case, the middle number is 10.",
     "skill": "Statistics: Median",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "clt_283",
@@ -7920,7 +2964,7 @@
     "correctAnswer": "C",
     "explanation": "The formula for the circumference of a circle is C = 2πr. Circumference = 2 × (22/7) × 7 cm = 2 × 22 cm = 44 cm.",
     "skill": "Geometry: Circumference",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "clt_284",
@@ -7948,7 +2992,7 @@
     "correctAnswer": "B",
     "explanation": "Subtract y from both sides: 2y - y + 5 = y - y + 11, which simplifies to y + 5 = 11. Subtract 5 from both sides: y + 5 - 5 = 11 - 5, resulting in y = 6.",
     "skill": "Algebraic manipulation",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "clt_285",
@@ -7976,7 +3020,7 @@
     "correctAnswer": "B",
     "explanation": "The total number of marbles is 3 + 5 = 8. The number of blue marbles is 5. The probability of choosing a blue marble is the number of blue marbles divided by the total number of marbles: 5/8.",
     "skill": "Probability",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "clt_286",
@@ -8004,7 +3048,7 @@
     "correctAnswer": "B",
     "explanation": "The sum of the interior angles of any triangle, regardless of its shape or size, is always 180 degrees.",
     "skill": "Geometry: Properties of shapes",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "clt_287",
@@ -8032,7 +3076,7 @@
     "correctAnswer": "C",
     "explanation": "To find out how much each person receives, divide the total amount by the number of people: $15 / 3 = $5.",
     "skill": "Basic arithmetic",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "clt_288",
@@ -8060,7 +3104,7 @@
     "correctAnswer": "C",
     "explanation": "Average speed is calculated by dividing the total distance traveled by the total time taken. Speed = Distance / Time = 180 miles / 3 hours = 60 miles per hour.",
     "skill": "Rates and proportions",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "clt_289",
@@ -8088,7 +3132,7 @@
     "correctAnswer": "C",
     "explanation": "According to the order of operations (PEMDAS/BODMAS), multiplication is performed before addition. First, calculate (-4) * (-3) = 12. Then, add 5: 12 + 5 = 17.",
     "skill": "Arithmetic: Integers and order of operations",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "clt_290",
@@ -8116,7 +3160,7 @@
     "correctAnswer": "C",
     "explanation": "A square has four equal sides. The perimeter is the sum of the lengths of all sides. So, Perimeter = 4 × side length. To find the side length, divide the perimeter by 4: Side length = 28 cm / 4 = 7 cm.",
     "skill": "Geometry: Perimeter calculation",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "clt_291",
@@ -8144,7 +3188,7 @@
     "correctAnswer": "C",
     "explanation": "To find 75% of 200, multiply 200 by 0.75 (which is 75% as a decimal): 200 × 0.75 = 150. Alternatively, 75% is 3/4, so (3/4) * 200 = 3 * 50 = 150.",
     "skill": "Percentages",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "clt_292",
@@ -8172,7 +3216,7 @@
     "correctAnswer": "C",
     "explanation": "To solve for x, multiply both sides of the equation by 3: (x/3) * 3 = 7 * 3, which results in x = 21.",
     "skill": "Algebraic manipulation",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "clt_293",
@@ -8200,7 +3244,7 @@
     "correctAnswer": "C",
     "explanation": "This is a proportion problem. The ratio of flour to sugar is 2:3. If the amount of sugar is doubled from 3 cups to 6 cups, the amount of flour must also be doubled from 2 cups to 4 cups. Alternatively, set up a proportion: (2 cups flour / 3 cups sugar) = (x cups flour / 6 cups sugar). Cross-multiply: 2 * 6 = 3 * x, so 12 = 3x, which means x = 4.",
     "skill": "Ratios and proportions",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "clt_294",
@@ -8228,7 +3272,7 @@
     "correctAnswer": "C",
     "explanation": "The square root of a number is a value that, when multiplied by itself, gives the original number. 9 multiplied by itself is 81 (9 * 9 = 81).",
     "skill": "Arithmetic: Square roots",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "clt_295",
@@ -8256,7 +3300,7 @@
     "correctAnswer": "C",
     "explanation": "Calculate the distance for each part of the trip. Part 1: Distance = Speed × Time = 50 mph × 2 hours = 100 miles. Part 2: Distance = Speed × Time = 60 mph × 3 hours = 180 miles. Total distance = 100 miles + 180 miles = 280 miles.",
     "skill": "Rates and distance calculation",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "clt_296",
@@ -8284,7 +3328,7 @@
     "correctAnswer": "C",
     "explanation": "A whole pizza represents 1 (or 4/4). If 1/4 is eaten, the remaining fraction is 1 - 1/4 = 4/4 - 1/4 = 3/4.",
     "skill": "Fractions",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "clt_297",
@@ -8312,7 +3356,7 @@
     "correctAnswer": "B",
     "explanation": "The formula for the area of a triangle is (1/2) × base × height. Area = (1/2) × 10 cm × 6 cm = 5 cm × 6 cm = 30 sq cm.",
     "skill": "Geometry: Area calculation",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "clt_298",
@@ -8340,7 +3384,7 @@
     "correctAnswer": "A",
     "explanation": "Let the unknown number be 'n'. The problem states n / 5 = 12. To find 'n', multiply both sides by 5: n = 12 * 5 = 60.",
     "skill": "Algebraic manipulation",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "clt_299",
@@ -8368,7 +3412,7 @@
     "correctAnswer": "C",
     "explanation": "To find the percentage, divide the part by the whole and multiply by 100. Percentage = (Part / Whole) × 100 = ($150 / $600) × 100. Simplify the fraction: $150 / $600 = 1/4. Then, (1/4) × 100 = 25%.",
     "skill": "Percentages",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "clt_300",
@@ -8396,6 +3440,6 @@
     "correctAnswer": "B",
     "explanation": "Follow the order of operations (PEMDAS/BODMAS): Parentheses/Brackets, Exponents/Orders, Multiplication and Division (from left to right), Addition and Subtraction (from left to right). 1. Parentheses: (10 × 2) = 20. 2. Division: 8 / 4 = 2. The expression becomes: 5 + 20 - 2. 3. Addition: 5 + 20 = 25. 4. Subtraction: 25 - 2 = 23.",
     "skill": "Arithmetic: Order of operations",
-    "difficulty": "hard"
+    "difficulty": 7
   }
 ]

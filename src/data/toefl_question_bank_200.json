@@ -25,7 +25,7 @@
     "correctAnswer": "A",
     "explanation": "The passage directly states populations shifted from rural to urban centers, indicating urbanization was a major consequence.",
     "skill": "Reading Comprehension",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "toefl_002",
@@ -53,7 +53,7 @@
     "correctAnswer": "A",
     "explanation": "'Proliferation' means a rapid increase in numbers or spread of something.",
     "skill": "Vocabulary",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "toefl_003",
@@ -81,7 +81,7 @@
     "correctAnswer": "A",
     "explanation": "The passage cites pesticide use and habitat loss as the primary factors in bee population decline.",
     "skill": "Detail Recognition",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "toefl_004",
@@ -109,7 +109,7 @@
     "correctAnswer": "A",
     "explanation": "This transition acknowledges the previous topic while smoothly introducing the new one and showing their relationship.",
     "skill": "Transitions",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "toefl_005",
@@ -137,7 +137,7 @@
     "correctAnswer": "A",
     "explanation": "Academic passages on the TOEFL typically maintain an objective, analytical tone.",
     "skill": "Tone Analysis",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "toefl_006",
@@ -165,7 +165,7 @@
     "correctAnswer": "A",
     "explanation": "If coral reefs support 25% of marine species and are threatened, their loss would significantly reduce marine biodiversity.",
     "skill": "Making Inferences",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "toefl_007",
@@ -193,7 +193,7 @@
     "correctAnswer": "A",
     "explanation": "Uses precise academic vocabulary appropriate for TOEFL-level writing.",
     "skill": "Academic Vocabulary",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "toefl_008",
@@ -221,7 +221,7 @@
     "correctAnswer": "A",
     "explanation": "References to photosynthesis serve to explain the fundamental process of energy conversion in plants.",
     "skill": "Author's Purpose",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "toefl_009",
@@ -249,7 +249,7 @@
     "correctAnswer": "A",
     "explanation": "An effective summary captures the main topic, cause, and effects.",
     "skill": "Summarizing",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "toefl_010",
@@ -277,7 +277,7 @@
     "correctAnswer": "A",
     "explanation": "'Collection' (singular) requires 'has been preserved.' The relative clause uses plural 'were' referring to 'manuscripts.'",
     "skill": "Subject-Verb Agreement",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "toefl_011",
@@ -305,7 +305,7 @@
     "correctAnswer": "A",
     "explanation": "A thesis statement presents the central argument that the essay will develop and support.",
     "skill": "Essay Structure",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "toefl_012",
@@ -333,7 +333,7 @@
     "correctAnswer": "A",
     "explanation": "Pronoun reference questions require identifying the nearest logical antecedent.",
     "skill": "Reference Questions",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "toefl_013",
@@ -361,7 +361,7 @@
     "correctAnswer": "A",
     "explanation": "A semicolon correctly separates two independent clauses, especially with a conjunctive adverb.",
     "skill": "Punctuation",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "toefl_014",
@@ -389,7 +389,7 @@
     "correctAnswer": "A",
     "explanation": "The passage presents causes and their effects, following a cause-and-effect structure.",
     "skill": "Text Organization",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "toefl_015",
@@ -417,7 +417,7 @@
     "correctAnswer": "A",
     "explanation": "Physical strength is unrelated to bilingualism and not discussed in the passage.",
     "skill": "Negative Factual Information",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "toefl_016",
@@ -445,7 +445,7 @@
     "correctAnswer": "A",
     "explanation": "Introductory prepositional phrases of four or more words are typically followed by a comma.",
     "skill": "Comma Rules",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "toefl_017",
@@ -473,7 +473,7 @@
     "correctAnswer": "A",
     "explanation": "'Mitigate' means to make less severe — to alleviate or moderate.",
     "skill": "Vocabulary",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "toefl_018",
@@ -501,7 +501,7 @@
     "correctAnswer": "A",
     "explanation": "The concession acknowledges an opposing view before presenting the writer's counterargument.",
     "skill": "Concession",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "toefl_019",
@@ -529,7 +529,7 @@
     "correctAnswer": "A",
     "explanation": "This sentence provides evidence of global scope, fitting after a claim about widespread occurrence.",
     "skill": "Sentence Insertion",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "toefl_020",
@@ -557,7 +557,7 @@
     "correctAnswer": "A",
     "explanation": "The passage's balanced discussion suggests the author supports sustainable development.",
     "skill": "Author Attitude",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "toefl_021",
@@ -585,7 +585,7 @@
     "correctAnswer": "A",
     "explanation": "'Ubiquitous' means present, appearing, or found everywhere.",
     "skill": "Vocabulary",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "toefl_022",
@@ -613,7 +613,7 @@
     "correctAnswer": "A",
     "explanation": "The professor spends the majority of the lecture discussing how igneous rocks form and the two main classification types.",
     "skill": "Main Idea",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "toefl_023",
@@ -641,7 +641,7 @@
     "correctAnswer": "A",
     "explanation": "'Ephemeral' means lasting for a very short time.",
     "skill": "Vocabulary",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "toefl_024",
@@ -669,7 +669,7 @@
     "correctAnswer": "A",
     "explanation": "All three items follow the same grammatical pattern: gerund + adverb.",
     "skill": "Parallel Structure",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "toefl_025",
@@ -697,7 +697,7 @@
     "correctAnswer": "A",
     "explanation": "The passage identifies multiple ecological functions of mangroves including nursery habitat, erosion protection, and filtration.",
     "skill": "Detail Recognition",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "toefl_026",
@@ -725,7 +725,7 @@
     "correctAnswer": "A",
     "explanation": "The professor uses the aqueduct as a concrete historical example to illustrate the lecture's point about engineering evolution.",
     "skill": "Purpose",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "toefl_027",
@@ -753,7 +753,7 @@
     "correctAnswer": "A",
     "explanation": "'Pragmatic' means dealing with things sensibly and realistically, focused on practical outcomes.",
     "skill": "Vocabulary",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "toefl_028",
@@ -781,7 +781,7 @@
     "correctAnswer": "A",
     "explanation": "This thesis takes a clear position, acknowledges a counterargument, and previews the supporting reasoning.",
     "skill": "Thesis Statements",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "toefl_029",
@@ -809,7 +809,7 @@
     "correctAnswer": "A",
     "explanation": "The passage describes mitochondria as the 'powerhouse of the cell,' producing ATP through oxidative phosphorylation.",
     "skill": "Detail Recognition",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "toefl_030",
@@ -837,7 +837,7 @@
     "correctAnswer": "A",
     "explanation": "The student's questions about extensions and resources suggest anxiety about completing her paper on time.",
     "skill": "Making Inferences",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "toefl_031",
@@ -865,7 +865,7 @@
     "correctAnswer": "A",
     "explanation": "'Resilient' means able to withstand or recover quickly from difficult conditions.",
     "skill": "Vocabulary",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "toefl_032",
@@ -893,7 +893,7 @@
     "correctAnswer": "A",
     "explanation": "A nonrestrictive relative clause is properly set off by commas on both sides.",
     "skill": "Relative Clauses",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "toefl_033",
@@ -921,7 +921,7 @@
     "correctAnswer": "A",
     "explanation": "The passage identifies human agricultural practices and climate factors as the main drivers of desertification.",
     "skill": "Cause and Effect",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "toefl_034",
@@ -949,7 +949,7 @@
     "correctAnswer": "A",
     "explanation": "The professor emphasizes that Impressionists prioritized capturing fleeting effects of light and color over photographic precision.",
     "skill": "Detail Recognition",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "toefl_035",
@@ -977,7 +977,7 @@
     "correctAnswer": "A",
     "explanation": "'Ameliorate' means to make something bad or unsatisfactory better.",
     "skill": "Vocabulary",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "toefl_036",
@@ -1005,7 +1005,7 @@
     "correctAnswer": "A",
     "explanation": "'Although' creates a complex sentence showing the relationship between the two ideas (concession + main point).",
     "skill": "Sentence Structure",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "toefl_037",
@@ -1033,7 +1033,7 @@
     "correctAnswer": "A",
     "explanation": "The author takes a balanced position, acknowledging AI's benefits while emphasizing irreplaceable human qualities.",
     "skill": "Author's Position",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "toefl_038",
@@ -1061,7 +1061,7 @@
     "correctAnswer": "A",
     "explanation": "This discourse marker signals that the professor is transitioning to a particularly noteworthy or unexpected point.",
     "skill": "Pragmatic Understanding",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "toefl_039",
@@ -1089,7 +1089,7 @@
     "correctAnswer": "A",
     "explanation": "'Paradigm' refers to a typical example, pattern, or model, especially a worldview underlying a scientific theory.",
     "skill": "Vocabulary",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "toefl_040",
@@ -1117,7 +1117,7 @@
     "correctAnswer": "A",
     "explanation": "Replacing vague language with specific, descriptive words dramatically improves academic writing quality.",
     "skill": "Revision",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "toefl_041",
@@ -1145,7 +1145,7 @@
     "correctAnswer": "A",
     "explanation": "The passage discusses environmental pressures including shifting climate patterns that prompted migration to new territories.",
     "skill": "Making Inferences",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "toefl_042",
@@ -1173,7 +1173,7 @@
     "correctAnswer": "A",
     "explanation": "The professor presents evidence both for and against, indicating a balanced but cautiously receptive stance.",
     "skill": "Speaker Attitude",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "toefl_043",
@@ -1201,7 +1201,7 @@
     "correctAnswer": "A",
     "explanation": "'Salient' means most noticeable, important, or prominent.",
     "skill": "Vocabulary",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "toefl_044",
@@ -1229,7 +1229,7 @@
     "correctAnswer": "A",
     "explanation": "A comma splice incorrectly joins two independent clauses with only a comma. A semicolon, conjunction, or subordination is needed.",
     "skill": "Comma Splices",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "toefl_045",
@@ -1257,7 +1257,7 @@
     "correctAnswer": "A",
     "explanation": "The passage emphasizes sustainability (non-depletion) and lower emissions as key advantages.",
     "skill": "Detail Recognition",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "toefl_046",
@@ -1285,7 +1285,7 @@
     "correctAnswer": "A",
     "explanation": "The conversation opens with the student asking for guidance on narrowing down term paper topics.",
     "skill": "Main Purpose",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "toefl_047",
@@ -1313,7 +1313,7 @@
     "correctAnswer": "A",
     "explanation": "'Dichotomy' refers to a division or contrast between two things that are represented as entirely different.",
     "skill": "Vocabulary",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "toefl_048",
@@ -1341,7 +1341,7 @@
     "correctAnswer": "A",
     "explanation": "Academic register uses precise, formal vocabulary ('socioeconomic factors,' 'significantly influence,' 'educational outcomes').",
     "skill": "Academic Register",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "toefl_049",
@@ -1369,7 +1369,7 @@
     "correctAnswer": "A",
     "explanation": "The passage moves chronologically from historical context to present-day analysis, a common academic structure.",
     "skill": "Text Organization",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "toefl_050",
@@ -1397,7 +1397,7 @@
     "correctAnswer": "A",
     "explanation": "The professor explicitly recommends three preparation strategies for comprehensive exam readiness.",
     "skill": "Detail Recognition",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "toefl_051",
@@ -1425,7 +1425,7 @@
     "correctAnswer": "A",
     "explanation": "'Innate' means inborn; existing from birth rather than acquired.",
     "skill": "Vocabulary",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "toefl_052",
@@ -1453,7 +1453,7 @@
     "correctAnswer": "A",
     "explanation": "'Furthermore' adds supporting information that strengthens the previous point.",
     "skill": "Transitions",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "toefl_053",
@@ -1481,7 +1481,7 @@
     "correctAnswer": "A",
     "explanation": "Mutualism is a symbiotic relationship where both organisms benefit. Clownfish gain protection; anemones gain food scraps.",
     "skill": "Concept Application",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "toefl_054",
@@ -1509,7 +1509,7 @@
     "correctAnswer": "A",
     "explanation": "The lecture explains how plate movement is the unifying theory behind major geological phenomena.",
     "skill": "Main Idea",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "toefl_055",
@@ -1537,7 +1537,7 @@
     "correctAnswer": "A",
     "explanation": "'Ambiguous' means having more than one possible meaning or interpretation; unclear.",
     "skill": "Vocabulary",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "toefl_056",
@@ -1565,7 +1565,7 @@
     "correctAnswer": "A",
     "explanation": "Passive voice is often preferred in scientific writing to emphasize the action/object rather than the researcher.",
     "skill": "Passive Voice",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "toefl_057",
@@ -1593,7 +1593,7 @@
     "correctAnswer": "A",
     "explanation": "The Rosetta Stone's trilingual inscription was key to deciphering hieroglyphics.",
     "skill": "Detail Recognition",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "toefl_058",
@@ -1621,7 +1621,7 @@
     "correctAnswer": "A",
     "explanation": "'I see what you mean' is an idiomatic expression indicating comprehension and agreement.",
     "skill": "Pragmatic Understanding",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "toefl_059",
@@ -1649,7 +1649,7 @@
     "correctAnswer": "A",
     "explanation": "'Unprecedented' means without previous instance; never before known or experienced.",
     "skill": "Vocabulary",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "toefl_060",
@@ -1677,7 +1677,7 @@
     "correctAnswer": "A",
     "explanation": "'Basic' and 'fundamentals' are redundant; 'first' and 'initially' are redundant. Removing duplicates improves conciseness.",
     "skill": "Conciseness",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "toefl_061",
@@ -1705,7 +1705,7 @@
     "correctAnswer": "A",
     "explanation": "The balanced discussion of benefits and risks, combined with calls for more research, indicates a nuanced position.",
     "skill": "Author's Position",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "toefl_062",
@@ -1733,7 +1733,7 @@
     "correctAnswer": "A",
     "explanation": "The professor identifies the hippocampus as essential for forming new memories and spatial awareness.",
     "skill": "Detail Recognition",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "toefl_063",
@@ -1761,7 +1761,7 @@
     "correctAnswer": "A",
     "explanation": "'Empirical' means verifiable by observation or experience rather than theory or pure logic.",
     "skill": "Vocabulary",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "toefl_064",
@@ -1789,7 +1789,7 @@
     "correctAnswer": "A",
     "explanation": "Academic hedging ('suggest,' 'may contribute') appropriately qualifies claims without overstating certainty.",
     "skill": "Hedging",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "toefl_065",
@@ -1817,7 +1817,7 @@
     "correctAnswer": "A",
     "explanation": "After evaporation, water vapor rises and cools, condensing into water droplets that form clouds.",
     "skill": "Sequence",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "toefl_066",
@@ -1845,7 +1845,7 @@
     "correctAnswer": "A",
     "explanation": "The student explains a login error preventing access to the digital learning platform.",
     "skill": "Main Problem",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "toefl_067",
@@ -1873,7 +1873,7 @@
     "correctAnswer": "A",
     "explanation": "'Exacerbate' means to make a problem, bad situation, or negative feeling worse.",
     "skill": "Vocabulary",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "toefl_068",
@@ -1901,7 +1901,7 @@
     "correctAnswer": "A",
     "explanation": "A colon follows a complete sentence and introduces a list, explanation, or elaboration.",
     "skill": "Colons",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "toefl_069",
@@ -1929,7 +1929,7 @@
     "correctAnswer": "A",
     "explanation": "The passage contrasts the energy conversion directions: light→chemical in photosynthesis, chemical→ATP in respiration.",
     "skill": "Compare and Contrast",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "toefl_070",
@@ -1957,7 +1957,7 @@
     "correctAnswer": "A",
     "explanation": "The prisoner's dilemma serves as a classic illustration of game theory concepts applied to strategic decision-making.",
     "skill": "Purpose",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "toefl_071",
@@ -1985,7 +1985,7 @@
     "correctAnswer": "A",
     "explanation": "'Pertinent' means relevant or applicable to a particular matter.",
     "skill": "Vocabulary",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "toefl_072",
@@ -2013,7 +2013,7 @@
     "correctAnswer": "A",
     "explanation": "This sentence clearly establishes the cause (drought), its direct effect (decreased yields), and the consequence (food shortages).",
     "skill": "Cause and Effect",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "toefl_073",
@@ -2041,7 +2041,7 @@
     "correctAnswer": "A",
     "explanation": "Predicting eclipses requires sophisticated astronomical observation and mathematical calculation.",
     "skill": "Evidence Evaluation",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "toefl_074",
@@ -2069,7 +2069,7 @@
     "correctAnswer": "A",
     "explanation": "The professor's suggestions about focusing on a specific time period or region imply the topic is too broad.",
     "skill": "Making Inferences",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "toefl_075",
@@ -2097,7 +2097,7 @@
     "correctAnswer": "A",
     "explanation": "'Catalyst' refers to an agent that provokes or speeds up significant change or action.",
     "skill": "Vocabulary",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "toefl_076",
@@ -2125,7 +2125,7 @@
     "correctAnswer": "A",
     "explanation": "'Having completed the experiment' dangles because 'results' cannot complete an experiment — a person must be the subject.",
     "skill": "Modifiers",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "toefl_077",
@@ -2153,7 +2153,7 @@
     "correctAnswer": "A",
     "explanation": "The passage emphasizes how the printing press transformed knowledge access from elite privilege to widespread availability.",
     "skill": "Main Idea",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "toefl_078",
@@ -2181,7 +2181,7 @@
     "correctAnswer": "A",
     "explanation": "This idiom indicates that the question is very important, central, and potentially difficult to resolve.",
     "skill": "Pragmatic Understanding",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "toefl_079",
@@ -2209,7 +2209,7 @@
     "correctAnswer": "A",
     "explanation": "'Inherent' means existing as a permanent, essential, or characteristic attribute.",
     "skill": "Vocabulary",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "toefl_080",
@@ -2237,7 +2237,7 @@
     "correctAnswer": "A",
     "explanation": "Effective transitions create logical bridges between ideas, improving the essay's overall coherence and flow.",
     "skill": "Coherence",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "toefl_081",
@@ -2265,7 +2265,7 @@
     "correctAnswer": "A",
     "explanation": "The babbling stage is characterized by repetitive syllable production (e.g., 'ba-ba-ba') common to all infants.",
     "skill": "Detail Recognition",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "toefl_082",
@@ -2293,7 +2293,7 @@
     "correctAnswer": "A",
     "explanation": "The advisor suggests reducing the number of courses and seeking academic support.",
     "skill": "Detail Recognition",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "toefl_083",
@@ -2321,7 +2321,7 @@
     "correctAnswer": "A",
     "explanation": "'Consensus' means a general agreement or the collective opinion of a group.",
     "skill": "Vocabulary",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "toefl_084",
@@ -2349,7 +2349,7 @@
     "correctAnswer": "A",
     "explanation": "'However' as a conjunctive adverb requires a semicolon before it and a comma after it when joining two independent clauses.",
     "skill": "Conjunctive Adverbs",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "toefl_085",
@@ -2377,7 +2377,7 @@
     "correctAnswer": "A",
     "explanation": "Academic introductions establish context, engage the reader, and state the thesis to guide the rest of the essay.",
     "skill": "Text Structure",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "toefl_086",
@@ -2405,7 +2405,7 @@
     "correctAnswer": "A",
     "explanation": "Positive reinforcement increases behavior frequency by adding a pleasant stimulus after the desired behavior.",
     "skill": "Concept Understanding",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "toefl_087",
@@ -2433,7 +2433,7 @@
     "correctAnswer": "A",
     "explanation": "'Viable' means capable of working, surviving, or being successful; feasible.",
     "skill": "Vocabulary",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "toefl_088",
@@ -2461,7 +2461,7 @@
     "correctAnswer": "A",
     "explanation": "'Favorable' is more precise and appropriate for academic writing than the vague and informal 'good.'",
     "skill": "Word Choice",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "toefl_089",
@@ -2489,7 +2489,7 @@
     "correctAnswer": "A",
     "explanation": "The greenhouse effect is the process where certain gases trap heat, preventing it from escaping the atmosphere.",
     "skill": "Concept Understanding",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "toefl_090",
@@ -2517,7 +2517,7 @@
     "correctAnswer": "A",
     "explanation": "The professor specifically notes that self-reported data introduces potential bias and inaccuracy.",
     "skill": "Detail Recognition",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "toefl_091",
@@ -2545,7 +2545,7 @@
     "correctAnswer": "A",
     "explanation": "'Compelling' means powerfully convincing or evoking strong interest.",
     "skill": "Vocabulary",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "toefl_092",
@@ -2573,7 +2573,7 @@
     "correctAnswer": "A",
     "explanation": "The participial phrase 'Driven by curiosity' correctly modifies 'the scientist,' the logical subject.",
     "skill": "Participial Phrases",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "toefl_093",
@@ -2601,7 +2601,7 @@
     "correctAnswer": "A",
     "explanation": "The tragedy of the commons describes how rational individual behavior can lead to collective resource depletion.",
     "skill": "Concept Understanding",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "toefl_094",
@@ -2629,7 +2629,7 @@
     "correctAnswer": "A",
     "explanation": "The professor traces the theory from its origins through key developments to its current form.",
     "skill": "Organization",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "toefl_095",
@@ -2657,7 +2657,7 @@
     "correctAnswer": "A",
     "explanation": "'Synthesize' means to combine different ideas, elements, or information into a unified whole.",
     "skill": "Vocabulary",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "toefl_096",
@@ -2685,7 +2685,7 @@
     "correctAnswer": "A",
     "explanation": "An effective concluding sentence synthesizes the paragraph's key points and reinforces the main argument.",
     "skill": "Conclusions",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "toefl_097",
@@ -2713,7 +2713,7 @@
     "correctAnswer": "A",
     "explanation": "The finch example demonstrates adaptive radiation — how different beak shapes evolved for different food sources.",
     "skill": "Author's Purpose",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "toefl_098",
@@ -2741,7 +2741,7 @@
     "correctAnswer": "A",
     "explanation": "The professor presents a moderate version of the Sapir-Whorf hypothesis, suggesting influence rather than determination.",
     "skill": "Main Idea",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "toefl_099",
@@ -2769,7 +2769,7 @@
     "correctAnswer": "A",
     "explanation": "'Stringent' means strict, precise, and exacting in requirements or standards.",
     "skill": "Vocabulary",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "toefl_100",
@@ -2797,7 +2797,7 @@
     "correctAnswer": "A",
     "explanation": "The dependent clause 'Although...' needs an independent clause to form a complete sentence.",
     "skill": "Fragments",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "toefl_101",
@@ -2825,7 +2825,7 @@
     "correctAnswer": "A",
     "explanation": "The innate immune system's first defense includes physical barriers that prevent pathogen entry.",
     "skill": "Detail Recognition",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "toefl_102",
@@ -2853,7 +2853,7 @@
     "correctAnswer": "A",
     "explanation": "The smoking example illustrates the tension between behavior and belief, the core of cognitive dissonance theory.",
     "skill": "Example Recognition",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "toefl_103",
@@ -2881,7 +2881,7 @@
     "correctAnswer": "A",
     "explanation": "'Juxtapose' means to place close together for contrasting effect or comparison.",
     "skill": "Vocabulary",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "toefl_104",
@@ -2909,7 +2909,7 @@
     "correctAnswer": "A",
     "explanation": "An effective counterargument introduction identifies the opposing view and its specific reasoning.",
     "skill": "Counterarguments",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "toefl_105",
@@ -2937,7 +2937,7 @@
     "correctAnswer": "A",
     "explanation": "The passage distinguishes weather (day-to-day) from climate (30+ year patterns).",
     "skill": "Compare and Contrast",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "toefl_106",
@@ -2965,7 +2965,7 @@
     "correctAnswer": "A",
     "explanation": "The professor identifies methodological flaws in how the control group was handled.",
     "skill": "Critical Analysis",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "toefl_107",
@@ -2993,7 +2993,7 @@
     "correctAnswer": "A",
     "explanation": "'Tangible' means perceptible by touch or clearly definite and real.",
     "skill": "Vocabulary",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "toefl_108",
@@ -3021,7 +3021,7 @@
     "correctAnswer": "A",
     "explanation": "Effective academic evidence includes specific data, the study type, and a proper citation.",
     "skill": "Using Evidence",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "toefl_109",
@@ -3049,7 +3049,7 @@
     "correctAnswer": "A",
     "explanation": "The passage connects biodiversity to ecosystem resilience and specific ecosystem services essential for human survival.",
     "skill": "Main Argument",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "toefl_110",
@@ -3077,7 +3077,7 @@
     "correctAnswer": "A",
     "explanation": "The student's questions focus on understanding expectations and evaluation criteria for the assignment.",
     "skill": "Purpose",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "toefl_111",
@@ -3105,7 +3105,7 @@
     "correctAnswer": "A",
     "explanation": "'Disparity' refers to a great difference, especially an unfair one.",
     "skill": "Vocabulary",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "toefl_112",
@@ -3133,7 +3133,7 @@
     "correctAnswer": "A",
     "explanation": "Active voice is clearer and more direct: subject (committee) performs action (decided).",
     "skill": "Active vs Passive",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "toefl_113",
@@ -3161,7 +3161,7 @@
     "correctAnswer": "A",
     "explanation": "Ocean acidification results from increased atmospheric CO₂ dissolving in seawater, forming carbonic acid.",
     "skill": "Cause and Effect",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "toefl_114",
@@ -3189,7 +3189,7 @@
     "correctAnswer": "A",
     "explanation": "The professor presents quantum computing as promising but acknowledges major hurdles like decoherence and error rates.",
     "skill": "Making Inferences",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "toefl_115",
@@ -3217,7 +3217,7 @@
     "correctAnswer": "A",
     "explanation": "'Nuanced' means having or showing subtle qualities, distinctions, or shades of meaning.",
     "skill": "Vocabulary",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "toefl_116",
@@ -3245,7 +3245,7 @@
     "correctAnswer": "A",
     "explanation": "Effective comparison-contrast uses signal words ('while both,' 'whereas') and identifies specific similarities and differences.",
     "skill": "Compare and Contrast Writing",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "toefl_117",
@@ -3273,7 +3273,7 @@
     "correctAnswer": "A",
     "explanation": "The passage identifies dopamine as a neurotransmitter central to the brain's reward and motivation systems.",
     "skill": "Detail Recognition",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "toefl_118",
@@ -3301,7 +3301,7 @@
     "correctAnswer": "A",
     "explanation": "The student describes frustration with unequal workload distribution.",
     "skill": "Main Problem",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "toefl_119",
@@ -3329,7 +3329,7 @@
     "correctAnswer": "A",
     "explanation": "'Homogeneous' means of the same kind; uniform in structure or composition throughout.",
     "skill": "Vocabulary",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "toefl_120",
@@ -3357,7 +3357,7 @@
     "correctAnswer": "A",
     "explanation": "Academic writing requires formal vocabulary, precise phrasing, and avoidance of colloquialisms and slang.",
     "skill": "Formal Register",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "toefl_121",
@@ -3385,7 +3385,7 @@
     "correctAnswer": "A",
     "explanation": "The passage identifies a problem, presents multiple solutions, and evaluates each one's effectiveness.",
     "skill": "Text Organization",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "toefl_122",
@@ -3413,7 +3413,7 @@
     "correctAnswer": "A",
     "explanation": "Ribosomes read mRNA and assemble amino acids into polypeptide chains (protein synthesis).",
     "skill": "Detail Recognition",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "toefl_123",
@@ -3441,7 +3441,7 @@
     "correctAnswer": "A",
     "explanation": "'Impetus' means the force or energy with which something moves, or a driving force; stimulus.",
     "skill": "Vocabulary",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "toefl_124",
@@ -3469,7 +3469,7 @@
     "correctAnswer": "A",
     "explanation": "An appositive ('the lead researcher') is properly set off by commas on both sides.",
     "skill": "Appositives",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "toefl_125",
@@ -3497,7 +3497,7 @@
     "correctAnswer": "A",
     "explanation": "Osmosis is the movement of water across a semipermeable membrane from low to high solute concentration.",
     "skill": "Process Understanding",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "toefl_126",
@@ -3525,7 +3525,7 @@
     "correctAnswer": "A",
     "explanation": "The professor explains how Romantic artists reacted against industrial mechanization by celebrating nature and emotion.",
     "skill": "Main Point",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "toefl_127",
@@ -3553,7 +3553,7 @@
     "correctAnswer": "A",
     "explanation": "'Corroborate' means to confirm or give support to a statement, theory, or finding.",
     "skill": "Vocabulary",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "toefl_128",
@@ -3581,7 +3581,7 @@
     "correctAnswer": "A",
     "explanation": "The revision replaces a vague claim with specific reasoning and evidence, making the argument more persuasive.",
     "skill": "Argument Strength",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "toefl_129",
@@ -3609,7 +3609,7 @@
     "correctAnswer": "A",
     "explanation": "The passage emphasizes radiation and life-support as the most critical technical challenges.",
     "skill": "Main Challenge",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "toefl_130",
@@ -3637,7 +3637,7 @@
     "correctAnswer": "A",
     "explanation": "The double-slit experiment is foundational to quantum mechanics, demonstrating wave-particle duality.",
     "skill": "Significance",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "toefl_131",
@@ -3665,7 +3665,7 @@
     "correctAnswer": "A",
     "explanation": "'Precursor' means a person or thing that comes before another, often as a forerunner or predecessor.",
     "skill": "Vocabulary",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "toefl_132",
@@ -3693,7 +3693,7 @@
     "correctAnswer": "A",
     "explanation": "'In spite of' is followed by a noun phrase and introduces a concessive clause.",
     "skill": "Prepositions",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "toefl_133",
@@ -3721,7 +3721,7 @@
     "correctAnswer": "A",
     "explanation": "Photovoltaic cells use semiconductor materials to convert photon energy directly into electrical current.",
     "skill": "Process Understanding",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "toefl_134",
@@ -3749,7 +3749,7 @@
     "correctAnswer": "A",
     "explanation": "The professor advocates for education-based prevention rather than purely punitive measures.",
     "skill": "Detail Recognition",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "toefl_135",
@@ -3777,7 +3777,7 @@
     "correctAnswer": "A",
     "explanation": "'Prolific' means producing much; especially of an artist, author, or composer, producing many works.",
     "skill": "Vocabulary",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "toefl_136",
@@ -3805,7 +3805,7 @@
     "correctAnswer": "A",
     "explanation": "An effective topic sentence states the paragraph's main point clearly and previews the specific evidence.",
     "skill": "Topic Sentences",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "toefl_137",
@@ -3833,7 +3833,7 @@
     "correctAnswer": "A",
     "explanation": "The passage explains that protein function depends on shape, and misfolding is linked to neurodegenerative diseases.",
     "skill": "Cause and Effect",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "toefl_138",
@@ -3861,7 +3861,7 @@
     "correctAnswer": "A",
     "explanation": "'On the fence' is an idiom meaning undecided or neutral about an issue.",
     "skill": "Pragmatic Understanding",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "toefl_139",
@@ -3889,7 +3889,7 @@
     "correctAnswer": "A",
     "explanation": "'Propensity' means an inclination or natural tendency to behave in a particular way.",
     "skill": "Vocabulary",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "toefl_140",
@@ -3917,7 +3917,7 @@
     "correctAnswer": "A",
     "explanation": "APA format uses parenthetical citations with author surnames and year, as shown.",
     "skill": "Citation Formats",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "toefl_141",
@@ -3945,7 +3945,7 @@
     "correctAnswer": "A",
     "explanation": "The passage argues for a middle ground where economic and environmental goals are pursued simultaneously.",
     "skill": "Author's Position",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "toefl_142",
@@ -3973,7 +3973,7 @@
     "correctAnswer": "A",
     "explanation": "The professor distinguishes internal drivers (curiosity, enjoyment) from external rewards (grades, money).",
     "skill": "Compare and Contrast",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "toefl_143",
@@ -4001,7 +4001,7 @@
     "correctAnswer": "A",
     "explanation": "'Concomitant' means naturally accompanying or associated; happening at the same time.",
     "skill": "Vocabulary",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "toefl_144",
@@ -4029,7 +4029,7 @@
     "correctAnswer": "A",
     "explanation": "Effective synthesis combines information from multiple sources, showing relationships between different perspectives.",
     "skill": "Source Synthesis",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "toefl_145",
@@ -4057,7 +4057,7 @@
     "correctAnswer": "A",
     "explanation": "The endosymbiotic theory proposes that mitochondria were once free-living bacteria incorporated into ancestral eukaryotic cells.",
     "skill": "Detail Recognition",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "toefl_146",
@@ -4085,7 +4085,7 @@
     "correctAnswer": "A",
     "explanation": "Professors often pause to define technical terms to ensure comprehension before proceeding.",
     "skill": "Purpose",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "toefl_147",
@@ -4113,7 +4113,7 @@
     "correctAnswer": "A",
     "explanation": "'Pervasive' means spreading widely throughout an area or a group of people; prevalent.",
     "skill": "Vocabulary",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "toefl_148",
@@ -4141,7 +4141,7 @@
     "correctAnswer": "A",
     "explanation": "A proper paraphrase restates the idea using different vocabulary and sentence structure while preserving meaning.",
     "skill": "Paraphrasing",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "toefl_149",
@@ -4169,7 +4169,7 @@
     "correctAnswer": "A",
     "explanation": "Bactericidal antibiotics like penicillin interfere with cell wall construction, causing osmotic imbalance and cell death.",
     "skill": "Process Understanding",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "toefl_150",
@@ -4197,7 +4197,7 @@
     "correctAnswer": "A",
     "explanation": "The professor takes a moderate stance, recognizing both the utility and limitations of standardized testing.",
     "skill": "Main Conclusion",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "toefl_151",
@@ -4225,7 +4225,7 @@
     "correctAnswer": "A",
     "explanation": "'Elicit' means to draw out a response or reaction from someone.",
     "skill": "Vocabulary",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "toefl_152",
@@ -4253,7 +4253,7 @@
     "correctAnswer": "A",
     "explanation": "Replacing vague terms with specific ones (which government, what action, which problem) dramatically improves clarity.",
     "skill": "Specificity",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "toefl_153",
@@ -4281,7 +4281,7 @@
     "correctAnswer": "A",
     "explanation": "The passage explains the scientific distinction: hypotheses are proposed explanations needing testing; theories are extensively supported.",
     "skill": "Compare and Contrast",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "toefl_154",
@@ -4309,7 +4309,7 @@
     "correctAnswer": "A",
     "explanation": "The zipper analogy effectively illustrates how the double helix unwinds and each strand serves as a template.",
     "skill": "Analogy Recognition",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "toefl_155",
@@ -4337,7 +4337,7 @@
     "correctAnswer": "A",
     "explanation": "In context, 'mitigate' means to reduce or lessen the severity of the negative effects.",
     "skill": "Vocabulary in Context",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "toefl_156",
@@ -4365,7 +4365,7 @@
     "correctAnswer": "A",
     "explanation": "Integrated writing responses should immediately establish the relationship between the reading and lecture positions.",
     "skill": "Integrated Writing",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "toefl_157",
@@ -4393,7 +4393,7 @@
     "correctAnswer": "A",
     "explanation": "The passage presents a balanced view of urbanization's dual impact on developing economies.",
     "skill": "Main Argument",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "toefl_158",
@@ -4421,7 +4421,7 @@
     "correctAnswer": "A",
     "explanation": "The lecture distinguishes between short-term/working memory (limited capacity) and long-term memory (virtually unlimited).",
     "skill": "Detail Recognition",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "toefl_159",
@@ -4449,7 +4449,7 @@
     "correctAnswer": "A",
     "explanation": "'Predicated' means based or established on; founded upon.",
     "skill": "Vocabulary",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "toefl_160",
@@ -4477,7 +4477,7 @@
     "correctAnswer": "A",
     "explanation": "'Whereas' introduces a contrasting clause; a comma precedes it when joining two independent clauses.",
     "skill": "Contrast Connectors",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "toefl_161",
@@ -4505,7 +4505,7 @@
     "correctAnswer": "A",
     "explanation": "Multiple lines of evidence including fossil distribution, rock formations, and jigsaw-fit coastlines support continental drift.",
     "skill": "Supporting Evidence",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "toefl_162",
@@ -4533,7 +4533,7 @@
     "correctAnswer": "A",
     "explanation": "The professor discusses ethical challenges including data privacy, algorithmic bias, and over-reliance on technology.",
     "skill": "Detail Recognition",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "toefl_163",
@@ -4561,7 +4561,7 @@
     "correctAnswer": "A",
     "explanation": "'Autonomous' means having the freedom to govern itself or control its own affairs; independent.",
     "skill": "Vocabulary",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "toefl_164",
@@ -4589,7 +4589,7 @@
     "correctAnswer": "A",
     "explanation": "Effective examples are specific, relevant, and clearly connected to the point being made.",
     "skill": "Using Examples",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "toefl_165",
@@ -4617,7 +4617,7 @@
     "correctAnswer": "A",
     "explanation": "Academic conclusions synthesize key points and often look ahead to implications or needed research.",
     "skill": "Text Structure",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "toefl_166",
@@ -4645,7 +4645,7 @@
     "correctAnswer": "A",
     "explanation": "The professor explains how the sympathetic nervous system triggers adrenaline release for emergency response.",
     "skill": "Process Understanding",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "toefl_167",
@@ -4673,7 +4673,7 @@
     "correctAnswer": "A",
     "explanation": "'Delineate' means to describe or portray something precisely; to outline clearly.",
     "skill": "Vocabulary",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "toefl_168",
@@ -4701,7 +4701,7 @@
     "correctAnswer": "A",
     "explanation": "A bridge sentence connecting causes to solutions creates logical flow between paragraphs.",
     "skill": "Paragraph Transitions",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "toefl_169",
@@ -4729,7 +4729,7 @@
     "correctAnswer": "A",
     "explanation": "The placebo effect reveals the powerful connection between psychological expectation and physical outcome.",
     "skill": "Significance",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "toefl_170",
@@ -4757,7 +4757,7 @@
     "correctAnswer": "A",
     "explanation": "The professor defines confirmation bias as the tendency to favor information that supports pre-existing beliefs.",
     "skill": "Concept Definition",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "toefl_171",
@@ -4785,7 +4785,7 @@
     "correctAnswer": "A",
     "explanation": "'Nomenclature' refers to the devising or choosing of names for things, especially in a science or other discipline.",
     "skill": "Vocabulary",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "toefl_172",
@@ -4813,7 +4813,7 @@
     "correctAnswer": "A",
     "explanation": "Effective academic writing acknowledges specific limitations while maintaining the study's contribution.",
     "skill": "Academic Honesty",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "toefl_173",
@@ -4841,7 +4841,7 @@
     "correctAnswer": "A",
     "explanation": "The ozone layer in the stratosphere filters out harmful UV-B and UV-C radiation from the sun.",
     "skill": "Detail Recognition",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "toefl_174",
@@ -4869,7 +4869,7 @@
     "correctAnswer": "A",
     "explanation": "The professor uses the comparison to highlight both similarities and key differences in information processing.",
     "skill": "Compare and Contrast",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "toefl_175",
@@ -4897,7 +4897,7 @@
     "correctAnswer": "A",
     "explanation": "'Substantiate' means to provide evidence to support or prove the truth of something.",
     "skill": "Vocabulary",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "toefl_176",
@@ -4925,7 +4925,7 @@
     "correctAnswer": "A",
     "explanation": "TOEFL independent writing scores well with a clear structure: thesis, developed body paragraphs with examples, and conclusion.",
     "skill": "Writing Strategy",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "toefl_177",
@@ -4953,7 +4953,7 @@
     "correctAnswer": "A",
     "explanation": "Bioaccumulation of microplastics through the marine food chain poses risks to organisms at every trophic level, including humans.",
     "skill": "Main Concern",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "toefl_178",
@@ -4981,7 +4981,7 @@
     "correctAnswer": "A",
     "explanation": "The lecture explains how behavioral economics reveals systematic deviations from rational decision-making.",
     "skill": "Main Takeaway",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "toefl_179",
@@ -5009,7 +5009,7 @@
     "correctAnswer": "A",
     "explanation": "'Plausible' means seeming reasonable or probable; believable.",
     "skill": "Vocabulary",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "toefl_180",
@@ -5037,7 +5037,7 @@
     "correctAnswer": "A",
     "explanation": "Direct quotations are enclosed in quotation marks with proper attribution and citation format.",
     "skill": "Quotation Usage",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "toefl_181",
@@ -5065,7 +5065,7 @@
     "correctAnswer": "A",
     "explanation": "The passage emphasizes the scientific method as the Revolution's most transformative contribution to human knowledge.",
     "skill": "Main Innovation",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "toefl_182",
@@ -5093,7 +5093,7 @@
     "correctAnswer": "A",
     "explanation": "The professor gives a thoughtful response emphasizing the need for multiple perspectives.",
     "skill": "Speaker Response",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "toefl_183",
@@ -5121,7 +5121,7 @@
     "correctAnswer": "A",
     "explanation": "'Multifaceted' means having many facets, aspects, or dimensions; complex.",
     "skill": "Vocabulary",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "toefl_184",
@@ -5149,7 +5149,7 @@
     "correctAnswer": "A",
     "explanation": "A hook (question, quote, statistic, anecdote) engages the reader and motivates them to continue reading.",
     "skill": "Introduction Hooks",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "toefl_185",
@@ -5177,7 +5177,7 @@
     "correctAnswer": "A",
     "explanation": "Herd immunity occurs when enough people are immune that disease transmission becomes unlikely, protecting vulnerable individuals.",
     "skill": "Concept Understanding",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "toefl_186",
@@ -5205,7 +5205,7 @@
     "correctAnswer": "A",
     "explanation": "The professor specifically assigns a response paper focused on methodological analysis of the reading.",
     "skill": "Detail Recognition",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "toefl_187",
@@ -5233,7 +5233,7 @@
     "correctAnswer": "A",
     "explanation": "'Ascertain' means to find out or learn with certainty through examination or investigation.",
     "skill": "Vocabulary",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "toefl_188",
@@ -5261,7 +5261,7 @@
     "correctAnswer": "A",
     "explanation": "The revision replaces an appeal to authority fallacy with evidence-based reasoning.",
     "skill": "Logical Reasoning",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "toefl_189",
@@ -5289,7 +5289,7 @@
     "correctAnswer": "A",
     "explanation": "Decomposers (fungi, bacteria) break down dead matter, returning essential nutrients to the ecosystem.",
     "skill": "Detail Recognition",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "toefl_190",
@@ -5317,7 +5317,7 @@
     "correctAnswer": "A",
     "explanation": "The idiom advises diversification — using multiple methodological approaches strengthens research reliability.",
     "skill": "Pragmatic Understanding",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "toefl_191",
@@ -5345,7 +5345,7 @@
     "correctAnswer": "A",
     "explanation": "'Elucidate' means to make something clear; to explain or shed light on.",
     "skill": "Vocabulary",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "toefl_192",
@@ -5373,7 +5373,7 @@
     "correctAnswer": "A",
     "explanation": "Integrated writing requires explicitly identifying and explaining the relationship between the two sources.",
     "skill": "Integrated Writing",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "toefl_193",
@@ -5401,7 +5401,7 @@
     "correctAnswer": "A",
     "explanation": "At divergent boundaries, tectonic plates separate, and magma wells up to form new oceanic crust (e.g., mid-ocean ridges).",
     "skill": "Detail Recognition",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "toefl_194",
@@ -5429,7 +5429,7 @@
     "correctAnswer": "A",
     "explanation": "After the professor's advice to narrow her focus, the student settles on this specific topic.",
     "skill": "Detail Recognition",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "toefl_195",
@@ -5457,7 +5457,7 @@
     "correctAnswer": "A",
     "explanation": "'Equivocal' means open to more than one interpretation; ambiguous or uncertain.",
     "skill": "Vocabulary",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "toefl_196",
@@ -5485,7 +5485,7 @@
     "correctAnswer": "A",
     "explanation": "Peer-reviewed empirical research provides the most rigorous, reliable evidence for academic arguments.",
     "skill": "Evidence Hierarchy",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "toefl_197",
@@ -5513,7 +5513,7 @@
     "correctAnswer": "A",
     "explanation": "The passage acknowledges potential while noting that significant technical and economic hurdles remain.",
     "skill": "Conclusions",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "toefl_198",
@@ -5541,7 +5541,7 @@
     "correctAnswer": "A",
     "explanation": "The professor defines critical thinking as a multifaceted skill involving analysis, evaluation, and perspective-taking.",
     "skill": "Concept Definition",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "toefl_199",
@@ -5569,7 +5569,7 @@
     "correctAnswer": "A",
     "explanation": "'Disseminate' means to spread or disperse something, especially information, widely.",
     "skill": "Vocabulary",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "toefl_200",
@@ -5597,7 +5597,7 @@
     "correctAnswer": "A",
     "explanation": "An effective concluding sentence synthesizes the argument and leaves the reader with a compelling final thought.",
     "skill": "Concluding Sentences",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "toefl_201",
@@ -5608,7 +5608,7 @@
     "correctAnswer": null,
     "explanation": "This is an Independent Speaking task that requires personal opinion and justification. There are no predefined options; the student must generate their own response.",
     "skill": "Independent Speaking - Stating and Supporting an Opinion",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "toefl_202",
@@ -5619,7 +5619,7 @@
     "correctAnswer": null,
     "explanation": "This is an Independent Speaking task focused on personal experience and detailing a learning process. The student must provide a narrative with specifics.",
     "skill": "Independent Speaking - Describing Personal Experience",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "toefl_203",
@@ -5630,7 +5630,7 @@
     "correctAnswer": null,
     "explanation": "This Independent Speaking task requires an opinion on a proposed university policy, supported by reasons and examples.",
     "skill": "Independent Speaking - Expressing and Defending an Opinion on a Policy",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "toefl_204",
@@ -5641,18 +5641,7 @@
     "correctAnswer": null,
     "explanation": "This Independent Speaking task assesses creativity and the ability to elaborate on an imaginative concept with supporting details.",
     "skill": "Independent Speaking - Creative Elaboration and Justification",
-    "difficulty": "hard"
-  },
-  {
-    "id": "toefl_205",
-    "exam": "TOEFL",
-    "section": "Speaking",
-    "question": "You have 30 seconds to prepare and 60 seconds to speak. Respond to the following question:\n\nDescribe a time when you had to adapt to a new situation. What was the situation, and how did you adapt? Give specific examples to illustrate your experience.",
-    "options": [],
-    "correctAnswer": null,
-    "explanation": "This Independent Speaking task focuses on a personal narrative of adaptation, requiring a clear description of circumstances and the adaptation process.",
-    "skill": "Independent Speaking - Narrating and Explaining Adaptation",
-    "difficulty": "medium"
+    "difficulty": 7
   },
   {
     "id": "toefl_206",
@@ -5663,7 +5652,7 @@
     "correctAnswer": null,
     "explanation": "This is a Speaking-Integrated task. It requires summarizing the opinions of two speakers from a provided conversation about a campus issue (proposal to ban fast-food ads), and explaining their reasoning. The initial reading passage sets the context.",
     "skill": "Integrated Speaking - Summarizing Opinions and Reasons from Conversation",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "toefl_207",
@@ -5674,7 +5663,7 @@
     "correctAnswer": null,
     "explanation": "This is a Speaking-Integrated task. The student must summarize the opinions of two speakers in a conversation regarding a university plan (new library), and articulate their justifications.",
     "skill": "Integrated Speaking - Summarizing Views on a University Plan",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "toefl_208",
@@ -5685,7 +5674,7 @@
     "correctAnswer": null,
     "explanation": "This Speaking-Integrated task requires summarizing the main points of a lecture and explaining how those points challenge or support the proposal mentioned in the reading passage.",
     "skill": "Integrated Speaking - Summarizing Lecture and Relating to Reading",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "toefl_209",
@@ -5696,7 +5685,7 @@
     "correctAnswer": null,
     "explanation": "This Speaking-Integrated task requires summarizing a scientific explanation from a lecture, connecting it to a concept introduced in a reading passage. The focus is on explaining a process using specific details from the audio.",
     "skill": "Integrated Speaking - Explaining a Scientific Process from Lecture",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "toefl_210",
@@ -5707,7 +5696,7 @@
     "correctAnswer": null,
     "explanation": "This Speaking-Integrated task involves identifying and explaining the contrasting opinions of two students on a campus issue presented in a reading passage and a conversation.",
     "skill": "Integrated Speaking - Contrasting Opinions and Justifications",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "toefl_211",
@@ -5718,7 +5707,7 @@
     "correctAnswer": null,
     "explanation": "This Speaking-Integrated task requires summarizing supporting examples from a lecture and linking them back to a main idea presented in a reading passage.",
     "skill": "Integrated Speaking - Supporting Statement with Lecture Examples",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "toefl_212",
@@ -5729,7 +5718,7 @@
     "correctAnswer": null,
     "explanation": "This Speaking-Integrated task focuses on identifying and explaining the specific concerns raised by two students regarding a new university policy, as presented in a reading and a conversation.",
     "skill": "Integrated Speaking - Identifying and Explaining Concerns",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "toefl_213",
@@ -5740,7 +5729,7 @@
     "correctAnswer": null,
     "explanation": "This Speaking-Integrated task requires summarizing an experiment from a lecture and explaining how it illustrates or confirms a concept presented in a reading passage.",
     "skill": "Integrated Speaking - Explaining Experiment and Relating to Concept",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "toefl_214",
@@ -5751,7 +5740,7 @@
     "correctAnswer": null,
     "explanation": "This Speaking-Integrated task asks the student to summarize the differing opinions of two students regarding a proposed university policy change, along with their supporting reasons.",
     "skill": "Integrated Speaking - Presenting Differing Perspectives and Reasons",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "toefl_215",
@@ -5762,7 +5751,7 @@
     "correctAnswer": null,
     "explanation": "This Speaking-Integrated task requires synthesizing information from both a reading and a lecture, specifically focusing on how the lecture critically analyzes or expands upon the reading.",
     "skill": "Integrated Speaking - Analyzing and Synthesizing Historical Information",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "toefl_216",
@@ -5773,7 +5762,7 @@
     "correctAnswer": null,
     "explanation": "This Speaking-Integrated task requires identifying and explaining the different recommendations made by two students regarding a campus issue, based on provided survey results and their conversation.",
     "skill": "Integrated Speaking - Contrasting Recommendations and Justifications",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "toefl_217",
@@ -5784,7 +5773,7 @@
     "correctAnswer": null,
     "explanation": "This Speaking-Integrated task focuses on explaining a concept through specific examples provided in a lecture, and linking those examples back to the definition given in a reading passage.",
     "skill": "Integrated Speaking - Explaining Concept with Lecture Examples",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "toefl_218",
@@ -5795,7 +5784,7 @@
     "correctAnswer": null,
     "explanation": "This Speaking-Integrated task involves summarizing the varied opinions of two speakers in a conversation regarding a proposed university policy change, including their justifications.",
     "skill": "Integrated Speaking - Summarizing Mixed Reactions and Reasons",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "toefl_219",
@@ -5806,7 +5795,7 @@
     "correctAnswer": null,
     "explanation": "This Speaking-Integrated task requires synthesizing information about a technological innovation from both a reading passage (historical context) and a lecture (impact), and explaining the connection.",
     "skill": "Integrated Speaking - Linking Impact to Historical Context",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "toefl_220",
@@ -5817,7 +5806,7 @@
     "correctAnswer": null,
     "explanation": "This Speaking-Integrated task focuses on identifying and explaining the contrasting opinions of two students regarding a proposed change to the university's academic calendar.",
     "skill": "Integrated Speaking - Presenting Differing Viewpoints on Calendar Change",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "toefl_221",
@@ -5828,7 +5817,7 @@
     "correctAnswer": null,
     "explanation": "This Speaking-Integrated task requires summarizing illustrative examples from a lecture and connecting them to a definition provided in a reading passage.",
     "skill": "Integrated Speaking - Illustrating Economic Principle with Examples",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "toefl_222",
@@ -5839,7 +5828,7 @@
     "correctAnswer": null,
     "explanation": "This Speaking-Integrated task assesses the ability to summarize opposing viewpoints of two speakers on a university policy proposal, detailing their justifications.",
     "skill": "Integrated Speaking - Contrasting Opinions on Library Expansion",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "toefl_223",
@@ -5850,7 +5839,7 @@
     "correctAnswer": null,
     "explanation": "This Speaking-Integrated task requires summarizing a scientific explanation of a natural phenomenon, focusing on causes and effects using specific details from the lecture.",
     "skill": "Integrated Speaking - Explaining Natural Phenomenon Causes and Effects",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "toefl_224",
@@ -5861,7 +5850,7 @@
     "correctAnswer": null,
     "explanation": "This Speaking-Integrated task involves identifying and explaining the contrasting viewpoints of two students regarding a proposed policy change affecting textbook returns.",
     "skill": "Integrated Speaking - Presenting Perspectives on Textbook Policy",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "toefl_225",
@@ -5872,35 +5861,7 @@
     "correctAnswer": null,
     "explanation": "This Speaking-Integrated task requires synthesizing information about a historical event's immediate consequences (reading) and long-term impacts (lecture), and explaining the relationship between them.",
     "skill": "Integrated Speaking - Differentiating Immediate vs. Long-Term Impacts",
-    "difficulty": "hard"
-  },
-  {
-    "id": "toefl_226",
-    "exam": "TOEFL",
-    "section": "Listening",
-    "question": "What is the main topic of the lecture?",
-    "options": [
-      {
-        "label": "A",
-        "text": "The impact of volcanic ash on global climate."
-      },
-      {
-        "label": "B",
-        "text": "The geological formation of volcanic islands."
-      },
-      {
-        "label": "C",
-        "text": "The historical use of volcanic rock in construction."
-      },
-      {
-        "label": "D",
-        "text": "The process of magma formation deep within the Earth."
-      }
-    ],
-    "correctAnswer": "A",
-    "explanation": "The lecture discusses how volcanic eruptions release ash and gases that can affect atmospheric temperatures and weather patterns worldwide.",
-    "skill": "Identifying the Main Idea",
-    "difficulty": "easy"
+    "difficulty": 7
   },
   {
     "id": "toefl_227",
@@ -5928,7 +5889,7 @@
     "correctAnswer": "B",
     "explanation": "The speaker explains that volcanic ash can block sunlight, leading to a reduction in the amount of solar radiation reaching the Earth's surface, thus causing cooling.",
     "skill": "Understanding Details",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "toefl_228",
@@ -5956,7 +5917,7 @@
     "correctAnswer": "A",
     "explanation": "The professor uses the Tambora eruption as a prime example of a massive eruption with significant global climate impacts, strongly implying it was one of the largest.",
     "skill": "Making Inferences",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "toefl_229",
@@ -5984,7 +5945,7 @@
     "correctAnswer": "B",
     "explanation": "The speaker explains that sulfur dioxide reacts with water in the atmosphere to form aerosols that reflect solar radiation, contributing to a cooling effect.",
     "skill": "Understanding Purpose",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "toefl_230",
@@ -6012,7 +5973,7 @@
     "correctAnswer": "C",
     "explanation": "The professor discusses various monitoring techniques but also admits that predicting the exact timing and intensity remains difficult, suggesting a cautious optimism about ongoing research.",
     "skill": "Inferring Speaker's Attitude",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "toefl_231",
@@ -6040,7 +6001,7 @@
     "correctAnswer": "A",
     "explanation": "The student begins by asking for help finding resources for a paper on Renaissance art.",
     "skill": "Identifying Key Information",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "toefl_232",
@@ -6068,7 +6029,7 @@
     "correctAnswer": "C",
     "explanation": "The student explains that while there are many books on Renaissance art, finding information specifically on the economic factors influencing Florentine painters was proving difficult.",
     "skill": "Understanding Problems and Solutions",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "toefl_233",
@@ -6096,7 +6057,7 @@
     "correctAnswer": "A",
     "explanation": "The librarian recommends broadening the search to include books on the economic history of Florence during the Renaissance, as this might contain the relevant details.",
     "skill": "Understanding Recommendations",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "toefl_234",
@@ -6124,7 +6085,7 @@
     "correctAnswer": "C",
     "explanation": "The librarian listens to the student's problem and offers advice on how to find the information they need, acting as a research guide.",
     "skill": "Determining Speaker's Role",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "toefl_235",
@@ -6152,7 +6113,7 @@
     "correctAnswer": "B",
     "explanation": "By suggesting the student look into economic history for an art paper, the librarian implies that successful research often requires connecting different academic disciplines.",
     "skill": "Making Inferences",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "toefl_236",
@@ -6180,7 +6141,7 @@
     "correctAnswer": "B",
     "explanation": "While migration and challenges are mentioned, the core of the lecture is about the biological adaptations and mechanisms that enable birds to undertake such arduous flights.",
     "skill": "Identifying the Main Idea",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "toefl_237",
@@ -6208,7 +6169,7 @@
     "correctAnswer": "B",
     "explanation": "The lecture details how birds have evolved lungs and air sacs that allow for a continuous one-way flow of oxygenated air, crucial for the high energy demands of flight.",
     "skill": "Understanding Details",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "toefl_238",
@@ -6236,7 +6197,7 @@
     "correctAnswer": "B",
     "explanation": "The speaker explains that birds utilize multiple navigational aids, such as the position of the sun, stars, and the Earth's magnetic field, to orient themselves.",
     "skill": "Understanding Details",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "toefl_239",
@@ -6264,7 +6225,7 @@
     "correctAnswer": "A",
     "explanation": "This phrase is a metaphor referring to the birds' ability to store significant amounts of fat, which serves as their primary energy source for long flights.",
     "skill": "Understanding Figurative Language",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "toefl_240",
@@ -6292,7 +6253,7 @@
     "correctAnswer": "B",
     "explanation": "The lecture focuses on the physiological adaptations that minimize energy waste and maximize energy usage, showcasing the remarkable efficiency that allows for long flights.",
     "skill": "Understanding Purpose",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "toefl_241",
@@ -6320,7 +6281,7 @@
     "correctAnswer": "B",
     "explanation": "The discussion centers on how integrated public transportation systems contribute to environmental sustainability, economic viability, and social equity in urban areas.",
     "skill": "Identifying the Main Idea",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "toefl_242",
@@ -6348,7 +6309,7 @@
     "correctAnswer": "B",
     "explanation": "The speakers explicitly state that a well-developed public transit system encourages people to use alternatives to personal cars, thereby reducing the number of vehicles on the road.",
     "skill": "Understanding Details",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "toefl_243",
@@ -6376,7 +6337,7 @@
     "correctAnswer": "B",
     "explanation": "She expresses concern that transit systems are often disconnected, making it difficult for people to travel efficiently between different modes or areas.",
     "skill": "Making Inferences",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "toefl_244",
@@ -6404,7 +6365,7 @@
     "correctAnswer": "B",
     "explanation": "The speakers suggest that seamless connections between buses, trains, and other options make public transport a more convenient and attractive choice compared to using a private car.",
     "skill": "Understanding Purpose",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "toefl_245",
@@ -6432,7 +6393,7 @@
     "correctAnswer": "B",
     "explanation": "He emphasizes that cities need to commit significant resources to build and maintain efficient, accessible public transport networks as a foundation for sustainability.",
     "skill": "Identifying Key Information",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "toefl_246",
@@ -6460,7 +6421,7 @@
     "correctAnswer": "A",
     "explanation": "The lecture focuses on Johannes Gutenberg and his invention of the movable-type printing press in Europe, detailing its process and significance.",
     "skill": "Identifying the Main Idea",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "toefl_247",
@@ -6488,7 +6449,7 @@
     "correctAnswer": "C",
     "explanation": "The professor explains that the laborious process of monks and scribes meticulously copying texts by hand was the standard method for book production before the printing press.",
     "skill": "Understanding Details",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "toefl_248",
@@ -6516,7 +6477,7 @@
     "correctAnswer": "C",
     "explanation": "The key innovation discussed is Gutenberg's system of casting individual letters from metal, which could then be assembled into pages, inked, and printed, and subsequently reused.",
     "skill": "Understanding Details",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "toefl_249",
@@ -6544,7 +6505,7 @@
     "correctAnswer": "B",
     "explanation": "The lecture highlights how the efficiency of the printing press drastically lowered the cost per book and increased production volume, making knowledge more widely available.",
     "skill": "Understanding Cause and Effect",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "toefl_250",
@@ -6572,7 +6533,7 @@
     "correctAnswer": "B",
     "explanation": "The professor consistently emphasizes the transformative nature of the printing press, referring to it as a turning point that fundamentally changed how information was created, shared, and consumed.",
     "skill": "Inferring Speaker's Attitude",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "toefl_251",
@@ -6600,7 +6561,7 @@
     "correctAnswer": "B",
     "explanation": "The passage explicitly states that carbon dioxide, water, and sunlight are the primary inputs for photosynthesis in plants.",
     "skill": "Detail",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "toefl_252",
@@ -6628,7 +6589,7 @@
     "correctAnswer": "D",
     "explanation": "The passage details how aqueducts were engineered to transport fresh water from distant sources to urban centers for public use.",
     "skill": "Main Idea",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "toefl_253",
@@ -6656,7 +6617,7 @@
     "correctAnswer": "C",
     "explanation": "The context describes the long and challenging journey of the Arctic Tern, implying that 'arduous' refers to a demanding or difficult undertaking.",
     "skill": "Vocabulary",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "toefl_254",
@@ -6684,7 +6645,7 @@
     "correctAnswer": "C",
     "explanation": "The passage explains that the Colorado River, through its continuous flow and sediment transport, was the main force responsible for carving the canyon over millions of years.",
     "skill": "Detail",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "toefl_255",
@@ -6712,7 +6673,7 @@
     "correctAnswer": "C",
     "explanation": "While plate tectonics profoundly shapes the Earth's surface and influences many geological processes, the formation of fossil fuels is primarily linked to the accumulation and transformation of organic matter over geological time, not directly to tectonic plate movement itself.",
     "skill": "Inference",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "toefl_256",
@@ -6740,7 +6701,7 @@
     "correctAnswer": "C",
     "explanation": "The passage emphasizes how the printing press made books more accessible and affordable, thus enabling wider dissemination of information and fostering intellectual movements.",
     "skill": "Inference",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "toefl_257",
@@ -6768,7 +6729,7 @@
     "correctAnswer": "B",
     "explanation": "The text generally uses 'celestial body' to encompass all natural objects found in the universe, including planets, moons, asteroids, and comets.",
     "skill": "Vocabulary",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "toefl_258",
@@ -6796,7 +6757,7 @@
     "correctAnswer": "C",
     "explanation": "Inertia is the tendency of an object to resist changes in its state of motion. When the bus stops abruptly, the passenger's body continues to move forward due to inertia.",
     "skill": "Application",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "toefl_259",
@@ -6824,7 +6785,7 @@
     "correctAnswer": "C",
     "explanation": "The passage outlines the metamorphosis, where the pupa (or chrysalis) stage is followed by the emergence of the adult butterfly.",
     "skill": "Detail",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "toefl_260",
@@ -6852,7 +6813,7 @@
     "correctAnswer": "B",
     "explanation": "The Industrial Revolution led to the mechanization of production, drawing large numbers of people from rural areas and farms into urban factories for work.",
     "skill": "Detail",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "toefl_261",
@@ -6880,7 +6841,7 @@
     "correctAnswer": "B",
     "explanation": "Stoicism emphasizes maintaining a calm and rational state of mind, even in the face of adversity. 'Equanimity' signifies this composure.",
     "skill": "Vocabulary",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "toefl_262",
@@ -6908,7 +6869,7 @@
     "correctAnswer": "B",
     "explanation": "The text clarifies that arteries are defined by their role in transporting oxygenated blood (except for the pulmonary artery) away from the heart to the rest of the body.",
     "skill": "Detail",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "toefl_263",
@@ -6936,7 +6897,7 @@
     "correctAnswer": "C",
     "explanation": "Genetic diversity refers to the variation within a single species. Different breeds of dogs showcase variations in genes within the species *Canis lupus familiaris*.",
     "skill": "Application",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "toefl_264",
@@ -6964,7 +6925,7 @@
     "correctAnswer": "B",
     "explanation": "Humanism during the Renaissance shifted focus towards human capabilities, achievements, and potential, drawing inspiration from classical antiquity.",
     "skill": "Main Idea",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "toefl_265",
@@ -6992,7 +6953,7 @@
     "correctAnswer": "B",
     "explanation": "The prefix 'nucleo-' relates to nuclei, and '-synthesis' means the creation or formation of something. Therefore, nucleosynthesis refers to the creation of atomic nuclei.",
     "skill": "Vocabulary",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "toefl_266",
@@ -7020,7 +6981,7 @@
     "correctAnswer": "C",
     "explanation": "The passage explicitly states that the Great Wall was constructed for defensive purposes, to protect against invasions and control borders.",
     "skill": "Detail",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "toefl_267",
@@ -7048,7 +7009,7 @@
     "correctAnswer": "B",
     "explanation": "Demographics refers to population statistics. 'Upheaval' indicates profound disruption. Thus, 'demographic upheaval' means major changes in population numbers and composition, consistent with a devastating plague.",
     "skill": "Vocabulary",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "toefl_268",
@@ -7076,7 +7037,7 @@
     "correctAnswer": "C",
     "explanation": "The passage defines quantum entanglement as a phenomenon where two or more particles become linked in such a way that they share the same fate, meaning a measurement on one instantly affects the others, irrespective of their separation.",
     "skill": "Main Idea",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "toefl_269",
@@ -7104,7 +7065,7 @@
     "correctAnswer": "B",
     "explanation": "The passage contrasts the primary purposes, stating Egyptian pyramids were largely tombs, whereas Mayan pyramids had a broader function including temples and ritual centers, often built atop earlier structures.",
     "skill": "Comparison/Contrast",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "toefl_270",
@@ -7132,7 +7093,7 @@
     "correctAnswer": "B",
     "explanation": "The text details that bioluminescence serves multiple survival functions for deep-sea organisms, including attracting prey, finding mates, and deterring predators.",
     "skill": "Detail",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "toefl_271",
@@ -7160,7 +7121,7 @@
     "correctAnswer": "C",
     "explanation": "The passage describes the Neolithic Revolution as a fundamental shift in human history, marking a transition from nomadic hunting and gathering to settled farming, implying a deep and extensive impact.",
     "skill": "Vocabulary",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "toefl_272",
@@ -7188,7 +7149,7 @@
     "correctAnswer": "B",
     "explanation": "The passage explains that natural selection favors traits that enhance survival and reproduction, leading to species becoming better suited, or adapted, to their specific environments over time.",
     "skill": "Main Idea",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "toefl_273",
@@ -7216,7 +7177,7 @@
     "correctAnswer": "C",
     "explanation": "The passage explicitly states that the cerebellum is responsible for coordinating muscle movements, posture, balance, and possibly motor learning.",
     "skill": "Detail",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "toefl_274",
@@ -7244,7 +7205,7 @@
     "correctAnswer": "B",
     "explanation": "The passage clearly defines precipitation as any form of water, such as rain, snow, sleet, or hail, that falls from the atmosphere to the Earth's surface.",
     "skill": "Detail",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "toefl_275",
@@ -7272,7 +7233,7 @@
     "correctAnswer": "B",
     "explanation": "The passage explains that flying buttresses were key structural elements in Gothic architecture, enabling the construction of taller buildings with large, ornate windows by transferring the roof's thrust away from the walls.",
     "skill": "Detail/Inference",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "toefl_276",
@@ -7304,7 +7265,7 @@
     "correctAnswer": "C",
     "explanation": "While some context might be necessary, a lengthy historical background before the topic sentence can obscure the main point and make the paragraph unfocused. The other options are generally effective ways to introduce or transition to a topic sentence.",
     "skill": "Structure and Cohesion",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "toefl_277",
@@ -7336,7 +7297,7 @@
     "correctAnswer": "C",
     "explanation": "Option C maintains the academic tone while being clearer and more direct than the original sentence. Option A is too informal ('old ways'). Option B is grammatically awkward. Option D is slightly convoluted. Option E is good but C is slightly more concise.",
     "skill": "Clarity and Conciseness",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "toefl_278",
@@ -7368,7 +7329,7 @@
     "correctAnswer": "C",
     "explanation": "The phrase 'As a result of' explicitly signals a cause-and-effect relationship, indicating that the increased rainfall (cause) led to something else (effect).",
     "skill": "Transitions and Connectors",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "toefl_279",
@@ -7400,7 +7361,7 @@
     "correctAnswer": "A",
     "explanation": "The introductory phrase 'Walking through the park' should modify the subject performing the action. In this sentence, it incorrectly modifies 'the birds'. The sentence should be rewritten to clarify who was walking, e.g., 'Walking through the park, I heard the birds singing beautifully.'",
     "skill": "Sentence Structure (Modifiers)",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "toefl_280",
@@ -7432,7 +7393,7 @@
     "correctAnswer": "C",
     "explanation": "Option C presents a clear, specific, and arguable claim that outlines the main points to be discussed in the essay (mitigating climate change, fostering economic stability, ensuring environmental sustainability). The other options are too general, merely descriptive, or state a problem without a clear argumentative stance.",
     "skill": "Thesis Statement Development",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "toefl_281",
@@ -7464,7 +7425,7 @@
     "correctAnswer": "B",
     "explanation": "Option B correctly uses a non-restrictive relative clause ('which focused on the Amazon rainforest') to provide additional information about the study, seamlessly integrating all the core ideas.",
     "skill": "Sentence Combining (Relative Clauses)",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "toefl_282",
@@ -7496,7 +7457,7 @@
     "correctAnswer": "C",
     "explanation": "Option C uses parallel structure by listing three noun phrases: 'the challenge,' 'the opportunity for growth,' and 'the chance to collaborate.' Options A, B, D, and E contain errors in parallel structure.",
     "skill": "Parallel Structure",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "toefl_283",
@@ -7528,7 +7489,7 @@
     "correctAnswer": "B",
     "explanation": "The conclusion should effectively wrap up the essay by reinforcing the main arguments and restating the central thesis, providing a sense of closure without introducing new information.",
     "skill": "Essay Structure (Conclusion)",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "toefl_284",
@@ -7560,7 +7521,7 @@
     "correctAnswer": "B",
     "explanation": "Option B correctly uses commas to separate items in a series (registered, paid, attended). The Oxford comma (before 'and') is optional but standard in academic writing. Option A omits the Oxford comma, which is acceptable but less preferred in some contexts. Option C is missing commas entirely. Option D uses a colon instead of commas. Option E uses colons and commas correctly but is not a simple series of three items needing separation.",
     "skill": "Punctuation (Commas in Series)",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "toefl_285",
@@ -7592,7 +7553,7 @@
     "correctAnswer": "C",
     "explanation": "'Nevertheless' is a conjunctive adverb used to introduce a statement that contrasts with or seems to contradict the previous statement.",
     "skill": "Transitions and Connectors",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "toefl_286",
@@ -7624,7 +7585,7 @@
     "correctAnswer": "B",
     "explanation": "The clause 'which was collected over a six-month period' is non-restrictive because it provides extra information about the data but is not essential for identifying *which* data is being discussed. The commas surrounding it also signal a non-restrictive clause.",
     "skill": "Sentence Structure (Relative Clauses)",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "toefl_287",
@@ -7656,7 +7617,7 @@
     "correctAnswer": "C",
     "explanation": "Option C creates a clear and sophisticated sentence by using a noun phrase ('The company's implementation...') as the subject and directly linking it to the result ('resulted in a 15% increase...'). Options A, B, D, and E are grammatically correct but less concise or sophisticated in showing the relationship.",
     "skill": "Sentence Combining",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "toefl_288",
@@ -7688,7 +7649,7 @@
     "correctAnswer": "A",
     "explanation": "This sentence has a dangling modifier. It's unclear whether the relatives are the ones visiting or if the act of visiting relatives is boring. To correct it: 'Visiting relatives can be boring' or 'When visiting relatives, one can find it boring.'",
     "skill": "Sentence Structure (Modifiers)",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "toefl_289",
@@ -7720,7 +7681,7 @@
     "correctAnswer": "D",
     "explanation": "Option D uses strong conjunctive adverbs ('subsequently,' 'finally') to clearly indicate the sequence of events in a sophisticated manner. While A, C, and E also use transitional phrases, D offers the most formal and effective sequencing.",
     "skill": "Transitions and Connectors",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "toefl_290",
@@ -7752,7 +7713,7 @@
     "correctAnswer": "E",
     "explanation": "The phrase 'On the one hand... On the other hand...' is explicitly used to present contrasting viewpoints or arguments, which is ideal for discussing a topic with conflicting research results as indicated in the prompt.",
     "skill": "Transitions and Connectors",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "toefl_291",
@@ -7784,7 +7745,7 @@
     "correctAnswer": "C",
     "explanation": "Option C is the most concise because it uses verbs ('analysis revealed,' 'system had failed') instead of turning verbs into nouns ('implementation,' 'improvement,' 'review,' 'investigation,' 'expansion'). For example, Option A could be: 'Implementing the new policy improved efficiency.'",
     "skill": "Clarity and Conciseness (Nominalization)",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "toefl_292",
@@ -7816,7 +7777,7 @@
     "correctAnswer": "D",
     "explanation": "All options A, B, and C demonstrate correct semicolon usage. A semicolon can connect two closely related independent clauses (A, C). It can also connect two independent clauses joined by a conjunctive adverb (B).",
     "skill": "Punctuation (Semicolons)",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "toefl_293",
@@ -7848,7 +7809,7 @@
     "correctAnswer": "B",
     "explanation": "Option B clearly states the main idea of the paragraph—the environmental benefits of recycling, specifically mentioning resource conservation and pollution reduction. It is specific and arguable, setting the stage for supporting details.",
     "skill": "Topic Sentence Development",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "toefl_294",
@@ -7880,7 +7841,7 @@
     "correctAnswer": "E",
     "explanation": "All options A, B, C, and D correctly fix the comma splice. Option A uses a comma and coordinating conjunction. Option B uses a semicolon. Option C subordinates one clause using 'Because.' Option D uses a participial phrase.",
     "skill": "Punctuation (Comma Splices)",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "toefl_295",
@@ -7912,7 +7873,7 @@
     "correctAnswer": "D",
     "explanation": "Since the clause is set off by commas, it is a non-restrictive relative clause. It adds extra information about the manuscript (that it was written in Latin) but is not crucial for identifying *which* manuscript is being discussed (assuming context already makes that clear).",
     "skill": "Sentence Structure (Relative Clauses)",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "toefl_296",
@@ -7944,7 +7905,7 @@
     "correctAnswer": "C",
     "explanation": "Option C correctly uses an apostrophe to show possession ('the chapters belonging to the book'). Option A should be 'The dog's bark'. Option B should be 'The children's toys'. Option D should be 'The leader's decision'. Option E should be 'The company's profits'.",
     "skill": "Punctuation (Apostrophes)",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "toefl_297",
@@ -7976,7 +7937,7 @@
     "correctAnswer": "C",
     "explanation": "Option C uses an appositive phrase ('a significant issue') to integrate the two ideas smoothly and concisely, creating a more sophisticated sentence structure than simple conjunctions or causal links.",
     "skill": "Sentence Combining and Flow",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "toefl_298",
@@ -8008,7 +7969,7 @@
     "correctAnswer": "C",
     "explanation": "The point-by-point method is generally more effective for comparison and contrast essays because it allows for direct comparison of specific features or aspects, making the similarities and differences clearer to the reader.",
     "skill": "Essay Structure (Comparison/Contrast)",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "toefl_299",
@@ -8040,7 +8001,7 @@
     "correctAnswer": "C",
     "explanation": "In sentences with 'neither...nor,' the verb agrees with the subject closest to it. In this case, 'coach' is singular, so the verb should be singular: 'was'. The sentence should read: 'Neither the team nor the coach was available for comment.'",
     "skill": "Grammar (Subject-Verb Agreement)",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "toefl_300",
@@ -8072,6 +8033,6 @@
     "correctAnswer": "B",
     "explanation": "'In essence' is commonly used to introduce a summary or the fundamental point of what has been discussed, signalling a conclusion or synthesis of arguments.",
     "skill": "Transitions and Connectors",
-    "difficulty": "easy"
+    "difficulty": 3
   }
 ]

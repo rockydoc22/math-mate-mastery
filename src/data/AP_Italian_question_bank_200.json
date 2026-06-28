@@ -1,42 +1,42 @@
 [
   {
-    "id": "AP_Italian_1",
-    "question": "Completate la frase: Se io _______ più tempo, viaggerei di più.",
-    "choices": {
-      "A": "avessi",
-      "B": "avrei",
-      "C": "ho",
-      "D": "abbia"
-    },
-    "answer": "A",
-    "difficulty": 7,
-    "explanation": "Periodo ipotetico del 2° tipo: Se + congiuntivo imperfetto, condizionale presente."
-  },
-  {
     "id": "AP_Italian_2",
     "question": "'Meglio un uovo oggi che una gallina domani' significa:",
     "choices": {
       "A": "Non rubare uova",
-      "B": "Meglio avere qualcosa di sicuro che sperare in qualcosa di più grande",
+      "B": "La natura è importante",
       "C": "Bisogna lavorare sodo",
-      "D": "La natura è importante"
+      "D": "Meglio avere qualcosa di sicuro che sperare in qualcosa di più grande"
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 5,
     "explanation": "Equivalent to 'A bird in the hand is worth two in the bush.'"
   },
   {
-    "id": "AP_Italian_3",
-    "question": "La cucina del Sud Italia è caratterizzata da:",
+    "id": "AP_Italian_146",
+    "question": "Spero che tu _______ presto.",
     "choices": {
-      "A": "Burro e riso",
-      "B": "Olio d'oliva e pasta",
-      "C": "Spezie orientali",
-      "D": "Carne di maiale"
+      "A": "guarisca",
+      "B": "guarisci",
+      "C": "è guarito",
+      "D": "guarisce"
     },
-    "answer": "B",
-    "difficulty": 5,
-    "explanation": "Southern Italian cuisine favors olive oil and pasta, while the North uses more butter and rice."
+    "answer": "A",
+    "difficulty": 6,
+    "explanation": "Il verbo 'sperare che' regge il congiuntivo. 'Guarisca' è la terza persona singolare del congiuntivo presente del verbo 'guarire'."
+  },
+  {
+    "id": "AP_Italian_147",
+    "question": "È importante che tutti _______ la verità.",
+    "choices": {
+      "A": "dicano",
+      "B": "dicono",
+      "C": "dissero",
+      "D": "diranno"
+    },
+    "answer": "A",
+    "difficulty": 6,
+    "explanation": "L'espressione 'è importante che' richiede il congiuntivo. 'Dicano' è la terza persona plurale del congiuntivo presente del verbo 'dire'."
   },
   {
     "id": "AP_Italian_4",
@@ -55,12 +55,12 @@
     "id": "AP_Italian_5",
     "question": "Le ragazze _______ al cinema ieri sera.",
     "choices": {
-      "A": "sono andate",
+      "A": "hanno andate",
       "B": "hanno andato",
       "C": "sono andati",
-      "D": "hanno andate"
+      "D": "sono andate"
     },
-    "answer": "A",
+    "answer": "D",
     "difficulty": 6,
     "explanation": "'Andare' uses 'essere'; participle agrees with feminine plural subject: 'andate.'"
   },
@@ -81,12 +81,12 @@
     "id": "AP_Italian_7",
     "question": "Il libro _______ sto leggendo è molto interessante.",
     "choices": {
-      "A": "che",
+      "A": "chi",
       "B": "cui",
       "C": "il quale",
-      "D": "chi"
+      "D": "che"
     },
-    "answer": "A",
+    "answer": "D",
     "difficulty": 6,
     "explanation": "'Che' is the relative pronoun for subject and direct object."
   },
@@ -260,17 +260,17 @@
     "explanation": "Pizza Margherita originated in Naples."
   },
   {
-    "id": "AP_Italian_21",
-    "question": "Se avessi studiato di più, ________.",
+    "id": "AP_Italian_144",
+    "question": "Cosa significa l'espressione idiomatica 'fare la bella vita'?",
     "choices": {
-      "A": "avrei preso un voto migliore",
-      "B": "prenderei un voto migliore",
-      "C": "prendo un voto migliore",
-      "D": "avrei preso un voto peggiore"
+      "A": "Vivere in modo lussuoso e agiato",
+      "B": "Essere molto impegnati",
+      "C": "Essere molto magri",
+      "D": "Fare una dieta"
     },
     "answer": "A",
     "difficulty": 7,
-    "explanation": "Questa è una frase ipotetica del terzo tipo (irrealtà nel passato). Si usa il congiuntivo trapassato nella proposizione introdotta da 'se' e il condizionale passato nella proposizione principale. 'Avessi studiato' (congiuntivo trapassato) richiede 'avrei preso' (condizionale passato)."
+    "explanation": "'Fare la bella vita' significa godersi una vita piacevole, confortevole e spesso dispendiosa."
   },
   {
     "id": "AP_Italian_22",
@@ -303,11 +303,11 @@
     "question": "Preferirei andare al cinema ________ stare a casa.",
     "choices": {
       "A": "invece",
-      "B": "piuttosto che",
+      "B": "poiché",
       "C": "anche se",
-      "D": "poiché"
+      "D": "piuttosto che"
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 6,
     "explanation": "'Preferirei... piuttosto che...' è la struttura corretta per esprimere una preferenza tra due azioni. Significa 'I would rather... than...'."
   },
@@ -406,12 +406,12 @@
     "id": "AP_Italian_32",
     "question": "Se tu ________ più attento, non avresti fatto questo errore.",
     "choices": {
-      "A": "fossi stato",
+      "A": "sei stato",
       "B": "eri stato",
       "C": "fossi",
-      "D": "sei stato"
+      "D": "fossi stato"
     },
-    "answer": "A",
+    "answer": "D",
     "difficulty": 8,
     "explanation": "Questa è una frase ipotetica del terzo tipo (irrealtà nel passato). Richiede il congiuntivo trapassato ('fossi stato') nella proposizione introdotta da 'se' e il condizionale passato nella proposizione principale ('non avresti fatto')."
   },
@@ -458,12 +458,12 @@
     "id": "AP_Italian_36",
     "question": "È importante ________ tutti partecipino.",
     "choices": {
-      "A": "che",
+      "A": "per",
       "B": "di",
       "C": "a",
-      "D": "per"
+      "D": "che"
     },
-    "answer": "A",
+    "answer": "D",
     "difficulty": 6,
     "explanation": "Dopo espressioni impersonali di importanza, necessità, obbligo, ecc. come 'È importante', si usa la congiunzione 'che' seguita dal congiuntivo ('partecipino')."
   },
@@ -510,12 +510,12 @@
     "id": "AP_Italian_40",
     "question": "Mi sembra ________ un vero peccato.",
     "choices": {
-      "A": "essere",
+      "A": "essendo",
       "B": "sia",
       "C": "è",
-      "D": "essendo"
+      "D": "essere"
     },
-    "answer": "A",
+    "answer": "D",
     "difficulty": 5,
     "explanation": "'Mi sembra' seguito da un infinito è una struttura comune per esprimere un'opinione o un'impressione. 'Essere' è l'infinito del verbo essere."
   },
@@ -550,11 +550,11 @@
     "question": "Mi ha chiesto ________ avrei dormito.",
     "choices": {
       "A": "dove",
-      "B": "come",
+      "B": "che",
       "C": "quando",
-      "D": "che"
+      "D": "come"
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 6,
     "explanation": "La domanda indiretta riguarda il modo in cui l'azione è avvenuta. 'Come' è il pronome interrogativo appropriato per chiedere il modo."
   },
@@ -601,12 +601,12 @@
     "id": "AP_Italian_47",
     "question": "Completa la frase: Spero che tu _______ bene a scuola.",
     "choices": {
-      "A": "vada",
+      "A": "andresti",
       "B": "vai",
       "C": "sono andato",
-      "D": "andresti"
+      "D": "vada"
     },
-    "answer": "A",
+    "answer": "D",
     "difficulty": 6,
     "explanation": "Dopo 'spero che', che esprime un desiderio, si usa il congiuntivo. Il congiuntivo presente del verbo 'andare' per la seconda persona singolare è 'vada'."
   },
@@ -772,10 +772,10 @@
     "choices": {
       "A": "ho",
       "B": "avevo",
-      "C": "avessi",
-      "D": "avrei"
+      "C": "avrei",
+      "D": "avessi"
     },
-    "answer": "C",
+    "answer": "D",
     "difficulty": 7,
     "explanation": "Questa è una frase ipotetica irreale nel presente o futuro. Si usa il congiuntivo imperfetto: 'Se avessi'."
   },
@@ -809,12 +809,12 @@
     "id": "AP_Italian_63",
     "question": "Quale preposizione è usata per indicare il mezzo o il modo?",
     "choices": {
-      "A": "con",
+      "A": "tra",
       "B": "su",
       "C": "per",
-      "D": "tra"
+      "D": "con"
     },
-    "answer": "A",
+    "answer": "D",
     "difficulty": 5,
     "explanation": "La preposizione 'con' può indicare il mezzo (es. andare con la macchina) o il modo (es. parlare con gentilezza)."
   },
@@ -993,10 +993,10 @@
     "choices": {
       "A": "sono andato",
       "B": "andai",
-      "C": "andavo",
-      "D": "sarei andato"
+      "C": "sarei andato",
+      "D": "andavo"
     },
-    "answer": "C",
+    "answer": "D",
     "difficulty": 5,
     "explanation": "'Quando ero bambino' stabilisce un contesto passato e abituale. L'imperfetto ('andavo') è usato per descrivere azioni abituali o ripetute nel passato."
   },
@@ -1006,10 +1006,10 @@
     "choices": {
       "A": "camminavano",
       "B": "camminarono",
-      "C": "hanno camminato",
-      "D": "camminerebbero"
+      "C": "camminerebbero",
+      "D": "hanno camminato"
     },
-    "answer": "C",
+    "answer": "D",
     "difficulty": 5,
     "explanation": "'La settimana scorsa' indica un momento specifico nel passato. Il passato prossimo ('hanno camminato') è appropriato per descrivere un'azione completata in quel periodo."
   },
@@ -1040,19 +1040,6 @@
     "explanation": "La congiunzione 'dopo che' introduce una proposizione temporale. Quando l'azione della temporale è anteriore a quella della principale nel passato, si usa il trapassato prossimo. 'Uscimmo' è passato remoto (o passato prossimo in alcuni contesti), quindi 'avevamo mangiato' è l'azione anteriore."
   },
   {
-    "id": "AP_Italian_81",
-    "question": "Preferirei andare al cinema ______ stare a casa.",
-    "choices": {
-      "A": "con",
-      "B": "a",
-      "C": "di",
-      "D": "per"
-    },
-    "answer": "B",
-    "difficulty": 5,
-    "explanation": "Dopo il verbo 'preferire' quando si confrontano due azioni, si usa la preposizione 'a' seguita dall'infinito. 'Preferirei andare... a stare...'"
-  },
-  {
     "id": "AP_Italian_82",
     "question": "Il libro ______ cui ti ho parlato è molto interessante.",
     "choices": {
@@ -1069,12 +1056,12 @@
     "id": "AP_Italian_83",
     "question": "Ho comprato un regalo ______ mia madre.",
     "choices": {
-      "A": "per",
+      "A": "di",
       "B": "a",
       "C": "con",
-      "D": "di"
+      "D": "per"
     },
-    "answer": "A",
+    "answer": "D",
     "difficulty": 5,
     "explanation": "La preposizione 'per' indica il destinatario di un'azione o di un oggetto. 'Un regalo per mia madre'."
   },
@@ -1105,19 +1092,6 @@
     "explanation": "L'espressione 'avere bisogno di' regge la preposizione 'di'. 'Ho bisogno di aiuto'."
   },
   {
-    "id": "AP_Italian_86",
-    "question": "L'espressione 'in bocca al lupo' significa:",
-    "choices": {
-      "A": "Buona fortuna",
-      "B": "Mi dispiace",
-      "C": "Grazie mille",
-      "D": "Non capisco"
-    },
-    "answer": "A",
-    "difficulty": 6,
-    "explanation": "'In bocca al lupo' è un modo di dire tradizionale italiano per augurare buona fortuna."
-  },
-  {
     "id": "AP_Italian_87",
     "question": "Se qualcuno ti dice 'Che pizza!', cosa intende?",
     "choices": {
@@ -1135,11 +1109,11 @@
     "question": "L'espressione 'avere la testa tra le nuvole' significa:",
     "choices": {
       "A": "Essere molto intelligenti",
-      "B": "Essere distratti, sognare ad occhi aperti",
+      "B": "Essere felici",
       "C": "Essere arrabbiati",
-      "D": "Essere felici"
+      "D": "Essere distratti, sognare ad occhi aperti"
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 6,
     "explanation": "Questo modo di dire descrive una persona che non presta attenzione a ciò che accade intorno a sé perché è persa nei propri pensieri o sogni."
   },
@@ -1252,11 +1226,11 @@
     "question": "Completa la frase con il passato prossimo corretto: Ieri, Maria ______ un libro interessante.",
     "choices": {
       "A": "legge",
-      "B": "ha letto",
+      "B": "leggerà",
       "C": "leggesse",
-      "D": "leggerà"
+      "D": "ha letto"
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 5,
     "explanation": "La frase si riferisce a un'azione completata nel passato ('ieri'). Il passato prossimo ('ha letto') è il tempo verbale più appropriato per descrivere eventi specifici e conclusi nel passato."
   },
@@ -1291,11 +1265,11 @@
     "question": "Cosa significa l'espressione idiomatica 'in bocca al lupo'? ",
     "choices": {
       "A": "Ti auguro il peggio",
-      "B": "Buona fortuna",
+      "B": "Sono malato",
       "C": "Stai attento",
-      "D": "Sono malato"
+      "D": "Buona fortuna"
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 8,
     "explanation": "'In bocca al lupo' è un'espressione comune utilizzata per augurare buona fortuna a qualcuno."
   },
@@ -1339,43 +1313,43 @@
     "explanation": "Il passato remoto è usato per narrare eventi storici conclusi e lontani nel tempo. La Divina Commedia è un'opera scritta nel XIV secolo, quindi il passato remoto ('scrisse') è appropriato."
   },
   {
-    "id": "AP_Italian_104",
-    "question": "Quale preposizione si usa per indicare il possesso? Questo libro è ______ Marco.",
+    "id": "AP_Italian_1",
+    "question": "Completate la frase: Se io _______ più tempo, viaggerei di più.",
     "choices": {
-      "A": "a",
-      "B": "di",
-      "C": "con",
-      "D": "su"
+      "A": "avessi",
+      "B": "avrei",
+      "C": "ho",
+      "D": "abbia"
     },
-    "answer": "B",
-    "difficulty": 5,
-    "explanation": "La preposizione 'di' è utilizzata per esprimere possesso, appartenenza o relazione ('il libro di Marco')."
+    "answer": "A",
+    "difficulty": 7,
+    "explanation": "Periodo ipotetico del 2° tipo: Se + congiuntivo imperfetto, condizionale presente."
   },
   {
-    "id": "AP_Italian_105",
-    "question": "Qual è il significato di 'soggiorno'?",
+    "id": "AP_Italian_21",
+    "question": "Se avessi studiato di più, ________.",
     "choices": {
-      "A": "Una stanza da letto",
-      "B": "Il salotto o la sala da pranzo",
-      "C": "La cucina",
-      "D": "Il bagno"
+      "A": "avrei preso un voto migliore",
+      "B": "prenderei un voto migliore",
+      "C": "prendo un voto migliore",
+      "D": "avrei preso un voto peggiore"
     },
-    "answer": "B",
-    "difficulty": 6,
-    "explanation": "'Soggiorno' si riferisce comunemente alla stanza in cui si vive e si accolgono ospiti, solitamente il salotto o la sala da pranzo."
+    "answer": "A",
+    "difficulty": 7,
+    "explanation": "Questa è una frase ipotetica del terzo tipo (irrealtà nel passato). Si usa il congiuntivo trapassato nella proposizione introdotta da 'se' e il condizionale passato nella proposizione principale. 'Avessi studiato' (congiuntivo trapassato) richiede 'avrei preso' (condizionale passato)."
   },
   {
-    "id": "AP_Italian_106",
-    "question": "Quale espressione si usa per chiedere un'opinione? ",
+    "id": "AP_Italian_3",
+    "question": "La cucina del Sud Italia è caratterizzata da:",
     "choices": {
-      "A": "Mi dispiace",
-      "B": "Che ne pensi?",
-      "C": "Grazie mille",
-      "D": "Non capisco"
+      "A": "Burro e riso",
+      "B": "Carne di maiale",
+      "C": "Spezie orientali",
+      "D": "Olio d'oliva e pasta"
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 5,
-    "explanation": "'Che ne pensi?' è una domanda diretta utilizzata per sollecitare l'opinione di qualcuno."
+    "explanation": "Southern Italian cuisine favors olive oil and pasta, while the North uses more butter and rice."
   },
   {
     "id": "AP_Italian_107",
@@ -1407,12 +1381,12 @@
     "id": "AP_Italian_109",
     "question": "Completa la frase con il futuro anteriore: Quando ______ il tempo, andremo al mare.",
     "choices": {
-      "A": "avrò",
+      "A": "avessi",
       "B": "ho",
       "C": "avrà",
-      "D": "avessi"
+      "D": "avrò"
     },
-    "answer": "A",
+    "answer": "D",
     "difficulty": 8,
     "explanation": "Nelle proposizioni temporali introdotte da 'quando', se l'azione della principale è nel futuro, quella della subordinata, che è anteriore, richiede il futuro anteriore. 'Quando avrò tempo' (futuro anteriore) 'andremo al mare' (futuro semplice)."
   },
@@ -1447,11 +1421,11 @@
     "question": "Cosa significa l'espressione idiomatica 'fare le cose con i piedi'? ",
     "choices": {
       "A": "Fare qualcosa con molta cura",
-      "B": "Fare qualcosa in modo disordinato o approssimativo",
+      "B": "Essere molto stanco",
       "C": "Fare sport",
-      "D": "Essere molto stanco"
+      "D": "Fare qualcosa in modo disordinato o approssimativo"
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 8,
     "explanation": "L'espressione 'fare le cose con i piedi' indica che si sta agendo in maniera caotica, poco attenta e inefficiente."
   },
@@ -1590,11 +1564,11 @@
     "question": "Quale preposizione si usa comunemente con il verbo 'pensare' quando si parla di un'idea o di un'opinione?",
     "choices": {
       "A": "a",
-      "B": "di",
+      "B": "con",
       "C": "in",
-      "D": "con"
+      "D": "di"
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 6,
     "explanation": "Generalmente si pensa 'di' qualcosa o qualcuno quando si esprime un'opinione o un'idea. Es: 'Penso di sì'."
   },
@@ -1642,11 +1616,11 @@
     "question": "Quale forma del passato prossimo è corretta qui? \"Loro _______ già partenza.\"",
     "choices": {
       "A": "hanno fatto",
-      "B": "hanno preso",
+      "B": "sono presi",
       "C": "sono fatti",
-      "D": "sono presi"
+      "D": "hanno preso"
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 6,
     "explanation": "Si usa 'prendere' per 'fare' un viaggio o una partenza nel senso di intraprenderla. 'Hanno preso' è il passato prossimo corretto."
   },
@@ -1747,10 +1721,10 @@
     "choices": {
       "A": "Michelangelo",
       "B": "Raffaello",
-      "C": "Leonardo da Vinci",
-      "D": "Caravaggio"
+      "C": "Caravaggio",
+      "D": "Leonardo da Vinci"
     },
-    "answer": "C",
+    "answer": "D",
     "difficulty": 5,
     "explanation": "Leonardo da Vinci è stato un artista poliedrico del Rinascimento italiano e l'autore della Gioconda."
   },
@@ -1758,12 +1732,12 @@
     "id": "AP_Italian_136",
     "question": "Completa la frase con il congiuntivo trapassato: \"Se tu _______ preparato meglio, avresti superato l'esame.\"",
     "choices": {
-      "A": "avessi preparato",
+      "A": "avessi studiato",
       "B": "avevi preparato",
       "C": "fossi preparato",
-      "D": "avessi studiato"
+      "D": "avessi preparato"
     },
-    "answer": "A",
+    "answer": "D",
     "difficulty": 8,
     "explanation": "Il congiuntivo trapassato si usa nelle frasi ipotetiche del terzo tipo (irrealtà nel passato) per esprimere una condizione che non si è verificata. Si forma con l'ausiliare congiuntivo imperfetto più il participio passato."
   },
@@ -1859,17 +1833,17 @@
     "explanation": "La preposizione 'in' si usa per indicare un luogo generico o una città. Es: 'Sono in Italia', 'Sono in ufficio'."
   },
   {
-    "id": "AP_Italian_144",
-    "question": "Cosa significa l'espressione idiomatica 'fare la bella vita'?",
+    "id": "AP_Italian_104",
+    "question": "Quale preposizione si usa per indicare il possesso? Questo libro è ______ Marco.",
     "choices": {
-      "A": "Vivere in modo lussuoso e agiato",
-      "B": "Essere molto impegnati",
-      "C": "Essere molto magri",
-      "D": "Fare una dieta"
+      "A": "a",
+      "B": "di",
+      "C": "con",
+      "D": "su"
     },
-    "answer": "A",
-    "difficulty": 7,
-    "explanation": "'Fare la bella vita' significa godersi una vita piacevole, confortevole e spesso dispendiosa."
+    "answer": "B",
+    "difficulty": 5,
+    "explanation": "La preposizione 'di' è utilizzata per esprimere possesso, appartenenza o relazione ('il libro di Marco')."
   },
   {
     "id": "AP_Italian_145",
@@ -1885,41 +1859,41 @@
     "explanation": "Il Parmigiano Reggiano è un formaggio DOP prodotto principalmente in Emilia-Romagna."
   },
   {
-    "id": "AP_Italian_146",
-    "question": "Spero che tu _______ presto.",
+    "id": "AP_Italian_105",
+    "question": "Qual è il significato di 'soggiorno'?",
     "choices": {
-      "A": "guarisca",
-      "B": "guarisci",
-      "C": "è guarito",
-      "D": "guarisce"
+      "A": "Una stanza da letto",
+      "B": "Il salotto o la sala da pranzo",
+      "C": "La cucina",
+      "D": "Il bagno"
     },
-    "answer": "A",
+    "answer": "B",
     "difficulty": 6,
-    "explanation": "Il verbo 'sperare che' regge il congiuntivo. 'Guarisca' è la terza persona singolare del congiuntivo presente del verbo 'guarire'."
+    "explanation": "'Soggiorno' si riferisce comunemente alla stanza in cui si vive e si accolgono ospiti, solitamente il salotto o la sala da pranzo."
   },
   {
-    "id": "AP_Italian_147",
-    "question": "È importante che tutti _______ la verità.",
+    "id": "AP_Italian_106",
+    "question": "Quale espressione si usa per chiedere un'opinione? ",
     "choices": {
-      "A": "dicano",
-      "B": "dicono",
-      "C": "dissero",
-      "D": "diranno"
+      "A": "Mi dispiace",
+      "B": "Che ne pensi?",
+      "C": "Grazie mille",
+      "D": "Non capisco"
     },
-    "answer": "A",
-    "difficulty": 6,
-    "explanation": "L'espressione 'è importante che' richiede il congiuntivo. 'Dicano' è la terza persona plurale del congiuntivo presente del verbo 'dire'."
+    "answer": "B",
+    "difficulty": 5,
+    "explanation": "'Che ne pensi?' è una domanda diretta utilizzata per sollecitare l'opinione di qualcuno."
   },
   {
     "id": "AP_Italian_148",
     "question": "Non credo che lui _______ quello che dice.",
     "choices": {
-      "A": "voglia",
+      "A": "vorrà",
       "B": "vuole",
       "C": "volesse",
-      "D": "vorrà"
+      "D": "voglia"
     },
-    "answer": "A",
+    "answer": "D",
     "difficulty": 7,
     "explanation": "Il verbo 'credere che' seguito da un'opinione negativa o incerta regge il congiuntivo. 'Voglia' è la terza persona singolare del congiuntivo presente del verbo 'volere'."
   },
@@ -2018,12 +1992,12 @@
     "id": "AP_Italian_156",
     "question": "Ieri sera, Marco _______ la televisione.",
     "choices": {
-      "A": "ha guardato",
+      "A": "guarderà",
       "B": "guardava",
       "C": "guardò",
-      "D": "guarderà"
+      "D": "ha guardato"
     },
-    "answer": "A",
+    "answer": "D",
     "difficulty": 6,
     "explanation": "L'avverbio 'ieri sera' indica un'azione conclusa nel passato, quindi si usa il passato prossimo. 'Ha guardato' è il passato prossimo di 'guardare'."
   },
@@ -2187,12 +2161,12 @@
     "id": "AP_Italian_169",
     "question": "Se _______ più studioso, probabilmente _______ la promozione.",
     "choices": {
-      "A": "fossi / avresti ottenuto",
+      "A": "fui / ottenni",
       "B": "eri / ottenevi",
       "C": "sarai / otterrai",
-      "D": "fui / ottenni"
+      "D": "fossi / avresti ottenuto"
     },
-    "answer": "A",
+    "answer": "D",
     "difficulty": 9,
     "explanation": "Questo è un periodo ipotetico dell'irrealtà nel passato. La protasi richiede il congiuntivo imperfetto ('fossi'), mentre l'apodosi richiede il condizionale passato ('avresti ottenuto')."
   },
@@ -2240,11 +2214,11 @@
     "question": "Hanno ______ Roma l'anno scorso.",
     "choices": {
       "A": "in",
-      "B": "a",
+      "B": "per",
       "C": "da",
-      "D": "per"
+      "D": "a"
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 5,
     "explanation": "La preposizione 'a' si usa generalmente per indicare il moto verso un luogo, specialmente città e isole."
   },
@@ -2327,19 +2301,6 @@
     "explanation": "Federico Fellini è il regista del celebre film 'La Dolce Vita' (1960), un'icona del cinema italiano."
   },
   {
-    "id": "AP_Italian_180",
-    "question": "Mi dispiace ______ non poter venire alla festa.",
-    "choices": {
-      "A": "di",
-      "B": "a",
-      "C": "che",
-      "D": "per"
-    },
-    "answer": "A",
-    "difficulty": 6,
-    "explanation": "Dopo espressioni come 'mi dispiace', 'sono lieto', 'sono contento', quando seguite da un verbo all'infinito, si usa la preposizione 'di'."
-  },
-  {
     "id": "AP_Italian_181",
     "question": "Il congiuntivo trapassato è usato per esprimere:",
     "choices": {
@@ -2382,12 +2343,12 @@
     "id": "AP_Italian_184",
     "question": "Se fossi stato qui, ______ il concerto.",
     "choices": {
-      "A": "avrei visto",
+      "A": "vide",
       "B": "vedrei",
       "C": "vedevo",
-      "D": "vide"
+      "D": "avrei visto"
     },
-    "answer": "A",
+    "answer": "D",
     "difficulty": 7,
     "explanation": "Corrisponde alla struttura della frase ipotetica dell'irrealtà nel passato. 'Se fossi stato' (congiuntivo trapassato) richiede 'avrei visto' (condizionale passato)."
   },
@@ -2408,12 +2369,12 @@
     "id": "AP_Italian_186",
     "question": "Mi meraviglio ______ la tua gentilezza.",
     "choices": {
-      "A": "di",
+      "A": "con",
       "B": "a",
       "C": "per",
-      "D": "con"
+      "D": "di"
     },
-    "answer": "A",
+    "answer": "D",
     "difficulty": 6,
     "explanation": "Il verbo 'meravigliarsi' regge la preposizione 'di' quando si riferisce alla causa della meraviglia."
   },
@@ -2449,10 +2410,10 @@
     "choices": {
       "A": "Avere la luna storta",
       "B": "Avere un chiodo fisso",
-      "C": "Essere con l'acqua alla gola",
-      "D": "Essere pieno come un uovo"
+      "C": "Essere pieno come un uovo",
+      "D": "Essere con l'acqua alla gola"
     },
-    "answer": "C",
+    "answer": "D",
     "difficulty": 7,
     "explanation": "'Essere con l'acqua alla gola' è un modo di dire che significa trovarsi in una situazione difficile o di grande pressione, spesso lavorativa o finanziaria, quindi essere molto occupati o in difficoltà."
   },
@@ -2564,12 +2525,12 @@
     "id": "AP_Italian_198",
     "question": "È necessario ______ i compiti prima di uscire.",
     "choices": {
-      "A": "fare",
+      "A": "facessi",
       "B": "fai",
       "C": "faccia",
-      "D": "facessi"
+      "D": "fare"
     },
-    "answer": "A",
+    "answer": "D",
     "difficulty": 5,
     "explanation": "Espressioni impersonali come 'è necessario', 'è importante', 'è bene' reggono l'infinito quando il soggetto della principale e della subordinata coincidono o la subordinata è una forma implicita."
   },
@@ -2669,11 +2630,11 @@
     "question": "Quale parola è un sinonimo di 'felice'?",
     "choices": {
       "A": "Triste",
-      "B": "Allegro",
+      "B": "Stanco",
       "C": "Arrabbiato",
-      "D": "Stanco"
+      "D": "Allegro"
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 5,
     "explanation": "'Allegro' è un sinonimo di 'felice', entrambi indicano uno stato d'animo positivo e gioioso."
   },
@@ -2812,11 +2773,11 @@
     "question": "Scegli la preposizione corretta: 'Ho comprato questo regalo _______ te.'",
     "choices": {
       "A": "da",
-      "B": "per",
+      "B": "di",
       "C": "a",
-      "D": "di"
+      "D": "per"
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 5,
     "explanation": "La preposizione 'per' indica il destinatario di un regalo o di un'azione. 'Ho comprato questo regalo per te'."
   },
@@ -2837,12 +2798,12 @@
     "id": "AP_Italian_219",
     "question": "Completa la frase con il participio passato corretto: 'La lettera _______ da Mario non è ancora arrivata.'",
     "choices": {
-      "A": "scritta",
+      "A": "scrisse",
       "B": "scritto",
       "C": "scrivi",
-      "D": "scrisse"
+      "D": "scritta"
     },
-    "answer": "A",
+    "answer": "D",
     "difficulty": 6,
     "explanation": "La frase usa una forma passiva/participiale. 'Lettera' è femminile singolare, quindi il participio passato del verbo 'scrivere' deve concordare in genere e numero: 'scritta'."
   },
@@ -2967,12 +2928,12 @@
     "id": "AP_Italian_229",
     "question": "Quale verbo è usato in modo improprio nella seguente frase: 'Mi sono dimenticato le chiavi a casa.'",
     "choices": {
-      "A": "Mi sono dimenticato",
+      "A": "sono",
       "B": "le chiavi",
       "C": "a casa",
-      "D": "sono"
+      "D": "Mi sono dimenticato"
     },
-    "answer": "A",
+    "answer": "D",
     "difficulty": 6,
     "explanation": "Il verbo 'dimenticarsi' regge il complemento oggetto introdotto dalla preposizione 'di'. La forma corretta sarebbe 'Mi sono dimenticato *delle* chiavi'."
   },
@@ -3020,11 +2981,11 @@
     "question": "Qual è il significato di 'tagliare la corda'?",
     "choices": {
       "A": "Rompere un accordo",
-      "B": "Andarsene, fuggire",
+      "B": "Essere molto fortunato",
       "C": "Fare buon viso a cattivo gioco",
-      "D": "Essere molto fortunato"
+      "D": "Andarsene, fuggire"
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 7,
     "explanation": "'Tagliare la corda' è un'espressione idiomatica che significa allontanarsi rapidamente da un luogo o da una situazione, spesso per sfuggire a qualcosa."
   },
@@ -3032,12 +2993,12 @@
     "id": "AP_Italian_234",
     "question": "Completa la frase con il pronome relativo corretto: 'Ho letto il libro __________ mi hai prestato.'",
     "choices": {
-      "A": "che",
+      "A": "chi",
       "B": "cui",
       "C": "il quale",
-      "D": "chi"
+      "D": "che"
     },
-    "answer": "A",
+    "answer": "D",
     "difficulty": 5,
     "explanation": "'Che' è il pronome relativo più comune e si usa quando introduce un complemento oggetto diretto. In questo caso, 'il libro' è l'oggetto diretto di 'hai prestato'."
   },
@@ -3084,27 +3045,14 @@
     "id": "AP_Italian_238",
     "question": "Quale preposizione è più adatta per indicare il mezzo di trasporto? 'Andiamo a Milano __________ treno.'",
     "choices": {
-      "A": "in",
+      "A": "per",
       "B": "con",
       "C": "a",
-      "D": "per"
+      "D": "in"
     },
-    "answer": "A",
+    "answer": "D",
     "difficulty": 5,
     "explanation": "Generalmente si usa 'in' per indicare il mezzo di trasporto: 'andare in treno', 'viaggiare in aereo'."
-  },
-  {
-    "id": "AP_Italian_239",
-    "question": "Qual è il significato di 'in bocca al lupo'?",
-    "choices": {
-      "A": "Un augurio di buona fortuna",
-      "B": "Un invito a mangiare",
-      "C": "Una richiesta di aiuto",
-      "D": "Un complimento"
-    },
-    "answer": "A",
-    "difficulty": 6,
-    "explanation": "'In bocca al lupo' è un'espressione idiomatica usata per augurare buona fortuna a qualcuno, specialmente prima di una prova o di un evento importante. La risposta tradizionale è 'Crepi il lupo!'."
   },
   {
     "id": "AP_Italian_240",
@@ -3136,12 +3084,12 @@
     "id": "AP_Italian_242",
     "question": "Quale preposizione si usa per indicare il tempo indeterminato? 'Mi piace studiare __________ sera.'",
     "choices": {
-      "A": "la",
+      "A": "a",
       "B": "di",
       "C": "in",
-      "D": "a"
+      "D": "la"
     },
-    "answer": "A",
+    "answer": "D",
     "difficulty": 5,
     "explanation": "Per indicare un momento della giornata indeterminato o abituale, si usa l'articolo determinativo: 'la sera', 'il mattino', 'il pomeriggio'."
   },
@@ -3149,12 +3097,12 @@
     "id": "AP_Italian_243",
     "question": "Qual è il significato di 'rompere il ghiaccio'?",
     "choices": {
-      "A": "Iniziare una conversazione in modo amichevole",
+      "A": "Essere molto freddi",
       "B": "Raffreddare un ambiente",
       "C": "Superare un ostacolo difficile",
-      "D": "Essere molto freddi"
+      "D": "Iniziare una conversazione in modo amichevole"
     },
-    "answer": "A",
+    "answer": "D",
     "difficulty": 7,
     "explanation": "'Rompere il ghiaccio' è un'espressione idiomatica che significa creare un'atmosfera più rilassata e amichevole, spesso all'inizio di un incontro o di una conversazione tra persone che non si conoscono bene."
   },
@@ -3202,11 +3150,11 @@
     "question": "Qual è il significato di 'avere a che fare con qualcuno/qualcosa'?",
     "choices": {
       "A": "Evitare qualcuno/qualcosa",
-      "B": "Occuparsi di qualcuno/qualcosa, avere a che fare con",
+      "B": "Litigare con qualcuno",
       "C": "Essere d'accordo con qualcuno",
-      "D": "Litigare con qualcuno"
+      "D": "Occuparsi di qualcuno/qualcosa, avere a che fare con"
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 6,
     "explanation": "L'espressione significa interagire, occuparsi, avere a che fare, confrontarsi con una persona o una situazione."
   },
@@ -3250,32 +3198,6 @@
     "explanation": "Il congiuntivo presente per la terza persona singolare dei verbi in -are si forma aggiungendo '-i' alla radice. 'Mangiare' diventa 'lui mangi'."
   },
   {
-    "id": "AP_Italian_251",
-    "question": "Completa la frase con il passato prossimo corretto: Ieri, noi ______ al cinema.",
-    "choices": {
-      "A": "andiamo",
-      "B": "siamo andati",
-      "C": "andammo",
-      "D": "andavamo"
-    },
-    "answer": "B",
-    "difficulty": 6,
-    "explanation": "Il passato prossimo si usa per azioni concluse nel passato. 'Andare' è un verbo di moto e richiede l'ausiliare 'essere'. 'Noi siamo andati'."
-  },
-  {
-    "id": "AP_Italian_252",
-    "question": "Quale preposizione è più appropriata per indicare il luogo di provenienza?",
-    "choices": {
-      "A": "a",
-      "B": "in",
-      "C": "di",
-      "D": "da"
-    },
-    "answer": "C",
-    "difficulty": 5,
-    "explanation": "La preposizione 'di' si usa comunemente per indicare la provenienza geografica ('Sono di Roma')."
-  },
-  {
     "id": "AP_Italian_253",
     "question": "Qual è il significato della parola 'sgabuzzino'?",
     "choices": {
@@ -3300,19 +3222,6 @@
     "answer": "D",
     "difficulty": 6,
     "explanation": "'Avere fretta' è un modo di dire comune che significa fare qualcosa velocemente per non perdere tempo."
-  },
-  {
-    "id": "AP_Italian_255",
-    "question": "Quale evento storico è celebrato il 25 aprile in Italia?",
-    "choices": {
-      "A": "La Festa della Repubblica",
-      "B": "La Liberazione dal nazifascismo",
-      "C": "L'Unità d'Italia",
-      "D": "Ognissanti"
-    },
-    "answer": "B",
-    "difficulty": 7,
-    "explanation": "Il 25 aprile è la Festa della Liberazione, che commemora la fine dell'occupazione nazista e del regime fascista durante la Seconda Guerra Mondiale."
   },
   {
     "id": "AP_Italian_256",
@@ -3358,11 +3267,11 @@
     "question": "Trova il sinonimo di 'sbrigativo'.",
     "choices": {
       "A": "Lento",
-      "B": "Affrettato",
+      "B": "Paziente",
       "C": "Preciso",
-      "D": "Paziente"
+      "D": "Affrettato"
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 7,
     "explanation": "'Sbrigativo' significa che agisce in modo rapido, affrettato."
   },
@@ -3398,10 +3307,10 @@
     "choices": {
       "A": "in",
       "B": "di",
-      "C": "a",
-      "D": "l'"
+      "C": "l'",
+      "D": "a"
     },
-    "answer": "C",
+    "answer": "D",
     "difficulty": 5,
     "explanation": "Per indicare un giorno specifico della settimana si usa la preposizione 'a' o più comunemente l'articolo determinativo ('il lunedì', 'di lunedì', ma anche 'a lunedì' in alcuni contesti)."
   },
@@ -3448,12 +3357,12 @@
     "id": "AP_Italian_266",
     "question": "Quale preposizione si usa per indicare il possesso con 'essere'?",
     "choices": {
-      "A": "di",
+      "A": "con",
       "B": "a",
       "C": "da",
-      "D": "con"
+      "D": "di"
     },
-    "answer": "A",
+    "answer": "D",
     "difficulty": 5,
     "explanation": "La preposizione 'di' si usa comunemente per esprimere possesso con il verbo essere ('Questo libro è di Maria')."
   },
@@ -3475,11 +3384,11 @@
     "question": "Completa la frase con il congiuntivo passato: Penso che tu ______ già mangiato.",
     "choices": {
       "A": "hai",
-      "B": "abbia",
+      "B": "avevi",
       "C": "abbia avuto",
-      "D": "avevi"
+      "D": "abbia"
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 7,
     "explanation": "Il congiuntivo passato si forma con il congiuntivo presente dell'ausiliare (avere/essere) + participio passato del verbo principale. 'Penso che tu abbia mangiato'."
   },
@@ -3495,19 +3404,6 @@
     "answer": "C",
     "difficulty": 8,
     "explanation": "Mentre spesso sono intercambiabili, 'tanto' può essere usato come pronome indefinito ('Ne ho mangiati tanti'), cosa che 'molto' non può fare in quel contesto. Entrambi possono modificare aggettivi e avverbi."
-  },
-  {
-    "id": "AP_Italian_270",
-    "question": "Quale preposizione si usa per indicare il mezzo di trasporto?",
-    "choices": {
-      "A": "in",
-      "B": "con",
-      "C": "a",
-      "D": "su"
-    },
-    "answer": "A",
-    "difficulty": 5,
-    "explanation": "Per i mezzi di trasporto si usa generalmente la preposizione 'in' ('Vado in macchina', 'Vado in treno'). Eccezioni esistono (es. 'a piedi')."
   },
   {
     "id": "AP_Italian_271",
@@ -3527,11 +3423,11 @@
     "question": "Completa la frase con il condizionale presente: Io ______ volentieri un caffè.",
     "choices": {
       "A": "bevo",
-      "B": "berei",
+      "B": "bevo",
       "C": "ho bevuto",
-      "D": "bevo"
+      "D": "berei"
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 5,
     "explanation": "Il condizionale presente si usa per esprimere desideri, consigli, o possibilità. 'Io berrei'."
   },
@@ -3578,12 +3474,12 @@
     "id": "AP_Italian_276",
     "question": "Completa la frase: Spero che tu _______ presto a casa.",
     "choices": {
-      "A": "arrivi",
+      "A": "arrivasse",
       "B": "arrivi",
       "C": "arrivo",
-      "D": "arrivasse"
+      "D": "arrivi"
     },
-    "answer": "A",
+    "answer": "D",
     "difficulty": 5,
     "explanation": "Il verbo 'sperare' esprime un'emozione e richiede l'uso del congiuntivo presente ('arrivi') nella proposizione subordinata. La risposta B è identica alla A, ma solitamente si presenta una sola opzione corretta nei test. Assumiamo che una delle due sia un errore di battitura e che la risposta corretta sia 'arrivi'."
   },
@@ -3643,12 +3539,12 @@
     "id": "AP_Italian_281",
     "question": "Qual è il significato dell'espressione idiomatica 'in bocca al lupo'?",
     "choices": {
-      "A": "Buona fortuna",
+      "A": "Un saluto affettuoso",
       "B": "Buon appetito",
       "C": "Un augurio di buona salute",
-      "D": "Un saluto affettuoso"
+      "D": "Buona fortuna"
     },
-    "answer": "A",
+    "answer": "D",
     "difficulty": 7,
     "explanation": "'In bocca al lupo' è un modo di dire molto comune in italiano per augurare buona fortuna, specialmente prima di un esame, una performance o una prova difficile. La risposta tradizionale è 'Crepi il lupo!'."
   },
@@ -3683,11 +3579,11 @@
     "question": "Completa la frase: Vorrei _______ un caffè, per favore.",
     "choices": {
       "A": "bere",
-      "B": "prendere",
+      "B": "avere",
       "C": "fare",
-      "D": "avere"
+      "D": "prendere"
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 5,
     "explanation": "In italiano, si usa comunemente il verbo 'prendere' per ordinare o consumare bevande e cibi (es. 'prendere un caffè', 'prendere un panino'). Anche 'bere' è corretto, ma 'prendere' è più generico e colloquiale in questo contesto."
   },
@@ -3709,11 +3605,11 @@
     "question": "Completa la frase con il congiuntivo: Sebbene _______ stanco, ho finito il lavoro.",
     "choices": {
       "A": "ero",
-      "B": "fossi",
+      "B": "sono",
       "C": "fu",
-      "D": "sono"
+      "D": "fossi"
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 7,
     "explanation": "La congiunzione 'sebbene' (although, even though) introduce una proposizione concessiva e richiede l'uso del congiuntivo. In questo caso, si usa il congiuntivo imperfetto ('fossi') per esprimere una condizione ipotetica nel passato o una circostanza contrastante."
   },
@@ -3723,10 +3619,10 @@
     "choices": {
       "A": "di",
       "B": "con",
-      "C": "in",
-      "D": "sopra"
+      "C": "sopra",
+      "D": "in"
     },
-    "answer": "C",
+    "answer": "D",
     "difficulty": 5,
     "explanation": "La preposizione 'in' è comunemente usata per indicare uno stato in luogo o un moto a luogo generico (es. 'abito in Italia', 'vado in città')."
   },
@@ -3833,32 +3729,6 @@
     "answer": "D",
     "difficulty": 7,
     "explanation": "Questa è una frase ipotetica del terzo tipo (irrealtà nel passato). La protasi (la frase introdotta da 'se') usa il congiuntivo trapassato ('avessi studiato'), e l'apodosi (la frase principale) usa il condizionale passato ('avrei passato')."
-  },
-  {
-    "id": "AP_Italian_296",
-    "question": "Qual è il significato di 'fare la scarpetta'?",
-    "choices": {
-      "A": "Indossare scarpe comode",
-      "B": "Mangiare l'ultima salsa rimasta nel piatto con il pane",
-      "C": "Avere fretta",
-      "D": "Evitare un problema"
-    },
-    "answer": "B",
-    "difficulty": 8,
-    "explanation": "'Fare la scarpetta' è un'espressione culinaria informale che descrive l'atto di usare un pezzo di pane per raccogliere e mangiare il sugo o la salsa rimasta nel piatto. È considerato un gesto conviviale e di apprezzamento del cibo."
-  },
-  {
-    "id": "AP_Italian_297",
-    "question": "Completa la frase: Non credo che lui _______ la verità.",
-    "choices": {
-      "A": "dice",
-      "B": "disse",
-      "C": "dica",
-      "D": "dirà"
-    },
-    "answer": "C",
-    "difficulty": 6,
-    "explanation": "L'espressione 'non credo che' introduce un dubbio o un'incertezza, che richiede l'uso del congiuntivo presente ('dica')."
   },
   {
     "id": "AP_Italian_298",

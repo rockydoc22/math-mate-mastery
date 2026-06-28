@@ -1,649 +1,5 @@
 [
   {
-    "id": "sbac_001",
-    "exam": "SBAC",
-    "section": "Mathematics",
-    "question": "A farmer has 3 fields. The first is 2.5 acres, the second is 1.75 acres, and the third is 3.25 acres. What is the total acreage?",
-    "options": [
-      {
-        "label": "A",
-        "text": "7.5 acres"
-      },
-      {
-        "label": "B",
-        "text": "7.0 acres"
-      },
-      {
-        "label": "C",
-        "text": "8.0 acres"
-      },
-      {
-        "label": "D",
-        "text": "6.5 acres"
-      }
-    ],
-    "correctAnswer": "A",
-    "explanation": "2.5 + 1.75 + 3.25 = 7.5 acres.",
-    "skill": "Decimal Operations",
-    "difficulty": "easy"
-  },
-  {
-    "id": "sbac_002",
-    "exam": "SBAC",
-    "section": "English Language Arts",
-    "question": "Read: 'The expedition was arduous but ultimately rewarding.' What does 'arduous' most likely mean?",
-    "options": [
-      {
-        "label": "A",
-        "text": "Difficult and tiring"
-      },
-      {
-        "label": "B",
-        "text": "Short and easy"
-      },
-      {
-        "label": "C",
-        "text": "Boring and repetitive"
-      },
-      {
-        "label": "D",
-        "text": "Exciting and fun"
-      }
-    ],
-    "correctAnswer": "A",
-    "explanation": "Context clue 'but ultimately rewarding' implies the expedition was challenging. 'Arduous' means requiring great effort.",
-    "skill": "Vocabulary in Context",
-    "difficulty": "medium"
-  },
-  {
-    "id": "sbac_003",
-    "exam": "SBAC",
-    "section": "Mathematics",
-    "question": "Which expression is equivalent to 4(2x + 3)?",
-    "options": [
-      {
-        "label": "A",
-        "text": "8x + 12"
-      },
-      {
-        "label": "B",
-        "text": "8x + 3"
-      },
-      {
-        "label": "C",
-        "text": "6x + 7"
-      },
-      {
-        "label": "D",
-        "text": "2x + 12"
-      }
-    ],
-    "correctAnswer": "A",
-    "explanation": "Distribute 4: 4(2x) + 4(3) = 8x + 12.",
-    "skill": "Distributive Property",
-    "difficulty": "easy"
-  },
-  {
-    "id": "sbac_004",
-    "exam": "SBAC",
-    "section": "English Language Arts",
-    "question": "Which sentence contains a correct use of an apostrophe?",
-    "options": [
-      {
-        "label": "A",
-        "text": "The children's toys were scattered across the room."
-      },
-      {
-        "label": "B",
-        "text": "The childrens' toys were scattered across the room."
-      },
-      {
-        "label": "C",
-        "text": "The childrens toys were scattered across the room."
-      },
-      {
-        "label": "D",
-        "text": "The children's toy's were scattered across the room."
-      }
-    ],
-    "correctAnswer": "A",
-    "explanation": "'Children' is already plural, so the possessive apostrophe goes before the 's': children's.",
-    "skill": "Apostrophes",
-    "difficulty": "easy"
-  },
-  {
-    "id": "sbac_005",
-    "exam": "SBAC",
-    "section": "Mathematics",
-    "question": "A bag contains 3 red, 5 blue, and 2 green marbles. What is the probability of drawing a blue marble?",
-    "options": [
-      {
-        "label": "A",
-        "text": "1/2"
-      },
-      {
-        "label": "B",
-        "text": "1/3"
-      },
-      {
-        "label": "C",
-        "text": "2/5"
-      },
-      {
-        "label": "D",
-        "text": "3/10"
-      }
-    ],
-    "correctAnswer": "A",
-    "explanation": "Total marbles = 10. P(blue) = 5/10 = 1/2.",
-    "skill": "Probability",
-    "difficulty": "easy"
-  },
-  {
-    "id": "sbac_006",
-    "exam": "SBAC",
-    "section": "English Language Arts",
-    "question": "A student writes: 'The dog chased it's tail around the yard.' What correction should be made?",
-    "options": [
-      {
-        "label": "A",
-        "text": "Change 'it's' to 'its'"
-      },
-      {
-        "label": "B",
-        "text": "Change 'chased' to 'chases'"
-      },
-      {
-        "label": "C",
-        "text": "Add a comma after 'tail'"
-      },
-      {
-        "label": "D",
-        "text": "No correction needed"
-      }
-    ],
-    "correctAnswer": "A",
-    "explanation": "'Its' (no apostrophe) is the possessive form. 'It's' is a contraction of 'it is.'",
-    "skill": "Its vs It's",
-    "difficulty": "easy"
-  },
-  {
-    "id": "sbac_007",
-    "exam": "SBAC",
-    "section": "Mathematics",
-    "question": "What is the volume of a rectangular prism with length 5 cm, width 3 cm, and height 4 cm?",
-    "options": [
-      {
-        "label": "A",
-        "text": "60 cm³"
-      },
-      {
-        "label": "B",
-        "text": "12 cm³"
-      },
-      {
-        "label": "C",
-        "text": "24 cm³"
-      },
-      {
-        "label": "D",
-        "text": "40 cm³"
-      }
-    ],
-    "correctAnswer": "A",
-    "explanation": "Volume = l × w × h = 5 × 3 × 4 = 60 cm³.",
-    "skill": "Volume",
-    "difficulty": "easy"
-  },
-  {
-    "id": "sbac_008",
-    "exam": "SBAC",
-    "section": "English Language Arts",
-    "question": "Which sentence best supports the claim 'Exercise improves mental health'?",
-    "options": [
-      {
-        "label": "A",
-        "text": "Studies show that regular physical activity reduces symptoms of anxiety and depression by up to 30%."
-      },
-      {
-        "label": "B",
-        "text": "Many people enjoy going to the gym."
-      },
-      {
-        "label": "C",
-        "text": "Exercise is a popular New Year's resolution."
-      },
-      {
-        "label": "D",
-        "text": "Some athletes earn millions of dollars."
-      }
-    ],
-    "correctAnswer": "A",
-    "explanation": "This option provides specific, evidence-based support with a measurable statistic directly connected to the claim.",
-    "skill": "Evidence and Support",
-    "difficulty": "medium"
-  },
-  {
-    "id": "sbac_009",
-    "exam": "SBAC",
-    "section": "Mathematics",
-    "question": "Simplify the ratio 24:36",
-    "options": [
-      {
-        "label": "A",
-        "text": "2:3"
-      },
-      {
-        "label": "B",
-        "text": "3:4"
-      },
-      {
-        "label": "C",
-        "text": "4:6"
-      },
-      {
-        "label": "D",
-        "text": "1:2"
-      }
-    ],
-    "correctAnswer": "A",
-    "explanation": "GCF of 24 and 36 is 12. 24÷12 = 2, 36÷12 = 3. Simplified ratio: 2:3.",
-    "skill": "Ratios",
-    "difficulty": "easy"
-  },
-  {
-    "id": "sbac_010",
-    "exam": "SBAC",
-    "section": "English Language Arts",
-    "question": "In an informational text, a subheading serves to:",
-    "options": [
-      {
-        "label": "A",
-        "text": "Organize content and help readers locate specific information"
-      },
-      {
-        "label": "B",
-        "text": "Provide the author's opinion"
-      },
-      {
-        "label": "C",
-        "text": "Add visual decoration to the page"
-      },
-      {
-        "label": "D",
-        "text": "Summarize the entire text"
-      }
-    ],
-    "correctAnswer": "A",
-    "explanation": "Subheadings break text into logical sections, making it easier for readers to scan and find specific information.",
-    "skill": "Text Features",
-    "difficulty": "easy"
-  },
-  {
-    "id": "sbac_011",
-    "exam": "SBAC",
-    "section": "Mathematics",
-    "question": "Plot the point (-3, 4) on a coordinate plane. In which quadrant is this point?",
-    "options": [
-      {
-        "label": "A",
-        "text": "Quadrant II"
-      },
-      {
-        "label": "B",
-        "text": "Quadrant I"
-      },
-      {
-        "label": "C",
-        "text": "Quadrant III"
-      },
-      {
-        "label": "D",
-        "text": "Quadrant IV"
-      }
-    ],
-    "correctAnswer": "A",
-    "explanation": "A negative x-coordinate and positive y-coordinate place the point in Quadrant II (upper left).",
-    "skill": "Coordinate Plane",
-    "difficulty": "easy"
-  },
-  {
-    "id": "sbac_012",
-    "exam": "SBAC",
-    "section": "English Language Arts",
-    "question": "Which revision best combines these sentences? 'The storm was powerful. It knocked down many trees.'",
-    "options": [
-      {
-        "label": "A",
-        "text": "The powerful storm knocked down many trees."
-      },
-      {
-        "label": "B",
-        "text": "The storm was powerful, it knocked down many trees."
-      },
-      {
-        "label": "C",
-        "text": "The storm was powerful and trees."
-      },
-      {
-        "label": "D",
-        "text": "Powerful, the storm was knocking trees down many."
-      }
-    ],
-    "correctAnswer": "A",
-    "explanation": "Combining by turning the adjective clause into a modifier creates a concise, clear sentence.",
-    "skill": "Sentence Combining",
-    "difficulty": "easy"
-  },
-  {
-    "id": "sbac_013",
-    "exam": "SBAC",
-    "section": "Mathematics",
-    "question": "A shirt originally costs $80. After a 25% discount, what is the final price?",
-    "options": [
-      {
-        "label": "A",
-        "text": "$60"
-      },
-      {
-        "label": "B",
-        "text": "$55"
-      },
-      {
-        "label": "C",
-        "text": "$65"
-      },
-      {
-        "label": "D",
-        "text": "$70"
-      }
-    ],
-    "correctAnswer": "A",
-    "explanation": "25% of $80 = $20. Final price = $80 - $20 = $60.",
-    "skill": "Percent Applications",
-    "difficulty": "easy"
-  },
-  {
-    "id": "sbac_014",
-    "exam": "SBAC",
-    "section": "English Language Arts",
-    "question": "What is the purpose of a thesis statement?",
-    "options": [
-      {
-        "label": "A",
-        "text": "To present the main argument or central idea of an essay"
-      },
-      {
-        "label": "B",
-        "text": "To provide background information"
-      },
-      {
-        "label": "C",
-        "text": "To list the sources used"
-      },
-      {
-        "label": "D",
-        "text": "To entertain the reader with a story"
-      }
-    ],
-    "correctAnswer": "A",
-    "explanation": "A thesis statement presents the central claim or argument that the essay will support and develop.",
-    "skill": "Essay Structure",
-    "difficulty": "easy"
-  },
-  {
-    "id": "sbac_015",
-    "exam": "SBAC",
-    "section": "Mathematics",
-    "question": "Evaluate: |−7| + |3|",
-    "options": [
-      {
-        "label": "A",
-        "text": "10"
-      },
-      {
-        "label": "B",
-        "text": "4"
-      },
-      {
-        "label": "C",
-        "text": "-4"
-      },
-      {
-        "label": "D",
-        "text": "7"
-      }
-    ],
-    "correctAnswer": "A",
-    "explanation": "|−7| = 7 and |3| = 3. 7 + 3 = 10.",
-    "skill": "Absolute Value",
-    "difficulty": "easy"
-  },
-  {
-    "id": "sbac_016",
-    "exam": "SBAC",
-    "section": "English Language Arts",
-    "question": "A primary source is:",
-    "options": [
-      {
-        "label": "A",
-        "text": "An original document or firsthand account from the time period being studied"
-      },
-      {
-        "label": "B",
-        "text": "A textbook summary of events"
-      },
-      {
-        "label": "C",
-        "text": "An encyclopedia article"
-      },
-      {
-        "label": "D",
-        "text": "A movie based on historical events"
-      }
-    ],
-    "correctAnswer": "A",
-    "explanation": "Primary sources are original, firsthand documents or accounts created during the time period, such as diaries, letters, and photographs.",
-    "skill": "Source Types",
-    "difficulty": "easy"
-  },
-  {
-    "id": "sbac_017",
-    "exam": "SBAC",
-    "section": "Mathematics",
-    "question": "What is the mean of: 10, 15, 20, 25, 30?",
-    "options": [
-      {
-        "label": "A",
-        "text": "20"
-      },
-      {
-        "label": "B",
-        "text": "15"
-      },
-      {
-        "label": "C",
-        "text": "25"
-      },
-      {
-        "label": "D",
-        "text": "22"
-      }
-    ],
-    "correctAnswer": "A",
-    "explanation": "Mean = sum/count = (10+15+20+25+30)/5 = 100/5 = 20.",
-    "skill": "Statistics",
-    "difficulty": "easy"
-  },
-  {
-    "id": "sbac_018",
-    "exam": "SBAC",
-    "section": "English Language Arts",
-    "question": "Which word is an antonym of 'expand'?",
-    "options": [
-      {
-        "label": "A",
-        "text": "Contract"
-      },
-      {
-        "label": "B",
-        "text": "Enlarge"
-      },
-      {
-        "label": "C",
-        "text": "Increase"
-      },
-      {
-        "label": "D",
-        "text": "Amplify"
-      }
-    ],
-    "correctAnswer": "A",
-    "explanation": "'Contract' means to shrink or become smaller, which is the opposite of 'expand.'",
-    "skill": "Antonyms",
-    "difficulty": "easy"
-  },
-  {
-    "id": "sbac_019",
-    "exam": "SBAC",
-    "section": "Mathematics",
-    "question": "Convert 3/5 to a percentage.",
-    "options": [
-      {
-        "label": "A",
-        "text": "60%"
-      },
-      {
-        "label": "B",
-        "text": "35%"
-      },
-      {
-        "label": "C",
-        "text": "50%"
-      },
-      {
-        "label": "D",
-        "text": "75%"
-      }
-    ],
-    "correctAnswer": "A",
-    "explanation": "3/5 = 0.6 = 60%.",
-    "skill": "Fraction to Percent",
-    "difficulty": "easy"
-  },
-  {
-    "id": "sbac_020",
-    "exam": "SBAC",
-    "section": "English Language Arts",
-    "question": "Which literary device is used when an author hints at future events in a story?",
-    "options": [
-      {
-        "label": "A",
-        "text": "Foreshadowing"
-      },
-      {
-        "label": "B",
-        "text": "Flashback"
-      },
-      {
-        "label": "C",
-        "text": "Irony"
-      },
-      {
-        "label": "D",
-        "text": "Allusion"
-      }
-    ],
-    "correctAnswer": "A",
-    "explanation": "Foreshadowing gives clues or hints about events that will happen later in the story to build suspense.",
-    "skill": "Literary Devices",
-    "difficulty": "easy"
-  },
-  {
-    "id": "sbac_021",
-    "exam": "SBAC",
-    "section": "Mathematics",
-    "question": "Solve for x: 3x − 7 = 14",
-    "options": [
-      {
-        "label": "A",
-        "text": "7"
-      },
-      {
-        "label": "B",
-        "text": "3"
-      },
-      {
-        "label": "C",
-        "text": "21"
-      },
-      {
-        "label": "D",
-        "text": "5"
-      }
-    ],
-    "correctAnswer": "A",
-    "explanation": "3x = 14 + 7 = 21, so x = 21/3 = 7.",
-    "skill": "Linear Equations",
-    "difficulty": "easy"
-  },
-  {
-    "id": "sbac_022",
-    "exam": "SBAC",
-    "section": "English Language Arts",
-    "question": "Which sentence uses a comma correctly?",
-    "options": [
-      {
-        "label": "A",
-        "text": "After finishing her homework, Maria went outside to play."
-      },
-      {
-        "label": "B",
-        "text": "After finishing her homework Maria, went outside to play."
-      },
-      {
-        "label": "C",
-        "text": "After, finishing her homework Maria went outside to play."
-      },
-      {
-        "label": "D",
-        "text": "After finishing, her homework Maria went outside, to play."
-      }
-    ],
-    "correctAnswer": "A",
-    "explanation": "A comma follows an introductory dependent clause ('After finishing her homework') before the main clause.",
-    "skill": "Comma Usage",
-    "difficulty": "easy"
-  },
-  {
-    "id": "sbac_023",
-    "exam": "SBAC",
-    "section": "Mathematics",
-    "question": "A rectangle has an area of 48 cm² and a width of 6 cm. What is its length?",
-    "options": [
-      {
-        "label": "A",
-        "text": "8 cm"
-      },
-      {
-        "label": "B",
-        "text": "42 cm"
-      },
-      {
-        "label": "C",
-        "text": "12 cm"
-      },
-      {
-        "label": "D",
-        "text": "6 cm"
-      }
-    ],
-    "correctAnswer": "A",
-    "explanation": "Area = length × width. 48 = length × 6, so length = 48/6 = 8 cm.",
-    "skill": "Area",
-    "difficulty": "easy"
-  },
-  {
     "id": "sbac_024",
     "exam": "SBAC",
     "section": "English Language Arts",
@@ -651,7 +7,7 @@
     "options": [
       {
         "label": "A",
-        "text": "The disapproval was felt by many people"
+        "text": "The policy was popular"
       },
       {
         "label": "B",
@@ -663,601 +19,13 @@
       },
       {
         "label": "D",
-        "text": "The policy was popular"
+        "text": "The disapproval was felt by many people"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "'Widespread' means extending over a large area or affecting many people, indicating broad disapproval.",
     "skill": "Vocabulary in Context",
-    "difficulty": "easy"
-  },
-  {
-    "id": "sbac_025",
-    "exam": "SBAC",
-    "section": "Mathematics",
-    "question": "What is the greatest common factor (GCF) of 18 and 24?",
-    "options": [
-      {
-        "label": "A",
-        "text": "6"
-      },
-      {
-        "label": "B",
-        "text": "3"
-      },
-      {
-        "label": "C",
-        "text": "12"
-      },
-      {
-        "label": "D",
-        "text": "9"
-      }
-    ],
-    "correctAnswer": "A",
-    "explanation": "Factors of 18: 1,2,3,6,9,18. Factors of 24: 1,2,3,4,6,8,12,24. GCF = 6.",
-    "skill": "Factors",
-    "difficulty": "easy"
-  },
-  {
-    "id": "sbac_026",
-    "exam": "SBAC",
-    "section": "English Language Arts",
-    "question": "What is the author's purpose in writing a persuasive essay?",
-    "options": [
-      {
-        "label": "A",
-        "text": "To convince the reader to agree with a particular viewpoint"
-      },
-      {
-        "label": "B",
-        "text": "To tell an entertaining story"
-      },
-      {
-        "label": "C",
-        "text": "To provide a neutral summary of facts"
-      },
-      {
-        "label": "D",
-        "text": "To describe a personal experience"
-      }
-    ],
-    "correctAnswer": "A",
-    "explanation": "Persuasive writing aims to convince the reader to accept the author's argument or take a specific action.",
-    "skill": "Author's Purpose",
-    "difficulty": "easy"
-  },
-  {
-    "id": "sbac_027",
-    "exam": "SBAC",
-    "section": "Mathematics",
-    "question": "Which of the following is a prime number?",
-    "options": [
-      {
-        "label": "A",
-        "text": "37"
-      },
-      {
-        "label": "B",
-        "text": "39"
-      },
-      {
-        "label": "C",
-        "text": "33"
-      },
-      {
-        "label": "D",
-        "text": "35"
-      }
-    ],
-    "correctAnswer": "A",
-    "explanation": "37 is divisible only by 1 and itself. 39=3×13, 33=3×11, 35=5×7.",
-    "skill": "Prime Numbers",
-    "difficulty": "easy"
-  },
-  {
-    "id": "sbac_028",
-    "exam": "SBAC",
-    "section": "English Language Arts",
-    "question": "A student is writing a research paper. Which source would be MOST credible?",
-    "options": [
-      {
-        "label": "A",
-        "text": "A peer-reviewed journal article from a university"
-      },
-      {
-        "label": "B",
-        "text": "A personal blog post"
-      },
-      {
-        "label": "C",
-        "text": "A social media comment"
-      },
-      {
-        "label": "D",
-        "text": "An anonymous forum discussion"
-      }
-    ],
-    "correctAnswer": "A",
-    "explanation": "Peer-reviewed journal articles undergo rigorous academic review and are the most credible sources for research.",
-    "skill": "Source Credibility",
-    "difficulty": "easy"
-  },
-  {
-    "id": "sbac_029",
-    "exam": "SBAC",
-    "section": "Mathematics",
-    "question": "What is 15% of 200?",
-    "options": [
-      {
-        "label": "A",
-        "text": "30"
-      },
-      {
-        "label": "B",
-        "text": "15"
-      },
-      {
-        "label": "C",
-        "text": "25"
-      },
-      {
-        "label": "D",
-        "text": "35"
-      }
-    ],
-    "correctAnswer": "A",
-    "explanation": "15% × 200 = 0.15 × 200 = 30.",
-    "skill": "Percentages",
-    "difficulty": "easy"
-  },
-  {
-    "id": "sbac_030",
-    "exam": "SBAC",
-    "section": "English Language Arts",
-    "question": "Which sentence demonstrates correct parallel structure?",
-    "options": [
-      {
-        "label": "A",
-        "text": "She enjoys swimming, hiking, and biking."
-      },
-      {
-        "label": "B",
-        "text": "She enjoys swimming, to hike, and biking."
-      },
-      {
-        "label": "C",
-        "text": "She enjoys swimming, hiking, and to bike."
-      },
-      {
-        "label": "D",
-        "text": "She enjoys to swim, hiking, and biked."
-      }
-    ],
-    "correctAnswer": "A",
-    "explanation": "Parallel structure requires consistent grammatical forms. All three activities use the gerund (-ing) form.",
-    "skill": "Parallel Structure",
-    "difficulty": "medium"
-  },
-  {
-    "id": "sbac_031",
-    "exam": "SBAC",
-    "section": "Mathematics",
-    "question": "If a triangle has angles measuring 45°, 65°, and x°, what is the value of x?",
-    "options": [
-      {
-        "label": "A",
-        "text": "70°"
-      },
-      {
-        "label": "B",
-        "text": "80°"
-      },
-      {
-        "label": "C",
-        "text": "60°"
-      },
-      {
-        "label": "D",
-        "text": "50°"
-      }
-    ],
-    "correctAnswer": "A",
-    "explanation": "Triangle angles sum to 180°. x = 180 - 45 - 65 = 70°.",
-    "skill": "Triangle Angles",
-    "difficulty": "easy"
-  },
-  {
-    "id": "sbac_032",
-    "exam": "SBAC",
-    "section": "English Language Arts",
-    "question": "Read: 'Despite the team's best efforts, the project failed to meet its deadline.' The word 'despite' signals:",
-    "options": [
-      {
-        "label": "A",
-        "text": "A contrast between effort and outcome"
-      },
-      {
-        "label": "B",
-        "text": "A cause-and-effect relationship"
-      },
-      {
-        "label": "C",
-        "text": "A comparison of similar events"
-      },
-      {
-        "label": "D",
-        "text": "A chronological sequence"
-      }
-    ],
-    "correctAnswer": "A",
-    "explanation": "'Despite' introduces a contrast or concession — the effort was strong but the outcome was negative.",
-    "skill": "Signal Words",
-    "difficulty": "medium"
-  },
-  {
-    "id": "sbac_033",
-    "exam": "SBAC",
-    "section": "Mathematics",
-    "question": "Evaluate: 2³ × 3²",
-    "options": [
-      {
-        "label": "A",
-        "text": "72"
-      },
-      {
-        "label": "B",
-        "text": "36"
-      },
-      {
-        "label": "C",
-        "text": "48"
-      },
-      {
-        "label": "D",
-        "text": "54"
-      }
-    ],
-    "correctAnswer": "A",
-    "explanation": "2³ = 8, 3² = 9. 8 × 9 = 72.",
-    "skill": "Exponents",
-    "difficulty": "easy"
-  },
-  {
-    "id": "sbac_034",
-    "exam": "SBAC",
-    "section": "English Language Arts",
-    "question": "Which type of figurative language is used in 'The wind whispered through the trees'?",
-    "options": [
-      {
-        "label": "A",
-        "text": "Personification"
-      },
-      {
-        "label": "B",
-        "text": "Simile"
-      },
-      {
-        "label": "C",
-        "text": "Hyperbole"
-      },
-      {
-        "label": "D",
-        "text": "Metaphor"
-      }
-    ],
-    "correctAnswer": "A",
-    "explanation": "Personification gives human qualities to non-human things. Wind cannot literally whisper.",
-    "skill": "Figurative Language",
-    "difficulty": "easy"
-  },
-  {
-    "id": "sbac_035",
-    "exam": "SBAC",
-    "section": "Mathematics",
-    "question": "A line passes through (0, 3) and (2, 7). What is its slope?",
-    "options": [
-      {
-        "label": "A",
-        "text": "2"
-      },
-      {
-        "label": "B",
-        "text": "4"
-      },
-      {
-        "label": "C",
-        "text": "3"
-      },
-      {
-        "label": "D",
-        "text": "5"
-      }
-    ],
-    "correctAnswer": "A",
-    "explanation": "Slope = (y₂-y₁)/(x₂-x₁) = (7-3)/(2-0) = 4/2 = 2.",
-    "skill": "Slope",
-    "difficulty": "medium"
-  },
-  {
-    "id": "sbac_036",
-    "exam": "SBAC",
-    "section": "English Language Arts",
-    "question": "A claim is best supported by:",
-    "options": [
-      {
-        "label": "A",
-        "text": "Relevant evidence and logical reasoning"
-      },
-      {
-        "label": "B",
-        "text": "Personal opinions only"
-      },
-      {
-        "label": "C",
-        "text": "Emotional appeals without facts"
-      },
-      {
-        "label": "D",
-        "text": "Repeating the claim in different words"
-      }
-    ],
-    "correctAnswer": "A",
-    "explanation": "Strong arguments require relevant evidence (facts, data, examples) combined with logical reasoning.",
-    "skill": "Argumentation",
-    "difficulty": "medium"
-  },
-  {
-    "id": "sbac_037",
-    "exam": "SBAC",
-    "section": "Mathematics",
-    "question": "What is the least common multiple (LCM) of 4 and 6?",
-    "options": [
-      {
-        "label": "A",
-        "text": "12"
-      },
-      {
-        "label": "B",
-        "text": "24"
-      },
-      {
-        "label": "C",
-        "text": "6"
-      },
-      {
-        "label": "D",
-        "text": "8"
-      }
-    ],
-    "correctAnswer": "A",
-    "explanation": "Multiples of 4: 4,8,12,16... Multiples of 6: 6,12,18... LCM = 12.",
-    "skill": "LCM",
-    "difficulty": "easy"
-  },
-  {
-    "id": "sbac_038",
-    "exam": "SBAC",
-    "section": "English Language Arts",
-    "question": "Which transition word best shows a cause-and-effect relationship?",
-    "options": [
-      {
-        "label": "A",
-        "text": "Consequently"
-      },
-      {
-        "label": "B",
-        "text": "However"
-      },
-      {
-        "label": "C",
-        "text": "Meanwhile"
-      },
-      {
-        "label": "D",
-        "text": "Similarly"
-      }
-    ],
-    "correctAnswer": "A",
-    "explanation": "'Consequently' signals that what follows is a result or effect of what came before.",
-    "skill": "Transitions",
-    "difficulty": "easy"
-  },
-  {
-    "id": "sbac_039",
-    "exam": "SBAC",
-    "section": "Mathematics",
-    "question": "A car travels 150 miles in 3 hours. What is its average speed?",
-    "options": [
-      {
-        "label": "A",
-        "text": "50 mph"
-      },
-      {
-        "label": "B",
-        "text": "45 mph"
-      },
-      {
-        "label": "C",
-        "text": "55 mph"
-      },
-      {
-        "label": "D",
-        "text": "60 mph"
-      }
-    ],
-    "correctAnswer": "A",
-    "explanation": "Average speed = distance/time = 150/3 = 50 mph.",
-    "skill": "Rate",
-    "difficulty": "easy"
-  },
-  {
-    "id": "sbac_040",
-    "exam": "SBAC",
-    "section": "English Language Arts",
-    "question": "In a narrative, the climax is:",
-    "options": [
-      {
-        "label": "A",
-        "text": "The turning point or moment of highest tension"
-      },
-      {
-        "label": "B",
-        "text": "The introduction of characters"
-      },
-      {
-        "label": "C",
-        "text": "The resolution of the conflict"
-      },
-      {
-        "label": "D",
-        "text": "The background information"
-      }
-    ],
-    "correctAnswer": "A",
-    "explanation": "The climax is the most intense, pivotal moment in the narrative where the central conflict reaches its peak.",
-    "skill": "Story Elements",
-    "difficulty": "easy"
-  },
-  {
-    "id": "sbac_041",
-    "exam": "SBAC",
-    "section": "Mathematics",
-    "question": "Simplify: 5/8 + 3/8",
-    "options": [
-      {
-        "label": "A",
-        "text": "1"
-      },
-      {
-        "label": "B",
-        "text": "8/16"
-      },
-      {
-        "label": "C",
-        "text": "8/8"
-      },
-      {
-        "label": "D",
-        "text": "15/64"
-      }
-    ],
-    "correctAnswer": "A",
-    "explanation": "5/8 + 3/8 = 8/8 = 1. When denominators are the same, add numerators.",
-    "skill": "Fraction Addition",
-    "difficulty": "easy"
-  },
-  {
-    "id": "sbac_042",
-    "exam": "SBAC",
-    "section": "English Language Arts",
-    "question": "Which sentence contains a dangling modifier?",
-    "options": [
-      {
-        "label": "A",
-        "text": "Walking to school, the rain started to fall."
-      },
-      {
-        "label": "B",
-        "text": "Walking to school, I noticed the rain started to fall."
-      },
-      {
-        "label": "C",
-        "text": "I walked to school while it rained."
-      },
-      {
-        "label": "D",
-        "text": "The rain fell as I walked to school."
-      }
-    ],
-    "correctAnswer": "A",
-    "explanation": "'Walking to school' has no clear subject — it dangles because 'rain' can't walk. The modifier needs a human subject.",
-    "skill": "Modifiers",
-    "difficulty": "medium"
-  },
-  {
-    "id": "sbac_043",
-    "exam": "SBAC",
-    "section": "Mathematics",
-    "question": "What is the perimeter of a square with sides of 9 cm?",
-    "options": [
-      {
-        "label": "A",
-        "text": "36 cm"
-      },
-      {
-        "label": "B",
-        "text": "81 cm"
-      },
-      {
-        "label": "C",
-        "text": "18 cm"
-      },
-      {
-        "label": "D",
-        "text": "27 cm"
-      }
-    ],
-    "correctAnswer": "A",
-    "explanation": "Perimeter of a square = 4 × side = 4 × 9 = 36 cm.",
-    "skill": "Perimeter",
-    "difficulty": "easy"
-  },
-  {
-    "id": "sbac_044",
-    "exam": "SBAC",
-    "section": "English Language Arts",
-    "question": "A counterclaim in an argumentative essay is:",
-    "options": [
-      {
-        "label": "A",
-        "text": "An opposing viewpoint that the writer acknowledges and refutes"
-      },
-      {
-        "label": "B",
-        "text": "A restatement of the thesis"
-      },
-      {
-        "label": "C",
-        "text": "A personal anecdote"
-      },
-      {
-        "label": "D",
-        "text": "The conclusion paragraph"
-      }
-    ],
-    "correctAnswer": "A",
-    "explanation": "A counterclaim presents an opposing argument, which the writer then addresses to strengthen their own position.",
-    "skill": "Argumentation",
-    "difficulty": "medium"
-  },
-  {
-    "id": "sbac_045",
-    "exam": "SBAC",
-    "section": "Mathematics",
-    "question": "Which number is irrational?",
-    "options": [
-      {
-        "label": "A",
-        "text": "√2"
-      },
-      {
-        "label": "B",
-        "text": "0.5"
-      },
-      {
-        "label": "C",
-        "text": "3/4"
-      },
-      {
-        "label": "D",
-        "text": "−7"
-      }
-    ],
-    "correctAnswer": "A",
-    "explanation": "√2 ≈ 1.41421... is non-terminating and non-repeating, making it irrational.",
-    "skill": "Number Classification",
-    "difficulty": "medium"
+    "difficulty": 3
   },
   {
     "id": "sbac_046",
@@ -1285,399 +53,7 @@
     "correctAnswer": "A",
     "explanation": "'Revitalize' means to restore life, vigor, or activity to something — here, improving the downtown area.",
     "skill": "Vocabulary in Context",
-    "difficulty": "medium"
-  },
-  {
-    "id": "sbac_047",
-    "exam": "SBAC",
-    "section": "Mathematics",
-    "question": "If f(x) = 2x + 5, what is f(3)?",
-    "options": [
-      {
-        "label": "A",
-        "text": "11"
-      },
-      {
-        "label": "B",
-        "text": "8"
-      },
-      {
-        "label": "C",
-        "text": "6"
-      },
-      {
-        "label": "D",
-        "text": "10"
-      }
-    ],
-    "correctAnswer": "A",
-    "explanation": "f(3) = 2(3) + 5 = 6 + 5 = 11.",
-    "skill": "Functions",
-    "difficulty": "easy"
-  },
-  {
-    "id": "sbac_048",
-    "exam": "SBAC",
-    "section": "English Language Arts",
-    "question": "What is the difference between a fact and an opinion?",
-    "options": [
-      {
-        "label": "A",
-        "text": "A fact can be proven true; an opinion is a personal belief or judgment"
-      },
-      {
-        "label": "B",
-        "text": "Facts are always in textbooks; opinions are always wrong"
-      },
-      {
-        "label": "C",
-        "text": "There is no difference"
-      },
-      {
-        "label": "D",
-        "text": "Opinions are always supported by evidence; facts are not"
-      }
-    ],
-    "correctAnswer": "A",
-    "explanation": "Facts are verifiable statements that can be proven true or false. Opinions express personal beliefs and cannot be definitively proven.",
-    "skill": "Fact vs Opinion",
-    "difficulty": "easy"
-  },
-  {
-    "id": "sbac_049",
-    "exam": "SBAC",
-    "section": "Mathematics",
-    "question": "Convert 0.375 to a fraction in simplest form.",
-    "options": [
-      {
-        "label": "A",
-        "text": "3/8"
-      },
-      {
-        "label": "B",
-        "text": "375/100"
-      },
-      {
-        "label": "C",
-        "text": "3/4"
-      },
-      {
-        "label": "D",
-        "text": "37/100"
-      }
-    ],
-    "correctAnswer": "A",
-    "explanation": "0.375 = 375/1000 = 3/8 after dividing numerator and denominator by 125.",
-    "skill": "Decimal to Fraction",
-    "difficulty": "medium"
-  },
-  {
-    "id": "sbac_050",
-    "exam": "SBAC",
-    "section": "English Language Arts",
-    "question": "Which sentence uses the active voice?",
-    "options": [
-      {
-        "label": "A",
-        "text": "The teacher graded the exams."
-      },
-      {
-        "label": "B",
-        "text": "The exams were graded by the teacher."
-      },
-      {
-        "label": "C",
-        "text": "The exams had been graded."
-      },
-      {
-        "label": "D",
-        "text": "It was decided that the exams would be graded."
-      }
-    ],
-    "correctAnswer": "A",
-    "explanation": "In active voice, the subject (teacher) performs the action (graded). Passive voice reverses this structure.",
-    "skill": "Active vs Passive Voice",
-    "difficulty": "easy"
-  },
-  {
-    "id": "sbac_051",
-    "exam": "SBAC",
-    "section": "Mathematics",
-    "question": "A triangle has sides 3, 4, and 5. Is it a right triangle?",
-    "options": [
-      {
-        "label": "A",
-        "text": "Yes, because 3² + 4² = 5²"
-      },
-      {
-        "label": "B",
-        "text": "No, because the sides are too small"
-      },
-      {
-        "label": "C",
-        "text": "Yes, because all sides are different"
-      },
-      {
-        "label": "D",
-        "text": "No, because 3 + 4 ≠ 5²"
-      }
-    ],
-    "correctAnswer": "A",
-    "explanation": "By the Pythagorean theorem: 9 + 16 = 25, which equals 5². It satisfies a² + b² = c².",
-    "skill": "Pythagorean Theorem",
-    "difficulty": "medium"
-  },
-  {
-    "id": "sbac_052",
-    "exam": "SBAC",
-    "section": "English Language Arts",
-    "question": "What is an inference?",
-    "options": [
-      {
-        "label": "A",
-        "text": "A conclusion drawn from evidence and reasoning, not explicitly stated"
-      },
-      {
-        "label": "B",
-        "text": "A direct quote from the text"
-      },
-      {
-        "label": "C",
-        "text": "The title of a passage"
-      },
-      {
-        "label": "D",
-        "text": "A summary of the main idea"
-      }
-    ],
-    "correctAnswer": "A",
-    "explanation": "An inference is a logical conclusion based on evidence and prior knowledge, even when not directly stated in the text.",
-    "skill": "Making Inferences",
-    "difficulty": "medium"
-  },
-  {
-    "id": "sbac_053",
-    "exam": "SBAC",
-    "section": "Mathematics",
-    "question": "What is the mode of the data set: 3, 5, 7, 5, 9, 5, 2?",
-    "options": [
-      {
-        "label": "A",
-        "text": "5"
-      },
-      {
-        "label": "B",
-        "text": "3"
-      },
-      {
-        "label": "C",
-        "text": "7"
-      },
-      {
-        "label": "D",
-        "text": "9"
-      }
-    ],
-    "correctAnswer": "A",
-    "explanation": "The mode is the value that appears most frequently. 5 appears three times.",
-    "skill": "Statistics",
-    "difficulty": "easy"
-  },
-  {
-    "id": "sbac_054",
-    "exam": "SBAC",
-    "section": "English Language Arts",
-    "question": "Which sentence correctly uses a semicolon?",
-    "options": [
-      {
-        "label": "A",
-        "text": "She studied all night; she felt prepared for the exam."
-      },
-      {
-        "label": "B",
-        "text": "She studied all night; and she felt prepared for the exam."
-      },
-      {
-        "label": "C",
-        "text": "She; studied all night she felt prepared for the exam."
-      },
-      {
-        "label": "D",
-        "text": "She studied; all night she felt prepared; for the exam."
-      }
-    ],
-    "correctAnswer": "A",
-    "explanation": "A semicolon connects two related independent clauses without a conjunction.",
-    "skill": "Semicolons",
-    "difficulty": "medium"
-  },
-  {
-    "id": "sbac_055",
-    "exam": "SBAC",
-    "section": "Mathematics",
-    "question": "Solve the inequality: 2x + 4 > 10",
-    "options": [
-      {
-        "label": "A",
-        "text": "x > 3"
-      },
-      {
-        "label": "B",
-        "text": "x > 7"
-      },
-      {
-        "label": "C",
-        "text": "x < 3"
-      },
-      {
-        "label": "D",
-        "text": "x > 5"
-      }
-    ],
-    "correctAnswer": "A",
-    "explanation": "2x + 4 > 10 → 2x > 6 → x > 3.",
-    "skill": "Inequalities",
-    "difficulty": "medium"
-  },
-  {
-    "id": "sbac_056",
-    "exam": "SBAC",
-    "section": "English Language Arts",
-    "question": "An allusion in literature refers to:",
-    "options": [
-      {
-        "label": "A",
-        "text": "A reference to another work of literature, history, or culture"
-      },
-      {
-        "label": "B",
-        "text": "A comparison using 'like' or 'as'"
-      },
-      {
-        "label": "C",
-        "text": "An exaggeration for emphasis"
-      },
-      {
-        "label": "D",
-        "text": "A character's internal thoughts"
-      }
-    ],
-    "correctAnswer": "A",
-    "explanation": "An allusion is an indirect reference to a well-known person, event, text, or cultural element.",
-    "skill": "Literary Devices",
-    "difficulty": "medium"
-  },
-  {
-    "id": "sbac_057",
-    "exam": "SBAC",
-    "section": "Mathematics",
-    "question": "What is the surface area of a cube with side length 4 cm?",
-    "options": [
-      {
-        "label": "A",
-        "text": "96 cm²"
-      },
-      {
-        "label": "B",
-        "text": "64 cm²"
-      },
-      {
-        "label": "C",
-        "text": "24 cm²"
-      },
-      {
-        "label": "D",
-        "text": "48 cm²"
-      }
-    ],
-    "correctAnswer": "A",
-    "explanation": "Surface area of a cube = 6s² = 6(4²) = 6(16) = 96 cm².",
-    "skill": "Surface Area",
-    "difficulty": "medium"
-  },
-  {
-    "id": "sbac_058",
-    "exam": "SBAC",
-    "section": "English Language Arts",
-    "question": "Which revision improves clarity? Original: 'The thing was good and it helped.'",
-    "options": [
-      {
-        "label": "A",
-        "text": "The tutoring program was effective and helped students improve their grades."
-      },
-      {
-        "label": "B",
-        "text": "The thing was really very good and it helped a lot."
-      },
-      {
-        "label": "C",
-        "text": "It was good. It helped."
-      },
-      {
-        "label": "D",
-        "text": "The thing helped good."
-      }
-    ],
-    "correctAnswer": "A",
-    "explanation": "Replacing vague words ('thing,' 'good') with specific language ('tutoring program,' 'effective') improves clarity.",
-    "skill": "Revision and Clarity",
-    "difficulty": "medium"
-  },
-  {
-    "id": "sbac_059",
-    "exam": "SBAC",
-    "section": "Mathematics",
-    "question": "Express 45,000 in scientific notation.",
-    "options": [
-      {
-        "label": "A",
-        "text": "4.5 × 10⁴"
-      },
-      {
-        "label": "B",
-        "text": "45 × 10³"
-      },
-      {
-        "label": "C",
-        "text": "4.5 × 10³"
-      },
-      {
-        "label": "D",
-        "text": "0.45 × 10⁵"
-      }
-    ],
-    "correctAnswer": "A",
-    "explanation": "45,000 = 4.5 × 10⁴. In scientific notation, the coefficient must be between 1 and 10.",
-    "skill": "Scientific Notation",
-    "difficulty": "medium"
-  },
-  {
-    "id": "sbac_060",
-    "exam": "SBAC",
-    "section": "English Language Arts",
-    "question": "The purpose of a conclusion paragraph in an essay is to:",
-    "options": [
-      {
-        "label": "A",
-        "text": "Summarize the main points and leave the reader with a final thought"
-      },
-      {
-        "label": "B",
-        "text": "Introduce a new argument"
-      },
-      {
-        "label": "C",
-        "text": "Provide all the evidence"
-      },
-      {
-        "label": "D",
-        "text": "Restate the introduction word for word"
-      }
-    ],
-    "correctAnswer": "A",
-    "explanation": "A conclusion synthesizes the essay's key points and provides closure, often ending with a broader reflection.",
-    "skill": "Essay Structure",
-    "difficulty": "easy"
+    "difficulty": 5
   },
   {
     "id": "sbac_061",
@@ -1705,7 +81,1631 @@
     "correctAnswer": "A",
     "explanation": "P(not red) = 1 - P(red) = 1 - 1/4 = 3/4.",
     "skill": "Probability",
-    "difficulty": "easy"
+    "difficulty": 3
+  },
+  {
+    "id": "sbac_023",
+    "exam": "SBAC",
+    "section": "Mathematics",
+    "question": "A rectangle has an area of 48 cm² and a width of 6 cm. What is its length?",
+    "options": [
+      {
+        "label": "A",
+        "text": "6 cm"
+      },
+      {
+        "label": "B",
+        "text": "42 cm"
+      },
+      {
+        "label": "C",
+        "text": "12 cm"
+      },
+      {
+        "label": "D",
+        "text": "8 cm"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Area = length × width. 48 = length × 6, so length = 48/6 = 8 cm.",
+    "skill": "Area",
+    "difficulty": 3
+  },
+  {
+    "id": "sbac_005",
+    "exam": "SBAC",
+    "section": "Mathematics",
+    "question": "A bag contains 3 red, 5 blue, and 2 green marbles. What is the probability of drawing a blue marble?",
+    "options": [
+      {
+        "label": "A",
+        "text": "1/3"
+      },
+      {
+        "label": "B",
+        "text": "1/2"
+      },
+      {
+        "label": "C",
+        "text": "2/5"
+      },
+      {
+        "label": "D",
+        "text": "3/10"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Total marbles = 10. P(blue) = 5/10 = 1/2.",
+    "skill": "Probability",
+    "difficulty": 3
+  },
+  {
+    "id": "sbac_006",
+    "exam": "SBAC",
+    "section": "English Language Arts",
+    "question": "A student writes: 'The dog chased it's tail around the yard.' What correction should be made?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Change 'it's' to 'its'"
+      },
+      {
+        "label": "B",
+        "text": "Change 'chased' to 'chases'"
+      },
+      {
+        "label": "C",
+        "text": "Add a comma after 'tail'"
+      },
+      {
+        "label": "D",
+        "text": "No correction needed"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "'Its' (no apostrophe) is the possessive form. 'It's' is a contraction of 'it is.'",
+    "skill": "Its vs It's",
+    "difficulty": 3
+  },
+  {
+    "id": "sbac_007",
+    "exam": "SBAC",
+    "section": "Mathematics",
+    "question": "What is the volume of a rectangular prism with length 5 cm, width 3 cm, and height 4 cm?",
+    "options": [
+      {
+        "label": "A",
+        "text": "24 cm³"
+      },
+      {
+        "label": "B",
+        "text": "12 cm³"
+      },
+      {
+        "label": "C",
+        "text": "60 cm³"
+      },
+      {
+        "label": "D",
+        "text": "40 cm³"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Volume = l × w × h = 5 × 3 × 4 = 60 cm³.",
+    "skill": "Volume",
+    "difficulty": 3
+  },
+  {
+    "id": "sbac_008",
+    "exam": "SBAC",
+    "section": "English Language Arts",
+    "question": "Which sentence best supports the claim 'Exercise improves mental health'?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Studies show that regular physical activity reduces symptoms of anxiety and depression by up to 30%."
+      },
+      {
+        "label": "B",
+        "text": "Many people enjoy going to the gym."
+      },
+      {
+        "label": "C",
+        "text": "Exercise is a popular New Year's resolution."
+      },
+      {
+        "label": "D",
+        "text": "Some athletes earn millions of dollars."
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "This option provides specific, evidence-based support with a measurable statistic directly connected to the claim.",
+    "skill": "Evidence and Support",
+    "difficulty": 5
+  },
+  {
+    "id": "sbac_009",
+    "exam": "SBAC",
+    "section": "Mathematics",
+    "question": "Simplify the ratio 24:36",
+    "options": [
+      {
+        "label": "A",
+        "text": "1:2"
+      },
+      {
+        "label": "B",
+        "text": "3:4"
+      },
+      {
+        "label": "C",
+        "text": "4:6"
+      },
+      {
+        "label": "D",
+        "text": "2:3"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "GCF of 24 and 36 is 12. 24÷12 = 2, 36÷12 = 3. Simplified ratio: 2:3.",
+    "skill": "Ratios",
+    "difficulty": 3
+  },
+  {
+    "id": "sbac_010",
+    "exam": "SBAC",
+    "section": "English Language Arts",
+    "question": "In an informational text, a subheading serves to:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Add visual decoration to the page"
+      },
+      {
+        "label": "B",
+        "text": "Provide the author's opinion"
+      },
+      {
+        "label": "C",
+        "text": "Organize content and help readers locate specific information"
+      },
+      {
+        "label": "D",
+        "text": "Summarize the entire text"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Subheadings break text into logical sections, making it easier for readers to scan and find specific information.",
+    "skill": "Text Features",
+    "difficulty": 3
+  },
+  {
+    "id": "sbac_011",
+    "exam": "SBAC",
+    "section": "Mathematics",
+    "question": "Plot the point (-3, 4) on a coordinate plane. In which quadrant is this point?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Quadrant II"
+      },
+      {
+        "label": "B",
+        "text": "Quadrant I"
+      },
+      {
+        "label": "C",
+        "text": "Quadrant III"
+      },
+      {
+        "label": "D",
+        "text": "Quadrant IV"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "A negative x-coordinate and positive y-coordinate place the point in Quadrant II (upper left).",
+    "skill": "Coordinate Plane",
+    "difficulty": 3
+  },
+  {
+    "id": "sbac_012",
+    "exam": "SBAC",
+    "section": "English Language Arts",
+    "question": "Which revision best combines these sentences? 'The storm was powerful. It knocked down many trees.'",
+    "options": [
+      {
+        "label": "A",
+        "text": "The powerful storm knocked down many trees."
+      },
+      {
+        "label": "B",
+        "text": "The storm was powerful, it knocked down many trees."
+      },
+      {
+        "label": "C",
+        "text": "The storm was powerful and trees."
+      },
+      {
+        "label": "D",
+        "text": "Powerful, the storm was knocking trees down many."
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Combining by turning the adjective clause into a modifier creates a concise, clear sentence.",
+    "skill": "Sentence Combining",
+    "difficulty": 3
+  },
+  {
+    "id": "sbac_013",
+    "exam": "SBAC",
+    "section": "Mathematics",
+    "question": "A shirt originally costs $80. After a 25% discount, what is the final price?",
+    "options": [
+      {
+        "label": "A",
+        "text": "$55"
+      },
+      {
+        "label": "B",
+        "text": "$60"
+      },
+      {
+        "label": "C",
+        "text": "$65"
+      },
+      {
+        "label": "D",
+        "text": "$70"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "25% of $80 = $20. Final price = $80 - $20 = $60.",
+    "skill": "Percent Applications",
+    "difficulty": 3
+  },
+  {
+    "id": "sbac_014",
+    "exam": "SBAC",
+    "section": "English Language Arts",
+    "question": "What is the purpose of a thesis statement?",
+    "options": [
+      {
+        "label": "A",
+        "text": "To entertain the reader with a story"
+      },
+      {
+        "label": "B",
+        "text": "To provide background information"
+      },
+      {
+        "label": "C",
+        "text": "To list the sources used"
+      },
+      {
+        "label": "D",
+        "text": "To present the main argument or central idea of an essay"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "A thesis statement presents the central claim or argument that the essay will support and develop.",
+    "skill": "Essay Structure",
+    "difficulty": 3
+  },
+  {
+    "id": "sbac_015",
+    "exam": "SBAC",
+    "section": "Mathematics",
+    "question": "Evaluate: |−7| + |3|",
+    "options": [
+      {
+        "label": "A",
+        "text": "7"
+      },
+      {
+        "label": "B",
+        "text": "4"
+      },
+      {
+        "label": "C",
+        "text": "-4"
+      },
+      {
+        "label": "D",
+        "text": "10"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "|−7| = 7 and |3| = 3. 7 + 3 = 10.",
+    "skill": "Absolute Value",
+    "difficulty": 3
+  },
+  {
+    "id": "sbac_016",
+    "exam": "SBAC",
+    "section": "English Language Arts",
+    "question": "A primary source is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "An original document or firsthand account from the time period being studied"
+      },
+      {
+        "label": "B",
+        "text": "A textbook summary of events"
+      },
+      {
+        "label": "C",
+        "text": "An encyclopedia article"
+      },
+      {
+        "label": "D",
+        "text": "A movie based on historical events"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Primary sources are original, firsthand documents or accounts created during the time period, such as diaries, letters, and photographs.",
+    "skill": "Source Types",
+    "difficulty": 3
+  },
+  {
+    "id": "sbac_017",
+    "exam": "SBAC",
+    "section": "Mathematics",
+    "question": "What is the mean of: 10, 15, 20, 25, 30?",
+    "options": [
+      {
+        "label": "A",
+        "text": "15"
+      },
+      {
+        "label": "B",
+        "text": "20"
+      },
+      {
+        "label": "C",
+        "text": "25"
+      },
+      {
+        "label": "D",
+        "text": "22"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Mean = sum/count = (10+15+20+25+30)/5 = 100/5 = 20.",
+    "skill": "Statistics",
+    "difficulty": 3
+  },
+  {
+    "id": "sbac_018",
+    "exam": "SBAC",
+    "section": "English Language Arts",
+    "question": "Which word is an antonym of 'expand'?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Increase"
+      },
+      {
+        "label": "B",
+        "text": "Enlarge"
+      },
+      {
+        "label": "C",
+        "text": "Contract"
+      },
+      {
+        "label": "D",
+        "text": "Amplify"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "'Contract' means to shrink or become smaller, which is the opposite of 'expand.'",
+    "skill": "Antonyms",
+    "difficulty": 3
+  },
+  {
+    "id": "sbac_019",
+    "exam": "SBAC",
+    "section": "Mathematics",
+    "question": "Convert 3/5 to a percentage.",
+    "options": [
+      {
+        "label": "A",
+        "text": "50%"
+      },
+      {
+        "label": "B",
+        "text": "35%"
+      },
+      {
+        "label": "C",
+        "text": "60%"
+      },
+      {
+        "label": "D",
+        "text": "75%"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "3/5 = 0.6 = 60%.",
+    "skill": "Fraction to Percent",
+    "difficulty": 3
+  },
+  {
+    "id": "sbac_020",
+    "exam": "SBAC",
+    "section": "English Language Arts",
+    "question": "Which literary device is used when an author hints at future events in a story?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Foreshadowing"
+      },
+      {
+        "label": "B",
+        "text": "Flashback"
+      },
+      {
+        "label": "C",
+        "text": "Irony"
+      },
+      {
+        "label": "D",
+        "text": "Allusion"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Foreshadowing gives clues or hints about events that will happen later in the story to build suspense.",
+    "skill": "Literary Devices",
+    "difficulty": 3
+  },
+  {
+    "id": "sbac_021",
+    "exam": "SBAC",
+    "section": "Mathematics",
+    "question": "Solve for x: 3x − 7 = 14",
+    "options": [
+      {
+        "label": "A",
+        "text": "7"
+      },
+      {
+        "label": "B",
+        "text": "3"
+      },
+      {
+        "label": "C",
+        "text": "21"
+      },
+      {
+        "label": "D",
+        "text": "5"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "3x = 14 + 7 = 21, so x = 21/3 = 7.",
+    "skill": "Linear Equations",
+    "difficulty": 3
+  },
+  {
+    "id": "sbac_003",
+    "exam": "SBAC",
+    "section": "Mathematics",
+    "question": "Which expression is equivalent to 4(2x + 3)?",
+    "options": [
+      {
+        "label": "A",
+        "text": "8x + 12"
+      },
+      {
+        "label": "B",
+        "text": "8x + 3"
+      },
+      {
+        "label": "C",
+        "text": "6x + 7"
+      },
+      {
+        "label": "D",
+        "text": "2x + 12"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Distribute 4: 4(2x) + 4(3) = 8x + 12.",
+    "skill": "Distributive Property",
+    "difficulty": 3
+  },
+  {
+    "id": "sbac_004",
+    "exam": "SBAC",
+    "section": "English Language Arts",
+    "question": "Which sentence contains a correct use of an apostrophe?",
+    "options": [
+      {
+        "label": "A",
+        "text": "The children's toys were scattered across the room."
+      },
+      {
+        "label": "B",
+        "text": "The childrens' toys were scattered across the room."
+      },
+      {
+        "label": "C",
+        "text": "The childrens toys were scattered across the room."
+      },
+      {
+        "label": "D",
+        "text": "The children's toy's were scattered across the room."
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "'Children' is already plural, so the possessive apostrophe goes before the 's': children's.",
+    "skill": "Apostrophes",
+    "difficulty": 3
+  },
+  {
+    "id": "sbac_041",
+    "exam": "SBAC",
+    "section": "Mathematics",
+    "question": "Simplify: 5/8 + 3/8",
+    "options": [
+      {
+        "label": "A",
+        "text": "1"
+      },
+      {
+        "label": "B",
+        "text": "8/16"
+      },
+      {
+        "label": "C",
+        "text": "8/8"
+      },
+      {
+        "label": "D",
+        "text": "15/64"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "5/8 + 3/8 = 8/8 = 1. When denominators are the same, add numerators.",
+    "skill": "Fraction Addition",
+    "difficulty": 3
+  },
+  {
+    "id": "sbac_025",
+    "exam": "SBAC",
+    "section": "Mathematics",
+    "question": "What is the greatest common factor (GCF) of 18 and 24?",
+    "options": [
+      {
+        "label": "A",
+        "text": "9"
+      },
+      {
+        "label": "B",
+        "text": "3"
+      },
+      {
+        "label": "C",
+        "text": "12"
+      },
+      {
+        "label": "D",
+        "text": "6"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Factors of 18: 1,2,3,6,9,18. Factors of 24: 1,2,3,4,6,8,12,24. GCF = 6.",
+    "skill": "Factors",
+    "difficulty": 3
+  },
+  {
+    "id": "sbac_026",
+    "exam": "SBAC",
+    "section": "English Language Arts",
+    "question": "What is the author's purpose in writing a persuasive essay?",
+    "options": [
+      {
+        "label": "A",
+        "text": "To describe a personal experience"
+      },
+      {
+        "label": "B",
+        "text": "To tell an entertaining story"
+      },
+      {
+        "label": "C",
+        "text": "To provide a neutral summary of facts"
+      },
+      {
+        "label": "D",
+        "text": "To convince the reader to agree with a particular viewpoint"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Persuasive writing aims to convince the reader to accept the author's argument or take a specific action.",
+    "skill": "Author's Purpose",
+    "difficulty": 3
+  },
+  {
+    "id": "sbac_027",
+    "exam": "SBAC",
+    "section": "Mathematics",
+    "question": "Which of the following is a prime number?",
+    "options": [
+      {
+        "label": "A",
+        "text": "35"
+      },
+      {
+        "label": "B",
+        "text": "39"
+      },
+      {
+        "label": "C",
+        "text": "33"
+      },
+      {
+        "label": "D",
+        "text": "37"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "37 is divisible only by 1 and itself. 39=3×13, 33=3×11, 35=5×7.",
+    "skill": "Prime Numbers",
+    "difficulty": 3
+  },
+  {
+    "id": "sbac_028",
+    "exam": "SBAC",
+    "section": "English Language Arts",
+    "question": "A student is writing a research paper. Which source would be MOST credible?",
+    "options": [
+      {
+        "label": "A",
+        "text": "An anonymous forum discussion"
+      },
+      {
+        "label": "B",
+        "text": "A personal blog post"
+      },
+      {
+        "label": "C",
+        "text": "A social media comment"
+      },
+      {
+        "label": "D",
+        "text": "A peer-reviewed journal article from a university"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Peer-reviewed journal articles undergo rigorous academic review and are the most credible sources for research.",
+    "skill": "Source Credibility",
+    "difficulty": 3
+  },
+  {
+    "id": "sbac_029",
+    "exam": "SBAC",
+    "section": "Mathematics",
+    "question": "What is 15% of 200?",
+    "options": [
+      {
+        "label": "A",
+        "text": "35"
+      },
+      {
+        "label": "B",
+        "text": "15"
+      },
+      {
+        "label": "C",
+        "text": "25"
+      },
+      {
+        "label": "D",
+        "text": "30"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "15% × 200 = 0.15 × 200 = 30.",
+    "skill": "Percentages",
+    "difficulty": 3
+  },
+  {
+    "id": "sbac_030",
+    "exam": "SBAC",
+    "section": "English Language Arts",
+    "question": "Which sentence demonstrates correct parallel structure?",
+    "options": [
+      {
+        "label": "A",
+        "text": "She enjoys swimming, to hike, and biking."
+      },
+      {
+        "label": "B",
+        "text": "She enjoys swimming, hiking, and biking."
+      },
+      {
+        "label": "C",
+        "text": "She enjoys swimming, hiking, and to bike."
+      },
+      {
+        "label": "D",
+        "text": "She enjoys to swim, hiking, and biked."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Parallel structure requires consistent grammatical forms. All three activities use the gerund (-ing) form.",
+    "skill": "Parallel Structure",
+    "difficulty": 5
+  },
+  {
+    "id": "sbac_031",
+    "exam": "SBAC",
+    "section": "Mathematics",
+    "question": "If a triangle has angles measuring 45°, 65°, and x°, what is the value of x?",
+    "options": [
+      {
+        "label": "A",
+        "text": "70°"
+      },
+      {
+        "label": "B",
+        "text": "80°"
+      },
+      {
+        "label": "C",
+        "text": "60°"
+      },
+      {
+        "label": "D",
+        "text": "50°"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Triangle angles sum to 180°. x = 180 - 45 - 65 = 70°.",
+    "skill": "Triangle Angles",
+    "difficulty": 3
+  },
+  {
+    "id": "sbac_032",
+    "exam": "SBAC",
+    "section": "English Language Arts",
+    "question": "Read: 'Despite the team's best efforts, the project failed to meet its deadline.' The word 'despite' signals:",
+    "options": [
+      {
+        "label": "A",
+        "text": "A comparison of similar events"
+      },
+      {
+        "label": "B",
+        "text": "A cause-and-effect relationship"
+      },
+      {
+        "label": "C",
+        "text": "A contrast between effort and outcome"
+      },
+      {
+        "label": "D",
+        "text": "A chronological sequence"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "'Despite' introduces a contrast or concession — the effort was strong but the outcome was negative.",
+    "skill": "Signal Words",
+    "difficulty": 5
+  },
+  {
+    "id": "sbac_033",
+    "exam": "SBAC",
+    "section": "Mathematics",
+    "question": "Evaluate: 2³ × 3²",
+    "options": [
+      {
+        "label": "A",
+        "text": "72"
+      },
+      {
+        "label": "B",
+        "text": "36"
+      },
+      {
+        "label": "C",
+        "text": "48"
+      },
+      {
+        "label": "D",
+        "text": "54"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "2³ = 8, 3² = 9. 8 × 9 = 72.",
+    "skill": "Exponents",
+    "difficulty": 3
+  },
+  {
+    "id": "sbac_034",
+    "exam": "SBAC",
+    "section": "English Language Arts",
+    "question": "Which type of figurative language is used in 'The wind whispered through the trees'?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Hyperbole"
+      },
+      {
+        "label": "B",
+        "text": "Simile"
+      },
+      {
+        "label": "C",
+        "text": "Personification"
+      },
+      {
+        "label": "D",
+        "text": "Metaphor"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Personification gives human qualities to non-human things. Wind cannot literally whisper.",
+    "skill": "Figurative Language",
+    "difficulty": 3
+  },
+  {
+    "id": "sbac_035",
+    "exam": "SBAC",
+    "section": "Mathematics",
+    "question": "A line passes through (0, 3) and (2, 7). What is its slope?",
+    "options": [
+      {
+        "label": "A",
+        "text": "2"
+      },
+      {
+        "label": "B",
+        "text": "4"
+      },
+      {
+        "label": "C",
+        "text": "3"
+      },
+      {
+        "label": "D",
+        "text": "5"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Slope = (y₂-y₁)/(x₂-x₁) = (7-3)/(2-0) = 4/2 = 2.",
+    "skill": "Slope",
+    "difficulty": 5
+  },
+  {
+    "id": "sbac_036",
+    "exam": "SBAC",
+    "section": "English Language Arts",
+    "question": "A claim is best supported by:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Repeating the claim in different words"
+      },
+      {
+        "label": "B",
+        "text": "Personal opinions only"
+      },
+      {
+        "label": "C",
+        "text": "Emotional appeals without facts"
+      },
+      {
+        "label": "D",
+        "text": "Relevant evidence and logical reasoning"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Strong arguments require relevant evidence (facts, data, examples) combined with logical reasoning.",
+    "skill": "Argumentation",
+    "difficulty": 5
+  },
+  {
+    "id": "sbac_037",
+    "exam": "SBAC",
+    "section": "Mathematics",
+    "question": "What is the least common multiple (LCM) of 4 and 6?",
+    "options": [
+      {
+        "label": "A",
+        "text": "12"
+      },
+      {
+        "label": "B",
+        "text": "24"
+      },
+      {
+        "label": "C",
+        "text": "6"
+      },
+      {
+        "label": "D",
+        "text": "8"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Multiples of 4: 4,8,12,16... Multiples of 6: 6,12,18... LCM = 12.",
+    "skill": "LCM",
+    "difficulty": 3
+  },
+  {
+    "id": "sbac_038",
+    "exam": "SBAC",
+    "section": "English Language Arts",
+    "question": "Which transition word best shows a cause-and-effect relationship?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Consequently"
+      },
+      {
+        "label": "B",
+        "text": "However"
+      },
+      {
+        "label": "C",
+        "text": "Meanwhile"
+      },
+      {
+        "label": "D",
+        "text": "Similarly"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "'Consequently' signals that what follows is a result or effect of what came before.",
+    "skill": "Transitions",
+    "difficulty": 3
+  },
+  {
+    "id": "sbac_039",
+    "exam": "SBAC",
+    "section": "Mathematics",
+    "question": "A car travels 150 miles in 3 hours. What is its average speed?",
+    "options": [
+      {
+        "label": "A",
+        "text": "60 mph"
+      },
+      {
+        "label": "B",
+        "text": "45 mph"
+      },
+      {
+        "label": "C",
+        "text": "55 mph"
+      },
+      {
+        "label": "D",
+        "text": "50 mph"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Average speed = distance/time = 150/3 = 50 mph.",
+    "skill": "Rate",
+    "difficulty": 3
+  },
+  {
+    "id": "sbac_040",
+    "exam": "SBAC",
+    "section": "English Language Arts",
+    "question": "In a narrative, the climax is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "The resolution of the conflict"
+      },
+      {
+        "label": "B",
+        "text": "The introduction of characters"
+      },
+      {
+        "label": "C",
+        "text": "The turning point or moment of highest tension"
+      },
+      {
+        "label": "D",
+        "text": "The background information"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "The climax is the most intense, pivotal moment in the narrative where the central conflict reaches its peak.",
+    "skill": "Story Elements",
+    "difficulty": 3
+  },
+  {
+    "id": "sbac_001",
+    "exam": "SBAC",
+    "section": "Mathematics",
+    "question": "A farmer has 3 fields. The first is 2.5 acres, the second is 1.75 acres, and the third is 3.25 acres. What is the total acreage?",
+    "options": [
+      {
+        "label": "A",
+        "text": "6.5 acres"
+      },
+      {
+        "label": "B",
+        "text": "7.0 acres"
+      },
+      {
+        "label": "C",
+        "text": "8.0 acres"
+      },
+      {
+        "label": "D",
+        "text": "7.5 acres"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "2.5 + 1.75 + 3.25 = 7.5 acres.",
+    "skill": "Decimal Operations",
+    "difficulty": 3
+  },
+  {
+    "id": "sbac_042",
+    "exam": "SBAC",
+    "section": "English Language Arts",
+    "question": "Which sentence contains a dangling modifier?",
+    "options": [
+      {
+        "label": "A",
+        "text": "I walked to school while it rained."
+      },
+      {
+        "label": "B",
+        "text": "Walking to school, I noticed the rain started to fall."
+      },
+      {
+        "label": "C",
+        "text": "Walking to school, the rain started to fall."
+      },
+      {
+        "label": "D",
+        "text": "The rain fell as I walked to school."
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "'Walking to school' has no clear subject — it dangles because 'rain' can't walk. The modifier needs a human subject.",
+    "skill": "Modifiers",
+    "difficulty": 5
+  },
+  {
+    "id": "sbac_043",
+    "exam": "SBAC",
+    "section": "Mathematics",
+    "question": "What is the perimeter of a square with sides of 9 cm?",
+    "options": [
+      {
+        "label": "A",
+        "text": "18 cm"
+      },
+      {
+        "label": "B",
+        "text": "81 cm"
+      },
+      {
+        "label": "C",
+        "text": "36 cm"
+      },
+      {
+        "label": "D",
+        "text": "27 cm"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Perimeter of a square = 4 × side = 4 × 9 = 36 cm.",
+    "skill": "Perimeter",
+    "difficulty": 3
+  },
+  {
+    "id": "sbac_044",
+    "exam": "SBAC",
+    "section": "English Language Arts",
+    "question": "A counterclaim in an argumentative essay is:",
+    "options": [
+      {
+        "label": "A",
+        "text": "The conclusion paragraph"
+      },
+      {
+        "label": "B",
+        "text": "A restatement of the thesis"
+      },
+      {
+        "label": "C",
+        "text": "A personal anecdote"
+      },
+      {
+        "label": "D",
+        "text": "An opposing viewpoint that the writer acknowledges and refutes"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "A counterclaim presents an opposing argument, which the writer then addresses to strengthen their own position.",
+    "skill": "Argumentation",
+    "difficulty": 5
+  },
+  {
+    "id": "sbac_045",
+    "exam": "SBAC",
+    "section": "Mathematics",
+    "question": "Which number is irrational?",
+    "options": [
+      {
+        "label": "A",
+        "text": "−7"
+      },
+      {
+        "label": "B",
+        "text": "0.5"
+      },
+      {
+        "label": "C",
+        "text": "3/4"
+      },
+      {
+        "label": "D",
+        "text": "√2"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "√2 ≈ 1.41421... is non-terminating and non-repeating, making it irrational.",
+    "skill": "Number Classification",
+    "difficulty": 5
+  },
+  {
+    "id": "sbac_002",
+    "exam": "SBAC",
+    "section": "English Language Arts",
+    "question": "Read: 'The expedition was arduous but ultimately rewarding.' What does 'arduous' most likely mean?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Exciting and fun"
+      },
+      {
+        "label": "B",
+        "text": "Short and easy"
+      },
+      {
+        "label": "C",
+        "text": "Boring and repetitive"
+      },
+      {
+        "label": "D",
+        "text": "Difficult and tiring"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Context clue 'but ultimately rewarding' implies the expedition was challenging. 'Arduous' means requiring great effort.",
+    "skill": "Vocabulary in Context",
+    "difficulty": 5
+  },
+  {
+    "id": "sbac_047",
+    "exam": "SBAC",
+    "section": "Mathematics",
+    "question": "If f(x) = 2x + 5, what is f(3)?",
+    "options": [
+      {
+        "label": "A",
+        "text": "11"
+      },
+      {
+        "label": "B",
+        "text": "8"
+      },
+      {
+        "label": "C",
+        "text": "6"
+      },
+      {
+        "label": "D",
+        "text": "10"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "f(3) = 2(3) + 5 = 6 + 5 = 11.",
+    "skill": "Functions",
+    "difficulty": 3
+  },
+  {
+    "id": "sbac_048",
+    "exam": "SBAC",
+    "section": "English Language Arts",
+    "question": "What is the difference between a fact and an opinion?",
+    "options": [
+      {
+        "label": "A",
+        "text": "A fact can be proven true; an opinion is a personal belief or judgment"
+      },
+      {
+        "label": "B",
+        "text": "Facts are always in textbooks; opinions are always wrong"
+      },
+      {
+        "label": "C",
+        "text": "There is no difference"
+      },
+      {
+        "label": "D",
+        "text": "Opinions are always supported by evidence; facts are not"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Facts are verifiable statements that can be proven true or false. Opinions express personal beliefs and cannot be definitively proven.",
+    "skill": "Fact vs Opinion",
+    "difficulty": 3
+  },
+  {
+    "id": "sbac_049",
+    "exam": "SBAC",
+    "section": "Mathematics",
+    "question": "Convert 0.375 to a fraction in simplest form.",
+    "options": [
+      {
+        "label": "A",
+        "text": "375/100"
+      },
+      {
+        "label": "B",
+        "text": "3/8"
+      },
+      {
+        "label": "C",
+        "text": "3/4"
+      },
+      {
+        "label": "D",
+        "text": "37/100"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "0.375 = 375/1000 = 3/8 after dividing numerator and denominator by 125.",
+    "skill": "Decimal to Fraction",
+    "difficulty": 5
+  },
+  {
+    "id": "sbac_050",
+    "exam": "SBAC",
+    "section": "English Language Arts",
+    "question": "Which sentence uses the active voice?",
+    "options": [
+      {
+        "label": "A",
+        "text": "The teacher graded the exams."
+      },
+      {
+        "label": "B",
+        "text": "The exams were graded by the teacher."
+      },
+      {
+        "label": "C",
+        "text": "The exams had been graded."
+      },
+      {
+        "label": "D",
+        "text": "It was decided that the exams would be graded."
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "In active voice, the subject (teacher) performs the action (graded). Passive voice reverses this structure.",
+    "skill": "Active vs Passive Voice",
+    "difficulty": 3
+  },
+  {
+    "id": "sbac_051",
+    "exam": "SBAC",
+    "section": "Mathematics",
+    "question": "A triangle has sides 3, 4, and 5. Is it a right triangle?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Yes, because 3² + 4² = 5²"
+      },
+      {
+        "label": "B",
+        "text": "No, because the sides are too small"
+      },
+      {
+        "label": "C",
+        "text": "Yes, because all sides are different"
+      },
+      {
+        "label": "D",
+        "text": "No, because 3 + 4 ≠ 5²"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "By the Pythagorean theorem: 9 + 16 = 25, which equals 5². It satisfies a² + b² = c².",
+    "skill": "Pythagorean Theorem",
+    "difficulty": 5
+  },
+  {
+    "id": "sbac_052",
+    "exam": "SBAC",
+    "section": "English Language Arts",
+    "question": "What is an inference?",
+    "options": [
+      {
+        "label": "A",
+        "text": "The title of a passage"
+      },
+      {
+        "label": "B",
+        "text": "A direct quote from the text"
+      },
+      {
+        "label": "C",
+        "text": "A conclusion drawn from evidence and reasoning, not explicitly stated"
+      },
+      {
+        "label": "D",
+        "text": "A summary of the main idea"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "An inference is a logical conclusion based on evidence and prior knowledge, even when not directly stated in the text.",
+    "skill": "Making Inferences",
+    "difficulty": 5
+  },
+  {
+    "id": "sbac_053",
+    "exam": "SBAC",
+    "section": "Mathematics",
+    "question": "What is the mode of the data set: 3, 5, 7, 5, 9, 5, 2?",
+    "options": [
+      {
+        "label": "A",
+        "text": "7"
+      },
+      {
+        "label": "B",
+        "text": "3"
+      },
+      {
+        "label": "C",
+        "text": "5"
+      },
+      {
+        "label": "D",
+        "text": "9"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "The mode is the value that appears most frequently. 5 appears three times.",
+    "skill": "Statistics",
+    "difficulty": 3
+  },
+  {
+    "id": "sbac_054",
+    "exam": "SBAC",
+    "section": "English Language Arts",
+    "question": "Which sentence correctly uses a semicolon?",
+    "options": [
+      {
+        "label": "A",
+        "text": "She studied; all night she felt prepared; for the exam."
+      },
+      {
+        "label": "B",
+        "text": "She studied all night; and she felt prepared for the exam."
+      },
+      {
+        "label": "C",
+        "text": "She; studied all night she felt prepared for the exam."
+      },
+      {
+        "label": "D",
+        "text": "She studied all night; she felt prepared for the exam."
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "A semicolon connects two related independent clauses without a conjunction.",
+    "skill": "Semicolons",
+    "difficulty": 5
+  },
+  {
+    "id": "sbac_055",
+    "exam": "SBAC",
+    "section": "Mathematics",
+    "question": "Solve the inequality: 2x + 4 > 10",
+    "options": [
+      {
+        "label": "A",
+        "text": "x > 7"
+      },
+      {
+        "label": "B",
+        "text": "x > 3"
+      },
+      {
+        "label": "C",
+        "text": "x < 3"
+      },
+      {
+        "label": "D",
+        "text": "x > 5"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "2x + 4 > 10 → 2x > 6 → x > 3.",
+    "skill": "Inequalities",
+    "difficulty": 5
+  },
+  {
+    "id": "sbac_056",
+    "exam": "SBAC",
+    "section": "English Language Arts",
+    "question": "An allusion in literature refers to:",
+    "options": [
+      {
+        "label": "A",
+        "text": "A reference to another work of literature, history, or culture"
+      },
+      {
+        "label": "B",
+        "text": "A comparison using 'like' or 'as'"
+      },
+      {
+        "label": "C",
+        "text": "An exaggeration for emphasis"
+      },
+      {
+        "label": "D",
+        "text": "A character's internal thoughts"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "An allusion is an indirect reference to a well-known person, event, text, or cultural element.",
+    "skill": "Literary Devices",
+    "difficulty": 5
+  },
+  {
+    "id": "sbac_057",
+    "exam": "SBAC",
+    "section": "Mathematics",
+    "question": "What is the surface area of a cube with side length 4 cm?",
+    "options": [
+      {
+        "label": "A",
+        "text": "96 cm²"
+      },
+      {
+        "label": "B",
+        "text": "64 cm²"
+      },
+      {
+        "label": "C",
+        "text": "24 cm²"
+      },
+      {
+        "label": "D",
+        "text": "48 cm²"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Surface area of a cube = 6s² = 6(4²) = 6(16) = 96 cm².",
+    "skill": "Surface Area",
+    "difficulty": 5
+  },
+  {
+    "id": "sbac_058",
+    "exam": "SBAC",
+    "section": "English Language Arts",
+    "question": "Which revision improves clarity? Original: 'The thing was good and it helped.'",
+    "options": [
+      {
+        "label": "A",
+        "text": "The tutoring program was effective and helped students improve their grades."
+      },
+      {
+        "label": "B",
+        "text": "The thing was really very good and it helped a lot."
+      },
+      {
+        "label": "C",
+        "text": "It was good. It helped."
+      },
+      {
+        "label": "D",
+        "text": "The thing helped good."
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Replacing vague words ('thing,' 'good') with specific language ('tutoring program,' 'effective') improves clarity.",
+    "skill": "Revision and Clarity",
+    "difficulty": 5
+  },
+  {
+    "id": "sbac_059",
+    "exam": "SBAC",
+    "section": "Mathematics",
+    "question": "Express 45,000 in scientific notation.",
+    "options": [
+      {
+        "label": "A",
+        "text": "4.5 × 10⁴"
+      },
+      {
+        "label": "B",
+        "text": "45 × 10³"
+      },
+      {
+        "label": "C",
+        "text": "4.5 × 10³"
+      },
+      {
+        "label": "D",
+        "text": "0.45 × 10⁵"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "45,000 = 4.5 × 10⁴. In scientific notation, the coefficient must be between 1 and 10.",
+    "skill": "Scientific Notation",
+    "difficulty": 5
+  },
+  {
+    "id": "sbac_060",
+    "exam": "SBAC",
+    "section": "English Language Arts",
+    "question": "The purpose of a conclusion paragraph in an essay is to:",
+    "options": [
+      {
+        "label": "A",
+        "text": "Introduce a new argument"
+      },
+      {
+        "label": "B",
+        "text": "Summarize the main points and leave the reader with a final thought"
+      },
+      {
+        "label": "C",
+        "text": "Provide all the evidence"
+      },
+      {
+        "label": "D",
+        "text": "Restate the introduction word for word"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "A conclusion synthesizes the essay's key points and provides closure, often ending with a broader reflection.",
+    "skill": "Essay Structure",
+    "difficulty": 3
+  },
+  {
+    "id": "sbac_022",
+    "exam": "SBAC",
+    "section": "English Language Arts",
+    "question": "Which sentence uses a comma correctly?",
+    "options": [
+      {
+        "label": "A",
+        "text": "After finishing, her homework Maria went outside, to play."
+      },
+      {
+        "label": "B",
+        "text": "After finishing her homework Maria, went outside to play."
+      },
+      {
+        "label": "C",
+        "text": "After, finishing her homework Maria went outside to play."
+      },
+      {
+        "label": "D",
+        "text": "After finishing her homework, Maria went outside to play."
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "A comma follows an introductory dependent clause ('After finishing her homework') before the main clause.",
+    "skill": "Comma Usage",
+    "difficulty": 3
   },
   {
     "id": "sbac_062",
@@ -1733,7 +1733,7 @@
     "correctAnswer": "A",
     "explanation": "A complex sentence has one independent clause and at least one dependent clause ('Although it was raining').",
     "skill": "Sentence Types",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "sbac_063",
@@ -1761,7 +1761,7 @@
     "correctAnswer": "A",
     "explanation": "Ordered: 3, 5, 8, 12, 15. The middle value is 8.",
     "skill": "Statistics",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "sbac_064",
@@ -1771,11 +1771,11 @@
     "options": [
       {
         "label": "A",
-        "text": "Loaded language, one-sided arguments, and omission of opposing views"
+        "text": "The use of facts and statistics"
       },
       {
         "label": "B",
-        "text": "The use of facts and statistics"
+        "text": "Loaded language, one-sided arguments, and omission of opposing views"
       },
       {
         "label": "C",
@@ -1786,10 +1786,10 @@
         "text": "Citing multiple sources"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "B",
     "explanation": "Bias appears through emotionally charged words, presenting only one perspective, and ignoring contradictory evidence.",
     "skill": "Identifying Bias",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "sbac_065",
@@ -1799,7 +1799,7 @@
     "options": [
       {
         "label": "A",
-        "text": "12x⁵"
+        "text": "7x⁶"
       },
       {
         "label": "B",
@@ -1811,13 +1811,13 @@
       },
       {
         "label": "D",
-        "text": "7x⁶"
+        "text": "12x⁵"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "Multiply coefficients: 3×4=12. Add exponents: x²⁺³=x⁵. Result: 12x⁵.",
     "skill": "Exponent Rules",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "sbac_066",
@@ -1827,7 +1827,7 @@
     "options": [
       {
         "label": "A",
-        "text": "A nonessential (nonrestrictive) clause providing additional information"
+        "text": "A run-on sentence"
       },
       {
         "label": "B",
@@ -1839,13 +1839,13 @@
       },
       {
         "label": "D",
-        "text": "A run-on sentence"
+        "text": "A nonessential (nonrestrictive) clause providing additional information"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "Nonessential clauses are set off by commas and provide extra information that can be removed without changing the sentence's core meaning.",
     "skill": "Clauses",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "sbac_067",
@@ -1873,7 +1873,7 @@
     "correctAnswer": "A",
     "explanation": "2/3 × 1.5 = 2/3 × 3/2 = 6/6 = 1 cup.",
     "skill": "Fraction Operations",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "sbac_068",
@@ -1883,7 +1883,7 @@
     "options": [
       {
         "label": "A",
-        "text": "The group of students are taking the test."
+        "text": "Each student is taking the test."
       },
       {
         "label": "B",
@@ -1895,13 +1895,13 @@
       },
       {
         "label": "D",
-        "text": "Each student is taking the test."
+        "text": "The group of students are taking the test."
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "'Group' is a singular collective noun and requires 'is.' 'The group of students is taking the test' is correct.",
     "skill": "Subject-Verb Agreement",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "sbac_069",
@@ -1911,7 +1911,7 @@
     "options": [
       {
         "label": "A",
-        "text": "-5"
+        "text": "0"
       },
       {
         "label": "B",
@@ -1923,13 +1923,13 @@
       },
       {
         "label": "D",
-        "text": "0"
+        "text": "-5"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "In y = mx + b form, b is the y-intercept. Here b = -5.",
     "skill": "Linear Functions",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "sbac_070",
@@ -1939,7 +1939,7 @@
     "options": [
       {
         "label": "A",
-        "text": "Include only the main ideas in your own words"
+        "text": "Include every detail from the original"
       },
       {
         "label": "B",
@@ -1951,13 +1951,13 @@
       },
       {
         "label": "D",
-        "text": "Include every detail from the original"
+        "text": "Include only the main ideas in your own words"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "A summary restates the main ideas concisely in your own words without personal opinions or minor details.",
     "skill": "Summarizing",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "sbac_071",
@@ -1985,7 +1985,7 @@
     "correctAnswer": "A",
     "explanation": "Supplementary angles sum to 180°. 180 - 65 = 115°.",
     "skill": "Angle Relationships",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "sbac_072",
@@ -1995,7 +1995,7 @@
     "options": [
       {
         "label": "A",
-        "text": "were"
+        "text": "is"
       },
       {
         "label": "B",
@@ -2003,17 +2003,17 @@
       },
       {
         "label": "C",
-        "text": "is"
+        "text": "were"
       },
       {
         "label": "D",
         "text": "has been"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "C",
     "explanation": "'Results' is plural, requiring the plural verb 'were.'",
     "skill": "Subject-Verb Agreement",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "sbac_073",
@@ -2041,7 +2041,7 @@
     "correctAnswer": "A",
     "explanation": "√144 = 12 because 12 × 12 = 144.",
     "skill": "Square Roots",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "sbac_074",
@@ -2069,7 +2069,7 @@
     "correctAnswer": "A",
     "explanation": "Ethos (credibility), pathos (emotion), and logos (logic) are the three classical rhetorical appeals for persuasion.",
     "skill": "Rhetoric",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "sbac_075",
@@ -2097,7 +2097,7 @@
     "correctAnswer": "A",
     "explanation": "4 cm × 5 m/cm = 20 m.",
     "skill": "Scale",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "sbac_076",
@@ -2107,7 +2107,7 @@
     "options": [
       {
         "label": "A",
-        "text": "External conflict"
+        "text": "Neither internal nor external"
       },
       {
         "label": "B",
@@ -2119,13 +2119,13 @@
       },
       {
         "label": "D",
-        "text": "Neither internal nor external"
+        "text": "External conflict"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "Person vs. nature is an external conflict where a character struggles against forces of nature.",
     "skill": "Types of Conflict",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "sbac_077",
@@ -2135,7 +2135,7 @@
     "options": [
       {
         "label": "A",
-        "text": "14"
+        "text": "-14"
       },
       {
         "label": "B",
@@ -2147,13 +2147,13 @@
       },
       {
         "label": "D",
-        "text": "-14"
+        "text": "14"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "−3 × (−4) = 12. 12 + 2 = 14.",
     "skill": "Integer Operations",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "sbac_078",
@@ -2181,7 +2181,7 @@
     "correctAnswer": "A",
     "explanation": "'Brilliant' is an adjective modifying the noun 'scientist,' describing a quality.",
     "skill": "Parts of Speech",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "sbac_079",
@@ -2209,7 +2209,7 @@
     "correctAnswer": "A",
     "explanation": "IQR = Q3 - Q1 = 40 - 20 = 20.",
     "skill": "Box Plots",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "sbac_080",
@@ -2219,11 +2219,11 @@
     "options": [
       {
         "label": "A",
-        "text": "According to Smith, 'The results were significant' (Smith, 2020)."
+        "text": "The results were significant."
       },
       {
         "label": "B",
-        "text": "The results were significant."
+        "text": "According to Smith, 'The results were significant' (Smith, 2020)."
       },
       {
         "label": "C",
@@ -2234,10 +2234,10 @@
         "text": "'The results were significant'"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "B",
     "explanation": "A proper citation includes attribution (the author's name) and a parenthetical reference to the source.",
     "skill": "Citations",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "sbac_081",
@@ -2247,7 +2247,7 @@
     "options": [
       {
         "label": "A",
-        "text": "0.35"
+        "text": "3.5"
       },
       {
         "label": "B",
@@ -2259,13 +2259,13 @@
       },
       {
         "label": "D",
-        "text": "3.5"
+        "text": "0.35"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "7 ÷ 20 = 0.35.",
     "skill": "Fraction to Decimal",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "sbac_082",
@@ -2293,7 +2293,7 @@
     "correctAnswer": "A",
     "explanation": "Dramatic irony exists when the audience has information that characters lack, creating tension.",
     "skill": "Irony",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "sbac_083",
@@ -2303,7 +2303,7 @@
     "options": [
       {
         "label": "A",
-        "text": "43.96 cm"
+        "text": "49 cm"
       },
       {
         "label": "B",
@@ -2315,13 +2315,13 @@
       },
       {
         "label": "D",
-        "text": "49 cm"
+        "text": "43.96 cm"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "C = 2πr = 2(3.14)(7) = 43.96 cm.",
     "skill": "Circles",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "sbac_084",
@@ -2331,11 +2331,11 @@
     "options": [
       {
         "label": "A",
-        "text": "Presents events truthfully and can be trusted by the reader"
+        "text": "Always lies to the reader"
       },
       {
         "label": "B",
-        "text": "Always lies to the reader"
+        "text": "Presents events truthfully and can be trusted by the reader"
       },
       {
         "label": "C",
@@ -2346,10 +2346,10 @@
         "text": "Is always the main character"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "B",
     "explanation": "A reliable narrator provides an honest, accurate account of events that readers can trust.",
     "skill": "Narrative Voice",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "sbac_085",
@@ -2359,7 +2359,7 @@
     "options": [
       {
         "label": "A",
-        "text": "48"
+        "text": "16"
       },
       {
         "label": "B",
@@ -2367,17 +2367,17 @@
       },
       {
         "label": "C",
-        "text": "16"
+        "text": "48"
       },
       {
         "label": "D",
         "text": "8"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "C",
     "explanation": "Multiply both sides by 4: x = 12 × 4 = 48.",
     "skill": "Linear Equations",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "sbac_086",
@@ -2405,7 +2405,7 @@
     "correctAnswer": "A",
     "explanation": "Point of view is the narrative perspective — first person (I), second person (you), or third person (he/she/they).",
     "skill": "Point of View",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "sbac_087",
@@ -2415,7 +2415,7 @@
     "options": [
       {
         "label": "A",
-        "text": "$70"
+        "text": "$55"
       },
       {
         "label": "B",
@@ -2427,13 +2427,13 @@
       },
       {
         "label": "D",
-        "text": "$55"
+        "text": "$70"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "Markup = 40% of $50 = $20. Retail = $50 + $20 = $70.",
     "skill": "Markup",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "sbac_088",
@@ -2461,7 +2461,7 @@
     "correctAnswer": "A",
     "explanation": "'Because' is a subordinating conjunction connecting a dependent clause to an independent clause.",
     "skill": "Parts of Speech",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "sbac_089",
@@ -2489,7 +2489,7 @@
     "correctAnswer": "A",
     "explanation": "A scalene triangle has three sides of different lengths and three different angles.",
     "skill": "Triangle Classification",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "sbac_090",
@@ -2499,7 +2499,7 @@
     "options": [
       {
         "label": "A",
-        "text": "The underlying message or central idea the author conveys"
+        "text": "The main character's name"
       },
       {
         "label": "B",
@@ -2511,13 +2511,13 @@
       },
       {
         "label": "D",
-        "text": "The main character's name"
+        "text": "The underlying message or central idea the author conveys"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "Theme is the deeper meaning or universal message about life that the author explores through the narrative.",
     "skill": "Theme",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "sbac_091",
@@ -2527,7 +2527,7 @@
     "options": [
       {
         "label": "A",
-        "text": "24"
+        "text": "8"
       },
       {
         "label": "B",
@@ -2535,17 +2535,17 @@
       },
       {
         "label": "C",
-        "text": "8"
+        "text": "24"
       },
       {
         "label": "D",
         "text": "12"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "C",
     "explanation": "4! = 4 × 3 × 2 × 1 = 24.",
     "skill": "Factorials",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "sbac_092",
@@ -2573,7 +2573,7 @@
     "correctAnswer": "A",
     "explanation": "They're = they are; their = possessive; there = location. The first sentence uses all three correctly.",
     "skill": "Homophones",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "sbac_093",
@@ -2583,11 +2583,11 @@
     "options": [
       {
         "label": "A",
-        "text": "Parabola opening upward"
+        "text": "Straight line"
       },
       {
         "label": "B",
-        "text": "Straight line"
+        "text": "Parabola opening upward"
       },
       {
         "label": "C",
@@ -2598,10 +2598,10 @@
         "text": "Parabola opening downward"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "B",
     "explanation": "y = x² is a quadratic function whose graph is a U-shaped parabola opening upward.",
     "skill": "Quadratic Functions",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "sbac_094",
@@ -2611,7 +2611,7 @@
     "options": [
       {
         "label": "A",
-        "text": "All sources consulted or cited in a research paper"
+        "text": "A timeline of events"
       },
       {
         "label": "B",
@@ -2623,13 +2623,13 @@
       },
       {
         "label": "D",
-        "text": "A timeline of events"
+        "text": "All sources consulted or cited in a research paper"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "A bibliography provides a complete list of all sources referenced or consulted during research.",
     "skill": "Research Skills",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "sbac_095",
@@ -2657,7 +2657,7 @@
     "correctAnswer": "A",
     "explanation": "Perpendicular lines have slopes that are negative reciprocals. The negative reciprocal of 2 is -1/2.",
     "skill": "Perpendicular Lines",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "sbac_096",
@@ -2685,7 +2685,7 @@
     "correctAnswer": "A",
     "explanation": "Onomatopoeia is a word that imitates a sound. 'Buzzed' imitates the sound bees make.",
     "skill": "Sound Devices",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "sbac_097",
@@ -2695,7 +2695,7 @@
     "options": [
       {
         "label": "A",
-        "text": "Mean"
+        "text": "Range"
       },
       {
         "label": "B",
@@ -2707,13 +2707,13 @@
       },
       {
         "label": "D",
-        "text": "Range"
+        "text": "Mean"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "The mean is most affected by outliers because it includes every value in its calculation. The median resists outlier effects.",
     "skill": "Outliers and Central Tendency",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "sbac_098",
@@ -2723,7 +2723,7 @@
     "options": [
       {
         "label": "A",
-        "text": "A recurring element, image, or idea that reinforces the theme"
+        "text": "The story's resolution"
       },
       {
         "label": "B",
@@ -2731,17 +2731,17 @@
       },
       {
         "label": "C",
-        "text": "The story's resolution"
+        "text": "A recurring element, image, or idea that reinforces the theme"
       },
       {
         "label": "D",
         "text": "A type of poem"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "C",
     "explanation": "A motif is a recurring image, symbol, or idea that develops and reinforces the theme throughout a work.",
     "skill": "Literary Elements",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "sbac_099",
@@ -2751,7 +2751,7 @@
     "options": [
       {
         "label": "A",
-        "text": "x = 7, y = 3"
+        "text": "x = 6, y = 4"
       },
       {
         "label": "B",
@@ -2763,13 +2763,13 @@
       },
       {
         "label": "D",
-        "text": "x = 6, y = 4"
+        "text": "x = 7, y = 3"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "Adding equations: 2x = 14, x = 7. Then y = 10 - 7 = 3.",
     "skill": "Systems of Equations",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "sbac_100",
@@ -2779,7 +2779,7 @@
     "options": [
       {
         "label": "A",
-        "text": "The emotional association or implied meaning beyond its dictionary definition"
+        "text": "The pronunciation of the word"
       },
       {
         "label": "B",
@@ -2787,17 +2787,17 @@
       },
       {
         "label": "C",
-        "text": "The pronunciation of the word"
+        "text": "The emotional association or implied meaning beyond its dictionary definition"
       },
       {
         "label": "D",
         "text": "The origin of the word"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "C",
     "explanation": "Connotation is the feelings and associations a word evokes, as opposed to its denotation (literal meaning).",
     "skill": "Connotation vs Denotation",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "sbac_101",
@@ -2807,7 +2807,7 @@
     "options": [
       {
         "label": "A",
-        "text": "282.6 cm³"
+        "text": "314 cm³"
       },
       {
         "label": "B",
@@ -2819,13 +2819,13 @@
       },
       {
         "label": "D",
-        "text": "314 cm³"
+        "text": "282.6 cm³"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "V = πr²h = 3.14 × 9 × 10 = 282.6 cm³.",
     "skill": "Volume of Cylinders",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "sbac_102",
@@ -2853,7 +2853,7 @@
     "correctAnswer": "A",
     "explanation": "'Almost ate' suggests he nearly ate but didn't. 'Ate almost' correctly means he ate most of it. The modifier is misplaced.",
     "skill": "Misplaced Modifiers",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "sbac_103",
@@ -2881,7 +2881,7 @@
     "correctAnswer": "A",
     "explanation": "Cross multiply: 3 × 12 = 9 × x → 36 = 9x → x = 4.",
     "skill": "Proportions",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "sbac_104",
@@ -2891,7 +2891,7 @@
     "options": [
       {
         "label": "A",
-        "text": "The logical connection between the claim and the evidence"
+        "text": "A piece of evidence"
       },
       {
         "label": "B",
@@ -2899,17 +2899,17 @@
       },
       {
         "label": "C",
-        "text": "A piece of evidence"
+        "text": "The logical connection between the claim and the evidence"
       },
       {
         "label": "D",
         "text": "The introduction paragraph"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "C",
     "explanation": "A warrant explains why the evidence supports the claim, providing the logical reasoning that connects them.",
     "skill": "Argumentation",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "sbac_105",
@@ -2919,7 +2919,7 @@
     "options": [
       {
         "label": "A",
-        "text": "x² − 9"
+        "text": "x² − 6"
       },
       {
         "label": "B",
@@ -2927,17 +2927,17 @@
       },
       {
         "label": "C",
-        "text": "x² − 6"
+        "text": "x² − 9"
       },
       {
         "label": "D",
         "text": "2x − 9"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "C",
     "explanation": "This is the difference of squares: (a+b)(a-b) = a²-b² = x²-9.",
     "skill": "Factoring",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "sbac_106",
@@ -2947,11 +2947,11 @@
     "options": [
       {
         "label": "A",
-        "text": "A comparison between two things to show how they are alike in some way"
+        "text": "A statement that contradicts itself"
       },
       {
         "label": "B",
-        "text": "A statement that contradicts itself"
+        "text": "A comparison between two things to show how they are alike in some way"
       },
       {
         "label": "C",
@@ -2962,10 +2962,10 @@
         "text": "A question asked for rhetorical effect"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "B",
     "explanation": "An analogy explains something unfamiliar by comparing it to something familiar, highlighting shared characteristics.",
     "skill": "Analogies",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "sbac_107",
@@ -2975,7 +2975,7 @@
     "options": [
       {
         "label": "A",
-        "text": "3/2"
+        "text": "2/3"
       },
       {
         "label": "B",
@@ -2987,13 +2987,13 @@
       },
       {
         "label": "D",
-        "text": "2/3"
+        "text": "3/2"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "Dividing fractions: 3/4 × 2/1 = 6/4 = 3/2.",
     "skill": "Fraction Division",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "sbac_108",
@@ -3021,7 +3021,7 @@
     "correctAnswer": "A",
     "explanation": "The resolution (denouement) follows the climax and shows how the conflict is resolved and loose ends are tied up.",
     "skill": "Plot Structure",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "sbac_109",
@@ -3031,7 +3031,7 @@
     "options": [
       {
         "label": "A",
-        "text": "4/15"
+        "text": "24/100"
       },
       {
         "label": "B",
@@ -3039,17 +3039,17 @@
       },
       {
         "label": "C",
-        "text": "24/100"
+        "text": "4/15"
       },
       {
         "label": "D",
         "text": "1/4"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "C",
     "explanation": "P(red first) = 6/10. P(blue second | red first) = 4/9. P(both) = 6/10 × 4/9 = 24/90 = 4/15.",
     "skill": "Compound Probability",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "sbac_110",
@@ -3059,7 +3059,7 @@
     "options": [
       {
         "label": "A",
-        "text": "Recycling is important."
+        "text": "I believe in my opinion recycling is important."
       },
       {
         "label": "B",
@@ -3067,17 +3067,17 @@
       },
       {
         "label": "C",
-        "text": "I believe in my opinion recycling is important."
+        "text": "Recycling is important."
       },
       {
         "label": "D",
         "text": "Recycling is important in my opinion I believe."
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "C",
     "explanation": "'In my opinion' and 'I believe' are redundant. Removing both creates a clear, concise statement.",
     "skill": "Conciseness",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "sbac_111",
@@ -3087,7 +3087,7 @@
     "options": [
       {
         "label": "A",
-        "text": "27"
+        "text": "14"
       },
       {
         "label": "B",
@@ -3095,17 +3095,17 @@
       },
       {
         "label": "C",
-        "text": "14"
+        "text": "27"
       },
       {
         "label": "D",
         "text": "35"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "C",
     "explanation": "Range = max - min = 35 - 8 = 27.",
     "skill": "Range",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "sbac_112",
@@ -3115,7 +3115,7 @@
     "options": [
       {
         "label": "A",
-        "text": "The sun rose, and the birds began to sing."
+        "text": "When the sun rose, the birds began to sing."
       },
       {
         "label": "B",
@@ -3123,17 +3123,17 @@
       },
       {
         "label": "C",
-        "text": "When the sun rose, the birds began to sing."
+        "text": "The sun rose, and the birds began to sing."
       },
       {
         "label": "D",
         "text": "The sun, which rose early, woke the birds."
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "C",
     "explanation": "A compound sentence joins two independent clauses with a coordinating conjunction (and, but, or, etc.).",
     "skill": "Sentence Types",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "sbac_113",
@@ -3161,7 +3161,7 @@
     "correctAnswer": "A",
     "explanation": "Radians = degrees × π/180 = 240 × π/180 = 4π/3.",
     "skill": "Angle Conversion",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "sbac_114",
@@ -3189,7 +3189,7 @@
     "correctAnswer": "A",
     "explanation": "A paradox is a statement that appears to contradict itself but upon reflection conveys a truth (e.g., 'less is more').",
     "skill": "Literary Devices",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "sbac_115",
@@ -3199,7 +3199,7 @@
     "options": [
       {
         "label": "A",
-        "text": "As one variable increases, the other also increases"
+        "text": "The data forms a perfect line"
       },
       {
         "label": "B",
@@ -3211,13 +3211,13 @@
       },
       {
         "label": "D",
-        "text": "The data forms a perfect line"
+        "text": "As one variable increases, the other also increases"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "Positive correlation: both variables move in the same direction. Negative correlation: they move in opposite directions.",
     "skill": "Scatter Plots",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "sbac_116",
@@ -3245,7 +3245,7 @@
     "correctAnswer": "A",
     "explanation": "An effective thesis states a clear position and previews the supporting reasons (reduce bullying, increase focus, promote equality).",
     "skill": "Thesis Statements",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "sbac_117",
@@ -3255,7 +3255,7 @@
     "options": [
       {
         "label": "A",
-        "text": "32 cm²"
+        "text": "40 cm²"
       },
       {
         "label": "B",
@@ -3263,17 +3263,17 @@
       },
       {
         "label": "C",
-        "text": "40 cm²"
+        "text": "32 cm²"
       },
       {
         "label": "D",
         "text": "60 cm²"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "C",
     "explanation": "Area = ½(b₁ + b₂)h = ½(6 + 10)(4) = ½(16)(4) = 32 cm².",
     "skill": "Area of Trapezoids",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "sbac_118",
@@ -3283,7 +3283,7 @@
     "options": [
       {
         "label": "A",
-        "text": "Humor and irony"
+        "text": "Factual reporting"
       },
       {
         "label": "B",
@@ -3295,13 +3295,13 @@
       },
       {
         "label": "D",
-        "text": "Factual reporting"
+        "text": "Humor and irony"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "Satire employs humor, irony, exaggeration, and ridicule to expose and criticize foolishness or corruption.",
     "skill": "Satire",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "sbac_119",
@@ -3311,7 +3311,7 @@
     "options": [
       {
         "label": "A",
-        "text": "1"
+        "text": "Undefined"
       },
       {
         "label": "B",
@@ -3323,13 +3323,13 @@
       },
       {
         "label": "D",
-        "text": "Undefined"
+        "text": "1"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "Any nonzero number raised to the zero power equals 1.",
     "skill": "Exponents",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "sbac_120",
@@ -3339,11 +3339,11 @@
     "options": [
       {
         "label": "A",
-        "text": "The weather will affect our plans for the weekend."
+        "text": "The weather will effect our plans for the weekend."
       },
       {
         "label": "B",
-        "text": "The weather will effect our plans for the weekend."
+        "text": "The weather will affect our plans for the weekend."
       },
       {
         "label": "C",
@@ -3354,10 +3354,10 @@
         "text": "We need to effect a change in our affect."
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "B",
     "explanation": "'Affect' is typically a verb meaning 'to influence.' 'Effect' is typically a noun meaning 'a result.'",
     "skill": "Commonly Confused Words",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "sbac_121",
@@ -3367,7 +3367,7 @@
     "options": [
       {
         "label": "A",
-        "text": "6"
+        "text": "3.5"
       },
       {
         "label": "B",
@@ -3379,13 +3379,13 @@
       },
       {
         "label": "D",
-        "text": "3.5"
+        "text": "6"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "Area = ½ × base × height = ½ × 4 × 3 = 6.",
     "skill": "Coordinate Geometry",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "sbac_122",
@@ -3395,7 +3395,7 @@
     "options": [
       {
         "label": "A",
-        "text": "The author's attitude toward the subject or audience"
+        "text": "The setting of the story"
       },
       {
         "label": "B",
@@ -3403,17 +3403,17 @@
       },
       {
         "label": "C",
-        "text": "The setting of the story"
+        "text": "The author's attitude toward the subject or audience"
       },
       {
         "label": "D",
         "text": "The main character's feelings"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "C",
     "explanation": "Tone reflects the author's attitude, conveyed through word choice, style, and perspective.",
     "skill": "Tone",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "sbac_123",
@@ -3423,7 +3423,7 @@
     "options": [
       {
         "label": "A",
-        "text": "162"
+        "text": "216"
       },
       {
         "label": "B",
@@ -3435,13 +3435,13 @@
       },
       {
         "label": "D",
-        "text": "216"
+        "text": "162"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "Each number is multiplied by 3. 54 × 3 = 162.",
     "skill": "Geometric Sequences",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "sbac_124",
@@ -3469,7 +3469,7 @@
     "correctAnswer": "A",
     "explanation": "A simile compares two unlike things using 'like' or 'as.' 'Like sunshine' makes this a simile, not a metaphor.",
     "skill": "Figurative Language",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "sbac_125",
@@ -3479,11 +3479,11 @@
     "options": [
       {
         "label": "A",
-        "text": "x = 10 or x = −4"
+        "text": "x = 10 only"
       },
       {
         "label": "B",
-        "text": "x = 10 only"
+        "text": "x = 10 or x = −4"
       },
       {
         "label": "C",
@@ -3494,10 +3494,10 @@
         "text": "x = −4 only"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "B",
     "explanation": "x − 3 = 7 → x = 10. x − 3 = −7 → x = −4. Both solutions are valid.",
     "skill": "Absolute Value Equations",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "sbac_126",
@@ -3507,7 +3507,7 @@
     "options": [
       {
         "label": "A",
-        "text": "Kind"
+        "text": "Strict"
       },
       {
         "label": "B",
@@ -3519,13 +3519,13 @@
       },
       {
         "label": "D",
-        "text": "Strict"
+        "text": "Kind"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "'Benevolent' means well-meaning and kindly, making 'kind' the closest synonym.",
     "skill": "Synonyms",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "sbac_127",
@@ -3535,7 +3535,7 @@
     "options": [
       {
         "label": "A",
-        "text": "8"
+        "text": "9"
       },
       {
         "label": "B",
@@ -3547,13 +3547,13 @@
       },
       {
         "label": "D",
-        "text": "9"
+        "text": "8"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "Each flip has 2 outcomes. Total = 2³ = 8 outcomes.",
     "skill": "Counting Principle",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "sbac_128",
@@ -3563,7 +3563,7 @@
     "options": [
       {
         "label": "A",
-        "text": "Whether the evidence is relevant, sufficient, and credible"
+        "text": "The author's personal life"
       },
       {
         "label": "B",
@@ -3575,13 +3575,13 @@
       },
       {
         "label": "D",
-        "text": "The author's personal life"
+        "text": "Whether the evidence is relevant, sufficient, and credible"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "Evaluating arguments requires checking if evidence is relevant to the claim, sufficient in quantity, and from credible sources.",
     "skill": "Evaluating Arguments",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "sbac_129",
@@ -3591,11 +3591,11 @@
     "options": [
       {
         "label": "A",
-        "text": "5"
+        "text": "7"
       },
       {
         "label": "B",
-        "text": "7"
+        "text": "5"
       },
       {
         "label": "C",
@@ -3606,10 +3606,10 @@
         "text": "3"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "B",
     "explanation": "d = √[(4-1)² + (6-2)²] = √[9 + 16] = √25 = 5.",
     "skill": "Distance Formula",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "sbac_130",
@@ -3619,11 +3619,11 @@
     "options": [
       {
         "label": "A",
-        "text": "An irrelevant point introduced to distract from the main issue"
+        "text": "A strong piece of evidence"
       },
       {
         "label": "B",
-        "text": "A strong piece of evidence"
+        "text": "An irrelevant point introduced to distract from the main issue"
       },
       {
         "label": "C",
@@ -3634,10 +3634,10 @@
         "text": "A synonym for thesis"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "B",
     "explanation": "A red herring is a logical fallacy that introduces an unrelated topic to divert attention from the original argument.",
     "skill": "Logical Fallacies",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "sbac_131",
@@ -3647,7 +3647,7 @@
     "options": [
       {
         "label": "A",
-        "text": "11x − 8"
+        "text": "11x + 8"
       },
       {
         "label": "B",
@@ -3659,13 +3659,13 @@
       },
       {
         "label": "D",
-        "text": "11x + 8"
+        "text": "11x − 8"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "2(3x) − 2(4) + 5x = 6x − 8 + 5x = 11x − 8.",
     "skill": "Combining Like Terms",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "sbac_132",
@@ -3675,7 +3675,7 @@
     "options": [
       {
         "label": "A",
-        "text": "Inform or explain a topic to the reader"
+        "text": "Express personal feelings"
       },
       {
         "label": "B",
@@ -3687,13 +3687,13 @@
       },
       {
         "label": "D",
-        "text": "Express personal feelings"
+        "text": "Inform or explain a topic to the reader"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "Expository writing aims to inform, explain, or describe a topic using facts and evidence.",
     "skill": "Writing Purposes",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "sbac_133",
@@ -3721,7 +3721,7 @@
     "correctAnswer": "A",
     "explanation": "P(red or blue) = (3+2)/10 = 5/10 = 1/2.",
     "skill": "Or Probability",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "sbac_134",
@@ -3749,7 +3749,7 @@
     "correctAnswer": "A",
     "explanation": "A symbol carries meaning beyond its literal representation — for example, a dove symbolizing peace.",
     "skill": "Symbolism",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "sbac_135",
@@ -3759,7 +3759,7 @@
     "options": [
       {
         "label": "A",
-        "text": "0"
+        "text": "Undefined"
       },
       {
         "label": "B",
@@ -3767,17 +3767,17 @@
       },
       {
         "label": "C",
-        "text": "Undefined"
+        "text": "0"
       },
       {
         "label": "D",
         "text": "-1"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "C",
     "explanation": "A horizontal line has no vertical change, so slope = rise/run = 0/run = 0.",
     "skill": "Slope",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "sbac_136",
@@ -3787,7 +3787,7 @@
     "options": [
       {
         "label": "A",
-        "text": "Is an incomplete sentence that lacks a subject, verb, or complete thought"
+        "text": "Is always a complete sentence"
       },
       {
         "label": "B",
@@ -3795,17 +3795,17 @@
       },
       {
         "label": "C",
-        "text": "Is always a complete sentence"
+        "text": "Is an incomplete sentence that lacks a subject, verb, or complete thought"
       },
       {
         "label": "D",
         "text": "Contains too many commas"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "C",
     "explanation": "A fragment is missing a subject, a verb, or doesn't express a complete thought, making it grammatically incomplete.",
     "skill": "Sentence Fragments",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "sbac_137",
@@ -3815,7 +3815,7 @@
     "options": [
       {
         "label": "A",
-        "text": "(x + 2)(x + 3)"
+        "text": "(x + 5)(x + 1)"
       },
       {
         "label": "B",
@@ -3827,13 +3827,13 @@
       },
       {
         "label": "D",
-        "text": "(x + 5)(x + 1)"
+        "text": "(x + 2)(x + 3)"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "Find factors of 6 that sum to 5: 2 and 3. So x² + 5x + 6 = (x+2)(x+3).",
     "skill": "Factoring Trinomials",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "sbac_138",
@@ -3861,7 +3861,7 @@
     "correctAnswer": "A",
     "explanation": "Effective quotation integration includes a signal phrase or context that connects the quote to your argument.",
     "skill": "Integrating Quotations",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "sbac_139",
@@ -3871,7 +3871,7 @@
     "options": [
       {
         "label": "A",
-        "text": "120"
+        "text": "140"
       },
       {
         "label": "B",
@@ -3879,17 +3879,17 @@
       },
       {
         "label": "C",
-        "text": "140"
+        "text": "120"
       },
       {
         "label": "D",
         "text": "80"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "C",
     "explanation": "60% of 200 = 0.60 × 200 = 120 students.",
     "skill": "Percent Applications",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "sbac_140",
@@ -3899,11 +3899,11 @@
     "options": [
       {
         "label": "A",
-        "text": "Isn't it time we took action against climate change?"
+        "text": "What time does the store close?"
       },
       {
         "label": "B",
-        "text": "What time does the store close?"
+        "text": "Isn't it time we took action against climate change?"
       },
       {
         "label": "C",
@@ -3914,10 +3914,10 @@
         "text": "Where did I put my keys?"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "B",
     "explanation": "A rhetorical question is asked for persuasive effect rather than to get an answer — the expected answer is implied.",
     "skill": "Rhetorical Devices",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "sbac_141",
@@ -3945,7 +3945,7 @@
     "correctAnswer": "A",
     "explanation": "Sum = (n-2) × 180 = (6-2) × 180 = 4 × 180 = 720°.",
     "skill": "Polygon Angles",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "sbac_142",
@@ -3955,11 +3955,11 @@
     "options": [
       {
         "label": "A",
-        "text": "Adding a period, semicolon, or coordinating conjunction between clauses"
+        "text": "Removing all punctuation"
       },
       {
         "label": "B",
-        "text": "Removing all punctuation"
+        "text": "Adding a period, semicolon, or coordinating conjunction between clauses"
       },
       {
         "label": "C",
@@ -3970,10 +3970,10 @@
         "text": "Making it longer"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "B",
     "explanation": "Run-on sentences join independent clauses without proper punctuation. Fix with a period, semicolon, or conjunction.",
     "skill": "Run-on Sentences",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "sbac_143",
@@ -4001,7 +4001,7 @@
     "correctAnswer": "A",
     "explanation": "2x + 8 = 3x − 1 → 8 + 1 = 3x − 2x → x = 9.",
     "skill": "Multi-step Equations",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "sbac_144",
@@ -4011,11 +4011,11 @@
     "options": [
       {
         "label": "A",
-        "text": "Presenting the conclusion of the essay"
+        "text": "Providing background context"
       },
       {
         "label": "B",
-        "text": "Providing background context"
+        "text": "Presenting the conclusion of the essay"
       },
       {
         "label": "C",
@@ -4026,10 +4026,10 @@
         "text": "Stating the thesis"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "B",
     "explanation": "An introduction hooks the reader, provides context, and states the thesis. The conclusion belongs at the end.",
     "skill": "Essay Structure",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "sbac_145",
@@ -4057,7 +4057,7 @@
     "correctAnswer": "A",
     "explanation": "2/5 × 45 = 90/5 = 18.",
     "skill": "Fractions of Whole Numbers",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "sbac_146",
@@ -4067,7 +4067,7 @@
     "options": [
       {
         "label": "A",
-        "text": "Do not undergo significant change throughout the story"
+        "text": "Only appear once in a story"
       },
       {
         "label": "B",
@@ -4075,17 +4075,17 @@
       },
       {
         "label": "C",
-        "text": "Only appear once in a story"
+        "text": "Do not undergo significant change throughout the story"
       },
       {
         "label": "D",
         "text": "Are always the protagonist"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "C",
     "explanation": "Static characters remain essentially the same throughout the narrative, in contrast to dynamic characters who change.",
     "skill": "Character Types",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "sbac_147",
@@ -4113,7 +4113,7 @@
     "correctAnswer": "A",
     "explanation": "If decreased by 20%, then 80% remains: 0.80 × original = 64. Original = 64/0.80 = 80.",
     "skill": "Percent Problems",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "sbac_148",
@@ -4123,11 +4123,11 @@
     "options": [
       {
         "label": "A",
-        "text": "However"
+        "text": "Furthermore"
       },
       {
         "label": "B",
-        "text": "Furthermore"
+        "text": "However"
       },
       {
         "label": "C",
@@ -4138,10 +4138,10 @@
         "text": "Similarly"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "B",
     "explanation": "'However' signals that the following information contrasts with or contradicts what came before.",
     "skill": "Transitions",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "sbac_149",
@@ -4169,7 +4169,7 @@
     "correctAnswer": "A",
     "explanation": "Radius = 5. Area = πr² = 3.14 × 25 = 78.5 cm².",
     "skill": "Area of Circles",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "sbac_150",
@@ -4197,7 +4197,7 @@
     "correctAnswer": "A",
     "explanation": "An oxymoron juxtaposes contradictory terms for effect, such as 'bittersweet,' 'deafening silence,' or 'jumbo shrimp.'",
     "skill": "Literary Devices",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "sbac_151",
@@ -4207,7 +4207,7 @@
     "options": [
       {
         "label": "A",
-        "text": "1/3"
+        "text": "3/9"
       },
       {
         "label": "B",
@@ -4219,13 +4219,13 @@
       },
       {
         "label": "D",
-        "text": "3/9"
+        "text": "1/3"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "0.333... = 1/3. This is a well-known repeating decimal conversion.",
     "skill": "Repeating Decimals",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "sbac_152",
@@ -4235,7 +4235,7 @@
     "options": [
       {
         "label": "A",
-        "text": "She needed three things: a pen, paper, and an eraser."
+        "text": "She needed three things a: pen, paper, and an eraser."
       },
       {
         "label": "B",
@@ -4247,13 +4247,13 @@
       },
       {
         "label": "D",
-        "text": "She needed three things a: pen, paper, and an eraser."
+        "text": "She needed three things: a pen, paper, and an eraser."
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "A colon follows a complete sentence and introduces a list, explanation, or elaboration.",
     "skill": "Colons",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "sbac_153",
@@ -4263,7 +4263,7 @@
     "options": [
       {
         "label": "A",
-        "text": "x = 1 and x = 3"
+        "text": "x = 2 only"
       },
       {
         "label": "B",
@@ -4275,13 +4275,13 @@
       },
       {
         "label": "D",
-        "text": "x = 2 only"
+        "text": "x = 1 and x = 3"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "Factor: (x−1)(x−3) = 0. So x = 1 or x = 3.",
     "skill": "Zeros of Functions",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "sbac_154",
@@ -4309,7 +4309,7 @@
     "correctAnswer": "A",
     "explanation": "Logos appeals to logic and reason, using evidence, data, and rational arguments to support a claim.",
     "skill": "Rhetoric",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "sbac_155",
@@ -4337,7 +4337,7 @@
     "correctAnswer": "A",
     "explanation": "(2x³)² = 2² × (x³)² = 4x⁶.",
     "skill": "Power of a Power",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "sbac_156",
@@ -4347,7 +4347,7 @@
     "options": [
       {
         "label": "A",
-        "text": "A narrator who knows the thoughts and feelings of all characters"
+        "text": "A narrator who addresses the reader as 'you'"
       },
       {
         "label": "B",
@@ -4359,13 +4359,13 @@
       },
       {
         "label": "D",
-        "text": "A narrator who addresses the reader as 'you'"
+        "text": "A narrator who knows the thoughts and feelings of all characters"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "Third-person omniscient narrators have unlimited knowledge of all characters' thoughts, feelings, and actions.",
     "skill": "Narration",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "sbac_157",
@@ -4375,11 +4375,11 @@
     "options": [
       {
         "label": "A",
-        "text": "150 miles"
+        "text": "120 miles"
       },
       {
         "label": "B",
-        "text": "120 miles"
+        "text": "150 miles"
       },
       {
         "label": "C",
@@ -4390,10 +4390,10 @@
         "text": "180 miles"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "B",
     "explanation": "Distance = rate × time = 60 × 2.5 = 150 miles.",
     "skill": "Distance Formula",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "sbac_158",
@@ -4403,7 +4403,7 @@
     "options": [
       {
         "label": "A",
-        "text": "Misrepresenting someone's argument to make it easier to attack"
+        "text": "Quoting an expert"
       },
       {
         "label": "B",
@@ -4415,13 +4415,13 @@
       },
       {
         "label": "D",
-        "text": "Quoting an expert"
+        "text": "Misrepresenting someone's argument to make it easier to attack"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "A straw man distorts or exaggerates an opponent's argument, then attacks the weakened version rather than the actual position.",
     "skill": "Logical Fallacies",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "sbac_159",
@@ -4431,7 +4431,7 @@
     "options": [
       {
         "label": "A",
-        "text": "9/16"
+        "text": "9/8"
       },
       {
         "label": "B",
@@ -4443,13 +4443,13 @@
       },
       {
         "label": "D",
-        "text": "9/8"
+        "text": "9/16"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "(3/4)² = 3²/4² = 9/16.",
     "skill": "Exponents with Fractions",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "sbac_160",
@@ -4459,11 +4459,11 @@
     "options": [
       {
         "label": "A",
-        "text": "The five senses to create vivid mental pictures"
+        "text": "Only the sense of sight"
       },
       {
         "label": "B",
-        "text": "Only the sense of sight"
+        "text": "The five senses to create vivid mental pictures"
       },
       {
         "label": "C",
@@ -4474,10 +4474,10 @@
         "text": "The reader's desire for facts"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "B",
     "explanation": "Imagery uses descriptive language that appeals to sight, sound, taste, touch, and smell to create sensory experiences.",
     "skill": "Imagery",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "sbac_161",
@@ -4487,7 +4487,7 @@
     "options": [
       {
         "label": "A",
-        "text": "53°"
+        "text": "90°"
       },
       {
         "label": "B",
@@ -4499,13 +4499,13 @@
       },
       {
         "label": "D",
-        "text": "90°"
+        "text": "53°"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "Complementary angles sum to 90°. 90 - 37 = 53°.",
     "skill": "Angle Relationships",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "sbac_162",
@@ -4515,7 +4515,7 @@
     "options": [
       {
         "label": "A",
-        "text": "Narrative essay"
+        "text": "Persuasive essay"
       },
       {
         "label": "B",
@@ -4523,17 +4523,17 @@
       },
       {
         "label": "C",
-        "text": "Persuasive essay"
+        "text": "Narrative essay"
       },
       {
         "label": "D",
         "text": "Analytical essay"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "C",
     "explanation": "A narrative essay tells a story, often from personal experience, with a clear beginning, middle, and end.",
     "skill": "Essay Types",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "sbac_163",
@@ -4561,7 +4561,7 @@
     "correctAnswer": "A",
     "explanation": "√50 = √(25 × 2) = √25 × √2 = 5√2.",
     "skill": "Simplifying Radicals",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "sbac_164",
@@ -4571,7 +4571,7 @@
     "options": [
       {
         "label": "A",
-        "text": "The audience's emotions"
+        "text": "The speaker's authority"
       },
       {
         "label": "B",
@@ -4579,17 +4579,17 @@
       },
       {
         "label": "C",
-        "text": "The speaker's authority"
+        "text": "The audience's emotions"
       },
       {
         "label": "D",
         "text": "Mathematical reasoning"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "C",
     "explanation": "Pathos appeals to emotions — using stories, vivid language, or examples that evoke feelings to persuade.",
     "skill": "Rhetoric",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "sbac_165",
@@ -4617,7 +4617,7 @@
     "correctAnswer": "A",
     "explanation": "P(no rain) = 1 - P(rain) = 1 - 0.3 = 0.7.",
     "skill": "Complement Probability",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "sbac_166",
@@ -4645,7 +4645,7 @@
     "correctAnswer": "A",
     "explanation": "Adding an independent clause ('she passed the test') completes the thought and creates a grammatically correct sentence.",
     "skill": "Correcting Fragments",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "sbac_167",
@@ -4673,7 +4673,7 @@
     "correctAnswer": "A",
     "explanation": "10⁻³ = 0.001. 3.2 × 0.001 = 0.0032.",
     "skill": "Scientific Notation",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "sbac_168",
@@ -4683,7 +4683,7 @@
     "options": [
       {
         "label": "A",
-        "text": "Undergoes significant internal change throughout the story"
+        "text": "Is always the villain"
       },
       {
         "label": "B",
@@ -4695,13 +4695,13 @@
       },
       {
         "label": "D",
-        "text": "Is always the villain"
+        "text": "Undergoes significant internal change throughout the story"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "Dynamic characters evolve, grow, or change in response to events and experiences in the narrative.",
     "skill": "Character Development",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "sbac_169",
@@ -4729,7 +4729,7 @@
     "correctAnswer": "A",
     "explanation": "A negative times a negative is positive: (-5)(-8) = 40.",
     "skill": "Integer Multiplication",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "sbac_170",
@@ -4739,7 +4739,7 @@
     "options": [
       {
         "label": "A",
-        "text": "The students who studied hard passed the exam."
+        "text": "The, students who studied hard passed the exam."
       },
       {
         "label": "B",
@@ -4751,13 +4751,13 @@
       },
       {
         "label": "D",
-        "text": "The, students who studied hard passed the exam."
+        "text": "The students who studied hard passed the exam."
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "The restrictive clause 'who studied hard' is essential to meaning (identifies which students) and needs no commas.",
     "skill": "Restrictive Clauses",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "sbac_171",
@@ -4767,7 +4767,7 @@
     "options": [
       {
         "label": "A",
-        "text": "13"
+        "text": "7"
       },
       {
         "label": "B",
@@ -4775,17 +4775,17 @@
       },
       {
         "label": "C",
-        "text": "7"
+        "text": "13"
       },
       {
         "label": "D",
         "text": "60"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "C",
     "explanation": "c² = 5² + 12² = 25 + 144 = 169. c = √169 = 13.",
     "skill": "Pythagorean Theorem",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "sbac_172",
@@ -4795,7 +4795,7 @@
     "options": [
       {
         "label": "A",
-        "text": "Repetition of a word or phrase at the beginning of successive clauses"
+        "text": "Speaking very quietly"
       },
       {
         "label": "B",
@@ -4807,13 +4807,13 @@
       },
       {
         "label": "D",
-        "text": "Speaking very quietly"
+        "text": "Repetition of a word or phrase at the beginning of successive clauses"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "Anaphora repeats the same word(s) at the start of consecutive phrases or sentences for emphasis (e.g., 'I have a dream...').",
     "skill": "Rhetorical Devices",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "sbac_173",
@@ -4823,11 +4823,11 @@
     "options": [
       {
         "label": "A",
-        "text": "0.625"
+        "text": "0.58"
       },
       {
         "label": "B",
-        "text": "0.58"
+        "text": "0.625"
       },
       {
         "label": "C",
@@ -4838,10 +4838,10 @@
         "text": "1.6"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "B",
     "explanation": "5 ÷ 8 = 0.625.",
     "skill": "Fraction to Decimal",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "sbac_174",
@@ -4851,7 +4851,7 @@
     "options": [
       {
         "label": "A",
-        "text": "A mild or indirect expression used in place of one considered harsh or blunt"
+        "text": "A type of rhyme scheme"
       },
       {
         "label": "B",
@@ -4863,13 +4863,13 @@
       },
       {
         "label": "D",
-        "text": "A type of rhyme scheme"
+        "text": "A mild or indirect expression used in place of one considered harsh or blunt"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "Euphemisms soften language — 'passed away' instead of 'died,' 'let go' instead of 'fired.'",
     "skill": "Figurative Language",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "sbac_175",
@@ -4879,11 +4879,11 @@
     "options": [
       {
         "label": "A",
-        "text": "21"
+        "text": "28"
       },
       {
         "label": "B",
-        "text": "28"
+        "text": "21"
       },
       {
         "label": "C",
@@ -4894,10 +4894,10 @@
         "text": "15"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "B",
     "explanation": "k = y/x = 12/4 = 3. When x = 7: y = 3 × 7 = 21.",
     "skill": "Direct Variation",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "sbac_176",
@@ -4925,7 +4925,7 @@
     "correctAnswer": "A",
     "explanation": "Mood is the emotional atmosphere a text creates for the reader through setting, imagery, and word choice.",
     "skill": "Mood",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "sbac_177",
@@ -4935,11 +4935,11 @@
     "options": [
       {
         "label": "A",
-        "text": "y = 3x − 2"
+        "text": "y = -2x + 3"
       },
       {
         "label": "B",
-        "text": "y = -2x + 3"
+        "text": "y = 3x − 2"
       },
       {
         "label": "C",
@@ -4950,10 +4950,10 @@
         "text": "y = −3x − 2"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "B",
     "explanation": "Using y = mx + b: slope m = 3, y-intercept b = -2. So y = 3x − 2.",
     "skill": "Equation of a Line",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "sbac_178",
@@ -4963,11 +4963,11 @@
     "options": [
       {
         "label": "A",
-        "text": "being"
+        "text": "been"
       },
       {
         "label": "B",
-        "text": "been"
+        "text": "being"
       },
       {
         "label": "C",
@@ -4978,10 +4978,10 @@
         "text": "was"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "B",
     "explanation": "'Are already being felt' is present continuous passive, correctly describing an ongoing current state.",
     "skill": "Verb Tenses",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "sbac_179",
@@ -4991,7 +4991,7 @@
     "options": [
       {
         "label": "A",
-        "text": "3x²y"
+        "text": "8x²y"
       },
       {
         "label": "B",
@@ -4999,17 +4999,17 @@
       },
       {
         "label": "C",
-        "text": "8x²y"
+        "text": "3x²y"
       },
       {
         "label": "D",
         "text": "3xy"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "C",
     "explanation": "12/4 = 3. x⁴/x² = x². y²/y = y. Result: 3x²y.",
     "skill": "Simplifying Expressions",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "sbac_180",
@@ -5019,11 +5019,11 @@
     "options": [
       {
         "label": "A",
-        "text": "Focuses on specific events or themes rather than the author's entire life"
+        "text": "Is always fiction"
       },
       {
         "label": "B",
-        "text": "Is always fiction"
+        "text": "Focuses on specific events or themes rather than the author's entire life"
       },
       {
         "label": "C",
@@ -5034,10 +5034,10 @@
         "text": "Must be written in third person"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "B",
     "explanation": "A memoir covers selected experiences and themes, while an autobiography is a comprehensive account of one's entire life.",
     "skill": "Genre",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "sbac_181",
@@ -5047,11 +5047,11 @@
     "options": [
       {
         "label": "A",
-        "text": "5"
+        "text": "3"
       },
       {
         "label": "B",
-        "text": "3"
+        "text": "5"
       },
       {
         "label": "C",
@@ -5062,10 +5062,10 @@
         "text": "1"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "B",
     "explanation": "A regular polygon has as many lines of symmetry as it has sides. A pentagon has 5 sides, so 5 lines of symmetry.",
     "skill": "Symmetry",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "sbac_182",
@@ -5093,7 +5093,7 @@
     "correctAnswer": "A",
     "explanation": "'Each student' is singular, requiring singular pronouns 'his or her' for formal agreement.",
     "skill": "Pronoun Agreement",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "sbac_183",
@@ -5103,7 +5103,7 @@
     "options": [
       {
         "label": "A",
-        "text": "1/36"
+        "text": "1/12"
       },
       {
         "label": "B",
@@ -5111,17 +5111,17 @@
       },
       {
         "label": "C",
-        "text": "1/12"
+        "text": "1/36"
       },
       {
         "label": "D",
         "text": "2/6"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "C",
     "explanation": "P(6 first) = 1/6. P(6 second) = 1/6. P(both) = 1/6 × 1/6 = 1/36.",
     "skill": "Independent Events",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "sbac_184",
@@ -5149,7 +5149,7 @@
     "correctAnswer": "A",
     "explanation": "Secondary sources interpret, analyze, or discuss primary sources — examples include textbooks, reviews, and scholarly analyses.",
     "skill": "Source Types",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "sbac_185",
@@ -5159,7 +5159,7 @@
     "options": [
       {
         "label": "A",
-        "text": "0.024"
+        "text": "0.0024"
       },
       {
         "label": "B",
@@ -5171,13 +5171,13 @@
       },
       {
         "label": "D",
-        "text": "0.0024"
+        "text": "0.024"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "6 × 4 = 24, and there are 3 total decimal places, so 0.024.",
     "skill": "Decimal Multiplication",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "sbac_186",
@@ -5187,11 +5187,11 @@
     "options": [
       {
         "label": "A",
-        "text": "To present evidence and analysis that support the thesis"
+        "text": "To introduce the topic"
       },
       {
         "label": "B",
-        "text": "To introduce the topic"
+        "text": "To present evidence and analysis that support the thesis"
       },
       {
         "label": "C",
@@ -5202,10 +5202,10 @@
         "text": "To list all sources"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "B",
     "explanation": "Body paragraphs develop the argument by presenting evidence, examples, and analysis that support the thesis statement.",
     "skill": "Essay Structure",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "sbac_187",
@@ -5215,7 +5215,7 @@
     "options": [
       {
         "label": "A",
-        "text": "5"
+        "text": "15"
       },
       {
         "label": "B",
@@ -5227,13 +5227,13 @@
       },
       {
         "label": "D",
-        "text": "15"
+        "text": "5"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "5x − 2x = 18 − 3 → 3x = 15 → x = 5.",
     "skill": "Linear Equations",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "sbac_188",
@@ -5243,7 +5243,7 @@
     "options": [
       {
         "label": "A",
-        "text": "A speaker says one thing but means the opposite"
+        "text": "An unexpected event occurs"
       },
       {
         "label": "B",
@@ -5251,17 +5251,17 @@
       },
       {
         "label": "C",
-        "text": "An unexpected event occurs"
+        "text": "A speaker says one thing but means the opposite"
       },
       {
         "label": "D",
         "text": "Two characters argue"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "C",
     "explanation": "Verbal irony is when someone intentionally says the opposite of what they mean, often for sarcastic or humorous effect.",
     "skill": "Irony",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "sbac_189",
@@ -5271,7 +5271,7 @@
     "options": [
       {
         "label": "A",
-        "text": "75.36 cm³"
+        "text": "37.68 cm³"
       },
       {
         "label": "B",
@@ -5283,13 +5283,13 @@
       },
       {
         "label": "D",
-        "text": "37.68 cm³"
+        "text": "75.36 cm³"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "V = (1/3)πr²h = (1/3)(3.14)(9)(8) = (1/3)(226.08) = 75.36 cm³.",
     "skill": "Volume of Cones",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "sbac_190",
@@ -5299,11 +5299,11 @@
     "options": [
       {
         "label": "A",
-        "text": "Be vague or overly broad"
+        "text": "Present a clear argument"
       },
       {
         "label": "B",
-        "text": "Present a clear argument"
+        "text": "Be vague or overly broad"
       },
       {
         "label": "C",
@@ -5314,10 +5314,10 @@
         "text": "Take a position on the topic"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "B",
     "explanation": "An effective thesis must be specific and focused. Vague or overly broad statements fail to guide the essay effectively.",
     "skill": "Thesis Statements",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "sbac_191",
@@ -5345,7 +5345,7 @@
     "correctAnswer": "A",
     "explanation": "Mean = sum/count. 20 = sum/5. Sum = 20 × 5 = 100.",
     "skill": "Mean",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "sbac_192",
@@ -5373,7 +5373,7 @@
     "correctAnswer": "A",
     "explanation": "Hyperbole uses deliberate exaggeration for emphasis — 'I've told you a million times' is not literal but emphasizes frequency.",
     "skill": "Figurative Language",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "sbac_193",
@@ -5401,7 +5401,7 @@
     "correctAnswer": "A",
     "explanation": "Adding a constant outside the function shifts the graph vertically upward.",
     "skill": "Transformations",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "sbac_194",
@@ -5411,7 +5411,7 @@
     "options": [
       {
         "label": "A",
-        "text": "Lists all sources cited in the paper in alphabetical order"
+        "text": "Includes only book sources"
       },
       {
         "label": "B",
@@ -5419,17 +5419,17 @@
       },
       {
         "label": "C",
-        "text": "Includes only book sources"
+        "text": "Lists all sources cited in the paper in alphabetical order"
       },
       {
         "label": "D",
         "text": "Is optional for research papers"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "C",
     "explanation": "The MLA Works Cited page lists all sources referenced in the paper, arranged alphabetically by the author's last name.",
     "skill": "MLA Format",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "sbac_195",
@@ -5439,11 +5439,11 @@
     "options": [
       {
         "label": "A",
-        "text": "x² − 10x + 25"
+        "text": "x² − 25"
       },
       {
         "label": "B",
-        "text": "x² − 25"
+        "text": "x² − 10x + 25"
       },
       {
         "label": "C",
@@ -5454,10 +5454,10 @@
         "text": "x² − 5x + 25"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "B",
     "explanation": "(x−5)² = x² − 2(5)(x) + 5² = x² − 10x + 25.",
     "skill": "Perfect Square Trinomials",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "sbac_196",
@@ -5485,7 +5485,7 @@
     "correctAnswer": "A",
     "explanation": "'Held' is the correct past tense of 'hold.' It is an irregular verb.",
     "skill": "Irregular Verbs",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "sbac_197",
@@ -5495,11 +5495,11 @@
     "options": [
       {
         "label": "A",
-        "text": "30"
+        "text": "25"
       },
       {
         "label": "B",
-        "text": "25"
+        "text": "30"
       },
       {
         "label": "C",
@@ -5510,10 +5510,10 @@
         "text": "35"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "B",
     "explanation": "25% of 120 = 0.25 × 120 = 30 students.",
     "skill": "Circle Graphs",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "sbac_198",
@@ -5523,7 +5523,7 @@
     "options": [
       {
         "label": "A",
-        "text": "A narrative in which characters and events symbolize broader themes or moral lessons"
+        "text": "A factual report"
       },
       {
         "label": "B",
@@ -5531,17 +5531,17 @@
       },
       {
         "label": "C",
-        "text": "A factual report"
+        "text": "A narrative in which characters and events symbolize broader themes or moral lessons"
       },
       {
         "label": "D",
         "text": "A short poem about nature"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "C",
     "explanation": "An allegory uses symbolic characters and events to convey a deeper moral, political, or philosophical message (e.g., Animal Farm).",
     "skill": "Literary Forms",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "sbac_199",
@@ -5551,11 +5551,11 @@
     "options": [
       {
         "label": "A",
-        "text": "(4, 6)"
+        "text": "(8, 12)"
       },
       {
         "label": "B",
-        "text": "(8, 12)"
+        "text": "(4, 6)"
       },
       {
         "label": "C",
@@ -5566,10 +5566,10 @@
         "text": "(4, 4)"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "B",
     "explanation": "Midpoint = ((2+6)/2, (8+4)/2) = (4, 6).",
     "skill": "Midpoint Formula",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "sbac_200",
@@ -5579,7 +5579,7 @@
     "options": [
       {
         "label": "A",
-        "text": "Strengthening ideas, organization, and clarity before fixing grammar"
+        "text": "Changing the topic entirely"
       },
       {
         "label": "B",
@@ -5591,13 +5591,13 @@
       },
       {
         "label": "D",
-        "text": "Changing the topic entirely"
+        "text": "Strengthening ideas, organization, and clarity before fixing grammar"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "Revision prioritizes content-level improvements (ideas, organization, clarity) before editing for grammar and mechanics.",
     "skill": "Revision Process",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "sbac_201",
@@ -5607,7 +5607,7 @@
     "options": [
       {
         "label": "A",
-        "text": "The dog, wagging its tail, greeted the mailman."
+        "text": "He seemed to be very tired after the long journey."
       },
       {
         "label": "B",
@@ -5615,17 +5615,17 @@
       },
       {
         "label": "C",
-        "text": "He seemed to be very tired after the long journey."
+        "text": "The dog, wagging its tail, greeted the mailman."
       },
       {
         "label": "D",
         "text": "She decided to read a book before bed."
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "C",
     "explanation": "A participial phrase begins with a participle (a verb form ending in -ing or -ed) and modifies a noun or pronoun. In sentence A, 'wagging its tail' is a participial phrase modifying 'dog'.",
     "skill": "Identifying participial phrases",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "sbac_202",
@@ -5653,7 +5653,7 @@
     "correctAnswer": "C",
     "explanation": "An antecedent is the noun or noun phrase that a pronoun refers to. In this sentence, 'it' refers back to 'the book'.",
     "skill": "Identifying pronoun antecedents",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "sbac_203",
@@ -5663,7 +5663,7 @@
     "options": [
       {
         "label": "A",
-        "text": "The weather was terrible; we decided to stay inside."
+        "text": "He went to the store; to buy milk."
       },
       {
         "label": "B",
@@ -5675,13 +5675,13 @@
       },
       {
         "label": "D",
-        "text": "He went to the store; to buy milk."
+        "text": "The weather was terrible; we decided to stay inside."
       }
     ],
-    "correctAnswer": "A",
-    "explanation": "A semicolon is used to connect two independent clauses that are closely related in meaning. Sentence A correctly connects two independent clauses. Option B is incorrect because 'dance' is not an independent clause. Option C is incorrect; a colon should be used before a list. Option D is incorrect because 'to buy milk' is not an independent clause.",
+    "correctAnswer": "D",
+    "explanation": "A semicolon is used to connect two independent clauses that are closely related in meaning. Sentence A correctly connects two independent clauses. Option B is incorrect because 'dance' is not an independent clause. Option C is incorrect; a colon should be used before a list. Option A is incorrect because 'to buy milk' is not an independent clause.",
     "skill": "Using semicolons correctly",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "sbac_204",
@@ -5709,7 +5709,7 @@
     "correctAnswer": "C",
     "explanation": "Rhetorical questions are asked for effect, not to elicit an answer. They are used to make a point more forcefully or to encourage the audience to consider a particular perspective. In this case, the questions are designed to make the reader reflect on the unacceptable state of hunger and implicitly urge them to take action or reconsider societal values.",
     "skill": "Analyzing rhetorical devices",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "sbac_205",
@@ -5737,7 +5737,7 @@
     "correctAnswer": "B",
     "explanation": "'Vibrant' describes the noun 'shade', telling us what kind of shade it is. Therefore, it functions as an adjective.",
     "skill": "Identifying parts of speech and their functions",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "sbac_206",
@@ -5765,7 +5765,7 @@
     "correctAnswer": "B",
     "explanation": "Synonyms are words that have similar meanings. 'Big' and 'large' both refer to great size.",
     "skill": "Understanding synonyms",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "sbac_207",
@@ -5775,7 +5775,7 @@
     "options": [
       {
         "label": "A",
-        "text": "A prepositional phrase"
+        "text": "A gerund phrase"
       },
       {
         "label": "B",
@@ -5787,13 +5787,13 @@
       },
       {
         "label": "D",
-        "text": "A gerund phrase"
+        "text": "A prepositional phrase"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "The phrase 'Despite the rain' begins with the preposition 'Despite' and modifies the main clause, indicating a contrast. It is a prepositional phrase.",
     "skill": "Identifying grammatical structures",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "sbac_208",
@@ -5821,7 +5821,7 @@
     "correctAnswer": "A",
     "explanation": "Homophones are words that sound alike but have different spellings and meanings. 'Their' (possessive pronoun) and 'there' (adverb of place or expletive) are homophones. 'They're' is a contraction of 'they are'. 'Threw' and 'through' are not homophones of 'there'. (Note: Although 'they're' and 'there' sound similar, 'their' is the most direct homophone.)",
     "skill": "Understanding homophones",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "sbac_209",
@@ -5849,7 +5849,7 @@
     "correctAnswer": "C",
     "explanation": "The subjunctive mood is used to express wishes, hypothetical situations, or conditions contrary to fact. This sentence expresses a wish about a past situation that did not happen, which is characteristic of the subjunctive mood.",
     "skill": "Identifying verb mood",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "sbac_210",
@@ -5877,7 +5877,7 @@
     "correctAnswer": "C",
     "explanation": "Personification is a figure of speech where human qualities or actions are attributed to inanimate objects or abstract ideas. In this line, the wind is given the human action of whispering.",
     "skill": "Identifying figures of speech",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "sbac_211",
@@ -5905,7 +5905,7 @@
     "correctAnswer": "B",
     "explanation": "For plural nouns that do not end in 's', add '-s' with an apostrophe (e.g., children's). For singular nouns ending in 's', you can add '-s' or just an apostrophe depending on pronunciation, but the most common rule is to add '-s'. For plural nouns ending in 's', add an apostrophe after the 's'. Sentence B correctly shows possession for the plural noun 'children'. Sentence A should be 'dog's'. Sentence C should be 'cat's'. Sentence D should be 'students'' or 'student's' (depending on context, but 'students'' is more likely for multiple students' projects).",
     "skill": "Using apostrophes for possession",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "sbac_212",
@@ -5933,7 +5933,7 @@
     "correctAnswer": "C",
     "explanation": "The subject is the noun or pronoun that performs the action of the verb or is described by the verb. In this inverted sentence structure, 'traveler' is the noun performing the action 'sat'. 'Under the old oak tree' is a prepositional phrase indicating location.",
     "skill": "Identifying sentence subjects",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "sbac_213",
@@ -5961,7 +5961,7 @@
     "correctAnswer": "B",
     "explanation": "When pronouns are used as the subject of a sentence, use the subjective case (I, he, she, we, they). 'He and I' are the subjects performing the action 'went'. Also, it is customary to put the pronoun 'I' last in a compound subject.",
     "skill": "Using correct pronoun case",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "sbac_214",
@@ -5989,7 +5989,7 @@
     "correctAnswer": "B",
     "explanation": "'Ubiquitous' means present, appearing, or found everywhere. 'Commonplace' means ordinary or common, which aligns with the meaning of ubiquitous.",
     "skill": "Understanding vocabulary and synonyms",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "sbac_215",
@@ -6017,7 +6017,7 @@
     "correctAnswer": "B",
     "explanation": "This sentence contains two independent clauses ('The sun set' and 'the stars began to appear') joined by a coordinating conjunction ('and'). This structure defines a compound sentence.",
     "skill": "Identifying sentence structures",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "sbac_216",
@@ -6045,7 +6045,7 @@
     "correctAnswer": "B",
     "explanation": "An antonym is a word with the opposite meaning. 'Generous' means willing to give or share freely. 'Selfish' means lacking consideration for others; concerned chiefly with one's own profit or pleasure.",
     "skill": "Understanding antonyms",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "sbac_217",
@@ -6073,7 +6073,7 @@
     "correctAnswer": "B",
     "explanation": "'Quickly' describes how the action of running was performed. Words that modify verbs, adjectives, or other adverbs are adverbs. Here, it modifies the verb 'ran'.",
     "skill": "Identifying parts of speech",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "sbac_218",
@@ -6101,7 +6101,7 @@
     "correctAnswer": "B",
     "explanation": "'Wolves' is an irregular plural noun ending in 's'. To make it possessive, add an apostrophe: 'wolves''. 'Women' is plural, but its possessive form is 'women's'. 'Children' is plural, and its possessive form is 'children's'. 'Man' is singular, and its possessive form is 'man's'.",
     "skill": "Forming possessive plural nouns",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "sbac_219",
@@ -6129,35 +6129,7 @@
     "correctAnswer": "B",
     "explanation": "The idiom 'bite the bullet' means to endure a painful or difficult situation with stoicism and courage.",
     "skill": "Understanding idioms",
-    "difficulty": "medium"
-  },
-  {
-    "id": "sbac_220",
-    "exam": "SBAC",
-    "section": "English Language Arts",
-    "question": "Which sentence contains a dangling modifier?",
-    "options": [
-      {
-        "label": "A",
-        "text": "Having finished the report, the computer was turned off."
-      },
-      {
-        "label": "B",
-        "text": "After swimming for hours, the shore finally appeared."
-      },
-      {
-        "label": "C",
-        "text": "Walking down the street, I saw a beautiful bird."
-      },
-      {
-        "label": "D",
-        "text": "The book, lying on the table, was dust-covered."
-      }
-    ],
-    "correctAnswer": "A",
-    "explanation": "A dangling modifier is a phrase or clause that modifies a word that is not clearly stated in the sentence. In sentence A, 'Having finished the report' seems to modify 'the computer', which is illogical. The sentence should be rephrased, such as 'Having finished the report, I turned off the computer.'",
-    "skill": "Identifying dangling modifiers",
-    "difficulty": "hard"
+    "difficulty": 5
   },
   {
     "id": "sbac_221",
@@ -6185,7 +6157,7 @@
     "correctAnswer": "C",
     "explanation": "The introduction of an essay typically includes a hook to capture the reader's attention and a thesis statement that clearly states the essay's main argument or purpose.",
     "skill": "Understanding essay structure",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "sbac_222",
@@ -6213,7 +6185,7 @@
     "correctAnswer": "C",
     "explanation": "A declarative sentence makes a statement and ends with a period. Sentence C states a fact.",
     "skill": "Identifying sentence types",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "sbac_223",
@@ -6241,7 +6213,7 @@
     "correctAnswer": "C",
     "explanation": "'Creaky' describes the noun 'door,' indicating its condition. Therefore, it functions as an adjective.",
     "skill": "Identifying parts of speech",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "sbac_224",
@@ -6269,35 +6241,7 @@
     "correctAnswer": "C",
     "explanation": "Words like 'relentless heat,' 'cracking the earth,' 'wilting,' 'dust choked,' and 'mournful cry' create an atmosphere of harshness, suffering, and emptiness, suggesting a bleak and desolate tone.",
     "skill": "Determining tone",
-    "difficulty": "medium"
-  },
-  {
-    "id": "sbac_225",
-    "exam": "SBAC",
-    "section": "English Language Arts",
-    "question": "Which sentence demonstrates correct parallel structure?",
-    "options": [
-      {
-        "label": "A",
-        "text": "She likes hiking, swimming, and to ride her bike."
-      },
-      {
-        "label": "B",
-        "text": "He is intelligent, friendly, and works hard."
-      },
-      {
-        "label": "C",
-        "text": "The goal is to succeed, to grow, and learning new things."
-      },
-      {
-        "label": "D",
-        "text": "He enjoys reading books, watching movies, and playing games."
-      }
-    ],
-    "correctAnswer": "D",
-    "explanation": "Parallel structure means using the same grammatical form for elements in a series or comparison. In sentence D, all items in the list are gerunds (-ing forms used as nouns): 'reading,' 'watching,' and 'playing.' Sentence A mixes gerunds and an infinitive. Sentence B mixes adjectives and a verb phrase. Sentence C mixes infinitives and a gerund.",
-    "skill": "Applying parallel structure",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "sbac_226",
@@ -6325,7 +6269,7 @@
     "correctAnswer": "C",
     "explanation": "Man vs. Nature conflict occurs when a character struggles against natural forces, such as weather, animals, or environmental conditions.",
     "skill": "Identifying literary conflict",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "sbac_227",
@@ -6335,11 +6279,11 @@
     "options": [
       {
         "label": "A",
-        "text": "The report that I wrote was on the desk."
+        "text": "I wrote the report that was on the desk."
       },
       {
         "label": "B",
-        "text": "I wrote the report that was on the desk."
+        "text": "The report that I wrote was on the desk."
       },
       {
         "label": "C",
@@ -6350,10 +6294,10 @@
         "text": "On the desk was the report that I wrote."
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "B",
     "explanation": "An adjective clause (relative clause) should generally be placed immediately after the noun it modifies. In sentence A, 'that I wrote' modifies 'The report' and is placed directly after it. Sentences B and D are grammatically awkward. Sentence C implies the desk is what was written.",
     "skill": "Correct placement of adjective clauses",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "sbac_228",
@@ -6381,7 +6325,7 @@
     "correctAnswer": "C",
     "explanation": "The thesis statement is the central claim or argument of an essay, around which all other content revolves. It guides both the writer and the reader.",
     "skill": "Understanding thesis statements",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "sbac_229",
@@ -6409,7 +6353,7 @@
     "correctAnswer": "D",
     "explanation": "All options provided are common misspellings of the word 'definitely'. The correct spelling includes 'i' after 'def'.",
     "skill": "Correcting common misspellings",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "sbac_230",
@@ -6437,7 +6381,7 @@
     "correctAnswer": "B",
     "explanation": "Short, declarative sentences often create a feeling of speed, tension, or directness, making the narrative feel more immediate and active. They can increase pace and suspense.",
     "skill": "Analyzing sentence structure effects",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "sbac_231",
@@ -6465,7 +6409,7 @@
     "correctAnswer": "D",
     "explanation": "A simile is a figure of speech that directly compares two different things, usually by employing the words 'like' or 'as'. This sentence uses 'as' to compare bravery to a lion.",
     "skill": "Identifying figures of speech",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "sbac_232",
@@ -6493,7 +6437,7 @@
     "correctAnswer": "C",
     "explanation": "Commas are used to separate items in a series of three or more. The comma before the last item (the Oxford comma) is a matter of style, but its inclusion is generally preferred for clarity. Sentence C uses commas correctly to separate the three items.",
     "skill": "Using commas in a series",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "sbac_233",
@@ -6521,7 +6465,7 @@
     "correctAnswer": "B",
     "explanation": "'Ephemeral' describes something that is transient, lasting for only a brief period.",
     "skill": "Understanding vocabulary",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "sbac_234",
@@ -6531,7 +6475,7 @@
     "options": [
       {
         "label": "A",
-        "text": "Because the weather was bad"
+        "text": "The weather"
       },
       {
         "label": "B",
@@ -6539,17 +6483,17 @@
       },
       {
         "label": "C",
-        "text": "The weather"
+        "text": "Because the weather was bad"
       },
       {
         "label": "D",
         "text": "was bad"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "C",
     "explanation": "A subordinate (or dependent) clause cannot stand alone as a complete sentence and is introduced by a subordinating conjunction (like 'Because'). 'Because the weather was bad' cannot stand alone and depends on the main clause 'the game was canceled'.",
     "skill": "Identifying subordinate clauses",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "sbac_235",
@@ -6577,7 +6521,7 @@
     "correctAnswer": "C",
     "explanation": "'Affect' is typically used as a verb meaning to influence or produce a change in something. 'Effect' is typically used as a noun meaning a result or consequence. Sentence C uses 'affect' correctly as a verb.",
     "skill": "Using 'affect' and 'effect' correctly",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "sbac_236",
@@ -6605,7 +6549,7 @@
     "correctAnswer": "A",
     "explanation": "The idiom 'break the ice' means to initiate social interaction or conversation, often to relieve tension in a new or awkward situation.",
     "skill": "Understanding idioms",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "sbac_237",
@@ -6633,7 +6577,7 @@
     "correctAnswer": "B",
     "explanation": "An appositive phrase renames or explains a noun or pronoun. In sentence B, 'a skilled carpenter' is an appositive phrase that renames 'My brother'.",
     "skill": "Identifying appositive phrases",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "sbac_238",
@@ -6661,7 +6605,7 @@
     "correctAnswer": "B",
     "explanation": "A narrative hook is the beginning of a story designed to grab the reader's interest immediately, encouraging them to keep reading.",
     "skill": "Understanding narrative techniques",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "sbac_239",
@@ -6689,7 +6633,7 @@
     "correctAnswer": "B",
     "explanation": "The future perfect tense is formed with 'will have' + past participle. It indicates an action that will be completed before some point in the future.",
     "skill": "Identifying verb tenses",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "sbac_240",
@@ -6717,7 +6661,7 @@
     "correctAnswer": "A",
     "explanation": "A compound predicate consists of two or more verbs or verb phrases that share the same subject. In sentence A, the subject 'The cat' has two predicates: 'slept' and 'dreamed'.",
     "skill": "Identifying compound predicates",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "sbac_241",
@@ -6745,7 +6689,7 @@
     "correctAnswer": "B",
     "explanation": "Hyperbole is a figure of speech that involves extreme exaggeration for emphasis or humorous effect.",
     "skill": "Identifying literary devices",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "sbac_242",
@@ -6773,7 +6717,7 @@
     "correctAnswer": "D",
     "explanation": "Colons are used to introduce lists, explanations, or appositives, especially after an independent clause. All provided examples demonstrate correct usage of colons in different contexts.",
     "skill": "Using colons correctly",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "sbac_243",
@@ -6783,7 +6727,7 @@
     "options": [
       {
         "label": "A",
-        "text": "A metaphor directly states a comparison, while a simile uses 'like' or 'as'."
+        "text": "A metaphor uses imagery, while a simile uses personification."
       },
       {
         "label": "B",
@@ -6791,17 +6735,17 @@
       },
       {
         "label": "C",
-        "text": "A metaphor uses imagery, while a simile uses personification."
+        "text": "A metaphor directly states a comparison, while a simile uses 'like' or 'as'."
       },
       {
         "label": "D",
         "text": "There is no difference; they are the same."
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "C",
     "explanation": "Both similes and metaphors are figures of speech used for comparison. The key difference is that similes explicitly use 'like' or 'as' to make the comparison, whereas metaphors state the comparison directly, implying one thing *is* another.",
     "skill": "Distinguishing between figures of speech",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "sbac_244",
@@ -6829,7 +6773,7 @@
     "correctAnswer": "D",
     "explanation": "The verb is the word that describes an action, occurrence, or state of being. In this sentence, 'played' is the action performed by the musician.",
     "skill": "Identifying verbs",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "sbac_245",
@@ -6857,7 +6801,7 @@
     "correctAnswer": "B",
     "explanation": "The conclusion of an essay should effectively wrap up the discussion by reiterating the main argument (thesis), briefly summarizing the key supporting points, and offering a final impactful statement or reflection.",
     "skill": "Understanding essay structure",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "sbac_246",
@@ -6885,7 +6829,7 @@
     "correctAnswer": "D",
     "explanation": "Transition words and phrases connect ideas and create flow. 'However' shows contrast, 'therefore' shows consequence, and 'but' also shows contrast. All sentences use transition words effectively to link ideas.",
     "skill": "Using transition words",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "sbac_247",
@@ -6913,7 +6857,7 @@
     "correctAnswer": "C",
     "explanation": "First-person point of view is used when the narrator is a character in the story and uses pronouns like 'I', 'me', 'my', and 'we'. This sentence clearly uses 'I'.",
     "skill": "Identifying point of view",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "sbac_248",
@@ -6941,7 +6885,7 @@
     "correctAnswer": "D",
     "explanation": "The correct spelling is 'guarantee'. 'Gaurantee' is a common misspelling.",
     "skill": "Correcting spelling errors",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "sbac_249",
@@ -6969,7 +6913,7 @@
     "correctAnswer": "D",
     "explanation": "Characterization is the process by which an author reveals the personality of a character. This is done through direct description or indirect means like actions, speech, thoughts, and appearance.",
     "skill": "Identifying literary elements",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "sbac_250",
@@ -6979,11 +6923,11 @@
     "options": [
       {
         "label": "A",
-        "text": "Through the park"
+        "text": "The tall trees"
       },
       {
         "label": "B",
-        "text": "The tall trees"
+        "text": "Through the park"
       },
       {
         "label": "C",
@@ -6994,10 +6938,10 @@
         "text": "A large dog"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "B",
     "explanation": "An adverbial phrase modifies a verb, adjective, or another adverb, often answering questions like where, when, or how. 'Through the park' is a prepositional phrase that tells where the action of walking occurred.",
     "skill": "Identifying adverbial phrases",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "sbac_251",
@@ -7025,7 +6969,7 @@
     "correctAnswer": "B",
     "explanation": "To add fractions, they must have a common denominator. 1/2 is equivalent to 2/4. So, 3/4 + 2/4 = 5/4.",
     "skill": "Fraction Addition",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "sbac_252",
@@ -7053,7 +6997,7 @@
     "correctAnswer": "B",
     "explanation": "Substitute x = 5 into the expression: 2(5)^2 - 3(5) + 1 = 2(25) - 15 + 1 = 50 - 15 + 1 = 35 + 1 = 36.",
     "skill": "Algebraic Evaluation",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "sbac_253",
@@ -7081,7 +7025,7 @@
     "correctAnswer": "B",
     "explanation": "When raising a power to another power, you multiply the exponents: (a^m)^n = a^(m*n). So, (a^3)^2 = a^(3*2) = a^6.",
     "skill": "Exponent Rules",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "sbac_254",
@@ -7109,7 +7053,7 @@
     "correctAnswer": "C",
     "explanation": "The area of a rectangle is calculated by length × width. So, 8 cm × 5 cm = 40 cm^2.",
     "skill": "Area of Rectangle",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "sbac_255",
@@ -7137,7 +7081,7 @@
     "correctAnswer": "B",
     "explanation": "Add 7 to both sides: 3x = 18. Then divide by 3: x = 6.",
     "skill": "Solving Linear Equations",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "sbac_256",
@@ -7165,7 +7109,7 @@
     "correctAnswer": "B",
     "explanation": "The square root of a number is a value that, when multiplied by itself, gives the original number. 12 × 12 = 144.",
     "skill": "Square Roots",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "sbac_257",
@@ -7193,7 +7137,7 @@
     "correctAnswer": "C",
     "explanation": "The symbol '≥' means 'greater than or equal to'.",
     "skill": "Inequalities",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "sbac_258",
@@ -7221,7 +7165,7 @@
     "correctAnswer": "B",
     "explanation": "To find a percentage of a number, convert the percentage to a decimal (25% = 0.25) and multiply: 0.25 × 80 = 20.",
     "skill": "Percentages",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "sbac_259",
@@ -7231,11 +7175,11 @@
     "options": [
       {
         "label": "A",
-        "text": "3x + 4y"
+        "text": "7x + 4y"
       },
       {
         "label": "B",
-        "text": "7x + 4y"
+        "text": "3x + 4y"
       },
       {
         "label": "C",
@@ -7246,10 +7190,10 @@
         "text": "7x + 2y"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "B",
     "explanation": "Combine like terms: (5x - 2x) + (3y + y) = 3x + 4y.",
     "skill": "Simplifying Algebraic Expressions",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "sbac_260",
@@ -7277,7 +7221,7 @@
     "correctAnswer": "D",
     "explanation": "A full circle measures 360 degrees.",
     "skill": "Geometry Basics",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "sbac_261",
@@ -7305,7 +7249,7 @@
     "correctAnswer": "A",
     "explanation": "Prime factorization means expressing a number as a product of its prime factors. 30 = 2 x 15 = 2 x 3 x 5.",
     "skill": "Prime Factorization",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "sbac_262",
@@ -7333,7 +7277,7 @@
     "correctAnswer": "B",
     "explanation": "The formula for circumference is C = 2πr. So, C = 2 * π * 7 = 14π units.",
     "skill": "Circumference of Circle",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "sbac_263",
@@ -7343,11 +7287,11 @@
     "options": [
       {
         "label": "A",
-        "text": "0.1"
+        "text": "0.7"
       },
       {
         "label": "B",
-        "text": "0.7"
+        "text": "0.1"
       },
       {
         "label": "C",
@@ -7358,10 +7302,10 @@
         "text": "0.01"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "B",
     "explanation": "0.5 × 0.2 = 0.10. Moving the decimal places correctly results in 0.1.",
     "skill": "Decimal Multiplication",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "sbac_264",
@@ -7389,7 +7333,7 @@
     "correctAnswer": "B",
     "explanation": "Divide the numerator by the denominator: 3 ÷ 8 = 0.375.",
     "skill": "Fraction to Decimal Conversion",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "sbac_265",
@@ -7417,7 +7361,7 @@
     "correctAnswer": "D",
     "explanation": "An irrational number cannot be expressed as a simple fraction. √2 is approximately 1.414, and its decimal representation is non-repeating and non-terminating. 3/2 is rational. √9 = 3 is rational. 0.666... = 2/3 is rational.",
     "skill": "Number Classification",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "sbac_266",
@@ -7445,7 +7389,7 @@
     "correctAnswer": "D",
     "explanation": "The absolute value of -5 is 5, and the absolute value of 3 is 3. So, 5 + 3 = 8.",
     "skill": "Absolute Value",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "sbac_267",
@@ -7473,7 +7417,7 @@
     "correctAnswer": "B",
     "explanation": "10% of $20 is 0.10 × 20 = $2.00. The sale price is $20 - $2 = $18.00.",
     "skill": "Percentage Discount",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "sbac_268",
@@ -7501,7 +7445,7 @@
     "correctAnswer": "C",
     "explanation": "Factors of 12 are {1, 2, 3, 4, 6, 12}. Factors of 18 are {1, 2, 3, 6, 9, 18}. The greatest common factor is 6.",
     "skill": "Greatest Common Factor",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "sbac_269",
@@ -7529,7 +7473,7 @@
     "correctAnswer": "B",
     "explanation": "Factor the quadratic expression. We need two numbers that multiply to 6 and add to 5. These numbers are 2 and 3. So, (x + 2)(x + 3).",
     "skill": "Factoring Quadratics",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "sbac_270",
@@ -7539,7 +7483,7 @@
     "options": [
       {
         "label": "A",
-        "text": "70 degrees"
+        "text": "110 degrees"
       },
       {
         "label": "B",
@@ -7551,13 +7495,13 @@
       },
       {
         "label": "D",
-        "text": "110 degrees"
+        "text": "70 degrees"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "The sum of angles in a triangle is 180 degrees. So, 180 - (45 + 65) = 180 - 110 = 70 degrees.",
     "skill": "Angles in a Triangle",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "sbac_271",
@@ -7585,7 +7529,7 @@
     "correctAnswer": "C",
     "explanation": "2^3 = 2 × 2 × 2 = 8. 3^2 = 3 × 3 = 9. So, 8 + 9 = 17.",
     "skill": "Exponents and Order of Operations",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "sbac_272",
@@ -7595,7 +7539,7 @@
     "options": [
       {
         "label": "A",
-        "text": "3.14"
+        "text": "3.1"
       },
       {
         "label": "B",
@@ -7603,45 +7547,17 @@
       },
       {
         "label": "C",
-        "text": "3.1"
+        "text": "3.14"
       },
       {
         "label": "D",
         "text": "3"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "C",
     "explanation": "The hundredths digit is 4. Look at the digit to its right, which is 1. Since 1 is less than 5, we keep the hundredths digit as it is. So, 3.14.",
     "skill": "Rounding Decimals",
-    "difficulty": "easy"
-  },
-  {
-    "id": "sbac_273",
-    "exam": "SBAC",
-    "section": "Mathematics",
-    "question": "What is the least common multiple (LCM) of 4 and 6?",
-    "options": [
-      {
-        "label": "A",
-        "text": "2"
-      },
-      {
-        "label": "B",
-        "text": "12"
-      },
-      {
-        "label": "C",
-        "text": "24"
-      },
-      {
-        "label": "D",
-        "text": "36"
-      }
-    ],
-    "correctAnswer": "B",
-    "explanation": "Multiples of 4 are {4, 8, 12, 16, ...}. Multiples of 6 are {6, 12, 18, ...}. The least common multiple is 12.",
-    "skill": "Least Common Multiple",
-    "difficulty": "medium"
+    "difficulty": 3
   },
   {
     "id": "sbac_274",
@@ -7669,7 +7585,7 @@
     "correctAnswer": "C",
     "explanation": "0.75 can be written as 75/100, which simplifies to 3/4.",
     "skill": "Decimal to Fraction Conversion",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "sbac_275",
@@ -7697,7 +7613,7 @@
     "correctAnswer": "C",
     "explanation": "Subtract 2 from both sides: y/3 = 3. Then multiply both sides by 3: y = 9.",
     "skill": "Solving Linear Equations",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "sbac_276",
@@ -7725,7 +7641,7 @@
     "correctAnswer": "C",
     "explanation": "The area of a square is side length squared. So, 6^2 = 36 square units.",
     "skill": "Area of Square",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "sbac_277",
@@ -7753,7 +7669,7 @@
     "correctAnswer": "C",
     "explanation": "A prime number is a natural number greater than 1 that has no positive divisors other than 1 and itself. 9 = 3x3, 15 = 3x5, 27 = 3x9. 23 is only divisible by 1 and 23.",
     "skill": "Prime Numbers",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "sbac_278",
@@ -7763,7 +7679,7 @@
     "options": [
       {
         "label": "A",
-        "text": "19"
+        "text": "24"
       },
       {
         "label": "B",
@@ -7775,13 +7691,13 @@
       },
       {
         "label": "D",
-        "text": "24"
+        "text": "19"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "Follow the order of operations (PEMDAS/BODMAS): Parentheses first (2+3 = 5). Then multiplication (5 x 4 = 20). Finally, subtraction (20 - 1 = 19).",
     "skill": "Order of Operations",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "sbac_279",
@@ -7809,7 +7725,7 @@
     "correctAnswer": "C",
     "explanation": "A regular hexagon has 6 equal sides. Perimeter = number of sides × side length = 6 × 7 = 42 inches.",
     "skill": "Perimeter of Polygons",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "sbac_280",
@@ -7837,7 +7753,7 @@
     "correctAnswer": "B",
     "explanation": "Distribute the negative sign: 4x - x - 3 = 3x - 3.",
     "skill": "Simplifying Algebraic Expressions",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "sbac_281",
@@ -7865,7 +7781,7 @@
     "correctAnswer": "B",
     "explanation": "Speed = Distance / Time. So, 120 miles / 2 hours = 60 mph.",
     "skill": "Rate Problems",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "sbac_282",
@@ -7893,7 +7809,7 @@
     "correctAnswer": "C",
     "explanation": "5! = 5 × 4 × 3 × 2 × 1 = 120.",
     "skill": "Factorials",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "sbac_283",
@@ -7921,7 +7837,7 @@
     "correctAnswer": "B",
     "explanation": "A multiple of 7 is a number that can be divided by 7 with no remainder. 49 ÷ 7 = 7.",
     "skill": "Multiples",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "sbac_284",
@@ -7949,7 +7865,7 @@
     "correctAnswer": "B",
     "explanation": "Slope (m) = (y2 - y1) / (x2 - x1) = (7 - 3) / (4 - 2) = 4 / 2 = 2.",
     "skill": "Slope of a Line",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "sbac_285",
@@ -7977,7 +7893,7 @@
     "correctAnswer": "C",
     "explanation": "Total marbles = 5 + 3 = 8. Number of blue marbles = 3. Probability = (Number of blue marbles) / (Total marbles) = 3/8.",
     "skill": "Basic Probability",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "sbac_286",
@@ -8005,7 +7921,7 @@
     "correctAnswer": "B",
     "explanation": "Find the largest perfect square factor of 18, which is 9. √18 = √(9 × 2) = √9 × √2 = 3√2.",
     "skill": "Simplifying Radicals",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "sbac_287",
@@ -8033,7 +7949,7 @@
     "correctAnswer": "C",
     "explanation": "Use the formula (a + b)^2 = a^2 + 2ab + b^2. Here a=x, b=4. So, x^2 + 2(x)(4) + 4^2 = x^2 + 8x + 16.",
     "skill": "Expanding Binomials",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "sbac_288",
@@ -8061,7 +7977,7 @@
     "correctAnswer": "C",
     "explanation": "There are 1000 millimeters in 1 meter. So, 3 meters × 1000 mm/meter = 3,000 mm.",
     "skill": "Unit Conversion (Metric)",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "sbac_289",
@@ -8089,7 +8005,7 @@
     "correctAnswer": "C",
     "explanation": "Divide both sides by 2: x - 1 = 4. Add 1 to both sides: x = 5.",
     "skill": "Solving Linear Equations",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "sbac_290",
@@ -8117,7 +8033,7 @@
     "correctAnswer": "B",
     "explanation": "The common ratio is found by dividing any term by its preceding term. 6/2 = 3, 18/6 = 3, 54/18 = 3. So the common ratio is 3.",
     "skill": "Geometric Sequences",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "sbac_291",
@@ -8145,7 +8061,7 @@
     "correctAnswer": "B",
     "explanation": "A drop in temperature means subtraction. So, -5 - 3 = -8 degrees Celsius.",
     "skill": "Integer Operations",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "sbac_292",
@@ -8173,7 +8089,7 @@
     "correctAnswer": "C",
     "explanation": "The range is the difference between the highest and lowest values in a data set. Highest = 9, Lowest = 1. Range = 9 - 1 = 8.",
     "skill": "Statistics (Range)",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "sbac_293",
@@ -8201,7 +8117,7 @@
     "correctAnswer": "B",
     "explanation": "Move the decimal point to the right 4 places to get 4.5. Since we moved it right, the exponent is negative: 4.5 x 10^-4.",
     "skill": "Scientific Notation",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "sbac_294",
@@ -8229,7 +8145,7 @@
     "correctAnswer": "C",
     "explanation": "Substitute x = 4 into the function: f(4) = 4^2 - 3 = 16 - 3 = 13.",
     "skill": "Function Evaluation",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "sbac_295",
@@ -8257,7 +8173,7 @@
     "correctAnswer": "C",
     "explanation": "To get a denominator of 12 from 3, multiply by 4. Do the same to the numerator: 2 × 4 = 8. So, 8/12.",
     "skill": "Equivalent Fractions",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "sbac_296",
@@ -8285,7 +8201,7 @@
     "correctAnswer": "C",
     "explanation": "The probability of getting heads on one flip is 1/2. For two independent events, multiply their probabilities: (1/2) × (1/2) = 1/4.",
     "skill": "Compound Probability",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "sbac_297",
@@ -8313,7 +8229,7 @@
     "correctAnswer": "C",
     "explanation": "Whole numbers are {0, 1, 2, 3,...}. Integers are {..., -2, -1, 0, 1, 2,...}. So, -3 is an integer but not a whole number.",
     "skill": "Number Classification",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "sbac_298",
@@ -8341,7 +8257,7 @@
     "correctAnswer": "B",
     "explanation": "Find the greatest common factor of 15 and 25, which is 5. Divide both parts of the ratio by 5: 15/5 = 3, 25/5 = 5. So, 3:5.",
     "skill": "Simplifying Ratios",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "sbac_299",
@@ -8369,7 +8285,7 @@
     "correctAnswer": "B",
     "explanation": "The smaller integer is 8. The next consecutive integer is 9. Their product is 8 × 9 = 72.",
     "skill": "Number Properties",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "sbac_300",
@@ -8397,6 +8313,6 @@
     "correctAnswer": "C",
     "explanation": "Distance = Speed × Time. So, 50 mph × 3 hours = 150 miles.",
     "skill": "Distance, Speed, Time",
-    "difficulty": "medium"
+    "difficulty": 5
   }
 ]

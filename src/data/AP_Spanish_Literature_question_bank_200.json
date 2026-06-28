@@ -1995,7 +1995,8 @@
       "A": "Miguel de Unamuno.",
       "B": "Mariano José de Larra.",
       "C": "Benito Pérez Galdós.",
-      "D__": "Leopoldo Alas \"Clarín\"."
+      "D__": "Leopoldo Alas \"Clarín\".",
+      "D": ""
     },
     "answer": "B",
     "difficulty": 6,
@@ -2844,7 +2845,8 @@
       "D": "Alejandrino"
     },
     "answer": "C",
-    "explanation": "El endecasílabo es el verso predominante en la poesía culta española, especialmente en sonetos y otras formas de influencia italiana."
+    "explanation": "El endecasílabo es el verso predominante en la poesía culta española, especialmente en sonetos y otras formas de influencia italiana.",
+    "difficulty": 4
   },
   {
     "id": "AP_Spanish_Lit_220",
@@ -2856,7 +2858,8 @@
       "D": "Cinco"
     },
     "answer": "D",
-    "explanation": "Las unidades aristotélicas, en su interpretación más estricta, dictaban una estructura en cinco actos para la tragedia clásica, aunque Lope de Vega popularizó la de tres."
+    "explanation": "Las unidades aristotélicas, en su interpretación más estricta, dictaban una estructura en cinco actos para la tragedia clásica, aunque Lope de Vega popularizó la de tres.",
+    "difficulty": 4
   },
   {
     "id": "AP_Spanish_Lit_221",
@@ -2868,7 +2871,8 @@
       "D": "Paralelismo"
     },
     "answer": "A",
-    "explanation": "La anáfora es una figura retórica de repetición que se utiliza para dar énfasis y ritmo a un discurso o poema."
+    "explanation": "La anáfora es una figura retórica de repetición que se utiliza para dar énfasis y ritmo a un discurso o poema.",
+    "difficulty": 4
   },
   {
     "id": "AP_Spanish_Lit_222",
@@ -2981,7 +2985,8 @@
       "A": "Benito Pérez Galdós",
       "B": "Leopoldo Alas 'Clarín'",
       "C": "Mariano José de Larra",
-      "D__": "Emilia Pardo Bazán"
+      "D__": "Emilia Pardo Bazán",
+      "D": ""
     },
     "answer": "C",
     "difficulty": 6,
@@ -3543,7 +3548,8 @@
       "D": "La nobleza frente a la vulgaridad."
     },
     "answer": "C",
-    "explanation": "Sancho Panza, con su habla refranera y su apego a lo terrenal, representa el polo opuesto del idealismo y la fantasía de Don Quijote, encarnando el espíritu popular de la época."
+    "explanation": "Sancho Panza, con su habla refranera y su apego a lo terrenal, representa el polo opuesto del idealismo y la fantasía de Don Quijote, encarnando el espíritu popular de la época.",
+    "difficulty": 4
   },
   {
     "id": "AP_Spanish_Lit_274",
@@ -3555,7 +3561,8 @@
       "D": "La poesía metafísica."
     },
     "answer": "C",
-    "explanation": "Lope de Vega es considerado el artífice de la comedia nueva española, sentando las bases y revolucionando la estructura y temática del teatro del Siglo de Oro."
+    "explanation": "Lope de Vega es considerado el artífice de la comedia nueva española, sentando las bases y revolucionando la estructura y temática del teatro del Siglo de Oro.",
+    "difficulty": 4
   },
   {
     "id": "AP_Spanish_Lit_275",
@@ -3567,7 +3574,8 @@
       "D": "El amor no correspondido."
     },
     "answer": "B",
-    "explanation": "La experiencia de Segismundo en la torre y su posterior liberación lo llevan a cuestionar si lo que vive es real o un sueño, reflexionando sobre el libre albedrío y la condición humana."
+    "explanation": "La experiencia de Segismundo en la torre y su posterior liberación lo llevan a cuestionar si lo que vive es real o un sueño, reflexionando sobre el libre albedrío y la condición humana.",
+    "difficulty": 4
   },
   {
     "id": "AP_Spanish_Lit_276",
@@ -3579,7 +3587,8 @@
       "D": "El modernismo."
     },
     "answer": "C",
-    "explanation": "Quevedo es el máximo exponente del conceptismo, un estilo caracterizado por la agudeza del ingenio, los juegos de palabras y la concisión expresiva."
+    "explanation": "Quevedo es el máximo exponente del conceptismo, un estilo caracterizado por la agudeza del ingenio, los juegos de palabras y la concisión expresiva.",
+    "difficulty": 4
   },
   {
     "id": "AP_Spanish_Lit_277",
@@ -3591,7 +3600,8 @@
       "D": "La crítica a la monarquía española."
     },
     "answer": "A",
-    "explanation": "Sor Juana es un símbolo de la lucha por el acceso de las mujeres al saber, argumentando en sus escritos su derecho a la intelectualidad y al desarrollo de sus capacidades."
+    "explanation": "Sor Juana es un símbolo de la lucha por el acceso de las mujeres al saber, argumentando en sus escritos su derecho a la intelectualidad y al desarrollo de sus capacidades.",
+    "difficulty": 4
   },
   {
     "id": "AP_Spanish_Lit_278",
@@ -3603,7 +3613,8 @@
       "D": "El uso de un lenguaje oscuro y complejo."
     },
     "answer": "B",
-    "explanation": "Las rimas de Bécquer son poemas breves, líricos, que exploran la esencia del amor, la poesía y la soledad con un lenguaje sencillo pero evocador."
+    "explanation": "Las rimas de Bécquer son poemas breves, líricos, que exploran la esencia del amor, la poesía y la soledad con un lenguaje sencillo pero evocador.",
+    "difficulty": 4
   },
   {
     "id": "AP_Spanish_Lit_279",
@@ -3615,7 +3626,8 @@
       "D": "Exaltar las glorias del pasado."
     },
     "answer": "C",
-    "explanation": "Larra utilizó el periodismo para realizar una crítica mordaz y a menudo pesimista de la realidad española, abordando temas como la apatía, la superstición y la ineficacia política."
+    "explanation": "Larra utilizó el periodismo para realizar una crítica mordaz y a menudo pesimista de la realidad española, abordando temas como la apatía, la superstición y la ineficacia política.",
+    "difficulty": 4
   },
   {
     "id": "AP_Spanish_Lit_280",
@@ -3627,7 +3639,8 @@
       "D": "La narración de aventuras fantásticas."
     },
     "answer": "B",
-    "explanation": "Pardo Bazán aplica los principios del naturalismo, mostrando cómo el entorno (el pazo, la Galicia rural) y la herencia biológica influyen en el comportamiento de los personajes, con un fuerte énfasis en lo instintivo y lo fisiológico."
+    "explanation": "Pardo Bazán aplica los principios del naturalismo, mostrando cómo el entorno (el pazo, la Galicia rural) y la herencia biológica influyen en el comportamiento de los personajes, con un fuerte énfasis en lo instintivo y lo fisiológico.",
+    "difficulty": 4
   },
   {
     "id": "AP_Spanish_Lit_281",
@@ -3639,7 +3652,8 @@
       "D": "El determinismo."
     },
     "answer": "B",
-    "explanation": "Unamuno explora la 'agonía' o lucha existencial, la duda sobre la fe y la mortalidad, y la búsqueda de sentido en la vida, temas centrales en su novela 'Niebla' y en su pensamiento."
+    "explanation": "Unamuno explora la 'agonía' o lucha existencial, la duda sobre la fe y la mortalidad, y la búsqueda de sentido en la vida, temas centrales en su novela 'Niebla' y en su pensamiento.",
+    "difficulty": 4
   },
   {
     "id": "AP_Spanish_Lit_282",
@@ -3651,7 +3665,8 @@
       "D": "El postismo."
     },
     "answer": "C",
-    "explanation": "Darío, con obras como 'Azul...' y 'Prosas profanas', es la figura cumbre y el máximo renovador del modernismo hispanoamericano, introduciendo nuevas formas métricas, léxico y una estética cosmopolita."
+    "explanation": "Darío, con obras como 'Azul...' y 'Prosas profanas', es la figura cumbre y el máximo renovador del modernismo hispanoamericano, introduciendo nuevas formas métricas, léxico y una estética cosmopolita.",
+    "difficulty": 4
   },
   {
     "id": "AP_Spanish_Lit_283",
@@ -3663,7 +3678,8 @@
       "D": "El optimismo y la juventud."
     },
     "answer": "B",
-    "explanation": "Machado utiliza el paisaje castellano, árido y austero, como reflejo de la condición humana, de la melancolía, la fugacidad de la vida y la búsqueda de la esencia."
+    "explanation": "Machado utiliza el paisaje castellano, árido y austero, como reflejo de la condición humana, de la melancolía, la fugacidad de la vida y la búsqueda de la esencia.",
+    "difficulty": 4
   },
   {
     "id": "AP_Spanish_Lit_284",
@@ -3675,7 +3691,8 @@
       "D": "El realismo social y la poesía pura."
     },
     "answer": "B",
-    "explanation": "Lorca combina elementos del folclore andaluz y la cultura gitana con las innovaciones estéticas de las vanguardias, creando un universo poético único, trágico y sensual."
+    "explanation": "Lorca combina elementos del folclore andaluz y la cultura gitana con las innovaciones estéticas de las vanguardias, creando un universo poético único, trágico y sensual.",
+    "difficulty": 4
   },
   {
     "id": "AP_Spanish_Lit_285",
@@ -3687,7 +3704,8 @@
       "D": "La sátira política y la ironía."
     },
     "answer": "B",
-    "explanation": "Neruda, a través de sus 'Odas elementales', sus poemas de amor y sus cantos épicos como el 'Canto general', aborda temas universales, la realidad social y la belleza del continente, con un lenguaje accesible y profundamente emotivo."
+    "explanation": "Neruda, a través de sus 'Odas elementales', sus poemas de amor y sus cantos épicos como el 'Canto general', aborda temas universales, la realidad social y la belleza del continente, con un lenguaje accesible y profundamente emotivo.",
+    "difficulty": 4
   },
   {
     "id": "AP_Spanish_Lit_286",
@@ -3699,7 +3717,8 @@
       "D": "Las historias de amor imposibles."
     },
     "answer": "B",
-    "explanation": "La obra de Borges se caracteriza por su erudición, sus referencias filosóficas y literarias, y la creación de universos complejos donde se desdibujan los límites entre realidad y ficción."
+    "explanation": "La obra de Borges se caracteriza por su erudición, sus referencias filosóficas y literarias, y la creación de universos complejos donde se desdibujan los límites entre realidad y ficción.",
+    "difficulty": 4
   },
   {
     "id": "AP_Spanish_Lit_287",
@@ -3711,7 +3730,8 @@
       "D": "Respetar la cronología de los hechos."
     },
     "answer": "B",
-    "explanation": "'Rayuela' propone una estructura fragmentaria y abierta, permitiendo al lector elegir el orden de lectura de los capítulos, lo que refleja la búsqueda de nuevas formas de experimentar la realidad y la literatura."
+    "explanation": "'Rayuela' propone una estructura fragmentaria y abierta, permitiendo al lector elegir el orden de lectura de los capítulos, lo que refleja la búsqueda de nuevas formas de experimentar la realidad y la literatura.",
+    "difficulty": 4
   },
   {
     "id": "AP_Spanish_Lit_288",
@@ -3723,7 +3743,8 @@
       "D": "Boom de la novela de dictadores."
     },
     "answer": "B",
-    "explanation": "García Márquez, con 'Cien años de soledad' como obra cumbre, fusiona lo real y lo fantástico de manera natural, creando un universo mítico y reconocible de Latinoamérica."
+    "explanation": "García Márquez, con 'Cien años de soledad' como obra cumbre, fusiona lo real y lo fantástico de manera natural, creando un universo mítico y reconocible de Latinoamérica.",
+    "difficulty": 4
   },
   {
     "id": "AP_Spanish_Lit_289",
@@ -3735,7 +3756,8 @@
       "D": "Las novelas históricas centradas en la conquista española."
     },
     "answer": "B",
-    "explanation": "Allende utiliza la estructura de la saga familiar para narrar eventos históricos y sociales de su continente, incorporando elementos sutiles de lo fantástico y otorgando protagonismo a personajes femeninos."
+    "explanation": "Allende utiliza la estructura de la saga familiar para narrar eventos históricos y sociales de su continente, incorporando elementos sutiles de lo fantástico y otorgando protagonismo a personajes femeninos.",
+    "difficulty": 4
   },
   {
     "id": "AP_Spanish_Lit_290",
@@ -3747,7 +3769,8 @@
       "D": "La naturaleza y el paisaje rural."
     },
     "answer": "B",
-    "explanation": "Morejón es una voz fundamental de la poesía cubana contemporánea, que reflexiona sobre su herencia africana, la experiencia de ser mujer y la realidad de su país, con una gran profundidad lírica y compromiso social."
+    "explanation": "Morejón es una voz fundamental de la poesía cubana contemporánea, que reflexiona sobre su herencia africana, la experiencia de ser mujer y la realidad de su país, con una gran profundidad lírica y compromiso social.",
+    "difficulty": 4
   },
   {
     "id": "AP_Spanish_Lit_291",
@@ -3759,7 +3782,8 @@
       "D": "El Simbolismo."
     },
     "answer": "C",
-    "explanation": "El Modernismo, con figuras como Rubén Darío, buscó la belleza formal, la evasión de la realidad vulgar y la experimentación con el lenguaje y la métrica."
+    "explanation": "El Modernismo, con figuras como Rubén Darío, buscó la belleza formal, la evasión de la realidad vulgar y la experimentación con el lenguaje y la métrica.",
+    "difficulty": 4
   },
   {
     "id": "AP_Spanish_Lit_292",
@@ -3771,7 +3795,8 @@
       "D": "El Romanticismo."
     },
     "answer": "B",
-    "explanation": "Durante el Siglo de Oro español, el Barroco vio florecer el conceptismo (Quevedo), centrado en la agudeza del pensamiento, y el culteranismo (Góngora), enfocado en la forma y el lenguaje culto."
+    "explanation": "Durante el Siglo de Oro español, el Barroco vio florecer el conceptismo (Quevedo), centrado en la agudeza del pensamiento, y el culteranismo (Góngora), enfocado en la forma y el lenguaje culto.",
+    "difficulty": 4
   },
   {
     "id": "AP_Spanish_Lit_293",
@@ -3783,7 +3808,8 @@
       "D": "Guzmán de Alfarache."
     },
     "answer": "B",
-    "explanation": "La premisa fundamental de 'Don Quijote de la Mancha' de Miguel de Cervantes Saavedra es la locura de Alonso Quijano, quien se transforma en Don Quijote."
+    "explanation": "La premisa fundamental de 'Don Quijote de la Mancha' de Miguel de Cervantes Saavedra es la locura de Alonso Quijano, quien se transforma en Don Quijote.",
+    "difficulty": 4
   },
   {
     "id": "AP_Spanish_Lit_294",
@@ -3795,7 +3821,8 @@
       "D": "Un artista bohemio y soñador."
     },
     "answer": "B",
-    "explanation": "El pícaro es un antihéroe, un superviviente que relata su vida desde una perspectiva satírica y crítica de la sociedad, a menudo desde la perspectiva del marginal."
+    "explanation": "El pícaro es un antihéroe, un superviviente que relata su vida desde una perspectiva satírica y crítica de la sociedad, a menudo desde la perspectiva del marginal.",
+    "difficulty": 4
   },
   {
     "id": "AP_Spanish_Lit_295",
@@ -3807,7 +3834,8 @@
       "D": "Es una metáfora de la libertad política."
     },
     "answer": "B",
-    "explanation": "El famoso monólogo de Segismundo plantea la dualidad entre la realidad y el sueño como una metáfora de la fragilidad de la existencia y la dificultad de discernir lo verdadero de lo aparente."
+    "explanation": "El famoso monólogo de Segismundo plantea la dualidad entre la realidad y el sueño como una metáfora de la fragilidad de la existencia y la dificultad de discernir lo verdadero de lo aparente.",
+    "difficulty": 4
   },
   {
     "id": "AP_Spanish_Lit_296",
@@ -3819,7 +3847,8 @@
       "D": "El prerromanticismo."
     },
     "answer": "C",
-    "explanation": "El conceptismo prioriza la idea y la agudeza mental sobre la ornamentación del lenguaje, buscando la máxima expresión con el mínimo de palabras."
+    "explanation": "El conceptismo prioriza la idea y la agudeza mental sobre la ornamentación del lenguaje, buscando la máxima expresión con el mínimo de palabras.",
+    "difficulty": 4
   },
   {
     "id": "AP_Spanish_Lit_297",
