@@ -259,7 +259,9 @@ export const LandingPage = () => {
           <h2 className="text-lg font-semibold mb-6">Everything included. Free.</h2>
           <div className="grid gap-2.5 text-left max-w-sm mx-auto">
             {[
-              "50,000+ questions across every exam",
+              liveQuestionCount
+                ? `${liveQuestionCount.toLocaleString()}+ questions across every exam`
+                : "Thousands of questions across every exam",
               "AI that adapts to your level",
               "Real-time multiplayer battles",
               "Score prediction & progress tracking",
