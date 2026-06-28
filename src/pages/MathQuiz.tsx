@@ -269,6 +269,7 @@ const MathQuiz = () => {
               showResult={showResult}
               questionType="math"
               onFlagged={handleFlagged}
+              examLabel={examLabel}
             />
           </div>
 
