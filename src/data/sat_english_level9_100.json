@@ -1,32 +1,392 @@
 [
-  {"id":"SATE9_1","question":"The marine biologist noted that the coral reef, which had been bleached by rising ocean temperatures, _______ signs of recovery after two consecutive years of cooler water.\n\nWhich choice completes the text so that it conforms to the conventions of Standard English?","choices":{"A":"are showing","B":"were showing","C":"was showing","D":"have been showing"},"answer":"C","difficulty":9,"explanation":"The subject is 'coral reef' (singular), so the verb must be singular. The past-tense context ('had been bleached,' 'noted') requires 'was showing.' Choice A uses plural present; B uses plural past; D uses plural present perfect."},
-  {"id":"SATE9_2","question":"In a 2024 study of urban heat islands, researchers found that neighborhoods with extensive tree canopy coverage experienced peak summer temperatures that were, on average, 4.2°F lower than _______ of comparable neighborhoods without significant vegetation.\n\nWhich choice completes the text so that it conforms to the conventions of Standard English?","choices":{"A":"that","B":"this","C":"those","D":"these"},"answer":"C","difficulty":9,"explanation":"The pronoun must replace 'temperatures' (plural) in a comparison. 'Those' is the correct demonstrative pronoun for a plural antecedent in a comparison. 'That' is singular; 'this' and 'these' don't fit comparison structures."},
-  {"id":"SATE9_3","question":"The following passage is adapted from a literary analysis of Toni Morrison's 'Beloved.'\n\nMorrison's narrative technique in 'Beloved' is characterized by temporal fragmentation—the story shifts between past and present without conventional transitions. This approach _______ readers to piece together the traumatic history that the characters themselves struggle to articulate.\n\nWhich choice completes the text with the most logical transition?","choices":{"A":"compels","B":"allows","C":"prevents","D":"discourages"},"answer":"A","difficulty":9,"explanation":"The context describes fragmentation as a deliberate artistic choice that forces engagement. 'Compels' captures the imperative nature of the technique—readers must actively reconstruct the narrative. 'Allows' is too passive; 'prevents' and 'discourages' contradict the passage's meaning."},
-  {"id":"SATE9_4","question":"Economist Raj Chetty's research team analyzed millions of tax records to study intergenerational economic mobility. _______ findings revealed that a child's chances of rising from the bottom income quintile to the top quintile varied dramatically by geographic location, ranging from 4.4% in some cities to 12.9% in others.\n\nWhich choice completes the text so that it conforms to the conventions of Standard English?","choices":{"A":"They're","B":"Its","C":"Their","D":"There"},"answer":"C","difficulty":9,"explanation":"The possessive pronoun refers to 'Raj Chetty's research team' (plural entity). 'Their' is the correct possessive. 'Its' would be used for a singular entity; 'They're' means 'they are'; 'There' indicates location."},
-  {"id":"SATE9_5","question":"While investigating the migration patterns of Arctic terns, ornithologist Dr. Sarah Chen discovered that the birds' route from the Arctic to Antarctica _______ not a direct path but rather an S-shaped curve that takes advantage of prevailing wind patterns.\n\nWhich choice completes the text so that it conforms to the conventions of Standard English?","choices":{"A":"are","B":"is","C":"were","D":"have been"},"answer":"B","difficulty":9,"explanation":"The subject is 'route' (singular), requiring a singular verb. The present tense 'is' matches the general truth being described. 'Are' is plural; 'were' and 'have been' introduce unnecessary past tense."},
-  {"id":"SATE9_6","question":"A student is writing a research paper about the effectiveness of bilingual education programs.\n\nWhile critics argue that bilingual programs delay English acquisition, longitudinal studies by researchers such as Virginia Collier and Wayne Thomas demonstrate that students in well-implemented dual-language programs ultimately _______ their monolingual peers in both English proficiency and academic achievement.\n\nWhich choice completes the text with the most logical and precise word?","choices":{"A":"surpass","B":"approximate","C":"replicate","D":"undermine"},"answer":"A","difficulty":9,"explanation":"The sentence contrasts critics' claims with positive research findings. 'Surpass' logically indicates that bilingual students exceed their peers' performance, supporting the argument for bilingual education. 'Approximate' means only matching; 'replicate' means copying; 'undermine' contradicts the positive finding."},
-  {"id":"SATE9_7","question":"The Rosetta Stone, discovered in 1799 by French soldiers in Egypt, contained inscriptions in three scripts: hieroglyphic, Demotic, and Greek. Because scholars could read Greek, _______ were able to use the Greek text as a key to decipher the other two scripts.\n\nWhich choice completes the text so that it conforms to the conventions of Standard English?","choices":{"A":"he","B":"it","C":"one","D":"they"},"answer":"D","difficulty":9,"explanation":"The antecedent is 'scholars' (plural), requiring the plural pronoun 'they.' 'He' is singular and gendered; 'it' refers to things; 'one' is indefinite singular."},
-  {"id":"SATE9_8","question":"In her analysis of Frida Kahlo's self-portraits, art historian Hayden Herrera argues that Kahlo's unflinching depictions of physical suffering served a dual purpose: they were simultaneously acts of personal catharsis and _______ statements about the broader human condition.\n\nWhich choice completes the text with the most logical and precise word?","choices":{"A":"universal","B":"ambiguous","C":"superficial","D":"tentative"},"answer":"A","difficulty":9,"explanation":"The passage describes Kahlo's work as serving both personal and broader purposes. 'Universal' logically extends from personal catharsis to statements about the human condition at large. 'Ambiguous' implies unclear meaning; 'superficial' means shallow; 'tentative' means uncertain—all contradicting the 'unflinching' nature described."},
-  {"id":"SATE9_9","question":"The James Webb Space Telescope, _______ in December 2021, has provided astronomers with unprecedented infrared images of galaxies formed within the first few hundred million years after the Big Bang.\n\nWhich choice completes the text so that it conforms to the conventions of Standard English?","choices":{"A":"launched","B":"launching","C":"having launched","D":"was launched"},"answer":"A","difficulty":9,"explanation":"The phrase is a participial modifier set off by commas. 'Launched' functions as a past participle modifying 'telescope.' Choice B implies the telescope is doing the launching; C is awkward in this position; D would create a comma splice with two independent clauses."},
-  {"id":"SATE9_10","question":"Paleontologist Mary Anning's discoveries along England's Jurassic Coast in the early 19th century _______ our understanding of prehistoric life, yet she received little recognition during her lifetime because, as a woman from a working-class background, she was excluded from the scientific establishment.\n\nWhich choice completes the text so that it conforms to the conventions of Standard English?","choices":{"A":"was transforming","B":"transforms","C":"transformed","D":"has transformed"},"answer":"C","difficulty":10,"explanation":"The sentence discusses events in the early 19th century (completed past action) and uses the past tense 'received.' 'Transformed' (simple past) maintains parallel tense. 'Was transforming' implies ongoing past action; 'transforms' is present tense; 'has transformed' implies connection to present."},
-  {"id":"SATE9_11","question":"A student is writing an essay about the relationship between sleep and academic performance.\n\nDr. Matthew Walker's research at UC Berkeley has shown that students who consistently sleep fewer than six hours per night experience a 40% reduction in the brain's ability to form new memories. Furthermore, the prefrontal cortex—the region responsible for critical thinking and decision-making—shows significantly diminished activity in sleep-deprived individuals. _______, Walker advocates for later school start times to align with adolescents' natural circadian rhythms.\n\nWhich choice completes the text with the most logical transition?","choices":{"A":"Nevertheless","B":"In contrast","C":"Consequently","D":"Similarly"},"answer":"C","difficulty":9,"explanation":"The paragraph presents evidence (sleep deprivation harms cognition) followed by a recommendation (later school start times). 'Consequently' logically connects the evidence to the resulting advocacy. 'Nevertheless' and 'In contrast' signal opposition; 'Similarly' would introduce a parallel point, not a conclusion."},
-  {"id":"SATE9_12","question":"The passage below is from a history textbook discussing the Industrial Revolution.\n\nThe transition from agrarian economies to industrial ones fundamentally altered social structures across Europe. _______, the concentration of factories in urban areas drew millions of workers from rural communities, creating a new urban working class that would reshape the political landscape for centuries.\n\nWhich choice completes the text with the most logical transition?","choices":{"A":"By contrast","B":"In particular","C":"On the other hand","D":"Nevertheless"},"answer":"B","difficulty":9,"explanation":"The second sentence provides a specific example of how the transition 'altered social structures.' 'In particular' correctly introduces this specific illustration. 'By contrast' and 'On the other hand' signal opposition; 'Nevertheless' signals concession—none fit the exemplification relationship."},
-  {"id":"SATE9_13","question":"Quantum computing researcher Dr. Michelle Simmons has demonstrated that silicon-based qubits, _______ can maintain quantum states for significantly longer periods than competing technologies, may eventually enable the construction of practical, error-corrected quantum computers.\n\nWhich choice completes the text so that it conforms to the conventions of Standard English?","choices":{"A":"which","B":"that","C":"who","D":"whom"},"answer":"A","difficulty":9,"explanation":"The clause is nonrestrictive (set off by commas), requiring 'which' rather than 'that.' The antecedent is 'qubits' (things, not people), eliminating 'who' and 'whom.'"},
-  {"id":"SATE9_14","question":"The following text is from a student's literary analysis of F. Scott Fitzgerald's 'The Great Gatsby.'\n\nThe green light at the end of Daisy's dock serves as a multivalent symbol in the novel. On one level, it represents Gatsby's longing for Daisy; on another, it embodies the broader American Dream—the belief that the future promises _______ happiness than the present. The light's position across the water, perpetually visible yet unreachable, mirrors the fundamental paradox of aspiration itself.\n\nWhich choice completes the text with the most logical and precise word?","choices":{"A":"more","B":"greater","C":"further","D":"less"},"answer":"B","difficulty":10,"explanation":"In this context about the American Dream's promise, 'greater' precisely conveys the qualitative superiority of future happiness. 'More' works but is less precise for abstract qualities; 'further' relates to distance/extent; 'less' contradicts the optimistic framing."},
-  {"id":"SATE9_15","question":"Linguist Noam Chomsky's theory of universal grammar proposes that all human languages share an underlying structural framework. According to this theory, children do not learn language solely through imitation; rather, they are born with an innate capacity for language acquisition that _______ them to generate grammatically correct sentences they have never heard before.\n\nWhich choice completes the text with the most logical and precise word?","choices":{"A":"enables","B":"requires","C":"forbids","D":"challenges"},"answer":"A","difficulty":9,"explanation":"The sentence describes an innate capacity that gives children the ability to generate new sentences. 'Enables' precisely means 'gives the ability to.' 'Requires' implies obligation; 'forbids' means prevents; 'challenges' implies difficulty—all contradict the concept of innate capacity."},
-  {"id":"SATE9_16","question":"In the remote forests of Borneo, primatologist Birutė Galdikas spent over five decades studying orangutans in their natural habitat. Her research revealed that these great apes possess cognitive abilities far more sophisticated than previously believed: they use tools, construct elaborate sleeping nests each night, and _______ complex social hierarchies within their communities.\n\nWhich choice completes the text so that it conforms to the conventions of Standard English?","choices":{"A":"maintains","B":"maintain","C":"maintaining","D":"has maintained"},"answer":"B","difficulty":9,"explanation":"The verb must be parallel with 'use' and 'construct' (both base form, plural). 'Maintain' continues this pattern. 'Maintains' is singular; 'maintaining' breaks parallelism; 'has maintained' is singular and changes tense."},
-  {"id":"SATE9_17","question":"A student is writing a comparative essay about two approaches to urban planning.\n\nWhile Barcelona's superblocks initiative restricts vehicle traffic in residential areas to create pedestrian-friendly zones, Singapore's approach _______ on a comprehensive public transit network designed to reduce the need for private cars altogether.\n\nWhich choice completes the text with the most logical and precise word?","choices":{"A":"focuses","B":"insists","C":"reflects","D":"depends"},"answer":"A","difficulty":9,"explanation":"The sentence compares two urban planning strategies. 'Focuses' correctly indicates Singapore's approach centers on public transit. 'Insists' requires 'on' but means demanding, not centering; 'reflects' means mirrors; 'depends' implies reliance rather than strategic focus."},
-  {"id":"SATE9_18","question":"The following is from a scientific article about CRISPR gene editing technology.\n\nResearchers at the Broad Institute have used CRISPR-Cas9 to correct the genetic mutation responsible for sickle cell disease in patient-derived stem cells. These corrected cells, when reintroduced into the patient's body, _______ normal hemoglobin and effectively eliminated the symptoms of the disease in early clinical trials.\n\nWhich choice completes the text so that it conforms to the conventions of Standard English?","choices":{"A":"produces","B":"have produced","C":"produced","D":"producing"},"answer":"C","difficulty":9,"explanation":"The sentence describes completed actions in clinical trials (past). 'Produced' matches the past tense of 'eliminated.' 'Produces' is present singular; 'have produced' would need present context; 'producing' creates a fragment."},
-  {"id":"SATE9_19","question":"Architectural historian Witold Rybczynski argues that the concept of 'comfort' in domestic architecture is not universal but rather culturally and historically contingent. What 17th-century Dutch homeowners considered comfortable—small rooms, heavy curtains, dim lighting—would strike many modern Americans as _______ and oppressive.\n\nWhich choice completes the text with the most logical and precise word?","choices":{"A":"claustrophobic","B":"sophisticated","C":"extravagant","D":"innovative"},"answer":"A","difficulty":10,"explanation":"The description of 'small rooms, heavy curtains, dim lighting' contrasted with modern American preferences logically leads to 'claustrophobic' (feeling confined). 'Sophisticated,' 'extravagant,' and 'innovative' are positive descriptors that contradict the negative 'oppressive' paired with the blank."},
-  {"id":"SATE9_20","question":"Neuroscientist Antonio Damasio's somatic marker hypothesis suggests that emotions play a crucial role in rational decision-making. According to Damasio, when _______ a complex choice, the brain unconsciously generates bodily sensations—'gut feelings'—that guide reasoning by associating options with past emotional experiences.\n\nWhich choice completes the text so that it conforms to the conventions of Standard English?","choices":{"A":"having faced","B":"to face","C":"facing","D":"faced"},"answer":"C","difficulty":9,"explanation":"The participial phrase modifies the implicit subject 'the brain' in a temporal sense. 'Facing' (present participle) correctly indicates simultaneous action. 'Having faced' implies prior completion; 'to face' is an infinitive; 'faced' without 'when' would create ambiguity."},
-  {"id":"SATE9_21","question":"A passage from a student's essay on environmental policy:\n\nThe Paris Agreement set ambitious targets for reducing greenhouse gas emissions. However, many climate scientists contend that even if all signatory nations meet their stated goals, global temperatures will still rise above the 1.5°C threshold. _______, some researchers advocate for supplementary approaches, such as carbon capture technology and reforestation initiatives, to bridge the gap between current commitments and necessary reductions.\n\nWhich choice completes the text with the most logical transition?","choices":{"A":"For this reason","B":"In other words","C":"By comparison","D":"On the contrary"},"answer":"A","difficulty":9,"explanation":"The passage presents a problem (targets insufficient) then a response (supplementary approaches). 'For this reason' logically connects the insufficiency to the advocacy for additional measures. 'In other words' restates; 'By comparison' contrasts; 'On the contrary' contradicts."},
-  {"id":"SATE9_22","question":"The archaeologists' discovery of a 4,000-year-old bronze workshop in central China _______ that metallurgical technology in the region was more advanced during the early Shang dynasty than historians had previously estimated.\n\nWhich choice completes the text so that it conforms to the conventions of Standard English?","choices":{"A":"suggest","B":"suggests","C":"are suggesting","D":"have suggested"},"answer":"B","difficulty":9,"explanation":"The subject is 'discovery' (singular), requiring the singular verb 'suggests.' Don't be confused by the intervening prepositional phrases. 'Suggest,' 'are suggesting,' and 'have suggested' are all plural forms."},
-  {"id":"SATE9_23","question":"In his seminal work 'Sapiens,' historian Yuval Noah Harari posits that the Cognitive Revolution—which occurred approximately 70,000 years ago—endowed Homo sapiens with the unique ability to create and believe in shared fictions. These fictions, _______ religious myths, national identities, and economic systems, enabled large-scale cooperation among strangers.\n\nWhich choice completes the text so that it conforms to the conventions of Standard English?","choices":{"A":"including","B":"included","C":"includes","D":"to include"},"answer":"A","difficulty":9,"explanation":"The word introduces examples within a participial phrase modifying 'fictions.' 'Including' is the correct present participle. 'Included' would need 'which' before it; 'includes' would create a run-on; 'to include' is an infinitive that doesn't fit."},
-  {"id":"SATE9_24","question":"Poet Amanda Gorman's inauguration poem 'The Hill We Climb' drew on a rich tradition of occasional poetry—verse composed for specific public events. Like Maya Angelou's 'On the Pulse of Morning' before _______, Gorman's poem used vivid imagery and rhetorical repetition to call for national unity.\n\nWhich choice completes the text so that it conforms to the conventions of Standard English?","choices":{"A":"them","B":"her","C":"it","D":"hers"},"answer":"C","difficulty":10,"explanation":"The pronoun refers to Gorman's poem (singular, neuter). 'It' correctly replaces 'poem.' 'Them' is plural; 'her' refers to a person; 'hers' is possessive."},
-  {"id":"SATE9_25","question":"Despite its reputation as a barren wasteland, the Atacama Desert in Chile supports a surprising diversity of microbial life. Extremophile bacteria, _______ thrive in conditions that would kill most organisms, have been found in the desert's hypersaline soils, drawing comparisons to the search for life on Mars.\n\nWhich choice completes the text so that it conforms to the conventions of Standard English?","choices":{"A":"who","B":"which","C":"that","D":"whom"},"answer":"B","difficulty":9,"explanation":"The clause is nonrestrictive (set off by commas) and modifies 'bacteria' (non-human). 'Which' is correct for nonrestrictive clauses about things. 'Who/whom' are for people; 'that' cannot introduce nonrestrictive clauses."},
-  {"id":"SATE9_26","question":"A student is writing about the history of cryptography.\n\nDuring World War II, the Enigma machine used by German military forces was considered unbreakable. The device generated an astronomical number of possible encryption combinations—approximately 159 million million million. _______, a team of mathematicians and engineers at Bletchley Park, led by Alan Turing, developed techniques that allowed the Allies to decrypt many of Germany's secret communications.\n\nWhich choice completes the text with the most logical transition?","choices":{"A":"Moreover","B":"Nonetheless","C":"Specifically","D":"Accordingly"},"answer":"B","difficulty":9,"explanation":"The passage describes the Enigma as 'unbreakable' with astronomical complexity, then reveals it was broken. 'Nonetheless' correctly signals this concessive relationship (despite the difficulty, they succeeded). 'Moreover' adds information; 'Specifically' gives detail; 'Accordingly' shows consequence."},
-  {"id":"SATE9_27","question":"Sociologist William Julius Wilson's research on concentrated poverty in American cities demonstrates that neighborhood effects—the social and economic conditions of a community—exert powerful influences on individual outcomes. Children raised in areas of concentrated disadvantage, regardless of their families' personal characteristics, _______ to have lower educational attainment and earnings in adulthood.\n\nWhich choice completes the text with the most logical and precise word?","choices":{"A":"tend","B":"refuse","C":"aspire","D":"pretend"},"answer":"A","difficulty":9,"explanation":"The research finding describes a statistical pattern. 'Tend' correctly indicates a general tendency in outcomes. 'Refuse' implies active choice; 'aspire' means to aim for; 'pretend' means to fake—none describe research findings about neighborhood effects."},
-  {"id":"SATE9_28","question":"The exhibit at the Smithsonian National Museum of African American History _______ dozens of artifacts from the civil rights era, including the original Woolworth's lunch counter from the 1960 Greensboro sit-ins.\n\nWhich choice completes the text so that it conforms to the conventions of Standard English?","choices":{"A":"feature","B":"features","C":"are featuring","D":"have featured"},"answer":"B","difficulty":9,"explanation":"The subject is 'exhibit' (singular), requiring the singular verb 'features.' 'Feature' is plural; 'are featuring' is plural progressive; 'have featured' is plural perfect."},
-  {"id":"SATE9_29","question":"In 'Silent Spring,' Rachel Carson warned that the indiscriminate use of pesticides such as DDT was decimating bird populations. Her argument _______ not merely on emotional appeals but on rigorous scientific evidence gathered over years of meticulous research.\n\nWhich choice completes the text so that it conforms to the conventions of Standard English?","choices":{"A":"rested","B":"rests","C":"resting","D":"rest"},"answer":"A","difficulty":9,"explanation":"The sentence describes Carson's historical argument (past tense context: 'warned,' 'was decimating'). 'Rested' maintains the past tense. 'Rests' is present; 'resting' creates a fragment; 'rest' is plural present."},
-  {"id":"SATE9_30","question":"Mathematician Maryam Mirzakhani, the first woman to win the Fields Medal, studied the geometry of curved surfaces known as Riemann surfaces. Her work showed that certain properties of these surfaces could be understood by analyzing _______ dynamics—how imaginary billiard balls would bounce within them.\n\nWhich choice completes the text so that it conforms to the conventions of Standard English?","choices":{"A":"they're","B":"its","C":"their","D":"there"},"answer":"C","difficulty":9,"explanation":"The possessive pronoun refers to 'surfaces' (plural). 'Their' is the correct plural possessive. 'Its' is singular; 'they're' means 'they are'; 'there' indicates location."}
+  {
+    "id": "SATE9_1",
+    "question": "The marine biologist noted that the coral reef, which had been bleached by rising ocean temperatures, _______ signs of recovery after two consecutive years of cooler water.\n\nWhich choice completes the text so that it conforms to the conventions of Standard English?",
+    "choices": {
+      "A": "are showing",
+      "B": "were showing",
+      "C": "was showing",
+      "D": "have been showing"
+    },
+    "answer": "C",
+    "difficulty": 9,
+    "explanation": "The subject is 'coral reef' (singular), so the verb must be singular. The past-tense context ('had been bleached,' 'noted') requires 'was showing.' Choice A uses plural present; B uses plural past; D uses plural present perfect."
+  },
+  {
+    "id": "SATE9_2",
+    "question": "In a 2024 study of urban heat islands, researchers found that neighborhoods with extensive tree canopy coverage experienced peak summer temperatures that were, on average, 4.2°F lower than _______ of comparable neighborhoods without significant vegetation.\n\nWhich choice completes the text so that it conforms to the conventions of Standard English?",
+    "choices": {
+      "A": "that",
+      "B": "this",
+      "C": "those",
+      "D": "these"
+    },
+    "answer": "C",
+    "difficulty": 9,
+    "explanation": "The pronoun must replace 'temperatures' (plural) in a comparison. 'Those' is the correct demonstrative pronoun for a plural antecedent in a comparison. 'That' is singular; 'this' and 'these' don't fit comparison structures."
+  },
+  {
+    "id": "SATE9_3",
+    "question": "The following passage is adapted from a literary analysis of Toni Morrison's 'Beloved.'\n\nMorrison's narrative technique in 'Beloved' is characterized by temporal fragmentation—the story shifts between past and present without conventional transitions. This approach _______ readers to piece together the traumatic history that the characters themselves struggle to articulate.\n\nWhich choice completes the text with the most logical transition?",
+    "choices": {
+      "A": "compels",
+      "B": "allows",
+      "C": "prevents",
+      "D": "discourages"
+    },
+    "answer": "A",
+    "difficulty": 9,
+    "explanation": "The context describes fragmentation as a deliberate artistic choice that forces engagement. 'Compels' captures the imperative nature of the technique—readers must actively reconstruct the narrative. 'Allows' is too passive; 'prevents' and 'discourages' contradict the passage's meaning."
+  },
+  {
+    "id": "SATE9_4",
+    "question": "Economist Raj Chetty's research team analyzed millions of tax records to study intergenerational economic mobility. _______ findings revealed that a child's chances of rising from the bottom income quintile to the top quintile varied dramatically by geographic location, ranging from 4.4% in some cities to 12.9% in others.\n\nWhich choice completes the text so that it conforms to the conventions of Standard English?",
+    "choices": {
+      "A": "They're",
+      "B": "Its",
+      "C": "Their",
+      "D": "There"
+    },
+    "answer": "C",
+    "difficulty": 9,
+    "explanation": "The possessive pronoun refers to 'Raj Chetty's research team' (plural entity). 'Their' is the correct possessive. 'Its' would be used for a singular entity; 'They're' means 'they are'; 'There' indicates location."
+  },
+  {
+    "id": "SATE9_5",
+    "question": "While investigating the migration patterns of Arctic terns, ornithologist Dr. Sarah Chen discovered that the birds' route from the Arctic to Antarctica _______ not a direct path but rather an S-shaped curve that takes advantage of prevailing wind patterns.\n\nWhich choice completes the text so that it conforms to the conventions of Standard English?",
+    "choices": {
+      "A": "are",
+      "B": "is",
+      "C": "were",
+      "D": "have been"
+    },
+    "answer": "B",
+    "difficulty": 9,
+    "explanation": "The subject is 'route' (singular), requiring a singular verb. The present tense 'is' matches the general truth being described. 'Are' is plural; 'were' and 'have been' introduce unnecessary past tense."
+  },
+  {
+    "id": "SATE9_6",
+    "question": "A student is writing a research paper about the effectiveness of bilingual education programs.\n\nWhile critics argue that bilingual programs delay English acquisition, longitudinal studies by researchers such as Virginia Collier and Wayne Thomas demonstrate that students in well-implemented dual-language programs ultimately _______ their monolingual peers in both English proficiency and academic achievement.\n\nWhich choice completes the text with the most logical and precise word?",
+    "choices": {
+      "A": "undermine",
+      "B": "approximate",
+      "C": "replicate",
+      "D": "surpass"
+    },
+    "answer": "D",
+    "difficulty": 9,
+    "explanation": "The sentence contrasts critics' claims with positive research findings. 'Surpass' logically indicates that bilingual students exceed their peers' performance, supporting the argument for bilingual education. 'Approximate' means only matching; 'replicate' means copying; 'undermine' contradicts the positive finding."
+  },
+  {
+    "id": "SATE9_7",
+    "question": "The Rosetta Stone, discovered in 1799 by French soldiers in Egypt, contained inscriptions in three scripts: hieroglyphic, Demotic, and Greek. Because scholars could read Greek, _______ were able to use the Greek text as a key to decipher the other two scripts.\n\nWhich choice completes the text so that it conforms to the conventions of Standard English?",
+    "choices": {
+      "A": "he",
+      "B": "it",
+      "C": "one",
+      "D": "they"
+    },
+    "answer": "D",
+    "difficulty": 9,
+    "explanation": "The antecedent is 'scholars' (plural), requiring the plural pronoun 'they.' 'He' is singular and gendered; 'it' refers to things; 'one' is indefinite singular."
+  },
+  {
+    "id": "SATE9_8",
+    "question": "In her analysis of Frida Kahlo's self-portraits, art historian Hayden Herrera argues that Kahlo's unflinching depictions of physical suffering served a dual purpose: they were simultaneously acts of personal catharsis and _______ statements about the broader human condition.\n\nWhich choice completes the text with the most logical and precise word?",
+    "choices": {
+      "A": "tentative",
+      "B": "ambiguous",
+      "C": "superficial",
+      "D": "universal"
+    },
+    "answer": "D",
+    "difficulty": 9,
+    "explanation": "The passage describes Kahlo's work as serving both personal and broader purposes. 'Universal' logically extends from personal catharsis to statements about the human condition at large. 'Ambiguous' implies unclear meaning; 'superficial' means shallow; 'tentative' means uncertain—all contradicting the 'unflinching' nature described."
+  },
+  {
+    "id": "SATE9_9",
+    "question": "The James Webb Space Telescope, _______ in December 2021, has provided astronomers with unprecedented infrared images of galaxies formed within the first few hundred million years after the Big Bang.\n\nWhich choice completes the text so that it conforms to the conventions of Standard English?",
+    "choices": {
+      "A": "launched",
+      "B": "launching",
+      "C": "having launched",
+      "D": "was launched"
+    },
+    "answer": "A",
+    "difficulty": 9,
+    "explanation": "The phrase is a participial modifier set off by commas. 'Launched' functions as a past participle modifying 'telescope.' Choice B implies the telescope is doing the launching; C is awkward in this position; D would create a comma splice with two independent clauses."
+  },
+  {
+    "id": "SATE9_10",
+    "question": "Paleontologist Mary Anning's discoveries along England's Jurassic Coast in the early 19th century _______ our understanding of prehistoric life, yet she received little recognition during her lifetime because, as a woman from a working-class background, she was excluded from the scientific establishment.\n\nWhich choice completes the text so that it conforms to the conventions of Standard English?",
+    "choices": {
+      "A": "was transforming",
+      "B": "transforms",
+      "C": "transformed",
+      "D": "has transformed"
+    },
+    "answer": "C",
+    "difficulty": 10,
+    "explanation": "The sentence discusses events in the early 19th century (completed past action) and uses the past tense 'received.' 'Transformed' (simple past) maintains parallel tense. 'Was transforming' implies ongoing past action; 'transforms' is present tense; 'has transformed' implies connection to present."
+  },
+  {
+    "id": "SATE9_11",
+    "question": "A student is writing an essay about the relationship between sleep and academic performance.\n\nDr. Matthew Walker's research at UC Berkeley has shown that students who consistently sleep fewer than six hours per night experience a 40% reduction in the brain's ability to form new memories. Furthermore, the prefrontal cortex—the region responsible for critical thinking and decision-making—shows significantly diminished activity in sleep-deprived individuals. _______, Walker advocates for later school start times to align with adolescents' natural circadian rhythms.\n\nWhich choice completes the text with the most logical transition?",
+    "choices": {
+      "A": "Nevertheless",
+      "B": "In contrast",
+      "C": "Similarly",
+      "D": "Consequently"
+    },
+    "answer": "D",
+    "difficulty": 9,
+    "explanation": "The paragraph presents evidence (sleep deprivation harms cognition) followed by a recommendation (later school start times). 'Consequently' logically connects the evidence to the resulting advocacy. 'Nevertheless' and 'In contrast' signal opposition; 'Similarly' would introduce a parallel point, not a conclusion."
+  },
+  {
+    "id": "SATE9_12",
+    "question": "The passage below is from a history textbook discussing the Industrial Revolution.\n\nThe transition from agrarian economies to industrial ones fundamentally altered social structures across Europe. _______, the concentration of factories in urban areas drew millions of workers from rural communities, creating a new urban working class that would reshape the political landscape for centuries.\n\nWhich choice completes the text with the most logical transition?",
+    "choices": {
+      "A": "By contrast",
+      "B": "In particular",
+      "C": "On the other hand",
+      "D": "Nevertheless"
+    },
+    "answer": "B",
+    "difficulty": 9,
+    "explanation": "The second sentence provides a specific example of how the transition 'altered social structures.' 'In particular' correctly introduces this specific illustration. 'By contrast' and 'On the other hand' signal opposition; 'Nevertheless' signals concession—none fit the exemplification relationship."
+  },
+  {
+    "id": "SATE9_13",
+    "question": "Quantum computing researcher Dr. Michelle Simmons has demonstrated that silicon-based qubits, _______ can maintain quantum states for significantly longer periods than competing technologies, may eventually enable the construction of practical, error-corrected quantum computers.\n\nWhich choice completes the text so that it conforms to the conventions of Standard English?",
+    "choices": {
+      "A": "which",
+      "B": "that",
+      "C": "who",
+      "D": "whom"
+    },
+    "answer": "A",
+    "difficulty": 9,
+    "explanation": "The clause is nonrestrictive (set off by commas), requiring 'which' rather than 'that.' The antecedent is 'qubits' (things, not people), eliminating 'who' and 'whom.'"
+  },
+  {
+    "id": "SATE9_14",
+    "question": "The following text is from a student's literary analysis of F. Scott Fitzgerald's 'The Great Gatsby.'\n\nThe green light at the end of Daisy's dock serves as a multivalent symbol in the novel. On one level, it represents Gatsby's longing for Daisy; on another, it embodies the broader American Dream—the belief that the future promises _______ happiness than the present. The light's position across the water, perpetually visible yet unreachable, mirrors the fundamental paradox of aspiration itself.\n\nWhich choice completes the text with the most logical and precise word?",
+    "choices": {
+      "A": "more",
+      "B": "greater",
+      "C": "further",
+      "D": "less"
+    },
+    "answer": "B",
+    "difficulty": 10,
+    "explanation": "In this context about the American Dream's promise, 'greater' precisely conveys the qualitative superiority of future happiness. 'More' works but is less precise for abstract qualities; 'further' relates to distance/extent; 'less' contradicts the optimistic framing."
+  },
+  {
+    "id": "SATE9_15",
+    "question": "Linguist Noam Chomsky's theory of universal grammar proposes that all human languages share an underlying structural framework. According to this theory, children do not learn language solely through imitation; rather, they are born with an innate capacity for language acquisition that _______ them to generate grammatically correct sentences they have never heard before.\n\nWhich choice completes the text with the most logical and precise word?",
+    "choices": {
+      "A": "enables",
+      "B": "requires",
+      "C": "forbids",
+      "D": "challenges"
+    },
+    "answer": "A",
+    "difficulty": 9,
+    "explanation": "The sentence describes an innate capacity that gives children the ability to generate new sentences. 'Enables' precisely means 'gives the ability to.' 'Requires' implies obligation; 'forbids' means prevents; 'challenges' implies difficulty—all contradict the concept of innate capacity."
+  },
+  {
+    "id": "SATE9_16",
+    "question": "In the remote forests of Borneo, primatologist Birutė Galdikas spent over five decades studying orangutans in their natural habitat. Her research revealed that these great apes possess cognitive abilities far more sophisticated than previously believed: they use tools, construct elaborate sleeping nests each night, and _______ complex social hierarchies within their communities.\n\nWhich choice completes the text so that it conforms to the conventions of Standard English?",
+    "choices": {
+      "A": "maintains",
+      "B": "maintain",
+      "C": "maintaining",
+      "D": "has maintained"
+    },
+    "answer": "B",
+    "difficulty": 9,
+    "explanation": "The verb must be parallel with 'use' and 'construct' (both base form, plural). 'Maintain' continues this pattern. 'Maintains' is singular; 'maintaining' breaks parallelism; 'has maintained' is singular and changes tense."
+  },
+  {
+    "id": "SATE9_17",
+    "question": "A student is writing a comparative essay about two approaches to urban planning.\n\nWhile Barcelona's superblocks initiative restricts vehicle traffic in residential areas to create pedestrian-friendly zones, Singapore's approach _______ on a comprehensive public transit network designed to reduce the need for private cars altogether.\n\nWhich choice completes the text with the most logical and precise word?",
+    "choices": {
+      "A": "focuses",
+      "B": "insists",
+      "C": "reflects",
+      "D": "depends"
+    },
+    "answer": "A",
+    "difficulty": 9,
+    "explanation": "The sentence compares two urban planning strategies. 'Focuses' correctly indicates Singapore's approach centers on public transit. 'Insists' requires 'on' but means demanding, not centering; 'reflects' means mirrors; 'depends' implies reliance rather than strategic focus."
+  },
+  {
+    "id": "SATE9_18",
+    "question": "The following is from a scientific article about CRISPR gene editing technology.\n\nResearchers at the Broad Institute have used CRISPR-Cas9 to correct the genetic mutation responsible for sickle cell disease in patient-derived stem cells. These corrected cells, when reintroduced into the patient's body, _______ normal hemoglobin and effectively eliminated the symptoms of the disease in early clinical trials.\n\nWhich choice completes the text so that it conforms to the conventions of Standard English?",
+    "choices": {
+      "A": "produces",
+      "B": "have produced",
+      "C": "produced",
+      "D": "producing"
+    },
+    "answer": "C",
+    "difficulty": 9,
+    "explanation": "The sentence describes completed actions in clinical trials (past). 'Produced' matches the past tense of 'eliminated.' 'Produces' is present singular; 'have produced' would need present context; 'producing' creates a fragment."
+  },
+  {
+    "id": "SATE9_19",
+    "question": "Architectural historian Witold Rybczynski argues that the concept of 'comfort' in domestic architecture is not universal but rather culturally and historically contingent. What 17th-century Dutch homeowners considered comfortable—small rooms, heavy curtains, dim lighting—would strike many modern Americans as _______ and oppressive.\n\nWhich choice completes the text with the most logical and precise word?",
+    "choices": {
+      "A": "innovative",
+      "B": "sophisticated",
+      "C": "extravagant",
+      "D": "claustrophobic"
+    },
+    "answer": "D",
+    "difficulty": 10,
+    "explanation": "The description of 'small rooms, heavy curtains, dim lighting' contrasted with modern American preferences logically leads to 'claustrophobic' (feeling confined). 'Sophisticated,' 'extravagant,' and 'innovative' are positive descriptors that contradict the negative 'oppressive' paired with the blank."
+  },
+  {
+    "id": "SATE9_20",
+    "question": "Neuroscientist Antonio Damasio's somatic marker hypothesis suggests that emotions play a crucial role in rational decision-making. According to Damasio, when _______ a complex choice, the brain unconsciously generates bodily sensations—'gut feelings'—that guide reasoning by associating options with past emotional experiences.\n\nWhich choice completes the text so that it conforms to the conventions of Standard English?",
+    "choices": {
+      "A": "having faced",
+      "B": "to face",
+      "C": "facing",
+      "D": "faced"
+    },
+    "answer": "C",
+    "difficulty": 9,
+    "explanation": "The participial phrase modifies the implicit subject 'the brain' in a temporal sense. 'Facing' (present participle) correctly indicates simultaneous action. 'Having faced' implies prior completion; 'to face' is an infinitive; 'faced' without 'when' would create ambiguity."
+  },
+  {
+    "id": "SATE9_21",
+    "question": "A passage from a student's essay on environmental policy:\n\nThe Paris Agreement set ambitious targets for reducing greenhouse gas emissions. However, many climate scientists contend that even if all signatory nations meet their stated goals, global temperatures will still rise above the 1.5°C threshold. _______, some researchers advocate for supplementary approaches, such as carbon capture technology and reforestation initiatives, to bridge the gap between current commitments and necessary reductions.\n\nWhich choice completes the text with the most logical transition?",
+    "choices": {
+      "A": "For this reason",
+      "B": "In other words",
+      "C": "By comparison",
+      "D": "On the contrary"
+    },
+    "answer": "A",
+    "difficulty": 9,
+    "explanation": "The passage presents a problem (targets insufficient) then a response (supplementary approaches). 'For this reason' logically connects the insufficiency to the advocacy for additional measures. 'In other words' restates; 'By comparison' contrasts; 'On the contrary' contradicts."
+  },
+  {
+    "id": "SATE9_22",
+    "question": "The archaeologists' discovery of a 4,000-year-old bronze workshop in central China _______ that metallurgical technology in the region was more advanced during the early Shang dynasty than historians had previously estimated.\n\nWhich choice completes the text so that it conforms to the conventions of Standard English?",
+    "choices": {
+      "A": "suggest",
+      "B": "suggests",
+      "C": "are suggesting",
+      "D": "have suggested"
+    },
+    "answer": "B",
+    "difficulty": 9,
+    "explanation": "The subject is 'discovery' (singular), requiring the singular verb 'suggests.' Don't be confused by the intervening prepositional phrases. 'Suggest,' 'are suggesting,' and 'have suggested' are all plural forms."
+  },
+  {
+    "id": "SATE9_23",
+    "question": "In his seminal work 'Sapiens,' historian Yuval Noah Harari posits that the Cognitive Revolution—which occurred approximately 70,000 years ago—endowed Homo sapiens with the unique ability to create and believe in shared fictions. These fictions, _______ religious myths, national identities, and economic systems, enabled large-scale cooperation among strangers.\n\nWhich choice completes the text so that it conforms to the conventions of Standard English?",
+    "choices": {
+      "A": "including",
+      "B": "included",
+      "C": "includes",
+      "D": "to include"
+    },
+    "answer": "A",
+    "difficulty": 9,
+    "explanation": "The word introduces examples within a participial phrase modifying 'fictions.' 'Including' is the correct present participle. 'Included' would need 'which' before it; 'includes' would create a run-on; 'to include' is an infinitive that doesn't fit."
+  },
+  {
+    "id": "SATE9_24",
+    "question": "Poet Amanda Gorman's inauguration poem 'The Hill We Climb' drew on a rich tradition of occasional poetry—verse composed for specific public events. Like Maya Angelou's 'On the Pulse of Morning' before _______, Gorman's poem used vivid imagery and rhetorical repetition to call for national unity.\n\nWhich choice completes the text so that it conforms to the conventions of Standard English?",
+    "choices": {
+      "A": "them",
+      "B": "her",
+      "C": "it",
+      "D": "hers"
+    },
+    "answer": "C",
+    "difficulty": 10,
+    "explanation": "The pronoun refers to Gorman's poem (singular, neuter). 'It' correctly replaces 'poem.' 'Them' is plural; 'her' refers to a person; 'hers' is possessive."
+  },
+  {
+    "id": "SATE9_25",
+    "question": "Despite its reputation as a barren wasteland, the Atacama Desert in Chile supports a surprising diversity of microbial life. Extremophile bacteria, _______ thrive in conditions that would kill most organisms, have been found in the desert's hypersaline soils, drawing comparisons to the search for life on Mars.\n\nWhich choice completes the text so that it conforms to the conventions of Standard English?",
+    "choices": {
+      "A": "who",
+      "B": "which",
+      "C": "that",
+      "D": "whom"
+    },
+    "answer": "B",
+    "difficulty": 9,
+    "explanation": "The clause is nonrestrictive (set off by commas) and modifies 'bacteria' (non-human). 'Which' is correct for nonrestrictive clauses about things. 'Who/whom' are for people; 'that' cannot introduce nonrestrictive clauses."
+  },
+  {
+    "id": "SATE9_26",
+    "question": "A student is writing about the history of cryptography.\n\nDuring World War II, the Enigma machine used by German military forces was considered unbreakable. The device generated an astronomical number of possible encryption combinations—approximately 159 million million million. _______, a team of mathematicians and engineers at Bletchley Park, led by Alan Turing, developed techniques that allowed the Allies to decrypt many of Germany's secret communications.\n\nWhich choice completes the text with the most logical transition?",
+    "choices": {
+      "A": "Moreover",
+      "B": "Nonetheless",
+      "C": "Specifically",
+      "D": "Accordingly"
+    },
+    "answer": "B",
+    "difficulty": 9,
+    "explanation": "The passage describes the Enigma as 'unbreakable' with astronomical complexity, then reveals it was broken. 'Nonetheless' correctly signals this concessive relationship (despite the difficulty, they succeeded). 'Moreover' adds information; 'Specifically' gives detail; 'Accordingly' shows consequence."
+  },
+  {
+    "id": "SATE9_27",
+    "question": "Sociologist William Julius Wilson's research on concentrated poverty in American cities demonstrates that neighborhood effects—the social and economic conditions of a community—exert powerful influences on individual outcomes. Children raised in areas of concentrated disadvantage, regardless of their families' personal characteristics, _______ to have lower educational attainment and earnings in adulthood.\n\nWhich choice completes the text with the most logical and precise word?",
+    "choices": {
+      "A": "tend",
+      "B": "refuse",
+      "C": "aspire",
+      "D": "pretend"
+    },
+    "answer": "A",
+    "difficulty": 9,
+    "explanation": "The research finding describes a statistical pattern. 'Tend' correctly indicates a general tendency in outcomes. 'Refuse' implies active choice; 'aspire' means to aim for; 'pretend' means to fake—none describe research findings about neighborhood effects."
+  },
+  {
+    "id": "SATE9_28",
+    "question": "The exhibit at the Smithsonian National Museum of African American History _______ dozens of artifacts from the civil rights era, including the original Woolworth's lunch counter from the 1960 Greensboro sit-ins.\n\nWhich choice completes the text so that it conforms to the conventions of Standard English?",
+    "choices": {
+      "A": "feature",
+      "B": "features",
+      "C": "are featuring",
+      "D": "have featured"
+    },
+    "answer": "B",
+    "difficulty": 9,
+    "explanation": "The subject is 'exhibit' (singular), requiring the singular verb 'features.' 'Feature' is plural; 'are featuring' is plural progressive; 'have featured' is plural perfect."
+  },
+  {
+    "id": "SATE9_29",
+    "question": "In 'Silent Spring,' Rachel Carson warned that the indiscriminate use of pesticides such as DDT was decimating bird populations. Her argument _______ not merely on emotional appeals but on rigorous scientific evidence gathered over years of meticulous research.\n\nWhich choice completes the text so that it conforms to the conventions of Standard English?",
+    "choices": {
+      "A": "rest",
+      "B": "rests",
+      "C": "resting",
+      "D": "rested"
+    },
+    "answer": "D",
+    "difficulty": 9,
+    "explanation": "The sentence describes Carson's historical argument (past tense context: 'warned,' 'was decimating'). 'Rested' maintains the past tense. 'Rests' is present; 'resting' creates a fragment; 'rest' is plural present."
+  },
+  {
+    "id": "SATE9_30",
+    "question": "Mathematician Maryam Mirzakhani, the first woman to win the Fields Medal, studied the geometry of curved surfaces known as Riemann surfaces. Her work showed that certain properties of these surfaces could be understood by analyzing _______ dynamics—how imaginary billiard balls would bounce within them.\n\nWhich choice completes the text so that it conforms to the conventions of Standard English?",
+    "choices": {
+      "A": "they're",
+      "B": "its",
+      "C": "their",
+      "D": "there"
+    },
+    "answer": "C",
+    "difficulty": 9,
+    "explanation": "The possessive pronoun refers to 'surfaces' (plural). 'Their' is the correct plural possessive. 'Its' is singular; 'they're' means 'they are'; 'there' indicates location."
+  }
 ]

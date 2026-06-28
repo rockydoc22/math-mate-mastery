@@ -1,27 +1,27 @@
 [
   {
-    "id": "AP_French_1",
-    "question": "Si j'_______ assez d'argent, j'achèterais une maison.",
+    "id": "AP_French_293",
+    "question": "Complétez : 'Il faut que nous ______ (partir) maintenant.'",
     "choices": {
-      "A": "avais",
-      "B": "aurais",
-      "C": "ai",
-      "D": "aie"
+      "A": "partons",
+      "B": "partîmes",
+      "C": "partions",
+      "D": "partions"
     },
-    "answer": "A",
+    "answer": "D",
     "difficulty": 7,
-    "explanation": "Si + imparfait, conditionnel présent. 'Avais' is correct after 'si.'"
+    "explanation": "Après 'Il faut que', on utilise le subjonctif présent. Le subjonctif présent de 'partir' est 'partions'."
   },
   {
     "id": "AP_French_2",
     "question": "Combien de touristes visitent la France chaque année?",
     "choices": {
       "A": "50 millions",
-      "B": "90 millions",
+      "B": "70 millions",
       "C": "120 millions",
-      "D": "70 millions"
+      "D": "90 millions"
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 5,
     "explanation": "France receives approximately 90 million tourists per year."
   },
@@ -82,11 +82,11 @@
     "question": "Pierre dit 'Je ne sais pas encore. Ça dépend.' Est-il sûr?",
     "choices": {
       "A": "Oui",
-      "B": "Non",
+      "B": "Il n'a pas compris",
       "C": "Il a refusé",
-      "D": "Il n'a pas compris"
+      "D": "Non"
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 5,
     "explanation": "'Je ne sais pas encore' and 'Ça dépend' express uncertainty."
   },
@@ -225,11 +225,11 @@
     "question": "'Métro-boulot-dodo' signifie:",
     "choices": {
       "A": "Un type de nourriture",
-      "B": "La routine quotidienne monotone",
+      "B": "Un quartier de Paris",
       "C": "Un jeu",
-      "D": "Un quartier de Paris"
+      "D": "La routine quotidienne monotone"
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 6,
     "explanation": "Subway-work-sleep: describing monotonous daily routine."
   },
@@ -273,6 +273,19 @@
     "explanation": "Le passé composé est utilisé pour les actions passées terminées et ponctuelles."
   },
   {
+    "id": "AP_French_1",
+    "question": "Si j'_______ assez d'argent, j'achèterais une maison.",
+    "choices": {
+      "A": "avais",
+      "B": "aurais",
+      "C": "ai",
+      "D": "aie"
+    },
+    "answer": "A",
+    "difficulty": 7,
+    "explanation": "Si + imparfait, conditionnel présent. 'Avais' is correct after 'si.'"
+  },
+  {
     "id": "AP_French_22",
     "question": "Dans la phrase \"Il pleuvait quand je suis sorti\", quelle est la fonction de l'imparfait \"pleuvait\"?",
     "choices": {
@@ -284,19 +297,6 @@
     "answer": "B",
     "difficulty": 6,
     "explanation": "L'imparfait est utilisé ici pour décrire la situation météorologique, le contexte au moment de l'action principale."
-  },
-  {
-    "id": "AP_French_23",
-    "question": "Quel pronom relatif sans antécédent est utilisé pour introduire une proposition subordonnée et signifie \"ce qui\" ou \"ce que\"?",
-    "choices": {
-      "A": "Qui",
-      "B": "Que",
-      "C": "Dont",
-      "D": "Ce qui / Ce que"
-    },
-    "answer": "D",
-    "difficulty": 7,
-    "explanation": "\"Ce qui\" est utilisé lorsque le pronom est sujet dans la subordonnée, et \"ce que\" lorsqu'il est objet."
   },
   {
     "id": "AP_French_24",
@@ -329,11 +329,11 @@
     "question": "Quel est le sens de l'expression idiomatique \"avoir le cafard\"?",
     "choices": {
       "A": "Être très fatigué",
-      "B": "Être de mauvaise humeur, mélancolique",
+      "B": "Être surpris",
       "C": "Être en colère",
-      "D": "Être surpris"
+      "D": "Être de mauvaise humeur, mélancolique"
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 7,
     "explanation": "Cette expression signifie être triste ou déprimé."
   },
@@ -385,7 +385,7 @@
       "C": "Nous allions",
       "D": "Nous allions"
     },
-    "answer": "C",
+    "answer": "D",
     "difficulty": 8,
     "explanation": "Le subjonctif présent de 'aller' est 'j'aille', 'tu ailles', 'il/elle/on aille', 'nous allions', 'vous alliez', 'ils/elles aillent'."
   },
@@ -407,11 +407,11 @@
     "question": "Quel est le nom de la fête nationale française?",
     "choices": {
       "A": "Le 1er mai",
-      "B": "Le 14 juillet",
+      "B": "Le 11 novembre",
       "C": "Le 8 mai",
-      "D": "Le 11 novembre"
+      "D": "Le 14 juillet"
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 5,
     "explanation": "Le 14 juillet commémore la prise de la Bastille."
   },
@@ -420,11 +420,11 @@
     "question": "Dans la phrase \"Je me lève tôt\", quel est le temps verbal?",
     "choices": {
       "A": "Passé composé",
-      "B": "Présent",
+      "B": "Futur simple",
       "C": "Imparfait",
-      "D": "Futur simple"
+      "D": "Présent"
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 5,
     "explanation": "Le verbe 'lève' est conjugué au présent de l'indicatif."
   },
@@ -459,11 +459,11 @@
     "question": "Quel est le contraire de \"rapide\"?",
     "choices": {
       "A": "Vite",
-      "B": "Lent",
+      "B": "Fort",
       "C": "Gai",
-      "D": "Fort"
+      "D": "Lent"
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 5,
     "explanation": "'Lent' est le contraire de 'rapide'."
   },
@@ -498,11 +498,11 @@
     "question": "Quel est le futur simple du verbe \"faire\" à la troisième personne du singulier?",
     "choices": {
       "A": "Faisait",
-      "B": "Fera",
+      "B": "A fait",
       "C": "Fait",
-      "D": "A fait"
+      "D": "Fera"
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 6,
     "explanation": "Le futur simple de 'faire' est 'je ferai', 'tu feras', 'il/elle/on fera', etc."
   },
@@ -512,10 +512,10 @@
     "choices": {
       "A": "Le",
       "B": "La",
-      "C": "En",
-      "D": "Y"
+      "C": "Y",
+      "D": "En"
     },
-    "answer": "C",
+    "answer": "D",
     "difficulty": 7,
     "explanation": "'En' remplace généralement 'de + nom' ou une quantité."
   },
@@ -577,10 +577,10 @@
     "choices": {
       "A": "J'ai vu",
       "B": "Je vis",
-      "C": "J'avais vu",
-      "D": "Je verrai"
+      "C": "Je verrai",
+      "D": "J'avais vu"
     },
-    "answer": "C",
+    "answer": "D",
     "difficulty": 7,
     "explanation": "Le plus-que-parfait se forme avec l'imparfait de l'auxiliaire ('avoir' ou 'être') et le participe passé du verbe principal."
   },
@@ -589,11 +589,11 @@
     "question": "Quel est le temps verbal correct pour compléter la phrase : « Hier soir, nous ______ au restaurant. »",
     "choices": {
       "A": "allons",
-      "B": "sommes allés",
+      "B": "allons aller",
       "C": "allions",
-      "D": "allons aller"
+      "D": "sommes allés"
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 5,
     "explanation": "La phrase se réfère à une action passée ('Hier soir'). Le passé composé ('sommes allés') est le temps approprié pour décrire une action terminée dans le passé."
   },
@@ -680,11 +680,11 @@
     "question": "Quelle préposition est utilisée pour indiquer l'origine dans cette phrase : « Il vient ______ Paris. »",
     "choices": {
       "A": "à",
-      "B": "de",
+      "B": "dans",
       "C": "en",
-      "D": "dans"
+      "D": "de"
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 5,
     "explanation": "La préposition 'de' est utilisée pour indiquer l'origine géographique d'une personne ou d'une chose."
   },
@@ -745,11 +745,11 @@
     "question": "Quel est le participe présent du verbe « venir » ?",
     "choices": {
       "A": "Venu",
-      "B": "Venant",
+      "B": "Venir",
       "C": "Vient",
-      "D": "Venir"
+      "D": "Venant"
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 5,
     "explanation": "Le participe présent se termine généralement par '-ant'. Pour 'venir', c'est 'venant'."
   },
@@ -809,12 +809,12 @@
     "id": "AP_French_63",
     "question": "Quel est le genre grammatical du mot « voiture » ?",
     "choices": {
-      "A": "Masculin",
-      "B": "Féminin",
+      "A": "Féminin",
+      "B": "Masculin",
       "C": "Neutre",
       "D": "Masculin ou Féminin"
     },
-    "answer": "B",
+    "answer": "A",
     "difficulty": 5,
     "explanation": "En français, 'voiture' est un nom féminin. On dit 'une voiture'."
   },
@@ -863,10 +863,10 @@
     "choices": {
       "A": "très",
       "B": "assez",
-      "C": "beaucoup",
-      "D": "trop"
+      "C": "trop",
+      "D": "beaucoup"
     },
-    "answer": "C",
+    "answer": "D",
     "difficulty": 6,
     "explanation": "L'adverbe 'beaucoup' intensifie le fait qu'elle parle bien français. Les autres options sont possibles mais 'beaucoup' est le plus courant pour exprimer une grande compétence."
   },
@@ -901,11 +901,11 @@
     "question": "Choisissez le mot qui exprime une forte émotion ou un sentiment intense.",
     "choices": {
       "A": "Intéressant",
-      "B": "Passionnant",
+      "B": "Neutre",
       "C": "Calme",
-      "D": "Neutre"
+      "D": "Passionnant"
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 5,
     "explanation": "Le mot 'passionnant' décrit quelque chose qui suscite une forte émotion, un grand intérêt ou une passion."
   },
@@ -1018,11 +1018,11 @@
     "question": "Quel est l'antonyme de « taciturne » ?",
     "choices": {
       "A": "Silencieux",
-      "B": "Bavard",
+      "B": "Réservé",
       "C": "Mystérieux",
-      "D": "Réservé"
+      "D": "Bavard"
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 6,
     "explanation": "« Taciturne » décrit quelqu'un qui parle peu. « Bavard » est son opposé."
   },
@@ -1043,12 +1043,12 @@
     "id": "AP_French_81",
     "question": "Quel auteur est connu pour son roman « L'Étranger » ?",
     "choices": {
-      "A": "Victor Hugo",
-      "B": "Albert Camus",
+      "A": "Albert Camus",
+      "B": "Victor Hugo",
       "C": "Gustave Flaubert",
       "D": "Émile Zola"
     },
-    "answer": "B",
+    "answer": "A",
     "difficulty": 5,
     "explanation": "Albert Camus est l'auteur de « L'Étranger », une œuvre majeure de la littérature du XXe siècle."
   },
@@ -1070,11 +1070,11 @@
     "question": "Quel pays d'Afrique francophone est connu pour sa richesse culturelle et ses musées d'art, comme le Musée des Civilisations Noires à Dakar ?",
     "choices": {
       "A": "Algérie",
-      "B": "Sénégal",
+      "B": "Côte d'Ivoire",
       "C": "Tunisie",
-      "D": "Côte d'Ivoire"
+      "D": "Sénégal"
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 6,
     "explanation": "Le Sénégal, avec sa capitale Dakar, est un centre culturel important en Afrique de l'Ouest, abritant notamment le Musée des Civilisations Noires."
   },
@@ -1083,11 +1083,11 @@
     "question": "Que signifie « se ronger les sangs » ?",
     "choices": {
       "A": "Manger avec appétit",
-      "B": "Être très inquiet ou angoissé",
+      "B": "Être en bonne santé",
       "C": "Se blesser",
-      "D": "Être en bonne santé"
+      "D": "Être très inquiet ou angoissé"
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 7,
     "explanation": "« Se ronger les sangs » est une expression signifiant être excessivement inquiet, se faire du souci."
   },
@@ -1096,11 +1096,11 @@
     "question": "Quel est le participe passé du verbe « croire » ?",
     "choices": {
       "A": "Croyé",
-      "B": "Cru",
+      "B": "Cruyé",
       "C": "Croyant",
-      "D": "Cruyé"
+      "D": "Cru"
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 5,
     "explanation": "Le participe passé du verbe irrégulier « croire » est « cru »."
   },
@@ -1135,11 +1135,11 @@
     "question": "Choisissez le mot qui décrit le mieux quelqu'un qui est « loquace » :",
     "choices": {
       "A": "Mystérieux",
-      "B": "Parleur",
+      "B": "Intelligent",
       "C": "Timide",
-      "D": "Intelligent"
+      "D": "Parleur"
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 6,
     "explanation": "« Loquace » signifie qui parle beaucoup, qui est bavard."
   },
@@ -1160,12 +1160,12 @@
     "id": "AP_French_90",
     "question": "Complétez la phrase avec le bon accord du participe passé : « Les lettres que j'_______ (écrire) étaient longues. »",
     "choices": {
-      "A": "ai écrit",
-      "B": "ai écrites",
+      "A": "ai écrites",
+      "B": "ai écrit",
       "C": "ai écris",
       "D": "ai écrite"
     },
-    "answer": "B",
+    "answer": "A",
     "difficulty": 8,
     "explanation": "Le participe passé employé avec « avoir » s'accorde avec le complément d'objet direct (COD) si celui-ci est placé avant le verbe. Ici, « que » remplace « les lettres » (féminin pluriel), donc « écrites » s'accorde au féminin pluriel."
   },
@@ -1174,11 +1174,11 @@
     "question": "Quel écrivain québécois est l'auteur de « Bonheur d'occasion » ?",
     "choices": {
       "A": "Réjean Ducharme",
-      "B": "Gabrielle Roy",
+      "B": "Marie-Claire Blais",
       "C": "Michel Tremblay",
-      "D": "Marie-Claire Blais"
+      "D": "Gabrielle Roy"
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 7,
     "explanation": "Gabrielle Roy est une figure majeure de la littérature québécoise, et « Bonheur d'occasion » est l'un de ses romans les plus célèbres."
   },
@@ -1266,10 +1266,10 @@
     "choices": {
       "A": "fais",
       "B": "faites",
-      "C": "fasses",
-      "D": "faisais"
+      "C": "faisais",
+      "D": "fasses"
     },
-    "answer": "C",
+    "answer": "D",
     "difficulty": 7,
     "explanation": "L'expression impersonnelle « il faut que » suivie d'un sujet différent commande l'emploi du subjonctif. La forme correcte du subjonctif présent pour « tu » est « fasses »."
   },
@@ -1305,10 +1305,10 @@
     "choices": {
       "A": "vais",
       "B": "allé",
-      "C": "suis allé",
-      "D": "allais"
+      "C": "allais",
+      "D": "suis allé"
     },
-    "answer": "C",
+    "answer": "D",
     "difficulty": 5,
     "explanation": "Le mot « hier » indique le passé. Le verbe « aller » utilise l'auxiliaire « être » au passé composé. Donc, « je suis allé » est la forme correcte."
   },
@@ -1329,12 +1329,12 @@
     "id": "AP_French_103",
     "question": "Quel mot est un synonyme de « content » ?",
     "choices": {
-      "A": "Triste",
-      "B": "Heureux",
+      "A": "Heureux",
+      "B": "Triste",
       "C": "Fatigué",
       "D": "Ennuyé"
     },
-    "answer": "B",
+    "answer": "A",
     "difficulty": 6,
     "explanation": "« Heureux » est un synonyme direct de « content », signifiant tous deux joyeux ou satisfait."
   },
@@ -1389,19 +1389,6 @@
     "answer": "C",
     "difficulty": 5,
     "explanation": "La structure de la négation en français est généralement « ne ... pas » encadrant le verbe conjugué."
-  },
-  {
-    "id": "AP_French_108",
-    "question": "Quel est le contraire de « rapide » ?",
-    "choices": {
-      "A": "Vite",
-      "B": "Lent",
-      "C": "Pressé",
-      "D": "Calme"
-    },
-    "answer": "B",
-    "difficulty": 5,
-    "explanation": "« Lent » est le contraire de « rapide »."
   },
   {
     "id": "AP_French_109",
@@ -1521,19 +1508,6 @@
     "explanation": "On utilise la préposition « à » pour indiquer une ville : « J'habite à Paris »."
   },
   {
-    "id": "AP_French_118",
-    "question": "Quel est le féminin de « acteur » ?",
-    "choices": {
-      "A": "Actrice",
-      "B": "Actoress",
-      "C": "Acteur",
-      "D": "Acteresse"
-    },
-    "answer": "A",
-    "difficulty": 5,
-    "explanation": "Le féminin du nom « acteur » est « actrice »."
-  },
-  {
     "id": "AP_French_119",
     "question": "Quelle expression signifie « arriver en retard » ?",
     "choices": {
@@ -1590,11 +1564,11 @@
     "question": "Quelle est la différence principale entre « savoir » et « connaître » ?",
     "choices": {
       "A": "« Savoir » est pour les personnes, « connaître » pour les choses.",
-      "B": "« Savoir » est pour les faits/compétences, « connaître » pour les personnes/lieux/choses.",
+      "B": "« Savoir » est pour le passé, « connaître » pour le présent.",
       "C": "Il n'y a pas de différence.",
-      "D": "« Savoir » est pour le passé, « connaître » pour le présent."
+      "D": "« Savoir » est pour les faits/compétences, « connaître » pour les personnes/lieux/choses."
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 8,
     "explanation": "« Savoir » s'utilise avec des faits, des informations ou des compétences (savoir nager). « Connaître » s'utilise avec des personnes, des lieux, des œuvres (connaître Paris, connaître Paul)."
   },
@@ -1603,11 +1577,11 @@
     "question": "Quel est le plus grand pays francophone en superficie ?",
     "choices": {
       "A": "France",
-      "B": "Canada",
+      "B": "Algérie",
       "C": "République Démocratique du Congo",
-      "D": "Algérie"
+      "D": "Canada"
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 7,
     "explanation": "Bien que la France soit le cœur de la francophonie, le Canada, avec ses vastes territoires, est le plus grand pays en superficie où le français est une langue officielle ou largement parlée."
   },
@@ -1630,10 +1604,10 @@
     "choices": {
       "A": "Le passé composé",
       "B": "Le plus-que-parfait",
-      "C": "L'imparfait",
-      "D": "Le futur simple"
+      "C": "Le futur simple",
+      "D": "L'imparfait"
     },
-    "answer": "C",
+    "answer": "D",
     "difficulty": 5,
     "explanation": "L'imparfait est utilisé pour décrire des actions habituelles ou continues dans le passé sans insister sur leur début ou leur fin."
   },
@@ -1647,31 +1621,34 @@
       "D": "où"
     },
     "answer": "B",
-    "explanation": "Le pronom 'que' est utilisé pour remplacer le complément d'objet direct (COD) du verbe qui suit. Ici, 'j'ai acheté' est suivi de 'le livre' (COD)."
+    "explanation": "Le pronom 'que' est utilisé pour remplacer le complément d'objet direct (COD) du verbe qui suit. Ici, 'j'ai acheté' est suivi de 'le livre' (COD).",
+    "difficulty": 4
   },
   {
     "id": "AP_French_128",
     "question": "Quelle expression signifie 'malgré' ?",
     "choices": {
       "A": "Grâce à",
-      "B": "En dépit de",
+      "B": "Puisque",
       "C": "À cause de",
-      "D": "Puisque"
+      "D": "En dépit de"
     },
-    "answer": "B",
-    "explanation": "'En dépit de' est synonyme de 'malgré', indiquant une opposition ou une concession."
+    "answer": "D",
+    "explanation": "'En dépit de' est synonyme de 'malgré', indiquant une opposition ou une concession.",
+    "difficulty": 4
   },
   {
     "id": "AP_French_129",
     "question": "Quel mode doit-on utiliser avec les expressions de doute ou d'incertitude comme 'je ne pense pas que' ?",
     "choices": {
       "A": "L'indicatif",
-      "B": "Le subjonctif",
+      "B": "Le conditionnel",
       "C": "L'impératif",
-      "D": "Le conditionnel"
+      "D": "Le subjonctif"
     },
-    "answer": "B",
-    "explanation": "Le subjonctif est requis après la plupart des expressions de doute, de volonté, d'émotion ou de nécessité."
+    "answer": "D",
+    "explanation": "Le subjonctif est requis après la plupart des expressions de doute, de volonté, d'émotion ou de nécessité.",
+    "difficulty": 4
   },
   {
     "id": "AP_French_130",
@@ -1683,7 +1660,8 @@
       "D": "Kinshasa"
     },
     "answer": "B",
-    "explanation": "Dakar est la capitale du Sénégal, un pays d'Afrique de l'Ouest."
+    "explanation": "Dakar est la capitale du Sénégal, un pays d'Afrique de l'Ouest.",
+    "difficulty": 4
   },
   {
     "id": "AP_French_131",
@@ -1695,7 +1673,8 @@
       "D": "parti"
     },
     "answer": "A",
-    "explanation": "'Il vaut mieux' est suivi d'un verbe à l'infinitif."
+    "explanation": "'Il vaut mieux' est suivi d'un verbe à l'infinitif.",
+    "difficulty": 4
   },
   {
     "id": "AP_French_132",
@@ -1707,7 +1686,8 @@
       "D": "Avoir peur"
     },
     "answer": "C",
-    "explanation": "'Avoir le cafard' est une expression idiomatique qui signifie être mélancolique, triste."
+    "explanation": "'Avoir le cafard' est une expression idiomatique qui signifie être mélancolique, triste.",
+    "difficulty": 4
   },
   {
     "id": "AP_French_133",
@@ -1715,11 +1695,12 @@
     "choices": {
       "A": "Le futur antérieur",
       "B": "Le futur simple",
-      "C": "Le conditionnel passé",
-      "D": "Le plus-que-parfait"
+      "C": "Le plus-que-parfait",
+      "D": "Le conditionnel passé"
     },
-    "answer": "C",
-    "explanation": "Le conditionnel passé exprime une action qui devait se produire dans le passé mais qui ne s'est pas réalisée, ou une action future vue du passé."
+    "answer": "D",
+    "explanation": "Le conditionnel passé exprime une action qui devait se produire dans le passé mais qui ne s'est pas réalisée, ou une action future vue du passé.",
+    "difficulty": 4
   },
   {
     "id": "AP_French_134",
@@ -1731,19 +1712,21 @@
       "D": "où"
     },
     "answer": "A",
-    "explanation": "Le pronom 'qui' est utilisé pour remplacer le sujet du verbe qui suit. Ici, 'qui' remplace 'il' (celui qui avait prêté le livre)."
+    "explanation": "Le pronom 'qui' est utilisé pour remplacer le sujet du verbe qui suit. Ici, 'qui' remplace 'il' (celui qui avait prêté le livre).",
+    "difficulty": 4
   },
   {
     "id": "AP_French_135",
     "question": "Quelle est la signification de 'savoir-faire' ?",
     "choices": {
       "A": "La connaissance théorique",
-      "B": "L'habileté pratique, l'expertise",
+      "B": "La curiosité",
       "C": "L'intelligence",
-      "D": "La curiosité"
+      "D": "L'habileté pratique, l'expertise"
     },
-    "answer": "B",
-    "explanation": "'Savoir-faire' désigne la compétence et l'habileté acquises par l'expérience dans un domaine particulier."
+    "answer": "D",
+    "explanation": "'Savoir-faire' désigne la compétence et l'habileté acquises par l'expérience dans un domaine particulier.",
+    "difficulty": 4
   },
   {
     "id": "AP_French_136",
@@ -1755,7 +1738,8 @@
       "D": "viendrais"
     },
     "answer": "A",
-    "explanation": "La structure 'Si + plus-que-parfait, conditionnel passé' est utilisée pour exprimer un regret ou une condition non réalisée dans le passé."
+    "explanation": "La structure 'Si + plus-que-parfait, conditionnel passé' est utilisée pour exprimer un regret ou une condition non réalisée dans le passé.",
+    "difficulty": 4
   },
   {
     "id": "AP_French_137",
@@ -1767,7 +1751,8 @@
       "D": "Tunisienne"
     },
     "answer": "A",
-    "explanation": "Bien qu'Albert Camus soit né en Algérie, alors française, il est universellement considéré comme un écrivain français."
+    "explanation": "Bien qu'Albert Camus soit né en Algérie, alors française, il est universellement considéré comme un écrivain français.",
+    "difficulty": 4
   },
   {
     "id": "AP_French_138",
@@ -1779,7 +1764,8 @@
       "D": "Le présent"
     },
     "answer": "B",
-    "explanation": "Le passé composé est généralement utilisé pour raconter des événements passés achevés et ponctuels."
+    "explanation": "Le passé composé est généralement utilisé pour raconter des événements passés achevés et ponctuels.",
+    "difficulty": 4
   },
   {
     "id": "AP_French_139",
@@ -1791,7 +1777,8 @@
       "D": "où"
     },
     "answer": "D",
-    "explanation": "Le pronom 'où' est utilisé pour remplacer un lieu comme complément circonstanciel de lieu. 'J'ai grandi' se rapporte à un lieu."
+    "explanation": "Le pronom 'où' est utilisé pour remplacer un lieu comme complément circonstanciel de lieu. 'J'ai grandi' se rapporte à un lieu.",
+    "difficulty": 4
   },
   {
     "id": "AP_French_140",
@@ -1803,7 +1790,8 @@
       "D": "Être en retard"
     },
     "answer": "B",
-    "explanation": "'Poser un lapin' signifie ne pas se présenter à un rendez-vous convenu, laisser quelqu'un en plan."
+    "explanation": "'Poser un lapin' signifie ne pas se présenter à un rendez-vous convenu, laisser quelqu'un en plan.",
+    "difficulty": 4
   },
   {
     "id": "AP_French_141",
@@ -1815,7 +1803,8 @@
       "D": "car"
     },
     "answer": "A",
-    "explanation": "'Donc' introduit une conséquence logique."
+    "explanation": "'Donc' introduit une conséquence logique.",
+    "difficulty": 4
   },
   {
     "id": "AP_French_142",
@@ -1827,7 +1816,8 @@
       "D": "Le 11 Novembre"
     },
     "answer": "A",
-    "explanation": "Le 14 Juillet est la Fête Nationale française, commémorant la prise de la Bastille en 1789."
+    "explanation": "Le 14 Juillet est la Fête Nationale française, commémorant la prise de la Bastille en 1789.",
+    "difficulty": 4
   },
   {
     "id": "AP_French_143",
@@ -1839,7 +1829,8 @@
       "D": "Le présent"
     },
     "answer": "D",
-    "explanation": "Le présent de l'indicatif est utilisé pour décrire des actions ou des états qui se produisent au moment où l'on parle."
+    "explanation": "Le présent de l'indicatif est utilisé pour décrire des actions ou des états qui se produisent au moment où l'on parle.",
+    "difficulty": 4
   },
   {
     "id": "AP_French_144",
@@ -1851,7 +1842,8 @@
       "D": "où"
     },
     "answer": "C",
-    "explanation": "Le pronom 'dont' est utilisé pour remplacer un complément introduit par 'de'. Ici, 'parler de' demande 'dont'."
+    "explanation": "Le pronom 'dont' est utilisé pour remplacer un complément introduit par 'de'. Ici, 'parler de' demande 'dont'.",
+    "difficulty": 4
   },
   {
     "id": "AP_French_145",
@@ -1863,7 +1855,8 @@
       "D": "Être fatigué"
     },
     "answer": "B",
-    "explanation": "'Avoir la pêche' est une expression familière signifiant être en pleine forme, plein de vitalité."
+    "explanation": "'Avoir la pêche' est une expression familière signifiant être en pleine forme, plein de vitalité.",
+    "difficulty": 4
   },
   {
     "id": "AP_French_146",
@@ -1875,7 +1868,8 @@
       "D": "faisiez"
     },
     "answer": "A",
-    "explanation": "'Il faut que' est suivi du subjonctif présent. Ici, 'vous faisiez' est le subjonctif présent de 'faire'."
+    "explanation": "'Il faut que' est suivi du subjonctif présent. Ici, 'vous faisiez' est le subjonctif présent de 'faire'.",
+    "difficulty": 4
   },
   {
     "id": "AP_French_147",
@@ -1887,7 +1881,8 @@
       "D": "Reims"
     },
     "answer": "B",
-    "explanation": "Notre-Dame de Paris est l'une des cathédrales gothiques les plus célèbres du monde."
+    "explanation": "Notre-Dame de Paris est l'une des cathédrales gothiques les plus célèbres du monde.",
+    "difficulty": 4
   },
   {
     "id": "AP_French_148",
@@ -1899,7 +1894,8 @@
       "D": "Nous sommes allés"
     },
     "answer": "B",
-    "explanation": "Le futur simple de 'aller' à la première personne du pluriel est 'nous irons'."
+    "explanation": "Le futur simple de 'aller' à la première personne du pluriel est 'nous irons'.",
+    "difficulty": 4
   },
   {
     "id": "AP_French_149",
@@ -1907,11 +1903,12 @@
     "choices": {
       "A": "qui",
       "B": "que",
-      "C": "dont",
-      "D": "où"
+      "C": "où",
+      "D": "dont"
     },
-    "answer": "C",
-    "explanation": "Pour la construction 'parler de quelqu'un', on utilise le pronom relatif 'dont'."
+    "answer": "D",
+    "explanation": "Pour la construction 'parler de quelqu'un', on utilise le pronom relatif 'dont'.",
+    "difficulty": 4
   },
   {
     "id": "AP_French_150",
@@ -1923,7 +1920,8 @@
       "D": "Parfois"
     },
     "answer": "B",
-    "explanation": "'Au fur et à mesure' signifie que quelque chose se fait progressivement, en s'adaptant à l'évolution d'une autre action ou situation."
+    "explanation": "'Au fur et à mesure' signifie que quelque chose se fait progressivement, en s'adaptant à l'évolution d'une autre action ou situation.",
+    "difficulty": 4
   },
   {
     "id": "AP_French_151",
@@ -1991,32 +1989,6 @@
     "explanation": "Le Sénégal est un pays d'Afrique de l'Ouest où le français est une langue officielle."
   },
   {
-    "id": "AP_French_156",
-    "question": "Lequel de ces verbes se conjugue avec l'auxiliaire \"être\" au passé composé ?",
-    "choices": {
-      "A": "Manger",
-      "B": "Aller",
-      "C": "Lire",
-      "D": "Écrire"
-    },
-    "answer": "B",
-    "difficulty": 5,
-    "explanation": "Les verbes de mouvement comme \"aller\" se conjuguent avec l'auxiliaire \"être\" au passé composé."
-  },
-  {
-    "id": "AP_French_157",
-    "question": "Que signifie l'expression idiomatique \"avoir le cafard\" ?",
-    "choices": {
-      "A": "Être très heureux",
-      "B": "Être malade",
-      "C": "Être triste ou déprimé",
-      "D": "Avoir peur"
-    },
-    "answer": "C",
-    "difficulty": 7,
-    "explanation": "\"Avoir le cafard\" est une expression signifiant être mélancolique, avoir le moral bas."
-  },
-  {
     "id": "AP_French_158",
     "question": "Quel est le féminin du nom \"héros\" ?",
     "choices": {
@@ -2073,11 +2045,11 @@
     "question": "Que signifie le mot \"donc\" dans la phrase \"Il est fatigué, donc il va se coucher.\" ?",
     "choices": {
       "A": "Il exprime une cause.",
-      "B": "Il exprime une conséquence.",
+      "B": "Il exprime une concession.",
       "C": "Il exprime une condition.",
-      "D": "Il exprime une concession."
+      "D": "Il exprime une conséquence."
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 5,
     "explanation": "\"Donc\" est un connecteur logique qui introduit une conséquence."
   },
@@ -2086,11 +2058,11 @@
     "question": "L'accord du participe passé avec l'auxiliaire \"avoir\" se fait généralement avec :",
     "choices": {
       "A": "Le sujet",
-      "B": "Le complément d'objet direct",
+      "B": "Le complément circonstanciel",
       "C": "Le complément d'objet indirect",
-      "D": "Le complément circonstanciel"
+      "D": "Le complément d'objet direct"
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 6,
     "explanation": "Le participe passé employé avec l'auxiliaire \"avoir\" s'accorde avec le complément d'objet direct (COD) si celui-ci est placé avant le verbe. Sinon, il reste invariable."
   },
@@ -2100,10 +2072,10 @@
     "choices": {
       "A": "Claude Monet",
       "B": "Vincent van Gogh",
-      "C": "Léonard de Vinci",
-      "D": "Pablo Picasso"
+      "C": "Pablo Picasso",
+      "D": "Léonard de Vinci"
     },
-    "answer": "C",
+    "answer": "D",
     "difficulty": 5,
     "explanation": "Léonard de Vinci, artiste de la Renaissance italienne, est le peintre de \"La Joconde\"."
   },
@@ -2203,11 +2175,11 @@
     "question": "Quel est le contraire de \"clair\" ?",
     "choices": {
       "A": "Lumineux",
-      "B": "Sombre",
+      "B": "Transparent",
       "C": "Brillant",
-      "D": "Transparent"
+      "D": "Sombre"
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 5,
     "explanation": "Le contraire de \"clair\" (en termes de lumière ou de couleur) est \"sombre\"."
   },
@@ -2217,10 +2189,10 @@
     "choices": {
       "A": "Le banjo",
       "B": "La cornemuse",
-      "C": "Le violon",
-      "D": "Le djembé"
+      "C": "Le djembé",
+      "D": "Le violon"
     },
-    "answer": "C",
+    "answer": "D",
     "difficulty": 6,
     "explanation": "Le violon fait partie de l'orchestre symphonique et est un instrument fondamental de la musique classique occidentale, y compris française."
   },
@@ -2243,10 +2215,10 @@
     "choices": {
       "A": "La Fête de la Musique",
       "B": "Le 1er Mai",
-      "C": "Le 14 Juillet",
-      "D": "La Toussaint"
+      "C": "La Toussaint",
+      "D": "Le 14 Juillet"
     },
-    "answer": "C",
+    "answer": "D",
     "difficulty": 5,
     "explanation": "Le 14 Juillet est la fête nationale française, commémorant la prise de la Bastille."
   },
@@ -2255,11 +2227,11 @@
     "question": "Laquelle de ces expressions signifie 'to feel under the weather' ?",
     "choices": {
       "A": "Avoir le cafard",
-      "B": "Se sentir patraque",
+      "B": "Mettre les pieds dans le plat",
       "C": "Être sur son 31",
-      "D": "Mettre les pieds dans le plat"
+      "D": "Se sentir patraque"
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 5,
     "explanation": "Se sentir patraque' est une expression idiomatique française qui signifie se sentir mal, pas tout à fait bien, ou un peu malade. 'Avoir le cafard' signifie être déprimé. 'Être sur son 31' signifie être très bien habillé. 'Mettre les pieds dans le plat' signifie aborder un sujet délicat de manière maladroite."
   },
@@ -2371,12 +2343,12 @@
     "id": "AP_French_185",
     "question": "Laquelle de ces villes est la capitale du Québec ?",
     "choices": {
-      "A": "Montréal",
-      "B": "Québec",
+      "A": "Québec",
+      "B": "Montréal",
       "C": "Ottawa",
       "D": "Toronto"
     },
-    "answer": "B",
+    "answer": "A",
     "difficulty": 6,
     "explanation": "La ville de Québec est la capitale de la province de Québec, au Canada. Montréal est la plus grande ville de la province, et Ottawa est la capitale du Canada."
   },
@@ -2407,28 +2379,15 @@
     "explanation": "Avec les verbes pronominaux comme 'se laver', on utilise souvent une partie du corps. 'Se laver la figure' est une construction courante. Bien qu'on puisse se laver les mains, les cheveux ou les dents, 'se laver la figure' est la réponse qui s'intègre le mieux dans le contexte de se laver soi-même, sans spécifier une partie précise du corps si ce n'est le visage."
   },
   {
-    "id": "AP_French_188",
-    "question": "Quel est le féminin de 'héros' ?",
-    "choices": {
-      "A": "Héroïne",
-      "B": "Héroesse",
-      "C": "Héroine",
-      "D": "Héroïenne"
-    },
-    "answer": "A",
-    "difficulty": 5,
-    "explanation": "Le féminin du nom 'héros' est 'héroïne'."
-  },
-  {
     "id": "AP_French_189",
     "question": "L'expression 'tomber dans les pommes' signifie :",
     "choices": {
       "A": "Tomber amoureux",
-      "B": "S'évanouir",
+      "B": "Tomber dans un piège",
       "C": "Tomber malade",
-      "D": "Tomber dans un piège"
+      "D": "S'évanouir"
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 6,
     "explanation": "'Tomber dans les pommes' est une expression idiomatique qui signifie perdre connaissance, s'évanouir."
   },
@@ -2450,11 +2409,11 @@
     "question": "Quel pays est connu pour sa tradition de la 'fête des rois' le 6 janvier ?",
     "choices": {
       "A": "Italie",
-      "B": "Espagne",
+      "B": "Belgique",
       "C": "France",
-      "D": "Belgique"
+      "D": "Espagne"
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 7,
     "explanation": "En Espagne, la 'Día de Reyes' (Épiphanie) le 6 janvier est une fête très importante où les enfants reçoivent des cadeaux, traditionnellement apportés par les Rois Mages. En France et dans d'autres pays francophones, on mange la galette des rois, mais la tradition des cadeaux est plus associée à Noël."
   },
@@ -2671,11 +2630,11 @@
     "question": "Quel mot est un synonyme de 'rapide' ?",
     "choices": {
       "A": "lent",
-      "B": "vif",
+      "B": "paisible",
       "C": "calme",
-      "D": "paisible"
+      "D": "vif"
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 6,
     "explanation": "'Vif' peut signifier rapide, alerte. 'Lent' est un antonyme. 'Calme' et 'paisible' sont des synonymes de tranquillité."
   },
@@ -2684,11 +2643,11 @@
     "question": "Dans la phrase 'Il faut que tu viennes.', à quel mode est le verbe 'venir' ?",
     "choices": {
       "A": "Indicatif",
-      "B": "Subjonctif",
+      "B": "Impératif",
       "C": "Conditionnel",
-      "D": "Impératif"
+      "D": "Subjonctif"
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 6,
     "explanation": "L'expression impersonnelle 'il faut que' suivie d'un pronom personnel exige l'utilisation du subjonctif. Le subjonctif présent de 'venir' est 'vienne'."
   },
@@ -2710,11 +2669,11 @@
     "question": "Complétez : 'Si j'avais su, je ___ resté à la maison.'",
     "choices": {
       "A": "ai",
-      "B": "aurais",
+      "B": "suis",
       "C": "avais",
-      "D": "suis"
+      "D": "aurais"
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 7,
     "explanation": "Dans une proposition subordonnée introduite par 'si' exprimant une condition irréelle dans le passé, le verbe de la proposition principale est au conditionnel passé ('aurais resté')."
   },
@@ -2749,11 +2708,11 @@
     "question": "Dans quelle région du monde parle-t-on le français au Sénégal ?",
     "choices": {
       "A": "Europe",
-      "B": "Afrique de l'Ouest",
+      "B": "Océanie",
       "C": "Amérique du Nord",
-      "D": "Océanie"
+      "D": "Afrique de l'Ouest"
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 5,
     "explanation": "Le Sénégal est situé en Afrique de l'Ouest et le français y est la langue officielle."
   },
@@ -2762,11 +2721,11 @@
     "question": "Quel est le participe présent du verbe 'voir' ?",
     "choices": {
       "A": "vu",
-      "B": "voyant",
+      "B": "voirant",
       "C": "voit",
-      "D": "voirant"
+      "D": "voyant"
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 6,
     "explanation": "Le participe présent se forme en ajoutant '-ant' à la fin du radical du verbe. Pour 'voir', c'est 'voyant'."
   },
@@ -2821,19 +2780,6 @@
     "answer": "B",
     "difficulty": 6,
     "explanation": "Le nom 'œil' a un pluriel irrégulier : 'yeux'."
-  },
-  {
-    "id": "AP_French_220",
-    "question": "Quelle fête est célébrée le 14 juillet en France ?",
-    "choices": {
-      "A": "La Fête du Travail",
-      "B": "La Fête de la Victoire",
-      "C": "La Fête Nationale",
-      "D": "La Toussaint"
-    },
-    "answer": "C",
-    "difficulty": 5,
-    "explanation": "Le 14 juillet est la Fête Nationale française, commémorant la prise de la Bastille en 1789."
   },
   {
     "id": "AP_French_221",
@@ -2953,19 +2899,6 @@
     "explanation": "L' gentilé pour les habitants de Rome est 'Romain' (masculin) et 'Romaine' (féminin)."
   },
   {
-    "id": "AP_French_230",
-    "question": "Qui a écrit « Les Misérables » ?",
-    "choices": {
-      "A": "Albert Camus",
-      "B": "Victor Hugo",
-      "C": "Gustave Flaubert",
-      "D": "Émile Zola"
-    },
-    "answer": "B",
-    "difficulty": 6,
-    "explanation": "« Les Misérables » est un roman historique et social de l'écrivain français Victor Hugo, publié en 1862."
-  },
-  {
     "id": "AP_French_231",
     "question": "Laquelle de ces prépositions est utilisée pour indiquer un lieu où l'on va (mouvement) ?",
     "choices": {
@@ -2977,19 +2910,6 @@
     "answer": "C",
     "difficulty": 5,
     "explanation": "La préposition 'à' est couramment utilisée pour indiquer une destination ou un lieu où l'on se rend, surtout avec les villes et les pays masculins ou féminins commençant par une voyelle (ex: à Paris, à Lyon, à Alger)."
-  },
-  {
-    "id": "AP_French_232",
-    "question": "Quel est le participe passé du verbe « voir » ?",
-    "choices": {
-      "A": "vu",
-      "B": "voyu",
-      "C": "voyant",
-      "D": "vuu"
-    },
-    "answer": "A",
-    "difficulty": 5,
-    "explanation": "Le participe passé du verbe irrégulier 'voir' est 'vu'."
   },
   {
     "id": "AP_French_233",
@@ -3122,19 +3042,6 @@
     "explanation": "Le subjonctif présent du verbe 'pouvoir' est irrégulier. Pour 'nous', il se conjugue 'puissions'."
   },
   {
-    "id": "AP_French_243",
-    "question": "Quel est le nom de la fête nationale française ?",
-    "choices": {
-      "A": "La Toussaint",
-      "B": "Le 14 Juillet",
-      "C": "Noël",
-      "D": "Pâques"
-    },
-    "answer": "B",
-    "difficulty": 5,
-    "explanation": "La fête nationale française, commémorant la prise de la Bastille en 1789, est célébrée le 14 Juillet."
-  },
-  {
     "id": "AP_French_244",
     "question": "Laquelle de ces phrases utilise correctement l'accord du participe passé avec l'auxiliaire 'avoir' et un COD placé avant ?",
     "choices": {
@@ -3143,7 +3050,7 @@
       "C": "Les lettres que j'ai écrit.",
       "D": "Les lettres que j'ai écrites."
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 8,
     "explanation": "Lorsque le participe passé est utilisé avec l'auxiliaire 'avoir', il s'accorde en genre et en nombre avec le Complément d'Objet Direct (COD) si celui-ci est placé avant le verbe. Ici, 'que' représente 'les lettres' (féminin pluriel), donc 'écrites' s'accorde."
   },
@@ -3216,12 +3123,12 @@
     "id": "AP_French_250",
     "question": "Comment dit-on « I'm looking forward to it » en français dans un contexte informel ?",
     "choices": {
-      "A": "J'attends ça avec impatience",
-      "B": "J'ai hâte",
+      "A": "J'ai hâte",
+      "B": "J'attends ça avec impatience",
       "C": "Je suis impatient",
       "D": "Ça m'intéresse beaucoup"
     },
-    "answer": "B",
+    "answer": "A",
     "difficulty": 6,
     "explanation": "L'expression « J'ai hâte » est la traduction la plus courante et idiomatique de « I'm looking forward to it » dans un contexte informel."
   },
@@ -3243,11 +3150,11 @@
     "question": "Quel est le temps utilisé dans la phrase : 'Quand je suis arrivé, il avait déjà fini' ?",
     "choices": {
       "A": "Passé composé",
-      "B": "Plus-que-parfait",
+      "B": "Futur simple",
       "C": "Imparfait",
-      "D": "Futur simple"
+      "D": "Plus-que-parfait"
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 6,
     "explanation": "Le plus-que-parfait ('avait fini') est utilisé pour exprimer une action antérieure à une autre action passée ('suis arrivé')."
   },
@@ -3295,11 +3202,11 @@
     "question": "Dans quelle région francophone se trouve la ville de Dakar ?",
     "choices": {
       "A": "Le Maghreb",
-      "B": "L'Afrique de l'Ouest",
+      "B": "L'Europe de l'Est",
       "C": "L'Afrique Centrale",
-      "D": "L'Europe de l'Est"
+      "D": "L'Afrique de l'Ouest"
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 7,
     "explanation": "Dakar est la capitale du Sénégal, un pays situé en Afrique de l'Ouest."
   },
@@ -3308,11 +3215,11 @@
     "question": "Quelle est la bonne orthographe du mot désignant un repas pris entre le déjeuner et le dîner ?",
     "choices": {
       "A": "Gouter",
-      "B": "Goûter",
+      "B": "Goutert",
       "C": "Gouté",
-      "D": "Goutert"
+      "D": "Goûter"
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 5,
     "explanation": "Le nom 'goûter' s'écrit avec un accent circonflexe sur le 'u' pour désigner la collation de l'après-midi."
   },
@@ -3438,11 +3345,11 @@
     "question": "Qui est l'auteur des 'Fables' ?",
     "choices": {
       "A": "Voltaire",
-      "B": "Jean de La Fontaine",
+      "B": "Honoré de Balzac",
       "C": "Victor Hugo",
-      "D": "Honoré de Balzac"
+      "D": "Jean de La Fontaine"
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 6,
     "explanation": "Jean de La Fontaine est le célèbre auteur des 'Fables', une collection de contes en vers, souvent moralisateurs, mettant en scène des animaux."
   },
@@ -3512,19 +3419,6 @@
     "explanation": "Le Tour de France est la plus célèbre course cycliste du monde, qui a lieu chaque année en juillet."
   },
   {
-    "id": "AP_French_273",
-    "question": "Quelle est la signification de l'expression 'avoir le cafard' ?",
-    "choices": {
-      "A": "Être très en colère",
-      "B": "Être triste ou déprimé",
-      "C": "Avoir très faim",
-      "D": "Être surpris"
-    },
-    "answer": "B",
-    "difficulty": 6,
-    "explanation": " 'Avoir le cafard' signifie ressentir de la mélancolie, de la tristesse, ou une légère déprime."
-  },
-  {
     "id": "AP_French_274",
     "question": "Quel auteur est connu pour son roman 'L'Étranger' et sa philosophie de l'absurde ?",
     "choices": {
@@ -3575,32 +3469,6 @@
     "answer": "B",
     "difficulty": 6,
     "explanation": "Le participe passé des verbes du premier groupe comme 'aller' s'accorde en genre et en nombre avec le sujet. Au féminin singulier, c'est 'allée'."
-  },
-  {
-    "id": "AP_French_278",
-    "question": "Que signifie l'expression idiomatique 'avoir le cafard' ?",
-    "choices": {
-      "A": "Être très content",
-      "B": "Être en bonne santé",
-      "C": "Être triste ou déprimé",
-      "D": "Être en colère"
-    },
-    "answer": "C",
-    "difficulty": 7,
-    "explanation": "'Avoir le cafard' est une expression familière qui signifie être mélancolique, avoir le moral bas."
-  },
-  {
-    "id": "AP_French_279",
-    "question": "Quel est le contraire de 'rapide' ?",
-    "choices": {
-      "A": "Vite",
-      "B": "Lent",
-      "C": "Pressé",
-      "D": "Immédiat"
-    },
-    "answer": "B",
-    "difficulty": 5,
-    "explanation": "Le contraire de 'rapide' est 'lent', indiquant une faible vitesse."
   },
   {
     "id": "AP_French_280",
@@ -3685,11 +3553,11 @@
     "question": "Complétez la phrase : 'Elle a regardé le film ______ elle a beaucoup aimé.'",
     "choices": {
       "A": "qui",
-      "B": "que",
+      "B": "où",
       "C": "dont",
-      "D": "où"
+      "D": "que"
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 7,
     "explanation": "'Le film' est le COD de la subordonnée 'elle a beaucoup aimé le film', donc on utilise 'que'."
   },
@@ -3737,11 +3605,11 @@
     "question": "Quelle est la forme correcte du verbe 'faire' au subjonctif présent, 1ère personne du pluriel ?",
     "choices": {
       "A": "Faisions",
-      "B": "Fassions",
+      "B": "Fassent",
       "C": "Faisons",
-      "D": "Fassent"
+      "D": "Fassions"
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 7,
     "explanation": "Le subjonctif présent de 'faire' est : que je fasse, que tu fasses, qu'il/elle fasse, que nousfassions, que vousfassiez, qu'ils/elles fassent."
   },
@@ -3750,11 +3618,11 @@
     "question": "Que signifie 'être au courant' ?",
     "choices": {
       "A": "Être fatigué",
-      "B": "Être informé",
+      "B": "Être confus",
       "C": "Être surpris",
-      "D": "Être confus"
+      "D": "Être informé"
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 6,
     "explanation": "'Être au courant' est une expression qui signifie savoir quelque chose, être informé d'un fait."
   },
@@ -3764,25 +3632,12 @@
     "choices": {
       "A": "Italie",
       "B": "Espagne",
-      "C": "France",
-      "D": "Allemagne"
-    },
-    "answer": "C",
-    "difficulty": 5,
-    "explanation": "La Tour Eiffel est le monument le plus célèbre de Paris, en France."
-  },
-  {
-    "id": "AP_French_293",
-    "question": "Complétez : 'Il faut que nous ______ (partir) maintenant.'",
-    "choices": {
-      "A": "partons",
-      "B": "partîmes",
-      "C": "partions",
-      "D": "partions"
+      "C": "Allemagne",
+      "D": "France"
     },
     "answer": "D",
-    "difficulty": 7,
-    "explanation": "Après 'Il faut que', on utilise le subjonctif présent. Le subjonctif présent de 'partir' est 'partions'."
+    "difficulty": 5,
+    "explanation": "La Tour Eiffel est le monument le plus célèbre de Paris, en France."
   },
   {
     "id": "AP_French_294",
@@ -3798,6 +3653,19 @@
     "explanation": "Le 14 Juillet, aussi appelé Fête Nationale, commémore la prise de la Bastille."
   },
   {
+    "id": "AP_French_23",
+    "question": "Quel pronom relatif sans antécédent est utilisé pour introduire une proposition subordonnée et signifie \"ce qui\" ou \"ce que\"?",
+    "choices": {
+      "A": "Qui",
+      "B": "Que",
+      "C": "Dont",
+      "D": "Ce qui / Ce que"
+    },
+    "answer": "D",
+    "difficulty": 7,
+    "explanation": "\"Ce qui\" est utilisé lorsque le pronom est sujet dans la subordonnée, et \"ce que\" lorsqu'il est objet."
+  },
+  {
     "id": "AP_French_295",
     "question": "Quel adjectif décrit le mieux un objet qui n'est pas cher ?",
     "choices": {
@@ -3811,41 +3679,15 @@
     "explanation": "'Abordable' signifie que le prix est raisonnable, qu'on peut se le permettre, donc pas cher."
   },
   {
-    "id": "AP_French_296",
-    "question": "Comment dit-on 'thank you very much' en français ?",
-    "choices": {
-      "A": "Merci",
-      "B": "S'il vous plaît",
-      "C": "Merci beaucoup",
-      "D": "Au revoir"
-    },
-    "answer": "C",
-    "difficulty": 5,
-    "explanation": "'Merci beaucoup' est la traduction littérale de 'thank you very much'."
-  },
-  {
-    "id": "AP_French_297",
-    "question": "Quel est le contraire de 'clair' ?",
-    "choices": {
-      "A": "Lumineux",
-      "B": "Sombre",
-      "C": "Transparent",
-      "D": "Brillant"
-    },
-    "answer": "B",
-    "difficulty": 5,
-    "explanation": "Le contraire de 'clair' (en termes de lumière) est 'sombre'."
-  },
-  {
     "id": "AP_French_298",
     "question": "Dans quelle région de France produit-on du champagne ?",
     "choices": {
       "A": "Bordeaux",
       "B": "Bourgogne",
-      "C": "Champagne",
-      "D": "Alsace"
+      "C": "Alsace",
+      "D": "Champagne"
     },
-    "answer": "C",
+    "answer": "D",
     "difficulty": 7,
     "explanation": "Le champagne, vin effervescent, tire son nom de la région Champagne, dans le nord-est de la France."
   },

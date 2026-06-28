@@ -1,22 +1,262 @@
 [
-  {"id":"SATE10_1","question":"A student is writing an essay analyzing the rhetorical strategies used in Abraham Lincoln's Gettysburg Address.\n\nLincoln's opening phrase 'Four score and seven years ago' serves multiple rhetorical functions. By using the archaic 'score' instead of simply saying 'eighty-seven years ago,' Lincoln _______ his speech with biblical gravitas, echoing the cadences of the King James Bible that would have resonated deeply with his 19th-century audience.\n\nWhich choice completes the text with the most logical and precise word?","choices":{"A":"imbued","B":"burdened","C":"obscured","D":"replaced"},"answer":"A","difficulty":10,"explanation":"'Imbued' means to fill or inspire with a quality—here, biblical gravitas. 'Burdened' implies negative weight; 'obscured' means to hide; 'replaced' doesn't capture the concept of infusing quality."},
-  {"id":"SATE10_2","question":"Epigenetic researchers have discovered that environmental factors—including diet, stress, and exposure to toxins—can alter gene expression without changing the underlying DNA sequence. These epigenetic modifications, _______ can be passed from parent to offspring, challenge the traditional view that only DNA mutations drive evolutionary change.\n\nWhich choice completes the text so that it conforms to the conventions of Standard English?","choices":{"A":"that","B":"which","C":"who","D":"where"},"answer":"B","difficulty":10,"explanation":"The clause is nonrestrictive (set off by commas) and refers to 'modifications' (things). 'Which' is required for nonrestrictive clauses about non-human antecedents. 'That' cannot begin nonrestrictive clauses; 'who' is for people; 'where' is for places."},
-  {"id":"SATE10_3","question":"The following passage discusses the impact of social media on political discourse.\n\nPolitical scientist Zeynep Tufekci has argued that social media simultaneously empowers and undermines social movements. Platforms like Twitter enable rapid mobilization and amplify marginalized voices; _______, this very speed and accessibility can produce movements that lack the organizational depth necessary for sustained political change.\n\nWhich choice completes the text with the most logical transition?","choices":{"A":"in addition","B":"for example","C":"however","D":"therefore"},"answer":"C","difficulty":10,"explanation":"The passage presents a paradox: social media both empowers AND undermines. The semicolon connects two contrasting ideas. 'However' correctly signals this contrast. 'In addition' would add to empowerment; 'for example' would illustrate; 'therefore' would show consequence."},
-  {"id":"SATE10_4","question":"Neuroscientist Lisa Feldman Barrett's theory of constructed emotion proposes that emotions are not hardwired biological reactions but rather predictions that the brain _______ based on past experience, current sensory input, and cultural context.\n\nWhich choice completes the text so that it conforms to the conventions of Standard English?","choices":{"A":"construct","B":"constructing","C":"constructs","D":"have constructed"},"answer":"C","difficulty":10,"explanation":"The subject of the relative clause is 'brain' (singular), requiring the singular verb 'constructs.' 'Construct' is plural; 'constructing' creates a fragment; 'have constructed' is plural and changes aspect."},
-  {"id":"SATE10_5","question":"In Kazuo Ishiguro's 'Never Let Me Go,' the narrator Kathy H. recounts her experiences at Hailsham, a boarding school that, as readers gradually discover, exists to raise clones for organ harvesting. The novel's emotional power derives largely from the _______ between its quiet, nostalgic tone and the horror of its central premise.\n\nWhich choice completes the text with the most logical and precise word?","choices":{"A":"dissonance","B":"harmony","C":"redundancy","D":"equivalence"},"answer":"A","difficulty":10,"explanation":"'Dissonance' (a striking lack of agreement or consistency) precisely describes the contrast between the quiet tone and horrific premise. 'Harmony' implies agreement; 'redundancy' means unnecessary repetition; 'equivalence' means equality."},
-  {"id":"SATE10_6","question":"The Dead Sea Scrolls, discovered between 1947 and 1956 in caves near Qumran, include the oldest known manuscripts of several books of the Hebrew Bible. Scholars have debated whether the scrolls _______ by a single sectarian community, such as the Essenes, or by multiple groups over several centuries.\n\nWhich choice completes the text so that it conforms to the conventions of Standard English?","choices":{"A":"were produced","B":"was produced","C":"are produced","D":"has been produced"},"answer":"A","difficulty":10,"explanation":"The subject 'scrolls' is plural, requiring a plural verb. The debate concerns historical production, requiring past tense. 'Were produced' is plural past passive. 'Was produced' is singular; 'are produced' is present; 'has been produced' is singular."},
-  {"id":"SATE10_7","question":"A student is writing a research paper about the relationship between biodiversity and ecosystem stability.\n\nEcologist David Tilman's long-term experiments at Cedar Creek demonstrated that ecosystems with greater plant species diversity were more resistant to drought and recovered more quickly afterward. These findings support the 'insurance hypothesis,' which posits that biodiversity acts as a buffer against environmental disturbances because different species respond _______ to the same stressor.\n\nWhich choice completes the text with the most logical and precise word?","choices":{"A":"identically","B":"predictably","C":"differently","D":"simultaneously"},"answer":"C","difficulty":10,"explanation":"The insurance hypothesis works because species vary in their responses—when one species fails, another compensates. 'Differently' captures this essential variation. 'Identically' would undermine the hypothesis; 'predictably' doesn't address the diversity mechanism; 'simultaneously' describes timing, not response variation."},
-  {"id":"SATE10_8","question":"The Voyager 1 spacecraft, launched in 1977, crossed the heliopause—the boundary where the sun's solar wind gives way to interstellar space—in August 2012. _______ it had traveled more than 14 billion miles from Earth, its 23-watt radio transmitter, weaker than a refrigerator light bulb, still communicated with NASA's Deep Space Network.\n\nWhich choice completes the text with the most logical transition?","choices":{"A":"Although","B":"Because","C":"Until","D":"Unless"},"answer":"A","difficulty":10,"explanation":"The sentence contrasts the extreme distance (14 billion miles) with the continued communication ability. 'Although' correctly introduces this concessive relationship. 'Because' would imply causation; 'Until' implies timing; 'Unless' implies condition."},
-  {"id":"SATE10_9","question":"Philosopher Martha Nussbaum's capabilities approach to justice argues that a society should be evaluated not by its aggregate wealth but by whether each citizen has the freedom to achieve certain fundamental capabilities, _______ the ability to live a life of normal length, to experience good health, and to participate in political decisions.\n\nWhich choice completes the text so that it conforms to the conventions of Standard English?","choices":{"A":"such as","B":"for instance","C":"like when","D":"as if"},"answer":"A","difficulty":10,"explanation":"The phrase introduces specific examples of 'fundamental capabilities.' 'Such as' is the correct formal phrase for introducing examples in this structure. 'For instance' typically begins a new clause; 'like when' and 'as if' don't introduce lists of noun phrases."},
-  {"id":"SATE10_10","question":"Neither the archaeological evidence from the site _______ the written records from the period support the long-held theory that the city was destroyed by a single catastrophic event.\n\nWhich choice completes the text so that it conforms to the conventions of Standard English?","choices":{"A":"or","B":"and","C":"nor","D":"but"},"answer":"C","difficulty":10,"explanation":"'Neither...nor' is the correct correlative conjunction pair. 'Neither...or' is grammatically incorrect; 'and' and 'but' don't complete the correlative structure."},
-  {"id":"SATE10_11","question":"In 'Braiding Sweetgrass,' Robin Wall Kimmerer—a botanist and member of the Citizen Potawatomi Nation—argues that indigenous ecological knowledge and Western science are not opposed but _______, each offering insights that the other lacks.\n\nWhich choice completes the text with the most logical and precise word?","choices":{"A":"complementary","B":"complimentary","C":"contradictory","D":"competitive"},"answer":"A","difficulty":10,"explanation":"'Complementary' means completing or enhancing each other—exactly the relationship described ('each offering insights that the other lacks'). 'Complimentary' means expressing praise or given free; 'contradictory' means opposing; 'competitive' means rivaling."},
-  {"id":"SATE10_12","question":"A student is writing about the economics of space exploration.\n\nThe private space industry has dramatically reduced launch costs. SpaceX's Falcon 9 rocket can deliver payloads to low Earth orbit for approximately $2,720 per kilogram, compared to $54,500 per kilogram for NASA's Space Shuttle. _______, the emergence of reusable rocket technology has made previously prohibitive commercial ventures—such as satellite internet constellations and space tourism—economically viable.\n\nWhich choice completes the text with the most logical transition?","choices":{"A":"Conversely","B":"As a result","C":"Meanwhile","D":"Granted"},"answer":"B","difficulty":10,"explanation":"The reduced costs lead to new commercial ventures becoming viable—a cause-effect relationship. 'As a result' correctly signals this consequence. 'Conversely' shows contrast; 'Meanwhile' shows simultaneity; 'Granted' introduces a concession."},
-  {"id":"SATE10_13","question":"The committee reviewing applications for the research grant determined that _______ of the two proposals submitted by the biology department adequately addressed the study's ethical considerations.\n\nWhich choice completes the text so that it conforms to the conventions of Standard English?","choices":{"A":"none","B":"neither","C":"each","D":"both"},"answer":"B","difficulty":10,"explanation":"With exactly two items, 'neither' is correct (meaning not one and not the other). 'None' is for three or more; 'each' and 'both' are positive, contradicting 'determined that... adequately addressed' in a negative context."},
-  {"id":"SATE10_14","question":"Behavioral economist Richard Thaler's concept of 'nudging' suggests that people's choices can be influenced by the way options are presented. For example, making organ donation the default option on driver's license applications—requiring people to opt out rather than opt in—has been shown to dramatically increase donation rates without _______ individual freedom of choice.\n\nWhich choice completes the text with the most logical and precise word?","choices":{"A":"restricting","B":"expanding","C":"acknowledging","D":"demonstrating"},"answer":"A","difficulty":10,"explanation":"The key insight of nudging is that it changes behavior while preserving freedom. 'Restricting' completes the thought: donation rates increase 'without restricting' freedom. 'Expanding' contradicts the 'without' framing; 'acknowledging' and 'demonstrating' don't relate to freedom of choice in this context."},
-  {"id":"SATE10_15","question":"Geologist Marie Tharp's meticulous mapping of the ocean floor in the 1950s revealed a continuous mountain range running through every ocean basin on Earth. Her discovery of this mid-ocean ridge system provided crucial evidence for the then-controversial theory of plate tectonics, _______ the scientific community ultimately accepted in the late 1960s.\n\nWhich choice completes the text so that it conforms to the conventions of Standard English?","choices":{"A":"which","B":"that","C":"whom","D":"what"},"answer":"A","difficulty":10,"explanation":"The clause is nonrestrictive (preceded by a comma) and refers to 'theory of plate tectonics.' 'Which' is required for nonrestrictive clauses. 'That' cannot introduce nonrestrictive clauses; 'whom' is for people; 'what' doesn't fit this structure."},
-  {"id":"SATE10_16","question":"Novelist Chimamanda Ngozi Adichie has cautioned against what she calls 'the danger of a single story'—the tendency to reduce complex cultures and peoples to one-dimensional narratives. She argues that when a single narrative dominates public discourse about a particular group, it does not merely _______ that group but actively creates a distorted reality that shapes policy, opportunity, and self-perception.\n\nWhich choice completes the text with the most logical and precise word?","choices":{"A":"misrepresent","B":"celebrate","C":"ignore","D":"investigate"},"answer":"A","difficulty":10,"explanation":"Adichie warns about the harm of single narratives. 'Misrepresent' captures the distortion inherent in reducing complexity to one story. 'Celebrate' is positive; 'ignore' means overlooking entirely; 'investigate' means studying—none capture the concept of distortion through oversimplification."},
-  {"id":"SATE10_17","question":"The Renaissance astronomer Copernicus dedicated his revolutionary work 'De Revolutionibus' to Pope Paul III, a strategic choice that reflected both genuine respect for papal authority and a pragmatic desire to shield _______ from accusations of heresy.\n\nWhich choice completes the text so that it conforms to the conventions of Standard English?","choices":{"A":"themselves","B":"himself","C":"itself","D":"oneself"},"answer":"B","difficulty":10,"explanation":"The reflexive pronoun refers back to 'Copernicus' (singular male). 'Himself' is correct. 'Themselves' is plural; 'itself' is for things; 'oneself' is generic."},
-  {"id":"SATE10_18","question":"A student researching the psychology of creativity writes the following:\n\nPsychologist Mihaly Csikszentmihalyi's concept of 'flow'—a state of complete immersion in a challenging activity—has been shown to correlate strongly with creative output. Interestingly, flow states are most likely to occur when the difficulty of a task _______ matches the individual's skill level: too easy, and boredom sets in; too difficult, and anxiety takes over.\n\nWhich choice completes the text with the most logical and precise word?","choices":{"A":"approximately","B":"barely","C":"precisely","D":"randomly"},"answer":"C","difficulty":10,"explanation":"Flow occurs at the exact intersection of challenge and skill. 'Precisely' captures this specific match. 'Approximately' implies looseness; 'barely' implies insufficiency; 'randomly' implies no pattern."},
-  {"id":"SATE10_19","question":"The passage is adapted from a scientific article on neuroplasticity.\n\nContrary to the long-held belief that the adult brain is essentially fixed, research over the past three decades has demonstrated remarkable plasticity in the mature nervous system. London taxi drivers, who must memorize the city's labyrinthine street network to pass 'The Knowledge' exam, _______ significantly larger hippocampi—the brain region associated with spatial memory—than control subjects.\n\nWhich choice completes the text so that it conforms to the conventions of Standard English?","choices":{"A":"has","B":"have","C":"having","D":"has had"},"answer":"B","difficulty":10,"explanation":"The subject is 'drivers' (plural), requiring plural 'have.' The present tense describes a general research finding. 'Has' is singular; 'having' creates a fragment; 'has had' is singular."},
-  {"id":"SATE10_20","question":"In Gabriel García Márquez's 'One Hundred Years of Solitude,' the fictional town of Macondo serves as a microcosm of Latin American history. The novel's cyclical structure—in which events and character types _______ across generations—reflects García Márquez's view that history in the region is characterized by recurring patterns of isolation, exploitation, and failed modernization.\n\nWhich choice completes the text with the most logical and precise word?","choices":{"A":"deteriorate","B":"recur","C":"vanish","D":"originate"},"answer":"B","difficulty":10,"explanation":"The passage describes a 'cyclical structure' with repeating patterns. 'Recur' means to happen again, perfectly matching the cyclical and recurring nature described. 'Deteriorate' means to worsen; 'vanish' means to disappear; 'originate' means to begin."}
+  {
+    "id": "SATE10_1",
+    "question": "A student is writing an essay analyzing the rhetorical strategies used in Abraham Lincoln's Gettysburg Address.\n\nLincoln's opening phrase 'Four score and seven years ago' serves multiple rhetorical functions. By using the archaic 'score' instead of simply saying 'eighty-seven years ago,' Lincoln _______ his speech with biblical gravitas, echoing the cadences of the King James Bible that would have resonated deeply with his 19th-century audience.\n\nWhich choice completes the text with the most logical and precise word?",
+    "choices": {
+      "A": "imbued",
+      "B": "burdened",
+      "C": "obscured",
+      "D": "replaced"
+    },
+    "answer": "A",
+    "difficulty": 10,
+    "explanation": "'Imbued' means to fill or inspire with a quality—here, biblical gravitas. 'Burdened' implies negative weight; 'obscured' means to hide; 'replaced' doesn't capture the concept of infusing quality."
+  },
+  {
+    "id": "SATE10_2",
+    "question": "Epigenetic researchers have discovered that environmental factors—including diet, stress, and exposure to toxins—can alter gene expression without changing the underlying DNA sequence. These epigenetic modifications, _______ can be passed from parent to offspring, challenge the traditional view that only DNA mutations drive evolutionary change.\n\nWhich choice completes the text so that it conforms to the conventions of Standard English?",
+    "choices": {
+      "A": "that",
+      "B": "which",
+      "C": "who",
+      "D": "where"
+    },
+    "answer": "B",
+    "difficulty": 10,
+    "explanation": "The clause is nonrestrictive (set off by commas) and refers to 'modifications' (things). 'Which' is required for nonrestrictive clauses about non-human antecedents. 'That' cannot begin nonrestrictive clauses; 'who' is for people; 'where' is for places."
+  },
+  {
+    "id": "SATE10_3",
+    "question": "The following passage discusses the impact of social media on political discourse.\n\nPolitical scientist Zeynep Tufekci has argued that social media simultaneously empowers and undermines social movements. Platforms like Twitter enable rapid mobilization and amplify marginalized voices; _______, this very speed and accessibility can produce movements that lack the organizational depth necessary for sustained political change.\n\nWhich choice completes the text with the most logical transition?",
+    "choices": {
+      "A": "in addition",
+      "B": "for example",
+      "C": "however",
+      "D": "therefore"
+    },
+    "answer": "C",
+    "difficulty": 10,
+    "explanation": "The passage presents a paradox: social media both empowers AND undermines. The semicolon connects two contrasting ideas. 'However' correctly signals this contrast. 'In addition' would add to empowerment; 'for example' would illustrate; 'therefore' would show consequence."
+  },
+  {
+    "id": "SATE10_4",
+    "question": "Neuroscientist Lisa Feldman Barrett's theory of constructed emotion proposes that emotions are not hardwired biological reactions but rather predictions that the brain _______ based on past experience, current sensory input, and cultural context.\n\nWhich choice completes the text so that it conforms to the conventions of Standard English?",
+    "choices": {
+      "A": "construct",
+      "B": "constructing",
+      "C": "constructs",
+      "D": "have constructed"
+    },
+    "answer": "C",
+    "difficulty": 10,
+    "explanation": "The subject of the relative clause is 'brain' (singular), requiring the singular verb 'constructs.' 'Construct' is plural; 'constructing' creates a fragment; 'have constructed' is plural and changes aspect."
+  },
+  {
+    "id": "SATE10_5",
+    "question": "In Kazuo Ishiguro's 'Never Let Me Go,' the narrator Kathy H. recounts her experiences at Hailsham, a boarding school that, as readers gradually discover, exists to raise clones for organ harvesting. The novel's emotional power derives largely from the _______ between its quiet, nostalgic tone and the horror of its central premise.\n\nWhich choice completes the text with the most logical and precise word?",
+    "choices": {
+      "A": "equivalence",
+      "B": "harmony",
+      "C": "redundancy",
+      "D": "dissonance"
+    },
+    "answer": "D",
+    "difficulty": 10,
+    "explanation": "'Dissonance' (a striking lack of agreement or consistency) precisely describes the contrast between the quiet tone and horrific premise. 'Harmony' implies agreement; 'redundancy' means unnecessary repetition; 'equivalence' means equality."
+  },
+  {
+    "id": "SATE10_6",
+    "question": "The Dead Sea Scrolls, discovered between 1947 and 1956 in caves near Qumran, include the oldest known manuscripts of several books of the Hebrew Bible. Scholars have debated whether the scrolls _______ by a single sectarian community, such as the Essenes, or by multiple groups over several centuries.\n\nWhich choice completes the text so that it conforms to the conventions of Standard English?",
+    "choices": {
+      "A": "were produced",
+      "B": "was produced",
+      "C": "are produced",
+      "D": "has been produced"
+    },
+    "answer": "A",
+    "difficulty": 10,
+    "explanation": "The subject 'scrolls' is plural, requiring a plural verb. The debate concerns historical production, requiring past tense. 'Were produced' is plural past passive. 'Was produced' is singular; 'are produced' is present; 'has been produced' is singular."
+  },
+  {
+    "id": "SATE10_7",
+    "question": "A student is writing a research paper about the relationship between biodiversity and ecosystem stability.\n\nEcologist David Tilman's long-term experiments at Cedar Creek demonstrated that ecosystems with greater plant species diversity were more resistant to drought and recovered more quickly afterward. These findings support the 'insurance hypothesis,' which posits that biodiversity acts as a buffer against environmental disturbances because different species respond _______ to the same stressor.\n\nWhich choice completes the text with the most logical and precise word?",
+    "choices": {
+      "A": "identically",
+      "B": "predictably",
+      "C": "differently",
+      "D": "simultaneously"
+    },
+    "answer": "C",
+    "difficulty": 10,
+    "explanation": "The insurance hypothesis works because species vary in their responses—when one species fails, another compensates. 'Differently' captures this essential variation. 'Identically' would undermine the hypothesis; 'predictably' doesn't address the diversity mechanism; 'simultaneously' describes timing, not response variation."
+  },
+  {
+    "id": "SATE10_8",
+    "question": "The Voyager 1 spacecraft, launched in 1977, crossed the heliopause—the boundary where the sun's solar wind gives way to interstellar space—in August 2012. _______ it had traveled more than 14 billion miles from Earth, its 23-watt radio transmitter, weaker than a refrigerator light bulb, still communicated with NASA's Deep Space Network.\n\nWhich choice completes the text with the most logical transition?",
+    "choices": {
+      "A": "Although",
+      "B": "Because",
+      "C": "Until",
+      "D": "Unless"
+    },
+    "answer": "A",
+    "difficulty": 10,
+    "explanation": "The sentence contrasts the extreme distance (14 billion miles) with the continued communication ability. 'Although' correctly introduces this concessive relationship. 'Because' would imply causation; 'Until' implies timing; 'Unless' implies condition."
+  },
+  {
+    "id": "SATE10_9",
+    "question": "Philosopher Martha Nussbaum's capabilities approach to justice argues that a society should be evaluated not by its aggregate wealth but by whether each citizen has the freedom to achieve certain fundamental capabilities, _______ the ability to live a life of normal length, to experience good health, and to participate in political decisions.\n\nWhich choice completes the text so that it conforms to the conventions of Standard English?",
+    "choices": {
+      "A": "as if",
+      "B": "for instance",
+      "C": "like when",
+      "D": "such as"
+    },
+    "answer": "D",
+    "difficulty": 10,
+    "explanation": "The phrase introduces specific examples of 'fundamental capabilities.' 'Such as' is the correct formal phrase for introducing examples in this structure. 'For instance' typically begins a new clause; 'like when' and 'as if' don't introduce lists of noun phrases."
+  },
+  {
+    "id": "SATE10_10",
+    "question": "Neither the archaeological evidence from the site _______ the written records from the period support the long-held theory that the city was destroyed by a single catastrophic event.\n\nWhich choice completes the text so that it conforms to the conventions of Standard English?",
+    "choices": {
+      "A": "or",
+      "B": "and",
+      "C": "nor",
+      "D": "but"
+    },
+    "answer": "C",
+    "difficulty": 10,
+    "explanation": "'Neither...nor' is the correct correlative conjunction pair. 'Neither...or' is grammatically incorrect; 'and' and 'but' don't complete the correlative structure."
+  },
+  {
+    "id": "SATE10_11",
+    "question": "In 'Braiding Sweetgrass,' Robin Wall Kimmerer—a botanist and member of the Citizen Potawatomi Nation—argues that indigenous ecological knowledge and Western science are not opposed but _______, each offering insights that the other lacks.\n\nWhich choice completes the text with the most logical and precise word?",
+    "choices": {
+      "A": "complementary",
+      "B": "complimentary",
+      "C": "contradictory",
+      "D": "competitive"
+    },
+    "answer": "A",
+    "difficulty": 10,
+    "explanation": "'Complementary' means completing or enhancing each other—exactly the relationship described ('each offering insights that the other lacks'). 'Complimentary' means expressing praise or given free; 'contradictory' means opposing; 'competitive' means rivaling."
+  },
+  {
+    "id": "SATE10_12",
+    "question": "A student is writing about the economics of space exploration.\n\nThe private space industry has dramatically reduced launch costs. SpaceX's Falcon 9 rocket can deliver payloads to low Earth orbit for approximately $2,720 per kilogram, compared to $54,500 per kilogram for NASA's Space Shuttle. _______, the emergence of reusable rocket technology has made previously prohibitive commercial ventures—such as satellite internet constellations and space tourism—economically viable.\n\nWhich choice completes the text with the most logical transition?",
+    "choices": {
+      "A": "Conversely",
+      "B": "As a result",
+      "C": "Meanwhile",
+      "D": "Granted"
+    },
+    "answer": "B",
+    "difficulty": 10,
+    "explanation": "The reduced costs lead to new commercial ventures becoming viable—a cause-effect relationship. 'As a result' correctly signals this consequence. 'Conversely' shows contrast; 'Meanwhile' shows simultaneity; 'Granted' introduces a concession."
+  },
+  {
+    "id": "SATE10_13",
+    "question": "The committee reviewing applications for the research grant determined that _______ of the two proposals submitted by the biology department adequately addressed the study's ethical considerations.\n\nWhich choice completes the text so that it conforms to the conventions of Standard English?",
+    "choices": {
+      "A": "none",
+      "B": "neither",
+      "C": "each",
+      "D": "both"
+    },
+    "answer": "B",
+    "difficulty": 10,
+    "explanation": "With exactly two items, 'neither' is correct (meaning not one and not the other). 'None' is for three or more; 'each' and 'both' are positive, contradicting 'determined that... adequately addressed' in a negative context."
+  },
+  {
+    "id": "SATE10_14",
+    "question": "Behavioral economist Richard Thaler's concept of 'nudging' suggests that people's choices can be influenced by the way options are presented. For example, making organ donation the default option on driver's license applications—requiring people to opt out rather than opt in—has been shown to dramatically increase donation rates without _______ individual freedom of choice.\n\nWhich choice completes the text with the most logical and precise word?",
+    "choices": {
+      "A": "demonstrating",
+      "B": "expanding",
+      "C": "acknowledging",
+      "D": "restricting"
+    },
+    "answer": "D",
+    "difficulty": 10,
+    "explanation": "The key insight of nudging is that it changes behavior while preserving freedom. 'Restricting' completes the thought: donation rates increase 'without restricting' freedom. 'Expanding' contradicts the 'without' framing; 'acknowledging' and 'demonstrating' don't relate to freedom of choice in this context."
+  },
+  {
+    "id": "SATE10_15",
+    "question": "Geologist Marie Tharp's meticulous mapping of the ocean floor in the 1950s revealed a continuous mountain range running through every ocean basin on Earth. Her discovery of this mid-ocean ridge system provided crucial evidence for the then-controversial theory of plate tectonics, _______ the scientific community ultimately accepted in the late 1960s.\n\nWhich choice completes the text so that it conforms to the conventions of Standard English?",
+    "choices": {
+      "A": "which",
+      "B": "that",
+      "C": "whom",
+      "D": "what"
+    },
+    "answer": "A",
+    "difficulty": 10,
+    "explanation": "The clause is nonrestrictive (preceded by a comma) and refers to 'theory of plate tectonics.' 'Which' is required for nonrestrictive clauses. 'That' cannot introduce nonrestrictive clauses; 'whom' is for people; 'what' doesn't fit this structure."
+  },
+  {
+    "id": "SATE10_16",
+    "question": "Novelist Chimamanda Ngozi Adichie has cautioned against what she calls 'the danger of a single story'—the tendency to reduce complex cultures and peoples to one-dimensional narratives. She argues that when a single narrative dominates public discourse about a particular group, it does not merely _______ that group but actively creates a distorted reality that shapes policy, opportunity, and self-perception.\n\nWhich choice completes the text with the most logical and precise word?",
+    "choices": {
+      "A": "investigate",
+      "B": "celebrate",
+      "C": "ignore",
+      "D": "misrepresent"
+    },
+    "answer": "D",
+    "difficulty": 10,
+    "explanation": "Adichie warns about the harm of single narratives. 'Misrepresent' captures the distortion inherent in reducing complexity to one story. 'Celebrate' is positive; 'ignore' means overlooking entirely; 'investigate' means studying—none capture the concept of distortion through oversimplification."
+  },
+  {
+    "id": "SATE10_17",
+    "question": "The Renaissance astronomer Copernicus dedicated his revolutionary work 'De Revolutionibus' to Pope Paul III, a strategic choice that reflected both genuine respect for papal authority and a pragmatic desire to shield _______ from accusations of heresy.\n\nWhich choice completes the text so that it conforms to the conventions of Standard English?",
+    "choices": {
+      "A": "themselves",
+      "B": "himself",
+      "C": "itself",
+      "D": "oneself"
+    },
+    "answer": "B",
+    "difficulty": 10,
+    "explanation": "The reflexive pronoun refers back to 'Copernicus' (singular male). 'Himself' is correct. 'Themselves' is plural; 'itself' is for things; 'oneself' is generic."
+  },
+  {
+    "id": "SATE10_18",
+    "question": "A student researching the psychology of creativity writes the following:\n\nPsychologist Mihaly Csikszentmihalyi's concept of 'flow'—a state of complete immersion in a challenging activity—has been shown to correlate strongly with creative output. Interestingly, flow states are most likely to occur when the difficulty of a task _______ matches the individual's skill level: too easy, and boredom sets in; too difficult, and anxiety takes over.\n\nWhich choice completes the text with the most logical and precise word?",
+    "choices": {
+      "A": "approximately",
+      "B": "barely",
+      "C": "precisely",
+      "D": "randomly"
+    },
+    "answer": "C",
+    "difficulty": 10,
+    "explanation": "Flow occurs at the exact intersection of challenge and skill. 'Precisely' captures this specific match. 'Approximately' implies looseness; 'barely' implies insufficiency; 'randomly' implies no pattern."
+  },
+  {
+    "id": "SATE10_19",
+    "question": "The passage is adapted from a scientific article on neuroplasticity.\n\nContrary to the long-held belief that the adult brain is essentially fixed, research over the past three decades has demonstrated remarkable plasticity in the mature nervous system. London taxi drivers, who must memorize the city's labyrinthine street network to pass 'The Knowledge' exam, _______ significantly larger hippocampi—the brain region associated with spatial memory—than control subjects.\n\nWhich choice completes the text so that it conforms to the conventions of Standard English?",
+    "choices": {
+      "A": "has",
+      "B": "have",
+      "C": "having",
+      "D": "has had"
+    },
+    "answer": "B",
+    "difficulty": 10,
+    "explanation": "The subject is 'drivers' (plural), requiring plural 'have.' The present tense describes a general research finding. 'Has' is singular; 'having' creates a fragment; 'has had' is singular."
+  },
+  {
+    "id": "SATE10_20",
+    "question": "In Gabriel García Márquez's 'One Hundred Years of Solitude,' the fictional town of Macondo serves as a microcosm of Latin American history. The novel's cyclical structure—in which events and character types _______ across generations—reflects García Márquez's view that history in the region is characterized by recurring patterns of isolation, exploitation, and failed modernization.\n\nWhich choice completes the text with the most logical and precise word?",
+    "choices": {
+      "A": "deteriorate",
+      "B": "recur",
+      "C": "vanish",
+      "D": "originate"
+    },
+    "answer": "B",
+    "difficulty": 10,
+    "explanation": "The passage describes a 'cyclical structure' with repeating patterns. 'Recur' means to happen again, perfectly matching the cyclical and recurring nature described. 'Deteriorate' means to worsen; 'vanish' means to disappear; 'originate' means to begin."
+  }
 ]

@@ -1,29 +1,29 @@
 [
   {
-    "id": "AP_Phys1_1",
-    "question": "A ball is thrown vertically upward at 20 m/s. How high does it rise? (g = 10 m/s²)",
+    "id": "AP_Physics_1_28",
+    "question": "A ball is thrown vertically upward with an initial speed $v_0$. Neglecting air resistance, which statement best describes the motion after it reaches its maximum height and is on its way down?",
     "choices": {
-      "A": "20 m",
-      "B": "40 m",
-      "C": "10 m",
-      "D": "30 m"
+      "A": "The acceleration is zero.",
+      "B": "The velocity is upward and decreasing.",
+      "C": "The velocity is downward and its magnitude is increasing.",
+      "D": "The velocity is downward and its magnitude is decreasing."
     },
-    "answer": "A",
-    "difficulty": 5,
-    "explanation": "v² = v₀² - 2gh → 0 = 400 - 20h → h = 20 m."
+    "answer": "C",
+    "difficulty": 4,
+    "explanation": "Once the ball leaves the hand, the only force acting on it (neglecting air resistance) is gravity. Gravity causes a constant downward acceleration $g$. As the ball falls downwards, its velocity is also downwards. Since acceleration is in the same direction as velocity, the magnitude of the velocity (speed) increases."
   },
   {
-    "id": "AP_Phys1_2",
-    "question": "A 5 kg box on a frictionless surface has a net force of 15 N. What is its acceleration?",
+    "id": "AP_Physics_1_33",
+    "question": "A car moving at a speed $v$ applies its brakes and stops in time $t$. If the car were initially moving at $2v$ and braked with the same deceleration, in what time would it stop?",
     "choices": {
-      "A": "3 m/s²",
-      "B": "5 m/s²",
-      "C": "75 m/s²",
-      "D": "0.33 m/s²"
+      "A": "$t$",
+      "B": "$2t$",
+      "C": "$4t$",
+      "D": "$t/2$"
     },
-    "answer": "A",
-    "difficulty": 5,
-    "explanation": "a = F/m = 15/5 = 3 m/s²."
+    "answer": "B",
+    "difficulty": 6,
+    "explanation": "The kinematic equation relating initial velocity ($v_i$), final velocity ($v_f$), acceleration ($a$), and time ($t$) is $v_f = v_i + at$. Assuming deceleration is constant, let's call it $-a'$. When the initial speed is $v$, $0 = v - at$, so $t = v/a'$. When the initial speed is $2v$, $0 = 2v - a't'$, so $t' = 2v/a' = 2(v/a') = 2t$."
   },
   {
     "id": "AP_Phys1_3",
@@ -39,30 +39,30 @@
     "explanation": "Circular motion requires centripetal acceleration toward the center."
   },
   {
-    "id": "AP_Phys1_4",
-    "question": "A 2 kg ball at 4 m/s hits a 6 kg ball at rest (perfectly inelastic). Combined velocity?",
+    "id": "AP_Physics_1_225",
+    "question": "A student applies a torque to a massive, rotating disk to slow it down. Which of the following statements correctly describes the effect of this torque on the disk?",
     "choices": {
-      "A": "1 m/s",
-      "B": "2 m/s",
-      "C": "4 m/s",
-      "D": "0.5 m/s"
+      "A": "The angular momentum of the disk increases.",
+      "B": "The rotational inertia of the disk decreases.",
+      "C": "The angular velocity of the disk decreases.",
+      "D": "The total mechanical energy of the disk increases."
     },
-    "answer": "A",
-    "difficulty": 6,
-    "explanation": "(2)(4) = (8)v → v = 1 m/s."
+    "answer": "C",
+    "difficulty": 5,
+    "explanation": "Torque is the rotational analogue of force. A net external torque causes a change in angular momentum (tau = delta_L / delta_t). If the torque is applied to slow the disk down, it means the torque is in the opposite direction to the disk's angular velocity. This will cause the angular velocity to decrease. The rotational inertia of the disk depends on its mass distribution and shape, which are not changing. The angular momentum will decrease because the angular velocity is decreasing. The total mechanical energy will decrease because the rotational kinetic energy (1/2*I*omega^2) is decreasing."
   },
   {
-    "id": "AP_Phys1_5",
-    "question": "A spring (k = 200 N/m) compressed 0.1 m stores how much PE?",
+    "id": "AP_Physics_1_155",
+    "question": "A block is sliding down a frictionless inclined plane. As the angle of inclination decreases, what happens to the acceleration of the block?",
     "choices": {
-      "A": "1 J",
-      "B": "2 J",
-      "C": "10 J",
-      "D": "20 J"
+      "A": "It decreases.",
+      "B": "It increases.",
+      "C": "It remains the same.",
+      "D": "It becomes zero."
     },
     "answer": "A",
     "difficulty": 5,
-    "explanation": "PE = ½kx² = ½(200)(0.01) = 1 J."
+    "explanation": "The acceleration of a block sliding down a frictionless incline is $a = g sin\theta$, where $\theta$ is the angle of inclination. Since $sin\theta$ decreases as $\theta$ decreases (for $0^circ < \theta leq 90^circ$), the acceleration also decreases."
   },
   {
     "id": "AP_Phys1_6",
@@ -81,12 +81,12 @@
     "id": "AP_Phys1_7",
     "question": "A projectile launched at 30° with v₀ = 40 m/s. Horizontal component?",
     "choices": {
-      "A": "34.6 m/s",
+      "A": "28.3 m/s",
       "B": "20 m/s",
       "C": "40 m/s",
-      "D": "28.3 m/s"
+      "D": "34.6 m/s"
     },
-    "answer": "A",
+    "answer": "D",
     "difficulty": 5,
     "explanation": "vₓ = 40cos(30°) = 40(0.866) ≈ 34.6 m/s."
   },
@@ -120,12 +120,12 @@
     "id": "AP_Phys1_10",
     "question": "Car at 20 m/s stops in 4 s. Deceleration magnitude:",
     "choices": {
-      "A": "5 m/s²",
+      "A": "10 m/s²",
       "B": "80 m/s²",
       "C": "4 m/s²",
-      "D": "10 m/s²"
+      "D": "5 m/s²"
     },
-    "answer": "A",
+    "answer": "D",
     "difficulty": 5,
     "explanation": "a = 20/4 = 5 m/s²."
   },
@@ -133,12 +133,12 @@
     "id": "AP_Phys1_11",
     "question": "Pendulum period 2 s on Earth. Period where g = 2.5 m/s²?",
     "choices": {
-      "A": "4 s",
+      "A": "2 s",
       "B": "1 s",
-      "C": "2 s",
+      "C": "4 s",
       "D": "8 s"
     },
-    "answer": "A",
+    "answer": "C",
     "difficulty": 7,
     "explanation": "T ∝ 1/√g. g drops by factor 4, so T doubles to 4 s."
   },
@@ -146,12 +146,12 @@
     "id": "AP_Phys1_12",
     "question": "Two perpendicular forces of 3 N and 4 N. Resultant:",
     "choices": {
-      "A": "5 N",
+      "A": "12 N",
       "B": "7 N",
       "C": "1 N",
-      "D": "12 N"
+      "D": "5 N"
     },
-    "answer": "A",
+    "answer": "D",
     "difficulty": 5,
     "explanation": "√(9 + 16) = 5 N."
   },
@@ -159,12 +159,12 @@
     "id": "AP_Phys1_13",
     "question": "Wheel from rest, α = 4 rad/s². Angular velocity after 3 s:",
     "choices": {
-      "A": "12 rad/s",
+      "A": "9 rad/s",
       "B": "36 rad/s",
       "C": "6 rad/s",
-      "D": "9 rad/s"
+      "D": "12 rad/s"
     },
-    "answer": "A",
+    "answer": "D",
     "difficulty": 6,
     "explanation": "ω = αt = 4(3) = 12 rad/s."
   },
@@ -172,12 +172,12 @@
     "id": "AP_Phys1_14",
     "question": "Impulse equals:",
     "choices": {
-      "A": "Change in momentum",
+      "A": "Acceleration × time²",
       "B": "Kinetic energy",
       "C": "Work done",
-      "D": "Acceleration × time²"
+      "D": "Change in momentum"
     },
-    "answer": "A",
+    "answer": "D",
     "difficulty": 5,
     "explanation": "Impulse-momentum theorem: J = Δp."
   },
@@ -224,12 +224,12 @@
     "id": "AP_Phys1_18",
     "question": "Static equilibrium requires:",
     "choices": {
-      "A": "ΣF = 0 and Στ = 0",
+      "A": "a = 0 and constant v",
       "B": "ΣF = 0 only",
       "C": "v = 0 only",
-      "D": "a = 0 and constant v"
+      "D": "ΣF = 0 and Στ = 0"
     },
-    "answer": "A",
+    "answer": "D",
     "difficulty": 6,
     "explanation": "Both translational (ΣF=0) and rotational (Στ=0) equilibrium needed."
   },
@@ -237,12 +237,12 @@
     "id": "AP_Phys1_19",
     "question": "500 kg coaster at top of 20 m hill at 5 m/s. Speed at bottom (no friction):",
     "choices": {
-      "A": "~20.6 m/s",
+      "A": "10 m/s",
       "B": "15 m/s",
       "C": "25 m/s",
-      "D": "10 m/s"
+      "D": "~20.6 m/s"
     },
-    "answer": "A",
+    "answer": "D",
     "difficulty": 7,
     "explanation": "½mv₀² + mgh = ½mv² → v² = 25 + 400 = 425 → v ≈ 20.6 m/s."
   },
@@ -260,19 +260,6 @@
     "explanation": "50(3) = 75v → v = 2 m/s (opposite direction)."
   },
   {
-    "id": "AP_Physics_1_21",
-    "question": "A block of mass $m$ is pulled across a frictionless horizontal surface by a horizontal force $F$. If the force $F$ is doubled, what is the new acceleration of the block?",
-    "choices": {
-      "A": "It remains the same.",
-      "B": "It is doubled.",
-      "C": "It is quadrupled.",
-      "D": "It is halved."
-    },
-    "answer": "B",
-    "difficulty": 3,
-    "explanation": "According to Newton's second law, $F_{net} = ma$. On a frictionless surface, the net force is the applied force $F$. If $F$ is doubled to $2F$, and the mass $m$ remains constant, the acceleration $a$ must also double to maintain the equality: $2F = m(2a)$."
-  },
-  {
     "id": "AP_Physics_1_22",
     "question": "Two objects, A and B, have masses $m_A = 2 \text{ kg}$ and $m_B = 4 \text{ kg}$ respectively. They are initially at rest, and the same net force is applied to each. Which object experiences a greater acceleration?",
     "choices": {
@@ -284,19 +271,6 @@
     "answer": "A",
     "difficulty": 4,
     "explanation": "Newton's second law states $a = F_{net}/m$. Since the net force $F_{net}$ is the same for both objects, the acceleration is inversely proportional to the mass. Object A has a smaller mass ($2 \text{ kg}$) than object B ($4 \text{ kg}$), so it will experience a greater acceleration."
-  },
-  {
-    "id": "AP_Physics_1_23",
-    "question": "A car of mass $M$ is moving with a constant velocity $v$. If the engine suddenly cuts out, and neglecting air resistance and friction, what is the net force acting on the car?",
-    "choices": {
-      "A": "Zero",
-      "B": "$Mg$ (downward)",
-      "C": "$Mg$ (upward)",
-      "D": "A force opposing the motion"
-    },
-    "answer": "A",
-    "difficulty": 3,
-    "explanation": "Constant velocity implies zero acceleration. According to Newton's second law ($F_{net} = ma$), if the acceleration is zero, the net force acting on the object must also be zero."
   },
   {
     "id": "AP_Physics_1_24",
@@ -325,54 +299,41 @@
     "explanation": "For the block to remain at rest, the force of static friction must balance the component of gravity pulling the block down the incline. The component of gravity down the incline is $mg sin \theta$. The maximum static friction force is $f_{s,max} = mu_s N$, where $N = mg cos \theta$ is the normal force. Thus, for equilibrium, $mg sin \theta le mu_s mg cos \theta$. Dividing by $mg cos \theta$ (since $cos \theta > 0$ for typical inclined planes), we get $\tan \theta le mu_s$. This inequality can be rewritten as $\theta le arctan(mu_s)$."
   },
   {
-    "id": "AP_Physics_1_26",
-    "question": "A 10 kg block is at rest on a horizontal frictionless surface. A constant horizontal force is applied to the block, causing it to accelerate at $2 \text{ m/s}^2$. What is the magnitude of the applied force?",
+    "id": "AP_Phys1_1",
+    "question": "A ball is thrown vertically upward at 20 m/s. How high does it rise? (g = 10 m/s²)",
     "choices": {
-      "A": "5 N",
-      "B": "10 N",
-      "C": "20 N",
-      "D": "200 N"
+      "A": "30 m",
+      "B": "40 m",
+      "C": "10 m",
+      "D": "20 m"
     },
-    "answer": "C",
-    "difficulty": 4,
-    "explanation": "Using Newton's second law, $F_{net} = ma$. Since the surface is frictionless, the net force is equal to the applied force. $F = (10 \text{ kg}) \times (2 \text{ m/s}^2) = 20 \text{ N}$."
+    "answer": "D",
+    "difficulty": 5,
+    "explanation": "v² = v₀² - 2gh → 0 = 400 - 20h → h = 20 m."
   },
   {
-    "id": "AP_Physics_1_27",
-    "question": "A student pushes a box of mass $m$ across a floor. The student exerts a horizontal force $F$. There is a kinetic friction force $f_k$ opposing the motion. What is the net force acting on the box in the direction of motion?",
+    "id": "AP_Physics_1_154",
+    "question": "A 10 kg crate rests on a horizontal surface. The coefficient of static friction is $mu_s = 0.4$. What is the minimum horizontal force required to start the crate moving?",
     "choices": {
-      "A": "$F$",
-      "B": "$f_k$",
-      "C": "$F - f_k$",
-      "D": "$F + f_k$"
+      "A": "$39.2\text{ N}$",
+      "B": "$40\text{ N}$",
+      "C": "$98\text{ N}$",
+      "D": "$100\text{ N}$"
     },
-    "answer": "C",
-    "difficulty": 3,
-    "explanation": "The net force is the vector sum of all forces acting on an object. In the horizontal direction, the applied force $F$ is in the direction of motion, and the kinetic friction force $f_k$ is in the opposite direction. Therefore, the net force in the direction of motion is $F_{net} = F - f_k$."
-  },
-  {
-    "id": "AP_Physics_1_28",
-    "question": "A ball is thrown vertically upward with an initial speed $v_0$. Neglecting air resistance, which statement best describes the motion after it reaches its maximum height and is on its way down?",
-    "choices": {
-      "A": "The acceleration is zero.",
-      "B": "The velocity is upward and decreasing.",
-      "C": "The velocity is downward and its magnitude is increasing.",
-      "D": "The velocity is downward and its magnitude is decreasing."
-    },
-    "answer": "C",
-    "difficulty": 4,
-    "explanation": "Once the ball leaves the hand, the only force acting on it (neglecting air resistance) is gravity. Gravity causes a constant downward acceleration $g$. As the ball falls downwards, its velocity is also downwards. Since acceleration is in the same direction as velocity, the magnitude of the velocity (speed) increases."
+    "answer": "A",
+    "difficulty": 6,
+    "explanation": "The maximum static friction force is $f_{s,max} = mu_s N$. The normal force $N$ on a horizontal surface is equal to the weight, $mg$. So, $N = (10 \text{ kg})(9.8 \text{ m/s}^2) = 98 \text{ N}$. Therefore, $f_{s,max} = (0.4)(98 \text{ N}) = 39.2 \text{ N}$. The minimum force to start moving is equal to this maximum static friction."
   },
   {
     "id": "AP_Physics_1_29",
     "question": "A system consists of two masses, $m_1$ and $m_2$, connected by a light, inextensible string passing over a light, frictionless pulley. If $m_1 = 2 \text{ kg}$ and $m_2 = 3 \text{ kg}$, what is the magnitude of the acceleration of the masses?",
     "choices": {
-      "A": "$g/5$",
+      "A": "$g$",
       "B": "$g/3$",
       "C": "$g/2$",
-      "D": "$g$"
+      "D": "$g/5$"
     },
-    "answer": "A",
+    "answer": "D",
     "difficulty": 6,
     "explanation": "Let $T$ be the tension in the string and $a$ be the acceleration. For $m_1$, $T - m_1 g = m_1 a$. For $m_2$, $m_2 g - T = m_2 a$. Adding the two equations, $(m_2 - m_1)g = (m_1 + m_2)a$. So, $a = \frac{m_2 - m_1}{m_1 + m_2}g = \frac{3-2}{2+3}g = \frac{1}{5}g$."
   },
@@ -380,27 +341,14 @@
     "id": "AP_Physics_1_30",
     "question": "A student is on a frictionless skateboard. When the student throws a ball of mass $m$ forward with velocity $v_{ball}$ relative to the ground, the student and skateboard move backward with velocity $v_{student}$. This is an example of:",
     "choices": {
-      "A": "Conservation of momentum",
+      "A": "Newton's Third Law",
       "B": "Conservation of energy",
       "C": "Newton's First Law",
-      "D": "Newton's Third Law"
-    },
-    "answer": "A",
-    "difficulty": 4,
-    "explanation": "Initially, the student, skateboard, and ball are at rest, so the total momentum is zero. When the ball is thrown forward, it gains momentum in the forward direction. To conserve total momentum, the student and skateboard must gain an equal amount of momentum in the backward direction. This is a direct application of the principle of conservation of linear momentum."
-  },
-  {
-    "id": "AP_Physics_1_31",
-    "question": "A spring is compressed by a distance $x$ from its equilibrium position. If the spring constant is $k$, what is the potential energy stored in the spring?",
-    "choices": {
-      "A": "$kx$",
-      "B": "$kx^2$",
-      "C": "$\frac{1}{2}kx$",
-      "D": "$\frac{1}{2}kx^2$"
+      "D": "Conservation of momentum"
     },
     "answer": "D",
-    "difficulty": 3,
-    "explanation": "The potential energy stored in an ideal spring is given by the formula $PE_s = \frac{1}{2}kx^2$, where $k$ is the spring constant and $x$ is the displacement from its equilibrium position."
+    "difficulty": 4,
+    "explanation": "Initially, the student, skateboard, and ball are at rest, so the total momentum is zero. When the ball is thrown forward, it gains momentum in the forward direction. To conserve total momentum, the student and skateboard must gain an equal amount of momentum in the backward direction. This is a direct application of the principle of conservation of linear momentum."
   },
   {
     "id": "AP_Physics_1_32",
@@ -416,17 +364,17 @@
     "explanation": "Using the conservation of mechanical energy, the initial potential energy ($PE_i = mgh$) is converted into kinetic energy at the bottom ($KE_f = \frac{1}{2}mv^2$). Since the incline is frictionless, mechanical energy is conserved. $mgh = \frac{1}{2}mv^2$. Solving for $v$, we get $v = sqrt{2gh}$."
   },
   {
-    "id": "AP_Physics_1_33",
-    "question": "A car moving at a speed $v$ applies its brakes and stops in time $t$. If the car were initially moving at $2v$ and braked with the same deceleration, in what time would it stop?",
+    "id": "AP_Phys1_2",
+    "question": "A 5 kg box on a frictionless surface has a net force of 15 N. What is its acceleration?",
     "choices": {
-      "A": "$t$",
-      "B": "$2t$",
-      "C": "$4t$",
-      "D": "$t/2$"
+      "A": "0.33 m/s²",
+      "B": "5 m/s²",
+      "C": "75 m/s²",
+      "D": "3 m/s²"
     },
-    "answer": "B",
-    "difficulty": 6,
-    "explanation": "The kinematic equation relating initial velocity ($v_i$), final velocity ($v_f$), acceleration ($a$), and time ($t$) is $v_f = v_i + at$. Assuming deceleration is constant, let's call it $-a'$. When the initial speed is $v$, $0 = v - at$, so $t = v/a'$. When the initial speed is $2v$, $0 = 2v - a't'$, so $t' = 2v/a' = 2(v/a') = 2t$."
+    "answer": "D",
+    "difficulty": 5,
+    "explanation": "a = F/m = 15/5 = 3 m/s²."
   },
   {
     "id": "AP_Physics_1_34",
@@ -445,12 +393,12 @@
     "id": "AP_Physics_1_35",
     "question": "An object of mass $m$ collides head-on with an identical object of mass $m$ that is initially at rest. If the collision is perfectly elastic, what is the final velocity of the first object?",
     "choices": {
-      "A": "Zero",
+      "A": "The initial velocity of the second object",
       "B": "The initial velocity of the first object",
       "C": "Half the initial velocity of the first object",
-      "D": "The initial velocity of the second object"
+      "D": "Zero"
     },
-    "answer": "A",
+    "answer": "D",
     "difficulty": 7,
     "explanation": "In a perfectly elastic collision between two identical objects where one is initially at rest, momentum and kinetic energy are conserved. Let the initial velocity of the first object be $v_1$ and the second be $v_2=0$. For momentum conservation: $mv_1 + m(0) = mv_{1f} + mv_{2f}$. For kinetic energy conservation: $\frac{1}{2}mv_1^2 + \frac{1}{2}m(0)^2 = \frac{1}{2}mv_{1f}^2 + \frac{1}{2}mv_{2f}^2$. Solving these equations yields $v_{1f}=0$ and $v_{2f}=v_1$. The first object comes to rest."
   },
@@ -468,19 +416,6 @@
     "explanation": "Torque ($\tau$) is defined as the product of the force and the perpendicular distance from the pivot point to the line of action of the force ($\tau = rF_perp$). In this case, the force $F$ is applied at a distance $L/2$ from the pivot, and it's perpendicular to the rod. Therefore, $\tau = (L/2)F$."
   },
   {
-    "id": "AP_Physics_1_37",
-    "question": "Which of the following quantities is a vector?",
-    "choices": {
-      "A": "Mass",
-      "B": "Energy",
-      "C": "Velocity",
-      "D": "Temperature"
-    },
-    "answer": "C",
-    "difficulty": 3,
-    "explanation": "Velocity is a vector quantity, meaning it has both magnitude (speed) and direction. Mass, energy, and temperature are scalar quantities, possessing only magnitude."
-  },
-  {
     "id": "AP_Physics_1_38",
     "question": "A block is at rest on a rough horizontal surface. If a horizontal force is applied to the block, but it does not move, which statement is true?",
     "choices": {
@@ -492,19 +427,6 @@
     "answer": "C",
     "difficulty": 4,
     "explanation": "If the block is not moving, it is in static equilibrium. The net force acting on it is zero. The forces acting horizontally are the applied force and the static friction force. For the net force to be zero, the static friction force must be equal in magnitude and opposite in direction to the applied force."
-  },
-  {
-    "id": "AP_Physics_1_39",
-    "question": "A point mass $m$ is moving in a circle of radius $r$ with constant speed $v$. What is the direction of the centripetal acceleration?",
-    "choices": {
-      "A": "Tangential to the circle, in the direction of motion",
-      "B": "Tangential to the circle, opposite the direction of motion",
-      "C": "Radially inward, towards the center of the circle",
-      "D": "Radially outward, away from the center of the circle"
-    },
-    "answer": "C",
-    "difficulty": 3,
-    "explanation": "Centripetal acceleration is defined as the acceleration that causes an object to move in a circular path. Its direction is always towards the center of the circle. The magnitude is $a_c = v^2/r$."
   },
   {
     "id": "AP_Physics_1_40",
@@ -520,28 +442,15 @@
     "explanation": "An inelastic collision is one in which kinetic energy is not conserved. Typically, some kinetic energy is converted into other forms of energy, such as heat or sound. When a bullet embeds itself in a block of wood, the two objects move together afterward, and kinetic energy is lost due to deformation and heat."
   },
   {
-    "id": "AP_Physics_1_41",
-    "question": "The work done on an object by a constant force $vec{F}$ is given by $W = vec{F} cdot vec{d}$, where $vec{d}$ is the displacement. If a force of $20 \text{ N}$ acts on an object causing a displacement of $5 \text{ m}$ in the same direction as the force, what is the work done?",
-    "choices": {
-      "A": "100 J",
-      "B": "25 J",
-      "C": "15 J",
-      "D": "4 J"
-    },
-    "answer": "A",
-    "difficulty": 3,
-    "explanation": "Since the force and displacement are in the same direction, the angle between them is $0^circ$, and $cos(0^circ) = 1$. Therefore, $W = Fdcos\theta = (20 \text{ N})(5 \text{ m})(1) = 100 \text{ J}$."
-  },
-  {
     "id": "AP_Physics_1_42",
     "question": "If the net work done on an object is positive, what can be concluded about its kinetic energy?",
     "choices": {
-      "A": "The kinetic energy increased.",
+      "A": "The object must be accelerating.",
       "B": "The kinetic energy decreased.",
       "C": "The kinetic energy remained the same.",
-      "D": "The object must be accelerating."
+      "D": "The kinetic energy increased."
     },
-    "answer": "A",
+    "answer": "D",
     "difficulty": 4,
     "explanation": "The work-energy theorem states that the net work done on an object is equal to the change in its kinetic energy: $W_{net} = Delta KE$. If $W_{net} > 0$, then $Delta KE > 0$, meaning the kinetic energy increased."
   },
@@ -624,17 +533,17 @@
     "explanation": "In projectile motion, neglecting air resistance, the only force acting on the projectile after launch is gravity, which acts vertically downwards. Therefore, the vertical acceleration is constant and equal to 'g' downwards. The horizontal motion is independent of the vertical motion, and since there are no horizontal forces (neglecting air resistance), the horizontal acceleration is zero, meaning the horizontal velocity remains constant."
   },
   {
-    "id": "AP_Physics_1_49",
-    "question": "Two objects, A and B, have masses m_A and m_B respectively. They are initially at rest and are then subjected to the same constant net force for the same amount of time. Which object will have the greater change in momentum?",
+    "id": "AP_Phys1_5",
+    "question": "A spring (k = 200 N/m) compressed 0.1 m stores how much PE?",
     "choices": {
-      "A": "Object A, if m_A < m_B.",
-      "B": "Object B, if m_B < m_A.",
-      "C": "Both objects will have the same change in momentum.",
-      "D": "It depends on the masses of the objects."
+      "A": "1 J",
+      "B": "2 J",
+      "C": "10 J",
+      "D": "20 J"
     },
-    "answer": "C",
+    "answer": "A",
     "difficulty": 5,
-    "explanation": "The impulse applied to an object is equal to the change in its momentum (Impulse-Momentum Theorem: J = Δp). Impulse is also defined as the average net force multiplied by the time interval over which it acts (J = F_net * Δt). Since both objects are subjected to the same constant net force for the same amount of time, the impulse delivered to both objects is the same. Therefore, their change in momentum will also be the same, regardless of their masses."
+    "explanation": "PE = ½kx² = ½(200)(0.01) = 1 J."
   },
   {
     "id": "AP_Physics_1_50",
@@ -648,19 +557,6 @@
     "answer": "C",
     "difficulty": 6,
     "explanation": "An object moving in a circle at a constant speed is undergoing uniform circular motion. This means its velocity vector is constantly changing direction, even though its magnitude (speed) is constant. A change in velocity implies acceleration. For circular motion, this acceleration is called centripetal acceleration, and it is always directed radially inward, toward the center of the circle. According to Newton's second law (F_net = ma), the net force must be in the same direction as the acceleration. Therefore, the net force acting on the child is directed radially inward."
-  },
-  {
-    "id": "AP_Physics_1_51",
-    "question": "A spring with spring constant 'k' is stretched by a distance 'x' from its equilibrium position. What is the potential energy stored in the spring?",
-    "choices": {
-      "A": "kx",
-      "B": "1/2 kx",
-      "C": "1/2 kx^2",
-      "D": "kx^2"
-    },
-    "answer": "C",
-    "difficulty": 3,
-    "explanation": "The potential energy stored in an ideal spring that is stretched or compressed from its equilibrium position is given by the formula PE_spring = 1/2 kx^2, where 'k' is the spring constant and 'x' is the displacement from equilibrium."
   },
   {
     "id": "AP_Physics_1_52",
@@ -741,41 +637,15 @@
     "explanation": "If the student is pushing the crate and it is moving, there must be a net force in the direction of motion. The pushing force is acting in the direction of motion, and the friction force is acting in the opposite direction. For the crate to be accelerating (or even moving if there's assumed to be some acceleration in a typical problem), the pushing force must be greater than the kinetic friction force. If the pushing force were equal to the friction force, the net force would be zero, and the crate would either be at rest or moving with constant velocity. If the pushing force were less than the friction force, the crate would be decelerating. Option C is only true if the floor is horizontal and there are no other vertical forces. Option D is incorrect if the crate is accelerating."
   },
   {
-    "id": "AP_Physics_1_58",
-    "question": "A system consists of two masses, m1 and m2, connected by a light, inextensible string passing over a frictionless pulley. If m1 > m2, what is the direction of the acceleration of m1?",
-    "choices": {
-      "A": "Upward.",
-      "B": "Downward.",
-      "C": "Zero.",
-      "D": "Cannot be determined without knowing the magnitudes of m1 and m2."
-    },
-    "answer": "B",
-    "difficulty": 4,
-    "explanation": "Since m1 > m2, the gravitational force on m1 (m1g) is greater than the gravitational force on m2 (m2g). This means the net force acting on the system is downward for m1 and upward for m2. Therefore, m1 will accelerate downward, and m2 will accelerate upward."
-  },
-  {
-    "id": "AP_Physics_1_59",
-    "question": "Which of the following quantities is a scalar?",
-    "choices": {
-      "A": "Velocity",
-      "B": "Force",
-      "C": "Energy",
-      "D": "Acceleration"
-    },
-    "answer": "C",
-    "difficulty": 3,
-    "explanation": "A scalar quantity has magnitude only, while a vector quantity has both magnitude and direction. Velocity, force, and acceleration are all vector quantities. Energy is a scalar quantity."
-  },
-  {
     "id": "AP_Physics_1_60",
     "question": "A pendulum swings back and forth. At which point in its swing is the tangential speed of the pendulum bob the greatest?",
     "choices": {
-      "A": "At the lowest point of its swing.",
+      "A": "The speed is constant throughout the swing.",
       "B": "At the highest points of its swing.",
       "C": "At the midpoint of its swing.",
-      "D": "The speed is constant throughout the swing."
+      "D": "At the lowest point of its swing."
     },
-    "answer": "A",
+    "answer": "D",
     "difficulty": 5,
     "explanation": "In an ideal pendulum (neglecting air resistance), mechanical energy is conserved. At the highest points of its swing, the bob momentarily stops, so its kinetic energy is zero and its potential energy is maximum. At the lowest point, its potential energy is minimum, so its kinetic energy is maximum, meaning its speed is greatest. The speed is greatest at the lowest point."
   },
@@ -783,12 +653,12 @@
     "id": "AP_Physics_1_61",
     "question": "A block of mass 'm' slides down a rough inclined plane with constant velocity. Which of the following statements is true?",
     "choices": {
-      "A": "The net force on the block is zero.",
+      "A": "The friction force is greater than the component of gravity parallel to the incline.",
       "B": "The friction force is zero.",
       "C": "The acceleration of the block is 'g sin(θ)'.",
-      "D": "The friction force is greater than the component of gravity parallel to the incline."
+      "D": "The net force on the block is zero."
     },
-    "answer": "A",
+    "answer": "D",
     "difficulty": 6,
     "explanation": "If the block slides down the incline with constant velocity, its acceleration is zero. According to Newton's second law (F_net = ma), if the acceleration is zero, the net force acting on the block must also be zero. This means the component of gravity pulling the block down the incline is exactly balanced by the kinetic friction force acting up the incline."
   },
@@ -871,19 +741,6 @@
     "explanation": "The car is moving in a circle, which means it is undergoing centripetal acceleration. Centripetal acceleration is always directed toward the center of the circle. According to Newton's second law (F_net = ma), the net force must be in the same direction as the acceleration. Therefore, the net force acting on the car is directed inward, toward the center of the circle."
   },
   {
-    "id": "AP_Physics_1_68",
-    "question": "Which of the following is a unit of power?",
-    "choices": {
-      "A": "Joule",
-      "B": "Watt",
-      "C": "Newton",
-      "D": "Pascal"
-    },
-    "answer": "B",
-    "difficulty": 3,
-    "explanation": "Power is the rate at which work is done or energy is transferred. The standard unit of power in the SI system is the Watt (W). 1 Watt = 1 Joule per second (1 J/s). A Joule is a unit of energy or work. A Newton is a unit of force. A Pascal is a unit of pressure."
-  },
-  {
     "id": "AP_Physics_1_69",
     "question": "A system initially has kinetic energy KE. If the speed of the system is tripled, what is the new kinetic energy?",
     "choices": {
@@ -913,12 +770,12 @@
     "id": "AP_Physics_1_71",
     "question": "A solid disk and a hoop of the same mass and radius are released from rest at the top of an inclined plane. Both objects roll down the incline without slipping. Which object will reach the bottom first?",
     "choices": {
-      "A": "The solid disk.",
+      "A": "It depends on the radius of the objects.",
       "B": "The hoop.",
       "C": "They will reach the bottom at the same time.",
-      "D": "It depends on the radius of the objects."
+      "D": "The solid disk."
     },
-    "answer": "A",
+    "answer": "D",
     "difficulty": 8,
     "explanation": "Similar to the sphere example, the moment of inertia determines how energy is distributed between translational and rotational motion. For a solid disk, the moment of inertia is 1/2 MR^2. For a hoop, the moment of inertia is MR^2. Since the hoop has a larger moment of inertia, more of its gravitational potential energy is converted into rotational kinetic energy, leaving less for translational kinetic energy. Therefore, the solid disk, with its smaller moment of inertia, will have a greater translational speed down the incline and reach the bottom first."
   },
@@ -934,19 +791,6 @@
     "answer": "B",
     "difficulty": 7,
     "explanation": "Newton's second law states that the net force on an object is equal to its mass times its acceleration (F_net = ma). Since Block B has mass m_B and is accelerating with acceleration 'a' in a specific direction, the net force acting on Block B must be equal to m_B * a and in the same direction as the acceleration."
-  },
-  {
-    "id": "AP_Physics_1_73",
-    "question": "A block of mass $m$ is pushed across a frictionless horizontal surface with a constant force $F$. Which statement best describes the motion of the block?",
-    "choices": {
-      "A": "The block will move with constant velocity.",
-      "B": "The block will accelerate with a constant acceleration.",
-      "C": "The block will accelerate with a negative acceleration.",
-      "D": "The block will eventually stop once the force is removed."
-    },
-    "answer": "B",
-    "difficulty": 3,
-    "explanation": "According to Newton's Second Law ($F_{net} = ma$), if a constant net force acts on an object with constant mass, the object will experience a constant acceleration in the direction of the net force. Since the surface is frictionless and the applied force is constant and horizontal, this force is the net force."
   },
   {
     "id": "AP_Physics_1_74",
@@ -1004,12 +848,12 @@
     "id": "AP_Physics_1_78",
     "question": "A system consists of two blocks, $m_1$ and $m_2$, connected by a light string that passes over a frictionless pulley. Block $m_1$ rests on a frictionless horizontal surface, and block $m_2$ hangs vertically. If $m_1 = 5$ kg and $m_2 = 2$ kg, what is the magnitude of the acceleration of the system?",
     "choices": {
-      "A": "$0.28g$",
+      "A": "$1.0g$",
       "B": "$0.40g$",
       "C": "$0.50g$",
-      "D": "$1.0g$"
+      "D": "$0.28g$"
     },
-    "answer": "A",
+    "answer": "D",
     "difficulty": 7,
     "explanation": "Let $T$ be the tension in the string and $a$ be the acceleration of the system. For block $m_2$, the net force is $m_2g - T = m_2a$. For block $m_1$, the net force is $T = m_1a$. Substituting the second equation into the first: $m_2g - m_1a = m_2a$. Rearranging to solve for $a$: $m_2g = (m_1 + m_2)a$, so $a = \frac{m_2}{m_1 + m_2}g$. Plugging in the values: $a = \frac{2 \text{ kg}}{5 \text{ kg} + 2 \text{ kg}}g = \frac{2}{7}g approx 0.2857g$."
   },
@@ -1030,12 +874,12 @@
     "id": "AP_Physics_1_80",
     "question": "A solid uniform sphere and a hollow spherical shell, both of the same mass and radius, are released from rest at the top of an inclined plane. If both objects roll down without slipping, which object will reach the bottom first?",
     "choices": {
-      "A": "The solid sphere",
+      "A": "Cannot be determined without knowing the mass",
       "B": "The hollow spherical shell",
       "C": "They will reach the bottom at the same time",
-      "D": "Cannot be determined without knowing the mass"
+      "D": "The solid sphere"
     },
-    "answer": "A",
+    "answer": "D",
     "difficulty": 8,
     "explanation": "Both objects have rotational kinetic energy as they roll down the incline. The moment of inertia for a solid sphere is $I_{solid} = \frac{2}{5}MR^2$, and for a hollow spherical shell is $I_{hollow} = \frac{2}{3}MR^2$. Since the hollow shell has a larger moment of inertia (more mass is concentrated further from the axis of rotation), it requires more energy to spin up. In the conservation of energy equation (potential energy converting to translational and rotational kinetic energy), a larger portion of the initial potential energy will be converted into rotational kinetic energy for the hollow shell, leaving less for translational kinetic energy. Since translational kinetic energy determines the linear speed down the incline, the solid sphere, with less rotational inertia, will have a greater translational speed and reach the bottom first."
   },
@@ -1066,19 +910,6 @@
     "explanation": "Work is defined as $W = vec{F} cdot vec{d} = Fdcos\theta$. The centripetal force acting on an object moving in a circle is always directed towards the center of the circle, which is perpendicular to the object's instantaneous velocity (tangent to the circle). Therefore, the angle $\theta$ between the force and the displacement (which is in the direction of velocity) is always 90 degrees. Since $cos(90^circ) = 0$, the work done by the centripetal force is zero. This is consistent with the fact that the kinetic energy (and thus speed) of the object remains constant."
   },
   {
-    "id": "AP_Physics_1_83",
-    "question": "Two identical carts moving towards each other on a frictionless track collide and stick together. Cart A has momentum $+p$, and Cart B has momentum $-p$. What is the total momentum of the system immediately after the collision?",
-    "choices": {
-      "A": "0",
-      "B": "$+p$",
-      "C": "$-p$",
-      "D": "$2p$"
-    },
-    "answer": "A",
-    "difficulty": 3,
-    "explanation": "The principle of conservation of linear momentum states that in the absence of external forces, the total momentum of a system remains constant. The initial total momentum of the system is the sum of the individual momenta: $P_{initial} = p_A + p_B = (+p) + (-p) = 0$. Therefore, the total momentum of the system immediately after the collision must also be 0."
-  },
-  {
     "id": "AP_Physics_1_84",
     "question": "A pendulum consisting of a bob of mass $m$ and a string of length $L$ is released from rest at an angle $\theta$ from the vertical. What is the speed of the bob when it reaches the lowest point of its swing?",
     "choices": {
@@ -1092,56 +923,17 @@
     "explanation": "Using the conservation of mechanical energy, the initial potential energy is converted into kinetic energy at the lowest point. The initial height of the bob above the lowest point is $h = L - Lcos\theta = L(1-cos\theta)$. The initial potential energy is $PE_i = mgh = mgL(1-cos\theta)$. The kinetic energy at the lowest point is $KE_f = \frac{1}{2}mv_f^2$. Since the bob starts from rest, $KE_i = 0$. Thus, $PE_i + KE_i = PE_f + KE_f$. Assuming the potential energy is zero at the lowest point ($PE_f = 0$), we have $mgL(1-cos\theta) = \frac{1}{2}mv_f^2$. Solving for $v_f$: $v_f^2 = 2gL(1-cos\theta)$, so $v_f = sqrt{2gL(1-cos\theta)}$."
   },
   {
-    "id": "AP_Physics_1_85",
-    "question": "A wheel of radius $R$ rotates with a constant angular velocity $omega$. What is the tangential speed of a point on the rim of the wheel?",
-    "choices": {
-      "A": "$Romega$",
-      "B": "$R/omega$",
-      "C": "$R + omega$",
-      "D": "$R^2omega$"
-    },
-    "answer": "A",
-    "difficulty": 3,
-    "explanation": "The relationship between tangential speed ($v_t$), radius ($R$), and angular velocity ($omega$) for an object moving in a circle is given by $v_t = Romega$. This equation states that the linear (tangential) speed is directly proportional to the radius and the angular speed."
-  },
-  {
     "id": "AP_Physics_1_86",
     "question": "A block of mass $m$ is sliding across a horizontal surface with kinetic friction $mu_k$. A horizontal force $F$ is applied to the block, and it is observed to accelerate with acceleration $a$. The equation that correctly describes the motion of the block is:",
     "choices": {
-      "A": "$F - mu_k mg = ma$",
+      "A": "$F = ma$",
       "B": "$F + mu_k mg = ma$",
       "C": "$F - mg = ma$",
-      "D": "$F = ma$"
-    },
-    "answer": "A",
-    "difficulty": 6,
-    "explanation": "The net force acting horizontally on the block is the applied force $F$ minus the force of kinetic friction $f_k$. The force of kinetic friction is given by $f_k = mu_k N$, where $N$ is the normal force. On a horizontal surface, the normal force equals the gravitational force, so $N = mg$. Therefore, $f_k = mu_k mg$. According to Newton's Second Law, the net force equals mass times acceleration: $F_{net} = ma$. In this case, $F_{net} = F - f_k = F - mu_k mg$. So, the equation of motion is $F - mu_k mg = ma$."
-  },
-  {
-    "id": "AP_Physics_1_87",
-    "question": "Which of the following quantities is a vector?",
-    "choices": {
-      "A": "Speed",
-      "B": "Mass",
-      "C": "Time",
-      "D": "Velocity"
+      "D": "$F - mu_k mg = ma$"
     },
     "answer": "D",
-    "difficulty": 2,
-    "explanation": "A vector quantity has both magnitude and direction. Speed is the magnitude of velocity, so it is a scalar. Mass and time are also scalar quantities. Velocity has both magnitude (speed) and direction, making it a vector."
-  },
-  {
-    "id": "AP_Physics_1_88",
-    "question": "A collision occurs between two objects. If the total kinetic energy of the system is conserved during the collision, what type of collision is it?",
-    "choices": {
-      "A": "Perfectly elastic collision",
-      "B": "Perfectly inelastic collision",
-      "C": "Inelastic collision",
-      "D": "All collisions"
-    },
-    "answer": "A",
-    "difficulty": 3,
-    "explanation": "A perfectly elastic collision is defined as a collision in which both momentum and kinetic energy are conserved. In an inelastic collision, momentum is conserved, but kinetic energy is lost (converted to other forms like heat or sound). A perfectly inelastic collision is a type of inelastic collision where the colliding objects stick together after the collision."
+    "difficulty": 6,
+    "explanation": "The net force acting horizontally on the block is the applied force $F$ minus the force of kinetic friction $f_k$. The force of kinetic friction is given by $f_k = mu_k N$, where $N$ is the normal force. On a horizontal surface, the normal force equals the gravitational force, so $N = mg$. Therefore, $f_k = mu_k mg$. According to Newton's Second Law, the net force equals mass times acceleration: $F_{net} = ma$. In this case, $F_{net} = F - f_k = F - mu_k mg$. So, the equation of motion is $F - mu_k mg = ma$."
   },
   {
     "id": "AP_Physics_1_89",
@@ -1168,19 +960,6 @@
     "answer": "A",
     "difficulty": 4,
     "explanation": "The centripetal acceleration ($a_c$) is defined as $a_c = v^2/r$, where $v$ is the tangential speed and $r$ is the radius of the circular path. While the gravitational force provides this centripetal force ($F_c = GMm/r^2$), and the centripetal force is also given by $F_c = ma_c$, the question asks specifically for the expression for centripetal acceleration itself, which is $v^2/r$. Note that $v^2/r$ can be related to the gravitational force, as $v^2/r = GM/r^2$."
-  },
-  {
-    "id": "AP_Physics_1_91",
-    "question": "A force $vec{F}$ acts on an object. The impulse delivered to the object is equal to the change in which of the following quantities?",
-    "choices": {
-      "A": "Kinetic energy",
-      "B": "Momentum",
-      "C": "Angular momentum",
-      "D": "Potential energy"
-    },
-    "answer": "B",
-    "difficulty": 3,
-    "explanation": "The impulse-momentum theorem states that the impulse ($J$) applied to an object is equal to the change in its momentum ($Delta p$). Impulse is defined as $J = vec{F}_{avg} Delta t$, where $vec{F}_{avg}$ is the average force and $Delta t$ is the time interval over which the force acts. Momentum is defined as $p = mv$. Therefore, $J = Delta p$."
   },
   {
     "id": "AP_Physics_1_92",
@@ -1248,45 +1027,6 @@
     "explanation": "Centripetal acceleration is given by $a_c = v^2/r$. If the speed $v$ is doubled to $2v$, the new centripetal acceleration $a_c'$ becomes $(2v)^2/r = 4v^2/r$. This is four times the original centripetal acceleration."
   },
   {
-    "id": "AP_Physics_1_97",
-    "question": "A student pushes a heavy box across a horizontal floor with a constant horizontal force. If the box is moving at a constant velocity, which statement is true regarding the forces acting on the box?",
-    "choices": {
-      "A": "The applied force is greater than the force of kinetic friction.",
-      "B": "The applied force is equal in magnitude to the force of kinetic friction.",
-      "C": "The applied force is less than the force of kinetic friction.",
-      "D": "The net force on the box is non-zero."
-    },
-    "answer": "B",
-    "difficulty": 3,
-    "explanation": "If the box is moving at a constant velocity, its acceleration is zero. According to Newton's Second Law ($F_{net} = ma$), if the acceleration is zero, the net force on the box must also be zero. This means all forces acting on the box must balance. Therefore, the magnitude of the applied horizontal force must be equal to the magnitude of the opposing force of kinetic friction. Similarly, the upward normal force must equal the downward force of gravity."
-  },
-  {
-    "id": "AP_Physics_1_98",
-    "question": "A block of mass $m$ is sliding across a horizontal frictionless surface with a constant velocity $v$. If a constant net force $F$ begins to act on the block, which statement best describes the motion of the block immediately after the force is applied?",
-    "choices": {
-      "A": "The block will continue to move with constant velocity $v$.",
-      "B": "The block will accelerate in the direction of the net force $F$.",
-      "C": "The block will decelerate, eventually coming to rest.",
-      "D": "The block will change direction and move opposite to the direction of $v$."
-    },
-    "answer": "B",
-    "difficulty": 3,
-    "explanation": "According to Newton's Second Law, the acceleration of an object is directly proportional to the net force acting on it and inversely proportional to its mass ( $a = F_{net}/m$ ). Since a net force $F$ is applied, the block will accelerate in the direction of this force. Its velocity will change from $v$ due to this acceleration."
-  },
-  {
-    "id": "AP_Physics_1_99",
-    "question": "Two objects, A and B, are in contact. Object A exerts a force $F_{AB}$ on object B. Which statement regarding the force $F_{BA}$ exerted by object B on object A is correct according to Newton's Third Law?",
-    "choices": {
-      "A": "$F_{BA}$ has the same magnitude as $F_{AB}$ but is in the opposite direction.",
-      "B": "$F_{BA}$ has half the magnitude of $F_{AB}$ and is in the opposite direction.",
-      "C": "$F_{BA}$ has the same magnitude as $F_{AB}$ and is in the same direction.",
-      "D": "$F_{BA}$ has zero magnitude because the objects are in contact."
-    },
-    "answer": "A",
-    "difficulty": 2,
-    "explanation": "Newton's Third Law states that for every action, there is an equal and opposite reaction. The force exerted by object A on object B ($F_{AB}$) and the force exerted by object B on object A ($F_{BA}$) are an action-reaction pair. Therefore, they must have equal magnitudes and opposite directions."
-  },
-  {
     "id": "AP_Physics_1_100",
     "question": "A projectile is launched horizontally from a height $h$ with an initial speed $v_0$. Neglecting air resistance, which statement correctly describes the projectile's motion?",
     "choices": {
@@ -1300,45 +1040,6 @@
     "explanation": "In the absence of air resistance, the horizontal motion of a projectile is independent of its vertical motion. The horizontal velocity remains constant ($v_x = v_0$) because there are no horizontal forces acting on it. The vertical motion is governed by gravity, resulting in a constant downward acceleration ($g$). This causes the vertical velocity to increase linearly with time ($v_y = gt$)."
   },
   {
-    "id": "AP_Physics_1_101",
-    "question": "A spring is stretched by a distance $x$ from its equilibrium position. If the spring constant is $k$, what is the potential energy stored in the spring?",
-    "choices": {
-      "A": "$1/2 kx^2$",
-      "B": "$kx$",
-      "C": "$kx^2$",
-      "D": "$1/2 kx$"
-    },
-    "answer": "A",
-    "difficulty": 3,
-    "explanation": "The potential energy stored in a spring that is stretched or compressed by a distance $x$ from its equilibrium position is given by the formula $PE_s = 1/2 kx^2$, where $k$ is the spring constant."
-  },
-  {
-    "id": "AP_Physics_1_102",
-    "question": "A car of mass $m$ is traveling at a velocity $v$. What is its momentum?",
-    "choices": {
-      "A": "$mv$",
-      "B": "$1/2 mv^2$",
-      "C": "$mg$",
-      "D": "$m/v$"
-    },
-    "answer": "A",
-    "difficulty": 2,
-    "explanation": "Momentum is defined as the product of an object's mass and its velocity. The formula for momentum ($p$) is $p = mv$."
-  },
-  {
-    "id": "AP_Physics_1_103",
-    "question": "A roller coaster is at the top of a hill, momentarily at rest before descending. What type of energy does it primarily possess at this instant?",
-    "choices": {
-      "A": "Gravitational potential energy",
-      "B": "Kinetic energy",
-      "C": "Elastic potential energy",
-      "D": "Thermal energy"
-    },
-    "answer": "A",
-    "difficulty": 3,
-    "explanation": "At the highest point of the hill, the roller coaster has its maximum height and is momentarily at rest. Gravitational potential energy is dependent on height, and kinetic energy is dependent on motion (speed). Since its speed is zero, its kinetic energy is zero, and its gravitational potential energy is at its maximum."
-  },
-  {
     "id": "AP_Physics_1_104",
     "question": "A system consists of two masses, $m_1$ and $m_2$, connected by a string passing over a frictionless pulley. If $m_1$ is greater than $m_2$, and the system is released from rest, what is the direction of the acceleration of $m_1$?",
     "choices": {
@@ -1350,45 +1051,6 @@
     "answer": "A",
     "difficulty": 4,
     "explanation": "Since $m_1 > m_2$, the gravitational force acting on $m_1$ ($F_{g1} = m_1g$) is greater than the gravitational force acting on $m_2$ ($F_{g2} = m_2g$). This causes a net downward force on $m_1$ and a net upward force on $m_2$. Therefore, $m_1$ will accelerate downward."
-  },
-  {
-    "id": "AP_Physics_1_105",
-    "question": "Which of the following is a scalar quantity?",
-    "choices": {
-      "A": "Velocity",
-      "B": "Force",
-      "C": "Acceleration",
-      "D": "Mass"
-    },
-    "answer": "D",
-    "difficulty": 2,
-    "explanation": "A scalar quantity has only magnitude, while a vector quantity has both magnitude and direction. Velocity, force, and acceleration are all vector quantities. Mass is a scalar quantity."
-  },
-  {
-    "id": "AP_Physics_1_106",
-    "question": "A satellite is in a circular orbit around the Earth. What provides the centripetal force necessary to keep the satellite in orbit?",
-    "choices": {
-      "A": "The gravitational force between the Earth and the satellite.",
-      "B": "The kinetic energy of the satellite.",
-      "C": "The gravitational force between the satellite and the Sun.",
-      "D": "The atmospheric drag on the satellite."
-    },
-    "answer": "A",
-    "difficulty": 3,
-    "explanation": "In a circular orbit, the centripetal force required to maintain the circular motion is provided by the gravitational attraction between the Earth and the satellite. This gravitational force is directed towards the center of the Earth, acting as the centripetal force."
-  },
-  {
-    "id": "AP_Physics_1_107",
-    "question": "A 5 kg object moves with a constant velocity of 2 m/s to the right. What is the net force acting on the object?",
-    "choices": {
-      "A": "0 N",
-      "B": "10 N to the right",
-      "C": "10 N to the left",
-      "D": "5 N"
-    },
-    "answer": "A",
-    "difficulty": 3,
-    "explanation": "Newton's First Law states that an object in motion will stay in motion with constant velocity unless acted upon by a net external force. Since the object is moving with a constant velocity, its acceleration is zero. According to Newton's Second Law ($F_{net} = ma$), if the acceleration is zero, the net force must also be zero."
   },
   {
     "id": "AP_Physics_1_108",
@@ -1420,38 +1082,25 @@
     "id": "AP_Physics_1_110",
     "question": "A block is at rest on an inclined plane. The forces acting on the block are gravity, the normal force, and static friction. Which statement is true regarding the static friction force?",
     "choices": {
-      "A": "It acts parallel to the inclined plane and opposes the potential motion.",
+      "A": "There is no static friction acting on the block.",
       "B": "It acts perpendicular to the inclined plane and opposes gravity.",
       "C": "It is equal in magnitude to the component of gravity pulling the block down the incline.",
-      "D": "There is no static friction acting on the block."
+      "D": "It acts parallel to the inclined plane and opposes the potential motion."
     },
-    "answer": "A",
+    "answer": "D",
     "difficulty": 4,
     "explanation": "Static friction acts parallel to the surface of contact and opposes the tendency of motion. In this case, gravity has a component pulling the block down the incline. Static friction acts up the incline, preventing the block from sliding, and its magnitude adjusts to equal the component of gravity down the incline, up to a maximum value."
-  },
-  {
-    "id": "AP_Physics_1_111",
-    "question": "A light bulb filament has a resistance $R$. If the voltage across the filament is $V$, what is the current $I$ flowing through it, assuming Ohm's Law applies?",
-    "choices": {
-      "A": "$V/R$",
-      "B": "$R/V$",
-      "C": "$VR$",
-      "D": "$V+R$"
-    },
-    "answer": "A",
-    "difficulty": 2,
-    "explanation": "Ohm's Law relates voltage ($V$), current ($I$), and resistance ($R$) by the equation $V = IR$. Rearranging to solve for current, we get $I = V/R$."
   },
   {
     "id": "AP_Physics_1_112",
     "question": "A pendulum swings back and forth. At the lowest point of its swing, what is true about its energy?",
     "choices": {
-      "A": "Kinetic energy is maximum, and potential energy is minimum.",
+      "A": "Both kinetic and potential energy are minimum.",
       "B": "Kinetic energy is minimum, and potential energy is maximum.",
       "C": "Both kinetic and potential energy are maximum.",
-      "D": "Both kinetic and potential energy are minimum."
+      "D": "Kinetic energy is maximum, and potential energy is minimum."
     },
-    "answer": "A",
+    "answer": "D",
     "difficulty": 4,
     "explanation": "At the lowest point of its swing, the pendulum bob is at its lowest height, meaning its gravitational potential energy is at its minimum. It is also moving at its fastest speed, meaning its kinetic energy is at its maximum. Energy is converted from potential to kinetic as it swings down."
   },
@@ -1469,45 +1118,6 @@
     "explanation": "The gravitational force between two point masses is given by Newton's Law of Universal Gravitation: $F = G \frac{m_1 m_2}{r^2}$. If the distance $r$ is doubled (becomes $2r$), the new force is $F' = G \frac{m_1 m_2}{(2r)^2} = G \frac{m_1 m_2}{4r^2} = \frac{1}{4} F$. Thus, the force decreases by a factor of 4."
   },
   {
-    "id": "AP_Physics_1_114",
-    "question": "A horizontal force of 10 N is applied to a 5 kg object that is at rest on a frictionless horizontal surface. What is the acceleration of the object?",
-    "choices": {
-      "A": "2 m/s²",
-      "B": "5 m/s²",
-      "C": "50 m/s²",
-      "D": "0 m/s²"
-    },
-    "answer": "A",
-    "difficulty": 3,
-    "explanation": "Using Newton's Second Law, $F_{net} = ma$. The net force acting on the object is the applied horizontal force of 10 N. The mass is 5 kg. Therefore, acceleration $a = F_{net}/m = 10 \text{ N} / 5 \text{ kg} = 2 \text{ m/s²}$."
-  },
-  {
-    "id": "AP_Physics_1_115",
-    "question": "Which of the following units is equivalent to a Newton (N)?",
-    "choices": {
-      "A": "kg⋅m/s²",
-      "B": "kg⋅m/s",
-      "C": "m/s²",
-      "D": "N⋅m"
-    },
-    "answer": "A",
-    "difficulty": 2,
-    "explanation": "A Newton is the SI unit of force. From Newton's Second Law ($F = ma$), a force is equal to mass (kg) times acceleration (m/s²). Therefore, 1 N is equivalent to 1 kg⋅m/s²."
-  },
-  {
-    "id": "AP_Physics_1_116",
-    "question": "A car accelerates uniformly from rest to a speed of 20 m/s in 5 seconds. What is its acceleration?",
-    "choices": {
-      "A": "4 m/s²",
-      "B": "100 m/s²",
-      "C": "20 m/s²",
-      "D": "25 m/s²"
-    },
-    "answer": "A",
-    "difficulty": 3,
-    "explanation": "Acceleration is the rate of change of velocity ($a = Delta v / Delta t$). The change in velocity is $20 \text{ m/s} - 0 \text{ m/s} = 20 \text{ m/s}$. The time interval is 5 s. Therefore, $a = 20 \text{ m/s} / 5 \text{ s} = 4 \text{ m/s²}$."
-  },
-  {
     "id": "AP_Physics_1_117",
     "question": "Two waves of the same frequency are traveling in the same direction in a medium. If their amplitudes are $A_1$ and $A_2$, what is the amplitude of the resultant wave when they undergo constructive interference?",
     "choices": {
@@ -1519,19 +1129,6 @@
     "answer": "A",
     "difficulty": 5,
     "explanation": "During constructive interference, the amplitudes of the waves add together. If two waves with amplitudes $A_1$ and $A_2$ are in phase, the amplitude of the resultant wave is $A_{resultant} = A_1 + A_2$."
-  },
-  {
-    "id": "AP_Physics_1_118",
-    "question": "A 2 kg block is pushed across a horizontal surface with a constant force of 10 N. If the block moves a distance of 5 meters, how much work is done by the applied force?",
-    "choices": {
-      "A": "50 J",
-      "B": "100 J",
-      "C": "25 J",
-      "D": "15 J"
-    },
-    "answer": "A",
-    "difficulty": 3,
-    "explanation": "Work done ($W$) by a constant force is given by $W = Fdcos\theta$, where $F$ is the magnitude of the force, $d$ is the magnitude of the displacement, and $\theta$ is the angle between the force and displacement vectors. In this case, the force is horizontal and the displacement is horizontal, so $\theta = 0^circ$ and $cos(0^circ) = 1$. Thus, $W = (10 \text{ N})(5 \text{ m})(1) = 50 \text{ Joules}$."
   },
   {
     "id": "AP_Physics_1_119",
@@ -1615,27 +1212,14 @@
     "id": "AP_Physics_1_125",
     "question": "A projectile is launched horizontally from a high cliff with an initial speed $v_0$. Neglecting air resistance, which statement best describes the projectile's motion after launch?",
     "choices": {
-      "A": "The horizontal velocity remains constant, and the vertical velocity increases linearly with time.",
+      "A": "The horizontal velocity remains constant, and the vertical velocity remains zero.",
       "B": "The horizontal velocity decreases due to gravity, and the vertical velocity remains constant.",
       "C": "Both the horizontal and vertical velocities increase linearly with time.",
-      "D": "The horizontal velocity remains constant, and the vertical velocity remains zero."
+      "D": "The horizontal velocity remains constant, and the vertical velocity increases linearly with time."
     },
-    "answer": "A",
+    "answer": "D",
     "difficulty": 5,
     "explanation": "In projectile motion without air resistance, the horizontal component of velocity is independent of the vertical motion and is constant ($v_x = v_0$). The vertical motion is governed by gravity, resulting in a constant downward acceleration ($a_y = -g$), which causes the vertical velocity to increase linearly with time ($v_y = v_{y0} + a_y t$). Since the initial vertical velocity is zero ($v_{y0} = 0$), $v_y = -gt$ (if upward is positive, or $v_y = gt$ if downward is positive)."
-  },
-  {
-    "id": "AP_Physics_1_126",
-    "question": "A cart of mass $M$ is initially at rest on a frictionless horizontal track. A constant force $F$ is applied to the cart for a time interval $Delta t$. What is the impulse delivered to the cart?",
-    "choices": {
-      "A": "$F Delta t$",
-      "B": "$F / Delta t$",
-      "C": "$M Delta t$",
-      "D": "$F^2 Delta t$"
-    },
-    "answer": "A",
-    "difficulty": 3,
-    "explanation": "Impulse is defined as the change in momentum of an object, and it is also equal to the product of the average force and the time interval over which the force acts. Mathematically, Impulse $= vec{J} = vec{F}_{avg} Delta t$. Since the force $F$ is constant, the average force is equal to $F$. Therefore, the impulse is $F Delta t$."
   },
   {
     "id": "AP_Physics_1_127",
@@ -1654,12 +1238,12 @@
     "id": "AP_Physics_1_128",
     "question": "A car of mass $M$ travels around a level circular curve of radius $R$ at a constant speed $v$. What is the direction of the net force acting on the car?",
     "choices": {
-      "A": "Towards the center of the circle",
+      "A": "Opposite to the direction of motion",
       "B": "Away from the center of the circle",
       "C": "Tangent to the curve, in the direction of motion",
-      "D": "Opposite to the direction of motion"
+      "D": "Towards the center of the circle"
     },
-    "answer": "A",
+    "answer": "D",
     "difficulty": 5,
     "explanation": "For an object to move in a circular path at a constant speed, there must be a net force acting on it directed towards the center of the circle. This force is called the centripetal force, and it is responsible for changing the direction of the velocity but not its magnitude (speed). In this case, friction between the tires and the road provides the centripetal force."
   },
@@ -1680,12 +1264,12 @@
     "id": "AP_Physics_1_130",
     "question": "A spring with spring constant $k$ is stretched by a distance $x$ from its equilibrium position. What is the potential energy stored in the spring?",
     "choices": {
-      "A": "$\frac{1}{2}kx^2$",
+      "A": "$\frac{1}{2}m k x^2$",
       "B": "$kx$",
       "C": "$k x^2$",
-      "D": "$\frac{1}{2}m k x^2$"
+      "D": "$\frac{1}{2}kx^2$"
     },
-    "answer": "A",
+    "answer": "D",
     "difficulty": 4,
     "explanation": "The potential energy stored in a spring that is displaced by a distance $x$ from its equilibrium position is given by the formula $PE_s = \frac{1}{2}kx^2$, where $k$ is the spring constant. This formula arises from the work done to stretch or compress the spring, which is equal to the integral of the force $F = -kx$ over the displacement."
   },
@@ -1693,12 +1277,12 @@
     "id": "AP_Physics_1_131",
     "question": "A 70 kg student stands on a scale in an elevator. The elevator is accelerating upwards with an acceleration $a$. What is the reading on the scale?",
     "choices": {
-      "A": "$M(g+a)$",
-      "B": "$M(g-a)$",
+      "A": "$M(g-a)$",
+      "B": "$M(g+a)$",
       "C": "$Mg$",
       "D": "$Ma$"
     },
-    "answer": "A",
+    "answer": "B",
     "difficulty": 7,
     "explanation": "The reading on the scale represents the normal force exerted by the scale on the student. According to Newton's second law, the net force on the student is equal to their mass times acceleration ($Sigma F = Ma$). The forces acting on the student are the normal force ($N$) upwards and their weight ($Mg$) downwards. Since the elevator is accelerating upwards, the net force is $N - Mg = Ma$. Solving for the normal force, we get $N = Mg + Ma = M(g+a)$. This is the force the scale exerts, and thus the reading on the scale."
   },
@@ -1719,12 +1303,12 @@
     "id": "AP_Physics_1_133",
     "question": "A block is sliding down a frictionless inclined plane. As the angle of inclination of the plane increases, the acceleration of the block:",
     "choices": {
-      "A": "Increases",
+      "A": "Becomes zero",
       "B": "Decreases",
       "C": "Remains constant",
-      "D": "Becomes zero"
+      "D": "Increases"
     },
-    "answer": "A",
+    "answer": "D",
     "difficulty": 6,
     "explanation": "On a frictionless inclined plane, the component of gravity acting parallel to the incline is $mg sin\theta$, where $\theta$ is the angle of inclination. According to Newton's second law, the acceleration is $a = \frac{F_{net}}{m} = \frac{mg sin\theta}{m} = g sin\theta$. As the angle $\theta$ increases (from 0 towards 90 degrees), $sin\theta$ increases, and therefore the acceleration $a$ increases."
   },
@@ -1758,12 +1342,12 @@
     "id": "AP_Physics_1_136",
     "question": "A light spring is compressed by a force. When the force is removed, the spring expands, doing work on an object. This is an example of the conversion of:",
     "choices": {
-      "A": "Spring potential energy to kinetic energy",
+      "A": "Chemical energy to thermal energy",
       "B": "Kinetic energy to spring potential energy",
       "C": "Gravitational potential energy to kinetic energy",
-      "D": "Chemical energy to thermal energy"
+      "D": "Spring potential energy to kinetic energy"
     },
-    "answer": "A",
+    "answer": "D",
     "difficulty": 5,
     "explanation": "When a spring is compressed or stretched, it stores potential energy. When the restraining force is removed, this stored elastic potential energy is converted into kinetic energy as the spring expands and does work on an object, projecting it or moving it."
   },
@@ -1771,12 +1355,12 @@
     "id": "AP_Physics_1_137",
     "question": "A constant net force acts on an object. Which of the following statements best describes the resulting motion?",
     "choices": {
-      "A": "The object has constant acceleration.",
+      "A": "The object has constant momentum.",
       "B": "The object has constant velocity.",
-      "C": "The object has constant momentum.",
+      "C": "The object has constant acceleration.",
       "D": "The object's kinetic energy remains constant."
     },
-    "answer": "A",
+    "answer": "C",
     "difficulty": 5,
     "explanation": "According to Newton's second law, the net force acting on an object is equal to the product of its mass and acceleration ($vec{F}_{net} = mvec{a}$). If the net force is constant and the mass is constant, then the acceleration must also be constant. Constant acceleration leads to a changing velocity."
   },
@@ -1807,19 +1391,6 @@
     "explanation": "Since the block is not moving, the net force on it must be zero. The applied force $F$ is acting horizontally. For the net force to be zero, there must be an equal and opposite force acting on the block, which is the static frictional force ($f_s$). Therefore, the static frictional force has a magnitude equal to $F$ and is directed opposite to $F$. The maximum possible static friction is $mu_s N$, but the actual static friction can be any value from 0 up to this maximum, depending on the applied force."
   },
   {
-    "id": "AP_Physics_1_140",
-    "question": "The work done by a constant force is given by $W = Fd cos\theta$. If the force and displacement are in the same direction, what is the work done?",
-    "choices": {
-      "A": "Positive",
-      "B": "Negative",
-      "C": "Zero",
-      "D": "It depends on the mass."
-    },
-    "answer": "A",
-    "difficulty": 3,
-    "explanation": "If the force and displacement are in the same direction, the angle $\theta$ between them is 0 degrees. Since $cos(0^circ) = 1$, the work done is $W = Fd(1) = Fd$, which is a positive value (assuming $F$ and $d$ are non-zero magnitudes). Positive work means the force is adding energy to the system."
-  },
-  {
     "id": "AP_Physics_1_141",
     "question": "A car of mass $m$ is moving with speed $v$. If the speed of the car is doubled to $2v$, by what factor does its kinetic energy change?",
     "choices": {
@@ -1836,12 +1407,12 @@
     "id": "AP_Physics_1_142",
     "question": "A net force of $20 \text{ N}$ acts on a $5 \text{ kg}$ object. What is the acceleration of the object?",
     "choices": {
-      "A": "$4 \text{ m/s}^2$",
+      "A": "$15 \text{ m/s}^2$",
       "B": "$100 \text{ m/s}^2$",
       "C": "$25 \text{ m/s}^2$",
-      "D": "$15 \text{ m/s}^2$"
+      "D": "$4 \text{ m/s}^2$"
     },
-    "answer": "A",
+    "answer": "D",
     "difficulty": 4,
     "explanation": "Using Newton's second law, $vec{F}_{net} = mvec{a}$. The magnitude of the acceleration is $a = \frac{F_{net}}{m} = \frac{20 \text{ N}}{5 \text{ kg}} = 4 \text{ m/s}^2$. The direction of the acceleration is the same as the direction of the net force."
   },
@@ -1862,12 +1433,12 @@
     "id": "AP_Physics_1_144",
     "question": "A block is pushed horizontally across a frictionless surface with a constant acceleration $a$. If the mass of the block is doubled, what is the new acceleration if the same horizontal force is applied?",
     "choices": {
-      "A": "$a/2$",
+      "A": "$a$",
       "B": "$2a$",
-      "C": "$a$",
+      "C": "$a/2$",
       "D": "$a/4$"
     },
-    "answer": "A",
+    "answer": "C",
     "difficulty": 5,
     "explanation": "From Newton's second law, $a = F/m$. If the force $F$ is kept constant and the mass is doubled from $m$ to $2m$, the new acceleration $a'$ will be $a' = F/(2m) = \frac{1}{2}(F/m) = \frac{1}{2}a$. The acceleration is halved."
   },
@@ -1927,12 +1498,12 @@
     "id": "AP_Physics_1_149",
     "question": "A pendulum bob swings back and forth. At the lowest point of its swing, which statement is true about the energy?",
     "choices": {
-      "A": "Kinetic energy is maximum, and potential energy is minimum.",
+      "A": "Both kinetic and potential energy are maximum.",
       "B": "Kinetic energy is minimum, and potential energy is maximum.",
       "C": "Both kinetic and potential energy are zero.",
-      "D": "Both kinetic and potential energy are maximum."
+      "D": "Kinetic energy is maximum, and potential energy is minimum."
     },
-    "answer": "A",
+    "answer": "D",
     "difficulty": 5,
     "explanation": "At the lowest point of its swing, the pendulum bob is at its highest speed (and thus has maximum kinetic energy), and it is at its lowest position relative to its path (and thus has minimum gravitational potential energy, often defined as zero at this point in simple pendulum problems). As it swings up, kinetic energy is converted to potential energy."
   },
@@ -1940,12 +1511,12 @@
     "id": "AP_Physics_1_150",
     "question": "A spring has a spring constant $k$. If the spring is stretched by a distance $x$ from its equilibrium position, what is the potential energy stored in the spring?",
     "choices": {
-      "A": "$\\frac{1}{2} kx^2$",
+      "A": "$kx$",
       "B": "$kx^2$",
       "C": "$\frac{1}{2} kx$",
-      "D": "$kx$"
+      "D": "$\\frac{1}{2} kx^2$"
     },
-    "answer": "A",
+    "answer": "D",
     "difficulty": 4,
     "explanation": "The potential energy stored in a spring is given by the formula $U = \\frac{1}{2} kx^2$, where $k$ is the spring constant and $x$ is the displacement from the equilibrium position."
   },
@@ -1953,12 +1524,12 @@
     "id": "AP_Physics_1_151",
     "question": "A projectile is launched horizontally from a height $h$ with an initial velocity $v_0$. Ignoring air resistance, which of the following statements about the projectile's motion is correct?",
     "choices": {
-      "A": "The horizontal velocity remains constant.",
+      "A": "The time to reach the ground depends on the initial horizontal velocity.",
       "B": "The horizontal velocity decreases due to gravity.",
       "C": "The vertical velocity remains constant.",
-      "D": "The time to reach the ground depends on the initial horizontal velocity."
+      "D": "The horizontal velocity remains constant."
     },
-    "answer": "A",
+    "answer": "D",
     "difficulty": 5,
     "explanation": "In the absence of air resistance, there are no horizontal forces acting on the projectile. Therefore, its horizontal velocity remains constant throughout the motion. Gravity only affects the vertical motion."
   },
@@ -1979,51 +1550,51 @@
     "id": "AP_Physics_1_153",
     "question": "A car of mass $1000\text{ kg}$ is traveling at $20\text{ m/s}$. If the driver applies the brakes and the car comes to a stop in $10\text{ s}$, what is the average braking force?",
     "choices": {
-      "A": "$-2000\text{ N}$",
+      "A": "$1000\text{ N}$",
       "B": "$2000\text{ N}$",
       "C": "$-1000\text{ N}$",
-      "D": "$1000\text{ N}$"
+      "D": "$-2000\text{ N}$"
     },
-    "answer": "A",
+    "answer": "D",
     "difficulty": 5,
     "explanation": "First, calculate the acceleration: $a = \frac{Delta v}{Delta t} = \frac{0 \text{ m/s} - 20 \text{ m/s}}{10 \text{ s}} = -2 \text{ m/s}^2$. Then, use Newton's Second Law: $F_{avg} = ma = (1000 \text{ kg})(-2 \text{ m/s}^2) = -2000 \text{ N}$. The negative sign indicates the force opposes the motion."
   },
   {
-    "id": "AP_Physics_1_154",
-    "question": "A 10 kg crate rests on a horizontal surface. The coefficient of static friction is $mu_s = 0.4$. What is the minimum horizontal force required to start the crate moving?",
+    "id": "AP_Physics_1_26",
+    "question": "A 10 kg block is at rest on a horizontal frictionless surface. A constant horizontal force is applied to the block, causing it to accelerate at $2 \text{ m/s}^2$. What is the magnitude of the applied force?",
     "choices": {
-      "A": "$39.2\text{ N}$",
-      "B": "$40\text{ N}$",
-      "C": "$98\text{ N}$",
-      "D": "$100\text{ N}$"
+      "A": "5 N",
+      "B": "10 N",
+      "C": "20 N",
+      "D": "200 N"
     },
-    "answer": "A",
-    "difficulty": 6,
-    "explanation": "The maximum static friction force is $f_{s,max} = mu_s N$. The normal force $N$ on a horizontal surface is equal to the weight, $mg$. So, $N = (10 \text{ kg})(9.8 \text{ m/s}^2) = 98 \text{ N}$. Therefore, $f_{s,max} = (0.4)(98 \text{ N}) = 39.2 \text{ N}$. The minimum force to start moving is equal to this maximum static friction."
+    "answer": "C",
+    "difficulty": 4,
+    "explanation": "Using Newton's second law, $F_{net} = ma$. Since the surface is frictionless, the net force is equal to the applied force. $F = (10 \text{ kg}) \times (2 \text{ m/s}^2) = 20 \text{ N}$."
   },
   {
-    "id": "AP_Physics_1_155",
-    "question": "A block is sliding down a frictionless inclined plane. As the angle of inclination decreases, what happens to the acceleration of the block?",
+    "id": "AP_Physics_1_49",
+    "question": "Two objects, A and B, have masses m_A and m_B respectively. They are initially at rest and are then subjected to the same constant net force for the same amount of time. Which object will have the greater change in momentum?",
     "choices": {
-      "A": "It decreases.",
-      "B": "It increases.",
-      "C": "It remains the same.",
-      "D": "It becomes zero."
+      "A": "Object A, if m_A < m_B.",
+      "B": "Object B, if m_B < m_A.",
+      "C": "Both objects will have the same change in momentum.",
+      "D": "It depends on the masses of the objects."
     },
-    "answer": "A",
+    "answer": "C",
     "difficulty": 5,
-    "explanation": "The acceleration of a block sliding down a frictionless incline is $a = g sin\theta$, where $\theta$ is the angle of inclination. Since $sin\theta$ decreases as $\theta$ decreases (for $0^circ < \theta leq 90^circ$), the acceleration also decreases."
+    "explanation": "The impulse applied to an object is equal to the change in its momentum (Impulse-Momentum Theorem: J = Δp). Impulse is also defined as the average net force multiplied by the time interval over which it acts (J = F_net * Δt). Since both objects are subjected to the same constant net force for the same amount of time, the impulse delivered to both objects is the same. Therefore, their change in momentum will also be the same, regardless of their masses."
   },
   {
     "id": "AP_Physics_1_156",
     "question": "A 0.5 kg ball is thrown vertically upward with an initial velocity of $10\text{ m/s}$. What is the maximum height it reaches?",
     "choices": {
-      "A": "$5.1\text{ m}$",
+      "A": "$18.4\text{ m}$",
       "B": "$10.2\text{ m}$",
       "C": "$20.4\text{ m}$",
-      "D": "$18.4\text{ m}$"
+      "D": "$5.1\text{ m}$"
     },
-    "answer": "A",
+    "answer": "D",
     "difficulty": 6,
     "explanation": "At the maximum height, the final velocity is $0$. Using the kinematic equation $v_f^2 = v_i^2 + 2aDelta y$, we have $0^2 = (10\text{ m/s})^2 + 2(-9.8\text{ m/s}^2)Delta y$. Solving for $Delta y$: $2(9.8)Delta y = 100$, so $Delta y = \frac{100}{19.6} approx 5.1 \text{ m}$."
   },
@@ -2054,19 +1625,6 @@
     "explanation": "The child is moving in a circle at a constant speed, meaning there is a centripetal acceleration directed towards the center of the circle. According to Newton's second law, the net force must be in the same direction as the acceleration, hence the net force is directed radially inward."
   },
   {
-    "id": "AP_Physics_1_159",
-    "question": "A 2 kg object is moving with a velocity of $4\text{ m/s}$. What is its kinetic energy?",
-    "choices": {
-      "A": "$16\text{ J}$",
-      "B": "$8\text{ J}$",
-      "C": "$32\text{ J}$",
-      "D": "$4\text{ J}$"
-    },
-    "answer": "C",
-    "difficulty": 3,
-    "explanation": "Kinetic energy is given by the formula $KE = \frac{1}{2}mv^2$. In this case, $KE = \frac{1}{2}(2 \text{ kg})(4 \text{ m/s})^2 = \frac{1}{2}(2 \text{ kg})(16 \text{ m}^2/\text{s}^2) = 16 \text{ J}$."
-  },
-  {
     "id": "AP_Physics_1_160",
     "question": "A boat of mass $M$ is moving upstream at a constant velocity $v$ relative to the water. The water itself is flowing downstream at a constant velocity $u$ relative to the shore. What is the velocity of the boat relative to the shore?",
     "choices": {
@@ -2083,27 +1641,14 @@
     "id": "AP_Physics_1_161",
     "question": "A force of $50\text{ N}$ acts on an object of mass $5\text{ kg}$ for $2\text{ s}$. What is the change in momentum of the object?",
     "choices": {
-      "A": "$100\text{ kg}cdot\text{m/s}$",
+      "A": "$50\text{ kg}cdot\text{m/s}$",
       "B": "$250\text{ kg}cdot\text{m/s}$",
       "C": "$25\text{ kg}cdot\text{m/s}$",
-      "D": "$50\text{ kg}cdot\text{m/s}$"
+      "D": "$100\text{ kg}cdot\text{m/s}$"
     },
-    "answer": "A",
+    "answer": "D",
     "difficulty": 4,
     "explanation": "Impulse is equal to the change in momentum. Impulse is also equal to the force multiplied by the time interval. Impulse $= F Delta t = (50 \text{ N})(2 \text{ s}) = 100 \text{ N}cdot\text{s}$. Since $1 \text{ N}cdot\text{s} = 1 \text{ kg}cdot\text{m/s}$, the change in momentum is $100 \text{ kg}cdot\text{m/s}$."
-  },
-  {
-    "id": "AP_Physics_1_162",
-    "question": "Which of the following is a vector quantity?",
-    "choices": {
-      "A": "Speed",
-      "B": "Acceleration",
-      "C": "Mass",
-      "D": "Energy"
-    },
-    "answer": "B",
-    "difficulty": 3,
-    "explanation": "Acceleration is the rate of change of velocity, and velocity is a vector quantity (having both magnitude and direction). Therefore, acceleration is also a vector quantity. Speed, mass, and energy are scalar quantities."
   },
   {
     "id": "AP_Physics_1_163",
@@ -2184,19 +1729,6 @@
     "explanation": "Work is defined as the product of the force component in the direction of displacement and the magnitude of the displacement. If the displacement is perpendicular to the force, no work is done. If there is no displacement or no force, no work is done."
   },
   {
-    "id": "AP_Physics_1_169",
-    "question": "A car travels at a constant velocity $v$. What is its acceleration?",
-    "choices": {
-      "A": "Zero",
-      "B": "$v$",
-      "C": "$-v$",
-      "D": "Cannot be determined without knowing the time interval."
-    },
-    "answer": "A",
-    "difficulty": 3,
-    "explanation": "Acceleration is the rate of change of velocity. If the velocity is constant, its rate of change is zero. Therefore, the acceleration is zero."
-  },
-  {
     "id": "AP_Physics_1_170",
     "question": "Which of the following represents the unit of power?",
     "choices": {
@@ -2226,12 +1758,12 @@
     "id": "AP_Physics_1_172",
     "question": "A spring-mass system oscillates horizontally on a frictionless surface. If the mass is doubled, while the spring constant remains the same, what happens to the period of oscillation?",
     "choices": {
-      "A": "The period increases.",
+      "A": "The period becomes zero.",
       "B": "The period decreases.",
       "C": "The period remains the same.",
-      "D": "The period becomes zero."
+      "D": "The period increases."
     },
-    "answer": "A",
+    "answer": "D",
     "difficulty": 6,
     "explanation": "The period of a spring-mass system is given by $T = 2pisqrt{\frac{m}{k}}$. If the mass $m$ is doubled, the term inside the square root becomes $\frac{2m}{k}$, which increases the value of the period. Therefore, the period increases."
   },
@@ -2275,19 +1807,6 @@
     "explanation": "Circular motion at constant speed means the magnitude of velocity (speed) is constant, but the direction of velocity is continuously changing. Therefore, velocity is changing. Since there is a change in velocity over time, there must be an acceleration (centripetal acceleration) directed towards the center of the circle. The magnitude of this acceleration (a_c = v^2/r) is constant if both v and r are constant. The direction of acceleration, however, is continuously changing as the car moves around the circle, but the question asks about the magnitude."
   },
   {
-    "id": "AP_Physics_1_176",
-    "question": "Two objects, X and Y, are dropped from the same height in a vacuum. Object X has twice the mass of object Y. Which of the following statements is true regarding their acceleration due to gravity?",
-    "choices": {
-      "A": "Object X has a greater acceleration.",
-      "B": "Object Y has a greater acceleration.",
-      "C": "Both objects have the same acceleration.",
-      "D": "The acceleration depends on the density of the objects."
-    },
-    "answer": "C",
-    "difficulty": 3,
-    "explanation": "In a vacuum, air resistance is negligible. All objects, regardless of their mass, fall with the same acceleration due to gravity (g) near the Earth's surface. Newton's second law (F=ma) applied to gravity (F=mg) gives ma = mg, so a = g. The mass cancels out."
-  },
-  {
     "id": "AP_Physics_1_177",
     "question": "A spring with a spring constant k is stretched by a distance x. If the spring is then stretched by a distance 2x, how does the stored potential energy change?",
     "choices": {
@@ -2301,19 +1820,6 @@
     "explanation": "The elastic potential energy stored in a spring is given by PE_s = (1/2)kx^2. If the stretch distance becomes 2x, the new potential energy will be PE_s' = (1/2)k(2x)^2 = (1/2)k(4x^2) = 4 * (1/2)kx^2. Therefore, the stored potential energy quadruples."
   },
   {
-    "id": "AP_Physics_1_178",
-    "question": "A skateboarder starts from rest at the top of a ramp. Assuming no friction, which of the following quantities is conserved as the skateboarder moves down the ramp?",
-    "choices": {
-      "A": "Kinetic energy only",
-      "B": "Gravitational potential energy only",
-      "C": "Total mechanical energy",
-      "D": "Velocity"
-    },
-    "answer": "C",
-    "difficulty": 3,
-    "explanation": "In the absence of non-conservative forces like friction or air resistance, total mechanical energy (the sum of kinetic energy and gravitational potential energy) is conserved. As the skateboarder moves down, gravitational potential energy is converted into kinetic energy, but their sum remains constant."
-  },
-  {
     "id": "AP_Physics_1_179",
     "question": "A car accelerates from rest at a constant rate 'a'. After time 't', what is the distance it has traveled?",
     "choices": {
@@ -2325,19 +1831,6 @@
     "answer": "D",
     "difficulty": 4,
     "explanation": "This is a standard kinematic equation. For constant acceleration starting from rest (v_0 = 0), the distance traveled is given by the equation x = v_0*t + 0.5at^2. Since v_0 = 0, the equation simplifies to x = 0.5at^2."
-  },
-  {
-    "id": "AP_Physics_1_180",
-    "question": "A force F is applied horizontally to a block of mass m at rest on a frictionless surface. What is the acceleration of the block?",
-    "choices": {
-      "A": "F/m",
-      "B": "m/F",
-      "C": "F*m",
-      "D": "g"
-    },
-    "answer": "A",
-    "difficulty": 3,
-    "explanation": "According to Newton's Second Law, F_net = ma. If a single horizontal force F is applied to a block on a frictionless surface, then F_net = F. Therefore, F = ma, and the acceleration a = F/m."
   },
   {
     "id": "AP_Physics_1_181",
@@ -2395,12 +1888,12 @@
     "id": "AP_Physics_1_185",
     "question": "A horizontal uniform rod of length L and mass M is pivoted at its center. A mass m is placed at one end of the rod. To balance the rod, another mass M_2 is placed at a distance x from the pivot on the opposite side. What is the distance x?",
     "choices": {
-      "A": "m*L / (2*M_2)",
-      "B": "M_2*L / (2*m)",
+      "A": "M_2*L / (2*m)",
+      "B": "m*L / (2*M_2)",
       "C": "m*L / M_2",
       "D": "M_2*L / m"
     },
-    "answer": "A",
+    "answer": "B",
     "difficulty": 6,
     "explanation": "For the rod to be balanced, the net torque about the pivot must be zero. The mass M of the rod acts at its center, which is the pivot point, so it creates no torque. The mass m at one end (L/2 from the pivot) creates a torque (m*g)*(L/2). The mass M_2 at distance x from the pivot on the opposite side creates a torque (M_2*g)*x. For balance, these torques must be equal: (m*g)*(L/2) = (M_2*g)*x. The 'g's cancel out: m*L/2 = M_2*x. Solving for x gives x = m*L / (2*M_2)."
   },
@@ -2447,12 +1940,12 @@
     "id": "AP_Physics_1_189",
     "question": "A wave travels through a medium. If the frequency of the wave is doubled while the wavelength remains constant, how does the wave speed change?",
     "choices": {
-      "A": "It doubles.",
+      "A": "It remains the same.",
       "B": "It halves.",
       "C": "It quadruples.",
-      "D": "It remains the same."
+      "D": "It doubles."
     },
-    "answer": "A",
+    "answer": "D",
     "difficulty": 5,
     "explanation": "The relationship between wave speed (v), frequency (f), and wavelength (lambda) is given by v = f * lambda. If the frequency (f) is doubled and the wavelength (lambda) remains constant, then the wave speed (v) must also double (v_new = (2f) * lambda = 2 * (f * lambda) = 2v_old)."
   },
@@ -2535,19 +2028,6 @@
     "explanation": "Centripetal acceleration is given by a_c = v^2 / R. If v becomes 2v and R becomes 2R, the new centripetal acceleration is a_c' = (2v)^2 / (2R) = 4v^2 / (2R) = 2v^2 / R. Comparing a_c' with a_c, we see that the centripetal acceleration doubles."
   },
   {
-    "id": "AP_Physics_1_196",
-    "question": "A force F is applied to a block of mass m, causing it to accelerate across a frictionless horizontal surface. If the same force F is applied to a block of mass 2m, what will be its acceleration compared to the first block?",
-    "choices": {
-      "A": "Half as much.",
-      "B": "The same.",
-      "C": "Twice as much.",
-      "D": "Four times as much."
-    },
-    "answer": "A",
-    "difficulty": 3,
-    "explanation": "According to Newton's Second Law, F = ma. For the first block, a_1 = F / m. For the second block, a_2 = F / (2m). Therefore, a_2 = (1/2) * (F/m) = (1/2) * a_1. The acceleration will be half as much."
-  },
-  {
     "id": "AP_Physics_1_197",
     "question": "A horizontal force of 10 N is applied to a 2.0 kg block, initially at rest on a frictionless horizontal surface. What is the kinetic energy of the block after it has moved 3.0 meters?",
     "choices": {
@@ -2564,27 +2044,14 @@
     "id": "AP_Physics_1_198",
     "question": "A 0.5 kg ball is thrown vertically upwards with an initial speed of 10 m/s. Neglecting air resistance, what is the maximum height the ball reaches?",
     "choices": {
-      "A": "5.1 m",
+      "A": "2.5 m",
       "B": "10 m",
       "C": "20 m",
-      "D": "2.5 m"
+      "D": "5.1 m"
     },
-    "answer": "A",
+    "answer": "D",
     "difficulty": 6,
     "explanation": "Using kinematics, v_f^2 = v_i^2 + 2 a delta_y. At the maximum height, v_f = 0. So, 0 = (10 m/s)^2 + 2 (-9.8 m/s^2) delta_y. Solving for delta_y: delta_y = -100 / (-19.6) = 5.10 m (approximately). Alternatively, by conservation of energy, 1/2 mv_i^2 = mgh, so h = v_i^2 / (2g) = (10 m/s)^2 / (2 * 9.8 m/s^2) = 100 / 19.6 = 5.10 m."
-  },
-  {
-    "id": "AP_Physics_1_199",
-    "question": "Two objects, X and Y, are dropped from the same height. Object X has mass m and object Y has mass 2m. If air resistance is negligible, which object hits the ground first?",
-    "choices": {
-      "A": "Object X hits first.",
-      "B": "Object Y hits first.",
-      "C": "They hit the ground at the same time.",
-      "D": "It depends on their shapes."
-    },
-    "answer": "C",
-    "difficulty": 3,
-    "explanation": "In the absence of air resistance, the acceleration due to gravity is constant for all objects, regardless of their mass. Therefore, both objects will fall with the same acceleration and, if dropped from the same height with the same initial velocity (zero in this case), they will hit the ground at the same time."
   },
   {
     "id": "AP_Physics_1_200",
@@ -2613,19 +2080,6 @@
     "explanation": "While the car travels at a constant speed, its direction of motion is continuously changing as it moves around the circular track. Velocity is a vector quantity, possessing both magnitude (speed) and direction. Therefore, if the direction changes, the velocity itself is not constant, even if the speed is."
   },
   {
-    "id": "AP_Physics_1_202",
-    "question": "A student pushes a box across a rough horizontal floor. The student applies a horizontal force of 50 N, and the box moves at a constant velocity. What is the magnitude of the frictional force acting on the box?",
-    "choices": {
-      "A": "50 N",
-      "B": "Greater than 50 N",
-      "C": "Less than 50 N",
-      "D": "Cannot be determined without the mass of the box."
-    },
-    "answer": "A",
-    "difficulty": 3,
-    "explanation": "Since the box moves at a constant velocity, its acceleration is zero. By Newton's Second Law, the net force on the box must be zero. If the applied force is 50 N horizontally and the box moves at constant velocity, then the frictional force must balance the applied force, meaning it is also 50 N in the opposite direction."
-  },
-  {
     "id": "AP_Physics_1_203",
     "question": "A spring with spring constant k is compressed by a distance x. The potential energy stored in the spring is U. If the spring is compressed by a distance 2x, what is the new potential energy stored in the spring?",
     "choices": {
@@ -2642,12 +2096,12 @@
     "id": "AP_Physics_1_204",
     "question": "A satellite orbits the Earth in a circular path. If the orbital radius of the satellite is quadrupled, how must its orbital speed change to maintain a stable orbit?",
     "choices": {
-      "A": "It must be halved.",
+      "A": "It must be reduced to one-quarter.",
       "B": "It must be doubled.",
       "C": "It must be quadrupled.",
-      "D": "It must be reduced to one-quarter."
+      "D": "It must be halved."
     },
-    "answer": "A",
+    "answer": "D",
     "difficulty": 7,
     "explanation": "For a stable circular orbit, the gravitational force provides the centripetal force: G M m / r^2 = m v^2 / r. This simplifies to v^2 = G M / r, or v = sqrt(G M / r). If r is quadrupled to 4r, then the new speed v' = sqrt(G M / (4r)) = (1/sqrt(4)) * sqrt(G M / r) = (1/2) * v. So, the orbital speed must be halved."
   },
@@ -2681,12 +2135,12 @@
     "id": "AP_Physics_1_207",
     "question": "A uniform plank of length L and mass M is supported at its ends by two scales. A person of mass m stands at a distance L/4 from one end. What is the reading on the scale closer to the person?",
     "choices": {
-      "A": "Mg/2 + 3mg/4",
+      "A": "Mg/2 + mg",
       "B": "Mg/2 + mg/4",
       "C": "Mg/2 + mg/2",
-      "D": "Mg/2 + mg"
+      "D": "Mg/2 + 3mg/4"
     },
-    "answer": "A",
+    "answer": "D",
     "difficulty": 7,
     "explanation": "Let R1 be the reading of the scale closer to the person (at L/4 from the person) and R2 be the reading of the other scale. Sum of forces in y-direction: R1 + R2 = Mg + mg. Take torques about the other end (where R2 is). The plank's weight acts at L/2. The person's weight acts at L - L/4 = 3L/4. The force R1 acts at L. So, Sum of Torques = 0: R1 * L - Mg * (L/2) - mg * (3L/4) = 0. Divide by L: R1 - Mg/2 - 3mg/4 = 0. Therefore, R1 = Mg/2 + 3mg/4."
   },
@@ -2715,19 +2169,6 @@
     "answer": "C",
     "difficulty": 6,
     "explanation": "In the vertical direction, the forces acting are the normal force (N) upwards, the gravitational force (mg) downwards, and the vertical component of the tension (T sin(theta)) upwards. Since the block is not accelerating vertically, the sum of vertical forces is zero: N + T sin(theta) - mg = 0. Therefore, N = mg - T sin(theta). Since T sin(theta) is a positive value (assuming theta is between 0 and 90 degrees), N must be less than mg."
-  },
-  {
-    "id": "AP_Physics_1_210",
-    "question": "A student pushes a wall with a force of 100 N. What is the magnitude of the force exerted by the wall on the student?",
-    "choices": {
-      "A": "0 N",
-      "B": "50 N",
-      "C": "100 N",
-      "D": "200 N"
-    },
-    "answer": "C",
-    "difficulty": 3,
-    "explanation": "According to Newton's Third Law, for every action, there is an equal and opposite reaction. If the student exerts a force of 100 N on the wall, the wall simultaneously exerts an equal and opposite force of 100 N on the student."
   },
   {
     "id": "AP_Physics_1_211",
@@ -2798,12 +2239,12 @@
     "id": "AP_Physics_1_216",
     "question": "Two objects, A and B, have masses M and 2M respectively. They are initially at rest on a frictionless horizontal surface. The same net force F is applied to both objects. Which object will have the greater acceleration, and by what factor?",
     "choices": {
-      "A": "Object A will have twice the acceleration of Object B.",
+      "A": "Object A will have one-half the acceleration of Object B.",
       "B": "Object B will have twice the acceleration of Object A.",
       "C": "Both objects will have the same acceleration.",
-      "D": "Object A will have one-half the acceleration of Object B."
+      "D": "Object A will have twice the acceleration of Object B."
     },
-    "answer": "A",
+    "answer": "D",
     "difficulty": 5,
     "explanation": "According to Newton's Second Law, F_net = m*a. If the same net force F is applied to both objects: For Object A: F = M*a_A, so a_A = F/M. For Object B: F = (2M)*a_B, so a_B = F/(2M). Comparing the accelerations, a_A = (F/M) = 2 * (F/(2M)) = 2*a_B. Therefore, Object A will have twice the acceleration of Object B."
   },
@@ -2912,17 +2353,17 @@
     "explanation": "According to Newton's First Law (or Second Law), an object moving at a constant velocity has zero acceleration. If the acceleration is zero, then the net force acting on the object must also be zero (F_net = m*a = m*0 = 0)."
   },
   {
-    "id": "AP_Physics_1_225",
-    "question": "A student applies a torque to a massive, rotating disk to slow it down. Which of the following statements correctly describes the effect of this torque on the disk?",
+    "id": "AP_Phys1_4",
+    "question": "A 2 kg ball at 4 m/s hits a 6 kg ball at rest (perfectly inelastic). Combined velocity?",
     "choices": {
-      "A": "The angular momentum of the disk increases.",
-      "B": "The rotational inertia of the disk decreases.",
-      "C": "The angular velocity of the disk decreases.",
-      "D": "The total mechanical energy of the disk increases."
+      "A": "0.5 m/s",
+      "B": "2 m/s",
+      "C": "4 m/s",
+      "D": "1 m/s"
     },
-    "answer": "C",
-    "difficulty": 5,
-    "explanation": "Torque is the rotational analogue of force. A net external torque causes a change in angular momentum (tau = delta_L / delta_t). If the torque is applied to slow the disk down, it means the torque is in the opposite direction to the disk's angular velocity. This will cause the angular velocity to decrease. The rotational inertia of the disk depends on its mass distribution and shape, which are not changing. The angular momentum will decrease because the angular velocity is decreasing. The total mechanical energy will decrease because the rotational kinetic energy (1/2*I*omega^2) is decreasing."
+    "answer": "D",
+    "difficulty": 6,
+    "explanation": "(2)(4) = (8)v → v = 1 m/s."
   },
   {
     "id": "AP_Physics_1_226",
@@ -2949,19 +2390,6 @@
     "answer": "A",
     "difficulty": 7,
     "explanation": "For the block to remain at rest, the component of gravity acting down the incline must be less than or equal to the maximum static friction force. The force component down the incline is mg*sin(theta). The normal force is mg*cos(theta). The maximum static friction force is f_s_max = mu_s * N = mu_s * mg*cos(theta). Setting these equal for the maximum angle: mg*sin(theta) = mu_s * mg*cos(theta). Dividing both sides by mg*cos(theta) gives tan(theta) = mu_s. Therefore, theta = arctan(mu_s)."
-  },
-  {
-    "id": "AP_Physics_1_228",
-    "question": "A student attempts to balance a uniform meter stick on their finger. When the stick is balanced, where is the center of mass of the stick located relative to the finger?",
-    "choices": {
-      "A": "Directly above the finger.",
-      "B": "Directly below the finger.",
-      "C": "At one end of the stick.",
-      "D": "It depends on the mass distribution of the stick."
-    },
-    "answer": "A",
-    "difficulty": 3,
-    "explanation": "For an object to be balanced, it must be in equilibrium. This requires the net force and net torque to be zero. When balancing an object, the supporting force (from the finger) must be directly aligned with the object's center of mass to prevent any net torque that would cause rotation. For a uniform object, the center of mass is at its geometric center."
   },
   {
     "id": "AP_Physics_1_229",
@@ -3042,28 +2470,15 @@
     "explanation": "According to the principle of conservation of mechanical energy, the initial potential energy at the top of the incline is converted into kinetic energy at the bottom. Initial potential energy PE_initial = MgH. Final kinetic energy KE_final = 0.5 * M * v^2. Since the plane is frictionless, there is no energy loss due to friction. So, PE_initial = KE_final. MgH = 0.5 * M * v^2. Solving for v, we get v = sqrt(2gH)."
   },
   {
-    "id": "AP_Physics_1_235",
-    "question": "A horizontal force F is applied to a block of mass m, initially at rest on a frictionless horizontal surface. The force causes the block to accelerate. If the same force F were applied to a block of mass 2m, what would be the resulting acceleration compared to the first block's acceleration?",
-    "choices": {
-      "A": "Half as much",
-      "B": "The same",
-      "C": "Twice as much",
-      "D": "Four times as much"
-    },
-    "answer": "A",
-    "difficulty": 3,
-    "explanation": "According to Newton's Second Law, F = ma, where F is the applied force, m is the mass, and a is the acceleration. For the first block, a_1 = F/m. For the second block, the mass is 2m, so a_2 = F/(2m). Comparing a_2 to a_1, we see that a_2 = (1/2) * (F/m) = (1/2) * a_1. Therefore, the acceleration would be half as much."
-  },
-  {
     "id": "AP_Physics_1_236",
     "question": "A solid disk and a hollow hoop of the same mass and radius are released from rest at the top of an incline. Both roll without slipping. Which object reaches the bottom of the incline first?",
     "choices": {
-      "A": "The solid disk",
+      "A": "It depends on the angle of the incline",
       "B": "The hollow hoop",
       "C": "They reach at the same time",
-      "D": "It depends on the angle of the incline"
+      "D": "The solid disk"
     },
-    "answer": "A",
+    "answer": "D",
     "difficulty": 6,
     "explanation": "When an object rolls without slipping down an incline, its gravitational potential energy is converted into both translational kinetic energy and rotational kinetic energy. The rotational inertia (I) impacts how energy is distributed. For a solid disk, I = 0.5 * m * R^2. For a hollow hoop, I = m * R^2. Since the hollow hoop has a greater rotational inertia, more of its potential energy is converted into rotational kinetic energy, leaving less for translational kinetic energy. Thus, the solid disk will have a greater translational speed and reach the bottom first."
   },
@@ -3110,12 +2525,12 @@
     "id": "AP_Physics_1_240",
     "question": "Two objects, masses m and 2m, are separated by a distance r. The gravitational force between them is F. If the distance between them is doubled to 2r, what is the new gravitational force in terms of F?",
     "choices": {
-      "A": "F / 4",
+      "A": "4F",
       "B": "F / 2",
       "C": "2F",
-      "D": "4F"
+      "D": "F / 4"
     },
-    "answer": "A",
+    "answer": "D",
     "difficulty": 4,
     "explanation": "Newton's Law of Universal Gravitation states that the gravitational force F between two masses m1 and m2 separated by a distance r is F = G * (m1 * m2) / r^2. Initially, F = G * (m * 2m) / r^2. If the distance is doubled to 2r, the new force F' will be F' = G * (m * 2m) / (2r)^2 = G * (m * 2m) / (4r^2) = (1/4) * [G * (m * 2m) / r^2]. Therefore, F' = F / 4."
   },
@@ -3146,19 +2561,6 @@
     "explanation": "During the first 10 seconds, the car travels a distance d1 = v*t = (20 m/s) * (10 s) = 200 m. During the deceleration phase, the initial velocity is 20 m/s, final velocity is 0 m/s, and time is 5 s. The average velocity during this phase is (20 + 0)/2 = 10 m/s. The distance traveled is d2 = average_v * t = (10 m/s) * (5 s) = 50 m. The total distance is d1 + d2 = 200 m + 50 m = 250 m."
   },
   {
-    "id": "AP_Physics_1_243",
-    "question": "Two objects, one with mass 2m and the other with mass m, are dropped from the same height in a vacuum. Which of the following statements is true regarding their fall?",
-    "choices": {
-      "A": "The object with mass 2m hits the ground first because it has greater inertia.",
-      "B": "The object with mass 2m experiences a greater gravitational force, but they hit the ground at the same time.",
-      "C": "The object with mass m experiences a smaller gravitational force and hits the ground after the object with mass 2m.",
-      "D": "Both objects experience the same gravitational force and hit the ground at the same time."
-    },
-    "answer": "B",
-    "difficulty": 3,
-    "explanation": "In a vacuum, all objects fall with the same acceleration due to gravity, g, regardless of their mass. Therefore, they will hit the ground at the same time. However, the gravitational force (F = mg) is directly proportional to mass, so the object with mass 2m experiences a gravitational force of 2mg, while the object with mass m experiences a force of mg. So, the 2m object experiences a greater gravitational force."
-  },
-  {
     "id": "AP_Physics_1_244",
     "question": "A 0.5 kg ball is thrown vertically upward with an initial speed of 10 m/s. Neglecting air resistance, what is the maximum height the ball reaches?",
     "choices": {
@@ -3185,19 +2587,6 @@
     "explanation": "The maximum static friction force is given by f_s,max = mu_s * F_normal. On a horizontal surface, the normal force (F_normal) is equal to the gravitational force (m * g). Therefore, the minimum force F required to start the block moving, which must overcome this maximum static friction, is F = mu_s * m * g."
   },
   {
-    "id": "AP_Physics_1_246",
-    "question": "A student pushes a box across a floor with a constant force F. If the box moves at a constant velocity, what can be concluded about the net force acting on the box?",
-    "choices": {
-      "A": "The net force is in the direction of motion.",
-      "B": "The net force is opposite to the direction of motion.",
-      "C": "The net force is zero.",
-      "D": "The net force is increasing."
-    },
-    "answer": "C",
-    "difficulty": 3,
-    "explanation": "If an object moves at a constant velocity, its acceleration is zero. According to Newton's Second Law (F_net = ma), if acceleration (a) is zero, then the net force (F_net) acting on the object must also be zero."
-  },
-  {
     "id": "AP_Physics_1_247",
     "question": "A 10 kg mass is attached to a string and swung in a horizontal circle of radius 2 m at a constant speed of 5 m/s. What is the tension in the string?",
     "choices": {
@@ -3222,19 +2611,6 @@
     "answer": "C",
     "difficulty": 5,
     "explanation": "Since both the ramp and the horizontal surface are frictionless, there are no non-conservative forces (like friction) doing work on the block. In the absence of non-conservative forces, the total mechanical energy (potential energy + kinetic energy) of the system remains conserved. Therefore, E_A = E_B = E_C."
-  },
-  {
-    "id": "AP_Physics_1_249",
-    "question": "A spring with spring constant k is compressed by a distance x. What is the elastic potential energy stored in the spring?",
-    "choices": {
-      "A": "k * x",
-      "B": "1/2 * k * x",
-      "C": "k * x^2",
-      "D": "1/2 * k * x^2"
-    },
-    "answer": "D",
-    "difficulty": 3,
-    "explanation": "The formula for the elastic potential energy stored in a spring that is compressed or stretched by a distance x from its equilibrium position, with a spring constant k, is PE_elastic = 1/2 * k * x^2."
   },
   {
     "id": "AP_Physics_1_250",
@@ -3380,19 +2756,6 @@
     "explanation": "For a string fixed at both ends, the fundamental (first harmonic) standing wave has one antinode in the middle and nodes at both ends. This means half a wavelength fits on the string. Therefore, L = lambda/2, or lambda = 2*L. So, the wavelength of the fundamental is twice the length of the string, not equal to the length of the string."
   },
   {
-    "id": "AP_Physics_1_261",
-    "question": "A block of mass M is released from rest at the top of a frictionless inclined plane of height H and angle theta. Which of the following expressions best represents the speed of the block at the bottom of the incline?",
-    "choices": {
-      "A": "sqrt(2gH)",
-      "B": "sqrt(2gH sin(theta))",
-      "C": "2gH",
-      "D": "gH / sin(theta)"
-    },
-    "answer": "A",
-    "difficulty": 4,
-    "explanation": "According to the principle of conservation of mechanical energy, the initial potential energy (M g H) is converted entirely into kinetic energy (1/2 M v^2) at the bottom of the incline, since the plane is frictionless. Setting these equal: M g H = 1/2 M v^2. Solving for v, we get v = sqrt(2gH). The angle theta is irrelevant here because the height H already accounts for the vertical drop."
-  },
-  {
     "id": "AP_Physics_1_262",
     "question": "An object starts from rest and accelerates uniformly. If its final speed after traveling a distance d is v, what is its speed after traveling a distance d/4?",
     "choices": {
@@ -3406,28 +2769,15 @@
     "explanation": "For an object starting from rest and accelerating uniformly, the kinematic equation v^2 = v_0^2 + 2ad simplifies to v^2 = 2ad. This means v is proportional to sqrt(d). So, if the distance is d/4, the speed will be proportional to sqrt(d/4) = sqrt(d)/2. Therefore, if the speed at distance d is v, the speed at distance d/4 will be v/2."
   },
   {
-    "id": "AP_Physics_1_263",
-    "question": "A stone is thrown horizontally from the top of a cliff. Which of the following statements is true regarding its motion in the absence of air resistance?",
-    "choices": {
-      "A": "Its horizontal velocity decreases as it falls.",
-      "B": "Its vertical acceleration increases as it falls.",
-      "C": "Its horizontal acceleration is zero.",
-      "D": "Its speed is constant throughout its flight."
-    },
-    "answer": "C",
-    "difficulty": 3,
-    "explanation": "In projectile motion, in the absence of air resistance, the only force acting on the object is gravity, which acts vertically downwards. Therefore, there is no horizontal force, and thus no horizontal acceleration. The horizontal velocity remains constant. The vertical acceleration is constant and equal to g (approximately 9.8 m/s^2) downwards. The speed changes due to the increasing vertical velocity."
-  },
-  {
     "id": "AP_Physics_1_264",
     "question": "Two objects, object A with mass M and object B with mass 2M, are connected by a light string that passes over a frictionless pulley. If the system is released from rest, what is the magnitude of the acceleration of object A?",
     "choices": {
-      "A": "g/3",
+      "A": "g",
       "B": "g/2",
       "C": "2g/3",
-      "D": "g"
+      "D": "g/3"
     },
-    "answer": "A",
+    "answer": "D",
     "difficulty": 6,
     "explanation": "This is an Atwood machine problem. Let T be the tension in the string. For object A (mass M), the net force is T - M g = M a. For object B (mass 2M), the net force is 2M g - T = 2M a (assuming object B accelerates downwards). Adding the two equations: (T - M g) + (2M g - T) = M a + 2M a. This simplifies to M g = 3M a. Solving for a, we get a = M g / (3M) = g/3."
   },
@@ -3456,19 +2806,6 @@
     "answer": "B",
     "difficulty": 5,
     "explanation": "In a perfectly elastic head-on collision between two objects of equal mass where one is initially at rest, the objects exchange velocities. The first sphere (initially moving with speed v) will come to rest (speed 0), and the second sphere (initially at rest) will move with the initial speed of the first sphere (speed v)."
-  },
-  {
-    "id": "AP_Physics_1_267",
-    "question": "A car travels at a constant speed around a circular track. Which of the following statements about its motion is true?",
-    "choices": {
-      "A": "Its velocity is constant.",
-      "B": "Its acceleration is zero.",
-      "C": "Its acceleration is directed towards the center of the circle.",
-      "D": "The net force on the car is zero."
-    },
-    "answer": "C",
-    "difficulty": 3,
-    "explanation": "Even though the car's speed is constant, its direction of motion is continuously changing as it moves in a circle. Therefore, its velocity is not constant. A change in velocity means there is an acceleration. For uniform circular motion, this acceleration (centripetal acceleration) is always directed towards the center of the circle. Since there's an acceleration, there must be a net force (centripetal force) acting on the car, so the net force is not zero."
   },
   {
     "id": "AP_Physics_1_268",
@@ -3575,28 +2912,15 @@
     "explanation": "The magnetic force on a current-carrying wire is given by F = I L B sin(theta), where I is the current, L is the length of the wire, B is the magnetic field strength, and theta is the angle between the direction of the current and the magnetic field. For the force F to be zero, sin(theta) must be zero. This occurs when theta = 0 degrees or theta = 180 degrees, meaning the wire is parallel or anti-parallel (both considered parallel) to the magnetic field."
   },
   {
-    "id": "AP_Physics_1_276",
-    "question": "An ideal gas is contained in a rigid container. If the absolute temperature of the gas is doubled, what happens to the pressure exerted by the gas?",
-    "choices": {
-      "A": "It doubles.",
-      "B": "It halves.",
-      "C": "It remains the same.",
-      "D": "It quadruples."
-    },
-    "answer": "A",
-    "difficulty": 3,
-    "explanation": "For an ideal gas in a rigid container, the volume (V) and the number of moles (n) are constant. According to the ideal gas law, PV = nRT. Since n, R, and V are constant, P is directly proportional to T. So, if the absolute temperature (T) is doubled, the pressure (P) will also double. (P_2 / P_1 = T_2 / T_1 => P_2 = P_1 * (2T_1 / T_1) = 2P_1)."
-  },
-  {
     "id": "AP_Physics_1_277",
     "question": "A block of mass m is attached to a spring with spring constant k. The block is pulled from its equilibrium position by a distance A and released from rest. What is the maximum speed of the block during its oscillation?",
     "choices": {
-      "A": "A * sqrt(k/m)",
-      "B": "A * sqrt(m/k)",
+      "A": "A * sqrt(m/k)",
+      "B": "A * sqrt(k/m)",
       "C": "2 * pi * sqrt(m/k)",
       "D": "k * A / m"
     },
-    "answer": "A",
+    "answer": "B",
     "difficulty": 6,
     "explanation": "This is a simple harmonic motion problem. The maximum speed occurs when the block passes through its equilibrium position, where all the initial potential energy stored in the spring (1/2 k A^2) has been converted into kinetic energy (1/2 m v_max^2). Setting these equal: 1/2 k A^2 = 1/2 m v_max^2. Solving for v_max: k A^2 = m v_max^2 => v_max^2 = (k/m) A^2 => v_max = A * sqrt(k/m)."
   },
@@ -3630,12 +2954,12 @@
     "id": "AP_Physics_1_280",
     "question": "A resistor of resistance R is connected to a battery with voltage V. If an identical resistor is added in parallel to the first one, what happens to the total current drawn from the battery?",
     "choices": {
-      "A": "It doubles.",
+      "A": "It quadruples.",
       "B": "It halves.",
       "C": "It remains the same.",
-      "D": "It quadruples."
+      "D": "It doubles."
     },
-    "answer": "A",
+    "answer": "D",
     "difficulty": 5,
     "explanation": "Initially, the total resistance is R. The current is I = V/R. When an identical resistor R is added in parallel, the new equivalent resistance (R_eq) is given by 1/R_eq = 1/R + 1/R = 2/R. So, R_eq = R/2. The new total current drawn from the battery is I' = V / R_eq = V / (R/2) = 2V/R. Since I = V/R, the new current I' = 2I. Therefore, the total current doubles."
   },
@@ -3783,19 +3107,6 @@
     "explanation": "Since m1 is greater than m2, the gravitational force on m1 (m1*g) is greater than the gravitational force on m2 (m2*g). This means the net force on the system will cause m1 to accelerate downward and m2 to accelerate upward. The tension in the string will be the same for both masses."
   },
   {
-    "id": "AP_Physics_1_292",
-    "question": "Which of the following is a scalar quantity?",
-    "choices": {
-      "A": "Velocity",
-      "B": "Acceleration",
-      "C": "Force",
-      "D": "Energy"
-    },
-    "answer": "D",
-    "difficulty": 5,
-    "explanation": "Scalar quantities have only magnitude, while vector quantities have both magnitude and direction. Velocity, acceleration, and force are all vectors. Energy is a scalar quantity."
-  },
-  {
     "id": "AP_Physics_1_293",
     "question": "A 60 kg person stands on a scale in an elevator. If the elevator is accelerating upward at 2 m/s^2, what is the reading on the scale (in Newtons)?",
     "choices": {
@@ -3825,12 +3136,12 @@
     "id": "AP_Physics_1_295",
     "question": "Two identical objects collide head-on. Before the collision, object A has a momentum of +10 kg*m/s, and object B has a momentum of -10 kg*m/s. What is the total momentum of the system immediately after the collision?",
     "choices": {
-      "A": "0 kg*m/s",
+      "A": "+20 kg*m/s",
       "B": "+10 kg*m/s",
       "C": "-10 kg*m/s",
-      "D": "+20 kg*m/s"
+      "D": "0 kg*m/s"
     },
-    "answer": "A",
+    "answer": "D",
     "difficulty": 6,
     "explanation": "The law of conservation of momentum states that in the absence of external forces, the total momentum of a system remains constant. The initial total momentum of the system is the sum of the momenta of object A and object B: P_initial = P_A + P_B = +10 kg*m/s + (-10 kg*m/s) = 0 kg*m/s. Therefore, the total momentum of the system immediately after the collision will also be 0 kg*m/s."
   },
@@ -3859,19 +3170,6 @@
     "answer": "D",
     "difficulty": 5,
     "explanation": "Newton's Second Law states that F_net = m*a. If there is a net force (F_net > 0), and the mass (m) is non-zero, then there must be an acceleration (a > 0). Acceleration is the rate of change of velocity. Therefore, if an object at rest (initial velocity = 0) accelerates, its velocity must change from zero to some non-zero value, meaning it will start moving."
-  },
-  {
-    "id": "AP_Physics_1_298",
-    "question": "A planet orbits a star in an elliptical path. The planet's speed is greatest when it is:",
-    "choices": {
-      "A": "Farthest from the star.",
-      "B": "Closest to the star.",
-      "C": "At the midpoint of its orbit.",
-      "D": "Constant throughout the orbit."
-    },
-    "answer": "B",
-    "difficulty": 6,
-    "explanation": "This is related to Kepler's Second Law, which states that a line segment joining a planet and the star sweeps out equal areas during equal intervals of time. This implies that the planet moves faster when it is closer to the star (because it has to cover more 'ground' in the same amount of time to sweep the same area) and slower when it is farther from the star. Conservation of angular momentum also plays a role here."
   },
   {
     "id": "AP_Physics_1_299",

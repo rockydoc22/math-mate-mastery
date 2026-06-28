@@ -1,31 +1,31 @@
 [
   {
-    "id": "ib_001",
+    "id": "ib_282",
     "exam": "IB",
-    "section": "Sciences",
-    "question": "A ball is thrown vertically upward with an initial velocity of 20 m/s. Assuming g = 10 m/s², what is the maximum height reached?",
+    "section": "The Arts",
+    "question": "Consider a sculpture made from found objects, resembling a discarded bicycle. This artwork is most strongly aligned with the principles of which art movement?",
     "options": [
       {
         "label": "A",
-        "text": "20 m"
+        "text": "Baroque"
       },
       {
         "label": "B",
-        "text": "40 m"
+        "text": "Renaissance"
       },
       {
         "label": "C",
-        "text": "10 m"
+        "text": "Dadaism or Surrealism (specifically Assemblage)"
       },
       {
         "label": "D",
-        "text": "30 m"
+        "text": "Neoclassicism"
       }
     ],
-    "correctAnswer": "A",
-    "explanation": "Using v² = u² - 2gh, at max height v=0: 0 = 400 - 20h, h = 20 m.",
-    "skill": "Kinematics",
-    "difficulty": "medium"
+    "correctAnswer": "C",
+    "explanation": "The use of found objects (readymades or assemblage) to create art is a hallmark of movements like Dadaism and Surrealism. Marcel Duchamp's 'Bicycle Wheel' (1913) is a famous early example, and artists like Robert Rauschenberg later developed assemblage techniques.",
+    "skill": "Analysis and evaluation",
+    "difficulty": 7
   },
   {
     "id": "ib_002",
@@ -35,11 +35,11 @@
     "options": [
       {
         "label": "A",
-        "text": "6x + 2"
+        "text": "3x + 2"
       },
       {
         "label": "B",
-        "text": "3x + 2"
+        "text": "6x + 2"
       },
       {
         "label": "C",
@@ -50,10 +50,10 @@
         "text": "6x - 5"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "B",
     "explanation": "f'(x) = 6x + 2 by the power rule.",
     "skill": "Calculus",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "ib_003",
@@ -81,7 +81,7 @@
     "correctAnswer": "A",
     "explanation": "Blood in Macbeth symbolizes guilt — both Macbeth and Lady Macbeth are haunted by blood imagery.",
     "skill": "Literary Analysis",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "ib_004",
@@ -91,7 +91,7 @@
     "options": [
       {
         "label": "A",
-        "text": "Opportunity cost"
+        "text": "Fixed cost"
       },
       {
         "label": "B",
@@ -103,13 +103,13 @@
       },
       {
         "label": "D",
-        "text": "Fixed cost"
+        "text": "Opportunity cost"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "Opportunity cost is the value of the best alternative given up when making a choice.",
     "skill": "Economics",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "ib_005",
@@ -119,11 +119,11 @@
     "options": [
       {
         "label": "A",
-        "text": "ATP (adenosine triphosphate)"
+        "text": "DNA"
       },
       {
         "label": "B",
-        "text": "DNA"
+        "text": "ATP (adenosine triphosphate)"
       },
       {
         "label": "C",
@@ -134,10 +134,10 @@
         "text": "Glucose"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "B",
     "explanation": "ATP provides energy for cellular processes through hydrolysis of its phosphate bonds.",
     "skill": "Cell Biology",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "ib_006",
@@ -147,7 +147,7 @@
     "options": [
       {
         "label": "A",
-        "text": "32"
+        "text": "64"
       },
       {
         "label": "B",
@@ -159,13 +159,13 @@
       },
       {
         "label": "D",
-        "text": "64"
+        "text": "32"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "log₂(x) = 5 means 2⁵ = x = 32.",
     "skill": "Logarithms",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "ib_007",
@@ -193,7 +193,7 @@
     "correctAnswer": "A",
     "explanation": "The passé composé is used for completed actions in the past.",
     "skill": "French Grammar",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "ib_008",
@@ -221,7 +221,7 @@
     "correctAnswer": "A",
     "explanation": "The Treaty placed war guilt, reparations, territorial losses, and military restrictions on Germany.",
     "skill": "History",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "ib_009",
@@ -231,7 +231,7 @@
     "options": [
       {
         "label": "A",
-        "text": "Lower than the energy of the reactants"
+        "text": "Equal to the energy of the reactants"
       },
       {
         "label": "B",
@@ -239,17 +239,17 @@
       },
       {
         "label": "C",
-        "text": "Equal to the energy of the reactants"
+        "text": "Lower than the energy of the reactants"
       },
       {
         "label": "D",
         "text": "Not related to the reactants"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "C",
     "explanation": "In exothermic reactions, energy is released, so products have lower energy. ΔH is negative.",
     "skill": "Chemistry",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "ib_010",
@@ -259,11 +259,11 @@
     "options": [
       {
         "label": "A",
-        "text": "Gradually getting louder"
+        "text": "Gradually getting softer"
       },
       {
         "label": "B",
-        "text": "Gradually getting softer"
+        "text": "Gradually getting louder"
       },
       {
         "label": "C",
@@ -274,10 +274,10 @@
         "text": "Suddenly stopping"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "B",
     "explanation": "Crescendo means to gradually increase in volume.",
     "skill": "Music Theory",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "ib_011",
@@ -305,7 +305,7 @@
     "correctAnswer": "A",
     "explanation": "aₙ = a₁ × r^(n-1). a₅ = 3 × 2⁴ = 3 × 16 = 48.",
     "skill": "Sequences",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "ib_012",
@@ -315,11 +315,11 @@
     "options": [
       {
         "label": "A",
-        "text": "Carries genetic information from DNA to ribosomes for translation"
+        "text": "Catalyzes the formation of peptide bonds"
       },
       {
         "label": "B",
-        "text": "Catalyzes the formation of peptide bonds"
+        "text": "Carries genetic information from DNA to ribosomes for translation"
       },
       {
         "label": "C",
@@ -330,10 +330,10 @@
         "text": "Forms the structure of chromosomes"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "B",
     "explanation": "mRNA carries the genetic code to ribosomes where it is translated into proteins.",
     "skill": "Molecular Biology",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "ib_013",
@@ -343,7 +343,7 @@
     "options": [
       {
         "label": "A",
-        "text": "Physiological needs"
+        "text": "Self-actualization"
       },
       {
         "label": "B",
@@ -355,13 +355,13 @@
       },
       {
         "label": "D",
-        "text": "Self-actualization"
+        "text": "Physiological needs"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "Physiological needs (food, water, shelter) form the base of Maslow's hierarchy.",
     "skill": "Psychology",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "ib_014",
@@ -371,7 +371,7 @@
     "options": [
       {
         "label": "A",
-        "text": "x² + C"
+        "text": "2 + C"
       },
       {
         "label": "B",
@@ -383,13 +383,13 @@
       },
       {
         "label": "D",
-        "text": "2 + C"
+        "text": "x² + C"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "∫2x dx = 2(x²/2) + C = x² + C.",
     "skill": "Integration",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "ib_015",
@@ -399,11 +399,11 @@
     "options": [
       {
         "label": "A",
-        "text": "Boyle's Law"
+        "text": "Charles's Law"
       },
       {
         "label": "B",
-        "text": "Charles's Law"
+        "text": "Boyle's Law"
       },
       {
         "label": "C",
@@ -414,10 +414,10 @@
         "text": "Gay-Lussac's Law"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "B",
     "explanation": "Boyle's Law: PV = k at constant T.",
     "skill": "Gas Laws",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "ib_016",
@@ -427,7 +427,7 @@
     "options": [
       {
         "label": "A",
-        "text": "Cannot be fully trusted to present events accurately"
+        "text": "Narrates in third person"
       },
       {
         "label": "B",
@@ -435,17 +435,17 @@
       },
       {
         "label": "C",
-        "text": "Narrates in third person"
+        "text": "Cannot be fully trusted to present events accurately"
       },
       {
         "label": "D",
         "text": "Is the author of the text"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "C",
     "explanation": "An unreliable narrator's account may be biased, incomplete, or deliberately deceptive.",
     "skill": "Narrative Technique",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "ib_017",
@@ -473,7 +473,7 @@
     "correctAnswer": "A",
     "explanation": "GDP is the total monetary value of all finished goods and services produced within a country's borders.",
     "skill": "Economics",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "ib_018",
@@ -483,7 +483,7 @@
     "options": [
       {
         "label": "A",
-        "text": "The phenotype of individuals"
+        "text": "The ecosystem"
       },
       {
         "label": "B",
@@ -495,13 +495,13 @@
       },
       {
         "label": "D",
-        "text": "The ecosystem"
+        "text": "The phenotype of individuals"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "Natural selection acts on phenotypes because these determine an organism's fitness.",
     "skill": "Evolution",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "ib_019",
@@ -529,7 +529,7 @@
     "correctAnswer": "A",
     "explanation": "sin(30°) = sin(150°) = 0.5 in the range 0° to 180°.",
     "skill": "Trigonometry",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "ib_020",
@@ -539,7 +539,7 @@
     "options": [
       {
         "label": "A",
-        "text": "Renewed interest in classical Greek and Roman art, naturalism, and perspective"
+        "text": "Rejection of all classical traditions"
       },
       {
         "label": "B",
@@ -547,17 +547,17 @@
       },
       {
         "label": "C",
-        "text": "Rejection of all classical traditions"
+        "text": "Renewed interest in classical Greek and Roman art, naturalism, and perspective"
       },
       {
         "label": "D",
         "text": "Exclusive use of dark colors and flat composition"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "C",
     "explanation": "The Renaissance revived classical ideals, emphasized realistic anatomy and linear perspective.",
     "skill": "Art History",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "ib_021",
@@ -567,7 +567,7 @@
     "options": [
       {
         "label": "A",
-        "text": "y = 3x − 1"
+        "text": "y = 5x − 1"
       },
       {
         "label": "B",
@@ -579,13 +579,13 @@
       },
       {
         "label": "D",
-        "text": "y = 5x − 1"
+        "text": "y = 3x − 1"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "y − 5 = 3(x − 2) → y = 3x − 6 + 5 = 3x − 1.",
     "skill": "Linear Functions",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "ib_022",
@@ -595,7 +595,7 @@
     "options": [
       {
         "label": "A",
-        "text": "To lower the activation energy, increasing the reaction rate"
+        "text": "To provide energy for the reaction"
       },
       {
         "label": "B",
@@ -603,17 +603,17 @@
       },
       {
         "label": "C",
-        "text": "To provide energy for the reaction"
+        "text": "To lower the activation energy, increasing the reaction rate"
       },
       {
         "label": "D",
         "text": "To be consumed in the reaction"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "C",
     "explanation": "Enzymes are biological catalysts that lower activation energy without being consumed.",
     "skill": "Biochemistry",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "ib_023",
@@ -641,7 +641,7 @@
     "correctAnswer": "A",
     "explanation": "Higher demand with constant supply creates upward pressure on price.",
     "skill": "Economics",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "ib_024",
@@ -651,11 +651,11 @@
     "options": [
       {
         "label": "A",
-        "text": "A narrative technique that presents a character's continuous flow of thoughts"
+        "text": "A type of poetry"
       },
       {
         "label": "B",
-        "text": "A type of poetry"
+        "text": "A narrative technique that presents a character's continuous flow of thoughts"
       },
       {
         "label": "C",
@@ -666,10 +666,10 @@
         "text": "A plot structure technique"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "B",
     "explanation": "Stream of consciousness captures the unfiltered, continuous flow of a character's thoughts and feelings.",
     "skill": "Narrative Technique",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "ib_025",
@@ -679,7 +679,7 @@
     "options": [
       {
         "label": "A",
-        "text": "They are inversely proportional (as wavelength increases, frequency decreases)"
+        "text": "There is no relationship"
       },
       {
         "label": "B",
@@ -687,17 +687,17 @@
       },
       {
         "label": "C",
-        "text": "There is no relationship"
+        "text": "They are inversely proportional (as wavelength increases, frequency decreases)"
       },
       {
         "label": "D",
         "text": "They are always equal"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "C",
     "explanation": "c = λf. Since c is constant, wavelength and frequency are inversely related.",
     "skill": "Waves",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "ib_026",
@@ -725,7 +725,7 @@
     "correctAnswer": "A",
     "explanation": "Standard deviation quantifies how much data points typically deviate from the mean.",
     "skill": "Statistics",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "ib_027",
@@ -753,7 +753,7 @@
     "correctAnswer": "A",
     "explanation": "The Cold War (1947-1991) was the political and military tension between the US-led West and USSR-led East.",
     "skill": "History",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "ib_028",
@@ -763,7 +763,7 @@
     "options": [
       {
         "label": "A",
-        "text": "7"
+        "text": "1"
       },
       {
         "label": "B",
@@ -775,13 +775,13 @@
       },
       {
         "label": "D",
-        "text": "1"
+        "text": "7"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "At 25°C, pure water has [H⁺] = 10⁻⁷ M, giving pH = 7, which is neutral.",
     "skill": "Acids and Bases",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "ib_029",
@@ -791,7 +791,7 @@
     "options": [
       {
         "label": "A",
-        "text": "0.12"
+        "text": "0.58"
       },
       {
         "label": "B",
@@ -803,13 +803,13 @@
       },
       {
         "label": "D",
-        "text": "0.58"
+        "text": "0.12"
       }
     ],
-    "correctAnswer": "A",
-    "explanation": "For independent events: P(A∩B) = P(A) × P(B) = 0.4 × 0.3 = 0.12.",
+    "correctAnswer": "D",
+    "explanation": "For independent events: P(A∩B) = P(D) × P(B) = 0.4 × 0.3 = 0.12.",
     "skill": "Probability",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "ib_030",
@@ -819,7 +819,7 @@
     "options": [
       {
         "label": "A",
-        "text": "Wishes, doubts, emotions, and hypothetical situations"
+        "text": "Simple factual statements"
       },
       {
         "label": "B",
@@ -831,13 +831,13 @@
       },
       {
         "label": "D",
-        "text": "Simple factual statements"
+        "text": "Wishes, doubts, emotions, and hypothetical situations"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "The subjunctive expresses uncertainty, desire, emotion, and hypothetical scenarios.",
     "skill": "Spanish Grammar",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "ib_031",
@@ -865,7 +865,7 @@
     "correctAnswer": "A",
     "explanation": "Ohm's Law: V = IR, where V is voltage, I is current, and R is resistance.",
     "skill": "Electricity",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "ib_032",
@@ -875,11 +875,11 @@
     "options": [
       {
         "label": "A",
-        "text": "x = 2 and x = 3"
+        "text": "x = 1 and x = 6"
       },
       {
         "label": "B",
-        "text": "x = 1 and x = 6"
+        "text": "x = 2 and x = 3"
       },
       {
         "label": "C",
@@ -890,10 +890,10 @@
         "text": "x = 5 and x = 1"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "B",
     "explanation": "Factor: (x−2)(x−3) = 0, so x = 2 or x = 3.",
     "skill": "Quadratics",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "ib_033",
@@ -903,7 +903,7 @@
     "options": [
       {
         "label": "A",
-        "text": "The view that a culture should be understood and judged by its own standards, not those of another culture"
+        "text": "The study of cultural artifacts"
       },
       {
         "label": "B",
@@ -911,17 +911,17 @@
       },
       {
         "label": "C",
-        "text": "The study of cultural artifacts"
+        "text": "The view that a culture should be understood and judged by its own standards, not those of another culture"
       },
       {
         "label": "D",
         "text": "A type of government system"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "C",
     "explanation": "Cultural relativism holds that practices should be evaluated within their own cultural context.",
     "skill": "Sociology",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "ib_034",
@@ -931,7 +931,7 @@
     "options": [
       {
         "label": "A",
-        "text": "To regulate what enters and leaves the cell (selectively permeable barrier)"
+        "text": "To store genetic information"
       },
       {
         "label": "B",
@@ -939,17 +939,17 @@
       },
       {
         "label": "C",
-        "text": "To store genetic information"
+        "text": "To regulate what enters and leaves the cell (selectively permeable barrier)"
       },
       {
         "label": "D",
         "text": "To synthesize proteins"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "C",
     "explanation": "The cell membrane is a selectively permeable phospholipid bilayer controlling substance movement.",
     "skill": "Cell Biology",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "ib_035",
@@ -959,7 +959,7 @@
     "options": [
       {
         "label": "A",
-        "text": "A metaphor makes a direct comparison; a simile uses 'like' or 'as'"
+        "text": "A metaphor only applies to nature"
       },
       {
         "label": "B",
@@ -971,13 +971,13 @@
       },
       {
         "label": "D",
-        "text": "A metaphor only applies to nature"
+        "text": "A metaphor makes a direct comparison; a simile uses 'like' or 'as'"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "Metaphors directly state something IS something else; similes compare using 'like' or 'as.'",
     "skill": "Figurative Language",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "ib_036",
@@ -1005,7 +1005,7 @@
     "correctAnswer": "A",
     "explanation": "∫₀³ 2x dx = [x²]₀³ = 9 - 0 = 9.",
     "skill": "Integration",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "ib_037",
@@ -1015,7 +1015,7 @@
     "options": [
       {
         "label": "A",
-        "text": "Ionic bond"
+        "text": "Metallic bond"
       },
       {
         "label": "B",
@@ -1023,17 +1023,17 @@
       },
       {
         "label": "C",
-        "text": "Metallic bond"
+        "text": "Ionic bond"
       },
       {
         "label": "D",
         "text": "Hydrogen bond"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "C",
     "explanation": "Metals tend to lose electrons and nonmetals gain them, forming ionic bonds through electron transfer.",
     "skill": "Chemical Bonding",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "ib_038",
@@ -1061,7 +1061,7 @@
     "correctAnswer": "A",
     "explanation": "This law states that beyond a certain point, each additional unit of input produces progressively smaller output gains.",
     "skill": "Economics",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "ib_039",
@@ -1071,7 +1071,7 @@
     "options": [
       {
         "label": "A",
-        "text": "5"
+        "text": "12"
       },
       {
         "label": "B",
@@ -1079,17 +1079,17 @@
       },
       {
         "label": "C",
-        "text": "12"
+        "text": "5"
       },
       {
         "label": "D",
         "text": "1"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "C",
     "explanation": "|v| = √(3² + 4²) = √(9 + 16) = √25 = 5.",
     "skill": "Vectors",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "ib_040",
@@ -1099,7 +1099,7 @@
     "options": [
       {
         "label": "A",
-        "text": "Dramatic lighting, rich colors, and emotional intensity"
+        "text": "Minimalist design"
       },
       {
         "label": "B",
@@ -1107,17 +1107,17 @@
       },
       {
         "label": "C",
-        "text": "Minimalist design"
+        "text": "Dramatic lighting, rich colors, and emotional intensity"
       },
       {
         "label": "D",
         "text": "Abstract expressionism"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "C",
     "explanation": "Baroque art emphasizes grandeur, drama, movement, and emotional richness, with techniques like chiaroscuro.",
     "skill": "Art History",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "ib_041",
@@ -1145,7 +1145,7 @@
     "correctAnswer": "A",
     "explanation": "Trophic levels represent the position an organism occupies in the food chain (producer, primary consumer, etc.).",
     "skill": "Ecology",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "ib_042",
@@ -1155,7 +1155,7 @@
     "options": [
       {
         "label": "A",
-        "text": "cos(x)"
+        "text": "-sin(x)"
       },
       {
         "label": "B",
@@ -1167,13 +1167,13 @@
       },
       {
         "label": "D",
-        "text": "-sin(x)"
+        "text": "cos(x)"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "The derivative of sin(x) is cos(x).",
     "skill": "Calculus",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "ib_043",
@@ -1183,11 +1183,11 @@
     "options": [
       {
         "label": "A",
-        "text": "To reveal a character's inner thoughts and feelings to the audience"
+        "text": "To advance the plot through dialogue"
       },
       {
         "label": "B",
-        "text": "To advance the plot through dialogue"
+        "text": "To reveal a character's inner thoughts and feelings to the audience"
       },
       {
         "label": "C",
@@ -1198,10 +1198,10 @@
         "text": "To describe the setting"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "B",
     "explanation": "A soliloquy is a speech where a character expresses inner thoughts aloud, giving the audience insight.",
     "skill": "Drama",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "ib_044",
@@ -1211,11 +1211,11 @@
     "options": [
       {
         "label": "A",
-        "text": "Subprime mortgage lending, excessive risk-taking by banks, and inadequate financial regulation"
+        "text": "A natural disaster"
       },
       {
         "label": "B",
-        "text": "A natural disaster"
+        "text": "Subprime mortgage lending, excessive risk-taking by banks, and inadequate financial regulation"
       },
       {
         "label": "C",
@@ -1226,10 +1226,10 @@
         "text": "Government surplus spending"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "B",
     "explanation": "The crisis resulted from a combination of risky lending practices, complex financial instruments, and regulatory failures.",
     "skill": "Economics",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "ib_045",
@@ -1239,11 +1239,11 @@
     "options": [
       {
         "label": "A",
-        "text": "Mitosis produces two identical diploid cells; meiosis produces four genetically unique haploid cells"
+        "text": "They are the same process"
       },
       {
         "label": "B",
-        "text": "They are the same process"
+        "text": "Mitosis produces two identical diploid cells; meiosis produces four genetically unique haploid cells"
       },
       {
         "label": "C",
@@ -1254,10 +1254,10 @@
         "text": "Meiosis occurs only in plants"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "B",
     "explanation": "Mitosis = growth/repair (2n→2n); meiosis = gamete production (2n→n) with genetic recombination.",
     "skill": "Cell Division",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "ib_046",
@@ -1267,11 +1267,11 @@
     "options": [
       {
         "label": "A",
-        "text": "(x-2)² + (y+3)² = 25"
+        "text": "(x+2)² + (y-3)² = 25"
       },
       {
         "label": "B",
-        "text": "(x+2)² + (y-3)² = 25"
+        "text": "(x-2)² + (y+3)² = 25"
       },
       {
         "label": "C",
@@ -1282,10 +1282,10 @@
         "text": "(x+2)² + (y+3)² = 25"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "B",
     "explanation": "Circle equation: (x-h)² + (y-k)² = r². Center (2,-3), r=5: (x-2)² + (y+3)² = 25.",
     "skill": "Circles",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "ib_047",
@@ -1295,7 +1295,7 @@
     "options": [
       {
         "label": "A",
-        "text": "For every action, there is an equal and opposite reaction"
+        "text": "An object at rest stays at rest"
       },
       {
         "label": "B",
@@ -1303,17 +1303,17 @@
       },
       {
         "label": "C",
-        "text": "An object at rest stays at rest"
+        "text": "For every action, there is an equal and opposite reaction"
       },
       {
         "label": "D",
         "text": "Energy cannot be created or destroyed"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "C",
     "explanation": "Newton's Third Law: action-reaction pairs are equal in magnitude and opposite in direction.",
     "skill": "Mechanics",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "ib_048",
@@ -1323,7 +1323,7 @@
     "options": [
       {
         "label": "A",
-        "text": "A word that has a similar form and meaning in two languages due to shared origin"
+        "text": "An irregular verb"
       },
       {
         "label": "B",
@@ -1331,17 +1331,17 @@
       },
       {
         "label": "C",
-        "text": "An irregular verb"
+        "text": "A word that has a similar form and meaning in two languages due to shared origin"
       },
       {
         "label": "D",
         "text": "A type of grammar rule"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "C",
     "explanation": "Cognates share etymological origin and have similar spelling/meaning across languages (e.g., 'hospital' in English and Spanish).",
     "skill": "Language Theory",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "ib_049",
@@ -1351,7 +1351,7 @@
     "options": [
       {
         "label": "A",
-        "text": "x = ln(5)"
+        "text": "x = log(5)"
       },
       {
         "label": "B",
@@ -1359,17 +1359,17 @@
       },
       {
         "label": "C",
-        "text": "x = log(5)"
+        "text": "x = ln(5)"
       },
       {
         "label": "D",
         "text": "x = 5/e"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "C",
     "explanation": "Taking natural log of both sides: x = ln(5) ≈ 1.609.",
     "skill": "Exponentials",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "ib_050",
@@ -1397,7 +1397,7 @@
     "correctAnswer": "A",
     "explanation": "The first law of thermodynamics: the total energy in an isolated system remains constant.",
     "skill": "Thermodynamics",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "ib_051",
@@ -1425,7 +1425,7 @@
     "correctAnswer": "A",
     "explanation": "Ethnocentrism is evaluating other cultures according to the preconceptions originating in one's own culture.",
     "skill": "Sociology",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "ib_052",
@@ -1435,7 +1435,7 @@
     "options": [
       {
         "label": "A",
-        "text": "2"
+        "text": "1.5"
       },
       {
         "label": "B",
@@ -1447,13 +1447,13 @@
       },
       {
         "label": "D",
-        "text": "1.5"
+        "text": "2"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "S = a/(1-r) = 1/(1-0.5) = 1/0.5 = 2. Converges since |r| < 1.",
     "skill": "Series",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "ib_053",
@@ -1481,7 +1481,7 @@
     "correctAnswer": "A",
     "explanation": "Isotopes have the same atomic number (protons) but different mass numbers (neutrons).",
     "skill": "Atomic Structure",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "ib_054",
@@ -1509,7 +1509,7 @@
     "correctAnswer": "A",
     "explanation": "Pathetic fallacy uses weather/nature to mirror or foreshadow characters' emotional states.",
     "skill": "Literary Devices",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "ib_055",
@@ -1519,7 +1519,7 @@
     "options": [
       {
         "label": "A",
-        "text": "x = 1 and x = −1"
+        "text": "x = 3 and x = −3"
       },
       {
         "label": "B",
@@ -1527,17 +1527,17 @@
       },
       {
         "label": "C",
-        "text": "x = 3 and x = −3"
+        "text": "x = 1 and x = −1"
       },
       {
         "label": "D",
         "text": "x = √3 and x = −√3"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "C",
     "explanation": "f'(x) = 3x² − 3 = 0 → x² = 1 → x = ±1.",
     "skill": "Calculus",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "ib_056",
@@ -1565,7 +1565,7 @@
     "correctAnswer": "A",
     "explanation": "Speed measures how fast; velocity measures how fast AND in what direction.",
     "skill": "Kinematics",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "ib_057",
@@ -1575,7 +1575,7 @@
     "options": [
       {
         "label": "A",
-        "text": "The increasing interconnection of the world's economies, cultures, and populations through trade, technology, and communication"
+        "text": "A type of government"
       },
       {
         "label": "B",
@@ -1587,13 +1587,13 @@
       },
       {
         "label": "D",
-        "text": "A type of government"
+        "text": "The increasing interconnection of the world's economies, cultures, and populations through trade, technology, and communication"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "Globalization refers to the growing interdependence and integration across national boundaries.",
     "skill": "Global Studies",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "ib_058",
@@ -1603,7 +1603,7 @@
     "options": [
       {
         "label": "A",
-        "text": "f⁻¹(x) = (x − 3)/2"
+        "text": "f⁻¹(x) = 3x + 2"
       },
       {
         "label": "B",
@@ -1615,13 +1615,13 @@
       },
       {
         "label": "D",
-        "text": "f⁻¹(x) = 3x + 2"
+        "text": "f⁻¹(x) = (x − 3)/2"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "y = 2x + 3 → x = (y-3)/2 → f⁻¹(x) = (x-3)/2.",
     "skill": "Functions",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "ib_059",
@@ -1631,7 +1631,7 @@
     "options": [
       {
         "label": "A",
-        "text": "Certain atmospheric gases trap heat, warming Earth's surface"
+        "text": "The cooling of the atmosphere"
       },
       {
         "label": "B",
@@ -1639,17 +1639,17 @@
       },
       {
         "label": "C",
-        "text": "The cooling of the atmosphere"
+        "text": "Certain atmospheric gases trap heat, warming Earth's surface"
       },
       {
         "label": "D",
         "text": "The production of greenhouse gases only by cars"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "C",
     "explanation": "Greenhouse gases (CO₂, CH₄, H₂O) absorb and re-emit infrared radiation, warming the planet.",
     "skill": "Environmental Science",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "ib_060",
@@ -1659,7 +1659,7 @@
     "options": [
       {
         "label": "A",
-        "text": "Everything that appears in front of the camera: set design, lighting, costumes, staging"
+        "text": "The script dialogue"
       },
       {
         "label": "B",
@@ -1671,13 +1671,13 @@
       },
       {
         "label": "D",
-        "text": "The script dialogue"
+        "text": "Everything that appears in front of the camera: set design, lighting, costumes, staging"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "Mise-en-scène encompasses all visual elements within the frame that contribute to the film's meaning.",
     "skill": "Film Studies",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "ib_061",
@@ -1687,11 +1687,11 @@
     "options": [
       {
         "label": "A",
-        "text": "a³ + 3a²b + 3ab² + b³"
+        "text": "a³ + b³"
       },
       {
         "label": "B",
-        "text": "a³ + b³"
+        "text": "a³ + 3a²b + 3ab² + b³"
       },
       {
         "label": "C",
@@ -1702,10 +1702,10 @@
         "text": "a³ + a²b + ab² + b³"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "B",
     "explanation": "Using Pascal's triangle or the binomial theorem: coefficients are 1, 3, 3, 1.",
     "skill": "Algebra",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "ib_062",
@@ -1715,11 +1715,11 @@
     "options": [
       {
         "label": "A",
-        "text": "To synthesize new DNA strands during replication by adding complementary nucleotides"
+        "text": "To break down proteins"
       },
       {
         "label": "B",
-        "text": "To break down proteins"
+        "text": "To synthesize new DNA strands during replication by adding complementary nucleotides"
       },
       {
         "label": "C",
@@ -1730,10 +1730,10 @@
         "text": "To digest food"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "B",
     "explanation": "DNA polymerase adds nucleotides to a growing DNA strand, reading the template in the 3'→5' direction.",
     "skill": "Molecular Biology",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "ib_063",
@@ -1743,7 +1743,7 @@
     "options": [
       {
         "label": "A",
-        "text": "The tendency to search for and interpret information that confirms pre-existing beliefs"
+        "text": "A type of learning disability"
       },
       {
         "label": "B",
@@ -1755,13 +1755,13 @@
       },
       {
         "label": "D",
-        "text": "A type of learning disability"
+        "text": "The tendency to search for and interpret information that confirms pre-existing beliefs"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "Confirmation bias leads people to favor information that supports what they already believe.",
     "skill": "Psychology",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "ib_064",
@@ -1789,7 +1789,7 @@
     "correctAnswer": "A",
     "explanation": "Newspeak restricts language to prevent rebellious thought — the idea that limiting words limits thoughts.",
     "skill": "Literary Analysis",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "ib_065",
@@ -1799,7 +1799,7 @@
     "options": [
       {
         "label": "A",
-        "text": "d/dx[f(g(x))] = f'(g(x)) · g'(x)"
+        "text": "d/dx[f(g(x))] = f(g'(x))"
       },
       {
         "label": "B",
@@ -1807,17 +1807,17 @@
       },
       {
         "label": "C",
-        "text": "d/dx[f(g(x))] = f(g'(x))"
+        "text": "d/dx[f(g(x))] = f'(g(x)) · g'(x)"
       },
       {
         "label": "D",
         "text": "d/dx[f(g(x))] = f'(x) + g'(x)"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "C",
     "explanation": "The chain rule: differentiate the outer function, keep the inner, then multiply by the inner's derivative.",
     "skill": "Calculus",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "ib_066",
@@ -1827,7 +1827,7 @@
     "options": [
       {
         "label": "A",
-        "text": "Acids donate H⁺ ions; bases accept H⁺ ions (or donate OH⁻)"
+        "text": "Acids are always liquids; bases are always solids"
       },
       {
         "label": "B",
@@ -1835,17 +1835,17 @@
       },
       {
         "label": "C",
-        "text": "Acids are always liquids; bases are always solids"
+        "text": "Acids donate H⁺ ions; bases accept H⁺ ions (or donate OH⁻)"
       },
       {
         "label": "D",
         "text": "Bases have lower pH than acids"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "C",
     "explanation": "Brønsted-Lowry definition: acids are proton donors; bases are proton acceptors.",
     "skill": "Chemistry",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "ib_067",
@@ -1873,7 +1873,7 @@
     "correctAnswer": "A",
     "explanation": "Sovereignty is the full right and power of a governing body over itself, without interference from outside.",
     "skill": "Political Science",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "ib_068",
@@ -1883,11 +1883,11 @@
     "options": [
       {
         "label": "A",
-        "text": "5"
+        "text": "11"
       },
       {
         "label": "B",
-        "text": "11"
+        "text": "5"
       },
       {
         "label": "C",
@@ -1898,10 +1898,10 @@
         "text": "-1"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "B",
     "explanation": "det = (2)(4) − (3)(1) = 8 − 3 = 5.",
     "skill": "Matrices",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "ib_069",
@@ -1911,7 +1911,7 @@
     "options": [
       {
         "label": "A",
-        "text": "The maximum population size an environment can sustain indefinitely given available resources"
+        "text": "The number of species in an area"
       },
       {
         "label": "B",
@@ -1923,13 +1923,13 @@
       },
       {
         "label": "D",
-        "text": "The number of species in an area"
+        "text": "The maximum population size an environment can sustain indefinitely given available resources"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "Carrying capacity (K) is the maximum population that can be sustainably supported by the environment.",
     "skill": "Ecology",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "ib_070",
@@ -1939,11 +1939,11 @@
     "options": [
       {
         "label": "A",
-        "text": "The mental discomfort experienced when holding contradictory beliefs or values"
+        "text": "A type of dialogue"
       },
       {
         "label": "B",
-        "text": "A type of dialogue"
+        "text": "The mental discomfort experienced when holding contradictory beliefs or values"
       },
       {
         "label": "C",
@@ -1954,10 +1954,10 @@
         "text": "A literary genre"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "B",
     "explanation": "Characters experiencing cognitive dissonance face internal conflict between their beliefs and actions.",
     "skill": "Character Analysis",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "ib_071",
@@ -1967,7 +1967,7 @@
     "options": [
       {
         "label": "A",
-        "text": "π/4"
+        "text": "π/3"
       },
       {
         "label": "B",
@@ -1975,17 +1975,17 @@
       },
       {
         "label": "C",
-        "text": "π/3"
+        "text": "π/4"
       },
       {
         "label": "D",
         "text": "π/6"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "C",
     "explanation": "Radians = degrees × π/180 = 45 × π/180 = π/4.",
     "skill": "Trigonometry",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "ib_072",
@@ -1995,11 +1995,11 @@
     "options": [
       {
         "label": "A",
-        "text": "The production of an electromotive force (voltage) by a changing magnetic field"
+        "text": "The attraction of magnets"
       },
       {
         "label": "B",
-        "text": "The attraction of magnets"
+        "text": "The production of an electromotive force (voltage) by a changing magnetic field"
       },
       {
         "label": "C",
@@ -2010,10 +2010,10 @@
         "text": "The production of light"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "B",
     "explanation": "Faraday's law: a changing magnetic flux through a conductor induces an EMF.",
     "skill": "Electromagnetism",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "ib_073",
@@ -2023,11 +2023,11 @@
     "options": [
       {
         "label": "A",
-        "text": "The process by which children's thinking progresses through four stages from birth to adolescence"
+        "text": "Physical growth only"
       },
       {
         "label": "B",
-        "text": "Physical growth only"
+        "text": "The process by which children's thinking progresses through four stages from birth to adolescence"
       },
       {
         "label": "C",
@@ -2038,10 +2038,10 @@
         "text": "Social skill development only"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "B",
     "explanation": "Piaget's four stages: sensorimotor, preoperational, concrete operational, formal operational.",
     "skill": "Psychology",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "ib_074",
@@ -2051,7 +2051,7 @@
     "options": [
       {
         "label": "A",
-        "text": "A = P(1 + r/n)^(nt)"
+        "text": "A = Prt"
       },
       {
         "label": "B",
@@ -2059,17 +2059,17 @@
       },
       {
         "label": "C",
-        "text": "A = Prt"
+        "text": "A = P(1 + r/n)^(nt)"
       },
       {
         "label": "D",
         "text": "A = P(1 + r)"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "C",
     "explanation": "Compound interest: A = P(1 + r/n)^(nt), where P=principal, r=rate, n=compounds/year, t=years.",
     "skill": "Financial Mathematics",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "ib_075",
@@ -2079,7 +2079,7 @@
     "options": [
       {
         "label": "A",
-        "text": "To transport oxygen from the lungs to body tissues"
+        "text": "To produce hormones"
       },
       {
         "label": "B",
@@ -2091,13 +2091,13 @@
       },
       {
         "label": "D",
-        "text": "To produce hormones"
+        "text": "To transport oxygen from the lungs to body tissues"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "Hemoglobin in red blood cells binds O₂ in the lungs and releases it in tissues.",
     "skill": "Human Physiology",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "ib_076",
@@ -2107,11 +2107,11 @@
     "options": [
       {
         "label": "A",
-        "text": "A novel told through a series of letters, diary entries, or documents"
+        "text": "A novel about science"
       },
       {
         "label": "B",
-        "text": "A novel about science"
+        "text": "A novel told through a series of letters, diary entries, or documents"
       },
       {
         "label": "C",
@@ -2122,10 +2122,10 @@
         "text": "A novel set in the future"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "B",
     "explanation": "Epistolary novels use letters, journal entries, or documents as the narrative vehicle.",
     "skill": "Literary Forms",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "ib_077",
@@ -2135,7 +2135,7 @@
     "options": [
       {
         "label": "A",
-        "text": "1/x"
+        "text": "1/(3x)"
       },
       {
         "label": "B",
@@ -2143,17 +2143,17 @@
       },
       {
         "label": "C",
-        "text": "1/(3x)"
+        "text": "1/x"
       },
       {
         "label": "D",
         "text": "ln(3)"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "C",
     "explanation": "y = ln(3) + ln(x). dy/dx = 0 + 1/x = 1/x. Or by chain rule: (1/3x)(3) = 1/x.",
     "skill": "Calculus",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "ib_078",
@@ -2163,7 +2163,7 @@
     "options": [
       {
         "label": "A",
-        "text": "The amount of heat energy required to raise the temperature of 1 kg of a substance by 1°C"
+        "text": "The density of a substance"
       },
       {
         "label": "B",
@@ -2171,17 +2171,17 @@
       },
       {
         "label": "C",
-        "text": "The density of a substance"
+        "text": "The amount of heat energy required to raise the temperature of 1 kg of a substance by 1°C"
       },
       {
         "label": "D",
         "text": "The mass of a substance"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "C",
     "explanation": "Specific heat capacity (c) determines how much energy is needed to change temperature: Q = mcΔT.",
     "skill": "Thermal Physics",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "ib_079",
@@ -2209,7 +2209,7 @@
     "correctAnswer": "A",
     "explanation": "Inflation is the rate at which the general level of prices rises, eroding purchasing power.",
     "skill": "Economics",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "ib_080",
@@ -2237,7 +2237,7 @@
     "correctAnswer": "A",
     "explanation": "Contrapuntal (polyphonic) texture features two or more independent melodic lines sounding simultaneously.",
     "skill": "Music Theory",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "ib_081",
@@ -2247,7 +2247,7 @@
     "options": [
       {
         "label": "A",
-        "text": "5"
+        "text": "8"
       },
       {
         "label": "B",
@@ -2255,45 +2255,45 @@
       },
       {
         "label": "C",
-        "text": "8"
+        "text": "5"
       },
       {
         "label": "D",
         "text": "-1"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "C",
     "explanation": "a·b = (2)(4) + (3)(-1) = 8 - 3 = 5.",
     "skill": "Vectors",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
-    "id": "ib_082",
+    "id": "ib_001",
     "exam": "IB",
     "section": "Sciences",
-    "question": "What is 'cladistics' in biology?",
+    "question": "A ball is thrown vertically upward with an initial velocity of 20 m/s. Assuming g = 10 m/s², what is the maximum height reached?",
     "options": [
       {
         "label": "A",
-        "text": "A method of classifying organisms based on shared evolutionary ancestry"
+        "text": "10 m"
       },
       {
         "label": "B",
-        "text": "A type of cell division"
+        "text": "40 m"
       },
       {
         "label": "C",
-        "text": "A method of cooking"
+        "text": "20 m"
       },
       {
         "label": "D",
-        "text": "A type of rock formation"
+        "text": "30 m"
       }
     ],
-    "correctAnswer": "A",
-    "explanation": "Cladistics groups organisms by shared derived characteristics to construct phylogenetic trees (cladograms).",
-    "skill": "Classification",
-    "difficulty": "hard"
+    "correctAnswer": "C",
+    "explanation": "Using v² = u² - 2gh, at max height v=0: 0 = 400 - 20h, h = 20 m.",
+    "skill": "Kinematics",
+    "difficulty": 5
   },
   {
     "id": "ib_083",
@@ -2303,7 +2303,7 @@
     "options": [
       {
         "label": "A",
-        "text": "To maintain international peace and security and promote cooperation among nations"
+        "text": "To spread democracy by force"
       },
       {
         "label": "B",
@@ -2315,13 +2315,13 @@
       },
       {
         "label": "D",
-        "text": "To spread democracy by force"
+        "text": "To maintain international peace and security and promote cooperation among nations"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "The UN was established after WWII to prevent future conflicts and foster international cooperation.",
     "skill": "International Relations",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "ib_084",
@@ -2331,7 +2331,7 @@
     "options": [
       {
         "label": "A",
-        "text": "y = x² + 1"
+        "text": "y = x + 1"
       },
       {
         "label": "B",
@@ -2343,13 +2343,13 @@
       },
       {
         "label": "D",
-        "text": "y = x + 1"
+        "text": "y = x² + 1"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "∫dy = ∫2x dx → y = x² + C. y(0) = 1: 1 = 0 + C → C = 1. So y = x² + 1.",
     "skill": "Differential Equations",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "ib_085",
@@ -2359,7 +2359,7 @@
     "options": [
       {
         "label": "A",
-        "text": "The time required for half of a radioactive substance to decay"
+        "text": "Half the energy of a reaction"
       },
       {
         "label": "B",
@@ -2371,13 +2371,13 @@
       },
       {
         "label": "D",
-        "text": "Half the energy of a reaction"
+        "text": "The time required for half of a radioactive substance to decay"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "Half-life (t½) is the time for half the radioactive nuclei in a sample to undergo decay.",
     "skill": "Nuclear Physics",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "ib_086",
@@ -2405,7 +2405,7 @@
     "correctAnswer": "A",
     "explanation": "Intertextuality is how a text's meaning is shaped by connections to other literary works and cultural texts.",
     "skill": "Literary Theory",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "ib_087",
@@ -2415,7 +2415,7 @@
     "options": [
       {
         "label": "A",
-        "text": "π"
+        "text": "π/2"
       },
       {
         "label": "B",
@@ -2423,17 +2423,17 @@
       },
       {
         "label": "C",
-        "text": "π/2"
+        "text": "π"
       },
       {
         "label": "D",
         "text": "4π"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "C",
     "explanation": "Period = 2π/|b| = 2π/2 = π.",
     "skill": "Trigonometric Functions",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "ib_088",
@@ -2443,11 +2443,11 @@
     "options": [
       {
         "label": "A",
-        "text": "A system at equilibrium will shift to counteract any change imposed upon it"
+        "text": "Reactions always go to completion"
       },
       {
         "label": "B",
-        "text": "Reactions always go to completion"
+        "text": "A system at equilibrium will shift to counteract any change imposed upon it"
       },
       {
         "label": "C",
@@ -2458,10 +2458,10 @@
         "text": "Catalysts change the equilibrium position"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "B",
     "explanation": "Le Chatelier's: if a stress is applied to a system at equilibrium, the system shifts to partially offset the change.",
     "skill": "Chemical Equilibrium",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "ib_089",
@@ -2471,7 +2471,7 @@
     "options": [
       {
         "label": "A",
-        "text": "A model showing how countries transition from high birth/death rates to low birth/death rates as they develop"
+        "text": "A model of economic recession"
       },
       {
         "label": "B",
@@ -2483,13 +2483,13 @@
       },
       {
         "label": "D",
-        "text": "A model of economic recession"
+        "text": "A model showing how countries transition from high birth/death rates to low birth/death rates as they develop"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "The model describes 4-5 stages of population change correlated with industrialization and development.",
     "skill": "Geography",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "ib_090",
@@ -2499,11 +2499,11 @@
     "options": [
       {
         "label": "A",
-        "text": "5"
+        "text": "7"
       },
       {
         "label": "B",
-        "text": "7"
+        "text": "5"
       },
       {
         "label": "C",
@@ -2514,10 +2514,10 @@
         "text": "1"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "B",
     "explanation": "|z| = √(3² + 4²) = √(9 + 16) = √25 = 5.",
     "skill": "Complex Numbers",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "ib_091",
@@ -2527,7 +2527,7 @@
     "options": [
       {
         "label": "A",
-        "text": "Random changes in allele frequency in a population, especially in small populations"
+        "text": "Migration of species"
       },
       {
         "label": "B",
@@ -2539,13 +2539,13 @@
       },
       {
         "label": "D",
-        "text": "Migration of species"
+        "text": "Random changes in allele frequency in a population, especially in small populations"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "Genetic drift is the random fluctuation of allele frequencies, with greater effects in small populations.",
     "skill": "Evolution",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "ib_092",
@@ -2555,7 +2555,7 @@
     "options": [
       {
         "label": "A",
-        "text": "To introduce a theme, set the tone, or provide context for the work that follows"
+        "text": "To list the characters"
       },
       {
         "label": "B",
@@ -2563,17 +2563,17 @@
       },
       {
         "label": "C",
-        "text": "To list the characters"
+        "text": "To introduce a theme, set the tone, or provide context for the work that follows"
       },
       {
         "label": "D",
         "text": "To explain the author's biography"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "C",
     "explanation": "An epigraph — a quotation at a work's beginning — hints at themes, creates mood, or frames the reader's approach.",
     "skill": "Literary Elements",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "ib_093",
@@ -2583,7 +2583,7 @@
     "options": [
       {
         "label": "A",
-        "text": "∫u dv = uv − ∫v du"
+        "text": "∫u dv = u/v"
       },
       {
         "label": "B",
@@ -2595,13 +2595,13 @@
       },
       {
         "label": "D",
-        "text": "∫u dv = u/v"
+        "text": "∫u dv = uv − ∫v du"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "Integration by parts: ∫u dv = uv − ∫v du, derived from the product rule for differentiation.",
     "skill": "Calculus",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "ib_094",
@@ -2611,7 +2611,7 @@
     "options": [
       {
         "label": "A",
-        "text": "Renewable sources replenish naturally on a human timescale; non-renewable sources are finite"
+        "text": "Non-renewable sources never run out"
       },
       {
         "label": "B",
@@ -2619,17 +2619,17 @@
       },
       {
         "label": "C",
-        "text": "Non-renewable sources never run out"
+        "text": "Renewable sources replenish naturally on a human timescale; non-renewable sources are finite"
       },
       {
         "label": "D",
         "text": "Renewable sources are always cheaper"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "C",
     "explanation": "Renewable (solar, wind, hydro) replenish; non-renewable (fossil fuels, nuclear) deplete with use.",
     "skill": "Energy",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "ib_095",
@@ -2639,7 +2639,7 @@
     "options": [
       {
         "label": "A",
-        "text": "A theory analyzing class struggle between the bourgeoisie (owners) and proletariat (workers) as the engine of social change"
+        "text": "A type of democracy"
       },
       {
         "label": "B",
@@ -2651,13 +2651,13 @@
       },
       {
         "label": "D",
-        "text": "A type of democracy"
+        "text": "A theory analyzing class struggle between the bourgeoisie (owners) and proletariat (workers) as the engine of social change"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "Marxism examines how economic relationships, particularly class conflict, shape society and drive historical change.",
     "skill": "Political Philosophy",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "ib_096",
@@ -2685,7 +2685,7 @@
     "correctAnswer": "A",
     "explanation": "The second derivative test: positive → concave up → minimum; negative → concave down → maximum.",
     "skill": "Calculus",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "ib_097",
@@ -2695,7 +2695,7 @@
     "options": [
       {
         "label": "A",
-        "text": "A double helix of two antiparallel strands connected by complementary base pairs (A-T, G-C)"
+        "text": "A circular ring"
       },
       {
         "label": "B",
@@ -2703,17 +2703,17 @@
       },
       {
         "label": "C",
-        "text": "A circular ring"
+        "text": "A double helix of two antiparallel strands connected by complementary base pairs (A-T, G-C)"
       },
       {
         "label": "D",
         "text": "A triple helix"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "C",
     "explanation": "Watson and Crick's model: DNA is a double helix with complementary base pairing.",
     "skill": "Molecular Biology",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "ib_098",
@@ -2723,7 +2723,7 @@
     "options": [
       {
         "label": "A",
-        "text": "A style where magical elements are presented as normal within a realistic setting"
+        "text": "Horror fiction"
       },
       {
         "label": "B",
@@ -2735,13 +2735,13 @@
       },
       {
         "label": "D",
-        "text": "Horror fiction"
+        "text": "A style where magical elements are presented as normal within a realistic setting"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "Magical realism blends fantastical elements seamlessly into an otherwise realistic narrative (e.g., García Márquez).",
     "skill": "Literary Genres",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "ib_099",
@@ -2769,7 +2769,7 @@
     "correctAnswer": "A",
     "explanation": "The normal distribution is bell-shaped and symmetric, with 68% of data within 1 SD of the mean.",
     "skill": "Statistics",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "ib_100",
@@ -2797,7 +2797,7 @@
     "correctAnswer": "A",
     "explanation": "The Krebs cycle (in the mitochondrial matrix) generates NADH, FADH₂, ATP, and CO₂ from acetyl-CoA.",
     "skill": "Biochemistry",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "ib_101",
@@ -2825,7 +2825,7 @@
     "correctAnswer": "A",
     "explanation": "(2)(1) + (2)(-i) + (3i)(1) + (3i)(-i) = 2 - 2i + 3i - 3i² = 2 + i + 3 = 5 + i.",
     "skill": "Complex Numbers",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "ib_102",
@@ -2853,7 +2853,7 @@
     "correctAnswer": "A",
     "explanation": "Biodiversity encompasses genetic diversity, species diversity, and ecosystem diversity.",
     "skill": "Ecology",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "ib_103",
@@ -2863,7 +2863,7 @@
     "options": [
       {
         "label": "A",
-        "text": "Development that meets present needs without compromising the ability of future generations to meet theirs"
+        "text": "Only protecting the environment"
       },
       {
         "label": "B",
@@ -2871,17 +2871,17 @@
       },
       {
         "label": "C",
-        "text": "Only protecting the environment"
+        "text": "Development that meets present needs without compromising the ability of future generations to meet theirs"
       },
       {
         "label": "D",
         "text": "Development that stops all change"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "C",
     "explanation": "The Brundtland definition balances economic, social, and environmental needs across generations.",
     "skill": "Global Studies",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "ib_104",
@@ -2891,7 +2891,7 @@
     "options": [
       {
         "label": "A",
-        "text": "When the audience knows something that a character does not"
+        "text": "When the narrator lies"
       },
       {
         "label": "B",
@@ -2903,13 +2903,13 @@
       },
       {
         "label": "D",
-        "text": "When the narrator lies"
+        "text": "When the audience knows something that a character does not"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "Dramatic irony creates tension when the audience has information that characters lack.",
     "skill": "Literary Devices",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "ib_105",
@@ -2937,7 +2937,7 @@
     "correctAnswer": "A",
     "explanation": "The law of cosines generalizes the Pythagorean theorem for any triangle.",
     "skill": "Trigonometry",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "ib_106",
@@ -2965,7 +2965,7 @@
     "correctAnswer": "A",
     "explanation": "Homeostasis uses feedback mechanisms to maintain conditions like temperature, pH, and glucose within narrow ranges.",
     "skill": "Human Physiology",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "ib_107",
@@ -2975,11 +2975,11 @@
     "options": [
       {
         "label": "A",
-        "text": "An implicit agreement among individuals to form a society and accept certain rules in exchange for protection"
+        "text": "A written business contract"
       },
       {
         "label": "B",
-        "text": "A written business contract"
+        "text": "An implicit agreement among individuals to form a society and accept certain rules in exchange for protection"
       },
       {
         "label": "C",
@@ -2990,10 +2990,10 @@
         "text": "A type of voting system"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "B",
     "explanation": "Social contract theory (Locke, Hobbes, Rousseau) explains legitimate political authority as arising from mutual agreement.",
     "skill": "Political Philosophy",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "ib_108",
@@ -3003,11 +3003,11 @@
     "options": [
       {
         "label": "A",
-        "text": "An arrangement of objects where order matters"
+        "text": "A selection where order doesn't matter"
       },
       {
         "label": "B",
-        "text": "A selection where order doesn't matter"
+        "text": "An arrangement of objects where order matters"
       },
       {
         "label": "C",
@@ -3018,10 +3018,10 @@
         "text": "A random event"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "B",
     "explanation": "Permutations count arrangements where order matters: P(n,r) = n!/(n-r)!.",
     "skill": "Combinatorics",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "ib_109",
@@ -3031,7 +3031,7 @@
     "options": [
       {
         "label": "A",
-        "text": "The emission of electrons from a metal surface when light of sufficient frequency strikes it"
+        "text": "The reflection of light off mirrors"
       },
       {
         "label": "B",
@@ -3043,13 +3043,13 @@
       },
       {
         "label": "D",
-        "text": "The reflection of light off mirrors"
+        "text": "The emission of electrons from a metal surface when light of sufficient frequency strikes it"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "Einstein explained this: photons above a threshold frequency eject electrons, demonstrating light's particle nature.",
     "skill": "Quantum Physics",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "ib_110",
@@ -3077,7 +3077,7 @@
     "correctAnswer": "A",
     "explanation": "Code-switching is the practice of alternating between languages or dialects in conversation, influenced by social context.",
     "skill": "Sociolinguistics",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "ib_111",
@@ -3087,11 +3087,11 @@
     "options": [
       {
         "label": "A",
-        "text": "Evaluating limits that result in indeterminate forms like 0/0 or ∞/∞"
+        "text": "Finding the area under a curve"
       },
       {
         "label": "B",
-        "text": "Finding the area under a curve"
+        "text": "Evaluating limits that result in indeterminate forms like 0/0 or ∞/∞"
       },
       {
         "label": "C",
@@ -3102,10 +3102,10 @@
         "text": "Computing matrix determinants"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "B",
     "explanation": "L'Hôpital's Rule: if lim f/g gives 0/0 or ∞/∞, then lim f/g = lim f'/g' (if the latter exists).",
     "skill": "Calculus",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "ib_112",
@@ -3133,7 +3133,7 @@
     "correctAnswer": "A",
     "explanation": "The liver performs over 500 functions including detoxification, bile production, and metabolic regulation.",
     "skill": "Human Physiology",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "ib_113",
@@ -3161,7 +3161,7 @@
     "correctAnswer": "A",
     "explanation": "Decolonization, primarily mid-20th century, saw former colonies in Africa and Asia achieve sovereignty.",
     "skill": "History",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "ib_114",
@@ -3171,7 +3171,7 @@
     "options": [
       {
         "label": "A",
-        "text": "The probability of observing results at least as extreme as the data, assuming the null hypothesis is true"
+        "text": "The mean of the data"
       },
       {
         "label": "B",
@@ -3183,13 +3183,13 @@
       },
       {
         "label": "D",
-        "text": "The mean of the data"
+        "text": "The probability of observing results at least as extreme as the data, assuming the null hypothesis is true"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "A small p-value (< significance level) suggests the observed data is unlikely under H₀, leading to rejection.",
     "skill": "Statistics",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "ib_115",
@@ -3199,11 +3199,11 @@
     "options": [
       {
         "label": "A",
-        "text": "The theory that Earth's lithosphere is divided into plates that move, causing earthquakes and volcanic activity"
+        "text": "A type of rock formation"
       },
       {
         "label": "B",
-        "text": "A type of rock formation"
+        "text": "The theory that Earth's lithosphere is divided into plates that move, causing earthquakes and volcanic activity"
       },
       {
         "label": "C",
@@ -3214,10 +3214,10 @@
         "text": "The formation of clouds"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "B",
     "explanation": "Plate tectonics explains how Earth's surface features result from the movement of lithospheric plates.",
     "skill": "Earth Science",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "ib_116",
@@ -3227,11 +3227,11 @@
     "options": [
       {
         "label": "A",
-        "text": "The use of strong contrasts between light and dark to create a sense of volume and drama"
+        "text": "A type of sculpture"
       },
       {
         "label": "B",
-        "text": "A type of sculpture"
+        "text": "The use of strong contrasts between light and dark to create a sense of volume and drama"
       },
       {
         "label": "C",
@@ -3242,10 +3242,10 @@
         "text": "A musical technique"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "B",
     "explanation": "Chiaroscuro (Italian for 'light-dark') uses dramatic light contrasts to create depth and atmosphere.",
     "skill": "Art Techniques",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "ib_117",
@@ -3255,11 +3255,11 @@
     "options": [
       {
         "label": "A",
-        "text": "1"
+        "text": "0"
       },
       {
         "label": "B",
-        "text": "0"
+        "text": "1"
       },
       {
         "label": "C",
@@ -3270,10 +3270,10 @@
         "text": "Undefined"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "B",
     "explanation": "This is a fundamental limit in calculus: lim(x→0) sin(x)/x = 1.",
     "skill": "Limits",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "ib_118",
@@ -3283,7 +3283,7 @@
     "options": [
       {
         "label": "A",
-        "text": "The use of biological systems or living organisms to develop products and technologies"
+        "text": "Only genetic engineering"
       },
       {
         "label": "B",
@@ -3295,13 +3295,13 @@
       },
       {
         "label": "D",
-        "text": "Only genetic engineering"
+        "text": "The use of biological systems or living organisms to develop products and technologies"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "Biotechnology encompasses any technology that uses biological systems, including medicine, agriculture, and industry.",
     "skill": "Applied Biology",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "ib_119",
@@ -3311,7 +3311,7 @@
     "options": [
       {
         "label": "A",
-        "text": "The theory that government spending and monetary policy can stabilize the economy during recessions"
+        "text": "A theory about individual savings only"
       },
       {
         "label": "B",
@@ -3319,17 +3319,17 @@
       },
       {
         "label": "C",
-        "text": "A theory about individual savings only"
+        "text": "The theory that government spending and monetary policy can stabilize the economy during recessions"
       },
       {
         "label": "D",
         "text": "A theory that rejects all taxation"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "C",
     "explanation": "Keynes argued that during recessions, government intervention through spending and fiscal policy stimulates demand.",
     "skill": "Economics",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "ib_120",
@@ -3339,7 +3339,7 @@
     "options": [
       {
         "label": "A",
-        "text": "An unexpected power, event, or character that suddenly resolves an apparently impossible situation"
+        "text": "A narrative technique for flashbacks"
       },
       {
         "label": "B",
@@ -3347,17 +3347,17 @@
       },
       {
         "label": "C",
-        "text": "A narrative technique for flashbacks"
+        "text": "An unexpected power, event, or character that suddenly resolves an apparently impossible situation"
       },
       {
         "label": "D",
         "text": "A poetic form"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "C",
     "explanation": "Literally 'god from the machine,' it refers to a convenient, contrived resolution often seen as weak writing.",
     "skill": "Narrative Elements",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "ib_121",
@@ -3367,7 +3367,7 @@
     "options": [
       {
         "label": "A",
-        "text": "1 + x + x²/2! + x³/3! + ..."
+        "text": "1 − x + x²/2! − x³/3! + ..."
       },
       {
         "label": "B",
@@ -3379,13 +3379,13 @@
       },
       {
         "label": "D",
-        "text": "1 − x + x²/2! − x³/3! + ..."
+        "text": "1 + x + x²/2! + x³/3! + ..."
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "eˣ = Σ(n=0 to ∞) xⁿ/n! = 1 + x + x²/2! + x³/3! + ...",
     "skill": "Series",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "ib_122",
@@ -3395,7 +3395,7 @@
     "options": [
       {
         "label": "A",
-        "text": "An element contains only one type of atom; a compound contains two or more different elements chemically bonded"
+        "text": "Compounds are always gases"
       },
       {
         "label": "B",
@@ -3403,17 +3403,17 @@
       },
       {
         "label": "C",
-        "text": "Compounds are always gases"
+        "text": "An element contains only one type of atom; a compound contains two or more different elements chemically bonded"
       },
       {
         "label": "D",
         "text": "Elements are always solid"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "C",
     "explanation": "Elements are pure substances of one atom type; compounds combine different elements in fixed ratios.",
     "skill": "Chemistry",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "ib_123",
@@ -3423,7 +3423,7 @@
     "options": [
       {
         "label": "A",
-        "text": "Manipulating electoral district boundaries to favor a particular political party"
+        "text": "An economic policy"
       },
       {
         "label": "B",
@@ -3431,17 +3431,17 @@
       },
       {
         "label": "C",
-        "text": "An economic policy"
+        "text": "Manipulating electoral district boundaries to favor a particular political party"
       },
       {
         "label": "D",
         "text": "A type of protest"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "C",
     "explanation": "Gerrymandering involves drawing district boundaries to give one party an unfair electoral advantage.",
     "skill": "Political Science",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "ib_124",
@@ -3469,7 +3469,7 @@
     "correctAnswer": "A",
     "explanation": "Bijective functions have a perfect one-to-one correspondence between domain and codomain, ensuring an inverse exists.",
     "skill": "Functions",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "ib_125",
@@ -3479,11 +3479,11 @@
     "options": [
       {
         "label": "A",
-        "text": "A model describing allele and genotype frequencies remaining constant in a non-evolving population"
+        "text": "A chemical equilibrium"
       },
       {
         "label": "B",
-        "text": "A chemical equilibrium"
+        "text": "A model describing allele and genotype frequencies remaining constant in a non-evolving population"
       },
       {
         "label": "C",
@@ -3494,10 +3494,10 @@
         "text": "A food web balance"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "B",
     "explanation": "Hardy-Weinberg predicts no evolution occurs when: no mutation, random mating, no selection, large population, no migration.",
     "skill": "Population Genetics",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "ib_126",
@@ -3525,7 +3525,7 @@
     "correctAnswer": "A",
     "explanation": "Anagnorisis (Aristotle's Poetics) is the moment a character recognizes a truth, often triggering the climax.",
     "skill": "Classical Literature",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "ib_127",
@@ -3535,11 +3535,11 @@
     "options": [
       {
         "label": "A",
-        "text": "(0, 0, 1)"
+        "text": "(1, 1, 0)"
       },
       {
         "label": "B",
-        "text": "(1, 1, 0)"
+        "text": "(0, 0, 1)"
       },
       {
         "label": "C",
@@ -3550,10 +3550,10 @@
         "text": "(0, 0, 0)"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "B",
     "explanation": "u × v = |i j k; 1 0 0; 0 1 0| = i(0-0) - j(0-0) + k(1-0) = (0, 0, 1).",
     "skill": "Vectors",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "ib_128",
@@ -3563,7 +3563,7 @@
     "options": [
       {
         "label": "A",
-        "text": "Accuracy is how close a measurement is to the true value; precision is how reproducible measurements are"
+        "text": "Accuracy only applies to rulers"
       },
       {
         "label": "B",
@@ -3575,13 +3575,13 @@
       },
       {
         "label": "D",
-        "text": "Accuracy only applies to rulers"
+        "text": "Accuracy is how close a measurement is to the true value; precision is how reproducible measurements are"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "Accuracy = closeness to true value; precision = consistency of repeated measurements.",
     "skill": "Scientific Method",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "ib_129",
@@ -3609,7 +3609,7 @@
     "correctAnswer": "A",
     "explanation": "Migration is driven by conditions that push people away (negative) and conditions that pull them toward a destination (positive).",
     "skill": "Geography",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "ib_130",
@@ -3637,7 +3637,7 @@
     "correctAnswer": "A",
     "explanation": "Euler's formula connects complex exponentials with trigonometric functions: e^(iθ) = cos(θ) + i·sin(θ).",
     "skill": "Complex Analysis",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "ib_131",
@@ -3665,7 +3665,7 @@
     "correctAnswer": "A",
     "explanation": "Speciation occurs when populations become reproductively isolated and diverge genetically over time.",
     "skill": "Evolution",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "ib_132",
@@ -3675,7 +3675,7 @@
     "options": [
       {
         "label": "A",
-        "text": "It symbolizes Gatsby's unattainable dream and hope for the future"
+        "text": "It has no symbolic meaning"
       },
       {
         "label": "B",
@@ -3687,13 +3687,13 @@
       },
       {
         "label": "D",
-        "text": "It has no symbolic meaning"
+        "text": "It symbolizes Gatsby's unattainable dream and hope for the future"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "The green light across the bay represents Gatsby's aspirations and the elusive American Dream.",
     "skill": "Literary Symbolism",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "ib_133",
@@ -3721,7 +3721,7 @@
     "correctAnswer": "A",
     "explanation": "Type I error (α) occurs when you reject H₀ even though it is actually true.",
     "skill": "Hypothesis Testing",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "ib_134",
@@ -3731,7 +3731,7 @@
     "options": [
       {
         "label": "A",
-        "text": "A measure of the disorder or randomness in a system"
+        "text": "The total energy of a system"
       },
       {
         "label": "B",
@@ -3739,17 +3739,17 @@
       },
       {
         "label": "C",
-        "text": "The total energy of a system"
+        "text": "A measure of the disorder or randomness in a system"
       },
       {
         "label": "D",
         "text": "The speed of a reaction"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "C",
     "explanation": "Entropy (S) measures disorder; the second law of thermodynamics states entropy tends to increase.",
     "skill": "Thermodynamics",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "ib_135",
@@ -3759,7 +3759,7 @@
     "options": [
       {
         "label": "A",
-        "text": "An approach favoring free markets, deregulation, privatization, and reduced government spending"
+        "text": "A type of monarchy"
       },
       {
         "label": "B",
@@ -3771,13 +3771,13 @@
       },
       {
         "label": "D",
-        "text": "A type of monarchy"
+        "text": "An approach favoring free markets, deregulation, privatization, and reduced government spending"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "Neoliberalism advocates market-driven policies, minimal government intervention, and free trade.",
     "skill": "Economics",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "ib_136",
@@ -3787,11 +3787,11 @@
     "options": [
       {
         "label": "A",
-        "text": "They are inverse functions: ln(eˣ) = x and e^(ln(x)) = x"
+        "text": "They are the same function"
       },
       {
         "label": "B",
-        "text": "They are the same function"
+        "text": "They are inverse functions: ln(eˣ) = x and e^(ln(x)) = x"
       },
       {
         "label": "C",
@@ -3802,10 +3802,10 @@
         "text": "One is the derivative of the other only"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "B",
     "explanation": "ln(x) and eˣ are inverse functions, meaning they 'undo' each other.",
     "skill": "Functions",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "ib_137",
@@ -3833,7 +3833,7 @@
     "correctAnswer": "A",
     "explanation": "CRISPR-Cas9 is a revolutionary tool allowing scientists to cut and edit specific DNA sequences with precision.",
     "skill": "Biotechnology",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "ib_138",
@@ -3843,11 +3843,11 @@
     "options": [
       {
         "label": "A",
-        "text": "A movement characterized by skepticism toward grand narratives, mixing styles, irony, and questioning traditional boundaries"
+        "text": "A return to classical Greek art"
       },
       {
         "label": "B",
-        "text": "A return to classical Greek art"
+        "text": "A movement characterized by skepticism toward grand narratives, mixing styles, irony, and questioning traditional boundaries"
       },
       {
         "label": "C",
@@ -3858,10 +3858,10 @@
         "text": "Strict adherence to one artistic style"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "B",
     "explanation": "Post-modernism embraces pluralism, rejects singular 'truths,' and often uses irony, pastiche, and eclecticism.",
     "skill": "Art Movements",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "ib_139",
@@ -3871,7 +3871,7 @@
     "options": [
       {
         "label": "A",
-        "text": "P(A∩B) / P(B)"
+        "text": "P(A) / P(B)"
       },
       {
         "label": "B",
@@ -3883,13 +3883,13 @@
       },
       {
         "label": "D",
-        "text": "P(A) / P(B)"
+        "text": "P(A∩B) / P(B)"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "P(A|B) = P(A∩B)/P(B), the probability of A given that B has occurred.",
     "skill": "Probability",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "ib_140",
@@ -3917,7 +3917,7 @@
     "correctAnswer": "A",
     "explanation": "Bohr's model explained atomic spectra by proposing electrons occupy discrete energy levels.",
     "skill": "Atomic Physics",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "ib_141",
@@ -3927,7 +3927,7 @@
     "options": [
       {
         "label": "A",
-        "text": "Shared memories and interpretations of the past held by a group or society"
+        "text": "A psychological disorder"
       },
       {
         "label": "B",
@@ -3939,13 +3939,13 @@
       },
       {
         "label": "D",
-        "text": "A psychological disorder"
+        "text": "Shared memories and interpretations of the past held by a group or society"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "Collective memory (Halbwachs) refers to how groups construct and maintain shared narratives about the past.",
     "skill": "Sociology",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "ib_142",
@@ -3973,7 +3973,7 @@
     "correctAnswer": "A",
     "explanation": "Separation of variables rearranges a DE so each variable is on one side, then integrates both sides independently.",
     "skill": "Differential Equations",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "ib_143",
@@ -3983,7 +3983,7 @@
     "options": [
       {
         "label": "A",
-        "text": "The growth of a plant toward or away from light"
+        "text": "The absorption of water"
       },
       {
         "label": "B",
@@ -3991,17 +3991,17 @@
       },
       {
         "label": "C",
-        "text": "The absorption of water"
+        "text": "The growth of a plant toward or away from light"
       },
       {
         "label": "D",
         "text": "The release of oxygen"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "C",
     "explanation": "Phototropism is a growth response to light, mediated by the hormone auxin redistributing unequally.",
     "skill": "Plant Biology",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "ib_144",
@@ -4029,7 +4029,7 @@
     "correctAnswer": "A",
     "explanation": "Post-colonial literature examines the legacy of colonialism, often centering voices from colonized communities.",
     "skill": "Literary Movements",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "ib_145",
@@ -4057,7 +4057,7 @@
     "correctAnswer": "A",
     "explanation": "Bayes' theorem updates probability estimates as new evidence is acquired.",
     "skill": "Probability",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "ib_146",
@@ -4067,7 +4067,7 @@
     "options": [
       {
         "label": "A",
-        "text": "Radio, microwave, infrared, visible, ultraviolet, X-ray, gamma ray"
+        "text": "They are all the same frequency"
       },
       {
         "label": "B",
@@ -4079,13 +4079,13 @@
       },
       {
         "label": "D",
-        "text": "They are all the same frequency"
+        "text": "Radio, microwave, infrared, visible, ultraviolet, X-ray, gamma ray"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "From lowest to highest frequency: radio → microwave → IR → visible → UV → X-ray → gamma.",
     "skill": "Waves",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "ib_147",
@@ -4095,7 +4095,7 @@
     "options": [
       {
         "label": "A",
-        "text": "A situation where individuals acting in self-interest deplete shared resources, harming the collective"
+        "text": "A government policy"
       },
       {
         "label": "B",
@@ -4107,13 +4107,13 @@
       },
       {
         "label": "D",
-        "text": "A government policy"
+        "text": "A situation where individuals acting in self-interest deplete shared resources, harming the collective"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "Garrett Hardin's concept: rational individual behavior can lead to collective resource depletion.",
     "skill": "Economics",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "ib_148",
@@ -4123,7 +4123,7 @@
     "options": [
       {
         "label": "A",
-        "text": "1 − x²/2! + x⁴/4! − x⁶/6! + ..."
+        "text": "1 + x + x²/2! + x³/3! + ..."
       },
       {
         "label": "B",
@@ -4131,17 +4131,17 @@
       },
       {
         "label": "C",
-        "text": "1 + x + x²/2! + x³/3! + ..."
+        "text": "1 − x²/2! + x⁴/4! − x⁶/6! + ..."
       },
       {
         "label": "D",
         "text": "x + x²/2 + x³/3 + ..."
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "C",
     "explanation": "cos(x) = Σ(−1)ⁿ x²ⁿ/(2n)! = 1 − x²/2! + x⁴/4! − ...",
     "skill": "Series",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "ib_149",
@@ -4151,7 +4151,7 @@
     "options": [
       {
         "label": "A",
-        "text": "The direct manipulation of an organism's genes using biotechnology"
+        "text": "Studying genetics without making changes"
       },
       {
         "label": "B",
@@ -4163,13 +4163,13 @@
       },
       {
         "label": "D",
-        "text": "Studying genetics without making changes"
+        "text": "The direct manipulation of an organism's genes using biotechnology"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "Genetic engineering directly alters DNA using tools like restriction enzymes, vectors, and CRISPR.",
     "skill": "Biotechnology",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "ib_150",
@@ -4179,11 +4179,11 @@
     "options": [
       {
         "label": "A",
-        "text": "A coming-of-age novel that focuses on the psychological and moral growth of the protagonist"
+        "text": "A type of poetry"
       },
       {
         "label": "B",
-        "text": "A type of poetry"
+        "text": "A coming-of-age novel that focuses on the psychological and moral growth of the protagonist"
       },
       {
         "label": "C",
@@ -4194,10 +4194,10 @@
         "text": "A historical documentary"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "B",
     "explanation": "Bildungsroman traces a character's development from youth to maturity (e.g., 'Jane Eyre,' 'Catcher in the Rye').",
     "skill": "Literary Genres",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "ib_151",
@@ -4207,7 +4207,7 @@
     "options": [
       {
         "label": "A",
-        "text": "Modeling the relationship between a dependent variable and one or more independent variables"
+        "text": "Finding the mode of data"
       },
       {
         "label": "B",
@@ -4215,17 +4215,17 @@
       },
       {
         "label": "C",
-        "text": "Finding the mode of data"
+        "text": "Modeling the relationship between a dependent variable and one or more independent variables"
       },
       {
         "label": "D",
         "text": "Calculating factorials"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "C",
     "explanation": "Regression analysis estimates how changes in independent variables affect a dependent variable.",
     "skill": "Statistics",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "ib_152",
@@ -4253,7 +4253,7 @@
     "correctAnswer": "A",
     "explanation": "Eutrophication occurs when excess nutrients (often from fertilizer runoff) cause algal blooms that deplete dissolved oxygen.",
     "skill": "Environmental Science",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "ib_153",
@@ -4263,7 +4263,7 @@
     "options": [
       {
         "label": "A",
-        "text": "An ethical theory that judges actions based on their consequences — maximizing overall happiness or well-being"
+        "text": "A form of government"
       },
       {
         "label": "B",
@@ -4275,13 +4275,13 @@
       },
       {
         "label": "D",
-        "text": "A form of government"
+        "text": "An ethical theory that judges actions based on their consequences — maximizing overall happiness or well-being"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "Utilitarianism (Bentham, Mill) holds that the best action produces the greatest good for the greatest number.",
     "skill": "Ethics",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "ib_154",
@@ -4291,11 +4291,11 @@
     "options": [
       {
         "label": "A",
-        "text": "Assuming the opposite of what you want to prove, then showing this leads to a logical impossibility"
+        "text": "Proving something by giving an example"
       },
       {
         "label": "B",
-        "text": "Proving something by giving an example"
+        "text": "Assuming the opposite of what you want to prove, then showing this leads to a logical impossibility"
       },
       {
         "label": "C",
@@ -4306,10 +4306,10 @@
         "text": "Drawing a diagram"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "B",
     "explanation": "Proof by contradiction (reductio ad absurdum) assumes ¬P, derives a contradiction, therefore P must be true.",
     "skill": "Mathematical Proof",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "ib_155",
@@ -4337,7 +4337,7 @@
     "correctAnswer": "A",
     "explanation": "Weather = day-to-day atmospheric conditions; climate = long-term statistical patterns.",
     "skill": "Earth Science",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "ib_156",
@@ -4365,7 +4365,7 @@
     "correctAnswer": "A",
     "explanation": "Impressionists (Monet, Renoir, Degas) captured fleeting effects of light using visible brushstrokes and vibrant colors.",
     "skill": "Art Movements",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "ib_157",
@@ -4375,7 +4375,7 @@
     "options": [
       {
         "label": "A",
-        "text": "It connects differentiation and integration: ∫ₐᵇ f(x)dx = F(b) − F(a) where F'(x) = f(x)"
+        "text": "Differentiation and integration are unrelated"
       },
       {
         "label": "B",
@@ -4387,13 +4387,13 @@
       },
       {
         "label": "D",
-        "text": "Differentiation and integration are unrelated"
+        "text": "It connects differentiation and integration: ∫ₐᵇ f(x)dx = F(b) − F(a) where F'(x) = f(x)"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "The FTC establishes that integration and differentiation are inverse processes.",
     "skill": "Calculus",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "ib_158",
@@ -4403,11 +4403,11 @@
     "options": [
       {
         "label": "A",
-        "text": "To defend the body against infections and foreign invaders as part of the immune system"
+        "text": "To transport oxygen"
       },
       {
         "label": "B",
-        "text": "To transport oxygen"
+        "text": "To defend the body against infections and foreign invaders as part of the immune system"
       },
       {
         "label": "C",
@@ -4418,10 +4418,10 @@
         "text": "To digest food"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "B",
     "explanation": "White blood cells (leukocytes) are key components of the immune system, fighting pathogens.",
     "skill": "Human Physiology",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "ib_159",
@@ -4431,7 +4431,7 @@
     "options": [
       {
         "label": "A",
-        "text": "A 1948 UN document establishing fundamental rights and freedoms for all people regardless of nationality"
+        "text": "A military alliance"
       },
       {
         "label": "B",
@@ -4439,17 +4439,17 @@
       },
       {
         "label": "C",
-        "text": "A military alliance"
+        "text": "A 1948 UN document establishing fundamental rights and freedoms for all people regardless of nationality"
       },
       {
         "label": "D",
         "text": "A scientific publication"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "C",
     "explanation": "The UDHR, adopted in 1948, sets out 30 articles of fundamental human rights to be universally protected.",
     "skill": "Human Rights",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "ib_160",
@@ -4459,7 +4459,7 @@
     "options": [
       {
         "label": "A",
-        "text": "The purging or release of emotional tension experienced by the audience, especially in tragedy"
+        "text": "A writing technique"
       },
       {
         "label": "B",
@@ -4467,17 +4467,17 @@
       },
       {
         "label": "C",
-        "text": "A writing technique"
+        "text": "The purging or release of emotional tension experienced by the audience, especially in tragedy"
       },
       {
         "label": "D",
         "text": "A character's name"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "C",
     "explanation": "Aristotle described catharsis as the emotional purification audiences experience through pity and fear in tragedy.",
     "skill": "Literary Theory",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "ib_161",
@@ -4487,7 +4487,7 @@
     "options": [
       {
         "label": "A",
-        "text": "A proof technique: prove a base case, then prove if true for n, it's true for n+1"
+        "text": "A way to find averages"
       },
       {
         "label": "B",
@@ -4499,13 +4499,13 @@
       },
       {
         "label": "D",
-        "text": "A way to find averages"
+        "text": "A proof technique: prove a base case, then prove if true for n, it's true for n+1"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "Mathematical induction proves statements for all natural numbers by establishing a base case and inductive step.",
     "skill": "Mathematical Proof",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "ib_162",
@@ -4515,7 +4515,7 @@
     "options": [
       {
         "label": "A",
-        "text": "The process where organisms with favorable traits are more likely to survive and reproduce"
+        "text": "Random genetic changes"
       },
       {
         "label": "B",
@@ -4523,17 +4523,17 @@
       },
       {
         "label": "C",
-        "text": "Random genetic changes"
+        "text": "The process where organisms with favorable traits are more likely to survive and reproduce"
       },
       {
         "label": "D",
         "text": "The migration of species"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "C",
     "explanation": "Darwin's theory: organisms best adapted to their environment have greater fitness and reproductive success.",
     "skill": "Evolution",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "ib_163",
@@ -4561,7 +4561,7 @@
     "correctAnswer": "A",
     "explanation": "GDP per capita = total GDP / population, providing an approximate measure of average economic well-being.",
     "skill": "Economics",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "ib_164",
@@ -4589,7 +4589,7 @@
     "correctAnswer": "A",
     "explanation": "Sector area = (1/2)r²θ for angle θ in radians. This is a fraction of the total circle area.",
     "skill": "Geometry",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "ib_165",
@@ -4599,11 +4599,11 @@
     "options": [
       {
         "label": "A",
-        "text": "The process by which plants convert light energy, CO₂, and water into glucose and oxygen"
+        "text": "The process of breathing"
       },
       {
         "label": "B",
-        "text": "The process of breathing"
+        "text": "The process by which plants convert light energy, CO₂, and water into glucose and oxygen"
       },
       {
         "label": "C",
@@ -4614,10 +4614,10 @@
         "text": "The evaporation of water from leaves"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "B",
     "explanation": "6CO₂ + 6H₂O + light → C₆H₁₂O₆ + 6O₂. Occurs in chloroplasts.",
     "skill": "Plant Biology",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "ib_166",
@@ -4627,7 +4627,7 @@
     "options": [
       {
         "label": "A",
-        "text": "Denotation is a word's literal dictionary meaning; connotation is its emotional or cultural associations"
+        "text": "Connotation is always negative"
       },
       {
         "label": "B",
@@ -4635,17 +4635,17 @@
       },
       {
         "label": "C",
-        "text": "Connotation is always negative"
+        "text": "Denotation is a word's literal dictionary meaning; connotation is its emotional or cultural associations"
       },
       {
         "label": "D",
         "text": "Denotation includes all possible meanings"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "C",
     "explanation": "Denotation = literal meaning; connotation = associated feelings and implications beyond the literal.",
     "skill": "Semantics",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "ib_167",
@@ -4655,11 +4655,11 @@
     "options": [
       {
         "label": "A",
-        "text": "A default statement that there is no significant difference or effect, which is tested against evidence"
+        "text": "A hypothesis that is always true"
       },
       {
         "label": "B",
-        "text": "A hypothesis that is always true"
+        "text": "A default statement that there is no significant difference or effect, which is tested against evidence"
       },
       {
         "label": "C",
@@ -4670,10 +4670,10 @@
         "text": "The final conclusion of a study"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "B",
     "explanation": "H₀ assumes no effect or difference; statistical tests determine if evidence is strong enough to reject it.",
     "skill": "Statistics",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "ib_168",
@@ -4683,7 +4683,7 @@
     "options": [
       {
         "label": "A",
-        "text": "To absorb harmful ultraviolet radiation from the sun, protecting life on Earth"
+        "text": "To block visible light"
       },
       {
         "label": "B",
@@ -4695,13 +4695,13 @@
       },
       {
         "label": "D",
-        "text": "To block visible light"
+        "text": "To absorb harmful ultraviolet radiation from the sun, protecting life on Earth"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "The ozone layer in the stratosphere absorbs UV-B and UV-C radiation, preventing DNA damage.",
     "skill": "Environmental Science",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "ib_169",
@@ -4729,7 +4729,7 @@
     "correctAnswer": "A",
     "explanation": "Apartheid was a system of institutionalized racial segregation in South Africa, dismantled in the early 1990s.",
     "skill": "History",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "ib_170",
@@ -4739,7 +4739,7 @@
     "options": [
       {
         "label": "A",
-        "text": "A collection of vectors that can be added together and multiplied by scalars, satisfying certain axioms"
+        "text": "A set of numbers"
       },
       {
         "label": "B",
@@ -4751,13 +4751,13 @@
       },
       {
         "label": "D",
-        "text": "A set of numbers"
+        "text": "A collection of vectors that can be added together and multiplied by scalars, satisfying certain axioms"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "A vector space is an algebraic structure with vectors satisfying closure, associativity, and distributive properties.",
     "skill": "Linear Algebra",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "ib_171",
@@ -4767,7 +4767,7 @@
     "options": [
       {
         "label": "A",
-        "text": "The metabolic process of converting glucose and oxygen into ATP, CO₂, and water"
+        "text": "Only occurs in plants"
       },
       {
         "label": "B",
@@ -4779,13 +4779,13 @@
       },
       {
         "label": "D",
-        "text": "Only occurs in plants"
+        "text": "The metabolic process of converting glucose and oxygen into ATP, CO₂, and water"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "C₆H₁₂O₆ + 6O₂ → 6CO₂ + 6H₂O + ATP. Occurs in the mitochondria of all living cells.",
     "skill": "Biochemistry",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "ib_172",
@@ -4795,7 +4795,7 @@
     "options": [
       {
         "label": "A",
-        "text": "It captures the continuous, unfiltered flow of thoughts to explore inner psychological reality"
+        "text": "It is used only for dialogue"
       },
       {
         "label": "B",
@@ -4803,17 +4803,17 @@
       },
       {
         "label": "C",
-        "text": "It is used only for dialogue"
+        "text": "It captures the continuous, unfiltered flow of thoughts to explore inner psychological reality"
       },
       {
         "label": "D",
         "text": "It describes physical settings only"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "C",
     "explanation": "Woolf used stream of consciousness to immerse readers in characters' subjective mental experiences.",
     "skill": "Modernist Literature",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "ib_173",
@@ -4823,7 +4823,7 @@
     "options": [
       {
         "label": "A",
-        "text": "If g(x) ≤ f(x) ≤ h(x) and lim g(x) = lim h(x) = L, then lim f(x) = L"
+        "text": "A method for solving equations"
       },
       {
         "label": "B",
@@ -4831,17 +4831,17 @@
       },
       {
         "label": "C",
-        "text": "A method for solving equations"
+        "text": "If g(x) ≤ f(x) ≤ h(x) and lim g(x) = lim h(x) = L, then lim f(x) = L"
       },
       {
         "label": "D",
         "text": "A theorem about inequalities only"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "C",
     "explanation": "The squeeze theorem determines a function's limit by bounding it between two functions with the same limit.",
     "skill": "Limits",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "ib_174",
@@ -4869,7 +4869,7 @@
     "correctAnswer": "A",
     "explanation": "Quantum mechanics shows that photons and electrons can behave as both waves and particles.",
     "skill": "Quantum Physics",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "ib_175",
@@ -4879,11 +4879,11 @@
     "options": [
       {
         "label": "A",
-        "text": "The imposition of one culture's values and practices on another, often through media and economic power"
+        "text": "Cultural exchange between equal partners"
       },
       {
         "label": "B",
-        "text": "Cultural exchange between equal partners"
+        "text": "The imposition of one culture's values and practices on another, often through media and economic power"
       },
       {
         "label": "C",
@@ -4894,10 +4894,10 @@
         "text": "A type of art movement"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "B",
     "explanation": "Cultural imperialism involves dominant cultures imposing values on others, often via media, language, and consumer products.",
     "skill": "Global Studies",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "ib_176",
@@ -4907,11 +4907,11 @@
     "options": [
       {
         "label": "A",
-        "text": "A sequence is an ordered list of numbers; a series is the sum of a sequence's terms"
+        "text": "They are the same thing"
       },
       {
         "label": "B",
-        "text": "They are the same thing"
+        "text": "A sequence is an ordered list of numbers; a series is the sum of a sequence's terms"
       },
       {
         "label": "C",
@@ -4922,10 +4922,10 @@
         "text": "A sequence is always finite"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "B",
     "explanation": "Sequence = ordered list (a₁, a₂, a₃, ...); series = sum (a₁ + a₂ + a₃ + ...).",
     "skill": "Sequences and Series",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "ib_177",
@@ -4935,7 +4935,7 @@
     "options": [
       {
         "label": "A",
-        "text": "The movement of water through a semipermeable membrane from low to high solute concentration"
+        "text": "The breaking down of molecules"
       },
       {
         "label": "B",
@@ -4943,17 +4943,17 @@
       },
       {
         "label": "C",
-        "text": "The breaking down of molecules"
+        "text": "The movement of water through a semipermeable membrane from low to high solute concentration"
       },
       {
         "label": "D",
         "text": "The production of ATP"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "C",
     "explanation": "Osmosis is the net movement of water molecules through a selectively permeable membrane down the water potential gradient.",
     "skill": "Cell Biology",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "ib_178",
@@ -4963,7 +4963,7 @@
     "options": [
       {
         "label": "A",
-        "text": "Tone is the author's attitude toward the subject; mood is the emotional atmosphere felt by the reader"
+        "text": "Tone is always serious; mood is always happy"
       },
       {
         "label": "B",
@@ -4971,17 +4971,17 @@
       },
       {
         "label": "C",
-        "text": "Tone is always serious; mood is always happy"
+        "text": "Tone is the author's attitude toward the subject; mood is the emotional atmosphere felt by the reader"
       },
       {
         "label": "D",
         "text": "Mood is created by the author; tone by the reader"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "C",
     "explanation": "Tone = author's perspective conveyed through word choice; mood = reader's emotional experience of the text.",
     "skill": "Literary Analysis",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "ib_179",
@@ -4991,11 +4991,11 @@
     "options": [
       {
         "label": "A",
-        "text": "If f is continuous on [a,b] and differentiable on (a,b), then there exists c in (a,b) where f'(c) = [f(b)-f(a)]/(b-a)"
+        "text": "The mean of any data set equals the median"
       },
       {
         "label": "B",
-        "text": "The mean of any data set equals the median"
+        "text": "If f is continuous on [a,b] and differentiable on (a,b), then there exists c in (a,b) where f'(c) = [f(b)-f(a)]/(b-a)"
       },
       {
         "label": "C",
@@ -5006,10 +5006,10 @@
         "text": "The derivative is always positive"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "B",
     "explanation": "The MVT guarantees at least one point where the instantaneous rate equals the average rate over an interval.",
     "skill": "Calculus",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "ib_180",
@@ -5037,7 +5037,7 @@
     "correctAnswer": "A",
     "explanation": "Activation energy (Ea) is the energy barrier that reactants must overcome for a reaction to proceed.",
     "skill": "Chemical Kinetics",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "ib_181",
@@ -5047,11 +5047,11 @@
     "options": [
       {
         "label": "A",
-        "text": "Socialism allows some private ownership with state regulation; communism aims for collective ownership of all means of production"
+        "text": "They are exactly the same"
       },
       {
         "label": "B",
-        "text": "They are exactly the same"
+        "text": "Socialism allows some private ownership with state regulation; communism aims for collective ownership of all means of production"
       },
       {
         "label": "C",
@@ -5062,10 +5062,10 @@
         "text": "Socialism requires a dictator"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "B",
     "explanation": "Both advocate for worker/public control of production, but differ in degree of private ownership and state role.",
     "skill": "Political Science",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "ib_182",
@@ -5075,11 +5075,11 @@
     "options": [
       {
         "label": "A",
-        "text": "The value that a function approaches as the input approaches a particular point"
+        "text": "The maximum value of a function"
       },
       {
         "label": "B",
-        "text": "The maximum value of a function"
+        "text": "The value that a function approaches as the input approaches a particular point"
       },
       {
         "label": "C",
@@ -5090,10 +5090,10 @@
         "text": "The slope of a tangent line"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "B",
     "explanation": "A limit describes the behavior of a function near a point, fundamental to calculus.",
     "skill": "Limits",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "ib_183",
@@ -5121,7 +5121,7 @@
     "correctAnswer": "A",
     "explanation": "Superposition: overlapping waves add algebraically, producing constructive or destructive interference.",
     "skill": "Waves",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "ib_184",
@@ -5131,7 +5131,7 @@
     "options": [
       {
         "label": "A",
-        "text": "A universally recognized character type, symbol, or pattern recurring across cultures and literature"
+        "text": "A grammatical structure"
       },
       {
         "label": "B",
@@ -5143,13 +5143,13 @@
       },
       {
         "label": "D",
-        "text": "A grammatical structure"
+        "text": "A universally recognized character type, symbol, or pattern recurring across cultures and literature"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "Archetypes (Jung) are universal patterns — the Hero, the Mentor, the Journey — found across all storytelling traditions.",
     "skill": "Literary Theory",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "ib_185",
@@ -5159,11 +5159,11 @@
     "options": [
       {
         "label": "A",
-        "text": "Sum of roots = -b/a; product of roots = c/a"
+        "text": "Sum of roots = b/a; product of roots = -c/a"
       },
       {
         "label": "B",
-        "text": "Sum of roots = b/a; product of roots = -c/a"
+        "text": "Sum of roots = -b/a; product of roots = c/a"
       },
       {
         "label": "C",
@@ -5174,10 +5174,10 @@
         "text": "There is no relationship"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "B",
     "explanation": "By Vieta's formulas: if r and s are roots, r+s = -b/a and rs = c/a.",
     "skill": "Algebra",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "ib_186",
@@ -5205,7 +5205,7 @@
     "correctAnswer": "A",
     "explanation": "Diffusion is the passive movement of particles down their concentration gradient until equilibrium.",
     "skill": "Cell Biology",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "ib_187",
@@ -5233,7 +5233,7 @@
     "correctAnswer": "A",
     "explanation": "Feminism advocates for gender equality across all aspects of society, challenging systemic discrimination.",
     "skill": "Social Movements",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "ib_188",
@@ -5261,7 +5261,7 @@
     "correctAnswer": "A",
     "explanation": "Linear regression finds the best-fit line minimizing the sum of squared residuals.",
     "skill": "Statistics",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "ib_189",
@@ -5271,11 +5271,11 @@
     "options": [
       {
         "label": "A",
-        "text": "Every mass attracts every other mass with a force proportional to the product of their masses and inversely proportional to the square of the distance between them"
+        "text": "Gravity only exists on Earth"
       },
       {
         "label": "B",
-        "text": "Gravity only exists on Earth"
+        "text": "Every mass attracts every other mass with a force proportional to the product of their masses and inversely proportional to the square of the distance between them"
       },
       {
         "label": "C",
@@ -5286,10 +5286,10 @@
         "text": "Gravity is a constant force everywhere"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "B",
     "explanation": "F = Gm₁m₂/r². Gravity is universal, applying between all objects with mass.",
     "skill": "Mechanics",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "ib_190",
@@ -5317,7 +5317,7 @@
     "correctAnswer": "A",
     "explanation": "Surrealism (Dalí, Magritte) sought to channel the unconscious through dreamlike, illogical imagery.",
     "skill": "Art Movements",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "ib_191",
@@ -5327,7 +5327,7 @@
     "options": [
       {
         "label": "A",
-        "text": "d/dx[f(x)·g(x)] = f'(x)·g(x) + f(x)·g'(x)"
+        "text": "d/dx[f(x)·g(x)] = f'(x) + g'(x)"
       },
       {
         "label": "B",
@@ -5339,13 +5339,13 @@
       },
       {
         "label": "D",
-        "text": "d/dx[f(x)·g(x)] = f'(x) + g'(x)"
+        "text": "d/dx[f(x)·g(x)] = f'(x)·g(x) + f(x)·g'(x)"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "The product rule: (fg)' = f'g + fg'.",
     "skill": "Calculus",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "ib_192",
@@ -5355,7 +5355,7 @@
     "options": [
       {
         "label": "A",
-        "text": "To absorb light energy, primarily in the red and blue wavelengths, for use in photosynthesis"
+        "text": "To store glucose"
       },
       {
         "label": "B",
@@ -5367,13 +5367,13 @@
       },
       {
         "label": "D",
-        "text": "To store glucose"
+        "text": "To absorb light energy, primarily in the red and blue wavelengths, for use in photosynthesis"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "Chlorophyll absorbs light (reflecting green), capturing energy to drive the light-dependent reactions.",
     "skill": "Plant Biology",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "ib_193",
@@ -5383,11 +5383,11 @@
     "options": [
       {
         "label": "A",
-        "text": "A psychological treatment that helps people identify and change negative thought patterns and behaviors"
+        "text": "A type of surgery"
       },
       {
         "label": "B",
-        "text": "A type of surgery"
+        "text": "A psychological treatment that helps people identify and change negative thought patterns and behaviors"
       },
       {
         "label": "C",
@@ -5398,10 +5398,10 @@
         "text": "A form of meditation only"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "B",
     "explanation": "CBT addresses the connection between thoughts, feelings, and behaviors to treat anxiety, depression, and other conditions.",
     "skill": "Psychology",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "ib_194",
@@ -5411,7 +5411,7 @@
     "options": [
       {
         "label": "A",
-        "text": "d/dx[f(x)/g(x)] = [f'(x)·g(x) − f(x)·g'(x)] / [g(x)]²"
+        "text": "d/dx[f(x)/g(x)] = [f'(x) + g'(x)] / g(x)"
       },
       {
         "label": "B",
@@ -5419,17 +5419,17 @@
       },
       {
         "label": "C",
-        "text": "d/dx[f(x)/g(x)] = [f'(x) + g'(x)] / g(x)"
+        "text": "d/dx[f(x)/g(x)] = [f'(x)·g(x) − f(x)·g'(x)] / [g(x)]²"
       },
       {
         "label": "D",
         "text": "d/dx[f(x)/g(x)] = f(x)/g'(x)"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "C",
     "explanation": "The quotient rule: (f/g)' = (f'g − fg') / g².",
     "skill": "Calculus",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "ib_195",
@@ -5439,7 +5439,7 @@
     "options": [
       {
         "label": "A",
-        "text": "Combining DNA from different sources to create new genetic combinations not found in nature"
+        "text": "Studying DNA without changing it"
       },
       {
         "label": "B",
@@ -5451,13 +5451,13 @@
       },
       {
         "label": "D",
-        "text": "Studying DNA without changing it"
+        "text": "Combining DNA from different sources to create new genetic combinations not found in nature"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "Recombinant DNA technology joins DNA from different organisms to produce new genetic combinations.",
     "skill": "Biotechnology",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "ib_196",
@@ -5467,7 +5467,7 @@
     "options": [
       {
         "label": "A",
-        "text": "A narrative technique blending a character's voice with the narrator's, without quotation marks"
+        "text": "A type of dialogue"
       },
       {
         "label": "B",
@@ -5475,17 +5475,17 @@
       },
       {
         "label": "C",
-        "text": "A type of dialogue"
+        "text": "A narrative technique blending a character's voice with the narrator's, without quotation marks"
       },
       {
         "label": "D",
         "text": "A monologue"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "C",
     "explanation": "Free indirect discourse merges narrator and character perspectives, creating ambiguity about whose thoughts are expressed.",
     "skill": "Narrative Technique",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "ib_197",
@@ -5513,7 +5513,7 @@
     "correctAnswer": "A",
     "explanation": "A 95% confidence interval means if we repeated sampling, 95% of intervals would contain the true parameter.",
     "skill": "Statistics",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "ib_198",
@@ -5523,7 +5523,7 @@
     "options": [
       {
         "label": "A",
-        "text": "The increasing concentration of toxins at higher trophic levels in a food chain"
+        "text": "The spread of diseases"
       },
       {
         "label": "B",
@@ -5535,13 +5535,13 @@
       },
       {
         "label": "D",
-        "text": "The spread of diseases"
+        "text": "The increasing concentration of toxins at higher trophic levels in a food chain"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "Biomagnification occurs as persistent toxins (like DDT, mercury) accumulate at progressively higher concentrations up the food chain.",
     "skill": "Ecology",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "ib_199",
@@ -5551,7 +5551,7 @@
     "options": [
       {
         "label": "A",
-        "text": "An 18th-century intellectual movement emphasizing reason, science, individual rights, and skepticism of authority"
+        "text": "A 20th-century art movement"
       },
       {
         "label": "B",
@@ -5563,13 +5563,13 @@
       },
       {
         "label": "D",
-        "text": "A 20th-century art movement"
+        "text": "An 18th-century intellectual movement emphasizing reason, science, individual rights, and skepticism of authority"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "The Enlightenment championed reason and evidence over tradition, profoundly influencing modern democracy and science.",
     "skill": "History",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "ib_200",
@@ -5579,7 +5579,7 @@
     "options": [
       {
         "label": "A",
-        "text": "The distribution of sample means approaches a normal distribution as sample size increases, regardless of the population's distribution"
+        "text": "Larger samples are always more accurate"
       },
       {
         "label": "B",
@@ -5587,17 +5587,17 @@
       },
       {
         "label": "C",
-        "text": "Larger samples are always more accurate"
+        "text": "The distribution of sample means approaches a normal distribution as sample size increases, regardless of the population's distribution"
       },
       {
         "label": "D",
         "text": "The mean always equals the median"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "C",
     "explanation": "The CLT is fundamental to inferential statistics: sample means become approximately normal for large n.",
     "skill": "Statistics",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "ib_201",
@@ -5607,7 +5607,7 @@
     "options": [
       {
         "label": "A",
-        "text": "Logos (appeal to logic)"
+        "text": "Hyperbole (exaggeration)"
       },
       {
         "label": "B",
@@ -5619,13 +5619,13 @@
       },
       {
         "label": "D",
-        "text": "Hyperbole (exaggeration)"
+        "text": "Logos (appeal to logic)"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "Logos directly engages the audience's logical reasoning through facts, statistics, and reasoned arguments, making it the most effective for appealing to reason.",
     "skill": "Rhetorical Analysis",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "ib_202",
@@ -5635,7 +5635,7 @@
     "options": [
       {
         "label": "A",
-        "text": "Personification"
+        "text": "Metaphor"
       },
       {
         "label": "B",
@@ -5643,17 +5643,17 @@
       },
       {
         "label": "C",
-        "text": "Metaphor"
+        "text": "Personification"
       },
       {
         "label": "D",
         "text": "Alliteration"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "C",
     "explanation": "Personification is the attribution of human qualities or abilities to inanimate objects or abstract ideas. Here, 'ruins whispered' gives them a human action.",
     "skill": "Identifying Literary Devices",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "ib_203",
@@ -5663,7 +5663,7 @@
     "options": [
       {
         "label": "A",
-        "text": "Rhyme scheme"
+        "text": "Enjambment"
       },
       {
         "label": "B",
@@ -5675,13 +5675,13 @@
       },
       {
         "label": "D",
-        "text": "Enjambment"
+        "text": "Rhyme scheme"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "A rhyme scheme describes the pattern of rhymes, typically at the end of lines of a poem or song, indicated by using letters to symbolize the rhyming sounds.",
     "skill": "Poetic Analysis",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "ib_204",
@@ -5691,11 +5691,11 @@
     "options": [
       {
         "label": "A",
-        "text": "First-person"
+        "text": "Second-person"
       },
       {
         "label": "B",
-        "text": "Second-person"
+        "text": "First-person"
       },
       {
         "label": "C",
@@ -5706,10 +5706,10 @@
         "text": "Third-person omniscient"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "B",
     "explanation": "First-person narration uses pronouns like 'I,' 'me,' 'my,' 'we,' and 'us' to tell the story from the viewpoint of a character involved in the events.",
     "skill": "Narrative Analysis",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "ib_205",
@@ -5719,7 +5719,7 @@
     "options": [
       {
         "label": "A",
-        "text": "To explain, inform, or describe a topic."
+        "text": "To express personal feelings and reflections."
       },
       {
         "label": "B",
@@ -5731,13 +5731,13 @@
       },
       {
         "label": "D",
-        "text": "To express personal feelings and reflections."
+        "text": "To explain, inform, or describe a topic."
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "Expository writing aims to present information, explain a concept, or describe a subject in a clear and objective manner.",
     "skill": "Essay Structure and Purpose",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "ib_206",
@@ -5747,11 +5747,11 @@
     "options": [
       {
         "label": "A",
-        "text": "Oxymoron"
+        "text": "Irony"
       },
       {
         "label": "B",
-        "text": "Irony"
+        "text": "Oxymoron"
       },
       {
         "label": "C",
@@ -5762,10 +5762,10 @@
         "text": "Juxtaposition"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "B",
     "explanation": "An oxymoron combines contradictory terms. 'Deafening silence' uses two opposing concepts to create a striking effect.",
     "skill": "Identifying Literary Devices",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "ib_207",
@@ -5775,7 +5775,7 @@
     "options": [
       {
         "label": "A",
-        "text": "Monologue"
+        "text": "Soliloquy"
       },
       {
         "label": "B",
@@ -5783,17 +5783,17 @@
       },
       {
         "label": "C",
-        "text": "Soliloquy"
+        "text": "Monologue"
       },
       {
         "label": "D",
         "text": "Aside"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "C",
     "explanation": "A monologue is a speech delivered by one person, which can be addressed to other characters or the audience. A soliloquy is a *type* of monologue where a character speaks their thoughts aloud to themselves when alone.",
     "skill": "Dramatic Terminology",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "ib_208",
@@ -5803,7 +5803,7 @@
     "options": [
       {
         "label": "A",
-        "text": "Metonymy"
+        "text": "Paradox"
       },
       {
         "label": "B",
@@ -5815,13 +5815,13 @@
       },
       {
         "label": "D",
-        "text": "Paradox"
+        "text": "Metonymy"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "Metonymy is a figure of speech in which a thing or concept is referred to by the name of something closely associated with that thing or concept. The 'pen' represents writing and diplomacy, while the 'sword' represents military force and violence.",
     "skill": "Identifying Figures of Speech",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "ib_209",
@@ -5831,11 +5831,11 @@
     "options": [
       {
         "label": "A",
-        "text": "Theme"
+        "text": "Plot"
       },
       {
         "label": "B",
-        "text": "Plot"
+        "text": "Theme"
       },
       {
         "label": "C",
@@ -5846,10 +5846,10 @@
         "text": "Characterization"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "B",
     "explanation": "The theme is the central idea or underlying meaning of a literary work, which may be stated directly or implied.",
     "skill": "Literary Analysis",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "ib_210",
@@ -5877,7 +5877,7 @@
     "correctAnswer": "A",
     "explanation": "Foreshadowing is a literary device in which a writer gives an advance hint of what is to come later in the story. Suspense is a *result* of techniques like foreshadowing.",
     "skill": "Literary Devices",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "ib_211",
@@ -5887,7 +5887,7 @@
     "options": [
       {
         "label": "A",
-        "text": "To connect words, phrases, or clauses."
+        "text": "To modify an adjective."
       },
       {
         "label": "B",
@@ -5899,13 +5899,13 @@
       },
       {
         "label": "D",
-        "text": "To modify an adjective."
+        "text": "To connect words, phrases, or clauses."
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "Conjunctions are words that link words, phrases, or clauses together, creating more complex sentences. Examples include 'and,' 'but,' 'or,' 'so.'",
     "skill": "Grammar and Syntax",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "ib_212",
@@ -5915,11 +5915,11 @@
     "options": [
       {
         "label": "A",
-        "text": "Parenthetical citation (Author, Year)."
+        "text": "Direct quotation without citation."
       },
       {
         "label": "B",
-        "text": "Direct quotation without citation."
+        "text": "Parenthetical citation (Author, Year)."
       },
       {
         "label": "C",
@@ -5930,10 +5930,10 @@
         "text": "Footnotes with full details on first mention."
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "B",
     "explanation": "Parenthetical citations (or author-date system) are standard in many academic fields for in-text referencing, directing the reader to a full bibliographic entry.",
     "skill": "Academic Writing Conventions",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "ib_213",
@@ -5943,11 +5943,11 @@
     "options": [
       {
         "label": "A",
-        "text": "To engage the audience and prompt them to think."
+        "text": "To provide detailed statistical data."
       },
       {
         "label": "B",
-        "text": "To provide detailed statistical data."
+        "text": "To engage the audience and prompt them to think."
       },
       {
         "label": "C",
@@ -5958,10 +5958,10 @@
         "text": "To introduce a new topic abruptly."
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "B",
     "explanation": "Rhetorical questions are posed not to elicit an answer, but to make a point, emphasize an idea, or draw the audience into contemplation.",
     "skill": "Rhetorical Analysis",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "ib_214",
@@ -5971,11 +5971,11 @@
     "options": [
       {
         "label": "A",
-        "text": "Metaphor"
+        "text": "Simile"
       },
       {
         "label": "B",
-        "text": "Simile"
+        "text": "Metaphor"
       },
       {
         "label": "C",
@@ -5986,10 +5986,10 @@
         "text": "Personification"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "B",
     "explanation": "A metaphor directly equates one thing to another for comparative effect. Here, 'he' is equated to a 'lion' to suggest bravery and ferocity.",
     "skill": "Identifying Figures of Speech",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "ib_215",
@@ -5999,11 +5999,11 @@
     "options": [
       {
         "label": "A",
-        "text": "The implied or suggested meaning of a word, beyond its literal definition."
+        "text": "The literal, dictionary definition of a word."
       },
       {
         "label": "B",
-        "text": "The literal, dictionary definition of a word."
+        "text": "The implied or suggested meaning of a word, beyond its literal definition."
       },
       {
         "label": "C",
@@ -6014,10 +6014,10 @@
         "text": "The historical origin of a word."
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "B",
     "explanation": "Connotation refers to the emotional associations or cultural implications that a word carries, in addition to its denotative (literal) meaning.",
     "skill": "Lexical Analysis",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "ib_216",
@@ -6027,7 +6027,7 @@
     "options": [
       {
         "label": "A",
-        "text": "Imagery"
+        "text": "Allegory"
       },
       {
         "label": "B",
@@ -6035,17 +6035,17 @@
       },
       {
         "label": "C",
-        "text": "Allegory"
+        "text": "Imagery"
       },
       {
         "label": "D",
         "text": "Allusion"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "C",
     "explanation": "Imagery is the use of descriptive language that appeals to the senses, creating mental pictures or sensory experiences for the reader.",
     "skill": "Literary Devices",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "ib_217",
@@ -6055,7 +6055,7 @@
     "options": [
       {
         "label": "A",
-        "text": "Word choice (diction), sentence structure (syntax), and imagery."
+        "text": "The historical period in which the text was written."
       },
       {
         "label": "B",
@@ -6067,13 +6067,13 @@
       },
       {
         "label": "D",
-        "text": "The historical period in which the text was written."
+        "text": "Word choice (diction), sentence structure (syntax), and imagery."
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "Tone is conveyed through the author's deliberate choices in vocabulary (diction), sentence construction (syntax), figurative language, and the overall style, which collectively establish their attitude.",
     "skill": "Textual Analysis",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "ib_218",
@@ -6101,7 +6101,7 @@
     "correctAnswer": "B",
     "explanation": "In Spanish, nouns have grammatical gender. 'Mesa' (table) is a feminine noun, typically preceded by 'la'. 'Libro' (book), 'sol' (sun), and 'coche' (car) are masculine nouns, preceded by 'el'.",
     "skill": "Vocabulary and Gender",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "ib_219",
@@ -6129,7 +6129,7 @@
     "correctAnswer": "C",
     "explanation": "'Manger' is the French infinitive verb meaning 'to eat'. 'Parler' means 'to speak', 'dormir' means 'to sleep', and 'venir' means 'to come'.",
     "skill": "Vocabulary",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "ib_220",
@@ -6157,7 +6157,7 @@
     "correctAnswer": "D",
     "explanation": "In German, the definite article changes in different cases. For a masculine noun in the accusative case (direct object), 'der' becomes 'den'. Example: Ich sehe den Hund (I see the dog).",
     "skill": "Grammar: Case System",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "ib_221",
@@ -6185,7 +6185,7 @@
     "correctAnswer": "A",
     "explanation": "In Italian, masculine nouns ending in '-o' typically form their plural by changing the '-o' to '-i'. Therefore, 'libro' becomes 'libri'.",
     "skill": "Vocabulary and Plurals",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "ib_222",
@@ -6213,7 +6213,7 @@
     "correctAnswer": "C",
     "explanation": "The Japanese particle 'の (no)' is used to link nouns and show possession or modification, functioning like the English possessive 's or the preposition 'of'. Example: 私の本 (watashi no hon) - my book.",
     "skill": "Grammar: Particles",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "ib_223",
@@ -6223,7 +6223,7 @@
     "options": [
       {
         "label": "A",
-        "text": "nǐ hǎo (rising tone followed by falling-rising tone)"
+        "text": "nǐ hǎo (high, level tone followed by falling-rising tone)"
       },
       {
         "label": "B",
@@ -6231,17 +6231,17 @@
       },
       {
         "label": "C",
-        "text": "nǐ hǎo (high, level tone followed by falling-rising tone)"
+        "text": "nǐ hǎo (rising tone followed by falling-rising tone)"
       },
       {
         "label": "D",
         "text": "nǐ hǎo (rising tone followed by high, level tone)"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "C",
     "explanation": "In Mandarin Pinyin, 'nǐ' has a third tone (rising-falling) and 'hǎo' also has a third tone. However, when two third tones occur together, the first one changes to a second tone (rising). So, it's pronounced as nǐ (rising) + hǎo (falling-rising).",
     "skill": "Phonetics and Tones",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "ib_224",
@@ -6269,7 +6269,7 @@
     "correctAnswer": "B",
     "explanation": "The conditional present tense in French is formed using the future stem plus the imperfect endings. For 'avoir', the stem is 'aur-' and the first person singular ending is '-ais'. Thus, 'j'aurais' means 'I would have'.",
     "skill": "Grammar: Verb Conjugation",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "ib_225",
@@ -6297,7 +6297,7 @@
     "correctAnswer": "C",
     "explanation": "Russian nouns have grammatical gender. Neuter nouns typically end in '-o' or '-e'. 'Окно' (okno) ends in '-o' and is a neuter noun. 'Стол' and 'дом' are masculine, and 'книга' is feminine.",
     "skill": "Vocabulary and Gender",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "ib_226",
@@ -6325,7 +6325,7 @@
     "correctAnswer": "C",
     "explanation": "The Portuguese preposition 'em' is used to express location, meaning 'in' or 'at'. For example, 'em casa' (at home) or 'em Lisboa' (in Lisbon).",
     "skill": "Grammar: Prepositions",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "ib_227",
@@ -6335,7 +6335,7 @@
     "options": [
       {
         "label": "A",
-        "text": "كتب (kutub)"
+        "text": "مكتب (maktab)"
       },
       {
         "label": "B",
@@ -6347,13 +6347,13 @@
       },
       {
         "label": "D",
-        "text": "مكتب (maktab)"
+        "text": "كتب (kutub)"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "Arabic has irregular plurals, called 'broken plurals'. The plural of 'kitab' (book) is 'kutub'. 'Katiba' means battalion, 'kitaba' means writing, and 'maktab' means office or desk.",
     "skill": "Vocabulary and Plurals",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "ib_228",
@@ -6381,7 +6381,7 @@
     "correctAnswer": "B",
     "explanation": "The partitive article indicates an unspecified quantity. For feminine singular nouns starting with a consonant, 'de la' is used. 'Pain' is masculine ('du pain'), 'eau' starts with a vowel ('de l'eau'), and 'pommes' is plural ('des pommes'). 'Confiture' is a feminine noun.",
     "skill": "Grammar: Articles",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "ib_229",
@@ -6409,7 +6409,7 @@
     "correctAnswer": "D",
     "explanation": "'Ser' is an irregular verb. The third person plural (ellos, ellas, ustedes) form in the present tense is 'son'. 'Somos' is first person plural, 'eres' is second person singular informal, and 'es' is third person singular or formal second person singular.",
     "skill": "Grammar: Verb Conjugation",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "ib_230",
@@ -6437,7 +6437,7 @@
     "correctAnswer": "B",
     "explanation": "Adjectives in Italian must agree in gender and number with the noun they modify. 'Bello' is the masculine singular form of the adjective meaning 'beautiful'. 'Bella' is feminine singular, 'belli' is masculine plural, and 'belle' is feminine plural.",
     "skill": "Vocabulary and Adjective Agreement",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "ib_231",
@@ -6465,7 +6465,7 @@
     "correctAnswer": "C",
     "explanation": "The particle '了 (le)' at the end of a sentence in Mandarin Chinese typically indicates a change of state or that an action has been completed. For example, '我吃了' (wǒ chī le) means 'I ate' or 'I have eaten'.",
     "skill": "Grammar: Particles",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "ib_232",
@@ -6493,7 +6493,7 @@
     "correctAnswer": "B",
     "explanation": "'Sie' is the German pronoun for 'she' in the nominative case. 'Er' means 'he', 'es' means 'it', and 'wir' means 'we'.",
     "skill": "Vocabulary and Pronouns",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "ib_233",
@@ -6521,7 +6521,7 @@
     "correctAnswer": "A",
     "explanation": "The standard past participle for regular -ir verbs like 'finir' is formed by replacing the -ir with -i. Thus, the past participle is 'fini'. 'Finie' would be the feminine form, 'finis' is the second person singular present or past historic, and 'finissez' is the second person plural present/imperative.",
     "skill": "Grammar: Verb Conjugation",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "ib_234",
@@ -6531,7 +6531,7 @@
     "options": [
       {
         "label": "A",
-        "text": "в (v)"
+        "text": "с (s)"
       },
       {
         "label": "B",
@@ -6539,17 +6539,17 @@
       },
       {
         "label": "C",
-        "text": "с (s)"
+        "text": "в (v)"
       },
       {
         "label": "D",
         "text": "из (iz)"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "C",
     "explanation": "The Russian preposition 'в (v)' is used for movement into or to a place, and also for location within a place. It governs the accusative case for movement and prepositional for location. 'На (na)' is typically used for movement onto a surface or abstract places. 'С (s)' means 'with' or 'from', and 'из (iz)' means 'from within'.",
     "skill": "Grammar: Prepositions and Case Usage",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "ib_235",
@@ -6577,7 +6577,7 @@
     "correctAnswer": "A",
     "explanation": "Economics is fundamentally about how societies manage their limited resources in the face of unlimited desires.",
     "skill": "Knowledge and Understanding",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "ib_236",
@@ -6587,11 +6587,11 @@
     "options": [
       {
         "label": "A",
-        "text": "The supreme authority within a territory."
+        "text": "The division of powers between different branches of government."
       },
       {
         "label": "B",
-        "text": "The division of powers between different branches of government."
+        "text": "The supreme authority within a territory."
       },
       {
         "label": "C",
@@ -6602,10 +6602,10 @@
         "text": "The participation of citizens in the political process."
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "B",
     "explanation": "Sovereignty denotes the ultimate legal authority held by a state or governing body.",
     "skill": "Knowledge and Understanding",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "ib_237",
@@ -6633,7 +6633,7 @@
     "correctAnswer": "A",
     "explanation": "Functionalism views society as a complex system whose parts work together to promote solidarity and stability, often through shared norms and values.",
     "skill": "Knowledge and Understanding",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "ib_238",
@@ -6643,11 +6643,11 @@
     "options": [
       {
         "label": "A",
-        "text": "Psychology"
+        "text": "Anthropology"
       },
       {
         "label": "B",
-        "text": "Anthropology"
+        "text": "Psychology"
       },
       {
         "label": "C",
@@ -6658,10 +6658,10 @@
         "text": "Archaeology"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "B",
     "explanation": "Psychology is the academic and applied discipline that studies mental states and behaviors.",
     "skill": "Knowledge and Understanding",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "ib_239",
@@ -6689,7 +6689,7 @@
     "correctAnswer": "A",
     "explanation": "Primary sources provide direct, firsthand evidence about a historical topic.",
     "skill": "Knowledge and Understanding",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "ib_240",
@@ -6699,11 +6699,11 @@
     "options": [
       {
         "label": "A",
-        "text": "Capitalism"
+        "text": "Socialism"
       },
       {
         "label": "B",
-        "text": "Socialism"
+        "text": "Capitalism"
       },
       {
         "label": "C",
@@ -6714,10 +6714,10 @@
         "text": "Feudalism"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "B",
     "explanation": "Capitalism is an economic system where private individuals or corporations own and control the means of production.",
     "skill": "Knowledge and Understanding",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "ib_241",
@@ -6745,7 +6745,7 @@
     "correctAnswer": "A",
     "explanation": "An oligarchy is a form of government characterized by rule by a small minority.",
     "skill": "Knowledge and Understanding",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "ib_242",
@@ -6773,7 +6773,7 @@
     "correctAnswer": "A",
     "explanation": "Kant's categorical imperative posits that moral actions are those that could be willed as universal laws, emphasizing duty and rational principles.",
     "skill": "Application and Analysis",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "ib_243",
@@ -6801,7 +6801,7 @@
     "correctAnswer": "A",
     "explanation": "GDP per capita is a measure of economic output per person. An increase in GDP with a stable population typically leads to higher average incomes and potential improvements in living standards.",
     "skill": "Application and Analysis",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "ib_244",
@@ -6811,7 +6811,7 @@
     "options": [
       {
         "label": "A",
-        "text": "Acculturation"
+        "text": "Ethnocentrism"
       },
       {
         "label": "B",
@@ -6823,13 +6823,13 @@
       },
       {
         "label": "D",
-        "text": "Ethnocentrism"
+        "text": "Acculturation"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "Acculturation is the process of cultural change and psychological adaptation as groups come into contact.",
     "skill": "Knowledge and Understanding",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "ib_245",
@@ -6857,7 +6857,7 @@
     "correctAnswer": "A",
     "explanation": "Realism posits that states act in their own self-interest, seeking power and security in a world without a central authority.",
     "skill": "Knowledge and Understanding",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "ib_246",
@@ -6867,11 +6867,11 @@
     "options": [
       {
         "label": "A",
-        "text": "Central planning by the government dictates production and distribution."
+        "text": "Market forces of supply and demand determine prices and quantities."
       },
       {
         "label": "B",
-        "text": "Market forces of supply and demand determine prices and quantities."
+        "text": "Central planning by the government dictates production and distribution."
       },
       {
         "label": "C",
@@ -6882,10 +6882,10 @@
         "text": "Limited government intervention in economic affairs."
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "B",
     "explanation": "In a command economy, the state largely controls economic activity, setting production targets and prices.",
     "skill": "Knowledge and Understanding",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "ib_247",
@@ -6895,7 +6895,7 @@
     "options": [
       {
         "label": "A",
-        "text": "Facilitating the spread of ideas, literacy, and scientific knowledge."
+        "text": "Promoting oral traditions and limiting written communication."
       },
       {
         "label": "B",
@@ -6907,13 +6907,13 @@
       },
       {
         "label": "D",
-        "text": "Promoting oral traditions and limiting written communication."
+        "text": "Facilitating the spread of ideas, literacy, and scientific knowledge."
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "The printing press revolutionized the dissemination of information, accelerating the spread of humanistic ideas and scholarly works.",
     "skill": "Evaluation and Synthesis",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "ib_248",
@@ -6941,7 +6941,7 @@
     "correctAnswer": "A",
     "explanation": "Opportunity cost highlights the trade-offs inherent in decision-making; it's what you give up to get something else.",
     "skill": "Knowledge and Understanding",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "ib_249",
@@ -6969,7 +6969,7 @@
     "correctAnswer": "A",
     "explanation": "Freedom of speech is a cornerstone of liberal democracies, allowing for open discourse and political participation.",
     "skill": "Knowledge and Understanding",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "ib_250",
@@ -6979,7 +6979,7 @@
     "options": [
       {
         "label": "A",
-        "text": "Informal relationships and personal loyalties prevailing over rules."
+        "text": "Formal rules and regulations."
       },
       {
         "label": "B",
@@ -6991,13 +6991,13 @@
       },
       {
         "label": "D",
-        "text": "Formal rules and regulations."
+        "text": "Informal relationships and personal loyalties prevailing over rules."
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "Weber's model of bureaucracy emphasizes rationality, impersonality, and adherence to formal rules, not informal relationships.",
     "skill": "Knowledge and Understanding",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "ib_251",
@@ -7007,11 +7007,11 @@
     "options": [
       {
         "label": "A",
-        "text": "Class struggle and the conflict between economic classes."
+        "text": "Technological innovation and scientific discovery."
       },
       {
         "label": "B",
-        "text": "Technological innovation and scientific discovery."
+        "text": "Class struggle and the conflict between economic classes."
       },
       {
         "label": "C",
@@ -7022,10 +7022,10 @@
         "text": "Ideological shifts and changes in belief systems."
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "B",
     "explanation": "Historical materialism, a key concept in Marxism, argues that the mode of production and the resulting class conflicts are the primary engines of historical development.",
     "skill": "Knowledge and Understanding",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "ib_252",
@@ -7053,7 +7053,7 @@
     "correctAnswer": "A",
     "explanation": "Mitochondria are known as the 'powerhouses' of the cell because they carry out the process of cellular respiration, converting glucose and oxygen into ATP, the main energy currency of the cell.",
     "skill": "Knowledge",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "ib_253",
@@ -7063,7 +7063,7 @@
     "options": [
       {
         "label": "A",
-        "text": "C₆H₁₂O₆"
+        "text": "H₂O"
       },
       {
         "label": "B",
@@ -7075,13 +7075,13 @@
       },
       {
         "label": "D",
-        "text": "H₂O"
+        "text": "C₆H₁₂O₆"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "Glucose is a common sugar and a key source of energy for living organisms. Its molecular formula, representing the number and type of atoms in one molecule, is C₆H₁₂O₆.",
     "skill": "Knowledge",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "ib_254",
@@ -7109,7 +7109,7 @@
     "correctAnswer": "A",
     "explanation": "Refraction is the phenomenon where a wave in this case, light, changes direction as it passes through the boundary between two different media, due to a change in its speed.",
     "skill": "Knowledge",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "ib_255",
@@ -7119,7 +7119,7 @@
     "options": [
       {
         "label": "A",
-        "text": "80"
+        "text": "60"
       },
       {
         "label": "B",
@@ -7127,17 +7127,17 @@
       },
       {
         "label": "C",
-        "text": "60"
+        "text": "80"
       },
       {
         "label": "D",
         "text": "70"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "C",
     "explanation": "Year 1: 10 * 2 = 20. Year 2: 20 * 2 = 40. Year 3: 40 * 2 = 80. The population follows exponential growth.",
     "skill": "Application",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "ib_256",
@@ -7147,7 +7147,7 @@
     "options": [
       {
         "label": "A",
-        "text": "The rate of change of velocity."
+        "text": "The change in kinetic energy."
       },
       {
         "label": "B",
@@ -7159,13 +7159,13 @@
       },
       {
         "label": "D",
-        "text": "The change in kinetic energy."
+        "text": "The rate of change of velocity."
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "Acceleration is a vector quantity that describes how quickly the velocity of an object changes over time. It is defined as the change in velocity per unit time.",
     "skill": "Knowledge",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "ib_257",
@@ -7175,11 +7175,11 @@
     "options": [
       {
         "label": "A",
-        "text": "Nitrogen"
+        "text": "Oxygen"
       },
       {
         "label": "B",
-        "text": "Oxygen"
+        "text": "Nitrogen"
       },
       {
         "label": "C",
@@ -7190,10 +7190,10 @@
         "text": "Argon"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "B",
     "explanation": "Nitrogen gas (N₂) constitutes approximately 78% of the Earth's atmosphere, making it the most abundant gas.",
     "skill": "Knowledge",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "ib_258",
@@ -7203,7 +7203,7 @@
     "options": [
       {
         "label": "A",
-        "text": "2.0 s"
+        "text": "4.0 s"
       },
       {
         "label": "B",
@@ -7215,13 +7215,13 @@
       },
       {
         "label": "D",
-        "text": "4.0 s"
+        "text": "2.0 s"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "The period (T) of a simple pendulum is given by T = 2π√(L/g). For L=1m and g≈9.8 m/s², T ≈ 2π√(1/9.8) ≈ 2π * (1/3.13) ≈ 2.006 s.",
     "skill": "Application",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "ib_259",
@@ -7231,7 +7231,7 @@
     "options": [
       {
         "label": "A",
-        "text": "Roots"
+        "text": "Stem"
       },
       {
         "label": "B",
@@ -7239,17 +7239,17 @@
       },
       {
         "label": "C",
-        "text": "Stem"
+        "text": "Roots"
       },
       {
         "label": "D",
         "text": "Flower"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "C",
     "explanation": "The root system of a plant, primarily the roots themselves and their root hairs, are specialized for anchoring the plant and absorbing water and dissolved mineral nutrients from the soil.",
     "skill": "Knowledge",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "ib_260",
@@ -7259,7 +7259,7 @@
     "options": [
       {
         "label": "A",
-        "text": "Transport oxygen."
+        "text": "Transport nutrients."
       },
       {
         "label": "B",
@@ -7271,13 +7271,13 @@
       },
       {
         "label": "D",
-        "text": "Transport nutrients."
+        "text": "Transport oxygen."
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "Red blood cells contain hemoglobin, a protein that binds to oxygen and transports it from the lungs to the body's tissues.",
     "skill": "Knowledge",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "ib_261",
@@ -7287,7 +7287,7 @@
     "options": [
       {
         "label": "A",
-        "text": "Photosynthesis"
+        "text": "Fermentation"
       },
       {
         "label": "B",
@@ -7299,13 +7299,13 @@
       },
       {
         "label": "D",
-        "text": "Fermentation"
+        "text": "Photosynthesis"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "Photosynthesis is the process used by plants, algae, and cyanobacteria to convert light energy into chemical energy, through a process that uses sunlight, water, and carbon dioxide.",
     "skill": "Knowledge",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "ib_262",
@@ -7333,7 +7333,7 @@
     "correctAnswer": "A",
     "explanation": "According to Ohm's Law (V=IR), current (I) is inversely proportional to resistance (R) when voltage (V) is constant. If R doubles, I must be halved to maintain the same V.",
     "skill": "Application",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "ib_263",
@@ -7343,7 +7343,7 @@
     "options": [
       {
         "label": "A",
-        "text": "Solid"
+        "text": "Gas"
       },
       {
         "label": "B",
@@ -7351,17 +7351,17 @@
       },
       {
         "label": "C",
-        "text": "Gas"
+        "text": "Solid"
       },
       {
         "label": "D",
         "text": "Plasma"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "C",
     "explanation": "In a solid, particles are held in fixed positions and vibrate, possessing the lowest average kinetic energy compared to liquids, gases, and plasma where particles move more freely and at higher energies.",
     "skill": "Knowledge",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "ib_264",
@@ -7371,11 +7371,11 @@
     "options": [
       {
         "label": "A",
-        "text": "Newton"
+        "text": "Joule"
       },
       {
         "label": "B",
-        "text": "Joule"
+        "text": "Newton"
       },
       {
         "label": "C",
@@ -7386,10 +7386,10 @@
         "text": "Pascal"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "B",
     "explanation": "The Newton (N) is the standard SI unit of force, defined as the force required to accelerate a mass of one kilogram at a rate of one meter per second squared (kg⋅m/s²).",
     "skill": "Knowledge",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "ib_265",
@@ -7417,7 +7417,7 @@
     "correctAnswer": "A",
     "explanation": "Exothermic reactions are chemical reactions that release energy, usually in the form of heat, light, or sound, into their surroundings. This results in a decrease in enthalpy.",
     "skill": "Knowledge",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "ib_266",
@@ -7427,7 +7427,7 @@
     "options": [
       {
         "label": "A",
-        "text": "50 km/h"
+        "text": "200 km/h"
       },
       {
         "label": "B",
@@ -7439,13 +7439,13 @@
       },
       {
         "label": "D",
-        "text": "200 km/h"
+        "text": "50 km/h"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "Average speed is calculated by dividing the total distance traveled by the total time taken. Speed = Distance / Time = 100 km / 2 h = 50 km/h.",
     "skill": "Application",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "ib_267",
@@ -7455,7 +7455,7 @@
     "options": [
       {
         "label": "A",
-        "text": "Vaporization"
+        "text": "Melting"
       },
       {
         "label": "B",
@@ -7463,17 +7463,17 @@
       },
       {
         "label": "C",
-        "text": "Melting"
+        "text": "Vaporization"
       },
       {
         "label": "D",
         "text": "Sublimation"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "C",
     "explanation": "Vaporization is the general term for the phase transition of a substance from a liquid to a gas. It encompasses both evaporation (occurring at the surface of the liquid) and boiling (occurring throughout the liquid).",
     "skill": "Knowledge",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "ib_268",
@@ -7483,7 +7483,7 @@
     "options": [
       {
         "label": "A",
-        "text": "It doubles."
+        "text": "It is halved."
       },
       {
         "label": "B",
@@ -7495,13 +7495,13 @@
       },
       {
         "label": "D",
-        "text": "It is halved."
+        "text": "It doubles."
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "The average kinetic energy of gas molecules is directly proportional to the absolute temperature (in Kelvin). If the temperature doubles from 300 K to 600 K, the average kinetic energy of the molecules also doubles.",
     "skill": "Application",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "ib_269",
@@ -7529,7 +7529,7 @@
     "correctAnswer": "B",
     "explanation": "Expressionism, originating in the early 20th century, focused on conveying inner emotions and subjective realities rather than objective perceptions. Artists like Edvard Munch and Ernst Ludwig Kirchner used bold colors and strong lines to evoke feelings.",
     "skill": "Knowledge and understanding",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "ib_270",
@@ -7557,7 +7557,7 @@
     "correctAnswer": "C",
     "explanation": "The script is the fundamental written document for a play, containing all spoken words (dialogue) and instructions for actors and directors regarding actions, settings, and emotions.",
     "skill": "Knowledge and understanding",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "ib_271",
@@ -7585,7 +7585,7 @@
     "correctAnswer": "D",
     "explanation": "Tempo is the Italian word for 'time' and in music, it indicates the speed or pace of a given piece, often indicated by Italian terms like 'andante' (walking pace) or 'allegro' (fast and lively).",
     "skill": "Knowledge and understanding",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "ib_272",
@@ -7613,7 +7613,7 @@
     "correctAnswer": "C",
     "explanation": "The 'Venus de Milo' (Aphrodite of Milos), dated to around 100-125 BCE, exemplifies the Hellenistic period, characterized by increased realism, emotional intensity, and dramatic poses compared to the idealized forms of the Classical period.",
     "skill": "Knowledge and understanding",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "ib_273",
@@ -7641,7 +7641,7 @@
     "correctAnswer": "B",
     "explanation": "Depth of field is a photographic concept that describes the distance range within a photograph that appears acceptably sharp. A shallow depth of field means only a small part of the scene is in focus, while a deep depth of field means most of the scene is in focus.",
     "skill": "Knowledge and understanding",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "ib_274",
@@ -7669,7 +7669,7 @@
     "correctAnswer": "B",
     "explanation": "Flying buttresses are external, arched supports that transfer the outward and downward thrust of the roof vaults to piers outside the walls. This architectural innovation allowed Gothic cathedrals to have soaring heights and expansive windows.",
     "skill": "Knowledge and understanding",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "ib_275",
@@ -7697,7 +7697,7 @@
     "correctAnswer": "A",
     "explanation": "Mise-en-scène is a French term meaning 'placing on stage'. In film, it encompasses everything that appears before the camera within a scene, including the set design, props, costumes, lighting, and the arrangement of actors.",
     "skill": "Knowledge and understanding",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "ib_276",
@@ -7725,7 +7725,7 @@
     "correctAnswer": "B",
     "explanation": "Chiaroscuro (Italian for 'light-dark') is a technique using strong tonal contrasts between light and dark to model three-dimensional forms, often for dramatic effect. It creates a sense of volume and depth.",
     "skill": "Knowledge and understanding",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "ib_277",
@@ -7753,7 +7753,7 @@
     "correctAnswer": "C",
     "explanation": "An arabesque is a ballet pose characterized by being lifted on one leg with the other leg extended straight back, with arms often extended in a harmonious line. It is named after an ornate style of Moorish decoration.",
     "skill": "Knowledge and understanding",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "ib_278",
@@ -7781,7 +7781,7 @@
     "correctAnswer": "C",
     "explanation": "Dadaism was a reaction to the horrors of World War I, characterized by its rejection of art's conventions and societal values. Its artists embraced irrationality, absurdity, and protest, often using collage, ready-mades, and provocative performances.",
     "skill": "Analysis and evaluation",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "ib_279",
@@ -7809,7 +7809,7 @@
     "correctAnswer": "C",
     "explanation": "Minor keys are traditionally associated with sad or somber emotions. A slow tempo further contributes to a feeling of pensiveness or sorrow, and a mournful melody reinforces this emotional landscape.",
     "skill": "Analysis and evaluation",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "ib_280",
@@ -7837,7 +7837,7 @@
     "correctAnswer": "B",
     "explanation": "Noh theatre is characterized by its highly formalized structure, which includes scripted dialogue, deliberate pacing, and precise movements. Improvised dialogue and rapid plot development are more common in other theatrical forms.",
     "skill": "Analysis and evaluation",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "ib_281",
@@ -7865,35 +7865,35 @@
     "correctAnswer": "B",
     "explanation": "Avant-garde, a French term meaning 'vanguard', refers to artists, works, or movements that are experimental, radical, or unorthodox, pushing the boundaries of artistic conventions and challenging established ideas.",
     "skill": "Knowledge and understanding",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
-    "id": "ib_282",
+    "id": "ib_082",
     "exam": "IB",
-    "section": "The Arts",
-    "question": "Consider a sculpture made from found objects, resembling a discarded bicycle. This artwork is most strongly aligned with the principles of which art movement?",
+    "section": "Sciences",
+    "question": "What is 'cladistics' in biology?",
     "options": [
       {
         "label": "A",
-        "text": "Baroque"
+        "text": "A type of rock formation"
       },
       {
         "label": "B",
-        "text": "Renaissance"
+        "text": "A type of cell division"
       },
       {
         "label": "C",
-        "text": "Dadaism or Surrealism (specifically Assemblage)"
+        "text": "A method of cooking"
       },
       {
         "label": "D",
-        "text": "Neoclassicism"
+        "text": "A method of classifying organisms based on shared evolutionary ancestry"
       }
     ],
-    "correctAnswer": "C",
-    "explanation": "The use of found objects (readymades or assemblage) to create art is a hallmark of movements like Dadaism and Surrealism. Marcel Duchamp's 'Bicycle Wheel' (1913) is a famous early example, and artists like Robert Rauschenberg later developed assemblage techniques.",
-    "skill": "Analysis and evaluation",
-    "difficulty": "hard"
+    "correctAnswer": "D",
+    "explanation": "Cladistics groups organisms by shared derived characteristics to construct phylogenetic trees (cladograms).",
+    "skill": "Classification",
+    "difficulty": 7
   },
   {
     "id": "ib_283",
@@ -7921,7 +7921,7 @@
     "correctAnswer": "C",
     "explanation": "Polyphony is a texture in music characterized by the simultaneous combination of two or more independent melodic lines, creating a complex interplay of voices or instruments. Examples include fugues by J.S. Bach.",
     "skill": "Knowledge and understanding",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "ib_284",
@@ -7949,7 +7949,7 @@
     "correctAnswer": "C",
     "explanation": "These are foundational elements of drama. Plot provides the narrative structure, character development adds depth, dialogue drives the action and reveals personality, and spectacle (set design, costumes, lighting, etc.) enhances the visual experience.",
     "skill": "Analysis and evaluation",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "ib_285",
@@ -7977,7 +7977,7 @@
     "correctAnswer": "B",
     "explanation": "A horizontal translation of 1 unit to the right means x-coordinate becomes x+1. So 3 becomes 3+1=4. A vertical stretch by factor 2 means y becomes 2y. So -2 becomes 2(-2)=-4. A vertical translation of 3 units up means y becomes y+3. So -4 becomes -4+3=-1. Thus, the new minimum is at (4, -1).",
     "skill": "Transformations of functions",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "ib_286",
@@ -8005,7 +8005,7 @@
     "correctAnswer": "B",
     "explanation": "Using logarithm properties: log_a(x^2 / √y) = log_a(x^2) - log_a(√y) = 2log_a(x) - log_a(y^(1/2)) = 2log_a(x) - (1/2)log_a(y). Substituting p and q gives 2p - q/2.",
     "skill": "Logarithm properties",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "ib_287",
@@ -8033,7 +8033,7 @@
     "correctAnswer": "B",
     "explanation": "The first term a1 = 2. The common difference d = 7 - 2 = 5. The nth term of an arithmetic sequence is given by a_n = a1 + (n-1)d. For the 10th term, a10 = 2 + (10-1)5 = 2 + 9*5 = 2 + 45 = 47.",
     "skill": "Arithmetic sequences",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "ib_288",
@@ -8043,7 +8043,7 @@
     "options": [
       {
         "label": "A",
-        "text": "x ≤ -1 or x ≥ 5"
+        "text": "x ≥ 5"
       },
       {
         "label": "B",
@@ -8055,13 +8055,13 @@
       },
       {
         "label": "D",
-        "text": "x ≥ 5"
+        "text": "x ≤ -1 or x ≥ 5"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "For the square root to be defined, the expression inside must be non-negative: x^2 - 4x - 5 ≥ 0. Factoring the quadratic gives (x - 5)(x + 1) ≥ 0. The roots are x = 5 and x = -1. This quadratic is a parabola opening upwards, so it is non-negative when x is less than or equal to the smaller root or greater than or equal to the larger root. Thus, x ≤ -1 or x ≥ 5.",
     "skill": "Domain of a function, inequalities",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "ib_289",
@@ -8071,7 +8071,7 @@
     "options": [
       {
         "label": "A",
-        "text": "27"
+        "text": "54"
       },
       {
         "label": "B",
@@ -8079,17 +8079,17 @@
       },
       {
         "label": "C",
-        "text": "54"
+        "text": "27"
       },
       {
         "label": "D",
         "text": "infinity"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "C",
     "explanation": "The first term a = 18. The common ratio r = 6/18 = 1/3. Since |r| < 1, the series converges. The sum of an infinite geometric series is S = a / (1 - r). So, S = 18 / (1 - 1/3) = 18 / (2/3) = 18 * (3/2) = 27.",
     "skill": "Sum of infinite geometric series",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "ib_290",
@@ -8117,7 +8117,7 @@
     "correctAnswer": "C",
     "explanation": "The amplitude of a sinusoidal function of the form y = A sin(Bx + C) + D is |A|. In this case, A = -3, so the amplitude is |-3| = 3.",
     "skill": "Properties of trigonometric functions",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "ib_291",
@@ -8127,11 +8127,11 @@
     "options": [
       {
         "label": "A",
-        "text": "5/14"
+        "text": "25/64"
       },
       {
         "label": "B",
-        "text": "25/64"
+        "text": "5/14"
       },
       {
         "label": "C",
@@ -8142,10 +8142,10 @@
         "text": "25/56"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "B",
     "explanation": "The probability of drawing the first red ball is 5/8. After one red ball is drawn, there are 4 red balls left and a total of 7 balls. The probability of drawing a second red ball is 4/7. The probability of both events occurring is (5/8) * (4/7) = 20/56 = 5/14.",
     "skill": "Probability without replacement",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "ib_292",
@@ -8173,7 +8173,7 @@
     "correctAnswer": "B",
     "explanation": "Using the chain rule, if u = 3x^2 - 1, then y = u^4. dy/dx = dy/du * du/dx. dy/du = 4u^3. du/dx = 6x. So, dy/dx = 4(3x^2 - 1)^3 * 6x = 24x(3x^2 - 1)^3.",
     "skill": "Chain rule in differentiation",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "ib_293",
@@ -8183,7 +8183,7 @@
     "options": [
       {
         "label": "A",
-        "text": "11/3"
+        "text": "10/3"
       },
       {
         "label": "B",
@@ -8191,17 +8191,17 @@
       },
       {
         "label": "C",
-        "text": "10/3"
+        "text": "11/3"
       },
       {
         "label": "D",
         "text": "4"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "C",
     "explanation": "Integrate the function: integral of 2x^2 is (2/3)x^3, and integral of 3 is 3x. So, the antiderivative is (2/3)x^3 + 3x. Evaluate from 0 to 1: [(2/3)(1)^3 + 3(1)] - [(2/3)(0)^3 + 3(0)] = (2/3 + 3) - 0 = 2/3 + 9/3 = 11/3.",
     "skill": "Definite integration",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "ib_294",
@@ -8229,7 +8229,7 @@
     "correctAnswer": "B",
     "explanation": "The slope of L1 is m1 = 2. For L2 to be perpendicular, its slope m2 must be the negative reciprocal of m1, so m2 = -1/2. Using the point-slope form y - y1 = m(x - x1) with (4, 1) and m2 = -1/2: y - 1 = (-1/2)(x - 4). y - 1 = (-1/2)x + 2. y = (-1/2)x + 3.",
     "skill": "Equations of perpendicular lines",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "ib_295",
@@ -8239,7 +8239,7 @@
     "options": [
       {
         "label": "A",
-        "text": "-3 m/s"
+        "text": "3 m/s"
       },
       {
         "label": "B",
@@ -8247,17 +8247,17 @@
       },
       {
         "label": "C",
-        "text": "3 m/s"
+        "text": "-3 m/s"
       },
       {
         "label": "D",
         "text": "-6 m/s"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "C",
     "explanation": "Velocity is the derivative of position with respect to time. v(t) = s'(t) = d/dt (t^3 - 6t^2 + 9t) = 3t^2 - 12t + 9. Now substitute t = 2 into the velocity function: v(2) = 3(2)^2 - 12(2) + 9 = 3(4) - 24 + 9 = 12 - 24 + 9 = -12 + 9 = -3 m/s.",
     "skill": "Derivatives in kinematics",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "ib_296",
@@ -8285,7 +8285,7 @@
     "correctAnswer": "B",
     "explanation": "The exponential function 2^(x+1) is always positive, so 2^(x+1) > 0. Subtracting 3 from both sides gives 2^(x+1) - 3 > -3. Therefore, the range of f(x) is y > -3.",
     "skill": "Range of exponential functions",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "ib_297",
@@ -8313,7 +8313,7 @@
     "correctAnswer": "C",
     "explanation": "We are looking for two numbers that multiply to 12 and add to -7. These numbers are -4 and -3. So, the factorization is (x - 4)(x - 3).",
     "skill": "Factoring quadratic expressions",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "ib_298",
@@ -8341,7 +8341,7 @@
     "correctAnswer": "A",
     "explanation": "Using the Pythagorean identity sin^2(theta) + cos^2(theta) = 1. (3/5)^2 + cos^2(theta) = 1. 9/25 + cos^2(theta) = 1. cos^2(theta) = 1 - 9/25 = 16/25. cos(theta) = sqrt(16/25) = ±4/5. Since theta is an acute angle (0 < theta < π/2), cos(theta) must be positive. So, cos(theta) = 4/5.",
     "skill": "Trigonometric identities",
-    "difficulty": "easy"
+    "difficulty": 3
   },
   {
     "id": "ib_299",
@@ -8351,7 +8351,7 @@
     "options": [
       {
         "label": "A",
-        "text": "1/6"
+        "text": "1/3"
       },
       {
         "label": "B",
@@ -8363,13 +8363,13 @@
       },
       {
         "label": "D",
-        "text": "1/3"
+        "text": "1/6"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "There are 6*6 = 36 possible outcomes when rolling a die twice. The pairs that sum to 7 are (1,6), (2,5), (3,4), (4,3), (5,2), (6,1). There are 6 such pairs. So the probability is 6/36 = 1/6.",
     "skill": "Basic probability",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "ib_300",
@@ -8397,6 +8397,6 @@
     "correctAnswer": "C",
     "explanation": "Rewrite 16 as a power of 2: 16 = 2^4. So the equation becomes 2^(x-1) = 2^4. Since the bases are the same, the exponents must be equal: x - 1 = 4. Adding 1 to both sides gives x = 5.",
     "skill": "Solving exponential equations",
-    "difficulty": "easy"
+    "difficulty": 3
   }
 ]

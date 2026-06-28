@@ -1,33 +1,5 @@
 [
   {
-    "id": "teas_001",
-    "exam": "TEAS",
-    "section": "Reading",
-    "question": "A passage states: 'The mitochondria, often called the powerhouse of the cell, generates ATP through oxidative phosphorylation.' What is the author's primary purpose?",
-    "options": [
-      {
-        "label": "A",
-        "text": "To explain the function of mitochondria"
-      },
-      {
-        "label": "B",
-        "text": "To argue that mitochondria are the most important organelle"
-      },
-      {
-        "label": "C",
-        "text": "To compare mitochondria with other organelles"
-      },
-      {
-        "label": "D",
-        "text": "To describe the history of mitochondria research"
-      }
-    ],
-    "correctAnswer": "A",
-    "explanation": "The passage provides a straightforward explanation of mitochondrial function without arguing, comparing, or giving history.",
-    "skill": "Author's Purpose",
-    "difficulty": "easy"
-  },
-  {
     "id": "teas_002",
     "exam": "TEAS",
     "section": "Math",
@@ -35,7 +7,7 @@
     "options": [
       {
         "label": "A",
-        "text": "12.5 mL"
+        "text": "15 mL"
       },
       {
         "label": "B",
@@ -47,41 +19,13 @@
       },
       {
         "label": "D",
-        "text": "15 mL"
+        "text": "12.5 mL"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "Using dimensional analysis: 250 mg × (5 mL / 100 mg) = 12.5 mL.",
     "skill": "Dosage Calculation",
-    "difficulty": "medium"
-  },
-  {
-    "id": "teas_003",
-    "exam": "TEAS",
-    "section": "Science",
-    "question": "Which blood type is considered the universal donor for red blood cells?",
-    "options": [
-      {
-        "label": "A",
-        "text": "O negative"
-      },
-      {
-        "label": "B",
-        "text": "AB positive"
-      },
-      {
-        "label": "C",
-        "text": "A negative"
-      },
-      {
-        "label": "D",
-        "text": "B positive"
-      }
-    ],
-    "correctAnswer": "A",
-    "explanation": "O negative blood lacks A, B, and Rh antigens, making it compatible with all blood types for emergency transfusions.",
-    "skill": "Hematology",
-    "difficulty": "easy"
+    "difficulty": 5
   },
   {
     "id": "teas_004",
@@ -91,7 +35,7 @@
     "options": [
       {
         "label": "A",
-        "text": "The group of students is preparing for the exam."
+        "text": "The group of students have been preparing for the exam."
       },
       {
         "label": "B",
@@ -103,13 +47,13 @@
       },
       {
         "label": "D",
-        "text": "The group of students have been preparing for the exam."
+        "text": "The group of students is preparing for the exam."
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "'Group' is a collective noun acting as a singular subject, requiring the singular verb 'is.'",
     "skill": "Grammar",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "teas_005",
@@ -137,7 +81,7 @@
     "correctAnswer": "A",
     "explanation": "During metaphase, chromosomes line up along the metaphase plate (equator) of the cell before being separated in anaphase.",
     "skill": "Cell Biology",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "teas_006",
@@ -165,63 +109,7 @@
     "correctAnswer": "A",
     "explanation": "C = (F - 32) × 5/9 = (98.6 - 32) × 5/9 = 66.6 × 5/9 = 37°C.",
     "skill": "Unit Conversion",
-    "difficulty": "medium"
-  },
-  {
-    "id": "teas_007",
-    "exam": "TEAS",
-    "section": "Science",
-    "question": "Which organ is primarily responsible for filtering blood and producing urine?",
-    "options": [
-      {
-        "label": "A",
-        "text": "Kidney"
-      },
-      {
-        "label": "B",
-        "text": "Liver"
-      },
-      {
-        "label": "C",
-        "text": "Pancreas"
-      },
-      {
-        "label": "D",
-        "text": "Spleen"
-      }
-    ],
-    "correctAnswer": "A",
-    "explanation": "The kidneys filter blood to remove waste products and excess fluid, producing urine. The liver detoxifies, the pancreas produces enzymes and hormones, and the spleen filters blood cells.",
-    "skill": "Anatomy",
-    "difficulty": "easy"
-  },
-  {
-    "id": "teas_008",
-    "exam": "TEAS",
-    "section": "Reading",
-    "question": "In a research study, which section typically describes the methods used to collect and analyze data?",
-    "options": [
-      {
-        "label": "A",
-        "text": "Methodology"
-      },
-      {
-        "label": "B",
-        "text": "Abstract"
-      },
-      {
-        "label": "C",
-        "text": "Discussion"
-      },
-      {
-        "label": "D",
-        "text": "Introduction"
-      }
-    ],
-    "correctAnswer": "A",
-    "explanation": "The methodology section details the research design, data collection procedures, and analysis methods used in a study.",
-    "skill": "Research Literacy",
-    "difficulty": "easy"
+    "difficulty": 5
   },
   {
     "id": "teas_009",
@@ -231,7 +119,7 @@
     "options": [
       {
         "label": "A",
-        "text": "7.35 – 7.45"
+        "text": "7.5 – 7.8"
       },
       {
         "label": "B",
@@ -243,69 +131,13 @@
       },
       {
         "label": "D",
-        "text": "7.5 – 7.8"
+        "text": "7.35 – 7.45"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "Normal arterial blood pH is 7.35-7.45. Values below 7.35 indicate acidosis; above 7.45 indicate alkalosis.",
     "skill": "Chemistry",
-    "difficulty": "medium"
-  },
-  {
-    "id": "teas_010",
-    "exam": "TEAS",
-    "section": "Math",
-    "question": "A patient's IV is running at 125 mL/hr. How many mL will infuse over 8 hours?",
-    "options": [
-      {
-        "label": "A",
-        "text": "1,000 mL"
-      },
-      {
-        "label": "B",
-        "text": "800 mL"
-      },
-      {
-        "label": "C",
-        "text": "1,250 mL"
-      },
-      {
-        "label": "D",
-        "text": "500 mL"
-      }
-    ],
-    "correctAnswer": "A",
-    "explanation": "125 mL/hr × 8 hr = 1,000 mL.",
-    "skill": "IV Calculations",
-    "difficulty": "easy"
-  },
-  {
-    "id": "teas_011",
-    "exam": "TEAS",
-    "section": "English and Language Usage",
-    "question": "Which word is spelled correctly?",
-    "options": [
-      {
-        "label": "A",
-        "text": "Accommodate"
-      },
-      {
-        "label": "B",
-        "text": "Accomodate"
-      },
-      {
-        "label": "C",
-        "text": "Acommodate"
-      },
-      {
-        "label": "D",
-        "text": "Acomodate"
-      }
-    ],
-    "correctAnswer": "A",
-    "explanation": "'Accommodate' has two c's and two m's. It is one of the most commonly misspelled English words.",
-    "skill": "Spelling",
-    "difficulty": "easy"
+    "difficulty": 5
   },
   {
     "id": "teas_012",
@@ -315,7 +147,7 @@
     "options": [
       {
         "label": "A",
-        "text": "Epinephrine (adrenaline)"
+        "text": "GABA"
       },
       {
         "label": "B",
@@ -327,125 +159,13 @@
       },
       {
         "label": "D",
-        "text": "GABA"
+        "text": "Epinephrine (adrenaline)"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "Epinephrine is released by the adrenal medulla during sympathetic nervous system activation, triggering fight-or-flight responses including increased heart rate and bronchodilation.",
     "skill": "Nervous System",
-    "difficulty": "medium"
-  },
-  {
-    "id": "teas_013",
-    "exam": "TEAS",
-    "section": "Reading",
-    "question": "Which type of text structure is used when an author presents a problem and then offers a solution?",
-    "options": [
-      {
-        "label": "A",
-        "text": "Problem-solution"
-      },
-      {
-        "label": "B",
-        "text": "Cause-effect"
-      },
-      {
-        "label": "C",
-        "text": "Compare-contrast"
-      },
-      {
-        "label": "D",
-        "text": "Chronological order"
-      }
-    ],
-    "correctAnswer": "A",
-    "explanation": "Problem-solution structure presents a problem and then proposes one or more solutions. Signal words include 'as a result,' 'therefore,' and 'one solution is.'",
-    "skill": "Text Structure",
-    "difficulty": "easy"
-  },
-  {
-    "id": "teas_014",
-    "exam": "TEAS",
-    "section": "Math",
-    "question": "What is 15% of 240?",
-    "options": [
-      {
-        "label": "A",
-        "text": "36"
-      },
-      {
-        "label": "B",
-        "text": "24"
-      },
-      {
-        "label": "C",
-        "text": "48"
-      },
-      {
-        "label": "D",
-        "text": "30"
-      }
-    ],
-    "correctAnswer": "A",
-    "explanation": "15% × 240 = 0.15 × 240 = 36.",
-    "skill": "Percentages",
-    "difficulty": "easy"
-  },
-  {
-    "id": "teas_015",
-    "exam": "TEAS",
-    "section": "Science",
-    "question": "Which type of muscle tissue is found in the walls of the digestive tract?",
-    "options": [
-      {
-        "label": "A",
-        "text": "Smooth muscle"
-      },
-      {
-        "label": "B",
-        "text": "Skeletal muscle"
-      },
-      {
-        "label": "C",
-        "text": "Cardiac muscle"
-      },
-      {
-        "label": "D",
-        "text": "Striated voluntary muscle"
-      }
-    ],
-    "correctAnswer": "A",
-    "explanation": "Smooth (visceral) muscle lines the walls of hollow organs including the digestive tract, blood vessels, and bladder. It is involuntary and non-striated.",
-    "skill": "Muscular System",
-    "difficulty": "easy"
-  },
-  {
-    "id": "teas_016",
-    "exam": "TEAS",
-    "section": "English and Language Usage",
-    "question": "Choose the sentence that uses the correct form of the word: 'The nurse gave _____ report to the incoming shift.'",
-    "options": [
-      {
-        "label": "A",
-        "text": "her"
-      },
-      {
-        "label": "B",
-        "text": "she"
-      },
-      {
-        "label": "C",
-        "text": "hers"
-      },
-      {
-        "label": "D",
-        "text": "herself"
-      }
-    ],
-    "correctAnswer": "A",
-    "explanation": "'Her' is the possessive adjective modifying 'report.' 'She' is a subject pronoun, 'hers' is possessive but doesn't precede a noun, and 'herself' is reflexive.",
-    "skill": "Pronouns",
-    "difficulty": "easy"
+    "difficulty": 5
   },
   {
     "id": "teas_017",
@@ -473,7 +193,7 @@
     "correctAnswer": "A",
     "explanation": "Salivary amylase (ptyalin) begins breaking down starch into maltose in the mouth. Pepsin digests protein in the stomach, lipase digests fats, and trypsin digests protein in the small intestine.",
     "skill": "Digestive System",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "teas_018",
@@ -501,35 +221,7 @@
     "correctAnswer": "A",
     "explanation": "2/3 × 1.5 = 2/3 × 3/2 = 6/6 = 1 cup.",
     "skill": "Fractions",
-    "difficulty": "medium"
-  },
-  {
-    "id": "teas_019",
-    "exam": "TEAS",
-    "section": "Science",
-    "question": "Which structure of the heart receives deoxygenated blood from the body?",
-    "options": [
-      {
-        "label": "A",
-        "text": "Right atrium"
-      },
-      {
-        "label": "B",
-        "text": "Left atrium"
-      },
-      {
-        "label": "C",
-        "text": "Right ventricle"
-      },
-      {
-        "label": "D",
-        "text": "Left ventricle"
-      }
-    ],
-    "correctAnswer": "A",
-    "explanation": "Deoxygenated blood returns to the heart via the superior and inferior vena cava into the right atrium, then passes to the right ventricle to be pumped to the lungs.",
-    "skill": "Cardiovascular",
-    "difficulty": "easy"
+    "difficulty": 5
   },
   {
     "id": "teas_020",
@@ -557,35 +249,7 @@
     "correctAnswer": "A",
     "explanation": "This is a fact supported by extensive research from the CDC and WHO. It is a well-established evidence-based practice, not merely an opinion.",
     "skill": "Fact vs Opinion",
-    "difficulty": "medium"
-  },
-  {
-    "id": "teas_021",
-    "exam": "TEAS",
-    "section": "Reading",
-    "question": "According to the passage, what is the primary function of the mitochondria within a cell?",
-    "options": [
-      {
-        "label": "A",
-        "text": "Protein synthesis"
-      },
-      {
-        "label": "B",
-        "text": "Energy production"
-      },
-      {
-        "label": "C",
-        "text": "Waste removal"
-      },
-      {
-        "label": "D",
-        "text": "Genetic material storage"
-      }
-    ],
-    "correctAnswer": "B",
-    "explanation": "The passage explicitly states that mitochondria are responsible for generating most of the cell's supply of adenosine triphosphate (ATP), used as a source of chemical energy.",
-    "skill": "Identifying Main Ideas",
-    "difficulty": "easy"
+    "difficulty": 5
   },
   {
     "id": "teas_022",
@@ -613,7 +277,7 @@
     "correctAnswer": "C",
     "explanation": "The context of the sentence, discussing the widespread presence of smartphones, suggests that 'ubiquitous' means existing or being found everywhere, which is synonymous with 'common'.",
     "skill": "Vocabulary in Context",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "teas_023",
@@ -641,35 +305,7 @@
     "correctAnswer": "C",
     "explanation": "The author uses words like 'serious threat,' 'urgent action,' and 'devastating consequences,' indicating a tone of alarm and concern about the issue.",
     "skill": "Identifying Tone",
-    "difficulty": "medium"
-  },
-  {
-    "id": "teas_024",
-    "exam": "TEAS",
-    "section": "Reading",
-    "question": "Which of the following is an example of a simile?",
-    "options": [
-      {
-        "label": "A",
-        "text": "The classroom was a zoo during the fire drill."
-      },
-      {
-        "label": "B",
-        "text": "Her smile was as bright as the sun."
-      },
-      {
-        "label": "C",
-        "text": "He was a lion in battle."
-      },
-      {
-        "label": "D",
-        "text": "The wind whispered through the trees."
-      }
-    ],
-    "correctAnswer": "B",
-    "explanation": "A simile uses 'like' or 'as' to make a comparison between two unlike things. Option B compares a smile to the sun using 'as'.",
-    "skill": "Understanding Literary Devices",
-    "difficulty": "easy"
+    "difficulty": 5
   },
   {
     "id": "teas_025",
@@ -697,35 +333,7 @@
     "correctAnswer": "C",
     "explanation": "Historical accounts typically aim to present factual information about the past, explaining what happened and why it is important, aligning with the purpose of informing.",
     "skill": "Identifying Author's Purpose",
-    "difficulty": "medium"
-  },
-  {
-    "id": "teas_026",
-    "exam": "TEAS",
-    "section": "Reading",
-    "question": "In the sentence 'Despite the rain, the game continued,' the word 'despite' indicates:",
-    "options": [
-      {
-        "label": "A",
-        "text": "Cause and effect"
-      },
-      {
-        "label": "B",
-        "text": "Contrast or concession"
-      },
-      {
-        "label": "C",
-        "text": "Sequence of events"
-      },
-      {
-        "label": "D",
-        "text": "Addition of information"
-      }
-    ],
-    "correctAnswer": "B",
-    "explanation": "'Despite' is a preposition used to show that something happens even though there is a circumstance that might prevent it, indicating a contrast.",
-    "skill": "Understanding Transition Words",
-    "difficulty": "easy"
+    "difficulty": 5
   },
   {
     "id": "teas_027",
@@ -753,7 +361,7 @@
     "correctAnswer": "C",
     "explanation": "A factual claim is a statement that can be proven true or false through evidence. The height of Mount Everest is a verifiable fact.",
     "skill": "Distinguishing Fact from Opinion",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "teas_028",
@@ -781,35 +389,7 @@
     "correctAnswer": "B",
     "explanation": "The editorial likely advocates for the increased adoption and funding of renewable energy, suggesting a call for greater government investment.",
     "skill": "Identifying Arguments",
-    "difficulty": "hard"
-  },
-  {
-    "id": "teas_029",
-    "exam": "TEAS",
-    "section": "Reading",
-    "question": "The passage describes the process of photosynthesis. What is the role of chlorophyll?",
-    "options": [
-      {
-        "label": "A",
-        "text": "To produce carbon dioxide"
-      },
-      {
-        "label": "B",
-        "text": "To absorb sunlight energy"
-      },
-      {
-        "label": "C",
-        "text": "To release oxygen into the atmosphere"
-      },
-      {
-        "label": "D",
-        "text": "To transport water from the roots"
-      }
-    ],
-    "correctAnswer": "B",
-    "explanation": "Chlorophyll is the pigment in plants that absorbs light energy, which is essential for photosynthesis.",
-    "skill": "Understanding Supporting Details",
-    "difficulty": "easy"
+    "difficulty": 7
   },
   {
     "id": "teas_030",
@@ -837,7 +417,7 @@
     "correctAnswer": "B",
     "explanation": "'A double-edged sword' is an idiom meaning something that has both advantages and disadvantages.",
     "skill": "Vocabulary in Context",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "teas_031",
@@ -865,7 +445,7 @@
     "correctAnswer": "B",
     "explanation": "The anecdote likely shows how neighbors and community members came together to help find the dog, highlighting the theme of community support.",
     "skill": "Identifying Supporting Details",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "teas_032",
@@ -893,7 +473,7 @@
     "correctAnswer": "C",
     "explanation": "Inferring means using clues from the text and prior knowledge to figure out something that is not directly stated. Understanding a character's motive based on their behavior is an inference.",
     "skill": "Making Inferences",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "teas_033",
@@ -921,35 +501,7 @@
     "correctAnswer": "B",
     "explanation": "Typically, urban areas are described as having a faster pace of life compared to the more relaxed pace often associated with rural settings.",
     "skill": "Identifying Comparisons and Contrasts",
-    "difficulty": "medium"
-  },
-  {
-    "id": "teas_034",
-    "exam": "TEAS",
-    "section": "Reading",
-    "question": "What is the primary role of the skeletal system in the human body?",
-    "options": [
-      {
-        "label": "A",
-        "text": "Transporting oxygen"
-      },
-      {
-        "label": "B",
-        "text": "Digesting food"
-      },
-      {
-        "label": "C",
-        "text": "Providing structure and support"
-      },
-      {
-        "label": "D",
-        "text": "Regulating body temperature"
-      }
-    ],
-    "correctAnswer": "C",
-    "explanation": "The primary functions of the skeletal system are to provide a framework for the body, protect organs, and allow for movement.",
-    "skill": "Identifying Main Ideas",
-    "difficulty": "easy"
+    "difficulty": 5
   },
   {
     "id": "teas_035",
@@ -977,7 +529,7 @@
     "correctAnswer": "C",
     "explanation": "While not provided with a sentence, the word 'ephemeral' is a standard vocabulary term meaning lasting for a very short time.",
     "skill": "Vocabulary",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "teas_036",
@@ -1005,7 +557,7 @@
     "correctAnswer": "B",
     "explanation": "Biographies tell the story of a person's life, which is naturally presented in the order events occurred (chronological order). Recipes often use sequential order, but biography is a stronger example of strict chronology.",
     "skill": "Understanding Text Structure",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "teas_037",
@@ -1033,35 +585,7 @@
     "correctAnswer": "B",
     "explanation": "Rhetorical questions are often used to prompt the reader to think about an issue or to implicitly agree with the author's perspective.",
     "skill": "Identifying Author's Techniques",
-    "difficulty": "hard"
-  },
-  {
-    "id": "teas_038",
-    "exam": "TEAS",
-    "section": "Reading",
-    "question": "What is the main idea of the paragraph describing the formation of hurricanes?",
-    "options": [
-      {
-        "label": "A",
-        "text": "Hurricanes only occur in the Atlantic Ocean."
-      },
-      {
-        "label": "B",
-        "text": "Warm ocean water is a key ingredient for hurricane development."
-      },
-      {
-        "label": "C",
-        "text": "Hurricanes have a consistent wind speed."
-      },
-      {
-        "label": "D",
-        "text": "The Coriolis effect prevents hurricane formation."
-      }
-    ],
-    "correctAnswer": "B",
-    "explanation": "The paragraph likely explains that the evaporation of warm ocean water provides the energy needed for hurricanes to form and strengthen.",
-    "skill": "Identifying Main Ideas",
-    "difficulty": "easy"
+    "difficulty": 7
   },
   {
     "id": "teas_039",
@@ -1089,7 +613,7 @@
     "correctAnswer": "C",
     "explanation": "'Painstakingly' means done with great care and thoroughness.",
     "skill": "Vocabulary in Context",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "teas_040",
@@ -1117,35 +641,7 @@
     "correctAnswer": "B",
     "explanation": "Inferring motivation often requires looking at the outcomes of actions or stated intentions within the text. If the actions led to positive societal changes, concern for the people is a likely driver.",
     "skill": "Making Inferences",
-    "difficulty": "hard"
-  },
-  {
-    "id": "teas_041",
-    "exam": "TEAS",
-    "section": "Reading",
-    "question": "What is the primary purpose of a topic sentence in a paragraph?",
-    "options": [
-      {
-        "label": "A",
-        "text": "To introduce the main idea of the paragraph."
-      },
-      {
-        "label": "B",
-        "text": "To provide supporting details and evidence."
-      },
-      {
-        "label": "C",
-        "text": "To summarize all the points discussed."
-      },
-      {
-        "label": "D",
-        "text": "To transition to the next paragraph."
-      }
-    ],
-    "correctAnswer": "A",
-    "explanation": "The topic sentence, usually the first sentence, states the central theme or main point of the paragraph that the rest of the sentences will develop.",
-    "skill": "Identifying Main Idea",
-    "difficulty": "easy"
+    "difficulty": 7
   },
   {
     "id": "teas_042",
@@ -1173,35 +669,7 @@
     "correctAnswer": "D",
     "explanation": "While context clues can be helpful, looking up the word in a reliable source like a dictionary provides the most accurate and definitive understanding.",
     "skill": "Vocabulary in Context",
-    "difficulty": "medium"
-  },
-  {
-    "id": "teas_043",
-    "exam": "TEAS",
-    "section": "Reading",
-    "question": "Which of the following is an example of a supporting detail?",
-    "options": [
-      {
-        "label": "A",
-        "text": "A statement of the author's main argument."
-      },
-      {
-        "label": "B",
-        "text": "A specific fact, example, or statistic that illustrates the main idea."
-      },
-      {
-        "label": "C",
-        "text": "A concluding remark that restates the thesis."
-      },
-      {
-        "label": "D",
-        "text": "A sentence that introduces a new topic."
-      }
-    ],
-    "correctAnswer": "B",
-    "explanation": "Supporting details provide evidence and elaboration for the main idea of a paragraph or text, making the central point clearer and more persuasive.",
-    "skill": "Identifying Supporting Details",
-    "difficulty": "easy"
+    "difficulty": 5
   },
   {
     "id": "teas_044",
@@ -1229,7 +697,7 @@
     "correctAnswer": "A",
     "explanation": "A counterargument acknowledges opposing viewpoints before refuting them, which strengthens the author's own position by demonstrating a thorough understanding of the issue.",
     "skill": "Understanding Argument Structure",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "teas_045",
@@ -1257,35 +725,7 @@
     "correctAnswer": "B",
     "explanation": "The phrase 'forgotten sentinel' suggests something that was once watchful or important but is now neglected and isolated, implying the house is rundown and unused.",
     "skill": "Identifying Implied Meaning",
-    "difficulty": "hard"
-  },
-  {
-    "id": "teas_046",
-    "exam": "TEAS",
-    "section": "Reading",
-    "question": "Which of the following is a cause-and-effect relationship?",
-    "options": [
-      {
-        "label": "A",
-        "text": "A student studied diligently for the exam and received a high grade."
-      },
-      {
-        "label": "B",
-        "text": "The sky is blue, and the grass is green."
-      },
-      {
-        "label": "C",
-        "text": "She enjoys reading and writing stories."
-      },
-      {
-        "label": "D",
-        "text": "The town has a library and a park."
-      }
-    ],
-    "correctAnswer": "A",
-    "explanation": "This option shows that one event (studying diligently) directly led to another event (receiving a high grade).",
-    "skill": "Identifying Cause and Effect",
-    "difficulty": "easy"
+    "difficulty": 7
   },
   {
     "id": "teas_047",
@@ -1295,7 +735,7 @@
     "options": [
       {
         "label": "A",
-        "text": "The topic is what the text is about; the main idea is the author's primary point about that topic."
+        "text": "The topic is a single word, while the main idea is a full sentence."
       },
       {
         "label": "B",
@@ -1307,41 +747,13 @@
       },
       {
         "label": "D",
-        "text": "The topic is a single word, while the main idea is a full sentence."
+        "text": "The topic is what the text is about; the main idea is the author's primary point about that topic."
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "The topic is the general subject matter. The main idea is the specific message or argument the author wants to convey about that topic.",
     "skill": "Distinguishing Topic and Main Idea",
-    "difficulty": "medium"
-  },
-  {
-    "id": "teas_048",
-    "exam": "TEAS",
-    "section": "Reading",
-    "question": "What is the most likely purpose of this sentence: 'The sun began to set, casting long shadows across the valley.'?",
-    "options": [
-      {
-        "label": "A",
-        "text": "To provide descriptive imagery and set a mood."
-      },
-      {
-        "label": "B",
-        "text": "To explain the scientific process of sunset."
-      },
-      {
-        "label": "C",
-        "text": "To argue for the benefits of daylight savings."
-      },
-      {
-        "label": "D",
-        "text": "To list various types of shadows."
-      }
-    ],
-    "correctAnswer": "A",
-    "explanation": "This sentence uses sensory details (sight of sunset, shadows) to create a vivid picture and evoke a feeling or atmosphere, likely peaceful or somber.",
-    "skill": "Identifying Author's Purpose",
-    "difficulty": "easy"
+    "difficulty": 5
   },
   {
     "id": "teas_049",
@@ -1369,7 +781,7 @@
     "correctAnswer": "A",
     "explanation": "Transition words act as bridges, guiding the reader smoothly from one thought to the next and clarifying how those thoughts relate (e.g., contrast, cause/effect, addition).",
     "skill": "Understanding Transitions",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "teas_050",
@@ -1379,7 +791,7 @@
     "options": [
       {
         "label": "A",
-        "text": "Contrast"
+        "text": "Addition"
       },
       {
         "label": "B",
@@ -1391,13 +803,13 @@
       },
       {
         "label": "D",
-        "text": "Addition"
+        "text": "Contrast"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "The word 'despite' indicates a contrast between the expectation (rain might stop the festival) and the reality (the festival continued).",
     "skill": "Identifying Relationships Between Ideas",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "teas_051",
@@ -1425,35 +837,7 @@
     "correctAnswer": "A",
     "explanation": "A metaphor states that one thing *is* another, implying a comparison (e.g., 'Her smile is sunshine'). A simile uses 'like' or 'as'.",
     "skill": "Understanding Figurative Language",
-    "difficulty": "medium"
-  },
-  {
-    "id": "teas_052",
-    "exam": "TEAS",
-    "section": "Reading",
-    "question": "What is the most likely inference to draw from the statement: 'The shelves in the pantry were nearly bare, with only a few cans of beans and a bag of flour remaining.'?",
-    "options": [
-      {
-        "label": "A",
-        "text": "The family has plenty of food."
-      },
-      {
-        "label": "B",
-        "text": "The family is experiencing a hardship or scarcity of food."
-      },
-      {
-        "label": "C",
-        "text": "The family just went grocery shopping."
-      },
-      {
-        "label": "D",
-        "text": "The pantry is used for storing decorative items."
-      }
-    ],
-    "correctAnswer": "B",
-    "explanation": "The description 'nearly bare' and the limited items suggest that the available food supply is very low, implying potential difficulty.",
-    "skill": "Making Inferences",
-    "difficulty": "easy"
+    "difficulty": 5
   },
   {
     "id": "teas_053",
@@ -1481,35 +865,7 @@
     "correctAnswer": "C",
     "explanation": "This title specifically highlights the transformation process, which is central to the butterfly's life cycle.",
     "skill": "Determining Best Title",
-    "difficulty": "medium"
-  },
-  {
-    "id": "teas_054",
-    "exam": "TEAS",
-    "section": "Reading",
-    "question": "What is the primary function of a thesis statement in an essay?",
-    "options": [
-      {
-        "label": "A",
-        "text": "To present the main argument or point of the entire essay."
-      },
-      {
-        "label": "B",
-        "text": "To introduce a new topic in the conclusion."
-      },
-      {
-        "label": "C",
-        "text": "To provide background information only."
-      },
-      {
-        "label": "D",
-        "text": "To list all the sources used in the essay."
-      }
-    ],
-    "correctAnswer": "A",
-    "explanation": "The thesis statement, typically found at the end of the introduction, clearly states the essay's central claim or purpose that the body paragraphs will support.",
-    "skill": "Identifying Thesis Statement",
-    "difficulty": "easy"
+    "difficulty": 5
   },
   {
     "id": "teas_055",
@@ -1537,35 +893,7 @@
     "correctAnswer": "A",
     "explanation": "This is a metaphor because it directly compares her voice to music without using 'like' or 'as', implying it was pleasant and beautiful to him.",
     "skill": "Understanding Figurative Language",
-    "difficulty": "medium"
-  },
-  {
-    "id": "teas_056",
-    "exam": "TEAS",
-    "section": "Reading",
-    "question": "What does determining the author's tone involve?",
-    "options": [
-      {
-        "label": "A",
-        "text": "Identifying the author's attitude toward the subject matter."
-      },
-      {
-        "label": "B",
-        "text": "Summarizing the main points of the text."
-      },
-      {
-        "label": "C",
-        "text": "Finding factual errors in the writing."
-      },
-      {
-        "label": "D",
-        "text": "Predicting what will happen next in the story."
-      }
-    ],
-    "correctAnswer": "A",
-    "explanation": "Tone refers to the author's feelings or attitude (e.g., serious, humorous, critical, objective) conveyed through their word choice and style.",
-    "skill": "Identifying Author's Tone",
-    "difficulty": "easy"
+    "difficulty": 5
   },
   {
     "id": "teas_057",
@@ -1593,7 +921,7 @@
     "correctAnswer": "B",
     "explanation": "Impatience is often expressed physically through actions like foot tapping, suggesting the character is eager for something to happen or is frustrated.",
     "skill": "Making Inferences",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "teas_058",
@@ -1621,7 +949,7 @@
     "correctAnswer": "A",
     "explanation": "This structure is designed to highlight similarities and differences between two or more subjects, which is exactly what comparing and contrasting requires.",
     "skill": "Identifying Text Structure",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "teas_059",
@@ -1631,7 +959,7 @@
     "options": [
       {
         "label": "A",
-        "text": "Found everywhere"
+        "text": "Very old"
       },
       {
         "label": "B",
@@ -1643,41 +971,13 @@
       },
       {
         "label": "D",
-        "text": "Very old"
+        "text": "Found everywhere"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "Ubiquitous describes something that seems to be present or found everywhere at the same time.",
     "skill": "Vocabulary in Context",
-    "difficulty": "hard"
-  },
-  {
-    "id": "teas_060",
-    "exam": "TEAS",
-    "section": "Reading",
-    "question": "What is the difference between factual statements and opinions?",
-    "options": [
-      {
-        "label": "A",
-        "text": "Factual statements can be proven true or false; opinions are beliefs or judgments."
-      },
-      {
-        "label": "B",
-        "text": "Factual statements are always positive, while opinions can be negative."
-      },
-      {
-        "label": "C",
-        "text": "Opinions are always supported by evidence, while facts are not."
-      },
-      {
-        "label": "D",
-        "text": "Factual statements are subjective, while opinions are objective."
-      }
-    ],
-    "correctAnswer": "A",
-    "explanation": "Facts are verifiable pieces of information. Opinions are personal views, feelings, or interpretations that cannot be definitively proven.",
-    "skill": "Distinguishing Fact from Opinion",
-    "difficulty": "easy"
+    "difficulty": 7
   },
   {
     "id": "teas_061",
@@ -1705,7 +1005,7 @@
     "correctAnswer": "C",
     "explanation": "To pose a threat means to present risk or danger.",
     "skill": "Identifying Word Meaning",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "teas_062",
@@ -1733,7 +1033,7 @@
     "correctAnswer": "A",
     "explanation": "Exposition is the initial part of a story that provides the necessary background information for the reader to understand the events that follow.",
     "skill": "Understanding Narrative Elements",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "teas_063",
@@ -1761,35 +1061,7 @@
     "correctAnswer": "C",
     "explanation": "Words like 'ancient,' 'towering shelves,' 'dusty tomes,' and 'sanctuary' suggest a place of quiet learning, history, and respect.",
     "skill": "Identifying Mood/Atmosphere",
-    "difficulty": "hard"
-  },
-  {
-    "id": "teas_064",
-    "exam": "TEAS",
-    "section": "Reading",
-    "question": "What is the main purpose of a concluding paragraph?",
-    "options": [
-      {
-        "label": "A",
-        "text": "To summarize the main points and restate the thesis."
-      },
-      {
-        "label": "B",
-        "text": "To introduce new arguments or evidence."
-      },
-      {
-        "label": "C",
-        "text": "To add more supporting details."
-      },
-      {
-        "label": "D",
-        "text": "To ask the reader questions."
-      }
-    ],
-    "correctAnswer": "A",
-    "explanation": "The conclusion wraps up the essay by briefly reiterating the key arguments and reinforcing the central thesis, providing a sense of closure.",
-    "skill": "Understanding Text Structure",
-    "difficulty": "easy"
+    "difficulty": 7
   },
   {
     "id": "teas_065",
@@ -1817,35 +1089,7 @@
     "correctAnswer": "A",
     "explanation": "This is a simile because it makes a comparison between two unlike things (a person's strength and an ox's strength) using the word 'as'.",
     "skill": "Understanding Figurative Language",
-    "difficulty": "medium"
-  },
-  {
-    "id": "teas_066",
-    "exam": "TEAS",
-    "section": "Reading",
-    "question": "Which of the following is the primary purpose of a transition word in a sentence?",
-    "options": [
-      {
-        "label": "A",
-        "text": "To introduce a new topic"
-      },
-      {
-        "label": "B",
-        "text": "To indicate a relationship between ideas"
-      },
-      {
-        "label": "C",
-        "text": "To summarize previous information"
-      },
-      {
-        "label": "D",
-        "text": "To provide a definition"
-      }
-    ],
-    "correctAnswer": "B",
-    "explanation": "Transition words like 'however,' 'therefore,' and 'similarly' signal how one idea connects to another, showing contrast, cause-and-effect, or comparison.",
-    "skill": "Identifying Purpose",
-    "difficulty": "easy"
+    "difficulty": 5
   },
   {
     "id": "teas_067",
@@ -1873,35 +1117,7 @@
     "correctAnswer": "C",
     "explanation": "'Despite' is used to show that something happened even though there was an obstacle or opposing condition (the heavy rain). This indicates a contrast.",
     "skill": "Understanding Vocabulary in Context",
-    "difficulty": "medium"
-  },
-  {
-    "id": "teas_068",
-    "exam": "TEAS",
-    "section": "Reading",
-    "question": "What is the main idea of a paragraph?",
-    "options": [
-      {
-        "label": "A",
-        "text": "The most detailed sentence in the paragraph"
-      },
-      {
-        "label": "B",
-        "text": "The concluding sentence of the paragraph"
-      },
-      {
-        "label": "C",
-        "text": "The topic sentence or the central point the author is trying to convey"
-      },
-      {
-        "label": "D",
-        "text": "A list of supporting details"
-      }
-    ],
-    "correctAnswer": "C",
-    "explanation": "The main idea is the central message or point of the paragraph, often stated in a topic sentence, around which all other sentences revolve.",
-    "skill": "Identifying Main Idea",
-    "difficulty": "easy"
+    "difficulty": 5
   },
   {
     "id": "teas_069",
@@ -1929,35 +1145,7 @@
     "correctAnswer": "B",
     "explanation": "In this context, 'testament' signifies that the ruins provide strong evidence or proof of the builders' skill and cleverness.",
     "skill": "Understanding Vocabulary in Context",
-    "difficulty": "medium"
-  },
-  {
-    "id": "teas_070",
-    "exam": "TEAS",
-    "section": "Reading",
-    "question": "Which of the following is an example of a supporting detail?",
-    "options": [
-      {
-        "label": "A",
-        "text": "The topic sentence of a paragraph"
-      },
-      {
-        "label": "B",
-        "text": "A sentence that elaborates on or provides evidence for the main idea"
-      },
-      {
-        "label": "C",
-        "text": "A concluding remark that summarizes the entire text"
-      },
-      {
-        "label": "D",
-        "text": "A title that introduces the subject"
-      }
-    ],
-    "correctAnswer": "B",
-    "explanation": "Supporting details are facts, examples, reasons, or descriptions that explain, prove, or elaborate on the main idea of a paragraph or text.",
-    "skill": "Identifying Supporting Details",
-    "difficulty": "easy"
+    "difficulty": 5
   },
   {
     "id": "teas_071",
@@ -1985,7 +1173,7 @@
     "correctAnswer": "C",
     "explanation": "Describing a process like photosynthesis typically involves explaining steps in a chronological or logical order, which aligns with a sequence or process text structure.",
     "skill": "Identifying Text Structure",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "teas_072",
@@ -2013,7 +1201,7 @@
     "correctAnswer": "B",
     "explanation": "'Rigorously' means in a very thorough, strict, or severe way. In the context of training, it implies a high level of intensity and dedication.",
     "skill": "Understanding Vocabulary in Context",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "teas_073",
@@ -2041,7 +1229,7 @@
     "correctAnswer": "B",
     "explanation": "Facts are objective statements that can be verified. In persuasive writing, they serve as concrete evidence to strengthen the author's claims and convince the reader.",
     "skill": "Analyzing Author's Purpose",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "teas_074",
@@ -2051,7 +1239,7 @@
     "options": [
       {
         "label": "A",
-        "text": "A simile"
+        "text": "Hyperbole"
       },
       {
         "label": "B",
@@ -2063,41 +1251,13 @@
       },
       {
         "label": "D",
-        "text": "Hyperbole"
+        "text": "A simile"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "The phrase 'like a guiding hand' uses the word 'like' to compare the lighthouse's beam to a guiding hand, which is the definition of a simile.",
     "skill": "Identifying Literary Devices",
-    "difficulty": "medium"
-  },
-  {
-    "id": "teas_075",
-    "exam": "TEAS",
-    "section": "Reading",
-    "question": "What information can typically be found in the introduction of an essay?",
-    "options": [
-      {
-        "label": "A",
-        "text": "Detailed evidence and analysis"
-      },
-      {
-        "label": "B",
-        "text": "A thesis statement and background information"
-      },
-      {
-        "label": "C",
-        "text": "A summary of the main points"
-      },
-      {
-        "label": "D",
-        "text": "Concluding remarks"
-      }
-    ],
-    "correctAnswer": "B",
-    "explanation": "The introduction of an essay typically presents the topic, provides necessary background, and states the main argument or thesis of the essay.",
-    "skill": "Understanding Text Structure",
-    "difficulty": "easy"
+    "difficulty": 5
   },
   {
     "id": "teas_076",
@@ -2125,7 +1285,7 @@
     "correctAnswer": "B",
     "explanation": "'Ubiquitous' describes something that seems to be present or found everywhere.",
     "skill": "Understanding Vocabulary",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "teas_077",
@@ -2153,35 +1313,7 @@
     "correctAnswer": "C",
     "explanation": "Cause and effect structures explain how one thing (the cause) makes another thing happen (the effect).",
     "skill": "Identifying Text Structure",
-    "difficulty": "medium"
-  },
-  {
-    "id": "teas_078",
-    "exam": "TEAS",
-    "section": "Reading",
-    "question": "What is the purpose of a conclusion in an argumentative essay?",
-    "options": [
-      {
-        "label": "A",
-        "text": "To introduce new evidence"
-      },
-      {
-        "label": "B",
-        "text": "To restate the thesis and summarize the main points"
-      },
-      {
-        "label": "C",
-        "text": "To provide detailed examples"
-      },
-      {
-        "label": "D",
-        "text": "To question the validity of the argument"
-      }
-    ],
-    "correctAnswer": "B",
-    "explanation": "The conclusion wraps up the essay by reminding the reader of the main argument (thesis) and briefly summarizing the key points that supported it.",
-    "skill": "Analyzing Author's Purpose",
-    "difficulty": "easy"
+    "difficulty": 5
   },
   {
     "id": "teas_079",
@@ -2191,7 +1323,7 @@
     "options": [
       {
         "label": "A",
-        "text": "Having a strong smell, usually pleasant"
+        "text": "Making a loud noise"
       },
       {
         "label": "B",
@@ -2203,13 +1335,13 @@
       },
       {
         "label": "D",
-        "text": "Making a loud noise"
+        "text": "Having a strong smell, usually pleasant"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "'Aromatic' refers to something that has a distinct and often pleasant smell.",
     "skill": "Understanding Vocabulary in Context",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "teas_080",
@@ -2237,35 +1369,7 @@
     "correctAnswer": "B",
     "explanation": "An inference is a conclusion drawn from evidence and reasoning. It's what you figure out or understand from what is written, even if it's not directly said.",
     "skill": "Making Inferences",
-    "difficulty": "medium"
-  },
-  {
-    "id": "teas_081",
-    "exam": "TEAS",
-    "section": "Reading",
-    "question": "The sentence 'Her smile was as bright as the sun' is an example of:",
-    "options": [
-      {
-        "label": "A",
-        "text": "A metaphor"
-      },
-      {
-        "label": "B",
-        "text": "A simile"
-      },
-      {
-        "label": "C",
-        "text": "Personification"
-      },
-      {
-        "label": "D",
-        "text": "Alliteration"
-      }
-    ],
-    "correctAnswer": "B",
-    "explanation": "This is a simile because it uses the word 'as' to make a comparison between her smile and the sun.",
-    "skill": "Identifying Literary Devices",
-    "difficulty": "easy"
+    "difficulty": 5
   },
   {
     "id": "teas_082",
@@ -2293,7 +1397,7 @@
     "correctAnswer": "B",
     "explanation": "The main idea is the central message or point the author wants to convey. Asking what the author is trying to say overall helps pinpoint this core message.",
     "skill": "Identifying Main Idea",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "teas_083",
@@ -2321,7 +1425,7 @@
     "correctAnswer": "B",
     "explanation": "The word 'meticulously' suggests careful and thorough examination, implying the search is for small, easily overlooked, or 'subtle' clues.",
     "skill": "Understanding Vocabulary in Context",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "teas_084",
@@ -2349,7 +1453,7 @@
     "correctAnswer": "B",
     "explanation": "Tone refers to the author's attitude, which is conveyed through word choice, sentence structure, and other stylistic elements.",
     "skill": "Analyzing Author's Purpose",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "teas_085",
@@ -2377,35 +1481,7 @@
     "correctAnswer": "A",
     "explanation": "Discussing benefits of one thing and risks of another inherently involves comparing and contrasting these two states (active vs. sedentary).",
     "skill": "Identifying Text Structure",
-    "difficulty": "medium"
-  },
-  {
-    "id": "teas_086",
-    "exam": "TEAS",
-    "section": "Reading",
-    "question": "What does the prefix 'pre-' typically indicate?",
-    "options": [
-      {
-        "label": "A",
-        "text": "After"
-      },
-      {
-        "label": "B",
-        "text": "Before"
-      },
-      {
-        "label": "C",
-        "text": "Opposite"
-      },
-      {
-        "label": "D",
-        "text": "Within"
-      }
-    ],
-    "correctAnswer": "B",
-    "explanation": "The prefix 'pre-' means 'before,' as seen in words like 'preview' (to see before) or 'prepare' (to make ready before).",
-    "skill": "Understanding Word Parts",
-    "difficulty": "easy"
+    "difficulty": 5
   },
   {
     "id": "teas_087",
@@ -2433,7 +1509,7 @@
     "correctAnswer": "C",
     "explanation": "'Meandering' describes something that follows a winding or twisting course, like a river or a path.",
     "skill": "Understanding Vocabulary in Context",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "teas_088",
@@ -2461,91 +1537,7 @@
     "correctAnswer": "A",
     "explanation": "Bias occurs when an author presents a prejudiced view or unfairly favors one side, often through selective information and emotionally charged language.",
     "skill": "Identifying Bias",
-    "difficulty": "hard"
-  },
-  {
-    "id": "teas_089",
-    "exam": "TEAS",
-    "section": "Reading",
-    "question": "What is the purpose of a topic sentence?",
-    "options": [
-      {
-        "label": "A",
-        "text": "To provide specific examples"
-      },
-      {
-        "label": "B",
-        "text": "To introduce a new paragraph"
-      },
-      {
-        "label": "C",
-        "text": "To state the main idea of the paragraph"
-      },
-      {
-        "label": "D",
-        "text": "To summarize the entire text"
-      }
-    ],
-    "correctAnswer": "C",
-    "explanation": "The topic sentence usually appears at the beginning of a paragraph and clearly states the main point or subject that the rest of the paragraph will discuss.",
-    "skill": "Identifying Main Idea",
-    "difficulty": "easy"
-  },
-  {
-    "id": "teas_090",
-    "exam": "TEAS",
-    "section": "Reading",
-    "question": "In the sentence, 'The committee made a unanimous decision,' the word 'unanimous' means:",
-    "options": [
-      {
-        "label": "A",
-        "text": "Divided"
-      },
-      {
-        "label": "B",
-        "text": "Disagreed upon"
-      },
-      {
-        "label": "C",
-        "text": "Agreed upon by all"
-      },
-      {
-        "label": "D",
-        "text": "Delayed"
-      }
-    ],
-    "correctAnswer": "C",
-    "explanation": "'Unanimous' indicates that everyone involved is in complete agreement.",
-    "skill": "Understanding Vocabulary",
-    "difficulty": "easy"
-  },
-  {
-    "id": "teas_091",
-    "exam": "TEAS",
-    "section": "Science",
-    "question": "What is the primary function of red blood cells?",
-    "options": [
-      {
-        "label": "A",
-        "text": "Fighting infection"
-      },
-      {
-        "label": "B",
-        "text": "Transporting oxygen"
-      },
-      {
-        "label": "C",
-        "text": "Clotting blood"
-      },
-      {
-        "label": "D",
-        "text": "Producing antibodies"
-      }
-    ],
-    "correctAnswer": "B",
-    "explanation": "Red blood cells contain hemoglobin, which binds to oxygen and transports it from the lungs to the body's tissues.",
-    "skill": "Anatomy and Physiology",
-    "difficulty": "easy"
+    "difficulty": 7
   },
   {
     "id": "teas_092",
@@ -2573,35 +1565,7 @@
     "correctAnswer": "C",
     "explanation": "Mitochondria are often referred to as the 'powerhouses' of the cell because they generate ATP through cellular respiration.",
     "skill": "Cell Biology",
-    "difficulty": "medium"
-  },
-  {
-    "id": "teas_093",
-    "exam": "TEAS",
-    "section": "Science",
-    "question": "What is the chemical symbol for sodium?",
-    "options": [
-      {
-        "label": "A",
-        "text": "So"
-      },
-      {
-        "label": "B",
-        "text": "Na"
-      },
-      {
-        "label": "C",
-        "text": "Sd"
-      },
-      {
-        "label": "D",
-        "text": "Sod"
-      }
-    ],
-    "correctAnswer": "B",
-    "explanation": "The chemical symbol for sodium is 'Na', derived from its Latin name, natrium.",
-    "skill": "Chemistry",
-    "difficulty": "easy"
+    "difficulty": 5
   },
   {
     "id": "teas_094",
@@ -2629,35 +1593,7 @@
     "correctAnswer": "C",
     "explanation": "Covalent bonds are formed when atoms share electrons to achieve a stable electron configuration.",
     "skill": "Chemistry",
-    "difficulty": "medium"
-  },
-  {
-    "id": "teas_095",
-    "exam": "TEAS",
-    "section": "Science",
-    "question": "The process by which plants make their own food using sunlight, water, and carbon dioxide is called:",
-    "options": [
-      {
-        "label": "A",
-        "text": "Respiration"
-      },
-      {
-        "label": "B",
-        "text": "Transpiration"
-      },
-      {
-        "label": "C",
-        "text": "Fermentation"
-      },
-      {
-        "label": "D",
-        "text": "Photosynthesis"
-      }
-    ],
-    "correctAnswer": "D",
-    "explanation": "Photosynthesis is the process used by plants and other organisms to convert light energy into chemical energy, through a process that uses sunlight, water and carbon dioxide.",
-    "skill": "Biology",
-    "difficulty": "easy"
+    "difficulty": 5
   },
   {
     "id": "teas_096",
@@ -2685,7 +1621,7 @@
     "correctAnswer": "C",
     "explanation": "The cerebrum is the largest part of the brain and is responsible for higher-level functions like thought, memory, and voluntary movement.",
     "skill": "Anatomy and Physiology",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "teas_097",
@@ -2713,91 +1649,7 @@
     "correctAnswer": "D",
     "explanation": "Bone tissue is a type of connective tissue that forms the skeleton, providing support and structure to the body.",
     "skill": "Anatomy and Physiology",
-    "difficulty": "medium"
-  },
-  {
-    "id": "teas_098",
-    "exam": "TEAS",
-    "section": "Science",
-    "question": "What is the pH of a neutral solution?",
-    "options": [
-      {
-        "label": "A",
-        "text": "Less than 7"
-      },
-      {
-        "label": "B",
-        "text": "Exactly 7"
-      },
-      {
-        "label": "C",
-        "text": "Greater than 7"
-      },
-      {
-        "label": "D",
-        "text": "Variable, depending on the substance"
-      }
-    ],
-    "correctAnswer": "B",
-    "explanation": "A pH of 7 is considered neutral. Solutions with a pH less than 7 are acidic, and solutions with a pH greater than 7 are alkaline (basic).",
-    "skill": "Chemistry",
-    "difficulty": "easy"
-  },
-  {
-    "id": "teas_099",
-    "exam": "TEAS",
-    "section": "Science",
-    "question": "Which gas do humans exhale during respiration?",
-    "options": [
-      {
-        "label": "A",
-        "text": "Oxygen"
-      },
-      {
-        "label": "B",
-        "text": "Nitrogen"
-      },
-      {
-        "label": "C",
-        "text": "Carbon dioxide"
-      },
-      {
-        "label": "D",
-        "text": "Hydrogen"
-      }
-    ],
-    "correctAnswer": "C",
-    "explanation": "During cellular respiration, glucose is broken down in the presence of oxygen to produce ATP, releasing carbon dioxide and water as byproducts. Carbon dioxide is then exhaled.",
-    "skill": "Biology",
-    "difficulty": "easy"
-  },
-  {
-    "id": "teas_100",
-    "exam": "TEAS",
-    "section": "Science",
-    "question": "What are the basic units of heredity called?",
-    "options": [
-      {
-        "label": "A",
-        "text": "Cells"
-      },
-      {
-        "label": "B",
-        "text": "Proteins"
-      },
-      {
-        "label": "C",
-        "text": "Genes"
-      },
-      {
-        "label": "D",
-        "text": "Chromosomes"
-      }
-    ],
-    "correctAnswer": "C",
-    "explanation": "Genes are segments of DNA that carry the genetic instructions for the development and function of all known living organisms.",
-    "skill": "Genetics",
-    "difficulty": "easy"
+    "difficulty": 5
   },
   {
     "id": "teas_101",
@@ -2825,91 +1677,7 @@
     "correctAnswer": "A",
     "explanation": "Newton's First Law of Motion, also known as the law of inertia, describes the tendency of an object to resist changes in its state of motion.",
     "skill": "Physics",
-    "difficulty": "medium"
-  },
-  {
-    "id": "teas_102",
-    "exam": "TEAS",
-    "section": "Science",
-    "question": "What is the process of a liquid turning into a gas called?",
-    "options": [
-      {
-        "label": "A",
-        "text": "Condensation"
-      },
-      {
-        "label": "B",
-        "text": "Freezing"
-      },
-      {
-        "label": "C",
-        "text": "Evaporation"
-      },
-      {
-        "label": "D",
-        "text": "Melting"
-      }
-    ],
-    "correctAnswer": "C",
-    "explanation": "Evaporation is the process by which a substance in a liquid state changes to a gaseous state due to an increase in temperature and/or pressure.",
-    "skill": "Physics",
-    "difficulty": "easy"
-  },
-  {
-    "id": "teas_103",
-    "exam": "TEAS",
-    "section": "Science",
-    "question": "Which part of the cell contains the genetic material (DNA)?",
-    "options": [
-      {
-        "label": "A",
-        "text": "Cytoplasm"
-      },
-      {
-        "label": "B",
-        "text": "Nucleus"
-      },
-      {
-        "label": "C",
-        "text": "Cell membrane"
-      },
-      {
-        "label": "D",
-        "text": "Ribosome"
-      }
-    ],
-    "correctAnswer": "B",
-    "explanation": "In eukaryotic cells, the nucleus is a membrane-bound organelle that contains the cell's chromosomes, which are made of DNA.",
-    "skill": "Cell Biology",
-    "difficulty": "easy"
-  },
-  {
-    "id": "teas_104",
-    "exam": "TEAS",
-    "section": "Science",
-    "question": "What is the chemical formula for water?",
-    "options": [
-      {
-        "label": "A",
-        "text": "HO2"
-      },
-      {
-        "label": "B",
-        "text": "H2O"
-      },
-      {
-        "label": "C",
-        "text": "O2H"
-      },
-      {
-        "label": "D",
-        "text": "CO2"
-      }
-    ],
-    "correctAnswer": "B",
-    "explanation": "The chemical formula for water is H2O, indicating that each molecule consists of two hydrogen atoms and one oxygen atom.",
-    "skill": "Chemistry",
-    "difficulty": "easy"
+    "difficulty": 5
   },
   {
     "id": "teas_105",
@@ -2937,7 +1705,7 @@
     "correctAnswer": "C",
     "explanation": "The pulmonary veins carry oxygenated blood from the lungs to the left atrium of the heart.",
     "skill": "Anatomy and Physiology",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "teas_106",
@@ -2951,7 +1719,7 @@
       },
       {
         "label": "B",
-        "text": "Evolution"
+        "text": "Mutation"
       },
       {
         "label": "C",
@@ -2959,41 +1727,13 @@
       },
       {
         "label": "D",
-        "text": "Mutation"
+        "text": "Evolution"
       }
     ],
-    "correctAnswer": "B",
+    "correctAnswer": "D",
     "explanation": "Evolution is the process by which different kinds of living organisms are thought to have developed and diversified from earlier forms during the history of the earth.",
     "skill": "Biology",
-    "difficulty": "medium"
-  },
-  {
-    "id": "teas_107",
-    "exam": "TEAS",
-    "section": "Science",
-    "question": "What is the force that opposes motion between two surfaces in contact?",
-    "options": [
-      {
-        "label": "A",
-        "text": "Gravity"
-      },
-      {
-        "label": "B",
-        "text": "Tension"
-      },
-      {
-        "label": "C",
-        "text": "Friction"
-      },
-      {
-        "label": "D",
-        "text": "Buoyancy"
-      }
-    ],
-    "correctAnswer": "C",
-    "explanation": "Friction is a force that opposes the direct contact and movement between two surfaces. It converts kinetic energy into thermal energy.",
-    "skill": "Physics",
-    "difficulty": "easy"
+    "difficulty": 5
   },
   {
     "id": "teas_108",
@@ -3021,7 +1761,7 @@
     "correctAnswer": "D",
     "explanation": "Amino acids, the building blocks of proteins, all contain nitrogen. Carbon, hydrogen, and oxygen are also essential, but nitrogen is unique to amino acids.",
     "skill": "Chemistry/Biology",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "teas_109",
@@ -3049,63 +1789,7 @@
     "correctAnswer": "C",
     "explanation": "The alveoli are tiny air sacs in the lungs where the exchange of oxygen and carbon dioxide takes place between the air and the blood.",
     "skill": "Anatomy and Physiology",
-    "difficulty": "medium"
-  },
-  {
-    "id": "teas_110",
-    "exam": "TEAS",
-    "section": "Science",
-    "question": "What is the smallest unit of matter that retains the properties of an element?",
-    "options": [
-      {
-        "label": "A",
-        "text": "Molecule"
-      },
-      {
-        "label": "B",
-        "text": "Compound"
-      },
-      {
-        "label": "C",
-        "text": "Atom"
-      },
-      {
-        "label": "D",
-        "text": "Ion"
-      }
-    ],
-    "correctAnswer": "C",
-    "explanation": "An atom is the basic unit of a chemical element. When an element forms a chemical compound, it is usually by gaining or losing or sharing electrons to form chemical bonds.",
-    "skill": "Chemistry",
-    "difficulty": "easy"
-  },
-  {
-    "id": "teas_111",
-    "exam": "TEAS",
-    "section": "Science",
-    "question": "Which system is responsible for breaking down food into nutrients that can be absorbed by the body?",
-    "options": [
-      {
-        "label": "A",
-        "text": "Respiratory system"
-      },
-      {
-        "label": "B",
-        "text": "Circulatory system"
-      },
-      {
-        "label": "C",
-        "text": "Nervous system"
-      },
-      {
-        "label": "D",
-        "text": "Digestive system"
-      }
-    ],
-    "correctAnswer": "D",
-    "explanation": "The digestive system breaks down food mechanically and chemically into smaller molecules that can be absorbed into the bloodstream.",
-    "skill": "Anatomy and Physiology",
-    "difficulty": "easy"
+    "difficulty": 5
   },
   {
     "id": "teas_112",
@@ -3133,7 +1817,7 @@
     "correctAnswer": "B",
     "explanation": "A catalyst speeds up a chemical reaction. Enzymes are biological catalysts.",
     "skill": "Chemistry",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "teas_113",
@@ -3161,35 +1845,7 @@
     "correctAnswer": "C",
     "explanation": "Autotrophs are organisms that can produce their own food, using light, water, carbon dioxide, or other chemicals.",
     "skill": "Biology",
-    "difficulty": "medium"
-  },
-  {
-    "id": "teas_114",
-    "exam": "TEAS",
-    "section": "Science",
-    "question": "What is the primary function of white blood cells?",
-    "options": [
-      {
-        "label": "A",
-        "text": "Transporting oxygen"
-      },
-      {
-        "label": "B",
-        "text": "Clotting blood"
-      },
-      {
-        "label": "C",
-        "text": "Fighting infection"
-      },
-      {
-        "label": "D",
-        "text": "Carrying nutrients"
-      }
-    ],
-    "correctAnswer": "C",
-    "explanation": "White blood cells are part of the immune system and defend the body against infection and disease.",
-    "skill": "Anatomy and Physiology",
-    "difficulty": "easy"
+    "difficulty": 5
   },
   {
     "id": "teas_115",
@@ -3217,35 +1873,7 @@
     "correctAnswer": "B",
     "explanation": "Smooth muscle is an involuntary muscle tissue found in the walls of hollow organs, responsible for slow, sustained contractions.",
     "skill": "Anatomy and Physiology",
-    "difficulty": "hard"
-  },
-  {
-    "id": "teas_116",
-    "exam": "TEAS",
-    "section": "Math",
-    "question": "What is the value of 7 + (3 * 5) - 2?",
-    "options": [
-      {
-        "label": "A",
-        "text": "20"
-      },
-      {
-        "label": "B",
-        "text": "18"
-      },
-      {
-        "label": "C",
-        "text": "19"
-      },
-      {
-        "label": "D",
-        "text": "23"
-      }
-    ],
-    "correctAnswer": "A",
-    "explanation": "Following the order of operations (PEMDAS/BODMAS), first perform the multiplication: 3 * 5 = 15. Then, perform the addition: 7 + 15 = 22. Finally, perform the subtraction: 22 - 2 = 20.",
-    "skill": "Order of Operations",
-    "difficulty": "easy"
+    "difficulty": 7
   },
   {
     "id": "teas_117",
@@ -3255,7 +1883,7 @@
     "options": [
       {
         "label": "A",
-        "text": "$20.00"
+        "text": "$18.00"
       },
       {
         "label": "B",
@@ -3267,69 +1895,13 @@
       },
       {
         "label": "D",
-        "text": "$18.00"
+        "text": "$20.00"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "Calculate the discount amount: 20% of $25 = 0.20 * $25 = $5. Subtract the discount from the original price: $25 - $5 = $20.",
     "skill": "Percentage Discounts",
-    "difficulty": "medium"
-  },
-  {
-    "id": "teas_118",
-    "exam": "TEAS",
-    "section": "Math",
-    "question": "What is 3/4 converted to a decimal?",
-    "options": [
-      {
-        "label": "A",
-        "text": "0.75"
-      },
-      {
-        "label": "B",
-        "text": "0.25"
-      },
-      {
-        "label": "C",
-        "text": "0.34"
-      },
-      {
-        "label": "D",
-        "text": "0.8"
-      }
-    ],
-    "correctAnswer": "A",
-    "explanation": "To convert a fraction to a decimal, divide the numerator by the denominator: 3 ÷ 4 = 0.75.",
-    "skill": "Fraction to Decimal Conversion",
-    "difficulty": "easy"
-  },
-  {
-    "id": "teas_119",
-    "exam": "TEAS",
-    "section": "Math",
-    "question": "A rectangle has a length of 10 cm and a width of 5 cm. What is its area?",
-    "options": [
-      {
-        "label": "A",
-        "text": "50 sq cm"
-      },
-      {
-        "label": "B",
-        "text": "30 cm"
-      },
-      {
-        "label": "C",
-        "text": "15 sq cm"
-      },
-      {
-        "label": "D",
-        "text": "20 sq cm"
-      }
-    ],
-    "correctAnswer": "A",
-    "explanation": "The area of a rectangle is calculated by multiplying its length and width. Area = length * width = 10 cm * 5 cm = 50 sq cm.",
-    "skill": "Area of a Rectangle",
-    "difficulty": "easy"
+    "difficulty": 5
   },
   {
     "id": "teas_120",
@@ -3357,7 +1929,7 @@
     "correctAnswer": "A",
     "explanation": "Subtract 7 from both sides of the equation: 2x = 15 - 7. This simplifies to 2x = 8. Divide both sides by 2: x = 8 / 2, so x = 4.",
     "skill": "Solving Linear Equations",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "teas_121",
@@ -3385,35 +1957,7 @@
     "correctAnswer": "A",
     "explanation": "First, arrange the numbers in ascending order: 1, 2, 5, 8, 9. The median is the middle number in the ordered set. In this case, it is 5.",
     "skill": "Finding the Median",
-    "difficulty": "medium"
-  },
-  {
-    "id": "teas_122",
-    "exam": "TEAS",
-    "section": "Math",
-    "question": "A car travels 180 miles in 3 hours. What is its average speed in miles per hour?",
-    "options": [
-      {
-        "label": "A",
-        "text": "60 mph"
-      },
-      {
-        "label": "B",
-        "text": "50 mph"
-      },
-      {
-        "label": "C",
-        "text": "180 mph"
-      },
-      {
-        "label": "D",
-        "text": "70 mph"
-      }
-    ],
-    "correctAnswer": "A",
-    "explanation": "Speed is calculated as distance divided by time. Speed = 180 miles / 3 hours = 60 miles per hour.",
-    "skill": "Calculating Average Speed",
-    "difficulty": "easy"
+    "difficulty": 5
   },
   {
     "id": "teas_123",
@@ -3441,35 +1985,7 @@
     "correctAnswer": "A",
     "explanation": "To find the cost of one apple, divide the total cost by the number of apples: $3.75 / 5 apples = $0.75 per apple.",
     "skill": "Unit Rate",
-    "difficulty": "medium"
-  },
-  {
-    "id": "teas_124",
-    "exam": "TEAS",
-    "section": "Math",
-    "question": "What is the perimeter of a square with a side length of 6 inches?",
-    "options": [
-      {
-        "label": "A",
-        "text": "24 inches"
-      },
-      {
-        "label": "B",
-        "text": "36 sq inches"
-      },
-      {
-        "label": "C",
-        "text": "12 inches"
-      },
-      {
-        "label": "D",
-        "text": "30 inches"
-      }
-    ],
-    "correctAnswer": "A",
-    "explanation": "A square has four equal sides. The perimeter is the total length of all sides. Perimeter = 4 * side length = 4 * 6 inches = 24 inches.",
-    "skill": "Perimeter of a Square",
-    "difficulty": "easy"
+    "difficulty": 5
   },
   {
     "id": "teas_125",
@@ -3479,7 +1995,7 @@
     "options": [
       {
         "label": "A",
-        "text": "51"
+        "text": "70"
       },
       {
         "label": "B",
@@ -3491,13 +2007,13 @@
       },
       {
         "label": "D",
-        "text": "70"
+        "text": "51"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "Calculate 7 squared: 7 * 7 = 49. Calculate 10 squared: 10 * 10 = 100. Subtract the first from the second: 100 - 49 = 51.",
     "skill": "Exponents and Subtraction",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "teas_126",
@@ -3507,7 +2023,7 @@
     "options": [
       {
         "label": "A",
-        "text": "4 cups"
+        "text": "5 cups"
       },
       {
         "label": "B",
@@ -3519,41 +2035,13 @@
       },
       {
         "label": "D",
-        "text": "5 cups"
+        "text": "4 cups"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "Set up a proportion: (2 cups flour / 3 eggs) = (x cups flour / 6 eggs). Cross-multiply: 2 * 6 = 3 * x. So, 12 = 3x. Divide by 3: x = 4 cups.",
     "skill": "Ratios and Proportions",
-    "difficulty": "medium"
-  },
-  {
-    "id": "teas_127",
-    "exam": "TEAS",
-    "section": "Math",
-    "question": "Convert 2.5 kilometers to meters.",
-    "options": [
-      {
-        "label": "A",
-        "text": "2500 meters"
-      },
-      {
-        "label": "B",
-        "text": "250 meters"
-      },
-      {
-        "label": "C",
-        "text": "25000 meters"
-      },
-      {
-        "label": "D",
-        "text": "25 meters"
-      }
-    ],
-    "correctAnswer": "A",
-    "explanation": "There are 1000 meters in 1 kilometer. To convert kilometers to meters, multiply by 1000. 2.5 km * 1000 meters/km = 2500 meters.",
-    "skill": "Unit Conversion (Metric)",
-    "difficulty": "easy"
+    "difficulty": 5
   },
   {
     "id": "teas_128",
@@ -3581,7 +2069,7 @@
     "correctAnswer": "A",
     "explanation": "The sum of the three numbers is mean * number of items = 10 * 3 = 30. The sum of the two known numbers is 7 + 12 = 19. The third number is the total sum minus the sum of the known numbers: 30 - 19 = 11.",
     "skill": "Mean and Sum",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "teas_129",
@@ -3591,7 +2079,7 @@
     "options": [
       {
         "label": "A",
-        "text": "120"
+        "text": "5"
       },
       {
         "label": "B",
@@ -3603,13 +2091,13 @@
       },
       {
         "label": "D",
-        "text": "5"
+        "text": "120"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "Factorial (n!) means multiplying a number by all positive whole numbers less than it down to 1. 5! = 5 * 4 * 3 * 2 * 1 = 120.",
     "skill": "Factorials",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "teas_130",
@@ -3637,35 +2125,7 @@
     "correctAnswer": "A",
     "explanation": "Multiply the map distance by the scale factor: 3.5 inches * 50 miles/inch = 175 miles.",
     "skill": "Scale and Proportion",
-    "difficulty": "medium"
-  },
-  {
-    "id": "teas_131",
-    "exam": "TEAS",
-    "section": "Math",
-    "question": "What is the probability of rolling a 4 on a standard six-sided die?",
-    "options": [
-      {
-        "label": "A",
-        "text": "1/6"
-      },
-      {
-        "label": "B",
-        "text": "1/4"
-      },
-      {
-        "label": "C",
-        "text": "4/6"
-      },
-      {
-        "label": "D",
-        "text": "1/5"
-      }
-    ],
-    "correctAnswer": "A",
-    "explanation": "There is one favorable outcome (rolling a 4) and six possible outcomes (1, 2, 3, 4, 5, 6). The probability is the number of favorable outcomes divided by the total number of outcomes, which is 1/6.",
-    "skill": "Basic Probability",
-    "difficulty": "easy"
+    "difficulty": 5
   },
   {
     "id": "teas_132",
@@ -3693,7 +2153,7 @@
     "correctAnswer": "A",
     "explanation": "Distribute the 3: 3 * 2y = 6y and 3 * -5 = -15. So the expression becomes 6y - 15 + 4y. Combine like terms: 6y + 4y = 10y. The simplified expression is 10y - 15.",
     "skill": "Algebraic Expression Simplification",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "teas_133",
@@ -3721,35 +2181,7 @@
     "correctAnswer": "A",
     "explanation": "The formula for the circumference of a circle is C = 2πr. C = 2 * 3.14 * 7 meters = 43.96 meters.",
     "skill": "Circumference of a Circle",
-    "difficulty": "medium"
-  },
-  {
-    "id": "teas_134",
-    "exam": "TEAS",
-    "section": "Math",
-    "question": "What is the largest number in the set: { -3, 0, 5, -8, 2 }?",
-    "options": [
-      {
-        "label": "A",
-        "text": "5"
-      },
-      {
-        "label": "B",
-        "text": "0"
-      },
-      {
-        "label": "C",
-        "text": "2"
-      },
-      {
-        "label": "D",
-        "text": "-3"
-      }
-    ],
-    "correctAnswer": "A",
-    "explanation": "When comparing integers, the number furthest to the right on a number line is the largest. In this set, 5 is the largest value.",
-    "skill": "Comparing Integers",
-    "difficulty": "easy"
+    "difficulty": 5
   },
   {
     "id": "teas_135",
@@ -3777,147 +2209,7 @@
     "correctAnswer": "A",
     "explanation": "The total score needed across four tests for an average of 85 is 85 * 4 = 340. The sum of the scores on the first three tests is 80 + 92 + 88 = 260. The score needed on the fourth test is 340 - 260 = 80.",
     "skill": "Average Calculation",
-    "difficulty": "hard"
-  },
-  {
-    "id": "teas_136",
-    "exam": "TEAS",
-    "section": "Science",
-    "question": "Which organelle is responsible for generating most of the cell's supply of adenosine triphosphate (ATP), used as a source of chemical energy?",
-    "options": [
-      {
-        "label": "A",
-        "text": "Mitochondrion"
-      },
-      {
-        "label": "B",
-        "text": "Ribosome"
-      },
-      {
-        "label": "C",
-        "text": "Nucleus"
-      },
-      {
-        "label": "D",
-        "text": "Endoplasmic Reticulum"
-      }
-    ],
-    "correctAnswer": "A",
-    "explanation": "Mitochondria are known as the 'powerhouses' of the cell because they produce ATP through cellular respiration.",
-    "skill": "Cell Biology",
-    "difficulty": "easy"
-  },
-  {
-    "id": "teas_137",
-    "exam": "TEAS",
-    "section": "Science",
-    "question": "What is the chemical symbol for the element iron?",
-    "options": [
-      {
-        "label": "A",
-        "text": "Ir"
-      },
-      {
-        "label": "B",
-        "text": "Fe"
-      },
-      {
-        "label": "C",
-        "text": "I"
-      },
-      {
-        "label": "D",
-        "text": "Na"
-      }
-    ],
-    "correctAnswer": "B",
-    "explanation": "The chemical symbol for iron is Fe, derived from its Latin name, ferrum.",
-    "skill": "Chemistry",
-    "difficulty": "easy"
-  },
-  {
-    "id": "teas_138",
-    "exam": "TEAS",
-    "section": "Science",
-    "question": "The process by which plants convert light energy into chemical energy is called:",
-    "options": [
-      {
-        "label": "A",
-        "text": "Respiration"
-      },
-      {
-        "label": "B",
-        "text": "Transpiration"
-      },
-      {
-        "label": "C",
-        "text": "Photosynthesis"
-      },
-      {
-        "label": "D",
-        "text": "Fermentation"
-      }
-    ],
-    "correctAnswer": "C",
-    "explanation": "Photosynthesis is the process used by plants and other organisms to convert light energy, typically from the sun, into chemical energy that can be later released to fuel the organisms' activities.",
-    "skill": "Biology",
-    "difficulty": "easy"
-  },
-  {
-    "id": "teas_139",
-    "exam": "TEAS",
-    "section": "Science",
-    "question": "What is the basic unit of heredity?",
-    "options": [
-      {
-        "label": "A",
-        "text": "Chromosome"
-      },
-      {
-        "label": "B",
-        "text": "Cell"
-      },
-      {
-        "label": "C",
-        "text": "Gene"
-      },
-      {
-        "label": "D",
-        "text": "Protein"
-      }
-    ],
-    "correctAnswer": "C",
-    "explanation": "A gene is a segment of DNA that codes for a specific trait or protein, acting as the basic unit of heredity.",
-    "skill": "Genetics",
-    "difficulty": "easy"
-  },
-  {
-    "id": "teas_140",
-    "exam": "TEAS",
-    "section": "Science",
-    "question": "Which of the following is a type of connective tissue?",
-    "options": [
-      {
-        "label": "A",
-        "text": "Muscle tissue"
-      },
-      {
-        "label": "B",
-        "text": "Nervous tissue"
-      },
-      {
-        "label": "C",
-        "text": "Epithelial tissue"
-      },
-      {
-        "label": "D",
-        "text": "Bone tissue"
-      }
-    ],
-    "correctAnswer": "D",
-    "explanation": "Bone tissue, along with cartilage, blood, and adipose tissue, is a type of connective tissue that supports, connects, or separates different types of tissues and organs in the body.",
-    "skill": "Anatomy and Physiology",
-    "difficulty": "medium"
+    "difficulty": 7
   },
   {
     "id": "teas_141",
@@ -3945,63 +2237,7 @@
     "correctAnswer": "C",
     "explanation": "The left atrium receives oxygenated blood from the pulmonary veins, which carry blood from the lungs.",
     "skill": "Anatomy and Physiology",
-    "difficulty": "medium"
-  },
-  {
-    "id": "teas_142",
-    "exam": "TEAS",
-    "section": "Science",
-    "question": "What is the atomic number of oxygen?",
-    "options": [
-      {
-        "label": "A",
-        "text": "6"
-      },
-      {
-        "label": "B",
-        "text": "7"
-      },
-      {
-        "label": "C",
-        "text": "8"
-      },
-      {
-        "label": "D",
-        "text": "16"
-      }
-    ],
-    "correctAnswer": "C",
-    "explanation": "The atomic number represents the number of protons in an atom's nucleus. Oxygen has 8 protons.",
-    "skill": "Chemistry",
-    "difficulty": "easy"
-  },
-  {
-    "id": "teas_143",
-    "exam": "TEAS",
-    "section": "Science",
-    "question": "Which planet in our solar system is known for its prominent rings?",
-    "options": [
-      {
-        "label": "A",
-        "text": "Jupiter"
-      },
-      {
-        "label": "B",
-        "text": "Saturn"
-      },
-      {
-        "label": "C",
-        "text": "Uranus"
-      },
-      {
-        "label": "D",
-        "text": "Neptune"
-      }
-    ],
-    "correctAnswer": "B",
-    "explanation": "Saturn is famously recognized for its extensive and visible ring system, composed primarily of ice particles.",
-    "skill": "Earth and Space Science",
-    "difficulty": "easy"
+    "difficulty": 5
   },
   {
     "id": "teas_144",
@@ -4029,35 +2265,7 @@
     "correctAnswer": "D",
     "explanation": "Sublimation is the transition of a substance directly from the solid to the gas state, without passing through the liquid state.",
     "skill": "Chemistry",
-    "difficulty": "medium"
-  },
-  {
-    "id": "teas_145",
-    "exam": "TEAS",
-    "section": "Science",
-    "question": "Which type of blood cell is primarily responsible for transporting oxygen throughout the body?",
-    "options": [
-      {
-        "label": "A",
-        "text": "White blood cells (Leukocytes)"
-      },
-      {
-        "label": "B",
-        "text": "Platelets (Thrombocytes)"
-      },
-      {
-        "label": "C",
-        "text": "Red blood cells (Erythrocytes)"
-      },
-      {
-        "label": "D",
-        "text": "Plasma"
-      }
-    ],
-    "correctAnswer": "C",
-    "explanation": "Red blood cells contain hemoglobin, a protein that binds to oxygen and transports it from the lungs to tissues.",
-    "skill": "Anatomy and Physiology",
-    "difficulty": "easy"
+    "difficulty": 5
   },
   {
     "id": "teas_146",
@@ -4085,63 +2293,7 @@
     "correctAnswer": "B",
     "explanation": "A covalent bond is a chemical bond that involves the sharing of electron pairs between atoms. These electron pairs are known as shared pairs or bonding pairs, and the stable balance of attractive and repulsive forces between atoms, when they share electrons, is known as covalent bonding.",
     "skill": "Chemistry",
-    "difficulty": "medium"
-  },
-  {
-    "id": "teas_147",
-    "exam": "TEAS",
-    "section": "Science",
-    "question": "What is the largest bone in the human body?",
-    "options": [
-      {
-        "label": "A",
-        "text": "Humerus"
-      },
-      {
-        "label": "B",
-        "text": "Femur"
-      },
-      {
-        "label": "C",
-        "text": "Tibia"
-      },
-      {
-        "label": "D",
-        "text": "Spine"
-      }
-    ],
-    "correctAnswer": "B",
-    "explanation": "The femur, or thigh bone, is the longest, strongest, and heaviest bone in the human body.",
-    "skill": "Anatomy and Physiology",
-    "difficulty": "easy"
-  },
-  {
-    "id": "teas_148",
-    "exam": "TEAS",
-    "section": "Science",
-    "question": "Which gas is most abundant in Earth's atmosphere?",
-    "options": [
-      {
-        "label": "A",
-        "text": "Oxygen"
-      },
-      {
-        "label": "B",
-        "text": "Argon"
-      },
-      {
-        "label": "C",
-        "text": "Carbon Dioxide"
-      },
-      {
-        "label": "D",
-        "text": "Nitrogen"
-      }
-    ],
-    "correctAnswer": "D",
-    "explanation": "Nitrogen makes up approximately 78% of the Earth's atmosphere.",
-    "skill": "Earth and Space Science",
-    "difficulty": "easy"
+    "difficulty": 5
   },
   {
     "id": "teas_149",
@@ -4169,35 +2321,7 @@
     "correctAnswer": "C",
     "explanation": "Osmosis is specifically the movement of water across a semipermeable membrane, driven by differences in solute concentration.",
     "skill": "Cell Biology",
-    "difficulty": "medium"
-  },
-  {
-    "id": "teas_150",
-    "exam": "TEAS",
-    "section": "Science",
-    "question": "What is the primary function of the kidneys?",
-    "options": [
-      {
-        "label": "A",
-        "text": "Digesting food"
-      },
-      {
-        "label": "B",
-        "text": "Pumping blood"
-      },
-      {
-        "label": "C",
-        "text": "Filtering waste from blood"
-      },
-      {
-        "label": "D",
-        "text": "Producing hormones"
-      }
-    ],
-    "correctAnswer": "C",
-    "explanation": "The kidneys are responsible for filtering waste products and excess water from the blood to produce urine.",
-    "skill": "Anatomy and Physiology",
-    "difficulty": "easy"
+    "difficulty": 5
   },
   {
     "id": "teas_151",
@@ -4225,35 +2349,7 @@
     "correctAnswer": "C",
     "explanation": "Sodium hydroxide is a strong base, characterized by its ability to accept protons or release hydroxide ions.",
     "skill": "Chemistry",
-    "difficulty": "medium"
-  },
-  {
-    "id": "teas_152",
-    "exam": "TEAS",
-    "section": "Science",
-    "question": "What force keeps planets in orbit around the sun?",
-    "options": [
-      {
-        "label": "A",
-        "text": "Electromagnetic force"
-      },
-      {
-        "label": "B",
-        "text": "Strong nuclear force"
-      },
-      {
-        "label": "C",
-        "text": "Weak nuclear force"
-      },
-      {
-        "label": "D",
-        "text": "Gravitational force"
-      }
-    ],
-    "correctAnswer": "D",
-    "explanation": "Gravity is the force of attraction between objects with mass, and it governs the orbital motion of celestial bodies.",
-    "skill": "Physics",
-    "difficulty": "easy"
+    "difficulty": 5
   },
   {
     "id": "teas_153",
@@ -4281,91 +2377,7 @@
     "correctAnswer": "B",
     "explanation": "Mitosis is a type of cell division that results in two daughter cells each having the same number and kind of chromosomes as the parent nucleus, typical of ordinary tissue growth.",
     "skill": "Cell Biology",
-    "difficulty": "medium"
-  },
-  {
-    "id": "teas_154",
-    "exam": "TEAS",
-    "section": "Science",
-    "question": "What is the state of matter that has a definite volume but no definite shape?",
-    "options": [
-      {
-        "label": "A",
-        "text": "Solid"
-      },
-      {
-        "label": "B",
-        "text": "Liquid"
-      },
-      {
-        "label": "C",
-        "text": "Gas"
-      },
-      {
-        "label": "D",
-        "text": "Plasma"
-      }
-    ],
-    "correctAnswer": "B",
-    "explanation": "Liquids have a definite volume because the particles are close together, but they take the shape of their container because the particles can move past each other.",
-    "skill": "Chemistry",
-    "difficulty": "easy"
-  },
-  {
-    "id": "teas_155",
-    "exam": "TEAS",
-    "section": "Science",
-    "question": "The brain is part of which body system?",
-    "options": [
-      {
-        "label": "A",
-        "text": "Endocrine system"
-      },
-      {
-        "label": "B",
-        "text": "Circulatory system"
-      },
-      {
-        "label": "C",
-        "text": "Nervous system"
-      },
-      {
-        "label": "D",
-        "text": "Muscular system"
-      }
-    ],
-    "correctAnswer": "C",
-    "explanation": "The brain is the central organ of the nervous system, responsible for processing information and coordinating bodily functions.",
-    "skill": "Anatomy and Physiology",
-    "difficulty": "easy"
-  },
-  {
-    "id": "teas_156",
-    "exam": "TEAS",
-    "section": "Science",
-    "question": "Which of the following is the most basic unit of a chemical element?",
-    "options": [
-      {
-        "label": "A",
-        "text": "Molecule"
-      },
-      {
-        "label": "B",
-        "text": "Atom"
-      },
-      {
-        "label": "C",
-        "text": "Compound"
-      },
-      {
-        "label": "D",
-        "text": "Ion"
-      }
-    ],
-    "correctAnswer": "B",
-    "explanation": "An atom is the smallest particle of a chemical element that can exist as a pure substance.",
-    "skill": "Chemistry",
-    "difficulty": "easy"
+    "difficulty": 5
   },
   {
     "id": "teas_157",
@@ -4393,35 +2405,7 @@
     "correctAnswer": "B",
     "explanation": "Condensation is the change of the physical state of matter from the gaseous phase into the liquid phase.",
     "skill": "Chemistry",
-    "difficulty": "medium"
-  },
-  {
-    "id": "teas_158",
-    "exam": "TEAS",
-    "section": "Science",
-    "question": "The long, hollow bone found in the upper arm is called the:",
-    "options": [
-      {
-        "label": "A",
-        "text": "Femur"
-      },
-      {
-        "label": "B",
-        "text": "Tibia"
-      },
-      {
-        "label": "C",
-        "text": "Humerus"
-      },
-      {
-        "label": "D",
-        "text": "Fibula"
-      }
-    ],
-    "correctAnswer": "C",
-    "explanation": "The humerus is the bone that connects the shoulder to the elbow.",
-    "skill": "Anatomy and Physiology",
-    "difficulty": "easy"
+    "difficulty": 5
   },
   {
     "id": "teas_159",
@@ -4449,259 +2433,7 @@
     "correctAnswer": "B",
     "explanation": "A recessive trait is one that is masked by a dominant trait and is only expressed when an individual has two copies of the recessive allele.",
     "skill": "Genetics",
-    "difficulty": "medium"
-  },
-  {
-    "id": "teas_160",
-    "exam": "TEAS",
-    "section": "Science",
-    "question": "What is the study of living organisms and their vital processes?",
-    "options": [
-      {
-        "label": "A",
-        "text": "Geology"
-      },
-      {
-        "label": "B",
-        "text": "Astronomy"
-      },
-      {
-        "label": "C",
-        "text": "Biology"
-      },
-      {
-        "label": "D",
-        "text": "Chemistry"
-      }
-    ],
-    "correctAnswer": "C",
-    "explanation": "Biology is the scientific study of life and living organisms.",
-    "skill": "General Science",
-    "difficulty": "easy"
-  },
-  {
-    "id": "teas_161",
-    "exam": "TEAS",
-    "section": "Science",
-    "question": "Which organelle is responsible for generating most of the cell's supply of adenosine triphosphate (ATP), used as a source of chemical energy?",
-    "options": [
-      {
-        "label": "A",
-        "text": "Mitochondrion"
-      },
-      {
-        "label": "B",
-        "text": "Nucleus"
-      },
-      {
-        "label": "C",
-        "text": "Ribosome"
-      },
-      {
-        "label": "D",
-        "text": "Endoplasmic Reticulum"
-      }
-    ],
-    "correctAnswer": "A",
-    "explanation": "Mitochondria are often called the 'powerhouses' of the cell because they are the primary sites of cellular respiration, which produces ATP.",
-    "skill": "Cell Biology",
-    "difficulty": "easy"
-  },
-  {
-    "id": "teas_162",
-    "exam": "TEAS",
-    "section": "Science",
-    "question": "What is the process by which plants convert light energy into chemical energy in the form of glucose?",
-    "options": [
-      {
-        "label": "A",
-        "text": "Photosynthesis"
-      },
-      {
-        "label": "B",
-        "text": "Respiration"
-      },
-      {
-        "label": "C",
-        "text": "Transpiration"
-      },
-      {
-        "label": "D",
-        "text": "Fermentation"
-      }
-    ],
-    "correctAnswer": "A",
-    "explanation": "Photosynthesis uses sunlight, water, and carbon dioxide to create glucose (food) and oxygen. Respiration is how organisms break down glucose for energy.",
-    "skill": "Plant Biology",
-    "difficulty": "easy"
-  },
-  {
-    "id": "teas_163",
-    "exam": "TEAS",
-    "section": "Science",
-    "question": "Which of the following is the basic unit of heredity?",
-    "options": [
-      {
-        "label": "A",
-        "text": "Gene"
-      },
-      {
-        "label": "B",
-        "text": "Chromosome"
-      },
-      {
-        "label": "C",
-        "text": "Allele"
-      },
-      {
-        "label": "D",
-        "text": "DNA"
-      }
-    ],
-    "correctAnswer": "A",
-    "explanation": "A gene is a segment of DNA that codes for a specific trait or protein, acting as the fundamental unit of heredity.",
-    "skill": "Genetics",
-    "difficulty": "easy"
-  },
-  {
-    "id": "teas_164",
-    "exam": "TEAS",
-    "section": "Science",
-    "question": "The diffusion of water across a selectively permeable membrane is called:",
-    "options": [
-      {
-        "label": "A",
-        "text": "Osmosis"
-      },
-      {
-        "label": "B",
-        "text": "Active Transport"
-      },
-      {
-        "label": "C",
-        "text": "Facilitated Diffusion"
-      },
-      {
-        "label": "D",
-        "text": "Endocytosis"
-      }
-    ],
-    "correctAnswer": "A",
-    "explanation": "Osmosis specifically refers to the movement of water molecules from an area of high water concentration to low water concentration across a semipermeable membrane.",
-    "skill": "Cell Biology",
-    "difficulty": "easy"
-  },
-  {
-    "id": "teas_165",
-    "exam": "TEAS",
-    "section": "Science",
-    "question": "Which type of blood cell is primarily responsible for carrying oxygen throughout the body?",
-    "options": [
-      {
-        "label": "A",
-        "text": "Red blood cell"
-      },
-      {
-        "label": "B",
-        "text": "White blood cell"
-      },
-      {
-        "label": "C",
-        "text": "Platelet"
-      },
-      {
-        "label": "D",
-        "text": "Plasma cell"
-      }
-    ],
-    "correctAnswer": "A",
-    "explanation": "Red blood cells contain hemoglobin, a protein that binds to oxygen and transports it from the lungs to the rest of the body.",
-    "skill": "Human Anatomy and Physiology",
-    "difficulty": "easy"
-  },
-  {
-    "id": "teas_166",
-    "exam": "TEAS",
-    "section": "Science",
-    "question": "In the human body, which system is responsible for breaking down food into absorbable nutrients?",
-    "options": [
-      {
-        "label": "A",
-        "text": "Digestive system"
-      },
-      {
-        "label": "B",
-        "text": "Circulatory system"
-      },
-      {
-        "label": "C",
-        "text": "Nervous system"
-      },
-      {
-        "label": "D",
-        "text": "Respiratory system"
-      }
-    ],
-    "correctAnswer": "A",
-    "explanation": "The digestive system processes food through mechanical and chemical breakdown, allowing for absorption of nutrients into the bloodstream.",
-    "skill": "Human Anatomy and Physiology",
-    "difficulty": "easy"
-  },
-  {
-    "id": "teas_167",
-    "exam": "TEAS",
-    "section": "Science",
-    "question": "What is the chemical symbol for water?",
-    "options": [
-      {
-        "label": "A",
-        "text": "H₂O"
-      },
-      {
-        "label": "B",
-        "text": "CO₂"
-      },
-      {
-        "label": "C",
-        "text": "O₂"
-      },
-      {
-        "label": "D",
-        "text": "NaCl"
-      }
-    ],
-    "correctAnswer": "A",
-    "explanation": "H₂O represents a molecule composed of two hydrogen atoms and one oxygen atom.",
-    "skill": "Chemistry",
-    "difficulty": "easy"
-  },
-  {
-    "id": "teas_168",
-    "exam": "TEAS",
-    "section": "Science",
-    "question": "Which layer of the Earth's atmosphere is closest to the surface?",
-    "options": [
-      {
-        "label": "A",
-        "text": "Troposphere"
-      },
-      {
-        "label": "B",
-        "text": "Stratosphere"
-      },
-      {
-        "label": "C",
-        "text": "Mesosphere"
-      },
-      {
-        "label": "D",
-        "text": "Thermosphere"
-      }
-    ],
-    "correctAnswer": "A",
-    "explanation": "The troposphere is the lowest layer where weather occurs and is where humans live.",
-    "skill": "Earth Science",
-    "difficulty": "easy"
+    "difficulty": 5
   },
   {
     "id": "teas_169",
@@ -4711,7 +2443,7 @@
     "options": [
       {
         "label": "A",
-        "text": "Sublimation"
+        "text": "Melting"
       },
       {
         "label": "B",
@@ -4723,13 +2455,13 @@
       },
       {
         "label": "D",
-        "text": "Melting"
+        "text": "Sublimation"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "Sublimation is the transition of a substance directly from the solid to the gas state, bypassing the liquid state (e.g., dry ice).",
     "skill": "Chemistry",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "teas_170",
@@ -4757,7 +2489,7 @@
     "correctAnswer": "A",
     "explanation": "A catalyst speeds up a reaction by lowering its activation energy, and it is regenerated at the end of the reaction.",
     "skill": "Chemistry",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "teas_171",
@@ -4785,7 +2517,7 @@
     "correctAnswer": "A",
     "explanation": "The ampere (A) is the SI base unit of electric current.",
     "skill": "Physics",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "teas_172",
@@ -4813,7 +2545,7 @@
     "correctAnswer": "A",
     "explanation": "Evolution describes the change in heritable characteristics of biological populations over successive generations. Natural selection is a mechanism of evolution.",
     "skill": "Biology",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "teas_173",
@@ -4841,7 +2573,7 @@
     "correctAnswer": "A",
     "explanation": "Alveoli are tiny air sacs where the exchange of oxygen and carbon dioxide occurs between the lungs and the bloodstream.",
     "skill": "Human Anatomy and Physiology",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "teas_174",
@@ -4851,7 +2583,7 @@
     "options": [
       {
         "label": "A",
-        "text": "Autotroph"
+        "text": "Carnivore"
       },
       {
         "label": "B",
@@ -4863,13 +2595,13 @@
       },
       {
         "label": "D",
-        "text": "Carnivore"
+        "text": "Autotroph"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "Autotrophs are organisms that can synthesize their own food from inorganic substances, like plants using sunlight.",
     "skill": "Ecology",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "teas_175",
@@ -4897,35 +2629,7 @@
     "correctAnswer": "A",
     "explanation": "Friction is a force that resists the motion of objects relative to each other when they are in contact.",
     "skill": "Physics",
-    "difficulty": "medium"
-  },
-  {
-    "id": "teas_176",
-    "exam": "TEAS",
-    "section": "Science",
-    "question": "The pH scale measures the acidity or alkalinity of a solution. A pH of 7 is considered:",
-    "options": [
-      {
-        "label": "A",
-        "text": "Neutral"
-      },
-      {
-        "label": "B",
-        "text": "Acidic"
-      },
-      {
-        "label": "C",
-        "text": "Alkaline (Basic)"
-      },
-      {
-        "label": "D",
-        "text": "Corrosive"
-      }
-    ],
-    "correctAnswer": "A",
-    "explanation": "A pH of 7 indicates a neutral solution, meaning it is neither acidic nor alkaline. Pure water at 25°C has a pH of 7.",
-    "skill": "Chemistry",
-    "difficulty": "easy"
+    "difficulty": 5
   },
   {
     "id": "teas_177",
@@ -4935,7 +2639,7 @@
     "options": [
       {
         "label": "A",
-        "text": "Chloroplast"
+        "text": "Cell Wall"
       },
       {
         "label": "B",
@@ -4947,13 +2651,13 @@
       },
       {
         "label": "D",
-        "text": "Cell Wall"
+        "text": "Chloroplast"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "Chloroplasts contain chlorophyll, the pigment that absorbs light energy for photosynthesis.",
     "skill": "Cell Biology",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "teas_178",
@@ -4981,7 +2685,7 @@
     "correctAnswer": "A",
     "explanation": "Viruses are simple infectious agents consisting of genetic material (either DNA or RNA) enclosed in a protective protein coat called a capsid.",
     "skill": "Microbiology",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "teas_179",
@@ -4991,7 +2695,7 @@
     "options": [
       {
         "label": "A",
-        "text": "Decomposers"
+        "text": "Secondary consumers"
       },
       {
         "label": "B",
@@ -5003,97 +2707,13 @@
       },
       {
         "label": "D",
-        "text": "Secondary consumers"
+        "text": "Decomposers"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "Decomposers, such as bacteria and fungi, play a crucial role in nutrient cycling by breaking down dead organisms and waste products.",
     "skill": "Ecology",
-    "difficulty": "medium"
-  },
-  {
-    "id": "teas_180",
-    "exam": "TEAS",
-    "section": "Science",
-    "question": "What is the name of the process where a liquid turns into a gas?",
-    "options": [
-      {
-        "label": "A",
-        "text": "Evaporation"
-      },
-      {
-        "label": "B",
-        "text": "Condensation"
-      },
-      {
-        "label": "C",
-        "text": "Melting"
-      },
-      {
-        "label": "D",
-        "text": "Freezing"
-      }
-    ],
-    "correctAnswer": "A",
-    "explanation": "Evaporation is the process by which a substance in a liquid state changes to a gaseous state due to an increase in temperature and/or pressure.",
-    "skill": "Chemistry",
-    "difficulty": "easy"
-  },
-  {
-    "id": "teas_181",
-    "exam": "TEAS",
-    "section": "Math",
-    "question": "What is the value of 7 squared?",
-    "options": [
-      {
-        "label": "A",
-        "text": "14"
-      },
-      {
-        "label": "B",
-        "text": "49"
-      },
-      {
-        "label": "C",
-        "text": "81"
-      },
-      {
-        "label": "D",
-        "text": "70"
-      }
-    ],
-    "correctAnswer": "B",
-    "explanation": "7 squared means 7 multiplied by itself, which is 7 * 7 = 49.",
-    "skill": "Arithmetic",
-    "difficulty": "easy"
-  },
-  {
-    "id": "teas_182",
-    "exam": "TEAS",
-    "section": "Math",
-    "question": "If a store sells apples for $0.50 each, how much would 6 apples cost?",
-    "options": [
-      {
-        "label": "A",
-        "text": "$2.50"
-      },
-      {
-        "label": "B",
-        "text": "$3.00"
-      },
-      {
-        "label": "C",
-        "text": "$3.50"
-      },
-      {
-        "label": "D",
-        "text": "$4.00"
-      }
-    ],
-    "correctAnswer": "B",
-    "explanation": "To find the total cost, multiply the price per apple by the number of apples: $0.50 * 6 = $3.00.",
-    "skill": "Multiplication",
-    "difficulty": "easy"
+    "difficulty": 5
   },
   {
     "id": "teas_183",
@@ -5121,63 +2741,7 @@
     "correctAnswer": "A",
     "explanation": "Subtract 5 from both sides: 3x = 9. Then divide by 3: x = 3.",
     "skill": "Algebra",
-    "difficulty": "medium"
-  },
-  {
-    "id": "teas_184",
-    "exam": "TEAS",
-    "section": "Math",
-    "question": "What is 1/4 as a decimal?",
-    "options": [
-      {
-        "label": "A",
-        "text": "0.14"
-      },
-      {
-        "label": "B",
-        "text": "0.25"
-      },
-      {
-        "label": "C",
-        "text": "0.50"
-      },
-      {
-        "label": "D",
-        "text": "0.75"
-      }
-    ],
-    "correctAnswer": "B",
-    "explanation": "To convert a fraction to a decimal, divide the numerator by the denominator: 1 ÷ 4 = 0.25.",
-    "skill": "Fractions and Decimals",
-    "difficulty": "easy"
-  },
-  {
-    "id": "teas_185",
-    "exam": "TEAS",
-    "section": "Math",
-    "question": "A car travels 150 miles in 3 hours. What is its average speed in miles per hour?",
-    "options": [
-      {
-        "label": "A",
-        "text": "40 mph"
-      },
-      {
-        "label": "B",
-        "text": "45 mph"
-      },
-      {
-        "label": "C",
-        "text": "50 mph"
-      },
-      {
-        "label": "D",
-        "text": "55 mph"
-      }
-    ],
-    "correctAnswer": "C",
-    "explanation": "Speed is calculated as distance divided by time: 150 miles / 3 hours = 50 mph.",
-    "skill": "Rate, Time, Distance",
-    "difficulty": "easy"
+    "difficulty": 5
   },
   {
     "id": "teas_186",
@@ -5205,35 +2769,7 @@
     "correctAnswer": "C",
     "explanation": "Comparing the numbers, 0.77 has the largest value in the tenths and hundredths places.",
     "skill": "Decimal Comparison",
-    "difficulty": "medium"
-  },
-  {
-    "id": "teas_187",
-    "exam": "TEAS",
-    "section": "Math",
-    "question": "If a recipe calls for 2 cups of flour and you want to make half the recipe, how much flour do you need?",
-    "options": [
-      {
-        "label": "A",
-        "text": "1 cup"
-      },
-      {
-        "label": "B",
-        "text": "1.5 cups"
-      },
-      {
-        "label": "C",
-        "text": "3/4 cup"
-      },
-      {
-        "label": "D",
-        "text": "2 cups"
-      }
-    ],
-    "correctAnswer": "A",
-    "explanation": "Half of 2 cups is 2 / 2 = 1 cup.",
-    "skill": "Fractions",
-    "difficulty": "easy"
+    "difficulty": 5
   },
   {
     "id": "teas_188",
@@ -5261,7 +2797,7 @@
     "correctAnswer": "C",
     "explanation": "The perimeter of a rectangle is 2 * (length + width). So, 2 * (10 cm + 5 cm) = 2 * 15 cm = 30 cm.",
     "skill": "Geometry",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "teas_189",
@@ -5289,35 +2825,7 @@
     "correctAnswer": "B",
     "explanation": "35% means 35/100. Dividing both numerator and denominator by their greatest common divisor, 5, gives 7/20.",
     "skill": "Percentages and Fractions",
-    "difficulty": "medium"
-  },
-  {
-    "id": "teas_190",
-    "exam": "TEAS",
-    "section": "Math",
-    "question": "A train leaves station A at 2:00 PM and arrives at station B at 5:30 PM. How long did the journey take?",
-    "options": [
-      {
-        "label": "A",
-        "text": "3 hours"
-      },
-      {
-        "label": "B",
-        "text": "3 hours 30 minutes"
-      },
-      {
-        "label": "C",
-        "text": "4 hours"
-      },
-      {
-        "label": "D",
-        "text": "4 hours 30 minutes"
-      }
-    ],
-    "correctAnswer": "B",
-    "explanation": "From 2:00 PM to 5:00 PM is 3 hours. From 5:00 PM to 5:30 PM is 30 minutes. Total time is 3 hours and 30 minutes.",
-    "skill": "Time Calculation",
-    "difficulty": "easy"
+    "difficulty": 5
   },
   {
     "id": "teas_191",
@@ -5335,101 +2843,17 @@
       },
       {
         "label": "C",
-        "text": "12"
+        "text": "24"
       },
       {
         "label": "D",
-        "text": "24"
+        "text": "12"
       }
     ],
-    "correctAnswer": "C",
+    "correctAnswer": "D",
     "explanation": "Multiples of 4 are: 4, 8, 12, 16, 20, 24... Multiples of 6 are: 6, 12, 18, 24... The smallest common multiple is 12.",
     "skill": "Number Theory",
-    "difficulty": "medium"
-  },
-  {
-    "id": "teas_192",
-    "exam": "TEAS",
-    "section": "Math",
-    "question": "A baker uses 500 grams of sugar for a large cake. If 1 kilogram is equal to 1000 grams, how many kilograms of sugar does the baker use?",
-    "options": [
-      {
-        "label": "A",
-        "text": "0.05 kg"
-      },
-      {
-        "label": "B",
-        "text": "0.5 kg"
-      },
-      {
-        "label": "C",
-        "text": "5 kg"
-      },
-      {
-        "label": "D",
-        "text": "50 kg"
-      }
-    ],
-    "correctAnswer": "B",
-    "explanation": "To convert grams to kilograms, divide by 1000. 500 grams / 1000 grams/kg = 0.5 kg.",
-    "skill": "Unit Conversion",
-    "difficulty": "easy"
-  },
-  {
-    "id": "teas_193",
-    "exam": "TEAS",
-    "section": "Math",
-    "question": "If a shirt costs $25 and is on sale for 20% off, what is the sale price?",
-    "options": [
-      {
-        "label": "A",
-        "text": "$5"
-      },
-      {
-        "label": "B",
-        "text": "$15"
-      },
-      {
-        "label": "C",
-        "text": "$20"
-      },
-      {
-        "label": "D",
-        "text": "$22.50"
-      }
-    ],
-    "correctAnswer": "C",
-    "explanation": "First, calculate the discount amount: 20% of $25 is 0.20 * $25 = $5. Then, subtract the discount from the original price: $25 - $5 = $20.",
-    "skill": "Percentages",
-    "difficulty": "medium"
-  },
-  {
-    "id": "teas_194",
-    "exam": "TEAS",
-    "section": "Math",
-    "question": "What is the area of a square with a side length of 8 inches?",
-    "options": [
-      {
-        "label": "A",
-        "text": "16 square inches"
-      },
-      {
-        "label": "B",
-        "text": "32 square inches"
-      },
-      {
-        "label": "C",
-        "text": "64 square inches"
-      },
-      {
-        "label": "D",
-        "text": "128 square inches"
-      }
-    ],
-    "correctAnswer": "C",
-    "explanation": "The area of a square is side length squared. So, 8 inches * 8 inches = 64 square inches.",
-    "skill": "Geometry",
-    "difficulty": "easy"
+    "difficulty": 5
   },
   {
     "id": "teas_195",
@@ -5457,7 +2881,7 @@
     "correctAnswer": "A",
     "explanation": "Distribute the 5: 5x + 10. Then combine like terms: 5x + 10 - 3x = 2x + 10.",
     "skill": "Algebraic Simplification",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "teas_196",
@@ -5467,7 +2891,7 @@
     "options": [
       {
         "label": "A",
-        "text": "1/4, 1/3, 1/2"
+        "text": "1/4, 1/2, 1/3"
       },
       {
         "label": "B",
@@ -5479,13 +2903,13 @@
       },
       {
         "label": "D",
-        "text": "1/4, 1/2, 1/3"
+        "text": "1/4, 1/3, 1/2"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "To compare fractions with the same numerator, the fraction with the largest denominator is the smallest. Therefore, 1/4 < 1/3 < 1/2.",
     "skill": "Fraction Comparison",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "teas_197",
@@ -5495,7 +2919,7 @@
     "options": [
       {
         "label": "A",
-        "text": "8/20"
+        "text": "1/2"
       },
       {
         "label": "B",
@@ -5507,13 +2931,13 @@
       },
       {
         "label": "D",
-        "text": "1/2"
+        "text": "8/20"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "The total number of balls is 12 + 8 = 20. The number of blue balls is 8. The probability is the number of favorable outcomes divided by the total number of outcomes: 8/20.",
     "skill": "Probability",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "teas_198",
@@ -5541,7 +2965,7 @@
     "correctAnswer": "D",
     "explanation": "The volume of a cube is side length cubed (side * side * side). So, 3m * 3m * 3m = 27 cubic meters.",
     "skill": "Geometry",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "teas_199",
@@ -5569,35 +2993,7 @@
     "correctAnswer": "C",
     "explanation": "Calculate the increase: 10% of $50,000 is 0.10 * $50,000 = $5,000. Add the increase to the original profit: $50,000 + $5,000 = $55,000.",
     "skill": "Percentages",
-    "difficulty": "medium"
-  },
-  {
-    "id": "teas_200",
-    "exam": "TEAS",
-    "section": "Math",
-    "question": "What is the sum of the interior angles of a triangle?",
-    "options": [
-      {
-        "label": "A",
-        "text": "90 degrees"
-      },
-      {
-        "label": "B",
-        "text": "180 degrees"
-      },
-      {
-        "label": "C",
-        "text": "270 degrees"
-      },
-      {
-        "label": "D",
-        "text": "360 degrees"
-      }
-    ],
-    "correctAnswer": "B",
-    "explanation": "The sum of the interior angles of any triangle is always 180 degrees.",
-    "skill": "Geometry",
-    "difficulty": "easy"
+    "difficulty": 5
   },
   {
     "id": "teas_201",
@@ -5625,7 +3021,7 @@
     "correctAnswer": "C",
     "explanation": "Divide both sides by 2: y - 3 = 4. Add 3 to both sides: y = 7.",
     "skill": "Algebra",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "teas_202",
@@ -5643,17 +3039,17 @@
       },
       {
         "label": "C",
-        "text": "3"
+        "text": "4"
       },
       {
         "label": "D",
-        "text": "4"
+        "text": "3"
       }
     ],
-    "correctAnswer": "C",
+    "correctAnswer": "D",
     "explanation": "You need to find how many 1/4 cups are in 3/4 cup. This is equivalent to dividing 3/4 by 1/4, which is (3/4) * (4/1) = 3.",
     "skill": "Fractions",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "teas_203",
@@ -5681,35 +3077,7 @@
     "correctAnswer": "B",
     "explanation": "First, order the numbers: 3, 5, 8, 10, 12. The median is the middle number, which is 8.",
     "skill": "Statistics",
-    "difficulty": "medium"
-  },
-  {
-    "id": "teas_204",
-    "exam": "TEAS",
-    "section": "Math",
-    "question": "A car's gas tank holds 15 gallons. If the tank is currently 1/3 full, how many gallons are in the tank?",
-    "options": [
-      {
-        "label": "A",
-        "text": "3 gallons"
-      },
-      {
-        "label": "B",
-        "text": "5 gallons"
-      },
-      {
-        "label": "C",
-        "text": "10 gallons"
-      },
-      {
-        "label": "D",
-        "text": "12 gallons"
-      }
-    ],
-    "correctAnswer": "B",
-    "explanation": "To find 1/3 of 15 gallons, multiply: (1/3) * 15 gallons = 5 gallons.",
-    "skill": "Fractions",
-    "difficulty": "easy"
+    "difficulty": 5
   },
   {
     "id": "teas_205",
@@ -5737,7 +3105,7 @@
     "correctAnswer": "D",
     "explanation": "Substitute x = 5 into the expression: 2 * (5^2) - 3 = 2 * 25 - 3 = 50 - 3 = 47.",
     "skill": "Algebra",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "teas_206",
@@ -5765,63 +3133,7 @@
     "correctAnswer": "B",
     "explanation": "The compound subject 'Each of the students' requires a singular verb. 'Has' is correct, but 'their' is plural. The sentence should read: 'Each of the students has completed his or her assignment.' Option B contains a pronoun-antecedent agreement error which is closely related to subject-verb agreement.",
     "skill": "Subject-Verb Agreement",
-    "difficulty": "medium"
-  },
-  {
-    "id": "teas_207",
-    "exam": "TEAS",
-    "section": "English and Language Usage",
-    "question": "Identify the sentence that correctly uses a semicolon.",
-    "options": [
-      {
-        "label": "A",
-        "text": "The weather was beautiful; we decided to go for a walk."
-      },
-      {
-        "label": "B",
-        "text": "I need to buy milk; eggs; and bread from the store."
-      },
-      {
-        "label": "C",
-        "text": "She studied diligently; therefore, she passed the exam."
-      },
-      {
-        "label": "D",
-        "text": "He loves to read; especially historical fiction."
-      }
-    ],
-    "correctAnswer": "A",
-    "explanation": "A semicolon can be used to connect two independent clauses that are closely related in meaning. Options B and D use semicolons incorrectly. Option C uses a conjunctive adverb; while a semicolon is appropriate before 'therefore', it is not needed after it, and the comma after 'therefore' is correct.",
-    "skill": "Punctuation: Semicolons",
-    "difficulty": "easy"
-  },
-  {
-    "id": "teas_208",
-    "exam": "TEAS",
-    "section": "English and Language Usage",
-    "question": "Which word is a homophone for 'accept'?",
-    "options": [
-      {
-        "label": "A",
-        "text": "except"
-      },
-      {
-        "label": "B",
-        "text": "adept"
-      },
-      {
-        "label": "C",
-        "text": "aspect"
-      },
-      {
-        "label": "D",
-        "text": "access"
-      }
-    ],
-    "correctAnswer": "A",
-    "explanation": "Homophones are words that sound alike but have different meanings and spellings. 'Except' means to exclude or leave out, while 'accept' means to receive or agree to.",
-    "skill": "Word Choice and Usage",
-    "difficulty": "easy"
+    "difficulty": 5
   },
   {
     "id": "teas_209",
@@ -5849,35 +3161,7 @@
     "correctAnswer": "C",
     "explanation": "Option A is incorrect because 'I' should be 'me' (object of the preposition 'to'). Option B is incorrect because 'me' should be 'I' (part of the subject). Option D is incorrect because 'I' should be 'me' (object of the preposition 'between'). Option C uses the objective case pronoun 'her' correctly.",
     "skill": "Pronoun Case",
-    "difficulty": "medium"
-  },
-  {
-    "id": "teas_210",
-    "exam": "TEAS",
-    "section": "English and Language Usage",
-    "question": "What is the correct way to punctuate the following phrase: 'a fluffy white dog'?",
-    "options": [
-      {
-        "label": "A",
-        "text": "a fluffy, white dog"
-      },
-      {
-        "label": "B",
-        "text": "a fluffy white, dog"
-      },
-      {
-        "label": "C",
-        "text": "a fluffy; white dog"
-      },
-      {
-        "label": "D",
-        "text": "a, fluffy white dog"
-      }
-    ],
-    "correctAnswer": "A",
-    "explanation": "When two adjectives modify a noun and both can be reversed or have 'and' placed between them, a comma is used. 'A white, fluffy dog' is also correct, indicating the adjectives are coordinate.",
-    "skill": "Punctuation: Commas",
-    "difficulty": "easy"
+    "difficulty": 5
   },
   {
     "id": "teas_211",
@@ -5905,7 +3189,7 @@
     "correctAnswer": "B",
     "explanation": "For singular nouns ending in 's', the possessive is typically formed by adding 's' (Charles's). Option A should be 'children's'. Option C should be 'team's' or 'teams''. Option D should be 'It's' (contraction of 'it is').",
     "skill": "Punctuation: Apostrophes",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "teas_212",
@@ -5923,45 +3207,17 @@
       },
       {
         "label": "C",
-        "text": "Complex"
+        "text": "Compound-Complex"
       },
       {
         "label": "D",
-        "text": "Compound-Complex"
+        "text": "Complex"
       }
     ],
-    "correctAnswer": "C",
+    "correctAnswer": "D",
     "explanation": "This sentence contains one independent clause ('we still went to the park') and one dependent clause ('Although the weather was cold'). A sentence with one independent and at least one dependent clause is complex.",
     "skill": "Sentence Structure",
-    "difficulty": "medium"
-  },
-  {
-    "id": "teas_213",
-    "exam": "TEAS",
-    "section": "English and Language Usage",
-    "question": "Which of the following is a correctly spelled word?",
-    "options": [
-      {
-        "label": "A",
-        "text": "definately"
-      },
-      {
-        "label": "B",
-        "text": "recieve"
-      },
-      {
-        "label": "C",
-        "text": "separate"
-      },
-      {
-        "label": "D",
-        "text": "wierd"
-      }
-    ],
-    "correctAnswer": "C",
-    "explanation": "'Separate' is spelled correctly. 'Definitely' is often misspelled as 'definately'. 'Receive' follows the 'i before e except after c' rule. 'Weird' is an exception to that rule.",
-    "skill": "Spelling",
-    "difficulty": "easy"
+    "difficulty": 5
   },
   {
     "id": "teas_214",
@@ -5989,7 +3245,7 @@
     "correctAnswer": "B",
     "explanation": "Parallel structure means using the same pattern of words to show that two or more ideas have the same level of importance. In option B, all three words are adjectives. Options A, C, and D mix different grammatical forms (gerunds, infinitives, nouns).",
     "skill": "Parallel Structure",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "teas_215",
@@ -6017,7 +3273,7 @@
     "correctAnswer": "B",
     "explanation": "A synonym is a word that has a similar meaning. 'Benevolent' means well-meaning and kindly. 'Malicious', 'cruel', and 'selfish' are antonyms or unrelated.",
     "skill": "Vocabulary: Synonyms",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "teas_216",
@@ -6045,7 +3301,7 @@
     "correctAnswer": "A",
     "explanation": "A dangling modifier is a phrase that does not logically modify the word it is intended to. In the original sentence, 'Running quickly' seems to modify 'the finish line', which is impossible. Option A correctly attaches the action to the implied subject, 'she'.",
     "skill": "Sentence Clarity: Dangling Modifiers",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "teas_217",
@@ -6073,35 +3329,7 @@
     "correctAnswer": "C",
     "explanation": "Option C incorrectly uses 'it's' (a contraction of 'it is' or 'it has') instead of 'its' (the possessive pronoun). Option A correctly uses 'There'. Option B correctly uses 'They're'. Option D should use 'You're' instead of 'Your'. However, 'it's/its' is a very common error.",
     "skill": "Word Choice and Usage",
-    "difficulty": "medium"
-  },
-  {
-    "id": "teas_218",
-    "exam": "TEAS",
-    "section": "English and Language Usage",
-    "question": "What is the correct plural form of 'child'?",
-    "options": [
-      {
-        "label": "A",
-        "text": "childs"
-      },
-      {
-        "label": "B",
-        "text": "childen"
-      },
-      {
-        "label": "C",
-        "text": "children"
-      },
-      {
-        "label": "D",
-        "text": "childs'"
-      }
-    ],
-    "correctAnswer": "C",
-    "explanation": "The plural of 'child' is an irregular plural, formed by adding '-ren'. 'Childs' and 'childen' are incorrect. 'Childs'' would be possessive plural, meaning belonging to multiple children.",
-    "skill": "Plurals",
-    "difficulty": "easy"
+    "difficulty": 5
   },
   {
     "id": "teas_219",
@@ -6111,7 +3339,7 @@
     "options": [
       {
         "label": "A",
-        "text": "He packed the essentials: warm clothes, sturdy shoes, and a map."
+        "text": "She had one goal: to finish the marathon."
       },
       {
         "label": "B",
@@ -6123,13 +3351,13 @@
       },
       {
         "label": "D",
-        "text": "She had one goal: to finish the marathon."
+        "text": "He packed the essentials: warm clothes, sturdy shoes, and a map."
       }
     ],
-    "correctAnswer": "A",
-    "explanation": "A colon can be used after an independent clause to introduce a list. Options B and C are incorrect because the colon follows an incomplete introductory phrase ('Bring the following:', 'The recipe calls for:'). Option D is correct, but option A is also perfectly correct and a common usage.",
+    "correctAnswer": "D",
+    "explanation": "A colon can be used after an independent clause to introduce a list. Options B and C are incorrect because the colon follows an incomplete introductory phrase ('Bring the following:', 'The recipe calls for:'). Option A is correct, but option A is also perfectly correct and a common usage.",
     "skill": "Punctuation: Colons",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "teas_220",
@@ -6139,7 +3367,7 @@
     "options": [
       {
         "label": "A",
-        "text": "She asked, \"Are you coming?\""
+        "text": "Is this your book? she asked."
       },
       {
         "label": "B",
@@ -6151,13 +3379,13 @@
       },
       {
         "label": "D",
-        "text": "Is this your book? she asked."
+        "text": "She asked, \"Are you coming?\""
       }
     ],
-    "correctAnswer": "A",
-    "explanation": "Option A correctly places the question mark inside the quotation marks because it is part of the quoted question. Option B should use double quotation marks. Option C correctly places the period inside the quotation marks. Option D has incorrect punctuation placement and should be 'She asked, \"Is this your book?\" '",
+    "correctAnswer": "D",
+    "explanation": "Option D correctly places the question mark inside the quotation marks because it is part of the quoted question. Option B should use double quotation marks. Option C correctly places the period inside the quotation marks. Option A has incorrect punctuation placement and should be 'She asked, \"Is this your book?\" '",
     "skill": "Punctuation: Quotation Marks",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "teas_221",
@@ -6185,7 +3413,7 @@
     "correctAnswer": "B",
     "explanation": "An antonym is a word that has the opposite meaning. 'Pessimistic' means tending to see the worst aspect of things or believe that the worst will happen. 'Hopeful' means feeling or inspiring optimism about a future event.",
     "skill": "Vocabulary: Antonyms",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "teas_222",
@@ -6213,63 +3441,7 @@
     "correctAnswer": "A",
     "explanation": "Option A maintains consistent past tense. Option B mixes past tense ('bought') with present progressive ('is going'). Option C is correct. Option D mixes past tense ('was studying') with present tense ('rains').",
     "skill": "Verb Tense Consistency",
-    "difficulty": "medium"
-  },
-  {
-    "id": "teas_223",
-    "exam": "TEAS",
-    "section": "English and Language Usage",
-    "question": "Which of the following is a complete sentence?",
-    "options": [
-      {
-        "label": "A",
-        "text": "Because the train was late."
-      },
-      {
-        "label": "B",
-        "text": "Running down the street."
-      },
-      {
-        "label": "C",
-        "text": "The cat slept peacefully on the windowsill."
-      },
-      {
-        "label": "D",
-        "text": "Although he tried his best."
-      }
-    ],
-    "correctAnswer": "C",
-    "explanation": "A complete sentence must contain a subject and a verb and express a complete thought. Option C has both ('cat' is the subject, 'slept' is the verb) and makes complete sense. Options A, B, and D are sentence fragments.",
-    "skill": "Sentence Completeness",
-    "difficulty": "easy"
-  },
-  {
-    "id": "teas_224",
-    "exam": "TEAS",
-    "section": "English and Language Usage",
-    "question": "Identify the sentence that uses capitalization correctly.",
-    "options": [
-      {
-        "label": "A",
-        "text": "My Favorite holiday is christmas."
-      },
-      {
-        "label": "B",
-        "text": "Dr. Smith will see you now."
-      },
-      {
-        "label": "C",
-        "text": "I live on main Street."
-      },
-      {
-        "label": "D",
-        "text": "The Eifel Tower is in Paris."
-      }
-    ],
-    "correctAnswer": "B",
-    "explanation": "Capitalization rules include proper nouns, titles, and beginnings of sentences. 'Christmas' is a proper noun and should be capitalized. 'Main Street' should be capitalized if it's part of a proper address, but 'main street' is generally not. 'Eiffel Tower' is a proper noun. 'Dr.' is a title and should be capitalized. 'Christmas' should also be capitalized.",
-    "skill": "Capitalization",
-    "difficulty": "easy"
+    "difficulty": 5
   },
   {
     "id": "teas_225",
@@ -6279,7 +3451,7 @@
     "options": [
       {
         "label": "A",
-        "text": "profound"
+        "text": "basic"
       },
       {
         "label": "B",
@@ -6291,13 +3463,13 @@
       },
       {
         "label": "D",
-        "text": "basic"
+        "text": "profound"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "The sentence implies a high degree of wisdom. 'Profound' means deep. 'Shallow', 'limited', and 'basic' all suggest a lack of depth or extent, which would contradict the implication of being 'known for' that wisdom.",
     "skill": "Word Choice and Usage",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "teas_226",
@@ -6325,35 +3497,7 @@
     "correctAnswer": "A",
     "explanation": "The original sentence implies the children are on paper plates. The phrase 'on paper plates' should be closer to 'cookies'. Options A and B place it appropriately. Option C also works grammatically. Option A is a clear and common way to fix it.",
     "skill": "Sentence Clarity: Misplaced Modifiers",
-    "difficulty": "hard"
-  },
-  {
-    "id": "teas_227",
-    "exam": "TEAS",
-    "section": "English and Language Usage",
-    "question": "Which sentence uses a comma correctly in a series of items?",
-    "options": [
-      {
-        "label": "A",
-        "text": "We need to buy apples, bananas and oranges."
-      },
-      {
-        "label": "B",
-        "text": "We need to buy apples bananas, and oranges."
-      },
-      {
-        "label": "C",
-        "text": "We need to buy apples, bananas, and oranges."
-      },
-      {
-        "label": "D",
-        "text": "We need to buy, apples, bananas, and oranges."
-      }
-    ],
-    "correctAnswer": "C",
-    "explanation": "The Oxford comma (the comma before 'and' in a list of three or more items) is considered standard in many contexts for clarity. Option C includes this comma. Option A omits it. Option B places it incorrectly. Option D has an unnecessary comma after 'buy'.",
-    "skill": "Punctuation: Commas",
-    "difficulty": "easy"
+    "difficulty": 7
   },
   {
     "id": "teas_228",
@@ -6371,45 +3515,17 @@
       },
       {
         "label": "C",
-        "text": "Her positive attitude will effect change."
-      },
-      {
-        "label": "D",
         "text": "The medication had no affect."
-      }
-    ],
-    "correctAnswer": "C",
-    "explanation": "'Affect' is usually a verb meaning to influence. 'Effect' is usually a noun meaning result. Option A incorrectly uses 'effect' as a verb. Option B incorrectly uses 'affect' as a noun. Option D incorrectly uses 'affect' as a noun. Option C correctly uses 'effect' as a verb (meaning to bring about).",
-    "skill": "Word Choice and Usage",
-    "difficulty": "medium"
-  },
-  {
-    "id": "teas_229",
-    "exam": "TEAS",
-    "section": "English and Language Usage",
-    "question": "Identify the sentence with a subject-verb disagreement.",
-    "options": [
-      {
-        "label": "A",
-        "text": "The dog barks loudly."
-      },
-      {
-        "label": "B",
-        "text": "My friends are coming over."
-      },
-      {
-        "label": "C",
-        "text": "Mathematics is my favorite subject."
       },
       {
         "label": "D",
-        "text": "Those books is interesting."
+        "text": "Her positive attitude will effect change."
       }
     ],
     "correctAnswer": "D",
-    "explanation": "The subject 'books' is plural, but the verb 'is' is singular. The correct verb would be 'are'. This is a clear subject-verb agreement error.",
-    "skill": "Subject-Verb Agreement",
-    "difficulty": "easy"
+    "explanation": "'Affect' is usually a verb meaning to influence. 'Effect' is usually a noun meaning result. Option A incorrectly uses 'effect' as a verb. Option B incorrectly uses 'affect' as a noun. Option C incorrectly uses 'affect' as a noun. Option D correctly uses 'effect' as a verb (meaning to bring about).",
+    "skill": "Word Choice and Usage",
+    "difficulty": 5
   },
   {
     "id": "teas_230",
@@ -6437,35 +3553,7 @@
     "correctAnswer": "D",
     "explanation": "Option A should be 'They're'. Option B should be 'It's'. Option C should be 'You've'. Option D correctly uses 'can't' as a contraction of 'cannot'.",
     "skill": "Punctuation: Apostrophes",
-    "difficulty": "medium"
-  },
-  {
-    "id": "teas_231",
-    "exam": "TEAS",
-    "section": "English and Language Usage",
-    "question": "Which of the following sentences uses a comma correctly?",
-    "options": [
-      {
-        "label": "A",
-        "text": "After the long meeting, we decided to go out for dinner."
-      },
-      {
-        "label": "B",
-        "text": "We decided, to go out for dinner after the long meeting."
-      },
-      {
-        "label": "C",
-        "text": "We decided to go out, for dinner after the long meeting."
-      },
-      {
-        "label": "D",
-        "text": "We decided to go out for dinner, after the long meeting."
-      }
-    ],
-    "correctAnswer": "A",
-    "explanation": "A comma is correctly used here to separate an introductory adverbial phrase from the main clause of the sentence.",
-    "skill": "Punctuation",
-    "difficulty": "easy"
+    "difficulty": 5
   },
   {
     "id": "teas_232",
@@ -6493,35 +3581,7 @@
     "correctAnswer": "B",
     "explanation": "This is a compound sentence because it contains two independent clauses joined by a coordinating conjunction ('and').",
     "skill": "Sentence Structure",
-    "difficulty": "medium"
-  },
-  {
-    "id": "teas_233",
-    "exam": "TEAS",
-    "section": "English and Language Usage",
-    "question": "Which word is a possessive pronoun?",
-    "options": [
-      {
-        "label": "A",
-        "text": "they"
-      },
-      {
-        "label": "B",
-        "text": "their"
-      },
-      {
-        "label": "C",
-        "text": "there"
-      },
-      {
-        "label": "D",
-        "text": "them"
-      }
-    ],
-    "correctAnswer": "B",
-    "explanation": "'Their' is used to show possession.",
-    "skill": "Grammar",
-    "difficulty": "easy"
+    "difficulty": 5
   },
   {
     "id": "teas_234",
@@ -6549,7 +3609,7 @@
     "correctAnswer": "B",
     "explanation": "The subject 'flock' is singular, so the verb must also be singular ('flies').",
     "skill": "Grammar",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "teas_235",
@@ -6577,119 +3637,7 @@
     "correctAnswer": "B",
     "explanation": "Option B contains two independent clauses ('It was raining heavily' and 'the wind howled through the trees') run together without proper punctuation or conjunction.",
     "skill": "Sentence Structure",
-    "difficulty": "medium"
-  },
-  {
-    "id": "teas_236",
-    "exam": "TEAS",
-    "section": "English and Language Usage",
-    "question": "What is the correct past tense of the verb 'to swim'?",
-    "options": [
-      {
-        "label": "A",
-        "text": "swum"
-      },
-      {
-        "label": "B",
-        "text": "swam"
-      },
-      {
-        "label": "C",
-        "text": "swimmer"
-      },
-      {
-        "label": "D",
-        "text": "swimmed"
-      }
-    ],
-    "correctAnswer": "B",
-    "explanation": "The simple past tense of 'swim' is 'swam'.",
-    "skill": "Grammar",
-    "difficulty": "easy"
-  },
-  {
-    "id": "teas_237",
-    "exam": "TEAS",
-    "section": "English and Language Usage",
-    "question": "Choose the sentence that uses an apostrophe correctly to show possession.",
-    "options": [
-      {
-        "label": "A",
-        "text": "The dogs tail wagged."
-      },
-      {
-        "label": "B",
-        "text": "The dogs' tail wagged."
-      },
-      {
-        "label": "C",
-        "text": "The dog's tail wagged."
-      },
-      {
-        "label": "D",
-        "text": "The dogs tails wagged."
-      }
-    ],
-    "correctAnswer": "C",
-    "explanation": "An apostrophe followed by 's' ('dog's') is used to show singular possession.",
-    "skill": "Punctuation",
-    "difficulty": "easy"
-  },
-  {
-    "id": "teas_238",
-    "exam": "TEAS",
-    "section": "English and Language Usage",
-    "question": "Which word is an adverb?",
-    "options": [
-      {
-        "label": "A",
-        "text": "quick"
-      },
-      {
-        "label": "B",
-        "text": "quickly"
-      },
-      {
-        "label": "C",
-        "text": "quickness"
-      },
-      {
-        "label": "D",
-        "text": "quicken"
-      }
-    ],
-    "correctAnswer": "B",
-    "explanation": "'Quickly' modifies a verb, adjective, or another adverb, indicating manner.",
-    "skill": "Grammar",
-    "difficulty": "easy"
-  },
-  {
-    "id": "teas_239",
-    "exam": "TEAS",
-    "section": "English and Language Usage",
-    "question": "Correct the spelling in the following sentence: 'He received a receit for the purchase.'",
-    "options": [
-      {
-        "label": "A",
-        "text": "He received a reciept for the purchase."
-      },
-      {
-        "label": "B",
-        "text": "He received a receipt for the purchase."
-      },
-      {
-        "label": "C",
-        "text": "He received a reseipt for the purchase."
-      },
-      {
-        "label": "D",
-        "text": "He received a resceit for the purchase."
-      }
-    ],
-    "correctAnswer": "B",
-    "explanation": "The correct spelling is 'receipt'.",
-    "skill": "Spelling",
-    "difficulty": "easy"
+    "difficulty": 5
   },
   {
     "id": "teas_240",
@@ -6717,7 +3665,7 @@
     "correctAnswer": "C",
     "explanation": "The antecedent is the noun that a pronoun refers to. 'It' refers to 'the book'.",
     "skill": "Grammar",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "teas_241",
@@ -6745,7 +3693,7 @@
     "correctAnswer": "B",
     "explanation": "All items in the list ('hiking', 'swimming', 'riding') are in the gerund form (-ing), creating parallel structure.",
     "skill": "Grammar",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "teas_242",
@@ -6773,35 +3721,7 @@
     "correctAnswer": "C",
     "explanation": "The phrase 'walking its owner' is misplaced and seems to modify 'park' rather than the dog.",
     "skill": "Grammar",
-    "difficulty": "hard"
-  },
-  {
-    "id": "teas_243",
-    "exam": "TEAS",
-    "section": "English and Language Usage",
-    "question": "Which word is a conjunction?",
-    "options": [
-      {
-        "label": "A",
-        "text": "because"
-      },
-      {
-        "label": "B",
-        "text": "under"
-      },
-      {
-        "label": "C",
-        "text": "very"
-      },
-      {
-        "label": "D",
-        "text": "this"
-      }
-    ],
-    "correctAnswer": "A",
-    "explanation": "'Because' is a subordinating conjunction that connects a dependent clause to an independent clause.",
-    "skill": "Grammar",
-    "difficulty": "easy"
+    "difficulty": 7
   },
   {
     "id": "teas_244",
@@ -6829,63 +3749,7 @@
     "correctAnswer": "B",
     "explanation": "The plural of 'crisis' is 'crises'. This is an irregular plural ending in -is.",
     "skill": "Grammar",
-    "difficulty": "medium"
-  },
-  {
-    "id": "teas_245",
-    "exam": "TEAS",
-    "section": "English and Language Usage",
-    "question": "Which sentence is grammatically correct?",
-    "options": [
-      {
-        "label": "A",
-        "text": "He don't like broccoli."
-      },
-      {
-        "label": "B",
-        "text": "He doesn't like broccoli."
-      },
-      {
-        "label": "C",
-        "text": "He not like broccoli."
-      },
-      {
-        "label": "D",
-        "text": "He no like broccoli."
-      }
-    ],
-    "correctAnswer": "B",
-    "explanation": "For the third-person singular subject 'He', the correct negative form of 'do' is 'does not' or the contraction 'doesn't'.",
-    "skill": "Grammar",
-    "difficulty": "easy"
-  },
-  {
-    "id": "teas_246",
-    "exam": "TEAS",
-    "section": "English and Language Usage",
-    "question": "Determine the part of speech for the word 'beautiful' in the sentence: 'The beautiful sunset painted the sky.'",
-    "options": [
-      {
-        "label": "A",
-        "text": "Adverb"
-      },
-      {
-        "label": "B",
-        "text": "Verb"
-      },
-      {
-        "label": "C",
-        "text": "Adjective"
-      },
-      {
-        "label": "D",
-        "text": "Noun"
-      }
-    ],
-    "correctAnswer": "C",
-    "explanation": "'Beautiful' describes the noun 'sunset', acting as an adjective.",
-    "skill": "Grammar",
-    "difficulty": "easy"
+    "difficulty": 5
   },
   {
     "id": "teas_247",
@@ -6913,7 +3777,7 @@
     "correctAnswer": "A",
     "explanation": "The pronoun 'I' is always capitalized. Proper nouns like 'Elm Street' are also capitalized.",
     "skill": "Capitalization",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "teas_248",
@@ -6941,7 +3805,7 @@
     "correctAnswer": "A",
     "explanation": "A semicolon is used to connect two independent clauses when the second clause begins with a conjunctive adverb like 'however'.",
     "skill": "Punctuation",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "teas_249",
@@ -6969,7 +3833,7 @@
     "correctAnswer": "C",
     "explanation": "Option C has a subject ('dog') and a predicate ('barked loudly at the mailman') and expresses a complete thought.",
     "skill": "Sentence Structure",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "teas_250",
@@ -6997,7 +3861,7 @@
     "correctAnswer": "D",
     "explanation": "'Affect' is typically a verb meaning 'to influence'. 'Effect' is typically a noun meaning 'a result'. In option D, 'affect' is used correctly as a verb.",
     "skill": "Grammar",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "teas_251",
@@ -7025,7 +3889,7 @@
     "correctAnswer": "C",
     "explanation": "A comma splice occurs when two independent clauses are joined only by a comma. Sentence C incorrectly links 'She studied for hours' and 'she felt confident about the exam' with just a comma. It should be separated by a semicolon, a period, or a coordinating conjunction.",
     "skill": "Punctuation",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "teas_252",
@@ -7053,7 +3917,7 @@
     "correctAnswer": "D",
     "explanation": "The subject 'collection' is singular, and the verb 'is' is singular. In option A, 'team' is singular, requiring 'is'. In option B, 'Each' is singular, requiring 'has'. In option C, the verb should agree with the closest subject ('cat'), which is singular, so it should be 'is'.",
     "skill": "Grammar",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "teas_253",
@@ -7081,91 +3945,7 @@
     "correctAnswer": "C",
     "explanation": "Option C is a complete sentence with a subject ('He') and a verb ('finished'). The phrase 'running quickly' acts as a participial phrase modifying 'He'. Option A is a fragment. Option B is awkward and potentially grammatically incorrect in its structure. Option D has a misplaced modifier or is missing punctuation.",
     "skill": "Sentence Structure",
-    "difficulty": "hard"
-  },
-  {
-    "id": "teas_254",
-    "exam": "TEAS",
-    "section": "English and Language Usage",
-    "question": "Choose the sentence that uses an apostrophe correctly to show possession:",
-    "options": [
-      {
-        "label": "A",
-        "text": "The childrens' toys were scattered everywhere."
-      },
-      {
-        "label": "B",
-        "text": "The dog wagged its tail happily."
-      },
-      {
-        "label": "C",
-        "text": "The students books were on the desk."
-      },
-      {
-        "label": "D",
-        "text": "The car's headlights shone brightly."
-      }
-    ],
-    "correctAnswer": "D",
-    "explanation": "Option D correctly uses the apostrophe to show that the headlights belong to the car (singular possessive). Option A should be 'children's toys' (irregular plural). Option C should be 'students' books' (plural possessive, if referring to multiple students' books) or 'student's books' (singular possessive, if referring to one student's books). Option B correctly uses 'its' as a possessive pronoun, not an apostrophe for possession.",
-    "skill": "Punctuation",
-    "difficulty": "easy"
-  },
-  {
-    "id": "teas_255",
-    "exam": "TEAS",
-    "section": "English and Language Usage",
-    "question": "Which word is misspelled?",
-    "options": [
-      {
-        "label": "A",
-        "text": "Receive"
-      },
-      {
-        "label": "B",
-        "text": "Definately"
-      },
-      {
-        "label": "C",
-        "text": "Believe"
-      },
-      {
-        "label": "D",
-        "text": "Achieve"
-      }
-    ],
-    "correctAnswer": "B",
-    "explanation": "The correct spelling is 'definitely'. The word 'definately' is a common misspelling.",
-    "skill": "Spelling",
-    "difficulty": "easy"
-  },
-  {
-    "id": "teas_256",
-    "exam": "TEAS",
-    "section": "English and Language Usage",
-    "question": "In the sentence 'She quickly and quietly opened the door,' what part of speech is 'quickly'?",
-    "options": [
-      {
-        "label": "A",
-        "text": "Adjective"
-      },
-      {
-        "label": "B",
-        "text": "Adverb"
-      },
-      {
-        "label": "C",
-        "text": "Verb"
-      },
-      {
-        "label": "D",
-        "text": "Preposition"
-      }
-    ],
-    "correctAnswer": "B",
-    "explanation": "'Quickly' modifies the verb 'opened,' describing how the action was performed. Words that modify verbs, adjectives, or other adverbs are adverbs.",
-    "skill": "Parts of Speech",
-    "difficulty": "easy"
+    "difficulty": 7
   },
   {
     "id": "teas_257",
@@ -7193,7 +3973,7 @@
     "correctAnswer": "A",
     "explanation": "Option A correctly uses a semicolon to join two closely related independent clauses. Option B could also be correct, but A is a more conventional use. Option C incorrectly uses a semicolon after a dependent clause. Option D is missing a comma after the conjunctive adverb 'however'.",
     "skill": "Punctuation",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "teas_258",
@@ -7221,7 +4001,7 @@
     "correctAnswer": "C",
     "explanation": "Option C maintains parallel structure by using gerunds (reviewing, discussing, approving) for all items in the list. Option A mixes a gerund ('to read') with other verb forms. Option B mixes adjectives and a noun phrase. Option D mixes an infinitive ('To succeed') with verbs and noun phrases.",
     "skill": "Grammar",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "teas_259",
@@ -7249,7 +4029,7 @@
     "correctAnswer": "B",
     "explanation": "The complete subject includes the simple subject ('book') and all its modifiers ('The,' 'old,' 'worn-out').",
     "skill": "Sentence Structure",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "teas_260",
@@ -7277,7 +4057,7 @@
     "correctAnswer": "C",
     "explanation": "The pronoun 'I' is used incorrectly. After a preposition ('to'), the objective case pronoun 'me' should be used. The sentence should read: 'She gave the award to John and me.' Option A uses 'their' as a singular pronoun which is widely accepted in modern usage. Option B is correctly structured for asking about the object of the verb 'ask'. Option D correctly uses the possessive pronoun 'its'.",
     "skill": "Grammar",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "teas_261",
@@ -7305,35 +4085,7 @@
     "correctAnswer": "B",
     "explanation": "Option B uses the subordinating conjunction 'Although' to show the contrast between the difficulty of the project and its timely completion, creating a more sophisticated sentence. Option A lacks transition. Option C implies a cause-and-effect that doesn't fit. Option D implies a cause-and-effect that doesn't fit.",
     "skill": "Writing Style",
-    "difficulty": "medium"
-  },
-  {
-    "id": "teas_262",
-    "exam": "TEAS",
-    "section": "English and Language Usage",
-    "question": "Which of the following is a run-on sentence?",
-    "options": [
-      {
-        "label": "A",
-        "text": "The sun set, and the stars appeared."
-      },
-      {
-        "label": "B",
-        "text": "Because the sun set, the stars appeared."
-      },
-      {
-        "label": "C",
-        "text": "The sun set the stars appeared."
-      },
-      {
-        "label": "D",
-        "text": "After the sun set, the stars appeared."
-      }
-    ],
-    "correctAnswer": "C",
-    "explanation": "Option C is a run-on sentence because it contains two independent clauses ('The sun set' and 'the stars appeared') joined with no punctuation or conjunction. It should be separated by a period, semicolon, or conjunction.",
-    "skill": "Sentence Structure",
-    "difficulty": "easy"
+    "difficulty": 5
   },
   {
     "id": "teas_263",
@@ -7361,35 +4113,7 @@
     "correctAnswer": "C",
     "explanation": "A compound sentence contains two or more independent clauses joined by a coordinating conjunction (like 'but'), a semicolon, or a colon. Option C has two independent clauses: 'The cat slept' and 'the dog barked loudly,' joined by the conjunction 'but.' Option A is simple. Option B is complex. Option D is a simple sentence with a participial phrase.",
     "skill": "Sentence Structure",
-    "difficulty": "medium"
-  },
-  {
-    "id": "teas_264",
-    "exam": "TEAS",
-    "section": "English and Language Usage",
-    "question": "Which word choice demonstrates a stronger verb?",
-    "options": [
-      {
-        "label": "A",
-        "text": "He walked into the room."
-      },
-      {
-        "label": "B",
-        "text": "He strode into the room."
-      },
-      {
-        "label": "C",
-        "text": "He went into the room."
-      },
-      {
-        "label": "D",
-        "text": "He entered the room."
-      }
-    ],
-    "correctAnswer": "B",
-    "explanation": "'Strode' is a stronger, more descriptive verb than 'walked,' 'went,' or 'entered.' It implies a purposeful and confident manner of walking.",
-    "skill": "Word Choice",
-    "difficulty": "easy"
+    "difficulty": 5
   },
   {
     "id": "teas_265",
@@ -7417,7 +4141,7 @@
     "correctAnswer": "D",
     "explanation": "Option D correctly capitalizes the title 'Dr.' preceding a name. Option A should be 'Christmas.' Option B should be 'Tuesday.' Option C should be 'french' and 'spanish' because they are languages, not proper nouns in this context (unless referring to the people).",
     "skill": "Capitalization",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "teas_266",
@@ -7445,7 +4169,7 @@
     "correctAnswer": "C",
     "explanation": "Option C has a dangling modifier. The introductory phrase 'Having finished dinner' modifies the subject of the sentence. Since the dishes were not finished eating dinner, the sentence is illogical. It should be corrected to 'Having finished dinner, we washed the dishes.' Option B implies the park was barking. Option A is acceptable, implying the viewers were covered in snow, though slightly ambiguous.",
     "skill": "Sentence Structure",
-    "difficulty": "hard"
+    "difficulty": 7
   },
   {
     "id": "teas_267",
@@ -7473,7 +4197,7 @@
     "correctAnswer": "A",
     "explanation": "'Ephemeral' describes something that is fleeting or exists only briefly.",
     "skill": "Vocabulary",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "teas_268",
@@ -7501,7 +4225,7 @@
     "correctAnswer": "A",
     "explanation": "Option A correctly places the question mark inside the closing quotation mark because it is part of the quoted question. Option B requires a comma after 'said' and the period should be inside the quotation marks. Option C is a sentence fragment used as a quote without context. Option D requires a comma after 'read' and the period outside the quotation marks.",
     "skill": "Punctuation",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "teas_269",
@@ -7529,63 +4253,7 @@
     "correctAnswer": "B",
     "explanation": "Option B is the most concise and clear. It avoids wordy phrases like 'Due to the fact that' and 'until a later date.' Options A and D are wordy, and C is slightly less direct than B.",
     "skill": "Writing Style",
-    "difficulty": "medium"
-  },
-  {
-    "id": "teas_270",
-    "exam": "TEAS",
-    "section": "English and Language Usage",
-    "question": "What is the correct plural form of 'analysis'?",
-    "options": [
-      {
-        "label": "A",
-        "text": "Analyses"
-      },
-      {
-        "label": "B",
-        "text": "Analysises"
-      },
-      {
-        "label": "C",
-        "text": "Analyse"
-      },
-      {
-        "label": "D",
-        "text": "Analysiss"
-      }
-    ],
-    "correctAnswer": "A",
-    "explanation": "Words ending in '-is' often change to '-es' for their plural form (e.g., crisis -> crises, thesis -> theses).",
-    "skill": "Grammar",
-    "difficulty": "easy"
-  },
-  {
-    "id": "teas_271",
-    "exam": "TEAS",
-    "section": "English and Language Usage",
-    "question": "Which sentence correctly uses a colon?",
-    "options": [
-      {
-        "label": "A",
-        "text": "He brought three items: a book, a pen, and a notebook."
-      },
-      {
-        "label": "B",
-        "text": "The problem was: too many people."
-      },
-      {
-        "label": "C",
-        "text": "She wanted to tell you: a secret."
-      },
-      {
-        "label": "D",
-        "text": "I need to go: to the store."
-      }
-    ],
-    "correctAnswer": "A",
-    "explanation": "A colon is used to introduce a list, explanation, or quotation after an independent clause. Option A correctly introduces a list. Options B, C, and D incorrectly use a colon after a fragment or a verb that doesn't require a formal introduction.",
-    "skill": "Punctuation",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "teas_272",
@@ -7613,35 +4281,7 @@
     "correctAnswer": "B",
     "explanation": "The passive voice occurs when the subject of the sentence receives the action. Here, 'A delicious meal' (the subject) is acted upon ('was prepared') by 'the chef' (the agent, often introduced by 'by'). Options A and D are active voice. Option C is active voice in the past progressive tense.",
     "skill": "Grammar",
-    "difficulty": "medium"
-  },
-  {
-    "id": "teas_273",
-    "exam": "TEAS",
-    "section": "English and Language Usage",
-    "question": "Which sentence correctly distinguishes between 'their,' 'there,' and 'they're'?",
-    "options": [
-      {
-        "label": "A",
-        "text": "Their going to leave there bags over there."
-      },
-      {
-        "label": "B",
-        "text": "They're going to leave their bags over there."
-      },
-      {
-        "label": "C",
-        "text": "There going to leave their bags they're."
-      },
-      {
-        "label": "D",
-        "text": "They're going to leave there bags they're."
-      }
-    ],
-    "correctAnswer": "B",
-    "explanation": "'They're' is a contraction of 'they are'. 'Their' is a possessive pronoun. 'There' indicates a place or is used as an expletive. Option B correctly uses all three.",
-    "skill": "Usage",
-    "difficulty": "easy"
+    "difficulty": 5
   },
   {
     "id": "teas_274",
@@ -7669,7 +4309,7 @@
     "correctAnswer": "D",
     "explanation": "Option D correctly uses a comma after an introductory dependent clause ('After the movie'). Option A needs a comma after 'Yes.' Option B needs commas between the adjectives 'thrilling' and 'exciting,' and before 'kept.' Option C is a complete sentence and does not require a comma.",
     "skill": "Punctuation",
-    "difficulty": "medium"
+    "difficulty": 5
   },
   {
     "id": "teas_275",
@@ -7697,175 +4337,7 @@
     "correctAnswer": "B",
     "explanation": "Option B uses vivid adjectives ('dilapidated,' 'broken,' 'peeling,' 'stormy') and imagery ('stood silhouetted') to create a strong mental picture for the reader. Options A, C, and D are generic and lack descriptive detail.",
     "skill": "Writing Style",
-    "difficulty": "medium"
-  },
-  {
-    "question": "If a recipe calls for 2 cups of flour and 3 eggs, how many eggs are needed for 5 cups of flour?",
-    "options": [
-      {
-        "label": "A",
-        "text": "6.5 eggs"
-      },
-      {
-        "label": "B",
-        "text": "7.5 eggs"
-      },
-      {
-        "label": "C",
-        "text": "8 eggs"
-      },
-      {
-        "label": "D",
-        "text": "8.5 eggs"
-      }
-    ],
-    "correctAnswer": "B",
-    "explanation": "This is a proportion problem. The ratio of flour to eggs is 2:3. Let x be the number of eggs needed for 5 cups of flour.  The proportion can be set up as 2/3 = 5/x. Cross-multiply to get 2x = 15. Divide by 2 to solve for x: x = 7.5.",
-    "skill": "Ratios and Proportions",
-    "difficulty": "easy",
-    "id": "teas_276",
-    "exam": "TEAS",
-    "section": "Math"
-  },
-  {
-    "question": "What is the value of 3x + 5 when x = 7?",
-    "options": [
-      {
-        "label": "A",
-        "text": "21"
-      },
-      {
-        "label": "B",
-        "text": "26"
-      },
-      {
-        "label": "C",
-        "text": "36"
-      },
-      {
-        "label": "D",
-        "text": "42"
-      }
-    ],
-    "correctAnswer": "C",
-    "explanation": "Substitute the value of x into the expression. 3 * 7 + 5 = 21 + 5 = 26.  Wait, let me recheck. 3 * 7 = 21. 21 + 5 = 26. Hold on, I made a calculation error in the explanation. The correct calculation is 3 * 7 + 5 = 21 + 5 = 26.  Let me re-evaluate the options and my own calculation.  Ah, it seems I've made a mistake in my initial check.  The correct calculation is 3 * 7 + 5 = 21 + 5 = 26.  Therefore, option B is the correct answer.  I will correct this.  Let's re-calculate: 3 * 7 = 21. 21 + 5 = 26.  It appears there was an error in the provided options or my understanding.  Let me carefully re-calculate.  3 times 7 is 21. Add 5 to 21, which results in 26.  My apologies for the confusion. The correct answer should be 26.  Since 26 is not an option, let me assume there was a typo in the question or options and proceed with the calculation.  3 * 7 = 21. 21 + 5 = 26.  Given the options, and double checking my basic arithmetic, it appears there is an issue with the provided options. If I strictly follow the calculation, none of the options are correct.  However, if I were forced to choose the closest or if there was a misunderstanding in transcription, I would still arrive at 26. Let me assume a typo in the original question was intended to lead to one of the options.  However, based on the question as written, the answer is 26.  Let me consider if I misread the question. 'What is the value of 3x + 5 when x = 7?'.  Calculation: 3 * 7 + 5 = 21 + 5 = 26.  Okay, I will proceed assuming there's an error in the options and provide the correct math.  3 * 7 + 5 = 21 + 5 = 26.  Since 26 is not an option, and I must choose one, this indicates a flaw in the question setup.  However, to demonstrate the process, the correct calculation yields 26. Let me re-examine the options. The options are 21, 26, 36, 42. It seems I missed option B!  The correct calculation IS 26, which is option B. My apologies for the lengthy internal debate.  The correct calculation is 3 * 7 + 5 = 21 + 5 = 26.",
-    "skill": "Algebraic Expressions",
-    "difficulty": "easy",
-    "id": "teas_277",
-    "exam": "TEAS",
-    "section": "Math"
-  },
-  {
-    "question": "A square has a perimeter of 24 cm. What is its area?",
-    "options": [
-      {
-        "label": "A",
-        "text": "6 cm²"
-      },
-      {
-        "label": "B",
-        "text": "12 cm²"
-      },
-      {
-        "label": "C",
-        "text": "36 cm²"
-      },
-      {
-        "label": "D",
-        "text": "144 cm²"
-      }
-    ],
-    "correctAnswer": "C",
-    "explanation": "The perimeter of a square is 4 times the length of one side (P = 4s). If the perimeter is 24 cm, then 4s = 24 cm, so s = 6 cm. The area of a square is the side length squared (A = s²). Therefore, the area is 6 cm * 6 cm = 36 cm².",
-    "skill": "Geometry: Perimeter and Area",
-    "difficulty": "easy",
-    "id": "teas_278",
-    "exam": "TEAS",
-    "section": "Math"
-  },
-  {
-    "question": "What is the greatest common divisor (GCD) of 18 and 30?",
-    "options": [
-      {
-        "label": "A",
-        "text": "2"
-      },
-      {
-        "label": "B",
-        "text": "3"
-      },
-      {
-        "label": "C",
-        "text": "6"
-      },
-      {
-        "label": "D",
-        "text": "9"
-      }
-    ],
-    "correctAnswer": "C",
-    "explanation": "The divisors of 18 are 1, 2, 3, 6, 9, 18. The divisors of 30 are 1, 2, 3, 5, 6, 10, 15, 30. The greatest common divisor is 6.",
-    "skill": "Number Theory: GCD",
-    "difficulty": "easy",
-    "id": "teas_279",
-    "exam": "TEAS",
-    "section": "Math"
-  },
-  {
-    "question": "If 2/5 of a number is 10, what is the number?",
-    "options": [
-      {
-        "label": "A",
-        "text": "4"
-      },
-      {
-        "label": "B",
-        "text": "20"
-      },
-      {
-        "label": "C",
-        "text": "25"
-      },
-      {
-        "label": "D",
-        "text": "50"
-      }
-    ],
-    "correctAnswer": "C",
-    "explanation": "Let the number be N. The equation is (2/5) * N = 10. To solve for N, multiply both sides by 5/2: N = 10 * (5/2) = 50/2 = 25.",
-    "skill": "Fractions and Equations",
-    "difficulty": "easy",
-    "id": "teas_280",
-    "exam": "TEAS",
-    "section": "Math"
-  },
-  {
-    "question": "What is the median of the following set of numbers: 12, 5, 8, 15, 10?",
-    "options": [
-      {
-        "label": "A",
-        "text": "8"
-      },
-      {
-        "label": "B",
-        "text": "10"
-      },
-      {
-        "label": "C",
-        "text": "11"
-      },
-      {
-        "label": "D",
-        "text": "12"
-      }
-    ],
-    "correctAnswer": "B",
-    "explanation": "First, arrange the numbers in ascending order: 5, 8, 10, 12, 15. The median is the middle number. In this set, the middle number is 10.",
-    "skill": "Statistics: Median",
-    "difficulty": "easy",
-    "id": "teas_281",
-    "exam": "TEAS",
-    "section": "Math"
+    "difficulty": 5
   },
   {
     "question": "Simplify the expression: 5(2x - 3) + 4x",
@@ -7876,7 +4348,7 @@
       },
       {
         "label": "B",
-        "text": "9x - 15"
+        "text": "10x - 3"
       },
       {
         "label": "C",
@@ -7884,154 +4356,14 @@
       },
       {
         "label": "D",
-        "text": "10x - 3"
+        "text": "9x - 15"
       }
     ],
-    "correctAnswer": "B",
+    "correctAnswer": "D",
     "explanation": "Distribute the 5: 5 * 2x - 5 * 3 + 4x = 10x - 15 + 4x. Combine like terms: 10x + 4x - 15 = 14x - 15.  Hold on, let me re-calculate. 5(2x - 3) + 4x. Distribute 5: 10x - 15. Then add 4x: 10x - 15 + 4x. Combine the x terms: 10x + 4x = 14x. So, it's 14x - 15. Where is the error?  Let me re-read my own explanation.  'Distribute the 5: 5 * 2x - 5 * 3 + 4x = 10x - 15 + 4x. Combine like terms: 10x + 4x - 15 = 14x - 15.'  Okay, I see the discrepancy.  The calculation correctly yields 14x - 15.  However, option B is 9x - 15.  This means there is an error in my calculation or the provided options.  Let me double-check the distribution and combining of terms carefully.  5 * 2x = 10x.  5 * -3 = -15.  So, 10x - 15.  Then, + 4x.  So, 10x + 4x - 15.  This indeed equals 14x - 15.  Given the options, and the strict mathematical calculation, there seems to be a mismatch.  Let me consider if I misinterpreted the question or made a very subtle arithmetic error.  5(2x - 3) + 4x.  If I re-evaluate option B: 9x - 15.  For this to be true, the term 10x should have combined with the 4x in a way that resulted in 9x.  This is not possible with addition.  Let me assume there might be a typo and consider possible sources of error.  Perhaps the expression was meant to be subtracted, or a coefficient was different.  However, based *strictly* on the provided expression: 5(2x - 3) + 4x.  Again, 5 * 2x = 10x.  5 * -3 = -15.  So, 10x - 15.  Then add 4x.  10x + 4x = 14x.  Therefore, 14x - 15.  Since I must select an option, and my calculation consistently leads to 14x - 15, and this is one of the options (C), I will correct my initial choice.  My apologies.  The correct steps are: 1. Distribute the 5:  5 * 2x = 10x and 5 * -3 = -15.  So, the expression becomes 10x - 15 + 4x. 2. Combine like terms (the x terms): 10x + 4x = 14x. 3. The simplified expression is 14x - 15.  Therefore, option C is correct. My initial selection of B was incorrect due to a faulty intermediate step in my self-correction process.",
     "skill": "Algebraic Expressions",
-    "difficulty": "medium",
+    "difficulty": 5,
     "id": "teas_282",
-    "exam": "TEAS",
-    "section": "Math"
-  },
-  {
-    "question": "A store sells apples for $0.50 each. If Sarah buys 7 apples, how much does she spend?",
-    "options": [
-      {
-        "label": "A",
-        "text": "$3.00"
-      },
-      {
-        "label": "B",
-        "text": "$3.50"
-      },
-      {
-        "label": "C",
-        "text": "$4.00"
-      },
-      {
-        "label": "D",
-        "text": "$4.50"
-      }
-    ],
-    "correctAnswer": "B",
-    "explanation": "To find the total cost, multiply the price per apple by the number of apples Sarah buys. $0.50/apple * 7 apples = $3.50.",
-    "skill": "Basic Arithmetic",
-    "difficulty": "easy",
-    "id": "teas_283",
-    "exam": "TEAS",
-    "section": "Math"
-  },
-  {
-    "question": "Solve for y: 2y + 7 = 19",
-    "options": [
-      {
-        "label": "A",
-        "text": "5"
-      },
-      {
-        "label": "B",
-        "text": "6"
-      },
-      {
-        "label": "C",
-        "text": "7"
-      },
-      {
-        "label": "D",
-        "text": "13"
-      }
-    ],
-    "correctAnswer": "B",
-    "explanation": "Subtract 7 from both sides of the equation: 2y = 19 - 7, which simplifies to 2y = 12. Then, divide both sides by 2: y = 12 / 2, so y = 6.",
-    "skill": "Solving Linear Equations",
-    "difficulty": "easy",
-    "id": "teas_284",
-    "exam": "TEAS",
-    "section": "Math"
-  },
-  {
-    "question": "What is 25% of 160?",
-    "options": [
-      {
-        "label": "A",
-        "text": "20"
-      },
-      {
-        "label": "B",
-        "text": "30"
-      },
-      {
-        "label": "C",
-        "text": "40"
-      },
-      {
-        "label": "D",
-        "text": "80"
-      }
-    ],
-    "correctAnswer": "C",
-    "explanation": "To find 25% of 160, you can convert the percentage to a decimal (25% = 0.25) and multiply: 0.25 * 160 = 40. Alternatively, 25% is equal to 1/4, so 1/4 of 160 is 160 / 4 = 40.",
-    "skill": "Percentages",
-    "difficulty": "easy",
-    "id": "teas_285",
-    "exam": "TEAS",
-    "section": "Math"
-  },
-  {
-    "question": "A rectangular room measures 10 feet by 12 feet. What is its area?",
-    "options": [
-      {
-        "label": "A",
-        "text": "22 sq ft"
-      },
-      {
-        "label": "B",
-        "text": "100 sq ft"
-      },
-      {
-        "label": "C",
-        "text": "120 sq ft"
-      },
-      {
-        "label": "D",
-        "text": "240 sq ft"
-      }
-    ],
-    "correctAnswer": "C",
-    "explanation": "The area of a rectangle is calculated by multiplying its length by its width. Area = length * width = 10 feet * 12 feet = 120 square feet.",
-    "skill": "Geometry: Area",
-    "difficulty": "easy",
-    "id": "teas_286",
-    "exam": "TEAS",
-    "section": "Math"
-  },
-  {
-    "question": "What is the probability of rolling a 4 on a standard six-sided die?",
-    "options": [
-      {
-        "label": "A",
-        "text": "1/6"
-      },
-      {
-        "label": "B",
-        "text": "1/4"
-      },
-      {
-        "label": "C",
-        "text": "1/3"
-      },
-      {
-        "label": "D",
-        "text": "1/2"
-      }
-    ],
-    "correctAnswer": "A",
-    "explanation": "A standard six-sided die has faces numbered 1, 2, 3, 4, 5, and 6. There is only one way to roll a 4.  The total number of possible outcomes is 6. Probability is calculated as (Number of favorable outcomes) / (Total number of possible outcomes).  So, the probability is 1/6.",
-    "skill": "Probability",
-    "difficulty": "easy",
-    "id": "teas_287",
     "exam": "TEAS",
     "section": "Math"
   },
@@ -8058,120 +4390,8 @@
     "correctAnswer": "A",
     "explanation": "First, solve for x from the equation x + 5 = 12. Subtract 5 from both sides: x = 12 - 5, so x = 7.  Now, substitute the value of x into the expression x - 3: 7 - 3 = 4.",
     "skill": "Algebraic Equations and Expressions",
-    "difficulty": "medium",
+    "difficulty": 5,
     "id": "teas_288",
-    "exam": "TEAS",
-    "section": "Math"
-  },
-  {
-    "question": "A car travels at a speed of 60 miles per hour. How long will it take to travel 180 miles?",
-    "options": [
-      {
-        "label": "A",
-        "text": "2 hours"
-      },
-      {
-        "label": "B",
-        "text": "2.5 hours"
-      },
-      {
-        "label": "C",
-        "text": "3 hours"
-      },
-      {
-        "label": "D",
-        "text": "4 hours"
-      }
-    ],
-    "correctAnswer": "C",
-    "explanation": "The relationship between distance, speed, and time is: Time = Distance / Speed.  In this case, Time = 180 miles / 60 miles per hour = 3 hours.",
-    "skill": "Rate, Time, and Distance",
-    "difficulty": "easy",
-    "id": "teas_289",
-    "exam": "TEAS",
-    "section": "Math"
-  },
-  {
-    "question": "What is the least common multiple (LCM) of 4 and 6?",
-    "options": [
-      {
-        "label": "A",
-        "text": "10"
-      },
-      {
-        "label": "B",
-        "text": "12"
-      },
-      {
-        "label": "C",
-        "text": "18"
-      },
-      {
-        "label": "D",
-        "text": "24"
-      }
-    ],
-    "correctAnswer": "B",
-    "explanation": "The multiples of 4 are 4, 8, 12, 16, 20, 24... The multiples of 6 are 6, 12, 18, 24... The least common multiple is the smallest number that appears in both lists, which is 12.",
-    "skill": "Number Theory: LCM",
-    "difficulty": "easy",
-    "id": "teas_290",
-    "exam": "TEAS",
-    "section": "Math"
-  },
-  {
-    "question": "If a triangle has angles measuring 30 degrees and 70 degrees, what is the measure of the third angle?",
-    "options": [
-      {
-        "label": "A",
-        "text": "80 degrees"
-      },
-      {
-        "label": "B",
-        "text": "90 degrees"
-      },
-      {
-        "label": "C",
-        "text": "100 degrees"
-      },
-      {
-        "label": "D",
-        "text": "110 degrees"
-      }
-    ],
-    "correctAnswer": "A",
-    "explanation": "The sum of the angles in any triangle is always 180 degrees.  Let the third angle be x. Then, 30 + 70 + x = 180.  100 + x = 180. Subtract 100 from both sides: x = 180 - 100 = 80 degrees.",
-    "skill": "Geometry: Triangles",
-    "difficulty": "easy",
-    "id": "teas_291",
-    "exam": "TEAS",
-    "section": "Math"
-  },
-  {
-    "question": "Convert the fraction 3/8 to a decimal.",
-    "options": [
-      {
-        "label": "A",
-        "text": "0.375"
-      },
-      {
-        "label": "B",
-        "text": "0.38"
-      },
-      {
-        "label": "C",
-        "text": "0.3"
-      },
-      {
-        "label": "D",
-        "text": "0.385"
-      }
-    ],
-    "correctAnswer": "A",
-    "explanation": "To convert a fraction to a decimal, divide the numerator by the denominator. 3 ÷ 8 = 0.375.",
-    "skill": "Fractions and Decimals",
-    "difficulty": "easy",
-    "id": "teas_292",
     "exam": "TEAS",
     "section": "Math"
   },
@@ -8198,36 +4418,8 @@
     "correctAnswer": "C",
     "explanation": "First, calculate the amount of the discount: 20% of $50 = 0.20 * $50 = $10. Then, subtract the discount from the original price: $50 - $10 = $40.",
     "skill": "Percentages and Discounts",
-    "difficulty": "medium",
+    "difficulty": 5,
     "id": "teas_293",
-    "exam": "TEAS",
-    "section": "Math"
-  },
-  {
-    "question": "Which of the following numbers is prime? 9, 15, 19, 21",
-    "options": [
-      {
-        "label": "A",
-        "text": "9"
-      },
-      {
-        "label": "B",
-        "text": "15"
-      },
-      {
-        "label": "C",
-        "text": "19"
-      },
-      {
-        "label": "D",
-        "text": "21"
-      }
-    ],
-    "correctAnswer": "C",
-    "explanation": "A prime number is a natural number greater than 1 that has no positive divisors other than 1 and itself. 9 is divisible by 3. 15 is divisible by 3 and 5. 21 is divisible by 3 and 7. 19 is only divisible by 1 and 19, so it is a prime number.",
-    "skill": "Number Theory: Prime Numbers",
-    "difficulty": "easy",
-    "id": "teas_294",
     "exam": "TEAS",
     "section": "Math"
   },
@@ -8254,7 +4446,7 @@
     "correctAnswer": "C",
     "explanation": "To solve for x, first gather the x terms on one side and the constant terms on the other. Subtract x from both sides: 3x - x - 5 = 9, which simplifies to 2x - 5 = 9.  Add 5 to both sides: 2x = 9 + 5, which simplifies to 2x = 14.  Divide both sides by 2: x = 14 / 2, so x = 7.",
     "skill": "Solving Linear Equations",
-    "difficulty": "medium",
+    "difficulty": 5,
     "id": "teas_295",
     "exam": "TEAS",
     "section": "Math"
@@ -8282,36 +4474,8 @@
     "correctAnswer": "B",
     "explanation": "Set up a proportion: (2 cups sugar / 12 cookies) = (x cups sugar / 30 cookies). Cross-multiply: 2 * 30 = 12 * x.  60 = 12x. Divide by 12: x = 60 / 12 = 5 cups.",
     "skill": "Ratios and Proportions",
-    "difficulty": "medium",
+    "difficulty": 5,
     "id": "teas_296",
-    "exam": "TEAS",
-    "section": "Math"
-  },
-  {
-    "question": "What is the average of the following numbers: 20, 25, 30, 35, 40?",
-    "options": [
-      {
-        "label": "A",
-        "text": "25"
-      },
-      {
-        "label": "B",
-        "text": "30"
-      },
-      {
-        "label": "C",
-        "text": "32.5"
-      },
-      {
-        "label": "D",
-        "text": "35"
-      }
-    ],
-    "correctAnswer": "B",
-    "explanation": "The average (or mean) is calculated by summing all the numbers and then dividing by the count of the numbers. Sum = 20 + 25 + 30 + 35 + 40 = 150. Number of values = 5. Average = 150 / 5 = 30.",
-    "skill": "Statistics: Mean",
-    "difficulty": "easy",
-    "id": "teas_297",
     "exam": "TEAS",
     "section": "Math"
   },
@@ -8338,7 +4502,7 @@
     "correctAnswer": "C",
     "explanation": "The formula for the volume of a cylinder is V = πr²h.  Given r = 4 cm and h = 10 cm, and using π ≈ 3.14: V ≈ 3.14 * (4 cm)² * 10 cm. V ≈ 3.14 * 16 cm² * 10 cm. V ≈ 3.14 * 160 cm³. V ≈ 502.4 cm³.",
     "skill": "Geometry: Volume",
-    "difficulty": "medium",
+    "difficulty": 5,
     "id": "teas_298",
     "exam": "TEAS",
     "section": "Math"
@@ -8366,7 +4530,7 @@
     "correctAnswer": "A",
     "explanation": "Factor the numerator. We need two numbers that multiply to -10 and add to 3. These numbers are 5 and -2. So, x² + 3x - 10 = (x + 5)(x - 2).  Now, divide this by (x - 2): [(x + 5)(x - 2)] / (x - 2).  Cancel out the common factor (x - 2), assuming x ≠ 2. The simplified expression is x + 5.",
     "skill": "Algebra: Factoring and Simplification",
-    "difficulty": "hard",
+    "difficulty": 7,
     "id": "teas_299",
     "exam": "TEAS",
     "section": "Math"
@@ -8376,7 +4540,7 @@
     "options": [
       {
         "label": "A",
-        "text": "9"
+        "text": "18"
       },
       {
         "label": "B",
@@ -8388,13 +4552,13 @@
       },
       {
         "label": "D",
-        "text": "18"
+        "text": "9"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "Let the original number be N.  The problem can be written as an equation: 2N + 5 = 23.  Subtract 5 from both sides: 2N = 23 - 5, which is 2N = 18.  Divide both sides by 2: N = 18 / 2, so N = 9.",
     "skill": "Algebraic Word Problems",
-    "difficulty": "medium",
+    "difficulty": 5,
     "id": "teas_300",
     "exam": "TEAS",
     "section": "Math"
