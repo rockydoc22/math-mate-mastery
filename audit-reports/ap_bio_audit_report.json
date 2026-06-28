@@ -1,0 +1,488 @@
+{
+  "bank": "src/data/AP_Biology_question_bank_200.json",
+  "total_questions": 230,
+  "model_used": "google/gemini-3-flash-preview",
+  "embedding_model": "google/gemini-embedding-001",
+  "similarity_threshold": 0.86,
+  "summary": {
+    "flagged_accuracy_or_quality": 4,
+    "review_errors": 1,
+    "concept_duplicate_clusters": 22,
+    "questions_in_dup_clusters": 56
+  },
+  "ai_review_flagged": [
+    {
+      "id": "AP_Biology_56",
+      "verdict": "multiple",
+      "correct_answer": "D",
+      "issues": [
+        "Option B is factually correct and a standard curriculum standard for distinguishing the two processes, making the question have multiple correct answers (B and D).",
+        "The explanation incorrectly dismisses Option B as 'partially true' when it is a discrete, accurate mechanical difference defined in the AP Biology CED."
+      ],
+      "suggested_distractor_fix": {
+        "letter": "B",
+        "replacement": "Mitosis occurs only in prokaryotes, while meiosis occurs only in eukaryotes."
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "AP_Biology_150",
+      "verdict": "multiple",
+      "correct_answer": "D",
+      "issues": [
+        "Both B and D are technically correct, though D is the most direct functional description."
+      ],
+      "suggested_distractor_fix": {
+        "letter": "B",
+        "replacement": "The operon model"
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "AP_Biology_224",
+      "verdict": "distractor_weak",
+      "correct_answer": "C",
+      "issues": [
+        "Distractors A, B, and D are not processes or 'short-term' responses, making them easily eliminated.",
+        "The term 'short-term adaptation' in the question is biologically ambiguous (often confused with acclimatization)."
+      ],
+      "suggested_distractor_fix": {
+        "letter": "D",
+        "replacement": "Acclimatization"
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "AP_Biology_142",
+      "verdict": "multiple",
+      "correct_answer": "null",
+      "issues": [
+        "The question has multiple potentially correct answers because 'most likely' is subjective; frameshift and nonsense mutations are generally more likely to result in a completely non-functional enzyme than missense mutations.",
+        "Frameshift (B) and Nonsense (C) mutations almost always result in non-functional proteins, whereas Missense (D) often results in partially functional or neutral changes."
+      ],
+      "suggested_distractor_fix": null,
+      "confidence": "high"
+    }
+  ],
+  "ai_review_errors": [
+    {
+      "id": "AP_Biology_107",
+      "verdict": "error",
+      "error": "'list' object is not a mapping"
+    }
+  ],
+  "concept_duplicate_clusters": [
+    {
+      "size": 4,
+      "avg_similarity": 0.943,
+      "members": [
+        {
+          "id": "AP_Biology_116",
+          "answer": "D",
+          "question": "Which organelle is primarily responsible for modifying, sorting, and packaging proteins and lipids for secretion or delivery to other organe"
+        },
+        {
+          "id": "AP_Biology_128",
+          "answer": "B",
+          "question": "In a typical cell, the function of the Golgi apparatus is to:"
+        },
+        {
+          "id": "AP_Biology_194",
+          "answer": "D",
+          "question": "Which of the following describes the function of the Golgi apparatus in a eukaryotic cell?"
+        },
+        {
+          "id": "AP_Biology_229",
+          "answer": "A",
+          "question": "In a eukaryotic cell, which organelle is primarily responsible for modifying, sorting, and packaging proteins and lipids for secretion or de"
+        }
+      ]
+    },
+    {
+      "size": 4,
+      "avg_similarity": 0.902,
+      "members": [
+        {
+          "id": "AP_Biology_41",
+          "answer": "B",
+          "question": "Which of the following best describes the role of tRNA during translation?"
+        },
+        {
+          "id": "AP_Biology_188",
+          "answer": "A",
+          "question": "Which of the following best describes the role of tRNA during protein synthesis?"
+        },
+        {
+          "id": "AP_Biology_139",
+          "answer": "C",
+          "question": "The primary function of tRNA (transfer RNA) in protein synthesis is to:"
+        },
+        {
+          "id": "AP_Biology_86",
+          "answer": "C",
+          "question": "What is the primary function of tRNA (transfer RNA) in protein synthesis?"
+        }
+      ]
+    },
+    {
+      "size": 4,
+      "avg_similarity": 0.893,
+      "members": [
+        {
+          "id": "AP_Biology_82",
+          "answer": "D",
+          "question": "In an ecosystem, decomposers play a crucial role by:"
+        },
+        {
+          "id": "AP_Biology_292",
+          "answer": "C",
+          "question": "The primary role of decomposers, such as bacteria and fungi, in an ecosystem is to:"
+        },
+        {
+          "id": "AP_Biology_141",
+          "answer": "D",
+          "question": "Which of the following best describes the role of a decomposer in an ecosystem?"
+        },
+        {
+          "id": "AP_Biology_200",
+          "answer": "C",
+          "question": "In an ecosystem, decomposers play a vital role in:"
+        }
+      ]
+    },
+    {
+      "size": 4,
+      "avg_similarity": 0.877,
+      "members": [
+        {
+          "id": "AP_Biology_154",
+          "answer": "B",
+          "question": "A plant cell is placed in a hypertonic solution. What is the MOST likely effect on the cell?"
+        },
+        {
+          "id": "AP_Biology_236",
+          "answer": "B",
+          "question": "Consider a plant cell that has lost turgor pressure. Which of the following conditions is most likely responsible?"
+        },
+        {
+          "id": "AP_Biology_66",
+          "answer": "C",
+          "question": "A plant cell is placed in a hypertonic solution. What will happen to the cell?"
+        },
+        {
+          "id": "AP_Biology_298",
+          "answer": "B",
+          "question": "A plant cell is suddenly placed in an extremely salty solution. What is likely to happen to the plant cell?"
+        }
+      ]
+    },
+    {
+      "size": 3,
+      "avg_similarity": 0.968,
+      "members": [
+        {
+          "id": "AP_Biology_157",
+          "answer": "A",
+          "question": "During mitosis, at which phase do sister chromatids separate and move to opposite poles of the cell?"
+        },
+        {
+          "id": "AP_Biology_274",
+          "answer": "A",
+          "question": "During anaphase of mitosis, what separates and moves towards opposite poles of the cell?"
+        },
+        {
+          "id": "AP_Biology_84",
+          "answer": "C",
+          "question": "During mitosis, the sister chromatids separate and move to opposite poles of the cell. This event occurs during which phase?"
+        }
+      ]
+    },
+    {
+      "size": 3,
+      "avg_similarity": 0.966,
+      "members": [
+        {
+          "id": "AP_Biology_283",
+          "answer": "D",
+          "question": "During meiosis, homologous chromosomes separate during which phase?"
+        },
+        {
+          "id": "AP_Biology_131",
+          "answer": "A",
+          "question": "During meiosis, homologous chromosomes separate during:"
+        },
+        {
+          "id": "AP_Biology_183",
+          "answer": "B",
+          "question": "During the process of meiosis, homologous chromosomes separate during which phase?"
+        }
+      ]
+    },
+    {
+      "size": 3,
+      "avg_similarity": 0.918,
+      "members": [
+        {
+          "id": "AP_Biology_88",
+          "answer": "C",
+          "question": "Which of the following statements best describes the role of enzymes in biological systems?"
+        },
+        {
+          "id": "AP_Biology_205",
+          "answer": "D",
+          "question": "Which of the following best describes the role of enzymes in biological systems?"
+        },
+        {
+          "id": "AP_Biology_180",
+          "answer": "C",
+          "question": "What is the primary role of enzymes in biological systems?"
+        }
+      ]
+    },
+    {
+      "size": 3,
+      "avg_similarity": 0.876,
+      "members": [
+        {
+          "id": "AP_Biology_186",
+          "answer": "B",
+          "question": "A population of deer is isolated on an island. Over time, the population size increases significantly. If a genetic bottleneck event occurs "
+        },
+        {
+          "id": "AP_Biology_226",
+          "answer": "C",
+          "question": "A population of deer experiences a severe flood that drastically reduces its size. The surviving deer have a different allele frequency dist"
+        },
+        {
+          "id": "AP_Biology_252",
+          "answer": "A",
+          "question": "A population of deer isolated on an island experiences a drastic decrease in population size due to a severe storm. This event is an example"
+        }
+      ]
+    },
+    {
+      "size": 2,
+      "avg_similarity": 0.929,
+      "members": [
+        {
+          "id": "AP_Biology_54",
+          "answer": "C",
+          "question": "Which of the following best describes the function of stomata in plant leaves?"
+        },
+        {
+          "id": "AP_Biology_201",
+          "answer": "B",
+          "question": "What is the primary function of the stomata in plant leaves?"
+        }
+      ]
+    },
+    {
+      "size": 2,
+      "avg_similarity": 0.923,
+      "members": [
+        {
+          "id": "AP_Biology_69",
+          "answer": "C",
+          "question": "The endosymbiotic theory proposes that mitochondria and chloroplasts originated from:"
+        },
+        {
+          "id": "AP_Biology_289",
+          "answer": "D",
+          "question": "The theory of endosymbiosis proposes that certain organelles in eukaryotic cells, such as mitochondria and chloroplasts, originated from:"
+        }
+      ]
+    },
+    {
+      "size": 2,
+      "avg_similarity": 0.91,
+      "members": [
+        {
+          "id": "AP_Biology_191",
+          "answer": "B",
+          "question": "If a segment of DNA has the base sequence 5'-ATGCGTTA-3', what would be the complementary DNA sequence?"
+        },
+        {
+          "id": "AP_Biology_159",
+          "answer": "D",
+          "question": "A segment of DNA has the base sequence 5'-ATGCGTA-3'. What is the complementary sequence during DNA replication?"
+        }
+      ]
+    },
+    {
+      "size": 2,
+      "avg_similarity": 0.905,
+      "members": [
+        {
+          "id": "AP_Biology_273",
+          "answer": "A",
+          "question": "The backbone of a DNA molecule is primarily composed of:"
+        },
+        {
+          "id": "AP_Biology_282",
+          "answer": "C",
+          "question": "A DNA molecule consists of two polynucleotide strands. The backbone of each strand is formed by alternating units of:"
+        }
+      ]
+    },
+    {
+      "size": 2,
+      "avg_similarity": 0.901,
+      "members": [
+        {
+          "id": "AP_Biology_123",
+          "answer": "C",
+          "question": "A bacterial population is exposed to a new antibiotic. Most of the bacteria die, but a few individuals survive due to pre-existing resistanc"
+        },
+        {
+          "id": "AP_Biology_206",
+          "answer": "D",
+          "question": "A population of bacteria is exposed to an antibiotic. Most of the bacteria are killed, but a few survive due to a random mutation that confe"
+        }
+      ]
+    },
+    {
+      "size": 2,
+      "avg_similarity": 0.891,
+      "members": [
+        {
+          "id": "AP_Biology_204",
+          "answer": "C",
+          "question": "In pea plants, the allele for tall stems (T) is dominant over the allele for short stems (t). If a heterozygous tall plant is crossed with a"
+        },
+        {
+          "id": "AP_Biology_161",
+          "answer": "D",
+          "question": "In pea plants, the allele for tallness (T) is dominant over the allele for shortness (t). If a homozygous tall plant (TT) is crossed with a "
+        }
+      ]
+    },
+    {
+      "size": 2,
+      "avg_similarity": 0.886,
+      "members": [
+        {
+          "id": "AP_Biology_105",
+          "answer": "C",
+          "question": "Which of the following is a key characteristic of a population that is in Hardy-Weinberg equilibrium?"
+        },
+        {
+          "id": "AP_Biology_216",
+          "answer": "D",
+          "question": "A population is in Hardy-Weinberg equilibrium if:"
+        }
+      ]
+    },
+    {
+      "size": 2,
+      "avg_similarity": 0.881,
+      "members": [
+        {
+          "id": "AP_Biology_286",
+          "answer": "D",
+          "question": "The Calvin cycle, which occurs during the light-independent reactions of photosynthesis, utilizes ATP and NADPH to convert carbon dioxide in"
+        },
+        {
+          "id": "AP_Biology_140",
+          "answer": "B",
+          "question": "During the Calvin cycle of photosynthesis, carbon dioxide is fixed and converted into sugars using energy from:"
+        }
+      ]
+    },
+    {
+      "size": 2,
+      "avg_similarity": 0.879,
+      "members": [
+        {
+          "id": "AP_Biology_177",
+          "answer": "A",
+          "question": "A plant cell is placed in a solution with a lower solute concentration than the cell's cytoplasm. Which of the following will occur?"
+        },
+        {
+          "id": "AP_Biology_98",
+          "answer": "B",
+          "question": "A plant cell is placed in a solution with a higher solute concentration than its cytoplasm. Which of the following will occur?"
+        }
+      ]
+    },
+    {
+      "size": 2,
+      "avg_similarity": 0.878,
+      "members": [
+        {
+          "id": "AP_Biology_235",
+          "answer": "B",
+          "question": "What is the primary role of ATP in cellular respiration?"
+        },
+        {
+          "id": "AP_Biology_259",
+          "answer": "A",
+          "question": "Which of the following correctly describes the role of ATP in cellular respiration?"
+        }
+      ]
+    },
+    {
+      "size": 2,
+      "avg_similarity": 0.87,
+      "members": [
+        {
+          "id": "AP_Biology_256",
+          "answer": "B",
+          "question": "A population of deer is introduced into a new habitat with abundant food and no natural predators. Which of the following best describes the"
+        },
+        {
+          "id": "AP_Biology_293",
+          "answer": "B",
+          "question": "A population of deer is introduced into a new forest habitat with abundant food and no natural predators. Initially, the population growth i"
+        }
+      ]
+    },
+    {
+      "size": 2,
+      "avg_similarity": 0.867,
+      "members": [
+        {
+          "id": "AP_Biology_99",
+          "answer": "D",
+          "question": "In a certain species of bird, feather color is determined by a single gene with two alleles: B (brown) and b (white). Brown is dominant over"
+        },
+        {
+          "id": "AP_Biology_90",
+          "answer": "A",
+          "question": "Consider a population of birds where feather color is determined by a single gene with two alleles: B (brown, dominant) and b (white, recess"
+        }
+      ]
+    },
+    {
+      "size": 2,
+      "avg_similarity": 0.864,
+      "members": [
+        {
+          "id": "AP_Biology_17",
+          "answer": "D",
+          "question": "A population of rabbits shows the following genotype frequencies: AA = 0.49, Aa = 0.42, aa = 0.09. Is this population in Hardy-Weinberg equi"
+        },
+        {
+          "id": "AP_Biology_232",
+          "answer": "A",
+          "question": "In a population of rabbits, the allele frequency for a gene that confers a white fur phenotype is 0.3. If the population is in Hardy-Weinber"
+        }
+      ]
+    },
+    {
+      "size": 2,
+      "avg_similarity": 0.862,
+      "members": [
+        {
+          "id": "AP_Biology_267",
+          "answer": "A",
+          "question": "A scientist is studying the process of meiosis. At which stage does homologous chromosome pairing and crossing over occur?"
+        },
+        {
+          "id": "AP_Biology_51",
+          "answer": "A",
+          "question": "During meiosis, crossing over typically occurs during which phase?"
+        }
+      ]
+    }
+  ]
+}
