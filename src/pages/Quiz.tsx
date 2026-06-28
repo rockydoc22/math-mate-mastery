@@ -265,6 +265,7 @@ const Quiz = () => {
     toggle: toggleTimer,
     pause: pauseTimer,
     resume, 
+    timeRemaining,
   } = useQuizTimer({
     questionCount: quizQuestions.length,
     enabled: timerEnabled && !isAdvancedSubject,
@@ -272,8 +273,32 @@ const Quiz = () => {
     initialTimeRemaining: resumeSnapshot?.timeRemaining,
   });
 
-  // Read timeRemaining separately so we can persist it without changing the destructure shape above.
-  const timerState = useQuizTimer; // type only; we access timeRemaining via a second call below if needed
+  // Persist resume snapshot on each progress beat so a sign-in interruption restores the same spot.
+  useEffect(() => {
+    if (isLoading || finished || quizQuestions.length === 0) return;
+    saveQuizResume({
+      url: resumeUrl,
+      examId: `${examType}:${subject}`,
+      questionIndex: currentQuestionIndex,
+      timeRemaining: timerEnabled && !isAdvancedSubject ? timeRemaining : undefined,
+    });
+  }, [
+    isLoading,
+    finished,
+    quizQuestions.length,
+    currentQuestionIndex,
+    timeRemaining,
+    timerEnabled,
+    isAdvancedSubject,
+    examType,
+    subject,
+    resumeUrl,
+  ]);
+
+  // Clear the snapshot once the quiz completes.
+  useEffect(() => {
+    if (finished) clearQuizResume(resumeUrl);
+  }, [finished, resumeUrl]);
 
   // Pause timer when showing results
   useEffect(() => {
