@@ -325,14 +325,28 @@ export const LandingPage = () => {
 
       {/* ═══════════ Footer ═══════════ */}
       <footer className="px-6 py-6 border-t border-border">
-        <div className="max-w-lg mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-muted-foreground">
-          <span>© 2026 AlphaOmega</span>
-          <div className="flex items-center gap-3">
-            <ShareAppButton />
-            <InstallAppButton />
-            <FeedbackButton />
-            <span>v{APP_VERSION}</span>
+        <div className="max-w-lg mx-auto flex flex-col gap-3 text-xs text-muted-foreground">
+          <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
+            <span>© 2026 AlphaOmega. All rights reserved.</span>
+            <div className="flex items-center gap-3">
+              <ShareAppButton />
+              <InstallAppButton />
+              <FeedbackButton />
+              <span>v{APP_VERSION}</span>
+            </div>
           </div>
+          <div className="flex flex-wrap items-center justify-center gap-x-3 gap-y-1 text-[11px]">
+            <a href="/terms" className="hover:text-foreground underline-offset-2 hover:underline">Terms</a>
+            <span aria-hidden>·</span>
+            <a href="/privacy" className="hover:text-foreground underline-offset-2 hover:underline">Privacy</a>
+            <span aria-hidden>·</span>
+            <a href="/support" className="hover:text-foreground underline-offset-2 hover:underline">Support</a>
+          </div>
+          <p className="text-[10px] text-center text-muted-foreground/80 leading-relaxed">
+            Content, question banks, and brand marks are © AlphaOmega. No scraping, bulk download, redistribution,
+            or AI training on App content without written permission. SAT, PSAT, ACT, and AP are trademarks of their
+            respective owners and are not affiliated with AlphaOmega.
+          </p>
         </div>
       </footer>
     </div>

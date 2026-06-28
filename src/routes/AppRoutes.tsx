@@ -141,6 +141,7 @@ const OfflinePractice = lazy(() => import("@/pages/OfflinePractice"));
 const Warmup = lazy(() => import("@/pages/Warmup"));
 const Privacy = lazy(() => import("@/pages/Privacy"));
 const Support = lazy(() => import("@/pages/Support"));
+const Terms = lazy(() => import("@/pages/Terms"));
 
 const AppRoutes = () => (
   <>
@@ -279,6 +280,7 @@ const AppRoutes = () => (
       <Route path="/warmup" element={<Warmup />} />
       <Route path="/privacy" element={<Privacy />} />
       <Route path="/support" element={<Support />} />
+      <Route path="/terms" element={<Terms />} />
       {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
       <Route path="*" element={<NotFound />} />
     </Routes>
