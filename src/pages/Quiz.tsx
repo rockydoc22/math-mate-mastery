@@ -272,6 +272,9 @@ const Quiz = () => {
     initialTimeRemaining: resumeSnapshot?.timeRemaining,
   });
 
+  // Read timeRemaining separately so we can persist it without changing the destructure shape above.
+  const timerState = useQuizTimer; // type only; we access timeRemaining via a second call below if needed
+
   // Pause timer when showing results
   useEffect(() => {
     if (showResult && isRunning) {
@@ -380,6 +383,7 @@ const Quiz = () => {
     setScoreRecorded(false);
     momentum.reset();
     mistakeCoach.clearFeedback();
+    clearQuizResume(resumeUrl);
   };
 
   // Record score when quiz finishes
