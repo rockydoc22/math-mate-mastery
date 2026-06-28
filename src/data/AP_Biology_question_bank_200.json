@@ -859,16 +859,16 @@
   },
   {
     "id": "AP_Biology_67",
-    "question": "Which of the following best describes the role of tRNA in protein synthesis?",
+    "question": "During translation, the ribosome moves along the mRNA in which direction, and what happens at the A site?",
     "choices": {
-      "A": "It carries the genetic code from DNA to the ribosome.",
-      "B": "It catalyzes the formation of peptide bonds between amino acids.",
-      "C": "It brings specific amino acids to the ribosome according to the mRNA sequence.",
-      "D": "It unwinds the DNA double helix during transcription."
+      "A": "5' to 3'; a new aminoacyl-tRNA enters and its anticodon base-pairs with the mRNA codon",
+      "B": "3' to 5'; a new aminoacyl-tRNA enters and its anticodon base-pairs with the mRNA codon",
+      "C": "5' to 3'; a completed polypeptide is released from the ribosome",
+      "D": "3' to 5'; peptide bond formation occurs between incoming amino acids"
     },
-    "answer": "C",
-    "difficulty": 4,
-    "explanation": "Transfer RNA (tRNA) molecules have an anticodon that is complementary to a codon on the messenger RNA (mRNA) and also carry a specific amino acid corresponding to that codon. They deliver these amino acids to the ribosome during translation. mRNA carries the code (A). Ribosomal RNA (rRNA) is part of the ribosome and some have catalytic activity for peptide bond formation (B). Helicase unwinds DNA (D)."
+    "answer": "A",
+    "difficulty": 7,
+    "explanation": "Ribosomes move along mRNA in the 5' to 3' direction. The A site (aminoacyl site) is where a new aminoacyl-tRNA enters, its anticodon base-pairing with the complementary mRNA codon. Peptide bond formation occurs at the P site, and the spent tRNA exits at the E site."
   },
   {
     "id": "AP_Biology_68",
