@@ -124,8 +124,8 @@ const MathQuiz = () => {
   return (
     <ScreenShakeWrapper shake={screenShake} intensity={getComboIntensity(combo.count) === "ultra" ? "high" : getComboIntensity(combo.count) === "high" ? "medium" : "low"}>
       <SEO
-        title="Free SAT Math Practice Questions"
-        description="Sharpen your SAT Math skills with adaptive practice questions, instant explanations, and a built-in graphing calculator."
+        title={`Free ${examLabel} Math Practice Questions`}
+        description={`Sharpen your ${examLabel} Math skills with adaptive practice questions, instant explanations, and a built-in graphing calculator.`}
         path="/math"
       />
       <div className="min-h-screen bg-gradient-to-br from-primary/5 via-secondary/5 to-accent/5 p-4 py-8 pb-28 sm:pb-8">
@@ -137,7 +137,7 @@ const MathQuiz = () => {
                 Back
               </Button>
             </Link>
-            <h1 className="text-2xl font-bold text-primary">SAT Math Practice</h1>
+            <h1 className="text-2xl font-bold text-primary">{examLabel} Math Practice</h1>
             {/* Combo Display */}
             <div className="ml-auto">
               <ComboDisplay 
