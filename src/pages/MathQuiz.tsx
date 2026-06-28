@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect, useMemo } from "react";
 import { Button } from "@/components/ui/button";
 import { QuizCard } from "@/components/QuizCard";
 import { QuizResults } from "@/components/QuizResults";
@@ -18,6 +18,8 @@ import { SEO } from "@/components/SEO";
 import { useExamType } from "@/hooks/useExamType";
 import { EXAM_CONFIGS } from "@/utils/examConfig";
 import { useSearchParams } from "react-router-dom";
+import { supabase } from "@/integrations/supabase/client";
+import type { Question } from "@/data/questions";
 
 const MathQuiz = () => {
   const [searchParams] = useSearchParams();
@@ -31,6 +33,68 @@ const MathQuiz = () => {
     overrideLabels[examParam] ||
     EXAM_CONFIGS[examType as keyof typeof EXAM_CONFIGS]?.shortName ||
     "SAT";
+  // Map URL `?exam=` (or stored exam preference) to an exam_family in the
+  // assessment_questions table. SAT stays on the bundled bank — every other
+  // exam reads its dedicated AI-generated bank so the SAT pool isn't reused.
+  const examFamilyForBank = (() => {
+    const e = (examParam || examType || "").toLowerCase();
+    if (["act","ged","hiset","ap","psat","state"].includes(e)) return e;
+    return null;
+  })();
+  const [bankQuestions, setBankQuestions] = useState<Question[] | null>(null);
+  const [bankLoading, setBankLoading] = useState<boolean>(!!examFamilyForBank);
+  useEffect(() => {
+    if (!examFamilyForBank) { setBankQuestions(null); setBankLoading(false); return; }
+    let cancelled = false;
+    (async () => {
+      setBankLoading(true);
+      const { data } = await supabase
+        .from("assessment_questions")
+        .select("id, stem, options, correct_key, skill, domain, difficulty, explanation")
+        .eq("exam_family", examFamilyForBank)
+        .eq("section", "math")
+        .gte("difficulty", 5)
+        .limit(50);
+      if (cancelled) return;
+      const mapped: Question[] = (data ?? [])
+        .map((row: any) => {
+          const opts = Array.isArray(row.options)
+            ? row.options
+            : (row.options && typeof row.options === "object" ? Object.entries(row.options).map(([letter, text]) => ({ letter, text })) : []);
+          const normalized = opts.map((o: any, i: number) =>
+            typeof o === "string"
+              ? { letter: "ABCD"[i] ?? String(i+1), text: o }
+              : { letter: String(o.letter ?? "ABCD"[i] ?? i+1), text: String(o.text ?? o.value ?? "") }
+          );
+          if (normalized.length < 2) return null;
+          return {
+            id: String(row.id),
+            question: row.stem ?? "",
+            options: normalized,
+            correctAnswer: String(row.correct_key ?? ""),
+            explanation: row.explanation ?? "",
+            difficulty: String(row.difficulty ?? ""),
+            domain: row.domain ?? "",
+            skill: row.skill ?? "",
+            difficultyRating: typeof row.difficulty === "number" ? row.difficulty : undefined,
+          } as Question;
+        })
+        .filter(Boolean) as Question[];
+      // Light shuffle for variety
+      for (let i = mapped.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [mapped[i], mapped[j]] = [mapped[j], mapped[i]];
+      }
+      setBankQuestions(mapped);
+      setBankLoading(false);
+    })();
+    return () => { cancelled = true; };
+  }, [examFamilyForBank]);
+
+  const activeQuestions: Question[] = useMemo(
+    () => (examFamilyForBank && bankQuestions ? bankQuestions : (questions as Question[])),
+    [examFamilyForBank, bankQuestions]
+  );
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [selectedAnswer, setSelectedAnswer] = useState<string | null>(null);
   const [showResult, setShowResult] = useState(false);
@@ -43,8 +107,10 @@ const MathQuiz = () => {
   const { combo, registerCorrect, registerIncorrect, getComboMessage, getComboIntensity, resetCombo } = useComboSystem();
   const { playCorrect, playWrong, playCombo } = useSoundEffects();
 
-  const currentQuestion = questions[currentQuestionIndex];
-  const progress = ((currentQuestionIndex + 1) / questions.length) * 100;
+  const currentQuestion = activeQuestions[currentQuestionIndex];
+  const progress = activeQuestions.length
+    ? ((currentQuestionIndex + 1) / activeQuestions.length) * 100
+    : 0;
 
   const hints = useProgressiveHints({
     questionKey: currentQuestion?.id,
@@ -105,7 +171,7 @@ const MathQuiz = () => {
   };
 
   const handleNext = () => {
-    if (currentQuestionIndex < questions.length - 1) {
+    if (currentQuestionIndex < activeQuestions.length - 1) {
       setCurrentQuestionIndex(currentQuestionIndex + 1);
       setSelectedAnswer(null);
       setShowResult(false);
@@ -128,9 +194,28 @@ const MathQuiz = () => {
       <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-primary/5 via-secondary/5 to-accent/5 p-4">
         <QuizResults 
           score={score} 
-          totalQuestions={questions.length}
+          totalQuestions={activeQuestions.length}
           onRestart={handleRestart}
         />
+      </div>
+    );
+  }
+
+  if (examFamilyForBank && bankLoading) {
+    return (
+      <div className="min-h-screen flex items-center justify-center text-sm text-muted-foreground">
+        Loading {examLabel} Math questions…
+      </div>
+    );
+  }
+  if (examFamilyForBank && bankQuestions && bankQuestions.length === 0) {
+    return (
+      <div className="min-h-screen flex flex-col items-center justify-center gap-3 p-6 text-center">
+        <h1 className="text-xl font-bold">{examLabel} Math bank is still filling up</h1>
+        <p className="text-sm text-muted-foreground max-w-md">
+          Our overnight generator is building this bank now. Try again later, or pick another section in the meantime.
+        </p>
+        <Link to="/"><Button>Back to home</Button></Link>
       </div>
     );
   }
