@@ -18,7 +18,7 @@ export const importedSATMathQuestions7: ImageQuestion[] = [
   {
     id: "sat-math-6aefc52b",
     question: "In the given system of equations, k is a positive integer constant. The system has no real solutions. What is the least possible value of k?",
-    imageUrl: "/questions/sat-math-6aefc52b.jpg",
+    imageUrl: "questions/sat-math-6aefc52b.jpg",
     options: [
       { letter: "A", text: "11" },
       { letter: "B", text: "12" },
@@ -35,7 +35,7 @@ export const importedSATMathQuestions7: ImageQuestion[] = [
   {
     id: "sat-math-55c5d3c2",
     question: "The function f is defined by f(x) = aˣ + b, where a and b are constants and a > 0. In the xy-plane, the graph of y = f(x) has a y-intercept at (0, -25) and passes through the point (2, 23). What is the value of a + b?",
-    imageUrl: "/questions/sat-math-55c5d3c2.jpg",
+    imageUrl: "questions/sat-math-55c5d3c2.jpg",
     options: [
       { letter: "A", text: "-19" },
       { letter: "B", text: "-7" },
@@ -52,7 +52,7 @@ export const importedSATMathQuestions7: ImageQuestion[] = [
   {
     id: "sat-math-c9417793",
     question: "What is the sum of the solutions to the given equation |x - 9| + 45 = 63?",
-    imageUrl: "/questions/sat-math-c9417793.jpg",
+    imageUrl: "questions/sat-math-c9417793.jpg",
     options: [
       { letter: "A", text: "9" },
       { letter: "B", text: "18" },
@@ -69,7 +69,7 @@ export const importedSATMathQuestions7: ImageQuestion[] = [
   {
     id: "sat-math-58dcc59f",
     question: "A landscaper is designing a rectangular garden. The length of the garden is to be 5 feet longer than the width. If the area of the garden will be 104 square feet, what will be the length, in feet, of the garden?",
-    imageUrl: "/questions/sat-math-58dcc59f.jpg",
+    imageUrl: "questions/sat-math-58dcc59f.jpg",
     options: [
       { letter: "A", text: "8" },
       { letter: "B", text: "10" },
@@ -86,7 +86,7 @@ export const importedSATMathQuestions7: ImageQuestion[] = [
   {
     id: "sat-math-2d1614a1",
     question: "The function P models the population, in thousands, of a city t years after 2005. According to the model, the population is predicted to increase by n% every 18 months. What is the value of n?",
-    imageUrl: "/questions/sat-math-2d1614a1.jpg",
+    imageUrl: "questions/sat-math-2d1614a1.jpg",
     options: [
       { letter: "A", text: "1.04" },
       { letter: "B", text: "1" },
@@ -103,7 +103,7 @@ export const importedSATMathQuestions7: ImageQuestion[] = [
   {
     id: "sat-math-30281058",
     question: "In the xy-plane, the graph of y = x² - 4x - 8 intersects line p at (1, a) and (5, b), where a and b are constants. What is the slope of line p?",
-    imageUrl: "/questions/sat-math-30281058.jpg",
+    imageUrl: "questions/sat-math-30281058.jpg",
     options: [
       { letter: "A", text: "6" },
       { letter: "B", text: "2" },
@@ -120,7 +120,7 @@ export const importedSATMathQuestions7: ImageQuestion[] = [
   {
     id: "sat-math-84dd43f8",
     question: "For the function f, f(0) = 86 and for each increase in x by 1, the value of f(x) decreases by 80%. What is the value of f(2)?",
-    imageUrl: "/questions/sat-math-84dd43f8.jpg",
+    imageUrl: "questions/sat-math-84dd43f8.jpg",
     options: [
       { letter: "A", text: "3.44" },
       { letter: "B", text: "17.2" },
@@ -138,7 +138,7 @@ export const importedSATMathQuestions7: ImageQuestion[] = [
   {
     id: "sat-math-59d1f4b5",
     question: "The equation M = 1,800(1.02)^t models the number of members of a gym t years after opening. Which equation models the number of members q quarter years after opening?",
-    imageUrl: "/questions/sat-math-59d1f4b5.jpg",
+    imageUrl: "questions/sat-math-59d1f4b5.jpg",
     options: [
       { letter: "A", text: "M = 1,800(1.02)^(q/4)" },
       { letter: "B", text: "M = 1,800(1.005)^q" },
@@ -155,7 +155,7 @@ export const importedSATMathQuestions7: ImageQuestion[] = [
   {
     id: "sat-math-4fb8a648",
     question: "A solution to the system y = x + 9 and y = x² + 16x + 63 is (x, y). What is the greatest possible value of x?",
-    imageUrl: "/questions/sat-math-4fb8a648.jpg",
+    imageUrl: "questions/sat-math-4fb8a648.jpg",
     options: [
       { letter: "A", text: "-6" },
       { letter: "B", text: "-7" },
@@ -172,7 +172,7 @@ export const importedSATMathQuestions7: ImageQuestion[] = [
   {
     id: "sat-math-133f3e41",
     question: "The given equation relates the positive variables p, q, r, and s. Which expression is equivalent to p?",
-    imageUrl: "/questions/sat-math-133f3e41.jpg",
+    imageUrl: "questions/sat-math-133f3e41.jpg",
     options: [
       { letter: "A", text: "qrs/(r + s)" },
       { letter: "B", text: "(q + r + s)/qrs" },
@@ -189,7 +189,7 @@ export const importedSATMathQuestions7: ImageQuestion[] = [
   {
     id: "sat-math-01668cd6",
     question: "Functions f and g are defined by the given equations, where x ≥ 0. Which of the following equations displays the maximum value of the function it defines?",
-    imageUrl: "/questions/sat-math-01668cd6.jpg",
+    imageUrl: "questions/sat-math-01668cd6.jpg",
     options: [
       { letter: "A", text: "I only" },
       { letter: "B", text: "II only" },
@@ -206,7 +206,7 @@ export const importedSATMathQuestions7: ImageQuestion[] = [
   {
     id: "sat-math-95eeeb5b",
     question: "The function f is defined by f(x) = a·b^x, where a, b, and c are constants. The graph passes through (0, 5) and (2, 80). If b is an integer greater than 1, which could be the value of b?",
-    imageUrl: "/questions/sat-math-95eeeb5b.jpg",
+    imageUrl: "questions/sat-math-95eeeb5b.jpg",
     options: [
       { letter: "A", text: "4" },
       { letter: "B", text: "5" },
@@ -239,7 +239,7 @@ export const importedSATMathQuestions7: ImageQuestion[] = [
   {
     id: "sat-math-62c3e57e",
     question: "In a right triangle, the tangent of one acute angle is 24/7. What is the sine of the other acute angle?",
-    imageUrl: "/questions/sat-math-62c3e57e.jpg",
+    imageUrl: "questions/sat-math-62c3e57e.jpg",
     options: [
       { letter: "A", text: "7/25" },
       { letter: "B", text: "7/24" },
@@ -256,7 +256,7 @@ export const importedSATMathQuestions7: ImageQuestion[] = [
   {
     id: "sat-math-b53c6bef",
     question: "The function g is defined by g(x) = (x - 5)(x - 1)(x + 3). For what value of x does g have a positive value?",
-    imageUrl: "/questions/sat-math-b53c6bef.jpg",
+    imageUrl: "questions/sat-math-b53c6bef.jpg",
     options: [
       { letter: "A", text: "-4" },
       { letter: "B", text: "-2" },
@@ -273,7 +273,7 @@ export const importedSATMathQuestions7: ImageQuestion[] = [
   {
     id: "sat-math-ad038c19",
     question: "Which of the following is equivalent to the given expression?",
-    imageUrl: "/questions/sat-math-ad038c19.jpg",
+    imageUrl: "questions/sat-math-ad038c19.jpg",
     options: [
       { letter: "A", text: "3x² - 5x + 2" },
       { letter: "B", text: "3x² + 5x - 2" },
@@ -290,7 +290,7 @@ export const importedSATMathQuestions7: ImageQuestion[] = [
   {
     id: "sat-math-ef926848",
     question: "Square P has a side length of x inches. Square Q has a perimeter that is 176 inches greater than the perimeter of square P. The function f gives the area of square Q, in square inches. Which defines f?",
-    imageUrl: "/questions/sat-math-ef926848.jpg",
+    imageUrl: "questions/sat-math-ef926848.jpg",
     options: [
       { letter: "A", text: "f(x) = (x + 44)²" },
       { letter: "B", text: "f(x) = (x + 176)²" },
@@ -307,7 +307,7 @@ export const importedSATMathQuestions7: ImageQuestion[] = [
   {
     id: "sat-math-77c0cced",
     question: "In the system of equations, a is a constant. The graphs intersect at exactly one point (x, y). What is the value of x?",
-    imageUrl: "/questions/sat-math-77c0cced.jpg",
+    imageUrl: "questions/sat-math-77c0cced.jpg",
     options: [
       { letter: "A", text: "-8" },
       { letter: "B", text: "3" },
@@ -324,7 +324,7 @@ export const importedSATMathQuestions7: ImageQuestion[] = [
   {
     id: "sat-math-635f54ee",
     question: "The surface area of a cube is 6a², where a is a positive constant. Which gives the perimeter of one face of the cube?",
-    imageUrl: "/questions/sat-math-635f54ee.jpg",
+    imageUrl: "questions/sat-math-635f54ee.jpg",
     options: [
       { letter: "A", text: "a" },
       { letter: "B", text: "4a" },
@@ -341,7 +341,7 @@ export const importedSATMathQuestions7: ImageQuestion[] = [
   {
     id: "sat-math-6e7ae9fc",
     question: "The function g is defined by g(x) = (x)(x - 2)(x + 6)². The value of g(7 - w) is 0. What is the sum of all possible values of w?",
-    imageUrl: "/questions/sat-math-6e7ae9fc.jpg",
+    imageUrl: "questions/sat-math-6e7ae9fc.jpg",
     options: [
       { letter: "A", text: "20" },
       { letter: "B", text: "22" },
@@ -359,7 +359,7 @@ export const importedSATMathQuestions7: ImageQuestion[] = [
   {
     id: "sat-math-3a01a5ee",
     question: "What is the sum of the solutions to |−5x + 13| = 73?",
-    imageUrl: "/questions/sat-math-3a01a5ee.jpg",
+    imageUrl: "questions/sat-math-3a01a5ee.jpg",
     options: [
       { letter: "A", text: "-26" },
       { letter: "B", text: "86/5" },
@@ -376,7 +376,7 @@ export const importedSATMathQuestions7: ImageQuestion[] = [
   {
     id: "sat-math-1a722d7d",
     question: "Let p(x) = (c - x)/(c + x), where c is a constant. If p(c) = 0, what is the value of p(12)?",
-    imageUrl: "/questions/sat-math-1a722d7d.jpg",
+    imageUrl: "questions/sat-math-1a722d7d.jpg",
     options: [
       { letter: "A", text: "10.00" },
       { letter: "B", text: "10.25" },
@@ -393,7 +393,7 @@ export const importedSATMathQuestions7: ImageQuestion[] = [
   {
     id: "sat-math-a7711fe8",
     question: "What is the minimum value of the function f defined by f(x) = (x - 2)² - 4?",
-    imageUrl: "/questions/sat-math-a7711fe8.jpg",
+    imageUrl: "questions/sat-math-a7711fe8.jpg",
     options: [
       { letter: "A", text: "-4" },
       { letter: "B", text: "-2" },
@@ -410,7 +410,7 @@ export const importedSATMathQuestions7: ImageQuestion[] = [
   {
     id: "sat-math-161126cf",
     question: "The function f is defined by f(x) = 1.84^x. The equation can be rewritten as f(x) = (1 + r)^x. Which is closest to the value of r?",
-    imageUrl: "/questions/sat-math-161126cf.jpg",
+    imageUrl: "questions/sat-math-161126cf.jpg",
     options: [
       { letter: "A", text: "0.84" },
       { letter: "B", text: "0.46" },
@@ -427,7 +427,7 @@ export const importedSATMathQuestions7: ImageQuestion[] = [
   {
     id: "sat-math-7e6ea718",
     question: "In the equation y = 2(x - d)(x + d)(x + g)(x - d), d and g are unique positive constants. How many distinct x-intercepts does the graph have?",
-    imageUrl: "/questions/sat-math-7e6ea718.jpg",
+    imageUrl: "questions/sat-math-7e6ea718.jpg",
     options: [
       { letter: "A", text: "2" },
       { letter: "B", text: "3" },
@@ -444,7 +444,7 @@ export const importedSATMathQuestions7: ImageQuestion[] = [
   {
     id: "sat-math-c8e9a011",
     question: "The given equation relates n, t, and w. Which expression is equivalent to n?",
-    imageUrl: "/questions/sat-math-c8e9a011.jpg",
+    imageUrl: "questions/sat-math-c8e9a011.jpg",
     options: [
       { letter: "A", text: "tw/(2w - t)" },
       { letter: "B", text: "tw(2w - t)" },
@@ -461,7 +461,7 @@ export const importedSATMathQuestions7: ImageQuestion[] = [
   {
     id: "sat-math-20291f47",
     question: "Which expression is equivalent to y + 12/(xy) + (x - 8)/y?",
-    imageUrl: "/questions/sat-math-20291f47.jpg",
+    imageUrl: "questions/sat-math-20291f47.jpg",
     options: [
       { letter: "A", text: "(xy + 12 + x - 8)/xy" },
       { letter: "B", text: "(xy + x - 8)/xy" },
@@ -478,7 +478,7 @@ export const importedSATMathQuestions7: ImageQuestion[] = [
   {
     id: "sat-math-42f8e4b4",
     question: "One of the factors of 2x³ + 42x² + 208x is (x + b), where b is a positive constant. What is the smallest possible value of b?",
-    imageUrl: "/questions/sat-math-42f8e4b4.jpg",
+    imageUrl: "questions/sat-math-42f8e4b4.jpg",
     options: [
       { letter: "A", text: "8" },
       { letter: "B", text: "13" },
@@ -496,7 +496,7 @@ export const importedSATMathQuestions7: ImageQuestion[] = [
   {
     id: "sat-math-de39858a",
     question: "The function h is defined by h(x) = a^x + b, where a and b are positive constants. The graph passes through (0, 10) and (-2, 36). What is the value of ab?",
-    imageUrl: "/questions/sat-math-de39858a.jpg",
+    imageUrl: "questions/sat-math-de39858a.jpg",
     options: [
       { letter: "A", text: "1/4" },
       { letter: "B", text: "15" },
@@ -513,7 +513,7 @@ export const importedSATMathQuestions7: ImageQuestion[] = [
   {
     id: "sat-math-d41cf4d3",
     question: "The function f is defined by f(x) = a√(x + b), where a and b are constants. The graph passes through (-24, 0) and f(24) < 0. Which must be true?",
-    imageUrl: "/questions/sat-math-d41cf4d3.jpg",
+    imageUrl: "questions/sat-math-d41cf4d3.jpg",
     options: [
       { letter: "A", text: "f(0) > 0" },
       { letter: "B", text: "f(0) = -24" },
@@ -530,7 +530,7 @@ export const importedSATMathQuestions7: ImageQuestion[] = [
   {
     id: "sat-math-1178f2df",
     question: "A table shows three values of x and their corresponding values of y, where y = f(x) + 4 and f is a quadratic function. What is the y-coordinate of the y-intercept of the graph of f?",
-    imageUrl: "/questions/sat-math-1178f2df.jpg",
+    imageUrl: "questions/sat-math-1178f2df.jpg",
     options: [
       { letter: "A", text: "-2112" },
       { letter: "B", text: "-2108" },
@@ -548,7 +548,7 @@ export const importedSATMathQuestions7: ImageQuestion[] = [
   {
     id: "sat-math-84e8cc72",
     question: "A quadratic function models the height of an object. The initial height is 10 feet and maximum height is 1,034 feet at 8 seconds. What is the height at 10 seconds?",
-    imageUrl: "/questions/sat-math-84e8cc72.jpg",
+    imageUrl: "questions/sat-math-84e8cc72.jpg",
     options: [
       { letter: "A", text: "906" },
       { letter: "B", text: "938" },
@@ -565,7 +565,7 @@ export const importedSATMathQuestions7: ImageQuestion[] = [
   {
     id: "sat-math-12e7faf8",
     question: "The equation is true for all x ≠ 1, where a and d are integers. What is the value of a + d?",
-    imageUrl: "/questions/sat-math-12e7faf8.jpg",
+    imageUrl: "questions/sat-math-12e7faf8.jpg",
     options: [
       { letter: "A", text: "-1" },
       { letter: "B", text: "-1" },
@@ -582,7 +582,7 @@ export const importedSATMathQuestions7: ImageQuestion[] = [
   {
     id: "sat-math-89fc23af",
     question: "Which expression is equivalent to (x² - 9)/(x - 3)?",
-    imageUrl: "/questions/sat-math-89fc23af.jpg",
+    imageUrl: "questions/sat-math-89fc23af.jpg",
     options: [
       { letter: "A", text: "x - 3" },
       { letter: "B", text: "x + 3" },
@@ -599,7 +599,7 @@ export const importedSATMathQuestions7: ImageQuestion[] = [
   {
     id: "sat-math-911c415b",
     question: "The expression (75x² - 100y²) - 10(10y² - 110) can be written in the form ax² + by², where a and b are constants. What is the value of a + b?",
-    imageUrl: "/questions/sat-math-911c415b.jpg",
+    imageUrl: "questions/sat-math-911c415b.jpg",
     options: [
       { letter: "A", text: "6532" },
       { letter: "B", text: "6632" },
@@ -617,7 +617,7 @@ export const importedSATMathQuestions7: ImageQuestion[] = [
   {
     id: "sat-math-b74f2feb",
     question: "The expression ⁶√(5³·x⁴·⁵) · ⁸√(2·x) is equivalent to ax^b, where a and b are positive constants. What is the value of a + b?",
-    imageUrl: "/questions/sat-math-b74f2feb.jpg",
+    imageUrl: "questions/sat-math-b74f2feb.jpg",
     options: [
       { letter: "A", text: "361/8" },
       { letter: "B", text: "45" },
@@ -635,7 +635,7 @@ export const importedSATMathQuestions7: ImageQuestion[] = [
   {
     id: "sat-math-5edc8c98",
     question: "In the equation 64x² - (16a + 4b)x + ab = 0, p and q are positive constants. The sum of solutions is k(4a + b). What is the value of k?",
-    imageUrl: "/questions/sat-math-5edc8c98.jpg",
+    imageUrl: "questions/sat-math-5edc8c98.jpg",
     options: [
       { letter: "A", text: "1/16" },
       { letter: "B", text: "1/4" },
@@ -653,7 +653,7 @@ export const importedSATMathQuestions7: ImageQuestion[] = [
   {
     id: "sat-math-cd358b89",
     question: "Function f is defined by f(x) = (x + 6)(x + 5)(x + 1). Function g is defined by g(x) = f(x - 1). The x-intercepts of g are at a, b, and c. What is the value of a + b + c?",
-    imageUrl: "/questions/sat-math-cd358b89.jpg",
+    imageUrl: "questions/sat-math-cd358b89.jpg",
     options: [
       { letter: "A", text: "-12" },
       { letter: "B", text: "-9" },
@@ -670,7 +670,7 @@ export const importedSATMathQuestions7: ImageQuestion[] = [
   {
     id: "sat-math-f89e1d6f",
     question: "If a = c + d, which expression is equivalent to x² - c² - 2cd - d²?",
-    imageUrl: "/questions/sat-math-f89e1d6f.jpg",
+    imageUrl: "questions/sat-math-f89e1d6f.jpg",
     options: [
       { letter: "A", text: "(x - a)(x + a)" },
       { letter: "B", text: "(x - a)²" },
@@ -687,7 +687,7 @@ export const importedSATMathQuestions7: ImageQuestion[] = [
   {
     id: "sat-math-ff2e5c76",
     question: "What is the sum of the solutions to x² - 40x = -10?",
-    imageUrl: "/questions/sat-math-ff2e5c76.jpg",
+    imageUrl: "questions/sat-math-ff2e5c76.jpg",
     options: [
       { letter: "A", text: "10" },
       { letter: "B", text: "20" },
@@ -704,7 +704,7 @@ export const importedSATMathQuestions7: ImageQuestion[] = [
   {
     id: "sat-math-fc3dfa26",
     question: "What value of x satisfies the equation 9/(x-3) - 1/(x+3) = 6/(x²-9)?",
-    imageUrl: "/questions/sat-math-fc3dfa26.jpg",
+    imageUrl: "questions/sat-math-fc3dfa26.jpg",
     options: [
       { letter: "A", text: "-3" },
       { letter: "B", text: "1/2" },

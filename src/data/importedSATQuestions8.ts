@@ -15,7 +15,7 @@ export const importedSATMathQuestions8: Question[] = [
     difficulty: "Hard",
     domain: "Advanced Math",
     skill: "Nonlinear functions",
-    imageUrl: "/questions/sat-math-9f2ecade.jpg",
+    imageUrl: "questions/sat-math-9f2ecade.jpg",
     difficultyRating: 11
   },
   {
@@ -32,7 +32,7 @@ export const importedSATMathQuestions8: Question[] = [
     difficulty: "Hard",
     domain: "Advanced Math",
     skill: "Nonlinear functions",
-    imageUrl: "/questions/sat-math-083ef63a.jpg",
+    imageUrl: "questions/sat-math-083ef63a.jpg",
     difficultyRating: 10
   },
   {
@@ -49,7 +49,7 @@ export const importedSATMathQuestions8: Question[] = [
     difficulty: "Hard",
     domain: "Advanced Math",
     skill: "Nonlinear equations",
-    imageUrl: "/questions/sat-math-6011a3f8.jpg",
+    imageUrl: "questions/sat-math-6011a3f8.jpg",
     difficultyRating: 11
   },
   {
@@ -66,7 +66,7 @@ export const importedSATMathQuestions8: Question[] = [
     difficulty: "Hard",
     domain: "Advanced Math",
     skill: "Nonlinear functions",
-    imageUrl: "/questions/sat-math-0e61101e.jpg",
+    imageUrl: "questions/sat-math-0e61101e.jpg",
     difficultyRating: 10
   },
   {
@@ -83,7 +83,7 @@ export const importedSATMathQuestions8: Question[] = [
     difficulty: "Hard",
     domain: "Advanced Math",
     skill: "Equivalent expressions",
-    imageUrl: "/questions/sat-math-e117d3b8.jpg",
+    imageUrl: "questions/sat-math-e117d3b8.jpg",
     difficultyRating: 10
   },
   {
@@ -100,7 +100,7 @@ export const importedSATMathQuestions8: Question[] = [
     difficulty: "Hard",
     domain: "Advanced Math",
     skill: "Nonlinear functions",
-    imageUrl: "/questions/sat-math-f44b4125.jpg",
+    imageUrl: "questions/sat-math-f44b4125.jpg",
     difficultyRating: 11
   },
   {
@@ -117,7 +117,7 @@ export const importedSATMathQuestions8: Question[] = [
     difficulty: "Hard",
     domain: "Advanced Math",
     skill: "Nonlinear functions",
-    imageUrl: "/questions/sat-math-7a6d06bf.jpg",
+    imageUrl: "questions/sat-math-7a6d06bf.jpg",
     difficultyRating: 10
   },
   {
@@ -134,7 +134,7 @@ export const importedSATMathQuestions8: Question[] = [
     difficulty: "Hard",
     domain: "Advanced Math",
     skill: "Nonlinear functions",
-    imageUrl: "/questions/sat-math-04bbce67.jpg",
+    imageUrl: "questions/sat-math-04bbce67.jpg",
     difficultyRating: 9
   },
   {
@@ -151,7 +151,7 @@ export const importedSATMathQuestions8: Question[] = [
     difficulty: "Hard",
     domain: "Advanced Math",
     skill: "Nonlinear functions",
-    imageUrl: "/questions/sat-math-dcf63c94.jpg",
+    imageUrl: "questions/sat-math-dcf63c94.jpg",
     difficultyRating: 10
   },
   {
@@ -168,7 +168,7 @@ export const importedSATMathQuestions8: Question[] = [
     difficulty: "Hard",
     domain: "Advanced Math",
     skill: "Nonlinear equations",
-    imageUrl: "/questions/sat-math-9cb9beec.jpg",
+    imageUrl: "questions/sat-math-9cb9beec.jpg",
     difficultyRating: 11
   },
   {
@@ -185,7 +185,7 @@ export const importedSATMathQuestions8: Question[] = [
     difficulty: "Hard",
     domain: "Advanced Math",
     skill: "Nonlinear functions",
-    imageUrl: "/questions/sat-math-2b1a27cd.jpg",
+    imageUrl: "questions/sat-math-2b1a27cd.jpg",
     difficultyRating: 11
   },
   {
@@ -202,7 +202,7 @@ export const importedSATMathQuestions8: Question[] = [
     difficulty: "Hard",
     domain: "Advanced Math",
     skill: "Nonlinear functions",
-    imageUrl: "/questions/sat-math-1073d70c.jpg",
+    imageUrl: "questions/sat-math-1073d70c.jpg",
     difficultyRating: 10
   },
   {
@@ -219,7 +219,7 @@ export const importedSATMathQuestions8: Question[] = [
     difficulty: "Hard",
     domain: "Advanced Math",
     skill: "Nonlinear functions",
-    imageUrl: "/questions/sat-math-1fe10d97.jpg",
+    imageUrl: "questions/sat-math-1fe10d97.jpg",
     difficultyRating: 10
   },
   {
@@ -236,7 +236,7 @@ export const importedSATMathQuestions8: Question[] = [
     difficulty: "Hard",
     domain: "Advanced Math",
     skill: "Equivalent expressions",
-    imageUrl: "/questions/sat-math-7355b9d9.jpg",
+    imageUrl: "questions/sat-math-7355b9d9.jpg",
     difficultyRating: 12
   },
   {
@@ -269,7 +269,7 @@ export const importedSATMathQuestions8: Question[] = [
     difficulty: "Hard",
     domain: "Advanced Math",
     skill: "Nonlinear functions",
-    imageUrl: "/questions/sat-math-08d03fe4.jpg",
+    imageUrl: "questions/sat-math-08d03fe4.jpg",
     difficultyRating: 10
   },
   {
@@ -286,7 +286,7 @@ export const importedSATMathQuestions8: Question[] = [
     difficulty: "Hard",
     domain: "Advanced Math",
     skill: "Nonlinear functions",
-    imageUrl: "/questions/sat-math-43926bd9.jpg",
+    imageUrl: "questions/sat-math-43926bd9.jpg",
     difficultyRating: 11
   },
   {
@@ -303,7 +303,7 @@ export const importedSATMathQuestions8: Question[] = [
     difficulty: "Hard",
     domain: "Advanced Math",
     skill: "Nonlinear functions",
-    imageUrl: "/questions/sat-math-7eed640d.jpg",
+    imageUrl: "questions/sat-math-7eed640d.jpg",
     difficultyRating: 9
   },
   {
@@ -320,7 +320,7 @@ export const importedSATMathQuestions8: Question[] = [
     difficulty: "Hard",
     domain: "Advanced Math",
     skill: "Nonlinear functions",
-    imageUrl: "/questions/sat-math-4d037075.jpg",
+    imageUrl: "questions/sat-math-4d037075.jpg",
     difficultyRating: 11
   },
   {
@@ -337,7 +337,7 @@ export const importedSATMathQuestions8: Question[] = [
     difficulty: "Hard",
     domain: "Advanced Math",
     skill: "Nonlinear functions",
-    imageUrl: "/questions/sat-math-f25a34aa.jpg",
+    imageUrl: "questions/sat-math-f25a34aa.jpg",
     difficultyRating: 10
   },
   {
@@ -354,7 +354,7 @@ export const importedSATMathQuestions8: Question[] = [
     difficulty: "Hard",
     domain: "Advanced Math",
     skill: "Nonlinear functions",
-    imageUrl: "/questions/sat-math-4d7064a6.jpg",
+    imageUrl: "questions/sat-math-4d7064a6.jpg",
     difficultyRating: 9
   },
   {
@@ -371,7 +371,7 @@ export const importedSATMathQuestions8: Question[] = [
     difficulty: "Hard",
     domain: "Problem-Solving and Data Analysis",
     skill: "Percentages",
-    imageUrl: "/questions/sat-math-67c0200a.jpg",
+    imageUrl: "questions/sat-math-67c0200a.jpg",
     difficultyRating: 10
   },
   {
@@ -388,7 +388,7 @@ export const importedSATMathQuestions8: Question[] = [
     difficulty: "Hard",
     domain: "Problem-Solving and Data Analysis",
     skill: "Percentages",
-    imageUrl: "/questions/sat-math-40e7a1a9.jpg",
+    imageUrl: "questions/sat-math-40e7a1a9.jpg",
     difficultyRating: 9
   },
   {
@@ -405,7 +405,7 @@ export const importedSATMathQuestions8: Question[] = [
     difficulty: "Hard",
     domain: "Problem-Solving and Data Analysis",
     skill: "Measures of center",
-    imageUrl: "/questions/sat-math-bf47ad54.jpg",
+    imageUrl: "questions/sat-math-bf47ad54.jpg",
     difficultyRating: 10
   },
   {
@@ -422,7 +422,7 @@ export const importedSATMathQuestions8: Question[] = [
     difficulty: "Hard",
     domain: "Problem-Solving and Data Analysis",
     skill: "Probability",
-    imageUrl: "/questions/sat-math-585de39a.jpg",
+    imageUrl: "questions/sat-math-585de39a.jpg",
     difficultyRating: 9
   },
   {
@@ -439,7 +439,7 @@ export const importedSATMathQuestions8: Question[] = [
     difficulty: "Hard",
     domain: "Problem-Solving and Data Analysis",
     skill: "Statistical claims",
-    imageUrl: "/questions/sat-math-7d68096f.jpg",
+    imageUrl: "questions/sat-math-7d68096f.jpg",
     difficultyRating: 9
   },
   {
@@ -456,7 +456,7 @@ export const importedSATMathQuestions8: Question[] = [
     difficulty: "Hard",
     domain: "Problem-Solving and Data Analysis",
     skill: "Measures of center",
-    imageUrl: "/questions/sat-math-4ff597db.jpg",
+    imageUrl: "questions/sat-math-4ff597db.jpg",
     difficultyRating: 10
   },
   {
@@ -473,7 +473,7 @@ export const importedSATMathQuestions8: Question[] = [
     difficulty: "Hard",
     domain: "Problem-Solving and Data Analysis",
     skill: "Two-variable data",
-    imageUrl: "/questions/sat-math-7b52985c.jpg",
+    imageUrl: "questions/sat-math-7b52985c.jpg",
     difficultyRating: 9
   },
   {
@@ -490,7 +490,7 @@ export const importedSATMathQuestions8: Question[] = [
     difficulty: "Hard",
     domain: "Problem-Solving and Data Analysis",
     skill: "Statistical claims",
-    imageUrl: "/questions/sat-math-7ce2830a.jpg",
+    imageUrl: "questions/sat-math-7ce2830a.jpg",
     difficultyRating: 9
   },
   {
@@ -507,7 +507,7 @@ export const importedSATMathQuestions8: Question[] = [
     difficulty: "Hard",
     domain: "Problem-Solving and Data Analysis",
     skill: "Probability",
-    imageUrl: "/questions/sat-math-6a715bed.jpg",
+    imageUrl: "questions/sat-math-6a715bed.jpg",
     difficultyRating: 10
   },
   {
@@ -524,7 +524,7 @@ export const importedSATMathQuestions8: Question[] = [
     difficulty: "Hard",
     domain: "Problem-Solving and Data Analysis",
     skill: "Measures of center",
-    imageUrl: "/questions/sat-math-1142af44.jpg",
+    imageUrl: "questions/sat-math-1142af44.jpg",
     difficultyRating: 10
   },
   {
@@ -541,7 +541,7 @@ export const importedSATMathQuestions8: Question[] = [
     difficulty: "Hard",
     domain: "Problem-Solving and Data Analysis",
     skill: "Measures of center",
-    imageUrl: "/questions/sat-math-1e8ccffd.jpg",
+    imageUrl: "questions/sat-math-1e8ccffd.jpg",
     difficultyRating: 9
   },
   {
@@ -558,7 +558,7 @@ export const importedSATMathQuestions8: Question[] = [
     difficulty: "Hard",
     domain: "Problem-Solving and Data Analysis",
     skill: "Two-variable data",
-    imageUrl: "/questions/sat-math-1e1027a7.jpg",
+    imageUrl: "questions/sat-math-1e1027a7.jpg",
     difficultyRating: 10
   },
   {
@@ -575,7 +575,7 @@ export const importedSATMathQuestions8: Question[] = [
     difficulty: "Hard",
     domain: "Problem-Solving and Data Analysis",
     skill: "Measures of center",
-    imageUrl: "/questions/sat-math-e7d48c8a.jpg",
+    imageUrl: "questions/sat-math-e7d48c8a.jpg",
     difficultyRating: 10
   },
   {
@@ -592,7 +592,7 @@ export const importedSATMathQuestions8: Question[] = [
     difficulty: "Hard",
     domain: "Problem-Solving and Data Analysis",
     skill: "Statistical inference",
-    imageUrl: "/questions/sat-math-308084c5.jpg",
+    imageUrl: "questions/sat-math-308084c5.jpg",
     difficultyRating: 9
   },
   {
@@ -609,7 +609,7 @@ export const importedSATMathQuestions8: Question[] = [
     difficulty: "Hard",
     domain: "Problem-Solving and Data Analysis",
     skill: "Ratios and rates",
-    imageUrl: "/questions/sat-math-8637294f.jpg",
+    imageUrl: "questions/sat-math-8637294f.jpg",
     difficultyRating: 10
   },
   {
@@ -626,7 +626,7 @@ export const importedSATMathQuestions8: Question[] = [
     difficulty: "Hard",
     domain: "Problem-Solving and Data Analysis",
     skill: "Percentages",
-    imageUrl: "/questions/sat-math-e635aede.jpg",
+    imageUrl: "questions/sat-math-e635aede.jpg",
     difficultyRating: 10
   },
   {
@@ -643,7 +643,7 @@ export const importedSATMathQuestions8: Question[] = [
     difficulty: "Hard",
     domain: "Problem-Solving and Data Analysis",
     skill: "Ratios and rates",
-    imageUrl: "/questions/sat-math-7d721177.jpg",
+    imageUrl: "questions/sat-math-7d721177.jpg",
     difficultyRating: 10
   },
   {
@@ -660,7 +660,7 @@ export const importedSATMathQuestions8: Question[] = [
     difficulty: "Hard",
     domain: "Advanced Math",
     skill: "Nonlinear functions",
-    imageUrl: "/questions/sat-math-48f83c34.jpg",
+    imageUrl: "questions/sat-math-48f83c34.jpg",
     difficultyRating: 10
   },
   {
@@ -677,7 +677,7 @@ export const importedSATMathQuestions8: Question[] = [
     difficulty: "Hard",
     domain: "Advanced Math",
     skill: "Nonlinear equations",
-    imageUrl: "/questions/sat-math-58b109d4.jpg",
+    imageUrl: "questions/sat-math-58b109d4.jpg",
     difficultyRating: 10
   },
   {
@@ -694,7 +694,7 @@ export const importedSATMathQuestions8: Question[] = [
     difficulty: "Hard",
     domain: "Problem-Solving and Data Analysis",
     skill: "Statistical inference",
-    imageUrl: "/questions/sat-math-85939da5.jpg",
+    imageUrl: "questions/sat-math-85939da5.jpg",
     difficultyRating: 9
   },
   {
@@ -711,7 +711,7 @@ export const importedSATMathQuestions8: Question[] = [
     difficulty: "Hard",
     domain: "Problem-Solving and Data Analysis",
     skill: "Percentages",
-    imageUrl: "/questions/sat-math-954943a4.jpg",
+    imageUrl: "questions/sat-math-954943a4.jpg",
     difficultyRating: 9
   }
 ];

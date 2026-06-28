@@ -20,7 +20,7 @@ export const importedSATMathQuestions5: ImageQuestion[] = [
     difficulty: "Hard",
     domain: "Algebra",
     skill: "Systems of equations",
-    imageUrl: "/questions/sat-math-73b3b7d8.jpg"
+    imageUrl: "questions/sat-math-73b3b7d8.jpg"
   },
   {
     id: "sat-math-301faf80",
@@ -36,7 +36,7 @@ export const importedSATMathQuestions5: ImageQuestion[] = [
     difficulty: "Hard",
     domain: "Advanced Math",
     skill: "Nonlinear functions",
-    imageUrl: "/questions/sat-math-301faf80.jpg"
+    imageUrl: "questions/sat-math-301faf80.jpg"
   },
   {
     id: "sat-math-128c75e2",
@@ -52,7 +52,7 @@ export const importedSATMathQuestions5: ImageQuestion[] = [
     difficulty: "Hard",
     domain: "Advanced Math",
     skill: "Nonlinear functions",
-    imageUrl: "/questions/sat-math-128c75e2.jpg"
+    imageUrl: "questions/sat-math-128c75e2.jpg"
   },
   {
     id: "sat-math-02060533",
@@ -68,7 +68,7 @@ export const importedSATMathQuestions5: ImageQuestion[] = [
     difficulty: "Hard",
     domain: "Advanced Math",
     skill: "Nonlinear functions",
-    imageUrl: "/questions/sat-math-02060533.jpg"
+    imageUrl: "questions/sat-math-02060533.jpg"
   },
   {
     id: "sat-math-91e7ea5e",
@@ -84,7 +84,7 @@ export const importedSATMathQuestions5: ImageQuestion[] = [
     difficulty: "Hard",
     domain: "Advanced Math",
     skill: "Nonlinear functions",
-    imageUrl: "/questions/sat-math-91e7ea5e.jpg"
+    imageUrl: "questions/sat-math-91e7ea5e.jpg"
   },
   {
     id: "sat-math-358f18bc",
@@ -100,7 +100,7 @@ export const importedSATMathQuestions5: ImageQuestion[] = [
     difficulty: "Hard",
     domain: "Advanced Math",
     skill: "Nonlinear functions",
-    imageUrl: "/questions/sat-math-358f18bc.jpg"
+    imageUrl: "questions/sat-math-358f18bc.jpg"
   },
   {
     id: "sat-math-3a9d60b2",
@@ -116,7 +116,7 @@ export const importedSATMathQuestions5: ImageQuestion[] = [
     difficulty: "Hard",
     domain: "Advanced Math",
     skill: "Nonlinear equations",
-    imageUrl: "/questions/sat-math-3a9d60b2.jpg"
+    imageUrl: "questions/sat-math-3a9d60b2.jpg"
   },
   {
     id: "sat-math-8490cc45",
@@ -132,7 +132,7 @@ export const importedSATMathQuestions5: ImageQuestion[] = [
     difficulty: "Hard",
     domain: "Advanced Math",
     skill: "Nonlinear functions",
-    imageUrl: "/questions/sat-math-8490cc45.jpg"
+    imageUrl: "questions/sat-math-8490cc45.jpg"
   },
   {
     id: "sat-math-ebed7dc6",
@@ -148,7 +148,7 @@ export const importedSATMathQuestions5: ImageQuestion[] = [
     difficulty: "Hard",
     domain: "Advanced Math",
     skill: "Nonlinear functions",
-    imageUrl: "/questions/sat-math-ebed7dc6.jpg"
+    imageUrl: "questions/sat-math-ebed7dc6.jpg"
   },
   {
     id: "sat-math-ba0edc30",
@@ -164,7 +164,7 @@ export const importedSATMathQuestions5: ImageQuestion[] = [
     difficulty: "Hard",
     domain: "Advanced Math",
     skill: "Nonlinear equations",
-    imageUrl: "/questions/sat-math-ba0edc30.jpg"
+    imageUrl: "questions/sat-math-ba0edc30.jpg"
   },
   {
     id: "sat-math-line-para",
@@ -180,7 +180,7 @@ export const importedSATMathQuestions5: ImageQuestion[] = [
     difficulty: "Hard",
     domain: "Advanced Math",
     skill: "Nonlinear equations",
-    imageUrl: "/questions/sat-math-line-para.jpg"
+    imageUrl: "questions/sat-math-line-para.jpg"
   },
   {
     id: "sat-math-a9084ca4",
@@ -196,7 +196,7 @@ export const importedSATMathQuestions5: ImageQuestion[] = [
     difficulty: "Hard",
     domain: "Advanced Math",
     skill: "Nonlinear functions",
-    imageUrl: "/questions/sat-math-a9084ca4.jpg"
+    imageUrl: "questions/sat-math-a9084ca4.jpg"
   },
   {
     id: "sat-math-66bce0c1",
@@ -212,7 +212,7 @@ export const importedSATMathQuestions5: ImageQuestion[] = [
     difficulty: "Hard",
     domain: "Advanced Math",
     skill: "Nonlinear equations",
-    imageUrl: "/questions/sat-math-66bce0c1.jpg"
+    imageUrl: "questions/sat-math-66bce0c1.jpg"
   },
   {
     id: "sat-math-c81b6c57",
@@ -228,7 +228,7 @@ export const importedSATMathQuestions5: ImageQuestion[] = [
     difficulty: "Hard",
     domain: "Advanced Math",
     skill: "Equivalent expressions",
-    imageUrl: "/questions/sat-math-c81b6c57.jpg"
+    imageUrl: "questions/sat-math-c81b6c57.jpg"
   },
   {
     id: "sat-math-17d0e87d",
@@ -244,7 +244,7 @@ export const importedSATMathQuestions5: ImageQuestion[] = [
     difficulty: "Hard",
     domain: "Advanced Math",
     skill: "Nonlinear equations",
-    imageUrl: "/questions/sat-math-17d0e87d.jpg"
+    imageUrl: "questions/sat-math-17d0e87d.jpg"
   },
   {
     id: "sat-math-2f51abc2",
@@ -260,7 +260,7 @@ export const importedSATMathQuestions5: ImageQuestion[] = [
     difficulty: "Hard",
     domain: "Advanced Math",
     skill: "Nonlinear functions",
-    imageUrl: "/questions/sat-math-2f51abc2.jpg"
+    imageUrl: "questions/sat-math-2f51abc2.jpg"
   },
   {
     id: "sat-math-5355c0ef",
@@ -276,7 +276,7 @@ export const importedSATMathQuestions5: ImageQuestion[] = [
     difficulty: "Hard",
     domain: "Advanced Math",
     skill: "Equivalent expressions",
-    imageUrl: "/questions/sat-math-5355c0ef.jpg"
+    imageUrl: "questions/sat-math-5355c0ef.jpg"
   },
   {
     id: "sat-math-ce579859",
@@ -292,7 +292,7 @@ export const importedSATMathQuestions5: ImageQuestion[] = [
     difficulty: "Hard",
     domain: "Advanced Math",
     skill: "Nonlinear functions",
-    imageUrl: "/questions/sat-math-ce579859.jpg"
+    imageUrl: "questions/sat-math-ce579859.jpg"
   },
   {
     id: "sat-math-8462b105",
@@ -308,7 +308,7 @@ export const importedSATMathQuestions5: ImageQuestion[] = [
     difficulty: "Hard",
     domain: "Advanced Math",
     skill: "Nonlinear functions",
-    imageUrl: "/questions/sat-math-8462b105.jpg"
+    imageUrl: "questions/sat-math-8462b105.jpg"
   },
   {
     id: "sat-math-88a0c425",
@@ -324,7 +324,7 @@ export const importedSATMathQuestions5: ImageQuestion[] = [
     difficulty: "Hard",
     domain: "Advanced Math",
     skill: "Nonlinear equations",
-    imageUrl: "/questions/sat-math-88a0c425.jpg"
+    imageUrl: "questions/sat-math-88a0c425.jpg"
   },
   {
     id: "sat-math-7028c74f",
@@ -340,7 +340,7 @@ export const importedSATMathQuestions5: ImageQuestion[] = [
     difficulty: "Hard",
     domain: "Advanced Math",
     skill: "Nonlinear equations",
-    imageUrl: "/questions/sat-math-7028c74f.jpg"
+    imageUrl: "questions/sat-math-7028c74f.jpg"
   },
   {
     id: "sat-math-03ff48d2",
@@ -356,7 +356,7 @@ export const importedSATMathQuestions5: ImageQuestion[] = [
     difficulty: "Hard",
     domain: "Advanced Math",
     skill: "Nonlinear equations",
-    imageUrl: "/questions/sat-math-03ff48d2.jpg"
+    imageUrl: "questions/sat-math-03ff48d2.jpg"
   },
   {
     id: "sat-math-8e1da169",
@@ -372,7 +372,7 @@ export const importedSATMathQuestions5: ImageQuestion[] = [
     difficulty: "Hard",
     domain: "Advanced Math",
     skill: "Nonlinear functions",
-    imageUrl: "/questions/sat-math-8e1da169.jpg"
+    imageUrl: "questions/sat-math-8e1da169.jpg"
   },
   {
     id: "sat-math-softball",
@@ -388,7 +388,7 @@ export const importedSATMathQuestions5: ImageQuestion[] = [
     difficulty: "Hard",
     domain: "Advanced Math",
     skill: "Nonlinear functions",
-    imageUrl: "/questions/sat-math-softball.jpg"
+    imageUrl: "questions/sat-math-softball.jpg"
   },
   {
     id: "sat-math-4a0d0399",
@@ -404,7 +404,7 @@ export const importedSATMathQuestions5: ImageQuestion[] = [
     difficulty: "Hard",
     domain: "Advanced Math",
     skill: "Nonlinear functions",
-    imageUrl: "/questions/sat-math-4a0d0399.jpg"
+    imageUrl: "questions/sat-math-4a0d0399.jpg"
   },
   {
     id: "sat-math-f2f3fa00",
@@ -420,7 +420,7 @@ export const importedSATMathQuestions5: ImageQuestion[] = [
     difficulty: "Hard",
     domain: "Advanced Math",
     skill: "Nonlinear equations",
-    imageUrl: "/questions/sat-math-f2f3fa00.jpg"
+    imageUrl: "questions/sat-math-f2f3fa00.jpg"
   },
   {
     id: "sat-math-9654add7",
@@ -436,7 +436,7 @@ export const importedSATMathQuestions5: ImageQuestion[] = [
     difficulty: "Hard",
     domain: "Advanced Math",
     skill: "Nonlinear functions",
-    imageUrl: "/questions/sat-math-9654add7.jpg"
+    imageUrl: "questions/sat-math-9654add7.jpg"
   },
   {
     id: "sat-math-263f9937",
@@ -452,7 +452,7 @@ export const importedSATMathQuestions5: ImageQuestion[] = [
     difficulty: "Hard",
     domain: "Advanced Math",
     skill: "Nonlinear functions",
-    imageUrl: "/questions/sat-math-263f9937.jpg"
+    imageUrl: "questions/sat-math-263f9937.jpg"
   },
   {
     id: "sat-math-fada6b03",
@@ -468,7 +468,7 @@ export const importedSATMathQuestions5: ImageQuestion[] = [
     difficulty: "Hard",
     domain: "Advanced Math",
     skill: "Nonlinear equations",
-    imageUrl: "/questions/sat-math-fada6b03.jpg"
+    imageUrl: "questions/sat-math-fada6b03.jpg"
   },
   {
     id: "sat-math-137cc6fd",
@@ -484,7 +484,7 @@ export const importedSATMathQuestions5: ImageQuestion[] = [
     difficulty: "Hard",
     domain: "Advanced Math",
     skill: "Equivalent expressions",
-    imageUrl: "/questions/sat-math-137cc6fd.jpg"
+    imageUrl: "questions/sat-math-137cc6fd.jpg"
   },
   {
     id: "sat-math-6ce95fc8",
@@ -500,7 +500,7 @@ export const importedSATMathQuestions5: ImageQuestion[] = [
     difficulty: "Hard",
     domain: "Advanced Math",
     skill: "Nonlinear equations",
-    imageUrl: "/questions/sat-math-6ce95fc8.jpg"
+    imageUrl: "questions/sat-math-6ce95fc8.jpg"
   },
   {
     id: "sat-math-841ef26c",
@@ -516,7 +516,7 @@ export const importedSATMathQuestions5: ImageQuestion[] = [
     difficulty: "Hard",
     domain: "Advanced Math",
     skill: "Nonlinear functions",
-    imageUrl: "/questions/sat-math-841ef26c.jpg"
+    imageUrl: "questions/sat-math-841ef26c.jpg"
   },
   {
     id: "sat-math-qr78st90",
@@ -532,7 +532,7 @@ export const importedSATMathQuestions5: ImageQuestion[] = [
     difficulty: "Hard",
     domain: "Advanced Math",
     skill: "Equivalent expressions",
-    imageUrl: "/questions/sat-math-qr78st90.jpg"
+    imageUrl: "questions/sat-math-qr78st90.jpg"
   },
   {
     id: "sat-math-09d21d79",
@@ -548,7 +548,7 @@ export const importedSATMathQuestions5: ImageQuestion[] = [
     difficulty: "Hard",
     domain: "Advanced Math",
     skill: "Nonlinear functions",
-    imageUrl: "/questions/sat-math-09d21d79.jpg"
+    imageUrl: "questions/sat-math-09d21d79.jpg"
   },
   {
     id: "sat-math-722de804",
@@ -564,7 +564,7 @@ export const importedSATMathQuestions5: ImageQuestion[] = [
     difficulty: "Hard",
     domain: "Advanced Math",
     skill: "Nonlinear equations",
-    imageUrl: "/questions/sat-math-722de804.jpg"
+    imageUrl: "questions/sat-math-722de804.jpg"
   },
   {
     id: "sat-math-433184f1",
@@ -580,7 +580,7 @@ export const importedSATMathQuestions5: ImageQuestion[] = [
     difficulty: "Hard",
     domain: "Advanced Math",
     skill: "Equivalent expressions",
-    imageUrl: "/questions/sat-math-433184f1.jpg"
+    imageUrl: "questions/sat-math-433184f1.jpg"
   },
   {
     id: "sat-math-d135f4bf",
@@ -596,7 +596,7 @@ export const importedSATMathQuestions5: ImageQuestion[] = [
     difficulty: "Hard",
     domain: "Advanced Math",
     skill: "Nonlinear functions",
-    imageUrl: "/questions/sat-math-d135f4bf.jpg"
+    imageUrl: "questions/sat-math-d135f4bf.jpg"
   },
   {
     id: "sat-math-d8789a4c",
@@ -612,7 +612,7 @@ export const importedSATMathQuestions5: ImageQuestion[] = [
     difficulty: "Hard",
     domain: "Advanced Math",
     skill: "Equivalent expressions",
-    imageUrl: "/questions/sat-math-d8789a4c.jpg"
+    imageUrl: "questions/sat-math-d8789a4c.jpg"
   }
 ];
 

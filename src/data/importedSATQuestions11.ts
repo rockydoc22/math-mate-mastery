@@ -20,7 +20,7 @@ export const importedSATMathQuestions11: ImageQuestion[] = [
     difficulty: "Hard",
     domain: "Geometry and Trigonometry",
     skill: "Right triangles and trigonometry",
-    imageUrl: "/questions/sat-math-85f1892d.jpg",
+    imageUrl: "questions/sat-math-85f1892d.jpg",
     difficultyRating: 9
   },
   {
@@ -37,7 +37,7 @@ export const importedSATMathQuestions11: ImageQuestion[] = [
     difficulty: "Hard",
     domain: "Geometry and Trigonometry",
     skill: "Right triangles and trigonometry",
-    imageUrl: "/questions/sat-math-bd87bc09.jpg",
+    imageUrl: "questions/sat-math-bd87bc09.jpg",
     difficultyRating: 7
   },
   {
@@ -54,7 +54,7 @@ export const importedSATMathQuestions11: ImageQuestion[] = [
     difficulty: "Hard",
     domain: "Geometry and Trigonometry",
     skill: "Lines, angles, and triangles",
-    imageUrl: "/questions/sat-math-f7dbde16.jpg",
+    imageUrl: "questions/sat-math-f7dbde16.jpg",
     difficultyRating: 8
   },
   {
@@ -71,7 +71,7 @@ export const importedSATMathQuestions11: ImageQuestion[] = [
     difficulty: "Hard",
     domain: "Geometry and Trigonometry",
     skill: "Circles",
-    imageUrl: "/questions/sat-math-76c73dbf.jpg",
+    imageUrl: "questions/sat-math-76c73dbf.jpg",
     difficultyRating: 8
   },
   {
@@ -88,7 +88,7 @@ export const importedSATMathQuestions11: ImageQuestion[] = [
     difficulty: "Hard",
     domain: "Geometry and Trigonometry",
     skill: "Right triangles and trigonometry",
-    imageUrl: "/questions/sat-math-58c26db8.jpg",
+    imageUrl: "questions/sat-math-58c26db8.jpg",
     difficultyRating: 9
   },
   {
@@ -105,7 +105,7 @@ export const importedSATMathQuestions11: ImageQuestion[] = [
     difficulty: "Hard",
     domain: "Geometry and Trigonometry",
     skill: "Right triangles and trigonometry",
-    imageUrl: "/questions/sat-math-52f7b898.jpg",
+    imageUrl: "questions/sat-math-52f7b898.jpg",
     difficultyRating: 8
   },
   {
@@ -122,7 +122,7 @@ export const importedSATMathQuestions11: ImageQuestion[] = [
     difficulty: "Hard",
     domain: "Geometry and Trigonometry",
     skill: "Circles",
-    imageUrl: "/questions/sat-math-35d37640.jpg",
+    imageUrl: "questions/sat-math-35d37640.jpg",
     difficultyRating: 9
   },
   {
@@ -139,7 +139,7 @@ export const importedSATMathQuestions11: ImageQuestion[] = [
     difficulty: "Hard",
     domain: "Geometry and Trigonometry",
     skill: "Circles",
-    imageUrl: "/questions/sat-math-e50afdd3.jpg",
+    imageUrl: "questions/sat-math-e50afdd3.jpg",
     difficultyRating: 8
   },
   {
@@ -156,7 +156,7 @@ export const importedSATMathQuestions11: ImageQuestion[] = [
     difficulty: "Hard",
     domain: "Geometry and Trigonometry",
     skill: "Area and volume",
-    imageUrl: "/questions/sat-math-167aff9e.jpg",
+    imageUrl: "questions/sat-math-167aff9e.jpg",
     difficultyRating: 9
   },
   {
@@ -173,7 +173,7 @@ export const importedSATMathQuestions11: ImageQuestion[] = [
     difficulty: "Hard",
     domain: "Geometry and Trigonometry",
     skill: "Circles",
-    imageUrl: "/questions/sat-math-2266984b.jpg",
+    imageUrl: "questions/sat-math-2266984b.jpg",
     difficultyRating: 8
   },
   {
@@ -190,7 +190,7 @@ export const importedSATMathQuestions11: ImageQuestion[] = [
     difficulty: "Hard",
     domain: "Geometry and Trigonometry",
     skill: "Right triangles and trigonometry",
-    imageUrl: "/questions/sat-math-1429dcdf.jpg",
+    imageUrl: "questions/sat-math-1429dcdf.jpg",
     difficultyRating: 7
   },
   {
@@ -207,7 +207,7 @@ export const importedSATMathQuestions11: ImageQuestion[] = [
     difficulty: "Hard",
     domain: "Geometry and Trigonometry",
     skill: "Right triangles and trigonometry",
-    imageUrl: "/questions/sat-math-4c95c7d4.jpg",
+    imageUrl: "questions/sat-math-4c95c7d4.jpg",
     difficultyRating: 9
   },
   {
@@ -224,7 +224,7 @@ export const importedSATMathQuestions11: ImageQuestion[] = [
     difficulty: "Hard",
     domain: "Geometry and Trigonometry",
     skill: "Circles",
-    imageUrl: "/questions/sat-math-b8a225ff.jpg",
+    imageUrl: "questions/sat-math-b8a225ff.jpg",
     difficultyRating: 7
   },
   {
@@ -241,7 +241,7 @@ export const importedSATMathQuestions11: ImageQuestion[] = [
     difficulty: "Hard",
     domain: "Geometry and Trigonometry",
     skill: "Circles",
-    imageUrl: "/questions/sat-math-b0a72bdc.jpg",
+    imageUrl: "questions/sat-math-b0a72bdc.jpg",
     difficultyRating: 6
   },
   {
@@ -258,7 +258,7 @@ export const importedSATMathQuestions11: ImageQuestion[] = [
     difficulty: "Hard",
     domain: "Geometry and Trigonometry",
     skill: "Circles",
-    imageUrl: "/questions/sat-math-b2528e6b.jpg",
+    imageUrl: "questions/sat-math-b2528e6b.jpg",
     difficultyRating: 8
   },
   {
@@ -275,7 +275,7 @@ export const importedSATMathQuestions11: ImageQuestion[] = [
     difficulty: "Hard",
     domain: "Geometry and Trigonometry",
     skill: "Area and volume",
-    imageUrl: "/questions/sat-math-9fec9d49.jpg",
+    imageUrl: "questions/sat-math-9fec9d49.jpg",
     difficultyRating: 7
   },
   {
@@ -292,7 +292,7 @@ export const importedSATMathQuestions11: ImageQuestion[] = [
     difficulty: "Hard",
     domain: "Geometry and Trigonometry",
     skill: "Area and volume",
-    imageUrl: "/questions/sat-math-ba8ca563.jpg",
+    imageUrl: "questions/sat-math-ba8ca563.jpg",
     difficultyRating: 8
   },
   {
@@ -309,7 +309,7 @@ export const importedSATMathQuestions11: ImageQuestion[] = [
     difficulty: "Hard",
     domain: "Geometry and Trigonometry",
     skill: "Lines, angles, and triangles",
-    imageUrl: "/questions/sat-math-b1e1c2f5.jpg",
+    imageUrl: "questions/sat-math-b1e1c2f5.jpg",
     difficultyRating: 9
   },
   {
@@ -326,7 +326,7 @@ export const importedSATMathQuestions11: ImageQuestion[] = [
     difficulty: "Hard",
     domain: "Geometry and Trigonometry",
     skill: "Right triangles and trigonometry",
-    imageUrl: "/questions/sat-math-a4bd60a3.jpg",
+    imageUrl: "questions/sat-math-a4bd60a3.jpg",
     difficultyRating: 8
   },
   {
@@ -343,7 +343,7 @@ export const importedSATMathQuestions11: ImageQuestion[] = [
     difficulty: "Hard",
     domain: "Geometry and Trigonometry",
     skill: "Area and volume",
-    imageUrl: "/questions/sat-math-899c6042.jpg",
+    imageUrl: "questions/sat-math-899c6042.jpg",
     difficultyRating: 7
   },
   {
@@ -360,7 +360,7 @@ export const importedSATMathQuestions11: ImageQuestion[] = [
     difficulty: "Hard",
     domain: "Geometry and Trigonometry",
     skill: "Circles",
-    imageUrl: "/questions/sat-math-3e577e4a.jpg",
+    imageUrl: "questions/sat-math-3e577e4a.jpg",
     difficultyRating: 8
   },
   {
@@ -377,7 +377,7 @@ export const importedSATMathQuestions11: ImageQuestion[] = [
     difficulty: "Hard",
     domain: "Geometry and Trigonometry",
     skill: "Area and volume",
-    imageUrl: "/questions/sat-math-b0dc920d.jpg",
+    imageUrl: "questions/sat-math-b0dc920d.jpg",
     difficultyRating: 7
   },
   {
@@ -394,7 +394,7 @@ export const importedSATMathQuestions11: ImageQuestion[] = [
     difficulty: "Hard",
     domain: "Geometry and Trigonometry",
     skill: "Circles",
-    imageUrl: "/questions/sat-math-fa2771d5.jpg",
+    imageUrl: "questions/sat-math-fa2771d5.jpg",
     difficultyRating: 7
   },
   {
@@ -411,7 +411,7 @@ export const importedSATMathQuestions11: ImageQuestion[] = [
     difficulty: "Hard",
     domain: "Geometry and Trigonometry",
     skill: "Right triangles and trigonometry",
-    imageUrl: "/questions/sat-math-55bb437a.jpg",
+    imageUrl: "questions/sat-math-55bb437a.jpg",
     difficultyRating: 9
   },
   {
@@ -428,7 +428,7 @@ export const importedSATMathQuestions11: ImageQuestion[] = [
     difficulty: "Hard",
     domain: "Geometry and Trigonometry",
     skill: "Lines, angles, and triangles",
-    imageUrl: "/questions/sat-math-fecc446d.jpg",
+    imageUrl: "questions/sat-math-fecc446d.jpg",
     difficultyRating: 10
   },
   {
@@ -445,7 +445,7 @@ export const importedSATMathQuestions11: ImageQuestion[] = [
     difficulty: "Hard",
     domain: "Geometry and Trigonometry",
     skill: "Lines, angles, and triangles",
-    imageUrl: "/questions/sat-math-bd7f6e30.jpg",
+    imageUrl: "questions/sat-math-bd7f6e30.jpg",
     difficultyRating: 8
   },
   {
@@ -462,7 +462,7 @@ export const importedSATMathQuestions11: ImageQuestion[] = [
     difficulty: "Hard",
     domain: "Geometry and Trigonometry",
     skill: "Area and volume",
-    imageUrl: "/questions/sat-math-6708546e.jpg",
+    imageUrl: "questions/sat-math-6708546e.jpg",
     difficultyRating: 7
   },
   {
@@ -479,7 +479,7 @@ export const importedSATMathQuestions11: ImageQuestion[] = [
     difficulty: "Hard",
     domain: "Geometry and Trigonometry",
     skill: "Circles",
-    imageUrl: "/questions/sat-math-a38c0183.jpg",
+    imageUrl: "questions/sat-math-a38c0183.jpg",
     difficultyRating: 8
   },
   {
@@ -496,7 +496,7 @@ export const importedSATMathQuestions11: ImageQuestion[] = [
     difficulty: "Hard",
     domain: "Geometry and Trigonometry",
     skill: "Right triangles and trigonometry",
-    imageUrl: "/questions/sat-math-2be01bd9.jpg",
+    imageUrl: "questions/sat-math-2be01bd9.jpg",
     difficultyRating: 9
   },
   {
@@ -513,7 +513,7 @@ export const importedSATMathQuestions11: ImageQuestion[] = [
     difficulty: "Hard",
     domain: "Geometry and Trigonometry",
     skill: "Area and volume",
-    imageUrl: "/questions/sat-math-f7e626b2.jpg",
+    imageUrl: "questions/sat-math-f7e626b2.jpg",
     difficultyRating: 6
   },
   {
@@ -530,7 +530,7 @@ export const importedSATMathQuestions11: ImageQuestion[] = [
     difficulty: "Hard",
     domain: "Geometry and Trigonometry",
     skill: "Lines, angles, and triangles",
-    imageUrl: "/questions/sat-math-694b7fce.jpg",
+    imageUrl: "questions/sat-math-694b7fce.jpg",
     difficultyRating: 10
   },
   {
@@ -547,7 +547,7 @@ export const importedSATMathQuestions11: ImageQuestion[] = [
     difficulty: "Hard",
     domain: "Geometry and Trigonometry",
     skill: "Right triangles and trigonometry",
-    imageUrl: "/questions/sat-math-a67b9f88.jpg",
+    imageUrl: "questions/sat-math-a67b9f88.jpg",
     difficultyRating: 8
   },
   {
@@ -564,7 +564,7 @@ export const importedSATMathQuestions11: ImageQuestion[] = [
     difficulty: "Hard",
     domain: "Geometry and Trigonometry",
     skill: "Area and volume",
-    imageUrl: "/questions/sat-math-099526fc.jpg",
+    imageUrl: "questions/sat-math-099526fc.jpg",
     difficultyRating: 9
   }
 ];

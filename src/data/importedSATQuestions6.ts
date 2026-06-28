@@ -12,7 +12,7 @@ export const importedSATMathQuestions6: ImageQuestion[] = [
   {
     id: "sat-271ffad7",
     question: "A quadratic function models a projectile's height, in meters, above the ground in terms of the time, in seconds, after it was launched. The model estimates that the projectile was launched from an initial height of 7 meters above the ground and reached a maximum height of 51.1 meters above the ground 3 seconds after the launch. How many seconds after the launch does the model estimate that the projectile will return to a height of 7 meters?",
-    imageUrl: "/questions/sat-math-271ffad7.jpg",
+    imageUrl: "questions/sat-math-271ffad7.jpg",
     options: [
       { letter: "A", text: "3" },
       { letter: "B", text: "6" },
@@ -29,7 +29,7 @@ export const importedSATMathQuestions6: ImageQuestion[] = [
   {
     id: "sat-ee857afb",
     question: "The given equation relates the variables y and x. For what value of x does the value of y reach its minimum?",
-    imageUrl: "/questions/sat-math-ee857afb.jpg",
+    imageUrl: "questions/sat-math-ee857afb.jpg",
     options: [
       { letter: "A", text: "7" }
     ],
@@ -44,7 +44,7 @@ export const importedSATMathQuestions6: ImageQuestion[] = [
   {
     id: "sat-35e05e19",
     question: "A park ranger hung squirrel houses each in the shape of a right rectangular prism for fox squirrels. Each house has a height of 11 inches. The length of each house's base is x inches, which is 1 inch more than the width of the house's base. Which function gives the volume of each house, in cubic inches, in terms of the length of the house's base?",
-    imageUrl: "/questions/sat-math-35e05e19.jpg",
+    imageUrl: "questions/sat-math-35e05e19.jpg",
     options: [
       { letter: "A", text: "V(x) = 11x(x - 1)" },
       { letter: "B", text: "V(x) = 11x(x + 1)" },
@@ -61,7 +61,7 @@ export const importedSATMathQuestions6: ImageQuestion[] = [
   {
     id: "sat-2c05d312",
     question: "In the given equation, a and b are positive constants. The product of the solutions to the given equation is kab, where k is a constant. What is the value of k?",
-    imageUrl: "/questions/sat-math-2c05d312.jpg",
+    imageUrl: "questions/sat-math-2c05d312.jpg",
     options: [
       { letter: "A", text: "1/57" },
       { letter: "B", text: "1/19" },
@@ -78,7 +78,7 @@ export const importedSATMathQuestions6: ImageQuestion[] = [
   {
     id: "sat-1fe32f7d",
     question: "In the given equation, b is a positive integer. The equation has no real solution. What is the greatest possible value of b?",
-    imageUrl: "/questions/sat-math-1fe32f7d.jpg",
+    imageUrl: "questions/sat-math-1fe32f7d.jpg",
     options: [
       { letter: "A", text: "51" }
     ],
@@ -93,7 +93,7 @@ export const importedSATMathQuestions6: ImageQuestion[] = [
   {
     id: "sat-a45ffacb",
     question: "Function f is defined by f(x) = -ax + b, where a and b are constants. In the xy-plane, the graph of y = f(x) - 15 has a y-intercept at (0, -99). The product of a and b is 65. What is the value of a?",
-    imageUrl: "/questions/sat-math-a45ffacb.jpg",
+    imageUrl: "questions/sat-math-a45ffacb.jpg",
     options: [
       { letter: "A", text: "5" }
     ],
@@ -108,7 +108,7 @@ export const importedSATMathQuestions6: ImageQuestion[] = [
   {
     id: "sat-821e724e",
     question: "The function g is defined by g(x) = (x + 14)(t - x), where t is a constant. In the xy-plane, the graph of y = g(x) passes through the point (24, 0). What is the value of g(0)?",
-    imageUrl: "/questions/sat-math-821e724e.jpg",
+    imageUrl: "questions/sat-math-821e724e.jpg",
     options: [
       { letter: "A", text: "336" }
     ],
@@ -123,7 +123,7 @@ export const importedSATMathQuestions6: ImageQuestion[] = [
   {
     id: "sat-d8e84431",
     question: "The area of a rectangular banner is 2,661 square inches. The banner's length, in inches, is x inches longer than its width, in inches. Which equation represents this situation?",
-    imageUrl: "/questions/sat-math-d8e84431.jpg",
+    imageUrl: "questions/sat-math-d8e84431.jpg",
     options: [
       { letter: "A", text: "0 = x² - 24x - 2,661" },
       { letter: "B", text: "0 = x² + 24x - 2,661" },
@@ -140,7 +140,7 @@ export const importedSATMathQuestions6: ImageQuestion[] = [
   {
     id: "sat-18e35375",
     question: "The function f is defined by f(x) = (x − 14)(x + 19). For what value of x does f(x) reach its minimum?",
-    imageUrl: "/questions/sat-math-18e35375.jpg",
+    imageUrl: "questions/sat-math-18e35375.jpg",
     options: [
       { letter: "A", text: "-266" },
       { letter: "B", text: "-19" },
@@ -157,7 +157,7 @@ export const importedSATMathQuestions6: ImageQuestion[] = [
   {
     id: "sat-c303ad23",
     question: "If 3x² - 18x - 15 = 0, what is the value of x² - 6x?",
-    imageUrl: "/questions/sat-math-c303ad23.jpg",
+    imageUrl: "questions/sat-math-c303ad23.jpg",
     options: [
       { letter: "A", text: "5" }
     ],
@@ -172,7 +172,7 @@ export const importedSATMathQuestions6: ImageQuestion[] = [
   {
     id: "sat-2cb17792",
     question: "In the given system of equations, k is a constant. The system has exactly one distinct real solution. What is the value of k?",
-    imageUrl: "/questions/sat-math-2cb17792.jpg",
+    imageUrl: "questions/sat-math-2cb17792.jpg",
     options: [
       { letter: "A", text: "17.5" }
     ],
@@ -187,7 +187,7 @@ export const importedSATMathQuestions6: ImageQuestion[] = [
   {
     id: "sat-74473be4",
     question: "Which quadratic equation has no real solutions?",
-    imageUrl: "/questions/sat-math-74473be4.jpg",
+    imageUrl: "questions/sat-math-74473be4.jpg",
     options: [
       { letter: "A", text: "5x² + 14x - 49 = 0" },
       { letter: "B", text: "5x² - 14x + 49/5 = 0" },
@@ -204,7 +204,7 @@ export const importedSATMathQuestions6: ImageQuestion[] = [
   {
     id: "sat-7bd10ef3",
     question: "In the equation above, t is a constant. If the equation has no real solutions, which of the following could be the value of t?",
-    imageUrl: "/questions/sat-math-7bd10ef3.jpg",
+    imageUrl: "questions/sat-math-7bd10ef3.jpg",
     options: [
       { letter: "A", text: "-3" },
       { letter: "B", text: "0" },
@@ -221,7 +221,7 @@ export const importedSATMathQuestions6: ImageQuestion[] = [
   {
     id: "sat-e11294f9",
     question: "The solutions to x² + 6x + 7 = 0 are r and s, where r < s. The solutions to x² + 8x + 8 = 0 are t and u, where t < u. The solutions to x² + 14x + c = 0, where c is a constant, are r + t and s + u. What is the value of c?",
-    imageUrl: "/questions/sat-math-e11294f9.jpg",
+    imageUrl: "questions/sat-math-e11294f9.jpg",
     options: [
       { letter: "A", text: "31" }
     ],
@@ -236,7 +236,7 @@ export const importedSATMathQuestions6: ImageQuestion[] = [
   {
     id: "sat-70fb357b",
     question: "The graph of the given equation in the xy-plane has a y-intercept of (r, s). Which of the following equivalent equations displays the value of s as a constant, a coefficient, or the base?",
-    imageUrl: "/questions/sat-math-70fb357b.jpg",
+    imageUrl: "questions/sat-math-70fb357b.jpg",
     options: [
       { letter: "A", text: "y = 331,776(2^(x+1))" },
       { letter: "B", text: "See image" },
@@ -253,7 +253,7 @@ export const importedSATMathQuestions6: ImageQuestion[] = [
   {
     id: "sat-1697ffcf",
     question: "In the xy-plane, the graph of y = x² intersects the graph of y = x at the points (0, 0) and (a, a). What is the value of a?",
-    imageUrl: "/questions/sat-math-1697ffcf.jpg",
+    imageUrl: "questions/sat-math-1697ffcf.jpg",
     options: [
       { letter: "A", text: "5" }
     ],
@@ -268,7 +268,7 @@ export const importedSATMathQuestions6: ImageQuestion[] = [
   {
     id: "sat-97e50fa2",
     question: "The graph of function f is shown. If the function g is defined by g(x) = -x + 10, what is one possible value of a such that g(a) = f(a)?",
-    imageUrl: "/questions/sat-math-97e50fa2.jpg",
+    imageUrl: "questions/sat-math-97e50fa2.jpg",
     options: [
       { letter: "A", text: "2 or 8" }
     ],
@@ -283,7 +283,7 @@ export const importedSATMathQuestions6: ImageQuestion[] = [
   {
     id: "sat-ebb717ab",
     question: "In the given equation, c is a constant. The equation has no real solutions if c > n. What is the least possible value of n?",
-    imageUrl: "/questions/sat-math-ebb717ab.jpg",
+    imageUrl: "questions/sat-math-ebb717ab.jpg",
     options: [
       { letter: "A", text: "289" }
     ],
@@ -298,7 +298,7 @@ export const importedSATMathQuestions6: ImageQuestion[] = [
   {
     id: "sat-e51bf5b1",
     question: "Which of the following expressions has a factor of (x + k), where k is a positive integer constant?",
-    imageUrl: "/questions/sat-math-e51bf5b1.jpg",
+    imageUrl: "questions/sat-math-e51bf5b1.jpg",
     options: [
       { letter: "A", text: "See image" },
       { letter: "B", text: "See image" },
@@ -315,7 +315,7 @@ export const importedSATMathQuestions6: ImageQuestion[] = [
   {
     id: "sat-b7c74b73",
     question: "The function f(x) = 5,470(0.64)^(x/12) gives the value, in dollars, of a certain piece of equipment after x months of use. If the value of the equipment decreases each year by p% of its value the preceding year, what is the value of p?",
-    imageUrl: "/questions/sat-math-b7c74b73.jpg",
+    imageUrl: "questions/sat-math-b7c74b73.jpg",
     options: [
       { letter: "A", text: "12" },
       { letter: "B", text: "36" },
@@ -332,7 +332,7 @@ export const importedSATMathQuestions6: ImageQuestion[] = [
   {
     id: "sat-3d12b1e0",
     question: "In the given equation, c is a constant. The equation has exactly one solution. What is the value of c?",
-    imageUrl: "/questions/sat-math-3d12b1e0.jpg",
+    imageUrl: "questions/sat-math-3d12b1e0.jpg",
     options: [
       { letter: "A", text: "-1" }
     ],
@@ -347,7 +347,7 @@ export const importedSATMathQuestions6: ImageQuestion[] = [
   {
     id: "sat-2c88af4d",
     question: "The expression (a^(-1) - b^(-1))/(a^(-1) + b^(-1)), where a ≠ 0 and b ≠ 0, is equivalent to which of the following?",
-    imageUrl: "/questions/sat-math-2c88af4d.jpg",
+    imageUrl: "questions/sat-math-2c88af4d.jpg",
     options: [
       { letter: "A", text: "(b - a)/(a + b)" },
       { letter: "B", text: "(a - b)/(a + b)" },
@@ -364,7 +364,7 @@ export const importedSATMathQuestions6: ImageQuestion[] = [
   {
     id: "sat-ffdbcad4",
     question: "The expression 4x² + bx - 45, where b is a constant, can be rewritten as (hx + k)(x + j), where h, k, and j are integer constants. Which of the following must be an integer?",
-    imageUrl: "/questions/sat-math-ffdbcad4.jpg",
+    imageUrl: "questions/sat-math-ffdbcad4.jpg",
     options: [
       { letter: "A", text: "b/h" },
       { letter: "B", text: "b/k" },
@@ -381,7 +381,7 @@ export const importedSATMathQuestions6: ImageQuestion[] = [
   {
     id: "sat-71014fb1",
     question: "How many distinct real solutions does the given equation have?",
-    imageUrl: "/questions/sat-math-71014fb1.jpg",
+    imageUrl: "questions/sat-math-71014fb1.jpg",
     options: [
       { letter: "A", text: "Exactly one" },
       { letter: "B", text: "Exactly two" },
@@ -398,7 +398,7 @@ export const importedSATMathQuestions6: ImageQuestion[] = [
   {
     id: "sat-22fd3e1f",
     question: "Which of the following expressions is equivalent to (9x - x³)/(2x³), for x ≠ 0?",
-    imageUrl: "/questions/sat-math-22fd3e1f.jpg",
+    imageUrl: "questions/sat-math-22fd3e1f.jpg",
     options: [
       { letter: "A", text: "1" },
       { letter: "B", text: "(9 - x²)/(2x²)" },
@@ -415,7 +415,7 @@ export const importedSATMathQuestions6: ImageQuestion[] = [
   {
     id: "sat-4dc5c6f9",
     question: "If the given equations are graphed in the xy-plane, at how many points do the graphs of the equations intersect?",
-    imageUrl: "/questions/sat-math-4dc5c6f9.jpg",
+    imageUrl: "questions/sat-math-4dc5c6f9.jpg",
     options: [
       { letter: "A", text: "Exactly one" },
       { letter: "B", text: "Exactly two" },
@@ -432,7 +432,7 @@ export const importedSATMathQuestions6: ImageQuestion[] = [
   {
     id: "sat-a0b4103e",
     question: "The expression can be rewritten as k(x - a)(x + a), where k is a positive constant. What is the value of k?",
-    imageUrl: "/questions/sat-math-a0b4103e.jpg",
+    imageUrl: "questions/sat-math-a0b4103e.jpg",
     options: [
       { letter: "A", text: "2" },
       { letter: "B", text: "6" },
@@ -449,7 +449,7 @@ export const importedSATMathQuestions6: ImageQuestion[] = [
   {
     id: "sat-1f353a9e",
     question: "The given function f(t) = 8,000(0.65)^t models the number of coupons a company sent to their customers at the end of each year. What is the best interpretation of the y-intercept of the graph in this context?",
-    imageUrl: "/questions/sat-math-1f353a9e.jpg",
+    imageUrl: "questions/sat-math-1f353a9e.jpg",
     options: [
       { letter: "A", text: "See image" },
       { letter: "B", text: "See image" },
@@ -466,7 +466,7 @@ export const importedSATMathQuestions6: ImageQuestion[] = [
   {
     id: "sat-b03adde3",
     question: "If 20/t = u/(t - 2), what is t in terms of u?",
-    imageUrl: "/questions/sat-math-b03adde3.jpg",
+    imageUrl: "questions/sat-math-b03adde3.jpg",
     options: [
       { letter: "A", text: "See image" },
       { letter: "B", text: "See image" },
@@ -483,7 +483,7 @@ export const importedSATMathQuestions6: ImageQuestion[] = [
   {
     id: "sat-1ce9ffcd",
     question: "In the given equation, c is a constant. The equation has exactly one solution. What is the value of c?",
-    imageUrl: "/questions/sat-math-1ce9ffcd.jpg",
+    imageUrl: "questions/sat-math-1ce9ffcd.jpg",
     options: [
       { letter: "A", text: "3" },
       { letter: "B", text: "0" },
@@ -500,7 +500,7 @@ export const importedSATMathQuestions6: ImageQuestion[] = [
   {
     id: "sat-104bff62",
     question: "In the given equation, c is a positive constant. Which of the following is one of the solutions to the given equation?",
-    imageUrl: "/questions/sat-math-104bff62.jpg",
+    imageUrl: "questions/sat-math-104bff62.jpg",
     options: [
       { letter: "A", text: "See image" },
       { letter: "B", text: "See image" },
@@ -517,7 +517,7 @@ export const importedSATMathQuestions6: ImageQuestion[] = [
   {
     id: "sat-270cf326",
     question: "Which of the following functions has a minimum value at some x?",
-    imageUrl: "/questions/sat-math-270cf326.jpg",
+    imageUrl: "questions/sat-math-270cf326.jpg",
     options: [
       { letter: "A", text: "I only" },
       { letter: "B", text: "II only" },
@@ -534,7 +534,7 @@ export const importedSATMathQuestions6: ImageQuestion[] = [
   {
     id: "sat-92f812bb",
     question: "In the xy-plane, a parabola has vertex (9, -14) and intersects the x-axis at two points. If the equation of the parabola is written in the form y = ax² + bx + c, which of the following could be the value of a + b + c?",
-    imageUrl: "/questions/sat-math-92f812bb.jpg",
+    imageUrl: "questions/sat-math-92f812bb.jpg",
     options: [
       { letter: "A", text: "-23" },
       { letter: "B", text: "-19" },
@@ -551,7 +551,7 @@ export const importedSATMathQuestions6: ImageQuestion[] = [
   {
     id: "sat-7dbd46d9",
     question: "The graphs of the equations in the given system of equations intersect at the point (x, y) in the xy-plane. What is a possible value of x?",
-    imageUrl: "/questions/sat-math-7dbd46d9.jpg",
+    imageUrl: "questions/sat-math-7dbd46d9.jpg",
     options: [
       { letter: "A", text: "-15" },
       { letter: "B", text: "-11" },
@@ -568,7 +568,7 @@ export const importedSATMathQuestions6: ImageQuestion[] = [
   {
     id: "sat-0121a235",
     question: "The table gives selected values of a polynomial function p. Based on the values in the table, which of the following must be a factor of p?",
-    imageUrl: "/questions/sat-math-0121a235.jpg",
+    imageUrl: "questions/sat-math-0121a235.jpg",
     options: [
       { letter: "A", text: "(x + 1)(x + 2)" },
       { letter: "B", text: "(x - 1)(x + 2)" },
@@ -585,7 +585,7 @@ export const importedSATMathQuestions6: ImageQuestion[] = [
   {
     id: "sat-158591f0",
     question: "What is the sum of the solutions to the given equation x(x + 1) - 56 = 4x(x - 7)?",
-    imageUrl: "/questions/sat-math-158591f0.jpg",
+    imageUrl: "questions/sat-math-158591f0.jpg",
     options: [
       { letter: "A", text: "29/3" }
     ],
@@ -600,7 +600,7 @@ export const importedSATMathQuestions6: ImageQuestion[] = [
   {
     id: "sat-bba18ecb",
     question: "When the quadratic function f is graphed in the xy-plane, its vertex is (-3, 6). One of the x-intercepts of this graph is (-4, 0). What is the other x-intercept of the graph?",
-    imageUrl: "/questions/sat-math-bba18ecb.jpg",
+    imageUrl: "questions/sat-math-bba18ecb.jpg",
     options: [
       { letter: "A", text: "(-6, 0)" },
       { letter: "B", text: "(-2, 0)" },
@@ -617,7 +617,7 @@ export const importedSATMathQuestions6: ImageQuestion[] = [
   {
     id: "sat-668f1863",
     question: "Function f is a quadratic function where f(-20) = 0 and f(-4) = 0. The graph of y = f(x) in the xy-plane has a vertex at (r, -64). What is the value of r?",
-    imageUrl: "/questions/sat-math-668f1863.jpg",
+    imageUrl: "questions/sat-math-668f1863.jpg",
     options: [
       { letter: "A", text: "-12" }
     ],
@@ -632,7 +632,7 @@ export const importedSATMathQuestions6: ImageQuestion[] = [
   {
     id: "sat-70753f99",
     question: "The function f is defined by f(x) = (x + 3)(x + 1). The graph of f in the xy-plane is a parabola. Which of the following intervals contains the x-coordinate of the vertex of the graph of f?",
-    imageUrl: "/questions/sat-math-70753f99.jpg",
+    imageUrl: "questions/sat-math-70753f99.jpg",
     options: [
       { letter: "A", text: "(-4, -3)" },
       { letter: "B", text: "(-3, -1)" },
