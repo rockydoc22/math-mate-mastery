@@ -300,6 +300,13 @@ const Quiz = () => {
     if (finished) clearQuizResume(resumeUrl);
   }, [finished, resumeUrl]);
 
+  // Clamp restored index if the freshly-built question list is shorter.
+  useEffect(() => {
+    if (!isLoading && quizQuestions.length > 0 && currentQuestionIndex >= quizQuestions.length) {
+      setCurrentQuestionIndex(quizQuestions.length - 1);
+    }
+  }, [isLoading, quizQuestions.length, currentQuestionIndex]);
+
   // Pause timer when showing results
   useEffect(() => {
     if (showResult && isRunning) {
