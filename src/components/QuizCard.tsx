@@ -20,9 +20,10 @@ interface QuizCardProps {
   showResult: boolean;
   questionType?: 'math' | 'english';
   onFlagged?: () => void;
+  examLabel?: string;
 }
 
-export const QuizCard = ({ question: rawQuestion, selectedAnswer, onSelectAnswer, showResult, questionType = 'math', onFlagged }: QuizCardProps) => {
+export const QuizCard = ({ question: rawQuestion, selectedAnswer, onSelectAnswer, showResult, questionType = 'math', onFlagged, examLabel = 'SAT' }: QuizCardProps) => {
   // Deterministically shuffle MCQ options for display ONLY so the correct
   // letter is balanced across the bank. Parents continue to receive the
   // ORIGINAL letter via onSelectAnswer and compare against the ORIGINAL
@@ -265,7 +266,7 @@ export const QuizCard = ({ question: rawQuestion, selectedAnswer, onSelectAnswer
                   questionType={questionType}
                   options={question.options.map(o => ({ letter: o.letter, text: o.text }))}
                   correctAnswer={question.correctAnswer}
-                  competitionType={questionType === 'math' ? 'SAT Math' : questionType === 'english' ? 'SAT English' : 'Academic'}
+                  competitionType={questionType === 'math' ? `${examLabel} Math` : questionType === 'english' ? `${examLabel} English` : `${examLabel} Academic`}
                   onClose={() => setShowPathAnalysis(false)}
                 />
               )}
