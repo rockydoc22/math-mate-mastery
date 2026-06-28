@@ -1,0 +1,624 @@
+{
+  "bank": "src/data/clt_question_bank_180_original.json",
+  "total": 122,
+  "summary": {
+    "flagged": 0,
+    "errors": 122,
+    "clusters": 0,
+    "questions_in_clusters": 0
+  },
+  "ai_review_flagged": [],
+  "ai_review_errors": [
+    {
+      "id": "clt_002",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "clt_281",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "clt_181",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "clt_200",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "clt_185",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "clt_258",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "clt_188",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "clt_004",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "clt_187",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "clt_186",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "clt_184",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "clt_241",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "clt_189",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "clt_191",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "clt_195",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "clt_190",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "clt_197",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "clt_193",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "clt_199",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "clt_192",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "clt_003",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "clt_194",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "clt_196",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "clt_198",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "clt_207",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "clt_204",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "clt_202",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "clt_203",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "clt_210",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "clt_211",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "clt_206",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "clt_212",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "clt_208",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "clt_201",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "clt_209",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "clt_205",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "clt_214",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "clt_218",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "clt_221",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "clt_222",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "clt_216",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "clt_215",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "clt_223",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "clt_224",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "clt_219",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "clt_220",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "clt_217",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "clt_225",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "clt_227",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "clt_228",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "clt_233",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "clt_230",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "clt_229",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "clt_235",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "clt_232",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "clt_226",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "clt_237",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "clt_236",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "clt_231",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "clt_234",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "clt_238",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "clt_239",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "clt_242",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "clt_240",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "clt_182",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "clt_243",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "clt_247",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "clt_244",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "clt_249",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "clt_248",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "clt_245",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "clt_246",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "clt_250",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "clt_251",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "clt_252",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "clt_256",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "clt_254",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "clt_253",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "clt_183",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "clt_257",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "clt_259",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "clt_261",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "clt_262",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "clt_255",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "clt_260",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "clt_263",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "clt_268",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "clt_270",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "clt_271",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "clt_273",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "clt_265",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "clt_269",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "clt_274",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "clt_264",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "clt_275",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "clt_267",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "clt_266",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "clt_276",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "clt_279",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "clt_282",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "clt_001",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "clt_277",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "clt_284",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "clt_283",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "clt_278",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "clt_287",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "clt_285",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "clt_280",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "clt_288",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "clt_286",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "clt_289",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "clt_290",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "clt_291",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "clt_293",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "clt_294",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "clt_297",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "clt_296",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "clt_298",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "clt_292",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "clt_300",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "clt_299",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "clt_295",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    }
+  ],
+  "concept_duplicate_clusters": []
+}

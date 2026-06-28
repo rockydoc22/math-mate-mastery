@@ -1,0 +1,1208 @@
+{
+  "bank": "src/data/AP_Spanish_Literature_question_bank_200.json",
+  "total": 297,
+  "summary": {
+    "flagged": 17,
+    "errors": 9,
+    "clusters": 32,
+    "questions_in_clusters": 152
+  },
+  "ai_review_flagged": [
+    {
+      "id": "AP_Spanish_Lit_69",
+      "verdict": "answer_wrong",
+      "correct_answer": "null",
+      "issues": [
+        "The marked answer is incorrect; La Regenta was written by Leopoldo Alas 'Clar\u00edn', not Emilia Pardo Baz\u00e1n.",
+        "None of the provided options (A, B, C, D) are correct as they are all female authors and the book was written by a man.",
+        "The explanation contains a major factual error attributing Clar\u00edn's masterpiece to Pardo Baz\u00e1n."
+      ],
+      "suggested_distractor_fix": {
+        "letter": "A",
+        "replacement": "Leopoldo Alas 'Clar\u00edn'"
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "AP_Spanish_Lit_100",
+      "verdict": "answer_wrong",
+      "correct_answer": "C",
+      "issues": [
+        "The primary philosophical conflict of the play is Free Will versus Determinism (astrology/fate), not modern environmental psychology (nature vs. nurture).",
+        "Marked answer D is too modern an interpretation; the tower represents Basilio's attempt to prevent a prophecy, which Segismundo eventually overcomes through his own choices (Free Will)."
+      ],
+      "suggested_distractor_fix": null,
+      "confidence": "high"
+    },
+    {
+      "id": "AP_Spanish_Lit_21",
+      "verdict": "explanation_wrong",
+      "correct_answer": "D",
+      "issues": [
+        "The explanation incorrectly identifies the repetition of 'es' as polysyndeton, when it is actually anaphora and asyndeton (lack of conjunctions).",
+        "Choice D labels the device as 'Polis\u00edndeton', but the verse 'es hielo, es ceniza...' lacks coordinating conjunctions (y, o, ni), making it asyndetic."
+      ],
+      "suggested_distractor_fix": {
+        "letter": "D",
+        "replacement": "Enumeraci\u00f3n / As\u00edndeton"
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "AP_Spanish_Lit_143",
+      "verdict": "answer_wrong",
+      "correct_answer": "B",
+      "issues": [
+        "While Unamuno deals with existential duality, 'desdoblamiento' (fragmented identity/doubling) is a specific core concept explicitly associated with Borges in the AP Spanish Literature curriculum (e.g., 'Borges y yo').",
+        "Unamuno is primarily associated with 'nivola' and 'existencialismo'."
+      ],
+      "suggested_distractor_fix": null,
+      "confidence": "high"
+    },
+    {
+      "id": "AP_Spanish_Lit_148",
+      "verdict": "explanation_wrong",
+      "correct_answer": "A",
+      "issues": [
+        "The explanation inaccurately claims Cervantes calls Don Quijote himself a 'doctor'; the term typically refers to the academic title or the medical figures like Doctor Recio in the text."
+      ],
+      "suggested_distractor_fix": null,
+      "confidence": "high"
+    },
+    {
+      "id": "AP_Spanish_Lit_147",
+      "verdict": "explanation_wrong",
+      "correct_answer": "C",
+      "issues": [
+        "The explanation incorrectly identifies the narrator as 'Don Manuel' telling stories to 'Don DIY'. In the text, Patronio tells stories to El Conde Lucanor (written by Don Juan Manuel)."
+      ],
+      "suggested_distractor_fix": null,
+      "confidence": "high"
+    },
+    {
+      "id": "AP_Spanish_Lit_156",
+      "verdict": "explanation_wrong",
+      "correct_answer": "A",
+      "issues": [
+        "The explanation incorrectly uses the term 'entrem\u00e9s' (a short theatrical piece) instead of 'nivola' (the genre Unamuno invented for Niebla)."
+      ],
+      "suggested_distractor_fix": null,
+      "confidence": "high"
+    },
+    {
+      "id": "AP_Spanish_Lit_158",
+      "verdict": "answer_wrong",
+      "correct_answer": "B",
+      "issues": [
+        "The poem 'Caminante no hay camino' (Proverbios y cantares XXIX) is part of the 1912 edition of 'Campos de Castilla', not 'Soledades'."
+      ],
+      "suggested_distractor_fix": null,
+      "confidence": "high"
+    },
+    {
+      "id": "AP_Spanish_Lit_207",
+      "verdict": "multiple",
+      "correct_answer": "null",
+      "issues": [
+        "Both A and B are correct interpretations of the question's prompt regarding existential themes and searching for meaning.",
+        "Choice C is by Azor\u00edn and Choice D is by Antonio Machado, making them valid distractors for the Gen 98 context."
+      ],
+      "suggested_distractor_fix": {
+        "letter": "C",
+        "replacement": "Do\u00f1a Berta"
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "AP_Spanish_Lit_219",
+      "verdict": "explanation_wrong",
+      "correct_answer": "C",
+      "issues": [
+        "The definition provided in the question (11 syllables with a central caesura) is technically contradictory under Spanish metrics; endecas\u00edlabos usually lack a fixed medial caesura, while the definition more accurately describes a dodecas\u00edlabo or alejandrino, though the syllable count specifically points to C."
+      ],
+      "suggested_distractor_fix": null,
+      "confidence": "high"
+    },
+    {
+      "id": "AP_Spanish_Lit_224",
+      "verdict": "explanation_wrong",
+      "correct_answer": "A",
+      "issues": [
+        "Historicity: The play is set specifically during the war between the Catholic Monarchs and Alfonso V of Portugal (1476), which is the final stage of the Reconquista era, but the explanation conflates the 1476 uprising with the general concept of the Reconquista without mentioning the Catholic Monarchs' struggle for power."
+      ],
+      "suggested_distractor_fix": null,
+      "confidence": "high"
+    },
+    {
+      "id": "AP_Spanish_Lit_243",
+      "verdict": "answer_wrong",
+      "correct_answer": "B",
+      "issues": [
+        "Option D incorrectly includes A (La Celestina) which the explanation itself admits is a different genre.",
+        "Option B is the most iconic example though C is also picaresque, but the current D pairing is factually incorrect regarding A."
+      ],
+      "suggested_distractor_fix": {
+        "letter": "D",
+        "replacement": "Tanto B como C"
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "AP_Spanish_Lit_259",
+      "verdict": "explanation_wrong",
+      "correct_answer": "D",
+      "issues": [
+        "The explanation incorrectly attributes 'El retablo de Maese Pedro' to Lorca; that work is entirely by Manuel de Falla, based on a chapter of Don Quixote. Lorca had no involvement in its libretto."
+      ],
+      "suggested_distractor_fix": null,
+      "confidence": "high"
+    },
+    {
+      "id": "AP_Spanish_Lit_268",
+      "verdict": "answer_wrong",
+      "correct_answer": "A",
+      "issues": [
+        "'La colmena' does not belong to the Naturalism movement; it is a Tremendismo/Social Realism work from 1951.",
+        "'Fortunata y Jacinta' is the quintessential work by Gald\u00f3s that fits the description of Madrid sociographic realism/naturalism."
+      ],
+      "suggested_distractor_fix": {
+        "letter": "C",
+        "replacement": "Los pazos de Ulloa"
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "AP_Spanish_Lit_273",
+      "verdict": "answer_wrong",
+      "correct_answer": "C",
+      "issues": [
+        "The marked answer A reverses the subjects: it labels Sancho as 'idealismo' and Quijote as 'realismo'.",
+        "Choice C correctly identifies Quijote as 'locura idealista' and Sancho as 'cordura pragm\u00e1tica'."
+      ],
+      "suggested_distractor_fix": null,
+      "confidence": "high"
+    },
+    {
+      "id": "AP_Spanish_Lit_299",
+      "verdict": "answer_wrong",
+      "correct_answer": "D",
+      "issues": [
+        "The question title contains a factual error: Story XXXV is about a 'mujer muy fuerte y muy brava' (a fierce young woman), not a 'due\u00f1a muy vieja' (a very old lady).",
+        "Choice D is the best answer for the actual story, but the explanation incorrectly identifies the wife as 'anciana' following the error in the prompt's title."
+      ],
+      "suggested_distractor_fix": null,
+      "confidence": "high"
+    },
+    {
+      "id": "AP_Spanish_Lit_300",
+      "verdict": "answer_wrong",
+      "correct_answer": "D",
+      "issues": [
+        "Sor Juana's primary argument in the 'Respuesta' is not that her intelligence is superior to others, but that all secular knowledge serves as a tool to better understand divine truth and theology."
+      ],
+      "suggested_distractor_fix": null,
+      "confidence": "high"
+    }
+  ],
+  "ai_review_errors": [
+    {
+      "id": "AP_Spanish_Lit_58",
+      "verdict": "error",
+      "error": "Extra data: line 2 column 1 (char 102)"
+    },
+    {
+      "id": "AP_Spanish_Lit_59",
+      "verdict": "error",
+      "error": "Extra data: line 2 column 1 (char 102)"
+    },
+    {
+      "id": "AP_Spanish_Lit_109",
+      "verdict": "error",
+      "error": "Extra data: line 2 column 1 (char 102)"
+    },
+    {
+      "id": "AP_Spanish_Lit_114",
+      "verdict": "error",
+      "error": "Extra data: line 2 column 1 (char 102)"
+    },
+    {
+      "id": "AP_Spanish_Lit_157",
+      "verdict": "error",
+      "error": "Extra data: line 2 column 1 (char 102)"
+    },
+    {
+      "id": "AP_Spanish_Lit_166",
+      "verdict": "error",
+      "error": "Extra data: line 2 column 1 (char 102)"
+    },
+    {
+      "id": "AP_Spanish_Lit_168",
+      "verdict": "error",
+      "error": "Extra data: line 2 column 1 (char 102)"
+    },
+    {
+      "id": "AP_Spanish_Lit_187",
+      "verdict": "error",
+      "error": "Extra data: line 2 column 1 (char 102)"
+    },
+    {
+      "id": "AP_Spanish_Lit_241",
+      "verdict": "error",
+      "error": "Extra data: line 2 column 1 (char 102)"
+    }
+  ],
+  "concept_duplicate_clusters": [
+    {
+      "size": 11,
+      "avg_similarity": 0.849,
+      "members": [
+        {
+          "id": "AP_SpanLit_18",
+          "answer": "B",
+          "question": "Isabel Allende es conocida por:"
+        },
+        {
+          "id": "AP_Spanish_Lit_63",
+          "answer": "C",
+          "question": "Isabel Allende, escritora chilena, a menudo combina elementos del realismo m\u00e1gico con:"
+        },
+        {
+          "id": "AP_Spanish_Lit_89",
+          "answer": "D",
+          "question": "\u00bfQu\u00e9 elemento es recurrente en las novelas de Isabel Allende, como 'La casa de los esp\u00edritus'?"
+        },
+        {
+          "id": "AP_Spanish_Lit_114",
+          "answer": "C",
+          "question": "Isabel Allende, en novelas como \"La casa de los esp\u00edritus\", aborda temas hist\u00f3ricos y sociales de Chile. \u00bfQu\u00e9 recurso literario utiliza frec"
+        },
+        {
+          "id": "AP_Spanish_Lit_139",
+          "answer": "B",
+          "question": "Isabel Allende, en novelas como La casa de los esp\u00edritus, combina elementos de:"
+        },
+        {
+          "id": "AP_Spanish_Lit_164",
+          "answer": "A",
+          "question": "El \"realismo m\u00e1gico\" en la obra de Isabel Allende, como en \"La casa de los esp\u00edritus\", se utiliza para:"
+        },
+        {
+          "id": "AP_Spanish_Lit_189",
+          "answer": "B",
+          "question": "En *La casa de los esp\u00edritus* de Isabel Allende, \u00bfqu\u00e9 elementos son caracter\u00edsticos de su estilo?"
+        },
+        {
+          "id": "AP_Spanish_Lit_215",
+          "answer": "C",
+          "question": "Isabel Allende, escritora chilena, es conocida por sus novelas que a menudo entrelazan lo real y lo fant\u00e1stico, con personajes femeninos fue"
+        },
+        {
+          "id": "AP_Spanish_Lit_240",
+          "answer": "A",
+          "question": "\u00bfQu\u00e9 escritora chilena es autora de 'La casa de los esp\u00edritus', obra fundacional del 'realismo m\u00e1gico' y un fresco de la historia chilena y "
+        },
+        {
+          "id": "AP_Spanish_Lit_264",
+          "answer": "A",
+          "question": "Isabel Allende, escritora chilena, es conocida por sus novelas que entrelazan lo real y lo fant\u00e1stico, a menudo con un fuerte componente his"
+        },
+        {
+          "id": "AP_Spanish_Lit_289",
+          "answer": "D",
+          "question": "Isabel Allende, en novelas como 'La casa de los esp\u00edritus', a menudo explora:"
+        }
+      ]
+    },
+    {
+      "size": 10,
+      "avg_similarity": 0.871,
+      "members": [
+        {
+          "id": "AP_Spanish_Lit_33",
+          "answer": "D",
+          "question": "\u00bfQu\u00e9 caracter\u00edstica define la prosa de Emilia Pardo Baz\u00e1n, especialmente en obras como 'Los pazos de Ulloa'?"
+        },
+        {
+          "id": "AP_Spanish_Lit_54",
+          "answer": "D",
+          "question": "Emilia Pardo Baz\u00e1n es una figura central del Naturalismo en Espa\u00f1a. Su novela \"Los pazos de Ulloa\" destaca por:"
+        },
+        {
+          "id": "AP_Spanish_Lit_105",
+          "answer": "D",
+          "question": "Emilia Pardo Baz\u00e1n fue una figura clave en la introducci\u00f3n y adaptaci\u00f3n del Naturalismo en Espa\u00f1a. \u00bfQu\u00e9 caracter\u00edstica del Naturalismo se ob"
+        },
+        {
+          "id": "AP_Spanish_Lit_130",
+          "answer": "A",
+          "question": "\u00bfCu\u00e1l de estas novelas de Emilia Pardo Baz\u00e1n es un claro ejemplo de naturalismo en la literatura espa\u00f1ola?"
+        },
+        {
+          "id": "AP_Spanish_Lit_155",
+          "answer": "D",
+          "question": "En la obra de Emilia Pardo Baz\u00e1n, el \"naturalismo\" se manifiesta a trav\u00e9s de:"
+        },
+        {
+          "id": "AP_Spanish_Lit_180",
+          "answer": "A",
+          "question": "\u00bfCu\u00e1l de los siguientes g\u00e9neros literarios es central en la obra de Emilia Pardo Baz\u00e1n?"
+        },
+        {
+          "id": "AP_Spanish_Lit_206",
+          "answer": "C",
+          "question": "Emilia Pardo Baz\u00e1n, figura clave del Naturalismo en Espa\u00f1a, explor\u00f3 en sus novelas las influencias del medio y la herencia. \u00bfCu\u00e1l de las sig"
+        },
+        {
+          "id": "AP_Spanish_Lit_231",
+          "answer": "B",
+          "question": "Emilia Pardo Baz\u00e1n fue una figura clave en la introducci\u00f3n y desarrollo de qu\u00e9 movimiento literario en Espa\u00f1a?"
+        },
+        {
+          "id": "AP_Spanish_Lit_255",
+          "answer": "C",
+          "question": "\u00bfQu\u00e9 escritora, figura clave del Realismo y Naturalismo en Espa\u00f1a, es conocida por su novela 'Los pazos de Ulloa'?"
+        },
+        {
+          "id": "AP_Spanish_Lit_280",
+          "answer": "A",
+          "question": "En 'Los pazos de Ulloa' de Emilia Pardo Baz\u00e1n, el naturalismo se manifiesta en:"
+        }
+      ]
+    },
+    {
+      "size": 10,
+      "avg_similarity": 0.848,
+      "members": [
+        {
+          "id": "AP_Spanish_Lit_287",
+          "answer": "D",
+          "question": "En la obra de Julio Cort\u00e1zar, especialmente en 'Rayuela', se rompe con la linealidad narrativa para:"
+        },
+        {
+          "id": "AP_Spanish_Lit_61",
+          "answer": "B",
+          "question": "Julio Cort\u00e1zar, autor argentino, es una figura clave del \"Boom\" latinoamericano. Su obra \"Rayuela\" es innovadora por:"
+        },
+        {
+          "id": "AP_Spanish_Lit_95",
+          "answer": "A",
+          "question": "En 'Rayuela' de Julio Cort\u00e1zar, la estructura no lineal y las m\u00faltiples opciones de lectura son un reflejo de..."
+        },
+        {
+          "id": "AP_Spanish_Lit_112",
+          "answer": "B",
+          "question": "Julio Cort\u00e1zar, en \"Rayuela\", rompe con la estructura lineal de la novela. \u00bfQu\u00e9 busca el lector al seguir el \"orden\" propuesto por el autor?"
+        },
+        {
+          "id": "AP_Spanish_Lit_162",
+          "answer": "B",
+          "question": "En \"Rayuela\" de Julio Cort\u00e1zar, la estructura no lineal y la posibilidad de m\u00faltiples lecturas reflejan:"
+        },
+        {
+          "id": "AP_Spanish_Lit_187",
+          "answer": "A",
+          "question": "Julio Cort\u00e1zar es famoso por su experimentaci\u00f3n con la estructura narrativa y el lenguaje, como se observa en:"
+        },
+        {
+          "id": "AP_Spanish_Lit_213",
+          "answer": "D",
+          "question": "Julio Cort\u00e1zar, escritor argentino, es una figura central del Boom Latinoamericano. \u00bfCu\u00e1l de las siguientes obras es un ejemplo de su experi"
+        },
+        {
+          "id": "AP_Spanish_Lit_238",
+          "answer": "B",
+          "question": "Julio Cort\u00e1zar, autor argentino, es una figura central del 'Boom' latinoamericano, y es especialmente conocido por:"
+        },
+        {
+          "id": "AP_Spanish_Lit_262",
+          "answer": "C",
+          "question": "Julio Cort\u00e1zar, escritor argentino, es una figura clave del Boom latinoamericano. \u00bfCu\u00e1l de sus novelas es conocida por su estructura experim"
+        },
+        {
+          "id": "AP_Spanish_Lit_27",
+          "answer": "C",
+          "question": "\u00bfQu\u00e9 t\u00e9cnica narrativa emplea Julio Cort\u00e1zar de manera prominente en 'Rayuela' para involucrar al lector?"
+        }
+      ]
+    },
+    {
+      "size": 10,
+      "avg_similarity": 0.846,
+      "members": [
+        {
+          "id": "AP_SpanLit_16",
+          "answer": "D",
+          "question": "'La vida es sue\u00f1o' de Calder\u00f3n explora:"
+        },
+        {
+          "id": "AP_Spanish_Lit_49",
+          "answer": "C",
+          "question": "\u00bfQui\u00e9n es el autor de \"La vida es sue\u00f1o\", una de las obras m\u00e1s importantes del Siglo de Oro espa\u00f1ol?"
+        },
+        {
+          "id": "AP_Spanish_Lit_76",
+          "answer": "D",
+          "question": "En 'La vida es sue\u00f1o' de Calder\u00f3n de la Barca, \u00bfcu\u00e1l es el tema central que se explora a trav\u00e9s del personaje de Segismundo?"
+        },
+        {
+          "id": "AP_Spanish_Lit_125",
+          "answer": "B",
+          "question": "En La vida es sue\u00f1o de Calder\u00f3n de la Barca, \u00bfcu\u00e1l es el tema central que explora el personaje de Segismundo?"
+        },
+        {
+          "id": "AP_Spanish_Lit_175",
+          "answer": "A",
+          "question": "En *La vida es sue\u00f1o* de Calder\u00f3n de la Barca, \u00bfcu\u00e1l es el dilema principal de Segismundo?"
+        },
+        {
+          "id": "AP_Spanish_Lit_201",
+          "answer": "C",
+          "question": "En 'La vida es sue\u00f1o' de Calder\u00f3n de la Barca, \u00bfqui\u00e9n es el personaje principal que representa la lucha entre el libre albedr\u00edo y el determi"
+        },
+        {
+          "id": "AP_Spanish_Lit_225",
+          "answer": "C",
+          "question": "\u00bfCu\u00e1l es el tema central de 'La vida es sue\u00f1o' de Calder\u00f3n de la Barca?"
+        },
+        {
+          "id": "AP_Spanish_Lit_250",
+          "answer": "C",
+          "question": "\u00bfQui\u00e9n escribi\u00f3 'La vida es sue\u00f1o', un drama filos\u00f3fico que explora temas como el libre albedr\u00edo y el destino?"
+        },
+        {
+          "id": "AP_Spanish_Lit_275",
+          "answer": "D",
+          "question": "En 'La vida es sue\u00f1o' de Calder\u00f3n de la Barca, \u00bfcu\u00e1l es la principal duda existencial que atormenta a Segismundo?"
+        },
+        {
+          "id": "AP_Spanish_Lit_295",
+          "answer": "D",
+          "question": "En el teatro barroco espa\u00f1ol, \u00bfqu\u00e9 se entiende por 'la vida es sue\u00f1o' en la obra de Calder\u00f3n?"
+        }
+      ]
+    },
+    {
+      "size": 10,
+      "avg_similarity": 0.845,
+      "members": [
+        {
+          "id": "AP_Spanish_Lit_182",
+          "answer": "B",
+          "question": "Rub\u00e9n Dar\u00edo es considerado el m\u00e1ximo exponente de:"
+        },
+        {
+          "id": "AP_Spanish_Lit_35",
+          "answer": "A",
+          "question": "\u00bfCu\u00e1l de estos autores es conocido como el 'poeta de Am\u00e9rica' y m\u00e1ximo exponente del Modernismo?"
+        },
+        {
+          "id": "AP_Spanish_Lit_56",
+          "answer": "D",
+          "question": "\u00bfQui\u00e9n es el poeta nicarag\u00fcense considerado el m\u00e1ximo representante del Modernismo hispanoamericano?"
+        },
+        {
+          "id": "AP_Spanish_Lit_83",
+          "answer": "B",
+          "question": "Rub\u00e9n Dar\u00edo, m\u00e1ximo exponente del Modernismo hispanoamericano, es conocido por su..."
+        },
+        {
+          "id": "AP_Spanish_Lit_107",
+          "answer": "B",
+          "question": "\u00bfQu\u00e9 poeta nicarag\u00fcense es considerado el m\u00e1ximo exponente del Modernismo en lengua espa\u00f1ola, revolucionando el lenguaje po\u00e9tico con \"Azul.."
+        },
+        {
+          "id": "AP_Spanish_Lit_169",
+          "answer": "B",
+          "question": "La obra de Rub\u00e9n Dar\u00edo, considerada cumbre del Modernismo, se caracteriza por:"
+        },
+        {
+          "id": "AP_Spanish_Lit_208",
+          "answer": "A",
+          "question": "Rub\u00e9n Dar\u00edo, poeta nicarag\u00fcense, es el padre del Modernismo hispanoamericano. \u00bfQu\u00e9 buscaba principalmente el Modernismo literario?"
+        },
+        {
+          "id": "AP_Spanish_Lit_233",
+          "answer": "A",
+          "question": "\u00bfQui\u00e9n es considerado el padre del Modernismo hispanoamericano, introduciendo una renovaci\u00f3n profunda en la m\u00e9trica, el l\u00e9xico y la tem\u00e1tica"
+        },
+        {
+          "id": "AP_Spanish_Lit_257",
+          "answer": "A",
+          "question": "\u00bfQu\u00e9 poeta nicarag\u00fcense es considerado el m\u00e1ximo representante del Modernismo hispanoamericano?"
+        },
+        {
+          "id": "AP_Spanish_Lit_282",
+          "answer": "C",
+          "question": "Rub\u00e9n Dar\u00edo es conocido como el principal impulsor de:"
+        }
+      ]
+    },
+    {
+      "size": 10,
+      "avg_similarity": 0.833,
+      "members": [
+        {
+          "id": "AP_Spanish_Lit_88",
+          "answer": "A",
+          "question": "El concepto de 'realismo m\u00e1gico' en la obra de Gabriel Garc\u00eda M\u00e1rquez se manifiesta a trav\u00e9s de..."
+        },
+        {
+          "id": "AP_SpanLit_3",
+          "answer": "C",
+          "question": "'Cien a\u00f1os de soledad' es ejemplo de:"
+        },
+        {
+          "id": "AP_Spanish_Lit_62",
+          "answer": "C",
+          "question": "Gabriel Garc\u00eda M\u00e1rquez, premio Nobel de Literatura, es el m\u00e1ximo exponente del Realismo M\u00e1gico con su novela:"
+        },
+        {
+          "id": "AP_Spanish_Lit_113",
+          "answer": "B",
+          "question": "Gabriel Garc\u00eda M\u00e1rquez, en \"Cien a\u00f1os de soledad\", es el m\u00e1ximo exponente del Realismo M\u00e1gico. \u00bfQu\u00e9 elemento caracteriza esta corriente lite"
+        },
+        {
+          "id": "AP_Spanish_Lit_138",
+          "answer": "A",
+          "question": "En Cien a\u00f1os de soledad de Gabriel Garc\u00eda M\u00e1rquez, el realismo m\u00e1gico se manifiesta principalmente a trav\u00e9s de:"
+        },
+        {
+          "id": "AP_Spanish_Lit_163",
+          "answer": "C",
+          "question": "\"Cien a\u00f1os de soledad\" de Gabriel Garc\u00eda M\u00e1rquez es un ejemplo paradigm\u00e1tico de:"
+        },
+        {
+          "id": "AP_Spanish_Lit_214",
+          "answer": "C",
+          "question": "Gabriel Garc\u00eda M\u00e1rquez, autor colombiano y Premio Nobel de Literatura, es el m\u00e1ximo exponente del Realismo M\u00e1gico. \u00bfCu\u00e1l de sus novelas narr"
+        },
+        {
+          "id": "AP_Spanish_Lit_239",
+          "answer": "C",
+          "question": "Gabriel Garc\u00eda M\u00e1rquez, autor colombiano y Premio Nobel de Literatura, es el m\u00e1ximo exponente de qu\u00e9 corriente literaria?"
+        },
+        {
+          "id": "AP_Spanish_Lit_263",
+          "answer": "A",
+          "question": "Gabriel Garc\u00eda M\u00e1rquez, Premio Nobel de Literatura, es el autor de 'Cien a\u00f1os de soledad', obra cumbre del Realismo M\u00e1gico. \u00bfEn qu\u00e9 pa\u00eds se "
+        },
+        {
+          "id": "AP_Spanish_Lit_288",
+          "answer": "B",
+          "question": "Gabriel Garc\u00eda M\u00e1rquez es el m\u00e1ximo exponente del:"
+        }
+      ]
+    },
+    {
+      "size": 9,
+      "avg_similarity": 0.881,
+      "members": [
+        {
+          "id": "AP_SpanLit_10",
+          "answer": "D",
+          "question": "Sor Juana In\u00e9s de la Cruz defendi\u00f3:"
+        },
+        {
+          "id": "AP_Spanish_Lit_28",
+          "answer": "A",
+          "question": "En la obra de Sor Juana In\u00e9s de la Cruz, \u00bfcu\u00e1l de los siguientes temas es fundamental?"
+        },
+        {
+          "id": "AP_Spanish_Lit_51",
+          "answer": "C",
+          "question": "Sor Juana In\u00e9s de la Cruz, figura clave del Barroco novohispano, defendi\u00f3 en \"Respuesta a Sor Filotea de la Cruz\" el derecho de las mujeres "
+        },
+        {
+          "id": "AP_Spanish_Lit_127",
+          "answer": "D",
+          "question": "Sor Juana In\u00e9s de la Cruz, en su obra, defiende apasionadamente:"
+        },
+        {
+          "id": "AP_Spanish_Lit_152",
+          "answer": "A",
+          "question": "La \"Respuesta a Sor Filotea de la Cruz\" de Sor Juana In\u00e9s de la Cruz es un texto fundamental para entender su:"
+        },
+        {
+          "id": "AP_Spanish_Lit_177",
+          "answer": "D",
+          "question": "Sor Juana In\u00e9s de la Cruz, en su *Respuesta a Sor Filotea*, defiende principalmente:"
+        },
+        {
+          "id": "AP_Spanish_Lit_252",
+          "answer": "C",
+          "question": "Sor Juana In\u00e9s de la Cruz, la D\u00e9cima Musa, fue una figura clave del Barroco novohispano. \u00bfCu\u00e1l de sus obras es una defensa de la educaci\u00f3n y"
+        },
+        {
+          "id": "AP_Spanish_Lit_277",
+          "answer": "A",
+          "question": "Sor Juana In\u00e9s de la Cruz, en su obra, defendi\u00f3 principalmente:"
+        },
+        {
+          "id": "AP_Spanish_Lit_300",
+          "answer": "B",
+          "question": "La obra de Sor Juana In\u00e9s de la Cruz se caracteriza por su defensa de la educaci\u00f3n de la mujer y su brillante intelecto. En su \"Respuesta a "
+        }
+      ]
+    },
+    {
+      "size": 8,
+      "avg_similarity": 0.868,
+      "members": [
+        {
+          "id": "AP_Spanish_Lit_31",
+          "answer": "C",
+          "question": "\u00bfCu\u00e1l de estas obras es un ejemplo representativo del ensayo period\u00edstico y cr\u00edtico de Mariano Jos\u00e9 de Larra?"
+        },
+        {
+          "id": "AP_Spanish_Lit_53",
+          "answer": "D",
+          "question": "\u00bfQu\u00e9 tipo de escritos caracterizan la obra de Mariano Jos\u00e9 de Larra?"
+        },
+        {
+          "id": "AP_Spanish_Lit_104",
+          "answer": "A",
+          "question": "Mariano Jos\u00e9 de Larra, en sus art\u00edculos period\u00edsticos, se caracteriz\u00f3 por su estilo cr\u00edtico y a menudo pesimista. \u00bfCu\u00e1l era uno de sus princ"
+        },
+        {
+          "id": "AP_Spanish_Lit_129",
+          "answer": "A",
+          "question": "Mariano Jos\u00e9 de Larra, en sus art\u00edculos period\u00edsticos, critica principalmente:"
+        },
+        {
+          "id": "AP_Spanish_Lit_179",
+          "answer": "A",
+          "question": "Mariano Jos\u00e9 de Larra es conocido por su estilo period\u00edstico y su cr\u00edtica a:"
+        },
+        {
+          "id": "AP_Spanish_Lit_205",
+          "answer": "B",
+          "question": "Mariano Jos\u00e9 de Larra, un destacado periodista y escritor del Romanticismo espa\u00f1ol, es conocido por sus art\u00edculos de costumbres y cr\u00edtica so"
+        },
+        {
+          "id": "AP_Spanish_Lit_254",
+          "answer": "B",
+          "question": "Mariano Jos\u00e9 de Larra es conocido por sus art\u00edculos de costumbres y cr\u00edtica social. \u00bfQu\u00e9 tipo de escritos le dieron mayor fama?"
+        },
+        {
+          "id": "AP_Spanish_Lit_279",
+          "answer": "C",
+          "question": "\u00bfCu\u00e1l fue el principal prop\u00f3sito de los art\u00edculos de Mariano Jos\u00e9 de Larra?"
+        }
+      ]
+    },
+    {
+      "size": 7,
+      "avg_similarity": 0.898,
+      "members": [
+        {
+          "id": "AP_Spanish_Lit_90",
+          "answer": "D",
+          "question": "La poes\u00eda de la cubana Nancy Morej\u00f3n a menudo aborda temas como..."
+        },
+        {
+          "id": "AP_Spanish_Lit_141",
+          "answer": "C",
+          "question": "En la obra de Nancy Morej\u00f3n, la poes\u00eda suele caracterizarse por:"
+        },
+        {
+          "id": "AP_Spanish_Lit_166",
+          "answer": "A",
+          "question": "En la obra de Nancy Morej\u00f3n, el tema recurrente de la di\u00e1spora africana en Cuba se aborda desde una perspectiva de:"
+        },
+        {
+          "id": "AP_Spanish_Lit_190",
+          "answer": "C",
+          "question": "\u00bfCu\u00e1l de las siguientes autoras es conocida por su poes\u00eda que aborda la experiencia femenina y la identidad afrocubana?"
+        },
+        {
+          "id": "AP_Spanish_Lit_216",
+          "answer": "C",
+          "question": "En el contexto de la literatura afrohispana, \u00bfqu\u00e9 autora cubana es reconocida por su poes\u00eda que aborda la identidad, la negritud y la di\u00e1spo"
+        },
+        {
+          "id": "AP_Spanish_Lit_242",
+          "answer": "D",
+          "question": "Nancy Morej\u00f3n, destacada poeta cubana, es conocida por su obra que aborda:"
+        },
+        {
+          "id": "AP_Spanish_Lit_290",
+          "answer": "D",
+          "question": "La poes\u00eda de Nancy Morej\u00f3n se caracteriza por abordar temas como:"
+        }
+      ]
+    },
+    {
+      "size": 7,
+      "avg_similarity": 0.82,
+      "members": [
+        {
+          "id": "AP_Spanish_Lit_24",
+          "answer": "D",
+          "question": "En los poemas de Antonio Machado, el tema recurrente del 'camino' simboliza principalmente:"
+        },
+        {
+          "id": "AP_Spanish_Lit_57",
+          "answer": "A",
+          "question": "La poes\u00eda de Antonio Machado, tambi\u00e9n de la Generaci\u00f3n del 98, se caracteriza por:"
+        },
+        {
+          "id": "AP_Spanish_Lit_84",
+          "answer": "A",
+          "question": "En la poes\u00eda de Antonio Machado, el tema del 'camino' suele simbolizar..."
+        },
+        {
+          "id": "AP_Spanish_Lit_183",
+          "answer": "B",
+          "question": "\u00bfQu\u00e9 tema es recurrente en la poes\u00eda de Antonio Machado?"
+        },
+        {
+          "id": "AP_Spanish_Lit_209",
+          "answer": "A",
+          "question": "Antonio Machado, poeta de la Generaci\u00f3n del 98, utiliza en su obra el paisaje de Castilla como reflejo del alma espa\u00f1ola. \u00bfQu\u00e9 elemento simb"
+        },
+        {
+          "id": "AP_Spanish_Lit_234",
+          "answer": "D",
+          "question": "La poes\u00eda de Antonio Machado, especialmente en 'Campos de Castilla', se caracteriza por:"
+        },
+        {
+          "id": "AP_Spanish_Lit_283",
+          "answer": "D",
+          "question": "En la poes\u00eda de Antonio Machado, el paisaje de Castilla a menudo simboliza:"
+        }
+      ]
+    },
+    {
+      "size": 6,
+      "avg_similarity": 0.878,
+      "members": [
+        {
+          "id": "AP_Spanish_Lit_286",
+          "answer": "D",
+          "question": "Jorge Luis Borges es c\u00e9lebre por sus cuentos que exploran temas como:"
+        },
+        {
+          "id": "AP_Spanish_Lit_60",
+          "answer": "D",
+          "question": "Jorge Luis Borges, escritor argentino, es famoso por sus cuentos que exploran temas como:"
+        },
+        {
+          "id": "AP_Spanish_Lit_111",
+          "answer": "B",
+          "question": "Jorge Luis Borges, en cuentos como \"El jard\u00edn de senderos que se bifurcan\", explora conceptos metaf\u00edsicos y filos\u00f3ficos. \u00bfCu\u00e1l de los siguie"
+        },
+        {
+          "id": "AP_Spanish_Lit_161",
+          "answer": "B",
+          "question": "\u00bfQu\u00e9 caracter\u00edstica es definitoria del estilo de Jorge Luis Borges en sus cuentos?"
+        },
+        {
+          "id": "AP_Spanish_Lit_212",
+          "answer": "B",
+          "question": "Jorge Luis Borges, escritor argentino, es maestro del relato corto y la metaficci\u00f3n. \u00bfQu\u00e9 temas son recurrentes en su obra?"
+        },
+        {
+          "id": "AP_Spanish_Lit_261",
+          "answer": "A",
+          "question": "Jorge Luis Borges, escritor argentino, es famoso por sus relatos fant\u00e1sticos y filos\u00f3ficos que exploran temas como el tiempo, el laberinto y"
+        }
+      ]
+    },
+    {
+      "size": 5,
+      "avg_similarity": 0.893,
+      "members": [
+        {
+          "id": "AP_Spanish_Lit_44",
+          "answer": "B",
+          "question": "\u00bfCu\u00e1l de estos autores es un representante destacado de la Generaci\u00f3n del 98 y explor\u00f3 la crisis de identidad espa\u00f1ola?"
+        },
+        {
+          "id": "AP_Spanish_Lit_55",
+          "answer": "B",
+          "question": "Miguel de Unamuno, miembro de la Generaci\u00f3n del 98, explor\u00f3 en sus obras temas como:"
+        },
+        {
+          "id": "AP_Spanish_Lit_94",
+          "answer": "C",
+          "question": "\u00bfQu\u00e9 autor de la Generaci\u00f3n del 98 es conocido por su profunda reflexi\u00f3n sobre la identidad espa\u00f1ola, la historia y la crisis existencial?"
+        },
+        {
+          "id": "AP_Spanish_Lit_232",
+          "answer": "D",
+          "question": "Miguel de Unamuno, figura central de la Generaci\u00f3n del 98, explor\u00f3 en su obra temas como:"
+        },
+        {
+          "id": "AP_Spanish_Lit_269",
+          "answer": "A",
+          "question": "La Generaci\u00f3n del 98 se caracteriza por su preocupaci\u00f3n por la 'crisis de fin de siglo' y la identidad de Espa\u00f1a. \u00bfQu\u00e9 autor es considerado "
+        }
+      ]
+    },
+    {
+      "size": 4,
+      "avg_similarity": 0.902,
+      "members": [
+        {
+          "id": "AP_Spanish_Lit_50",
+          "answer": "B",
+          "question": "El estilo de Francisco de Quevedo se caracteriza por:"
+        },
+        {
+          "id": "AP_Spanish_Lit_126",
+          "answer": "A",
+          "question": "\u00bfQu\u00e9 estilo literario se asocia principalmente con Francisco de Quevedo?"
+        },
+        {
+          "id": "AP_Spanish_Lit_276",
+          "answer": "C",
+          "question": "\u00bfQu\u00e9 estilo literario se asocia fuertemente con Francisco de Quevedo?"
+        },
+        {
+          "id": "AP_Spanish_Lit_296",
+          "answer": "C",
+          "question": "\u00bfQu\u00e9 estilo literario, representado por Quevedo, se caracteriza por la concisi\u00f3n, el ingenio y el juego de palabras, buscando la profundidad"
+        }
+      ]
+    },
+    {
+      "size": 4,
+      "avg_similarity": 0.861,
+      "members": [
+        {
+          "id": "AP_SpanLit_4",
+          "answer": "B",
+          "question": "Sancho Panza representa:"
+        },
+        {
+          "id": "AP_Spanish_Lit_117",
+          "answer": "A",
+          "question": "En la obra de Cervantes, \u00bfqu\u00e9 dualidad se explora constantemente a trav\u00e9s de Don Quijote y Sancho Panza?"
+        },
+        {
+          "id": "AP_Spanish_Lit_173",
+          "answer": "D",
+          "question": "En *Don Quijote de la Mancha*, \u00bfqu\u00e9 representa Sancho Panza principalmente?"
+        },
+        {
+          "id": "AP_Spanish_Lit_273",
+          "answer": "A",
+          "question": "En 'Don Quijote de la Mancha', \u00bfqu\u00e9 representa la figura de Sancho Panza en contraste con Don Quijote?"
+        }
+      ]
+    },
+    {
+      "size": 4,
+      "avg_similarity": 0.858,
+      "members": [
+        {
+          "id": "AP_Spanish_Lit_79",
+          "answer": "C",
+          "question": "Los 'Rimas' de Gustavo Adolfo B\u00e9cquer se caracterizan principalmente por su..."
+        },
+        {
+          "id": "AP_Spanish_Lit_153",
+          "answer": "A",
+          "question": "Los \"Rimas\" de Gustavo Adolfo B\u00e9cquer se caracterizan por su:"
+        },
+        {
+          "id": "AP_Spanish_Lit_204",
+          "answer": "D",
+          "question": "Gustavo Adolfo B\u00e9cquer, poeta rom\u00e1ntico espa\u00f1ol, es c\u00e9lebre por sus 'Rimas' y 'Leyendas'. \u00bfQu\u00e9 caracter\u00edsticas predominan en su poes\u00eda?"
+        },
+        {
+          "id": "AP_Spanish_Lit_278",
+          "answer": "D",
+          "question": "Los 'Rimas' de Gustavo Adolfo B\u00e9cquer se caracterizan por:"
+        }
+      ]
+    },
+    {
+      "size": 3,
+      "avg_similarity": 0.875,
+      "members": [
+        {
+          "id": "AP_Spanish_Lit_29",
+          "answer": "C",
+          "question": "\u00bfQu\u00e9 movimiento literario se asocia principalmente con Gustavo Adolfo B\u00e9cquer y sus 'Rimas'?"
+        },
+        {
+          "id": "AP_Spanish_Lit_52",
+          "answer": "A",
+          "question": "Las \"Rimas\" de Gustavo Adolfo B\u00e9cquer son un ejemplo paradigm\u00e1tico de:"
+        },
+        {
+          "id": "AP_Spanish_Lit_103",
+          "answer": "C",
+          "question": "\u00bfQu\u00e9 movimiento literario del siglo XIX, caracterizado por el individualismo, la emoci\u00f3n y la imaginaci\u00f3n, se manifiesta en los \"Rimas\" de G"
+        }
+      ]
+    },
+    {
+      "size": 3,
+      "avg_similarity": 0.865,
+      "members": [
+        {
+          "id": "AP_Spanish_Lit_207",
+          "answer": "A",
+          "question": "Miguel de Unamuno, escritor de la Generaci\u00f3n del 98, profundiz\u00f3 en temas existenciales como la angustia, la fe y la inmortalidad. \u00bfCu\u00e1l de s"
+        },
+        {
+          "id": "AP_Spanish_Lit_256",
+          "answer": "D",
+          "question": "Miguel de Unamuno, uno de los miembros de la Generaci\u00f3n del 98, reflexion\u00f3 profundamente sobre la identidad espa\u00f1ola y la condici\u00f3n humana. "
+        },
+        {
+          "id": "AP_Spanish_Lit_281",
+          "answer": "B",
+          "question": "\u00bfQu\u00e9 concepto filos\u00f3fico es fundamental en la obra de Miguel de Unamuno, especialmente en 'Niebla'?"
+        }
+      ]
+    },
+    {
+      "size": 3,
+      "avg_similarity": 0.863,
+      "members": [
+        {
+          "id": "AP_Spanish_Lit_45",
+          "answer": "A",
+          "question": "La figura de Don Quijote, en la obra de Cervantes, representa principalmente:"
+        },
+        {
+          "id": "AP_Spanish_Lit_74",
+          "answer": "D",
+          "question": "Don Quijote, al enfrentarse a los molinos de viento, \u00bfqu\u00e9 representa esta escena en t\u00e9rminos de la obra de Cervantes?"
+        },
+        {
+          "id": "AP_SpanLit_1",
+          "answer": "A",
+          "question": "\u00bfCu\u00e1l es el tema central de 'Don Quijote de la Mancha'?"
+        }
+      ]
+    },
+    {
+      "size": 2,
+      "avg_similarity": 0.922,
+      "members": [
+        {
+          "id": "AP_Spanish_Lit_102",
+          "answer": "B",
+          "question": "La poes\u00eda de Sor Juana In\u00e9s de la Cruz a menudo aborda temas como el amor, la inteligencia y la condici\u00f3n de la mujer. \u00bfQu\u00e9 actitud cr\u00edtica "
+        },
+        {
+          "id": "AP_Spanish_Lit_78",
+          "answer": "B",
+          "question": "El poema 'Hombres necios que acus\u00e1is' de Sor Juana In\u00e9s de la Cruz es un alegato..."
+        }
+      ]
+    },
+    {
+      "size": 2,
+      "avg_similarity": 0.917,
+      "members": [
+        {
+          "id": "AP_Spanish_Lit_284",
+          "answer": "D",
+          "question": "El 'Romancero gitano' de Federico Garc\u00eda Lorca se caracteriza por la fusi\u00f3n de:"
+        },
+        {
+          "id": "AP_Spanish_Lit_85",
+          "answer": "A",
+          "question": "\u00bfQu\u00e9 elemento es fundamental en la est\u00e9tica del 'Romancero Gitano' de Federico Garc\u00eda Lorca?"
+        }
+      ]
+    },
+    {
+      "size": 2,
+      "avg_similarity": 0.896,
+      "members": [
+        {
+          "id": "AP_Spanish_Lit_86",
+          "answer": "D",
+          "question": "La poes\u00eda de Pablo Neruda, especialmente en sus 'Veinte poemas de amor y una canci\u00f3n desesperada', se caracteriza por un tono..."
+        },
+        {
+          "id": "AP_Spanish_Lit_93",
+          "answer": "C",
+          "question": "La obra 'Veinte poemas de amor y una canci\u00f3n desesperada' de Pablo Neruda es un ejemplo de poes\u00eda..."
+        }
+      ]
+    },
+    {
+      "size": 2,
+      "avg_similarity": 0.896,
+      "members": [
+        {
+          "id": "AP_Spanish_Lit_91",
+          "answer": "C",
+          "question": "\u00bfQu\u00e9 movimiento literario, surgido en Espa\u00f1a a finales del siglo XIX y principios del XX, buscaba una renovaci\u00f3n est\u00e9tica y tem\u00e1tica, alej\u00e1n"
+        },
+        {
+          "id": "AP_Spanish_Lit_291",
+          "answer": "C",
+          "question": "\u00bfQu\u00e9 movimiento literario buscaba la renovaci\u00f3n est\u00e9tica y tem\u00e1tica a finales del siglo XIX y principios del XX, caracterizado por el esteti"
+        }
+      ]
+    },
+    {
+      "size": 2,
+      "avg_similarity": 0.893,
+      "members": [
+        {
+          "id": "AP_Spanish_Lit_133",
+          "answer": "C",
+          "question": "\u00bfCu\u00e1l de los siguientes poemas es una obra emblem\u00e1tica de Antonio Machado?"
+        },
+        {
+          "id": "AP_Spanish_Lit_258",
+          "answer": "C",
+          "question": "Antonio Machado, poeta de la Generaci\u00f3n del 98, es conocido por su lirismo intimista y su profunda conexi\u00f3n con la tierra de Castilla. \u00bfCu\u00e1l"
+        }
+      ]
+    },
+    {
+      "size": 2,
+      "avg_similarity": 0.887,
+      "members": [
+        {
+          "id": "AP_Spanish_Lit_46",
+          "answer": "C",
+          "question": "\u00bfQu\u00e9 g\u00e9nero literario cultiv\u00f3 Lope de Vega de forma prol\u00edfica, creando la 'comedia nueva'?"
+        },
+        {
+          "id": "AP_Spanish_Lit_274",
+          "answer": "C",
+          "question": "\u00bfQu\u00e9 g\u00e9nero literario se asocia principalmente con Lope de Vega?"
+        }
+      ]
+    },
+    {
+      "size": 2,
+      "avg_similarity": 0.878,
+      "members": [
+        {
+          "id": "AP_Spanish_Lit_109",
+          "answer": "B",
+          "question": "Federico Garc\u00eda Lorca, en su obra teatral \"La casa de Bernarda Alba\", \u00bfqu\u00e9 representa el espacio cerrado y opresivo de la casa?"
+        },
+        {
+          "id": "AP_SpanLit_7",
+          "answer": "A",
+          "question": "En 'La casa de Bernarda Alba,' la casa simboliza:"
+        }
+      ]
+    },
+    {
+      "size": 2,
+      "avg_similarity": 0.877,
+      "members": [
+        {
+          "id": "AP_Spanish_Lit_37",
+          "answer": "C",
+          "question": "\u00bfQu\u00e9 caracter\u00edstica es esencial en la poes\u00eda de Pablo Neruda?"
+        },
+        {
+          "id": "AP_Spanish_Lit_285",
+          "answer": "B",
+          "question": "La poes\u00eda de Pablo Neruda se distingue por su evoluci\u00f3n, pero a menudo se asocia con:"
+        }
+      ]
+    },
+    {
+      "size": 2,
+      "avg_similarity": 0.876,
+      "members": [
+        {
+          "id": "AP_Spanish_Lit_128",
+          "answer": "B",
+          "question": "\u00bfQu\u00e9 tipo de atm\u00f3sferas suelen predominar en las Leyendas de Gustavo Adolfo B\u00e9cquer?"
+        },
+        {
+          "id": "AP_Spanish_Lit_178",
+          "answer": "D",
+          "question": "\u00bfQu\u00e9 caracter\u00edstica es distintiva de las *Leyendas* de Gustavo Adolfo B\u00e9cquer?"
+        }
+      ]
+    },
+    {
+      "size": 2,
+      "avg_similarity": 0.873,
+      "members": [
+        {
+          "id": "AP_Spanish_Lit_66",
+          "answer": "D",
+          "question": "En la poes\u00eda de Federico Garc\u00eda Lorca, el \"duende\" se refiere a:"
+        },
+        {
+          "id": "AP_Spanish_Lit_193",
+          "answer": "B",
+          "question": "El tema del 'duende' es esencial en la est\u00e9tica de:"
+        }
+      ]
+    },
+    {
+      "size": 2,
+      "avg_similarity": 0.869,
+      "members": [
+        {
+          "id": "AP_Spanish_Lit_106",
+          "answer": "B",
+          "question": "Miguel de Unamuno, en su obra \"Niebla\", crea un personaje que dialoga con su autor. \u00bfQu\u00e9 concepto filos\u00f3fico explora a trav\u00e9s de esta metafi"
+        },
+        {
+          "id": "AP_Spanish_Lit_156",
+          "answer": "A",
+          "question": "\"Niebla\" de Miguel de Unamuno es una novela que explora el concepto de:"
+        }
+      ]
+    },
+    {
+      "size": 2,
+      "avg_similarity": 0.867,
+      "members": [
+        {
+          "id": "AP_Spanish_Lit_245",
+          "answer": "C",
+          "question": "\u00bfQu\u00e9 movimiento literario, surgido en Hispanoam\u00e9rica a finales del siglo XIX, busc\u00f3 la renovaci\u00f3n est\u00e9tica y la liberaci\u00f3n de las formas po\u00e9"
+        },
+        {
+          "id": "AP_Spanish_Lit_270",
+          "answer": "C",
+          "question": "\u00bfQu\u00e9 movimiento literario, surgido en Hispanoam\u00e9rica a finales del siglo XIX y principios del XX, buscaba la renovaci\u00f3n del lenguaje y la fo"
+        }
+      ]
+    },
+    {
+      "size": 2,
+      "avg_similarity": 0.862,
+      "members": [
+        {
+          "id": "AP_Spanish_Lit_116",
+          "answer": "A",
+          "question": "\u00bfQu\u00e9 figura ret\u00f3rica es fundamental en la poes\u00eda barroca de Quevedo y G\u00f3ngora para crear complejidad y profundidad expresiva?"
+        },
+        {
+          "id": "AP_Spanish_Lit_174",
+          "answer": "D",
+          "question": "\u00bfQu\u00e9 figura ret\u00f3rica domina la poes\u00eda de G\u00f3ngora, a menudo asociada con el 'culteranismo'?"
+        }
+      ]
+    },
+    {
+      "size": 2,
+      "avg_similarity": 0.86,
+      "members": [
+        {
+          "id": "AP_Spanish_Lit_77",
+          "answer": "A",
+          "question": "\u00bfQu\u00e9 caracter\u00edstica principal define la poes\u00eda sat\u00edrica de Francisco de Quevedo?"
+        },
+        {
+          "id": "AP_Spanish_Lit_226",
+          "answer": "B",
+          "question": "\u00bfQu\u00e9 poeta y prosista del Siglo de Oro espa\u00f1ol es conocido por su estilo sat\u00edrico, su pesimismo y su dominio del conceptismo?"
+        }
+      ]
+    }
+  ]
+}

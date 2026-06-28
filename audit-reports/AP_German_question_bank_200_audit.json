@@ -1,0 +1,996 @@
+{
+  "bank": "src/data/AP_German_question_bank_200.json",
+  "total": 261,
+  "summary": {
+    "flagged": 31,
+    "errors": 6,
+    "clusters": 27,
+    "questions_in_clusters": 78
+  },
+  "ai_review_flagged": [
+    {
+      "id": "AP_German_286",
+      "verdict": "distractor_weak",
+      "correct_answer": "B",
+      "issues": [
+        "Choice C is the identical word provided in the prompt, which is poor question design for a synonym task.",
+        "Choice B (bekannt) is the most standard synonym.",
+        "As marked, C is a tautology, not a synonym."
+      ],
+      "suggested_distractor_fix": {
+        "letter": "C",
+        "replacement": "beliebt"
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "AP_German_36",
+      "verdict": "multiple",
+      "correct_answer": "null",
+      "issues": [
+        "Both C and D are grammatically correct and interchangeable in this context.",
+        "Choice C (das) is more common in standard German, while Choice D (welches) is stylistically more formal but equally valid."
+      ],
+      "suggested_distractor_fix": {
+        "letter": "D",
+        "replacement": "den"
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "AP_German_217",
+      "verdict": "multiple",
+      "correct_answer": "B",
+      "issues": [
+        "Choices B and D are identical"
+      ],
+      "suggested_distractor_fix": {
+        "letter": "D",
+        "replacement": "Ich wei\u00df nicht, wo ist er geblieben."
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "AP_German_250",
+      "verdict": "answer_wrong",
+      "correct_answer": "null",
+      "issues": [
+        "The premise of the question is grammatically impossible in German: two-way prepositions (Wechselpr\u00e4positionen) take the accusative, not the dative, when indicating direction/movement (wohin).",
+        "All four options (in, an, auf, vor) are two-way prepositions, meaning they all follow the same case rules.",
+        "The explanation acknowledges the error but fails to conclude that the question itself is fundamentally flawed."
+      ],
+      "suggested_distractor_fix": null,
+      "confidence": "high"
+    },
+    {
+      "id": "AP_German_80",
+      "verdict": "answer_wrong",
+      "correct_answer": null,
+      "issues": [
+        "The marked answer B (f\u00fcr) is incorrect as it strictly takes the accusative case.",
+        "The explanation is factually incorrect; 'f\u00fcr' is not a 'Wechselpr\u00e4position' and 'f\u00fcr den Mann' is accusative, not dative.",
+        "None of the provided options (A, B, C, D) take the dative case; they are all strictly accusative."
+      ],
+      "suggested_distractor_fix": {
+        "letter": "A",
+        "replacement": "mit"
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "AP_German_165",
+      "verdict": "multiple",
+      "correct_answer": "A",
+      "issues": [
+        "Choice A and Choice D are identical, creating two correct answers."
+      ],
+      "suggested_distractor_fix": {
+        "letter": "D",
+        "replacement": "Ich werde dich anrufen an."
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "AP_German_243",
+      "verdict": "multiple",
+      "correct_answer": "A|B",
+      "issues": [
+        "Both choice A ('zu') and choice B ('mit') use prepositions that always require the dative case."
+      ],
+      "suggested_distractor_fix": {
+        "letter": "A",
+        "replacement": "Ich gehe in den Park."
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "AP_German_212",
+      "verdict": "explanation_wrong",
+      "correct_answer": "B",
+      "issues": [
+        "The explanation incorrectly identifies 'Berliner Luft' as a herbal liqueur (Kr\u00e4uterlik\u00f6r) when it is actually a peppermint liqueur (Pfefferminzlik\u00f6r)."
+      ],
+      "suggested_distractor_fix": null,
+      "confidence": "high"
+    },
+    {
+      "id": "AP_German_22",
+      "verdict": "answer_wrong",
+      "correct_answer": "C",
+      "issues": [
+        "The marked answer D is incorrect; the correct ending for a masculine noun in the accusative case following a mixed declension article ('einen') is '-en'.",
+        "The explanation correctly identifies the grammatical requirements (masculine, accusative, '-en') but fails to match it to the marked answer D."
+      ],
+      "suggested_distractor_fix": null,
+      "confidence": "high"
+    },
+    {
+      "id": "AP_German_202",
+      "verdict": "answer_wrong",
+      "correct_answer": "A",
+      "issues": [
+        "Question ambiguity regarding 'historical capital' vs 'current capital'",
+        "Marked answer C is incorrect as Weimar was only the site of the National Assembly"
+      ],
+      "suggested_distractor_fix": null,
+      "confidence": "high"
+    },
+    {
+      "id": "AP_German_148",
+      "verdict": "multiple",
+      "correct_answer": "C",
+      "issues": [
+        "Satz B ist ebenfalls grammatikalisch korrekt als irreale Bedingung der Vergangenheit.",
+        "Die Fragestellung spezifiziert nicht den Zeitbezug (Gegenwart vs. Vergangenheit), wodurch sowohl B als auch C korrekt sind."
+      ],
+      "suggested_distractor_fix": {
+        "letter": "B",
+        "replacement": "Wenn ich Zeit h\u00e4tte, habe ich dich besucht."
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "AP_German_153",
+      "verdict": "distractor_weak",
+      "correct_answer": "A",
+      "issues": [
+        "Duplicate choices (A, B, and D are identical)",
+        "Only one unique distractor provided"
+      ],
+      "suggested_distractor_fix": {
+        "letter": "B",
+        "replacement": "gelest"
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "AP_German_237",
+      "verdict": "multiple",
+      "correct_answer": "A",
+      "issues": [
+        "Option D is also grammatically correct and stylistically acceptable in German, making this a multiple-correct question."
+      ],
+      "suggested_distractor_fix": {
+        "letter": "D",
+        "replacement": "Das ist der Mann, das mir geholfen hat."
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "AP_German_227",
+      "verdict": "multiple",
+      "correct_answer": null,
+      "issues": [
+        "Choice A is the correct Swiss German spelling or a variant of 'wei\u00df', while D is the correct plural form 'wir wissen'. C is also correct. Multiple correct forms are provided in the list."
+      ],
+      "suggested_distractor_fix": {
+        "letter": "A",
+        "replacement": "ich wisse"
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "AP_German_24",
+      "verdict": "distractor_weak",
+      "correct_answer": "A",
+      "issues": [
+        "Choices A and C are identical strings. Choices B and D are identical strings."
+      ],
+      "suggested_distractor_fix": {
+        "letter": "C",
+        "replacement": "Sie sind gestern ankommen."
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "AP_German_44",
+      "verdict": "explanation_wrong",
+      "correct_answer": "A",
+      "issues": [
+        "The explanation incorrectly cites the possessive pronoun 'ihre', which is not present in the provided sentence string ('Sie hat ________ Haare.').",
+        "The adjective ending '-e' in this context (zero article) follows the strong declination for accusative plural, not because of a missing possessive pronoun."
+      ],
+      "suggested_distractor_fix": null,
+      "confidence": "high"
+    },
+    {
+      "id": "AP_German_75",
+      "verdict": "multiple",
+      "correct_answer": null,
+      "issues": [
+        "The question lacks context to determine which modal verb is strictly required among the four grammatically correct options."
+      ],
+      "suggested_distractor_fix": null,
+      "confidence": "high"
+    },
+    {
+      "id": "AP_German_64",
+      "verdict": "answer_wrong",
+      "correct_answer": "A",
+      "issues": [
+        "The question asks which verb requires the accusative, but the example verb 'helfen' strictly requires the dative.",
+        "The marked answer D ('mir') is dative, but choices A ('meinem') is also dative and fits the sentence structure better as an attributive possessive pronoun.",
+        "The explanation is contradictory: it admits 'helfen' takes the dative, yet the question asks for the accusative. Furthermore, 'meinen' (C) is the only accusative form listed."
+      ],
+      "suggested_distractor_fix": null,
+      "confidence": "high"
+    },
+    {
+      "id": "AP_German_290",
+      "verdict": "answer_wrong",
+      "correct_answer": "null",
+      "issues": [
+        "Q is a standard letter in the German alphabet (A-Z).",
+        "\u00c4, \u00d6, and \u00dc are technically additional characters/umlauts often considered part of the extended alphabet, but all four options actually exist in German writing.",
+        "The explanation incorrectly claims Q is not a standard letter, whereas it is essential for words like 'Quelle'."
+      ],
+      "suggested_distractor_fix": {
+        "letter": "D",
+        "replacement": "\u00d1"
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "AP_German_225",
+      "verdict": "answer_wrong",
+      "correct_answer": null,
+      "issues": [
+        "The marked answer is grammatically incorrect due to missing adjective endings. In the context of '...erz\u00e4hlte uns _______ Geschichten...', a plural noun in the accusative case following no determiner requires the ending '-e' (spannende)."
+      ],
+      "suggested_distractor_fix": {
+        "letter": "A",
+        "replacement": "spannende"
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "AP_German_124",
+      "verdict": "multiple",
+      "correct_answer": "null",
+      "issues": [
+        "Both A and C are equally common and correct translations for 'neighborhood'.",
+        "Explanation incorrectly claims 'Viertel' is broader than 'Stadtteil'; usually, a 'Viertel' (quarter) is smaller or more informal than a 'Stadtteil' (district)."
+      ],
+      "suggested_distractor_fix": {
+        "letter": "C",
+        "replacement": "Landkreis"
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "AP_German_284",
+      "verdict": "multiple",
+      "correct_answer": null,
+      "issues": [
+        "All provided choices (neben, an, auf, \u00fcber) are two-way prepositions (Wechselpr\u00e4positionen) that require the dative case when describing a static location (wo?) such as living/dwelling.",
+        "The explanation correctly identifies the logic for 'neben' but fails to recognize that 'an', 'auf', and '\u00fcber' function identically in this grammatical context."
+      ],
+      "suggested_distractor_fix": {
+        "letter": "B",
+        "replacement": "durch"
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "AP_German_28",
+      "verdict": "answer_wrong",
+      "correct_answer": "null",
+      "issues": [
+        "The marked answer D is incorrect; 'f\u00fcr' requires the accusative case.",
+        "None of the provided choices (A, B, C, D) take the dative case; they are all accusative prepositions.",
+        "The explanation correctly identifies that 'f\u00fcr' is accusative, which contradicts it being the answer to 'which requires dative'."
+      ],
+      "suggested_distractor_fix": {
+        "letter": "D",
+        "replacement": "mit"
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "AP_German_60",
+      "verdict": "multiple",
+      "correct_answer": "null",
+      "issues": [
+        "Options A, C, and D are all grammatically correct and semantically plausible in this context."
+      ],
+      "suggested_distractor_fix": {
+        "letter": "D",
+        "replacement": "dass"
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "AP_German_282",
+      "verdict": "multiple",
+      "correct_answer": "D",
+      "issues": [
+        "Ambiguity in subject: 'Sie' can be the 3rd person singular 'she' (ist) or the 3rd person plural 'they' (sind)."
+      ],
+      "suggested_distractor_fix": {
+        "letter": "B",
+        "replacement": "bist"
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "AP_German_190",
+      "verdict": "explanation_wrong",
+      "correct_answer": "C",
+      "issues": [
+        "The explanation incorrectly states that 'D' follows the logic of inversion beginning with an adverb; however, 'D' starts with a verb, making it a question (Interrogativsatz) or a conditional clause, not an adverbial inversion."
+      ],
+      "suggested_distractor_fix": null,
+      "confidence": "high"
+    },
+    {
+      "id": "AP_German_158",
+      "verdict": "distractor_weak",
+      "correct_answer": "C",
+      "issues": [
+        "Circular definition in choice C (uses the word to define the word)",
+        "Distractors A and D are polar opposites, making the correct answer obvious"
+      ],
+      "suggested_distractor_fix": {
+        "letter": "C",
+        "replacement": "Ein Gef\u00fchl der Verlegenheit oder Schuld empfinden."
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "AP_German_26",
+      "verdict": "multiple",
+      "correct_answer": "null",
+      "issues": [
+        "The sentence structure is grammatically incorrect for all options as written. 'Trotz des Regens' is a prepositional phrase, not a clause. To use A, B, or D, the verb 'wollten' or 'konnten' is missing. If the intended answer is A, the sentence is still a fragment."
+      ],
+      "suggested_distractor_fix": null,
+      "confidence": "high"
+    },
+    {
+      "id": "AP_German_38",
+      "verdict": "multiple",
+      "correct_answer": "A",
+      "issues": [
+        "Choices A, C, and D are identical, making the question layout invalid.",
+        "Choice D lacks a terminal period but is otherwise the same construction."
+      ],
+      "suggested_distractor_fix": {
+        "letter": "C",
+        "replacement": "Er bittet mich, ihn zu helfen."
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "AP_German_166",
+      "verdict": "answer_wrong",
+      "correct_answer": "C",
+      "issues": [
+        "The marked answer D is a literal translation translation rather than the idiomatic meaning in business correspondence.",
+        "Option C ('F\u00fcr die Aufmerksamkeit von') most accurately reflects the functional meaning of the phrase, equivalent to 'Attention:' or 'Attn:' in English.",
+        "Option D is rarely used as a definition in linguistic contexts because it implies physical delivery rather than the formal routing of mail."
+      ],
+      "suggested_distractor_fix": {
+        "letter": "D",
+        "replacement": "Unter Ausschluss von."
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "AP_German_62",
+      "verdict": "explanation_wrong",
+      "correct_answer": "A",
+      "issues": [
+        "The explanation suggests 'Er hat des Buches gelesen' is grammatically correct; however, the verb 'lesen' takes an accusative object (das Buch), not a genitive one, unless it is part of a specific poetic or archaic partitive genitive which is not standard for AP German.",
+        "The question is a 'fill-in-the-blank' without a head noun to trigger the genitive case, making the sentence fragment linguistically awkward."
+      ],
+      "suggested_distractor_fix": null,
+      "confidence": "high"
+    }
+  ],
+  "ai_review_errors": [
+    {
+      "id": "AP_German_140",
+      "verdict": "error",
+      "error": "Extra data: line 2 column 1 (char 102)"
+    },
+    {
+      "id": "AP_German_69",
+      "verdict": "error",
+      "error": "Extra data: line 2 column 1 (char 102)"
+    },
+    {
+      "id": "AP_German_10",
+      "verdict": "error",
+      "error": "Extra data: line 2 column 1 (char 102)"
+    },
+    {
+      "id": "AP_German_167",
+      "verdict": "error",
+      "error": "Extra data: line 2 column 1 (char 212)"
+    },
+    {
+      "id": "AP_German_296",
+      "verdict": "error",
+      "error": "Extra data: line 2 column 1 (char 102)"
+    },
+    {
+      "id": "AP_German_179",
+      "verdict": "error",
+      "error": "Extra data: line 2 column 1 (char 102)"
+    }
+  ],
+  "concept_duplicate_clusters": [
+    {
+      "size": 8,
+      "avg_similarity": 0.842,
+      "members": [
+        {
+          "id": "AP_German_66",
+          "answer": "B",
+          "question": "Wenn er Zeit h\u00e4tte, ______ er uns besuchen. (Konjunktiv II)"
+        },
+        {
+          "id": "AP_German_275",
+          "answer": "A",
+          "question": "Welches ist die korrekte Form des Konjunktiv II im folgenden Satz: Wenn ich mehr Zeit h\u00e4tte, ______ ich nach Italien reisen."
+        },
+        {
+          "id": "AP_German_175",
+          "answer": "D",
+          "question": "Welcher Konjunktiv wird verwendet, um einen unwirklichen Wunsch auszudr\u00fccken, z.B. 'H\u00e4tte ich doch mehr Zeit!'?"
+        },
+        {
+          "id": "AP_German_148",
+          "answer": "C",
+          "question": "Welcher Satz verwendet den Konjunktiv II korrekt, um eine irreale Bedingung auszudr\u00fccken?"
+        },
+        {
+          "id": "AP_German_199",
+          "answer": "D",
+          "question": "Welcher Konjunktiv wird in diesem Satz verwendet? \"Wenn ich mehr Zeit h\u00e4tte, w\u00fcrde ich \u00f6fter reisen.\""
+        },
+        {
+          "id": "AP_German_300",
+          "answer": "B",
+          "question": "Welcher der folgenden S\u00e4tze verwendet den Konjunktiv II korrekt, um eine irreale Bedingung auszudr\u00fccken?"
+        },
+        {
+          "id": "AP_German_125",
+          "answer": "D",
+          "question": "Welcher Satz steht im Konjunktiv II?"
+        },
+        {
+          "id": "AP_German_47",
+          "answer": "B",
+          "question": "Welcher Konjunktiv wird verwendet, um einen unerf\u00fcllten Wunsch auszudr\u00fccken?"
+        }
+      ]
+    },
+    {
+      "size": 5,
+      "avg_similarity": 0.965,
+      "members": [
+        {
+          "id": "AP_German_69",
+          "answer": "D",
+          "question": "Welcher Fall wird nach der Pr\u00e4position 'wegen' verwendet, wenn sie 'Ursache' bedeutet?"
+        },
+        {
+          "id": "AP_German_180",
+          "answer": "A",
+          "question": "Welchen Fall verlangt die Pr\u00e4position 'wegen' in der Regel?"
+        },
+        {
+          "id": "AP_German_208",
+          "answer": "C",
+          "question": "Welche Pr\u00e4position erfordert den Genitiv?"
+        },
+        {
+          "id": "AP_German_261",
+          "answer": "B",
+          "question": "Welcher Fall wird nach der Pr\u00e4position 'wegen' verwendet?"
+        },
+        {
+          "id": "AP_German_46",
+          "answer": "A",
+          "question": "Welche Pr\u00e4position verlangt den Genitiv?"
+        }
+      ]
+    },
+    {
+      "size": 5,
+      "avg_similarity": 0.925,
+      "members": [
+        {
+          "id": "AP_German_29",
+          "answer": "B",
+          "question": "Was bedeutet 'Feierabend machen'?"
+        },
+        {
+          "id": "AP_German_218",
+          "answer": "B",
+          "question": "Was bedeutet \"Feierabend\"?"
+        },
+        {
+          "id": "AP_German_238",
+          "answer": "D",
+          "question": "Was ist die Bedeutung von 'Feierabend'?"
+        },
+        {
+          "id": "AP_German_194",
+          "answer": "B",
+          "question": "Was ist ein 'Feierabend' in Deutschland?"
+        },
+        {
+          "id": "AP_German_59",
+          "answer": "B",
+          "question": "Was ist ein 'Feierabend'?"
+        }
+      ]
+    },
+    {
+      "size": 5,
+      "avg_similarity": 0.878,
+      "members": [
+        {
+          "id": "AP_German_196",
+          "answer": "B",
+          "question": "Welcher Satz nutzt den korrekten Konjunktiv I f\u00fcr die indirekte Rede?"
+        },
+        {
+          "id": "AP_German_42",
+          "answer": "A",
+          "question": "Welcher Satz ist im Konjunktiv I?"
+        },
+        {
+          "id": "AP_German_169",
+          "answer": "A",
+          "question": "Welcher Satz verwendet den Konjunktiv I korrekt f\u00fcr indirekte Rede?"
+        },
+        {
+          "id": "AP_German_270",
+          "answer": "D",
+          "question": "Welcher Satz verwendet den Konjunktiv I (oder eine indirekte Rede-Form)?"
+        },
+        {
+          "id": "AP_German_288",
+          "answer": "D",
+          "question": "Welches ist die korrekte indirekte Rede: Sie sagte, dass sie m\u00fcde sei."
+        }
+      ]
+    },
+    {
+      "size": 4,
+      "avg_similarity": 0.902,
+      "members": [
+        {
+          "id": "AP_German_266",
+          "answer": "A",
+          "question": "Welcher Relativsatz ist korrekt?"
+        },
+        {
+          "id": "AP_German_296",
+          "answer": "D",
+          "question": "Welches Relativpronomen ist korrekt: Die Frau, _______ ich geholfen habe, war sehr dankbar."
+        },
+        {
+          "id": "AP_German_95",
+          "answer": "A",
+          "question": "Wie lautet die richtige Form des Relativsatzes: 'Das ist der Mann, ____ mir geholfen hat.'"
+        },
+        {
+          "id": "AP_German_237",
+          "answer": "A",
+          "question": "Welcher Satz verwendet den Relativsatz korrekt?"
+        }
+      ]
+    },
+    {
+      "size": 3,
+      "avg_similarity": 0.984,
+      "members": [
+        {
+          "id": "AP_German_67",
+          "answer": "D",
+          "question": "Was bedeutet 'Das ist mir Wurst'?"
+        },
+        {
+          "id": "AP_German_54",
+          "answer": "B",
+          "question": "Was bedeutet 'Es ist mir Wurst'?"
+        },
+        {
+          "id": "AP_German_174",
+          "answer": "C",
+          "question": "Wenn jemand sagt 'Das ist mir Wurst', was meint er damit?"
+        }
+      ]
+    },
+    {
+      "size": 3,
+      "avg_similarity": 0.971,
+      "members": [
+        {
+          "id": "AP_German_57",
+          "answer": "B",
+          "question": "Was ist 'Schadenfreude'?"
+        },
+        {
+          "id": "AP_German_136",
+          "answer": "C",
+          "question": "Was bedeutet 'Schadenfreude'?"
+        },
+        {
+          "id": "AP_German_244",
+          "answer": "C",
+          "question": "Was ist die Bedeutung von 'Schadenfreude'?"
+        }
+      ]
+    },
+    {
+      "size": 3,
+      "avg_similarity": 0.969,
+      "members": [
+        {
+          "id": "AP_German_109",
+          "answer": "D",
+          "question": "Was bedeutet 'jemandem die Daumen dr\u00fccken'?"
+        },
+        {
+          "id": "AP_German_126",
+          "answer": "D",
+          "question": "Was bedeutet die deutsche Redewendung 'jemandem die Daumen dr\u00fccken'?"
+        },
+        {
+          "id": "AP_German_39",
+          "answer": "B",
+          "question": "Was bedeutet die Redewendung 'jemandem die Daumen dr\u00fccken'?"
+        }
+      ]
+    },
+    {
+      "size": 3,
+      "avg_similarity": 0.944,
+      "members": [
+        {
+          "id": "AP_German_256",
+          "answer": "C",
+          "question": "Was ist die Hauptstadt von Deutschland?"
+        },
+        {
+          "id": "AP_German_176",
+          "answer": "C",
+          "question": "Welche der folgenden St\u00e4dte ist die Hauptstadt von Deutschland?"
+        },
+        {
+          "id": "AP_German_114",
+          "answer": "C",
+          "question": "Welche Stadt ist die Hauptstadt von Deutschland?"
+        }
+      ]
+    },
+    {
+      "size": 3,
+      "avg_similarity": 0.929,
+      "members": [
+        {
+          "id": "AP_German_229",
+          "answer": "B",
+          "question": "Was beschreibt die deutsche Kulturveranstaltung 'Oktoberfest' am besten?"
+        },
+        {
+          "id": "AP_German_81",
+          "answer": "D",
+          "question": "Was ist 'das Oktoberfest' in M\u00fcnchen?"
+        },
+        {
+          "id": "AP_German_133",
+          "answer": "B",
+          "question": "Was ist 'Oktoberfest'?"
+        }
+      ]
+    },
+    {
+      "size": 3,
+      "avg_similarity": 0.909,
+      "members": [
+        {
+          "id": "AP_German_30",
+          "answer": "D",
+          "question": "Welcher Satz ist im Passiv?"
+        },
+        {
+          "id": "AP_German_115",
+          "answer": "B",
+          "question": "W\u00e4hlen Sie die korrekte Passivform (Vorgangspassiv) des Satzes 'Der Mann liest das Buch'."
+        },
+        {
+          "id": "AP_German_83",
+          "answer": "B",
+          "question": "Welcher Satz steht im Passiv?"
+        }
+      ]
+    },
+    {
+      "size": 3,
+      "avg_similarity": 0.894,
+      "members": [
+        {
+          "id": "AP_German_97",
+          "answer": "D",
+          "question": "Was bedeutet das Wort 'gem\u00fctlich'?"
+        },
+        {
+          "id": "AP_German_155",
+          "answer": "C",
+          "question": "Was bedeutet das Wort 'gem\u00fctlich' im deutschen kulturellen Kontext?"
+        },
+        {
+          "id": "AP_German_203",
+          "answer": "B",
+          "question": "Welches Wort ist ein Synonym f\u00fcr \"gem\u00fctlich\"?"
+        }
+      ]
+    },
+    {
+      "size": 2,
+      "avg_similarity": 0.993,
+      "members": [
+        {
+          "id": "AP_German_80",
+          "answer": "B",
+          "question": "Welche Pr\u00e4position verlangt den Dativ?"
+        },
+        {
+          "id": "AP_German_28",
+          "answer": "D",
+          "question": "Welche Pr\u00e4position erfordert den Dativ?"
+        }
+      ]
+    },
+    {
+      "size": 2,
+      "avg_similarity": 0.984,
+      "members": [
+        {
+          "id": "AP_German_120",
+          "answer": "C",
+          "question": "Welches Wort ist ein Nomen?"
+        },
+        {
+          "id": "AP_German_268",
+          "answer": "C",
+          "question": "Welches Wort ist ein Nomen (Substantiv)?"
+        }
+      ]
+    },
+    {
+      "size": 2,
+      "avg_similarity": 0.972,
+      "members": [
+        {
+          "id": "AP_German_119",
+          "answer": "A",
+          "question": "Was bedeutet 'Schwein haben'?"
+        },
+        {
+          "id": "AP_German_35",
+          "answer": "B",
+          "question": "Was bedeutet die Redewendung 'Schwein haben'?"
+        }
+      ]
+    },
+    {
+      "size": 2,
+      "avg_similarity": 0.959,
+      "members": [
+        {
+          "id": "AP_German_43",
+          "answer": "A",
+          "question": "Was bedeutet die Redewendung 'den Nagel auf den Kopf treffen'?"
+        },
+        {
+          "id": "AP_German_289",
+          "answer": "B",
+          "question": "Was bedeutet die idiomatische Wendung 'den Nagel auf den Kopf treffen'?"
+        }
+      ]
+    },
+    {
+      "size": 2,
+      "avg_similarity": 0.951,
+      "members": [
+        {
+          "id": "AP_German_299",
+          "answer": "D",
+          "question": "Was bedeutet die Redewendung 'Ich verstehe nur Bahnhof'?"
+        },
+        {
+          "id": "AP_German_183",
+          "answer": "B",
+          "question": "Wenn man in Deutschland sagt, 'Ich verstehe nur Bahnhof', was dr\u00fcckt man aus?"
+        }
+      ]
+    },
+    {
+      "size": 2,
+      "avg_similarity": 0.935,
+      "members": [
+        {
+          "id": "AP_German_65",
+          "answer": "B",
+          "question": "Was ist ein 'Kuckucksuhr'?"
+        },
+        {
+          "id": "AP_German_143",
+          "answer": "C",
+          "question": "Was ist eine 'Kuckucksuhr'?"
+        }
+      ]
+    },
+    {
+      "size": 2,
+      "avg_similarity": 0.927,
+      "members": [
+        {
+          "id": "AP_German_77",
+          "answer": "B",
+          "question": "Welche Form des Konjunktiv II wird hier verwendet: 'Wenn ich du ____, w\u00fcrde ich das nicht tun.'"
+        },
+        {
+          "id": "AP_German_184",
+          "answer": "C",
+          "question": "Welche Form des Verbs 'sein' muss in dem Satz 'Wenn ich du ______ , w\u00fcrde ich das nicht tun.' verwendet werden?"
+        }
+      ]
+    },
+    {
+      "size": 2,
+      "avg_similarity": 0.925,
+      "members": [
+        {
+          "id": "AP_German_246",
+          "answer": "A",
+          "question": "Welcher Satz verwendet die korrekte indirekte Rede?"
+        },
+        {
+          "id": "AP_German_34",
+          "answer": "C",
+          "question": "Welcher Satz benutzt die indirekte Rede korrekt?"
+        }
+      ]
+    },
+    {
+      "size": 2,
+      "avg_similarity": 0.908,
+      "members": [
+        {
+          "id": "AP_German_134",
+          "answer": "A",
+          "question": "Welches Wort ist ein Adverb?"
+        },
+        {
+          "id": "AP_German_112",
+          "answer": "D",
+          "question": "Welches Wort ist ein Adjektiv?"
+        }
+      ]
+    },
+    {
+      "size": 2,
+      "avg_similarity": 0.896,
+      "members": [
+        {
+          "id": "AP_German_53",
+          "answer": "D",
+          "question": "Welcher Relativsatz ist korrekt? Der Mann, ______ ich treffe, ist mein Bruder."
+        },
+        {
+          "id": "AP_German_118",
+          "answer": "C",
+          "question": "W\u00e4hlen Sie die korrekte Relativpronomenform f\u00fcr den Satz: 'Das ist der Mann, ___ ich gestern getroffen habe.'"
+        }
+      ]
+    },
+    {
+      "size": 2,
+      "avg_similarity": 0.894,
+      "members": [
+        {
+          "id": "AP_German_87",
+          "answer": "D",
+          "question": "Welcher Satz benutzt den Konjunktiv I?"
+        },
+        {
+          "id": "AP_German_51",
+          "answer": "A",
+          "question": "Er sagte, er ______ kommen. (Konjunktiv I)"
+        }
+      ]
+    },
+    {
+      "size": 2,
+      "avg_similarity": 0.893,
+      "members": [
+        {
+          "id": "AP_German_260",
+          "answer": "C",
+          "question": "Welches Wort ist ein Synonym f\u00fcr 'gl\u00fccklich'?"
+        },
+        {
+          "id": "AP_German_116",
+          "answer": "A",
+          "question": "Welches Wort ist ein Synonym f\u00fcr 'zufrieden'?"
+        }
+      ]
+    },
+    {
+      "size": 2,
+      "avg_similarity": 0.891,
+      "members": [
+        {
+          "id": "AP_German_25",
+          "answer": "C",
+          "question": "Was ist ein typisches deutsches Fr\u00fchst\u00fcck?"
+        },
+        {
+          "id": "AP_German_52",
+          "answer": "C",
+          "question": "Was ist eine typische deutsche Brotzeit?"
+        }
+      ]
+    },
+    {
+      "size": 2,
+      "avg_similarity": 0.882,
+      "members": [
+        {
+          "id": "AP_German_21",
+          "answer": "B",
+          "question": "Welcher Satz ist im Konjunktiv II?"
+        },
+        {
+          "id": "AP_German_99",
+          "answer": "C",
+          "question": "Welcher Satz ist im Konjunktiv II (Irrealis)?"
+        }
+      ]
+    },
+    {
+      "size": 2,
+      "avg_similarity": 0.869,
+      "members": [
+        {
+          "id": "AP_German_250",
+          "answer": "A",
+          "question": "Welche der folgenden Pr\u00e4positionen erfordert den Dativ, wenn sie eine Richtung angibt?"
+        },
+        {
+          "id": "AP_German_50",
+          "answer": "D",
+          "question": "Welche Pr\u00e4position verlangt den Dativ, wenn sie eine Richtung angibt?"
+        }
+      ]
+    }
+  ]
+}

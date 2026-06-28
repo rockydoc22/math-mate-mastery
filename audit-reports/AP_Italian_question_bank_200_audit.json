@@ -1,0 +1,1377 @@
+{
+  "bank": "src/data/AP_Italian_question_bank_200.json",
+  "total": 290,
+  "summary": {
+    "flagged": 36,
+    "errors": 4,
+    "clusters": 42,
+    "questions_in_clusters": 128
+  },
+  "ai_review_flagged": [
+    {
+      "id": "AP_Italian_69",
+      "verdict": "explanation_wrong",
+      "correct_answer": "D",
+      "issues": [
+        "The explanation incorrectly identifies 'Se avessi saputo' as the 'congiuntivo imperfetto'; it is actually the 'congiuntivo trapassato'."
+      ],
+      "suggested_distractor_fix": null,
+      "confidence": "high"
+    },
+    {
+      "id": "AP_Italian_229",
+      "verdict": "explanation_wrong",
+      "correct_answer": "D",
+      "issues": [
+        "The explanation claims 'dimenticarsi' requires 'di', but in Italian, 'dimenticarsi' can be used transitively (Mi sono dimenticato le chiavi) or intransitively reflexively (Mi sono dimenticato delle chiavi). Both are grammatically acceptable in standard Italian. However, some purists prefer the intransitive form, which makes the question technically pedantic or ambiguous depending on the strictness of the grammar source."
+      ],
+      "suggested_distractor_fix": null,
+      "confidence": "high"
+    },
+    {
+      "id": "AP_Italian_262",
+      "verdict": "answer_wrong",
+      "correct_answer": "B",
+      "issues": [
+        "The preposition 'a' is not the standard way to indicate time with days of the week in Italian; 'di' (habitual) or the definite article (habitual/specific) are the standard forms.",
+        "The explanation incorrectly suggests 'a luned\u00ec' is common for time indication, whereas it is primarily used in salutations (e.g., 'A luned\u00ec!'), not as a temporal complement."
+      ],
+      "suggested_distractor_fix": {
+        "letter": "D",
+        "replacement": "su"
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "AP_Italian_272",
+      "verdict": "distractor_weak",
+      "correct_answer": "D",
+      "issues": [
+        "Options A and B are identical ('bevo')"
+      ],
+      "suggested_distractor_fix": {
+        "letter": "B",
+        "replacement": "berr\u00f2"
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "AP_Italian_37",
+      "verdict": "multiple",
+      "correct_answer": "A",
+      "issues": [
+        "The marked answer D is incorrect; one does not say 'nascere da una citt\u00e0' in standard Italian to mean 'born in a city'.",
+        "Choice A (dove) and B (in cui) are both grammatically correct and interchangeable in this context.",
+        "The explanation is factually incorrect regarding Italian syntax."
+      ],
+      "suggested_distractor_fix": {
+        "letter": "B",
+        "replacement": "di cui"
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "AP_Italian_43",
+      "verdict": "multiple",
+      "correct_answer": "null",
+      "issues": [
+        "A, C, and D are all grammatically correct and contextually plausible.",
+        "Without additional context, 'dove' (where), 'quando' (when), and 'come' (how) are equally valid interrogative adverbs for an indirect question about sleeping."
+      ],
+      "suggested_distractor_fix": {
+        "letter": "B",
+        "replacement": "perch\u00e9"
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "AP_Italian_84",
+      "verdict": "answer_wrong",
+      "correct_answer": "null",
+      "issues": [
+        "In Italian, specific calendar days (like 'luned\u00ec prossimo') typically do not take a preposition to indicate when something happens; one simply says 'La riunione si terr\u00e0 luned\u00ec prossimo.'",
+        "Choice B ('a') is incorrect in this context; it is used for deadlines (entro) or greetings (a luned\u00ec!), but not as a temporal marker for a scheduled event.",
+        "None of the provided options (A, B, C, D) are grammatically standard for this sentence structure."
+      ],
+      "suggested_distractor_fix": {
+        "letter": "B",
+        "replacement": "\u00d8 (no preposition)"
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "AP_Italian_261",
+      "verdict": "explanation_wrong",
+      "correct_answer": "A",
+      "issues": [
+        "The explanation contains a factual error: it claims the plural maintains the '-a' ending, but then correctly identifies the plural as 'problemi' (ending in -i).",
+        "Duplicate options A and C."
+      ],
+      "suggested_distractor_fix": {
+        "letter": "C",
+        "replacement": "il problemi"
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "AP_Italian_223",
+      "verdict": "multiple",
+      "correct_answer": "A",
+      "issues": [
+        "Option D is redundant because the verb 'studiato' is already present in the prompt sentence.",
+        "Option A is the correct grammatical filler for the blank."
+      ],
+      "suggested_distractor_fix": {
+        "letter": "D",
+        "replacement": "abbia"
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "AP_Italian_212",
+      "verdict": "distractor_weak",
+      "correct_answer": "A",
+      "issues": [
+        "Choices A, B, C, and D are identical, making the question unanswerable as a multiple-choice exercise."
+      ],
+      "suggested_distractor_fix": {
+        "letter": "B",
+        "replacement": "arrivi (indicative)"
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "AP_Italian_42",
+      "verdict": "answer_wrong",
+      "correct_answer": "A",
+      "issues": [
+        "The marked answer 'D' creates a redundant and grammatically incorrect structure: 'Non c'\u00e8 nessuno che sia possa aiutarci'.",
+        "Choice A ('che') is the correct relative pronoun. The subjunctive mood would be applied to the verb 'potere' (che possa), which is already present in the stem.",
+        "The explanation incorrectly identifies a phrase containing an extra verb as a 'complete form' rather than a grammatical redundancy."
+      ],
+      "suggested_distractor_fix": {
+        "letter": "D",
+        "replacement": "cui"
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "AP_Italian_150",
+      "verdict": "explanation_wrong",
+      "correct_answer": "A",
+      "issues": [
+        "The explanation incorrectly identifies 'sia venuto' as the third person singular instead of the second person singular."
+      ],
+      "suggested_distractor_fix": null,
+      "confidence": "high"
+    },
+    {
+      "id": "AP_Italian_197",
+      "verdict": "explanation_wrong",
+      "correct_answer": "C",
+      "issues": [
+        "L'esplicazione definisce erroneamente 'avrei' come condizionale passato; 'avrei' \u00e8 il condizionale presente. Il condizionale passato richiederebbe un participio (es. avrei avuto)."
+      ],
+      "suggested_distractor_fix": null,
+      "confidence": "high"
+    },
+    {
+      "id": "AP_Italian_121",
+      "verdict": "multiple",
+      "correct_answer": "B",
+      "issues": [
+        "Choice D is identical to choice B"
+      ],
+      "suggested_distractor_fix": {
+        "letter": "D",
+        "replacement": "presterai"
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "AP_Italian_247",
+      "verdict": "distractor_weak",
+      "correct_answer": "D",
+      "issues": [
+        "Option D includes the phrase being defined within the definition itself ('avere a che fare con').",
+        "Option D is much longer and more descriptive than the other choices, making it a 'test-wise' giveaway."
+      ],
+      "suggested_distractor_fix": {
+        "letter": "D",
+        "replacement": "Avere rapporti o contatti con qualcuno o qualcosa"
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "AP_Italian_241",
+      "verdict": "distractor_weak",
+      "correct_answer": "C",
+      "issues": [
+        "Choice A and D are identical."
+      ],
+      "suggested_distractor_fix": {
+        "letter": "D",
+        "replacement": "facevano"
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "AP_Italian_13",
+      "verdict": "multiple",
+      "correct_answer": "null",
+      "issues": [
+        "Both A and D are grammatically correct and common in this context, though they convey slightly different nuances (good vs. great)."
+      ],
+      "suggested_distractor_fix": {
+        "letter": "A",
+        "replacement": "bene"
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "AP_Italian_31",
+      "verdict": "answer_wrong",
+      "correct_answer": "A",
+      "issues": [
+        "The marked answer D is incorrect.",
+        "The explanation is contradictory: it states 'mi dispiace' is followed by 'di' before an infinitive, which is exactly the case here ('poter'), yet it argues for 'per' or 'da'.",
+        "In standard Italian, 'dispiacersi di [infinito]' is the most common and grammatically correct construction. While 'per' is sometimes used colloquially, 'di' is the standard choice for this context."
+      ],
+      "suggested_distractor_fix": null,
+      "confidence": "high"
+    },
+    {
+      "id": "AP_Italian_269",
+      "verdict": "answer_wrong",
+      "correct_answer": "A",
+      "issues": [
+        "Factually incorrect. 'Molto' can absolutely function as a pronoun (e.g., 'Ne ho mangiati molti').",
+        "Choice A is the most accurate as they are interchangeable in most contexts, though 'tanto' can carry more emphasis.",
+        "Choice D is incorrect because both can modify verbs and adjectives."
+      ],
+      "suggested_distractor_fix": {
+        "letter": "C",
+        "replacement": "'Molto' non pu\u00f2 essere usato in frasi comparative di uguaglianza (tanto... quanto)."
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "AP_Italian_200",
+      "verdict": "multiple",
+      "correct_answer": "C",
+      "issues": [
+        "The term 'congiuntivo passato' refers specifically to the auxiliary at congiuntivo presente + past participle. The explanation describes the 'congiuntivo trapassato' instead."
+      ],
+      "suggested_distractor_fix": {
+        "letter": "D",
+        "replacement": "tu sia"
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "AP_Italian_75",
+      "verdict": "multiple",
+      "correct_answer": "A",
+      "issues": [
+        "Choices A, B, and C are identical, creating three identical correct answers. Choice D is grammatically incorrect in the context."
+      ],
+      "suggested_distractor_fix": {
+        "letter": "B",
+        "replacement": "abbia avuto"
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "AP_Italian_93",
+      "verdict": "answer_wrong",
+      "correct_answer": "null",
+      "issues": [
+        "The marked answer C (November 1st) is Ognissanti (All Saints' Day).",
+        "Il Giorno dei Morti is officially November 2nd, which is not provided as an option.",
+        "The explanation acknowledges November 2nd is the actual date but attempts to justify C anyway."
+      ],
+      "suggested_distractor_fix": {
+        "letter": "C",
+        "replacement": "2 Novembre"
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "AP_Italian_256",
+      "verdict": "explanation_wrong",
+      "correct_answer": "B",
+      "issues": [
+        "The explanation incorrectly labels this as a second-type conditional (present irreality); a sentence consisting of a pluperfect conditional in the consequence (avrei studiato) typically suggests a third-type conditional (past irreality), though 'avessi' remains the correct choice for the blank provided."
+      ],
+      "suggested_distractor_fix": null,
+      "confidence": "high"
+    },
+    {
+      "id": "AP_Italian_73",
+      "verdict": "distractor_weak",
+      "correct_answer": "A",
+      "issues": [
+        "Duplicate choices: A, B, and C are identical ('venissi')."
+      ],
+      "suggested_distractor_fix": {
+        "letter": "B",
+        "replacement": "venga"
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "AP_Italian_191",
+      "verdict": "answer_wrong",
+      "correct_answer": "C",
+      "issues": [
+        "The main clause verb 'ha continuato' is in the past (passato prossimo), which requires the imperfect subjunctive 'fosse' to maintain sequence of tenses for a past-time state.",
+        "Choice B 'sia' would only be correct if the main verb were in the present tense ('continua')."
+      ],
+      "suggested_distractor_fix": null,
+      "confidence": "high"
+    },
+    {
+      "id": "AP_Italian_260",
+      "verdict": "answer_wrong",
+      "correct_answer": "B",
+      "issues": [
+        "The use of 'nonostante' followed by a simple infinitive is grammatically incorrect in modern Italian; it requires either the subjunctive or 'pur' + gerund, or 'nonostante' + noun."
+      ],
+      "suggested_distractor_fix": {
+        "letter": "A",
+        "replacement": "fui"
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "AP_Italian_116",
+      "verdict": "answer_wrong",
+      "correct_answer": "null",
+      "issues": [
+        "The question is linguistically ambiguous and the marked answer is incorrect for the specific example provided.",
+        "In the sentence 'Ci vediamo ______ luned\u00ec prossimo', the standard Italian usage requires no preposition (zero preposition).",
+        "Preposition 'a' is used for closing formulas (e.g., 'A luned\u00ec!'), but not within a standard declarative sentence like the one provided.",
+        "Preposition 'di' is used for habitual actions (tempo determinato/ricorrente, e.g., 'di luned\u00ec vado in palestra'), which contradicts the requirement for 'luned\u00ec prossimo'."
+      ],
+      "suggested_distractor_fix": null,
+      "confidence": "high"
+    },
+    {
+      "id": "AP_Italian_126",
+      "verdict": "explanation_wrong",
+      "correct_answer": "A",
+      "issues": [
+        "The explanation identifies the sentence as a second-type hypothetical (present), but the apodosis 'avrei viaggiato' is conditional perfect, making this a third-type hypothetical (past irreality).",
+        "Choice A is the correct answer but it is the 'congiuntivo trapassato', not 'congiuntivo imperfetto' as stated in the question stem and explanation."
+      ],
+      "suggested_distractor_fix": null,
+      "confidence": "high"
+    },
+    {
+      "id": "AP_Italian_276",
+      "verdict": "multiple",
+      "correct_answer": "B",
+      "issues": [
+        "Choices B and D are identical strings representing the correct answer",
+        "Explanation contains a typo claiming B is identical to A when it is identical to D"
+      ],
+      "suggested_distractor_fix": {
+        "letter": "D",
+        "replacement": "arrivassi"
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "AP_Italian_173",
+      "verdict": "explanation_wrong",
+      "correct_answer": "D",
+      "issues": [
+        "The explanation focuses on 'motion towards' (moto a luogo), but the sentence uses the verb 'avere' (Hanno), implying 'avere a' (to have at/in) or a past participle is missing. However, if the intent is to say 'They were in Rome', the verb would be 'Sono stati a'. If 'Hanno' is correct, it likely implies a missing past participle like 'visitato', in which case no preposition is needed. In the context of standard testing where 'a' is the answer for 'in Rome', the explanation should clarify that 'a' indicates location (stato in luogo) as well as motion."
+      ],
+      "suggested_distractor_fix": null,
+      "confidence": "high"
+    },
+    {
+      "id": "AP_Italian_237",
+      "verdict": "explanation_wrong",
+      "correct_answer": "A",
+      "issues": [
+        "The explanation incorrectly identifies the sentence type as a 'periodo ipotetico della realt\u00e0' (reality/first conditional), whereas 'se + congiuntivo imperfetto' defines a 'periodo ipotetico dell'irrealt\u00e0 o possibilit\u00e0' (second conditional)."
+      ],
+      "suggested_distractor_fix": null,
+      "confidence": "high"
+    },
+    {
+      "id": "AP_Italian_102",
+      "verdict": "explanation_wrong",
+      "correct_answer": "D",
+      "issues": [
+        "The explanation identifies 'stia' as the third person singular, but in the context of the question 'tu', it is the second person singular."
+      ],
+      "suggested_distractor_fix": null,
+      "confidence": "high"
+    },
+    {
+      "id": "AP_Italian_39",
+      "verdict": "answer_wrong",
+      "correct_answer": "D",
+      "issues": [
+        "The verb 'scrivere' in this context requires the preposition 'a' (scrivere a qualcuno qualcosa) to connect to the recipient, or the relative pronoun must function as the direct object. However, 'ti' is already the indirect object (to you), making 'la lettera' the direct object. While 'che' is grammatically possible if 'la lettera' is the direct object, in standard Italian syntax for this specific construction, 'che' is often used, but 'a cui' or 'che' would depend on whether the letter is being written TO someone or ABOUT something. Actually, looking at the syntax: 'I wrote THE LETTER to you'. 'Che' is correct for 'The letter THAT I wrote to you'. However, if the intended meaning was 'The letter [about] which I wrote to you', it would change. Wait, 'scrivere qualcosa a qualcuno'. 'Qualcosa' (la lettera) is the direct object. Therefore 'che' is correct. I will re-examine. Actually, 'che' is perfectly functional as the direct object. The prompt marks 'A' as correct and the explanation is linguistically sound."
+      ],
+      "suggested_distractor_fix": null,
+      "confidence": "high"
+    },
+    {
+      "id": "AP_Italian_127",
+      "verdict": "answer_wrong",
+      "correct_answer": "A",
+      "issues": [
+        "The expression 'prendere partenza' is not standard Italian; 'fare partenza' is the idiomatic construction in this context."
+      ],
+      "suggested_distractor_fix": {
+        "letter": "D",
+        "replacement": "hanno andato"
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "AP_Italian_109",
+      "verdict": "explanation_wrong",
+      "correct_answer": "D",
+      "issues": [
+        "The explanation incorrectly identifies 'avr\u00f2' as 'futuro anteriore' (future perfect), while 'avr\u00f2' is actually 'futuro semplice' (simple future).",
+        "Choice D is the only grammatically logical choice allowed, but the prompt specifically asks for the 'futuro anteriore', which would be 'avr\u00e0 fatto' or similar, suggesting a mismatch between the prompt and the options."
+      ],
+      "suggested_distractor_fix": null,
+      "confidence": "high"
+    },
+    {
+      "id": "AP_Italian_67",
+      "verdict": "answer_wrong",
+      "correct_answer": "C",
+      "issues": [
+        "The marked answer B (essere) is grammatically incorrect. In Italian, 'nonostante' followed by an infinitive requires the preposition 'di' or the construction 'pur essendo', but 'nonostante' alone requires the subjunctive when followed by a verb.",
+        "Choice C (fossi) is the only grammatically correct option for the concessive clause.",
+        "The explanation is contradictory, stating B is correct while admitting C is better."
+      ],
+      "suggested_distractor_fix": null,
+      "confidence": "high"
+    }
+  ],
+  "ai_review_errors": [
+    {
+      "id": "AP_Italian_234",
+      "verdict": "error",
+      "error": "Extra data: line 2 column 1 (char 102)"
+    },
+    {
+      "id": "AP_Italian_249",
+      "verdict": "error",
+      "error": "Extra data: line 2 column 1 (char 102)"
+    },
+    {
+      "id": "AP_Italian_90",
+      "verdict": "error",
+      "error": "Extra data: line 2 column 1 (char 102)"
+    },
+    {
+      "id": "AP_Italian_88",
+      "verdict": "error",
+      "error": "Extra data: line 2 column 1 (char 102)"
+    }
+  ],
+  "concept_duplicate_clusters": [
+    {
+      "size": 14,
+      "avg_similarity": 0.845,
+      "members": [
+        {
+          "id": "AP_Italian_223",
+          "answer": "D",
+          "question": "Completa la frase con il congiuntivo trapassato: 'Se io _______ studiato di pi\u00f9, ora sarei laureato.'"
+        },
+        {
+          "id": "AP_Italian_21",
+          "answer": "A",
+          "question": "Se avessi studiato di pi\u00f9, ________."
+        },
+        {
+          "id": "AP_Italian_197",
+          "answer": "C",
+          "question": "Il condizionale passato di 'avere' con 'io' \u00e8:"
+        },
+        {
+          "id": "AP_Italian_1",
+          "answer": "A",
+          "question": "Completate la frase: Se io _______ pi\u00f9 tempo, viaggerei di pi\u00f9."
+        },
+        {
+          "id": "AP_Italian_274",
+          "answer": "C",
+          "question": "Quale cong. imperfetto \u00e8 corretto per 'avere'?"
+        },
+        {
+          "id": "AP_Italian_248",
+          "answer": "B",
+          "question": "Completa la frase con il condizionale passato: 'Se avessi studiato di pi\u00f9, __________ all'esame.'"
+        },
+        {
+          "id": "AP_Italian_176",
+          "answer": "A",
+          "question": "Se avessi studiato di pi\u00f9, ______ la lezione."
+        },
+        {
+          "id": "AP_Italian_256",
+          "answer": "B",
+          "question": "Completa la frase con il congiuntivo imperfetto: Se io ______ pi\u00f9 tempo, avrei studiato di pi\u00f9."
+        },
+        {
+          "id": "AP_Italian_60",
+          "answer": "D",
+          "question": "Completa la frase: Se io _______ pi\u00f9 tempo, viaggerei di pi\u00f9."
+        },
+        {
+          "id": "AP_Italian_160",
+          "answer": "A",
+          "question": "Se _______ tempo, andrei al mare."
+        },
+        {
+          "id": "AP_Italian_126",
+          "answer": "A",
+          "question": "Completa la frase con il congiuntivo imperfetto corretto: \"Se io _______ pi\u00f9 tempo, avrei viaggiato di pi\u00f9.\""
+        },
+        {
+          "id": "AP_Italian_295",
+          "answer": "D",
+          "question": "Completa la frase: Se avessi studiato di pi\u00f9, _______ l'esame."
+        },
+        {
+          "id": "AP_Italian_136",
+          "answer": "D",
+          "question": "Completa la frase con il congiuntivo trapassato: \"Se tu _______ preparato meglio, avresti superato l'esame.\""
+        },
+        {
+          "id": "AP_Italian_108",
+          "answer": "C",
+          "question": "Completa la frase con il congiuntivo imperfetto: Se io ______ pi\u00f9 tempo, avrei viaggiato di pi\u00f9."
+        }
+      ]
+    },
+    {
+      "size": 7,
+      "avg_similarity": 0.939,
+      "members": [
+        {
+          "id": "AP_Italian_100",
+          "answer": "D",
+          "question": "Cosa significa l'espressione idiomatica 'in bocca al lupo'? "
+        },
+        {
+          "id": "AP_Italian_165",
+          "answer": "D",
+          "question": "Quale di queste espressioni significa \"in bocca al lupo\"?"
+        },
+        {
+          "id": "AP_Italian_52",
+          "answer": "B",
+          "question": "L'espressione 'in bocca al lupo' significa:"
+        },
+        {
+          "id": "AP_Italian_281",
+          "answer": "D",
+          "question": "Qual \u00e8 il significato dell'espressione idiomatica 'in bocca al lupo'?"
+        },
+        {
+          "id": "AP_Italian_139",
+          "answer": "A",
+          "question": "Cosa significa il modo di dire 'in bocca al lupo'?"
+        },
+        {
+          "id": "AP_Italian_6",
+          "answer": "B",
+          "question": "'In bocca al lupo' significa:"
+        },
+        {
+          "id": "AP_Italian_204",
+          "answer": "A",
+          "question": "Qual \u00e8 il significato di 'in bocca al lupo'?"
+        }
+      ]
+    },
+    {
+      "size": 7,
+      "avg_similarity": 0.859,
+      "members": [
+        {
+          "id": "AP_Italian_149",
+          "answer": "A",
+          "question": "Sebbene _______ molto stanco, continu\u00f2 a lavorare."
+        },
+        {
+          "id": "AP_Italian_286",
+          "answer": "D",
+          "question": "Completa la frase con il congiuntivo: Sebbene _______ stanco, ho finito il lavoro."
+        },
+        {
+          "id": "AP_Italian_30",
+          "answer": "B",
+          "question": "Anche se ________ stanco, sono uscito."
+        },
+        {
+          "id": "AP_Italian_74",
+          "answer": "C",
+          "question": "Nonostante ______ molto stanco, ho finito di lavorare."
+        },
+        {
+          "id": "AP_Italian_191",
+          "answer": "B",
+          "question": "Nonostante ______ stanco, ha continuato a lavorare."
+        },
+        {
+          "id": "AP_Italian_260",
+          "answer": "A",
+          "question": "Completa la frase: 'Nonostante ______ stanco, sono uscito'."
+        },
+        {
+          "id": "AP_Italian_67",
+          "answer": "B",
+          "question": "Completa la frase: Nonostante _______ stanco, ho continuato a lavorare."
+        }
+      ]
+    },
+    {
+      "size": 5,
+      "avg_similarity": 0.882,
+      "members": [
+        {
+          "id": "AP_Italian_151",
+          "answer": "A",
+          "question": "Abbiamo comprato un regalo _______ Maria."
+        },
+        {
+          "id": "AP_Italian_83",
+          "answer": "D",
+          "question": "Ho comprato un regalo ______ mia madre."
+        },
+        {
+          "id": "AP_Italian_217",
+          "answer": "D",
+          "question": "Scegli la preposizione corretta: 'Ho comprato questo regalo _______ te.'"
+        },
+        {
+          "id": "AP_Italian_293",
+          "answer": "D",
+          "question": "Completa la frase: Ho comprato questo libro _______ te."
+        },
+        {
+          "id": "AP_Italian_190",
+          "answer": "B",
+          "question": "Hanno comprato un regalo ______ Maria."
+        }
+      ]
+    },
+    {
+      "size": 4,
+      "avg_similarity": 0.934,
+      "members": [
+        {
+          "id": "AP_Italian_98",
+          "answer": "C",
+          "question": "Quale preposizione si usa comunemente per indicare il luogo di provenienza?  Vengo ______ Roma."
+        },
+        {
+          "id": "AP_Italian_48",
+          "answer": "C",
+          "question": "Quale preposizione \u00e8 pi\u00f9 appropriata per indicare il luogo di provenienza?"
+        },
+        {
+          "id": "AP_Italian_128",
+          "answer": "A",
+          "question": "Quale preposizione si usa per indicare provenienza o origine?"
+        },
+        {
+          "id": "AP_Italian_232",
+          "answer": "A",
+          "question": "Quale preposizione si usa generalmente per indicare il luogo di origine?"
+        }
+      ]
+    },
+    {
+      "size": 4,
+      "avg_similarity": 0.922,
+      "members": [
+        {
+          "id": "AP_Italian_131",
+          "answer": "C",
+          "question": "Scegli la forma corretta del congiuntivo presente: \"Non credo che lui _______ la verit\u00e0.\""
+        },
+        {
+          "id": "AP_Italian_201",
+          "answer": "A",
+          "question": "Quale verbo richiede il congiuntivo in questa frase: 'Non credo che tu _______ la verit\u00e0.'"
+        },
+        {
+          "id": "AP_Italian_54",
+          "answer": "C",
+          "question": "Completa la frase: Non credo che lui _______ la verit\u00e0."
+        },
+        {
+          "id": "AP_Italian_114",
+          "answer": "C",
+          "question": "Completa la frase con il congiuntivo presente: Credo che lui ______ la verit\u00e0."
+        }
+      ]
+    },
+    {
+      "size": 4,
+      "avg_similarity": 0.907,
+      "members": [
+        {
+          "id": "AP_Italian_141",
+          "answer": "A",
+          "question": "Scegli la forma corretta del congiuntivo presente: \"Spero che tu _______ bene.\""
+        },
+        {
+          "id": "AP_Italian_38",
+          "answer": "A",
+          "question": "Spero che tu ________ bene."
+        },
+        {
+          "id": "AP_Italian_195",
+          "answer": "B",
+          "question": "Spero ______ tu stia bene."
+        },
+        {
+          "id": "AP_Italian_102",
+          "answer": "D",
+          "question": "Completa la frase con il congiuntivo presente: Spero che tu ______ bene."
+        }
+      ]
+    },
+    {
+      "size": 4,
+      "avg_similarity": 0.893,
+      "members": [
+        {
+          "id": "AP_Italian_277",
+          "answer": "A",
+          "question": "Quale preposizione \u00e8 usata comunemente per indicare il possesso o l'appartenenza?"
+        },
+        {
+          "id": "AP_Italian_104",
+          "answer": "B",
+          "question": "Quale preposizione si usa per indicare il possesso? Questo libro \u00e8 ______ Marco."
+        },
+        {
+          "id": "AP_Italian_266",
+          "answer": "D",
+          "question": "Quale preposizione si usa per indicare il possesso con 'essere'?"
+        },
+        {
+          "id": "AP_Italian_246",
+          "answer": "A",
+          "question": "Quale preposizione si usa per indicare il possesso o l'appartenenza? '\u00c8 il libro __________ Marco.'"
+        }
+      ]
+    },
+    {
+      "size": 4,
+      "avg_similarity": 0.88,
+      "members": [
+        {
+          "id": "AP_Italian_202",
+          "answer": "C",
+          "question": "Completa la frase con il passato prossimo corretto: 'Ieri, noi _______ al cinema.'"
+        },
+        {
+          "id": "AP_Italian_50",
+          "answer": "B",
+          "question": "Completa la frase: Ieri sera, noi _______ al cinema."
+        },
+        {
+          "id": "AP_Italian_5",
+          "answer": "D",
+          "question": "Le ragazze _______ al cinema ieri sera."
+        },
+        {
+          "id": "AP_Italian_280",
+          "answer": "B",
+          "question": "Completa la frase: Ieri sera, noi _______ al ristorante."
+        }
+      ]
+    },
+    {
+      "size": 3,
+      "avg_similarity": 0.965,
+      "members": [
+        {
+          "id": "AP_Italian_140",
+          "answer": "C",
+          "question": "Quale citt\u00e0 \u00e8 famosa per il suo carnevale?"
+        },
+        {
+          "id": "AP_Italian_66",
+          "answer": "C",
+          "question": "Quale citt\u00e0 italiana \u00e8 famosa per il suo carnevale?"
+        },
+        {
+          "id": "AP_Italian_90",
+          "answer": "C",
+          "question": "Quale di queste citt\u00e0 \u00e8 famosa per il Carnevale?"
+        }
+      ]
+    },
+    {
+      "size": 3,
+      "avg_similarity": 0.939,
+      "members": [
+        {
+          "id": "AP_Italian_271",
+          "answer": "B",
+          "question": "Indovina il modo di dire: 'Essere al verde' significa..."
+        },
+        {
+          "id": "AP_Italian_134",
+          "answer": "B",
+          "question": "Cosa significa l'espressione idiomatica 'essere al verde'?"
+        },
+        {
+          "id": "AP_Italian_218",
+          "answer": "C",
+          "question": "Qual \u00e8 il significato di 'essere al verde'?"
+        }
+      ]
+    },
+    {
+      "size": 3,
+      "avg_similarity": 0.938,
+      "members": [
+        {
+          "id": "AP_Italian_243",
+          "answer": "D",
+          "question": "Qual \u00e8 il significato di 'rompere il ghiaccio'?"
+        },
+        {
+          "id": "AP_Italian_129",
+          "answer": "B",
+          "question": "Cosa significa l'espressione idiomatica 'rompere il ghiaccio'?"
+        },
+        {
+          "id": "AP_Italian_89",
+          "answer": "B",
+          "question": "Cosa significa l'espressione 'rompere il ghiaccio'?"
+        }
+      ]
+    },
+    {
+      "size": 3,
+      "avg_similarity": 0.924,
+      "members": [
+        {
+          "id": "AP_Italian_199",
+          "answer": "C",
+          "question": "Quale preposizione si usa per indicare il mezzo di trasporto?"
+        },
+        {
+          "id": "AP_Italian_292",
+          "answer": "B",
+          "question": "Quale preposizione si usa per indicare il mezzo o lo strumento?"
+        },
+        {
+          "id": "AP_Italian_63",
+          "answer": "D",
+          "question": "Quale preposizione \u00e8 usata per indicare il mezzo o il modo?"
+        }
+      ]
+    },
+    {
+      "size": 3,
+      "avg_similarity": 0.887,
+      "members": [
+        {
+          "id": "AP_Italian_61",
+          "answer": "B",
+          "question": "Quale forma \u00e8 il congiuntivo imperfetto del verbo 'essere' per la prima persona singolare?"
+        },
+        {
+          "id": "AP_Italian_200",
+          "answer": "D",
+          "question": "Il congiuntivo passato di 'essere' con 'tu' \u00e8:"
+        },
+        {
+          "id": "AP_Italian_172",
+          "answer": "B",
+          "question": "Il verbo 'essere' al congiuntivo imperfetto, terza persona singolare, \u00e8:"
+        }
+      ]
+    },
+    {
+      "size": 3,
+      "avg_similarity": 0.875,
+      "members": [
+        {
+          "id": "AP_Italian_122",
+          "answer": "C",
+          "question": "Completa la frase con il passato prossimo corretto: \"Ieri sera, noi _______ una pizza deliziosa.\""
+        },
+        {
+          "id": "AP_Italian_279",
+          "answer": "C",
+          "question": "Quale verbo \u00e8 al passato prossimo?"
+        },
+        {
+          "id": "AP_Italian_235",
+          "answer": "B",
+          "question": "Quale verbo al passato prossimo \u00e8 corretto in questa frase: 'Ieri sera __________ una pizza deliziosa.'"
+        }
+      ]
+    },
+    {
+      "size": 3,
+      "avg_similarity": 0.858,
+      "members": [
+        {
+          "id": "AP_Italian_69",
+          "answer": "D",
+          "question": "Completa la frase: Se avessi saputo che venivi, ti _______ un regalo."
+        },
+        {
+          "id": "AP_Italian_71",
+          "answer": "B",
+          "question": "Se avessi saputo che saresti venuto, ti avrei preparato una torta. Quale tempo verbale \u00e8 usato nella prima clausola?"
+        },
+        {
+          "id": "AP_Italian_227",
+          "answer": "B",
+          "question": "Completa la frase: Se avessi saputo che saresti venuto, ti __________ una torta."
+        }
+      ]
+    },
+    {
+      "size": 3,
+      "avg_similarity": 0.857,
+      "members": [
+        {
+          "id": "AP_Italian_212",
+          "answer": "A",
+          "question": "Completa la frase con il congiuntivo presente: 'Spero che tu _______ presto.'"
+        },
+        {
+          "id": "AP_Italian_282",
+          "answer": "C",
+          "question": "Completa la frase con il congiuntivo: Non sono sicuro che il treno _______ in orario."
+        },
+        {
+          "id": "AP_Italian_276",
+          "answer": "D",
+          "question": "Completa la frase: Spero che tu _______ presto a casa."
+        }
+      ]
+    },
+    {
+      "size": 3,
+      "avg_similarity": 0.847,
+      "members": [
+        {
+          "id": "AP_Italian_262",
+          "answer": "D",
+          "question": "Quale preposizione si usa per indicare il tempo con i giorni della settimana?"
+        },
+        {
+          "id": "AP_Italian_84",
+          "answer": "B",
+          "question": "La riunione si terr\u00e0 ______ luned\u00ec prossimo."
+        },
+        {
+          "id": "AP_Italian_116",
+          "answer": "B",
+          "question": "Quale preposizione si usa per indicare il tempo indeterminato (es. giorni della settimana)?  Ci vediamo ______ luned\u00ec prossimo."
+        }
+      ]
+    },
+    {
+      "size": 2,
+      "avg_similarity": 0.976,
+      "members": [
+        {
+          "id": "AP_Italian_210",
+          "answer": "B",
+          "question": "Qual \u00e8 il significato di 'fare la scarpetta'?"
+        },
+        {
+          "id": "AP_Italian_167",
+          "answer": "B",
+          "question": "Che cosa significa l'espressione \"fare la scarpetta\"?"
+        }
+      ]
+    },
+    {
+      "size": 2,
+      "avg_similarity": 0.966,
+      "members": [
+        {
+          "id": "AP_Italian_143",
+          "answer": "C",
+          "question": "Quale preposizione si usa per indicare il luogo in cui ci si trova?"
+        },
+        {
+          "id": "AP_Italian_287",
+          "answer": "D",
+          "question": "Quale preposizione si usa per indicare il luogo dove ci si trova o si va?"
+        }
+      ]
+    },
+    {
+      "size": 2,
+      "avg_similarity": 0.957,
+      "members": [
+        {
+          "id": "AP_Italian_118",
+          "answer": "B",
+          "question": "Cosa significa l'espressione idiomatica 'avere la testa fra le nuvole'? "
+        },
+        {
+          "id": "AP_Italian_88",
+          "answer": "D",
+          "question": "L'espressione 'avere la testa tra le nuvole' significa:"
+        }
+      ]
+    },
+    {
+      "size": 2,
+      "avg_similarity": 0.946,
+      "members": [
+        {
+          "id": "AP_Italian_214",
+          "answer": "B",
+          "question": "Qual \u00e8 il significato di 'non vedere l'ora'?"
+        },
+        {
+          "id": "AP_Italian_65",
+          "answer": "B",
+          "question": "L'espressione 'non vedere l'ora' significa:"
+        }
+      ]
+    },
+    {
+      "size": 2,
+      "avg_similarity": 0.944,
+      "members": [
+        {
+          "id": "AP_Italian_205",
+          "answer": "A",
+          "question": "Completa la frase con il congiuntivo imperfetto: 'Se tu _______ pi\u00f9 attento, non avresti fatto quell'errore.'"
+        },
+        {
+          "id": "AP_Italian_32",
+          "answer": "D",
+          "question": "Se tu ________ pi\u00f9 attento, non avresti fatto questo errore."
+        }
+      ]
+    },
+    {
+      "size": 2,
+      "avg_similarity": 0.939,
+      "members": [
+        {
+          "id": "AP_Italian_290",
+          "answer": "D",
+          "question": "Significato dell'espressione 'avere a che fare con'."
+        },
+        {
+          "id": "AP_Italian_247",
+          "answer": "D",
+          "question": "Qual \u00e8 il significato di 'avere a che fare con qualcuno/qualcosa'?"
+        }
+      ]
+    },
+    {
+      "size": 2,
+      "avg_similarity": 0.934,
+      "members": [
+        {
+          "id": "AP_Italian_238",
+          "answer": "D",
+          "question": "Quale preposizione \u00e8 pi\u00f9 adatta per indicare il mezzo di trasporto? 'Andiamo a Milano __________ treno.'"
+        },
+        {
+          "id": "AP_Italian_110",
+          "answer": "C",
+          "question": "Quale preposizione si usa per indicare il mezzo di trasporto? Viaggio ______ treno."
+        }
+      ]
+    },
+    {
+      "size": 2,
+      "avg_similarity": 0.931,
+      "members": [
+        {
+          "id": "AP_Italian_250",
+          "answer": "C",
+          "question": "Quale delle seguenti forme verbali \u00e8 corretta nel congiuntivo presente?"
+        },
+        {
+          "id": "AP_Italian_46",
+          "answer": "C",
+          "question": "Quale delle seguenti forme verbali \u00e8 nel congiuntivo presente?"
+        }
+      ]
+    },
+    {
+      "size": 2,
+      "avg_similarity": 0.931,
+      "members": [
+        {
+          "id": "AP_Italian_254",
+          "answer": "D",
+          "question": "Indovina il modo di dire: 'Avere fretta' significa..."
+        },
+        {
+          "id": "AP_Italian_58",
+          "answer": "C",
+          "question": "L'espressione 'avere fretta' significa:"
+        }
+      ]
+    },
+    {
+      "size": 2,
+      "avg_similarity": 0.907,
+      "members": [
+        {
+          "id": "AP_Italian_125",
+          "answer": "C",
+          "question": "In quale citt\u00e0 italiana si trova il Colosseo?"
+        },
+        {
+          "id": "AP_Italian_53",
+          "answer": "C",
+          "question": "Quale citt\u00e0 \u00e8 famosa per il Colosseo?"
+        }
+      ]
+    },
+    {
+      "size": 2,
+      "avg_similarity": 0.899,
+      "members": [
+        {
+          "id": "AP_Italian_203",
+          "answer": "A",
+          "question": "Scegli la preposizione corretta: 'Vado _______ Roma questo fine settimana.'"
+        },
+        {
+          "id": "AP_Italian_153",
+          "answer": "A",
+          "question": "Vado _______ Roma domani."
+        }
+      ]
+    },
+    {
+      "size": 2,
+      "avg_similarity": 0.899,
+      "members": [
+        {
+          "id": "AP_Italian_265",
+          "answer": "A",
+          "question": "Quale cong. presente \u00e8 corretto per 'sapere'?"
+        },
+        {
+          "id": "AP_Italian_187",
+          "answer": "B",
+          "question": "Il congiuntivo presente di 'sapere' con 'egli' \u00e8:"
+        }
+      ]
+    },
+    {
+      "size": 2,
+      "avg_similarity": 0.893,
+      "members": [
+        {
+          "id": "AP_Italian_137",
+          "answer": "B",
+          "question": "Quale verbo ausiliare si usa con 'partire' nel passato prossimo?"
+        },
+        {
+          "id": "AP_Italian_68",
+          "answer": "B",
+          "question": "Quale verbo ausiliare si usa solitamente con il verbo 'andare' nel passato prossimo?"
+        }
+      ]
+    },
+    {
+      "size": 2,
+      "avg_similarity": 0.88,
+      "members": [
+        {
+          "id": "AP_Italian_22",
+          "answer": "C",
+          "question": "Non credo che lui ________ cos\u00ec tardi."
+        },
+        {
+          "id": "AP_Italian_120",
+          "answer": "B",
+          "question": "Completa la frase con il congiuntivo passato: Non penso che lui ______ arrivato in ritardo."
+        }
+      ]
+    },
+    {
+      "size": 2,
+      "avg_similarity": 0.878,
+      "members": [
+        {
+          "id": "AP_Italian_7",
+          "answer": "D",
+          "question": "Il libro _______ sto leggendo \u00e8 molto interessante."
+        },
+        {
+          "id": "AP_Italian_27",
+          "answer": "A",
+          "question": "Il libro ________ sul tavolo \u00e8 mio."
+        }
+      ]
+    },
+    {
+      "size": 2,
+      "avg_similarity": 0.875,
+      "members": [
+        {
+          "id": "AP_Italian_154",
+          "answer": "A",
+          "question": "Ho bisogno _______ un caff\u00e8."
+        },
+        {
+          "id": "AP_Italian_85",
+          "answer": "A",
+          "question": "Ho bisogno ______ aiuto."
+        }
+      ]
+    },
+    {
+      "size": 2,
+      "avg_similarity": 0.872,
+      "members": [
+        {
+          "id": "AP_Italian_150",
+          "answer": "A",
+          "question": "Mi dispiace che tu non _______ a cena ieri sera."
+        },
+        {
+          "id": "AP_Italian_75",
+          "answer": "A",
+          "question": "Mi dispiace che tu non ______ potuto partecipare alla festa."
+        }
+      ]
+    },
+    {
+      "size": 2,
+      "avg_similarity": 0.869,
+      "members": [
+        {
+          "id": "AP_Italian_183",
+          "answer": "B",
+          "question": "Hanno deciso ______ partire domani."
+        },
+        {
+          "id": "AP_Italian_44",
+          "answer": "A",
+          "question": "Abbiamo deciso ________ andare al mare."
+        }
+      ]
+    },
+    {
+      "size": 2,
+      "avg_similarity": 0.868,
+      "members": [
+        {
+          "id": "AP_Italian_208",
+          "answer": "C",
+          "question": "A quale regione italiana \u00e8 associata la cucina della pizza Margherita?"
+        },
+        {
+          "id": "AP_Italian_59",
+          "answer": "C",
+          "question": "Quale regione italiana \u00e8 famosa per la sua pizza?"
+        }
+      ]
+    },
+    {
+      "size": 2,
+      "avg_similarity": 0.863,
+      "members": [
+        {
+          "id": "AP_Italian_275",
+          "answer": "C",
+          "question": "Quale congiunzione \u00e8 pi\u00f9 appropriata per esprimere un desiderio o un'emozione, richiedendo l'uso del congiuntivo?"
+        },
+        {
+          "id": "AP_Italian_171",
+          "answer": "A",
+          "question": "Quale congiunzione introduce una proposizione finale al congiuntivo?"
+        }
+      ]
+    },
+    {
+      "size": 2,
+      "avg_similarity": 0.862,
+      "members": [
+        {
+          "id": "AP_Italian_24",
+          "answer": "D",
+          "question": "Preferirei andare al cinema ________ stare a casa."
+        },
+        {
+          "id": "AP_Italian_174",
+          "answer": "A",
+          "question": "Preferisco leggere ______ guardare la televisione."
+        }
+      ]
+    },
+    {
+      "size": 2,
+      "avg_similarity": 0.862,
+      "members": [
+        {
+          "id": "AP_Italian_107",
+          "answer": "C",
+          "question": "Quale famoso pittore italiano \u00e8 noto per la creazione della Gioconda?"
+        },
+        {
+          "id": "AP_Italian_135",
+          "answer": "D",
+          "question": "Quale famoso pittore italiano \u00e8 associato all'arte rinascimentale e ha dipinto la Gioconda?"
+        }
+      ]
+    },
+    {
+      "size": 2,
+      "avg_similarity": 0.861,
+      "members": [
+        {
+          "id": "AP_Italian_82",
+          "answer": "A",
+          "question": "Il libro ______ cui ti ho parlato \u00e8 molto interessante."
+        },
+        {
+          "id": "AP_Italian_29",
+          "answer": "B",
+          "question": "L'idea ________ mi ha parlato era molto interessante."
+        }
+      ]
+    },
+    {
+      "size": 2,
+      "avg_similarity": 0.861,
+      "members": [
+        {
+          "id": "AP_Italian_25",
+          "answer": "C",
+          "question": "L'anno scorso, noi ________ a Roma per le vacanze."
+        },
+        {
+          "id": "AP_Italian_157",
+          "answer": "A",
+          "question": "Quando _______ (noi) in Italia l'anno scorso?"
+        }
+      ]
+    }
+  ]
+}

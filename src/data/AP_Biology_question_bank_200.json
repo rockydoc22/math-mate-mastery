@@ -244,7 +244,7 @@
     },
     "answer": "A",
     "difficulty": 8,
-    "explanation": "p = 0.8, q = 0.2. Heterozygous frequency = 2pq = 2(0.8)(0.2) = 0.32. Number = 0.32 × 500 = 160."
+    "explanation": "p = 0.8, q = 0.2. Heterozygous frequency = 2pq = 2(0.8)(0.2) = 0.32. Number = 0.32 \u00d7 500 = 160."
   },
   {
     "id": "AP_Biology_197",
@@ -263,10 +263,10 @@
     "id": "AP_Biology_13",
     "question": "Which of the following correctly pairs a biome with its characteristic feature?",
     "choices": {
-      "A": "Tropical rainforest — high biodiversity and stratified canopy layers",
-      "B": "Tundra — dense deciduous forests with rich soil",
-      "C": "Desert — high annual precipitation and low evaporation",
-      "D": "Taiga — broadleaf evergreen trees dominant"
+      "A": "Tropical rainforest \u2014 high biodiversity and stratified canopy layers",
+      "B": "Tundra \u2014 dense deciduous forests with rich soil",
+      "C": "Desert \u2014 high annual precipitation and low evaporation",
+      "D": "Taiga \u2014 broadleaf evergreen trees dominant"
     },
     "answer": "A",
     "difficulty": 6,
@@ -322,7 +322,7 @@
     },
     "answer": "A",
     "difficulty": 9,
-    "explanation": "With 4 possible bases at each position, a 6-bp site occurs on average every 4⁶ = 4,096 bp."
+    "explanation": "With 4 possible bases at each position, a 6-bp site occurs on average every 4\u2076 = 4,096 bp."
   },
   {
     "id": "AP_Biology_167",
@@ -377,19 +377,6 @@
     "explanation": "Gap junctions are protein-lined channels that connect the cytoplasm of neighboring cells, allowing for the passage of ions and small molecules, thus enabling rapid communication."
   },
   {
-    "id": "AP_Biology_157",
-    "question": "During mitosis, at which phase do sister chromatids separate and move to opposite poles of the cell?",
-    "choices": {
-      "A": "Anaphase",
-      "B": "Metaphase",
-      "C": "Prophase",
-      "D": "Telophase"
-    },
-    "answer": "A",
-    "difficulty": 4,
-    "explanation": "In anaphase, the centromeres that hold sister chromatids together break down, and the chromatids are pulled apart by the spindle fibers towards opposite poles of the cell."
-  },
-  {
     "id": "AP_Biology_109",
     "question": "A scientist observes that a population of insects living in a tropical environment has evolved brightly colored wings, making them more conspicuous to predators. However, the population size remains stable. Which of the following is the most likely explanation for this observation?",
     "choices": {
@@ -442,19 +429,6 @@
     "explanation": "Enzymes are proteins with specific shapes. While increasing temperature generally increases kinetic energy and collision frequency (leading to higher reaction rates), excessively high temperatures can disrupt the weak bonds maintaining the enzyme's tertiary structure, causing denaturation and loss of function."
   },
   {
-    "id": "AP_Biology_41",
-    "question": "Which of the following best describes the role of tRNA during translation?",
-    "choices": {
-      "A": "It carries the genetic code from DNA to the ribosome.",
-      "B": "It binds to a specific amino acid and carries it to the ribosome.",
-      "C": "It catalyzes the formation of peptide bonds between amino acids.",
-      "D": "It helps unwind the DNA double helix during transcription."
-    },
-    "answer": "B",
-    "difficulty": 4,
-    "explanation": "Transfer RNA (tRNA) molecules have an anticodon that matches a specific codon on the mRNA and are attached to the corresponding amino acid. They deliver these amino acids to the ribosome for protein synthesis. mRNA carries the code, rRNA is part of the ribosome and catalyzes peptide bonds, and helicase unwinds DNA."
-  },
-  {
     "id": "AP_Biology_31",
     "question": "Consider an ecosystem where a new invasive predator is introduced. Which of the following is the most likely immediate consequence for the native prey populations?",
     "choices": {
@@ -465,7 +439,7 @@
     },
     "answer": "B",
     "difficulty": 4,
-    "explanation": "The most immediate and direct consequence of introducing a novel predator to native prey is increased mortality — prey populations decline because they lack evolved defenses against an unfamiliar predator. This is answer B. While behavioral changes (D) may also occur quickly, behavior is a response to the threat, not the population-level consequence. Answer A is incorrect — reduced competition is not the immediate effect of predator introduction. Answer C (increased genetic diversity) could occur over many generations through natural selection, but is not an immediate outcome."
+    "explanation": "The most immediate and direct consequence of introducing a novel predator to native prey is increased mortality \u2014 prey populations decline because they lack evolved defenses against an unfamiliar predator. This is answer B. While behavioral changes (D) may also occur quickly, behavior is a response to the threat, not the population-level consequence. Answer A is incorrect \u2014 reduced competition is not the immediate effect of predator introduction. Answer C (increased genetic diversity) could occur over many generations through natural selection, but is not an immediate outcome."
   },
   {
     "id": "AP_Biology_21",
@@ -498,13 +472,13 @@
     "question": "Which statement accurately describes a key difference between mitosis and meiosis?",
     "choices": {
       "A": "Mitosis produces haploid cells, while meiosis produces diploid cells.",
-      "B": "Mitosis involves one cell division, while meiosis involves two.",
+      "B": "Mitosis occurs only in prokaryotes, while meiosis occurs only in eukaryotes.",
       "C": "Homologous chromosomes pair up during mitosis, but not during meiosis.",
       "D": "Mitosis results in genetically identical daughter cells, while meiosis results in genetically diverse daughter cells."
     },
     "answer": "D",
     "difficulty": 5,
-    "explanation": "Mitosis produces two genetically identical diploid daughter cells from one diploid parent cell — used for growth, repair, and asexual reproduction. Meiosis produces four genetically unique haploid daughter cells from one diploid parent cell — used for sexual reproduction. The genetic diversity in meiosis arises from crossing over and independent assortment. Option A is incorrect (mitosis produces diploid, not haploid cells). Option B is partially true but incomplete — the number of divisions is a mechanistic detail, not the key functional difference. Option C is incorrect — homologous chromosomes pair only in meiosis I, not in mitosis. Option D is the most complete and accurate statement of the fundamental difference."
+    "explanation": "Mitosis produces two genetically identical diploid daughter cells from one diploid parent cell, used for growth and repair. Meiosis produces four genetically unique haploid daughter cells via crossing over and independent assortment, generating gametes. Answer D captures both the chromosome-number reduction and the genetic-variation outcome. B is false \u2014 both processes occur in eukaryotes (prokaryotes use binary fission, not mitosis). A confuses the products. C reverses the cell types involved."
   },
   {
     "id": "AP_Biology_181",
@@ -738,7 +712,7 @@
     },
     "answer": "A",
     "difficulty": 7,
-    "explanation": "Second messengers like cAMP amplify signals through a cascade: one activated receptor → many cAMP molecules → many activated kinases → large cellular response."
+    "explanation": "Second messengers like cAMP amplify signals through a cascade: one activated receptor \u2192 many cAMP molecules \u2192 many activated kinases \u2192 large cellular response."
   },
   {
     "id": "AP_Biology_260",
@@ -804,19 +778,6 @@
     "answer": "B",
     "difficulty": 5,
     "explanation": "A larger rabbit population provides more food for the foxes. This increased availability of resources allows the fox population to grow, assuming other factors are not limiting."
-  },
-  {
-    "id": "AP_Biology_188",
-    "question": "Which of the following best describes the role of tRNA during protein synthesis?",
-    "choices": {
-      "A": "It carries amino acids to the ribosome and matches them to the mRNA codon.",
-      "B": "It serves as the template for protein construction.",
-      "C": "It catalyzes the formation of peptide bonds between amino acids.",
-      "D": "It unwinds the DNA double helix before transcription."
-    },
-    "answer": "A",
-    "difficulty": 4,
-    "explanation": "Transfer RNA (tRNA) molecules have anticodons that are complementary to mRNA codons and carry the corresponding amino acids to the ribosome for incorporation into the growing polypeptide chain."
   },
   {
     "id": "AP_Biology_33",
@@ -1076,7 +1037,7 @@
     },
     "answer": "D",
     "difficulty": 8,
-    "explanation": "p = freq(D) = 0.49 + 0.42/2 = 0.7. q = 0.3. Expected: p² = 0.49, 2pq = 0.42, q² = 0.09. These match the observed frequencies."
+    "explanation": "p = freq(D) = 0.49 + 0.42/2 = 0.7. q = 0.3. Expected: p\u00b2 = 0.49, 2pq = 0.42, q\u00b2 = 0.09. These match the observed frequencies."
   },
   {
     "id": "AP_Biology_228",
@@ -1154,7 +1115,7 @@
     },
     "answer": "B",
     "difficulty": 6,
-    "explanation": "The cylinder in Solution X gained mass because water moved into it — the solution is hypotonic (lower solute concentration) relative to the potato. The cylinder in Solution Y lost mass because water moved out — the solution is hypertonic (higher solute concentration) relative to the potato. This is a classic osmosis demonstration."
+    "explanation": "The cylinder in Solution X gained mass because water moved into it \u2014 the solution is hypotonic (lower solute concentration) relative to the potato. The cylinder in Solution Y lost mass because water moved out \u2014 the solution is hypertonic (higher solute concentration) relative to the potato. This is a classic osmosis demonstration."
   },
   {
     "id": "AP_Biology_286",
@@ -1466,7 +1427,7 @@
     },
     "answer": "A",
     "difficulty": 8,
-    "explanation": "Auxin demonstrates this exact behavior—the same concentration promotes stem elongation but inhibits root growth, illustrating tissue-specific sensitivity thresholds."
+    "explanation": "Auxin demonstrates this exact behavior\u2014the same concentration promotes stem elongation but inhibits root growth, illustrating tissue-specific sensitivity thresholds."
   },
   {
     "id": "AP_Biology_239",
@@ -1560,19 +1521,6 @@
     "explanation": "A hypotonic solution has a lower solute concentration (and thus higher water potential) than the cell's cytoplasm. Water will move by osmosis from the hypotonic solution into the cell, causing it to swell. In animal cells, this can lead to lysis; in plant cells, the cell wall prevents bursting."
   },
   {
-    "id": "AP_Biology_82",
-    "question": "In an ecosystem, decomposers play a crucial role by:",
-    "choices": {
-      "A": "Producing organic matter from inorganic substances.",
-      "B": "Transferring energy to primary consumers.",
-      "C": "Controlling the population size of top predators.",
-      "D": "Breaking down dead organic material into simpler substances."
-    },
-    "answer": "D",
-    "difficulty": 4,
-    "explanation": "Decomposers, such as bacteria and fungi, break down dead organisms and waste products, returning essential nutrients to the ecosystem for producers to utilize. This process is crucial for nutrient cycling."
-  },
-  {
     "id": "AP_Biology_119",
     "question": "A population of mice lives in a field with varying seed types. Some mice have cheek pouches for storing seeds, while others do not. Mice with cheek pouches are more successful at gathering and storing seeds, especially during times of scarcity. If this trait is heritable, it is likely that over time, the frequency of the allele for having cheek pouches will:",
     "choices": {
@@ -1625,19 +1573,6 @@
     "explanation": "Horizontal gene transfer (HGT) is the movement of genetic material between bacterial cells, other than through reproduction. Conjugation is a major mechanism of HGT in bacteria, involving direct cell-to-cell contact. Vertical gene transfer occurs from parent to offspring. Spontaneous mutation is a change in DNA sequence within a cell. Recombinant DNA technology involves artificial manipulation of genetic material."
   },
   {
-    "id": "AP_Biology_252",
-    "question": "A population of deer isolated on an island experiences a drastic decrease in population size due to a severe storm. This event is an example of:",
-    "choices": {
-      "A": "Bottleneck effect",
-      "B": "Founder effect",
-      "C": "Gene flow",
-      "D": "Non-random mating"
-    },
-    "answer": "A",
-    "difficulty": 6,
-    "explanation": "The bottleneck effect occurs when a population's size is significantly reduced due to a random event, leading to a change in the allele frequencies of the surviving population."
-  },
-  {
     "id": "AP_Biology_262",
     "question": "In a dihybrid cross between two heterozygous pea plants for seed shape (round/wrinkled) and seed color (yellow/green), what is the expected phenotypic ratio of the offspring if the genes are unlinked?",
     "choices": {
@@ -1675,19 +1610,6 @@
     "answer": "B",
     "difficulty": 5,
     "explanation": "A point mutation is a genetic mutation where only a single nucleotide base is affected, such as substitution, insertion, or deletion of a single base."
-  },
-  {
-    "id": "AP_Biology_292",
-    "question": "The primary role of decomposers, such as bacteria and fungi, in an ecosystem is to:",
-    "choices": {
-      "A": "Produce energy through photosynthesis",
-      "B": "Transfer energy to higher trophic levels",
-      "C": "Break down dead organic matter and return nutrients to the soil",
-      "D": "Control the population size of producers"
-    },
-    "answer": "C",
-    "difficulty": 4,
-    "explanation": "Decomposers play a crucial role in nutrient cycling by breaking down dead organisms and waste products. This process releases essential nutrients back into the environment, making them available for producers to use."
   },
   {
     "id": "AP_Biology_116",
@@ -1898,19 +1820,6 @@
     "explanation": "The sugar-phosphate backbone of a DNA strand is formed by covalent linkages between the phosphate group of one nucleotide and the deoxyribose sugar of the next nucleotide."
   },
   {
-    "id": "AP_Biology_205",
-    "question": "Which of the following best describes the role of enzymes in biological systems?",
-    "choices": {
-      "A": "To provide energy for cellular processes",
-      "B": "To synthesize nucleic acids",
-      "C": "To store genetic information",
-      "D": "To act as catalysts, speeding up reactions"
-    },
-    "answer": "D",
-    "difficulty": 4,
-    "explanation": "Enzymes are biological catalysts, meaning they increase the rate of specific biochemical reactions without being consumed in the process."
-  },
-  {
     "id": "AP_Biology_246",
     "question": "Which enzyme is responsible for synthesizing new strands of DNA during DNA replication?",
     "choices": {
@@ -1922,32 +1831,6 @@
     "answer": "A",
     "difficulty": 4,
     "explanation": "DNA polymerase is the enzyme that synthesizes DNA molecules by adding nucleotides to a growing DNA strand. It is crucial for DNA replication."
-  },
-  {
-    "id": "AP_Biology_66",
-    "question": "A plant cell is placed in a hypertonic solution. What will happen to the cell?",
-    "choices": {
-      "A": "Water will move into the cell, causing it to swell.",
-      "B": "The cell wall will prevent any change in cell volume.",
-      "C": "Water will move out of the cell, causing the plasma membrane to pull away from the cell wall (plasmolysis).",
-      "D": "The cell will burst due to excessive water intake."
-    },
-    "answer": "C",
-    "difficulty": 5,
-    "explanation": "A hypertonic solution has a higher solute concentration (lower water potential) than the inside of the cell. Consequently, water will move by osmosis from the region of higher water potential (inside the cell) to the region of lower water potential (outside the cell). In plant cells, this loss of water causes the plasma membrane to shrink and pull away from the rigid cell wall, a process called plasmolysis. Animal cells would burst in hypotonic solutions or shrink in hypertonic ones, but plant cells have a cell wall that prevents bursting."
-  },
-  {
-    "id": "AP_Biology_194",
-    "question": "Which of the following describes the function of the Golgi apparatus in a eukaryotic cell?",
-    "choices": {
-      "A": "Synthesizing lipids and steroids.",
-      "B": "Producing proteins for export from the cell.",
-      "C": "Breaking down waste materials and cellular debris.",
-      "D": "Modifying, sorting, and packaging proteins and lipids for secretion or delivery to other organelles."
-    },
-    "answer": "D",
-    "difficulty": 4,
-    "explanation": "The Golgi apparatus acts as a cellular post office, receiving proteins and lipids from the endoplasmic reticulum, further processing them, and packaging them into vesicles for transport."
   },
   {
     "id": "AP_Biology_249",
@@ -2013,19 +1896,6 @@
     "answer": "D",
     "difficulty": 6,
     "explanation": "Plant cell walls are mainly composed of cellulose, providing structural support. Fungal cell walls, on the other hand, are primarily made of chitin, a polysaccharide also found in insect exoskeletons."
-  },
-  {
-    "id": "AP_Biology_283",
-    "question": "During meiosis, homologous chromosomes separate during which phase?",
-    "choices": {
-      "A": "Prophase I",
-      "B": "Metaphase II",
-      "C": "Anaphase II",
-      "D": "Anaphase I"
-    },
-    "answer": "D",
-    "difficulty": 6,
-    "explanation": "In Anaphase I of meiosis, homologous chromosomes (pairs of chromosomes) are pulled apart and move to opposite poles of the cell. Sister chromatids remain attached."
   },
   {
     "id": "AP_Biology_131",
@@ -2357,7 +2227,7 @@
     "question": "In a DNA molecule, the nitrogenous bases pair up according to specific rules. Adenine (A) always pairs with thymine (T), and guanine (G) always pairs with cytosine (C). This is known as:",
     "choices": {
       "A": "The central dogma",
-      "B": "Chargaff's rules",
+      "B": "The operon model",
       "C": "The semi-conservative model",
       "D": "Complementary base pairing"
     },
@@ -2432,16 +2302,16 @@
   },
   {
     "id": "AP_Biology_224",
-    "question": "A short-term adaptation that allows an organism to survive in its environment is best described as:",
+    "question": "A short-term physiological response that allows an organism to survive in its environment is best described as:",
     "choices": {
       "A": "A homologous structure",
       "B": "A vestigial structure",
       "C": "An adaptation",
-      "D": "A phylogenetic tree"
+      "D": "Acclimatization"
     },
     "answer": "C",
     "difficulty": 4,
-    "explanation": "An adaptation is a trait that increases an organism's survival and reproduction in a particular environment, and it can be behavioral or structural."
+    "explanation": "An adaptation is a trait that increases an organism's survival and reproduction in a particular environment, and it can be behavioral or structural. Acclimatization (D) is a reversible physiological adjustment over days-to-weeks and is the strongest distractor; the correct answer is the immediate response described in the stem."
   },
   {
     "id": "AP_Biology_141",
@@ -2692,7 +2562,7 @@
   },
   {
     "id": "AP_Biology_142",
-    "question": "A scientist observes a gene mutation that results in a non-functional enzyme. This would most likely be categorized as a:",
+    "question": "A single nucleotide is inserted into the coding region of a gene. Which type of mutation is this, and what is the most likely consequence for the resulting protein?",
     "choices": {
       "A": "Silent mutation",
       "B": "Frameshift mutation",
@@ -2701,20 +2571,20 @@
     },
     "answer": "D",
     "difficulty": 7,
-    "explanation": "A missense mutation is a point mutation in which a single nucleotide change results in a codon that codes for a different amino acid. If this new amino acid significantly alters the enzyme's structure or function, it can lead to a non-functional enzyme."
+    "explanation": "Inserting a single nucleotide shifts the reading frame downstream of the insertion (a frameshift mutation), so every codon after the insertion is altered. This almost always produces a non-functional protein, often via a premature stop codon. Point/missense mutations change one amino acid; silent mutations change none; nonsense creates a stop without shifting the frame."
   },
   {
     "id": "AP_Biology_8",
-    "question": "In C₄ photosynthesis, the initial fixation of CO₂ occurs in:",
+    "question": "In C\u2084 photosynthesis, the initial fixation of CO\u2082 occurs in:",
     "choices": {
-      "A": "Mesophyll cells, where PEP carboxylase fixes CO₂ into a 4-carbon compound",
-      "B": "Bundle sheath cells, where RuBisCO fixes CO₂ into a 3-carbon compound",
-      "C": "Guard cells, where carbonic anhydrase converts CO₂ to bicarbonate",
-      "D": "Mesophyll cells, where RuBisCO directly fixes CO₂"
+      "A": "Mesophyll cells, where PEP carboxylase fixes CO\u2082 into a 4-carbon compound",
+      "B": "Bundle sheath cells, where RuBisCO fixes CO\u2082 into a 3-carbon compound",
+      "C": "Guard cells, where carbonic anhydrase converts CO\u2082 to bicarbonate",
+      "D": "Mesophyll cells, where RuBisCO directly fixes CO\u2082"
     },
     "answer": "A",
     "difficulty": 8,
-    "explanation": "In C₄ plants, PEP carboxylase in mesophyll cells initially fixes CO₂ into oxaloacetate (4-carbon). CO₂ is later released and refixed by RuBisCO in bundle sheath cells."
+    "explanation": "In C\u2084 plants, PEP carboxylase in mesophyll cells initially fixes CO\u2082 into oxaloacetate (4-carbon). CO\u2082 is later released and refixed by RuBisCO in bundle sheath cells."
   },
   {
     "id": "AP_Biology_96",
@@ -2785,10 +2655,10 @@
     "id": "AP_Biology_47",
     "question": "A red blood cell is placed into a solution and begins to swell and eventually lyse. Which of the following best describes the solution it was placed in?",
     "choices": {
-      "A": "Hypertonic — higher solute concentration than the cell",
-      "B": "Isotonic — equal solute concentration to the cell",
-      "C": "Buffered — maintained at physiological pH",
-      "D": "Hypotonic — lower solute concentration than the cell"
+      "A": "Hypertonic \u2014 higher solute concentration than the cell",
+      "B": "Isotonic \u2014 equal solute concentration to the cell",
+      "C": "Buffered \u2014 maintained at physiological pH",
+      "D": "Hypotonic \u2014 lower solute concentration than the cell"
     },
     "answer": "D",
     "difficulty": 5,
@@ -2936,32 +2806,6 @@
     "answer": "A",
     "difficulty": 7,
     "explanation": "The vascular cambium is a lateral meristem responsible for secondary growth in dicot stems and roots, producing secondary xylem (wood) and secondary phloem."
-  },
-  {
-    "id": "AP_Biology_298",
-    "question": "A plant cell is suddenly placed in an extremely salty solution. What is likely to happen to the plant cell?",
-    "choices": {
-      "A": "The cell will absorb water and become turgid.",
-      "B": "The cell will lose water and undergo plasmolysis.",
-      "C": "The salt will enter the cell, disrupting its internal processes.",
-      "D": "The cell wall will prevent any water movement."
-    },
-    "answer": "B",
-    "difficulty": 5,
-    "explanation": "A very salty solution is hypertonic to the plant cell's cytoplasm. Water will move out of the cell by osmosis from an area of higher water concentration (inside the cell) to an area of lower water concentration (outside the cell). This loss of water causes the cell membrane to pull away from the cell wall, a process called plasmolysis."
-  },
-  {
-    "id": "AP_Biology_229",
-    "question": "In a eukaryotic cell, which organelle is primarily responsible for modifying, sorting, and packaging proteins and lipids for secretion or delivery to other organelles?",
-    "choices": {
-      "A": "Golgi apparatus",
-      "B": "Endoplasmic reticulum",
-      "C": "Lysosome",
-      "D": "Mitochondrion"
-    },
-    "answer": "A",
-    "difficulty": 4,
-    "explanation": "The Golgi apparatus receives proteins and lipids from the endoplasmic reticulum, further modifies them (e.g., glycosylation), sorts them, and packages them into vesicles for transport to their final destinations, including secretion outside the cell or to other organelles like lysosomes."
   },
   {
     "id": "AP_Biology_95",

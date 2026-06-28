@@ -1,0 +1,938 @@
+{
+  "bank": "src/data/AP_French_Language_question_bank_200.json",
+  "total": 286,
+  "summary": {
+    "flagged": 28,
+    "errors": 3,
+    "clusters": 25,
+    "questions_in_clusters": 79
+  },
+  "ai_review_flagged": [
+    {
+      "id": "AP_French_293",
+      "verdict": "multiple",
+      "correct_answer": "D",
+      "issues": [
+        "Options C and D are identical strings ('partions'), meaning there are two correct answers."
+      ],
+      "suggested_distractor_fix": {
+        "letter": "C",
+        "replacement": "partiez"
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "AP_French_28",
+      "verdict": "multiple",
+      "correct_answer": "A",
+      "issues": [
+        "Options A, B, and D are identical, making the question invalid.",
+        "The distractor 'Actoresse' is archaic/obsolete."
+      ],
+      "suggested_distractor_fix": {
+        "letter": "B",
+        "replacement": "Acteuse"
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "AP_French_30",
+      "verdict": "distractor_weak",
+      "correct_answer": "D",
+      "issues": [
+        "Choices B, C, and D are identical, making the selection arbitrary and the question invalid in a real test context."
+      ],
+      "suggested_distractor_fix": {
+        "letter": "B",
+        "replacement": "Nous allions"
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "AP_French_42",
+      "verdict": "distractor_weak",
+      "correct_answer": "A",
+      "issues": [
+        "Choices A, C, and D are identical, making the question trivial and the distractors invalid."
+      ],
+      "suggested_distractor_fix": {
+        "letter": "C",
+        "replacement": "Venue"
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "AP_French_48",
+      "verdict": "answer_wrong",
+      "correct_answer": "null",
+      "issues": [
+        "The marked answer C is incorrect; '\u00catre comme un coq en p\u00e2te' means to be very comfortable or pampered, not busy.",
+        "None of the provided choices (A, B, C, D) mean 'to be very busy'.",
+        "Choice A means to be depressed, B means to be dressed up, and D means to be in a mess/trouble."
+      ],
+      "suggested_distractor_fix": {
+        "letter": "C",
+        "replacement": "Avoir du pain sur la planche"
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "AP_French_50",
+      "verdict": "multiple",
+      "correct_answer": "null",
+      "issues": [
+        "Both 'Cependant' (B) and 'Pourtant' (D) are direct synonyms for 'n\u00e9anmoins', making both correct in a multiple-choice format."
+      ],
+      "suggested_distractor_fix": {
+        "letter": "D",
+        "replacement": "Surtout"
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "AP_French_67",
+      "verdict": "answer_wrong",
+      "correct_answer": "A",
+      "issues": [
+        "The explanation is grammatically incorrect for French syntax. 'Beaucoup' cannot modify an adverb like 'bien' directly (one does not say 'beaucoup bien'); 'tr\u00e8s' is the standard intensifier for adverbs.",
+        "Choice A and B are grammatically correct, but A follows the logic of the provided (incorrect) explanation better."
+      ],
+      "suggested_distractor_fix": {
+        "letter": "D",
+        "replacement": "plus"
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "AP_French_77",
+      "verdict": "multiple",
+      "correct_answer": "null",
+      "issues": [
+        "All choices (A, B, C, and D) are identical.",
+        "The question provides no incorrect options to evaluate."
+      ],
+      "suggested_distractor_fix": {
+        "letter": "B",
+        "replacement": "J'ai achete des pommes de terre."
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "AP_French_89",
+      "verdict": "multiple",
+      "correct_answer": "A",
+      "issues": [
+        "Options A and C are identical."
+      ],
+      "suggested_distractor_fix": {
+        "letter": "C",
+        "replacement": "H\u00e9ros"
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "AP_French_93",
+      "verdict": "multiple",
+      "correct_answer": "A",
+      "issues": [
+        "Duplicate options for A and C",
+        "Duplicate options for B and D",
+        "The question lacks context to justify a single specific answer over another"
+      ],
+      "suggested_distractor_fix": {
+        "letter": "C",
+        "replacement": "Une devise"
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "AP_French_122",
+      "verdict": "multiple",
+      "correct_answer": "A|C",
+      "issues": [
+        "Both choice A (tr\u00e8s) and choice C (trop) are adverbs that correctly modify the adjective 'intelligente' in this context."
+      ],
+      "suggested_distractor_fix": {
+        "letter": "C",
+        "replacement": "bien"
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "AP_French_125",
+      "verdict": "multiple",
+      "correct_answer": "null",
+      "issues": [
+        "The question has multiple correct answers (A, C, and D) because the context does not specify the subject (tu, nous, or vous)."
+      ],
+      "suggested_distractor_fix": {
+        "letter": "C",
+        "replacement": "Disent"
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "AP_French_133",
+      "verdict": "explanation_wrong",
+      "correct_answer": "null",
+      "issues": [
+        "The conditionnel pr\u00e9sent is the standard tense for future-in-the-past. The conditionnel pass\u00e9 represents a completed action relative to a past moment (future perfect in the past)."
+      ],
+      "suggested_distractor_fix": {
+        "letter": "D",
+        "replacement": "Le conditionnel pr\u00e9sent"
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "AP_French_134",
+      "verdict": "answer_wrong",
+      "correct_answer": "B",
+      "issues": [
+        "The marked answer A is incorrect because 'que' is the relative pronoun required for the direct object of 'pr\u00eat\u00e9'.",
+        "The explanation incorrectly identifies 'qui' as the subject; 'il' (implicit or elided) is the subject, and 'le livre' is the object being replaced by 'que'."
+      ],
+      "suggested_distractor_fix": null,
+      "confidence": "high"
+    },
+    {
+      "id": "AP_French_146",
+      "verdict": "multiple",
+      "correct_answer": "A",
+      "issues": [
+        "Option A and Option D are identical, creating two correct answers.",
+        "The explanation incorrectly identifies 'faisiez' as the present subjunctive; 'faisiez' is the imperfect subjunctive or the imperfect indicative. The present subjunctive for 'faire' (vous) is 'fassiez'."
+      ],
+      "suggested_distractor_fix": {
+        "letter": "D",
+        "replacement": "fassiez"
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "AP_French_178",
+      "verdict": "answer_wrong",
+      "correct_answer": "A",
+      "issues": [
+        "The marked answer C (polyglotte) refers to someone who speaks many languages, whereas the question asks for someone who studies languages (linguiste)."
+      ],
+      "suggested_distractor_fix": null,
+      "confidence": "high"
+    },
+    {
+      "id": "AP_French_187",
+      "verdict": "multiple",
+      "correct_answer": "null",
+      "issues": [
+        "All four options are grammatically correct and semantically standard in French.",
+        "There is no linguistic rule making 'la figure' more correct than 'les mains', 'les cheveux', or 'les dents' in this context."
+      ],
+      "suggested_distractor_fix": null,
+      "confidence": "high"
+    },
+    {
+      "id": "AP_French_190",
+      "verdict": "answer_wrong",
+      "correct_answer": "null",
+      "issues": [
+        "The common formal idiom is 'prier d'agr\u00e9er' or 'pr\u00e9senter' in professional French; 'fais' is colloquial and 'envoie' is informal. None of the options represents the standard high-register formula expected in AP French for 'salutations distingu\u00e9es'.",
+        "Technically 'prie d'agr\u00e9er' is the missing standard."
+      ],
+      "suggested_distractor_fix": {
+        "letter": "C",
+        "replacement": "pr\u00e9sente"
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "AP_French_191",
+      "verdict": "multiple",
+      "correct_answer": "D",
+      "issues": [
+        "Both France and Spain are equally famous for the 'f\u00eate des rois' tradition (Epiphany), making the question ambiguous.",
+        "While the explanation notes the gift-giving difference, the 'f\u00eate des rois' nomenclature is specifically the French term (F\u00eate des Rois) cited in the question, which points to France (C)."
+      ],
+      "suggested_distractor_fix": {
+        "letter": "C",
+        "replacement": "Allemagne"
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "AP_French_199",
+      "verdict": "explanation_wrong",
+      "correct_answer": "A",
+      "issues": [
+        "The explanation incorrectly states that 'vieux/vieille' is only used for things; it is commonly used for people in French, though 'plus \u00e2g\u00e9e' is often preferred in formal contexts or to avoid perceived rudeness."
+      ],
+      "suggested_distractor_fix": {
+        "letter": "C",
+        "replacement": "aussi \u00e2g\u00e9e"
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "AP_French_211",
+      "verdict": "explanation_wrong",
+      "correct_answer": "D",
+      "issues": [
+        "The explanation contains a grammatical error regarding auxiliary verbs: 'rester' takes '\u00eatre' in compound tenses, resulting in 'serais rest\u00e9', not 'aurais rest\u00e9'."
+      ],
+      "suggested_distractor_fix": null,
+      "confidence": "high"
+    },
+    {
+      "id": "AP_French_225",
+      "verdict": "answer_wrong",
+      "correct_answer": "A",
+      "issues": [
+        "The question specifies 'In which African country' (Dans quel pays d'Afrique), but the marked answer (Ha\u00efti) is in the Caribbean.",
+        "Madagascar is the only African country listed in the options.",
+        "The explanation incorrectly prioritizes regional francophonie over the actual constraint of the question (geography)."
+      ],
+      "suggested_distractor_fix": {
+        "letter": "B",
+        "replacement": "S\u00e9n\u00e9gal"
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "AP_French_224",
+      "verdict": "answer_wrong",
+      "correct_answer": "B",
+      "issues": [
+        "The standard construction to denote possession with the verb '\u00eatre' is '\u00eatre \u00e0 + noun/disjunctive pronoun' (e.g., Ce livre est \u00e0 Paul). While 'de' indicates possession within a noun phrase (Le livre de Paul), it is not used in the predicate with '\u00eatre' to mean 'belongs to'."
+      ],
+      "suggested_distractor_fix": null,
+      "confidence": "high"
+    },
+    {
+      "id": "AP_French_248",
+      "verdict": "multiple",
+      "correct_answer": "A",
+      "issues": [
+        "Option A and C are identical"
+      ],
+      "suggested_distractor_fix": {
+        "letter": "C",
+        "replacement": "Il a fait"
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "AP_French_247",
+      "verdict": "answer_wrong",
+      "correct_answer": null,
+      "issues": [
+        "The marked answer is incorrect; 'En passant' does not mean 'par inadvertance'. None of the provided options accurately mean 'by mistake' or 'unintentionally'. 'Par m\u00e9garde' would be the correct French adverbial phrase for the definition provided."
+      ],
+      "suggested_distractor_fix": {
+        "letter": "A",
+        "replacement": "Par m\u00e9garde"
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "AP_French_259",
+      "verdict": "explanation_wrong",
+      "correct_answer": "A",
+      "issues": [
+        "The question asks for the 'general' way to indicate location; in French grammar, '\u00e0' is the default preposition of place/destination/location. 'Dans' specifically implies 'inside' or containment, which is less general than '\u00e0'."
+      ],
+      "suggested_distractor_fix": null,
+      "confidence": "high"
+    },
+    {
+      "id": "AP_French_261",
+      "verdict": "multiple",
+      "correct_answer": "A",
+      "issues": [
+        "Choice A and Choice C are identical."
+      ],
+      "suggested_distractor_fix": {
+        "letter": "C",
+        "replacement": "vissent"
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "AP_French_275",
+      "verdict": "answer_wrong",
+      "correct_answer": "null",
+      "issues": [
+        "The question mentions the XIVth century (14th), but all options and the explanation refer to different eras (Renaissance: 16th, Middle Ages: period, Fronde: 17th, Terreur: 18th).",
+        "Choice C (marked) happened in the 17th century, the explanation confirms it was 1648-1653, contradicting the question's 'XIVe' (14th) century premise.",
+        "If the question intended to ask about the 14th century, the answer would likely be the Hundred Years' War (Guerre de Cent Ans), which is not listed."
+      ],
+      "suggested_distractor_fix": {
+        "letter": "C",
+        "replacement": "La guerre de Cent Ans"
+      },
+      "confidence": "high"
+    }
+  ],
+  "ai_review_errors": [
+    {
+      "id": "AP_French_26",
+      "verdict": "error",
+      "error": "Extra data: line 2 column 1 (char 102)"
+    },
+    {
+      "id": "AP_French_88",
+      "verdict": "error",
+      "error": "Extra data: line 2 column 1 (char 102)"
+    },
+    {
+      "id": "AP_French_270",
+      "verdict": "error",
+      "error": "Extra data: line 2 column 1 (char 102)"
+    }
+  ],
+  "concept_duplicate_clusters": [
+    {
+      "size": 7,
+      "avg_similarity": 0.891,
+      "members": [
+        {
+          "id": "AP_French_14",
+          "answer": "C",
+          "question": "Quelle f\u00eate c\u00e9l\u00e8bre la prise de la Bastille?"
+        },
+        {
+          "id": "AP_French_32",
+          "answer": "D",
+          "question": "Quel est le nom de la f\u00eate nationale fran\u00e7aise?"
+        },
+        {
+          "id": "AP_French_64",
+          "answer": "C",
+          "question": "Quelle f\u00eate est c\u00e9l\u00e9br\u00e9e le 14 juillet en France ?"
+        },
+        {
+          "id": "AP_French_142",
+          "answer": "A",
+          "question": "Quel est le nom de la c\u00e9l\u00e8bre f\u00eate parisienne c\u00e9l\u00e9brant la prise de la Bastille ?"
+        },
+        {
+          "id": "AP_French_175",
+          "answer": "D",
+          "question": "Quel est le nom de la c\u00e9l\u00e8bre f\u00eate nationale en France ?"
+        },
+        {
+          "id": "AP_French_255",
+          "answer": "C",
+          "question": "Que c\u00e9l\u00e8bre-t-on le 14 juillet en France ?"
+        },
+        {
+          "id": "AP_French_294",
+          "answer": "C",
+          "question": "Quel est le nom de la c\u00e9l\u00e8bre f\u00eate nationale fran\u00e7aise ?"
+        }
+      ]
+    },
+    {
+      "size": 7,
+      "avg_similarity": 0.84,
+      "members": [
+        {
+          "id": "AP_French_68",
+          "answer": "C",
+          "question": "Dans quel pays africain francophone se trouve la ville de Dakar ?"
+        },
+        {
+          "id": "AP_French_130",
+          "answer": "B",
+          "question": "Quelle est la capitale du S\u00e9n\u00e9gal ?"
+        },
+        {
+          "id": "AP_French_155",
+          "answer": "C",
+          "question": "Quel pays francophone est situ\u00e9 en Afrique de l'Ouest ?"
+        },
+        {
+          "id": "AP_French_179",
+          "answer": "C",
+          "question": "Dans quel pays francophone trouve-t-on la ville de Dakar ?"
+        },
+        {
+          "id": "AP_French_214",
+          "answer": "D",
+          "question": "Dans quelle r\u00e9gion du monde parle-t-on le fran\u00e7ais au S\u00e9n\u00e9gal ?"
+        },
+        {
+          "id": "AP_French_240",
+          "answer": "C",
+          "question": "Dans quel pays d'Afrique de l'Ouest se trouve la ville de Dakar ?"
+        },
+        {
+          "id": "AP_French_256",
+          "answer": "D",
+          "question": "Dans quelle r\u00e9gion francophone se trouve la ville de Dakar ?"
+        }
+      ]
+    },
+    {
+      "size": 6,
+      "avg_similarity": 0.866,
+      "members": [
+        {
+          "id": "AP_French_80",
+          "answer": "C",
+          "question": "Compl\u00e9tez la phrase avec le pronom relatif correct\u00a0: \u00ab\u00a0C'est le livre _______ j'ai parl\u00e9 hier.\u00a0\u00bb"
+        },
+        {
+          "id": "AP_French_102",
+          "answer": "B",
+          "question": "Choisissez le pronom relatif correct : \u00ab Le livre ____ je lis est tr\u00e8s int\u00e9ressant. \u00bb"
+        },
+        {
+          "id": "AP_French_127",
+          "answer": "B",
+          "question": "Identifiez le pronom relatif qui convient : C'est le livre ______ j'ai achet\u00e9 hier."
+        },
+        {
+          "id": "AP_French_196",
+          "answer": "C",
+          "question": "Compl\u00e9tez la phrase avec le bon pronom relatif : 'Le livre ______ je t'ai parl\u00e9 est tr\u00e8s int\u00e9ressant.'"
+        },
+        {
+          "id": "AP_French_203",
+          "answer": "B",
+          "question": "Quel pronom relatif convient le mieux dans la phrase : 'C'est le livre ___ j'ai lu hier.' ?"
+        },
+        {
+          "id": "AP_French_254",
+          "answer": "B",
+          "question": "Quel pronom relatif faut-il utiliser dans la phrase : 'C'est le livre ___ j'ai lu' ?"
+        }
+      ]
+    },
+    {
+      "size": 5,
+      "avg_similarity": 0.923,
+      "members": [
+        {
+          "id": "AP_French_54",
+          "answer": "C",
+          "question": "Quel auteur est c\u00e9l\u00e8bre pour avoir \u00e9crit \u00ab Les Mis\u00e9rables \u00bb ?"
+        },
+        {
+          "id": "AP_French_115",
+          "answer": "C",
+          "question": "Qui a \u00e9crit \u00ab Les Mis\u00e9rables \u00bb ?"
+        },
+        {
+          "id": "AP_French_153",
+          "answer": "B",
+          "question": "Quel \u00e9crivain fran\u00e7ais est connu pour son \u0153uvre \"Les Mis\u00e9rables\" ?"
+        },
+        {
+          "id": "AP_French_184",
+          "answer": "B",
+          "question": "Quel \u00e9crivain est c\u00e9l\u00e8bre pour 'Les Mis\u00e9rables' ?"
+        },
+        {
+          "id": "AP_French_289",
+          "answer": "C",
+          "question": "Qui est l'auteur des 'Mis\u00e9rables' ?"
+        }
+      ]
+    },
+    {
+      "size": 5,
+      "avg_similarity": 0.893,
+      "members": [
+        {
+          "id": "AP_French_81",
+          "answer": "A",
+          "question": "Quel auteur est connu pour son roman \u00ab\u00a0L'\u00c9tranger\u00a0\u00bb\u00a0?"
+        },
+        {
+          "id": "AP_French_121",
+          "answer": "C",
+          "question": "Quel \u00e9crivain francophone est c\u00e9l\u00e8bre pour \u00ab L'\u00c9tranger \u00bb ?"
+        },
+        {
+          "id": "AP_French_170",
+          "answer": "C",
+          "question": "Quel auteur est associ\u00e9 au mouvement existentialiste et a \u00e9crit \"L'\u00c9tranger\" ?"
+        },
+        {
+          "id": "AP_French_253",
+          "answer": "B",
+          "question": "Qui a \u00e9crit 'L'\u00c9tranger' ?"
+        },
+        {
+          "id": "AP_French_274",
+          "answer": "C",
+          "question": "Quel auteur est connu pour son roman 'L'\u00c9tranger' et sa philosophie de l'absurde ?"
+        }
+      ]
+    },
+    {
+      "size": 4,
+      "avg_similarity": 0.945,
+      "members": [
+        {
+          "id": "AP_French_4",
+          "answer": "B",
+          "question": "'Avoir le cafard' signifie:"
+        },
+        {
+          "id": "AP_French_26",
+          "answer": "D",
+          "question": "Quel est le sens de l'expression idiomatique \"avoir le cafard\"?"
+        },
+        {
+          "id": "AP_French_78",
+          "answer": "B",
+          "question": "Que signifie l'expression idiomatique \u00ab\u00a0avoir le cafard\u00a0\u00bb\u00a0?"
+        },
+        {
+          "id": "AP_French_132",
+          "answer": "C",
+          "question": "Quelle est la signification de l'expression 'avoir le cafard' ?"
+        }
+      ]
+    },
+    {
+      "size": 4,
+      "avg_similarity": 0.886,
+      "members": [
+        {
+          "id": "AP_French_117",
+          "answer": "B",
+          "question": "Quelle pr\u00e9position utiliser pour indiquer le lieu de r\u00e9sidence (ville) ?"
+        },
+        {
+          "id": "AP_French_165",
+          "answer": "C",
+          "question": "Quelle pr\u00e9position faut-il utiliser pour indiquer un lieu o\u00f9 l'on va ?"
+        },
+        {
+          "id": "AP_French_201",
+          "answer": "A",
+          "question": "Quelle pr\u00e9position est utilis\u00e9e pour indiquer le mouvement vers une ville ?"
+        },
+        {
+          "id": "AP_French_231",
+          "answer": "C",
+          "question": "Laquelle de ces pr\u00e9positions est utilis\u00e9e pour indiquer un lieu o\u00f9 l'on va (mouvement) ?"
+        }
+      ]
+    },
+    {
+      "size": 3,
+      "avg_similarity": 0.951,
+      "members": [
+        {
+          "id": "AP_French_167",
+          "answer": "C",
+          "question": "Quel est le pluriel du mot \"\u0153il\" ?"
+        },
+        {
+          "id": "AP_French_219",
+          "answer": "B",
+          "question": "Quel est le pluriel de '\u0153il' ?"
+        },
+        {
+          "id": "AP_French_239",
+          "answer": "A",
+          "question": "Quel est le pluriel de \u00ab un \u0153il \u00bb ?"
+        }
+      ]
+    },
+    {
+      "size": 3,
+      "avg_similarity": 0.926,
+      "members": [
+        {
+          "id": "AP_French_126",
+          "answer": "D",
+          "question": "Quel temps utilise-t-on pour d\u00e9crire une action qui se r\u00e9p\u00e9tait dans le pass\u00e9 et qui a dur\u00e9 un certain temps ?"
+        },
+        {
+          "id": "AP_French_236",
+          "answer": "B",
+          "question": "Quel temps est utilis\u00e9 pour d\u00e9crire une action habituelle dans le pass\u00e9 ?"
+        },
+        {
+          "id": "AP_French_281",
+          "answer": "C",
+          "question": "Quel temps utilise-t-on pour d\u00e9crire une action habituelle dans le pass\u00e9 ?"
+        }
+      ]
+    },
+    {
+      "size": 3,
+      "avg_similarity": 0.875,
+      "members": [
+        {
+          "id": "AP_French_60",
+          "answer": "D",
+          "question": "Compl\u00e9tez la phrase : \u00ab Si j'avais su, je ______ diff\u00e9rent. \u00bb"
+        },
+        {
+          "id": "AP_French_136",
+          "answer": "A",
+          "question": "Compl\u00e9tez la phrase : Si j'avais su, je ______ venu."
+        },
+        {
+          "id": "AP_French_211",
+          "answer": "D",
+          "question": "Compl\u00e9tez : 'Si j'avais su, je ___ rest\u00e9 \u00e0 la maison.'"
+        }
+      ]
+    },
+    {
+      "size": 3,
+      "avg_similarity": 0.872,
+      "members": [
+        {
+          "id": "AP_French_1",
+          "answer": "A",
+          "question": "Si j'_______ assez d'argent, j'ach\u00e8terais une maison."
+        },
+        {
+          "id": "AP_French_82",
+          "answer": "B",
+          "question": "Choisissez la forme verbale correcte\u00a0: \u00ab\u00a0Si j'_______ plus de temps, je lirais ce livre.\u00a0\u00bb"
+        },
+        {
+          "id": "AP_French_177",
+          "answer": "B",
+          "question": "Compl\u00e9tez la phrase : 'Si j'______ plus de temps, je voyagerais davantage.'"
+        }
+      ]
+    },
+    {
+      "size": 3,
+      "avg_similarity": 0.835,
+      "members": [
+        {
+          "id": "AP_French_52",
+          "answer": "A",
+          "question": "Quel est le conditionnel pr\u00e9sent du verbe \u00ab pouvoir \u00bb \u00e0 la premi\u00e8re personne du pluriel ?"
+        },
+        {
+          "id": "AP_French_120",
+          "answer": "B",
+          "question": "Quel est le subjonctif pr\u00e9sent du verbe \u00ab \u00eatre \u00bb \u00e0 la premi\u00e8re personne du pluriel ?"
+        },
+        {
+          "id": "AP_French_242",
+          "answer": "A",
+          "question": "Quel est le subjonctif pr\u00e9sent du verbe \u00ab pouvoir \u00bb \u00e0 la premi\u00e8re personne du pluriel ?"
+        }
+      ]
+    },
+    {
+      "size": 2,
+      "avg_similarity": 0.993,
+      "members": [
+        {
+          "id": "AP_French_89",
+          "answer": "A",
+          "question": "Quel est le f\u00e9minin de \u00ab\u00a0h\u00e9ros\u00a0\u00bb\u00a0?"
+        },
+        {
+          "id": "AP_French_158",
+          "answer": "A",
+          "question": "Quel est le f\u00e9minin du nom \"h\u00e9ros\" ?"
+        }
+      ]
+    },
+    {
+      "size": 2,
+      "avg_similarity": 0.991,
+      "members": [
+        {
+          "id": "AP_French_234",
+          "answer": "C",
+          "question": "Quel c\u00e9l\u00e8bre mus\u00e9e parisien abrite la Joconde ?"
+        },
+        {
+          "id": "AP_French_264",
+          "answer": "D",
+          "question": "Quel est le nom du c\u00e9l\u00e8bre mus\u00e9e parisien qui abrite la Joconde ?"
+        }
+      ]
+    },
+    {
+      "size": 2,
+      "avg_similarity": 0.99,
+      "members": [
+        {
+          "id": "AP_French_91",
+          "answer": "D",
+          "question": "Quel \u00e9crivain qu\u00e9b\u00e9cois est l'auteur de \u00ab\u00a0Bonheur d'occasion\u00a0\u00bb\u00a0?"
+        },
+        {
+          "id": "AP_French_249",
+          "answer": "B",
+          "question": "Quel \u00e9crivain qu\u00e9b\u00e9cois est connu pour son roman \u00ab Bonheur d'occasion \u00bb ?"
+        }
+      ]
+    },
+    {
+      "size": 2,
+      "avg_similarity": 0.973,
+      "members": [
+        {
+          "id": "AP_French_140",
+          "answer": "B",
+          "question": "Quelle est la signification de l'expression 'poser un lapin' ?"
+        },
+        {
+          "id": "AP_French_265",
+          "answer": "B",
+          "question": "Quelle est la signification de l'expression idiomatique 'poser un lapin' ?"
+        }
+      ]
+    },
+    {
+      "size": 2,
+      "avg_similarity": 0.972,
+      "members": [
+        {
+          "id": "AP_French_160",
+          "answer": "B",
+          "question": "Quel pronom relatif faut-il utiliser pour introduire un compl\u00e9ment d'objet direct ?"
+        },
+        {
+          "id": "AP_French_284",
+          "answer": "B",
+          "question": "Quel pronom relatif est utilis\u00e9 pour introduire un compl\u00e9ment d'objet direct (COD) ?"
+        }
+      ]
+    },
+    {
+      "size": 2,
+      "avg_similarity": 0.971,
+      "members": [
+        {
+          "id": "AP_French_11",
+          "answer": "B",
+          "question": "Diff\u00e9rence entre 'savoir' et 'conna\u00eetre':"
+        },
+        {
+          "id": "AP_French_123",
+          "answer": "D",
+          "question": "Quelle est la diff\u00e9rence principale entre \u00ab savoir \u00bb et \u00ab conna\u00eetre \u00bb ?"
+        }
+      ]
+    },
+    {
+      "size": 2,
+      "avg_similarity": 0.955,
+      "members": [
+        {
+          "id": "AP_French_53",
+          "answer": "D",
+          "question": "Quelle pr\u00e9position est utilis\u00e9e pour indiquer l'origine dans cette phrase : \u00ab Il vient ______ Paris. \u00bb"
+        },
+        {
+          "id": "AP_French_86",
+          "answer": "A",
+          "question": "Quelle pr\u00e9position faut-il utiliser pour indiquer l'origine dans la phrase\u00a0: \u00ab\u00a0Elle vient _______ Paris.\u00a0\u00bb"
+        }
+      ]
+    },
+    {
+      "size": 2,
+      "avg_similarity": 0.947,
+      "members": [
+        {
+          "id": "AP_French_98",
+          "answer": "D",
+          "question": "Compl\u00e9tez la phrase au subjonctif\u00a0: \u00ab\u00a0Il faut que tu _______ tes devoirs.\u00a0\u00bb"
+        },
+        {
+          "id": "AP_French_183",
+          "answer": "C",
+          "question": "Compl\u00e9tez la phrase : 'Il faut que tu ______ tes devoirs.'"
+        }
+      ]
+    },
+    {
+      "size": 2,
+      "avg_similarity": 0.937,
+      "members": [
+        {
+          "id": "AP_French_76",
+          "answer": "D",
+          "question": "Quel pays francophone est c\u00e9l\u00e8bre pour ses festivals de jazz, notamment celui de Montr\u00e9al\u00a0?"
+        },
+        {
+          "id": "AP_French_228",
+          "answer": "B",
+          "question": "Dans quel pays francophone le festival de jazz de Montr\u00e9al a-t-il lieu ?"
+        }
+      ]
+    },
+    {
+      "size": 2,
+      "avg_similarity": 0.892,
+      "members": [
+        {
+          "id": "AP_French_141",
+          "answer": "A",
+          "question": "Compl\u00e9tez la phrase : Je suis fatigu\u00e9, ______ je vais me coucher."
+        },
+        {
+          "id": "AP_French_162",
+          "answer": "D",
+          "question": "Que signifie le mot \"donc\" dans la phrase \"Il est fatigu\u00e9, donc il va se coucher.\" ?"
+        }
+      ]
+    },
+    {
+      "size": 2,
+      "avg_similarity": 0.878,
+      "members": [
+        {
+          "id": "AP_French_69",
+          "answer": "C",
+          "question": "Quel est le futur simple du verbe \u00ab aller \u00bb \u00e0 la troisi\u00e8me personne du pluriel ?"
+        },
+        {
+          "id": "AP_French_148",
+          "answer": "B",
+          "question": "Quel est le futur de 'aller' \u00e0 la premi\u00e8re personne du pluriel ?"
+        }
+      ]
+    },
+    {
+      "size": 2,
+      "avg_similarity": 0.867,
+      "members": [
+        {
+          "id": "AP_French_42",
+          "answer": "A",
+          "question": "Quel est le participe pass\u00e9 du verbe \"venir\"?"
+        },
+        {
+          "id": "AP_French_58",
+          "answer": "D",
+          "question": "Quel est le participe pr\u00e9sent du verbe \u00ab venir \u00bb ?"
+        }
+      ]
+    },
+    {
+      "size": 2,
+      "avg_similarity": 0.863,
+      "members": [
+        {
+          "id": "AP_French_6",
+          "answer": "B",
+          "question": "Quel mode suit 'il faut que'?"
+        },
+        {
+          "id": "AP_French_209",
+          "answer": "D",
+          "question": "Dans la phrase 'Il faut que tu viennes.', \u00e0 quel mode est le verbe 'venir' ?"
+        }
+      ]
+    }
+  ]
+}
