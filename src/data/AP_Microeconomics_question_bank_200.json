@@ -1,16 +1,16 @@
 [
   {
-    "id": "AP_Microeconomics_23",
-    "question": "A consumer maximizes utility when the marginal utility per dollar spent is equal across all goods consumed. This is known as the:",
+    "id": "AP_Microeconomics_24",
+    "question": "If a per-unit tax is imposed on the producers of a good, the burden of the tax will fall primarily on consumers if the:",
     "choices": {
-      "A": "Law of Diminishing Marginal Returns.",
-      "B": "Income Effect.",
-      "C": "Substitution Effect.",
-      "D": "Equimarginal Principle."
+      "A": "Demand is more elastic than supply.",
+      "B": "Supply is more elastic than demand.",
+      "C": "Demand is perfectly inelastic.",
+      "D": "Supply is perfectly elastic."
     },
-    "answer": "D",
-    "difficulty": 4,
-    "explanation": "The Equimarginal Principle states that utility is maximized when the ratio of marginal utility to price is the same for all goods, meaning consumers get the same 'bang for their buck' from each additional dollar spent on any good."
+    "answer": "C",
+    "difficulty": 6,
+    "explanation": "The party with the less elastic (more inelastic) demand or supply will bear a greater portion of the tax burden. If demand is perfectly inelastic, consumers will buy the same quantity regardless of price, so producers can pass the entire tax onto them."
   },
   {
     "id": "AP_Micro_2",
@@ -260,17 +260,17 @@
     "explanation": "Monopsony = single buyer of labor, paying below competitive wages."
   },
   {
-    "id": "AP_Micro_1",
-    "question": "A perfectly competitive firm should shut down in the short run when:",
+    "id": "AP_Microeconomics_23",
+    "question": "A consumer maximizes utility when the marginal utility per dollar spent is equal across all goods consumed. This is known as the:",
     "choices": {
-      "A": "Price is below average total cost",
-      "B": "Price is below average variable cost",
-      "C": "Marginal cost exceeds marginal revenue",
-      "D": "Total revenue is less than total cost"
+      "A": "Law of Diminishing Marginal Returns.",
+      "B": "Income Effect.",
+      "C": "Substitution Effect.",
+      "D": "Equimarginal Principle."
     },
-    "answer": "B",
-    "difficulty": 7,
-    "explanation": "Shut down when P < AVC because the firm cannot cover variable costs."
+    "answer": "D",
+    "difficulty": 4,
+    "explanation": "The Equimarginal Principle states that utility is maximized when the ratio of marginal utility to price is the same for all goods, meaning consumers get the same 'bang for their buck' from each additional dollar spent on any good."
   },
   {
     "id": "AP_Microeconomics_88",
@@ -286,17 +286,17 @@
     "explanation": "In the short run, a firm should continue to operate as long as the price covers its average variable cost (AVC). If P > AVC, the firm is covering the variable costs of production and contributing something towards its fixed costs. Shutting down (P < AVC) would mean losing all fixed costs plus the variable costs, resulting in a larger loss than continuing to produce."
   },
   {
-    "id": "AP_Microeconomics_24",
-    "question": "If a per-unit tax is imposed on the producers of a good, the burden of the tax will fall primarily on consumers if the:",
+    "id": "AP_Micro_1",
+    "question": "A perfectly competitive firm should shut down in the short run when:",
     "choices": {
-      "A": "Demand is more elastic than supply.",
-      "B": "Supply is more elastic than demand.",
-      "C": "Demand is perfectly inelastic.",
-      "D": "Supply is perfectly elastic."
+      "A": "Price is below average total cost",
+      "B": "Price is below average variable cost",
+      "C": "Marginal cost exceeds marginal revenue",
+      "D": "Total revenue is less than total cost"
     },
-    "answer": "C",
-    "difficulty": 6,
-    "explanation": "The party with the less elastic (more inelastic) demand or supply will bear a greater portion of the tax burden. If demand is perfectly inelastic, consumers will buy the same quantity regardless of price, so producers can pass the entire tax onto them."
+    "answer": "B",
+    "difficulty": 7,
+    "explanation": "Shut down when P < AVC because the firm cannot cover variable costs."
   },
   {
     "id": "AP_Microeconomics_25",

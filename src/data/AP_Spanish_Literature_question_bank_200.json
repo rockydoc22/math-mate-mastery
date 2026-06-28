@@ -1,66 +1,66 @@
 [
   {
-    "id": "AP_SpanLit_1",
-    "question": "¿Cuál es el tema central de 'Don Quijote de la Mancha'?",
+    "id": "AP_Spanish_Lit_286",
+    "question": "Jorge Luis Borges es célebre por sus cuentos que exploran temas como:",
     "choices": {
-      "A": "La conquista de América",
-      "B": "El conflicto entre realidad e ilusión",
-      "C": "La Reconquista",
-      "D": "La vida de un noble exitoso"
+      "A": "El realismo costumbrista.",
+      "B": "Las historias de amor imposibles.",
+      "C": "La crítica a la burguesía.",
+      "D": "Los laberintos, los espejos, el tiempo, la identidad y la naturaleza de la realidad."
     },
-    "answer": "B",
-    "difficulty": 6,
-    "explanation": "Don Quixote explores the tension between reality and illusion."
+    "answer": "D",
+    "explanation": "La obra de Borges se caracteriza por su erudición, sus referencias filosóficas y literarias, y la creación de universos complejos donde se desdibujan los límites entre realidad y ficción.",
+    "difficulty": 4
   },
   {
-    "id": "AP_SpanLit_2",
-    "question": "En Garcilaso: 'de rosa y de azucena se muestra la color en vuestro gesto.' ¿Qué recurso es?",
+    "id": "AP_Spanish_Lit_25",
+    "question": "¿Cuál de las siguientes obras es un ejemplo de la prosa didáctica y moralizante del Conde Lucanor?",
     "choices": {
-      "A": "Hipérbole",
-      "B": "Metáfora",
-      "C": "Onomatopeya",
-      "D": "Ironía"
-    },
-    "answer": "B",
-    "difficulty": 7,
-    "explanation": "Metaphor comparing the beloved's complexion to roses and lilies."
-  },
-  {
-    "id": "AP_SpanLit_3",
-    "question": "'Cien años de soledad' es ejemplo de:",
-    "choices": {
-      "A": "Naturalismo",
-      "B": "Romanticismo",
-      "C": "Realismo mágico",
-      "D": "Neoclasicismo"
+      "A": "Don Quijote de la Mancha",
+      "B": "El Buscón",
+      "C": "El Conde Lucanor (ejemplos)",
+      "D": "La Celestina"
     },
     "answer": "C",
     "difficulty": 5,
-    "explanation": "García Márquez's masterpiece defines magical realism."
+    "explanation": "Los 'ejemplos' del Conde Lucanor son relatos breves con una moraleja clara, diseñados para enseñar y advertir."
   },
   {
-    "id": "AP_SpanLit_4",
-    "question": "Sancho Panza representa:",
+    "id": "AP_Spanish_Lit_287",
+    "question": "En la obra de Julio Cortázar, especialmente en 'Rayuela', se rompe con la linealidad narrativa para:",
     "choices": {
-      "A": "El antagonista",
-      "B": "El realismo y sentido común como contrapunto",
-      "C": "El narrador",
-      "D": "La nobleza"
+      "A": "Reforzar la estructura tradicional de la novela.",
+      "B": "Respetar la cronología de los hechos.",
+      "C": "Simplificar la trama.",
+      "D": "Ofrecer múltiples posibilidades de lectura e invitar a la participación activa del lector."
+    },
+    "answer": "D",
+    "explanation": "'Rayuela' propone una estructura fragmentaria y abierta, permitiendo al lector elegir el orden de lectura de los capítulos, lo que refleja la búsqueda de nuevas formas de experimentar la realidad y la literatura.",
+    "difficulty": 4
+  },
+  {
+    "id": "AP_Spanish_Lit_106",
+    "question": "Miguel de Unamuno, en su obra \"Niebla\", crea un personaje que dialoga con su autor. ¿Qué concepto filosófico explora a través de esta metaficción?",
+    "choices": {
+      "A": "La creación de un mundo utópico.",
+      "B": "La relación entre el creador y la criatura, y la naturaleza de la realidad literaria.",
+      "C": "La importancia de la religión en la vida cotidiana.",
+      "D": "El estudio detallado de la historia de España."
     },
     "answer": "B",
-    "difficulty": 6,
-    "explanation": "Sancho's practicality contrasts with Don Quixote's idealism."
+    "difficulty": 8,
+    "explanation": "Augusto Pérez, el personaje de \"Niebla\", se enfrenta a su creador, Unamuno, en una reflexión sobre la libertad del individuo, la realidad y la naturaleza de la ficción literaria (metaficción)."
   },
   {
     "id": "AP_SpanLit_5",
     "question": "'Lazarillo de Tormes' inauguró:",
     "choices": {
       "A": "Novela pastoril",
-      "B": "Novela picaresca",
+      "B": "Novela de caballerías",
       "C": "Novela sentimental",
-      "D": "Novela de caballerías"
+      "D": "Novela picaresca"
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 6,
     "explanation": "First picaresque novel—told from a lower-class antihero's perspective."
   },
@@ -78,17 +78,17 @@
     "explanation": "Federico García Lorca, executed by Nationalists in 1936."
   },
   {
-    "id": "AP_SpanLit_7",
-    "question": "En 'La casa de Bernarda Alba,' la casa simboliza:",
+    "id": "AP_Spanish_Lit_284",
+    "question": "El 'Romancero gitano' de Federico García Lorca se caracteriza por la fusión de:",
     "choices": {
-      "A": "Libertad",
-      "B": "Opresión y control patriarcal",
-      "C": "Prosperidad",
-      "D": "Armonía familiar"
+      "A": "La mitología clásica y la historia romana.",
+      "B": "El realismo social y la poesía pura.",
+      "C": "La lírica medieval y el teatro del Siglo de Oro.",
+      "D": "Lo popular andaluz (con elementos gitanos) y la vanguardia poética."
     },
-    "answer": "B",
-    "difficulty": 7,
-    "explanation": "The house represents suffocating patriarchal social norms."
+    "answer": "D",
+    "explanation": "Lorca combina elementos del folclore andaluz y la cultura gitana con las innovaciones estéticas de las vanguardias, creando un universo poético único, trágico y sensual.",
+    "difficulty": 4
   },
   {
     "id": "AP_SpanLit_8",
@@ -121,11 +121,11 @@
     "question": "Sor Juana Inés de la Cruz defendió:",
     "choices": {
       "A": "La guerra",
-      "B": "El derecho de la mujer al conocimiento",
+      "B": "Las aventuras",
       "C": "La naturaleza",
-      "D": "Las aventuras"
+      "D": "El derecho de la mujer al conocimiento"
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 6,
     "explanation": "Sor Juana championed women's intellectual rights."
   },
@@ -159,12 +159,12 @@
     "id": "AP_SpanLit_13",
     "question": "El Modernismo hispanoamericano se caracteriza por:",
     "choices": {
-      "A": "Lenguaje coloquial",
-      "B": "Belleza formal, exotismo y musicalidad",
+      "A": "Belleza formal, exotismo y musicalidad",
+      "B": "Lenguaje coloquial",
       "C": "Compromiso político",
       "D": "Representación realista"
     },
-    "answer": "B",
+    "answer": "A",
     "difficulty": 6,
     "explanation": "Modernismo emphasized formal beauty, exotic imagery, and musicality."
   },
@@ -186,11 +186,11 @@
     "question": "El 'Boom' latinoamericano se caracterizó por:",
     "choices": {
       "A": "Imitación europea",
-      "B": "Experimentación narrativa y proyección internacional",
+      "B": "Solo poesía",
       "C": "Rechazo de la ficción",
-      "D": "Solo poesía"
+      "D": "Experimentación narrativa y proyección internacional"
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 6,
     "explanation": "The Boom featured narrative experimentation and international recognition."
   },
@@ -199,11 +199,11 @@
     "question": "'La vida es sueño' de Calderón explora:",
     "choices": {
       "A": "El gobierno municipal",
-      "B": "La vida como ilusión",
+      "B": "El amor cortés",
       "C": "El teatro religioso",
-      "D": "El amor cortés"
+      "D": "La vida como ilusión"
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 6,
     "explanation": "Philosophical drama exploring whether life is reality or illusion."
   },
@@ -237,12 +237,12 @@
     "id": "AP_SpanLit_19",
     "question": "'Carpe diem' en el Siglo de Oro significa:",
     "choices": {
-      "A": "Rechazar placeres",
-      "B": "Aprovechar el momento ante la brevedad de la vida",
+      "A": "Aprovechar el momento ante la brevedad de la vida",
+      "B": "Rechazar placeres",
       "C": "Buscar vida eterna",
       "D": "Criticar la monarquía"
     },
-    "answer": "B",
+    "answer": "A",
     "difficulty": 6,
     "explanation": "Seize the day—youth and beauty are fleeting."
   },
@@ -250,27 +250,27 @@
     "id": "AP_SpanLit_20",
     "question": "'El túnel' de Sabato se narra desde:",
     "choices": {
-      "A": "Omnisciente 3ª persona",
-      "B": "1ª persona del asesino/protagonista",
+      "A": "1ª persona del asesino/protagonista",
+      "B": "Omnisciente 3ª persona",
       "C": "2ª persona",
       "D": "Múltiples narradores"
     },
-    "answer": "B",
+    "answer": "A",
     "difficulty": 6,
     "explanation": "First-person narration by the murderer Juan Pablo Castel."
   },
   {
-    "id": "AP_Spanish_Lit_21",
-    "question": "¿Qué figura retórica se utiliza predominantemente en el siguiente verso de Quevedo: '¡Es hieloEstabante, es ceniza, es polvo, es sombra'?",
+    "id": "AP_SpanLit_2",
+    "question": "En Garcilaso: 'de rosa y de azucena se muestra la color en vuestro gesto.' ¿Qué recurso es?",
     "choices": {
-      "A": "Metáfora",
-      "B": "Hipérbaton",
-      "C": "Anáfora",
-      "D": "Enumeración/Polisíndeton"
+      "A": "Hipérbole",
+      "B": "Metáfora",
+      "C": "Onomatopeya",
+      "D": "Ironía"
     },
-    "answer": "D",
-    "difficulty": 6,
-    "explanation": "La repetición de 'es' al inicio de cada elemento de la lista, junto con la acumulación de términos que describen la fugacidad de la vida, es un ejemplo claro de enumeración y polisíndeton."
+    "answer": "B",
+    "difficulty": 7,
+    "explanation": "Metaphor comparing the beloved's complexion to roses and lilies."
   },
   {
     "id": "AP_Spanish_Lit_22",
@@ -290,11 +290,11 @@
     "question": "¿Quién es el autor de 'El burlador de Sevilla y convidado de piedra', obra fundamental del teatro barroco español?",
     "choices": {
       "A": "Pedro Calderón de la Barca",
-      "B": "Tirso de Molina",
+      "B": "Miguel de Cervantes",
       "C": "Lope de Vega",
-      "D": "Miguel de Cervantes"
+      "D": "Tirso de Molina"
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 7,
     "explanation": "Tirso de Molina es tradicionalmente reconocido como el autor de esta obra, que introduce la figura del seductor Don Juan."
   },
@@ -303,63 +303,63 @@
     "question": "En los poemas de Antonio Machado, el tema recurrente del 'camino' simboliza principalmente:",
     "choices": {
       "A": "La búsqueda de la riqueza material",
-      "B": "El viaje de la vida y la búsqueda de la identidad",
+      "B": "El destino inalterable del ser humano",
       "C": "La importancia del hogar y la familia",
-      "D": "El destino inalterable del ser humano"
+      "D": "El viaje de la vida y la búsqueda de la identidad"
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 6,
     "explanation": "El 'camino' en Machado es una poderosa metáfora de la existencia humana, del paso del tiempo, de las experiencias vividas y de la búsqueda personal."
   },
   {
-    "id": "AP_Spanish_Lit_25",
-    "question": "¿Cuál de las siguientes obras es un ejemplo de la prosa didáctica y moralizante del Conde Lucanor?",
+    "id": "AP_Spanish_Lit_102",
+    "question": "La poesía de Sor Juana Inés de la Cruz a menudo aborda temas como el amor, la inteligencia y la condición de la mujer. ¿Qué actitud crítica se puede inferir en su famoso poema \"Hombres necios que acusáis\"?",
     "choices": {
-      "A": "Don Quijote de la Mancha",
-      "B": "El Buscón",
-      "C": "El Conde Lucanor (ejemplos)",
-      "D": "La Celestina"
+      "A": "Una defensa de la superioridad masculina en la sociedad.",
+      "B": "Una crítica a la doble moral de los hombres hacia las mujeres.",
+      "C": "Una resignación ante la injusticia social.",
+      "D": "Una alabanza a la virtud femenina como única salvación."
     },
-    "answer": "C",
-    "difficulty": 5,
-    "explanation": "Los 'ejemplos' del Conde Lucanor son relatos breves con una moraleja clara, diseñados para enseñar y advertir."
+    "answer": "B",
+    "difficulty": 7,
+    "explanation": "En \"Hombres necios\", Sor Juana denuncia la hipocresía masculina que culpa a las mujeres por su comportamiento, mientras que ellos mismos son la causa o instigadores de dicho comportamiento."
   },
   {
     "id": "AP_Spanish_Lit_26",
     "question": "El 'Romancero gitano' de Federico García Lorca se caracteriza por:",
     "choices": {
       "A": "La descripción detallada de la vida en la corte",
-      "B": "La exploración de temas universales a través del mundo gitano y andaluz",
+      "B": "El enfoque en la política y la revolución social",
       "C": "El uso exclusivo de métrica clásica y sonetos",
-      "D": "El enfoque en la política y la revolución social"
+      "D": "La exploración de temas universales a través del mundo gitano y andaluz"
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 7,
     "explanation": "Lorca utiliza la cultura gitana y el paisaje andaluz como vehículo para explorar temas como el amor, la muerte, la frustración y la libertad."
   },
   {
-    "id": "AP_Spanish_Lit_27",
-    "question": "¿Qué técnica narrativa emplea Julio Cortázar de manera prominente en 'Rayuela' para involucrar al lector?",
+    "id": "AP_Spanish_Lit_182",
+    "question": "Rubén Darío es considerado el máximo exponente de:",
     "choices": {
-      "A": "La narración lineal y cronológica",
-      "B": "El uso de un narrador omnisciente único",
-      "C": "La estructura fragmentada y la posibilidad de lectura no lineal",
-      "D": "El monólogo interior introspectivo de un solo personaje"
+      "A": "La Generación del 98",
+      "B": "El Modernismo",
+      "C": "El Realismo mágico",
+      "D": "El Vanguardismo"
     },
-    "answer": "C",
-    "difficulty": 8,
-    "explanation": "'Rayuela' es famosa por su estructura modular y las distintas formas de leerla, invitando al lector a participar activamente en la construcción del significado."
+    "answer": "B",
+    "difficulty": 6,
+    "explanation": "El poeta nicaragüense Rubén Darío revolucionó la poesía en lengua española, introduciendo nuevas formas métricas, léxico y temáticas que definieron el Modernismo hispanoamericano."
   },
   {
     "id": "AP_Spanish_Lit_28",
     "question": "En la obra de Sor Juana Inés de la Cruz, ¿cuál de los siguientes temas es fundamental?",
     "choices": {
-      "A": "La exaltación de la vida monástica como única vía de salvación",
-      "B": "La defensa del derecho de la mujer al conocimiento y la intelectualidad",
+      "A": "La defensa del derecho de la mujer al conocimiento y la intelectualidad",
+      "B": "La exaltación de la vida monástica como única vía de salvación",
       "C": "La crítica directa a la estructura colonial",
       "D": "La celebración de la conquista española"
     },
-    "answer": "B",
+    "answer": "A",
     "difficulty": 8,
     "explanation": "Sor Juana es una figura clave en la defensa de la educación y la capacidad intelectual de las mujeres, como se evidencia en su 'Respuesta a Sor Filotea'."
   },
@@ -407,11 +407,11 @@
     "question": "El concepto de 'desdoblamiento' o duplicidad del yo es un tema recurrente en la obra de:",
     "choices": {
       "A": "Federico García Lorca",
-      "B": "Jorge Luis Borges",
+      "B": "Miguel Ángel Asturias",
       "C": "Pablo Neruda",
-      "D": "Miguel Ángel Asturias"
+      "D": "Jorge Luis Borges"
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 8,
     "explanation": "Borges explora frecuentemente la idea de la identidad múltiple, los dobles, los laberintos y la naturaleza ilusoria de la realidad."
   },
@@ -420,11 +420,11 @@
     "question": "¿Qué característica define la prosa de Emilia Pardo Bazán, especialmente en obras como 'Los pazos de Ulloa'?",
     "choices": {
       "A": "El idealismo romántico y la evasión de la realidad",
-      "B": "El determinismo biológico y social del Naturalismo",
+      "B": "La experimentación lingüística radical",
       "C": "El humor absurdo y la fantasía surrealista",
-      "D": "La experimentación lingüística radical"
+      "D": "El determinismo biológico y social del Naturalismo"
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 7,
     "explanation": "Pardo Bazán aplica los principios del Naturalismo, mostrando cómo el entorno y la herencia influyen poderosamente en el comportamiento humano, a menudo de forma sombría."
   },
@@ -459,11 +459,11 @@
     "question": "El concepto de 'intrahistoria' en Miguel de Unamuno se refiere a:",
     "choices": {
       "A": "La historia oficial de los grandes eventos y personajes",
-      "B": "La vida cotidiana, anónima y silenciosa del pueblo",
+      "B": "La historia del arte y la cultura",
       "C": "La historia de las ideas filosóficas",
-      "D": "La historia del arte y la cultura"
+      "D": "La vida cotidiana, anónima y silenciosa del pueblo"
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 8,
     "explanation": "Unamuno buscaba en la 'intrahistoria' la verdadera esencia de España, en las vidas anónimas y en las tradiciones que conformaban el ser de un pueblo."
   },
@@ -498,11 +498,11 @@
     "question": "¿Qué recurso estilístico domina en la poesía de Francisco de Quevedo para expresar la fugacidad del tiempo y la vanidad de la vida?",
     "choices": {
       "A": "La hipérbole exagerada",
-      "B": "La antítesis y el contraste agudo",
+      "B": "La repetición simple y monótona",
       "C": "El uso exclusivo de la metáfora animal",
-      "D": "La repetición simple y monótona"
+      "D": "La antítesis y el contraste agudo"
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 8,
     "explanation": "Quevedo es maestro en el uso de contrastes (vida/muerte, luz/sombra, ser/no ser) para enfatizar la fragilidad de la existencia humana."
   },
@@ -523,12 +523,12 @@
     "id": "AP_Spanish_Lit_41",
     "question": "¿Qué figura literaria se utiliza para describir la acción de 'robar la luz del día' en la poesía de García Lorca?",
     "choices": {
-      "A": "Símil",
-      "B": "Personificación",
+      "A": "Personificación",
+      "B": "Símil",
       "C": "Hipérbole",
       "D": "Oxímoron"
     },
-    "answer": "B",
+    "answer": "A",
     "difficulty": 6,
     "explanation": "La luz del día, un elemento inanimado, se le atribuye la acción humana de ser 'robada', lo que constituye una personificación."
   },
@@ -536,12 +536,12 @@
     "id": "AP_Spanish_Lit_42",
     "question": "La novela 'La celestina' de Fernando de Rojas se clasifica como:",
     "choices": {
-      "A": "Novela pastoril",
-      "B": "Comedia humanística o tragicomedia",
+      "A": "Comedia humanística o tragicomedia",
+      "B": "Novela pastoril",
       "C": "Novela de caballerías",
       "D": "Novela picaresca"
     },
-    "answer": "B",
+    "answer": "A",
     "difficulty": 6,
     "explanation": "Aunque tiene elementos de diálogo extenso y conflicto, su estructura dialogada y su enfoque en las pasiones humanas la acercan a la comedia humanística, precursora del teatro moderno."
   },
@@ -575,12 +575,12 @@
     "id": "AP_Spanish_Lit_45",
     "question": "La figura de Don Quijote, en la obra de Cervantes, representa principalmente:",
     "choices": {
-      "A": "La pura locura irracional",
-      "B": "La lucha entre el idealismo y la realidad, la locura y la cordura",
+      "A": "La lucha entre el idealismo y la realidad, la locura y la cordura",
+      "B": "La pura locura irracional",
       "C": "La resignación ante el destino",
       "D": "El pragmatismo y el escepticismo"
     },
-    "answer": "B",
+    "answer": "A",
     "difficulty": 7,
     "explanation": "Don Quijote encarna la tensión entre los ideales caballerescos y la cruda realidad, cuestionando los límites de la cordura y la percepción."
   },
@@ -601,12 +601,12 @@
     "id": "AP_Spanish_Lit_47",
     "question": "¿Cuál de los siguientes autores es conocido por su obra maestra \"Don Quijote de la Mancha\"?",
     "choices": {
-      "A": "Lope de Vega",
-      "B": "Miguel de Cervantes",
+      "A": "Miguel de Cervantes",
+      "B": "Lope de Vega",
       "C": "Pedro Calderón de la Barca",
       "D": "Francisco de Quevedo"
     },
-    "answer": "B",
+    "answer": "A",
     "difficulty": 5,
     "explanation": "Miguel de Cervantes Saavedra es el autor de \"El ingenioso hidalgo don Quijote de la Mancha\", considerada una de las obras cumbre de la literatura española y universal."
   },
@@ -680,11 +680,11 @@
     "question": "¿Qué tipo de escritos caracterizan la obra de Mariano José de Larra?",
     "choices": {
       "A": "Novelas históricas.",
-      "B": "Artículos de costumbres y crítica social.",
+      "B": "Tratados filosóficos.",
       "C": "Sonetos satíricos.",
-      "D": "Tratados filosóficos."
+      "D": "Artículos de costumbres y crítica social."
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 6,
     "explanation": "Larra fue un periodista y escritor prolífico, conocido por sus \"artículos de costumbres\" y su aguda crítica a la sociedad española de su tiempo."
   },
@@ -693,11 +693,11 @@
     "question": "Emilia Pardo Bazán es una figura central del Naturalismo en España. Su novela \"Los pazos de Ulloa\" destaca por:",
     "choices": {
       "A": "La idealización del mundo rural.",
-      "B": "La representación cruda de la realidad y el determinismo.",
+      "B": "La exploración de mitos clásicos.",
       "C": "El enfoque en la vida cortesana.",
-      "D": "La exploración de mitos clásicos."
+      "D": "La representación cruda de la realidad y el determinismo."
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 7,
     "explanation": "\"Los pazos de Ulloa\" es un ejemplo claro del Naturalismo, mostrando la influencia del medio y la herencia en el comportamiento de los personajes, con una descripción detallada y a menudo sórdida."
   },
@@ -719,11 +719,11 @@
     "question": "¿Quién es el poeta nicaragüense considerado el máximo representante del Modernismo hispanoamericano?",
     "choices": {
       "A": "José Martí",
-      "B": "Rubén Darío",
+      "B": "Leopoldo Lugones",
       "C": "Amado Nervo",
-      "D": "Leopoldo Lugones"
+      "D": "Rubén Darío"
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 5,
     "explanation": "Rubén Darío, con obras como \"Azul...\" y \"Prosas profanas\", revolucionó la poesía en lengua española e impulsó el Modernismo."
   },
@@ -731,12 +731,12 @@
     "id": "AP_Spanish_Lit_57",
     "question": "La poesía de Antonio Machado, también de la Generación del 98, se caracteriza por:",
     "choices": {
-      "A": "El escapismo y la fantasía.",
-      "B": "La introspección, el paisaje castellano y la reflexión sobre el tiempo.",
+      "A": "La introspección, el paisaje castellano y la reflexión sobre el tiempo.",
+      "B": "El escapismo y la fantasía.",
       "C": "La experimentación vanguardista radical.",
       "D": "La exaltación del individualismo bohemio."
     },
-    "answer": "B",
+    "answer": "A",
     "difficulty": 6,
     "explanation": "Machado une en su poesía la evocación del paisaje español (especialmente Castilla), la meditación sobre la existencia y el paso del tiempo, y una profunda sensibilidad humana."
   },
@@ -745,11 +745,11 @@
     "question": "Federico García Lorca pertenece a la Generación del 27. Su obra, tanto la poética como la teatral, a menudo explora:",
     "choices": {
       "A": "La vida burguesa y sus convenciones.",
-      "B": "El mundo gitano, la frustración y la muerte.",
+      "B": "La vida en la corte de los Austrias.",
       "C": "La historia de la conquista de América.",
-      "D": "La vida en la corte de los Austrias."
+      "D": "El mundo gitano, la frustración y la muerte."
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 5,
     "explanation": "Temas como el destino trágico, la opresión social, el mundo gitano andaluz y la muerte son recurrentes en la obra de Lorca, especialmente en \"Romancero Gitano\" y sus dramas."
   },
@@ -757,12 +757,12 @@
     "id": "AP_Spanish_Lit_59",
     "question": "Pablo Neruda, poeta chileno ganador del Premio Nobel, es conocido por su lírica que abarca desde:",
     "choices": {
-      "A": "La poesía hermética y surrealista.",
-      "B": "Las odas elementales y el compromiso social hasta el amor.",
+      "A": "Las odas elementales y el compromiso social hasta el amor.",
+      "B": "La poesía hermética y surrealista.",
       "C": "La poesía mística y religiosa.",
       "D": "El teatro del absurdo."
     },
-    "answer": "B",
+    "answer": "A",
     "difficulty": 6,
     "explanation": "La obra de Neruda es vasta y variada, incluyendo desde la poesía de amor y compromiso político hasta sus célebres \"Odas elementales\" que celebran lo cotidiano."
   },
@@ -771,11 +771,11 @@
     "question": "Jorge Luis Borges, escritor argentino, es famoso por sus cuentos que exploran temas como:",
     "choices": {
       "A": "La vida rural y las tradiciones gauchas.",
-      "B": "Los laberintos, los espejos, el tiempo y la identidad.",
+      "B": "Las aventuras de piratas en el Caribe.",
       "C": "El realismo social de la clase obrera.",
-      "D": "Las aventuras de piratas en el Caribe."
+      "D": "Los laberintos, los espejos, el tiempo y la identidad."
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 6,
     "explanation": "Los cuentos de Borges son conocidos por su carácter filosófico y fantástico, abordando conceptos como la infinitud, la realidad, el tiempo y la literatura misma."
   },
@@ -793,17 +793,17 @@
     "explanation": "\"Rayuela\" es célebre por su carácter experimental y su estructura fragmentaria, que permite al lector elegir el orden de lectura de los capítulos."
   },
   {
-    "id": "AP_Spanish_Lit_62",
-    "question": "Gabriel García Márquez, premio Nobel de Literatura, es el máximo exponente del Realismo Mágico con su novela:",
+    "id": "AP_SpanLit_4",
+    "question": "Sancho Panza representa:",
     "choices": {
-      "A": "La ciudad y los perros",
-      "B": "La casa de los espíritus",
-      "C": "Cien años de soledad",
-      "D": "El otoño del patriarca"
+      "A": "El antagonista",
+      "B": "El realismo y sentido común como contrapunto",
+      "C": "El narrador",
+      "D": "La nobleza"
     },
-    "answer": "C",
-    "difficulty": 5,
-    "explanation": "\"Cien años de soledad\" es la obra cumbre del Realismo Mágico y una de las novelas más importantes del siglo XX, narrando la saga de la familia Buendía en Macondo."
+    "answer": "B",
+    "difficulty": 6,
+    "explanation": "Sancho's practicality contrasts with Don Quixote's idealism."
   },
   {
     "id": "AP_Spanish_Lit_63",
@@ -849,11 +849,11 @@
     "question": "En la poesía de Federico García Lorca, el \"duende\" se refiere a:",
     "choices": {
       "A": "Un tipo de baile flamenco.",
-      "B": "Una fuerza misteriosa y elemental que inspira el arte.",
+      "B": "Una forma de estructura poética.",
       "C": "Un personaje mitológico.",
-      "D": "Una forma de estructura poética."
+      "D": "Una fuerza misteriosa y elemental que inspira el arte."
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 8,
     "explanation": "Lorca teorizó sobre el \"duende\" en su conferencia \"Teoría y juego del duende\", describiéndolo como una fuerza irracional, una inspiración profunda y a menudo trágica, ligada a las raíces del arte."
   },
@@ -939,12 +939,12 @@
     "id": "AP_Spanish_Lit_73",
     "question": "En 'El Conde Lucanor', el cuento de Patronio que narra la historia de un mozo que se casó con una moza que le daba guerra, ¿qué enseñanza principal transmite?",
     "choices": {
-      "A": "La importancia de la paciencia en el matrimonio.",
-      "B": "La necesidad de imponer autoridad desde el principio para controlar una situación.",
+      "A": "La necesidad de imponer autoridad desde el principio para controlar una situación.",
+      "B": "La importancia de la paciencia en el matrimonio.",
       "C": "El valor de la negociación y el compromiso.",
       "D": "La fatalidad del destino en las relaciones humanas."
     },
-    "answer": "B",
+    "answer": "A",
     "difficulty": 6,
     "explanation": "La moraleja principal del cuento es que es crucial establecer el control y la autoridad desde el inicio para evitar problemas futuros, como se demuestra con la violencia del mozo hacia la moza al principio."
   },
@@ -953,11 +953,11 @@
     "question": "Don Quijote, al enfrentarse a los molinos de viento, ¿qué representa esta escena en términos de la obra de Cervantes?",
     "choices": {
       "A": "La crítica directa a la caballería andante.",
-      "B": "La lucha entre la idealización y la realidad.",
+      "B": "La influencia de la locura en la visión del mundo.",
       "C": "Un error de percepción del protagonista.",
-      "D": "La influencia de la locura en la visión del mundo."
+      "D": "La lucha entre la idealización y la realidad."
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 7,
     "explanation": "La escena de los molinos de viento es un símbolo icónico de la tensión entre los ideales caballerescos de Don Quijote y la cruda realidad que lo rodea, mostrando su incapacidad para discernir entre fantasía y verdad."
   },
@@ -965,12 +965,12 @@
     "id": "AP_Spanish_Lit_75",
     "question": "¿Qué recurso estilístico es característico de la poesía de Lope de Vega, especialmente en sus sonetos?",
     "choices": {
-      "A": "El uso exclusivo del verso blanco.",
-      "B": "La abundancia de hipérbatos y metáforas audaces.",
+      "A": "La abundancia de hipérbatos y metáforas audaces.",
+      "B": "El uso exclusivo del verso blanco.",
       "C": "La sencillez y naturalidad del lenguaje.",
       "D": "La estructura rígida y predecible."
     },
-    "answer": "B",
+    "answer": "A",
     "difficulty": 6,
     "explanation": "Lope de Vega, como poeta barroco, empleaba frecuentemente el hipérbaton (alteración del orden sintáctico) y metáforas sorprendentes para enriquecer su expresión poética."
   },
@@ -979,11 +979,11 @@
     "question": "En 'La vida es sueño' de Calderón de la Barca, ¿cuál es el tema central que se explora a través del personaje de Segismundo?",
     "choices": {
       "A": "La venganza como motor de la acción.",
-      "B": "La naturaleza del libre albedrío frente al destino.",
+      "B": "La búsqueda de la identidad en un mundo caótico.",
       "C": "La crítica a la tiranía y al poder absoluto.",
-      "D": "La búsqueda de la identidad en un mundo caótico."
+      "D": "La naturaleza del libre albedrío frente al destino."
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 7,
     "explanation": "La obra se centra en la compleja relación entre el destino predeterminado y la capacidad del hombre para ejercer su libre albedrío, especialmente en la transformación de Segismundo."
   },
@@ -991,12 +991,12 @@
     "id": "AP_Spanish_Lit_77",
     "question": "¿Qué característica principal define la poesía satírica de Francisco de Quevedo?",
     "choices": {
-      "A": "La delicadeza y el tono melancólico.",
-      "B": "La ironía mordaz, el conceptismo y la crítica social.",
+      "A": "La ironía mordaz, el conceptismo y la crítica social.",
+      "B": "La delicadeza y el tono melancólico.",
       "C": "La celebración de la vida y el amor cortés.",
       "D": "El uso de un lenguaje sencillo y popular."
     },
-    "answer": "B",
+    "answer": "A",
     "difficulty": 7,
     "explanation": "Quevedo es conocido por su poesía satírica, caracterizada por el ingenio agudo (conceptismo), la ironía punzante y una crítica incisiva de la sociedad de su tiempo."
   },
@@ -1031,11 +1031,11 @@
     "question": "¿Qué autor es conocido por sus artículos de costumbres y su crítica social en la España del siglo XIX, a menudo publicados bajo el pseudónimo de 'El Duende Sombrío'?",
     "choices": {
       "A": "Benito Pérez Galdós",
-      "B": "Mariano José de Larra",
+      "B": "Emilia Pardo Bazán",
       "C": "Leopoldo Alas 'Clarín'",
-      "D": "Emilia Pardo Bazán"
+      "D": "Mariano José de Larra"
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 7,
     "explanation": "Mariano José de Larra fue un importante periodista y ensayista del Romanticismo español, famoso por sus artículos de crítica social y política, y por su pseudónimo 'El Duende Sombrío'."
   },
@@ -1082,12 +1082,12 @@
     "id": "AP_Spanish_Lit_84",
     "question": "En la poesía de Antonio Machado, el tema del 'camino' suele simbolizar...",
     "choices": {
-      "A": "La búsqueda de la riqueza material.",
-      "B": "El paso del tiempo y la fugacidad de la vida.",
+      "A": "El paso del tiempo y la fugacidad de la vida.",
+      "B": "La búsqueda de la riqueza material.",
       "C": "El viaje físico hacia un destino concreto.",
       "D": "La rutina y la monotonía de la existencia."
     },
-    "answer": "B",
+    "answer": "A",
     "difficulty": 7,
     "explanation": "El 'camino' en Machado es una metáfora recurrente de la vida misma, con su transcurrir, sus experiencias y la inevitable fugacidad del tiempo."
   },
@@ -1095,12 +1095,12 @@
     "id": "AP_Spanish_Lit_85",
     "question": "¿Qué elemento es fundamental en la estética del 'Romancero Gitano' de Federico García Lorca?",
     "choices": {
-      "A": "La descripción minuciosa de la vida urbana.",
-      "B": "La fusión de lo popular andaluz con lo vanguardista y lo trágico.",
+      "A": "La fusión de lo popular andaluz con lo vanguardista y lo trágico.",
+      "B": "La descripción minuciosa de la vida urbana.",
       "C": "El realismo social y la denuncia de injusticias.",
       "D": "La evocación de la mitología clásica griega."
     },
-    "answer": "B",
+    "answer": "A",
     "difficulty": 8,
     "explanation": "Lorca combina elementos del folclore andaluz y la cultura gitana con imágenes vanguardistas y un profundo sentido de la tragedia y el destino fatal."
   },
@@ -1109,11 +1109,11 @@
     "question": "La poesía de Pablo Neruda, especialmente en sus 'Veinte poemas de amor y una canción desesperada', se caracteriza por un tono...",
     "choices": {
       "A": "Altamente intelectual y hermético.",
-      "B": "Melancólico, sensual y de profunda introspección amorosa.",
+      "B": "Satírico y de crítica política.",
       "C": "Épico y de exaltación nacionalista.",
-      "D": "Satírico y de crítica política."
+      "D": "Melancólico, sensual y de profunda introspección amorosa."
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 7,
     "explanation": "Estos poemas exploran el amor con una intensidad emocional, sensualidad y una melancolía característica de Neruda, abordando la pérdida y la nostalgia."
   },
@@ -1134,12 +1134,12 @@
     "id": "AP_Spanish_Lit_88",
     "question": "El concepto de 'realismo mágico' en la obra de Gabriel García Márquez se manifiesta a través de...",
     "choices": {
-      "A": "La representación objetiva y desapasionada de la realidad.",
-      "B": "La fusión natural de elementos fantásticos con la vida cotidiana.",
+      "A": "La fusión natural de elementos fantásticos con la vida cotidiana.",
+      "B": "La representación objetiva y desapasionada de la realidad.",
       "C": "La crítica explícita a las estructuras sociales.",
       "D": "El uso de un lenguaje científico y preciso."
     },
-    "answer": "B",
+    "answer": "A",
     "difficulty": 7,
     "explanation": "El realismo mágico consiste en presentar lo extraordinario y lo fantástico como algo normal y cotidiano dentro de un contexto realista, sin asombro por parte de los personajes."
   },
@@ -1148,11 +1148,11 @@
     "question": "¿Qué elemento es recurrente en las novelas de Isabel Allende, como 'La casa de los espíritus'?",
     "choices": {
       "A": "La ambientación en la Europa medieval.",
-      "B": "La exploración de la historia latinoamericana a través de sagas familiares y elementos fantásticos.",
+      "B": "La vida de los inmigrantes en la antigua Roma.",
       "C": "La crítica directa a la política de Estados Unidos.",
-      "D": "La vida de los inmigrantes en la antigua Roma."
+      "D": "La exploración de la historia latinoamericana a través de sagas familiares y elementos fantásticos."
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 7,
     "explanation": "Allende suele narrar la historia de América Latina, a menudo marcada por la política y la violencia, a través de sagas familiares que incorporan elementos del realismo mágico."
   },
@@ -1161,11 +1161,11 @@
     "question": "La poesía de la cubana Nancy Morejón a menudo aborda temas como...",
     "choices": {
       "A": "La búsqueda de la fama y la riqueza.",
-      "B": "La identidad afro-cubana, la historia y la lucha por la justicia social.",
+      "B": "La vida en el espacio exterior.",
       "C": "El amor romántico idealizado.",
-      "D": "La vida en el espacio exterior."
+      "D": "La identidad afro-cubana, la historia y la lucha por la justicia social."
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 8,
     "explanation": "Morejón es una figura clave de la poesía cubana contemporánea, cuya obra frecuentemente explora las raíces africanas, la cultura cubana y las luchas por la emancipación y la igualdad."
   },
@@ -1225,12 +1225,12 @@
     "id": "AP_Spanish_Lit_95",
     "question": "En 'Rayuela' de Julio Cortázar, la estructura no lineal y las múltiples opciones de lectura son un reflejo de...",
     "choices": {
-      "A": "La linealidad del tiempo en la vida moderna.",
-      "B": "La búsqueda de un lector activo y cómplice.",
+      "A": "La búsqueda de un lector activo y cómplice.",
+      "B": "La linealidad del tiempo en la vida moderna.",
       "C": "La imposibilidad de libertad individual.",
       "D": "La importancia de seguir las tradiciones literarias."
     },
-    "answer": "B",
+    "answer": "A",
     "difficulty": 8,
     "explanation": "Cortázar propone una novela 'abierta' con diferentes órdenes de lectura, invitando al lector a participar activamente en la construcción del significado y la estructura de la obra."
   },
@@ -1277,12 +1277,12 @@
     "id": "AP_Spanish_Lit_99",
     "question": "¿Qué rasgo distintivo se puede identificar en la obra teatral de Lope de Vega, especialmente en comparación con la estructura clásica?",
     "choices": {
-      "A": "La estricta unidad de acción, tiempo y lugar.",
-      "B": "La mezcla de lo trágico y lo cómico.",
+      "A": "La mezcla de lo trágico y lo cómico.",
+      "B": "La estricta unidad de acción, tiempo y lugar.",
       "C": "El uso exclusivo de personajes mitológicos.",
       "D": "La división en cinco actos."
     },
-    "answer": "B",
+    "answer": "A",
     "difficulty": 6,
     "explanation": "Lope de Vega, en su \"Arte nuevo de hacer comedias\", defendió la mezcla de géneros (tragicomedia) y la ruptura de las unidades clásicas para mayor entretenimiento del público."
   },
@@ -1300,30 +1300,30 @@
     "explanation": "El encierro de Segismundo es una metáfora de cómo la crianza y el entorno moldean al individuo, planteando la pregunta sobre si la naturaleza o la educación determinan quiénes somos."
   },
   {
-    "id": "AP_Spanish_Lit_101",
-    "question": "¿Cuál de los siguientes temas es recurrente en la poesía satírica y moral de Francisco de Quevedo?",
+    "id": "AP_SpanLit_3",
+    "question": "'Cien años de soledad' es ejemplo de:",
     "choices": {
-      "A": "El amor idealizado neoplatónico.",
-      "B": "La fugacidad de la vida y la vanidad de las ambiciones humanas (tempus fugit, vanitas vanitatum).",
-      "C": "La exaltación de la naturaleza bucólica.",
-      "D": "La celebración de las gestas heroicas."
+      "A": "Naturalismo",
+      "B": "Romanticismo",
+      "C": "Realismo mágico",
+      "D": "Neoclasicismo"
     },
-    "answer": "B",
-    "difficulty": 7,
-    "explanation": "Quevedo es conocido por su visión pesimista y desengañada de la vida, reflexionando constantemente sobre la brevedad de la existencia y la inutilidad de las vanidades mundanas."
+    "answer": "C",
+    "difficulty": 5,
+    "explanation": "García Márquez's masterpiece defines magical realism."
   },
   {
-    "id": "AP_Spanish_Lit_102",
-    "question": "La poesía de Sor Juana Inés de la Cruz a menudo aborda temas como el amor, la inteligencia y la condición de la mujer. ¿Qué actitud crítica se puede inferir en su famoso poema \"Hombres necios que acusáis\"?",
+    "id": "AP_Spanish_Lit_21",
+    "question": "¿Qué figura retórica se utiliza predominantemente en el siguiente verso de Quevedo: '¡Es hieloEstabante, es ceniza, es polvo, es sombra'?",
     "choices": {
-      "A": "Una defensa de la superioridad masculina en la sociedad.",
-      "B": "Una crítica a la doble moral de los hombres hacia las mujeres.",
-      "C": "Una resignación ante la injusticia social.",
-      "D": "Una alabanza a la virtud femenina como única salvación."
+      "A": "Metáfora",
+      "B": "Hipérbaton",
+      "C": "Anáfora",
+      "D": "Enumeración/Polisíndeton"
     },
-    "answer": "B",
-    "difficulty": 7,
-    "explanation": "En \"Hombres necios\", Sor Juana denuncia la hipocresía masculina que culpa a las mujeres por su comportamiento, mientras que ellos mismos son la causa o instigadores de dicho comportamiento."
+    "answer": "D",
+    "difficulty": 6,
+    "explanation": "La repetición de 'es' al inicio de cada elemento de la lista, junto con la acumulación de términos que describen la fugacidad de la vida, es un ejemplo claro de enumeración y polisíndeton."
   },
   {
     "id": "AP_Spanish_Lit_103",
@@ -1342,12 +1342,12 @@
     "id": "AP_Spanish_Lit_104",
     "question": "Mariano José de Larra, en sus artículos periodísticos, se caracterizó por su estilo crítico y a menudo pesimista. ¿Cuál era uno de sus principales objetivos?",
     "choices": {
-      "A": "Idealizar el pasado glorioso de España.",
-      "B": "Criticar las costumbres y la apatía de la sociedad española del siglo XIX.",
+      "A": "Criticar las costumbres y la apatía de la sociedad española del siglo XIX.",
+      "B": "Idealizar el pasado glorioso de España.",
       "C": "Promover la monarquía absoluta.",
       "D": "Exaltar la figura del clero."
     },
-    "answer": "B",
+    "answer": "A",
     "difficulty": 6,
     "explanation": "Larra utilizó sus artículos para señalar los defectos y vicios de la sociedad española de su tiempo, abogando por la modernización y la superación de la inercia."
   },
@@ -1356,26 +1356,26 @@
     "question": "Emilia Pardo Bazán fue una figura clave en la introducción y adaptación del Naturalismo en España. ¿Qué característica del Naturalismo se observa claramente en \"Los pazos de Ulloa\"?",
     "choices": {
       "A": "La idealización de la vida rural.",
-      "B": "El determinismo biológico y social, y la exploración de los aspectos más crudos de la realidad.",
+      "B": "La presentación de un mundo ordenado y armónico.",
       "C": "El enfoque en la psicología de los personajes aristocráticos.",
-      "D": "La presentación de un mundo ordenado y armónico."
+      "D": "El determinismo biológico y social, y la exploración de los aspectos más crudos de la realidad."
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 7,
     "explanation": "En \"Los pazos de Ulloa\", Pardo Bazán aplica los principios naturalistas, mostrando cómo los instintos primarios y las condiciones sociales determinan el destino de los personajes, sin rehuir la descripción de lo sórdido."
   },
   {
-    "id": "AP_Spanish_Lit_106",
-    "question": "Miguel de Unamuno, en su obra \"Niebla\", crea un personaje que dialoga con su autor. ¿Qué concepto filosófico explora a través de esta metaficción?",
+    "id": "AP_Spanish_Lit_62",
+    "question": "Gabriel García Márquez, premio Nobel de Literatura, es el máximo exponente del Realismo Mágico con su novela:",
     "choices": {
-      "A": "La creación de un mundo utópico.",
-      "B": "La relación entre el creador y la criatura, y la naturaleza de la realidad literaria.",
-      "C": "La importancia de la religión en la vida cotidiana.",
-      "D": "El estudio detallado de la historia de España."
+      "A": "La ciudad y los perros",
+      "B": "La casa de los espíritus",
+      "C": "Cien años de soledad",
+      "D": "El otoño del patriarca"
     },
-    "answer": "B",
-    "difficulty": 8,
-    "explanation": "Augusto Pérez, el personaje de \"Niebla\", se enfrenta a su creador, Unamuno, en una reflexión sobre la libertad del individuo, la realidad y la naturaleza de la ficción literaria (metaficción)."
+    "answer": "C",
+    "difficulty": 5,
+    "explanation": "\"Cien años de soledad\" es la obra cumbre del Realismo Mágico y una de las novelas más importantes del siglo XX, narrando la saga de la familia Buendía en Macondo."
   },
   {
     "id": "AP_Spanish_Lit_107",
@@ -1395,11 +1395,11 @@
     "question": "En la poesía de Antonio Machado, especialmente en \"Campos de Castilla\", ¿qué sentimiento predomina al observar el paisaje y la vida de la meseta española?",
     "choices": {
       "A": "Una alegría desbordante y optimismo.",
-      "B": "Una melancolía y un profundo amor por la tierra, a menudo teñidos de tristeza.",
+      "B": "Una celebración de la modernidad industrial.",
       "C": "Una crítica feroz a la decadencia de España.",
-      "D": "Una celebración de la modernidad industrial."
+      "D": "Una melancolía y un profundo amor por la tierra, a menudo teñidos de tristeza."
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 6,
     "explanation": "Machado sentía una profunda conexión con el paisaje castellano, expresando un amor melancólico por su sobriedad, su historia y la vida sencilla de sus gentes, a menudo contrastada con la decadencia."
   },
@@ -1498,12 +1498,12 @@
     "id": "AP_Spanish_Lit_116",
     "question": "¿Qué figura retórica es fundamental en la poesía barroca de Quevedo y Góngora para crear complejidad y profundidad expresiva?",
     "choices": {
-      "A": "La elipsis.",
-      "B": "La metáfora audaz y el hipérbaton.",
+      "A": "La metáfora audaz y el hipérbaton.",
+      "B": "La elipsis.",
       "C": "La anáfora.",
       "D": "La enumeración simple."
     },
-    "answer": "B",
+    "answer": "A",
     "difficulty": 7,
     "explanation": "El Barroco se caracteriza por el uso de figuras retóricas complejas. Quevedo y Góngora, aunque con estilos distintos, emplearon metáforas atrevidas y la alteración del orden sintáctico (hipérbaton) para intensificar el lenguaje."
   },
@@ -1511,12 +1511,12 @@
     "id": "AP_Spanish_Lit_117",
     "question": "En la obra de Cervantes, ¿qué dualidad se explora constantemente a través de Don Quijote y Sancho Panza?",
     "choices": {
-      "A": "La razón contra la fe.",
-      "B": "El idealismo frente al pragmatismo/realismo.",
+      "A": "El idealismo frente al pragmatismo/realismo.",
+      "B": "La razón contra la fe.",
       "C": "La nobleza frente a la plebe.",
       "D": "La guerra contra la paz."
     },
-    "answer": "B",
+    "answer": "A",
     "difficulty": 5,
     "explanation": "Don Quijote representa el idealismo, la aspiración a lo noble y lo caballeresco, mientras que Sancho Panza encarna el sentido común, el materialismo y la visión pragmática de la vida."
   },
@@ -1525,11 +1525,11 @@
     "question": "¿Qué tipo de personajes suelen poblar las obras de Lope de Vega, reflejando la sociedad de su tiempo?",
     "choices": {
       "A": "Seres mitológicos y dioses griegos.",
-      "B": "Personajes arquetípicos como el galán, la dama, el gracioso y el rey.",
+      "B": "Animales parlantes con moralejas.",
       "C": "Figuras históricas de la antigüedad romana.",
-      "D": "Animales parlantes con moralejas."
+      "D": "Personajes arquetípicos como el galán, la dama, el gracioso y el rey."
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 6,
     "explanation": "Lope de Vega creó personajes que representaban diferentes estamentos y roles sociales, como el galán valiente, la dama hermosa, el gracioso cómico y el rey justo, facilitando la identificación del público."
   },
@@ -1550,12 +1550,12 @@
     "id": "AP_Spanish_Lit_120",
     "question": "¿Cuál es el principal conflicto que enfrenta el protagonista en \"El Lazarillo de Tormes\"?",
     "choices": {
-      "A": "La lucha por el poder político.",
+      "A": "La supervivencia y el ascenso social en una sociedad hostil y desengañada.",
       "B": "La búsqueda de la fama literaria.",
-      "C": "La supervivencia y el ascenso social en una sociedad hostil y desengañada.",
+      "C": "La lucha por el poder político.",
       "D": "El amor imposible por una dama de alta alcurnia."
     },
-    "answer": "C",
+    "answer": "A",
     "difficulty": 5,
     "explanation": "Lázaro narra su vida desde la infancia, mostrando cómo debe ingeniárselas para sobrevivir y ascender socialmente, adaptándose a las circunstancias y a los vicios de sus amos."
   },
@@ -1576,12 +1576,12 @@
     "id": "AP_Spanish_Lit_122",
     "question": "¿Cuál de los siguientes géneros literarios es la obra cumbre de Don Juan Manuel, el Conde Lucanor?",
     "choices": {
-      "A": "Novela picaresca",
-      "B": "Tirada de cuentos didácticos",
+      "A": "Tirada de cuentos didácticos",
+      "B": "Novela picaresca",
       "C": "Poesía lírica",
       "D": "Drama religioso"
     },
-    "answer": "B",
+    "answer": "A",
     "difficulty": 5,
     "explanation": "El Conde Lucanor es una colección de cuentos breves con una moraleja, que sirven como enseñanza. Es un ejemplo temprano de la literatura didáctica en prosa."
   },
@@ -1628,12 +1628,12 @@
     "id": "AP_Spanish_Lit_126",
     "question": "¿Qué estilo literario se asocia principalmente con Francisco de Quevedo?",
     "choices": {
-      "A": "El culteranismo",
-      "B": "El conceptismo",
+      "A": "El conceptismo",
+      "B": "El culteranismo",
       "C": "El prerromanticismo",
       "D": "El realismo mágico"
     },
-    "answer": "B",
+    "answer": "A",
     "difficulty": 7,
     "explanation": "Quevedo es el máximo exponente del conceptismo, que se caracteriza por la agudeza del ingenio, los juegos de palabras, las metáforas audaces y la concisión expresiva para transmitir ideas complejas."
   },
@@ -1642,11 +1642,11 @@
     "question": "Sor Juana Inés de la Cruz, en su obra, defiende apasionadamente:",
     "choices": {
       "A": "La supremacía del hombre sobre la mujer",
-      "B": "El derecho de la mujer a la educación y al conocimiento",
+      "B": "La necesidad de la censura eclesiástica en la literatura",
       "C": "La importancia de la vida monástica como única opción femenina",
-      "D": "La necesidad de la censura eclesiástica en la literatura"
+      "D": "El derecho de la mujer a la educación y al conocimiento"
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 8,
     "explanation": "La 'Respuesta a Sor Filotea de la Cruz' es un alegato fundamental en defensa del intelecto femenino y del derecho de las mujeres a acceder al saber y cultivar sus dotes intelectuales."
   },
@@ -1667,12 +1667,12 @@
     "id": "AP_Spanish_Lit_129",
     "question": "Mariano José de Larra, en sus artículos periodísticos, critica principalmente:",
     "choices": {
-      "A": "La influencia de la literatura extranjera",
-      "B": "La lentitud del progreso y la persistencia de las costumbres arcaicas en España",
+      "A": "La lentitud del progreso y la persistencia de las costumbres arcaicas en España",
+      "B": "La influencia de la literatura extranjera",
       "C": "La falta de interés por la poesía",
       "D": "La exagerada religiosidad de la sociedad"
     },
-    "answer": "B",
+    "answer": "A",
     "difficulty": 7,
     "explanation": "Larra fue un crítico mordaz de la sociedad española de su tiempo, señalando sus vicios, su atraso y la resistencia al cambio en artículos como 'Vuelva usted mañana'."
   },
@@ -1733,11 +1733,11 @@
     "question": "En Bodas de Sangre de Federico García Lorca, la naturaleza juega un papel importante como:",
     "choices": {
       "A": "Un escenario decorativo y pasivo",
-      "B": "Un reflejo de las pasiones humanas y un presagio de los acontecimientos",
+      "B": "Una fuente de consuelo y escapismo",
       "C": "Un obstáculo para la acción de los personajes",
-      "D": "Una fuente de consuelo y escapismo"
+      "D": "Un reflejo de las pasiones humanas y un presagio de los acontecimientos"
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 8,
     "explanation": "En la obra de Lorca, la luna, el caballo, el agua, etc., no son meros elementos de fondo, sino que simbolizan fuerzas primarias, el destino y las emociones desbordadas de los personajes."
   },
@@ -1759,11 +1759,11 @@
     "question": "En Ficciones de Jorge Luis Borges, ¿qué elemento es recurrente en la construcción de sus relatos?",
     "choices": {
       "A": "El realismo costumbrista",
-      "B": "La exploración de laberintos, bibliotecas y espejos",
+      "B": "La presencia de personajes históricos fielmente representados",
       "C": "El desarrollo lineal de la trama",
-      "D": "La presencia de personajes históricos fielmente representados"
+      "D": "La exploración de laberintos, bibliotecas y espejos"
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 8,
     "explanation": "Borges utiliza símbolos como el laberinto, la biblioteca y el espejo para explorar conceptos filosóficos y metafísicos, creando universos complejos y reflexivos."
   },
@@ -1784,12 +1784,12 @@
     "id": "AP_Spanish_Lit_138",
     "question": "En Cien años de soledad de Gabriel García Márquez, el realismo mágico se manifiesta principalmente a través de:",
     "choices": {
-      "A": "La descripción objetiva de la realidad",
-      "B": "La fusión natural de elementos fantásticos y cotidianos",
+      "A": "La fusión natural de elementos fantásticos y cotidianos",
+      "B": "La descripción objetiva de la realidad",
       "C": "El predominio de lo científico y lo racional",
       "D": "La crítica social directa y explícita"
     },
-    "answer": "B",
+    "answer": "A",
     "difficulty": 9,
     "explanation": "El realismo mágico de García Márquez integra lo maravilloso como algo normal dentro de la vida cotidiana de Macondo, sin asombro por parte de los personajes, creando una atmósfera única."
   },
@@ -1837,11 +1837,11 @@
     "question": "¿Cuál de estas obras pertenece a la tradición del Siglo de Oro español?",
     "choices": {
       "A": "La Regenta",
-      "B": "El Buscón",
+      "B": "Cinco horas con Mario",
       "C": "La ciudad y los perros",
-      "D": "Cinco horas con Mario"
+      "D": "El Buscón"
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 6,
     "explanation": "El Buscón de Francisco de Quevedo es una novela picaresca emblemática del Siglo de Oro, publicada en 1626."
   },
@@ -1876,11 +1876,11 @@
     "question": "En la poesía de Sor Juana Inés de la Cruz, ¿qué se observa con frecuencia respecto a los temas?",
     "choices": {
       "A": "Exclusivamente temas religiosos y devocionales",
-      "B": "Una mezcla de temas filosóficos, amorosos, satíricos y religiosos",
+      "B": "Predominantemente temas históricos y bélicos",
       "C": "Centrada en la descripción del paisaje americano",
-      "D": "Predominantemente temas históricos y bélicos"
+      "D": "Una mezcla de temas filosóficos, amorosos, satíricos y religiosos"
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 7,
     "explanation": "Sor Juana demostró una gran versatilidad, abordando desde complejos razonamientos filosóficos y teológicos hasta poemas de amor, burlas y reflexiones sobre la condición humana."
   },
@@ -1966,12 +1966,12 @@
     "id": "AP_Spanish_Lit_152",
     "question": "La \"Respuesta a Sor Filotea de la Cruz\" de Sor Juana Inés de la Cruz es un texto fundamental para entender su:",
     "choices": {
-      "A": "Teología.",
-      "B": "Defensa de la educación femenina y su derecho al saber.",
+      "A": "Defensa de la educación femenina y su derecho al saber.",
+      "B": "Teología.",
       "C": "Crítica a la Inquisición.",
       "D": "Poesía lírica."
     },
-    "answer": "B",
+    "answer": "A",
     "difficulty": 8,
     "explanation": "En esta obra, Sor Juana argumenta apasionadamente a favor del derecho de las mujeres a la educación y al estudio, utilizando su propia vida como ejemplo."
   },
@@ -1979,39 +1979,25 @@
     "id": "AP_Spanish_Lit_153",
     "question": "Los \"Rimas\" de Gustavo Adolfo Bécquer se caracterizan por su:",
     "choices": {
-      "A": "Complejidad métrica y temática.",
-      "B": "Brevedad, musicalidad y subjetividad.",
+      "A": "Brevedad, musicalidad y subjetividad.",
+      "B": "Complejidad métrica y temática.",
       "C": "Carácter narrativo y descriptivo.",
       "D": "Uso del verso alejandrino y lenguaje arcaico."
     },
-    "answer": "B",
+    "answer": "A",
     "difficulty": 5,
     "explanation": "Las rimas de Bécquer son poemas cortos, de gran lirismo, con una musicalidad intrínseca y centrados en la expresión de sentimientos íntimos y a menudo inefables."
-  },
-  {
-    "id": "AP_Spanish_Lit_154",
-    "question": "¿Qué crítico literario español, conocido por su estilo satírico y reflexivo, es autor de \"Artículos de costumbres\"?",
-    "choices": {
-      "A": "Miguel de Unamuno.",
-      "B": "Mariano José de Larra.",
-      "C": "Benito Pérez Galdós.",
-      "D__": "Leopoldo Alas \"Clarín\".",
-      "D": ""
-    },
-    "answer": "B",
-    "difficulty": 6,
-    "explanation": "Mariano José de Larra es el autor de los famosos \"Artículos de costumbres\", donde analizaba con agudeza y a menudo crítica la sociedad española de su tiempo."
   },
   {
     "id": "AP_Spanish_Lit_155",
     "question": "En la obra de Emilia Pardo Bazán, el \"naturalismo\" se manifiesta a través de:",
     "choices": {
       "A": "La idealización de la naturaleza.",
-      "B": "El estudio científico y objetivo de la realidad, incluyendo sus aspectos más sórdidos y determinados por la herencia y el medio.",
+      "B": "La preferencia por temas históricos y legendarios.",
       "C": "El enfoque en la espiritualidad y la trascendencia.",
-      "D": "La preferencia por temas históricos y legendarios."
+      "D": "El estudio científico y objetivo de la realidad, incluyendo sus aspectos más sórdidos y determinados por la herencia y el medio."
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 7,
     "explanation": "Pardo Bazán aplicó los principios del naturalismo, influenciada por Zola, para retratar la realidad de forma cruda y determinista, explorando las influencias del entorno y la herencia en el comportamiento humano."
   },
@@ -2058,12 +2044,12 @@
     "id": "AP_Spanish_Lit_159",
     "question": "En \"Bodas de Sangre\" de Federico García Lorca, la muerte es representada a menudo como:",
     "choices": {
-      "A": "Una fuerza liberadora.",
-      "B": "Una consecuencia inevitable del destino y las pasiones.",
+      "A": "Una consecuencia inevitable del destino y las pasiones.",
+      "B": "Una fuerza liberadora.",
       "C": "Un castigo divino.",
       "D": "Una solución a los conflictos."
     },
-    "answer": "B",
+    "answer": "A",
     "difficulty": 7,
     "explanation": "La muerte en \"Bodas de Sangre\" no es un evento aleatorio, sino el resultado trágico de las fuerzas del destino, la sangre y las pasiones humanas que arrastran a los personajes."
   },
@@ -2072,11 +2058,11 @@
     "question": "El \"Canto General\" de Pablo Neruda es una obra monumental que abarca:",
     "choices": {
       "A": "La historia y la geografía de Chile exclusivamente.",
-      "B": "La historia, la geografía y la lucha de los pueblos de América Latina.",
+      "B": "Una crítica al imperialismo estadounidense.",
       "C": "La reflexión personal del poeta sobre el amor.",
-      "D": "Una crítica al imperialismo estadounidense."
+      "D": "La historia, la geografía y la lucha de los pueblos de América Latina."
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 7,
     "explanation": "\"Canto General\" es un vasto poema épico que busca abarcar la totalidad de la experiencia latinoamericana, desde su naturaleza hasta sus luchas sociales y políticas."
   },
@@ -2123,12 +2109,12 @@
     "id": "AP_Spanish_Lit_164",
     "question": "El \"realismo mágico\" en la obra de Isabel Allende, como en \"La casa de los espíritus\", se utiliza para:",
     "choices": {
-      "A": "Describir la realidad social y política de Chile.",
-      "B": "Crear atmósferas oníricas y explorar la conexión entre lo tangible y lo espiritual.",
+      "A": "Crear atmósferas oníricas y explorar la conexión entre lo tangible y lo espiritual.",
+      "B": "Describir la realidad social y política de Chile.",
       "C": "Criticar la superstición popular.",
       "D": "Recrear la historia de América Latina de forma puramente fantástica."
     },
-    "answer": "B",
+    "answer": "A",
     "difficulty": 6,
     "explanation": "Allende integra lo sobrenatural y lo fantástico en la vida cotidiana de sus personajes para explorar las dimensiones espirituales y emocionales de la experiencia humana y latinoamericana."
   },
@@ -2149,12 +2135,12 @@
     "id": "AP_Spanish_Lit_166",
     "question": "En la obra de Nancy Morejón, el tema recurrente de la diáspora africana en Cuba se aborda desde una perspectiva de:",
     "choices": {
-      "A": "Negación de la identidad cultural.",
-      "B": "Reivindicación de la herencia africana y la resistencia.",
+      "A": "Reivindicación de la herencia africana y la resistencia.",
+      "B": "Negación de la identidad cultural.",
       "C": "Idealización de la cultura europea.",
       "D": "Crítica a la religión yoruba."
     },
-    "answer": "B",
+    "answer": "A",
     "difficulty": 7,
     "explanation": "Morejón rescata y celebra la herencia africana, explorando las complejidades de la identidad afrocubana y la resistencia cultural frente a la opresión histórica."
   },
@@ -2176,11 +2162,11 @@
     "question": "El concepto del \"desengaño\" barroco, muy presente en Quevedo, se refiere a:",
     "choices": {
       "A": "La creencia en la salvación divina.",
-      "B": "La pérdida de las ilusiones y la conciencia de la vanidad de las cosas mundanas.",
+      "B": "La exaltación de la razón sobre la fe.",
       "C": "La búsqueda de la belleza ideal.",
-      "D": "La exaltación de la razón sobre la fe."
+      "D": "La pérdida de las ilusiones y la conciencia de la vanidad de las cosas mundanas."
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 7,
     "explanation": "El desengaño es una visión pesimista del mundo, propia del Barroco, que reconoce la fugacidad de la vida, la falsedad de las apariencias y la vanidad de las ambiciones humanas."
   },
@@ -2228,11 +2214,11 @@
     "question": "¿Cuál de los siguientes temas es central en el *Conde Lucanor*?",
     "choices": {
       "A": "La honra y la venganza",
-      "B": "La prudencia y la discreción en el matrimonio y la vida",
+      "B": "El amor cortés y la idealización de la amada",
       "C": "La lucha entre el bien y el mal",
-      "D": "El amor cortés y la idealización de la amada"
+      "D": "La prudencia y la discreción en el matrimonio y la vida"
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 5,
     "explanation": "El *Conde Lucanor*, a través de sus ejemplos, ofrece consejos prácticos y morales, muchos de los cuales giran en torno a la importancia de la sensatez y la buena toma de decisiones, especialmente en el contexto de las relaciones y el comportamiento social."
   },
@@ -2241,11 +2227,11 @@
     "question": "En *Don Quijote de la Mancha*, ¿qué representa Sancho Panza principalmente?",
     "choices": {
       "A": "El idealismo y la locura caballeresca",
-      "B": "El pragmatismo y el sentido común popular",
+      "B": "La ambición desmedida y el deseo de poder",
       "C": "La sabiduría ancestral y la filosofía estoica",
-      "D": "La ambición desmedida y el deseo de poder"
+      "D": "El pragmatismo y el sentido común popular"
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 6,
     "explanation": "Sancho Panza es el contrapunto terrenal de Don Quijote. Su apego a las necesidades básicas, su lenguaje popular y sus refranes reflejan una visión práctica y realista del mundo, en contraste con los ideales caballerescos de su amo."
   },
@@ -2266,12 +2252,12 @@
     "id": "AP_Spanish_Lit_175",
     "question": "En *La vida es sueño* de Calderón de la Barca, ¿cuál es el dilema principal de Segismundo?",
     "choices": {
-      "A": "Su deseo de venganza contra su padre",
-      "B": "La lucha entre su libre albedrío y el destino",
+      "A": "La lucha entre su libre albedrío y el destino",
+      "B": "Su deseo de venganza contra su padre",
       "C": "Su amor imposible por Rosaura",
       "D": "La búsqueda de la corona perdida"
     },
-    "answer": "B",
+    "answer": "A",
     "difficulty": 6,
     "explanation": "El eje central de la obra es la reflexión sobre si las acciones humanas están predeterminadas o si el individuo tiene libertad para forjar su propio camino, tema planteado a través de la experiencia de Segismundo."
   },
@@ -2279,12 +2265,12 @@
     "id": "AP_Spanish_Lit_176",
     "question": "¿Qué movimiento literario se asocia más fuertemente con Quevedo?",
     "choices": {
-      "A": "El Renacimiento",
-      "B": "El Barroco",
+      "A": "El Barroco",
+      "B": "El Renacimiento",
       "C": "El Romanticismo",
       "D": "El Realismo"
     },
-    "answer": "B",
+    "answer": "A",
     "difficulty": 5,
     "explanation": "Francisco de Quevedo es uno de los máximos representantes del Barroco español, un periodo marcado por el pesimismo, la desilusión y la complejidad estilística, características muy presentes en su obra."
   },
@@ -2293,11 +2279,11 @@
     "question": "Sor Juana Inés de la Cruz, en su *Respuesta a Sor Filotea*, defiende principalmente:",
     "choices": {
       "A": "La vida monástica y la devoción religiosa",
-      "B": "El derecho de las mujeres a la educación y al conocimiento",
+      "B": "La necesidad de la independencia política de las colonias",
       "C": "La importancia de la poesía lírica como forma de expresión",
-      "D": "La necesidad de la independencia política de las colonias"
+      "D": "El derecho de las mujeres a la educación y al conocimiento"
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 7,
     "explanation": "En esta obra autobiográfica y de carácter argumentativo, Sor Juana expone de manera brillante y apasionada su defensa del acceso de las mujeres al saber y a las disciplinas intelectuales."
   },
@@ -2306,11 +2292,11 @@
     "question": "¿Qué característica es distintiva de las *Leyendas* de Gustavo Adolfo Bécquer?",
     "choices": {
       "A": "El realismo crudo y la descripción detallada de la sociedad",
-      "B": "La fantasía, el misterio y la atmósfera intimista",
+      "B": "La épica heroica y las gestas militares",
       "C": "El humor, la sátira y la crítica social directa",
-      "D": "La épica heroica y las gestas militares"
+      "D": "La fantasía, el misterio y la atmósfera intimista"
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 6,
     "explanation": "Las leyendas de Bécquer se sumergen en el mundo de lo sobrenatural, lo romántico y lo melancólico, creando atmósferas cargadas de misterio y evocación poética."
   },
@@ -2318,12 +2304,12 @@
     "id": "AP_Spanish_Lit_179",
     "question": "Mariano José de Larra es conocido por su estilo periodístico y su crítica a:",
     "choices": {
-      "A": "La irracionalidad del amor romántico",
-      "B": "La decadencia y los vicios de la sociedad española del siglo XIX",
+      "A": "La decadencia y los vicios de la sociedad española del siglo XIX",
+      "B": "La irracionalidad del amor romántico",
       "C": "La superstición y las creencias populares",
       "D": "La corrupción dentro de la Iglesia"
     },
-    "answer": "B",
+    "answer": "A",
     "difficulty": 6,
     "explanation": "Larra, a través de sus artículos periodísticos, analizó y criticó con agudeza los males que aquejaban a España en su época, como la apatía, la falta de progreso y las costumbres sociales anquilosadas."
   },
@@ -2345,26 +2331,26 @@
     "question": "En la filosofía de Miguel de Unamuno, ¿qué concepto es fundamental para entender la condición humana?",
     "choices": {
       "A": "La razón pura y la lógica",
-      "B": "La fe y la duda, la 'agonía' existencial",
+      "B": "El materialismo dialéctico",
       "C": "El determinismo biológico",
-      "D": "El materialismo dialéctico"
+      "D": "La fe y la duda, la 'agonía' existencial"
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 8,
     "explanation": "Unamuno exploró profundamente la tensión entre la fe religiosa y la duda existencial, la angustia ante la muerte y la búsqueda de la inmortalidad, conceptos que él englobaba bajo el término 'agonía'."
   },
   {
-    "id": "AP_Spanish_Lit_182",
-    "question": "Rubén Darío es considerado el máximo exponente de:",
+    "id": "AP_SpanLit_1",
+    "question": "¿Cuál es el tema central de 'Don Quijote de la Mancha'?",
     "choices": {
-      "A": "La Generación del 98",
-      "B": "El Modernismo",
-      "C": "El Realismo mágico",
-      "D": "El Vanguardismo"
+      "A": "El conflicto entre realidad e ilusión",
+      "B": "La conquista de América",
+      "C": "La Reconquista",
+      "D": "La vida de un noble exitoso"
     },
-    "answer": "B",
+    "answer": "A",
     "difficulty": 6,
-    "explanation": "El poeta nicaragüense Rubén Darío revolucionó la poesía en lengua española, introduciendo nuevas formas métricas, léxico y temáticas que definieron el Modernismo hispanoamericano."
+    "explanation": "Don Quixote explores the tension between reality and illusion."
   },
   {
     "id": "AP_Spanish_Lit_183",
@@ -2422,28 +2408,14 @@
     "id": "AP_Spanish_Lit_187",
     "question": "Julio Cortázar es famoso por su experimentación con la estructura narrativa y el lenguaje, como se observa en:",
     "choices": {
-      "A": "*Cien años de soledad*",
-      "B": "*Rayuela*",
+      "A": "*Rayuela*",
+      "B": "*Cien años de soledad*",
       "C": "*El Aleph*",
       "D": "*La casa de los espíritus*"
     },
-    "answer": "B",
+    "answer": "A",
     "difficulty": 7,
     "explanation": "*Rayuela* es un claro ejemplo de la ruptura de Cortázar con las convenciones narrativas, proponiendo una lectura no lineal y una interacción activa del lector con la obra."
-  },
-  {
-    "id": "AP_Spanish_Lit_188",
-    "question": "¿Cuál de estas obras es un pilar del Realismo Mágico?",
-    "choices": {
-      "A": "*Don Quijote de la Mancha*",
-      "B": "*Cien años de soledad*",
-      "C": "*La casa de Bernarda Alba*",
-      "D": "*Soledades*",
-      "E": "*El amor brujo*"
-    },
-    "answer": "B",
-    "difficulty": 6,
-    "explanation": "*Cien años de soledad* de Gabriel García Márquez es la obra cumbre del Realismo Mágico, género que fusiona lo real y lo fantástico de manera natural."
   },
   {
     "id": "AP_Spanish_Lit_189",
@@ -2541,11 +2513,11 @@
     "question": "La obra de Miguel Delibes, como *Los santos inocentes*, se caracteriza por su enfoque en:",
     "choices": {
       "A": "La vida de la burguesía urbana y sus conflictos",
-      "B": "La realidad rural, la injusticia social y la dignidad de los oprimidos",
+      "B": "La experimentación con la estructura narrativa y el lenguaje",
       "C": "Las aventuras de personajes exóticos en tierras lejanas",
-      "D": "La experimentación con la estructura narrativa y el lenguaje"
+      "D": "La realidad rural, la injusticia social y la dignidad de los oprimidos"
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 7,
     "explanation": "Delibes retrata de manera sensible y conmovedora el mundo rural español, sus gentes, sus tradiciones y las injusticias que sufren, especialmente los más desfavorecidos."
   },
@@ -2567,11 +2539,11 @@
     "question": "En 'El Conde Lucanor', ¿cuál es el nombre del personaje principal, un noble que busca consejo de su ayo Patronio?",
     "choices": {
       "A": "Don Juan Manuel",
-      "B": "El Conde Lucanor",
+      "B": "El infante",
       "C": "Patronio",
-      "D": "El infante"
+      "D": "El Conde Lucanor"
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 6,
     "explanation": "El título de la obra, 'El Conde Lucanor', se refiere al personaje principal que busca la sabiduría de Patronio para resolver sus problemas."
   },
@@ -2632,11 +2604,11 @@
     "question": "Sor Juana Inés de la Cruz, figura del Barroco novohispano, defendió el derecho de las mujeres al conocimiento en su famoso poema, ¿cuál?",
     "choices": {
       "A": "'Soneto 145'",
-      "B": "'Hombres necios que acusáis'",
+      "B": "'Primero Sueño'",
       "C": "'Redondilla 235'",
-      "D": "'Primero Sueño'"
+      "D": "'Hombres necios que acusáis'"
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 7,
     "explanation": "El poema 'Hombres necios que acusáis' (a menudo identificado por su primer verso) es una crítica contundente a la doble moral y a la negación del acceso al saber para las mujeres."
   },
@@ -2645,11 +2617,11 @@
     "question": "Gustavo Adolfo Bécquer, poeta romántico español, es célebre por sus 'Rimas' y 'Leyendas'. ¿Qué características predominan en su poesía?",
     "choices": {
       "A": "Grandes gestas heroicas y patriotismo",
-      "B": "Sentimientos íntimos, amor idealizado y melancolía",
+      "B": "Descripciones detalladas de la naturaleza",
       "C": "Crítica social y política mordaz",
-      "D": "Descripciones detalladas de la naturaleza"
+      "D": "Sentimientos íntimos, amor idealizado y melancolía"
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 6,
     "explanation": "La poesía de Bécquer se centra en la expresión de emociones personales, el amor inalcanzable, la soledad y una estética de la sugerencia y la musicalidad."
   },
@@ -2696,12 +2668,12 @@
     "id": "AP_Spanish_Lit_208",
     "question": "Rubén Darío, poeta nicaragüense, es el padre del Modernismo hispanoamericano. ¿Qué buscaba principalmente el Modernismo literario?",
     "choices": {
-      "A": "El retorno a formas clásicas y la objetividad",
-      "B": "La renovación estética del lenguaje, el ritmo y la musicalidad",
+      "A": "La renovación estética del lenguaje, el ritmo y la musicalidad",
+      "B": "El retorno a formas clásicas y la objetividad",
       "C": "La crítica social y el realismo crudo",
       "D": "La exploración del subconsciente y el surrealismo"
     },
-    "answer": "B",
+    "answer": "A",
     "difficulty": 7,
     "explanation": "El Modernismo se caracterizó por una profunda renovación del lenguaje poético, introduciendo nuevas formas métricas, un léxico refinado y una musicalidad característica."
   },
@@ -2709,12 +2681,12 @@
     "id": "AP_Spanish_Lit_209",
     "question": "Antonio Machado, poeta de la Generación del 98, utiliza en su obra el paisaje de Castilla como reflejo del alma española. ¿Qué elemento simbólico es recurrente en su poesía?",
     "choices": {
-      "A": "El mar Mediterráneo",
-      "B": "El camino y el tiempo",
+      "A": "El camino y el tiempo",
+      "B": "El mar Mediterráneo",
       "C": "La ciudad cosmopolita",
       "D": "La selva tropical"
     },
-    "answer": "B",
+    "answer": "A",
     "difficulty": 7,
     "explanation": "El camino, el viaje y la fugacidad del tiempo son metáforas recurrentes en la poesía de Machado para hablar de la existencia humana y la búsqueda."
   },
@@ -2735,12 +2707,12 @@
     "id": "AP_Spanish_Lit_211",
     "question": "Pablo Neruda, poeta chileno y Premio Nobel de Literatura, es reconocido por su vasta obra que abarca desde el amor hasta el compromiso político. ¿A qué corriente literaria se asocia principalmente?",
     "choices": {
-      "A": "Simbolismo",
-      "B": "Surrealismo y Neorrealismo",
+      "A": "Surrealismo y Neorrealismo",
+      "B": "Simbolismo",
       "C": "Postmodernismo",
       "D": "Clasicismo"
     },
-    "answer": "B",
+    "answer": "A",
     "difficulty": 7,
     "explanation": "Neruda tuvo una evolución literaria que incluyó etapas influenciadas por el surrealismo y posteriormente por un fuerte realismo social y político."
   },
@@ -2762,11 +2734,11 @@
     "question": "Julio Cortázar, escritor argentino, es una figura central del Boom Latinoamericano. ¿Cuál de las siguientes obras es un ejemplo de su experimentación narrativa?",
     "choices": {
       "A": "'Cien años de soledad'",
-      "B": "'Rayuela'",
+      "B": "'El amor en los tiempos del cólera'",
       "C": "'La casa de los espíritus'",
-      "D": "'El amor en los tiempos del cólera'"
+      "D": "'Rayuela'"
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 8,
     "explanation": "'Rayuela' es un hito de la experimentación literaria, proponiendo una lectura no lineal y rompiendo con las estructuras narrativas tradicionales."
   },
@@ -2826,12 +2798,12 @@
     "id": "AP_Spanish_Lit_218",
     "question": "El 'conceptismo' y el 'culteranismo' son dos estilos opuestos pero complementarios del Barroco español. ¿Cuál se caracteriza por la agudeza del pensamiento y la concisión?",
     "choices": {
-      "A": "Culteranismo",
-      "B": "Conceptismo",
+      "A": "Conceptismo",
+      "B": "Culteranismo",
       "C": "Realismo",
       "D": "Romanticismo"
     },
-    "answer": "B",
+    "answer": "A",
     "difficulty": 7,
     "explanation": "El conceptismo, asociado a Quevedo, prioriza la profundidad y la sutileza del concepto, a menudo mediante juegos de palabras y antítesis."
   },
@@ -2891,12 +2863,12 @@
     "id": "AP_Spanish_Lit_223",
     "question": "¿Quién es el autor de 'Don Quijote de la Mancha', considerada una de las obras cumbre de la literatura española?",
     "choices": {
-      "A": "Lope de Vega",
-      "B": "Miguel de Cervantes Saavedra",
+      "A": "Miguel de Cervantes Saavedra",
+      "B": "Lope de Vega",
       "C": "Pedro Calderón de la Barca",
       "D": "Francisco de Quevedo"
     },
-    "answer": "B",
+    "answer": "A",
     "difficulty": 5,
     "explanation": "Miguel de Cervantes Saavedra es universalmente reconocido como el autor de 'El ingenioso hidalgo Don Quijote de la Mancha'."
   },
@@ -2943,12 +2915,12 @@
     "id": "AP_Spanish_Lit_227",
     "question": "Sor Juana Inés de la Cruz, figura clave del Barroco novohispano, es reconocida principalmente por:",
     "choices": {
-      "A": "Sus novelas históricas",
-      "B": "Sus poemas líricos y su defensa de la educación femenina",
+      "A": "Sus poemas líricos y su defensa de la educación femenina",
+      "B": "Sus novelas históricas",
       "C": "Sus obras de teatro de capa y espada",
       "D": "Su prosa mística"
     },
-    "answer": "B",
+    "answer": "A",
     "difficulty": 6,
     "explanation": "Sor Juana fue una prolífica escritora cuyos poemas, villancicos y sonetos, así como su famoso alegato 'Respuesta a Sor Filotea de la Cruz', la consagran como defensora de la inteligencia femenina."
   },
@@ -2979,20 +2951,6 @@
     "explanation": "Bécquer es un poeta fundamental del Romanticismo tardío (post-romanticismo) en España, conocido por su poesía íntima y musical, y por sus leyendas que evocan un mundo de ensueño y misterio."
   },
   {
-    "id": "AP_Spanish_Lit_230",
-    "question": "¿Qué autor del siglo XIX es conocido por sus artículos de costumbres y sus críticas sociales, a menudo teñidos de pesimismo y escepticismo hacia la sociedad española?",
-    "choices": {
-      "A": "Benito Pérez Galdós",
-      "B": "Leopoldo Alas 'Clarín'",
-      "C": "Mariano José de Larra",
-      "D__": "Emilia Pardo Bazán",
-      "D": ""
-    },
-    "answer": "C",
-    "difficulty": 6,
-    "explanation": "Mariano José de Larra fue un periodista y ensayista fundamental del Romanticismo liberal español, célebre por sus artículos periodísticos que retrataban y criticaban la realidad de su tiempo."
-  },
-  {
     "id": "AP_Spanish_Lit_231",
     "question": "Emilia Pardo Bazán fue una figura clave en la introducción y desarrollo de qué movimiento literario en España?",
     "choices": {
@@ -3010,11 +2968,11 @@
     "question": "Miguel de Unamuno, figura central de la Generación del 98, exploró en su obra temas como:",
     "choices": {
       "A": "La vida rural y las tradiciones",
-      "B": "La angustia existencial, la fe, la inmortalidad y la identidad de España",
+      "B": "La Revolución Industrial y sus consecuencias",
       "C": "El amor cortés y la caballería",
-      "D": "La Revolución Industrial y sus consecuencias"
+      "D": "La angustia existencial, la fe, la inmortalidad y la identidad de España"
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 7,
     "explanation": "La obra de Unamuno se caracteriza por su profunda reflexión sobre la condición humana, la fe, la duda, la inmortalidad y el 'problema de España'."
   },
@@ -3036,11 +2994,11 @@
     "question": "La poesía de Antonio Machado, especialmente en 'Campos de Castilla', se caracteriza por:",
     "choices": {
       "A": "La evasión a mundos exóticos y la musicalidad",
-      "B": "La reflexión sobre el paisaje castellano, la preocupación social y la introspección",
+      "B": "La sencillez y el costumbrismo regional",
       "C": "La experimentación vanguardista y el surrealismo",
-      "D": "La sencillez y el costumbrismo regional"
+      "D": "La reflexión sobre el paisaje castellano, la preocupación social y la introspección"
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 6,
     "explanation": "Machado combina una profunda conexión con el paisaje de Castilla con una meditación sobre la existencia, el paso del tiempo y la decadencia de España, junto a una voz de compromiso social."
   },
@@ -3113,12 +3071,12 @@
     "id": "AP_Spanish_Lit_240",
     "question": "¿Qué escritora chilena es autora de 'La casa de los espíritus', obra fundacional del 'realismo mágico' y un fresco de la historia chilena y latinoamericana?",
     "choices": {
-      "A": "Silvia Plath",
-      "B": "Isabel Allende",
+      "A": "Isabel Allende",
+      "B": "Silvia Plath",
       "C": "Laura Esquivel",
       "D": "Clarice Lispector"
     },
-    "answer": "B",
+    "answer": "A",
     "difficulty": 5,
     "explanation": "Isabel Allende, con su novela debut 'La casa de los espíritus', se consolidó como una figura central de la literatura latinoamericana contemporánea, vinculada al realismo mágico."
   },
@@ -3140,11 +3098,11 @@
     "question": "Nancy Morejón, destacada poeta cubana, es conocida por su obra que aborda:",
     "choices": {
       "A": "La nostalgia por la vida pre-revolucionaria",
-      "B": "La identidad afrocubana, la historia, la negritud y la justicia social",
+      "B": "El amor romántico y la naturaleza bucólica",
       "C": "La vida cotidiana en la ciudad moderna",
-      "D": "El amor romántico y la naturaleza bucólica"
+      "D": "La identidad afrocubana, la historia, la negritud y la justicia social"
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 7,
     "explanation": "Nancy Morejón es una voz fundamental en la literatura cubana y latinoamericana, cuya poesía se caracteriza por su compromiso con la negritud, la historia y la afirmación de la identidad afrocubana."
   },
@@ -3166,11 +3124,11 @@
     "question": "El conceptismo, corriente literaria del Barroco español, se distingue por:",
     "choices": {
       "A": "La abundancia de metáforas y la musicalidad",
-      "B": "La sutileza del pensamiento, los juegos de palabras y las antítesis",
+      "B": "La sencillez del lenguaje y la claridad de las ideas",
       "C": "La descripción detallada de la realidad social",
-      "D": "La sencillez del lenguaje y la claridad de las ideas"
+      "D": "La sutileza del pensamiento, los juegos de palabras y las antítesis"
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 7,
     "explanation": "El conceptismo, asociado a Quevedo, se enfoca en la agudeza del ingenio, la concisión y la complejidad conceptual, utilizando recursos como la metáfora audaz, la hipérbole y la antítesis."
   },
@@ -3191,12 +3149,12 @@
     "id": "AP_Spanish_Lit_246",
     "question": "Las obras de la Generación del 98 se caracterizan por:",
     "choices": {
-      "A": "El optimismo y la celebración del progreso",
-      "B": "La preocupación por España, su identidad y su futuro, a menudo con un tono pesimista o de reflexión crítica",
+      "A": "La preocupación por España, su identidad y su futuro, a menudo con un tono pesimista o de reflexión crítica",
+      "B": "El optimismo y la celebración del progreso",
       "C": "La evasión de la realidad a través de temas exóticos",
       "D": "La experimentación radical con el lenguaje y la forma"
     },
-    "answer": "B",
+    "answer": "A",
     "difficulty": 6,
     "explanation": "La Generación del 98, surgida tras el Desastre del 98 (la pérdida de las últimas colonias españolas), se volcó en el análisis de la 'cuestión de España', su historia, su alma y su decadencia."
   },
@@ -3322,11 +3280,11 @@
     "question": "Miguel de Unamuno, uno de los miembros de la Generación del 98, reflexionó profundamente sobre la identidad española y la condición humana. ¿Cuál de las siguientes obras es suya?",
     "choices": {
       "A": "La colmena",
-      "B": "Niebla",
+      "B": "El árbol de la ciencia",
       "C": "La familia de Pascual Duarte",
-      "D": "El árbol de la ciencia"
+      "D": "Niebla"
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 6,
     "explanation": "'Niebla' es una novela existencial de Unamuno, conocida por su innovadora estructura narrativa y por la creación del personaje de Augusto Pérez, que se rebela contra su autor."
   },
@@ -3334,12 +3292,12 @@
     "id": "AP_Spanish_Lit_257",
     "question": "¿Qué poeta nicaragüense es considerado el máximo representante del Modernismo hispanoamericano?",
     "choices": {
-      "A": "José Martí",
-      "B": "Rubén Darío",
+      "A": "Rubén Darío",
+      "B": "José Martí",
       "C": "Amado Nervo",
       "D": "Leopoldo Lugones"
     },
-    "answer": "B",
+    "answer": "A",
     "difficulty": 5,
     "explanation": "Rubén Darío, con obras como 'Azul...' y 'Cantos de vida y esperanza', revolucionó la poesía en lengua española, introduciendo nuevas formas métricas, vocabulario y temas, y liderando el movimiento modernista."
   },
@@ -3386,12 +3344,12 @@
     "id": "AP_Spanish_Lit_261",
     "question": "Jorge Luis Borges, escritor argentino, es famoso por sus relatos fantásticos y filosóficos que exploran temas como el tiempo, el laberinto y los espejos. ¿Cuál de estos libros es una colección de sus cuentos?",
     "choices": {
-      "A": "Cien años de soledad",
-      "B": "El Aleph",
+      "A": "El Aleph",
+      "B": "Cien años de soledad",
       "C": "Rayuela",
       "D": "El túnel"
     },
-    "answer": "B",
+    "answer": "A",
     "difficulty": 6,
     "explanation": "'El Aleph' es una de las colecciones de cuentos más importantes de Borges, que incluye relatos icónicos como 'El Aleph', 'La casa de Asterión' y 'La biblioteca de Babel'."
   },
@@ -3412,12 +3370,12 @@
     "id": "AP_Spanish_Lit_263",
     "question": "Gabriel García Márquez, Premio Nobel de Literatura, es el autor de 'Cien años de soledad', obra cumbre del Realismo Mágico. ¿En qué país se ambienta principalmente esta novela?",
     "choices": {
-      "A": "Argentina",
+      "A": "Colombia",
       "B": "México",
-      "C": "Colombia",
+      "C": "Argentina",
       "D": "Cuba"
     },
-    "answer": "C",
+    "answer": "A",
     "difficulty": 5,
     "explanation": "'Cien años de soledad' narra la saga de la familia Buendía en el pueblo ficticio de Macondo, que se ubica en la costa caribeña de Colombia, reflejando la historia y la cultura del país."
   },
@@ -3439,11 +3397,11 @@
     "question": "Carilda Oliver Labra, poeta cubana, es conocida por su poesía sensual, intimista y a menudo reivindicativa. ¿Cuál de estos poemarios es representativo de su obra?",
     "choices": {
       "A": "Canto a Bolívar",
-      "B": "Desandanza",
+      "B": "Madrigal a cibaeñas",
       "C": "La virgen del desierto",
-      "D": "Madrigal a cibaeñas"
+      "D": "Desandanza"
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 8,
     "explanation": "'Desandanza' es uno de los libros de poemas más conocidos de Carilda Oliver Labra, publicado en 1945, que marca un hito en su trayectoria poética."
   },
@@ -3464,12 +3422,12 @@
     "id": "AP_Spanish_Lit_267",
     "question": "¿Qué movimiento literario se caracteriza por la exaltación del yo, la subjetividad, la emoción y la libertad creativa, y tuvo en España a autores como Bécquer y Espronceda?",
     "choices": {
-      "A": "Barroco",
-      "B": "Romanticismo",
+      "A": "Romanticismo",
+      "B": "Barroco",
       "C": "Realismo",
       "D": "Modernismo"
     },
-    "answer": "B",
+    "answer": "A",
     "difficulty": 5,
     "explanation": "El Romanticismo es un movimiento que surge a finales del siglo XVIII y principios del XIX, caracterizado por la primacía de los sentimientos, la imaginación y la rebeldía contra las normas establecidas."
   },
@@ -3490,12 +3448,12 @@
     "id": "AP_Spanish_Lit_269",
     "question": "La Generación del 98 se caracteriza por su preocupación por la 'crisis de fin de siglo' y la identidad de España. ¿Qué autor es considerado uno de sus miembros más representativos?",
     "choices": {
-      "A": "Federico García Lorca",
-      "B": "Miguel de Unamuno",
+      "A": "Miguel de Unamuno",
+      "B": "Federico García Lorca",
       "C": "Rafael Alberti",
       "D": "Luis Cernuda"
     },
-    "answer": "B",
+    "answer": "A",
     "difficulty": 5,
     "explanation": "Miguel de Unamuno, junto a otros como Azorín, Baroja y Machado, formó la Generación del 98, un grupo de intelectuales y escritores que reflexionaron profundamente sobre la decadencia de España."
   },
@@ -3542,12 +3500,12 @@
     "id": "AP_Spanish_Lit_273",
     "question": "En 'Don Quijote de la Mancha', ¿qué representa la figura de Sancho Panza en contraste con Don Quijote?",
     "choices": {
-      "A": "La locura idealista frente a la cordura pragmática.",
+      "A": "El idealismo caballeresco frente al realismo popular.",
       "B": "La imaginación desbordante frente a la realidad tangible.",
-      "C": "El idealismo caballeresco frente al realismo popular.",
+      "C": "La locura idealista frente a la cordura pragmática.",
       "D": "La nobleza frente a la vulgaridad."
     },
-    "answer": "C",
+    "answer": "A",
     "explanation": "Sancho Panza, con su habla refranera y su apego a lo terrenal, representa el polo opuesto del idealismo y la fantasía de Don Quijote, encarnando el espíritu popular de la época.",
     "difficulty": 4
   },
@@ -3569,11 +3527,11 @@
     "question": "En 'La vida es sueño' de Calderón de la Barca, ¿cuál es la principal duda existencial que atormenta a Segismundo?",
     "choices": {
       "A": "La lealtad hacia su padre.",
-      "B": "La naturaleza de la realidad y la libertad humana.",
+      "B": "El amor no correspondido.",
       "C": "La búsqueda de la venganza.",
-      "D": "El amor no correspondido."
+      "D": "La naturaleza de la realidad y la libertad humana."
     },
-    "answer": "B",
+    "answer": "D",
     "explanation": "La experiencia de Segismundo en la torre y su posterior liberación lo llevan a cuestionar si lo que vive es real o un sueño, reflexionando sobre el libre albedrío y la condición humana.",
     "difficulty": 4
   },
@@ -3608,11 +3566,11 @@
     "question": "Los 'Rimas' de Gustavo Adolfo Bécquer se caracterizan por:",
     "choices": {
       "A": "Ser poemas épicos de gran extensión.",
-      "B": "La expresión de sentimientos íntimos y etéreos, especialmente el amor y la melancolía.",
+      "B": "El uso de un lenguaje oscuro y complejo.",
       "C": "La crítica social y política.",
-      "D": "El uso de un lenguaje oscuro y complejo."
+      "D": "La expresión de sentimientos íntimos y etéreos, especialmente el amor y la melancolía."
     },
-    "answer": "B",
+    "answer": "D",
     "explanation": "Las rimas de Bécquer son poemas breves, líricos, que exploran la esencia del amor, la poesía y la soledad con un lenguaje sencillo pero evocador.",
     "difficulty": 4
   },
@@ -3633,12 +3591,12 @@
     "id": "AP_Spanish_Lit_280",
     "question": "En 'Los pazos de Ulloa' de Emilia Pardo Bazán, el naturalismo se manifiesta en:",
     "choices": {
-      "A": "La idealización de la vida rural.",
-      "B": "La descripción detallada y a menudo cruda de los ambientes y los instintos humanos.",
+      "A": "La descripción detallada y a menudo cruda de los ambientes y los instintos humanos.",
+      "B": "La idealización de la vida rural.",
       "C": "El enfoque en la espiritualidad y la fe.",
       "D": "La narración de aventuras fantásticas."
     },
-    "answer": "B",
+    "answer": "A",
     "explanation": "Pardo Bazán aplica los principios del naturalismo, mostrando cómo el entorno (el pazo, la Galicia rural) y la herencia biológica influyen en el comportamiento de los personajes, con un fuerte énfasis en lo instintivo y lo fisiológico.",
     "difficulty": 4
   },
@@ -3673,26 +3631,26 @@
     "question": "En la poesía de Antonio Machado, el paisaje de Castilla a menudo simboliza:",
     "choices": {
       "A": "La alegría y la abundancia.",
-      "B": "La dureza, la soledad y el paso del tiempo.",
+      "B": "El optimismo y la juventud.",
       "C": "La exuberancia de la naturaleza.",
-      "D": "El optimismo y la juventud."
+      "D": "La dureza, la soledad y el paso del tiempo."
     },
-    "answer": "B",
+    "answer": "D",
     "explanation": "Machado utiliza el paisaje castellano, árido y austero, como reflejo de la condición humana, de la melancolía, la fugacidad de la vida y la búsqueda de la esencia.",
     "difficulty": 4
   },
   {
-    "id": "AP_Spanish_Lit_284",
-    "question": "El 'Romancero gitano' de Federico García Lorca se caracteriza por la fusión de:",
+    "id": "AP_SpanLit_7",
+    "question": "En 'La casa de Bernarda Alba,' la casa simboliza:",
     "choices": {
-      "A": "La mitología clásica y la historia romana.",
-      "B": "Lo popular andaluz (con elementos gitanos) y la vanguardia poética.",
-      "C": "La lírica medieval y el teatro del Siglo de Oro.",
-      "D": "El realismo social y la poesía pura."
+      "A": "Opresión y control patriarcal",
+      "B": "Libertad",
+      "C": "Prosperidad",
+      "D": "Armonía familiar"
     },
-    "answer": "B",
-    "explanation": "Lorca combina elementos del folclore andaluz y la cultura gitana con las innovaciones estéticas de las vanguardias, creando un universo poético único, trágico y sensual.",
-    "difficulty": 4
+    "answer": "A",
+    "difficulty": 7,
+    "explanation": "The house represents suffocating patriarchal social norms."
   },
   {
     "id": "AP_Spanish_Lit_285",
@@ -3708,30 +3666,30 @@
     "difficulty": 4
   },
   {
-    "id": "AP_Spanish_Lit_286",
-    "question": "Jorge Luis Borges es célebre por sus cuentos que exploran temas como:",
+    "id": "AP_Spanish_Lit_27",
+    "question": "¿Qué técnica narrativa emplea Julio Cortázar de manera prominente en 'Rayuela' para involucrar al lector?",
     "choices": {
-      "A": "El realismo costumbrista.",
-      "B": "Los laberintos, los espejos, el tiempo, la identidad y la naturaleza de la realidad.",
-      "C": "La crítica a la burguesía.",
-      "D": "Las historias de amor imposibles."
+      "A": "La narración lineal y cronológica",
+      "B": "El uso de un narrador omnisciente único",
+      "C": "La estructura fragmentada y la posibilidad de lectura no lineal",
+      "D": "El monólogo interior introspectivo de un solo personaje"
     },
-    "answer": "B",
-    "explanation": "La obra de Borges se caracteriza por su erudición, sus referencias filosóficas y literarias, y la creación de universos complejos donde se desdibujan los límites entre realidad y ficción.",
-    "difficulty": 4
+    "answer": "C",
+    "difficulty": 8,
+    "explanation": "'Rayuela' es famosa por su estructura modular y las distintas formas de leerla, invitando al lector a participar activamente en la construcción del significado."
   },
   {
-    "id": "AP_Spanish_Lit_287",
-    "question": "En la obra de Julio Cortázar, especialmente en 'Rayuela', se rompe con la linealidad narrativa para:",
+    "id": "AP_Spanish_Lit_101",
+    "question": "¿Cuál de los siguientes temas es recurrente en la poesía satírica y moral de Francisco de Quevedo?",
     "choices": {
-      "A": "Reforzar la estructura tradicional de la novela.",
-      "B": "Ofrecer múltiples posibilidades de lectura e invitar a la participación activa del lector.",
-      "C": "Simplificar la trama.",
-      "D": "Respetar la cronología de los hechos."
+      "A": "El amor idealizado neoplatónico.",
+      "B": "La fugacidad de la vida y la vanidad de las ambiciones humanas (tempus fugit, vanitas vanitatum).",
+      "C": "La exaltación de la naturaleza bucólica.",
+      "D": "La celebración de las gestas heroicas."
     },
     "answer": "B",
-    "explanation": "'Rayuela' propone una estructura fragmentaria y abierta, permitiendo al lector elegir el orden de lectura de los capítulos, lo que refleja la búsqueda de nuevas formas de experimentar la realidad y la literatura.",
-    "difficulty": 4
+    "difficulty": 7,
+    "explanation": "Quevedo es conocido por su visión pesimista y desengañada de la vida, reflexionando constantemente sobre la brevedad de la existencia y la inutilidad de las vanidades mundanas."
   },
   {
     "id": "AP_Spanish_Lit_288",
@@ -3751,11 +3709,11 @@
     "question": "Isabel Allende, en novelas como 'La casa de los espíritus', a menudo explora:",
     "choices": {
       "A": "La vida cotidiana de la clase media urbana.",
-      "B": "La historia de Chile y Latinoamérica a través de sagas familiares, mezclando realismo y elementos fantásticos.",
+      "B": "Las novelas históricas centradas en la conquista española.",
       "C": "La ciencia ficción y los viajes en el tiempo.",
-      "D": "Las novelas históricas centradas en la conquista española."
+      "D": "La historia de Chile y Latinoamérica a través de sagas familiares, mezclando realismo y elementos fantásticos."
     },
-    "answer": "B",
+    "answer": "D",
     "explanation": "Allende utiliza la estructura de la saga familiar para narrar eventos históricos y sociales de su continente, incorporando elementos sutiles de lo fantástico y otorgando protagonismo a personajes femeninos.",
     "difficulty": 4
   },
@@ -3764,11 +3722,11 @@
     "question": "La poesía de Nancy Morejón se caracteriza por abordar temas como:",
     "choices": {
       "A": "La crítica a la sociedad de consumo.",
-      "B": "La identidad afrocubana, el feminismo y la historia de Cuba.",
+      "B": "La naturaleza y el paisaje rural.",
       "C": "La mitología griega.",
-      "D": "La naturaleza y el paisaje rural."
+      "D": "La identidad afrocubana, el feminismo y la historia de Cuba."
     },
-    "answer": "B",
+    "answer": "D",
     "explanation": "Morejón es una voz fundamental de la poesía cubana contemporánea, que reflexiona sobre su herencia africana, la experiencia de ser mujer y la realidad de su país, con una gran profundidad lírica y compromiso social.",
     "difficulty": 4
   },
@@ -3790,11 +3748,11 @@
     "question": "El 'conceptismo' y el 'culteranismo' fueron dos tendencias estilísticas predominantes durante:",
     "choices": {
       "A": "El Renacimiento.",
-      "B": "El Barroco.",
+      "B": "El Romanticismo.",
       "C": "La Ilustración.",
-      "D": "El Romanticismo."
+      "D": "El Barroco."
     },
-    "answer": "B",
+    "answer": "D",
     "explanation": "Durante el Siglo de Oro español, el Barroco vio florecer el conceptismo (Quevedo), centrado en la agudeza del pensamiento, y el culteranismo (Góngora), enfocado en la forma y el lenguaje culto.",
     "difficulty": 4
   },
@@ -3802,12 +3760,12 @@
     "id": "AP_Spanish_Lit_293",
     "question": "¿Cuál de estas obras narra las aventuras de un hidalgo que enloquece leyendo libros de caballerías y decide hacerse caballero andante?",
     "choices": {
-      "A": "Lazarillo de Tormes.",
-      "B": "Don Quijote de la Mancha.",
+      "A": "Don Quijote de la Mancha.",
+      "B": "Lazarillo de Tormes.",
       "C": "El Buscón.",
       "D": "Guzmán de Alfarache."
     },
-    "answer": "B",
+    "answer": "A",
     "explanation": "La premisa fundamental de 'Don Quijote de la Mancha' de Miguel de Cervantes Saavedra es la locura de Alonso Quijano, quien se transforma en Don Quijote.",
     "difficulty": 4
   },
@@ -3816,11 +3774,11 @@
     "question": "La figura del 'pícaro' es central en la novela picaresca. ¿Qué caracteriza a este tipo de personaje?",
     "choices": {
       "A": "Un héroe noble y valiente.",
-      "B": "Un individuo de baja extracción social que lucha por sobrevivir y ascender en la escala social mediante la astucia y el engaño.",
+      "B": "Un artista bohemio y soñador.",
       "C": "Un sabio erudito que reflexiona sobre la vida.",
-      "D": "Un artista bohemio y soñador."
+      "D": "Un individuo de baja extracción social que lucha por sobrevivir y ascender en la escala social mediante la astucia y el engaño."
     },
-    "answer": "B",
+    "answer": "D",
     "explanation": "El pícaro es un antihéroe, un superviviente que relata su vida desde una perspectiva satírica y crítica de la sociedad, a menudo desde la perspectiva del marginal.",
     "difficulty": 4
   },
@@ -3829,11 +3787,11 @@
     "question": "En el teatro barroco español, ¿qué se entiende por 'la vida es sueño' en la obra de Calderón?",
     "choices": {
       "A": "La vida es una secuencia de placeres efímeros.",
-      "B": "La existencia humana es ilusoria y comparable a un sueño, lo que lleva a la reflexión sobre la realidad y la libertad.",
+      "B": "Es una metáfora de la libertad política.",
       "C": "La vida es una lucha constante contra los sueños.",
-      "D": "Es una metáfora de la libertad política."
+      "D": "La existencia humana es ilusoria y comparable a un sueño, lo que lleva a la reflexión sobre la realidad y la libertad."
     },
-    "answer": "B",
+    "answer": "D",
     "explanation": "El famoso monólogo de Segismundo plantea la dualidad entre la realidad y el sueño como una metáfora de la fragilidad de la existencia y la dificultad de discernir lo verdadero de lo aparente.",
     "difficulty": 4
   },
@@ -3854,12 +3812,12 @@
     "id": "AP_Spanish_Lit_297",
     "question": "En el \"Romance de la pena negra\" de Federico García Lorca, ¿qué representa la \"pena negra\"?",
     "choices": {
-      "A": "La alegría desbordante de la juventud.",
-      "B": "Un sentimiento de tristeza profunda, melancolía y fatalidad.",
+      "A": "Un sentimiento de tristeza profunda, melancolía y fatalidad.",
+      "B": "La alegría desbordante de la juventud.",
       "C": "La lucha contra la opresión social.",
       "D": "El amor apasionado y correspondido."
     },
-    "answer": "B",
+    "answer": "A",
     "difficulty": 7,
     "explanation": "La \"pena negra\" en la obra de Lorca es un símbolo recurrente de la tristeza existencial, la melancolía y un sentido de destino trágico que impregna la cultura andaluza, especialmente en su representación gitana."
   },

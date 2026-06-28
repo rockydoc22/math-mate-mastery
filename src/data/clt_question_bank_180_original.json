@@ -1,31 +1,31 @@
 [
   {
-    "id": "clt_001",
+    "id": "clt_281",
     "exam": "CLT",
-    "section": "Verbal Reasoning",
-    "skill": "main_idea",
-    "difficulty": 3,
-    "question": "A short passage states that habits shape character through repeated action. Which choice best reflects the passage's central claim?",
+    "section": "Quantitative Reasoning",
+    "question": "A store is having a sale of 20% off all items. If a shirt originally costs $30, what is the sale price?",
     "options": [
       {
         "label": "A",
-        "text": "Repeated choices gradually form a person's character."
+        "text": "$20.00"
       },
       {
         "label": "B",
-        "text": "Character is fixed and unaffected by habit."
+        "text": "$22.50"
       },
       {
         "label": "C",
-        "text": "Only public actions influence character."
+        "text": "$24.00"
       },
       {
         "label": "D",
-        "text": "Habits matter only in childhood."
+        "text": "$25.50"
       }
     ],
-    "correctAnswer": "A",
-    "explanation": "The passage connects repeated action to character formation."
+    "correctAnswer": "C",
+    "explanation": "Calculate the discount amount: 20% of $30 = 0.20 × $30 = $6. Subtract the discount from the original price: $30 - $6 = $24.",
+    "skill": "Percentages",
+    "difficulty": 5
   },
   {
     "id": "clt_002",
@@ -56,32 +56,32 @@
     "explanation": "In this context, temperate means moderate and restrained."
   },
   {
-    "id": "clt_003",
+    "id": "clt_200",
     "exam": "CLT",
-    "section": "Quantitative Reasoning",
-    "skill": "linear_equations",
-    "difficulty": 7,
-    "question": "If 4x + 8 = 24, what is the value of x?",
+    "section": "Grammar/Writing",
+    "question": "Select the sentence with the correct use of a semicolon.",
     "options": [
       {
         "label": "A",
-        "text": "3"
+        "text": "The weather was beautiful; we went for a walk."
       },
       {
         "label": "B",
-        "text": "6"
+        "text": "The weather was beautiful,; we went for a walk."
       },
       {
         "label": "C",
-        "text": "4"
+        "text": "The weather was beautiful, we went for a walk;."
       },
       {
         "label": "D",
-        "text": "8"
+        "text": "The weather was beautiful; we went for a walk;."
       }
     ],
-    "correctAnswer": "C",
-    "explanation": "Subtract 8 from both sides to get 4x = 16, then divide by 4."
+    "correctAnswer": "A",
+    "explanation": "A semicolon can be used to connect two independent clauses that are closely related.",
+    "skill": "Punctuation",
+    "difficulty": 5
   },
   {
     "id": "clt_004",
@@ -140,60 +140,60 @@
     "difficulty": 3
   },
   {
-    "id": "clt_182",
+    "id": "clt_241",
     "exam": "CLT",
-    "section": "Verbal Reasoning",
-    "question": "Identify the antonym for 'benevolent'.",
+    "section": "Quantitative Reasoning",
+    "question": "A store is having a 20% off sale. If a shirt originally costs $25, what is the sale price?",
     "options": [
       {
         "label": "A",
-        "text": "Kind"
+        "text": "$20"
       },
       {
         "label": "B",
-        "text": "Generous"
+        "text": "$22.50"
       },
       {
         "label": "C",
-        "text": "Malicious"
+        "text": "$5"
       },
       {
         "label": "D",
-        "text": "Charitable"
+        "text": "$18.00"
       }
     ],
-    "correctAnswer": "C",
-    "explanation": "'Benevolent' means well-meaning and kindly. 'Malicious' means intending or intended to do harm.",
-    "skill": "Vocabulary",
+    "correctAnswer": "A",
+    "explanation": "Calculate the discount amount: 20% of $25 = 0.20 * $25 = $5. Subtract the discount from the original price: $25 - $5 = $20.",
+    "skill": "Percentages",
     "difficulty": 5
   },
   {
-    "id": "clt_183",
+    "id": "clt_258",
     "exam": "CLT",
-    "section": "Verbal Reasoning",
-    "question": "The old map was so _______ that it was nearly impossible to read the faded markings.",
+    "section": "Grammar/Writing",
+    "question": "Choose the sentence with the correct use of a semicolon.",
     "options": [
       {
         "label": "A",
-        "text": "Vibrant"
+        "text": "The weather was terrible; in fact, we almost canceled the picnic."
       },
       {
         "label": "B",
-        "text": "Clear"
+        "text": "The weather was terrible, in fact; we almost canceled the picnic."
       },
       {
         "label": "C",
-        "text": "Torn"
+        "text": "The weather was terrible; in fact we almost canceled the picnic."
       },
       {
         "label": "D",
-        "text": "Intricate"
+        "text": "The weather was terrible in fact; we almost canceled the picnic."
       }
     ],
-    "correctAnswer": "C",
-    "explanation": "The sentence implies the map's condition makes it hard to read. 'Torn' describes a physical state that would impede readability.",
-    "skill": "Sentence Completion",
-    "difficulty": 3
+    "correctAnswer": "A",
+    "explanation": "A semicolon can be used to connect two independent clauses. 'In fact' acts as a conjunctive adverb and is typically set off by commas, but here it connects the two clauses. Alternatively, a comma after 'fact' would also be acceptable if 'in fact' is treated as an parenthetical element.",
+    "skill": "Punctuation",
+    "difficulty": 7
   },
   {
     "id": "clt_184",
@@ -239,14 +239,14 @@
       },
       {
         "label": "C",
-        "text": "Skepticism"
+        "text": "Approval"
       },
       {
         "label": "D",
-        "text": "Approval"
+        "text": "Skepticism"
       }
     ],
-    "correctAnswer": "C",
+    "correctAnswer": "D",
     "explanation": "Challenging established theories often leads to doubt or disbelief, which is represented by 'skepticism'.",
     "skill": "Sentence Completion",
     "difficulty": 5
@@ -403,7 +403,7 @@
       },
       {
         "label": "B",
-        "text": "Ambiguity"
+        "text": "Directness"
       },
       {
         "label": "C",
@@ -411,10 +411,10 @@
       },
       {
         "label": "D",
-        "text": "Directness"
+        "text": "Ambiguity"
       }
     ],
-    "correctAnswer": "B",
+    "correctAnswer": "D",
     "explanation": "'Ambiguity' means the quality of being open to more than one interpretation; inexactness. This would make it hard to understand policy proposals.",
     "skill": "Sentence Completion",
     "difficulty": 7
@@ -644,32 +644,32 @@
     "difficulty": 3
   },
   {
-    "id": "clt_200",
+    "id": "clt_003",
     "exam": "CLT",
-    "section": "Grammar/Writing",
-    "question": "Select the sentence with the correct use of a semicolon.",
+    "section": "Quantitative Reasoning",
+    "skill": "linear_equations",
+    "difficulty": 7,
+    "question": "If 4x + 8 = 24, what is the value of x?",
     "options": [
       {
         "label": "A",
-        "text": "The weather was beautiful; we went for a walk."
+        "text": "3"
       },
       {
         "label": "B",
-        "text": "The weather was beautiful,; we went for a walk."
+        "text": "6"
       },
       {
         "label": "C",
-        "text": "The weather was beautiful, we went for a walk;."
+        "text": "4"
       },
       {
         "label": "D",
-        "text": "The weather was beautiful; we went for a walk;."
+        "text": "8"
       }
     ],
-    "correctAnswer": "A",
-    "explanation": "A semicolon can be used to connect two independent clauses that are closely related.",
-    "skill": "Punctuation",
-    "difficulty": 5
+    "correctAnswer": "C",
+    "explanation": "Subtract 8 from both sides to get 4x = 16, then divide by 4."
   },
   {
     "id": "clt_201",
@@ -799,15 +799,15 @@
       },
       {
         "label": "C",
-        "text": "The cat slept soundly, the dog barked loudly."
+        "text": "The cat slept soundly. The dog barked loudly."
       },
       {
         "label": "D",
-        "text": "The cat slept soundly. The dog barked loudly."
+        "text": "The cat slept soundly, the dog barked loudly."
       }
     ],
-    "correctAnswer": "C",
-    "explanation": "Option C combines two independent clauses without any punctuation or conjunction, creating a comma splice (a type of run-on sentence).",
+    "correctAnswer": "D",
+    "explanation": "Option D combines two independent clauses without any punctuation or conjunction, creating a comma splice (a type of run-on sentence).",
     "skill": "Sentence Structure",
     "difficulty": 5
   },
@@ -963,7 +963,7 @@
       },
       {
         "label": "B",
-        "text": "Fleeting"
+        "text": "Essential"
       },
       {
         "label": "C",
@@ -971,10 +971,10 @@
       },
       {
         "label": "D",
-        "text": "Essential"
+        "text": "Fleeting"
       }
     ],
-    "correctAnswer": "B",
+    "correctAnswer": "D",
     "explanation": "'Ephemeral' means lasting for a very short time, which is synonymous with 'fleeting'.",
     "skill": "Vocabulary Matching",
     "difficulty": 3
@@ -1006,33 +1006,6 @@
     "explanation": "Skepticism means doubt or disbelief. The sentence contrasts this initial reaction with later proof.",
     "skill": "Contextual Vocabulary",
     "difficulty": 5
-  },
-  {
-    "id": "clt_213",
-    "exam": "CLT",
-    "section": "Verbal Reasoning",
-    "question": "Identify the antonym of 'benevolent'.",
-    "options": [
-      {
-        "label": "A",
-        "text": "Kind"
-      },
-      {
-        "label": "B",
-        "text": "Generous"
-      },
-      {
-        "label": "C",
-        "text": "Malignant"
-      },
-      {
-        "label": "D. Altruistic"
-      }
-    ],
-    "correctAnswer": "C",
-    "explanation": "Benevolent means well-meaning and kindly. Malignant means ill-wishing, evil, or harmful, making it the opposite.",
-    "skill": "Antonym Identification",
-    "difficulty": 3
   },
   {
     "id": "clt_214",
@@ -1162,14 +1135,14 @@
       },
       {
         "label": "C",
-        "text": "Empty or moralistic statements"
+        "text": "Scientific data"
       },
       {
         "label": "D",
-        "text": "Scientific data"
+        "text": "Empty or moralistic statements"
       }
     ],
-    "correctAnswer": "C",
+    "correctAnswer": "D",
     "explanation": "Platitudes are remarks or statements that are made too often to be interesting or meaningful, often cliché or empty sentiments.",
     "skill": "Contextual Vocabulary",
     "difficulty": 7
@@ -1218,14 +1191,14 @@
       },
       {
         "label": "C",
-        "text": "Uncluttered"
+        "text": "Chaotic"
       },
       {
         "label": "D",
-        "text": "Chaotic"
+        "text": "Uncluttered"
       }
     ],
-    "correctAnswer": "C",
+    "correctAnswer": "D",
     "explanation": "Minimalist style emphasizes simplicity and a lack of unnecessary elements, which translates to being uncluttered.",
     "skill": "Contextual Vocabulary",
     "difficulty": 5
@@ -1358,14 +1331,14 @@
       },
       {
         "label": "C",
-        "text": "Fish"
+        "text": "Reptile"
       },
       {
         "label": "D",
-        "text": "Reptile"
+        "text": "Fish"
       }
     ],
-    "correctAnswer": "C",
+    "correctAnswer": "D",
     "explanation": "Feathers cover birds. Scales cover fish (among other animals, but fish is the most common association for scales as primary covering).",
     "skill": "Analogies",
     "difficulty": 5
@@ -1410,7 +1383,7 @@
       },
       {
         "label": "B",
-        "text": "Unnecessary"
+        "text": "Required"
       },
       {
         "label": "C",
@@ -1418,10 +1391,10 @@
       },
       {
         "label": "D",
-        "text": "Required"
+        "text": "Unnecessary"
       }
     ],
-    "correctAnswer": "B",
+    "correctAnswer": "D",
     "explanation": "'Superfluous' means exceeding what is sufficient or necessary; unnecessary.",
     "skill": "Vocabulary Matching",
     "difficulty": 5
@@ -1582,14 +1555,14 @@
       },
       {
         "label": "C",
-        "text": "Hostile"
+        "text": "Pleasant"
       },
       {
         "label": "D",
-        "text": "Pleasant"
+        "text": "Hostile"
       }
     ],
-    "correctAnswer": "C",
+    "correctAnswer": "D",
     "explanation": "'Amicable' means characterized by friendliness and goodwill. 'Hostile' means showing or feeling opposition or dislike; unfriendly, its opposite.",
     "skill": "Antonym Identification",
     "difficulty": 5
@@ -1694,14 +1667,14 @@
       },
       {
         "label": "C",
-        "text": "4 cups"
+        "text": "1 cup"
       },
       {
         "label": "D",
-        "text": "1 cup"
+        "text": "4 cups"
       }
     ],
-    "correctAnswer": "C",
+    "correctAnswer": "D",
     "explanation": "A double batch means you need twice the amount of each ingredient. For flour, the original amount is 2 cups, so for a double batch, you need 2 * 2 = 4 cups of flour.",
     "skill": "Ratios and Proportions",
     "difficulty": 3
@@ -1778,44 +1751,44 @@
       },
       {
         "label": "C",
-        "text": "18"
+        "text": "36"
       },
       {
         "label": "D",
-        "text": "36"
+        "text": "18"
       }
     ],
-    "correctAnswer": "C",
+    "correctAnswer": "D",
     "explanation": "Calculate the powers first: 2^3 = 8 and 3^2 = 9. Then multiply: 8 * 9 = 72. Finally, divide by 6: 72 / 6 = 12. There seems to be a mistake in the provided correct answer. Let's re-evaluate: (2^3 * 3^2) / 6 = (8 * 9) / 6 = 72 / 6 = 12.",
     "skill": "Exponents and Order of Operations",
     "difficulty": 5
   },
   {
-    "id": "clt_241",
+    "id": "clt_182",
     "exam": "CLT",
-    "section": "Quantitative Reasoning",
-    "question": "A store is having a 20% off sale. If a shirt originally costs $25, what is the sale price?",
+    "section": "Verbal Reasoning",
+    "question": "Identify the antonym for 'benevolent'.",
     "options": [
       {
         "label": "A",
-        "text": "$20"
+        "text": "Kind"
       },
       {
         "label": "B",
-        "text": "$22.50"
+        "text": "Generous"
       },
       {
         "label": "C",
-        "text": "$5"
+        "text": "Malicious"
       },
       {
         "label": "D",
-        "text": "$18.00"
+        "text": "Charitable"
       }
     ],
-    "correctAnswer": "A",
-    "explanation": "Calculate the discount amount: 20% of $25 = 0.20 * $25 = $5. Subtract the discount from the original price: $25 - $5 = $20.",
-    "skill": "Percentages",
+    "correctAnswer": "C",
+    "explanation": "'Benevolent' means well-meaning and kindly. 'Malicious' means intending or intended to do harm.",
+    "skill": "Vocabulary",
     "difficulty": 5
   },
   {
@@ -1914,7 +1887,7 @@
       },
       {
         "label": "B",
-        "text": "0% change"
+        "text": "10% decrease"
       },
       {
         "label": "C",
@@ -1922,10 +1895,10 @@
       },
       {
         "label": "D",
-        "text": "10% decrease"
+        "text": "0% change"
       }
     ],
-    "correctAnswer": "B",
+    "correctAnswer": "D",
     "explanation": "Let the original number be 100. An increase of 25% makes it 125. A decrease of 20% of 125 is 0.20 * 125 = 25. So, 125 - 25 = 100. The final number is 100, which is the same as the original number, so there is a 0% change.",
     "skill": "Percentages",
     "difficulty": 7
@@ -1942,7 +1915,7 @@
       },
       {
         "label": "B",
-        "text": "720 degrees"
+        "text": "1080 degrees"
       },
       {
         "label": "C",
@@ -1950,10 +1923,10 @@
       },
       {
         "label": "D",
-        "text": "1080 degrees"
+        "text": "720 degrees"
       }
     ],
-    "correctAnswer": "B",
+    "correctAnswer": "D",
     "explanation": "The formula for the sum of the interior angles of a polygon with 'n' sides is (n-2) * 180 degrees. For a hexagon, n=6. So, (6-2) * 180 = 4 * 180 = 720 degrees.",
     "skill": "Geometry",
     "difficulty": 5
@@ -2198,14 +2171,14 @@
       },
       {
         "label": "C",
-        "text": "The children's laughter filled the park."
+        "text": "The children's' laughter filled the park."
       },
       {
         "label": "D",
-        "text": "The children's' laughter filled the park."
+        "text": "The children's laughter filled the park."
       }
     ],
-    "correctAnswer": "C",
+    "correctAnswer": "D",
     "explanation": "To form the possessive of a plural noun that does not end in 's', add 's'. 'Children' is plural, so 'children's' is the correct possessive form.",
     "skill": "Apostrophes",
     "difficulty": 3
@@ -2267,32 +2240,32 @@
     "difficulty": 5
   },
   {
-    "id": "clt_258",
+    "id": "clt_183",
     "exam": "CLT",
-    "section": "Grammar/Writing",
-    "question": "Choose the sentence with the correct use of a semicolon.",
+    "section": "Verbal Reasoning",
+    "question": "The old map was so _______ that it was nearly impossible to read the faded markings.",
     "options": [
       {
         "label": "A",
-        "text": "The weather was terrible; in fact, we almost canceled the picnic."
+        "text": "Vibrant"
       },
       {
         "label": "B",
-        "text": "The weather was terrible, in fact; we almost canceled the picnic."
+        "text": "Clear"
       },
       {
         "label": "C",
-        "text": "The weather was terrible; in fact we almost canceled the picnic."
+        "text": "Torn"
       },
       {
         "label": "D",
-        "text": "The weather was terrible in fact; we almost canceled the picnic."
+        "text": "Intricate"
       }
     ],
-    "correctAnswer": "A",
-    "explanation": "A semicolon can be used to connect two independent clauses. 'In fact' acts as a conjunctive adverb and is typically set off by commas, but here it connects the two clauses. Alternatively, a comma after 'fact' would also be acceptable if 'in fact' is treated as an parenthetical element.",
-    "skill": "Punctuation",
-    "difficulty": 7
+    "correctAnswer": "C",
+    "explanation": "The sentence implies the map's condition makes it hard to read. 'Torn' describes a physical state that would impede readability.",
+    "skill": "Sentence Completion",
+    "difficulty": 3
   },
   {
     "id": "clt_259",
@@ -2338,14 +2311,14 @@
       },
       {
         "label": "C",
-        "text": "This is the unique painting in the exhibition."
+        "text": "This is the most uniquely painting in the exhibition."
       },
       {
         "label": "D",
-        "text": "This is the most uniquely painting in the exhibition."
+        "text": "This is the unique painting in the exhibition."
       }
     ],
-    "correctAnswer": "C",
+    "correctAnswer": "D",
     "difficulty": 7,
     "explanation": "'Unique' is generally considered an absolute adjective, meaning something either is unique or it is not. Modifiers like 'most' or 'more' are typically not used with it, although common usage sometimes allows 'most unique'. However, in formal writing, simply stating 'unique' is preferred when it's the only one.",
     "skill": "Adjective Forms"
@@ -2362,7 +2335,7 @@
       },
       {
         "label": "B",
-        "text": "After the long meeting, everyone was tired."
+        "text": "After the long meeting everyone, was tired."
       },
       {
         "label": "C",
@@ -2370,10 +2343,10 @@
       },
       {
         "label": "D",
-        "text": "After the long meeting everyone, was tired."
+        "text": "After the long meeting, everyone was tired."
       }
     ],
-    "correctAnswer": "B",
+    "correctAnswer": "D",
     "explanation": "A comma should typically follow an introductory phrase or clause to separate it from the main clause.",
     "skill": "Punctuation",
     "difficulty": 3
@@ -2450,14 +2423,14 @@
       },
       {
         "label": "C",
-        "text": "He plans to travel to Paris in July."
+        "text": "He plans to travel to paris in july."
       },
       {
         "label": "D",
-        "text": "He plans to travel to paris in july."
+        "text": "He plans to travel to Paris in July."
       }
     ],
-    "correctAnswer": "C",
+    "correctAnswer": "D",
     "explanation": "Proper nouns, including city names ('Paris') and months of the year ('July'), should be capitalized.",
     "skill": "Capitalization",
     "difficulty": 3
@@ -2498,7 +2471,7 @@
     "options": [
       {
         "label": "A",
-        "text": "It was raining heavily; consequently, the game was postponed."
+        "text": "It was raining heavily, consequently the game, was postponed."
       },
       {
         "label": "B",
@@ -2510,10 +2483,10 @@
       },
       {
         "label": "D",
-        "text": "It was raining heavily, consequently the game, was postponed."
+        "text": "It was raining heavily; consequently, the game was postponed."
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "Conjunctive adverbs like 'consequently' should be preceded by a semicolon when connecting two independent clauses, and often followed by a comma.",
     "skill": "Transition Words",
     "difficulty": 5
@@ -2883,32 +2856,32 @@
     "difficulty": 3
   },
   {
-    "id": "clt_281",
+    "id": "clt_001",
     "exam": "CLT",
-    "section": "Quantitative Reasoning",
-    "question": "A store is having a sale of 20% off all items. If a shirt originally costs $30, what is the sale price?",
+    "section": "Verbal Reasoning",
+    "skill": "main_idea",
+    "difficulty": 3,
+    "question": "A short passage states that habits shape character through repeated action. Which choice best reflects the passage's central claim?",
     "options": [
       {
         "label": "A",
-        "text": "$20.00"
+        "text": "Repeated choices gradually form a person's character."
       },
       {
         "label": "B",
-        "text": "$22.50"
+        "text": "Character is fixed and unaffected by habit."
       },
       {
         "label": "C",
-        "text": "$24.00"
+        "text": "Only public actions influence character."
       },
       {
         "label": "D",
-        "text": "$25.50"
+        "text": "Habits matter only in childhood."
       }
     ],
-    "correctAnswer": "C",
-    "explanation": "Calculate the discount amount: 20% of $30 = 0.20 × $30 = $6. Subtract the discount from the original price: $30 - $6 = $24.",
-    "skill": "Percentages",
-    "difficulty": 5
+    "correctAnswer": "A",
+    "explanation": "The passage connects repeated action to character formation."
   },
   {
     "id": "clt_282",
@@ -3006,7 +2979,7 @@
       },
       {
         "label": "B",
-        "text": "5/8"
+        "text": "5/3"
       },
       {
         "label": "C",
@@ -3014,10 +2987,10 @@
       },
       {
         "label": "D",
-        "text": "5/3"
+        "text": "5/8"
       }
     ],
-    "correctAnswer": "B",
+    "correctAnswer": "D",
     "explanation": "The total number of marbles is 3 + 5 = 8. The number of blue marbles is 5. The probability of choosing a blue marble is the number of blue marbles divided by the total number of marbles: 5/8.",
     "skill": "Probability",
     "difficulty": 3
@@ -3034,7 +3007,7 @@
       },
       {
         "label": "B",
-        "text": "180 degrees"
+        "text": "360 degrees"
       },
       {
         "label": "C",
@@ -3042,10 +3015,10 @@
       },
       {
         "label": "D",
-        "text": "360 degrees"
+        "text": "180 degrees"
       }
     ],
-    "correctAnswer": "B",
+    "correctAnswer": "D",
     "explanation": "The sum of the interior angles of any triangle, regardless of its shape or size, is always 180 degrees.",
     "skill": "Geometry: Properties of shapes",
     "difficulty": 3
@@ -3094,14 +3067,14 @@
       },
       {
         "label": "C",
-        "text": "60 mph"
+        "text": "72 mph"
       },
       {
         "label": "D",
-        "text": "72 mph"
+        "text": "60 mph"
       }
     ],
-    "correctAnswer": "C",
+    "correctAnswer": "D",
     "explanation": "Average speed is calculated by dividing the total distance traveled by the total time taken. Speed = Distance / Time = 180 miles / 3 hours = 60 miles per hour.",
     "skill": "Rates and proportions",
     "difficulty": 5
@@ -3262,14 +3235,14 @@
       },
       {
         "label": "C",
-        "text": "9"
+        "text": "10"
       },
       {
         "label": "D",
-        "text": "10"
+        "text": "9"
       }
     ],
-    "correctAnswer": "C",
+    "correctAnswer": "D",
     "explanation": "The square root of a number is a value that, when multiplied by itself, gives the original number. 9 multiplied by itself is 81 (9 * 9 = 81).",
     "skill": "Arithmetic: Square roots",
     "difficulty": 3
@@ -3290,14 +3263,14 @@
       },
       {
         "label": "C",
-        "text": "280 miles"
+        "text": "300 miles"
       },
       {
         "label": "D",
-        "text": "300 miles"
+        "text": "280 miles"
       }
     ],
-    "correctAnswer": "C",
+    "correctAnswer": "D",
     "explanation": "Calculate the distance for each part of the trip. Part 1: Distance = Speed × Time = 50 mph × 2 hours = 100 miles. Part 2: Distance = Speed × Time = 60 mph × 3 hours = 180 miles. Total distance = 100 miles + 180 miles = 280 miles.",
     "skill": "Rates and distance calculation",
     "difficulty": 7
@@ -3402,14 +3375,14 @@
       },
       {
         "label": "C",
-        "text": "25%"
+        "text": "30%"
       },
       {
         "label": "D",
-        "text": "30%"
+        "text": "25%"
       }
     ],
-    "correctAnswer": "C",
+    "correctAnswer": "D",
     "explanation": "To find the percentage, divide the part by the whole and multiply by 100. Percentage = (Part / Whole) × 100 = ($150 / $600) × 100. Simplify the fraction: $150 / $600 = 1/4. Then, (1/4) × 100 = 25%.",
     "skill": "Percentages",
     "difficulty": 5

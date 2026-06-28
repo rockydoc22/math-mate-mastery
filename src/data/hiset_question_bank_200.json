@@ -1,30 +1,30 @@
 [
   {
-    "id": "hiset_223",
+    "id": "hiset_284",
     "exam": "HiSET",
-    "section": "Reading",
-    "question": "Which of the following would be LEAST appropriate to add to a compost bin according to common composting practices?",
+    "section": "Social Studies",
+    "question": "The Enlightenment period had a significant impact on political thought, influencing ideas such as natural rights and the social contract. Which philosopher is most famously associated with these concepts?",
     "options": [
       {
         "label": "A",
-        "text": "Fruit peels and vegetable scraps."
+        "text": "John Locke"
       },
       {
         "label": "B",
-        "text": "Grass clippings and dry leaves."
+        "text": "Niccolò Machiavelli"
       },
       {
         "label": "C",
-        "text": "Meat scraps and dairy products."
+        "text": "Thomas Hobbes"
       },
       {
         "label": "D",
-        "text": "Coffee grounds and tea bags."
+        "text": "Jean-Jacques Rousseau"
       }
     ],
-    "correctAnswer": "C",
-    "explanation": "Meat scraps and dairy products can attract pests, create unpleasant odors, and may not decompose efficiently in a typical home compost bin. The other options are all common and desirable compostable materials.",
-    "skill": "Drawing Conclusions from Text",
+    "correctAnswer": "A",
+    "explanation": "John Locke's philosophy strongly emphasized natural rights (life, liberty, and property) and the idea that governments derive their legitimacy from the consent of the governed (social contract). His writings profoundly influenced Enlightenment thinkers and revolutionary movements.",
+    "skill": "Historical Analysis",
     "difficulty": 5
   },
   {
@@ -84,31 +84,31 @@
     "difficulty": 5
   },
   {
-    "id": "hiset_004",
+    "id": "hiset_202",
     "exam": "HiSET",
-    "section": "Science",
-    "question": "Which process converts light energy into chemical energy in plants?",
+    "section": "Mathematics",
+    "question": "If a rectangle has a length of 8 meters and a width of 5 meters, what is its perimeter?",
     "options": [
       {
         "label": "A",
-        "text": "Photosynthesis"
+        "text": "40 square meters"
       },
       {
         "label": "B",
-        "text": "Cellular respiration"
+        "text": "26 meters"
       },
       {
         "label": "C",
-        "text": "Fermentation"
+        "text": "13 meters"
       },
       {
         "label": "D",
-        "text": "Transpiration"
+        "text": "32 meters"
       }
     ],
-    "correctAnswer": "A",
-    "explanation": "Photosynthesis converts light energy into glucose using carbon dioxide and water, releasing oxygen.",
-    "skill": "Biology",
+    "correctAnswer": "B",
+    "explanation": "The formula for the perimeter of a rectangle is $P = 2(l + w)$. Substitute the given values: $P = 2(8 + 5) = 2(13) = 26$ meters.",
+    "skill": "Perimeter of a Rectangle",
     "difficulty": 3
   },
   {
@@ -196,31 +196,31 @@
     "difficulty": 3
   },
   {
-    "id": "hiset_008",
+    "id": "hiset_225",
     "exam": "HiSET",
-    "section": "Science",
-    "question": "Which subatomic particle has a negative charge?",
+    "section": "Reading",
+    "question": "In the context of the passage, what does it mean to say that compost 'enriches the soil'?",
     "options": [
       {
         "label": "A",
-        "text": "Electron"
+        "text": "It makes the soil heavier and more dense."
       },
       {
         "label": "B",
-        "text": "Proton"
+        "text": "It adds vital nutrients and improves soil structure."
       },
       {
         "label": "C",
-        "text": "Neutron"
+        "text": "It increases the soil's water-repelling capabilities."
       },
       {
         "label": "D",
-        "text": "Quark"
+        "text": "It makes the soil more acidic."
       }
     ],
-    "correctAnswer": "A",
-    "explanation": "Electrons carry a negative charge, protons positive, neutrons neutral.",
-    "skill": "Atomic Structure",
+    "correctAnswer": "B",
+    "explanation": "Enriching soil with compost means adding beneficial nutrients and improving its physical properties, such as aeration and water retention, leading to healthier plant growth.",
+    "skill": "Understanding Vocabulary in Context",
     "difficulty": 3
   },
   {
@@ -6216,31 +6216,31 @@
     "difficulty": 3
   },
   {
-    "id": "hiset_202",
+    "id": "hiset_004",
     "exam": "HiSET",
-    "section": "Mathematics",
-    "question": "If a rectangle has a length of 8 meters and a width of 5 meters, what is its perimeter?",
+    "section": "Science",
+    "question": "Which process converts light energy into chemical energy in plants?",
     "options": [
       {
         "label": "A",
-        "text": "40 square meters"
+        "text": "Photosynthesis"
       },
       {
         "label": "B",
-        "text": "26 meters"
+        "text": "Cellular respiration"
       },
       {
         "label": "C",
-        "text": "13 meters"
+        "text": "Fermentation"
       },
       {
         "label": "D",
-        "text": "32 meters"
+        "text": "Transpiration"
       }
     ],
-    "correctAnswer": "B",
-    "explanation": "The formula for the perimeter of a rectangle is $P = 2(l + w)$. Substitute the given values: $P = 2(8 + 5) = 2(13) = 26$ meters.",
-    "skill": "Perimeter of a Rectangle",
+    "correctAnswer": "A",
+    "explanation": "Photosynthesis converts light energy into glucose using carbon dioxide and water, releasing oxygen.",
+    "skill": "Biology",
     "difficulty": 3
   },
   {
@@ -6272,31 +6272,31 @@
     "difficulty": 5
   },
   {
-    "id": "hiset_225",
+    "id": "hiset_008",
     "exam": "HiSET",
-    "section": "Reading",
-    "question": "In the context of the passage, what does it mean to say that compost 'enriches the soil'?",
+    "section": "Science",
+    "question": "Which subatomic particle has a negative charge?",
     "options": [
       {
         "label": "A",
-        "text": "It makes the soil heavier and more dense."
+        "text": "Electron"
       },
       {
         "label": "B",
-        "text": "It adds vital nutrients and improves soil structure."
+        "text": "Proton"
       },
       {
         "label": "C",
-        "text": "It increases the soil's water-repelling capabilities."
+        "text": "Neutron"
       },
       {
         "label": "D",
-        "text": "It makes the soil more acidic."
+        "text": "Quark"
       }
     ],
-    "correctAnswer": "B",
-    "explanation": "Enriching soil with compost means adding beneficial nutrients and improving its physical properties, such as aeration and water retention, leading to healthier plant growth.",
-    "skill": "Understanding Vocabulary in Context",
+    "correctAnswer": "A",
+    "explanation": "Electrons carry a negative charge, protons positive, neutrons neutral.",
+    "skill": "Atomic Structure",
     "difficulty": 3
   },
   {
@@ -7896,31 +7896,31 @@
     "difficulty": 5
   },
   {
-    "id": "hiset_284",
+    "id": "hiset_223",
     "exam": "HiSET",
-    "section": "Social Studies",
-    "question": "The Enlightenment period had a significant impact on political thought, influencing ideas such as natural rights and the social contract. Which philosopher is most famously associated with these concepts?",
+    "section": "Reading",
+    "question": "Which of the following would be LEAST appropriate to add to a compost bin according to common composting practices?",
     "options": [
       {
         "label": "A",
-        "text": "John Locke"
+        "text": "Fruit peels and vegetable scraps."
       },
       {
         "label": "B",
-        "text": "Niccolò Machiavelli"
+        "text": "Grass clippings and dry leaves."
       },
       {
         "label": "C",
-        "text": "Thomas Hobbes"
+        "text": "Meat scraps and dairy products."
       },
       {
         "label": "D",
-        "text": "Jean-Jacques Rousseau"
+        "text": "Coffee grounds and tea bags."
       }
     ],
-    "correctAnswer": "A",
-    "explanation": "John Locke's philosophy strongly emphasized natural rights (life, liberty, and property) and the idea that governments derive their legitimacy from the consent of the governed (social contract). His writings profoundly influenced Enlightenment thinkers and revolutionary movements.",
-    "skill": "Historical Analysis",
+    "correctAnswer": "C",
+    "explanation": "Meat scraps and dairy products can attract pests, create unpleasant odors, and may not decompose efficiently in a typical home compost bin. The other options are all common and desirable compostable materials.",
+    "skill": "Drawing Conclusions from Text",
     "difficulty": 5
   },
   {

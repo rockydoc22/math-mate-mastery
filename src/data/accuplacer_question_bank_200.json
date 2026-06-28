@@ -280,32 +280,32 @@
     "difficulty": 5
   },
   {
-    "id": "acc_011",
+    "id": "acc_283",
     "exam": "ACCUPLACER",
-    "section": "Reading",
-    "question": "Which type of writing attempts to convince the reader?",
+    "section": "Advanced Algebra",
+    "question": "What is the domain of the function f(x) = √(x^2 - 4)?",
     "options": [
       {
         "label": "A",
-        "text": "Persuasive"
+        "text": "(-∞, 2) U (2, ∞)"
       },
       {
         "label": "B",
-        "text": "Narrative"
+        "text": "[-2, 2]"
       },
       {
         "label": "C",
-        "text": "Descriptive"
+        "text": "(-∞, -2] U [2, ∞)"
       },
       {
         "label": "D",
-        "text": "Expository"
+        "text": "(√2, ∞)"
       }
     ],
-    "correctAnswer": "A",
-    "explanation": "Persuasive writing aims to convince the reader to agree with the author's position.",
-    "skill": "Text Types",
-    "difficulty": 3
+    "correctAnswer": "C",
+    "explanation": "For the square root to be defined, the expression under the radical must be non-negative. So, x^2 - 4 ≥ 0. This factors as (x - 2)(x + 2) ≥ 0. The critical points are x = -2 and x = 2. Testing intervals, we find that the inequality holds for x ≤ -2 or x ≥ 2. Thus, the domain is (-∞, -2] U [2, ∞).",
+    "skill": "Domain of Functions",
+    "difficulty": 5
   },
   {
     "id": "acc_012",
@@ -7840,32 +7840,32 @@
     "difficulty": 5
   },
   {
-    "id": "acc_283",
+    "id": "acc_011",
     "exam": "ACCUPLACER",
-    "section": "Advanced Algebra",
-    "question": "What is the domain of the function f(x) = √(x^2 - 4)?",
+    "section": "Reading",
+    "question": "Which type of writing attempts to convince the reader?",
     "options": [
       {
         "label": "A",
-        "text": "(-∞, 2) U (2, ∞)"
+        "text": "Persuasive"
       },
       {
         "label": "B",
-        "text": "[-2, 2]"
+        "text": "Narrative"
       },
       {
         "label": "C",
-        "text": "(-∞, -2] U [2, ∞)"
+        "text": "Descriptive"
       },
       {
         "label": "D",
-        "text": "(√2, ∞)"
+        "text": "Expository"
       }
     ],
-    "correctAnswer": "C",
-    "explanation": "For the square root to be defined, the expression under the radical must be non-negative. So, x^2 - 4 ≥ 0. This factors as (x - 2)(x + 2) ≥ 0. The critical points are x = -2 and x = 2. Testing intervals, we find that the inequality holds for x ≤ -2 or x ≥ 2. Thus, the domain is (-∞, -2] U [2, ∞).",
-    "skill": "Domain of Functions",
-    "difficulty": 5
+    "correctAnswer": "A",
+    "explanation": "Persuasive writing aims to convince the reader to agree with the author's position.",
+    "skill": "Text Types",
+    "difficulty": 3
   },
   {
     "id": "acc_026",

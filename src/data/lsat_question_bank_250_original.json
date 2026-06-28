@@ -1,31 +1,31 @@
 [
   {
-    "id": "lsat_lr_002",
+    "id": "lsat_273",
     "exam": "LSAT",
     "section": "Logical Reasoning",
-    "skill": "logic_chain",
-    "difficulty": 5,
-    "question": "If the museum extends weekend hours, more families will visit. If more families visit, the gift shop will earn more revenue. Which choice follows logically from the statements above?",
+    "question": "The local library has seen a significant decrease in fiction book checkouts over the past year. At the same time, the library introduced a new online reservation system and expanded its digital collection. Researchers conclude that the shift away from physical fiction books is due to the new digital options.",
     "options": [
       {
         "label": "A",
-        "text": "If the museum does not extend weekend hours, the gift shop will lose revenue."
+        "text": "The new online system made it easier to reserve non-fiction books as well."
       },
       {
         "label": "B",
-        "text": "If the museum extends weekend hours, the gift shop will earn more revenue."
+        "text": "The decrease in fiction checkouts might be related to changing reader preferences or other factors not mentioned."
       },
       {
         "label": "C",
-        "text": "Only families shop at the museum gift shop."
+        "text": "Many patrons still prefer the feel of physical books."
       },
       {
         "label": "D",
-        "text": "The museum should extend hours only on Sundays."
+        "text": "The library's digital collection includes a wide variety of genres beyond fiction."
       }
     ],
     "correctAnswer": "B",
-    "explanation": "This is a straightforward conditional chain: extend hours → more families → more revenue."
+    "explanation": "The argument presents two simultaneous events (new digital options and decreased fiction checkouts) and infers causation. Option B weakens this by suggesting alternative explanations or that the observed correlation might be coincidental, thus questioning the causal link.",
+    "skill": "Weakening",
+    "difficulty": 5
   },
   {
     "id": "lsat_lr_003",
@@ -97,7 +97,7 @@
       },
       {
         "label": "B",
-        "text": "The argument assumes that what happened on one street will happen in the same way on all streets."
+        "text": "The argument concludes that downtown residents should stop driving altogether."
       },
       {
         "label": "C",
@@ -105,10 +105,10 @@
       },
       {
         "label": "D",
-        "text": "The argument concludes that downtown residents should stop driving altogether."
+        "text": "The argument assumes that what happened on one street will happen in the same way on all streets."
       }
     ],
-    "correctAnswer": "B",
+    "correctAnswer": "D",
     "explanation": "The planner overgeneralizes from one example to all downtown streets."
   },
   {
@@ -263,7 +263,7 @@
       },
       {
         "label": "B",
-        "text": "Depends heavily on the specific goals and context of the artist and the work."
+        "text": "Should always prioritize audience engagement over artistic integrity."
       },
       {
         "label": "C",
@@ -271,10 +271,10 @@
       },
       {
         "label": "D",
-        "text": "Should always prioritize audience engagement over artistic integrity."
+        "text": "Depends heavily on the specific goals and context of the artist and the work."
       }
     ],
-    "correctAnswer": "B",
+    "correctAnswer": "D",
     "explanation": "By presenting two contrasting methods and their potential merits, the author implies that there isn't a single \"best\" way, but rather that the effectiveness of a method is relative to the circumstances.",
     "skill": "Inference",
     "difficulty": 5
@@ -347,7 +347,7 @@
       },
       {
         "label": "B",
-        "text": "To illustrate how seemingly disparate elements can interact to create a harmonious whole."
+        "text": "To highlight the environmental impact of large-scale art installations."
       },
       {
         "label": "C",
@@ -355,10 +355,10 @@
       },
       {
         "label": "D",
-        "text": "To highlight the environmental impact of large-scale art installations."
+        "text": "To illustrate how seemingly disparate elements can interact to create a harmonious whole."
       }
     ],
-    "correctAnswer": "B",
+    "correctAnswer": "D",
     "explanation": "The ecosystem analogy, mentioned in the context of how different creative approaches interact, serves to show how various components, even those seemingly independent, can come together to form a complex and functional system, much like how different elements in art can coalesce.",
     "skill": "Analogy Interpretation",
     "difficulty": 7
@@ -431,7 +431,7 @@
       },
       {
         "label": "B",
-        "text": "A dynamic interplay between intent and execution."
+        "text": "A predictable outcome of applying established techniques."
       },
       {
         "label": "C",
@@ -439,10 +439,10 @@
       },
       {
         "label": "D",
-        "text": "A predictable outcome of applying established techniques."
+        "text": "A dynamic interplay between intent and execution."
       }
     ],
-    "correctAnswer": "B",
+    "correctAnswer": "D",
     "explanation": "By contrasting methods that involve planning (intent) with those that involve improvisation (execution), the passage suggests that creation is a process where these two aspects constantly interact and influence each other.",
     "skill": "Inference",
     "difficulty": 7
@@ -459,7 +459,7 @@
       },
       {
         "label": "B",
-        "text": "The inherent logic and order found in established systems."
+        "text": "A sudden, unprompted creative impulse."
       },
       {
         "label": "C",
@@ -467,10 +467,10 @@
       },
       {
         "label": "D",
-        "text": "A sudden, unprompted creative impulse."
+        "text": "The inherent logic and order found in established systems."
       }
     ],
-    "correctAnswer": "B",
+    "correctAnswer": "D",
     "explanation": "The passage associates structured approaches with frameworks and organization. This implies that artists employing such methods might draw inspiration from the inherent order and logic present in existing systems or patterns.",
     "skill": "Detail Retrieval",
     "difficulty": 5
@@ -587,32 +587,32 @@
     "difficulty": 5
   },
   {
-    "id": "lsat_273",
+    "id": "lsat_lr_002",
     "exam": "LSAT",
     "section": "Logical Reasoning",
-    "question": "The local library has seen a significant decrease in fiction book checkouts over the past year. At the same time, the library introduced a new online reservation system and expanded its digital collection. Researchers conclude that the shift away from physical fiction books is due to the new digital options.",
+    "skill": "logic_chain",
+    "difficulty": 5,
+    "question": "If the museum extends weekend hours, more families will visit. If more families visit, the gift shop will earn more revenue. Which choice follows logically from the statements above?",
     "options": [
       {
         "label": "A",
-        "text": "The new online system made it easier to reserve non-fiction books as well."
+        "text": "If the museum does not extend weekend hours, the gift shop will lose revenue."
       },
       {
         "label": "B",
-        "text": "The decrease in fiction checkouts might be related to changing reader preferences or other factors not mentioned."
+        "text": "The museum should extend hours only on Sundays."
       },
       {
         "label": "C",
-        "text": "Many patrons still prefer the feel of physical books."
+        "text": "Only families shop at the museum gift shop."
       },
       {
         "label": "D",
-        "text": "The library's digital collection includes a wide variety of genres beyond fiction."
+        "text": "If the museum extends weekend hours, the gift shop will earn more revenue."
       }
     ],
-    "correctAnswer": "B",
-    "explanation": "The argument presents two simultaneous events (new digital options and decreased fiction checkouts) and infers causation. Option B weakens this by suggesting alternative explanations or that the observed correlation might be coincidental, thus questioning the causal link.",
-    "skill": "Weakening",
-    "difficulty": 5
+    "correctAnswer": "D",
+    "explanation": "This is a straightforward conditional chain: extend hours → more families → more revenue."
   },
   {
     "id": "lsat_274",
@@ -678,11 +678,11 @@
     "options": [
       {
         "label": "A",
-        "text": "The proposed park site is located near a busy highway."
+        "text": "The council's argument relies on the assumption that noise and loitering are guaranteed consequences and that there are no measures to mitigate them."
       },
       {
         "label": "B",
-        "text": "The council's argument relies on the assumption that noise and loitering are guaranteed consequences and that there are no measures to mitigate them."
+        "text": "The proposed park site is located near a busy highway."
       },
       {
         "label": "C",
@@ -693,8 +693,8 @@
         "text": "Skateboarding is a popular activity among young people in the city."
       }
     ],
-    "correctAnswer": "B",
-    "explanation": "Councilmember Adams presents potential negative outcomes (noise, loitering) as certainties that justify rejecting the proposal. Option B correctly identifies the flaw: the argument assumes these outcomes are unavoidable and doesn't consider potential solutions or preventative measures that could address the concerns.",
+    "correctAnswer": "A",
+    "explanation": "Councilmember Adams presents potential negative outcomes (noise, loitering) as certainties that justify rejecting the proposal. Option A correctly identifies the flaw: the argument assumes these outcomes are unavoidable and doesn't consider potential solutions or preventative measures that could address the concerns.",
     "skill": "Assumption Identification",
     "difficulty": 5
   },
@@ -865,421 +865,5 @@
     "explanation": "The argument strongly asserts that self-driving technology will offer unparalleled safety benefits *because* it eliminates human error, which is stated as the cause of most accidents. Option B identifies the crucial assumption: the argument relies on the premise that human error is the primary or only significant cause of accidents. If other factors contribute substantially (e.g., mechanical failure, road conditions), then self-driving technology might not offer *unparalleled* safety benefits.",
     "skill": "Assumption Identification",
     "difficulty": 7
-  },
-  {
-    "question": "According to the passage, which of the following is LEAST likely to be considered an ecosystem service?",
-    "options": [
-      {
-        "label": "A",
-        "text": "The purification of water by wetlands."
-      },
-      {
-        "label": "B",
-        "text": "The pollination of crops by insects."
-      },
-      {
-        "label": "C",
-        "text": "The aesthetic beauty of a mountain landscape."
-      },
-      {
-        "label": "D",
-        "text": "The regulation of climate by forests."
-      },
-      {
-        "label": "E",
-        "text": "The production of oxygen by plants."
-      }
-    ],
-    "correctAnswer": "C",
-    "explanation": "While aesthetic beauty is a benefit derived from nature, the passage emphasizes tangible, functional benefits that directly support human well-being and economic activity. While some might argue for its inclusion, it's less directly tied to essential processes than the other options. The passage focuses on services that are directly instrumental to human survival and economic systems.",
-    "skill": "Inference",
-    "difficulty": 5,
-    "id": "lsat_286",
-    "exam": "LSAT",
-    "section": "Reading Comprehension"
-  },
-  {
-    "question": "The author mentions the difficulty in assigning economic value to ecosystem services primarily to:",
-    "options": [
-      {
-        "label": "A",
-        "text": "Highlight the limitations of economic models in ecological studies."
-      },
-      {
-        "label": "B",
-        "text": "Suggest that conservation efforts should focus on non-economic benefits."
-      },
-      {
-        "label": "C",
-        "text": "Explain why many ecosystem services are currently underprotected."
-      },
-      {
-        "label": "D",
-        "text": "Argue that natural ecosystems are inherently priceless."
-      },
-      {
-        "label": "E",
-        "text": "Demonstrate the complexity of ecological systems."
-      }
-    ],
-    "correctAnswer": "C",
-    "explanation": "The passage explicitly states that because these services are 'often invisible and unpriced,' they are vulnerable to degradation. The difficulty in valuation directly leads to their underprotection.",
-    "skill": "Author's Reasoning",
-    "difficulty": 5,
-    "id": "lsat_287",
-    "exam": "LSAT",
-    "section": "Reading Comprehension"
-  },
-  {
-    "question": "The passage suggests that a key reason for the 'market failure' related to ecosystem services is:",
-    "options": [
-      {
-        "label": "A",
-        "text": "The lack of government intervention in environmental markets."
-      },
-      {
-        "label": "B",
-        "text": "The absence of a clear property rights structure for natural resources."
-      },
-      {
-        "label": "C",
-        "text": "The inherent inefficiency of free markets."
-      },
-      {
-        "label": "D",
-        "text": "The high cost of implementing environmental regulations."
-      },
-      {
-        "label": "E",
-        "text": "The limited demand for environmental goods and services."
-      }
-    ],
-    "correctAnswer": "B",
-    "explanation": "The passage links market failure to the fact that these services are 'public goods' or 'common pool resources,' which often lack well-defined property rights, leading to overuse or degradation. This indirectly points to the issue of property rights structures.",
-    "skill": "Inference",
-    "difficulty": 7,
-    "id": "lsat_288",
-    "exam": "LSAT",
-    "section": "Reading Comprehension"
-  },
-  {
-    "question": "The author's tone in discussing the economic valuation of ecosystem services can best be described as:",
-    "options": [
-      {
-        "label": "A",
-        "text": "Indifferent and detached."
-      },
-      {
-        "label": "B",
-        "text": "Enthusiastic and optimistic."
-      },
-      {
-        "label": "C",
-        "text": "Cautious but hopeful."
-      },
-      {
-        "label": "D",
-        "text": "Skeptical and dismissive."
-      },
-      {
-        "label": "E",
-        "text": "Critical and denunciatory."
-      }
-    ],
-    "correctAnswer": "C",
-    "explanation": "The author acknowledges the challenges ('difficulties,' 'complex') but also highlights the necessity and potential benefits ('crucial step,' 'powerful tool') of economic valuation, suggesting a measured approach that sees potential despite obstacles.",
-    "skill": "Tone",
-    "difficulty": 5,
-    "id": "lsat_289",
-    "exam": "LSAT",
-    "section": "Reading Comprehension"
-  },
-  {
-    "question": "The passage implies that the conventional approach to measuring economic progress often overlooks:",
-    "options": [
-      {
-        "label": "A",
-        "text": "The depletion of non-renewable resources."
-      },
-      {
-        "label": "B",
-        "text": "The environmental externalities of industrial production."
-      },
-      {
-        "label": "C",
-        "text": "The contribution of natural capital to economic output."
-      },
-      {
-        "label": "D",
-        "text": "All of the above."
-      },
-      {
-        "label": "E",
-        "text": "None of the above."
-      }
-    ],
-    "correctAnswer": "D",
-    "explanation": "By focusing on ecosystem services and the difficulty in valuing them, the passage implies that traditional economic metrics fail to account for the degradation of natural capital (C) and the negative externalities (B), both of which are closely linked to resource depletion (A).",
-    "skill": "Inference",
-    "difficulty": 7,
-    "id": "lsat_291",
-    "exam": "LSAT",
-    "section": "Reading Comprehension"
-  },
-  {
-    "question": "The author uses the term 'natural capital' to suggest that:",
-    "options": [
-      {
-        "label": "A",
-        "text": "Natural resources are inherently less valuable than manufactured capital."
-      },
-      {
-        "label": "B",
-        "text": "Natural ecosystems represent a form of wealth that can yield ongoing benefits."
-      },
-      {
-        "label": "C",
-        "text": "Environmental degradation is an unavoidable consequence of economic development."
-      },
-      {
-        "label": "D",
-        "text": "The focus should be solely on the monetary value of natural resources."
-      },
-      {
-        "label": "E",
-        "text": "Ecological systems are fundamentally different from economic systems."
-      }
-    ],
-    "correctAnswer": "B",
-    "explanation": "The analogy to 'capital' implies a store of value that generates returns. In this context, natural capital refers to the stock of natural assets that provide a flow of benefits (ecosystem services).",
-    "skill": "Vocabulary in Context",
-    "difficulty": 5,
-    "id": "lsat_292",
-    "exam": "LSAT",
-    "section": "Reading Comprehension"
-  },
-  {
-    "question": "What is the central tension discussed in the passage concerning the field of law?",
-    "options": [
-      {
-        "label": "A",
-        "text": "The conflict between statutory law and common law in environmental cases."
-      },
-      {
-        "label": "B",
-        "text": "The struggle to adapt legal frameworks to encompass the value of natural processes."
-      },
-      {
-        "label": "C",
-        "text": "The debate over whether environmental regulations should be enforced federally or by states."
-      },
-      {
-        "label": "D",
-        "text": "The increasing complexity of environmental litigation."
-      },
-      {
-        "label": "E",
-        "text": "The difficulty in proving causation in environmental damage lawsuits."
-      }
-    ],
-    "correctAnswer": "B",
-    "explanation": "The passage discusses how traditional legal systems, often anthropocentric and focused on human property rights, struggle to incorporate the intrinsic value and essential functions of natural systems, leading to challenges in legal protection and remedy for environmental harm.",
-    "skill": "Main Idea",
-    "difficulty": 7,
-    "id": "lsat_293",
-    "exam": "LSAT",
-    "section": "Reading Comprehension"
-  },
-  {
-    "question": "The author would most likely agree with which of the following statements?",
-    "options": [
-      {
-        "label": "A",
-        "text": "Environmental law is primarily concerned with protecting individual property rights from pollution."
-      },
-      {
-        "label": "B",
-        "text": "Sustainable development requires legal mechanisms that reflect the interconnectedness of human and natural systems."
-      },
-      {
-        "label": "C",
-        "text": "The legal system adequately protects the interests of non-human entities."
-      },
-      {
-        "label": "D",
-        "text": "Monetary valuation is the only legitimate basis for environmental protection under the law."
-      },
-      {
-        "label": "E",
-        "text": "Legal battles over environmental issues have led to significant advancements in ecological science."
-      }
-    ],
-    "correctAnswer": "B",
-    "explanation": "The passage highlights the limitations of existing legal frameworks and implicitly advocates for approaches that recognize ecological integrity and the essential role of natural systems. Sustainable development, as envisioned in the passage, would necessitate such legal adaptations.",
-    "skill": "Inference",
-    "difficulty": 7,
-    "id": "lsat_294",
-    "exam": "LSAT",
-    "section": "Reading Comprehension"
-  },
-  {
-    "question": "The passage uses the example of a river's capacity to dilute pollutants to illustrate:",
-    "options": [
-      {
-        "label": "A",
-        "text": "The limitations of scientific measurement in environmental studies."
-      },
-      {
-        "label": "B",
-        "text": "How natural processes can be exploited for industrial purposes without accounting for their cost."
-      },
-      {
-        "label": "C",
-        "text": "The inherent resilience of natural ecosystems to human interference."
-      },
-      {
-        "label": "D",
-        "text": "The need for stricter government regulations on industrial waste."
-      },
-      {
-        "label": "E",
-        "text": "The primary function of rivers in supporting aquatic life."
-      }
-    ],
-    "correctAnswer": "B",
-    "explanation": "This capacity is a service provided by the river ecosystem. When industries use the river to dilute pollutants without paying for this service or accounting for its potential degradation, it exemplifies the problem of unpriced externalities and the exploitation of natural processes.",
-    "skill": "Example Application",
-    "difficulty": 5,
-    "id": "lsat_295",
-    "exam": "LSAT",
-    "section": "Reading Comprehension"
-  },
-  {
-    "question": "Which of the following best describes the relationship between the 'tragedy of the commons' and the issues discussed in the passage?",
-    "options": [
-      {
-        "label": "A",
-        "text": "The tragedy of the commons is a proposed solution to the problem of environmental degradation."
-      },
-      {
-        "label": "B",
-        "text": "The issues discussed in the passage are a direct consequence of the tragedy of the commons principle."
-      },
-      {
-        "label": "C",
-        "text": "The tragedy of the commons is irrelevant to the economic valuation of ecosystem services."
-      },
-      {
-        "label": "D",
-        "text": "The passage rejects the principles of the tragedy of the commons as outdated."
-      },
-      {
-        "label": "E",
-        "text": "The tragedy of the commons explains the overexploitation of privately owned natural resources."
-      }
-    ],
-    "correctAnswer": "B",
-    "explanation": "The concept of the tragedy of the commons, which describes the depletion of a shared resource by individuals acting in their own self-interest, directly applies to the description of many ecosystem services as public goods or common pool resources vulnerable to overuse and degradation.",
-    "skill": "Concept Application",
-    "difficulty": 7,
-    "id": "lsat_296",
-    "exam": "LSAT",
-    "section": "Reading Comprehension"
-  },
-  {
-    "question": "The author's argument implies that a more effective approach to environmental protection would involve:",
-    "options": [
-      {
-        "label": "A",
-        "text": "Strictly limiting all forms of economic development."
-      },
-      {
-        "label": "B",
-        "text": "Relying solely on international treaties and agreements."
-      },
-      {
-        "label": "C",
-        "text": "Integrating the value of ecosystem services into decision-making processes."
-      },
-      {
-        "label": "D",
-        "text": "Educating the public about the beauty of nature."
-      },
-      {
-        "label": "E",
-        "text": "Developing advanced technologies to replace all natural processes."
-      }
-    ],
-    "correctAnswer": "C",
-    "explanation": "The entire premise of the passage is that by recognizing and valuing ecosystem services, we can make more informed decisions that lead to better environmental outcomes. This directly supports the idea of integrating this value into decision-making.",
-    "skill": "Author's Recommendation",
-    "difficulty": 5,
-    "id": "lsat_297",
-    "exam": "LSAT",
-    "section": "Reading Comprehension"
-  },
-  {
-    "question": "According to the passage, the challenge of assigning value to ecosystem services is compounded by:",
-    "options": [
-      {
-        "label": "A",
-        "text": "The fact that many services are non-rivalrous and non-excludable."
-      },
-      {
-        "label": "B",
-        "text": "The lack of scientific understanding of ecological processes."
-      },
-      {
-        "label": "C",
-        "text": "The preference humans have for manufactured goods over natural ones."
-      },
-      {
-        "label": "D",
-        "text": "The consistent overestimation of the benefits of healthy ecosystems."
-      },
-      {
-        "label": "E",
-        "text": "The legal prohibition on valuing natural resources."
-      }
-    ],
-    "correctAnswer": "A",
-    "explanation": "The passage explicitly mentions that many ecosystem services are public goods, characterized by non-rivalry (one person's use doesn't diminish another's) and non-excludability (it's hard to prevent people from benefiting). These characteristics are precisely why they are difficult to value using traditional market mechanisms.",
-    "skill": "Supporting Detail",
-    "difficulty": 5,
-    "id": "lsat_298",
-    "exam": "LSAT",
-    "section": "Reading Comprehension"
-  },
-  {
-    "question": "Which of the following best sums up the author's perspective on the future of environmental policy?",
-    "options": [
-      {
-        "label": "A",
-        "text": "Environmental policy is destined to fail without radical economic restructuring."
-      },
-      {
-        "label": "B",
-        "text": "Existing environmental policies are adequate and require only minor adjustments."
-      },
-      {
-        "label": "C",
-        "text": "Greater integration of ecological and economic considerations is essential for effective policy."
-      },
-      {
-        "label": "D",
-        "text": "Technological innovation will eventually solve all environmental problems, rendering policy moot."
-      },
-      {
-        "label": "E",
-        "text": "International cooperation is the only viable path forward for environmental policy."
-      }
-    ],
-    "correctAnswer": "C",
-    "explanation": "The passage's central theme is the need to recognize and value ecosystem services. This inherently points towards a future where environmental considerations are more deeply interwoven with economic and policy frameworks.",
-    "skill": "Overall Perspective",
-    "difficulty": 5,
-    "id": "lsat_300",
-    "exam": "LSAT",
-    "section": "Reading Comprehension"
   }
 ]

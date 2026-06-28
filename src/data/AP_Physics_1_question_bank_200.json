@@ -1,29 +1,29 @@
 [
   {
-    "id": "AP_Phys1_1",
-    "question": "A ball is thrown vertically upward at 20 m/s. How high does it rise? (g = 10 m/s²)",
+    "id": "AP_Physics_1_28",
+    "question": "A ball is thrown vertically upward with an initial speed $v_0$. Neglecting air resistance, which statement best describes the motion after it reaches its maximum height and is on its way down?",
     "choices": {
-      "A": "30 m",
-      "B": "40 m",
-      "C": "10 m",
-      "D": "20 m"
+      "A": "The acceleration is zero.",
+      "B": "The velocity is upward and decreasing.",
+      "C": "The velocity is downward and its magnitude is increasing.",
+      "D": "The velocity is downward and its magnitude is decreasing."
     },
-    "answer": "D",
-    "difficulty": 5,
-    "explanation": "v² = v₀² - 2gh → 0 = 400 - 20h → h = 20 m."
+    "answer": "C",
+    "difficulty": 4,
+    "explanation": "Once the ball leaves the hand, the only force acting on it (neglecting air resistance) is gravity. Gravity causes a constant downward acceleration $g$. As the ball falls downwards, its velocity is also downwards. Since acceleration is in the same direction as velocity, the magnitude of the velocity (speed) increases."
   },
   {
-    "id": "AP_Phys1_2",
-    "question": "A 5 kg box on a frictionless surface has a net force of 15 N. What is its acceleration?",
+    "id": "AP_Physics_1_33",
+    "question": "A car moving at a speed $v$ applies its brakes and stops in time $t$. If the car were initially moving at $2v$ and braked with the same deceleration, in what time would it stop?",
     "choices": {
-      "A": "0.33 m/s²",
-      "B": "5 m/s²",
-      "C": "75 m/s²",
-      "D": "3 m/s²"
+      "A": "$t$",
+      "B": "$2t$",
+      "C": "$4t$",
+      "D": "$t/2$"
     },
-    "answer": "D",
-    "difficulty": 5,
-    "explanation": "a = F/m = 15/5 = 3 m/s²."
+    "answer": "B",
+    "difficulty": 6,
+    "explanation": "The kinematic equation relating initial velocity ($v_i$), final velocity ($v_f$), acceleration ($a$), and time ($t$) is $v_f = v_i + at$. Assuming deceleration is constant, let's call it $-a'$. When the initial speed is $v$, $0 = v - at$, so $t = v/a'$. When the initial speed is $2v$, $0 = 2v - a't'$, so $t' = 2v/a' = 2(v/a') = 2t$."
   },
   {
     "id": "AP_Phys1_3",
@@ -39,30 +39,30 @@
     "explanation": "Circular motion requires centripetal acceleration toward the center."
   },
   {
-    "id": "AP_Phys1_4",
-    "question": "A 2 kg ball at 4 m/s hits a 6 kg ball at rest (perfectly inelastic). Combined velocity?",
+    "id": "AP_Physics_1_225",
+    "question": "A student applies a torque to a massive, rotating disk to slow it down. Which of the following statements correctly describes the effect of this torque on the disk?",
     "choices": {
-      "A": "0.5 m/s",
-      "B": "2 m/s",
-      "C": "4 m/s",
-      "D": "1 m/s"
+      "A": "The angular momentum of the disk increases.",
+      "B": "The rotational inertia of the disk decreases.",
+      "C": "The angular velocity of the disk decreases.",
+      "D": "The total mechanical energy of the disk increases."
     },
-    "answer": "D",
-    "difficulty": 6,
-    "explanation": "(2)(4) = (8)v → v = 1 m/s."
+    "answer": "C",
+    "difficulty": 5,
+    "explanation": "Torque is the rotational analogue of force. A net external torque causes a change in angular momentum (tau = delta_L / delta_t). If the torque is applied to slow the disk down, it means the torque is in the opposite direction to the disk's angular velocity. This will cause the angular velocity to decrease. The rotational inertia of the disk depends on its mass distribution and shape, which are not changing. The angular momentum will decrease because the angular velocity is decreasing. The total mechanical energy will decrease because the rotational kinetic energy (1/2*I*omega^2) is decreasing."
   },
   {
-    "id": "AP_Phys1_5",
-    "question": "A spring (k = 200 N/m) compressed 0.1 m stores how much PE?",
+    "id": "AP_Physics_1_155",
+    "question": "A block is sliding down a frictionless inclined plane. As the angle of inclination decreases, what happens to the acceleration of the block?",
     "choices": {
-      "A": "1 J",
-      "B": "2 J",
-      "C": "10 J",
-      "D": "20 J"
+      "A": "It decreases.",
+      "B": "It increases.",
+      "C": "It remains the same.",
+      "D": "It becomes zero."
     },
     "answer": "A",
     "difficulty": 5,
-    "explanation": "PE = ½kx² = ½(200)(0.01) = 1 J."
+    "explanation": "The acceleration of a block sliding down a frictionless incline is $a = g sin\theta$, where $\theta$ is the angle of inclination. Since $sin\theta$ decreases as $\theta$ decreases (for $0^circ < \theta leq 90^circ$), the acceleration also decreases."
   },
   {
     "id": "AP_Phys1_6",
@@ -299,30 +299,30 @@
     "explanation": "For the block to remain at rest, the force of static friction must balance the component of gravity pulling the block down the incline. The component of gravity down the incline is $mg sin \theta$. The maximum static friction force is $f_{s,max} = mu_s N$, where $N = mg cos \theta$ is the normal force. Thus, for equilibrium, $mg sin \theta le mu_s mg cos \theta$. Dividing by $mg cos \theta$ (since $cos \theta > 0$ for typical inclined planes), we get $\tan \theta le mu_s$. This inequality can be rewritten as $\theta le arctan(mu_s)$."
   },
   {
-    "id": "AP_Physics_1_26",
-    "question": "A 10 kg block is at rest on a horizontal frictionless surface. A constant horizontal force is applied to the block, causing it to accelerate at $2 \text{ m/s}^2$. What is the magnitude of the applied force?",
+    "id": "AP_Phys1_1",
+    "question": "A ball is thrown vertically upward at 20 m/s. How high does it rise? (g = 10 m/s²)",
     "choices": {
-      "A": "5 N",
-      "B": "10 N",
-      "C": "20 N",
-      "D": "200 N"
+      "A": "30 m",
+      "B": "40 m",
+      "C": "10 m",
+      "D": "20 m"
     },
-    "answer": "C",
-    "difficulty": 4,
-    "explanation": "Using Newton's second law, $F_{net} = ma$. Since the surface is frictionless, the net force is equal to the applied force. $F = (10 \text{ kg}) \times (2 \text{ m/s}^2) = 20 \text{ N}$."
+    "answer": "D",
+    "difficulty": 5,
+    "explanation": "v² = v₀² - 2gh → 0 = 400 - 20h → h = 20 m."
   },
   {
-    "id": "AP_Physics_1_28",
-    "question": "A ball is thrown vertically upward with an initial speed $v_0$. Neglecting air resistance, which statement best describes the motion after it reaches its maximum height and is on its way down?",
+    "id": "AP_Physics_1_154",
+    "question": "A 10 kg crate rests on a horizontal surface. The coefficient of static friction is $mu_s = 0.4$. What is the minimum horizontal force required to start the crate moving?",
     "choices": {
-      "A": "The acceleration is zero.",
-      "B": "The velocity is upward and decreasing.",
-      "C": "The velocity is downward and its magnitude is increasing.",
-      "D": "The velocity is downward and its magnitude is decreasing."
+      "A": "$39.2\text{ N}$",
+      "B": "$40\text{ N}$",
+      "C": "$98\text{ N}$",
+      "D": "$100\text{ N}$"
     },
-    "answer": "C",
-    "difficulty": 4,
-    "explanation": "Once the ball leaves the hand, the only force acting on it (neglecting air resistance) is gravity. Gravity causes a constant downward acceleration $g$. As the ball falls downwards, its velocity is also downwards. Since acceleration is in the same direction as velocity, the magnitude of the velocity (speed) increases."
+    "answer": "A",
+    "difficulty": 6,
+    "explanation": "The maximum static friction force is $f_{s,max} = mu_s N$. The normal force $N$ on a horizontal surface is equal to the weight, $mg$. So, $N = (10 \text{ kg})(9.8 \text{ m/s}^2) = 98 \text{ N}$. Therefore, $f_{s,max} = (0.4)(98 \text{ N}) = 39.2 \text{ N}$. The minimum force to start moving is equal to this maximum static friction."
   },
   {
     "id": "AP_Physics_1_29",
@@ -364,17 +364,17 @@
     "explanation": "Using the conservation of mechanical energy, the initial potential energy ($PE_i = mgh$) is converted into kinetic energy at the bottom ($KE_f = \frac{1}{2}mv^2$). Since the incline is frictionless, mechanical energy is conserved. $mgh = \frac{1}{2}mv^2$. Solving for $v$, we get $v = sqrt{2gh}$."
   },
   {
-    "id": "AP_Physics_1_33",
-    "question": "A car moving at a speed $v$ applies its brakes and stops in time $t$. If the car were initially moving at $2v$ and braked with the same deceleration, in what time would it stop?",
+    "id": "AP_Phys1_2",
+    "question": "A 5 kg box on a frictionless surface has a net force of 15 N. What is its acceleration?",
     "choices": {
-      "A": "$t$",
-      "B": "$2t$",
-      "C": "$4t$",
-      "D": "$t/2$"
+      "A": "0.33 m/s²",
+      "B": "5 m/s²",
+      "C": "75 m/s²",
+      "D": "3 m/s²"
     },
-    "answer": "B",
-    "difficulty": 6,
-    "explanation": "The kinematic equation relating initial velocity ($v_i$), final velocity ($v_f$), acceleration ($a$), and time ($t$) is $v_f = v_i + at$. Assuming deceleration is constant, let's call it $-a'$. When the initial speed is $v$, $0 = v - at$, so $t = v/a'$. When the initial speed is $2v$, $0 = 2v - a't'$, so $t' = 2v/a' = 2(v/a') = 2t$."
+    "answer": "D",
+    "difficulty": 5,
+    "explanation": "a = F/m = 15/5 = 3 m/s²."
   },
   {
     "id": "AP_Physics_1_34",
@@ -533,17 +533,17 @@
     "explanation": "In projectile motion, neglecting air resistance, the only force acting on the projectile after launch is gravity, which acts vertically downwards. Therefore, the vertical acceleration is constant and equal to 'g' downwards. The horizontal motion is independent of the vertical motion, and since there are no horizontal forces (neglecting air resistance), the horizontal acceleration is zero, meaning the horizontal velocity remains constant."
   },
   {
-    "id": "AP_Physics_1_49",
-    "question": "Two objects, A and B, have masses m_A and m_B respectively. They are initially at rest and are then subjected to the same constant net force for the same amount of time. Which object will have the greater change in momentum?",
+    "id": "AP_Phys1_5",
+    "question": "A spring (k = 200 N/m) compressed 0.1 m stores how much PE?",
     "choices": {
-      "A": "Object A, if m_A < m_B.",
-      "B": "Object B, if m_B < m_A.",
-      "C": "Both objects will have the same change in momentum.",
-      "D": "It depends on the masses of the objects."
+      "A": "1 J",
+      "B": "2 J",
+      "C": "10 J",
+      "D": "20 J"
     },
-    "answer": "C",
+    "answer": "A",
     "difficulty": 5,
-    "explanation": "The impulse applied to an object is equal to the change in its momentum (Impulse-Momentum Theorem: J = Δp). Impulse is also defined as the average net force multiplied by the time interval over which it acts (J = F_net * Δt). Since both objects are subjected to the same constant net force for the same amount of time, the impulse delivered to both objects is the same. Therefore, their change in momentum will also be the same, regardless of their masses."
+    "explanation": "PE = ½kx² = ½(200)(0.01) = 1 J."
   },
   {
     "id": "AP_Physics_1_50",
@@ -1560,30 +1560,30 @@
     "explanation": "First, calculate the acceleration: $a = \frac{Delta v}{Delta t} = \frac{0 \text{ m/s} - 20 \text{ m/s}}{10 \text{ s}} = -2 \text{ m/s}^2$. Then, use Newton's Second Law: $F_{avg} = ma = (1000 \text{ kg})(-2 \text{ m/s}^2) = -2000 \text{ N}$. The negative sign indicates the force opposes the motion."
   },
   {
-    "id": "AP_Physics_1_154",
-    "question": "A 10 kg crate rests on a horizontal surface. The coefficient of static friction is $mu_s = 0.4$. What is the minimum horizontal force required to start the crate moving?",
+    "id": "AP_Physics_1_26",
+    "question": "A 10 kg block is at rest on a horizontal frictionless surface. A constant horizontal force is applied to the block, causing it to accelerate at $2 \text{ m/s}^2$. What is the magnitude of the applied force?",
     "choices": {
-      "A": "$39.2\text{ N}$",
-      "B": "$40\text{ N}$",
-      "C": "$98\text{ N}$",
-      "D": "$100\text{ N}$"
+      "A": "5 N",
+      "B": "10 N",
+      "C": "20 N",
+      "D": "200 N"
     },
-    "answer": "A",
-    "difficulty": 6,
-    "explanation": "The maximum static friction force is $f_{s,max} = mu_s N$. The normal force $N$ on a horizontal surface is equal to the weight, $mg$. So, $N = (10 \text{ kg})(9.8 \text{ m/s}^2) = 98 \text{ N}$. Therefore, $f_{s,max} = (0.4)(98 \text{ N}) = 39.2 \text{ N}$. The minimum force to start moving is equal to this maximum static friction."
+    "answer": "C",
+    "difficulty": 4,
+    "explanation": "Using Newton's second law, $F_{net} = ma$. Since the surface is frictionless, the net force is equal to the applied force. $F = (10 \text{ kg}) \times (2 \text{ m/s}^2) = 20 \text{ N}$."
   },
   {
-    "id": "AP_Physics_1_155",
-    "question": "A block is sliding down a frictionless inclined plane. As the angle of inclination decreases, what happens to the acceleration of the block?",
+    "id": "AP_Physics_1_49",
+    "question": "Two objects, A and B, have masses m_A and m_B respectively. They are initially at rest and are then subjected to the same constant net force for the same amount of time. Which object will have the greater change in momentum?",
     "choices": {
-      "A": "It decreases.",
-      "B": "It increases.",
-      "C": "It remains the same.",
-      "D": "It becomes zero."
+      "A": "Object A, if m_A < m_B.",
+      "B": "Object B, if m_B < m_A.",
+      "C": "Both objects will have the same change in momentum.",
+      "D": "It depends on the masses of the objects."
     },
-    "answer": "A",
+    "answer": "C",
     "difficulty": 5,
-    "explanation": "The acceleration of a block sliding down a frictionless incline is $a = g sin\theta$, where $\theta$ is the angle of inclination. Since $sin\theta$ decreases as $\theta$ decreases (for $0^circ < \theta leq 90^circ$), the acceleration also decreases."
+    "explanation": "The impulse applied to an object is equal to the change in its momentum (Impulse-Momentum Theorem: J = Δp). Impulse is also defined as the average net force multiplied by the time interval over which it acts (J = F_net * Δt). Since both objects are subjected to the same constant net force for the same amount of time, the impulse delivered to both objects is the same. Therefore, their change in momentum will also be the same, regardless of their masses."
   },
   {
     "id": "AP_Physics_1_156",
@@ -2353,17 +2353,17 @@
     "explanation": "According to Newton's First Law (or Second Law), an object moving at a constant velocity has zero acceleration. If the acceleration is zero, then the net force acting on the object must also be zero (F_net = m*a = m*0 = 0)."
   },
   {
-    "id": "AP_Physics_1_225",
-    "question": "A student applies a torque to a massive, rotating disk to slow it down. Which of the following statements correctly describes the effect of this torque on the disk?",
+    "id": "AP_Phys1_4",
+    "question": "A 2 kg ball at 4 m/s hits a 6 kg ball at rest (perfectly inelastic). Combined velocity?",
     "choices": {
-      "A": "The angular momentum of the disk increases.",
-      "B": "The rotational inertia of the disk decreases.",
-      "C": "The angular velocity of the disk decreases.",
-      "D": "The total mechanical energy of the disk increases."
+      "A": "0.5 m/s",
+      "B": "2 m/s",
+      "C": "4 m/s",
+      "D": "1 m/s"
     },
-    "answer": "C",
-    "difficulty": 5,
-    "explanation": "Torque is the rotational analogue of force. A net external torque causes a change in angular momentum (tau = delta_L / delta_t). If the torque is applied to slow the disk down, it means the torque is in the opposite direction to the disk's angular velocity. This will cause the angular velocity to decrease. The rotational inertia of the disk depends on its mass distribution and shape, which are not changing. The angular momentum will decrease because the angular velocity is decreasing. The total mechanical energy will decrease because the rotational kinetic energy (1/2*I*omega^2) is decreasing."
+    "answer": "D",
+    "difficulty": 6,
+    "explanation": "(2)(4) = (8)v → v = 1 m/s."
   },
   {
     "id": "AP_Physics_1_226",

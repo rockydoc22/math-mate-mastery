@@ -1,30 +1,30 @@
 [
   {
-    "id": "ged_021",
+    "id": "ged_033",
     "exam": "GED",
-    "section": "Mathematical Reasoning",
-    "question": "What is the value of |-7|?",
+    "section": "Social Studies",
+    "question": "Which amendment to the Constitution abolished slavery?",
     "options": [
       {
         "label": "A",
-        "text": "-7"
+        "text": "15th Amendment"
       },
       {
         "label": "B",
-        "text": "7"
+        "text": "14th Amendment"
       },
       {
         "label": "C",
-        "text": "0"
+        "text": "13th Amendment"
       },
       {
         "label": "D",
-        "text": "14"
+        "text": "19th Amendment"
       }
     ],
-    "correctAnswer": "B",
-    "explanation": "The absolute value of -7 is 7 because absolute value measures distance from zero.",
-    "skill": "Absolute Value",
+    "correctAnswer": "C",
+    "explanation": "The 13th Amendment (1865) abolished slavery and involuntary servitude throughout the United States.",
+    "skill": "History",
     "difficulty": 3
   },
   {
@@ -560,31 +560,31 @@
     "difficulty": 3
   },
   {
-    "id": "ged_001",
+    "id": "ged_021",
     "exam": "GED",
     "section": "Mathematical Reasoning",
-    "question": "Solve for x: 3x + 7 = 22",
+    "question": "What is the value of |-7|?",
     "options": [
       {
         "label": "A",
-        "text": "3"
+        "text": "-7"
       },
       {
         "label": "B",
-        "text": "4"
+        "text": "7"
       },
       {
         "label": "C",
-        "text": "6"
+        "text": "0"
       },
       {
         "label": "D",
-        "text": "5"
+        "text": "14"
       }
     ],
-    "correctAnswer": "D",
-    "explanation": "3x + 7 = 22 → 3x = 15 → x = 5.",
-    "skill": "Linear Equations",
+    "correctAnswer": "B",
+    "explanation": "The absolute value of -7 is 7 because absolute value measures distance from zero.",
+    "skill": "Absolute Value",
     "difficulty": 3
   },
   {
@@ -896,31 +896,31 @@
     "difficulty": 5
   },
   {
-    "id": "ged_033",
+    "id": "ged_001",
     "exam": "GED",
-    "section": "Social Studies",
-    "question": "Which amendment to the Constitution abolished slavery?",
+    "section": "Mathematical Reasoning",
+    "question": "Solve for x: 3x + 7 = 22",
     "options": [
       {
         "label": "A",
-        "text": "15th Amendment"
+        "text": "3"
       },
       {
         "label": "B",
-        "text": "14th Amendment"
+        "text": "4"
       },
       {
         "label": "C",
-        "text": "13th Amendment"
+        "text": "6"
       },
       {
         "label": "D",
-        "text": "19th Amendment"
+        "text": "5"
       }
     ],
-    "correctAnswer": "C",
-    "explanation": "The 13th Amendment (1865) abolished slavery and involuntary servitude throughout the United States.",
-    "skill": "History",
+    "correctAnswer": "D",
+    "explanation": "3x + 7 = 22 → 3x = 15 → x = 5.",
+    "skill": "Linear Equations",
     "difficulty": 3
   },
   {

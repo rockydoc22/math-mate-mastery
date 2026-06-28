@@ -1,16 +1,16 @@
 [
   {
-    "id": 51,
+    "id": 64,
     "category": "Advanced Algebra",
     "subcategory": "Exponential Functions",
     "difficulty": 7,
-    "question": "A population starts at 714 and grows by 4.4% each year. What will the population be after 10 years? (Round to the nearest whole number)",
-    "optionA": "983",
-    "optionB": "1202",
-    "optionC": "1093",
-    "optionD": "1024",
-    "correct": "C",
-    "explanation": "Use P(t) = P₀(1 + r)^t = 714(1.0435283883890234)^10 = 1093. Option D incorrectly uses simple interest instead of compound growth."
+    "question": "A population starts at 812 and grows by 3.8% each year. What will the population be after 17 years? (Round to the nearest whole number)",
+    "optionA": "1371",
+    "optionB": "1524",
+    "optionC": "1676",
+    "optionD": "1332",
+    "correct": "B",
+    "explanation": "Use P(t) = P₀(1 + r)^t = 812(1.0377334710895454)^17 = 1524. Option D incorrectly uses simple interest instead of compound growth."
   },
   {
     "id": 52,
@@ -260,17 +260,17 @@
     "explanation": "For a quadratic f(x) = ax² + bx + c, the vertex is at x = -b/(2a) = 1.00. Substituting back: f(1.00) = 5(1.00)² + -10(1.00) + 19 = 14.00"
   },
   {
-    "id": 22,
+    "id": 51,
     "category": "Advanced Algebra",
-    "subcategory": "Quadratic Equations",
+    "subcategory": "Exponential Functions",
     "difficulty": 7,
-    "question": "If f(x) = 4x² + -2x + -16, what is the value of f(x) when the function reaches its minimum or maximum value?",
-    "optionA": "-16.25",
-    "optionB": "-15.75",
-    "optionC": "0.25",
-    "optionD": "-16.00",
-    "correct": "A",
-    "explanation": "For a quadratic f(x) = ax² + bx + c, the vertex is at x = -b/(2a) = 0.25. Substituting back: f(0.25) = 4(0.25)² + -2(0.25) + -16 = -16.25"
+    "question": "A population starts at 714 and grows by 4.4% each year. What will the population be after 10 years? (Round to the nearest whole number)",
+    "optionA": "983",
+    "optionB": "1202",
+    "optionC": "1093",
+    "optionD": "1024",
+    "correct": "C",
+    "explanation": "Use P(t) = P₀(1 + r)^t = 714(1.0435283883890234)^10 = 1093. Option D incorrectly uses simple interest instead of compound growth."
   },
   {
     "id": 23,
@@ -806,17 +806,17 @@
     "explanation": "For a quadratic f(x) = ax² + bx + c, the vertex is at x = -b/(2a) = -1.67. Substituting back: f(-1.67) = 3(-1.67)² + 10(-1.67) + -14 = -22.33"
   },
   {
-    "id": 64,
+    "id": 22,
     "category": "Advanced Algebra",
-    "subcategory": "Exponential Functions",
+    "subcategory": "Quadratic Equations",
     "difficulty": 7,
-    "question": "A population starts at 812 and grows by 3.8% each year. What will the population be after 17 years? (Round to the nearest whole number)",
-    "optionA": "1371",
-    "optionB": "1524",
-    "optionC": "1676",
-    "optionD": "1332",
-    "correct": "B",
-    "explanation": "Use P(t) = P₀(1 + r)^t = 812(1.0377334710895454)^17 = 1524. Option D incorrectly uses simple interest instead of compound growth."
+    "question": "If f(x) = 4x² + -2x + -16, what is the value of f(x) when the function reaches its minimum or maximum value?",
+    "optionA": "-16.25",
+    "optionB": "-15.75",
+    "optionC": "0.25",
+    "optionD": "-16.00",
+    "correct": "A",
+    "explanation": "For a quadratic f(x) = ax² + bx + c, the vertex is at x = -b/(2a) = 0.25. Substituting back: f(0.25) = 4(0.25)² + -2(0.25) + -16 = -16.25"
   },
   {
     "id": 65,

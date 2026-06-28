@@ -13,17 +13,17 @@
     "explanation": "Equivalent to 'A bird in the hand is worth two in the bush.'"
   },
   {
-    "id": "AP_Italian_146",
-    "question": "Spero che tu _______ presto.",
+    "id": "AP_Italian_6",
+    "question": "'In bocca al lupo' significa:",
     "choices": {
-      "A": "guarisca",
-      "B": "guarisci",
-      "C": "è guarito",
-      "D": "guarisce"
+      "A": "Fai attenzione ai lupi",
+      "B": "Buona fortuna",
+      "C": "Mangia bene",
+      "D": "Vai a caccia"
     },
-    "answer": "A",
-    "difficulty": 6,
-    "explanation": "Il verbo 'sperare che' regge il congiuntivo. 'Guarisca' è la terza persona singolare del congiuntivo presente del verbo 'guarire'."
+    "answer": "B",
+    "difficulty": 5,
+    "explanation": "Italian way to say 'Good luck!' Response: 'Crepi il lupo!'"
   },
   {
     "id": "AP_Italian_147",
@@ -65,17 +65,17 @@
     "explanation": "'Andare' uses 'essere'; participle agrees with feminine plural subject: 'andate.'"
   },
   {
-    "id": "AP_Italian_6",
-    "question": "'In bocca al lupo' significa:",
+    "id": "AP_Italian_144",
+    "question": "Cosa significa l'espressione idiomatica 'fare la bella vita'?",
     "choices": {
-      "A": "Fai attenzione ai lupi",
-      "B": "Buona fortuna",
-      "C": "Mangia bene",
-      "D": "Vai a caccia"
+      "A": "Vivere in modo lussuoso e agiato",
+      "B": "Essere molto impegnati",
+      "C": "Essere molto magri",
+      "D": "Fare una dieta"
     },
-    "answer": "B",
-    "difficulty": 5,
-    "explanation": "Italian way to say 'Good luck!' Response: 'Crepi il lupo!'"
+    "answer": "A",
+    "difficulty": 7,
+    "explanation": "'Fare la bella vita' significa godersi una vita piacevole, confortevole e spesso dispendiosa."
   },
   {
     "id": "AP_Italian_7",
@@ -260,17 +260,17 @@
     "explanation": "Pizza Margherita originated in Naples."
   },
   {
-    "id": "AP_Italian_144",
-    "question": "Cosa significa l'espressione idiomatica 'fare la bella vita'?",
+    "id": "AP_Italian_146",
+    "question": "Spero che tu _______ presto.",
     "choices": {
-      "A": "Vivere in modo lussuoso e agiato",
-      "B": "Essere molto impegnati",
-      "C": "Essere molto magri",
-      "D": "Fare una dieta"
+      "A": "guarisca",
+      "B": "guarisci",
+      "C": "è guarito",
+      "D": "guarisce"
     },
     "answer": "A",
-    "difficulty": 7,
-    "explanation": "'Fare la bella vita' significa godersi una vita piacevole, confortevole e spesso dispendiosa."
+    "difficulty": 6,
+    "explanation": "Il verbo 'sperare che' regge il congiuntivo. 'Guarisca' è la terza persona singolare del congiuntivo presente del verbo 'guarire'."
   },
   {
     "id": "AP_Italian_22",

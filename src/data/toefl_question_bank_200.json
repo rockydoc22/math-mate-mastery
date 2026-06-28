@@ -1,57 +1,57 @@
 [
   {
-    "id": "toefl_001",
+    "id": "toefl_026",
     "exam": "TOEFL",
-    "section": "Reading",
-    "question": "The passage states: 'The Industrial Revolution fundamentally transformed European society, shifting populations from rural agrarian communities to urban centers.' Based on the passage, what was a major consequence of the Industrial Revolution?",
+    "section": "Listening",
+    "question": "Why does the professor mention the Roman aqueduct system?",
     "options": [
       {
         "label": "A",
-        "text": "Urbanization increased as people moved from farms to cities"
+        "text": "To compare Roman and Greek art"
       },
       {
         "label": "B",
-        "text": "European population declined significantly"
+        "text": "To argue that modern engineering is inferior"
       },
       {
         "label": "C",
-        "text": "Agriculture became more important than manufacturing"
+        "text": "To discuss tourism in Italy"
       },
       {
         "label": "D",
-        "text": "Rural communities expanded rapidly"
+        "text": "To provide an example of ancient engineering that influenced modern water distribution"
       }
     ],
-    "correctAnswer": "A",
-    "explanation": "The passage directly states populations shifted from rural to urban centers, indicating urbanization was a major consequence.",
-    "skill": "Reading Comprehension",
-    "difficulty": 3
+    "correctAnswer": "D",
+    "explanation": "The professor uses the aqueduct as a concrete historical example to illustrate the lecture's point about engineering evolution.",
+    "skill": "Purpose",
+    "difficulty": 5
   },
   {
-    "id": "toefl_002",
+    "id": "toefl_021",
     "exam": "TOEFL",
     "section": "Reading",
-    "question": "The word 'proliferation' in the passage is closest in meaning to:",
+    "question": "The word 'ubiquitous' is closest in meaning to:",
     "options": [
       {
         "label": "A",
-        "text": "Rapid increase or spread"
+        "text": "Found everywhere"
       },
       {
         "label": "B",
-        "text": "Gradual decline"
+        "text": "Extremely rare"
       },
       {
         "label": "C",
-        "text": "Complete elimination"
+        "text": "Recently discovered"
       },
       {
         "label": "D",
-        "text": "Careful organization"
+        "text": "Carefully hidden"
       }
     ],
     "correctAnswer": "A",
-    "explanation": "'Proliferation' means a rapid increase in numbers or spread of something.",
+    "explanation": "'Ubiquitous' means present, appearing, or found everywhere.",
     "skill": "Vocabulary",
     "difficulty": 5
   },
@@ -63,7 +63,7 @@
     "options": [
       {
         "label": "A",
-        "text": "Pesticide use and habitat loss"
+        "text": "Increased predation by birds"
       },
       {
         "label": "B",
@@ -71,45 +71,45 @@
       },
       {
         "label": "C",
-        "text": "Increased predation by birds"
+        "text": "Pesticide use and habitat loss"
       },
       {
         "label": "D",
         "text": "Competition from other insect species"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "C",
     "explanation": "The passage cites pesticide use and habitat loss as the primary factors in bee population decline.",
     "skill": "Detail Recognition",
     "difficulty": 5
   },
   {
-    "id": "toefl_004",
+    "id": "toefl_235",
     "exam": "TOEFL",
-    "section": "Writing",
-    "question": "Which sentence best transitions from a paragraph about exercise benefits to one about nutrition?",
+    "section": "Listening",
+    "question": "What does the librarian imply about academic research?",
     "options": [
       {
         "label": "A",
-        "text": "While physical activity is essential, proper nutrition plays an equally important role in overall health."
+        "text": "It always requires interdisciplinary approaches."
       },
       {
         "label": "B",
-        "text": "Exercise is very good for you."
+        "text": "It often involves synthesizing information from various fields."
       },
       {
         "label": "C",
-        "text": "Now I will talk about food."
+        "text": "It is best confined to a single subject area."
       },
       {
         "label": "D",
-        "text": "Nutrition is a different subject entirely."
+        "text": "It is easier when topics are very specific."
       }
     ],
-    "correctAnswer": "A",
-    "explanation": "This transition acknowledges the previous topic while smoothly introducing the new one and showing their relationship.",
-    "skill": "Transitions",
-    "difficulty": 5
+    "correctAnswer": "B",
+    "explanation": "By suggesting the student look into economic history for an art paper, the librarian implies that successful research often requires connecting different academic disciplines.",
+    "skill": "Making Inferences",
+    "difficulty": 7
   },
   {
     "id": "toefl_005",
@@ -119,7 +119,7 @@
     "options": [
       {
         "label": "A",
-        "text": "Objective and analytical"
+        "text": "Emotional and biased"
       },
       {
         "label": "B",
@@ -127,44 +127,44 @@
       },
       {
         "label": "C",
-        "text": "Emotional and biased"
+        "text": "Objective and analytical"
       },
       {
         "label": "D",
         "text": "Casual and humorous"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "C",
     "explanation": "Academic passages on the TOEFL typically maintain an objective, analytical tone.",
     "skill": "Tone Analysis",
     "difficulty": 5
   },
   {
-    "id": "toefl_006",
+    "id": "toefl_236",
     "exam": "TOEFL",
-    "section": "Reading",
-    "question": "What can be inferred from 'Coral reefs, which support 25% of all marine species, are increasingly threatened by rising ocean temperatures'?",
+    "section": "Listening",
+    "question": "What is the primary focus of the discussion?",
     "options": [
       {
         "label": "A",
-        "text": "The loss of coral reefs would significantly impact marine biodiversity"
+        "text": "The migratory patterns of Arctic terns."
       },
       {
         "label": "B",
-        "text": "Marine species are not dependent on coral reefs"
+        "text": "The physiology of long-distance flight in birds."
       },
       {
         "label": "C",
-        "text": "Ocean temperatures are decreasing"
+        "text": "The challenges faced by migratory birds."
       },
       {
         "label": "D",
-        "text": "Coral reefs only support a small number of species"
+        "text": "The impact of climate change on bird populations."
       }
     ],
-    "correctAnswer": "A",
-    "explanation": "If coral reefs support 25% of marine species and are threatened, their loss would significantly reduce marine biodiversity.",
-    "skill": "Making Inferences",
+    "correctAnswer": "B",
+    "explanation": "While migration and challenges are mentioned, the core of the lecture is about the biological adaptations and mechanisms that enable birds to undertake such arduous flights.",
+    "skill": "Identifying the Main Idea",
     "difficulty": 5
   },
   {
@@ -175,7 +175,7 @@
     "options": [
       {
         "label": "A",
-        "text": "The study demonstrates a significant correlation between sleep deprivation and cognitive impairment."
+        "text": "Sleep is really important for your brain."
       },
       {
         "label": "B",
@@ -183,184 +183,184 @@
       },
       {
         "label": "C",
-        "text": "Sleep is really important for your brain."
+        "text": "The study demonstrates a significant correlation between sleep deprivation and cognitive impairment."
       },
       {
         "label": "D",
         "text": "People who don't sleep a lot can't think good."
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "C",
     "explanation": "Uses precise academic vocabulary appropriate for TOEFL-level writing.",
     "skill": "Academic Vocabulary",
     "difficulty": 5
   },
   {
-    "id": "toefl_008",
+    "id": "toefl_237",
     "exam": "TOEFL",
-    "section": "Reading",
-    "question": "The author mentions 'photosynthesis' primarily to:",
+    "section": "Listening",
+    "question": "What remarkable adaptation do many migratory birds possess for sustained flight?",
     "options": [
       {
         "label": "A",
-        "text": "Illustrate how plants convert sunlight into energy"
+        "text": "Enhanced night vision."
       },
       {
         "label": "B",
-        "text": "Argue that plants are more important than animals"
+        "text": "Highly efficient respiratory systems."
       },
       {
         "label": "C",
-        "text": "Compare different types of energy sources"
+        "text": "Ability to store large amounts of water."
       },
       {
         "label": "D",
-        "text": "Explain the water cycle"
+        "text": "Specialized feathers for gliding."
       }
     ],
-    "correctAnswer": "A",
-    "explanation": "References to photosynthesis serve to explain the fundamental process of energy conversion in plants.",
-    "skill": "Author's Purpose",
+    "correctAnswer": "B",
+    "explanation": "The lecture details how birds have evolved lungs and air sacs that allow for a continuous one-way flow of oxygenated air, crucial for the high energy demands of flight.",
+    "skill": "Understanding Details",
     "difficulty": 5
   },
   {
-    "id": "toefl_009",
+    "id": "toefl_247",
     "exam": "TOEFL",
-    "section": "Reading",
-    "question": "Which best summarizes the passage about deforestation?",
+    "section": "Listening",
+    "question": "Before Gutenberg's invention, how were books primarily produced?",
     "options": [
       {
         "label": "A",
-        "text": "Deforestation in tropical regions has accelerated due to agricultural expansion, leading to biodiversity loss and climate change"
+        "text": "Printed using woodblock techniques."
       },
       {
         "label": "B",
-        "text": "Trees are important for the environment"
+        "text": "Mass-produced by steam-powered machines."
       },
       {
         "label": "C",
-        "text": "Agriculture is more important than forests"
+        "text": "Hand-copied by scribes."
       },
       {
         "label": "D",
-        "text": "Climate change has no connection to deforestation"
+        "text": "Etched onto metal plates."
       }
     ],
-    "correctAnswer": "A",
-    "explanation": "An effective summary captures the main topic, cause, and effects.",
-    "skill": "Summarizing",
-    "difficulty": 7
-  },
-  {
-    "id": "toefl_010",
-    "exam": "TOEFL",
-    "section": "Writing",
-    "question": "Choose the sentence with correct subject-verb agreement in a complex sentence:",
-    "options": [
-      {
-        "label": "A",
-        "text": "The collection of ancient manuscripts, which were discovered in 1947, has been preserved in a climate-controlled facility."
-      },
-      {
-        "label": "B",
-        "text": "The collection of ancient manuscripts, which were discovered in 1947, have been preserved in a climate-controlled facility."
-      },
-      {
-        "label": "C",
-        "text": "The collection of ancient manuscripts, which was discovered in 1947, have been preserved in a climate-controlled facility."
-      },
-      {
-        "label": "D",
-        "text": "The collections of ancient manuscripts, which were discovered in 1947, has been preserved in a climate-controlled facility."
-      }
-    ],
-    "correctAnswer": "A",
-    "explanation": "'Collection' (singular) requires 'has been preserved.' The relative clause uses plural 'were' referring to 'manuscripts.'",
-    "skill": "Subject-Verb Agreement",
-    "difficulty": 7
-  },
-  {
-    "id": "toefl_011",
-    "exam": "TOEFL",
-    "section": "Reading",
-    "question": "A 'thesis statement' in an academic essay is:",
-    "options": [
-      {
-        "label": "A",
-        "text": "The main argument or claim the author will support throughout the essay"
-      },
-      {
-        "label": "B",
-        "text": "A list of sources used"
-      },
-      {
-        "label": "C",
-        "text": "The conclusion of the essay"
-      },
-      {
-        "label": "D",
-        "text": "A question posed to the reader"
-      }
-    ],
-    "correctAnswer": "A",
-    "explanation": "A thesis statement presents the central argument that the essay will develop and support.",
-    "skill": "Essay Structure",
-    "difficulty": 3
-  },
-  {
-    "id": "toefl_012",
-    "exam": "TOEFL",
-    "section": "Reading",
-    "question": "The pronoun 'they' in paragraph 3 refers to:",
-    "options": [
-      {
-        "label": "A",
-        "text": "The researchers conducting the study"
-      },
-      {
-        "label": "B",
-        "text": "The participants in the experiment"
-      },
-      {
-        "label": "C",
-        "text": "The university administrators"
-      },
-      {
-        "label": "D",
-        "text": "The general public"
-      }
-    ],
-    "correctAnswer": "A",
-    "explanation": "Pronoun reference questions require identifying the nearest logical antecedent.",
-    "skill": "Reference Questions",
+    "correctAnswer": "C",
+    "explanation": "The professor explains that the laborious process of monks and scribes meticulously copying texts by hand was the standard method for book production before the printing press.",
+    "skill": "Understanding Details",
     "difficulty": 5
   },
   {
-    "id": "toefl_013",
+    "id": "toefl_248",
     "exam": "TOEFL",
-    "section": "Writing",
-    "question": "Which sentence correctly uses a semicolon?",
+    "section": "Listening",
+    "question": "What was innovative about Gutenberg's printing method?",
     "options": [
       {
         "label": "A",
-        "text": "The experiment yielded unexpected results; consequently, the researchers revised their hypothesis."
+        "text": "The use of movable type made from clay."
       },
       {
         "label": "B",
-        "text": "The experiment; yielded unexpected results consequently the researchers revised their hypothesis."
+        "text": "The development of a fast-drying ink."
       },
       {
         "label": "C",
-        "text": "The experiment yielded; unexpected results consequently; the researchers revised their hypothesis."
+        "text": "The creation of individual metal letter pieces that could be rearranged."
       },
       {
         "label": "D",
-        "text": "The experiment yielded unexpected results consequently; the researchers revised their hypothesis."
+        "text": "The invention of a digital printing process."
       }
     ],
-    "correctAnswer": "A",
-    "explanation": "A semicolon correctly separates two independent clauses, especially with a conjunctive adverb.",
-    "skill": "Punctuation",
+    "correctAnswer": "C",
+    "explanation": "The key innovation discussed is Gutenberg's system of casting individual letters from metal, which could then be assembled into pages, inked, and printed, and subsequently reused.",
+    "skill": "Understanding Details",
+    "difficulty": 5
+  },
+  {
+    "id": "toefl_249",
+    "exam": "TOEFL",
+    "section": "Listening",
+    "question": "What does the professor suggest was a consequence of the printing press?",
+    "options": [
+      {
+        "label": "A",
+        "text": "A decline in the number of universities."
+      },
+      {
+        "label": "B",
+        "text": "Increased accessibility and affordability of books."
+      },
+      {
+        "label": "C",
+        "text": "A return to oral traditions of knowledge sharing."
+      },
+      {
+        "label": "D",
+        "text": "The standardization of Latin as the only scholarly language."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "The lecture highlights how the efficiency of the printing press drastically lowered the cost per book and increased production volume, making knowledge more widely available.",
+    "skill": "Understanding Cause and Effect",
+    "difficulty": 5
+  },
+  {
+    "id": "toefl_267",
+    "exam": "TOEFL",
+    "section": "Reading",
+    "question": "The passage discusses the Black Death. The phrase 'demographic upheaval' suggests:",
+    "options": [
+      {
+        "label": "A",
+        "text": "A period of great artistic innovation."
+      },
+      {
+        "label": "B",
+        "text": "Significant changes in population size and structure."
+      },
+      {
+        "label": "C",
+        "text": "A rise in religious fervor."
+      },
+      {
+        "label": "D",
+        "text": "Technological advancements in medicine."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Demographics refers to population statistics. 'Upheaval' indicates profound disruption. Thus, 'demographic upheaval' means major changes in population numbers and composition, consistent with a devastating plague.",
+    "skill": "Vocabulary",
+    "difficulty": 5
+  },
+  {
+    "id": "toefl_269",
+    "exam": "TOEFL",
+    "section": "Reading",
+    "question": "The text compares the construction methods of ancient Egyptian pyramids and Mayan pyramids. What is a key difference highlighted?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Both used primarily stone blocks for construction."
+      },
+      {
+        "label": "B",
+        "text": "Egyptian pyramids were generally built for tombs, while Mayan pyramids served as temples and ceremonial sites."
+      },
+      {
+        "label": "C",
+        "text": "Mayan pyramids were significantly larger than Egyptian pyramids."
+      },
+      {
+        "label": "D",
+        "text": "Egyptian pyramids were constructed much earlier than Mayan pyramids."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "The passage contrasts the primary purposes, stating Egyptian pyramids were largely tombs, whereas Mayan pyramids had a broader function including temples and ritual centers, often built atop earlier structures.",
+    "skill": "Comparison/Contrast",
     "difficulty": 5
   },
   {
@@ -371,7 +371,7 @@
     "options": [
       {
         "label": "A",
-        "text": "Cause and effect"
+        "text": "Compare and contrast"
       },
       {
         "label": "B",
@@ -379,14 +379,14 @@
       },
       {
         "label": "C",
-        "text": "Compare and contrast"
+        "text": "Cause and effect"
       },
       {
         "label": "D",
         "text": "Problem and solution"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "C",
     "explanation": "The passage presents causes and their effects, following a cause-and-effect structure.",
     "skill": "Text Organization",
     "difficulty": 5
@@ -399,7 +399,7 @@
     "options": [
       {
         "label": "A",
-        "text": "Increased physical strength"
+        "text": "Delayed onset of dementia"
       },
       {
         "label": "B",
@@ -407,14 +407,14 @@
       },
       {
         "label": "C",
-        "text": "Delayed onset of dementia"
+        "text": "Increased physical strength"
       },
       {
         "label": "D",
         "text": "Better problem-solving skills"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "C",
     "explanation": "Physical strength is unrelated to bilingualism and not discussed in the passage.",
     "skill": "Negative Factual Information",
     "difficulty": 5
@@ -427,7 +427,7 @@
     "options": [
       {
         "label": "A",
-        "text": "In addition to the environmental concerns,"
+        "text": "Environmental"
       },
       {
         "label": "B",
@@ -435,14 +435,14 @@
       },
       {
         "label": "C",
-        "text": "Environmental"
+        "text": "In addition to the environmental concerns,"
       },
       {
         "label": "D",
         "text": "Concerns about the environment that"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "C",
     "explanation": "Introductory prepositional phrases of four or more words are typically followed by a comma.",
     "skill": "Comma Rules",
     "difficulty": 3
@@ -483,11 +483,11 @@
     "options": [
       {
         "label": "A",
-        "text": "Although some critics argue that technology reduces attention spans, research suggests it can enhance learning when used strategically."
+        "text": "Technology is always good for learning."
       },
       {
         "label": "B",
-        "text": "Technology is always good for learning."
+        "text": "Although some critics argue that technology reduces attention spans, research suggests it can enhance learning when used strategically."
       },
       {
         "label": "C",
@@ -498,7 +498,7 @@
         "text": "Technology has both advantages and disadvantages."
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "B",
     "explanation": "The concession acknowledges an opposing view before presenting the writer's counterargument.",
     "skill": "Concession",
     "difficulty": 7
@@ -511,7 +511,7 @@
     "options": [
       {
         "label": "A",
-        "text": "After the sentence describing the global spread of the trend"
+        "text": "Before the introduction of the topic"
       },
       {
         "label": "B",
@@ -523,10 +523,10 @@
       },
       {
         "label": "D",
-        "text": "Before the introduction of the topic"
+        "text": "After the sentence describing the global spread of the trend"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "This sentence provides evidence of global scope, fitting after a claim about widespread occurrence.",
     "skill": "Sentence Insertion",
     "difficulty": 7
@@ -539,11 +539,11 @@
     "options": [
       {
         "label": "A",
-        "text": "Sustainable development requires balancing economic growth with environmental protection"
+        "text": "Economic growth should always take priority over the environment"
       },
       {
         "label": "B",
-        "text": "Economic growth should always take priority over the environment"
+        "text": "Sustainable development requires balancing economic growth with environmental protection"
       },
       {
         "label": "C",
@@ -554,37 +554,37 @@
         "text": "Technology alone can solve all environmental problems"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "B",
     "explanation": "The passage's balanced discussion suggests the author supports sustainable development.",
     "skill": "Author Attitude",
     "difficulty": 7
   },
   {
-    "id": "toefl_021",
+    "id": "toefl_229",
     "exam": "TOEFL",
-    "section": "Reading",
-    "question": "The word 'ubiquitous' is closest in meaning to:",
+    "section": "Listening",
+    "question": "Why does the speaker mention the sulfur dioxide released during eruptions?",
     "options": [
       {
         "label": "A",
-        "text": "Found everywhere"
+        "text": "To explain how it causes acid rain."
       },
       {
         "label": "B",
-        "text": "Extremely rare"
+        "text": "To describe its role in atmospheric cooling."
       },
       {
         "label": "C",
-        "text": "Recently discovered"
+        "text": "To illustrate its contribution to volcanic soil fertility."
       },
       {
         "label": "D",
-        "text": "Carefully hidden"
+        "text": "To highlight its impact on ozone depletion."
       }
     ],
-    "correctAnswer": "A",
-    "explanation": "'Ubiquitous' means present, appearing, or found everywhere.",
-    "skill": "Vocabulary",
+    "correctAnswer": "B",
+    "explanation": "The speaker explains that sulfur dioxide reacts with water in the atmosphere to form aerosols that reflect solar radiation, contributing to a cooling effect.",
+    "skill": "Understanding Purpose",
     "difficulty": 5
   },
   {
@@ -616,31 +616,31 @@
     "difficulty": 3
   },
   {
-    "id": "toefl_023",
+    "id": "toefl_227",
     "exam": "TOEFL",
-    "section": "Reading",
-    "question": "The word 'ephemeral' is closest in meaning to:",
+    "section": "Listening",
+    "question": "According to the speaker, what is one significant consequence of prolonged volcanic ash in the atmosphere?",
     "options": [
       {
         "label": "A",
-        "text": "Short-lived or temporary"
+        "text": "Increased rates of plant growth."
       },
       {
         "label": "B",
-        "text": "Permanent and lasting"
+        "text": "A cooling effect on global temperatures."
       },
       {
         "label": "C",
-        "text": "Extremely valuable"
+        "text": "Enhanced visibility for air travel."
       },
       {
         "label": "D",
-        "text": "Widely recognized"
+        "text": "A decrease in atmospheric humidity."
       }
     ],
-    "correctAnswer": "A",
-    "explanation": "'Ephemeral' means lasting for a very short time.",
-    "skill": "Vocabulary",
+    "correctAnswer": "B",
+    "explanation": "The speaker explains that volcanic ash can block sunlight, leading to a reduction in the amount of solar radiation reaching the Earth's surface, thus causing cooling.",
+    "skill": "Understanding Details",
     "difficulty": 5
   },
   {
@@ -679,11 +679,11 @@
     "options": [
       {
         "label": "A",
-        "text": "They serve as nurseries for fish, protect shorelines from erosion, and filter pollutants"
+        "text": "They primarily provide timber for construction"
       },
       {
         "label": "B",
-        "text": "They primarily provide timber for construction"
+        "text": "They serve as nurseries for fish, protect shorelines from erosion, and filter pollutants"
       },
       {
         "label": "C",
@@ -694,37 +694,37 @@
         "text": "They have no significant ecological function"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "B",
     "explanation": "The passage identifies multiple ecological functions of mangroves including nursery habitat, erosion protection, and filtration.",
     "skill": "Detail Recognition",
     "difficulty": 5
   },
   {
-    "id": "toefl_026",
+    "id": "toefl_270",
     "exam": "TOEFL",
-    "section": "Listening",
-    "question": "Why does the professor mention the Roman aqueduct system?",
+    "section": "Reading",
+    "question": "The passage discusses the phenomenon of bioluminescence in deep-sea creatures. What is the primary reason suggested for this ability?",
     "options": [
       {
         "label": "A",
-        "text": "To provide an example of ancient engineering that influenced modern water distribution"
+        "text": "To absorb sunlight in the dark depths."
       },
       {
         "label": "B",
-        "text": "To argue that modern engineering is inferior"
+        "text": "To attract mates or prey, and for defense."
       },
       {
         "label": "C",
-        "text": "To discuss tourism in Italy"
+        "text": "To regulate body temperature."
       },
       {
         "label": "D",
-        "text": "To compare Roman and Greek art"
+        "text": "To communicate with surface dwellers."
       }
     ],
-    "correctAnswer": "A",
-    "explanation": "The professor uses the aqueduct as a concrete historical example to illustrate the lecture's point about engineering evolution.",
-    "skill": "Purpose",
+    "correctAnswer": "B",
+    "explanation": "The text details that bioluminescence serves multiple survival functions for deep-sea organisms, including attracting prey, finding mates, and deterring predators.",
+    "skill": "Detail",
     "difficulty": 5
   },
   {
@@ -763,7 +763,7 @@
     "options": [
       {
         "label": "A",
-        "text": "While renewable energy requires significant initial investment, the long-term economic and environmental benefits make it a superior alternative to fossil fuels."
+        "text": "This essay will discuss energy."
       },
       {
         "label": "B",
@@ -771,14 +771,14 @@
       },
       {
         "label": "C",
-        "text": "This essay will discuss energy."
+        "text": "While renewable energy requires significant initial investment, the long-term economic and environmental benefits make it a superior alternative to fossil fuels."
       },
       {
         "label": "D",
         "text": "Some people like renewable energy and some don't."
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "C",
     "explanation": "This thesis takes a clear position, acknowledges a counterargument, and previews the supporting reasoning.",
     "skill": "Thesis Statements",
     "difficulty": 5
@@ -791,7 +791,7 @@
     "options": [
       {
         "label": "A",
-        "text": "To produce ATP through cellular respiration"
+        "text": "To synthesize proteins"
       },
       {
         "label": "B",
@@ -799,14 +799,14 @@
       },
       {
         "label": "C",
-        "text": "To synthesize proteins"
+        "text": "To produce ATP through cellular respiration"
       },
       {
         "label": "D",
         "text": "To regulate cell division"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "C",
     "explanation": "The passage describes mitochondria as the 'powerhouse of the cell,' producing ATP through oxidative phosphorylation.",
     "skill": "Detail Recognition",
     "difficulty": 5
@@ -819,7 +819,7 @@
     "options": [
       {
         "label": "A",
-        "text": "She is worried about meeting the deadline for her research paper"
+        "text": "She disagrees with the professor's grading policy"
       },
       {
         "label": "B",
@@ -827,14 +827,14 @@
       },
       {
         "label": "C",
-        "text": "She disagrees with the professor's grading policy"
+        "text": "She is worried about meeting the deadline for her research paper"
       },
       {
         "label": "D",
         "text": "She is interested in joining a study group"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "C",
     "explanation": "The student's questions about extensions and resources suggest anxiety about completing her paper on time.",
     "skill": "Making Inferences",
     "difficulty": 5
@@ -847,7 +847,7 @@
     "options": [
       {
         "label": "A",
-        "text": "Able to recover quickly from difficulties"
+        "text": "Slow to change"
       },
       {
         "label": "B",
@@ -855,14 +855,14 @@
       },
       {
         "label": "C",
-        "text": "Slow to change"
+        "text": "Able to recover quickly from difficulties"
       },
       {
         "label": "D",
         "text": "Resistant to all change"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "C",
     "explanation": "'Resilient' means able to withstand or recover quickly from difficult conditions.",
     "skill": "Vocabulary",
     "difficulty": 3
@@ -875,7 +875,7 @@
     "options": [
       {
         "label": "A",
-        "text": "The theory, which was proposed by Dr. Chen in 2019, has gained widespread acceptance."
+        "text": "The theory which was proposed by Dr. Chen, in 2019, has gained widespread acceptance."
       },
       {
         "label": "B",
@@ -887,10 +887,10 @@
       },
       {
         "label": "D",
-        "text": "The theory which was proposed by Dr. Chen, in 2019, has gained widespread acceptance."
+        "text": "The theory, which was proposed by Dr. Chen in 2019, has gained widespread acceptance."
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "A nonrestrictive relative clause is properly set off by commas on both sides.",
     "skill": "Relative Clauses",
     "difficulty": 5
@@ -959,7 +959,7 @@
     "options": [
       {
         "label": "A",
-        "text": "To make something better or improve"
+        "text": "To leave unchanged"
       },
       {
         "label": "B",
@@ -971,10 +971,10 @@
       },
       {
         "label": "D",
-        "text": "To leave unchanged"
+        "text": "To make something better or improve"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "'Ameliorate' means to make something bad or unsatisfactory better.",
     "skill": "Vocabulary",
     "difficulty": 7
@@ -987,7 +987,7 @@
     "options": [
       {
         "label": "A",
-        "text": "Although the initial results were promising, further research is needed to confirm the findings."
+        "text": "Results promising, research needed."
       },
       {
         "label": "B",
@@ -999,10 +999,10 @@
       },
       {
         "label": "D",
-        "text": "Results promising, research needed."
+        "text": "Although the initial results were promising, further research is needed to confirm the findings."
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "'Although' creates a complex sentence showing the relationship between the two ideas (concession + main point).",
     "skill": "Sentence Structure",
     "difficulty": 5
@@ -1015,7 +1015,7 @@
     "options": [
       {
         "label": "A",
-        "text": "AI can supplement but not replace human teachers, as emotional intelligence and mentorship remain uniquely human strengths"
+        "text": "AI is more effective than teachers in every subject"
       },
       {
         "label": "B",
@@ -1027,10 +1027,10 @@
       },
       {
         "label": "D",
-        "text": "AI is more effective than teachers in every subject"
+        "text": "AI can supplement but not replace human teachers, as emotional intelligence and mentorship remain uniquely human strengths"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "The author takes a balanced position, acknowledging AI's benefits while emphasizing irreplaceable human qualities.",
     "skill": "Author's Position",
     "difficulty": 7
@@ -1071,7 +1071,7 @@
     "options": [
       {
         "label": "A",
-        "text": "A typical example or model of something"
+        "text": "A physical object"
       },
       {
         "label": "B",
@@ -1079,14 +1079,14 @@
       },
       {
         "label": "C",
-        "text": "A physical object"
+        "text": "A typical example or model of something"
       },
       {
         "label": "D",
         "text": "A mathematical equation"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "C",
     "explanation": "'Paradigm' refers to a typical example, pattern, or model, especially a worldview underlying a scientific theory.",
     "skill": "Vocabulary",
     "difficulty": 7
@@ -1099,7 +1099,7 @@
     "options": [
       {
         "label": "A",
-        "text": "The study's findings significantly advanced our understanding of cellular regeneration."
+        "text": "The thing was important about the study."
       },
       {
         "label": "B",
@@ -1111,10 +1111,10 @@
       },
       {
         "label": "D",
-        "text": "The thing was important about the study."
+        "text": "The study's findings significantly advanced our understanding of cellular regeneration."
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "Replacing vague language with specific, descriptive words dramatically improves academic writing quality.",
     "skill": "Revision",
     "difficulty": 5
@@ -1127,7 +1127,7 @@
     "options": [
       {
         "label": "A",
-        "text": "Climate change and the search for new food sources"
+        "text": "Religious beliefs"
       },
       {
         "label": "B",
@@ -1135,14 +1135,14 @@
       },
       {
         "label": "C",
-        "text": "Religious beliefs"
+        "text": "Climate change and the search for new food sources"
       },
       {
         "label": "D",
         "text": "Political conflicts between tribes"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "C",
     "explanation": "The passage discusses environmental pressures including shifting climate patterns that prompted migration to new territories.",
     "skill": "Making Inferences",
     "difficulty": 7
@@ -1155,11 +1155,11 @@
     "options": [
       {
         "label": "A",
-        "text": "Cautiously open-minded, acknowledging both its merits and limitations"
+        "text": "Completely dismissive"
       },
       {
         "label": "B",
-        "text": "Completely dismissive"
+        "text": "Cautiously open-minded, acknowledging both its merits and limitations"
       },
       {
         "label": "C",
@@ -1170,7 +1170,7 @@
         "text": "Indifferent"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "B",
     "explanation": "The professor presents evidence both for and against, indicating a balanced but cautiously receptive stance.",
     "skill": "Speaker Attitude",
     "difficulty": 7
@@ -1211,7 +1211,7 @@
     "options": [
       {
         "label": "A",
-        "text": "The experiment failed, the researchers tried a different approach."
+        "text": "Because the experiment failed, the researchers tried a different approach."
       },
       {
         "label": "B",
@@ -1223,10 +1223,10 @@
       },
       {
         "label": "D",
-        "text": "Because the experiment failed, the researchers tried a different approach."
+        "text": "The experiment failed, the researchers tried a different approach."
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "A comma splice incorrectly joins two independent clauses with only a comma. A semicolon, conjunction, or subordination is needed.",
     "skill": "Comma Splices",
     "difficulty": 5
@@ -1323,7 +1323,7 @@
     "options": [
       {
         "label": "A",
-        "text": "The data indicate that socioeconomic factors significantly influence educational outcomes."
+        "text": "Everyone knows rich kids do better in school."
       },
       {
         "label": "B",
@@ -1335,10 +1335,10 @@
       },
       {
         "label": "D",
-        "text": "Everyone knows rich kids do better in school."
+        "text": "The data indicate that socioeconomic factors significantly influence educational outcomes."
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "Academic register uses precise, formal vocabulary ('socioeconomic factors,' 'significantly influence,' 'educational outcomes').",
     "skill": "Academic Register",
     "difficulty": 5
@@ -1351,7 +1351,7 @@
     "options": [
       {
         "label": "A",
-        "text": "Presenting a historical overview followed by analysis of current implications"
+        "text": "Comparing two novels"
       },
       {
         "label": "B",
@@ -1363,10 +1363,10 @@
       },
       {
         "label": "D",
-        "text": "Comparing two novels"
+        "text": "Presenting a historical overview followed by analysis of current implications"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "The passage moves chronologically from historical context to present-day analysis, a common academic structure.",
     "skill": "Text Organization",
     "difficulty": 5
@@ -1379,11 +1379,11 @@
     "options": [
       {
         "label": "A",
-        "text": "Review lecture notes, complete practice problems, and form study groups"
+        "text": "Only read the textbook"
       },
       {
         "label": "B",
-        "text": "Only read the textbook"
+        "text": "Review lecture notes, complete practice problems, and form study groups"
       },
       {
         "label": "C",
@@ -1394,7 +1394,7 @@
         "text": "Wait until the night before"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "B",
     "explanation": "The professor explicitly recommends three preparation strategies for comprehensive exam readiness.",
     "skill": "Detail Recognition",
     "difficulty": 3
@@ -1407,7 +1407,7 @@
     "options": [
       {
         "label": "A",
-        "text": "Inborn or natural"
+        "text": "Acquired later in life"
       },
       {
         "label": "B",
@@ -1415,14 +1415,14 @@
       },
       {
         "label": "C",
-        "text": "Acquired later in life"
+        "text": "Inborn or natural"
       },
       {
         "label": "D",
         "text": "Culturally determined"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "C",
     "explanation": "'Innate' means inborn; existing from birth rather than acquired.",
     "skill": "Vocabulary",
     "difficulty": 3
@@ -1491,7 +1491,7 @@
     "options": [
       {
         "label": "A",
-        "text": "The movement of tectonic plates explains earthquakes, volcanic activity, and mountain formation"
+        "text": "Tectonic plates are stationary"
       },
       {
         "label": "B",
@@ -1499,14 +1499,14 @@
       },
       {
         "label": "C",
-        "text": "Tectonic plates are stationary"
+        "text": "The movement of tectonic plates explains earthquakes, volcanic activity, and mountain formation"
       },
       {
         "label": "D",
         "text": "Plate tectonics was disproven in the 1990s"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "C",
     "explanation": "The lecture explains how plate movement is the unifying theory behind major geological phenomena.",
     "skill": "Main Idea",
     "difficulty": 5
@@ -1547,7 +1547,7 @@
     "options": [
       {
         "label": "A",
-        "text": "The samples were analyzed using gas chromatography."
+        "text": "The samples analyzing were by gas chromatography."
       },
       {
         "label": "B",
@@ -1559,10 +1559,10 @@
       },
       {
         "label": "D",
-        "text": "The samples analyzing were by gas chromatography."
+        "text": "The samples were analyzed using gas chromatography."
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "Passive voice is often preferred in scientific writing to emphasize the action/object rather than the researcher.",
     "skill": "Passive Voice",
     "difficulty": 5
@@ -1575,7 +1575,7 @@
     "options": [
       {
         "label": "A",
-        "text": "It enabled scholars to decode Egyptian hieroglyphics by providing the same text in three scripts"
+        "text": "It contained the world's first written law"
       },
       {
         "label": "B",
@@ -1583,14 +1583,14 @@
       },
       {
         "label": "C",
-        "text": "It contained the world's first written law"
+        "text": "It enabled scholars to decode Egyptian hieroglyphics by providing the same text in three scripts"
       },
       {
         "label": "D",
         "text": "It proved that ancient Egyptians could predict eclipses"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "C",
     "explanation": "The Rosetta Stone's trilingual inscription was key to deciphering hieroglyphics.",
     "skill": "Detail Recognition",
     "difficulty": 5
@@ -1603,7 +1603,7 @@
     "options": [
       {
         "label": "A",
-        "text": "She now understands the professor's explanation"
+        "text": "She can literally see something"
       },
       {
         "label": "B",
@@ -1611,14 +1611,14 @@
       },
       {
         "label": "C",
-        "text": "She can literally see something"
+        "text": "She now understands the professor's explanation"
       },
       {
         "label": "D",
         "text": "She wants to end the conversation"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "C",
     "explanation": "'I see what you mean' is an idiomatic expression indicating comprehension and agreement.",
     "skill": "Pragmatic Understanding",
     "difficulty": 3
@@ -1659,7 +1659,7 @@
     "options": [
       {
         "label": "A",
-        "text": "The fundamentals of the study were established first."
+        "text": "The study's basic fundamentals were initially established first."
       },
       {
         "label": "B",
@@ -1667,45 +1667,45 @@
       },
       {
         "label": "C",
-        "text": "The study's basic fundamentals were initially established first."
+        "text": "The fundamentals of the study were established first."
       },
       {
         "label": "D",
         "text": "First, the basic fundamentals were initially established."
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "C",
     "explanation": "'Basic' and 'fundamentals' are redundant; 'first' and 'initially' are redundant. Removing duplicates improves conciseness.",
     "skill": "Conciseness",
     "difficulty": 5
   },
   {
-    "id": "toefl_061",
+    "id": "toefl_008",
     "exam": "TOEFL",
     "section": "Reading",
-    "question": "What can be inferred about the author's view on genetically modified organisms (GMOs)?",
+    "question": "The author mentions 'photosynthesis' primarily to:",
     "options": [
       {
         "label": "A",
-        "text": "The author believes GMOs have potential benefits but warrant careful regulation and further research"
+        "text": "Argue that plants are more important than animals"
       },
       {
         "label": "B",
-        "text": "The author is completely against all GMOs"
+        "text": "Illustrate how plants convert sunlight into energy"
       },
       {
         "label": "C",
-        "text": "The author thinks GMOs should replace all natural crops"
+        "text": "Compare different types of energy sources"
       },
       {
         "label": "D",
-        "text": "The author has no opinion on GMOs"
+        "text": "Explain the water cycle"
       }
     ],
-    "correctAnswer": "A",
-    "explanation": "The balanced discussion of benefits and risks, combined with calls for more research, indicates a nuanced position.",
-    "skill": "Author's Position",
-    "difficulty": 7
+    "correctAnswer": "B",
+    "explanation": "References to photosynthesis serve to explain the fundamental process of energy conversion in plants.",
+    "skill": "Author's Purpose",
+    "difficulty": 5
   },
   {
     "id": "toefl_062",
@@ -1715,7 +1715,7 @@
     "options": [
       {
         "label": "A",
-        "text": "Memory formation and spatial navigation"
+        "text": "Processing visual information"
       },
       {
         "label": "B",
@@ -1723,45 +1723,45 @@
       },
       {
         "label": "C",
-        "text": "Processing visual information"
+        "text": "Memory formation and spatial navigation"
       },
       {
         "label": "D",
         "text": "Controlling muscle movement"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "C",
     "explanation": "The professor identifies the hippocampus as essential for forming new memories and spatial awareness.",
     "skill": "Detail Recognition",
     "difficulty": 5
   },
   {
-    "id": "toefl_063",
+    "id": "toefl_009",
     "exam": "TOEFL",
     "section": "Reading",
-    "question": "The word 'empirical' is closest in meaning to:",
+    "question": "Which best summarizes the passage about deforestation?",
     "options": [
       {
         "label": "A",
-        "text": "Based on observation or experiment rather than theory"
+        "text": "Trees are important for the environment"
       },
       {
         "label": "B",
-        "text": "Based purely on theory"
+        "text": "Deforestation in tropical regions has accelerated due to agricultural expansion, leading to biodiversity loss and climate change"
       },
       {
         "label": "C",
-        "text": "Based on personal belief"
+        "text": "Agriculture is more important than forests"
       },
       {
         "label": "D",
-        "text": "Based on tradition"
+        "text": "Climate change has no connection to deforestation"
       }
     ],
-    "correctAnswer": "A",
-    "explanation": "'Empirical' means verifiable by observation or experience rather than theory or pure logic.",
-    "skill": "Vocabulary",
-    "difficulty": 5
+    "correctAnswer": "B",
+    "explanation": "An effective summary captures the main topic, cause, and effects.",
+    "skill": "Summarizing",
+    "difficulty": 7
   },
   {
     "id": "toefl_064",
@@ -1771,7 +1771,7 @@
     "options": [
       {
         "label": "A",
-        "text": "The results suggest that increased exercise may contribute to improved cardiovascular health."
+        "text": "Exercise probably maybe could help your heart or something."
       },
       {
         "label": "B",
@@ -1783,10 +1783,10 @@
       },
       {
         "label": "D",
-        "text": "Exercise probably maybe could help your heart or something."
+        "text": "The results suggest that increased exercise may contribute to improved cardiovascular health."
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "Academic hedging ('suggest,' 'may contribute') appropriately qualifies claims without overstating certainty.",
     "skill": "Hedging",
     "difficulty": 7
@@ -1799,7 +1799,7 @@
     "options": [
       {
         "label": "A",
-        "text": "Condensation of water vapor into clouds"
+        "text": "Water flowing into rivers"
       },
       {
         "label": "B",
@@ -1807,14 +1807,14 @@
       },
       {
         "label": "C",
-        "text": "Water flowing into rivers"
+        "text": "Condensation of water vapor into clouds"
       },
       {
         "label": "D",
         "text": "Water being absorbed by plants"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "C",
     "explanation": "After evaporation, water vapor rises and cools, condensing into water droplets that form clouds.",
     "skill": "Sequence",
     "difficulty": 3
@@ -1827,11 +1827,11 @@
     "options": [
       {
         "label": "A",
-        "text": "She cannot access the online course materials due to a technical issue"
+        "text": "She lost her textbook"
       },
       {
         "label": "B",
-        "text": "She lost her textbook"
+        "text": "She cannot access the online course materials due to a technical issue"
       },
       {
         "label": "C",
@@ -1842,7 +1842,7 @@
         "text": "She wants to drop the course"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "B",
     "explanation": "The student explains a login error preventing access to the digital learning platform.",
     "skill": "Main Problem",
     "difficulty": 3
@@ -1855,7 +1855,7 @@
     "options": [
       {
         "label": "A",
-        "text": "To make a problem or situation worse"
+        "text": "To ignore completely"
       },
       {
         "label": "B",
@@ -1863,14 +1863,14 @@
       },
       {
         "label": "C",
-        "text": "To ignore completely"
+        "text": "To make a problem or situation worse"
       },
       {
         "label": "D",
         "text": "To study carefully"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "C",
     "explanation": "'Exacerbate' means to make a problem, bad situation, or negative feeling worse.",
     "skill": "Vocabulary",
     "difficulty": 5
@@ -1939,7 +1939,7 @@
     "options": [
       {
         "label": "A",
-        "text": "To illustrate how game theory applies to real-world decision-making"
+        "text": "To argue against cooperation"
       },
       {
         "label": "B",
@@ -1951,10 +1951,10 @@
       },
       {
         "label": "D",
-        "text": "To argue against cooperation"
+        "text": "To illustrate how game theory applies to real-world decision-making"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "The prisoner's dilemma serves as a classic illustration of game theory concepts applied to strategic decision-making.",
     "skill": "Purpose",
     "difficulty": 5
@@ -2051,11 +2051,11 @@
     "options": [
       {
         "label": "A",
-        "text": "It needs to be narrowed to a more specific focus"
+        "text": "It has already been thoroughly researched"
       },
       {
         "label": "B",
-        "text": "It has already been thoroughly researched"
+        "text": "It needs to be narrowed to a more specific focus"
       },
       {
         "label": "C",
@@ -2066,7 +2066,7 @@
         "text": "It should be abandoned entirely"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "B",
     "explanation": "The professor's suggestions about focusing on a specific time period or region imply the topic is too broad.",
     "skill": "Making Inferences",
     "difficulty": 7
@@ -2163,7 +2163,7 @@
     "options": [
       {
         "label": "A",
-        "text": "The question raised is extremely important and difficult to answer"
+        "text": "The question is irrelevant"
       },
       {
         "label": "B",
@@ -2175,10 +2175,10 @@
       },
       {
         "label": "D",
-        "text": "The question is irrelevant"
+        "text": "The question raised is extremely important and difficult to answer"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "This idiom indicates that the question is very important, central, and potentially difficult to resolve.",
     "skill": "Pragmatic Understanding",
     "difficulty": 5
@@ -2191,7 +2191,7 @@
     "options": [
       {
         "label": "A",
-        "text": "Existing as a natural or essential part"
+        "text": "Temporary"
       },
       {
         "label": "B",
@@ -2199,14 +2199,14 @@
       },
       {
         "label": "C",
-        "text": "Temporary"
+        "text": "Existing as a natural or essential part"
       },
       {
         "label": "D",
         "text": "Artificial"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "C",
     "explanation": "'Inherent' means existing as a permanent, essential, or characteristic attribute.",
     "skill": "Vocabulary",
     "difficulty": 5
@@ -2219,7 +2219,7 @@
     "options": [
       {
         "label": "A",
-        "text": "Adding a transition sentence that connects the previous paragraph's conclusion to the new paragraph's topic"
+        "text": "Repeating the thesis at the start of every paragraph"
       },
       {
         "label": "B",
@@ -2231,10 +2231,10 @@
       },
       {
         "label": "D",
-        "text": "Repeating the thesis at the start of every paragraph"
+        "text": "Adding a transition sentence that connects the previous paragraph's conclusion to the new paragraph's topic"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "Effective transitions create logical bridges between ideas, improving the essay's overall coherence and flow.",
     "skill": "Coherence",
     "difficulty": 5
@@ -2247,11 +2247,11 @@
     "options": [
       {
         "label": "A",
-        "text": "Infants produce repetitive consonant-vowel combinations regardless of their linguistic environment"
+        "text": "Children speak in complete sentences"
       },
       {
         "label": "B",
-        "text": "Children speak in complete sentences"
+        "text": "Infants produce repetitive consonant-vowel combinations regardless of their linguistic environment"
       },
       {
         "label": "C",
@@ -2262,7 +2262,7 @@
         "text": "Children learn to read and write"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "B",
     "explanation": "The babbling stage is characterized by repetitive syllable production (e.g., 'ba-ba-ba') common to all infants.",
     "skill": "Detail Recognition",
     "difficulty": 5
@@ -2303,11 +2303,11 @@
     "options": [
       {
         "label": "A",
-        "text": "General agreement among a group"
+        "text": "Complete disagreement"
       },
       {
         "label": "B",
-        "text": "Complete disagreement"
+        "text": "General agreement among a group"
       },
       {
         "label": "C",
@@ -2318,7 +2318,7 @@
         "text": "An official law"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "B",
     "explanation": "'Consensus' means a general agreement or the collective opinion of a group.",
     "skill": "Vocabulary",
     "difficulty": 3
@@ -2331,7 +2331,7 @@
     "options": [
       {
         "label": "A",
-        "text": "The hypothesis was well-supported; however, the sample size was too small to draw definitive conclusions."
+        "text": "The hypothesis was well-supported however the sample size was small."
       },
       {
         "label": "B",
@@ -2339,14 +2339,14 @@
       },
       {
         "label": "C",
-        "text": "The hypothesis was well-supported however the sample size was small."
+        "text": "The hypothesis was well-supported; however, the sample size was too small to draw definitive conclusions."
       },
       {
         "label": "D",
         "text": "The hypothesis, however was well-supported, the sample size was small."
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "C",
     "explanation": "'However' as a conjunctive adverb requires a semicolon before it and a comma after it when joining two independent clauses.",
     "skill": "Conjunctive Adverbs",
     "difficulty": 7
@@ -2387,11 +2387,11 @@
     "options": [
       {
         "label": "A",
-        "text": "The behavior is more likely to be repeated because a desirable stimulus is added"
+        "text": "The behavior stops immediately"
       },
       {
         "label": "B",
-        "text": "The behavior stops immediately"
+        "text": "The behavior is more likely to be repeated because a desirable stimulus is added"
       },
       {
         "label": "C",
@@ -2402,7 +2402,7 @@
         "text": "The behavior becomes less frequent"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "B",
     "explanation": "Positive reinforcement increases behavior frequency by adding a pleasant stimulus after the desired behavior.",
     "skill": "Concept Understanding",
     "difficulty": 5
@@ -2443,7 +2443,7 @@
     "options": [
       {
         "label": "A",
-        "text": "Favorable"
+        "text": "Okay"
       },
       {
         "label": "B",
@@ -2455,10 +2455,10 @@
       },
       {
         "label": "D",
-        "text": "Okay"
+        "text": "Favorable"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "'Favorable' is more precise and appropriate for academic writing than the vague and informal 'good.'",
     "skill": "Word Choice",
     "difficulty": 3
@@ -2471,11 +2471,11 @@
     "options": [
       {
         "label": "A",
-        "text": "The trapping of heat in Earth's atmosphere by greenhouse gases, warming the planet's surface"
+        "text": "The cooling of the atmosphere"
       },
       {
         "label": "B",
-        "text": "The cooling of the atmosphere"
+        "text": "The trapping of heat in Earth's atmosphere by greenhouse gases, warming the planet's surface"
       },
       {
         "label": "C",
@@ -2486,7 +2486,7 @@
         "text": "The reflection of all sunlight back into space"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "B",
     "explanation": "The greenhouse effect is the process where certain gases trap heat, preventing it from escaping the atmosphere.",
     "skill": "Concept Understanding",
     "difficulty": 3
@@ -2527,7 +2527,7 @@
     "options": [
       {
         "label": "A",
-        "text": "Evoking interest or admiration; convincing"
+        "text": "Confusing and unclear"
       },
       {
         "label": "B",
@@ -2535,14 +2535,14 @@
       },
       {
         "label": "C",
-        "text": "Confusing and unclear"
+        "text": "Evoking interest or admiration; convincing"
       },
       {
         "label": "D",
         "text": "Short and incomplete"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "C",
     "explanation": "'Compelling' means powerfully convincing or evoking strong interest.",
     "skill": "Vocabulary",
     "difficulty": 3
@@ -2555,7 +2555,7 @@
     "options": [
       {
         "label": "A",
-        "text": "Driven by curiosity, the scientist conducted dozens of experiments."
+        "text": "The scientist, by curiosity driven, conducted experiments."
       },
       {
         "label": "B",
@@ -2563,14 +2563,14 @@
       },
       {
         "label": "C",
-        "text": "The scientist, by curiosity driven, conducted experiments."
+        "text": "Driven by curiosity, the scientist conducted dozens of experiments."
       },
       {
         "label": "D",
         "text": "Driven curiosity by, the scientist conducted experiments."
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "C",
     "explanation": "The participial phrase 'Driven by curiosity' correctly modifies 'the scientist,' the logical subject.",
     "skill": "Participial Phrases",
     "difficulty": 5
@@ -2583,7 +2583,7 @@
     "options": [
       {
         "label": "A",
-        "text": "A situation where individuals acting in self-interest deplete shared resources to everyone's detriment"
+        "text": "A common farming technique"
       },
       {
         "label": "B",
@@ -2591,14 +2591,14 @@
       },
       {
         "label": "C",
-        "text": "A common farming technique"
+        "text": "A situation where individuals acting in self-interest deplete shared resources to everyone's detriment"
       },
       {
         "label": "D",
         "text": "A government policy to protect public lands"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "C",
     "explanation": "The tragedy of the commons describes how rational individual behavior can lead to collective resource depletion.",
     "skill": "Concept Understanding",
     "difficulty": 7
@@ -2611,7 +2611,7 @@
     "options": [
       {
         "label": "A",
-        "text": "By presenting the historical development of the theory chronologically"
+        "text": "By reading directly from the textbook"
       },
       {
         "label": "B",
@@ -2623,10 +2623,10 @@
       },
       {
         "label": "D",
-        "text": "By reading directly from the textbook"
+        "text": "By presenting the historical development of the theory chronologically"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "The professor traces the theory from its origins through key developments to its current form.",
     "skill": "Organization",
     "difficulty": 5
@@ -2639,7 +2639,7 @@
     "options": [
       {
         "label": "A",
-        "text": "To combine elements to form a coherent whole"
+        "text": "To delete or remove"
       },
       {
         "label": "B",
@@ -2651,10 +2651,10 @@
       },
       {
         "label": "D",
-        "text": "To delete or remove"
+        "text": "To combine elements to form a coherent whole"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "'Synthesize' means to combine different ideas, elements, or information into a unified whole.",
     "skill": "Vocabulary",
     "difficulty": 5
@@ -2667,7 +2667,7 @@
     "options": [
       {
         "label": "A",
-        "text": "Thus, investing in public transportation yields environmental, economic, and social benefits that far outweigh the initial costs."
+        "text": "So, yeah, public transportation is pretty helpful."
       },
       {
         "label": "B",
@@ -2679,10 +2679,10 @@
       },
       {
         "label": "D",
-        "text": "So, yeah, public transportation is pretty helpful."
+        "text": "Thus, investing in public transportation yields environmental, economic, and social benefits that far outweigh the initial costs."
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "An effective concluding sentence synthesizes the paragraph's key points and reinforces the main argument.",
     "skill": "Conclusions",
     "difficulty": 5
@@ -2695,7 +2695,7 @@
     "options": [
       {
         "label": "A",
-        "text": "To illustrate how natural selection drives adaptation through beak specialization"
+        "text": "To criticize Darwin's methodology"
       },
       {
         "label": "B",
@@ -2707,10 +2707,10 @@
       },
       {
         "label": "D",
-        "text": "To criticize Darwin's methodology"
+        "text": "To illustrate how natural selection drives adaptation through beak specialization"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "The finch example demonstrates adaptive radiation — how different beak shapes evolved for different food sources.",
     "skill": "Author's Purpose",
     "difficulty": 5
@@ -2723,11 +2723,11 @@
     "options": [
       {
         "label": "A",
-        "text": "Language may influence but does not completely determine how we perceive the world"
+        "text": "Language has no effect on thought"
       },
       {
         "label": "B",
-        "text": "Language has no effect on thought"
+        "text": "Language may influence but does not completely determine how we perceive the world"
       },
       {
         "label": "C",
@@ -2738,7 +2738,7 @@
         "text": "All languages produce identical thought patterns"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "B",
     "explanation": "The professor presents a moderate version of the Sapir-Whorf hypothesis, suggesting influence rather than determination.",
     "skill": "Main Idea",
     "difficulty": 7
@@ -2751,7 +2751,7 @@
     "options": [
       {
         "label": "A",
-        "text": "Strict and precise"
+        "text": "Unclear"
       },
       {
         "label": "B",
@@ -2763,10 +2763,10 @@
       },
       {
         "label": "D",
-        "text": "Unclear"
+        "text": "Strict and precise"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "'Stringent' means strict, precise, and exacting in requirements or standards.",
     "skill": "Vocabulary",
     "difficulty": 5
@@ -2807,7 +2807,7 @@
     "options": [
       {
         "label": "A",
-        "text": "Physical barriers such as skin and mucous membranes"
+        "text": "Activation of T-cells"
       },
       {
         "label": "B",
@@ -2815,14 +2815,14 @@
       },
       {
         "label": "C",
-        "text": "Activation of T-cells"
+        "text": "Physical barriers such as skin and mucous membranes"
       },
       {
         "label": "D",
         "text": "Inflammation response"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "C",
     "explanation": "The innate immune system's first defense includes physical barriers that prevent pathogen entry.",
     "skill": "Detail Recognition",
     "difficulty": 5
@@ -2835,11 +2835,11 @@
     "options": [
       {
         "label": "A",
-        "text": "A person who smokes despite knowing it is unhealthy"
+        "text": "A student who studies for an exam"
       },
       {
         "label": "B",
-        "text": "A student who studies for an exam"
+        "text": "A person who smokes despite knowing it is unhealthy"
       },
       {
         "label": "C",
@@ -2850,7 +2850,7 @@
         "text": "A child learning to ride a bike"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "B",
     "explanation": "The smoking example illustrates the tension between behavior and belief, the core of cognitive dissonance theory.",
     "skill": "Example Recognition",
     "difficulty": 3
@@ -2863,7 +2863,7 @@
     "options": [
       {
         "label": "A",
-        "text": "To place side by side for comparison"
+        "text": "To destroy"
       },
       {
         "label": "B",
@@ -2871,14 +2871,14 @@
       },
       {
         "label": "C",
-        "text": "To destroy"
+        "text": "To place side by side for comparison"
       },
       {
         "label": "D",
         "text": "To memorize"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "C",
     "explanation": "'Juxtapose' means to place close together for contrasting effect or comparison.",
     "skill": "Vocabulary",
     "difficulty": 7
@@ -2891,7 +2891,7 @@
     "options": [
       {
         "label": "A",
-        "text": "Critics of this position argue that the economic costs outweigh the environmental benefits."
+        "text": "Some people think other things."
       },
       {
         "label": "B",
@@ -2903,10 +2903,10 @@
       },
       {
         "label": "D",
-        "text": "Some people think other things."
+        "text": "Critics of this position argue that the economic costs outweigh the environmental benefits."
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "An effective counterargument introduction identifies the opposing view and its specific reasoning.",
     "skill": "Counterarguments",
     "difficulty": 5
@@ -2947,11 +2947,11 @@
     "options": [
       {
         "label": "A",
-        "text": "The control group was not properly isolated from experimental variables"
+        "text": "The study was too short"
       },
       {
         "label": "B",
-        "text": "The study was too short"
+        "text": "The control group was not properly isolated from experimental variables"
       },
       {
         "label": "C",
@@ -2962,7 +2962,7 @@
         "text": "The topic was unimportant"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "B",
     "explanation": "The professor identifies methodological flaws in how the control group was handled.",
     "skill": "Critical Analysis",
     "difficulty": 7
@@ -3003,7 +3003,7 @@
     "options": [
       {
         "label": "A",
-        "text": "According to a 2023 meta-analysis of 50 studies, meditation reduces anxiety symptoms by an average of 38% (Chen et al., 2023)."
+        "text": "Everyone knows meditation works."
       },
       {
         "label": "B",
@@ -3015,10 +3015,10 @@
       },
       {
         "label": "D",
-        "text": "Everyone knows meditation works."
+        "text": "According to a 2023 meta-analysis of 50 studies, meditation reduces anxiety symptoms by an average of 38% (Chen et al., 2023)."
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "Effective academic evidence includes specific data, the study type, and a proper citation.",
     "skill": "Using Evidence",
     "difficulty": 5
@@ -3031,7 +3031,7 @@
     "options": [
       {
         "label": "A",
-        "text": "Diverse ecosystems are more resilient and provide essential services like pollination, water purification, and disease regulation"
+        "text": "It has no practical importance"
       },
       {
         "label": "B",
@@ -3043,10 +3043,10 @@
       },
       {
         "label": "D",
-        "text": "It has no practical importance"
+        "text": "Diverse ecosystems are more resilient and provide essential services like pollination, water purification, and disease regulation"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "The passage connects biodiversity to ecosystem resilience and specific ecosystem services essential for human survival.",
     "skill": "Main Argument",
     "difficulty": 5
@@ -3059,7 +3059,7 @@
     "options": [
       {
         "label": "A",
-        "text": "To understand the specific criteria for the upcoming essay assignment"
+        "text": "To postpone the assignment"
       },
       {
         "label": "B",
@@ -3071,10 +3071,10 @@
       },
       {
         "label": "D",
-        "text": "To postpone the assignment"
+        "text": "To understand the specific criteria for the upcoming essay assignment"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "The student's questions focus on understanding expectations and evaluation criteria for the assignment.",
     "skill": "Purpose",
     "difficulty": 3
@@ -3087,7 +3087,7 @@
     "options": [
       {
         "label": "A",
-        "text": "A great difference or inequality"
+        "text": "A small similarity"
       },
       {
         "label": "B",
@@ -3095,14 +3095,14 @@
       },
       {
         "label": "C",
-        "text": "A small similarity"
+        "text": "A great difference or inequality"
       },
       {
         "label": "D",
         "text": "A temporary condition"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "C",
     "explanation": "'Disparity' refers to a great difference, especially an unfair one.",
     "skill": "Vocabulary",
     "difficulty": 5
@@ -3115,7 +3115,7 @@
     "options": [
       {
         "label": "A",
-        "text": "The committee decided to accept the proposal."
+        "text": "Acceptance was decided upon by them."
       },
       {
         "label": "B",
@@ -3127,10 +3127,10 @@
       },
       {
         "label": "D",
-        "text": "Acceptance was decided upon by them."
+        "text": "The committee decided to accept the proposal."
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "Active voice is clearer and more direct: subject (committee) performs action (decided).",
     "skill": "Active vs Passive",
     "difficulty": 3
@@ -3143,7 +3143,7 @@
     "options": [
       {
         "label": "A",
-        "text": "Increased CO₂ is absorbed by oceans, lowering pH and making water more acidic"
+        "text": "Ocean temperatures drop significantly"
       },
       {
         "label": "B",
@@ -3155,10 +3155,10 @@
       },
       {
         "label": "D",
-        "text": "Ocean temperatures drop significantly"
+        "text": "Increased CO₂ is absorbed by oceans, lowering pH and making water more acidic"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "Ocean acidification results from increased atmospheric CO₂ dissolving in seawater, forming carbonic acid.",
     "skill": "Cause and Effect",
     "difficulty": 5
@@ -3171,11 +3171,11 @@
     "options": [
       {
         "label": "A",
-        "text": "It has enormous potential but faces significant technical challenges before becoming practical"
+        "text": "It is already widely available"
       },
       {
         "label": "B",
-        "text": "It is already widely available"
+        "text": "It has enormous potential but faces significant technical challenges before becoming practical"
       },
       {
         "label": "C",
@@ -3186,7 +3186,7 @@
         "text": "It is identical to classical computing"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "B",
     "explanation": "The professor presents quantum computing as promising but acknowledges major hurdles like decoherence and error rates.",
     "skill": "Making Inferences",
     "difficulty": 7
@@ -3199,7 +3199,7 @@
     "options": [
       {
         "label": "A",
-        "text": "Characterized by subtle distinctions or variations"
+        "text": "Completely wrong"
       },
       {
         "label": "B",
@@ -3207,14 +3207,14 @@
       },
       {
         "label": "C",
-        "text": "Completely wrong"
+        "text": "Characterized by subtle distinctions or variations"
       },
       {
         "label": "D",
         "text": "Universally agreed upon"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "C",
     "explanation": "'Nuanced' means having or showing subtle qualities, distinctions, or shades of meaning.",
     "skill": "Vocabulary",
     "difficulty": 5
@@ -3311,7 +3311,7 @@
     "options": [
       {
         "label": "A",
-        "text": "Uniform in composition; all the same kind"
+        "text": "Recently formed"
       },
       {
         "label": "B",
@@ -3323,10 +3323,10 @@
       },
       {
         "label": "D",
-        "text": "Recently formed"
+        "text": "Uniform in composition; all the same kind"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "'Homogeneous' means of the same kind; uniform in structure or composition throughout.",
     "skill": "Vocabulary",
     "difficulty": 5
@@ -3339,7 +3339,7 @@
     "options": [
       {
         "label": "A",
-        "text": "The evidence strongly suggests that early childhood education yields significant long-term academic benefits."
+        "text": "It's pretty obvious that preschool helps kids a lot."
       },
       {
         "label": "B",
@@ -3347,14 +3347,14 @@
       },
       {
         "label": "C",
-        "text": "It's pretty obvious that preschool helps kids a lot."
+        "text": "The evidence strongly suggests that early childhood education yields significant long-term academic benefits."
       },
       {
         "label": "D",
         "text": "Tons of studies show that preschool is super important."
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "C",
     "explanation": "Academic writing requires formal vocabulary, precise phrasing, and avoidance of colloquialisms and slang.",
     "skill": "Formal Register",
     "difficulty": 3
@@ -3367,7 +3367,7 @@
     "options": [
       {
         "label": "A",
-        "text": "Problem → proposed solutions → evaluation of each solution"
+        "text": "A dialogue between two characters"
       },
       {
         "label": "B",
@@ -3379,10 +3379,10 @@
       },
       {
         "label": "D",
-        "text": "A dialogue between two characters"
+        "text": "Problem → proposed solutions → evaluation of each solution"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "The passage identifies a problem, presents multiple solutions, and evaluates each one's effectiveness.",
     "skill": "Text Organization",
     "difficulty": 5
@@ -3423,11 +3423,11 @@
     "options": [
       {
         "label": "A",
-        "text": "A driving force or motivation"
+        "text": "A barrier or obstacle"
       },
       {
         "label": "B",
-        "text": "A barrier or obstacle"
+        "text": "A driving force or motivation"
       },
       {
         "label": "C",
@@ -3438,7 +3438,7 @@
         "text": "A type of experiment"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "B",
     "explanation": "'Impetus' means the force or energy with which something moves, or a driving force; stimulus.",
     "skill": "Vocabulary",
     "difficulty": 7
@@ -3591,7 +3591,7 @@
     "options": [
       {
         "label": "A",
-        "text": "The extreme radiation exposure and lack of life-support systems in space environments"
+        "text": "The distance to the nearest galaxy"
       },
       {
         "label": "B",
@@ -3603,10 +3603,10 @@
       },
       {
         "label": "D",
-        "text": "The distance to the nearest galaxy"
+        "text": "The extreme radiation exposure and lack of life-support systems in space environments"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "The passage emphasizes radiation and life-support as the most critical technical challenges.",
     "skill": "Main Challenge",
     "difficulty": 5
@@ -3619,7 +3619,7 @@
     "options": [
       {
         "label": "A",
-        "text": "It demonstrated that particles can exhibit both wave-like and particle-like behavior"
+        "text": "It showed that experiments always produce expected results"
       },
       {
         "label": "B",
@@ -3627,14 +3627,14 @@
       },
       {
         "label": "C",
-        "text": "It showed that experiments always produce expected results"
+        "text": "It demonstrated that particles can exhibit both wave-like and particle-like behavior"
       },
       {
         "label": "D",
         "text": "It had no significant scientific impact"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "C",
     "explanation": "The double-slit experiment is foundational to quantum mechanics, demonstrating wave-particle duality.",
     "skill": "Significance",
     "difficulty": 7
@@ -3647,7 +3647,7 @@
     "options": [
       {
         "label": "A",
-        "text": "Something that comes before and indicates something similar will follow"
+        "text": "An unrelated event"
       },
       {
         "label": "B",
@@ -3655,14 +3655,14 @@
       },
       {
         "label": "C",
-        "text": "An unrelated event"
+        "text": "Something that comes before and indicates something similar will follow"
       },
       {
         "label": "D",
         "text": "A type of chemical"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "C",
     "explanation": "'Precursor' means a person or thing that comes before another, often as a forerunner or predecessor.",
     "skill": "Vocabulary",
     "difficulty": 5
@@ -3675,7 +3675,7 @@
     "options": [
       {
         "label": "A",
-        "text": "In spite of the challenging conditions, the team completed the project ahead of schedule."
+        "text": "The team completed in spite of the project."
       },
       {
         "label": "B",
@@ -3687,10 +3687,10 @@
       },
       {
         "label": "D",
-        "text": "The team completed in spite of the project."
+        "text": "In spite of the challenging conditions, the team completed the project ahead of schedule."
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "'In spite of' is followed by a noun phrase and introduces a concessive clause.",
     "skill": "Prepositions",
     "difficulty": 3
@@ -3703,7 +3703,7 @@
     "options": [
       {
         "label": "A",
-        "text": "By converting sunlight directly into electrical current using semiconductor materials"
+        "text": "By splitting water molecules"
       },
       {
         "label": "B",
@@ -3715,10 +3715,10 @@
       },
       {
         "label": "D",
-        "text": "By splitting water molecules"
+        "text": "By converting sunlight directly into electrical current using semiconductor materials"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "Photovoltaic cells use semiconductor materials to convert photon energy directly into electrical current.",
     "skill": "Process Understanding",
     "difficulty": 5
@@ -3731,7 +3731,7 @@
     "options": [
       {
         "label": "A",
-        "text": "Teaching proper citation skills early and emphasizing the value of original thinking"
+        "text": "Requiring handwritten papers only"
       },
       {
         "label": "B",
@@ -3743,10 +3743,10 @@
       },
       {
         "label": "D",
-        "text": "Requiring handwritten papers only"
+        "text": "Teaching proper citation skills early and emphasizing the value of original thinking"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "The professor advocates for education-based prevention rather than purely punitive measures.",
     "skill": "Detail Recognition",
     "difficulty": 5
@@ -3759,11 +3759,11 @@
     "options": [
       {
         "label": "A",
-        "text": "Producing a great amount; highly productive"
+        "text": "Producing very little"
       },
       {
         "label": "B",
-        "text": "Producing very little"
+        "text": "Producing a great amount; highly productive"
       },
       {
         "label": "C",
@@ -3774,7 +3774,7 @@
         "text": "Widely feared"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "B",
     "explanation": "'Prolific' means producing much; especially of an artist, author, or composer, producing many works.",
     "skill": "Vocabulary",
     "difficulty": 3
@@ -3815,7 +3815,7 @@
     "options": [
       {
         "label": "A",
-        "text": "A protein's three-dimensional shape determines its function, and misfolding can cause diseases like Alzheimer's"
+        "text": "Folding only affects plant proteins"
       },
       {
         "label": "B",
@@ -3827,10 +3827,10 @@
       },
       {
         "label": "D",
-        "text": "Folding only affects plant proteins"
+        "text": "A protein's three-dimensional shape determines its function, and misfolding can cause diseases like Alzheimer's"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "The passage explains that protein function depends on shape, and misfolding is linked to neurodegenerative diseases.",
     "skill": "Cause and Effect",
     "difficulty": 7
@@ -3843,11 +3843,11 @@
     "options": [
       {
         "label": "A",
-        "text": "She is undecided about the issue"
+        "text": "She is sitting on a fence"
       },
       {
         "label": "B",
-        "text": "She is sitting on a fence"
+        "text": "She is undecided about the issue"
       },
       {
         "label": "C",
@@ -3858,7 +3858,7 @@
         "text": "She is angry about it"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "B",
     "explanation": "'On the fence' is an idiom meaning undecided or neutral about an issue.",
     "skill": "Pragmatic Understanding",
     "difficulty": 3
@@ -3871,7 +3871,7 @@
     "options": [
       {
         "label": "A",
-        "text": "A natural tendency or inclination"
+        "text": "A physical object"
       },
       {
         "label": "B",
@@ -3879,14 +3879,14 @@
       },
       {
         "label": "C",
-        "text": "A physical object"
+        "text": "A natural tendency or inclination"
       },
       {
         "label": "D",
         "text": "A mathematical concept"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "C",
     "explanation": "'Propensity' means an inclination or natural tendency to behave in a particular way.",
     "skill": "Vocabulary",
     "difficulty": 7
@@ -3899,7 +3899,7 @@
     "options": [
       {
         "label": "A",
-        "text": "APA (American Psychological Association)"
+        "text": "Chicago style"
       },
       {
         "label": "B",
@@ -3907,14 +3907,14 @@
       },
       {
         "label": "C",
-        "text": "Chicago style"
+        "text": "APA (American Psychological Association)"
       },
       {
         "label": "D",
         "text": "No citation format is used"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "C",
     "explanation": "APA format uses parenthetical citations with author surnames and year, as shown.",
     "skill": "Citation Formats",
     "difficulty": 3
@@ -3927,7 +3927,7 @@
     "options": [
       {
         "label": "A",
-        "text": "They can coexist through sustainable practices and green technology investment"
+        "text": "Environmental protection prevents all economic growth"
       },
       {
         "label": "B",
@@ -3939,10 +3939,10 @@
       },
       {
         "label": "D",
-        "text": "Environmental protection prevents all economic growth"
+        "text": "They can coexist through sustainable practices and green technology investment"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "The passage argues for a middle ground where economic and environmental goals are pursued simultaneously.",
     "skill": "Author's Position",
     "difficulty": 7
@@ -3955,7 +3955,7 @@
     "options": [
       {
         "label": "A",
-        "text": "Intrinsic motivation comes from internal satisfaction; extrinsic comes from external rewards"
+        "text": "Intrinsic motivation only applies to children"
       },
       {
         "label": "B",
@@ -3967,10 +3967,10 @@
       },
       {
         "label": "D",
-        "text": "Intrinsic motivation only applies to children"
+        "text": "Intrinsic motivation comes from internal satisfaction; extrinsic comes from external rewards"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "The professor distinguishes internal drivers (curiosity, enjoyment) from external rewards (grades, money).",
     "skill": "Compare and Contrast",
     "difficulty": 5
@@ -3983,11 +3983,11 @@
     "options": [
       {
         "label": "A",
-        "text": "Occurring or existing simultaneously"
+        "text": "Occurring at different times"
       },
       {
         "label": "B",
-        "text": "Occurring at different times"
+        "text": "Occurring or existing simultaneously"
       },
       {
         "label": "C",
@@ -3998,7 +3998,7 @@
         "text": "Very old"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "B",
     "explanation": "'Concomitant' means naturally accompanying or associated; happening at the same time.",
     "skill": "Vocabulary",
     "difficulty": 7
@@ -4011,7 +4011,7 @@
     "options": [
       {
         "label": "A",
-        "text": "While Chen (2020) emphasizes economic factors, Garcia (2021) argues that cultural influences are equally significant, suggesting a multifaceted explanation."
+        "text": "According to Chen and Garcia, stuff happens."
       },
       {
         "label": "B",
@@ -4019,14 +4019,14 @@
       },
       {
         "label": "C",
-        "text": "According to Chen and Garcia, stuff happens."
+        "text": "While Chen (2020) emphasizes economic factors, Garcia (2021) argues that cultural influences are equally significant, suggesting a multifaceted explanation."
       },
       {
         "label": "D",
         "text": "Two researchers wrote about this topic."
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "C",
     "explanation": "Effective synthesis combines information from multiple sources, showing relationships between different perspectives.",
     "skill": "Source Synthesis",
     "difficulty": 7
@@ -4039,7 +4039,7 @@
     "options": [
       {
         "label": "A",
-        "text": "Independent prokaryotic organisms that were engulfed by larger cells"
+        "text": "Viruses that infected cells"
       },
       {
         "label": "B",
@@ -4051,10 +4051,10 @@
       },
       {
         "label": "D",
-        "text": "Viruses that infected cells"
+        "text": "Independent prokaryotic organisms that were engulfed by larger cells"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "The endosymbiotic theory proposes that mitochondria were once free-living bacteria incorporated into ancestral eukaryotic cells.",
     "skill": "Detail Recognition",
     "difficulty": 7
@@ -4067,11 +4067,11 @@
     "options": [
       {
         "label": "A",
-        "text": "Because it is a specialized term that students may not be familiar with"
+        "text": "Because she forgot what she was saying"
       },
       {
         "label": "B",
-        "text": "Because she forgot what she was saying"
+        "text": "Because it is a specialized term that students may not be familiar with"
       },
       {
         "label": "C",
@@ -4082,7 +4082,7 @@
         "text": "Because it is a common everyday word"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "B",
     "explanation": "Professors often pause to define technical terms to ensure comprehension before proceeding.",
     "skill": "Purpose",
     "difficulty": 3
@@ -4151,11 +4151,11 @@
     "options": [
       {
         "label": "A",
-        "text": "Disrupting cell wall synthesis, causing the bacterial cell to lyse"
+        "text": "Strengthening the bacteria"
       },
       {
         "label": "B",
-        "text": "Strengthening the bacteria"
+        "text": "Disrupting cell wall synthesis, causing the bacterial cell to lyse"
       },
       {
         "label": "C",
@@ -4166,7 +4166,7 @@
         "text": "Helping bacteria reproduce faster"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "B",
     "explanation": "Bactericidal antibiotics like penicillin interfere with cell wall construction, causing osmotic imbalance and cell death.",
     "skill": "Process Understanding",
     "difficulty": 5
@@ -4235,11 +4235,11 @@
     "options": [
       {
         "label": "A",
-        "text": "The federal government should implement carbon emission regulations to address the climate crisis."
+        "text": "The government should do more things about the big problem."
       },
       {
         "label": "B",
-        "text": "The government should do more things about the big problem."
+        "text": "The federal government should implement carbon emission regulations to address the climate crisis."
       },
       {
         "label": "C",
@@ -4250,7 +4250,7 @@
         "text": "The problem needs something."
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "B",
     "explanation": "Replacing vague terms with specific ones (which government, what action, which problem) dramatically improves clarity.",
     "skill": "Specificity",
     "difficulty": 3
@@ -4263,7 +4263,7 @@
     "options": [
       {
         "label": "A",
-        "text": "A hypothesis is an untested prediction, while a theory is a well-substantiated explanation supported by extensive evidence"
+        "text": "A hypothesis is more reliable than a theory"
       },
       {
         "label": "B",
@@ -4275,10 +4275,10 @@
       },
       {
         "label": "D",
-        "text": "A hypothesis is more reliable than a theory"
+        "text": "A hypothesis is an untested prediction, while a theory is a well-substantiated explanation supported by extensive evidence"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "The passage explains the scientific distinction: hypotheses are proposed explanations needing testing; theories are extensively supported.",
     "skill": "Compare and Contrast",
     "difficulty": 5
@@ -4291,7 +4291,7 @@
     "options": [
       {
         "label": "A",
-        "text": "A zipper being unzipped and each side being used as a template"
+        "text": "A puzzle being assembled"
       },
       {
         "label": "B",
@@ -4303,10 +4303,10 @@
       },
       {
         "label": "D",
-        "text": "A puzzle being assembled"
+        "text": "A zipper being unzipped and each side being used as a template"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "The zipper analogy effectively illustrates how the double helix unwinds and each strand serves as a template.",
     "skill": "Analogy Recognition",
     "difficulty": 5
@@ -4347,11 +4347,11 @@
     "options": [
       {
         "label": "A",
-        "text": "The reading passage argues that X, but the lecture challenges this view by presenting contrasting evidence."
+        "text": "I think the reading is wrong."
       },
       {
         "label": "B",
-        "text": "I think the reading is wrong."
+        "text": "The reading passage argues that X, but the lecture challenges this view by presenting contrasting evidence."
       },
       {
         "label": "C",
@@ -4362,7 +4362,7 @@
         "text": "This essay is about the reading and lecture."
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "B",
     "explanation": "Integrated writing responses should immediately establish the relationship between the reading and lecture positions.",
     "skill": "Integrated Writing",
     "difficulty": 5
@@ -4375,7 +4375,7 @@
     "options": [
       {
         "label": "A",
-        "text": "Rapid urbanization creates both economic opportunities and infrastructure challenges that require planned development"
+        "text": "Only wealthy countries experience urbanization"
       },
       {
         "label": "B",
@@ -4383,14 +4383,14 @@
       },
       {
         "label": "C",
-        "text": "Only wealthy countries experience urbanization"
+        "text": "Rapid urbanization creates both economic opportunities and infrastructure challenges that require planned development"
       },
       {
         "label": "D",
         "text": "Urbanization has no negative effects"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "C",
     "explanation": "The passage presents a balanced view of urbanization's dual impact on developing economies.",
     "skill": "Main Argument",
     "difficulty": 7
@@ -4403,7 +4403,7 @@
     "options": [
       {
         "label": "A",
-        "text": "Short-term (working) memory and long-term memory"
+        "text": "Computer memory and human memory"
       },
       {
         "label": "B",
@@ -4415,10 +4415,10 @@
       },
       {
         "label": "D",
-        "text": "Computer memory and human memory"
+        "text": "Short-term (working) memory and long-term memory"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "The lecture distinguishes between short-term/working memory (limited capacity) and long-term memory (virtually unlimited).",
     "skill": "Detail Recognition",
     "difficulty": 3
@@ -4431,7 +4431,7 @@
     "options": [
       {
         "label": "A",
-        "text": "Based or founded on"
+        "text": "Celebrated publicly"
       },
       {
         "label": "B",
@@ -4443,10 +4443,10 @@
       },
       {
         "label": "D",
-        "text": "Celebrated publicly"
+        "text": "Based or founded on"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "'Predicated' means based or established on; founded upon.",
     "skill": "Vocabulary",
     "difficulty": 7
@@ -4487,11 +4487,11 @@
     "options": [
       {
         "label": "A",
-        "text": "Matching fossils, geological formations, and coastline shapes across separated continents"
+        "text": "The temperature of ocean water"
       },
       {
         "label": "B",
-        "text": "The temperature of ocean water"
+        "text": "Matching fossils, geological formations, and coastline shapes across separated continents"
       },
       {
         "label": "C",
@@ -4502,7 +4502,7 @@
         "text": "The number of rivers on each continent"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "B",
     "explanation": "Multiple lines of evidence including fossil distribution, rock formations, and jigsaw-fit coastlines support continental drift.",
     "skill": "Supporting Evidence",
     "difficulty": 5
@@ -4543,7 +4543,7 @@
     "options": [
       {
         "label": "A",
-        "text": "Self-governing; independent"
+        "text": "Temporary"
       },
       {
         "label": "B",
@@ -4555,10 +4555,10 @@
       },
       {
         "label": "D",
-        "text": "Temporary"
+        "text": "Self-governing; independent"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "'Autonomous' means having the freedom to govern itself or control its own affairs; independent.",
     "skill": "Vocabulary",
     "difficulty": 5
@@ -4627,7 +4627,7 @@
     "options": [
       {
         "label": "A",
-        "text": "The body releases adrenaline, increasing heart rate and blood flow to prepare for action"
+        "text": "Blood pressure drops significantly"
       },
       {
         "label": "B",
@@ -4635,14 +4635,14 @@
       },
       {
         "label": "C",
-        "text": "Blood pressure drops significantly"
+        "text": "The body releases adrenaline, increasing heart rate and blood flow to prepare for action"
       },
       {
         "label": "D",
         "text": "The brain shuts down all functions"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "C",
     "explanation": "The professor explains how the sympathetic nervous system triggers adrenaline release for emergency response.",
     "skill": "Process Understanding",
     "difficulty": 3
@@ -4655,7 +4655,7 @@
     "options": [
       {
         "label": "A",
-        "text": "To describe or outline precisely"
+        "text": "To estimate roughly"
       },
       {
         "label": "B",
@@ -4663,14 +4663,14 @@
       },
       {
         "label": "C",
-        "text": "To estimate roughly"
+        "text": "To describe or outline precisely"
       },
       {
         "label": "D",
         "text": "To ignore deliberately"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "C",
     "explanation": "'Delineate' means to describe or portray something precisely; to outline clearly.",
     "skill": "Vocabulary",
     "difficulty": 7
@@ -4683,11 +4683,11 @@
     "options": [
       {
         "label": "A",
-        "text": "Adding a transition like 'Given these underlying causes, several solutions have been proposed'"
+        "text": "No transition is needed"
       },
       {
         "label": "B",
-        "text": "No transition is needed"
+        "text": "Adding a transition like 'Given these underlying causes, several solutions have been proposed'"
       },
       {
         "label": "C",
@@ -4698,7 +4698,7 @@
         "text": "Repeating the entire previous paragraph"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "B",
     "explanation": "A bridge sentence connecting causes to solutions creates logical flow between paragraphs.",
     "skill": "Paragraph Transitions",
     "difficulty": 5
@@ -4711,7 +4711,7 @@
     "options": [
       {
         "label": "A",
-        "text": "It demonstrates that patients' expectations and beliefs can produce real physiological changes"
+        "text": "It has no significance in research"
       },
       {
         "label": "B",
@@ -4723,10 +4723,10 @@
       },
       {
         "label": "D",
-        "text": "It has no significance in research"
+        "text": "It demonstrates that patients' expectations and beliefs can produce real physiological changes"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "The placebo effect reveals the powerful connection between psychological expectation and physical outcome.",
     "skill": "Significance",
     "difficulty": 5
@@ -4739,7 +4739,7 @@
     "options": [
       {
         "label": "A",
-        "text": "People tend to seek and interpret information in ways that confirm their existing beliefs"
+        "text": "It is a type of memory loss"
       },
       {
         "label": "B",
@@ -4751,10 +4751,10 @@
       },
       {
         "label": "D",
-        "text": "It is a type of memory loss"
+        "text": "People tend to seek and interpret information in ways that confirm their existing beliefs"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "The professor defines confirmation bias as the tendency to favor information that supports pre-existing beliefs.",
     "skill": "Concept Definition",
     "difficulty": 5
@@ -4767,7 +4767,7 @@
     "options": [
       {
         "label": "A",
-        "text": "A system of names used in a particular field"
+        "text": "A type of experiment"
       },
       {
         "label": "B",
@@ -4775,14 +4775,14 @@
       },
       {
         "label": "C",
-        "text": "A type of experiment"
+        "text": "A system of names used in a particular field"
       },
       {
         "label": "D",
         "text": "A historical document"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "C",
     "explanation": "'Nomenclature' refers to the devising or choosing of names for things, especially in a science or other discipline.",
     "skill": "Vocabulary",
     "difficulty": 7
@@ -4795,11 +4795,11 @@
     "options": [
       {
         "label": "A",
-        "text": "While this study provides valuable insights, the small sample size limits the generalizability of the findings."
+        "text": "This study is perfect and has no problems."
       },
       {
         "label": "B",
-        "text": "This study is perfect and has no problems."
+        "text": "While this study provides valuable insights, the small sample size limits the generalizability of the findings."
       },
       {
         "label": "C",
@@ -4810,7 +4810,7 @@
         "text": "All studies have limitations."
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "B",
     "explanation": "Effective academic writing acknowledges specific limitations while maintaining the study's contribution.",
     "skill": "Academic Honesty",
     "difficulty": 7
@@ -4823,11 +4823,11 @@
     "options": [
       {
         "label": "A",
-        "text": "It absorbs most of the sun's harmful ultraviolet radiation, protecting life on Earth"
+        "text": "It produces oxygen for breathing"
       },
       {
         "label": "B",
-        "text": "It produces oxygen for breathing"
+        "text": "It absorbs most of the sun's harmful ultraviolet radiation, protecting life on Earth"
       },
       {
         "label": "C",
@@ -4838,7 +4838,7 @@
         "text": "It creates wind patterns"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "B",
     "explanation": "The ozone layer in the stratosphere filters out harmful UV-B and UV-C radiation from the sun.",
     "skill": "Detail Recognition",
     "difficulty": 3
@@ -4907,7 +4907,7 @@
     "options": [
       {
         "label": "A",
-        "text": "State a clear thesis, support it with specific examples and reasons, and conclude with a synthesis"
+        "text": "Write only one paragraph"
       },
       {
         "label": "B",
@@ -4919,10 +4919,10 @@
       },
       {
         "label": "D",
-        "text": "Write only one paragraph"
+        "text": "State a clear thesis, support it with specific examples and reasons, and conclude with a synthesis"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "TOEFL independent writing scores well with a clear structure: thesis, developed body paragraphs with examples, and conclusion.",
     "skill": "Writing Strategy",
     "difficulty": 3
@@ -4935,11 +4935,11 @@
     "options": [
       {
         "label": "A",
-        "text": "Microplastics accumulate in the food chain, eventually reaching humans through seafood consumption"
+        "text": "Microplastics make the ocean look dirty"
       },
       {
         "label": "B",
-        "text": "Microplastics make the ocean look dirty"
+        "text": "Microplastics accumulate in the food chain, eventually reaching humans through seafood consumption"
       },
       {
         "label": "C",
@@ -4950,7 +4950,7 @@
         "text": "Microplastics have no effect on marine life"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "B",
     "explanation": "Bioaccumulation of microplastics through the marine food chain poses risks to organisms at every trophic level, including humans.",
     "skill": "Main Concern",
     "difficulty": 5
@@ -4963,7 +4963,7 @@
     "options": [
       {
         "label": "A",
-        "text": "People often make irrational economic decisions influenced by cognitive biases rather than pure logic"
+        "text": "Behavioral economics is not a real field"
       },
       {
         "label": "B",
@@ -4975,10 +4975,10 @@
       },
       {
         "label": "D",
-        "text": "Behavioral economics is not a real field"
+        "text": "People often make irrational economic decisions influenced by cognitive biases rather than pure logic"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "The lecture explains how behavioral economics reveals systematic deviations from rational decision-making.",
     "skill": "Main Takeaway",
     "difficulty": 5
@@ -4991,7 +4991,7 @@
     "options": [
       {
         "label": "A",
-        "text": "Seeming reasonable or probable"
+        "text": "Absolutely certain"
       },
       {
         "label": "B",
@@ -4999,14 +4999,14 @@
       },
       {
         "label": "C",
-        "text": "Absolutely certain"
+        "text": "Seeming reasonable or probable"
       },
       {
         "label": "D",
         "text": "Extremely complicated"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "C",
     "explanation": "'Plausible' means seeming reasonable or probable; believable.",
     "skill": "Vocabulary",
     "difficulty": 3
@@ -5019,7 +5019,7 @@
     "options": [
       {
         "label": "A",
-        "text": "As Johnson (2019) notes, 'The results challenge conventional wisdom about learning styles.'"
+        "text": "As Johnson (2019) notes The results challenge conventional wisdom about learning styles."
       },
       {
         "label": "B",
@@ -5027,14 +5027,14 @@
       },
       {
         "label": "C",
-        "text": "As Johnson (2019) notes The results challenge conventional wisdom about learning styles."
+        "text": "As Johnson (2019) notes, 'The results challenge conventional wisdom about learning styles.'"
       },
       {
         "label": "D",
         "text": "'As Johnson (2019) notes, The results challenge conventional wisdom about learning styles.'"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "C",
     "explanation": "Direct quotations are enclosed in quotation marks with proper attribution and citation format.",
     "skill": "Quotation Usage",
     "difficulty": 3
@@ -5047,11 +5047,11 @@
     "options": [
       {
         "label": "A",
-        "text": "The development of the scientific method — systematic observation, experimentation, and evidence-based reasoning"
+        "text": "The invention of the telescope"
       },
       {
         "label": "B",
-        "text": "The invention of the telescope"
+        "text": "The development of the scientific method — systematic observation, experimentation, and evidence-based reasoning"
       },
       {
         "label": "C",
@@ -5062,7 +5062,7 @@
         "text": "The printing of books"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "B",
     "explanation": "The passage emphasizes the scientific method as the Revolution's most transformative contribution to human knowledge.",
     "skill": "Main Innovation",
     "difficulty": 5
@@ -5075,7 +5075,7 @@
     "options": [
       {
         "label": "A",
-        "text": "She acknowledges the complexity and suggests it requires interdisciplinary collaboration between technologists and ethicists"
+        "text": "She dismisses the question"
       },
       {
         "label": "B",
@@ -5083,73 +5083,73 @@
       },
       {
         "label": "C",
-        "text": "She dismisses the question"
+        "text": "She acknowledges the complexity and suggests it requires interdisciplinary collaboration between technologists and ethicists"
       },
       {
         "label": "D",
         "text": "She says AI cannot be ethical"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "C",
     "explanation": "The professor gives a thoughtful response emphasizing the need for multiple perspectives.",
     "skill": "Speaker Response",
     "difficulty": 5
   },
   {
-    "id": "toefl_183",
+    "id": "toefl_001",
     "exam": "TOEFL",
     "section": "Reading",
-    "question": "The word 'multifaceted' is closest in meaning to:",
+    "question": "The passage states: 'The Industrial Revolution fundamentally transformed European society, shifting populations from rural agrarian communities to urban centers.' Based on the passage, what was a major consequence of the Industrial Revolution?",
     "options": [
       {
         "label": "A",
-        "text": "Having many different aspects or features"
+        "text": "Urbanization increased as people moved from farms to cities"
       },
       {
         "label": "B",
-        "text": "Having only one dimension"
+        "text": "European population declined significantly"
       },
       {
         "label": "C",
-        "text": "Being extremely simple"
+        "text": "Agriculture became more important than manufacturing"
       },
       {
         "label": "D",
-        "text": "Being temporary"
+        "text": "Rural communities expanded rapidly"
       }
     ],
     "correctAnswer": "A",
-    "explanation": "'Multifaceted' means having many facets, aspects, or dimensions; complex.",
-    "skill": "Vocabulary",
+    "explanation": "The passage directly states populations shifted from rural to urban centers, indicating urbanization was a major consequence.",
+    "skill": "Reading Comprehension",
     "difficulty": 3
   },
   {
-    "id": "toefl_184",
+    "id": "toefl_010",
     "exam": "TOEFL",
     "section": "Writing",
-    "question": "What is the function of a 'hook' in an essay introduction?",
+    "question": "Choose the sentence with correct subject-verb agreement in a complex sentence:",
     "options": [
       {
         "label": "A",
-        "text": "To capture the reader's attention and interest from the first sentence"
+        "text": "The collection of ancient manuscripts, which were discovered in 1947, have been preserved in a climate-controlled facility."
       },
       {
         "label": "B",
-        "text": "To state the thesis immediately"
+        "text": "The collection of ancient manuscripts, which were discovered in 1947, has been preserved in a climate-controlled facility."
       },
       {
         "label": "C",
-        "text": "To list all sources"
+        "text": "The collection of ancient manuscripts, which was discovered in 1947, have been preserved in a climate-controlled facility."
       },
       {
         "label": "D",
-        "text": "To provide the conclusion"
+        "text": "The collections of ancient manuscripts, which were discovered in 1947, has been preserved in a climate-controlled facility."
       }
     ],
-    "correctAnswer": "A",
-    "explanation": "A hook (question, quote, statistic, anecdote) engages the reader and motivates them to continue reading.",
-    "skill": "Introduction Hooks",
-    "difficulty": 3
+    "correctAnswer": "B",
+    "explanation": "'Collection' (singular) requires 'has been preserved.' The relative clause uses plural 'were' referring to 'manuscripts.'",
+    "skill": "Subject-Verb Agreement",
+    "difficulty": 7
   },
   {
     "id": "toefl_185",
@@ -5159,11 +5159,11 @@
     "options": [
       {
         "label": "A",
-        "text": "When a sufficient proportion of the population is immune, protecting those who cannot be vaccinated"
+        "text": "When only animals are vaccinated"
       },
       {
         "label": "B",
-        "text": "When only animals are vaccinated"
+        "text": "When a sufficient proportion of the population is immune, protecting those who cannot be vaccinated"
       },
       {
         "label": "C",
@@ -5174,7 +5174,7 @@
         "text": "When vaccines are given to herds of cattle"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "B",
     "explanation": "Herd immunity occurs when enough people are immune that disease transmission becomes unlikely, protecting vulnerable individuals.",
     "skill": "Concept Understanding",
     "difficulty": 5
@@ -5215,7 +5215,7 @@
     "options": [
       {
         "label": "A",
-        "text": "To find out for certain; determine"
+        "text": "To create from nothing"
       },
       {
         "label": "B",
@@ -5227,10 +5227,10 @@
       },
       {
         "label": "D",
-        "text": "To create from nothing"
+        "text": "To find out for certain; determine"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "'Ascertain' means to find out or learn with certainty through examination or investigation.",
     "skill": "Vocabulary",
     "difficulty": 5
@@ -5271,7 +5271,7 @@
     "options": [
       {
         "label": "A",
-        "text": "They break down dead organic matter, recycling nutrients back into the soil"
+        "text": "They create new species"
       },
       {
         "label": "B",
@@ -5283,10 +5283,10 @@
       },
       {
         "label": "D",
-        "text": "They create new species"
+        "text": "They break down dead organic matter, recycling nutrients back into the soil"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "Decomposers (fungi, bacteria) break down dead matter, returning essential nutrients to the ecosystem.",
     "skill": "Detail Recognition",
     "difficulty": 3
@@ -5299,7 +5299,7 @@
     "options": [
       {
         "label": "A",
-        "text": "Use multiple methods and sources of data rather than relying on a single approach"
+        "text": "Only use one research method"
       },
       {
         "label": "B",
@@ -5307,14 +5307,14 @@
       },
       {
         "label": "C",
-        "text": "Only use one research method"
+        "text": "Use multiple methods and sources of data rather than relying on a single approach"
       },
       {
         "label": "D",
         "text": "Avoid doing research altogether"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "C",
     "explanation": "The idiom advises diversification — using multiple methodological approaches strengthens research reliability.",
     "skill": "Pragmatic Understanding",
     "difficulty": 5
@@ -5327,7 +5327,7 @@
     "options": [
       {
         "label": "A",
-        "text": "To make clear; explain"
+        "text": "To abbreviate"
       },
       {
         "label": "B",
@@ -5339,10 +5339,10 @@
       },
       {
         "label": "D",
-        "text": "To abbreviate"
+        "text": "To make clear; explain"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "'Elucidate' means to make something clear; to explain or shed light on.",
     "skill": "Vocabulary",
     "difficulty": 5
@@ -5355,7 +5355,7 @@
     "options": [
       {
         "label": "A",
-        "text": "Clearly state each point of disagreement and explain how the lecture challenges the reading's claims"
+        "text": "Ignore all contradictions"
       },
       {
         "label": "B",
@@ -5367,10 +5367,10 @@
       },
       {
         "label": "D",
-        "text": "Ignore all contradictions"
+        "text": "Clearly state each point of disagreement and explain how the lecture challenges the reading's claims"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "Integrated writing requires explicitly identifying and explaining the relationship between the two sources.",
     "skill": "Integrated Writing",
     "difficulty": 5
@@ -5383,7 +5383,7 @@
     "options": [
       {
         "label": "A",
-        "text": "Plates move apart, allowing magma to rise and create new crust"
+        "text": "Plates remain stationary"
       },
       {
         "label": "B",
@@ -5395,10 +5395,10 @@
       },
       {
         "label": "D",
-        "text": "Plates remain stationary"
+        "text": "Plates move apart, allowing magma to rise and create new crust"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "At divergent boundaries, tectonic plates separate, and magma wells up to form new oceanic crust (e.g., mid-ocean ridges).",
     "skill": "Detail Recognition",
     "difficulty": 5
@@ -5411,7 +5411,7 @@
     "options": [
       {
         "label": "A",
-        "text": "The impact of social media on adolescent mental health in urban communities"
+        "text": "General psychology topics"
       },
       {
         "label": "B",
@@ -5423,10 +5423,10 @@
       },
       {
         "label": "D",
-        "text": "General psychology topics"
+        "text": "The impact of social media on adolescent mental health in urban communities"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "After the professor's advice to narrow her focus, the student settles on this specific topic.",
     "skill": "Detail Recognition",
     "difficulty": 3
@@ -5439,7 +5439,7 @@
     "options": [
       {
         "label": "A",
-        "text": "Open to more than one interpretation; ambiguous"
+        "text": "Extremely old"
       },
       {
         "label": "B",
@@ -5451,10 +5451,10 @@
       },
       {
         "label": "D",
-        "text": "Extremely old"
+        "text": "Open to more than one interpretation; ambiguous"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "'Equivocal' means open to more than one interpretation; ambiguous or uncertain.",
     "skill": "Vocabulary",
     "difficulty": 7
@@ -5467,7 +5467,7 @@
     "options": [
       {
         "label": "A",
-        "text": "Empirical data from peer-reviewed research studies"
+        "text": "Celebrity endorsements"
       },
       {
         "label": "B",
@@ -5475,14 +5475,14 @@
       },
       {
         "label": "C",
-        "text": "Celebrity endorsements"
+        "text": "Empirical data from peer-reviewed research studies"
       },
       {
         "label": "D",
         "text": "Social media posts"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "C",
     "explanation": "Peer-reviewed empirical research provides the most rigorous, reliable evidence for academic arguments.",
     "skill": "Evidence Hierarchy",
     "difficulty": 3
@@ -5495,7 +5495,7 @@
     "options": [
       {
         "label": "A",
-        "text": "Ocean energy technologies show promise but require further investment and development to become commercially viable"
+        "text": "Ocean energy will never be practical"
       },
       {
         "label": "B",
@@ -5503,14 +5503,14 @@
       },
       {
         "label": "C",
-        "text": "Ocean energy will never be practical"
+        "text": "Ocean energy technologies show promise but require further investment and development to become commercially viable"
       },
       {
         "label": "D",
         "text": "Ocean energy is too expensive to consider"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "C",
     "explanation": "The passage acknowledges potential while noting that significant technical and economic hurdles remain.",
     "skill": "Conclusions",
     "difficulty": 5
@@ -5523,7 +5523,7 @@
     "options": [
       {
         "label": "A",
-        "text": "It involves questioning assumptions, evaluating evidence, and considering multiple perspectives"
+        "text": "It means criticizing everything"
       },
       {
         "label": "B",
@@ -5535,10 +5535,10 @@
       },
       {
         "label": "D",
-        "text": "It means criticizing everything"
+        "text": "It involves questioning assumptions, evaluating evidence, and considering multiple perspectives"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "The professor defines critical thinking as a multifaceted skill involving analysis, evaluation, and perspective-taking.",
     "skill": "Concept Definition",
     "difficulty": 3
@@ -5551,11 +5551,11 @@
     "options": [
       {
         "label": "A",
-        "text": "To spread or distribute widely"
+        "text": "To collect or gather"
       },
       {
         "label": "B",
-        "text": "To collect or gather"
+        "text": "To spread or distribute widely"
       },
       {
         "label": "C",
@@ -5566,7 +5566,7 @@
         "text": "To memorize carefully"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "B",
     "explanation": "'Disseminate' means to spread or disperse something, especially information, widely.",
     "skill": "Vocabulary",
     "difficulty": 5
@@ -5600,296 +5600,32 @@
     "difficulty": 5
   },
   {
-    "id": "toefl_201",
+    "id": "toefl_183",
     "exam": "TOEFL",
-    "section": "Speaking",
-    "question": "You have 15 seconds to prepare and 45 seconds to speak. Respond to the following question:\n\nSome universities offer students the choice between taking courses online or in a traditional classroom setting. Which do you prefer and why? Use specific reasons and examples to support your opinion.",
-    "options": [],
-    "correctAnswer": null,
-    "explanation": "This is an Independent Speaking task that requires personal opinion and justification. There are no predefined options; the student must generate their own response.",
-    "skill": "Independent Speaking - Stating and Supporting an Opinion",
-    "difficulty": 5
-  },
-  {
-    "id": "toefl_202",
-    "exam": "TOEFL",
-    "section": "Speaking",
-    "question": "You have 30 seconds to prepare and 60 seconds to speak. Respond to the following question:\n\nDescribe a skill you have learned recently. Explain how you learned it and why it is important to you. Use specific details in your explanation.",
-    "options": [],
-    "correctAnswer": null,
-    "explanation": "This is an Independent Speaking task focused on personal experience and detailing a learning process. The student must provide a narrative with specifics.",
-    "skill": "Independent Speaking - Describing Personal Experience",
-    "difficulty": 5
-  },
-  {
-    "id": "toefl_203",
-    "exam": "TOEFL",
-    "section": "Speaking",
-    "question": "You have 30 seconds to prepare and 60 seconds to speak. Respond to the following question:\n\nThe university is considering a new policy that would require all students to complete a community service project before graduation. What is your opinion of this policy? Why? Use specific examples to support your answer.",
-    "options": [],
-    "correctAnswer": null,
-    "explanation": "This Independent Speaking task requires an opinion on a proposed university policy, supported by reasons and examples.",
-    "skill": "Independent Speaking - Expressing and Defending an Opinion on a Policy",
-    "difficulty": 5
-  },
-  {
-    "id": "toefl_204",
-    "exam": "TOEFL",
-    "section": "Speaking",
-    "question": "You have 15 seconds to prepare and 45 seconds to speak. Respond to the following question:\n\nIf you could invent a new holiday, what would it be and how would people celebrate it? Use specific reasons and examples to support your idea.",
-    "options": [],
-    "correctAnswer": null,
-    "explanation": "This Independent Speaking task assesses creativity and the ability to elaborate on an imaginative concept with supporting details.",
-    "skill": "Independent Speaking - Creative Elaboration and Justification",
-    "difficulty": 7
-  },
-  {
-    "id": "toefl_206",
-    "exam": "TOEFL",
-    "section": "Speaking",
-    "question": "A campus newspaper is considering a proposal to ban all advertisements for fast-food restaurants from its pages. Read the proposal (available on screen) and listen to a conversation between two students discussing this proposal. Then, answer the question: The                           students                              express                             their opinions                              about the proposal. State their opinions and explain the reasons they give for holding them.",
-    "options": [],
-    "correctAnswer": null,
-    "explanation": "This is a Speaking-Integrated task. It requires summarizing the opinions of two speakers from a provided conversation about a campus issue (proposal to ban fast-food ads), and explaining their reasoning. The initial reading passage sets the context.",
-    "skill": "Integrated Speaking - Summarizing Opinions and Reasons from Conversation",
-    "difficulty": 5
-  },
-  {
-    "id": "toefl_207",
-    "exam": "TOEFL",
-    "section": "Speaking",
-    "question": "A university is planning to replace its old library building with a new, modern facility. Read the announcement about the plan (available on screen). Then, listen to a conversation between two students discussing the announcement. Finally, answer the question: The                           students                             express                             their opinions                              about the university's plan. State their opinions and explain the reasons they give for holding them.",
-    "options": [],
-    "correctAnswer": null,
-    "explanation": "This is a Speaking-Integrated task. The student must summarize the opinions of two speakers in a conversation regarding a university plan (new library), and articulate their justifications.",
-    "skill": "Integrated Speaking - Summarizing Views on a University Plan",
-    "difficulty": 5
-  },
-  {
-    "id": "toefl_208",
-    "exam": "TOEFL",
-    "section": "Speaking",
-    "question": "The university is proposing to reduce funding for student arts programs to allocate more resources to athletic facilities. Read the proposal (available on screen). Then, listen to a lecture excerpt about the importance of arts programs in university education. Finally, answer the question: Summarize the                             lecture                             excerpt's                             main points                             and explain how they                             relate to the university's                             proposal.",
-    "options": [],
-    "correctAnswer": null,
-    "explanation": "This Speaking-Integrated task requires summarizing the main points of a lecture and explaining how those points challenge or support the proposal mentioned in the reading passage.",
-    "skill": "Integrated Speaking - Summarizing Lecture and Relating to Reading",
-    "difficulty": 7
-  },
-  {
-    "id": "toefl_209",
-    "exam": "TOEFL",
-    "section": "Speaking",
-    "question": "Read the passage about the phenomenon of 'urban heat islands' (available on screen). Then, listen to a part of a professor's lecture on the topic. Finally, answer the question: Summarize the                             professor's                             explanation                             of how urban                             heat islands                             form. Use                             specific examples                             from the lecture.",
-    "options": [],
-    "correctAnswer": null,
-    "explanation": "This Speaking-Integrated task requires summarizing a scientific explanation from a lecture, connecting it to a concept introduced in a reading passage. The focus is on explaining a process using specific details from the audio.",
-    "skill": "Integrated Speaking - Explaining a Scientific Process from Lecture",
-    "difficulty": 5
-  },
-  {
-    "id": "toefl_210",
-    "exam": "TOEFL",
-    "section": "Speaking",
-    "question": "The university is considering a plan to convert a large green space on campus into a parking lot. Read the announcement about the plan (available on screen). Then, listen to a conversation between two students discussing the announcement. Finally, answer the question: The                           students'                             conversations                             reveal opposing                             views on the university's                             plan. State                             their                             views                             and explain the reasons they give for holding them.",
-    "options": [],
-    "correctAnswer": null,
-    "explanation": "This Speaking-Integrated task involves identifying and explaining the contrasting opinions of two students on a campus issue presented in a reading passage and a conversation.",
-    "skill": "Integrated Speaking - Contrasting Opinions and Justifications",
-    "difficulty": 5
-  },
-  {
-    "id": "toefl_211",
-    "exam": "TOEFL",
-    "section": "Speaking",
-    "question": "Read the statement about the benefits of studying abroad (available on screen). Then, listen to a professor's lecture that provides examples related to this topic. Finally, answer the question: Summarize the                             professor's                             examples                             of the benefits                             of studying                             abroad. Explain                             how these                             examples                             support                             the statement                             in the reading                             passage.",
-    "options": [],
-    "correctAnswer": null,
-    "explanation": "This Speaking-Integrated task requires summarizing supporting examples from a lecture and linking them back to a main idea presented in a reading passage.",
-    "skill": "Integrated Speaking - Supporting Statement with Lecture Examples",
-    "difficulty": 5
-  },
-  {
-    "id": "toefl_212",
-    "exam": "TOEFL",
-    "section": "Speaking",
-    "question": "The university will soon implement a new policy requiring all students to use a specific online platform for course registration. Read the official notice about the new policy (available on screen). Then, listen to a conversation between two students discussing this notice. Finally, answer the question: The                           students                              express                             significant                             concerns                             about the new                             policy. State                             their                             concerns                             and explain the reasons they give for them.",
-    "options": [],
-    "correctAnswer": null,
-    "explanation": "This Speaking-Integrated task focuses on identifying and explaining the specific concerns raised by two students regarding a new university policy, as presented in a reading and a conversation.",
-    "skill": "Integrated Speaking - Identifying and Explaining Concerns",
-    "difficulty": 5
-  },
-  {
-    "id": "toefl_213",
-    "exam": "TOEFL",
-    "section": "Speaking",
-    "question": "Read the description of a particular type of animal behavior (available on screen). Then, listen to a biology professor describe an experiment related to this behavior. Finally, answer the question: Summarize                             the                             professor's                             description                             of the experiment                             and explain                             what it demonstrates                             about the animal                             behavior mentioned                             in the reading.",
-    "options": [],
-    "correctAnswer": null,
-    "explanation": "This Speaking-Integrated task requires summarizing an experiment from a lecture and explaining how it illustrates or confirms a concept presented in a reading passage.",
-    "skill": "Integrated Speaking - Explaining Experiment and Relating to Concept",
-    "difficulty": 7
-  },
-  {
-    "id": "toefl_214",
-    "exam": "TOEFL",
-    "section": "Speaking",
-    "question": "The university is considering cancelling its summer session to save money. Read the announcement about this proposal (available on screen). Then, listen to a conversation between two students discussing the proposal. Finally, answer the question: The                           students                              share                             their                             perspectives                             on the potential                             cancellation                             of the summer                             session. State                             their                             views                             and explain                             the reasons                             they provide.",
-    "options": [],
-    "correctAnswer": null,
-    "explanation": "This Speaking-Integrated task asks the student to summarize the differing opinions of two students regarding a proposed university policy change, along with their supporting reasons.",
-    "skill": "Integrated Speaking - Presenting Differing Perspectives and Reasons",
-    "difficulty": 5
-  },
-  {
-    "id": "toefl_215",
-    "exam": "TOEFL",
-    "section": "Speaking",
-    "question": "Read the passage about the historical significance of a specific architectural style (available on screen). Then, listen to a history professor's lecture providing further details and analysis. Finally, answer the question: Summarize the                             professor's                             analysis                             of the architectural                             style. Explain                             how her points                             add to or                         modify                             the information                             in the reading                             passage.",
-    "options": [],
-    "correctAnswer": null,
-    "explanation": "This Speaking-Integrated task requires synthesizing information from both a reading and a lecture, specifically focusing on how the lecture critically analyzes or expands upon the reading.",
-    "skill": "Integrated Speaking - Analyzing and Synthesizing Historical Information",
-    "difficulty": 7
-  },
-  {
-    "id": "toefl_216",
-    "exam": "TOEFL",
-    "section": "Speaking",
-    "question": "The university is exploring options for improving student dining services, including potentially hiring a new catering company. Read the campus survey results regarding dining services (available on screen). Then, listen to a conversation between two students expressing their opinions on the matter. Finally, answer the question: The                           students                             offer                             contrasting                             recommendations                             for improving                             student dining                             services. State                             their                             recommendations                             and explain                             the reasons                             they give.",
-    "options": [],
-    "correctAnswer": null,
-    "explanation": "This Speaking-Integrated task requires identifying and explaining the different recommendations made by two students regarding a campus issue, based on provided survey results and their conversation.",
-    "skill": "Integrated Speaking - Contrasting Recommendations and Justifications",
-    "difficulty": 5
-  },
-  {
-    "id": "toefl_217",
-    "exam": "TOEFL",
-    "section": "Speaking",
-    "question": "Read the definition of a psychological concept (available on screen). Then, listen to a psychologist lecture that provides examples illustrating this concept. Finally, answer the question: Summarize                             the                             psychologist's                             examples                             of the concept. Explain                             how each example                             demonstrates                             the                             concept                             described                             in the reading                             passage.",
-    "options": [],
-    "correctAnswer": null,
-    "explanation": "This Speaking-Integrated task focuses on explaining a concept through specific examples provided in a lecture, and linking those examples back to the definition given in a reading passage.",
-    "skill": "Integrated Speaking - Explaining Concept with Lecture Examples",
-    "difficulty": 5
-  },
-  {
-    "id": "toefl_218",
-    "exam": "TOEFL",
-    "section": "Speaking",
-    "question": "The university is considering a proposal to eliminate parking permits for faculty and staff, allowing free parking throughout campus. Read the proposal (available on screen). Then, listen to a conversation between two faculty members discussing this idea. Finally, answer the question: The                           faculty                             members                             express                             mixed                             reactions                             to the proposal. State                             their                             reactions and explain                             the reasons                             they give.",
-    "options": [],
-    "correctAnswer": null,
-    "explanation": "This Speaking-Integrated task involves summarizing the varied opinions of two speakers in a conversation regarding a proposed university policy change, including their justifications.",
-    "skill": "Integrated Speaking - Summarizing Mixed Reactions and Reasons",
-    "difficulty": 5
-  },
-  {
-    "id": "toefl_219",
-    "exam": "TOEFL",
-    "section": "Speaking",
-    "question": "Read the passage about the historical context of a technological innovation (available on screen). Then, listen to a technology historian lecture that discusses the impact of this innovation. Finally, answer the question: Summarize                             the                             historian's                             discussion                             of the innovation's                             impact. Explain                             how her points                             connect                             to the historical                             context                             mentioned                             in the reading.",
-    "options": [],
-    "correctAnswer": null,
-    "explanation": "This Speaking-Integrated task requires synthesizing information about a technological innovation from both a reading passage (historical context) and a lecture (impact), and explaining the connection.",
-    "skill": "Integrated Speaking - Linking Impact to Historical Context",
-    "difficulty": 7
-  },
-  {
-    "id": "toefl_220",
-    "exam": "TOEFL",
-    "section": "Speaking",
-    "question": "The university is considering a change to its academic calendar, potentially adding a week during the summer for intensive courses. Read the announcement about this potential change (available on screen). Then, listen to a conversation between two students discussing the announcement. Finally, answer the question: The                           students                             express                             differing                             viewpoints                             on the proposed                             academic                             calendar                             change. State                             their                             viewpoints                             and explain                             the reasons                             they offer.",
-    "options": [],
-    "correctAnswer": null,
-    "explanation": "This Speaking-Integrated task focuses on identifying and explaining the contrasting opinions of two students regarding a proposed change to the university's academic calendar.",
-    "skill": "Integrated Speaking - Presenting Differing Viewpoints on Calendar Change",
-    "difficulty": 5
-  },
-  {
-    "id": "toefl_221",
-    "exam": "TOEFL",
-    "section": "Speaking",
-    "question": "Read the passage defining an economic principle (available on screen). Then, listen to an economics professor lecture that provides real-world examples of this principle. Finally, answer the question: Summarize                             the                             professor's                             examples                             of the economic                             principle. Explain                             how these                             examples                             illustrate                             the                             principle                             described                             in the reading                             passage.",
-    "options": [],
-    "correctAnswer": null,
-    "explanation": "This Speaking-Integrated task requires summarizing illustrative examples from a lecture and connecting them to a definition provided in a reading passage.",
-    "skill": "Integrated Speaking - Illustrating Economic Principle with Examples",
-    "difficulty": 5
-  },
-  {
-    "id": "toefl_222",
-    "exam": "TOEFL",
-    "section": "Speaking",
-    "question": "The university is proposing to expand its campus library hours, including offering 24-hour access during exam periods. Read the proposal for library expansion (available on screen). Then, listen to a conversation between two students discussing the proposal. Finally, answer the question: The                           students                             express                             contrasting                             opinions                             about the library                             expansion                             proposal. State                             their                             opinions and explain                             the reasons                             they give.",
-    "options": [],
-    "correctAnswer": null,
-    "explanation": "This Speaking-Integrated task assesses the ability to summarize opposing viewpoints of two speakers on a university policy proposal, detailing their justifications.",
-    "skill": "Integrated Speaking - Contrasting Opinions on Library Expansion",
-    "difficulty": 5
-  },
-  {
-    "id": "toefl_223",
-    "exam": "TOEFL",
-    "section": "Speaking",
-    "question": "Read the passage describing a specific natural phenomenon (available on screen). Then, listen to a scientist lecture that explains the causes and effects of this phenomenon. Finally, answer the question: Summarize                             the                             scientist's                             explanation                             of the causes                             and effects                             of the natural                             phenomenon. Use                             specific details                             from the lecture.",
-    "options": [],
-    "correctAnswer": null,
-    "explanation": "This Speaking-Integrated task requires summarizing a scientific explanation of a natural phenomenon, focusing on causes and effects using specific details from the lecture.",
-    "skill": "Integrated Speaking - Explaining Natural Phenomenon Causes and Effects",
-    "difficulty": 5
-  },
-  {
-    "id": "toefl_224",
-    "exam": "TOEFL",
-    "section": "Speaking",
-    "question": "The university bookstore is considering a policy change regarding the return of used textbooks. Read the proposed policy change (available on screen). Then, listen to a conversation between two students discussing this change. Finally, answer the question: The                           students                             express                             differing                             perspectives                             on the proposed                             textbook                             return                             policy. State                             their                             perspectives and explain                             the reasons                             they offer.",
-    "options": [],
-    "correctAnswer": null,
-    "explanation": "This Speaking-Integrated task involves identifying and explaining the contrasting viewpoints of two students regarding a proposed policy change affecting textbook returns.",
-    "skill": "Integrated Speaking - Presenting Perspectives on Textbook Policy",
-    "difficulty": 5
-  },
-  {
-    "id": "toefl_225",
-    "exam": "TOEFL",
-    "section": "Speaking",
-    "question": "Read the passage about a historical event and its immediate consequences (available on screen). Then, listen to a historian lecture that discusses the long-term impacts of this event. Finally, answer the question: Summarize                             the                             historian's                             explanation                             of the long-term                             impacts                             of the historical                             event. Explain                             how these                             impacts                             differ from                             or build                             upon                             the                             immediate                             consequences                             mentioned                             in the reading.",
-    "options": [],
-    "correctAnswer": null,
-    "explanation": "This Speaking-Integrated task requires synthesizing information about a historical event's immediate consequences (reading) and long-term impacts (lecture), and explaining the relationship between them.",
-    "skill": "Integrated Speaking - Differentiating Immediate vs. Long-Term Impacts",
-    "difficulty": 7
-  },
-  {
-    "id": "toefl_227",
-    "exam": "TOEFL",
-    "section": "Listening",
-    "question": "According to the speaker, what is one significant consequence of prolonged volcanic ash in the atmosphere?",
+    "section": "Reading",
+    "question": "The word 'multifaceted' is closest in meaning to:",
     "options": [
       {
         "label": "A",
-        "text": "Increased rates of plant growth."
+        "text": "Being temporary"
       },
       {
         "label": "B",
-        "text": "A cooling effect on global temperatures."
+        "text": "Having only one dimension"
       },
       {
         "label": "C",
-        "text": "Enhanced visibility for air travel."
+        "text": "Being extremely simple"
       },
       {
         "label": "D",
-        "text": "A decrease in atmospheric humidity."
+        "text": "Having many different aspects or features"
       }
     ],
-    "correctAnswer": "B",
-    "explanation": "The speaker explains that volcanic ash can block sunlight, leading to a reduction in the amount of solar radiation reaching the Earth's surface, thus causing cooling.",
-    "skill": "Understanding Details",
-    "difficulty": 5
+    "correctAnswer": "D",
+    "explanation": "'Multifaceted' means having many facets, aspects, or dimensions; complex.",
+    "skill": "Vocabulary",
+    "difficulty": 3
   },
   {
     "id": "toefl_228",
@@ -5920,31 +5656,31 @@
     "difficulty": 5
   },
   {
-    "id": "toefl_229",
+    "id": "toefl_002",
     "exam": "TOEFL",
-    "section": "Listening",
-    "question": "Why does the speaker mention the sulfur dioxide released during eruptions?",
+    "section": "Reading",
+    "question": "The word 'proliferation' in the passage is closest in meaning to:",
     "options": [
       {
         "label": "A",
-        "text": "To explain how it causes acid rain."
+        "text": "Careful organization"
       },
       {
         "label": "B",
-        "text": "To describe its role in atmospheric cooling."
+        "text": "Gradual decline"
       },
       {
         "label": "C",
-        "text": "To illustrate its contribution to volcanic soil fertility."
+        "text": "Complete elimination"
       },
       {
         "label": "D",
-        "text": "To highlight its impact on ozone depletion."
+        "text": "Rapid increase or spread"
       }
     ],
-    "correctAnswer": "B",
-    "explanation": "The speaker explains that sulfur dioxide reacts with water in the atmosphere to form aerosols that reflect solar radiation, contributing to a cooling effect.",
-    "skill": "Understanding Purpose",
+    "correctAnswer": "D",
+    "explanation": "'Proliferation' means a rapid increase in numbers or spread of something.",
+    "skill": "Vocabulary",
     "difficulty": 5
   },
   {
@@ -6039,7 +5775,7 @@
     "options": [
       {
         "label": "A",
-        "text": "Search for books on Italian economic history."
+        "text": "Contact the art history department directly."
       },
       {
         "label": "B",
@@ -6051,10 +5787,10 @@
       },
       {
         "label": "D",
-        "text": "Contact the art history department directly."
+        "text": "Search for books on Italian economic history."
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "The librarian recommends broadening the search to include books on the economic history of Florence during the Renaissance, as this might contain the relevant details.",
     "skill": "Understanding Recommendations",
     "difficulty": 5
@@ -6088,88 +5824,88 @@
     "difficulty": 5
   },
   {
-    "id": "toefl_235",
+    "id": "toefl_004",
     "exam": "TOEFL",
-    "section": "Listening",
-    "question": "What does the librarian imply about academic research?",
+    "section": "Writing",
+    "question": "Which sentence best transitions from a paragraph about exercise benefits to one about nutrition?",
     "options": [
       {
         "label": "A",
-        "text": "It always requires interdisciplinary approaches."
+        "text": "While physical activity is essential, proper nutrition plays an equally important role in overall health."
       },
       {
         "label": "B",
-        "text": "It often involves synthesizing information from various fields."
+        "text": "Exercise is very good for you."
       },
       {
         "label": "C",
-        "text": "It is best confined to a single subject area."
+        "text": "Now I will talk about food."
       },
       {
         "label": "D",
-        "text": "It is easier when topics are very specific."
+        "text": "Nutrition is a different subject entirely."
       }
     ],
-    "correctAnswer": "B",
-    "explanation": "By suggesting the student look into economic history for an art paper, the librarian implies that successful research often requires connecting different academic disciplines.",
+    "correctAnswer": "A",
+    "explanation": "This transition acknowledges the previous topic while smoothly introducing the new one and showing their relationship.",
+    "skill": "Transitions",
+    "difficulty": 5
+  },
+  {
+    "id": "toefl_006",
+    "exam": "TOEFL",
+    "section": "Reading",
+    "question": "What can be inferred from 'Coral reefs, which support 25% of all marine species, are increasingly threatened by rising ocean temperatures'?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Coral reefs only support a small number of species"
+      },
+      {
+        "label": "B",
+        "text": "Marine species are not dependent on coral reefs"
+      },
+      {
+        "label": "C",
+        "text": "Ocean temperatures are decreasing"
+      },
+      {
+        "label": "D",
+        "text": "The loss of coral reefs would significantly impact marine biodiversity"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "If coral reefs support 25% of marine species and are threatened, their loss would significantly reduce marine biodiversity.",
     "skill": "Making Inferences",
+    "difficulty": 5
+  },
+  {
+    "id": "toefl_061",
+    "exam": "TOEFL",
+    "section": "Reading",
+    "question": "What can be inferred about the author's view on genetically modified organisms (GMOs)?",
+    "options": [
+      {
+        "label": "A",
+        "text": "The author believes GMOs have potential benefits but warrant careful regulation and further research"
+      },
+      {
+        "label": "B",
+        "text": "The author is completely against all GMOs"
+      },
+      {
+        "label": "C",
+        "text": "The author thinks GMOs should replace all natural crops"
+      },
+      {
+        "label": "D",
+        "text": "The author has no opinion on GMOs"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "The balanced discussion of benefits and risks, combined with calls for more research, indicates a nuanced position.",
+    "skill": "Author's Position",
     "difficulty": 7
-  },
-  {
-    "id": "toefl_236",
-    "exam": "TOEFL",
-    "section": "Listening",
-    "question": "What is the primary focus of the discussion?",
-    "options": [
-      {
-        "label": "A",
-        "text": "The migratory patterns of Arctic terns."
-      },
-      {
-        "label": "B",
-        "text": "The physiology of long-distance flight in birds."
-      },
-      {
-        "label": "C",
-        "text": "The challenges faced by migratory birds."
-      },
-      {
-        "label": "D",
-        "text": "The impact of climate change on bird populations."
-      }
-    ],
-    "correctAnswer": "B",
-    "explanation": "While migration and challenges are mentioned, the core of the lecture is about the biological adaptations and mechanisms that enable birds to undertake such arduous flights.",
-    "skill": "Identifying the Main Idea",
-    "difficulty": 5
-  },
-  {
-    "id": "toefl_237",
-    "exam": "TOEFL",
-    "section": "Listening",
-    "question": "What remarkable adaptation do many migratory birds possess for sustained flight?",
-    "options": [
-      {
-        "label": "A",
-        "text": "Enhanced night vision."
-      },
-      {
-        "label": "B",
-        "text": "Highly efficient respiratory systems."
-      },
-      {
-        "label": "C",
-        "text": "Ability to store large amounts of water."
-      },
-      {
-        "label": "D",
-        "text": "Specialized feathers for gliding."
-      }
-    ],
-    "correctAnswer": "B",
-    "explanation": "The lecture details how birds have evolved lungs and air sacs that allow for a continuous one-way flow of oxygenated air, crucial for the high energy demands of flight.",
-    "skill": "Understanding Details",
-    "difficulty": 5
   },
   {
     "id": "toefl_238",
@@ -6207,11 +5943,11 @@
     "options": [
       {
         "label": "A",
-        "text": "They have special organs for storing fuel."
+        "text": "They can absorb fuel from the air."
       },
       {
         "label": "B",
-        "text": "They can absorb fuel from the air."
+        "text": "They have special organs for storing fuel."
       },
       {
         "label": "C",
@@ -6222,7 +5958,7 @@
         "text": "They rely on external food sources during flight."
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "B",
     "explanation": "This phrase is a metaphor referring to the birds' ability to store significant amounts of fat, which serves as their primary energy source for long flights.",
     "skill": "Understanding Figurative Language",
     "difficulty": 7
@@ -6403,7 +6139,7 @@
     "options": [
       {
         "label": "A",
-        "text": "The development of the printing press."
+        "text": "The evolution of written language."
       },
       {
         "label": "B",
@@ -6411,101 +6147,101 @@
       },
       {
         "label": "C",
-        "text": "The evolution of written language."
+        "text": "The development of the printing press."
       },
       {
         "label": "D",
         "text": "The spread of literacy in medieval Europe."
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "C",
     "explanation": "The lecture focuses on Johannes Gutenberg and his invention of the movable-type printing press in Europe, detailing its process and significance.",
     "skill": "Identifying the Main Idea",
     "difficulty": 3
   },
   {
-    "id": "toefl_247",
+    "id": "toefl_063",
     "exam": "TOEFL",
-    "section": "Listening",
-    "question": "Before Gutenberg's invention, how were books primarily produced?",
+    "section": "Reading",
+    "question": "The word 'empirical' is closest in meaning to:",
     "options": [
       {
         "label": "A",
-        "text": "Printed using woodblock techniques."
+        "text": "Based on observation or experiment rather than theory"
       },
       {
         "label": "B",
-        "text": "Mass-produced by steam-powered machines."
+        "text": "Based purely on theory"
       },
       {
         "label": "C",
-        "text": "Hand-copied by scribes."
+        "text": "Based on personal belief"
       },
       {
         "label": "D",
-        "text": "Etched onto metal plates."
+        "text": "Based on tradition"
       }
     ],
-    "correctAnswer": "C",
-    "explanation": "The professor explains that the laborious process of monks and scribes meticulously copying texts by hand was the standard method for book production before the printing press.",
-    "skill": "Understanding Details",
+    "correctAnswer": "A",
+    "explanation": "'Empirical' means verifiable by observation or experience rather than theory or pure logic.",
+    "skill": "Vocabulary",
     "difficulty": 5
   },
   {
-    "id": "toefl_248",
+    "id": "toefl_184",
     "exam": "TOEFL",
-    "section": "Listening",
-    "question": "What was innovative about Gutenberg's printing method?",
+    "section": "Writing",
+    "question": "What is the function of a 'hook' in an essay introduction?",
     "options": [
       {
         "label": "A",
-        "text": "The use of movable type made from clay."
+        "text": "To provide the conclusion"
       },
       {
         "label": "B",
-        "text": "The development of a fast-drying ink."
+        "text": "To state the thesis immediately"
       },
       {
         "label": "C",
-        "text": "The creation of individual metal letter pieces that could be rearranged."
+        "text": "To list all sources"
       },
       {
         "label": "D",
-        "text": "The invention of a digital printing process."
+        "text": "To capture the reader's attention and interest from the first sentence"
       }
     ],
-    "correctAnswer": "C",
-    "explanation": "The key innovation discussed is Gutenberg's system of casting individual letters from metal, which could then be assembled into pages, inked, and printed, and subsequently reused.",
-    "skill": "Understanding Details",
-    "difficulty": 5
+    "correctAnswer": "D",
+    "explanation": "A hook (question, quote, statistic, anecdote) engages the reader and motivates them to continue reading.",
+    "skill": "Introduction Hooks",
+    "difficulty": 3
   },
   {
-    "id": "toefl_249",
+    "id": "toefl_011",
     "exam": "TOEFL",
-    "section": "Listening",
-    "question": "What does the professor suggest was a consequence of the printing press?",
+    "section": "Reading",
+    "question": "A 'thesis statement' in an academic essay is:",
     "options": [
       {
         "label": "A",
-        "text": "A decline in the number of universities."
+        "text": "The main argument or claim the author will support throughout the essay"
       },
       {
         "label": "B",
-        "text": "Increased accessibility and affordability of books."
+        "text": "A list of sources used"
       },
       {
         "label": "C",
-        "text": "A return to oral traditions of knowledge sharing."
+        "text": "The conclusion of the essay"
       },
       {
         "label": "D",
-        "text": "The standardization of Latin as the only scholarly language."
+        "text": "A question posed to the reader"
       }
     ],
-    "correctAnswer": "B",
-    "explanation": "The lecture highlights how the efficiency of the printing press drastically lowered the cost per book and increased production volume, making knowledge more widely available.",
-    "skill": "Understanding Cause and Effect",
-    "difficulty": 5
+    "correctAnswer": "A",
+    "explanation": "A thesis statement presents the central argument that the essay will develop and support.",
+    "skill": "Essay Structure",
+    "difficulty": 3
   },
   {
     "id": "toefl_250",
@@ -6984,31 +6720,31 @@
     "difficulty": 3
   },
   {
-    "id": "toefl_267",
+    "id": "toefl_012",
     "exam": "TOEFL",
     "section": "Reading",
-    "question": "The passage discusses the Black Death. The phrase 'demographic upheaval' suggests:",
+    "question": "The pronoun 'they' in paragraph 3 refers to:",
     "options": [
       {
         "label": "A",
-        "text": "A period of great artistic innovation."
+        "text": "The general public"
       },
       {
         "label": "B",
-        "text": "Significant changes in population size and structure."
+        "text": "The participants in the experiment"
       },
       {
         "label": "C",
-        "text": "A rise in religious fervor."
+        "text": "The university administrators"
       },
       {
         "label": "D",
-        "text": "Technological advancements in medicine."
+        "text": "The researchers conducting the study"
       }
     ],
-    "correctAnswer": "B",
-    "explanation": "Demographics refers to population statistics. 'Upheaval' indicates profound disruption. Thus, 'demographic upheaval' means major changes in population numbers and composition, consistent with a devastating plague.",
-    "skill": "Vocabulary",
+    "correctAnswer": "D",
+    "explanation": "Pronoun reference questions require identifying the nearest logical antecedent.",
+    "skill": "Reference Questions",
     "difficulty": 5
   },
   {
@@ -7040,59 +6776,59 @@
     "difficulty": 7
   },
   {
-    "id": "toefl_269",
+    "id": "toefl_013",
     "exam": "TOEFL",
-    "section": "Reading",
-    "question": "The text compares the construction methods of ancient Egyptian pyramids and Mayan pyramids. What is a key difference highlighted?",
+    "section": "Writing",
+    "question": "Which sentence correctly uses a semicolon?",
     "options": [
       {
         "label": "A",
-        "text": "Both used primarily stone blocks for construction."
+        "text": "The experiment yielded unexpected results; consequently, the researchers revised their hypothesis."
       },
       {
         "label": "B",
-        "text": "Egyptian pyramids were generally built for tombs, while Mayan pyramids served as temples and ceremonial sites."
+        "text": "The experiment; yielded unexpected results consequently the researchers revised their hypothesis."
       },
       {
         "label": "C",
-        "text": "Mayan pyramids were significantly larger than Egyptian pyramids."
+        "text": "The experiment yielded; unexpected results consequently; the researchers revised their hypothesis."
       },
       {
         "label": "D",
-        "text": "Egyptian pyramids were constructed much earlier than Mayan pyramids."
+        "text": "The experiment yielded unexpected results consequently; the researchers revised their hypothesis."
       }
     ],
-    "correctAnswer": "B",
-    "explanation": "The passage contrasts the primary purposes, stating Egyptian pyramids were largely tombs, whereas Mayan pyramids had a broader function including temples and ritual centers, often built atop earlier structures.",
-    "skill": "Comparison/Contrast",
+    "correctAnswer": "A",
+    "explanation": "A semicolon correctly separates two independent clauses, especially with a conjunctive adverb.",
+    "skill": "Punctuation",
     "difficulty": 5
   },
   {
-    "id": "toefl_270",
+    "id": "toefl_023",
     "exam": "TOEFL",
     "section": "Reading",
-    "question": "The passage discusses the phenomenon of bioluminescence in deep-sea creatures. What is the primary reason suggested for this ability?",
+    "question": "The word 'ephemeral' is closest in meaning to:",
     "options": [
       {
         "label": "A",
-        "text": "To absorb sunlight in the dark depths."
+        "text": "Widely recognized"
       },
       {
         "label": "B",
-        "text": "To attract mates or prey, and for defense."
+        "text": "Permanent and lasting"
       },
       {
         "label": "C",
-        "text": "To regulate body temperature."
+        "text": "Extremely valuable"
       },
       {
         "label": "D",
-        "text": "To communicate with surface dwellers."
+        "text": "Short-lived or temporary"
       }
     ],
-    "correctAnswer": "B",
-    "explanation": "The text details that bioluminescence serves multiple survival functions for deep-sea organisms, including attracting prey, finding mates, and deterring predators.",
-    "skill": "Detail",
+    "correctAnswer": "D",
+    "explanation": "'Ephemeral' means lasting for a very short time.",
+    "skill": "Vocabulary",
     "difficulty": 5
   },
   {
@@ -7234,805 +6970,5 @@
     "explanation": "The passage explains that flying buttresses were key structural elements in Gothic architecture, enabling the construction of taller buildings with large, ornate windows by transferring the roof's thrust away from the walls.",
     "skill": "Detail/Inference",
     "difficulty": 7
-  },
-  {
-    "id": "toefl_276",
-    "exam": "TOEFL",
-    "section": "Writing",
-    "question": "Which of the following is the LEAST effective way to introduce a topic sentence in a body paragraph of an academic essay?",
-    "options": [
-      {
-        "label": "A",
-        "text": "Starting with a direct statement of the main point."
-      },
-      {
-        "label": "B",
-        "text": "Using a rhetorical question that leads into the main point."
-      },
-      {
-        "label": "C",
-        "text": "Providing a lengthy historical background before stating the main point."
-      },
-      {
-        "label": "D",
-        "text": "Connecting the main point to the previous paragraph's idea."
-      },
-      {
-        "label": "E",
-        "text": "Presenting a surprising statistic related to the main point."
-      }
-    ],
-    "correctAnswer": "C",
-    "explanation": "While some context might be necessary, a lengthy historical background before the topic sentence can obscure the main point and make the paragraph unfocused. The other options are generally effective ways to introduce or transition to a topic sentence.",
-    "skill": "Structure and Cohesion",
-    "difficulty": 5
-  },
-  {
-    "id": "toefl_277",
-    "exam": "TOEFL",
-    "section": "Writing",
-    "question": "Consider the following sentence: 'The rapid advancement of technology has profoundly altered the landscape of global communication, necessitating a re-evaluation of traditional interaction paradigms.' Which of the following is the most concise and clear alternative?",
-    "options": [
-      {
-        "label": "A",
-        "text": "Technology's fast progress has changed global communication, so we need to rethink old ways of interacting."
-      },
-      {
-        "label": "B",
-        "text": "Because technology advanced quickly, global communication changed, and traditional interaction methods require re-evaluation."
-      },
-      {
-        "label": "C",
-        "text": "Rapid technological advancements have significantly changed global communication, requiring a reconsideration of traditional interaction methods."
-      },
-      {
-        "label": "D",
-        "text": "The change in global communication due to rapid technology requires us to re-evaluate how people interact traditionally."
-      },
-      {
-        "label": "E",
-        "text": "Global communication has been profoundly altered by technology, leading to a need to re-evaluate traditional paradigms."
-      }
-    ],
-    "correctAnswer": "C",
-    "explanation": "Option C maintains the academic tone while being clearer and more direct than the original sentence. Option A is too informal ('old ways'). Option B is grammatically awkward. Option D is slightly convoluted. Option E is good but C is slightly more concise.",
-    "skill": "Clarity and Conciseness",
-    "difficulty": 5
-  },
-  {
-    "id": "toefl_278",
-    "exam": "TOEFL",
-    "section": "Writing",
-    "question": "Which of the following phrases best demonstrates a cause-and-effect relationship?",
-    "options": [
-      {
-        "label": "A",
-        "text": "In addition to the new findings..."
-      },
-      {
-        "label": "B",
-        "text": "Similar to the previous research..."
-      },
-      {
-        "label": "C",
-        "text": "As a result of the increased rainfall..."
-      },
-      {
-        "label": "D",
-        "text": "Despite the challenges encountered..."
-      },
-      {
-        "label": "E",
-        "text": "For example, the recent study..."
-      }
-    ],
-    "correctAnswer": "C",
-    "explanation": "The phrase 'As a result of' explicitly signals a cause-and-effect relationship, indicating that the increased rainfall (cause) led to something else (effect).",
-    "skill": "Transitions and Connectors",
-    "difficulty": 3
-  },
-  {
-    "id": "toefl_279",
-    "exam": "TOEFL",
-    "section": "Writing",
-    "question": "Identify the sentence that contains a misplaced modifier.",
-    "options": [
-      {
-        "label": "A",
-        "text": "Walking through the park, the birds were singing beautifully."
-      },
-      {
-        "label": "B",
-        "text": "The scientist carefully observed the reaction under the microscope."
-      },
-      {
-        "label": "C",
-        "text": "She submitted the report after revising it thoroughly."
-      },
-      {
-        "label": "D",
-        "text": "Even though it was late, he continued to study."
-      },
-      {
-        "label": "E",
-        "text": "The book, which was published last year, became a bestseller."
-      }
-    ],
-    "correctAnswer": "A",
-    "explanation": "The introductory phrase 'Walking through the park' should modify the subject performing the action. In this sentence, it incorrectly modifies 'the birds'. The sentence should be rewritten to clarify who was walking, e.g., 'Walking through the park, I heard the birds singing beautifully.'",
-    "skill": "Sentence Structure (Modifiers)",
-    "difficulty": 5
-  },
-  {
-    "id": "toefl_280",
-    "exam": "TOEFL",
-    "section": "Writing",
-    "question": "Which of the following is the most effective thesis statement for an essay arguing that renewable energy sources are crucial for sustainable development?",
-    "options": [
-      {
-        "label": "A",
-        "text": "Renewable energy is important."
-      },
-      {
-        "label": "B",
-        "text": "This essay will discuss solar, wind, and geothermal energy."
-      },
-      {
-        "label": "C",
-        "text": "The widespread adoption of renewable energy sources is essential for mitigating climate change, fostering economic stability, and ensuring long-term environmental sustainability."
-      },
-      {
-        "label": "D",
-        "text": "Many countries are investing in renewable energy."
-      },
-      {
-        "label": "E",
-        "text": "Climate change is a major problem that needs solutions."
-      }
-    ],
-    "correctAnswer": "C",
-    "explanation": "Option C presents a clear, specific, and arguable claim that outlines the main points to be discussed in the essay (mitigating climate change, fostering economic stability, ensuring environmental sustainability). The other options are too general, merely descriptive, or state a problem without a clear argumentative stance.",
-    "skill": "Thesis Statement Development",
-    "difficulty": 7
-  },
-  {
-    "id": "toefl_281",
-    "exam": "TOEFL",
-    "section": "Writing",
-    "question": "Consider the following sentence fragments: 'The study... showed... surprising results... deforestation... Amazon rainforest.' Which sentence correctly combines these fragments using a relative clause?",
-    "options": [
-      {
-        "label": "A",
-        "text": "The study showed surprising results about deforestation, which is happening in the Amazon rainforest."
-      },
-      {
-        "label": "B",
-        "text": "The study, which focused on the Amazon rainforest, showed surprising results about deforestation."
-      },
-      {
-        "label": "C",
-        "text": "The study showed surprising results about deforestation that is impacting the Amazon rainforest."
-      },
-      {
-        "label": "D",
-        "text": "The study showed surprising results concerning deforestation in the Amazon rainforest, where the effects are alarming."
-      },
-      {
-        "label": "E",
-        "text": "The study on deforestation in the Amazon rainforest showed surprising results."
-      }
-    ],
-    "correctAnswer": "B",
-    "explanation": "Option B correctly uses a non-restrictive relative clause ('which focused on the Amazon rainforest') to provide additional information about the study, seamlessly integrating all the core ideas.",
-    "skill": "Sentence Combining (Relative Clauses)",
-    "difficulty": 5
-  },
-  {
-    "id": "toefl_282",
-    "exam": "TOEFL",
-    "section": "Writing",
-    "question": "Which sentence demonstrates correct parallel structure?",
-    "options": [
-      {
-        "label": "A",
-        "text": "She enjoys reading, hiking, and to swim."
-      },
-      {
-        "label": "B",
-        "text": "He is responsible for managing the budget, approving expenditures, and to track progress."
-      },
-      {
-        "label": "C",
-        "text": "The team was motivated by the challenge, the opportunity for growth, and the chance to collaborate."
-      },
-      {
-        "label": "D",
-        "text": "To succeed, students must study hard, attend classes regularly, and being prepared for exams."
-      },
-      {
-        "label": "E",
-        "text": "The presentation covered the market analysis, competitive landscape, and why new strategies are needed."
-      }
-    ],
-    "correctAnswer": "C",
-    "explanation": "Option C uses parallel structure by listing three noun phrases: 'the challenge,' 'the opportunity for growth,' and 'the chance to collaborate.' Options A, B, D, and E contain errors in parallel structure.",
-    "skill": "Parallel Structure",
-    "difficulty": 5
-  },
-  {
-    "id": "toefl_283",
-    "exam": "TOEFL",
-    "section": "Writing",
-    "question": "What is the primary function of a concluding paragraph in an academic essay?",
-    "options": [
-      {
-        "label": "A",
-        "text": "To introduce new evidence or arguments."
-      },
-      {
-        "label": "B",
-        "text": "To summarize the main points and restate the thesis in different words."
-      },
-      {
-        "label": "C",
-        "text": "To provide a detailed explanation of the first point made in the introduction."
-      },
-      {
-        "label": "D",
-        "text": "To present counterarguments that weaken the essay's position."
-      },
-      {
-        "label": "E",
-        "text": "To ask a question that prompts further research."
-      }
-    ],
-    "correctAnswer": "B",
-    "explanation": "The conclusion should effectively wrap up the essay by reinforcing the main arguments and restating the central thesis, providing a sense of closure without introducing new information.",
-    "skill": "Essay Structure (Conclusion)",
-    "difficulty": 3
-  },
-  {
-    "id": "toefl_284",
-    "exam": "TOEFL",
-    "section": "Writing",
-    "question": "Identify the sentence with correct punctuation for a series.",
-    "options": [
-      {
-        "label": "A",
-        "text": "The conference attendees included professors, students and industry professionals."
-      },
-      {
-        "label": "B",
-        "text": "Participants registered online, paid the fee, and attended the opening session."
-      },
-      {
-        "label": "C",
-        "text": "We need to buy apples, bananas oranges and grapes."
-      },
-      {
-        "label": "D",
-        "text": "The requirements are: clarity, conciseness and accuracy."
-      },
-      {
-        "label": "E",
-        "text": "He considered his options: saving money, investing wisely, or spending carefully."
-      }
-    ],
-    "correctAnswer": "B",
-    "explanation": "Option B correctly uses commas to separate items in a series (registered, paid, attended). The Oxford comma (before 'and') is optional but standard in academic writing. Option A omits the Oxford comma, which is acceptable but less preferred in some contexts. Option C is missing commas entirely. Option D uses a colon instead of commas. Option E uses colons and commas correctly but is not a simple series of three items needing separation.",
-    "skill": "Punctuation (Commas in Series)",
-    "difficulty": 5
-  },
-  {
-    "id": "toefl_285",
-    "exam": "TOEFL",
-    "section": "Writing",
-    "question": "Which transition word would best indicate a contrast between two ideas?",
-    "options": [
-      {
-        "label": "A",
-        "text": "Furthermore"
-      },
-      {
-        "label": "B",
-        "text": "In consequence"
-      },
-      {
-        "label": "C",
-        "text": "Nevertheless"
-      },
-      {
-        "label": "D",
-        "text": "For instance"
-      },
-      {
-        "label": "E",
-        "text": "Similarly"
-      }
-    ],
-    "correctAnswer": "C",
-    "explanation": "'Nevertheless' is a conjunctive adverb used to introduce a statement that contrasts with or seems to contradict the previous statement.",
-    "skill": "Transitions and Connectors",
-    "difficulty": 3
-  },
-  {
-    "id": "toefl_286",
-    "exam": "TOEFL",
-    "section": "Writing",
-    "question": "Consider the sentence: 'The data, which was collected over a six-month period, indicates a significant trend.' Is the relative clause 'which was collected over a six-month period' restrictive or non-restrictive?",
-    "options": [
-      {
-        "label": "A",
-        "text": "Restrictive, because it is essential to identify which data is being discussed."
-      },
-      {
-        "label": "B",
-        "text": "Non-restrictive, because it provides additional, non-essential information."
-      },
-      {
-        "label": "C",
-        "text": "Restrictive, because it explains the significance of the data."
-      },
-      {
-        "label": "D",
-        "text": "Non-restrictive, because it appears at the end of the sentence."
-      },
-      {
-        "label": "E",
-        "text": "Restrictive, because it is set off by commas."
-      }
-    ],
-    "correctAnswer": "B",
-    "explanation": "The clause 'which was collected over a six-month period' is non-restrictive because it provides extra information about the data but is not essential for identifying *which* data is being discussed. The commas surrounding it also signal a non-restrictive clause.",
-    "skill": "Sentence Structure (Relative Clauses)",
-    "difficulty": 5
-  },
-  {
-    "id": "toefl_287",
-    "exam": "TOEFL",
-    "section": "Writing",
-    "question": "Which of the following is the most effective way to combine the sentences: 'The company implemented a new marketing strategy. Sales increased by 15%.'",
-    "options": [
-      {
-        "label": "A",
-        "text": "The company implemented a new marketing strategy, so sales increased by 15%."
-      },
-      {
-        "label": "B",
-        "text": "After the company implemented a new marketing strategy, sales increased by 15%."
-      },
-      {
-        "label": "C",
-        "text": "The company's implementation of a new marketing strategy resulted in a 15% increase in sales."
-      },
-      {
-        "label": "D",
-        "text": "Sales increased by 15% because the company implemented a new marketing strategy."
-      },
-      {
-        "label": "E",
-        "text": "The company implemented a new marketing strategy and sales increased by 15%."
-      }
-    ],
-    "correctAnswer": "C",
-    "explanation": "Option C creates a clear and sophisticated sentence by using a noun phrase ('The company's implementation...') as the subject and directly linking it to the result ('resulted in a 15% increase...'). Options A, B, D, and E are grammatically correct but less concise or sophisticated in showing the relationship.",
-    "skill": "Sentence Combining",
-    "difficulty": 7
-  },
-  {
-    "id": "toefl_288",
-    "exam": "TOEFL",
-    "section": "Writing",
-    "question": "What kind of error is present in the following sentence: 'Visiting relatives can be boring.'",
-    "options": [
-      {
-        "label": "A",
-        "text": "A dangling modifier."
-      },
-      {
-        "label": "B",
-        "text": "A misplaced modifier."
-      },
-      {
-        "label": "C",
-        "text": "An error in subject-verb agreement."
-      },
-      {
-        "label": "D",
-        "text": "An ambiguous pronoun reference."
-      },
-      {
-        "label": "E",
-        "text": "A faulty parallelism."
-      }
-    ],
-    "correctAnswer": "A",
-    "explanation": "This sentence has a dangling modifier. It's unclear whether the relatives are the ones visiting or if the act of visiting relatives is boring. To correct it: 'Visiting relatives can be boring' or 'When visiting relatives, one can find it boring.'",
-    "skill": "Sentence Structure (Modifiers)",
-    "difficulty": 5
-  },
-  {
-    "id": "toefl_289",
-    "exam": "TOEFL",
-    "section": "Writing",
-    "question": "Which sentence uses transitional phrases effectively to show sequence?",
-    "options": [
-      {
-        "label": "A",
-        "text": "First, the experiment was designed. Then, the data was collected. Finally, the results were analyzed."
-      },
-      {
-        "label": "B",
-        "text": "The experiment was designed, and after that, the data was collected. The results were analyzed at the end."
-      },
-      {
-        "label": "C",
-        "text": "The experiment was designed. The data was collected next. Then, the results were analyzed."
-      },
-      {
-        "label": "D",
-        "text": "The experiment was designed; subsequently, the data was collected; finally, the results were analyzed."
-      },
-      {
-        "label": "E",
-        "text": "The experiment was designed. Following this, the data was collected. Lastly, the results were analyzed."
-      }
-    ],
-    "correctAnswer": "D",
-    "explanation": "Option D uses strong conjunctive adverbs ('subsequently,' 'finally') to clearly indicate the sequence of events in a sophisticated manner. While A, C, and E also use transitional phrases, D offers the most formal and effective sequencing.",
-    "skill": "Transitions and Connectors",
-    "difficulty": 7
-  },
-  {
-    "id": "toefl_290",
-    "exam": "TOEFL",
-    "section": "Writing",
-    "question": "Consider the following statement: 'The impact of social media on adolescent mental health is a subject of ongoing debate, with research yielding conflicting results.' Which of the following would be the MOST appropriate way to signal a summary or synthesis of opposing viewpoints in the subsequent sentences?",
-    "options": [
-      {
-        "label": "A",
-        "text": "Similarly,"
-      },
-      {
-        "label": "B",
-        "text": "In contrast,"
-      },
-      {
-        "label": "C",
-        "text": "Therefore,"
-      },
-      {
-        "label": "D",
-        "text": "To illustrate,"
-      },
-      {
-        "label": "E",
-        "text": "On the one hand... On the other hand..."
-      }
-    ],
-    "correctAnswer": "E",
-    "explanation": "The phrase 'On the one hand... On the other hand...' is explicitly used to present contrasting viewpoints or arguments, which is ideal for discussing a topic with conflicting research results as indicated in the prompt.",
-    "skill": "Transitions and Connectors",
-    "difficulty": 5
-  },
-  {
-    "id": "toefl_291",
-    "exam": "TOEFL",
-    "section": "Writing",
-    "question": "Which sentence best avoids nominalization for conciseness?",
-    "options": [
-      {
-        "label": "A",
-        "text": "The implementation of the new policy led to an improvement in efficiency."
-      },
-      {
-        "label": "B",
-        "text": "The committee's review of the proposal was thorough."
-      },
-      {
-        "label": "C",
-        "text": "The analysis revealed that the system had failed."
-      },
-      {
-        "label": "D",
-        "text": "The researchers' investigation of the phenomenon took years."
-      },
-      {
-        "label": "E",
-        "text": "The company decided on the expansion of its operations."
-      }
-    ],
-    "correctAnswer": "C",
-    "explanation": "Option C is the most concise because it uses verbs ('analysis revealed,' 'system had failed') instead of turning verbs into nouns ('implementation,' 'improvement,' 'review,' 'investigation,' 'expansion'). For example, Option A could be: 'Implementing the new policy improved efficiency.'",
-    "skill": "Clarity and Conciseness (Nominalization)",
-    "difficulty": 7
-  },
-  {
-    "id": "toefl_292",
-    "exam": "TOEFL",
-    "section": "Writing",
-    "question": "Identify the sentence that correctly uses a semicolon.",
-    "options": [
-      {
-        "label": "A",
-        "text": "The weather was terrible; we decided to stay indoors."
-      },
-      {
-        "label": "B",
-        "text": "The experiment produced unexpected results; therefore, further analysis is required."
-      },
-      {
-        "label": "C",
-        "text": "She is a talented musician; she plays the piano beautifully."
-      },
-      {
-        "label": "D",
-        "text": "All of the above."
-      },
-      {
-        "label": "E",
-        "text": "None of the above."
-      }
-    ],
-    "correctAnswer": "D",
-    "explanation": "All options A, B, and C demonstrate correct semicolon usage. A semicolon can connect two closely related independent clauses (A, C). It can also connect two independent clauses joined by a conjunctive adverb (B).",
-    "skill": "Punctuation (Semicolons)",
-    "difficulty": 5
-  },
-  {
-    "id": "toefl_293",
-    "exam": "TOEFL",
-    "section": "Writing",
-    "question": "Which of the following is the best example of a topic sentence for a body paragraph discussing the environmental benefits of recycling?",
-    "options": [
-      {
-        "label": "A",
-        "text": "Recycling is important for everyone."
-      },
-      {
-        "label": "B",
-        "text": "The process of recycling various materials saves significant natural resources and reduces pollution."
-      },
-      {
-        "label": "C",
-        "text": "Many people recycle their waste."
-      },
-      {
-        "label": "D",
-        "text": "Environmental protection is a global concern."
-      },
-      {
-        "label": "E",
-        "text": "Landfills are filling up quickly."
-      }
-    ],
-    "correctAnswer": "B",
-    "explanation": "Option B clearly states the main idea of the paragraph—the environmental benefits of recycling, specifically mentioning resource conservation and pollution reduction. It is specific and arguable, setting the stage for supporting details.",
-    "skill": "Topic Sentence Development",
-    "difficulty": 5
-  },
-  {
-    "id": "toefl_294",
-    "exam": "TOEFL",
-    "section": "Writing",
-    "question": "Which revision most effectively corrects the comma splice in the following sentence: 'The research methodology was sound, it produced reliable data.'",
-    "options": [
-      {
-        "label": "A",
-        "text": "The research methodology was sound, and it produced reliable data."
-      },
-      {
-        "label": "B",
-        "text": "The research methodology was sound; it produced reliable data."
-      },
-      {
-        "label": "C",
-        "text": "Because the research methodology was sound, it produced reliable data."
-      },
-      {
-        "label": "D",
-        "text": "The research methodology was sound, producing reliable data."
-      },
-      {
-        "label": "E",
-        "text": "All of the above."
-      }
-    ],
-    "correctAnswer": "E",
-    "explanation": "All options A, B, C, and D correctly fix the comma splice. Option A uses a comma and coordinating conjunction. Option B uses a semicolon. Option C subordinates one clause using 'Because.' Option D uses a participial phrase.",
-    "skill": "Punctuation (Comma Splices)",
-    "difficulty": 5
-  },
-  {
-    "id": "toefl_295",
-    "exam": "TOEFL",
-    "section": "Writing",
-    "question": "Consider the sentence: 'She studied the ancient manuscript, which was written in Latin, for weeks.' What is the function of the phrase 'which was written in Latin'?",
-    "options": [
-      {
-        "label": "A",
-        "text": "To introduce a cause."
-      },
-      {
-        "label": "B",
-        "text": "To provide essential identifying information."
-      },
-      {
-        "label": "C",
-        "text": "To offer an example."
-      },
-      {
-        "label": "D",
-        "text": "To add descriptive, non-essential information."
-      },
-      {
-        "label": "E",
-        "text": "To state a contrast."
-      }
-    ],
-    "correctAnswer": "D",
-    "explanation": "Since the clause is set off by commas, it is a non-restrictive relative clause. It adds extra information about the manuscript (that it was written in Latin) but is not crucial for identifying *which* manuscript is being discussed (assuming context already makes that clear).",
-    "skill": "Sentence Structure (Relative Clauses)",
-    "difficulty": 5
-  },
-  {
-    "id": "toefl_296",
-    "exam": "TOEFL",
-    "section": "Writing",
-    "question": "Which sentence correctly uses an apostrophe to indicate possession?",
-    "options": [
-      {
-        "label": "A",
-        "text": "The dogs bark was loud."
-      },
-      {
-        "label": "B",
-        "text": "The childrens toys were scattered everywhere."
-      },
-      {
-        "label": "C",
-        "text": "The book's chapters were compelling."
-      },
-      {
-        "label": "D",
-        "text": "The leaders decision was final."
-      },
-      {
-        "label": "E",
-        "text": "The companies profits increased this quarter."
-      }
-    ],
-    "correctAnswer": "C",
-    "explanation": "Option C correctly uses an apostrophe to show possession ('the chapters belonging to the book'). Option A should be 'The dog's bark'. Option B should be 'The children's toys'. Option D should be 'The leader's decision'. Option E should be 'The company's profits'.",
-    "skill": "Punctuation (Apostrophes)",
-    "difficulty": 3
-  },
-  {
-    "id": "toefl_297",
-    "exam": "TOEFL",
-    "section": "Writing",
-    "question": "Which is the best way to rephrase the following sentence for better flow: 'Climate change is a significant issue. It requires urgent global cooperation.'",
-    "options": [
-      {
-        "label": "A",
-        "text": "Climate change is a significant issue, and it requires urgent global cooperation."
-      },
-      {
-        "label": "B",
-        "text": "Because climate change is a significant issue, it requires urgent global cooperation."
-      },
-      {
-        "label": "C",
-        "text": "Climate change, a significant issue, requires urgent global cooperation."
-      },
-      {
-        "label": "D",
-        "text": "Climate change requires urgent global cooperation because it is a significant issue."
-      },
-      {
-        "label": "E",
-        "text": "Climate change is a significant issue; therefore, it requires urgent global cooperation."
-      }
-    ],
-    "correctAnswer": "C",
-    "explanation": "Option C uses an appositive phrase ('a significant issue') to integrate the two ideas smoothly and concisely, creating a more sophisticated sentence structure than simple conjunctions or causal links.",
-    "skill": "Sentence Combining and Flow",
-    "difficulty": 7
-  },
-  {
-    "id": "toefl_298",
-    "exam": "TOEFL",
-    "section": "Writing",
-    "question": "What type of essay structure is MOST appropriate for comparing and contrasting two different approaches to renewable energy?",
-    "options": [
-      {
-        "label": "A",
-        "text": "Chronological order."
-      },
-      {
-        "label": "B",
-        "text": "Block method (discussing all points of one approach, then all points of the other)."
-      },
-      {
-        "label": "C",
-        "text": "Point-by-point method (comparing/contrasting one aspect at a time for both approaches)."
-      },
-      {
-        "label": "D",
-        "text": "Cause and effect."
-      },
-      {
-        "label": "E",
-        "text": "Problem-solution."
-      }
-    ],
-    "correctAnswer": "C",
-    "explanation": "The point-by-point method is generally more effective for comparison and contrast essays because it allows for direct comparison of specific features or aspects, making the similarities and differences clearer to the reader.",
-    "skill": "Essay Structure (Comparison/Contrast)",
-    "difficulty": 5
-  },
-  {
-    "id": "toefl_299",
-    "exam": "TOEFL",
-    "section": "Writing",
-    "question": "Identify the sentence with a subject-verb agreement error.",
-    "options": [
-      {
-        "label": "A",
-        "text": "The results of the experiment confirm the hypothesis."
-      },
-      {
-        "label": "B",
-        "text": "Each of the students was given a unique problem."
-      },
-      {
-        "label": "C",
-        "text": "Neither the team nor the coach were available for comment."
-      },
-      {
-        "label": "D",
-        "text": "Information about the upcoming changes is available online."
-      },
-      {
-        "label": "E",
-        "text": "Several factors contribute to the phenomenon."
-      }
-    ],
-    "correctAnswer": "C",
-    "explanation": "In sentences with 'neither...nor,' the verb agrees with the subject closest to it. In this case, 'coach' is singular, so the verb should be singular: 'was'. The sentence should read: 'Neither the team nor the coach was available for comment.'",
-    "skill": "Grammar (Subject-Verb Agreement)",
-    "difficulty": 5
-  },
-  {
-    "id": "toefl_300",
-    "exam": "TOEFL",
-    "section": "Writing",
-    "question": "Which of the following transition words BEST introduces a concluding thought or summary related to the preceding arguments?",
-    "options": [
-      {
-        "label": "A",
-        "text": "Consequently"
-      },
-      {
-        "label": "B",
-        "text": "In essence"
-      },
-      {
-        "label": "C",
-        "text": "For example"
-      },
-      {
-        "label": "D",
-        "text": "However"
-      },
-      {
-        "label": "E",
-        "text": "Meanwhile"
-      }
-    ],
-    "correctAnswer": "B",
-    "explanation": "'In essence' is commonly used to introduce a summary or the fundamental point of what has been discussed, signalling a conclusion or synthesis of arguments.",
-    "skill": "Transitions and Connectors",
-    "difficulty": 3
   }
 ]

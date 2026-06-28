@@ -109,30 +109,31 @@
     "difficulty": 5
   },
   {
-    "id": "gmat_q_005",
+    "id": "gmat_269",
     "exam": "GMAT",
-    "section": "Quantitative",
-    "question": "In the function y = 8x + 2, what is y when x = 6?",
+    "section": "Verbal",
+    "question": "The explorer's journal described the local flora and fauna with meticulous detail, providing invaluable data for subsequent scientific expeditions.",
     "options": [
       {
         "label": "A",
-        "text": "52"
+        "text": "meticulous detail, providing invaluable data for subsequent scientific expeditions."
       },
       {
         "label": "B",
-        "text": "48"
+        "text": "meticulous details, providing invaluable data for scientific expeditions that followed."
       },
       {
         "label": "C",
-        "text": "50"
+        "text": "meticulous detail, which provided invaluable data for scientific expeditions afterward."
       },
       {
         "label": "D",
-        "text": "10"
+        "text": "meticulously detailed observations, providing invaluable data for following scientific expeditions."
       }
     ],
-    "correctAnswer": "C",
-    "explanation": "Substitute x into the linear function.",
+    "correctAnswer": "A",
+    "explanation": "Option A uses standard phrasing and maintains conciseness. 'Meticulous detail' is a common and correct idiom. 'Subsequent' is more formal and precise than 'followed' or 'afterward' in this context. Option D changes the noun phrase unnecessarily.",
+    "skill": "Sentence Correction",
     "difficulty": 5
   },
   {
@@ -3862,33 +3863,6 @@
     "difficulty": 5
   },
   {
-    "id": "gmat_q_244",
-    "exam": "GMAT",
-    "section": "Verbal",
-    "question": "A university department is evaluating its seminar series. The table shows the attendance numbers for five seminars, categorized by student type (Undergraduate, Graduate) and year of study (1st, 2nd, 3rd, 4th+). A bar chart displays the average satisfaction rating for each seminar.",
-    "options": [
-      {
-        "label": "A",
-        "text": "The total number of undergraduate students who attended all seminars."
-      },
-      {
-        "label": "B",
-        "text": "The seminar with the highest attendance."
-      },
-      {
-        "label": "C",
-        "text": "The average attendance for seminars attended by 3rd-year students."
-      },
-      {
-        "label": "D",
-        "text": "The total number of attendees for the seminar with the lowest satisfaction rating."
-      }
-    ],
-    "correctAnswer": "E",
-    "explanation": "This question asks for the proportion of graduate students among the attendees of the second seminar. The table provides attendance numbers broken down by student type (Undergraduate, Graduate) and year of study for each seminar. By looking at the row corresponding to the second seminar, we can find the number of undergraduate and graduate attendees. Summing these gives the total attendees for that seminar. Dividing the number of graduate attendees by the total attendees for that seminar gives the required proportion. Therefore, this information is sufficient.",
-    "difficulty": 5
-  },
-  {
     "id": "gmat_q_245",
     "exam": "GMAT",
     "section": "Verbal",
@@ -3940,33 +3914,6 @@
     ],
     "correctAnswer": "D",
     "explanation": "This question asks for the total number of artifacts acquired during the year. The table provides the number of artifacts acquired each month, specifically broken down by type (Pottery, Tools, Textiles). To find the total number acquired during the year, we need to sum the acquisitions for all types across all months. Summing the monthly totals for each category, or summing the totals for each month across categories, will yield the overall total for the year. The pie chart represents the collection state *before* the year's acquisitions. Therefore, this information is sufficient.",
-    "difficulty": 5
-  },
-  {
-    "id": "gmat_q_247",
-    "exam": "GMAT",
-    "section": "Verbal",
-    "question": "A city's public library system reports its circulation statistics. The table shows the number of books checked out per week for two main branches (Central, Westside) over a quarter (13 weeks), categorized by fiction and non-fiction. A bar chart displays the percentage of total circulation contributed by each branch.",
-    "options": [
-      {
-        "label": "A",
-        "text": "The total number of fiction books checked out from the Central branch during the quarter."
-      },
-      {
-        "label": "B",
-        "text": "The average number of non-fiction books checked out per week from the Westside branch."
-      },
-      {
-        "label": "C",
-        "text": "The week with the highest total circulation across both branches."
-      },
-      {
-        "label": "D",
-        "text": "The ratio of fiction to non-fiction books checked out from the Central branch in the first week."
-      }
-    ],
-    "correctAnswer": "E",
-    "explanation": "This question asks for the total number of books checked out from the Westside branch during the quarter. The table provides the number of books checked out per week for the Westside branch, broken down into fiction and non-fiction. Summing the weekly fiction checkouts and the weekly non-fiction checkouts for the Westside branch over the 13 weeks will give the total number of books checked out from that branch during the quarter. The bar chart shows branch contribution to total circulation, not specific branch totals. Therefore, this information is sufficient.",
     "difficulty": 5
   },
   {
@@ -4321,33 +4268,6 @@
     "difficulty": 5
   },
   {
-    "id": "gmat_q_261",
-    "exam": "GMAT",
-    "section": "Verbal",
-    "question": "A university library tracks the circulation of periodicals. The table shows the number of times each of five major journals was accessed per month over a year. A scatter plot shows the relationship between the number of articles published in each journal and the number of times it was accessed.",
-    "options": [
-      {
-        "label": "A",
-        "text": "The journal with the highest total access count over the year."
-      },
-      {
-        "label": "B",
-        "text": "The average monthly access count for a specific journal (e.g., Journal X)."
-      },
-      {
-        "label": "C",
-        "text": "The proportion of total accesses that were for Journal Y."
-      },
-      {
-        "label": "D",
-        "text": "The correlation between the number of articles published and access count."
-      }
-    ],
-    "correctAnswer": "E",
-    "explanation": "This question asks for the total number of accesses for all five journals combined over the year. The table provides the monthly access counts for each of the five journals. To find the total accesses, we need to sum the monthly accesses for each journal to get the annual total for that journal, and then sum these annual totals across all five journals. Alternatively, we can sum the monthly totals across all journals for each month, and then sum those 12 monthly totals. The scatter plot relates publications to access, not total accesses. Therefore, this information is sufficient.",
-    "difficulty": 5
-  },
-  {
     "id": "gmat_q_262",
     "exam": "GMAT",
     "section": "Verbal",
@@ -4483,31 +4403,30 @@
     "difficulty": 5
   },
   {
-    "id": "gmat_269",
+    "id": "gmat_q_005",
     "exam": "GMAT",
-    "section": "Verbal",
-    "question": "The explorer's journal described the local flora and fauna with meticulous detail, providing invaluable data for subsequent scientific expeditions.",
+    "section": "Quantitative",
+    "question": "In the function y = 8x + 2, what is y when x = 6?",
     "options": [
       {
         "label": "A",
-        "text": "meticulous detail, providing invaluable data for subsequent scientific expeditions."
+        "text": "52"
       },
       {
         "label": "B",
-        "text": "meticulous details, providing invaluable data for scientific expeditions that followed."
+        "text": "48"
       },
       {
         "label": "C",
-        "text": "meticulous detail, which provided invaluable data for scientific expeditions afterward."
+        "text": "50"
       },
       {
         "label": "D",
-        "text": "meticulously detailed observations, providing invaluable data for following scientific expeditions."
+        "text": "10"
       }
     ],
-    "correctAnswer": "A",
-    "explanation": "Option A uses standard phrasing and maintains conciseness. 'Meticulous detail' is a common and correct idiom. 'Subsequent' is more formal and precise than 'followed' or 'afterward' in this context. Option D changes the noun phrase unnecessarily.",
-    "skill": "Sentence Correction",
+    "correctAnswer": "C",
+    "explanation": "Substitute x into the linear function.",
     "difficulty": 5
   },
   {

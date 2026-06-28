@@ -1,170 +1,170 @@
 [
   {
-    "id": "nclex_001",
-    "exam": "NCLEX-RN",
-    "section": "Safe and Effective Care",
-    "question": "A nurse is delegating tasks. Which task is most appropriate to delegate to an unlicensed assistive personnel (UAP)?",
-    "options": [
-      {
-        "label": "A",
-        "text": "Recording vital signs on a stable postoperative patient"
-      },
-      {
-        "label": "B",
-        "text": "Assessing a newly admitted patient"
-      },
-      {
-        "label": "C",
-        "text": "Administering IV push medications"
-      },
-      {
-        "label": "D",
-        "text": "Developing a nursing care plan"
-      }
-    ],
-    "correctAnswer": "A",
-    "explanation": "UAPs can perform routine tasks like recording vital signs on stable patients. Assessment, medication administration, and care planning require licensed nurse judgment.",
-    "skill": "Delegation",
-    "difficulty": 5
-  },
-  {
-    "id": "nclex_002",
+    "id": "nclex_025",
     "exam": "NCLEX-RN",
     "section": "Physiological Integrity",
-    "question": "A patient with heart failure is prescribed furosemide (Lasix). Which laboratory value should the nurse monitor most closely?",
+    "question": "A patient with myocardial infarction is prescribed morphine. Which effect is the nurse monitoring for as a priority?",
     "options": [
       {
         "label": "A",
-        "text": "Potassium level"
+        "text": "Nausea"
       },
       {
         "label": "B",
-        "text": "Sodium level"
+        "text": "Respiratory depression"
       },
       {
         "label": "C",
-        "text": "Calcium level"
+        "text": "Constipation"
       },
       {
         "label": "D",
-        "text": "Magnesium level"
+        "text": "Drowsiness"
       }
     ],
-    "correctAnswer": "A",
-    "explanation": "Furosemide is a loop diuretic that causes potassium loss. Hypokalemia can lead to dangerous cardiac arrhythmias, making potassium monitoring essential.",
+    "correctAnswer": "B",
+    "explanation": "Respiratory depression is the most dangerous side effect of morphine and requires priority monitoring. Naloxone should be readily available.",
     "skill": "Pharmacology",
     "difficulty": 5
   },
   {
-    "id": "nclex_003",
+    "id": "nclex_221",
     "exam": "NCLEX-RN",
-    "section": "Health Promotion",
-    "question": "A nurse is teaching a patient about colorectal cancer screening. At what age should average-risk individuals begin screening?",
+    "section": "Safe and Effective Care",
+    "question": "A client is experiencing anaphylaxis. The nurse should anticipate administering which medication as the first-line treatment?",
     "options": [
       {
         "label": "A",
-        "text": "40 years"
+        "text": "Diphenhydramine (Benadryl)"
       },
       {
         "label": "B",
-        "text": "45 years"
+        "text": "Epinephrine (Adrenalin)"
       },
       {
         "label": "C",
-        "text": "50 years"
+        "text": "Corticosteroids (e.g., methylprednisolone)"
       },
       {
         "label": "D",
-        "text": "55 years"
+        "text": "Albuterol nebulizer"
       }
     ],
     "correctAnswer": "B",
-    "explanation": "Current guidelines recommend colorectal cancer screening beginning at age 45 for average-risk individuals.",
-    "skill": "Health Screening",
-    "difficulty": 5
-  },
-  {
-    "id": "nclex_004",
-    "exam": "NCLEX-RN",
-    "section": "Psychosocial Integrity",
-    "question": "A patient tells the nurse, 'I don't want to live anymore.' What is the nurse's priority response?",
-    "options": [
-      {
-        "label": "A",
-        "text": "Ask the patient if they have a plan to harm themselves"
-      },
-      {
-        "label": "B",
-        "text": "Tell the patient everything will be okay"
-      },
-      {
-        "label": "C",
-        "text": "Leave the patient alone and notify the provider"
-      },
-      {
-        "label": "D",
-        "text": "Change the subject to distract the patient"
-      }
-    ],
-    "correctAnswer": "A",
-    "explanation": "When a patient expresses suicidal ideation, the priority is to assess for a specific plan and means to determine risk level.",
-    "skill": "Crisis Intervention",
+    "explanation": "Epinephrine is the first-line treatment for anaphylaxis because it reverses life-threatening symptoms such as bronchospasm, laryngeal edema, and vasodilation by acting as a vasoconstrictor and bronchodilator. While antihistamines, corticosteroids, and bronchodilators are used as adjuncts, epinephrine is the most critical immediate intervention.",
+    "skill": "Resuscitation and Emergency Care",
     "difficulty": 7
   },
   {
-    "id": "nclex_005",
+    "id": "nclex_204",
     "exam": "NCLEX-RN",
     "section": "Safe and Effective Care",
-    "question": "Which finding requires the nurse to initiate droplet precautions?",
+    "question": "A client with a history of deep vein thrombosis (DVT) is prescribed warfarin. The nurse should monitor which laboratory value to assess the therapeutic effectiveness of this medication?",
     "options": [
       {
         "label": "A",
-        "text": "Patient diagnosed with influenza"
+        "text": "Hemoglobin and hematocrit"
       },
       {
         "label": "B",
-        "text": "Patient with a surgical wound infection"
+        "text": "Platelet count"
       },
       {
         "label": "C",
-        "text": "Patient diagnosed with tuberculosis"
+        "text": "Prothrombin time (PT) and international normalized ratio (INR)"
       },
       {
         "label": "D",
-        "text": "Patient with Clostridium difficile"
+        "text": "Activated partial thromboplastin time (aPTT)"
       }
     ],
-    "correctAnswer": "A",
-    "explanation": "Influenza is transmitted via large respiratory droplets. TB requires airborne precautions, C. diff requires contact precautions.",
-    "skill": "Infection Control",
+    "correctAnswer": "C",
+    "explanation": "Warfarin is an anticoagulant that works by inhibiting vitamin K-dependent clotting factors. Its therapeutic effect is monitored by measuring the prothrombin time (PT) and the international normalized ratio (INR). Hemoglobin/hematocrit assess red blood cells, platelets are involved in clotting but not directly monitored for warfarin efficacy, and aPTT is used to monitor unfractionated heparin.",
+    "skill": "Pharmacology and Therapeutic Monitoring",
     "difficulty": 5
   },
   {
-    "id": "nclex_006",
+    "id": "nclex_205",
     "exam": "NCLEX-RN",
-    "section": "Physiological Integrity",
-    "question": "A patient receiving a blood transfusion develops fever, chills, and back pain. What is the nurse's first action?",
+    "section": "Safe and Effective Care",
+    "question": "A nurse is caring for a client who has a new tracheostomy. Which intervention is essential to prevent tracheostomy-related complications?",
     "options": [
       {
         "label": "A",
-        "text": "Stop the transfusion immediately"
+        "text": "Administering oxygen at 4 L/min via nasal cannula"
       },
       {
         "label": "B",
-        "text": "Slow the infusion rate"
+        "text": "Suctioning the tracheostomy tube every 8 hours"
       },
       {
         "label": "C",
-        "text": "Administer diphenhydramine"
+        "text": "Performing aseptic technique during tracheostomy care"
       },
       {
         "label": "D",
-        "text": "Obtain a blood sample for typing"
+        "text": "Encouraging the client to cough and deep breathe"
       }
     ],
-    "correctAnswer": "A",
-    "explanation": "Signs of a hemolytic transfusion reaction require immediately stopping the transfusion to prevent fatal complications.",
-    "skill": "Blood Transfusion",
+    "correctAnswer": "C",
+    "explanation": "Performing aseptic technique during tracheostomy care, including suctioning and changing ties, is crucial to prevent infection at the stoma site and in the lower respiratory tract, which can lead to serious complications like pneumonia or tracheal damage. Routine suctioning every 8 hours may not be necessary and could cause trauma; suctioning should be done as needed based on assessment. Encouraging coughing and deep breathing is important but preventing infection through aseptic technique is paramount for tracheostomy care.",
+    "skill": "Infection Control",
+    "difficulty": 7
+  },
+  {
+    "id": "nclex_207",
+    "exam": "NCLEX-RN",
+    "section": "Safe and Effective Care",
+    "question": "A nurse is reviewing the medication administration record (MAR) for a client receiving opioid analgesics. Which potential side effect requires the nurse to monitor closely?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Diarrhea"
+      },
+      {
+        "label": "B",
+        "text": "Tachycardia"
+      },
+      {
+        "label": "C",
+        "text": "Respiratory depression"
+      },
+      {
+        "label": "D",
+        "text": "Hypertension"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Opioid analgesics are well-known for their potential to cause respiratory depression, which is a serious and potentially life-threatening side effect. Diarrhea is less common; constipation is a more frequent side effect. Opioids typically cause bradycardia, not tachycardia, and hypotension, not hypertension.",
+    "skill": "Pharmacology and Therapeutic Monitoring",
+    "difficulty": 3
+  },
+  {
+    "id": "nclex_206",
+    "exam": "NCLEX-RN",
+    "section": "Safe and Effective Care",
+    "question": "A client is admitted with suspected sepsis. Which intervention should the nurse prioritize?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Administering broad-spectrum antibiotics"
+      },
+      {
+        "label": "B",
+        "text": "Initiating intravenous fluid resuscitation"
+      },
+      {
+        "label": "C",
+        "text": "Obtaining blood cultures"
+      },
+      {
+        "label": "D",
+        "text": "Monitoring vital signs closely"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "The priority intervention when suspecting sepsis is to obtain blood cultures *before* administering antibiotics. This ensures the most accurate identification of the causative organism, guiding antibiotic selection. While antibiotics, IV fluids, and vital sign monitoring are all critical components of sepsis management, obtaining cultures first is essential for effective treatment.",
+    "skill": "Resuscitation and Emergency Care",
     "difficulty": 7
   },
   {
@@ -175,11 +175,11 @@
     "options": [
       {
         "label": "A",
-        "text": "15 grams of a fast-acting carbohydrate"
+        "text": "1 mg of glucagon IM"
       },
       {
         "label": "B",
-        "text": "1 mg of glucagon IM"
+        "text": "15 grams of a fast-acting carbohydrate"
       },
       {
         "label": "C",
@@ -190,37 +190,37 @@
         "text": "A full meal"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "B",
     "explanation": "For a conscious hypoglycemic patient, the rule of 15 applies: give 15g of fast-acting carbohydrate, wait 15 minutes, recheck.",
     "skill": "Endocrine",
     "difficulty": 5
   },
   {
-    "id": "nclex_008",
+    "id": "nclex_209",
     "exam": "NCLEX-RN",
     "section": "Safe and Effective Care",
-    "question": "The nurse receives shift report on four patients. Which patient should be assessed first?",
+    "question": "A nurse is caring for a client who is experiencing hypoglycemia. Which symptom is MOST characteristic of this condition?",
     "options": [
       {
         "label": "A",
-        "text": "Patient with an oxygen saturation of 88% on room air"
+        "text": "Polyuria"
       },
       {
         "label": "B",
-        "text": "Patient requesting pain medication"
+        "text": "Polydipsia"
       },
       {
         "label": "C",
-        "text": "Patient with a blood glucose of 180 mg/dL"
+        "text": "Diaphoresis"
       },
       {
         "label": "D",
-        "text": "Patient who is 2 hours post-appendectomy with stable vitals"
+        "text": "Fruity breath odor"
       }
     ],
-    "correctAnswer": "A",
-    "explanation": "An SpO2 of 88% indicates hypoxemia and is a priority requiring immediate assessment.",
-    "skill": "Prioritization",
+    "correctAnswer": "C",
+    "explanation": "Diaphoresis (excessive sweating) is a common and often early symptom of hypoglycemia, caused by the release of epinephrine. Polyuria and polydipsia are characteristic of hyperglycemia. Fruity breath odor is associated with diabetic ketoacidosis (DKA), a complication of uncontrolled diabetes, which involves hyperglycemia.",
+    "skill": "Assessment and Monitoring",
     "difficulty": 5
   },
   {
@@ -231,11 +231,11 @@
     "options": [
       {
         "label": "A",
-        "text": "Hepatitis B"
+        "text": "DTaP"
       },
       {
         "label": "B",
-        "text": "DTaP"
+        "text": "Hepatitis B"
       },
       {
         "label": "C",
@@ -246,7 +246,7 @@
         "text": "Varicella"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "B",
     "explanation": "Hepatitis B vaccine is the only vaccine routinely administered at birth. DTaP begins at 2 months, MMR and varicella at 12 months.",
     "skill": "Immunizations",
     "difficulty": 3
@@ -259,7 +259,7 @@
     "options": [
       {
         "label": "A",
-        "text": "Peripheral edema and jugular vein distention"
+        "text": "Orthopnea and paroxysmal nocturnal dyspnea"
       },
       {
         "label": "B",
@@ -267,72 +267,72 @@
       },
       {
         "label": "C",
-        "text": "Orthopnea and paroxysmal nocturnal dyspnea"
+        "text": "Peripheral edema and jugular vein distention"
       },
       {
         "label": "D",
         "text": "S3 heart sound with pulmonary congestion"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "C",
     "explanation": "Right-sided HF causes systemic venous congestion: peripheral edema, JVD, hepatomegaly. Left-sided HF causes pulmonary symptoms.",
     "skill": "Cardiovascular",
     "difficulty": 5
   },
   {
-    "id": "nclex_011",
+    "id": "nclex_241",
     "exam": "NCLEX-RN",
-    "section": "Psychosocial Integrity",
-    "question": "A patient recently diagnosed with terminal cancer says, 'This can't be right. The lab must have mixed up my results.' Which stage of grief?",
+    "section": "Health Promotion and Maintenance",
+    "question": "A nurse is providing anticipatory guidance to parents of a 3-month-old infant regarding safety. Which is the MOST critical safety recommendation?",
     "options": [
       {
         "label": "A",
-        "text": "Denial"
+        "text": "Install safety gates at the top and bottom of stairs."
       },
       {
         "label": "B",
-        "text": "Anger"
+        "text": "Ensure the infant sleeps on their back."
       },
       {
         "label": "C",
-        "text": "Bargaining"
+        "text": "Keep small objects out of the infant's reach."
       },
       {
         "label": "D",
-        "text": "Depression"
+        "text": "Use sunscreen when the infant is exposed to the sun."
       }
     ],
-    "correctAnswer": "A",
-    "explanation": "Denial is the first stage of the Kübler-Ross grief model, characterized by disbelief and refusal to accept the diagnosis.",
-    "skill": "Grief and Loss",
+    "correctAnswer": "B",
+    "explanation": "Placing infants on their back to sleep is the single most effective recommendation to reduce the risk of Sudden Infant Death Syndrome (SIDS). While other safety measures are important as the infant grows, SIDS prevention is paramount at this age. Safety gates and keeping small objects away become more critical as the infant becomes mobile.",
+    "skill": "Safety Education",
     "difficulty": 3
   },
   {
-    "id": "nclex_012",
+    "id": "nclex_242",
     "exam": "NCLEX-RN",
-    "section": "Physiological Integrity",
-    "question": "Which lab value monitors warfarin (Coumadin) therapeutic effectiveness?",
+    "section": "Health Promotion and Maintenance",
+    "question": "A nurse is assessing the nutritional status of an older adult. Which finding is MOST indicative of a potential risk for malnutrition?",
     "options": [
       {
         "label": "A",
-        "text": "INR"
+        "text": "A recent unintentional weight gain of 5 pounds."
       },
       {
         "label": "B",
-        "text": "aPTT"
+        "text": "Report of decreased appetite and early satiety."
       },
       {
         "label": "C",
-        "text": "PT only"
+        "text": "Taking a daily multivitamin supplement."
       },
       {
         "label": "D",
-        "text": "Platelet count"
+        "text": "Engaging in moderate physical activity three times a week."
       }
     ],
-    "correctAnswer": "A",
-    "explanation": "INR is the standardized measurement for warfarin therapy. Therapeutic range is typically 2.0-3.0. aPTT monitors heparin.",
-    "skill": "Pharmacology",
+    "correctAnswer": "B",
+    "explanation": "Decreased appetite and early satiety are common symptoms in older adults that can lead to significantly reduced food intake and are hallmarks of malnutrition risk. Unintentional weight loss (not gain), not taking supplements, and moderate activity are not direct indicators of malnutrition risk in this context.",
+    "skill": "Nutritional Assessment",
     "difficulty": 5
   },
   {
@@ -343,7 +343,7 @@
     "options": [
       {
         "label": "A",
-        "text": "Report to the nurse manager or appropriate authority"
+        "text": "Tell other coworkers to watch the suspected nurse"
       },
       {
         "label": "B",
@@ -355,41 +355,41 @@
       },
       {
         "label": "D",
-        "text": "Tell other coworkers to watch the suspected nurse"
+        "text": "Report to the nurse manager or appropriate authority"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "Nurses have a legal and ethical obligation to report suspected drug diversion.",
     "skill": "Legal and Ethical",
     "difficulty": 5
   },
   {
-    "id": "nclex_014",
+    "id": "nclex_281",
     "exam": "NCLEX-RN",
-    "section": "Physiological Integrity",
-    "question": "A patient with CKD has a potassium of 6.2 mEq/L. Which ECG change should the nurse expect?",
+    "section": "Psychosocial Integrity",
+    "question": "A client diagnosed with major depressive disorder is exhibiting psychomotor retardation. The nurse observes the client sitting in a chair for long periods, moving slowly, and speaking with a monotone voice. What is the MOST appropriate nursing intervention?",
     "options": [
       {
         "label": "A",
-        "text": "Peaked T waves"
+        "text": "Encourage the client to participate in group therapy immediately."
       },
       {
         "label": "B",
-        "text": "Flattened T waves"
+        "text": "Provide opportunities for simple, successful activities."
       },
       {
         "label": "C",
-        "text": "Prolonged QT interval"
+        "text": "Engage the client in lengthy, complex conversations."
       },
       {
         "label": "D",
-        "text": "ST segment depression"
+        "text": "Increase the visual and auditory stimuli in the client's room."
       }
     ],
-    "correctAnswer": "A",
-    "explanation": "Hyperkalemia (>5.0 mEq/L) causes peaked T waves. Severe hyperkalemia can progress to widened QRS and cardiac arrest.",
-    "skill": "Renal",
-    "difficulty": 7
+    "correctAnswer": "B",
+    "explanation": "For a client with psychomotor retardation, providing opportunities for simple, successful activities helps build self-esteem and a sense of accomplishment without being overwhelming. Group therapy (A) may be too demanding initially. Complex conversations (C) can be difficult. Increased stimuli (D) could be agitating.",
+    "skill": "Intervention for Depression",
+    "difficulty": 5
   },
   {
     "id": "nclex_015",
@@ -399,7 +399,7 @@
     "options": [
       {
         "label": "A",
-        "text": "An air leak in the system"
+        "text": "The lung has re-expanded"
       },
       {
         "label": "B",
@@ -407,14 +407,14 @@
       },
       {
         "label": "C",
-        "text": "The lung has re-expanded"
+        "text": "An air leak in the system"
       },
       {
         "label": "D",
         "text": "The chest tube is clogged"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "C",
     "explanation": "Continuous bubbling indicates an air leak. Intermittent bubbling with respiration is normal.",
     "skill": "Respiratory",
     "difficulty": 7
@@ -427,7 +427,7 @@
     "options": [
       {
         "label": "A",
-        "text": "Limit sodium to less than 2,300 mg per day"
+        "text": "Consume high-fat dairy products"
       },
       {
         "label": "B",
@@ -439,10 +439,10 @@
       },
       {
         "label": "D",
-        "text": "Consume high-fat dairy products"
+        "text": "Limit sodium to less than 2,300 mg per day"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "The DASH diet recommends limiting sodium to <2,300 mg/day to help reduce blood pressure.",
     "skill": "Nutrition",
     "difficulty": 3
@@ -455,7 +455,7 @@
     "options": [
       {
         "label": "A",
-        "text": "Perform a bladder scan"
+        "text": "Wait another 4 hours"
       },
       {
         "label": "B",
@@ -467,10 +467,10 @@
       },
       {
         "label": "D",
-        "text": "Wait another 4 hours"
+        "text": "Perform a bladder scan"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "A bladder scan is non-invasive and assesses urinary retention before resorting to catheterization.",
     "skill": "Genitourinary",
     "difficulty": 5
@@ -483,7 +483,7 @@
     "options": [
       {
         "label": "A",
-        "text": "Questioning a medication order that seems inappropriate"
+        "text": "Attending a staff meeting"
       },
       {
         "label": "B",
@@ -491,14 +491,14 @@
       },
       {
         "label": "C",
-        "text": "Attending a staff meeting"
+        "text": "Questioning a medication order that seems inappropriate"
       },
       {
         "label": "D",
         "text": "Following orders without question"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "C",
     "explanation": "Patient advocacy involves speaking up on behalf of the patient, including questioning potentially harmful orders.",
     "skill": "Professional Practice",
     "difficulty": 3
@@ -511,7 +511,7 @@
     "options": [
       {
         "label": "A",
-        "text": "Upright sitting on the edge of the bed"
+        "text": "Trendelenburg position"
       },
       {
         "label": "B",
@@ -523,10 +523,10 @@
       },
       {
         "label": "D",
-        "text": "Trendelenburg position"
+        "text": "Upright sitting on the edge of the bed"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "For paracentesis, the patient sits upright to allow fluid to collect in the lower abdomen.",
     "skill": "Gastrointestinal",
     "difficulty": 7
@@ -539,7 +539,7 @@
     "options": [
       {
         "label": "A",
-        "text": "'I understand you believe that is real. I don't see evidence of a chip, but I'd like to understand how you're feeling.'"
+        "text": "'You should stop thinking about that.'"
       },
       {
         "label": "B",
@@ -551,40 +551,40 @@
       },
       {
         "label": "D",
-        "text": "'You should stop thinking about that.'"
+        "text": "'I understand you believe that is real. I don't see evidence of a chip, but I'd like to understand how you're feeling.'"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "Acknowledge the patient's experience without reinforcing the delusion, then redirect to feelings.",
     "skill": "Therapeutic Communication",
     "difficulty": 7
   },
   {
-    "id": "nclex_021",
+    "id": "nclex_203",
     "exam": "NCLEX-RN",
-    "section": "Physiological Integrity",
-    "question": "A patient is receiving heparin IV. Which lab value should the nurse monitor?",
+    "section": "Safe and Effective Care",
+    "question": "A nurse is educating a client about preventing falls. Which instruction is MOST important for the nurse to emphasize?",
     "options": [
       {
         "label": "A",
-        "text": "aPTT"
+        "text": "Wear non-slip footwear indoors."
       },
       {
         "label": "B",
-        "text": "INR"
+        "text": "Keep frequently used items within reach."
       },
       {
         "label": "C",
-        "text": "Hemoglobin"
+        "text": "Use assistive devices as prescribed."
       },
       {
         "label": "D",
-        "text": "BUN"
+        "text": "Ensure adequate lighting in the home."
       }
     ],
-    "correctAnswer": "A",
-    "explanation": "aPTT (activated partial thromboplastin time) is the standard lab test for monitoring heparin therapy. Therapeutic range is 1.5-2.5 times the control value.",
-    "skill": "Pharmacology",
+    "correctAnswer": "C",
+    "explanation": "While all options contribute to fall prevention, the use of prescribed assistive devices (e.g., walkers, canes) is often crucial for individuals with mobility issues or balance deficits. This directly addresses a primary risk factor for falls. Non-slip footwear, keeping items within reach, and good lighting are also important but may not be as critical as appropriate use of mobility aids for at-risk individuals.",
+    "skill": "Patient Education",
     "difficulty": 5
   },
   {
@@ -595,7 +595,7 @@
     "options": [
       {
         "label": "A",
-        "text": "1-2 L/min via nasal cannula"
+        "text": "100% oxygen via ventilator"
       },
       {
         "label": "B",
@@ -607,10 +607,10 @@
       },
       {
         "label": "D",
-        "text": "100% oxygen via ventilator"
+        "text": "1-2 L/min via nasal cannula"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "COPD patients rely on hypoxic drive for respiration. High-flow oxygen can suppress this drive, so 1-2 L/min is appropriate to maintain SpO2 88-92%.",
     "skill": "Respiratory",
     "difficulty": 5
@@ -623,7 +623,7 @@
     "options": [
       {
         "label": "A",
-        "text": "Checking the medication against the MAR three times"
+        "text": "Giving medications 2 hours after scheduled time"
       },
       {
         "label": "B",
@@ -635,68 +635,68 @@
       },
       {
         "label": "D",
-        "text": "Giving medications 2 hours after scheduled time"
+        "text": "Checking the medication against the MAR three times"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "The three-check system (when removing from drawer, preparing, and at bedside) is a fundamental medication safety practice.",
     "skill": "Medication Administration",
     "difficulty": 3
   },
   {
-    "id": "nclex_024",
+    "id": "nclex_201",
     "exam": "NCLEX-RN",
-    "section": "Physiological Integrity",
-    "question": "A patient is diagnosed with Addison's disease. Which clinical finding does the nurse expect?",
+    "section": "Safe and Effective Care",
+    "question": "A nurse is preparing to administer an intramuscular injection to an adult client. Which needle length would be most appropriate for administering medication into the deltoid muscle?",
     "options": [
       {
         "label": "A",
-        "text": "Hyperpigmentation of the skin"
+        "text": "1/2 inch"
       },
       {
         "label": "B",
-        "text": "Moon face and buffalo hump"
+        "text": "1 inch"
       },
       {
         "label": "C",
-        "text": "Hypertension"
+        "text": "1.5 inches"
       },
       {
         "label": "D",
-        "text": "Weight gain"
+        "text": "2 inches"
       }
     ],
-    "correctAnswer": "A",
-    "explanation": "Addison's disease (adrenal insufficiency) causes hyperpigmentation due to excess ACTH stimulating melanocytes, along with hypotension and weight loss.",
-    "skill": "Endocrine",
+    "correctAnswer": "C",
+    "explanation": "For IM injections into the deltoid muscle of an adult, a 1.5-inch needle is generally recommended to ensure the medication reaches the muscle tissue, considering adipose tissue. Shorter needles may not reach the muscle, and longer needles may be unnecessarily long and cause injury.",
+    "skill": "Medication Administration",
     "difficulty": 5
   },
   {
-    "id": "nclex_025",
+    "id": "nclex_208",
     "exam": "NCLEX-RN",
-    "section": "Physiological Integrity",
-    "question": "A patient with myocardial infarction is prescribed morphine. Which effect is the nurse monitoring for as a priority?",
+    "section": "Safe and Effective Care",
+    "question": "A nurse is performing a sterile dressing change for a client's surgical wound. Which action demonstrates correct sterile technique?",
     "options": [
       {
         "label": "A",
-        "text": "Respiratory depression"
+        "text": "Turning one's back to the sterile field"
       },
       {
         "label": "B",
-        "text": "Nausea"
+        "text": "Reaching over the sterile field with a clean ungloved hand"
       },
       {
         "label": "C",
-        "text": "Constipation"
+        "text": "Opening sterile packages away from the body"
       },
       {
         "label": "D",
-        "text": "Drowsiness"
+        "text": "Allowing sterile supplies to touch non-sterile surfaces"
       }
     ],
-    "correctAnswer": "A",
-    "explanation": "Respiratory depression is the most dangerous side effect of morphine and requires priority monitoring. Naloxone should be readily available.",
-    "skill": "Pharmacology",
+    "correctAnswer": "C",
+    "explanation": "Opening sterile packages away from the body prevents contamination of the sterile contents by the nurse's clothing or body. Turning one's back, reaching over the field with a non-sterile item, and allowing contact with non-sterile surfaces all contaminate the sterile field.",
+    "skill": "Infection Control",
     "difficulty": 5
   },
   {
@@ -707,7 +707,7 @@
     "options": [
       {
         "label": "A",
-        "text": "Kussmaul respirations (deep, rapid breathing)"
+        "text": "Decreased urine output"
       },
       {
         "label": "B",
@@ -715,14 +715,14 @@
       },
       {
         "label": "C",
-        "text": "Decreased urine output"
+        "text": "Kussmaul respirations (deep, rapid breathing)"
       },
       {
         "label": "D",
         "text": "Increased bicarbonate retention"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "C",
     "explanation": "The lungs compensate for metabolic acidosis by increasing respiratory rate and depth (Kussmaul breathing) to blow off excess CO2.",
     "skill": "Acid-Base Balance",
     "difficulty": 7
@@ -735,11 +735,11 @@
     "options": [
       {
         "label": "A",
-        "text": "Patient with active tuberculosis"
+        "text": "Patient with MRSA wound infection"
       },
       {
         "label": "B",
-        "text": "Patient with MRSA wound infection"
+        "text": "Patient with active tuberculosis"
       },
       {
         "label": "C",
@@ -750,7 +750,7 @@
         "text": "Patient with RSV"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "B",
     "explanation": "Tuberculosis requires airborne precautions (negative pressure room, N95 respirator) because TB bacilli can remain suspended in air.",
     "skill": "Infection Control",
     "difficulty": 5
@@ -791,11 +791,11 @@
     "options": [
       {
         "label": "A",
-        "text": "Remain with the patient for 30-60 minutes after meals"
+        "text": "Allow the patient to eat alone for privacy"
       },
       {
         "label": "B",
-        "text": "Allow the patient to eat alone for privacy"
+        "text": "Remain with the patient for 30-60 minutes after meals"
       },
       {
         "label": "C",
@@ -806,7 +806,7 @@
         "text": "Praise the patient for eating small amounts"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "B",
     "explanation": "Remaining with the patient after meals prevents purging behaviors. Supervision during and after meals is a standard intervention for anorexia nervosa.",
     "skill": "Eating Disorders",
     "difficulty": 5
@@ -903,7 +903,7 @@
     "options": [
       {
         "label": "A",
-        "text": "Side-lying with knees flexed to the chest"
+        "text": "High Fowler's position"
       },
       {
         "label": "B",
@@ -911,14 +911,14 @@
       },
       {
         "label": "C",
-        "text": "High Fowler's position"
+        "text": "Side-lying with knees flexed to the chest"
       },
       {
         "label": "D",
         "text": "Prone position"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "C",
     "explanation": "The fetal position (side-lying with knees flexed) reduces tension on the abdomen and decreases pancreatic pressure, providing pain relief.",
     "skill": "Gastrointestinal",
     "difficulty": 5
@@ -931,11 +931,11 @@
     "options": [
       {
         "label": "A",
-        "text": "Apply sunscreen with SPF 30 or higher 15 minutes before sun exposure"
+        "text": "Wear sunscreen only on sunny days"
       },
       {
         "label": "B",
-        "text": "Wear sunscreen only on sunny days"
+        "text": "Apply sunscreen with SPF 30 or higher 15 minutes before sun exposure"
       },
       {
         "label": "C",
@@ -946,7 +946,7 @@
         "text": "Apply sunscreen once daily for all-day protection"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "B",
     "explanation": "SPF 30+ applied 15 minutes before exposure and reapplied every 2 hours provides effective UV protection. Tanning beds increase melanoma risk.",
     "skill": "Cancer Prevention",
     "difficulty": 3
@@ -959,11 +959,11 @@
     "options": [
       {
         "label": "A",
-        "text": "Inadequate fluid resuscitation"
+        "text": "Normal response to burn injury"
       },
       {
         "label": "B",
-        "text": "Normal response to burn injury"
+        "text": "Inadequate fluid resuscitation"
       },
       {
         "label": "C",
@@ -974,7 +974,7 @@
         "text": "Renal calculi obstruction"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "B",
     "explanation": "Adequate urine output for burn patients should be 0.5-1 mL/kg/hr. 15 mL/hr indicates hypovolemia and inadequate fluid resuscitation.",
     "skill": "Burns",
     "difficulty": 7
@@ -987,11 +987,11 @@
     "options": [
       {
         "label": "A",
-        "text": "Cushing's triad: hypertension, bradycardia, irregular respirations"
+        "text": "Hypotension, tachycardia, diaphoresis"
       },
       {
         "label": "B",
-        "text": "Hypotension, tachycardia, diaphoresis"
+        "text": "Cushing's triad: hypertension, bradycardia, irregular respirations"
       },
       {
         "label": "C",
@@ -1002,7 +1002,7 @@
         "text": "Tachycardia, narrow pulse pressure, confusion"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "B",
     "explanation": "Cushing's triad is a late sign of increased ICP. The body compensates with hypertension to maintain cerebral perfusion, with reflex bradycardia.",
     "skill": "Neurological",
     "difficulty": 7
@@ -1015,7 +1015,7 @@
     "options": [
       {
         "label": "A",
-        "text": "Rescue patients in immediate danger (R-A-C-E)"
+        "text": "Extinguish the fire with a fire extinguisher"
       },
       {
         "label": "B",
@@ -1027,10 +1027,10 @@
       },
       {
         "label": "D",
-        "text": "Extinguish the fire with a fire extinguisher"
+        "text": "Rescue patients in immediate danger (R-A-C-E)"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "RACE: Rescue patients first, then Activate the alarm, Contain the fire, and Extinguish or Evacuate.",
     "skill": "Emergency Response",
     "difficulty": 3
@@ -1043,7 +1043,7 @@
     "options": [
       {
         "label": "A",
-        "text": "60 beats per minute"
+        "text": "80 beats per minute"
       },
       {
         "label": "B",
@@ -1051,14 +1051,14 @@
       },
       {
         "label": "C",
-        "text": "80 beats per minute"
+        "text": "60 beats per minute"
       },
       {
         "label": "D",
         "text": "100 beats per minute"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "C",
     "explanation": "Digoxin slows the heart rate. If the apical pulse is below 60 bpm, hold the medication and notify the provider to prevent toxicity-related bradycardia.",
     "skill": "Pharmacology",
     "difficulty": 5
@@ -1071,11 +1071,11 @@
     "options": [
       {
         "label": "A",
-        "text": "Neutropenic precautions including no fresh flowers or raw foods"
+        "text": "Standard precautions only"
       },
       {
         "label": "B",
-        "text": "Standard precautions only"
+        "text": "Neutropenic precautions including no fresh flowers or raw foods"
       },
       {
         "label": "C",
@@ -1086,7 +1086,7 @@
         "text": "No special precautions needed"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "B",
     "explanation": "An ANC below 500 indicates severe neutropenia. The patient is at extreme risk for infection, requiring neutropenic precautions.",
     "skill": "Oncology",
     "difficulty": 7
@@ -1099,7 +1099,7 @@
     "options": [
       {
         "label": "A",
-        "text": "Stop the epidural infusion and notify the anesthesiologist immediately"
+        "text": "Increase the epidural rate for better pain control"
       },
       {
         "label": "B",
@@ -1111,10 +1111,10 @@
       },
       {
         "label": "D",
-        "text": "Increase the epidural rate for better pain control"
+        "text": "Stop the epidural infusion and notify the anesthesiologist immediately"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "Sudden bilateral leg paralysis with an epidural may indicate epidural hematoma or migration of the catheter, requiring emergency evaluation.",
     "skill": "Pain Management",
     "difficulty": 7
@@ -1127,7 +1127,7 @@
     "options": [
       {
         "label": "A",
-        "text": "'What would your life look like if you successfully quit smoking?'"
+        "text": "'Most people who smoke develop lung cancer.'"
       },
       {
         "label": "B",
@@ -1139,10 +1139,10 @@
       },
       {
         "label": "D",
-        "text": "'Most people who smoke develop lung cancer.'"
+        "text": "'What would your life look like if you successfully quit smoking?'"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "Motivational interviewing uses open-ended questions that help patients explore their own motivations for change rather than being told what to do.",
     "skill": "Health Promotion",
     "difficulty": 5
@@ -1211,11 +1211,11 @@
     "options": [
       {
         "label": "A",
-        "text": "82-year-old taking diuretics and sedatives who uses a walker"
+        "text": "45-year-old admitted for elective knee surgery"
       },
       {
         "label": "B",
-        "text": "45-year-old admitted for elective knee surgery"
+        "text": "82-year-old taking diuretics and sedatives who uses a walker"
       },
       {
         "label": "C",
@@ -1226,7 +1226,7 @@
         "text": "55-year-old with controlled hypertension"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "B",
     "explanation": "Advanced age, polypharmacy (especially diuretics and sedatives), and mobility aids are all significant fall risk factors.",
     "skill": "Patient Safety",
     "difficulty": 3
@@ -1239,7 +1239,7 @@
     "options": [
       {
         "label": "A",
-        "text": "Multiple factors (II, VII, IX, X) due to impaired hepatic synthesis"
+        "text": "Factor XIII deficiency"
       },
       {
         "label": "B",
@@ -1247,14 +1247,14 @@
       },
       {
         "label": "C",
-        "text": "Factor XIII deficiency"
+        "text": "Multiple factors (II, VII, IX, X) due to impaired hepatic synthesis"
       },
       {
         "label": "D",
         "text": "von Willebrand factor deficiency"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "C",
     "explanation": "The liver synthesizes most clotting factors. Liver disease impairs production of vitamin K-dependent factors (II, VII, IX, X) and other proteins.",
     "skill": "Hematology",
     "difficulty": 7
@@ -1267,7 +1267,7 @@
     "options": [
       {
         "label": "A",
-        "text": "Central cyanosis persisting beyond 10 minutes after birth"
+        "text": "Respiratory rate of 42 breaths per minute"
       },
       {
         "label": "B",
@@ -1275,14 +1275,14 @@
       },
       {
         "label": "C",
-        "text": "Respiratory rate of 42 breaths per minute"
+        "text": "Central cyanosis persisting beyond 10 minutes after birth"
       },
       {
         "label": "D",
         "text": "Heart rate of 140 bpm"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "C",
     "explanation": "Central cyanosis after 10 minutes indicates inadequate oxygenation and requires immediate assessment. Acrocyanosis is normal for 24-48 hours.",
     "skill": "Maternal-Newborn",
     "difficulty": 5
@@ -1295,11 +1295,11 @@
     "options": [
       {
         "label": "A",
-        "text": "Restrict protein intake"
+        "text": "Increase sodium intake"
       },
       {
         "label": "B",
-        "text": "Increase sodium intake"
+        "text": "Restrict protein intake"
       },
       {
         "label": "C",
@@ -1310,7 +1310,7 @@
         "text": "Restrict fluid to 500 mL/day"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "B",
     "explanation": "In AKI, protein restriction reduces the buildup of nitrogenous waste products (BUN). Potassium and sodium should also be restricted.",
     "skill": "Renal",
     "difficulty": 5
@@ -1323,7 +1323,7 @@
     "options": [
       {
         "label": "A",
-        "text": "Infiltration"
+        "text": "Thrombosis"
       },
       {
         "label": "B",
@@ -1331,14 +1331,14 @@
       },
       {
         "label": "C",
-        "text": "Thrombosis"
+        "text": "Infiltration"
       },
       {
         "label": "D",
         "text": "Extravasation"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "C",
     "explanation": "Infiltration is characterized by swelling, pallor, and coolness at the IV site as the non-vesicant solution leaks into surrounding tissue. Extravasation involves vesicant solutions.",
     "skill": "IV Therapy",
     "difficulty": 5
@@ -1351,7 +1351,7 @@
     "options": [
       {
         "label": "A",
-        "text": "Lying down within 2-3 hours after meals"
+        "text": "Drinking water"
       },
       {
         "label": "B",
@@ -1359,14 +1359,14 @@
       },
       {
         "label": "C",
-        "text": "Drinking water"
+        "text": "Lying down within 2-3 hours after meals"
       },
       {
         "label": "D",
         "text": "Sitting in a recliner with head elevated"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "C",
     "explanation": "Lying flat after eating increases gastric reflux. Patients should remain upright for 2-3 hours after meals and elevate the head of bed 30 degrees.",
     "skill": "Gastrointestinal",
     "difficulty": 3
@@ -1379,7 +1379,7 @@
     "options": [
       {
         "label": "A",
-        "text": "Involuntary flexion of the hips and knees when the neck is flexed"
+        "text": "Stiff neck with resistance to passive flexion"
       },
       {
         "label": "B",
@@ -1391,10 +1391,10 @@
       },
       {
         "label": "D",
-        "text": "Stiff neck with resistance to passive flexion"
+        "text": "Involuntary flexion of the hips and knees when the neck is flexed"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "Brudzinski's sign: involuntary hip and knee flexion when the neck is passively flexed, indicating meningeal irritation. Kernig's sign involves inability to extend the knee.",
     "skill": "Neurological",
     "difficulty": 7
@@ -1407,11 +1407,11 @@
     "options": [
       {
         "label": "A",
-        "text": "Angioedema with swelling of the lips and tongue"
+        "text": "Persistent dry cough"
       },
       {
         "label": "B",
-        "text": "Persistent dry cough"
+        "text": "Angioedema with swelling of the lips and tongue"
       },
       {
         "label": "C",
@@ -1422,7 +1422,7 @@
         "text": "Slight increase in serum potassium"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "B",
     "explanation": "Angioedema is a rare but life-threatening side effect of ACE inhibitors that can cause airway obstruction. It requires immediate discontinuation.",
     "skill": "Pharmacology",
     "difficulty": 7
@@ -1435,11 +1435,11 @@
     "options": [
       {
         "label": "A",
-        "text": "Speaking in 2-word phrases"
+        "text": "Riding a tricycle"
       },
       {
         "label": "B",
-        "text": "Riding a tricycle"
+        "text": "Speaking in 2-word phrases"
       },
       {
         "label": "C",
@@ -1450,7 +1450,7 @@
         "text": "Writing their first name"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "B",
     "explanation": "By age 2, children should use 2-word phrases and have a vocabulary of about 50 words. Tricycle riding is a 3-year milestone.",
     "skill": "Growth and Development",
     "difficulty": 3
@@ -1491,11 +1491,11 @@
     "options": [
       {
         "label": "A",
-        "text": "'Patient states, I feel short of breath when walking to the bathroom.'"
+        "text": "'Patient is doing well.'"
       },
       {
         "label": "B",
-        "text": "'Patient is doing well.'"
+        "text": "'Patient states, I feel short of breath when walking to the bathroom.'"
       },
       {
         "label": "C",
@@ -1506,7 +1506,7 @@
         "text": "'Patient appears to be in pain.'"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "B",
     "explanation": "Proper documentation uses objective data and direct patient quotes. Subjective terms like 'good' and 'appears' are vague and non-measurable.",
     "skill": "Documentation",
     "difficulty": 3
@@ -1519,7 +1519,7 @@
     "options": [
       {
         "label": "A",
-        "text": "Transdermal medication patches containing metal foil backing"
+        "text": "Non-metallic hearing aid"
       },
       {
         "label": "B",
@@ -1531,10 +1531,10 @@
       },
       {
         "label": "D",
-        "text": "Non-metallic hearing aid"
+        "text": "Transdermal medication patches containing metal foil backing"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "Many transdermal patches have metallic foil backing that can cause burns during MRI. All metal objects must be removed.",
     "skill": "Diagnostic Procedures",
     "difficulty": 5
@@ -1547,7 +1547,7 @@
     "options": [
       {
         "label": "A",
-        "text": "Restrict fluid intake"
+        "text": "Increase dietary sodium intake"
       },
       {
         "label": "B",
@@ -1555,14 +1555,14 @@
       },
       {
         "label": "C",
-        "text": "Increase dietary sodium intake"
+        "text": "Restrict fluid intake"
       },
       {
         "label": "D",
         "text": "Administer furosemide"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "C",
     "explanation": "SIADH causes dilutional hyponatremia from excess water retention. Fluid restriction is the primary treatment. Rapid correction of sodium can cause osmotic demyelination.",
     "skill": "Endocrine",
     "difficulty": 7
@@ -1603,7 +1603,7 @@
     "options": [
       {
         "label": "A",
-        "text": "Gradually reduce the time allowed for rituals while providing anxiety management strategies"
+        "text": "Ignore the behavior completely"
       },
       {
         "label": "B",
@@ -1611,14 +1611,14 @@
       },
       {
         "label": "C",
-        "text": "Ignore the behavior completely"
+        "text": "Gradually reduce the time allowed for rituals while providing anxiety management strategies"
       },
       {
         "label": "D",
         "text": "Allow unlimited time for rituals"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "C",
     "explanation": "Gradual exposure with response prevention is the evidence-based approach. Abruptly stopping rituals increases anxiety; unlimited rituals reinforce the behavior.",
     "skill": "Mental Health",
     "difficulty": 5
@@ -1715,7 +1715,7 @@
     "options": [
       {
         "label": "A",
-        "text": "Massaging the affected leg"
+        "text": "Applying warm, moist compresses"
       },
       {
         "label": "B",
@@ -1727,10 +1727,10 @@
       },
       {
         "label": "D",
-        "text": "Applying warm, moist compresses"
+        "text": "Massaging the affected leg"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "Massaging a leg with DVT can dislodge the clot, causing a potentially fatal pulmonary embolism. The leg should be elevated and anticoagulants administered.",
     "skill": "Cardiovascular",
     "difficulty": 5
@@ -1743,7 +1743,7 @@
     "options": [
       {
         "label": "A",
-        "text": "Take with meals to reduce GI side effects"
+        "text": "It can be taken with alcohol without concerns"
       },
       {
         "label": "B",
@@ -1755,10 +1755,10 @@
       },
       {
         "label": "D",
-        "text": "It can be taken with alcohol without concerns"
+        "text": "Take with meals to reduce GI side effects"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "Metformin should be taken with meals to reduce GI side effects (nausea, diarrhea). Used alone, it rarely causes hypoglycemia. Alcohol increases lactic acidosis risk.",
     "skill": "Pharmacology",
     "difficulty": 5
@@ -1771,7 +1771,7 @@
     "options": [
       {
         "label": "A",
-        "text": "Administer racemic epinephrine via nebulizer"
+        "text": "Encourage coughing to clear secretions"
       },
       {
         "label": "B",
@@ -1783,10 +1783,10 @@
       },
       {
         "label": "D",
-        "text": "Encourage coughing to clear secretions"
+        "text": "Administer racemic epinephrine via nebulizer"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "Racemic epinephrine provides rapid relief of upper airway edema in moderate to severe croup. Cool mist and corticosteroids are also used.",
     "skill": "Pediatric",
     "difficulty": 7
@@ -1827,7 +1827,7 @@
     "options": [
       {
         "label": "A",
-        "text": "Elevated serum lipase"
+        "text": "Normal serum calcium"
       },
       {
         "label": "B",
@@ -1835,14 +1835,14 @@
       },
       {
         "label": "C",
-        "text": "Normal serum calcium"
+        "text": "Elevated serum lipase"
       },
       {
         "label": "D",
         "text": "Decreased bilirubin"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "C",
     "explanation": "Both amylase and lipase are elevated in acute pancreatitis. Lipase is more specific and remains elevated longer. Hypocalcemia may also occur.",
     "skill": "Gastrointestinal",
     "difficulty": 5
@@ -1855,7 +1855,7 @@
     "options": [
       {
         "label": "A",
-        "text": "Lactulose"
+        "text": "Morphine"
       },
       {
         "label": "B",
@@ -1863,14 +1863,14 @@
       },
       {
         "label": "C",
-        "text": "Morphine"
+        "text": "Lactulose"
       },
       {
         "label": "D",
         "text": "Metoclopramide"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "C",
     "explanation": "Lactulose decreases ammonia levels by converting ammonia to ammonium in the colon, which is then excreted in stool. This is the primary treatment for hepatic encephalopathy.",
     "skill": "Gastrointestinal",
     "difficulty": 5
@@ -1967,7 +1967,7 @@
     "options": [
       {
         "label": "A",
-        "text": "Pain disproportionate to the injury that worsens with passive stretching"
+        "text": "Cyanosis of the affected limb"
       },
       {
         "label": "B",
@@ -1979,10 +1979,10 @@
       },
       {
         "label": "D",
-        "text": "Cyanosis of the affected limb"
+        "text": "Pain disproportionate to the injury that worsens with passive stretching"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "Pain out of proportion, especially with passive stretching, is the earliest sign of compartment syndrome. Absent pulses and paralysis are late, ominous signs.",
     "skill": "Musculoskeletal",
     "difficulty": 7
@@ -2051,11 +2051,11 @@
     "options": [
       {
         "label": "A",
-        "text": "Stop the transfusion, administer antihistamine as ordered, and assess further"
+        "text": "Continue the transfusion and monitor"
       },
       {
         "label": "B",
-        "text": "Continue the transfusion and monitor"
+        "text": "Stop the transfusion, administer antihistamine as ordered, and assess further"
       },
       {
         "label": "C",
@@ -2066,7 +2066,7 @@
         "text": "Immediately notify the blood bank of a hemolytic reaction"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "B",
     "explanation": "Urticaria alone is typically a mild allergic reaction. Stop the transfusion, give antihistamine, and if symptoms resolve, the transfusion may be resumed per protocol.",
     "skill": "Blood Transfusion",
     "difficulty": 5
@@ -2079,7 +2079,7 @@
     "options": [
       {
         "label": "A",
-        "text": "Discussing a patient's diagnosis in the hospital elevator with a colleague"
+        "text": "Providing lab results to the patient at their request"
       },
       {
         "label": "B",
@@ -2091,10 +2091,10 @@
       },
       {
         "label": "D",
-        "text": "Providing lab results to the patient at their request"
+        "text": "Discussing a patient's diagnosis in the hospital elevator with a colleague"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "Discussing patient information in public areas (elevators, cafeteria, hallways) violates patient privacy under HIPAA regulations.",
     "skill": "Confidentiality",
     "difficulty": 3
@@ -2135,11 +2135,11 @@
     "options": [
       {
         "label": "A",
-        "text": "Begin CPR and prepare for defibrillation"
+        "text": "Administer atropine"
       },
       {
         "label": "B",
-        "text": "Administer atropine"
+        "text": "Begin CPR and prepare for defibrillation"
       },
       {
         "label": "C",
@@ -2150,7 +2150,7 @@
         "text": "Administer amiodarone first"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "B",
     "explanation": "V-fib is a lethal rhythm requiring immediate CPR and defibrillation. Early defibrillation is the most important intervention for survival.",
     "skill": "Cardiovascular",
     "difficulty": 7
@@ -2163,7 +2163,7 @@
     "options": [
       {
         "label": "A",
-        "text": "Press on the inner canthus for 1-2 minutes after instillation to prevent systemic absorption"
+        "text": "Use the drops only when eye pain occurs"
       },
       {
         "label": "B",
@@ -2171,14 +2171,14 @@
       },
       {
         "label": "C",
-        "text": "Use the drops only when eye pain occurs"
+        "text": "Press on the inner canthus for 1-2 minutes after instillation to prevent systemic absorption"
       },
       {
         "label": "D",
         "text": "Expect temporary vision improvement immediately"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "C",
     "explanation": "Nasolacrimal occlusion (pressing inner canthus) prevents systemic absorption of timolol, which is a beta-blocker and can cause bradycardia and hypotension.",
     "skill": "Pharmacology",
     "difficulty": 5
@@ -2191,7 +2191,7 @@
     "options": [
       {
         "label": "A",
-        "text": "Positive Trousseau's sign (carpopedal spasm with BP cuff inflation)"
+        "text": "Constipation"
       },
       {
         "label": "B",
@@ -2203,10 +2203,10 @@
       },
       {
         "label": "D",
-        "text": "Constipation"
+        "text": "Positive Trousseau's sign (carpopedal spasm with BP cuff inflation)"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "Hypocalcemia causes neuromuscular irritability. Trousseau's sign (carpal spasm when BP cuff inflated) and Chvostek's sign (facial twitching when tapped) are classic indicators.",
     "skill": "Endocrine",
     "difficulty": 7
@@ -2219,7 +2219,7 @@
     "options": [
       {
         "label": "A",
-        "text": "To inhibit platelet aggregation and prevent clot extension"
+        "text": "To lower blood pressure"
       },
       {
         "label": "B",
@@ -2227,45 +2227,45 @@
       },
       {
         "label": "C",
-        "text": "To lower blood pressure"
+        "text": "To inhibit platelet aggregation and prevent clot extension"
       },
       {
         "label": "D",
         "text": "To reduce inflammation of the pericardium"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "C",
     "explanation": "Aspirin's antiplatelet effect inhibits thromboxane A2, preventing further platelet aggregation and clot formation during MI.",
     "skill": "Cardiovascular",
     "difficulty": 5
   },
   {
-    "id": "nclex_081",
+    "id": "nclex_004",
     "exam": "NCLEX-RN",
-    "section": "Physiological Integrity",
-    "question": "A patient receiving IV potassium chloride reports burning at the IV site. What should the nurse do first?",
+    "section": "Psychosocial Integrity",
+    "question": "A patient tells the nurse, 'I don't want to live anymore.' What is the nurse's priority response?",
     "options": [
       {
         "label": "A",
-        "text": "Slow the infusion rate and assess the IV site"
+        "text": "Ask the patient if they have a plan to harm themselves"
       },
       {
         "label": "B",
-        "text": "Discontinue the IV immediately"
+        "text": "Tell the patient everything will be okay"
       },
       {
         "label": "C",
-        "text": "Apply ice to the site"
+        "text": "Leave the patient alone and notify the provider"
       },
       {
         "label": "D",
-        "text": "Administer a bolus of normal saline"
+        "text": "Change the subject to distract the patient"
       }
     ],
     "correctAnswer": "A",
-    "explanation": "Burning is common with IV potassium. First reduce the rate and assess the site for infiltration. If the site is intact, reducing the rate often resolves the discomfort.",
-    "skill": "IV Therapy",
-    "difficulty": 5
+    "explanation": "When a patient expresses suicidal ideation, the priority is to assess for a specific plan and means to determine risk level.",
+    "skill": "Crisis Intervention",
+    "difficulty": 7
   },
   {
     "id": "nclex_082",
@@ -2275,7 +2275,7 @@
     "options": [
       {
         "label": "A",
-        "text": "Mammography"
+        "text": "Pap smear"
       },
       {
         "label": "B",
@@ -2287,10 +2287,10 @@
       },
       {
         "label": "D",
-        "text": "Pap smear"
+        "text": "Mammography"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "Mammography screening is recommended annually or biennially starting at age 40 (varies by guideline) for breast cancer detection.",
     "skill": "Cancer Screening",
     "difficulty": 3
@@ -2303,11 +2303,11 @@
     "options": [
       {
         "label": "A",
-        "text": "Increase fluid intake to 2-3 liters per day unless contraindicated"
+        "text": "Restrict fluids to thin secretions"
       },
       {
         "label": "B",
-        "text": "Restrict fluids to thin secretions"
+        "text": "Increase fluid intake to 2-3 liters per day unless contraindicated"
       },
       {
         "label": "C",
@@ -2318,7 +2318,7 @@
         "text": "Administer antitussives to suppress cough"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "B",
     "explanation": "Adequate hydration (2-3 L/day) helps liquefy thick secretions, making them easier to expectorate. Coughing should be encouraged, not suppressed.",
     "skill": "Respiratory",
     "difficulty": 5
@@ -2331,7 +2331,7 @@
     "options": [
       {
         "label": "A",
-        "text": "Practice meticulous oral hygiene as phenytoin can cause gingival hyperplasia"
+        "text": "Avoid brushing teeth as gums may bleed"
       },
       {
         "label": "B",
@@ -2339,14 +2339,14 @@
       },
       {
         "label": "C",
-        "text": "Avoid brushing teeth as gums may bleed"
+        "text": "Practice meticulous oral hygiene as phenytoin can cause gingival hyperplasia"
       },
       {
         "label": "D",
         "text": "Use alcohol-based mouthwash daily"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "C",
     "explanation": "Phenytoin causes gingival hyperplasia in up to 50% of patients. Meticulous oral hygiene and regular dental visits help minimize this side effect.",
     "skill": "Pharmacology",
     "difficulty": 5
@@ -2359,7 +2359,7 @@
     "options": [
       {
         "label": "A",
-        "text": "Tube placement by checking pH of aspirate and tube marking at naris"
+        "text": "The tube was placed within the last year"
       },
       {
         "label": "B",
@@ -2371,10 +2371,10 @@
       },
       {
         "label": "D",
-        "text": "The tube was placed within the last year"
+        "text": "Tube placement by checking pH of aspirate and tube marking at naris"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "Always verify NG tube placement before medication administration by checking aspirate pH (<5.5 suggests gastric) and tube marking position.",
     "skill": "Medication Administration",
     "difficulty": 5
@@ -2387,11 +2387,11 @@
     "options": [
       {
         "label": "A",
-        "text": "Quadriplegia with potential respiratory compromise"
+        "text": "Paraplegia with intact upper extremity function"
       },
       {
         "label": "B",
-        "text": "Paraplegia with intact upper extremity function"
+        "text": "Quadriplegia with potential respiratory compromise"
       },
       {
         "label": "C",
@@ -2402,7 +2402,7 @@
         "text": "Unilateral weakness of one arm"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "B",
     "explanation": "C4 injury affects all four extremities (quadriplegia) and may compromise the diaphragm (innervated by C3-C5), potentially requiring mechanical ventilation.",
     "skill": "Neurological",
     "difficulty": 7
@@ -2415,7 +2415,7 @@
     "options": [
       {
         "label": "A",
-        "text": "Acute chest syndrome"
+        "text": "Pulmonary embolism"
       },
       {
         "label": "B",
@@ -2423,14 +2423,14 @@
       },
       {
         "label": "C",
-        "text": "Pulmonary embolism"
+        "text": "Acute chest syndrome"
       },
       {
         "label": "D",
         "text": "Myocardial infarction"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "C",
     "explanation": "Acute chest syndrome in sickle cell disease presents with chest pain, fever, and new pulmonary infiltrate. It's a leading cause of death in SCD and requires urgent treatment.",
     "skill": "Hematology",
     "difficulty": 7
@@ -2471,11 +2471,11 @@
     "options": [
       {
         "label": "A",
-        "text": "Albuterol, because bronchodilation allows better penetration of the corticosteroid"
+        "text": "Fluticasone, because it reduces inflammation first"
       },
       {
         "label": "B",
-        "text": "Fluticasone, because it reduces inflammation first"
+        "text": "Albuterol, because bronchodilation allows better penetration of the corticosteroid"
       },
       {
         "label": "C",
@@ -2486,7 +2486,7 @@
         "text": "Both should be administered simultaneously"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "B",
     "explanation": "Bronchodilators (albuterol) should be used first to open airways, allowing the corticosteroid (fluticasone) to reach deeper into the lungs for maximum effect.",
     "skill": "Pharmacology",
     "difficulty": 5
@@ -2499,7 +2499,7 @@
     "options": [
       {
         "label": "A",
-        "text": "Hepatic encephalopathy from elevated ammonia levels"
+        "text": "Hepatorenal syndrome"
       },
       {
         "label": "B",
@@ -2507,14 +2507,14 @@
       },
       {
         "label": "C",
-        "text": "Hepatorenal syndrome"
+        "text": "Hepatic encephalopathy from elevated ammonia levels"
       },
       {
         "label": "D",
         "text": "Spontaneous bacterial peritonitis"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "C",
     "explanation": "Asterixis (involuntary flapping of the hands when wrists are dorsiflexed) is a classic sign of hepatic encephalopathy caused by elevated serum ammonia.",
     "skill": "Gastrointestinal",
     "difficulty": 7
@@ -2527,7 +2527,7 @@
     "options": [
       {
         "label": "A",
-        "text": "Gown, mask/respirator, goggles, gloves"
+        "text": "Goggles, gown, gloves, mask"
       },
       {
         "label": "B",
@@ -2539,10 +2539,10 @@
       },
       {
         "label": "D",
-        "text": "Goggles, gown, gloves, mask"
+        "text": "Gown, mask/respirator, goggles, gloves"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "PPE donning order: gown first, then mask/respirator, eye protection, and gloves last. Doffing is the reverse: gloves first, then eye protection, gown, mask.",
     "skill": "Infection Control",
     "difficulty": 5
@@ -2555,11 +2555,11 @@
     "options": [
       {
         "label": "A",
-        "text": "Temperature of 104°F, heart rate 160 bpm, agitation"
+        "text": "Hypothermia, bradycardia, lethargy"
       },
       {
         "label": "B",
-        "text": "Hypothermia, bradycardia, lethargy"
+        "text": "Temperature of 104°F, heart rate 160 bpm, agitation"
       },
       {
         "label": "C",
@@ -2570,7 +2570,7 @@
         "text": "Hypotension with cool, clammy skin"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "B",
     "explanation": "Thyroid storm is a life-threatening hyperthyroid crisis with extreme hyperthermia, tachycardia (>140), agitation, delirium, and potentially cardiovascular collapse.",
     "skill": "Endocrine",
     "difficulty": 7
@@ -2583,7 +2583,7 @@
     "options": [
       {
         "label": "A",
-        "text": "Take with a full glass of water and remain upright for at least 30 minutes"
+        "text": "Take with milk for better calcium absorption"
       },
       {
         "label": "B",
@@ -2595,10 +2595,10 @@
       },
       {
         "label": "D",
-        "text": "Take with milk for better calcium absorption"
+        "text": "Take with a full glass of water and remain upright for at least 30 minutes"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "Bisphosphonates can cause severe esophageal irritation. Take with 8 oz water on an empty stomach and remain upright for 30 minutes to prevent esophageal damage.",
     "skill": "Pharmacology",
     "difficulty": 5
@@ -2611,7 +2611,7 @@
     "options": [
       {
         "label": "A",
-        "text": "Specific gravity of 1.002 and urine output of 8-12 liters/day"
+        "text": "Fluid retention and peripheral edema"
       },
       {
         "label": "B",
@@ -2623,10 +2623,10 @@
       },
       {
         "label": "D",
-        "text": "Fluid retention and peripheral edema"
+        "text": "Specific gravity of 1.002 and urine output of 8-12 liters/day"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "Diabetes insipidus causes massive diuresis (up to 20 L/day) of very dilute urine (SG <1.005) due to insufficient ADH or renal resistance to ADH.",
     "skill": "Endocrine",
     "difficulty": 7
@@ -2667,7 +2667,7 @@
     "options": [
       {
         "label": "A",
-        "text": "Vitamin B12 deficiency due to terminal ileum inflammation"
+        "text": "Hypervitaminosis A"
       },
       {
         "label": "B",
@@ -2679,10 +2679,10 @@
       },
       {
         "label": "D",
-        "text": "Hypervitaminosis A"
+        "text": "Vitamin B12 deficiency due to terminal ileum inflammation"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "Crohn's disease commonly affects the terminal ileum where B12 is absorbed. Chronic inflammation leads to B12 malabsorption and potentially megaloblastic anemia.",
     "skill": "Gastrointestinal",
     "difficulty": 7
@@ -2695,7 +2695,7 @@
     "options": [
       {
         "label": "A",
-        "text": "The tubing is kinked or the lung has re-expanded"
+        "text": "Excessive drainage is present"
       },
       {
         "label": "B",
@@ -2707,10 +2707,10 @@
       },
       {
         "label": "D",
-        "text": "Excessive drainage is present"
+        "text": "The tubing is kinked or the lung has re-expanded"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "Absence of tidaling (fluctuation) may indicate the lung has re-expanded, the tubing is kinked/clamped, or the tube is obstructed. The nurse should assess all connections.",
     "skill": "Respiratory",
     "difficulty": 7
@@ -2723,7 +2723,7 @@
     "options": [
       {
         "label": "A",
-        "text": "Lateral recumbent with knees drawn up to the chest and chin to chest"
+        "text": "High Fowler's position"
       },
       {
         "label": "B",
@@ -2735,10 +2735,10 @@
       },
       {
         "label": "D",
-        "text": "High Fowler's position"
+        "text": "Lateral recumbent with knees drawn up to the chest and chin to chest"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "The lateral recumbent (fetal) position opens the intervertebral spaces for easier needle insertion during a lumbar puncture.",
     "skill": "Diagnostic Procedures",
     "difficulty": 5
@@ -2751,11 +2751,11 @@
     "options": [
       {
         "label": "A",
-        "text": "At least 20 seconds"
+        "text": "5 seconds"
       },
       {
         "label": "B",
-        "text": "5 seconds"
+        "text": "At least 20 seconds"
       },
       {
         "label": "C",
@@ -2766,7 +2766,7 @@
         "text": "Until the water runs clear"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "B",
     "explanation": "CDC recommends scrubbing with soap and water for at least 20 seconds to effectively remove pathogens. Alcohol-based rubs can be used when hands are not visibly soiled.",
     "skill": "Infection Control",
     "difficulty": 3
@@ -2807,7 +2807,7 @@
     "options": [
       {
         "label": "A",
-        "text": "Respiratory acidosis, uncompensated"
+        "text": "Mixed acid-base disorder"
       },
       {
         "label": "B",
@@ -2819,41 +2819,41 @@
       },
       {
         "label": "D",
-        "text": "Mixed acid-base disorder"
+        "text": "Respiratory acidosis, uncompensated"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "pH <7.35 = acidosis. PaCO2 >45 = respiratory cause. HCO3 is normal (22-26), indicating no renal compensation yet = uncompensated respiratory acidosis.",
     "skill": "Acid-Base Balance",
     "difficulty": 7
   },
   {
-    "id": "nclex_102",
+    "id": "nclex_002",
     "exam": "NCLEX-RN",
     "section": "Physiological Integrity",
-    "question": "A patient is receiving total parenteral nutrition (TPN). The current bag runs out and a new one is not yet available. What should the nurse hang?",
+    "question": "A patient with heart failure is prescribed furosemide (Lasix). Which laboratory value should the nurse monitor most closely?",
     "options": [
       {
         "label": "A",
-        "text": "D10W (10% dextrose in water) to prevent rebound hypoglycemia"
+        "text": "Sodium level"
       },
       {
         "label": "B",
-        "text": "Normal saline"
+        "text": "Potassium level"
       },
       {
         "label": "C",
-        "text": "Lactated Ringer's solution"
+        "text": "Calcium level"
       },
       {
         "label": "D",
-        "text": "Nothing; wait for the new TPN bag"
+        "text": "Magnesium level"
       }
     ],
-    "correctAnswer": "A",
-    "explanation": "Abruptly stopping TPN can cause rebound hypoglycemia due to continued insulin production. D10W provides glucose to prevent this until the new TPN arrives.",
-    "skill": "Nutrition Support",
-    "difficulty": 7
+    "correctAnswer": "B",
+    "explanation": "Furosemide is a loop diuretic that causes potassium loss. Hypokalemia can lead to dangerous cardiac arrhythmias, making potassium monitoring essential.",
+    "skill": "Pharmacology",
+    "difficulty": 5
   },
   {
     "id": "nclex_103",
@@ -2947,7 +2947,7 @@
     "options": [
       {
         "label": "A",
-        "text": "Right lower quadrant, one-third of the way from the ASIS to the umbilicus"
+        "text": "Periumbilical area"
       },
       {
         "label": "B",
@@ -2959,10 +2959,10 @@
       },
       {
         "label": "D",
-        "text": "Periumbilical area"
+        "text": "Right lower quadrant, one-third of the way from the ASIS to the umbilicus"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "McBurney's point is located in the RLQ, one-third the distance from the anterior superior iliac spine (ASIS) to the umbilicus. Tenderness here suggests appendicitis.",
     "skill": "Gastrointestinal",
     "difficulty": 5
@@ -3003,7 +3003,7 @@
     "options": [
       {
         "label": "A",
-        "text": "Follow a low-fat diet to reduce gallbladder stimulation"
+        "text": "Eliminate all carbohydrates"
       },
       {
         "label": "B",
@@ -3015,10 +3015,10 @@
       },
       {
         "label": "D",
-        "text": "Eliminate all carbohydrates"
+        "text": "Follow a low-fat diet to reduce gallbladder stimulation"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "A low-fat diet reduces gallbladder contraction and pain. High-fat foods stimulate cholecystokinin release, causing the gallbladder to contract and worsen symptoms.",
     "skill": "Gastrointestinal",
     "difficulty": 5
@@ -3031,7 +3031,7 @@
     "options": [
       {
         "label": "A",
-        "text": "Instruct the patient to rock back and forth before standing"
+        "text": "Tell the patient to take large steps"
       },
       {
         "label": "B",
@@ -3039,14 +3039,14 @@
       },
       {
         "label": "C",
-        "text": "Tell the patient to take large steps"
+        "text": "Instruct the patient to rock back and forth before standing"
       },
       {
         "label": "D",
         "text": "Have the patient walk on carpeted surfaces only"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "C",
     "explanation": "Rocking back and forth provides momentum to overcome freezing (akinesia). Marching in place, counting steps, or using visual cues on the floor also help.",
     "skill": "Neurological",
     "difficulty": 5
@@ -3059,7 +3059,7 @@
     "options": [
       {
         "label": "A",
-        "text": "Deep vein thrombosis"
+        "text": "Lymphedema"
       },
       {
         "label": "B",
@@ -3071,10 +3071,10 @@
       },
       {
         "label": "D",
-        "text": "Lymphedema"
+        "text": "Deep vein thrombosis"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "Pregnancy and postpartum are hypercoagulable states. Unilateral leg swelling, warmth, and pain are classic signs of DVT requiring immediate evaluation.",
     "skill": "Maternal-Newborn",
     "difficulty": 5
@@ -3087,11 +3087,11 @@
     "options": [
       {
         "label": "A",
-        "text": "Rigid, board-like abdomen with signs of hemorrhagic shock"
+        "text": "Mild cramping without bleeding"
       },
       {
         "label": "B",
-        "text": "Mild cramping without bleeding"
+        "text": "Rigid, board-like abdomen with signs of hemorrhagic shock"
       },
       {
         "label": "C",
@@ -3102,7 +3102,7 @@
         "text": "Low-grade fever"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "B",
     "explanation": "A rigid abdomen with shock symptoms suggests ruptured ectopic pregnancy with intra-abdominal hemorrhage — a surgical emergency requiring immediate intervention.",
     "skill": "Maternal-Newborn",
     "difficulty": 7
@@ -3115,11 +3115,11 @@
     "options": [
       {
         "label": "A",
-        "text": "Read back the complete order to the physician for verification"
+        "text": "Write it down and verify at the end of the shift"
       },
       {
         "label": "B",
-        "text": "Write it down and verify at the end of the shift"
+        "text": "Read back the complete order to the physician for verification"
       },
       {
         "label": "C",
@@ -3130,7 +3130,7 @@
         "text": "Implement the order immediately without documentation"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "B",
     "explanation": "Read-back verification of telephone orders prevents errors. The nurse should write down, read back, and receive confirmation from the ordering provider.",
     "skill": "Communication",
     "difficulty": 3
@@ -3171,7 +3171,7 @@
     "options": [
       {
         "label": "A",
-        "text": "IV lorazepam (Ativan)"
+        "text": "Rectal diazepam"
       },
       {
         "label": "B",
@@ -3183,10 +3183,10 @@
       },
       {
         "label": "D",
-        "text": "Rectal diazepam"
+        "text": "IV lorazepam (Ativan)"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "IV benzodiazepines (lorazepam or diazepam) are first-line for status epilepticus due to rapid onset. Lorazepam is preferred for longer duration of action.",
     "skill": "Neurological",
     "difficulty": 7
@@ -3199,7 +3199,7 @@
     "options": [
       {
         "label": "A",
-        "text": "Wheat bread"
+        "text": "Corn tortillas"
       },
       {
         "label": "B",
@@ -3207,14 +3207,14 @@
       },
       {
         "label": "C",
-        "text": "Corn tortillas"
+        "text": "Wheat bread"
       },
       {
         "label": "D",
         "text": "Potatoes"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "C",
     "explanation": "Celiac disease requires a lifelong gluten-free diet. Gluten is found in wheat, barley, and rye. Rice, corn, and potatoes are naturally gluten-free.",
     "skill": "Gastrointestinal",
     "difficulty": 3
@@ -3227,7 +3227,7 @@
     "options": [
       {
         "label": "A",
-        "text": "Remove the pills immediately and place the patient on one-to-one observation"
+        "text": "Notify the family to watch the patient more closely"
       },
       {
         "label": "B",
@@ -3239,10 +3239,10 @@
       },
       {
         "label": "D",
-        "text": "Notify the family to watch the patient more closely"
+        "text": "Remove the pills immediately and place the patient on one-to-one observation"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "Hoarding medication indicates a specific plan and means for suicide. Immediate safety actions (removing means, continuous observation) take priority.",
     "skill": "Crisis Intervention",
     "difficulty": 7
@@ -3339,7 +3339,7 @@
     "options": [
       {
         "label": "A",
-        "text": "Chronic air trapping leading to hyperinflation of the lungs"
+        "text": "Muscle hypertrophy from coughing"
       },
       {
         "label": "B",
@@ -3347,45 +3347,45 @@
       },
       {
         "label": "C",
-        "text": "Muscle hypertrophy from coughing"
+        "text": "Chronic air trapping leading to hyperinflation of the lungs"
       },
       {
         "label": "D",
         "text": "Cardiac enlargement"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "C",
     "explanation": "In emphysema, chronic air trapping increases residual volume, causing the lungs to hyperinflate. This increases the AP diameter of the chest, creating a barrel shape.",
     "skill": "Respiratory",
     "difficulty": 5
   },
   {
-    "id": "nclex_121",
+    "id": "nclex_001",
     "exam": "NCLEX-RN",
     "section": "Safe and Effective Care",
-    "question": "When using the SBAR communication tool, what does the 'A' stand for?",
+    "question": "A nurse is delegating tasks. Which task is most appropriate to delegate to an unlicensed assistive personnel (UAP)?",
     "options": [
       {
         "label": "A",
-        "text": "Assessment"
+        "text": "Developing a nursing care plan"
       },
       {
         "label": "B",
-        "text": "Action"
+        "text": "Assessing a newly admitted patient"
       },
       {
         "label": "C",
-        "text": "Admission"
+        "text": "Administering IV push medications"
       },
       {
         "label": "D",
-        "text": "Alert"
+        "text": "Recording vital signs on a stable postoperative patient"
       }
     ],
-    "correctAnswer": "A",
-    "explanation": "SBAR: Situation, Background, Assessment, Recommendation. It is a standardized communication framework used in healthcare to ensure clear, concise information transfer.",
-    "skill": "Communication",
-    "difficulty": 3
+    "correctAnswer": "D",
+    "explanation": "UAPs can perform routine tasks like recording vital signs on stable patients. Assessment, medication administration, and care planning require licensed nurse judgment.",
+    "skill": "Delegation",
+    "difficulty": 5
   },
   {
     "id": "nclex_122",
@@ -3395,11 +3395,11 @@
     "options": [
       {
         "label": "A",
-        "text": "Extended with the knee supported on a continuous passive motion (CPM) device or ice"
+        "text": "Flexed at 90 degrees at all times"
       },
       {
         "label": "B",
-        "text": "Flexed at 90 degrees at all times"
+        "text": "Extended with the knee supported on a continuous passive motion (CPM) device or ice"
       },
       {
         "label": "C",
@@ -3410,7 +3410,7 @@
         "text": "In a figure-of-four position"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "B",
     "explanation": "After total knee replacement, the leg should be extended and elevated. CPM devices promote range of motion, and ice reduces swelling. Avoid prolonged flexion.",
     "skill": "Musculoskeletal",
     "difficulty": 5
@@ -3479,7 +3479,7 @@
     "options": [
       {
         "label": "A",
-        "text": "Sit the patient up and identify and remove the triggering stimulus"
+        "text": "Apply a cold compress to the forehead"
       },
       {
         "label": "B",
@@ -3491,10 +3491,10 @@
       },
       {
         "label": "D",
-        "text": "Apply a cold compress to the forehead"
+        "text": "Sit the patient up and identify and remove the triggering stimulus"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "Autonomic dysreflexia is a medical emergency in spinal cord injury patients. Sitting up lowers BP, and removing the trigger (usually full bladder or impacted bowel) is essential.",
     "skill": "Neurological",
     "difficulty": 7
@@ -3535,7 +3535,7 @@
     "options": [
       {
         "label": "A",
-        "text": "Hypocalcemia from inadvertent parathyroid removal"
+        "text": "Laryngeal nerve damage"
       },
       {
         "label": "B",
@@ -3543,14 +3543,14 @@
       },
       {
         "label": "C",
-        "text": "Laryngeal nerve damage"
+        "text": "Hypocalcemia from inadvertent parathyroid removal"
       },
       {
         "label": "D",
         "text": "Hemorrhage at the surgical site"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "C",
     "explanation": "Parathyroid glands may be accidentally removed or damaged during thyroidectomy, causing hypocalcemia. Tetany symptoms include perioral and fingertip tingling, Chvostek's and Trousseau's signs.",
     "skill": "Endocrine",
     "difficulty": 7
@@ -3591,11 +3591,11 @@
     "options": [
       {
         "label": "A",
-        "text": "Respect the patient's decision and document refusal; explore alternative treatments with the healthcare team"
+        "text": "Administer the transfusion anyway to save the patient's life"
       },
       {
         "label": "B",
-        "text": "Administer the transfusion anyway to save the patient's life"
+        "text": "Respect the patient's decision and document refusal; explore alternative treatments with the healthcare team"
       },
       {
         "label": "C",
@@ -3606,7 +3606,7 @@
         "text": "Discharge the patient for non-compliance"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "B",
     "explanation": "Competent adult patients have the right to refuse treatment, including lifesaving interventions, based on religious beliefs. The nurse must respect autonomy.",
     "skill": "Ethics",
     "difficulty": 7
@@ -3619,7 +3619,7 @@
     "options": [
       {
         "label": "A",
-        "text": "Increase fluid intake to at least 2-3 liters per day to prevent renal calculi"
+        "text": "Avoid all protein in the diet"
       },
       {
         "label": "B",
@@ -3627,14 +3627,14 @@
       },
       {
         "label": "C",
-        "text": "Avoid all protein in the diet"
+        "text": "Increase fluid intake to at least 2-3 liters per day to prevent renal calculi"
       },
       {
         "label": "D",
         "text": "Expect immediate pain relief"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "C",
     "explanation": "Allopurinol reduces uric acid production. Adequate hydration prevents uric acid crystal deposition in the kidneys. It takes weeks to lower uric acid levels.",
     "skill": "Pharmacology",
     "difficulty": 5
@@ -3647,11 +3647,11 @@
     "options": [
       {
         "label": "A",
-        "text": "Falling potassium as insulin drives K+ into cells"
+        "text": "Rising potassium"
       },
       {
         "label": "B",
-        "text": "Rising potassium"
+        "text": "Falling potassium as insulin drives K+ into cells"
       },
       {
         "label": "C",
@@ -3662,7 +3662,7 @@
         "text": "Falling sodium"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "B",
     "explanation": "Although potassium is initially elevated in DKA due to acidosis-driven cellular shift, total body potassium is depleted. As insulin is given and pH corrects, K+ drops rapidly and must be replaced to prevent fatal hypokalemia.",
     "skill": "Endocrine",
     "difficulty": 7
@@ -3675,7 +3675,7 @@
     "options": [
       {
         "label": "A",
-        "text": "Stand-pivot transfer with a gait belt"
+        "text": "Ceiling-mounted mechanical lift"
       },
       {
         "label": "B",
@@ -3687,10 +3687,10 @@
       },
       {
         "label": "D",
-        "text": "Ceiling-mounted mechanical lift"
+        "text": "Stand-pivot transfer with a gait belt"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "A stand-pivot transfer with a gait belt is appropriate for patients who can partially bear weight. It provides support while promoting the patient's independence and safety.",
     "skill": "Safe Patient Handling",
     "difficulty": 5
@@ -3731,11 +3731,11 @@
     "options": [
       {
         "label": "A",
-        "text": "No routine laboratory monitoring required"
+        "text": "Cheaper than warfarin"
       },
       {
         "label": "B",
-        "text": "Cheaper than warfarin"
+        "text": "No routine laboratory monitoring required"
       },
       {
         "label": "C",
@@ -3746,7 +3746,7 @@
         "text": "No risk of bleeding"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "B",
     "explanation": "Direct oral anticoagulants (DOACs) like rivaroxaban don't require routine INR monitoring, have fewer drug/food interactions, and have fixed dosing unlike warfarin.",
     "skill": "Pharmacology",
     "difficulty": 5
@@ -3759,7 +3759,7 @@
     "options": [
       {
         "label": "A",
-        "text": "Fluid retention indicating worsening heart failure"
+        "text": "Normal weight fluctuation"
       },
       {
         "label": "B",
@@ -3767,14 +3767,14 @@
       },
       {
         "label": "C",
-        "text": "Normal weight fluctuation"
+        "text": "Fluid retention indicating worsening heart failure"
       },
       {
         "label": "D",
         "text": "Medication effectiveness"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "C",
     "explanation": "A weight gain of 2-3 pounds overnight or 5 pounds in a week indicates fluid retention and worsening heart failure. Patients should weigh daily and report sudden gains.",
     "skill": "Cardiovascular",
     "difficulty": 5
@@ -3787,11 +3787,11 @@
     "options": [
       {
         "label": "A",
-        "text": "Always place the infant on their back to sleep on a firm, flat surface"
+        "text": "Use soft bedding and bumper pads in the crib"
       },
       {
         "label": "B",
-        "text": "Use soft bedding and bumper pads in the crib"
+        "text": "Always place the infant on their back to sleep on a firm, flat surface"
       },
       {
         "label": "C",
@@ -3802,7 +3802,7 @@
         "text": "Keep the room temperature very warm"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "B",
     "explanation": "The ABCs of safe sleep: Alone, on their Back, in a Crib. The Back-to-Sleep campaign significantly reduced SIDS rates. Avoid soft bedding, overheating, and co-sleeping.",
     "skill": "Pediatric Safety",
     "difficulty": 3
@@ -3899,7 +3899,7 @@
     "options": [
       {
         "label": "A",
-        "text": "Uteroplacental insufficiency"
+        "text": "Cord compression"
       },
       {
         "label": "B",
@@ -3907,45 +3907,45 @@
       },
       {
         "label": "C",
-        "text": "Cord compression"
+        "text": "Uteroplacental insufficiency"
       },
       {
         "label": "D",
         "text": "Fetal movement"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "C",
     "explanation": "Late decelerations begin after the contraction peaks and indicate uteroplacental insufficiency. They require immediate intervention: position change, oxygen, stop oxytocin, notify provider.",
     "skill": "Maternal-Newborn",
     "difficulty": 7
   },
   {
-    "id": "nclex_141",
+    "id": "nclex_006",
     "exam": "NCLEX-RN",
-    "section": "Safe and Effective Care",
-    "question": "Which situation requires the nurse to complete a mandatory report?",
+    "section": "Physiological Integrity",
+    "question": "A patient receiving a blood transfusion develops fever, chills, and back pain. What is the nurse's first action?",
     "options": [
       {
         "label": "A",
-        "text": "Suspected child abuse"
+        "text": "Administer diphenhydramine"
       },
       {
         "label": "B",
-        "text": "A patient who is non-compliant with treatment"
+        "text": "Slow the infusion rate"
       },
       {
         "label": "C",
-        "text": "A patient who refuses medication"
+        "text": "Stop the transfusion immediately"
       },
       {
         "label": "D",
-        "text": "A patient who wants to leave against medical advice"
+        "text": "Obtain a blood sample for typing"
       }
     ],
-    "correctAnswer": "A",
-    "explanation": "Suspected child abuse, elder abuse, and certain communicable diseases require mandatory reporting by healthcare professionals. This overrides patient confidentiality.",
-    "skill": "Legal and Ethical",
-    "difficulty": 3
+    "correctAnswer": "C",
+    "explanation": "Signs of a hemolytic transfusion reaction require immediately stopping the transfusion to prevent fatal complications.",
+    "skill": "Blood Transfusion",
+    "difficulty": 7
   },
   {
     "id": "nclex_142",
@@ -3983,11 +3983,11 @@
     "options": [
       {
         "label": "A",
-        "text": "Factor VIII concentrate"
+        "text": "Packed red blood cells"
       },
       {
         "label": "B",
-        "text": "Packed red blood cells"
+        "text": "Factor VIII concentrate"
       },
       {
         "label": "C",
@@ -3998,7 +3998,7 @@
         "text": "Platelet transfusion"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "B",
     "explanation": "Hemophilia A is caused by Factor VIII deficiency. Factor VIII concentrate is the specific replacement therapy for bleeding episodes.",
     "skill": "Hematology",
     "difficulty": 5
@@ -4011,7 +4011,7 @@
     "options": [
       {
         "label": "A",
-        "text": "30 mL, then gently aspirate to verify patency"
+        "text": "10 mL of sterile water"
       },
       {
         "label": "B",
@@ -4023,10 +4023,10 @@
       },
       {
         "label": "D",
-        "text": "10 mL of sterile water"
+        "text": "30 mL, then gently aspirate to verify patency"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "NG tube irrigation typically uses 30 mL of normal saline, gently instilled and then aspirated. This maintains tube patency without causing electrolyte imbalances.",
     "skill": "Gastrointestinal",
     "difficulty": 5
@@ -4039,7 +4039,7 @@
     "options": [
       {
         "label": "A",
-        "text": "Administer non-selective beta-blockers (propranolol) as prescribed"
+        "text": "Administer aspirin for pain"
       },
       {
         "label": "B",
@@ -4047,14 +4047,14 @@
       },
       {
         "label": "C",
-        "text": "Administer aspirin for pain"
+        "text": "Administer non-selective beta-blockers (propranolol) as prescribed"
       },
       {
         "label": "D",
         "text": "Increase protein in the diet"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "C",
     "explanation": "Non-selective beta-blockers reduce portal pressure and decrease the risk of variceal bleeding. Avoid straining, aspirin, and NSAIDs which increase bleeding risk.",
     "skill": "Gastrointestinal",
     "difficulty": 7
@@ -4067,7 +4067,7 @@
     "options": [
       {
         "label": "A",
-        "text": "6-24 hours after the last drink"
+        "text": "One week after the last drink"
       },
       {
         "label": "B",
@@ -4079,10 +4079,10 @@
       },
       {
         "label": "D",
-        "text": "One week after the last drink"
+        "text": "6-24 hours after the last drink"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "Alcohol withdrawal typically begins 6-24 hours after the last drink, peaking at 24-72 hours. Delirium tremens can occur at 48-72 hours and is life-threatening.",
     "skill": "Substance Use",
     "difficulty": 5
@@ -4123,7 +4123,7 @@
     "options": [
       {
         "label": "A",
-        "text": "Extreme thirst, dry mucous membranes, and altered mental status"
+        "text": "Bradycardia"
       },
       {
         "label": "B",
@@ -4135,10 +4135,10 @@
       },
       {
         "label": "D",
-        "text": "Bradycardia"
+        "text": "Extreme thirst, dry mucous membranes, and altered mental status"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "Hypernatremia (>145 mEq/L) causes cellular dehydration, manifesting as intense thirst, dry membranes, decreased skin turgor, and altered LOC that can progress to seizures.",
     "skill": "Fluid and Electrolytes",
     "difficulty": 5
@@ -4151,11 +4151,11 @@
     "options": [
       {
         "label": "A",
-        "text": "Protect the IV solution from light and use continuous arterial BP monitoring"
+        "text": "Administer as a bolus over 5 minutes"
       },
       {
         "label": "B",
-        "text": "Administer as a bolus over 5 minutes"
+        "text": "Protect the IV solution from light and use continuous arterial BP monitoring"
       },
       {
         "label": "C",
@@ -4166,7 +4166,7 @@
         "text": "Monitor for hyperglycemia"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "B",
     "explanation": "Nitroprusside is light-sensitive and must be covered with opaque material. It requires continuous arterial BP monitoring due to rapid, potent vasodilation. Thiocyanate toxicity can occur.",
     "skill": "Pharmacology",
     "difficulty": 7
@@ -4291,7 +4291,7 @@
     "options": [
       {
         "label": "A",
-        "text": "Upper gastrointestinal bleeding"
+        "text": "Iron supplement side effect only"
       },
       {
         "label": "B",
@@ -4303,10 +4303,10 @@
       },
       {
         "label": "D",
-        "text": "Iron supplement side effect only"
+        "text": "Upper gastrointestinal bleeding"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "Melena indicates upper GI bleeding. Blood is digested as it passes through the GI tract, turning dark and tarry. Bright red blood per rectum suggests lower GI bleeding.",
     "skill": "Gastrointestinal",
     "difficulty": 5
@@ -4319,7 +4319,7 @@
     "options": [
       {
         "label": "A",
-        "text": "Olive oil, fish, fruits, vegetables, and whole grains"
+        "text": "High dairy and saturated fat intake"
       },
       {
         "label": "B",
@@ -4331,10 +4331,10 @@
       },
       {
         "label": "D",
-        "text": "High dairy and saturated fat intake"
+        "text": "Olive oil, fish, fruits, vegetables, and whole grains"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "The Mediterranean diet emphasizes healthy fats (olive oil, nuts), fish, fruits, vegetables, whole grains, and legumes. It is associated with reduced cardiovascular risk.",
     "skill": "Nutrition",
     "difficulty": 3
@@ -4375,11 +4375,11 @@
     "options": [
       {
         "label": "A",
-        "text": "Take with food to reduce GI irritation"
+        "text": "Take on an empty stomach for faster absorption"
       },
       {
         "label": "B",
-        "text": "Take on an empty stomach for faster absorption"
+        "text": "Take with food to reduce GI irritation"
       },
       {
         "label": "C",
@@ -4390,7 +4390,7 @@
         "text": "Take before bedtime only"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "B",
     "explanation": "NSAIDs should be taken with food, milk, or antacids to reduce GI irritation and the risk of peptic ulcer formation, a common side effect.",
     "skill": "Pharmacology",
     "difficulty": 3
@@ -4403,11 +4403,11 @@
     "options": [
       {
         "label": "A",
-        "text": "Pulmonary fibrosis and thyroid dysfunction"
+        "text": "Hair loss"
       },
       {
         "label": "B",
-        "text": "Hair loss"
+        "text": "Pulmonary fibrosis and thyroid dysfunction"
       },
       {
         "label": "C",
@@ -4418,7 +4418,7 @@
         "text": "Mild constipation"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "B",
     "explanation": "Amiodarone has serious long-term toxicities: pulmonary fibrosis, thyroid dysfunction (contains iodine), hepatotoxicity, corneal microdeposits, and blue-gray skin discoloration.",
     "skill": "Pharmacology",
     "difficulty": 7
@@ -4431,7 +4431,7 @@
     "options": [
       {
         "label": "A",
-        "text": "Air embolism"
+        "text": "Pneumothorax"
       },
       {
         "label": "B",
@@ -4439,14 +4439,14 @@
       },
       {
         "label": "C",
-        "text": "Pneumothorax"
+        "text": "Air embolism"
       },
       {
         "label": "D",
         "text": "Thrombosis"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "C",
     "explanation": "Air embolism can occur when a central line is open to air during dressing changes. Treatment: clamp the catheter, position patient in left Trendelenburg, and administer 100% oxygen.",
     "skill": "IV Therapy",
     "difficulty": 7
@@ -4515,7 +4515,7 @@
     "options": [
       {
         "label": "A",
-        "text": "Speak calmly, orient the patient to the present, and provide a safe space"
+        "text": "Leave the room immediately"
       },
       {
         "label": "B",
@@ -4523,14 +4523,14 @@
       },
       {
         "label": "C",
-        "text": "Leave the room immediately"
+        "text": "Speak calmly, orient the patient to the present, and provide a safe space"
       },
       {
         "label": "D",
         "text": "Ask detailed questions about the traumatic event"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "C",
     "explanation": "During a flashback, grounding techniques and calm, present-oriented communication help the patient reorient. Avoid triggers and provide a sense of safety.",
     "skill": "Mental Health",
     "difficulty": 5
@@ -4571,7 +4571,7 @@
     "options": [
       {
         "label": "A",
-        "text": "Take with vitamin C (orange juice) on an empty stomach"
+        "text": "Take with coffee or tea"
       },
       {
         "label": "B",
@@ -4583,10 +4583,10 @@
       },
       {
         "label": "D",
-        "text": "Take with coffee or tea"
+        "text": "Take with vitamin C (orange juice) on an empty stomach"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "Vitamin C enhances iron absorption. Take on an empty stomach if tolerated. Milk, calcium, antacids, tea, and coffee inhibit iron absorption.",
     "skill": "Pharmacology",
     "difficulty": 5
@@ -4599,7 +4599,7 @@
     "options": [
       {
         "label": "A",
-        "text": "Assess for bowel sounds and report to the provider; this may be normal post-op ileus"
+        "text": "Assume the colostomy has failed"
       },
       {
         "label": "B",
@@ -4607,14 +4607,14 @@
       },
       {
         "label": "C",
-        "text": "Assume the colostomy has failed"
+        "text": "Assess for bowel sounds and report to the provider; this may be normal post-op ileus"
       },
       {
         "label": "D",
         "text": "Administer an enema through the colostomy"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "C",
     "explanation": "Post-operative ileus is common after abdominal surgery. Assess for returning bowel function (bowel sounds, flatus). Colostomy output typically returns within 2-5 days.",
     "skill": "Gastrointestinal",
     "difficulty": 5
@@ -4627,7 +4627,7 @@
     "options": [
       {
         "label": "A",
-        "text": "IV alteplase (tPA) for thrombolytic therapy"
+        "text": "Aspirin 325 mg immediately"
       },
       {
         "label": "B",
@@ -4635,14 +4635,14 @@
       },
       {
         "label": "C",
-        "text": "Aspirin 325 mg immediately"
+        "text": "IV alteplase (tPA) for thrombolytic therapy"
       },
       {
         "label": "D",
         "text": "Watchful waiting for 24 hours"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "C",
     "explanation": "IV tPA is the standard treatment for ischemic stroke within the 4.5-hour window after ruling out hemorrhage by CT. It dissolves the clot to restore blood flow.",
     "skill": "Neurological",
     "difficulty": 7
@@ -4655,7 +4655,7 @@
     "options": [
       {
         "label": "A",
-        "text": "Use motivational interviewing and discuss the adolescent's personal values and goals"
+        "text": "Tell the adolescent that all drugs are equally dangerous"
       },
       {
         "label": "B",
@@ -4663,14 +4663,14 @@
       },
       {
         "label": "C",
-        "text": "Tell the adolescent that all drugs are equally dangerous"
+        "text": "Use motivational interviewing and discuss the adolescent's personal values and goals"
       },
       {
         "label": "D",
         "text": "Lecture about legal consequences only"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "C",
     "explanation": "Motivational interviewing that connects substance use to personal goals and values is most effective for adolescents. Fear-based approaches are less effective.",
     "skill": "Health Education",
     "difficulty": 5
@@ -4711,7 +4711,7 @@
     "options": [
       {
         "label": "A",
-        "text": "Partial-thickness skin loss with exposed dermis; may appear as an intact or ruptured blister"
+        "text": "Full-thickness loss with exposed bone or tendon"
       },
       {
         "label": "B",
@@ -4723,10 +4723,10 @@
       },
       {
         "label": "D",
-        "text": "Full-thickness loss with exposed bone or tendon"
+        "text": "Partial-thickness skin loss with exposed dermis; may appear as an intact or ruptured blister"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "Stage 2 pressure injuries involve partial-thickness loss of dermis. The wound bed is pink/red and moist, and may present as an intact or open blister.",
     "skill": "Wound Care",
     "difficulty": 5
@@ -4767,7 +4767,7 @@
     "options": [
       {
         "label": "A",
-        "text": "With meals and snacks"
+        "text": "At bedtime only"
       },
       {
         "label": "B",
@@ -4775,14 +4775,14 @@
       },
       {
         "label": "C",
-        "text": "At bedtime only"
+        "text": "With meals and snacks"
       },
       {
         "label": "D",
         "text": "One hour after meals"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "C",
     "explanation": "Pancreatic enzymes must be taken with every meal and snack to aid digestion. They are ineffective if taken on an empty stomach or after eating.",
     "skill": "Pediatric",
     "difficulty": 5
@@ -4795,11 +4795,11 @@
     "options": [
       {
         "label": "A",
-        "text": "Respiratory alkalosis, uncompensated"
+        "text": "Metabolic alkalosis"
       },
       {
         "label": "B",
-        "text": "Metabolic alkalosis"
+        "text": "Respiratory alkalosis, uncompensated"
       },
       {
         "label": "C",
@@ -4810,7 +4810,7 @@
         "text": "Mixed acid-base disorder"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "B",
     "explanation": "pH >7.45 = alkalosis. PaCO2 <35 = respiratory cause (hyperventilation). Normal HCO3 = no renal compensation = uncompensated respiratory alkalosis.",
     "skill": "Acid-Base Balance",
     "difficulty": 7
@@ -4823,7 +4823,7 @@
     "options": [
       {
         "label": "A",
-        "text": "Avoid direct sunlight and use SPF 30+ sunscreen; UV light can trigger flares"
+        "text": "Use tanning beds instead of natural sunlight"
       },
       {
         "label": "B",
@@ -4835,10 +4835,10 @@
       },
       {
         "label": "D",
-        "text": "Use tanning beds instead of natural sunlight"
+        "text": "Avoid direct sunlight and use SPF 30+ sunscreen; UV light can trigger flares"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "UV light is a known trigger for SLE flares. Patients should use high-SPF sunscreen, wear protective clothing, and avoid peak sun hours.",
     "skill": "Autoimmune",
     "difficulty": 5
@@ -4879,7 +4879,7 @@
     "options": [
       {
         "label": "A",
-        "text": "Cover the IV site with a wrap or sleeve and redirect the patient's attention"
+        "text": "Sedate the patient"
       },
       {
         "label": "B",
@@ -4891,10 +4891,10 @@
       },
       {
         "label": "D",
-        "text": "Sedate the patient"
+        "text": "Cover the IV site with a wrap or sleeve and redirect the patient's attention"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "The least restrictive intervention should be tried first. Concealing the IV site and distraction are alternatives to restraints. Restraints require a physician order and are a last resort.",
     "skill": "Patient Safety",
     "difficulty": 5
@@ -4907,7 +4907,7 @@
     "options": [
       {
         "label": "A",
-        "text": "Moderate protein, low sodium diet"
+        "text": "Low protein, high sodium diet"
       },
       {
         "label": "B",
@@ -4919,10 +4919,10 @@
       },
       {
         "label": "D",
-        "text": "Low protein, high sodium diet"
+        "text": "Moderate protein, low sodium diet"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "Nephrotic syndrome causes massive protein loss. A moderate protein diet (0.8-1 g/kg/day) is recommended to avoid worsening proteinuria. Sodium restriction controls edema.",
     "skill": "Renal",
     "difficulty": 7
@@ -4963,7 +4963,7 @@
     "options": [
       {
         "label": "A",
-        "text": "Mechanical debridement of necrotic tissue"
+        "text": "Promoting epithelial cell migration"
       },
       {
         "label": "B",
@@ -4975,10 +4975,10 @@
       },
       {
         "label": "D",
-        "text": "Promoting epithelial cell migration"
+        "text": "Mechanical debridement of necrotic tissue"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "Wet-to-dry dressings provide mechanical debridement: the moist gauze adheres to necrotic tissue and is removed when dry, pulling debris with it.",
     "skill": "Wound Care",
     "difficulty": 5
@@ -5019,7 +5019,7 @@
     "options": [
       {
         "label": "A",
-        "text": "10 mEq per hour"
+        "text": "No rate limit exists"
       },
       {
         "label": "B",
@@ -5031,10 +5031,10 @@
       },
       {
         "label": "D",
-        "text": "No rate limit exists"
+        "text": "10 mEq per hour"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "Peripheral IV KCl should not exceed 10 mEq/hr to prevent cardiac arrhythmias. Higher concentrations require central line access and cardiac monitoring.",
     "skill": "Pharmacology",
     "difficulty": 7
@@ -5103,7 +5103,7 @@
     "options": [
       {
         "label": "A",
-        "text": "Significant heart failure with high ventricular wall stress"
+        "text": "Pulmonary embolism"
       },
       {
         "label": "B",
@@ -5115,10 +5115,10 @@
       },
       {
         "label": "D",
-        "text": "Pulmonary embolism"
+        "text": "Significant heart failure with high ventricular wall stress"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "BNP >400 pg/mL is strongly indicative of heart failure. Levels >1000 suggest severe heart failure. BNP is released from ventricles in response to increased wall stretch.",
     "skill": "Cardiovascular",
     "difficulty": 5
@@ -5131,11 +5131,11 @@
     "options": [
       {
         "label": "A",
-        "text": "Activate the fire alarm"
+        "text": "Contain the fire"
       },
       {
         "label": "B",
-        "text": "Contain the fire"
+        "text": "Activate the fire alarm"
       },
       {
         "label": "C",
@@ -5146,7 +5146,7 @@
         "text": "Evacuate the building"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "B",
     "explanation": "After Rescue, the next step is Activate the alarm. Then Contain (close doors/windows), and finally Extinguish or Evacuate as appropriate.",
     "skill": "Emergency Response",
     "difficulty": 3
@@ -5159,7 +5159,7 @@
     "options": [
       {
         "label": "A",
-        "text": "Fetal position on the left side or sitting up and leaning forward"
+        "text": "Right lateral with legs extended"
       },
       {
         "label": "B",
@@ -5171,10 +5171,10 @@
       },
       {
         "label": "D",
-        "text": "Right lateral with legs extended"
+        "text": "Fetal position on the left side or sitting up and leaning forward"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "Flexing the trunk and drawing knees to chest reduces tension on the abdomen and pancreatic duct, providing pain relief in acute pancreatitis.",
     "skill": "Gastrointestinal",
     "difficulty": 5
@@ -5215,7 +5215,7 @@
     "options": [
       {
         "label": "A",
-        "text": "Norepinephrine (Levophed)"
+        "text": "Phenylephrine"
       },
       {
         "label": "B",
@@ -5227,10 +5227,10 @@
       },
       {
         "label": "D",
-        "text": "Phenylephrine"
+        "text": "Norepinephrine (Levophed)"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "Norepinephrine is the first-line vasopressor for septic shock per Surviving Sepsis Campaign guidelines. Target MAP is ≥65 mmHg.",
     "skill": "Critical Care",
     "difficulty": 7
@@ -5243,11 +5243,11 @@
     "options": [
       {
         "label": "A",
-        "text": "Attempt to reinsert the tracheostomy tube; if unable, ventilate via stoma or insert an endotracheal tube"
+        "text": "Call a code and wait for the physician"
       },
       {
         "label": "B",
-        "text": "Call a code and wait for the physician"
+        "text": "Attempt to reinsert the tracheostomy tube; if unable, ventilate via stoma or insert an endotracheal tube"
       },
       {
         "label": "C",
@@ -5258,7 +5258,7 @@
         "text": "Apply oxygen via nasal cannula"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "B",
     "explanation": "Accidental decannulation is an emergency. If the tube cannot be reinserted, maintain the stoma opening and ventilate through it. An obturator should always be at the bedside.",
     "skill": "Respiratory",
     "difficulty": 7
@@ -5327,7 +5327,7 @@
     "options": [
       {
         "label": "A",
-        "text": "Patient with a tension pneumothorax (red tag)"
+        "text": "Patient with no pulse, no respirations after repositioning airway (black tag)"
       },
       {
         "label": "B",
@@ -5339,10 +5339,10 @@
       },
       {
         "label": "D",
-        "text": "Patient with no pulse, no respirations after repositioning airway (black tag)"
+        "text": "Patient with a tension pneumothorax (red tag)"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "In mass casualty triage, red-tagged patients have life-threatening but survivable injuries requiring immediate treatment. Black-tagged patients are expectant/deceased.",
     "skill": "Disaster Triage",
     "difficulty": 7
@@ -5355,7 +5355,7 @@
     "options": [
       {
         "label": "A",
-        "text": "Decreased cardiac output requiring intervention"
+        "text": "This is only relevant during exercise"
       },
       {
         "label": "B",
@@ -5367,10 +5367,10 @@
       },
       {
         "label": "D",
-        "text": "This is only relevant during exercise"
+        "text": "Decreased cardiac output requiring intervention"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "Normal cardiac output is 4-8 L/min. A CO of 2.8 L/min indicates significantly decreased cardiac output, which may require inotropic support or other interventions.",
     "skill": "Cardiovascular",
     "difficulty": 7
@@ -5383,7 +5383,7 @@
     "options": [
       {
         "label": "A",
-        "text": "Metabolic alkalosis due to loss of gastric acid (HCl)"
+        "text": "Respiratory acidosis"
       },
       {
         "label": "B",
@@ -5395,10 +5395,10 @@
       },
       {
         "label": "D",
-        "text": "Respiratory acidosis"
+        "text": "Metabolic alkalosis due to loss of gastric acid (HCl)"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "NG suction removes hydrochloric acid from the stomach, leading to loss of H+ ions and chloride. This causes metabolic alkalosis with possible hypokalemia and hypochloremia.",
     "skill": "Acid-Base Balance",
     "difficulty": 7
@@ -5439,7 +5439,7 @@
     "options": [
       {
         "label": "A",
-        "text": "Provide reassurance, distraction activities, and establish a consistent routine"
+        "text": "Tell the patient their family will return (even if uncertain)"
       },
       {
         "label": "B",
@@ -5447,14 +5447,14 @@
       },
       {
         "label": "C",
-        "text": "Tell the patient their family will return (even if uncertain)"
+        "text": "Provide reassurance, distraction activities, and establish a consistent routine"
       },
       {
         "label": "D",
         "text": "Keep the patient isolated in their room"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "C",
     "explanation": "Non-pharmacological interventions (redirection, routine, familiar objects, calm environment) should always be tried first for agitation in dementia patients.",
     "skill": "Mental Health",
     "difficulty": 5
@@ -5467,7 +5467,7 @@
     "options": [
       {
         "label": "A",
-        "text": "Red meat and other high-protein foods"
+        "text": "Whole grains"
       },
       {
         "label": "B",
@@ -5475,14 +5475,14 @@
       },
       {
         "label": "C",
-        "text": "Whole grains"
+        "text": "Red meat and other high-protein foods"
       },
       {
         "label": "D",
         "text": "Vegetables"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "C",
     "explanation": "The diseased liver cannot convert ammonia to urea. Limiting protein intake reduces ammonia production from protein metabolism. Vegetable protein is generally better tolerated.",
     "skill": "Gastrointestinal",
     "difficulty": 5
@@ -5523,11 +5523,11 @@
     "options": [
       {
         "label": "A",
-        "text": "Neuropathic pain management"
+        "text": "Acute surgical pain"
       },
       {
         "label": "B",
-        "text": "Acute surgical pain"
+        "text": "Neuropathic pain management"
       },
       {
         "label": "C",
@@ -5538,7 +5538,7 @@
         "text": "Bone pain from fractures"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "B",
     "explanation": "Gabapentin is an anticonvulsant used as a first-line treatment for neuropathic pain (diabetic neuropathy, postherpetic neuralgia). It modulates calcium channels.",
     "skill": "Pain Management",
     "difficulty": 5
@@ -5551,7 +5551,7 @@
     "options": [
       {
         "label": "A",
-        "text": "Obesity and sedentary lifestyle"
+        "text": "Being over age 45"
       },
       {
         "label": "B",
@@ -5559,14 +5559,14 @@
       },
       {
         "label": "C",
-        "text": "Being over age 45"
+        "text": "Obesity and sedentary lifestyle"
       },
       {
         "label": "D",
         "text": "Ethnic background"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "C",
     "explanation": "Obesity (especially central/abdominal) and physical inactivity are the most significant modifiable risk factors for Type 2 diabetes. Family history, age, and ethnicity are non-modifiable.",
     "skill": "Disease Prevention",
     "difficulty": 3
@@ -5600,32 +5600,32 @@
     "difficulty": 5
   },
   {
-    "id": "nclex_201",
+    "id": "nclex_121",
     "exam": "NCLEX-RN",
     "section": "Safe and Effective Care",
-    "question": "A nurse is preparing to administer an intramuscular injection to an adult client. Which needle length would be most appropriate for administering medication into the deltoid muscle?",
+    "question": "When using the SBAR communication tool, what does the 'A' stand for?",
     "options": [
       {
         "label": "A",
-        "text": "1/2 inch"
+        "text": "Assessment"
       },
       {
         "label": "B",
-        "text": "1 inch"
+        "text": "Action"
       },
       {
         "label": "C",
-        "text": "1.5 inches"
+        "text": "Admission"
       },
       {
         "label": "D",
-        "text": "2 inches"
+        "text": "Alert"
       }
     ],
-    "correctAnswer": "C",
-    "explanation": "For IM injections into the deltoid muscle of an adult, a 1.5-inch needle is generally recommended to ensure the medication reaches the muscle tissue, considering adipose tissue. Shorter needles may not reach the muscle, and longer needles may be unnecessarily long and cause injury.",
-    "skill": "Medication Administration",
-    "difficulty": 5
+    "correctAnswer": "A",
+    "explanation": "SBAR: Situation, Background, Assessment, Recommendation. It is a standardized communication framework used in healthcare to ensure clear, concise information transfer.",
+    "skill": "Communication",
+    "difficulty": 3
   },
   {
     "id": "nclex_202",
@@ -5656,199 +5656,199 @@
     "difficulty": 7
   },
   {
-    "id": "nclex_203",
+    "id": "nclex_102",
     "exam": "NCLEX-RN",
-    "section": "Safe and Effective Care",
-    "question": "A nurse is educating a client about preventing falls. Which instruction is MOST important for the nurse to emphasize?",
+    "section": "Physiological Integrity",
+    "question": "A patient is receiving total parenteral nutrition (TPN). The current bag runs out and a new one is not yet available. What should the nurse hang?",
     "options": [
       {
         "label": "A",
-        "text": "Wear non-slip footwear indoors."
+        "text": "D10W (10% dextrose in water) to prevent rebound hypoglycemia"
       },
       {
         "label": "B",
-        "text": "Keep frequently used items within reach."
+        "text": "Normal saline"
       },
       {
         "label": "C",
-        "text": "Use assistive devices as prescribed."
+        "text": "Lactated Ringer's solution"
       },
       {
         "label": "D",
-        "text": "Ensure adequate lighting in the home."
+        "text": "Nothing; wait for the new TPN bag"
       }
     ],
-    "correctAnswer": "C",
-    "explanation": "While all options contribute to fall prevention, the use of prescribed assistive devices (e.g., walkers, canes) is often crucial for individuals with mobility issues or balance deficits. This directly addresses a primary risk factor for falls. Non-slip footwear, keeping items within reach, and good lighting are also important but may not be as critical as appropriate use of mobility aids for at-risk individuals.",
-    "skill": "Patient Education",
-    "difficulty": 5
-  },
-  {
-    "id": "nclex_204",
-    "exam": "NCLEX-RN",
-    "section": "Safe and Effective Care",
-    "question": "A client with a history of deep vein thrombosis (DVT) is prescribed warfarin. The nurse should monitor which laboratory value to assess the therapeutic effectiveness of this medication?",
-    "options": [
-      {
-        "label": "A",
-        "text": "Hemoglobin and hematocrit"
-      },
-      {
-        "label": "B",
-        "text": "Platelet count"
-      },
-      {
-        "label": "C",
-        "text": "Prothrombin time (PT) and international normalized ratio (INR)"
-      },
-      {
-        "label": "D",
-        "text": "Activated partial thromboplastin time (aPTT)"
-      }
-    ],
-    "correctAnswer": "C",
-    "explanation": "Warfarin is an anticoagulant that works by inhibiting vitamin K-dependent clotting factors. Its therapeutic effect is monitored by measuring the prothrombin time (PT) and the international normalized ratio (INR). Hemoglobin/hematocrit assess red blood cells, platelets are involved in clotting but not directly monitored for warfarin efficacy, and aPTT is used to monitor unfractionated heparin.",
-    "skill": "Pharmacology and Therapeutic Monitoring",
-    "difficulty": 5
-  },
-  {
-    "id": "nclex_205",
-    "exam": "NCLEX-RN",
-    "section": "Safe and Effective Care",
-    "question": "A nurse is caring for a client who has a new tracheostomy. Which intervention is essential to prevent tracheostomy-related complications?",
-    "options": [
-      {
-        "label": "A",
-        "text": "Administering oxygen at 4 L/min via nasal cannula"
-      },
-      {
-        "label": "B",
-        "text": "Suctioning the tracheostomy tube every 8 hours"
-      },
-      {
-        "label": "C",
-        "text": "Performing aseptic technique during tracheostomy care"
-      },
-      {
-        "label": "D",
-        "text": "Encouraging the client to cough and deep breathe"
-      }
-    ],
-    "correctAnswer": "C",
-    "explanation": "Performing aseptic technique during tracheostomy care, including suctioning and changing ties, is crucial to prevent infection at the stoma site and in the lower respiratory tract, which can lead to serious complications like pneumonia or tracheal damage. Routine suctioning every 8 hours may not be necessary and could cause trauma; suctioning should be done as needed based on assessment. Encouraging coughing and deep breathing is important but preventing infection through aseptic technique is paramount for tracheostomy care.",
-    "skill": "Infection Control",
+    "correctAnswer": "A",
+    "explanation": "Abruptly stopping TPN can cause rebound hypoglycemia due to continued insulin production. D10W provides glucose to prevent this until the new TPN arrives.",
+    "skill": "Nutrition Support",
     "difficulty": 7
   },
   {
-    "id": "nclex_206",
+    "id": "nclex_003",
     "exam": "NCLEX-RN",
-    "section": "Safe and Effective Care",
-    "question": "A client is admitted with suspected sepsis. Which intervention should the nurse prioritize?",
+    "section": "Health Promotion",
+    "question": "A nurse is teaching a patient about colorectal cancer screening. At what age should average-risk individuals begin screening?",
     "options": [
       {
         "label": "A",
-        "text": "Administering broad-spectrum antibiotics"
+        "text": "40 years"
       },
       {
         "label": "B",
-        "text": "Initiating intravenous fluid resuscitation"
+        "text": "45 years"
       },
       {
         "label": "C",
-        "text": "Obtaining blood cultures"
+        "text": "50 years"
       },
       {
         "label": "D",
-        "text": "Monitoring vital signs closely"
+        "text": "55 years"
       }
     ],
-    "correctAnswer": "C",
-    "explanation": "The priority intervention when suspecting sepsis is to obtain blood cultures *before* administering antibiotics. This ensures the most accurate identification of the causative organism, guiding antibiotic selection. While antibiotics, IV fluids, and vital sign monitoring are all critical components of sepsis management, obtaining cultures first is essential for effective treatment.",
-    "skill": "Resuscitation and Emergency Care",
-    "difficulty": 7
+    "correctAnswer": "B",
+    "explanation": "Current guidelines recommend colorectal cancer screening beginning at age 45 for average-risk individuals.",
+    "skill": "Health Screening",
+    "difficulty": 5
   },
   {
-    "id": "nclex_207",
+    "id": "nclex_081",
     "exam": "NCLEX-RN",
-    "section": "Safe and Effective Care",
-    "question": "A nurse is reviewing the medication administration record (MAR) for a client receiving opioid analgesics. Which potential side effect requires the nurse to monitor closely?",
+    "section": "Physiological Integrity",
+    "question": "A patient receiving IV potassium chloride reports burning at the IV site. What should the nurse do first?",
     "options": [
       {
         "label": "A",
-        "text": "Diarrhea"
+        "text": "Administer a bolus of normal saline"
       },
       {
         "label": "B",
-        "text": "Tachycardia"
+        "text": "Discontinue the IV immediately"
       },
       {
         "label": "C",
-        "text": "Respiratory depression"
+        "text": "Apply ice to the site"
       },
       {
         "label": "D",
-        "text": "Hypertension"
+        "text": "Slow the infusion rate and assess the IV site"
       }
     ],
-    "correctAnswer": "C",
-    "explanation": "Opioid analgesics are well-known for their potential to cause respiratory depression, which is a serious and potentially life-threatening side effect. Diarrhea is less common; constipation is a more frequent side effect. Opioids typically cause bradycardia, not tachycardia, and hypotension, not hypertension.",
-    "skill": "Pharmacology and Therapeutic Monitoring",
+    "correctAnswer": "D",
+    "explanation": "Burning is common with IV potassium. First reduce the rate and assess the site for infiltration. If the site is intact, reducing the rate often resolves the discomfort.",
+    "skill": "IV Therapy",
+    "difficulty": 5
+  },
+  {
+    "id": "nclex_141",
+    "exam": "NCLEX-RN",
+    "section": "Safe and Effective Care",
+    "question": "Which situation requires the nurse to complete a mandatory report?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Suspected child abuse"
+      },
+      {
+        "label": "B",
+        "text": "A patient who is non-compliant with treatment"
+      },
+      {
+        "label": "C",
+        "text": "A patient who refuses medication"
+      },
+      {
+        "label": "D",
+        "text": "A patient who wants to leave against medical advice"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Suspected child abuse, elder abuse, and certain communicable diseases require mandatory reporting by healthcare professionals. This overrides patient confidentiality.",
+    "skill": "Legal and Ethical",
     "difficulty": 3
   },
   {
-    "id": "nclex_208",
+    "id": "nclex_005",
     "exam": "NCLEX-RN",
     "section": "Safe and Effective Care",
-    "question": "A nurse is performing a sterile dressing change for a client's surgical wound. Which action demonstrates correct sterile technique?",
+    "question": "Which finding requires the nurse to initiate droplet precautions?",
     "options": [
       {
         "label": "A",
-        "text": "Turning one's back to the sterile field"
+        "text": "Patient with Clostridium difficile"
       },
       {
         "label": "B",
-        "text": "Reaching over the sterile field with a clean ungloved hand"
+        "text": "Patient with a surgical wound infection"
       },
       {
         "label": "C",
-        "text": "Opening sterile packages away from the body"
+        "text": "Patient diagnosed with tuberculosis"
       },
       {
         "label": "D",
-        "text": "Allowing sterile supplies to touch non-sterile surfaces"
+        "text": "Patient diagnosed with influenza"
       }
     ],
-    "correctAnswer": "C",
-    "explanation": "Opening sterile packages away from the body prevents contamination of the sterile contents by the nurse's clothing or body. Turning one's back, reaching over the field with a non-sterile item, and allowing contact with non-sterile surfaces all contaminate the sterile field.",
+    "correctAnswer": "D",
+    "explanation": "Influenza is transmitted via large respiratory droplets. TB requires airborne precautions, C. diff requires contact precautions.",
     "skill": "Infection Control",
     "difficulty": 5
   },
   {
-    "id": "nclex_209",
+    "id": "nclex_024",
     "exam": "NCLEX-RN",
-    "section": "Safe and Effective Care",
-    "question": "A nurse is caring for a client who is experiencing hypoglycemia. Which symptom is MOST characteristic of this condition?",
+    "section": "Physiological Integrity",
+    "question": "A patient is diagnosed with Addison's disease. Which clinical finding does the nurse expect?",
     "options": [
       {
         "label": "A",
-        "text": "Polyuria"
+        "text": "Moon face and buffalo hump"
       },
       {
         "label": "B",
-        "text": "Polydipsia"
+        "text": "Hyperpigmentation of the skin"
       },
       {
         "label": "C",
-        "text": "Diaphoresis"
+        "text": "Hypertension"
       },
       {
         "label": "D",
-        "text": "Fruity breath odor"
+        "text": "Weight gain"
       }
     ],
-    "correctAnswer": "C",
-    "explanation": "Diaphoresis (excessive sweating) is a common and often early symptom of hypoglycemia, caused by the release of epinephrine. Polyuria and polydipsia are characteristic of hyperglycemia. Fruity breath odor is associated with diabetic ketoacidosis (DKA), a complication of uncontrolled diabetes, which involves hyperglycemia.",
-    "skill": "Assessment and Monitoring",
+    "correctAnswer": "B",
+    "explanation": "Addison's disease (adrenal insufficiency) causes hyperpigmentation due to excess ACTH stimulating melanocytes, along with hypotension and weight loss.",
+    "skill": "Endocrine",
+    "difficulty": 5
+  },
+  {
+    "id": "nclex_008",
+    "exam": "NCLEX-RN",
+    "section": "Safe and Effective Care",
+    "question": "The nurse receives shift report on four patients. Which patient should be assessed first?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Patient with an oxygen saturation of 88% on room air"
+      },
+      {
+        "label": "B",
+        "text": "Patient requesting pain medication"
+      },
+      {
+        "label": "C",
+        "text": "Patient with a blood glucose of 180 mg/dL"
+      },
+      {
+        "label": "D",
+        "text": "Patient who is 2 hours post-appendectomy with stable vitals"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "An SpO2 of 88% indicates hypoxemia and is a priority requiring immediate assessment.",
+    "skill": "Prioritization",
     "difficulty": 5
   },
   {
@@ -5915,7 +5915,7 @@
     "options": [
       {
         "label": "A",
-        "text": "Check the tube placement."
+        "text": "Administer a bolus of water."
       },
       {
         "label": "B",
@@ -5927,10 +5927,10 @@
       },
       {
         "label": "D",
-        "text": "Administer a bolus of water."
+        "text": "Check the tube placement."
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "Before administering any medication or formula through a feeding tube, the nurse MUST verify tube placement to prevent adverse events like aspiration or medication administration into the wrong anatomical location. Checking placement is a critical safety step. Auscultating bowel sounds is important for feeding tolerance but secondary to placement verification. Increasing feeding rate or administering a bolus of water are interventions that follow other assessments.",
     "skill": "Gastrointestinal Management",
     "difficulty": 5
@@ -6160,32 +6160,32 @@
     "difficulty": 3
   },
   {
-    "id": "nclex_221",
+    "id": "nclex_021",
     "exam": "NCLEX-RN",
-    "section": "Safe and Effective Care",
-    "question": "A client is experiencing anaphylaxis. The nurse should anticipate administering which medication as the first-line treatment?",
+    "section": "Physiological Integrity",
+    "question": "A patient is receiving heparin IV. Which lab value should the nurse monitor?",
     "options": [
       {
         "label": "A",
-        "text": "Diphenhydramine (Benadryl)"
+        "text": "aPTT"
       },
       {
         "label": "B",
-        "text": "Epinephrine (Adrenalin)"
+        "text": "INR"
       },
       {
         "label": "C",
-        "text": "Corticosteroids (e.g., methylprednisolone)"
+        "text": "Hemoglobin"
       },
       {
         "label": "D",
-        "text": "Albuterol nebulizer"
+        "text": "BUN"
       }
     ],
-    "correctAnswer": "B",
-    "explanation": "Epinephrine is the first-line treatment for anaphylaxis because it reverses life-threatening symptoms such as bronchospasm, laryngeal edema, and vasodilation by acting as a vasoconstrictor and bronchodilator. While antihistamines, corticosteroids, and bronchodilators are used as adjuncts, epinephrine is the most critical immediate intervention.",
-    "skill": "Resuscitation and Emergency Care",
-    "difficulty": 7
+    "correctAnswer": "A",
+    "explanation": "aPTT (activated partial thromboplastin time) is the standard lab test for monitoring heparin therapy. Therapeutic range is 1.5-2.5 times the control value.",
+    "skill": "Pharmacology",
+    "difficulty": 5
   },
   {
     "id": "nclex_222",
@@ -6307,7 +6307,7 @@
     "options": [
       {
         "label": "A",
-        "text": "Regular monitoring of blood glucose levels."
+        "text": "Obtaining an annual influenza vaccination."
       },
       {
         "label": "B",
@@ -6319,10 +6319,10 @@
       },
       {
         "label": "D",
-        "text": "Obtaining an annual influenza vaccination."
+        "text": "Regular monitoring of blood glucose levels."
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "Monitoring blood glucose levels is crucial for managing type 2 diabetes, allowing for adjustments in diet, exercise, and medication to maintain glycemic control and prevent complications. While diet, exercise, and vaccinations are important, direct blood glucose monitoring is the cornerstone of self-management for this condition.",
     "skill": "Health Promotion and Disease Prevention",
     "difficulty": 5
@@ -6720,59 +6720,59 @@
     "difficulty": 5
   },
   {
-    "id": "nclex_241",
+    "id": "nclex_011",
     "exam": "NCLEX-RN",
-    "section": "Health Promotion and Maintenance",
-    "question": "A nurse is providing anticipatory guidance to parents of a 3-month-old infant regarding safety. Which is the MOST critical safety recommendation?",
+    "section": "Psychosocial Integrity",
+    "question": "A patient recently diagnosed with terminal cancer says, 'This can't be right. The lab must have mixed up my results.' Which stage of grief?",
     "options": [
       {
         "label": "A",
-        "text": "Ensure the infant sleeps on their back."
+        "text": "Denial"
       },
       {
         "label": "B",
-        "text": "Install safety gates at the top and bottom of stairs."
+        "text": "Anger"
       },
       {
         "label": "C",
-        "text": "Keep small objects out of the infant's reach."
+        "text": "Bargaining"
       },
       {
         "label": "D",
-        "text": "Use sunscreen when the infant is exposed to the sun."
+        "text": "Depression"
       }
     ],
     "correctAnswer": "A",
-    "explanation": "Placing infants on their back to sleep is the single most effective recommendation to reduce the risk of Sudden Infant Death Syndrome (SIDS). While other safety measures are important as the infant grows, SIDS prevention is paramount at this age. Safety gates and keeping small objects away become more critical as the infant becomes mobile.",
-    "skill": "Safety Education",
+    "explanation": "Denial is the first stage of the Kübler-Ross grief model, characterized by disbelief and refusal to accept the diagnosis.",
+    "skill": "Grief and Loss",
     "difficulty": 3
   },
   {
-    "id": "nclex_242",
+    "id": "nclex_012",
     "exam": "NCLEX-RN",
-    "section": "Health Promotion and Maintenance",
-    "question": "A nurse is assessing the nutritional status of an older adult. Which finding is MOST indicative of a potential risk for malnutrition?",
+    "section": "Physiological Integrity",
+    "question": "Which lab value monitors warfarin (Coumadin) therapeutic effectiveness?",
     "options": [
       {
         "label": "A",
-        "text": "A recent unintentional weight gain of 5 pounds."
+        "text": "INR"
       },
       {
         "label": "B",
-        "text": "Report of decreased appetite and early satiety."
+        "text": "aPTT"
       },
       {
         "label": "C",
-        "text": "Taking a daily multivitamin supplement."
+        "text": "PT only"
       },
       {
         "label": "D",
-        "text": "Engaging in moderate physical activity three times a week."
+        "text": "Platelet count"
       }
     ],
-    "correctAnswer": "B",
-    "explanation": "Decreased appetite and early satiety are common symptoms in older adults that can lead to significantly reduced food intake and are hallmarks of malnutrition risk. Unintentional weight loss (not gain), not taking supplements, and moderate activity are not direct indicators of malnutrition risk in this context.",
-    "skill": "Nutritional Assessment",
+    "correctAnswer": "A",
+    "explanation": "INR is the standardized measurement for warfarin therapy. Therapeutic range is typically 2.0-3.0. aPTT monitors heparin.",
+    "skill": "Pharmacology",
     "difficulty": 5
   },
   {
@@ -7063,7 +7063,7 @@
     "options": [
       {
         "label": "A",
-        "text": "'Your pancreas doesn't produce enough insulin.'"
+        "text": "'You are eating too many carbohydrates.'"
       },
       {
         "label": "B",
@@ -7071,14 +7071,14 @@
       },
       {
         "label": "C",
-        "text": "'You are eating too many carbohydrates.'"
+        "text": "'Your pancreas doesn't produce enough insulin.'"
       },
       {
         "label": "D",
         "text": "'Your liver is producing too much glucose.'"
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "C",
     "explanation": "Type 1 diabetes is characterized by autoimmune destruction of pancreatic beta cells, leading to an absolute deficiency of insulin production. Type 2 diabetes is characterized by insulin resistance and relative insulin deficiency. While diet is important, it's not the primary underlying pathology of type 1 diabetes. Liver glucose production is also involved but not the root cause in type 1.",
     "skill": "Physiological Adaptation",
     "difficulty": 3
@@ -7119,7 +7119,7 @@
     "options": [
       {
         "label": "A",
-        "text": "Respiratory acidosis, uncompensated."
+        "text": "Respiratory alkalosis, compensated."
       },
       {
         "label": "B",
@@ -7127,14 +7127,14 @@
       },
       {
         "label": "C",
-        "text": "Respiratory alkalosis, compensated."
+        "text": "Respiratory acidosis, uncompensated."
       },
       {
         "label": "D",
         "text": "Metabolic acidosis, uncompensated."
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "C",
     "explanation": "The pH is below the normal range of 7.35-7.45, indicating acidosis. The PaCO2 is elevated above the normal range of 35-45 mmHg, indicating a respiratory problem. Since the HCO3 is within the normal range (22-26 mEq/L), the metabolic system has not yet compensated. Thus, it is respiratory acidosis, uncompensated.",
     "skill": "Interpretation",
     "difficulty": 7
@@ -7175,7 +7175,7 @@
     "options": [
       {
         "label": "A",
-        "text": "Serum sodium level of 120 mEq/L."
+        "text": "Urine sodium level of 20 mEq/L."
       },
       {
         "label": "B",
@@ -7187,10 +7187,10 @@
       },
       {
         "label": "D",
-        "text": "Urine sodium level of 20 mEq/L."
+        "text": "Serum sodium level of 120 mEq/L."
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "D",
     "explanation": "SIADH is characterized by excessive secretion of ADH, leading to water retention, dilutional hyponatremia, and concentrated urine. Therefore, a low serum sodium level (hyponatremia) is expected. Urine specific gravity will be high (concentrated), serum osmolality will be low, and urine sodium will typically be high.",
     "skill": "Lab Interpretation",
     "difficulty": 7
@@ -7679,7 +7679,7 @@
     "options": [
       {
         "label": "A",
-        "text": "Increased risk of hypokalemia potentiating digoxin toxicity."
+        "text": "Increased risk of hyperkalemia."
       },
       {
         "label": "B",
@@ -7687,14 +7687,14 @@
       },
       {
         "label": "C",
-        "text": "Increased risk of hyperkalemia."
+        "text": "Increased risk of hypokalemia potentiating digoxin toxicity."
       },
       {
         "label": "D",
         "text": "Enhanced diuretic effect leading to dehydration."
       }
     ],
-    "correctAnswer": "A",
+    "correctAnswer": "C",
     "explanation": "Loop diuretics (like furosemide) can cause potassium loss (hypokalemia). Hypokalemia can potentiate the effects of digoxin, increasing the risk of digoxin toxicity, which can manifest as cardiac arrhythmias, nausea, vomiting, and visual disturbances. Loop diuretics do not typically decrease digoxin absorption or cause hyperkalemia. While dehydration is a risk of diuretics, the most critical interaction with digoxin is related to potassium levels.",
     "skill": "Pharmacology",
     "difficulty": 7
@@ -7791,7 +7791,7 @@
     "options": [
       {
         "label": "A",
-        "text": "Maintain a consistent, firm, and non-judgmental presence."
+        "text": "Avoid setting limits to prevent upsetting the client."
       },
       {
         "label": "B",
@@ -7799,15 +7799,15 @@
       },
       {
         "label": "C",
-        "text": "Avoid setting limits to prevent upsetting the client."
+        "text": "Maintain a consistent, firm, and non-judgmental presence."
       },
       {
         "label": "D",
         "text": "Agree with the client's negative self-talk to validate their feelings."
       }
     ],
-    "correctAnswer": "A",
-    "explanation": "Clients with borderline personality disorder benefit from a consistent, firm, and non-judgmental approach. This provides a stable environment and helps them feel safe. Social activities (B) can blur professional boundaries. Avoiding limits (C) can lead to exploitation. Validating negative self-talk (D) without addressing underlying issues is not therapeutic.",
+    "correctAnswer": "C",
+    "explanation": "Clients with borderline personality disorder benefit from a consistent, firm, and non-judgmental approach. This provides a stable environment and helps them feel safe. Social activities (B) can blur professional boundaries. Avoiding limits (A) can lead to exploitation. Validating negative self-talk (D) without addressing underlying issues is not therapeutic.",
     "skill": "Therapeutic Communication",
     "difficulty": 7
   },
@@ -7840,32 +7840,32 @@
     "difficulty": 5
   },
   {
-    "id": "nclex_281",
+    "id": "nclex_014",
     "exam": "NCLEX-RN",
-    "section": "Psychosocial Integrity",
-    "question": "A client diagnosed with major depressive disorder is exhibiting psychomotor retardation. The nurse observes the client sitting in a chair for long periods, moving slowly, and speaking with a monotone voice. What is the MOST appropriate nursing intervention?",
+    "section": "Physiological Integrity",
+    "question": "A patient with CKD has a potassium of 6.2 mEq/L. Which ECG change should the nurse expect?",
     "options": [
       {
         "label": "A",
-        "text": "Encourage the client to participate in group therapy immediately."
+        "text": "Peaked T waves"
       },
       {
         "label": "B",
-        "text": "Provide opportunities for simple, successful activities."
+        "text": "Flattened T waves"
       },
       {
         "label": "C",
-        "text": "Engage the client in lengthy, complex conversations."
+        "text": "Prolonged QT interval"
       },
       {
         "label": "D",
-        "text": "Increase the visual and auditory stimuli in the client's room."
+        "text": "ST segment depression"
       }
     ],
-    "correctAnswer": "B",
-    "explanation": "For a client with psychomotor retardation, providing opportunities for simple, successful activities helps build self-esteem and a sense of accomplishment without being overwhelming. Group therapy (A) may be too demanding initially. Complex conversations (C) can be difficult. Increased stimuli (D) could be agitating.",
-    "skill": "Intervention for Depression",
-    "difficulty": 5
+    "correctAnswer": "A",
+    "explanation": "Hyperkalemia (>5.0 mEq/L) causes peaked T waves. Severe hyperkalemia can progress to widened QRS and cardiac arrest.",
+    "skill": "Renal",
+    "difficulty": 7
   },
   {
     "id": "nclex_282",
@@ -7922,56 +7922,6 @@
     "explanation": "Involving the client in facility-sponsored group activities is the most effective intervention for promoting social interaction and reducing loneliness in a long-term care setting, as it offers opportunities to connect with peers. While family visits (B) and one-on-one activities (D) are beneficial, group activities provide broader social engagement. Reading in the room (A) can increase isolation.",
     "skill": "Intervention for Social Isolation",
     "difficulty": 3
-  },
-  {
-    "id": "nclex_284",
-    "exam": "NCLEX-RN",
-    "section": "Psychosocial Integrity",
-    "question": "A client admitted for suicidal ideation states, \"I just want to disappear. Everything is hopeless.\" Which nursing response BEST demonstrates empathetic understanding?",
-    "options": [
-      {
-        "label": "A",
-        "text": "\"You shouldn't feel that way. Things will get better.\""
-      },
-      {
-        "label": "\"I understand you're feeling hopeless right now, and it sounds incredibly painful.\""
-      },
-      {
-        "label": "\"Let's talk about something more positive.\""
-      },
-      {
-        "label": "\"Many people feel that way sometimes.\""
-      }
-    ],
-    "correctAnswer": "B",
-    "explanation": "Option B demonstrates empathetic understanding by acknowledging the client's feelings of hopelessness and validating the pain associated with it, without attempting to dismiss or minimize their experience. Option A is dismissive and offers false reassurance. Option C attempts to change the subject inappropriately. Option D is a generalization that can minimize the client's unique suffering.",
-    "skill": "Therapeutic Communication",
-    "difficulty": 5
-  },
-  {
-    "id": "nclex_285",
-    "exam": "NCLEX-RN",
-    "section": "Psychosocial Integrity",
-    "question": "A nurse is teaching a client diagnosed with generalized anxiety disorder (GAD) about stress management techniques. Which statement by the client indicates an understanding of the teaching?",
-    "options": [
-      {
-        "label": "A",
-        "text": "\"I will practice deep breathing exercises only when I feel an anxiety attack coming on.\""
-      },
-      {
-        "label": "\"I need to avoid all situations that cause me stress.\""
-      },
-      {
-        "label": "\"I will practice progressive muscle relaxation daily, even when I feel calm.\""
-      },
-      {
-        "label": "\"Talking about my problems will only make my anxiety worse.\""
-      }
-    ],
-    "correctAnswer": "C",
-    "explanation": "Practicing relaxation techniques like progressive muscle relaxation daily, even when calm, helps build resilience and manage anxiety more effectively. Doing it only during an attack (A) is less effective for prevention. Avoiding all stress (B) is unrealistic. Talking about problems (D) is often a helpful coping mechanism.",
-    "skill": "Coping Mechanisms",
-    "difficulty": 5
   },
   {
     "id": "nclex_286",
@@ -8037,11 +7987,11 @@
     "options": [
       {
         "label": "A",
-        "text": "Acute stress disorder"
+        "text": "Adjustment disorder"
       },
       {
         "label": "B",
-        "text": "Adjustment disorder"
+        "text": "Acute stress disorder"
       },
       {
         "label": "C",
@@ -8052,33 +8002,8 @@
         "text": "Post-traumatic stress disorder (PTSD)"
       }
     ],
-    "correctAnswer": "A",
-    "explanation": "The symptoms described (difficulty sleeping, flashbacks, being easily startled) occurring shortly after a traumatic event are indicative of acute stress disorder (ASD). PTSD typically develops after symptoms persist for more than one month. Adjustment disorder (B) is a less severe reaction to a stressor. Panic disorder (C) is characterized by recurrent, unexpected panic attacks.",
-    "skill": "Psychosocial Assessment",
-    "difficulty": 5
-  },
-  {
-    "id": "nclex_289",
-    "exam": "NCLEX-RN",
-    "section": "Psychosocial Integrity",
-    "question": "A client expresses feelings of hopelessness and worthlessness and has lost interest in activities they once enjoyed. The nurse suspects depression. Which question is MOST important for the nurse to ask to assess the severity of depressive symptoms?",
-    "options": [
-      {
-        "label": "A",
-        "text": "\"What do you like to do for fun?\""
-      },
-      {
-        "label": "\"Have you experienced any changes in your appetite or sleep patterns?\""
-      },
-      {
-        "label": "\"Who is your support system?\""
-      },
-      {
-        "label": "\"How often do you feel this way?\""
-      }
-    ],
     "correctAnswer": "B",
-    "explanation": "Changes in appetite and sleep patterns are common physiological symptoms of depression and are crucial in assessing its severity. While enjoyment of activities (A), support system (C), and frequency of feelings (D) are relevant, the physiological indicators provide objective data about the impact of the depression.",
+    "explanation": "The symptoms described (difficulty sleeping, flashbacks, being easily startled) occurring shortly after a traumatic event are indicative of acute stress disorder (ASD). PTSD typically develops after symptoms persist for more than one month. Adjustment disorder (A) is a less severe reaction to a stressor. Panic disorder (C) is characterized by recurrent, unexpected panic attacks.",
     "skill": "Psychosocial Assessment",
     "difficulty": 5
   },
@@ -8146,7 +8071,7 @@
     "options": [
       {
         "label": "A",
-        "text": "Mini-Mental State Examination (MMSE)"
+        "text": "Montreal Cognitive Assessment (MoCA)"
       },
       {
         "label": "B",
@@ -8158,11 +8083,11 @@
       },
       {
         "label": "D",
-        "text": "Montreal Cognitive Assessment (MoCA)"
+        "text": "Mini-Mental State Examination (MMSE)"
       }
     ],
-    "correctAnswer": "A",
-    "explanation": "The Mini-Mental State Examination (MMSE) is a widely used, rapid screening tool for cognitive impairment. The MoCA (D) is also a good screening tool, but the MMSE is often considered more standard for rapid screening. The GDS (B) and BDI (C) are used to assess depression, not cognitive function.",
+    "correctAnswer": "D",
+    "explanation": "The Mini-Mental State Examination (MMSE) is a widely used, rapid screening tool for cognitive impairment. The MoCA (A) is also a good screening tool, but the MMSE is often considered more standard for rapid screening. The GDS (B) and BDI (C) are used to assess depression, not cognitive function.",
     "skill": "Psychosocial Assessment",
     "difficulty": 7
   },
@@ -8193,31 +8118,6 @@
     "explanation": "Encouraging the client to verbalize their fears and concerns allows them to process their anxiety and receive support. Providing excessive information about complications (A) can increase anxiety. Sedation (C) may be necessary but is not the primary coping promotion strategy. Distraction (D) may offer temporary relief but does not address the underlying anxiety.",
     "skill": "Coping Mechanisms",
     "difficulty": 3
-  },
-  {
-    "id": "nclex_294",
-    "exam": "NCLEX-RN",
-    "section": "Psychosocial Integrity",
-    "question": "A nurse is assessing a client experiencing paranoia. The client states, \"The food here is poisoned. You're trying to get rid of me.\" Which response by the nurse is MOST therapeutic?",
-    "options": [
-      {
-        "label": "A",
-        "text": "\"That's not true. The food is safe for everyone.\""
-      },
-      {
-        "label": "\"I understand you believe the food is poisoned, but I assure you it is safe.\""
-      },
-      {
-        "label": "\"Tell me more about why you think the food is poisoned.\""
-      },
-      {
-        "label": "\"No one is trying to get rid of you.\""
-      }
-    ],
-    "correctAnswer": "B",
-    "explanation": "The best response acknowledges the client's belief without agreeing with it, while also offering reassurance. \"I understand you believe the food is poisoned, but I assure you it is safe\" validates their perception of their experience while providing a reality-based assurance. Directly contradicting (A, D) can increase mistrust. Asking for more details about the delusion (C) might reinforce it.",
-    "skill": "Therapeutic Communication",
-    "difficulty": 5
   },
   {
     "id": "nclex_295",
