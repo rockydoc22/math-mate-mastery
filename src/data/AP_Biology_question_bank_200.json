@@ -23,7 +23,7 @@
     },
     "answer": "A",
     "difficulty": 8,
-    "explanation": "p = 0.8, q = 0.2. Heterozygous frequency = 2pq = 2(0.8)(0.2) = 0.32. Number = 0.32 × 500 = 160."
+    "explanation": "p = 0.8, q = 0.2. Heterozygous frequency = 2pq = 2(0.8)(0.2) = 0.32. Number = 0.32 \u00d7 500 = 160."
   },
   {
     "id": "AP_Biology_3",
@@ -62,7 +62,7 @@
     },
     "answer": "A",
     "difficulty": 8,
-    "explanation": "Auxin demonstrates this exact behavior—the same concentration promotes stem elongation but inhibits root growth, illustrating tissue-specific sensitivity thresholds."
+    "explanation": "Auxin demonstrates this exact behavior\u2014the same concentration promotes stem elongation but inhibits root growth, illustrating tissue-specific sensitivity thresholds."
   },
   {
     "id": "AP_Biology_6",
@@ -88,20 +88,20 @@
     },
     "answer": "A",
     "difficulty": 9,
-    "explanation": "With 4 possible bases at each position, a 6-bp site occurs on average every 4⁶ = 4,096 bp."
+    "explanation": "With 4 possible bases at each position, a 6-bp site occurs on average every 4\u2076 = 4,096 bp."
   },
   {
     "id": "AP_Biology_8",
-    "question": "In C₄ photosynthesis, the initial fixation of CO₂ occurs in:",
+    "question": "In C\u2084 photosynthesis, the initial fixation of CO\u2082 occurs in:",
     "choices": {
-      "A": "Mesophyll cells, where PEP carboxylase fixes CO₂ into a 4-carbon compound",
-      "B": "Bundle sheath cells, where RuBisCO fixes CO₂ into a 3-carbon compound",
-      "C": "Guard cells, where carbonic anhydrase converts CO₂ to bicarbonate",
-      "D": "Mesophyll cells, where RuBisCO directly fixes CO₂"
+      "A": "Mesophyll cells, where PEP carboxylase fixes CO\u2082 into a 4-carbon compound",
+      "B": "Bundle sheath cells, where RuBisCO fixes CO\u2082 into a 3-carbon compound",
+      "C": "Guard cells, where carbonic anhydrase converts CO\u2082 to bicarbonate",
+      "D": "Mesophyll cells, where RuBisCO directly fixes CO\u2082"
     },
     "answer": "A",
     "difficulty": 8,
-    "explanation": "In C₄ plants, PEP carboxylase in mesophyll cells initially fixes CO₂ into oxaloacetate (4-carbon). CO₂ is later released and refixed by RuBisCO in bundle sheath cells."
+    "explanation": "In C\u2084 plants, PEP carboxylase in mesophyll cells initially fixes CO\u2082 into oxaloacetate (4-carbon). CO\u2082 is later released and refixed by RuBisCO in bundle sheath cells."
   },
   {
     "id": "AP_Biology_9",
@@ -140,7 +140,7 @@
     },
     "answer": "A",
     "difficulty": 7,
-    "explanation": "Second messengers like cAMP amplify signals through a cascade: one activated receptor → many cAMP molecules → many activated kinases → large cellular response."
+    "explanation": "Second messengers like cAMP amplify signals through a cascade: one activated receptor \u2192 many cAMP molecules \u2192 many activated kinases \u2192 large cellular response."
   },
   {
     "id": "AP_Biology_12",
@@ -159,10 +159,10 @@
     "id": "AP_Biology_13",
     "question": "Which of the following correctly pairs a biome with its characteristic feature?",
     "choices": {
-      "A": "Tropical rainforest — high biodiversity and stratified canopy layers",
-      "B": "Tundra — dense deciduous forests with rich soil",
-      "C": "Desert — high annual precipitation and low evaporation",
-      "D": "Taiga — broadleaf evergreen trees dominant"
+      "A": "Tropical rainforest \u2014 high biodiversity and stratified canopy layers",
+      "B": "Tundra \u2014 dense deciduous forests with rich soil",
+      "C": "Desert \u2014 high annual precipitation and low evaporation",
+      "D": "Taiga \u2014 broadleaf evergreen trees dominant"
     },
     "answer": "A",
     "difficulty": 6,
@@ -218,7 +218,7 @@
     },
     "answer": "A",
     "difficulty": 8,
-    "explanation": "p = freq(A) = 0.49 + 0.42/2 = 0.7. q = 0.3. Expected: p² = 0.49, 2pq = 0.42, q² = 0.09. These match the observed frequencies."
+    "explanation": "p = freq(A) = 0.49 + 0.42/2 = 0.7. q = 0.3. Expected: p\u00b2 = 0.49, 2pq = 0.42, q\u00b2 = 0.09. These match the observed frequencies."
   },
   {
     "id": "AP_Biology_18",
@@ -599,16 +599,16 @@
   },
   {
     "id": "AP_Biology_47",
-    "question": "Which of the following processes is most directly responsible for the movement of water across a semipermeable membrane in biological systems?",
+    "question": "A red blood cell is placed into a solution and begins to swell and eventually lyse. Which of the following best describes the solution it was placed in?",
     "choices": {
-      "A": "Active transport",
-      "B": "Facilitated diffusion",
-      "C": "Osmosis",
-      "D": "Endocytosis"
+      "A": "Hypertonic \u2014 higher solute concentration than the cell",
+      "B": "Isotonic \u2014 equal solute concentration to the cell",
+      "C": "Hypotonic \u2014 lower solute concentration than the cell",
+      "D": "Buffered \u2014 maintained at physiological pH"
     },
     "answer": "C",
-    "difficulty": 3,
-    "explanation": "Osmosis is the specific term for the net movement of water across a selectively permeable membrane from an area of higher water concentration (lower solute concentration) to an area of lower water concentration (higher solute concentration). Active transport requires energy, facilitated diffusion requires transport proteins but not necessarily osmosis, and endocytosis is a bulk transport mechanism."
+    "difficulty": 5,
+    "explanation": "A hypotonic solution has a lower solute concentration (higher water potential) than the cell. Water moves into the cell by osmosis, causing swelling. In red blood cells (which lack a cell wall), excessive swelling leads to lysis (bursting)."
   },
   {
     "id": "AP_Biology_48",
@@ -950,16 +950,16 @@
   },
   {
     "id": "AP_Biology_74",
-    "question": "Which of the following processes describes the movement of water across a semipermeable membrane from an area of high solute concentration to an area of low solute concentration?",
+    "question": "A researcher places two potato cylinders of equal mass into two solutions: Solution X and Solution Y. After one hour, the cylinder in Solution X has gained mass, while the cylinder in Solution Y has lost mass. Which of the following is the correct interpretation?",
     "choices": {
-      "A": "Active transport",
-      "B": "Facilitated diffusion",
-      "C": "Osmosis",
-      "D": "Endocytosis"
+      "A": "Solution X is hypertonic and Solution Y is hypotonic relative to the potato cells",
+      "B": "Solution X is hypotonic and Solution Y is hypertonic relative to the potato cells",
+      "C": "Both solutions are isotonic but at different temperatures",
+      "D": "Solution X contains more glucose than Solution Y"
     },
-    "answer": "C",
-    "difficulty": 4,
-    "explanation": "Osmosis is specifically the movement of water across a selectively permeable membrane, driven by differences in solute concentration (or water potential). Water moves from a region of lower solute concentration (higher water potential) to a region of higher solute concentration (lower water potential)."
+    "answer": "B",
+    "difficulty": 6,
+    "explanation": "The cylinder in Solution X gained mass because water moved into it \u2014 the solution is hypotonic (lower solute concentration) relative to the potato. The cylinder in Solution Y lost mass because water moved out \u2014 the solution is hypertonic (higher solute concentration) relative to the potato. This is a classic osmosis demonstration."
   },
   {
     "id": "AP_Biology_75",
