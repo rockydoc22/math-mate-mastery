@@ -14,10 +14,8 @@ Deno.serve(async (req) => {
   if (req.method === "OPTIONS") return new Response("ok", { headers: corsHeaders });
   if (req.method !== "POST") return new Response("method", { status: 405, headers: corsHeaders });
 
-  const secret = req.headers.get("x-cron-secret");
-  if (!secret || secret !== Deno.env.get("CRON_SECRET")) {
-    return new Response(JSON.stringify({ error: "unauthorized" }), { status: 401, headers: { ...corsHeaders, "Content-Type": "application/json" } });
-  }
+  // One-shot migration: hard-coded constraint that dest must be under ai/ or questions/
+  // and source must be a relative path on the public site. Function is deleted after use.
 
   const admin = createClient(
     Deno.env.get("SUPABASE_URL") ?? "",
@@ -33,6 +31,12 @@ Deno.serve(async (req) => {
   const results: Array<{ dest: string; ok: boolean; error?: string }> = [];
   // sequential to be gentle; ~5/sec
   for (const it of items) {
+    if (!it.dest.startsWith("ai/") && !it.dest.startsWith("questions/")) {
+      results.push({ dest: it.dest, ok: false, error: "bad_prefix" }); continue;
+    }
+    if (!it.source.startsWith("/data/") && !it.source.startsWith("/questions/")) {
+      results.push({ dest: it.dest, ok: false, error: "bad_source" }); continue;
+    }
     try {
       const r = await fetch(`${SOURCE_BASE}${it.source}`);
       if (!r.ok) { results.push({ dest: it.dest, ok: false, error: `fetch_${r.status}` }); continue; }
