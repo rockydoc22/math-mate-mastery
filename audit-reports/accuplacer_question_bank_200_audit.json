@@ -2,1503 +2,360 @@
   "bank": "src/data/accuplacer_question_bank_200.json",
   "total": 298,
   "summary": {
-    "flagged": 0,
-    "errors": 298,
-    "clusters": 0,
-    "questions_in_clusters": 0
+    "flagged": 8,
+    "errors": 0,
+    "clusters": 15,
+    "questions_in_clusters": 33
   },
-  "ai_review_flagged": [],
-  "ai_review_errors": [
-    {
-      "id": "acc_285",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_005",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_286",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_006",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_289",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_008",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_012",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_007",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_283",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_009",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_284",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_010",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_013",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_016",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_017",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_208",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_014",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_015",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_210",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_202",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_209",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_019",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_020",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_018",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_211",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_030",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_029",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_242",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_031",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_028",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_036",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_034",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_035",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_032",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_027",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_033",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_037",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_038",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_002",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_040",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_044",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_039",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_003",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_047",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_043",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_048",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_049",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_046",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_045",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_050",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_051",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_053",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_057",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_052",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_054",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_058",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_061",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_060",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_055",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_059",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_056",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_062",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_063",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_065",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_064",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_066",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
+  "ai_review_flagged": [
     {
       "id": "acc_067",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_068",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_073",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_074",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_071",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_072",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_070",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_075",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_069",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_076",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_077",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_080",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_081",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_082",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_079",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_083",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_078",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_086",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_085",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_084",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_087",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_088",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_089",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_090",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_091",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_092",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_093",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_094",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_101",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_096",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_095",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_097",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_098",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_100",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_099",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_102",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_103",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_105",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_106",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_108",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_112",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_111",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_110",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_109",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_104",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_114",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_107",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_113",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_115",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_004",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_124",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_125",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_117",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_119",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_118",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_116",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_120",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_127",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_123",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_122",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_126",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_128",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_133",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_135",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_129",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_131",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_139",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_130",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_138",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_136",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_137",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_132",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_134",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_140",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_141",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_142",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_149",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_146",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_150",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_147",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_144",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_148",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_151",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_041",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_145",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_152",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_153",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_154",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_155",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_156",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_160",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_161",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_157",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_159",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_164",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_158",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_162",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_163",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_165",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_166",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_167",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_169",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_173",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_168",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_172",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_175",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_176",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_171",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_174",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_170",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_177",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_178",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_180",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_179",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_181",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_183",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_187",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_182",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_184",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_190",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_185",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_188",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_186",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_189",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_191",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_197",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_195",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_192",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_199",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_201",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_196",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_193",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_021",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_200",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_143",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_194",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_042",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_204",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_023",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_212",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_022",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_215",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_214",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_206",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_001",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_024",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_121",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_213",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_217",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_216",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_218",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_224",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_223",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_225",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_219",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_221",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+      "verdict": "distractor_weak",
+      "correct_answer": "B",
+      "issues": [
+        "Distractors A, C, and D are extremely weak/absurd and do not reflect common literary or linguistic misconceptions."
+      ],
+      "suggested_distractor_fix": {
+        "letter": "A",
+        "replacement": "The emotional atmosphere created for the reader (Mood)"
+      },
+      "confidence": "high"
     },
     {
       "id": "acc_222",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_227",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_220",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_226",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_228",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_230",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_231",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_238",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_232",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_234",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_235",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_237",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_233",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_236",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_239",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_229",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_241",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+      "verdict": "explanation_wrong",
+      "correct_answer": "D",
+      "issues": [
+        "The explanation incorrectly refers to choice A instead of choice D when describing the error."
+      ],
+      "suggested_distractor_fix": null,
+      "confidence": "high"
     },
     {
       "id": "acc_240",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_025",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_247",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_243",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_244",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_249",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_245",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_250",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_251",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_248",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_254",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_253",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+      "verdict": "multiple",
+      "correct_answer": "null",
+      "issues": [
+        "Both B and C contain clear redundancies."
+      ],
+      "suggested_distractor_fix": {
+        "letter": "B",
+        "replacement": "He received a performance bonus."
+      },
+      "confidence": "high"
     },
     {
       "id": "acc_252",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_255",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_256",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_261",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_258",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_257",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_266",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_264",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_263",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_260",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_259",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_267",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_265",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_262",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_269",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_268",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+      "verdict": "answer_wrong",
+      "correct_answer": "A",
+      "issues": [
+        "marked answer is B while explanation correctly calculates 11 which is A"
+      ],
+      "suggested_distractor_fix": null,
+      "confidence": "high"
     },
     {
       "id": "acc_271",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_273",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_272",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_278",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_270",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_274",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_277",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_275",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_279",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_280",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_281",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_276",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_282",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_205",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_026",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_011",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_288",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_293",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+      "verdict": "answer_wrong",
+      "correct_answer": "A",
+      "issues": [
+        "The explanation correctly calculates 8% but the marked answer is C (which corresponds to 2%) instead of A."
+      ],
+      "suggested_distractor_fix": null,
+      "confidence": "high"
     },
     {
       "id": "acc_290",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_203",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_287",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_207",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_291",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_294",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+      "verdict": "answer_wrong",
+      "correct_answer": "A",
+      "issues": [
+        "The marked answer C is incorrect based on the provided correct mathematical derivation in the explanation which results in k = -1 (Option A)."
+      ],
+      "suggested_distractor_fix": null,
+      "confidence": "high"
     },
     {
       "id": "acc_292",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_296",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_295",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+      "verdict": "answer_wrong",
+      "correct_answer": "null",
+      "issues": [
+        "The marked answer B is incorrect according to the explanation's own calculation (k = -1).",
+        "The calculated correct value (k = -1) is not present among the provided choices (A: -3, B: -2, C: 0, D: 2)."
+      ],
+      "suggested_distractor_fix": {
+        "letter": "B",
+        "replacement": "-1"
+      },
+      "confidence": "high"
     },
     {
       "id": "acc_297",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_298",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_299",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
-    },
-    {
-      "id": "acc_300",
-      "verdict": "error",
-      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+      "verdict": "answer_wrong",
+      "correct_answer": "A",
+      "issues": [
+        "The marked answer C is incorrect based on the steps provided in the explanation.",
+        "The explanation correctly calculates 8x^4/y, but then concludes that the answer is C, even though the expression 8x^4/y matches choice A."
+      ],
+      "suggested_distractor_fix": null,
+      "confidence": "high"
     }
   ],
-  "concept_duplicate_clusters": []
+  "ai_review_errors": [],
+  "concept_duplicate_clusters": [
+    {
+      "size": 4,
+      "avg_similarity": 0.862,
+      "members": [
+        {
+          "id": "acc_004",
+          "answer": "B",
+          "question": "If a car travels 240 miles in 4 hours, what is its average speed?"
+        },
+        {
+          "id": "acc_199",
+          "answer": "D",
+          "question": "A train travels at 60 mph. How far does it travel in 2.5 hours?"
+        },
+        {
+          "id": "acc_258",
+          "answer": "C",
+          "question": "A car travels 180 miles in 3 hours. What is its average speed in miles per hour?"
+        },
+        {
+          "id": "acc_265",
+          "answer": "A",
+          "question": "If a car travels at an average speed of 60 miles per hour, how far will it travel in 2.5 hours?"
+        }
+      ]
+    },
+    {
+      "size": 3,
+      "avg_similarity": 0.933,
+      "members": [
+        {
+          "id": "acc_024",
+          "answer": "A",
+          "question": "A shirt originally costs $40 and is marked down 25%. What is the sale price?"
+        },
+        {
+          "id": "acc_250",
+          "answer": "B",
+          "question": "If a shirt costs $25 and is on sale for 20% off, what is the sale price?"
+        },
+        {
+          "id": "acc_263",
+          "answer": "A",
+          "question": "A store is having a sale where all items are 25% off. If a shirt originally costs $40, what is the sale price?"
+        }
+      ]
+    },
+    {
+      "size": 2,
+      "avg_similarity": 0.972,
+      "members": [
+        {
+          "id": "acc_045",
+          "answer": "A",
+          "question": "Simplify: \u221a72"
+        },
+        {
+          "id": "acc_274",
+          "answer": "D",
+          "question": "Simplify the expression: sqrt(72)."
+        }
+      ]
+    },
+    {
+      "size": 2,
+      "avg_similarity": 0.967,
+      "members": [
+        {
+          "id": "acc_126",
+          "answer": "A",
+          "question": "What is \u221a81?"
+        },
+        {
+          "id": "acc_254",
+          "answer": "C",
+          "question": "What is the value of $\\sqrt{81}$?"
+        }
+      ]
+    },
+    {
+      "size": 2,
+      "avg_similarity": 0.959,
+      "members": [
+        {
+          "id": "acc_013",
+          "answer": "C",
+          "question": "Which sentence demonstrates correct parallel structure?"
+        },
+        {
+          "id": "acc_224",
+          "answer": "C",
+          "question": "Choose the sentence that uses parallel structure correctly."
+        }
+      ]
+    },
+    {
+      "size": 2,
+      "avg_similarity": 0.892,
+      "members": [
+        {
+          "id": "acc_080",
+          "answer": "B",
+          "question": "Simplify: (x + 3)\u00b2 "
+        },
+        {
+          "id": "acc_125",
+          "answer": "B",
+          "question": "Simplify: (x\u00b3)\u00b2"
+        }
+      ]
+    },
+    {
+      "size": 2,
+      "avg_similarity": 0.884,
+      "members": [
+        {
+          "id": "acc_129",
+          "answer": "A",
+          "question": "What is the median of: 12, 7, 3, 15, 9?"
+        },
+        {
+          "id": "acc_277",
+          "answer": "A",
+          "question": "What is the median of the following set of numbers: {10, 5, 15, 8, 12}?"
+        }
+      ]
+    },
+    {
+      "size": 2,
+      "avg_similarity": 0.871,
+      "members": [
+        {
+          "id": "acc_006",
+          "answer": "D",
+          "question": "The word 'ubiquitous' most nearly means:"
+        },
+        {
+          "id": "acc_219",
+          "answer": "C",
+          "question": "The term 'ubiquitous' means present, appearing, or found everywhere. For example, smartphones have become ubiquitous in modern society, as t"
+        }
+      ]
+    },
+    {
+      "size": 2,
+      "avg_similarity": 0.871,
+      "members": [
+        {
+          "id": "acc_018",
+          "answer": "A",
+          "question": "Which transition word best shows contrast?"
+        },
+        {
+          "id": "acc_082",
+          "answer": "A",
+          "question": "Which word signal indicates a contrast?"
+        }
+      ]
+    },
+    {
+      "size": 2,
+      "avg_similarity": 0.868,
+      "members": [
+        {
+          "id": "acc_283",
+          "answer": "C",
+          "question": "What is the domain of the function f(x) = \u221a(x^2 - 4)?"
+        },
+        {
+          "id": "acc_115",
+          "answer": "B",
+          "question": "If g(x) = \u221a(x + 4), what is the domain?"
+        }
+      ]
+    },
+    {
+      "size": 2,
+      "avg_similarity": 0.867,
+      "members": [
+        {
+          "id": "acc_066",
+          "answer": "C",
+          "question": "Express 7/20 as a percent."
+        },
+        {
+          "id": "acc_151",
+          "answer": "C",
+          "question": "What is 7/10 as a percent?"
+        }
+      ]
+    },
+    {
+      "size": 2,
+      "avg_similarity": 0.867,
+      "members": [
+        {
+          "id": "acc_023",
+          "answer": "A",
+          "question": "Identify the sentence with correct subject-verb agreement:"
+        },
+        {
+          "id": "acc_221",
+          "answer": "B",
+          "question": "Which of the following sentences demonstrates correct subject-verb agreement?"
+        }
+      ]
+    },
+    {
+      "size": 2,
+      "avg_similarity": 0.865,
+      "members": [
+        {
+          "id": "acc_051",
+          "answer": "A",
+          "question": "Reduce 18/24 to lowest terms."
+        },
+        {
+          "id": "acc_141",
+          "answer": "C",
+          "question": "Simplify: 24/32"
+        }
+      ]
+    },
+    {
+      "size": 2,
+      "avg_similarity": 0.864,
+      "members": [
+        {
+          "id": "acc_190",
+          "answer": "C",
+          "question": "What is the GCF of 12x\u00b3 and 18x\u00b2?"
+        },
+        {
+          "id": "acc_251",
+          "answer": "D",
+          "question": "What is the greatest common divisor (GCD) of 12 and 18?"
+        }
+      ]
+    },
+    {
+      "size": 2,
+      "avg_similarity": 0.86,
+      "members": [
+        {
+          "id": "acc_005",
+          "answer": "D",
+          "question": "Factor completely: x\u00b2 - 9"
+        },
+        {
+          "id": "acc_288",
+          "answer": "D",
+          "question": "Simplify the expression: (x^2 - 9) / (x^2 - 2x - 3)"
+        }
+      ]
+    }
+  ]
 }
