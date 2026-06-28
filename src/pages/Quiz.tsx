@@ -41,6 +41,12 @@ import { EXAM_CONFIGS } from "@/utils/examConfig";
 import { actScienceQuestions } from "@/data/actScienceQuestions";
 import { interleaveQuestions } from "@/utils/questionInterleaver";
 import { SEO } from "@/components/SEO";
+import {
+  saveQuizResume,
+  loadQuizResume,
+  clearQuizResume,
+  currentQuizUrl,
+} from "@/lib/quizResume";
 
 type CombinedQuestion = (Question | EnglishQuestion | VisualQuestion | ImageQuestion) & { type: "math" | "english" | "science"; difficultyRating?: number };
 
@@ -78,6 +84,10 @@ const Quiz = () => {
 
   const [quizQuestions, setQuizQuestions] = useState<CombinedQuestion[]>([]);
   const [isLoading, setIsLoading] = useState(true);
+
+  // Resume snapshot (read once on mount, keyed by URL so /quiz?subject=math&count=10 etc. are distinct).
+  const resumeUrl = currentQuizUrl();
+  const [resumeSnapshot] = useState(() => loadQuizResume(resumeUrl));
 
   useEffect(() => {
     // Defer heavy computation to avoid blocking the main thread on iPhone
@@ -230,7 +240,9 @@ const Quiz = () => {
 
   // isAdvancedSubject is now defined at the top of the component
 
-  const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
+  const [currentQuestionIndex, setCurrentQuestionIndex] = useState(
+    resumeSnapshot?.questionIndex ?? 0
+  );
   const [selectedAnswer, setSelectedAnswer] = useState<string | null>(null);
   const [showResult, setShowResult] = useState(false);
   const [score, setScore] = useState(0);
@@ -257,6 +269,7 @@ const Quiz = () => {
     questionCount: quizQuestions.length,
     enabled: timerEnabled && !isAdvancedSubject,
     onTimeUp: () => { setQuizEndTime(Date.now()); setFinished(true); },
+    initialTimeRemaining: resumeSnapshot?.timeRemaining,
   });
 
   // Pause timer when showing results
