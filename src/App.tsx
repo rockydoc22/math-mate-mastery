@@ -6,6 +6,7 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter } from "react-router-dom";
 import { AuthProvider } from "@/hooks/useAuth";
+import { SignInPromptProvider } from "@/components/SignInPromptProvider";
 import { PWAUpdatePrompt } from "@/components/PWAUpdatePrompt";
 import AppRoutes from "@/routes/AppRoutes";
 
@@ -30,9 +31,11 @@ const App = () => (
         <BrowserRouter>
           <ErrorBoundary>
             <Suspense fallback={<PageLoader />}>
-              <main id="main-content">
-                <AppRoutes />
-              </main>
+              <SignInPromptProvider>
+                <main id="main-content">
+                  <AppRoutes />
+                </main>
+              </SignInPromptProvider>
             </Suspense>
           </ErrorBoundary>
         </BrowserRouter>

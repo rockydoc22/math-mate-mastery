@@ -53,6 +53,12 @@ const Auth = () => {
       : "signIn";
   
   const [mode, setMode] = useState<AuthMode>(initialMode);
+  // Safe returnTo: relative paths only, never absolute URLs (prevents open redirect).
+  const rawReturnTo = searchParams.get("returnTo") || "/";
+  const returnTo =
+    rawReturnTo.startsWith("/") && !rawReturnTo.startsWith("//")
+      ? rawReturnTo
+      : "/";
   const [loading, setLoading] = useState(false);
   const [googleLoading, setGoogleLoading] = useState(false);
   const [showPassword, setShowPassword] = useState(false);
@@ -106,8 +112,8 @@ const Auth = () => {
 
   useEffect(() => {
     // Don't redirect if in reset password mode
-    if (user && mode !== "resetPassword") navigate("/");
-  }, [user, navigate, mode]);
+    if (user && mode !== "resetPassword") navigate(returnTo, { replace: true });
+  }, [user, navigate, mode, returnTo]);
 
   // SECURITY NOTE:
   // We intentionally do not perform username<->email lookups client-side.
