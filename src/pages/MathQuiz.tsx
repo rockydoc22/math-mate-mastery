@@ -250,7 +250,7 @@ const MathQuiz = () => {
           <div className="space-y-3">
             <div className="flex items-center justify-between">
               <h2 className="text-xl font-bold">
-                Question {currentQuestionIndex + 1} of {questions.length}
+                Question {currentQuestionIndex + 1} of {activeQuestions.length}
               </h2>
               <span className="text-sm font-medium px-4 py-2 bg-primary/10 text-primary rounded-full">
                 Score: {score}/{currentQuestionIndex + (showResult ? 1 : 0)}
@@ -299,7 +299,7 @@ const MathQuiz = () => {
                 size="lg"
                 className="w-full"
               >
-                {currentQuestionIndex < questions.length - 1 ? (
+                {currentQuestionIndex < activeQuestions.length - 1 ? (
                   <>
                     Next Question
                     <ArrowRight className="ml-2 w-4 h-4" />
