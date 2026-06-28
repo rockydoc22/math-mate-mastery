@@ -178,7 +178,7 @@ export const QuizCard = ({ question: rawQuestion, selectedAnswer, onSelectAnswer
                     className="w-full justify-start gap-2 text-xs sm:text-sm"
                   >
                     <Lightbulb className="w-4 h-4 text-amber-500" />
-                    {showKeyConcept ? 'Hide' : 'Show'} SAT Key Concept
+                    {showKeyConcept ? 'Hide' : 'Show'} Key Concept
                   </Button>
 
                   {showKeyConcept && (

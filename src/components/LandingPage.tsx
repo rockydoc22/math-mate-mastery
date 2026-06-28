@@ -204,7 +204,9 @@ export const LandingPage = () => {
             </div>
           ))}
           <p className="text-center text-xs text-muted-foreground pt-2">
-            50,000+ practice questions across all exams
+            {liveQuestionCount
+              ? `${liveQuestionCount.toLocaleString()}+ practice questions across all exams`
+              : 'Thousands of practice questions across every major test'}
           </p>
         </div>
       </section>
