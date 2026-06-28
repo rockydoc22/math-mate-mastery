@@ -7,24 +7,34 @@ export interface QuizTimerOptions {
   questionCount: number;
   enabled?: boolean;
   onTimeUp?: () => void;
+  /** If provided (>0), the timer resumes from this many seconds instead of the full budget. */
+  initialTimeRemaining?: number;
 }
 
-export const useQuizTimer = ({ questionCount, enabled = true, onTimeUp }: QuizTimerOptions) => {
+export const useQuizTimer = ({ questionCount, enabled = true, onTimeUp, initialTimeRemaining }: QuizTimerOptions) => {
   const totalSeconds = questionCount * SECONDS_PER_QUESTION;
-  const [timeRemaining, setTimeRemaining] = useState(totalSeconds);
+  const startSeconds =
+    typeof initialTimeRemaining === "number" && initialTimeRemaining > 0
+      ? Math.min(initialTimeRemaining, totalSeconds || initialTimeRemaining)
+      : totalSeconds;
+  const [timeRemaining, setTimeRemaining] = useState(startSeconds);
   const [isRunning, setIsRunning] = useState(enabled);
   const [isTimeUp, setIsTimeUp] = useState(false);
-  const [deadlineMs, setDeadlineMs] = useState<number | null>(enabled && totalSeconds > 0 ? Date.now() + totalSeconds * 1000 : null);
+  const [deadlineMs, setDeadlineMs] = useState<number | null>(enabled && startSeconds > 0 ? Date.now() + startSeconds * 1000 : null);
 
   // Re-initialize timer when questionCount changes (questions load async)
   useEffect(() => {
     if (totalSeconds > 0) {
-      setTimeRemaining(totalSeconds);
+      const seed =
+        typeof initialTimeRemaining === "number" && initialTimeRemaining > 0
+          ? Math.min(initialTimeRemaining, totalSeconds)
+          : totalSeconds;
+      setTimeRemaining(seed);
       setIsRunning(enabled);
       setIsTimeUp(false);
-      setDeadlineMs(enabled ? Date.now() + totalSeconds * 1000 : null);
+      setDeadlineMs(enabled ? Date.now() + seed * 1000 : null);
     }
-  }, [totalSeconds, enabled]);
+  }, [totalSeconds, enabled, initialTimeRemaining]);
 
   // Format time as MM:SS
   const formatTime = useCallback((seconds: number) => {
