@@ -70,6 +70,10 @@ const PRESETS: Array<{ key: string; priority: number; jobs: Array<{ label: strin
     jobs: [
       { label: "GED · Math", target: 300, spec: { exam_family: "ged", test_code: "ged-math", section: "math", domain: "ged-math", skill: "algebra, geometry, data analysis", difficulty_min: 2, difficulty_max: 7 } },
       { label: "GED · RLA", target: 300, spec: { exam_family: "ged", test_code: "ged-rla", section: "rla", domain: "ged-rla", skill: "reading, language, and extended response", difficulty_min: 2, difficulty_max: 7 } },
+      { label: "GED · Science", target: 300, spec: { exam_family: "ged", test_code: "ged-science", section: "science", domain: "ged-science", skill: "life, physical, and earth science reasoning", difficulty_min: 2, difficulty_max: 7 } },
+      { label: "GED · Social Studies", target: 300, spec: { exam_family: "ged", test_code: "ged-social-studies", section: "social-studies", domain: "ged-social-studies", skill: "civics, US history, economics, geography", difficulty_min: 2, difficulty_max: 7 } },
+      { label: "ACT · English", target: 300, spec: { exam_family: "act", test_code: "act-english", section: "english", domain: "usage-mechanics", skill: "grammar, punctuation, sentence structure, rhetoric", difficulty_min: 3, difficulty_max: 8 } },
+      { label: "ACT · Reading", target: 300, spec: { exam_family: "act", test_code: "act-reading", section: "reading", domain: "reading-comprehension", skill: "literary narrative, social science, humanities, natural science passages", difficulty_min: 3, difficulty_max: 8 } },
     ],
   },
 ];
