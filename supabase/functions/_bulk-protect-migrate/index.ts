@@ -1,5 +1,4 @@
 import { createClient } from "https://esm.sh/@supabase/supabase-js@2";
-import { requireUser } from "../_shared/auth.ts";
 
 const corsHeaders = {
   "Access-Control-Allow-Origin": "*",
@@ -15,22 +14,15 @@ Deno.serve(async (req) => {
   if (req.method === "OPTIONS") return new Response("ok", { headers: corsHeaders });
   if (req.method !== "POST") return new Response("method", { status: 405, headers: corsHeaders });
 
-  const auth = await requireUser(req);
-  if (auth instanceof Response) return auth;
+  const secret = req.headers.get("x-cron-secret");
+  if (!secret || secret !== Deno.env.get("CRON_SECRET")) {
+    return new Response(JSON.stringify({ error: "unauthorized" }), { status: 401, headers: { ...corsHeaders, "Content-Type": "application/json" } });
+  }
 
   const admin = createClient(
     Deno.env.get("SUPABASE_URL") ?? "",
     Deno.env.get("SUPABASE_SERVICE_ROLE_KEY") ?? "",
   );
-
-  // admin role check
-  const { data: roleRow } = await admin
-    .from("user_roles")
-    .select("role")
-    .eq("user_id", auth.userId)
-    .eq("role", "admin")
-    .maybeSingle();
-  if (!roleRow) return new Response(JSON.stringify({ error: "forbidden" }), { status: 403, headers: { ...corsHeaders, "Content-Type": "application/json" } });
 
   const body = await req.json().catch(() => ({}));
   const items: Array<{ source: string; dest: string; contentType?: string }> = body.items ?? [];
