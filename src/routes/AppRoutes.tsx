@@ -148,9 +148,9 @@ const AppRoutes = () => (
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/landing" element={<LandingPage />} />
-      <Route path="/quiz" element={<Quiz />} />
-      <Route path="/math" element={<MathQuiz />} />
-      <Route path="/english" element={<EnglishQuiz />} />
+      <Route path="/quiz" element={<ProtectedRoute><Quiz /></ProtectedRoute>} />
+      <Route path="/math" element={<ProtectedRoute><MathQuiz /></ProtectedRoute>} />
+      <Route path="/english" element={<ProtectedRoute><EnglishQuiz /></ProtectedRoute>} />
       <Route path="/admin" element={<ProtectedRoute><Admin /></ProtectedRoute>} />
       <Route path="/admin/seed-questions" element={<ProtectedRoute><AdminSeedQuestions /></ProtectedRoute>} />
       <Route path="/admin/bulk-generate" element={<ProtectedRoute><AdminBulkGenerate /></ProtectedRoute>} />
@@ -255,13 +255,13 @@ const AppRoutes = () => (
       <Route path="/personality-enneagram" element={<PersonalityEnneagram />} />
       <Route path="/personality-strengths" element={<PersonalityStrengths />} />
       <Route path="/high-school-exams" element={<HighSchoolExams />} />
-      <Route path="/k12-exams" element={<K12Exams />} />
-      <Route path="/k12-exam/:examId" element={<K12ExamQuiz />} />
-      <Route path="/k12-daily" element={<K12DailyChallenge />} />
+      <Route path="/k12-exams" element={<ProtectedRoute><K12Exams /></ProtectedRoute>} />
+      <Route path="/k12-exam/:examId" element={<ProtectedRoute><K12ExamQuiz /></ProtectedRoute>} />
+      <Route path="/k12-daily" element={<ProtectedRoute><K12DailyChallenge /></ProtectedRoute>} />
       <Route path="/survival" element={<SurvivalModePage />} />
-      <Route path="/k12-tutor/:examId" element={<K12AdaptiveTutor />} />
+      <Route path="/k12-tutor/:examId" element={<ProtectedRoute><K12AdaptiveTutor /></ProtectedRoute>} />
       <Route path="/practice-tools" element={<PracticeTools />} />
-      <Route path="/story-missions" element={<StoryMissions />} />
+      <Route path="/story-missions" element={<ProtectedRoute><StoryMissions /></ProtectedRoute>} />
       <Route path="/booster" element={<ProtectedRoute><BoosterTest /></ProtectedRoute>} />
       <Route path="/study-guide" element={<ProtectedRoute><PersonalStudyGuide /></ProtectedRoute>} />
       <Route path="/adaptive" element={<ProtectedRoute><AdaptiveDashboard /></ProtectedRoute>} />
