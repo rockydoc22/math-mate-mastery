@@ -10,18 +10,18 @@ interface StarterRawQuestion {
   exam: string;
   section: string;
   skill: string;
-  difficulty: string;
+  difficulty: number;
   question: string;
   options: { label: string; text: string }[];
   correctAnswer: string;
   explanation: string;
 }
 
-const difficultyMap: Record<string, number> = {
-  easy: 4,
-  medium: 6,
-  hard: 8,
-};
+function difficultyLabel(d: number): string {
+  if (d <= 3) return 'Easy';
+  if (d <= 6) return 'Medium';
+  return 'Hard';
+}
 
 function convertStarterQuestion(raw: StarterRawQuestion): Question {
   return {
@@ -30,10 +30,10 @@ function convertStarterQuestion(raw: StarterRawQuestion): Question {
     options: raw.options.map(o => ({ letter: o.label, text: o.text })),
     correctAnswer: raw.correctAnswer,
     explanation: raw.explanation,
-    difficulty: raw.difficulty.charAt(0).toUpperCase() + raw.difficulty.slice(1),
+    difficulty: difficultyLabel(raw.difficulty),
     domain: raw.section,
     skill: raw.skill,
-    difficultyRating: difficultyMap[raw.difficulty.toLowerCase()] ?? 6,
+    difficultyRating: raw.difficulty,
   };
 }
 

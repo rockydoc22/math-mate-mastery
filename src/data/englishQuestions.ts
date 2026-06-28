@@ -72,7 +72,7 @@ interface RawEnglishQuestion {
   id: number;
   category: string;
   subcategory: string;
-  difficulty: string;
+  difficulty: number;
   question: string;
   optionA: string;
   optionB: string;
@@ -83,6 +83,12 @@ interface RawEnglishQuestion {
 }
 
 // Transform raw JSON questions to our EnglishQuestion format with difficulty ratings
+function difficultyLabel(d: number): string {
+  if (d <= 3) return 'Easy';
+  if (d <= 6) return 'Medium';
+  return 'Hard';
+}
+
 const baseEnglishQuestions: EnglishQuestion[] = (englishQuestionsRaw as unknown as RawEnglishQuestion[]).map((q) => {
   const options = [
     { letter: "A", text: q.optionA },
@@ -96,7 +102,7 @@ const baseEnglishQuestions: EnglishQuestion[] = (englishQuestionsRaw as unknown 
     options,
     correctAnswer: q.correct,
     explanation: q.explanation,
-    difficulty: q.difficulty.charAt(0).toUpperCase() + q.difficulty.slice(1),
+    difficulty: difficultyLabel(q.difficulty),
     domain: q.category,
     skill: q.subcategory,
     difficultyRating: rateDifficulty(q.question, options, q.category, q.subcategory)
