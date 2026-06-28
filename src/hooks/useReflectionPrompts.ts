@@ -1,4 +1,5 @@
 import { useEffect, useMemo, useState } from "react";
+import { fetchProtectedJson } from "@/lib/protectedAsset";
 
 export interface ReflectionPrompt {
   id: string;
@@ -28,8 +29,7 @@ const FALLBACK: ReflectionPrompt[] = [
 async function loadPrompts(): Promise<ReflectionPrompt[]> {
   if (cache) return cache;
   if (inflight) return inflight;
-  inflight = fetch("/data/reflection_journal_prompts.json")
-    .then((r) => (r.ok ? r.json() : { reflection_prompts: [] }))
+  inflight = fetchProtectedJson<{ reflection_prompts?: ReflectionPrompt[] }>("ai/reflection_journal_prompts.json")
     .then((j) => {
       cache = (j?.reflection_prompts as ReflectionPrompt[]) || [];
       return cache;
