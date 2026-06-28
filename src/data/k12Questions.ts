@@ -1,4 +1,5 @@
 import { Question } from './questions';
+import { fetchProtectedJson } from '@/lib/protectedAsset';
 
 // Raw format from the 30k+ packs (choices as object)
 interface RawK12PackQuestion {
@@ -60,9 +61,10 @@ function convertLegacyQuestion(raw: RawLegacyQuestion): Question {
   };
 }
 
-// Pack files served from public/ — fetched at runtime, not bundled
-const PACK_FILES = Array.from({ length: 18 }, (_, i) =>
-  `/data/k12_pack_${String(i + 1).padStart(2, '0')}.json`
+// Pack files live in the private `protected-content` storage bucket and are
+// fetched through the `protected-asset` edge function (auth required).
+const PACK_PATHS = Array.from({ length: 18 }, (_, i) =>
+  `k12/k12_pack_${String(i + 1).padStart(2, '0')}.json`
 );
 
 // Legacy file importers (small files, safe to bundle)
@@ -86,7 +88,7 @@ async function loadAllPacks(): Promise<void> {
   _packPromise = (async () => {
     // Load pack files in parallel via fetch (not bundled by Vite)
     const results = await Promise.allSettled(
-      PACK_FILES.map(url => fetch(url).then(r => r.json()))
+      PACK_PATHS.map(path => fetchProtectedJson<any>(path))
     );
 
     for (const result of results) {
