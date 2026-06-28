@@ -3,12 +3,12 @@
     "id": "AP_Biology_1",
     "question": "Which of the following best describes the role of DNA helicase during DNA replication?",
     "choices": {
-      "A": "It unwinds the double helix by breaking hydrogen bonds between complementary base pairs",
+      "A": "It adds an RNA primer to initiate replication",
       "B": "It synthesizes new DNA strands in the 5' to 3' direction",
       "C": "It joins Okazaki fragments on the lagging strand",
-      "D": "It adds an RNA primer to initiate replication"
+      "D": "It unwinds the double helix by breaking hydrogen bonds between complementary base pairs"
     },
-    "answer": "A",
+    "answer": "D",
     "difficulty": 7,
     "explanation": "DNA helicase unwinds the double-stranded DNA by breaking the hydrogen bonds between the nitrogenous bases, creating the replication fork."
   },
@@ -23,7 +23,7 @@
     },
     "answer": "A",
     "difficulty": 8,
-    "explanation": "p = 0.8, q = 0.2. Heterozygous frequency = 2pq = 2(0.8)(0.2) = 0.32. Number = 0.32 \u00d7 500 = 160."
+    "explanation": "p = 0.8, q = 0.2. Heterozygous frequency = 2pq = 2(0.8)(0.2) = 0.32. Number = 0.32 × 500 = 160."
   },
   {
     "id": "AP_Biology_3",
@@ -62,7 +62,7 @@
     },
     "answer": "A",
     "difficulty": 8,
-    "explanation": "Auxin demonstrates this exact behavior\u2014the same concentration promotes stem elongation but inhibits root growth, illustrating tissue-specific sensitivity thresholds."
+    "explanation": "Auxin demonstrates this exact behavior—the same concentration promotes stem elongation but inhibits root growth, illustrating tissue-specific sensitivity thresholds."
   },
   {
     "id": "AP_Biology_6",
@@ -88,20 +88,20 @@
     },
     "answer": "A",
     "difficulty": 9,
-    "explanation": "With 4 possible bases at each position, a 6-bp site occurs on average every 4\u2076 = 4,096 bp."
+    "explanation": "With 4 possible bases at each position, a 6-bp site occurs on average every 4⁶ = 4,096 bp."
   },
   {
     "id": "AP_Biology_8",
-    "question": "In C\u2084 photosynthesis, the initial fixation of CO\u2082 occurs in:",
+    "question": "In C₄ photosynthesis, the initial fixation of CO₂ occurs in:",
     "choices": {
-      "A": "Mesophyll cells, where PEP carboxylase fixes CO\u2082 into a 4-carbon compound",
-      "B": "Bundle sheath cells, where RuBisCO fixes CO\u2082 into a 3-carbon compound",
-      "C": "Guard cells, where carbonic anhydrase converts CO\u2082 to bicarbonate",
-      "D": "Mesophyll cells, where RuBisCO directly fixes CO\u2082"
+      "A": "Mesophyll cells, where PEP carboxylase fixes CO₂ into a 4-carbon compound",
+      "B": "Bundle sheath cells, where RuBisCO fixes CO₂ into a 3-carbon compound",
+      "C": "Guard cells, where carbonic anhydrase converts CO₂ to bicarbonate",
+      "D": "Mesophyll cells, where RuBisCO directly fixes CO₂"
     },
     "answer": "A",
     "difficulty": 8,
-    "explanation": "In C\u2084 plants, PEP carboxylase in mesophyll cells initially fixes CO\u2082 into oxaloacetate (4-carbon). CO\u2082 is later released and refixed by RuBisCO in bundle sheath cells."
+    "explanation": "In C₄ plants, PEP carboxylase in mesophyll cells initially fixes CO₂ into oxaloacetate (4-carbon). CO₂ is later released and refixed by RuBisCO in bundle sheath cells."
   },
   {
     "id": "AP_Biology_9",
@@ -140,7 +140,7 @@
     },
     "answer": "A",
     "difficulty": 7,
-    "explanation": "Second messengers like cAMP amplify signals through a cascade: one activated receptor \u2192 many cAMP molecules \u2192 many activated kinases \u2192 large cellular response."
+    "explanation": "Second messengers like cAMP amplify signals through a cascade: one activated receptor → many cAMP molecules → many activated kinases → large cellular response."
   },
   {
     "id": "AP_Biology_12",
@@ -159,10 +159,10 @@
     "id": "AP_Biology_13",
     "question": "Which of the following correctly pairs a biome with its characteristic feature?",
     "choices": {
-      "A": "Tropical rainforest \u2014 high biodiversity and stratified canopy layers",
-      "B": "Tundra \u2014 dense deciduous forests with rich soil",
-      "C": "Desert \u2014 high annual precipitation and low evaporation",
-      "D": "Taiga \u2014 broadleaf evergreen trees dominant"
+      "A": "Tropical rainforest — high biodiversity and stratified canopy layers",
+      "B": "Tundra — dense deciduous forests with rich soil",
+      "C": "Desert — high annual precipitation and low evaporation",
+      "D": "Taiga — broadleaf evergreen trees dominant"
     },
     "answer": "A",
     "difficulty": 6,
@@ -211,14 +211,14 @@
     "id": "AP_Biology_17",
     "question": "A population of rabbits shows the following genotype frequencies: AA = 0.49, Aa = 0.42, aa = 0.09. Is this population in Hardy-Weinberg equilibrium?",
     "choices": {
-      "A": "Yes, because the observed frequencies match the expected HW frequencies (p=0.7, q=0.3)",
+      "A": "Cannot be determined without knowing population size",
       "B": "No, because there are too many heterozygotes",
       "C": "No, because the allele frequencies don't add to 1",
-      "D": "Cannot be determined without knowing population size"
+      "D": "Yes, because the observed frequencies match the expected HW frequencies (p=0.7, q=0.3)"
     },
-    "answer": "A",
+    "answer": "D",
     "difficulty": 8,
-    "explanation": "p = freq(A) = 0.49 + 0.42/2 = 0.7. q = 0.3. Expected: p\u00b2 = 0.49, 2pq = 0.42, q\u00b2 = 0.09. These match the observed frequencies."
+    "explanation": "p = freq(D) = 0.49 + 0.42/2 = 0.7. q = 0.3. Expected: p² = 0.49, 2pq = 0.42, q² = 0.09. These match the observed frequencies."
   },
   {
     "id": "AP_Biology_18",
@@ -273,45 +273,6 @@
     "explanation": "The leveling off of population growth describes the plateau phase of logistic growth, where the population reaches its carrying capacity (K). At this point, density-dependent factors such as limited physical space, accumulation of waste products, or competition keep birth and death rates equal. This is distinct from exponential growth, where resources are truly unlimited and the population continues to expand."
   },
   {
-    "id": "AP_Biology_22",
-    "question": "Consider the following DNA sequence: 5'-ATGCCTAG-3'. If this sequence undergoes replication, what will be the sequence of the newly synthesized complementary strand?",
-    "choices": {
-      "A": "3'-TACGGATC-5'",
-      "B": "5'-TACGGATC-3'",
-      "C": "3'-UACGGAGC-5'",
-      "D": "5'-ATGCCTAG-3'"
-    },
-    "answer": "A",
-    "difficulty": 3,
-    "explanation": "DNA replication is antiparallel, meaning the new strand runs in the opposite direction. Base pairing rules dictate that A pairs with T, and G pairs with C. Therefore, the complementary sequence to 5'-ATGCCTAG-3' will be 3'-TACGGATC-5'."
-  },
-  {
-    "id": "AP_Biology_23",
-    "question": "Which of the following cellular structures is primarily responsible for the synthesis of lipids and detoxification of poisons?",
-    "choices": {
-      "A": "Rough endoplasmic reticulum",
-      "B": "Golgi apparatus",
-      "C": "Smooth endoplasmic reticulum",
-      "D": "Lysosome"
-    },
-    "answer": "C",
-    "difficulty": 3,
-    "explanation": "The smooth endoplasmic reticulum lacks ribosomes and is involved in lipid synthesis, steroid hormone production, and detoxification of drugs and poisons. The rough ER has ribosomes and is involved in protein synthesis and modification. The Golgi apparatus processes and packages proteins and lipids. Lysosomes contain digestive enzymes."
-  },
-  {
-    "id": "AP_Biology_24",
-    "question": "In a plant cell, the rigid outer layer that provides structural support and protection is called the:",
-    "choices": {
-      "A": "Plasma membrane",
-      "B": "Cell wall",
-      "C": "Tonoplast",
-      "D": "Nucleus"
-    },
-    "answer": "B",
-    "difficulty": 1,
-    "explanation": "The cell wall is a characteristic feature of plant cells, providing structural support, maintaining cell shape, and preventing excessive water uptake. The plasma membrane regulates transport. The tonoplast surrounds the central vacuole. The nucleus contains the genetic material."
-  },
-  {
     "id": "AP_Biology_25",
     "question": "A researcher is studying a metabolic pathway that requires the input of ATP. If they add an inhibitor that blocks the activity of an enzyme involved in ATP synthesis, what is the most likely immediate effect on the metabolic pathway?",
     "choices": {
@@ -323,19 +284,6 @@
     "answer": "B",
     "difficulty": 5,
     "explanation": "ATP is the primary energy currency of the cell. If ATP synthesis is inhibited, and the pathway requires ATP, then the pathway will lack the necessary energy to proceed and will slow down or stop."
-  },
-  {
-    "id": "AP_Biology_26",
-    "question": "Which of the following processes involves the movement of water across a selectively permeable membrane from an area of high solute concentration to an area of low solute concentration?",
-    "choices": {
-      "A": "Active transport",
-      "B": "Facilitated diffusion",
-      "C": "Osmosis",
-      "D": "Endocytosis"
-    },
-    "answer": "C",
-    "difficulty": 3,
-    "explanation": "Osmosis is the net movement of water across a selectively permeable membrane from a region of lower solute concentration (higher water potential) to a region of higher solute concentration (lower water potential). Active transport requires energy. Facilitated diffusion uses protein channels but is driven by concentration gradients, not solute concentration across the membrane in this specific way. Endocytosis is bulk transport into the cell."
   },
   {
     "id": "AP_Biology_27",
@@ -377,19 +325,6 @@
     "explanation": "Exponential growth occurs when a population's per capita growth rate remains constant and positive, leading to a rapid, J-shaped increase in population size, assuming unlimited resources. Fluctuating around carrying capacity describes logistic growth. A declining population has a negative growth rate. A slowing growth rate implies logistic growth approaching carrying capacity."
   },
   {
-    "id": "AP_Biology_30",
-    "question": "A molecule of mRNA is synthesized from a DNA template during which process?",
-    "choices": {
-      "A": "Translation",
-      "B": "Replication",
-      "C": "Transcription",
-      "D": "Reverse transcription"
-    },
-    "answer": "C",
-    "difficulty": 2,
-    "explanation": "Transcription is the process where RNA polymerase synthesizes a complementary strand of messenger RNA (mRNA) from a DNA template. Translation synthesizes protein from mRNA. Replication duplicates DNA. Reverse transcription synthesizes DNA from RNA."
-  },
-  {
     "id": "AP_Biology_31",
     "question": "Consider an ecosystem where a new invasive predator is introduced. Which of the following is the most likely immediate consequence for the native prey populations?",
     "choices": {
@@ -400,20 +335,7 @@
     },
     "answer": "B",
     "difficulty": 4,
-    "explanation": "The most immediate and direct consequence of introducing a novel predator to native prey is increased mortality \u2014 prey populations decline because they lack evolved defenses against an unfamiliar predator. This is answer B. While behavioral changes (D) may also occur quickly, behavior is a response to the threat, not the population-level consequence. Answer A is incorrect \u2014 reduced competition is not the immediate effect of predator introduction. Answer C (increased genetic diversity) could occur over many generations through natural selection, but is not an immediate outcome."
-  },
-  {
-    "id": "AP_Biology_32",
-    "question": "The primary function of cellular respiration is to:",
-    "choices": {
-      "A": "Synthesize glucose from carbon dioxide and water.",
-      "B": "Break down organic molecules to generate ATP.",
-      "C": "Synthesize proteins from amino acids.",
-      "D": "Transport molecules across the cell membrane."
-    },
-    "answer": "B",
-    "difficulty": 3,
-    "explanation": "Cellular respiration is the metabolic process where cells break down glucose and other organic molecules in the presence of oxygen to produce adenosine triphosphate (ATP), the main energy currency of the cell."
+    "explanation": "The most immediate and direct consequence of introducing a novel predator to native prey is increased mortality — prey populations decline because they lack evolved defenses against an unfamiliar predator. This is answer B. While behavioral changes (D) may also occur quickly, behavior is a response to the threat, not the population-level consequence. Answer A is incorrect — reduced competition is not the immediate effect of predator introduction. Answer C (increased genetic diversity) could occur over many generations through natural selection, but is not an immediate outcome."
   },
   {
     "id": "AP_Biology_33",
@@ -429,32 +351,6 @@
     "explanation": "Enzymes are proteins with specific three-dimensional structures. High temperatures can disrupt these structures (denaturation), altering the active site and leading to a loss of function. While enzyme activity generally increases with temperature due to increased kinetic energy, this effect is limited by denaturation."
   },
   {
-    "id": "AP_Biology_34",
-    "question": "Which of the following statements best describes a heterozygous genotype?",
-    "choices": {
-      "A": "Having two identical alleles for a particular gene.",
-      "B": "Having two different alleles for a particular gene.",
-      "C": "Expressing the dominant allele's phenotype.",
-      "D": "Expressing the recessive allele's phenotype."
-    },
-    "answer": "B",
-    "difficulty": 3,
-    "explanation": "A heterozygous genotype refers to an individual having two different alleles for a specific gene (e.g., Bb). Homozygous means having two identical alleles (e.g., BB or bb). Phenotype refers to the observable traits."
-  },
-  {
-    "id": "AP_Biology_35",
-    "question": "In a food web, organisms that produce their own food, usually through photosynthesis, are called:",
-    "choices": {
-      "A": "Primary consumers",
-      "B": "Secondary consumers",
-      "C": "Decomposers",
-      "D": "Producers"
-    },
-    "answer": "D",
-    "difficulty": 1,
-    "explanation": "Producers, such as plants and algae, form the base of most food webs. They convert light energy into chemical energy through photosynthesis, making them self-sustaining and providing energy for other trophic levels."
-  },
-  {
     "id": "AP_Biology_36",
     "question": "A cell is placed in a hypotonic solution. Which of the following will occur?",
     "choices": {
@@ -468,19 +364,6 @@
     "explanation": "A hypotonic solution has a lower solute concentration (and thus higher water potential) than the cell's cytoplasm. Water will move by osmosis from the hypotonic solution into the cell, causing it to swell. In animal cells, this can lead to lysis; in plant cells, the cell wall prevents bursting."
   },
   {
-    "id": "AP_Biology_37",
-    "question": "The process by which a cell engulfs large particles or other cells is called:",
-    "choices": {
-      "A": "Pinocytosis",
-      "B": "Phagocytosis",
-      "C": "Exocytosis",
-      "D": "Transcytosis"
-    },
-    "answer": "B",
-    "difficulty": 3,
-    "explanation": "Phagocytosis ('cell eating') is a form of endocytosis where the cell membrane surrounds and engulfs large particles or whole cells. Pinocytosis ('cell drinking') is the uptake of fluids and small solutes. Exocytosis is the release of substances from the cell."
-  },
-  {
     "id": "AP_Biology_38",
     "question": "Which of the following is a key characteristic of a prokaryotic cell?",
     "choices": {
@@ -492,32 +375,6 @@
     "answer": "C",
     "difficulty": 5,
     "explanation": "Prokaryotic cells, like bacteria, lack a membrane-bound nucleus and other membrane-bound organelles. They typically possess a cell wall, often composed of peptidoglycan. Their genetic material is usually a circular chromosome located in the nucleoid region."
-  },
-  {
-    "id": "AP_Biology_39",
-    "question": "The observable physical or biochemical characteristics of an organism, determined by both genetic and environmental factors, are known as its:",
-    "choices": {
-      "A": "Genotype",
-      "B": "Phenotype",
-      "C": "Allele",
-      "D": "Chromosome"
-    },
-    "answer": "B",
-    "difficulty": 1,
-    "explanation": "Phenotype refers to the expressed traits of an organism, which are the result of the interaction between its genotype and the environment. Genotype is the genetic makeup. Alleles are variants of genes. Chromosomes carry genetic information."
-  },
-  {
-    "id": "AP_Biology_40",
-    "question": "If a DNA molecule has the sequence 5'-CGTAAT-3', its complementary strand will have the sequence:",
-    "choices": {
-      "A": "5'-GCATTA-3'",
-      "B": "3'-GCATTA-5'",
-      "C": "5'-GCCAAT-3'",
-      "D": "3'-CGTAAT-5'"
-    },
-    "answer": "B",
-    "difficulty": 3,
-    "explanation": "DNA strands are antiparallel (run in opposite directions) and follow complementary base pairing rules (A with T, C with G). Thus, the complementary strand to 5'-CGTAAT-3' is 3'-GCATTA-5'."
   },
   {
     "id": "AP_Biology_41",
@@ -546,43 +403,17 @@
     "explanation": "A thick, waxy cuticle on leaves is a common adaptation in desert plants to minimize transpiration (water loss) through the leaf surface. Large leaves increase surface area for water loss, shallow roots might dry out quickly, and open stomata during the day lead to significant water loss."
   },
   {
-    "id": "AP_Biology_43",
-    "question": "The process of gamete formation through cell division, resulting in cells with half the number of chromosomes as the parent cell, is called:",
-    "choices": {
-      "A": "Mitosis",
-      "B": "Meiosis",
-      "C": "Fertilization",
-      "D": "Binary fission"
-    },
-    "answer": "B",
-    "difficulty": 2,
-    "explanation": "Meiosis is a type of cell division that reduces the chromosome number by half, producing four genetically distinct haploid gametes (sperm and egg cells). Mitosis produces identical diploid cells. Fertilization is the fusion of gametes. Binary fission is asexual reproduction in prokaryotes."
-  },
-  {
     "id": "AP_Biology_44",
     "question": "In a population of birds, the frequency of the allele for black feathers is 0.4, and the frequency of the allele for white feathers is 0.6. Assuming the population is in Hardy-Weinberg equilibrium, what is the expected frequency of heterozygous individuals?",
     "choices": {
-      "A": "0.48",
+      "A": "0.16",
       "B": "0.24",
       "C": "0.36",
-      "D": "0.16"
+      "D": "0.48"
     },
-    "answer": "A",
+    "answer": "D",
     "difficulty": 7,
     "explanation": "According to the Hardy-Weinberg principle, the frequency of heterozygotes (2pq) is calculated using the allele frequencies. If p (frequency of allele for black feathers) = 0.4 and q (frequency of allele for white feathers) = 0.6, then 2pq = 2 * (0.4) * (0.6) = 2 * 0.24 = 0.48."
-  },
-  {
-    "id": "AP_Biology_45",
-    "question": "Which of the following is the primary energy source for photosynthesis?",
-    "choices": {
-      "A": "Chemical energy stored in glucose.",
-      "B": "Light energy from the sun.",
-      "C": "Heat energy from the environment.",
-      "D": "ATP generated from cellular respiration."
-    },
-    "answer": "B",
-    "difficulty": 1,
-    "explanation": "Photosynthesis is the process by which green plants and some other organisms use sunlight to synthesize foods with the help of chlorophyll pigment. Light energy is converted into chemical energy in the form of glucose."
   },
   {
     "id": "AP_Biology_46",
@@ -601,12 +432,12 @@
     "id": "AP_Biology_47",
     "question": "A red blood cell is placed into a solution and begins to swell and eventually lyse. Which of the following best describes the solution it was placed in?",
     "choices": {
-      "A": "Hypertonic \u2014 higher solute concentration than the cell",
-      "B": "Isotonic \u2014 equal solute concentration to the cell",
-      "C": "Hypotonic \u2014 lower solute concentration than the cell",
-      "D": "Buffered \u2014 maintained at physiological pH"
+      "A": "Hypertonic — higher solute concentration than the cell",
+      "B": "Isotonic — equal solute concentration to the cell",
+      "C": "Buffered — maintained at physiological pH",
+      "D": "Hypotonic — lower solute concentration than the cell"
     },
-    "answer": "C",
+    "answer": "D",
     "difficulty": 5,
     "explanation": "A hypotonic solution has a lower solute concentration (higher water potential) than the cell. Water moves into the cell by osmosis, causing swelling. In red blood cells (which lack a cell wall), excessive swelling leads to lysis (bursting)."
   },
@@ -663,28 +494,15 @@
     "explanation": "Crossing over, the exchange of genetic material between homologous chromosomes, occurs during prophase I of meiosis. Specifically, it happens when homologous chromosomes are synapsed, forming bivalents (or tetrads). Metaphase I involves alignment at the metaphase plate. Anaphase II involves separation of sister chromatids. Telophase I involves the formation of two daughter nuclei."
   },
   {
-    "id": "AP_Biology_52",
-    "question": "Which enzyme is responsible for synthesizing messenger RNA (mRNA) from a DNA template during transcription?",
-    "choices": {
-      "A": "DNA polymerase",
-      "B": "RNA polymerase",
-      "C": "Ligase",
-      "D": "Helicase"
-    },
-    "answer": "B",
-    "difficulty": 3,
-    "explanation": "RNA polymerase is the enzyme that reads the DNA template strand and synthesizes a complementary mRNA molecule. DNA polymerase is involved in DNA replication. Ligase is involved in joining DNA fragments. Helicase unwinds the DNA double helix."
-  },
-  {
     "id": "AP_Biology_53",
     "question": "A researcher finds a new species of deep-sea hydrothermal vent organism that utilizes chemosynthesis. This organism likely obtains energy by:",
     "choices": {
       "A": "Absorbing photons from sunlight",
-      "B": "Breaking down inorganic chemical compounds",
+      "B": "Oxidizing water molecules",
       "C": "Consuming organic matter produced by other organisms",
-      "D": "Oxidizing water molecules"
+      "D": "Breaking down inorganic chemical compounds"
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 6,
     "explanation": "Chemosynthesis is the biological conversion of chemical energy into organic compounds. Organisms that perform chemosynthesis, typically found in environments like deep-sea vents where sunlight is absent, use the energy released from the oxidation of inorganic molecules (like hydrogen sulfide, ammonia, or ferrous ions) to synthesize organic matter. Photosynthesis uses light energy."
   },
@@ -725,7 +543,7 @@
     },
     "answer": "D",
     "difficulty": 5,
-    "explanation": "Mitosis produces two genetically identical diploid daughter cells from one diploid parent cell \u2014 used for growth, repair, and asexual reproduction. Meiosis produces four genetically unique haploid daughter cells from one diploid parent cell \u2014 used for sexual reproduction. The genetic diversity in meiosis arises from crossing over and independent assortment. Option A is incorrect (mitosis produces diploid, not haploid cells). Option B is partially true but incomplete \u2014 the number of divisions is a mechanistic detail, not the key functional difference. Option C is incorrect \u2014 homologous chromosomes pair only in meiosis I, not in mitosis. Option D is the most complete and accurate statement of the fundamental difference."
+    "explanation": "Mitosis produces two genetically identical diploid daughter cells from one diploid parent cell — used for growth, repair, and asexual reproduction. Meiosis produces four genetically unique haploid daughter cells from one diploid parent cell — used for sexual reproduction. The genetic diversity in meiosis arises from crossing over and independent assortment. Option A is incorrect (mitosis produces diploid, not haploid cells). Option B is partially true but incomplete — the number of divisions is a mechanistic detail, not the key functional difference. Option C is incorrect — homologous chromosomes pair only in meiosis I, not in mitosis. Option D is the most complete and accurate statement of the fundamental difference."
   },
   {
     "id": "AP_Biology_57",
@@ -754,28 +572,15 @@
     "explanation": "Gray fur is recessive, so the frequency of gray squirrels (gg) is q^2 = 0.25. Therefore, the frequency of the recessive allele (q) is the square root of 0.25, which is 0.50. The frequency of the dominant allele (p) is 1 - q = 1 - 0.50 = 0.50. The frequency of heterozygous individuals (Gg) is 2pq = 2 * 0.50 * 0.50 = 0.50, or 50%."
   },
   {
-    "id": "AP_Biology_59",
-    "question": "Which of the following biomolecules is primarily responsible for catalyzing biochemical reactions in living organisms?",
-    "choices": {
-      "A": "Carbohydrates",
-      "B": "Lipids",
-      "C": "Proteins (enzymes)",
-      "D": "Nucleic acids"
-    },
-    "answer": "C",
-    "difficulty": 3,
-    "explanation": "Proteins, specifically in their enzyme form, act as biological catalysts, speeding up biochemical reactions without being consumed in the process. Carbohydrates are primarily for energy and structure. Lipids are for energy storage, cell membranes, and signaling. Nucleic acids carry genetic information and are involved in protein synthesis."
-  },
-  {
     "id": "AP_Biology_60",
     "question": "A scientist is studying a population of insects. They observe that individuals in a population that are larger in size tend to survive predation better than smaller individuals. This scenario describes which type of natural selection?",
     "choices": {
       "A": "Disruptive selection",
       "B": "Stabilizing selection",
-      "C": "Directional selection",
-      "D": "Sexual selection"
+      "C": "Sexual selection",
+      "D": "Directional selection"
     },
-    "answer": "C",
+    "answer": "D",
     "difficulty": 5,
     "explanation": "Directional selection favors individuals at one extreme of the phenotypic range. In this case, larger size is favored, leading to a shift in the population's average size towards larger individuals over time. Disruptive selection favors both extremes. Stabilizing selection favors intermediates. Sexual selection involves traits that increase mating success."
   },
@@ -806,28 +611,15 @@
     "explanation": "A population bottleneck occurs when a population's size is severely reduced, often by a natural disaster or disease. The surviving individuals may not be representative of the original population's genetic diversity, leading to reduced allele frequencies and potential fixation of certain alleles by chance."
   },
   {
-    "id": "AP_Biology_63",
-    "question": "In eukaryotic cells, the primary site of aerobic respiration is the:",
-    "choices": {
-      "A": "Nucleus",
-      "B": "Ribosome",
-      "C": "Mitochondrion",
-      "D": "Lysosome"
-    },
-    "answer": "C",
-    "difficulty": 3,
-    "explanation": "Mitochondria are often referred to as the 'powerhouses' of the cell because they are the main sites of cellular respiration, where most of the ATP is generated through the Krebs cycle and oxidative phosphorylation. Glycolysis occurs in the cytoplasm."
-  },
-  {
     "id": "AP_Biology_64",
     "question": "A genetic test reveals that an individual has a genotype of AaBb. If genes A and B are linked on the same chromosome and are typically inherited together, this individual is:",
     "choices": {
       "A": "Homozygous for both genes",
-      "B": "Heterozygous for both genes",
+      "B": "Heterozygous for gene A and homozygous for gene B",
       "C": "Homozygous for gene A and heterozygous for gene B",
-      "D": "Heterozygous for gene A and homozygous for gene B"
+      "D": "Heterozygous for both genes"
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 4,
     "explanation": "A genotype of Aa indicates heterozygosity for gene A, and Bb indicates heterozygosity for gene B. Therefore, AaBb means the individual is heterozygous for both genes. The information about linkage describes how these genes are arranged on the chromosome but does not change the definition of heterozygosity for each gene."
   },
@@ -897,19 +689,6 @@
     "explanation": "The endosymbiotic theory explains the origin of eukaryotic organelles like mitochondria and chloroplasts. It suggests that these organelles were once free-living prokaryotes that were engulfed by another primitive cell and formed a symbiotic relationship, eventually becoming integrated into the host cell."
   },
   {
-    "id": "AP_Biology_70",
-    "question": "Which cellular structure is primarily responsible for the synthesis of proteins?",
-    "choices": {
-      "A": "Nucleolus",
-      "B": "Ribosome",
-      "C": "Lysosome",
-      "D": "Peroxisome"
-    },
-    "answer": "B",
-    "difficulty": 3,
-    "explanation": "Ribosomes are molecular machines responsible for protein synthesis (translation), reading the mRNA sequence and assembling amino acids into polypeptide chains. The nucleolus is involved in ribosome synthesis. Lysosomes contain digestive enzymes. Peroxisomes are involved in metabolic processes, including breaking down fatty acids and detoxification."
-  },
-  {
     "id": "AP_Biology_71",
     "question": "A population of birds lives on an island. A hurricane causes a significant reduction in the island's vegetation, leading to a shortage of food. This event can lead to:",
     "choices": {
@@ -959,33 +738,20 @@
     },
     "answer": "B",
     "difficulty": 6,
-    "explanation": "The cylinder in Solution X gained mass because water moved into it \u2014 the solution is hypotonic (lower solute concentration) relative to the potato. The cylinder in Solution Y lost mass because water moved out \u2014 the solution is hypertonic (higher solute concentration) relative to the potato. This is a classic osmosis demonstration."
+    "explanation": "The cylinder in Solution X gained mass because water moved into it — the solution is hypotonic (lower solute concentration) relative to the potato. The cylinder in Solution Y lost mass because water moved out — the solution is hypertonic (higher solute concentration) relative to the potato. This is a classic osmosis demonstration."
   },
   {
     "id": "AP_Biology_75",
     "question": "Consider a diploid organism with a genotype of AaBb. If these genes are unlinked, what is the probability of producing a gamete with the genotype AB?",
     "choices": {
       "A": "1/8",
-      "B": "1/4",
+      "B": "1",
       "C": "1/2",
-      "D": "1"
+      "D": "1/4"
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 5,
     "explanation": "Since the genes are unlinked, they assort independently. The probability of an A allele segregating into a gamete is 1/2, and the probability of a B allele segregating into a gamete is 1/2. The probability of both A and B segregating into the same gamete is (1/2) * (1/2) = 1/4."
-  },
-  {
-    "id": "AP_Biology_76",
-    "question": "Mitochondria are often referred to as the \"powerhouses\" of the cell because they are the primary sites of:",
-    "choices": {
-      "A": "ATP synthesis during cellular respiration.",
-      "B": "Photosynthesis and glucose production.",
-      "C": "Protein synthesis using ribosomal RNA.",
-      "D": "Lipid synthesis and detoxification."
-    },
-    "answer": "A",
-    "difficulty": 3,
-    "explanation": "Mitochondria are the organelles where the majority of ATP is generated through the process of cellular respiration, which includes the Krebs cycle and oxidative phosphorylation."
   },
   {
     "id": "AP_Biology_77",
@@ -993,10 +759,10 @@
     "choices": {
       "A": "Meiosis and fertilization",
       "B": "Binary fission and mitosis",
-      "C": "Conjugation, transformation, and transduction",
-      "D": "Independent assortment and crossing over"
+      "C": "Independent assortment and crossing over",
+      "D": "Conjugation, transformation, and transduction"
     },
-    "answer": "C",
+    "answer": "D",
     "difficulty": 6,
     "explanation": "Prokaryotes reproduce asexually via binary fission. Horizontal gene transfer, which increases genetic variation, occurs through conjugation (direct transfer of DNA), transformation (uptake of environmental DNA), and transduction (viral-mediated DNA transfer)."
   },
@@ -1045,10 +811,10 @@
     "choices": {
       "A": "A substitution of a single nucleotide.",
       "B": "A deletion of three consecutive nucleotides.",
-      "C": "An insertion of a single nucleotide.",
-      "D": "A duplication of a segment of DNA."
+      "C": "A duplication of a segment of DNA.",
+      "D": "An insertion of a single nucleotide."
     },
-    "answer": "C",
+    "answer": "D",
     "difficulty": 7,
     "explanation": "A frameshift mutation alters the reading frame of the genetic code. Insertions or deletions of nucleotides that are not in multiples of three will shift the reading frame, changing every subsequent codon and thus the amino acid sequence."
   },
@@ -1058,10 +824,10 @@
     "choices": {
       "A": "Producing organic matter from inorganic substances.",
       "B": "Transferring energy to primary consumers.",
-      "C": "Breaking down dead organic material into simpler substances.",
-      "D": "Controlling the population size of top predators."
+      "C": "Controlling the population size of top predators.",
+      "D": "Breaking down dead organic material into simpler substances."
     },
-    "answer": "C",
+    "answer": "D",
     "difficulty": 4,
     "explanation": "Decomposers, such as bacteria and fungi, break down dead organisms and waste products, returning essential nutrients to the ecosystem for producers to utilize. This process is crucial for nutrient cycling."
   },
@@ -1118,19 +884,6 @@
     "explanation": "tRNA molecules have an anticodon that pairs with a complementary codon on the mRNA and carry the corresponding amino acid to the ribosome for incorporation into the growing polypeptide chain."
   },
   {
-    "id": "AP_Biology_87",
-    "question": "The concept that all living organisms are composed of cells, and that all cells arise from pre-existing cells, is known as:",
-    "choices": {
-      "A": "Theory of Evolution",
-      "B": "Germ Theory",
-      "C": "Cell Theory",
-      "D": "Theory of Natural Selection"
-    },
-    "answer": "C",
-    "difficulty": 3,
-    "explanation": "The Cell Theory is a fundamental principle of biology that outlines the basic characteristics and origin of cells."
-  },
-  {
     "id": "AP_Biology_88",
     "question": "Which of the following statements best describes the role of enzymes in biological systems?",
     "choices": {
@@ -1170,19 +923,6 @@
     "explanation": "Under Hardy-Weinberg equilibrium, the frequency of the homozygous recessive genotype (bb) is equal to the square of the frequency of the recessive allele (q^2). Here, q = 0.3, so q^2 = (0.3)^2 = 0.09."
   },
   {
-    "id": "AP_Biology_91",
-    "question": "The process by which plants absorb light energy and convert it into chemical energy in the form of glucose is called:",
-    "choices": {
-      "A": "Cellular Respiration",
-      "B": "Fermentation",
-      "C": "Photosynthesis",
-      "D": "Glycolysis"
-    },
-    "answer": "C",
-    "difficulty": 3,
-    "explanation": "Photosynthesis is the process used by plants and other organisms to convert light energy into chemical energy, through a process that uses sunlight, water, and carbon dioxide to create oxygen and energy-rich organic compounds (glucose)."
-  },
-  {
     "id": "AP_Biology_92",
     "question": "In mammals, the process of meiosis results in the formation of gametes. Which of the following is a key characteristic of meiosis?",
     "choices": {
@@ -1201,10 +941,10 @@
     "choices": {
       "A": "X-linked recessive inheritance",
       "B": "Y-linked inheritance",
-      "C": "Autosomal dominant inheritance",
-      "D": "Autosomal recessive inheritance"
+      "C": "Autosomal recessive inheritance",
+      "D": "Autosomal dominant inheritance"
     },
-    "answer": "C",
+    "answer": "D",
     "difficulty": 6,
     "explanation": "The disease appearing in every generation (often having at least one affected parent) and affecting males and females equally points towards autosomal dominant inheritance. Autosomal recessive typically skips generations, and Y-linked only affects males."
   },
@@ -1248,19 +988,6 @@
     "explanation": "The initial impact on producers (algae and plants) has a cascading negative effect on the herbivores that depend on them, demonstrating how the health of the producer level is fundamental to the entire food web."
   },
   {
-    "id": "AP_Biology_97",
-    "question": "The process of meiosis results in genetically unique daughter cells primarily due to which two events?",
-    "choices": {
-      "A": "DNA replication and cytokinesis",
-      "B": "Crossing over and independent assortment",
-      "C": "Mitotic spindle formation and anaphase",
-      "D": "Synapsis and telophase"
-    },
-    "answer": "B",
-    "difficulty": 3,
-    "explanation": "Crossing over during prophase I exchanges genetic material between homologous chromosomes, and independent assortment of homologous chromosomes during metaphase I and anaphase I shuffles the combination of alleles inherited from each parent. DNA replication occurs before meiosis begins, and cytokinesis divides the cytoplasm. Mitotic spindle formation and anaphase are involved in mitosis and meiosis II, but crossing over and independent assortment are the key drivers of variation in meiosis I."
-  },
-  {
     "id": "AP_Biology_98",
     "question": "A plant cell is placed in a solution with a higher solute concentration than its cytoplasm. Which of the following will occur?",
     "choices": {
@@ -1279,38 +1006,12 @@
     "choices": {
       "A": "0.36",
       "B": "0.48",
-      "C": "0.60",
-      "D": "0.72"
+      "C": "0.72",
+      "D": "0.60"
     },
-    "answer": "C",
+    "answer": "D",
     "difficulty": 5,
     "explanation": "The frequency of an allele in a population can be calculated from the genotype frequencies. The 'B' allele is present in both BB and Bb genotypes. The frequency of allele 'B' is (2 * frequency of BB) + (frequency of Bb). So, frequency(B) = (2 * 0.36) + 0.48 = 0.72 + 0.48 = 1.20. Wait, allele frequencies must sum to 1. Let's re-calculate. Allele frequency is the sum of the frequency of homozygotes for that allele plus half the frequency of heterozygotes. Frequency(B) = frequency(BB) + 0.5 * frequency(Bb) = 0.36 + 0.5 * 0.48 = 0.36 + 0.24 = 0.60. The frequency of the 'b' allele would be frequency(bb) + 0.5 * frequency(Bb) = 0.16 + 0.5 * 0.48 = 0.16 + 0.24 = 0.40. Note that 0.60 + 0.40 = 1.00, as expected."
-  },
-  {
-    "id": "AP_Biology_100",
-    "question": "Which of the following statements best describes the role of enzymes in biological systems?",
-    "choices": {
-      "A": "Enzymes are consumed during chemical reactions, providing energy for the cell.",
-      "B": "Enzymes are nucleic acids that serve as templates for protein synthesis.",
-      "C": "Enzymes are catalysts that increase the rate of biochemical reactions by lowering activation energy.",
-      "D": "Enzymes are lipids that form the primary structure of cell membranes."
-    },
-    "answer": "C",
-    "difficulty": 3,
-    "explanation": "Enzymes are biological catalysts, typically proteins, that speed up chemical reactions by reducing the activation energy required for the reaction to proceed. They are not consumed in the reaction and can be reused. Nucleic acids like DNA and RNA have different functions. Lipids are the building blocks of cell membranes but are not enzymes."
-  },
-  {
-    "id": "AP_Biology_101",
-    "question": "The process by which prokaryotic organisms divide is called:",
-    "choices": {
-      "A": "Mitosis",
-      "B": "Meiosis",
-      "C": "Binary fission",
-      "D": "Budding"
-    },
-    "answer": "C",
-    "difficulty": 3,
-    "explanation": "Binary fission is the primary method of asexual reproduction in prokaryotes (like bacteria), where the cell divides into two identical daughter cells. Mitosis is cell division in eukaryotes for growth and repair. Meiosis is for sexual reproduction in eukaryotes. Budding is a form of asexual reproduction seen in some eukaryotes like yeast."
   },
   {
     "id": "AP_Biology_102",
@@ -1382,26 +1083,13 @@
     "question": "A cell has the following molecules: DNA, ribosomes, a plasma membrane, and mitochondria. Based on this information, the cell is most likely:",
     "choices": {
       "A": "A bacterium",
-      "B": "A plant cell",
+      "B": "A virus",
       "C": "A fungal cell",
-      "D": "A virus"
-    },
-    "answer": "B",
-    "difficulty": 4,
-    "explanation": "The presence of mitochondria indicates the cell is eukaryotic. Bacteria (A) are prokaryotic and lack mitochondria and a nucleus (where DNA is typically housed in eukaryotes). Viruses (D) are not cells and possess either DNA or RNA, but not both, and lack cellular components like ribosomes. Fungal cells (C) are eukaryotic and have mitochondria, ribosomes, and a plasma membrane, but the question specifically lists DNA suggesting a nucleus or organized genetic material typical of eukaryotes. While fungi fit, the combination and the explicit mention of 'DNA' strongly points towards a typical eukaryotic cell structure that includes a nucleus. If we assume 'DNA' implies the typical eukaryotic organization within a nucleus, then plant and fungal cells fit. However, the presence of mitochondria is a defining feature of eukaryotic cells. Bacteria lack mitochondria. Viruses are not cells. Between plant and fungal cells, both are eukaryotic. Usually, problems like this give a more distinguishing feature. Let's re-read. DNA, ribosomes, plasma membrane, mitochondria. All are present in plant cells. All are present in fungal cells. Are there any subtle hints? No. However, 'DNA' usually implies the organized genome in eukaryotes. If the question was 'DNA in a nucleus', it would be clearer. Let's assume it's a general representative eukaryotic cell. Both B and C are plausible. Let's consider typical textbook examples. Often, plant cells are used to illustrate eukaryotic structure. Is there anything inherently more 'plant-like' that could be implied? No. Wait, if the question was meant to be broader, it could be any eukaryote. But given 'B' and 'C' as options, and only one correct answer... Let's reconsider bacteria. Bacteria have DNA and ribosomes and a plasma membrane, but *lack* mitochondria. Viruses are acellular. So it must be a eukaryote. Both B and C are eukaryotes. Without a cell wall (specific type), chloroplasts, or a large central vacuole (plant), or chitin cell walls (fungi), it's hard to distinguish. Perhaps the question is flawed or relies on a common assumption. Let's assume the question intends to test basic eukaryotic organelle presence. Both B and C fit. If forced to choose, and assuming a typical introductory biology context, plant cells are frequently used examples of eukaryotic cells with mitochondria. Let's stick with B."
-  },
-  {
-    "id": "AP_Biology_108",
-    "question": "Which of the following cellular components is responsible for producing ATP through cellular respiration?",
-    "choices": {
-      "A": "Chloroplast",
-      "B": "Ribosome",
-      "C": "Nucleus",
-      "D": "Mitochondrion"
+      "D": "A plant cell"
     },
     "answer": "D",
-    "difficulty": 3,
-    "explanation": "Mitochondria are known as the 'powerhouses' of the cell because they are the primary site of cellular respiration, the process that generates the majority of a eukaryotic cell's ATP. Chloroplasts are involved in photosynthesis, ribosomes synthesize proteins, and the nucleus contains the genetic material."
+    "difficulty": 4,
+    "explanation": "The presence of mitochondria indicates the cell is eukaryotic. Bacteria (A) are prokaryotic and lack mitochondria and a nucleus (where DNA is typically housed in eukaryotes). Viruses (B) are not cells and possess either DNA or RNA, but not both, and lack cellular components like ribosomes. Fungal cells (C) are eukaryotic and have mitochondria, ribosomes, and a plasma membrane, but the question specifically lists DNA suggesting a nucleus or organized genetic material typical of eukaryotes. While fungi fit, the combination and the explicit mention of 'DNA' strongly points towards a typical eukaryotic cell structure that includes a nucleus. If we assume 'DNA' implies the typical eukaryotic organization within a nucleus, then plant and fungal cells fit. However, the presence of mitochondria is a defining feature of eukaryotic cells. Bacteria lack mitochondria. Viruses are not cells. Between plant and fungal cells, both are eukaryotic. Usually, problems like this give a more distinguishing feature. Let's re-read. DNA, ribosomes, plasma membrane, mitochondria. All are present in plant cells. All are present in fungal cells. Are there any subtle hints? No. However, 'DNA' usually implies the organized genome in eukaryotes. If the question was 'DNA in a nucleus', it would be clearer. Let's assume it's a general representative eukaryotic cell. Both B and C are plausible. Let's consider typical textbook examples. Often, plant cells are used to illustrate eukaryotic structure. Is there anything inherently more 'plant-like' that could be implied? No. Wait, if the question was meant to be broader, it could be any eukaryote. But given 'B' and 'C' as options, and only one correct answer... Let's reconsider bacteria. Bacteria have DNA and ribosomes and a plasma membrane, but *lack* mitochondria. Viruses are acellular. So it must be a eukaryote. Both B and C are eukaryotes. Without a cell wall (specific type), chloroplasts, or a large central vacuole (plant), or chitin cell walls (fungi), it's hard to distinguish. Perhaps the question is flawed or relies on a common assumption. Let's assume the question intends to test basic eukaryotic organelle presence. Both B and C fit. If forced to choose, and assuming a typical introductory biology context, plant cells are frequently used examples of eukaryotic cells with mitochondria. Let's stick with B."
   },
   {
     "id": "AP_Biology_109",
@@ -1443,19 +1131,6 @@
     "explanation": "A loss-of-function mutation results in a gene product (in this case, an enzyme) having reduced or no function. The inability to bind to the substrate directly impairs the enzyme's catalytic activity. While this might be caused by a missense mutation (changing an amino acid), the consequence described is a loss of function."
   },
   {
-    "id": "AP_Biology_112",
-    "question": "Which statement best describes the role of ATP in cellular processes?",
-    "choices": {
-      "A": "ATP stores genetic information for protein synthesis.",
-      "B": "ATP provides the energy currency for cellular work.",
-      "C": "ATP is a structural component of the cell membrane.",
-      "D": "ATP facilitates the movement of molecules across the cell membrane via diffusion."
-    },
-    "answer": "B",
-    "difficulty": 3,
-    "explanation": "ATP (adenosine triphosphate) is the main energy currency of the cell. Hydrolysis of its phosphate bonds releases energy that powers various cellular activities, such as muscle contraction, active transport, and biosynthesis. It does not store genetic information, is not a structural membrane component, and doesn't directly facilitate diffusion (which is passive)."
-  },
-  {
     "id": "AP_Biology_113",
     "question": "Imagine a population of rabbits introduced to a new island with no natural predators. Over several generations, the average body size of the rabbits increases significantly. This evolutionary trend is most likely driven by:",
     "choices": {
@@ -1467,19 +1142,6 @@
     "answer": "C",
     "difficulty": 6,
     "explanation": "Directional selection favors individuals at one extreme end of the phenotypic range. In this case, favoring larger body size leads to an increase in the average size of the population over time. Stabilizing selection favors intermediate phenotypes, disruptive selection favors both extremes, and a decreased mutation rate would slow down evolution, not necessarily drive a specific trend."
-  },
-  {
-    "id": "AP_Biology_114",
-    "question": "The sequence of nucleotides in a gene contains the code for building a specific protein. This code is read in segments of three nucleotides called:",
-    "choices": {
-      "A": "Codons",
-      "B": "Introns",
-      "C": "Amino acids",
-      "D": "Promoters"
-    },
-    "answer": "A",
-    "difficulty": 3,
-    "explanation": "The genetic code is read in triplets of nucleotides called codons during translation. Each codon specifies a particular amino acid (or a start/stop signal). Introns are non-coding sequences within genes, amino acids are the building blocks of proteins, and promoters are regions of DNA that initiate transcription."
   },
   {
     "id": "AP_Biology_115",
@@ -1500,10 +1162,10 @@
     "choices": {
       "A": "Endoplasmic reticulum",
       "B": "Lysosome",
-      "C": "Golgi apparatus",
-      "D": "Vacuole"
+      "C": "Vacuole",
+      "D": "Golgi apparatus"
     },
-    "answer": "C",
+    "answer": "D",
     "difficulty": 4,
     "explanation": "The Golgi apparatus receives proteins and lipids from the endoplasmic reticulum, further modifies them (e.g., glycosylation), sorts them based on their destination, and packages them into vesicles for transport. The ER is involved in synthesis and initial modification, lysosomes contain digestive enzymes, and vacuoles have various storage and lytic functions."
   },
@@ -1538,11 +1200,11 @@
     "question": "A population of mice lives in a field with varying seed types. Some mice have cheek pouches for storing seeds, while others do not. Mice with cheek pouches are more successful at gathering and storing seeds, especially during times of scarcity. If this trait is heritable, it is likely that over time, the frequency of the allele for having cheek pouches will:",
     "choices": {
       "A": "Decrease due to genetic drift",
-      "B": "Increase due to natural selection",
+      "B": "Decrease due to gene flow from predator populations",
       "C": "Remain unchanged due to lack of mutation",
-      "D": "Decrease due to gene flow from predator populations"
+      "D": "Increase due to natural selection"
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 5,
     "explanation": "The mice with cheek pouches have a selective advantage because they are more successful at foraging and storing food, which likely leads to higher survival and reproduction rates. This differential survival and reproduction based on a heritable trait is the definition of natural selection, which would cause the frequency of the advantageous allele (for cheek pouches) to increase in the population."
   },
@@ -1577,11 +1239,11 @@
     "question": "In eukaryotic cells, the process of DNA replication occurs:",
     "choices": {
       "A": "During the G1 phase of the cell cycle",
-      "B": "During the S phase of the cell cycle",
+      "B": "During mitosis (M phase)",
       "C": "During the G2 phase of the cell cycle",
-      "D": "During mitosis (M phase)"
+      "D": "During the S phase of the cell cycle"
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 4,
     "explanation": "DNA replication, the process of duplicating the cell's genome, occurs during the S (synthesis) phase of the interphase stage of the cell cycle, ensuring that each daughter cell receives a complete set of chromosomes."
   },
@@ -1612,19 +1274,6 @@
     "explanation": "Transfer RNA (tRNA) molecules have a specific three-dimensional structure that allows them to bind to a specific amino acid at one end and an anticodon at the other end, which base-pairs with a complementary codon on the mRNA during translation. mRNA carries the genetic code, rRNA is a structural component of ribosomes, and snRNA is involved in RNA processing."
   },
   {
-    "id": "AP_Biology_125",
-    "question": "A hypothesis in biology must be:",
-    "choices": {
-      "A": "Proven true with absolute certainty.",
-      "B": "Based on anecdotal evidence.",
-      "C": "Testable and falsifiable.",
-      "D": "The same as a scientific theory."
-    },
-    "answer": "C",
-    "difficulty": 3,
-    "explanation": "A scientific hypothesis is a proposed explanation for a phenomenon that can be tested through observation or experimentation. It must be falsifiable, meaning there must be a way to potentially prove it wrong. Hypotheses are not absolute proofs, nor are they necessarily based on anecdote. A hypothesis is a specific, testable prediction, whereas a theory is a broader, well-substantiated explanation."
-  },
-  {
     "id": "AP_Biology_126",
     "question": "A biologist is studying a population of rabbits. They observe that over several generations, the average fur color of the rabbits shifts from light brown to dark brown. This change is most likely due to:",
     "choices": {
@@ -1638,19 +1287,6 @@
     "explanation": "Natural selection occurs when individuals with certain traits have a higher survival and reproductive rate than individuals without those traits. If darker fur provided a survival advantage (e.g., camouflage from predators), the frequency of alleles for dark fur would increase in the population over time."
   },
   {
-    "id": "AP_Biology_127",
-    "question": "Mitochondria are often called the 'powerhouses' of the cell because they are the primary sites of:",
-    "choices": {
-      "A": "Photosynthesis",
-      "B": "Protein synthesis",
-      "C": "Cellular respiration",
-      "D": "Lipid synthesis"
-    },
-    "answer": "C",
-    "difficulty": 3,
-    "explanation": "Mitochondria are responsible for the process of cellular respiration, which breaks down glucose and other fuel molecules to produce ATP, the main energy currency of the cell."
-  },
-  {
     "id": "AP_Biology_128",
     "question": "In a typical cell, the function of the Golgi apparatus is to:",
     "choices": {
@@ -1662,19 +1298,6 @@
     "answer": "B",
     "difficulty": 4,
     "explanation": "The Golgi apparatus receives proteins and lipids from the endoplasmic reticulum, further modifies them (e.g., glycosylation), sorts them, and packages them into vesicles for transport to their final destinations."
-  },
-  {
-    "id": "AP_Biology_129",
-    "question": "A plant cell is placed in a hypertonic solution. What will happen to the cell?",
-    "choices": {
-      "A": "The cell will swell and burst.",
-      "B": "Water will move into the cell, causing turgor pressure to increase.",
-      "C": "The cell membrane will pull away from the cell wall as water leaves the cell (plasmolysis).",
-      "D": "The cell will remain unchanged due to the rigid cell wall."
-    },
-    "answer": "C",
-    "difficulty": "7",
-    "explanation": "A hypertonic solution has a higher solute concentration (and thus lower water potential) than the cell's cytoplasm. Water will move by osmosis from an area of higher water potential (inside the cell) to an area of lower water potential (outside the cell), causing the plasma membrane to shrink away from the cell wall."
   },
   {
     "id": "AP_Biology_130",
@@ -1729,19 +1352,6 @@
     "explanation": "Binary fission is the primary mode of asexual reproduction in prokaryotes. The cell divides into two identical daughter cells without the complex stages of mitosis in eukaryotes."
   },
   {
-    "id": "AP_Biology_134",
-    "question": "Photosynthesis takes place in which organelle?",
-    "choices": {
-      "A": "Mitochondrion",
-      "B": "Chloroplast",
-      "C": "Ribosome",
-      "D": "Nucleus"
-    },
-    "answer": "B",
-    "difficulty": 3,
-    "explanation": "Chloroplasts contain chlorophyll and are the sites of photosynthesis, the process by which light energy is converted into chemical energy in the form of glucose."
-  },
-  {
     "id": "AP_Biology_135",
     "question": "A key difference between prokaryotic and eukaryotic cells is:",
     "choices": {
@@ -1753,19 +1363,6 @@
     "answer": "C",
     "difficulty": 5,
     "explanation": "Eukaryotic cells are characterized by the presence of a true nucleus enclosed by a nuclear membrane, which houses the cell's genetic material. Prokaryotic cells lack a membrane-bound nucleus."
-  },
-  {
-    "id": "AP_Biology_136",
-    "question": "Which of the following describes a population bottleneck?",
-    "choices": {
-      "A": "A gradual decrease in population size due to reduced resources",
-      "B": "A drastic reduction in population size due to a random event, leading to reduced genetic diversity",
-      "C": "The movement of individuals from one population to another",
-      "D": "The evolution of a new species from a small ancestral population"
-    },
-    "answer": "B",
-    "difficulty": 7,
-    "explanation": "A population bottleneck occurs when a population's size is severely reduced by a catastrophic event (e.g., natural disaster, disease). The surviving individuals may not be representative of the original population's genetic diversity, leading to reduced variation in the recovering population."
   },
   {
     "id": "AP_Biology_137",
@@ -1786,10 +1383,10 @@
     "choices": {
       "A": "Mutualism",
       "B": "Commensalism",
-      "C": "Parasitism",
-      "D": "Predation"
+      "C": "Predation",
+      "D": "Parasitism"
     },
-    "answer": "C",
+    "answer": "D",
     "difficulty": 4,
     "explanation": "In parasitism, one organism (the parasite) lives on or inside another organism (the host) and harms it, while benefiting itself. Mutualism benefits both, commensalism benefits one and is neutral to the other."
   },
@@ -1825,10 +1422,10 @@
     "choices": {
       "A": "To produce organic matter from inorganic sources",
       "B": "To consume producers",
-      "C": "To break down dead organic material and return nutrients to the soil",
-      "D": "To regulate the population size of herbivores"
+      "C": "To regulate the population size of herbivores",
+      "D": "To break down dead organic material and return nutrients to the soil"
     },
-    "answer": "C",
+    "answer": "D",
     "difficulty": 5,
     "explanation": "Decomposers, such as bacteria and fungi, play a crucial role in nutrient cycling by breaking down dead organisms and waste products, making essential elements available for producers."
   },
@@ -1837,11 +1434,11 @@
     "question": "A scientist observes a gene mutation that results in a non-functional enzyme. This would most likely be categorized as a:",
     "choices": {
       "A": "Silent mutation",
-      "B": "Missense mutation",
+      "B": "Frameshift mutation",
       "C": "Nonsense mutation",
-      "D": "Frameshift mutation"
+      "D": "Missense mutation"
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 7,
     "explanation": "A missense mutation is a point mutation in which a single nucleotide change results in a codon that codes for a different amino acid. If this new amino acid significantly alters the enzyme's structure or function, it can lead to a non-functional enzyme."
   },
@@ -1950,19 +1547,6 @@
     "explanation": "Complementary base pairing describes the specific hydrogen bonding between A-T and G-C bases, which is fundamental to DNA structure and replication."
   },
   {
-    "id": "AP_Biology_151",
-    "question": "A scientist observes a cell that lacks a cell wall, has a plasma membrane, a nucleus containing linear DNA, and mitochondria. Which of the following is the MOST likely classification for this cell?",
-    "choices": {
-      "A": "Prokaryote",
-      "B": "Eukaryote",
-      "C": "Archaea",
-      "D": "Bacteria"
-    },
-    "answer": "B",
-    "difficulty": 3,
-    "explanation": "The presence of a nucleus with linear DNA and mitochondria are defining characteristics of eukaryotic cells, distinguishing them from prokaryotic cells (which lack a nucleus and membrane-bound organelles) and the domains Archaea and Bacteria, both of which are prokaryotic."
-  },
-  {
     "id": "AP_Biology_152",
     "question": "Which of the following biological molecules is primarily responsible for forming the structural framework of cell membranes?",
     "choices": {
@@ -1979,12 +1563,12 @@
     "id": "AP_Biology_153",
     "question": "In cellular respiration, the majority of ATP is produced during which stage?",
     "choices": {
-      "A": "Oxidative phosphorylation",
+      "A": "Fermentation",
       "B": "Glycolysis",
       "C": "The Krebs cycle (Citric Acid Cycle)",
-      "D": "Fermentation"
+      "D": "Oxidative phosphorylation"
     },
-    "answer": "A",
+    "answer": "D",
     "difficulty": 5,
     "explanation": "Oxidative phosphorylation, which includes the electron transport chain and chemiosmosis, is the stage where the proton gradient generated by the redox reactions of glycolysis and the Krebs cycle is used to produce the most ATP."
   },
@@ -2000,19 +1584,6 @@
     "answer": "B",
     "difficulty": 6,
     "explanation": "In a hypertonic solution, the concentration of solutes outside the cell is higher than inside. Water will move out of the plant cell by osmosis, causing the plasma membrane to pull away from the cell wall, a process called plasmolysis."
-  },
-  {
-    "id": "AP_Biology_155",
-    "question": "Which type of bond is formed between amino acids when a protein is synthesized?",
-    "choices": {
-      "A": "Peptide bond",
-      "B": "Glycosidic bond",
-      "C": "Phosphodiester bond",
-      "D": "Hydrogen bond"
-    },
-    "answer": "A",
-    "difficulty": 3,
-    "explanation": "Peptide bonds are covalent bonds that link the carboxyl group of one amino acid to the amino group of another, forming the polypeptide chain that constitutes a protein."
   },
   {
     "id": "AP_Biology_156",
@@ -2041,82 +1612,30 @@
     "explanation": "In anaphase, the centromeres that hold sister chromatids together break down, and the chromatids are pulled apart by the spindle fibers towards opposite poles of the cell."
   },
   {
-    "id": "AP_Biology_158",
-    "question": "Which of the following best describes the role of enzymes in biological systems?",
-    "choices": {
-      "A": "To increase the activation energy of reactions.",
-      "B": "To decrease the activation energy of reactions.",
-      "C": "To be consumed during the reaction.",
-      "D": "To provide the energy for reactions."
-    },
-    "answer": "B",
-    "difficulty": 3,
-    "explanation": "Enzymes are biological catalysts that speed up biochemical reactions by lowering the activation energy required for the reaction to occur. They are not consumed in the process."
-  },
-  {
     "id": "AP_Biology_159",
     "question": "A segment of DNA has the base sequence 5'-ATGCGTA-3'. What is the complementary sequence during DNA replication?",
     "choices": {
       "A": "5'-TACGCAT-3'",
-      "B": "3'-TACGCAT-5'",
+      "B": "3'-ATGCGTA-5'",
       "C": "5'-UACGCUA-3'",
-      "D": "3'-ATGCGTA-5'"
+      "D": "3'-TACGCAT-5'"
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 6,
     "explanation": "During DNA replication, adenine (A) pairs with thymine (T), and guanine (G) pairs with cytosine (C). DNA strands are antiparallel, so the complementary strand runs in the opposite direction. Therefore, 5'-ATGCGTA-3' will have a complementary strand 3'-TACGCAT-5'."
-  },
-  {
-    "id": "AP_Biology_160",
-    "question": "Which of the following processes is responsible for the movement of water across a semipermeable membrane from an area of high water concentration to an area of low water concentration?",
-    "choices": {
-      "A": "Osmosis",
-      "B": "Active transport",
-      "C": "Facilitated diffusion",
-      "D": "Endocytosis"
-    },
-    "answer": "A",
-    "difficulty": 3,
-    "explanation": "Osmosis is the specific term for the diffusion of water across a selectively permeable membrane, driven by differences in solute concentration, which creates a water potential gradient."
   },
   {
     "id": "AP_Biology_161",
     "question": "In pea plants, the allele for tallness (T) is dominant over the allele for shortness (t). If a homozygous tall plant (TT) is crossed with a heterozygous tall plant (Tt), what proportion of the offspring will be homozygous tall (TT)?",
     "choices": {
-      "A": "1/2",
+      "A": "0",
       "B": "1/4",
       "C": "3/4",
-      "D": "0"
+      "D": "1/2"
     },
-    "answer": "A",
+    "answer": "D",
     "difficulty": 7,
     "explanation": "A Punnett square shows the cross between TT and Tt. The possible offspring genotypes are TT and Tt, each with a probability of 1/2."
-  },
-  {
-    "id": "AP_Biology_162",
-    "question": "The primary function of ribosomes is to:",
-    "choices": {
-      "A": "Synthesize proteins",
-      "B": "Replicate DNA",
-      "C": "Break down food molecules",
-      "D": "Package cellular waste"
-    },
-    "answer": "A",
-    "difficulty": 3,
-    "explanation": "Ribosomes are the cellular machinery responsible for translation, the process of synthesizing proteins from messenger RNA (mRNA) templates."
-  },
-  {
-    "id": "AP_Biology_163",
-    "question": "Which of the following represents the correct order of key events in cellular respiration?",
-    "choices": {
-      "A": "Glycolysis, Krebs cycle, Oxidative phosphorylation",
-      "B": "Krebs cycle, Glycolysis, Oxidative phosphorylation",
-      "C": "Oxidative phosphorylation, Krebs cycle, Glycolysis",
-      "D": "Glycolysis, Oxidative phosphorylation, Krebs cycle"
-    },
-    "answer": "A",
-    "difficulty": 3,
-    "explanation": "Cellular respiration begins with glycolysis in the cytoplasm, followed by the Krebs cycle (or Citric Acid Cycle) in the mitochondrial matrix, and finally oxidative phosphorylation at the inner mitochondrial membrane."
   },
   {
     "id": "AP_Biology_164",
@@ -2145,19 +1664,6 @@
     "explanation": "Meiosis consists of two successive divisions (Meiosis I and Meiosis II) and results in four genetically unique haploid gametes. Mitosis involves a single division that produces two genetically identical diploid somatic cells."
   },
   {
-    "id": "AP_Biology_166",
-    "question": "The process by which an mRNA sequence is used to synthesize a polypeptide chain is called:",
-    "choices": {
-      "A": "Translation",
-      "B": "Transcription",
-      "C": "Replication",
-      "D": "Translation"
-    },
-    "answer": "A",
-    "difficulty": 3,
-    "explanation": "Translation is the process where ribosomes read the codons on an mRNA molecule and assemble amino acids into a specific polypeptide chain according to the genetic code."
-  },
-  {
     "id": "AP_Biology_167",
     "question": "A scientist is studying a newly discovered organism. The organism's cells have chloroplasts, a cell wall made of cellulose, and store energy as starch. This organism is MOST likely:",
     "choices": {
@@ -2182,19 +1688,6 @@
     "answer": "B",
     "difficulty": 5,
     "explanation": "A larger rabbit population provides more food for the foxes. This increased availability of resources allows the fox population to grow, assuming other factors are not limiting."
-  },
-  {
-    "id": "AP_Biology_169",
-    "question": "Which of the following terms describes organisms that produce their own food, usually through photosynthesis?",
-    "choices": {
-      "A": "Heterotrophs",
-      "B": "Autotrophs",
-      "C": "Decomposers",
-      "D": "Consumers"
-    },
-    "answer": "B",
-    "difficulty": 3,
-    "explanation": "Autotrophs are organisms that can synthesize their own organic compounds from inorganic sources, typically using light energy (photosynthesis) or chemical energy (chemosynthesis)."
   },
   {
     "id": "AP_Biology_170",
@@ -2249,19 +1742,6 @@
     "explanation": "The smooth endoplasmic reticulum is involved in various metabolic processes, including lipid synthesis, steroid synthesis, and detoxification of drugs and poisons."
   },
   {
-    "id": "AP_Biology_174",
-    "question": "Photosynthesis occurs in which of the following organelles?",
-    "choices": {
-      "A": "Mitochondria",
-      "B": "Chloroplasts",
-      "C": "Ribosomes",
-      "D": "Lysosomes"
-    },
-    "answer": "B",
-    "difficulty": 3,
-    "explanation": "Chloroplasts are the organelles in plant and algal cells where photosynthesis takes place, utilizing light energy to convert carbon dioxide and water into glucose and oxygen."
-  },
-  {
     "id": "AP_Biology_175",
     "question": "The Hershey-Chase experiment used radioactive isotopes to track which components of bacteriophages?",
     "choices": {
@@ -2275,19 +1755,6 @@
     "explanation": "The Hershey-Chase experiment labeled the protein coat of bacteriophages with radioactive sulfur (35S) and the DNA core with radioactive phosphorus (32P). This allowed them to determine that DNA, not protein, was the genetic material."
   },
   {
-    "id": "AP_Biology_176",
-    "question": "Which of the following cellular processes is most directly responsible for the breakdown of glucose during cellular respiration?",
-    "choices": {
-      "A": "The Krebs cycle",
-      "B": "Glycolysis",
-      "C": "Oxidative phosphorylation",
-      "D": "Fermentation"
-    },
-    "answer": "B",
-    "difficulty": 3,
-    "explanation": "Glycolysis is the initial metabolic pathway that breaks down glucose into pyruvate, producing a small amount of ATP and NADH."
-  },
-  {
     "id": "AP_Biology_177",
     "question": "A plant cell is placed in a solution with a lower solute concentration than the cell's cytoplasm. Which of the following will occur?",
     "choices": {
@@ -2299,19 +1766,6 @@
     "answer": "A",
     "difficulty": 4,
     "explanation": "In a hypotonic solution, the water potential is higher outside the cell. Water moves by osmosis from an area of higher water potential to an area of lower water potential, thus into the cell. The cell wall prevents bursting, leading to turgor pressure."
-  },
-  {
-    "id": "AP_Biology_178",
-    "question": "Which of the following describes a function of messenger RNA (mRNA)?",
-    "choices": {
-      "A": "To transfer specific amino acids to the ribosome during translation.",
-      "B": "To carry the genetic code from DNA in the nucleus to the ribosome in the cytoplasm.",
-      "C": "To form the structural component of ribosomes.",
-      "D": "To regulate gene expression by binding to DNA."
-    },
-    "answer": "B",
-    "difficulty": 3,
-    "explanation": "mRNA molecules are transcribed from DNA and carry the sequence of codons that specify the amino acid sequence for protein synthesis, which occurs at the ribosome."
   },
   {
     "id": "AP_Biology_179",
@@ -2357,11 +1811,11 @@
     "question": "Which of the following is an example of codominance?",
     "choices": {
       "A": "A plant with red flowers is crossed with a plant with white flowers, and all offspring have pink flowers.",
-      "B": "A person with type AB blood has both A and B antigens expressed on their red blood cells.",
+      "B": "A disease is caused by a recessive allele, and only individuals with two copies of the allele show symptoms.",
       "C": "A tall pea plant is crossed with a short pea plant, and all offspring are tall.",
-      "D": "A disease is caused by a recessive allele, and only individuals with two copies of the allele show symptoms."
+      "D": "A person with type AB blood has both A and B antigens expressed on their red blood cells."
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 5,
     "explanation": "Codominance occurs when both alleles for a trait are fully and simultaneously expressed in the phenotype. In type AB blood, both A and B antigens are present."
   },
@@ -2396,11 +1850,11 @@
     "question": "Which of the following statements accurately describes a photosystem in plants?",
     "choices": {
       "A": "A protein complex within the stroma of chloroplasts that synthesizes glucose.",
-      "B": "A pigment molecule that absorbs light energy and transfers it to a reaction center.",
+      "B": "An enzyme that catalyzes the Calvin cycle reactions.",
       "C": "A channel protein in the thylakoid membrane responsible for water transport.",
-      "D": "An enzyme that catalyzes the Calvin cycle reactions."
+      "D": "A pigment molecule that absorbs light energy and transfers it to a reaction center."
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 5,
     "explanation": "Photosystems are complexes of proteins and pigments embedded in the thylakoid membranes. They capture light energy and transfer it to a reaction center chlorophyll, initiating the light-dependent reactions of photosynthesis."
   },
@@ -2461,11 +1915,11 @@
     "question": "Which of the following represents a difference between the cell walls of plants and fungi?",
     "choices": {
       "A": "Plant cell walls are primarily composed of chitin, while fungal cell walls are primarily composed of cellulose.",
-      "B": "Plant cell walls are primarily composed of cellulose, while fungal cell walls are primarily composed of chitin.",
+      "B": "Plant cell walls contain lignin, while fungal cell walls do not.",
       "C": "Both plant and fungal cell walls are made of peptidoglycan.",
-      "D": "Plant cell walls contain lignin, while fungal cell walls do not."
+      "D": "Plant cell walls are primarily composed of cellulose, while fungal cell walls are primarily composed of chitin."
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 6,
     "explanation": "Plant cell walls are mainly composed of cellulose, providing structural support. Fungal cell walls, on the other hand, are primarily made of chitin, a polysaccharide also found in insect exoskeletons."
   },
@@ -2514,10 +1968,10 @@
     "choices": {
       "A": "Synthesizing lipids and steroids.",
       "B": "Producing proteins for export from the cell.",
-      "C": "Modifying, sorting, and packaging proteins and lipids for secretion or delivery to other organelles.",
-      "D": "Breaking down waste materials and cellular debris."
+      "C": "Breaking down waste materials and cellular debris.",
+      "D": "Modifying, sorting, and packaging proteins and lipids for secretion or delivery to other organelles."
     },
-    "answer": "C",
+    "answer": "D",
     "difficulty": 4,
     "explanation": "The Golgi apparatus acts as a cellular post office, receiving proteins and lipids from the endoplasmic reticulum, further processing them, and packaging them into vesicles for transport."
   },
@@ -2533,19 +1987,6 @@
     "answer": "C",
     "difficulty": 5,
     "explanation": "A ligand is a molecule that binds specifically to another molecule, often a larger one. In cell signaling, ligands (like hormones or neurotransmitters) bind to receptors to initiate a cellular response."
-  },
-  {
-    "id": "AP_Biology_196",
-    "question": "What is the primary function of vascular tissue (xylem and phloem) in plants?",
-    "choices": {
-      "A": "Photosynthesis and energy storage.",
-      "B": "Structural support and reproduction.",
-      "C": "Transport of water, minerals, and sugars throughout the plant.",
-      "D": "Protection against herbivores and pathogens."
-    },
-    "answer": "C",
-    "difficulty": 3,
-    "explanation": "Xylem transports water and dissolved minerals from the roots to the rest of the plant, while phloem transports sugars (produced during photosynthesis) from the leaves to other parts of the plant."
   },
   {
     "id": "AP_Biology_197",
@@ -2574,19 +2015,6 @@
     "explanation": "Semi-conservative replication means that when DNA divides, each of the two resulting daughter molecules is composed of one strand from the original molecule and one newly synthesized strand."
   },
   {
-    "id": "AP_Biology_199",
-    "question": "Which type of cell division is specifically involved in the production of gametes (sperm and egg cells)?",
-    "choices": {
-      "A": "Mitosis",
-      "B": "Meiosis",
-      "C": "Binary fission",
-      "D": "Cytokinesis"
-    },
-    "answer": "B",
-    "difficulty": 3,
-    "explanation": "Meiosis is a specialized type of cell division that reduces the chromosome number by half, creating four haploid cells, each genetically distinct, which develop into gametes."
-  },
-  {
     "id": "AP_Biology_200",
     "question": "In an ecosystem, decomposers play a vital role in:",
     "choices": {
@@ -2613,32 +2041,6 @@
     "explanation": "Stomata are small pores, typically on the underside of leaves, that open and close to allow for the exchange of gases (carbon dioxide for photosynthesis, oxygen as a byproduct) and the release of water vapor (transpiration)."
   },
   {
-    "id": "AP_Biology_202",
-    "question": "Which of the following cellular structures is directly responsible for synthesizing proteins in eukaryotic cells?",
-    "choices": {
-      "A": "Endoplasmic reticulum",
-      "B": "Ribosome",
-      "C": "Golgi apparatus",
-      "D": "Mitochondrion"
-    },
-    "answer": "B",
-    "difficulty": 3,
-    "explanation": "Ribosomes are the cellular machinery responsible for translating messenger RNA (mRNA) into polypeptide chains, which are the building blocks of proteins."
-  },
-  {
-    "id": "AP_Biology_203",
-    "question": "The process by which water moves across a semipermeable membrane from an area of high water concentration to an area of low water concentration is called:",
-    "choices": {
-      "A": "Active transport",
-      "B": "Facilitated diffusion",
-      "C": "Osmosis",
-      "D": "Endocytosis"
-    },
-    "answer": "C",
-    "difficulty": 3,
-    "explanation": "Osmosis is specifically the movement of water across a selectively permeable membrane driven by differences in solute concentration (which inversely relates to water concentration)."
-  },
-  {
     "id": "AP_Biology_204",
     "question": "In pea plants, the allele for tall stems (T) is dominant over the allele for short stems (t). If a heterozygous tall plant is crossed with a homozygous short plant, what percentage of the offspring will be short?",
     "choices": {
@@ -2657,10 +2059,10 @@
     "choices": {
       "A": "To provide energy for cellular processes",
       "B": "To synthesize nucleic acids",
-      "C": "To act as catalysts, speeding up reactions",
-      "D": "To store genetic information"
+      "C": "To store genetic information",
+      "D": "To act as catalysts, speeding up reactions"
     },
-    "answer": "C",
+    "answer": "D",
     "difficulty": 4,
     "explanation": "Enzymes are biological catalysts, meaning they increase the rate of specific biochemical reactions without being consumed in the process."
   },
@@ -2670,25 +2072,12 @@
     "choices": {
       "A": "Genetic drift",
       "B": "Gene flow",
-      "C": "Natural selection",
-      "D": "Bottleneck effect"
+      "C": "Bottleneck effect",
+      "D": "Natural selection"
     },
-    "answer": "C",
+    "answer": "D",
     "difficulty": 5,
     "explanation": "Natural selection occurs when environmental pressures (the antibiotic) select for individuals with advantageous traits (resistance), leading to increased survival and reproduction of those individuals."
-  },
-  {
-    "id": "AP_Biology_207",
-    "question": "During which phase of the cell cycle does DNA replication occur?",
-    "choices": {
-      "A": "G1 phase",
-      "B": "S phase",
-      "C": "G2 phase",
-      "D": "M phase"
-    },
-    "answer": "B",
-    "difficulty": 3,
-    "explanation": "The S phase (Synthesis phase) of interphase is the period during the cell cycle when the cell replicates its DNA."
   },
   {
     "id": "AP_Biology_208",
@@ -2696,25 +2085,12 @@
     "choices": {
       "A": "Store glucose for later use",
       "B": "Produce oxygen for photosynthesis",
-      "C": "Generate ATP from the breakdown of organic molecules",
-      "D": "Synthesize proteins from amino acids"
+      "C": "Synthesize proteins from amino acids",
+      "D": "Generate ATP from the breakdown of organic molecules"
     },
-    "answer": "C",
+    "answer": "D",
     "difficulty": 4,
     "explanation": "Cellular respiration is the metabolic process that converts biochemical energy from nutrients into adenosine triphosphate (ATP), the main energy currency of the cell."
-  },
-  {
-    "id": "AP_Biology_209",
-    "question": "Which type of molecule carries the genetic instructions for the development and function of all known living organisms?",
-    "choices": {
-      "A": "RNA",
-      "B": "Protein",
-      "C": "DNA",
-      "D": "Lipid"
-    },
-    "answer": "C",
-    "difficulty": 3,
-    "explanation": "Deoxyribonucleic acid (DNA) is the molecule that contains the genetic code, dictating the inherited traits of organisms."
   },
   {
     "id": "AP_Biology_210",
@@ -2730,19 +2106,6 @@
     "explanation": "A point mutation is a genetic mutation where only a single nucleotide base is affected, such as substitution, insertion, or deletion of a single base."
   },
   {
-    "id": "AP_Biology_211",
-    "question": "The process by which plants convert light energy into chemical energy in the form of glucose is known as:",
-    "choices": {
-      "A": "Cellular respiration",
-      "B": "Transcription",
-      "C": "Photosynthesis",
-      "D": "Translation"
-    },
-    "answer": "C",
-    "difficulty": 3,
-    "explanation": "Photosynthesis is the process used by plants, algae, and cyanobacteria to convert light energy into chemical energy, stored in the bonds of glucose."
-  },
-  {
     "id": "AP_Biology_212",
     "question": "Which of the following is a key characteristic of prokaryotic cells?",
     "choices": {
@@ -2756,28 +2119,15 @@
     "explanation": "Prokaryotic cells, such as bacteria and archaea, lack a membrane-bound nucleus and other membrane-bound organelles."
   },
   {
-    "id": "AP_Biology_213",
-    "question": "In an ecosystem, organisms that produce their own food, usually through photosynthesis, are called:",
-    "choices": {
-      "A": "Consumers",
-      "B": "Decomposers",
-      "C": "Producers",
-      "D": "Scavengers"
-    },
-    "answer": "C",
-    "difficulty": 3,
-    "explanation": "Producers, also known as autotrophs, form the base of most food chains by creating their own organic matter from inorganic substances."
-  },
-  {
     "id": "AP_Biology_214",
     "question": "The process by which an RNA molecule is synthesized from a DNA template is called:",
     "choices": {
       "A": "Replication",
       "B": "Translation",
-      "C": "Transcription",
-      "D": "Reverse transcription"
+      "C": "Reverse transcription",
+      "D": "Transcription"
     },
-    "answer": "C",
+    "answer": "D",
     "difficulty": 4,
     "explanation": "Transcription is the process of creating an RNA copy of a gene's DNA sequence."
   },
@@ -2786,11 +2136,11 @@
     "question": "Which of the following describes the 'fluid mosaic model' of the cell membrane?",
     "choices": {
       "A": "A rigid, fixed structure composed of a single layer of lipids",
-      "B": "A flexible barrier with proteins embedded in or attached to a phospholipid bilayer",
+      "B": "A solid structure primarily made of carbohydrates",
       "C": "A porous network that allows free passage of all molecules",
-      "D": "A solid structure primarily made of carbohydrates"
+      "D": "A flexible barrier with proteins embedded in or attached to a phospholipid bilayer"
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 6,
     "explanation": "The fluid mosaic model describes the cell membrane as a dynamic structure where phospholipids form a fluid bilayer, and various proteins are embedded or attached to it, contributing to its mosaic appearance and function."
   },
@@ -2813,10 +2163,10 @@
     "choices": {
       "A": "Photosynthesis",
       "B": "Protein synthesis",
-      "C": "Cellular respiration and ATP production",
-      "D": "Waste disposal"
+      "C": "Waste disposal",
+      "D": "Cellular respiration and ATP production"
     },
-    "answer": "C",
+    "answer": "D",
     "difficulty": 4,
     "explanation": "Mitochondria are often called the 'powerhouses' of the cell because they generate most of the cell's supply of adenosine triphosphate (ATP), used as a source of chemical energy."
   },
@@ -2834,28 +2184,15 @@
     "explanation": "Stabilizing selection favors intermediate phenotypes and selects against extreme phenotypes, reducing phenotypic variation."
   },
   {
-    "id": "AP_Biology_219",
-    "question": "The process of cell division that results in two genetically identical daughter cells is called:",
-    "choices": {
-      "A": "Meiosis",
-      "B": "Mitosis",
-      "C": "Fertilization",
-      "D": "Binary fission"
-    },
-    "answer": "B",
-    "difficulty": 3,
-    "explanation": "Mitosis is a type of cell division that results in two daughter cells each having the same number and kind of chromosomes as the parent nucleus, typical of ordinary tissue growth."
-  },
-  {
     "id": "AP_Biology_220",
     "question": "Which of the following plant tissues is responsible for transporting water and dissolved minerals from the roots to the rest of the plant?",
     "choices": {
       "A": "Phloem",
-      "B": "Xylem",
+      "B": "Cortex",
       "C": "Epidermis",
-      "D": "Cortex"
+      "D": "Xylem"
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 4,
     "explanation": "Xylem is the vascular tissue in plants that conducts water and dissolved nutrients upward from the root and also helps to form the woody element of the stem."
   },
@@ -2886,19 +2223,6 @@
     "explanation": "Genetic equilibrium, as described by the Hardy-Weinberg principle, means that the allele and genotype frequencies in a population are stable and do not change from one generation to the next."
   },
   {
-    "id": "AP_Biology_223",
-    "question": "The site of photosynthesis in plant cells is the:",
-    "choices": {
-      "A": "Mitochondrion",
-      "B": "Nucleus",
-      "C": "Chloroplast",
-      "D": "Vacuole"
-    },
-    "answer": "C",
-    "difficulty": 3,
-    "explanation": "Chloroplasts are organelles found in plant cells and eukaryotic algae that conduct photosynthesis."
-  },
-  {
     "id": "AP_Biology_224",
     "question": "A short-term adaptation that allows an organism to survive in its environment is best described as:",
     "choices": {
@@ -2910,19 +2234,6 @@
     "answer": "C",
     "difficulty": 4,
     "explanation": "An adaptation is a trait that increases an organism's survival and reproduction in a particular environment, and it can be behavioral or structural."
-  },
-  {
-    "id": "AP_Biology_225",
-    "question": "Which of the following is the basic unit of heredity?",
-    "choices": {
-      "A": "Chromosome",
-      "B": "Allele",
-      "C": "Gene",
-      "D": "Phenotype"
-    },
-    "answer": "C",
-    "difficulty": 3,
-    "explanation": "A gene is a unit of heredity which is transferred from a parent to offspring and is held to determine some characteristic of the offspring."
   },
   {
     "id": "AP_Biology_226",
@@ -3016,32 +2327,6 @@
     "explanation": "Let 'p' be the frequency of the dominant allele and 'q' be the frequency of the recessive allele. If the white fur allele frequency (q) is 0.3, then the dominant allele frequency (p) is 1 - 0.3 = 0.7. The frequency of heterozygotes (2pq) is 2 * 0.7 * 0.3 = 0.42."
   },
   {
-    "id": "AP_Biology_233",
-    "question": "Which of the following cellular structures is primarily responsible for the synthesis of lipids and detoxification of drugs and poisons?",
-    "choices": {
-      "A": "Smooth endoplasmic reticulum",
-      "B": "Rough endoplasmic reticulum",
-      "C": "Golgi apparatus",
-      "D": "Lysosome"
-    },
-    "answer": "A",
-    "difficulty": 3,
-    "explanation": "The smooth endoplasmic reticulum (SER) is involved in lipid synthesis, steroid and hormone production, and detoxification of harmful substances like drugs and metabolic wastes."
-  },
-  {
-    "id": "AP_Biology_234",
-    "question": "A scientist is studying the process of gene expression. They isolate mRNA molecules from a cell and find that the mRNA sequence is complementary to a specific region of the DNA. This process is known as:",
-    "choices": {
-      "A": "Transcription",
-      "B": "Translation",
-      "C": "Replication",
-      "D": "Reverse transcription"
-    },
-    "answer": "A",
-    "difficulty": 3,
-    "explanation": "Transcription is the process where a DNA sequence is copied into an RNA sequence. The mRNA molecule is synthesized as a complementary strand to the DNA template."
-  },
-  {
     "id": "AP_Biology_235",
     "question": "What is the primary role of ATP in cellular respiration?",
     "choices": {
@@ -3081,19 +2366,6 @@
     "explanation": "Positive gene regulation occurs when an activator protein binds to DNA, enhancing the binding of RNA polymerase to the promoter and thus increasing transcription. Negative regulation involves repressors blocking transcription."
   },
   {
-    "id": "AP_Biology_238",
-    "question": "The process by which a single cell divides into two identical daughter cells is called:",
-    "choices": {
-      "A": "Mitosis",
-      "B": "Meiosis",
-      "C": "Cytokinesis",
-      "D": "Fertilization"
-    },
-    "answer": "A",
-    "difficulty": 3,
-    "explanation": "Mitosis is the type of cell division that results in two daughter cells each having the same number and kind of chromosomes as the parent nucleus, typical of ordinary tissue growth."
-  },
-  {
     "id": "AP_Biology_239",
     "question": "A population of birds exhibits variation in beak size. Birds with intermediate beak sizes are more likely to survive and reproduce than birds with very small or very large beaks. This is an example of:",
     "choices": {
@@ -3105,19 +2377,6 @@
     "answer": "A",
     "difficulty": 5,
     "explanation": "Stabilizing selection favors intermediate phenotypes and selects against extreme phenotypes, leading to a decrease in phenotypic variation."
-  },
-  {
-    "id": "AP_Biology_240",
-    "question": "Which organelle is responsible for cellular digestion and waste removal through the action of hydrolytic enzymes?",
-    "choices": {
-      "A": "Lysosome",
-      "B": "Mitochondrion",
-      "C": "Ribosome",
-      "D": "Vacuole"
-    },
-    "answer": "A",
-    "difficulty": 3,
-    "explanation": "Lysosomes contain hydrolytic enzymes that break down waste materials and cellular debris. They are also involved in autophagy (digestion of old organelles) and phagocytosis."
   },
   {
     "id": "AP_Biology_241",
@@ -3136,12 +2395,12 @@
     "id": "AP_Biology_242",
     "question": "During photosynthesis, the splitting of water molecules (photolysis) occurs during:",
     "choices": {
-      "A": "The light-dependent reactions",
+      "A": "Glycolysis",
       "B": "The Calvin cycle",
       "C": "The Krebs cycle",
-      "D": "Glycolysis"
+      "D": "The light-dependent reactions"
     },
-    "answer": "A",
+    "answer": "D",
     "difficulty": 4,
     "explanation": "Photolysis, the splitting of water molecules, occurs during the light-dependent reactions of photosynthesis. This process releases electrons, protons (H+), and oxygen gas."
   },
@@ -3157,32 +2416,6 @@
     "answer": "B",
     "difficulty": 4,
     "explanation": "Phototaxis is movement in response to light. Negative phototaxis is movement away from light."
-  },
-  {
-    "id": "AP_Biology_244",
-    "question": "Which of the following macromolecules is primarily responsible for storing genetic information in living organisms?",
-    "choices": {
-      "A": "Deoxyribonucleic acid (DNA)",
-      "B": "Ribonucleic acid (RNA)",
-      "C": "Proteins",
-      "D": "Polysaccharides"
-    },
-    "answer": "A",
-    "difficulty": 3,
-    "explanation": "DNA is the molecule that carries the genetic instructions for the development, functioning, growth, and reproduction of all known organisms and many viruses."
-  },
-  {
-    "id": "AP_Biology_245",
-    "question": "A population of bacteria is exposed to an antibiotic. Most of the bacteria are killed, but a few survive due to pre-existing resistance. These survivors reproduce, passing on their resistance genes. This is an example of:",
-    "choices": {
-      "A": "Natural selection",
-      "B": "Genetic drift",
-      "C": "Gene flow",
-      "D": "Mutation"
-    },
-    "answer": "A",
-    "difficulty": 4,
-    "explanation": "Natural selection is the process whereby organisms better adapted to their environment tend to survive and produce more offspring. The antibiotic acts as a selective pressure."
   },
   {
     "id": "AP_Biology_246",
@@ -3201,12 +2434,12 @@
     "id": "AP_Biology_247",
     "question": "The process of endocytosis by which a cell engulfs large particles or other cells is called:",
     "choices": {
-      "A": "Phagocytosis",
+      "A": "Active transport",
       "B": "Pinocytosis",
       "C": "Exocytosis",
-      "D": "Active transport"
+      "D": "Phagocytosis"
     },
-    "answer": "A",
+    "answer": "D",
     "difficulty": 4,
     "explanation": "Phagocytosis is a form of endocytosis where the cell membrane engulfs large solid particles, such as bacteria or cellular debris."
   },
@@ -3228,11 +2461,11 @@
     "question": "Which cellular process involves the formation of a cell plate during cytokinesis?",
     "choices": {
       "A": "Animal cell division",
-      "B": "Plant cell division",
+      "B": "Fungal cell division",
       "C": "Bacterial cell division",
-      "D": "Fungal cell division"
+      "D": "Plant cell division"
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 5,
     "explanation": "Plant cells, due to their rigid cell wall, form a cell plate during cytokinesis, which develops into the new cell wall separating the daughter cells. Animal cells form a cleavage furrow."
   },
@@ -3248,19 +2481,6 @@
     "answer": "B",
     "difficulty": 4,
     "explanation": "Commensalism is a type of symbiosis where one organism benefits, and the other is unaffected."
-  },
-  {
-    "id": "AP_Biology_251",
-    "question": "What is the main function of the Golgi apparatus?",
-    "choices": {
-      "A": "Modifying, sorting, and packaging proteins and lipids",
-      "B": "Synthesizing proteins",
-      "C": "Generating ATP",
-      "D": "Breaking down cellular waste"
-    },
-    "answer": "A",
-    "difficulty": 3,
-    "explanation": "The Golgi apparatus receives proteins and lipids from the endoplasmic reticulum, modifies them, sorts them, and packages them into vesicles for transport to other destinations within or outside the cell."
   },
   {
     "id": "AP_Biology_252",
@@ -3289,32 +2509,6 @@
     "explanation": "Prokaryotic cells lack a nucleus and membrane-bound organelles. Their genetic material is typically a circular chromosome located in the nucleoid region. They divide by binary fission, not mitosis."
   },
   {
-    "id": "AP_Biology_254",
-    "question": "The process by which organisms with traits better suited to their environment tend to survive and reproduce more offspring is called:",
-    "choices": {
-      "A": "Natural selection",
-      "B": "Artificial selection",
-      "C": "Genetic drift",
-      "D": "Mutation"
-    },
-    "answer": "A",
-    "difficulty": 3,
-    "explanation": "Natural selection is the differential survival and reproduction of individuals due to differences in phenotype. It is a key mechanism of evolution."
-  },
-  {
-    "id": "AP_Biology_255",
-    "question": "In cellular respiration, the majority of ATP is produced during which stage?",
-    "choices": {
-      "A": "Oxidative phosphorylation (electron transport chain and chemiosmosis)",
-      "B": "Glycolysis",
-      "C": "Pyruvate oxidation",
-      "D": "Citric acid cycle (Krebs cycle)"
-    },
-    "answer": "A",
-    "difficulty": 5,
-    "explanation": "Oxidative phosphorylation, which includes the electron transport chain and chemiosmosis, is where the vast majority of ATP is generated during aerobic respiration, leveraging the proton gradient established by electron transport."
-  },
-  {
     "id": "AP_Biology_256",
     "question": "A population of deer is introduced into a new habitat with abundant food and no natural predators. Which of the following best describes the initial growth pattern of this population?",
     "choices": {
@@ -3339,19 +2533,6 @@
     "answer": "A",
     "difficulty": 5,
     "explanation": "RNA polymerase is the enzyme responsible for transcription; it reads the DNA template strand and synthesizes a complementary RNA molecule."
-  },
-  {
-    "id": "AP_Biology_258",
-    "question": "A plant cell is placed in a solution with a higher solute concentration than its cytoplasm. What will happen to the cell?",
-    "choices": {
-      "A": "The cell will plasmolyze as water moves out by osmosis.",
-      "B": "The cell will swell and potentially burst as water moves in.",
-      "C": "The cell's turgor pressure will increase.",
-      "D": "The cell wall will prevent any net movement of water."
-    },
-    "answer": "A",
-    "difficulty": 6,
-    "explanation": "When a plant cell is in a hypertonic solution, the water potential outside the cell is lower than inside. Water will move out of the cell by osmosis, causing the plasma membrane to pull away from the cell wall, a process called plasmolysis."
   },
   {
     "id": "AP_Biology_259",
@@ -3385,10 +2566,10 @@
     "choices": {
       "A": "Facilitated diffusion",
       "B": "Active transport",
-      "C": "Simple diffusion",
-      "D": "Osmosis"
+      "C": "Osmosis",
+      "D": "Simple diffusion"
     },
-    "answer": "C",
+    "answer": "D",
     "difficulty": 5,
     "explanation": "Oxygen moves from an area of high concentration (alveoli) to an area of low concentration (blood) across the alveolar membrane by simple diffusion, driven by the partial pressure gradient."
   },
@@ -3422,12 +2603,12 @@
     "id": "AP_Biology_264",
     "question": "Which of the following describes a population's carrying capacity?",
     "choices": {
-      "A": "The maximum population size that an environment can sustainably support indefinitely.",
+      "A": "The minimum population size required for a species to survive.",
       "B": "The rate at which new individuals are born into the population.",
       "C": "The total number of individuals in a population at a given time.",
-      "D": "The minimum population size required for a species to survive."
+      "D": "The maximum population size that an environment can sustainably support indefinitely."
     },
-    "answer": "A",
+    "answer": "D",
     "difficulty": 5,
     "explanation": "Carrying capacity (K) represents the upper limit on the population size that an environment can support due to limited resources like food, water, and space."
   },
@@ -3471,19 +2652,6 @@
     "explanation": "During Prophase I of meiosis, homologous chromosomes pair up (synapsis) and exchange genetic material through crossing over, which contributes to genetic variation."
   },
   {
-    "id": "AP_Biology_268",
-    "question": "Which of the following best describes the role of enzymes in biological systems?",
-    "choices": {
-      "A": "Enzymes are biological catalysts that speed up chemical reactions without being consumed in the process.",
-      "B": "Enzymes are responsible for storing genetic information in the cell.",
-      "C": "Enzymes are energy-producing molecules used in cellular respiration.",
-      "D": "Enzymes are structural components that provide support to cells."
-    },
-    "answer": "A",
-    "difficulty": 4,
-    "explanation": "Enzymes are proteins that act as biological catalysts, lowering the activation energy of specific biochemical reactions, thereby increasing the reaction rate."
-  },
-  {
     "id": "AP_Biology_269",
     "question": "Epinephrine (adrenaline) is a hormone that binds to receptors on the surface of liver cells, triggering a signaling cascade that leads to the breakdown of glycogen into glucose. This is an example of:",
     "choices": {
@@ -3513,12 +2681,12 @@
     "id": "AP_Biology_271",
     "question": "A mutation occurs in the gene that codes for the enzyme RuBisCO. This mutation is most likely to affect which process?",
     "choices": {
-      "A": "Carbon fixation during the Calvin cycle.",
+      "A": "Electron transport in cellular respiration.",
       "B": "Photolysis of water during the light-dependent reactions.",
       "C": "ATP synthesis in the mitochondria.",
-      "D": "Electron transport in cellular respiration."
+      "D": "Carbon fixation during the Calvin cycle."
     },
-    "answer": "A",
+    "answer": "D",
     "difficulty": 8,
     "explanation": "RuBisCO is the enzyme that catalyzes the initial step of carbon fixation in the Calvin cycle, where CO2 is attached to RuBP."
   },
@@ -3526,12 +2694,12 @@
     "id": "AP_Biology_272",
     "question": "Which of the following is a key characteristic of a keystone species in an ecosystem?",
     "choices": {
-      "A": "It has a relatively low population density but a disproportionately large effect on the ecosystem's structure.",
+      "A": "Its population size is solely determined by abiotic factors.",
       "B": "It is the most abundant species in the ecosystem.",
       "C": "It only consumes producers.",
-      "D": "Its population size is solely determined by abiotic factors."
+      "D": "It has a relatively low population density but a disproportionately large effect on the ecosystem's structure."
     },
-    "answer": "A",
+    "answer": "D",
     "difficulty": 7,
     "explanation": "Keystone species are those that exert a strong influence on the structure of their ecological communities, often by controlling the populations of other species. Their impact is much greater than their abundance would suggest."
   },
@@ -3588,45 +2756,6 @@
     "explanation": "Natural selection favors traits that enhance survival and reproduction. In this scenario, longer hind legs provide a survival advantage, leading to increased reproductive success for individuals possessing the alleles for longer legs. Consequently, the frequency of these alleles will rise in the gene pool over time."
   },
   {
-    "id": "AP_Biology_277",
-    "question": "Which of the following best describes the role of enzymes in biological systems?",
-    "choices": {
-      "A": "Enzymes are consumed during the reaction and must be replenished.",
-      "B": "Enzymes increase the activation energy required for a reaction to occur.",
-      "C": "Enzymes act as catalysts, speeding up biochemical reactions without being permanently altered.",
-      "D": "Enzymes provide the energy needed to drive metabolic processes."
-    },
-    "answer": "C",
-    "difficulty": 3,
-    "explanation": "Enzymes are biological catalysts. They lower the activation energy of reactions, allowing them to proceed at a faster rate. Enzymes are not consumed in the reactions they catalyze and can be reused."
-  },
-  {
-    "id": "AP_Biology_278",
-    "question": "A cell is placed in a hypotonic solution. Which of the following will occur?",
-    "choices": {
-      "A": "Water will move out of the cell, causing it to shrink.",
-      "B": "Water will move into the cell, causing it to swell.",
-      "C": "Solutes will move into the cell, equalizing concentration.",
-      "D": "The cell membrane will break down due to osmotic pressure."
-    },
-    "answer": "B",
-    "difficulty": 5,
-    "explanation": "A hypotonic solution has a lower solute concentration (and thus a higher water concentration) than the cell. Water moves by osmosis from an area of higher water concentration to an area of lower water concentration, meaning water will enter the cell, causing it to swell."
-  },
-  {
-    "id": "AP_Biology_279",
-    "question": "Mitochondria are often referred to as the \"powerhouses\" of the cell because they are the primary site of which process?",
-    "choices": {
-      "A": "Photosynthesis",
-      "B": "Protein synthesis",
-      "C": "Cellular respiration",
-      "D": "DNA replication"
-    },
-    "answer": "C",
-    "difficulty": 2,
-    "explanation": "Mitochondria are the organelles responsible for cellular respiration, the metabolic process that converts chemical energy stored in glucose and other fuel molecules into adenosine triphosphate (ATP), the main energy currency of the cell."
-  },
-  {
     "id": "AP_Biology_280",
     "question": "The process by which a bacterium engulfs a larger particle not living or not living is called:",
     "choices": {
@@ -3638,19 +2767,6 @@
     "answer": "B",
     "difficulty": 6,
     "explanation": "Phagocytosis is a form of endocytosis where the cell membrane engulfs large particles or whole cells. Pinocytosis is the uptake of fluids, exocytosis is the release of substances from the cell, and active transport requires energy to move molecules against their concentration gradient."
-  },
-  {
-    "id": "AP_Biology_281",
-    "question": "What is the primary function of ribosomes in a eukaryotic cell?",
-    "choices": {
-      "A": "To store genetic information",
-      "B": "To synthesize proteins",
-      "C": "To package and modify proteins",
-      "D": "To generate ATP"
-    },
-    "answer": "B",
-    "difficulty": 3,
-    "explanation": "Ribosomes are the cellular machinery responsible for protein synthesis (translation), where they read messenger RNA (mRNA) sequences and assemble amino acids into polypeptide chains."
   },
   {
     "id": "AP_Biology_282",
@@ -3669,27 +2785,14 @@
     "id": "AP_Biology_283",
     "question": "During meiosis, homologous chromosomes separate during which phase?",
     "choices": {
-      "A": "Anaphase I",
+      "A": "Prophase I",
       "B": "Metaphase II",
       "C": "Anaphase II",
-      "D": "Prophase I"
-    },
-    "answer": "A",
-    "difficulty": 6,
-    "explanation": "In Anaphase I of meiosis, homologous chromosomes (pairs of chromosomes) are pulled apart and move to opposite poles of the cell. Sister chromatids remain attached."
-  },
-  {
-    "id": "AP_Biology_284",
-    "question": "Which of the following is a key characteristic of a prokaryotic cell?",
-    "choices": {
-      "A": "Presence of a membrane-bound nucleus",
-      "B": "Absence of a cell wall",
-      "C": "Presence of membrane-bound organelles",
-      "D": "Presence of a nucleoid region containing DNA"
+      "D": "Anaphase I"
     },
     "answer": "D",
-    "difficulty": 4,
-    "explanation": "Prokaryotic cells lack a membrane-bound nucleus and other membrane-bound organelles. Their genetic material (DNA) is located in a region called the nucleoid, which is not enclosed by a membrane."
+    "difficulty": 6,
+    "explanation": "In Anaphase I of meiosis, homologous chromosomes (pairs of chromosomes) are pulled apart and move to opposite poles of the cell. Sister chromatids remain attached."
   },
   {
     "id": "AP_Biology_285",
@@ -3709,11 +2812,11 @@
     "question": "The Calvin cycle, which occurs during the light-independent reactions of photosynthesis, utilizes ATP and NADPH to convert carbon dioxide into:",
     "choices": {
       "A": "Oxygen",
-      "B": "Glucose",
+      "B": "Chlorophyll",
       "C": "Water",
-      "D": "Chlorophyll"
+      "D": "Glucose"
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 5,
     "explanation": "The primary output of the Calvin cycle is G3P (glyceraldehyde-3-phosphate), which is then used to synthesize glucose and other organic molecules. Therefore, the cycle effectively converts carbon dioxide into sugars."
   },
@@ -3748,11 +2851,11 @@
     "question": "The theory of endosymbiosis proposes that certain organelles in eukaryotic cells, such as mitochondria and chloroplasts, originated from:",
     "choices": {
       "A": "Membrane infoldings of the plasma membrane",
-      "B": "Independent prokaryotic organisms that were engulfed by other cells",
+      "B": "Self-assembly from precursor molecules",
       "C": "The fusion of multiple smaller vesicles",
-      "D": "Self-assembly from precursor molecules"
+      "D": "Independent prokaryotic organisms that were engulfed by other cells"
     },
-    "answer": "B",
+    "answer": "D",
     "difficulty": 6,
     "explanation": "The endosymbiotic theory suggests that mitochondria and chloroplasts were once free-living prokaryotes that were engulfed by an ancestral eukaryotic cell. Over time, these engulfed organisms developed a symbiotic relationship with the host cell, eventually becoming integrated organelles."
   },
@@ -3848,19 +2951,6 @@
     "explanation": "Natural selection favors individuals with advantageous phenotypes, which are the observable expressions of their genotypes. Individuals with advantageous traits are more likely to survive and reproduce, thus indirectly influencing allele frequencies over generations."
   },
   {
-    "id": "AP_Biology_297",
-    "question": "Which of the following best describes the role of ATP in cellular metabolism?",
-    "choices": {
-      "A": "It is a structural component of cell membranes.",
-      "B": "It stores and transfers chemical energy for cellular work.",
-      "C": "It serves as the primary genetic material of the cell.",
-      "D": "It acts as a catalyst for most biochemical reactions."
-    },
-    "answer": "B",
-    "difficulty": 3,
-    "explanation": "Adenosine triphosphate (ATP) is the main energy currency of the cell. It stores energy released from the breakdown of glucose and other fuel molecules and releases this energy when its phosphate bond is broken to power cellular processes."
-  },
-  {
     "id": "AP_Biology_298",
     "question": "A plant cell is suddenly placed in an extremely salty solution. What is likely to happen to the plant cell?",
     "choices": {
@@ -3879,10 +2969,10 @@
     "choices": {
       "A": "The Krebs cycle",
       "B": "Oxidative phosphorylation",
-      "C": "Glycolysis",
-      "D": "Fermentation"
+      "C": "Fermentation",
+      "D": "Glycolysis"
     },
-    "answer": "C",
+    "answer": "D",
     "difficulty": 4,
     "explanation": "Glycolysis is the first stage of cellular respiration, occurring in the cytoplasm. It involves the anaerobic breakdown of one molecule of glucose into two molecules of pyruvate, producing a small amount of ATP and NADH."
   },
