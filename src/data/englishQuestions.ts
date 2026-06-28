@@ -83,7 +83,7 @@ interface RawEnglishQuestion {
 }
 
 // Transform raw JSON questions to our EnglishQuestion format with difficulty ratings
-const baseEnglishQuestions: EnglishQuestion[] = (englishQuestionsRaw as RawEnglishQuestion[]).map((q) => {
+const baseEnglishQuestions: EnglishQuestion[] = (englishQuestionsRaw as unknown as RawEnglishQuestion[]).map((q) => {
   const options = [
     { letter: "A", text: q.optionA },
     { letter: "B", text: q.optionB },

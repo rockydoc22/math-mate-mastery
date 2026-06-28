@@ -37,7 +37,7 @@ function convertStarterQuestion(raw: StarterRawQuestion): Question {
   };
 }
 
-const allStarter = (starterRaw as StarterRawQuestion[]).map(convertStarterQuestion);
+const allStarter = (starterRaw as unknown as StarterRawQuestion[]).map(convertStarterQuestion);
 
 // Split into Math and English/Reading pools
 export const starterMathQuestions: Question[] = allStarter.filter(

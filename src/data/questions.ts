@@ -87,7 +87,7 @@ const PROBLEMATIC_QUESTION_IDS = new Set([
 
 // Transform raw JSON questions to our Question format with difficulty ratings
 // Filter out problematic questions (IDs 1-92) that have calculation errors and decimal formatting issues
-const rawQuestions: Question[] = (mathQuestionsRaw as RawMathQuestion[])
+const rawQuestions: Question[] = (mathQuestionsRaw as unknown as RawMathQuestion[])
   .filter((q) => !PROBLEMATIC_QUESTION_IDS.has(q.id))
   .map((q) => {
     const options = [
