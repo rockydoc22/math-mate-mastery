@@ -68,7 +68,7 @@ interface RawMathQuestion {
   id: number;
   category: string;
   subcategory: string;
-  difficulty: string;
+  difficulty: number;
   question: string;
   optionA: string;
   optionB: string;
@@ -87,6 +87,12 @@ const PROBLEMATIC_QUESTION_IDS = new Set([
 
 // Transform raw JSON questions to our Question format with difficulty ratings
 // Filter out problematic questions (IDs 1-92) that have calculation errors and decimal formatting issues
+function difficultyLabel(d: number): string {
+  if (d <= 3) return 'Easy';
+  if (d <= 6) return 'Medium';
+  return 'Hard';
+}
+
 const rawQuestions: Question[] = (mathQuestionsRaw as unknown as RawMathQuestion[])
   .filter((q) => !PROBLEMATIC_QUESTION_IDS.has(q.id))
   .map((q) => {
@@ -102,7 +108,7 @@ const rawQuestions: Question[] = (mathQuestionsRaw as unknown as RawMathQuestion
       options,
       correctAnswer: q.correct,
       explanation: q.explanation,
-      difficulty: q.difficulty.charAt(0).toUpperCase() + q.difficulty.slice(1),
+      difficulty: difficultyLabel(q.difficulty),
       domain: q.category,
       skill: q.subcategory,
       difficultyRating: rateDifficulty(q.question, options, q.category, q.subcategory)
