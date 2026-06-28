@@ -1,0 +1,1041 @@
+{
+  "bank": "src/data/AP_Physics_1_question_bank_200.json",
+  "total": 246,
+  "summary": {
+    "flagged": 12,
+    "errors": 5,
+    "clusters": 40,
+    "questions_in_clusters": 121
+  },
+  "ai_review_flagged": [
+    {
+      "id": "AP_Physics_1_57",
+      "verdict": "multiple",
+      "correct_answer": "null",
+      "issues": [
+        "The question is underspecified; multiple answers could be correct depending on the crate's state of motion (constant velocity vs. acceleration).",
+        "Choice B assumes acceleration, whereas Choice D/A are correct if the crate moves at a constant velocity.",
+        "Choice C is generally true for a horizontal push on a horizontal floor, making it a strong competitor regardless of horizontal motion."
+      ],
+      "suggested_distractor_fix": {
+        "letter": "B",
+        "replacement": "The pushing force must be greater than the friction force if the crate is accelerating in the direction of the push."
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "AP_Physics_1_66",
+      "verdict": "answer_wrong",
+      "correct_answer": "A",
+      "issues": [
+        "The explanation incorrectly applies Newton's First Law by ignoring the initial acceleration."
+      ],
+      "suggested_distractor_fix": null,
+      "confidence": "high"
+    },
+    {
+      "id": "AP_Physics_1_76",
+      "verdict": "multiple",
+      "correct_answer": "D",
+      "issues": [
+        "The explanation concludes that D is the correct mathematical result for the variables given in the prompt (d and t), but the marked answer is A.",
+        "Choice A and D are both physically equivalent, but the prompt provides 'd' and 't' as the known variables, making D the more complete answer.",
+        "The explanation incorrectly claims the prompt asks for the velocity in terms of 'a' and 'd' when the prompt actually specifies 'd' and 't'."
+      ],
+      "suggested_distractor_fix": null,
+      "confidence": "high"
+    },
+    {
+      "id": "AP_Physics_1_90",
+      "verdict": "multiple",
+      "correct_answer": "A",
+      "issues": [
+        "Both A and B are mathematically equivalent and physically correct expressions for the centripetal acceleration in this scenario."
+      ],
+      "suggested_distractor_fix": {
+        "letter": "B",
+        "replacement": "$GM/r$"
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "AP_Physics_1_110",
+      "verdict": "multiple",
+      "correct_answer": "C|D",
+      "issues": [
+        "Both C and D are technically correct based on the physics described."
+      ],
+      "suggested_distractor_fix": {
+        "letter": "C",
+        "replacement": "It is always equal to the maximum static friction force regardless of the angle."
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "AP_Physics_1_121",
+      "verdict": "multiple",
+      "correct_answer": "null",
+      "issues": [
+        "Both B and C are correct answers as both wavelength and speed change when a wave enters a new medium.",
+        "Explanation acknowledges wavelength changes, but only choice C is marked."
+      ],
+      "suggested_distractor_fix": {
+        "letter": "B",
+        "replacement": "Phase"
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "AP_Physics_1_122",
+      "verdict": "multiple",
+      "correct_answer": "A",
+      "issues": [
+        "Multiple correct answers (A and D) due to physics principles.",
+        "Marked answer D is technically correct by definition, but A is also correct and more specific to the scenario given."
+      ],
+      "suggested_distractor_fix": {
+        "letter": "D",
+        "replacement": "The net work done is negative."
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "AP_Physics_1_124",
+      "verdict": "distractor_weak",
+      "correct_answer": "A",
+      "issues": [
+        "Choice D is just a notation for the force itself, not a value."
+      ],
+      "suggested_distractor_fix": {
+        "letter": "D",
+        "replacement": "$\\mu_k F$"
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "AP_Physics_1_132",
+      "verdict": "multiple",
+      "correct_answer": null,
+      "issues": [
+        "Both Choices B and C are scientifically correct based on the prompt."
+      ],
+      "suggested_distractor_fix": {
+        "letter": "C",
+        "replacement": "Potential Energy"
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "AP_Physics_1_171",
+      "verdict": "multiple",
+      "correct_answer": "null",
+      "issues": [
+        "Both A and D are technically correct statements for an object at rest.",
+        "Choice A describes the equilibrium of specific forces.",
+        "Choice D is a fundamental consequence of Newton's First Law (rest implies zero net force)."
+      ],
+      "suggested_distractor_fix": {
+        "letter": "D",
+        "replacement": "The net force is greater than zero due to static friction."
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "AP_Physics_1_258",
+      "verdict": "multiple",
+      "correct_answer": "B",
+      "issues": [
+        "Options B and D are mathematically identical (I2 = 2 * I1 is the same as I1 = I2 / 2)."
+      ],
+      "suggested_distractor_fix": {
+        "letter": "D",
+        "replacement": "I1 = 4 * I2"
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "AP_Physics_1_282",
+      "verdict": "explanation_wrong",
+      "correct_answer": "A",
+      "issues": [
+        "The explanation identifies a calculated acceleration of 0.04 m/s^2 but concludes A (0 m/s^2) is the most plausible due to missing mu_s. Usually, in AP Physics, if mu_s is not given, it is assumed mu_s >= mu_k. If mu_s was slightly higher than 0.204, the block remains at rest."
+      ],
+      "suggested_distractor_fix": null,
+      "confidence": "high"
+    }
+  ],
+  "ai_review_errors": [
+    {
+      "id": "AP_Physics_1_63",
+      "verdict": "error",
+      "error": "Extra data: line 2 column 1 (char 102)"
+    },
+    {
+      "id": "AP_Physics_1_136",
+      "verdict": "error",
+      "error": "Extra data: line 2 column 1 (char 102)"
+    },
+    {
+      "id": "AP_Physics_1_192",
+      "verdict": "error",
+      "error": "Extra data: line 8 column 2 (char 126)"
+    },
+    {
+      "id": "AP_Physics_1_218",
+      "verdict": "error",
+      "error": "Extra data: line 2 column 1 (char 102)"
+    },
+    {
+      "id": "AP_Physics_1_286",
+      "verdict": "error",
+      "error": "Extra data: line 2 column 1 (char 102)"
+    }
+  ],
+  "concept_duplicate_clusters": [
+    {
+      "size": 8,
+      "avg_similarity": 0.857,
+      "members": [
+        {
+          "id": "AP_Physics_1_24",
+          "answer": "A",
+          "question": "A projectile is launched horizontally from a cliff of height $h$ with an initial speed $v_0$. Neglecting air resistance, which of the follow"
+        },
+        {
+          "id": "AP_Physics_1_48",
+          "answer": "B",
+          "question": "A projectile is launched horizontally from a cliff of height 'h' with an initial speed 'v_x'. Neglecting air resistance, which of the follow"
+        },
+        {
+          "id": "AP_Physics_1_70",
+          "answer": "C",
+          "question": "A cannon fires a cannonball. If we neglect air resistance, the horizontal component of the cannonball's velocity remains constant because:"
+        },
+        {
+          "id": "AP_Physics_1_94",
+          "answer": "B",
+          "question": "A projectile is launched horizontally from a cliff with an initial speed $v$. Which of the following statements about the projectile's motio"
+        },
+        {
+          "id": "AP_Physics_1_100",
+          "answer": "A",
+          "question": "A projectile is launched horizontally from a height $h$ with an initial speed $v_0$. Neglecting air resistance, which statement correctly de"
+        },
+        {
+          "id": "AP_Physics_1_125",
+          "answer": "D",
+          "question": "A projectile is launched horizontally from a high cliff with an initial speed $v_0$. Neglecting air resistance, which statement best describ"
+        },
+        {
+          "id": "AP_Physics_1_151",
+          "answer": "D",
+          "question": "A projectile is launched horizontally from a height $h$ with an initial velocity $v_0$. Ignoring air resistance, which of the following stat"
+        },
+        {
+          "id": "AP_Physics_1_290",
+          "answer": "C",
+          "question": "A cannon fires a projectile. Neglecting air resistance, what is the horizontal component of the projectile's velocity after it is fired?"
+        }
+      ]
+    },
+    {
+      "size": 8,
+      "avg_similarity": 0.83,
+      "members": [
+        {
+          "id": "AP_Physics_1_61",
+          "answer": "D",
+          "question": "A block of mass 'm' slides down a rough inclined plane with constant velocity. Which of the following statements is true?"
+        },
+        {
+          "id": "AP_Physics_1_183",
+          "answer": "C",
+          "question": "A block of mass M is sliding down an inclined plane at a constant velocity. Which of the following statements is true about the net force ac"
+        },
+        {
+          "id": "AP_Physics_1_186",
+          "answer": "B",
+          "question": "A block is pulled across a rough horizontal surface at a constant velocity by a rope. The rope makes an angle theta with the horizontal. Whi"
+        },
+        {
+          "id": "AP_Physics_1_190",
+          "answer": "D",
+          "question": "A block is pulled along a horizontal surface at a constant acceleration by a force F. The frictional force opposing the motion is f. What is"
+        },
+        {
+          "id": "AP_Physics_1_200",
+          "answer": "A",
+          "question": "A block slides down an inclined plane at a constant velocity. Which of the following statements about the forces acting on the block is true"
+        },
+        {
+          "id": "AP_Physics_1_209",
+          "answer": "C",
+          "question": "A block is pulled across a horizontal surface at a constant velocity by a rope. The rope makes an angle theta with the horizontal. Which of "
+        },
+        {
+          "id": "AP_Physics_1_224",
+          "answer": "B",
+          "question": "A block is pulled across a rough horizontal surface by a constant force F at an angle theta above the horizontal. If the block moves at a co"
+        },
+        {
+          "id": "AP_Physics_1_268",
+          "answer": "C",
+          "question": "A block is pulled across a rough horizontal surface by a force F at an angle theta above the horizontal. The normal force acting on the bloc"
+        }
+      ]
+    },
+    {
+      "size": 5,
+      "avg_similarity": 0.895,
+      "members": [
+        {
+          "id": "AP_Physics_1_60",
+          "answer": "D",
+          "question": "A pendulum swings back and forth. At which point in its swing is the tangential speed of the pendulum bob the greatest?"
+        },
+        {
+          "id": "AP_Physics_1_112",
+          "answer": "D",
+          "question": "A pendulum swings back and forth. At the lowest point of its swing, what is true about its energy?"
+        },
+        {
+          "id": "AP_Physics_1_149",
+          "answer": "D",
+          "question": "A pendulum bob swings back and forth. At the lowest point of its swing, which statement is true about the energy?"
+        },
+        {
+          "id": "AP_Physics_1_164",
+          "answer": "A",
+          "question": "A pendulum swings back and forth. At which point in its swing is its kinetic energy at a maximum?"
+        },
+        {
+          "id": "AP_Physics_1_289",
+          "answer": "B",
+          "question": "A pendulum swings back and forth. At which point is its potential energy maximum?"
+        }
+      ]
+    },
+    {
+      "size": 5,
+      "avg_similarity": 0.879,
+      "members": [
+        {
+          "id": "AP_Phys1_6",
+          "answer": "A",
+          "question": "If distance between two masses doubles, gravitational force becomes:"
+        },
+        {
+          "id": "AP_Physics_1_113",
+          "answer": "A",
+          "question": "If the distance between two point masses is doubled, how does the gravitational force between them change?"
+        },
+        {
+          "id": "AP_Physics_1_152",
+          "answer": "A",
+          "question": "Two objects, A and B, have masses $m_A$ and $m_B$ respectively. They are separated by a distance $r$. If the gravitational force between the"
+        },
+        {
+          "id": "AP_Physics_1_240",
+          "answer": "D",
+          "question": "Two objects, masses m and 2m, are separated by a distance r. The gravitational force between them is F. If the distance between them is doub"
+        },
+        {
+          "id": "AP_Physics_1_283",
+          "answer": "D",
+          "question": "Two objects, A and B, have masses m_A and m_B respectively. They are attracted to each other by a gravitational force. If the distance betwe"
+        }
+      ]
+    },
+    {
+      "size": 4,
+      "avg_similarity": 0.953,
+      "members": [
+        {
+          "id": "AP_Physics_1_177",
+          "answer": "B",
+          "question": "A spring with a spring constant k is stretched by a distance x. If the spring is then stretched by a distance 2x, how does the stored potent"
+        },
+        {
+          "id": "AP_Physics_1_203",
+          "answer": "C",
+          "question": "A spring with spring constant k is compressed by a distance x. The potential energy stored in the spring is U. If the spring is compressed b"
+        },
+        {
+          "id": "AP_Physics_1_219",
+          "answer": "B",
+          "question": "A spring with spring constant k is compressed by a distance x. It stores potential energy U. If the spring is compressed by a distance 2x, h"
+        },
+        {
+          "id": "AP_Physics_1_237",
+          "answer": "B",
+          "question": "A spring with spring constant k is compressed by a distance x. If the spring is compressed by a distance 2x, how does the stored potential e"
+        }
+      ]
+    },
+    {
+      "size": 4,
+      "avg_similarity": 0.936,
+      "members": [
+        {
+          "id": "AP_Physics_1_52",
+          "answer": "A",
+          "question": "A solid sphere and a hollow sphere of the same mass and radius are released from rest at the top of an inclined plane. Both spheres roll dow"
+        },
+        {
+          "id": "AP_Physics_1_71",
+          "answer": "D",
+          "question": "A solid disk and a hoop of the same mass and radius are released from rest at the top of an inclined plane. Both objects roll down the incli"
+        },
+        {
+          "id": "AP_Physics_1_80",
+          "answer": "D",
+          "question": "A solid uniform sphere and a hollow spherical shell, both of the same mass and radius, are released from rest at the top of an inclined plan"
+        },
+        {
+          "id": "AP_Physics_1_236",
+          "answer": "D",
+          "question": "A solid disk and a hollow hoop of the same mass and radius are released from rest at the top of an incline. Both roll without slipping. Whic"
+        }
+      ]
+    },
+    {
+      "size": 4,
+      "avg_similarity": 0.895,
+      "members": [
+        {
+          "id": "AP_Physics_1_67",
+          "answer": "C",
+          "question": "A car travels around a circular turn at a constant speed. Which statement best describes the net force acting on the car?"
+        },
+        {
+          "id": "AP_Physics_1_128",
+          "answer": "D",
+          "question": "A car of mass $M$ travels around a level circular curve of radius $R$ at a constant speed $v$. What is the direction of the net force acting"
+        },
+        {
+          "id": "AP_Physics_1_238",
+          "answer": "C",
+          "question": "A car travels in a circle at a constant speed. Which of the following statements about its motion is true?"
+        },
+        {
+          "id": "AP_Physics_1_286",
+          "answer": "C",
+          "question": "An object is moving in a circle at a constant speed. Which of the following statements is true?"
+        }
+      ]
+    },
+    {
+      "size": 4,
+      "avg_similarity": 0.873,
+      "members": [
+        {
+          "id": "AP_Physics_1_86",
+          "answer": "D",
+          "question": "A block of mass $m$ is sliding across a horizontal surface with kinetic friction $mu_k$. A horizontal force $F$ is applied to the block, and"
+        },
+        {
+          "id": "AP_Physics_1_124",
+          "answer": "A",
+          "question": "A block of mass $m$ is pushed across a rough horizontal surface with a constant horizontal force $F$. If the coefficient of kinetic friction"
+        },
+        {
+          "id": "AP_Physics_1_213",
+          "answer": "A",
+          "question": "A block of mass m is pulled by a constant force F along a horizontal surface with coefficient of kinetic friction mu. Which of the following"
+        },
+        {
+          "id": "AP_Physics_1_265",
+          "answer": "C",
+          "question": "A force F is applied horizontally to a block of mass m placed on a horizontal surface with a coefficient of kinetic friction mu_k. If the bl"
+        }
+      ]
+    },
+    {
+      "size": 3,
+      "avg_similarity": 0.971,
+      "members": [
+        {
+          "id": "AP_Physics_1_104",
+          "answer": "A",
+          "question": "A system consists of two masses, $m_1$ and $m_2$, connected by a string passing over a frictionless pulley. If $m_1$ is greater than $m_2$, "
+        },
+        {
+          "id": "AP_Physics_1_135",
+          "answer": "A",
+          "question": "A system consists of two masses, $m_1$ and $m_2$, connected by a light string passing over a frictionless pulley. If $m_1 > m_2$, and the sy"
+        },
+        {
+          "id": "AP_Physics_1_291",
+          "answer": "B",
+          "question": "A system consists of two masses, m1 and m2, connected by a string over a frictionless pulley. If m1 > m2, what is the direction of the accel"
+        }
+      ]
+    },
+    {
+      "size": 3,
+      "avg_similarity": 0.958,
+      "members": [
+        {
+          "id": "AP_Physics_1_156",
+          "answer": "D",
+          "question": "A 0.5 kg ball is thrown vertically upward with an initial velocity of $10\text{ m/s}$. What is the maximum height it reaches?"
+        },
+        {
+          "id": "AP_Physics_1_198",
+          "answer": "D",
+          "question": "A 0.5 kg ball is thrown vertically upwards with an initial speed of 10 m/s. Neglecting air resistance, what is the maximum height the ball r"
+        },
+        {
+          "id": "AP_Physics_1_244",
+          "answer": "B",
+          "question": "A 0.5 kg ball is thrown vertically upward with an initial speed of 10 m/s. Neglecting air resistance, what is the maximum height the ball re"
+        }
+      ]
+    },
+    {
+      "size": 3,
+      "avg_similarity": 0.945,
+      "members": [
+        {
+          "id": "AP_Physics_1_36",
+          "answer": "B",
+          "question": "A uniform rod of length $L$ is pivoted at its center. If a force $F$ is applied perpendicularly to one end of the rod, what is the torque pr"
+        },
+        {
+          "id": "AP_Physics_1_89",
+          "answer": "A",
+          "question": "A uniform rod of length $L$ is pivoted at its center. If a force $F$ is applied perpendicular to the rod at one end, what is the torque abou"
+        },
+        {
+          "id": "AP_Physics_1_119",
+          "answer": "B",
+          "question": "A uniform rod is pivoted at its center. If a force $F$ is applied at one end to rotate it by an angle $\theta$, what is the torque produced?"
+        }
+      ]
+    },
+    {
+      "size": 3,
+      "avg_similarity": 0.943,
+      "members": [
+        {
+          "id": "AP_Physics_1_25",
+          "answer": "D",
+          "question": "A block of mass $m$ is placed on an inclined plane that makes an angle $\theta$ with the horizontal. The coefficient of static friction betwe"
+        },
+        {
+          "id": "AP_Physics_1_174",
+          "answer": "A",
+          "question": "A block of mass m is placed on a rough inclined plane with an angle theta above the horizontal. The coefficient of static friction between t"
+        },
+        {
+          "id": "AP_Physics_1_227",
+          "answer": "A",
+          "question": "A block of mass m is placed on an inclined plane. The angle of inclination is theta. The coefficient of static friction between the block an"
+        }
+      ]
+    },
+    {
+      "size": 3,
+      "avg_similarity": 0.941,
+      "members": [
+        {
+          "id": "AP_Physics_1_32",
+          "answer": "A",
+          "question": "A block of mass $m$ slides down a frictionless incline of angle $\theta$. It starts from rest at height $h$. What is its speed when it reache"
+        },
+        {
+          "id": "AP_Physics_1_194",
+          "answer": "A",
+          "question": "A block of mass M is released from rest at the top of a frictionless inclined plane of height H. Which of the following expressions represen"
+        },
+        {
+          "id": "AP_Physics_1_234",
+          "answer": "A",
+          "question": "A block of mass M is released from rest at the top of a frictionless inclined plane of height H and angle theta. When the block slides down "
+        }
+      ]
+    },
+    {
+      "size": 3,
+      "avg_similarity": 0.921,
+      "members": [
+        {
+          "id": "AP_Physics_1_222",
+          "answer": "D",
+          "question": "A planet orbits a star in an elliptical path. As the planet moves closer to the star, which of the following quantities increases?"
+        },
+        {
+          "id": "AP_Physics_1_257",
+          "answer": "B",
+          "question": "A planet orbits a star in an elliptical path. The planet's speed is greatest when it is at which point in its orbit?"
+        },
+        {
+          "id": "AP_Physics_1_269",
+          "answer": "B",
+          "question": "A planet orbits a star in an elliptical path. The planet's speed is greatest when it is:"
+        }
+      ]
+    },
+    {
+      "size": 3,
+      "avg_similarity": 0.916,
+      "members": [
+        {
+          "id": "AP_Phys1_8",
+          "answer": "A",
+          "question": "Acceleration on a frictionless incline at angle \u03b8:"
+        },
+        {
+          "id": "AP_Physics_1_47",
+          "answer": "B",
+          "question": "A block of mass 'm' is at rest on a frictionless inclined plane that makes an angle '\u03b8' with the horizontal. What is the magnitude of the ac"
+        },
+        {
+          "id": "AP_Physics_1_241",
+          "answer": "A",
+          "question": "A block of mass M is sliding down a frictionless incline that makes an angle theta with the horizontal. If the block is released from rest, "
+        }
+      ]
+    },
+    {
+      "size": 3,
+      "avg_similarity": 0.9,
+      "members": [
+        {
+          "id": "AP_Physics_1_63",
+          "answer": "B",
+          "question": "A ball is thrown vertically upward with an initial velocity 'v'. Neglecting air resistance, at the highest point of its trajectory, the ball"
+        },
+        {
+          "id": "AP_Physics_1_129",
+          "answer": "B",
+          "question": "A ball is thrown vertically upward with an initial velocity $v_0$. At the highest point of its trajectory, what is the ball's instantaneous "
+        },
+        {
+          "id": "AP_Physics_1_181",
+          "answer": "D",
+          "question": "A ball is thrown straight upward. At the very peak of its trajectory, which of the following is true?"
+        }
+      ]
+    },
+    {
+      "size": 3,
+      "avg_similarity": 0.897,
+      "members": [
+        {
+          "id": "AP_Physics_1_22",
+          "answer": "A",
+          "question": "Two objects, A and B, have masses $m_A = 2 \text{ kg}$ and $m_B = 4 \text{ kg}$ respectively. They are initially at rest, and the same net for"
+        },
+        {
+          "id": "AP_Physics_1_74",
+          "answer": "A",
+          "question": "Two objects, A and B, have masses $m_A$ and $m_B$ respectively. They are initially at rest. A constant force $F$ is applied to object A, and"
+        },
+        {
+          "id": "AP_Physics_1_216",
+          "answer": "D",
+          "question": "Two objects, A and B, have masses M and 2M respectively. They are initially at rest on a frictionless horizontal surface. The same net force"
+        }
+      ]
+    },
+    {
+      "size": 3,
+      "avg_similarity": 0.892,
+      "members": [
+        {
+          "id": "AP_Phys1_5",
+          "answer": "A",
+          "question": "A spring (k = 200 N/m) compressed 0.1 m stores how much PE?"
+        },
+        {
+          "id": "AP_Physics_1_120",
+          "answer": "A",
+          "question": "A spring is compressed by 0.1 m. If the spring constant is 200 N/m, what is the force exerted by the spring at this compressed position?"
+        },
+        {
+          "id": "AP_Physics_1_287",
+          "answer": "C",
+          "question": "A spring is compressed by 0.1 m, and it exerts a force of 20 N. What is the spring constant?"
+        }
+      ]
+    },
+    {
+      "size": 3,
+      "avg_similarity": 0.891,
+      "members": [
+        {
+          "id": "AP_Physics_1_193",
+          "answer": "A",
+          "question": "A uniform plank of mass M and length L is supported by two vertical wires, one at each end. A block of mass m is placed at a distance L/4 fr"
+        },
+        {
+          "id": "AP_Physics_1_207",
+          "answer": "D",
+          "question": "A uniform plank of length L and mass M is supported at its ends by two scales. A person of mass m stands at a distance L/4 from one end. Wha"
+        },
+        {
+          "id": "AP_Physics_1_273",
+          "answer": "C",
+          "question": "A uniform plank of length L and mass M rests on two supports. One support is at the left end of the plank, and the other is at a distance L/"
+        }
+      ]
+    },
+    {
+      "size": 3,
+      "avg_similarity": 0.886,
+      "members": [
+        {
+          "id": "AP_Physics_1_35",
+          "answer": "D",
+          "question": "An object of mass $m$ collides head-on with an identical object of mass $m$ that is initially at rest. If the collision is perfectly elastic"
+        },
+        {
+          "id": "AP_Physics_1_252",
+          "answer": "B",
+          "question": "A billiard ball of mass m moving with speed v collides head-on elastically with an identical stationary billiard ball. After the collision, "
+        },
+        {
+          "id": "AP_Physics_1_266",
+          "answer": "B",
+          "question": "Two identical spheres collide head-on. The first sphere is moving with speed v, and the second sphere is at rest. If the collision is perfec"
+        }
+      ]
+    },
+    {
+      "size": 3,
+      "avg_similarity": 0.882,
+      "members": [
+        {
+          "id": "AP_Physics_1_38",
+          "answer": "C",
+          "question": "A block is at rest on a rough horizontal surface. If a horizontal force is applied to the block, but it does not move, which statement is tr"
+        },
+        {
+          "id": "AP_Physics_1_77",
+          "answer": "C",
+          "question": "A 10 kg block rests on a horizontal surface. A horizontal force of 30 N is applied to the block, but it does not move. What is the magnitude"
+        },
+        {
+          "id": "AP_Physics_1_139",
+          "answer": "A",
+          "question": "A block of mass $m$ is at rest on a rough horizontal surface. A horizontal force $F$ is applied to the block, but the block does not move. W"
+        }
+      ]
+    },
+    {
+      "size": 3,
+      "avg_similarity": 0.874,
+      "members": [
+        {
+          "id": "AP_Physics_1_96",
+          "answer": "C",
+          "question": "An object is moving in a circle of radius $r$ at a constant speed $v$. If the speed is doubled while the radius remains the same, by what fa"
+        },
+        {
+          "id": "AP_Physics_1_195",
+          "answer": "B",
+          "question": "An object moves in a circular path of radius R with a constant speed v. If the speed of the object is doubled to 2v and the radius of the pa"
+        },
+        {
+          "id": "AP_Physics_1_223",
+          "answer": "B",
+          "question": "An object sits on a rotating turntable. The object is not slipping. If the turntable's angular speed is doubled, by what factor does the cen"
+        }
+      ]
+    },
+    {
+      "size": 3,
+      "avg_similarity": 0.869,
+      "members": [
+        {
+          "id": "AP_Physics_1_29",
+          "answer": "D",
+          "question": "A system consists of two masses, $m_1$ and $m_2$, connected by a light, inextensible string passing over a light, frictionless pulley. If $m"
+        },
+        {
+          "id": "AP_Physics_1_78",
+          "answer": "D",
+          "question": "A system consists of two blocks, $m_1$ and $m_2$, connected by a light string that passes over a frictionless pulley. Block $m_1$ rests on a"
+        },
+        {
+          "id": "AP_Physics_1_264",
+          "answer": "D",
+          "question": "Two objects, object A with mass M and object B with mass 2M, are connected by a light string that passes over a frictionless pulley. If the "
+        }
+      ]
+    },
+    {
+      "size": 2,
+      "avg_similarity": 0.991,
+      "members": [
+        {
+          "id": "AP_Physics_1_50",
+          "answer": "C",
+          "question": "A child is riding a merry-go-round that is rotating at a constant speed. Which of the following statements best describes the net force acti"
+        },
+        {
+          "id": "AP_Physics_1_158",
+          "answer": "B",
+          "question": "A child is on a merry-go-round that is rotating at a constant speed. Which statement best describes the net force acting on the child?"
+        }
+      ]
+    },
+    {
+      "size": 2,
+      "avg_similarity": 0.987,
+      "members": [
+        {
+          "id": "AP_Physics_1_130",
+          "answer": "D",
+          "question": "A spring with spring constant $k$ is stretched by a distance $x$ from its equilibrium position. What is the potential energy stored in the s"
+        },
+        {
+          "id": "AP_Physics_1_150",
+          "answer": "D",
+          "question": "A spring has a spring constant $k$. If the spring is stretched by a distance $x$ from its equilibrium position, what is the potential energy"
+        }
+      ]
+    },
+    {
+      "size": 2,
+      "avg_similarity": 0.956,
+      "members": [
+        {
+          "id": "AP_Physics_1_132",
+          "answer": "B",
+          "question": "A collision occurs between two objects. Which of the following quantities is always conserved in any collision (assuming no external forces)"
+        },
+        {
+          "id": "AP_Physics_1_157",
+          "answer": "A",
+          "question": "Two objects collide. During the collision, which quantity is always conserved, assuming no external forces act on the system?"
+        }
+      ]
+    },
+    {
+      "size": 2,
+      "avg_similarity": 0.944,
+      "members": [
+        {
+          "id": "AP_Physics_1_84",
+          "answer": "B",
+          "question": "A pendulum consisting of a bob of mass $m$ and a string of length $L$ is released from rest at an angle $\theta$ from the vertical. What is t"
+        },
+        {
+          "id": "AP_Physics_1_217",
+          "answer": "C",
+          "question": "A simple pendulum consists of a bob of mass m attached to a string of length L. The pendulum is released from rest at an angle theta from th"
+        }
+      ]
+    },
+    {
+      "size": 2,
+      "avg_similarity": 0.942,
+      "members": [
+        {
+          "id": "AP_Physics_1_192",
+          "answer": "B",
+          "question": "A simple pendulum consists of a mass m attached to a string of length L. If the length of the string is doubled, how does the period of osci"
+        },
+        {
+          "id": "AP_Physics_1_271",
+          "answer": "C",
+          "question": "A simple pendulum of length L swings with a small amplitude. If the length of the pendulum is doubled, what happens to its period of oscilla"
+        }
+      ]
+    },
+    {
+      "size": 2,
+      "avg_similarity": 0.933,
+      "members": [
+        {
+          "id": "AP_Physics_1_155",
+          "answer": "A",
+          "question": "A block is sliding down a frictionless inclined plane. As the angle of inclination decreases, what happens to the acceleration of the block?"
+        },
+        {
+          "id": "AP_Physics_1_133",
+          "answer": "D",
+          "question": "A block is sliding down a frictionless inclined plane. As the angle of inclination of the plane increases, the acceleration of the block:"
+        }
+      ]
+    },
+    {
+      "size": 2,
+      "avg_similarity": 0.929,
+      "members": [
+        {
+          "id": "AP_Physics_1_45",
+          "answer": "C",
+          "question": "A 50 kg student stands on a scale in an elevator. If the elevator is accelerating upward with an acceleration $a$, what is the reading on th"
+        },
+        {
+          "id": "AP_Physics_1_131",
+          "answer": "B",
+          "question": "A 70 kg student stands on a scale in an elevator. The elevator is accelerating upwards with an acceleration $a$. What is the reading on the "
+        }
+      ]
+    },
+    {
+      "size": 2,
+      "avg_similarity": 0.914,
+      "members": [
+        {
+          "id": "AP_Phys1_1",
+          "answer": "D",
+          "question": "A ball is thrown vertically upward at 20 m/s. How high does it rise? (g = 10 m/s\u00b2)"
+        },
+        {
+          "id": "AP_Physics_1_281",
+          "answer": "B",
+          "question": "A ball is thrown vertically upward with an initial velocity of 20 m/s. What is the maximum height reached by the ball, neglecting air resist"
+        }
+      ]
+    },
+    {
+      "size": 2,
+      "avg_similarity": 0.898,
+      "members": [
+        {
+          "id": "AP_Physics_1_127",
+          "answer": "C",
+          "question": "Two objects, A and B, have masses $m_A$ and $m_B$ respectively, with $m_A > m_B$. They are dropped from the same height at the same time. Ne"
+        },
+        {
+          "id": "AP_Physics_1_138",
+          "answer": "C",
+          "question": "Two spheres, A and B, have the same mass and are made of the same material. Sphere A is larger than sphere B. If both spheres are dropped fr"
+        }
+      ]
+    },
+    {
+      "size": 2,
+      "avg_similarity": 0.894,
+      "members": [
+        {
+          "id": "AP_Physics_1_189",
+          "answer": "D",
+          "question": "A wave travels through a medium. If the frequency of the wave is doubled while the wavelength remains constant, how does the wave speed chan"
+        },
+        {
+          "id": "AP_Physics_1_229",
+          "answer": "B",
+          "question": "A wave travels through a medium. If the frequency of the wave is doubled while the tension in the medium remains constant, what happens to t"
+        }
+      ]
+    },
+    {
+      "size": 2,
+      "avg_similarity": 0.879,
+      "members": [
+        {
+          "id": "AP_Physics_1_146",
+          "answer": "A",
+          "question": "A roller coaster car is at the top of a hill, momentarily at rest before descending. If air resistance and friction are negligible, what hap"
+        },
+        {
+          "id": "AP_Physics_1_296",
+          "answer": "B",
+          "question": "A roller coaster car starts from rest at the top of a hill and speeds up as it goes down. What type of energy transformation is occurring?"
+        }
+      ]
+    },
+    {
+      "size": 2,
+      "avg_similarity": 0.877,
+      "members": [
+        {
+          "id": "AP_Physics_1_172",
+          "answer": "D",
+          "question": "A spring-mass system oscillates horizontally on a frictionless surface. If the mass is doubled, while the spring constant remains the same, "
+        },
+        {
+          "id": "AP_Physics_1_212",
+          "answer": "A",
+          "question": "A mass m is oscillating on a spring with a period T. If the mass is changed to 2m, what is the new period of oscillation (assuming the sprin"
+        }
+      ]
+    },
+    {
+      "size": 2,
+      "avg_similarity": 0.875,
+      "members": [
+        {
+          "id": "AP_Phys1_20",
+          "answer": "A",
+          "question": "Two skaters push off. A (50 kg) moves at 3 m/s. B (75 kg) speed:"
+        },
+        {
+          "id": "AP_Physics_1_62",
+          "answer": "A",
+          "question": "Two ice skaters push off each other on a frictionless surface. Skater A has a mass of 60 kg, and Skater B has a mass of 90 kg. If Skater A m"
+        }
+      ]
+    },
+    {
+      "size": 2,
+      "avg_similarity": 0.872,
+      "members": [
+        {
+          "id": "AP_Phys1_3",
+          "answer": "B",
+          "question": "A satellite orbits Earth at constant speed. Which is correct?"
+        },
+        {
+          "id": "AP_Physics_1_165",
+          "answer": "C",
+          "question": "A satellite orbits the Earth in a circular path at a constant speed. Which statement correctly describes the net force on the satellite?"
+        }
+      ]
+    },
+    {
+      "size": 2,
+      "avg_similarity": 0.864,
+      "members": [
+        {
+          "id": "AP_Physics_1_28",
+          "answer": "C",
+          "question": "A ball is thrown vertically upward with an initial speed $v_0$. Neglecting air resistance, which statement best describes the motion after i"
+        },
+        {
+          "id": "AP_Physics_1_75",
+          "answer": "B",
+          "question": "A ball is thrown vertically upward with an initial velocity $v_0$. Neglecting air resistance, what is the speed of the ball when it returns "
+        }
+      ]
+    },
+    {
+      "size": 2,
+      "avg_similarity": 0.862,
+      "members": [
+        {
+          "id": "AP_Physics_1_188",
+          "answer": "B",
+          "question": "A person stands at the edge of a rotating merry-go-round and then walks towards the center. What happens to the angular speed of the merry-g"
+        },
+        {
+          "id": "AP_Physics_1_253",
+          "answer": "B",
+          "question": "A playground merry-go-round has a rotational inertia I and is rotating with an angular speed omega. A child of mass m jumps onto the merry-g"
+        }
+      ]
+    },
+    {
+      "size": 2,
+      "avg_similarity": 0.86,
+      "members": [
+        {
+          "id": "AP_Physics_1_53",
+          "answer": "C",
+          "question": "A person is standing on a bathroom scale in an elevator. When the elevator is accelerating upward, the reading on the scale will be:"
+        },
+        {
+          "id": "AP_Physics_1_279",
+          "answer": "D",
+          "question": "A person stands on a scale in an elevator. The scale reads less than the person's actual weight. Which of the following describes the motion"
+        }
+      ]
+    }
+  ]
+}

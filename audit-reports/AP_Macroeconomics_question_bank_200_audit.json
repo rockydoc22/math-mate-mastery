@@ -1,0 +1,638 @@
+{
+  "bank": "src/data/AP_Macroeconomics_question_bank_200.json",
+  "total": 252,
+  "summary": {
+    "flagged": 7,
+    "errors": 107,
+    "clusters": 0,
+    "questions_in_clusters": 0
+  },
+  "ai_review_flagged": [
+    {
+      "id": "AP_Macroeconomics_23",
+      "verdict": "multiple",
+      "correct_answer": "null",
+      "issues": [
+        "Both A and C are theoretically correct answers.",
+        "A decrease in labor union power (C) reduces wage rigidity and structural unemployment, lowering the natural rate.",
+        "The AP Macroeconomics curriculum frequently identifies both structural improvements (training) and reduced labor market frictions (union power) as factors that lower the NRU."
+      ],
+      "suggested_distractor_fix": {
+        "letter": "C",
+        "replacement": "A sudden increase in the total population size."
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "AP_Macroeconomics_33",
+      "verdict": "multiple",
+      "correct_answer": "null",
+      "issues": [
+        "Both C and D are technically correct as a decrease in productivity shifts both supply curves leftward.",
+        "Distractor A is the opposite of the effect."
+      ],
+      "suggested_distractor_fix": {
+        "letter": "C",
+        "replacement": "A decrease in the short-run aggregate demand curve."
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "AP_Macroeconomics_47",
+      "verdict": "multiple",
+      "correct_answer": "D",
+      "issues": [
+        "Option C is also a correct answer in AP Macroeconomics theory; a lower relative inflation rate increases the purchasing power of the dollar and increases demand for U.S. goods, leading to appreciation.",
+        "Option B can lead to currency appreciation (crowding out effect) or depreciation (inflationary effect) depending on the model used, making it ambiguous."
+      ],
+      "suggested_distractor_fix": {
+        "letter": "C",
+        "replacement": "An increase in the inflation rate in the United States relative to Europe."
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "AP_Macroeconomics_71",
+      "verdict": "multiple",
+      "correct_answer": "null",
+      "issues": [
+        "Both C and D are correct answers."
+      ],
+      "suggested_distractor_fix": {
+        "letter": "C",
+        "replacement": "A decrease in short-run aggregate demand."
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "AP_Macroeconomics_97",
+      "verdict": "multiple",
+      "correct_answer": "D",
+      "issues": [
+        "Both C and D are technically correct depending on the starting point of the analysis, but D is the primary mechanism of a trade deficit (selling home currency to buy foreigners' goods).",
+        "Choice C indicates a 'decrease in demand' which occurs because foreigners aren't buying the country's exports, but the 'importing more' action explicitly creates an 'increase in supply' of the domestic currency as it is sold for foreign currencies."
+      ],
+      "suggested_distractor_fix": null,
+      "confidence": "high"
+    },
+    {
+      "id": "AP_Macroeconomics_111",
+      "verdict": "explanation_wrong",
+      "correct_answer": "B",
+      "issues": [
+        "The explanation incorrectly calculates the algebraic relationship. From M = PQ/V, a decrease in V would cause M to increase, not decrease. Similarly, an increase in Q would cause M to increase, not decrease.",
+        "Choice B is the most algebraically sound: if P decreases (numerator down) and V increases (denominator up), M must decrease to maintain the equality."
+      ],
+      "suggested_distractor_fix": null,
+      "confidence": "high"
+    },
+    {
+      "id": "AP_Macroeconomics_132",
+      "verdict": "answer_wrong",
+      "correct_answer": "B",
+      "issues": [
+        "The explanation contradicts the mathematical identity MV = PY. If MV is constant and P doubles, Y must halve to maintain the equality."
+      ],
+      "suggested_distractor_fix": null,
+      "confidence": "high"
+    }
+  ],
+  "ai_review_errors": [
+    {
+      "id": "AP_Macroeconomics_162",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "AP_Macroeconomics_164",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "AP_Macroeconomics_168",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "AP_Macroeconomics_166",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "AP_Macroeconomics_134",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "AP_Macroeconomics_133",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "AP_Macroeconomics_135",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "AP_Macroeconomics_172",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "AP_Macroeconomics_173",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "AP_Macroeconomics_175",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "AP_Macroeconomics_178",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "AP_Macroeconomics_177",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "AP_Macroeconomics_180",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "AP_Macroeconomics_181",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "AP_Macroeconomics_185",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "AP_Macroeconomics_182",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "AP_Macroeconomics_187",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "AP_Macro_4",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "AP_Macroeconomics_186",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "AP_Macroeconomics_191",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "AP_Macroeconomics_189",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "AP_Macroeconomics_193",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "AP_Macroeconomics_194",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "AP_Macroeconomics_195",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "AP_Macroeconomics_192",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "AP_Macroeconomics_196",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "AP_Macroeconomics_200",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "AP_Macroeconomics_199",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "AP_Macroeconomics_197",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "AP_Macroeconomics_202",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "AP_Macroeconomics_201",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "AP_Macroeconomics_203",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "AP_Macroeconomics_204",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "AP_Macroeconomics_207",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "AP_Macroeconomics_209",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "AP_Macroeconomics_206",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "AP_Macroeconomics_208",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "AP_Macroeconomics_210",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "AP_Macroeconomics_212",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "AP_Macroeconomics_213",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "AP_Macroeconomics_214",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "AP_Macroeconomics_216",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "AP_Macroeconomics_215",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "AP_Macroeconomics_217",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "AP_Macroeconomics_222",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "AP_Macroeconomics_218",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "AP_Macroeconomics_220",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "AP_Macroeconomics_225",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "AP_Macroeconomics_223",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "AP_Macroeconomics_226",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "AP_Macroeconomics_229",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "AP_Macroeconomics_231",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "AP_Macroeconomics_232",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "AP_Macroeconomics_233",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "AP_Macroeconomics_230",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "AP_Macroeconomics_234",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "AP_Macroeconomics_235",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "AP_Macroeconomics_236",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "AP_Macroeconomics_238",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "AP_Macroeconomics_237",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "AP_Macroeconomics_240",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "AP_Macroeconomics_242",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "AP_Macroeconomics_243",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "AP_Macroeconomics_244",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "AP_Macroeconomics_245",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "AP_Macroeconomics_247",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "AP_Macroeconomics_246",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "AP_Macroeconomics_250",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "AP_Macroeconomics_248",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "AP_Macroeconomics_251",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "AP_Macroeconomics_249",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "AP_Macroeconomics_253",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "AP_Macroeconomics_254",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "AP_Macroeconomics_257",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "AP_Macroeconomics_256",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "AP_Macroeconomics_258",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "AP_Macroeconomics_261",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "AP_Macroeconomics_260",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "AP_Macroeconomics_264",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "AP_Macroeconomics_263",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "AP_Macroeconomics_265",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "AP_Macroeconomics_266",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "AP_Macroeconomics_271",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "AP_Macroeconomics_267",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "AP_Macroeconomics_270",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "AP_Macroeconomics_274",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "AP_Macroeconomics_273",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "AP_Macroeconomics_272",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "AP_Macroeconomics_276",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "AP_Macroeconomics_278",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "AP_Macroeconomics_279",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "AP_Macroeconomics_281",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "AP_Macroeconomics_277",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "AP_Macro_5",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "AP_Macroeconomics_284",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "AP_Macroeconomics_280",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "AP_Macroeconomics_283",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "AP_Macroeconomics_288",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "AP_Macroeconomics_289",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "AP_Macroeconomics_292",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "AP_Macroeconomics_294",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "AP_Macroeconomics_293",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "AP_Macroeconomics_296",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "AP_Macroeconomics_297",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "AP_Macroeconomics_290",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "AP_Macroeconomics_299",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    },
+    {
+      "id": "AP_Macroeconomics_300",
+      "verdict": "error",
+      "error": "Rate limited \u2014 wait before retrying or increase delay between requests"
+    }
+  ],
+  "concept_duplicate_clusters": []
+}

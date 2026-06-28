@@ -1,0 +1,1323 @@
+{
+  "bank": "src/data/AP_Microeconomics_question_bank_200.json",
+  "total": 253,
+  "summary": {
+    "flagged": 25,
+    "errors": 5,
+    "clusters": 34,
+    "questions_in_clusters": 152
+  },
+  "ai_review_flagged": [
+    {
+      "id": "AP_Microeconomics_272",
+      "verdict": "answer_wrong",
+      "correct_answer": "B",
+      "issues": [
+        "The profit-maximizing condition for a perfectly competitive firm is P = MC. Calculating MC as the derivative of TC gives MC = 2 + 2Q. Setting 10 = 2 + 2Q results in Q = 4. The explanation correctly identifies Q=4 through multiple verification steps but erroneously adheres to the marked answer 'C' (5 units) despite proving it mathematically inferior."
+      ],
+      "suggested_distractor_fix": null,
+      "confidence": "high"
+    },
+    {
+      "id": "AP_Microeconomics_24",
+      "verdict": "multiple",
+      "correct_answer": "B",
+      "issues": [
+        "Choices B, C, and D are all technically correct statements under the premise, making B the best general description of the rule, while C and D are extreme specific cases."
+      ],
+      "suggested_distractor_fix": {
+        "letter": "C",
+        "replacement": "Supply is unit elastic."
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "AP_Microeconomics_48",
+      "verdict": "multiple",
+      "correct_answer": "null",
+      "issues": [
+        "Choice C and D are both technically correct as both cause a rightward shift in the demand curve for a normal good."
+      ],
+      "suggested_distractor_fix": {
+        "letter": "C",
+        "replacement": "The price of a complementary good increases."
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "AP_Microeconomics_68",
+      "verdict": "answer_wrong",
+      "correct_answer": "B",
+      "issues": [
+        "The marked answer A contradicts the explanation provided.",
+        "Tax burden falls more heavily on the relatively inelastic side. If consumers bear more burden, demand must be less elastic than supply (or supply more elastic than demand)."
+      ],
+      "suggested_distractor_fix": null,
+      "confidence": "high"
+    },
+    {
+      "id": "AP_Microeconomics_136",
+      "verdict": "multiple",
+      "correct_answer": "B",
+      "issues": [
+        "Option D is also a theoretically correct long-run action given the scenario, though B is the standard answer for the short-run decision."
+      ],
+      "suggested_distractor_fix": {
+        "letter": "D",
+        "replacement": "Increase price to equal average total cost."
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "AP_Microeconomics_187",
+      "verdict": "multiple",
+      "correct_answer": "null",
+      "issues": [
+        "Both A and C are technically definitions of price discrimination.",
+        "A describes second-degree price discrimination (quantity discounts), while C describes first and third-degree price discrimination."
+      ],
+      "suggested_distractor_fix": {
+        "letter": "A",
+        "replacement": "Setting price equal to marginal cost in a competitive market."
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "AP_Microeconomics_282",
+      "verdict": "explanation_wrong",
+      "correct_answer": "null",
+      "issues": [
+        "The premise states demand is 'upward sloping', which contradicts standard economic theory where demand is downward sloping.",
+        "Deadweight loss depends on the combined responsiveness of both curves; comparing relative elasticities (A vs B) determines tax incidence, not the magnitude of total deadweight loss.",
+        "Standard formulas show DWL is larger when the absolute values of both elasticities are higher, but A and B are comparative statements that do not logically follow for total DWL magnitude without knowing the baseline."
+      ],
+      "suggested_distractor_fix": null,
+      "confidence": "high"
+    },
+    {
+      "id": "AP_Microeconomics_96",
+      "verdict": "multiple",
+      "correct_answer": "D",
+      "issues": [
+        "Both choice B and D represent the same condition if social benefit equals private benefit, but D is the standard definition of social optimality."
+      ],
+      "suggested_distractor_fix": {
+        "letter": "B",
+        "replacement": "Marginal private benefit is minimized."
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "AP_Microeconomics_120",
+      "verdict": "multiple",
+      "correct_answer": null,
+      "issues": [
+        "Both C and D are theoretically efficient methods to achieve specific reductions in pollution. While C (Pigouvian tax) is the standard theoretical answer for internalizing externalities, D (tradable permits) is the standard method for achieving a specific *quantity* reduction at the least cost when abatement costs vary across firms."
+      ],
+      "suggested_distractor_fix": {
+        "letter": "D",
+        "replacement": "Require all factories to use the exact same scrubber technology regardless of cost."
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "AP_Microeconomics_274",
+      "verdict": "answer_wrong",
+      "correct_answer": "null",
+      "issues": [
+        "The mathematical calculation in the explanation leads to a result ($27) that is not among the choices.",
+        "The explanation contains a fundamental economic logic error: a tax on sellers means $P_b = P_s + Tax$, not $P_s = P_b + Tax$ as used in the shift. If a seller is taxed $5, they must receive $P_s$ such that $P_b$ (what consumer pays) equals $P_s + 5$.",
+        "Correct Calculation: $Q_d = 100 - 2P_b$; $Q_s = 3(P_b - 5) - 50$. Equilibrium: $100 - 2P_b = 3P_b - 15 - 50 \\Rightarrow 100 - 2P_b = 3P_b - 65 \\Rightarrow 165 = 5P_b \\Rightarrow P_b = 33$.",
+        "Choice B ($31) is incorrect under all standard interpretations of the provided functions."
+      ],
+      "suggested_distractor_fix": {
+        "letter": "B",
+        "replacement": "$33"
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "AP_Microeconomics_145",
+      "verdict": "multiple",
+      "correct_answer": "null",
+      "issues": [
+        "Option B and C are both correct consequences of marginal cost pricing."
+      ],
+      "suggested_distractor_fix": {
+        "letter": "B",
+        "replacement": "The monopoly will produce the profit-maximizing output where MR = MC."
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "AP_Microeconomics_199",
+      "verdict": "answer_wrong",
+      "correct_answer": "A",
+      "issues": [
+        "The marked answer C is incorrect based on the calculation provided in the explanation; the explanation correctly derives x=25, y=10 which corresponds to choice A."
+      ],
+      "suggested_distractor_fix": null,
+      "confidence": "high"
+    },
+    {
+      "id": "AP_Microeconomics_73",
+      "verdict": "answer_wrong",
+      "correct_answer": "B",
+      "issues": [
+        "The marked answer and explanation incorrectly assign the tax burden. In tax incidence theory, the more inelastic side of the market bears the greater share of the burden. Since demand is relatively inelastic compared to elastic supply, consumers bear the larger portion."
+      ],
+      "suggested_distractor_fix": null,
+      "confidence": "high"
+    },
+    {
+      "id": "AP_Microeconomics_211",
+      "verdict": "multiple",
+      "correct_answer": null,
+      "issues": [
+        "Both B and D are economically correct outcomes of a binding price ceiling."
+      ],
+      "suggested_distractor_fix": {
+        "letter": "B",
+        "replacement": "An increase in the producer surplus for all sellers."
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "AP_Microeconomics_260",
+      "verdict": "multiple",
+      "correct_answer": "null",
+      "issues": [
+        "Both C and D are classically defined as fixed costs in introductory microeconomics."
+      ],
+      "suggested_distractor_fix": {
+        "letter": "D",
+        "replacement": "Electricity charges based on machine usage"
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "AP_Microeconomics_210",
+      "verdict": "answer_wrong",
+      "correct_answer": "B",
+      "issues": [
+        "The question asks what a firm MUST do to INCREASE SALES. By the Law of Demand, increasing sales (quantity) requires lowering the price. Choice C (raising price) reduces sales, making 'D' logically impossible as a set of actions to increase sales.",
+        "Choice A and B are both factual statements about total revenue, but the prompt asks for the necessary action for sales growth. While B is a true statement, the marked answer D is incorrect because Choice C contradicts the goal of increasing sales."
+      ],
+      "suggested_distractor_fix": {
+        "letter": "D",
+        "replacement": "Lower its price, which will increase its marginal revenue."
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "AP_Microeconomics_157",
+      "verdict": "multiple",
+      "correct_answer": "D",
+      "issues": [
+        "Both A and D are technically correct, as MC is the slope of both the Total Cost and Total Variable Cost curves."
+      ],
+      "suggested_distractor_fix": {
+        "letter": "A",
+        "replacement": "The difference between marginal revenue and average cost."
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "AP_Microeconomics_78",
+      "verdict": "answer_wrong",
+      "correct_answer": "null",
+      "issues": [
+        "Choice C contradicts the fact that monopolies underproduce, yet D claims 'All of the above'.",
+        "Choice C states the output is 'greater than' socially optimal, but monopolies produce less (smaller output) than socially optimal."
+      ],
+      "suggested_distractor_fix": {
+        "letter": "C",
+        "replacement": "Less than the socially optimal output level."
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "AP_Microeconomics_86",
+      "verdict": "multiple",
+      "correct_answer": "A",
+      "issues": [
+        "Option C is also technically correct, as a perfectly price-discriminating monopolist produces the socially efficient quantity (where P=MC), which is greater than the restricted output of a single-price monopolist."
+      ],
+      "suggested_distractor_fix": {
+        "letter": "C",
+        "replacement": "The same quantity as a monopolist that cannot price discriminate."
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "AP_Microeconomics_291",
+      "verdict": "explanation_wrong",
+      "correct_answer": "D",
+      "issues": [
+        "The question phrasing is slightly counter-intuitive as high wages usually deter hiring, but 'D' is the only relevant principle for labor demand decisions.",
+        "The explanation correctly describes hiring logic (MRP > W) but fails to explicitly connect it to why a firm 'might choose to hire more workers' compared to a lower wage scenario, which usually requires a shift in marginal productivity."
+      ],
+      "suggested_distractor_fix": null,
+      "confidence": "high"
+    },
+    {
+      "id": "AP_Microeconomics_22",
+      "verdict": "answer_wrong",
+      "correct_answer": "null",
+      "issues": [
+        "The explanation contains a factual error: an increase in the price of a substitute good shifts demand rightward (increasing price/quantity), not leftward.",
+        "Option D results in indeterminate effects because the two components move demand in opposite directions.",
+        "None of the provided options result in a simultaneous decrease in equilibrium price and quantity. (A and B increase both; C decreases price but increases quantity; D is indeterminate)."
+      ],
+      "suggested_distractor_fix": {
+        "letter": "D",
+        "replacement": "A decrease in the price of a substitute good."
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "AP_Microeconomics_37",
+      "verdict": "explanation_wrong",
+      "correct_answer": "null",
+      "issues": [
+        "The explanation contains a contradiction regarding whether MC > AVC causes AVC to rise or fall.",
+        "The question lacks sufficient information to determine the AVC (Fixed Costs are unknown).",
+        "Profit maximization does not mandate that MC be above or below AVC; it only requires Price >= AVC to avoid shutdown."
+      ],
+      "suggested_distractor_fix": null,
+      "confidence": "high"
+    },
+    {
+      "id": "AP_Microeconomics_207",
+      "verdict": "multiple",
+      "correct_answer": "null",
+      "issues": [
+        "The marked answer A claims an 'upward shift' for a decrease in demand, which is contradictory (a decrease is a leftward/downward shift).",
+        "None of the provided choices (A-D) describe a decrease in demand with a correct shift direction (leftward/downward).",
+        "Choices C and D incorrectly state 'movement along' the curve for a change in price of a related good, which is a shift factor."
+      ],
+      "suggested_distractor_fix": {
+        "letter": "A",
+        "replacement": "A decrease in demand for the original good and a leftward shift in its demand curve."
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "AP_Microeconomics_32",
+      "verdict": "explanation_wrong",
+      "correct_answer": "D",
+      "issues": [
+        "The definition of a positive externality of production in the explanation mistakenly refers to 'producers receiving benefits' (which describes a benefit) rather than costs. In a positive production externality, the marginal social cost is lower than the marginal private cost."
+      ],
+      "suggested_distractor_fix": null,
+      "confidence": "high"
+    },
+    {
+      "id": "AP_Microeconomics_200",
+      "verdict": "answer_wrong",
+      "correct_answer": null,
+      "issues": [
+        "Choice C is incorrect because monopolistically competitive firms operate at a point where Average Total Cost is still decreasing (excess capacity), not necessarily at constant returns to scale.",
+        "None of the provided options accurately describe the standard long-run equilibrium for monopolistic competition (Zero economic profit + Excess capacity/Decreasing ATC)."
+      ],
+      "suggested_distractor_fix": {
+        "letter": "C",
+        "replacement": "Excess capacity and zero economic profit."
+      },
+      "confidence": "high"
+    }
+  ],
+  "ai_review_errors": [
+    {
+      "id": "AP_Microeconomics_109",
+      "verdict": "error",
+      "error": "Extra data: line 2 column 1 (char 102)"
+    },
+    {
+      "id": "AP_Microeconomics_60",
+      "verdict": "error",
+      "error": "Extra data: line 2 column 1 (char 102)"
+    },
+    {
+      "id": "AP_Microeconomics_198",
+      "verdict": "error",
+      "error": "Extra data: line 2 column 1 (char 102)"
+    },
+    {
+      "id": "AP_Microeconomics_171",
+      "verdict": "error",
+      "error": "Extra data: line 2 column 1 (char 102)"
+    },
+    {
+      "id": "AP_Microeconomics_129",
+      "verdict": "error",
+      "error": "Extra data: line 2 column 1 (char 102)"
+    }
+  ],
+  "concept_duplicate_clusters": [
+    {
+      "size": 17,
+      "avg_similarity": 0.808,
+      "members": [
+        {
+          "id": "AP_Microeconomics_266",
+          "answer": "A",
+          "question": "In the long run, a firm in a perfectly competitive industry will earn zero economic profit because:"
+        },
+        {
+          "id": "AP_Microeconomics_44",
+          "answer": "B",
+          "question": "In the long-run equilibrium of a perfectly competitive market, firms earn:"
+        },
+        {
+          "id": "AP_Microeconomics_296",
+          "answer": "C",
+          "question": "A monopolistically competitive firm in long-run equilibrium will produce:"
+        },
+        {
+          "id": "AP_Microeconomics_76",
+          "answer": "A",
+          "question": "In the long run, a firm in a perfectly competitive market will earn zero economic profit. This is primarily because:"
+        },
+        {
+          "id": "AP_Microeconomics_58",
+          "answer": "C",
+          "question": "In the long run, a firm in a perfectly competitive market will earn zero economic profit because:"
+        },
+        {
+          "id": "AP_Microeconomics_131",
+          "answer": "D",
+          "question": "A firm in monopolistic competition is currently maximizing its profit. In the long run, what is likely to happen to this firm?"
+        },
+        {
+          "id": "AP_Microeconomics_176",
+          "answer": "D",
+          "question": "In the long run, a firm in monopolistic competition will earn:"
+        },
+        {
+          "id": "AP_Microeconomics_29",
+          "answer": "B",
+          "question": "In the long run, a firm in monopolistic competition will typically earn:"
+        },
+        {
+          "id": "AP_Microeconomics_254",
+          "answer": "D",
+          "question": "A firm operating in a monopolistically competitive market will, in the long run, produce at a point where:"
+        },
+        {
+          "id": "AP_Microeconomics_113",
+          "answer": "D",
+          "question": "In the long run, a firm in monopolistic competition operates at a point where:"
+        },
+        {
+          "id": "AP_Microeconomics_229",
+          "answer": "C",
+          "question": "In the long run, a perfectly competitive firm will earn zero economic profit because of:"
+        },
+        {
+          "id": "AP_Microeconomics_156",
+          "answer": "A",
+          "question": "A firm operating in monopolistic competition earns economic profits in the short run. In the long run, what is likely to happen?"
+        },
+        {
+          "id": "AP_Microeconomics_275",
+          "answer": "B",
+          "question": "A firm is operating in a monopolistically competitive market. Which of the following is a true statement about the firm's long-run equilibri"
+        },
+        {
+          "id": "AP_Microeconomics_69",
+          "answer": "D",
+          "question": "In the long run, a firm in a monopolistically competitive market will produce at a point where:"
+        },
+        {
+          "id": "AP_Microeconomics_171",
+          "answer": "D",
+          "question": "In the long run, a perfectly competitive firm will operate at the minimum point of its average total cost curve because:"
+        },
+        {
+          "id": "AP_Microeconomics_200",
+          "answer": "C",
+          "question": "In the long run, a firm operating in a monopolistically competitive market will face:"
+        },
+        {
+          "id": "AP_Microeconomics_121",
+          "answer": "D",
+          "question": "In the long run, an individual firm in a perfectly competitive market will produce at the output level where:"
+        }
+      ]
+    },
+    {
+      "size": 11,
+      "avg_similarity": 0.868,
+      "members": [
+        {
+          "id": "AP_Microeconomics_158",
+          "answer": "C",
+          "question": "If the government imposes a binding price floor on a good, what is the most likely outcome?"
+        },
+        {
+          "id": "AP_Microeconomics_280",
+          "answer": "A",
+          "question": "If the government imposes a price ceiling below the equilibrium price in a market, what is the predictable outcome?"
+        },
+        {
+          "id": "AP_Microeconomics_47",
+          "answer": "A",
+          "question": "Consider a perfectly competitive market for wheat. If the government imposes a price ceiling below the equilibrium price, what is the most l"
+        },
+        {
+          "id": "AP_Microeconomics_177",
+          "answer": "B",
+          "question": "If the government imposes a binding price ceiling on a good, what is the most likely outcome?"
+        },
+        {
+          "id": "AP_Micro_7",
+          "answer": "B",
+          "question": "A binding price ceiling (below equilibrium) creates:"
+        },
+        {
+          "id": "AP_Microeconomics_231",
+          "answer": "D",
+          "question": "If a government imposes a price ceiling below the equilibrium price, the result will be:"
+        },
+        {
+          "id": "AP_Microeconomics_211",
+          "answer": "D",
+          "question": "A government imposes a binding price ceiling on a good. This will likely result in:"
+        },
+        {
+          "id": "AP_Microeconomics_256",
+          "answer": "B",
+          "question": "If the government imposes a price ceiling below the equilibrium price, the likely result will be:"
+        },
+        {
+          "id": "AP_Microeconomics_165",
+          "answer": "C",
+          "question": "Rent control is a form of price regulation that sets a maximum price for rental housing. If the rent ceiling is set below the equilibrium re"
+        },
+        {
+          "id": "AP_Microeconomics_27",
+          "answer": "B",
+          "question": "The imposition of a price ceiling below the equilibrium price in a competitive market will typically result in:"
+        },
+        {
+          "id": "AP_Microeconomics_93",
+          "answer": "B",
+          "question": "If the government sets a price ceiling below the equilibrium price for a good, the result will be:"
+        }
+      ]
+    },
+    {
+      "size": 10,
+      "avg_similarity": 0.865,
+      "members": [
+        {
+          "id": "AP_Microeconomics_110",
+          "answer": "B",
+          "question": "In the short run, a firm in monopolistic competition will shut down if:"
+        },
+        {
+          "id": "AP_Micro_1",
+          "answer": "B",
+          "question": "A perfectly competitive firm should shut down in the short run when:"
+        },
+        {
+          "id": "AP_Microeconomics_136",
+          "answer": "B",
+          "question": "A firm is operating in a perfectly competitive market and is experiencing short-run losses. If the market price is above the firm's average "
+        },
+        {
+          "id": "AP_Microeconomics_232",
+          "answer": "C",
+          "question": "A firm's short-run shutdown point occurs when the price is equal to:"
+        },
+        {
+          "id": "AP_Microeconomics_51",
+          "answer": "C",
+          "question": "In the short run, a firm in a perfectly competitive market should shut down if:"
+        },
+        {
+          "id": "AP_Microeconomics_88",
+          "answer": "B",
+          "question": "In the short run, if a firm is producing at a quantity where price is less than average total cost but greater than average variable cost, t"
+        },
+        {
+          "id": "AP_Microeconomics_128",
+          "answer": "B",
+          "question": "In the short run, a profit-maximizing firm will continue to produce as long as:"
+        },
+        {
+          "id": "AP_Microeconomics_97",
+          "answer": "C",
+          "question": "If a firm in a perfectly competitive market experiences an increase in its fixed costs, in the short run, it will:"
+        },
+        {
+          "id": "AP_Microeconomics_153",
+          "answer": "B",
+          "question": "In the short run, a firm in perfect competition will shut down if:"
+        },
+        {
+          "id": "AP_Microeconomics_189",
+          "answer": "D",
+          "question": "In the short run, a perfectly competitive firm will shut down if the market price is below its:"
+        }
+      ]
+    },
+    {
+      "size": 9,
+      "avg_similarity": 0.84,
+      "members": [
+        {
+          "id": "AP_Microeconomics_267",
+          "answer": "C",
+          "question": "An industry is considered an oligopoly if it has:"
+        },
+        {
+          "id": "AP_Microeconomics_114",
+          "answer": "D",
+          "question": "Which of the following market structures is characterized by a few dominant firms and significant barriers to entry?"
+        },
+        {
+          "id": "AP_Microeconomics_137",
+          "answer": "C",
+          "question": "Oligopolistic markets are characterized by:"
+        },
+        {
+          "id": "AP_Microeconomics_59",
+          "answer": "C",
+          "question": "Oligopolies are characterized by:"
+        },
+        {
+          "id": "AP_Micro_17",
+          "answer": "B",
+          "question": "An oligopoly features:"
+        },
+        {
+          "id": "AP_Microeconomics_288",
+          "answer": "C",
+          "question": "Which market structure is characterized by a few dominant firms, interdependent decision-making, and potential for collusion?"
+        },
+        {
+          "id": "AP_Microeconomics_81",
+          "answer": "C",
+          "question": "A firm operates in an oligopolistic market structure. Which of the following would be most characteristic of this market?"
+        },
+        {
+          "id": "AP_Microeconomics_119",
+          "answer": "C",
+          "question": "Which of the following is a key characteristic of an oligopolistic market?"
+        },
+        {
+          "id": "AP_Microeconomics_150",
+          "answer": "C",
+          "question": "Which of the following market structures is characterized by a few large firms that dominate the market and engage in strategic decision-mak"
+        }
+      ]
+    },
+    {
+      "size": 7,
+      "avg_similarity": 0.901,
+      "members": [
+        {
+          "id": "AP_Micro_14",
+          "answer": "C",
+          "question": "Public goods are:"
+        },
+        {
+          "id": "AP_Microeconomics_36",
+          "answer": "D",
+          "question": "Which of the following is a characteristic of a public good?"
+        },
+        {
+          "id": "AP_Microeconomics_226",
+          "answer": "B",
+          "question": "What is the primary characteristic of a public good?"
+        },
+        {
+          "id": "AP_Microeconomics_79",
+          "answer": "B",
+          "question": "Which of the following describes a public good?"
+        },
+        {
+          "id": "AP_Microeconomics_70",
+          "answer": "D",
+          "question": "Which of the following is a characteristic of a purely private good?"
+        },
+        {
+          "id": "AP_Microeconomics_52",
+          "answer": "D",
+          "question": "Which of the following best describes a public good?"
+        },
+        {
+          "id": "AP_Microeconomics_289",
+          "answer": "D",
+          "question": "If a resource is non-rivalrous and non-excludable, it is a:"
+        }
+      ]
+    },
+    {
+      "size": 7,
+      "avg_similarity": 0.857,
+      "members": [
+        {
+          "id": "AP_Microeconomics_24",
+          "answer": "C",
+          "question": "If a per-unit tax is imposed on the producers of a good, the burden of the tax will fall primarily on consumers if the:"
+        },
+        {
+          "id": "AP_Microeconomics_68",
+          "answer": "A",
+          "question": "A government imposes a per-unit tax on producers of a good. The burden of this tax will fall more heavily on consumers if:"
+        },
+        {
+          "id": "AP_Microeconomics_282",
+          "answer": "A",
+          "question": "Consider a market where both supply and demand are upward sloping. If the government imposes a per-unit tax on producers, the deadweight los"
+        },
+        {
+          "id": "AP_Microeconomics_73",
+          "answer": "A",
+          "question": "A government imposes a per-unit tax on the producers of a product. Which of the following is a likely consequence if the demand for the prod"
+        },
+        {
+          "id": "AP_Microeconomics_102",
+          "answer": "B",
+          "question": "If a government imposes a per-unit tax on a good for which demand is inelastic and supply is elastic, who will bear the larger burden of the"
+        },
+        {
+          "id": "AP_Microeconomics_242",
+          "answer": "B",
+          "question": "If a government imposes a specific tax on a good, the burden of the tax will fall most heavily on the side of the market (consumers or produ"
+        },
+        {
+          "id": "AP_Microeconomics_129",
+          "answer": "A",
+          "question": "A government imposes a specific tax on each unit of a good sold. The burden of this tax will be shared between consumers and producers. The "
+        }
+      ]
+    },
+    {
+      "size": 7,
+      "avg_similarity": 0.857,
+      "members": [
+        {
+          "id": "AP_Microeconomics_74",
+          "answer": "D",
+          "question": "A perfectly competitive firm is currently producing where its marginal cost (MC) is $15 and its marginal revenue (MR) is $10. To maximize pr"
+        },
+        {
+          "id": "AP_Microeconomics_258",
+          "answer": "A",
+          "question": "A firm in a perfectly competitive market faces a market price of $10. If the firm's marginal cost of producing the 100th unit is $8 and the "
+        },
+        {
+          "id": "AP_Microeconomics_62",
+          "answer": "B",
+          "question": "A firm is operating where its marginal revenue is less than its marginal cost (MR < MC). To maximize profits, the firm should:"
+        },
+        {
+          "id": "AP_Microeconomics_290",
+          "answer": "A",
+          "question": "A firm in a perfectly competitive market is producing an output level where Price > Marginal Cost. The firm should:"
+        },
+        {
+          "id": "AP_Microeconomics_35",
+          "answer": "B",
+          "question": "A firm in a perfectly competitive market is producing at an output level where marginal cost ($15) is greater than the market price ($10). T"
+        },
+        {
+          "id": "AP_Microeconomics_146",
+          "answer": "A",
+          "question": "A perfectly competitive firm is currently producing 100 units of output at a marginal cost of $5. The market price is $8. To maximize profit"
+        },
+        {
+          "id": "AP_Microeconomics_197",
+          "answer": "A",
+          "question": "A perfectly competitive firm is currently producing 100 units of output at a total cost of $500. The marginal cost of producing the 100th un"
+        }
+      ]
+    },
+    {
+      "size": 6,
+      "avg_similarity": 0.856,
+      "members": [
+        {
+          "id": "AP_Microeconomics_112",
+          "answer": "A",
+          "question": "If the cross-price elasticity of demand between good X and good Y is negative, then goods X and Y are:"
+        },
+        {
+          "id": "AP_Microeconomics_34",
+          "answer": "B",
+          "question": "If the cross-price elasticity of demand between good X and good Y is calculated to be -0.5, then goods X and Y are:"
+        },
+        {
+          "id": "AP_Microeconomics_127",
+          "answer": "D",
+          "question": "If the cross-price elasticity of demand between good X and good Y is negative, what is the relationship between these two goods?"
+        },
+        {
+          "id": "AP_Microeconomics_259",
+          "answer": "B",
+          "question": "If two goods, X and Y, are complements, then an increase in the price of good X will cause:"
+        },
+        {
+          "id": "AP_Micro_3",
+          "answer": "B",
+          "question": "Negative cross-price elasticity indicates the goods are:"
+        },
+        {
+          "id": "AP_Microeconomics_207",
+          "answer": "A",
+          "question": "An increase in the price of a complement good will lead to:"
+        }
+      ]
+    },
+    {
+      "size": 6,
+      "avg_similarity": 0.856,
+      "members": [
+        {
+          "id": "AP_Microeconomics_184",
+          "answer": "A",
+          "question": "A monopolist maximizes profit by producing at the output level where:"
+        },
+        {
+          "id": "AP_Microeconomics_122",
+          "answer": "C",
+          "question": "A monopoly maximizes profit by producing where:"
+        },
+        {
+          "id": "AP_Micro_4",
+          "answer": "D",
+          "question": "A monopolist maximizes profit by producing where:"
+        },
+        {
+          "id": "AP_Microeconomics_196",
+          "answer": "B",
+          "question": "A firm faces a downward-sloping demand curve and maximizes profit where MR=MC. In this situation, the price charged by the firm is typically"
+        },
+        {
+          "id": "AP_Microeconomics_243",
+          "answer": "C",
+          "question": "In the short run, a firm in monopolistic competition maximizes profit by producing at the output level where:"
+        },
+        {
+          "id": "AP_Microeconomics_134",
+          "answer": "C",
+          "question": "A monopolist faces a downward-sloping demand curve and maximizes profit by producing where marginal revenue equals marginal cost. At this ou"
+        }
+      ]
+    },
+    {
+      "size": 5,
+      "avg_similarity": 0.926,
+      "members": [
+        {
+          "id": "AP_Microeconomics_162",
+          "answer": "C",
+          "question": "When a firm experiences economies of scale, its:"
+        },
+        {
+          "id": "AP_Microeconomics_253",
+          "answer": "D",
+          "question": "Economies of scale exist when:"
+        },
+        {
+          "id": "AP_Microeconomics_40",
+          "answer": "A",
+          "question": "If a firm experiences economies of scale, this means that as its output increases, its:"
+        },
+        {
+          "id": "AP_Micro_19",
+          "answer": "D",
+          "question": "Economies of scale occur when:"
+        },
+        {
+          "id": "AP_Microeconomics_298",
+          "answer": "D",
+          "question": "If a firm is experiencing economies of scale, this means that as its output increases, its:"
+        }
+      ]
+    },
+    {
+      "size": 5,
+      "avg_similarity": 0.915,
+      "members": [
+        {
+          "id": "AP_Microeconomics_124",
+          "answer": "D",
+          "question": "A rational consumer allocates their budget such that the marginal utility per dollar spent is equal across all goods. This is known as:"
+        },
+        {
+          "id": "AP_Microeconomics_249",
+          "answer": "A",
+          "question": "Which of the following describes a situation where a consumer is maximizing their utility?"
+        },
+        {
+          "id": "AP_Microeconomics_23",
+          "answer": "D",
+          "question": "A consumer maximizes utility when the marginal utility per dollar spent is equal across all goods consumed. This is known as the:"
+        },
+        {
+          "id": "AP_Microeconomics_115",
+          "answer": "A",
+          "question": "If a consumer is maximizing their utility, the marginal utility per dollar spent on each good consumed is:"
+        },
+        {
+          "id": "AP_Microeconomics_278",
+          "answer": "A",
+          "question": "A consumer is maximizing their utility when:"
+        }
+      ]
+    },
+    {
+      "size": 5,
+      "avg_similarity": 0.889,
+      "members": [
+        {
+          "id": "AP_Microeconomics_53",
+          "answer": "B",
+          "question": "A decrease in the price of a substitute good will cause the demand curve for the original good to:"
+        },
+        {
+          "id": "AP_Microeconomics_202",
+          "answer": "A",
+          "question": "A decrease in the price of a substitute good will lead to:"
+        },
+        {
+          "id": "AP_Microeconomics_151",
+          "answer": "A",
+          "question": "A decrease in the price of a substitute good will likely cause:"
+        },
+        {
+          "id": "AP_Microeconomics_192",
+          "answer": "A",
+          "question": "If the price of a substitute good increases, what is the most likely impact on the demand for the original good?"
+        },
+        {
+          "id": "AP_Microeconomics_118",
+          "answer": "D",
+          "question": "An increase in the price of a substitute good will cause:"
+        }
+      ]
+    },
+    {
+      "size": 4,
+      "avg_similarity": 0.941,
+      "members": [
+        {
+          "id": "AP_Microeconomics_188",
+          "answer": "C",
+          "question": "When the demand for a factor of production is derived, it means that the demand for the factor is:"
+        },
+        {
+          "id": "AP_Microeconomics_241",
+          "answer": "B",
+          "question": "The demand for a factor of production is said to be derived because:"
+        },
+        {
+          "id": "AP_Microeconomics_215",
+          "answer": "A",
+          "question": "The demand for a factor of production is:"
+        },
+        {
+          "id": "AP_Microeconomics_72",
+          "answer": "C",
+          "question": "The concept of derived demand refers to the demand for:"
+        }
+      ]
+    },
+    {
+      "size": 4,
+      "avg_similarity": 0.925,
+      "members": [
+        {
+          "id": "AP_Microeconomics_246",
+          "answer": "A",
+          "question": "Consumer surplus is the difference between:"
+        },
+        {
+          "id": "AP_Micro_6",
+          "answer": "B",
+          "question": "Consumer surplus is:"
+        },
+        {
+          "id": "AP_Microeconomics_257",
+          "answer": "D",
+          "question": "The concept of 'consumer surplus' is best defined as:"
+        },
+        {
+          "id": "AP_Microeconomics_161",
+          "answer": "B",
+          "question": "The concept of 'consumer surplus' represents:"
+        }
+      ]
+    },
+    {
+      "size": 4,
+      "avg_similarity": 0.868,
+      "members": [
+        {
+          "id": "AP_Microeconomics_107",
+          "answer": "A",
+          "question": "A cartel aims to maximize profits by:"
+        },
+        {
+          "id": "AP_Microeconomics_42",
+          "answer": "D",
+          "question": "A cartel attempts to maximize its collective profits by:"
+        },
+        {
+          "id": "AP_Microeconomics_237",
+          "answer": "C",
+          "question": "A cartel is best described as:"
+        },
+        {
+          "id": "AP_Microeconomics_169",
+          "answer": "B",
+          "question": "A cartel attempts to increase its profits by:"
+        }
+      ]
+    },
+    {
+      "size": 3,
+      "avg_similarity": 0.972,
+      "members": [
+        {
+          "id": "AP_Microeconomics_175",
+          "answer": "A",
+          "question": "A production possibilities frontier (PPF) that is bowed outward (concave to the origin) illustrates:"
+        },
+        {
+          "id": "AP_Microeconomics_77",
+          "answer": "A",
+          "question": "A production possibilities frontier (PPF) bowed outward from the origin indicates:"
+        },
+        {
+          "id": "AP_Microeconomics_225",
+          "answer": "A",
+          "question": "A production possibilities frontier (PPF) that is bowed outward (concave to the origin) indicates:"
+        }
+      ]
+    },
+    {
+      "size": 3,
+      "avg_similarity": 0.933,
+      "members": [
+        {
+          "id": "AP_Microeconomics_220",
+          "answer": "A",
+          "question": "The Herfindahl-Hirschman Index (HHI) is used to measure:"
+        },
+        {
+          "id": "AP_Microeconomics_39",
+          "answer": "B",
+          "question": "The Herfindahl-Hirschman Index (HHI) is a measure used to assess:"
+        },
+        {
+          "id": "AP_Microeconomics_181",
+          "answer": "A",
+          "question": "The Herfindahl-Hirschman Index (HHI) is a measure of:"
+        }
+      ]
+    },
+    {
+      "size": 3,
+      "avg_similarity": 0.893,
+      "members": [
+        {
+          "id": "AP_Microeconomics_182",
+          "answer": "B",
+          "question": "If a country has a comparative advantage in producing a good, it means that the country:"
+        },
+        {
+          "id": "AP_Microeconomics_195",
+          "answer": "A",
+          "question": "In a two-person, two-good economy with trade, if Country A has a lower opportunity cost in producing Good X than Country B, then Country A h"
+        },
+        {
+          "id": "AP_Microeconomics_292",
+          "answer": "B",
+          "question": "A country has a comparative advantage in producing a good if:"
+        }
+      ]
+    },
+    {
+      "size": 3,
+      "avg_similarity": 0.881,
+      "members": [
+        {
+          "id": "AP_Microeconomics_214",
+          "answer": "C",
+          "question": "A cartel is most likely to be successful in maintaining high prices when:"
+        },
+        {
+          "id": "AP_Microeconomics_89",
+          "answer": "B",
+          "question": "A cartel is most likely to be successful in:"
+        },
+        {
+          "id": "AP_Microeconomics_299",
+          "answer": "D",
+          "question": "A cartel is most likely to be successful in maintaining high prices if:"
+        }
+      ]
+    },
+    {
+      "size": 3,
+      "avg_similarity": 0.88,
+      "members": [
+        {
+          "id": "AP_Microeconomics_187",
+          "answer": "C",
+          "question": "Price discrimination is the practice of:"
+        },
+        {
+          "id": "AP_Micro_12",
+          "answer": "A",
+          "question": "Price discrimination involves:"
+        },
+        {
+          "id": "AP_Microeconomics_264",
+          "answer": "B",
+          "question": "Which of the following describes price discrimination?"
+        }
+      ]
+    },
+    {
+      "size": 3,
+      "avg_similarity": 0.874,
+      "members": [
+        {
+          "id": "AP_Micro_5",
+          "answer": "B",
+          "question": "Which characterizes monopolistic competition?"
+        },
+        {
+          "id": "AP_Microeconomics_54",
+          "answer": "C",
+          "question": "Monopolistic competition is characterized by:"
+        },
+        {
+          "id": "AP_Microeconomics_94",
+          "answer": "D",
+          "question": "Which market structure is characterized by product differentiation and a relatively large number of firms?"
+        }
+      ]
+    },
+    {
+      "size": 3,
+      "avg_similarity": 0.87,
+      "members": [
+        {
+          "id": "AP_Microeconomics_268",
+          "answer": "C",
+          "question": "Which of the following best explains why a government might impose a tax on a product that creates a negative externality?"
+        },
+        {
+          "id": "AP_Microeconomics_172",
+          "answer": "D",
+          "question": "A government might impose a tax on a good that generates negative externalities in order to:"
+        },
+        {
+          "id": "AP_Microeconomics_194",
+          "answer": "B",
+          "question": "A government wishes to reduce the consumption of a good that generates negative externalities. Which policy is most likely to achieve this g"
+        }
+      ]
+    },
+    {
+      "size": 2,
+      "avg_similarity": 0.998,
+      "members": [
+        {
+          "id": "AP_Microeconomics_80",
+          "answer": "D",
+          "question": "If the cross-price elasticity of demand between good X and good Y is positive, then goods X and Y are:"
+        },
+        {
+          "id": "AP_Microeconomics_60",
+          "answer": "B",
+          "question": "If the cross-price elasticity of demand between good X and good Y is positive, then X and Y are:"
+        }
+      ]
+    },
+    {
+      "size": 2,
+      "avg_similarity": 0.983,
+      "members": [
+        {
+          "id": "AP_Microeconomics_56",
+          "answer": "B",
+          "question": "If a firm has market power, it can:"
+        },
+        {
+          "id": "AP_Microeconomics_270",
+          "answer": "C",
+          "question": "If a firm has market power, it means the firm:"
+        }
+      ]
+    },
+    {
+      "size": 2,
+      "avg_similarity": 0.946,
+      "members": [
+        {
+          "id": "AP_Microeconomics_85",
+          "answer": "B",
+          "question": "The law of diminishing marginal utility states that as a consumer consumes more units of a good, the:"
+        },
+        {
+          "id": "AP_Microeconomics_106",
+          "answer": "B",
+          "question": "The law of diminishing marginal utility states that:"
+        }
+      ]
+    },
+    {
+      "size": 2,
+      "avg_similarity": 0.939,
+      "members": [
+        {
+          "id": "AP_Microeconomics_49",
+          "answer": "A",
+          "question": "Which of the following is a characteristic of a natural monopoly?"
+        },
+        {
+          "id": "AP_Microeconomics_273",
+          "answer": "A",
+          "question": "Which of the following is characteristic of a natural monopoly?"
+        }
+      ]
+    },
+    {
+      "size": 2,
+      "avg_similarity": 0.934,
+      "members": [
+        {
+          "id": "AP_Microeconomics_45",
+          "answer": "A",
+          "question": "Which of the following represents a situation of allocative efficiency?"
+        },
+        {
+          "id": "AP_Microeconomics_239",
+          "answer": "B",
+          "question": "The condition for allocative efficiency is:"
+        }
+      ]
+    },
+    {
+      "size": 2,
+      "avg_similarity": 0.924,
+      "members": [
+        {
+          "id": "AP_Microeconomics_84",
+          "answer": "C",
+          "question": "Which of the following is a characteristic of monopolistic competition?"
+        },
+        {
+          "id": "AP_Microeconomics_227",
+          "answer": "C",
+          "question": "A firm operating in a monopolistically competitive market faces a demand curve that is:"
+        }
+      ]
+    },
+    {
+      "size": 2,
+      "avg_similarity": 0.918,
+      "members": [
+        {
+          "id": "AP_Microeconomics_30",
+          "answer": "B",
+          "question": "The marginal cost curve intersects the average variable cost curve and the average total cost curve at:"
+        },
+        {
+          "id": "AP_Microeconomics_193",
+          "answer": "A",
+          "question": "The marginal cost curve intersects the average total cost curve at:"
+        }
+      ]
+    },
+    {
+      "size": 2,
+      "avg_similarity": 0.875,
+      "members": [
+        {
+          "id": "AP_Microeconomics_83",
+          "answer": "A",
+          "question": "A government subsidy for the production of solar panels would likely lead to:"
+        },
+        {
+          "id": "AP_Microeconomics_63",
+          "answer": "B",
+          "question": "A government subsidy for producers will typically lead to:"
+        }
+      ]
+    },
+    {
+      "size": 2,
+      "avg_similarity": 0.874,
+      "members": [
+        {
+          "id": "AP_Microeconomics_33",
+          "answer": "A",
+          "question": "Which condition must hold for a firm to be considered a natural monopoly?"
+        },
+        {
+          "id": "AP_Microeconomics_191",
+          "answer": "C",
+          "question": "Which of the following best describes a natural monopoly?"
+        }
+      ]
+    },
+    {
+      "size": 2,
+      "avg_similarity": 0.872,
+      "members": [
+        {
+          "id": "AP_Microeconomics_82",
+          "answer": "B",
+          "question": "Total product (TP) begins to decline when:"
+        },
+        {
+          "id": "AP_Microeconomics_206",
+          "answer": "C",
+          "question": "If labor is the only variable input and the total product of labor decreases as more workers are hired, this indicates:"
+        }
+      ]
+    },
+    {
+      "size": 2,
+      "avg_similarity": 0.867,
+      "members": [
+        {
+          "id": "AP_Microeconomics_219",
+          "answer": "A",
+          "question": "If a firm\u2019s total revenue increases when it lowers its price, demand for the firm\u2019s product is:"
+        },
+        {
+          "id": "AP_Microeconomics_28",
+          "answer": "A",
+          "question": "When the demand for a good is elastic, a decrease in its price will cause the total revenue of the seller to:"
+        }
+      ]
+    },
+    {
+      "size": 2,
+      "avg_similarity": 0.863,
+      "members": [
+        {
+          "id": "AP_Microeconomics_100",
+          "answer": "D",
+          "question": "A positive externality in production leads to:"
+        },
+        {
+          "id": "AP_Microeconomics_32",
+          "answer": "D",
+          "question": "A significant externality exists in a market. If the externality is a positive externality of production, the market will tend to produce:"
+        }
+      ]
+    }
+  ]
+}

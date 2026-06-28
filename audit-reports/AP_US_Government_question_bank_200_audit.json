@@ -1,0 +1,856 @@
+{
+  "bank": "src/data/AP_US_Government_question_bank_200.json",
+  "total": 253,
+  "summary": {
+    "flagged": 6,
+    "errors": 2,
+    "clusters": 33,
+    "questions_in_clusters": 111
+  },
+  "ai_review_flagged": [
+    {
+      "id": "AP_US_Government_33",
+      "verdict": "multiple",
+      "correct_answer": "A",
+      "issues": [
+        "Choice D is also factually correct, creating two correct answers."
+      ],
+      "suggested_distractor_fix": {
+        "letter": "D",
+        "replacement": "The House of Representatives has the power to confirm cabinet members and federal judges."
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "AP_US_Government_47",
+      "verdict": "answer_wrong",
+      "correct_answer": "null",
+      "issues": [
+        "None of the provided options are historically or legally accurate for 'early Supreme Court interpretations'.",
+        "Choice B improperly suggests the original intent was to limit state governments, which contradicts the 'Barron v. Baltimore (1833)' ruling.",
+        "The explanation correctly states it was intended to protect against the federal government, but neither B nor any other option reflects this (B says state governments)."
+      ],
+      "suggested_distractor_fix": {
+        "letter": "B",
+        "replacement": "Restrict the power of the federal government to infringe on individual liberties."
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "AP_US_Government_69",
+      "verdict": "answer_wrong",
+      "correct_answer": "null",
+      "issues": [
+        "The term for the annual shortfall is a budget deficit, which is not provided as an option.",
+        "Choice C (National Debt) describes the cumulative total, not the specific occurrence mentioned in the question prompt.",
+        "Marked answer C is technically inaccurate as a direct definition of the event described."
+      ],
+      "suggested_distractor_fix": {
+        "letter": "A",
+        "replacement": "Budget deficit"
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "AP_US_Government_223",
+      "verdict": "explanation_wrong",
+      "correct_answer": "D",
+      "issues": [
+        "The explanation contains a typo/contradiction: it states 'D is a regular part of legislative debate, not the specific defining characteristic' despite D being the correct marked answer. It likely intended to refer to Option B."
+      ],
+      "suggested_distractor_fix": null,
+      "confidence": "high"
+    },
+    {
+      "id": "AP_US_Government_232",
+      "verdict": "answer_wrong",
+      "correct_answer": "null",
+      "issues": [
+        "The Electoral College as a body does not determine the number of electors; the U.S. Constitution and Census data do.",
+        "All choices are factually incorrect or poorly phrased."
+      ],
+      "suggested_distractor_fix": {
+        "letter": "C",
+        "replacement": "To formally cast the votes that determine the President and Vice President based on state results."
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "AP_US_Government_260",
+      "verdict": "explanation_wrong",
+      "correct_answer": "D",
+      "issues": [
+        "The explanation contains a typo stating 'Options C and D are not related' when it should state 'Options B and C'. D is the correct answer."
+      ],
+      "suggested_distractor_fix": null,
+      "confidence": "high"
+    }
+  ],
+  "ai_review_errors": [
+    {
+      "id": "AP_US_Government_27",
+      "verdict": "error",
+      "error": "Extra data: line 2 column 1 (char 102)"
+    },
+    {
+      "id": "AP_US_Government_300",
+      "verdict": "error",
+      "error": "Extra data: line 2 column 1 (char 102)"
+    }
+  ],
+  "concept_duplicate_clusters": [
+    {
+      "size": 9,
+      "avg_similarity": 0.85,
+      "members": [
+        {
+          "id": "AP_US_Government_66",
+          "answer": "A",
+          "question": "The concept of \"stare decisis\" is most closely associated with:"
+        },
+        {
+          "id": "AP_US_Government_72",
+          "answer": "A",
+          "question": "The concept of 'stare decisis' is most closely associated with which branch of the US government?"
+        },
+        {
+          "id": "AP_US_Government_85",
+          "answer": "A",
+          "question": "When a court draws upon precedent to guide its decisions, it is adhering to the principle of:"
+        },
+        {
+          "id": "AP_US_Government_128",
+          "answer": "A",
+          "question": "The principle of *stare decisis* is most closely associated with which aspect of the judicial system?"
+        },
+        {
+          "id": "AP_US_Government_187",
+          "answer": "B",
+          "question": "The doctrine of 'stare decisis' is most closely related to which principle of the judicial system?"
+        },
+        {
+          "id": "AP_US_Government_224",
+          "answer": "A",
+          "question": "The concept of 'stare decisis' is most directly related to the practice of:"
+        },
+        {
+          "id": "AP_US_Government_233",
+          "answer": "A",
+          "question": "Stare decisis is a legal principle that encourages courts to:"
+        },
+        {
+          "id": "AP_US_Government_270",
+          "answer": "C",
+          "question": "The concept of 'stare decisis' is most central to the operation of which branch of government?"
+        },
+        {
+          "id": "AP_US_Government_293",
+          "answer": "B",
+          "question": "Which of the following best describes the principle of 'stare decisis' in the Supreme Court?"
+        }
+      ]
+    },
+    {
+      "size": 7,
+      "avg_similarity": 0.923,
+      "members": [
+        {
+          "id": "AP_USGov_8",
+          "answer": "B",
+          "question": "The concept of 'iron triangles' in American politics refers to:"
+        },
+        {
+          "id": "AP_US_Government_34",
+          "answer": "C",
+          "question": "The term \"iron triangle\" describes a relationship between:"
+        },
+        {
+          "id": "AP_US_Government_50",
+          "answer": "A",
+          "question": "The \"iron triangle\" describes a mutually beneficial relationship between:"
+        },
+        {
+          "id": "AP_US_Government_115",
+          "answer": "B",
+          "question": "The term \"iron triangle\" refers to the policy-making relationship among:"
+        },
+        {
+          "id": "AP_US_Government_162",
+          "answer": "B",
+          "question": "The 'iron triangle' refers to the policy-making relationship among:"
+        },
+        {
+          "id": "AP_US_Government_176",
+          "answer": "D",
+          "question": "The term 'iron triangle' refers to a mutually beneficial relationship between which three sets of actors in the policy-making process?"
+        },
+        {
+          "id": "AP_US_Government_244",
+          "answer": "B",
+          "question": "The \"iron triangle\" in American politics refers to the relationship between:"
+        }
+      ]
+    },
+    {
+      "size": 6,
+      "avg_similarity": 0.899,
+      "members": [
+        {
+          "id": "AP_USGov_16",
+          "answer": "A",
+          "question": "The concept of judicial review was established in which Supreme Court case?"
+        },
+        {
+          "id": "AP_US_Government_30",
+          "answer": "D",
+          "question": "Which of the following Supreme Court cases established the principle of judicial review?"
+        },
+        {
+          "id": "AP_US_Government_81",
+          "answer": "B",
+          "question": "The Supreme Court ruling in *Marbury v. Madison* (1803) established the principle of:"
+        },
+        {
+          "id": "AP_US_Government_151",
+          "answer": "D",
+          "question": "The Supreme Court case *Marbury v. Madison* (1803) established which significant principle?"
+        },
+        {
+          "id": "AP_US_Government_172",
+          "answer": "C",
+          "question": "The Supreme Court's decision in *Marbury v. Madison* (1803) established which foundational principle of American constitutional law?"
+        },
+        {
+          "id": "AP_US_Government_279",
+          "answer": "A",
+          "question": "The Supreme Court's power of judicial review was most clearly established in which case?"
+        }
+      ]
+    },
+    {
+      "size": 5,
+      "avg_similarity": 0.935,
+      "members": [
+        {
+          "id": "AP_US_Government_38",
+          "answer": "D",
+          "question": "The \"full faith and credit\" clause of the Constitution requires states to:"
+        },
+        {
+          "id": "AP_US_Government_112",
+          "answer": "B",
+          "question": "The concept of \"full faith and credit\" as applied to the states means that:"
+        },
+        {
+          "id": "AP_US_Government_191",
+          "answer": "D",
+          "question": "The 'full faith and credit' clause of the Constitution (Article IV) requires states to:"
+        },
+        {
+          "id": "AP_US_Government_210",
+          "answer": "D",
+          "question": "The \"full faith and credit\" clause of the Constitution (Article IV, Section 1) requires states to:"
+        },
+        {
+          "id": "AP_US_Government_236",
+          "answer": "B",
+          "question": "The primary purpose of the \"full faith and credit\" clause of the Constitution is to ensure:"
+        }
+      ]
+    },
+    {
+      "size": 5,
+      "avg_similarity": 0.92,
+      "members": [
+        {
+          "id": "AP_US_Government_24",
+          "answer": "A",
+          "question": "The process by which citizens learn about government and politics, and develop their political attitudes, values, and beliefs, is known as:"
+        },
+        {
+          "id": "AP_US_Government_56",
+          "answer": "A",
+          "question": "The process by which individuals acquire their political attitudes and beliefs is called:"
+        },
+        {
+          "id": "AP_US_Government_103",
+          "answer": "A",
+          "question": "The process by which citizens learn about political values and beliefs is called:"
+        },
+        {
+          "id": "AP_US_Government_124",
+          "answer": "D",
+          "question": "The process by which individuals gain their political attitudes and values is known as:"
+        },
+        {
+          "id": "AP_US_Government_154",
+          "answer": "A",
+          "question": "The process by which citizens learn about politics and develop their political attitudes is known as:"
+        }
+      ]
+    },
+    {
+      "size": 5,
+      "avg_similarity": 0.916,
+      "members": [
+        {
+          "id": "AP_US_Government_70",
+          "answer": "C",
+          "question": "The primary role of the bureaucracy in the US federal government is to:"
+        },
+        {
+          "id": "AP_US_Government_94",
+          "answer": "A",
+          "question": "A primary function of the bureaucracy in the United States is to:"
+        },
+        {
+          "id": "AP_US_Government_96",
+          "answer": "D",
+          "question": "Which of the following is a primary function of the bureaucracy in the United States?"
+        },
+        {
+          "id": "AP_US_Government_133",
+          "answer": "C",
+          "question": "Which of the following best describes the role of the bureaucracy in the United States?"
+        },
+        {
+          "id": "AP_US_Government_278",
+          "answer": "B",
+          "question": "Which of the following best describes the role of the bureaucracy in the policymaking process?"
+        }
+      ]
+    },
+    {
+      "size": 5,
+      "avg_similarity": 0.893,
+      "members": [
+        {
+          "id": "AP_USGov_4",
+          "answer": "D",
+          "question": "Which of the following scenarios best illustrates the concept of selective incorporation?"
+        },
+        {
+          "id": "AP_US_Government_22",
+          "answer": "C",
+          "question": "Which of the following scenarios best exemplifies the concept of selective incorporation?"
+        },
+        {
+          "id": "AP_US_Government_145",
+          "answer": "B",
+          "question": "The process by which the Supreme Court has applied most of the Bill of Rights to the states is called:"
+        },
+        {
+          "id": "AP_US_Government_182",
+          "answer": "C",
+          "question": "The process by which the Supreme Court applies portions of the Bill of Rights to the states is known as:"
+        },
+        {
+          "id": "AP_US_Government_228",
+          "answer": "C",
+          "question": "The concept of \"selective incorporation\" primarily impacts which aspect of American government?"
+        }
+      ]
+    },
+    {
+      "size": 5,
+      "avg_similarity": 0.866,
+      "members": [
+        {
+          "id": "AP_US_Government_78",
+          "answer": "C",
+          "question": "Pork-barrel spending refers to:"
+        },
+        {
+          "id": "AP_US_Government_121",
+          "answer": "A",
+          "question": "A provision in a bill that directs funds to a specific project or recipient in a legislator's district, often added through the appropriatio"
+        },
+        {
+          "id": "AP_US_Government_181",
+          "answer": "D",
+          "question": "The concept of 'pork barrel' spending refers to:"
+        },
+        {
+          "id": "AP_US_Government_239",
+          "answer": "B",
+          "question": "Which of the following best describes the concept of \"pork barrel\" legislation?"
+        },
+        {
+          "id": "AP_US_Government_252",
+          "answer": "C",
+          "question": "Which of the following scenarios best illustrates the concept of 'pork barrel spending' in the legislative process?"
+        }
+      ]
+    },
+    {
+      "size": 4,
+      "avg_similarity": 0.891,
+      "members": [
+        {
+          "id": "AP_US_Government_59",
+          "answer": "A",
+          "question": "When interest groups attempt to influence public policy by contacting government officials directly, they are engaging in:"
+        },
+        {
+          "id": "AP_US_Government_110",
+          "answer": "C",
+          "question": "When interest groups try to influence public policy by directly contacting government officials, they are engaging in:"
+        },
+        {
+          "id": "AP_US_Government_277",
+          "answer": "A",
+          "question": "An interest group hires lobbyists to persuade members of Congress to vote a certain way on an upcoming bill. This is an example of which typ"
+        },
+        {
+          "id": "AP_US_Government_289",
+          "answer": "D",
+          "question": "Which of the following actions by an interest group would be considered direct lobbying?"
+        }
+      ]
+    },
+    {
+      "size": 4,
+      "avg_similarity": 0.88,
+      "members": [
+        {
+          "id": "AP_USGov_18",
+          "answer": "C",
+          "question": "The Voting Rights Act of 1965 primarily addressed:"
+        },
+        {
+          "id": "AP_US_Government_107",
+          "answer": "B",
+          "question": "The Voting Rights Act of 1965 aimed to overcome legal barriers at the state and local levels that prevented African Americans from exercisin"
+        },
+        {
+          "id": "AP_US_Government_215",
+          "answer": "C",
+          "question": "The primary purpose of the Voting Rights Act of 1965 was to:"
+        },
+        {
+          "id": "AP_US_Government_226",
+          "answer": "D",
+          "question": "The Voting Rights Act of 1965 was a landmark piece of legislation primarily aimed at:"
+        }
+      ]
+    },
+    {
+      "size": 4,
+      "avg_similarity": 0.878,
+      "members": [
+        {
+          "id": "AP_US_Government_26",
+          "answer": "D",
+          "question": "The establishment clause of the First Amendment has been interpreted by the Supreme Court to mean that:"
+        },
+        {
+          "id": "AP_US_Government_218",
+          "answer": "B",
+          "question": "The Establishment Clause of the First Amendment prevents the government from:"
+        },
+        {
+          "id": "AP_US_Government_231",
+          "answer": "B",
+          "question": "The establishment clause of the First Amendment has been interpreted by the Supreme Court to:"
+        },
+        {
+          "id": "AP_US_Government_271",
+          "answer": "B",
+          "question": "Which of the following accurately describes the establishment clause of the First Amendment?"
+        }
+      ]
+    },
+    {
+      "size": 3,
+      "avg_similarity": 0.915,
+      "members": [
+        {
+          "id": "AP_US_Government_158",
+          "answer": "A",
+          "question": "Which of the following best describes a 'filibuster' in the U.S. Senate?"
+        },
+        {
+          "id": "AP_US_Government_223",
+          "answer": "D",
+          "question": "Which of the following best describes the primary function of a filibuster in the United States Senate?"
+        },
+        {
+          "id": "AP_US_Government_230",
+          "answer": "C",
+          "question": "Which of the following best describes the primary function of a \"filibuster\" in the Senate?"
+        }
+      ]
+    },
+    {
+      "size": 3,
+      "avg_similarity": 0.895,
+      "members": [
+        {
+          "id": "AP_US_Government_65",
+          "answer": "D",
+          "question": "A \"divided government\" occurs when:"
+        },
+        {
+          "id": "AP_US_Government_86",
+          "answer": "B",
+          "question": "Which of the following is a characteristic of a divided government?"
+        },
+        {
+          "id": "AP_US_Government_196",
+          "answer": "D",
+          "question": "The concept of 'divided government' occurs when:"
+        }
+      ]
+    },
+    {
+      "size": 3,
+      "avg_similarity": 0.892,
+      "members": [
+        {
+          "id": "AP_US_Government_36",
+          "answer": "B",
+          "question": "The Speaker of the House of Representatives is:"
+        },
+        {
+          "id": "AP_US_Government_100",
+          "answer": "D",
+          "question": "In the U.S. Congress, the Speaker of the House is a member of which party and is responsible for:"
+        },
+        {
+          "id": "AP_US_Government_137",
+          "answer": "A",
+          "question": "What is the primary role of the Speaker of the House?"
+        }
+      ]
+    },
+    {
+      "size": 3,
+      "avg_similarity": 0.887,
+      "members": [
+        {
+          "id": "AP_US_Government_186",
+          "answer": "B",
+          "question": "Which of the following is a key role of the House Rules Committee?"
+        },
+        {
+          "id": "AP_US_Government_203",
+          "answer": "B",
+          "question": "The primary function of the House Rules Committee is to:"
+        },
+        {
+          "id": "AP_US_Government_300",
+          "answer": "D",
+          "question": "The power of the House Rules Committee is best described as:"
+        }
+      ]
+    },
+    {
+      "size": 3,
+      "avg_similarity": 0.882,
+      "members": [
+        {
+          "id": "AP_US_Government_41",
+          "answer": "D",
+          "question": "The \"Miranda warning\" is an example of the application of which amendment's protections?"
+        },
+        {
+          "id": "AP_US_Government_219",
+          "answer": "C",
+          "question": "The \"Miranda warning\" is an example of the Supreme Court applying which constitutional amendment to state criminal proceedings?"
+        },
+        {
+          "id": "AP_US_Government_234",
+          "answer": "A",
+          "question": "The \"Miranda rights\" inform individuals in police custody of their constitutional protections under which amendment?"
+        }
+      ]
+    },
+    {
+      "size": 3,
+      "avg_similarity": 0.867,
+      "members": [
+        {
+          "id": "AP_US_Government_28",
+          "answer": "D",
+          "question": "Which of the following is a primary function of political parties in the United States?"
+        },
+        {
+          "id": "AP_US_Government_53",
+          "answer": "B",
+          "question": "The primary function of a political party's nomination process is to:"
+        },
+        {
+          "id": "AP_US_Government_101",
+          "answer": "B",
+          "question": "The primary role of political parties in the United States is to:"
+        }
+      ]
+    },
+    {
+      "size": 3,
+      "avg_similarity": 0.865,
+      "members": [
+        {
+          "id": "AP_USGov_1",
+          "answer": "B",
+          "question": "Which of the following best describes the concept of federalism as established by the U.S. Constitution?"
+        },
+        {
+          "id": "AP_US_Government_45",
+          "answer": "B",
+          "question": "The principle of \"federalism\" as established by the U.S. Constitution refers to:"
+        },
+        {
+          "id": "AP_US_Government_99",
+          "answer": "A",
+          "question": "A system of government where power is divided between a national government and state governments is known as:"
+        }
+      ]
+    },
+    {
+      "size": 3,
+      "avg_similarity": 0.862,
+      "members": [
+        {
+          "id": "AP_US_Government_46",
+          "answer": "A",
+          "question": "Which of the following is a formal check that Congress has on the President?"
+        },
+        {
+          "id": "AP_US_Government_108",
+          "answer": "A",
+          "question": "Which of the following is a formal check the President has on the legislative branch?"
+        },
+        {
+          "id": "AP_US_Government_188",
+          "answer": "C",
+          "question": "Which of the following is an example of a 'check' that the legislative branch has over the executive branch?"
+        }
+      ]
+    },
+    {
+      "size": 2,
+      "avg_similarity": 0.977,
+      "members": [
+        {
+          "id": "AP_US_Government_29",
+          "answer": "A",
+          "question": "The concept of \"devolution\" in American politics refers to:"
+        },
+        {
+          "id": "AP_US_Government_274",
+          "answer": "D",
+          "question": "The concept of 'devolution' in American federalism refers to:"
+        }
+      ]
+    },
+    {
+      "size": 2,
+      "avg_similarity": 0.973,
+      "members": [
+        {
+          "id": "AP_US_Government_54",
+          "answer": "A",
+          "question": "The \"necessary and proper\" clause, found in Article I, Section 8 of the Constitution, is significant because it:"
+        },
+        {
+          "id": "AP_US_Government_167",
+          "answer": "B",
+          "question": "The 'necessary and proper' clause, found in Article I, Section 8 of the Constitution, grants Congress:"
+        }
+      ]
+    },
+    {
+      "size": 2,
+      "avg_similarity": 0.92,
+      "members": [
+        {
+          "id": "AP_US_Government_147",
+          "answer": "A",
+          "question": "Which of the following scenarios best illustrates the concept of cooperative federalism?"
+        },
+        {
+          "id": "AP_US_Government_235",
+          "answer": "D",
+          "question": "Which of the following is an example of cooperative federalism?"
+        }
+      ]
+    },
+    {
+      "size": 2,
+      "avg_similarity": 0.912,
+      "members": [
+        {
+          "id": "AP_US_Government_266",
+          "answer": "C",
+          "question": "Which of the following Supreme Court cases established the principle of 'one person, one vote' in state legislative districts?"
+        },
+        {
+          "id": "AP_US_Government_287",
+          "answer": "A",
+          "question": "Which of the following is a consequence of the Supreme Court's ruling in Baker v. Carr (1962)?"
+        }
+      ]
+    },
+    {
+      "size": 2,
+      "avg_similarity": 0.908,
+      "members": [
+        {
+          "id": "AP_USGov_14",
+          "answer": "B",
+          "question": "A conservative political ideology generally favors:"
+        },
+        {
+          "id": "AP_US_Government_40",
+          "answer": "C",
+          "question": "Which of the following ideologies most emphasizes individual liberty, limited government intervention in the economy, and traditional social"
+        }
+      ]
+    },
+    {
+      "size": 2,
+      "avg_similarity": 0.905,
+      "members": [
+        {
+          "id": "AP_US_Government_102",
+          "answer": "C",
+          "question": "Which clause of the Constitution has been interpreted to allow the federal government to expand its powers beyond those explicitly listed?"
+        },
+        {
+          "id": "AP_US_Government_275",
+          "answer": "D",
+          "question": "The U.S. Constitution's Necessary and Proper Clause (Elastic Clause) has been used most frequently to:"
+        }
+      ]
+    },
+    {
+      "size": 2,
+      "avg_similarity": 0.905,
+      "members": [
+        {
+          "id": "AP_US_Government_135",
+          "answer": "A",
+          "question": "A primary difference between civil liberties and civil rights is that:"
+        },
+        {
+          "id": "AP_US_Government_164",
+          "answer": "A",
+          "question": "Which of the following best describes a fundamental difference between civil liberties and civil rights?"
+        }
+      ]
+    },
+    {
+      "size": 2,
+      "avg_similarity": 0.9,
+      "members": [
+        {
+          "id": "AP_US_Government_92",
+          "answer": "D",
+          "question": "The concept of a 'filibuster' is a tactic used in which legislative body?"
+        },
+        {
+          "id": "AP_US_Government_269",
+          "answer": "B",
+          "question": "In the context of the legislative process, a 'filibuster' is a tactic used in which chamber of Congress?"
+        }
+      ]
+    },
+    {
+      "size": 2,
+      "avg_similarity": 0.892,
+      "members": [
+        {
+          "id": "AP_USGov_20",
+          "answer": "C",
+          "question": "Which of the following powers is shared by both the national and state governments (concurrent powers)?"
+        },
+        {
+          "id": "AP_US_Government_183",
+          "answer": "A",
+          "question": "Which of the following is a concurrent power shared by both the federal and state governments?"
+        }
+      ]
+    },
+    {
+      "size": 2,
+      "avg_similarity": 0.888,
+      "members": [
+        {
+          "id": "AP_US_Government_97",
+          "answer": "C",
+          "question": "The concept of judicial review, established in *Marbury v. Madison*, is the power of the courts to:"
+        },
+        {
+          "id": "AP_US_Government_200",
+          "answer": "B",
+          "question": "The power of judicial review, established in Marbury v. Madison, allows the Supreme Court to:"
+        }
+      ]
+    },
+    {
+      "size": 2,
+      "avg_similarity": 0.887,
+      "members": [
+        {
+          "id": "AP_US_Government_74",
+          "answer": "C",
+          "question": "The Lemon test, established in Lemon v. Kurtzman, is used by the Supreme Court to determine the constitutionality of laws concerning:"
+        },
+        {
+          "id": "AP_US_Government_299",
+          "answer": "C",
+          "question": "In which of the following cases did the Supreme Court establish the 'Lemon Test' for examining the constitutionality of religious establishm"
+        }
+      ]
+    },
+    {
+      "size": 2,
+      "avg_similarity": 0.883,
+      "members": [
+        {
+          "id": "AP_USGov_17",
+          "answer": "D",
+          "question": "Which of the following best illustrates the concept of linkage institutions?"
+        },
+        {
+          "id": "AP_US_Government_119",
+          "answer": "C",
+          "question": "Which of the following is an example of a linkage institution?"
+        }
+      ]
+    },
+    {
+      "size": 2,
+      "avg_similarity": 0.878,
+      "members": [
+        {
+          "id": "AP_USGov_11",
+          "answer": "D",
+          "question": "The Supreme Court case Gideon v. Wainwright (1963) established that:"
+        },
+        {
+          "id": "AP_US_Government_204",
+          "answer": "B",
+          "question": "Which of the following best describes the outcome of the Supreme Court's decision in *Gideon v. Wainwright*?"
+        }
+      ]
+    },
+    {
+      "size": 2,
+      "avg_similarity": 0.87,
+      "members": [
+        {
+          "id": "AP_US_Government_141",
+          "answer": "C",
+          "question": "Which of the following actions is an example of the President exercising informal powers?"
+        },
+        {
+          "id": "AP_US_Government_272",
+          "answer": "D",
+          "question": "A president issues an executive order to implement a new policy without congressional approval. This action is most likely a demonstration o"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,281 @@
+[
+  {
+    "bank": "src/data/AP_French_Language_question_bank_200.json",
+    "flagged": 28,
+    "errors": 3,
+    "clusters": 25,
+    "questions_in_clusters": 79,
+    "skipped": false,
+    "error": null
+  },
+  {
+    "bank": "src/data/AP_German_question_bank_200.json",
+    "flagged": 31,
+    "errors": 6,
+    "clusters": 27,
+    "questions_in_clusters": 78,
+    "skipped": false,
+    "error": null
+  },
+  {
+    "bank": "src/data/AP_Italian_question_bank_200.json",
+    "flagged": 36,
+    "errors": 4,
+    "clusters": 42,
+    "questions_in_clusters": 128,
+    "skipped": false,
+    "error": null
+  },
+  {
+    "bank": "src/data/AP_Macroeconomics_question_bank_200.json",
+    "flagged": 7,
+    "errors": 107,
+    "clusters": 0,
+    "questions_in_clusters": 0,
+    "skipped": false,
+    "error": null
+  },
+  {
+    "bank": "src/data/AP_Microeconomics_question_bank_200.json",
+    "flagged": 0,
+    "errors": 253,
+    "clusters": 0,
+    "questions_in_clusters": 0,
+    "skipped": false,
+    "error": null
+  },
+  {
+    "bank": "src/data/AP_Physics_1_question_bank_200.json",
+    "flagged": 0,
+    "errors": 246,
+    "clusters": 0,
+    "questions_in_clusters": 0,
+    "skipped": false,
+    "error": null
+  },
+  {
+    "bank": "src/data/AP_Spanish_Literature_question_bank_200.json",
+    "flagged": 0,
+    "errors": 297,
+    "clusters": 0,
+    "questions_in_clusters": 0,
+    "skipped": false,
+    "error": null
+  },
+  {
+    "bank": "src/data/AP_US_Government_question_bank_200.json",
+    "flagged": 0,
+    "errors": 253,
+    "clusters": 0,
+    "questions_in_clusters": 0,
+    "skipped": false,
+    "error": null
+  },
+  {
+    "bank": "src/data/accuplacer_question_bank_200.json",
+    "flagged": 0,
+    "errors": 298,
+    "clusters": 0,
+    "questions_in_clusters": 0,
+    "skipped": false,
+    "error": null
+  },
+  {
+    "bank": "src/data/asvab_question_bank_300_original.json",
+    "flagged": 0,
+    "errors": 210,
+    "clusters": 0,
+    "questions_in_clusters": 0,
+    "skipped": false,
+    "error": null
+  },
+  {
+    "bank": "src/data/clt_question_bank_180_original.json",
+    "flagged": 0,
+    "errors": 122,
+    "clusters": 0,
+    "questions_in_clusters": 0,
+    "skipped": false,
+    "error": null
+  },
+  {
+    "bank": "src/data/dat_question_bank_240_original.json",
+    "flagged": 0,
+    "errors": 36,
+    "clusters": 0,
+    "questions_in_clusters": 0,
+    "skipped": false,
+    "error": null
+  },
+  {
+    "bank": "src/data/ged_question_bank_200.json",
+    "flagged": 0,
+    "errors": 298,
+    "clusters": 0,
+    "questions_in_clusters": 0,
+    "skipped": false,
+    "error": null
+  },
+  {
+    "bank": "src/data/gmat_question_bank_200_original.json",
+    "flagged": 0,
+    "errors": 185,
+    "clusters": 0,
+    "questions_in_clusters": 0,
+    "skipped": false,
+    "error": null
+  },
+  {
+    "bank": "src/data/gre_question_bank_200_original.json",
+    "flagged": 0,
+    "errors": 210,
+    "clusters": 0,
+    "questions_in_clusters": 0,
+    "skipped": false,
+    "error": null
+  },
+  {
+    "bank": "src/data/hiset_question_bank_200.json",
+    "flagged": 0,
+    "errors": 299,
+    "clusters": 0,
+    "questions_in_clusters": 0,
+    "skipped": false,
+    "error": null
+  },
+  {
+    "bank": "src/data/homeschool_iowa_stanford10_question_bank_220_original.json",
+    "flagged": 0,
+    "errors": 85,
+    "clusters": 0,
+    "questions_in_clusters": 0,
+    "skipped": false,
+    "error": null
+  },
+  {
+    "bank": "src/data/ib_question_bank_200.json",
+    "flagged": 0,
+    "errors": 300,
+    "clusters": 0,
+    "questions_in_clusters": 0,
+    "skipped": false,
+    "error": null
+  },
+  {
+    "bank": "src/data/lsat_question_bank_250_original.json",
+    "flagged": 0,
+    "errors": 31,
+    "clusters": 0,
+    "questions_in_clusters": 0,
+    "skipped": false,
+    "error": null
+  },
+  {
+    "bank": "src/data/map_growth_question_bank_200_original.json",
+    "flagged": 0,
+    "errors": 104,
+    "clusters": 0,
+    "questions_in_clusters": 0,
+    "skipped": false,
+    "error": null
+  },
+  {
+    "bank": "src/data/nclex_question_bank_200.json",
+    "flagged": 0,
+    "errors": 296,
+    "clusters": 0,
+    "questions_in_clusters": 0,
+    "skipped": false,
+    "error": null
+  },
+  {
+    "bank": "src/data/oat_question_bank_240_original.json",
+    "flagged": 0,
+    "errors": 35,
+    "clusters": 0,
+    "questions_in_clusters": 0,
+    "skipped": false,
+    "error": null
+  },
+  {
+    "bank": "src/data/sat_english_level10_100.json",
+    "flagged": 0,
+    "errors": 20,
+    "clusters": 0,
+    "questions_in_clusters": 0,
+    "skipped": false,
+    "error": null
+  },
+  {
+    "bank": "src/data/sat_english_level9_100.json",
+    "flagged": 0,
+    "errors": 30,
+    "clusters": 0,
+    "questions_in_clusters": 0,
+    "skipped": false,
+    "error": null
+  },
+  {
+    "bank": "src/data/sat_math_level10_100.json",
+    "flagged": 0,
+    "errors": 30,
+    "clusters": 0,
+    "questions_in_clusters": 0,
+    "skipped": false,
+    "error": null
+  },
+  {
+    "bank": "src/data/sat_math_level9_100.json",
+    "flagged": 0,
+    "errors": 50,
+    "clusters": 0,
+    "questions_in_clusters": 0,
+    "skipped": false,
+    "error": null
+  },
+  {
+    "bank": "src/data/sat_question_bank_starter_200.json",
+    "flagged": 0,
+    "errors": 26,
+    "clusters": 0,
+    "questions_in_clusters": 0,
+    "skipped": false,
+    "error": null
+  },
+  {
+    "bank": "src/data/sbac_question_bank_200.json",
+    "flagged": 0,
+    "errors": 297,
+    "clusters": 0,
+    "questions_in_clusters": 0,
+    "skipped": false,
+    "error": null
+  },
+  {
+    "bank": "src/data/teas_question_bank_200.json",
+    "flagged": 0,
+    "errors": 163,
+    "clusters": 0,
+    "questions_in_clusters": 0,
+    "skipped": false,
+    "error": null
+  },
+  {
+    "bank": "src/data/terranova_question_bank_200_original.json",
+    "flagged": 0,
+    "errors": 105,
+    "clusters": 0,
+    "questions_in_clusters": 0,
+    "skipped": false,
+    "error": null
+  },
+  {
+    "bank": "src/data/toefl_question_bank_200.json",
+    "flagged": 0,
+    "errors": 249,
+    "clusters": 0,
+    "questions_in_clusters": 0,
+    "skipped": false,
+    "error": null
+  }
+]
