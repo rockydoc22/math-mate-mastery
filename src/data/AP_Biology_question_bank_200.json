@@ -261,16 +261,16 @@
   },
   {
     "id": "AP_Biology_21",
-    "question": "A scientist observes a population of bacteria in a petri dish. Over several days, the population size remains constant, despite ample nutrient availability. Which of the following is the most likely explanation for this observation?",
+    "question": "A researcher grows bacteria in a liquid culture. The population grows rapidly at first, then levels off and remains stable over time despite continued nutrient availability. Which of the following best explains the stable phase?",
     "choices": {
-      "A": "The bacteria have reached their carrying capacity due to limited space in the petri dish.",
-      "B": "The bacteria are experiencing a higher death rate than birth rate.",
-      "C": "The bacteria are undergoing quorum sensing, which inhibits population growth.",
-      "D": "The bacteria are in a stable equilibrium where birth rates equal death rates."
+      "A": "The bacteria have entered a dormant spore-forming state and ceased all metabolic activity",
+      "B": "Quorum sensing has permanently silenced all growth genes in the population",
+      "C": "The population has reached carrying capacity, where birth rate equals death rate due to density-dependent limiting factors such as space or waste accumulation",
+      "D": "Nutrient availability has decreased to zero, causing the death rate to exceed the birth rate"
     },
-    "answer": "D",
-    "difficulty": 4,
-    "explanation": "A constant population size in the presence of sufficient resources suggests a stable equilibrium where the rate of individuals entering the population (births) is balanced by the rate of individuals leaving (deaths). Limited space can contribute to carrying capacity, but the question implies ample nutrients. Quorum sensing typically relates to coordinated behaviors, not necessarily stasis at carrying capacity. A higher death rate would lead to a population decline."
+    "answer": "C",
+    "difficulty": 5,
+    "explanation": "The leveling off of population growth describes the plateau phase of logistic growth, where the population reaches its carrying capacity (K). At this point, density-dependent factors such as limited physical space, accumulation of waste products, or competition keep birth and death rates equal. This is distinct from exponential growth, where resources are truly unlimited and the population continues to expand."
   },
   {
     "id": "AP_Biology_22",
