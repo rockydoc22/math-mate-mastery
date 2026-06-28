@@ -12,7 +12,7 @@ export const importedSATMathQuestions: ImageQuestion[] = [
   {
     id: "sat-52cb8ea4",
     question: "If (x, y) is the solution to the system of equations above, what is the value of 3x + 3y?\n\n7x − 5y = 4\n4x − 8y = 9",
-    imageUrl: "/questions/sat-math-52cb8ea4.jpg",
+    imageUrl: "questions/sat-math-52cb8ea4.jpg",
     options: [
       { letter: "A", text: "−13" },
       { letter: "B", text: "−5" },
@@ -29,7 +29,7 @@ export const importedSATMathQuestions: ImageQuestion[] = [
   {
     id: "sat-1362ccde",
     question: "The solution to the given system of equations is (x, y). What is the value of x − y?\n\ny = 4x + 1\n4y = 15x − 8",
-    imageUrl: "/questions/sat-math-1362ccde.jpg",
+    imageUrl: "questions/sat-math-1362ccde.jpg",
     options: [
       { letter: "A", text: "35" }
     ],
@@ -44,7 +44,7 @@ export const importedSATMathQuestions: ImageQuestion[] = [
   {
     id: "sat-cc7ffe02",
     question: "Keenan made 32 cups of vegetable broth. Keenan then filled x small jars and y large jars with all the vegetable broth he made. The equation 3x + 5y = 32 represents this situation. Which is the best interpretation of 5y in this context?",
-    imageUrl: "/questions/sat-math-cc7ffe02.jpg",
+    imageUrl: "questions/sat-math-cc7ffe02.jpg",
     options: [
       { letter: "A", text: "The number of large jars Keenan filled" },
       { letter: "B", text: "The number of small jars Keenan filled" },
@@ -61,7 +61,7 @@ export const importedSATMathQuestions: ImageQuestion[] = [
   {
     id: "sat-05bb1af9",
     question: "The graph of y = f(x) + 14 is shown. Which equation defines function f?",
-    imageUrl: "/questions/sat-math-05bb1af9.jpg",
+    imageUrl: "questions/sat-math-05bb1af9.jpg",
     options: [
       { letter: "A", text: "f(x) = −(1/4)x − 12" },
       { letter: "B", text: "f(x) = −(1/4)x + 16" },
@@ -78,7 +78,7 @@ export const importedSATMathQuestions: ImageQuestion[] = [
   {
     id: "sat-e1248a5c",
     question: "In the system of equations below, a and c are constants.\n\n(1/2)x + (1/3)y = 1/6\nax + y = c\n\nIf the system of equations has an infinite number of solutions (x, y), what is the value of a?",
-    imageUrl: "/questions/sat-math-e1248a5c.jpg",
+    imageUrl: "questions/sat-math-e1248a5c.jpg",
     options: [
       { letter: "A", text: "−1/2" },
       { letter: "B", text: "0" },
@@ -95,7 +95,7 @@ export const importedSATMathQuestions: ImageQuestion[] = [
   {
     id: "sat-d1f50dbe",
     question: "One gallon of stain will cover 170 square feet of a surface. A yard has a total fence area of w square feet. Which equation represents the total amount of stain S, in gallons, needed to stain the fence in this yard twice?",
-    imageUrl: "/questions/sat-math-d1f50dbe.jpg",
+    imageUrl: "questions/sat-math-d1f50dbe.jpg",
     options: [
       { letter: "A", text: "S = w/340" },
       { letter: "B", text: "S = 340w" },
@@ -112,7 +112,7 @@ export const importedSATMathQuestions: ImageQuestion[] = [
   {
     id: "sat-b9835972",
     question: "In the xy-plane, line ℓ passes through the point (0, 0) and is parallel to the line represented by the equation y = 8x + 2. If line ℓ also passes through the point (3, d), what is the value of d?",
-    imageUrl: "/questions/sat-math-b9835972.jpg",
+    imageUrl: "questions/sat-math-b9835972.jpg",
     options: [
       { letter: "A", text: "8" },
       { letter: "B", text: "11" },
@@ -129,7 +129,7 @@ export const importedSATMathQuestions: ImageQuestion[] = [
   {
     id: "sat-af2ba762",
     question: "According to data provided by the US Department of Energy, the average price per gallon of regular gasoline in the United States from September 1, 2014, to December 1, 2014, is modeled by the function F defined below, where F(x) is the average price per gallon x months after September 1.\n\nF(x) = 2.74 − 0.19(x − 3)\n\nThe constant 2.74 in this function estimates which of the following?",
-    imageUrl: "/questions/sat-math-af2ba762.jpg",
+    imageUrl: "questions/sat-math-af2ba762.jpg",
     options: [
       { letter: "A", text: "The average monthly decrease in the price per gallon" },
       { letter: "B", text: "The difference in the average price per gallon from September 1, 2014, to December 1, 2014" },

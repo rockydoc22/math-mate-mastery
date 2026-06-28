@@ -19,7 +19,7 @@ export const importedSATMathQuestions4: ImageQuestion[] = [
     difficulty: "Hard",
     domain: "Algebra",
     skill: "Linear equations in one variable",
-    imageUrl: "/questions/sat-math-153ee763.jpg"
+    imageUrl: "questions/sat-math-153ee763.jpg"
   },
   {
     id: "sat-math-466b87e3",
@@ -35,7 +35,7 @@ export const importedSATMathQuestions4: ImageQuestion[] = [
     difficulty: "Hard",
     domain: "Algebra",
     skill: "Systems of two linear equations in two variables",
-    imageUrl: "/questions/sat-math-466b87e3.jpg"
+    imageUrl: "questions/sat-math-466b87e3.jpg"
   },
   {
     id: "sat-math-aee9fd2d",
@@ -51,7 +51,7 @@ export const importedSATMathQuestions4: ImageQuestion[] = [
     difficulty: "Hard",
     domain: "Algebra",
     skill: "Linear equations in one variable",
-    imageUrl: "/questions/sat-math-aee9fd2d.jpg"
+    imageUrl: "questions/sat-math-aee9fd2d.jpg"
   },
   {
     id: "sat-math-570b5a5d",
@@ -67,7 +67,7 @@ export const importedSATMathQuestions4: ImageQuestion[] = [
     difficulty: "Hard",
     domain: "Algebra",
     skill: "Systems of two linear equations in two variables",
-    imageUrl: "/questions/sat-math-570b5a5d.jpg"
+    imageUrl: "questions/sat-math-570b5a5d.jpg"
   },
   {
     id: "sat-math-6d8ad460",
@@ -83,7 +83,7 @@ export const importedSATMathQuestions4: ImageQuestion[] = [
     difficulty: "Hard",
     domain: "Algebra",
     skill: "Linear equations in two variables",
-    imageUrl: "/questions/sat-math-6d8ad460.jpg"
+    imageUrl: "questions/sat-math-6d8ad460.jpg"
   },
   {
     id: "sat-math-963da34c",
@@ -99,7 +99,7 @@ export const importedSATMathQuestions4: ImageQuestion[] = [
     difficulty: "Hard",
     domain: "Algebra",
     skill: "Linear inequalities in one or two variables",
-    imageUrl: "/questions/sat-math-963da34c.jpg"
+    imageUrl: "questions/sat-math-963da34c.jpg"
   },
   {
     id: "sat-math-184ce5aa",
@@ -115,7 +115,7 @@ export const importedSATMathQuestions4: ImageQuestion[] = [
     difficulty: "Hard",
     domain: "Algebra",
     skill: "Linear equations in two variables",
-    imageUrl: "/questions/sat-math-184ce5aa.jpg"
+    imageUrl: "questions/sat-math-184ce5aa.jpg"
   },
   {
     id: "sat-math-e2e3942f",
@@ -131,7 +131,7 @@ export const importedSATMathQuestions4: ImageQuestion[] = [
     difficulty: "Hard",
     domain: "Algebra",
     skill: "Systems of two linear equations in two variables",
-    imageUrl: "/questions/sat-math-e2e3942f.jpg"
+    imageUrl: "questions/sat-math-e2e3942f.jpg"
   },
   {
     id: "sat-math-b8f13a3a",
@@ -147,7 +147,7 @@ export const importedSATMathQuestions4: ImageQuestion[] = [
     difficulty: "Hard",
     domain: "Advanced Math",
     skill: "Nonlinear functions",
-    imageUrl: "/questions/sat-math-b8f13a3a.jpg"
+    imageUrl: "questions/sat-math-b8f13a3a.jpg"
   },
   {
     id: "sat-math-40c09d66",
@@ -163,7 +163,7 @@ export const importedSATMathQuestions4: ImageQuestion[] = [
     difficulty: "Hard",
     domain: "Advanced Math",
     skill: "Equivalent expressions",
-    imageUrl: "/questions/sat-math-40c09d66.jpg"
+    imageUrl: "questions/sat-math-40c09d66.jpg"
   },
   {
     id: "sat-math-c3b116d7",
@@ -179,7 +179,7 @@ export const importedSATMathQuestions4: ImageQuestion[] = [
     difficulty: "Hard",
     domain: "Advanced Math",
     skill: "Equivalent expressions",
-    imageUrl: "/questions/sat-math-c3b116d7.jpg"
+    imageUrl: "questions/sat-math-c3b116d7.jpg"
   },
   {
     id: "sat-math-371cbf6b",
@@ -195,7 +195,7 @@ export const importedSATMathQuestions4: ImageQuestion[] = [
     difficulty: "Hard",
     domain: "Advanced Math",
     skill: "Equivalent expressions",
-    imageUrl: "/questions/sat-math-371cbf6b.jpg"
+    imageUrl: "questions/sat-math-371cbf6b.jpg"
   },
   {
     id: "sat-math-781c2f6e",
@@ -211,7 +211,7 @@ export const importedSATMathQuestions4: ImageQuestion[] = [
     difficulty: "Hard",
     domain: "Advanced Math",
     skill: "Nonlinear functions",
-    imageUrl: "/questions/sat-math-781c2f6e.jpg"
+    imageUrl: "questions/sat-math-781c2f6e.jpg"
   },
   {
     id: "sat-math-seq9w4",
@@ -227,7 +227,7 @@ export const importedSATMathQuestions4: ImageQuestion[] = [
     difficulty: "Hard",
     domain: "Advanced Math",
     skill: "Nonlinear functions",
-    imageUrl: "/questions/sat-math-seq9w4.jpg"
+    imageUrl: "questions/sat-math-seq9w4.jpg"
   },
   {
     id: "sat-math-e86a06fe",
@@ -243,7 +243,7 @@ export const importedSATMathQuestions4: ImageQuestion[] = [
     difficulty: "Hard",
     domain: "Algebra",
     skill: "Linear equations in two variables",
-    imageUrl: "/questions/sat-math-e86a06fe.jpg"
+    imageUrl: "questions/sat-math-e86a06fe.jpg"
   },
   {
     id: "sat-math-c4ea43ef",
@@ -259,7 +259,7 @@ export const importedSATMathQuestions4: ImageQuestion[] = [
     difficulty: "Hard",
     domain: "Algebra",
     skill: "Linear equations in two variables",
-    imageUrl: "/questions/sat-math-c4ea43ef.jpg"
+    imageUrl: "questions/sat-math-c4ea43ef.jpg"
   },
   {
     id: "sat-math-fb5e7f59",
@@ -275,7 +275,7 @@ export const importedSATMathQuestions4: ImageQuestion[] = [
     difficulty: "Hard",
     domain: "Algebra",
     skill: "Systems of two linear equations in two variables",
-    imageUrl: "/questions/sat-math-fb5e7f59.jpg"
+    imageUrl: "questions/sat-math-fb5e7f59.jpg"
   },
   {
     id: "sat-math-59352689",
@@ -291,7 +291,7 @@ export const importedSATMathQuestions4: ImageQuestion[] = [
     difficulty: "Hard",
     domain: "Algebra",
     skill: "Systems of two linear equations in two variables",
-    imageUrl: "/questions/sat-math-59352689.jpg"
+    imageUrl: "questions/sat-math-59352689.jpg"
   },
   {
     id: "sat-math-14360f84",
@@ -307,7 +307,7 @@ export const importedSATMathQuestions4: ImageQuestion[] = [
     difficulty: "Hard",
     domain: "Algebra",
     skill: "Systems of two linear equations in two variables",
-    imageUrl: "/questions/sat-math-14360f84.jpg"
+    imageUrl: "questions/sat-math-14360f84.jpg"
   },
   {
     id: "sat-math-0393ba15",
@@ -323,7 +323,7 @@ export const importedSATMathQuestions4: ImageQuestion[] = [
     difficulty: "Hard",
     domain: "Algebra",
     skill: "Linear equations in one variable",
-    imageUrl: "/questions/sat-math-0393ba15.jpg"
+    imageUrl: "questions/sat-math-0393ba15.jpg"
   },
   {
     id: "sat-math-a71b1bc1",
@@ -339,7 +339,7 @@ export const importedSATMathQuestions4: ImageQuestion[] = [
     difficulty: "Hard",
     domain: "Algebra",
     skill: "Systems of two linear equations in two variables",
-    imageUrl: "/questions/sat-math-a71b1bc1.jpg"
+    imageUrl: "questions/sat-math-a71b1bc1.jpg"
   },
   {
     id: "sat-math-e103300e",
@@ -355,7 +355,7 @@ export const importedSATMathQuestions4: ImageQuestion[] = [
     difficulty: "Hard",
     domain: "Algebra",
     skill: "Linear functions",
-    imageUrl: "/questions/sat-math-e103300e.jpg"
+    imageUrl: "questions/sat-math-e103300e.jpg"
   },
   {
     id: "sat-math-cb58833c",
@@ -371,7 +371,7 @@ export const importedSATMathQuestions4: ImageQuestion[] = [
     difficulty: "Hard",
     domain: "Algebra",
     skill: "Linear equations in two variables",
-    imageUrl: "/questions/sat-math-cb58833c.jpg"
+    imageUrl: "questions/sat-math-cb58833c.jpg"
   },
   {
     id: "sat-math-567ac7ab",
@@ -387,7 +387,7 @@ export const importedSATMathQuestions4: ImageQuestion[] = [
     difficulty: "Hard",
     domain: "Algebra",
     skill: "Systems of two linear equations in two variables",
-    imageUrl: "/questions/sat-math-567ac7ab.jpg"
+    imageUrl: "questions/sat-math-567ac7ab.jpg"
   },
   {
     id: "sat-math-9d0396d4",
@@ -403,7 +403,7 @@ export const importedSATMathQuestions4: ImageQuestion[] = [
     difficulty: "Hard",
     domain: "Algebra",
     skill: "Linear equations in two variables",
-    imageUrl: "/questions/sat-math-9d0396d4.jpg"
+    imageUrl: "questions/sat-math-9d0396d4.jpg"
   },
   {
     id: "sat-math-4771a64a",
@@ -419,7 +419,7 @@ export const importedSATMathQuestions4: ImageQuestion[] = [
     difficulty: "Hard",
     domain: "Algebra",
     skill: "Linear equations in one variable",
-    imageUrl: "/questions/sat-math-4771a64a.jpg"
+    imageUrl: "questions/sat-math-4771a64a.jpg"
   },
   {
     id: "sat-math-daad7c32",
@@ -435,7 +435,7 @@ export const importedSATMathQuestions4: ImageQuestion[] = [
     difficulty: "Hard",
     domain: "Algebra",
     skill: "Linear functions",
-    imageUrl: "/questions/sat-math-daad7c32.jpg"
+    imageUrl: "questions/sat-math-daad7c32.jpg"
   },
   {
     id: "sat-math-3f8a701b",
@@ -466,7 +466,7 @@ export const importedSATMathQuestions4: ImageQuestion[] = [
     difficulty: "Hard",
     domain: "Algebra",
     skill: "Systems of two linear equations in two variables",
-    imageUrl: "/questions/sat-math-3a84f885.jpg"
+    imageUrl: "questions/sat-math-3a84f885.jpg"
   },
   {
     id: "sat-math-023c0a8d",
@@ -482,7 +482,7 @@ export const importedSATMathQuestions4: ImageQuestion[] = [
     difficulty: "Hard",
     domain: "Algebra",
     skill: "Linear functions",
-    imageUrl: "/questions/sat-math-023c0a8d.jpg"
+    imageUrl: "questions/sat-math-023c0a8d.jpg"
   },
   {
     id: "sat-math-a5882327",
@@ -498,7 +498,7 @@ export const importedSATMathQuestions4: ImageQuestion[] = [
     difficulty: "Hard",
     domain: "Algebra",
     skill: "Linear functions",
-    imageUrl: "/questions/sat-math-a5882327.jpg"
+    imageUrl: "questions/sat-math-a5882327.jpg"
   },
   {
     id: "sat-math-a7a14e87",
@@ -514,7 +514,7 @@ export const importedSATMathQuestions4: ImageQuestion[] = [
     difficulty: "Hard",
     domain: "Algebra",
     skill: "Linear equations in two variables",
-    imageUrl: "/questions/sat-math-a7a14e87.jpg"
+    imageUrl: "questions/sat-math-a7a14e87.jpg"
   },
   {
     id: "sat-math-linear-t",
@@ -530,7 +530,7 @@ export const importedSATMathQuestions4: ImageQuestion[] = [
     difficulty: "Hard",
     domain: "Algebra",
     skill: "Linear equations in one variable",
-    imageUrl: "/questions/sat-math-linear-t.jpg"
+    imageUrl: "questions/sat-math-linear-t.jpg"
   },
   {
     id: "sat-math-5e08a055",
@@ -546,7 +546,7 @@ export const importedSATMathQuestions4: ImageQuestion[] = [
     difficulty: "Hard",
     domain: "Algebra",
     skill: "Systems of two linear equations in two variables",
-    imageUrl: "/questions/sat-math-5e08a055.jpg"
+    imageUrl: "questions/sat-math-5e08a055.jpg"
   },
   {
     id: "sat-math-9f70fd47",
@@ -562,7 +562,7 @@ export const importedSATMathQuestions4: ImageQuestion[] = [
     difficulty: "Hard",
     domain: "Algebra",
     skill: "Linear equations in two variables",
-    imageUrl: "/questions/sat-math-9f70fd47.jpg"
+    imageUrl: "questions/sat-math-9f70fd47.jpg"
   },
   {
     id: "sat-math-f5ff91b2",
@@ -578,7 +578,7 @@ export const importedSATMathQuestions4: ImageQuestion[] = [
     difficulty: "Hard",
     domain: "Algebra",
     skill: "Linear equations in one variable",
-    imageUrl: "/questions/sat-math-f5ff91b2.jpg"
+    imageUrl: "questions/sat-math-f5ff91b2.jpg"
   },
   {
     id: "sat-math-a1fd2304",
@@ -594,7 +594,7 @@ export const importedSATMathQuestions4: ImageQuestion[] = [
     difficulty: "Hard",
     domain: "Algebra",
     skill: "Linear equations in two variables",
-    imageUrl: "/questions/sat-math-a1fd2304.jpg"
+    imageUrl: "questions/sat-math-a1fd2304.jpg"
   },
   {
     id: "sat-math-628300a9",
@@ -610,7 +610,7 @@ export const importedSATMathQuestions4: ImageQuestion[] = [
     difficulty: "Hard",
     domain: "Algebra",
     skill: "Linear equations in one variable",
-    imageUrl: "/questions/sat-math-628300a9.jpg"
+    imageUrl: "questions/sat-math-628300a9.jpg"
   },
   {
     id: "sat-math-0bd33265",
@@ -626,7 +626,7 @@ export const importedSATMathQuestions4: ImageQuestion[] = [
     difficulty: "Hard",
     domain: "Algebra",
     skill: "Linear functions",
-    imageUrl: "/questions/sat-math-0bd33265.jpg"
+    imageUrl: "questions/sat-math-0bd33265.jpg"
   },
   {
     id: "sat-math-bbf9e5ce",
@@ -642,7 +642,7 @@ export const importedSATMathQuestions4: ImageQuestion[] = [
     difficulty: "Hard",
     domain: "Algebra",
     skill: "Linear functions",
-    imageUrl: "/questions/sat-math-bbf9e5ce.jpg"
+    imageUrl: "questions/sat-math-bbf9e5ce.jpg"
   },
   {
     id: "sat-math-5b7599a6",
@@ -658,7 +658,7 @@ export const importedSATMathQuestions4: ImageQuestion[] = [
     difficulty: "Hard",
     domain: "Algebra",
     skill: "Linear equations in two variables",
-    imageUrl: "/questions/sat-math-5b7599a6.jpg"
+    imageUrl: "questions/sat-math-5b7599a6.jpg"
   },
   {
     id: "sat-math-67d63e19",
@@ -674,7 +674,7 @@ export const importedSATMathQuestions4: ImageQuestion[] = [
     difficulty: "Hard",
     domain: "Algebra",
     skill: "Linear functions",
-    imageUrl: "/questions/sat-math-67d63e19.jpg"
+    imageUrl: "questions/sat-math-67d63e19.jpg"
   },
   {
     id: "sat-math-27f5fff3",
@@ -690,6 +690,6 @@ export const importedSATMathQuestions4: ImageQuestion[] = [
     difficulty: "Hard",
     domain: "Algebra",
     skill: "Systems of two linear equations in two variables",
-    imageUrl: "/questions/sat-math-27f5fff3.jpg"
+    imageUrl: "questions/sat-math-27f5fff3.jpg"
   }
 ];

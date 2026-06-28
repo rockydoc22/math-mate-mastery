@@ -8,6 +8,7 @@ import { CheckCircle2, XCircle, Flag, Lightbulb, AlertTriangle, Route } from "lu
 import { FlagQuestionModal } from "./FlagQuestionModal";
 import { QuestionVisual } from "./QuestionVisual";
 import { MathText } from "./MathText";
+import { ProtectedImage } from "./ProtectedImage";
 import { ClickableText } from "./ClickableText";
 import { findKeyConcept, KeyConcept } from "@/data/satKeyConcepts";
 import { SolutionPathAnalysis } from "./SolutionPathAnalysis";
@@ -86,9 +87,9 @@ export const QuizCard = ({ question: rawQuestion, selectedAnswer, onSelectAnswer
           {/* Render question image if present */}
           {imageQuestion.imageUrl && (
             <div className="rounded-lg overflow-hidden border">
-              <img 
-                src={imageQuestion.imageUrl} 
-                alt="Question visual" 
+              <ProtectedImage
+                src={imageQuestion.imageUrl}
+                alt="Question visual"
                 className="w-full h-auto"
               />
             </div>

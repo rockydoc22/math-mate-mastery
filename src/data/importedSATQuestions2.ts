@@ -12,7 +12,7 @@ export const importedSATMathQuestions2: ImageQuestion[] = [
   {
     id: "sat-70feb725",
     question: "During a month, Morgan ran r miles at 5 miles per hour and biked b miles at 10 miles per hour. She ran and biked a total of 200 miles that month, and she biked for twice as many hours as she ran. What is the total number of miles that Morgan biked during the month?",
-    imageUrl: "/questions/sat-math-70feb725.jpg",
+    imageUrl: "questions/sat-math-70feb725.jpg",
     options: [
       { letter: "A", text: "80" },
       { letter: "B", text: "100" },
@@ -29,7 +29,7 @@ export const importedSATMathQuestions2: ImageQuestion[] = [
   {
     id: "sat-b988eeec",
     question: "The functions f and g are defined as f(x) = x − 9 and g(x) = 3x + 21. If the function h is defined as h(x) = f(x) + g(x), what is the x-coordinate of the x-intercept of the graph of y = h(x) in the xy-plane?",
-    imageUrl: "/questions/sat-math-b988eeec.jpg",
+    imageUrl: "questions/sat-math-b988eeec.jpg",
     options: [
       { letter: "A", text: "-12" }
     ],
@@ -44,7 +44,7 @@ export const importedSATMathQuestions2: ImageQuestion[] = [
   {
     id: "sat-9aaf7786",
     question: "In the xy-plane, line p has a slope of −5 and an x-intercept of (−2, 0). What is the y-coordinate of the y-intercept of line p?",
-    imageUrl: "/questions/sat-math-9aaf7786.jpg",
+    imageUrl: "questions/sat-math-9aaf7786.jpg",
     options: [
       { letter: "A", text: "-10" }
     ],
@@ -59,7 +59,7 @@ export const importedSATMathQuestions2: ImageQuestion[] = [
   {
     id: "sat-ac472881",
     question: "In the given equation, r and s are constants, and r ≠ 0. If the equation has infinitely many solutions, what is the value of s?",
-    imageUrl: "/questions/sat-math-ac472881.jpg",
+    imageUrl: "questions/sat-math-ac472881.jpg",
     options: [
       { letter: "A", text: "403" }
     ],
@@ -74,7 +74,7 @@ export const importedSATMathQuestions2: ImageQuestion[] = [
   {
     id: "sat-3f5a3602",
     question: "What system of linear equations is represented by the lines shown in the graph?",
-    imageUrl: "/questions/sat-math-3f5a3602.jpg",
+    imageUrl: "questions/sat-math-3f5a3602.jpg",
     options: [
       { letter: "A", text: "See image for options" },
       { letter: "B", text: "See image for options" },
@@ -91,7 +91,7 @@ export const importedSATMathQuestions2: ImageQuestion[] = [
   {
     id: "sat-edc1b7b7",
     question: "The solution to the given system of equations is (x, y). What is the value of 8x + 7y?",
-    imageUrl: "/questions/sat-math-edc1b7b7.jpg",
+    imageUrl: "questions/sat-math-edc1b7b7.jpg",
     options: [
       { letter: "A", text: "3" }
     ],
@@ -106,7 +106,7 @@ export const importedSATMathQuestions2: ImageQuestion[] = [
   {
     id: "sat-3008cfc3",
     question: "The table gives the coordinates of two points on a line in the xy-plane. The y-intercept of the line is (k − 5, b), where k and b are constants. What is the value of b?",
-    imageUrl: "/questions/sat-math-3008cfc3.jpg",
+    imageUrl: "questions/sat-math-3008cfc3.jpg",
     options: [
       { letter: "A", text: "33" }
     ],
@@ -121,7 +121,7 @@ export const importedSATMathQuestions2: ImageQuestion[] = [
   {
     id: "sat-4becad44",
     question: "One of the two equations in a system of linear equations is given: 3x = 36y − 45. The system has no solution. Which equation could be the second equation in this system?",
-    imageUrl: "/questions/sat-math-4becad44.jpg",
+    imageUrl: "questions/sat-math-4becad44.jpg",
     options: [
       { letter: "A", text: "See image" },
       { letter: "B", text: "x/12 = y" },
@@ -138,7 +138,7 @@ export const importedSATMathQuestions2: ImageQuestion[] = [
   {
     id: "sat-d1b66ae6",
     question: "If (x, y) satisfies the system of equations above, what is the value of y?",
-    imageUrl: "/questions/sat-math-d1b66ae6.jpg",
+    imageUrl: "questions/sat-math-d1b66ae6.jpg",
     options: [
       { letter: "A", text: "1.5" }
     ],
@@ -153,7 +153,7 @@ export const importedSATMathQuestions2: ImageQuestion[] = [
   {
     id: "sat-3cdbf026",
     question: "The graph of the equation ax + ky = 1 is a line in the xy-plane, where a and k are constants. If the line contains the points (k, a) and (a, k), what is the value of k?",
-    imageUrl: "/questions/sat-math-3cdbf026.jpg",
+    imageUrl: "questions/sat-math-3cdbf026.jpg",
     options: [
       { letter: "A", text: "See image" },
       { letter: "B", text: "See image" },
@@ -170,7 +170,7 @@ export const importedSATMathQuestions2: ImageQuestion[] = [
   {
     id: "sat-00723d16",
     question: "Line ℓ is defined by 3y + 12x = 5. Line n is perpendicular to line ℓ in the xy-plane. What is the slope of line n?",
-    imageUrl: "/questions/sat-math-00723d16.jpg",
+    imageUrl: "questions/sat-math-00723d16.jpg",
     options: [
       { letter: "A", text: "0.25 or 1/4" }
     ],
@@ -185,7 +185,7 @@ export const importedSATMathQuestions2: ImageQuestion[] = [
   {
     id: "sat-ff501705",
     question: "In the given system of equations, p is a constant. If the system has no solution, what is the value of p?",
-    imageUrl: "/questions/sat-math-ff501705.jpg",
+    imageUrl: "questions/sat-math-ff501705.jpg",
     options: [
       { letter: "A", text: "6" }
     ],
@@ -200,7 +200,7 @@ export const importedSATMathQuestions2: ImageQuestion[] = [
   {
     id: "sat-2b15d65f",
     question: "An economist modeled the demand Q for a certain product as a linear function of the selling price P. The demand was 20,000 units when the selling price was $40 per unit, and the demand was 15,000 units when the selling price was $60 per unit. Based on the model, what is the demand, in units, when the selling price is $55 per unit?",
-    imageUrl: "/questions/sat-math-2b15d65f.jpg",
+    imageUrl: "questions/sat-math-2b15d65f.jpg",
     options: [
       { letter: "A", text: "16,250" },
       { letter: "B", text: "16,500" },
@@ -217,7 +217,7 @@ export const importedSATMathQuestions2: ImageQuestion[] = [
   {
     id: "sat-e25f0807",
     question: "The table shows two values of x and their corresponding values of y. The graph of the linear equation representing this relationship passes through the point (1/4, a). What is the value of a?",
-    imageUrl: "/questions/sat-math-e25f0807.jpg",
+    imageUrl: "questions/sat-math-e25f0807.jpg",
     options: [
       { letter: "A", text: "16.25 or 65/4" }
     ],
@@ -232,7 +232,7 @@ export const importedSATMathQuestions2: ImageQuestion[] = [
   {
     id: "sat-686b7244",
     question: "A certain apprentice has enrolled in 85 hours of training courses. The equation 10x + 15y = 85 represents this situation, where x is the number of on-site training courses and y is the number of online training courses. How many more hours does each online training course take than each on-site training course?",
-    imageUrl: "/questions/sat-math-686b7244.jpg",
+    imageUrl: "questions/sat-math-686b7244.jpg",
     options: [
       { letter: "A", text: "5" }
     ],
@@ -247,7 +247,7 @@ export const importedSATMathQuestions2: ImageQuestion[] = [
   {
     id: "sat-1b1deebe",
     question: "In the given system of equations, a and b are constants. The graphs of these equations in the xy-plane intersect at the point (4, y). What is the value of a?",
-    imageUrl: "/questions/sat-math-1b1deebe.jpg",
+    imageUrl: "questions/sat-math-1b1deebe.jpg",
     options: [
       { letter: "A", text: "See image" },
       { letter: "B", text: "See image" },
@@ -264,7 +264,7 @@ export const importedSATMathQuestions2: ImageQuestion[] = [
   {
     id: "sat-be9cb6a2",
     question: "The cost of renting a backhoe for up to 10 days is $270 for the first day and $135 for each additional day. Which of the following equations gives the cost y, in dollars, of renting the backhoe for x days, where x is a positive integer and x ≤ 10?",
-    imageUrl: "/questions/sat-math-be9cb6a2.jpg",
+    imageUrl: "questions/sat-math-be9cb6a2.jpg",
     options: [
       { letter: "A", text: "See image" },
       { letter: "B", text: "See image" },
@@ -281,7 +281,7 @@ export const importedSATMathQuestions2: ImageQuestion[] = [
   {
     id: "sat-db422e7f",
     question: "Line p is defined by 4y + 8x = 6. Line r is perpendicular to line p in the xy-plane. What is the slope of line r?",
-    imageUrl: "/questions/sat-math-db422e7f.jpg",
+    imageUrl: "questions/sat-math-db422e7f.jpg",
     options: [
       { letter: "A", text: "0.5 or 1/2" }
     ],
@@ -296,7 +296,7 @@ export const importedSATMathQuestions2: ImageQuestion[] = [
   {
     id: "sat-45cfb9de",
     question: "Adam's school is a 20-minute walk or a 5-minute bus ride away from his house. The bus runs once every 30 minutes, and the number of minutes, w, that Adam waits for the bus varies between 0 and 30. Which of the following inequalities gives the values of w for which it would be faster for Adam to walk to school?",
-    imageUrl: "/questions/sat-math-45cfb9de.jpg",
+    imageUrl: "questions/sat-math-45cfb9de.jpg",
     options: [
       { letter: "A", text: "See image" },
       { letter: "B", text: "See image" },
@@ -313,7 +313,7 @@ export const importedSATMathQuestions2: ImageQuestion[] = [
   {
     id: "sat-571174f3",
     question: "In the given system of equations, g and k are constants. The system has infinitely many solutions. What is the value of g?",
-    imageUrl: "/questions/sat-math-571174f3.jpg",
+    imageUrl: "questions/sat-math-571174f3.jpg",
     options: [
       { letter: "A", text: "2/7 or 0.2857" }
     ],
@@ -328,7 +328,7 @@ export const importedSATMathQuestions2: ImageQuestion[] = [
   {
     id: "sat-979c6ebc",
     question: "For each real number r, which of the following points lies on the graph of each equation in the xy-plane for the given system?",
-    imageUrl: "/questions/sat-math-979c6ebc.jpg",
+    imageUrl: "questions/sat-math-979c6ebc.jpg",
     options: [
       { letter: "A", text: "See image" },
       { letter: "B", text: "See image" },
@@ -345,7 +345,7 @@ export const importedSATMathQuestions2: ImageQuestion[] = [
   {
     id: "sat-f14484a5",
     question: "A manufacturing plant makes 7-inch, 9-inch, and 10-inch frying pans. During a certain day, the number of 9-inch frying pans is n and the number of 10-inch frying pans is 4 times the number of 9-inch pans. The number of 7-inch pans is 10. The plant makes 100 frying pans total. Which equation represents this situation?",
-    imageUrl: "/questions/sat-math-f14484a5.jpg",
+    imageUrl: "questions/sat-math-f14484a5.jpg",
     options: [
       { letter: "A", text: "See image" },
       { letter: "B", text: "See image" },
@@ -362,7 +362,7 @@ export const importedSATMathQuestions2: ImageQuestion[] = [
   {
     id: "sat-797a81fb",
     question: "How many solutions does the given system of equations have? (−12x + 14y = 36 and −6x + 7y = −18)",
-    imageUrl: "/questions/sat-math-797a81fb.jpg",
+    imageUrl: "questions/sat-math-797a81fb.jpg",
     options: [
       { letter: "A", text: "Exactly one" },
       { letter: "B", text: "Exactly two" },
@@ -379,7 +379,7 @@ export const importedSATMathQuestions2: ImageQuestion[] = [
   {
     id: "sat-4f1342d6",
     question: "In August, a car dealer completed 15 more than 3 times the number of sales the car dealer completed in September. In August and September, the car dealer completed 363 sales. How many sales did the car dealer complete in September?",
-    imageUrl: "/questions/sat-math-4f1342d6.jpg",
+    imageUrl: "questions/sat-math-4f1342d6.jpg",
     options: [
       { letter: "A", text: "87" }
     ],
@@ -394,7 +394,7 @@ export const importedSATMathQuestions2: ImageQuestion[] = [
   {
     id: "sat-b5f62071",
     question: "In the given system of equations, r is a constant. If the system has no solution, what is the value of r?",
-    imageUrl: "/questions/sat-math-b5f62071.jpg",
+    imageUrl: "questions/sat-math-b5f62071.jpg",
     options: [
       { letter: "A", text: "-28" }
     ],
@@ -409,7 +409,7 @@ export const importedSATMathQuestions2: ImageQuestion[] = [
   {
     id: "sat-38bf4e04",
     question: "A factory makes 4-inch, 7-inch, and 9-inch concrete screws. During a certain day, the number of 7-inch screws is n, the number of 9-inch screws is 5 times the 7-inch, and the number of 4-inch is 22. The factory makes 100 screws total. Which equation represents this situation?",
-    imageUrl: "/questions/sat-math-38bf4e04.jpg",
+    imageUrl: "questions/sat-math-38bf4e04.jpg",
     options: [
       { letter: "A", text: "See image" },
       { letter: "B", text: "See image" },
@@ -426,7 +426,7 @@ export const importedSATMathQuestions2: ImageQuestion[] = [
   {
     id: "sat-b7e6394d",
     question: "Alan drives an average of 100 miles each week. His car can travel 25 miles per gallon. Alan would like to reduce his weekly expenditure on gasoline by $5. Assuming gasoline costs $4 per gallon, which equation can Alan use to determine how many fewer miles, m, he should drive each week?",
-    imageUrl: "/questions/sat-math-b7e6394d.jpg",
+    imageUrl: "questions/sat-math-b7e6394d.jpg",
     options: [
       { letter: "A", text: "See image" },
       { letter: "B", text: "See image" },
@@ -443,7 +443,7 @@ export const importedSATMathQuestions2: ImageQuestion[] = [
   {
     id: "sat-ee2f611f",
     question: "A local transit company sells a monthly pass for $95 that allows unlimited trips. Individual trips cost $1.50, $2.50, or $3.50 depending on length. What is the minimum number of trips per month for which a monthly pass could cost less than purchasing individual tickets?",
-    imageUrl: "/questions/sat-math-ee2f611f.jpg",
+    imageUrl: "questions/sat-math-ee2f611f.jpg",
     options: [
       { letter: "A", text: "28" }
     ],
@@ -458,7 +458,7 @@ export const importedSATMathQuestions2: ImageQuestion[] = [
   {
     id: "sat-25e1cfed",
     question: "How many solutions does the equation 30(5x − 3) = −90 + 150x have?",
-    imageUrl: "/questions/sat-math-25e1cfed.jpg",
+    imageUrl: "questions/sat-math-25e1cfed.jpg",
     options: [
       { letter: "A", text: "Exactly one" },
       { letter: "B", text: "Exactly two" },
@@ -475,7 +475,7 @@ export const importedSATMathQuestions2: ImageQuestion[] = [
   {
     id: "sat-fdee0fbf",
     question: "In the xy-plane, line k intersects the y-axis at a point and passes through another point. If the point (20, w) lies on line k, what is the value of w?",
-    imageUrl: "/questions/sat-math-fdee0fbf.jpg",
+    imageUrl: "questions/sat-math-fdee0fbf.jpg",
     options: [
       { letter: "A", text: "74" }
     ],
@@ -490,7 +490,7 @@ export const importedSATMathQuestions2: ImageQuestion[] = [
   {
     id: "sat-541bef2f",
     question: "Which point is a solution to the given system of inequalities: y ≤ x + 7 and y ≥ −2x − 1?",
-    imageUrl: "/questions/sat-math-541bef2f.jpg",
+    imageUrl: "questions/sat-math-541bef2f.jpg",
     options: [
       { letter: "A", text: "(−14, 0)" },
       { letter: "B", text: "(0, −14)" },
@@ -507,7 +507,7 @@ export const importedSATMathQuestions2: ImageQuestion[] = [
   {
     id: "sat-f75bd744",
     question: "In the given system of equations, t is a constant. If the system has no solution, what is the value of t?",
-    imageUrl: "/questions/sat-math-f75bd744.jpg",
+    imageUrl: "questions/sat-math-f75bd744.jpg",
     options: [
       { letter: "A", text: "8" }
     ],
@@ -522,7 +522,7 @@ export const importedSATMathQuestions2: ImageQuestion[] = [
   {
     id: "sat-d0e614a6",
     question: "Which table gives three values of x and their corresponding values of y for the given equation?",
-    imageUrl: "/questions/sat-math-d0e614a6.jpg",
+    imageUrl: "questions/sat-math-d0e614a6.jpg",
     options: [
       { letter: "A", text: "See image" },
       { letter: "B", text: "See image" },
@@ -539,7 +539,7 @@ export const importedSATMathQuestions2: ImageQuestion[] = [
   {
     id: "sat-b3abf40f",
     question: "The function F gives the temperature in degrees Fahrenheit for a temperature of x kelvins. If a temperature increased by 9.10 kelvins, by how much did the temperature increase in degrees Fahrenheit?",
-    imageUrl: "/questions/sat-math-b3abf40f.jpg",
+    imageUrl: "questions/sat-math-b3abf40f.jpg",
     options: [
       { letter: "A", text: "16.38" },
       { letter: "B", text: "See image" },
@@ -556,7 +556,7 @@ export const importedSATMathQuestions2: ImageQuestion[] = [
   {
     id: "sat-e6cb2402",
     question: "In the given equation 3(kx + 13) = 48x + 36, k is a constant. The equation has no solution. What is the value of k?",
-    imageUrl: "/questions/sat-math-e6cb2402.jpg",
+    imageUrl: "questions/sat-math-e6cb2402.jpg",
     options: [
       { letter: "A", text: "16/17 or 0.9411" }
     ],
@@ -571,7 +571,7 @@ export const importedSATMathQuestions2: ImageQuestion[] = [
   {
     id: "sat-415ab1d2",
     question: "The graph of the linear function y = f(x) + 19 is shown. If c and d are positive constants, which equation could define f?",
-    imageUrl: "/questions/sat-math-415ab1d2.jpg",
+    imageUrl: "questions/sat-math-415ab1d2.jpg",
     options: [
       { letter: "A", text: "f(x) = −d − cx" },
       { letter: "B", text: "See image" },
@@ -588,7 +588,7 @@ export const importedSATMathQuestions2: ImageQuestion[] = [
   {
     id: "sat-6c71f3ec",
     question: "A salesperson's total earnings consist of a base salary of x dollars per year, plus commission of 11% of total sales. The salesperson's goal is for total earnings to be at least 3 times and at most 4 times the base salary. Which inequality represents all possible values of total sales s?",
-    imageUrl: "/questions/sat-math-6c71f3ec.jpg",
+    imageUrl: "questions/sat-math-6c71f3ec.jpg",
     options: [
       { letter: "A", text: "See image" },
       { letter: "B", text: "(2x/0.11) ≤ s ≤ (3x/0.11)" },
@@ -605,7 +605,7 @@ export const importedSATMathQuestions2: ImageQuestion[] = [
   {
     id: "sat-e9908930",
     question: "For the linear function f, the table shows three values of x and their corresponding values of f(x). If h(x) = f(x) − 13, which equation defines h?",
-    imageUrl: "/questions/sat-math-e9908930.jpg",
+    imageUrl: "questions/sat-math-e9908930.jpg",
     options: [
       { letter: "A", text: "See image" },
       { letter: "B", text: "h(x) = (5/4)x + 7" },
@@ -622,7 +622,7 @@ export const importedSATMathQuestions2: ImageQuestion[] = [
   {
     id: "sat-830120b0",
     question: "Which of the following consists of the y-coordinates of all points that satisfy the system of inequalities above?",
-    imageUrl: "/questions/sat-math-830120b0.jpg",
+    imageUrl: "questions/sat-math-830120b0.jpg",
     options: [
       { letter: "A", text: "See image" },
       { letter: "B", text: "y ≥ 6" },
@@ -639,7 +639,7 @@ export const importedSATMathQuestions2: ImageQuestion[] = [
   {
     id: "sat-0ca00003",
     question: "Ken earned $8 per hour for the first 10 hours he worked this week. His salary was then raised to $10 per hour. Ken saves 90% of his earnings. What is the least number of hours he must work the rest of the week to save at least $270 for the week?",
-    imageUrl: "/questions/sat-math-0ca00003.jpg",
+    imageUrl: "questions/sat-math-0ca00003.jpg",
     options: [
       { letter: "A", text: "38" },
       { letter: "B", text: "33" },
@@ -656,7 +656,7 @@ export const importedSATMathQuestions2: ImageQuestion[] = [
   {
     id: "sat-68c5c81a",
     question: "Anthony will spend at most $115 to purchase x small cheese pizzas and y large cheese pizzas. The inequality 11x + 14y ≤ 115 represents this situation. Which is the best interpretation of 14y in this context?",
-    imageUrl: "/questions/sat-math-68c5c81a.jpg",
+    imageUrl: "questions/sat-math-68c5c81a.jpg",
     options: [
       { letter: "A", text: "The amount Anthony will spend on each large cheese pizza" },
       { letter: "B", text: "The amount Anthony will spend on each small cheese pizza" },
@@ -673,7 +673,7 @@ export const importedSATMathQuestions2: ImageQuestion[] = [
   {
     id: "sat-78391fcc",
     question: "The table shows some values of x and their corresponding values for the linear function f. What is the x-intercept of the graph of f in the xy-plane?",
-    imageUrl: "/questions/sat-math-78391fcc.jpg",
+    imageUrl: "questions/sat-math-78391fcc.jpg",
     options: [
       { letter: "A", text: "See image" },
       { letter: "B", text: "(7, 0)" },

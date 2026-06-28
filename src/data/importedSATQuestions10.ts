@@ -20,7 +20,7 @@ export const importedSATMathQuestions10: ImageQuestion[] = [
     difficulty: "Hard",
     domain: "Problem-Solving and Data Analysis",
     skill: "Probability and conditional probability",
-    imageUrl: "/questions/sat-math-5dc386fb.jpg",
+    imageUrl: "questions/sat-math-5dc386fb.jpg",
     difficultyRating: 8
   },
   {
@@ -37,7 +37,7 @@ export const importedSATMathQuestions10: ImageQuestion[] = [
     difficulty: "Hard",
     domain: "Problem-Solving and Data Analysis",
     skill: "Percentages",
-    imageUrl: "/questions/sat-math-86684ce9.jpg",
+    imageUrl: "questions/sat-math-86684ce9.jpg",
     difficultyRating: 8
   },
   {
@@ -54,7 +54,7 @@ export const importedSATMathQuestions10: ImageQuestion[] = [
     difficulty: "Hard",
     domain: "Problem-Solving and Data Analysis",
     skill: "Probability and conditional probability",
-    imageUrl: "/questions/sat-math-014c47ab.jpg",
+    imageUrl: "questions/sat-math-014c47ab.jpg",
     difficultyRating: 8
   },
   {
@@ -71,7 +71,7 @@ export const importedSATMathQuestions10: ImageQuestion[] = [
     difficulty: "Hard",
     domain: "Problem-Solving and Data Analysis",
     skill: "One-variable data: Distributions and measures of center and spread",
-    imageUrl: "/questions/sat-math-98958ae8.jpg",
+    imageUrl: "questions/sat-math-98958ae8.jpg",
     difficultyRating: 8
   },
   {
@@ -88,7 +88,7 @@ export const importedSATMathQuestions10: ImageQuestion[] = [
     difficulty: "Hard",
     domain: "Problem-Solving and Data Analysis",
     skill: "One-variable data: Distributions and measures of center and spread",
-    imageUrl: "/questions/sat-math-391ae4b2.jpg",
+    imageUrl: "questions/sat-math-391ae4b2.jpg",
     difficultyRating: 9
   },
   {
@@ -105,7 +105,7 @@ export const importedSATMathQuestions10: ImageQuestion[] = [
     difficulty: "Hard",
     domain: "Problem-Solving and Data Analysis",
     skill: "One-variable data: Distributions and measures of center and spread",
-    imageUrl: "/questions/sat-math-2a59eb45.jpg",
+    imageUrl: "questions/sat-math-2a59eb45.jpg",
     difficultyRating: 8
   },
   {
@@ -122,7 +122,7 @@ export const importedSATMathQuestions10: ImageQuestion[] = [
     difficulty: "Hard",
     domain: "Problem-Solving and Data Analysis",
     skill: "Percentages",
-    imageUrl: "/questions/sat-math-623dbebb.jpg",
+    imageUrl: "questions/sat-math-623dbebb.jpg",
     difficultyRating: 8
   },
   {
@@ -139,7 +139,7 @@ export const importedSATMathQuestions10: ImageQuestion[] = [
     difficulty: "Hard",
     domain: "Problem-Solving and Data Analysis",
     skill: "Percentages",
-    imageUrl: "/questions/sat-math-2afd3cec.jpg",
+    imageUrl: "questions/sat-math-2afd3cec.jpg",
     difficultyRating: 7
   },
   {
@@ -156,7 +156,7 @@ export const importedSATMathQuestions10: ImageQuestion[] = [
     difficulty: "Hard",
     domain: "Problem-Solving and Data Analysis",
     skill: "Percentages",
-    imageUrl: "/questions/sat-math-2e92cc21.jpg",
+    imageUrl: "questions/sat-math-2e92cc21.jpg",
     difficultyRating: 8
   },
   {
@@ -173,7 +173,7 @@ export const importedSATMathQuestions10: ImageQuestion[] = [
     difficulty: "Hard",
     domain: "Problem-Solving and Data Analysis",
     skill: "Evaluating statistical claims: Observational studies and experiments",
-    imageUrl: "/questions/sat-math-4a422e3e.jpg",
+    imageUrl: "questions/sat-math-4a422e3e.jpg",
     difficultyRating: 7
   },
   {
@@ -190,7 +190,7 @@ export const importedSATMathQuestions10: ImageQuestion[] = [
     difficulty: "Hard",
     domain: "Problem-Solving and Data Analysis",
     skill: "Percentages",
-    imageUrl: "/questions/sat-math-ba0e23b0.jpg",
+    imageUrl: "questions/sat-math-ba0e23b0.jpg",
     difficultyRating: 7
   },
   {
@@ -207,7 +207,7 @@ export const importedSATMathQuestions10: ImageQuestion[] = [
     difficulty: "Hard",
     domain: "Problem-Solving and Data Analysis",
     skill: "Ratios, rates, proportional relationships, and units",
-    imageUrl: "/questions/sat-math-c2e7fa6d.jpg",
+    imageUrl: "questions/sat-math-c2e7fa6d.jpg",
     difficultyRating: 9
   },
   {
@@ -224,7 +224,7 @@ export const importedSATMathQuestions10: ImageQuestion[] = [
     difficulty: "Hard",
     domain: "Problem-Solving and Data Analysis",
     skill: "Two-variable data: Models and scatterplots",
-    imageUrl: "/questions/sat-math-e821a26d.jpg",
+    imageUrl: "questions/sat-math-e821a26d.jpg",
     difficultyRating: 8
   },
   {
@@ -241,7 +241,7 @@ export const importedSATMathQuestions10: ImageQuestion[] = [
     difficulty: "Hard",
     domain: "Problem-Solving and Data Analysis",
     skill: "Inference from sample statistics and margin of error",
-    imageUrl: "/questions/sat-math-9ba3e283.jpg",
+    imageUrl: "questions/sat-math-9ba3e283.jpg",
     difficultyRating: 8
   },
   {
@@ -258,7 +258,7 @@ export const importedSATMathQuestions10: ImageQuestion[] = [
     difficulty: "Hard",
     domain: "Problem-Solving and Data Analysis",
     skill: "Percentages",
-    imageUrl: "/questions/sat-math-54cb53cf.jpg",
+    imageUrl: "questions/sat-math-54cb53cf.jpg",
     difficultyRating: 8
   },
   {
@@ -275,7 +275,7 @@ export const importedSATMathQuestions10: ImageQuestion[] = [
     difficulty: "Hard",
     domain: "Problem-Solving and Data Analysis",
     skill: "Probability and conditional probability",
-    imageUrl: "/questions/sat-math-89f20d9e.jpg",
+    imageUrl: "questions/sat-math-89f20d9e.jpg",
     difficultyRating: 8
   },
   {
@@ -292,7 +292,7 @@ export const importedSATMathQuestions10: ImageQuestion[] = [
     difficulty: "Hard",
     domain: "Problem-Solving and Data Analysis",
     skill: "Percentages",
-    imageUrl: "/questions/sat-math-3d73a58b.jpg",
+    imageUrl: "questions/sat-math-3d73a58b.jpg",
     difficultyRating: 7
   },
   {
@@ -309,7 +309,7 @@ export const importedSATMathQuestions10: ImageQuestion[] = [
     difficulty: "Hard",
     domain: "Problem-Solving and Data Analysis",
     skill: "Two-variable data: Models and scatterplots",
-    imageUrl: "/questions/sat-math-79137c1b.jpg",
+    imageUrl: "questions/sat-math-79137c1b.jpg",
     difficultyRating: 8
   },
   {
@@ -326,7 +326,7 @@ export const importedSATMathQuestions10: ImageQuestion[] = [
     difficulty: "Hard",
     domain: "Problem-Solving and Data Analysis",
     skill: "Ratios, rates, proportional relationships, and units",
-    imageUrl: "/questions/sat-math-7d093333.jpg",
+    imageUrl: "questions/sat-math-7d093333.jpg",
     difficultyRating: 9
   },
   {
@@ -343,7 +343,7 @@ export const importedSATMathQuestions10: ImageQuestion[] = [
     difficulty: "Hard",
     domain: "Problem-Solving and Data Analysis",
     skill: "Percentages",
-    imageUrl: "/questions/sat-math-a0b165f8.jpg",
+    imageUrl: "questions/sat-math-a0b165f8.jpg",
     difficultyRating: 7
   },
   {
@@ -360,7 +360,7 @@ export const importedSATMathQuestions10: ImageQuestion[] = [
     difficulty: "Hard",
     domain: "Problem-Solving and Data Analysis",
     skill: "One-variable data: Distributions and measures of center and spread",
-    imageUrl: "/questions/sat-math-54d93874.jpg",
+    imageUrl: "questions/sat-math-54d93874.jpg",
     difficultyRating: 7
   },
   {
@@ -377,7 +377,7 @@ export const importedSATMathQuestions10: ImageQuestion[] = [
     difficulty: "Hard",
     domain: "Problem-Solving and Data Analysis",
     skill: "Percentages",
-    imageUrl: "/questions/sat-math-34f8cd89.jpg",
+    imageUrl: "questions/sat-math-34f8cd89.jpg",
     difficultyRating: 9
   },
   {
@@ -394,7 +394,7 @@ export const importedSATMathQuestions10: ImageQuestion[] = [
     difficulty: "Hard",
     domain: "Problem-Solving and Data Analysis",
     skill: "Evaluating statistical claims: Observational studies and experiments",
-    imageUrl: "/questions/sat-math-6fca0144.jpg",
+    imageUrl: "questions/sat-math-6fca0144.jpg",
     difficultyRating: 7
   },
   {
@@ -411,7 +411,7 @@ export const importedSATMathQuestions10: ImageQuestion[] = [
     difficulty: "Hard",
     domain: "Problem-Solving and Data Analysis",
     skill: "Ratios, rates, proportional relationships, and units",
-    imageUrl: "/questions/sat-math-20b69297.jpg",
+    imageUrl: "questions/sat-math-20b69297.jpg",
     difficultyRating: 6
   },
   {
@@ -428,7 +428,7 @@ export const importedSATMathQuestions10: ImageQuestion[] = [
     difficulty: "Hard",
     domain: "Problem-Solving and Data Analysis",
     skill: "One-variable data: Distributions and measures of center and spread",
-    imageUrl: "/questions/sat-math-94237701.jpg",
+    imageUrl: "questions/sat-math-94237701.jpg",
     difficultyRating: 7
   },
   {
@@ -445,7 +445,7 @@ export const importedSATMathQuestions10: ImageQuestion[] = [
     difficulty: "Hard",
     domain: "Geometry and Trigonometry",
     skill: "Circles",
-    imageUrl: "/questions/sat-math-9e44284b.jpg",
+    imageUrl: "questions/sat-math-9e44284b.jpg",
     difficultyRating: 8
   },
   {
@@ -462,7 +462,7 @@ export const importedSATMathQuestions10: ImageQuestion[] = [
     difficulty: "Hard",
     domain: "Geometry and Trigonometry",
     skill: "Circles and geometry",
-    imageUrl: "/questions/sat-math-44b2b894.jpg",
+    imageUrl: "questions/sat-math-44b2b894.jpg",
     difficultyRating: 9
   },
   {
@@ -479,7 +479,7 @@ export const importedSATMathQuestions10: ImageQuestion[] = [
     difficulty: "Hard",
     domain: "Geometry and Trigonometry",
     skill: "Area and volume",
-    imageUrl: "/questions/sat-math-8c1aa743.jpg",
+    imageUrl: "questions/sat-math-8c1aa743.jpg",
     difficultyRating: 7
   },
   {
@@ -496,7 +496,7 @@ export const importedSATMathQuestions10: ImageQuestion[] = [
     difficulty: "Hard",
     domain: "Geometry and Trigonometry",
     skill: "Area and volume",
-    imageUrl: "/questions/sat-math-a07ed090.jpg",
+    imageUrl: "questions/sat-math-a07ed090.jpg",
     difficultyRating: 8
   },
   {
@@ -513,7 +513,7 @@ export const importedSATMathQuestions10: ImageQuestion[] = [
     difficulty: "Hard",
     domain: "Geometry and Trigonometry",
     skill: "Lines, angles, and triangles",
-    imageUrl: "/questions/sat-math-2d2cb85e.jpg",
+    imageUrl: "questions/sat-math-2d2cb85e.jpg",
     difficultyRating: 9
   },
   {
@@ -530,7 +530,7 @@ export const importedSATMathQuestions10: ImageQuestion[] = [
     difficulty: "Hard",
     domain: "Geometry and Trigonometry",
     skill: "Lines, angles, and triangles",
-    imageUrl: "/questions/sat-math-345cc36a.jpg",
+    imageUrl: "questions/sat-math-345cc36a.jpg",
     difficultyRating: 8
   },
   {
@@ -547,7 +547,7 @@ export const importedSATMathQuestions10: ImageQuestion[] = [
     difficulty: "Hard",
     domain: "Geometry and Trigonometry",
     skill: "Circles",
-    imageUrl: "/questions/sat-math-c8345903.jpg",
+    imageUrl: "questions/sat-math-c8345903.jpg",
     difficultyRating: 8
   },
   {
@@ -564,7 +564,7 @@ export const importedSATMathQuestions10: ImageQuestion[] = [
     difficulty: "Hard",
     domain: "Geometry and Trigonometry",
     skill: "Lines, angles, and triangles",
-    imageUrl: "/questions/sat-math-901c3215.jpg",
+    imageUrl: "questions/sat-math-901c3215.jpg",
     difficultyRating: 7
   }
 ];

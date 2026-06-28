@@ -88,9 +88,10 @@ const K12AdaptiveTutor = () => {
   useEffect(() => {
     if (!exam) return;
     const load = async () => {
+      const { fetchProtectedJson } = await import("@/lib/protectedAsset");
       const [qs, hintsRes] = await Promise.all([
         loadK12ExamQuestions(exam.examKeys, exam.legacyJsonFiles),
-        fetch("/data/tutor_and_hint_system.json").then((r) => r.json()).catch(() => ({ hint_templates: [] })),
+        fetchProtectedJson<any>("ai/tutor_and_hint_system.json").catch(() => ({ hint_templates: [] })),
       ]);
       setAllQuestions(qs);
       setHints(hintsRes.hint_templates || []);

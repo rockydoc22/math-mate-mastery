@@ -120,11 +120,11 @@ const StoryMissions = () => {
   const [selectedFollowup, setSelectedFollowup] = useState<string | null>(null);
 
   useEffect(() => {
-    Promise.all([
-      fetch("/data/story_missions.json").then(r => r.json()),
-      fetch("/data/tutor_and_hint_system.json").then(r => r.json()).catch(() => ({ hint_templates: [] })),
-      fetch("/data/reflection_journal_prompts.json").then(r => r.json()).catch(() => ({ reflection_prompts: [] })),
-    ]).then(([mData, hData, rData]) => {
+    import("@/lib/protectedAsset").then(({ fetchProtectedJson }) => Promise.all([
+      fetchProtectedJson<any>("ai/story_missions.json"),
+      fetchProtectedJson<any>("ai/tutor_and_hint_system.json").catch(() => ({ hint_templates: [] })),
+      fetchProtectedJson<any>("ai/reflection_journal_prompts.json").catch(() => ({ reflection_prompts: [] })),
+    ])).then(([mData, hData, rData]: any[]) => {
       setMissions(mData.story_missions || []);
       setHintTemplates(hData.hint_templates || []);
       setReflectionPrompts(rData.reflection_prompts || []);
