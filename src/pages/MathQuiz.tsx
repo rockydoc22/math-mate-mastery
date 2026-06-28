@@ -15,8 +15,22 @@ import { DesmosCalculator } from "@/components/DesmosCalculator";
 import { useProgressiveHints } from "@/hooks/useProgressiveHints";
 import { ProgressiveHintPanel } from "@/components/ProgressiveHintPanel";
 import { SEO } from "@/components/SEO";
+import { useExamType } from "@/hooks/useExamType";
+import { EXAM_CONFIGS } from "@/utils/examConfig";
+import { useSearchParams } from "react-router-dom";
 
 const MathQuiz = () => {
+  const [searchParams] = useSearchParams();
+  const { examType } = useExamType();
+  const examParam = (searchParams.get("exam") || "").toLowerCase();
+  const overrideLabels: Record<string, string> = {
+    ged: "GED", hiset: "HiSET", ap: "AP", act: "ACT", psat: "PSAT", sat: "SAT",
+    gre: "GRE", gmat: "GMAT", lsat: "LSAT", mcat: "MCAT", teas: "TEAS",
+  };
+  const examLabel =
+    overrideLabels[examParam] ||
+    EXAM_CONFIGS[examType as keyof typeof EXAM_CONFIGS]?.shortName ||
+    "SAT";
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [selectedAnswer, setSelectedAnswer] = useState<string | null>(null);
   const [showResult, setShowResult] = useState(false);
