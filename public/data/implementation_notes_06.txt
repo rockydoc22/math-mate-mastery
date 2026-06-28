@@ -1,7 +1,0 @@
-Use this pack only as UI/config/product-layer metadata.
-
-Recommended handling:
-- Reuse existing question bank, mastery, momentum, streak, exam simulator, and gamification data sources.
-- Treat quick duel as optional and lightweight.
-- Prefer merge/extend over rebuild.
-- No duplicate question creation.
