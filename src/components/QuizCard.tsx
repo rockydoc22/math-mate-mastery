@@ -86,9 +86,9 @@ export const QuizCard = ({ question: rawQuestion, selectedAnswer, onSelectAnswer
           {/* Render question image if present */}
           {imageQuestion.imageUrl && (
             <div className="rounded-lg overflow-hidden border">
-              <img 
-                src={imageQuestion.imageUrl} 
-                alt="Question visual" 
+              <ProtectedImage
+                src={imageQuestion.imageUrl}
+                alt="Question visual"
                 className="w-full h-auto"
               />
             </div>
