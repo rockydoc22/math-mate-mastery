@@ -15,8 +15,22 @@ import { DesmosCalculator } from "@/components/DesmosCalculator";
 import { useProgressiveHints } from "@/hooks/useProgressiveHints";
 import { ProgressiveHintPanel } from "@/components/ProgressiveHintPanel";
 import { SEO } from "@/components/SEO";
+import { useExamType } from "@/hooks/useExamType";
+import { EXAM_CONFIGS } from "@/utils/examConfig";
+import { useSearchParams } from "react-router-dom";
 
 const MathQuiz = () => {
+  const [searchParams] = useSearchParams();
+  const { examType } = useExamType();
+  const examParam = (searchParams.get("exam") || "").toLowerCase();
+  const overrideLabels: Record<string, string> = {
+    ged: "GED", hiset: "HiSET", ap: "AP", act: "ACT", psat: "PSAT", sat: "SAT",
+    gre: "GRE", gmat: "GMAT", lsat: "LSAT", mcat: "MCAT", teas: "TEAS",
+  };
+  const examLabel =
+    overrideLabels[examParam] ||
+    EXAM_CONFIGS[examType as keyof typeof EXAM_CONFIGS]?.shortName ||
+    "SAT";
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [selectedAnswer, setSelectedAnswer] = useState<string | null>(null);
   const [showResult, setShowResult] = useState(false);
@@ -124,8 +138,8 @@ const MathQuiz = () => {
   return (
     <ScreenShakeWrapper shake={screenShake} intensity={getComboIntensity(combo.count) === "ultra" ? "high" : getComboIntensity(combo.count) === "high" ? "medium" : "low"}>
       <SEO
-        title="Free SAT Math Practice Questions"
-        description="Sharpen your SAT Math skills with adaptive practice questions, instant explanations, and a built-in graphing calculator."
+        title={`Free ${examLabel} Math Practice Questions`}
+        description={`Sharpen your ${examLabel} Math skills with adaptive practice questions, instant explanations, and a built-in graphing calculator.`}
         path="/math"
       />
       <div className="min-h-screen bg-gradient-to-br from-primary/5 via-secondary/5 to-accent/5 p-4 py-8 pb-28 sm:pb-8">
@@ -137,7 +151,7 @@ const MathQuiz = () => {
                 Back
               </Button>
             </Link>
-            <h1 className="text-2xl font-bold text-primary">SAT Math Practice</h1>
+            <h1 className="text-2xl font-bold text-primary">{examLabel} Math Practice</h1>
             {/* Combo Display */}
             <div className="ml-auto">
               <ComboDisplay 
