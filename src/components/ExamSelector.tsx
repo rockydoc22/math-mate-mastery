@@ -173,7 +173,7 @@ export const ExamSelector = ({ onSelect, isModal = false }: ExamSelectorProps) =
             </div>
           </Card>
 
-          {/* IQ & Personality */}
+          {/* Cognitive & Personality */}
           <Card
             className="p-5 cursor-pointer border-2 transition-all hover:scale-[1.01] hover:shadow-lg hover:border-primary/50"
             onClick={() => navigate("/iq-personality")}
@@ -181,10 +181,10 @@ export const ExamSelector = ({ onSelect, isModal = false }: ExamSelectorProps) =
             <div className="flex flex-col items-center text-center gap-2">
               <span className="text-3xl">🧠</span>
               <div className="flex items-center gap-1">
-                <h3 className="font-bold text-lg">IQ & Personality Tests</h3>
+                <h3 className="font-bold text-lg">Cognitive Skills & Personality</h3>
                 <span className="text-[10px] px-1.5 py-0.5 rounded-full bg-primary/10 text-primary font-medium">NEW</span>
               </div>
-              <p className="text-xs text-muted-foreground">Big Five, MBTI, DISC, Enneagram, IQ & more</p>
+              <p className="text-xs text-muted-foreground">Big Five, MBTI, DISC, Enneagram, cognitive practice & more</p>
             </div>
           </Card>
         </div>

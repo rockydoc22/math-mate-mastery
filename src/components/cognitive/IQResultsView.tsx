@@ -98,7 +98,7 @@ export const IQResultsView = ({ answers, totalQuestions, totalTime, ageRange, it
       {/* IQ Score Card */}
       <Card className="p-6 text-center">
         <Brain className="w-14 h-14 text-primary mx-auto mb-3" />
-        <p className="text-sm text-muted-foreground mb-1">Estimated IQ Score</p>
+        <p className="text-sm text-muted-foreground mb-1">Cognitive Skills Score</p>
         <h2 className={`text-5xl font-black ${band.color}`}>{iq}</h2>
         <p className={`text-lg font-bold mt-1 ${band.color}`}>{band.label}</p>
         <p className="text-sm text-muted-foreground mt-2 max-w-xs mx-auto">{band.description}</p>
@@ -114,8 +114,8 @@ export const IQResultsView = ({ answers, totalQuestions, totalTime, ageRange, it
 
       {/* Disclaimer */}
       <p className="text-xs text-muted-foreground text-center px-4">
-        ⚠️ This is a non-clinical educational estimate. It is not a replacement for a 
-        professionally administered IQ test. Use it as a fun benchmark for cognitive practice.
+        ⚠️ This is a non-clinical educational estimate for cognitive practice — not a
+        replacement for a professionally administered cognitive assessment.
       </p>
 
       {/* Domain Breakdown */}
