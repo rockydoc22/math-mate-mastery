@@ -591,6 +591,69 @@ export type Database = {
         }
         Relationships: []
       }
+      content_repair_jobs: {
+        Row: {
+          batches_run: number
+          completed_at: string | null
+          created_at: string
+          failures: number
+          fix_number: number
+          id: string
+          job_type: string
+          label: string
+          last_error: string | null
+          priority: number
+          processed_count: number
+          section: string
+          source_path: string | null
+          spec: Json
+          started_at: string | null
+          status: string
+          target_count: number
+          updated_at: string
+        }
+        Insert: {
+          batches_run?: number
+          completed_at?: string | null
+          created_at?: string
+          failures?: number
+          fix_number: number
+          id?: string
+          job_type: string
+          label: string
+          last_error?: string | null
+          priority?: number
+          processed_count?: number
+          section: string
+          source_path?: string | null
+          spec?: Json
+          started_at?: string | null
+          status?: string
+          target_count?: number
+          updated_at?: string
+        }
+        Update: {
+          batches_run?: number
+          completed_at?: string | null
+          created_at?: string
+          failures?: number
+          fix_number?: number
+          id?: string
+          job_type?: string
+          label?: string
+          last_error?: string | null
+          priority?: number
+          processed_count?: number
+          section?: string
+          source_path?: string | null
+          spec?: Json
+          started_at?: string | null
+          status?: string
+          target_count?: number
+          updated_at?: string
+        }
+        Relationships: []
+      }
       daily_challenges: {
         Row: {
           bonus_xp: number
@@ -1147,6 +1210,50 @@ export type Database = {
             columns: ["kid_profile_id"]
             isOneToOne: false
             referencedRelation: "kid_profiles"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
+      question_explanation_overrides: {
+        Row: {
+          created_at: string
+          difficulty: number | null
+          explanation: string | null
+          id: string
+          patch: Json | null
+          question_id: string
+          source_file: string
+          source_job_id: string | null
+          updated_at: string
+        }
+        Insert: {
+          created_at?: string
+          difficulty?: number | null
+          explanation?: string | null
+          id?: string
+          patch?: Json | null
+          question_id: string
+          source_file: string
+          source_job_id?: string | null
+          updated_at?: string
+        }
+        Update: {
+          created_at?: string
+          difficulty?: number | null
+          explanation?: string | null
+          id?: string
+          patch?: Json | null
+          question_id?: string
+          source_file?: string
+          source_job_id?: string | null
+          updated_at?: string
+        }
+        Relationships: [
+          {
+            foreignKeyName: "question_explanation_overrides_source_job_id_fkey"
+            columns: ["source_job_id"]
+            isOneToOne: false
+            referencedRelation: "content_repair_jobs"
             referencedColumns: ["id"]
           },
         ]
