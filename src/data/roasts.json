@@ -3,116 +3,259 @@
   "description": "Funny, slightly mocking motivational messages based on performance",
   "score_ranges": {
     "0-30": {
-      "title": "Did You Even Try? \ud83e\udd26",
+      "title": "Did You Even Try? 🤦",
       "messages": [
-        "Are you allergic to correct answers? Because you're avoiding them like they're contagious.",
-        "I've seen Magic 8-Balls with better accuracy. At least they get it right sometimes.",
-        "Plot twist: The questions were in English. Did anyone tell you?",
-        "Your score is so low, it's practically underground. Should we send a search party?",
-        "Even a broken clock is right twice a day. You might want to aim for that.",
-        "Fun fact: Random guessing should get you 25% correct. You're... impressively below that.",
-        "The good news: You can only go up from here! The bad news: Everything else."
+        {
+          "text": "Are you allergic to correct answers? Because you're avoiding them like they're contagious."
+        },
+        {
+          "text": "I've seen Magic 8-Balls with better accuracy. At least they get it right sometimes."
+        },
+        {
+          "text": "Plot twist: The questions were in English. Did anyone tell you?"
+        },
+        {
+          "text": "Your score is so low, it's practically underground. Should we send a search party?"
+        },
+        {
+          "text": "Even a broken clock is right twice a day. You might want to aim for that."
+        },
+        {
+          "text": "Fun fact: Random guessing should get you 25% correct. You're... impressively below that."
+        },
+        {
+          "text": "The good news: You can only go up from here! The bad news: Everything else."
+        }
       ]
     },
     "31-50": {
-      "title": "Coin Flip Territory \ud83e\ude99",
+      "title": "Coin Flip Territory 🪙",
       "messages": [
-        "You know what? A coin flip would literally do better. At least coins are consistent.",
-        "Your answers are giving 'eenie meenie miney moe' energy.",
-        "I'm starting to think you're doing this wrong on purpose. It's actually impressive.",
-        "At this rate, you'll get into college... as a cautionary tale in their admissions training.",
-        "Good news: You beat random guessing! Bad news: Not by much.",
-        "Your strategy seems to be 'choose the answer that FEELS right.' How's that working out?",
-        "Fun idea: Try picking the OPPOSITE of what you think. Can't hurt at this point."
+        {
+          "text": "You know what? A coin flip would literally do better. At least coins are consistent."
+        },
+        {
+          "text": "Your answers are giving 'eenie meenie miney moe' energy."
+        },
+        {
+          "text": "I'm starting to think you're doing this wrong on purpose. It's actually impressive."
+        },
+        {
+          "text": "At this rate, you'll get into college... as a cautionary tale in their admissions training."
+        },
+        {
+          "text": "Good news: You beat random guessing! Bad news: Not by much."
+        },
+        {
+          "text": "Your strategy seems to be 'choose the answer that FEELS right.' How's that working out?"
+        },
+        {
+          "text": "Fun idea: Try picking the OPPOSITE of what you think. Can't hurt at this point."
+        }
       ]
     },
     "51-69": {
-      "title": "Vocational School Applications Available \ud83d\udd27",
+      "title": "Vocational School Applications Available 🔧",
       "messages": [
-        "Would you like me to pull up some vocational school applications? Just kidding... kind of.",
-        "You're in the danger zone - not quite failing, but definitely not passing the vibe check.",
-        "The SAT Gods are sending you a message. That message is: 'Try harder.'",
-        "You're so close to average that average is ghosting you.",
-        "Community college is looking pretty good right about now, huh?",
-        "At this rate, your college essay is going to be: 'Dear Admissions, Let me explain...'",
-        "You know what rhymes with your score? Door. As in, the exit door.",
-        "Your performance is giving 'I'll just retake it in the fall' energy."
+        {
+          "text": "Would you like me to pull up some vocational school applications? Just kidding... kind of.",
+          "context": [
+            "consumer_only"
+          ]
+        },
+        {
+          "text": "You're in the danger zone - not quite failing, but definitely not passing the vibe check."
+        },
+        {
+          "text": "The SAT Gods are sending you a message. That message is: 'Try harder.'"
+        },
+        {
+          "text": "You're so close to average that average is ghosting you."
+        },
+        {
+          "text": "Community college is looking pretty good right about now, huh?",
+          "context": [
+            "consumer_only"
+          ]
+        },
+        {
+          "text": "At this rate, your college essay is going to be: 'Dear Admissions, Let me explain...'"
+        },
+        {
+          "text": "You know what rhymes with your score? Door. As in, the exit door."
+        },
+        {
+          "text": "Your performance is giving 'I'll just retake it in the fall' energy."
+        }
       ]
     },
     "70-79": {
-      "title": "Mediocre and Proud? \ud83d\udcca",
+      "title": "Mediocre and Proud? 📊",
       "messages": [
-        "Congrats! You've achieved... adequacy. Your parents are thrilled. (They're not.)",
-        "You're the participation trophy of SAT scores.",
-        "70%? That's a C. But hey, C's get degrees! ...At *some* colleges.",
-        "You're not great, but you're not terrible. You're like the middle seat on an airplane.",
-        "State school? State school.",
-        "You're like a pizza that's okay but not great. Nobody's excited, but it'll do.",
-        "Your score says 'I studied... the night before.'",
-        "Solid 7/10. Perfect score for someone who wants a solid 7/10 life."
+        {
+          "text": "Congrats! You've achieved... adequacy. Your parents are thrilled. (They're not.)"
+        },
+        {
+          "text": "You're the participation trophy of SAT scores."
+        },
+        {
+          "text": "70%? That's a C. But hey, C's get degrees! ...At *some* colleges."
+        },
+        {
+          "text": "You're not great, but you're not terrible. You're like the middle seat on an airplane."
+        },
+        {
+          "text": "State school? State school."
+        },
+        {
+          "text": "You're like a pizza that's okay but not great. Nobody's excited, but it'll do."
+        },
+        {
+          "text": "Your score says 'I studied... the night before.'"
+        },
+        {
+          "text": "Solid 7/10. Perfect score for someone who wants a solid 7/10 life."
+        }
       ]
     },
     "80-89": {
-      "title": "Almost There... But Not Quite \ud83c\udfaf",
+      "title": "Almost There... But Not Quite 🎯",
       "messages": [
-        "So close! And yet, so far. Story of your life?",
-        "You're like the person who loses by ONE point on a game show. Painful.",
-        "B+ energy. Good, but your Asian parents are still disappointed.",
-        "You can see the finish line! Too bad you stopped for a snack break.",
-        "At this rate, you'll get into your safety school! Isn't that... nice?",
-        "You're good, but are you '800 on the SAT' good? Survey says: Not yet.",
-        "Your score is the equivalent of 'we need to talk.' It's fine, but IS it?",
-        "Alumni interviewer: 'So, what makes you special?' You: 'Well...'",
-        "You're THIS close to greatness. Unfortunately, 'this close' doesn't count."
+        {
+          "text": "So close! And yet, so far. Story of your life?"
+        },
+        {
+          "text": "You're like the person who loses by ONE point on a game show. Painful."
+        },
+        {
+          "text": "B+ energy. Good, but your Asian parents are still disappointed.",
+          "context": [
+            "consumer_only"
+          ]
+        },
+        {
+          "text": "You can see the finish line! Too bad you stopped for a snack break."
+        },
+        {
+          "text": "At this rate, you'll get into your safety school! Isn't that... nice?"
+        },
+        {
+          "text": "You're good, but are you '800 on the SAT' good? Survey says: Not yet."
+        },
+        {
+          "text": "Your score is the equivalent of 'we need to talk.' It's fine, but IS it?"
+        },
+        {
+          "text": "Alumni interviewer: 'So, what makes you special?' You: 'Well...'"
+        },
+        {
+          "text": "You're THIS close to greatness. Unfortunately, 'this close' doesn't count."
+        }
       ]
     },
     "90-94": {
-      "title": "Impressive... For Most People \ud83c\udf1f",
+      "title": "Impressive... For Most People 🌟",
       "messages": [
-        "Wow! You're in the 90s! Too bad you're aiming for the high 90s.",
-        "You're like the straight-A student who got one A-. Devastating.",
-        "Great score! ...If you were applying to less competitive schools.",
-        "You're knocking on excellence's door. Unfortunately, excellence isn't home.",
-        "Ivy League schools: 'It's not you, it's... actually, yeah, it's you.'",
-        "Your score is good. Great, even! But you want PERFECT, remember?",
-        "So close to perfection that perfection is starting to feel awkward.",
-        "You're the understudy to greatness. One day, maybe you'll be the star.",
-        "Stanford: 'We'll... keep your application on file.' (They won't.)"
+        {
+          "text": "Wow! You're in the 90s! Too bad you're aiming for the high 90s."
+        },
+        {
+          "text": "You're like the straight-A student who got one A-. Devastating."
+        },
+        {
+          "text": "Great score! ...If you were applying to less competitive schools."
+        },
+        {
+          "text": "You're knocking on excellence's door. Unfortunately, excellence isn't home."
+        },
+        {
+          "text": "Ivy League schools: 'It's not you, it's... actually, yeah, it's you.'"
+        },
+        {
+          "text": "Your score is good. Great, even! But you want PERFECT, remember?"
+        },
+        {
+          "text": "So close to perfection that perfection is starting to feel awkward."
+        },
+        {
+          "text": "You're the understudy to greatness. One day, maybe you'll be the star."
+        },
+        {
+          "text": "Stanford: 'We'll... keep your application on file.' (They won't.)"
+        }
       ]
     },
     "95-99": {
-      "title": "Painfully Close to Perfect \ud83d\udc8e",
+      "title": "Painfully Close to Perfect 💎",
       "messages": [
-        "ONE POINT AWAY. That's gotta sting.",
-        "You're like the Olympic athlete with the silver medal. Great! But also... ouch.",
-        "So you're telling me you studied THIS HARD and STILL missed some?",
-        "You know what's worse than failing? Being ONE question away from perfect.",
-        "The SAT Gods looked at your test and said 'Lol no, not today.'",
-        "At this point, the wrong answers are personal attacks.",
-        "You were SO CLOSE to flexing a perfect score. Instead, you're just... really good.",
-        "That one question you missed? It's going to haunt you forever.",
-        "MIT: 'Impressive! ...But did you notice our acceptance rate?'"
+        {
+          "text": "ONE POINT AWAY. That's gotta sting."
+        },
+        {
+          "text": "You're like the Olympic athlete with the silver medal. Great! But also... ouch."
+        },
+        {
+          "text": "So you're telling me you studied THIS HARD and STILL missed some?"
+        },
+        {
+          "text": "You know what's worse than failing? Being ONE question away from perfect."
+        },
+        {
+          "text": "The SAT Gods looked at your test and said 'Lol no, not today.'"
+        },
+        {
+          "text": "At this point, the wrong answers are personal attacks."
+        },
+        {
+          "text": "You were SO CLOSE to flexing a perfect score. Instead, you're just... really good."
+        },
+        {
+          "text": "That one question you missed? It's going to haunt you forever."
+        },
+        {
+          "text": "MIT: 'Impressive! ...But did you notice our acceptance rate?'"
+        }
       ]
     },
     "100": {
-      "title": "PERFECTION ACHIEVED \ud83c\udfc6",
+      "title": "PERFECTION ACHIEVED 🏆",
       "messages": [
-        "800! You did it! Now do it again to prove it wasn't a fluke.",
-        "Perfect score! Your parents are already updating their Facebook status.",
-        "Congratulations! You may now rest... after you take 47 AP classes.",
-        "FLAWLESS. Now go touch grass before you forget what sunlight looks like.",
-        "You've peaked. It's all downhill from here. Enjoy this moment.",
-        "Perfect score! Time to develop a personality!",
-        "800/800. You're the reason the curve is so harsh for everyone else. Thanks.",
-        "Amazing! Now the REAL pressure begins: Living up to this. Good luck!",
-        "You've achieved academic greatness. Your reward? More studying!",
-        "Perfection unlocked! Achievement: 'Insufferable At Parties'"
+        {
+          "text": "800! You did it! Now do it again to prove it wasn't a fluke."
+        },
+        {
+          "text": "Perfect score! Your parents are already updating their Facebook status."
+        },
+        {
+          "text": "Congratulations! You may now rest... after you take 47 AP classes."
+        },
+        {
+          "text": "FLAWLESS. Now go touch grass before you forget what sunlight looks like."
+        },
+        {
+          "text": "You've peaked. It's all downhill from here. Enjoy this moment."
+        },
+        {
+          "text": "Perfect score! Time to develop a personality!"
+        },
+        {
+          "text": "800/800. You're the reason the curve is so harsh for everyone else. Thanks."
+        },
+        {
+          "text": "Amazing! Now the REAL pressure begins: Living up to this. Good luck!"
+        },
+        {
+          "text": "You've achieved academic greatness. Your reward? More studying!"
+        },
+        {
+          "text": "Perfection unlocked! Achievement: 'Insufferable At Parties'"
+        }
       ]
     }
   },
   "special_situations": {
     "all_wrong": {
-      "title": "Statistically Impossible \ud83d\udea8",
+      "title": "Statistically Impossible 🚨",
       "messages": [
         "Getting EVERYTHING wrong is actually harder than getting everything right. Congrats?",
         "This is... this is actually impressive. In the worst way possible.",
@@ -122,7 +265,7 @@
       ]
     },
     "improved": {
-      "title": "Growth Mindset! \ud83d\udcc8",
+      "title": "Growth Mindset! 📈",
       "messages": [
         "You improved! See, you CAN learn! Who knew?",
         "Look at you, getting better! Still not great, but better!",
@@ -132,7 +275,7 @@
       ]
     },
     "declined": {
-      "title": "Going Backwards? \ud83d\udcc9",
+      "title": "Going Backwards? 📉",
       "messages": [
         "Wait, you got WORSE? That takes skill.",
         "Your score is going down like my GPA sophomore year.",
@@ -189,5 +332,9 @@
       "You finished fast! ...And answered incorrectly. Interesting strategy.",
       "What's the hurry? Hot date with disappointment?"
     ]
+  },
+  "_notes": {
+    "context_tags": "Messages tagged with context: ['consumer_only'] must be filtered out when school_mode is active.",
+    "usage": "Pass schoolMode boolean to getRoastForScore() to filter."
   }
 }
