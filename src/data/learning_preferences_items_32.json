@@ -18,8 +18,8 @@
   {
     "id": "lp_002",
     "track": "learning_preferences",
-    "domain": "fast_vs_deep",
-    "prompt": "I prefer quick rounds of practice over long deep sessions.",
+    "domain": "independent_vs_collaborative",
+    "prompt": "Discussing ideas with classmates helps me understand them better.",
     "response_scale": {
       "type": "likert_5",
       "labels": [
@@ -34,8 +34,8 @@
   {
     "id": "lp_003",
     "track": "learning_preferences",
-    "domain": "visual_vs_verbal",
-    "prompt": "Charts, maps, and visual examples help me understand faster.",
+    "domain": "independent_vs_collaborative",
+    "prompt": "I prefer working through a hard problem before asking anyone for help.",
     "response_scale": {
       "type": "likert_5",
       "labels": [
@@ -50,8 +50,8 @@
   {
     "id": "lp_004",
     "track": "learning_preferences",
-    "domain": "structured_vs_flexible",
-    "prompt": "I do better when I know the exact order of steps ahead of time.",
+    "domain": "independent_vs_collaborative",
+    "prompt": "I do my best thinking when I can talk it out with someone.",
     "response_scale": {
       "type": "likert_5",
       "labels": [
@@ -67,7 +67,7 @@
     "id": "lp_005",
     "track": "learning_preferences",
     "domain": "independent_vs_collaborative",
-    "prompt": "I learn best when I can work quietly on my own first.",
+    "prompt": "Group work usually slows me down.",
     "response_scale": {
       "type": "likert_5",
       "labels": [
@@ -82,8 +82,8 @@
   {
     "id": "lp_006",
     "track": "learning_preferences",
-    "domain": "fast_vs_deep",
-    "prompt": "I prefer quick rounds of practice over long deep sessions.",
+    "domain": "independent_vs_collaborative",
+    "prompt": "Hearing other students' wrong answers helps me find my own mistakes.",
     "response_scale": {
       "type": "likert_5",
       "labels": [
@@ -98,8 +98,8 @@
   {
     "id": "lp_007",
     "track": "learning_preferences",
-    "domain": "visual_vs_verbal",
-    "prompt": "Charts, maps, and visual examples help me understand faster.",
+    "domain": "independent_vs_collaborative",
+    "prompt": "I'd rather present a project alone than with a team.",
     "response_scale": {
       "type": "likert_5",
       "labels": [
@@ -114,8 +114,8 @@
   {
     "id": "lp_008",
     "track": "learning_preferences",
-    "domain": "structured_vs_flexible",
-    "prompt": "I do better when I know the exact order of steps ahead of time.",
+    "domain": "independent_vs_collaborative",
+    "prompt": "Study groups keep me more motivated than studying alone.",
     "response_scale": {
       "type": "likert_5",
       "labels": [
@@ -130,8 +130,8 @@
   {
     "id": "lp_009",
     "track": "learning_preferences",
-    "domain": "independent_vs_collaborative",
-    "prompt": "I learn best when I can work quietly on my own first.",
+    "domain": "fast_vs_deep",
+    "prompt": "I prefer quick rounds of practice over long deep sessions.",
     "response_scale": {
       "type": "likert_5",
       "labels": [
@@ -147,7 +147,7 @@
     "id": "lp_010",
     "track": "learning_preferences",
     "domain": "fast_vs_deep",
-    "prompt": "I prefer quick rounds of practice over long deep sessions.",
+    "prompt": "I learn more from one long focused session than from several short ones.",
     "response_scale": {
       "type": "likert_5",
       "labels": [
@@ -162,8 +162,8 @@
   {
     "id": "lp_011",
     "track": "learning_preferences",
-    "domain": "visual_vs_verbal",
-    "prompt": "Charts, maps, and visual examples help me understand faster.",
+    "domain": "fast_vs_deep",
+    "prompt": "Short daily practice fits my attention span better.",
     "response_scale": {
       "type": "likert_5",
       "labels": [
@@ -178,8 +178,8 @@
   {
     "id": "lp_012",
     "track": "learning_preferences",
-    "domain": "structured_vs_flexible",
-    "prompt": "I do better when I know the exact order of steps ahead of time.",
+    "domain": "fast_vs_deep",
+    "prompt": "I like to go deep on one topic until I really understand it.",
     "response_scale": {
       "type": "likert_5",
       "labels": [
@@ -194,8 +194,8 @@
   {
     "id": "lp_013",
     "track": "learning_preferences",
-    "domain": "independent_vs_collaborative",
-    "prompt": "I learn best when I can work quietly on my own first.",
+    "domain": "fast_vs_deep",
+    "prompt": "Repetition with quick feedback helps me memorize fast.",
     "response_scale": {
       "type": "likert_5",
       "labels": [
@@ -211,7 +211,7 @@
     "id": "lp_014",
     "track": "learning_preferences",
     "domain": "fast_vs_deep",
-    "prompt": "I prefer quick rounds of practice over long deep sessions.",
+    "prompt": "I get bored doing a lot of similar problems back to back.",
     "response_scale": {
       "type": "likert_5",
       "labels": [
@@ -225,6 +225,38 @@
   },
   {
     "id": "lp_015",
+    "track": "learning_preferences",
+    "domain": "fast_vs_deep",
+    "prompt": "I want to move on as soon as I get the idea, even before mastering it.",
+    "response_scale": {
+      "type": "likert_5",
+      "labels": [
+        "Strongly disagree",
+        "Disagree",
+        "Neutral",
+        "Agree",
+        "Strongly agree"
+      ]
+    }
+  },
+  {
+    "id": "lp_016",
+    "track": "learning_preferences",
+    "domain": "fast_vs_deep",
+    "prompt": "I prefer to fully master one skill before adding a new one.",
+    "response_scale": {
+      "type": "likert_5",
+      "labels": [
+        "Strongly disagree",
+        "Disagree",
+        "Neutral",
+        "Agree",
+        "Strongly agree"
+      ]
+    }
+  },
+  {
+    "id": "lp_017",
     "track": "learning_preferences",
     "domain": "visual_vs_verbal",
     "prompt": "Charts, maps, and visual examples help me understand faster.",
@@ -240,42 +272,10 @@
     }
   },
   {
-    "id": "lp_016",
-    "track": "learning_preferences",
-    "domain": "structured_vs_flexible",
-    "prompt": "I do better when I know the exact order of steps ahead of time.",
-    "response_scale": {
-      "type": "likert_5",
-      "labels": [
-        "Strongly disagree",
-        "Disagree",
-        "Neutral",
-        "Agree",
-        "Strongly agree"
-      ]
-    }
-  },
-  {
-    "id": "lp_017",
-    "track": "learning_preferences",
-    "domain": "independent_vs_collaborative",
-    "prompt": "I learn best when I can work quietly on my own first.",
-    "response_scale": {
-      "type": "likert_5",
-      "labels": [
-        "Strongly disagree",
-        "Disagree",
-        "Neutral",
-        "Agree",
-        "Strongly agree"
-      ]
-    }
-  },
-  {
     "id": "lp_018",
     "track": "learning_preferences",
-    "domain": "fast_vs_deep",
-    "prompt": "I prefer quick rounds of practice over long deep sessions.",
+    "domain": "visual_vs_verbal",
+    "prompt": "I learn better when someone explains the idea out loud.",
     "response_scale": {
       "type": "likert_5",
       "labels": [
@@ -291,7 +291,7 @@
     "id": "lp_019",
     "track": "learning_preferences",
     "domain": "visual_vs_verbal",
-    "prompt": "Charts, maps, and visual examples help me understand faster.",
+    "prompt": "Diagrams stick in my memory more than written paragraphs.",
     "response_scale": {
       "type": "likert_5",
       "labels": [
@@ -306,8 +306,8 @@
   {
     "id": "lp_020",
     "track": "learning_preferences",
-    "domain": "structured_vs_flexible",
-    "prompt": "I do better when I know the exact order of steps ahead of time.",
+    "domain": "visual_vs_verbal",
+    "prompt": "Reading the textbook is easier for me than watching a video lesson.",
     "response_scale": {
       "type": "likert_5",
       "labels": [
@@ -322,8 +322,8 @@
   {
     "id": "lp_021",
     "track": "learning_preferences",
-    "domain": "independent_vs_collaborative",
-    "prompt": "I learn best when I can work quietly on my own first.",
+    "domain": "visual_vs_verbal",
+    "prompt": "I take notes using sketches and arrows more than full sentences.",
     "response_scale": {
       "type": "likert_5",
       "labels": [
@@ -338,8 +338,8 @@
   {
     "id": "lp_022",
     "track": "learning_preferences",
-    "domain": "fast_vs_deep",
-    "prompt": "I prefer quick rounds of practice over long deep sessions.",
+    "domain": "visual_vs_verbal",
+    "prompt": "I can follow a podcast on a topic without losing track.",
     "response_scale": {
       "type": "likert_5",
       "labels": [
@@ -355,7 +355,7 @@
     "id": "lp_023",
     "track": "learning_preferences",
     "domain": "visual_vs_verbal",
-    "prompt": "Charts, maps, and visual examples help me understand faster.",
+    "prompt": "Color coding my notes helps me find information later.",
     "response_scale": {
       "type": "likert_5",
       "labels": [
@@ -369,6 +369,22 @@
   },
   {
     "id": "lp_024",
+    "track": "learning_preferences",
+    "domain": "visual_vs_verbal",
+    "prompt": "I'd rather hear a worked example than watch one on a board.",
+    "response_scale": {
+      "type": "likert_5",
+      "labels": [
+        "Strongly disagree",
+        "Disagree",
+        "Neutral",
+        "Agree",
+        "Strongly agree"
+      ]
+    }
+  },
+  {
+    "id": "lp_025",
     "track": "learning_preferences",
     "domain": "structured_vs_flexible",
     "prompt": "I do better when I know the exact order of steps ahead of time.",
@@ -384,26 +400,10 @@
     }
   },
   {
-    "id": "lp_025",
-    "track": "learning_preferences",
-    "domain": "independent_vs_collaborative",
-    "prompt": "I learn best when I can work quietly on my own first.",
-    "response_scale": {
-      "type": "likert_5",
-      "labels": [
-        "Strongly disagree",
-        "Disagree",
-        "Neutral",
-        "Agree",
-        "Strongly agree"
-      ]
-    }
-  },
-  {
     "id": "lp_026",
     "track": "learning_preferences",
-    "domain": "fast_vs_deep",
-    "prompt": "I prefer quick rounds of practice over long deep sessions.",
+    "domain": "structured_vs_flexible",
+    "prompt": "I like having room to explore a topic in my own order.",
     "response_scale": {
       "type": "likert_5",
       "labels": [
@@ -418,8 +418,8 @@
   {
     "id": "lp_027",
     "track": "learning_preferences",
-    "domain": "visual_vs_verbal",
-    "prompt": "Charts, maps, and visual examples help me understand faster.",
+    "domain": "structured_vs_flexible",
+    "prompt": "Clear deadlines and checklists help me stay on track.",
     "response_scale": {
       "type": "likert_5",
       "labels": [
@@ -435,7 +435,7 @@
     "id": "lp_028",
     "track": "learning_preferences",
     "domain": "structured_vs_flexible",
-    "prompt": "I do better when I know the exact order of steps ahead of time.",
+    "prompt": "Too much structure makes me lose interest.",
     "response_scale": {
       "type": "likert_5",
       "labels": [
@@ -450,8 +450,8 @@
   {
     "id": "lp_029",
     "track": "learning_preferences",
-    "domain": "independent_vs_collaborative",
-    "prompt": "I learn best when I can work quietly on my own first.",
+    "domain": "structured_vs_flexible",
+    "prompt": "I prefer assignments with one correct method to follow.",
     "response_scale": {
       "type": "likert_5",
       "labels": [
@@ -466,8 +466,8 @@
   {
     "id": "lp_030",
     "track": "learning_preferences",
-    "domain": "fast_vs_deep",
-    "prompt": "I prefer quick rounds of practice over long deep sessions.",
+    "domain": "structured_vs_flexible",
+    "prompt": "Open-ended projects bring out my best work.",
     "response_scale": {
       "type": "likert_5",
       "labels": [
@@ -482,8 +482,8 @@
   {
     "id": "lp_031",
     "track": "learning_preferences",
-    "domain": "visual_vs_verbal",
-    "prompt": "Charts, maps, and visual examples help me understand faster.",
+    "domain": "structured_vs_flexible",
+    "prompt": "I like knowing exactly how I'll be graded before I start.",
     "response_scale": {
       "type": "likert_5",
       "labels": [
@@ -499,7 +499,7 @@
     "id": "lp_032",
     "track": "learning_preferences",
     "domain": "structured_vs_flexible",
-    "prompt": "I do better when I know the exact order of steps ahead of time.",
+    "prompt": "I work better when I can decide what to focus on each day.",
     "response_scale": {
       "type": "likert_5",
       "labels": [
