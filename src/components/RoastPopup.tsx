@@ -13,25 +13,40 @@ interface RoastPopupProps {
   percentage: number;
   isOpen: boolean;
   onClose: () => void;
+  /** When true (school / classroom mode), messages tagged `consumer_only` are filtered out. */
+  schoolMode?: boolean;
 }
 
 const getRandomItem = <T,>(arr: T[]): T => arr[Math.floor(Math.random() * arr.length)];
 
-export const RoastPopup = ({ percentage, isOpen, onClose }: RoastPopupProps) => {
+type RoastMessage = string | { text: string; context?: string[] };
+
+const pickMessage = (messages: RoastMessage[], schoolMode: boolean): string => {
+  const eligible = messages.filter((m) => {
+    if (typeof m === "string") return true;
+    if (!schoolMode) return true;
+    return !(m.context ?? []).includes("consumer_only");
+  });
+  const pool = eligible.length > 0 ? eligible : messages;
+  const chosen = getRandomItem(pool);
+  return typeof chosen === "string" ? chosen : chosen.text;
+};
+
+export const RoastPopup = ({ percentage, isOpen, onClose, schoolMode = false }: RoastPopupProps) => {
   const [roast, setRoast] = useState<{ title: string; message: string } | null>(null);
 
   useEffect(() => {
     if (isOpen) {
-      const scoreRanges = roastData.score_ranges as Record<string, { title: string; messages: string[] }>;
+      const scoreRanges = roastData.score_ranges as Record<string, { title: string; messages: RoastMessage[] }>;
       
       let rangeKey: string;
       
       // Special case: all wrong (0%)
       if (percentage === 0) {
-        const allWrong = roastData.special_situations.all_wrong;
+        const allWrong = roastData.special_situations.all_wrong as { title: string; messages: RoastMessage[] };
         setRoast({
           title: allWrong.title,
-          message: getRandomItem(allWrong.messages),
+          message: pickMessage(allWrong.messages, schoolMode),
         });
         return;
       }
@@ -59,11 +74,11 @@ export const RoastPopup = ({ percentage, isOpen, onClose }: RoastPopupProps) => 
       if (range) {
         setRoast({
           title: range.title,
-          message: getRandomItem(range.messages),
+          message: pickMessage(range.messages, schoolMode),
         });
       }
     }
-  }, [isOpen, percentage]);
+  }, [isOpen, percentage, schoolMode]);
 
   if (!roast) return null;
 
