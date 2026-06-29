@@ -18,8 +18,8 @@
   {
     "id": "eq_002",
     "track": "eq_skills",
-    "domain": "self_regulation",
-    "prompt": "When I feel frustrated, I can usually pause before reacting.",
+    "domain": "self_awareness",
+    "prompt": "I notice physical signs (tight chest, clenched jaw) when I'm stressed.",
     "response_scale": {
       "type": "likert_5",
       "labels": [
@@ -34,8 +34,8 @@
   {
     "id": "eq_003",
     "track": "eq_skills",
-    "domain": "empathy",
-    "prompt": "I notice when someone seems upset even if they do not say it directly.",
+    "domain": "self_awareness",
+    "prompt": "I can name the specific emotion I'm feeling, not just 'bad' or 'good.'",
     "response_scale": {
       "type": "likert_5",
       "labels": [
@@ -50,8 +50,8 @@
   {
     "id": "eq_004",
     "track": "eq_skills",
-    "domain": "social_awareness",
-    "prompt": "I can often tell what kind of support a person needs in a group setting.",
+    "domain": "self_awareness",
+    "prompt": "I understand which situations are most likely to set me off.",
     "response_scale": {
       "type": "likert_5",
       "labels": [
@@ -66,8 +66,8 @@
   {
     "id": "eq_005",
     "track": "eq_skills",
-    "domain": "relationship_management",
-    "prompt": "I can disagree with someone without turning the situation into a fight.",
+    "domain": "self_awareness",
+    "prompt": "I recognize when my mood is shaping how I judge others.",
     "response_scale": {
       "type": "likert_5",
       "labels": [
@@ -83,7 +83,7 @@
     "id": "eq_006",
     "track": "eq_skills",
     "domain": "self_awareness",
-    "prompt": "I can tell when my emotions are affecting how I think.",
+    "prompt": "I know what my personal values are and when I act against them.",
     "response_scale": {
       "type": "likert_5",
       "labels": [
@@ -98,8 +98,8 @@
   {
     "id": "eq_007",
     "track": "eq_skills",
-    "domain": "self_regulation",
-    "prompt": "When I feel frustrated, I can usually pause before reacting.",
+    "domain": "self_awareness",
+    "prompt": "I can describe my strengths honestly without exaggerating.",
     "response_scale": {
       "type": "likert_5",
       "labels": [
@@ -114,8 +114,8 @@
   {
     "id": "eq_008",
     "track": "eq_skills",
-    "domain": "empathy",
-    "prompt": "I notice when someone seems upset even if they do not say it directly.",
+    "domain": "self_awareness",
+    "prompt": "I notice when I'm avoiding something because it's uncomfortable.",
     "response_scale": {
       "type": "likert_5",
       "labels": [
@@ -130,8 +130,8 @@
   {
     "id": "eq_009",
     "track": "eq_skills",
-    "domain": "social_awareness",
-    "prompt": "I can often tell what kind of support a person needs in a group setting.",
+    "domain": "self_awareness",
+    "prompt": "I can tell when I'm tired or hungry before it affects my behavior.",
     "response_scale": {
       "type": "likert_5",
       "labels": [
@@ -146,8 +146,8 @@
   {
     "id": "eq_010",
     "track": "eq_skills",
-    "domain": "relationship_management",
-    "prompt": "I can disagree with someone without turning the situation into a fight.",
+    "domain": "self_awareness",
+    "prompt": "I notice patterns in what triggers my anxiety.",
     "response_scale": {
       "type": "likert_5",
       "labels": [
@@ -162,8 +162,8 @@
   {
     "id": "eq_011",
     "track": "eq_skills",
-    "domain": "self_awareness",
-    "prompt": "I can tell when my emotions are affecting how I think.",
+    "domain": "self_regulation",
+    "prompt": "When I feel frustrated, I can usually pause before reacting.",
     "response_scale": {
       "type": "likert_5",
       "labels": [
@@ -179,7 +179,7 @@
     "id": "eq_012",
     "track": "eq_skills",
     "domain": "self_regulation",
-    "prompt": "When I feel frustrated, I can usually pause before reacting.",
+    "prompt": "I can keep working on something boring when I need to.",
     "response_scale": {
       "type": "likert_5",
       "labels": [
@@ -194,8 +194,8 @@
   {
     "id": "eq_013",
     "track": "eq_skills",
-    "domain": "empathy",
-    "prompt": "I notice when someone seems upset even if they do not say it directly.",
+    "domain": "self_regulation",
+    "prompt": "I can calm myself down within a few minutes of getting upset.",
     "response_scale": {
       "type": "likert_5",
       "labels": [
@@ -210,8 +210,8 @@
   {
     "id": "eq_014",
     "track": "eq_skills",
-    "domain": "social_awareness",
-    "prompt": "I can often tell what kind of support a person needs in a group setting.",
+    "domain": "self_regulation",
+    "prompt": "I avoid sending angry messages I'd regret later.",
     "response_scale": {
       "type": "likert_5",
       "labels": [
@@ -226,8 +226,8 @@
   {
     "id": "eq_015",
     "track": "eq_skills",
-    "domain": "relationship_management",
-    "prompt": "I can disagree with someone without turning the situation into a fight.",
+    "domain": "self_regulation",
+    "prompt": "I can resist short-term temptations to reach a longer-term goal.",
     "response_scale": {
       "type": "likert_5",
       "labels": [
@@ -242,8 +242,8 @@
   {
     "id": "eq_016",
     "track": "eq_skills",
-    "domain": "self_awareness",
-    "prompt": "I can tell when my emotions are affecting how I think.",
+    "domain": "self_regulation",
+    "prompt": "I adapt my plans when things don't go the way I expected.",
     "response_scale": {
       "type": "likert_5",
       "labels": [
@@ -259,7 +259,7 @@
     "id": "eq_017",
     "track": "eq_skills",
     "domain": "self_regulation",
-    "prompt": "When I feel frustrated, I can usually pause before reacting.",
+    "prompt": "I can let go of small annoyances instead of dwelling on them.",
     "response_scale": {
       "type": "likert_5",
       "labels": [
@@ -273,6 +273,54 @@
   },
   {
     "id": "eq_018",
+    "track": "eq_skills",
+    "domain": "self_regulation",
+    "prompt": "I admit when I'm wrong rather than getting defensive.",
+    "response_scale": {
+      "type": "likert_5",
+      "labels": [
+        "Almost never",
+        "Sometimes",
+        "About half the time",
+        "Often",
+        "Almost always"
+      ]
+    }
+  },
+  {
+    "id": "eq_019",
+    "track": "eq_skills",
+    "domain": "self_regulation",
+    "prompt": "I can sit with uncertainty without needing immediate answers.",
+    "response_scale": {
+      "type": "likert_5",
+      "labels": [
+        "Almost never",
+        "Sometimes",
+        "About half the time",
+        "Often",
+        "Almost always"
+      ]
+    }
+  },
+  {
+    "id": "eq_020",
+    "track": "eq_skills",
+    "domain": "self_regulation",
+    "prompt": "I follow through on commitments even when motivation drops.",
+    "response_scale": {
+      "type": "likert_5",
+      "labels": [
+        "Almost never",
+        "Sometimes",
+        "About half the time",
+        "Often",
+        "Almost always"
+      ]
+    }
+  },
+  {
+    "id": "eq_021",
     "track": "eq_skills",
     "domain": "empathy",
     "prompt": "I notice when someone seems upset even if they do not say it directly.",
@@ -288,58 +336,10 @@
     }
   },
   {
-    "id": "eq_019",
-    "track": "eq_skills",
-    "domain": "social_awareness",
-    "prompt": "I can often tell what kind of support a person needs in a group setting.",
-    "response_scale": {
-      "type": "likert_5",
-      "labels": [
-        "Almost never",
-        "Sometimes",
-        "About half the time",
-        "Often",
-        "Almost always"
-      ]
-    }
-  },
-  {
-    "id": "eq_020",
-    "track": "eq_skills",
-    "domain": "relationship_management",
-    "prompt": "I can disagree with someone without turning the situation into a fight.",
-    "response_scale": {
-      "type": "likert_5",
-      "labels": [
-        "Almost never",
-        "Sometimes",
-        "About half the time",
-        "Often",
-        "Almost always"
-      ]
-    }
-  },
-  {
-    "id": "eq_021",
-    "track": "eq_skills",
-    "domain": "self_awareness",
-    "prompt": "I can tell when my emotions are affecting how I think.",
-    "response_scale": {
-      "type": "likert_5",
-      "labels": [
-        "Almost never",
-        "Sometimes",
-        "About half the time",
-        "Often",
-        "Almost always"
-      ]
-    }
-  },
-  {
     "id": "eq_022",
     "track": "eq_skills",
-    "domain": "self_regulation",
-    "prompt": "When I feel frustrated, I can usually pause before reacting.",
+    "domain": "empathy",
+    "prompt": "I try to understand a person's situation before judging their behavior.",
     "response_scale": {
       "type": "likert_5",
       "labels": [
@@ -355,7 +355,7 @@
     "id": "eq_023",
     "track": "eq_skills",
     "domain": "empathy",
-    "prompt": "I notice when someone seems upset even if they do not say it directly.",
+    "prompt": "I can imagine how a decision might feel from someone else's point of view.",
     "response_scale": {
       "type": "likert_5",
       "labels": [
@@ -370,8 +370,8 @@
   {
     "id": "eq_024",
     "track": "eq_skills",
-    "domain": "social_awareness",
-    "prompt": "I can often tell what kind of support a person needs in a group setting.",
+    "domain": "empathy",
+    "prompt": "I pick up on tone of voice changes during conversations.",
     "response_scale": {
       "type": "likert_5",
       "labels": [
@@ -386,8 +386,8 @@
   {
     "id": "eq_025",
     "track": "eq_skills",
-    "domain": "relationship_management",
-    "prompt": "I can disagree with someone without turning the situation into a fight.",
+    "domain": "empathy",
+    "prompt": "I am moved by what others are going through, not just my own concerns.",
     "response_scale": {
       "type": "likert_5",
       "labels": [
@@ -402,8 +402,8 @@
   {
     "id": "eq_026",
     "track": "eq_skills",
-    "domain": "self_awareness",
-    "prompt": "I can tell when my emotions are affecting how I think.",
+    "domain": "empathy",
+    "prompt": "I check in with friends when I sense something's off.",
     "response_scale": {
       "type": "likert_5",
       "labels": [
@@ -418,8 +418,8 @@
   {
     "id": "eq_027",
     "track": "eq_skills",
-    "domain": "self_regulation",
-    "prompt": "When I feel frustrated, I can usually pause before reacting.",
+    "domain": "empathy",
+    "prompt": "I can tell when someone wants advice versus when they just need to vent.",
     "response_scale": {
       "type": "likert_5",
       "labels": [
@@ -435,7 +435,7 @@
     "id": "eq_028",
     "track": "eq_skills",
     "domain": "empathy",
-    "prompt": "I notice when someone seems upset even if they do not say it directly.",
+    "prompt": "I take cultural differences into account when interpreting behavior.",
     "response_scale": {
       "type": "likert_5",
       "labels": [
@@ -449,6 +449,38 @@
   },
   {
     "id": "eq_029",
+    "track": "eq_skills",
+    "domain": "empathy",
+    "prompt": "I am patient with people who are slower to understand something.",
+    "response_scale": {
+      "type": "likert_5",
+      "labels": [
+        "Almost never",
+        "Sometimes",
+        "About half the time",
+        "Often",
+        "Almost always"
+      ]
+    }
+  },
+  {
+    "id": "eq_030",
+    "track": "eq_skills",
+    "domain": "empathy",
+    "prompt": "I notice when a quiet person in a group has something to say.",
+    "response_scale": {
+      "type": "likert_5",
+      "labels": [
+        "Almost never",
+        "Sometimes",
+        "About half the time",
+        "Often",
+        "Almost always"
+      ]
+    }
+  },
+  {
+    "id": "eq_031",
     "track": "eq_skills",
     "domain": "social_awareness",
     "prompt": "I can often tell what kind of support a person needs in a group setting.",
@@ -464,42 +496,10 @@
     }
   },
   {
-    "id": "eq_030",
-    "track": "eq_skills",
-    "domain": "relationship_management",
-    "prompt": "I can disagree with someone without turning the situation into a fight.",
-    "response_scale": {
-      "type": "likert_5",
-      "labels": [
-        "Almost never",
-        "Sometimes",
-        "About half the time",
-        "Often",
-        "Almost always"
-      ]
-    }
-  },
-  {
-    "id": "eq_031",
-    "track": "eq_skills",
-    "domain": "self_awareness",
-    "prompt": "I can tell when my emotions are affecting how I think.",
-    "response_scale": {
-      "type": "likert_5",
-      "labels": [
-        "Almost never",
-        "Sometimes",
-        "About half the time",
-        "Often",
-        "Almost always"
-      ]
-    }
-  },
-  {
     "id": "eq_032",
     "track": "eq_skills",
-    "domain": "self_regulation",
-    "prompt": "When I feel frustrated, I can usually pause before reacting.",
+    "domain": "social_awareness",
+    "prompt": "I read the room before deciding how to behave.",
     "response_scale": {
       "type": "likert_5",
       "labels": [
@@ -514,8 +514,8 @@
   {
     "id": "eq_033",
     "track": "eq_skills",
-    "domain": "empathy",
-    "prompt": "I notice when someone seems upset even if they do not say it directly.",
+    "domain": "social_awareness",
+    "prompt": "I understand the unspoken rules in different social situations.",
     "response_scale": {
       "type": "likert_5",
       "labels": [
@@ -531,7 +531,7 @@
     "id": "eq_034",
     "track": "eq_skills",
     "domain": "social_awareness",
-    "prompt": "I can often tell what kind of support a person needs in a group setting.",
+    "prompt": "I notice when group dynamics shift, like tension building up.",
     "response_scale": {
       "type": "likert_5",
       "labels": [
@@ -546,8 +546,8 @@
   {
     "id": "eq_035",
     "track": "eq_skills",
-    "domain": "relationship_management",
-    "prompt": "I can disagree with someone without turning the situation into a fight.",
+    "domain": "social_awareness",
+    "prompt": "I can identify who tends to lead and who tends to follow in a group.",
     "response_scale": {
       "type": "likert_5",
       "labels": [
@@ -562,8 +562,8 @@
   {
     "id": "eq_036",
     "track": "eq_skills",
-    "domain": "self_awareness",
-    "prompt": "I can tell when my emotions are affecting how I think.",
+    "domain": "social_awareness",
+    "prompt": "I pay attention to how my words might land with different listeners.",
     "response_scale": {
       "type": "likert_5",
       "labels": [
@@ -578,8 +578,8 @@
   {
     "id": "eq_037",
     "track": "eq_skills",
-    "domain": "self_regulation",
-    "prompt": "When I feel frustrated, I can usually pause before reacting.",
+    "domain": "social_awareness",
+    "prompt": "I notice when someone is being left out of a conversation.",
     "response_scale": {
       "type": "likert_5",
       "labels": [
@@ -594,8 +594,8 @@
   {
     "id": "eq_038",
     "track": "eq_skills",
-    "domain": "empathy",
-    "prompt": "I notice when someone seems upset even if they do not say it directly.",
+    "domain": "social_awareness",
+    "prompt": "I can sense when a teacher or coach is open to questions.",
     "response_scale": {
       "type": "likert_5",
       "labels": [
@@ -611,7 +611,7 @@
     "id": "eq_039",
     "track": "eq_skills",
     "domain": "social_awareness",
-    "prompt": "I can often tell what kind of support a person needs in a group setting.",
+    "prompt": "I adjust how I speak depending on who I'm talking to.",
     "response_scale": {
       "type": "likert_5",
       "labels": [
@@ -625,6 +625,22 @@
   },
   {
     "id": "eq_040",
+    "track": "eq_skills",
+    "domain": "social_awareness",
+    "prompt": "I recognize when a joke might cross a line for someone present.",
+    "response_scale": {
+      "type": "likert_5",
+      "labels": [
+        "Almost never",
+        "Sometimes",
+        "About half the time",
+        "Often",
+        "Almost always"
+      ]
+    }
+  },
+  {
+    "id": "eq_041",
     "track": "eq_skills",
     "domain": "relationship_management",
     "prompt": "I can disagree with someone without turning the situation into a fight.",
@@ -640,26 +656,10 @@
     }
   },
   {
-    "id": "eq_041",
-    "track": "eq_skills",
-    "domain": "self_awareness",
-    "prompt": "I can tell when my emotions are affecting how I think.",
-    "response_scale": {
-      "type": "likert_5",
-      "labels": [
-        "Almost never",
-        "Sometimes",
-        "About half the time",
-        "Often",
-        "Almost always"
-      ]
-    }
-  },
-  {
     "id": "eq_042",
     "track": "eq_skills",
-    "domain": "self_regulation",
-    "prompt": "When I feel frustrated, I can usually pause before reacting.",
+    "domain": "relationship_management",
+    "prompt": "I give feedback in a way that focuses on the issue, not the person.",
     "response_scale": {
       "type": "likert_5",
       "labels": [
@@ -674,8 +674,8 @@
   {
     "id": "eq_043",
     "track": "eq_skills",
-    "domain": "empathy",
-    "prompt": "I notice when someone seems upset even if they do not say it directly.",
+    "domain": "relationship_management",
+    "prompt": "I repair the relationship after a conflict instead of avoiding the person.",
     "response_scale": {
       "type": "likert_5",
       "labels": [
@@ -690,8 +690,8 @@
   {
     "id": "eq_044",
     "track": "eq_skills",
-    "domain": "social_awareness",
-    "prompt": "I can often tell what kind of support a person needs in a group setting.",
+    "domain": "relationship_management",
+    "prompt": "I can ask for help without feeling like I'm being a burden.",
     "response_scale": {
       "type": "likert_5",
       "labels": [
@@ -707,7 +707,7 @@
     "id": "eq_045",
     "track": "eq_skills",
     "domain": "relationship_management",
-    "prompt": "I can disagree with someone without turning the situation into a fight.",
+    "prompt": "I encourage others when they're struggling with something hard.",
     "response_scale": {
       "type": "likert_5",
       "labels": [
@@ -722,8 +722,8 @@
   {
     "id": "eq_046",
     "track": "eq_skills",
-    "domain": "self_awareness",
-    "prompt": "I can tell when my emotions are affecting how I think.",
+    "domain": "relationship_management",
+    "prompt": "I keep promises I make to friends and teammates.",
     "response_scale": {
       "type": "likert_5",
       "labels": [
@@ -738,8 +738,8 @@
   {
     "id": "eq_047",
     "track": "eq_skills",
-    "domain": "self_regulation",
-    "prompt": "When I feel frustrated, I can usually pause before reacting.",
+    "domain": "relationship_management",
+    "prompt": "I can set a clear boundary politely when I need to.",
     "response_scale": {
       "type": "likert_5",
       "labels": [
@@ -754,8 +754,8 @@
   {
     "id": "eq_048",
     "track": "eq_skills",
-    "domain": "empathy",
-    "prompt": "I notice when someone seems upset even if they do not say it directly.",
+    "domain": "relationship_management",
+    "prompt": "I work through disagreements rather than going silent.",
     "response_scale": {
       "type": "likert_5",
       "labels": [
@@ -770,8 +770,8 @@
   {
     "id": "eq_049",
     "track": "eq_skills",
-    "domain": "social_awareness",
-    "prompt": "I can often tell what kind of support a person needs in a group setting.",
+    "domain": "relationship_management",
+    "prompt": "I make space for other people's ideas in group projects.",
     "response_scale": {
       "type": "likert_5",
       "labels": [
@@ -787,7 +787,7 @@
     "id": "eq_050",
     "track": "eq_skills",
     "domain": "relationship_management",
-    "prompt": "I can disagree with someone without turning the situation into a fight.",
+    "prompt": "I express appreciation when someone does something thoughtful.",
     "response_scale": {
       "type": "likert_5",
       "labels": [
