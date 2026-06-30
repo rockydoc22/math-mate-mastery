@@ -9,6 +9,10 @@ import { createClient } from "https://esm.sh/@supabase/supabase-js@2";
 // Auth: x-cron-secret header (CRON_SECRET) OR admin JWT.
 
 const BATCH_SIZE = 25;
+// Per-invocation budget: keep well under the 150s edge-function wall time.
+const MAX_TICK_MS = 110_000;
+// Safety: never run more than this many batches in a single tick.
+const MAX_BATCHES_PER_TICK = 40;
 
 // Priority order: lower number = higher priority.
 const PRESETS: Array<{ key: string; priority: number; jobs: Array<{ label: string; spec: Record<string, unknown>; target: number }> }> = [
@@ -132,81 +136,113 @@ Deno.serve(async (req) => {
       seededCount = await seedPresets(admin);
     }
 
-    // Pick next job (highest priority, oldest).
-    const { data: nextJobs } = await admin
-      .from("bulk_generate_jobs")
-      .select("*")
-      .in("status", ["queued", "running"])
-      .order("priority", { ascending: true })
-      .order("created_at", { ascending: true })
-      .limit(1);
+    // Drain multiple batches (and roll to the next job) within a single
+    // invocation budget, so the cron actually makes meaningful progress
+    // even if its cadence is slow or some ticks get skipped.
+    const tickStart = Date.now();
+    const report: Array<Record<string, unknown>> = [];
+    let batchesThisTick = 0;
+    let totalInsertedThisTick = 0;
 
-    const job = nextJobs?.[0];
-    if (!job) {
-      return json({ ok: true, action: "tick", message: "no active jobs", seeded: seededCount });
-    }
+    while (
+      Date.now() - tickStart < MAX_TICK_MS &&
+      batchesThisTick < MAX_BATCHES_PER_TICK
+    ) {
+      const { data: nextJobs } = await admin
+        .from("bulk_generate_jobs")
+        .select("*")
+        .in("status", ["queued", "running"])
+        .order("priority", { ascending: true })
+        .order("created_at", { ascending: true })
+        .limit(1);
 
-    // Mark running + record start.
-    const startedAt = job.started_at ?? new Date().toISOString();
-    await admin.from("bulk_generate_jobs").update({ status: "running", started_at: startedAt }).eq("id", job.id);
+      const job = nextJobs?.[0];
+      if (!job) break;
 
-    const remaining = Math.max(0, job.target - job.inserted);
-    if (remaining === 0) {
-      await admin.from("bulk_generate_jobs").update({ status: "completed", completed_at: new Date().toISOString() }).eq("id", job.id);
-      return json({ ok: true, action: "tick", job_id: job.id, message: "already complete", seeded: seededCount });
-    }
-
-    const count = Math.min(BATCH_SIZE, remaining);
-    const t0 = Date.now();
-    let inserted = 0;
-    let errMsg: string | null = null;
-    try {
-      const resp = await fetch(`${SUPABASE_URL}/functions/v1/bulk-generate-assessment-questions`, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          "x-cron-secret": CRON_SECRET,
-          apikey: ANON_KEY,
-        },
-        body: JSON.stringify({ spec: { ...job.spec, count }, confirmBulk: true }),
-      });
-      const data = await resp.json().catch(() => ({}));
-      if (!resp.ok) {
-        errMsg = `HTTP ${resp.status}: ${data?.error ?? "unknown"}`;
-      } else {
-        inserted = Number(data?.inserted) || 0;
+      const startedAt = job.started_at ?? new Date().toISOString();
+      if (job.status !== "running") {
+        await admin.from("bulk_generate_jobs")
+          .update({ status: "running", started_at: startedAt })
+          .eq("id", job.id);
       }
-    } catch (e) {
-      errMsg = e instanceof Error ? e.message : String(e);
+
+      const remaining = Math.max(0, job.target - job.inserted);
+      if (remaining === 0) {
+        await admin.from("bulk_generate_jobs")
+          .update({ status: "completed", completed_at: new Date().toISOString() })
+          .eq("id", job.id);
+        continue;
+      }
+
+      const count = Math.min(BATCH_SIZE, remaining);
+      const t0 = Date.now();
+      let inserted = 0;
+      let errMsg: string | null = null;
+      try {
+        const resp = await fetch(`${SUPABASE_URL}/functions/v1/bulk-generate-assessment-questions`, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            "x-cron-secret": CRON_SECRET,
+            apikey: ANON_KEY,
+          },
+          body: JSON.stringify({ spec: { ...job.spec, count }, confirmBulk: true }),
+        });
+        const data = await resp.json().catch(() => ({}));
+        if (!resp.ok) {
+          errMsg = `HTTP ${resp.status}: ${data?.error ?? "unknown"}`;
+        } else {
+          inserted = Number(data?.inserted) || 0;
+        }
+      } catch (e) {
+        errMsg = e instanceof Error ? e.message : String(e);
+      }
+      const elapsed = Date.now() - t0;
+
+      const newInserted = job.inserted + inserted;
+      const newFailures = errMsg || inserted === 0 ? (job.failures + 1) : 0;
+      const isComplete = newInserted >= job.target;
+      const isFailed = newFailures >= 5;
+
+      await admin.from("bulk_generate_jobs").update({
+        inserted: newInserted,
+        batches_run: job.batches_run + 1,
+        total_runtime_ms: job.total_runtime_ms + elapsed,
+        failures: newFailures,
+        last_error: errMsg,
+        status: isComplete ? "completed" : isFailed ? "failed" : "running",
+        completed_at: isComplete ? new Date().toISOString() : job.completed_at,
+      }).eq("id", job.id);
+
+      batchesThisTick++;
+      totalInsertedThisTick += inserted;
+      report.push({
+        job_id: job.id,
+        label: job.label,
+        batch_inserted: inserted,
+        total_inserted: newInserted,
+        target: job.target,
+        elapsed_ms: elapsed,
+        error: errMsg,
+        status: isComplete ? "completed" : isFailed ? "failed" : "running",
+      });
+
+      // If this job hit the failure cap, move on to the next job instead of
+      // hammering it; if quota/rate-limit upstream, stop the tick entirely.
+      if (errMsg && (errMsg.includes("429") || errMsg.includes("402"))) break;
+
+      // Small breather between batches to avoid upstream rate-limits.
+      await new Promise((r) => setTimeout(r, 400));
     }
-    const elapsed = Date.now() - t0;
-
-    const newInserted = job.inserted + inserted;
-    const newFailures = errMsg || inserted === 0 ? (job.failures + 1) : 0;
-    const isComplete = newInserted >= job.target;
-    const isFailed = newFailures >= 5;
-
-    await admin.from("bulk_generate_jobs").update({
-      inserted: newInserted,
-      batches_run: job.batches_run + 1,
-      total_runtime_ms: job.total_runtime_ms + elapsed,
-      failures: newFailures,
-      last_error: errMsg,
-      status: isComplete ? "completed" : isFailed ? "failed" : "running",
-      completed_at: isComplete ? new Date().toISOString() : job.completed_at,
-    }).eq("id", job.id);
 
     return json({
       ok: true,
       action: "tick",
-      job_id: job.id,
-      job_label: job.label,
-      batch_inserted: inserted,
-      total_inserted: newInserted,
-      target: job.target,
-      elapsed_ms: elapsed,
-      error: errMsg,
       seeded: seededCount,
+      batches_run: batchesThisTick,
+      inserted_total: totalInsertedThisTick,
+      elapsed_ms: Date.now() - tickStart,
+      report,
     });
   } catch (e) {
     return json({ error: e instanceof Error ? e.message : "Unknown" }, 500);
