@@ -10,7 +10,10 @@
     },
     "answer": "C",
     "difficulty": 5,
-    "explanation": "A genetic bottleneck occurs when a population's size is severely reduced, often by a natural disaster. This reduction leads to a loss of genetic variation as the surviving individuals may not represent the original gene pool. Gene flow (A) would typically decrease or stop. Stabilizing (B) and directional (D) selection might occur among survivors, but the primary consequence of the drastic population reduction itself is a bottleneck."
+    "explanation": "A genetic bottleneck occurs when a population's size is severely reduced, often by a natural disaster. This reduction leads to a loss of genetic variation as the surviving individuals may not represent the original gene pool. Gene flow (A) would typically decrease or stop. Stabilizing (B) and directional (D) selection might occur among survivors, but the primary consequence of the drastic population reduction itself is a bottleneck.",
+    "correct_key": "C",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_42",
@@ -23,7 +26,10 @@
     },
     "answer": "C",
     "difficulty": 4,
-    "explanation": "A thick, waxy cuticle on leaves is a common adaptation in desert plants to minimize transpiration (water loss) through the leaf surface. Large leaves increase surface area for water loss, shallow roots might dry out quickly, and open stomata during the day lead to significant water loss."
+    "explanation": "A thick, waxy cuticle on leaves is a common adaptation in desert plants to minimize transpiration (water loss) through the leaf surface. Large leaves increase surface area for water loss, shallow roots might dry out quickly, and open stomata during the day lead to significant water loss.",
+    "correct_key": "C",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_218",
@@ -36,7 +42,10 @@
     },
     "answer": "C",
     "difficulty": 6,
-    "explanation": "Stabilizing selection favors intermediate phenotypes and selects against extreme phenotypes, reducing phenotypic variation."
+    "explanation": "Stabilizing selection favors intermediate phenotypes and selects against extreme phenotypes, reducing phenotypic variation.",
+    "correct_key": "C",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_73",
@@ -49,7 +58,10 @@
     },
     "answer": "A",
     "difficulty": 5,
-    "explanation": "The description indicates the protein is part of the process that transmits the signal from the cell surface receptor to an internal cellular response. This is the definition of signal transduction."
+    "explanation": "The description indicates the protein is part of the process that transmits the signal from the cell surface receptor to an internal cellular response. This is the definition of signal transduction.",
+    "correct_key": "A",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_123",
@@ -62,7 +74,10 @@
     },
     "answer": "C",
     "difficulty": 4,
-    "explanation": "Natural selection occurs when environmental pressures (like the antibiotic) favor individuals with certain heritable traits (resistance genes), leading to increased survival and reproduction of those individuals. This results in a higher frequency of the advantageous trait in the population over time. Genetic drift is random change. Artificial selection is driven by human choice. Gene flow involves migration."
+    "explanation": "Natural selection occurs when environmental pressures (like the antibiotic) favor individuals with certain heritable traits (resistance genes), leading to increased survival and reproduction of those individuals. This results in a higher frequency of the advantageous trait in the population over time. Genetic drift is random change. Artificial selection is driven by human choice. Gene flow involves migration.",
+    "correct_key": "C",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_273",
@@ -75,7 +90,10 @@
     },
     "answer": "A",
     "difficulty": 5,
-    "explanation": "The DNA double helix has a sugar-phosphate backbone, formed by alternating deoxyribose sugar molecules and phosphate groups linked by phosphodiester bonds."
+    "explanation": "The DNA double helix has a sugar-phosphate backbone, formed by alternating deoxyribose sugar molecules and phosphate groups linked by phosphodiester bonds.",
+    "correct_key": "A",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_124",
@@ -88,7 +106,10 @@
     },
     "answer": "B",
     "difficulty": 4,
-    "explanation": "Transfer RNA (tRNA) molecules have a specific three-dimensional structure that allows them to bind to a specific amino acid at one end and an anticodon at the other end, which base-pairs with a complementary codon on the mRNA during translation. mRNA carries the genetic code, rRNA is a structural component of ribosomes, and snRNA is involved in RNA processing."
+    "explanation": "Transfer RNA (tRNA) molecules have a specific three-dimensional structure that allows them to bind to a specific amino acid at one end and an anticodon at the other end, which base-pairs with a complementary codon on the mRNA during translation. mRNA carries the genetic code, rRNA is a structural component of ribosomes, and snRNA is involved in RNA processing.",
+    "correct_key": "B",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_77",
@@ -101,7 +122,10 @@
     },
     "answer": "D",
     "difficulty": 6,
-    "explanation": "Prokaryotes reproduce asexually via binary fission. Horizontal gene transfer, which increases genetic variation, occurs through conjugation (direct transfer of DNA), transformation (uptake of environmental DNA), and transduction (viral-mediated DNA transfer)."
+    "explanation": "Prokaryotes reproduce asexually via binary fission. Horizontal gene transfer, which increases genetic variation, occurs through conjugation (direct transfer of DNA), transformation (uptake of environmental DNA), and transduction (viral-mediated DNA transfer).",
+    "correct_key": "D",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_267",
@@ -114,7 +138,10 @@
     },
     "answer": "A",
     "difficulty": 5,
-    "explanation": "During Prophase I of meiosis, homologous chromosomes pair up (synapsis) and exchange genetic material through crossing over, which contributes to genetic variation."
+    "explanation": "During Prophase I of meiosis, homologous chromosomes pair up (synapsis) and exchange genetic material through crossing over, which contributes to genetic variation.",
+    "correct_key": "A",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_105",
@@ -127,7 +154,10 @@
     },
     "answer": "C",
     "difficulty": 5,
-    "explanation": "Hardy-Weinberg equilibrium describes a theoretical state where allele and genotype frequencies remain constant from generation to generation. This equilibrium is maintained only if certain conditions are met: no mutation, no gene flow (migration), no genetic drift (random changes in allele frequencies, especially in small populations), random mating, and no natural selection. Option A describes evolution, not equilibrium. Option B implies selection is acting, disrupting equilibrium. Option D describes gene flow if it's with a different population, or potentially non-random mating if specific genotypes prefer certain mates."
+    "explanation": "Hardy-Weinberg equilibrium describes a theoretical state where allele and genotype frequencies remain constant from generation to generation. This equilibrium is maintained only if certain conditions are met: no mutation, no gene flow (migration), no genetic drift (random changes in allele frequencies, especially in small populations), random mating, and no natural selection. Option A describes evolution, not equilibrium. Option B implies selection is acting, disrupting equilibrium. Option D describes gene flow if it's with a different population, or potentially non-random mating if specific genotypes prefer certain mates.",
+    "correct_key": "C",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_189",
@@ -140,7 +170,10 @@
     },
     "answer": "C",
     "difficulty": 5,
-    "explanation": "Ribosomes are the cellular machinery responsible for protein synthesis (translation). Inhibiting ribosomes would stop the production of proteins essential for bacterial survival."
+    "explanation": "Ribosomes are the cellular machinery responsible for protein synthesis (translation). Inhibiting ribosomes would stop the production of proteins essential for bacterial survival.",
+    "correct_key": "C",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_88",
@@ -153,7 +186,10 @@
     },
     "answer": "C",
     "difficulty": 5,
-    "explanation": "Enzymes are biological catalysts that speed up chemical reactions by reducing the activation energy required for the reaction to proceed. They are not consumed in the reaction."
+    "explanation": "Enzymes are biological catalysts that speed up chemical reactions by reducing the activation energy required for the reaction to proceed. They are not consumed in the reaction.",
+    "correct_key": "C",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_171",
@@ -166,7 +202,10 @@
     },
     "answer": "B",
     "difficulty": 5,
-    "explanation": "The electron transport chain utilizes the energy released from electron transfer from NADH and FADH2 to pump protons across the inner mitochondrial membrane, establishing an electrochemical gradient that drives ATP synthesis."
+    "explanation": "The electron transport chain utilizes the energy released from electron transfer from NADH and FADH2 to pump protons across the inner mitochondrial membrane, establishing an electrochemical gradient that drives ATP synthesis.",
+    "correct_key": "B",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_138",
@@ -179,7 +218,10 @@
     },
     "answer": "D",
     "difficulty": 4,
-    "explanation": "In parasitism, one organism (the parasite) lives on or inside another organism (the host) and harms it, while benefiting itself. Mutualism benefits both, commensalism benefits one and is neutral to the other."
+    "explanation": "In parasitism, one organism (the parasite) lives on or inside another organism (the host) and harms it, while benefiting itself. Mutualism benefits both, commensalism benefits one and is neutral to the other.",
+    "correct_key": "D",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_44",
@@ -192,7 +234,10 @@
     },
     "answer": "D",
     "difficulty": 7,
-    "explanation": "According to the Hardy-Weinberg principle, the frequency of heterozygotes (2pq) is calculated using the allele frequencies. If p (frequency of allele for black feathers) = 0.4 and q (frequency of allele for white feathers) = 0.6, then 2pq = 2 * (0.4) * (0.6) = 2 * 0.24 = 0.48."
+    "explanation": "According to the Hardy-Weinberg principle, the frequency of heterozygotes (2pq) is calculated using the allele frequencies. If p (frequency of allele for black feathers) = 0.4 and q (frequency of allele for white feathers) = 0.6, then 2pq = 2 * (0.4) * (0.6) = 2 * 0.24 = 0.48.",
+    "correct_key": "D",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_242",
@@ -205,7 +250,10 @@
     },
     "answer": "D",
     "difficulty": 4,
-    "explanation": "Photolysis, the splitting of water molecules, occurs during the light-dependent reactions of photosynthesis. This process releases electrons, protons (H+), and oxygen gas."
+    "explanation": "Photolysis, the splitting of water molecules, occurs during the light-dependent reactions of photosynthesis. This process releases electrons, protons (H+), and oxygen gas.",
+    "correct_key": "D",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_191",
@@ -218,7 +266,10 @@
     },
     "answer": "B",
     "difficulty": 5,
-    "explanation": "DNA base pairing rules are A with T, and G with C. The complementary strand runs in the antiparallel direction (3' to 5'). Therefore, the complement to 5'-ATGCGTTA-3' is 3'-TACGCAAT-5'."
+    "explanation": "DNA base pairing rules are A with T, and G with C. The complementary strand runs in the antiparallel direction (3' to 5'). Therefore, the complement to 5'-ATGCGTTA-3' is 3'-TACGCAAT-5'.",
+    "correct_key": "B",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_280",
@@ -231,7 +282,10 @@
     },
     "answer": "B",
     "difficulty": 6,
-    "explanation": "Phagocytosis is a form of endocytosis where the cell membrane engulfs large particles or whole cells. Pinocytosis is the uptake of fluids, exocytosis is the release of substances from the cell, and active transport requires energy to move molecules against their concentration gradient."
+    "explanation": "Phagocytosis is a form of endocytosis where the cell membrane engulfs large particles or whole cells. Pinocytosis is the uptake of fluids, exocytosis is the release of substances from the cell, and active transport requires energy to move molecules against their concentration gradient.",
+    "correct_key": "B",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_2",
@@ -244,7 +298,10 @@
     },
     "answer": "A",
     "difficulty": 8,
-    "explanation": "p = 0.8, q = 0.2. Heterozygous frequency = 2pq = 2(0.8)(0.2) = 0.32. Number = 0.32 \u00d7 500 = 160."
+    "explanation": "p = 0.8, q = 0.2. Heterozygous frequency = 2pq = 2(0.8)(0.2) = 0.32. Number = 0.32 × 500 = 160.",
+    "correct_key": "A",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_197",
@@ -257,20 +314,26 @@
     },
     "answer": "B",
     "difficulty": 4,
-    "explanation": "A biological community consists of all the different populations of species that live and interact in a particular area."
+    "explanation": "A biological community consists of all the different populations of species that live and interact in a particular area.",
+    "correct_key": "B",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_13",
     "question": "Which of the following correctly pairs a biome with its characteristic feature?",
     "choices": {
-      "A": "Tropical rainforest \u2014 high biodiversity and stratified canopy layers",
-      "B": "Tundra \u2014 dense deciduous forests with rich soil",
-      "C": "Desert \u2014 high annual precipitation and low evaporation",
-      "D": "Taiga \u2014 broadleaf evergreen trees dominant"
+      "A": "Tropical rainforest — high biodiversity and stratified canopy layers",
+      "B": "Tundra — dense deciduous forests with rich soil",
+      "C": "Desert — high annual precipitation and low evaporation",
+      "D": "Taiga — broadleaf evergreen trees dominant"
     },
     "answer": "A",
     "difficulty": 6,
-    "explanation": "Tropical rainforests are characterized by their extremely high biodiversity and multiple canopy layers (emergent, canopy, understory, forest floor)."
+    "explanation": "Tropical rainforests are characterized by their extremely high biodiversity and multiple canopy layers (emergent, canopy, understory, forest floor).",
+    "correct_key": "A",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_18",
@@ -283,7 +346,10 @@
     },
     "answer": "A",
     "difficulty": 6,
-    "explanation": "Inflammation is a nonspecific innate response. B, C, and D are all components of the adaptive (specific) immune response."
+    "explanation": "Inflammation is a nonspecific innate response. B, C, and D are all components of the adaptive (specific) immune response.",
+    "correct_key": "A",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_60",
@@ -296,7 +362,10 @@
     },
     "answer": "D",
     "difficulty": 5,
-    "explanation": "Directional selection favors individuals at one extreme of the phenotypic range. In this case, larger size is favored, leading to a shift in the population's average size towards larger individuals over time. Disruptive selection favors both extremes. Stabilizing selection favors intermediates. Sexual selection involves traits that increase mating success."
+    "explanation": "Directional selection favors individuals at one extreme of the phenotypic range. In this case, larger size is favored, leading to a shift in the population's average size towards larger individuals over time. Disruptive selection favors both extremes. Stabilizing selection favors intermediates. Sexual selection involves traits that increase mating success.",
+    "correct_key": "D",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_185",
@@ -309,7 +378,10 @@
     },
     "answer": "D",
     "difficulty": 5,
-    "explanation": "Photosystems are complexes of proteins and pigments embedded in the thylakoid membranes. They capture light energy and transfer it to a reaction center chlorophyll, initiating the light-dependent reactions of photosynthesis."
+    "explanation": "Photosystems are complexes of proteins and pigments embedded in the thylakoid membranes. They capture light energy and transfer it to a reaction center chlorophyll, initiating the light-dependent reactions of photosynthesis.",
+    "correct_key": "D",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_7",
@@ -322,7 +394,10 @@
     },
     "answer": "A",
     "difficulty": 9,
-    "explanation": "With 4 possible bases at each position, a 6-bp site occurs on average every 4\u2076 = 4,096 bp."
+    "explanation": "With 4 possible bases at each position, a 6-bp site occurs on average every 4⁶ = 4,096 bp.",
+    "correct_key": "A",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_167",
@@ -335,7 +410,10 @@
     },
     "answer": "C",
     "difficulty": 4,
-    "explanation": "The presence of chloroplasts for photosynthesis, a cellulose cell wall, and starch as an energy storage molecule are characteristic features of plant cells."
+    "explanation": "The presence of chloroplasts for photosynthesis, a cellulose cell wall, and starch as an energy storage molecule are characteristic features of plant cells.",
+    "correct_key": "C",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_253",
@@ -348,7 +426,10 @@
     },
     "answer": "C",
     "difficulty": 4,
-    "explanation": "Prokaryotic cells lack a nucleus and membrane-bound organelles. Their genetic material is typically a circular chromosome located in the nucleoid region. They divide by binary fission, not mitosis."
+    "explanation": "Prokaryotic cells lack a nucleus and membrane-bound organelles. Their genetic material is typically a circular chromosome located in the nucleoid region. They divide by binary fission, not mitosis.",
+    "correct_key": "C",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_221",
@@ -361,7 +442,10 @@
     },
     "answer": "D",
     "difficulty": 4,
-    "explanation": "mRNA is synthesized during transcription, where the sequence of a DNA template strand is used as a guide to assemble a complementary strand of RNA."
+    "explanation": "mRNA is synthesized during transcription, where the sequence of a DNA template strand is used as a guide to assemble a complementary strand of RNA.",
+    "correct_key": "D",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_266",
@@ -374,7 +458,10 @@
     },
     "answer": "B",
     "difficulty": 7,
-    "explanation": "Gap junctions are protein-lined channels that connect the cytoplasm of neighboring cells, allowing for the passage of ions and small molecules, thus enabling rapid communication."
+    "explanation": "Gap junctions are protein-lined channels that connect the cytoplasm of neighboring cells, allowing for the passage of ions and small molecules, thus enabling rapid communication.",
+    "correct_key": "B",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_109",
@@ -387,7 +474,10 @@
     },
     "answer": "A",
     "difficulty": 7,
-    "explanation": "Aposematic coloration (warning coloration) is an evolutionary adaptation where a species possesses a pattern or color that warns potential predators of its unpalatable taste or toxicity. The bright colors serve as a signal, and if effective, can maintain the population despite conspicuousness. While sexual selection (B) could lead to bright colors, it doesn't inherently explain why predators *don't* decimate the population. High mutation rates (C) are unlikely to be the sole driver of a stable population with a conspicuous trait. Migration (D) doesn't explain the *evolution* of the trait within the population."
+    "explanation": "Aposematic coloration (warning coloration) is an evolutionary adaptation where a species possesses a pattern or color that warns potential predators of its unpalatable taste or toxicity. The bright colors serve as a signal, and if effective, can maintain the population despite conspicuousness. While sexual selection (B) could lead to bright colors, it doesn't inherently explain why predators *don't* decimate the population. High mutation rates (C) are unlikely to be the sole driver of a stable population with a conspicuous trait. Migration (D) doesn't explain the *evolution* of the trait within the population.",
+    "correct_key": "A",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_80",
@@ -400,7 +490,10 @@
     },
     "answer": "B",
     "difficulty": 6,
-    "explanation": "Nitrogen is a key component of amino acids (building blocks of proteins) and chlorophyll, the pigment essential for photosynthesis. Stunted growth and yellowing leaves (chlorosis) are classic symptoms of nitrogen deficiency."
+    "explanation": "Nitrogen is a key component of amino acids (building blocks of proteins) and chlorophyll, the pigment essential for photosynthesis. Stunted growth and yellowing leaves (chlorosis) are classic symptoms of nitrogen deficiency.",
+    "correct_key": "B",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_154",
@@ -413,7 +506,10 @@
     },
     "answer": "B",
     "difficulty": 6,
-    "explanation": "In a hypertonic solution, the concentration of solutes outside the cell is higher than inside. Water will move out of the plant cell by osmosis, causing the plasma membrane to pull away from the cell wall, a process called plasmolysis."
+    "explanation": "In a hypertonic solution, the concentration of solutes outside the cell is higher than inside. Water will move out of the plant cell by osmosis, causing the plasma membrane to pull away from the cell wall, a process called plasmolysis.",
+    "correct_key": "B",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_148",
@@ -426,7 +522,10 @@
     },
     "answer": "B",
     "difficulty": 6,
-    "explanation": "Enzymes are proteins with specific shapes. While increasing temperature generally increases kinetic energy and collision frequency (leading to higher reaction rates), excessively high temperatures can disrupt the weak bonds maintaining the enzyme's tertiary structure, causing denaturation and loss of function."
+    "explanation": "Enzymes are proteins with specific shapes. While increasing temperature generally increases kinetic energy and collision frequency (leading to higher reaction rates), excessively high temperatures can disrupt the weak bonds maintaining the enzyme's tertiary structure, causing denaturation and loss of function.",
+    "correct_key": "B",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_31",
@@ -439,7 +538,10 @@
     },
     "answer": "B",
     "difficulty": 4,
-    "explanation": "The most immediate and direct consequence of introducing a novel predator to native prey is increased mortality \u2014 prey populations decline because they lack evolved defenses against an unfamiliar predator. This is answer B. While behavioral changes (D) may also occur quickly, behavior is a response to the threat, not the population-level consequence. Answer A is incorrect \u2014 reduced competition is not the immediate effect of predator introduction. Answer C (increased genetic diversity) could occur over many generations through natural selection, but is not an immediate outcome."
+    "explanation": "The most immediate and direct consequence of introducing a novel predator to native prey is increased mortality — prey populations decline because they lack evolved defenses against an unfamiliar predator. This is answer B. While behavioral changes (D) may also occur quickly, behavior is a response to the threat, not the population-level consequence. Answer A is incorrect — reduced competition is not the immediate effect of predator introduction. Answer C (increased genetic diversity) could occur over many generations through natural selection, but is not an immediate outcome.",
+    "correct_key": "B",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_21",
@@ -452,7 +554,10 @@
     },
     "answer": "C",
     "difficulty": 5,
-    "explanation": "The leveling off of population growth describes the plateau phase of logistic growth, where the population reaches its carrying capacity (K). At this point, density-dependent factors such as limited physical space, accumulation of waste products, or competition keep birth and death rates equal. This is distinct from exponential growth, where resources are truly unlimited and the population continues to expand."
+    "explanation": "The leveling off of population growth describes the plateau phase of logistic growth, where the population reaches its carrying capacity (K). At this point, density-dependent factors such as limited physical space, accumulation of waste products, or competition keep birth and death rates equal. This is distinct from exponential growth, where resources are truly unlimited and the population continues to expand.",
+    "correct_key": "C",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_257",
@@ -465,7 +570,10 @@
     },
     "answer": "A",
     "difficulty": 5,
-    "explanation": "RNA polymerase is the enzyme responsible for transcription; it reads the DNA template strand and synthesizes a complementary RNA molecule."
+    "explanation": "RNA polymerase is the enzyme responsible for transcription; it reads the DNA template strand and synthesizes a complementary RNA molecule.",
+    "correct_key": "A",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_56",
@@ -478,7 +586,10 @@
     },
     "answer": "D",
     "difficulty": 5,
-    "explanation": "Mitosis produces two genetically identical diploid daughter cells from one diploid parent cell, used for growth and repair. Meiosis produces four genetically unique haploid daughter cells via crossing over and independent assortment, generating gametes. Answer D captures both the chromosome-number reduction and the genetic-variation outcome. B is false \u2014 both processes occur in eukaryotes (prokaryotes use binary fission, not mitosis). A confuses the products. C reverses the cell types involved."
+    "explanation": "Mitosis produces two genetically identical diploid daughter cells from one diploid parent cell, used for growth and repair. Meiosis produces four genetically unique haploid daughter cells via crossing over and independent assortment, generating gametes. Answer D captures both the chromosome-number reduction and the genetic-variation outcome. B is false — both processes occur in eukaryotes (prokaryotes use binary fission, not mitosis). A confuses the products. C reverses the cell types involved.",
+    "correct_key": "D",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_181",
@@ -491,7 +602,10 @@
     },
     "answer": "B",
     "difficulty": 4,
-    "explanation": "In eukaryotic cells, transcription (the synthesis of RNA from a DNA template) occurs in the nucleus, where the cell's primary genetic material is housed."
+    "explanation": "In eukaryotic cells, transcription (the synthesis of RNA from a DNA template) occurs in the nucleus, where the cell's primary genetic material is housed.",
+    "correct_key": "B",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_110",
@@ -504,7 +618,10 @@
     },
     "answer": "C",
     "difficulty": 4,
-    "explanation": "Transcription, the synthesis of an RNA molecule from a DNA template, takes place in the nucleus of eukaryotic cells. In prokaryotes, which lack a nucleus, transcription occurs in the cytoplasm. Ribosomes are the sites of translation. The Golgi apparatus is involved in modifying, sorting, and packaging proteins and lipids."
+    "explanation": "Transcription, the synthesis of an RNA molecule from a DNA template, takes place in the nucleus of eukaryotic cells. In prokaryotes, which lack a nucleus, transcription occurs in the cytoplasm. Ribosomes are the sites of translation. The Golgi apparatus is involved in modifying, sorting, and packaging proteins and lipids.",
+    "correct_key": "C",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_65",
@@ -517,7 +634,10 @@
     },
     "answer": "C",
     "difficulty": 4,
-    "explanation": "The cytoskeleton, composed of various protein filaments (microtubules, microfilaments, intermediate filaments), provides structural support, maintains cell shape, anchors organelles, and enables cell movement (e.g., cell crawling, muscle contraction, flagellar movement). Energy production is by mitochondria, protein synthesis by ribosomes, and genetic material storage by the nucleus (in eukaryotes)."
+    "explanation": "The cytoskeleton, composed of various protein filaments (microtubules, microfilaments, intermediate filaments), provides structural support, maintains cell shape, anchors organelles, and enables cell movement (e.g., cell crawling, muscle contraction, flagellar movement). Energy production is by mitochondria, protein synthesis by ribosomes, and genetic material storage by the nucleus (in eukaryotes).",
+    "correct_key": "C",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_81",
@@ -530,7 +650,10 @@
     },
     "answer": "D",
     "difficulty": 7,
-    "explanation": "A frameshift mutation alters the reading frame of the genetic code. Insertions or deletions of nucleotides that are not in multiples of three will shift the reading frame, changing every subsequent codon and thus the amino acid sequence."
+    "explanation": "A frameshift mutation alters the reading frame of the genetic code. Insertions or deletions of nucleotides that are not in multiples of three will shift the reading frame, changing every subsequent codon and thus the amino acid sequence.",
+    "correct_key": "D",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_94",
@@ -543,7 +666,10 @@
     },
     "answer": "D",
     "difficulty": 4,
-    "explanation": "Active transport is the movement of molecules across a cell membrane from a region of lower concentration to a region of higher concentration, requiring cellular energy, typically in the form of ATP."
+    "explanation": "Active transport is the movement of molecules across a cell membrane from a region of lower concentration to a region of higher concentration, requiring cellular energy, typically in the form of ATP.",
+    "correct_key": "D",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_248",
@@ -556,7 +682,10 @@
     },
     "answer": "B",
     "difficulty": 5,
-    "explanation": "A cross between Rr and rr produces offspring with genotypes Rr and rr in a 1:1 ratio. Therefore, 1/2 of the offspring will have the dominant phenotype (red flowers)."
+    "explanation": "A cross between Rr and rr produces offspring with genotypes Rr and rr in a 1:1 ratio. Therefore, 1/2 of the offspring will have the dominant phenotype (red flowers).",
+    "correct_key": "B",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_27",
@@ -569,7 +698,10 @@
     },
     "answer": "B",
     "difficulty": 4,
-    "explanation": "Crossing over, which occurs during prophase I of meiosis after synapsis (pairing of homologous chromosomes), is the exchange of genetic material between non-sister chromatids of homologous chromosomes, leading to genetic recombination."
+    "explanation": "Crossing over, which occurs during prophase I of meiosis after synapsis (pairing of homologous chromosomes), is the exchange of genetic material between non-sister chromatids of homologous chromosomes, leading to genetic recombination.",
+    "correct_key": "B",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_241",
@@ -582,7 +714,10 @@
     },
     "answer": "A",
     "difficulty": 5,
-    "explanation": "Degeneracy of the genetic code means that multiple codons can code for the same amino acid. This redundancy can help buffer against mutations."
+    "explanation": "Degeneracy of the genetic code means that multiple codons can code for the same amino acid. This redundancy can help buffer against mutations.",
+    "correct_key": "A",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_172",
@@ -595,7 +730,10 @@
     },
     "answer": "A",
     "difficulty": 8,
-    "explanation": "In Hardy-Weinberg equilibrium, p + q = 1 and p^2 + 2pq + q^2 = 1. If q = 0.4, then p = 1 - q = 1 - 0.4 = 0.6. The frequency of the homozygous dominant genotype (p^2) is then (0.6)^2 = 0.36."
+    "explanation": "In Hardy-Weinberg equilibrium, p + q = 1 and p^2 + 2pq + q^2 = 1. If q = 0.4, then p = 1 - q = 1 - 0.4 = 0.6. The frequency of the homozygous dominant genotype (p^2) is then (0.6)^2 = 0.36.",
+    "correct_key": "A",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_208",
@@ -608,7 +746,10 @@
     },
     "answer": "D",
     "difficulty": 4,
-    "explanation": "Cellular respiration is the metabolic process that converts biochemical energy from nutrients into adenosine triphosphate (ATP), the main energy currency of the cell."
+    "explanation": "Cellular respiration is the metabolic process that converts biochemical energy from nutrients into adenosine triphosphate (ATP), the main energy currency of the cell.",
+    "correct_key": "D",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_71",
@@ -621,7 +762,10 @@
     },
     "answer": "A",
     "difficulty": 7,
-    "explanation": "The hurricane acts as a strong selective pressure and also causes a population bottleneck. A smaller population size makes genetic drift (random fluctuations in allele frequencies) a more significant evolutionary force. Survival and reproduction become more influenced by chance events rather than solely by adaptive traits. While other factors like gene flow could theoretically occur, the immediate and most likely consequence of such a drastic event on a reduced population is increased genetic drift."
+    "explanation": "The hurricane acts as a strong selective pressure and also causes a population bottleneck. A smaller population size makes genetic drift (random fluctuations in allele frequencies) a more significant evolutionary force. Survival and reproduction become more influenced by chance events rather than solely by adaptive traits. While other factors like gene flow could theoretically occur, the immediate and most likely consequence of such a drastic event on a reduced population is increased genetic drift.",
+    "correct_key": "A",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_14",
@@ -634,7 +778,10 @@
     },
     "answer": "A",
     "difficulty": 8,
-    "explanation": "The guide RNA (gRNA) base-pairs with the complementary target DNA sequence, directing the Cas9 nuclease to cut at that specific location."
+    "explanation": "The guide RNA (gRNA) base-pairs with the complementary target DNA sequence, directing the Cas9 nuclease to cut at that specific location.",
+    "correct_key": "A",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_227",
@@ -647,7 +794,10 @@
     },
     "answer": "A",
     "difficulty": 6,
-    "explanation": "The drought reduces nutrient availability. Deer with smaller antlers likely require fewer nutrients for growth and maintenance, making them better able to survive and reproduce under these conditions. This would lead to an increase in the frequency of alleles for smaller antlers in the population."
+    "explanation": "The drought reduces nutrient availability. Deer with smaller antlers likely require fewer nutrients for growth and maintenance, making them better able to survive and reproduce under these conditions. This would lead to an increase in the frequency of alleles for smaller antlers in the population.",
+    "correct_key": "A",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_152",
@@ -660,7 +810,10 @@
     },
     "answer": "A",
     "difficulty": 4,
-    "explanation": "Phospholipids are amphipathic molecules with a hydrophilic head and hydrophobic tails. This property allows them to spontaneously form a bilayer in an aqueous environment, creating the fundamental structure of cell membranes."
+    "explanation": "Phospholipids are amphipathic molecules with a hydrophilic head and hydrophobic tails. This property allows them to spontaneously form a bilayer in an aqueous environment, creating the fundamental structure of cell membranes.",
+    "correct_key": "A",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_111",
@@ -673,7 +826,10 @@
     },
     "answer": "D",
     "difficulty": 6,
-    "explanation": "A loss-of-function mutation results in a gene product (in this case, an enzyme) having reduced or no function. The inability to bind to the substrate directly impairs the enzyme's catalytic activity. While this might be caused by a missense mutation (changing an amino acid), the consequence described is a loss of function."
+    "explanation": "A loss-of-function mutation results in a gene product (in this case, an enzyme) having reduced or no function. The inability to bind to the substrate directly impairs the enzyme's catalytic activity. While this might be caused by a missense mutation (changing an amino acid), the consequence described is a loss of function.",
+    "correct_key": "D",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_177",
@@ -686,7 +842,10 @@
     },
     "answer": "A",
     "difficulty": 4,
-    "explanation": "In a hypotonic solution, the water potential is higher outside the cell. Water moves by osmosis from an area of higher water potential to an area of lower water potential, thus into the cell. The cell wall prevents bursting, leading to turgor pressure."
+    "explanation": "In a hypotonic solution, the water potential is higher outside the cell. Water moves by osmosis from an area of higher water potential to an area of lower water potential, thus into the cell. The cell wall prevents bursting, leading to turgor pressure.",
+    "correct_key": "A",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_285",
@@ -699,7 +858,10 @@
     },
     "answer": "C",
     "difficulty": 7,
-    "explanation": "Epigenetic changes can influence which genes are turned on or off and can sometimes be passed down to offspring. This represents a mechanism of variation that is inheritable, though it does not involve changes to the DNA sequence itself."
+    "explanation": "Epigenetic changes can influence which genes are turned on or off and can sometimes be passed down to offspring. This represents a mechanism of variation that is inheritable, though it does not involve changes to the DNA sequence itself.",
+    "correct_key": "C",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_11",
@@ -712,7 +874,10 @@
     },
     "answer": "A",
     "difficulty": 7,
-    "explanation": "Second messengers like cAMP amplify signals through a cascade: one activated receptor \u2192 many cAMP molecules \u2192 many activated kinases \u2192 large cellular response."
+    "explanation": "Second messengers like cAMP amplify signals through a cascade: one activated receptor → many cAMP molecules → many activated kinases → large cellular response.",
+    "correct_key": "A",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_260",
@@ -725,7 +890,10 @@
     },
     "answer": "B",
     "difficulty": 7,
-    "explanation": "A point mutation involves a change in a single nucleotide base. Depending on the altered codon, it can result in a silent mutation (no amino acid change), a missense mutation (different amino acid), or a nonsense mutation (premature stop)."
+    "explanation": "A point mutation involves a change in a single nucleotide base. Depending on the altered codon, it can result in a silent mutation (no amino acid change), a missense mutation (different amino acid), or a nonsense mutation (premature stop).",
+    "correct_key": "B",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_271",
@@ -738,7 +906,10 @@
     },
     "answer": "D",
     "difficulty": 8,
-    "explanation": "RuBisCO is the enzyme that catalyzes the initial step of carbon fixation in the Calvin cycle, where CO2 is attached to RuBP."
+    "explanation": "RuBisCO is the enzyme that catalyzes the initial step of carbon fixation in the Calvin cycle, where CO2 is attached to RuBP.",
+    "correct_key": "D",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_135",
@@ -751,7 +922,10 @@
     },
     "answer": "C",
     "difficulty": 5,
-    "explanation": "Eukaryotic cells are characterized by the presence of a true nucleus enclosed by a nuclear membrane, which houses the cell's genetic material. Prokaryotic cells lack a membrane-bound nucleus."
+    "explanation": "Eukaryotic cells are characterized by the presence of a true nucleus enclosed by a nuclear membrane, which houses the cell's genetic material. Prokaryotic cells lack a membrane-bound nucleus.",
+    "correct_key": "C",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_3",
@@ -764,7 +938,10 @@
     },
     "answer": "A",
     "difficulty": 6,
-    "explanation": "Crossing over exchanges segments of homologous chromosomes, creating new combinations of alleles and increasing genetic variation."
+    "explanation": "Crossing over exchanges segments of homologous chromosomes, creating new combinations of alleles and increasing genetic variation.",
+    "correct_key": "A",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_168",
@@ -777,7 +954,10 @@
     },
     "answer": "B",
     "difficulty": 5,
-    "explanation": "A larger rabbit population provides more food for the foxes. This increased availability of resources allows the fox population to grow, assuming other factors are not limiting."
+    "explanation": "A larger rabbit population provides more food for the foxes. This increased availability of resources allows the fox population to grow, assuming other factors are not limiting.",
+    "correct_key": "B",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_33",
@@ -790,7 +970,10 @@
     },
     "answer": "B",
     "difficulty": 5,
-    "explanation": "Enzymes are proteins with specific three-dimensional structures. High temperatures can disrupt these structures (denaturation), altering the active site and leading to a loss of function. While enzyme activity generally increases with temperature due to increased kinetic energy, this effect is limited by denaturation."
+    "explanation": "Enzymes are proteins with specific three-dimensional structures. High temperatures can disrupt these structures (denaturation), altering the active site and leading to a loss of function. While enzyme activity generally increases with temperature due to increased kinetic energy, this effect is limited by denaturation.",
+    "correct_key": "B",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_126",
@@ -803,7 +986,10 @@
     },
     "answer": "B",
     "difficulty": 6,
-    "explanation": "Natural selection occurs when individuals with certain traits have a higher survival and reproductive rate than individuals without those traits. If darker fur provided a survival advantage (e.g., camouflage from predators), the frequency of alleles for dark fur would increase in the population over time."
+    "explanation": "Natural selection occurs when individuals with certain traits have a higher survival and reproductive rate than individuals without those traits. If darker fur provided a survival advantage (e.g., camouflage from predators), the frequency of alleles for dark fur would increase in the population over time.",
+    "correct_key": "B",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_186",
@@ -816,7 +1002,10 @@
     },
     "answer": "B",
     "difficulty": 7,
-    "explanation": "A genetic bottleneck significantly reduces population size, leading to a loss of genetic variation. The surviving individuals may not represent the original genetic diversity, and allele frequencies can shift drastically."
+    "explanation": "A genetic bottleneck significantly reduces population size, leading to a loss of genetic variation. The surviving individuals may not represent the original genetic diversity, and allele frequencies can shift drastically.",
+    "correct_key": "B",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_153",
@@ -829,7 +1018,10 @@
     },
     "answer": "D",
     "difficulty": 5,
-    "explanation": "Oxidative phosphorylation, which includes the electron transport chain and chemiosmosis, is the stage where the proton gradient generated by the redox reactions of glycolysis and the Krebs cycle is used to produce the most ATP."
+    "explanation": "Oxidative phosphorylation, which includes the electron transport chain and chemiosmosis, is the stage where the proton gradient generated by the redox reactions of glycolysis and the Krebs cycle is used to produce the most ATP.",
+    "correct_key": "D",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_20",
@@ -842,7 +1034,10 @@
     },
     "answer": "A",
     "difficulty": 7,
-    "explanation": "Type I (e.g., humans) shows low early mortality; Type III (e.g., oysters) shows very high early mortality with survivors persisting. B reverses the reproductive strategies."
+    "explanation": "Type I (e.g., humans) shows low early mortality; Type III (e.g., oysters) shows very high early mortality with survivors persisting. B reverses the reproductive strategies.",
+    "correct_key": "A",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_57",
@@ -855,7 +1050,10 @@
     },
     "answer": "C",
     "difficulty": 6,
-    "explanation": "The ABO blood group system involves three alleles (I^A, I^B, i), so it exhibits multiple alleles. Alleles I^A and I^B are codominant, meaning both A and B antigens are expressed when both alleles are present (blood type AB). Allele i is recessive to both I^A and I^B. Complete dominance is seen with allele i and the other two alleles. Sex-linked is incorrect as the genes are on autosomes. Recessive epistasis is a different gene interaction."
+    "explanation": "The ABO blood group system involves three alleles (I^A, I^B, i), so it exhibits multiple alleles. Alleles I^A and I^B are codominant, meaning both A and B antigens are expressed when both alleles are present (blood type AB). Allele i is recessive to both I^A and I^B. Complete dominance is seen with allele i and the other two alleles. Sex-linked is incorrect as the genes are on autosomes. Recessive epistasis is a different gene interaction.",
+    "correct_key": "C",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_294",
@@ -868,7 +1066,10 @@
     },
     "answer": "A",
     "difficulty": 4,
-    "explanation": "The biological hierarchy of organization typically progresses from the basic unit of life (cell) to more complex structures: cells group to form tissues, tissues organize into organs, organs work together in organ systems, and all organ systems constitute a complete organism."
+    "explanation": "The biological hierarchy of organization typically progresses from the basic unit of life (cell) to more complex structures: cells group to form tissues, tissues organize into organs, organs work together in organ systems, and all organ systems constitute a complete organism.",
+    "correct_key": "A",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_107",
@@ -881,7 +1082,10 @@
     },
     "answer": "D",
     "difficulty": 4,
-    "explanation": "The presence of mitochondria indicates the cell is eukaryotic. Bacteria (A) are prokaryotic and lack mitochondria and a nucleus (where DNA is typically housed in eukaryotes). Viruses (B) are not cells and possess either DNA or RNA, but not both, and lack cellular components like ribosomes. Fungal cells (C) are eukaryotic and have mitochondria, ribosomes, and a plasma membrane, but the question specifically lists DNA suggesting a nucleus or organized genetic material typical of eukaryotes. While fungi fit, the combination and the explicit mention of 'DNA' strongly points towards a typical eukaryotic cell structure that includes a nucleus. If we assume 'DNA' implies the typical eukaryotic organization within a nucleus, then plant and fungal cells fit. However, the presence of mitochondria is a defining feature of eukaryotic cells. Bacteria lack mitochondria. Viruses are not cells. Between plant and fungal cells, both are eukaryotic. Usually, problems like this give a more distinguishing feature. Let's re-read. DNA, ribosomes, plasma membrane, mitochondria. All are present in plant cells. All are present in fungal cells. Are there any subtle hints? No. However, 'DNA' usually implies the organized genome in eukaryotes. If the question was 'DNA in a nucleus', it would be clearer. Let's assume it's a general representative eukaryotic cell. Both B and C are plausible. Let's consider typical textbook examples. Often, plant cells are used to illustrate eukaryotic structure. Is there anything inherently more 'plant-like' that could be implied? No. Wait, if the question was meant to be broader, it could be any eukaryote. But given 'B' and 'C' as options, and only one correct answer... Let's reconsider bacteria. Bacteria have DNA and ribosomes and a plasma membrane, but *lack* mitochondria. Viruses are acellular. So it must be a eukaryote. Both B and C are eukaryotes. Without a cell wall (specific type), chloroplasts, or a large central vacuole (plant), or chitin cell walls (fungi), it's hard to distinguish. Perhaps the question is flawed or relies on a common assumption. Let's assume the question intends to test basic eukaryotic organelle presence. Both B and C fit. If forced to choose, and assuming a typical introductory biology context, plant cells are frequently used examples of eukaryotic cells with mitochondria. Let's stick with B."
+    "explanation": "The presence of mitochondria indicates the cell is eukaryotic. Bacteria (A) are prokaryotic and lack mitochondria and a nucleus (where DNA is typically housed in eukaryotes). Viruses (B) are not cells and possess either DNA or RNA, but not both, and lack cellular components like ribosomes. Fungal cells (C) are eukaryotic and have mitochondria, ribosomes, and a plasma membrane, but the question specifically lists DNA suggesting a nucleus or organized genetic material typical of eukaryotes. While fungi fit, the combination and the explicit mention of 'DNA' strongly points towards a typical eukaryotic cell structure that includes a nucleus. If we assume 'DNA' implies the typical eukaryotic organization within a nucleus, then plant and fungal cells fit. However, the presence of mitochondria is a defining feature of eukaryotic cells. Bacteria lack mitochondria. Viruses are not cells. Between plant and fungal cells, both are eukaryotic. Usually, problems like this give a more distinguishing feature. Let's re-read. DNA, ribosomes, plasma membrane, mitochondria. All are present in plant cells. All are present in fungal cells. Are there any subtle hints? No. However, 'DNA' usually implies the organized genome in eukaryotes. If the question was 'DNA in a nucleus', it would be clearer. Let's assume it's a general representative eukaryotic cell. Both B and C are plausible. Let's consider typical textbook examples. Often, plant cells are used to illustrate eukaryotic structure. Is there anything inherently more 'plant-like' that could be implied? No. Wait, if the question was meant to be broader, it could be any eukaryote. But given 'B' and 'C' as options, and only one correct answer... Let's reconsider bacteria. Bacteria have DNA and ribosomes and a plasma membrane, but *lack* mitochondria. Viruses are acellular. So it must be a eukaryote. Both B and C are eukaryotes. Without a cell wall (specific type), chloroplasts, or a large central vacuole (plant), or chitin cell walls (fungi), it's hard to distinguish. Perhaps the question is flawed or relies on a common assumption. Let's assume the question intends to test basic eukaryotic organelle presence. Both B and C fit. If forced to choose, and assuming a typical introductory biology context, plant cells are frequently used examples of eukaryotic cells with mitochondria. Let's stick with B.",
+    "correct_key": "D",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_295",
@@ -894,7 +1098,10 @@
     },
     "answer": "C",
     "difficulty": 6,
-    "explanation": "Mutations in somatic cells (body cells) affect only the individual and cannot be passed on to their reproductive cells (gametes). Therefore, such mutations are not inherited by offspring. Germ-line mutations, occurring in gametes, are heritable."
+    "explanation": "Mutations in somatic cells (body cells) affect only the individual and cannot be passed on to their reproductive cells (gametes). Therefore, such mutations are not inherited by offspring. Germ-line mutations, occurring in gametes, are heritable.",
+    "correct_key": "C",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_62",
@@ -907,7 +1114,10 @@
     },
     "answer": "B",
     "difficulty": 6,
-    "explanation": "A population bottleneck occurs when a population's size is severely reduced, often by a natural disaster or disease. The surviving individuals may not be representative of the original population's genetic diversity, leading to reduced allele frequencies and potential fixation of certain alleles by chance."
+    "explanation": "A population bottleneck occurs when a population's size is severely reduced, often by a natural disaster or disease. The surviving individuals may not be representative of the original population's genetic diversity, leading to reduced allele frequencies and potential fixation of certain alleles by chance.",
+    "correct_key": "B",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_300",
@@ -920,7 +1130,10 @@
     },
     "answer": "C",
     "difficulty": 6,
-    "explanation": "Density-dependent factors are those whose effects on the size or growth of the population vary with the population density. Competition for resources (food, water, space) intensifies as population density increases, thus limiting growth."
+    "explanation": "Density-dependent factors are those whose effects on the size or growth of the population vary with the population density. Competition for resources (food, water, space) intensifies as population density increases, thus limiting growth.",
+    "correct_key": "C",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_192",
@@ -933,7 +1146,10 @@
     },
     "answer": "C",
     "difficulty": 7,
-    "explanation": "The electron transport chain is crucial for generating the majority of ATP during aerobic respiration. A mutation affecting its function would impair ATP synthesis."
+    "explanation": "The electron transport chain is crucial for generating the majority of ATP during aerobic respiration. A mutation affecting its function would impair ATP synthesis.",
+    "correct_key": "C",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_10",
@@ -946,7 +1162,10 @@
     },
     "answer": "A",
     "difficulty": 8,
-    "explanation": "Geographic separation (allopatric) led to divergence, and the resulting behavioral difference (distinct mating calls) creates reproductive isolation."
+    "explanation": "Geographic separation (allopatric) led to divergence, and the resulting behavioral difference (distinct mating calls) creates reproductive isolation.",
+    "correct_key": "A",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_235",
@@ -959,7 +1178,10 @@
     },
     "answer": "B",
     "difficulty": 4,
-    "explanation": "ATP (adenosine triphosphate) is the main energy currency of the cell. The energy released from the breakdown of glucose during cellular respiration is used to synthesize ATP, which then powers various cellular processes."
+    "explanation": "ATP (adenosine triphosphate) is the main energy currency of the cell. The energy released from the breakdown of glucose during cellular respiration is used to synthesize ATP, which then powers various cellular processes.",
+    "correct_key": "B",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_226",
@@ -972,7 +1194,10 @@
     },
     "answer": "C",
     "difficulty": 6,
-    "explanation": "The bottleneck effect is a sharp reduction in the size of a population due to environmental events or human activities, and the subsequent change in allele frequencies due to the survivors is an example of genetic drift."
+    "explanation": "The bottleneck effect is a sharp reduction in the size of a population due to environmental events or human activities, and the subsequent change in allele frequencies due to the survivors is an example of genetic drift.",
+    "correct_key": "C",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_53",
@@ -985,7 +1210,10 @@
     },
     "answer": "D",
     "difficulty": 6,
-    "explanation": "Chemosynthesis is the biological conversion of chemical energy into organic compounds. Organisms that perform chemosynthesis, typically found in environments like deep-sea vents where sunlight is absent, use the energy released from the oxidation of inorganic molecules (like hydrogen sulfide, ammonia, or ferrous ions) to synthesize organic matter. Photosynthesis uses light energy."
+    "explanation": "Chemosynthesis is the biological conversion of chemical energy into organic compounds. Organisms that perform chemosynthesis, typically found in environments like deep-sea vents where sunlight is absent, use the energy released from the oxidation of inorganic molecules (like hydrogen sulfide, ammonia, or ferrous ions) to synthesize organic matter. Photosynthesis uses light energy.",
+    "correct_key": "D",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_69",
@@ -998,7 +1226,10 @@
     },
     "answer": "C",
     "difficulty": 5,
-    "explanation": "The endosymbiotic theory explains the origin of eukaryotic organelles like mitochondria and chloroplasts. It suggests that these organelles were once free-living prokaryotes that were engulfed by another primitive cell and formed a symbiotic relationship, eventually becoming integrated into the host cell."
+    "explanation": "The endosymbiotic theory explains the origin of eukaryotic organelles like mitochondria and chloroplasts. It suggests that these organelles were once free-living prokaryotes that were engulfed by another primitive cell and formed a symbiotic relationship, eventually becoming integrated into the host cell.",
+    "correct_key": "C",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_16",
@@ -1011,7 +1242,10 @@
     },
     "answer": "A",
     "difficulty": 6,
-    "explanation": "Energy is lost at each trophic level (~90%), so biomass decreases with each level. Tertiary consumers, at the top, have the least total biomass."
+    "explanation": "Energy is lost at each trophic level (~90%), so biomass decreases with each level. Tertiary consumers, at the top, have the least total biomass.",
+    "correct_key": "A",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_54",
@@ -1024,7 +1258,10 @@
     },
     "answer": "C",
     "difficulty": 4,
-    "explanation": "Stomata are pores, typically on the underside of leaves, surrounded by guard cells. They regulate the exchange of gases, allowing carbon dioxide to enter for photosynthesis and oxygen to exit as a byproduct. They also control the release of water vapor through transpiration."
+    "explanation": "Stomata are pores, typically on the underside of leaves, surrounded by guard cells. They regulate the exchange of gases, allowing carbon dioxide to enter for photosynthesis and oxygen to exit as a byproduct. They also control the release of water vapor through transpiration.",
+    "correct_key": "C",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_17",
@@ -1037,7 +1274,10 @@
     },
     "answer": "D",
     "difficulty": 8,
-    "explanation": "p = freq(D) = 0.49 + 0.42/2 = 0.7. q = 0.3. Expected: p\u00b2 = 0.49, 2pq = 0.42, q\u00b2 = 0.09. These match the observed frequencies."
+    "explanation": "p = freq(D) = 0.49 + 0.42/2 = 0.7. q = 0.3. Expected: p² = 0.49, 2pq = 0.42, q² = 0.09. These match the observed frequencies.",
+    "correct_key": "D",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_228",
@@ -1050,7 +1290,10 @@
     },
     "answer": "B",
     "difficulty": 7,
-    "explanation": "Phosphorylation is often a key mechanism for activating proteins in a signaling cascade. A phosphatase removes phosphate groups, effectively reverting the proteins to their inactive state, thereby terminating or reducing the downstream cellular response."
+    "explanation": "Phosphorylation is often a key mechanism for activating proteins in a signaling cascade. A phosphatase removes phosphate groups, effectively reverting the proteins to their inactive state, thereby terminating or reducing the downstream cellular response.",
+    "correct_key": "B",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_206",
@@ -1063,7 +1306,10 @@
     },
     "answer": "D",
     "difficulty": 5,
-    "explanation": "Natural selection occurs when environmental pressures (the antibiotic) select for individuals with advantageous traits (resistance), leading to increased survival and reproduction of those individuals."
+    "explanation": "Natural selection occurs when environmental pressures (the antibiotic) select for individuals with advantageous traits (resistance), leading to increased survival and reproduction of those individuals.",
+    "correct_key": "D",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_182",
@@ -1076,7 +1322,10 @@
     },
     "answer": "D",
     "difficulty": 5,
-    "explanation": "Codominance occurs when both alleles for a trait are fully and simultaneously expressed in the phenotype. In type AB blood, both A and B antigens are present."
+    "explanation": "Codominance occurs when both alleles for a trait are fully and simultaneously expressed in the phenotype. In type AB blood, both A and B antigens are present.",
+    "correct_key": "D",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_121",
@@ -1089,7 +1338,10 @@
     },
     "answer": "C",
     "difficulty": 6,
-    "explanation": "The formation of a land bridge allowing interaction and potential interbreeding between populations directly facilitates the movement of individuals and their genes between the populations. This movement of alleles is known as gene flow. While natural selection (D) would continue to act on the different beak shapes and diets, and genetic drift (B) might still occur, the most direct and immediate impact of the land bridge allowing interaction is on gene flow."
+    "explanation": "The formation of a land bridge allowing interaction and potential interbreeding between populations directly facilitates the movement of individuals and their genes between the populations. This movement of alleles is known as gene flow. While natural selection (D) would continue to act on the different beak shapes and diets, and genetic drift (B) might still occur, the most direct and immediate impact of the land bridge allowing interaction is on gene flow.",
+    "correct_key": "C",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_139",
@@ -1102,7 +1354,10 @@
     },
     "answer": "C",
     "difficulty": 6,
-    "explanation": "Each tRNA molecule has an anticodon that pairs with a complementary codon on the mRNA and carries the corresponding amino acid to the ribosome for assembly into a polypeptide chain."
+    "explanation": "Each tRNA molecule has an anticodon that pairs with a complementary codon on the mRNA and carries the corresponding amino acid to the ribosome for assembly into a polypeptide chain.",
+    "correct_key": "C",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_74",
@@ -1115,7 +1370,10 @@
     },
     "answer": "B",
     "difficulty": 6,
-    "explanation": "The cylinder in Solution X gained mass because water moved into it \u2014 the solution is hypotonic (lower solute concentration) relative to the potato. The cylinder in Solution Y lost mass because water moved out \u2014 the solution is hypertonic (higher solute concentration) relative to the potato. This is a classic osmosis demonstration."
+    "explanation": "The cylinder in Solution X gained mass because water moved into it — the solution is hypotonic (lower solute concentration) relative to the potato. The cylinder in Solution Y lost mass because water moved out — the solution is hypertonic (higher solute concentration) relative to the potato. This is a classic osmosis demonstration.",
+    "correct_key": "B",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_286",
@@ -1128,7 +1386,10 @@
     },
     "answer": "D",
     "difficulty": 5,
-    "explanation": "The primary output of the Calvin cycle is G3P (glyceraldehyde-3-phosphate), which is then used to synthesize glucose and other organic molecules. Therefore, the cycle effectively converts carbon dioxide into sugars."
+    "explanation": "The primary output of the Calvin cycle is G3P (glyceraldehyde-3-phosphate), which is then used to synthesize glucose and other organic molecules. Therefore, the cycle effectively converts carbon dioxide into sugars.",
+    "correct_key": "D",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_236",
@@ -1141,7 +1402,10 @@
     },
     "answer": "B",
     "difficulty": 5,
-    "explanation": "Turgor pressure is caused by water entering the plant cell by osmosis. If the cell is placed in a hypertonic solution, water will leave the cell, causing it to become flaccid and lose turgor pressure (plasmolysis)."
+    "explanation": "Turgor pressure is caused by water entering the plant cell by osmosis. If the cell is placed in a hypertonic solution, water will leave the cell, causing it to become flaccid and lose turgor pressure (plasmolysis).",
+    "correct_key": "B",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_89",
@@ -1154,7 +1418,10 @@
     },
     "answer": "B",
     "difficulty": 5,
-    "explanation": "Phylogenetic trees represent evolutionary relationships. A more recent common ancestor signifies a closer evolutionary relationship between the taxa branching from that ancestor."
+    "explanation": "Phylogenetic trees represent evolutionary relationships. A more recent common ancestor signifies a closer evolutionary relationship between the taxa branching from that ancestor.",
+    "correct_key": "B",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_132",
@@ -1167,7 +1434,10 @@
     },
     "answer": "C",
     "difficulty": 5,
-    "explanation": "For an autosomal recessive disorder, if both parents are heterozygous carriers (Aa), a Punnett square (AA, Aa, Aa, aa) shows a 1 in 4 (25%) chance of an offspring inheriting the homozygous recessive genotype (aa), which expresses the disorder."
+    "explanation": "For an autosomal recessive disorder, if both parents are heterozygous carriers (Aa), a Punnett square (AA, Aa, Aa, aa) shows a 1 in 4 (25%) chance of an offspring inheriting the homozygous recessive genotype (aa), which expresses the disorder.",
+    "correct_key": "C",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_98",
@@ -1180,7 +1450,10 @@
     },
     "answer": "B",
     "difficulty": 4,
-    "explanation": "A hypertonic solution has a higher solute concentration and thus a lower water potential than the cell's cytoplasm. Water moves by osmosis from an area of higher water potential (inside the cell) to an area of lower water potential (the surrounding solution), causing the cell to lose water and shrink (plasmolysis). The cell wall provides structural support but does not prevent water movement or significant shrinkage of the plasma membrane away from the wall."
+    "explanation": "A hypertonic solution has a higher solute concentration and thus a lower water potential than the cell's cytoplasm. Water moves by osmosis from an area of higher water potential (inside the cell) to an area of lower water potential (the surrounding solution), causing the cell to lose water and shrink (plasmolysis). The cell wall provides structural support but does not prevent water movement or significant shrinkage of the plasma membrane away from the wall.",
+    "correct_key": "B",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_106",
@@ -1193,7 +1466,10 @@
     },
     "answer": "B",
     "difficulty": 4,
-    "explanation": "The light-dependent reactions capture light energy and convert it into chemical energy in the form of ATP and NADPH. These molecules are then used in the light-independent reactions (Calvin cycle) to synthesize glucose. While water is split (photolysis) to release oxygen (C), and CO2 fixation occurs in the Calvin cycle (A, D), the primary output of the light reactions themselves are ATP and NADPH."
+    "explanation": "The light-dependent reactions capture light energy and convert it into chemical energy in the form of ATP and NADPH. These molecules are then used in the light-independent reactions (Calvin cycle) to synthesize glucose. While water is split (photolysis) to release oxygen (C), and CO2 fixation occurs in the Calvin cycle (A, D), the primary output of the light reactions themselves are ATP and NADPH.",
+    "correct_key": "B",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_276",
@@ -1206,7 +1482,10 @@
     },
     "answer": "B",
     "difficulty": 4,
-    "explanation": "Natural selection favors traits that enhance survival and reproduction. In this scenario, longer hind legs provide a survival advantage, leading to increased reproductive success for individuals possessing the alleles for longer legs. Consequently, the frequency of these alleles will rise in the gene pool over time."
+    "explanation": "Natural selection favors traits that enhance survival and reproduction. In this scenario, longer hind legs provide a survival advantage, leading to increased reproductive success for individuals possessing the alleles for longer legs. Consequently, the frequency of these alleles will rise in the gene pool over time.",
+    "correct_key": "B",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_9",
@@ -1219,7 +1498,10 @@
     },
     "answer": "A",
     "difficulty": 7,
-    "explanation": "Insertions or deletions shift the reading frame, changing all subsequent codons and typically producing a nonfunctional protein."
+    "explanation": "Insertions or deletions shift the reading frame, changing all subsequent codons and typically producing a nonfunctional protein.",
+    "correct_key": "A",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_133",
@@ -1232,7 +1514,10 @@
     },
     "answer": "C",
     "difficulty": 4,
-    "explanation": "Binary fission is the primary mode of asexual reproduction in prokaryotes. The cell divides into two identical daughter cells without the complex stages of mitosis in eukaryotes."
+    "explanation": "Binary fission is the primary mode of asexual reproduction in prokaryotes. The cell divides into two identical daughter cells without the complex stages of mitosis in eukaryotes.",
+    "correct_key": "C",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_38",
@@ -1245,7 +1530,10 @@
     },
     "answer": "C",
     "difficulty": 5,
-    "explanation": "Prokaryotic cells, like bacteria, lack a membrane-bound nucleus and other membrane-bound organelles. They typically possess a cell wall, often composed of peptidoglycan. Their genetic material is usually a circular chromosome located in the nucleoid region."
+    "explanation": "Prokaryotic cells, like bacteria, lack a membrane-bound nucleus and other membrane-bound organelles. They typically possess a cell wall, often composed of peptidoglycan. Their genetic material is usually a circular chromosome located in the nucleoid region.",
+    "correct_key": "C",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_15",
@@ -1258,7 +1546,10 @@
     },
     "answer": "A",
     "difficulty": 7,
-    "explanation": "Maximum expression requires: (1) lactose present to inactivate the repressor, and (2) glucose absent so cAMP levels are high, activating CAP to enhance transcription."
+    "explanation": "Maximum expression requires: (1) lactose present to inactivate the repressor, and (2) glucose absent so cAMP levels are high, activating CAP to enhance transcription.",
+    "correct_key": "A",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_204",
@@ -1271,7 +1562,10 @@
     },
     "answer": "C",
     "difficulty": 5,
-    "explanation": "The cross is Tt x tt. The possible gametes from Tt are T and t. The possible gametes from tt are both t. The offspring genotypes will be Tt and tt, each with a 50% probability. Thus, 50% of the offspring will be short (tt)."
+    "explanation": "The cross is Tt x tt. The possible gametes from Tt are T and t. The possible gametes from tt are both t. The offspring genotypes will be Tt and tt, each with a 50% probability. Thus, 50% of the offspring will be short (tt).",
+    "correct_key": "C",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_113",
@@ -1284,7 +1578,10 @@
     },
     "answer": "C",
     "difficulty": 6,
-    "explanation": "Directional selection favors individuals at one extreme end of the phenotypic range. In this case, favoring larger body size leads to an increase in the average size of the population over time. Stabilizing selection favors intermediate phenotypes, disruptive selection favors both extremes, and a decreased mutation rate would slow down evolution, not necessarily drive a specific trend."
+    "explanation": "Directional selection favors individuals at one extreme end of the phenotypic range. In this case, favoring larger body size leads to an increase in the average size of the population over time. Stabilizing selection favors intermediate phenotypes, disruptive selection favors both extremes, and a decreased mutation rate would slow down evolution, not necessarily drive a specific trend.",
+    "correct_key": "C",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_130",
@@ -1297,7 +1594,10 @@
     },
     "answer": "B",
     "difficulty": 5,
-    "explanation": "A vestigial structure is a reduced or incompletely developed structure that had a functional or greater significance in an ancestor. The human appendix is thought to be a remnant of a larger cecum used for digesting cellulose in herbivorous ancestors."
+    "explanation": "A vestigial structure is a reduced or incompletely developed structure that had a functional or greater significance in an ancestor. The human appendix is thought to be a remnant of a larger cecum used for digesting cellulose in herbivorous ancestors.",
+    "correct_key": "B",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_264",
@@ -1310,7 +1610,10 @@
     },
     "answer": "D",
     "difficulty": 5,
-    "explanation": "Carrying capacity (K) represents the upper limit on the population size that an environment can support due to limited resources like food, water, and space."
+    "explanation": "Carrying capacity (K) represents the upper limit on the population size that an environment can support due to limited resources like food, water, and space.",
+    "correct_key": "D",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_29",
@@ -1323,7 +1626,10 @@
     },
     "answer": "B",
     "difficulty": 5,
-    "explanation": "Exponential growth occurs when a population's per capita growth rate remains constant and positive, leading to a rapid, J-shaped increase in population size, assuming unlimited resources. Fluctuating around carrying capacity describes logistic growth. A declining population has a negative growth rate. A slowing growth rate implies logistic growth approaching carrying capacity."
+    "explanation": "Exponential growth occurs when a population's per capita growth rate remains constant and positive, leading to a rapid, J-shaped increase in population size, assuming unlimited resources. Fluctuating around carrying capacity describes logistic growth. A declining population has a negative growth rate. A slowing growth rate implies logistic growth approaching carrying capacity.",
+    "correct_key": "B",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_265",
@@ -1336,7 +1642,10 @@
     },
     "answer": "A",
     "difficulty": 6,
-    "explanation": "Prokaryotes lack mitochondria. The electron transport chain, crucial for ATP synthesis via chemiosmosis, is located in the plasma membrane of prokaryotic cells."
+    "explanation": "Prokaryotes lack mitochondria. The electron transport chain, crucial for ATP synthesis via chemiosmosis, is located in the plasma membrane of prokaryotic cells.",
+    "correct_key": "A",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_28",
@@ -1349,7 +1658,10 @@
     },
     "answer": "C",
     "difficulty": 5,
-    "explanation": "A premature stop codon (nonsense mutation) signals the termination of translation before the full mRNA sequence is read, resulting in a shortened polypeptide chain. This shortened protein is often non-functional."
+    "explanation": "A premature stop codon (nonsense mutation) signals the termination of translation before the full mRNA sequence is read, resulting in a shortened polypeptide chain. This shortened protein is often non-functional.",
+    "correct_key": "C",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_58",
@@ -1362,7 +1674,10 @@
     },
     "answer": "B",
     "difficulty": 6,
-    "explanation": "Gray fur is recessive, so the frequency of gray squirrels (gg) is q^2 = 0.25. Therefore, the frequency of the recessive allele (q) is the square root of 0.25, which is 0.50. The frequency of the dominant allele (p) is 1 - q = 1 - 0.50 = 0.50. The frequency of heterozygous individuals (Gg) is 2pq = 2 * 0.50 * 0.50 = 0.50, or 50%."
+    "explanation": "Gray fur is recessive, so the frequency of gray squirrels (gg) is q^2 = 0.25. Therefore, the frequency of the recessive allele (q) is the square root of 0.25, which is 0.50. The frequency of the dominant allele (p) is 1 - q = 1 - 0.50 = 0.50. The frequency of heterozygous individuals (Gg) is 2pq = 2 * 0.50 * 0.50 = 0.50, or 50%.",
+    "correct_key": "B",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_93",
@@ -1375,7 +1690,10 @@
     },
     "answer": "D",
     "difficulty": 6,
-    "explanation": "The disease appearing in every generation (often having at least one affected parent) and affecting males and females equally points towards autosomal dominant inheritance. Autosomal recessive typically skips generations, and Y-linked only affects males."
+    "explanation": "The disease appearing in every generation (often having at least one affected parent) and affecting males and females equally points towards autosomal dominant inheritance. Autosomal recessive typically skips generations, and Y-linked only affects males.",
+    "correct_key": "D",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_198",
@@ -1388,7 +1706,10 @@
     },
     "answer": "B",
     "difficulty": 5,
-    "explanation": "Semi-conservative replication means that when DNA divides, each of the two resulting daughter molecules is composed of one strand from the original molecule and one newly synthesized strand."
+    "explanation": "Semi-conservative replication means that when DNA divides, each of the two resulting daughter molecules is composed of one strand from the original molecule and one newly synthesized strand.",
+    "correct_key": "B",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_164",
@@ -1401,7 +1722,10 @@
     },
     "answer": "A",
     "difficulty": 8,
-    "explanation": "Frameshift mutations, caused by insertions or deletions of nucleotides not in multiples of three, drastically alter the reading frame of the mRNA, usually leading to a completely non-functional protein. Silent and synonymous mutations typically do not change the amino acid sequence, and some missense mutations may not significantly impair protein function."
+    "explanation": "Frameshift mutations, caused by insertions or deletions of nucleotides not in multiples of three, drastically alter the reading frame of the mRNA, usually leading to a completely non-functional protein. Silent and synonymous mutations typically do not change the amino acid sequence, and some missense mutations may not significantly impair protein function.",
+    "correct_key": "A",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_216",
@@ -1414,7 +1738,10 @@
     },
     "answer": "D",
     "difficulty": 7,
-    "explanation": "The conditions for Hardy-Weinberg equilibrium (no evolution) are the absence of evolutionary influences: no mutation, no gene flow, random mating, no genetic drift, and no natural selection."
+    "explanation": "The conditions for Hardy-Weinberg equilibrium (no evolution) are the absence of evolutionary influences: no mutation, no gene flow, random mating, no genetic drift, and no natural selection.",
+    "correct_key": "D",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_5",
@@ -1427,7 +1754,10 @@
     },
     "answer": "A",
     "difficulty": 8,
-    "explanation": "Auxin demonstrates this exact behavior\u2014the same concentration promotes stem elongation but inhibits root growth, illustrating tissue-specific sensitivity thresholds."
+    "explanation": "Auxin demonstrates this exact behavior—the same concentration promotes stem elongation but inhibits root growth, illustrating tissue-specific sensitivity thresholds.",
+    "correct_key": "A",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_239",
@@ -1440,7 +1770,10 @@
     },
     "answer": "A",
     "difficulty": 5,
-    "explanation": "Stabilizing selection favors intermediate phenotypes and selects against extreme phenotypes, leading to a decrease in phenotypic variation."
+    "explanation": "Stabilizing selection favors intermediate phenotypes and selects against extreme phenotypes, leading to a decrease in phenotypic variation.",
+    "correct_key": "A",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_170",
@@ -1453,7 +1786,10 @@
     },
     "answer": "A",
     "difficulty": 4,
-    "explanation": "Viruses are diverse in their genetic material, which can be either double-stranded or single-stranded DNA or RNA. They are not cells and do not have the complex molecular machinery of cellular organisms."
+    "explanation": "Viruses are diverse in their genetic material, which can be either double-stranded or single-stranded DNA or RNA. They are not cells and do not have the complex molecular machinery of cellular organisms.",
+    "correct_key": "A",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_299",
@@ -1466,7 +1802,10 @@
     },
     "answer": "D",
     "difficulty": 4,
-    "explanation": "Glycolysis is the first stage of cellular respiration, occurring in the cytoplasm. It involves the anaerobic breakdown of one molecule of glucose into two molecules of pyruvate, producing a small amount of ATP and NADH."
+    "explanation": "Glycolysis is the first stage of cellular respiration, occurring in the cytoplasm. It involves the anaerobic breakdown of one molecule of glucose into two molecules of pyruvate, producing a small amount of ATP and NADH.",
+    "correct_key": "D",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_6",
@@ -1479,7 +1818,10 @@
     },
     "answer": "A",
     "difficulty": 7,
-    "explanation": "The chemiosmotic model states that the electron transport chain creates a proton gradient, and the flow of protons back through ATP synthase drives ATP production."
+    "explanation": "The chemiosmotic model states that the electron transport chain creates a proton gradient, and the flow of protons back through ATP synthase drives ATP production.",
+    "correct_key": "A",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_103",
@@ -1492,7 +1834,10 @@
     },
     "answer": "C",
     "difficulty": 4,
-    "explanation": "mRNA (messenger RNA) is transcribed from a DNA template and carries the genetic code for a specific protein from the nucleus to the ribosomes in the cytoplasm, where it serves as a template for translation. Transfer RNA (tRNA) carries amino acids, ribosomal RNA (rRNA) is a component of ribosomes, and some rRNA molecules have catalytic activity (ribozymes) in peptide bond formation, but mRNA's primary role is information transfer."
+    "explanation": "mRNA (messenger RNA) is transcribed from a DNA template and carries the genetic code for a specific protein from the nucleus to the ribosomes in the cytoplasm, where it serves as a template for translation. Transfer RNA (tRNA) carries amino acids, ribosomal RNA (rRNA) is a component of ribosomes, and some rRNA molecules have catalytic activity (ribozymes) in peptide bond formation, but mRNA's primary role is information transfer.",
+    "correct_key": "C",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_193",
@@ -1505,7 +1850,10 @@
     },
     "answer": "C",
     "difficulty": 6,
-    "explanation": "The Hardy-Weinberg equilibrium states that allele and genotype frequencies in a population will remain constant from generation to generation in the absence of other evolutionary influences."
+    "explanation": "The Hardy-Weinberg equilibrium states that allele and genotype frequencies in a population will remain constant from generation to generation in the absence of other evolutionary influences.",
+    "correct_key": "C",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_36",
@@ -1518,7 +1866,10 @@
     },
     "answer": "B",
     "difficulty": 4,
-    "explanation": "A hypotonic solution has a lower solute concentration (and thus higher water potential) than the cell's cytoplasm. Water will move by osmosis from the hypotonic solution into the cell, causing it to swell. In animal cells, this can lead to lysis; in plant cells, the cell wall prevents bursting."
+    "explanation": "A hypotonic solution has a lower solute concentration (and thus higher water potential) than the cell's cytoplasm. Water will move by osmosis from the hypotonic solution into the cell, causing it to swell. In animal cells, this can lead to lysis; in plant cells, the cell wall prevents bursting.",
+    "correct_key": "B",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_119",
@@ -1531,7 +1882,10 @@
     },
     "answer": "D",
     "difficulty": 5,
-    "explanation": "The mice with cheek pouches have a selective advantage because they are more successful at foraging and storing food, which likely leads to higher survival and reproduction rates. This differential survival and reproduction based on a heritable trait is the definition of natural selection, which would cause the frequency of the advantageous allele (for cheek pouches) to increase in the population."
+    "explanation": "The mice with cheek pouches have a selective advantage because they are more successful at foraging and storing food, which likely leads to higher survival and reproduction rates. This differential survival and reproduction based on a heritable trait is the definition of natural selection, which would cause the frequency of the advantageous allele (for cheek pouches) to increase in the population.",
+    "correct_key": "D",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_237",
@@ -1544,7 +1898,10 @@
     },
     "answer": "A",
     "difficulty": 6,
-    "explanation": "Positive gene regulation occurs when an activator protein binds to DNA, enhancing the binding of RNA polymerase to the promoter and thus increasing transcription. Negative regulation involves repressors blocking transcription."
+    "explanation": "Positive gene regulation occurs when an activator protein binds to DNA, enhancing the binding of RNA polymerase to the promoter and thus increasing transcription. Negative regulation involves repressors blocking transcription.",
+    "correct_key": "A",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_99",
@@ -1557,7 +1914,10 @@
     },
     "answer": "D",
     "difficulty": 5,
-    "explanation": "The frequency of an allele in a population can be calculated from the genotype frequencies. The 'B' allele is present in both BB and Bb genotypes. The frequency of allele 'B' is (2 * frequency of BB) + (frequency of Bb). So, frequency(B) = (2 * 0.36) + 0.48 = 0.72 + 0.48 = 1.20. Wait, allele frequencies must sum to 1. Let's re-calculate. Allele frequency is the sum of the frequency of homozygotes for that allele plus half the frequency of heterozygotes. Frequency(B) = frequency(BB) + 0.5 * frequency(Bb) = 0.36 + 0.5 * 0.48 = 0.36 + 0.24 = 0.60. The frequency of the 'b' allele would be frequency(bb) + 0.5 * frequency(Bb) = 0.16 + 0.5 * 0.48 = 0.16 + 0.24 = 0.40. Note that 0.60 + 0.40 = 1.00, as expected."
+    "explanation": "The frequency of an allele in a population can be calculated from the genotype frequencies. The 'B' allele is present in both BB and Bb genotypes. The frequency of allele 'B' is (2 * frequency of BB) + (frequency of Bb). So, frequency(B) = (2 * 0.36) + 0.48 = 0.72 + 0.48 = 1.20. Wait, allele frequencies must sum to 1. Let's re-calculate. Allele frequency is the sum of the frequency of homozygotes for that allele plus half the frequency of heterozygotes. Frequency(B) = frequency(BB) + 0.5 * frequency(Bb) = 0.36 + 0.5 * 0.48 = 0.36 + 0.24 = 0.60. The frequency of the 'b' allele would be frequency(bb) + 0.5 * frequency(Bb) = 0.16 + 0.5 * 0.48 = 0.16 + 0.24 = 0.40. Note that 0.60 + 0.40 = 1.00, as expected.",
+    "correct_key": "D",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_117",
@@ -1570,7 +1930,10 @@
     },
     "answer": "B",
     "difficulty": 6,
-    "explanation": "Horizontal gene transfer (HGT) is the movement of genetic material between bacterial cells, other than through reproduction. Conjugation is a major mechanism of HGT in bacteria, involving direct cell-to-cell contact. Vertical gene transfer occurs from parent to offspring. Spontaneous mutation is a change in DNA sequence within a cell. Recombinant DNA technology involves artificial manipulation of genetic material."
+    "explanation": "Horizontal gene transfer (HGT) is the movement of genetic material between bacterial cells, other than through reproduction. Conjugation is a major mechanism of HGT in bacteria, involving direct cell-to-cell contact. Vertical gene transfer occurs from parent to offspring. Spontaneous mutation is a change in DNA sequence within a cell. Recombinant DNA technology involves artificial manipulation of genetic material.",
+    "correct_key": "B",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_262",
@@ -1583,7 +1946,10 @@
     },
     "answer": "A",
     "difficulty": 6,
-    "explanation": "This is a classic Mendelian dihybrid cross. When genes are unlinked, the F2 generation typically exhibits a 9:3:3:1 phenotypic ratio (9 dominant-dominant, 3 dominant-recessive, 3 recessive-dominant, 1 recessive-recessive)."
+    "explanation": "This is a classic Mendelian dihybrid cross. When genes are unlinked, the F2 generation typically exhibits a 9:3:3:1 phenotypic ratio (9 dominant-dominant, 3 dominant-recessive, 3 recessive-dominant, 1 recessive-recessive).",
+    "correct_key": "A",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_259",
@@ -1596,7 +1962,10 @@
     },
     "answer": "A",
     "difficulty": 5,
-    "explanation": "ATP (adenosine triphosphate) is the main molecule that cells use for energy. It is produced during cellular respiration and its hydrolysis releases energy to drive metabolic processes."
+    "explanation": "ATP (adenosine triphosphate) is the main molecule that cells use for energy. It is produced during cellular respiration and its hydrolysis releases energy to drive metabolic processes.",
+    "correct_key": "A",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_210",
@@ -1609,7 +1978,10 @@
     },
     "answer": "B",
     "difficulty": 5,
-    "explanation": "A point mutation is a genetic mutation where only a single nucleotide base is affected, such as substitution, insertion, or deletion of a single base."
+    "explanation": "A point mutation is a genetic mutation where only a single nucleotide base is affected, such as substitution, insertion, or deletion of a single base.",
+    "correct_key": "B",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_116",
@@ -1622,7 +1994,10 @@
     },
     "answer": "D",
     "difficulty": 4,
-    "explanation": "The Golgi apparatus receives proteins and lipids from the endoplasmic reticulum, further modifies them (e.g., glycosylation), sorts them based on their destination, and packages them into vesicles for transport. The ER is involved in synthesis and initial modification, lysosomes contain digestive enzymes, and vacuoles have various storage and lytic functions."
+    "explanation": "The Golgi apparatus receives proteins and lipids from the endoplasmic reticulum, further modifies them (e.g., glycosylation), sorts them based on their destination, and packages them into vesicles for transport. The ER is involved in synthesis and initial modification, lysosomes contain digestive enzymes, and vacuoles have various storage and lytic functions.",
+    "correct_key": "D",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_175",
@@ -1635,7 +2010,10 @@
     },
     "answer": "A",
     "difficulty": 7,
-    "explanation": "The Hershey-Chase experiment labeled the protein coat of bacteriophages with radioactive sulfur (35S) and the DNA core with radioactive phosphorus (32P). This allowed them to determine that DNA, not protein, was the genetic material."
+    "explanation": "The Hershey-Chase experiment labeled the protein coat of bacteriophages with radioactive sulfur (35S) and the DNA core with radioactive phosphorus (32P). This allowed them to determine that DNA, not protein, was the genetic material.",
+    "correct_key": "A",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_137",
@@ -1648,7 +2026,10 @@
     },
     "answer": "B",
     "difficulty": 5,
-    "explanation": "RNA polymerase binds to the DNA promoter sequence and synthesizes a complementary RNA molecule by reading the DNA template strand."
+    "explanation": "RNA polymerase binds to the DNA promoter sequence and synthesizes a complementary RNA molecule by reading the DNA template strand.",
+    "correct_key": "B",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_55",
@@ -1661,7 +2042,10 @@
     },
     "answer": "B",
     "difficulty": 7,
-    "explanation": "Glycolysis is the first stage of cellular respiration, breaking down glucose into pyruvate and yielding a small amount of ATP. If the enzyme is non-functional, glycolysis cannot proceed efficiently, leading to a significant decrease in ATP production at this initial step, even if subsequent aerobic pathways are intact. While pyruvate might accumulate and oxygen consumption might be affected indirectly, the most direct and immediate consequence is the failure of glycolysis to produce its ATP yield."
+    "explanation": "Glycolysis is the first stage of cellular respiration, breaking down glucose into pyruvate and yielding a small amount of ATP. If the enzyme is non-functional, glycolysis cannot proceed efficiently, leading to a significant decrease in ATP production at this initial step, even if subsequent aerobic pathways are intact. While pyruvate might accumulate and oxygen consumption might be affected indirectly, the most direct and immediate consequence is the failure of glycolysis to produce its ATP yield.",
+    "correct_key": "B",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_232",
@@ -1674,7 +2058,10 @@
     },
     "answer": "A",
     "difficulty": 6,
-    "explanation": "Let 'p' be the frequency of the dominant allele and 'q' be the frequency of the recessive allele. If the white fur allele frequency (q) is 0.3, then the dominant allele frequency (p) is 1 - 0.3 = 0.7. The frequency of heterozygotes (2pq) is 2 * 0.7 * 0.3 = 0.42."
+    "explanation": "Let 'p' be the frequency of the dominant allele and 'q' be the frequency of the recessive allele. If the white fur allele frequency (q) is 0.3, then the dominant allele frequency (p) is 1 - 0.3 = 0.7. The frequency of heterozygotes (2pq) is 2 * 0.7 * 0.3 = 0.42.",
+    "correct_key": "A",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_290",
@@ -1687,7 +2074,10 @@
     },
     "answer": "D",
     "difficulty": 5,
-    "explanation": "Endocrine signaling is a form of cell-cell communication where hormones (signaling molecules) are produced by endocrine glands and travel through the bloodstream to target cells located throughout the body."
+    "explanation": "Endocrine signaling is a form of cell-cell communication where hormones (signaling molecules) are produced by endocrine glands and travel through the bloodstream to target cells located throughout the body.",
+    "correct_key": "D",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_165",
@@ -1700,7 +2090,10 @@
     },
     "answer": "D",
     "difficulty": 5,
-    "explanation": "Meiosis consists of two successive divisions (Meiosis I and Meiosis II) and results in four genetically unique haploid gametes. Mitosis involves a single division that produces two genetically identical diploid somatic cells."
+    "explanation": "Meiosis consists of two successive divisions (Meiosis I and Meiosis II) and results in four genetically unique haploid gametes. Mitosis involves a single division that produces two genetically identical diploid somatic cells.",
+    "correct_key": "D",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_50",
@@ -1713,7 +2106,10 @@
     },
     "answer": "B",
     "difficulty": 6,
-    "explanation": "In a repressible operon, the end product of a metabolic pathway often acts as a corepressor. When the end product is abundant, it binds to a repressor protein, activating it to bind to the operator region of the operon, thereby preventing transcription of the genes involved in the pathway. Inducible operons are typically turned on by the presence of a substrate. Constitutive expression means continuous transcription. Positive control usually involves activators."
+    "explanation": "In a repressible operon, the end product of a metabolic pathway often acts as a corepressor. When the end product is abundant, it binds to a repressor protein, activating it to bind to the operator region of the operon, thereby preventing transcription of the genes involved in the pathway. Inducible operons are typically turned on by the presence of a substrate. Constitutive expression means continuous transcription. Positive control usually involves activators.",
+    "correct_key": "B",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_288",
@@ -1726,7 +2122,10 @@
     },
     "answer": "C",
     "difficulty": 5,
-    "explanation": "Viruses lack the machinery for self-replication and must infect a host cell to reproduce. They are considered obligate intracellular parasites because they depend entirely on the host's cellular machinery for their replication."
+    "explanation": "Viruses lack the machinery for self-replication and must infect a host cell to reproduce. They are considered obligate intracellular parasites because they depend entirely on the host's cellular machinery for their replication.",
+    "correct_key": "C",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_12",
@@ -1739,7 +2138,10 @@
     },
     "answer": "A",
     "difficulty": 6,
-    "explanation": "Water moves by osmosis from the hypotonic environment (distilled water) into the hypertonic dialysis tubing, increasing its mass."
+    "explanation": "Water moves by osmosis from the hypotonic environment (distilled water) into the hypertonic dialysis tubing, increasing its mass.",
+    "correct_key": "A",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_140",
@@ -1752,7 +2154,10 @@
     },
     "answer": "B",
     "difficulty": 5,
-    "explanation": "The Calvin cycle utilizes the energy currency (ATP) and reducing power (NADPH) generated during the light-dependent reactions to convert atmospheric CO2 into G3P, a precursor to glucose."
+    "explanation": "The Calvin cycle utilizes the energy currency (ATP) and reducing power (NADPH) generated during the light-dependent reactions to convert atmospheric CO2 into G3P, a precursor to glucose.",
+    "correct_key": "B",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_156",
@@ -1765,7 +2170,10 @@
     },
     "answer": "A",
     "difficulty": 7,
-    "explanation": "The formula for exponential population growth is dN/dt = rN. In this case, r = 0.2 and N = 500. So, the rate of population increase is 0.2 * 500 = 100 individuals per year."
+    "explanation": "The formula for exponential population growth is dN/dt = rN. In this case, r = 0.2 and N = 500. So, the rate of population increase is 0.2 * 500 = 100 individuals per year.",
+    "correct_key": "A",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_128",
@@ -1778,7 +2186,10 @@
     },
     "answer": "B",
     "difficulty": 4,
-    "explanation": "The Golgi apparatus receives proteins and lipids from the endoplasmic reticulum, further modifies them (e.g., glycosylation), sorts them, and packages them into vesicles for transport to their final destinations."
+    "explanation": "The Golgi apparatus receives proteins and lipids from the endoplasmic reticulum, further modifies them (e.g., glycosylation), sorts them, and packages them into vesicles for transport to their final destinations.",
+    "correct_key": "B",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_67",
@@ -1791,7 +2202,10 @@
     },
     "answer": "A",
     "difficulty": 7,
-    "explanation": "Ribosomes move along mRNA in the 5' to 3' direction. The A site (aminoacyl site) is where a new aminoacyl-tRNA enters, its anticodon base-pairing with the complementary mRNA codon. Peptide bond formation occurs at the P site, and the spent tRNA exits at the E site."
+    "explanation": "Ribosomes move along mRNA in the 5' to 3' direction. The A site (aminoacyl site) is where a new aminoacyl-tRNA enters, its anticodon base-pairing with the complementary mRNA codon. Peptide bond formation occurs at the P site, and the spent tRNA exits at the E site.",
+    "correct_key": "A",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_243",
@@ -1804,7 +2218,10 @@
     },
     "answer": "B",
     "difficulty": 4,
-    "explanation": "Phototaxis is movement in response to light. Negative phototaxis is movement away from light."
+    "explanation": "Phototaxis is movement in response to light. Negative phototaxis is movement away from light.",
+    "correct_key": "B",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_282",
@@ -1817,7 +2234,10 @@
     },
     "answer": "C",
     "difficulty": 5,
-    "explanation": "The sugar-phosphate backbone of a DNA strand is formed by covalent linkages between the phosphate group of one nucleotide and the deoxyribose sugar of the next nucleotide."
+    "explanation": "The sugar-phosphate backbone of a DNA strand is formed by covalent linkages between the phosphate group of one nucleotide and the deoxyribose sugar of the next nucleotide.",
+    "correct_key": "C",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_246",
@@ -1830,7 +2250,10 @@
     },
     "answer": "A",
     "difficulty": 4,
-    "explanation": "DNA polymerase is the enzyme that synthesizes DNA molecules by adding nucleotides to a growing DNA strand. It is crucial for DNA replication."
+    "explanation": "DNA polymerase is the enzyme that synthesizes DNA molecules by adding nucleotides to a growing DNA strand. It is crucial for DNA replication.",
+    "correct_key": "A",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_249",
@@ -1843,7 +2266,10 @@
     },
     "answer": "D",
     "difficulty": 5,
-    "explanation": "Plant cells, due to their rigid cell wall, form a cell plate during cytokinesis, which develops into the new cell wall separating the daughter cells. Animal cells form a cleavage furrow."
+    "explanation": "Plant cells, due to their rigid cell wall, form a cell plate during cytokinesis, which develops into the new cell wall separating the daughter cells. Animal cells form a cleavage furrow.",
+    "correct_key": "D",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_79",
@@ -1856,7 +2282,10 @@
     },
     "answer": "D",
     "difficulty": 4,
-    "explanation": "The central dogma states that genetic information flows from DNA (transcription) to RNA, and then from RNA to Protein (translation). While reverse transcription (RNA to DNA) exists, the primary flow is DNA to RNA to Protein."
+    "explanation": "The central dogma states that genetic information flows from DNA (transcription) to RNA, and then from RNA to Protein (translation). While reverse transcription (RNA to DNA) exists, the primary flow is DNA to RNA to Protein.",
+    "correct_key": "D",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_261",
@@ -1869,7 +2298,10 @@
     },
     "answer": "D",
     "difficulty": 5,
-    "explanation": "Oxygen moves from an area of high concentration (alveoli) to an area of low concentration (blood) across the alveolar membrane by simple diffusion, driven by the partial pressure gradient."
+    "explanation": "Oxygen moves from an area of high concentration (alveoli) to an area of low concentration (blood) across the alveolar membrane by simple diffusion, driven by the partial pressure gradient.",
+    "correct_key": "D",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_161",
@@ -1882,7 +2314,10 @@
     },
     "answer": "D",
     "difficulty": 7,
-    "explanation": "A Punnett square shows the cross between TT and Tt. The possible offspring genotypes are TT and Tt, each with a probability of 1/2."
+    "explanation": "A Punnett square shows the cross between TT and Tt. The possible offspring genotypes are TT and Tt, each with a probability of 1/2.",
+    "correct_key": "D",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_190",
@@ -1895,7 +2330,10 @@
     },
     "answer": "D",
     "difficulty": 6,
-    "explanation": "Plant cell walls are mainly composed of cellulose, providing structural support. Fungal cell walls, on the other hand, are primarily made of chitin, a polysaccharide also found in insect exoskeletons."
+    "explanation": "Plant cell walls are mainly composed of cellulose, providing structural support. Fungal cell walls, on the other hand, are primarily made of chitin, a polysaccharide also found in insect exoskeletons.",
+    "correct_key": "D",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_131",
@@ -1908,7 +2346,10 @@
     },
     "answer": "A",
     "difficulty": 6,
-    "explanation": "In Anaphase I of meiosis, homologous chromosomes (each still composed of two sister chromatids) are pulled apart to opposite poles of the cell. Sister chromatids remain attached until Anaphase II."
+    "explanation": "In Anaphase I of meiosis, homologous chromosomes (each still composed of two sister chromatids) are pulled apart to opposite poles of the cell. Sister chromatids remain attached until Anaphase II.",
+    "correct_key": "A",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_92",
@@ -1921,7 +2362,10 @@
     },
     "answer": "C",
     "difficulty": 5,
-    "explanation": "Meiosis is a type of cell division that reduces the number of chromosomes by half, creating four haploid cells (gametes) from a single diploid cell. This is essential for sexual reproduction."
+    "explanation": "Meiosis is a type of cell division that reduces the number of chromosomes by half, creating four haploid cells (gametes) from a single diploid cell. This is essential for sexual reproduction.",
+    "correct_key": "C",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_269",
@@ -1934,7 +2378,10 @@
     },
     "answer": "A",
     "difficulty": 6,
-    "explanation": "Signal transduction is the process by which a cell converts an external signal (like epinephrine binding to a receptor) into a specific cellular response."
+    "explanation": "Signal transduction is the process by which a cell converts an external signal (like epinephrine binding to a receptor) into a specific cellular response.",
+    "correct_key": "A",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_231",
@@ -1947,7 +2394,10 @@
     },
     "answer": "A",
     "difficulty": 6,
-    "explanation": "Rhizobia bacteria live in root nodules of legumes and convert atmospheric nitrogen (N2) into ammonia (which is then converted to ammonium ions, NH4+), a form usable by the plant. In return, the bacteria are provided with carbohydrates (sugars) produced by the plant through photosynthesis."
+    "explanation": "Rhizobia bacteria live in root nodules of legumes and convert atmospheric nitrogen (N2) into ammonia (which is then converted to ammonium ions, NH4+), a form usable by the plant. In return, the bacteria are provided with carbohydrates (sugars) produced by the plant through photosynthesis.",
+    "correct_key": "A",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_149",
@@ -1960,7 +2410,10 @@
     },
     "answer": "C",
     "difficulty": 4,
-    "explanation": "Osmosis specifically refers to the net movement of water across a selectively permeable membrane driven by differences in solute concentration (or water potential)."
+    "explanation": "Osmosis specifically refers to the net movement of water across a selectively permeable membrane driven by differences in solute concentration (or water potential).",
+    "correct_key": "C",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_122",
@@ -1973,7 +2426,10 @@
     },
     "answer": "D",
     "difficulty": 4,
-    "explanation": "DNA replication, the process of duplicating the cell's genome, occurs during the S (synthesis) phase of the interphase stage of the cell cycle, ensuring that each daughter cell receives a complete set of chromosomes."
+    "explanation": "DNA replication, the process of duplicating the cell's genome, occurs during the S (synthesis) phase of the interphase stage of the cell cycle, ensuring that each daughter cell receives a complete set of chromosomes.",
+    "correct_key": "D",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_83",
@@ -1986,7 +2442,10 @@
     },
     "answer": "D",
     "difficulty": 6,
-    "explanation": "Transcriptional control involves regulating the rate at which genes are transcribed into RNA. The binding of transcription factors to regulatory regions like enhancers directly influences whether or not transcription occurs."
+    "explanation": "Transcriptional control involves regulating the rate at which genes are transcribed into RNA. The binding of transcription factors to regulatory regions like enhancers directly influences whether or not transcription occurs.",
+    "correct_key": "D",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_256",
@@ -1999,7 +2458,10 @@
     },
     "answer": "B",
     "difficulty": 4,
-    "explanation": "In a new environment with ample resources and no limiting factors like predators, a population will initially experience exponential growth, where the rate of increase is proportional to the population size."
+    "explanation": "In a new environment with ample resources and no limiting factors like predators, a population will initially experience exponential growth, where the rate of increase is proportional to the population size.",
+    "correct_key": "B",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_173",
@@ -2012,7 +2474,10 @@
     },
     "answer": "B",
     "difficulty": 4,
-    "explanation": "The smooth endoplasmic reticulum is involved in various metabolic processes, including lipid synthesis, steroid synthesis, and detoxification of drugs and poisons."
+    "explanation": "The smooth endoplasmic reticulum is involved in various metabolic processes, including lipid synthesis, steroid synthesis, and detoxification of drugs and poisons.",
+    "correct_key": "B",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_220",
@@ -2025,7 +2490,10 @@
     },
     "answer": "D",
     "difficulty": 4,
-    "explanation": "Xylem is the vascular tissue in plants that conducts water and dissolved nutrients upward from the root and also helps to form the woody element of the stem."
+    "explanation": "Xylem is the vascular tissue in plants that conducts water and dissolved nutrients upward from the root and also helps to form the woody element of the stem.",
+    "correct_key": "D",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_68",
@@ -2038,7 +2506,10 @@
     },
     "answer": "C",
     "difficulty": 6,
-    "explanation": "This is an example of coevolution and natural selection. If hawks prey on mice, mice with advantageous traits (e.g., better camouflage, faster speed, keener senses) will be more likely to survive and reproduce, passing those traits to their offspring. Over time, this selective pressure (predation) will lead to the evolution of traits in the mouse population that enhance their survival."
+    "explanation": "This is an example of coevolution and natural selection. If hawks prey on mice, mice with advantageous traits (e.g., better camouflage, faster speed, keener senses) will be more likely to survive and reproduce, passing those traits to their offspring. Over time, this selective pressure (predation) will lead to the evolution of traits in the mouse population that enhance their survival.",
+    "correct_key": "C",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_274",
@@ -2051,7 +2522,10 @@
     },
     "answer": "A",
     "difficulty": 5,
-    "explanation": "In anaphase of mitosis, the centromeres divide, and the sister chromatids, now considered individual chromosomes, are pulled apart towards opposite poles of the cell."
+    "explanation": "In anaphase of mitosis, the centromeres divide, and the sister chromatids, now considered individual chromosomes, are pulled apart towards opposite poles of the cell.",
+    "correct_key": "A",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_61",
@@ -2064,7 +2538,10 @@
     },
     "answer": "B",
     "difficulty": 5,
-    "explanation": "Transformation is the process where a cell takes up naked genetic material (DNA) from its surroundings. Transduction involves DNA transfer via a virus (bacteriophage). Conjugation involves the transfer of genetic material between bacterial cells through direct contact or a bridge-like connection. Translation is the synthesis of protein from an mRNA template."
+    "explanation": "Transformation is the process where a cell takes up naked genetic material (DNA) from its surroundings. Transduction involves DNA transfer via a virus (bacteriophage). Conjugation involves the transfer of genetic material between bacterial cells through direct contact or a bridge-like connection. Translation is the synthesis of protein from an mRNA template.",
+    "correct_key": "B",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_180",
@@ -2077,7 +2554,10 @@
     },
     "answer": "C",
     "difficulty": 4,
-    "explanation": "Enzymes are biological catalysts that facilitate biochemical reactions by reducing the energy barrier (activation energy) needed for the reaction to occur, thereby increasing the reaction rate."
+    "explanation": "Enzymes are biological catalysts that facilitate biochemical reactions by reducing the energy barrier (activation energy) needed for the reaction to occur, thereby increasing the reaction rate.",
+    "correct_key": "C",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_145",
@@ -2090,7 +2570,10 @@
     },
     "answer": "C",
     "difficulty": 4,
-    "explanation": "Biomass refers to the total mass of organisms in a given area or volume. Ecological pyramids, including pyramids of biomass, illustrate the decreasing amount of biomass at successively higher trophic levels."
+    "explanation": "Biomass refers to the total mass of organisms in a given area or volume. Ecological pyramids, including pyramids of biomass, illustrate the decreasing amount of biomass at successively higher trophic levels.",
+    "correct_key": "C",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_144",
@@ -2103,7 +2586,10 @@
     },
     "answer": "B",
     "difficulty": 5,
-    "explanation": "Fossil records show a progression of life forms over geological time, with transitional fossils demonstrating gradual changes and common ancestry between extinct and extant species, providing strong evidence for evolution."
+    "explanation": "Fossil records show a progression of life forms over geological time, with transitional fossils demonstrating gradual changes and common ancestry between extinct and extant species, providing strong evidence for evolution.",
+    "correct_key": "B",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_48",
@@ -2116,7 +2602,10 @@
     },
     "answer": "C",
     "difficulty": 4,
-    "explanation": "The two strands of DNA are antiparallel and complementary. Adenine (A) always pairs with Thymine (T) via two hydrogen bonds, and Guanine (G) always pairs with Cytosine (C) via three hydrogen bonds. Phosphodiester bonds link nucleotides within a single strand. Covalent bonds form the backbone of each strand. Ionic bonds are not the primary forces holding the strands together at the bases."
+    "explanation": "The two strands of DNA are antiparallel and complementary. Adenine (A) always pairs with Thymine (T) via two hydrogen bonds, and Guanine (G) always pairs with Cytosine (C) via three hydrogen bonds. Phosphodiester bonds link nucleotides within a single strand. Covalent bonds form the backbone of each strand. Ionic bonds are not the primary forces holding the strands together at the bases.",
+    "correct_key": "C",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_201",
@@ -2129,7 +2618,10 @@
     },
     "answer": "B",
     "difficulty": 4,
-    "explanation": "Stomata are small pores, typically on the underside of leaves, that open and close to allow for the exchange of gases (carbon dioxide for photosynthesis, oxygen as a byproduct) and the release of water vapor (transpiration)."
+    "explanation": "Stomata are small pores, typically on the underside of leaves, that open and close to allow for the exchange of gases (carbon dioxide for photosynthesis, oxygen as a byproduct) and the release of water vapor (transpiration).",
+    "correct_key": "B",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_184",
@@ -2142,7 +2634,10 @@
     },
     "answer": "C",
     "difficulty": 4,
-    "explanation": "ATP (adenosine triphosphate) consists of adenine (a nitrogenous base), ribose (a sugar), and three phosphate groups."
+    "explanation": "ATP (adenosine triphosphate) consists of adenine (a nitrogenous base), ribose (a sugar), and three phosphate groups.",
+    "correct_key": "C",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_146",
@@ -2155,7 +2650,10 @@
     },
     "answer": "B",
     "difficulty": 6,
-    "explanation": "The sodium-potassium pump actively transports Na+ out of the cell, creating a higher concentration of Na+ in the extracellular fluid compared to the intracellular fluid. This electrochemical gradient is crucial for generating action potentials."
+    "explanation": "The sodium-potassium pump actively transports Na+ out of the cell, creating a higher concentration of Na+ in the extracellular fluid compared to the intracellular fluid. This electrochemical gradient is crucial for generating action potentials.",
+    "correct_key": "B",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_230",
@@ -2168,7 +2666,10 @@
     },
     "answer": "A",
     "difficulty": 5,
-    "explanation": "Helicase enzymes are responsible for breaking the hydrogen bonds between complementary DNA bases, thereby unwinding the double helix and separating the two strands to allow replication machinery access."
+    "explanation": "Helicase enzymes are responsible for breaking the hydrogen bonds between complementary DNA bases, thereby unwinding the double helix and separating the two strands to allow replication machinery access.",
+    "correct_key": "A",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_263",
@@ -2181,7 +2682,10 @@
     },
     "answer": "A",
     "difficulty": 5,
-    "explanation": "NADPH is a high-energy electron carrier produced during the light-dependent reactions. It donates electrons (reducing power) to the Calvin cycle, enabling the conversion of CO2 into sugar."
+    "explanation": "NADPH is a high-energy electron carrier produced during the light-dependent reactions. It donates electrons (reducing power) to the Calvin cycle, enabling the conversion of CO2 into sugar.",
+    "correct_key": "A",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_212",
@@ -2194,7 +2698,10 @@
     },
     "answer": "C",
     "difficulty": 4,
-    "explanation": "Prokaryotic cells, such as bacteria and archaea, lack a membrane-bound nucleus and other membrane-bound organelles."
+    "explanation": "Prokaryotic cells, such as bacteria and archaea, lack a membrane-bound nucleus and other membrane-bound organelles.",
+    "correct_key": "C",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_195",
@@ -2207,7 +2714,10 @@
     },
     "answer": "C",
     "difficulty": 5,
-    "explanation": "A ligand is a molecule that binds specifically to another molecule, often a larger one. In cell signaling, ligands (like hormones or neurotransmitters) bind to receptors to initiate a cellular response."
+    "explanation": "A ligand is a molecule that binds specifically to another molecule, often a larger one. In cell signaling, ligands (like hormones or neurotransmitters) bind to receptors to initiate a cellular response.",
+    "correct_key": "C",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_1",
@@ -2220,7 +2730,10 @@
     },
     "answer": "D",
     "difficulty": 7,
-    "explanation": "DNA helicase unwinds the double-stranded DNA by breaking the hydrogen bonds between the nitrogenous bases, creating the replication fork."
+    "explanation": "DNA helicase unwinds the double-stranded DNA by breaking the hydrogen bonds between the nitrogenous bases, creating the replication fork.",
+    "correct_key": "D",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_150",
@@ -2233,7 +2746,10 @@
     },
     "answer": "D",
     "difficulty": 5,
-    "explanation": "Complementary base pairing describes the specific hydrogen bonding between A-T and G-C bases, which is fundamental to DNA structure and replication."
+    "explanation": "Complementary base pairing describes the specific hydrogen bonding between A-T and G-C bases, which is fundamental to DNA structure and replication.",
+    "correct_key": "D",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_102",
@@ -2246,7 +2762,10 @@
     },
     "answer": "A",
     "difficulty": 7,
-    "explanation": "The rate of photosynthesis is dependent on several factors, including light intensity, CO2 concentration, and temperature. While increasing light intensity generally increases the rate, other factors can become limiting. The plateau occurs when another factor, such as the availability of CO2 or the capacity of the Calvin cycle (CO2 fixation), reaches its maximum rate, so that further increases in light cannot stimulate more photosynthesis. Option A correctly identifies CO2 fixation as a potential limiting factor. Option B is incorrect because enzymes are catalysts and don't typically become limiting in this way unless denaturation occurs (which might cause a decrease, not just a plateau). Option C is incorrect; sufficient ATP/NADPH would allow for *increased* Calvin cycle activity, not a plateau. Option D might cause a decrease if temperature is too high (denaturation), but not a plateau."
+    "explanation": "The rate of photosynthesis is dependent on several factors, including light intensity, CO2 concentration, and temperature. While increasing light intensity generally increases the rate, other factors can become limiting. The plateau occurs when another factor, such as the availability of CO2 or the capacity of the Calvin cycle (CO2 fixation), reaches its maximum rate, so that further increases in light cannot stimulate more photosynthesis. Option A correctly identifies CO2 fixation as a potential limiting factor. Option B is incorrect because enzymes are catalysts and don't typically become limiting in this way unless denaturation occurs (which might cause a decrease, not just a plateau). Option C is incorrect; sufficient ATP/NADPH would allow for *increased* Calvin cycle activity, not a plateau. Option D might cause a decrease if temperature is too high (denaturation), but not a plateau.",
+    "correct_key": "A",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_104",
@@ -2259,7 +2778,10 @@
     },
     "answer": "C",
     "difficulty": 6,
-    "explanation": "A nonsense mutation introduces a premature stop codon into the mRNA sequence, leading to the synthesis of a truncated (shorter) polypeptide chain. A silent mutation does not change the amino acid sequence. A missense mutation changes one amino acid for another. A frameshift mutation (like inserting or deleting one base) alters the reading frame, usually resulting in a completely different amino acid sequence downstream and often a premature stop codon, leading to a shorter protein, but a nonsense mutation directly causes premature termination."
+    "explanation": "A nonsense mutation introduces a premature stop codon into the mRNA sequence, leading to the synthesis of a truncated (shorter) polypeptide chain. A silent mutation does not change the amino acid sequence. A missense mutation changes one amino acid for another. A frameshift mutation (like inserting or deleting one base) alters the reading frame, usually resulting in a completely different amino acid sequence downstream and often a premature stop codon, leading to a shorter protein, but a nonsense mutation directly causes premature termination.",
+    "correct_key": "C",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_214",
@@ -2272,7 +2794,10 @@
     },
     "answer": "D",
     "difficulty": 4,
-    "explanation": "Transcription is the process of creating an RNA copy of a gene's DNA sequence."
+    "explanation": "Transcription is the process of creating an RNA copy of a gene's DNA sequence.",
+    "correct_key": "D",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_272",
@@ -2285,7 +2810,10 @@
     },
     "answer": "D",
     "difficulty": 7,
-    "explanation": "Keystone species are those that exert a strong influence on the structure of their ecological communities, often by controlling the populations of other species. Their impact is much greater than their abundance would suggest."
+    "explanation": "Keystone species are those that exert a strong influence on the structure of their ecological communities, often by controlling the populations of other species. Their impact is much greater than their abundance would suggest.",
+    "correct_key": "D",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_120",
@@ -2298,7 +2826,10 @@
     },
     "answer": "B",
     "difficulty": 4,
-    "explanation": "The RER is studded with ribosomes, which are the sites of protein synthesis. Proteins synthesized on the RER are typically destined for secretion from the cell, insertion into membranes, or delivery to other organelles like the Golgi apparatus or lysosomes. The RER also plays a role in protein folding and initial modification. Smooth ER (SER) is primarily involved in lipid synthesis and detoxification."
+    "explanation": "The RER is studded with ribosomes, which are the sites of protein synthesis. Proteins synthesized on the RER are typically destined for secretion from the cell, insertion into membranes, or delivery to other organelles like the Golgi apparatus or lysosomes. The RER also plays a role in protein folding and initial modification. Smooth ER (SER) is primarily involved in lipid synthesis and detoxification.",
+    "correct_key": "B",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_224",
@@ -2311,7 +2842,10 @@
     },
     "answer": "C",
     "difficulty": 4,
-    "explanation": "An adaptation is a trait that increases an organism's survival and reproduction in a particular environment, and it can be behavioral or structural. Acclimatization (D) is a reversible physiological adjustment over days-to-weeks and is the strongest distractor; the correct answer is the immediate response described in the stem."
+    "explanation": "An adaptation is a trait that increases an organism's survival and reproduction in a particular environment, and it can be behavioral or structural. Acclimatization (D) is a reversible physiological adjustment over days-to-weeks and is the strongest distractor; the correct answer is the immediate response described in the stem.",
+    "correct_key": "C",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_141",
@@ -2324,7 +2858,10 @@
     },
     "answer": "D",
     "difficulty": 5,
-    "explanation": "Decomposers, such as bacteria and fungi, play a crucial role in nutrient cycling by breaking down dead organisms and waste products, making essential elements available for producers."
+    "explanation": "Decomposers, such as bacteria and fungi, play a crucial role in nutrient cycling by breaking down dead organisms and waste products, making essential elements available for producers.",
+    "correct_key": "D",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_187",
@@ -2337,7 +2874,10 @@
     },
     "answer": "C",
     "difficulty": 4,
-    "explanation": "Binary fission is the asexual reproduction method used by prokaryotic cells, where the cell divides into two identical daughter cells."
+    "explanation": "Binary fission is the asexual reproduction method used by prokaryotic cells, where the cell divides into two identical daughter cells.",
+    "correct_key": "C",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_183",
@@ -2350,7 +2890,10 @@
     },
     "answer": "B",
     "difficulty": 6,
-    "explanation": "In Anaphase I of meiosis, homologous chromosomes are pulled apart to opposite poles of the cell. Sister chromatids remain attached."
+    "explanation": "In Anaphase I of meiosis, homologous chromosomes are pulled apart to opposite poles of the cell. Sister chromatids remain attached.",
+    "correct_key": "B",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_159",
@@ -2363,7 +2906,10 @@
     },
     "answer": "D",
     "difficulty": 6,
-    "explanation": "During DNA replication, adenine (A) pairs with thymine (T), and guanine (G) pairs with cytosine (C). DNA strands are antiparallel, so the complementary strand runs in the opposite direction. Therefore, 5'-ATGCGTA-3' will have a complementary strand 3'-TACGCAT-5'."
+    "explanation": "During DNA replication, adenine (A) pairs with thymine (T), and guanine (G) pairs with cytosine (C). DNA strands are antiparallel, so the complementary strand runs in the opposite direction. Therefore, 5'-ATGCGTA-3' will have a complementary strand 3'-TACGCAT-5'.",
+    "correct_key": "D",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_291",
@@ -2376,7 +2922,10 @@
     },
     "answer": "B",
     "difficulty": 4,
-    "explanation": "During transcription, RNA polymerase uses a DNA template strand to synthesize an mRNA molecule. The base pairing rules are Adenine (A) pairs with Uracil (U) in RNA, and Guanine (G) pairs with Cytosine (C)."
+    "explanation": "During transcription, RNA polymerase uses a DNA template strand to synthesize an mRNA molecule. The base pairing rules are Adenine (A) pairs with Uracil (U) in RNA, and Guanine (G) pairs with Cytosine (C).",
+    "correct_key": "B",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_118",
@@ -2389,7 +2938,10 @@
     },
     "answer": "C",
     "difficulty": 4,
-    "explanation": "Translation is the process where the genetic information encoded in messenger RNA (mRNA) is used to synthesize a specific sequence of amino acids, forming a polypeptide chain (protein). Option A describes reverse transcription. Option B describes transcription. Option D is incorrect because tRNA carries amino acids *to* the ribosome, but the template for the polypeptide sequence is mRNA."
+    "explanation": "Translation is the process where the genetic information encoded in messenger RNA (mRNA) is used to synthesize a specific sequence of amino acids, forming a polypeptide chain (protein). Option A describes reverse transcription. Option B describes transcription. Option D is incorrect because tRNA carries amino acids *to* the ribosome, but the template for the polypeptide sequence is mRNA.",
+    "correct_key": "C",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_84",
@@ -2402,7 +2954,10 @@
     },
     "answer": "C",
     "difficulty": 5,
-    "explanation": "Anaphase is characterized by the separation of sister chromatids (now considered individual chromosomes) and their movement towards opposite poles of the cell, pulled by spindle fibers."
+    "explanation": "Anaphase is characterized by the separation of sister chromatids (now considered individual chromosomes) and their movement towards opposite poles of the cell, pulled by spindle fibers.",
+    "correct_key": "C",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_49",
@@ -2415,7 +2970,10 @@
     },
     "answer": "D",
     "difficulty": 4,
-    "explanation": "The central vacuole in plant cells stores water and other substances. When the vacuole is full of water, it pushes the cytoplasm against the cell wall, creating turgor pressure, which helps maintain the rigidity of the plant cell and supports the plant. Mitochondria are for cellular respiration, ER for protein and lipid synthesis, and Golgi for modification and packaging."
+    "explanation": "The central vacuole in plant cells stores water and other substances. When the vacuole is full of water, it pushes the cytoplasm against the cell wall, creating turgor pressure, which helps maintain the rigidity of the plant cell and supports the plant. Mitochondria are for cellular respiration, ER for protein and lipid synthesis, and Golgi for modification and packaging.",
+    "correct_key": "D",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_143",
@@ -2428,7 +2986,10 @@
     },
     "answer": "C",
     "difficulty": 5,
-    "explanation": "Mitosis results in two genetically identical daughter cells, which is essential for increasing the number of cells in multicellular organisms for growth and for replacing damaged or old cells. It is also the basis of asexual reproduction in some eukaryotes."
+    "explanation": "Mitosis results in two genetically identical daughter cells, which is essential for increasing the number of cells in multicellular organisms for growth and for replacing damaged or old cells. It is also the basis of asexual reproduction in some eukaryotes.",
+    "correct_key": "C",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_275",
@@ -2441,7 +3002,10 @@
     },
     "answer": "A",
     "difficulty": 6,
-    "explanation": "Epigenetics refers to heritable changes in gene expression that occur without a change in the DNA sequence itself, often involving DNA methylation or histone modification."
+    "explanation": "Epigenetics refers to heritable changes in gene expression that occur without a change in the DNA sequence itself, often involving DNA methylation or histone modification.",
+    "correct_key": "A",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_147",
@@ -2454,7 +3018,10 @@
     },
     "answer": "C",
     "difficulty": 5,
-    "explanation": "Insulin is released by the pancreas when blood glucose levels are high. It facilitates the transport of glucose from the bloodstream into liver, muscle, and fat cells, thus lowering blood glucose."
+    "explanation": "Insulin is released by the pancreas when blood glucose levels are high. It facilitates the transport of glucose from the bloodstream into liver, muscle, and fat cells, thus lowering blood glucose.",
+    "correct_key": "C",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_86",
@@ -2467,7 +3034,10 @@
     },
     "answer": "C",
     "difficulty": 5,
-    "explanation": "tRNA molecules have an anticodon that pairs with a complementary codon on the mRNA and carry the corresponding amino acid to the ribosome for incorporation into the growing polypeptide chain."
+    "explanation": "tRNA molecules have an anticodon that pairs with a complementary codon on the mRNA and carry the corresponding amino acid to the ribosome for incorporation into the growing polypeptide chain.",
+    "correct_key": "C",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_25",
@@ -2480,7 +3050,10 @@
     },
     "answer": "B",
     "difficulty": 5,
-    "explanation": "ATP is the primary energy currency of the cell. If ATP synthesis is inhibited, and the pathway requires ATP, then the pathway will lack the necessary energy to proceed and will slow down or stop."
+    "explanation": "ATP is the primary energy currency of the cell. If ATP synthesis is inhibited, and the pathway requires ATP, then the pathway will lack the necessary energy to proceed and will slow down or stop.",
+    "correct_key": "B",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_289",
@@ -2493,7 +3066,10 @@
     },
     "answer": "D",
     "difficulty": 6,
-    "explanation": "The endosymbiotic theory suggests that mitochondria and chloroplasts were once free-living prokaryotes that were engulfed by an ancestral eukaryotic cell. Over time, these engulfed organisms developed a symbiotic relationship with the host cell, eventually becoming integrated organelles."
+    "explanation": "The endosymbiotic theory suggests that mitochondria and chloroplasts were once free-living prokaryotes that were engulfed by an ancestral eukaryotic cell. Over time, these engulfed organisms developed a symbiotic relationship with the host cell, eventually becoming integrated organelles.",
+    "correct_key": "D",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_90",
@@ -2506,7 +3082,10 @@
     },
     "answer": "A",
     "difficulty": 6,
-    "explanation": "Under Hardy-Weinberg equilibrium, the frequency of the homozygous recessive genotype (bb) is equal to the square of the frequency of the recessive allele (q^2). Here, q = 0.3, so q^2 = (0.3)^2 = 0.09."
+    "explanation": "Under Hardy-Weinberg equilibrium, the frequency of the homozygous recessive genotype (bb) is equal to the square of the frequency of the recessive allele (q^2). Here, q = 0.3, so q^2 = (0.3)^2 = 0.09.",
+    "correct_key": "A",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_4",
@@ -2519,7 +3098,10 @@
     },
     "answer": "A",
     "difficulty": 7,
-    "explanation": "Removing a top predator causes mesopredator release, which cascades down through trophic levels, affecting herbivore and primary producer populations."
+    "explanation": "Removing a top predator causes mesopredator release, which cascades down through trophic levels, affecting herbivore and primary producer populations.",
+    "correct_key": "A",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_200",
@@ -2532,7 +3114,10 @@
     },
     "answer": "C",
     "difficulty": 4,
-    "explanation": "Decomposers, such as bacteria and fungi, break down dead organisms and waste products, returning essential nutrients to the soil or water, making them available for producers."
+    "explanation": "Decomposers, such as bacteria and fungi, break down dead organisms and waste products, returning essential nutrients to the soil or water, making them available for producers.",
+    "correct_key": "C",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_296",
@@ -2545,7 +3130,10 @@
     },
     "answer": "C",
     "difficulty": 5,
-    "explanation": "Natural selection favors individuals with advantageous phenotypes, which are the observable expressions of their genotypes. Individuals with advantageous traits are more likely to survive and reproduce, thus indirectly influencing allele frequencies over generations."
+    "explanation": "Natural selection favors individuals with advantageous phenotypes, which are the observable expressions of their genotypes. Individuals with advantageous traits are more likely to survive and reproduce, thus indirectly influencing allele frequencies over generations.",
+    "correct_key": "C",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_46",
@@ -2558,7 +3146,10 @@
     },
     "answer": "C",
     "difficulty": 5,
-    "explanation": "A silent mutation is a change in the DNA sequence that does not change the amino acid sequence of the resulting protein. This occurs because the genetic code is degenerate, meaning multiple codons can code for the same amino acid. Nonsense mutations create stop codons, frameshift mutations alter the reading frame, and missense mutations change one amino acid for another."
+    "explanation": "A silent mutation is a change in the DNA sequence that does not change the amino acid sequence of the resulting protein. This occurs because the genetic code is degenerate, meaning multiple codons can code for the same amino acid. Nonsense mutations create stop codons, frameshift mutations alter the reading frame, and missense mutations change one amino acid for another.",
+    "correct_key": "C",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_142",
@@ -2571,20 +3162,26 @@
     },
     "answer": "D",
     "difficulty": 7,
-    "explanation": "Inserting a single nucleotide shifts the reading frame downstream of the insertion (a frameshift mutation), so every codon after the insertion is altered. This almost always produces a non-functional protein, often via a premature stop codon. Point/missense mutations change one amino acid; silent mutations change none; nonsense creates a stop without shifting the frame."
+    "explanation": "Inserting a single nucleotide shifts the reading frame downstream of the insertion (a frameshift mutation), so every codon after the insertion is altered. This almost always produces a non-functional protein, often via a premature stop codon. Point/missense mutations change one amino acid; silent mutations change none; nonsense creates a stop without shifting the frame.",
+    "correct_key": "D",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_8",
-    "question": "In C\u2084 photosynthesis, the initial fixation of CO\u2082 occurs in:",
+    "question": "In C₄ photosynthesis, the initial fixation of CO₂ occurs in:",
     "choices": {
-      "A": "Mesophyll cells, where PEP carboxylase fixes CO\u2082 into a 4-carbon compound",
-      "B": "Bundle sheath cells, where RuBisCO fixes CO\u2082 into a 3-carbon compound",
-      "C": "Guard cells, where carbonic anhydrase converts CO\u2082 to bicarbonate",
-      "D": "Mesophyll cells, where RuBisCO directly fixes CO\u2082"
+      "A": "Mesophyll cells, where PEP carboxylase fixes CO₂ into a 4-carbon compound",
+      "B": "Bundle sheath cells, where RuBisCO fixes CO₂ into a 3-carbon compound",
+      "C": "Guard cells, where carbonic anhydrase converts CO₂ to bicarbonate",
+      "D": "Mesophyll cells, where RuBisCO directly fixes CO₂"
     },
     "answer": "A",
     "difficulty": 8,
-    "explanation": "In C\u2084 plants, PEP carboxylase in mesophyll cells initially fixes CO\u2082 into oxaloacetate (4-carbon). CO\u2082 is later released and refixed by RuBisCO in bundle sheath cells."
+    "explanation": "In C₄ plants, PEP carboxylase in mesophyll cells initially fixes CO₂ into oxaloacetate (4-carbon). CO₂ is later released and refixed by RuBisCO in bundle sheath cells.",
+    "correct_key": "A",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_96",
@@ -2597,7 +3194,10 @@
     },
     "answer": "C",
     "difficulty": 6,
-    "explanation": "The initial impact on producers (algae and plants) has a cascading negative effect on the herbivores that depend on them, demonstrating how the health of the producer level is fundamental to the entire food web."
+    "explanation": "The initial impact on producers (algae and plants) has a cascading negative effect on the herbivores that depend on them, demonstrating how the health of the producer level is fundamental to the entire food web.",
+    "correct_key": "C",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_250",
@@ -2610,7 +3210,10 @@
     },
     "answer": "B",
     "difficulty": 4,
-    "explanation": "Commensalism is a type of symbiosis where one organism benefits, and the other is unaffected."
+    "explanation": "Commensalism is a type of symbiosis where one organism benefits, and the other is unaffected.",
+    "correct_key": "B",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_72",
@@ -2623,7 +3226,10 @@
     },
     "answer": "B",
     "difficulty": 4,
-    "explanation": "Active transport moves substances across a cell membrane against their concentration gradient, or from a region of lower concentration to a region of higher concentration. This process requires energy, typically supplied by ATP hydrolysis, and involves specific membrane proteins (pumps or carriers). Passive processes like diffusion and facilitated diffusion occur down a concentration gradient and do not directly require metabolic energy."
+    "explanation": "Active transport moves substances across a cell membrane against their concentration gradient, or from a region of lower concentration to a region of higher concentration. This process requires energy, typically supplied by ATP hydrolysis, and involves specific membrane proteins (pumps or carriers). Passive processes like diffusion and facilitated diffusion occur down a concentration gradient and do not directly require metabolic energy.",
+    "correct_key": "B",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_179",
@@ -2636,7 +3242,10 @@
     },
     "answer": "B",
     "difficulty": 5,
-    "explanation": "Natural selection favors individuals with advantageous traits. If the new feather color increases survival and reproduction, individuals with this trait will pass it on more frequently, leading to an increase in the mutation's frequency."
+    "explanation": "Natural selection favors individuals with advantageous traits. If the new feather color increases survival and reproduction, individuals with this trait will pass it on more frequently, leading to an increase in the mutation's frequency.",
+    "correct_key": "B",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_19",
@@ -2649,20 +3258,26 @@
     },
     "answer": "A",
     "difficulty": 7,
-    "explanation": "The spindle assembly checkpoint (SAC) at the metaphase-to-anaphase transition ensures all chromosomes are properly attached to kinetochore microtubules before proceeding."
+    "explanation": "The spindle assembly checkpoint (SAC) at the metaphase-to-anaphase transition ensures all chromosomes are properly attached to kinetochore microtubules before proceeding.",
+    "correct_key": "A",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_47",
     "question": "A red blood cell is placed into a solution and begins to swell and eventually lyse. Which of the following best describes the solution it was placed in?",
     "choices": {
-      "A": "Hypertonic \u2014 higher solute concentration than the cell",
-      "B": "Isotonic \u2014 equal solute concentration to the cell",
-      "C": "Buffered \u2014 maintained at physiological pH",
-      "D": "Hypotonic \u2014 lower solute concentration than the cell"
+      "A": "Hypertonic — higher solute concentration than the cell",
+      "B": "Isotonic — equal solute concentration to the cell",
+      "C": "Buffered — maintained at physiological pH",
+      "D": "Hypotonic — lower solute concentration than the cell"
     },
     "answer": "D",
     "difficulty": 5,
-    "explanation": "A hypotonic solution has a lower solute concentration (higher water potential) than the cell. Water moves into the cell by osmosis, causing swelling. In red blood cells (which lack a cell wall), excessive swelling leads to lysis (bursting)."
+    "explanation": "A hypotonic solution has a lower solute concentration (higher water potential) than the cell. Water moves into the cell by osmosis, causing swelling. In red blood cells (which lack a cell wall), excessive swelling leads to lysis (bursting).",
+    "correct_key": "D",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_293",
@@ -2675,7 +3290,10 @@
     },
     "answer": "B",
     "difficulty": 5,
-    "explanation": "Logistic growth describes population growth that starts exponentially but then slows down as the population approaches the carrying capacity of its environment, limited by factors like resource availability and competition."
+    "explanation": "Logistic growth describes population growth that starts exponentially but then slows down as the population approaches the carrying capacity of its environment, limited by factors like resource availability and competition.",
+    "correct_key": "B",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_247",
@@ -2688,7 +3306,10 @@
     },
     "answer": "D",
     "difficulty": 4,
-    "explanation": "Phagocytosis is a form of endocytosis where the cell membrane engulfs large solid particles, such as bacteria or cellular debris."
+    "explanation": "Phagocytosis is a form of endocytosis where the cell membrane engulfs large solid particles, such as bacteria or cellular debris.",
+    "correct_key": "D",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_215",
@@ -2701,7 +3322,10 @@
     },
     "answer": "D",
     "difficulty": 6,
-    "explanation": "The fluid mosaic model describes the cell membrane as a dynamic structure where phospholipids form a fluid bilayer, and various proteins are embedded or attached to it, contributing to its mosaic appearance and function."
+    "explanation": "The fluid mosaic model describes the cell membrane as a dynamic structure where phospholipids form a fluid bilayer, and various proteins are embedded or attached to it, contributing to its mosaic appearance and function.",
+    "correct_key": "D",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_75",
@@ -2714,7 +3338,10 @@
     },
     "answer": "D",
     "difficulty": 5,
-    "explanation": "Since the genes are unlinked, they assort independently. The probability of an A allele segregating into a gamete is 1/2, and the probability of a B allele segregating into a gamete is 1/2. The probability of both A and B segregating into the same gamete is (1/2) * (1/2) = 1/4."
+    "explanation": "Since the genes are unlinked, they assort independently. The probability of an A allele segregating into a gamete is 1/2, and the probability of a B allele segregating into a gamete is 1/2. The probability of both A and B segregating into the same gamete is (1/2) * (1/2) = 1/4.",
+    "correct_key": "D",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_51",
@@ -2727,7 +3354,10 @@
     },
     "answer": "A",
     "difficulty": 5,
-    "explanation": "Crossing over, the exchange of genetic material between homologous chromosomes, occurs during prophase I of meiosis. Specifically, it happens when homologous chromosomes are synapsed, forming bivalents (or tetrads). Metaphase I involves alignment at the metaphase plate. Anaphase II involves separation of sister chromatids. Telophase I involves the formation of two daughter nuclei."
+    "explanation": "Crossing over, the exchange of genetic material between homologous chromosomes, occurs during prophase I of meiosis. Specifically, it happens when homologous chromosomes are synapsed, forming bivalents (or tetrads). Metaphase I involves alignment at the metaphase plate. Anaphase II involves separation of sister chromatids. Telophase I involves the formation of two daughter nuclei.",
+    "correct_key": "A",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_222",
@@ -2740,7 +3370,10 @@
     },
     "answer": "A",
     "difficulty": 5,
-    "explanation": "Genetic equilibrium, as described by the Hardy-Weinberg principle, means that the allele and genotype frequencies in a population are stable and do not change from one generation to the next."
+    "explanation": "Genetic equilibrium, as described by the Hardy-Weinberg principle, means that the allele and genotype frequencies in a population are stable and do not change from one generation to the next.",
+    "correct_key": "A",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_78",
@@ -2753,7 +3386,10 @@
     },
     "answer": "B",
     "difficulty": 5,
-    "explanation": "Carrying capacity is the maximum population size of a species that the environment can sustain indefinitely, given the available resources. Intensifying competition for resources indicates the population is approaching or exceeding the island's carrying capacity."
+    "explanation": "Carrying capacity is the maximum population size of a species that the environment can sustain indefinitely, given the available resources. Intensifying competition for resources indicates the population is approaching or exceeding the island's carrying capacity.",
+    "correct_key": "B",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_217",
@@ -2766,7 +3402,10 @@
     },
     "answer": "D",
     "difficulty": 4,
-    "explanation": "Mitochondria are often called the 'powerhouses' of the cell because they generate most of the cell's supply of adenosine triphosphate (ATP), used as a source of chemical energy."
+    "explanation": "Mitochondria are often called the 'powerhouses' of the cell because they generate most of the cell's supply of adenosine triphosphate (ATP), used as a source of chemical energy.",
+    "correct_key": "D",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_64",
@@ -2779,7 +3418,10 @@
     },
     "answer": "D",
     "difficulty": 4,
-    "explanation": "A genotype of Aa indicates heterozygosity for gene A, and Bb indicates heterozygosity for gene B. Therefore, AaBb means the individual is heterozygous for both genes. The information about linkage describes how these genes are arranged on the chromosome but does not change the definition of heterozygosity for each gene."
+    "explanation": "A genotype of Aa indicates heterozygosity for gene A, and Bb indicates heterozygosity for gene B. Therefore, AaBb means the individual is heterozygous for both genes. The information about linkage describes how these genes are arranged on the chromosome but does not change the definition of heterozygosity for each gene.",
+    "correct_key": "D",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_287",
@@ -2792,7 +3434,10 @@
     },
     "answer": "D",
     "difficulty": 4,
-    "explanation": "In Mendelian or complete dominance, one allele (dominant) masks the expression of the other allele (recessive) when both are present. Crossing two heterozygotes (Aa x Aa) produces offspring in a 1:2:1 genotypic ratio (AA:Aa:aa) and a 3:1 phenotypic ratio if one allele is completely dominant over the other."
+    "explanation": "In Mendelian or complete dominance, one allele (dominant) masks the expression of the other allele (recessive) when both are present. Crossing two heterozygotes (Aa x Aa) produces offspring in a 1:2:1 genotypic ratio (AA:Aa:aa) and a 3:1 phenotypic ratio if one allele is completely dominant over the other.",
+    "correct_key": "D",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_270",
@@ -2805,7 +3450,10 @@
     },
     "answer": "A",
     "difficulty": 7,
-    "explanation": "The vascular cambium is a lateral meristem responsible for secondary growth in dicot stems and roots, producing secondary xylem (wood) and secondary phloem."
+    "explanation": "The vascular cambium is a lateral meristem responsible for secondary growth in dicot stems and roots, producing secondary xylem (wood) and secondary phloem.",
+    "correct_key": "A",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_95",
@@ -2818,7 +3466,10 @@
     },
     "answer": "C",
     "difficulty": 7,
-    "explanation": "The operator is a DNA sequence located within the promoter region of an operon. The repressor protein binds to the operator to physically block RNA polymerase from accessing the structural genes, thus preventing transcription."
+    "explanation": "The operator is a DNA sequence located within the promoter region of an operon. The repressor protein binds to the operator to physically block RNA polymerase from accessing the structural genes, thus preventing transcription.",
+    "correct_key": "C",
+    "section": "science",
+    "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_85",
@@ -2831,6 +3482,9 @@
     },
     "answer": "B",
     "difficulty": 5,
-    "explanation": "Directional selection favors one extreme phenotype over the others. In this case, the brighter wing color is less advantageous, so selection favors individuals with less bright wings, shifting the population's average wing color towards less bright."
+    "explanation": "Directional selection favors one extreme phenotype over the others. In this case, the brighter wing color is less advantageous, so selection favors individuals with less bright wings, shifting the population's average wing color towards less bright.",
+    "correct_key": "B",
+    "section": "science",
+    "skill": "AP Biology"
   }
 ]

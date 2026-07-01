@@ -10,7 +10,10 @@
     },
     "answer": "A",
     "difficulty": 5,
-    "explanation": "M1 typically includes the most liquid forms of money: currency in circulation, demand deposits, and traveler's checks. M2 includes everything in M1 plus less liquid assets like savings deposits, small-denomination time deposits, and retail money market mutual fund shares."
+    "explanation": "M1 typically includes the most liquid forms of money: currency in circulation, demand deposits, and traveler's checks. M2 includes everything in M1 plus less liquid assets like savings deposits, small-denomination time deposits, and retail money market mutual fund shares.",
+    "correct_key": "A",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_170",
@@ -23,7 +26,10 @@
     },
     "answer": "A",
     "difficulty": 7,
-    "explanation": "In a flexible exchange rate system, the currency's value is determined by supply and demand. A decrease in foreign demand for a country's exports reduces the demand for its currency in the foreign exchange market, leading to depreciation."
+    "explanation": "In a flexible exchange rate system, the currency's value is determined by supply and demand. A decrease in foreign demand for a country's exports reduces the demand for its currency in the foreign exchange market, leading to depreciation.",
+    "correct_key": "A",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_171",
@@ -36,7 +42,10 @@
     },
     "answer": "A",
     "difficulty": 4,
-    "explanation": "The aggregate demand curve slopes downward due to the wealth effect (a decrease in the price level increases the real value of money holdings, leading to increased consumption), the interest rate effect (a lower price level reduces money demand, decreasing interest rates and increasing investment), and the exchange rate effect (a lower price level leads to lower interest rates, causing capital outflows, a weaker domestic currency, and increased net exports)."
+    "explanation": "The aggregate demand curve slopes downward due to the wealth effect (a decrease in the price level increases the real value of money holdings, leading to increased consumption), the interest rate effect (a lower price level reduces money demand, decreasing interest rates and increasing investment), and the exchange rate effect (a lower price level leads to lower interest rates, causing capital outflows, a weaker domestic currency, and increased net exports).",
+    "correct_key": "A",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_184",
@@ -49,7 +58,10 @@
     },
     "answer": "A",
     "difficulty": 7,
-    "explanation": "The vertical LRAS curve represents the economy's potential output. In the long run, all prices, including wages, are assumed to be fully flexible, and the economy's output is determined by its factors of production (labor, capital, land, technology), not by the overall price level."
+    "explanation": "The vertical LRAS curve represents the economy's potential output. In the long run, all prices, including wages, are assumed to be fully flexible, and the economy's output is determined by its factors of production (labor, capital, land, technology), not by the overall price level.",
+    "correct_key": "A",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_287",
@@ -62,7 +74,10 @@
     },
     "answer": "A",
     "difficulty": 8,
-    "explanation": "The balanced budget multiplier states that an equal increase in government spending and taxes leads to an increase in aggregate demand and real GDP equal to the initial change in spending. This is because the initial injection of government spending has a multiplier effect, while the tax increase has a smaller, negative multiplier effect."
+    "explanation": "The balanced budget multiplier states that an equal increase in government spending and taxes leads to an increase in aggregate demand and real GDP equal to the initial change in spending. This is because the initial injection of government spending has a multiplier effect, while the tax increase has a smaller, negative multiplier effect.",
+    "correct_key": "A",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macro_6",
@@ -75,7 +90,10 @@
     },
     "answer": "A",
     "difficulty": 5,
-    "explanation": "The expenditure approach sums Consumer spending + Investment + Government purchases + Net Exports."
+    "explanation": "The expenditure approach sums Consumer spending + Investment + Government purchases + Net Exports.",
+    "correct_key": "A",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macro_7",
@@ -88,7 +106,10 @@
     },
     "answer": "B",
     "difficulty": 7,
-    "explanation": "Money multiplier = 1/0.10 = 10. Total = $10,000. NEW money = $10,000 - $1,000 = $9,000."
+    "explanation": "Money multiplier = 1/0.10 = 10. Total = $10,000. NEW money = $10,000 - $1,000 = $9,000.",
+    "correct_key": "B",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macro_8",
@@ -101,7 +122,10 @@
     },
     "answer": "C",
     "difficulty": 6,
-    "explanation": "Stagflation combines stagnation (rising unemployment) with inflation (rising prices)."
+    "explanation": "Stagflation combines stagnation (rising unemployment) with inflation (rising prices).",
+    "correct_key": "C",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macro_9",
@@ -114,7 +138,10 @@
     },
     "answer": "B",
     "difficulty": 6,
-    "explanation": "The short-run Phillips Curve shows an inverse relationship between inflation and unemployment."
+    "explanation": "The short-run Phillips Curve shows an inverse relationship between inflation and unemployment.",
+    "correct_key": "B",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macro_10",
@@ -127,7 +154,10 @@
     },
     "answer": "B",
     "difficulty": 5,
-    "explanation": "Expansionary fiscal policy—cutting taxes and increasing spending—stimulates AD during recessions."
+    "explanation": "Expansionary fiscal policy—cutting taxes and increasing spending—stimulates AD during recessions.",
+    "correct_key": "B",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macro_11",
@@ -140,7 +170,10 @@
     },
     "answer": "D",
     "difficulty": 6,
-    "explanation": "Open market operations (buying/selling government securities) are the Fed's primary monetary policy tool."
+    "explanation": "Open market operations (buying/selling government securities) are the Fed's primary monetary policy tool.",
+    "correct_key": "D",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macro_12",
@@ -153,7 +186,10 @@
     },
     "answer": "B",
     "difficulty": 5,
-    "explanation": "A trade deficit occurs when imports exceed exports."
+    "explanation": "A trade deficit occurs when imports exceed exports.",
+    "correct_key": "B",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macro_13",
@@ -166,7 +202,10 @@
     },
     "answer": "B",
     "difficulty": 7,
-    "explanation": "Crowding out occurs when government borrowing raises interest rates, reducing private investment."
+    "explanation": "Crowding out occurs when government borrowing raises interest rates, reducing private investment.",
+    "correct_key": "B",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macro_14",
@@ -179,7 +218,10 @@
     },
     "answer": "B",
     "difficulty": 5,
-    "explanation": "Real GDP adjusts for inflation using base year prices."
+    "explanation": "Real GDP adjusts for inflation using base year prices.",
+    "correct_key": "B",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macro_15",
@@ -192,7 +234,10 @@
     },
     "answer": "D",
     "difficulty": 7,
-    "explanation": "Appreciation makes exports more expensive for foreigners and imports cheaper, decreasing net exports."
+    "explanation": "Appreciation makes exports more expensive for foreigners and imports cheaper, decreasing net exports.",
+    "correct_key": "D",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macro_16",
@@ -205,7 +250,10 @@
     },
     "answer": "D",
     "difficulty": 5,
-    "explanation": "CPI measures average price changes for a fixed basket of consumer goods and services."
+    "explanation": "CPI measures average price changes for a fixed basket of consumer goods and services.",
+    "correct_key": "D",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macro_17",
@@ -218,7 +266,10 @@
     },
     "answer": "A",
     "difficulty": 7,
-    "explanation": "With V and Q constant, M and P are directly proportional."
+    "explanation": "With V and Q constant, M and P are directly proportional.",
+    "correct_key": "A",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macro_18",
@@ -231,7 +282,10 @@
     },
     "answer": "B",
     "difficulty": 6,
-    "explanation": "Supply-side economics focuses on increasing AS through tax cuts and deregulation."
+    "explanation": "Supply-side economics focuses on increasing AS through tax cuts and deregulation.",
+    "correct_key": "B",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macro_19",
@@ -244,7 +298,10 @@
     },
     "answer": "B",
     "difficulty": 7,
-    "explanation": "Higher rates attract foreign capital, increasing dollar demand and causing appreciation."
+    "explanation": "Higher rates attract foreign capital, increasing dollar demand and causing appreciation.",
+    "correct_key": "B",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macro_20",
@@ -257,7 +314,10 @@
     },
     "answer": "D",
     "difficulty": 6,
-    "explanation": "GDP deflator = (Nominal GDP / Real GDP) × 100."
+    "explanation": "GDP deflator = (Nominal GDP / Real GDP) × 100.",
+    "correct_key": "D",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macro_1",
@@ -270,7 +330,10 @@
     },
     "answer": "B",
     "difficulty": 6,
-    "explanation": "Increased government spending is a component of AD (C + I + G + NX). More G shifts AD right."
+    "explanation": "Increased government spending is a component of AD (C + I + G + NX). More G shifts AD right.",
+    "correct_key": "B",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macro_3",
@@ -283,7 +346,10 @@
     },
     "answer": "B",
     "difficulty": 6,
-    "explanation": "Spending multiplier = 1/(1 - MPC) = 1/0.25 = 4."
+    "explanation": "Spending multiplier = 1/(1 - MPC) = 1/0.25 = 4.",
+    "correct_key": "B",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_23",
@@ -296,7 +362,10 @@
     },
     "answer": "A",
     "difficulty": 5,
-    "explanation": "Job training programs can improve workers' skills and reduce structural unemployment, thereby decreasing the natural rate of unemployment. The other options would likely increase or maintain the natural rate."
+    "explanation": "Job training programs can improve workers' skills and reduce structural unemployment, thereby decreasing the natural rate of unemployment. The other options would likely increase or maintain the natural rate.",
+    "correct_key": "A",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_24",
@@ -309,7 +378,10 @@
     },
     "answer": "B",
     "difficulty": 6,
-    "explanation": "In the short run, nominal wages and other input costs are often fixed or sticky. If the price of the firm's output increases unexpectedly while input costs remain the same, its effective profit margin increases, incentivizing higher output."
+    "explanation": "In the short run, nominal wages and other input costs are often fixed or sticky. If the price of the firm's output increases unexpectedly while input costs remain the same, its effective profit margin increases, incentivizing higher output.",
+    "correct_key": "B",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_25",
@@ -322,7 +394,10 @@
     },
     "answer": "A",
     "difficulty": 5,
-    "explanation": "When a currency depreciates, its goods become cheaper for foreign buyers (increasing exports), and foreign goods become more expensive for domestic buyers (decreasing imports)."
+    "explanation": "When a currency depreciates, its goods become cheaper for foreign buyers (increasing exports), and foreign goods become more expensive for domestic buyers (decreasing imports).",
+    "correct_key": "A",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_26",
@@ -335,7 +410,10 @@
     },
     "answer": "C",
     "difficulty": 4,
-    "explanation": "A widespread drought would increase the cost of agricultural inputs, decreasing aggregate supply (shifting the AS curve to the left). The other options would increase aggregate supply."
+    "explanation": "A widespread drought would increase the cost of agricultural inputs, decreasing aggregate supply (shifting the AS curve to the left). The other options would increase aggregate supply.",
+    "correct_key": "C",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_27",
@@ -348,7 +426,10 @@
     },
     "answer": "D",
     "difficulty": 7,
-    "explanation": "The spending multiplier is 1 / (1 - MPC). In this case, 1 / (1 - 0.8) = 1 / 0.2 = 5. The total change in real GDP is the initial change in investment multiplied by the multiplier: $50 billion * 5 = $250 billion."
+    "explanation": "The spending multiplier is 1 / (1 - MPC). In this case, 1 / (1 - 0.8) = 1 / 0.2 = 5. The total change in real GDP is the initial change in investment multiplied by the multiplier: $50 billion * 5 = $250 billion.",
+    "correct_key": "D",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_28",
@@ -361,7 +442,10 @@
     },
     "answer": "C",
     "difficulty": 5,
-    "explanation": "Built-in inflation, also known as wage-price spiral, occurs when workers demand higher wages due to expected inflation, and firms raise prices to cover higher labor costs, further fueling inflation."
+    "explanation": "Built-in inflation, also known as wage-price spiral, occurs when workers demand higher wages due to expected inflation, and firms raise prices to cover higher labor costs, further fueling inflation.",
+    "correct_key": "C",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_30",
@@ -374,7 +458,10 @@
     },
     "answer": "A",
     "difficulty": 5,
-    "explanation": "The short-run Phillips Curve shows an inverse relationship between the rate of inflation and the rate of unemployment. As unemployment falls, inflation tends to rise, and vice versa."
+    "explanation": "The short-run Phillips Curve shows an inverse relationship between the rate of inflation and the rate of unemployment. As unemployment falls, inflation tends to rise, and vice versa.",
+    "correct_key": "A",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_31",
@@ -387,7 +474,10 @@
     },
     "answer": "D",
     "difficulty": 6,
-    "explanation": "To close a recessionary gap, expansionary policies are needed. Decreasing taxes and increasing government spending are expansionary fiscal policies that increase aggregate demand. The other options are contractionary or would restrict the money supply."
+    "explanation": "To close a recessionary gap, expansionary policies are needed. Decreasing taxes and increasing government spending are expansionary fiscal policies that increase aggregate demand. The other options are contractionary or would restrict the money supply.",
+    "correct_key": "D",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_32",
@@ -400,7 +490,10 @@
     },
     "answer": "B",
     "difficulty": 5,
-    "explanation": "GDP measures the market value of all final goods and services produced within a country in a given period. Investment (I) includes spending on capital goods like new machinery. The purchase of a used car and groceries at a previously owned store do not represent new production."
+    "explanation": "GDP measures the market value of all final goods and services produced within a country in a given period. Investment (I) includes spending on capital goods like new machinery. The purchase of a used car and groceries at a previously owned store do not represent new production.",
+    "correct_key": "B",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_33",
@@ -413,7 +506,10 @@
     },
     "answer": "D",
     "difficulty": 7,
-    "explanation": "Productivity growth is a key determinant of long-run aggregate supply. A decrease in productivity growth means fewer goods and services can be produced at any given price level in the long run, shifting the LRAS curve to the left."
+    "explanation": "Productivity growth is a key determinant of long-run aggregate supply. A decrease in productivity growth means fewer goods and services can be produced at any given price level in the long run, shifting the LRAS curve to the left.",
+    "correct_key": "D",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_34",
@@ -426,7 +522,10 @@
     },
     "answer": "B",
     "difficulty": 5,
-    "explanation": "The velocity of money is a measure of how quickly money circulates through the economy, i.e., the average number of times a dollar is spent on goods and services in a year."
+    "explanation": "The velocity of money is a measure of how quickly money circulates through the economy, i.e., the average number of times a dollar is spent on goods and services in a year.",
+    "correct_key": "B",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_35",
@@ -439,7 +538,10 @@
     },
     "answer": "A",
     "difficulty": 6,
-    "explanation": "Reducing taxes on corporate profits can incentivize businesses to invest more, expand production, and hire more workers, thereby increasing aggregate supply in the long run. The other options would likely decrease or have neutral effects on long-run AS."
+    "explanation": "Reducing taxes on corporate profits can incentivize businesses to invest more, expand production, and hire more workers, thereby increasing aggregate supply in the long run. The other options would likely decrease or have neutral effects on long-run AS.",
+    "correct_key": "A",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_36",
@@ -452,7 +554,10 @@
     },
     "answer": "C",
     "difficulty": 4,
-    "explanation": "Stagflation is a combination of stagnant economic growth (high unemployment) and high inflation."
+    "explanation": "Stagflation is a combination of stagnant economic growth (high unemployment) and high inflation.",
+    "correct_key": "C",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_37",
@@ -465,7 +570,10 @@
     },
     "answer": "A",
     "difficulty": 7,
-    "explanation": "The classical dichotomy, relevant in the long run, states that money is neutral, meaning it only affects nominal variables like prices and wages, but not real variables like output and employment."
+    "explanation": "The classical dichotomy, relevant in the long run, states that money is neutral, meaning it only affects nominal variables like prices and wages, but not real variables like output and employment.",
+    "correct_key": "A",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_39",
@@ -478,7 +586,10 @@
     },
     "answer": "B",
     "difficulty": 5,
-    "explanation": "Structural unemployment arises from fundamental changes in the economy that lead to a mismatch between the job skills of workers and the available jobs, or between the location of workers and jobs."
+    "explanation": "Structural unemployment arises from fundamental changes in the economy that lead to a mismatch between the job skills of workers and the available jobs, or between the location of workers and jobs.",
+    "correct_key": "B",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_40",
@@ -491,7 +602,10 @@
     },
     "answer": "D",
     "difficulty": 6,
-    "explanation": "Increasing the discount rate makes it more expensive for banks to borrow from the central bank, leading to a decrease in the money supply and higher interest rates, which combats inflation. Buying government securities and lowering the reserve requirement are expansionary policies."
+    "explanation": "Increasing the discount rate makes it more expensive for banks to borrow from the central bank, leading to a decrease in the money supply and higher interest rates, which combats inflation. Buying government securities and lowering the reserve requirement are expansionary policies.",
+    "correct_key": "D",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_41",
@@ -504,7 +618,10 @@
     },
     "answer": "C",
     "difficulty": 7,
-    "explanation": "The Laffer Curve illustrates the relationship between tax rates and tax revenue. It posits that at very high tax rates, reducing the rate could potentially increase revenue by stimulating economic activity and reducing tax evasion."
+    "explanation": "The Laffer Curve illustrates the relationship between tax rates and tax revenue. It posits that at very high tax rates, reducing the rate could potentially increase revenue by stimulating economic activity and reducing tax evasion.",
+    "correct_key": "C",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_42",
@@ -517,7 +634,10 @@
     },
     "answer": "B",
     "difficulty": 6,
-    "explanation": "A positive externality in production occurs when the production of a good or service creates benefits for third parties not directly involved in the transaction. The beekeeper's bees pollinating orchards is a benefit to the orchard owners, who are third parties."
+    "explanation": "A positive externality in production occurs when the production of a good or service creates benefits for third parties not directly involved in the transaction. The beekeeper's bees pollinating orchards is a benefit to the orchard owners, who are third parties.",
+    "correct_key": "B",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_43",
@@ -530,7 +650,10 @@
     },
     "answer": "D",
     "difficulty": 7,
-    "explanation": "Since MPC + MPS = 1, if MPS = 0.3, then MPC = 1 - 0.3 = 0.7. The spending multiplier is 1 / (1 - MPC) = 1 / (1 - 0.7) = 1 / 0.3 = 3.33 (approximately)."
+    "explanation": "Since MPC + MPS = 1, if MPS = 0.3, then MPC = 1 - 0.3 = 0.7. The spending multiplier is 1 / (1 - MPC) = 1 / (1 - 0.7) = 1 / 0.3 = 3.33 (approximately).",
+    "correct_key": "D",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_44",
@@ -543,7 +666,10 @@
     },
     "answer": "A",
     "difficulty": 6,
-    "explanation": "If people expect prices to rise in the future, workers will demand higher wages now to compensate, and firms will anticipate higher costs. This leads to a decrease in the willingness to supply goods and services at any given price level in the short run, shifting the SRAS curve leftward."
+    "explanation": "If people expect prices to rise in the future, workers will demand higher wages now to compensate, and firms will anticipate higher costs. This leads to a decrease in the willingness to supply goods and services at any given price level in the short run, shifting the SRAS curve leftward.",
+    "correct_key": "A",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_45",
@@ -556,7 +682,10 @@
     },
     "answer": "C",
     "difficulty": 5,
-    "explanation": "Frictional unemployment is temporary unemployment that occurs when people are searching for jobs or transitioning between jobs. A recent graduate searching for their first job fits this description."
+    "explanation": "Frictional unemployment is temporary unemployment that occurs when people are searching for jobs or transitioning between jobs. A recent graduate searching for their first job fits this description.",
+    "correct_key": "C",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_46",
@@ -569,7 +698,10 @@
     },
     "answer": "D",
     "difficulty": 7,
-    "explanation": "The equation of exchange is MV = PQ (where M is money supply, V is velocity, P is price level, and Q is real output). If M increases by 5% and V and Q are constant, then P must increase by 5% to maintain the equality."
+    "explanation": "The equation of exchange is MV = PQ (where M is money supply, V is velocity, P is price level, and Q is real output). If M increases by 5% and V and Q are constant, then P must increase by 5% to maintain the equality.",
+    "correct_key": "D",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_47",
@@ -582,7 +714,10 @@
     },
     "answer": "D",
     "difficulty": 6,
-    "explanation": "An increase in demand for U.S. exports means foreigners need more U.S. dollars to buy those goods, increasing the demand for dollars and thus its exchange rate. Option A would decrease the dollar's value as capital flows out. Option C would make U.S. goods cheaper, increasing demand for dollars, but the question asks about the dollar's exchange rate relative to the Euro, and relative inflation is a key determinant. While relative inflation (less inflation makes currency stronger) is a factor, strong export demand is a more direct cause of immediate exchange rate appreciation in this context. Option B is fiscal policy with potential inflationary effects, which could weaken the dollar."
+    "explanation": "An increase in demand for U.S. exports means foreigners need more U.S. dollars to buy those goods, increasing the demand for dollars and thus its exchange rate. Option A would decrease the dollar's value as capital flows out. Option C would make U.S. goods cheaper, increasing demand for dollars, but the question asks about the dollar's exchange rate relative to the Euro, and relative inflation is a key determinant. While relative inflation (less inflation makes currency stronger) is a factor, strong export demand is a more direct cause of immediate exchange rate appreciation in this context. Option B is fiscal policy with potential inflationary effects, which could weaken the dollar.",
+    "correct_key": "D",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_48",
@@ -595,7 +730,10 @@
     },
     "answer": "C",
     "difficulty": 7,
-    "explanation": "Increased labor productivity means more output can be produced with the same amount of labor, shifting the aggregate supply curve to the right. This leads to a decrease in the overall price level (lower inflation) and an increase in the equilibrium output level, which typically corresponds to lower unemployment. This isn't a direct movement along the short-run Phillips curve, but rather a shift of the curve itself."
+    "explanation": "Increased labor productivity means more output can be produced with the same amount of labor, shifting the aggregate supply curve to the right. This leads to a decrease in the overall price level (lower inflation) and an increase in the equilibrium output level, which typically corresponds to lower unemployment. This isn't a direct movement along the short-run Phillips curve, but rather a shift of the curve itself.",
+    "correct_key": "C",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_49",
@@ -608,7 +746,10 @@
     },
     "answer": "A",
     "difficulty": 5,
-    "explanation": "The spending multiplier is calculated as 1 / (1 - MPC). In this case, the multiplier is 1 / (1 - 0.75) = 1 / 0.25 = 4. The maximum change in real GDP is the multiplier multiplied by the initial change in spending: 4 * $100 billion = $400 billion."
+    "explanation": "The spending multiplier is calculated as 1 / (1 - MPC). In this case, the multiplier is 1 / (1 - 0.75) = 1 / 0.25 = 4. The maximum change in real GDP is the multiplier multiplied by the initial change in spending: 4 * $100 billion = $400 billion.",
+    "correct_key": "A",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_51",
@@ -621,7 +762,10 @@
     },
     "answer": "D",
     "difficulty": 4,
-    "explanation": "The balance on goods and services is the sum of the balance of trade (which represents the balance of goods) and the balance on services. Therefore, -$50 billion + $20 billion = -$30 billion."
+    "explanation": "The balance on goods and services is the sum of the balance of trade (which represents the balance of goods) and the balance on services. Therefore, -$50 billion + $20 billion = -$30 billion.",
+    "correct_key": "D",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_52",
@@ -634,7 +778,10 @@
     },
     "answer": "D",
     "difficulty": 5,
-    "explanation": "Autonomous investment is a component of aggregate demand. An increase in autonomous investment directly increases aggregate demand. With an upward-sloping aggregate supply curve, this increase in aggregate demand leads to higher real GDP in the short run."
+    "explanation": "Autonomous investment is a component of aggregate demand. An increase in autonomous investment directly increases aggregate demand. With an upward-sloping aggregate supply curve, this increase in aggregate demand leads to higher real GDP in the short run.",
+    "correct_key": "D",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_53",
@@ -647,7 +794,10 @@
     },
     "answer": "C",
     "difficulty": 6,
-    "explanation": "A recessionary gap occurs when the economy's actual output (real GDP) is below its potential output. This shortfall in production typically results in higher-than-average unemployment."
+    "explanation": "A recessionary gap occurs when the economy's actual output (real GDP) is below its potential output. This shortfall in production typically results in higher-than-average unemployment.",
+    "correct_key": "C",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_54",
@@ -660,7 +810,10 @@
     },
     "answer": "D",
     "difficulty": 5,
-    "explanation": "When a central bank sells government securities, commercial banks buy them, which reduces the reserves held by commercial banks. With fewer reserves, banks have less money to lend, leading to a decrease in the money supply. A decrease in the money supply typically causes interest rates to rise."
+    "explanation": "When a central bank sells government securities, commercial banks buy them, which reduces the reserves held by commercial banks. With fewer reserves, banks have less money to lend, leading to a decrease in the money supply. A decrease in the money supply typically causes interest rates to rise.",
+    "correct_key": "D",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_55",
@@ -673,7 +826,10 @@
     },
     "answer": "B",
     "difficulty": 6,
-    "explanation": "High inflation suggests the economy is overheating. Contractionary fiscal policy, which includes decreasing government spending and/or increasing taxes, reduces aggregate demand, thereby easing inflationary pressures. Options C and D are expansionary monetary policies."
+    "explanation": "High inflation suggests the economy is overheating. Contractionary fiscal policy, which includes decreasing government spending and/or increasing taxes, reduces aggregate demand, thereby easing inflationary pressures. Options C and D are expansionary monetary policies.",
+    "correct_key": "B",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_56",
@@ -686,7 +842,10 @@
     },
     "answer": "B",
     "difficulty": 7,
-    "explanation": "The quantity theory of money is expressed by the equation MV = PY, where M is the money supply, V is the velocity of money, P is the price level, and Y is real GDP. Nominal GDP is P*Y. If V is constant and M increases by 10%, then PY (nominal GDP) must also increase by 10% to maintain the equality."
+    "explanation": "The quantity theory of money is expressed by the equation MV = PY, where M is the money supply, V is the velocity of money, P is the price level, and Y is real GDP. Nominal GDP is P*Y. If V is constant and M increases by 10%, then PY (nominal GDP) must also increase by 10% to maintain the equality.",
+    "correct_key": "B",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_57",
@@ -699,7 +858,10 @@
     },
     "answer": "B",
     "difficulty": 5,
-    "explanation": "In the short run, wages and other input prices are often sticky or fixed by contracts. When the overall price level of goods and services rises, firms' revenues increase, but their costs do not rise proportionally. This increased profitability incentivizes them to produce more output."
+    "explanation": "In the short run, wages and other input prices are often sticky or fixed by contracts. When the overall price level of goods and services rises, firms' revenues increase, but their costs do not rise proportionally. This increased profitability incentivizes them to produce more output.",
+    "correct_key": "B",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_58",
@@ -712,7 +874,10 @@
     },
     "answer": "C",
     "difficulty": 4,
-    "explanation": "Withdrawals (or leakages) are funds that leave the circular flow. Savings by households represent income not spent on consumption or investment, thus reducing the flow of spending back to firms. Consumption, investment, and wages are injections or components of the flow."
+    "explanation": "Withdrawals (or leakages) are funds that leave the circular flow. Savings by households represent income not spent on consumption or investment, thus reducing the flow of spending back to firms. Consumption, investment, and wages are injections or components of the flow.",
+    "correct_key": "C",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_59",
@@ -725,7 +890,10 @@
     },
     "answer": "C",
     "difficulty": 6,
-    "explanation": "Productivity is a key determinant of aggregate supply. A decrease in productivity means that fewer goods and services can be produced at any given price level. This causes the short-run and long-run aggregate supply curves to shift to the left."
+    "explanation": "Productivity is a key determinant of aggregate supply. A decrease in productivity means that fewer goods and services can be produced at any given price level. This causes the short-run and long-run aggregate supply curves to shift to the left.",
+    "correct_key": "C",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_60",
@@ -738,7 +906,10 @@
     },
     "answer": "C",
     "difficulty": 5,
-    "explanation": "The natural rate of unemployment is the sum of frictional unemployment (people temporarily between jobs) and structural unemployment (mismatch between skills and available jobs). Cyclical unemployment is related to the business cycle and is zero at the natural rate."
+    "explanation": "The natural rate of unemployment is the sum of frictional unemployment (people temporarily between jobs) and structural unemployment (mismatch between skills and available jobs). Cyclical unemployment is related to the business cycle and is zero at the natural rate.",
+    "correct_key": "C",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_61",
@@ -751,7 +922,10 @@
     },
     "answer": "D",
     "difficulty": 6,
-    "explanation": "Discretionary fiscal policy refers to deliberate changes in government spending or taxation enacted by policymakers. Adjusting infrastructure spending is a direct action by the government. Options A, B, and D are tools of monetary policy used by the central bank."
+    "explanation": "Discretionary fiscal policy refers to deliberate changes in government spending or taxation enacted by policymakers. Adjusting infrastructure spending is a direct action by the government. Options A, B, and D are tools of monetary policy used by the central bank.",
+    "correct_key": "D",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_62",
@@ -764,7 +938,10 @@
     },
     "answer": "C",
     "difficulty": 7,
-    "explanation": "When the economy operates beyond potential GDP, it signifies an overheated economy with aggregate demand exceeding the economy's capacity to produce. This typically leads to upward pressure on prices (inflation) and a demand for labor that pushes unemployment below its natural rate."
+    "explanation": "When the economy operates beyond potential GDP, it signifies an overheated economy with aggregate demand exceeding the economy's capacity to produce. This typically leads to upward pressure on prices (inflation) and a demand for labor that pushes unemployment below its natural rate.",
+    "correct_key": "C",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_63",
@@ -777,7 +954,10 @@
     },
     "answer": "A",
     "difficulty": 5,
-    "explanation": "The current account balance includes the balance of trade (goods), the balance on services, net income from abroad, and net current transfers. The balance of goods is $150B - $200B = -$50B. The balance of services is $80B - $60B = +$20B. Assuming these are the only components for simplicity, the current account balance is -$50B + $20B = -$30B."
+    "explanation": "The current account balance includes the balance of trade (goods), the balance on services, net income from abroad, and net current transfers. The balance of goods is $150B - $200B = -$50B. The balance of services is $80B - $60B = +$20B. Assuming these are the only components for simplicity, the current account balance is -$50B + $20B = -$30B.",
+    "correct_key": "A",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_64",
@@ -790,7 +970,10 @@
     },
     "answer": "A",
     "difficulty": 6,
-    "explanation": "The downward slope of the aggregate demand curve is explained by three main effects: the wealth effect (higher price levels reduce the real value of household wealth, decreasing consumption), the interest rate effect (higher price levels increase the demand for money, raising interest rates and decreasing investment), and the international trade effect (higher price levels make domestic goods more expensive, decreasing net exports)."
+    "explanation": "The downward slope of the aggregate demand curve is explained by three main effects: the wealth effect (higher price levels reduce the real value of household wealth, decreasing consumption), the interest rate effect (higher price levels increase the demand for money, raising interest rates and decreasing investment), and the international trade effect (higher price levels make domestic goods more expensive, decreasing net exports).",
+    "correct_key": "A",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_65",
@@ -803,7 +986,10 @@
     },
     "answer": "B",
     "difficulty": 5,
-    "explanation": "In national income accounting, investment specifically refers to spending on capital goods (machinery, equipment, factories), changes in inventories, and new residential construction. Buying stocks and bonds is financial investment, not macroeconomic investment. Saving is foregoing current consumption. Government spending is a separate category."
+    "explanation": "In national income accounting, investment specifically refers to spending on capital goods (machinery, equipment, factories), changes in inventories, and new residential construction. Buying stocks and bonds is financial investment, not macroeconomic investment. Saving is foregoing current consumption. Government spending is a separate category.",
+    "correct_key": "B",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_66",
@@ -816,7 +1002,10 @@
     },
     "answer": "A",
     "difficulty": 7,
-    "explanation": "Quantitative easing involves a central bank purchasing assets (often long-term government bonds and mortgage-backed securities) from the open market to increase the money supply and lower long-term interest rates when short-term rates are already near zero. Option B is a contractionary open market operation. Option C is a contractionary reserve requirement change. Option D, while expansionary, is a direct lending tool, not typically referred to as QE."
+    "explanation": "Quantitative easing involves a central bank purchasing assets (often long-term government bonds and mortgage-backed securities) from the open market to increase the money supply and lower long-term interest rates when short-term rates are already near zero. Option B is a contractionary open market operation. Option C is a contractionary reserve requirement change. Option D, while expansionary, is a direct lending tool, not typically referred to as QE.",
+    "correct_key": "A",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_67",
@@ -829,7 +1018,10 @@
     },
     "answer": "D",
     "difficulty": 5,
-    "explanation": "An increase in personal income taxes reduces households' disposable income, leading to a decrease in consumption spending. Since consumption is a component of aggregate demand, a decrease in consumption causes the aggregate demand curve to shift to the left, resulting in lower real GDP and a lower price level in the short run."
+    "explanation": "An increase in personal income taxes reduces households' disposable income, leading to a decrease in consumption spending. Since consumption is a component of aggregate demand, a decrease in consumption causes the aggregate demand curve to shift to the left, resulting in lower real GDP and a lower price level in the short run.",
+    "correct_key": "D",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_68",
@@ -842,7 +1034,10 @@
     },
     "answer": "C",
     "difficulty": 4,
-    "explanation": "Frictional unemployment occurs when individuals are temporarily out of work as they search for a new job or transition between jobs. Option A describes structural unemployment. Option B describes cyclical unemployment. Option D is a cause of structural unemployment."
+    "explanation": "Frictional unemployment occurs when individuals are temporarily out of work as they search for a new job or transition between jobs. Option A describes structural unemployment. Option B describes cyclical unemployment. Option D is a cause of structural unemployment.",
+    "correct_key": "C",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_69",
@@ -855,7 +1050,10 @@
     },
     "answer": "C",
     "difficulty": 8,
-    "explanation": "The Laffer Curve suggests that there is an optimal tax rate that maximizes government revenue. If tax rates are too low, revenue is low. If tax rates are too high, they can discourage economic activity, leading to lower tax revenue."
+    "explanation": "The Laffer Curve suggests that there is an optimal tax rate that maximizes government revenue. If tax rates are too low, revenue is low. If tax rates are too high, they can discourage economic activity, leading to lower tax revenue.",
+    "correct_key": "C",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_70",
@@ -868,7 +1066,10 @@
     },
     "answer": "D",
     "difficulty": 5,
-    "explanation": "In a closed economy, the multiplier is calculated as 1 / MPS. Given MPS = 0.2, the multiplier is 1 / 0.2 = 5."
+    "explanation": "In a closed economy, the multiplier is calculated as 1 / MPS. Given MPS = 0.2, the multiplier is 1 / 0.2 = 5.",
+    "correct_key": "D",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_71",
@@ -881,7 +1082,10 @@
     },
     "answer": "D",
     "difficulty": 7,
-    "explanation": "The LRAS curve is determined by the economy's potential output, which is influenced by factors of production like capital, labor, and technology. An increase in the stock of physical capital, improvements in technology, or an increase in the labor force would all shift the LRAS curve to the right, indicating a higher potential output."
+    "explanation": "The LRAS curve is determined by the economy's potential output, which is influenced by factors of production like capital, labor, and technology. An increase in the stock of physical capital, improvements in technology, or an increase in the labor force would all shift the LRAS curve to the right, indicating a higher potential output.",
+    "correct_key": "D",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_72",
@@ -894,7 +1098,10 @@
     },
     "answer": "C",
     "difficulty": 6,
-    "explanation": "To combat inflation, the Federal Reserve needs to reduce the money supply and increase interest rates. Increasing the reserve requirement forces banks to hold more reserves, reducing their ability to lend and thus contracting the money supply. Options A, B, and D are expansionary monetary policy tools."
+    "explanation": "To combat inflation, the Federal Reserve needs to reduce the money supply and increase interest rates. Increasing the reserve requirement forces banks to hold more reserves, reducing their ability to lend and thus contracting the money supply. Options A, B, and D are expansionary monetary policy tools.",
+    "correct_key": "C",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_73",
@@ -907,7 +1114,10 @@
     },
     "answer": "D",
     "difficulty": 4,
-    "explanation": "Aggregate demand (AD) is the total demand for goods and services in an economy at a given time and price level. It is represented by the equation AD = C + I + G + (X-M). A decrease in consumer confidence leads to lower consumption spending (C), shifting the AD curve to the left."
+    "explanation": "Aggregate demand (AD) is the total demand for goods and services in an economy at a given time and price level. It is represented by the equation AD = C + I + G + (X-M). A decrease in consumer confidence leads to lower consumption spending (C), shifting the AD curve to the left.",
+    "correct_key": "D",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_74",
@@ -920,7 +1130,10 @@
     },
     "answer": "C",
     "difficulty": 6,
-    "explanation": "The money multiplier is calculated as 1 / reserve requirement. In this case, the money multiplier is 1 / 0.10 = 10. The maximum amount of new money created is the initial deposit multiplied by the money multiplier, so $1,000 * 10 = $10,000. However, the question asks for the maximum amount of *new* money the banking system can create, which refers to the total increase in the money supply beyond the initial deposit. This is calculated as the initial deposit * (money multiplier - 1) = $1,000 * (10 - 1) = $9,000."
+    "explanation": "The money multiplier is calculated as 1 / reserve requirement. In this case, the money multiplier is 1 / 0.10 = 10. The maximum amount of new money created is the initial deposit multiplied by the money multiplier, so $1,000 * 10 = $10,000. However, the question asks for the maximum amount of *new* money the banking system can create, which refers to the total increase in the money supply beyond the initial deposit. This is calculated as the initial deposit * (money multiplier - 1) = $1,000 * (10 - 1) = $9,000.",
+    "correct_key": "C",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_75",
@@ -933,7 +1146,10 @@
     },
     "answer": "A",
     "difficulty": 5,
-    "explanation": "Cost-push inflation occurs when prices rise due to increases in production costs, such as wages or raw material prices. A significant increase in oil prices, a key input for many industries, would raise production costs across the economy, leading to a leftward shift in the short-run aggregate supply curve and higher price levels."
+    "explanation": "Cost-push inflation occurs when prices rise due to increases in production costs, such as wages or raw material prices. A significant increase in oil prices, a key input for many industries, would raise production costs across the economy, leading to a leftward shift in the short-run aggregate supply curve and higher price levels.",
+    "correct_key": "A",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_76",
@@ -946,7 +1162,10 @@
     },
     "answer": "A",
     "difficulty": 6,
-    "explanation": "When an economy operates above its potential output, it means that resources, including labor, are being utilized beyond their sustainable capacity. This typically leads to a lower unemployment rate than the natural rate of unemployment. In the long run, this condition would put upward pressure on wages and prices."
+    "explanation": "When an economy operates above its potential output, it means that resources, including labor, are being utilized beyond their sustainable capacity. This typically leads to a lower unemployment rate than the natural rate of unemployment. In the long run, this condition would put upward pressure on wages and prices.",
+    "correct_key": "A",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_78",
@@ -959,7 +1178,10 @@
     },
     "answer": "C",
     "difficulty": 5,
-    "explanation": "Automatic stabilizers are government programs that automatically tend to reduce economic fluctuations without direct government intervention. Unemployment benefits are paid out during recessions, increasing aggregate demand, and are reduced during expansions, cushioning the economy."
+    "explanation": "Automatic stabilizers are government programs that automatically tend to reduce economic fluctuations without direct government intervention. Unemployment benefits are paid out during recessions, increasing aggregate demand, and are reduced during expansions, cushioning the economy.",
+    "correct_key": "C",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_79",
@@ -972,7 +1194,10 @@
     },
     "answer": "B",
     "difficulty": 7,
-    "explanation": "The Quantity Theory of Money is expressed by the equation MV = PQ, where M is the money supply, V is the velocity of money, P is the price level, and Q is real output (GDP). If V is constant and M increases, then PQ must increase. The Quantity Theory typically assumes that real output (Q) is determined by factors other than the money supply in the long run. Therefore, the increase in M is primarily reflected as an increase in P, the price level (inflation)."
+    "explanation": "The Quantity Theory of Money is expressed by the equation MV = PQ, where M is the money supply, V is the velocity of money, P is the price level, and Q is real output (GDP). If V is constant and M increases, then PQ must increase. The Quantity Theory typically assumes that real output (Q) is determined by factors other than the money supply in the long run. Therefore, the increase in M is primarily reflected as an increase in P, the price level (inflation).",
+    "correct_key": "B",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_80",
@@ -985,7 +1210,10 @@
     },
     "answer": "D",
     "difficulty": 4,
-    "explanation": "Net exports (X-M) are a component of aggregate demand (AD = C + I + G + (X-M)). A decrease in net exports means that (X-M) becomes smaller, which directly reduces aggregate demand, shifting the AD curve to the left."
+    "explanation": "Net exports (X-M) are a component of aggregate demand (AD = C + I + G + (X-M)). A decrease in net exports means that (X-M) becomes smaller, which directly reduces aggregate demand, shifting the AD curve to the left.",
+    "correct_key": "D",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_82",
@@ -998,7 +1226,10 @@
     },
     "answer": "B",
     "difficulty": 6,
-    "explanation": "When the central bank sells government securities, it withdraws money from the banking system. Banks have less money to lend, which decreases the money supply. With a reduced supply of loanable funds, interest rates tend to rise."
+    "explanation": "When the central bank sells government securities, it withdraws money from the banking system. Banks have less money to lend, which decreases the money supply. With a reduced supply of loanable funds, interest rates tend to rise.",
+    "correct_key": "B",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_83",
@@ -1011,7 +1242,10 @@
     },
     "answer": "B",
     "difficulty": 6,
-    "explanation": "Long-run aggregate supply (LRAS) represents the economy's potential output, which is determined by the availability of resources (labor, capital, natural resources) and the efficiency with which they are used (technology and productivity). Increases in productivity and technological advancements allow for more goods and services to be produced with the same amount of inputs, shifting the LRAS curve to the right."
+    "explanation": "Long-run aggregate supply (LRAS) represents the economy's potential output, which is determined by the availability of resources (labor, capital, natural resources) and the efficiency with which they are used (technology and productivity). Increases in productivity and technological advancements allow for more goods and services to be produced with the same amount of inputs, shifting the LRAS curve to the right.",
+    "correct_key": "B",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_85",
@@ -1024,7 +1258,10 @@
     },
     "answer": "B",
     "difficulty": 6,
-    "explanation": "Comparative advantage is based on the concept of opportunity cost. A country has a comparative advantage in producing a good if it can do so at a lower opportunity cost than other countries, meaning it must give up fewer units of other goods to produce that specific good."
+    "explanation": "Comparative advantage is based on the concept of opportunity cost. A country has a comparative advantage in producing a good if it can do so at a lower opportunity cost than other countries, meaning it must give up fewer units of other goods to produce that specific good.",
+    "correct_key": "B",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_86",
@@ -1037,7 +1274,10 @@
     },
     "answer": "B",
     "difficulty": 5,
-    "explanation": "Disinflation is a slowdown in the inflation rate. It means that prices are still rising, but at a slower pace than before. A decrease in the overall price level is deflation, and an increase in the unemployment rate is not directly related to disinflation."
+    "explanation": "Disinflation is a slowdown in the inflation rate. It means that prices are still rising, but at a slower pace than before. A decrease in the overall price level is deflation, and an increase in the unemployment rate is not directly related to disinflation.",
+    "correct_key": "B",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_87",
@@ -1050,7 +1290,10 @@
     },
     "answer": "A",
     "difficulty": 6,
-    "explanation": "Crowding out occurs when government spending increases, often financed by borrowing. This increased demand for loanable funds can drive up interest rates. Higher interest rates make it more expensive for businesses to borrow money, thus discouraging private investment."
+    "explanation": "Crowding out occurs when government spending increases, often financed by borrowing. This increased demand for loanable funds can drive up interest rates. Higher interest rates make it more expensive for businesses to borrow money, thus discouraging private investment.",
+    "correct_key": "A",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_88",
@@ -1063,7 +1306,10 @@
     },
     "answer": "D",
     "difficulty": 5,
-    "explanation": "Expansionary monetary policy aims to increase the money supply and lower interest rates to stimulate economic activity. Decreasing the target for the federal funds rate signals the central bank's intent to make borrowing cheaper, encouraging lending and economic expansion."
+    "explanation": "Expansionary monetary policy aims to increase the money supply and lower interest rates to stimulate economic activity. Decreasing the target for the federal funds rate signals the central bank's intent to make borrowing cheaper, encouraging lending and economic expansion.",
+    "correct_key": "D",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_90",
@@ -1076,7 +1322,10 @@
     },
     "answer": "C",
     "difficulty": 5,
-    "explanation": "The simple spending multiplier is calculated as 1 / (1 - MPC). Given an MPC of 0.8, the multiplier is 1 / (1 - 0.8) = 1 / 0.2 = 5. This means that an initial change in spending will lead to a larger overall change in aggregate demand."
+    "explanation": "The simple spending multiplier is calculated as 1 / (1 - MPC). Given an MPC of 0.8, the multiplier is 1 / (1 - 0.8) = 1 / 0.2 = 5. This means that an initial change in spending will lead to a larger overall change in aggregate demand.",
+    "correct_key": "C",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_91",
@@ -1089,7 +1338,10 @@
     },
     "answer": "A",
     "difficulty": 4,
-    "explanation": "The expenditure approach to calculating GDP sums the spending on final goods and services. The formula is GDP = C + I + G + (X - M), where C is consumption, I is investment, G is government purchases, and (X - M) is net exports."
+    "explanation": "The expenditure approach to calculating GDP sums the spending on final goods and services. The formula is GDP = C + I + G + (X - M), where C is consumption, I is investment, G is government purchases, and (X - M) is net exports.",
+    "correct_key": "A",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_92",
@@ -1102,7 +1354,10 @@
     },
     "answer": "C",
     "difficulty": 6,
-    "explanation": "The Quantity Theory of Money (MV=PQ) suggests a direct relationship between the money supply and the price level, especially in the long run and when velocity is relatively stable. A rapid increase in the money supply (M) is often associated with significant inflation (P)."
+    "explanation": "The Quantity Theory of Money (MV=PQ) suggests a direct relationship between the money supply and the price level, especially in the long run and when velocity is relatively stable. A rapid increase in the money supply (M) is often associated with significant inflation (P).",
+    "correct_key": "C",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_93",
@@ -1115,7 +1370,10 @@
     },
     "answer": "C",
     "difficulty": 5,
-    "explanation": "Contractionary fiscal policy aims to reduce aggregate demand and slow down an overheating economy. This is achieved by either decreasing government spending or increasing taxes, both of which reduce the overall demand for goods and services."
+    "explanation": "Contractionary fiscal policy aims to reduce aggregate demand and slow down an overheating economy. This is achieved by either decreasing government spending or increasing taxes, both of which reduce the overall demand for goods and services.",
+    "correct_key": "C",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_94",
@@ -1128,7 +1386,10 @@
     },
     "answer": "B",
     "difficulty": 4,
-    "explanation": "Real GDP per capita is a measure of the average economic output per person. If real GDP is growing faster than the population, it means that the total output is increasing at a quicker rate than the number of people, leading to an increase in real GDP per person."
+    "explanation": "Real GDP per capita is a measure of the average economic output per person. If real GDP is growing faster than the population, it means that the total output is increasing at a quicker rate than the number of people, leading to an increase in real GDP per person.",
+    "correct_key": "B",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_95",
@@ -1141,7 +1402,10 @@
     },
     "answer": "D",
     "difficulty": 7,
-    "explanation": "The short-run Phillips Curve hypothesizes a trade-off between inflation and unemployment. It suggests that policymakers can reduce unemployment by accepting a higher rate of inflation, and vice versa. This relationship holds as long as expected inflation doesn't change significantly and nominal wages are sticky."
+    "explanation": "The short-run Phillips Curve hypothesizes a trade-off between inflation and unemployment. It suggests that policymakers can reduce unemployment by accepting a higher rate of inflation, and vice versa. This relationship holds as long as expected inflation doesn't change significantly and nominal wages are sticky.",
+    "correct_key": "D",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_96",
@@ -1154,7 +1418,10 @@
     },
     "answer": "C",
     "difficulty": 4,
-    "explanation": "Human capital is the economic value of a worker's experience and skills. It encompasses education, training, intelligence, health, and other attributes that contribute to productivity. Investment in human capital can lead to economic growth."
+    "explanation": "Human capital is the economic value of a worker's experience and skills. It encompasses education, training, intelligence, health, and other attributes that contribute to productivity. Investment in human capital can lead to economic growth.",
+    "correct_key": "C",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_97",
@@ -1167,7 +1434,10 @@
     },
     "answer": "C",
     "difficulty": 7,
-    "explanation": "When a country imports more than it exports, it needs to buy more foreign currency to pay for those imports than foreigners need to buy its exports. This means there will be less demand for the domestic currency on the foreign exchange market, potentially causing its value to depreciate."
+    "explanation": "When a country imports more than it exports, it needs to buy more foreign currency to pay for those imports than foreigners need to buy its exports. This means there will be less demand for the domestic currency on the foreign exchange market, potentially causing its value to depreciate.",
+    "correct_key": "C",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_98",
@@ -1180,7 +1450,10 @@
     },
     "answer": "A",
     "difficulty": 6,
-    "explanation": "A leftward shift in aggregate demand indicates a decrease in overall spending. This leads to lower output (real GDP) and, consequently, higher unemployment as firms reduce production and labor needs."
+    "explanation": "A leftward shift in aggregate demand indicates a decrease in overall spending. This leads to lower output (real GDP) and, consequently, higher unemployment as firms reduce production and labor needs.",
+    "correct_key": "A",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_99",
@@ -1193,7 +1466,10 @@
     },
     "answer": "C",
     "difficulty": 5,
-    "explanation": "Leakages are withdrawals of spending from the circular flow. Savings represent income that is not spent on consumption goods or services, thus leaving the active flow of money."
+    "explanation": "Leakages are withdrawals of spending from the circular flow. Savings represent income that is not spent on consumption goods or services, thus leaving the active flow of money.",
+    "correct_key": "C",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_100",
@@ -1206,7 +1482,10 @@
     },
     "answer": "B",
     "difficulty": 7,
-    "explanation": "The natural rate of unemployment is associated with the economy's potential output. An increase in the natural rate of unemployment suggests a decrease in the economy's productive capacity, causing the LRAS curve to shift to the left."
+    "explanation": "The natural rate of unemployment is associated with the economy's potential output. An increase in the natural rate of unemployment suggests a decrease in the economy's productive capacity, causing the LRAS curve to shift to the left.",
+    "correct_key": "B",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_101",
@@ -1219,7 +1498,10 @@
     },
     "answer": "C",
     "difficulty": 6,
-    "explanation": "Open market operations, specifically the buying and selling of government securities, directly alter the supply of reserves in the banking system, which is the primary driver of the federal funds rate."
+    "explanation": "Open market operations, specifically the buying and selling of government securities, directly alter the supply of reserves in the banking system, which is the primary driver of the federal funds rate.",
+    "correct_key": "C",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_102",
@@ -1232,7 +1514,10 @@
     },
     "answer": "A",
     "difficulty": 5,
-    "explanation": "The multiplier effect is calculated as 1 / (1 - MPC). In this case, the multiplier is 1 / (1 - 0.8) = 1 / 0.2 = 5. The total change in real GDP is the change in autonomous spending multiplied by the multiplier: $100 billion * 5 = $500 billion."
+    "explanation": "The multiplier effect is calculated as 1 / (1 - MPC). In this case, the multiplier is 1 / (1 - 0.8) = 1 / 0.2 = 5. The total change in real GDP is the change in autonomous spending multiplied by the multiplier: $100 billion * 5 = $500 billion.",
+    "correct_key": "A",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_104",
@@ -1245,7 +1530,10 @@
     },
     "answer": "B",
     "difficulty": 5,
-    "explanation": "Higher taxes reduce disposable income for households and retained earnings for firms, leading to lower consumption and investment spending, which shifts the aggregate demand curve to the left, resulting in lower real GDP."
+    "explanation": "Higher taxes reduce disposable income for households and retained earnings for firms, leading to lower consumption and investment spending, which shifts the aggregate demand curve to the left, resulting in lower real GDP.",
+    "correct_key": "B",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_105",
@@ -1258,7 +1546,10 @@
     },
     "answer": "A",
     "difficulty": 6,
-    "explanation": "This relates to the Quantity Theory of Money, represented by the equation MV = PQ. If M (money supply) increases and V (velocity) is constant, then either P (price level) or Q (real GDP) must increase. In the long run, with Q at potential output, P is expected to rise."
+    "explanation": "This relates to the Quantity Theory of Money, represented by the equation MV = PQ. If M (money supply) increases and V (velocity) is constant, then either P (price level) or Q (real GDP) must increase. In the long run, with Q at potential output, P is expected to rise.",
+    "correct_key": "A",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_106",
@@ -1271,7 +1562,10 @@
     },
     "answer": "C",
     "difficulty": 5,
-    "explanation": "Policies that reduce the cost of production, encourage investment in capital and technology, or improve the efficiency of markets tend to increase aggregate supply. Tax incentives for R&D encourage innovation and capital accumulation."
+    "explanation": "Policies that reduce the cost of production, encourage investment in capital and technology, or improve the efficiency of markets tend to increase aggregate supply. Tax incentives for R&D encourage innovation and capital accumulation.",
+    "correct_key": "C",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_107",
@@ -1284,7 +1578,10 @@
     },
     "answer": "B",
     "difficulty": 7,
-    "explanation": "Terms of trade is the ratio of export prices to import prices (usually expressed as an index). A decrease in terms of trade indicates that a country can afford fewer imports for each unit of exports it sells."
+    "explanation": "Terms of trade is the ratio of export prices to import prices (usually expressed as an index). A decrease in terms of trade indicates that a country can afford fewer imports for each unit of exports it sells.",
+    "correct_key": "B",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_108",
@@ -1297,7 +1594,10 @@
     },
     "answer": "B",
     "difficulty": 4,
-    "explanation": "When the central bank buys bonds, it injects money into the banking system, increasing the money supply and lowering interest rates, which is characteristic of expansionary monetary policy."
+    "explanation": "When the central bank buys bonds, it injects money into the banking system, increasing the money supply and lowering interest rates, which is characteristic of expansionary monetary policy.",
+    "correct_key": "B",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_109",
@@ -1310,7 +1610,10 @@
     },
     "answer": "A",
     "difficulty": 6,
-    "explanation": "Crowding out describes the phenomenon where increased government borrowing to finance deficits raises interest rates, making it more expensive for businesses to borrow and invest, thus reducing private investment."
+    "explanation": "Crowding out describes the phenomenon where increased government borrowing to finance deficits raises interest rates, making it more expensive for businesses to borrow and invest, thus reducing private investment.",
+    "correct_key": "A",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_110",
@@ -1323,7 +1626,10 @@
     },
     "answer": "A",
     "difficulty": 4,
-    "explanation": "The CPI is designed to measure the average change over time in the prices paid by urban consumers for a market basket of consumer goods and services."
+    "explanation": "The CPI is designed to measure the average change over time in the prices paid by urban consumers for a market basket of consumer goods and services.",
+    "correct_key": "A",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_111",
@@ -1336,7 +1642,10 @@
     },
     "answer": "D",
     "difficulty": 8,
-    "explanation": "The question asks about a decrease in the money supply (M). Rearranging MV=PQ to M = PQ/V, if V decreases and Q increases, the net effect on M is not immediately clear without knowing the magnitudes. However, the question is poorly phrased as it asks about a decrease in M as a result of changes in V, P, and Q, rather than the other way around. Assuming the question meant to ask what combination of changes would necessitate a decrease in M to maintain equilibrium, let's re-evaluate based on typical interpretations. A more direct interpretation based on typical macroeconomic relationships: If V decreases (money circulates less) and Q increases (more goods produced), for the equation to hold, M might need to decrease to offset the impact of these changes depending on their relative magnitudes. However, a common interpretation in relation to the Phillips curve or inflation: if V falls and Q rises, this would typically be deflationary pressure, and M would likely have to fall for the equation to balance. Let's assume the question is asking what would necessitate a M decrease. If V falls and Q rises, the right side PQ falls relative to V. To maintain equality, M must fall. A decrease in V means money is circulating less, and an increase in Q means more goods are available. For MV=PQ, if V decreases and Q increases, M must decrease to maintain equality if P remains constant or falls less than Q rises."
+    "explanation": "The question asks about a decrease in the money supply (M). Rearranging MV=PQ to M = PQ/V, if V decreases and Q increases, the net effect on M is not immediately clear without knowing the magnitudes. However, the question is poorly phrased as it asks about a decrease in M as a result of changes in V, P, and Q, rather than the other way around. Assuming the question meant to ask what combination of changes would necessitate a decrease in M to maintain equilibrium, let's re-evaluate based on typical interpretations. A more direct interpretation based on typical macroeconomic relationships: If V decreases (money circulates less) and Q increases (more goods produced), for the equation to hold, M might need to decrease to offset the impact of these changes depending on their relative magnitudes. However, a common interpretation in relation to the Phillips curve or inflation: if V falls and Q rises, this would typically be deflationary pressure, and M would likely have to fall for the equation to balance. Let's assume the question is asking what would necessitate a M decrease. If V falls and Q rises, the right side PQ falls relative to V. To maintain equality, M must fall. A decrease in V means money is circulating less, and an increase in Q means more goods are available. For MV=PQ, if V decreases and Q increases, M must decrease to maintain equality if P remains constant or falls less than Q rises.",
+    "correct_key": "D",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_112",
@@ -1349,7 +1658,10 @@
     },
     "answer": "D",
     "difficulty": 5,
-    "explanation": "Keynesian economics suggests that during a recession (operating below potential output), the government should use expansionary fiscal policy to boost aggregate demand. This includes increasing government spending or cutting taxes to encourage consumption and investment."
+    "explanation": "Keynesian economics suggests that during a recession (operating below potential output), the government should use expansionary fiscal policy to boost aggregate demand. This includes increasing government spending or cutting taxes to encourage consumption and investment.",
+    "correct_key": "D",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_113",
@@ -1362,7 +1674,10 @@
     },
     "answer": "D",
     "difficulty": 6,
-    "explanation": "The money multiplier is calculated as 1 / Reserve Requirement Ratio. A decrease in the reserve requirement means banks can lend out a larger portion of their deposits, increasing the money multiplier and thus the potential money supply."
+    "explanation": "The money multiplier is calculated as 1 / Reserve Requirement Ratio. A decrease in the reserve requirement means banks can lend out a larger portion of their deposits, increasing the money multiplier and thus the potential money supply.",
+    "correct_key": "D",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_114",
@@ -1375,7 +1690,10 @@
     },
     "answer": "B",
     "difficulty": 6,
-    "explanation": "Increased productivity means the economy can produce more output with the same amount of inputs. This directly leads to an increase in the economy's potential GDP and shifts the LRAS curve to the right."
+    "explanation": "Increased productivity means the economy can produce more output with the same amount of inputs. This directly leads to an increase in the economy's potential GDP and shifts the LRAS curve to the right.",
+    "correct_key": "B",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_115",
@@ -1388,7 +1706,10 @@
     },
     "answer": "A",
     "difficulty": 7,
-    "explanation": "The paradox of thrift highlights a potential macroeconomic problem: while saving is generally good for individuals, if everyone tries to save more simultaneously, especially during an economic downturn, it reduces overall consumption, lowers aggregate demand, and can lead to lower overall income and thus potentially less total saving."
+    "explanation": "The paradox of thrift highlights a potential macroeconomic problem: while saving is generally good for individuals, if everyone tries to save more simultaneously, especially during an economic downturn, it reduces overall consumption, lowers aggregate demand, and can lead to lower overall income and thus potentially less total saving.",
+    "correct_key": "A",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_116",
@@ -1401,7 +1722,10 @@
     },
     "answer": "C",
     "difficulty": 5,
-    "explanation": "Structural unemployment arises from fundamental changes in the economy, such as technological advancements or shifts in industry demand, leading to a gap between the skills available in the labor force and the skills required for available jobs."
+    "explanation": "Structural unemployment arises from fundamental changes in the economy, such as technological advancements or shifts in industry demand, leading to a gap between the skills available in the labor force and the skills required for available jobs.",
+    "correct_key": "C",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_117",
@@ -1414,7 +1738,10 @@
     },
     "answer": "B",
     "difficulty": 6,
-    "explanation": "A higher real interest rate increases the cost of borrowing. Firms are less likely to invest in new capital, and households are less likely to finance large purchases like cars or appliances with loans, leading to decreases in both investment and consumption of durable goods."
+    "explanation": "A higher real interest rate increases the cost of borrowing. Firms are less likely to invest in new capital, and households are less likely to finance large purchases like cars or appliances with loans, leading to decreases in both investment and consumption of durable goods.",
+    "correct_key": "B",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_118",
@@ -1427,7 +1754,10 @@
     },
     "answer": "D",
     "difficulty": 6,
-    "explanation": "Cost-push inflation is caused by increases in the costs of production (like wages or raw materials), which lead firms to raise prices to maintain profit margins. A rise in oil prices is a classic example."
+    "explanation": "Cost-push inflation is caused by increases in the costs of production (like wages or raw materials), which lead firms to raise prices to maintain profit margins. A rise in oil prices is a classic example.",
+    "correct_key": "D",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_121",
@@ -1440,7 +1770,10 @@
     },
     "answer": "B",
     "difficulty": 5,
-    "explanation": "A decrease in personal income taxes increases households' disposable income, leading to higher consumption spending, which shifts the aggregate demand curve to the right."
+    "explanation": "A decrease in personal income taxes increases households' disposable income, leading to higher consumption spending, which shifts the aggregate demand curve to the right.",
+    "correct_key": "B",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_123",
@@ -1453,7 +1786,10 @@
     },
     "answer": "B",
     "difficulty": 4,
-    "explanation": "An increase in aggregate demand shifts the AD curve to the right. With an upward-sloping aggregate supply curve, this results in a higher equilibrium price level and a higher equilibrium real GDP."
+    "explanation": "An increase in aggregate demand shifts the AD curve to the right. With an upward-sloping aggregate supply curve, this results in a higher equilibrium price level and a higher equilibrium real GDP.",
+    "correct_key": "B",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_124",
@@ -1466,7 +1802,10 @@
     },
     "answer": "C",
     "difficulty": 5,
-    "explanation": "Cyclical unemployment is directly tied to recessions and expansions in the business cycle. When the economy is in a downturn, cyclical unemployment rises, and when it expands, it falls."
+    "explanation": "Cyclical unemployment is directly tied to recessions and expansions in the business cycle. When the economy is in a downturn, cyclical unemployment rises, and when it expands, it falls.",
+    "correct_key": "C",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_125",
@@ -1479,7 +1818,10 @@
     },
     "answer": "B",
     "difficulty": 5,
-    "explanation": "Net exports (X-M) are a component of aggregate demand (AD = C + I + G + (X-M)). A decrease in net exports directly reduces aggregate demand, shifting the AD curve to the left."
+    "explanation": "Net exports (X-M) are a component of aggregate demand (AD = C + I + G + (X-M)). A decrease in net exports directly reduces aggregate demand, shifting the AD curve to the left.",
+    "correct_key": "B",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_126",
@@ -1492,7 +1834,10 @@
     },
     "answer": "A",
     "difficulty": 4,
-    "explanation": "Expansionary fiscal policy aims to increase aggregate demand. This is achieved by either increasing government purchases (G) or cutting taxes (T), both of which stimulate economic activity."
+    "explanation": "Expansionary fiscal policy aims to increase aggregate demand. This is achieved by either increasing government purchases (G) or cutting taxes (T), both of which stimulate economic activity.",
+    "correct_key": "A",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_128",
@@ -1505,7 +1850,10 @@
     },
     "answer": "B",
     "difficulty": 6,
-    "explanation": "An increase in the money supply, ceteris paribus, leads to a surplus of money. This surplus drives down interest rates, making borrowing cheaper. Lower interest rates encourage investment and consumption, thus increasing aggregate demand."
+    "explanation": "An increase in the money supply, ceteris paribus, leads to a surplus of money. This surplus drives down interest rates, making borrowing cheaper. Lower interest rates encourage investment and consumption, thus increasing aggregate demand.",
+    "correct_key": "B",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_129",
@@ -1518,7 +1866,10 @@
     },
     "answer": "D",
     "difficulty": 5,
-    "explanation": "Crowding out occurs when increased government borrowing to finance deficits drives up interest rates, making it more expensive for private businesses to borrow and invest. This reduces private investment."
+    "explanation": "Crowding out occurs when increased government borrowing to finance deficits drives up interest rates, making it more expensive for private businesses to borrow and invest. This reduces private investment.",
+    "correct_key": "D",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_130",
@@ -1531,7 +1882,10 @@
     },
     "answer": "D",
     "difficulty": 4,
-    "explanation": "The short-run Phillips Curve suggests that policymakers can choose between lower unemployment and higher inflation, or vice versa. This trade-off exists because of the relationship between aggregate demand, output, and the price level."
+    "explanation": "The short-run Phillips Curve suggests that policymakers can choose between lower unemployment and higher inflation, or vice versa. This trade-off exists because of the relationship between aggregate demand, output, and the price level.",
+    "correct_key": "D",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_131",
@@ -1544,7 +1898,10 @@
     },
     "answer": "B",
     "difficulty": 5,
-    "explanation": "Fiat money, such as the US dollar, has value because the government declares it to be legal tender and people have confidence in its stability and acceptability as a medium of exchange. It is not backed by a physical commodity."
+    "explanation": "Fiat money, such as the US dollar, has value because the government declares it to be legal tender and people have confidence in its stability and acceptability as a medium of exchange. It is not backed by a physical commodity.",
+    "correct_key": "B",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_132",
@@ -1557,7 +1914,10 @@
     },
     "answer": "C",
     "difficulty": 6,
-    "explanation": "The Quantity Theory of Money states that MV = PY, where M is the money supply, V is the velocity of money, P is the price level, and Y is real GDP. Nominal GDP is P*Y. If M and V are constant, and P doubles, then P*Y must also double for the equation to hold."
+    "explanation": "The Quantity Theory of Money states that MV = PY, where M is the money supply, V is the velocity of money, P is the price level, and Y is real GDP. Nominal GDP is P*Y. If M and V are constant, and P doubles, then P*Y must also double for the equation to hold.",
+    "correct_key": "C",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_21",
@@ -1570,7 +1930,10 @@
     },
     "answer": "A",
     "difficulty": 4,
-    "explanation": "Increased consumer confidence leads to higher intended spending at every price level, shifting the aggregate demand curve to the right."
+    "explanation": "Increased consumer confidence leads to higher intended spending at every price level, shifting the aggregate demand curve to the right.",
+    "correct_key": "A",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macro_2",
@@ -1583,7 +1946,10 @@
     },
     "answer": "C",
     "difficulty": 5,
-    "explanation": "The natural rate consists of frictional (job transitions) and structural (skills mismatches) unemployment. Cyclical is NOT part of the natural rate."
+    "explanation": "The natural rate consists of frictional (job transitions) and structural (skills mismatches) unemployment. Cyclical is NOT part of the natural rate.",
+    "correct_key": "C",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_22",
@@ -1596,7 +1962,10 @@
     },
     "answer": "C",
     "difficulty": 6,
-    "explanation": "The money multiplier is 1 / reserve requirement. In this case, 1 / 0.10 = 10. The maximum change in the money supply is the initial injection multiplied by the money multiplier: $100 million * 10 = $1 billion."
+    "explanation": "The money multiplier is 1 / reserve requirement. In this case, 1 / 0.10 = 10. The maximum change in the money supply is the initial injection multiplied by the money multiplier: $100 million * 10 = $1 billion.",
+    "correct_key": "C",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_137",
@@ -1609,7 +1978,10 @@
     },
     "answer": "D",
     "difficulty": 6,
-    "explanation": "The multiplier is calculated as 1/(1-MPC). A higher MPC means a larger fraction of any increase in income is spent, leading to a multiplied effect on aggregate demand and a larger overall multiplier."
+    "explanation": "The multiplier is calculated as 1/(1-MPC). A higher MPC means a larger fraction of any increase in income is spent, leading to a multiplied effect on aggregate demand and a larger overall multiplier.",
+    "correct_key": "D",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_139",
@@ -1622,7 +1994,10 @@
     },
     "answer": "C",
     "difficulty": 5,
-    "explanation": "Printing more money increases the money supply. If this increase is not matched by an increase in the demand for money or real output, it leads to a general increase in the price level, which is inflation."
+    "explanation": "Printing more money increases the money supply. If this increase is not matched by an increase in the demand for money or real output, it leads to a general increase in the price level, which is inflation.",
+    "correct_key": "C",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_140",
@@ -1635,7 +2010,10 @@
     },
     "answer": "D",
     "difficulty": 6,
-    "explanation": "Sticky prices refer to the phenomenon where prices of goods and services do not change quickly in response to shifts in aggregate demand or supply. This stickiness allows for deviations from the natural rate of output in the short run."
+    "explanation": "Sticky prices refer to the phenomenon where prices of goods and services do not change quickly in response to shifts in aggregate demand or supply. This stickiness allows for deviations from the natural rate of output in the short run.",
+    "correct_key": "D",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_141",
@@ -1648,7 +2026,10 @@
     },
     "answer": "D",
     "difficulty": 4,
-    "explanation": "While there are complex relationships, a significant and sustained increase in the money supply is generally considered a primary driver of inflation, especially in the long run."
+    "explanation": "While there are complex relationships, a significant and sustained increase in the money supply is generally considered a primary driver of inflation, especially in the long run.",
+    "correct_key": "D",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_142",
@@ -1661,7 +2042,10 @@
     },
     "answer": "D",
     "difficulty": 7,
-    "explanation": "Labor productivity is often measured as output per worker. If the labor force grows faster than the capital stock, there is less capital available per worker, which generally leads to lower labor productivity."
+    "explanation": "Labor productivity is often measured as output per worker. If the labor force grows faster than the capital stock, there is less capital available per worker, which generally leads to lower labor productivity.",
+    "correct_key": "D",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_143",
@@ -1674,7 +2058,10 @@
     },
     "answer": "C",
     "difficulty": 5,
-    "explanation": "Automatic stabilizers are features of the economy that automatically work to moderate the business cycle, without explicit policy action. Unemployment insurance is an example; during a recession, more people receive benefits, increasing aggregate demand, and during an expansion, fewer people receive benefits, dampening aggregate demand."
+    "explanation": "Automatic stabilizers are features of the economy that automatically work to moderate the business cycle, without explicit policy action. Unemployment insurance is an example; during a recession, more people receive benefits, increasing aggregate demand, and during an expansion, fewer people receive benefits, dampening aggregate demand.",
+    "correct_key": "C",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_144",
@@ -1687,7 +2074,10 @@
     },
     "answer": "A",
     "difficulty": 6,
-    "explanation": "When a currency depreciates, it takes more of that currency to buy a unit of foreign currency. Therefore, foreign goods (imports) become more expensive for domestic consumers, and domestic goods (exports) become cheaper for foreign buyers."
+    "explanation": "When a currency depreciates, it takes more of that currency to buy a unit of foreign currency. Therefore, foreign goods (imports) become more expensive for domestic consumers, and domestic goods (exports) become cheaper for foreign buyers.",
+    "correct_key": "A",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_145",
@@ -1700,7 +2090,10 @@
     },
     "answer": "D",
     "difficulty": 7,
-    "explanation": "Rational expectations theory posits that economic agents use all available relevant information, including their understanding of how the economy works and government policies, to form their expectations. They do not make systematic errors in forecasting."
+    "explanation": "Rational expectations theory posits that economic agents use all available relevant information, including their understanding of how the economy works and government policies, to form their expectations. They do not make systematic errors in forecasting.",
+    "correct_key": "D",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_146",
@@ -1713,7 +2106,10 @@
     },
     "answer": "C",
     "difficulty": 5,
-    "explanation": "Long-run economic growth is driven by increases in the economy's productive capacity. This is achieved through accumulation of physical capital (machinery, infrastructure), human capital (education, skills), and technological progress."
+    "explanation": "Long-run economic growth is driven by increases in the economy's productive capacity. This is achieved through accumulation of physical capital (machinery, infrastructure), human capital (education, skills), and technological progress.",
+    "correct_key": "C",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_147",
@@ -1726,7 +2122,10 @@
     },
     "answer": "C",
     "difficulty": 4,
-    "explanation": "Nominal GDP uses current prices, which can be affected by inflation. Real GDP adjusts for inflation to reflect changes in the actual quantity of goods and services produced, using prices from a base year (constant prices)."
+    "explanation": "Nominal GDP uses current prices, which can be affected by inflation. Real GDP adjusts for inflation to reflect changes in the actual quantity of goods and services produced, using prices from a base year (constant prices).",
+    "correct_key": "C",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_148",
@@ -1739,7 +2138,10 @@
     },
     "answer": "D",
     "difficulty": 5,
-    "explanation": "Stagflation is a portmanteau of stagnation and inflation, characterized by slow economic growth, high unemployment, and rising prices (inflation)."
+    "explanation": "Stagflation is a portmanteau of stagnation and inflation, characterized by slow economic growth, high unemployment, and rising prices (inflation).",
+    "correct_key": "D",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_149",
@@ -1752,7 +2154,10 @@
     },
     "answer": "D",
     "difficulty": 5,
-    "explanation": "The spending multiplier is calculated as 1 / (1 - MPC). With an MPC of 0.8, the multiplier is 1 / (1 - 0.8) = 1 / 0.2 = 5."
+    "explanation": "The spending multiplier is calculated as 1 / (1 - MPC). With an MPC of 0.8, the multiplier is 1 / (1 - 0.8) = 1 / 0.2 = 5.",
+    "correct_key": "D",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_150",
@@ -1765,7 +2170,10 @@
     },
     "answer": "B",
     "difficulty": 6,
-    "explanation": "The Laffer Curve suggests that at very high tax rates, individuals and businesses may reduce their economic activity (work, invest, produce) due to disincentives, which can ultimately lead to a decrease in the total tax revenue collected by the government."
+    "explanation": "The Laffer Curve suggests that at very high tax rates, individuals and businesses may reduce their economic activity (work, invest, produce) due to disincentives, which can ultimately lead to a decrease in the total tax revenue collected by the government.",
+    "correct_key": "B",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_152",
@@ -1778,7 +2186,10 @@
     },
     "answer": "D",
     "difficulty": 7,
-    "explanation": "Increased government spending directly increases aggregate demand. Financing this spending through borrowing increases the demand for loanable funds, which tends to push interest rates upward (this is known as crowding out)."
+    "explanation": "Increased government spending directly increases aggregate demand. Financing this spending through borrowing increases the demand for loanable funds, which tends to push interest rates upward (this is known as crowding out).",
+    "correct_key": "D",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_153",
@@ -1791,7 +2202,10 @@
     },
     "answer": "B",
     "difficulty": 4,
-    "explanation": "Deficit spending means the government is spending more than it is collecting in tax revenue, thus increasing the national debt."
+    "explanation": "Deficit spending means the government is spending more than it is collecting in tax revenue, thus increasing the national debt.",
+    "correct_key": "B",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_154",
@@ -1804,7 +2218,10 @@
     },
     "answer": "C",
     "difficulty": 5,
-    "explanation": "The natural rate of unemployment is the baseline unemployment rate that exists even when the economy is healthy. It includes frictional unemployment (people transitioning between jobs) and structural unemployment (mismatch between skills and jobs)."
+    "explanation": "The natural rate of unemployment is the baseline unemployment rate that exists even when the economy is healthy. It includes frictional unemployment (people transitioning between jobs) and structural unemployment (mismatch between skills and jobs).",
+    "correct_key": "C",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_155",
@@ -1817,7 +2234,10 @@
     },
     "answer": "B",
     "difficulty": 5,
-    "explanation": "Aggregate Demand (AD) is calculated as AD = C + I + G + (X - M), where (X - M) represents net exports. An increase in net exports (X - M) directly increases AD."
+    "explanation": "Aggregate Demand (AD) is calculated as AD = C + I + G + (X - M), where (X - M) represents net exports. An increase in net exports (X - M) directly increases AD.",
+    "correct_key": "B",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_157",
@@ -1830,7 +2250,10 @@
     },
     "answer": "B",
     "difficulty": 6,
-    "explanation": "When the demand for money increases (e.g., due to increased transaction needs or uncertainty), with a fixed money supply, the price of holding money (the interest rate) must rise to equilibrate the market."
+    "explanation": "When the demand for money increases (e.g., due to increased transaction needs or uncertainty), with a fixed money supply, the price of holding money (the interest rate) must rise to equilibrate the market.",
+    "correct_key": "B",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_158",
@@ -1843,7 +2266,10 @@
     },
     "answer": "B",
     "difficulty": 4,
-    "explanation": "Expansionary fiscal policy aims to increase aggregate demand. This is achieved by either increasing government spending or decreasing taxes (or both), which leaves more disposable income for consumers and businesses."
+    "explanation": "Expansionary fiscal policy aims to increase aggregate demand. This is achieved by either increasing government spending or decreasing taxes (or both), which leaves more disposable income for consumers and businesses.",
+    "correct_key": "B",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_159",
@@ -1856,7 +2282,10 @@
     },
     "answer": "B",
     "difficulty": 5,
-    "explanation": "The short-run Phillips Curve suggests that policymakers face a trade-off: policies that reduce unemployment tend to increase inflation, and policies that reduce inflation tend to increase unemployment."
+    "explanation": "The short-run Phillips Curve suggests that policymakers face a trade-off: policies that reduce unemployment tend to increase inflation, and policies that reduce inflation tend to increase unemployment.",
+    "correct_key": "B",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_160",
@@ -1869,7 +2298,10 @@
     },
     "answer": "C",
     "difficulty": 4,
-    "explanation": "Wages and salaries are costs of production and are part of the income approach to calculating GDP, not the expenditure approach (which sums C + I + G + NX)."
+    "explanation": "Wages and salaries are costs of production and are part of the income approach to calculating GDP, not the expenditure approach (which sums C + I + G + NX).",
+    "correct_key": "C",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_161",
@@ -1882,7 +2314,10 @@
     },
     "answer": "D",
     "difficulty": 6,
-    "explanation": "A depreciation of a country's currency means it takes more of that currency to buy a unit of foreign currency. Therefore, goods priced in foreign currency (imports) become more expensive domestically, and goods priced in the domestic currency (exports) become cheaper for those holding foreign currency."
+    "explanation": "A depreciation of a country's currency means it takes more of that currency to buy a unit of foreign currency. Therefore, goods priced in foreign currency (imports) become more expensive domestically, and goods priced in the domestic currency (exports) become cheaper for those holding foreign currency.",
+    "correct_key": "D",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_162",
@@ -1895,7 +2330,10 @@
     },
     "answer": "C",
     "difficulty": 5,
-    "explanation": "Open market operations are the primary tool of monetary policy where the central bank buys or sells government securities (like bonds) in the open market to influence the money supply and interest rates."
+    "explanation": "Open market operations are the primary tool of monetary policy where the central bank buys or sells government securities (like bonds) in the open market to influence the money supply and interest rates.",
+    "correct_key": "C",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_164",
@@ -1908,7 +2346,10 @@
     },
     "answer": "D",
     "difficulty": 7,
-    "explanation": "The Quantity Theory of Money is expressed by the equation MV = PQ, where M is the money supply, V is the velocity of money, P is the price level, and Q is the real output (which determines nominal GDP PQ). If V is constant and M increases by 10%, and assuming Q is relatively stable in the short run, then PQ (nominal GDP) must increase by approximately 10%."
+    "explanation": "The Quantity Theory of Money is expressed by the equation MV = PQ, where M is the money supply, V is the velocity of money, P is the price level, and Q is the real output (which determines nominal GDP PQ). If V is constant and M increases by 10%, and assuming Q is relatively stable in the short run, then PQ (nominal GDP) must increase by approximately 10%.",
+    "correct_key": "D",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_166",
@@ -1921,7 +2362,10 @@
     },
     "answer": "B",
     "difficulty": 6,
-    "explanation": "Automatic stabilizers, such as progressive income taxes and unemployment benefits, automatically adjust government spending and tax revenues in response to economic fluctuations, helping to moderate the business cycle without new policy decisions."
+    "explanation": "Automatic stabilizers, such as progressive income taxes and unemployment benefits, automatically adjust government spending and tax revenues in response to economic fluctuations, helping to moderate the business cycle without new policy decisions.",
+    "correct_key": "B",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_168",
@@ -1934,7 +2378,10 @@
     },
     "answer": "D",
     "difficulty": 6,
-    "explanation": "Increased saving increases the supply of loanable funds. With a given demand for loanable funds, this leads to a lower equilibrium interest rate and, consequently, encourages more private investment."
+    "explanation": "Increased saving increases the supply of loanable funds. With a given demand for loanable funds, this leads to a lower equilibrium interest rate and, consequently, encourages more private investment.",
+    "correct_key": "D",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_133",
@@ -1947,7 +2394,10 @@
     },
     "answer": "D",
     "difficulty": 5,
-    "explanation": "Long-run aggregate supply (LRAS) is determined by the economy's productive capacity, which depends on factors like labor, capital, and technology. A decrease in the labor force directly reduces the potential output of the economy, shifting LRAS to the left."
+    "explanation": "Long-run aggregate supply (LRAS) is determined by the economy's productive capacity, which depends on factors like labor, capital, and technology. A decrease in the labor force directly reduces the potential output of the economy, shifting LRAS to the left.",
+    "correct_key": "D",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_134",
@@ -1960,7 +2410,10 @@
     },
     "answer": "D",
     "difficulty": 5,
-    "explanation": "Stagflation is a situation characterized by a stagnant economy (high unemployment) combined with rising prices (high inflation). This often results from adverse supply shocks that shift the short-run aggregate supply curve to the left."
+    "explanation": "Stagflation is a situation characterized by a stagnant economy (high unemployment) combined with rising prices (high inflation). This often results from adverse supply shocks that shift the short-run aggregate supply curve to the left.",
+    "correct_key": "D",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_135",
@@ -1973,7 +2426,10 @@
     },
     "answer": "D",
     "difficulty": 4,
-    "explanation": "The discount rate is the interest rate set by the central bank for direct loans to commercial banks. Changes in the discount rate can influence the overall level of interest rates and the money supply."
+    "explanation": "The discount rate is the interest rate set by the central bank for direct loans to commercial banks. Changes in the discount rate can influence the overall level of interest rates and the money supply.",
+    "correct_key": "D",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_172",
@@ -1986,7 +2442,10 @@
     },
     "answer": "A",
     "difficulty": 5,
-    "explanation": "The short-run Phillips curve illustrates a trade-off between inflation and unemployment. As unemployment falls (indicating a stronger economy), wages and prices tend to rise, leading to higher inflation."
+    "explanation": "The short-run Phillips curve illustrates a trade-off between inflation and unemployment. As unemployment falls (indicating a stronger economy), wages and prices tend to rise, leading to higher inflation.",
+    "correct_key": "A",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_173",
@@ -1999,7 +2458,10 @@
     },
     "answer": "A",
     "difficulty": 6,
-    "explanation": "Required reserves are 10% of $5,000, which is $500. The bank has $1,000 in reserves, so it has $1,000 - $500 = $500 in excess reserves. Initially, the bank has $4,000 in excess reserves ($5,000 deposits - $1,000 required reserves). With $1,000 in reserves and $5,000 in checkable deposits, the required reserves are $500 ($5000 * 0.10). The bank has $1,000 in reserves, meaning it has $500 in excess reserves ($1000 - $500). The bank can create loans up to the amount of its excess reserves, which is $500. However, the question asks for the maximum *additional* loans based on its current reserves and deposits considering the reserve requirement. Required reserves are $500. The bank has $1000 in reserves. This means $500 are excess reserves. It can create $500 in new loans. The original question had a calculation error. Let's re-evaluate based on bank's reserve position. Required reserves = 10% of $5000 = $500. The bank has $1000 in reserves. So, it has $500 of excess reserves. The bank can create loans equal to its excess reserves. Thus, the maximum additional loans is $500.  ERROR IN ORIGINAL QUESTION. Re-calculating with correct logic: Required reserves = 10% of $5000 = $500. The bank has $1000 in reserves. Therefore, the bank has $500 in excess reserves ($1000 - $500). The maximum amount of additional loans this bank can create is equal to its excess reserves, which is $500."
+    "explanation": "Required reserves are 10% of $5,000, which is $500. The bank has $1,000 in reserves, so it has $1,000 - $500 = $500 in excess reserves. Initially, the bank has $4,000 in excess reserves ($5,000 deposits - $1,000 required reserves). With $1,000 in reserves and $5,000 in checkable deposits, the required reserves are $500 ($5000 * 0.10). The bank has $1,000 in reserves, meaning it has $500 in excess reserves ($1000 - $500). The bank can create loans up to the amount of its excess reserves, which is $500. However, the question asks for the maximum *additional* loans based on its current reserves and deposits considering the reserve requirement. Required reserves are $500. The bank has $1000 in reserves. This means $500 are excess reserves. It can create $500 in new loans. The original question had a calculation error. Let's re-evaluate based on bank's reserve position. Required reserves = 10% of $5000 = $500. The bank has $1000 in reserves. So, it has $500 of excess reserves. The bank can create loans equal to its excess reserves. Thus, the maximum additional loans is $500.  ERROR IN ORIGINAL QUESTION. Re-calculating with correct logic: Required reserves = 10% of $5000 = $500. The bank has $1000 in reserves. Therefore, the bank has $500 in excess reserves ($1000 - $500). The maximum amount of additional loans this bank can create is equal to its excess reserves, which is $500.",
+    "correct_key": "A",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_175",
@@ -2012,7 +2474,10 @@
     },
     "answer": "A",
     "difficulty": 7,
-    "explanation": "Classical economics, particularly the quantity theory of money, posits that in the long run, changes in the money supply are directly proportional to changes in the price level, with real variables like output and employment remaining at their natural rates."
+    "explanation": "Classical economics, particularly the quantity theory of money, posits that in the long run, changes in the money supply are directly proportional to changes in the price level, with real variables like output and employment remaining at their natural rates.",
+    "correct_key": "A",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_177",
@@ -2025,7 +2490,10 @@
     },
     "answer": "A",
     "difficulty": 6,
-    "explanation": "Increased government borrowing to finance a deficit increases the demand for loanable funds, raising interest rates. Higher interest rates attract foreign capital, increasing demand for the domestic currency and causing it to appreciate."
+    "explanation": "Increased government borrowing to finance a deficit increases the demand for loanable funds, raising interest rates. Higher interest rates attract foreign capital, increasing demand for the domestic currency and causing it to appreciate.",
+    "correct_key": "A",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_178",
@@ -2038,7 +2506,10 @@
     },
     "answer": "A",
     "difficulty": 5,
-    "explanation": "An increase in the labor force represents an increase in the economy's productive capacity. This leads to an increase in the potential output of the economy, shifting both the short-run and long-run aggregate supply curves to the right."
+    "explanation": "An increase in the labor force represents an increase in the economy's productive capacity. This leads to an increase in the potential output of the economy, shifting both the short-run and long-run aggregate supply curves to the right.",
+    "correct_key": "A",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_180",
@@ -2051,7 +2522,10 @@
     },
     "answer": "A",
     "difficulty": 4,
-    "explanation": "Open market operations are the primary tool of monetary policy, where the central bank buys government securities to increase the money supply (injecting reserves into the banking system) or sells government securities to decrease the money supply (draining reserves)."
+    "explanation": "Open market operations are the primary tool of monetary policy, where the central bank buys government securities to increase the money supply (injecting reserves into the banking system) or sells government securities to decrease the money supply (draining reserves).",
+    "correct_key": "A",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_181",
@@ -2064,7 +2538,10 @@
     },
     "answer": "A",
     "difficulty": 7,
-    "explanation": "The multiplier effect is calculated as 1 / (1 - MPC + MPI + tax rate). A higher MPC means a larger portion of additional income is spent, leading to a larger increase in aggregate demand through the multiplier process. Options B, C, and D, if considered in isolation with correct formula applications, would lead to a smaller multiplier."
+    "explanation": "The multiplier effect is calculated as 1 / (1 - MPC + MPI + tax rate). A higher MPC means a larger portion of additional income is spent, leading to a larger increase in aggregate demand through the multiplier process. Options B, C, and D, if considered in isolation with correct formula applications, would lead to a smaller multiplier.",
+    "correct_key": "A",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_182",
@@ -2077,7 +2554,10 @@
     },
     "answer": "A",
     "difficulty": 6,
-    "explanation": "Inflationary pressures indicate that aggregate demand is too high relative to aggregate supply. To counteract this, expansionary fiscal policy (increasing government spending or decreasing taxes) should be avoided. Contractionary fiscal policy, such as decreasing government spending, would reduce aggregate demand and help curb inflation."
+    "explanation": "Inflationary pressures indicate that aggregate demand is too high relative to aggregate supply. To counteract this, expansionary fiscal policy (increasing government spending or decreasing taxes) should be avoided. Contractionary fiscal policy, such as decreasing government spending, would reduce aggregate demand and help curb inflation.",
+    "correct_key": "A",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macro_4",
@@ -2090,7 +2570,10 @@
     },
     "answer": "C",
     "difficulty": 7,
-    "explanation": "Money neutrality: in the long run, more money only raises prices, not real output."
+    "explanation": "Money neutrality: in the long run, more money only raises prices, not real output.",
+    "correct_key": "C",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_185",
@@ -2103,7 +2586,10 @@
     },
     "answer": "D",
     "difficulty": 8,
-    "explanation": "The quantity theory of money states MV = PQ (Nominal GDP). If M and V are constant, then PQ must be constant. If P doubles, then Q (real GDP) must remain constant for PQ to remain constant. Therefore, nominal GDP (PQ) remains constant."
+    "explanation": "The quantity theory of money states MV = PQ (Nominal GDP). If M and V are constant, then PQ must be constant. If P doubles, then Q (real GDP) must remain constant for PQ to remain constant. Therefore, nominal GDP (PQ) remains constant.",
+    "correct_key": "D",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_186",
@@ -2116,7 +2602,10 @@
     },
     "answer": "A",
     "difficulty": 5,
-    "explanation": "Comparative advantage is based on the principle of opportunity cost. A country has a comparative advantage if it can produce a good at a lower opportunity cost than its trading partners, regardless of absolute cost."
+    "explanation": "Comparative advantage is based on the principle of opportunity cost. A country has a comparative advantage if it can produce a good at a lower opportunity cost than its trading partners, regardless of absolute cost.",
+    "correct_key": "A",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_187",
@@ -2129,7 +2618,10 @@
     },
     "answer": "C",
     "difficulty": 6,
-    "explanation": "An increase in expected future inflation leads firms to anticipate higher costs. To maintain their profit margins, they will reduce their current supply at any given price level, shifting the SRAS curve to the left. A decrease in input prices, an increase in productivity, or a decrease in regulations would shift SRAS to the right."
+    "explanation": "An increase in expected future inflation leads firms to anticipate higher costs. To maintain their profit margins, they will reduce their current supply at any given price level, shifting the SRAS curve to the left. A decrease in input prices, an increase in productivity, or a decrease in regulations would shift SRAS to the right.",
+    "correct_key": "C",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_189",
@@ -2142,7 +2634,10 @@
     },
     "answer": "A",
     "difficulty": 5,
-    "explanation": "When the central bank increases the money supply, it typically leads to increased liquidity, which drives down interest rates. Lower interest rates make borrowing cheaper, encouraging both business investment and consumer spending, thus increasing aggregate demand."
+    "explanation": "When the central bank increases the money supply, it typically leads to increased liquidity, which drives down interest rates. Lower interest rates make borrowing cheaper, encouraging both business investment and consumer spending, thus increasing aggregate demand.",
+    "correct_key": "A",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_191",
@@ -2155,7 +2650,10 @@
     },
     "answer": "A",
     "difficulty": 4,
-    "explanation": "GDP per capita is calculated as total GDP divided by the population. If GDP grows at a faster rate than the population, the numerator grows faster than the denominator, resulting in an increase in GDP per capita."
+    "explanation": "GDP per capita is calculated as total GDP divided by the population. If GDP grows at a faster rate than the population, the numerator grows faster than the denominator, resulting in an increase in GDP per capita.",
+    "correct_key": "A",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_192",
@@ -2168,7 +2666,10 @@
     },
     "answer": "D",
     "difficulty": 5,
-    "explanation": "An inflationary gap occurs when the economy's actual output is above its potential output. This is typically associated with an overheated economy where demand is strong, leading to lower unemployment rates than the natural rate."
+    "explanation": "An inflationary gap occurs when the economy's actual output is above its potential output. This is typically associated with an overheated economy where demand is strong, leading to lower unemployment rates than the natural rate.",
+    "correct_key": "D",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_193",
@@ -2181,7 +2682,10 @@
     },
     "answer": "A",
     "difficulty": 7,
-    "explanation": "To be most expansionary, fiscal policy should aim to increase aggregate demand. Increasing government spending directly adds to aggregate demand. Decreasing taxes increases disposable income, which also boosts consumption and thus aggregate demand. Combining both policies has the largest expansionary impact."
+    "explanation": "To be most expansionary, fiscal policy should aim to increase aggregate demand. Increasing government spending directly adds to aggregate demand. Decreasing taxes increases disposable income, which also boosts consumption and thus aggregate demand. Combining both policies has the largest expansionary impact.",
+    "correct_key": "A",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_194",
@@ -2194,7 +2698,10 @@
     },
     "answer": "A",
     "difficulty": 4,
-    "explanation": "The Fisher effect states that the nominal interest rate is approximately equal to the real interest rate plus the expected inflation rate. Rearranging this gives the real interest rate = nominal interest rate - expected inflation rate."
+    "explanation": "The Fisher effect states that the nominal interest rate is approximately equal to the real interest rate plus the expected inflation rate. Rearranging this gives the real interest rate = nominal interest rate - expected inflation rate.",
+    "correct_key": "A",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_195",
@@ -2207,7 +2714,10 @@
     },
     "answer": "A",
     "difficulty": 5,
-    "explanation": "Selling government securities removes money from the banking system, reducing reserves and the money supply, which leads to higher interest rates and is contractionary. Lowering reserve requirements, lowering the discount rate, or reducing the interest rate on reserves are all expansionary policies."
+    "explanation": "Selling government securities removes money from the banking system, reducing reserves and the money supply, which leads to higher interest rates and is contractionary. Lowering reserve requirements, lowering the discount rate, or reducing the interest rate on reserves are all expansionary policies.",
+    "correct_key": "A",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_196",
@@ -2220,7 +2730,10 @@
     },
     "answer": "B",
     "difficulty": 4,
-    "explanation": "Central banks, like the Federal Reserve in the US, are responsible for monetary policy, which involves controlling the money supply and setting target interest rates to influence inflation, economic growth, and employment."
+    "explanation": "Central banks, like the Federal Reserve in the US, are responsible for monetary policy, which involves controlling the money supply and setting target interest rates to influence inflation, economic growth, and employment.",
+    "correct_key": "B",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_197",
@@ -2233,7 +2746,10 @@
     },
     "answer": "A",
     "difficulty": 6,
-    "explanation": "Keynesian economics suggests that during a recessionary gap (caused by decreased aggregate demand), the government should use expansionary fiscal policy (increased spending or tax cuts) to boost aggregate demand and move the economy back towards full employment."
+    "explanation": "Keynesian economics suggests that during a recessionary gap (caused by decreased aggregate demand), the government should use expansionary fiscal policy (increased spending or tax cuts) to boost aggregate demand and move the economy back towards full employment.",
+    "correct_key": "A",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_199",
@@ -2246,7 +2762,10 @@
     },
     "answer": "C",
     "difficulty": 5,
-    "explanation": "Structural unemployment arises from fundamental changes in the economy that make certain skills obsolete or alter the location of jobs, leading to a mismatch between labor supply and demand."
+    "explanation": "Structural unemployment arises from fundamental changes in the economy that make certain skills obsolete or alter the location of jobs, leading to a mismatch between labor supply and demand.",
+    "correct_key": "C",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_200",
@@ -2259,7 +2778,10 @@
     },
     "answer": "B",
     "difficulty": 5,
-    "explanation": "With a 10% reserve requirement, banks must hold $100 (10% of $1,000) in reserve and can lend out the remaining $900."
+    "explanation": "With a 10% reserve requirement, banks must hold $100 (10% of $1,000) in reserve and can lend out the remaining $900.",
+    "correct_key": "B",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_201",
@@ -2272,7 +2794,10 @@
     },
     "answer": "A",
     "difficulty": 7,
-    "explanation": "The downward slope of the AD curve is explained by three effects: The interest rate effect (higher price levels increase demand for money, raising interest rates and reducing investment), the wealth effect (higher price levels reduce the real value of assets, decreasing consumption), and the international trade effect (higher price levels make domestic goods more expensive, reducing net exports)."
+    "explanation": "The downward slope of the AD curve is explained by three effects: The interest rate effect (higher price levels increase demand for money, raising interest rates and reducing investment), the wealth effect (higher price levels reduce the real value of assets, decreasing consumption), and the international trade effect (higher price levels make domestic goods more expensive, reducing net exports).",
+    "correct_key": "A",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_202",
@@ -2285,7 +2810,10 @@
     },
     "answer": "B",
     "difficulty": 6,
-    "explanation": "Classical economic theory emphasizes the self-correcting nature of markets, believing that flexible wages and prices will naturally guide the economy towards its full employment equilibrium without the need for significant government intervention."
+    "explanation": "Classical economic theory emphasizes the self-correcting nature of markets, believing that flexible wages and prices will naturally guide the economy towards its full employment equilibrium without the need for significant government intervention.",
+    "correct_key": "B",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_203",
@@ -2298,7 +2826,10 @@
     },
     "answer": "C",
     "difficulty": 5,
-    "explanation": "Decreasing the discount rate makes it cheaper for banks to borrow from the central bank, increasing the money supply and encouraging lending, which is expansionary."
+    "explanation": "Decreasing the discount rate makes it cheaper for banks to borrow from the central bank, increasing the money supply and encouraging lending, which is expansionary.",
+    "correct_key": "C",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_204",
@@ -2311,7 +2842,10 @@
     },
     "answer": "D",
     "difficulty": 7,
-    "explanation": "Higher domestic inflation makes a country's goods more expensive relative to foreign goods, reducing exports and increasing imports (decreasing net exports). This decreased demand for the domestic currency leads to its depreciation."
+    "explanation": "Higher domestic inflation makes a country's goods more expensive relative to foreign goods, reducing exports and increasing imports (decreasing net exports). This decreased demand for the domestic currency leads to its depreciation.",
+    "correct_key": "D",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_206",
@@ -2324,7 +2858,10 @@
     },
     "answer": "D",
     "difficulty": 5,
-    "explanation": "When the demand for money increases and the supply is fixed, individuals and firms will bid up the price of holding money, which is the interest rate. This leads to a higher equilibrium interest rate."
+    "explanation": "When the demand for money increases and the supply is fixed, individuals and firms will bid up the price of holding money, which is the interest rate. This leads to a higher equilibrium interest rate.",
+    "correct_key": "D",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_207",
@@ -2337,7 +2874,10 @@
     },
     "answer": "D",
     "difficulty": 6,
-    "explanation": "The LRAS curve represents an economy's potential output, determined by factors of production like labor, capital, technology, and natural resources. A decrease in the availability of a key resource like oil would reduce the economy's capacity to produce goods and services, shifting LRAS to the left."
+    "explanation": "The LRAS curve represents an economy's potential output, determined by factors of production like labor, capital, technology, and natural resources. A decrease in the availability of a key resource like oil would reduce the economy's capacity to produce goods and services, shifting LRAS to the left.",
+    "correct_key": "D",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_208",
@@ -2350,7 +2890,10 @@
     },
     "answer": "A",
     "difficulty": 7,
-    "explanation": "Increased government borrowing represents an increase in the demand for loanable funds. If the supply of loanable funds does not change proportionally, this increased demand will drive up the equilibrium interest rate."
+    "explanation": "Increased government borrowing represents an increase in the demand for loanable funds. If the supply of loanable funds does not change proportionally, this increased demand will drive up the equilibrium interest rate.",
+    "correct_key": "A",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_209",
@@ -2363,7 +2906,10 @@
     },
     "answer": "C",
     "difficulty": 5,
-    "explanation": "The short-run Phillips Curve illustrates that policymakers may face a trade-off: policies designed to reduce unemployment might lead to higher inflation, and policies to reduce inflation might lead to higher unemployment."
+    "explanation": "The short-run Phillips Curve illustrates that policymakers may face a trade-off: policies designed to reduce unemployment might lead to higher inflation, and policies to reduce inflation might lead to higher unemployment.",
+    "correct_key": "C",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_210",
@@ -2376,7 +2922,10 @@
     },
     "answer": "D",
     "difficulty": 4,
-    "explanation": "M1 is the narrowest measure of the money supply and includes the most liquid forms of money: currency held by the public, demand deposits (checkable accounts), and traveler's checks."
+    "explanation": "M1 is the narrowest measure of the money supply and includes the most liquid forms of money: currency held by the public, demand deposits (checkable accounts), and traveler's checks.",
+    "correct_key": "D",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_212",
@@ -2389,7 +2938,10 @@
     },
     "answer": "A",
     "difficulty": 5,
-    "explanation": "Using the expenditure approach, GDP = C + I + G + (X-M). So, $10 trillion = $6 trillion + $2 trillion + $1.5 trillion + (X-M). This gives $10 trillion = $9.5 trillion + (X-M), solving for (X-M) yields -$0.5 trillion."
+    "explanation": "Using the expenditure approach, GDP = C + I + G + (X-M). So, $10 trillion = $6 trillion + $2 trillion + $1.5 trillion + (X-M). This gives $10 trillion = $9.5 trillion + (X-M), solving for (X-M) yields -$0.5 trillion.",
+    "correct_key": "A",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_213",
@@ -2402,7 +2954,10 @@
     },
     "answer": "B",
     "difficulty": 6,
-    "explanation": "The natural rate of unemployment is the sum of frictional and structural unemployment, representing the rate of unemployment that persists even when the economy is healthy and operating at its long-run potential GDP."
+    "explanation": "The natural rate of unemployment is the sum of frictional and structural unemployment, representing the rate of unemployment that persists even when the economy is healthy and operating at its long-run potential GDP.",
+    "correct_key": "B",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_214",
@@ -2415,7 +2970,10 @@
     },
     "answer": "B",
     "difficulty": 7,
-    "explanation": "When the central bank buys bonds, it injects reserves into the banking system. These new reserves allow banks to lend more, and through the money multiplier process, the money supply increases by a multiple of the initial injection."
+    "explanation": "When the central bank buys bonds, it injects reserves into the banking system. These new reserves allow banks to lend more, and through the money multiplier process, the money supply increases by a multiple of the initial injection.",
+    "correct_key": "B",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_215",
@@ -2428,7 +2986,10 @@
     },
     "answer": "B",
     "difficulty": 8,
-    "explanation": "The rational expectations hypothesis posits that people form their expectations about future economic conditions by using all relevant information, including their understanding of how economic policies work. This implies that anticipated policies may have little effect on real variables like output."
+    "explanation": "The rational expectations hypothesis posits that people form their expectations about future economic conditions by using all relevant information, including their understanding of how economic policies work. This implies that anticipated policies may have little effect on real variables like output.",
+    "correct_key": "B",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_216",
@@ -2441,7 +3002,10 @@
     },
     "answer": "B",
     "difficulty": 6,
-    "explanation": "A decrease in the price level reduces the amount of money needed for transactions. With a fixed money supply, people will have more money than they need for transactions, leading them to buy financial assets, which drives down interest rates."
+    "explanation": "A decrease in the price level reduces the amount of money needed for transactions. With a fixed money supply, people will have more money than they need for transactions, leading them to buy financial assets, which drives down interest rates.",
+    "correct_key": "B",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_217",
@@ -2454,7 +3018,10 @@
     },
     "answer": "B",
     "difficulty": 4,
-    "explanation": "Fiscal policy involves the government's use of spending and taxation to influence the economy. Increasing income tax rates is a direct change in taxation, impacting aggregate demand."
+    "explanation": "Fiscal policy involves the government's use of spending and taxation to influence the economy. Increasing income tax rates is a direct change in taxation, impacting aggregate demand.",
+    "correct_key": "B",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_218",
@@ -2467,7 +3034,10 @@
     },
     "answer": "C",
     "difficulty": 5,
-    "explanation": "Stagflation is an undesirable economic condition combining stagnant economic growth (high unemployment) with high inflation."
+    "explanation": "Stagflation is an undesirable economic condition combining stagnant economic growth (high unemployment) with high inflation.",
+    "correct_key": "C",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_220",
@@ -2480,7 +3050,10 @@
     },
     "answer": "D",
     "difficulty": 6,
-    "explanation": "Automatic stabilizers, such as progressive income taxes and unemployment benefits, automatically adjust to economic fluctuations. For example, during a recession, tax revenues fall and unemployment benefits rise, cushioning the decline in aggregate demand without new legislation."
+    "explanation": "Automatic stabilizers, such as progressive income taxes and unemployment benefits, automatically adjust to economic fluctuations. For example, during a recession, tax revenues fall and unemployment benefits rise, cushioning the decline in aggregate demand without new legislation.",
+    "correct_key": "D",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_222",
@@ -2493,7 +3066,10 @@
     },
     "answer": "C",
     "difficulty": 4,
-    "explanation": "Aggregate demand includes government purchases. An increase in government spending directly increases aggregate demand, shifting the curve rightward. An increase in interest rates, a decrease in consumer confidence, or an increase in the price level would shift AD leftward or cause movement along the existing curve."
+    "explanation": "Aggregate demand includes government purchases. An increase in government spending directly increases aggregate demand, shifting the curve rightward. An increase in interest rates, a decrease in consumer confidence, or an increase in the price level would shift AD leftward or cause movement along the existing curve.",
+    "correct_key": "C",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_223",
@@ -2506,7 +3082,10 @@
     },
     "answer": "A",
     "difficulty": 5,
-    "explanation": "The natural rate of unemployment represents the unemployment rate at full employment. If the actual unemployment rate is higher, it indicates that there are fewer jobs available than there are people willing and able to work at the current wage rates, signifying a recessionary gap (output is below potential output)."
+    "explanation": "The natural rate of unemployment represents the unemployment rate at full employment. If the actual unemployment rate is higher, it indicates that there are fewer jobs available than there are people willing and able to work at the current wage rates, signifying a recessionary gap (output is below potential output).",
+    "correct_key": "A",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_225",
@@ -2519,7 +3098,10 @@
     },
     "answer": "C",
     "difficulty": 5,
-    "explanation": "Lowering the discount rate makes it cheaper for commercial banks to borrow from the central bank, increasing the money supply and encouraging lending, which is expansionary. Selling securities, increasing the reserve requirement, and increasing the federal funds rate are contractionary policies."
+    "explanation": "Lowering the discount rate makes it cheaper for commercial banks to borrow from the central bank, increasing the money supply and encouraging lending, which is expansionary. Selling securities, increasing the reserve requirement, and increasing the federal funds rate are contractionary policies.",
+    "correct_key": "C",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_226",
@@ -2532,7 +3114,10 @@
     },
     "answer": "B",
     "difficulty": 5,
-    "explanation": "An increase in short-run aggregate supply means that firms can produce more output at any given price level. This leads to a decrease in the equilibrium price level and an increase in the equilibrium level of real GDP."
+    "explanation": "An increase in short-run aggregate supply means that firms can produce more output at any given price level. This leads to a decrease in the equilibrium price level and an increase in the equilibrium level of real GDP.",
+    "correct_key": "B",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_229",
@@ -2545,7 +3130,10 @@
     },
     "answer": "C",
     "difficulty": 7,
-    "explanation": "The formula for the simple spending multiplier is 1 / (1 - MPC). With an MPC of 0.8, the multiplier is 1 / (1 - 0.8) = 1 / 0.2 = 5."
+    "explanation": "The formula for the simple spending multiplier is 1 / (1 - MPC). With an MPC of 0.8, the multiplier is 1 / (1 - 0.8) = 1 / 0.2 = 5.",
+    "correct_key": "C",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_230",
@@ -2558,7 +3146,10 @@
     },
     "answer": "B",
     "difficulty": 7,
-    "explanation": "Potential real GDP (or long-run aggregate supply) is determined by the quantity and quality of resources, including capital. An increase in the capital stock per worker leads to greater productivity and thus higher potential output."
+    "explanation": "Potential real GDP (or long-run aggregate supply) is determined by the quantity and quality of resources, including capital. An increase in the capital stock per worker leads to greater productivity and thus higher potential output.",
+    "correct_key": "B",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_231",
@@ -2571,7 +3162,10 @@
     },
     "answer": "A",
     "difficulty": 7,
-    "explanation": "When the government increases its borrowing to finance a budget deficit, it increases the demand for loanable funds. This can drive up interest rates, making it more expensive for private businesses to borrow and invest, thereby 'crowding out' private investment."
+    "explanation": "When the government increases its borrowing to finance a budget deficit, it increases the demand for loanable funds. This can drive up interest rates, making it more expensive for private businesses to borrow and invest, thereby 'crowding out' private investment.",
+    "correct_key": "A",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_232",
@@ -2584,7 +3178,10 @@
     },
     "answer": "A",
     "difficulty": 8,
-    "explanation": "The quantity theory of money states MV = PQ, where M is the money supply, V is the velocity of money, P is the price level, and Q is real output (GDP). If M and V are constant, then PQ must also be constant. If Q (real GDP) decreases, then P (the price level) must increase to keep the product PQ constant."
+    "explanation": "The quantity theory of money states MV = PQ, where M is the money supply, V is the velocity of money, P is the price level, and Q is real output (GDP). If M and V are constant, then PQ must also be constant. If Q (real GDP) decreases, then P (the price level) must increase to keep the product PQ constant.",
+    "correct_key": "A",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_233",
@@ -2597,7 +3194,10 @@
     },
     "answer": "A",
     "difficulty": 6,
-    "explanation": "The short-run Phillips curve suggests an inverse relationship: policymakers face a trade-off. To reduce unemployment, they may accept higher inflation, and to reduce inflation, they may tolerate higher unemployment."
+    "explanation": "The short-run Phillips curve suggests an inverse relationship: policymakers face a trade-off. To reduce unemployment, they may accept higher inflation, and to reduce inflation, they may tolerate higher unemployment.",
+    "correct_key": "A",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_234",
@@ -2610,7 +3210,10 @@
     },
     "answer": "B",
     "difficulty": 6,
-    "explanation": "Net exports are a component of aggregate demand (AD = C + I + G + NX). A decrease in net exports (NX) directly reduces aggregate demand, which, in the short run, leads to a decrease in real GDP."
+    "explanation": "Net exports are a component of aggregate demand (AD = C + I + G + NX). A decrease in net exports (NX) directly reduces aggregate demand, which, in the short run, leads to a decrease in real GDP.",
+    "correct_key": "B",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_235",
@@ -2623,7 +3226,10 @@
     },
     "answer": "D",
     "difficulty": 5,
-    "explanation": "Excess reserves are the funds a bank can lend out above the legally required amount. If a bank has $10,000 in excess reserves, it can lend out up to $10,000, which will then become new deposits in the banking system, potentially leading to further money creation through the money multiplier."
+    "explanation": "Excess reserves are the funds a bank can lend out above the legally required amount. If a bank has $10,000 in excess reserves, it can lend out up to $10,000, which will then become new deposits in the banking system, potentially leading to further money creation through the money multiplier.",
+    "correct_key": "D",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_236",
@@ -2636,7 +3242,10 @@
     },
     "answer": "C",
     "difficulty": 4,
-    "explanation": "In the long run, real GDP is determined by the economy's productive capacity (labor, capital, technology, resources), not the price level. Therefore, the long-run aggregate supply (LRAS) curve is vertical at the potential output level."
+    "explanation": "In the long run, real GDP is determined by the economy's productive capacity (labor, capital, technology, resources), not the price level. Therefore, the long-run aggregate supply (LRAS) curve is vertical at the potential output level.",
+    "correct_key": "C",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_237",
@@ -2649,7 +3258,10 @@
     },
     "answer": "C",
     "difficulty": 6,
-    "explanation": "Cost-push inflation occurs when the costs of production increase, leading firms to reduce supply at each price level. This shifts the short-run aggregate supply curve to the left, resulting in higher prices. An increase in input prices like oil is a classic example."
+    "explanation": "Cost-push inflation occurs when the costs of production increase, leading firms to reduce supply at each price level. This shifts the short-run aggregate supply curve to the left, resulting in higher prices. An increase in input prices like oil is a classic example.",
+    "correct_key": "C",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_238",
@@ -2662,7 +3274,10 @@
     },
     "answer": "A",
     "difficulty": 4,
-    "explanation": "Frictional unemployment is temporary and caused by the time it takes for workers to find new jobs that match their skills and preferences, even in a healthy economy with available openings."
+    "explanation": "Frictional unemployment is temporary and caused by the time it takes for workers to find new jobs that match their skills and preferences, even in a healthy economy with available openings.",
+    "correct_key": "A",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_240",
@@ -2675,7 +3290,10 @@
     },
     "answer": "D",
     "difficulty": 7,
-    "explanation": "Real GDP growth = Nominal GDP growth - Inflation rate.  Approximately, 10% - 4% = 6%. (The exact calculation uses (1.10 / 1.04) - 1, but the approximation is standard for AP Macro)."
+    "explanation": "Real GDP growth = Nominal GDP growth - Inflation rate.  Approximately, 10% - 4% = 6%. (The exact calculation uses (1.10 / 1.04) - 1, but the approximation is standard for AP Macro).",
+    "correct_key": "D",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_242",
@@ -2688,7 +3306,10 @@
     },
     "answer": "A",
     "difficulty": 5,
-    "explanation": "The multiplier effect occurs because an initial injection of spending (by consumers, businesses, or government) becomes income for others, who then spend a portion of that income, creating further income and spending rounds, resulting in a magnified impact on the overall economy."
+    "explanation": "The multiplier effect occurs because an initial injection of spending (by consumers, businesses, or government) becomes income for others, who then spend a portion of that income, creating further income and spending rounds, resulting in a magnified impact on the overall economy.",
+    "correct_key": "A",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_243",
@@ -2701,7 +3322,10 @@
     },
     "answer": "A",
     "difficulty": 5,
-    "explanation": "To close a recessionary gap, expansionary policies are needed. Increasing government spending is a fiscal policy tool that directly boosts aggregate demand. Increasing reserve requirements, increasing the federal funds rate, and selling government securities are contractionary policies."
+    "explanation": "To close a recessionary gap, expansionary policies are needed. Increasing government spending is a fiscal policy tool that directly boosts aggregate demand. Increasing reserve requirements, increasing the federal funds rate, and selling government securities are contractionary policies.",
+    "correct_key": "A",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_244",
@@ -2714,7 +3338,10 @@
     },
     "answer": "A",
     "difficulty": 8,
-    "explanation": "GDP measures production *within* a country's borders, regardless of who owns the factors of production. GNP measures production owned by a country's *residents*, regardless of where the production takes place. Therefore, profits earned by a domestic firm abroad are part of GNP but not GDP."
+    "explanation": "GDP measures production *within* a country's borders, regardless of who owns the factors of production. GNP measures production owned by a country's *residents*, regardless of where the production takes place. Therefore, profits earned by a domestic firm abroad are part of GNP but not GDP.",
+    "correct_key": "A",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_245",
@@ -2727,7 +3354,10 @@
     },
     "answer": "A",
     "difficulty": 8,
-    "explanation": "If workers and firms expect higher inflation, they will demand higher wages and set higher prices. Higher input costs (wages) lead firms to produce less at any given output price, shifting the short-run aggregate supply curve to the left."
+    "explanation": "If workers and firms expect higher inflation, they will demand higher wages and set higher prices. Higher input costs (wages) lead firms to produce less at any given output price, shifting the short-run aggregate supply curve to the left.",
+    "correct_key": "A",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_246",
@@ -2740,7 +3370,10 @@
     },
     "answer": "B",
     "difficulty": 4,
-    "explanation": "An increase in consumer confidence leads to higher consumption spending, which is a component of aggregate demand (AD). An increase in any component of AD will cause the entire AD curve to shift to the right."
+    "explanation": "An increase in consumer confidence leads to higher consumption spending, which is a component of aggregate demand (AD). An increase in any component of AD will cause the entire AD curve to shift to the right.",
+    "correct_key": "B",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_247",
@@ -2753,7 +3386,10 @@
     },
     "answer": "B",
     "difficulty": 6,
-    "explanation": "The velocity of money (V) in the Quantity Theory of Money equation (MV=PY) represents how frequently money changes hands to facilitate transactions or purchasing of goods and services within an economy over a specific period."
+    "explanation": "The velocity of money (V) in the Quantity Theory of Money equation (MV=PY) represents how frequently money changes hands to facilitate transactions or purchasing of goods and services within an economy over a specific period.",
+    "correct_key": "B",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_248",
@@ -2766,7 +3402,10 @@
     },
     "answer": "B",
     "difficulty": 5,
-    "explanation": "When a central bank sells government bonds, it withdraws money from the banking system. This reduces the reserves available for banks to lend, leading to a decrease in the money supply. With a decreased money supply, the price of borrowing money (interest rates) typically increases."
+    "explanation": "When a central bank sells government bonds, it withdraws money from the banking system. This reduces the reserves available for banks to lend, leading to a decrease in the money supply. With a decreased money supply, the price of borrowing money (interest rates) typically increases.",
+    "correct_key": "B",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_249",
@@ -2779,7 +3418,10 @@
     },
     "answer": "C",
     "difficulty": 7,
-    "explanation": "The current account is one of the major components of a country's balance of payments. It records transactions involving goods, services, income earned from investments abroad (net income), and payments made or received without any exchange of goods or services, such as foreign aid (net unilateral transfers)."
+    "explanation": "The current account is one of the major components of a country's balance of payments. It records transactions involving goods, services, income earned from investments abroad (net income), and payments made or received without any exchange of goods or services, such as foreign aid (net unilateral transfers).",
+    "correct_key": "C",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_250",
@@ -2792,7 +3434,10 @@
     },
     "answer": "C",
     "difficulty": 5,
-    "explanation": "Economic growth, in the long run, is best represented by an outward shift of the production possibilities frontier (PPF). This indicates an increase in the economy's ability to produce goods and services, which can be caused by factors like technological advancements, increased capital stock, or growth in the labor force."
+    "explanation": "Economic growth, in the long run, is best represented by an outward shift of the production possibilities frontier (PPF). This indicates an increase in the economy's ability to produce goods and services, which can be caused by factors like technological advancements, increased capital stock, or growth in the labor force.",
+    "correct_key": "C",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_251",
@@ -2805,7 +3450,10 @@
     },
     "answer": "D",
     "difficulty": 4,
-    "explanation": "A lower reserve requirement means banks can lend out a larger fraction of their deposits. This increases the money multiplier, leading to an expansion of the money supply. With a larger money supply, the price of borrowing money (interest rates) tends to fall."
+    "explanation": "A lower reserve requirement means banks can lend out a larger fraction of their deposits. This increases the money multiplier, leading to an expansion of the money supply. With a larger money supply, the price of borrowing money (interest rates) tends to fall.",
+    "correct_key": "D",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_253",
@@ -2818,7 +3466,10 @@
     },
     "answer": "D",
     "difficulty": 6,
-    "explanation": "A large national debt requires significant interest payments. To manage this, governments may need to cut spending in other areas, including social programs, or increase taxes. Option A is incorrect because increased government borrowing (to finance the debt) typically increases the demand for loanable funds, raising interest rates."
+    "explanation": "A large national debt requires significant interest payments. To manage this, governments may need to cut spending in other areas, including social programs, or increase taxes. Option A is incorrect because increased government borrowing (to finance the debt) typically increases the demand for loanable funds, raising interest rates.",
+    "correct_key": "D",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_254",
@@ -2831,7 +3482,10 @@
     },
     "answer": "C",
     "difficulty": 4,
-    "explanation": "Expansionary fiscal policy aims to increase aggregate demand. This is typically achieved by either increasing government spending (directly adding to aggregate demand) or decreasing taxes (increasing disposable income and thus consumption, which is part of aggregate demand)."
+    "explanation": "Expansionary fiscal policy aims to increase aggregate demand. This is typically achieved by either increasing government spending (directly adding to aggregate demand) or decreasing taxes (increasing disposable income and thus consumption, which is part of aggregate demand).",
+    "correct_key": "C",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_256",
@@ -2844,7 +3498,10 @@
     },
     "answer": "B",
     "difficulty": 5,
-    "explanation": "When a central bank sells government securities, it withdraws money from the banking system. Banks have less money to lend, which reduces the money supply. With a reduced money supply, the price of borrowing money (interest rates) tends to increase."
+    "explanation": "When a central bank sells government securities, it withdraws money from the banking system. Banks have less money to lend, which reduces the money supply. With a reduced money supply, the price of borrowing money (interest rates) tends to increase.",
+    "correct_key": "B",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_257",
@@ -2857,7 +3514,10 @@
     },
     "answer": "B",
     "difficulty": 6,
-    "explanation": "According to the quantity theory of money, in the long run, changes in the money supply are primarily reflected in changes in the price level. An increase in the money supply, assuming velocity and real output are relatively stable, will lead to inflation (an increase in the price level)."
+    "explanation": "According to the quantity theory of money, in the long run, changes in the money supply are primarily reflected in changes in the price level. An increase in the money supply, assuming velocity and real output are relatively stable, will lead to inflation (an increase in the price level).",
+    "correct_key": "B",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_258",
@@ -2870,7 +3530,10 @@
     },
     "answer": "C",
     "difficulty": 4,
-    "explanation": "The expenditure approach to calculating GDP sums consumption (C), investment (I), government purchases (G), and net exports (NX). Investment includes spending on capital goods like new machinery."
+    "explanation": "The expenditure approach to calculating GDP sums consumption (C), investment (I), government purchases (G), and net exports (NX). Investment includes spending on capital goods like new machinery.",
+    "correct_key": "C",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_260",
@@ -2883,7 +3546,10 @@
     },
     "answer": "C",
     "difficulty": 4,
-    "explanation": "A recession is defined by a significant decline in economic activity spread across the economy, lasting more than a few months. Key indicators include rising unemployment rates and falling real GDP."
+    "explanation": "A recession is defined by a significant decline in economic activity spread across the economy, lasting more than a few months. Key indicators include rising unemployment rates and falling real GDP.",
+    "correct_key": "C",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_261",
@@ -2896,7 +3562,10 @@
     },
     "answer": "B",
     "difficulty": 4,
-    "explanation": "The Fisher effect states that the real interest rate is approximately equal to the nominal interest rate minus the expected inflation rate. Real Interest Rate ≈ Nominal Interest Rate - Expected Inflation Rate. So, 5% - 2% = 3%."
+    "explanation": "The Fisher effect states that the real interest rate is approximately equal to the nominal interest rate minus the expected inflation rate. Real Interest Rate ≈ Nominal Interest Rate - Expected Inflation Rate. So, 5% - 2% = 3%.",
+    "correct_key": "B",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_263",
@@ -2909,7 +3578,10 @@
     },
     "answer": "C",
     "difficulty": 4,
-    "explanation": "Open market operations (buying and selling government securities) are the primary tool used by central banks to manage the money supply and influence interest rates. Government spending and tax rates are fiscal policy tools. Tariffs are trade policy tools."
+    "explanation": "Open market operations (buying and selling government securities) are the primary tool used by central banks to manage the money supply and influence interest rates. Government spending and tax rates are fiscal policy tools. Tariffs are trade policy tools.",
+    "correct_key": "C",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_264",
@@ -2922,7 +3594,10 @@
     },
     "answer": "C",
     "difficulty": 5,
-    "explanation": "When aggregate demand shifts to the right, the intersection of aggregate demand and short-run aggregate supply moves to a point with higher price levels and higher real output. This is because consumers and businesses are willing and able to purchase more goods and services at every price level."
+    "explanation": "When aggregate demand shifts to the right, the intersection of aggregate demand and short-run aggregate supply moves to a point with higher price levels and higher real output. This is because consumers and businesses are willing and able to purchase more goods and services at every price level.",
+    "correct_key": "C",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_265",
@@ -2935,7 +3610,10 @@
     },
     "answer": "C",
     "difficulty": 6,
-    "explanation": "Productivity, the amount of output produced per unit of input, is a key determinant of an economy's potential output. An increase in productivity means more goods and services can be produced with the same amount of resources, leading to an increase in potential real GDP (long-run aggregate supply)."
+    "explanation": "Productivity, the amount of output produced per unit of input, is a key determinant of an economy's potential output. An increase in productivity means more goods and services can be produced with the same amount of resources, leading to an increase in potential real GDP (long-run aggregate supply).",
+    "correct_key": "C",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_266",
@@ -2948,7 +3626,10 @@
     },
     "answer": "B",
     "difficulty": 5,
-    "explanation": "Frictional unemployment is temporary unemployment that occurs when people are searching for jobs or transitioning between jobs. A recent graduate looking for their first job is a classic example."
+    "explanation": "Frictional unemployment is temporary unemployment that occurs when people are searching for jobs or transitioning between jobs. A recent graduate looking for their first job is a classic example.",
+    "correct_key": "B",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_267",
@@ -2961,7 +3642,10 @@
     },
     "answer": "C",
     "difficulty": 7,
-    "explanation": "The natural rate of unemployment is considered the sum of frictional and structural unemployment. It represents the level of unemployment that prevails in an economy when it is operating at its potential output, meaning there is no cyclical unemployment."
+    "explanation": "The natural rate of unemployment is considered the sum of frictional and structural unemployment. It represents the level of unemployment that prevails in an economy when it is operating at its potential output, meaning there is no cyclical unemployment.",
+    "correct_key": "C",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_270",
@@ -2974,7 +3658,10 @@
     },
     "answer": "D",
     "difficulty": 5,
-    "explanation": "An increase in the cost of production, such as a rise in the price of oil, makes it more expensive for firms to produce goods and services at any given price level. This causes the short-run aggregate supply curve to shift inward (to the left)."
+    "explanation": "An increase in the cost of production, such as a rise in the price of oil, makes it more expensive for firms to produce goods and services at any given price level. This causes the short-run aggregate supply curve to shift inward (to the left).",
+    "correct_key": "D",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_271",
@@ -2987,7 +3674,10 @@
     },
     "answer": "D",
     "difficulty": 7,
-    "explanation": "Using the equation of exchange, MV = PY, where M is the money supply, V is the velocity of money, P is the price level, and Y is real GDP. If V is constant, then the percentage change in M plus the percentage change in V equals the percentage change in P plus the percentage change in Y. So, %ΔM + %ΔV = %ΔP + %ΔY. Given %ΔM = 10%, %ΔV = 0%, and %ΔY = 3%, we have 10% + 0% = %ΔP + 3%. Solving for %ΔP gives 7%."
+    "explanation": "Using the equation of exchange, MV = PY, where M is the money supply, V is the velocity of money, P is the price level, and Y is real GDP. If V is constant, then the percentage change in M plus the percentage change in V equals the percentage change in P plus the percentage change in Y. So, %ΔM + %ΔV = %ΔP + %ΔY. Given %ΔM = 10%, %ΔV = 0%, and %ΔY = 3%, we have 10% + 0% = %ΔP + 3%. Solving for %ΔP gives 7%.",
+    "correct_key": "D",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_272",
@@ -3000,7 +3690,10 @@
     },
     "answer": "D",
     "difficulty": 6,
-    "explanation": "In a closed economy without government intervention, saving is the source of funds for investment. If individuals save more, they consume less. This increased pool of savings becomes available for businesses to borrow for investment purposes, leading to an increase in investment."
+    "explanation": "In a closed economy without government intervention, saving is the source of funds for investment. If individuals save more, they consume less. This increased pool of savings becomes available for businesses to borrow for investment purposes, leading to an increase in investment.",
+    "correct_key": "D",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_273",
@@ -3013,7 +3706,10 @@
     },
     "answer": "D",
     "difficulty": 4,
-    "explanation": "Economic growth is defined as a sustained increase in the production of goods and services over time, typically measured by the increase in real GDP or real GDP per capita. This is driven by factors that increase the economy's productive capacity."
+    "explanation": "Economic growth is defined as a sustained increase in the production of goods and services over time, typically measured by the increase in real GDP or real GDP per capita. This is driven by factors that increase the economy's productive capacity.",
+    "correct_key": "D",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_274",
@@ -3026,7 +3722,10 @@
     },
     "answer": "D",
     "difficulty": 5,
-    "explanation": "An increase in taxes reduces disposable income for households, leading to lower consumption. Lower consumption shifts the aggregate demand curve to the left. With a given short-run aggregate supply curve, this decrease in aggregate demand leads to a lower price level and lower real output."
+    "explanation": "An increase in taxes reduces disposable income for households, leading to lower consumption. Lower consumption shifts the aggregate demand curve to the left. With a given short-run aggregate supply curve, this decrease in aggregate demand leads to a lower price level and lower real output.",
+    "correct_key": "D",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_276",
@@ -3039,7 +3738,10 @@
     },
     "answer": "A",
     "difficulty": 6,
-    "explanation": "The money multiplier is calculated as 1 / reserve requirement. If the reserve requirement increases, the denominator increases, thus the money multiplier decreases. With a smaller money multiplier, banks can lend out less money for each dollar deposited, leading to a decrease in the overall money supply."
+    "explanation": "The money multiplier is calculated as 1 / reserve requirement. If the reserve requirement increases, the denominator increases, thus the money multiplier decreases. With a smaller money multiplier, banks can lend out less money for each dollar deposited, leading to a decrease in the overall money supply.",
+    "correct_key": "A",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_277",
@@ -3052,7 +3754,10 @@
     },
     "answer": "A",
     "difficulty": 7,
-    "explanation": "The natural rate of unemployment includes frictional and structural unemployment, which are not directly addressed by short-run stabilization policies. Expansionary fiscal policy (e.g., increased government spending or tax cuts) aims to boost aggregate demand, which can reduce cyclical unemployment during a recessionary gap."
+    "explanation": "The natural rate of unemployment includes frictional and structural unemployment, which are not directly addressed by short-run stabilization policies. Expansionary fiscal policy (e.g., increased government spending or tax cuts) aims to boost aggregate demand, which can reduce cyclical unemployment during a recessionary gap.",
+    "correct_key": "A",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_278",
@@ -3065,7 +3770,10 @@
     },
     "answer": "D",
     "difficulty": 8,
-    "explanation": "The spending multiplier in an open economy with imports is calculated as 1 / (1 - MPC + MPI). In this case, the multiplier is 1 / (1 - 0.8 + 0.2) = 1 / 0.4 = 2.5. A change in autonomous spending of $100 billion will lead to a change in real GDP of $100 billion * 2.5 = $250 billion."
+    "explanation": "The spending multiplier in an open economy with imports is calculated as 1 / (1 - MPC + MPI). In this case, the multiplier is 1 / (1 - 0.8 + 0.2) = 1 / 0.4 = 2.5. A change in autonomous spending of $100 billion will lead to a change in real GDP of $100 billion * 2.5 = $250 billion.",
+    "correct_key": "D",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_279",
@@ -3078,7 +3786,10 @@
     },
     "answer": "C",
     "difficulty": 5,
-    "explanation": "Aggregate demand (AD) is composed of consumption, investment, government spending, and net exports (C+I+G+NX). A decrease in government spending (G) directly reduces aggregate demand, shifting the AD curve to the left."
+    "explanation": "Aggregate demand (AD) is composed of consumption, investment, government spending, and net exports (C+I+G+NX). A decrease in government spending (G) directly reduces aggregate demand, shifting the AD curve to the left.",
+    "correct_key": "C",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_280",
@@ -3091,7 +3802,10 @@
     },
     "answer": "D",
     "difficulty": 4,
-    "explanation": "The short-run Phillips curve suggests that policymakers can reduce unemployment at the cost of higher inflation, or reduce inflation at the cost of higher unemployment. This inverse relationship is between inflation and the unemployment rate."
+    "explanation": "The short-run Phillips curve suggests that policymakers can reduce unemployment at the cost of higher inflation, or reduce inflation at the cost of higher unemployment. This inverse relationship is between inflation and the unemployment rate.",
+    "correct_key": "D",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_281",
@@ -3104,7 +3818,10 @@
     },
     "answer": "A",
     "difficulty": 6,
-    "explanation": "When the central bank sells government securities, it takes money out of circulation in exchange for these securities. This reduces the money supply. A decrease in the money supply, with an unchanged money demand, leads to an increase in the equilibrium interest rate."
+    "explanation": "When the central bank sells government securities, it takes money out of circulation in exchange for these securities. This reduces the money supply. A decrease in the money supply, with an unchanged money demand, leads to an increase in the equilibrium interest rate.",
+    "correct_key": "A",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_283",
@@ -3117,7 +3834,10 @@
     },
     "answer": "C",
     "difficulty": 5,
-    "explanation": "The balance of trade, also known as the trade balance or net exports, is the difference between the monetary value of a nation's exports and imports over a certain period. It is a component of the balance of payments."
+    "explanation": "The balance of trade, also known as the trade balance or net exports, is the difference between the monetary value of a nation's exports and imports over a certain period. It is a component of the balance of payments.",
+    "correct_key": "C",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_284",
@@ -3130,7 +3850,10 @@
     },
     "answer": "B",
     "difficulty": 7,
-    "explanation": "The Quantity Theory of Money states that MV = PY, where M is the money supply, V is the velocity of money, P is the price level, and Y is real GDP. If V is constant, then the percentage change in M must equal the sum of the percentage change in P and the percentage change in Y. So, 10% (change in M) = % change in P + 5% (change in Y). Therefore, the percentage change in P is 10% - 5% = 5%."
+    "explanation": "The Quantity Theory of Money states that MV = PY, where M is the money supply, V is the velocity of money, P is the price level, and Y is real GDP. If V is constant, then the percentage change in M must equal the sum of the percentage change in P and the percentage change in Y. So, 10% (change in M) = % change in P + 5% (change in Y). Therefore, the percentage change in P is 10% - 5% = 5%.",
+    "correct_key": "B",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macro_5",
@@ -3143,7 +3866,10 @@
     },
     "answer": "C",
     "difficulty": 6,
-    "explanation": "Progressive taxes automatically collect more during expansions and less during recessions."
+    "explanation": "Progressive taxes automatically collect more during expansions and less during recessions.",
+    "correct_key": "C",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_288",
@@ -3156,7 +3882,10 @@
     },
     "answer": "A",
     "difficulty": 7,
-    "explanation": "Voluntary unemployment occurs when individuals are able to work but choose not to at the prevailing wage rate. This contrasts with involuntary unemployment, where individuals would work at the current wage but cannot find jobs (e.g., cyclical or structural unemployment)."
+    "explanation": "Voluntary unemployment occurs when individuals are able to work but choose not to at the prevailing wage rate. This contrasts with involuntary unemployment, where individuals would work at the current wage but cannot find jobs (e.g., cyclical or structural unemployment).",
+    "correct_key": "A",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_289",
@@ -3169,7 +3898,10 @@
     },
     "answer": "C",
     "difficulty": 6,
-    "explanation": "Expansionary monetary policy aims to increase the money supply and lower interest rates to stimulate economic activity. Decreasing the discount rate (the interest rate at which commercial banks can borrow directly from the central bank) makes it cheaper for banks to borrow, thus increasing the money supply."
+    "explanation": "Expansionary monetary policy aims to increase the money supply and lower interest rates to stimulate economic activity. Decreasing the discount rate (the interest rate at which commercial banks can borrow directly from the central bank) makes it cheaper for banks to borrow, thus increasing the money supply.",
+    "correct_key": "C",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_290",
@@ -3182,7 +3914,10 @@
     },
     "answer": "C",
     "difficulty": 6,
-    "explanation": "An increase in the demand for loanable funds (due to government borrowing) without a corresponding increase in supply will cause the equilibrium interest rate to rise. Higher interest rates increase the cost of borrowing for private firms, leading to a decrease in private investment."
+    "explanation": "An increase in the demand for loanable funds (due to government borrowing) without a corresponding increase in supply will cause the equilibrium interest rate to rise. Higher interest rates increase the cost of borrowing for private firms, leading to a decrease in private investment.",
+    "correct_key": "C",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_292",
@@ -3195,7 +3930,10 @@
     },
     "answer": "D",
     "difficulty": 5,
-    "explanation": "GDP measures the market value of all final goods and services newly produced within a country in a given period. The value of used goods, financial transactions (stocks/bonds), and transfer payments (which are not payments for current production) are excluded."
+    "explanation": "GDP measures the market value of all final goods and services newly produced within a country in a given period. The value of used goods, financial transactions (stocks/bonds), and transfer payments (which are not payments for current production) are excluded.",
+    "correct_key": "D",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_293",
@@ -3208,7 +3946,10 @@
     },
     "answer": "D",
     "difficulty": 7,
-    "explanation": "The natural rate of unemployment is determined by structural and frictional factors in the labor market. An increase in the natural rate implies a decrease in the labor force's ability to find work, or a decrease in the efficiency of the labor market. This reduces the economy's potential output, causing the LRAS curve to shift to the left."
+    "explanation": "The natural rate of unemployment is determined by structural and frictional factors in the labor market. An increase in the natural rate implies a decrease in the labor force's ability to find work, or a decrease in the efficiency of the labor market. This reduces the economy's potential output, causing the LRAS curve to shift to the left.",
+    "correct_key": "D",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_294",
@@ -3221,7 +3962,10 @@
     },
     "answer": "C",
     "difficulty": 8,
-    "explanation": "Sticky wages mean that wages do not adjust downward quickly in response to a decrease in aggregate demand. As a result, the decrease in demand primarily leads to a reduction in the quantity of goods and services produced (real output), and a corresponding increase in unemployment, as firms lay off workers because they cannot afford to pay them the same wage for lower production."
+    "explanation": "Sticky wages mean that wages do not adjust downward quickly in response to a decrease in aggregate demand. As a result, the decrease in demand primarily leads to a reduction in the quantity of goods and services produced (real output), and a corresponding increase in unemployment, as firms lay off workers because they cannot afford to pay them the same wage for lower production.",
+    "correct_key": "C",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_296",
@@ -3234,7 +3978,10 @@
     },
     "answer": "A",
     "difficulty": 6,
-    "explanation": "In a closed economy, the multiplier is calculated as 1 / (1 - MPC). Since MPS + MPC = 1, then MPC = 1 - MPS. So, MPC = 1 - 0.3 = 0.7. The multiplier is 1 / (1 - 0.7) = 1 / 0.3 = 3.33."
+    "explanation": "In a closed economy, the multiplier is calculated as 1 / (1 - MPC). Since MPS + MPC = 1, then MPC = 1 - MPS. So, MPC = 1 - 0.3 = 0.7. The multiplier is 1 / (1 - 0.7) = 1 / 0.3 = 3.33.",
+    "correct_key": "A",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_297",
@@ -3247,7 +3994,10 @@
     },
     "answer": "A",
     "difficulty": 7,
-    "explanation": "An increase in the cost of raw materials is a supply shock that increases production costs. This causes the short-run aggregate supply (SRAS) curve to shift to the left. The economy moves up along the aggregate demand (AD) curve, resulting in a higher price level (inflation) and a lower level of real output."
+    "explanation": "An increase in the cost of raw materials is a supply shock that increases production costs. This causes the short-run aggregate supply (SRAS) curve to shift to the left. The economy moves up along the aggregate demand (AD) curve, resulting in a higher price level (inflation) and a lower level of real output.",
+    "correct_key": "A",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_299",
@@ -3260,7 +4010,10 @@
     },
     "answer": "A",
     "difficulty": 8,
-    "explanation": "Net capital outflow represents the difference between the purchase of foreign assets by domestic residents and the purchase of domestic assets by foreign residents. A decrease in net capital outflow means less domestic currency is being supplied to foreign exchange markets to buy foreign assets, and/or more foreign currency is being demanded to buy domestic assets. This increased demand for the domestic currency leads to its appreciation."
+    "explanation": "Net capital outflow represents the difference between the purchase of foreign assets by domestic residents and the purchase of domestic assets by foreign residents. A decrease in net capital outflow means less domestic currency is being supplied to foreign exchange markets to buy foreign assets, and/or more foreign currency is being demanded to buy domestic assets. This increased demand for the domestic currency leads to its appreciation.",
+    "correct_key": "A",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_300",
@@ -3273,6 +4026,9 @@
     },
     "answer": "B",
     "difficulty": 7,
-    "explanation": "The marginal propensity to consume (MPC) is 0.75. The multiplier for government spending or investment is 1 / (1 - MPC). Multiplier = 1 / (1 - 0.75) = 1 / 0.25 = 4. If autonomous investment increases by $50 billion, the change in equilibrium real GDP will be $50 billion * 4 = $200 billion."
+    "explanation": "The marginal propensity to consume (MPC) is 0.75. The multiplier for government spending or investment is 1 / (1 - MPC). Multiplier = 1 / (1 - 0.75) = 1 / 0.25 = 4. If autonomous investment increases by $50 billion, the change in equilibrium real GDP will be $50 billion * 4 = $200 billion.",
+    "correct_key": "B",
+    "section": "social-studies",
+    "skill": "AP Macroeconomics"
   }
 ]

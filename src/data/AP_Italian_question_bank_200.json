@@ -10,7 +10,10 @@
     },
     "answer": "A",
     "difficulty": 5,
-    "explanation": "Il pronome relativo 'cui' è spesso preceduto da una preposizione. Per parlare 'di' qualcosa, si usa la preposizione 'di'. 'Il libro di cui ti ho parlato'."
+    "explanation": "Il pronome relativo 'cui' è spesso preceduto da una preposizione. Per parlare 'di' qualcosa, si usa la preposizione 'di'. 'Il libro di cui ti ho parlato'.",
+    "correct_key": "A",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_199",
@@ -23,7 +26,10 @@
     },
     "answer": "C",
     "difficulty": 5,
-    "explanation": "La preposizione 'con' si usa generalmente per indicare il mezzo di trasporto, ad esempio 'andare con la macchina', 'viaggiare con il treno'."
+    "explanation": "La preposizione 'con' si usa generalmente per indicare il mezzo di trasporto, ad esempio 'andare con la macchina', 'viaggiare con il treno'.",
+    "correct_key": "C",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_229",
@@ -36,7 +42,10 @@
     },
     "answer": "D",
     "difficulty": 6,
-    "explanation": "Il verbo 'dimenticarsi' regge il complemento oggetto introdotto dalla preposizione 'di'. La forma corretta sarebbe 'Mi sono dimenticato *delle* chiavi'."
+    "explanation": "Il verbo 'dimenticarsi' regge il complemento oggetto introdotto dalla preposizione 'di'. La forma corretta sarebbe 'Mi sono dimenticato *delle* chiavi'.",
+    "correct_key": "D",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_215",
@@ -49,7 +58,10 @@
     },
     "answer": "B",
     "difficulty": 8,
-    "explanation": "L'espressione di tempo 'Nel 1945' indica un evento storico concluso nel passato. Il passato remoto è spesso usato per narrare eventi storici o lontani nel tempo. Il verbo 'finire' al passato remoto è 'finì'."
+    "explanation": "L'espressione di tempo 'Nel 1945' indica un evento storico concluso nel passato. Il passato remoto è spesso usato per narrare eventi storici o lontani nel tempo. Il verbo 'finire' al passato remoto è 'finì'.",
+    "correct_key": "B",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_202",
@@ -62,7 +74,10 @@
     },
     "answer": "C",
     "difficulty": 5,
-    "explanation": "L'avverbio 'ieri' indica un'azione conclusa nel passato. Il passato prossimo si forma con l'ausiliare (essere o avere) più il participio passato. 'Andare' vuole l'ausiliare 'essere', quindi 'siamo andati'."
+    "explanation": "L'avverbio 'ieri' indica un'azione conclusa nel passato. Il passato prossimo si forma con l'ausiliare (essere o avere) più il participio passato. 'Andare' vuole l'ausiliare 'essere', quindi 'siamo andati'.",
+    "correct_key": "C",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_159",
@@ -75,7 +90,10 @@
     },
     "answer": "A",
     "difficulty": 7,
-    "explanation": "'Molti anni fa' indica un'azione abituale o continuativa nel passato, descritta dall'imperfetto. 'Vivevano' è l'imperfetto di 'vivere'."
+    "explanation": "'Molti anni fa' indica un'azione abituale o continuativa nel passato, descritta dall'imperfetto. 'Vivevano' è l'imperfetto di 'vivere'.",
+    "correct_key": "A",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_69",
@@ -88,7 +106,10 @@
     },
     "answer": "D",
     "difficulty": 8,
-    "explanation": "Questa è una frase ipotetica irreale nel passato. La protasi ('Se avessi saputo') richiede un congiuntivo imperfetto. L'apodosi (la conseguenza) richiede il condizionale passato: 'avrei portato'."
+    "explanation": "Questa è una frase ipotetica irreale nel passato. La protasi ('Se avessi saputo') richiede un congiuntivo imperfetto. L'apodosi (la conseguenza) richiede il condizionale passato: 'avrei portato'.",
+    "correct_key": "D",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_122",
@@ -101,7 +122,10 @@
     },
     "answer": "C",
     "difficulty": 6,
-    "explanation": "Il passato prossimo si forma con l'ausiliare 'avere' o 'essere' più il participio passato. Per 'mangiare' usato con 'noi', si usa 'abbiamo mangiato'."
+    "explanation": "Il passato prossimo si forma con l'ausiliare 'avere' o 'essere' più il participio passato. Per 'mangiare' usato con 'noi', si usa 'abbiamo mangiato'.",
+    "correct_key": "C",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_154",
@@ -114,7 +138,10 @@
     },
     "answer": "A",
     "difficulty": 5,
-    "explanation": "Il verbo 'avere bisogno' regge la preposizione 'di'."
+    "explanation": "Il verbo 'avere bisogno' regge la preposizione 'di'.",
+    "correct_key": "A",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_55",
@@ -127,7 +154,10 @@
     },
     "answer": "B",
     "difficulty": 5,
-    "explanation": "Il participio passato del verbo 'fare' è 'fatto'."
+    "explanation": "Il participio passato del verbo 'fare' è 'fatto'.",
+    "correct_key": "B",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_262",
@@ -140,7 +170,10 @@
     },
     "answer": "D",
     "difficulty": 5,
-    "explanation": "Per indicare un giorno specifico della settimana si usa la preposizione 'a' o più comunemente l'articolo determinativo ('il lunedì', 'di lunedì', ma anche 'a lunedì' in alcuni contesti)."
+    "explanation": "Per indicare un giorno specifico della settimana si usa la preposizione 'a' o più comunemente l'articolo determinativo ('il lunedì', 'di lunedì', ma anche 'a lunedì' in alcuni contesti).",
+    "correct_key": "D",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_41",
@@ -153,7 +186,10 @@
     },
     "answer": "B",
     "difficulty": 5,
-    "explanation": "Questa è una frase ipotetica del terzo tipo. La proposizione principale esprime una conseguenza certa o molto probabile. 'Sicuramente' rafforza questa idea."
+    "explanation": "Questa è una frase ipotetica del terzo tipo. La proposizione principale esprime una conseguenza certa o molto probabile. 'Sicuramente' rafforza questa idea.",
+    "correct_key": "B",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_156",
@@ -166,7 +202,10 @@
     },
     "answer": "D",
     "difficulty": 6,
-    "explanation": "L'avverbio 'ieri sera' indica un'azione conclusa nel passato, quindi si usa il passato prossimo. 'Ha guardato' è il passato prossimo di 'guardare'."
+    "explanation": "L'avverbio 'ieri sera' indica un'azione conclusa nel passato, quindi si usa il passato prossimo. 'Ha guardato' è il passato prossimo di 'guardare'.",
+    "correct_key": "D",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_12",
@@ -179,7 +218,10 @@
     },
     "answer": "C",
     "difficulty": 7,
-    "explanation": "Passato prossimo = completed; imperfetto = habitual/descriptive."
+    "explanation": "Passato prossimo = completed; imperfetto = habitual/descriptive.",
+    "correct_key": "C",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_184",
@@ -192,7 +234,10 @@
     },
     "answer": "D",
     "difficulty": 7,
-    "explanation": "Corrisponde alla struttura della frase ipotetica dell'irrealtà nel passato. 'Se fossi stato' (congiuntivo trapassato) richiede 'avrei visto' (condizionale passato)."
+    "explanation": "Corrisponde alla struttura della frase ipotetica dell'irrealtà nel passato. 'Se fossi stato' (congiuntivo trapassato) richiede 'avrei visto' (condizionale passato).",
+    "correct_key": "D",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_140",
@@ -205,7 +250,10 @@
     },
     "answer": "C",
     "difficulty": 5,
-    "explanation": "Il Carnevale di Venezia è uno dei più famosi e antichi al mondo."
+    "explanation": "Il Carnevale di Venezia è uno dei più famosi e antichi al mondo.",
+    "correct_key": "C",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_66",
@@ -218,7 +266,10 @@
     },
     "answer": "C",
     "difficulty": 5,
-    "explanation": "Il Carnevale di Venezia è uno dei più famosi e storici al mondo."
+    "explanation": "Il Carnevale di Venezia è uno dei più famosi e storici al mondo.",
+    "correct_key": "C",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_145",
@@ -231,7 +282,10 @@
     },
     "answer": "C",
     "difficulty": 6,
-    "explanation": "Il Parmigiano Reggiano è un formaggio DOP prodotto principalmente in Emilia-Romagna."
+    "explanation": "Il Parmigiano Reggiano è un formaggio DOP prodotto principalmente in Emilia-Romagna.",
+    "correct_key": "C",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_272",
@@ -244,7 +298,10 @@
     },
     "answer": "D",
     "difficulty": 5,
-    "explanation": "Il condizionale presente si usa per esprimere desideri, consigli, o possibilità. 'Io berrei'."
+    "explanation": "Il condizionale presente si usa per esprimere desideri, consigli, o possibilità. 'Io berrei'.",
+    "correct_key": "D",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_37",
@@ -257,7 +314,10 @@
     },
     "answer": "D",
     "difficulty": 7,
-    "explanation": "Il verbo 'nascere' regge la preposizione 'da' quando si indica il luogo di nascita ('nascere da una città'). Quindi, il pronome relativo corretto è 'da cui'."
+    "explanation": "Il verbo 'nascere' regge la preposizione 'da' quando si indica il luogo di nascita ('nascere da una città'). Quindi, il pronome relativo corretto è 'da cui'.",
+    "correct_key": "D",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_61",
@@ -270,7 +330,10 @@
     },
     "answer": "B",
     "difficulty": 6,
-    "explanation": "Il congiuntivo imperfetto del verbo 'essere' per la prima persona singolare è 'fossi'."
+    "explanation": "Il congiuntivo imperfetto del verbo 'essere' per la prima persona singolare è 'fossi'.",
+    "correct_key": "B",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_300",
@@ -283,7 +346,10 @@
     },
     "answer": "B",
     "difficulty": 6,
-    "explanation": "L'espressione 'avere voglia di' è una costruzione fissa che richiede la preposizione 'di' prima dell'infinito o del sostantivo."
+    "explanation": "L'espressione 'avere voglia di' è una costruzione fissa che richiede la preposizione 'di' prima dell'infinito o del sostantivo.",
+    "correct_key": "B",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_133",
@@ -296,7 +362,10 @@
     },
     "answer": "B",
     "difficulty": 6,
-    "explanation": "La preposizione 'durante' si usa per indicare un'azione che avviene in un certo periodo di tempo. Es: 'Durante la lezione, ho preso appunti'."
+    "explanation": "La preposizione 'durante' si usa per indicare un'azione che avviene in un certo periodo di tempo. Es: 'Durante la lezione, ho preso appunti'.",
+    "correct_key": "B",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_219",
@@ -309,7 +378,10 @@
     },
     "answer": "D",
     "difficulty": 6,
-    "explanation": "La frase usa una forma passiva/participiale. 'Lettera' è femminile singolare, quindi il participio passato del verbo 'scrivere' deve concordare in genere e numero: 'scritta'."
+    "explanation": "La frase usa una forma passiva/participiale. 'Lettera' è femminile singolare, quindi il participio passato del verbo 'scrivere' deve concordare in genere e numero: 'scritta'.",
+    "correct_key": "D",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_100",
@@ -322,7 +394,10 @@
     },
     "answer": "D",
     "difficulty": 8,
-    "explanation": "'In bocca al lupo' è un'espressione comune utilizzata per augurare buona fortuna a qualcuno."
+    "explanation": "'In bocca al lupo' è un'espressione comune utilizzata per augurare buona fortuna a qualcuno.",
+    "correct_key": "D",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_151",
@@ -335,7 +410,10 @@
     },
     "answer": "A",
     "difficulty": 5,
-    "explanation": "La preposizione 'per' indica il destinatario di un regalo."
+    "explanation": "La preposizione 'per' indica il destinatario di un regalo.",
+    "correct_key": "A",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_43",
@@ -348,7 +426,10 @@
     },
     "answer": "D",
     "difficulty": 6,
-    "explanation": "La domanda indiretta riguarda il modo in cui l'azione è avvenuta. 'Come' è il pronome interrogativo appropriato per chiedere il modo."
+    "explanation": "La domanda indiretta riguarda il modo in cui l'azione è avvenuta. 'Come' è il pronome interrogativo appropriato per chiedere il modo.",
+    "correct_key": "D",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_16",
@@ -361,7 +442,10 @@
     },
     "answer": "C",
     "difficulty": 5,
-    "explanation": "Michelangelo painted the Sistine Chapel ceiling (1508-1512)."
+    "explanation": "Michelangelo painted the Sistine Chapel ceiling (1508-1512).",
+    "correct_key": "C",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_33",
@@ -374,7 +458,10 @@
     },
     "answer": "A",
     "difficulty": 6,
-    "explanation": "'Vorrei che...' introduce un desiderio e richiede il congiuntivo imperfetto ('leggessi') quando il soggetto della principale e della dipendente sono diversi (io—tu)."
+    "explanation": "'Vorrei che...' introduce un desiderio e richiede il congiuntivo imperfetto ('leggessi') quando il soggetto della principale e della dipendente sono diversi (io—tu).",
+    "correct_key": "A",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_163",
@@ -387,7 +474,10 @@
     },
     "answer": "C",
     "difficulty": 5,
-    "explanation": "Dante Alighieri è universalmente riconosciuto come l'autore de \"La Divina Commedia\", uno dei capolavori della letteratura italiana e mondiale."
+    "explanation": "Dante Alighieri è universalmente riconosciuto come l'autore de \"La Divina Commedia\", uno dei capolavori della letteratura italiana e mondiale.",
+    "correct_key": "C",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_17",
@@ -400,7 +490,10 @@
     },
     "answer": "A",
     "difficulty": 7,
-    "explanation": "After 'è importante che,' Italian requires the congiuntivo: 'siano.'"
+    "explanation": "After 'è importante che,' Italian requires the congiuntivo: 'siano.'",
+    "correct_key": "A",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_24",
@@ -413,7 +506,10 @@
     },
     "answer": "D",
     "difficulty": 6,
-    "explanation": "'Preferirei... piuttosto che...' è la struttura corretta per esprimere una preferenza tra due azioni. Significa 'I would rather... than...'."
+    "explanation": "'Preferirei... piuttosto che...' è la struttura corretta per esprimere una preferenza tra due azioni. Significa 'I would rather... than...'.",
+    "correct_key": "D",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_84",
@@ -426,7 +522,10 @@
     },
     "answer": "B",
     "difficulty": 5,
-    "explanation": "Per indicare il giorno della settimana in cui avviene un evento, si usa la preposizione 'a'. 'A lunedì'."
+    "explanation": "Per indicare il giorno della settimana in cui avviene un evento, si usa la preposizione 'a'. 'A lunedì'.",
+    "correct_key": "B",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_243",
@@ -439,7 +538,10 @@
     },
     "answer": "D",
     "difficulty": 7,
-    "explanation": "'Rompere il ghiaccio' è un'espressione idiomatica che significa creare un'atmosfera più rilassata e amichevole, spesso all'inizio di un incontro o di una conversazione tra persone che non si conoscono bene."
+    "explanation": "'Rompere il ghiaccio' è un'espressione idiomatica che significa creare un'atmosfera più rilassata e amichevole, spesso all'inizio di un incontro o di una conversazione tra persone che non si conoscono bene.",
+    "correct_key": "D",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_177",
@@ -452,7 +554,10 @@
     },
     "answer": "B",
     "difficulty": 6,
-    "explanation": "'Avere un'illuminazione' è un modo di dire che indica l'arrivo improvviso di una buona idea o soluzione."
+    "explanation": "'Avere un'illuminazione' è un modo di dire che indica l'arrivo improvviso di una buona idea o soluzione.",
+    "correct_key": "B",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_76",
@@ -465,7 +570,10 @@
     },
     "answer": "A",
     "difficulty": 5,
-    "explanation": "L'espressione di tempo 'l'anno scorso' indica un'azione conclusa nel passato. Il passato prossimo ('è andato') è il tempo più comune per descrivere eventi passati specifici."
+    "explanation": "L'espressione di tempo 'l'anno scorso' indica un'azione conclusa nel passato. Il passato prossimo ('è andato') è il tempo più comune per descrivere eventi passati specifici.",
+    "correct_key": "A",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_258",
@@ -478,7 +586,10 @@
     },
     "answer": "B",
     "difficulty": 5,
-    "explanation": "Con i nomi di città si usa generalmente la preposizione 'a' ('Abito a Roma')."
+    "explanation": "Con i nomi di città si usa generalmente la preposizione 'a' ('Abito a Roma').",
+    "correct_key": "B",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_9",
@@ -491,7 +602,10 @@
     },
     "answer": "A",
     "difficulty": 6,
-    "explanation": "Informal imperative (tu) of -ere verbs drops the infinitive ending."
+    "explanation": "Informal imperative (tu) of -ere verbs drops the infinitive ending.",
+    "correct_key": "A",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_138",
@@ -504,7 +618,10 @@
     },
     "answer": "C",
     "difficulty": 5,
-    "explanation": "La preposizione 'per' può essere usata per indicare uno scopo o un fine. Es: 'Lavoro per guadagnare soldi'."
+    "explanation": "La preposizione 'per' può essere usata per indicare uno scopo o un fine. Es: 'Lavoro per guadagnare soldi'.",
+    "correct_key": "C",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_35",
@@ -517,7 +634,10 @@
     },
     "answer": "A",
     "difficulty": 5,
-    "explanation": "'Non so' introduce una domanda indiretta. 'Cosa' è il pronome interrogativo appropriato per chiedere l'azione da compiere."
+    "explanation": "'Non so' introduce una domanda indiretta. 'Cosa' è il pronome interrogativo appropriato per chiedere l'azione da compiere.",
+    "correct_key": "A",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_214",
@@ -530,7 +650,10 @@
     },
     "answer": "B",
     "difficulty": 7,
-    "explanation": "'Non vedere l'ora' è un'espressione idiomatica che significa essere estremamente desiderosi che qualcosa accada o che un momento arrivi."
+    "explanation": "'Non vedere l'ora' è un'espressione idiomatica che significa essere estremamente desiderosi che qualcosa accada o che un momento arrivi.",
+    "correct_key": "B",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_277",
@@ -543,7 +666,10 @@
     },
     "answer": "A",
     "difficulty": 5,
-    "explanation": "La preposizione 'di' è utilizzata per esprimere possesso, appartenenza, origine o materiale (es. 'il libro di Maria', 'una statua di marmo')."
+    "explanation": "La preposizione 'di' è utilizzata per esprimere possesso, appartenenza, origine o materiale (es. 'il libro di Maria', 'una statua di marmo').",
+    "correct_key": "A",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_104",
@@ -556,7 +682,10 @@
     },
     "answer": "B",
     "difficulty": 5,
-    "explanation": "La preposizione 'di' è utilizzata per esprimere possesso, appartenenza o relazione ('il libro di Marco')."
+    "explanation": "La preposizione 'di' è utilizzata per esprimere possesso, appartenenza o relazione ('il libro di Marco').",
+    "correct_key": "B",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_168",
@@ -569,7 +698,10 @@
     },
     "answer": "C",
     "difficulty": 7,
-    "explanation": "L'Italia ha una tradizione secolare nella costruzione e nell'esecuzione del violino, con maestri liutai come Stradivari e Amati."
+    "explanation": "L'Italia ha una tradizione secolare nella costruzione e nell'esecuzione del violino, con maestri liutai come Stradivari e Amati.",
+    "correct_key": "C",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_225",
@@ -582,7 +714,10 @@
     },
     "answer": "B",
     "difficulty": 6,
-    "explanation": "'Avere la pancia piena' è un'espressione comune per indicare di aver mangiato abbastanza e di sentirsi sazi."
+    "explanation": "'Avere la pancia piena' è un'espressione comune per indicare di aver mangiato abbastanza e di sentirsi sazi.",
+    "correct_key": "B",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_174",
@@ -595,7 +730,10 @@
     },
     "answer": "A",
     "difficulty": 6,
-    "explanation": "'Piuttosto che' è una congiunzione che introduce una preferenza o un'alternativa."
+    "explanation": "'Piuttosto che' è una congiunzione che introduce una preferenza o un'alternativa.",
+    "correct_key": "A",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_230",
@@ -608,7 +746,10 @@
     },
     "answer": "B",
     "difficulty": 7,
-    "explanation": "'Essere al settimo cielo' è un idioma che esprime un'estrema felicità o contentezza."
+    "explanation": "'Essere al settimo cielo' è un idioma che esprime un'estrema felicità o contentezza.",
+    "correct_key": "B",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_77",
@@ -621,7 +762,10 @@
     },
     "answer": "D",
     "difficulty": 5,
-    "explanation": "'Quando ero bambino' stabilisce un contesto passato e abituale. L'imperfetto ('andavo') è usato per descrivere azioni abituali o ripetute nel passato."
+    "explanation": "'Quando ero bambino' stabilisce un contesto passato e abituale. L'imperfetto ('andavo') è usato per descrivere azioni abituali o ripetute nel passato.",
+    "correct_key": "D",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_45",
@@ -634,7 +778,10 @@
     },
     "answer": "A",
     "difficulty": 6,
-    "explanation": "'Mi sembra che...' introduce un'opinione o un'impressione e richiede il congiuntivo nella frase dipendente ('voli'). 'Che' è la congiunzione corretta per introdurre questa frase subordinata."
+    "explanation": "'Mi sembra che...' introduce un'opinione o un'impressione e richiede il congiuntivo nella frase dipendente ('voli'). 'Che' è la congiunzione corretta per introdurre questa frase subordinata.",
+    "correct_key": "A",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_83",
@@ -647,7 +794,10 @@
     },
     "answer": "D",
     "difficulty": 5,
-    "explanation": "La preposizione 'per' indica il destinatario di un'azione o di un oggetto. 'Un regalo per mia madre'."
+    "explanation": "La preposizione 'per' indica il destinatario di un'azione o di un oggetto. 'Un regalo per mia madre'.",
+    "correct_key": "D",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_152",
@@ -660,7 +810,10 @@
     },
     "answer": "A",
     "difficulty": 5,
-    "explanation": "'Sul' è la preposizione articolata formata da 'su' + 'il', che indica la posizione sopra qualcosa."
+    "explanation": "'Sul' è la preposizione articolata formata da 'su' + 'il', che indica la posizione sopra qualcosa.",
+    "correct_key": "A",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_71",
@@ -673,7 +826,10 @@
     },
     "answer": "B",
     "difficulty": 7,
-    "explanation": "La frase è una condizione irreale nel passato (periodo ipotetico dell'irrealtà). La clausola introdotta da 'se' richiede il congiuntivo trapassato (avessi saputo)."
+    "explanation": "La frase è una condizione irreale nel passato (periodo ipotetico dell'irrealtà). La clausola introdotta da 'se' richiede il congiuntivo trapassato (avessi saputo).",
+    "correct_key": "B",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_118",
@@ -686,7 +842,10 @@
     },
     "answer": "B",
     "difficulty": 8,
-    "explanation": "Questa espressione descrive una persona che è distratta, poco attenta alla realtà circostante e persa nei propri pensieri o sogni."
+    "explanation": "Questa espressione descrive una persona che è distratta, poco attenta alla realtà circostante e persa nei propri pensieri o sogni.",
+    "correct_key": "B",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_123",
@@ -699,7 +858,10 @@
     },
     "answer": "D",
     "difficulty": 6,
-    "explanation": "Generalmente si pensa 'di' qualcosa o qualcuno quando si esprime un'opinione o un'idea. Es: 'Penso di sì'."
+    "explanation": "Generalmente si pensa 'di' qualcosa o qualcuno quando si esprime un'opinione o un'idea. Es: 'Penso di sì'.",
+    "correct_key": "D",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_99",
@@ -712,7 +874,10 @@
     },
     "answer": "C",
     "difficulty": 7,
-    "explanation": "'Sbrigare' significa portare a termine rapidamente un compito o un'azione, quindi è sinonimo di 'affrettarsi'."
+    "explanation": "'Sbrigare' significa portare a termine rapidamente un compito o un'azione, quindi è sinonimo di 'affrettarsi'.",
+    "correct_key": "C",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_23",
@@ -725,7 +890,10 @@
     },
     "answer": "A",
     "difficulty": 5,
-    "explanation": "La frase introduce una domanda indiretta. 'Mi chiedo' è seguito da un pronome interrogativo o avverbio interrogativo. 'Cosa' è appropriato per chiedere l'evento in sé."
+    "explanation": "La frase introduce una domanda indiretta. 'Mi chiedo' è seguito da un pronome interrogativo o avverbio interrogativo. 'Cosa' è appropriato per chiedere l'evento in sé.",
+    "correct_key": "A",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_279",
@@ -738,7 +906,10 @@
     },
     "answer": "C",
     "difficulty": 5,
-    "explanation": "Il passato prossimo si forma con l'ausiliare 'essere' o 'avere' al presente più il participio passato del verbo (es. 'ho mangiato', 'sono andato')."
+    "explanation": "Il passato prossimo si forma con l'ausiliare 'essere' o 'avere' al presente più il participio passato del verbo (es. 'ho mangiato', 'sono andato').",
+    "correct_key": "C",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_261",
@@ -751,7 +922,10 @@
     },
     "answer": "A",
     "difficulty": 5,
-    "explanation": "I nomi maschili che terminano in '-ma' (come problema, teorema, programma) mantengono la desinenza in '-a' al plurale, ma diventano maschili: 'i problemi'."
+    "explanation": "I nomi maschili che terminano in '-ma' (come problema, teorema, programma) mantengono la desinenza in '-a' al plurale, ma diventano maschili: 'i problemi'.",
+    "correct_key": "A",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_223",
@@ -764,7 +938,10 @@
     },
     "answer": "D",
     "difficulty": 9,
-    "explanation": "La frase esprime una condizione irreale nel passato con una conseguenza nel presente. Si usa il congiuntivo trapassato ('avessi studiato') nella proposizione subordinata ('se') e il condizionale presente nella principale ('sarei laureato')."
+    "explanation": "La frase esprime una condizione irreale nel passato con una conseguenza nel presente. Si usa il congiuntivo trapassato ('avessi studiato') nella proposizione subordinata ('se') e il condizionale presente nella principale ('sarei laureato').",
+    "correct_key": "D",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_165",
@@ -777,7 +954,10 @@
     },
     "answer": "D",
     "difficulty": 7,
-    "explanation": "\"Crepi il lupo!\" è la risposta tradizionale all'augurio \"in bocca al lupo\", usato per augurare buona fortuna."
+    "explanation": "\"Crepi il lupo!\" è la risposta tradizionale all'augurio \"in bocca al lupo\", usato per augurare buona fortuna.",
+    "correct_key": "D",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_212",
@@ -790,7 +970,10 @@
     },
     "answer": "A",
     "difficulty": 6,
-    "explanation": "L'espressione 'spero che' introduce un desiderio o una speranza, che richiede il congiuntivo. Il verbo 'arrivare' alla seconda persona singolare del congiuntivo presente è 'arrivi'."
+    "explanation": "L'espressione 'spero che' introduce un desiderio o una speranza, che richiede il congiuntivo. Il verbo 'arrivare' alla seconda persona singolare del congiuntivo presente è 'arrivi'.",
+    "correct_key": "A",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_268",
@@ -803,7 +986,10 @@
     },
     "answer": "D",
     "difficulty": 7,
-    "explanation": "Il congiuntivo passato si forma con il congiuntivo presente dell'ausiliare (avere/essere) + participio passato del verbo principale. 'Penso che tu abbia mangiato'."
+    "explanation": "Il congiuntivo passato si forma con il congiuntivo presente dell'ausiliare (avere/essere) + participio passato del verbo principale. 'Penso che tu abbia mangiato'.",
+    "correct_key": "D",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_2",
@@ -816,7 +1002,10 @@
     },
     "answer": "D",
     "difficulty": 5,
-    "explanation": "Equivalent to 'A bird in the hand is worth two in the bush.'"
+    "explanation": "Equivalent to 'A bird in the hand is worth two in the bush.'",
+    "correct_key": "D",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_210",
@@ -829,7 +1018,10 @@
     },
     "answer": "B",
     "difficulty": 7,
-    "explanation": "'Fare la scarpetta' è un'espressione culinaria che indica l'abitudine di usare un pezzo di pane per raccogliere il delizioso sugo rimasto nel piatto alla fine del pasto."
+    "explanation": "'Fare la scarpetta' è un'espressione culinaria che indica l'abitudine di usare un pezzo di pane per raccogliere il delizioso sugo rimasto nel piatto alla fine del pasto.",
+    "correct_key": "B",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_188",
@@ -842,7 +1034,10 @@
     },
     "answer": "A",
     "difficulty": 6,
-    "explanation": "Il verbo 'volere' seguito da un altro soggetto introduce una proposizione subordinata oggettiva che richiede la congiunzione 'che' e il congiuntivo."
+    "explanation": "Il verbo 'volere' seguito da un altro soggetto introduce una proposizione subordinata oggettiva che richiede la congiunzione 'che' e il congiuntivo.",
+    "correct_key": "A",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_131",
@@ -855,7 +1050,10 @@
     },
     "answer": "C",
     "difficulty": 5,
-    "explanation": "Dopo verbi che esprimono dubbio o incertezza come 'non credere', si usa il congiuntivo presente."
+    "explanation": "Dopo verbi che esprimono dubbio o incertezza come 'non credere', si usa il congiuntivo presente.",
+    "correct_key": "C",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_233",
@@ -868,7 +1066,10 @@
     },
     "answer": "D",
     "difficulty": 7,
-    "explanation": "'Tagliare la corda' è un'espressione idiomatica che significa allontanarsi rapidamente da un luogo o da una situazione, spesso per sfuggire a qualcosa."
+    "explanation": "'Tagliare la corda' è un'espressione idiomatica che significa allontanarsi rapidamente da un luogo o da una situazione, spesso per sfuggire a qualcosa.",
+    "correct_key": "D",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_141",
@@ -881,7 +1082,10 @@
     },
     "answer": "A",
     "difficulty": 5,
-    "explanation": "Dopo verbi che esprimono speranza come 'sperare', si usa il congiuntivo presente."
+    "explanation": "Dopo verbi che esprimono speranza come 'sperare', si usa il congiuntivo presente.",
+    "correct_key": "A",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_21",
@@ -894,7 +1098,10 @@
     },
     "answer": "A",
     "difficulty": 7,
-    "explanation": "Questa è una frase ipotetica del terzo tipo (irrealtà nel passato). Si usa il congiuntivo trapassato nella proposizione introdotta da 'se' e il condizionale passato nella proposizione principale. 'Avessi studiato' (congiuntivo trapassato) richiede 'avrei preso' (condizionale passato)."
+    "explanation": "Questa è una frase ipotetica del terzo tipo (irrealtà nel passato). Si usa il congiuntivo trapassato nella proposizione introdotta da 'se' e il condizionale passato nella proposizione principale. 'Avessi studiato' (congiuntivo trapassato) richiede 'avrei preso' (condizionale passato).",
+    "correct_key": "A",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_273",
@@ -907,7 +1114,10 @@
     },
     "answer": "A",
     "difficulty": 5,
-    "explanation": "Il femminile di 're' è 'regina'."
+    "explanation": "Il femminile di 're' è 'regina'.",
+    "correct_key": "A",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_205",
@@ -920,7 +1130,10 @@
     },
     "answer": "A",
     "difficulty": 7,
-    "explanation": "La frase esprime una condizione irreale nel passato (hypothetical past). Il periodo ipotetico di questo tipo richiede il congiuntivo imperfetto nella proposizione subordinata ('se') e il condizionale passato nella principale. 'Se fossi più attento'."
+    "explanation": "La frase esprime una condizione irreale nel passato (hypothetical past). Il periodo ipotetico di questo tipo richiede il congiuntivo imperfetto nella proposizione subordinata ('se') e il condizionale passato nella principale. 'Se fossi più attento'.",
+    "correct_key": "A",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_226",
@@ -933,7 +1146,10 @@
     },
     "answer": "C",
     "difficulty": 6,
-    "explanation": "La congiunzione 'benchè' (o 'sebbene', 'quantunque') introduce una proposizione concessiva, indicando che il fatto espresso nella proposizione subordinata è contrariato da quello della principale, ma non impedisce che esso si verifichi."
+    "explanation": "La congiunzione 'benchè' (o 'sebbene', 'quantunque') introduce una proposizione concessiva, indicando che il fatto espresso nella proposizione subordinata è contrariato da quello della principale, ma non impedisce che esso si verifichi.",
+    "correct_key": "C",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_52",
@@ -946,7 +1162,10 @@
     },
     "answer": "B",
     "difficulty": 7,
-    "explanation": "'In bocca al lupo' è un'idioma italiano usato per augurare buona fortuna. La risposta tradizionale è 'Crepi il lupo'."
+    "explanation": "'In bocca al lupo' è un'idioma italiano usato per augurare buona fortuna. La risposta tradizionale è 'Crepi il lupo'.",
+    "correct_key": "B",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_50",
@@ -959,7 +1178,10 @@
     },
     "answer": "B",
     "difficulty": 6,
-    "explanation": "L'avverbio 'ieri sera' indica un'azione conclusa nel passato. Si usa il passato prossimo: 'siamo andati'."
+    "explanation": "L'avverbio 'ieri sera' indica un'azione conclusa nel passato. Si usa il passato prossimo: 'siamo andati'.",
+    "correct_key": "B",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_130",
@@ -972,7 +1194,10 @@
     },
     "answer": "C",
     "difficulty": 6,
-    "explanation": "Le orecchiette sono un tipo di pasta tradizionalmente associato alla Puglia."
+    "explanation": "Le orecchiette sono un tipo di pasta tradizionalmente associato alla Puglia.",
+    "correct_key": "C",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_78",
@@ -985,7 +1210,10 @@
     },
     "answer": "D",
     "difficulty": 5,
-    "explanation": "'La settimana scorsa' indica un momento specifico nel passato. Il passato prossimo ('hanno camminato') è appropriato per descrivere un'azione completata in quel periodo."
+    "explanation": "'La settimana scorsa' indica un momento specifico nel passato. Il passato prossimo ('hanno camminato') è appropriato per descrivere un'azione completata in quel periodo.",
+    "correct_key": "D",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_189",
@@ -998,7 +1226,10 @@
     },
     "answer": "D",
     "difficulty": 7,
-    "explanation": "'Essere con l'acqua alla gola' è un modo di dire che significa trovarsi in una situazione difficile o di grande pressione, spesso lavorativa o finanziaria, quindi essere molto occupati o in difficoltà."
+    "explanation": "'Essere con l'acqua alla gola' è un modo di dire che significa trovarsi in una situazione difficile o di grande pressione, spesso lavorativa o finanziaria, quindi essere molto occupati o in difficoltà.",
+    "correct_key": "D",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_113",
@@ -1011,7 +1242,10 @@
     },
     "answer": "D",
     "difficulty": 5,
-    "explanation": "Roma è la capitale d'Italia, nonché una delle città più antiche e storicamente significative del mondo."
+    "explanation": "Roma è la capitale d'Italia, nonché una delle città più antiche e storicamente significative del mondo.",
+    "correct_key": "D",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_125",
@@ -1024,7 +1258,10 @@
     },
     "answer": "C",
     "difficulty": 5,
-    "explanation": "Il Colosseo è uno dei monumenti più famosi di Roma e dell'Italia."
+    "explanation": "Il Colosseo è uno dei monumenti più famosi di Roma e dell'Italia.",
+    "correct_key": "C",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_15",
@@ -1037,7 +1274,10 @@
     },
     "answer": "A",
     "difficulty": 5,
-    "explanation": "'Perché' (because) connects the action with the reason."
+    "explanation": "'Perché' (because) connects the action with the reason.",
+    "correct_key": "A",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_275",
@@ -1050,7 +1290,10 @@
     },
     "answer": "C",
     "difficulty": 5,
-    "explanation": "La congiunzione 'affinché' (so that, in order that) indica uno scopo o un desiderio e richiede l'uso del congiuntivo per esprimere l'azione desiderata."
+    "explanation": "La congiunzione 'affinché' (so that, in order that) indica uno scopo o un desiderio e richiede l'uso del congiuntivo per esprimere l'azione desiderata.",
+    "correct_key": "C",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_149",
@@ -1063,7 +1306,10 @@
     },
     "answer": "A",
     "difficulty": 7,
-    "explanation": "La congiunzione 'sebbene' regge il congiuntivo. 'Fosse' è la terza persona singolare del congiuntivo imperfetto del verbo 'essere'."
+    "explanation": "La congiunzione 'sebbene' regge il congiuntivo. 'Fosse' è la terza persona singolare del congiuntivo imperfetto del verbo 'essere'.",
+    "correct_key": "A",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_3",
@@ -1076,7 +1322,10 @@
     },
     "answer": "D",
     "difficulty": 5,
-    "explanation": "Southern Italian cuisine favors olive oil and pasta, while the North uses more butter and rice."
+    "explanation": "Southern Italian cuisine favors olive oil and pasta, while the North uses more butter and rice.",
+    "correct_key": "D",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_234",
@@ -1089,7 +1338,10 @@
     },
     "answer": "D",
     "difficulty": 5,
-    "explanation": "'Che' è il pronome relativo più comune e si usa quando introduce un complemento oggetto diretto. In questo caso, 'il libro' è l'oggetto diretto di 'hai prestato'."
+    "explanation": "'Che' è il pronome relativo più comune e si usa quando introduce un complemento oggetto diretto. In questo caso, 'il libro' è l'oggetto diretto di 'hai prestato'.",
+    "correct_key": "D",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_26",
@@ -1102,7 +1354,10 @@
     },
     "answer": "A",
     "difficulty": 6,
-    "explanation": "L'espressione 'Vorrei che...' introduce una frase che esprime un desiderio o una speranza per il futuro, e richiede il congiuntivo nella frase dipendente. Anche se non c'è la frase dipendente esplicita qui, 'Vorrei' è la forma più educata e appropriata per esprimere questo desiderio."
+    "explanation": "L'espressione 'Vorrei che...' introduce una frase che esprime un desiderio o una speranza per il futuro, e richiede il congiuntivo nella frase dipendente. Anche se non c'è la frase dipendente esplicita qui, 'Vorrei' è la forma più educata e appropriata per esprimere questo desiderio.",
+    "correct_key": "A",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_203",
@@ -1115,7 +1370,10 @@
     },
     "answer": "A",
     "difficulty": 5,
-    "explanation": "Con i nomi di città singolari, si usa generalmente la preposizione 'a' per indicare il luogo di destinazione. 'Vado a Roma'."
+    "explanation": "Con i nomi di città singolari, si usa generalmente la preposizione 'a' per indicare il luogo di destinazione. 'Vado a Roma'.",
+    "correct_key": "A",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_183",
@@ -1128,7 +1386,10 @@
     },
     "answer": "B",
     "difficulty": 5,
-    "explanation": "Dopo il verbo 'decidere', quando è seguito da un altro verbo all'infinito, si usa la preposizione 'di'."
+    "explanation": "Dopo il verbo 'decidere', quando è seguito da un altro verbo all'infinito, si usa la preposizione 'di'.",
+    "correct_key": "B",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_207",
@@ -1141,7 +1402,10 @@
     },
     "answer": "C",
     "difficulty": 8,
-    "explanation": "La frase indica un'azione futura che si svolgerà prima di un'altra azione futura. Si usa il futuro anteriore ('avrai finito') per indicare questa anteriorità temporale."
+    "explanation": "La frase indica un'azione futura che si svolgerà prima di un'altra azione futura. Si usa il futuro anteriore ('avrai finito') per indicare questa anteriorità temporale.",
+    "correct_key": "C",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_186",
@@ -1154,7 +1418,10 @@
     },
     "answer": "D",
     "difficulty": 6,
-    "explanation": "Il verbo 'meravigliarsi' regge la preposizione 'di' quando si riferisce alla causa della meraviglia."
+    "explanation": "Il verbo 'meravigliarsi' regge la preposizione 'di' quando si riferisce alla causa della meraviglia.",
+    "correct_key": "D",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_221",
@@ -1167,7 +1434,10 @@
     },
     "answer": "A",
     "difficulty": 5,
-    "explanation": "In questo contesto, 'questo' funziona come pronome dimostrativo, sostituendo un nome sottinteso (es. questo vestito, questo libro). 'Mi piace molto questo'."
+    "explanation": "In questo contesto, 'questo' funziona come pronome dimostrativo, sostituendo un nome sottinteso (es. questo vestito, questo libro). 'Mi piace molto questo'.",
+    "correct_key": "A",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_164",
@@ -1180,7 +1450,10 @@
     },
     "answer": "C",
     "difficulty": 6,
-    "explanation": "Il fiume Arno è il principale corso d'acqua della Toscana e attraversa città importanti come Firenze e Pisa."
+    "explanation": "Il fiume Arno è il principale corso d'acqua della Toscana e attraversa città importanti come Firenze e Pisa.",
+    "correct_key": "C",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_217",
@@ -1193,7 +1466,10 @@
     },
     "answer": "D",
     "difficulty": 5,
-    "explanation": "La preposizione 'per' indica il destinatario di un regalo o di un'azione. 'Ho comprato questo regalo per te'."
+    "explanation": "La preposizione 'per' indica il destinatario di un regalo o di un'azione. 'Ho comprato questo regalo per te'.",
+    "correct_key": "D",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_14",
@@ -1206,7 +1482,10 @@
     },
     "answer": "C",
     "difficulty": 5,
-    "explanation": "The Italian President serves a seven-year term."
+    "explanation": "The Italian President serves a seven-year term.",
+    "correct_key": "C",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_148",
@@ -1219,7 +1498,10 @@
     },
     "answer": "D",
     "difficulty": 7,
-    "explanation": "Il verbo 'credere che' seguito da un'opinione negativa o incerta regge il congiuntivo. 'Voglia' è la terza persona singolare del congiuntivo presente del verbo 'volere'."
+    "explanation": "Il verbo 'credere che' seguito da un'opinione negativa o incerta regge il congiuntivo. 'Voglia' è la terza persona singolare del congiuntivo presente del verbo 'volere'.",
+    "correct_key": "D",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_97",
@@ -1232,7 +1514,10 @@
     },
     "answer": "D",
     "difficulty": 5,
-    "explanation": "La frase si riferisce a un'azione completata nel passato ('ieri'). Il passato prossimo ('ha letto') è il tempo verbale più appropriato per descrivere eventi specifici e conclusi nel passato."
+    "explanation": "La frase si riferisce a un'azione completata nel passato ('ieri'). Il passato prossimo ('ha letto') è il tempo verbale più appropriato per descrivere eventi specifici e conclusi nel passato.",
+    "correct_key": "D",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_42",
@@ -1245,7 +1530,10 @@
     },
     "answer": "D",
     "difficulty": 7,
-    "explanation": "Dopo espressioni come 'Non c'è nessuno', si usa spesso il congiuntivo per esprimere un'incertezza o una negazione generica. 'Che sia' è la forma più completa e corretta per introdurre la proposizione relativa con il congiuntivo."
+    "explanation": "Dopo espressioni come 'Non c'è nessuno', si usa spesso il congiuntivo per esprimere un'incertezza o una negazione generica. 'Che sia' è la forma più completa e corretta per introdurre la proposizione relativa con il congiuntivo.",
+    "correct_key": "D",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_153",
@@ -1258,7 +1546,10 @@
     },
     "answer": "A",
     "difficulty": 6,
-    "explanation": "Con i nomi di città si usa generalmente la preposizione 'a' per indicare il moto a luogo."
+    "explanation": "Con i nomi di città si usa generalmente la preposizione 'a' per indicare il moto a luogo.",
+    "correct_key": "A",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_182",
@@ -1271,7 +1562,10 @@
     },
     "answer": "C",
     "difficulty": 6,
-    "explanation": "'Impegnativo' è un buon sinonimo di 'faticoso', entrambi indicano qualcosa che richiede sforzo e impegno."
+    "explanation": "'Impegnativo' è un buon sinonimo di 'faticoso', entrambi indicano qualcosa che richiede sforzo e impegno.",
+    "correct_key": "C",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_137",
@@ -1284,7 +1578,10 @@
     },
     "answer": "B",
     "difficulty": 6,
-    "explanation": "I verbi di movimento come 'partire' generalmente usano 'essere' come ausiliare nel passato prossimo."
+    "explanation": "I verbi di movimento come 'partire' generalmente usano 'essere' come ausiliare nel passato prossimo.",
+    "correct_key": "B",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_72",
@@ -1297,7 +1594,10 @@
     },
     "answer": "C",
     "difficulty": 6,
-    "explanation": "Dopo verbi di dire che esprimono un ordine o un consiglio, e in una frase dipendente, si usa il congiuntivo imperfetto. La forma corretta per 'noi' è 'fossimo'."
+    "explanation": "Dopo verbi di dire che esprimono un ordine o un consiglio, e in una frase dipendente, si usa il congiuntivo imperfetto. La forma corretta per 'noi' è 'fossimo'.",
+    "correct_key": "C",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_117",
@@ -1310,7 +1610,10 @@
     },
     "answer": "B",
     "difficulty": 7,
-    "explanation": "'Sviluppare' significa far crescere, migliorare, progredire o elaborare qualcosa nel tempo."
+    "explanation": "'Sviluppare' significa far crescere, migliorare, progredire o elaborare qualcosa nel tempo.",
+    "correct_key": "B",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_92",
@@ -1323,7 +1626,10 @@
     },
     "answer": "C",
     "difficulty": 5,
-    "explanation": "Il Panettone e il Pandoro sono dolci tipici natalizi italiani, consumati durante le festività, specialmente a Natale."
+    "explanation": "Il Panettone e il Pandoro sono dolci tipici natalizi italiani, consumati durante le festività, specialmente a Natale.",
+    "correct_key": "C",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_244",
@@ -1336,7 +1642,10 @@
     },
     "answer": "D",
     "difficulty": 7,
-    "explanation": "Per indicare il luogo, si possono usare 'dove', 'in cui' o 'nella quale' (o forme simili con 'il quale'/'la quale'). Tutte sono corrette in questo contesto."
+    "explanation": "Per indicare il luogo, si possono usare 'dove', 'in cui' o 'nella quale' (o forme simili con 'il quale'/'la quale'). Tutte sono corrette in questo contesto.",
+    "correct_key": "D",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_197",
@@ -1349,7 +1658,10 @@
     },
     "answer": "C",
     "difficulty": 5,
-    "explanation": "Il condizionale passato si forma con l'ausiliare ('avere' o 'essere') al condizionale presente e il participio passato del verbo. Per 'io' e 'avere', è 'avrei'."
+    "explanation": "Il condizionale passato si forma con l'ausiliare ('avere' o 'essere') al condizionale presente e il participio passato del verbo. Per 'io' e 'avere', è 'avrei'.",
+    "correct_key": "C",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_1",
@@ -1362,7 +1674,10 @@
     },
     "answer": "A",
     "difficulty": 7,
-    "explanation": "Periodo ipotetico del 2° tipo: Se + congiuntivo imperfetto, condizionale presente."
+    "explanation": "Periodo ipotetico del 2° tipo: Se + congiuntivo imperfetto, condizionale presente.",
+    "correct_key": "A",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_150",
@@ -1375,7 +1690,10 @@
     },
     "answer": "A",
     "difficulty": 8,
-    "explanation": "'Mi dispiace che' regge il congiuntivo. Poiché l'azione si è svolta nel passato, si usa il congiuntivo passato. 'Sia venuto' è la terza persona singolare del congiuntivo passato del verbo 'venire'."
+    "explanation": "'Mi dispiace che' regge il congiuntivo. Poiché l'azione si è svolta nel passato, si usa il congiuntivo passato. 'Sia venuto' è la terza persona singolare del congiuntivo passato del verbo 'venire'.",
+    "correct_key": "A",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_281",
@@ -1388,7 +1706,10 @@
     },
     "answer": "D",
     "difficulty": 7,
-    "explanation": "'In bocca al lupo' è un modo di dire molto comune in italiano per augurare buona fortuna, specialmente prima di un esame, una performance o una prova difficile. La risposta tradizionale è 'Crepi il lupo!'."
+    "explanation": "'In bocca al lupo' è un modo di dire molto comune in italiano per augurare buona fortuna, specialmente prima di un esame, una performance o una prova difficile. La risposta tradizionale è 'Crepi il lupo!'.",
+    "correct_key": "D",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_115",
@@ -1401,7 +1722,10 @@
     },
     "answer": "B",
     "difficulty": 8,
-    "explanation": "Il trapassato prossimo si usa per indicare un'azione passata anteriore a un'altra azione passata. 'Prima che tu arrivassi' (imperfetto congiuntivo) indica un punto nel passato, e 'avevamo già mangiato' (trapassato prossimo) indica un'azione avvenuta prima di quel punto."
+    "explanation": "Il trapassato prossimo si usa per indicare un'azione passata anteriore a un'altra azione passata. 'Prima che tu arrivassi' (imperfetto congiuntivo) indica un punto nel passato, e 'avevamo già mangiato' (trapassato prossimo) indica un'azione avvenuta prima di quel punto.",
+    "correct_key": "B",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_167",
@@ -1414,7 +1738,10 @@
     },
     "answer": "B",
     "difficulty": 8,
-    "explanation": "\"Fare la scarpetta\" è un'usanza culinaria italiana che consiste nell'utilizzare un pezzo di pane per raccogliere l'ultimo sugo rimasto nel piatto."
+    "explanation": "\"Fare la scarpetta\" è un'usanza culinaria italiana che consiste nell'utilizzare un pezzo di pane per raccogliere l'ultimo sugo rimasto nel piatto.",
+    "correct_key": "B",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_290",
@@ -1427,7 +1754,10 @@
     },
     "answer": "D",
     "difficulty": 7,
-    "explanation": "'Avere a che fare con' significa essere coinvolti in una situazione, trattare con una persona o occuparsi di un argomento."
+    "explanation": "'Avere a che fare con' significa essere coinvolti in una situazione, trattare con una persona o occuparsi di un argomento.",
+    "correct_key": "D",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_274",
@@ -1440,7 +1770,10 @@
     },
     "answer": "C",
     "difficulty": 6,
-    "explanation": "Il congiuntivo imperfetto del verbo 'avere' per la prima persona singolare è 'io avessi'."
+    "explanation": "Il congiuntivo imperfetto del verbo 'avere' per la prima persona singolare è 'io avessi'.",
+    "correct_key": "C",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_227",
@@ -1453,7 +1786,10 @@
     },
     "answer": "B",
     "difficulty": 7,
-    "explanation": "La frase esprime un'ipotesi irreale nel passato. La struttura corretta è: periodo ipotetico dell'irrealtà (se + congiuntivo trapassato, condizionale passato)."
+    "explanation": "La frase esprime un'ipotesi irreale nel passato. La struttura corretta è: periodo ipotetico dell'irrealtà (se + congiuntivo trapassato, condizionale passato).",
+    "correct_key": "B",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_121",
@@ -1466,7 +1802,10 @@
     },
     "answer": "B",
     "difficulty": 5,
-    "explanation": "Il congiuntivo presente si usa dopo espressioni impersonali che indicano necessità o desiderio come 'è importante che'."
+    "explanation": "Il congiuntivo presente si usa dopo espressioni impersonali che indicano necessità o desiderio come 'è importante che'.",
+    "correct_key": "B",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_25",
@@ -1479,7 +1818,10 @@
     },
     "answer": "C",
     "difficulty": 5,
-    "explanation": "L'indicazione di tempo 'L'anno scorso' si riferisce a un'azione specifica e conclusa nel passato. Il passato prossimo ('siamo andati') è il tempo verbale più comunemente usato in italiano per descrivere azioni concluse nel passato recente o in un tempo definito."
+    "explanation": "L'indicazione di tempo 'L'anno scorso' si riferisce a un'azione specifica e conclusa nel passato. Il passato prossimo ('siamo andati') è il tempo verbale più comunemente usato in italiano per descrivere azioni concluse nel passato recente o in un tempo definito.",
+    "correct_key": "C",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_286",
@@ -1492,7 +1834,10 @@
     },
     "answer": "D",
     "difficulty": 7,
-    "explanation": "La congiunzione 'sebbene' (although, even though) introduce una proposizione concessiva e richiede l'uso del congiuntivo. In questo caso, si usa il congiuntivo imperfetto ('fossi') per esprimere una condizione ipotetica nel passato o una circostanza contrastante."
+    "explanation": "La congiunzione 'sebbene' (although, even though) introduce una proposizione concessiva e richiede l'uso del congiuntivo. In questo caso, si usa il congiuntivo imperfetto ('fossi') per esprimere una condizione ipotetica nel passato o una circostanza contrastante.",
+    "correct_key": "D",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_10",
@@ -1505,7 +1850,10 @@
     },
     "answer": "C",
     "difficulty": 5,
-    "explanation": "Venice (Venezia) is famous for its canals."
+    "explanation": "Venice (Venezia) is famous for its canals.",
+    "correct_key": "C",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_20",
@@ -1518,7 +1866,10 @@
     },
     "answer": "C",
     "difficulty": 5,
-    "explanation": "Pizza Margherita originated in Naples."
+    "explanation": "Pizza Margherita originated in Naples.",
+    "correct_key": "C",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_220",
@@ -1531,7 +1882,10 @@
     },
     "answer": "B",
     "difficulty": 6,
-    "explanation": "L'imperfetto si usa per descrivere azioni abituali o stati nel passato. 'Da bambino, giocavo' indica un'azione ripetuta nel tempo. 'Giocai' è passato remoto (azione puntuale), 'ho giocato' è passato prossimo (azione conclusa)."
+    "explanation": "L'imperfetto si usa per descrivere azioni abituali o stati nel passato. 'Da bambino, giocavo' indica un'azione ripetuta nel tempo. 'Giocai' è passato remoto (azione puntuale), 'ho giocato' è passato prossimo (azione conclusa).",
+    "correct_key": "B",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_30",
@@ -1544,7 +1898,10 @@
     },
     "answer": "B",
     "difficulty": 7,
-    "explanation": "La congiunzione 'anche se' può essere seguita dall'indicativo o dal congiuntivo. Quando si riferisce a una situazione ipotetica o a un'azione che contrasta con la principale, si usa il congiuntivo. Qui, 'fossi stanco' esprime una condizione che contrasta con l'uscita, quindi il congiuntivo imperfetto è appropriato."
+    "explanation": "La congiunzione 'anche se' può essere seguita dall'indicativo o dal congiuntivo. Quando si riferisce a una situazione ipotetica o a un'azione che contrasta con la principale, si usa il congiuntivo. Qui, 'fossi stanco' esprime una condizione che contrasta con l'uscita, quindi il congiuntivo imperfetto è appropriato.",
+    "correct_key": "B",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_278",
@@ -1557,7 +1914,10 @@
     },
     "answer": "A",
     "difficulty": 6,
-    "explanation": "Per indicare l'autore di un'opera, si usa la preposizione 'di' (es. 'un dipinto di Picasso')."
+    "explanation": "Per indicare l'autore di un'opera, si usa la preposizione 'di' (es. 'un dipinto di Picasso').",
+    "correct_key": "A",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_265",
@@ -1570,7 +1930,10 @@
     },
     "answer": "A",
     "difficulty": 6,
-    "explanation": "Il congiuntivo presente del verbo 'sapere' per la prima persona singolare è 'io sappia'."
+    "explanation": "Il congiuntivo presente del verbo 'sapere' per la prima persona singolare è 'io sappia'.",
+    "correct_key": "A",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_85",
@@ -1583,7 +1946,10 @@
     },
     "answer": "A",
     "difficulty": 5,
-    "explanation": "L'espressione 'avere bisogno di' regge la preposizione 'di'. 'Ho bisogno di aiuto'."
+    "explanation": "L'espressione 'avere bisogno di' regge la preposizione 'di'. 'Ho bisogno di aiuto'.",
+    "correct_key": "A",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_235",
@@ -1596,7 +1962,10 @@
     },
     "answer": "B",
     "difficulty": 5,
-    "explanation": "Il passato prossimo ('ho mangiato') è il tempo verbale più comune per descrivere azioni concluse nel passato recente, specialmente in conversazioni o testi informali."
+    "explanation": "Il passato prossimo ('ho mangiato') è il tempo verbale più comune per descrivere azioni concluse nel passato recente, specialmente in conversazioni o testi informali.",
+    "correct_key": "B",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_231",
@@ -1609,7 +1978,10 @@
     },
     "answer": "A",
     "difficulty": 6,
-    "explanation": "L'imperfetto ('veniva') è usato per descrivere azioni abituali o ripetute nel passato, come in questo caso."
+    "explanation": "L'imperfetto ('veniva') è usato per descrivere azioni abituali o ripetute nel passato, come in questo caso.",
+    "correct_key": "A",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_240",
@@ -1622,7 +1994,10 @@
     },
     "answer": "A",
     "difficulty": 6,
-    "explanation": "'Potresti' è la forma del condizionale presente del verbo 'potere', usata per fare richieste gentili o per esprimere una possibilità."
+    "explanation": "'Potresti' è la forma del condizionale presente del verbo 'potere', usata per fare richieste gentili o per esprimere una possibilità.",
+    "correct_key": "A",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_101",
@@ -1635,7 +2010,10 @@
     },
     "answer": "B",
     "difficulty": 7,
-    "explanation": "Il 25 aprile si celebra la Festa della Liberazione, che commemora la fine dell'occupazione nazifascista durante la Seconda Guerra Mondiale."
+    "explanation": "Il 25 aprile si celebra la Festa della Liberazione, che commemora la fine dell'occupazione nazifascista durante la Seconda Guerra Mondiale.",
+    "correct_key": "B",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_263",
@@ -1648,7 +2026,10 @@
     },
     "answer": "C",
     "difficulty": 7,
-    "explanation": "'Prendere in giro' è un'espressione idiomatica che significa scherzare, deridere o mettere in ridicolo qualcuno."
+    "explanation": "'Prendere in giro' è un'espressione idiomatica che significa scherzare, deridere o mettere in ridicolo qualcuno.",
+    "correct_key": "C",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_211",
@@ -1661,7 +2042,10 @@
     },
     "answer": "B",
     "difficulty": 5,
-    "explanation": "La frase esprime un obbligo o una necessità. Il verbo modale 'dovere' è appropriato in questo contesto: 'devi studiare'."
+    "explanation": "La frase esprime un obbligo o una necessità. Il verbo modale 'dovere' è appropriato in questo contesto: 'devi studiare'.",
+    "correct_key": "B",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_196",
@@ -1674,7 +2058,10 @@
     },
     "answer": "B",
     "difficulty": 6,
-    "explanation": "'Al dente' descrive la consistenza ideale della pasta cotta nella cucina italiana, ovvero soda ma non cruda."
+    "explanation": "'Al dente' descrive la consistenza ideale della pasta cotta nella cucina italiana, ovvero soda ma non cruda.",
+    "correct_key": "B",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_271",
@@ -1687,7 +2074,10 @@
     },
     "answer": "B",
     "difficulty": 6,
-    "explanation": "'Essere al verde' è un'espressione idiomatica che significa non avere più denaro."
+    "explanation": "'Essere al verde' è un'espressione idiomatica che significa non avere più denaro.",
+    "correct_key": "B",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_96",
@@ -1700,7 +2090,10 @@
     },
     "answer": "C",
     "difficulty": 7,
-    "explanation": "La frase esprime una concessione ('anche se sei stanco'). Le congiunzioni che introducono una proposizione concessiva, come 'sebbene', richiedono il congiuntivo."
+    "explanation": "La frase esprime una concessione ('anche se sei stanco'). Le congiunzioni che introducono una proposizione concessiva, come 'sebbene', richiedono il congiuntivo.",
+    "correct_key": "C",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_143",
@@ -1713,7 +2106,10 @@
     },
     "answer": "C",
     "difficulty": 5,
-    "explanation": "La preposizione 'in' si usa per indicare un luogo generico o una città. Es: 'Sono in Italia', 'Sono in ufficio'."
+    "explanation": "La preposizione 'in' si usa per indicare un luogo generico o una città. Es: 'Sono in Italia', 'Sono in ufficio'.",
+    "correct_key": "C",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_298",
@@ -1726,7 +2122,10 @@
     },
     "answer": "B",
     "difficulty": 5,
-    "explanation": "I verbi intransitivi che indicano cambiamento di stato, movimento o esistenza (come nascere, morire, arrivare, partire, venire, andare) generalmente richiedono l'ausiliare 'essere' nel passato prossimo."
+    "explanation": "I verbi intransitivi che indicano cambiamento di stato, movimento o esistenza (come nascere, morire, arrivare, partire, venire, andare) generalmente richiedono l'ausiliare 'essere' nel passato prossimo.",
+    "correct_key": "B",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_91",
@@ -1739,7 +2138,10 @@
     },
     "answer": "B",
     "difficulty": 6,
-    "explanation": "La Settimana Santa precede la Pasqua ed è un periodo di forte significato religioso in Italia, con molte città e paesi che organizzano processioni e riti tradizionali."
+    "explanation": "La Settimana Santa precede la Pasqua ed è un periodo di forte significato religioso in Italia, con molte città e paesi che organizzano processioni e riti tradizionali.",
+    "correct_key": "B",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_247",
@@ -1752,7 +2154,10 @@
     },
     "answer": "D",
     "difficulty": 6,
-    "explanation": "L'espressione significa interagire, occuparsi, avere a che fare, confrontarsi con una persona o una situazione."
+    "explanation": "L'espressione significa interagire, occuparsi, avere a che fare, confrontarsi con una persona o una situazione.",
+    "correct_key": "D",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_103",
@@ -1765,7 +2170,10 @@
     },
     "answer": "C",
     "difficulty": 8,
-    "explanation": "Il passato remoto è usato per narrare eventi storici conclusi e lontani nel tempo. La Divina Commedia è un'opera scritta nel XIV secolo, quindi il passato remoto ('scrisse') è appropriato."
+    "explanation": "Il passato remoto è usato per narrare eventi storici conclusi e lontani nel tempo. La Divina Commedia è un'opera scritta nel XIV secolo, quindi il passato remoto ('scrisse') è appropriato.",
+    "correct_key": "C",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_242",
@@ -1778,7 +2186,10 @@
     },
     "answer": "D",
     "difficulty": 5,
-    "explanation": "Per indicare un momento della giornata indeterminato o abituale, si usa l'articolo determinativo: 'la sera', 'il mattino', 'il pomeriggio'."
+    "explanation": "Per indicare un momento della giornata indeterminato o abituale, si usa l'articolo determinativo: 'la sera', 'il mattino', 'il pomeriggio'.",
+    "correct_key": "D",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_129",
@@ -1791,7 +2202,10 @@
     },
     "answer": "B",
     "difficulty": 7,
-    "explanation": "'Rompere il ghiaccio' significa superare l'imbarazzo iniziale e iniziare a interagire in modo più rilassato."
+    "explanation": "'Rompere il ghiaccio' significa superare l'imbarazzo iniziale e iniziare a interagire in modo più rilassato.",
+    "correct_key": "B",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_162",
@@ -1804,7 +2218,10 @@
     },
     "answer": "C",
     "difficulty": 7,
-    "explanation": "Il Palio di Siena è una storica corsa di cavalli che si tiene due volte all'anno nella Piazza del Campo di Siena."
+    "explanation": "Il Palio di Siena è una storica corsa di cavalli che si tiene due volte all'anno nella Piazza del Campo di Siena.",
+    "correct_key": "C",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_284",
@@ -1817,7 +2234,10 @@
     },
     "answer": "D",
     "difficulty": 5,
-    "explanation": "In italiano, si usa comunemente il verbo 'prendere' per ordinare o consumare bevande e cibi (es. 'prendere un caffè', 'prendere un panino'). Anche 'bere' è corretto, ma 'prendere' è più generico e colloquiale in questo contesto."
+    "explanation": "In italiano, si usa comunemente il verbo 'prendere' per ordinare o consumare bevande e cibi (es. 'prendere un caffè', 'prendere un panino'). Anche 'bere' è corretto, ma 'prendere' è più generico e colloquiale in questo contesto.",
+    "correct_key": "D",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_282",
@@ -1830,7 +2250,10 @@
     },
     "answer": "C",
     "difficulty": 6,
-    "explanation": "L'espressione 'non sono sicuro che' introduce un dubbio o un'incertezza, che richiede l'uso del congiuntivo presente ('arrivi')."
+    "explanation": "L'espressione 'non sono sicuro che' introduce un dubbio o un'incertezza, che richiede l'uso del congiuntivo presente ('arrivi').",
+    "correct_key": "C",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_216",
@@ -1843,7 +2266,10 @@
     },
     "answer": "D",
     "difficulty": 9,
-    "explanation": "La frase esprime un rimpianto o un desiderio irrealizzato nel passato. Si usa il congiuntivo trapassato ('fossi stato') nella proposizione subordinata e il condizionale passato nella principale."
+    "explanation": "La frase esprime un rimpianto o un desiderio irrealizzato nel passato. Si usa il congiuntivo trapassato ('fossi stato') nella proposizione subordinata e il condizionale passato nella principale.",
+    "correct_key": "D",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_289",
@@ -1856,7 +2282,10 @@
     },
     "answer": "A",
     "difficulty": 6,
-    "explanation": "L'avverbio di tempo 'ieri sera' indica un'azione puntuale nel passato. Il passato prossimo ('Ho visto') è la forma più comune e appropriata per descrivere un'azione del genere. Il passato remoto ('Vidi') è più letterario o formale, e l'imperfetto ('Vedevo') si usa per descrivere azioni abituali o in corso nel passato."
+    "explanation": "L'avverbio di tempo 'ieri sera' indica un'azione puntuale nel passato. Il passato prossimo ('Ho visto') è la forma più comune e appropriata per descrivere un'azione del genere. Il passato remoto ('Vidi') è più letterario o formale, e l'imperfetto ('Vedevo') si usa per descrivere azioni abituali o in corso nel passato.",
+    "correct_key": "A",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_79",
@@ -1869,7 +2298,10 @@
     },
     "answer": "C",
     "difficulty": 7,
-    "explanation": "'Prima di ieri' indica un momento precedente a un altro momento nel passato ('ieri'). Il trapassato prossimo ('avevo visto') è usato per esprimere un'azione anteriore a un'altra azione passata."
+    "explanation": "'Prima di ieri' indica un momento precedente a un altro momento nel passato ('ieri'). Il trapassato prossimo ('avevo visto') è usato per esprimere un'azione anteriore a un'altra azione passata.",
+    "correct_key": "C",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_107",
@@ -1882,7 +2314,10 @@
     },
     "answer": "C",
     "difficulty": 7,
-    "explanation": "Leonardo da Vinci è l'artista rinascimentale italiano universalmente riconosciuto come il creatore della Gioconda (Monna Lisa)."
+    "explanation": "Leonardo da Vinci è l'artista rinascimentale italiano universalmente riconosciuto come il creatore della Gioconda (Monna Lisa).",
+    "correct_key": "C",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_124",
@@ -1895,7 +2330,10 @@
     },
     "answer": "D",
     "difficulty": 7,
-    "explanation": "'Felice come una Pasqua' è un modo di dire idiomatico che significa essere estremamente felici."
+    "explanation": "'Felice come una Pasqua' è un modo di dire idiomatico che significa essere estremamente felici.",
+    "correct_key": "D",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_198",
@@ -1908,7 +2346,10 @@
     },
     "answer": "D",
     "difficulty": 5,
-    "explanation": "Espressioni impersonali come 'è necessario', 'è importante', 'è bene' reggono l'infinito quando il soggetto della principale e della subordinata coincidono o la subordinata è una forma implicita."
+    "explanation": "Espressioni impersonali come 'è necessario', 'è importante', 'è bene' reggono l'infinito quando il soggetto della principale e della subordinata coincidono o la subordinata è una forma implicita.",
+    "correct_key": "D",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_201",
@@ -1921,7 +2362,10 @@
     },
     "answer": "A",
     "difficulty": 6,
-    "explanation": "L'espressione 'non credo che' introduce un'opinione o un dubbio, che richiede l'uso del congiuntivo. Il verbo 'dire' alla terza persona singolare del congiuntivo presente è 'dica'."
+    "explanation": "L'espressione 'non credo che' introduce un'opinione o un dubbio, che richiede l'uso del congiuntivo. Il verbo 'dire' alla terza persona singolare del congiuntivo presente è 'dica'.",
+    "correct_key": "A",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_267",
@@ -1934,7 +2378,10 @@
     },
     "answer": "B",
     "difficulty": 7,
-    "explanation": "'Loquace' è un aggettivo che significa incline a parlare molto."
+    "explanation": "'Loquace' è un aggettivo che significa incline a parlare molto.",
+    "correct_key": "B",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_4",
@@ -1947,7 +2394,10 @@
     },
     "answer": "A",
     "difficulty": 6,
-    "explanation": "'Andare dal medico' uses 'da + il = dal' for going to a professional's place."
+    "explanation": "'Andare dal medico' uses 'da + il = dal' for going to a professional's place.",
+    "correct_key": "A",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_155",
@@ -1960,7 +2410,10 @@
     },
     "answer": "A",
     "difficulty": 6,
-    "explanation": "Il verbo 'parlare' regge generalmente la preposizione 'con' quando indica con chi si parla. Se si intende 'parlare a qualcuno di qualcosa', si usa 'a'."
+    "explanation": "Il verbo 'parlare' regge generalmente la preposizione 'con' quando indica con chi si parla. Se si intende 'parlare a qualcuno di qualcosa', si usa 'a'.",
+    "correct_key": "A",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_5",
@@ -1973,7 +2426,10 @@
     },
     "answer": "D",
     "difficulty": 6,
-    "explanation": "'Andare' uses 'essere'; participle agrees with feminine plural subject: 'andate.'"
+    "explanation": "'Andare' uses 'essere'; participle agrees with feminine plural subject: 'andate.'",
+    "correct_key": "D",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_248",
@@ -1986,7 +2442,10 @@
     },
     "answer": "B",
     "difficulty": 7,
-    "explanation": "La frase esprime un'ipotesi irreale nel passato. La struttura corretta è: periodo ipotetico dell'irrealtà (se + congiuntivo trapassato, condizionale passato). Il condizionale passato è 'avrei passato'."
+    "explanation": "La frase esprime un'ipotesi irreale nel passato. La struttura corretta è: periodo ipotetico dell'irrealtà (se + congiuntivo trapassato, condizionale passato). Il condizionale passato è 'avrei passato'.",
+    "correct_key": "B",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_36",
@@ -1999,7 +2458,10 @@
     },
     "answer": "D",
     "difficulty": 6,
-    "explanation": "Dopo espressioni impersonali di importanza, necessità, obbligo, ecc. come 'È importante', si usa la congiunzione 'che' seguita dal congiuntivo ('partecipino')."
+    "explanation": "Dopo espressioni impersonali di importanza, necessità, obbligo, ecc. come 'È importante', si usa la congiunzione 'che' seguita dal congiuntivo ('partecipino').",
+    "correct_key": "D",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_135",
@@ -2012,7 +2474,10 @@
     },
     "answer": "D",
     "difficulty": 5,
-    "explanation": "Leonardo da Vinci è stato un artista poliedrico del Rinascimento italiano e l'autore della Gioconda."
+    "explanation": "Leonardo da Vinci è stato un artista poliedrico del Rinascimento italiano e l'autore della Gioconda.",
+    "correct_key": "D",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_65",
@@ -2025,7 +2490,10 @@
     },
     "answer": "B",
     "difficulty": 7,
-    "explanation": "'Non vedere l'ora' è un'idioma che esprime grande impazienza ed entusiasmo per qualcosa che sta per accadere."
+    "explanation": "'Non vedere l'ora' è un'idioma che esprime grande impazienza ed entusiasmo per qualcosa che sta per accadere.",
+    "correct_key": "B",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_209",
@@ -2038,7 +2506,10 @@
     },
     "answer": "C",
     "difficulty": 6,
-    "explanation": "Quando il pronome relativo si riferisce a un luogo e funge da complemento di luogo (in cui, nel quale), si può usare 'dove'. 'La casa dove abitiamo'."
+    "explanation": "Quando il pronome relativo si riferisce a un luogo e funge da complemento di luogo (in cui, nel quale), si può usare 'dove'. 'La casa dove abitiamo'.",
+    "correct_key": "C",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_98",
@@ -2051,7 +2522,10 @@
     },
     "answer": "C",
     "difficulty": 6,
-    "explanation": "La preposizione 'da' si usa per indicare provenienza da un luogo geografico (città, nazioni, ecc.)."
+    "explanation": "La preposizione 'da' si usa per indicare provenienza da un luogo geografico (città, nazioni, ecc.).",
+    "correct_key": "C",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_241",
@@ -2064,7 +2538,10 @@
     },
     "answer": "C",
     "difficulty": 6,
-    "explanation": "Le espressioni impersonali come 'è necessario', 'è importante', 'è utile' reggono il congiuntivo. In questo caso, si usa il congiuntivo presente ('facciano') perché l'azione è contemporanea o futura rispetto al momento espresso dalla principale."
+    "explanation": "Le espressioni impersonali come 'è necessario', 'è importante', 'è utile' reggono il congiuntivo. In questo caso, si usa il congiuntivo presente ('facciano') perché l'azione è contemporanea o futura rispetto al momento espresso dalla principale.",
+    "correct_key": "C",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_31",
@@ -2077,7 +2554,10 @@
     },
     "answer": "D",
     "difficulty": 6,
-    "explanation": "L'espressione 'mi dispiace' è seguita dalla preposizione 'di' quando introduce un verbo all'infinito ('mi dispiace di non poter venire'). Tuttavia, quando introduce una frase con un sostantivo o un concetto, si usa 'per'. In questo caso, 'per' introduce l'idea astratta del non poter venire."
+    "explanation": "L'espressione 'mi dispiace' è seguita dalla preposizione 'di' quando introduce un verbo all'infinito ('mi dispiace di non poter venire'). Tuttavia, quando introduce una frase con un sostantivo o un concetto, si usa 'per'. In questo caso, 'per' introduce l'idea astratta del non poter venire.",
+    "correct_key": "D",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_293",
@@ -2090,7 +2570,10 @@
     },
     "answer": "D",
     "difficulty": 5,
-    "explanation": "La preposizione 'per' in questo contesto indica il destinatario di un'azione o di un oggetto (es. 'un regalo per te', 'comprato per te')."
+    "explanation": "La preposizione 'per' in questo contesto indica il destinatario di un'azione o di un oggetto (es. 'un regalo per te', 'comprato per te').",
+    "correct_key": "D",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_13",
@@ -2103,7 +2586,10 @@
     },
     "answer": "D",
     "difficulty": 7,
-    "explanation": "'Gran' is the truncated form of 'grande' used in exclamations."
+    "explanation": "'Gran' is the truncated form of 'grande' used in exclamations.",
+    "correct_key": "D",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_171",
@@ -2116,7 +2602,10 @@
     },
     "answer": "A",
     "difficulty": 5,
-    "explanation": "Le proposizioni finali, che esprimono lo scopo di un'azione, sono introdotte da congiunzioni come 'affinché', 'perché', 'acciocché' e richiedono il congiuntivo."
+    "explanation": "Le proposizioni finali, che esprimono lo scopo di un'azione, sono introdotte da congiunzioni come 'affinché', 'perché', 'acciocché' e richiedono il congiuntivo.",
+    "correct_key": "A",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_176",
@@ -2129,7 +2618,10 @@
     },
     "answer": "A",
     "difficulty": 7,
-    "explanation": "Questa è una frase ipotetica del secondo tipo (irrealtà nel passato). La condizione ('se avessi studiato') richiede la protasi al congiuntivo trapassato, e la conseguenza ('avrei capito') richiede il condizionale passato."
+    "explanation": "Questa è una frase ipotetica del secondo tipo (irrealtà nel passato). La condizione ('se avessi studiato') richiede la protasi al congiuntivo trapassato, e la conseguenza ('avrei capito') richiede il condizionale passato.",
+    "correct_key": "A",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_144",
@@ -2142,7 +2634,10 @@
     },
     "answer": "A",
     "difficulty": 7,
-    "explanation": "'Fare la bella vita' significa godersi una vita piacevole, confortevole e spesso dispendiosa."
+    "explanation": "'Fare la bella vita' significa godersi una vita piacevole, confortevole e spesso dispendiosa.",
+    "correct_key": "A",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_119",
@@ -2155,7 +2650,10 @@
     },
     "answer": "B",
     "difficulty": 7,
-    "explanation": "Antonio Vivaldi è il compositore barocco italiano autore del celebre ciclo di concerti per violino 'Le Quattro Stagioni'."
+    "explanation": "Antonio Vivaldi è il compositore barocco italiano autore del celebre ciclo di concerti per violino 'Le Quattro Stagioni'.",
+    "correct_key": "B",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_194",
@@ -2168,7 +2666,10 @@
     },
     "answer": "B",
     "difficulty": 6,
-    "explanation": "Il congiuntivo imperfetto del verbo 'potere' per la prima persona plurale (noi) è 'potessimo'."
+    "explanation": "Il congiuntivo imperfetto del verbo 'potere' per la prima persona plurale (noi) è 'potessimo'.",
+    "correct_key": "B",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_249",
@@ -2181,7 +2682,10 @@
     },
     "answer": "C",
     "difficulty": 5,
-    "explanation": "'Quindi' (o 'perciò', 'dunque') è una congiunzione che introduce una proposizione consecutiva, indicando la conseguenza di quanto espresso nella principale."
+    "explanation": "'Quindi' (o 'perciò', 'dunque') è una congiunzione che introduce una proposizione consecutiva, indicando la conseguenza di quanto espresso nella principale.",
+    "correct_key": "C",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_89",
@@ -2194,7 +2698,10 @@
     },
     "answer": "B",
     "difficulty": 6,
-    "explanation": "L'espressione viene usata per superare un primo momento di imbarazzo o silenzio in un gruppo di persone o in una conversazione."
+    "explanation": "L'espressione viene usata per superare un primo momento di imbarazzo o silenzio in un gruppo di persone o in una conversazione.",
+    "correct_key": "B",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_147",
@@ -2207,7 +2714,10 @@
     },
     "answer": "A",
     "difficulty": 6,
-    "explanation": "L'espressione 'è importante che' richiede il congiuntivo. 'Dicano' è la terza persona plurale del congiuntivo presente del verbo 'dire'."
+    "explanation": "L'espressione 'è importante che' richiede il congiuntivo. 'Dicano' è la terza persona plurale del congiuntivo presente del verbo 'dire'.",
+    "correct_key": "A",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_206",
@@ -2220,7 +2730,10 @@
     },
     "answer": "D",
     "difficulty": 5,
-    "explanation": "'Allegro' è un sinonimo di 'felice', entrambi indicano uno stato d'animo positivo e gioioso."
+    "explanation": "'Allegro' è un sinonimo di 'felice', entrambi indicano uno stato d'animo positivo e gioioso.",
+    "correct_key": "D",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_7",
@@ -2233,7 +2746,10 @@
     },
     "answer": "D",
     "difficulty": 6,
-    "explanation": "'Che' is the relative pronoun for subject and direct object."
+    "explanation": "'Che' is the relative pronoun for subject and direct object.",
+    "correct_key": "D",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_105",
@@ -2246,7 +2762,10 @@
     },
     "answer": "B",
     "difficulty": 6,
-    "explanation": "'Soggiorno' si riferisce comunemente alla stanza in cui si vive e si accolgono ospiti, solitamente il salotto o la sala da pranzo."
+    "explanation": "'Soggiorno' si riferisce comunemente alla stanza in cui si vive e si accolgono ospiti, solitamente il salotto o la sala da pranzo.",
+    "correct_key": "B",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_170",
@@ -2259,7 +2778,10 @@
     },
     "answer": "A",
     "difficulty": 8,
-    "explanation": "L'espressione 'Mi chiedo se' introduce un dubbio e richiede il congiuntivo. Poiché si ipotizza un'azione passata, si usa il congiuntivo passato. 'Sia arrivato' è la terza persona singolare del congiuntivo passato di 'arrivare'."
+    "explanation": "L'espressione 'Mi chiedo se' introduce un dubbio e richiede il congiuntivo. Poiché si ipotizza un'azione passata, si usa il congiuntivo passato. 'Sia arrivato' è la terza persona singolare del congiuntivo passato di 'arrivare'.",
+    "correct_key": "A",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_269",
@@ -2272,7 +2794,10 @@
     },
     "answer": "C",
     "difficulty": 8,
-    "explanation": "Mentre spesso sono intercambiabili, 'tanto' può essere usato come pronome indefinito ('Ne ho mangiati tanti'), cosa che 'molto' non può fare in quel contesto. Entrambi possono modificare aggettivi e avverbi."
+    "explanation": "Mentre spesso sono intercambiabili, 'tanto' può essere usato come pronome indefinito ('Ne ho mangiati tanti'), cosa che 'molto' non può fare in quel contesto. Entrambi possono modificare aggettivi e avverbi.",
+    "correct_key": "C",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_95",
@@ -2285,7 +2810,10 @@
     },
     "answer": "A",
     "difficulty": 5,
-    "explanation": "In Italia, chiedere semplicemente 'un caffè' al bar si intende per un espresso. Le altre opzioni sono bevande a base di caffè diverse."
+    "explanation": "In Italia, chiedere semplicemente 'un caffè' al bar si intende per un espresso. Le altre opzioni sono bevande a base di caffè diverse.",
+    "correct_key": "A",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_288",
@@ -2298,7 +2826,10 @@
     },
     "answer": "B",
     "difficulty": 5,
-    "explanation": "Il sostantivo 'traffico' è maschile e singolare. La frase esprime una preferenza generale, quindi richiede l'articolo determinativo 'il' prima del sostantivo."
+    "explanation": "Il sostantivo 'traffico' è maschile e singolare. La frase esprime una preferenza generale, quindi richiede l'articolo determinativo 'il' prima del sostantivo.",
+    "correct_key": "B",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_22",
@@ -2311,7 +2842,10 @@
     },
     "answer": "C",
     "difficulty": 6,
-    "explanation": "Dopo espressioni di dubbio o incertezza come 'Non credo che', si usa il congiuntivo. In questo caso, l'azione è passata o si riferisce a un'azione completata nel passato, quindi si usa il congiuntivo passato: 'sia arrivato'."
+    "explanation": "Dopo espressioni di dubbio o incertezza come 'Non credo che', si usa il congiuntivo. In questo caso, l'azione è passata o si riferisce a un'azione completata nel passato, quindi si usa il congiuntivo passato: 'sia arrivato'.",
+    "correct_key": "C",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_48",
@@ -2324,7 +2858,10 @@
     },
     "answer": "C",
     "difficulty": 5,
-    "explanation": "La preposizione 'da' si usa per indicare provenienza, origine (es. Vengo da Roma)."
+    "explanation": "La preposizione 'da' si usa per indicare provenienza, origine (es. Vengo da Roma).",
+    "correct_key": "C",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_200",
@@ -2337,7 +2874,10 @@
     },
     "answer": "D",
     "difficulty": 7,
-    "explanation": "Il congiuntivo passato si forma con l'ausiliare ('avere' o 'essere') al congiuntivo imperfetto e il participio passato del verbo. Per 'tu' e 'essere', è 'tu fossi stato'."
+    "explanation": "Il congiuntivo passato si forma con l'ausiliare ('avere' o 'essere') al congiuntivo imperfetto e il participio passato del verbo. Per 'tu' e 'essere', è 'tu fossi stato'.",
+    "correct_key": "D",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_47",
@@ -2350,7 +2890,10 @@
     },
     "answer": "D",
     "difficulty": 6,
-    "explanation": "Dopo 'spero che', che esprime un desiderio, si usa il congiuntivo. Il congiuntivo presente del verbo 'andare' per la seconda persona singolare è 'vada'."
+    "explanation": "Dopo 'spero che', che esprime un desiderio, si usa il congiuntivo. Il congiuntivo presente del verbo 'andare' per la seconda persona singolare è 'vada'.",
+    "correct_key": "D",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_57",
@@ -2363,7 +2906,10 @@
     },
     "answer": "C",
     "difficulty": 5,
-    "explanation": "'Stanco' è l'aggettivo che significa 'tired' in italiano."
+    "explanation": "'Stanco' è l'aggettivo che significa 'tired' in italiano.",
+    "correct_key": "C",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_75",
@@ -2376,7 +2922,10 @@
     },
     "answer": "A",
     "difficulty": 6,
-    "explanation": "'Mi dispiace che' esprime un sentimento. Dopo espressioni di sentimento, si usa il congiuntivo. La forma corretta del congiuntivo passato per 'tu' (in riferimento a 'poter partecipare') è 'abbia potuto'."
+    "explanation": "'Mi dispiace che' esprime un sentimento. Dopo espressioni di sentimento, si usa il congiuntivo. La forma corretta del congiuntivo passato per 'tu' (in riferimento a 'poter partecipare') è 'abbia potuto'.",
+    "correct_key": "A",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_253",
@@ -2389,7 +2938,10 @@
     },
     "answer": "B",
     "difficulty": 7,
-    "explanation": "'Sgabuzzino' si riferisce a un locale molto piccolo, spesso usato come ripostiglio."
+    "explanation": "'Sgabuzzino' si riferisce a un locale molto piccolo, spesso usato come ripostiglio.",
+    "correct_key": "B",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_146",
@@ -2402,7 +2954,10 @@
     },
     "answer": "A",
     "difficulty": 6,
-    "explanation": "Il verbo 'sperare che' regge il congiuntivo. 'Guarisca' è la terza persona singolare del congiuntivo presente del verbo 'guarire'."
+    "explanation": "Il verbo 'sperare che' regge il congiuntivo. 'Guarisca' è la terza persona singolare del congiuntivo presente del verbo 'guarire'.",
+    "correct_key": "A",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_106",
@@ -2415,7 +2970,10 @@
     },
     "answer": "B",
     "difficulty": 5,
-    "explanation": "'Che ne pensi?' è una domanda diretta utilizzata per sollecitare l'opinione di qualcuno."
+    "explanation": "'Che ne pensi?' è una domanda diretta utilizzata per sollecitare l'opinione di qualcuno.",
+    "correct_key": "B",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_185",
@@ -2428,7 +2986,10 @@
     },
     "answer": "C",
     "difficulty": 6,
-    "explanation": "I concerti per violino di Vivaldi, inclusi quelli per le quattro stagioni, sono tra le sue composizioni più famose."
+    "explanation": "I concerti per violino di Vivaldi, inclusi quelli per le quattro stagioni, sono tra le sue composizioni più famose.",
+    "correct_key": "C",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_90",
@@ -2441,7 +3002,10 @@
     },
     "answer": "C",
     "difficulty": 5,
-    "explanation": "Il Carnevale di Venezia è uno dei più famosi e antichi al mondo, noto per le sue maschere elaborate e l'atmosfera magica."
+    "explanation": "Il Carnevale di Venezia è uno dei più famosi e antichi al mondo, noto per le sue maschere elaborate e l'atmosfera magica.",
+    "correct_key": "C",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_134",
@@ -2454,7 +3018,10 @@
     },
     "answer": "B",
     "difficulty": 7,
-    "explanation": "'Essere al verde' è un'espressione popolare che significa non avere più denaro."
+    "explanation": "'Essere al verde' è un'espressione popolare che significa non avere più denaro.",
+    "correct_key": "B",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_19",
@@ -2467,7 +3034,10 @@
     },
     "answer": "A",
     "difficulty": 6,
-    "explanation": "'Vestirsi' is reflexive, using 'essere': 'mi sono vestito.'"
+    "explanation": "'Vestirsi' is reflexive, using 'essere': 'mi sono vestito.'",
+    "correct_key": "A",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_28",
@@ -2480,7 +3050,10 @@
     },
     "answer": "C",
     "difficulty": 6,
-    "explanation": "Dopo espressioni di incertezza ('Non sono sicuro') seguite da una domanda indiretta su una persona, si usa il pronome interrogativo 'chi'."
+    "explanation": "Dopo espressioni di incertezza ('Non sono sicuro') seguite da una domanda indiretta su una persona, si usa il pronome interrogativo 'chi'.",
+    "correct_key": "C",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_93",
@@ -2493,7 +3066,10 @@
     },
     "answer": "C",
     "difficulty": 5,
-    "explanation": "Il 1° novembre si celebra il Giorno dei Santi (Ognissanti), e il 2 novembre è il Giorno dei Morti (Giorno dei Defunti), entrambi dedicati alla commemorazione dei defunti."
+    "explanation": "Il 1° novembre si celebra il Giorno dei Santi (Ognissanti), e il 2 novembre è il Giorno dei Morti (Giorno dei Defunti), entrambi dedicati alla commemorazione dei defunti.",
+    "correct_key": "C",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_256",
@@ -2506,7 +3082,10 @@
     },
     "answer": "B",
     "difficulty": 6,
-    "explanation": "Le frasi ipotetiche di secondo tipo (irrealtà nel passato) richiedono il congiuntivo imperfetto. 'Se io avessi'."
+    "explanation": "Le frasi ipotetiche di secondo tipo (irrealtà nel passato) richiedono il congiuntivo imperfetto. 'Se io avessi'.",
+    "correct_key": "B",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_74",
@@ -2519,7 +3098,10 @@
     },
     "answer": "C",
     "difficulty": 7,
-    "explanation": "'Nonostante' introduce una proposizione concessiva. Quando il soggetto della proposizione concessiva è lo stesso della principale, si può usare l'infinito. Altrimenti, si usa il congiuntivo. Qui il soggetto è 'io' (implicito), quindi 'fossi' è corretto."
+    "explanation": "'Nonostante' introduce una proposizione concessiva. Quando il soggetto della proposizione concessiva è lo stesso della principale, si può usare l'infinito. Altrimenti, si usa il congiuntivo. Qui il soggetto è 'io' (implicito), quindi 'fossi' è corretto.",
+    "correct_key": "C",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_18",
@@ -2532,7 +3114,10 @@
     },
     "answer": "B",
     "difficulty": 6,
-    "explanation": "To make a good impression—a central concept in Italian culture."
+    "explanation": "To make a good impression—a central concept in Italian culture.",
+    "correct_key": "B",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_222",
@@ -2545,7 +3130,10 @@
     },
     "answer": "B",
     "difficulty": 8,
-    "explanation": "'Tirare le cuoia' è un'espressione colloquiale e un po' cruda per dire 'morire'."
+    "explanation": "'Tirare le cuoia' è un'espressione colloquiale e un po' cruda per dire 'morire'.",
+    "correct_key": "B",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_175",
@@ -2558,7 +3146,10 @@
     },
     "answer": "B",
     "difficulty": 5,
-    "explanation": "Il passato prossimo si forma con l'ausiliare ('avere' o 'essere') al presente e il participio passato del verbo. Per 'noi' e 'fare', è 'abbiamo fatto'."
+    "explanation": "Il passato prossimo si forma con l'ausiliare ('avere' o 'essere') al presente e il participio passato del verbo. Per 'noi' e 'fare', è 'abbiamo fatto'.",
+    "correct_key": "B",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_238",
@@ -2571,7 +3162,10 @@
     },
     "answer": "D",
     "difficulty": 5,
-    "explanation": "Generalmente si usa 'in' per indicare il mezzo di trasporto: 'andare in treno', 'viaggiare in aereo'."
+    "explanation": "Generalmente si usa 'in' per indicare il mezzo di trasporto: 'andare in treno', 'viaggiare in aereo'.",
+    "correct_key": "D",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_38",
@@ -2584,7 +3178,10 @@
     },
     "answer": "A",
     "difficulty": 6,
-    "explanation": "'Spero che...' introduce un desiderio e richiede il congiuntivo. Il congiuntivo presente di 'stare' per la seconda persona singolare è 'stia'."
+    "explanation": "'Spero che...' introduce un desiderio e richiede il congiuntivo. Il congiuntivo presente di 'stare' per la seconda persona singolare è 'stia'.",
+    "correct_key": "A",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_191",
@@ -2597,7 +3194,10 @@
     },
     "answer": "B",
     "difficulty": 7,
-    "explanation": "'Nonostante' seguito da un verbo all'infinito è possibile, ma se si vuole esplicitare il soggetto e si usa il congiuntivo, si usa il congiuntivo presente ('sia') che si riferisce a un'azione contemporanea."
+    "explanation": "'Nonostante' seguito da un verbo all'infinito è possibile, ma se si vuole esplicitare il soggetto e si usa il congiuntivo, si usa il congiuntivo presente ('sia') che si riferisce a un'azione contemporanea.",
+    "correct_key": "B",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_179",
@@ -2610,7 +3210,10 @@
     },
     "answer": "B",
     "difficulty": 5,
-    "explanation": "Federico Fellini è il regista del celebre film 'La Dolce Vita' (1960), un'icona del cinema italiano."
+    "explanation": "Federico Fellini è il regista del celebre film 'La Dolce Vita' (1960), un'icona del cinema italiano.",
+    "correct_key": "B",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_73",
@@ -2623,7 +3226,10 @@
     },
     "answer": "A",
     "difficulty": 6,
-    "explanation": "Il verbo 'vorrei' esprime un desiderio. Dopo verbi di desiderio, si usa il congiuntivo imperfetto nella frase dipendente. La forma corretta per 'tu' è 'venissi'."
+    "explanation": "Il verbo 'vorrei' esprime un desiderio. Dopo verbi di desiderio, si usa il congiuntivo imperfetto nella frase dipendente. La forma corretta per 'tu' è 'venissi'.",
+    "correct_key": "A",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_112",
@@ -2636,7 +3242,10 @@
     },
     "answer": "D",
     "difficulty": 8,
-    "explanation": "L'espressione 'fare le cose con i piedi' indica che si sta agendo in maniera caotica, poco attenta e inefficiente."
+    "explanation": "L'espressione 'fare le cose con i piedi' indica che si sta agendo in maniera caotica, poco attenta e inefficiente.",
+    "correct_key": "D",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_250",
@@ -2649,7 +3258,10 @@
     },
     "answer": "C",
     "difficulty": 5,
-    "explanation": "Il congiuntivo presente per la terza persona singolare dei verbi in -are si forma aggiungendo '-i' alla radice. 'Mangiare' diventa 'lui mangi'."
+    "explanation": "Il congiuntivo presente per la terza persona singolare dei verbi in -are si forma aggiungendo '-i' alla radice. 'Mangiare' diventa 'lui mangi'.",
+    "correct_key": "C",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_208",
@@ -2662,7 +3274,10 @@
     },
     "answer": "C",
     "difficulty": 6,
-    "explanation": "La pizza Margherita è un piatto iconico della cucina napoletana, quindi associato alla regione Campania."
+    "explanation": "La pizza Margherita è un piatto iconico della cucina napoletana, quindi associato alla regione Campania.",
+    "correct_key": "C",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_116",
@@ -2675,7 +3290,10 @@
     },
     "answer": "B",
     "difficulty": 6,
-    "explanation": "Per indicare un giorno specifico della settimana nel futuro, si usa la preposizione 'a' (a lunedì, a martedì)."
+    "explanation": "Per indicare un giorno specifico della settimana nel futuro, si usa la preposizione 'a' (a lunedì, a martedì).",
+    "correct_key": "B",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_132",
@@ -2688,7 +3306,10 @@
     },
     "answer": "A",
     "difficulty": 7,
-    "explanation": "Il passato remoto si usa per azioni concluse in un tempo lontano e definito. 'Scoprì' è la terza persona singolare del passato remoto di scoprire."
+    "explanation": "Il passato remoto si usa per azioni concluse in un tempo lontano e definito. 'Scoprì' è la terza persona singolare del passato remoto di scoprire.",
+    "correct_key": "A",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_29",
@@ -2701,7 +3322,10 @@
     },
     "answer": "B",
     "difficulty": 7,
-    "explanation": "La preposizione 'di' è richiesta dal verbo 'parlare' quando si parla 'di' qualcosa. Pertanto, il pronome relativo corretto è 'di cui' (o 'della quale'/'delle quali')."
+    "explanation": "La preposizione 'di' è richiesta dal verbo 'parlare' quando si parla 'di' qualcosa. Pertanto, il pronome relativo corretto è 'di cui' (o 'della quale'/'delle quali').",
+    "correct_key": "B",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_294",
@@ -2714,7 +3338,10 @@
     },
     "answer": "C",
     "difficulty": 5,
-    "explanation": "Il congiuntivo imperfetto dei verbi regolari in '-are' termina in '-assi' (es. 'io parlassi')."
+    "explanation": "Il congiuntivo imperfetto dei verbi regolari in '-are' termina in '-assi' (es. 'io parlassi').",
+    "correct_key": "C",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_62",
@@ -2727,7 +3354,10 @@
     },
     "answer": "B",
     "difficulty": 6,
-    "explanation": "Dopo espressioni impersonali come 'è necessario che', si usa il congiuntivo. Il congiuntivo presente del verbo 'rispettare' per la terza persona plurale è 'rispettino'."
+    "explanation": "Dopo espressioni impersonali come 'è necessario che', si usa il congiuntivo. Il congiuntivo presente del verbo 'rispettare' per la terza persona plurale è 'rispettino'.",
+    "correct_key": "B",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_68",
@@ -2740,7 +3370,10 @@
     },
     "answer": "B",
     "difficulty": 5,
-    "explanation": "I verbi di movimento come 'andare' usano l'ausiliare 'essere' nel passato prossimo. 'Io sono andato/a'."
+    "explanation": "I verbi di movimento come 'andare' usano l'ausiliare 'essere' nel passato prossimo. 'Io sono andato/a'.",
+    "correct_key": "B",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_60",
@@ -2753,7 +3386,10 @@
     },
     "answer": "D",
     "difficulty": 7,
-    "explanation": "Questa è una frase ipotetica irreale nel presente o futuro. Si usa il congiuntivo imperfetto: 'Se avessi'."
+    "explanation": "Questa è una frase ipotetica irreale nel presente o futuro. Si usa il congiuntivo imperfetto: 'Se avessi'.",
+    "correct_key": "D",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_190",
@@ -2766,7 +3402,10 @@
     },
     "answer": "B",
     "difficulty": 5,
-    "explanation": "La preposizione 'per' si usa per indicare il destinatario di un oggetto o di un'azione."
+    "explanation": "La preposizione 'per' si usa per indicare il destinatario di un oggetto o di un'azione.",
+    "correct_key": "B",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_260",
@@ -2779,7 +3418,10 @@
     },
     "answer": "A",
     "difficulty": 6,
-    "explanation": "Dopo 'nonostante' si usa l'infinito se il soggetto è lo stesso della frase principale ('Nonostante io fossi stanco...' diventa 'Nonostante essere stanco...')."
+    "explanation": "Dopo 'nonostante' si usa l'infinito se il soggetto è lo stesso della frase principale ('Nonostante io fossi stanco...' diventa 'Nonostante essere stanco...').",
+    "correct_key": "A",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_266",
@@ -2792,7 +3434,10 @@
     },
     "answer": "D",
     "difficulty": 5,
-    "explanation": "La preposizione 'di' si usa comunemente per esprimere possesso con il verbo essere ('Questo libro è di Maria')."
+    "explanation": "La preposizione 'di' si usa comunemente per esprimere possesso con il verbo essere ('Questo libro è di Maria').",
+    "correct_key": "D",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_160",
@@ -2805,7 +3450,10 @@
     },
     "answer": "A",
     "difficulty": 8,
-    "explanation": "La struttura 'Se + congiuntivo imperfetto, condizionale presente' è tipica del periodo ipotetico della possibilità (o irrealtà nel presente). 'Avessi' è il congiuntivo imperfetto di 'avere'."
+    "explanation": "La struttura 'Se + congiuntivo imperfetto, condizionale presente' è tipica del periodo ipotetico della possibilità (o irrealtà nel presente). 'Avessi' è il congiuntivo imperfetto di 'avere'.",
+    "correct_key": "A",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_128",
@@ -2818,7 +3466,10 @@
     },
     "answer": "A",
     "difficulty": 5,
-    "explanation": "La preposizione 'da' viene usata per indicare l'origine o la provenienza. Es: 'Vengo da Roma'."
+    "explanation": "La preposizione 'da' viene usata per indicare l'origine o la provenienza. Es: 'Vengo da Roma'.",
+    "correct_key": "A",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_110",
@@ -2831,7 +3482,10 @@
     },
     "answer": "C",
     "difficulty": 6,
-    "explanation": "Per indicare il mezzo di trasporto, si usa generalmente la preposizione 'in' (in treno, in macchina, in aereo)."
+    "explanation": "Per indicare il mezzo di trasporto, si usa generalmente la preposizione 'in' (in treno, in macchina, in aereo).",
+    "correct_key": "C",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_87",
@@ -2844,7 +3498,10 @@
     },
     "answer": "B",
     "difficulty": 7,
-    "explanation": "In italiano colloquiale, 'che pizza!' è un'espressione usata per indicare che qualcosa è noioso, irritante o una seccatura."
+    "explanation": "In italiano colloquiale, 'che pizza!' è un'espressione usata per indicare che qualcosa è noioso, irritante o una seccatura.",
+    "correct_key": "B",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_218",
@@ -2857,7 +3514,10 @@
     },
     "answer": "C",
     "difficulty": 7,
-    "explanation": "'Essere al verde' è un'espressione idiomatica che significa essere senza soldi, aver finito i propri risparmi."
+    "explanation": "'Essere al verde' è un'espressione idiomatica che significa essere senza soldi, aver finito i propri risparmi.",
+    "correct_key": "C",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_40",
@@ -2870,7 +3530,10 @@
     },
     "answer": "D",
     "difficulty": 5,
-    "explanation": "'Mi sembra' seguito da un infinito è una struttura comune per esprimere un'opinione o un'impressione. 'Essere' è l'infinito del verbo essere."
+    "explanation": "'Mi sembra' seguito da un infinito è una struttura comune per esprimere un'opinione o un'impressione. 'Essere' è l'infinito del verbo essere.",
+    "correct_key": "D",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_161",
@@ -2883,7 +3546,10 @@
     },
     "answer": "C",
     "difficulty": 6,
-    "explanation": "La Carbonara è un piatto iconico della tradizione culinaria romana, a base di uova, guanciale, pecorino romano e pepe."
+    "explanation": "La Carbonara è un piatto iconico della tradizione culinaria romana, a base di uova, guanciale, pecorino romano e pepe.",
+    "correct_key": "C",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_192",
@@ -2896,7 +3562,10 @@
     },
     "answer": "C",
     "difficulty": 6,
-    "explanation": "Il Passato Remoto del verbo 'venire' per la prima persona singolare (io) è 'venni'."
+    "explanation": "Il Passato Remoto del verbo 'venire' per la prima persona singolare (io) è 'venni'.",
+    "correct_key": "C",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_34",
@@ -2909,7 +3578,10 @@
     },
     "answer": "A",
     "difficulty": 5,
-    "explanation": "La frase introduce un discorso indiretto, riportando ciò che qualcuno ha detto. La congiunzione 'che' introduce la proposizione subordinata dichiarativa."
+    "explanation": "La frase introduce un discorso indiretto, riportando ciò che qualcuno ha detto. La congiunzione 'che' introduce la proposizione subordinata dichiarativa.",
+    "correct_key": "A",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_51",
@@ -2922,7 +3594,10 @@
     },
     "answer": "B",
     "difficulty": 5,
-    "explanation": "'Caro' è l'aggettivo che significa 'expensive' in italiano."
+    "explanation": "'Caro' è l'aggettivo che significa 'expensive' in italiano.",
+    "correct_key": "B",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_126",
@@ -2935,7 +3610,10 @@
     },
     "answer": "A",
     "difficulty": 7,
-    "explanation": "Nelle frasi ipotetiche del secondo tipo (irrealtà nel presente), si usa il congiuntivo imperfetto nella protasi (la frase introdotta da 'se')."
+    "explanation": "Nelle frasi ipotetiche del secondo tipo (irrealtà nel presente), si usa il congiuntivo imperfetto nella protasi (la frase introdotta da 'se').",
+    "correct_key": "A",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_193",
@@ -2948,7 +3626,10 @@
     },
     "answer": "A",
     "difficulty": 5,
-    "explanation": "'Città' è un nome femminile singolare che termina in '-à'. Questi nomi sono invariabili al plurale, quindi il plurale è uguale al singolare ('le città')."
+    "explanation": "'Città' è un nome femminile singolare che termina in '-à'. Questi nomi sono invariabili al plurale, quindi il plurale è uguale al singolare ('le città').",
+    "correct_key": "A",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_213",
@@ -2961,7 +3642,10 @@
     },
     "answer": "D",
     "difficulty": 6,
-    "explanation": "Per indicare un'azione che si ripete abitualmente in un certo giorno della settimana, si usa l'articolo determinativo (il, lunedì, il martedì, ecc.). 'Il lunedì vado in palestra'."
+    "explanation": "Per indicare un'azione che si ripete abitualmente in un certo giorno della settimana, si usa l'articolo determinativo (il, lunedì, il martedì, ecc.). 'Il lunedì vado in palestra'.",
+    "correct_key": "D",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_169",
@@ -2974,7 +3658,10 @@
     },
     "answer": "D",
     "difficulty": 9,
-    "explanation": "Questo è un periodo ipotetico dell'irrealtà nel passato. La protasi richiede il congiuntivo imperfetto ('fossi'), mentre l'apodosi richiede il condizionale passato ('avresti ottenuto')."
+    "explanation": "Questo è un periodo ipotetico dell'irrealtà nel passato. La protasi richiede il congiuntivo imperfetto ('fossi'), mentre l'apodosi richiede il condizionale passato ('avresti ottenuto').",
+    "correct_key": "D",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_80",
@@ -2987,7 +3674,10 @@
     },
     "answer": "C",
     "difficulty": 7,
-    "explanation": "La congiunzione 'dopo che' introduce una proposizione temporale. Quando l'azione della temporale è anteriore a quella della principale nel passato, si usa il trapassato prossimo. 'Uscimmo' è passato remoto (o passato prossimo in alcuni contesti), quindi 'avevamo mangiato' è l'azione anteriore."
+    "explanation": "La congiunzione 'dopo che' introduce una proposizione temporale. Quando l'azione della temporale è anteriore a quella della principale nel passato, si usa il trapassato prossimo. 'Uscimmo' è passato remoto (o passato prossimo in alcuni contesti), quindi 'avevamo mangiato' è l'azione anteriore.",
+    "correct_key": "C",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_276",
@@ -3000,7 +3690,10 @@
     },
     "answer": "D",
     "difficulty": 5,
-    "explanation": "Il verbo 'sperare' esprime un'emozione e richiede l'uso del congiuntivo presente ('arrivi') nella proposizione subordinata. La risposta B è identica alla A, ma solitamente si presenta una sola opzione corretta nei test. Assumiamo che una delle due sia un errore di battitura e che la risposta corretta sia 'arrivi'."
+    "explanation": "Il verbo 'sperare' esprime un'emozione e richiede l'uso del congiuntivo presente ('arrivi') nella proposizione subordinata. La risposta B è identica alla A, ma solitamente si presenta una sola opzione corretta nei test. Assumiamo che una delle due sia un errore di battitura e che la risposta corretta sia 'arrivi'.",
+    "correct_key": "D",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_70",
@@ -3013,7 +3706,10 @@
     },
     "answer": "B",
     "difficulty": 5,
-    "explanation": "'Presto' è l'avverbio che significa 'early' in italiano."
+    "explanation": "'Presto' è l'avverbio che significa 'early' in italiano.",
+    "correct_key": "B",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_287",
@@ -3026,7 +3722,10 @@
     },
     "answer": "D",
     "difficulty": 5,
-    "explanation": "La preposizione 'in' è comunemente usata per indicare uno stato in luogo o un moto a luogo generico (es. 'abito in Italia', 'vado in città')."
+    "explanation": "La preposizione 'in' è comunemente usata per indicare uno stato in luogo o un moto a luogo generico (es. 'abito in Italia', 'vado in città').",
+    "correct_key": "D",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_139",
@@ -3039,7 +3738,10 @@
     },
     "answer": "A",
     "difficulty": 6,
-    "explanation": "'In bocca al lupo' è un'espressione usata per augurare buona fortuna, a cui si risponde 'crepi il lupo'."
+    "explanation": "'In bocca al lupo' è un'espressione usata per augurare buona fortuna, a cui si risponde 'crepi il lupo'.",
+    "correct_key": "A",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_178",
@@ -3052,7 +3754,10 @@
     },
     "answer": "A",
     "difficulty": 5,
-    "explanation": "Dopo verbi come 'credere', 'pensare', 'supporre' seguiti da un complemento oggetto introdotto da 'che', si usa il congiuntivo. 'Non credo che...' regge il congiuntivo."
+    "explanation": "Dopo verbi come 'credere', 'pensare', 'supporre' seguiti da un complemento oggetto introdotto da 'che', si usa il congiuntivo. 'Non credo che...' regge il congiuntivo.",
+    "correct_key": "A",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_280",
@@ -3065,7 +3770,10 @@
     },
     "answer": "B",
     "difficulty": 6,
-    "explanation": "L'avverbio di tempo 'ieri sera' indica un'azione conclusa nel passato. Il verbo 'andare' è un verbo di movimento che richiede l'ausiliare 'essere' al passato prossimo. Dato che il soggetto è 'noi' (plurale maschile o misto), la forma corretta è 'siamo andati'."
+    "explanation": "L'avverbio di tempo 'ieri sera' indica un'azione conclusa nel passato. Il verbo 'andare' è un verbo di movimento che richiede l'ausiliare 'essere' al passato prossimo. Dato che il soggetto è 'noi' (plurale maschile o misto), la forma corretta è 'siamo andati'.",
+    "correct_key": "B",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_8",
@@ -3078,7 +3786,10 @@
     },
     "answer": "C",
     "difficulty": 5,
-    "explanation": "She plans to go to the sea if the weather is nice."
+    "explanation": "She plans to go to the sea if the weather is nice.",
+    "correct_key": "C",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_228",
@@ -3091,7 +3802,10 @@
     },
     "answer": "A",
     "difficulty": 5,
-    "explanation": "'Andare al mare' è un'espressione fissa che richiede la preposizione articolata 'al' (a + il)."
+    "explanation": "'Andare al mare' è un'espressione fissa che richiede la preposizione articolata 'al' (a + il).",
+    "correct_key": "A",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_94",
@@ -3104,7 +3818,10 @@
     },
     "answer": "C",
     "difficulty": 5,
-    "explanation": "La Grappa è un'acquavite italiana prodotta dalla distillazione delle vinacce (sottoprodotti della vinificazione)."
+    "explanation": "La Grappa è un'acquavite italiana prodotta dalla distillazione delle vinacce (sottoprodotti della vinificazione).",
+    "correct_key": "C",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_295",
@@ -3117,7 +3834,10 @@
     },
     "answer": "D",
     "difficulty": 7,
-    "explanation": "Questa è una frase ipotetica del terzo tipo (irrealtà nel passato). La protasi (la frase introdotta da 'se') usa il congiuntivo trapassato ('avessi studiato'), e l'apodosi (la frase principale) usa il condizionale passato ('avrei passato')."
+    "explanation": "Questa è una frase ipotetica del terzo tipo (irrealtà nel passato). La protasi (la frase introdotta da 'se') usa il congiuntivo trapassato ('avessi studiato'), e l'apodosi (la frase principale) usa il condizionale passato ('avrei passato').",
+    "correct_key": "D",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_59",
@@ -3130,7 +3850,10 @@
     },
     "answer": "C",
     "difficulty": 5,
-    "explanation": "La Campania, in particolare Napoli, è considerata la patria della pizza."
+    "explanation": "La Campania, in particolare Napoli, è considerata la patria della pizza.",
+    "correct_key": "C",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_173",
@@ -3143,7 +3866,10 @@
     },
     "answer": "D",
     "difficulty": 5,
-    "explanation": "La preposizione 'a' si usa generalmente per indicare il moto verso un luogo, specialmente città e isole."
+    "explanation": "La preposizione 'a' si usa generalmente per indicare il moto verso un luogo, specialmente città e isole.",
+    "correct_key": "D",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_291",
@@ -3156,7 +3882,10 @@
     },
     "answer": "C",
     "difficulty": 6,
-    "explanation": "Il verbo 'pensare' seguito da 'che' introduce un'opinione o una supposizione, che richiede l'uso del congiuntivo. Dato che l'azione è nel passato rispetto al momento del pensiero, si usa il congiuntivo passato ('siano partiti')."
+    "explanation": "Il verbo 'pensare' seguito da 'che' introduce un'opinione o una supposizione, che richiede l'uso del congiuntivo. Dato che l'azione è nel passato rispetto al momento del pensiero, si usa il congiuntivo passato ('siano partiti').",
+    "correct_key": "C",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_224",
@@ -3169,7 +3898,10 @@
     },
     "answer": "A",
     "difficulty": 5,
-    "explanation": "Con i nomi di città singolari, si usa generalmente la preposizione 'a' per indicare il luogo di residenza. 'Abito a Milano'."
+    "explanation": "Con i nomi di città singolari, si usa generalmente la preposizione 'a' per indicare il luogo di residenza. 'Abito a Milano'.",
+    "correct_key": "A",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_187",
@@ -3182,7 +3914,10 @@
     },
     "answer": "B",
     "difficulty": 5,
-    "explanation": "Il congiuntivo presente del verbo 'sapere' per la terza persona singolare (egli/ella) è 'sappia'."
+    "explanation": "Il congiuntivo presente del verbo 'sapere' per la terza persona singolare (egli/ella) è 'sappia'.",
+    "correct_key": "B",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_283",
@@ -3195,7 +3930,10 @@
     },
     "answer": "C",
     "difficulty": 5,
-    "explanation": "L'aggettivo 'antico' si usa per descrivere qualcosa di molto vecchio, che ha un valore storico, artistico o culturale."
+    "explanation": "L'aggettivo 'antico' si usa per descrivere qualcosa di molto vecchio, che ha un valore storico, artistico o culturale.",
+    "correct_key": "C",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_299",
@@ -3208,7 +3946,10 @@
     },
     "answer": "C",
     "difficulty": 5,
-    "explanation": "La preposizione 'da' è usata per indicare l'origine o il punto di partenza di un movimento (es. 'partire da', 'venire da')."
+    "explanation": "La preposizione 'da' è usata per indicare l'origine o il punto di partenza di un movimento (es. 'partire da', 'venire da').",
+    "correct_key": "C",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_111",
@@ -3221,7 +3962,10 @@
     },
     "answer": "B",
     "difficulty": 7,
-    "explanation": "'Svanire' significa scomparire, dissolversi, perdere la visibilità o la presenza."
+    "explanation": "'Svanire' significa scomparire, dissolversi, perdere la visibilità o la presenza.",
+    "correct_key": "B",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_120",
@@ -3234,7 +3978,10 @@
     },
     "answer": "B",
     "difficulty": 8,
-    "explanation": "Dopo 'non penso che', che esprime dubbio o negazione, si usa il congiuntivo. Per un'azione passata, si usa il congiuntivo passato: 'sia stato'."
+    "explanation": "Dopo 'non penso che', che esprime dubbio o negazione, si usa il congiuntivo. Per un'azione passata, si usa il congiuntivo passato: 'sia stato'.",
+    "correct_key": "B",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_54",
@@ -3247,7 +3994,10 @@
     },
     "answer": "C",
     "difficulty": 6,
-    "explanation": "Dopo espressioni di dubbio o incertezza come 'non credo che', si usa il congiuntivo. Il congiuntivo presente del verbo 'dire' per la terza persona singolare è 'dica'."
+    "explanation": "Dopo espressioni di dubbio o incertezza come 'non credo che', si usa il congiuntivo. Il congiuntivo presente del verbo 'dire' per la terza persona singolare è 'dica'.",
+    "correct_key": "C",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_254",
@@ -3260,7 +4010,10 @@
     },
     "answer": "D",
     "difficulty": 6,
-    "explanation": "'Avere fretta' è un modo di dire comune che significa fare qualcosa velocemente per non perdere tempo."
+    "explanation": "'Avere fretta' è un modo di dire comune che significa fare qualcosa velocemente per non perdere tempo.",
+    "correct_key": "D",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_157",
@@ -3273,7 +4026,10 @@
     },
     "answer": "A",
     "difficulty": 7,
-    "explanation": "'L'anno scorso' indica un tempo passato concluso. 'Siamo stati' è il passato prossimo del verbo 'essere', usato per indicare la permanenza in un luogo."
+    "explanation": "'L'anno scorso' indica un tempo passato concluso. 'Siamo stati' è il passato prossimo del verbo 'essere', usato per indicare la permanenza in un luogo.",
+    "correct_key": "A",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_11",
@@ -3286,7 +4042,10 @@
     },
     "answer": "A",
     "difficulty": 6,
-    "explanation": "'Abbastanza' (enough) fits: 'I don't have enough money.'"
+    "explanation": "'Abbastanza' (enough) fits: 'I don't have enough money.'",
+    "correct_key": "A",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_53",
@@ -3299,7 +4058,10 @@
     },
     "answer": "C",
     "difficulty": 5,
-    "explanation": "Il Colosseo è uno dei monumenti più iconici di Roma."
+    "explanation": "Il Colosseo è uno dei monumenti più iconici di Roma.",
+    "correct_key": "C",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_285",
@@ -3312,7 +4074,10 @@
     },
     "answer": "B",
     "difficulty": 6,
-    "explanation": "Michelangelo Buonarroti è l'artista rinascimentale che ha affrescato la volta e la parete di fondo della Cappella Sistina in Vaticano, con opere celeberrime come la Creazione di Adamo e il Giudizio Universale."
+    "explanation": "Michelangelo Buonarroti è l'artista rinascimentale che ha affrescato la volta e la parete di fondo della Cappella Sistina in Vaticano, con opere celeberrime come la Creazione di Adamo e il Giudizio Universale.",
+    "correct_key": "B",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_259",
@@ -3325,7 +4090,10 @@
     },
     "answer": "D",
     "difficulty": 7,
-    "explanation": "'Sbrigativo' significa che agisce in modo rapido, affrettato."
+    "explanation": "'Sbrigativo' significa che agisce in modo rapido, affrettato.",
+    "correct_key": "D",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_195",
@@ -3338,7 +4106,10 @@
     },
     "answer": "B",
     "difficulty": 5,
-    "explanation": "Il verbo 'sperare' seguito da una proposizione oggettiva con un altro soggetto richiede la congiunzione 'che' e il congiuntivo."
+    "explanation": "Il verbo 'sperare' seguito da una proposizione oggettiva con un altro soggetto richiede la congiunzione 'che' e il congiuntivo.",
+    "correct_key": "B",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_56",
@@ -3351,7 +4122,10 @@
     },
     "answer": "A",
     "difficulty": 5,
-    "explanation": "Dopo verbi come 'piacere', quando si esprime un'azione generale, si usa l'infinito. 'Mi piace leggere'."
+    "explanation": "Dopo verbi come 'piacere', quando si esprime un'azione generale, si usa l'infinito. 'Mi piace leggere'.",
+    "correct_key": "A",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_27",
@@ -3364,7 +4138,10 @@
     },
     "answer": "A",
     "difficulty": 5,
-    "explanation": "Si usa il pronome relativo 'che' per collegare due frasi quando il termine collegato è il soggetto o l'oggetto diretto nella frase relativa. Qui, 'che' si riferisce a 'il libro' e funge da soggetto di 'è'."
+    "explanation": "Si usa il pronome relativo 'che' per collegare due frasi quando il termine collegato è il soggetto o l'oggetto diretto nella frase relativa. Qui, 'che' si riferisce a 'il libro' e funge da soggetto di 'è'.",
+    "correct_key": "A",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_39",
@@ -3377,7 +4154,10 @@
     },
     "answer": "A",
     "difficulty": 6,
-    "explanation": "Nella frase relativa 'ti ho scritto', 'la lettera' è l'oggetto diretto. Il pronome relativo che funge da oggetto diretto è 'che'."
+    "explanation": "Nella frase relativa 'ti ho scritto', 'la lettera' è l'oggetto diretto. Il pronome relativo che funge da oggetto diretto è 'che'.",
+    "correct_key": "A",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_88",
@@ -3390,7 +4170,10 @@
     },
     "answer": "D",
     "difficulty": 6,
-    "explanation": "Questo modo di dire descrive una persona che non presta attenzione a ciò che accade intorno a sé perché è persa nei propri pensieri o sogni."
+    "explanation": "Questo modo di dire descrive una persona che non presta attenzione a ciò che accade intorno a sé perché è persa nei propri pensieri o sogni.",
+    "correct_key": "D",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_6",
@@ -3403,7 +4186,10 @@
     },
     "answer": "B",
     "difficulty": 5,
-    "explanation": "Italian way to say 'Good luck!' Response: 'Crepi il lupo!'"
+    "explanation": "Italian way to say 'Good luck!' Response: 'Crepi il lupo!'",
+    "correct_key": "B",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_46",
@@ -3416,7 +4202,10 @@
     },
     "answer": "C",
     "difficulty": 5,
-    "explanation": "Il congiuntivo presente del verbo 'mangiare' per la seconda persona singolare è 'mangi'."
+    "explanation": "Il congiuntivo presente del verbo 'mangiare' per la seconda persona singolare è 'mangi'.",
+    "correct_key": "C",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_232",
@@ -3429,7 +4218,10 @@
     },
     "answer": "A",
     "difficulty": 5,
-    "explanation": "La preposizione 'da' si usa per indicare la provenienza o l'origine: 'Vengo da Roma'."
+    "explanation": "La preposizione 'da' si usa per indicare la provenienza o l'origine: 'Vengo da Roma'.",
+    "correct_key": "A",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_136",
@@ -3442,7 +4234,10 @@
     },
     "answer": "D",
     "difficulty": 8,
-    "explanation": "Il congiuntivo trapassato si usa nelle frasi ipotetiche del terzo tipo (irrealtà nel passato) per esprimere una condizione che non si è verificata. Si forma con l'ausiliare congiuntivo imperfetto più il participio passato."
+    "explanation": "Il congiuntivo trapassato si usa nelle frasi ipotetiche del terzo tipo (irrealtà nel passato) per esprimere una condizione che non si è verificata. Si forma con l'ausiliare congiuntivo imperfetto più il participio passato.",
+    "correct_key": "D",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_245",
@@ -3455,7 +4250,10 @@
     },
     "answer": "A",
     "difficulty": 6,
-    "explanation": "Il verbo 'credere' seguito da una negazione ('non credo') regge il congiuntivo. Si usa il congiuntivo presente ('abbia') perché l'azione è contemporanea o futura."
+    "explanation": "Il verbo 'credere' seguito da una negazione ('non credo') regge il congiuntivo. Si usa il congiuntivo presente ('abbia') perché l'azione è contemporanea o futura.",
+    "correct_key": "A",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_292",
@@ -3468,7 +4266,10 @@
     },
     "answer": "B",
     "difficulty": 5,
-    "explanation": "La preposizione 'con' viene usata per indicare il mezzo o lo strumento utilizzato per compiere un'azione (es. 'scrivere con una penna', 'andare con l'auto')."
+    "explanation": "La preposizione 'con' viene usata per indicare il mezzo o lo strumento utilizzato per compiere un'azione (es. 'scrivere con una penna', 'andare con l'auto').",
+    "correct_key": "B",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_114",
@@ -3481,7 +4282,10 @@
     },
     "answer": "C",
     "difficulty": 7,
-    "explanation": "Dopo verbi che esprimono opinione o credenza, come 'credere', si usa il congiuntivo. La terza persona singolare del congiuntivo presente di 'dire' è 'dica'."
+    "explanation": "Dopo verbi che esprimono opinione o credenza, come 'credere', si usa il congiuntivo. La terza persona singolare del congiuntivo presente di 'dire' è 'dica'.",
+    "correct_key": "C",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_237",
@@ -3494,7 +4298,10 @@
     },
     "answer": "A",
     "difficulty": 7,
-    "explanation": "La frase esprime un'ipotesi reale nel presente. La struttura corretta è: periodo ipotetico della realtà (se + congiuntivo imperfetto, condizionale presente). Il condizionale presente è 'farei'."
+    "explanation": "La frase esprime un'ipotesi reale nel presente. La struttura corretta è: periodo ipotetico della realtà (se + congiuntivo imperfetto, condizionale presente). Il condizionale presente è 'farei'.",
+    "correct_key": "A",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_181",
@@ -3507,7 +4314,10 @@
     },
     "answer": "B",
     "difficulty": 7,
-    "explanation": "Il congiuntivo trapassato viene utilizzato per esprimere un'azione che si è verificata prima di un'altra azione passata, specialmente nelle proposizioni subordinate."
+    "explanation": "Il congiuntivo trapassato viene utilizzato per esprimere un'azione che si è verificata prima di un'altra azione passata, specialmente nelle proposizioni subordinate.",
+    "correct_key": "B",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_109",
@@ -3520,7 +4330,10 @@
     },
     "answer": "D",
     "difficulty": 8,
-    "explanation": "Nelle proposizioni temporali introdotte da 'quando', se l'azione della principale è nel futuro, quella della subordinata, che è anteriore, richiede il futuro anteriore. 'Quando avrò tempo' (futuro anteriore) 'andremo al mare' (futuro semplice)."
+    "explanation": "Nelle proposizioni temporali introdotte da 'quando', se l'azione della principale è nel futuro, quella della subordinata, che è anteriore, richiede il futuro anteriore. 'Quando avrò tempo' (futuro anteriore) 'andremo al mare' (futuro semplice).",
+    "correct_key": "D",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_32",
@@ -3533,7 +4346,10 @@
     },
     "answer": "D",
     "difficulty": 8,
-    "explanation": "Questa è una frase ipotetica del terzo tipo (irrealtà nel passato). Richiede il congiuntivo trapassato ('fossi stato') nella proposizione introdotta da 'se' e il condizionale passato nella proposizione principale ('non avresti fatto')."
+    "explanation": "Questa è una frase ipotetica del terzo tipo (irrealtà nel passato). Richiede il congiuntivo trapassato ('fossi stato') nella proposizione introdotta da 'se' e il condizionale passato nella proposizione principale ('non avresti fatto').",
+    "correct_key": "D",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_246",
@@ -3546,7 +4362,10 @@
     },
     "answer": "A",
     "difficulty": 5,
-    "explanation": "La preposizione 'di' si usa per indicare il possesso: 'il libro di Marco' (il libro che appartiene a Marco)."
+    "explanation": "La preposizione 'di' si usa per indicare il possesso: 'il libro di Marco' (il libro che appartiene a Marco).",
+    "correct_key": "A",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_102",
@@ -3559,7 +4378,10 @@
     },
     "answer": "D",
     "difficulty": 7,
-    "explanation": "Dopo verbi che esprimono speranza, come 'sperare', si usa il congiuntivo. La terza persona singolare del congiuntivo presente di 'stare' è 'stia'."
+    "explanation": "Dopo verbi che esprimono speranza, come 'sperare', si usa il congiuntivo. La terza persona singolare del congiuntivo presente di 'stare' è 'stia'.",
+    "correct_key": "D",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_236",
@@ -3572,7 +4394,10 @@
     },
     "answer": "C",
     "difficulty": 6,
-    "explanation": "'Globetrotter' è un termine inglese ma ampiamente utilizzato in italiano per indicare una persona che viaggia molto per il mondo."
+    "explanation": "'Globetrotter' è un termine inglese ma ampiamente utilizzato in italiano per indicare una persona che viaggia molto per il mondo.",
+    "correct_key": "C",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_49",
@@ -3585,7 +4410,10 @@
     },
     "answer": "A",
     "difficulty": 5,
-    "explanation": "Il passato prossimo si usa per parlare di azioni che sono iniziate e concluse in un momento specifico del passato."
+    "explanation": "Il passato prossimo si usa per parlare di azioni che sono iniziate e concluse in un momento specifico del passato.",
+    "correct_key": "A",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_58",
@@ -3598,7 +4426,10 @@
     },
     "answer": "C",
     "difficulty": 6,
-    "explanation": "'Avere fretta' indica la necessità di fare qualcosa velocemente, di essere di fretta."
+    "explanation": "'Avere fretta' indica la necessità di fare qualcosa velocemente, di essere di fretta.",
+    "correct_key": "C",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_127",
@@ -3611,7 +4442,10 @@
     },
     "answer": "D",
     "difficulty": 6,
-    "explanation": "Si usa 'prendere' per 'fare' un viaggio o una partenza nel senso di intraprenderla. 'Hanno preso' è il passato prossimo corretto."
+    "explanation": "Si usa 'prendere' per 'fare' un viaggio o una partenza nel senso di intraprenderla. 'Hanno preso' è il passato prossimo corretto.",
+    "correct_key": "D",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_63",
@@ -3624,7 +4458,10 @@
     },
     "answer": "D",
     "difficulty": 5,
-    "explanation": "La preposizione 'con' può indicare il mezzo (es. andare con la macchina) o il modo (es. parlare con gentilezza)."
+    "explanation": "La preposizione 'con' può indicare il mezzo (es. andare con la macchina) o il modo (es. parlare con gentilezza).",
+    "correct_key": "D",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_67",
@@ -3637,7 +4474,10 @@
     },
     "answer": "B",
     "difficulty": 6,
-    "explanation": "Dopo 'nonostante', quando il soggetto è lo stesso, si usa l'infinito. 'Nonostante essere stanco' (o meglio, 'Nonostante fossi stanco'). La forma infinita è corretta in questo contesto grammaticale."
+    "explanation": "Dopo 'nonostante', quando il soggetto è lo stesso, si usa l'infinito. 'Nonostante essere stanco' (o meglio, 'Nonostante fossi stanco'). La forma infinita è corretta in questo contesto grammaticale.",
+    "correct_key": "B",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_204",
@@ -3650,7 +4490,10 @@
     },
     "answer": "A",
     "difficulty": 7,
-    "explanation": "'In bocca al lupo' è un'espressione idiomatica usata per augurare buona fortuna a qualcuno, specialmente prima di una prova o un evento importante."
+    "explanation": "'In bocca al lupo' è un'espressione idiomatica usata per augurare buona fortuna a qualcuno, specialmente prima di una prova o un evento importante.",
+    "correct_key": "A",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_172",
@@ -3663,7 +4506,10 @@
     },
     "answer": "B",
     "difficulty": 6,
-    "explanation": "Il congiuntivo imperfetto del verbo 'essere' per la terza persona singolare è 'fosse'."
+    "explanation": "Il congiuntivo imperfetto del verbo 'essere' per la terza persona singolare è 'fosse'.",
+    "correct_key": "B",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_108",
@@ -3676,7 +4522,10 @@
     },
     "answer": "C",
     "difficulty": 8,
-    "explanation": "Nelle frasi ipotetiche irreali del passato, la protasi (la parte con 'se') richiede il congiuntivo imperfetto, mentre l'apodosi richiede il condizionale passato. Quindi, 'se io avessi'."
+    "explanation": "Nelle frasi ipotetiche irreali del passato, la protasi (la parte con 'se') richiede il congiuntivo imperfetto, mentre l'apodosi richiede il condizionale passato. Quindi, 'se io avessi'.",
+    "correct_key": "C",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_166",
@@ -3689,7 +4538,10 @@
     },
     "answer": "D",
     "difficulty": 7,
-    "explanation": "Tradizionalmente, il 15 agosto (Ferragosto) è associato al consumo di anguria o melone, frutti estivi rinfrescanti."
+    "explanation": "Tradizionalmente, il 15 agosto (Ferragosto) è associato al consumo di anguria o melone, frutti estivi rinfrescanti.",
+    "correct_key": "D",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_158",
@@ -3702,7 +4554,10 @@
     },
     "answer": "A",
     "difficulty": 7,
-    "explanation": "L'imperfetto ('leggevo') si usa per descrivere un'azione in corso nel passato, interrotta da un'altra azione (il telefono ha squillato, indicata con il passato prossimo)."
+    "explanation": "L'imperfetto ('leggevo') si usa per descrivere un'azione in corso nel passato, interrotta da un'altra azione (il telefono ha squillato, indicata con il passato prossimo).",
+    "correct_key": "A",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_264",
@@ -3715,7 +4570,10 @@
     },
     "answer": "C",
     "difficulty": 8,
-    "explanation": "Il passato remoto è spesso usato per eventi storici conclusi. 'Garibaldi unì l'Italia'."
+    "explanation": "Il passato remoto è spesso usato per eventi storici conclusi. 'Garibaldi unì l'Italia'.",
+    "correct_key": "C",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_257",
@@ -3728,7 +4586,10 @@
     },
     "answer": "C",
     "difficulty": 5,
-    "explanation": "L'imperfetto è il tempo verbale ideale per descrivere azioni abituali o stati nel passato ('Da bambino, giocavo sempre in giardino')."
+    "explanation": "L'imperfetto è il tempo verbale ideale per descrivere azioni abituali o stati nel passato ('Da bambino, giocavo sempre in giardino').",
+    "correct_key": "C",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_44",
@@ -3741,7 +4602,10 @@
     },
     "answer": "A",
     "difficulty": 5,
-    "explanation": "Il verbo 'decidere' regge la preposizione 'di' quando è seguito da un verbo all'infinito ('decidere di fare qualcosa')."
+    "explanation": "Il verbo 'decidere' regge la preposizione 'di' quando è seguito da un verbo all'infinito ('decidere di fare qualcosa').",
+    "correct_key": "A",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_142",
@@ -3754,7 +4618,10 @@
     },
     "answer": "B",
     "difficulty": 6,
-    "explanation": "Il verbo 'rimanere' è intransitivo e di stato, quindi usa l'ausiliare 'essere'. 'Lei è rimasta' è la forma corretta."
+    "explanation": "Il verbo 'rimanere' è intransitivo e di stato, quindi usa l'ausiliare 'essere'. 'Lei è rimasta' è la forma corretta.",
+    "correct_key": "B",
+    "section": "language",
+    "skill": "AP Italian"
   },
   {
     "id": "AP_Italian_64",
@@ -3767,6 +4634,9 @@
     },
     "answer": "B",
     "difficulty": 5,
-    "explanation": "'Difficile' è l'aggettivo che significa 'difficult' in italiano."
+    "explanation": "'Difficile' è l'aggettivo che significa 'difficult' in italiano.",
+    "correct_key": "B",
+    "section": "language",
+    "skill": "AP Italian"
   }
 ]
