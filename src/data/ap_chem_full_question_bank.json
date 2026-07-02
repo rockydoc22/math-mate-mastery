@@ -6854,7 +6854,8 @@
           "unit_id": 1,
           "unit_title": "Atomic Structure and Properties"
         }
-      ]
+      ],
+      "difficulty": 7
     },
     {
       "unit_id": 2,
@@ -14186,7 +14187,8 @@
           "unit_id": 2,
           "unit_title": "Molecular and Ionic Compound Structure and Properties"
         }
-      ]
+      ],
+      "difficulty": 7
     },
     {
       "unit_id": 3,
@@ -21416,7 +21418,8 @@
           "unit_id": 3,
           "unit_title": "Intermolecular Forces and Properties"
         }
-      ]
+      ],
+      "difficulty": 7
     },
     {
       "unit_id": 4,
@@ -28853,7 +28856,8 @@
           "unit_id": 4,
           "unit_title": "Chemical Reactions"
         }
-      ]
+      ],
+      "difficulty": 7
     },
     {
       "unit_id": 5,
@@ -36029,7 +36033,8 @@
           "unit_id": 5,
           "unit_title": "Kinetics"
         }
-      ]
+      ],
+      "difficulty": 7
     },
     {
       "unit_id": 6,
@@ -43004,7 +43009,8 @@
           "unit_id": 6,
           "unit_title": "Thermodynamics"
         }
-      ]
+      ],
+      "difficulty": 7
     },
     {
       "unit_id": 7,
@@ -50048,7 +50054,8 @@
           "unit_id": 7,
           "unit_title": "Equilibrium"
         }
-      ]
+      ],
+      "difficulty": 7
     },
     {
       "unit_id": 8,
@@ -56963,7 +56970,8 @@
           "unit_id": 8,
           "unit_title": "Acids and Bases"
         }
-      ]
+      ],
+      "difficulty": 7
     },
     {
       "unit_id": 9,
@@ -63722,7 +63730,8 @@
           "unit_id": 9,
           "unit_title": "Applications of Thermodynamics"
         }
-      ]
+      ],
+      "difficulty": 7
     }
   ]
 }
