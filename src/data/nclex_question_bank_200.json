@@ -137,7 +137,7 @@
     "correctAnswer": "C",
     "explanation": "Opioid analgesics are well-known for their potential to cause respiratory depression, which is a serious and potentially life-threatening side effect. Diarrhea is less common; constipation is a more frequent side effect. Opioids typically cause bradycardia, not tachycardia, and hypotension, not hypertension.",
     "skill": "Pharmacology and Therapeutic Monitoring",
-    "difficulty": 3
+    "difficulty": 5
   },
   {
     "id": "nclex_206",
@@ -249,7 +249,7 @@
     "correctAnswer": "B",
     "explanation": "Hepatitis B vaccine is the only vaccine routinely administered at birth. DTaP begins at 2 months, MMR and varicella at 12 months.",
     "skill": "Immunizations",
-    "difficulty": 3
+    "difficulty": 5
   },
   {
     "id": "nclex_010",
@@ -305,7 +305,7 @@
     "correctAnswer": "B",
     "explanation": "Placing infants on their back to sleep is the single most effective recommendation to reduce the risk of Sudden Infant Death Syndrome (SIDS). While other safety measures are important as the infant grows, SIDS prevention is paramount at this age. Safety gates and keeping small objects away become more critical as the infant becomes mobile.",
     "skill": "Safety Education",
-    "difficulty": 3
+    "difficulty": 5
   },
   {
     "id": "nclex_242",
@@ -445,7 +445,7 @@
     "correctAnswer": "D",
     "explanation": "The DASH diet recommends limiting sodium to <2,300 mg/day to help reduce blood pressure.",
     "skill": "Nutrition",
-    "difficulty": 3
+    "difficulty": 5
   },
   {
     "id": "nclex_017",
@@ -501,7 +501,7 @@
     "correctAnswer": "C",
     "explanation": "Patient advocacy involves speaking up on behalf of the patient, including questioning potentially harmful orders.",
     "skill": "Professional Practice",
-    "difficulty": 3
+    "difficulty": 5
   },
   {
     "id": "nclex_019",
@@ -641,7 +641,7 @@
     "correctAnswer": "D",
     "explanation": "The three-check system (when removing from drawer, preparing, and at bedside) is a fundamental medication safety practice.",
     "skill": "Medication Administration",
-    "difficulty": 3
+    "difficulty": 5
   },
   {
     "id": "nclex_201",
@@ -949,7 +949,7 @@
     "correctAnswer": "B",
     "explanation": "SPF 30+ applied 15 minutes before exposure and reapplied every 2 hours provides effective UV protection. Tanning beds increase melanoma risk.",
     "skill": "Cancer Prevention",
-    "difficulty": 3
+    "difficulty": 5
   },
   {
     "id": "nclex_035",
@@ -1033,7 +1033,7 @@
     "correctAnswer": "D",
     "explanation": "RACE: Rescue patients first, then Activate the alarm, Contain the fire, and Extinguish or Evacuate.",
     "skill": "Emergency Response",
-    "difficulty": 3
+    "difficulty": 5
   },
   {
     "id": "nclex_038",
@@ -1229,7 +1229,7 @@
     "correctAnswer": "B",
     "explanation": "Advanced age, polypharmacy (especially diuretics and sedatives), and mobility aids are all significant fall risk factors.",
     "skill": "Patient Safety",
-    "difficulty": 3
+    "difficulty": 5
   },
   {
     "id": "nclex_045",
@@ -1369,7 +1369,7 @@
     "correctAnswer": "C",
     "explanation": "Lying flat after eating increases gastric reflux. Patients should remain upright for 2-3 hours after meals and elevate the head of bed 30 degrees.",
     "skill": "Gastrointestinal",
-    "difficulty": 3
+    "difficulty": 5
   },
   {
     "id": "nclex_050",
@@ -1453,7 +1453,7 @@
     "correctAnswer": "B",
     "explanation": "By age 2, children should use 2-word phrases and have a vocabulary of about 50 words. Tricycle riding is a 3-year milestone.",
     "skill": "Growth and Development",
-    "difficulty": 3
+    "difficulty": 5
   },
   {
     "id": "nclex_053",
@@ -1509,7 +1509,7 @@
     "correctAnswer": "B",
     "explanation": "Proper documentation uses objective data and direct patient quotes. Subjective terms like 'good' and 'appears' are vague and non-measurable.",
     "skill": "Documentation",
-    "difficulty": 3
+    "difficulty": 5
   },
   {
     "id": "nclex_055",
@@ -1817,7 +1817,7 @@
     "correctAnswer": "A",
     "explanation": "Folic acid (400-800 mcg daily) should begin at least 1 month before conception to prevent neural tube defects, which form in the first 28 days.",
     "skill": "Prenatal Care",
-    "difficulty": 3
+    "difficulty": 5
   },
   {
     "id": "nclex_066",
@@ -1901,7 +1901,7 @@
     "correctAnswer": "A",
     "explanation": "The most complex patient (ventilator, multiple drips, chest tubes) requires the most experienced nurse for safe, competent care.",
     "skill": "Assignment Making",
-    "difficulty": 3
+    "difficulty": 5
   },
   {
     "id": "nclex_069",
@@ -2097,7 +2097,7 @@
     "correctAnswer": "D",
     "explanation": "Discussing patient information in public areas (elevators, cafeteria, hallways) violates patient privacy under HIPAA regulations.",
     "skill": "Confidentiality",
-    "difficulty": 3
+    "difficulty": 5
   },
   {
     "id": "nclex_076",
@@ -2293,7 +2293,7 @@
     "correctAnswer": "D",
     "explanation": "Mammography screening is recommended annually or biennially starting at age 40 (varies by guideline) for breast cancer detection.",
     "skill": "Cancer Screening",
-    "difficulty": 3
+    "difficulty": 5
   },
   {
     "id": "nclex_083",
@@ -2461,7 +2461,7 @@
     "correctAnswer": "A",
     "explanation": "Cultural competence involves asking patients about their individual preferences rather than making assumptions based on cultural stereotypes.",
     "skill": "Cultural Competence",
-    "difficulty": 3
+    "difficulty": 5
   },
   {
     "id": "nclex_089",
@@ -2657,7 +2657,7 @@
     "correctAnswer": "A",
     "explanation": "Wiping front to back prevents introduction of rectal bacteria into the urethra. Adequate hydration and frequent voiding also help prevent UTIs.",
     "skill": "Health Education",
-    "difficulty": 3
+    "difficulty": 5
   },
   {
     "id": "nclex_096",
@@ -2769,7 +2769,7 @@
     "correctAnswer": "B",
     "explanation": "CDC recommends scrubbing with soap and water for at least 20 seconds to effectively remove pathogens. Alcohol-based rubs can be used when hands are not visibly soiled.",
     "skill": "Infection Control",
-    "difficulty": 3
+    "difficulty": 5
   },
   {
     "id": "nclex_100",
@@ -2993,7 +2993,7 @@
     "correctAnswer": "A",
     "explanation": "Weight-bearing exercise stimulates bone formation, and calcium (1000-1200 mg/day) with vitamin D (600-800 IU) are essential for bone density maintenance.",
     "skill": "Health Education",
-    "difficulty": 3
+    "difficulty": 5
   },
   {
     "id": "nclex_108",
@@ -3133,7 +3133,7 @@
     "correctAnswer": "B",
     "explanation": "Read-back verification of telephone orders prevents errors. The nurse should write down, read back, and receive confirmation from the ordering provider.",
     "skill": "Communication",
-    "difficulty": 3
+    "difficulty": 5
   },
   {
     "id": "nclex_113",
@@ -3217,7 +3217,7 @@
     "correctAnswer": "C",
     "explanation": "Celiac disease requires a lifelong gluten-free diet. Gluten is found in wheat, barley, and rye. Rice, corn, and potatoes are naturally gluten-free.",
     "skill": "Gastrointestinal",
-    "difficulty": 3
+    "difficulty": 5
   },
   {
     "id": "nclex_116",
@@ -3469,7 +3469,7 @@
     "correctAnswer": "A",
     "explanation": "Eggs, fish, asparagus, garlic, onions, and beans produce the most odor with colostomies. Yogurt, parsley, and buttermilk may help reduce odor.",
     "skill": "Gastrointestinal",
-    "difficulty": 3
+    "difficulty": 5
   },
   {
     "id": "nclex_125",
@@ -3525,7 +3525,7 @@
     "correctAnswer": "A",
     "explanation": "Hepatitis A is transmitted via the fecal-oral route. Hepatitis B and C are transmitted through blood and body fluids.",
     "skill": "Infection Control",
-    "difficulty": 3
+    "difficulty": 5
   },
   {
     "id": "nclex_127",
@@ -3805,7 +3805,7 @@
     "correctAnswer": "B",
     "explanation": "The ABCs of safe sleep: Alone, on their Back, in a Crib. The Back-to-Sleep campaign significantly reduced SIDS rates. Avoid soft bedding, overheating, and co-sleeping.",
     "skill": "Pediatric Safety",
-    "difficulty": 3
+    "difficulty": 5
   },
   {
     "id": "nclex_137",
@@ -3861,7 +3861,7 @@
     "correctAnswer": "A",
     "explanation": "Elevating the legs above heart level promotes venous return through gravity, reducing peripheral edema common in right-sided heart failure.",
     "skill": "Cardiovascular",
-    "difficulty": 3
+    "difficulty": 5
   },
   {
     "id": "nclex_139",
@@ -4337,7 +4337,7 @@
     "correctAnswer": "D",
     "explanation": "The Mediterranean diet emphasizes healthy fats (olive oil, nuts), fish, fruits, vegetables, whole grains, and legumes. It is associated with reduced cardiovascular risk.",
     "skill": "Nutrition",
-    "difficulty": 3
+    "difficulty": 5
   },
   {
     "id": "nclex_156",
@@ -4393,7 +4393,7 @@
     "correctAnswer": "B",
     "explanation": "NSAIDs should be taken with food, milk, or antacids to reduce GI irritation and the risk of peptic ulcer formation, a common side effect.",
     "skill": "Pharmacology",
-    "difficulty": 3
+    "difficulty": 5
   },
   {
     "id": "nclex_158",
@@ -5149,7 +5149,7 @@
     "correctAnswer": "B",
     "explanation": "After Rescue, the next step is Activate the alarm. Then Contain (close doors/windows), and finally Extinguish or Evacuate as appropriate.",
     "skill": "Emergency Response",
-    "difficulty": 3
+    "difficulty": 5
   },
   {
     "id": "nclex_185",
@@ -5569,7 +5569,7 @@
     "correctAnswer": "C",
     "explanation": "Obesity (especially central/abdominal) and physical inactivity are the most significant modifiable risk factors for Type 2 diabetes. Family history, age, and ethnicity are non-modifiable.",
     "skill": "Disease Prevention",
-    "difficulty": 3
+    "difficulty": 5
   },
   {
     "id": "nclex_200",
@@ -5625,7 +5625,7 @@
     "correctAnswer": "A",
     "explanation": "SBAR: Situation, Background, Assessment, Recommendation. It is a standardized communication framework used in healthcare to ensure clear, concise information transfer.",
     "skill": "Communication",
-    "difficulty": 3
+    "difficulty": 5
   },
   {
     "id": "nclex_202",
@@ -5765,7 +5765,7 @@
     "correctAnswer": "A",
     "explanation": "Suspected child abuse, elder abuse, and certain communicable diseases require mandatory reporting by healthcare professionals. This overrides patient confidentiality.",
     "skill": "Legal and Ethical",
-    "difficulty": 3
+    "difficulty": 5
   },
   {
     "id": "nclex_005",
@@ -5877,7 +5877,7 @@
     "correctAnswer": "C",
     "explanation": "Canned soups are typically very high in sodium. Fresh fruits, plain rice, and grilled chicken breast (prepared without added salt) are generally low in sodium and suitable for a low-sodium diet.",
     "skill": "Dietary Management",
-    "difficulty": 3
+    "difficulty": 5
   },
   {
     "id": "nclex_211",
@@ -6073,7 +6073,7 @@
     "correctAnswer": "C",
     "explanation": "Short-acting beta-agonists (SABAs), such as albuterol, are bronchodilators that provide rapid relief of bronchospasm and are used as rescue inhalers during acute asthma exacerbations. Inhaled corticosteroids are controllers, LABAs are long-acting controllers, and leukotriene modifiers are oral controllers.",
     "skill": "Pharmacology and Therapeutic Monitoring",
-    "difficulty": 3
+    "difficulty": 5
   },
   {
     "id": "nclex_218",
@@ -6157,7 +6157,7 @@
     "correctAnswer": "C",
     "explanation": "Wearing loose-fitting, soft clothing helps to minimize friction and irritation to the skin, which can be sensitive and prone to breakdown from radiation therapy. Scented products, hot water, vigorous rubbing, and powders can further irritate the skin.",
     "skill": "Oncology Nursing",
-    "difficulty": 3
+    "difficulty": 5
   },
   {
     "id": "nclex_021",
@@ -6353,7 +6353,7 @@
     "correctAnswer": "C",
     "explanation": "An increase in the number of women of childbearing age directly correlates with a potential increase in pregnancies and, consequently, a greater need for prenatal care services. The other options do not directly point to a need for increased prenatal care.",
     "skill": "Community Health Assessment",
-    "difficulty": 3
+    "difficulty": 5
   },
   {
     "id": "nclex_228",
@@ -6437,7 +6437,7 @@
     "correctAnswer": "B",
     "explanation": "Wearing a wide-brimmed hat provides physical protection against UV radiation by shielding the face, neck, and ears, which are common sites for sun damage and skin cancer. Statement A is incorrect because UV rays can penetrate clouds. Statement C is incorrect; tanning beds emit harmful UV radiation. Statement D is incorrect; individuals of all complexions can develop skin cancer.",
     "skill": "Health Education",
-    "difficulty": 3
+    "difficulty": 5
   },
   {
     "id": "nclex_231",
@@ -6521,7 +6521,7 @@
     "correctAnswer": "B",
     "explanation": "Calcium is the primary mineral component of bone, and vitamin D is essential for calcium absorption. Adequate intake of both is paramount for maintaining bone density and preventing osteoporosis. Vitamin C is important for collagen synthesis, iron for oxygen transport, and sodium affects blood pressure and fluid balance, but calcium and vitamin D are directly linked to bone health.",
     "skill": "Nutritional Counseling",
-    "difficulty": 3
+    "difficulty": 5
   },
   {
     "id": "nclex_234",
@@ -6605,7 +6605,7 @@
     "correctAnswer": "C",
     "explanation": "Inadequate fluid intake allows urine to stagnate in the bladder, promoting bacterial growth. Encouraging increased fluid intake is a modifiable behavior that can significantly reduce UTI risk. Shortness of the urethra, recent antibiotic use (which can disrupt normal flora), and menopause (leading to lower estrogen and changes in vaginal pH) are risk factors that are either non-modifiable or require medical intervention, not simple education.",
     "skill": "Risk Factor Modification",
-    "difficulty": 3
+    "difficulty": 5
   },
   {
     "id": "nclex_237",
@@ -6633,7 +6633,7 @@
     "correctAnswer": "D",
     "explanation": "A consistent sleep-wake schedule helps regulate the body's internal circadian rhythm, promoting more efficient and restful sleep. Vigorous exercise and caffeine too close to bedtime can interfere with sleep onset, and mentally stimulating activities can keep the mind alert.",
     "skill": "Health Education",
-    "difficulty": 3
+    "difficulty": 5
   },
   {
     "id": "nclex_238",
@@ -6745,7 +6745,7 @@
     "correctAnswer": "A",
     "explanation": "Denial is the first stage of the Kübler-Ross grief model, characterized by disbelief and refusal to accept the diagnosis.",
     "skill": "Grief and Loss",
-    "difficulty": 3
+    "difficulty": 5
   },
   {
     "id": "nclex_012",
@@ -6801,7 +6801,7 @@
     "correctAnswer": "B",
     "explanation": "Progressive muscle relaxation is a well-established technique that helps reduce physical tension and promote mental calmness, effectively lowering stress levels. The other options are generally detrimental to well-being and stress management.",
     "skill": "Health Education",
-    "difficulty": 3
+    "difficulty": 5
   },
   {
     "id": "nclex_244",
@@ -6885,7 +6885,7 @@
     "correctAnswer": "B",
     "explanation": "Actively engaging the brain through learning, puzzles, reading, and social interaction is strongly associated with maintaining cognitive function and reducing the risk of cognitive decline in older adults. High saturated fat intake is detrimental, excessive sleep can be a sign of underlying issues, and passive activities like watching TV are less stimulating.",
     "skill": "Health Promotion",
-    "difficulty": 3
+    "difficulty": 5
   },
   {
     "id": "nclex_247",
@@ -6969,7 +6969,7 @@
     "correctAnswer": "B",
     "explanation": "Fresh berries are excellent sources of dietary fiber. White bread is a refined grain with very little fiber. Processed cheese and lean ground beef are protein sources and contain minimal to no fiber.",
     "skill": "Nutritional Counseling",
-    "difficulty": 3
+    "difficulty": 5
   },
   {
     "id": "nclex_250",
@@ -7025,7 +7025,7 @@
     "correctAnswer": "B",
     "explanation": "The Homan's sign (pain in the calf that worsens with dorsiflexion) is a classic but not always reliable indicator of DVT. Swelling in both legs can indicate other issues like heart failure. Cool, clammy skin is more suggestive of arterial insufficiency. A rash is unrelated to DVT.",
     "skill": "Assessment",
-    "difficulty": 3
+    "difficulty": 5
   },
   {
     "id": "nclex_252",
@@ -7053,7 +7053,7 @@
     "correctAnswer": "A",
     "explanation": "Warfarin is an anticoagulant that affects the extrinsic and common pathways of coagulation, which is measured by PT and INR. aPTT monitors heparin therapy. CBC monitors for anemia or infection. Serum creatinine monitors kidney function.",
     "skill": "Medication Management",
-    "difficulty": 3
+    "difficulty": 5
   },
   {
     "id": "nclex_253",
@@ -7081,7 +7081,7 @@
     "correctAnswer": "C",
     "explanation": "Type 1 diabetes is characterized by autoimmune destruction of pancreatic beta cells, leading to an absolute deficiency of insulin production. Type 2 diabetes is characterized by insulin resistance and relative insulin deficiency. While diet is important, it's not the primary underlying pathology of type 1 diabetes. Liver glucose production is also involved but not the root cause in type 1.",
     "skill": "Physiological Adaptation",
-    "difficulty": 3
+    "difficulty": 5
   },
   {
     "id": "nclex_254",
@@ -7165,7 +7165,7 @@
     "correctAnswer": "C",
     "explanation": "Atorvastatin is a statin medication used to lower cholesterol levels, particularly LDL cholesterol, which is a key risk factor for cardiovascular disease and can contribute to further atherosclerosis after an MI. While statins can have pleiotropic effects, their primary role is lipid-lowering.",
     "skill": "Medication Management",
-    "difficulty": 3
+    "difficulty": 5
   },
   {
     "id": "nclex_257",
@@ -7249,7 +7249,7 @@
     "correctAnswer": "B",
     "explanation": "Reducing sodium intake is a cornerstone of lifestyle modification for hypertension management, as sodium promotes fluid retention and increases blood pressure. Canned soups are typically high in sodium. High-fat dairy products are not recommended for cardiovascular health. Sedentary activities worsen hypertension.",
     "skill": "Health Promotion and Maintenance",
-    "difficulty": 3
+    "difficulty": 5
   },
   {
     "id": "nclex_260",
@@ -7361,7 +7361,7 @@
     "correctAnswer": "C",
     "explanation": "Hypoglycemia (low blood sugar) typically presents with adrenergic symptoms such as diaphoresis (sweating), tremors, palpitations, anxiety, and hunger. Flushed skin and dry mouth are more associated with hyperglycemia. Polyuria and polydipsia are also signs of hyperglycemia. Gradual confusion can occur with chronic hyperglycemia or severe, prolonged hypoglycemia, but acute adrenergic symptoms are more typical of onset.",
     "skill": "Assessment",
-    "difficulty": 3
+    "difficulty": 5
   },
   {
     "id": "nclex_264",
@@ -7445,7 +7445,7 @@
     "correctAnswer": "B",
     "explanation": "Using assistive devices like canes or walkers can reduce stress on the joints during prolonged activity, thereby protecting them. High-impact exercises can exacerbate osteoarthritis. Ignoring joint pain is counterproductive. While heat can be beneficial, continuous application and application to all joints may not be appropriate and might mask pain signals.",
     "skill": "Health Promotion and Maintenance",
-    "difficulty": 3
+    "difficulty": 5
   },
   {
     "id": "nclex_267",
@@ -7557,7 +7557,7 @@
     "correctAnswer": "A",
     "explanation": "Anemia in chronic kidney disease is often due to a deficiency in erythropoietin, a hormone produced by the kidneys that stimulates red blood cell production. Treatment typically involves administering synthetic erythropoietin to boost red blood cell count. Insulin, thyroid-stimulating hormone, and growth hormone have different physiological functions.",
     "skill": "Pharmacology",
-    "difficulty": 3
+    "difficulty": 5
   },
   {
     "id": "nclex_271",
@@ -7641,7 +7641,7 @@
     "correctAnswer": "B",
     "explanation": "For nebulizer treatments, the patient should be instructed to breathe deeply and slowly through the mouthpiece to allow the medication to reach the lower airways effectively. Holding breath for 30 seconds is for metered-dose inhalers. Forceful exhalation is not the primary instruction. Rinsing the mouth is important after using inhaled corticosteroids to prevent thrush, but not the primary breathing instruction for nebulizers.",
     "skill": "Health Promotion and Maintenance",
-    "difficulty": 3
+    "difficulty": 5
   },
   {
     "id": "nclex_274",
@@ -7921,7 +7921,7 @@
     "correctAnswer": "C",
     "explanation": "Involving the client in facility-sponsored group activities is the most effective intervention for promoting social interaction and reducing loneliness in a long-term care setting, as it offers opportunities to connect with peers. While family visits (B) and one-on-one activities (D) are beneficial, group activities provide broader social engagement. Reading in the room (A) can increase isolation.",
     "skill": "Intervention for Social Isolation",
-    "difficulty": 3
+    "difficulty": 5
   },
   {
     "id": "nclex_286",
@@ -8117,7 +8117,7 @@
     "correctAnswer": "B",
     "explanation": "Encouraging the client to verbalize their fears and concerns allows them to process their anxiety and receive support. Providing excessive information about complications (A) can increase anxiety. Sedation (C) may be necessary but is not the primary coping promotion strategy. Distraction (D) may offer temporary relief but does not address the underlying anxiety.",
     "skill": "Coping Mechanisms",
-    "difficulty": 3
+    "difficulty": 5
   },
   {
     "id": "nclex_295",
