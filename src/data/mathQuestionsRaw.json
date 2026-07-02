@@ -10,7 +10,14 @@
     "optionC": "0.83",
     "optionD": "10.00",
     "correct": "A",
-    "explanation": "For a quadratic f(x) = ax² + bx + c, the vertex is at x = -b/(2a) = 0.83. Substituting back: f(0.83) = 3(0.83)² + -5(0.83) + 10 = 7.92"
+    "explanation": "For a quadratic f(x) = ax² + bx + c, the vertex is at x = -b/(2a) = 0.83. Substituting back: f(0.83) = 3(0.83)² + -5(0.83) + 10 = 7.92",
+    "options": [
+      "7.92",
+      "12.08",
+      "0.83",
+      "10.00"
+    ],
+    "correct_key": "A"
   },
   {
     "id": 433,
@@ -23,7 +30,14 @@
     "optionC": "162.10",
     "optionD": "147.00",
     "correct": "B",
-    "explanation": "New value = 117 × (1 + 30/100) = 117 × 1.3 = 152.10"
+    "explanation": "New value = 117 × (1 + 30/100) = 117 × 1.3 = 152.10",
+    "options": [
+      "142.10",
+      "152.10",
+      "162.10",
+      "147.00"
+    ],
+    "correct_key": "B"
   },
   {
     "id": 167,
@@ -36,7 +50,14 @@
     "optionC": "2211.68",
     "optionD": "502.65",
     "correct": "B",
-    "explanation": "Volume = πr²h = π(8)²(10) = 2010.62 cubic units"
+    "explanation": "Volume = πr²h = π(8)²(10) = 2010.62 cubic units",
+    "options": [
+      "1809.56",
+      "2010.62",
+      "2211.68",
+      "502.65"
+    ],
+    "correct_key": "B"
   },
   {
     "id": 432,
@@ -49,7 +70,14 @@
     "optionC": "163.75",
     "optionD": "153.75",
     "correct": "D",
-    "explanation": "New value = 125 × (1 + 23/100) = 125 × 1.23 = 153.75"
+    "explanation": "New value = 125 × (1 + 23/100) = 125 × 1.23 = 153.75",
+    "options": [
+      "143.75",
+      "148.00",
+      "163.75",
+      "153.75"
+    ],
+    "correct_key": "D"
   },
   {
     "id": 213,
@@ -62,7 +90,14 @@
     "optionC": "50",
     "optionD": "46",
     "correct": "C",
-    "explanation": "First find f(3) = 3(3) + 1 = 10. Then g(f(3)) = g(10) = 5(10) = 50"
+    "explanation": "First find f(3) = 3(3) + 1 = 10. Then g(f(3)) = g(10) = 5(10) = 50",
+    "options": [
+      "45",
+      "55",
+      "50",
+      "46"
+    ],
+    "correct_key": "C"
   },
   {
     "id": 419,
@@ -75,7 +110,14 @@
     "optionC": "2.78",
     "optionD": "2.28",
     "correct": "D",
-    "explanation": "Combined speed = 57 + 66 = 123 mph. Time = distance/speed = 281/123 = 2.28 hours"
+    "explanation": "Combined speed = 57 + 66 = 123 mph. Time = distance/speed = 281/123 = 2.28 hours",
+    "options": [
+      "1.78",
+      "4.93",
+      "2.78",
+      "2.28"
+    ],
+    "correct_key": "D"
   },
   {
     "id": 438,
@@ -88,7 +130,14 @@
     "optionC": "267.41",
     "optionD": "230.00",
     "correct": "C",
-    "explanation": "New value = 187 × (1 + 43/100) = 187 × 1.43 = 267.41"
+    "explanation": "New value = 187 × (1 + 43/100) = 187 × 1.43 = 267.41",
+    "options": [
+      "257.41",
+      "277.41",
+      "267.41",
+      "230.00"
+    ],
+    "correct_key": "C"
   },
   {
     "id": 362,
@@ -101,7 +150,14 @@
     "optionC": "0.275",
     "optionD": "0.250",
     "correct": "D",
-    "explanation": "Probability = (favorable outcomes)/(total outcomes) = 44/176 = 0.250"
+    "explanation": "Probability = (favorable outcomes)/(total outcomes) = 44/176 = 0.250",
+    "options": [
+      "0.225",
+      "44",
+      "0.275",
+      "0.250"
+    ],
+    "correct_key": "D"
   },
   {
     "id": 169,
@@ -114,7 +170,14 @@
     "optionC": "311.02",
     "optionD": "188.50",
     "correct": "B",
-    "explanation": "Volume = πr²h = π(3)²(10) = 282.74 cubic units"
+    "explanation": "Volume = πr²h = π(3)²(10) = 282.74 cubic units",
+    "options": [
+      "254.47",
+      "282.74",
+      "311.02",
+      "188.50"
+    ],
+    "correct_key": "B"
   },
   {
     "id": 230,
@@ -127,7 +190,14 @@
     "optionC": "All real numbers except x = 0",
     "optionD": "x > 5",
     "correct": "B",
-    "explanation": "The function is undefined when the denominator equals zero. x - 5 = 0 when x = 5, so the domain is all real numbers except 5."
+    "explanation": "The function is undefined when the denominator equals zero. x - 5 = 0 when x = 5, so the domain is all real numbers except 5.",
+    "options": [
+      "All real numbers",
+      "All real numbers except x = 5",
+      "All real numbers except x = 0",
+      "x > 5"
+    ],
+    "correct_key": "B"
   },
   {
     "id": 131,
@@ -140,7 +210,14 @@
     "optionC": "1.7321",
     "optionD": "0.4330",
     "correct": "A",
-    "explanation": "cos(30°) = 0.8660. Reference angle and quadrant determine the sign."
+    "explanation": "cos(30°) = 0.8660. Reference angle and quadrant determine the sign.",
+    "options": [
+      "0.8660",
+      "-0.8660",
+      "1.7321",
+      "0.4330"
+    ],
+    "correct_key": "A"
   },
   {
     "id": 294,
@@ -153,7 +230,14 @@
     "optionC": "Shift left 1 and up 0",
     "optionD": "Shift left 1 and down 0",
     "correct": "D",
-    "explanation": "f(x - h) shifts left by 1. Adding 0 shifts down by 0."
+    "explanation": "f(x - h) shifts left by 1. Adding 0 shifts down by 0.",
+    "options": [
+      "Shift left 1 and down 0",
+      "Reflect and shift",
+      "Shift left 1 and up 0",
+      "Shift left 1 and down 0"
+    ],
+    "correct_key": "D"
   },
   {
     "id": 468,
@@ -166,7 +250,14 @@
     "optionC": "x > 3.50",
     "optionD": "x < 5.38",
     "correct": "B",
-    "explanation": "Subtract 15: 8x < 28. Divide by 8: x < 3.50"
+    "explanation": "Subtract 15: 8x < 28. Divide by 8: x < 3.50",
+    "options": [
+      "x < 2.50",
+      "x < 3.50",
+      "x > 3.50",
+      "x < 5.38"
+    ],
+    "correct_key": "B"
   },
   {
     "id": 48,
@@ -179,7 +270,14 @@
     "optionC": "(5.67, 0.47)",
     "optionD": "(4.67, 1.47)",
     "correct": "A",
-    "explanation": "Add the equations: 12x = 56, so x = 4.67. Substitute into first equation: 4(4.67) + 5y = 21, solving gives y = 0.47"
+    "explanation": "Add the equations: 12x = 56, so x = 4.67. Substitute into first equation: 4(4.67) + 5y = 21, solving gives y = 0.47",
+    "options": [
+      "(4.67, 0.47)",
+      "(0.47, 4.67)",
+      "(5.67, 0.47)",
+      "(4.67, 1.47)"
+    ],
+    "correct_key": "A"
   },
   {
     "id": 37,
@@ -192,7 +290,14 @@
     "optionC": "(3.79, 3.33)",
     "optionD": "(2.79, 4.33)",
     "correct": "A",
-    "explanation": "Add the equations: 24x = 67, so x = 2.79. Substitute into first equation: 8(2.79) + 5y = 39, solving gives y = 3.33"
+    "explanation": "Add the equations: 24x = 67, so x = 2.79. Substitute into first equation: 8(2.79) + 5y = 39, solving gives y = 3.33",
+    "options": [
+      "(2.79, 3.33)",
+      "(3.33, 2.79)",
+      "(3.79, 3.33)",
+      "(2.79, 4.33)"
+    ],
+    "correct_key": "A"
   },
   {
     "id": 289,
@@ -205,7 +310,14 @@
     "optionC": "Shift left 4 and up 2",
     "optionD": "Reflect and shift",
     "correct": "C",
-    "explanation": "f(x - h) shifts left by 4. Adding 2 shifts up by 2."
+    "explanation": "f(x - h) shifts left by 4. Adding 2 shifts up by 2.",
+    "options": [
+      "Shift left 4 and up 2",
+      "Shift left 4 and down 2",
+      "Shift left 4 and up 2",
+      "Reflect and shift"
+    ],
+    "correct_key": "C"
   },
   {
     "id": 487,
@@ -218,7 +330,14 @@
     "optionC": "170",
     "optionD": "162",
     "correct": "D",
-    "explanation": "nth term = a₁ + (n-1)d = 10 + (20-1)(8) = 10 + 152 = 162"
+    "explanation": "nth term = a₁ + (n-1)d = 10 + (20-1)(8) = 10 + 152 = 162",
+    "options": [
+      "154",
+      "170",
+      "170",
+      "162"
+    ],
+    "correct_key": "D"
   },
   {
     "id": 42,
@@ -231,7 +350,14 @@
     "optionC": "(7.33, 6.67)",
     "optionD": "(6.33, 7.67)",
     "correct": "A",
-    "explanation": "Add the equations: 6x = 38, so x = 6.33. Substitute into first equation: 2(6.33) + 2y = 26, solving gives y = 6.67"
+    "explanation": "Add the equations: 6x = 38, so x = 6.33. Substitute into first equation: 2(6.33) + 2y = 26, solving gives y = 6.67",
+    "options": [
+      "(6.33, 6.67)",
+      "(6.67, 6.33)",
+      "(7.33, 6.67)",
+      "(6.33, 7.67)"
+    ],
+    "correct_key": "A"
   },
   {
     "id": 412,
@@ -244,7 +370,14 @@
     "optionC": "2.26",
     "optionD": "3.17",
     "correct": "B",
-    "explanation": "Combined speed = 76 + 61 = 137 mph. Time = distance/speed = 241/137 = 1.76 hours"
+    "explanation": "Combined speed = 76 + 61 = 137 mph. Time = distance/speed = 241/137 = 1.76 hours",
+    "options": [
+      "1.26",
+      "1.76",
+      "2.26",
+      "3.17"
+    ],
+    "correct_key": "B"
   },
   {
     "id": 85,
@@ -257,7 +390,14 @@
     "optionC": "x² - 3",
     "optionD": "(x - 3)(x + 3)",
     "correct": "A",
-    "explanation": "Factor the numerator: x² - 9 = (x - 3)(x + 3). Dividing by (x + 3) gives x - 3, where x ≠ -3."
+    "explanation": "Factor the numerator: x² - 9 = (x - 3)(x + 3). Dividing by (x + 3) gives x - 3, where x ≠ -3.",
+    "options": [
+      "x - 3",
+      "x + 3",
+      "x² - 3",
+      "(x - 3)(x + 3)"
+    ],
+    "correct_key": "A"
   },
   {
     "id": 422,
@@ -270,7 +410,14 @@
     "optionC": "158.96",
     "optionD": "145.00",
     "correct": "B",
-    "explanation": "New value = 112 × (1 + 33/100) = 112 × 1.33 = 148.96"
+    "explanation": "New value = 112 × (1 + 33/100) = 112 × 1.33 = 148.96",
+    "options": [
+      "138.96",
+      "148.96",
+      "158.96",
+      "145.00"
+    ],
+    "correct_key": "B"
   },
   {
     "id": 426,
@@ -283,7 +430,14 @@
     "optionC": "140.56",
     "optionD": "130.56",
     "correct": "D",
-    "explanation": "New value = 96 × (1 + 36/100) = 96 × 1.3599999999999999 = 130.56"
+    "explanation": "New value = 96 × (1 + 36/100) = 96 × 1.3599999999999999 = 130.56",
+    "options": [
+      "120.56",
+      "132.00",
+      "140.56",
+      "130.56"
+    ],
+    "correct_key": "D"
   },
   {
     "id": 357,
@@ -296,7 +450,14 @@
     "optionC": "0.410",
     "optionD": "69",
     "correct": "B",
-    "explanation": "Probability = (favorable outcomes)/(total outcomes) = 69/185 = 0.373"
+    "explanation": "Probability = (favorable outcomes)/(total outcomes) = 69/185 = 0.373",
+    "options": [
+      "0.336",
+      "0.373",
+      "0.410",
+      "69"
+    ],
+    "correct_key": "B"
   },
   {
     "id": 252,
@@ -309,7 +470,14 @@
     "optionC": "f⁻¹(x) = 3x - -15",
     "optionD": "f⁻¹(x) = (x + -15)/3",
     "correct": "B",
-    "explanation": "To find inverse: y = 3x + -15, solve for x: x = (y - -15)/3. Replace y with x: f⁻¹(x) = (x - -15)/3"
+    "explanation": "To find inverse: y = 3x + -15, solve for x: x = (y - -15)/3. Replace y with x: f⁻¹(x) = (x - -15)/3",
+    "options": [
+      "f⁻¹(x) = x/3 - -15",
+      "f⁻¹(x) = (x - -15)/3",
+      "f⁻¹(x) = 3x - -15",
+      "f⁻¹(x) = (x + -15)/3"
+    ],
+    "correct_key": "B"
   },
   {
     "id": 255,
@@ -322,7 +490,14 @@
     "optionC": "f⁻¹(x) = 2x - 6",
     "optionD": "f⁻¹(x) = (x + 6)/2",
     "correct": "A",
-    "explanation": "To find inverse: y = 2x + 6, solve for x: x = (y - 6)/2. Replace y with x: f⁻¹(x) = (x - 6)/2"
+    "explanation": "To find inverse: y = 2x + 6, solve for x: x = (y - 6)/2. Replace y with x: f⁻¹(x) = (x - 6)/2",
+    "options": [
+      "f⁻¹(x) = (x - 6)/2",
+      "f⁻¹(x) = x/2 - 6",
+      "f⁻¹(x) = 2x - 6",
+      "f⁻¹(x) = (x + 6)/2"
+    ],
+    "correct_key": "A"
   },
   {
     "id": 215,
@@ -335,7 +510,14 @@
     "optionC": "17",
     "optionD": "15",
     "correct": "B",
-    "explanation": "First find f(3) = 3(3) + -3 = 6. Then g(f(3)) = g(6) = 2(6) = 12"
+    "explanation": "First find f(3) = 3(3) + -3 = 6. Then g(f(3)) = g(6) = 2(6) = 12",
+    "options": [
+      "7",
+      "12",
+      "17",
+      "15"
+    ],
+    "correct_key": "B"
   },
   {
     "id": 421,
@@ -348,7 +530,14 @@
     "optionC": "116.62",
     "optionD": "117.00",
     "correct": "C",
-    "explanation": "New value = 98 × (1 + 19/100) = 98 × 1.19 = 116.62"
+    "explanation": "New value = 98 × (1 + 19/100) = 98 × 1.19 = 116.62",
+    "options": [
+      "106.62",
+      "126.62",
+      "116.62",
+      "117.00"
+    ],
+    "correct_key": "C"
   },
   {
     "id": 371,
@@ -361,7 +550,14 @@
     "optionC": "0.376",
     "optionD": "59",
     "correct": "C",
-    "explanation": "Probability = (favorable outcomes)/(total outcomes) = 59/157 = 0.376"
+    "explanation": "Probability = (favorable outcomes)/(total outcomes) = 59/157 = 0.376",
+    "options": [
+      "0.338",
+      "0.413",
+      "0.376",
+      "59"
+    ],
+    "correct_key": "C"
   },
   {
     "id": 127,
@@ -374,7 +570,14 @@
     "optionC": "1.1547",
     "optionD": "0.2887",
     "correct": "A",
-    "explanation": "tan(210°) = 0.5774. Reference angle and quadrant determine the sign."
+    "explanation": "tan(210°) = 0.5774. Reference angle and quadrant determine the sign.",
+    "options": [
+      "0.5774",
+      "-0.5774",
+      "1.1547",
+      "0.2887"
+    ],
+    "correct_key": "A"
   },
   {
     "id": 269,
@@ -387,7 +590,14 @@
     "optionC": "f⁻¹(x) = 3x - 10",
     "optionD": "f⁻¹(x) = (x - 10)/3",
     "correct": "D",
-    "explanation": "To find inverse: y = 3x + 10, solve for x: x = (y - 10)/3. Replace y with x: f⁻¹(x) = (x - 10)/3"
+    "explanation": "To find inverse: y = 3x + 10, solve for x: x = (y - 10)/3. Replace y with x: f⁻¹(x) = (x - 10)/3",
+    "options": [
+      "f⁻¹(x) = x/3 - 10",
+      "f⁻¹(x) = (x + 10)/3",
+      "f⁻¹(x) = 3x - 10",
+      "f⁻¹(x) = (x - 10)/3"
+    ],
+    "correct_key": "D"
   },
   {
     "id": 449,
@@ -400,7 +610,14 @@
     "optionC": "3.00 hours",
     "optionD": "8.00 hours",
     "correct": "B",
-    "explanation": "Combined rate = 1/3 + 1/5 = 0.533 jobs/hour. Time = 1/rate = 1.88 hours"
+    "explanation": "Combined rate = 1/3 + 1/5 = 0.533 jobs/hour. Time = 1/rate = 1.88 hours",
+    "options": [
+      "4.00 hours",
+      "1.88 hours",
+      "3.00 hours",
+      "8.00 hours"
+    ],
+    "correct_key": "B"
   },
   {
     "id": 462,
@@ -413,7 +630,14 @@
     "optionC": "x < 2.50",
     "optionD": "x < 6.75",
     "correct": "C",
-    "explanation": "Subtract 17: 4x < 10. Divide by 4: x < 2.50"
+    "explanation": "Subtract 17: 4x < 10. Divide by 4: x < 2.50",
+    "options": [
+      "x < 1.50",
+      "x > 2.50",
+      "x < 2.50",
+      "x < 6.75"
+    ],
+    "correct_key": "C"
   },
   {
     "id": 102,
@@ -426,7 +650,14 @@
     "optionC": "41.47",
     "optionD": "113.10",
     "correct": "B",
-    "explanation": "Arc length = (θ/360°) × 2πr = (120/360) × 2π(18) = 37.70 units"
+    "explanation": "Arc length = (θ/360°) × 2πr = (120/360) × 2π(18) = 37.70 units",
+    "options": [
+      "33.93",
+      "37.70",
+      "41.47",
+      "113.10"
+    ],
+    "correct_key": "B"
   },
   {
     "id": 254,
@@ -439,7 +670,14 @@
     "optionC": "f⁻¹(x) = 5x - 9",
     "optionD": "f⁻¹(x) = (x - 9)/5",
     "correct": "D",
-    "explanation": "To find inverse: y = 5x + 9, solve for x: x = (y - 9)/5. Replace y with x: f⁻¹(x) = (x - 9)/5"
+    "explanation": "To find inverse: y = 5x + 9, solve for x: x = (y - 9)/5. Replace y with x: f⁻¹(x) = (x - 9)/5",
+    "options": [
+      "f⁻¹(x) = x/5 - 9",
+      "f⁻¹(x) = (x + 9)/5",
+      "f⁻¹(x) = 5x - 9",
+      "f⁻¹(x) = (x - 9)/5"
+    ],
+    "correct_key": "D"
   },
   {
     "id": 58,
@@ -452,7 +690,14 @@
     "optionC": "434",
     "optionD": "362",
     "correct": "C",
-    "explanation": "Use P(t) = P₀(1 + r)^t = 200(1.0901563522039635)^9 = 434. Option D incorrectly uses simple interest instead of compound growth."
+    "explanation": "Use P(t) = P₀(1 + r)^t = 200(1.0901563522039635)^9 = 434. Option D incorrectly uses simple interest instead of compound growth.",
+    "options": [
+      "391",
+      "478",
+      "434",
+      "362"
+    ],
+    "correct_key": "C"
   },
   {
     "id": 437,
@@ -465,7 +710,14 @@
     "optionC": "172.15",
     "optionD": "162.15",
     "correct": "D",
-    "explanation": "New value = 115 × (1 + 41/100) = 115 × 1.41 = 162.15"
+    "explanation": "New value = 115 × (1 + 41/100) = 115 × 1.41 = 162.15",
+    "options": [
+      "152.15",
+      "156.00",
+      "172.15",
+      "162.15"
+    ],
+    "correct_key": "D"
   },
   {
     "id": 46,
@@ -478,7 +730,14 @@
     "optionC": "(8.67, 5.20)",
     "optionD": "(7.67, 6.20)",
     "correct": "A",
-    "explanation": "Add the equations: 9x = 69, so x = 7.67. Substitute into first equation: 3(7.67) + 5y = 49, solving gives y = 5.20"
+    "explanation": "Add the equations: 9x = 69, so x = 7.67. Substitute into first equation: 3(7.67) + 5y = 49, solving gives y = 5.20",
+    "options": [
+      "(7.67, 5.20)",
+      "(5.20, 7.67)",
+      "(8.67, 5.20)",
+      "(7.67, 6.20)"
+    ],
+    "correct_key": "A"
   },
   {
     "id": 138,
@@ -491,7 +750,14 @@
     "optionC": "1.4142",
     "optionD": "0.3536",
     "correct": "A",
-    "explanation": "sin(315°) = -0.7071. Reference angle and quadrant determine the sign."
+    "explanation": "sin(315°) = -0.7071. Reference angle and quadrant determine the sign.",
+    "options": [
+      "-0.7071",
+      "0.7071",
+      "1.4142",
+      "0.3536"
+    ],
+    "correct_key": "A"
   },
   {
     "id": 288,
@@ -504,7 +770,14 @@
     "optionC": "Shift left 4 and up 5",
     "optionD": "Reflect and shift",
     "correct": "C",
-    "explanation": "f(x - h) shifts left by 4. Adding 5 shifts up by 5."
+    "explanation": "f(x - h) shifts left by 4. Adding 5 shifts up by 5.",
+    "options": [
+      "Shift left 4 and up 5",
+      "Shift left 4 and down 5",
+      "Shift left 4 and up 5",
+      "Reflect and shift"
+    ],
+    "correct_key": "C"
   },
   {
     "id": 214,
@@ -517,7 +790,14 @@
     "optionC": "110",
     "optionD": "82",
     "correct": "C",
-    "explanation": "First find f(3) = 5(3) + 7 = 22. Then g(f(3)) = g(22) = 5(22) = 110"
+    "explanation": "First find f(3) = 5(3) + 7 = 22. Then g(f(3)) = g(22) = 5(22) = 110",
+    "options": [
+      "105",
+      "115",
+      "110",
+      "82"
+    ],
+    "correct_key": "C"
   },
   {
     "id": 33,
@@ -530,7 +810,14 @@
     "optionC": "(11.83, 4.05)",
     "optionD": "(10.83, 5.05)",
     "correct": "A",
-    "explanation": "Add the equations: 6x = 65, so x = 10.83. Substitute into first equation: 2(10.83) + 7y = 50, solving gives y = 4.05"
+    "explanation": "Add the equations: 6x = 65, so x = 10.83. Substitute into first equation: 2(10.83) + 7y = 50, solving gives y = 4.05",
+    "options": [
+      "(10.83, 4.05)",
+      "(4.05, 10.83)",
+      "(11.83, 4.05)",
+      "(10.83, 5.05)"
+    ],
+    "correct_key": "A"
   },
   {
     "id": 32,
@@ -543,7 +830,14 @@
     "optionC": "(4.47, 0.92)",
     "optionD": "(3.47, 1.92)",
     "correct": "A",
-    "explanation": "Add the equations: 15x = 52, so x = 3.47. Substitute into first equation: 5(3.47) + 4y = 21, solving gives y = 0.92"
+    "explanation": "Add the equations: 15x = 52, so x = 3.47. Substitute into first equation: 5(3.47) + 4y = 21, solving gives y = 0.92",
+    "options": [
+      "(3.47, 0.92)",
+      "(0.92, 3.47)",
+      "(4.47, 0.92)",
+      "(3.47, 1.92)"
+    ],
+    "correct_key": "A"
   },
   {
     "id": 278,
@@ -556,7 +850,14 @@
     "optionC": "Shift left 1 and up 4",
     "optionD": "Reflect and shift",
     "correct": "C",
-    "explanation": "f(x - h) shifts left by 1. Adding 4 shifts up by 4."
+    "explanation": "f(x - h) shifts left by 1. Adding 4 shifts up by 4.",
+    "options": [
+      "Shift left 1 and up 4",
+      "Shift left 1 and down 4",
+      "Shift left 1 and up 4",
+      "Reflect and shift"
+    ],
+    "correct_key": "C"
   },
   {
     "id": 205,
@@ -569,7 +870,14 @@
     "optionC": "-6",
     "optionD": "1",
     "correct": "C",
-    "explanation": "First find f(2) = 2(2) - 7 = -3. Then g(f(2)) = g(-3) = 2(-3) = -6"
+    "explanation": "First find f(2) = 2(2) - 7 = -3. Then g(f(2)) = g(-3) = 2(-3) = -6",
+    "options": [
+      "-11",
+      "-1",
+      "-6",
+      "1"
+    ],
+    "correct_key": "C"
   },
   {
     "id": 471,
@@ -582,7 +890,14 @@
     "optionC": "x > 6.60",
     "optionD": "x < 7.20",
     "correct": "B",
-    "explanation": "Subtract 3: 5x < 33. Divide by 5: x < 6.60"
+    "explanation": "Subtract 3: 5x < 33. Divide by 5: x < 6.60",
+    "options": [
+      "x < 5.60",
+      "x < 6.60",
+      "x > 6.60",
+      "x < 7.20"
+    ],
+    "correct_key": "B"
   },
   {
     "id": 484,
@@ -595,7 +910,14 @@
     "optionC": "152",
     "optionD": "160",
     "correct": "C",
-    "explanation": "nth term = a₁ + (n-1)d = 8 + (19-1)(8) = 8 + 144 = 152"
+    "explanation": "nth term = a₁ + (n-1)d = 8 + (19-1)(8) = 8 + 144 = 152",
+    "options": [
+      "144",
+      "160",
+      "152",
+      "160"
+    ],
+    "correct_key": "C"
   },
   {
     "id": 158,
@@ -608,7 +930,14 @@
     "optionC": "14.87",
     "optionD": "21.00",
     "correct": "C",
-    "explanation": "By the Pythagorean theorem: c² = 10² + 11² = 100 + 121 = 221, so c = √221 = 14.87"
+    "explanation": "By the Pythagorean theorem: c² = 10² + 11² = 100 + 121 = 221, so c = √221 = 14.87",
+    "options": [
+      "13.87",
+      "15.87",
+      "14.87",
+      "21.00"
+    ],
+    "correct_key": "C"
   },
   {
     "id": 500,
@@ -621,7 +950,14 @@
     "optionC": "126",
     "optionD": "126",
     "correct": "B",
-    "explanation": "nth term = a₁ + (n-1)d = 6 + (15-1)(8) = 6 + 112 = 118"
+    "explanation": "nth term = a₁ + (n-1)d = 6 + (15-1)(8) = 6 + 112 = 118",
+    "options": [
+      "110",
+      "118",
+      "126",
+      "126"
+    ],
+    "correct_key": "B"
   },
   {
     "id": 391,
@@ -634,7 +970,14 @@
     "optionC": "10.40",
     "optionD": "5.40",
     "correct": "C",
-    "explanation": "Substitute x = 7: y = 0.77(7) + 5.00 = 10.40"
+    "explanation": "Substitute x = 7: y = 0.77(7) + 5.00 = 10.40",
+    "options": [
+      "8.40",
+      "12.40",
+      "10.40",
+      "5.40"
+    ],
+    "correct_key": "C"
   },
   {
     "id": 434,
@@ -647,7 +990,14 @@
     "optionC": "240.10",
     "optionD": "207.00",
     "correct": "B",
-    "explanation": "New value = 177 × (1 + 30/100) = 177 × 1.3 = 230.10"
+    "explanation": "New value = 177 × (1 + 30/100) = 177 × 1.3 = 230.10",
+    "options": [
+      "220.10",
+      "230.10",
+      "240.10",
+      "207.00"
+    ],
+    "correct_key": "B"
   },
   {
     "id": 375,
@@ -660,7 +1010,14 @@
     "optionC": "0.303",
     "optionD": "30",
     "correct": "B",
-    "explanation": "Probability = (favorable outcomes)/(total outcomes) = 30/109 = 0.275"
+    "explanation": "Probability = (favorable outcomes)/(total outcomes) = 30/109 = 0.275",
+    "options": [
+      "0.248",
+      "0.275",
+      "0.303",
+      "30"
+    ],
+    "correct_key": "B"
   },
   {
     "id": 314,
@@ -673,7 +1030,14 @@
     "optionC": "5.7",
     "optionD": "24.7",
     "correct": "C",
-    "explanation": "Mean = 173/7 = 24.7. Median (middle value) = 19. Difference = |24.7 - 19| = 5.7"
+    "explanation": "Mean = 173/7 = 24.7. Median (middle value) = 19. Difference = |24.7 - 19| = 5.7",
+    "options": [
+      "4.7",
+      "6.7",
+      "5.7",
+      "24.7"
+    ],
+    "correct_key": "C"
   },
   {
     "id": 364,
@@ -686,7 +1050,14 @@
     "optionC": "0.402",
     "optionD": "65",
     "correct": "B",
-    "explanation": "Probability = (favorable outcomes)/(total outcomes) = 65/178 = 0.365"
+    "explanation": "Probability = (favorable outcomes)/(total outcomes) = 65/178 = 0.365",
+    "options": [
+      "0.329",
+      "0.365",
+      "0.402",
+      "65"
+    ],
+    "correct_key": "B"
   },
   {
     "id": 286,
@@ -699,7 +1070,14 @@
     "optionC": "Shift left 3 and down 2",
     "optionD": "Reflect and shift",
     "correct": "A",
-    "explanation": "f(x - h) shifts left by 3. Adding 2 shifts up by 2."
+    "explanation": "f(x - h) shifts left by 3. Adding 2 shifts up by 2.",
+    "options": [
+      "Shift left 3 and up 2",
+      "Shift left 3 and up 2",
+      "Shift left 3 and down 2",
+      "Reflect and shift"
+    ],
+    "correct_key": "A"
   },
   {
     "id": 218,
@@ -712,7 +1090,14 @@
     "optionC": "47",
     "optionD": "38",
     "correct": "A",
-    "explanation": "First find f(3) = 4(3) + 2 = 14. Then g(f(3)) = g(14) = 3(14) = 42"
+    "explanation": "First find f(3) = 4(3) + 2 = 14. Then g(f(3)) = g(14) = 3(14) = 42",
+    "options": [
+      "42",
+      "37",
+      "47",
+      "38"
+    ],
+    "correct_key": "A"
   },
   {
     "id": 370,
@@ -725,7 +1110,14 @@
     "optionC": "0.312",
     "optionD": "55",
     "correct": "A",
-    "explanation": "Probability = (favorable outcomes)/(total outcomes) = 55/194 = 0.284"
+    "explanation": "Probability = (favorable outcomes)/(total outcomes) = 55/194 = 0.284",
+    "options": [
+      "0.284",
+      "0.255",
+      "0.312",
+      "55"
+    ],
+    "correct_key": "A"
   },
   {
     "id": 227,
@@ -738,7 +1130,14 @@
     "optionC": "All real numbers except x = 0",
     "optionD": "x > 8",
     "correct": "B",
-    "explanation": "The function is undefined when the denominator equals zero. x - 8 = 0 when x = 8, so the domain is all real numbers except 8."
+    "explanation": "The function is undefined when the denominator equals zero. x - 8 = 0 when x = 8, so the domain is all real numbers except 8.",
+    "options": [
+      "All real numbers",
+      "All real numbers except x = 8",
+      "All real numbers except x = 0",
+      "x > 8"
+    ],
+    "correct_key": "B"
   },
   {
     "id": 115,
@@ -751,7 +1150,14 @@
     "optionC": "8.64",
     "optionD": "62.83",
     "correct": "A",
-    "explanation": "Arc length = (θ/360°) × 2πr = (45/360) × 2π(10) = 7.85 units"
+    "explanation": "Arc length = (θ/360°) × 2πr = (45/360) × 2π(10) = 7.85 units",
+    "options": [
+      "7.85",
+      "7.07",
+      "8.64",
+      "62.83"
+    ],
+    "correct_key": "A"
   },
   {
     "id": 162,
@@ -764,7 +1170,14 @@
     "optionC": "1548.18",
     "optionD": "1407.43",
     "correct": "D",
-    "explanation": "Volume = πr²h = π(8)²(7) = 1407.43 cubic units"
+    "explanation": "Volume = πr²h = π(8)²(7) = 1407.43 cubic units",
+    "options": [
+      "1266.69",
+      "351.86",
+      "1548.18",
+      "1407.43"
+    ],
+    "correct_key": "D"
   },
   {
     "id": 109,
@@ -777,7 +1190,14 @@
     "optionC": "49.74",
     "optionD": "119.38",
     "correct": "C",
-    "explanation": "Arc length = (θ/360°) × 2πr = (150/360) × 2π(19) = 49.74 units"
+    "explanation": "Arc length = (θ/360°) × 2πr = (150/360) × 2π(19) = 49.74 units",
+    "options": [
+      "44.77",
+      "54.72",
+      "49.74",
+      "119.38"
+    ],
+    "correct_key": "C"
   },
   {
     "id": 369,
@@ -790,7 +1210,14 @@
     "optionC": "0.207",
     "optionD": "40",
     "correct": "C",
-    "explanation": "Probability = (favorable outcomes)/(total outcomes) = 40/193 = 0.207"
+    "explanation": "Probability = (favorable outcomes)/(total outcomes) = 40/193 = 0.207",
+    "options": [
+      "0.187",
+      "0.228",
+      "0.207",
+      "40"
+    ],
+    "correct_key": "C"
   },
   {
     "id": 157,
@@ -803,7 +1230,14 @@
     "optionC": "11.82",
     "optionD": "15.00",
     "correct": "B",
-    "explanation": "By the Pythagorean theorem: c² = 6² + 9² = 36 + 81 = 117, so c = √117 = 10.82"
+    "explanation": "By the Pythagorean theorem: c² = 6² + 9² = 36 + 81 = 117, so c = √117 = 10.82",
+    "options": [
+      "9.82",
+      "10.82",
+      "11.82",
+      "15.00"
+    ],
+    "correct_key": "B"
   },
   {
     "id": 423,
@@ -816,7 +1250,14 @@
     "optionC": "201.26",
     "optionD": "177.00",
     "correct": "A",
-    "explanation": "New value = 146 × (1 + 31/100) = 146 × 1.31 = 191.26"
+    "explanation": "New value = 146 × (1 + 31/100) = 146 × 1.31 = 191.26",
+    "options": [
+      "191.26",
+      "181.26",
+      "201.26",
+      "177.00"
+    ],
+    "correct_key": "A"
   },
   {
     "id": 209,
@@ -829,7 +1270,14 @@
     "optionC": "70",
     "optionD": "29",
     "correct": "B",
-    "explanation": "First find f(1) = 4(1) + 9 = 13. Then g(f(1)) = g(13) = 5(13) = 65"
+    "explanation": "First find f(1) = 4(1) + 9 = 13. Then g(f(1)) = g(13) = 5(13) = 65",
+    "options": [
+      "60",
+      "65",
+      "70",
+      "29"
+    ],
+    "correct_key": "B"
   },
   {
     "id": 150,
@@ -842,7 +1290,14 @@
     "optionC": "15.42",
     "optionD": "20.00",
     "correct": "A",
-    "explanation": "By the Pythagorean theorem: c² = 12² + 8² = 144 + 64 = 208, so c = √208 = 14.42"
+    "explanation": "By the Pythagorean theorem: c² = 12² + 8² = 144 + 64 = 208, so c = √208 = 14.42",
+    "options": [
+      "14.42",
+      "13.42",
+      "15.42",
+      "20.00"
+    ],
+    "correct_key": "A"
   },
   {
     "id": 440,
@@ -855,7 +1310,14 @@
     "optionC": "115.83",
     "optionD": "116.00",
     "correct": "C",
-    "explanation": "New value = 99 × (1 + 17/100) = 99 × 1.17 = 115.83"
+    "explanation": "New value = 99 × (1 + 17/100) = 99 × 1.17 = 115.83",
+    "options": [
+      "105.83",
+      "125.83",
+      "115.83",
+      "116.00"
+    ],
+    "correct_key": "C"
   },
   {
     "id": 75,
@@ -868,7 +1330,14 @@
     "optionC": "701",
     "optionD": "637",
     "correct": "D",
-    "explanation": "Use P(t) = P₀(1 + r)^t = 365(1.0438742629149644)^13 = 637. Option B incorrectly uses simple interest instead of compound growth."
+    "explanation": "Use P(t) = P₀(1 + r)^t = 365(1.0438742629149644)^13 = 637. Option B incorrectly uses simple interest instead of compound growth.",
+    "options": [
+      "574",
+      "573",
+      "701",
+      "637"
+    ],
+    "correct_key": "D"
   },
   {
     "id": 181,
@@ -881,7 +1350,14 @@
     "optionC": "12",
     "optionD": "20",
     "correct": "B",
-    "explanation": "For similar figures, corresponding sides are proportional. Side ratio = 2:1, so larger side = 10 × 2 = 20"
+    "explanation": "For similar figures, corresponding sides are proportional. Side ratio = 2:1, so larger side = 10 × 2 = 20",
+    "options": [
+      "18",
+      "20",
+      "12",
+      "20"
+    ],
+    "correct_key": "B"
   },
   {
     "id": 15,
@@ -894,7 +1370,14 @@
     "optionC": "-0.25",
     "optionD": "1.00",
     "correct": "A",
-    "explanation": "For a quadratic f(x) = ax² + bx + c, the vertex is at x = -b/(2a) = -0.25. Substituting back: f(-0.25) = 2(-0.25)² + 1(-0.25) + 1 = 0.88"
+    "explanation": "For a quadratic f(x) = ax² + bx + c, the vertex is at x = -b/(2a) = -0.25. Substituting back: f(-0.25) = 2(-0.25)² + 1(-0.25) + 1 = 0.88",
+    "options": [
+      "0.88",
+      "1.12",
+      "-0.25",
+      "1.00"
+    ],
+    "correct_key": "A"
   },
   {
     "id": 148,
@@ -907,7 +1390,14 @@
     "optionC": "15.32",
     "optionD": "19.00",
     "correct": "B",
-    "explanation": "By the Pythagorean theorem: c² = 6² + 13² = 36 + 169 = 205, so c = √205 = 14.32"
+    "explanation": "By the Pythagorean theorem: c² = 6² + 13² = 36 + 169 = 205, so c = √205 = 14.32",
+    "options": [
+      "13.32",
+      "14.32",
+      "15.32",
+      "19.00"
+    ],
+    "correct_key": "B"
   },
   {
     "id": 43,
@@ -920,7 +1410,14 @@
     "optionC": "(5.92, -0.73)",
     "optionD": "(4.92, 0.27)",
     "correct": "A",
-    "explanation": "Add the equations: 12x = 59, so x = 4.92. Substitute into first equation: 4(4.92) + 5y = 16, solving gives y = -0.73"
+    "explanation": "Add the equations: 12x = 59, so x = 4.92. Substitute into first equation: 4(4.92) + 5y = 16, solving gives y = -0.73",
+    "options": [
+      "(4.92, -0.73)",
+      "(-0.73, 4.92)",
+      "(5.92, -0.73)",
+      "(4.92, 0.27)"
+    ],
+    "correct_key": "A"
   },
   {
     "id": 145,
@@ -933,7 +1430,14 @@
     "optionC": "13.53",
     "optionD": "17.00",
     "correct": "B",
-    "explanation": "By the Pythagorean theorem: c² = 6² + 11² = 36 + 121 = 157, so c = √157 = 12.53"
+    "explanation": "By the Pythagorean theorem: c² = 6² + 11² = 36 + 121 = 157, so c = √157 = 12.53",
+    "options": [
+      "11.53",
+      "12.53",
+      "13.53",
+      "17.00"
+    ],
+    "correct_key": "B"
   },
   {
     "id": 366,
@@ -946,7 +1450,14 @@
     "optionC": "0.241",
     "optionD": "35",
     "correct": "B",
-    "explanation": "Probability = (favorable outcomes)/(total outcomes) = 35/160 = 0.219"
+    "explanation": "Probability = (favorable outcomes)/(total outcomes) = 35/160 = 0.219",
+    "options": [
+      "0.197",
+      "0.219",
+      "0.241",
+      "35"
+    ],
+    "correct_key": "B"
   },
   {
     "id": 401,
@@ -959,7 +1470,14 @@
     "optionC": "3.01",
     "optionD": "4.53",
     "correct": "A",
-    "explanation": "Combined speed = 80 + 64 = 144 mph. Time = distance/speed = 362/144 = 2.51 hours"
+    "explanation": "Combined speed = 80 + 64 = 144 mph. Time = distance/speed = 362/144 = 2.51 hours",
+    "options": [
+      "2.51",
+      "2.01",
+      "3.01",
+      "4.53"
+    ],
+    "correct_key": "A"
   },
   {
     "id": 458,
@@ -972,7 +1490,14 @@
     "optionC": "6.00 hours",
     "optionD": "3.43 hours",
     "correct": "D",
-    "explanation": "Combined rate = 1/8 + 1/6 = 0.292 jobs/hour. Time = 1/rate = 3.43 hours"
+    "explanation": "Combined rate = 1/8 + 1/6 = 0.292 jobs/hour. Time = 1/rate = 3.43 hours",
+    "options": [
+      "7.00 hours",
+      "14.00 hours",
+      "6.00 hours",
+      "3.43 hours"
+    ],
+    "correct_key": "D"
   },
   {
     "id": 263,
@@ -985,7 +1510,14 @@
     "optionC": "f⁻¹(x) = 8x - -14",
     "optionD": "f⁻¹(x) = (x - -14)/8",
     "correct": "D",
-    "explanation": "To find inverse: y = 8x + -14, solve for x: x = (y - -14)/8. Replace y with x: f⁻¹(x) = (x - -14)/8"
+    "explanation": "To find inverse: y = 8x + -14, solve for x: x = (y - -14)/8. Replace y with x: f⁻¹(x) = (x - -14)/8",
+    "options": [
+      "f⁻¹(x) = x/8 - -14",
+      "f⁻¹(x) = (x + -14)/8",
+      "f⁻¹(x) = 8x - -14",
+      "f⁻¹(x) = (x - -14)/8"
+    ],
+    "correct_key": "D"
   },
   {
     "id": 384,
@@ -998,7 +1530,14 @@
     "optionC": "22.01",
     "optionD": "26.01",
     "correct": "B",
-    "explanation": "Substitute x = 19: y = 1.37(19) + -6.00 = 20.01"
+    "explanation": "Substitute x = 19: y = 1.37(19) + -6.00 = 20.01",
+    "options": [
+      "18.01",
+      "20.01",
+      "22.01",
+      "26.01"
+    ],
+    "correct_key": "B"
   },
   {
     "id": 473,
@@ -1011,7 +1550,14 @@
     "optionC": "x > 2.38",
     "optionD": "x < 2.38",
     "correct": "D",
-    "explanation": "Subtract 15: 8x < 19. Divide by 8: x < 2.38"
+    "explanation": "Subtract 15: 8x < 19. Divide by 8: x < 2.38",
+    "options": [
+      "x < 1.38",
+      "x < 4.25",
+      "x > 2.38",
+      "x < 2.38"
+    ],
+    "correct_key": "D"
   },
   {
     "id": 282,
@@ -1024,7 +1570,14 @@
     "optionC": "Shift left 4 and down 4",
     "optionD": "Reflect and shift",
     "correct": "C",
-    "explanation": "f(x - h) shifts left by 4. Adding -4 shifts down by 4."
+    "explanation": "f(x - h) shifts left by 4. Adding -4 shifts down by 4.",
+    "options": [
+      "Shift left 4 and down 4",
+      "Shift left 4 and up 4",
+      "Shift left 4 and down 4",
+      "Reflect and shift"
+    ],
+    "correct_key": "C"
   },
   {
     "id": 143,
@@ -1037,7 +1590,14 @@
     "optionC": "18.69",
     "optionD": "25.00",
     "correct": "B",
-    "explanation": "By the Pythagorean theorem: c² = 12² + 13² = 144 + 169 = 313, so c = √313 = 17.69"
+    "explanation": "By the Pythagorean theorem: c² = 12² + 13² = 144 + 169 = 313, so c = √313 = 17.69",
+    "options": [
+      "16.69",
+      "17.69",
+      "18.69",
+      "25.00"
+    ],
+    "correct_key": "B"
   },
   {
     "id": 122,
@@ -1050,7 +1610,14 @@
     "optionC": "2.0000",
     "optionD": "0.5000",
     "correct": "A",
-    "explanation": "tan(45°) = 1.0000. Reference angle and quadrant determine the sign."
+    "explanation": "tan(45°) = 1.0000. Reference angle and quadrant determine the sign.",
+    "options": [
+      "1.0000",
+      "-1.0000",
+      "2.0000",
+      "0.5000"
+    ],
+    "correct_key": "A"
   },
   {
     "id": 30,
@@ -1063,7 +1630,14 @@
     "optionC": "(4.06, 10.33)",
     "optionD": "(3.06, 11.33)",
     "correct": "A",
-    "explanation": "Add the equations: 18x = 55, so x = 3.06. Substitute into first equation: 6(3.06) + 2y = 39, solving gives y = 10.33"
+    "explanation": "Add the equations: 18x = 55, so x = 3.06. Substitute into first equation: 6(3.06) + 2y = 39, solving gives y = 10.33",
+    "options": [
+      "(3.06, 10.33)",
+      "(10.33, 3.06)",
+      "(4.06, 10.33)",
+      "(3.06, 11.33)"
+    ],
+    "correct_key": "A"
   },
   {
     "id": 55,
@@ -1076,7 +1650,14 @@
     "optionC": "3098",
     "optionD": "2064",
     "correct": "C",
-    "explanation": "Use P(t) = P₀(1 + r)^t = 894(1.1091388377303875)^12 = 3098. Option D incorrectly uses simple interest instead of compound growth."
+    "explanation": "Use P(t) = P₀(1 + r)^t = 894(1.1091388377303875)^12 = 3098. Option D incorrectly uses simple interest instead of compound growth.",
+    "options": [
+      "2788",
+      "3408",
+      "3098",
+      "2064"
+    ],
+    "correct_key": "C"
   },
   {
     "id": 267,
@@ -1089,7 +1670,14 @@
     "optionC": "f⁻¹(x) = 3x - 12",
     "optionD": "f⁻¹(x) = (x + 12)/3",
     "correct": "B",
-    "explanation": "To find inverse: y = 3x + 12, solve for x: x = (y - 12)/3. Replace y with x: f⁻¹(x) = (x - 12)/3"
+    "explanation": "To find inverse: y = 3x + 12, solve for x: x = (y - 12)/3. Replace y with x: f⁻¹(x) = (x - 12)/3",
+    "options": [
+      "f⁻¹(x) = x/3 - 12",
+      "f⁻¹(x) = (x - 12)/3",
+      "f⁻¹(x) = 3x - 12",
+      "f⁻¹(x) = (x + 12)/3"
+    ],
+    "correct_key": "B"
   },
   {
     "id": 373,
@@ -1102,7 +1690,14 @@
     "optionC": "0.299",
     "optionD": "41",
     "correct": "B",
-    "explanation": "Probability = (favorable outcomes)/(total outcomes) = 41/151 = 0.272"
+    "explanation": "Probability = (favorable outcomes)/(total outcomes) = 41/151 = 0.272",
+    "options": [
+      "0.244",
+      "0.272",
+      "0.299",
+      "41"
+    ],
+    "correct_key": "B"
   },
   {
     "id": 319,
@@ -1115,7 +1710,14 @@
     "optionC": "2.7",
     "optionD": "23.7",
     "correct": "B",
-    "explanation": "Mean = 166/7 = 23.7. Median (middle value) = 22. Difference = |23.7 - 22| = 1.7"
+    "explanation": "Mean = 166/7 = 23.7. Median (middle value) = 22. Difference = |23.7 - 22| = 1.7",
+    "options": [
+      "0.7",
+      "1.7",
+      "2.7",
+      "23.7"
+    ],
+    "correct_key": "B"
   },
   {
     "id": 497,
@@ -1128,7 +1730,14 @@
     "optionC": "68",
     "optionD": "72",
     "correct": "C",
-    "explanation": "nth term = a₁ + (n-1)d = 8 + (16-1)(4) = 8 + 60 = 68"
+    "explanation": "nth term = a₁ + (n-1)d = 8 + (16-1)(4) = 8 + 60 = 68",
+    "options": [
+      "64",
+      "72",
+      "68",
+      "72"
+    ],
+    "correct_key": "C"
   },
   {
     "id": 465,
@@ -1141,7 +1750,14 @@
     "optionC": "x > 6.50",
     "optionD": "x < 6.50",
     "correct": "D",
-    "explanation": "Subtract 5: 6x < 39. Divide by 6: x < 6.50"
+    "explanation": "Subtract 5: 6x < 39. Divide by 6: x < 6.50",
+    "options": [
+      "x < 5.50",
+      "x < 7.33",
+      "x > 6.50",
+      "x < 6.50"
+    ],
+    "correct_key": "D"
   },
   {
     "id": 73,
@@ -1154,7 +1770,14 @@
     "optionC": "853",
     "optionD": "724",
     "correct": "B",
-    "explanation": "Use P(t) = P₀(1 + r)^t = 497(1.0571881292629823)^8 = 775. Option D incorrectly uses simple interest instead of compound growth."
+    "explanation": "Use P(t) = P₀(1 + r)^t = 497(1.0571881292629823)^8 = 775. Option D incorrectly uses simple interest instead of compound growth.",
+    "options": [
+      "697",
+      "775",
+      "853",
+      "724"
+    ],
+    "correct_key": "B"
   },
   {
     "id": 257,
@@ -1167,7 +1790,14 @@
     "optionC": "f⁻¹(x) = 6x - 15",
     "optionD": "f⁻¹(x) = (x + 15)/6",
     "correct": "B",
-    "explanation": "To find inverse: y = 6x + 15, solve for x: x = (y - 15)/6. Replace y with x: f⁻¹(x) = (x - 15)/6"
+    "explanation": "To find inverse: y = 6x + 15, solve for x: x = (y - 15)/6. Replace y with x: f⁻¹(x) = (x - 15)/6",
+    "options": [
+      "f⁻¹(x) = x/6 - 15",
+      "f⁻¹(x) = (x - 15)/6",
+      "f⁻¹(x) = 6x - 15",
+      "f⁻¹(x) = (x + 15)/6"
+    ],
+    "correct_key": "B"
   },
   {
     "id": 402,
@@ -1180,7 +1810,14 @@
     "optionC": "2.01",
     "optionD": "4.86",
     "correct": "C",
-    "explanation": "Combined speed = 56 + 79 = 135 mph. Time = distance/speed = 272/135 = 2.01 hours"
+    "explanation": "Combined speed = 56 + 79 = 135 mph. Time = distance/speed = 272/135 = 2.01 hours",
+    "options": [
+      "1.51",
+      "2.51",
+      "2.01",
+      "4.86"
+    ],
+    "correct_key": "C"
   },
   {
     "id": 496,
@@ -1193,7 +1830,14 @@
     "optionC": "109",
     "optionD": "109",
     "correct": "A",
-    "explanation": "nth term = a₁ + (n-1)d = 4 + (15-1)(7) = 4 + 98 = 102"
+    "explanation": "nth term = a₁ + (n-1)d = 4 + (15-1)(7) = 4 + 98 = 102",
+    "options": [
+      "102",
+      "95",
+      "109",
+      "109"
+    ],
+    "correct_key": "A"
   },
   {
     "id": 67,
@@ -1206,7 +1850,14 @@
     "optionC": "630",
     "optionD": "573",
     "correct": "D",
-    "explanation": "Use P(t) = P₀(1 + r)^t = 331(1.071059328125546)^8 = 573. Option B incorrectly uses simple interest instead of compound growth."
+    "explanation": "Use P(t) = P₀(1 + r)^t = 331(1.071059328125546)^8 = 573. Option B incorrectly uses simple interest instead of compound growth.",
+    "options": [
+      "515",
+      "519",
+      "630",
+      "573"
+    ],
+    "correct_key": "D"
   },
   {
     "id": 436,
@@ -1219,7 +1870,14 @@
     "optionC": "165.60",
     "optionD": "159.00",
     "correct": "C",
-    "explanation": "New value = 144 × (1 + 15/100) = 144 × 1.15 = 165.60"
+    "explanation": "New value = 144 × (1 + 15/100) = 144 × 1.15 = 165.60",
+    "options": [
+      "155.60",
+      "175.60",
+      "165.60",
+      "159.00"
+    ],
+    "correct_key": "C"
   },
   {
     "id": 414,
@@ -1232,7 +1890,14 @@
     "optionC": "3.39",
     "optionD": "6.84",
     "correct": "C",
-    "explanation": "Combined speed = 68 + 69 = 137 mph. Time = distance/speed = 465/137 = 3.39 hours"
+    "explanation": "Combined speed = 68 + 69 = 137 mph. Time = distance/speed = 465/137 = 3.39 hours",
+    "options": [
+      "2.89",
+      "3.89",
+      "3.39",
+      "6.84"
+    ],
+    "correct_key": "C"
   },
   {
     "id": 275,
@@ -1245,7 +1910,14 @@
     "optionC": "f⁻¹(x) = (x - -7)/8",
     "optionD": "f⁻¹(x) = (x + -7)/8",
     "correct": "C",
-    "explanation": "To find inverse: y = 8x + -7, solve for x: x = (y - -7)/8. Replace y with x: f⁻¹(x) = (x - -7)/8"
+    "explanation": "To find inverse: y = 8x + -7, solve for x: x = (y - -7)/8. Replace y with x: f⁻¹(x) = (x - -7)/8",
+    "options": [
+      "f⁻¹(x) = x/8 - -7",
+      "f⁻¹(x) = 8x - -7",
+      "f⁻¹(x) = (x - -7)/8",
+      "f⁻¹(x) = (x + -7)/8"
+    ],
+    "correct_key": "C"
   },
   {
     "id": 435,
@@ -1258,7 +1930,14 @@
     "optionC": "166.40",
     "optionD": "151.00",
     "correct": "B",
-    "explanation": "New value = 115 × (1 + 36/100) = 115 × 1.3599999999999999 = 156.40"
+    "explanation": "New value = 115 × (1 + 36/100) = 115 × 1.3599999999999999 = 156.40",
+    "options": [
+      "146.40",
+      "156.40",
+      "166.40",
+      "151.00"
+    ],
+    "correct_key": "B"
   },
   {
     "id": 142,
@@ -1271,7 +1950,14 @@
     "optionC": "17.64",
     "optionD": "23.00",
     "correct": "B",
-    "explanation": "By the Pythagorean theorem: c² = 9² + 14² = 81 + 196 = 277, so c = √277 = 16.64"
+    "explanation": "By the Pythagorean theorem: c² = 9² + 14² = 81 + 196 = 277, so c = √277 = 16.64",
+    "options": [
+      "15.64",
+      "16.64",
+      "17.64",
+      "23.00"
+    ],
+    "correct_key": "B"
   },
   {
     "id": 349,
@@ -1284,7 +1970,14 @@
     "optionC": "0.377",
     "optionD": "46",
     "correct": "C",
-    "explanation": "Probability = (favorable outcomes)/(total outcomes) = 46/122 = 0.377"
+    "explanation": "Probability = (favorable outcomes)/(total outcomes) = 46/122 = 0.377",
+    "options": [
+      "0.339",
+      "0.415",
+      "0.377",
+      "46"
+    ],
+    "correct_key": "C"
   },
   {
     "id": 71,
@@ -1297,7 +1990,14 @@
     "optionC": "1883",
     "optionD": "1426",
     "correct": "B",
-    "explanation": "Use P(t) = P₀(1 + r)^t = 791(1.0803137397126032)^10 = 1712. Option D incorrectly uses simple interest instead of compound growth."
+    "explanation": "Use P(t) = P₀(1 + r)^t = 791(1.0803137397126032)^10 = 1712. Option D incorrectly uses simple interest instead of compound growth.",
+    "options": [
+      "1541",
+      "1712",
+      "1883",
+      "1426"
+    ],
+    "correct_key": "B"
   },
   {
     "id": 45,
@@ -1310,7 +2010,14 @@
     "optionC": "(5.73, 4.27)",
     "optionD": "(4.73, 5.27)",
     "correct": "A",
-    "explanation": "Add the equations: 15x = 71, so x = 4.73. Substitute into first equation: 5(4.73) + 5y = 45, solving gives y = 4.27"
+    "explanation": "Add the equations: 15x = 71, so x = 4.73. Substitute into first equation: 5(4.73) + 5y = 45, solving gives y = 4.27",
+    "options": [
+      "(4.73, 4.27)",
+      "(4.27, 4.73)",
+      "(5.73, 4.27)",
+      "(4.73, 5.27)"
+    ],
+    "correct_key": "A"
   },
   {
     "id": 348,
@@ -1323,7 +2030,14 @@
     "optionC": "0.369",
     "optionD": "57",
     "correct": "B",
-    "explanation": "Probability = (favorable outcomes)/(total outcomes) = 57/170 = 0.335"
+    "explanation": "Probability = (favorable outcomes)/(total outcomes) = 57/170 = 0.335",
+    "options": [
+      "0.302",
+      "0.335",
+      "0.369",
+      "57"
+    ],
+    "correct_key": "B"
   },
   {
     "id": 210,
@@ -1336,7 +2050,14 @@
     "optionC": "13",
     "optionD": "8",
     "correct": "D",
-    "explanation": "First find f(1) = 4(1) - 2 = 2. Then g(f(1)) = g(2) = 4(2) = 8"
+    "explanation": "First find f(1) = 4(1) - 2 = 2. Then g(f(1)) = g(2) = 4(2) = 8",
+    "options": [
+      "3",
+      "14",
+      "13",
+      "8"
+    ],
+    "correct_key": "D"
   },
   {
     "id": 62,
@@ -1349,7 +2070,14 @@
     "optionC": "4927",
     "optionD": "4479",
     "correct": "D",
-    "explanation": "Use P(t) = P₀(1 + r)^t = 525(1.143377992928133)^16 = 4479. Option B incorrectly uses simple interest instead of compound growth."
+    "explanation": "Use P(t) = P₀(1 + r)^t = 525(1.143377992928133)^16 = 4479. Option B incorrectly uses simple interest instead of compound growth.",
+    "options": [
+      "4031",
+      "1729",
+      "4927",
+      "4479"
+    ],
+    "correct_key": "D"
   },
   {
     "id": 446,
@@ -1362,7 +2090,14 @@
     "optionC": "2.73 hours",
     "optionD": "11.00 hours",
     "correct": "C",
-    "explanation": "Combined rate = 1/5 + 1/6 = 0.367 jobs/hour. Time = 1/rate = 2.73 hours"
+    "explanation": "Combined rate = 1/5 + 1/6 = 0.367 jobs/hour. Time = 1/rate = 2.73 hours",
+    "options": [
+      "5.50 hours",
+      "5.00 hours",
+      "2.73 hours",
+      "11.00 hours"
+    ],
+    "correct_key": "C"
   },
   {
     "id": 108,
@@ -1375,7 +2110,14 @@
     "optionC": "22.46",
     "optionD": "81.68",
     "correct": "B",
-    "explanation": "Arc length = (θ/360°) × 2πr = (90/360) × 2π(13) = 20.42 units"
+    "explanation": "Arc length = (θ/360°) × 2πr = (90/360) × 2π(13) = 20.42 units",
+    "options": [
+      "18.38",
+      "20.42",
+      "22.46",
+      "81.68"
+    ],
+    "correct_key": "B"
   },
   {
     "id": 129,
@@ -1388,7 +2130,14 @@
     "optionC": "1.0000",
     "optionD": "0.2500",
     "correct": "A",
-    "explanation": "cos(120°) = -0.5000. Reference angle and quadrant determine the sign."
+    "explanation": "cos(120°) = -0.5000. Reference angle and quadrant determine the sign.",
+    "options": [
+      "-0.5000",
+      "0.5000",
+      "1.0000",
+      "0.2500"
+    ],
+    "correct_key": "A"
   },
   {
     "id": 273,
@@ -1401,7 +2150,14 @@
     "optionC": "f⁻¹(x) = 8x - 11",
     "optionD": "f⁻¹(x) = (x + 11)/8",
     "correct": "A",
-    "explanation": "To find inverse: y = 8x + 11, solve for x: x = (y - 11)/8. Replace y with x: f⁻¹(x) = (x - 11)/8"
+    "explanation": "To find inverse: y = 8x + 11, solve for x: x = (y - 11)/8. Replace y with x: f⁻¹(x) = (x - 11)/8",
+    "options": [
+      "f⁻¹(x) = (x - 11)/8",
+      "f⁻¹(x) = x/8 - 11",
+      "f⁻¹(x) = 8x - 11",
+      "f⁻¹(x) = (x + 11)/8"
+    ],
+    "correct_key": "A"
   },
   {
     "id": 389,
@@ -1414,7 +2170,14 @@
     "optionC": "37.23",
     "optionD": "35.23",
     "correct": "D",
-    "explanation": "Substitute x = 14: y = 2.09(14) + 6.00 = 35.23"
+    "explanation": "Substitute x = 14: y = 2.09(14) + 6.00 = 35.23",
+    "options": [
+      "33.23",
+      "29.23",
+      "37.23",
+      "35.23"
+    ],
+    "correct_key": "D"
   },
   {
     "id": 152,
@@ -1427,7 +2190,14 @@
     "optionC": "10.44",
     "optionD": "13.00",
     "correct": "C",
-    "explanation": "By the Pythagorean theorem: c² = 3² + 10² = 9 + 100 = 109, so c = √109 = 10.44"
+    "explanation": "By the Pythagorean theorem: c² = 3² + 10² = 9 + 100 = 109, so c = √109 = 10.44",
+    "options": [
+      "9.44",
+      "11.44",
+      "10.44",
+      "13.00"
+    ],
+    "correct_key": "C"
   },
   {
     "id": 35,
@@ -1440,7 +2210,14 @@
     "optionC": "(6.00, 1.86)",
     "optionD": "(5.00, 2.86)",
     "correct": "A",
-    "explanation": "Add the equations: 9x = 45, so x = 5.00. Substitute into first equation: 3(5.00) + 7y = 28, solving gives y = 1.86"
+    "explanation": "Add the equations: 9x = 45, so x = 5.00. Substitute into first equation: 3(5.00) + 7y = 28, solving gives y = 1.86",
+    "options": [
+      "(5.00, 1.86)",
+      "(1.86, 5.00)",
+      "(6.00, 1.86)",
+      "(5.00, 2.86)"
+    ],
+    "correct_key": "A"
   },
   {
     "id": 207,
@@ -1453,7 +2230,14 @@
     "optionC": "69",
     "optionD": "76",
     "correct": "B",
-    "explanation": "First find f(4) = 5(4) - 4 = 16. Then g(f(4)) = g(16) = 4(16) = 64"
+    "explanation": "First find f(4) = 5(4) - 4 = 16. Then g(f(4)) = g(16) = 4(16) = 64",
+    "options": [
+      "59",
+      "64",
+      "69",
+      "76"
+    ],
+    "correct_key": "B"
   },
   {
     "id": 493,
@@ -1466,7 +2250,14 @@
     "optionC": "41",
     "optionD": "43",
     "correct": "C",
-    "explanation": "nth term = a₁ + (n-1)d = 5 + (19-1)(2) = 5 + 36 = 41"
+    "explanation": "nth term = a₁ + (n-1)d = 5 + (19-1)(2) = 5 + 36 = 41",
+    "options": [
+      "39",
+      "43",
+      "41",
+      "43"
+    ],
+    "correct_key": "C"
   },
   {
     "id": 424,
@@ -1479,7 +2270,14 @@
     "optionC": "100.00",
     "optionD": "95.00",
     "correct": "A",
-    "explanation": "New value = 75 × (1 + 20/100) = 75 × 1.2 = 90.00"
+    "explanation": "New value = 75 × (1 + 20/100) = 75 × 1.2 = 90.00",
+    "options": [
+      "90.00",
+      "80.00",
+      "100.00",
+      "95.00"
+    ],
+    "correct_key": "A"
   },
   {
     "id": 47,
@@ -1492,7 +2290,14 @@
     "optionC": "(11.33, 4.33)",
     "optionD": "(10.33, 5.33)",
     "correct": "A",
-    "explanation": "Add the equations: 9x = 93, so x = 10.33. Substitute into first equation: 3(10.33) + 3y = 44, solving gives y = 4.33"
+    "explanation": "Add the equations: 9x = 93, so x = 10.33. Substitute into first equation: 3(10.33) + 3y = 44, solving gives y = 4.33",
+    "options": [
+      "(10.33, 4.33)",
+      "(4.33, 10.33)",
+      "(11.33, 4.33)",
+      "(10.33, 5.33)"
+    ],
+    "correct_key": "A"
   },
   {
     "id": 363,
@@ -1505,7 +2310,14 @@
     "optionC": "0.324",
     "optionD": "0.295",
     "correct": "D",
-    "explanation": "Probability = (favorable outcomes)/(total outcomes) = 28/95 = 0.295"
+    "explanation": "Probability = (favorable outcomes)/(total outcomes) = 28/95 = 0.295",
+    "options": [
+      "0.265",
+      "28",
+      "0.324",
+      "0.295"
+    ],
+    "correct_key": "D"
   },
   {
     "id": 480,
@@ -1518,7 +2330,14 @@
     "optionC": "x < 1.62",
     "optionD": "x < 3.88",
     "correct": "C",
-    "explanation": "Subtract 18: 8x < 13. Divide by 8: x < 1.62"
+    "explanation": "Subtract 18: 8x < 13. Divide by 8: x < 1.62",
+    "options": [
+      "x < 0.62",
+      "x > 1.62",
+      "x < 1.62",
+      "x < 3.88"
+    ],
+    "correct_key": "C"
   },
   {
     "id": 354,
@@ -1531,7 +2350,14 @@
     "optionC": "0.403",
     "optionD": "0.366",
     "correct": "D",
-    "explanation": "Probability = (favorable outcomes)/(total outcomes) = 70/191 = 0.366"
+    "explanation": "Probability = (favorable outcomes)/(total outcomes) = 70/191 = 0.366",
+    "options": [
+      "0.330",
+      "70",
+      "0.403",
+      "0.366"
+    ],
+    "correct_key": "D"
   },
   {
     "id": 16,
@@ -1544,7 +2370,14 @@
     "optionC": "-1.00",
     "optionD": "12.00",
     "correct": "A",
-    "explanation": "For a quadratic f(x) = ax² + bx + c, the vertex is at x = -b/(2a) = -1.00. Substituting back: f(-1.00) = 5(-1.00)² + 10(-1.00) + 12 = 7.00"
+    "explanation": "For a quadratic f(x) = ax² + bx + c, the vertex is at x = -b/(2a) = -1.00. Substituting back: f(-1.00) = 5(-1.00)² + 10(-1.00) + 12 = 7.00",
+    "options": [
+      "7.00",
+      "17.00",
+      "-1.00",
+      "12.00"
+    ],
+    "correct_key": "A"
   },
   {
     "id": 166,
@@ -1557,7 +2390,14 @@
     "optionC": "186.61",
     "optionD": "113.10",
     "correct": "B",
-    "explanation": "Volume = πr²h = π(3)²(6) = 169.65 cubic units"
+    "explanation": "Volume = πr²h = π(3)²(6) = 169.65 cubic units",
+    "options": [
+      "152.68",
+      "169.65",
+      "186.61",
+      "113.10"
+    ],
+    "correct_key": "B"
   },
   {
     "id": 452,
@@ -1570,7 +2410,14 @@
     "optionC": "5.00 hours",
     "optionD": "13.00 hours",
     "correct": "B",
-    "explanation": "Combined rate = 1/8 + 1/5 = 0.325 jobs/hour. Time = 1/rate = 3.08 hours"
+    "explanation": "Combined rate = 1/8 + 1/5 = 0.325 jobs/hour. Time = 1/rate = 3.08 hours",
+    "options": [
+      "6.50 hours",
+      "3.08 hours",
+      "5.00 hours",
+      "13.00 hours"
+    ],
+    "correct_key": "B"
   },
   {
     "id": 41,
@@ -1583,7 +2430,14 @@
     "optionC": "(10.50, 1.33)",
     "optionD": "(9.50, 2.33)",
     "correct": "A",
-    "explanation": "Add the equations: 6x = 57, so x = 9.50. Substitute into first equation: 2(9.50) + 6y = 27, solving gives y = 1.33"
+    "explanation": "Add the equations: 6x = 57, so x = 9.50. Substitute into first equation: 2(9.50) + 6y = 27, solving gives y = 1.33",
+    "options": [
+      "(9.50, 1.33)",
+      "(1.33, 9.50)",
+      "(10.50, 1.33)",
+      "(9.50, 2.33)"
+    ],
+    "correct_key": "A"
   },
   {
     "id": 302,
@@ -1596,7 +2450,14 @@
     "optionC": "2.0",
     "optionD": "26.0",
     "correct": "A",
-    "explanation": "Mean = 182/7 = 26.0. Median (middle value) = 25. Difference = |26.0 - 25| = 1.0"
+    "explanation": "Mean = 182/7 = 26.0. Median (middle value) = 25. Difference = |26.0 - 25| = 1.0",
+    "options": [
+      "1.0",
+      "0.0",
+      "2.0",
+      "26.0"
+    ],
+    "correct_key": "A"
   },
   {
     "id": 307,
@@ -1609,7 +2470,14 @@
     "optionC": "2.4",
     "optionD": "1.4",
     "correct": "D",
-    "explanation": "Mean = 214/7 = 30.6. Median (middle value) = 32. Difference = |30.6 - 32| = 1.4"
+    "explanation": "Mean = 214/7 = 30.6. Median (middle value) = 32. Difference = |30.6 - 32| = 1.4",
+    "options": [
+      "0.4",
+      "30.6",
+      "2.4",
+      "1.4"
+    ],
+    "correct_key": "D"
   },
   {
     "id": 483,
@@ -1622,7 +2490,14 @@
     "optionC": "41",
     "optionD": "39",
     "correct": "D",
-    "explanation": "nth term = a₁ + (n-1)d = 9 + (16-1)(2) = 9 + 30 = 39"
+    "explanation": "nth term = a₁ + (n-1)d = 9 + (16-1)(2) = 9 + 30 = 39",
+    "options": [
+      "37",
+      "41",
+      "41",
+      "39"
+    ],
+    "correct_key": "D"
   },
   {
     "id": 202,
@@ -1635,7 +2510,14 @@
     "optionC": "3",
     "optionD": "3",
     "correct": "B",
-    "explanation": "First find f(1) = 4(1) - 5 = -1. Then g(f(1)) = g(-1) = 2(-1) = -2"
+    "explanation": "First find f(1) = 4(1) - 5 = -1. Then g(f(1)) = g(-1) = 2(-1) = -2",
+    "options": [
+      "-7",
+      "-2",
+      "3",
+      "3"
+    ],
+    "correct_key": "B"
   },
   {
     "id": 201,
@@ -1648,7 +2530,14 @@
     "optionC": "100",
     "optionD": "85",
     "correct": "C",
-    "explanation": "First find f(4) = 5(4) + 5 = 25. Then g(f(4)) = g(25) = 4(25) = 100"
+    "explanation": "First find f(4) = 5(4) + 5 = 25. Then g(f(4)) = g(25) = 4(25) = 100",
+    "options": [
+      "95",
+      "105",
+      "100",
+      "85"
+    ],
+    "correct_key": "C"
   },
   {
     "id": 408,
@@ -1661,7 +2550,14 @@
     "optionC": "3.71",
     "optionD": "3.21",
     "correct": "D",
-    "explanation": "Combined speed = 50 + 74 = 124 mph. Time = distance/speed = 398/124 = 3.21 hours"
+    "explanation": "Combined speed = 50 + 74 = 124 mph. Time = distance/speed = 398/124 = 3.21 hours",
+    "options": [
+      "2.71",
+      "7.96",
+      "3.71",
+      "3.21"
+    ],
+    "correct_key": "D"
   },
   {
     "id": 376,
@@ -1674,7 +2570,14 @@
     "optionC": "22.87",
     "optionD": "32.87",
     "correct": "C",
-    "explanation": "Substitute x = 11: y = 2.99(11) + -10.00 = 22.87"
+    "explanation": "Substitute x = 11: y = 2.99(11) + -10.00 = 22.87",
+    "options": [
+      "20.87",
+      "24.87",
+      "22.87",
+      "32.87"
+    ],
+    "correct_key": "C"
   },
   {
     "id": 316,
@@ -1687,7 +2590,14 @@
     "optionC": "6.9",
     "optionD": "5.9",
     "correct": "D",
-    "explanation": "Mean = 225/7 = 32.1. Median (middle value) = 38. Difference = |32.1 - 38| = 5.9"
+    "explanation": "Mean = 225/7 = 32.1. Median (middle value) = 38. Difference = |32.1 - 38| = 5.9",
+    "options": [
+      "4.9",
+      "32.1",
+      "6.9",
+      "5.9"
+    ],
+    "correct_key": "D"
   },
   {
     "id": 160,
@@ -1700,7 +2610,14 @@
     "optionC": "12.66",
     "optionD": "11.66",
     "correct": "D",
-    "explanation": "By the Pythagorean theorem: c² = 6² + 10² = 36 + 100 = 136, so c = √136 = 11.66"
+    "explanation": "By the Pythagorean theorem: c² = 6² + 10² = 36 + 100 = 136, so c = √136 = 11.66",
+    "options": [
+      "10.66",
+      "16.00",
+      "12.66",
+      "11.66"
+    ],
+    "correct_key": "D"
   },
   {
     "id": 454,
@@ -1713,7 +2630,14 @@
     "optionC": "6.00 hours",
     "optionD": "3.23 hours",
     "correct": "D",
-    "explanation": "Combined rate = 1/6 + 1/7 = 0.310 jobs/hour. Time = 1/rate = 3.23 hours"
+    "explanation": "Combined rate = 1/6 + 1/7 = 0.310 jobs/hour. Time = 1/rate = 3.23 hours",
+    "options": [
+      "6.50 hours",
+      "13.00 hours",
+      "6.00 hours",
+      "3.23 hours"
+    ],
+    "correct_key": "D"
   },
   {
     "id": 475,
@@ -1726,7 +2650,14 @@
     "optionC": "x > 4.75",
     "optionD": "x < 6.00",
     "correct": "B",
-    "explanation": "Subtract 10: 8x < 38. Divide by 8: x < 4.75"
+    "explanation": "Subtract 10: 8x < 38. Divide by 8: x < 4.75",
+    "options": [
+      "x < 3.75",
+      "x < 4.75",
+      "x > 4.75",
+      "x < 6.00"
+    ],
+    "correct_key": "B"
   },
   {
     "id": 445,
@@ -1739,7 +2670,14 @@
     "optionC": "5.00 hours",
     "optionD": "3.33 hours",
     "correct": "D",
-    "explanation": "Combined rate = 1/5 + 1/10 = 0.300 jobs/hour. Time = 1/rate = 3.33 hours"
+    "explanation": "Combined rate = 1/5 + 1/10 = 0.300 jobs/hour. Time = 1/rate = 3.33 hours",
+    "options": [
+      "7.50 hours",
+      "15.00 hours",
+      "5.00 hours",
+      "3.33 hours"
+    ],
+    "correct_key": "D"
   },
   {
     "id": 234,
@@ -1752,7 +2690,14 @@
     "optionC": "All real numbers except x = 6",
     "optionD": "x > 6",
     "correct": "C",
-    "explanation": "The function is undefined when the denominator equals zero. x - 6 = 0 when x = 6, so the domain is all real numbers except 6."
+    "explanation": "The function is undefined when the denominator equals zero. x - 6 = 0 when x = 6, so the domain is all real numbers except 6.",
+    "options": [
+      "All real numbers",
+      "All real numbers except x = 0",
+      "All real numbers except x = 6",
+      "x > 6"
+    ],
+    "correct_key": "C"
   },
   {
     "id": 403,
@@ -1765,7 +2710,14 @@
     "optionC": "2.94",
     "optionD": "5.42",
     "correct": "B",
-    "explanation": "Combined speed = 55 + 67 = 122 mph. Time = distance/speed = 298/122 = 2.44 hours"
+    "explanation": "Combined speed = 55 + 67 = 122 mph. Time = distance/speed = 298/122 = 2.44 hours",
+    "options": [
+      "1.94",
+      "2.44",
+      "2.94",
+      "5.42"
+    ],
+    "correct_key": "B"
   },
   {
     "id": 393,
@@ -1778,7 +2730,14 @@
     "optionC": "30.17",
     "optionD": "24.17",
     "correct": "B",
-    "explanation": "Substitute x = 11: y = 2.20(11) + 4.00 = 28.17"
+    "explanation": "Substitute x = 11: y = 2.20(11) + 4.00 = 28.17",
+    "options": [
+      "26.17",
+      "28.17",
+      "30.17",
+      "24.17"
+    ],
+    "correct_key": "B"
   },
   {
     "id": 182,
@@ -1791,7 +2750,14 @@
     "optionC": "36",
     "optionD": "18",
     "correct": "C",
-    "explanation": "For similar figures, corresponding sides are proportional. Side ratio = 4:1, so larger side = 9 × 4 = 36"
+    "explanation": "For similar figures, corresponding sides are proportional. Side ratio = 4:1, so larger side = 9 × 4 = 36",
+    "options": [
+      "34",
+      "13",
+      "36",
+      "18"
+    ],
+    "correct_key": "C"
   },
   {
     "id": 295,
@@ -1804,7 +2770,14 @@
     "optionC": "Shift right 3 and up 4",
     "optionD": "Reflect and shift",
     "correct": "C",
-    "explanation": "f(x - h) shifts right by 3. Adding 4 shifts up by 4."
+    "explanation": "f(x - h) shifts right by 3. Adding 4 shifts up by 4.",
+    "options": [
+      "Shift left 3 and up 4",
+      "Shift right 3 and down 4",
+      "Shift right 3 and up 4",
+      "Reflect and shift"
+    ],
+    "correct_key": "C"
   },
   {
     "id": 51,
@@ -1817,7 +2790,14 @@
     "optionC": "1093",
     "optionD": "1024",
     "correct": "C",
-    "explanation": "Use P(t) = P₀(1 + r)^t = 714(1.0435283883890234)^10 = 1093. Option D incorrectly uses simple interest instead of compound growth."
+    "explanation": "Use P(t) = P₀(1 + r)^t = 714(1.0435283883890234)^10 = 1093. Option D incorrectly uses simple interest instead of compound growth.",
+    "options": [
+      "983",
+      "1202",
+      "1093",
+      "1024"
+    ],
+    "correct_key": "C"
   },
   {
     "id": 24,
@@ -1830,7 +2810,14 @@
     "optionC": "0.50",
     "optionD": "15.00",
     "correct": "A",
-    "explanation": "For a quadratic f(x) = ax² + bx + c, the vertex is at x = -b/(2a) = 0.50. Substituting back: f(0.50) = 5(0.50)² + -5(0.50) + 15 = 13.75"
+    "explanation": "For a quadratic f(x) = ax² + bx + c, the vertex is at x = -b/(2a) = 0.50. Substituting back: f(0.50) = 5(0.50)² + -5(0.50) + 15 = 13.75",
+    "options": [
+      "13.75",
+      "16.25",
+      "0.50",
+      "15.00"
+    ],
+    "correct_key": "A"
   },
   {
     "id": 69,
@@ -1843,7 +2830,14 @@
     "optionC": "3253",
     "optionD": "1766",
     "correct": "B",
-    "explanation": "Use P(t) = P₀(1 + r)^t = 700(1.117223671836986)^13 = 2957. Option D incorrectly uses simple interest instead of compound growth."
+    "explanation": "Use P(t) = P₀(1 + r)^t = 700(1.117223671836986)^13 = 2957. Option D incorrectly uses simple interest instead of compound growth.",
+    "options": [
+      "2661",
+      "2957",
+      "3253",
+      "1766"
+    ],
+    "correct_key": "B"
   },
   {
     "id": 409,
@@ -1856,7 +2850,14 @@
     "optionC": "2.24",
     "optionD": "4.35",
     "correct": "C",
-    "explanation": "Combined speed = 68 + 64 = 132 mph. Time = distance/speed = 296/132 = 2.24 hours"
+    "explanation": "Combined speed = 68 + 64 = 132 mph. Time = distance/speed = 296/132 = 2.24 hours",
+    "options": [
+      "1.74",
+      "2.74",
+      "2.24",
+      "4.35"
+    ],
+    "correct_key": "C"
   },
   {
     "id": 377,
@@ -1869,7 +2870,14 @@
     "optionC": "10.17",
     "optionD": "8.17",
     "correct": "D",
-    "explanation": "Substitute x = 13: y = 0.71(13) + -1.00 = 8.17"
+    "explanation": "Substitute x = 13: y = 0.71(13) + -1.00 = 8.17",
+    "options": [
+      "6.17",
+      "9.17",
+      "10.17",
+      "8.17"
+    ],
+    "correct_key": "D"
   },
   {
     "id": 280,
@@ -1882,7 +2890,14 @@
     "optionC": "Shift right 2 and down 1",
     "optionD": "Shift right 2 and up 1",
     "correct": "D",
-    "explanation": "f(x - h) shifts right by 2. Adding 1 shifts up by 1."
+    "explanation": "f(x - h) shifts right by 2. Adding 1 shifts up by 1.",
+    "options": [
+      "Shift left 2 and up 1",
+      "Reflect and shift",
+      "Shift right 2 and down 1",
+      "Shift right 2 and up 1"
+    ],
+    "correct_key": "D"
   },
   {
     "id": 76,
@@ -1895,7 +2910,14 @@
     "optionC": "x² - 5",
     "optionD": "(x - 5)(x + 5)",
     "correct": "A",
-    "explanation": "Factor the numerator: x² - 25 = (x - 5)(x + 5). Dividing by (x + 5) gives x - 5, where x ≠ -5."
+    "explanation": "Factor the numerator: x² - 25 = (x - 5)(x + 5). Dividing by (x + 5) gives x - 5, where x ≠ -5.",
+    "options": [
+      "x - 5",
+      "x + 5",
+      "x² - 5",
+      "(x - 5)(x + 5)"
+    ],
+    "correct_key": "A"
   },
   {
     "id": 392,
@@ -1908,7 +2930,14 @@
     "optionC": "6.20",
     "optionD": "7.20",
     "correct": "B",
-    "explanation": "Substitute x = 10: y = 0.72(10) + -3.00 = 4.20"
+    "explanation": "Substitute x = 10: y = 0.72(10) + -3.00 = 4.20",
+    "options": [
+      "2.20",
+      "4.20",
+      "6.20",
+      "7.20"
+    ],
+    "correct_key": "B"
   },
   {
     "id": 171,
@@ -1921,7 +2950,14 @@
     "optionC": "1399.58",
     "optionD": "282.74",
     "correct": "B",
-    "explanation": "Volume = πr²h = π(9)²(5) = 1272.35 cubic units"
+    "explanation": "Volume = πr²h = π(9)²(5) = 1272.35 cubic units",
+    "options": [
+      "1145.11",
+      "1272.35",
+      "1399.58",
+      "282.74"
+    ],
+    "correct_key": "B"
   },
   {
     "id": 304,
@@ -1934,7 +2970,14 @@
     "optionC": "7.7",
     "optionD": "33.3",
     "correct": "C",
-    "explanation": "Mean = 233/7 = 33.3. Median (middle value) = 41. Difference = |33.3 - 41| = 7.7"
+    "explanation": "Mean = 233/7 = 33.3. Median (middle value) = 41. Difference = |33.3 - 41| = 7.7",
+    "options": [
+      "6.7",
+      "8.7",
+      "7.7",
+      "33.3"
+    ],
+    "correct_key": "C"
   },
   {
     "id": 258,
@@ -1947,7 +2990,14 @@
     "optionC": "f⁻¹(x) = 2x + 5",
     "optionD": "f⁻¹(x) = (x - 5)/2",
     "correct": "B",
-    "explanation": "To find inverse: y = 2x - 5, solve for x: x = (y + 5)/2. Replace y with x: f⁻¹(x) = (x + 5)/2"
+    "explanation": "To find inverse: y = 2x - 5, solve for x: x = (y + 5)/2. Replace y with x: f⁻¹(x) = (x + 5)/2",
+    "options": [
+      "f⁻¹(x) = x/2 + 5/2",
+      "f⁻¹(x) = (x + 5)/2",
+      "f⁻¹(x) = 2x + 5",
+      "f⁻¹(x) = (x - 5)/2"
+    ],
+    "correct_key": "B"
   },
   {
     "id": 320,
@@ -1960,7 +3010,14 @@
     "optionC": "1.9",
     "optionD": "26.9",
     "correct": "A",
-    "explanation": "Mean = 188/7 = 26.9. Median (middle value) = 26. Difference = |26.9 - 26| = 0.9"
+    "explanation": "Mean = 188/7 = 26.9. Median (middle value) = 26. Difference = |26.9 - 26| = 0.9",
+    "options": [
+      "0.9",
+      "-0.1",
+      "1.9",
+      "26.9"
+    ],
+    "correct_key": "A"
   },
   {
     "id": 77,
@@ -1973,7 +3030,14 @@
     "optionC": "x² - 6",
     "optionD": "(x - 6)(x + 6)",
     "correct": "A",
-    "explanation": "Factor the numerator: x² - 36 = (x - 6)(x + 6). Dividing by (x + 6) gives x - 6, where x ≠ -6."
+    "explanation": "Factor the numerator: x² - 36 = (x - 6)(x + 6). Dividing by (x + 6) gives x - 6, where x ≠ -6.",
+    "options": [
+      "x - 6",
+      "x + 6",
+      "x² - 6",
+      "(x - 6)(x + 6)"
+    ],
+    "correct_key": "A"
   },
   {
     "id": 381,
@@ -1986,7 +3050,14 @@
     "optionC": "38.08",
     "optionD": "36.08",
     "correct": "D",
-    "explanation": "Substitute x = 14: y = 2.58(14) + 0.00 = 36.08"
+    "explanation": "Substitute x = 14: y = 2.58(14) + 0.00 = 36.08",
+    "options": [
+      "34.08",
+      "36.08",
+      "38.08",
+      "36.08"
+    ],
+    "correct_key": "D"
   },
   {
     "id": 450,
@@ -1999,7 +3070,14 @@
     "optionC": "3.00 hours",
     "optionD": "2.10 hours",
     "correct": "D",
-    "explanation": "Combined rate = 1/3 + 1/7 = 0.476 jobs/hour. Time = 1/rate = 2.10 hours"
+    "explanation": "Combined rate = 1/3 + 1/7 = 0.476 jobs/hour. Time = 1/rate = 2.10 hours",
+    "options": [
+      "5.00 hours",
+      "10.00 hours",
+      "3.00 hours",
+      "2.10 hours"
+    ],
+    "correct_key": "D"
   },
   {
     "id": 407,
@@ -2012,7 +3090,14 @@
     "optionC": "4.65",
     "optionD": "8.13",
     "correct": "C",
-    "explanation": "Combined speed = 60 + 45 = 105 mph. Time = distance/speed = 488/105 = 4.65 hours"
+    "explanation": "Combined speed = 60 + 45 = 105 mph. Time = distance/speed = 488/105 = 4.65 hours",
+    "options": [
+      "4.15",
+      "5.15",
+      "4.65",
+      "8.13"
+    ],
+    "correct_key": "C"
   },
   {
     "id": 356,
@@ -2025,7 +3110,14 @@
     "optionC": "0.237",
     "optionD": "34",
     "correct": "B",
-    "explanation": "Probability = (favorable outcomes)/(total outcomes) = 34/158 = 0.215"
+    "explanation": "Probability = (favorable outcomes)/(total outcomes) = 34/158 = 0.215",
+    "options": [
+      "0.194",
+      "0.215",
+      "0.237",
+      "34"
+    ],
+    "correct_key": "B"
   },
   {
     "id": 27,
@@ -2038,7 +3130,14 @@
     "optionC": "(5.56, 0.19)",
     "optionD": "(4.56, 1.19)",
     "correct": "A",
-    "explanation": "Add the equations: 9x = 41, so x = 4.56. Substitute into first equation: 3(4.56) + 7y = 15, solving gives y = 0.19"
+    "explanation": "Add the equations: 9x = 41, so x = 4.56. Substitute into first equation: 3(4.56) + 7y = 15, solving gives y = 0.19",
+    "options": [
+      "(4.56, 0.19)",
+      "(0.19, 4.56)",
+      "(5.56, 0.19)",
+      "(4.56, 1.19)"
+    ],
+    "correct_key": "A"
   },
   {
     "id": 476,
@@ -2051,7 +3150,14 @@
     "optionC": "x < 0.67",
     "optionD": "x < 3.83",
     "correct": "C",
-    "explanation": "Subtract 19: 6x < 4. Divide by 6: x < 0.67"
+    "explanation": "Subtract 19: 6x < 4. Divide by 6: x < 0.67",
+    "options": [
+      "x < -0.33",
+      "x > 0.67",
+      "x < 0.67",
+      "x < 3.83"
+    ],
+    "correct_key": "C"
   },
   {
     "id": 147,
@@ -2064,7 +3170,14 @@
     "optionC": "11.70",
     "optionD": "15.00",
     "correct": "C",
-    "explanation": "By the Pythagorean theorem: c² = 11² + 4² = 121 + 16 = 137, so c = √137 = 11.70"
+    "explanation": "By the Pythagorean theorem: c² = 11² + 4² = 121 + 16 = 137, so c = √137 = 11.70",
+    "options": [
+      "10.70",
+      "12.70",
+      "11.70",
+      "15.00"
+    ],
+    "correct_key": "C"
   },
   {
     "id": 485,
@@ -2077,7 +3190,14 @@
     "optionC": "119",
     "optionD": "125",
     "correct": "C",
-    "explanation": "nth term = a₁ + (n-1)d = 5 + (20-1)(6) = 5 + 114 = 119"
+    "explanation": "nth term = a₁ + (n-1)d = 5 + (20-1)(6) = 5 + 114 = 119",
+    "options": [
+      "113",
+      "125",
+      "119",
+      "125"
+    ],
+    "correct_key": "C"
   },
   {
     "id": 399,
@@ -2090,7 +3210,14 @@
     "optionC": "-3.80",
     "optionD": "4.20",
     "correct": "B",
-    "explanation": "Substitute x = 8: y = 0.53(8) + -10.00 = -5.80"
+    "explanation": "Substitute x = 8: y = 0.53(8) + -10.00 = -5.80",
+    "options": [
+      "-7.80",
+      "-5.80",
+      "-3.80",
+      "4.20"
+    ],
+    "correct_key": "B"
   },
   {
     "id": 347,
@@ -2103,7 +3230,14 @@
     "optionC": "0.191",
     "optionD": "22",
     "correct": "B",
-    "explanation": "Probability = (favorable outcomes)/(total outcomes) = 22/127 = 0.173"
+    "explanation": "Probability = (favorable outcomes)/(total outcomes) = 22/127 = 0.173",
+    "options": [
+      "0.156",
+      "0.173",
+      "0.191",
+      "22"
+    ],
+    "correct_key": "B"
   },
   {
     "id": 113,
@@ -2116,7 +3250,14 @@
     "optionC": "57.60",
     "optionD": "52.36",
     "correct": "D",
-    "explanation": "Arc length = (θ/360°) × 2πr = (150/360) × 2π(20) = 52.36 units"
+    "explanation": "Arc length = (θ/360°) × 2πr = (150/360) × 2π(20) = 52.36 units",
+    "options": [
+      "47.12",
+      "125.66",
+      "57.60",
+      "52.36"
+    ],
+    "correct_key": "D"
   },
   {
     "id": 119,
@@ -2129,7 +3270,14 @@
     "optionC": "18.14",
     "optionD": "43.98",
     "correct": "B",
-    "explanation": "Arc length = (θ/360°) × 2πr = (135/360) × 2π(7) = 16.49 units"
+    "explanation": "Arc length = (θ/360°) × 2πr = (135/360) × 2π(7) = 16.49 units",
+    "options": [
+      "14.84",
+      "16.49",
+      "18.14",
+      "43.98"
+    ],
+    "correct_key": "B"
   },
   {
     "id": 4,
@@ -2142,7 +3290,14 @@
     "optionC": "0.12",
     "optionD": "-7.00",
     "correct": "A",
-    "explanation": "For a quadratic f(x) = ax² + bx + c, the vertex is at x = -b/(2a) = 0.12. Substituting back: f(0.12) = 4(0.12)² + -1(0.12) + -7 = -7.06"
+    "explanation": "For a quadratic f(x) = ax² + bx + c, the vertex is at x = -b/(2a) = 0.12. Substituting back: f(0.12) = 4(0.12)² + -1(0.12) + -7 = -7.06",
+    "options": [
+      "-7.06",
+      "-6.94",
+      "0.12",
+      "-7.00"
+    ],
+    "correct_key": "A"
   },
   {
     "id": 74,
@@ -2155,7 +3310,14 @@
     "optionC": "1339",
     "optionD": "1271",
     "correct": "C",
-    "explanation": "Use P(t) = P₀(1 + r)^t = 920(1.0382513467049717)^10 = 1339. Option D incorrectly uses simple interest instead of compound growth."
+    "explanation": "Use P(t) = P₀(1 + r)^t = 920(1.0382513467049717)^10 = 1339. Option D incorrectly uses simple interest instead of compound growth.",
+    "options": [
+      "1205",
+      "1473",
+      "1339",
+      "1271"
+    ],
+    "correct_key": "C"
   },
   {
     "id": 123,
@@ -2168,7 +3330,14 @@
     "optionC": "1.7321",
     "optionD": "0.4330",
     "correct": "A",
-    "explanation": "cos(210°) = -0.8660. Reference angle and quadrant determine the sign."
+    "explanation": "cos(210°) = -0.8660. Reference angle and quadrant determine the sign.",
+    "options": [
+      "-0.8660",
+      "0.8660",
+      "1.7321",
+      "0.4330"
+    ],
+    "correct_key": "A"
   },
   {
     "id": 301,
@@ -2181,7 +3350,14 @@
     "optionC": "4.4",
     "optionD": "29.4",
     "correct": "C",
-    "explanation": "Mean = 206/7 = 29.4. Median (middle value) = 25. Difference = |29.4 - 25| = 4.4"
+    "explanation": "Mean = 206/7 = 29.4. Median (middle value) = 25. Difference = |29.4 - 25| = 4.4",
+    "options": [
+      "3.4",
+      "5.4",
+      "4.4",
+      "29.4"
+    ],
+    "correct_key": "C"
   },
   {
     "id": 68,
@@ -2194,7 +3370,14 @@
     "optionC": "3088",
     "optionD": "1521",
     "correct": "B",
-    "explanation": "Use P(t) = P₀(1 + r)^t = 571(1.09252559354936)^18 = 2808. Option D incorrectly uses simple interest instead of compound growth."
+    "explanation": "Use P(t) = P₀(1 + r)^t = 571(1.09252559354936)^18 = 2808. Option D incorrectly uses simple interest instead of compound growth.",
+    "options": [
+      "2527",
+      "2808",
+      "3088",
+      "1521"
+    ],
+    "correct_key": "B"
   },
   {
     "id": 203,
@@ -2207,7 +3390,14 @@
     "optionC": "9",
     "optionD": "4",
     "correct": "D",
-    "explanation": "First find f(1) = 2(1) - 1 = 1. Then g(f(1)) = g(1) = 4(1) = 4"
+    "explanation": "First find f(1) = 2(1) - 1 = 1. Then g(f(1)) = g(1) = 4(1) = 4",
+    "options": [
+      "-1",
+      "7",
+      "9",
+      "4"
+    ],
+    "correct_key": "D"
   },
   {
     "id": 63,
@@ -2220,7 +3410,14 @@
     "optionC": "2545",
     "optionD": "2313",
     "correct": "D",
-    "explanation": "Use P(t) = P₀(1 + r)^t = 646(1.0954180905098903)^14 = 2313. Option B incorrectly uses simple interest instead of compound growth."
+    "explanation": "Use P(t) = P₀(1 + r)^t = 646(1.0954180905098903)^14 = 2313. Option B incorrectly uses simple interest instead of compound growth.",
+    "options": [
+      "2082",
+      "1508",
+      "2545",
+      "2313"
+    ],
+    "correct_key": "D"
   },
   {
     "id": 124,
@@ -2233,7 +3430,14 @@
     "optionC": "3.4641",
     "optionD": "0.8660",
     "correct": "A",
-    "explanation": "tan(300°) = -1.7321. Reference angle and quadrant determine the sign."
+    "explanation": "tan(300°) = -1.7321. Reference angle and quadrant determine the sign.",
+    "options": [
+      "-1.7321",
+      "1.7321",
+      "3.4641",
+      "0.8660"
+    ],
+    "correct_key": "A"
   },
   {
     "id": 276,
@@ -2246,7 +3450,14 @@
     "optionC": "Shift left 0 and down 3",
     "optionD": "Shift left 0 and up 3",
     "correct": "D",
-    "explanation": "f(x - h) shifts left by 0. Adding 3 shifts up by 3."
+    "explanation": "f(x - h) shifts left by 0. Adding 3 shifts up by 3.",
+    "options": [
+      "Shift left 0 and up 3",
+      "Reflect and shift",
+      "Shift left 0 and down 3",
+      "Shift left 0 and up 3"
+    ],
+    "correct_key": "D"
   },
   {
     "id": 311,
@@ -2259,7 +3470,14 @@
     "optionC": "6.9",
     "optionD": "5.9",
     "correct": "D",
-    "explanation": "Mean = 239/7 = 34.1. Median (middle value) = 40. Difference = |34.1 - 40| = 5.9"
+    "explanation": "Mean = 239/7 = 34.1. Median (middle value) = 40. Difference = |34.1 - 40| = 5.9",
+    "options": [
+      "4.9",
+      "34.1",
+      "6.9",
+      "5.9"
+    ],
+    "correct_key": "D"
   },
   {
     "id": 225,
@@ -2272,7 +3490,14 @@
     "optionC": "55",
     "optionD": "23",
     "correct": "C",
-    "explanation": "First find f(1) = 3(1) + 8 = 11. Then g(f(1)) = g(11) = 5(11) = 55"
+    "explanation": "First find f(1) = 3(1) + 8 = 11. Then g(f(1)) = g(11) = 5(11) = 55",
+    "options": [
+      "50",
+      "60",
+      "55",
+      "23"
+    ],
+    "correct_key": "C"
   },
   {
     "id": 53,
@@ -2285,7 +3510,14 @@
     "optionC": "476",
     "optionD": "405",
     "correct": "B",
-    "explanation": "Use P(t) = P₀(1 + r)^t = 285(1.026471223352427)^16 = 432. Option D incorrectly uses simple interest instead of compound growth."
+    "explanation": "Use P(t) = P₀(1 + r)^t = 285(1.026471223352427)^16 = 432. Option D incorrectly uses simple interest instead of compound growth.",
+    "options": [
+      "389",
+      "432",
+      "476",
+      "405"
+    ],
+    "correct_key": "B"
   },
   {
     "id": 353,
@@ -2298,7 +3530,14 @@
     "optionC": "0.284",
     "optionD": "33",
     "correct": "C",
-    "explanation": "Probability = (favorable outcomes)/(total outcomes) = 33/116 = 0.284"
+    "explanation": "Probability = (favorable outcomes)/(total outcomes) = 33/116 = 0.284",
+    "options": [
+      "0.256",
+      "0.313",
+      "0.284",
+      "33"
+    ],
+    "correct_key": "C"
   },
   {
     "id": 416,
@@ -2311,7 +3550,14 @@
     "optionC": "3.05",
     "optionD": "6.43",
     "correct": "B",
-    "explanation": "Combined speed = 42 + 64 = 106 mph. Time = distance/speed = 270/106 = 2.55 hours"
+    "explanation": "Combined speed = 42 + 64 = 106 mph. Time = distance/speed = 270/106 = 2.55 hours",
+    "options": [
+      "2.05",
+      "2.55",
+      "3.05",
+      "6.43"
+    ],
+    "correct_key": "B"
   },
   {
     "id": 325,
@@ -2324,7 +3570,14 @@
     "optionC": "8.9",
     "optionD": "27.9",
     "correct": "A",
-    "explanation": "Mean = 195/7 = 27.9. Median (middle value) = 20. Difference = |27.9 - 20| = 7.9"
+    "explanation": "Mean = 195/7 = 27.9. Median (middle value) = 20. Difference = |27.9 - 20| = 7.9",
+    "options": [
+      "7.9",
+      "6.9",
+      "8.9",
+      "27.9"
+    ],
+    "correct_key": "A"
   },
   {
     "id": 306,
@@ -2337,7 +3590,14 @@
     "optionC": "1.0",
     "optionD": "29.0",
     "correct": "C",
-    "explanation": "Mean = 203/7 = 29.0. Median (middle value) = 30. Difference = |29.0 - 30| = 1.0"
+    "explanation": "Mean = 203/7 = 29.0. Median (middle value) = 30. Difference = |29.0 - 30| = 1.0",
+    "options": [
+      "0.0",
+      "2.0",
+      "1.0",
+      "29.0"
+    ],
+    "correct_key": "C"
   },
   {
     "id": 172,
@@ -2350,7 +3610,14 @@
     "optionC": "706.86",
     "optionD": "282.74",
     "correct": "C",
-    "explanation": "Volume = πr²h = π(5)²(9) = 706.86 cubic units"
+    "explanation": "Volume = πr²h = π(5)²(9) = 706.86 cubic units",
+    "options": [
+      "636.17",
+      "777.54",
+      "706.86",
+      "282.74"
+    ],
+    "correct_key": "C"
   },
   {
     "id": 216,
@@ -2363,7 +3630,14 @@
     "optionC": "45",
     "optionD": "40",
     "correct": "D",
-    "explanation": "First find f(1) = 3(1) + 7 = 10. Then g(f(1)) = g(10) = 4(10) = 40"
+    "explanation": "First find f(1) = 3(1) + 7 = 10. Then g(f(1)) = g(10) = 4(10) = 40",
+    "options": [
+      "35",
+      "19",
+      "45",
+      "40"
+    ],
+    "correct_key": "D"
   },
   {
     "id": 477,
@@ -2376,7 +3650,14 @@
     "optionC": "x > 6.14",
     "optionD": "x < 6.14",
     "correct": "D",
-    "explanation": "Subtract 5: 7x < 43. Divide by 7: x < 6.14"
+    "explanation": "Subtract 5: 7x < 43. Divide by 7: x < 6.14",
+    "options": [
+      "x < 5.14",
+      "x < 6.86",
+      "x > 6.14",
+      "x < 6.14"
+    ],
+    "correct_key": "D"
   },
   {
     "id": 8,
@@ -2389,7 +3670,14 @@
     "optionC": "0.83",
     "optionD": "-11.00",
     "correct": "A",
-    "explanation": "For a quadratic f(x) = ax² + bx + c, the vertex is at x = -b/(2a) = 0.83. Substituting back: f(0.83) = 3(0.83)² + -5(0.83) + -11 = -13.08"
+    "explanation": "For a quadratic f(x) = ax² + bx + c, the vertex is at x = -b/(2a) = 0.83. Substituting back: f(0.83) = 3(0.83)² + -5(0.83) + -11 = -13.08",
+    "options": [
+      "-13.08",
+      "-8.92",
+      "0.83",
+      "-11.00"
+    ],
+    "correct_key": "A"
   },
   {
     "id": 26,
@@ -2402,7 +3690,14 @@
     "optionC": "(6.67, 2.33)",
     "optionD": "(5.67, 3.33)",
     "correct": "A",
-    "explanation": "Add the equations: 9x = 51, so x = 5.67. Substitute into first equation: 3(5.67) + 6y = 31, solving gives y = 2.33"
+    "explanation": "Add the equations: 9x = 51, so x = 5.67. Substitute into first equation: 3(5.67) + 6y = 31, solving gives y = 2.33",
+    "options": [
+      "(5.67, 2.33)",
+      "(2.33, 5.67)",
+      "(6.67, 2.33)",
+      "(5.67, 3.33)"
+    ],
+    "correct_key": "A"
   },
   {
     "id": 13,
@@ -2415,7 +3710,14 @@
     "optionC": "0.38",
     "optionD": "15.00",
     "correct": "A",
-    "explanation": "For a quadratic f(x) = ax² + bx + c, the vertex is at x = -b/(2a) = 0.38. Substituting back: f(0.38) = 4(0.38)² + -3(0.38) + 15 = 14.44"
+    "explanation": "For a quadratic f(x) = ax² + bx + c, the vertex is at x = -b/(2a) = 0.38. Substituting back: f(0.38) = 4(0.38)² + -3(0.38) + 15 = 14.44",
+    "options": [
+      "14.44",
+      "15.56",
+      "0.38",
+      "15.00"
+    ],
+    "correct_key": "A"
   },
   {
     "id": 406,
@@ -2428,7 +3730,14 @@
     "optionC": "2.83",
     "optionD": "2.33",
     "correct": "D",
-    "explanation": "Combined speed = 43 + 48 = 91 mph. Time = distance/speed = 212/91 = 2.33 hours"
+    "explanation": "Combined speed = 43 + 48 = 91 mph. Time = distance/speed = 212/91 = 2.33 hours",
+    "options": [
+      "1.83",
+      "4.93",
+      "2.83",
+      "2.33"
+    ],
+    "correct_key": "D"
   },
   {
     "id": 427,
@@ -2441,7 +3750,14 @@
     "optionC": "248.07",
     "optionD": "238.07",
     "correct": "D",
-    "explanation": "New value = 179 × (1 + 33/100) = 179 × 1.33 = 238.07"
+    "explanation": "New value = 179 × (1 + 33/100) = 179 × 1.33 = 238.07",
+    "options": [
+      "228.07",
+      "212.00",
+      "248.07",
+      "238.07"
+    ],
+    "correct_key": "D"
   },
   {
     "id": 444,
@@ -2454,7 +3770,14 @@
     "optionC": "3.00 hours",
     "optionD": "12.00 hours",
     "correct": "B",
-    "explanation": "Combined rate = 1/9 + 1/3 = 0.444 jobs/hour. Time = 1/rate = 2.25 hours"
+    "explanation": "Combined rate = 1/9 + 1/3 = 0.444 jobs/hour. Time = 1/rate = 2.25 hours",
+    "options": [
+      "6.00 hours",
+      "2.25 hours",
+      "3.00 hours",
+      "12.00 hours"
+    ],
+    "correct_key": "B"
   },
   {
     "id": 400,
@@ -2467,7 +3790,14 @@
     "optionC": "15.75",
     "optionD": "14.75",
     "correct": "C",
-    "explanation": "Substitute x = 5: y = 2.95(5) + 1.00 = 15.75"
+    "explanation": "Substitute x = 5: y = 2.95(5) + 1.00 = 15.75",
+    "options": [
+      "13.75",
+      "17.75",
+      "15.75",
+      "14.75"
+    ],
+    "correct_key": "C"
   },
   {
     "id": 443,
@@ -2480,7 +3810,14 @@
     "optionC": "3.43 hours",
     "optionD": "14.00 hours",
     "correct": "C",
-    "explanation": "Combined rate = 1/6 + 1/8 = 0.292 jobs/hour. Time = 1/rate = 3.43 hours"
+    "explanation": "Combined rate = 1/6 + 1/8 = 0.292 jobs/hour. Time = 1/rate = 3.43 hours",
+    "options": [
+      "7.00 hours",
+      "6.00 hours",
+      "3.43 hours",
+      "14.00 hours"
+    ],
+    "correct_key": "C"
   },
   {
     "id": 479,
@@ -2493,7 +3830,14 @@
     "optionC": "x < 8.33",
     "optionD": "x < 10.00",
     "correct": "C",
-    "explanation": "Subtract 5: 3x < 25. Divide by 3: x < 8.33"
+    "explanation": "Subtract 5: 3x < 25. Divide by 3: x < 8.33",
+    "options": [
+      "x < 7.33",
+      "x > 8.33",
+      "x < 8.33",
+      "x < 10.00"
+    ],
+    "correct_key": "C"
   },
   {
     "id": 29,
@@ -2506,7 +3850,14 @@
     "optionC": "(6.25, 3.14)",
     "optionD": "(5.25, 4.14)",
     "correct": "A",
-    "explanation": "Add the equations: 12x = 63, so x = 5.25. Substitute into first equation: 4(5.25) + 7y = 43, solving gives y = 3.14"
+    "explanation": "Add the equations: 12x = 63, so x = 5.25. Substitute into first equation: 4(5.25) + 7y = 43, solving gives y = 3.14",
+    "options": [
+      "(5.25, 3.14)",
+      "(3.14, 5.25)",
+      "(6.25, 3.14)",
+      "(5.25, 4.14)"
+    ],
+    "correct_key": "A"
   },
   {
     "id": 431,
@@ -2519,7 +3870,14 @@
     "optionC": "197.34",
     "optionD": "181.00",
     "correct": "C",
-    "explanation": "New value = 138 × (1 + 43/100) = 138 × 1.43 = 197.34"
+    "explanation": "New value = 138 × (1 + 43/100) = 138 × 1.43 = 197.34",
+    "options": [
+      "187.34",
+      "207.34",
+      "197.34",
+      "181.00"
+    ],
+    "correct_key": "C"
   },
   {
     "id": 64,
@@ -2532,7 +3890,14 @@
     "optionC": "1676",
     "optionD": "1332",
     "correct": "B",
-    "explanation": "Use P(t) = P₀(1 + r)^t = 812(1.0377334710895454)^17 = 1524. Option D incorrectly uses simple interest instead of compound growth."
+    "explanation": "Use P(t) = P₀(1 + r)^t = 812(1.0377334710895454)^17 = 1524. Option D incorrectly uses simple interest instead of compound growth.",
+    "options": [
+      "1371",
+      "1524",
+      "1676",
+      "1332"
+    ],
+    "correct_key": "B"
   },
   {
     "id": 309,
@@ -2545,7 +3910,14 @@
     "optionC": "6.1",
     "optionD": "29.9",
     "correct": "B",
-    "explanation": "Mean = 209/7 = 29.9. Median (middle value) = 35. Difference = |29.9 - 35| = 5.1"
+    "explanation": "Mean = 209/7 = 29.9. Median (middle value) = 35. Difference = |29.9 - 35| = 5.1",
+    "options": [
+      "4.1",
+      "5.1",
+      "6.1",
+      "29.9"
+    ],
+    "correct_key": "B"
   },
   {
     "id": 486,
@@ -2558,7 +3930,14 @@
     "optionC": "59",
     "optionD": "54",
     "correct": "D",
-    "explanation": "nth term = a₁ + (n-1)d = 9 + (10-1)(5) = 9 + 45 = 54"
+    "explanation": "nth term = a₁ + (n-1)d = 9 + (10-1)(5) = 9 + 45 = 54",
+    "options": [
+      "49",
+      "59",
+      "59",
+      "54"
+    ],
+    "correct_key": "D"
   },
   {
     "id": 441,
@@ -2571,7 +3950,14 @@
     "optionC": "2.00 hours",
     "optionD": "8.00 hours",
     "correct": "C",
-    "explanation": "Combined rate = 1/4 + 1/4 = 0.500 jobs/hour. Time = 1/rate = 2.00 hours"
+    "explanation": "Combined rate = 1/4 + 1/4 = 0.500 jobs/hour. Time = 1/rate = 2.00 hours",
+    "options": [
+      "4.00 hours",
+      "4.00 hours",
+      "2.00 hours",
+      "8.00 hours"
+    ],
+    "correct_key": "C"
   },
   {
     "id": 50,
@@ -2584,7 +3970,14 @@
     "optionC": "(9.56, 3.19)",
     "optionD": "(8.56, 4.19)",
     "correct": "A",
-    "explanation": "Add the equations: 9x = 77, so x = 8.56. Substitute into first equation: 3(8.56) + 7y = 48, solving gives y = 3.19"
+    "explanation": "Add the equations: 9x = 77, so x = 8.56. Substitute into first equation: 3(8.56) + 7y = 48, solving gives y = 3.19",
+    "options": [
+      "(8.56, 3.19)",
+      "(3.19, 8.56)",
+      "(9.56, 3.19)",
+      "(8.56, 4.19)"
+    ],
+    "correct_key": "A"
   },
   {
     "id": 490,
@@ -2597,7 +3990,14 @@
     "optionC": "77",
     "optionD": "72",
     "correct": "D",
-    "explanation": "nth term = a₁ + (n-1)d = 2 + (15-1)(5) = 2 + 70 = 72"
+    "explanation": "nth term = a₁ + (n-1)d = 2 + (15-1)(5) = 2 + 70 = 72",
+    "options": [
+      "67",
+      "82",
+      "77",
+      "72"
+    ],
+    "correct_key": "D"
   },
   {
     "id": 149,
@@ -2610,7 +4010,14 @@
     "optionC": "13.53",
     "optionD": "12.53",
     "correct": "D",
-    "explanation": "By the Pythagorean theorem: c² = 11² + 6² = 121 + 36 = 157, so c = √157 = 12.53"
+    "explanation": "By the Pythagorean theorem: c² = 11² + 6² = 121 + 36 = 157, so c = √157 = 12.53",
+    "options": [
+      "11.53",
+      "17.00",
+      "13.53",
+      "12.53"
+    ],
+    "correct_key": "D"
   },
   {
     "id": 397,
@@ -2623,7 +4030,14 @@
     "optionC": "4.56",
     "optionD": "2.56",
     "correct": "D",
-    "explanation": "Substitute x = 15: y = 0.64(15) + -7.00 = 2.56"
+    "explanation": "Substitute x = 15: y = 0.64(15) + -7.00 = 2.56",
+    "options": [
+      "0.56",
+      "9.56",
+      "4.56",
+      "2.56"
+    ],
+    "correct_key": "D"
   },
   {
     "id": 284,
@@ -2636,7 +4050,14 @@
     "optionC": "Shift right 5 and down 3",
     "optionD": "Reflect and shift",
     "correct": "C",
-    "explanation": "f(x - h) shifts right by 5. Adding -3 shifts down by 3."
+    "explanation": "f(x - h) shifts right by 5. Adding -3 shifts down by 3.",
+    "options": [
+      "Shift left 5 and down 3",
+      "Shift right 5 and up 3",
+      "Shift right 5 and down 3",
+      "Reflect and shift"
+    ],
+    "correct_key": "C"
   },
   {
     "id": 482,
@@ -2649,7 +4070,14 @@
     "optionC": "84",
     "optionD": "92",
     "correct": "C",
-    "explanation": "nth term = a₁ + (n-1)d = 4 + (11-1)(8) = 4 + 80 = 84"
+    "explanation": "nth term = a₁ + (n-1)d = 4 + (11-1)(8) = 4 + 80 = 84",
+    "options": [
+      "76",
+      "92",
+      "84",
+      "92"
+    ],
+    "correct_key": "C"
   },
   {
     "id": 398,
@@ -2662,7 +4090,14 @@
     "optionC": "19.06",
     "optionD": "17.06",
     "correct": "D",
-    "explanation": "Substitute x = 9: y = 1.67(9) + 2.00 = 17.06"
+    "explanation": "Substitute x = 9: y = 1.67(9) + 2.00 = 17.06",
+    "options": [
+      "15.06",
+      "15.06",
+      "19.06",
+      "17.06"
+    ],
+    "correct_key": "D"
   },
   {
     "id": 3,
@@ -2675,7 +4110,14 @@
     "optionC": "0.10",
     "optionD": "10.00",
     "correct": "A",
-    "explanation": "For a quadratic f(x) = ax² + bx + c, the vertex is at x = -b/(2a) = 0.10. Substituting back: f(0.10) = 5(0.10)² + -1(0.10) + 10 = 9.95"
+    "explanation": "For a quadratic f(x) = ax² + bx + c, the vertex is at x = -b/(2a) = 0.10. Substituting back: f(0.10) = 5(0.10)² + -1(0.10) + 10 = 9.95",
+    "options": [
+      "9.95",
+      "10.05",
+      "0.10",
+      "10.00"
+    ],
+    "correct_key": "A"
   },
   {
     "id": 481,
@@ -2688,7 +4130,14 @@
     "optionC": "23",
     "optionD": "23",
     "correct": "A",
-    "explanation": "nth term = a₁ + (n-1)d = 3 + (10-1)(2) = 3 + 18 = 21"
+    "explanation": "nth term = a₁ + (n-1)d = 3 + (10-1)(2) = 3 + 18 = 21",
+    "options": [
+      "21",
+      "19",
+      "23",
+      "23"
+    ],
+    "correct_key": "A"
   },
   {
     "id": 317,
@@ -2701,7 +4150,14 @@
     "optionC": "0.7",
     "optionD": "38.7",
     "correct": "C",
-    "explanation": "Mean = 271/7 = 38.7. Median (middle value) = 38. Difference = |38.7 - 38| = 0.7"
+    "explanation": "Mean = 271/7 = 38.7. Median (middle value) = 38. Difference = |38.7 - 38| = 0.7",
+    "options": [
+      "-0.3",
+      "1.7",
+      "0.7",
+      "38.7"
+    ],
+    "correct_key": "C"
   },
   {
     "id": 140,
@@ -2714,7 +4170,14 @@
     "optionC": "1.4142",
     "optionD": "0.3536",
     "correct": "A",
-    "explanation": "cos(315°) = 0.7071. Reference angle and quadrant determine the sign."
+    "explanation": "cos(315°) = 0.7071. Reference angle and quadrant determine the sign.",
+    "options": [
+      "0.7071",
+      "-0.7071",
+      "1.4142",
+      "0.3536"
+    ],
+    "correct_key": "A"
   },
   {
     "id": 260,
@@ -2727,7 +4190,14 @@
     "optionC": "f⁻¹(x) = (x - -6)/5",
     "optionD": "f⁻¹(x) = (x + -6)/5",
     "correct": "C",
-    "explanation": "To find inverse: y = 5x + -6, solve for x: x = (y - -6)/5. Replace y with x: f⁻¹(x) = (x - -6)/5"
+    "explanation": "To find inverse: y = 5x + -6, solve for x: x = (y - -6)/5. Replace y with x: f⁻¹(x) = (x - -6)/5",
+    "options": [
+      "f⁻¹(x) = x/5 - -6",
+      "f⁻¹(x) = 5x - -6",
+      "f⁻¹(x) = (x - -6)/5",
+      "f⁻¹(x) = (x + -6)/5"
+    ],
+    "correct_key": "C"
   },
   {
     "id": 499,
@@ -2740,7 +4210,14 @@
     "optionC": "105",
     "optionD": "105",
     "correct": "B",
-    "explanation": "nth term = a₁ + (n-1)d = 10 + (19-1)(5) = 10 + 90 = 100"
+    "explanation": "nth term = a₁ + (n-1)d = 10 + (19-1)(5) = 10 + 90 = 100",
+    "options": [
+      "95",
+      "100",
+      "105",
+      "105"
+    ],
+    "correct_key": "B"
   },
   {
     "id": 324,
@@ -2753,7 +4230,14 @@
     "optionC": "3.6",
     "optionD": "2.6",
     "correct": "D",
-    "explanation": "Mean = 221/7 = 31.6. Median (middle value) = 29. Difference = |31.6 - 29| = 2.6"
+    "explanation": "Mean = 221/7 = 31.6. Median (middle value) = 29. Difference = |31.6 - 29| = 2.6",
+    "options": [
+      "1.6",
+      "31.6",
+      "3.6",
+      "2.6"
+    ],
+    "correct_key": "D"
   },
   {
     "id": 59,
@@ -2766,7 +4250,14 @@
     "optionC": "2540",
     "optionD": "2309",
     "correct": "D",
-    "explanation": "Use P(t) = P₀(1 + r)^t = 799(1.0607337060190525)^18 = 2309. Option B incorrectly uses simple interest instead of compound growth."
+    "explanation": "Use P(t) = P₀(1 + r)^t = 799(1.0607337060190525)^18 = 2309. Option B incorrectly uses simple interest instead of compound growth.",
+    "options": [
+      "2078",
+      "1672",
+      "2540",
+      "2309"
+    ],
+    "correct_key": "D"
   },
   {
     "id": 386,
@@ -2779,7 +4270,14 @@
     "optionC": "41.86",
     "optionD": "38.86",
     "correct": "B",
-    "explanation": "Substitute x = 19: y = 2.05(19) + 1.00 = 39.86"
+    "explanation": "Substitute x = 19: y = 2.05(19) + 1.00 = 39.86",
+    "options": [
+      "37.86",
+      "39.86",
+      "41.86",
+      "38.86"
+    ],
+    "correct_key": "B"
   },
   {
     "id": 279,
@@ -2792,7 +4290,14 @@
     "optionC": "Shift left 5 and down 4",
     "optionD": "Reflect and shift",
     "correct": "B",
-    "explanation": "f(x + 5) shifts left by 5. Adding 4 shifts up by 4."
+    "explanation": "f(x + 5) shifts left by 5. Adding 4 shifts up by 4.",
+    "options": [
+      "Shift right 5 and up 4",
+      "Shift left 5 and up 4",
+      "Shift left 5 and down 4",
+      "Reflect and shift"
+    ],
+    "correct_key": "B"
   },
   {
     "id": 11,
@@ -2805,7 +4310,14 @@
     "optionC": "-1.75",
     "optionD": "-17.00",
     "correct": "A",
-    "explanation": "For a quadratic f(x) = ax² + bx + c, the vertex is at x = -b/(2a) = -1.75. Substituting back: f(-1.75) = 2(-1.75)² + 7(-1.75) + -17 = -23.12"
+    "explanation": "For a quadratic f(x) = ax² + bx + c, the vertex is at x = -b/(2a) = -1.75. Substituting back: f(-1.75) = 2(-1.75)² + 7(-1.75) + -17 = -23.12",
+    "options": [
+      "-23.12",
+      "-10.88",
+      "-1.75",
+      "-17.00"
+    ],
+    "correct_key": "A"
   },
   {
     "id": 222,
@@ -2818,7 +4330,14 @@
     "optionC": "37",
     "optionD": "32",
     "correct": "D",
-    "explanation": "First find f(5) = 2(5) + -2 = 8. Then g(f(5)) = g(8) = 4(8) = 32"
+    "explanation": "First find f(5) = 2(5) + -2 = 8. Then g(f(5)) = g(8) = 4(8) = 32",
+    "options": [
+      "27",
+      "38",
+      "37",
+      "32"
+    ],
+    "correct_key": "D"
   },
   {
     "id": 453,
@@ -2831,7 +4350,14 @@
     "optionC": "7.00 hours",
     "optionD": "17.00 hours",
     "correct": "B",
-    "explanation": "Combined rate = 1/7 + 1/10 = 0.243 jobs/hour. Time = 1/rate = 4.12 hours"
+    "explanation": "Combined rate = 1/7 + 1/10 = 0.243 jobs/hour. Time = 1/rate = 4.12 hours",
+    "options": [
+      "8.50 hours",
+      "4.12 hours",
+      "7.00 hours",
+      "17.00 hours"
+    ],
+    "correct_key": "B"
   },
   {
     "id": 133,
@@ -2844,7 +4370,14 @@
     "optionC": "2.0000",
     "optionD": "0.5000",
     "correct": "A",
-    "explanation": "tan(315°) = -1.0000. Reference angle and quadrant determine the sign."
+    "explanation": "tan(315°) = -1.0000. Reference angle and quadrant determine the sign.",
+    "options": [
+      "-1.0000",
+      "1.0000",
+      "2.0000",
+      "0.5000"
+    ],
+    "correct_key": "A"
   },
   {
     "id": 281,
@@ -2857,7 +4390,14 @@
     "optionC": "Shift right 3 and up 5",
     "optionD": "Reflect and shift",
     "correct": "C",
-    "explanation": "f(x - h) shifts right by 3. Adding 5 shifts up by 5."
+    "explanation": "f(x - h) shifts right by 3. Adding 5 shifts up by 5.",
+    "options": [
+      "Shift left 3 and up 5",
+      "Shift right 3 and down 5",
+      "Shift right 3 and up 5",
+      "Reflect and shift"
+    ],
+    "correct_key": "C"
   },
   {
     "id": 413,
@@ -2870,7 +4410,14 @@
     "optionC": "3.55",
     "optionD": "6.87",
     "correct": "C",
-    "explanation": "Combined speed = 60 + 56 = 116 mph. Time = distance/speed = 412/116 = 3.55 hours"
+    "explanation": "Combined speed = 60 + 56 = 116 mph. Time = distance/speed = 412/116 = 3.55 hours",
+    "options": [
+      "3.05",
+      "4.05",
+      "3.55",
+      "6.87"
+    ],
+    "correct_key": "C"
   },
   {
     "id": 163,
@@ -2883,7 +4430,14 @@
     "optionC": "1036.73",
     "optionD": "376.99",
     "correct": "B",
-    "explanation": "Volume = πr²h = π(5)²(12) = 942.48 cubic units"
+    "explanation": "Volume = πr²h = π(5)²(12) = 942.48 cubic units",
+    "options": [
+      "848.23",
+      "942.48",
+      "1036.73",
+      "376.99"
+    ],
+    "correct_key": "B"
   },
   {
     "id": 417,
@@ -2896,7 +4450,14 @@
     "optionC": "4.45",
     "optionD": "3.95",
     "correct": "D",
-    "explanation": "Combined speed = 40 + 43 = 83 mph. Time = distance/speed = 328/83 = 3.95 hours"
+    "explanation": "Combined speed = 40 + 43 = 83 mph. Time = distance/speed = 328/83 = 3.95 hours",
+    "options": [
+      "3.45",
+      "8.20",
+      "4.45",
+      "3.95"
+    ],
+    "correct_key": "D"
   },
   {
     "id": 146,
@@ -2909,7 +4470,14 @@
     "optionC": "14.45",
     "optionD": "13.45",
     "correct": "D",
-    "explanation": "By the Pythagorean theorem: c² = 9² + 10² = 81 + 100 = 181, so c = √181 = 13.45"
+    "explanation": "By the Pythagorean theorem: c² = 9² + 10² = 81 + 100 = 181, so c = √181 = 13.45",
+    "options": [
+      "12.45",
+      "19.00",
+      "14.45",
+      "13.45"
+    ],
+    "correct_key": "D"
   },
   {
     "id": 388,
@@ -2922,7 +4490,14 @@
     "optionC": "50.81",
     "optionD": "48.81",
     "correct": "D",
-    "explanation": "Substitute x = 19: y = 2.41(19) + 3.00 = 48.81"
+    "explanation": "Substitute x = 19: y = 2.41(19) + 3.00 = 48.81",
+    "options": [
+      "46.81",
+      "45.81",
+      "50.81",
+      "48.81"
+    ],
+    "correct_key": "D"
   },
   {
     "id": 25,
@@ -2935,7 +4510,14 @@
     "optionC": "-0.67",
     "optionD": "12.00",
     "correct": "A",
-    "explanation": "For a quadratic f(x) = ax² + bx + c, the vertex is at x = -b/(2a) = -0.67. Substituting back: f(-0.67) = 3(-0.67)² + 4(-0.67) + 12 = 10.67"
+    "explanation": "For a quadratic f(x) = ax² + bx + c, the vertex is at x = -b/(2a) = -0.67. Substituting back: f(-0.67) = 3(-0.67)² + 4(-0.67) + 12 = 10.67",
+    "options": [
+      "10.67",
+      "13.33",
+      "-0.67",
+      "12.00"
+    ],
+    "correct_key": "A"
   },
   {
     "id": 7,
@@ -2948,7 +4530,14 @@
     "optionC": "-1.25",
     "optionD": "-7.00",
     "correct": "A",
-    "explanation": "For a quadratic f(x) = ax² + bx + c, the vertex is at x = -b/(2a) = -1.25. Substituting back: f(-1.25) = 4(-1.25)² + 10(-1.25) + -7 = -13.25"
+    "explanation": "For a quadratic f(x) = ax² + bx + c, the vertex is at x = -b/(2a) = -1.25. Substituting back: f(-1.25) = 4(-1.25)² + 10(-1.25) + -7 = -13.25",
+    "options": [
+      "-13.25",
+      "-0.75",
+      "-1.25",
+      "-7.00"
+    ],
+    "correct_key": "A"
   },
   {
     "id": 125,
@@ -2961,7 +4550,14 @@
     "optionC": "1.4142",
     "optionD": "0.3536",
     "correct": "A",
-    "explanation": "sin(45°) = 0.7071. Reference angle and quadrant determine the sign."
+    "explanation": "sin(45°) = 0.7071. Reference angle and quadrant determine the sign.",
+    "options": [
+      "0.7071",
+      "-0.7071",
+      "1.4142",
+      "0.3536"
+    ],
+    "correct_key": "A"
   },
   {
     "id": 464,
@@ -2974,7 +4570,14 @@
     "optionC": "x > 8.40",
     "optionD": "x < 8.40",
     "correct": "D",
-    "explanation": "Subtract 2: 5x < 42. Divide by 5: x < 8.40"
+    "explanation": "Subtract 2: 5x < 42. Divide by 5: x < 8.40",
+    "options": [
+      "x < 7.40",
+      "x < 8.80",
+      "x > 8.40",
+      "x < 8.40"
+    ],
+    "correct_key": "D"
   },
   {
     "id": 38,
@@ -2987,7 +4590,14 @@
     "optionC": "(3.44, 0.56)",
     "optionD": "(2.44, 1.56)",
     "correct": "A",
-    "explanation": "Add the equations: 18x = 44, so x = 2.44. Substitute into first equation: 6(2.44) + 6y = 18, solving gives y = 0.56"
+    "explanation": "Add the equations: 18x = 44, so x = 2.44. Substitute into first equation: 6(2.44) + 6y = 18, solving gives y = 0.56",
+    "options": [
+      "(2.44, 0.56)",
+      "(0.56, 2.44)",
+      "(3.44, 0.56)",
+      "(2.44, 1.56)"
+    ],
+    "correct_key": "A"
   },
   {
     "id": 223,
@@ -3000,7 +4610,14 @@
     "optionC": "11",
     "optionD": "14",
     "correct": "A",
-    "explanation": "First find f(3) = 2(3) + -4 = 2. Then g(f(3)) = g(2) = 3(2) = 6"
+    "explanation": "First find f(3) = 2(3) + -4 = 2. Then g(f(3)) = g(2) = 3(2) = 6",
+    "options": [
+      "6",
+      "1",
+      "11",
+      "14"
+    ],
+    "correct_key": "A"
   },
   {
     "id": 153,
@@ -3013,7 +4630,14 @@
     "optionC": "11.30",
     "optionD": "10.30",
     "correct": "D",
-    "explanation": "By the Pythagorean theorem: c² = 9² + 5² = 81 + 25 = 106, so c = √106 = 10.30"
+    "explanation": "By the Pythagorean theorem: c² = 9² + 5² = 81 + 25 = 106, so c = √106 = 10.30",
+    "options": [
+      "9.30",
+      "14.00",
+      "11.30",
+      "10.30"
+    ],
+    "correct_key": "D"
   },
   {
     "id": 461,
@@ -3026,7 +4650,14 @@
     "optionC": "x > 16.50",
     "optionD": "x < 19.50",
     "correct": "B",
-    "explanation": "Subtract 6: 2x < 33. Divide by 2: x < 16.50"
+    "explanation": "Subtract 6: 2x < 33. Divide by 2: x < 16.50",
+    "options": [
+      "x < 15.50",
+      "x < 16.50",
+      "x > 16.50",
+      "x < 19.50"
+    ],
+    "correct_key": "B"
   },
   {
     "id": 283,
@@ -3039,7 +4670,14 @@
     "optionC": "Shift left 1 and down 3",
     "optionD": "Reflect and shift",
     "correct": "B",
-    "explanation": "f(x - h) shifts left by 1. Adding 3 shifts up by 3."
+    "explanation": "f(x - h) shifts left by 1. Adding 3 shifts up by 3.",
+    "options": [
+      "Shift left 1 and up 3",
+      "Shift left 1 and up 3",
+      "Shift left 1 and down 3",
+      "Reflect and shift"
+    ],
+    "correct_key": "B"
   },
   {
     "id": 130,
@@ -3052,7 +4690,14 @@
     "optionC": "1.7321",
     "optionD": "0.4330",
     "correct": "A",
-    "explanation": "sin(120°) = 0.8660. Reference angle and quadrant determine the sign."
+    "explanation": "sin(120°) = 0.8660. Reference angle and quadrant determine the sign.",
+    "options": [
+      "0.8660",
+      "-0.8660",
+      "1.7321",
+      "0.4330"
+    ],
+    "correct_key": "A"
   },
   {
     "id": 382,
@@ -3065,7 +4710,14 @@
     "optionC": "9.59",
     "optionD": "7.59",
     "correct": "D",
-    "explanation": "Substitute x = 13: y = 0.74(13) + -2.00 = 7.59"
+    "explanation": "Substitute x = 13: y = 0.74(13) + -2.00 = 7.59",
+    "options": [
+      "5.59",
+      "9.59",
+      "9.59",
+      "7.59"
+    ],
+    "correct_key": "D"
   },
   {
     "id": 52,
@@ -3078,7 +4730,14 @@
     "optionC": "2511",
     "optionD": "1824",
     "correct": "B",
-    "explanation": "Use P(t) = P₀(1 + r)^t = 962(1.0746970873048511)^12 = 2283. Option D incorrectly uses simple interest instead of compound growth."
+    "explanation": "Use P(t) = P₀(1 + r)^t = 962(1.0746970873048511)^12 = 2283. Option D incorrectly uses simple interest instead of compound growth.",
+    "options": [
+      "2055",
+      "2283",
+      "2511",
+      "1824"
+    ],
+    "correct_key": "B"
   },
   {
     "id": 107,
@@ -3091,7 +4750,14 @@
     "optionC": "11.52",
     "optionD": "10.47",
     "correct": "D",
-    "explanation": "Arc length = (θ/360°) × 2πr = (30/360) × 2π(20) = 10.47 units"
+    "explanation": "Arc length = (θ/360°) × 2πr = (30/360) × 2π(20) = 10.47 units",
+    "options": [
+      "9.42",
+      "125.66",
+      "11.52",
+      "10.47"
+    ],
+    "correct_key": "D"
   },
   {
     "id": 101,
@@ -3104,7 +4770,14 @@
     "optionC": "5.24",
     "optionD": "62.83",
     "correct": "C",
-    "explanation": "Arc length = (θ/360°) × 2πr = (30/360) × 2π(10) = 5.24 units"
+    "explanation": "Arc length = (θ/360°) × 2πr = (30/360) × 2π(10) = 5.24 units",
+    "options": [
+      "4.71",
+      "5.76",
+      "5.24",
+      "62.83"
+    ],
+    "correct_key": "C"
   },
   {
     "id": 355,
@@ -3117,7 +4790,14 @@
     "optionC": "0.328",
     "optionD": "40",
     "correct": "C",
-    "explanation": "Probability = (favorable outcomes)/(total outcomes) = 40/122 = 0.328"
+    "explanation": "Probability = (favorable outcomes)/(total outcomes) = 40/122 = 0.328",
+    "options": [
+      "0.295",
+      "0.361",
+      "0.328",
+      "40"
+    ],
+    "correct_key": "C"
   },
   {
     "id": 358,
@@ -3130,7 +4810,14 @@
     "optionC": "0.335",
     "optionD": "49",
     "correct": "B",
-    "explanation": "Probability = (favorable outcomes)/(total outcomes) = 49/161 = 0.304"
+    "explanation": "Probability = (favorable outcomes)/(total outcomes) = 49/161 = 0.304",
+    "options": [
+      "0.274",
+      "0.304",
+      "0.335",
+      "49"
+    ],
+    "correct_key": "B"
   },
   {
     "id": 308,
@@ -3143,7 +4830,14 @@
     "optionC": "2.0",
     "optionD": "1.0",
     "correct": "D",
-    "explanation": "Mean = 182/7 = 26.0. Median (middle value) = 27. Difference = |26.0 - 27| = 1.0"
+    "explanation": "Mean = 182/7 = 26.0. Median (middle value) = 27. Difference = |26.0 - 27| = 1.0",
+    "options": [
+      "0.0",
+      "26.0",
+      "2.0",
+      "1.0"
+    ],
+    "correct_key": "D"
   },
   {
     "id": 49,
@@ -3156,7 +4850,14 @@
     "optionC": "(3.75, 5.67)",
     "optionD": "(2.75, 6.67)",
     "correct": "A",
-    "explanation": "Add the equations: 24x = 66, so x = 2.75. Substitute into first equation: 8(2.75) + 3y = 39, solving gives y = 5.67"
+    "explanation": "Add the equations: 24x = 66, so x = 2.75. Substitute into first equation: 8(2.75) + 3y = 39, solving gives y = 5.67",
+    "options": [
+      "(2.75, 5.67)",
+      "(5.67, 2.75)",
+      "(3.75, 5.67)",
+      "(2.75, 6.67)"
+    ],
+    "correct_key": "A"
   },
   {
     "id": 22,
@@ -3169,7 +4870,14 @@
     "optionC": "0.25",
     "optionD": "-16.00",
     "correct": "A",
-    "explanation": "For a quadratic f(x) = ax² + bx + c, the vertex is at x = -b/(2a) = 0.25. Substituting back: f(0.25) = 4(0.25)² + -2(0.25) + -16 = -16.25"
+    "explanation": "For a quadratic f(x) = ax² + bx + c, the vertex is at x = -b/(2a) = 0.25. Substituting back: f(0.25) = 4(0.25)² + -2(0.25) + -16 = -16.25",
+    "options": [
+      "-16.25",
+      "-15.75",
+      "0.25",
+      "-16.00"
+    ],
+    "correct_key": "A"
   },
   {
     "id": 161,
@@ -3182,7 +4890,14 @@
     "optionC": "217.71",
     "optionD": "131.95",
     "correct": "B",
-    "explanation": "Volume = πr²h = π(3)²(7) = 197.92 cubic units"
+    "explanation": "Volume = πr²h = π(3)²(7) = 197.92 cubic units",
+    "options": [
+      "178.13",
+      "197.92",
+      "217.71",
+      "131.95"
+    ],
+    "correct_key": "B"
   },
   {
     "id": 154,
@@ -3195,7 +4910,14 @@
     "optionC": "13.37",
     "optionD": "15.00",
     "correct": "B",
-    "explanation": "By the Pythagorean theorem: c² = 3² + 12² = 9 + 144 = 153, so c = √153 = 12.37"
+    "explanation": "By the Pythagorean theorem: c² = 3² + 12² = 9 + 144 = 153, so c = √153 = 12.37",
+    "options": [
+      "11.37",
+      "12.37",
+      "13.37",
+      "15.00"
+    ],
+    "correct_key": "B"
   },
   {
     "id": 385,
@@ -3208,7 +4930,14 @@
     "optionC": "20.31",
     "optionD": "10.31",
     "correct": "B",
-    "explanation": "Substitute x = 5: y = 2.06(5) + 8.00 = 18.31"
+    "explanation": "Substitute x = 5: y = 2.06(5) + 8.00 = 18.31",
+    "options": [
+      "16.31",
+      "18.31",
+      "20.31",
+      "10.31"
+    ],
+    "correct_key": "B"
   },
   {
     "id": 9,
@@ -3221,7 +4950,14 @@
     "optionC": "-1.00",
     "optionD": "8.00",
     "correct": "A",
-    "explanation": "For a quadratic f(x) = ax² + bx + c, the vertex is at x = -b/(2a) = -1.00. Substituting back: f(-1.00) = 4(-1.00)² + 8(-1.00) + 8 = 4.00"
+    "explanation": "For a quadratic f(x) = ax² + bx + c, the vertex is at x = -b/(2a) = -1.00. Substituting back: f(-1.00) = 4(-1.00)² + 8(-1.00) + 8 = 4.00",
+    "options": [
+      "4.00",
+      "12.00",
+      "-1.00",
+      "8.00"
+    ],
+    "correct_key": "A"
   },
   {
     "id": 395,
@@ -3234,7 +4970,14 @@
     "optionC": "18.34",
     "optionD": "17.34",
     "correct": "C",
-    "explanation": "Substitute x = 8: y = 2.17(8) + 1.00 = 18.34"
+    "explanation": "Substitute x = 8: y = 2.17(8) + 1.00 = 18.34",
+    "options": [
+      "16.34",
+      "20.34",
+      "18.34",
+      "17.34"
+    ],
+    "correct_key": "C"
   },
   {
     "id": 12,
@@ -3247,7 +4990,14 @@
     "optionC": "-1.67",
     "optionD": "-14.00",
     "correct": "A",
-    "explanation": "For a quadratic f(x) = ax² + bx + c, the vertex is at x = -b/(2a) = -1.67. Substituting back: f(-1.67) = 3(-1.67)² + 10(-1.67) + -14 = -22.33"
+    "explanation": "For a quadratic f(x) = ax² + bx + c, the vertex is at x = -b/(2a) = -1.67. Substituting back: f(-1.67) = 3(-1.67)² + 10(-1.67) + -14 = -22.33",
+    "options": [
+      "-22.33",
+      "-5.67",
+      "-1.67",
+      "-14.00"
+    ],
+    "correct_key": "A"
   },
   {
     "id": 72,
@@ -3260,7 +5010,14 @@
     "optionC": "2359",
     "optionD": "2144",
     "correct": "D",
-    "explanation": "Use P(t) = P₀(1 + r)^t = 984(1.0533107316626587)^15 = 2144. Option B incorrectly uses simple interest instead of compound growth."
+    "explanation": "Use P(t) = P₀(1 + r)^t = 984(1.0533107316626587)^15 = 2144. Option B incorrectly uses simple interest instead of compound growth.",
+    "options": [
+      "1930",
+      "1770",
+      "2359",
+      "2144"
+    ],
+    "correct_key": "D"
   },
   {
     "id": 456,
@@ -3273,7 +5030,14 @@
     "optionC": "8.00 hours",
     "optionD": "4.44 hours",
     "correct": "D",
-    "explanation": "Combined rate = 1/10 + 1/8 = 0.225 jobs/hour. Time = 1/rate = 4.44 hours"
+    "explanation": "Combined rate = 1/10 + 1/8 = 0.225 jobs/hour. Time = 1/rate = 4.44 hours",
+    "options": [
+      "9.00 hours",
+      "18.00 hours",
+      "8.00 hours",
+      "4.44 hours"
+    ],
+    "correct_key": "D"
   },
   {
     "id": 204,
@@ -3286,7 +5050,14 @@
     "optionC": "-9",
     "optionD": "-5",
     "correct": "A",
-    "explanation": "First find f(1) = 2(1) - 9 = -7. Then g(f(1)) = g(-7) = 2(-7) = -14"
+    "explanation": "First find f(1) = 2(1) - 9 = -7. Then g(f(1)) = g(-7) = 2(-7) = -14",
+    "options": [
+      "-14",
+      "-19",
+      "-9",
+      "-5"
+    ],
+    "correct_key": "A"
   },
   {
     "id": 361,
@@ -3299,7 +5070,14 @@
     "optionC": "0.194",
     "optionD": "0.177",
     "correct": "D",
-    "explanation": "Probability = (favorable outcomes)/(total outcomes) = 32/181 = 0.177"
+    "explanation": "Probability = (favorable outcomes)/(total outcomes) = 32/181 = 0.177",
+    "options": [
+      "0.159",
+      "32",
+      "0.194",
+      "0.177"
+    ],
+    "correct_key": "D"
   },
   {
     "id": 54,
@@ -3312,7 +5090,14 @@
     "optionC": "4440",
     "optionD": "2273",
     "correct": "C",
-    "explanation": "Use P(t) = P₀(1 + r)^t = 823(1.09276407960838)^19 = 4440. Option D incorrectly uses simple interest instead of compound growth."
+    "explanation": "Use P(t) = P₀(1 + r)^t = 823(1.09276407960838)^19 = 4440. Option D incorrectly uses simple interest instead of compound growth.",
+    "options": [
+      "3996",
+      "4884",
+      "4440",
+      "2273"
+    ],
+    "correct_key": "C"
   },
   {
     "id": 380,
@@ -3325,7 +5110,14 @@
     "optionC": "22.29",
     "optionD": "12.29",
     "correct": "A",
-    "explanation": "Substitute x = 5: y = 2.46(5) + 8.00 = 20.29"
+    "explanation": "Substitute x = 5: y = 2.46(5) + 8.00 = 20.29",
+    "options": [
+      "20.29",
+      "18.29",
+      "22.29",
+      "12.29"
+    ],
+    "correct_key": "A"
   },
   {
     "id": 44,
@@ -3338,7 +5130,14 @@
     "optionC": "(9.17, 4.89)",
     "optionD": "(8.17, 5.89)",
     "correct": "A",
-    "explanation": "Add the equations: 6x = 49, so x = 8.17. Substitute into first equation: 2(8.17) + 3y = 31, solving gives y = 4.89"
+    "explanation": "Add the equations: 6x = 49, so x = 8.17. Substitute into first equation: 2(8.17) + 3y = 31, solving gives y = 4.89",
+    "options": [
+      "(8.17, 4.89)",
+      "(4.89, 8.17)",
+      "(9.17, 4.89)",
+      "(8.17, 5.89)"
+    ],
+    "correct_key": "A"
   },
   {
     "id": 318,
@@ -3351,7 +5150,14 @@
     "optionC": "2.9",
     "optionD": "30.1",
     "correct": "C",
-    "explanation": "Mean = 211/7 = 30.1. Median (middle value) = 33. Difference = |30.1 - 33| = 2.9"
+    "explanation": "Mean = 211/7 = 30.1. Median (middle value) = 33. Difference = |30.1 - 33| = 2.9",
+    "options": [
+      "1.9",
+      "3.9",
+      "2.9",
+      "30.1"
+    ],
+    "correct_key": "C"
   },
   {
     "id": 430,
@@ -3364,7 +5170,14 @@
     "optionC": "212.67",
     "optionD": "192.00",
     "correct": "C",
-    "explanation": "New value = 153 × (1 + 39/100) = 153 × 1.3900000000000001 = 212.67"
+    "explanation": "New value = 153 × (1 + 39/100) = 153 × 1.3900000000000001 = 212.67",
+    "options": [
+      "202.67",
+      "222.67",
+      "212.67",
+      "192.00"
+    ],
+    "correct_key": "C"
   },
   {
     "id": 495,
@@ -3377,7 +5190,14 @@
     "optionC": "76",
     "optionD": "76",
     "correct": "B",
-    "explanation": "nth term = a₁ + (n-1)d = 10 + (11-1)(6) = 10 + 60 = 70"
+    "explanation": "nth term = a₁ + (n-1)d = 10 + (11-1)(6) = 10 + 60 = 70",
+    "options": [
+      "64",
+      "70",
+      "76",
+      "76"
+    ],
+    "correct_key": "B"
   },
   {
     "id": 165,
@@ -3390,7 +5210,14 @@
     "optionC": "1539.38",
     "optionD": "439.82",
     "correct": "C",
-    "explanation": "Volume = πr²h = π(7)²(10) = 1539.38 cubic units"
+    "explanation": "Volume = πr²h = π(7)²(10) = 1539.38 cubic units",
+    "options": [
+      "1385.44",
+      "1693.32",
+      "1539.38",
+      "439.82"
+    ],
+    "correct_key": "C"
   },
   {
     "id": 394,
@@ -3403,7 +5230,14 @@
     "optionC": "17.86",
     "optionD": "10.86",
     "correct": "B",
-    "explanation": "Substitute x = 17: y = 0.64(17) + 5.00 = 15.86"
+    "explanation": "Substitute x = 17: y = 0.64(17) + 5.00 = 15.86",
+    "options": [
+      "13.86",
+      "15.86",
+      "17.86",
+      "10.86"
+    ],
+    "correct_key": "B"
   },
   {
     "id": 217,
@@ -3416,7 +5250,14 @@
     "optionC": "42",
     "optionD": "46",
     "correct": "C",
-    "explanation": "First find f(4) = 4(4) + -2 = 14. Then g(f(4)) = g(14) = 3(14) = 42"
+    "explanation": "First find f(4) = 4(4) + -2 = 14. Then g(f(4)) = g(14) = 3(14) = 42",
+    "options": [
+      "37",
+      "47",
+      "42",
+      "46"
+    ],
+    "correct_key": "C"
   },
   {
     "id": 466,
@@ -3429,7 +5270,14 @@
     "optionC": "x > 5.75",
     "optionD": "x < 5.75",
     "correct": "D",
-    "explanation": "Subtract 10: 4x < 23. Divide by 4: x < 5.75"
+    "explanation": "Subtract 10: 4x < 23. Divide by 4: x < 5.75",
+    "options": [
+      "x < 4.75",
+      "x < 8.25",
+      "x > 5.75",
+      "x < 5.75"
+    ],
+    "correct_key": "D"
   },
   {
     "id": 224,
@@ -3442,7 +5290,14 @@
     "optionC": "20",
     "optionD": "15",
     "correct": "D",
-    "explanation": "First find f(2) = 3(2) + -3 = 3. Then g(f(2)) = g(3) = 5(3) = 15"
+    "explanation": "First find f(2) = 3(2) + -3 = 3. Then g(f(2)) = g(3) = 5(3) = 15",
+    "options": [
+      "10",
+      "27",
+      "20",
+      "15"
+    ],
+    "correct_key": "D"
   },
   {
     "id": 418,
@@ -3455,7 +5310,14 @@
     "optionC": "3.94",
     "optionD": "3.44",
     "correct": "D",
-    "explanation": "Combined speed = 78 + 48 = 126 mph. Time = distance/speed = 434/126 = 3.44 hours"
+    "explanation": "Combined speed = 78 + 48 = 126 mph. Time = distance/speed = 434/126 = 3.44 hours",
+    "options": [
+      "2.94",
+      "5.56",
+      "3.94",
+      "3.44"
+    ],
+    "correct_key": "D"
   },
   {
     "id": 303,
@@ -3468,7 +5330,14 @@
     "optionC": "2.1",
     "optionD": "1.1",
     "correct": "D",
-    "explanation": "Mean = 211/7 = 30.1. Median (middle value) = 29. Difference = |30.1 - 29| = 1.1"
+    "explanation": "Mean = 211/7 = 30.1. Median (middle value) = 29. Difference = |30.1 - 29| = 1.1",
+    "options": [
+      "0.1",
+      "30.1",
+      "2.1",
+      "1.1"
+    ],
+    "correct_key": "D"
   },
   {
     "id": 352,
@@ -3481,7 +5350,14 @@
     "optionC": "0.306",
     "optionD": "27",
     "correct": "A",
-    "explanation": "Probability = (favorable outcomes)/(total outcomes) = 27/97 = 0.278"
+    "explanation": "Probability = (favorable outcomes)/(total outcomes) = 27/97 = 0.278",
+    "options": [
+      "0.278",
+      "0.251",
+      "0.306",
+      "27"
+    ],
+    "correct_key": "A"
   },
   {
     "id": 1,
@@ -3494,7 +5370,14 @@
     "optionC": "-0.40",
     "optionD": "-4.00",
     "correct": "A",
-    "explanation": "For a quadratic f(x) = ax² + bx + c, the vertex is at x = -b/(2a) = -0.40. Substituting back: f(-0.40) = 5(-0.40)² + 4(-0.40) + -4 = -4.80"
+    "explanation": "For a quadratic f(x) = ax² + bx + c, the vertex is at x = -b/(2a) = -0.40. Substituting back: f(-0.40) = 5(-0.40)² + 4(-0.40) + -4 = -4.80",
+    "options": [
+      "-4.80",
+      "-3.20",
+      "-0.40",
+      "-4.00"
+    ],
+    "correct_key": "A"
   },
   {
     "id": 65,
@@ -3507,7 +5390,14 @@
     "optionC": "319",
     "optionD": "310",
     "correct": "C",
-    "explanation": "Use P(t) = P₀(1 + r)^t = 243(1.0465985693800637)^6 = 319. Option D incorrectly uses simple interest instead of compound growth."
+    "explanation": "Use P(t) = P₀(1 + r)^t = 243(1.0465985693800637)^6 = 319. Option D incorrectly uses simple interest instead of compound growth.",
+    "options": [
+      "287",
+      "351",
+      "319",
+      "310"
+    ],
+    "correct_key": "C"
   },
   {
     "id": 14,
@@ -3520,7 +5410,14 @@
     "optionC": "0.75",
     "optionD": "16.00",
     "correct": "A",
-    "explanation": "For a quadratic f(x) = ax² + bx + c, the vertex is at x = -b/(2a) = 0.75. Substituting back: f(0.75) = 4(0.75)² + -6(0.75) + 16 = 13.75"
+    "explanation": "For a quadratic f(x) = ax² + bx + c, the vertex is at x = -b/(2a) = 0.75. Substituting back: f(0.75) = 4(0.75)² + -6(0.75) + 16 = 13.75",
+    "options": [
+      "13.75",
+      "18.25",
+      "0.75",
+      "16.00"
+    ],
+    "correct_key": "A"
   },
   {
     "id": 23,
@@ -3533,7 +5430,14 @@
     "optionC": "0.25",
     "optionD": "5.00",
     "correct": "A",
-    "explanation": "For a quadratic f(x) = ax² + bx + c, the vertex is at x = -b/(2a) = 0.25. Substituting back: f(0.25) = 4(0.25)² + -2(0.25) + 5 = 4.75"
+    "explanation": "For a quadratic f(x) = ax² + bx + c, the vertex is at x = -b/(2a) = 0.25. Substituting back: f(0.25) = 4(0.25)² + -2(0.25) + 5 = 4.75",
+    "options": [
+      "4.75",
+      "5.25",
+      "0.25",
+      "5.00"
+    ],
+    "correct_key": "A"
   },
   {
     "id": 350,
@@ -3546,7 +5450,14 @@
     "optionC": "0.388",
     "optionD": "45",
     "correct": "C",
-    "explanation": "Probability = (favorable outcomes)/(total outcomes) = 45/116 = 0.388"
+    "explanation": "Probability = (favorable outcomes)/(total outcomes) = 45/116 = 0.388",
+    "options": [
+      "0.349",
+      "0.427",
+      "0.388",
+      "45"
+    ],
+    "correct_key": "C"
   },
   {
     "id": 168,
@@ -3559,7 +5470,14 @@
     "optionC": "3079.07",
     "optionD": "622.04",
     "correct": "B",
-    "explanation": "Volume = πr²h = π(9)²(11) = 2799.16 cubic units"
+    "explanation": "Volume = πr²h = π(9)²(11) = 2799.16 cubic units",
+    "options": [
+      "2519.24",
+      "2799.16",
+      "3079.07",
+      "622.04"
+    ],
+    "correct_key": "B"
   },
   {
     "id": 470,
@@ -3572,7 +5490,14 @@
     "optionC": "x > 1.25",
     "optionD": "x < 1.25",
     "correct": "D",
-    "explanation": "Subtract 9: 4x < 5. Divide by 4: x < 1.25"
+    "explanation": "Subtract 9: 4x < 5. Divide by 4: x < 1.25",
+    "options": [
+      "x < 0.25",
+      "x < 3.50",
+      "x > 1.25",
+      "x < 1.25"
+    ],
+    "correct_key": "D"
   },
   {
     "id": 126,
@@ -3585,7 +5510,14 @@
     "optionC": "1.4142",
     "optionD": "0.3536",
     "correct": "A",
-    "explanation": "sin(135°) = 0.7071. Reference angle and quadrant determine the sign."
+    "explanation": "sin(135°) = 0.7071. Reference angle and quadrant determine the sign.",
+    "options": [
+      "0.7071",
+      "-0.7071",
+      "1.4142",
+      "0.3536"
+    ],
+    "correct_key": "A"
   },
   {
     "id": 457,
@@ -3598,7 +5530,14 @@
     "optionC": "3.00 hours",
     "optionD": "2.18 hours",
     "correct": "D",
-    "explanation": "Combined rate = 1/8 + 1/3 = 0.458 jobs/hour. Time = 1/rate = 2.18 hours"
+    "explanation": "Combined rate = 1/8 + 1/3 = 0.458 jobs/hour. Time = 1/rate = 2.18 hours",
+    "options": [
+      "5.50 hours",
+      "11.00 hours",
+      "3.00 hours",
+      "2.18 hours"
+    ],
+    "correct_key": "D"
   },
   {
     "id": 415,
@@ -3611,7 +5550,14 @@
     "optionC": "5.37",
     "optionD": "10.74",
     "correct": "C",
-    "explanation": "Combined speed = 43 + 43 = 86 mph. Time = distance/speed = 462/86 = 5.37 hours"
+    "explanation": "Combined speed = 43 + 43 = 86 mph. Time = distance/speed = 462/86 = 5.37 hours",
+    "options": [
+      "4.87",
+      "5.87",
+      "5.37",
+      "10.74"
+    ],
+    "correct_key": "C"
   },
   {
     "id": 121,
@@ -3624,7 +5570,14 @@
     "optionC": "1.4142",
     "optionD": "0.3536",
     "correct": "A",
-    "explanation": "cos(135°) = -0.7071. Reference angle and quadrant determine the sign."
+    "explanation": "cos(135°) = -0.7071. Reference angle and quadrant determine the sign.",
+    "options": [
+      "-0.7071",
+      "0.7071",
+      "1.4142",
+      "0.3536"
+    ],
+    "correct_key": "A"
   },
   {
     "id": 31,
@@ -3637,7 +5590,14 @@
     "optionC": "(3.27, 3.89)",
     "optionD": "(2.27, 4.89)",
     "correct": "A",
-    "explanation": "Add the equations: 15x = 34, so x = 2.27. Substitute into first equation: 5(2.27) + 3y = 23, solving gives y = 3.89"
+    "explanation": "Add the equations: 15x = 34, so x = 2.27. Substitute into first equation: 5(2.27) + 3y = 23, solving gives y = 3.89",
+    "options": [
+      "(2.27, 3.89)",
+      "(3.89, 2.27)",
+      "(3.27, 3.89)",
+      "(2.27, 4.89)"
+    ],
+    "correct_key": "A"
   },
   {
     "id": 259,
@@ -3650,7 +5610,14 @@
     "optionC": "f⁻¹(x) = 7x - 9",
     "optionD": "f⁻¹(x) = (x - 9)/7",
     "correct": "D",
-    "explanation": "To find inverse: y = 7x + 9, solve for x: x = (y - 9)/7. Replace y with x: f⁻¹(x) = (x - 9)/7"
+    "explanation": "To find inverse: y = 7x + 9, solve for x: x = (y - 9)/7. Replace y with x: f⁻¹(x) = (x - 9)/7",
+    "options": [
+      "f⁻¹(x) = x/7 - 9",
+      "f⁻¹(x) = (x + 9)/7",
+      "f⁻¹(x) = 7x - 9",
+      "f⁻¹(x) = (x - 9)/7"
+    ],
+    "correct_key": "D"
   },
   {
     "id": 177,
@@ -3663,7 +5630,14 @@
     "optionC": "1368.48",
     "optionD": "414.69",
     "correct": "B",
-    "explanation": "Volume = πr²h = π(6)²(11) = 1244.07 cubic units"
+    "explanation": "Volume = πr²h = π(6)²(11) = 1244.07 cubic units",
+    "options": [
+      "1119.66",
+      "1244.07",
+      "1368.48",
+      "414.69"
+    ],
+    "correct_key": "B"
   },
   {
     "id": 474,
@@ -3676,7 +5650,14 @@
     "optionC": "x < 1.29",
     "optionD": "x < 2.00",
     "correct": "C",
-    "explanation": "Subtract 5: 7x < 9. Divide by 7: x < 1.29"
+    "explanation": "Subtract 5: 7x < 9. Divide by 7: x < 1.29",
+    "options": [
+      "x < 0.29",
+      "x > 1.29",
+      "x < 1.29",
+      "x < 2.00"
+    ],
+    "correct_key": "C"
   },
   {
     "id": 256,
@@ -3689,7 +5670,14 @@
     "optionC": "f⁻¹(x) = 5x - -10",
     "optionD": "f⁻¹(x) = (x + -10)/5",
     "correct": "B",
-    "explanation": "To find inverse: y = 5x + -10, solve for x: x = (y - -10)/5. Replace y with x: f⁻¹(x) = (x - -10)/5"
+    "explanation": "To find inverse: y = 5x + -10, solve for x: x = (y - -10)/5. Replace y with x: f⁻¹(x) = (x - -10)/5",
+    "options": [
+      "f⁻¹(x) = x/5 - -10",
+      "f⁻¹(x) = (x - -10)/5",
+      "f⁻¹(x) = 5x - -10",
+      "f⁻¹(x) = (x + -10)/5"
+    ],
+    "correct_key": "B"
   },
   {
     "id": 10,
@@ -3702,7 +5690,14 @@
     "optionC": "-0.25",
     "optionD": "-17.00",
     "correct": "A",
-    "explanation": "For a quadratic f(x) = ax² + bx + c, the vertex is at x = -b/(2a) = -0.25. Substituting back: f(-0.25) = 4(-0.25)² + 2(-0.25) + -17 = -17.25"
+    "explanation": "For a quadratic f(x) = ax² + bx + c, the vertex is at x = -b/(2a) = -0.25. Substituting back: f(-0.25) = 4(-0.25)² + 2(-0.25) + -17 = -17.25",
+    "options": [
+      "-17.25",
+      "-16.75",
+      "-0.25",
+      "-17.00"
+    ],
+    "correct_key": "A"
   },
   {
     "id": 326,
@@ -3715,7 +5710,14 @@
     "optionC": "Both have equal standard deviation",
     "optionD": "Cannot be determined",
     "correct": "A",
-    "explanation": "Set B has values more spread out from the mean (50.0) than Set A (50.0), so Set B has larger standard deviation."
+    "explanation": "Set B has values more spread out from the mean (50.0) than Set A (50.0), so Set B has larger standard deviation.",
+    "options": [
+      "Set B",
+      "Set A",
+      "Both have equal standard deviation",
+      "Cannot be determined"
+    ],
+    "correct_key": "A"
   },
   {
     "id": 111,
@@ -3728,7 +5730,14 @@
     "optionC": "8.06",
     "optionD": "7.33",
     "correct": "D",
-    "explanation": "Arc length = (θ/360°) × 2πr = (30/360) × 2π(14) = 7.33 units"
+    "explanation": "Arc length = (θ/360°) × 2πr = (30/360) × 2π(14) = 7.33 units",
+    "options": [
+      "6.60",
+      "87.96",
+      "8.06",
+      "7.33"
+    ],
+    "correct_key": "D"
   },
   {
     "id": 315,
@@ -3741,7 +5750,14 @@
     "optionC": "6.6",
     "optionD": "5.6",
     "correct": "D",
-    "explanation": "Mean = 234/7 = 33.4. Median (middle value) = 39. Difference = |33.4 - 39| = 5.6"
+    "explanation": "Mean = 234/7 = 33.4. Median (middle value) = 39. Difference = |33.4 - 39| = 5.6",
+    "options": [
+      "4.6",
+      "33.4",
+      "6.6",
+      "5.6"
+    ],
+    "correct_key": "D"
   },
   {
     "id": 312,
@@ -3754,7 +5770,14 @@
     "optionC": "7.9",
     "optionD": "30.9",
     "correct": "B",
-    "explanation": "Mean = 216/7 = 30.9. Median (middle value) = 24. Difference = |30.9 - 24| = 6.9"
+    "explanation": "Mean = 216/7 = 30.9. Median (middle value) = 24. Difference = |30.9 - 24| = 6.9",
+    "options": [
+      "5.9",
+      "6.9",
+      "7.9",
+      "30.9"
+    ],
+    "correct_key": "B"
   },
   {
     "id": 367,
@@ -3767,7 +5790,14 @@
     "optionC": "0.226",
     "optionD": "38",
     "correct": "C",
-    "explanation": "Probability = (favorable outcomes)/(total outcomes) = 38/168 = 0.226"
+    "explanation": "Probability = (favorable outcomes)/(total outcomes) = 38/168 = 0.226",
+    "options": [
+      "0.204",
+      "0.249",
+      "0.226",
+      "38"
+    ],
+    "correct_key": "C"
   },
   {
     "id": 351,
@@ -3780,7 +5810,14 @@
     "optionC": "0.438",
     "optionD": "53",
     "correct": "B",
-    "explanation": "Probability = (favorable outcomes)/(total outcomes) = 53/133 = 0.398"
+    "explanation": "Probability = (favorable outcomes)/(total outcomes) = 53/133 = 0.398",
+    "options": [
+      "0.359",
+      "0.398",
+      "0.438",
+      "53"
+    ],
+    "correct_key": "B"
   },
   {
     "id": 383,
@@ -3793,7 +5830,14 @@
     "optionC": "15.76",
     "optionD": "20.76",
     "correct": "B",
-    "explanation": "Substitute x = 15: y = 1.38(15) + -7.00 = 13.76"
+    "explanation": "Substitute x = 15: y = 1.38(15) + -7.00 = 13.76",
+    "options": [
+      "11.76",
+      "13.76",
+      "15.76",
+      "20.76"
+    ],
+    "correct_key": "B"
   },
   {
     "id": 268,
@@ -3806,7 +5850,14 @@
     "optionC": "f⁻¹(x) = 2x - 1",
     "optionD": "f⁻¹(x) = (x + 1)/2",
     "correct": "B",
-    "explanation": "To find inverse: y = 2x + 1, solve for x: x = (y - 1)/2. Replace y with x: f⁻¹(x) = (x - 1)/2"
+    "explanation": "To find inverse: y = 2x + 1, solve for x: x = (y - 1)/2. Replace y with x: f⁻¹(x) = (x - 1)/2",
+    "options": [
+      "f⁻¹(x) = x/2 - 1",
+      "f⁻¹(x) = (x - 1)/2",
+      "f⁻¹(x) = 2x - 1",
+      "f⁻¹(x) = (x + 1)/2"
+    ],
+    "correct_key": "B"
   },
   {
     "id": 411,
@@ -3819,7 +5870,14 @@
     "optionC": "2.74",
     "optionD": "2.24",
     "correct": "D",
-    "explanation": "Combined speed = 41 + 72 = 113 mph. Time = distance/speed = 253/113 = 2.24 hours"
+    "explanation": "Combined speed = 41 + 72 = 113 mph. Time = distance/speed = 253/113 = 2.24 hours",
+    "options": [
+      "1.74",
+      "6.17",
+      "2.74",
+      "2.24"
+    ],
+    "correct_key": "D"
   },
   {
     "id": 81,
@@ -3832,7 +5890,14 @@
     "optionC": "x² - 2",
     "optionD": "(x - 2)(x + 2)",
     "correct": "A",
-    "explanation": "Factor the numerator: x² - 4 = (x - 2)(x + 2). Dividing by (x + 2) gives x - 2, where x ≠ -2."
+    "explanation": "Factor the numerator: x² - 4 = (x - 2)(x + 2). Dividing by (x + 2) gives x - 2, where x ≠ -2.",
+    "options": [
+      "x - 2",
+      "x + 2",
+      "x² - 2",
+      "(x - 2)(x + 2)"
+    ],
+    "correct_key": "A"
   },
   {
     "id": 21,
@@ -3845,7 +5910,14 @@
     "optionC": "1.00",
     "optionD": "19.00",
     "correct": "A",
-    "explanation": "For a quadratic f(x) = ax² + bx + c, the vertex is at x = -b/(2a) = 1.00. Substituting back: f(1.00) = 5(1.00)² + -10(1.00) + 19 = 14.00"
+    "explanation": "For a quadratic f(x) = ax² + bx + c, the vertex is at x = -b/(2a) = 1.00. Substituting back: f(1.00) = 5(1.00)² + -10(1.00) + 19 = 14.00",
+    "options": [
+      "14.00",
+      "24.00",
+      "1.00",
+      "19.00"
+    ],
+    "correct_key": "A"
   },
   {
     "id": 491,
@@ -3858,7 +5930,14 @@
     "optionC": "44",
     "optionD": "42",
     "correct": "D",
-    "explanation": "nth term = a₁ + (n-1)d = 8 + (18-1)(2) = 8 + 34 = 42"
+    "explanation": "nth term = a₁ + (n-1)d = 8 + (18-1)(2) = 8 + 34 = 42",
+    "options": [
+      "40",
+      "44",
+      "44",
+      "42"
+    ],
+    "correct_key": "D"
   },
   {
     "id": 360,
@@ -3871,7 +5950,14 @@
     "optionC": "0.386",
     "optionD": "46",
     "correct": "B",
-    "explanation": "Probability = (favorable outcomes)/(total outcomes) = 46/131 = 0.351"
+    "explanation": "Probability = (favorable outcomes)/(total outcomes) = 46/131 = 0.351",
+    "options": [
+      "0.316",
+      "0.351",
+      "0.386",
+      "46"
+    ],
+    "correct_key": "B"
   },
   {
     "id": 310,
@@ -3884,7 +5970,14 @@
     "optionC": "8.3",
     "optionD": "7.3",
     "correct": "D",
-    "explanation": "Mean = 177/7 = 25.3. Median (middle value) = 18. Difference = |25.3 - 18| = 7.3"
+    "explanation": "Mean = 177/7 = 25.3. Median (middle value) = 18. Difference = |25.3 - 18| = 7.3",
+    "options": [
+      "6.3",
+      "25.3",
+      "8.3",
+      "7.3"
+    ],
+    "correct_key": "D"
   },
   {
     "id": 232,
@@ -3897,7 +5990,14 @@
     "optionC": "All real numbers except x = 0",
     "optionD": "x > 1",
     "correct": "B",
-    "explanation": "The function is undefined when the denominator equals zero. x - 1 = 0 when x = 1, so the domain is all real numbers except 1."
+    "explanation": "The function is undefined when the denominator equals zero. x - 1 = 0 when x = 1, so the domain is all real numbers except 1.",
+    "options": [
+      "All real numbers",
+      "All real numbers except x = 1",
+      "All real numbers except x = 0",
+      "x > 1"
+    ],
+    "correct_key": "B"
   },
   {
     "id": 66,
@@ -3910,7 +6010,14 @@
     "optionC": "2685",
     "optionD": "979",
     "correct": "B",
-    "explanation": "Use P(t) = P₀(1 + r)^t = 307(1.1152975019421223)^19 = 2440. Option D incorrectly uses simple interest instead of compound growth."
+    "explanation": "Use P(t) = P₀(1 + r)^t = 307(1.1152975019421223)^19 = 2440. Option D incorrectly uses simple interest instead of compound growth.",
+    "options": [
+      "2196",
+      "2440",
+      "2685",
+      "979"
+    ],
+    "correct_key": "B"
   },
   {
     "id": 467,
@@ -3923,7 +6030,14 @@
     "optionC": "x > 0.29",
     "optionD": "x < 0.29",
     "correct": "D",
-    "explanation": "Subtract 18: 7x < 2. Divide by 7: x < 0.29"
+    "explanation": "Subtract 18: 7x < 2. Divide by 7: x < 0.29",
+    "options": [
+      "x < -0.71",
+      "x < 2.86",
+      "x > 0.29",
+      "x < 0.29"
+    ],
+    "correct_key": "D"
   },
   {
     "id": 28,
@@ -3936,7 +6050,14 @@
     "optionC": "(3.67, 4.07)",
     "optionD": "(2.67, 5.07)",
     "correct": "A",
-    "explanation": "Add the equations: 21x = 56, so x = 2.67. Substitute into first equation: 7(2.67) + 5y = 39, solving gives y = 4.07"
+    "explanation": "Add the equations: 21x = 56, so x = 2.67. Substitute into first equation: 7(2.67) + 5y = 39, solving gives y = 4.07",
+    "options": [
+      "(2.67, 4.07)",
+      "(4.07, 2.67)",
+      "(3.67, 4.07)",
+      "(2.67, 5.07)"
+    ],
+    "correct_key": "A"
   },
   {
     "id": 321,
@@ -3949,7 +6070,14 @@
     "optionC": "1.4",
     "optionD": "26.4",
     "correct": "C",
-    "explanation": "Mean = 185/7 = 26.4. Median (middle value) = 25. Difference = |26.4 - 25| = 1.4"
+    "explanation": "Mean = 185/7 = 26.4. Median (middle value) = 25. Difference = |26.4 - 25| = 1.4",
+    "options": [
+      "0.4",
+      "2.4",
+      "1.4",
+      "26.4"
+    ],
+    "correct_key": "C"
   },
   {
     "id": 128,
@@ -3962,7 +6090,14 @@
     "optionC": "1.7321",
     "optionD": "0.4330",
     "correct": "A",
-    "explanation": "sin(240°) = -0.8660. Reference angle and quadrant determine the sign."
+    "explanation": "sin(240°) = -0.8660. Reference angle and quadrant determine the sign.",
+    "options": [
+      "-0.8660",
+      "0.8660",
+      "1.7321",
+      "0.4330"
+    ],
+    "correct_key": "A"
   },
   {
     "id": 104,
@@ -3975,7 +6110,14 @@
     "optionC": "31.10",
     "optionD": "113.10",
     "correct": "A",
-    "explanation": "Arc length = (θ/360°) × 2πr = (90/360) × 2π(18) = 28.27 units"
+    "explanation": "Arc length = (θ/360°) × 2πr = (90/360) × 2π(18) = 28.27 units",
+    "options": [
+      "28.27",
+      "25.45",
+      "31.10",
+      "113.10"
+    ],
+    "correct_key": "A"
   },
   {
     "id": 211,
@@ -3988,7 +6130,14 @@
     "optionC": "48",
     "optionD": "57",
     "correct": "C",
-    "explanation": "First find f(5) = 3(5) + -3 = 12. Then g(f(5)) = g(12) = 4(12) = 48"
+    "explanation": "First find f(5) = 3(5) + -3 = 12. Then g(f(5)) = g(12) = 4(12) = 48",
+    "options": [
+      "43",
+      "53",
+      "48",
+      "57"
+    ],
+    "correct_key": "C"
   },
   {
     "id": 305,
@@ -4001,7 +6150,14 @@
     "optionC": "1.4",
     "optionD": "26.4",
     "correct": "C",
-    "explanation": "Mean = 185/7 = 26.4. Median (middle value) = 25. Difference = |26.4 - 25| = 1.4"
+    "explanation": "Mean = 185/7 = 26.4. Median (middle value) = 25. Difference = |26.4 - 25| = 1.4",
+    "options": [
+      "0.4",
+      "2.4",
+      "1.4",
+      "26.4"
+    ],
+    "correct_key": "C"
   },
   {
     "id": 442,
@@ -4014,7 +6170,14 @@
     "optionC": "3.00 hours",
     "optionD": "10.00 hours",
     "correct": "A",
-    "explanation": "Combined rate = 1/7 + 1/3 = 0.476 jobs/hour. Time = 1/rate = 2.10 hours"
+    "explanation": "Combined rate = 1/7 + 1/3 = 0.476 jobs/hour. Time = 1/rate = 2.10 hours",
+    "options": [
+      "2.10 hours",
+      "5.00 hours",
+      "3.00 hours",
+      "10.00 hours"
+    ],
+    "correct_key": "A"
   },
   {
     "id": 228,
@@ -4027,7 +6190,14 @@
     "optionC": "All real numbers except x = 0",
     "optionD": "All real numbers except x = 7",
     "correct": "D",
-    "explanation": "The function is undefined when the denominator equals zero. x - 7 = 0 when x = 7, so the domain is all real numbers except 7."
+    "explanation": "The function is undefined when the denominator equals zero. x - 7 = 0 when x = 7, so the domain is all real numbers except 7.",
+    "options": [
+      "All real numbers",
+      "x > 7",
+      "All real numbers except x = 0",
+      "All real numbers except x = 7"
+    ],
+    "correct_key": "D"
   },
   {
     "id": 439,
@@ -4040,7 +6210,14 @@
     "optionC": "138.25",
     "optionD": "130.00",
     "correct": "B",
-    "explanation": "New value = 95 × (1 + 35/100) = 95 × 1.35 = 128.25"
+    "explanation": "New value = 95 × (1 + 35/100) = 95 × 1.35 = 128.25",
+    "options": [
+      "118.25",
+      "128.25",
+      "138.25",
+      "130.00"
+    ],
+    "correct_key": "B"
   },
   {
     "id": 221,
@@ -4053,7 +6230,14 @@
     "optionC": "36",
     "optionD": "42",
     "correct": "C",
-    "explanation": "First find f(5) = 3(5) + -3 = 12. Then g(f(5)) = g(12) = 3(12) = 36"
+    "explanation": "First find f(5) = 3(5) + -3 = 12. Then g(f(5)) = g(12) = 3(12) = 36",
+    "options": [
+      "31",
+      "41",
+      "36",
+      "42"
+    ],
+    "correct_key": "C"
   },
   {
     "id": 251,
@@ -4066,7 +6250,14 @@
     "optionC": "f⁻¹(x) = 5x - -12",
     "optionD": "f⁻¹(x) = (x + -12)/5",
     "correct": "A",
-    "explanation": "To find inverse: y = 5x + -12, solve for x: x = (y - -12)/5. Replace y with x: f⁻¹(x) = (x - -12)/5"
+    "explanation": "To find inverse: y = 5x + -12, solve for x: x = (y - -12)/5. Replace y with x: f⁻¹(x) = (x - -12)/5",
+    "options": [
+      "f⁻¹(x) = (x - -12)/5",
+      "f⁻¹(x) = x/5 - -12",
+      "f⁻¹(x) = 5x - -12",
+      "f⁻¹(x) = (x + -12)/5"
+    ],
+    "correct_key": "A"
   },
   {
     "id": 5,
@@ -4079,7 +6270,14 @@
     "optionC": "0.67",
     "optionD": "4.00",
     "correct": "A",
-    "explanation": "For a quadratic f(x) = ax² + bx + c, the vertex is at x = -b/(2a) = 0.67. Substituting back: f(0.67) = 3(0.67)² + -4(0.67) + 4 = 2.67"
+    "explanation": "For a quadratic f(x) = ax² + bx + c, the vertex is at x = -b/(2a) = 0.67. Substituting back: f(0.67) = 3(0.67)² + -4(0.67) + 4 = 2.67",
+    "options": [
+      "2.67",
+      "5.33",
+      "0.67",
+      "4.00"
+    ],
+    "correct_key": "A"
   },
   {
     "id": 106,
@@ -4092,7 +6290,14 @@
     "optionC": "31.42",
     "optionD": "125.66",
     "correct": "C",
-    "explanation": "Arc length = (θ/360°) × 2πr = (90/360) × 2π(20) = 31.42 units"
+    "explanation": "Arc length = (θ/360°) × 2πr = (90/360) × 2π(20) = 31.42 units",
+    "options": [
+      "28.27",
+      "34.56",
+      "31.42",
+      "125.66"
+    ],
+    "correct_key": "C"
   },
   {
     "id": 469,
@@ -4105,7 +6310,14 @@
     "optionC": "x < 6.20",
     "optionD": "x < 7.20",
     "correct": "C",
-    "explanation": "Subtract 5: 5x < 31. Divide by 5: x < 6.20"
+    "explanation": "Subtract 5: 5x < 31. Divide by 5: x < 6.20",
+    "options": [
+      "x < 5.20",
+      "x > 6.20",
+      "x < 6.20",
+      "x < 7.20"
+    ],
+    "correct_key": "C"
   },
   {
     "id": 489,
@@ -4118,7 +6330,14 @@
     "optionC": "28",
     "optionD": "30",
     "correct": "C",
-    "explanation": "nth term = a₁ + (n-1)d = 6 + (12-1)(2) = 6 + 22 = 28"
+    "explanation": "nth term = a₁ + (n-1)d = 6 + (12-1)(2) = 6 + 22 = 28",
+    "options": [
+      "26",
+      "30",
+      "28",
+      "30"
+    ],
+    "correct_key": "C"
   },
   {
     "id": 405,
@@ -4131,7 +6350,14 @@
     "optionC": "2.14",
     "optionD": "4.19",
     "correct": "C",
-    "explanation": "Combined speed = 77 + 74 = 151 mph. Time = distance/speed = 323/151 = 2.14 hours"
+    "explanation": "Combined speed = 77 + 74 = 151 mph. Time = distance/speed = 323/151 = 2.14 hours",
+    "options": [
+      "1.64",
+      "2.64",
+      "2.14",
+      "4.19"
+    ],
+    "correct_key": "C"
   },
   {
     "id": 428,
@@ -4144,7 +6370,14 @@
     "optionC": "219.04",
     "optionD": "209.04",
     "correct": "D",
-    "explanation": "New value = 156 × (1 + 34/100) = 156 × 1.34 = 209.04"
+    "explanation": "New value = 156 × (1 + 34/100) = 156 × 1.34 = 209.04",
+    "options": [
+      "199.04",
+      "190.00",
+      "219.04",
+      "209.04"
+    ],
+    "correct_key": "D"
   },
   {
     "id": 455,
@@ -4157,7 +6390,14 @@
     "optionC": "3.00 hours",
     "optionD": "9.00 hours",
     "correct": "B",
-    "explanation": "Combined rate = 1/6 + 1/3 = 0.500 jobs/hour. Time = 1/rate = 2.00 hours"
+    "explanation": "Combined rate = 1/6 + 1/3 = 0.500 jobs/hour. Time = 1/rate = 2.00 hours",
+    "options": [
+      "4.50 hours",
+      "2.00 hours",
+      "3.00 hours",
+      "9.00 hours"
+    ],
+    "correct_key": "B"
   },
   {
     "id": 235,
@@ -4170,7 +6410,14 @@
     "optionC": "All real numbers except x = 4",
     "optionD": "x > 4",
     "correct": "C",
-    "explanation": "The function is undefined when the denominator equals zero. x - 4 = 0 when x = 4, so the domain is all real numbers except 4."
+    "explanation": "The function is undefined when the denominator equals zero. x - 4 = 0 when x = 4, so the domain is all real numbers except 4.",
+    "options": [
+      "All real numbers",
+      "All real numbers except x = 0",
+      "All real numbers except x = 4",
+      "x > 4"
+    ],
+    "correct_key": "C"
   },
   {
     "id": 34,
@@ -4183,7 +6430,14 @@
     "optionC": "(5.10, 4.08)",
     "optionD": "(4.10, 5.08)",
     "correct": "A",
-    "explanation": "Add the equations: 21x = 86, so x = 4.10. Substitute into first equation: 7(4.10) + 4y = 45, solving gives y = 4.08"
+    "explanation": "Add the equations: 21x = 86, so x = 4.10. Substitute into first equation: 7(4.10) + 4y = 45, solving gives y = 4.08",
+    "options": [
+      "(4.10, 4.08)",
+      "(4.08, 4.10)",
+      "(5.10, 4.08)",
+      "(4.10, 5.08)"
+    ],
+    "correct_key": "A"
   },
   {
     "id": 120,
@@ -4196,7 +6450,14 @@
     "optionC": "8.64",
     "optionD": "94.25",
     "correct": "B",
-    "explanation": "Arc length = (θ/360°) × 2πr = (30/360) × 2π(15) = 7.85 units"
+    "explanation": "Arc length = (θ/360°) × 2πr = (30/360) × 2π(15) = 7.85 units",
+    "options": [
+      "7.07",
+      "7.85",
+      "8.64",
+      "94.25"
+    ],
+    "correct_key": "B"
   },
   {
     "id": 390,
@@ -4209,7 +6470,14 @@
     "optionC": "11.53",
     "optionD": "19.53",
     "correct": "A",
-    "explanation": "Substitute x = 13: y = 1.50(13) + -10.00 = 9.53"
+    "explanation": "Substitute x = 13: y = 1.50(13) + -10.00 = 9.53",
+    "options": [
+      "9.53",
+      "7.53",
+      "11.53",
+      "19.53"
+    ],
+    "correct_key": "A"
   },
   {
     "id": 116,
@@ -4222,7 +6490,14 @@
     "optionC": "14.69",
     "optionD": "13.35",
     "correct": "D",
-    "explanation": "Arc length = (θ/360°) × 2πr = (45/360) × 2π(17) = 13.35 units"
+    "explanation": "Arc length = (θ/360°) × 2πr = (45/360) × 2π(17) = 13.35 units",
+    "options": [
+      "12.02",
+      "106.81",
+      "14.69",
+      "13.35"
+    ],
+    "correct_key": "D"
   },
   {
     "id": 61,
@@ -4235,7 +6510,14 @@
     "optionC": "559",
     "optionD": "356",
     "correct": "C",
-    "explanation": "Use P(t) = P₀(1 + r)^t = 151(1.0754761365483188)^18 = 559. Option D incorrectly uses simple interest instead of compound growth."
+    "explanation": "Use P(t) = P₀(1 + r)^t = 151(1.0754761365483188)^18 = 559. Option D incorrectly uses simple interest instead of compound growth.",
+    "options": [
+      "503",
+      "615",
+      "559",
+      "356"
+    ],
+    "correct_key": "C"
   },
   {
     "id": 206,
@@ -4248,7 +6530,14 @@
     "optionC": "133",
     "optionD": "107",
     "correct": "B",
-    "explanation": "First find f(5) = 5(5) + 7 = 32. Then g(f(5)) = g(32) = 4(32) = 128"
+    "explanation": "First find f(5) = 5(5) + 7 = 32. Then g(f(5)) = g(32) = 4(32) = 128",
+    "options": [
+      "123",
+      "128",
+      "133",
+      "107"
+    ],
+    "correct_key": "B"
   },
   {
     "id": 36,
@@ -4261,7 +6550,14 @@
     "optionC": "(7.83, 2.44)",
     "optionD": "(6.83, 3.44)",
     "correct": "A",
-    "explanation": "Add the equations: 12x = 82, so x = 6.83. Substitute into first equation: 4(6.83) + 6y = 42, solving gives y = 2.44"
+    "explanation": "Add the equations: 12x = 82, so x = 6.83. Substitute into first equation: 4(6.83) + 6y = 42, solving gives y = 2.44",
+    "options": [
+      "(6.83, 2.44)",
+      "(2.44, 6.83)",
+      "(7.83, 2.44)",
+      "(6.83, 3.44)"
+    ],
+    "correct_key": "A"
   },
   {
     "id": 178,
@@ -4274,7 +6570,14 @@
     "optionC": "718.80",
     "optionD": "326.73",
     "correct": "B",
-    "explanation": "Volume = πr²h = π(4)²(13) = 653.45 cubic units"
+    "explanation": "Volume = πr²h = π(4)²(13) = 653.45 cubic units",
+    "options": [
+      "588.11",
+      "653.45",
+      "718.80",
+      "326.73"
+    ],
+    "correct_key": "B"
   },
   {
     "id": 374,
@@ -4287,7 +6590,14 @@
     "optionC": "0.256",
     "optionD": "33",
     "correct": "C",
-    "explanation": "Probability = (favorable outcomes)/(total outcomes) = 33/129 = 0.256"
+    "explanation": "Probability = (favorable outcomes)/(total outcomes) = 33/129 = 0.256",
+    "options": [
+      "0.230",
+      "0.281",
+      "0.256",
+      "33"
+    ],
+    "correct_key": "C"
   },
   {
     "id": 488,
@@ -4300,7 +6610,14 @@
     "optionC": "130",
     "optionD": "122",
     "correct": "D",
-    "explanation": "nth term = a₁ + (n-1)d = 2 + (16-1)(8) = 2 + 120 = 122"
+    "explanation": "nth term = a₁ + (n-1)d = 2 + (16-1)(8) = 2 + 120 = 122",
+    "options": [
+      "114",
+      "130",
+      "130",
+      "122"
+    ],
+    "correct_key": "D"
   },
   {
     "id": 105,
@@ -4313,7 +6630,14 @@
     "optionC": "34.56",
     "optionD": "94.25",
     "correct": "B",
-    "explanation": "Arc length = (θ/360°) × 2πr = (120/360) × 2π(15) = 31.42 units"
+    "explanation": "Arc length = (θ/360°) × 2πr = (120/360) × 2π(15) = 31.42 units",
+    "options": [
+      "28.27",
+      "31.42",
+      "34.56",
+      "94.25"
+    ],
+    "correct_key": "B"
   },
   {
     "id": 420,
@@ -4326,7 +6650,14 @@
     "optionC": "3.84",
     "optionD": "7.16",
     "correct": "A",
-    "explanation": "Combined speed = 55 + 63 = 118 mph. Time = distance/speed = 394/118 = 3.34 hours"
+    "explanation": "Combined speed = 55 + 63 = 118 mph. Time = distance/speed = 394/118 = 3.34 hours",
+    "options": [
+      "3.34",
+      "2.84",
+      "3.84",
+      "7.16"
+    ],
+    "correct_key": "A"
   },
   {
     "id": 184,
@@ -4339,7 +6670,14 @@
     "optionC": "10",
     "optionD": "21",
     "correct": "D",
-    "explanation": "For similar figures, corresponding sides are proportional. Side ratio = 3:1, so larger side = 7 × 3 = 21"
+    "explanation": "For similar figures, corresponding sides are proportional. Side ratio = 3:1, so larger side = 7 × 3 = 21",
+    "options": [
+      "19",
+      "14",
+      "10",
+      "21"
+    ],
+    "correct_key": "D"
   },
   {
     "id": 359,
@@ -4352,7 +6690,14 @@
     "optionC": "0.282",
     "optionD": "32",
     "correct": "B",
-    "explanation": "Probability = (favorable outcomes)/(total outcomes) = 32/125 = 0.256"
+    "explanation": "Probability = (favorable outcomes)/(total outcomes) = 32/125 = 0.256",
+    "options": [
+      "0.230",
+      "0.256",
+      "0.282",
+      "32"
+    ],
+    "correct_key": "B"
   },
   {
     "id": 186,
@@ -4365,7 +6710,14 @@
     "optionC": "25",
     "optionD": "10",
     "correct": "C",
-    "explanation": "For similar figures, corresponding sides are proportional. Side ratio = 5:1, so larger side = 5 × 5 = 25"
+    "explanation": "For similar figures, corresponding sides are proportional. Side ratio = 5:1, so larger side = 5 × 5 = 25",
+    "options": [
+      "23",
+      "10",
+      "25",
+      "10"
+    ],
+    "correct_key": "C"
   },
   {
     "id": 494,
@@ -4378,7 +6730,14 @@
     "optionC": "28",
     "optionD": "30",
     "correct": "C",
-    "explanation": "nth term = a₁ + (n-1)d = 2 + (14-1)(2) = 2 + 26 = 28"
+    "explanation": "nth term = a₁ + (n-1)d = 2 + (14-1)(2) = 2 + 26 = 28",
+    "options": [
+      "26",
+      "30",
+      "28",
+      "30"
+    ],
+    "correct_key": "C"
   },
   {
     "id": 151,
@@ -4391,7 +6750,14 @@
     "optionC": "16.23",
     "optionD": "20.00",
     "correct": "B",
-    "explanation": "By the Pythagorean theorem: c² = 6² + 14² = 36 + 196 = 232, so c = √232 = 15.23"
+    "explanation": "By the Pythagorean theorem: c² = 6² + 14² = 36 + 196 = 232, so c = √232 = 15.23",
+    "options": [
+      "14.23",
+      "15.23",
+      "16.23",
+      "20.00"
+    ],
+    "correct_key": "B"
   },
   {
     "id": 463,
@@ -4404,7 +6770,14 @@
     "optionC": "x > 9.50",
     "optionD": "x < 9.50",
     "correct": "D",
-    "explanation": "Subtract 1: 4x < 38. Divide by 4: x < 9.50"
+    "explanation": "Subtract 1: 4x < 38. Divide by 4: x < 9.50",
+    "options": [
+      "x < 8.50",
+      "x < 9.75",
+      "x > 9.50",
+      "x < 9.50"
+    ],
+    "correct_key": "D"
   },
   {
     "id": 285,
@@ -4417,7 +6790,14 @@
     "optionC": "Shift left 5 and down 1",
     "optionD": "Reflect and shift",
     "correct": "B",
-    "explanation": "f(x - h) shifts left by 5. Adding 1 shifts up by 1."
+    "explanation": "f(x - h) shifts left by 5. Adding 1 shifts up by 1.",
+    "options": [
+      "Shift left 5 and up 1",
+      "Shift left 5 and up 1",
+      "Shift left 5 and down 1",
+      "Reflect and shift"
+    ],
+    "correct_key": "B"
   },
   {
     "id": 447,
@@ -4430,7 +6810,14 @@
     "optionC": "3.60 hours",
     "optionD": "15.00 hours",
     "correct": "C",
-    "explanation": "Combined rate = 1/9 + 1/6 = 0.278 jobs/hour. Time = 1/rate = 3.60 hours"
+    "explanation": "Combined rate = 1/9 + 1/6 = 0.278 jobs/hour. Time = 1/rate = 3.60 hours",
+    "options": [
+      "7.50 hours",
+      "6.00 hours",
+      "3.60 hours",
+      "15.00 hours"
+    ],
+    "correct_key": "C"
   },
   {
     "id": 80,
@@ -4443,7 +6830,14 @@
     "optionC": "x² - 4",
     "optionD": "(x - 4)(x + 4)",
     "correct": "A",
-    "explanation": "Factor the numerator: x² - 16 = (x - 4)(x + 4). Dividing by (x + 4) gives x - 4, where x ≠ -4."
+    "explanation": "Factor the numerator: x² - 16 = (x - 4)(x + 4). Dividing by (x + 4) gives x - 4, where x ≠ -4.",
+    "options": [
+      "x - 4",
+      "x + 4",
+      "x² - 4",
+      "(x - 4)(x + 4)"
+    ],
+    "correct_key": "A"
   },
   {
     "id": 478,
@@ -4456,7 +6850,14 @@
     "optionC": "x > 3.86",
     "optionD": "x < 3.86",
     "correct": "D",
-    "explanation": "Subtract 17: 7x < 27. Divide by 7: x < 3.86"
+    "explanation": "Subtract 17: 7x < 27. Divide by 7: x < 3.86",
+    "options": [
+      "x < 2.86",
+      "x < 6.29",
+      "x > 3.86",
+      "x < 3.86"
+    ],
+    "correct_key": "D"
   },
   {
     "id": 492,
@@ -4469,7 +6870,14 @@
     "optionC": "51",
     "optionD": "56",
     "correct": "C",
-    "explanation": "nth term = a₁ + (n-1)d = 6 + (10-1)(5) = 6 + 45 = 51"
+    "explanation": "nth term = a₁ + (n-1)d = 6 + (10-1)(5) = 6 + 45 = 51",
+    "options": [
+      "46",
+      "56",
+      "51",
+      "56"
+    ],
+    "correct_key": "C"
   },
   {
     "id": 60,
@@ -4482,7 +6890,14 @@
     "optionC": "1225",
     "optionD": "985",
     "correct": "B",
-    "explanation": "Use P(t) = P₀(1 + r)^t = 590(1.1117377907821553)^6 = 1113. Option D incorrectly uses simple interest instead of compound growth."
+    "explanation": "Use P(t) = P₀(1 + r)^t = 590(1.1117377907821553)^6 = 1113. Option D incorrectly uses simple interest instead of compound growth.",
+    "options": [
+      "1002",
+      "1113",
+      "1225",
+      "985"
+    ],
+    "correct_key": "B"
   },
   {
     "id": 56,
@@ -4495,7 +6910,14 @@
     "optionC": "3405",
     "optionD": "3095",
     "correct": "D",
-    "explanation": "Use P(t) = P₀(1 + r)^t = 839(1.1260255957031169)^11 = 3095. Option B incorrectly uses simple interest instead of compound growth."
+    "explanation": "Use P(t) = P₀(1 + r)^t = 839(1.1260255957031169)^11 = 3095. Option B incorrectly uses simple interest instead of compound growth.",
+    "options": [
+      "2786",
+      "2002",
+      "3405",
+      "3095"
+    ],
+    "correct_key": "D"
   },
   {
     "id": 262,
@@ -4508,7 +6930,14 @@
     "optionC": "f⁻¹(x) = 5x - 3",
     "optionD": "f⁻¹(x) = (x + 3)/5",
     "correct": "B",
-    "explanation": "To find inverse: y = 5x + 3, solve for x: x = (y - 3)/5. Replace y with x: f⁻¹(x) = (x - 3)/5"
+    "explanation": "To find inverse: y = 5x + 3, solve for x: x = (y - 3)/5. Replace y with x: f⁻¹(x) = (x - 3)/5",
+    "options": [
+      "f⁻¹(x) = x/5 - 3",
+      "f⁻¹(x) = (x - 3)/5",
+      "f⁻¹(x) = 5x - 3",
+      "f⁻¹(x) = (x + 3)/5"
+    ],
+    "correct_key": "B"
   },
   {
     "id": 141,
@@ -4521,7 +6950,14 @@
     "optionC": "13.08",
     "optionD": "16.00",
     "correct": "B",
-    "explanation": "By the Pythagorean theorem: c² = 5² + 11² = 25 + 121 = 146, so c = √146 = 12.08"
+    "explanation": "By the Pythagorean theorem: c² = 5² + 11² = 25 + 121 = 146, so c = √146 = 12.08",
+    "options": [
+      "11.08",
+      "12.08",
+      "13.08",
+      "16.00"
+    ],
+    "correct_key": "B"
   },
   {
     "id": 110,
@@ -4534,7 +6970,14 @@
     "optionC": "11.52",
     "optionD": "62.83",
     "correct": "B",
-    "explanation": "Arc length = (θ/360°) × 2πr = (60/360) × 2π(10) = 10.47 units"
+    "explanation": "Arc length = (θ/360°) × 2πr = (60/360) × 2π(10) = 10.47 units",
+    "options": [
+      "9.42",
+      "10.47",
+      "11.52",
+      "62.83"
+    ],
+    "correct_key": "B"
   },
   {
     "id": 164,
@@ -4547,7 +6990,14 @@
     "optionC": "2539.98",
     "optionD": "659.73",
     "correct": "A",
-    "explanation": "Volume = πr²h = π(7)²(15) = 2309.07 cubic units"
+    "explanation": "Volume = πr²h = π(7)²(15) = 2309.07 cubic units",
+    "options": [
+      "2309.07",
+      "2078.16",
+      "2539.98",
+      "659.73"
+    ],
+    "correct_key": "A"
   },
   {
     "id": 372,
@@ -4560,7 +7010,14 @@
     "optionC": "0.273",
     "optionD": "35",
     "correct": "C",
-    "explanation": "Probability = (favorable outcomes)/(total outcomes) = 35/128 = 0.273"
+    "explanation": "Probability = (favorable outcomes)/(total outcomes) = 35/128 = 0.273",
+    "options": [
+      "0.246",
+      "0.301",
+      "0.273",
+      "35"
+    ],
+    "correct_key": "C"
   },
   {
     "id": 40,
@@ -4573,7 +7030,14 @@
     "optionC": "(3.56, 5.83)",
     "optionD": "(2.56, 6.83)",
     "correct": "A",
-    "explanation": "Add the equations: 18x = 46, so x = 2.56. Substitute into first equation: 6(2.56) + 2y = 27, solving gives y = 5.83"
+    "explanation": "Add the equations: 18x = 46, so x = 2.56. Substitute into first equation: 6(2.56) + 2y = 27, solving gives y = 5.83",
+    "options": [
+      "(2.56, 5.83)",
+      "(5.83, 2.56)",
+      "(3.56, 5.83)",
+      "(2.56, 6.83)"
+    ],
+    "correct_key": "A"
   },
   {
     "id": 173,
@@ -4586,7 +7050,14 @@
     "optionC": "431.97",
     "optionD": "157.08",
     "correct": "A",
-    "explanation": "Volume = πr²h = π(5)²(5) = 392.70 cubic units"
+    "explanation": "Volume = πr²h = π(5)²(5) = 392.70 cubic units",
+    "options": [
+      "392.70",
+      "353.43",
+      "431.97",
+      "157.08"
+    ],
+    "correct_key": "A"
   },
   {
     "id": 180,
@@ -4599,7 +7070,14 @@
     "optionC": "1727.88",
     "optionD": "314.16",
     "correct": "B",
-    "explanation": "Volume = πr²h = π(10)²(5) = 1570.80 cubic units"
+    "explanation": "Volume = πr²h = π(10)²(5) = 1570.80 cubic units",
+    "options": [
+      "1413.72",
+      "1570.80",
+      "1727.88",
+      "314.16"
+    ],
+    "correct_key": "B"
   },
   {
     "id": 179,
@@ -4612,7 +7090,14 @@
     "optionC": "691.15",
     "optionD": "628.32",
     "correct": "D",
-    "explanation": "Volume = πr²h = π(5)²(8) = 628.32 cubic units"
+    "explanation": "Volume = πr²h = π(5)²(8) = 628.32 cubic units",
+    "options": [
+      "565.49",
+      "251.33",
+      "691.15",
+      "628.32"
+    ],
+    "correct_key": "D"
   },
   {
     "id": 39,
@@ -4625,7 +7110,14 @@
     "optionC": "(2.62, 1.13)",
     "optionD": "(1.62, 2.13)",
     "correct": "A",
-    "explanation": "Add the equations: 21x = 34, so x = 1.62. Substitute into first equation: 7(1.62) + 5y = 17, solving gives y = 1.13"
+    "explanation": "Add the equations: 21x = 34, so x = 1.62. Substitute into first equation: 7(1.62) + 5y = 17, solving gives y = 1.13",
+    "options": [
+      "(1.62, 1.13)",
+      "(1.13, 1.62)",
+      "(2.62, 1.13)",
+      "(1.62, 2.13)"
+    ],
+    "correct_key": "A"
   },
   {
     "id": 118,
@@ -4638,7 +7130,14 @@
     "optionC": "13.82",
     "optionD": "100.53",
     "correct": "B",
-    "explanation": "Arc length = (θ/360°) × 2πr = (45/360) × 2π(16) = 12.57 units"
+    "explanation": "Arc length = (θ/360°) × 2πr = (45/360) × 2π(16) = 12.57 units",
+    "options": [
+      "11.31",
+      "12.57",
+      "13.82",
+      "100.53"
+    ],
+    "correct_key": "B"
   },
   {
     "id": 387,
@@ -4651,7 +7150,14 @@
     "optionC": "39.01",
     "optionD": "30.01",
     "correct": "C",
-    "explanation": "Substitute x = 20: y = 1.50(20) + 9.00 = 39.01"
+    "explanation": "Substitute x = 20: y = 1.50(20) + 9.00 = 39.01",
+    "options": [
+      "37.01",
+      "41.01",
+      "39.01",
+      "30.01"
+    ],
+    "correct_key": "C"
   },
   {
     "id": 425,
@@ -4664,7 +7170,14 @@
     "optionC": "197.44",
     "optionD": "187.44",
     "correct": "D",
-    "explanation": "New value = 132 × (1 + 42/100) = 132 × 1.42 = 187.44"
+    "explanation": "New value = 132 × (1 + 42/100) = 132 × 1.42 = 187.44",
+    "options": [
+      "177.44",
+      "174.00",
+      "197.44",
+      "187.44"
+    ],
+    "correct_key": "D"
   },
   {
     "id": 271,
@@ -4677,7 +7190,14 @@
     "optionC": "f⁻¹(x) = 2x - -7",
     "optionD": "f⁻¹(x) = (x - -7)/2",
     "correct": "D",
-    "explanation": "To find inverse: y = 2x + -7, solve for x: x = (y - -7)/2. Replace y with x: f⁻¹(x) = (x - -7)/2"
+    "explanation": "To find inverse: y = 2x + -7, solve for x: x = (y - -7)/2. Replace y with x: f⁻¹(x) = (x - -7)/2",
+    "options": [
+      "f⁻¹(x) = x/2 - -7",
+      "f⁻¹(x) = (x + -7)/2",
+      "f⁻¹(x) = 2x - -7",
+      "f⁻¹(x) = (x - -7)/2"
+    ],
+    "correct_key": "D"
   },
   {
     "id": 379,
@@ -4690,7 +7210,14 @@
     "optionC": "20.94",
     "optionD": "26.94",
     "correct": "C",
-    "explanation": "Substitute x = 20: y = 1.35(20) + -6.00 = 20.94"
+    "explanation": "Substitute x = 20: y = 1.35(20) + -6.00 = 20.94",
+    "options": [
+      "18.94",
+      "22.94",
+      "20.94",
+      "26.94"
+    ],
+    "correct_key": "C"
   },
   {
     "id": 144,
@@ -4703,7 +7230,14 @@
     "optionC": "8.81",
     "optionD": "7.81",
     "correct": "D",
-    "explanation": "By the Pythagorean theorem: c² = 5² + 6² = 25 + 36 = 61, so c = √61 = 7.81"
+    "explanation": "By the Pythagorean theorem: c² = 5² + 6² = 25 + 36 = 61, so c = √61 = 7.81",
+    "options": [
+      "6.81",
+      "11.00",
+      "8.81",
+      "7.81"
+    ],
+    "correct_key": "D"
   },
   {
     "id": 396,
@@ -4716,7 +7250,14 @@
     "optionC": "4.31",
     "optionD": "2.31",
     "correct": "D",
-    "explanation": "Substitute x = 5: y = 1.06(5) + -3.00 = 2.31"
+    "explanation": "Substitute x = 5: y = 1.06(5) + -3.00 = 2.31",
+    "options": [
+      "0.31",
+      "5.31",
+      "4.31",
+      "2.31"
+    ],
+    "correct_key": "D"
   },
   {
     "id": 378,
@@ -4729,7 +7270,14 @@
     "optionC": "34.44",
     "optionD": "24.44",
     "correct": "B",
-    "explanation": "Substitute x = 13: y = 1.88(13) + 8.00 = 32.44"
+    "explanation": "Substitute x = 13: y = 1.88(13) + 8.00 = 32.44",
+    "options": [
+      "30.44",
+      "32.44",
+      "34.44",
+      "24.44"
+    ],
+    "correct_key": "B"
   },
   {
     "id": 323,
@@ -4742,7 +7290,14 @@
     "optionC": "4.7",
     "optionD": "25.7",
     "correct": "C",
-    "explanation": "Mean = 180/7 = 25.7. Median (middle value) = 21. Difference = |25.7 - 21| = 4.7"
+    "explanation": "Mean = 180/7 = 25.7. Median (middle value) = 21. Difference = |25.7 - 21| = 4.7",
+    "options": [
+      "3.7",
+      "5.7",
+      "4.7",
+      "25.7"
+    ],
+    "correct_key": "C"
   },
   {
     "id": 112,
@@ -4755,7 +7310,14 @@
     "optionC": "3.14",
     "optionD": "37.70",
     "correct": "C",
-    "explanation": "Arc length = (θ/360°) × 2πr = (30/360) × 2π(6) = 3.14 units"
+    "explanation": "Arc length = (θ/360°) × 2πr = (30/360) × 2π(6) = 3.14 units",
+    "options": [
+      "2.83",
+      "3.46",
+      "3.14",
+      "37.70"
+    ],
+    "correct_key": "C"
   },
   {
     "id": 322,
@@ -4768,7 +7330,14 @@
     "optionC": "5.0",
     "optionD": "30.0",
     "correct": "C",
-    "explanation": "Mean = 210/7 = 30.0. Median (middle value) = 25. Difference = |30.0 - 25| = 5.0"
+    "explanation": "Mean = 210/7 = 30.0. Median (middle value) = 25. Difference = |30.0 - 25| = 5.0",
+    "options": [
+      "4.0",
+      "6.0",
+      "5.0",
+      "30.0"
+    ],
+    "correct_key": "C"
   },
   {
     "id": 20,
@@ -4781,7 +7350,14 @@
     "optionC": "0.70",
     "optionD": "-7.00",
     "correct": "A",
-    "explanation": "For a quadratic f(x) = ax² + bx + c, the vertex is at x = -b/(2a) = 0.70. Substituting back: f(0.70) = 5(0.70)² + -7(0.70) + -7 = -9.45"
+    "explanation": "For a quadratic f(x) = ax² + bx + c, the vertex is at x = -b/(2a) = 0.70. Substituting back: f(0.70) = 5(0.70)² + -7(0.70) + -7 = -9.45",
+    "options": [
+      "-9.45",
+      "-4.55",
+      "0.70",
+      "-7.00"
+    ],
+    "correct_key": "A"
   },
   {
     "id": 472,
@@ -4794,7 +7370,14 @@
     "optionC": "x > 9.25",
     "optionD": "x < 9.25",
     "correct": "D",
-    "explanation": "Subtract 8: 4x < 37. Divide by 4: x < 9.25"
+    "explanation": "Subtract 8: 4x < 37. Divide by 4: x < 9.25",
+    "options": [
+      "x < 8.25",
+      "x < 11.25",
+      "x > 9.25",
+      "x < 9.25"
+    ],
+    "correct_key": "D"
   },
   {
     "id": 265,
@@ -4807,7 +7390,14 @@
     "optionC": "f⁻¹(x) = (x - 11)/6",
     "optionD": "f⁻¹(x) = (x + 11)/6",
     "correct": "C",
-    "explanation": "To find inverse: y = 6x + 11, solve for x: x = (y - 11)/6. Replace y with x: f⁻¹(x) = (x - 11)/6"
+    "explanation": "To find inverse: y = 6x + 11, solve for x: x = (y - 11)/6. Replace y with x: f⁻¹(x) = (x - 11)/6",
+    "options": [
+      "f⁻¹(x) = x/6 - 11",
+      "f⁻¹(x) = 6x - 11",
+      "f⁻¹(x) = (x - 11)/6",
+      "f⁻¹(x) = (x + 11)/6"
+    ],
+    "correct_key": "C"
   },
   {
     "id": 155,
@@ -4820,7 +7410,14 @@
     "optionC": "14.93",
     "optionD": "18.00",
     "correct": "B",
-    "explanation": "By the Pythagorean theorem: c² = 5² + 13² = 25 + 169 = 194, so c = √194 = 13.93"
+    "explanation": "By the Pythagorean theorem: c² = 5² + 13² = 25 + 169 = 194, so c = √194 = 13.93",
+    "options": [
+      "12.93",
+      "13.93",
+      "14.93",
+      "18.00"
+    ],
+    "correct_key": "B"
   },
   {
     "id": 292,
@@ -4833,7 +7430,14 @@
     "optionC": "Shift left 0 and up 2",
     "optionD": "Shift left 0 and down 2",
     "correct": "D",
-    "explanation": "f(x - h) shifts left by 0. Adding -2 shifts down by 2."
+    "explanation": "f(x - h) shifts left by 0. Adding -2 shifts down by 2.",
+    "options": [
+      "Shift left 0 and down 2",
+      "Reflect and shift",
+      "Shift left 0 and up 2",
+      "Shift left 0 and down 2"
+    ],
+    "correct_key": "D"
   },
   {
     "id": 346,
@@ -4846,7 +7450,14 @@
     "optionC": "0.159",
     "optionD": "0.145",
     "correct": "D",
-    "explanation": "Probability = (favorable outcomes)/(total outcomes) = 25/173 = 0.145"
+    "explanation": "Probability = (favorable outcomes)/(total outcomes) = 25/173 = 0.145",
+    "options": [
+      "0.130",
+      "25",
+      "0.159",
+      "0.145"
+    ],
+    "correct_key": "D"
   },
   {
     "id": 404,
@@ -4859,7 +7470,14 @@
     "optionC": "3.72",
     "optionD": "5.67",
     "correct": "C",
-    "explanation": "Combined speed = 76 + 40 = 116 mph. Time = distance/speed = 431/116 = 3.72 hours"
+    "explanation": "Combined speed = 76 + 40 = 116 mph. Time = distance/speed = 431/116 = 3.72 hours",
+    "options": [
+      "3.22",
+      "4.22",
+      "3.72",
+      "5.67"
+    ],
+    "correct_key": "C"
   },
   {
     "id": 296,
@@ -4872,7 +7490,14 @@
     "optionC": "Shift right 1 and up 2",
     "optionD": "Shift right 1 and down 2",
     "correct": "D",
-    "explanation": "f(x - h) shifts right by 1. Adding -2 shifts down by 2."
+    "explanation": "f(x - h) shifts right by 1. Adding -2 shifts down by 2.",
+    "options": [
+      "Shift left 1 and down 2",
+      "Reflect and shift",
+      "Shift right 1 and up 2",
+      "Shift right 1 and down 2"
+    ],
+    "correct_key": "D"
   },
   {
     "id": 365,
@@ -4885,7 +7510,14 @@
     "optionC": "0.222",
     "optionD": "0.201",
     "correct": "D",
-    "explanation": "Probability = (favorable outcomes)/(total outcomes) = 29/144 = 0.201"
+    "explanation": "Probability = (favorable outcomes)/(total outcomes) = 29/144 = 0.201",
+    "options": [
+      "0.181",
+      "29",
+      "0.222",
+      "0.201"
+    ],
+    "correct_key": "D"
   },
   {
     "id": 6,
@@ -4898,7 +7530,14 @@
     "optionC": "0.50",
     "optionD": "8.00",
     "correct": "A",
-    "explanation": "For a quadratic f(x) = ax² + bx + c, the vertex is at x = -b/(2a) = 0.50. Substituting back: f(0.50) = 2(0.50)² + -2(0.50) + 8 = 7.50"
+    "explanation": "For a quadratic f(x) = ax² + bx + c, the vertex is at x = -b/(2a) = 0.50. Substituting back: f(0.50) = 2(0.50)² + -2(0.50) + 8 = 7.50",
+    "options": [
+      "7.50",
+      "8.50",
+      "0.50",
+      "8.00"
+    ],
+    "correct_key": "A"
   },
   {
     "id": 70,
@@ -4911,7 +7550,14 @@
     "optionC": "1229",
     "optionD": "1118",
     "correct": "D",
-    "explanation": "Use P(t) = P₀(1 + r)^t = 590(1.043532703498947)^15 = 1118. Option B incorrectly uses simple interest instead of compound growth."
+    "explanation": "Use P(t) = P₀(1 + r)^t = 590(1.043532703498947)^15 = 1118. Option B incorrectly uses simple interest instead of compound growth.",
+    "options": [
+      "1006",
+      "975",
+      "1229",
+      "1118"
+    ],
+    "correct_key": "D"
   },
   {
     "id": 368,
@@ -4924,7 +7570,14 @@
     "optionC": "0.185",
     "optionD": "21",
     "correct": "B",
-    "explanation": "Probability = (favorable outcomes)/(total outcomes) = 21/125 = 0.168"
+    "explanation": "Probability = (favorable outcomes)/(total outcomes) = 21/125 = 0.168",
+    "options": [
+      "0.151",
+      "0.168",
+      "0.185",
+      "21"
+    ],
+    "correct_key": "B"
   },
   {
     "id": 18,
@@ -4937,7 +7590,14 @@
     "optionC": "-0.80",
     "optionD": "-19.00",
     "correct": "A",
-    "explanation": "For a quadratic f(x) = ax² + bx + c, the vertex is at x = -b/(2a) = -0.80. Substituting back: f(-0.80) = 5(-0.80)² + 8(-0.80) + -19 = -22.20"
+    "explanation": "For a quadratic f(x) = ax² + bx + c, the vertex is at x = -b/(2a) = -0.80. Substituting back: f(-0.80) = 5(-0.80)² + 8(-0.80) + -19 = -22.20",
+    "options": [
+      "-22.20",
+      "-15.80",
+      "-0.80",
+      "-19.00"
+    ],
+    "correct_key": "A"
   },
   {
     "id": 448,
@@ -4950,7 +7610,14 @@
     "optionC": "7.00 hours",
     "optionD": "15.00 hours",
     "correct": "B",
-    "explanation": "Combined rate = 1/8 + 1/7 = 0.268 jobs/hour. Time = 1/rate = 3.73 hours"
+    "explanation": "Combined rate = 1/8 + 1/7 = 0.268 jobs/hour. Time = 1/rate = 3.73 hours",
+    "options": [
+      "7.50 hours",
+      "3.73 hours",
+      "7.00 hours",
+      "15.00 hours"
+    ],
+    "correct_key": "B"
   },
   {
     "id": 410,
@@ -4963,7 +7630,14 @@
     "optionC": "2.75",
     "optionD": "4.20",
     "correct": "A",
-    "explanation": "Combined speed = 60 + 52 = 112 mph. Time = distance/speed = 252/112 = 2.25 hours"
+    "explanation": "Combined speed = 60 + 52 = 112 mph. Time = distance/speed = 252/112 = 2.25 hours",
+    "options": [
+      "2.25",
+      "1.75",
+      "2.75",
+      "4.20"
+    ],
+    "correct_key": "A"
   },
   {
     "id": 293,
@@ -4976,7 +7650,14 @@
     "optionC": "Shift left 2 and up 4",
     "optionD": "Shift left 2 and down 4",
     "correct": "D",
-    "explanation": "f(x - h) shifts left by 2. Adding -4 shifts down by 4."
+    "explanation": "f(x - h) shifts left by 2. Adding -4 shifts down by 4.",
+    "options": [
+      "Shift left 2 and down 4",
+      "Reflect and shift",
+      "Shift left 2 and up 4",
+      "Shift left 2 and down 4"
+    ],
+    "correct_key": "D"
   },
   {
     "id": 226,
@@ -4989,7 +7670,14 @@
     "optionC": "All real numbers except x = 0",
     "optionD": "All real numbers except x = 3",
     "correct": "D",
-    "explanation": "The function is undefined when the denominator equals zero. x - 3 = 0 when x = 3, so the domain is all real numbers except 3."
+    "explanation": "The function is undefined when the denominator equals zero. x - 3 = 0 when x = 3, so the domain is all real numbers except 3.",
+    "options": [
+      "All real numbers",
+      "x > 3",
+      "All real numbers except x = 0",
+      "All real numbers except x = 3"
+    ],
+    "correct_key": "D"
   },
   {
     "id": 103,
@@ -5002,7 +7690,14 @@
     "optionC": "31.68",
     "optionD": "69.12",
     "correct": "A",
-    "explanation": "Arc length = (θ/360°) × 2πr = (150/360) × 2π(11) = 28.80 units"
+    "explanation": "Arc length = (θ/360°) × 2πr = (150/360) × 2π(11) = 28.80 units",
+    "options": [
+      "28.80",
+      "25.92",
+      "31.68",
+      "69.12"
+    ],
+    "correct_key": "A"
   },
   {
     "id": 174,
@@ -5015,7 +7710,14 @@
     "optionC": "1809.56",
     "optionD": "452.39",
     "correct": "C",
-    "explanation": "Volume = πr²h = π(8)²(9) = 1809.56 cubic units"
+    "explanation": "Volume = πr²h = π(8)²(9) = 1809.56 cubic units",
+    "options": [
+      "1628.60",
+      "1990.51",
+      "1809.56",
+      "452.39"
+    ],
+    "correct_key": "C"
   },
   {
     "id": 170,
@@ -5028,7 +7730,14 @@
     "optionC": "251.33",
     "optionD": "125.66",
     "correct": "C",
-    "explanation": "Volume = πr²h = π(4)²(5) = 251.33 cubic units"
+    "explanation": "Volume = πr²h = π(4)²(5) = 251.33 cubic units",
+    "options": [
+      "226.19",
+      "276.46",
+      "251.33",
+      "125.66"
+    ],
+    "correct_key": "C"
   },
   {
     "id": 139,
@@ -5041,7 +7750,14 @@
     "optionC": "1.0000",
     "optionD": "0.2500",
     "correct": "A",
-    "explanation": "sin(330°) = -0.5000. Reference angle and quadrant determine the sign."
+    "explanation": "sin(330°) = -0.5000. Reference angle and quadrant determine the sign.",
+    "options": [
+      "-0.5000",
+      "0.5000",
+      "1.0000",
+      "0.2500"
+    ],
+    "correct_key": "A"
   },
   {
     "id": 57,
@@ -5054,7 +7770,14 @@
     "optionC": "1338",
     "optionD": "1078",
     "correct": "A",
-    "explanation": "Use P(t) = P₀(1 + r)^t = 654(1.0927828532343842)^7 = 1217. Option D incorrectly uses simple interest instead of compound growth."
+    "explanation": "Use P(t) = P₀(1 + r)^t = 654(1.0927828532343842)^7 = 1217. Option D incorrectly uses simple interest instead of compound growth.",
+    "options": [
+      "1217",
+      "1095",
+      "1338",
+      "1078"
+    ],
+    "correct_key": "A"
   },
   {
     "id": 208,
@@ -5067,7 +7790,14 @@
     "optionC": "14",
     "optionD": "21",
     "correct": "A",
-    "explanation": "First find f(3) = 3(3) - 6 = 3. Then g(f(3)) = g(3) = 3(3) = 9"
+    "explanation": "First find f(3) = 3(3) - 6 = 3. Then g(f(3)) = g(3) = 3(3) = 9",
+    "options": [
+      "9",
+      "4",
+      "14",
+      "21"
+    ],
+    "correct_key": "A"
   },
   {
     "id": 498,
@@ -5080,7 +7810,14 @@
     "optionC": "36",
     "optionD": "39",
     "correct": "C",
-    "explanation": "nth term = a₁ + (n-1)d = 6 + (11-1)(3) = 6 + 30 = 36"
+    "explanation": "nth term = a₁ + (n-1)d = 6 + (11-1)(3) = 6 + 30 = 36",
+    "options": [
+      "33",
+      "39",
+      "36",
+      "39"
+    ],
+    "correct_key": "C"
   },
   {
     "id": 2,
@@ -5093,7 +7830,14 @@
     "optionC": "-0.90",
     "optionD": "8.00",
     "correct": "A",
-    "explanation": "For a quadratic f(x) = ax² + bx + c, the vertex is at x = -b/(2a) = -0.90. Substituting back: f(-0.90) = 5(-0.90)² + 9(-0.90) + 8 = 3.95"
+    "explanation": "For a quadratic f(x) = ax² + bx + c, the vertex is at x = -b/(2a) = -0.90. Substituting back: f(-0.90) = 5(-0.90)² + 9(-0.90) + 8 = 3.95",
+    "options": [
+      "3.95",
+      "12.05",
+      "-0.90",
+      "8.00"
+    ],
+    "correct_key": "A"
   },
   {
     "id": 220,
@@ -5106,7 +7850,14 @@
     "optionC": "101",
     "optionD": "96",
     "correct": "D",
-    "explanation": "First find f(3) = 5(3) + 9 = 24. Then g(f(3)) = g(24) = 4(24) = 96"
+    "explanation": "First find f(3) = 5(3) + 9 = 24. Then g(f(3)) = g(24) = 4(24) = 96",
+    "options": [
+      "91",
+      "69",
+      "101",
+      "96"
+    ],
+    "correct_key": "D"
   },
   {
     "id": 272,
@@ -5119,7 +7870,14 @@
     "optionC": "f⁻¹(x) = (x - 1)/3",
     "optionD": "f⁻¹(x) = (x + 1)/3",
     "correct": "C",
-    "explanation": "To find inverse: y = 3x + 1, solve for x: x = (y - 1)/3. Replace y with x: f⁻¹(x) = (x - 1)/3"
+    "explanation": "To find inverse: y = 3x + 1, solve for x: x = (y - 1)/3. Replace y with x: f⁻¹(x) = (x - 1)/3",
+    "options": [
+      "f⁻¹(x) = x/3 - 1",
+      "f⁻¹(x) = 3x - 1",
+      "f⁻¹(x) = (x - 1)/3",
+      "f⁻¹(x) = (x + 1)/3"
+    ],
+    "correct_key": "C"
   },
   {
     "id": 253,
@@ -5132,7 +7890,14 @@
     "optionC": "f⁻¹(x) = 6x - 10",
     "optionD": "f⁻¹(x) = (x - 10)/6",
     "correct": "D",
-    "explanation": "To find inverse: y = 6x + 10, solve for x: x = (y - 10)/6. Replace y with x: f⁻¹(x) = (x - 10)/6"
+    "explanation": "To find inverse: y = 6x + 10, solve for x: x = (y - 10)/6. Replace y with x: f⁻¹(x) = (x - 10)/6",
+    "options": [
+      "f⁻¹(x) = x/6 - 10",
+      "f⁻¹(x) = (x + 10)/6",
+      "f⁻¹(x) = 6x - 10",
+      "f⁻¹(x) = (x - 10)/6"
+    ],
+    "correct_key": "D"
   },
   {
     "id": 270,
@@ -5145,7 +7910,14 @@
     "optionC": "f⁻¹(x) = 2x - -9",
     "optionD": "f⁻¹(x) = (x - -9)/2",
     "correct": "D",
-    "explanation": "To find inverse: y = 2x + -9, solve for x: x = (y - -9)/2. Replace y with x: f⁻¹(x) = (x - -9)/2"
+    "explanation": "To find inverse: y = 2x + -9, solve for x: x = (y - -9)/2. Replace y with x: f⁻¹(x) = (x - -9)/2",
+    "options": [
+      "f⁻¹(x) = x/2 - -9",
+      "f⁻¹(x) = (x + -9)/2",
+      "f⁻¹(x) = 2x - -9",
+      "f⁻¹(x) = (x - -9)/2"
+    ],
+    "correct_key": "D"
   },
   {
     "id": 313,
@@ -5158,7 +7930,14 @@
     "optionC": "1.9",
     "optionD": "29.1",
     "correct": "B",
-    "explanation": "Mean = 204/7 = 29.1. Median (middle value) = 30. Difference = |29.1 - 30| = 0.9"
+    "explanation": "Mean = 204/7 = 29.1. Median (middle value) = 30. Difference = |29.1 - 30| = 0.9",
+    "options": [
+      "-0.1",
+      "0.9",
+      "1.9",
+      "29.1"
+    ],
+    "correct_key": "B"
   },
   {
     "id": 274,
@@ -5171,7 +7950,14 @@
     "optionC": "f⁻¹(x) = 7x - 8",
     "optionD": "f⁻¹(x) = (x - 8)/7",
     "correct": "D",
-    "explanation": "To find inverse: y = 7x + 8, solve for x: x = (y - 8)/7. Replace y with x: f⁻¹(x) = (x - 8)/7"
+    "explanation": "To find inverse: y = 7x + 8, solve for x: x = (y - 8)/7. Replace y with x: f⁻¹(x) = (x - 8)/7",
+    "options": [
+      "f⁻¹(x) = x/7 - 8",
+      "f⁻¹(x) = (x + 8)/7",
+      "f⁻¹(x) = 7x - 8",
+      "f⁻¹(x) = (x - 8)/7"
+    ],
+    "correct_key": "D"
   },
   {
     "id": 429,
@@ -5184,6 +7970,13 @@
     "optionC": "141.32",
     "optionD": "131.32",
     "correct": "D",
-    "explanation": "New value = 98 × (1 + 34/100) = 98 × 1.34 = 131.32"
+    "explanation": "New value = 98 × (1 + 34/100) = 98 × 1.34 = 131.32",
+    "options": [
+      "121.32",
+      "132.00",
+      "141.32",
+      "131.32"
+    ],
+    "correct_key": "D"
   }
 ]
