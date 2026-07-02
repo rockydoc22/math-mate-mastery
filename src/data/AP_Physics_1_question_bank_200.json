@@ -74,7 +74,7 @@
     },
     "answer": "A",
     "difficulty": 5,
-    "explanation": "The acceleration of a block sliding down a frictionless incline is $a = g sin\theta$, where $\theta$ is the angle of inclination. Since $sin\theta$ decreases as $\theta$ decreases (for $0^circ < \theta leq 90^circ$), the acceleration also decreases.",
+    "explanation": "The acceleration of a block sliding down a frictionless incline is $a = g sin\theta$, where $\theta$ is the angle of inclination. Since $sin\theta$ decreases as $\theta$ decreases (for $0^circ < heta leq 90^circ$), the acceleration also decreases.",
     "correct_key": "A",
     "section": "science",
     "skill": "AP Physics 1"
@@ -321,7 +321,7 @@
   },
   {
     "id": "AP_Physics_1_22",
-    "question": "Two objects, A and B, have masses $m_A = 2 \text{ kg}$ and $m_B = 4 \text{ kg}$ respectively. They are initially at rest, and the same net force is applied to each. Which object experiences a greater acceleration?",
+    "question": "Two objects, A and B, have masses $m_A = 2 ext{ kg}$ and $m_B = 4 ext{ kg}$ respectively. They are initially at rest, and the same net force is applied to each. Which object experiences a greater acceleration?",
     "choices": {
       "A": "Object A",
       "B": "Object B",
@@ -330,7 +330,7 @@
     },
     "answer": "A",
     "difficulty": 4,
-    "explanation": "Newton's second law states $a = F_{net}/m$. Since the net force $F_{net}$ is the same for both objects, the acceleration is inversely proportional to the mass. Object A has a smaller mass ($2 \text{ kg}$) than object B ($4 \text{ kg}$), so it will experience a greater acceleration.",
+    "explanation": "Newton's second law states $a = F_{net}/m$. Since the net force $F_{net}$ is the same for both objects, the acceleration is inversely proportional to the mass. Object A has a smaller mass ($2 ext{ kg}$) than object B ($4 ext{ kg}$), so it will experience a greater acceleration.",
     "correct_key": "A",
     "section": "science",
     "skill": "AP Physics 1"
@@ -362,7 +362,7 @@
     },
     "answer": "D",
     "difficulty": 7,
-    "explanation": "For the block to remain at rest, the force of static friction must balance the component of gravity pulling the block down the incline. The component of gravity down the incline is $mg sin \theta$. The maximum static friction force is $f_{s,max} = mu_s N$, where $N = mg cos \theta$ is the normal force. Thus, for equilibrium, $mg sin \theta le mu_s mg cos \theta$. Dividing by $mg cos \theta$ (since $cos \theta > 0$ for typical inclined planes), we get $\tan \theta le mu_s$. This inequality can be rewritten as $\theta le arctan(mu_s)$.",
+    "explanation": "For the block to remain at rest, the force of static friction must balance the component of gravity pulling the block down the incline. The component of gravity down the incline is $mg sin heta$. The maximum static friction force is $f_{s,max} = mu_s N$, where $N = mg cos heta$ is the normal force. Thus, for equilibrium, $mg sin heta le mu_s mg cos heta$. Dividing by $mg cos heta$ (since $cos heta > 0$ for typical inclined planes), we get $\tan heta le mu_s$. This inequality can be rewritten as $\theta le arctan(mu_s)$.",
     "correct_key": "D",
     "section": "science",
     "skill": "AP Physics 1"
@@ -394,14 +394,14 @@
     },
     "answer": "A",
     "difficulty": 6,
-    "explanation": "The maximum static friction force is $f_{s,max} = mu_s N$. The normal force $N$ on a horizontal surface is equal to the weight, $mg$. So, $N = (10 \text{ kg})(9.8 \text{ m/s}^2) = 98 \text{ N}$. Therefore, $f_{s,max} = (0.4)(98 \text{ N}) = 39.2 \text{ N}$. The minimum force to start moving is equal to this maximum static friction.",
+    "explanation": "The maximum static friction force is $f_{s,max} = mu_s N$. The normal force $N$ on a horizontal surface is equal to the weight, $mg$. So, $N = (10 ext{ kg})(9.8 ext{ m/s}^2) = 98 ext{ N}$. Therefore, $f_{s,max} = (0.4)(98 ext{ N}) = 39.2 ext{ N}$. The minimum force to start moving is equal to this maximum static friction.",
     "correct_key": "A",
     "section": "science",
     "skill": "AP Physics 1"
   },
   {
     "id": "AP_Physics_1_29",
-    "question": "A system consists of two masses, $m_1$ and $m_2$, connected by a light, inextensible string passing over a light, frictionless pulley. If $m_1 = 2 \text{ kg}$ and $m_2 = 3 \text{ kg}$, what is the magnitude of the acceleration of the masses?",
+    "question": "A system consists of two masses, $m_1$ and $m_2$, connected by a light, inextensible string passing over a light, frictionless pulley. If $m_1 = 2 ext{ kg}$ and $m_2 = 3 ext{ kg}$, what is the magnitude of the acceleration of the masses?",
     "choices": {
       "A": "$g$",
       "B": "$g/3$",
@@ -410,7 +410,7 @@
     },
     "answer": "D",
     "difficulty": 6,
-    "explanation": "Let $T$ be the tension in the string and $a$ be the acceleration. For $m_1$, $T - m_1 g = m_1 a$. For $m_2$, $m_2 g - T = m_2 a$. Adding the two equations, $(m_2 - m_1)g = (m_1 + m_2)a$. So, $a = \frac{m_2 - m_1}{m_1 + m_2}g = \frac{3-2}{2+3}g = \frac{1}{5}g$.",
+    "explanation": "Let $T$ be the tension in the string and $a$ be the acceleration. For $m_1$, $T - m_1 g = m_1 a$. For $m_2$, $m_2 g - T = m_2 a$. Adding the two equations, $(m_2 - m_1)g = (m_1 + m_2)a$. So, $a = rac{m_2 - m_1}{m_1 + m_2}g = rac{3-2}{2+3}g = rac{1}{5}g$.",
     "correct_key": "D",
     "section": "science",
     "skill": "AP Physics 1"
@@ -442,7 +442,7 @@
     },
     "answer": "A",
     "difficulty": 5,
-    "explanation": "Using the conservation of mechanical energy, the initial potential energy ($PE_i = mgh$) is converted into kinetic energy at the bottom ($KE_f = \frac{1}{2}mv^2$). Since the incline is frictionless, mechanical energy is conserved. $mgh = \frac{1}{2}mv^2$. Solving for $v$, we get $v = sqrt{2gh}$.",
+    "explanation": "Using the conservation of mechanical energy, the initial potential energy ($PE_i = mgh$) is converted into kinetic energy at the bottom ($KE_f = rac{1}{2}mv^2$). Since the incline is frictionless, mechanical energy is conserved. $mgh = rac{1}{2}mv^2$. Solving for $v$, we get $v = sqrt{2gh}$.",
     "correct_key": "A",
     "section": "science",
     "skill": "AP Physics 1"
@@ -465,7 +465,7 @@
   },
   {
     "id": "AP_Physics_1_34",
-    "question": "A net force of $10 \text{ N}$ acts on a $5 \text{ kg}$ object for $4 \text{ s}$. What is the impulse delivered to the object?",
+    "question": "A net force of $10 ext{ N}$ acts on a $5 ext{ kg}$ object for $4 ext{ s}$. What is the impulse delivered to the object?",
     "choices": {
       "A": "10 Ns",
       "B": "20 Ns",
@@ -474,7 +474,7 @@
     },
     "answer": "C",
     "difficulty": 4,
-    "explanation": "Impulse $J$ is defined as the product of the net force $F_{net}$ and the time interval $Delta t$ over which it acts: $J = F_{net} Delta t$. In this case, $J = (10 \text{ N}) \times (4 \text{ s}) = 40 \text{ Ns}$.",
+    "explanation": "Impulse $J$ is defined as the product of the net force $F_{net}$ and the time interval $Delta t$ over which it acts: $J = F_{net} Delta t$. In this case, $J = (10 ext{ N}) imes (4 ext{ s}) = 40 ext{ Ns}$.",
     "correct_key": "C",
     "section": "science",
     "skill": "AP Physics 1"
@@ -490,7 +490,7 @@
     },
     "answer": "D",
     "difficulty": 7,
-    "explanation": "In a perfectly elastic collision between two identical objects where one is initially at rest, momentum and kinetic energy are conserved. Let the initial velocity of the first object be $v_1$ and the second be $v_2=0$. For momentum conservation: $mv_1 + m(0) = mv_{1f} + mv_{2f}$. For kinetic energy conservation: $\frac{1}{2}mv_1^2 + \frac{1}{2}m(0)^2 = \frac{1}{2}mv_{1f}^2 + \frac{1}{2}mv_{2f}^2$. Solving these equations yields $v_{1f}=0$ and $v_{2f}=v_1$. The first object comes to rest.",
+    "explanation": "In a perfectly elastic collision between two identical objects where one is initially at rest, momentum and kinetic energy are conserved. Let the initial velocity of the first object be $v_1$ and the second be $v_2=0$. For momentum conservation: $mv_1 + m(0) = mv_{1f} + mv_{2f}$. For kinetic energy conservation: $\frac{1}{2}mv_1^2 + rac{1}{2}m(0)^2 = rac{1}{2}mv_{1f}^2 + rac{1}{2}mv_{2f}^2$. Solving these equations yields $v_{1f}=0$ and $v_{2f}=v_1$. The first object comes to rest.",
     "correct_key": "D",
     "section": "science",
     "skill": "AP Physics 1"
@@ -618,7 +618,7 @@
     },
     "answer": "B",
     "difficulty": 4,
-    "explanation": "For the box to be moving at a constant velocity (implied by 'pushes...with a constant horizontal force' and the question asking about net force), the net force must be zero. If there is friction (which is implied when pushing an object across a floor), the pushing force must be counteracted by the friction force. However, the question states the box is moving, which means the pushing force is currently balancing, or overcoming, the kinetic friction. If the pushing force is constant and the box is accelerating, the net force is to the right. If the box is moving at constant velocity, the net force is zero, meaning the pushing force equals the kinetic friction. Since the question states a 'constant horizontal force' and asks about the 'net force', and implies movement, if the pushing force is greater than the kinetic friction, the net force is to the right. If they are equal, the net force is zero. However, option B suggests the net force is to the right *and* less than the pushing force, which implies an opposing force (friction) is present and the pushing force is greater than friction, resulting in a net force to the right, causing acceleration. If the pushing force is constant and the box is accelerating, the net force is to the right. If the pushing force is greater than the kinetic friction, the net force will be to the right. If the pushing force equals the kinetic friction, the net force is zero, and the box moves at constant velocity. Option A is incorrect because it ignores friction or other opposing forces. Option C is incorrect because if the net force were to the left, the box would be decelerating. Option D is partially correct in that the pushing force must be greater than the *maximum static* friction to initiate motion, but the question asks about while it is moving. The most plausible scenario in a typical AP Physics problem context where a constant force is applied and the object moves is that there is kinetic friction opposing motion, and if the pushing force is greater than kinetic friction, there is a net force to the right causing acceleration. If the pushing force is equal to kinetic friction, the net force is zero. Option B is the most fitting if the pushing force is slightly larger than the kinetic friction, leading to acceleration to the right.",
+    "explanation": "For the box to be moving at a constant velocity (implied by 'pushes...with a constant horizontal force' and the question asking about net force), the net force must be zero. If there is friction (which is implied when pushing an object across a floor), the pushing force must be counteracted by the friction force. However, the question states the box is moving, which means the pushing force is currently balancing, or overcoming, the kinetic friction. If the pushing force is constant and the box is accelerating, the net force is to the right. If the box is moving at constant velocity, the net force is zero, meaning the pushing force equals the kinetic friction. Since the question states a 'constant horizontal force' and asks about the 'net force', and implies movement, if the pushing force is greater than the kinetic friction, the net force is to the right. If they are equal, the net force is zero. However, option B suggests the net force is to the right *and* less than the pushing force, which implies an opposing force (friction) is present and the pushing force is greater than friction, resulting in a net force to the right, causing acceleration.",
     "correct_key": "B",
     "section": "science",
     "skill": "AP Physics 1"
@@ -1018,7 +1018,7 @@
     },
     "answer": "A",
     "difficulty": 6,
-    "explanation": "We can use the kinematic equation $v_f^2 = v_i^2 + 2ad$. Since the car starts from rest, $v_i = 0$. So, $v_f^2 = 2ad$. This means $v_f = sqrt{2ad}$. While we know $d$ and $t$, we don't know $a$ directly. However, we also know that $d = v_i t + \frac{1}{2}at^2$. With $v_i = 0$, $d = \frac{1}{2}at^2$, so $a = \frac{2d}{t^2}$. Substituting this expression for $a$ back into $v_f = sqrt{2ad}$: $v_f = sqrt{2(\frac{2d}{t^2})d} = sqrt{\frac{4d^2}{t^2}} = \frac{2d}{t}$. Option D is the average velocity which equals final velocity for uniform acceleration from rest. The prompt asks for final velocity in terms of $a$ and $d$. The correct expression is $sqrt{2ad}$.",
+    "explanation": "We can use the kinematic equation $v_f^2 = v_i^2 + 2ad$. Since the car starts from rest, $v_i = 0$. So, $v_f^2 = 2ad$. This means $v_f = sqrt{2ad}$. While we know $d$ and $t$, we don't know $a$ directly. However, we also know that $d = v_i t + rac{1}{2}at^2$. With $v_i = 0$, $d = rac{1}{2}at^2$, so $a = rac{2d}{t^2}$. Substituting this expression for $a$ back into $v_f = sqrt{2ad}$: $v_f = sqrt{2(\frac{2d}{t^2})d} = sqrt{\frac{4d^2}{t^2}} = rac{2d}{t}$. Option D is the average velocity which equals final velocity for uniform acceleration from rest. The prompt asks for final velocity in terms of $a$ and $d$. The correct expression is $sqrt{2ad}$.",
     "correct_key": "A",
     "section": "science",
     "skill": "AP Physics 1"
@@ -1050,7 +1050,7 @@
     },
     "answer": "D",
     "difficulty": 7,
-    "explanation": "Let $T$ be the tension in the string and $a$ be the acceleration of the system. For block $m_2$, the net force is $m_2g - T = m_2a$. For block $m_1$, the net force is $T = m_1a$. Substituting the second equation into the first: $m_2g - m_1a = m_2a$. Rearranging to solve for $a$: $m_2g = (m_1 + m_2)a$, so $a = \frac{m_2}{m_1 + m_2}g$. Plugging in the values: $a = \frac{2 \text{ kg}}{5 \text{ kg} + 2 \text{ kg}}g = \frac{2}{7}g approx 0.2857g$.",
+    "explanation": "Let $T$ be the tension in the string and $a$ be the acceleration of the system. For block $m_2$, the net force is $m_2g - T = m_2a$. For block $m_1$, the net force is $T = m_1a$. Substituting the second equation into the first: $m_2g - m_1a = m_2a$. Rearranging to solve for $a$: $m_2g = (m_1 + m_2)a$, so $a = rac{m_2}{m_1 + m_2}g$. Plugging in the values: $a = rac{2 ext{ kg}}{5 ext{ kg} + 2 ext{ kg}}g = rac{2}{7}g approx 0.2857g$.",
     "correct_key": "D",
     "section": "science",
     "skill": "AP Physics 1"
@@ -1082,7 +1082,7 @@
     },
     "answer": "D",
     "difficulty": 8,
-    "explanation": "Both objects have rotational kinetic energy as they roll down the incline. The moment of inertia for a solid sphere is $I_{solid} = \frac{2}{5}MR^2$, and for a hollow spherical shell is $I_{hollow} = \frac{2}{3}MR^2$. Since the hollow shell has a larger moment of inertia (more mass is concentrated further from the axis of rotation), it requires more energy to spin up. In the conservation of energy equation (potential energy converting to translational and rotational kinetic energy), a larger portion of the initial potential energy will be converted into rotational kinetic energy for the hollow shell, leaving less for translational kinetic energy. Since translational kinetic energy determines the linear speed down the incline, the solid sphere, with less rotational inertia, will have a greater translational speed and reach the bottom first.",
+    "explanation": "Both objects have rotational kinetic energy as they roll down the incline. The moment of inertia for a solid sphere is $I_{solid} = rac{2}{5}MR^2$, and for a hollow spherical shell is $I_{hollow} = rac{2}{3}MR^2$. Since the hollow shell has a larger moment of inertia (more mass is concentrated further from the axis of rotation), it requires more energy to spin up. In the conservation of energy equation (potential energy converting to translational and rotational kinetic energy), a larger portion of the initial potential energy will be converted into rotational kinetic energy for the hollow shell, leaving less for translational kinetic energy. Since translational kinetic energy determines the linear speed down the incline, the solid sphere, with less rotational inertia, will have a greater translational speed and reach the bottom first.",
     "correct_key": "D",
     "section": "science",
     "skill": "AP Physics 1"
@@ -1098,7 +1098,7 @@
     },
     "answer": "A",
     "difficulty": 5,
-    "explanation": "The spring constant $k$ can be found using Hooke's Law: $F = kx$. So, $50 \text{ N} = k(0.10 \text{ m})$, which gives $k = 500 \text{ N/m}$. The potential energy stored in a spring is given by $PE_{spring} = \frac{1}{2}kx^2$. Substituting the values: $PE_{spring} = \frac{1}{2}(500 \text{ N/m})(0.10 \text{ m})^2 = \frac{1}{2}(500)(0.01) \text{ J} = 2.5 \text{ J}$.",
+    "explanation": "The spring constant $k$ can be found using Hooke's Law: $F = kx$. So, $50 ext{ N} = k(0.10 ext{ m})$, which gives $k = 500 ext{ N/m}$. The potential energy stored in a spring is given by $PE_{spring} = rac{1}{2}kx^2$. Substituting the values: $PE_{spring} = rac{1}{2}(500 ext{ N/m})(0.10 ext{ m})^2 = rac{1}{2}(500)(0.01) ext{ J} = 2.5 ext{ J}$.",
     "correct_key": "A",
     "section": "science",
     "skill": "AP Physics 1"
@@ -1130,7 +1130,7 @@
     },
     "answer": "B",
     "difficulty": 7,
-    "explanation": "Using the conservation of mechanical energy, the initial potential energy is converted into kinetic energy at the lowest point. The initial height of the bob above the lowest point is $h = L - Lcos\theta = L(1-cos\theta)$. The initial potential energy is $PE_i = mgh = mgL(1-cos\theta)$. The kinetic energy at the lowest point is $KE_f = \frac{1}{2}mv_f^2$. Since the bob starts from rest, $KE_i = 0$. Thus, $PE_i + KE_i = PE_f + KE_f$. Assuming the potential energy is zero at the lowest point ($PE_f = 0$), we have $mgL(1-cos\theta) = \frac{1}{2}mv_f^2$. Solving for $v_f$: $v_f^2 = 2gL(1-cos\theta)$, so $v_f = sqrt{2gL(1-cos\theta)}$.",
+    "explanation": "Using the conservation of mechanical energy, the initial potential energy is converted into kinetic energy at the lowest point. The initial height of the bob above the lowest point is $h = L - Lcos\theta = L(1-cos\theta)$. The initial potential energy is $PE_i = mgh = mgL(1-cos\theta)$. The kinetic energy at the lowest point is $KE_f = rac{1}{2}mv_f^2$. Since the bob starts from rest, $KE_i = 0$. Thus, $PE_i + KE_i = PE_f + KE_f$. Assuming the potential energy is zero at the lowest point ($PE_f = 0$), we have $mgL(1-cos\theta) = rac{1}{2}mv_f^2$. Solving for $v_f$: $v_f^2 = 2gL(1-cos\theta)$, so $v_f = sqrt{2gL(1-cos\theta)}$.",
     "correct_key": "B",
     "section": "science",
     "skill": "AP Physics 1"
@@ -1162,7 +1162,7 @@
     },
     "answer": "A",
     "difficulty": 5,
-    "explanation": "Torque ($\tau$) is defined as the product of the force ($F$), the lever arm (distance from the pivot to the point where the force is applied, $r$), and the sine of the angle between the force and the lever arm ($sin\theta$). In this case, the force is applied at the end of the rod, which is a distance $L/2$ from the center pivot. The force is applied perpendicular to the rod, so $\theta = 90^circ$ and $sin(90^circ) = 1$. Therefore, the torque is $\tau = F \times (L/2) \times 1 = FL/2$.",
+    "explanation": "Torque ($\tau$) is defined as the product of the force ($F$), the lever arm (distance from the pivot to the point where the force is applied, $r$), and the sine of the angle between the force and the lever arm ($sin\theta$). In this case, the force is applied at the end of the rod, which is a distance $L/2$ from the center pivot. The force is applied perpendicular to the rod, so $\theta = 90^circ$ and $sin(90^circ) = 1$. Therefore, the torque is $\tau = F imes (L/2) imes 1 = FL/2$.",
     "correct_key": "A",
     "section": "science",
     "skill": "AP Physics 1"
@@ -1210,7 +1210,7 @@
     },
     "answer": "C",
     "difficulty": 4,
-    "explanation": "The moment of inertia of a uniform disk about its central axis is $I_{disk} = \frac{1}{2}MR^2$. The moment of inertia of a uniform solid cylinder about its central axis is also $I_{cylinder} = \frac{1}{2}MR^2$. Rotational kinetic energy is given by $KE_{rot} = \frac{1}{2}Iomega^2$. Since both objects have the same mass $M$, radius $R$, and angular velocity $omega$, and their moments of inertia are equal, they will have the same rotational kinetic energy.",
+    "explanation": "The moment of inertia of a uniform disk about its central axis is $I_{disk} = rac{1}{2}MR^2$. The moment of inertia of a uniform solid cylinder about its central axis is also $I_{cylinder} = rac{1}{2}MR^2$. Rotational kinetic energy is given by $KE_{rot} = rac{1}{2}Iomega^2$. Since both objects have the same mass $M$, radius $R$, and angular velocity $omega$, and their moments of inertia are equal, they will have the same rotational kinetic energy.",
     "correct_key": "C",
     "section": "science",
     "skill": "AP Physics 1"
@@ -1370,7 +1370,7 @@
     },
     "answer": "A",
     "difficulty": 5,
-    "explanation": "The gravitational force between two point masses is given by Newton's Law of Universal Gravitation: $F = G \frac{m_1 m_2}{r^2}$. If the distance $r$ is doubled (becomes $2r$), the new force is $F' = G \frac{m_1 m_2}{(2r)^2} = G \frac{m_1 m_2}{4r^2} = \frac{1}{4} F$. Thus, the force decreases by a factor of 4.",
+    "explanation": "The gravitational force between two point masses is given by Newton's Law of Universal Gravitation: $F = G rac{m_1 m_2}{r^2}$. If the distance $r$ is doubled (becomes $2r$), the new force is $F' = G rac{m_1 m_2}{(2r)^2} = G rac{m_1 m_2}{4r^2} = rac{1}{4} F$. Thus, the force decreases by a factor of 4.",
     "correct_key": "A",
     "section": "science",
     "skill": "AP Physics 1"
@@ -1418,7 +1418,7 @@
     },
     "answer": "A",
     "difficulty": 4,
-    "explanation": "The force exerted by a spring is given by Hooke's Law: $F_s = -kx$, where $k$ is the spring constant and $x$ is the displacement from equilibrium. The negative sign indicates the force is opposite to the displacement. The magnitude of the force is $|F_s| = |k x| = (200 \text{ N/m})(0.1 \text{ m}) = 20 \text{ N}$.",
+    "explanation": "The force exerted by a spring is given by Hooke's Law: $F_s = -kx$, where $k$ is the spring constant and $x$ is the displacement from equilibrium. The negative sign indicates the force is opposite to the displacement. The magnitude of the force is $|F_s| = |k x| = (200 ext{ N/m})(0.1 ext{ m}) = 20 ext{ N}$.",
     "correct_key": "A",
     "section": "science",
     "skill": "AP Physics 1"
@@ -1450,7 +1450,7 @@
     },
     "answer": "D",
     "difficulty": 4,
-    "explanation": "The Work-Energy Theorem states that the net work done on an object is equal to the change in its kinetic energy. Since the block is moving with a constant velocity, its kinetic energy is constant, so the change in kinetic energy is zero. Therefore, the net work done must be zero. This implies that the work done by the applied force (if any) must exactly cancel the work done by friction. If the block is moving with constant velocity *without* an applied force, then friction alone would cause it to slow down. The question implies there might be an applied force or that it's simply *currently* moving at constant velocity due to some prior conditions and friction is acting. Crucially, the Work-Energy theorem is always true: Net Work = Change in KE.",
+    "explanation": "The Work-Energy Theorem states that the net work done on an object is equal to the change in its kinetic energy. Since the block is moving with a constant velocity, its kinetic energy is constant, so the change in kinetic energy is zero. Therefore, the net work done must be zero. This implies that the work done by the applied force (if any) must exactly cancel the work done by friction. If the block is moving with constant velocity *without* an applied force, then friction alone would cause it to slow down. The question implies there be an applied force or that it's simply *currently* moving at constant velocity due to some prior conditions and friction is acting. Crucially, the Work-Energy theorem is always true: Net Work = Change in KE.",
     "correct_key": "D",
     "section": "science",
     "skill": "AP Physics 1"
@@ -1562,7 +1562,7 @@
     },
     "answer": "D",
     "difficulty": 4,
-    "explanation": "The potential energy stored in a spring that is displaced by a distance $x$ from its equilibrium position is given by the formula $PE_s = \frac{1}{2}kx^2$, where $k$ is the spring constant. This formula arises from the work done to stretch or compress the spring, which is equal to the integral of the force $F = -kx$ over the displacement.",
+    "explanation": "The potential energy stored in a spring that is displaced by a distance $x$ from its equilibrium position is given by the formula $PE_s = rac{1}{2}kx^2$, where $k$ is the spring constant. This formula arises from the work done to stretch or compress the spring, which is equal to the integral of the force $F = -kx$ over the displacement.",
     "correct_key": "D",
     "section": "science",
     "skill": "AP Physics 1"
@@ -1610,7 +1610,7 @@
     },
     "answer": "D",
     "difficulty": 6,
-    "explanation": "On a frictionless inclined plane, the component of gravity acting parallel to the incline is $mg sin\theta$, where $\theta$ is the angle of inclination. According to Newton's second law, the acceleration is $a = \frac{F_{net}}{m} = \frac{mg sin\theta}{m} = g sin\theta$. As the angle $\theta$ increases (from 0 towards 90 degrees), $sin\theta$ increases, and therefore the acceleration $a$ increases.",
+    "explanation": "On a frictionless inclined plane, the component of gravity acting parallel to the incline is $mg sin\theta$, where $\theta$ is the angle of inclination. According to Newton's second law, the acceleration is $a = rac{F_{net}}{m} = rac{mg sin\theta}{m} = g sin\theta$. As the angle $\theta$ increases (from 0 towards 90 degrees), $sin\theta$ increases, and therefore the acceleration $a$ increases.",
     "correct_key": "D",
     "section": "science",
     "skill": "AP Physics 1"
@@ -1722,14 +1722,14 @@
     },
     "answer": "A",
     "difficulty": 5,
-    "explanation": "The kinetic energy of an object is given by the formula $KE = \frac{1}{2}mv^2$. If the speed is doubled to $2v$, the new kinetic energy is $KE' = \frac{1}{2}m(2v)^2 = \frac{1}{2}m(4v^2) = 4(\frac{1}{2}mv^2) = 4KE$. Therefore, the kinetic energy increases by a factor of 4.",
+    "explanation": "The kinetic energy of an object is given by the formula $KE = rac{1}{2}mv^2$. If the speed is doubled to $2v$, the new kinetic energy is $KE' = rac{1}{2}m(2v)^2 = rac{1}{2}m(4v^2) = 4(\frac{1}{2}mv^2) = 4KE$. Therefore, the kinetic energy increases by a factor of 4.",
     "correct_key": "A",
     "section": "science",
     "skill": "AP Physics 1"
   },
   {
     "id": "AP_Physics_1_142",
-    "question": "A net force of $20 \text{ N}$ acts on a $5 \text{ kg}$ object. What is the acceleration of the object?",
+    "question": "A net force of $20 ext{ N}$ acts on a $5 ext{ kg}$ object. What is the acceleration of the object?",
     "choices": {
       "A": "$15 \text{ m/s}^2$",
       "B": "$100 \text{ m/s}^2$",
@@ -1738,7 +1738,7 @@
     },
     "answer": "D",
     "difficulty": 4,
-    "explanation": "Using Newton's second law, $vec{F}_{net} = mvec{a}$. The magnitude of the acceleration is $a = \frac{F_{net}}{m} = \frac{20 \text{ N}}{5 \text{ kg}} = 4 \text{ m/s}^2$. The direction of the acceleration is the same as the direction of the net force.",
+    "explanation": "Using Newton's second law, $vec{F}_{net} = mvec{a}$. The magnitude of the acceleration is $a = rac{F_{net}}{m} = rac{20 ext{ N}}{5 ext{ kg}} = 4 ext{ m/s}^2$. The direction of the acceleration is the same as the direction of the net force.",
     "correct_key": "D",
     "section": "science",
     "skill": "AP Physics 1"
@@ -1770,7 +1770,7 @@
     },
     "answer": "C",
     "difficulty": 5,
-    "explanation": "From Newton's second law, $a = F/m$. If the force $F$ is kept constant and the mass is doubled from $m$ to $2m$, the new acceleration $a'$ will be $a' = F/(2m) = \frac{1}{2}(F/m) = \frac{1}{2}a$. The acceleration is halved.",
+    "explanation": "From Newton's second law, $a = F/m$. If the force $F$ is kept constant and the mass is doubled from $m$ to $2m$, the new acceleration $a'$ will be $a' = F/(2m) = rac{1}{2}(F/m) = rac{1}{2}a$. The acceleration is halved.",
     "correct_key": "C",
     "section": "science",
     "skill": "AP Physics 1"
@@ -1802,7 +1802,7 @@
     },
     "answer": "A",
     "difficulty": 5,
-    "explanation": "As the roller coaster descends, its height above the ground decreases, so its gravitational potential energy ($PE = mgh$) decreases. Since mechanical energy (the sum of kinetic and potential energy) is conserved in the absence of non-conservative forces like friction and air resistance, the decrease in potential energy must be accompanied by an equal increase in kinetic energy ($KE = \frac{1}{2}mv^2$), leading to an increase in speed.",
+    "explanation": "As the roller coaster descends, its height above the ground decreases, so its gravitational potential energy ($PE = mgh$) decreases. Since mechanical energy (the sum of kinetic and potential energy) is conserved in the absence of non-conservative forces like friction and air resistance, the decrease in potential energy must be accompanied by an equal increase in kinetic energy ($KE = rac{1}{2}mv^2$), leading to an increase in speed.",
     "correct_key": "A",
     "section": "science",
     "skill": "AP Physics 1"
@@ -1834,7 +1834,7 @@
     },
     "answer": "A",
     "difficulty": 7,
-    "explanation": "The two forces create a net torque on the rod. The torque due to the force on one end is $\tau_1 = F(L/2)$, and the torque due to the force on the other end is $\tau_2 = F(L/2)$. Since they are in the same plane and create rotation in the same direction (e.g., clockwise or counterclockwise), the net torque is $\tau_{net} = \tau_1 + \tau_2 = F(L/2) + F(L/2) = FL$. According to the rotational equivalent of Newton's second law, $\tau_{net} = Ialpha$, where $I$ is the moment of inertia and $alpha$ is the angular acceleration. Since the net torque is constant and the moment of inertia of a uniform rod pivoted at its center is also constant, the angular acceleration $alpha$ will be constant. This leads to rotation with constant angular acceleration.",
+    "explanation": "The two forces create a net torque on the rod. The torque due to the force on one end is $\tau_1 = F(L/2)$, and the torque due to the force on the other end is $\tau_2 = F(L/2)$. Since they are in the same plane and create rotation in the same direction (e.g., clockwise or counterclockwise), the net torque is $\tau_{net} = au_1 + au_2 = F(L/2) + F(L/2) = FL$. According to the rotational equivalent of Newton's second law, $\tau_{net} = Ialpha$, where $I$ is the moment of inertia and $alpha$ is the angular acceleration. Since the net torque is constant and the moment of inertia of a uniform rod pivoted at its center is also constant, the angular acceleration $alpha$ will be constant. This leads to rotation with constant angular acceleration.",
     "correct_key": "A",
     "section": "science",
     "skill": "AP Physics 1"
@@ -1898,7 +1898,7 @@
     },
     "answer": "A",
     "difficulty": 6,
-    "explanation": "Newton's Law of Universal Gravitation states $F = G \frac{m_A m_B}{r^2}$. If $m_A$ is doubled ($2m_A$) and $r$ is halved ($\frac{r}{2}$), the new force $F'$ is $F' = G \frac{(2m_A) m_B}{(\frac{r}{2})^2} = G \frac{2m_A m_B}{\frac{r^2}{4}} = 8 G \frac{m_A m_B}{r^2} = 8F$.",
+    "explanation": "Newton's Law of Universal Gravitation states $F = G rac{m_A m_B}{r^2}$. If $m_A$ is doubled ($2m_A$) and $r$ is halved ($\frac{r}{2}$), the new force $F'$ is $F' = G rac{(2m_A) m_B}{(\frac{r}{2})^2} = G rac{2m_A m_B}{\frac{r^2}{4}} = 8 G rac{m_A m_B}{r^2} = 8F$.",
     "correct_key": "A",
     "section": "science",
     "skill": "AP Physics 1"
@@ -1914,14 +1914,14 @@
     },
     "answer": "D",
     "difficulty": 5,
-    "explanation": "First, calculate the acceleration: $a = \frac{Delta v}{Delta t} = \frac{0 \text{ m/s} - 20 \text{ m/s}}{10 \text{ s}} = -2 \text{ m/s}^2$. Then, use Newton's Second Law: $F_{avg} = ma = (1000 \text{ kg})(-2 \text{ m/s}^2) = -2000 \text{ N}$. The negative sign indicates the force opposes the motion.",
+    "explanation": "First, calculate the acceleration: $a = rac{Delta v}{Delta t} = rac{0 ext{ m/s} - 20 ext{ m/s}}{10 ext{ s}} = -2 ext{ m/s}^2$. Then, use Newton's Second Law: $F_{avg} = ma = (1000 ext{ kg})(-2 ext{ m/s}^2) = -2000 ext{ N}$. The negative sign indicates the force opposes the motion.",
     "correct_key": "D",
     "section": "science",
     "skill": "AP Physics 1"
   },
   {
     "id": "AP_Physics_1_26",
-    "question": "A 10 kg block is at rest on a horizontal frictionless surface. A constant horizontal force is applied to the block, causing it to accelerate at $2 \text{ m/s}^2$. What is the magnitude of the applied force?",
+    "question": "A 10 kg block is at rest on a horizontal frictionless surface. A constant horizontal force is applied to the block, causing it to accelerate at $2 ext{ m/s}^2$. What is the magnitude of the applied force?",
     "choices": {
       "A": "5 N",
       "B": "10 N",
@@ -1930,7 +1930,7 @@
     },
     "answer": "C",
     "difficulty": 4,
-    "explanation": "Using Newton's second law, $F_{net} = ma$. Since the surface is frictionless, the net force is equal to the applied force. $F = (10 \text{ kg}) \times (2 \text{ m/s}^2) = 20 \text{ N}$.",
+    "explanation": "Using Newton's second law, $F_{net} = ma$. Since the surface is frictionless, the net force is equal to the applied force. $F = (10 ext{ kg}) imes (2 ext{ m/s}^2) = 20 ext{ N}$.",
     "correct_key": "C",
     "section": "science",
     "skill": "AP Physics 1"
@@ -1962,7 +1962,7 @@
     },
     "answer": "D",
     "difficulty": 6,
-    "explanation": "At the maximum height, the final velocity is $0$. Using the kinematic equation $v_f^2 = v_i^2 + 2aDelta y$, we have $0^2 = (10\text{ m/s})^2 + 2(-9.8\text{ m/s}^2)Delta y$. Solving for $Delta y$: $2(9.8)Delta y = 100$, so $Delta y = \frac{100}{19.6} approx 5.1 \text{ m}$.",
+    "explanation": "At the maximum height, the final velocity is $0$. Using the kinematic equation $v_f^2 = v_i^2 + 2aDelta y$, we have $0^2 = (10\text{ m/s})^2 + 2(-9.8\text{ m/s}^2)Delta y$. Solving for $Delta y$: $2(9.8)Delta y = 100$, so $Delta y = rac{100}{19.6} approx 5.1 ext{ m}$.",
     "correct_key": "D",
     "section": "science",
     "skill": "AP Physics 1"
@@ -2010,7 +2010,7 @@
     },
     "answer": "A",
     "difficulty": 6,
-    "explanation": "Let $v_{boat,water}$ be the velocity of the boat relative to the water ($v$) and $v_{water,shore}$ be the velocity of the water relative to the shore ($-u$, since it's downstream). The velocity of the boat relative to the shore is $v_{boat,shore} = v_{boat,water} + v_{water,shore}$. Since the boat is moving upstream, its velocity relative to the water is in the opposite direction of the water's flow. If we take downstream as positive, the boat's velocity relative to water is $-v$, and the water's velocity relative to shore is $u$. Thus, $v_{boat,shore} = -v + u = u - v$. If we take upstream as positive, the boat's velocity relative to water is $v$, and the water's velocity relative to shore is $-u$. Thus, $v_{boat,shore} = v + (-u) = v - u$. Since the problem states the boat is moving *upstream* at velocity $v$ relative to water, and the water is flowing *downstream* at velocity $u$ relative to shore, if we define upstream as positive, the boat's velocity relative to shore is $v_{boat, shore} = v_{boat, water} + v_{water, shore} = v + (-u) = v - u$. If we define downstream as positive, the boat's velocity relative to water is $-v$ and water's velocity relative to shore is $u$, so $v_{boat, shore} = -v + u = u - v$.  Assuming $v$ is the speed upstream, and $u$ is the speed downstream, and we want the velocity relative to the shore. Upstream is typically considered the negative direction relative to downstream. So, boat relative to water is $v$ upstream. Water relative to shore is $u$ downstream. Velocity of boat relative to shore is $v_{boat,water} + v_{water,shore}$. If upstream is positive, then $v_{boat,water} = v$ and $v_{water,shore} = -u$. Therefore, $v_{boat,shore} = v - u$. If downstream is positive, then $v_{boat,water} = -v$ and $v_{water,shore} = u$. Therefore, $v_{boat,shore} = -v + u = u - v$. The usual convention is that 'upstream' velocity is faster than 'downstream' water when going upstream. So $v > u$ for net upstream motion. Let's stick with Upstream = positive. Boat relative to water = $+v$. Water relative to shore = $-u$. Boat relative to shore = $(+v) + (-u) = v-u$.",
+    "explanation": "Let $v_{boat,water}$ be the velocity of the boat relative to the water ($v$) and $v_{water,shore}$ be the velocity of the water relative to the shore ($-u$, since it's downstream). The velocity of the boat relative to the shore is $v_{boat,shore} = v_{boat,water} + v_{water,shore}$. Since the boat is moving upstream, its velocity relative to the water is in the opposite direction of the water's flow. If we take downstream as positive, the boat's velocity relative to water is $-v$, and the water's velocity relative to shore is $u$. Thus, $v_{boat,shore} = -v + u = u - v$. If we take upstream as positive, the boat's velocity relative to water is $v$, and the water's velocity relative to shore is $-u$. Thus, $v_{boat,shore} = v + (-u) = v - u$. Since the problem states the boat is moving *upstream* at velocity $v$ relative to water, and the water is flowing *downstream* at velocity $u$ relative to shore, if we define upstream as positive, the boat's velocity relative to shore is $v_{boat, shore} = v_{boat, water} + v_{water, shore} = v + (-u) = v - u$.",
     "correct_key": "A",
     "section": "science",
     "skill": "AP Physics 1"
@@ -2026,7 +2026,7 @@
     },
     "answer": "D",
     "difficulty": 4,
-    "explanation": "Impulse is equal to the change in momentum. Impulse is also equal to the force multiplied by the time interval. Impulse $= F Delta t = (50 \text{ N})(2 \text{ s}) = 100 \text{ N}cdot\text{s}$. Since $1 \text{ N}cdot\text{s} = 1 \text{ kg}cdot\text{m/s}$, the change in momentum is $100 \text{ kg}cdot\text{m/s}$.",
+    "explanation": "Impulse is equal to the change in momentum. Impulse is also equal to the force multiplied by the time interval. Impulse $= F Delta t = (50 ext{ N})(2 ext{ s}) = 100 ext{ N}cdot\text{s}$. Since $1 ext{ N}cdot\text{s} = 1 ext{ kg}cdot\text{m/s}$, the change in momentum is $100 ext{ kg}cdot\text{m/s}$.",
     "correct_key": "D",
     "section": "science",
     "skill": "AP Physics 1"
@@ -2314,7 +2314,7 @@
     },
     "answer": "A",
     "difficulty": 7,
-    "explanation": "For an elastic collision, both momentum and kinetic energy are conserved. Let v_A be the initial velocity of A, v_B be the initial velocity of B (v_B = 0), and v_A' and v_B' be their final velocities.   1. Conservation of Momentum: M*v_A + 2M*0 = M*v_A' + 2M*v_B'  => v_A = v_A' + 2v_B' (Eq 1)   2. Relative velocity reversal for elastic collisions: v_A - v_B = -(v_A' - v_B') => v_A - 0 = -(v_A' - v_B') => v_A = -v_A' + v_B' (Eq 2)   From (Eq 2), v_B' = v_A + v_A'. Substitute this into (Eq 1): v_A = v_A' + 2(v_A + v_A') = v_A' + 2v_A + 2v_A' = 3v_A' + 2v_A.   Rearranging for v_A': 3v_A' = v_A - 2v_A = -v_A.   So, v_A' = -v_A/3. Given v_A = v, then v_A' = -v/3.",
+    "explanation": "For an elastic collision, both momentum and kinetic energy are conserved. Let v_A be the initial velocity of A, v_B be the initial velocity of B (v_B = 0), and v_A' and v_B' be their final velocities. 1. Conservation of Momentum: M*v_A + 2M*0 = M*v_A' + 2M*v_B' => v_A = v_A' + 2v_B' (Eq 1) 2. Relative velocity reversal for elastic collisions: v_A - v_B = -(v_A' - v_B') => v_A - 0 = -(v_A' - v_B') => v_A = -v_A' + v_B' (Eq 2) From (Eq 2), v_B' = v_A + v_A'. Substitute this into (Eq 1): v_A = v_A' + 2(v_A + v_A') = v_A' + 2v_A + 2v_A' = 3v_A' + 2v_A. Rearranging for v_A': 3v_A' = v_A - 2v_A = -v_A. So, v_A' = -v_A/3. Given v_A = v, then v_A' = -v/3.",
     "correct_key": "A",
     "section": "science",
     "skill": "AP Physics 1"
@@ -2458,7 +2458,7 @@
     },
     "answer": "A",
     "difficulty": 8,
-    "explanation": "Let T1 be the tension in the left wire and T2 be the tension in the right wire.  First, sum of forces in the vertical direction: T1 + T2 - Mg - mg = 0.  Then, sum of torques about the right end (to eliminate T2):  T1*L - Mg*(L/2) - mg*(3L/4) = 0.  (The plank's weight acts at L/2 from both ends. The block is at L/4 from the left, so 3L/4 from the right).  Divide by L: T1 - Mg/2 - 3mg/4 = 0.  Solve for T1: T1 = Mg/2 + 3mg/4.",
+    "explanation": "Let T1 be the tension in the left wire and T2 be the tension in the right wire. First, sum of forces in the vertical direction: T1 + T2 - Mg - mg = 0. Then, sum of torques about the right end (to eliminate T2): T1*L - Mg*(L/2) - mg*(3L/4) = 0. (The plank's weight acts at L/2 from both ends. The block is at L/4 from the left, so 3L/4 from the right). Divide by L: T1 - Mg/2 - 3mg/4 = 0. Solve for T1: T1 = Mg/2 + 3mg/4.",
     "correct_key": "A",
     "section": "science",
     "skill": "AP Physics 1"
@@ -2778,7 +2778,7 @@
     },
     "answer": "C",
     "difficulty": 7,
-    "explanation": "This problem can be solved using conservation of mechanical energy. At the initial position, the pendulum has potential energy and zero kinetic energy. The height h above the lowest point is L - L*cos(theta) = L*(1 - cos(theta)). So, PE_initial = m*g*h = m*g*L*(1 - cos(theta)). At the lowest point, the potential energy is zero (if we set the reference point there), and the kinetic energy is (1/2)*m*v^2. By conservation of energy, PE_initial = KE_final: m*g*L*(1 - cos(theta)) = (1/2)*m*v^2. Solving for v, we get v^2 = 2*g*L*(1 - cos(theta)), so v = sqrt(2*g*L*(1 - cos(theta))). ",
+    "explanation": "This problem can be solved using conservation of mechanical energy. At the initial position, the pendulum has potential energy and zero kinetic energy. The height h above the lowest point is L - L*cos(theta) = L*(1 - cos(theta)). So, PE_initial = m*g*h = m*g*L*(1 - cos(theta)). At the lowest point, the potential energy is zero (if we set the reference point there), and the kinetic energy is (1/2)*m*v^2. By conservation of energy, PE_initial = KE_final: m*g*L*(1 - cos(theta)) = (1/2)*m*v^2. Solving for v, we get v^2 = 2*g*L*(1 - cos(theta)), so v = sqrt(2*g*L*(1 - cos(theta))).",
     "correct_key": "C",
     "section": "science",
     "skill": "AP Physics 1"
@@ -3546,7 +3546,7 @@
     },
     "answer": "C",
     "difficulty": 8,
-    "explanation": "When the plank is about to tip, the normal force from the left support becomes zero. The pivot point for tipping will be the right support, which is at position L - L/4 = 3L/4 from the left end. Set the sum of torques about this pivot point to zero. The plank's weight (M*g) acts at its center, L/2 from the left end. The person's weight (m*g) acts at position x from the left end. Torque due to M*g: M*g * (3L/4 - L/2) = M*g * (L/4) (clockwise). Torque due to m*g: m*g * (x - 3L/4) (counter-clockwise, to cause tipping). For the plank not to tip, the clockwise torque must be greater than or equal to the counter-clockwise torque. However, when it's about to tip, the left support loses contact, meaning the clockwise stabilizing torque from the plank's weight must balance the counter-clockwise torque from the person's weight. The plank's weight provides a torque of M*g*(L/4) about the right support (3L/4). The person's weight provides a torque of m*g*(x - 3L/4) (counter-clockwise). This reasoning needs re-evaluation. Instead, consider the critical point being when the left support reaction force goes to zero. The sum of torques about the right support (at 3L/4) must be zero. The weight of the plank M*g acts at L/2. The person of mass 'm' is at position 'x'. Torque from plank: M*g * (3L/4 - L/2) = M*g * (L/4). This torque tends to rotate the plank clockwise (pushing down on the left from the pivot). Torque from person: m*g * (x - 3L/4). This torque tends to rotate the plank counter-clockwise (pushing down on the right from the pivot, causing the left end to lift). For tipping, the counter-clockwise torque from the person must cause the plank to lift off the left support. No, this is incorrect. The point of tipping occurs when the normal force at the *left* support becomes zero. The pivot point is then the *right* support. Let's sum torques about the right support at x_R = 3L/4. The weight of the plank M*g acts at L/2. Its torque is M*g * (3L/4 - L/2) = M*g * (L/4) (this torque acts to lift the right side or push down the left, stabilizing the left support). The person's weight m*g acts at 'x'. Its torque is m*g * (x - 3L/4). This torque acts to lift the left side. For the plank to tip, these must be balanced. M*g * (L/4) = m*g * (x - 3L/4). Solving for x: M*L/4 = m*x - m*3L/4. We need to find the maximum x. The question implies the setup allows enough weight from the person to tip the plank. If the person walks to the right, the normal force on the left decreases. The tipping occurs when the normal force at the left support becomes zero. The pivot point for this is the right support (located at 3L/4). The torque due to the plank's weight (M*g) acting at the center (L/2) creates a clockwise torque about the right support: tau_plank = M*g * (3L/4 - L/2) = M*g * (L/4). This torque tends to keep the left end down. The torque due to the person's weight (m*g) at position x creates a counter-clockwise torque about the right support: tau_person = m*g * (x - 3L/4). For the plank to be on the verge of tipping, these torques must balance: m*g * (x - 3L/4) = M*g * (L/4). We need to assume the mass of the person is sufficient. The options are distances along the plank. What if the person was at the extreme right end? x=L. Then m*g*(L - 3L/4) = m*g*(L/4). So, if m=M, the plank would tip by the time the person reaches the end L. The question implies finding a specific point x. Assuming m and M are such that tipping occurs.  No, the most straightforward approach is to realize that the maximum x for the person before tipping is the pivot point itself, or slightly beyond it. The question asks 'how far from the left end can the person walk before the plank tips'. Tipping occurs when the center of mass of the system (plank + person) passes over the support point. The right support is at 3L/4 from the left end. If the person walks past this point, their weight creates a torque that lifts the left side. So, the maximum distance the person can walk from the left end without tipping is essentially the position of the support that acts as a pivot when the other support loses contact. In this case, it's the right support. So x = 3L/4. This happens when the person's position aligns with the secondary support such that any further movement makes the system unstable. This is assuming the person's mass is significant compared to the plank. When the person reaches x = 3L/4, their weight passes through the right support, and their torque about this support becomes zero. If they move further right, their torque will cause the plank to tip over the right support. Thus, the maximum distance is 3L/4.",
+    "explanation": "When the plank is about to tip, the normal force from the left support becomes zero. The pivot point for tipping will be the right support, which is at position L - L/4 = 3L/4 from the left end. Set the sum of torques about this pivot point to zero. The plank's weight (M*g) acts at its center, L/2 from the left end. The person's weight (m*g) acts at position x from the left end. Torque due to M*g: M*g * (3L/4 - L/2) = M*g * (L/4) (clockwise). Torque due to m*g: m*g * (x - 3L/4) (counter-clockwise, to cause tipping). For the plank not to tip, the clockwise torque must be greater than or equal to the counter-clockwise torque. However, when it's about to tip, the left support loses contact, meaning the clockwise stabilizing torque from the plank's weight must balance the counter-clockwise torque from the person's weight. The plank's weight provides a torque of M*g*(L/4) about the right support (3L/4). The person's weight provides a torque of m*g*(x - 3L/4) (counter-clockwise). This reasoning needs re-evaluation. Instead, consider the critical point being when the left support reaction force goes to zero.",
     "correct_key": "C",
     "section": "science",
     "skill": "AP Physics 1"
@@ -3610,7 +3610,7 @@
     },
     "answer": "B",
     "difficulty": 4,
-    "explanation": "Random errors are unpredictable variations in measurements that occur due to factors like human reaction time or fluctuations in environmental conditions. Repeating measurements multiple times and calculating the average helps to minimize the impact of these random fluctuations, as the random errors tend to cancel each other out over many trials. Using a more precise stopwatch (A) would reduce systematic error due to instrumentation, but not necessarily random error from human judgment. Dropping from a greater height (C) would increase the time interval, making timing easier, but doesn't inherently reduce random error in the *act* of timing. Ensuring the same height (D) helps with consistency and reduces systematic error, but not random error in timing.",
+    "explanation": "Random errors are unpredictable variations in measurements that occur due to factors like human reaction time or fluctuations in environmental conditions. Repeating measurements multiple times and calculating the average helps to minimize the impact of these random fluctuations, as the random errors cancel each other out over many trials. Using a more precise stopwatch (A) would reduce systematic error due to instrumentation, but not necessarily random error from human judgment. Dropping from a greater height (C) would increase the time interval, making timing easier, but doesn't inherently reduce random error in the *act* of timing. Ensuring the same height (D) helps with consistency and reduces systematic error, but not random error in timing.",
     "correct_key": "B",
     "section": "science",
     "skill": "AP Physics 1"
@@ -3674,7 +3674,7 @@
     },
     "answer": "A",
     "difficulty": 6,
-    "explanation": "First, we need to calculate the maximum static friction. The normal force is equal to the weight of the block, N = m*g = 5 kg * 9.8 m/s^2 = 49 N. The maximum static friction is F_s_max = mu_s * N.  Assuming the static friction coefficient is at least 0.2 (or we would have kinetic friction), the force of static friction can oppose up to mu_s * N. Since the applied force (10 N) is less than the maximum possible static friction (if mu_s is greater than 10/49 approx 0.2), the block will not move. If we assume the coefficient of *kinetic* friction is 0.2, we calculate kinetic friction force: F_k = mu_k * N = 0.2 * 49 N = 9.8 N. Since the applied force (10 N) is greater than the kinetic friction (9.8 N), the block *would* accelerate if it were already moving. However, the question implies it starts at rest and asks for acceleration. If the static friction coefficient is not given, we assume it's large enough to prevent motion. If we *assume* mu_s is equal to mu_k, the static friction can be up to 9.8N. The applied force is 10N. If mu_s is for instance 0.3, F_s_max = 0.3 * 49 = 14.7N. In this case, static friction would be 10N and acceleration 0. If mu_s is exactly 0.2, then F_s_max = 9.8N, and the applied force of 10N overcomes static friction. Then we would use kinetic friction. However, it's more likely the intent is that static friction prevents motion. Re-evaluating: The question states the coefficient of *kinetic* friction is 0.2. This implies we should consider kinetic friction if the object moves. If the static friction is less than the applied force, it will move. Without mu_s, we assume it's large enough to require calculation. If it *does* move, the net force is F_net = Applied Force - Kinetic Friction = 10 N - (0.2 * 49 N) = 10 N - 9.8 N = 0.2 N. Then acceleration = F_net / m = 0.2 N / 5 kg = 0.04 m/s^2. This is not an option. The most common interpretation when static friction isn't given is that it's sufficient to prevent motion if the applied force is less than kinetic friction, or if the question is poorly phrased and meant to imply static friction is the limiting factor. Given the options, 0 m/s^2 is the most plausible if static friction prevents motion. Let's reconsider if the wording implies that 10 N *starts* the motion. If it starts at rest, static friction must be overcome. If we assume mu_s is at least 0.2, then F_s_max is at least 9.8 N. If mu_s > 0.2, then F_s_max > 9.8 N, and 10 N would overcome it. If mu_s <= 0.2, then it might not move. If it doesn't move, acceleration is 0. This problem is ambiguous without mu_s. However, standard AP questions often imply that if kinetic friction is given, and the applied force is not significantly larger than the *potential* kinetic friction, static friction might be the reason it doesn't move. Let's assume the typical scenario where static friction coefficient is equal to or greater than kinetic friction coefficient. If mu_s >= 0.2, then F_s_max >= 9.8 N. If F_applied (10 N) > F_s_max, then it accelerates. If F_applied (10 N) <= F_s_max, it doesn't. If we assume mu_s is *exactly* 0.2, then F_s_max is 9.8 N. Since 10 N > 9.8 N, it *should* move. However, option A is 0 m/s^2. This suggests static friction is the controlling factor and is larger than 10 N. This is a common trick if mu_s is not given. The question is likely designed such that the static friction is large enough to prevent motion. Therefore, acceleration is 0 m/s^2.",
+    "explanation": "First, we need to calculate the maximum static friction. The normal force is equal to the weight of the block, N = m*g = 5 kg * 9.8 m/s^2 = 49 N. The maximum static friction is F_s_max = mu_s * N. Assuming the static friction coefficient is at least 0.2 (or we would have kinetic friction), the force of static friction can oppose up to mu_s * N. Since the applied force (10 N) is less than the maximum possible static friction (if mu_s is greater than 10/49 approx 0.2), the block will not move. If we assume the coefficient of *kinetic* friction is 0.2, we calculate kinetic friction force: F_k = mu_k * N = 0.2 * 49 N = 9.8 N. Since the applied force (10 N) is greater than the kinetic friction (9.8 N), the block *would* accelerate if it were already moving. However, the question implies it starts at rest and asks for acceleration. If the static friction coefficient is not given, we assume it's large enough to prevent motion. If we *assume* mu_s is equal to mu_k, the static friction can be up to 9.8N. The applied force is 10N.",
     "correct_key": "A",
     "section": "science",
     "skill": "AP Physics 1"
@@ -3770,7 +3770,7 @@
     },
     "answer": "D",
     "difficulty": 7,
-    "explanation": "This problem involves impulse, which is equal to the change in momentum. Impulse (J) = F_avg * delta_t. Change in momentum (delta_p) = m * delta_v = m * (v_f - v_i).  Assume the ball was initially moving towards the wall with a velocity of +10 m/s (before collision). So, v_i = 10 m/s and v_f = -10 m/s. The mass m = 0.5 kg. delta_p = 0.5 kg * (-10 m/s - 10 m/s) = 0.5 kg * (-20 m/s) = -10 kg*m/s.  The impulse is J = delta_p = -10 kg*m/s.  We are given delta_t = 0.01 s.  F_avg * delta_t = delta_p. F_avg * 0.01 s = -10 kg*m/s. F_avg = -10 kg*m/s / 0.01 s = -1000 N. The magnitude of the average force is 1000 N.",
+    "explanation": "This problem involves impulse, which is equal to the change in momentum. Impulse (J) = F_avg * delta_t. Change in momentum (delta_p) = m * delta_v = m * (v_f - v_i). Assume the ball was initially moving towards the wall with a velocity of +10 m/s (before collision). So, v_i = 10 m/s and v_f = -10 m/s. The mass m = 0.5 kg. delta_p = 0.5 kg * (-10 m/s - 10 m/s) = 0.5 kg * (-20 m/s) = -10 kg*m/s. The impulse is J = delta_p = -10 kg*m/s. We are given delta_t = 0.01 s. F_avg * delta_t = delta_p. F_avg * 0.01 s = -10 kg*m/s. F_avg = -10 kg*m/s / 0.01 s = -1000 N. The magnitude of the average force is 1000 N.",
     "correct_key": "D",
     "section": "science",
     "skill": "AP Physics 1"
@@ -3834,7 +3834,7 @@
     },
     "answer": "D",
     "difficulty": 7,
-    "explanation": "The scale measures the normal force exerted on the person. Let N be the normal force and g = 9.8 m/s^2. The forces acting on the person are gravity (downward, F_g = m*g) and the normal force (upward, N). According to Newton's Second Law, the net force is F_net = N - F_g = m*a. Since the elevator is accelerating upward, a = 2 m/s^2.  N - (60 kg * 9.8 m/s^2) = 60 kg * 2 m/s^2. N - 588 N = 120 N. N = 588 N + 120 N = 708 N.",
+    "explanation": "The scale measures the normal force exerted on the person. Let N be the normal force and g = 9.8 m/s^2. The forces acting on the person are gravity (downward, F_g = m*g) and the normal force (upward, N). According to Newton's Second Law, the net force is F_net = N - F_g = m*a. Since the elevator is accelerating upward, a = 2 m/s^2. N - (60 kg * 9.8 m/s^2) = 60 kg * 2 m/s^2. N - 588 N = 120 N. N = 588 N + 120 N = 708 N.",
     "correct_key": "D",
     "section": "science",
     "skill": "AP Physics 1"
@@ -3914,7 +3914,7 @@
     },
     "answer": "B",
     "difficulty": 5,
-    "explanation": "Momentum (p) is defined as the product of mass (m) and velocity (v): p = m*v.  Given m = 2 kg and v = +5 m/s (assuming right is positive). So, p = 2 kg * 5 m/s = 10 kg*m/s. The direction is to the right.",
+    "explanation": "Momentum (p) is defined as the product of mass (m) and velocity (v): p = m*v. Given m = 2 kg and v = +5 m/s (assuming right is positive). So, p = 2 kg * 5 m/s = 10 kg*m/s. The direction is to the right.",
     "correct_key": "B",
     "section": "science",
     "skill": "AP Physics 1"
@@ -3930,7 +3930,7 @@
     },
     "answer": "B",
     "difficulty": 5,
-    "explanation": "The speed of a wave (v) is related to its frequency (f) and wavelength (lambda) by the equation v = f * lambda.  Given f = 10 Hz and lambda = 0.5 m.  v = 10 Hz * 0.5 m = 5 m/s.",
+    "explanation": "The speed of a wave (v) is related to its frequency (f) and wavelength (lambda) by the equation v = f * lambda. Given f = 10 Hz and lambda = 0.5 m. v = 10 Hz * 0.5 m = 5 m/s.",
     "correct_key": "B",
     "section": "science",
     "skill": "AP Physics 1"

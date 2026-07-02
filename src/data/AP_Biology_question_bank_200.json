@@ -1,7 +1,7 @@
 [
   {
     "id": "AP_Biology_115",
-    "question": "A population of fish in a lake experiences a sudden, drastic decrease in size due to a toxic algal bloom. This event is likely to cause:",
+    "question": "A population of fish in a lake experiences a sudden, drastic decrease in size due to a toxic algal bloom. This event is to cause:",
     "choices": {
       "A": "Increased gene flow",
       "B": "Stabilizing selection",
@@ -10,7 +10,7 @@
     },
     "answer": "C",
     "difficulty": 5,
-    "explanation": "A genetic bottleneck occurs when a population's size is severely reduced, often by a natural disaster. This reduction leads to a loss of genetic variation as the surviving individuals may not represent the original gene pool. Gene flow (A) would typically decrease or stop. Stabilizing (B) and directional (D) selection might occur among survivors, but the primary consequence of the drastic population reduction itself is a bottleneck.",
+    "explanation": "A genetic bottleneck occurs when a population's size is severely reduced, often by a natural disaster. This reduction leads to a loss of genetic variation as the surviving individuals not represent the original gene pool. Gene flow (A) would typically decrease or stop. Stabilizing (B) and directional (D) selection occur among survivors, but the primary consequence of the drastic population reduction itself is a bottleneck.",
     "correct_key": "C",
     "section": "science",
     "skill": "AP Biology"
@@ -26,7 +26,7 @@
     },
     "answer": "C",
     "difficulty": 4,
-    "explanation": "A thick, waxy cuticle on leaves is a common adaptation in desert plants to minimize transpiration (water loss) through the leaf surface. Large leaves increase surface area for water loss, shallow roots might dry out quickly, and open stomata during the day lead to significant water loss.",
+    "explanation": "A thick, waxy cuticle on leaves is a common adaptation in desert plants to minimize transpiration (water loss) through the leaf surface. Large leaves increase surface area for water loss, shallow roots dry out quickly, and open stomata during the day lead to significant water loss.",
     "correct_key": "C",
     "section": "science",
     "skill": "AP Biology"
@@ -49,7 +49,7 @@
   },
   {
     "id": "AP_Biology_73",
-    "question": "A scientist is investigating the role of a specific protein in cell signaling. When this protein is knocked out (rendered non-functional), a cell no longer responds to a particular hormone. The hormone binds to a receptor on the cell surface, but the downstream signaling cascade is interrupted. This protein is most likely involved in:",
+    "question": "A scientist is investigating the role of a specific protein in cell signaling. When this protein is knocked out (rendered non-functional), a cell no longer responds to a particular hormone. The hormone binds to a receptor on the cell surface, but the downstream signaling cascade is interrupted. This protein is most involved in:",
     "choices": {
       "A": "Signal transduction.",
       "B": "DNA replication.",
@@ -353,7 +353,7 @@
   },
   {
     "id": "AP_Biology_60",
-    "question": "A scientist is studying a population of insects. They observe that individuals in a population that are larger in size tend to survive predation better than smaller individuals. This scenario describes which type of natural selection?",
+    "question": "A scientist is studying a population of insects. They observe that individuals in a population that are larger in size survive predation better than smaller individuals. This scenario describes which type of natural selection?",
     "choices": {
       "A": "Disruptive selection",
       "B": "Stabilizing selection",
@@ -401,7 +401,7 @@
   },
   {
     "id": "AP_Biology_167",
-    "question": "A scientist is studying a newly discovered organism. The organism's cells have chloroplasts, a cell wall made of cellulose, and store energy as starch. This organism is MOST likely:",
+    "question": "A scientist is studying a newly discovered organism. The organism's cells have chloroplasts, a cell wall made of cellulose, and store energy as starch. This organism is MOST:",
     "choices": {
       "A": "A fungus",
       "B": "A bacterium",
@@ -465,7 +465,7 @@
   },
   {
     "id": "AP_Biology_109",
-    "question": "A scientist observes that a population of insects living in a tropical environment has evolved brightly colored wings, making them more conspicuous to predators. However, the population size remains stable. Which of the following is the most likely explanation for this observation?",
+    "question": "A scientist observes that a population of insects living in a tropical environment has evolved brightly colored wings, making them more conspicuous to predators. However, the population size remains stable. Which of the following is the most explanation for this observation?",
     "choices": {
       "A": "The bright coloration is aposematic, warning predators of toxicity.",
       "B": "The bright coloration is sexually selected, increasing mating success.",
@@ -474,7 +474,7 @@
     },
     "answer": "A",
     "difficulty": 7,
-    "explanation": "Aposematic coloration (warning coloration) is an evolutionary adaptation where a species possesses a pattern or color that warns potential predators of its unpalatable taste or toxicity. The bright colors serve as a signal, and if effective, can maintain the population despite conspicuousness. While sexual selection (B) could lead to bright colors, it doesn't inherently explain why predators *don't* decimate the population. High mutation rates (C) are unlikely to be the sole driver of a stable population with a conspicuous trait. Migration (D) doesn't explain the *evolution* of the trait within the population.",
+    "explanation": "Aposematic coloration (warning coloration) is an evolutionary adaptation where a species possesses a pattern or color that warns potential predators of its unpalatable taste or toxicity. The bright colors serve as a signal, and if effective, can maintain the population despite conspicuousness. While sexual selection (B) lead to bright colors, it doesn't inherently explain why predators *don't* decimate the population. High mutation rates (C) are unlikely to be the sole driver of a stable population with a conspicuous trait. Migration (D) doesn't explain the *evolution* of the trait within the population.",
     "correct_key": "A",
     "section": "science",
     "skill": "AP Biology"
@@ -497,7 +497,7 @@
   },
   {
     "id": "AP_Biology_154",
-    "question": "A plant cell is placed in a hypertonic solution. What is the MOST likely effect on the cell?",
+    "question": "A plant cell is placed in a hypertonic solution. What is the MOST effect on the cell?",
     "choices": {
       "A": "The cell will swell and burst.",
       "B": "The cell will experience plasmolysis.",
@@ -529,7 +529,7 @@
   },
   {
     "id": "AP_Biology_31",
-    "question": "Consider an ecosystem where a new invasive predator is introduced. Which of the following is the most likely immediate consequence for the native prey populations?",
+    "question": "Consider an ecosystem where a new invasive predator is introduced. Which of the following is the most immediate consequence for the native prey populations?",
     "choices": {
       "A": "Increased birth rates due to reduced competition.",
       "B": "Decreased population sizes due to increased predation.",
@@ -538,7 +538,7 @@
     },
     "answer": "B",
     "difficulty": 4,
-    "explanation": "The most immediate and direct consequence of introducing a novel predator to native prey is increased mortality — prey populations decline because they lack evolved defenses against an unfamiliar predator. This is answer B. While behavioral changes (D) may also occur quickly, behavior is a response to the threat, not the population-level consequence. Answer A is incorrect — reduced competition is not the immediate effect of predator introduction. Answer C (increased genetic diversity) could occur over many generations through natural selection, but is not an immediate outcome.",
+    "explanation": "The most immediate and direct consequence of introducing a novel predator to native prey is increased mortality — prey populations decline because they lack evolved defenses against an unfamiliar predator. This is answer B. While behavioral changes (D) also occur quickly, behavior is a response to the threat, not the population-level consequence. Answer A is incorrect — reduced competition is not the immediate effect of predator introduction. Answer C (increased genetic diversity) occur over many generations through natural selection, but is not an immediate outcome.",
     "correct_key": "B",
     "section": "science",
     "skill": "AP Biology"
@@ -593,7 +593,7 @@
   },
   {
     "id": "AP_Biology_181",
-    "question": "A researcher is studying a gene in eukaryotes that codes for a protein involved in DNA repair. Which of the following best describes the likely location of the transcription of this gene?",
+    "question": "A researcher is studying a gene in eukaryotes that codes for a protein involved in DNA repair. Which of the following best describes the location of the transcription of this gene?",
     "choices": {
       "A": "In the cytoplasm, at the ribosomes.",
       "B": "In the nucleus, where the DNA is located.",
@@ -762,7 +762,7 @@
     },
     "answer": "A",
     "difficulty": 7,
-    "explanation": "The hurricane acts as a strong selective pressure and also causes a population bottleneck. A smaller population size makes genetic drift (random fluctuations in allele frequencies) a more significant evolutionary force. Survival and reproduction become more influenced by chance events rather than solely by adaptive traits. While other factors like gene flow could theoretically occur, the immediate and most likely consequence of such a drastic event on a reduced population is increased genetic drift.",
+    "explanation": "The hurricane acts as a strong selective pressure and also causes a population bottleneck. A smaller population size makes genetic drift (random fluctuations in allele frequencies) a more significant evolutionary force. Survival and reproduction become more influenced by chance events rather than solely by adaptive traits. While other factors like gene flow theoretically occur, the immediate and most consequence of such a drastic event on a reduced population is increased genetic drift.",
     "correct_key": "A",
     "section": "science",
     "skill": "AP Biology"
@@ -785,7 +785,7 @@
   },
   {
     "id": "AP_Biology_227",
-    "question": "A population of deer has a genetic variation for antler size. A severe drought significantly reduces the availability of nutrient-rich vegetation. Which of the following is the most likely evolutionary outcome for this deer population after several generations?",
+    "question": "A population of deer has a genetic variation for antler size. A severe drought significantly reduces the availability of nutrient-rich vegetation. Which of the following is the most evolutionary outcome for this deer population after several generations?",
     "choices": {
       "A": "A decrease in the average antler size due to selective pressure favoring smaller antlers.",
       "B": "An increase in the average antler size as deer with larger antlers are better able to compete for scarce resources.",
@@ -794,7 +794,7 @@
     },
     "answer": "A",
     "difficulty": 6,
-    "explanation": "The drought reduces nutrient availability. Deer with smaller antlers likely require fewer nutrients for growth and maintenance, making them better able to survive and reproduce under these conditions. This would lead to an increase in the frequency of alleles for smaller antlers in the population.",
+    "explanation": "The drought reduces nutrient availability. Deer with smaller antlers require fewer nutrients for growth and maintenance, making them better able to survive and reproduce under these conditions. This would lead to an increase in the frequency of alleles for smaller antlers in the population.",
     "correct_key": "A",
     "section": "science",
     "skill": "AP Biology"
@@ -826,7 +826,7 @@
     },
     "answer": "D",
     "difficulty": 6,
-    "explanation": "A loss-of-function mutation results in a gene product (in this case, an enzyme) having reduced or no function. The inability to bind to the substrate directly impairs the enzyme's catalytic activity. While this might be caused by a missense mutation (changing an amino acid), the consequence described is a loss of function.",
+    "explanation": "A loss-of-function mutation results in a gene product (in this case, an enzyme) having reduced or no function. The inability to bind to the substrate directly impairs the enzyme's catalytic activity. While this be caused by a missense mutation (changing an amino acid), the consequence described is a loss of function.",
     "correct_key": "D",
     "section": "science",
     "skill": "AP Biology"
@@ -858,7 +858,7 @@
     },
     "answer": "C",
     "difficulty": 7,
-    "explanation": "Epigenetic changes can influence which genes are turned on or off and can sometimes be passed down to offspring. This represents a mechanism of variation that is inheritable, though it does not involve changes to the DNA sequence itself.",
+    "explanation": "Epigenetic changes can influence which genes are turned on or off and be passed down to offspring. This represents a mechanism of variation that is inheritable, though it does not involve changes to the DNA sequence itself.",
     "correct_key": "C",
     "section": "science",
     "skill": "AP Biology"
@@ -881,7 +881,7 @@
   },
   {
     "id": "AP_Biology_260",
-    "question": "A scientist observes a mutation that causes a single amino acid substitution in a protein. This type of mutation is most likely a result of:",
+    "question": "A scientist observes a mutation that causes a single amino acid substitution in a protein. This type of mutation is most a result of:",
     "choices": {
       "A": "A frameshift mutation.",
       "B": "A point mutation, specifically a silent or missense mutation.",
@@ -897,7 +897,7 @@
   },
   {
     "id": "AP_Biology_271",
-    "question": "A mutation occurs in the gene that codes for the enzyme RuBisCO. This mutation is most likely to affect which process?",
+    "question": "A mutation occurs in the gene that codes for the enzyme RuBisCO. This mutation is most to affect which process?",
     "choices": {
       "A": "Electron transport in cellular respiration.",
       "B": "Photolysis of water during the light-dependent reactions.",
@@ -945,7 +945,7 @@
   },
   {
     "id": "AP_Biology_168",
-    "question": "In a hypothetical ecosystem, a population of rabbits is preyed upon by foxes. If the rabbit population increases significantly, what is the MOST likely immediate consequence for the fox population?",
+    "question": "In a hypothetical ecosystem, a population of rabbits is preyed upon by foxes. If the rabbit population increases significantly, what is the MOST immediate consequence for the fox population?",
     "choices": {
       "A": "The fox population will decrease due to increased predation success.",
       "B": "The fox population will increase due to a greater food supply.",
@@ -961,7 +961,7 @@
   },
   {
     "id": "AP_Biology_33",
-    "question": "A researcher is investigating enzyme activity at different temperatures. They observe that enzyme activity increases up to a certain temperature and then rapidly decreases. This pattern is most likely due to:",
+    "question": "A researcher is investigating enzyme activity at different temperatures. They observe that enzyme activity increases up to a certain temperature and then rapidly decreases. This pattern is most due to:",
     "choices": {
       "A": "Increased substrate concentration at higher temperatures.",
       "B": "Denaturation of the enzyme at higher temperatures.",
@@ -977,7 +977,7 @@
   },
   {
     "id": "AP_Biology_126",
-    "question": "A biologist is studying a population of rabbits. They observe that over several generations, the average fur color of the rabbits shifts from light brown to dark brown. This change is most likely due to:",
+    "question": "A biologist is studying a population of rabbits. They observe that over several generations, the average fur color of the rabbits shifts from light brown to dark brown. This change is most due to:",
     "choices": {
       "A": "Genetic drift in a small population",
       "B": "Natural selection favoring darker fur in their environment",
@@ -993,7 +993,7 @@
   },
   {
     "id": "AP_Biology_186",
-    "question": "A population of deer is isolated on an island. Over time, the population size increases significantly. If a genetic bottleneck event occurs due to a severe storm that drastically reduces the population, what is the most likely consequence for the genetic diversity of the remaining population?",
+    "question": "A population of deer is isolated on an island. Over time, the population size increases significantly. If a genetic bottleneck event occurs due to a severe storm that drastically reduces the population, what is the most consequence for the genetic diversity of the remaining population?",
     "choices": {
       "A": "Genetic diversity will increase as new mutations arise.",
       "B": "Genetic diversity will likely decrease, with a potentially different allele frequency.",
@@ -1002,7 +1002,7 @@
     },
     "answer": "B",
     "difficulty": 7,
-    "explanation": "A genetic bottleneck significantly reduces population size, leading to a loss of genetic variation. The surviving individuals may not represent the original genetic diversity, and allele frequencies can shift drastically.",
+    "explanation": "A genetic bottleneck significantly reduces population size, leading to a loss of genetic variation. The surviving individuals not represent the original genetic diversity, and allele frequencies can shift drastically.",
     "correct_key": "B",
     "section": "science",
     "skill": "AP Biology"
@@ -1073,7 +1073,7 @@
   },
   {
     "id": "AP_Biology_107",
-    "question": "A cell has the following molecules: DNA, ribosomes, a plasma membrane, and mitochondria. Based on this information, the cell is most likely:",
+    "question": "A cell has the following molecules: DNA, ribosomes, a plasma membrane, and mitochondria. Based on this information, the cell is most:",
     "choices": {
       "A": "A bacterium",
       "B": "A virus",
@@ -1082,14 +1082,14 @@
     },
     "answer": "D",
     "difficulty": 4,
-    "explanation": "The presence of mitochondria indicates the cell is eukaryotic. Bacteria (A) are prokaryotic and lack mitochondria and a nucleus (where DNA is typically housed in eukaryotes). Viruses (B) are not cells and possess either DNA or RNA, but not both, and lack cellular components like ribosomes. Fungal cells (C) are eukaryotic and have mitochondria, ribosomes, and a plasma membrane, but the question specifically lists DNA suggesting a nucleus or organized genetic material typical of eukaryotes. While fungi fit, the combination and the explicit mention of 'DNA' strongly points towards a typical eukaryotic cell structure that includes a nucleus. If we assume 'DNA' implies the typical eukaryotic organization within a nucleus, then plant and fungal cells fit. However, the presence of mitochondria is a defining feature of eukaryotic cells. Bacteria lack mitochondria. Viruses are not cells. Between plant and fungal cells, both are eukaryotic. Usually, problems like this give a more distinguishing feature. Let's re-read. DNA, ribosomes, plasma membrane, mitochondria. All are present in plant cells. All are present in fungal cells. Are there any subtle hints? No. However, 'DNA' usually implies the organized genome in eukaryotes. If the question was 'DNA in a nucleus', it would be clearer. Let's assume it's a general representative eukaryotic cell. Both B and C are plausible. Let's consider typical textbook examples. Often, plant cells are used to illustrate eukaryotic structure. Is there anything inherently more 'plant-like' that could be implied? No. Wait, if the question was meant to be broader, it could be any eukaryote. But given 'B' and 'C' as options, and only one correct answer... Let's reconsider bacteria. Bacteria have DNA and ribosomes and a plasma membrane, but *lack* mitochondria. Viruses are acellular. So it must be a eukaryote. Both B and C are eukaryotes. Without a cell wall (specific type), chloroplasts, or a large central vacuole (plant), or chitin cell walls (fungi), it's hard to distinguish. Perhaps the question is flawed or relies on a common assumption. Let's assume the question intends to test basic eukaryotic organelle presence. Both B and C fit. If forced to choose, and assuming a typical introductory biology context, plant cells are frequently used examples of eukaryotic cells with mitochondria. Let's stick with B.",
+    "explanation": "The presence of mitochondria indicates the cell is eukaryotic. Bacteria (A) are prokaryotic and lack mitochondria and a nucleus (where DNA is typically housed in eukaryotes). Viruses (B) are not cells and possess either DNA or RNA, but not both, and lack cellular components like ribosomes. Fungal cells (C) are eukaryotic and have mitochondria, ribosomes, and a plasma membrane, but the question specifically lists DNA suggesting a nucleus or organized genetic material typical of eukaryotes. While fungi fit, the combination and the explicit mention of 'DNA' strongly points towards a typical eukaryotic cell structure that includes a nucleus. If we assume 'DNA' implies the typical eukaryotic organization within a nucleus, then plant and fungal cells fit. However, the presence of mitochondria is a defining feature of eukaryotic cells. Bacteria lack mitochondria. Viruses are not cells. Between plant and fungal cells, both are eukaryotic. Usually, problems like this give a more distinguishing feature. Let's re-read. DNA, ribosomes, plasma membrane, mitochondria. All are present in plant cells. All are present in fungal cells. Are there any subtle hints? No. However, 'DNA' usually implies the organized genome in eukaryotes. If the question was 'DNA in a nucleus', it would be clearer.",
     "correct_key": "D",
     "section": "science",
     "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_295",
-    "question": "A gene mutation occurs in a somatic cell of an animal. Which of the following statements about the consequence of this mutation is most likely true?",
+    "question": "A gene mutation occurs in a somatic cell of an animal. Which of the following statements about the consequence of this mutation is most true?",
     "choices": {
       "A": "The mutation will be passed on to the organism's offspring.",
       "B": "The mutation will affect all cells in the organism.",
@@ -1114,7 +1114,7 @@
     },
     "answer": "B",
     "difficulty": 6,
-    "explanation": "A population bottleneck occurs when a population's size is severely reduced, often by a natural disaster or disease. The surviving individuals may not be representative of the original population's genetic diversity, leading to reduced allele frequencies and potential fixation of certain alleles by chance.",
+    "explanation": "A population bottleneck occurs when a population's size is severely reduced, often by a natural disaster or disease. The surviving individuals not be representative of the original population's genetic diversity, leading to reduced allele frequencies and potential fixation of certain alleles by chance.",
     "correct_key": "B",
     "section": "science",
     "skill": "AP Biology"
@@ -1137,7 +1137,7 @@
   },
   {
     "id": "AP_Biology_192",
-    "question": "Which of the following is the most likely consequence of a mutation in a gene that codes for a protein involved in the electron transport chain?",
+    "question": "Which of the following is the most consequence of a mutation in a gene that codes for a protein involved in the electron transport chain?",
     "choices": {
       "A": "An increase in ATP production during cellular respiration.",
       "B": "A decrease in the production of NADH.",
@@ -1201,7 +1201,7 @@
   },
   {
     "id": "AP_Biology_53",
-    "question": "A researcher finds a new species of deep-sea hydrothermal vent organism that utilizes chemosynthesis. This organism likely obtains energy by:",
+    "question": "A researcher finds a new species of deep-sea hydrothermal vent organism that utilizes chemosynthesis. This organism obtains energy by:",
     "choices": {
       "A": "Absorbing photons from sunlight",
       "B": "Oxidizing water molecules",
@@ -1281,7 +1281,7 @@
   },
   {
     "id": "AP_Biology_228",
-    "question": "Consider a biological system where a signaling molecule binds to a receptor on a cell surface. This binding event initiates a cascade of protein phosphorylations. If a phosphatase enzyme is introduced that dephosphorylates all proteins in the cascade, what would be the most likely effect on the cell's response?",
+    "question": "Consider a biological system where a signaling molecule binds to a receptor on a cell surface. This binding event initiates a cascade of protein phosphorylations. If a phosphatase enzyme is introduced that dephosphorylates all proteins in the cascade, what would be the most effect on the cell's response?",
     "choices": {
       "A": "The cell's response will be amplified due to the continuous presence of the signaling molecule.",
       "B": "The cell's response will be terminated or significantly reduced.",
@@ -1329,7 +1329,7 @@
   },
   {
     "id": "AP_Biology_121",
-    "question": "A scientist is studying two species of finches on separate islands. Species A has a varied diet and an intermediate beak shape. Species B primarily eats small seeds and has a small, pointed beak. If the islands are physically connected by a land bridge, leading to increased interaction and potential interbreeding between the populations, which evolutionary mechanism is most likely to be impacted?",
+    "question": "A scientist is studying two species of finches on separate islands. Species A has a varied diet and an intermediate beak shape. Species B primarily eats small seeds and has a small, pointed beak. If the islands are physically connected by a land bridge, leading to increased interaction and potential interbreeding between the populations, which evolutionary mechanism is most to be impacted?",
     "choices": {
       "A": "Mutation",
       "B": "Genetic drift",
@@ -1338,7 +1338,7 @@
     },
     "answer": "C",
     "difficulty": 6,
-    "explanation": "The formation of a land bridge allowing interaction and potential interbreeding between populations directly facilitates the movement of individuals and their genes between the populations. This movement of alleles is known as gene flow. While natural selection (D) would continue to act on the different beak shapes and diets, and genetic drift (B) might still occur, the most direct and immediate impact of the land bridge allowing interaction is on gene flow.",
+    "explanation": "The formation of a land bridge allowing interaction and potential interbreeding between populations directly facilitates the movement of individuals and their genes between the populations. This movement of alleles is known as gene flow. While natural selection (D) would continue to act on the different beak shapes and diets, and genetic drift (B) still occur, the most direct and immediate impact of the land bridge allowing interaction is on gene flow.",
     "correct_key": "C",
     "section": "science",
     "skill": "AP Biology"
@@ -1393,7 +1393,7 @@
   },
   {
     "id": "AP_Biology_236",
-    "question": "Consider a plant cell that has lost turgor pressure. Which of the following conditions is most likely responsible?",
+    "question": "Consider a plant cell that has lost turgor pressure. Which of the following conditions is most responsible?",
     "choices": {
       "A": "The cell is placed in a hypotonic solution.",
       "B": "The cell is placed in a hypertonic solution.",
@@ -1473,7 +1473,7 @@
   },
   {
     "id": "AP_Biology_276",
-    "question": "In a population of rabbits, individuals with longer hind legs are better able to escape predators. Over many generations, which of the following would most likely occur due to natural selection?",
+    "question": "In a population of rabbits, individuals with longer hind legs are better able to escape predators. Over many generations, which of the following would most occur due to natural selection?",
     "choices": {
       "A": "The average hind leg length of the rabbit population will decrease.",
       "B": "The frequency of alleles conferring longer hind legs will increase.",
@@ -1569,7 +1569,7 @@
   },
   {
     "id": "AP_Biology_113",
-    "question": "Imagine a population of rabbits introduced to a new island with no natural predators. Over several generations, the average body size of the rabbits increases significantly. This evolutionary trend is most likely driven by:",
+    "question": "Imagine a population of rabbits introduced to a new island with no natural predators. Over several generations, the average body size of the rabbits increases significantly. This evolutionary trend is most driven by:",
     "choices": {
       "A": "Decreased mutation rate",
       "B": "Stabilizing selection",
@@ -1649,7 +1649,7 @@
   },
   {
     "id": "AP_Biology_28",
-    "question": "A gene mutation results in a premature stop codon in the mRNA sequence. This will most likely lead to:",
+    "question": "A gene mutation results in a premature stop codon in the mRNA sequence. This will most lead to:",
     "choices": {
       "A": "A longer polypeptide chain.",
       "B": "A polypeptide chain with an altered amino acid sequence.",
@@ -1713,7 +1713,7 @@
   },
   {
     "id": "AP_Biology_164",
-    "question": "A mutation occurs that causes a gene to produce a non-functional protein. This type of mutation is MOST likely:",
+    "question": "A mutation occurs that causes a gene to produce a non-functional protein. This type of mutation is MOST:",
     "choices": {
       "A": "A frameshift mutation",
       "B": "A silent mutation",
@@ -1722,7 +1722,7 @@
     },
     "answer": "A",
     "difficulty": 8,
-    "explanation": "Frameshift mutations, caused by insertions or deletions of nucleotides not in multiples of three, drastically alter the reading frame of the mRNA, usually leading to a completely non-functional protein. Silent and synonymous mutations typically do not change the amino acid sequence, and some missense mutations may not significantly impair protein function.",
+    "explanation": "Frameshift mutations, caused by insertions or deletions of nucleotides not in multiples of three, drastically alter the reading frame of the mRNA, usually leading to a completely non-functional protein. Silent and synonymous mutations typically do not change the amino acid sequence, and some missense mutations not significantly impair protein function.",
     "correct_key": "A",
     "section": "science",
     "skill": "AP Biology"
@@ -1761,7 +1761,7 @@
   },
   {
     "id": "AP_Biology_239",
-    "question": "A population of birds exhibits variation in beak size. Birds with intermediate beak sizes are more likely to survive and reproduce than birds with very small or very large beaks. This is an example of:",
+    "question": "A population of birds exhibits variation in beak size. Birds with intermediate beak sizes are more to survive and reproduce than birds with very small or very large beaks. This is an example of:",
     "choices": {
       "A": "Stabilizing selection",
       "B": "Directional selection",
@@ -1873,7 +1873,7 @@
   },
   {
     "id": "AP_Biology_119",
-    "question": "A population of mice lives in a field with varying seed types. Some mice have cheek pouches for storing seeds, while others do not. Mice with cheek pouches are more successful at gathering and storing seeds, especially during times of scarcity. If this trait is heritable, it is likely that over time, the frequency of the allele for having cheek pouches will:",
+    "question": "A population of mice lives in a field with varying seed types. Some mice have cheek pouches for storing seeds, while others do not. Mice with cheek pouches are more successful at gathering and storing seeds, especially during times of scarcity. If this trait is heritable, it is that over time, the frequency of the allele for having cheek pouches will:",
     "choices": {
       "A": "Decrease due to genetic drift",
       "B": "Decrease due to gene flow from predator populations",
@@ -1882,7 +1882,7 @@
     },
     "answer": "D",
     "difficulty": 5,
-    "explanation": "The mice with cheek pouches have a selective advantage because they are more successful at foraging and storing food, which likely leads to higher survival and reproduction rates. This differential survival and reproduction based on a heritable trait is the definition of natural selection, which would cause the frequency of the advantageous allele (for cheek pouches) to increase in the population.",
+    "explanation": "The mice with cheek pouches have a selective advantage because they are more successful at foraging and storing food, which leads to higher survival and reproduction rates. This differential survival and reproduction based on a heritable trait is the definition of natural selection, which would cause the frequency of the advantageous allele (for cheek pouches) to increase in the population.",
     "correct_key": "D",
     "section": "science",
     "skill": "AP Biology"
@@ -2042,7 +2042,7 @@
     },
     "answer": "B",
     "difficulty": 7,
-    "explanation": "Glycolysis is the first stage of cellular respiration, breaking down glucose into pyruvate and yielding a small amount of ATP. If the enzyme is non-functional, glycolysis cannot proceed efficiently, leading to a significant decrease in ATP production at this initial step, even if subsequent aerobic pathways are intact. While pyruvate might accumulate and oxygen consumption might be affected indirectly, the most direct and immediate consequence is the failure of glycolysis to produce its ATP yield.",
+    "explanation": "Glycolysis is the first stage of cellular respiration, breaking down glucose into pyruvate and yielding a small amount of ATP. If the enzyme is non-functional, glycolysis cannot proceed efficiently, leading to a significant decrease in ATP production at this initial step, even if subsequent aerobic pathways are intact. While pyruvate accumulate and oxygen consumption be affected indirectly, the most direct and immediate consequence is the failure of glycolysis to produce its ATP yield.",
     "correct_key": "B",
     "section": "science",
     "skill": "AP Biology"
@@ -2097,7 +2097,7 @@
   },
   {
     "id": "AP_Biology_50",
-    "question": "Consider a bacterial operon that controls the synthesis of enzymes for a metabolic pathway. If the end product of this pathway is present in high concentrations, what is the most likely regulatory mechanism that would be active?",
+    "question": "Consider a bacterial operon that controls the synthesis of enzymes for a metabolic pathway. If the end product of this pathway is present in high concentrations, what is the most regulatory mechanism that would be active?",
     "choices": {
       "A": "Inducible operon, with the end product acting as an inducer",
       "B": "Repressible operon, with the end product acting as a corepressor",
@@ -2497,7 +2497,7 @@
   },
   {
     "id": "AP_Biology_68",
-    "question": "In a predator-prey relationship, such as a hawk and a mouse population, what is a likely outcome of strong selective pressure from the hawks on the mouse population?",
+    "question": "In a predator-prey relationship, such as a hawk and a mouse population, what is a outcome of strong selective pressure from the hawks on the mouse population?",
     "choices": {
       "A": "The mouse population will likely evolve to become more brightly colored.",
       "B": "The hunting efficiency of hawks will decrease.",
@@ -2506,7 +2506,7 @@
     },
     "answer": "C",
     "difficulty": 6,
-    "explanation": "This is an example of coevolution and natural selection. If hawks prey on mice, mice with advantageous traits (e.g., better camouflage, faster speed, keener senses) will be more likely to survive and reproduce, passing those traits to their offspring. Over time, this selective pressure (predation) will lead to the evolution of traits in the mouse population that enhance their survival.",
+    "explanation": "This is an example of coevolution and natural selection. If hawks prey on mice, mice with advantageous traits (e.g., better camouflage, faster speed, keener senses) will be more to survive and reproduce, passing those traits to their offspring. Over time, this selective pressure (predation) will lead to the evolution of traits in the mouse population that enhance their survival.",
     "correct_key": "C",
     "section": "science",
     "skill": "AP Biology"
@@ -2657,7 +2657,7 @@
   },
   {
     "id": "AP_Biology_230",
-    "question": "A researcher is studying DNA replication in a bacterial cell. They observe that a particular enzyme is responsible for unwinding the DNA double helix, allowing the replication fork to proceed. Which enzyme is most likely performing this function?",
+    "question": "A researcher is studying DNA replication in a bacterial cell. They observe that a particular enzyme is responsible for unwinding the DNA double helix, allowing the replication fork to proceed. Which enzyme is most performing this function?",
     "choices": {
       "A": "Helicase",
       "B": "DNA polymerase",
@@ -2753,7 +2753,7 @@
   },
   {
     "id": "AP_Biology_102",
-    "question": "A scientist is investigating the effect of varying light intensity on the rate of photosynthesis in an aquatic plant. They measure the production of oxygen bubbles. If the light intensity is increased beyond a certain point, the rate of photosynthesis will likely plateau and then potentially decrease. What is the most probable reason for this plateau?",
+    "question": "A scientist is investigating the effect of varying light intensity on the rate of photosynthesis in an aquatic plant. They measure the production of oxygen bubbles. If the light intensity is increased beyond a certain point, the rate of photosynthesis will plateau and then potentially decrease. What is the most probable reason for this plateau?",
     "choices": {
       "A": "The plant has reached its maximum rate of CO2 fixation.",
       "B": "The concentration of a necessary enzyme has become limiting.",
@@ -2762,14 +2762,14 @@
     },
     "answer": "A",
     "difficulty": 7,
-    "explanation": "The rate of photosynthesis is dependent on several factors, including light intensity, CO2 concentration, and temperature. While increasing light intensity generally increases the rate, other factors can become limiting. The plateau occurs when another factor, such as the availability of CO2 or the capacity of the Calvin cycle (CO2 fixation), reaches its maximum rate, so that further increases in light cannot stimulate more photosynthesis. Option A correctly identifies CO2 fixation as a potential limiting factor. Option B is incorrect because enzymes are catalysts and don't typically become limiting in this way unless denaturation occurs (which might cause a decrease, not just a plateau). Option C is incorrect; sufficient ATP/NADPH would allow for *increased* Calvin cycle activity, not a plateau. Option D might cause a decrease if temperature is too high (denaturation), but not a plateau.",
+    "explanation": "The rate of photosynthesis is dependent on several factors, including light intensity, CO2 concentration, and temperature. While increasing light intensity generally increases the rate, other factors can become limiting. The plateau occurs when another factor, such as the availability of CO2 or the capacity of the Calvin cycle (CO2 fixation), reaches its maximum rate, so that further increases in light cannot stimulate more photosynthesis. Option A correctly identifies CO2 fixation as a potential limiting factor. Option B is incorrect because enzymes are catalysts and don't typically become limiting in this way unless denaturation occurs (which cause a decrease, not just a plateau). Option C is incorrect; sufficient ATP/NADPH would allow for *increased* Calvin cycle activity, not a plateau. Option D cause a decrease if temperature is too high (denaturation), but not a plateau.",
     "correct_key": "A",
     "section": "science",
     "skill": "AP Biology"
   },
   {
     "id": "AP_Biology_104",
-    "question": "A mutation occurs in a gene, resulting in a protein that is shorter than the original protein. This type of mutation is most likely a:",
+    "question": "A mutation occurs in a gene, resulting in a protein that is shorter than the original protein. This type of mutation is most a:",
     "choices": {
       "A": "Silent mutation",
       "B": "Missense mutation",
@@ -3041,7 +3041,7 @@
   },
   {
     "id": "AP_Biology_25",
-    "question": "A researcher is studying a metabolic pathway that requires the input of ATP. If they add an inhibitor that blocks the activity of an enzyme involved in ATP synthesis, what is the most likely immediate effect on the metabolic pathway?",
+    "question": "A researcher is studying a metabolic pathway that requires the input of ATP. If they add an inhibitor that blocks the activity of an enzyme involved in ATP synthesis, what is the most immediate effect on the metabolic pathway?",
     "choices": {
       "A": "The pathway will speed up to compensate for the lack of ATP.",
       "B": "The pathway will slow down or stop due to insufficient energy.",
@@ -3089,7 +3089,7 @@
   },
   {
     "id": "AP_Biology_4",
-    "question": "In a food web, which of the following would most likely cause a trophic cascade?",
+    "question": "In a food web, which of the following would most cause a trophic cascade?",
     "choices": {
       "A": "Removal of a top predator",
       "B": "Addition of a decomposer",
@@ -3130,7 +3130,7 @@
     },
     "answer": "C",
     "difficulty": 5,
-    "explanation": "Natural selection favors individuals with advantageous phenotypes, which are the observable expressions of their genotypes. Individuals with advantageous traits are more likely to survive and reproduce, thus indirectly influencing allele frequencies over generations.",
+    "explanation": "Natural selection favors individuals with advantageous phenotypes, which are the observable expressions of their genotypes. Individuals with advantageous traits are more to survive and reproduce, thus indirectly influencing allele frequencies over generations.",
     "correct_key": "C",
     "section": "science",
     "skill": "AP Biology"
@@ -3153,7 +3153,7 @@
   },
   {
     "id": "AP_Biology_142",
-    "question": "A single nucleotide is inserted into the coding region of a gene. Which type of mutation is this, and what is the most likely consequence for the resulting protein?",
+    "question": "A single nucleotide is inserted into the coding region of a gene. Which type of mutation is this, and what is the most consequence for the resulting protein?",
     "choices": {
       "A": "Silent mutation",
       "B": "Frameshift mutation",
@@ -3233,7 +3233,7 @@
   },
   {
     "id": "AP_Biology_179",
-    "question": "In a population of birds, a mutation arises that causes a change in feather color. If this mutation increases the bird's survival rate and reproductive success in its environment, what is the most likely outcome for this population over many generations?",
+    "question": "In a population of birds, a mutation arises that causes a change in feather color. If this mutation increases the bird's survival rate and reproductive success in its environment, what is the most outcome for this population over many generations?",
     "choices": {
       "A": "The mutation will likely decrease in frequency due to natural selection.",
       "B": "The mutation will likely increase in frequency due to natural selection.",

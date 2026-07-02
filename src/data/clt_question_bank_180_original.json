@@ -88,7 +88,7 @@
     "exam": "CLT",
     "section": "Grammar/Writing",
     "skill": "transitions",
-    "difficulty": 3,
+    "difficulty": 4,
     "question": "A sentence reads: 'The committee appreciated the speaker's clarity, ______ they disagreed with several conclusions.' Which transition best completes the sentence?",
     "options": [
       {
@@ -137,7 +137,7 @@
     "correctAnswer": "B",
     "explanation": "'Ubiquitous' means present, appearing, or found everywhere. 'Common' also means widespread or frequently encountered.",
     "skill": "Vocabulary",
-    "difficulty": 3
+    "difficulty": 4
   },
   {
     "id": "clt_241",
@@ -305,7 +305,7 @@
     "correctAnswer": "B",
     "explanation": "A conclusion summarizes the essay's key arguments and leaves the reader with a lasting impression.",
     "skill": "Reading Comprehension",
-    "difficulty": 3
+    "difficulty": 4
   },
   {
     "id": "clt_188",
@@ -361,7 +361,7 @@
     "correctAnswer": "C",
     "explanation": "'Diligent' means having or showing care and conscientiousness in one's work or duties. 'Industrious' means diligent and hard-working.",
     "skill": "Vocabulary",
-    "difficulty": 3
+    "difficulty": 4
   },
   {
     "id": "clt_190",
@@ -389,7 +389,7 @@
     "correctAnswer": "C",
     "explanation": "Hot and cold are antonyms. Young and old are antonyms.",
     "skill": "Analogies",
-    "difficulty": 3
+    "difficulty": 4
   },
   {
     "id": "clt_191",
@@ -529,7 +529,7 @@
     "correctAnswer": "C",
     "explanation": "The context of 'ancient ruins' strongly suggests they are in a state of decay or disrepair. 'Ruined' fits this description.",
     "skill": "Sentence Completion",
-    "difficulty": 3
+    "difficulty": 4
   },
   {
     "id": "clt_196",
@@ -557,7 +557,7 @@
     "correctAnswer": "C",
     "explanation": "The apostrophe in 'dog's' correctly shows that the bone belongs to one dog.",
     "skill": "Punctuation",
-    "difficulty": 3
+    "difficulty": 4
   },
   {
     "id": "clt_197",
@@ -585,7 +585,7 @@
     "correctAnswer": "B",
     "explanation": "'Team' is a singular noun, so it requires a singular verb 'plays'.",
     "skill": "Subject-Verb Agreement",
-    "difficulty": 3
+    "difficulty": 4
   },
   {
     "id": "clt_198",
@@ -641,7 +641,7 @@
     "correctAnswer": "C",
     "explanation": "'So' is used here to show the result or consequence of being tired.",
     "skill": "Conjunctions",
-    "difficulty": 3
+    "difficulty": 4
   },
   {
     "id": "clt_003",
@@ -753,7 +753,7 @@
     "correctAnswer": "B",
     "explanation": "A comma is needed after an introductory phrase like 'During the summer'.",
     "skill": "Punctuation",
-    "difficulty": 3
+    "difficulty": 4
   },
   {
     "id": "clt_204",
@@ -837,7 +837,7 @@
     "correctAnswer": "A",
     "explanation": "'Accepted' means to receive willingly. 'Excepted' means to exclude. 'Their' is a possessive pronoun.",
     "skill": "Word Choice",
-    "difficulty": 3
+    "difficulty": 4
   },
   {
     "id": "clt_207",
@@ -893,7 +893,7 @@
     "correctAnswer": "B",
     "explanation": "'Quickly' is the adverb form of 'quick', which modifies the verb 'ran'.",
     "skill": "Adverbs",
-    "difficulty": 3
+    "difficulty": 4
   },
   {
     "id": "clt_209",
@@ -977,7 +977,7 @@
     "correctAnswer": "D",
     "explanation": "'Ephemeral' means lasting for a very short time, which is synonymous with 'fleeting'.",
     "skill": "Vocabulary Matching",
-    "difficulty": 3
+    "difficulty": 4
   },
   {
     "id": "clt_212",
@@ -1061,7 +1061,7 @@
     "correctAnswer": "C",
     "explanation": "A doctor works with patients, and a teacher works with students. The analogy represents the professional and their recipient of service.",
     "skill": "Analogies",
-    "difficulty": 3
+    "difficulty": 4
   },
   {
     "id": "clt_216",
@@ -1229,7 +1229,7 @@
     "correctAnswer": "A",
     "explanation": "Fast and slow are antonyms. Loud and quiet are antonyms.",
     "skill": "Analogies",
-    "difficulty": 3
+    "difficulty": 4
   },
   {
     "id": "clt_222",
@@ -1509,7 +1509,7 @@
     "correctAnswer": "A",
     "explanation": "A pen is used for writing. A saw is used for cutting.",
     "skill": "Analogies",
-    "difficulty": 3
+    "difficulty": 4
   },
   {
     "id": "clt_232",
@@ -1621,7 +1621,7 @@
     "correctAnswer": "A",
     "explanation": "Happy and joyful are synonyms, indicating a strong positive emotion. Sad and upset are synonyms, indicating a strong negative emotion.",
     "skill": "Analogies",
-    "difficulty": 3
+    "difficulty": 4
   },
   {
     "id": "clt_236",
@@ -1649,7 +1649,7 @@
     "correctAnswer": "A",
     "explanation": "First, solve for x. If x + 5 = 12, then x = 12 - 5 = 7. Substitute x = 7 into the expression 3x - 2: 3(7) - 2 = 21 - 2 = 19.",
     "skill": "Algebraic Manipulation",
-    "difficulty": 3
+    "difficulty": 4
   },
   {
     "id": "clt_237",
@@ -1677,7 +1677,7 @@
     "correctAnswer": "D",
     "explanation": "A double batch means you need twice the amount of each ingredient. For flour, the original amount is 2 cups, so for a double batch, you need 2 * 2 = 4 cups of flour.",
     "skill": "Ratios and Proportions",
-    "difficulty": 3
+    "difficulty": 4
   },
   {
     "id": "clt_238",
@@ -1705,7 +1705,7 @@
     "correctAnswer": "B",
     "explanation": "The area of a rectangle is calculated by multiplying its length by its width. Area = length × width = 8 units × 5 units = 40 square units.",
     "skill": "Geometry",
-    "difficulty": 3
+    "difficulty": 4
   },
   {
     "id": "clt_239",
@@ -1985,7 +1985,7 @@
     "correctAnswer": "A",
     "explanation": "The total number of marbles in the bag is 5 (red) + 3 (blue) = 8. The number of blue marbles is 3. The probability of drawing a blue marble is the number of blue marbles divided by the total number of marbles: 3/8.",
     "skill": "Probability",
-    "difficulty": 3
+    "difficulty": 4
   },
   {
     "id": "clt_249",
@@ -2041,7 +2041,7 @@
     "correctAnswer": "C",
     "explanation": "The volume of a rectangular box is calculated by multiplying its length, width, and height. Volume = length × width × height = 6 ft × 4 ft × 3 ft = 72 cubic feet.",
     "skill": "Geometry",
-    "difficulty": 3
+    "difficulty": 4
   },
   {
     "id": "clt_251",
@@ -2069,7 +2069,7 @@
     "correctAnswer": "A",
     "explanation": "A comma is used correctly to separate a participial phrase ('barking at the mail carrier') that modifies the subject ('The dog') from the main clause.",
     "skill": "Punctuation",
-    "difficulty": 3
+    "difficulty": 4
   },
   {
     "id": "clt_252",
@@ -2181,7 +2181,7 @@
     "correctAnswer": "D",
     "explanation": "To form the possessive of a plural noun that does not end in 's', add 's'. 'Children' is plural, so 'children's' is the correct possessive form.",
     "skill": "Apostrophes",
-    "difficulty": 3
+    "difficulty": 4
   },
   {
     "id": "clt_256",
@@ -2265,7 +2265,7 @@
     "correctAnswer": "C",
     "explanation": "The sentence implies the map's condition makes it hard to read. 'Torn' describes a physical state that would impede readability.",
     "skill": "Sentence Completion",
-    "difficulty": 3
+    "difficulty": 4
   },
   {
     "id": "clt_259",
@@ -2293,7 +2293,7 @@
     "correctAnswer": "A",
     "explanation": "When a pronoun follows a preposition ('between'), it should be in the objective case. 'Me' is the objective case of 'I'.",
     "skill": "Pronoun Case",
-    "difficulty": 3
+    "difficulty": 4
   },
   {
     "id": "clt_260",
@@ -2349,7 +2349,7 @@
     "correctAnswer": "D",
     "explanation": "A comma should typically follow an introductory phrase or clause to separate it from the main clause.",
     "skill": "Punctuation",
-    "difficulty": 3
+    "difficulty": 4
   },
   {
     "id": "clt_262",
@@ -2433,7 +2433,7 @@
     "correctAnswer": "D",
     "explanation": "Proper nouns, including city names ('Paris') and months of the year ('July'), should be capitalized.",
     "skill": "Capitalization",
-    "difficulty": 3
+    "difficulty": 4
   },
   {
     "id": "clt_265",
@@ -2517,7 +2517,7 @@
     "correctAnswer": "B",
     "explanation": "The correct spelling of the adjective describing features related to buildings is 'architectural'.",
     "skill": "Word Choice",
-    "difficulty": 3
+    "difficulty": 4
   },
   {
     "id": "clt_268",
@@ -2601,7 +2601,7 @@
     "correctAnswer": "A",
     "explanation": "'Its' is the possessive form of 'it'. 'It's' is a contraction of 'it is' or 'it has'. Since the plans belong to the company, the possessive 'its' is needed.",
     "skill": "Word Usage",
-    "difficulty": 3
+    "difficulty": 4
   },
   {
     "id": "clt_271",
@@ -2685,7 +2685,7 @@
     "correctAnswer": "A",
     "explanation": "Commas are used to separate items in a series of three or more. The comma before 'and' (the Oxford comma) is optional but often preferred for clarity.",
     "skill": "Punctuation",
-    "difficulty": 3
+    "difficulty": 4
   },
   {
     "id": "clt_275",
@@ -2741,7 +2741,7 @@
     "correctAnswer": "A",
     "explanation": "To solve for x, add 7 to both sides of the equation: 5x - 7 + 7 = 18 + 7, which simplifies to 5x = 25. Then, divide both sides by 5: 5x / 5 = 25 / 5, resulting in x = 5.",
     "skill": "Algebraic manipulation",
-    "difficulty": 3
+    "difficulty": 4
   },
   {
     "id": "clt_277",
@@ -2769,7 +2769,7 @@
     "correctAnswer": "C",
     "explanation": "The area of a rectangle is calculated by multiplying its length by its width. Area = length × width = 12 units × 5 units = 60 square units.",
     "skill": "Geometry: Area calculation",
-    "difficulty": 3
+    "difficulty": 4
   },
   {
     "id": "clt_278",
@@ -2797,7 +2797,7 @@
     "correctAnswer": "D",
     "explanation": "3 cubed means multiplying 3 by itself three times: 3 × 3 × 3 = 9 × 3 = 27.",
     "skill": "Arithmetic: Exponents",
-    "difficulty": 3
+    "difficulty": 4
   },
   {
     "id": "clt_279",
@@ -2853,14 +2853,14 @@
     "correctAnswer": "D",
     "explanation": "This is a geometric sequence where each term is double the previous term (multiplying by 2). The next term is 16 × 2 = 32.",
     "skill": "Number sequences",
-    "difficulty": 3
+    "difficulty": 4
   },
   {
     "id": "clt_001",
     "exam": "CLT",
     "section": "Verbal Reasoning",
     "skill": "main_idea",
-    "difficulty": 3,
+    "difficulty": 4,
     "question": "A short passage states that habits shape character through repeated action. Which choice best reflects the passage's central claim?",
     "options": [
       {
@@ -2993,7 +2993,7 @@
     "correctAnswer": "D",
     "explanation": "The total number of marbles is 3 + 5 = 8. The number of blue marbles is 5. The probability of choosing a blue marble is the number of blue marbles divided by the total number of marbles: 5/8.",
     "skill": "Probability",
-    "difficulty": 3
+    "difficulty": 4
   },
   {
     "id": "clt_286",
@@ -3021,7 +3021,7 @@
     "correctAnswer": "D",
     "explanation": "The sum of the interior angles of any triangle, regardless of its shape or size, is always 180 degrees.",
     "skill": "Geometry: Properties of shapes",
-    "difficulty": 3
+    "difficulty": 4
   },
   {
     "id": "clt_287",
@@ -3049,7 +3049,7 @@
     "correctAnswer": "C",
     "explanation": "To find out how much each person receives, divide the total amount by the number of people: $15 / 3 = $5.",
     "skill": "Basic arithmetic",
-    "difficulty": 3
+    "difficulty": 4
   },
   {
     "id": "clt_288",
@@ -3133,7 +3133,7 @@
     "correctAnswer": "C",
     "explanation": "A square has four equal sides. The perimeter is the sum of the lengths of all sides. So, Perimeter = 4 × side length. To find the side length, divide the perimeter by 4: Side length = 28 cm / 4 = 7 cm.",
     "skill": "Geometry: Perimeter calculation",
-    "difficulty": 3
+    "difficulty": 4
   },
   {
     "id": "clt_291",
@@ -3189,7 +3189,7 @@
     "correctAnswer": "C",
     "explanation": "To solve for x, multiply both sides of the equation by 3: (x/3) * 3 = 7 * 3, which results in x = 21.",
     "skill": "Algebraic manipulation",
-    "difficulty": 3
+    "difficulty": 4
   },
   {
     "id": "clt_293",
@@ -3245,7 +3245,7 @@
     "correctAnswer": "D",
     "explanation": "The square root of a number is a value that, when multiplied by itself, gives the original number. 9 multiplied by itself is 81 (9 * 9 = 81).",
     "skill": "Arithmetic: Square roots",
-    "difficulty": 3
+    "difficulty": 4
   },
   {
     "id": "clt_295",
@@ -3301,7 +3301,7 @@
     "correctAnswer": "C",
     "explanation": "A whole pizza represents 1 (or 4/4). If 1/4 is eaten, the remaining fraction is 1 - 1/4 = 4/4 - 1/4 = 3/4.",
     "skill": "Fractions",
-    "difficulty": 3
+    "difficulty": 4
   },
   {
     "id": "clt_297",
@@ -3357,7 +3357,7 @@
     "correctAnswer": "A",
     "explanation": "Let the unknown number be 'n'. The problem states n / 5 = 12. To find 'n', multiply both sides by 5: n = 12 * 5 = 60.",
     "skill": "Algebraic manipulation",
-    "difficulty": 3
+    "difficulty": 4
   },
   {
     "id": "clt_299",

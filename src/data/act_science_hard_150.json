@@ -19,7 +19,15 @@
       },
       "answer": "D",
       "explanation": "Hard ACT Science items reward cautious inference: supported trend + attention to uncertainty/controls.",
-      "domain": "ACT Science"
+      "domain": "ACT Science",
+      "difficulty": 9,
+      "options": [
+        "The data prove causation in all contexts with no uncertainty.",
+        "The relationship must be negative in all future trials.",
+        "The results eliminate the need for controls.",
+        "Results suggest an effect that should be tested with additional trials."
+      ],
+      "correct_key": "D"
     },
     {
       "id": "ACTSCI-HARD-002",
@@ -37,7 +45,15 @@
       },
       "answer": "B",
       "explanation": "Hard ACT Science items reward cautious inference: supported trend + attention to uncertainty/controls.",
-      "domain": "ACT Science"
+      "domain": "ACT Science",
+      "difficulty": 8,
+      "options": [
+        "The relationship must be negative in all future trials.",
+        "The pattern suggests a positive relationship, though uncertainty limits precision.",
+        "The results eliminate the need for controls.",
+        "The data prove causation in all contexts with no uncertainty."
+      ],
+      "correct_key": "B"
     },
     {
       "id": "ACTSCI-HARD-003",
@@ -55,7 +71,15 @@
       },
       "answer": "D",
       "explanation": "Confounding variables are uncontrolled factors linked to both the independent and dependent variables.",
-      "domain": "ACT Science"
+      "domain": "ACT Science",
+      "difficulty": 10,
+      "options": [
+        "The units used to record data",
+        "The dependent variable itself",
+        "The title of the experiment",
+        "Differences in measurement technique between groups"
+      ],
+      "correct_key": "D"
     },
     {
       "id": "ACTSCI-HARD-004",
@@ -103,7 +127,15 @@
       },
       "answer": "B",
       "explanation": "Hard ACT Science items reward cautious inference: supported trend + attention to uncertainty/controls.",
-      "domain": "ACT Science"
+      "domain": "ACT Science",
+      "difficulty": 10,
+      "options": [
+        "The results eliminate the need for controls.",
+        "The pattern suggests a positive relationship, though uncertainty limits precision.",
+        "The relationship must be negative in all future trials.",
+        "The data prove causation in all contexts with no uncertainty."
+      ],
+      "correct_key": "B"
     },
     {
       "id": "ACTSCI-HARD-005",
@@ -121,7 +153,15 @@
       },
       "answer": "B",
       "explanation": "Hard ACT Science items reward cautious inference: supported trend + attention to uncertainty/controls.",
-      "domain": "ACT Science"
+      "domain": "ACT Science",
+      "difficulty": 10,
+      "options": [
+        "The relationship must be negative in all future trials.",
+        "The data are consistent with a trend rather than random variation alone.",
+        "The results eliminate the need for controls.",
+        "The data prove causation in all contexts with no uncertainty."
+      ],
+      "correct_key": "B"
     },
     {
       "id": "ACTSCI-HARD-006",
@@ -139,7 +179,15 @@
       },
       "answer": "C",
       "explanation": "Reliability improves with replication and controlled variables.",
-      "domain": "ACT Science"
+      "domain": "ACT Science",
+      "difficulty": 8,
+      "options": [
+        "Change multiple variables at once to speed up results.",
+        "Remove the control condition to simplify the study.",
+        "Increase the number of trials and keep all variables constant except the independent variable.",
+        "Record only the most extreme measurements."
+      ],
+      "correct_key": "C"
     },
     {
       "id": "ACTSCI-HARD-007",
@@ -157,7 +205,15 @@
       },
       "answer": "A",
       "explanation": "Confounding variables are uncontrolled factors linked to both the independent and dependent variables.",
-      "domain": "ACT Science"
+      "domain": "ACT Science",
+      "difficulty": 10,
+      "options": [
+        "Differences in measurement technique between groups",
+        "The units used to record data",
+        "The title of the experiment",
+        "The dependent variable itself"
+      ],
+      "correct_key": "A"
     },
     {
       "id": "ACTSCI-HARD-008",
@@ -175,7 +231,15 @@
       },
       "answer": "C",
       "explanation": "Confounding variables are uncontrolled factors linked to both the independent and dependent variables.",
-      "domain": "ACT Science"
+      "domain": "ACT Science",
+      "difficulty": 9,
+      "options": [
+        "The title of the experiment",
+        "The dependent variable itself",
+        "Uncontrolled environmental conditions that vary across trials",
+        "The units used to record data"
+      ],
+      "correct_key": "C"
     },
     {
       "id": "ACTSCI-HARD-009",
@@ -223,7 +287,15 @@
       },
       "answer": "C",
       "explanation": "Hard ACT Science items reward cautious inference: supported trend + attention to uncertainty/controls.",
-      "domain": "ACT Science"
+      "domain": "ACT Science",
+      "difficulty": 10,
+      "options": [
+        "The data prove causation in all contexts with no uncertainty.",
+        "The results eliminate the need for controls.",
+        "The pattern suggests a positive relationship, though uncertainty limits precision.",
+        "The relationship must be negative in all future trials."
+      ],
+      "correct_key": "C"
     },
     {
       "id": "ACTSCI-HARD-010",
@@ -241,7 +313,15 @@
       },
       "answer": "A",
       "explanation": "Confounding variables are uncontrolled factors linked to both the independent and dependent variables.",
-      "domain": "ACT Science"
+      "domain": "ACT Science",
+      "difficulty": 9,
+      "options": [
+        "Selection differences in samples assigned to groups",
+        "The dependent variable itself",
+        "The units used to record data",
+        "The title of the experiment"
+      ],
+      "correct_key": "A"
     },
     {
       "id": "ACTSCI-HARD-011",
@@ -259,7 +339,15 @@
       },
       "answer": "A",
       "explanation": "Extrapolation uses the direction of the trend but avoids certainty about exact values.",
-      "domain": "ACT Science"
+      "domain": "ACT Science",
+      "difficulty": 10,
+      "options": [
+        "The dependent variable would likely continue changing in the same direction, though the exact value is uncertain.",
+        "The dependent variable will remain exactly constant.",
+        "Future results will be identical in every trial.",
+        "The dependent variable will reverse direction with certainty."
+      ],
+      "correct_key": "A"
     },
     {
       "id": "ACTSCI-HARD-012",
@@ -277,7 +365,15 @@
       },
       "answer": "D",
       "explanation": "Confounding variables are uncontrolled factors linked to both the independent and dependent variables.",
-      "domain": "ACT Science"
+      "domain": "ACT Science",
+      "difficulty": 8,
+      "options": [
+        "The units used to record data",
+        "The dependent variable itself",
+        "The title of the experiment",
+        "A variable that changes with the independent variable and also affects the dependent variable"
+      ],
+      "correct_key": "D"
     },
     {
       "id": "ACTSCI-HARD-013",
@@ -325,7 +421,15 @@
       },
       "answer": "D",
       "explanation": "Extrapolation uses the direction of the trend but avoids certainty about exact values.",
-      "domain": "ACT Science"
+      "domain": "ACT Science",
+      "difficulty": 9,
+      "options": [
+        "Future results will be identical in every trial.",
+        "The dependent variable will reverse direction with certainty.",
+        "The dependent variable will remain exactly constant.",
+        "The dependent variable would likely continue changing in the same direction, though the exact value is uncertain."
+      ],
+      "correct_key": "D"
     },
     {
       "id": "ACTSCI-HARD-014",
@@ -343,7 +447,15 @@
       },
       "answer": "B",
       "explanation": "Hard ACT Science items reward cautious inference: supported trend + attention to uncertainty/controls.",
-      "domain": "ACT Science"
+      "domain": "ACT Science",
+      "difficulty": 8,
+      "options": [
+        "The relationship must be negative in all future trials.",
+        "A change in the independent variable is associated with a measurable change in the dependent variable.",
+        "The results eliminate the need for controls.",
+        "The data prove causation in all contexts with no uncertainty."
+      ],
+      "correct_key": "B"
     },
     {
       "id": "ACTSCI-HARD-015",
@@ -361,7 +473,15 @@
       },
       "answer": "B",
       "explanation": "Confounding variables are uncontrolled factors linked to both the independent and dependent variables.",
-      "domain": "ACT Science"
+      "domain": "ACT Science",
+      "difficulty": 9,
+      "options": [
+        "The units used to record data",
+        "A variable that changes with the independent variable and also affects the dependent variable",
+        "The dependent variable itself",
+        "The title of the experiment"
+      ],
+      "correct_key": "B"
     },
     {
       "id": "ACTSCI-HARD-016",
@@ -409,7 +529,15 @@
       },
       "answer": "D",
       "explanation": "Confounding variables are uncontrolled factors linked to both the independent and dependent variables.",
-      "domain": "ACT Science"
+      "domain": "ACT Science",
+      "difficulty": 8,
+      "options": [
+        "The title of the experiment",
+        "The dependent variable itself",
+        "The units used to record data",
+        "Selection differences in samples assigned to groups"
+      ],
+      "correct_key": "D"
     },
     {
       "id": "ACTSCI-HARD-017",
@@ -427,7 +555,15 @@
       },
       "answer": "A",
       "explanation": "Hard ACT Science items reward cautious inference: supported trend + attention to uncertainty/controls.",
-      "domain": "ACT Science"
+      "domain": "ACT Science",
+      "difficulty": 10,
+      "options": [
+        "The data are consistent with a trend rather than random variation alone.",
+        "The data prove causation in all contexts with no uncertainty.",
+        "The relationship must be negative in all future trials.",
+        "The results eliminate the need for controls."
+      ],
+      "correct_key": "A"
     },
     {
       "id": "ACTSCI-HARD-018",
@@ -469,7 +605,15 @@
       },
       "answer": "B",
       "explanation": "Confounding variables are uncontrolled factors linked to both the independent and dependent variables.",
-      "domain": "ACT Science"
+      "domain": "ACT Science",
+      "difficulty": 10,
+      "options": [
+        "The title of the experiment",
+        "Differences in measurement technique between groups",
+        "The units used to record data",
+        "The dependent variable itself"
+      ],
+      "correct_key": "B"
     },
     {
       "id": "ACTSCI-HARD-019",
@@ -511,7 +655,15 @@
       },
       "answer": "B",
       "explanation": "Confounding variables are uncontrolled factors linked to both the independent and dependent variables.",
-      "domain": "ACT Science"
+      "domain": "ACT Science",
+      "difficulty": 9,
+      "options": [
+        "The units used to record data",
+        "Uncontrolled environmental conditions that vary across trials",
+        "The title of the experiment",
+        "The dependent variable itself"
+      ],
+      "correct_key": "B"
     },
     {
       "id": "ACTSCI-HARD-020",
@@ -553,7 +705,15 @@
       },
       "answer": "C",
       "explanation": "Reliability improves with replication and controlled variables.",
-      "domain": "ACT Science"
+      "domain": "ACT Science",
+      "difficulty": 9,
+      "options": [
+        "Record only the most extreme measurements.",
+        "Change multiple variables at once to speed up results.",
+        "Increase the number of trials and keep all variables constant except the independent variable.",
+        "Remove the control condition to simplify the study."
+      ],
+      "correct_key": "C"
     },
     {
       "id": "ACTSCI-HARD-021",
@@ -571,7 +731,15 @@
       },
       "answer": "D",
       "explanation": "Extrapolation uses the direction of the trend but avoids certainty about exact values.",
-      "domain": "ACT Science"
+      "domain": "ACT Science",
+      "difficulty": 8,
+      "options": [
+        "Future results will be identical in every trial.",
+        "The dependent variable will remain exactly constant.",
+        "The dependent variable will reverse direction with certainty.",
+        "The dependent variable would likely continue changing in the same direction, though the exact value is uncertain."
+      ],
+      "correct_key": "D"
     },
     {
       "id": "ACTSCI-HARD-022",
@@ -619,7 +787,15 @@
       },
       "answer": "D",
       "explanation": "Extrapolation uses the direction of the trend but avoids certainty about exact values.",
-      "domain": "ACT Science"
+      "domain": "ACT Science",
+      "difficulty": 8,
+      "options": [
+        "The dependent variable will remain exactly constant.",
+        "The dependent variable will reverse direction with certainty.",
+        "Future results will be identical in every trial.",
+        "The dependent variable would likely continue changing in the same direction, though the exact value is uncertain."
+      ],
+      "correct_key": "D"
     },
     {
       "id": "ACTSCI-HARD-023",
@@ -637,7 +813,15 @@
       },
       "answer": "D",
       "explanation": "Reliability improves with replication and controlled variables.",
-      "domain": "ACT Science"
+      "domain": "ACT Science",
+      "difficulty": 10,
+      "options": [
+        "Remove the control condition to simplify the study.",
+        "Change multiple variables at once to speed up results.",
+        "Record only the most extreme measurements.",
+        "Increase the number of trials and keep all variables constant except the independent variable."
+      ],
+      "correct_key": "D"
     },
     {
       "id": "ACTSCI-HARD-024",
@@ -655,7 +839,15 @@
       },
       "answer": "B",
       "explanation": "Reliability improves with replication and controlled variables.",
-      "domain": "ACT Science"
+      "domain": "ACT Science",
+      "difficulty": 9,
+      "options": [
+        "Change multiple variables at once to speed up results.",
+        "Increase the number of trials and keep all variables constant except the independent variable.",
+        "Record only the most extreme measurements.",
+        "Remove the control condition to simplify the study."
+      ],
+      "correct_key": "B"
     },
     {
       "id": "ACTSCI-HARD-025",
@@ -673,7 +865,15 @@
       },
       "answer": "C",
       "explanation": "Hard ACT Science items reward cautious inference: supported trend + attention to uncertainty/controls.",
-      "domain": "ACT Science"
+      "domain": "ACT Science",
+      "difficulty": 8,
+      "options": [
+        "The results eliminate the need for controls.",
+        "The data prove causation in all contexts with no uncertainty.",
+        "Results suggest an effect that should be tested with additional trials.",
+        "The relationship must be negative in all future trials."
+      ],
+      "correct_key": "C"
     },
     {
       "id": "ACTSCI-HARD-026",
@@ -691,7 +891,15 @@
       },
       "answer": "C",
       "explanation": "Confounding variables are uncontrolled factors linked to both the independent and dependent variables.",
-      "domain": "ACT Science"
+      "domain": "ACT Science",
+      "difficulty": 10,
+      "options": [
+        "The title of the experiment",
+        "The units used to record data",
+        "Selection differences in samples assigned to groups",
+        "The dependent variable itself"
+      ],
+      "correct_key": "C"
     },
     {
       "id": "ACTSCI-HARD-027",
@@ -709,7 +917,15 @@
       },
       "answer": "B",
       "explanation": "Reliability improves with replication and controlled variables.",
-      "domain": "ACT Science"
+      "domain": "ACT Science",
+      "difficulty": 8,
+      "options": [
+        "Change multiple variables at once to speed up results.",
+        "Increase the number of trials and keep all variables constant except the independent variable.",
+        "Record only the most extreme measurements.",
+        "Remove the control condition to simplify the study."
+      ],
+      "correct_key": "B"
     },
     {
       "id": "ACTSCI-HARD-028",
@@ -727,7 +943,15 @@
       },
       "answer": "D",
       "explanation": "Reliability improves with replication and controlled variables.",
-      "domain": "ACT Science"
+      "domain": "ACT Science",
+      "difficulty": 9,
+      "options": [
+        "Change multiple variables at once to speed up results.",
+        "Record only the most extreme measurements.",
+        "Remove the control condition to simplify the study.",
+        "Increase the number of trials and keep all variables constant except the independent variable."
+      ],
+      "correct_key": "D"
     },
     {
       "id": "ACTSCI-HARD-029",
@@ -745,7 +969,15 @@
       },
       "answer": "C",
       "explanation": "Extrapolation uses the direction of the trend but avoids certainty about exact values.",
-      "domain": "ACT Science"
+      "domain": "ACT Science",
+      "difficulty": 8,
+      "options": [
+        "Future results will be identical in every trial.",
+        "The dependent variable will remain exactly constant.",
+        "The dependent variable would likely continue changing in the same direction, though the exact value is uncertain.",
+        "The dependent variable will reverse direction with certainty."
+      ],
+      "correct_key": "C"
     },
     {
       "id": "ACTSCI-HARD-030",
@@ -763,7 +995,15 @@
       },
       "answer": "D",
       "explanation": "Confounding variables are uncontrolled factors linked to both the independent and dependent variables.",
-      "domain": "ACT Science"
+      "domain": "ACT Science",
+      "difficulty": 10,
+      "options": [
+        "The title of the experiment",
+        "The dependent variable itself",
+        "The units used to record data",
+        "Selection differences in samples assigned to groups"
+      ],
+      "correct_key": "D"
     },
     {
       "id": "ACTSCI-HARD-031",
@@ -811,7 +1051,15 @@
       },
       "answer": "C",
       "explanation": "Reliability improves with replication and controlled variables.",
-      "domain": "ACT Science"
+      "domain": "ACT Science",
+      "difficulty": 8,
+      "options": [
+        "Change multiple variables at once to speed up results.",
+        "Record only the most extreme measurements.",
+        "Increase the number of trials and keep all variables constant except the independent variable.",
+        "Remove the control condition to simplify the study."
+      ],
+      "correct_key": "C"
     },
     {
       "id": "ACTSCI-HARD-032",
@@ -853,7 +1101,15 @@
       },
       "answer": "D",
       "explanation": "Extrapolation uses the direction of the trend but avoids certainty about exact values.",
-      "domain": "ACT Science"
+      "domain": "ACT Science",
+      "difficulty": 8,
+      "options": [
+        "The dependent variable will remain exactly constant.",
+        "The dependent variable will reverse direction with certainty.",
+        "Future results will be identical in every trial.",
+        "The dependent variable would likely continue changing in the same direction, though the exact value is uncertain."
+      ],
+      "correct_key": "D"
     },
     {
       "id": "ACTSCI-HARD-033",
@@ -895,7 +1151,15 @@
       },
       "answer": "B",
       "explanation": "Confounding variables are uncontrolled factors linked to both the independent and dependent variables.",
-      "domain": "ACT Science"
+      "domain": "ACT Science",
+      "difficulty": 9,
+      "options": [
+        "The units used to record data",
+        "Uncontrolled environmental conditions that vary across trials",
+        "The dependent variable itself",
+        "The title of the experiment"
+      ],
+      "correct_key": "B"
     },
     {
       "id": "ACTSCI-HARD-034",
@@ -913,7 +1177,15 @@
       },
       "answer": "B",
       "explanation": "Hard ACT Science items reward cautious inference: supported trend + attention to uncertainty/controls.",
-      "domain": "ACT Science"
+      "domain": "ACT Science",
+      "difficulty": 8,
+      "options": [
+        "The results eliminate the need for controls.",
+        "A change in the independent variable is associated with a measurable change in the dependent variable.",
+        "The relationship must be negative in all future trials.",
+        "The data prove causation in all contexts with no uncertainty."
+      ],
+      "correct_key": "B"
     },
     {
       "id": "ACTSCI-HARD-035",
@@ -961,7 +1233,15 @@
       },
       "answer": "A",
       "explanation": "Hard ACT Science items reward cautious inference: supported trend + attention to uncertainty/controls.",
-      "domain": "ACT Science"
+      "domain": "ACT Science",
+      "difficulty": 9,
+      "options": [
+        "A change in the independent variable is associated with a measurable change in the dependent variable.",
+        "The results eliminate the need for controls.",
+        "The data prove causation in all contexts with no uncertainty.",
+        "The relationship must be negative in all future trials."
+      ],
+      "correct_key": "A"
     },
     {
       "id": "ACTSCI-HARD-036",
@@ -979,7 +1259,15 @@
       },
       "answer": "B",
       "explanation": "Confounding variables are uncontrolled factors linked to both the independent and dependent variables.",
-      "domain": "ACT Science"
+      "domain": "ACT Science",
+      "difficulty": 10,
+      "options": [
+        "The dependent variable itself",
+        "Uncontrolled environmental conditions that vary across trials",
+        "The title of the experiment",
+        "The units used to record data"
+      ],
+      "correct_key": "B"
     },
     {
       "id": "ACTSCI-HARD-037",
@@ -997,7 +1285,15 @@
       },
       "answer": "B",
       "explanation": "Extrapolation uses the direction of the trend but avoids certainty about exact values.",
-      "domain": "ACT Science"
+      "domain": "ACT Science",
+      "difficulty": 8,
+      "options": [
+        "Future results will be identical in every trial.",
+        "The dependent variable would likely continue changing in the same direction, though the exact value is uncertain.",
+        "The dependent variable will reverse direction with certainty.",
+        "The dependent variable will remain exactly constant."
+      ],
+      "correct_key": "B"
     },
     {
       "id": "ACTSCI-HARD-038",
@@ -1015,7 +1311,15 @@
       },
       "answer": "D",
       "explanation": "Hard ACT Science items reward cautious inference: supported trend + attention to uncertainty/controls.",
-      "domain": "ACT Science"
+      "domain": "ACT Science",
+      "difficulty": 10,
+      "options": [
+        "The relationship must be negative in all future trials.",
+        "The data prove causation in all contexts with no uncertainty.",
+        "The results eliminate the need for controls.",
+        "The data are consistent with a trend rather than random variation alone."
+      ],
+      "correct_key": "D"
     },
     {
       "id": "ACTSCI-HARD-039",
@@ -1063,7 +1367,15 @@
       },
       "answer": "D",
       "explanation": "Extrapolation uses the direction of the trend but avoids certainty about exact values.",
-      "domain": "ACT Science"
+      "domain": "ACT Science",
+      "difficulty": 9,
+      "options": [
+        "The dependent variable will reverse direction with certainty.",
+        "Future results will be identical in every trial.",
+        "The dependent variable will remain exactly constant.",
+        "The dependent variable would likely continue changing in the same direction, though the exact value is uncertain."
+      ],
+      "correct_key": "D"
     },
     {
       "id": "ACTSCI-HARD-040",
@@ -1105,7 +1417,15 @@
       },
       "answer": "A",
       "explanation": "Hard ACT Science items reward cautious inference: supported trend + attention to uncertainty/controls.",
-      "domain": "ACT Science"
+      "domain": "ACT Science",
+      "difficulty": 8,
+      "options": [
+        "Results suggest an effect that should be tested with additional trials.",
+        "The data prove causation in all contexts with no uncertainty.",
+        "The relationship must be negative in all future trials.",
+        "The results eliminate the need for controls."
+      ],
+      "correct_key": "A"
     },
     {
       "id": "ACTSCI-HARD-041",
@@ -1123,7 +1443,15 @@
       },
       "answer": "C",
       "explanation": "Reliability improves with replication and controlled variables.",
-      "domain": "ACT Science"
+      "domain": "ACT Science",
+      "difficulty": 8,
+      "options": [
+        "Record only the most extreme measurements.",
+        "Remove the control condition to simplify the study.",
+        "Increase the number of trials and keep all variables constant except the independent variable.",
+        "Change multiple variables at once to speed up results."
+      ],
+      "correct_key": "C"
     },
     {
       "id": "ACTSCI-HARD-042",
@@ -1171,7 +1499,15 @@
       },
       "answer": "D",
       "explanation": "Confounding variables are uncontrolled factors linked to both the independent and dependent variables.",
-      "domain": "ACT Science"
+      "domain": "ACT Science",
+      "difficulty": 8,
+      "options": [
+        "The dependent variable itself",
+        "The title of the experiment",
+        "The units used to record data",
+        "Selection differences in samples assigned to groups"
+      ],
+      "correct_key": "D"
     },
     {
       "id": "ACTSCI-HARD-043",
@@ -1219,7 +1555,15 @@
       },
       "answer": "A",
       "explanation": "Hard ACT Science items reward cautious inference: supported trend + attention to uncertainty/controls.",
-      "domain": "ACT Science"
+      "domain": "ACT Science",
+      "difficulty": 10,
+      "options": [
+        "Results suggest an effect that should be tested with additional trials.",
+        "The data prove causation in all contexts with no uncertainty.",
+        "The results eliminate the need for controls.",
+        "The relationship must be negative in all future trials."
+      ],
+      "correct_key": "A"
     },
     {
       "id": "ACTSCI-HARD-044",
@@ -1237,7 +1581,15 @@
       },
       "answer": "C",
       "explanation": "Reliability improves with replication and controlled variables.",
-      "domain": "ACT Science"
+      "domain": "ACT Science",
+      "difficulty": 10,
+      "options": [
+        "Change multiple variables at once to speed up results.",
+        "Record only the most extreme measurements.",
+        "Increase the number of trials and keep all variables constant except the independent variable.",
+        "Remove the control condition to simplify the study."
+      ],
+      "correct_key": "C"
     },
     {
       "id": "ACTSCI-HARD-045",
@@ -1255,7 +1607,15 @@
       },
       "answer": "C",
       "explanation": "Extrapolation uses the direction of the trend but avoids certainty about exact values.",
-      "domain": "ACT Science"
+      "domain": "ACT Science",
+      "difficulty": 8,
+      "options": [
+        "The dependent variable will reverse direction with certainty.",
+        "Future results will be identical in every trial.",
+        "The dependent variable would likely continue changing in the same direction, though the exact value is uncertain.",
+        "The dependent variable will remain exactly constant."
+      ],
+      "correct_key": "C"
     },
     {
       "id": "ACTSCI-HARD-046",
@@ -1273,7 +1633,15 @@
       },
       "answer": "A",
       "explanation": "Reliability improves with replication and controlled variables.",
-      "domain": "ACT Science"
+      "domain": "ACT Science",
+      "difficulty": 10,
+      "options": [
+        "Increase the number of trials and keep all variables constant except the independent variable.",
+        "Change multiple variables at once to speed up results.",
+        "Remove the control condition to simplify the study.",
+        "Record only the most extreme measurements."
+      ],
+      "correct_key": "A"
     },
     {
       "id": "ACTSCI-HARD-047",
@@ -1321,7 +1689,15 @@
       },
       "answer": "B",
       "explanation": "Reliability improves with replication and controlled variables.",
-      "domain": "ACT Science"
+      "domain": "ACT Science",
+      "difficulty": 9,
+      "options": [
+        "Change multiple variables at once to speed up results.",
+        "Increase the number of trials and keep all variables constant except the independent variable.",
+        "Remove the control condition to simplify the study.",
+        "Record only the most extreme measurements."
+      ],
+      "correct_key": "B"
     },
     {
       "id": "ACTSCI-HARD-048",
@@ -1363,7 +1739,15 @@
       },
       "answer": "B",
       "explanation": "Confounding variables are uncontrolled factors linked to both the independent and dependent variables.",
-      "domain": "ACT Science"
+      "domain": "ACT Science",
+      "difficulty": 10,
+      "options": [
+        "The title of the experiment",
+        "Differences in measurement technique between groups",
+        "The dependent variable itself",
+        "The units used to record data"
+      ],
+      "correct_key": "B"
     },
     {
       "id": "ACTSCI-HARD-049",
@@ -1411,7 +1795,15 @@
       },
       "answer": "D",
       "explanation": "Hard ACT Science items reward cautious inference: supported trend + attention to uncertainty/controls.",
-      "domain": "ACT Science"
+      "domain": "ACT Science",
+      "difficulty": 8,
+      "options": [
+        "The data prove causation in all contexts with no uncertainty.",
+        "The results eliminate the need for controls.",
+        "The relationship must be negative in all future trials.",
+        "A change in the independent variable is associated with a measurable change in the dependent variable."
+      ],
+      "correct_key": "D"
     },
     {
       "id": "ACTSCI-HARD-050",
@@ -1429,7 +1821,15 @@
       },
       "answer": "A",
       "explanation": "Extrapolation uses the direction of the trend but avoids certainty about exact values.",
-      "domain": "ACT Science"
+      "domain": "ACT Science",
+      "difficulty": 10,
+      "options": [
+        "The dependent variable would likely continue changing in the same direction, though the exact value is uncertain.",
+        "The dependent variable will reverse direction with certainty.",
+        "Future results will be identical in every trial.",
+        "The dependent variable will remain exactly constant."
+      ],
+      "correct_key": "A"
     },
     {
       "id": "ACTSCI-HARD-051",
@@ -1471,7 +1871,15 @@
       },
       "answer": "C",
       "explanation": "Extrapolation uses the direction of the trend but avoids certainty about exact values.",
-      "domain": "ACT Science"
+      "domain": "ACT Science",
+      "difficulty": 9,
+      "options": [
+        "The dependent variable will remain exactly constant.",
+        "Future results will be identical in every trial.",
+        "The dependent variable would likely continue changing in the same direction, though the exact value is uncertain.",
+        "The dependent variable will reverse direction with certainty."
+      ],
+      "correct_key": "C"
     },
     {
       "id": "ACTSCI-HARD-052",
@@ -1513,7 +1921,15 @@
       },
       "answer": "D",
       "explanation": "Extrapolation uses the direction of the trend but avoids certainty about exact values.",
-      "domain": "ACT Science"
+      "domain": "ACT Science",
+      "difficulty": 10,
+      "options": [
+        "The dependent variable will reverse direction with certainty.",
+        "Future results will be identical in every trial.",
+        "The dependent variable will remain exactly constant.",
+        "The dependent variable would likely continue changing in the same direction, though the exact value is uncertain."
+      ],
+      "correct_key": "D"
     },
     {
       "id": "ACTSCI-HARD-053",
@@ -1561,7 +1977,15 @@
       },
       "answer": "D",
       "explanation": "Confounding variables are uncontrolled factors linked to both the independent and dependent variables.",
-      "domain": "ACT Science"
+      "domain": "ACT Science",
+      "difficulty": 10,
+      "options": [
+        "The units used to record data",
+        "The title of the experiment",
+        "The dependent variable itself",
+        "A variable that changes with the independent variable and also affects the dependent variable"
+      ],
+      "correct_key": "D"
     },
     {
       "id": "ACTSCI-HARD-054",
@@ -1579,7 +2003,15 @@
       },
       "answer": "D",
       "explanation": "Reliability improves with replication and controlled variables.",
-      "domain": "ACT Science"
+      "domain": "ACT Science",
+      "difficulty": 8,
+      "options": [
+        "Record only the most extreme measurements.",
+        "Change multiple variables at once to speed up results.",
+        "Remove the control condition to simplify the study.",
+        "Increase the number of trials and keep all variables constant except the independent variable."
+      ],
+      "correct_key": "D"
     },
     {
       "id": "ACTSCI-HARD-055",
@@ -1597,7 +2029,15 @@
       },
       "answer": "C",
       "explanation": "Confounding variables are uncontrolled factors linked to both the independent and dependent variables.",
-      "domain": "ACT Science"
+      "domain": "ACT Science",
+      "difficulty": 9,
+      "options": [
+        "The dependent variable itself",
+        "The title of the experiment",
+        "Selection differences in samples assigned to groups",
+        "The units used to record data"
+      ],
+      "correct_key": "C"
     },
     {
       "id": "ACTSCI-HARD-056",
@@ -1645,7 +2085,15 @@
       },
       "answer": "D",
       "explanation": "Confounding variables are uncontrolled factors linked to both the independent and dependent variables.",
-      "domain": "ACT Science"
+      "domain": "ACT Science",
+      "difficulty": 8,
+      "options": [
+        "The units used to record data",
+        "The title of the experiment",
+        "The dependent variable itself",
+        "Uncontrolled environmental conditions that vary across trials"
+      ],
+      "correct_key": "D"
     },
     {
       "id": "ACTSCI-HARD-057",
@@ -1663,7 +2111,15 @@
       },
       "answer": "B",
       "explanation": "Extrapolation uses the direction of the trend but avoids certainty about exact values.",
-      "domain": "ACT Science"
+      "domain": "ACT Science",
+      "difficulty": 8,
+      "options": [
+        "Future results will be identical in every trial.",
+        "The dependent variable would likely continue changing in the same direction, though the exact value is uncertain.",
+        "The dependent variable will reverse direction with certainty.",
+        "The dependent variable will remain exactly constant."
+      ],
+      "correct_key": "B"
     },
     {
       "id": "ACTSCI-HARD-058",
@@ -1681,7 +2137,15 @@
       },
       "answer": "D",
       "explanation": "Extrapolation uses the direction of the trend but avoids certainty about exact values.",
-      "domain": "ACT Science"
+      "domain": "ACT Science",
+      "difficulty": 8,
+      "options": [
+        "The dependent variable will reverse direction with certainty.",
+        "Future results will be identical in every trial.",
+        "The dependent variable will remain exactly constant.",
+        "The dependent variable would likely continue changing in the same direction, though the exact value is uncertain."
+      ],
+      "correct_key": "D"
     },
     {
       "id": "ACTSCI-HARD-059",
@@ -1723,7 +2187,15 @@
       },
       "answer": "C",
       "explanation": "Reliability improves with replication and controlled variables.",
-      "domain": "ACT Science"
+      "domain": "ACT Science",
+      "difficulty": 9,
+      "options": [
+        "Change multiple variables at once to speed up results.",
+        "Record only the most extreme measurements.",
+        "Increase the number of trials and keep all variables constant except the independent variable.",
+        "Remove the control condition to simplify the study."
+      ],
+      "correct_key": "C"
     },
     {
       "id": "ACTSCI-HARD-060",
@@ -1765,7 +2237,15 @@
       },
       "answer": "D",
       "explanation": "Confounding variables are uncontrolled factors linked to both the independent and dependent variables.",
-      "domain": "ACT Science"
+      "domain": "ACT Science",
+      "difficulty": 10,
+      "options": [
+        "The dependent variable itself",
+        "The units used to record data",
+        "The title of the experiment",
+        "Selection differences in samples assigned to groups"
+      ],
+      "correct_key": "D"
     },
     {
       "id": "ACTSCI-HARD-061",
@@ -1783,7 +2263,15 @@
       },
       "answer": "D",
       "explanation": "Extrapolation uses the direction of the trend but avoids certainty about exact values.",
-      "domain": "ACT Science"
+      "domain": "ACT Science",
+      "difficulty": 9,
+      "options": [
+        "The dependent variable will remain exactly constant.",
+        "Future results will be identical in every trial.",
+        "The dependent variable will reverse direction with certainty.",
+        "The dependent variable would likely continue changing in the same direction, though the exact value is uncertain."
+      ],
+      "correct_key": "D"
     },
     {
       "id": "ACTSCI-HARD-062",
@@ -1831,7 +2319,15 @@
       },
       "answer": "D",
       "explanation": "Hard ACT Science items reward cautious inference: supported trend + attention to uncertainty/controls.",
-      "domain": "ACT Science"
+      "domain": "ACT Science",
+      "difficulty": 10,
+      "options": [
+        "The data prove causation in all contexts with no uncertainty.",
+        "The results eliminate the need for controls.",
+        "The relationship must be negative in all future trials.",
+        "The pattern suggests a positive relationship, though uncertainty limits precision."
+      ],
+      "correct_key": "D"
     },
     {
       "id": "ACTSCI-HARD-063",
@@ -1849,7 +2345,15 @@
       },
       "answer": "B",
       "explanation": "Reliability improves with replication and controlled variables.",
-      "domain": "ACT Science"
+      "domain": "ACT Science",
+      "difficulty": 8,
+      "options": [
+        "Remove the control condition to simplify the study.",
+        "Increase the number of trials and keep all variables constant except the independent variable.",
+        "Record only the most extreme measurements.",
+        "Change multiple variables at once to speed up results."
+      ],
+      "correct_key": "B"
     },
     {
       "id": "ACTSCI-HARD-064",
@@ -1867,7 +2371,15 @@
       },
       "answer": "D",
       "explanation": "Confounding variables are uncontrolled factors linked to both the independent and dependent variables.",
-      "domain": "ACT Science"
+      "domain": "ACT Science",
+      "difficulty": 9,
+      "options": [
+        "The title of the experiment",
+        "The units used to record data",
+        "The dependent variable itself",
+        "Uncontrolled environmental conditions that vary across trials"
+      ],
+      "correct_key": "D"
     },
     {
       "id": "ACTSCI-HARD-065",
@@ -1885,7 +2397,15 @@
       },
       "answer": "A",
       "explanation": "Reliability improves with replication and controlled variables.",
-      "domain": "ACT Science"
+      "domain": "ACT Science",
+      "difficulty": 9,
+      "options": [
+        "Increase the number of trials and keep all variables constant except the independent variable.",
+        "Record only the most extreme measurements.",
+        "Remove the control condition to simplify the study.",
+        "Change multiple variables at once to speed up results."
+      ],
+      "correct_key": "A"
     },
     {
       "id": "ACTSCI-HARD-066",
@@ -1903,7 +2423,15 @@
       },
       "answer": "D",
       "explanation": "Confounding variables are uncontrolled factors linked to both the independent and dependent variables.",
-      "domain": "ACT Science"
+      "domain": "ACT Science",
+      "difficulty": 10,
+      "options": [
+        "The title of the experiment",
+        "The units used to record data",
+        "The dependent variable itself",
+        "Uncontrolled environmental conditions that vary across trials"
+      ],
+      "correct_key": "D"
     },
     {
       "id": "ACTSCI-HARD-067",
@@ -1951,7 +2479,15 @@
       },
       "answer": "B",
       "explanation": "Confounding variables are uncontrolled factors linked to both the independent and dependent variables.",
-      "domain": "ACT Science"
+      "domain": "ACT Science",
+      "difficulty": 9,
+      "options": [
+        "The title of the experiment",
+        "Uncontrolled environmental conditions that vary across trials",
+        "The dependent variable itself",
+        "The units used to record data"
+      ],
+      "correct_key": "B"
     },
     {
       "id": "ACTSCI-HARD-068",
@@ -1969,7 +2505,15 @@
       },
       "answer": "B",
       "explanation": "Extrapolation uses the direction of the trend but avoids certainty about exact values.",
-      "domain": "ACT Science"
+      "domain": "ACT Science",
+      "difficulty": 10,
+      "options": [
+        "The dependent variable will reverse direction with certainty.",
+        "The dependent variable would likely continue changing in the same direction, though the exact value is uncertain.",
+        "The dependent variable will remain exactly constant.",
+        "Future results will be identical in every trial."
+      ],
+      "correct_key": "B"
     },
     {
       "id": "ACTSCI-HARD-069",
@@ -1987,7 +2531,15 @@
       },
       "answer": "A",
       "explanation": "Hard ACT Science items reward cautious inference: supported trend + attention to uncertainty/controls.",
-      "domain": "ACT Science"
+      "domain": "ACT Science",
+      "difficulty": 8,
+      "options": [
+        "Results suggest an effect that should be tested with additional trials.",
+        "The data prove causation in all contexts with no uncertainty.",
+        "The relationship must be negative in all future trials.",
+        "The results eliminate the need for controls."
+      ],
+      "correct_key": "A"
     },
     {
       "id": "ACTSCI-HARD-070",
@@ -2005,7 +2557,15 @@
       },
       "answer": "C",
       "explanation": "Extrapolation uses the direction of the trend but avoids certainty about exact values.",
-      "domain": "ACT Science"
+      "domain": "ACT Science",
+      "difficulty": 10,
+      "options": [
+        "The dependent variable will reverse direction with certainty.",
+        "The dependent variable will remain exactly constant.",
+        "The dependent variable would likely continue changing in the same direction, though the exact value is uncertain.",
+        "Future results will be identical in every trial."
+      ],
+      "correct_key": "C"
     },
     {
       "id": "ACTSCI-HARD-071",
@@ -2023,7 +2583,15 @@
       },
       "answer": "B",
       "explanation": "Confounding variables are uncontrolled factors linked to both the independent and dependent variables.",
-      "domain": "ACT Science"
+      "domain": "ACT Science",
+      "difficulty": 10,
+      "options": [
+        "The title of the experiment",
+        "Selection differences in samples assigned to groups",
+        "The dependent variable itself",
+        "The units used to record data"
+      ],
+      "correct_key": "B"
     },
     {
       "id": "ACTSCI-HARD-072",
@@ -2041,7 +2609,15 @@
       },
       "answer": "C",
       "explanation": "Hard ACT Science items reward cautious inference: supported trend + attention to uncertainty/controls.",
-      "domain": "ACT Science"
+      "domain": "ACT Science",
+      "difficulty": 8,
+      "options": [
+        "The results eliminate the need for controls.",
+        "The relationship must be negative in all future trials.",
+        "The data are consistent with a trend rather than random variation alone.",
+        "The data prove causation in all contexts with no uncertainty."
+      ],
+      "correct_key": "C"
     },
     {
       "id": "ACTSCI-HARD-073",
@@ -2059,7 +2635,15 @@
       },
       "answer": "C",
       "explanation": "Confounding variables are uncontrolled factors linked to both the independent and dependent variables.",
-      "domain": "ACT Science"
+      "domain": "ACT Science",
+      "difficulty": 9,
+      "options": [
+        "The dependent variable itself",
+        "The title of the experiment",
+        "Selection differences in samples assigned to groups",
+        "The units used to record data"
+      ],
+      "correct_key": "C"
     },
     {
       "id": "ACTSCI-HARD-074",
@@ -2101,7 +2685,15 @@
       },
       "answer": "D",
       "explanation": "Confounding variables are uncontrolled factors linked to both the independent and dependent variables.",
-      "domain": "ACT Science"
+      "domain": "ACT Science",
+      "difficulty": 8,
+      "options": [
+        "The dependent variable itself",
+        "The units used to record data",
+        "The title of the experiment",
+        "Uncontrolled environmental conditions that vary across trials"
+      ],
+      "correct_key": "D"
     },
     {
       "id": "ACTSCI-HARD-075",
@@ -2119,7 +2711,15 @@
       },
       "answer": "C",
       "explanation": "Reliability improves with replication and controlled variables.",
-      "domain": "ACT Science"
+      "domain": "ACT Science",
+      "difficulty": 8,
+      "options": [
+        "Remove the control condition to simplify the study.",
+        "Change multiple variables at once to speed up results.",
+        "Increase the number of trials and keep all variables constant except the independent variable.",
+        "Record only the most extreme measurements."
+      ],
+      "correct_key": "C"
     },
     {
       "id": "ACTSCI-HARD-076",
@@ -2161,7 +2761,15 @@
       },
       "answer": "B",
       "explanation": "Extrapolation uses the direction of the trend but avoids certainty about exact values.",
-      "domain": "ACT Science"
+      "domain": "ACT Science",
+      "difficulty": 10,
+      "options": [
+        "The dependent variable will reverse direction with certainty.",
+        "The dependent variable would likely continue changing in the same direction, though the exact value is uncertain.",
+        "The dependent variable will remain exactly constant.",
+        "Future results will be identical in every trial."
+      ],
+      "correct_key": "B"
     },
     {
       "id": "ACTSCI-HARD-077",
@@ -2179,7 +2787,15 @@
       },
       "answer": "D",
       "explanation": "Confounding variables are uncontrolled factors linked to both the independent and dependent variables.",
-      "domain": "ACT Science"
+      "domain": "ACT Science",
+      "difficulty": 9,
+      "options": [
+        "The dependent variable itself",
+        "The units used to record data",
+        "The title of the experiment",
+        "A variable that changes with the independent variable and also affects the dependent variable"
+      ],
+      "correct_key": "D"
     },
     {
       "id": "ACTSCI-HARD-078",
@@ -2197,7 +2813,15 @@
       },
       "answer": "D",
       "explanation": "Extrapolation uses the direction of the trend but avoids certainty about exact values.",
-      "domain": "ACT Science"
+      "domain": "ACT Science",
+      "difficulty": 10,
+      "options": [
+        "Future results will be identical in every trial.",
+        "The dependent variable will remain exactly constant.",
+        "The dependent variable will reverse direction with certainty.",
+        "The dependent variable would likely continue changing in the same direction, though the exact value is uncertain."
+      ],
+      "correct_key": "D"
     },
     {
       "id": "ACTSCI-HARD-079",
@@ -2239,7 +2863,15 @@
       },
       "answer": "B",
       "explanation": "Extrapolation uses the direction of the trend but avoids certainty about exact values.",
-      "domain": "ACT Science"
+      "domain": "ACT Science",
+      "difficulty": 8,
+      "options": [
+        "Future results will be identical in every trial.",
+        "The dependent variable would likely continue changing in the same direction, though the exact value is uncertain.",
+        "The dependent variable will remain exactly constant.",
+        "The dependent variable will reverse direction with certainty."
+      ],
+      "correct_key": "B"
     },
     {
       "id": "ACTSCI-HARD-080",
@@ -2257,7 +2889,15 @@
       },
       "answer": "B",
       "explanation": "Hard ACT Science items reward cautious inference: supported trend + attention to uncertainty/controls.",
-      "domain": "ACT Science"
+      "domain": "ACT Science",
+      "difficulty": 9,
+      "options": [
+        "The data prove causation in all contexts with no uncertainty.",
+        "The data are consistent with a trend rather than random variation alone.",
+        "The results eliminate the need for controls.",
+        "The relationship must be negative in all future trials."
+      ],
+      "correct_key": "B"
     },
     {
       "id": "ACTSCI-HARD-081",
@@ -2275,7 +2915,15 @@
       },
       "answer": "C",
       "explanation": "Extrapolation uses the direction of the trend but avoids certainty about exact values.",
-      "domain": "ACT Science"
+      "domain": "ACT Science",
+      "difficulty": 8,
+      "options": [
+        "The dependent variable will remain exactly constant.",
+        "Future results will be identical in every trial.",
+        "The dependent variable would likely continue changing in the same direction, though the exact value is uncertain.",
+        "The dependent variable will reverse direction with certainty."
+      ],
+      "correct_key": "C"
     },
     {
       "id": "ACTSCI-HARD-082",
@@ -2293,7 +2941,15 @@
       },
       "answer": "C",
       "explanation": "Reliability improves with replication and controlled variables.",
-      "domain": "ACT Science"
+      "domain": "ACT Science",
+      "difficulty": 9,
+      "options": [
+        "Change multiple variables at once to speed up results.",
+        "Record only the most extreme measurements.",
+        "Increase the number of trials and keep all variables constant except the independent variable.",
+        "Remove the control condition to simplify the study."
+      ],
+      "correct_key": "C"
     },
     {
       "id": "ACTSCI-HARD-083",
@@ -2311,7 +2967,15 @@
       },
       "answer": "B",
       "explanation": "Confounding variables are uncontrolled factors linked to both the independent and dependent variables.",
-      "domain": "ACT Science"
+      "domain": "ACT Science",
+      "difficulty": 8,
+      "options": [
+        "The dependent variable itself",
+        "Differences in measurement technique between groups",
+        "The units used to record data",
+        "The title of the experiment"
+      ],
+      "correct_key": "B"
     },
     {
       "id": "ACTSCI-HARD-084",
@@ -2353,7 +3017,15 @@
       },
       "answer": "A",
       "explanation": "Confounding variables are uncontrolled factors linked to both the independent and dependent variables.",
-      "domain": "ACT Science"
+      "domain": "ACT Science",
+      "difficulty": 10,
+      "options": [
+        "Differences in measurement technique between groups",
+        "The dependent variable itself",
+        "The title of the experiment",
+        "The units used to record data"
+      ],
+      "correct_key": "A"
     },
     {
       "id": "ACTSCI-HARD-085",
@@ -2401,7 +3073,15 @@
       },
       "answer": "C",
       "explanation": "Reliability improves with replication and controlled variables.",
-      "domain": "ACT Science"
+      "domain": "ACT Science",
+      "difficulty": 8,
+      "options": [
+        "Remove the control condition to simplify the study.",
+        "Change multiple variables at once to speed up results.",
+        "Increase the number of trials and keep all variables constant except the independent variable.",
+        "Record only the most extreme measurements."
+      ],
+      "correct_key": "C"
     },
     {
       "id": "ACTSCI-HARD-086",
@@ -2443,7 +3123,15 @@
       },
       "answer": "B",
       "explanation": "Confounding variables are uncontrolled factors linked to both the independent and dependent variables.",
-      "domain": "ACT Science"
+      "domain": "ACT Science",
+      "difficulty": 10,
+      "options": [
+        "The units used to record data",
+        "Uncontrolled environmental conditions that vary across trials",
+        "The dependent variable itself",
+        "The title of the experiment"
+      ],
+      "correct_key": "B"
     },
     {
       "id": "ACTSCI-HARD-087",
@@ -2461,7 +3149,15 @@
       },
       "answer": "C",
       "explanation": "Reliability improves with replication and controlled variables.",
-      "domain": "ACT Science"
+      "domain": "ACT Science",
+      "difficulty": 9,
+      "options": [
+        "Remove the control condition to simplify the study.",
+        "Change multiple variables at once to speed up results.",
+        "Increase the number of trials and keep all variables constant except the independent variable.",
+        "Record only the most extreme measurements."
+      ],
+      "correct_key": "C"
     },
     {
       "id": "ACTSCI-HARD-088",
@@ -2509,7 +3205,15 @@
       },
       "answer": "A",
       "explanation": "Extrapolation uses the direction of the trend but avoids certainty about exact values.",
-      "domain": "ACT Science"
+      "domain": "ACT Science",
+      "difficulty": 9,
+      "options": [
+        "The dependent variable would likely continue changing in the same direction, though the exact value is uncertain.",
+        "The dependent variable will remain exactly constant.",
+        "The dependent variable will reverse direction with certainty.",
+        "Future results will be identical in every trial."
+      ],
+      "correct_key": "A"
     },
     {
       "id": "ACTSCI-HARD-089",
@@ -2527,7 +3231,15 @@
       },
       "answer": "A",
       "explanation": "Extrapolation uses the direction of the trend but avoids certainty about exact values.",
-      "domain": "ACT Science"
+      "domain": "ACT Science",
+      "difficulty": 9,
+      "options": [
+        "The dependent variable would likely continue changing in the same direction, though the exact value is uncertain.",
+        "The dependent variable will remain exactly constant.",
+        "The dependent variable will reverse direction with certainty.",
+        "Future results will be identical in every trial."
+      ],
+      "correct_key": "A"
     },
     {
       "id": "ACTSCI-HARD-090",
@@ -2545,7 +3257,15 @@
       },
       "answer": "A",
       "explanation": "Confounding variables are uncontrolled factors linked to both the independent and dependent variables.",
-      "domain": "ACT Science"
+      "domain": "ACT Science",
+      "difficulty": 8,
+      "options": [
+        "Uncontrolled environmental conditions that vary across trials",
+        "The units used to record data",
+        "The dependent variable itself",
+        "The title of the experiment"
+      ],
+      "correct_key": "A"
     },
     {
       "id": "ACTSCI-HARD-091",
@@ -2563,7 +3283,15 @@
       },
       "answer": "C",
       "explanation": "Hard ACT Science items reward cautious inference: supported trend + attention to uncertainty/controls.",
-      "domain": "ACT Science"
+      "domain": "ACT Science",
+      "difficulty": 10,
+      "options": [
+        "The relationship must be negative in all future trials.",
+        "The results eliminate the need for controls.",
+        "The data are consistent with a trend rather than random variation alone.",
+        "The data prove causation in all contexts with no uncertainty."
+      ],
+      "correct_key": "C"
     },
     {
       "id": "ACTSCI-HARD-092",
@@ -2605,7 +3333,15 @@
       },
       "answer": "C",
       "explanation": "Confounding variables are uncontrolled factors linked to both the independent and dependent variables.",
-      "domain": "ACT Science"
+      "domain": "ACT Science",
+      "difficulty": 10,
+      "options": [
+        "The dependent variable itself",
+        "The title of the experiment",
+        "A variable that changes with the independent variable and also affects the dependent variable",
+        "The units used to record data"
+      ],
+      "correct_key": "C"
     },
     {
       "id": "ACTSCI-HARD-093",
@@ -2623,7 +3359,15 @@
       },
       "answer": "A",
       "explanation": "Confounding variables are uncontrolled factors linked to both the independent and dependent variables.",
-      "domain": "ACT Science"
+      "domain": "ACT Science",
+      "difficulty": 9,
+      "options": [
+        "Uncontrolled environmental conditions that vary across trials",
+        "The units used to record data",
+        "The title of the experiment",
+        "The dependent variable itself"
+      ],
+      "correct_key": "A"
     },
     {
       "id": "ACTSCI-HARD-094",
@@ -2671,7 +3415,15 @@
       },
       "answer": "D",
       "explanation": "Confounding variables are uncontrolled factors linked to both the independent and dependent variables.",
-      "domain": "ACT Science"
+      "domain": "ACT Science",
+      "difficulty": 9,
+      "options": [
+        "The dependent variable itself",
+        "The units used to record data",
+        "The title of the experiment",
+        "Uncontrolled environmental conditions that vary across trials"
+      ],
+      "correct_key": "D"
     },
     {
       "id": "ACTSCI-HARD-095",
@@ -2689,7 +3441,15 @@
       },
       "answer": "C",
       "explanation": "Extrapolation uses the direction of the trend but avoids certainty about exact values.",
-      "domain": "ACT Science"
+      "domain": "ACT Science",
+      "difficulty": 9,
+      "options": [
+        "The dependent variable will remain exactly constant.",
+        "The dependent variable will reverse direction with certainty.",
+        "The dependent variable would likely continue changing in the same direction, though the exact value is uncertain.",
+        "Future results will be identical in every trial."
+      ],
+      "correct_key": "C"
     },
     {
       "id": "ACTSCI-HARD-096",
@@ -2707,7 +3467,15 @@
       },
       "answer": "B",
       "explanation": "Reliability improves with replication and controlled variables.",
-      "domain": "ACT Science"
+      "domain": "ACT Science",
+      "difficulty": 8,
+      "options": [
+        "Record only the most extreme measurements.",
+        "Increase the number of trials and keep all variables constant except the independent variable.",
+        "Change multiple variables at once to speed up results.",
+        "Remove the control condition to simplify the study."
+      ],
+      "correct_key": "B"
     },
     {
       "id": "ACTSCI-HARD-097",
@@ -2755,7 +3523,15 @@
       },
       "answer": "A",
       "explanation": "Reliability improves with replication and controlled variables.",
-      "domain": "ACT Science"
+      "domain": "ACT Science",
+      "difficulty": 9,
+      "options": [
+        "Increase the number of trials and keep all variables constant except the independent variable.",
+        "Record only the most extreme measurements.",
+        "Remove the control condition to simplify the study.",
+        "Change multiple variables at once to speed up results."
+      ],
+      "correct_key": "A"
     },
     {
       "id": "ACTSCI-HARD-098",
@@ -2773,7 +3549,15 @@
       },
       "answer": "C",
       "explanation": "Confounding variables are uncontrolled factors linked to both the independent and dependent variables.",
-      "domain": "ACT Science"
+      "domain": "ACT Science",
+      "difficulty": 10,
+      "options": [
+        "The units used to record data",
+        "The dependent variable itself",
+        "A variable that changes with the independent variable and also affects the dependent variable",
+        "The title of the experiment"
+      ],
+      "correct_key": "C"
     },
     {
       "id": "ACTSCI-HARD-099",
@@ -2791,7 +3575,15 @@
       },
       "answer": "B",
       "explanation": "Confounding variables are uncontrolled factors linked to both the independent and dependent variables.",
-      "domain": "ACT Science"
+      "domain": "ACT Science",
+      "difficulty": 9,
+      "options": [
+        "The dependent variable itself",
+        "Selection differences in samples assigned to groups",
+        "The units used to record data",
+        "The title of the experiment"
+      ],
+      "correct_key": "B"
     },
     {
       "id": "ACTSCI-HARD-100",
@@ -2809,7 +3601,15 @@
       },
       "answer": "D",
       "explanation": "Reliability improves with replication and controlled variables.",
-      "domain": "ACT Science"
+      "domain": "ACT Science",
+      "difficulty": 9,
+      "options": [
+        "Record only the most extreme measurements.",
+        "Remove the control condition to simplify the study.",
+        "Change multiple variables at once to speed up results.",
+        "Increase the number of trials and keep all variables constant except the independent variable."
+      ],
+      "correct_key": "D"
     },
     {
       "id": "ACTSCI-HARD-101",
@@ -2827,7 +3627,15 @@
       },
       "answer": "A",
       "explanation": "Reliability improves with replication and controlled variables.",
-      "domain": "ACT Science"
+      "domain": "ACT Science",
+      "difficulty": 10,
+      "options": [
+        "Increase the number of trials and keep all variables constant except the independent variable.",
+        "Remove the control condition to simplify the study.",
+        "Record only the most extreme measurements.",
+        "Change multiple variables at once to speed up results."
+      ],
+      "correct_key": "A"
     },
     {
       "id": "ACTSCI-HARD-102",
@@ -2845,7 +3653,15 @@
       },
       "answer": "A",
       "explanation": "Reliability improves with replication and controlled variables.",
-      "domain": "ACT Science"
+      "domain": "ACT Science",
+      "difficulty": 9,
+      "options": [
+        "Increase the number of trials and keep all variables constant except the independent variable.",
+        "Remove the control condition to simplify the study.",
+        "Record only the most extreme measurements.",
+        "Change multiple variables at once to speed up results."
+      ],
+      "correct_key": "A"
     },
     {
       "id": "ACTSCI-HARD-103",
@@ -2893,7 +3709,15 @@
       },
       "answer": "A",
       "explanation": "Reliability improves with replication and controlled variables.",
-      "domain": "ACT Science"
+      "domain": "ACT Science",
+      "difficulty": 8,
+      "options": [
+        "Increase the number of trials and keep all variables constant except the independent variable.",
+        "Change multiple variables at once to speed up results.",
+        "Remove the control condition to simplify the study.",
+        "Record only the most extreme measurements."
+      ],
+      "correct_key": "A"
     },
     {
       "id": "ACTSCI-HARD-104",
@@ -2911,7 +3735,15 @@
       },
       "answer": "C",
       "explanation": "Hard ACT Science items reward cautious inference: supported trend + attention to uncertainty/controls.",
-      "domain": "ACT Science"
+      "domain": "ACT Science",
+      "difficulty": 9,
+      "options": [
+        "The data prove causation in all contexts with no uncertainty.",
+        "The relationship must be negative in all future trials.",
+        "A change in the independent variable is associated with a measurable change in the dependent variable.",
+        "The results eliminate the need for controls."
+      ],
+      "correct_key": "C"
     },
     {
       "id": "ACTSCI-HARD-105",
@@ -2929,7 +3761,15 @@
       },
       "answer": "A",
       "explanation": "Hard ACT Science items reward cautious inference: supported trend + attention to uncertainty/controls.",
-      "domain": "ACT Science"
+      "domain": "ACT Science",
+      "difficulty": 9,
+      "options": [
+        "The data are consistent with a trend rather than random variation alone.",
+        "The relationship must be negative in all future trials.",
+        "The data prove causation in all contexts with no uncertainty.",
+        "The results eliminate the need for controls."
+      ],
+      "correct_key": "A"
     },
     {
       "id": "ACTSCI-HARD-106",
@@ -2971,7 +3811,15 @@
       },
       "answer": "D",
       "explanation": "Confounding variables are uncontrolled factors linked to both the independent and dependent variables.",
-      "domain": "ACT Science"
+      "domain": "ACT Science",
+      "difficulty": 10,
+      "options": [
+        "The title of the experiment",
+        "The dependent variable itself",
+        "The units used to record data",
+        "Differences in measurement technique between groups"
+      ],
+      "correct_key": "D"
     },
     {
       "id": "ACTSCI-HARD-107",
@@ -2989,7 +3837,15 @@
       },
       "answer": "C",
       "explanation": "Reliability improves with replication and controlled variables.",
-      "domain": "ACT Science"
+      "domain": "ACT Science",
+      "difficulty": 10,
+      "options": [
+        "Change multiple variables at once to speed up results.",
+        "Record only the most extreme measurements.",
+        "Increase the number of trials and keep all variables constant except the independent variable.",
+        "Remove the control condition to simplify the study."
+      ],
+      "correct_key": "C"
     },
     {
       "id": "ACTSCI-HARD-108",
@@ -3037,7 +3893,15 @@
       },
       "answer": "B",
       "explanation": "Confounding variables are uncontrolled factors linked to both the independent and dependent variables.",
-      "domain": "ACT Science"
+      "domain": "ACT Science",
+      "difficulty": 10,
+      "options": [
+        "The dependent variable itself",
+        "Differences in measurement technique between groups",
+        "The title of the experiment",
+        "The units used to record data"
+      ],
+      "correct_key": "B"
     },
     {
       "id": "ACTSCI-HARD-109",
@@ -3055,7 +3919,15 @@
       },
       "answer": "B",
       "explanation": "Confounding variables are uncontrolled factors linked to both the independent and dependent variables.",
-      "domain": "ACT Science"
+      "domain": "ACT Science",
+      "difficulty": 8,
+      "options": [
+        "The units used to record data",
+        "Selection differences in samples assigned to groups",
+        "The dependent variable itself",
+        "The title of the experiment"
+      ],
+      "correct_key": "B"
     },
     {
       "id": "ACTSCI-HARD-110",
@@ -3103,7 +3975,15 @@
       },
       "answer": "D",
       "explanation": "Hard ACT Science items reward cautious inference: supported trend + attention to uncertainty/controls.",
-      "domain": "ACT Science"
+      "domain": "ACT Science",
+      "difficulty": 10,
+      "options": [
+        "The results eliminate the need for controls.",
+        "The relationship must be negative in all future trials.",
+        "The data prove causation in all contexts with no uncertainty.",
+        "The pattern suggests a positive relationship, though uncertainty limits precision."
+      ],
+      "correct_key": "D"
     },
     {
       "id": "ACTSCI-HARD-111",
@@ -3151,7 +4031,15 @@
       },
       "answer": "A",
       "explanation": "Reliability improves with replication and controlled variables.",
-      "domain": "ACT Science"
+      "domain": "ACT Science",
+      "difficulty": 10,
+      "options": [
+        "Increase the number of trials and keep all variables constant except the independent variable.",
+        "Record only the most extreme measurements.",
+        "Change multiple variables at once to speed up results.",
+        "Remove the control condition to simplify the study."
+      ],
+      "correct_key": "A"
     },
     {
       "id": "ACTSCI-HARD-112",
@@ -3169,7 +4057,15 @@
       },
       "answer": "D",
       "explanation": "Hard ACT Science items reward cautious inference: supported trend + attention to uncertainty/controls.",
-      "domain": "ACT Science"
+      "domain": "ACT Science",
+      "difficulty": 9,
+      "options": [
+        "The results eliminate the need for controls.",
+        "The relationship must be negative in all future trials.",
+        "The data prove causation in all contexts with no uncertainty.",
+        "The data are consistent with a trend rather than random variation alone."
+      ],
+      "correct_key": "D"
     },
     {
       "id": "ACTSCI-HARD-113",
@@ -3187,7 +4083,15 @@
       },
       "answer": "D",
       "explanation": "Reliability improves with replication and controlled variables.",
-      "domain": "ACT Science"
+      "domain": "ACT Science",
+      "difficulty": 9,
+      "options": [
+        "Record only the most extreme measurements.",
+        "Change multiple variables at once to speed up results.",
+        "Remove the control condition to simplify the study.",
+        "Increase the number of trials and keep all variables constant except the independent variable."
+      ],
+      "correct_key": "D"
     },
     {
       "id": "ACTSCI-HARD-114",
@@ -3229,7 +4133,15 @@
       },
       "answer": "A",
       "explanation": "Extrapolation uses the direction of the trend but avoids certainty about exact values.",
-      "domain": "ACT Science"
+      "domain": "ACT Science",
+      "difficulty": 10,
+      "options": [
+        "The dependent variable would likely continue changing in the same direction, though the exact value is uncertain.",
+        "The dependent variable will remain exactly constant.",
+        "The dependent variable will reverse direction with certainty.",
+        "Future results will be identical in every trial."
+      ],
+      "correct_key": "A"
     },
     {
       "id": "ACTSCI-HARD-115",
@@ -3271,7 +4183,15 @@
       },
       "answer": "D",
       "explanation": "Reliability improves with replication and controlled variables.",
-      "domain": "ACT Science"
+      "domain": "ACT Science",
+      "difficulty": 9,
+      "options": [
+        "Record only the most extreme measurements.",
+        "Change multiple variables at once to speed up results.",
+        "Remove the control condition to simplify the study.",
+        "Increase the number of trials and keep all variables constant except the independent variable."
+      ],
+      "correct_key": "D"
     },
     {
       "id": "ACTSCI-HARD-116",
@@ -3313,7 +4233,15 @@
       },
       "answer": "C",
       "explanation": "Confounding variables are uncontrolled factors linked to both the independent and dependent variables.",
-      "domain": "ACT Science"
+      "domain": "ACT Science",
+      "difficulty": 9,
+      "options": [
+        "The title of the experiment",
+        "The dependent variable itself",
+        "Uncontrolled environmental conditions that vary across trials",
+        "The units used to record data"
+      ],
+      "correct_key": "C"
     },
     {
       "id": "ACTSCI-HARD-117",
@@ -3331,7 +4259,15 @@
       },
       "answer": "B",
       "explanation": "Reliability improves with replication and controlled variables.",
-      "domain": "ACT Science"
+      "domain": "ACT Science",
+      "difficulty": 9,
+      "options": [
+        "Remove the control condition to simplify the study.",
+        "Increase the number of trials and keep all variables constant except the independent variable.",
+        "Change multiple variables at once to speed up results.",
+        "Record only the most extreme measurements."
+      ],
+      "correct_key": "B"
     },
     {
       "id": "ACTSCI-HARD-118",
@@ -3379,7 +4315,15 @@
       },
       "answer": "A",
       "explanation": "Extrapolation uses the direction of the trend but avoids certainty about exact values.",
-      "domain": "ACT Science"
+      "domain": "ACT Science",
+      "difficulty": 10,
+      "options": [
+        "The dependent variable would likely continue changing in the same direction, though the exact value is uncertain.",
+        "Future results will be identical in every trial.",
+        "The dependent variable will remain exactly constant.",
+        "The dependent variable will reverse direction with certainty."
+      ],
+      "correct_key": "A"
     },
     {
       "id": "ACTSCI-HARD-119",
@@ -3427,7 +4371,15 @@
       },
       "answer": "B",
       "explanation": "Extrapolation uses the direction of the trend but avoids certainty about exact values.",
-      "domain": "ACT Science"
+      "domain": "ACT Science",
+      "difficulty": 8,
+      "options": [
+        "Future results will be identical in every trial.",
+        "The dependent variable would likely continue changing in the same direction, though the exact value is uncertain.",
+        "The dependent variable will reverse direction with certainty.",
+        "The dependent variable will remain exactly constant."
+      ],
+      "correct_key": "B"
     },
     {
       "id": "ACTSCI-HARD-120",
@@ -3445,7 +4397,15 @@
       },
       "answer": "C",
       "explanation": "Extrapolation uses the direction of the trend but avoids certainty about exact values.",
-      "domain": "ACT Science"
+      "domain": "ACT Science",
+      "difficulty": 9,
+      "options": [
+        "The dependent variable will reverse direction with certainty.",
+        "The dependent variable will remain exactly constant.",
+        "The dependent variable would likely continue changing in the same direction, though the exact value is uncertain.",
+        "Future results will be identical in every trial."
+      ],
+      "correct_key": "C"
     },
     {
       "id": "ACTSCI-HARD-121",
@@ -3493,7 +4453,15 @@
       },
       "answer": "B",
       "explanation": "Reliability improves with replication and controlled variables.",
-      "domain": "ACT Science"
+      "domain": "ACT Science",
+      "difficulty": 9,
+      "options": [
+        "Record only the most extreme measurements.",
+        "Increase the number of trials and keep all variables constant except the independent variable.",
+        "Change multiple variables at once to speed up results.",
+        "Remove the control condition to simplify the study."
+      ],
+      "correct_key": "B"
     },
     {
       "id": "ACTSCI-HARD-122",
@@ -3511,7 +4479,15 @@
       },
       "answer": "A",
       "explanation": "Confounding variables are uncontrolled factors linked to both the independent and dependent variables.",
-      "domain": "ACT Science"
+      "domain": "ACT Science",
+      "difficulty": 9,
+      "options": [
+        "A variable that changes with the independent variable and also affects the dependent variable",
+        "The dependent variable itself",
+        "The units used to record data",
+        "The title of the experiment"
+      ],
+      "correct_key": "A"
     },
     {
       "id": "ACTSCI-HARD-123",
@@ -3553,7 +4529,15 @@
       },
       "answer": "A",
       "explanation": "Reliability improves with replication and controlled variables.",
-      "domain": "ACT Science"
+      "domain": "ACT Science",
+      "difficulty": 10,
+      "options": [
+        "Increase the number of trials and keep all variables constant except the independent variable.",
+        "Change multiple variables at once to speed up results.",
+        "Record only the most extreme measurements.",
+        "Remove the control condition to simplify the study."
+      ],
+      "correct_key": "A"
     },
     {
       "id": "ACTSCI-HARD-124",
@@ -3595,7 +4579,15 @@
       },
       "answer": "D",
       "explanation": "Reliability improves with replication and controlled variables.",
-      "domain": "ACT Science"
+      "domain": "ACT Science",
+      "difficulty": 9,
+      "options": [
+        "Record only the most extreme measurements.",
+        "Change multiple variables at once to speed up results.",
+        "Remove the control condition to simplify the study.",
+        "Increase the number of trials and keep all variables constant except the independent variable."
+      ],
+      "correct_key": "D"
     },
     {
       "id": "ACTSCI-HARD-125",
@@ -3613,7 +4605,15 @@
       },
       "answer": "D",
       "explanation": "Confounding variables are uncontrolled factors linked to both the independent and dependent variables.",
-      "domain": "ACT Science"
+      "domain": "ACT Science",
+      "difficulty": 8,
+      "options": [
+        "The dependent variable itself",
+        "The title of the experiment",
+        "The units used to record data",
+        "Uncontrolled environmental conditions that vary across trials"
+      ],
+      "correct_key": "D"
     },
     {
       "id": "ACTSCI-HARD-126",
@@ -3631,7 +4631,15 @@
       },
       "answer": "C",
       "explanation": "Reliability improves with replication and controlled variables.",
-      "domain": "ACT Science"
+      "domain": "ACT Science",
+      "difficulty": 8,
+      "options": [
+        "Remove the control condition to simplify the study.",
+        "Change multiple variables at once to speed up results.",
+        "Increase the number of trials and keep all variables constant except the independent variable.",
+        "Record only the most extreme measurements."
+      ],
+      "correct_key": "C"
     },
     {
       "id": "ACTSCI-HARD-127",
@@ -3649,7 +4657,15 @@
       },
       "answer": "A",
       "explanation": "Reliability improves with replication and controlled variables.",
-      "domain": "ACT Science"
+      "domain": "ACT Science",
+      "difficulty": 8,
+      "options": [
+        "Increase the number of trials and keep all variables constant except the independent variable.",
+        "Remove the control condition to simplify the study.",
+        "Record only the most extreme measurements.",
+        "Change multiple variables at once to speed up results."
+      ],
+      "correct_key": "A"
     },
     {
       "id": "ACTSCI-HARD-128",
@@ -3691,7 +4707,15 @@
       },
       "answer": "C",
       "explanation": "Reliability improves with replication and controlled variables.",
-      "domain": "ACT Science"
+      "domain": "ACT Science",
+      "difficulty": 10,
+      "options": [
+        "Record only the most extreme measurements.",
+        "Remove the control condition to simplify the study.",
+        "Increase the number of trials and keep all variables constant except the independent variable.",
+        "Change multiple variables at once to speed up results."
+      ],
+      "correct_key": "C"
     },
     {
       "id": "ACTSCI-HARD-129",
@@ -3733,7 +4757,15 @@
       },
       "answer": "C",
       "explanation": "Hard ACT Science items reward cautious inference: supported trend + attention to uncertainty/controls.",
-      "domain": "ACT Science"
+      "domain": "ACT Science",
+      "difficulty": 10,
+      "options": [
+        "The results eliminate the need for controls.",
+        "The relationship must be negative in all future trials.",
+        "The data are consistent with a trend rather than random variation alone.",
+        "The data prove causation in all contexts with no uncertainty."
+      ],
+      "correct_key": "C"
     },
     {
       "id": "ACTSCI-HARD-130",
@@ -3781,7 +4813,15 @@
       },
       "answer": "D",
       "explanation": "Confounding variables are uncontrolled factors linked to both the independent and dependent variables.",
-      "domain": "ACT Science"
+      "domain": "ACT Science",
+      "difficulty": 9,
+      "options": [
+        "The dependent variable itself",
+        "The title of the experiment",
+        "The units used to record data",
+        "Selection differences in samples assigned to groups"
+      ],
+      "correct_key": "D"
     },
     {
       "id": "ACTSCI-HARD-131",
@@ -3823,7 +4863,15 @@
       },
       "answer": "D",
       "explanation": "Reliability improves with replication and controlled variables.",
-      "domain": "ACT Science"
+      "domain": "ACT Science",
+      "difficulty": 10,
+      "options": [
+        "Remove the control condition to simplify the study.",
+        "Record only the most extreme measurements.",
+        "Change multiple variables at once to speed up results.",
+        "Increase the number of trials and keep all variables constant except the independent variable."
+      ],
+      "correct_key": "D"
     },
     {
       "id": "ACTSCI-HARD-132",
@@ -3865,7 +4913,15 @@
       },
       "answer": "D",
       "explanation": "Confounding variables are uncontrolled factors linked to both the independent and dependent variables.",
-      "domain": "ACT Science"
+      "domain": "ACT Science",
+      "difficulty": 9,
+      "options": [
+        "The dependent variable itself",
+        "The title of the experiment",
+        "The units used to record data",
+        "Differences in measurement technique between groups"
+      ],
+      "correct_key": "D"
     },
     {
       "id": "ACTSCI-HARD-133",
@@ -3913,7 +4969,15 @@
       },
       "answer": "D",
       "explanation": "Confounding variables are uncontrolled factors linked to both the independent and dependent variables.",
-      "domain": "ACT Science"
+      "domain": "ACT Science",
+      "difficulty": 8,
+      "options": [
+        "The title of the experiment",
+        "The dependent variable itself",
+        "The units used to record data",
+        "Differences in measurement technique between groups"
+      ],
+      "correct_key": "D"
     },
     {
       "id": "ACTSCI-HARD-134",
@@ -3931,7 +4995,15 @@
       },
       "answer": "C",
       "explanation": "Reliability improves with replication and controlled variables.",
-      "domain": "ACT Science"
+      "domain": "ACT Science",
+      "difficulty": 10,
+      "options": [
+        "Record only the most extreme measurements.",
+        "Change multiple variables at once to speed up results.",
+        "Increase the number of trials and keep all variables constant except the independent variable.",
+        "Remove the control condition to simplify the study."
+      ],
+      "correct_key": "C"
     },
     {
       "id": "ACTSCI-HARD-135",
@@ -3973,7 +5045,15 @@
       },
       "answer": "A",
       "explanation": "Extrapolation uses the direction of the trend but avoids certainty about exact values.",
-      "domain": "ACT Science"
+      "domain": "ACT Science",
+      "difficulty": 9,
+      "options": [
+        "The dependent variable would likely continue changing in the same direction, though the exact value is uncertain.",
+        "The dependent variable will remain exactly constant.",
+        "Future results will be identical in every trial.",
+        "The dependent variable will reverse direction with certainty."
+      ],
+      "correct_key": "A"
     },
     {
       "id": "ACTSCI-HARD-136",
@@ -4021,7 +5101,15 @@
       },
       "answer": "B",
       "explanation": "Extrapolation uses the direction of the trend but avoids certainty about exact values.",
-      "domain": "ACT Science"
+      "domain": "ACT Science",
+      "difficulty": 10,
+      "options": [
+        "The dependent variable will remain exactly constant.",
+        "The dependent variable would likely continue changing in the same direction, though the exact value is uncertain.",
+        "The dependent variable will reverse direction with certainty.",
+        "Future results will be identical in every trial."
+      ],
+      "correct_key": "B"
     },
     {
       "id": "ACTSCI-HARD-137",
@@ -4063,7 +5151,15 @@
       },
       "answer": "D",
       "explanation": "Confounding variables are uncontrolled factors linked to both the independent and dependent variables.",
-      "domain": "ACT Science"
+      "domain": "ACT Science",
+      "difficulty": 8,
+      "options": [
+        "The title of the experiment",
+        "The units used to record data",
+        "The dependent variable itself",
+        "Differences in measurement technique between groups"
+      ],
+      "correct_key": "D"
     },
     {
       "id": "ACTSCI-HARD-138",
@@ -4105,7 +5201,15 @@
       },
       "answer": "D",
       "explanation": "Hard ACT Science items reward cautious inference: supported trend + attention to uncertainty/controls.",
-      "domain": "ACT Science"
+      "domain": "ACT Science",
+      "difficulty": 10,
+      "options": [
+        "The relationship must be negative in all future trials.",
+        "The results eliminate the need for controls.",
+        "The data prove causation in all contexts with no uncertainty.",
+        "The pattern suggests a positive relationship, though uncertainty limits precision."
+      ],
+      "correct_key": "D"
     },
     {
       "id": "ACTSCI-HARD-139",
@@ -4123,7 +5227,15 @@
       },
       "answer": "D",
       "explanation": "Hard ACT Science items reward cautious inference: supported trend + attention to uncertainty/controls.",
-      "domain": "ACT Science"
+      "domain": "ACT Science",
+      "difficulty": 9,
+      "options": [
+        "The data prove causation in all contexts with no uncertainty.",
+        "The results eliminate the need for controls.",
+        "The relationship must be negative in all future trials.",
+        "A change in the independent variable is associated with a measurable change in the dependent variable."
+      ],
+      "correct_key": "D"
     },
     {
       "id": "ACTSCI-HARD-140",
@@ -4141,7 +5253,15 @@
       },
       "answer": "C",
       "explanation": "Extrapolation uses the direction of the trend but avoids certainty about exact values.",
-      "domain": "ACT Science"
+      "domain": "ACT Science",
+      "difficulty": 8,
+      "options": [
+        "Future results will be identical in every trial.",
+        "The dependent variable will remain exactly constant.",
+        "The dependent variable would likely continue changing in the same direction, though the exact value is uncertain.",
+        "The dependent variable will reverse direction with certainty."
+      ],
+      "correct_key": "C"
     },
     {
       "id": "ACTSCI-HARD-141",
@@ -4159,7 +5279,15 @@
       },
       "answer": "D",
       "explanation": "Reliability improves with replication and controlled variables.",
-      "domain": "ACT Science"
+      "domain": "ACT Science",
+      "difficulty": 10,
+      "options": [
+        "Remove the control condition to simplify the study.",
+        "Record only the most extreme measurements.",
+        "Change multiple variables at once to speed up results.",
+        "Increase the number of trials and keep all variables constant except the independent variable."
+      ],
+      "correct_key": "D"
     },
     {
       "id": "ACTSCI-HARD-142",
@@ -4177,7 +5305,15 @@
       },
       "answer": "A",
       "explanation": "Extrapolation uses the direction of the trend but avoids certainty about exact values.",
-      "domain": "ACT Science"
+      "domain": "ACT Science",
+      "difficulty": 8,
+      "options": [
+        "The dependent variable would likely continue changing in the same direction, though the exact value is uncertain.",
+        "Future results will be identical in every trial.",
+        "The dependent variable will reverse direction with certainty.",
+        "The dependent variable will remain exactly constant."
+      ],
+      "correct_key": "A"
     },
     {
       "id": "ACTSCI-HARD-143",
@@ -4225,7 +5361,15 @@
       },
       "answer": "D",
       "explanation": "Hard ACT Science items reward cautious inference: supported trend + attention to uncertainty/controls.",
-      "domain": "ACT Science"
+      "domain": "ACT Science",
+      "difficulty": 8,
+      "options": [
+        "The data prove causation in all contexts with no uncertainty.",
+        "The results eliminate the need for controls.",
+        "The relationship must be negative in all future trials.",
+        "A change in the independent variable is associated with a measurable change in the dependent variable."
+      ],
+      "correct_key": "D"
     },
     {
       "id": "ACTSCI-HARD-144",
@@ -4243,7 +5387,15 @@
       },
       "answer": "C",
       "explanation": "Reliability improves with replication and controlled variables.",
-      "domain": "ACT Science"
+      "domain": "ACT Science",
+      "difficulty": 10,
+      "options": [
+        "Change multiple variables at once to speed up results.",
+        "Record only the most extreme measurements.",
+        "Increase the number of trials and keep all variables constant except the independent variable.",
+        "Remove the control condition to simplify the study."
+      ],
+      "correct_key": "C"
     },
     {
       "id": "ACTSCI-HARD-145",
@@ -4261,7 +5413,15 @@
       },
       "answer": "D",
       "explanation": "Confounding variables are uncontrolled factors linked to both the independent and dependent variables.",
-      "domain": "ACT Science"
+      "domain": "ACT Science",
+      "difficulty": 10,
+      "options": [
+        "The units used to record data",
+        "The title of the experiment",
+        "The dependent variable itself",
+        "Uncontrolled environmental conditions that vary across trials"
+      ],
+      "correct_key": "D"
     },
     {
       "id": "ACTSCI-HARD-146",
@@ -4303,7 +5463,15 @@
       },
       "answer": "C",
       "explanation": "Confounding variables are uncontrolled factors linked to both the independent and dependent variables.",
-      "domain": "ACT Science"
+      "domain": "ACT Science",
+      "difficulty": 9,
+      "options": [
+        "The title of the experiment",
+        "The dependent variable itself",
+        "Differences in measurement technique between groups",
+        "The units used to record data"
+      ],
+      "correct_key": "C"
     },
     {
       "id": "ACTSCI-HARD-147",
@@ -4321,7 +5489,15 @@
       },
       "answer": "B",
       "explanation": "Extrapolation uses the direction of the trend but avoids certainty about exact values.",
-      "domain": "ACT Science"
+      "domain": "ACT Science",
+      "difficulty": 9,
+      "options": [
+        "The dependent variable will reverse direction with certainty.",
+        "The dependent variable would likely continue changing in the same direction, though the exact value is uncertain.",
+        "The dependent variable will remain exactly constant.",
+        "Future results will be identical in every trial."
+      ],
+      "correct_key": "B"
     },
     {
       "id": "ACTSCI-HARD-148",
@@ -4339,7 +5515,15 @@
       },
       "answer": "A",
       "explanation": "Reliability improves with replication and controlled variables.",
-      "domain": "ACT Science"
+      "domain": "ACT Science",
+      "difficulty": 10,
+      "options": [
+        "Increase the number of trials and keep all variables constant except the independent variable.",
+        "Change multiple variables at once to speed up results.",
+        "Remove the control condition to simplify the study.",
+        "Record only the most extreme measurements."
+      ],
+      "correct_key": "A"
     },
     {
       "id": "ACTSCI-HARD-149",
@@ -4357,7 +5541,15 @@
       },
       "answer": "C",
       "explanation": "Confounding variables are uncontrolled factors linked to both the independent and dependent variables.",
-      "domain": "ACT Science"
+      "domain": "ACT Science",
+      "difficulty": 8,
+      "options": [
+        "The dependent variable itself",
+        "The units used to record data",
+        "A variable that changes with the independent variable and also affects the dependent variable",
+        "The title of the experiment"
+      ],
+      "correct_key": "C"
     },
     {
       "id": "ACTSCI-HARD-150",
@@ -4375,7 +5567,15 @@
       },
       "answer": "D",
       "explanation": "Reliability improves with replication and controlled variables.",
-      "domain": "ACT Science"
+      "domain": "ACT Science",
+      "difficulty": 8,
+      "options": [
+        "Remove the control condition to simplify the study.",
+        "Record only the most extreme measurements.",
+        "Change multiple variables at once to speed up results.",
+        "Increase the number of trials and keep all variables constant except the independent variable."
+      ],
+      "correct_key": "D"
     }
   ]
 }

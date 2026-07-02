@@ -225,7 +225,7 @@
   },
   {
     "id": "AP_Macro_15",
-    "question": "When a country's currency appreciates, net exports will likely:",
+    "question": "When a country's currency appreciates, net exports will:",
     "choices": {
       "A": "Increase",
       "B": "First increase then decrease",
@@ -289,7 +289,7 @@
   },
   {
     "id": "AP_Macro_19",
-    "question": "If U.S. interest rates rise relative to Europe, the dollar will likely:",
+    "question": "If U.S. interest rates rise relative to Europe, the dollar will:",
     "choices": {
       "A": "Depreciate",
       "B": "Appreciate",
@@ -362,14 +362,14 @@
     },
     "answer": "A",
     "difficulty": 5,
-    "explanation": "Job training programs can improve workers' skills and reduce structural unemployment, thereby decreasing the natural rate of unemployment. The other options would likely increase or maintain the natural rate.",
+    "explanation": "Job training programs can improve workers' skills and reduce structural unemployment, thereby decreasing the natural rate of unemployment. The other options would increase or maintain the natural rate.",
     "correct_key": "A",
     "section": "social-studies",
     "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_24",
-    "question": "In the short run, if the price level increases unexpectedly, a firm that produces intermediate goods may:",
+    "question": "In the short run, if the price level increases unexpectedly, a firm that produces intermediate goods:",
     "choices": {
       "A": "Reduce its output because its input costs have not yet adjusted.",
       "B": "Increase its output because its selling price has increased while its input costs remain fixed.",
@@ -385,7 +385,7 @@
   },
   {
     "id": "AP_Macroeconomics_25",
-    "question": "A significant decline in the value of a country's currency on the foreign exchange market will most likely lead to:",
+    "question": "A significant decline in the value of a country's currency on the foreign exchange market will most lead to:",
     "choices": {
       "A": "Increased exports and decreased imports.",
       "B": "Decreased exports and increased imports.",
@@ -458,7 +458,7 @@
     },
     "answer": "A",
     "difficulty": 5,
-    "explanation": "The short-run Phillips Curve shows an inverse relationship between the rate of inflation and the rate of unemployment. As unemployment falls, inflation tends to rise, and vice versa.",
+    "explanation": "The short-run Phillips Curve shows an inverse relationship between the rate of inflation and the rate of unemployment. As unemployment falls, inflation rise, and vice versa.",
     "correct_key": "A",
     "section": "social-studies",
     "skill": "AP Macroeconomics"
@@ -497,7 +497,7 @@
   },
   {
     "id": "AP_Macroeconomics_33",
-    "question": "A country experiences a decrease in productivity growth. This would most likely lead to:",
+    "question": "A country experiences a decrease in productivity growth. This would most lead to:",
     "choices": {
       "A": "An increase in the long-run aggregate supply curve.",
       "B": "No change in either aggregate supply curve.",
@@ -529,7 +529,7 @@
   },
   {
     "id": "AP_Macroeconomics_35",
-    "question": "Which of the following policies is most likely to increase aggregate supply in the long run?",
+    "question": "Which of the following policies is most to increase aggregate supply in the long run?",
     "choices": {
       "A": "Reducing taxes on corporate profits.",
       "B": "Increasing government spending on social programs.",
@@ -538,7 +538,7 @@
     },
     "answer": "A",
     "difficulty": 6,
-    "explanation": "Reducing taxes on corporate profits can incentivize businesses to invest more, expand production, and hire more workers, thereby increasing aggregate supply in the long run. The other options would likely decrease or have neutral effects on long-run AS.",
+    "explanation": "Reducing taxes on corporate profits can incentivize businesses to invest more, expand production, and hire more workers, thereby increasing aggregate supply in the long run. The other options would decrease or have neutral effects on long-run AS.",
     "correct_key": "A",
     "section": "social-studies",
     "skill": "AP Macroeconomics"
@@ -593,7 +593,7 @@
   },
   {
     "id": "AP_Macroeconomics_40",
-    "question": "If the central bank wants to combat inflation, it would most likely:",
+    "question": "If the central bank wants to combat inflation, it would most:",
     "choices": {
       "A": "Buy government securities.",
       "B": "Lower the reserve requirement.",
@@ -618,7 +618,7 @@
     },
     "answer": "C",
     "difficulty": 7,
-    "explanation": "The Laffer Curve illustrates the relationship between tax rates and tax revenue. It posits that at very high tax rates, reducing the rate could potentially increase revenue by stimulating economic activity and reducing tax evasion.",
+    "explanation": "The Laffer Curve illustrates the relationship between tax rates and tax revenue. It posits that at very high tax rates, reducing the rate potentially increase revenue by stimulating economic activity and reducing tax evasion.",
     "correct_key": "C",
     "section": "social-studies",
     "skill": "AP Macroeconomics"
@@ -657,7 +657,7 @@
   },
   {
     "id": "AP_Macroeconomics_44",
-    "question": "An increase in the expected future price level is most likely to cause:",
+    "question": "An increase in the expected future price level is most to cause:",
     "choices": {
       "A": "A leftward shift in the short-run aggregate supply curve.",
       "B": "A rightward shift in the short-run aggregate supply curve.",
@@ -714,14 +714,14 @@
     },
     "answer": "D",
     "difficulty": 6,
-    "explanation": "An increase in demand for U.S. exports means foreigners need more U.S. dollars to buy those goods, increasing the demand for dollars and thus its exchange rate. Option A would decrease the dollar's value as capital flows out. Option C would make U.S. goods cheaper, increasing demand for dollars, but the question asks about the dollar's exchange rate relative to the Euro, and relative inflation is a key determinant. While relative inflation (less inflation makes currency stronger) is a factor, strong export demand is a more direct cause of immediate exchange rate appreciation in this context. Option B is fiscal policy with potential inflationary effects, which could weaken the dollar.",
+    "explanation": "An increase in demand for U.S. exports means foreigners need more U.S. dollars to buy those goods, increasing the demand for dollars and thus its exchange rate. Option A would decrease the dollar's value as capital flows out. Option C would make U.S. goods cheaper, increasing demand for dollars, but the question asks about the dollar's exchange rate relative to the Euro, and relative inflation is a key determinant. While relative inflation (less inflation makes currency stronger) is a factor, strong export demand is a more direct cause of immediate exchange rate appreciation in this context. Option B is fiscal policy with potential inflationary effects, which weaken the dollar.",
     "correct_key": "D",
     "section": "social-studies",
     "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_48",
-    "question": "A country experiences a significant increase in the productivity of its labor force due to technological advancements. Which of the following is most likely to occur in the short run according to the Phillips curve?",
+    "question": "A country experiences a significant increase in the productivity of its labor force due to technological advancements. Which of the following is most to occur in the short run according to the Phillips curve?",
     "choices": {
       "A": "Lower inflation and higher unemployment.",
       "B": "Higher inflation and lower unemployment.",
@@ -737,7 +737,7 @@
   },
   {
     "id": "AP_Macroeconomics_49",
-    "question": "If the marginal propensity to consume (MPC) is 0.75, what is the maximum change in real GDP that could result from an initial increase in government spending of $100 billion?",
+    "question": "If the marginal propensity to consume (MPC) is 0.75, what is the maximum change in real GDP that result from an initial increase in government spending of $100 billion?",
     "choices": {
       "A": "$400 billion",
       "B": "$75 billion",
@@ -817,7 +817,7 @@
   },
   {
     "id": "AP_Macroeconomics_55",
-    "question": "During periods of high inflation, which of the following policies would a government most likely implement to cool down the economy?",
+    "question": "During periods of high inflation, which of the following policies would a government most implement to cool down the economy?",
     "choices": {
       "A": "An increase in government spending and a decrease in taxes.",
       "B": "A decrease in government spending and an increase in taxes.",
@@ -929,7 +929,7 @@
   },
   {
     "id": "AP_Macroeconomics_62",
-    "question": "If the economy is operating beyond its potential GDP, which of the following is likely occurring?",
+    "question": "If the economy is operating beyond its potential GDP, which of the following is occurring?",
     "choices": {
       "A": "Deflation and a decrease in aggregate demand.",
       "B": "Stagflation and an increase in unemployment.",
@@ -1009,7 +1009,7 @@
   },
   {
     "id": "AP_Macroeconomics_67",
-    "question": "If the government increases personal income taxes, which of the following is most likely to occur in the short run?",
+    "question": "If the government increases personal income taxes, which of the following is most to occur in the short run?",
     "choices": {
       "A": "Aggregate demand shifts to the right, leading to higher prices.",
       "B": "Aggregate supply shifts to the left, leading to higher output.",
@@ -1089,7 +1089,7 @@
   },
   {
     "id": "AP_Macroeconomics_72",
-    "question": "If the Federal Reserve wants to combat inflation using monetary policy, it would most likely:",
+    "question": "If the Federal Reserve wants to combat inflation using monetary policy, it would most:",
     "choices": {
       "A": "Decrease the federal funds rate target.",
       "B": "Buy government securities on the open market.",
@@ -1153,7 +1153,7 @@
   },
   {
     "id": "AP_Macroeconomics_76",
-    "question": "In the short run, if the economy is operating above its potential output (full employment output), what is the likely outcome?",
+    "question": "In the short run, if the economy is operating above its potential output (full employment output), what is the outcome?",
     "choices": {
       "A": "Unemployment will be below the natural rate.",
       "B": "Inflationary pressure will decrease.",
@@ -1178,14 +1178,14 @@
     },
     "answer": "C",
     "difficulty": 5,
-    "explanation": "Automatic stabilizers are government programs that automatically tend to reduce economic fluctuations without direct government intervention. Unemployment benefits are paid out during recessions, increasing aggregate demand, and are reduced during expansions, cushioning the economy.",
+    "explanation": "Automatic stabilizers are government programs that automatically reduce economic fluctuations without direct government intervention. Unemployment benefits are paid out during recessions, increasing aggregate demand, and are reduced during expansions, cushioning the economy.",
     "correct_key": "C",
     "section": "social-studies",
     "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_79",
-    "question": "If the velocity of money is constant and the money supply increases, what will likely happen to the price level and real GDP according to the Quantity Theory of Money?",
+    "question": "If the velocity of money is constant and the money supply increases, what will happen to the price level and real GDP according to the Quantity Theory of Money?",
     "choices": {
       "A": "Both the price level and real GDP will increase.",
       "B": "The price level will increase, and real GDP will remain unchanged.",
@@ -1201,7 +1201,7 @@
   },
   {
     "id": "AP_Macroeconomics_80",
-    "question": "A country experiences a decrease in net exports. This would likely lead to:",
+    "question": "A country experiences a decrease in net exports. This would lead to:",
     "choices": {
       "A": "An increase in aggregate demand.",
       "B": "A decrease in aggregate supply.",
@@ -1217,7 +1217,7 @@
   },
   {
     "id": "AP_Macroeconomics_82",
-    "question": "If the central bank *sells* government securities in the open market, what is the most likely immediate effect on the money supply and interest rates?",
+    "question": "If the central bank *sells* government securities in the open market, what is the most immediate effect on the money supply and interest rates?",
     "choices": {
       "A": "Money supply increases, interest rates decrease.",
       "B": "Money supply decreases, interest rates increase.",
@@ -1226,7 +1226,7 @@
     },
     "answer": "B",
     "difficulty": 6,
-    "explanation": "When the central bank sells government securities, it withdraws money from the banking system. Banks have less money to lend, which decreases the money supply. With a reduced supply of loanable funds, interest rates tend to rise.",
+    "explanation": "When the central bank sells government securities, it withdraws money from the banking system. Banks have less money to lend, which decreases the money supply. With a reduced supply of loanable funds, interest rates rise.",
     "correct_key": "B",
     "section": "social-studies",
     "skill": "AP Macroeconomics"
@@ -1441,7 +1441,7 @@
   },
   {
     "id": "AP_Macroeconomics_98",
-    "question": "If the aggregate demand curve shifts to the left, which of the following is most likely to occur in the short run, assuming a fixed price level in the short run?",
+    "question": "If the aggregate demand curve shifts to the left, which of the following is most to occur in the short run, assuming a fixed price level in the short run?",
     "choices": {
       "A": "A decrease in the equilibrium level of real GDP and an increase in the unemployment rate.",
       "B": "An increase in the equilibrium level of real GDP and a decrease in the inflation rate.",
@@ -1521,7 +1521,7 @@
   },
   {
     "id": "AP_Macroeconomics_104",
-    "question": "An increase in taxes, with no other changes, will most likely lead to:",
+    "question": "An increase in taxes, with no other changes, will most lead to:",
     "choices": {
       "A": "An increase in aggregate demand and a decrease in real GDP.",
       "B": "A decrease in aggregate demand and a decrease in real GDP.",
@@ -1562,7 +1562,7 @@
     },
     "answer": "C",
     "difficulty": 5,
-    "explanation": "Policies that reduce the cost of production, encourage investment in capital and technology, or improve the efficiency of markets tend to increase aggregate supply. Tax incentives for R&D encourage innovation and capital accumulation.",
+    "explanation": "Policies that reduce the cost of production, encourage investment in capital and technology, or improve the efficiency of markets increase aggregate supply. Tax incentives for R&D encourage innovation and capital accumulation.",
     "correct_key": "C",
     "section": "social-studies",
     "skill": "AP Macroeconomics"
@@ -1642,7 +1642,7 @@
     },
     "answer": "D",
     "difficulty": 8,
-    "explanation": "The question asks about a decrease in the money supply (M). Rearranging MV=PQ to M = PQ/V, if V decreases and Q increases, the net effect on M is not immediately clear without knowing the magnitudes. However, the question is poorly phrased as it asks about a decrease in M as a result of changes in V, P, and Q, rather than the other way around. Assuming the question meant to ask what combination of changes would necessitate a decrease in M to maintain equilibrium, let's re-evaluate based on typical interpretations. A more direct interpretation based on typical macroeconomic relationships: If V decreases (money circulates less) and Q increases (more goods produced), for the equation to hold, M might need to decrease to offset the impact of these changes depending on their relative magnitudes. However, a common interpretation in relation to the Phillips curve or inflation: if V falls and Q rises, this would typically be deflationary pressure, and M would likely have to fall for the equation to balance. Let's assume the question is asking what would necessitate a M decrease. If V falls and Q rises, the right side PQ falls relative to V. To maintain equality, M must fall. A decrease in V means money is circulating less, and an increase in Q means more goods are available. For MV=PQ, if V decreases and Q increases, M must decrease to maintain equality if P remains constant or falls less than Q rises.",
+    "explanation": "The question asks about a decrease in the money supply (M). Rearranging MV=PQ to M = PQ/V, if V decreases and Q increases, the net effect on M is not immediately clear without knowing the magnitudes. However, the question is poorly phrased as it asks about a decrease in M as a result of changes in V, P, and Q, rather than the other way around. Assuming the question meant to ask what combination of changes would necessitate a decrease in M to maintain equilibrium, let's re-evaluate based on typical interpretations. A more direct interpretation based on typical macroeconomic relationships: If V decreases (money circulates less) and Q increases (more goods produced), for the equation to hold, M need to decrease to offset the impact of these changes depending on their relative magnitudes. However, a common interpretation in relation to the Phillips curve or inflation: if V falls and Q rises, this would typically be deflationary pressure, and M would have to fall for the equation to balance. Let's assume the question is asking what would necessitate a M decrease. If V falls and Q rises, the right side PQ falls relative to V. To maintain equality, M must fall.",
     "correct_key": "D",
     "section": "social-studies",
     "skill": "AP Macroeconomics"
@@ -1681,7 +1681,7 @@
   },
   {
     "id": "AP_Macroeconomics_114",
-    "question": "If a nation's productivity growth rate significantly increases, which of the following is most likely to occur in the long run?",
+    "question": "If a nation's productivity growth rate significantly increases, which of the following is most to occur in the long run?",
     "choices": {
       "A": "The long-run aggregate supply curve will shift to the left.",
       "B": "The economy's potential GDP will increase.",
@@ -1729,7 +1729,7 @@
   },
   {
     "id": "AP_Macroeconomics_117",
-    "question": "If the real interest rate increases, which of the following is most likely to occur?",
+    "question": "If the real interest rate increases, which of the following is most to occur?",
     "choices": {
       "A": "Investment spending will increase, and consumption spending on durable goods will decrease.",
       "B": "Investment spending will decrease, and consumption spending on durable goods will decrease.",
@@ -1738,7 +1738,7 @@
     },
     "answer": "B",
     "difficulty": 6,
-    "explanation": "A higher real interest rate increases the cost of borrowing. Firms are less likely to invest in new capital, and households are less likely to finance large purchases like cars or appliances with loans, leading to decreases in both investment and consumption of durable goods.",
+    "explanation": "A higher real interest rate increases the cost of borrowing. Firms are less to invest in new capital, and households are less to finance large purchases like cars or appliances with loans, leading to decreases in both investment and consumption of durable goods.",
     "correct_key": "B",
     "section": "social-studies",
     "skill": "AP Macroeconomics"
@@ -1777,7 +1777,7 @@
   },
   {
     "id": "AP_Macroeconomics_123",
-    "question": "An increase in aggregate demand, ceteris paribus, will most likely lead to:",
+    "question": "An increase in aggregate demand, ceteris paribus, will most lead to:",
     "choices": {
       "A": "A decrease in the price level and an increase in real GDP.",
       "B": "An increase in the price level and an increase in real GDP.",
@@ -1921,7 +1921,7 @@
   },
   {
     "id": "AP_Macroeconomics_21",
-    "question": "A country's macaroni economy experiences a sudden increase in consumer confidence. Which of the following is the most likely immediate effect on the aggregate demand curve?",
+    "question": "A country's macaroni economy experiences a sudden increase in consumer confidence. Which of the following is the most immediate effect on the aggregate demand curve?",
     "choices": {
       "A": "It will shift to the right.",
       "B": "It will shift to the left.",
@@ -1985,7 +1985,7 @@
   },
   {
     "id": "AP_Macroeconomics_139",
-    "question": "If the government decides to finance its deficit by printing more money, this action is most likely to lead to:",
+    "question": "If the government decides to finance its deficit by printing more money, this action is most to lead to:",
     "choices": {
       "A": "Deflation.",
       "B": "Reduced aggregate demand.",
@@ -2033,7 +2033,7 @@
   },
   {
     "id": "AP_Macroeconomics_142",
-    "question": "If a nation's population increases faster than its capital stock, what is the likely effect on labor productivity, assuming other factors are constant?",
+    "question": "If a nation's population increases faster than its capital stock, what is the effect on labor productivity, assuming other factors are constant?",
     "choices": {
       "A": "Labor productivity will increase.",
       "B": "The effect on labor productivity is indeterminate.",
@@ -2065,7 +2065,7 @@
   },
   {
     "id": "AP_Macroeconomics_144",
-    "question": "If the exchange rate of a country's currency depreciates, this will tend to:",
+    "question": "If the exchange rate of a country's currency depreciates, this will:",
     "choices": {
       "A": "Make imports more expensive and exports cheaper.",
       "B": "Make imports cheaper and exports more expensive.",
@@ -2097,7 +2097,7 @@
   },
   {
     "id": "AP_Macroeconomics_146",
-    "question": "Which of the following is most likely to contribute to economic growth in the long run?",
+    "question": "Which of the following is most to contribute to economic growth in the long run?",
     "choices": {
       "A": "A persistent increase in consumer spending.",
       "B": "A sustained increase in the money supply.",
@@ -2161,7 +2161,7 @@
   },
   {
     "id": "AP_Macroeconomics_150",
-    "question": "The Laffer Curve illustrates the relationship between tax rates and tax revenue. According to the Laffer Curve, beyond a certain point, increasing tax rates could potentially lead to:",
+    "question": "The Laffer Curve illustrates the relationship between tax rates and tax revenue. According to the Laffer Curve, beyond a certain point, increasing tax rates potentially lead to:",
     "choices": {
       "A": "An increase in tax revenue.",
       "B": "A decrease in tax revenue.",
@@ -2170,14 +2170,14 @@
     },
     "answer": "B",
     "difficulty": 6,
-    "explanation": "The Laffer Curve suggests that at very high tax rates, individuals and businesses may reduce their economic activity (work, invest, produce) due to disincentives, which can ultimately lead to a decrease in the total tax revenue collected by the government.",
+    "explanation": "The Laffer Curve suggests that at very high tax rates, individuals and businesses reduce their economic activity (work, invest, produce) due to disincentives, which can ultimately lead to a decrease in the total tax revenue collected by the government.",
     "correct_key": "B",
     "section": "social-studies",
     "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_152",
-    "question": "An increase in government spending, financed by borrowing, will most likely lead to:",
+    "question": "An increase in government spending, financed by borrowing, will most lead to:",
     "choices": {
       "A": "A decrease in aggregate demand and upward pressure on interest rates.",
       "B": "An increase in aggregate demand and downward pressure on interest rates.",
@@ -2186,7 +2186,7 @@
     },
     "answer": "D",
     "difficulty": 7,
-    "explanation": "Increased government spending directly increases aggregate demand. Financing this spending through borrowing increases the demand for loanable funds, which tends to push interest rates upward (this is known as crowding out).",
+    "explanation": "Increased government spending directly increases aggregate demand. Financing this spending through borrowing increases the demand for loanable funds, which push interest rates upward (this is known as crowding out).",
     "correct_key": "D",
     "section": "social-studies",
     "skill": "AP Macroeconomics"
@@ -2225,7 +2225,7 @@
   },
   {
     "id": "AP_Macroeconomics_155",
-    "question": "If a country experiences a significant increase in its net exports, what is the most likely immediate impact on its aggregate demand?",
+    "question": "If a country experiences a significant increase in its net exports, what is the most immediate impact on its aggregate demand?",
     "choices": {
       "A": "It will decrease because imports are falling.",
       "B": "It will increase because net exports are a component of aggregate demand.",
@@ -2282,7 +2282,7 @@
     },
     "answer": "B",
     "difficulty": 5,
-    "explanation": "The short-run Phillips Curve suggests that policymakers face a trade-off: policies that reduce unemployment tend to increase inflation, and policies that reduce inflation tend to increase unemployment.",
+    "explanation": "The short-run Phillips Curve suggests that policymakers face a trade-off: policies that reduce unemployment increase inflation, and policies that reduce inflation increase unemployment.",
     "correct_key": "B",
     "section": "social-studies",
     "skill": "AP Macroeconomics"
@@ -2305,7 +2305,7 @@
   },
   {
     "id": "AP_Macroeconomics_161",
-    "question": "If a country's currency depreciates, which of the following is most likely to occur?",
+    "question": "If a country's currency depreciates, which of the following is most to occur?",
     "choices": {
       "A": "Its exports will become more expensive for foreigners, and its imports will become cheaper for domestic consumers.",
       "B": "Both exports and imports will become cheaper for foreigners.",
@@ -2337,7 +2337,7 @@
   },
   {
     "id": "AP_Macroeconomics_164",
-    "question": "If the velocity of money is constant and the money supply increases by 10%, according to the quantity theory of money, nominal GDP is likely to:",
+    "question": "If the velocity of money is constant and the money supply increases by 10%, according to the quantity theory of money, nominal GDP is to:",
     "choices": {
       "A": "Decrease by 10%.",
       "B": "Increase by more than 10%.",
@@ -2369,7 +2369,7 @@
   },
   {
     "id": "AP_Macroeconomics_168",
-    "question": "Consider the market for loanable funds. An increase in saving by households will most likely lead to:",
+    "question": "Consider the market for loanable funds. An increase in saving by households will most lead to:",
     "choices": {
       "A": "An increase in the equilibrium interest rate and an increase in investment.",
       "B": "A decrease in the equilibrium interest rate and a decrease in investment.",
@@ -2401,7 +2401,7 @@
   },
   {
     "id": "AP_Macroeconomics_134",
-    "question": "A country experiencing high inflation and high unemployment simultaneously is likely facing:",
+    "question": "A country experiencing high inflation and high unemployment simultaneously is facing:",
     "choices": {
       "A": "Demand-pull inflation.",
       "B": "Cost-push inflation.",
@@ -2442,7 +2442,7 @@
     },
     "answer": "A",
     "difficulty": 5,
-    "explanation": "The short-run Phillips curve illustrates a trade-off between inflation and unemployment. As unemployment falls (indicating a stronger economy), wages and prices tend to rise, leading to higher inflation.",
+    "explanation": "The short-run Phillips curve illustrates a trade-off between inflation and unemployment. As unemployment falls (indicating a stronger economy), wages and prices rise, leading to higher inflation.",
     "correct_key": "A",
     "section": "social-studies",
     "skill": "AP Macroeconomics"
@@ -2458,7 +2458,7 @@
     },
     "answer": "A",
     "difficulty": 6,
-    "explanation": "Required reserves are 10% of $5,000, which is $500. The bank has $1,000 in reserves, so it has $1,000 - $500 = $500 in excess reserves. Initially, the bank has $4,000 in excess reserves ($5,000 deposits - $1,000 required reserves). With $1,000 in reserves and $5,000 in checkable deposits, the required reserves are $500 ($5000 * 0.10). The bank has $1,000 in reserves, meaning it has $500 in excess reserves ($1000 - $500). The bank can create loans up to the amount of its excess reserves, which is $500. However, the question asks for the maximum *additional* loans based on its current reserves and deposits considering the reserve requirement. Required reserves are $500. The bank has $1000 in reserves. This means $500 are excess reserves. It can create $500 in new loans. The original question had a calculation error. Let's re-evaluate based on bank's reserve position. Required reserves = 10% of $5000 = $500. The bank has $1000 in reserves. So, it has $500 of excess reserves. The bank can create loans equal to its excess reserves. Thus, the maximum additional loans is $500.  ERROR IN ORIGINAL QUESTION. Re-calculating with correct logic: Required reserves = 10% of $5000 = $500. The bank has $1000 in reserves. Therefore, the bank has $500 in excess reserves ($1000 - $500). The maximum amount of additional loans this bank can create is equal to its excess reserves, which is $500.",
+    "explanation": "Required reserves are 10% of $5,000, which is $500. The bank has $1,000 in reserves, so it has $1,000 - $500 = $500 in excess reserves. Initially, the bank has $4,000 in excess reserves ($5,000 deposits - $1,000 required reserves). With $1,000 in reserves and $5,000 in checkable deposits, the required reserves are $500 ($5000 * 0.10). The bank has $1,000 in reserves, meaning it has $500 in excess reserves ($1000 - $500). The bank can create loans up to the amount of its excess reserves, which is $500. However, the question asks for the maximum *additional* loans based on its current reserves and deposits considering the reserve requirement. Required reserves are $500. The bank has $1000 in reserves. This means $500 are excess reserves. It can create $500 in new loans. The original question had a calculation error. Let's re-evaluate based on bank's reserve position. Required reserves = 10% of $5000 = $500. The bank has $1000 in reserves. So, it has $500 of excess reserves. The bank can create loans equal to its excess reserves. Thus, the maximum additional loans is $500. ERROR IN ORIGINAL QUESTION. Re-calculating with correct logic: Required reserves = 10% of $5000 = $500.",
     "correct_key": "A",
     "section": "social-studies",
     "skill": "AP Macroeconomics"
@@ -2481,7 +2481,7 @@
   },
   {
     "id": "AP_Macroeconomics_177",
-    "question": "An increase in the government budget deficit, ceteris paribus, is likely to lead to:",
+    "question": "An increase in the government budget deficit, ceteris paribus, is to lead to:",
     "choices": {
       "A": "Higher interest rates and an appreciation of the domestic currency.",
       "B": "Lower interest rates and a depreciation of the domestic currency.",
@@ -2497,7 +2497,7 @@
   },
   {
     "id": "AP_Macroeconomics_178",
-    "question": "If a country experiences a significant increase in its labor force due to immigration, this would most likely:",
+    "question": "If a country experiences a significant increase in its labor force due to immigration, this would most:",
     "choices": {
       "A": "Shift the long-run aggregate supply (LRAS) curve to the right.",
       "B": "Shift the short-run aggregate supply (SRAS) curve to the left.",
@@ -2625,7 +2625,7 @@
   },
   {
     "id": "AP_Macroeconomics_189",
-    "question": "An increase in the money supply, ceteris paribus, will most likely lead to:",
+    "question": "An increase in the money supply, ceteris paribus, will most lead to:",
     "choices": {
       "A": "Lower interest rates, which stimulate investment and consumption.",
       "B": "Higher interest rates, which discourage investment and consumption.",
@@ -2833,7 +2833,7 @@
   },
   {
     "id": "AP_Macroeconomics_204",
-    "question": "If a country's inflation rate is consistently higher than that of its trading partners, which of the following is likely to occur?",
+    "question": "If a country's inflation rate is consistently higher than that of its trading partners, which of the following is to occur?",
     "choices": {
       "A": "An increase in net exports and an appreciation of the domestic currency.",
       "B": "A decrease in net exports and an appreciation of the domestic currency.",
@@ -2881,7 +2881,7 @@
   },
   {
     "id": "AP_Macroeconomics_208",
-    "question": "If the government decides to significantly increase spending on infrastructure projects funded by borrowing, the most likely short-run effect on the loanable funds market is:",
+    "question": "If the government decides to significantly increase spending on infrastructure projects funded by borrowing, the most short-run effect on the loanable funds market is:",
     "choices": {
       "A": "An increase in the equilibrium interest rate due to increased demand for funds.",
       "B": "A decrease in the equilibrium interest rate due to increased supply of funds.",
@@ -2906,7 +2906,7 @@
     },
     "answer": "C",
     "difficulty": 5,
-    "explanation": "The short-run Phillips Curve illustrates that policymakers may face a trade-off: policies designed to reduce unemployment might lead to higher inflation, and policies to reduce inflation might lead to higher unemployment.",
+    "explanation": "The short-run Phillips Curve illustrates that policymakers face a trade-off: policies designed to reduce unemployment lead to higher inflation, and policies to reduce inflation lead to higher unemployment.",
     "correct_key": "C",
     "section": "social-studies",
     "skill": "AP Macroeconomics"
@@ -2986,7 +2986,7 @@
     },
     "answer": "B",
     "difficulty": 8,
-    "explanation": "The rational expectations hypothesis posits that people form their expectations about future economic conditions by using all relevant information, including their understanding of how economic policies work. This implies that anticipated policies may have little effect on real variables like output.",
+    "explanation": "The rational expectations hypothesis posits that people form their expectations about future economic conditions by using all relevant information, including their understanding of how economic policies work. This implies that anticipated policies have little effect on real variables like output.",
     "correct_key": "B",
     "section": "social-studies",
     "skill": "AP Macroeconomics"
@@ -3073,7 +3073,7 @@
   },
   {
     "id": "AP_Macroeconomics_223",
-    "question": "If the unemployment rate is above the natural rate of unemployment, the economy is likely in a(n):",
+    "question": "If the unemployment rate is above the natural rate of unemployment, the economy is in a(n):",
     "choices": {
       "A": "recessionary gap.",
       "B": "inflationary gap.",
@@ -3137,7 +3137,7 @@
   },
   {
     "id": "AP_Macroeconomics_230",
-    "question": "Which of the following is most likely to increase a country's potential real GDP?",
+    "question": "Which of the following is most to increase a country's potential real GDP?",
     "choices": {
       "A": "A decrease in the labor force participation rate.",
       "B": "An increase in the amount of capital per worker.",
@@ -3194,14 +3194,14 @@
     },
     "answer": "A",
     "difficulty": 6,
-    "explanation": "The short-run Phillips curve suggests an inverse relationship: policymakers face a trade-off. To reduce unemployment, they may accept higher inflation, and to reduce inflation, they may tolerate higher unemployment.",
+    "explanation": "The short-run Phillips curve suggests an inverse relationship: policymakers face a trade-off. To reduce unemployment, they accept higher inflation, and to reduce inflation, they tolerate higher unemployment.",
     "correct_key": "A",
     "section": "social-studies",
     "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_234",
-    "question": "A country experiences a decrease in net exports. Assuming other factors remain constant, this would likely lead to:",
+    "question": "A country experiences a decrease in net exports. Assuming other factors remain constant, this would lead to:",
     "choices": {
       "A": "an increase in aggregate demand and a decrease in real GDP.",
       "B": "a decrease in aggregate demand and a decrease in real GDP.",
@@ -3265,7 +3265,7 @@
   },
   {
     "id": "AP_Macroeconomics_238",
-    "question": "Frictional unemployment is: ",
+    "question": "Frictional unemployment is:",
     "choices": {
       "A": "unemployment that results from the normal workings of the labor market as people search for jobs.",
       "B": "unemployment caused by a mismatch between worker skills and job requirements.",
@@ -3290,7 +3290,7 @@
     },
     "answer": "D",
     "difficulty": 7,
-    "explanation": "Real GDP growth = Nominal GDP growth - Inflation rate.  Approximately, 10% - 4% = 6%. (The exact calculation uses (1.10 / 1.04) - 1, but the approximation is standard for AP Macro).",
+    "explanation": "Real GDP growth = Nominal GDP growth - Inflation rate. Approximately, 10% - 4% = 6%. (The exact calculation uses (1.10 / 1.04) - 1, but the approximation is standard for AP Macro).",
     "correct_key": "D",
     "section": "social-studies",
     "skill": "AP Macroeconomics"
@@ -3345,7 +3345,7 @@
   },
   {
     "id": "AP_Macroeconomics_245",
-    "question": "A sudden, widespread increase in the expected rate of inflation would most likely cause:",
+    "question": "A sudden, widespread increase in the expected rate of inflation would most cause:",
     "choices": {
       "A": "the short-run aggregate supply curve to shift to the left.",
       "B": "the aggregate demand curve to shift to the right.",
@@ -3361,7 +3361,7 @@
   },
   {
     "id": "AP_Macroeconomics_246",
-    "question": "A country experiences a sudden increase in consumer confidence, leading to a rise in household spending. This change will most likely affect the aggregate demand curve by:",
+    "question": "A country experiences a sudden increase in consumer confidence, leading to a rise in household spending. This change will most affect the aggregate demand curve by:",
     "choices": {
       "A": "Shifting it to the left due to decreased investment.",
       "B": "Shifting it to the right due to increased consumption.",
@@ -3393,7 +3393,7 @@
   },
   {
     "id": "AP_Macroeconomics_248",
-    "question": "Suppose a country's central bank decides to sell a significant amount of government bonds in the open market. What is the most likely immediate impact of this action on the money supply and interest rates?",
+    "question": "Suppose a country's central bank decides to sell a significant amount of government bonds in the open market. What is the most immediate impact of this action on the money supply and interest rates?",
     "choices": {
       "A": "Money supply increases, interest rates decrease.",
       "B": "Money supply decreases, interest rates increase.",
@@ -3441,7 +3441,7 @@
   },
   {
     "id": "AP_Macroeconomics_251",
-    "question": "A decrease in the reserve requirement for commercial banks will most likely lead to:",
+    "question": "A decrease in the reserve requirement for commercial banks will most lead to:",
     "choices": {
       "A": "A decrease in the money supply and higher interest rates.",
       "B": "An increase in the money supply and higher interest rates.",
@@ -3450,14 +3450,14 @@
     },
     "answer": "D",
     "difficulty": 4,
-    "explanation": "A lower reserve requirement means banks can lend out a larger fraction of their deposits. This increases the money multiplier, leading to an expansion of the money supply. With a larger money supply, the price of borrowing money (interest rates) tends to fall.",
+    "explanation": "A lower reserve requirement means banks can lend out a larger fraction of their deposits. This increases the money multiplier, leading to an expansion of the money supply. With a larger money supply, the price of borrowing money (interest rates) fall.",
     "correct_key": "D",
     "section": "social-studies",
     "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_253",
-    "question": "If a country experiences a significant increase in its national debt, which of the following is a likely consequence?",
+    "question": "If a country experiences a significant increase in its national debt, which of the following is a consequence?",
     "choices": {
       "A": "A reduction in the demand for loanable funds, leading to lower interest rates.",
       "B": "An increase in current taxes to finance debt service.",
@@ -3466,14 +3466,14 @@
     },
     "answer": "D",
     "difficulty": 6,
-    "explanation": "A large national debt requires significant interest payments. To manage this, governments may need to cut spending in other areas, including social programs, or increase taxes. Option A is incorrect because increased government borrowing (to finance the debt) typically increases the demand for loanable funds, raising interest rates.",
+    "explanation": "A large national debt requires significant interest payments. To manage this, governments need to cut spending in other areas, including social programs, or increase taxes. Option A is incorrect because increased government borrowing (to finance the debt) typically increases the demand for loanable funds, raising interest rates.",
     "correct_key": "D",
     "section": "social-studies",
     "skill": "AP Macroeconomics"
   },
   {
     "id": "AP_Macroeconomics_254",
-    "question": "An economy is operating below its potential output. The government decides to implement an expansionary fiscal policy. Which of the following is the most likely immediate outcome?",
+    "question": "An economy is operating below its potential output. The government decides to implement an expansionary fiscal policy. Which of the following is the most immediate outcome?",
     "choices": {
       "A": "Increased government spending and a decrease in aggregate demand.",
       "B": "Decreased taxes and a decrease in aggregate demand.",
@@ -3489,7 +3489,7 @@
   },
   {
     "id": "AP_Macroeconomics_256",
-    "question": "If the central bank sells government securities in the open market, it is pursuing a policy that will most likely:",
+    "question": "If the central bank sells government securities in the open market, it is pursuing a policy that will most:",
     "choices": {
       "A": "Increase the money supply and lower interest rates.",
       "B": "Decrease the money supply and raise interest rates.",
@@ -3498,7 +3498,7 @@
     },
     "answer": "B",
     "difficulty": 5,
-    "explanation": "When a central bank sells government securities, it withdraws money from the banking system. Banks have less money to lend, which reduces the money supply. With a reduced money supply, the price of borrowing money (interest rates) tends to increase.",
+    "explanation": "When a central bank sells government securities, it withdraws money from the banking system. Banks have less money to lend, which reduces the money supply. With a reduced money supply, the price of borrowing money (interest rates) increase.",
     "correct_key": "B",
     "section": "social-studies",
     "skill": "AP Macroeconomics"
@@ -3585,7 +3585,7 @@
   },
   {
     "id": "AP_Macroeconomics_264",
-    "question": "An increase in aggregate demand, with no accompanying shift in aggregate supply, will most likely result in:",
+    "question": "An increase in aggregate demand, with no accompanying shift in aggregate supply, will most result in:",
     "choices": {
       "A": "Higher prices and lower output.",
       "B": "Lower prices and higher output.",
@@ -3601,7 +3601,7 @@
   },
   {
     "id": "AP_Macroeconomics_265",
-    "question": "If a country's productivity increases significantly, which of the following is most likely to occur in the long run?",
+    "question": "If a country's productivity increases significantly, which of the following is most to occur in the long run?",
     "choices": {
       "A": "A decrease in the potential real GDP.",
       "B": "An increase in the price level.",
@@ -3681,7 +3681,7 @@
   },
   {
     "id": "AP_Macroeconomics_272",
-    "question": "In a closed economy with no government, an increase in saving will most likely lead to:",
+    "question": "In a closed economy with no government, an increase in saving will most lead to:",
     "choices": {
       "A": "An increase in consumption and a decrease in investment.",
       "B": "A decrease in consumption and a decrease in investment.",
@@ -3713,7 +3713,7 @@
   },
   {
     "id": "AP_Macroeconomics_274",
-    "question": "If the government increases taxes while keeping government spending constant, which of the following is most likely to occur?",
+    "question": "If the government increases taxes while keeping government spending constant, which of the following is most to occur?",
     "choices": {
       "A": "Aggregate demand will increase, and the price level will rise.",
       "B": "Aggregate demand will decrease, and the price level will rise.",
@@ -3729,7 +3729,7 @@
   },
   {
     "id": "AP_Macroeconomics_276",
-    "question": "An increase in the reserve requirement for banks will most likely lead to:",
+    "question": "An increase in the reserve requirement for banks will most lead to:",
     "choices": {
       "A": "A decrease in the money multiplier and a decrease in the money supply.",
       "B": "An increase in the money multiplier and an increase in the money supply.",
@@ -3905,7 +3905,7 @@
   },
   {
     "id": "AP_Macroeconomics_290",
-    "question": "If a large government budget deficit increases the demand for loanable funds, this will most likely lead to:",
+    "question": "If a large government budget deficit increases the demand for loanable funds, this will most lead to:",
     "choices": {
       "A": "Higher real interest rates and increased private investment.",
       "B": "Lower real interest rates and decreased private investment.",
@@ -3953,7 +3953,7 @@
   },
   {
     "id": "AP_Macroeconomics_294",
-    "question": "Consider an economy with sticky wages. A sudden decrease in aggregate demand would most likely lead to:",
+    "question": "Consider an economy with sticky wages. A sudden decrease in aggregate demand would most lead to:",
     "choices": {
       "A": "A decrease in the price level and a decrease in real output, with little change in unemployment.",
       "B": "A decrease in the price level and minimal change in real output, with a significant increase in unemployment.",
@@ -4001,7 +4001,7 @@
   },
   {
     "id": "AP_Macroeconomics_299",
-    "question": "If a country's net capital outflow decreases, which of the following is most likely to occur?",
+    "question": "If a country's net capital outflow decreases, which of the following is most to occur?",
     "choices": {
       "A": "The country's currency will appreciate.",
       "B": "The country's currency will depreciate.",

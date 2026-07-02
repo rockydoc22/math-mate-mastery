@@ -10,7 +10,14 @@
     "optionC": "earlier research was entirely incorrect.",
     "optionD": "further investigation is needed to understand the complex interactions involved.",
     "correct": "D",
-    "explanation": "The phrase 'more nuanced than previously thought' indicates complexity that requires further investigation. Options A, C, and D make extreme claims not supported by the measured language in the passage."
+    "explanation": "The phrase 'more nuanced than previously thought' indicates complexity that requires further investigation. Options A, C, and D make extreme claims not supported by the measured language in the passage.",
+    "options": [
+      "map projections and distortions have no significant impact on outcomes.",
+      "the topic requires no additional study.",
+      "earlier research was entirely incorrect.",
+      "further investigation is needed to understand the complex interactions involved."
+    ],
+    "correct_key": "D"
   },
   {
     "id": 2,
@@ -23,7 +30,14 @@
     "optionC": "further investigation is needed to understand the complex interactions involved.",
     "optionD": "the topic requires no additional study.",
     "correct": "C",
-    "explanation": "The phrase 'more nuanced than previously thought' indicates complexity that requires further investigation. Options A, B, and D make extreme claims not supported by the measured language in the passage."
+    "explanation": "The phrase 'more nuanced than previously thought' indicates complexity that requires further investigation. Options A, B, and D make extreme claims not supported by the measured language in the passage.",
+    "options": [
+      "earlier research was entirely incorrect.",
+      "solar panels and wind turbines have no significant impact on outcomes.",
+      "further investigation is needed to understand the complex interactions involved.",
+      "the topic requires no additional study."
+    ],
+    "correct_key": "C"
   },
   {
     "id": 3,
@@ -36,7 +50,14 @@
     "optionC": "linguistic borrowing and semantic shift have no significant impact on outcomes.",
     "optionD": "further investigation is needed to understand the complex interactions involved.",
     "correct": "D",
-    "explanation": "The phrase 'more nuanced than previously thought' indicates complexity that requires further investigation. Options A, B, and C make extreme claims not supported by the measured language in the passage."
+    "explanation": "The phrase 'more nuanced than previously thought' indicates complexity that requires further investigation. Options A, B, and C make extreme claims not supported by the measured language in the passage.",
+    "options": [
+      "the topic requires no additional study.",
+      "earlier research was entirely incorrect.",
+      "linguistic borrowing and semantic shift have no significant impact on outcomes.",
+      "further investigation is needed to understand the complex interactions involved."
+    ],
+    "correct_key": "D"
   },
   {
     "id": 4,
@@ -49,7 +70,14 @@
     "optionC": "earlier research was entirely incorrect.",
     "optionD": "the topic requires no additional study.",
     "correct": "A",
-    "explanation": "The phrase 'more nuanced than previously thought' indicates complexity that requires further investigation. Options B, C, and D make extreme claims not supported by the measured language in the passage."
+    "explanation": "The phrase 'more nuanced than previously thought' indicates complexity that requires further investigation. Options B, C, and D make extreme claims not supported by the measured language in the passage.",
+    "options": [
+      "further investigation is needed to understand the complex interactions involved.",
+      "cognitive training exercises have no significant impact on outcomes.",
+      "earlier research was entirely incorrect.",
+      "the topic requires no additional study."
+    ],
+    "correct_key": "A"
   },
   {
     "id": 5,
@@ -62,7 +90,14 @@
     "optionC": "To defend traditional models against criticism",
     "optionD": "To propose a modified approach that incorporates new evidence",
     "correct": "D",
-    "explanation": "The text describes proposing a 'new framework that integrates recent findings' while acknowledging value in traditional models. This indicates modification, not rejection (A), defense (C), or stagnation (B)."
+    "explanation": "The text describes proposing a 'new framework that integrates recent findings' while acknowledging value in traditional models. This indicates modification, not rejection (A), defense (C), or stagnation (B).",
+    "options": [
+      "To reject all previous research in the field",
+      "To argue that the field requires no changes",
+      "To defend traditional models against criticism",
+      "To propose a modified approach that incorporates new evidence"
+    ],
+    "correct_key": "D"
   },
   {
     "id": 6,
@@ -75,7 +110,14 @@
     "optionC": "To propose a modified approach that incorporates new evidence",
     "optionD": "To argue that the field requires no changes",
     "correct": "C",
-    "explanation": "The text describes proposing a 'new framework that integrates recent findings' while acknowledging value in traditional models. This indicates modification, not rejection (B), defense (A), or stagnation (D)."
+    "explanation": "The text describes proposing a 'new framework that integrates recent findings' while acknowledging value in traditional models. This indicates modification, not rejection (B), defense (A), or stagnation (D).",
+    "options": [
+      "To defend traditional models against criticism",
+      "To reject all previous research in the field",
+      "To propose a modified approach that incorporates new evidence",
+      "To argue that the field requires no changes"
+    ],
+    "correct_key": "C"
   },
   {
     "id": 7,
@@ -88,7 +130,14 @@
     "optionC": "To reject all previous research in the field",
     "optionD": "To propose a modified approach that incorporates new evidence",
     "correct": "D",
-    "explanation": "The text describes proposing a 'new framework that integrates recent findings' while acknowledging value in traditional models. This indicates modification, not rejection (C), defense (B), or stagnation (A)."
+    "explanation": "The text describes proposing a 'new framework that integrates recent findings' while acknowledging value in traditional models. This indicates modification, not rejection (C), defense (B), or stagnation (A).",
+    "options": [
+      "To argue that the field requires no changes",
+      "To defend traditional models against criticism",
+      "To reject all previous research in the field",
+      "To propose a modified approach that incorporates new evidence"
+    ],
+    "correct_key": "D"
   },
   {
     "id": 8,
@@ -101,7 +150,14 @@
     "optionC": "To defend traditional models against criticism",
     "optionD": "To reject all previous research in the field",
     "correct": "A",
-    "explanation": "The text describes proposing a 'new framework that integrates recent findings' while acknowledging value in traditional models. This indicates modification, not rejection (D), defense (C), or stagnation (B)."
+    "explanation": "The text describes proposing a 'new framework that integrates recent findings' while acknowledging value in traditional models. This indicates modification, not rejection (D), defense (C), or stagnation (B).",
+    "options": [
+      "To propose a modified approach that incorporates new evidence",
+      "To argue that the field requires no changes",
+      "To defend traditional models against criticism",
+      "To reject all previous research in the field"
+    ],
+    "correct_key": "A"
   },
   {
     "id": 9,
@@ -114,7 +170,14 @@
     "optionC": "Claim, evidence, conclusion",
     "optionD": "Question, exploration, answer",
     "correct": "A",
-    "explanation": "The structure described—traditional approach (thesis), contradicting evidence (antithesis), and synthesis—matches the dialectical pattern of thesis-antithesis-synthesis."
+    "explanation": "The structure described—traditional approach (thesis), contradicting evidence (antithesis), and synthesis—matches the dialectical pattern of thesis-antithesis-synthesis.",
+    "options": [
+      "Thesis, antithesis, synthesis",
+      "Problem, failed solutions, final solution",
+      "Claim, evidence, conclusion",
+      "Question, exploration, answer"
+    ],
+    "correct_key": "A"
   },
   {
     "id": 10,
@@ -127,7 +190,14 @@
     "optionC": "Problem identification followed by solution proposal",
     "optionD": "Narrative account with reflective commentary",
     "correct": "B",
-    "explanation": "The structure involves comparing theories and concluding with integration, which matches comparative analysis leading to an integrative conclusion."
+    "explanation": "The structure involves comparing theories and concluding with integration, which matches comparative analysis leading to an integrative conclusion.",
+    "options": [
+      "Chronological presentation of historical developments",
+      "Comparative analysis leading to an integrative conclusion",
+      "Problem identification followed by solution proposal",
+      "Narrative account with reflective commentary"
+    ],
+    "correct_key": "B"
   },
   {
     "id": 11,
@@ -140,7 +210,14 @@
     "optionC": "Specific to general to specific (frame structure)",
     "optionD": "Chronological sequence",
     "correct": "C",
-    "explanation": "The structure moves from specific (anecdote) to general (industry claims) back to specific (individual case), creating a frame structure."
+    "explanation": "The structure moves from specific (anecdote) to general (industry claims) back to specific (individual case), creating a frame structure.",
+    "options": [
+      "General to specific",
+      "Cause and effect",
+      "Specific to general to specific (frame structure)",
+      "Chronological sequence"
+    ],
+    "correct_key": "C"
   },
   {
     "id": 12,
@@ -153,7 +230,14 @@
     "optionC": "Problem and multiple solutions",
     "optionD": "Definition and extended example",
     "correct": "B",
-    "explanation": "The passage describes a paradigm presentation (establishing the prevailing scientific consensus) followed by a paradigm challenge (systematically presenting evidence that challenges each major assumption, building toward a revolutionary reinterpretation). This matches option B."
+    "explanation": "The passage describes a paradigm presentation (establishing the prevailing scientific consensus) followed by a paradigm challenge (systematically presenting evidence that challenges each major assumption, building toward a revolutionary reinterpretation). This matches option B.",
+    "options": [
+      "Classification and division",
+      "Paradigm presentation followed by paradigm challenge",
+      "Problem and multiple solutions",
+      "Definition and extended example"
+    ],
+    "correct_key": "B"
   },
   {
     "id": 13,
@@ -166,7 +250,14 @@
     "optionC": "To endorse the optimistic view of coral survival",
     "optionD": "To change the subject from coral decline to adaptation",
     "correct": "A",
-    "explanation": "The sentence presents a counterargument (adaptation) while expressing skepticism ('optimism may be premature'), qualifying rather than endorsing or rejecting."
+    "explanation": "The sentence presents a counterargument (adaptation) while expressing skepticism ('optimism may be premature'), qualifying rather than endorsing or rejecting.",
+    "options": [
+      "To present a counterargument while expressing skepticism about it",
+      "To completely reject the possibility of coral adaptation",
+      "To endorse the optimistic view of coral survival",
+      "To change the subject from coral decline to adaptation"
+    ],
+    "correct_key": "A"
   },
   {
     "id": 14,
@@ -179,7 +270,14 @@
     "optionC": "To complicate a simplified historical account",
     "optionD": "To argue against using archival evidence",
     "correct": "C",
-    "explanation": "The sentence complicates rather than discredits the traditional narrative, introducing nuance through archival evidence without fully rejecting the original account."
+    "explanation": "The sentence complicates rather than discredits the traditional narrative, introducing nuance through archival evidence without fully rejecting the original account.",
+    "options": [
+      "To discredit the traditional narrative entirely",
+      "To celebrate unnamed contributors",
+      "To complicate a simplified historical account",
+      "To argue against using archival evidence"
+    ],
+    "correct_key": "C"
   },
   {
     "id": 15,
@@ -192,7 +290,14 @@
     "optionC": "To summarize the entire field of behavioral economics",
     "optionD": "To identify a foundational assumption and its critique",
     "correct": "D",
-    "explanation": "The sentence identifies a foundational assumption (rational actors) and notes its critique by behavioral economists, presenting the tension without fully resolving it."
+    "explanation": "The sentence identifies a foundational assumption (rational actors) and notes its critique by behavioral economists, presenting the tension without fully resolving it.",
+    "options": [
+      "To defend the standard economic model",
+      "To explain why economics is unreliable",
+      "To summarize the entire field of behavioral economics",
+      "To identify a foundational assumption and its critique"
+    ],
+    "correct_key": "D"
   },
   {
     "id": 16,
@@ -205,7 +310,14 @@
     "optionC": "To argue that all political metaphors are harmful",
     "optionD": "To acknowledge rhetorical effectiveness while critiquing ideological implications",
     "correct": "D",
-    "explanation": "The sentence acknowledges the metaphor's rhetorical effectiveness while critiquing what it obscures, balancing recognition and critique."
+    "explanation": "The sentence acknowledges the metaphor's rhetorical effectiveness while critiquing what it obscures, balancing recognition and critique.",
+    "options": [
+      "To advocate for using family metaphors in politics",
+      "To explain what power differentials are",
+      "To argue that all political metaphors are harmful",
+      "To acknowledge rhetorical effectiveness while critiquing ideological implications"
+    ],
+    "correct_key": "D"
   },
   {
     "id": 17,
@@ -218,7 +330,14 @@
     "optionC": "In contrast",
     "optionD": "Nevertheless",
     "correct": "B",
-    "explanation": "The second sentence adds to the first rather than contrasting with it—exercise helps, and exercise plus puzzles helps even more. 'Furthermore' signals addition."
+    "explanation": "The second sentence adds to the first rather than contrasting with it—exercise helps, and exercise plus puzzles helps even more. 'Furthermore' signals addition.",
+    "options": [
+      "However",
+      "Furthermore",
+      "In contrast",
+      "Nevertheless"
+    ],
+    "correct_key": "B"
   },
   {
     "id": 18,
@@ -231,7 +350,14 @@
     "optionC": "However",
     "optionD": "For instance",
     "correct": "C",
-    "explanation": "The two sentences present contrasting views (dismissed then vs. recognized now), requiring a contrast transition like 'However.'"
+    "explanation": "The two sentences present contrasting views (dismissed then vs. recognized now), requiring a contrast transition like 'However.'",
+    "options": [
+      "Similarly",
+      "Therefore",
+      "However",
+      "For instance"
+    ],
+    "correct_key": "C"
   },
   {
     "id": 19,
@@ -244,7 +370,14 @@
     "optionC": "Nevertheless",
     "optionD": "In addition",
     "correct": "D",
-    "explanation": "Expansion despite declining profits is unexpected, requiring a contrast transition. 'Nevertheless' acknowledges the seeming contradiction."
+    "explanation": "Expansion despite declining profits is unexpected, requiring a contrast transition. 'Nevertheless' acknowledges the seeming contradiction.",
+    "options": [
+      "Consequently",
+      "For example",
+      "Nevertheless",
+      "In addition"
+    ],
+    "correct_key": "D"
   },
   {
     "id": 20,
@@ -257,7 +390,14 @@
     "optionC": "in contrast",
     "optionD": "alternatively",
     "correct": "A",
-    "explanation": "The second clause provides specific data supporting the general confirmation, requiring 'specifically' to signal elaboration with details."
+    "explanation": "The second clause provides specific data supporting the general confirmation, requiring 'specifically' to signal elaboration with details.",
+    "options": [
+      "specifically",
+      "however",
+      "in contrast",
+      "alternatively"
+    ],
+    "correct_key": "A"
   },
   {
     "id": 21,
@@ -270,7 +410,14 @@
     "optionC": "were",
     "optionD": "has been",
     "correct": "C",
-    "explanation": "With 'neither...nor,' the verb agrees with the nearer subject ('students,' which is plural), requiring 'were.'"
+    "explanation": "With 'neither...nor,' the verb agrees with the nearer subject ('students,' which is plural), requiring 'were.'",
+    "options": [
+      "was",
+      "is",
+      "were",
+      "has been"
+    ],
+    "correct_key": "C"
   },
   {
     "id": 22,
@@ -283,7 +430,14 @@
     "optionC": "are",
     "optionD": "has",
     "correct": "D",
-    "explanation": "The subject is 'collection' (singular), not 'manuscripts,' so the verb must be singular: 'has.'"
+    "explanation": "The subject is 'collection' (singular), not 'manuscripts,' so the verb must be singular: 'has.'",
+    "options": [
+      "have",
+      "were",
+      "are",
+      "has"
+    ],
+    "correct_key": "D"
   },
   {
     "id": 23,
@@ -296,7 +450,14 @@
     "optionC": "are having",
     "optionD": "were having",
     "correct": "A",
-    "explanation": "'Each' is singular and takes a singular verb. 'Has' correctly agrees with 'each.'"
+    "explanation": "'Each' is singular and takes a singular verb. 'Has' correctly agrees with 'each.'",
+    "options": [
+      "have",
+      "has",
+      "are having",
+      "were having"
+    ],
+    "correct_key": "A"
   },
   {
     "id": 24,
@@ -309,7 +470,14 @@
     "optionC": "were",
     "optionD": "have been",
     "correct": "B",
-    "explanation": "When 'statistics' refers to the academic field (rather than data), it's singular and takes 'is.'"
+    "explanation": "When 'statistics' refers to the academic field (rather than data), it's singular and takes 'is.'",
+    "options": [
+      "are",
+      "is",
+      "were",
+      "have been"
+    ],
+    "correct_key": "B"
   },
   {
     "id": 25,
@@ -322,7 +490,14 @@
     "optionC": "you",
     "optionD": "we",
     "correct": "A",
-    "explanation": "With a singular antecedent ('a student') and an unknown gender, 'they' (singular) is the appropriate pronoun in contemporary standard usage."
+    "explanation": "With a singular antecedent ('a student') and an unknown gender, 'they' (singular) is the appropriate pronoun in contemporary standard usage.",
+    "options": [
+      "they",
+      "one",
+      "you",
+      "we"
+    ],
+    "correct_key": "A"
   },
   {
     "id": 26,
@@ -335,7 +510,14 @@
     "optionC": "his",
     "optionD": "our",
     "correct": "B",
-    "explanation": "'Committee' is a collective noun treated as singular in American English, requiring 'its' rather than 'their.'"
+    "explanation": "'Committee' is a collective noun treated as singular in American English, requiring 'its' rather than 'their.'",
+    "options": [
+      "their",
+      "its",
+      "his",
+      "our"
+    ],
+    "correct_key": "B"
   },
   {
     "id": 27,
@@ -348,7 +530,14 @@
     "optionC": "their",
     "optionD": "its",
     "correct": "C",
-    "explanation": "When 'neither...nor' connects subjects of different numbers, the pronoun agrees with the nearer antecedent ('actors'), requiring 'their.'"
+    "explanation": "When 'neither...nor' connects subjects of different numbers, the pronoun agrees with the nearer antecedent ('actors'), requiring 'their.'",
+    "options": [
+      "his",
+      "her",
+      "their",
+      "its"
+    ],
+    "correct_key": "C"
   },
   {
     "id": 28,
@@ -361,7 +550,14 @@
     "optionC": "one's",
     "optionD": "their",
     "correct": "D",
-    "explanation": "With 'every' + singular noun referring to people, singular 'they/their' is accepted in standard usage when gender is unspecified."
+    "explanation": "With 'every' + singular noun referring to people, singular 'they/their' is accepted in standard usage when gender is unspecified.",
+    "options": [
+      "its",
+      "his or her",
+      "one's",
+      "their"
+    ],
+    "correct_key": "D"
   },
   {
     "id": 29,
@@ -374,7 +570,14 @@
     "optionC": "to enhance",
     "optionD": "for enhancing",
     "correct": "A",
-    "explanation": "Parallel structure requires matching forms: 'reduce,' 'improve,' and 'enhance' (all bare infinitives)."
+    "explanation": "Parallel structure requires matching forms: 'reduce,' 'improve,' and 'enhance' (all bare infinitives).",
+    "options": [
+      "enhance",
+      "enhancing",
+      "to enhance",
+      "for enhancing"
+    ],
+    "correct_key": "A"
   },
   {
     "id": 30,
@@ -387,7 +590,14 @@
     "optionC": "her effective mentoring of students",
     "optionD": "being an effective mentor to students",
     "correct": "C",
-    "explanation": "Parallel structure requires 'her + adjective + noun': 'her innovative experiments,' 'her accessible writing,' 'her effective mentoring.'"
+    "explanation": "Parallel structure requires 'her + adjective + noun': 'her innovative experiments,' 'her accessible writing,' 'her effective mentoring.'",
+    "options": [
+      "she mentors students effectively",
+      "effective student mentoring",
+      "her effective mentoring of students",
+      "being an effective mentor to students"
+    ],
+    "correct_key": "C"
   },
   {
     "id": 31,
@@ -400,7 +610,14 @@
     "optionC": "discussion participation",
     "optionD": "to participate in discussions",
     "correct": "A",
-    "explanation": "Parallel structure requires matching infinitives: 'to read,' 'write,' and 'participate' (infinitives without repeated 'to')."
+    "explanation": "Parallel structure requires matching infinitives: 'to read,' 'write,' and 'participate' (infinitives without repeated 'to').",
+    "options": [
+      "participate in discussions",
+      "participating in discussions",
+      "discussion participation",
+      "to participate in discussions"
+    ],
+    "correct_key": "A"
   },
   {
     "id": 32,
@@ -413,7 +630,14 @@
     "optionC": "practicing",
     "optionD": "practice",
     "correct": "C",
-    "explanation": "Parallel structure requires matching gerunds: 'running,' 'lifting,' and 'practicing.'"
+    "explanation": "Parallel structure requires matching gerunds: 'running,' 'lifting,' and 'practicing.'",
+    "options": [
+      "she practiced",
+      "to practice",
+      "practicing",
+      "practice"
+    ],
+    "correct_key": "C"
   },
   {
     "id": 33,
@@ -426,7 +650,14 @@
     "optionC": "Carefully controlling all variables",
     "optionD": "All variables being carefully controlled",
     "correct": "B",
-    "explanation": "The introductory phrase must logically modify the subject. Since 'the experiment' cannot control variables, option B correctly identifies the researchers as agents."
+    "explanation": "The introductory phrase must logically modify the subject. Since 'the experiment' cannot control variables, option B correctly identifies the researchers as agents.",
+    "options": [
+      "Having carefully controlled all variables",
+      "After the researchers carefully controlled all variables",
+      "Carefully controlling all variables",
+      "All variables being carefully controlled"
+    ],
+    "correct_key": "B"
   },
   {
     "id": 34,
@@ -439,7 +670,14 @@
     "optionC": "Being one of the world's finest art collections",
     "optionD": "Considered one of the world's finest art collections",
     "correct": "A",
-    "explanation": "The museum 'houses' the collection; it is not itself the collection. A correctly modifies 'museum' with an action the museum performs."
+    "explanation": "The museum 'houses' the collection; it is not itself the collection. A correctly modifies 'museum' with an action the museum performs.",
+    "options": [
+      "Housing one of the world's finest art collections",
+      "One of the world's finest art collections",
+      "Being one of the world's finest art collections",
+      "Considered one of the world's finest art collections"
+    ],
+    "correct_key": "A"
   },
   {
     "id": 35,
@@ -452,7 +690,14 @@
     "optionC": "Warnings having been issued to residents",
     "optionD": "Warning residents",
     "correct": "B",
-    "explanation": "Tornados cannot issue warnings; meteorologists do. Option B correctly identifies the agents (meteorologists) rather than making the tornado the implied subject."
+    "explanation": "Tornados cannot issue warnings; meteorologists do. Option B correctly identifies the agents (meteorologists) rather than making the tornado the implied subject.",
+    "options": [
+      "Having issued warnings to residents",
+      "After meteorologists issued warnings to residents",
+      "Warnings having been issued to residents",
+      "Warning residents"
+    ],
+    "correct_key": "B"
   },
   {
     "id": 36,
@@ -465,7 +710,14 @@
     "optionC": "As a child immigrant to America",
     "optionD": "Immigrating to America as a child",
     "correct": "B",
-    "explanation": "The novel didn't immigrate; the author did. Option B correctly attributes the immigration to the author rather than to the novel."
+    "explanation": "The novel didn't immigrate; the author did. Option B correctly attributes the immigration to the author rather than to the novel.",
+    "options": [
+      "Having immigrated to America as a child",
+      "Written by an author who immigrated to America as a child",
+      "As a child immigrant to America",
+      "Immigrating to America as a child"
+    ],
+    "correct_key": "B"
   },
   {
     "id": 37,
@@ -478,7 +730,14 @@
     "optionC": "; however,",
     "optionD": "however,",
     "correct": "C",
-    "explanation": "Two independent clauses need proper separation. A semicolon before 'however' and a comma after correctly joins the clauses."
+    "explanation": "Two independent clauses need proper separation. A semicolon before 'however' and a comma after correctly joins the clauses.",
+    "options": [
+      "however",
+      ", however,",
+      "; however,",
+      "however,"
+    ],
+    "correct_key": "C"
   },
   {
     "id": 38,
@@ -491,7 +750,14 @@
     "optionC": "; although,",
     "optionD": ": although",
     "correct": "A",
-    "explanation": "'Although' introduces a dependent clause, which can be joined to the independent clause with just a comma."
+    "explanation": "'Although' introduces a dependent clause, which can be joined to the independent clause with just a comma.",
+    "options": [
+      ", although",
+      "although",
+      "; although,",
+      ": although"
+    ],
+    "correct_key": "A"
   },
   {
     "id": 39,
@@ -504,7 +770,14 @@
     "optionC": ". But",
     "optionD": "; but,",
     "correct": "A",
-    "explanation": "A comma before a coordinating conjunction (but) correctly joins two independent clauses."
+    "explanation": "A comma before a coordinating conjunction (but) correctly joins two independent clauses.",
+    "options": [
+      ", but",
+      "but",
+      ". But",
+      "; but,"
+    ],
+    "correct_key": "A"
   },
   {
     "id": 40,
@@ -517,7 +790,14 @@
     "optionC": "; consequently,",
     "optionD": ", and consequently",
     "correct": "D",
-    "explanation": "'Consequently' is a conjunctive adverb. Option D uses the coordinating conjunction 'and' with a comma to properly join the clauses."
+    "explanation": "'Consequently' is a conjunctive adverb. Option D uses the coordinating conjunction 'and' with a comma to properly join the clauses.",
+    "options": [
+      ", consequently",
+      "consequently",
+      "; consequently,",
+      ", and consequently"
+    ],
+    "correct_key": "D"
   },
   {
     "id": 41,
@@ -530,7 +810,14 @@
     "optionC": "; and",
     "optionD": ": and",
     "correct": "A",
-    "explanation": "In a simple series without internal commas, the Oxford/serial comma before 'and' is optional but grammatically correct either way. 'and' alone is correct."
+    "explanation": "In a simple series without internal commas, the Oxford/serial comma before 'and' is optional but grammatically correct either way. 'and' alone is correct.",
+    "options": [
+      "and",
+      ", and",
+      "; and",
+      ": and"
+    ],
+    "correct_key": "A"
   },
   {
     "id": 42,
@@ -543,7 +830,14 @@
     "optionC": "meeting",
     "optionD": "has met",
     "correct": "B",
-    "explanation": "The subject is 'members' (plural), despite the interrupting appositive. The verb must be plural: 'meet.'"
+    "explanation": "The subject is 'members' (plural), despite the interrupting appositive. The verb must be plural: 'meet.'",
+    "options": [
+      "meets",
+      "meet",
+      "meeting",
+      "has met"
+    ],
+    "correct_key": "B"
   },
   {
     "id": 43,
@@ -556,7 +850,14 @@
     "optionC": "optional;",
     "optionD": "optional:",
     "correct": "C",
-    "explanation": "An indirect question doesn't take a question mark. A semicolon correctly separates the two independent clauses."
+    "explanation": "An indirect question doesn't take a question mark. A semicolon correctly separates the two independent clauses.",
+    "options": [
+      "optional?",
+      "optional,",
+      "optional;",
+      "optional:"
+    ],
+    "correct_key": "C"
   },
   {
     "id": 44,
@@ -569,7 +870,14 @@
     "optionC": ":",
     "optionD": ";",
     "correct": "C",
-    "explanation": "A colon correctly introduces a list that explains or specifies what came before it."
+    "explanation": "A colon correctly introduces a list that explains or specifies what came before it.",
+    "options": [
+      ". They were",
+      ", including",
+      ":",
+      ";"
+    ],
+    "correct_key": "C"
   },
   {
     "id": 45,
@@ -582,7 +890,14 @@
     "optionC": "have found",
     "optionD": "were finding",
     "correct": "A",
-    "explanation": "The past perfect ('had found') indicates an action completed before another past action (the team's arrival)."
+    "explanation": "The past perfect ('had found') indicates an action completed before another past action (the team's arrival).",
+    "options": [
+      "had found",
+      "found",
+      "have found",
+      "were finding"
+    ],
+    "correct_key": "A"
   },
   {
     "id": 46,
@@ -595,7 +910,14 @@
     "optionC": "had worked",
     "optionD": "was working",
     "correct": "C",
-    "explanation": "Past perfect ('had worked') is needed to show duration of action before another past event (the breakthrough)."
+    "explanation": "Past perfect ('had worked') is needed to show duration of action before another past event (the breakthrough).",
+    "options": [
+      "worked",
+      "has worked",
+      "had worked",
+      "was working"
+    ],
+    "correct_key": "C"
   },
   {
     "id": 47,
@@ -608,7 +930,14 @@
     "optionC": "had improved",
     "optionD": "has improved",
     "correct": "D",
-    "explanation": "'Since' + past time marker requires present perfect ('has improved') to connect past action to present result."
+    "explanation": "'Since' + past time marker requires present perfect ('has improved') to connect past action to present result.",
+    "options": [
+      "improved",
+      "improves",
+      "had improved",
+      "has improved"
+    ],
+    "correct_key": "D"
   },
   {
     "id": 48,
@@ -621,7 +950,14 @@
     "optionC": "had met",
     "optionD": "has met",
     "correct": "C",
-    "explanation": "Reported speech with 'announced' (past) typically backshifts the tense to past perfect ('had met')."
+    "explanation": "Reported speech with 'announced' (past) typically backshifts the tense to past perfect ('had met').",
+    "options": [
+      "meets",
+      "met",
+      "had met",
+      "has met"
+    ],
+    "correct_key": "C"
   },
   {
     "id": 49,
@@ -634,7 +970,14 @@
     "optionC": "dismissive",
     "optionD": "derisive",
     "correct": "B",
-    "explanation": "'Dispassionate' means impartial and unemotional, fitting an author who presents views without taking sides."
+    "explanation": "'Dispassionate' means impartial and unemotional, fitting an author who presents views without taking sides.",
+    "options": [
+      "dogmatic",
+      "dispassionate",
+      "dismissive",
+      "derisive"
+    ],
+    "correct_key": "B"
   },
   {
     "id": 50,
@@ -647,7 +990,14 @@
     "optionC": "erroneous",
     "optionD": "exhaustive",
     "correct": "B",
-    "explanation": "'Equivocal' means ambiguous or open to multiple interpretations, fitting evidence that both supports and contradicts."
+    "explanation": "'Equivocal' means ambiguous or open to multiple interpretations, fitting evidence that both supports and contradicts.",
+    "options": [
+      "conclusive",
+      "equivocal",
+      "erroneous",
+      "exhaustive"
+    ],
+    "correct_key": "B"
   },
   {
     "id": 51,
@@ -660,7 +1010,14 @@
     "optionC": "didactic",
     "optionD": "linear",
     "correct": "D",
-    "explanation": "The contrast with 'gradually' and 'step by step' suggests the alternative would be direct. 'Linear' (straight, direct) contrasts with the gradual approach described."
+    "explanation": "The contrast with 'gradually' and 'step by step' suggests the alternative would be direct. 'Linear' (straight, direct) contrasts with the gradual approach described.",
+    "options": [
+      "polemic",
+      "circuitous",
+      "didactic",
+      "linear"
+    ],
+    "correct_key": "D"
   },
   {
     "id": 52,
@@ -673,7 +1030,14 @@
     "optionC": "innovative",
     "optionD": "tedious",
     "correct": "A",
-    "explanation": "The context directly states that readers 'could easily predict each twist,' making 'predictable' the precise word."
+    "explanation": "The context directly states that readers 'could easily predict each twist,' making 'predictable' the precise word.",
+    "options": [
+      "predictable",
+      "convoluted",
+      "innovative",
+      "tedious"
+    ],
+    "correct_key": "A"
   },
   {
     "id": 53,
@@ -686,7 +1050,14 @@
     "optionC": "Some teenagers use social media for mental health support groups.",
     "optionD": "Parents often underestimate how much time their children spend on social media.",
     "correct": "B",
-    "explanation": "If anxiety was rising before social media, this weakens the claim that social media causes the increase—suggesting other factors may be responsible."
+    "explanation": "If anxiety was rising before social media, this weakens the claim that social media causes the increase—suggesting other factors may be responsible.",
+    "options": [
+      "Teenagers who use social media report higher levels of social connection.",
+      "Studies show anxiety levels were rising among teenagers before social media became widespread.",
+      "Some teenagers use social media for mental health support groups.",
+      "Parents often underestimate how much time their children spend on social media."
+    ],
+    "correct_key": "B"
   },
   {
     "id": 54,
@@ -699,7 +1070,14 @@
     "optionC": "Businesses in areas with minimum wage increases reduced their workforce by an average of 15%.",
     "optionD": "Politicians from both parties have supported minimum wage legislation.",
     "correct": "C",
-    "explanation": "Direct evidence of workforce reduction following minimum wage increases directly supports the claim that such increases lead to job losses."
+    "explanation": "Direct evidence of workforce reduction following minimum wage increases directly supports the claim that such increases lead to job losses.",
+    "options": [
+      "Countries with higher minimum wages have lower poverty rates.",
+      "Some workers report improved quality of life after wage increases.",
+      "Businesses in areas with minimum wage increases reduced their workforce by an average of 15%.",
+      "Politicians from both parties have supported minimum wage legislation."
+    ],
+    "correct_key": "C"
   },
   {
     "id": 55,
@@ -712,7 +1090,14 @@
     "optionC": "Political leaders often celebrated industrial achievements.",
     "optionD": "Similar industrial developments occurred across countries with vastly different political systems.",
     "correct": "D",
-    "explanation": "If industrial development occurred regardless of political system, this suggests technology rather than political leadership was the driving force."
+    "explanation": "If industrial development occurred regardless of political system, this suggests technology rather than political leadership was the driving force.",
+    "options": [
+      "Several key inventors had no political connections.",
+      "The Industrial Revolution coincided with major political reforms.",
+      "Political leaders often celebrated industrial achievements.",
+      "Similar industrial developments occurred across countries with vastly different political systems."
+    ],
+    "correct_key": "D"
   },
   {
     "id": 56,
@@ -725,7 +1110,14 @@
     "optionC": "Other critics have noted thematic similarities across the author's works.",
     "optionD": "The author's letters reveal that she deliberately avoided autobiographical material in her fiction.",
     "correct": "D",
-    "explanation": "Direct evidence that the author deliberately avoided autobiographical material directly contradicts the claim that childhood experiences influenced her novels."
+    "explanation": "Direct evidence that the author deliberately avoided autobiographical material directly contradicts the claim that childhood experiences influenced her novels.",
+    "options": [
+      "The author rarely discussed her childhood in interviews.",
+      "The author grew up in a small town similar to those depicted in her novels.",
+      "Other critics have noted thematic similarities across the author's works.",
+      "The author's letters reveal that she deliberately avoided autobiographical material in her fiction."
+    ],
+    "correct_key": "D"
   },
   {
     "id": 57,
@@ -738,7 +1130,14 @@
     "optionC": "Public transit affects carbon emissions, traffic, and physical activity in cities.",
     "optionD": "Some cities have better public transportation than others.",
     "correct": "A",
-    "explanation": "Option A uses the specific data to make a persuasive case, framing the benefits positively to emphasize importance."
+    "explanation": "Option A uses the specific data to make a persuasive case, framing the benefits positively to emphasize importance.",
+    "options": [
+      "Public transportation systems dramatically reduce environmental impact while improving quality of life: cities with extensive transit have 50% lower emissions, 30% less congestion, and residents who are 20% more physically active.",
+      "Research has examined the relationship between public transportation and various urban metrics.",
+      "Public transit affects carbon emissions, traffic, and physical activity in cities.",
+      "Some cities have better public transportation than others."
+    ],
+    "correct_key": "A"
   },
   {
     "id": 58,
@@ -751,7 +1150,14 @@
     "optionC": "While AI has delivered measurable benefits—improving diagnostic accuracy by 35% and automating 40% of routine tasks—these advances come with legitimate concerns about job displacement and algorithmic bias that require careful management.",
     "optionD": "AI has increased diagnostic accuracy and automated routine tasks.",
     "correct": "C",
-    "explanation": "Option C acknowledges both benefits (with specific data) and risks, creating the balanced view requested."
+    "explanation": "Option C acknowledges both benefits (with specific data) and risks, creating the balanced view requested.",
+    "options": [
+      "AI has both benefits and drawbacks that society must consider.",
+      "AI is dangerous because of job displacement and algorithmic bias.",
+      "While AI has delivered measurable benefits—improving diagnostic accuracy by 35% and automating 40% of routine tasks—these advances come with legitimate concerns about job displacement and algorithmic bias that require careful management.",
+      "AI has increased diagnostic accuracy and automated routine tasks."
+    ],
+    "correct_key": "C"
   },
   {
     "id": 59,
@@ -764,7 +1170,14 @@
     "optionC": "With a return of $7 for every $1 invested, NASA's modest 0.5% share of federal spending represents one of the government's most efficient investments, making the case for increased funding compelling.",
     "optionD": "Some people believe space exploration funding should increase.",
     "correct": "C",
-    "explanation": "Option C uses the data strategically to build an argument for increased funding, combining cost-effectiveness with economic returns."
+    "explanation": "Option C uses the data strategically to build an argument for increased funding, combining cost-effectiveness with economic returns.",
+    "options": [
+      "NASA represents a small percentage of federal spending.",
+      "Space exploration generates economic returns through technology development.",
+      "With a return of $7 for every $1 invested, NASA's modest 0.5% share of federal spending represents one of the government's most efficient investments, making the case for increased funding compelling.",
+      "Some people believe space exploration funding should increase."
+    ],
+    "correct_key": "C"
   },
   {
     "id": 60,
@@ -777,7 +1190,14 @@
     "optionC": "Renewable energy has some reliability challenges.",
     "optionD": "Battery storage is becoming more affordable.",
     "correct": "B",
-    "explanation": "Option B directly addresses reliability concerns (the goal) by presenting battery improvements as solutions to intermittency problems."
+    "explanation": "Option B directly addresses reliability concerns (the goal) by presenting battery improvements as solutions to intermittency problems.",
+    "options": [
+      "Battery technology has improved significantly in recent years.",
+      "Critics of renewable energy often cite reliability concerns, but the dramatic advances in battery storage—with capacity up 400% and costs down 85% over the past decade—have largely resolved the intermittency challenges that once limited adoption.",
+      "Renewable energy has some reliability challenges.",
+      "Battery storage is becoming more affordable."
+    ],
+    "correct_key": "B"
   },
   {
     "id": 61,
@@ -790,7 +1210,14 @@
     "optionC": "Workers in developing countries have benefited most from globalization.",
     "optionD": "Globalization should be reversed through protectionist policies.",
     "correct": "A",
-    "explanation": "Both acknowledge significant economic impacts—one emphasizing benefits, one emphasizing uneven distribution. They disagree on evaluation but agree on magnitude."
+    "explanation": "Both acknowledge significant economic impacts—one emphasizing benefits, one emphasizing uneven distribution. They disagree on evaluation but agree on magnitude.",
+    "options": [
+      "Globalization has produced economic changes of significant magnitude.",
+      "The negative effects of globalization outweigh the positive effects.",
+      "Workers in developing countries have benefited most from globalization.",
+      "Globalization should be reversed through protectionist policies."
+    ],
+    "correct_key": "A"
   },
   {
     "id": 62,
@@ -803,7 +1230,14 @@
     "optionC": "The historical period in which the novel was written.",
     "optionD": "Whether the novel should be considered a tragedy.",
     "correct": "B",
-    "explanation": "Critic X emphasizes external forces (capitalism, market), while Critic Y emphasizes internal forces (psychological conflicts). This is their primary disagreement."
+    "explanation": "Critic X emphasizes external forces (capitalism, market), while Critic Y emphasizes internal forces (psychological conflicts). This is their primary disagreement.",
+    "options": [
+      "The quality of the novel's prose style.",
+      "Whether internal or external forces are central to the narrative.",
+      "The historical period in which the novel was written.",
+      "Whether the novel should be considered a tragedy."
+    ],
+    "correct_key": "B"
   },
   {
     "id": 63,
@@ -816,7 +1250,14 @@
     "optionC": "Unsupported by geological evidence.",
     "optionD": "Politically motivated rather than scientifically grounded.",
     "correct": "B",
-    "explanation": "Scientist B doesn't deny the asteroid's importance but adds volcanic activity as a contributing factor, suggesting A's view is oversimplified, not wrong."
+    "explanation": "Scientist B doesn't deny the asteroid's importance but adds volcanic activity as a contributing factor, suggesting A's view is oversimplified, not wrong.",
+    "options": [
+      "Completely incorrect about the asteroid's role.",
+      "Overly focused on a single cause while neglecting contributing factors.",
+      "Unsupported by geological evidence.",
+      "Politically motivated rather than scientifically grounded."
+    ],
+    "correct_key": "B"
   },
   {
     "id": 64,
@@ -829,7 +1270,14 @@
     "optionC": "Are administered to students.",
     "optionD": "Have any measurable effects on education.",
     "correct": "B",
-    "explanation": "P sees tests as beneficial (accountability, gap identification); Q sees them as harmful (narrow, biased, distorting). Their core disagreement is about net value."
+    "explanation": "P sees tests as beneficial (accountability, gap identification); Q sees them as harmful (narrow, biased, distorting). Their core disagreement is about net value.",
+    "options": [
+      "Exist in current educational systems.",
+      "Provide benefits that outweigh their limitations.",
+      "Are administered to students.",
+      "Have any measurable effects on education."
+    ],
+    "correct_key": "B"
   },
   {
     "id": 65,
@@ -842,7 +1290,14 @@
     "optionC": "The site may have served specialized functions not typical of simple seasonal camps.",
     "optionD": "All archaeological interpretations are equally valid.",
     "correct": "C",
-    "explanation": "Trade goods 'complicate' the semi-nomadic interpretation, suggesting the site had functions beyond simple temporary occupation—perhaps trade center or specialized purpose."
+    "explanation": "Trade goods 'complicate' the semi-nomadic interpretation, suggesting the site had functions beyond simple temporary occupation—perhaps trade center or specialized purpose.",
+    "options": [
+      "The inhabitants had no contact with other cultures.",
+      "Semi-nomadic peoples rarely engage in long-distance trade.",
+      "The site may have served specialized functions not typical of simple seasonal camps.",
+      "All archaeological interpretations are equally valid."
+    ],
+    "correct_key": "C"
   },
   {
     "id": 66,
@@ -855,7 +1310,14 @@
     "optionC": "Free composition is impossible to perform successfully.",
     "optionD": "Constraint can stimulate creativity in ways that unconstrained freedom cannot.",
     "correct": "D",
-    "explanation": "The composer finds traditional forms more freeing than 'apparent liberty,' suggesting that constraints stimulate creativity while total freedom creates its own limitations."
+    "explanation": "The composer finds traditional forms more freeing than 'apparent liberty,' suggesting that constraints stimulate creativity while total freedom creates its own limitations.",
+    "options": [
+      "Traditional music is inherently superior to experimental music.",
+      "Musical boundaries should never be crossed.",
+      "Free composition is impossible to perform successfully.",
+      "Constraint can stimulate creativity in ways that unconstrained freedom cannot."
+    ],
+    "correct_key": "D"
   },
   {
     "id": 67,
@@ -868,7 +1330,14 @@
     "optionC": "All political systems are fundamentally identical.",
     "optionD": "Revolutionary movements should be abandoned.",
     "correct": "B",
-    "explanation": "The theorist notes that power structures persist despite revolutionary intent due to 'inherited assumptions,' suggesting that deeper structural/cultural change is needed beyond surface changes."
+    "explanation": "The theorist notes that power structures persist despite revolutionary intent due to 'inherited assumptions,' suggesting that deeper structural/cultural change is needed beyond surface changes.",
+    "options": [
+      "Revolutions always fail to achieve their goals.",
+      "Structural change requires more than changes in leadership or stated ideology.",
+      "All political systems are fundamentally identical.",
+      "Revolutionary movements should be abandoned."
+    ],
+    "correct_key": "B"
   },
   {
     "id": 68,
@@ -881,7 +1350,14 @@
     "optionC": "Careful planning always diminishes literary quality.",
     "optionD": "Organic development of characters can enhance narrative authenticity.",
     "correct": "D",
-    "explanation": "The novelist values characters who 'surprise' her as 'essential to authenticity,' suggesting she believes organic/unplanned development creates more genuine fiction."
+    "explanation": "The novelist values characters who 'surprise' her as 'essential to authenticity,' suggesting she believes organic/unplanned development creates more genuine fiction.",
+    "options": [
+      "Authors have no control over their creative work.",
+      "Readers prefer unpredictable plots.",
+      "Careful planning always diminishes literary quality.",
+      "Organic development of characters can enhance narrative authenticity."
+    ],
+    "correct_key": "D"
   },
   {
     "id": 69,
@@ -894,7 +1370,14 @@
     "optionC": "to",
     "optionD": "that will function as a forum to",
     "correct": "C",
-    "explanation": "'To discuss' is the most concise option while maintaining the meaning. Other options are unnecessarily wordy."
+    "explanation": "'To discuss' is the most concise option while maintaining the meaning. Other options are unnecessarily wordy.",
+    "options": [
+      "for the purpose of discussing",
+      "with the intention of discussing",
+      "to",
+      "that will function as a forum to"
+    ],
+    "correct_key": "C"
   },
   {
     "id": 70,
@@ -907,7 +1390,14 @@
     "optionC": "about the fact that",
     "optionD": "concerning the matter of",
     "correct": "B",
-    "explanation": "'That' alone introduces the clause concisely. 'The fact that' and other options add unnecessary words."
+    "explanation": "'That' alone introduces the clause concisely. 'The fact that' and other options add unnecessary words.",
+    "options": [
+      "the fact that",
+      "that",
+      "about the fact that",
+      "concerning the matter of"
+    ],
+    "correct_key": "B"
   },
   {
     "id": 71,
@@ -920,7 +1410,14 @@
     "optionC": "in a manner that was ahead of schedule",
     "optionD": "prior to the time that had been scheduled",
     "correct": "A",
-    "explanation": "'Ahead of schedule' is the most concise expression of the idea. Other options convey the same meaning with unnecessary words."
+    "explanation": "'Ahead of schedule' is the most concise expression of the idea. Other options convey the same meaning with unnecessary words.",
+    "options": [
+      "ahead of schedule",
+      "in advance of the scheduled time",
+      "in a manner that was ahead of schedule",
+      "prior to the time that had been scheduled"
+    ],
+    "correct_key": "A"
   },
   {
     "id": 72,
@@ -933,7 +1430,14 @@
     "optionC": "affects",
     "optionD": "has impacts on",
     "correct": "C",
-    "explanation": "'Affects' is a single verb that replaces the wordy phrases in other options while maintaining the same meaning."
+    "explanation": "'Affects' is a single verb that replaces the wordy phrases in other options while maintaining the same meaning.",
+    "options": [
+      "has an effect on",
+      "produces effects upon",
+      "affects",
+      "has impacts on"
+    ],
+    "correct_key": "C"
   },
   {
     "id": 73,
@@ -946,7 +1450,14 @@
     "optionC": "Many cities have different climates.",
     "optionD": "Some people prefer to shop at supermarkets.",
     "correct": "B",
-    "explanation": "The paragraph claims 'numerous benefits'; sentence 2 gives one (nutrition). B adds another benefit (community), developing the 'numerous' claim."
+    "explanation": "The paragraph claims 'numerous benefits'; sentence 2 gives one (nutrition). B adds another benefit (community), developing the 'numerous' claim.",
+    "options": [
+      "Gardens require regular watering.",
+      "Beyond nutrition, these gardens create community gathering spaces that strengthen neighborhood bonds.",
+      "Many cities have different climates.",
+      "Some people prefer to shop at supermarkets."
+    ],
+    "correct_key": "B"
   },
   {
     "id": 74,
@@ -959,7 +1470,14 @@
     "optionC": "Sentence C",
     "optionD": "Sentence D",
     "correct": "C",
-    "explanation": "C states the main claim (decline + threat) that the other sentences explain or elaborate. A gives a cause, B explains importance, D describes response—all follow from C."
+    "explanation": "C states the main claim (decline + threat) that the other sentences explain or elaborate. A gives a cause, B explains importance, D describes response—all follow from C.",
+    "options": [
+      "Sentence A",
+      "Sentence B",
+      "Sentence C",
+      "Sentence D"
+    ],
+    "correct_key": "C"
   },
   {
     "id": 75,
@@ -972,7 +1490,14 @@
     "optionC": "Print newspapers still exist in some markets.",
     "optionD": "People use their phones for many purposes.",
     "correct": "A",
-    "explanation": "C synthesizes the paragraph's discussion of changes and points toward implications, providing a conclusion that extends rather than merely restates the argument."
+    "explanation": "C synthesizes the paragraph's discussion of changes and points toward implications, providing a conclusion that extends rather than merely restates the argument.",
+    "options": [
+      "These changes in consumption patterns have profound implications for journalism itself, raising questions about the depth and accuracy that rapid news cycles can sustain.",
+      "Many websites have paywalls.",
+      "Print newspapers still exist in some markets.",
+      "People use their phones for many purposes."
+    ],
+    "correct_key": "A"
   },
   {
     "id": 76,
@@ -985,7 +1510,14 @@
     "optionC": "The experiment yielded unexpected results, and the researchers revised their methodology.",
     "optionD": "The researchers revised their methodology. The experiment yielded unexpected results.",
     "correct": "A",
-    "explanation": "C makes the causal relationship explicit and explains the nature of the revision, creating the strongest logical connection between cause and effect."
+    "explanation": "C makes the causal relationship explicit and explains the nature of the revision, creating the strongest logical connection between cause and effect.",
+    "options": [
+      "The experiment yielded unexpected results, which prompted the researchers to revise their methodology to account for previously overlooked variables.",
+      "The experiment yielded unexpected results. Therefore, the researchers revised their methodology.",
+      "The experiment yielded unexpected results, and the researchers revised their methodology.",
+      "The researchers revised their methodology. The experiment yielded unexpected results."
+    ],
+    "correct_key": "A"
   },
   {
     "id": 77,
@@ -998,7 +1530,14 @@
     "optionC": "indicate that the CEO's methods are dangerous",
     "optionD": "imply that the CEO is inexperienced",
     "correct": "A",
-    "explanation": "'Refreshingly' has positive connotations, suggesting the unorthodox approach is welcome rather than problematic."
+    "explanation": "'Refreshingly' has positive connotations, suggesting the unorthodox approach is welcome rather than problematic.",
+    "options": [
+      "suggest the CEO's approach offers a welcome alternative to conventional methods",
+      "criticize the CEO for failing to follow established practices",
+      "indicate that the CEO's methods are dangerous",
+      "imply that the CEO is inexperienced"
+    ],
+    "correct_key": "A"
   },
   {
     "id": 78,
@@ -1011,7 +1550,14 @@
     "optionC": "argue that history should not be studied",
     "optionD": "encourage readers to question the objectivity of historical accounts",
     "correct": "D",
-    "explanation": "The phrase 'as always' suggests a pattern of bias, prompting readers to question whether official histories represent all perspectives accurately."
+    "explanation": "The phrase 'as always' suggests a pattern of bias, prompting readers to question whether official histories represent all perspectives accurately.",
+    "options": [
+      "celebrate military achievements",
+      "praise the accuracy of historical records",
+      "argue that history should not be studied",
+      "encourage readers to question the objectivity of historical accounts"
+    ],
+    "correct_key": "D"
   },
   {
     "id": 79,
@@ -1024,7 +1570,14 @@
     "optionC": "the politician should pursue an acting career",
     "optionD": "the speech was skillfully performed but potentially insincere",
     "correct": "D",
-    "explanation": "Calling a political speech 'theater' implies performance and potential artifice—'masterful' acknowledges skill while 'theater' suggests possible insincerity."
+    "explanation": "Calling a political speech 'theater' implies performance and potential artifice—'masterful' acknowledges skill while 'theater' suggests possible insincerity.",
+    "options": [
+      "the speech was genuinely moving and authentic",
+      "political speeches are always theatrical",
+      "the politician should pursue an acting career",
+      "the speech was skillfully performed but potentially insincere"
+    ],
+    "correct_key": "D"
   },
   {
     "id": 80,
@@ -1037,7 +1590,14 @@
     "optionC": "argue that scientific study is impossible",
     "optionD": "suggest that nature should not be taken seriously",
     "correct": "B",
-    "explanation": "Scientists often use such language to highlight surprising findings that contradict expectations, making complex ideas more accessible through personification."
+    "explanation": "Scientists often use such language to highlight surprising findings that contradict expectations, making complex ideas more accessible through personification.",
+    "options": [
+      "attribute human emotions to natural phenomena",
+      "acknowledge the unexpected or counterintuitive aspects of natural processes",
+      "argue that scientific study is impossible",
+      "suggest that nature should not be taken seriously"
+    ],
+    "correct_key": "B"
   },
   {
     "id": 81,
@@ -1050,7 +1610,14 @@
     "optionC": ":",
     "optionD": "—",
     "correct": "C",
-    "explanation": "A colon correctly introduces a list that specifies or explains what came before ('three key principles')."
+    "explanation": "A colon correctly introduces a list that specifies or explains what came before ('three key principles').",
+    "options": [
+      ",",
+      ";",
+      ":",
+      "—"
+    ],
+    "correct_key": "C"
   },
   {
     "id": 82,
@@ -1063,7 +1630,14 @@
     "optionC": "and",
     "optionD": ":",
     "correct": "D",
-    "explanation": "A colon correctly introduces an explanation or amplification of what precedes it (the 'one inescapable conclusion')."
+    "explanation": "A colon correctly introduces an explanation or amplification of what precedes it (the 'one inescapable conclusion').",
+    "options": [
+      ",",
+      "because",
+      "and",
+      ":"
+    ],
+    "correct_key": "D"
   },
   {
     "id": 83,
@@ -1076,7 +1650,14 @@
     "optionC": "; including",
     "optionD": "— including",
     "correct": "A",
-    "explanation": "A colon introduces the list that specifies 'several periods.' 'Including' then introduces the examples."
+    "explanation": "A colon introduces the list that specifies 'several periods.' 'Including' then introduces the examples.",
+    "options": [
+      ": including",
+      ", including",
+      "; including",
+      "— including"
+    ],
+    "correct_key": "A"
   },
   {
     "id": 84,
@@ -1089,7 +1670,14 @@
     "optionC": ";",
     "optionD": "—",
     "correct": "A",
-    "explanation": "A colon introduces the list. The list items themselves contain commas, so semicolons separate them (already shown in the question)."
+    "explanation": "A colon introduces the list. The list items themselves contain commas, so semicolons separate them (already shown in the question).",
+    "options": [
+      ":",
+      ",",
+      ";",
+      "—"
+    ],
+    "correct_key": "A"
   },
   {
     "id": 85,
@@ -1102,7 +1690,14 @@
     "optionC": "organizations'",
     "optionD": "organizations's",
     "correct": "B",
-    "explanation": "The convention belongs to one organization, requiring the singular possessive 'organization's.'"
+    "explanation": "The convention belongs to one organization, requiring the singular possessive 'organization's.'",
+    "options": [
+      "organizations",
+      "organization's",
+      "organizations'",
+      "organizations's"
+    ],
+    "correct_key": "B"
   },
   {
     "id": 86,
@@ -1115,7 +1710,14 @@
     "optionC": "players'",
     "optionD": "players's",
     "correct": "C",
-    "explanation": "'All the' suggests multiple players, and the uniforms belong to them. The plural possessive 'players'' is correct."
+    "explanation": "'All the' suggests multiple players, and the uniforms belong to them. The plural possessive 'players'' is correct.",
+    "options": [
+      "players",
+      "player's",
+      "players'",
+      "players's"
+    ],
+    "correct_key": "C"
   },
   {
     "id": 87,
@@ -1128,7 +1730,14 @@
     "optionC": "Its'",
     "optionD": "Its's",
     "correct": "B",
-    "explanation": "'It's' is the contraction for 'it has,' which fits the context. 'Its' (no apostrophe) is possessive."
+    "explanation": "'It's' is the contraction for 'it has,' which fits the context. 'Its' (no apostrophe) is possessive.",
+    "options": [
+      "Its",
+      "It's",
+      "Its'",
+      "Its's"
+    ],
+    "correct_key": "B"
   },
   {
     "id": 88,
@@ -1141,7 +1750,14 @@
     "optionC": "scientists'",
     "optionD": "scientists's",
     "correct": "C",
-    "explanation": "'Two' indicates multiple scientists who share the collaboration. The plural possessive 'scientists'' is correct."
+    "explanation": "'Two' indicates multiple scientists who share the collaboration. The plural possessive 'scientists'' is correct.",
+    "options": [
+      "scientists",
+      "scientist's",
+      "scientists'",
+      "scientists's"
+    ],
+    "correct_key": "C"
   },
   {
     "id": 89,
@@ -1154,7 +1770,14 @@
     "optionC": "While average productivity improved, individual responses to flexible scheduling varied considerably.",
     "optionD": "The study's methodology was flawed.",
     "correct": "C",
-    "explanation": "The increased average and widened range together suggest that while the group improved on average, individuals responded very differently (some improved a lot, others perhaps less or not at all)."
+    "explanation": "The increased average and widened range together suggest that while the group improved on average, individuals responded very differently (some improved a lot, others perhaps less or not at all).",
+    "options": [
+      "All employees became more productive under flexible schedules.",
+      "Flexible schedules should be eliminated.",
+      "While average productivity improved, individual responses to flexible scheduling varied considerably.",
+      "The study's methodology was flawed."
+    ],
+    "correct_key": "C"
   },
   {
     "id": 90,
@@ -1167,7 +1790,14 @@
     "optionC": "Tutoring has never been shown to help students.",
     "optionD": "Students who chose tutoring may have been more motivated, making it unclear whether tutoring or motivation caused the improvement.",
     "correct": "D",
-    "explanation": "Voluntary attendance creates self-selection bias—motivated students may seek tutoring AND study more, making it impossible to isolate tutoring's effect from motivation's effect."
+    "explanation": "Voluntary attendance creates self-selection bias—motivated students may seek tutoring AND study more, making it impossible to isolate tutoring's effect from motivation's effect.",
+    "options": [
+      "The score difference was too small to be meaningful.",
+      "The researchers should have studied more subjects.",
+      "Tutoring has never been shown to help students.",
+      "Students who chose tutoring may have been more motivated, making it unclear whether tutoring or motivation caused the improvement."
+    ],
+    "correct_key": "D"
   },
   {
     "id": 91,
@@ -1180,7 +1810,14 @@
     "optionC": "Surveys cannot measure opinions accurately.",
     "optionD": "78% is not a significant majority.",
     "correct": "B",
-    "explanation": "Sampling from one city limits generalizability to the broader population. 500 is a reasonable sample size for a city, but the geographic limitation restricts what conclusions can be drawn."
+    "explanation": "Sampling from one city limits generalizability to the broader population. 500 is a reasonable sample size for a city, but the geographic limitation restricts what conclusions can be drawn.",
+    "options": [
+      "The sample size was too small.",
+      "The sample was drawn from only one geographic area.",
+      "Surveys cannot measure opinions accurately.",
+      "78% is not a significant majority."
+    ],
+    "correct_key": "B"
   },
   {
     "id": 92,
@@ -1193,7 +1830,14 @@
     "optionC": "The company's profits increased by 25%.",
     "optionD": "The company gained market share.",
     "correct": "A",
-    "explanation": "Revenue growth (25%) exceeded inflation (15%), indicating real growth in purchasing power. Profit, market share, and competitor comparisons require additional information."
+    "explanation": "Revenue growth (25%) exceeded inflation (15%), indicating real growth in purchasing power. Profit, market share, and competitor comparisons require additional information.",
+    "options": [
+      "The company's revenue growth exceeded inflation, representing real growth.",
+      "The company's prices increased faster than competitors'.",
+      "The company's profits increased by 25%.",
+      "The company gained market share."
+    ],
+    "correct_key": "A"
   },
   {
     "id": 93,
@@ -1206,7 +1850,14 @@
     "optionC": "which",
     "optionD": "whose",
     "correct": "D",
-    "explanation": "'Whose' shows possession (the researcher's findings). 'Who's' means 'who is,' 'which' is for non-persons, and 'whom' is objective case."
+    "explanation": "'Whose' shows possession (the researcher's findings). 'Who's' means 'who is,' 'which' is for non-persons, and 'whom' is objective case.",
+    "options": [
+      "who's",
+      "whom",
+      "which",
+      "whose"
+    ],
+    "correct_key": "D"
   },
   {
     "id": 94,
@@ -1219,7 +1870,14 @@
     "optionC": "who",
     "optionD": "whom",
     "correct": "B",
-    "explanation": "Non-restrictive (comma-separated) clauses use 'which,' not 'that.' 'Who/whom' are for people, not buildings."
+    "explanation": "Non-restrictive (comma-separated) clauses use 'which,' not 'that.' 'Who/whom' are for people, not buildings.",
+    "options": [
+      "that",
+      "which",
+      "who",
+      "whom"
+    ],
+    "correct_key": "B"
   },
   {
     "id": 95,
@@ -1232,7 +1890,14 @@
     "optionC": "which",
     "optionD": "whose",
     "correct": "B",
-    "explanation": "'Whom' is correct because the pronoun is the object of 'with' (she collaborated with whom). 'Who' would be subjective case."
+    "explanation": "'Whom' is correct because the pronoun is the object of 'with' (she collaborated with whom). 'Who' would be subjective case.",
+    "options": [
+      "who",
+      "whom",
+      "which",
+      "whose"
+    ],
+    "correct_key": "B"
   },
   {
     "id": 96,
@@ -1245,7 +1910,14 @@
     "optionC": "who",
     "optionD": "which",
     "correct": "D",
-    "explanation": "The clause is non-restrictive (set off by commas), requiring 'which.' 'That' introduces restrictive clauses without commas."
+    "explanation": "The clause is non-restrictive (set off by commas), requiring 'which.' 'That' introduces restrictive clauses without commas.",
+    "options": [
+      "that",
+      "whom",
+      "who",
+      "which"
+    ],
+    "correct_key": "D"
   },
   {
     "id": 97,
@@ -1258,7 +1930,14 @@
     "optionC": "cautiously skeptical",
     "optionD": "completely neutral",
     "correct": "C",
-    "explanation": "The phrase 'if perhaps somewhat ambitious' introduces doubt without harsh criticism, while 'bold' provides some acknowledgment. This balanced hedging indicates cautious skepticism."
+    "explanation": "The phrase 'if perhaps somewhat ambitious' introduces doubt without harsh criticism, while 'bold' provides some acknowledgment. This balanced hedging indicates cautious skepticism.",
+    "options": [
+      "enthusiastically supportive",
+      "harshly critical",
+      "cautiously skeptical",
+      "completely neutral"
+    ],
+    "correct_key": "C"
   },
   {
     "id": 98,
@@ -1271,7 +1950,14 @@
     "optionC": "inappropriate and unprofessional",
     "optionD": "expected and routine",
     "correct": "D",
-    "explanation": "'Predictably' indicates the author sees the reaction as expected behavior—not surprising, innovative, or inappropriate."
+    "explanation": "'Predictably' indicates the author sees the reaction as expected behavior—not surprising, innovative, or inappropriate.",
+    "options": [
+      "surprising and unusual",
+      "innovative and forward-thinking",
+      "inappropriate and unprofessional",
+      "expected and routine"
+    ],
+    "correct_key": "D"
   },
   {
     "id": 99,
@@ -1284,7 +1970,14 @@
     "optionC": "uncertainty about the experts' names",
     "optionD": "admiration for the experts' methodology",
     "correct": "B",
-    "explanation": "'So-called' signals that the author questions whether the 'experts' truly deserve that title, especially given their failure to anticipate something 'obvious.'"
+    "explanation": "'So-called' signals that the author questions whether the 'experts' truly deserve that title, especially given their failure to anticipate something 'obvious.'",
+    "options": [
+      "respect for professional qualifications",
+      "skepticism about the experts' competence or legitimacy",
+      "uncertainty about the experts' names",
+      "admiration for the experts' methodology"
+    ],
+    "correct_key": "B"
   },
   {
     "id": 100,
@@ -1297,6 +1990,13 @@
     "optionC": "neutrally analytical",
     "optionD": "dismissive and unimpressed",
     "correct": "D",
-    "explanation": "'Pedestrian' (ordinary, uninspired), 'despite considerable budget,' and 'least demanding viewers' all signal the critic's dismissive, unimpressed attitude."
+    "explanation": "'Pedestrian' (ordinary, uninspired), 'despite considerable budget,' and 'least demanding viewers' all signal the critic's dismissive, unimpressed attitude.",
+    "options": [
+      "largely positive with minor reservations",
+      "confused and uncertain",
+      "neutrally analytical",
+      "dismissive and unimpressed"
+    ],
+    "correct_key": "D"
   }
 ]
