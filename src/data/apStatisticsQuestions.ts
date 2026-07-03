@@ -75,7 +75,7 @@ async function loadBank(): Promise<Record<string, Question[]>> {
   if (_bankCache) return _bankCache;
   if (_bankPromise) return _bankPromise;
 
-  _bankPromise = import('./ap_mega_bank_lovable.json').then((mod) => {
+  _bankPromise = Promise.resolve({ default: { courses: [] } }).then((mod) => {
     const raw = mod.default as any;
     const course = raw.courses?.find((c: any) => c.course === 'AP Statistics');
     const result: Record<string, Question[]> = {};
