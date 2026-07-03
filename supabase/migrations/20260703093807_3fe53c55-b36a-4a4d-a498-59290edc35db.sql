@@ -1,0 +1,1 @@
+GRANT UPDATE (weekly_summary_enabled, summary_email) ON public.profiles TO authenticated;
