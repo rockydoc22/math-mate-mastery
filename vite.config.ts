@@ -104,8 +104,6 @@ export default defineConfig(({ mode }) => ({
           'aplit-bank-v2': ['./src/data/aplit_full_question_bank_v2.json'],
           'apcalcbc-bank': ['./src/data/apcalcbc_full_question_bank.json'],
           'apcalcbc-bank-v2': ['./src/data/apcalcbc_full_question_bank_v2.json'],
-          'ap-mega-bank': ['./src/data/ap_mega_bank_lovable.json'],
-          'ap-mega-bank-v2': ['./src/data/ap_mega_bank_v2.json'],
           'ap-chem-bank': ['./src/data/ap_chem_full_question_bank.json'],
           'ap-physics-bank': ['./src/data/ap_physics_2_question_bank_lovable.json'],
           'ccff-practice': ['./src/data/ccff_french_competition_practice.json'],

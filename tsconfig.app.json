@@ -21,6 +21,9 @@
         "./src/*"
       ]
     },
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
     "skipLibCheck": true,
     "strict": false,
     "target": "ES2020",
