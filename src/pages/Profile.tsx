@@ -54,7 +54,7 @@ const Profile = () => {
     const fetchProfile = async () => {
       const { data } = await supabase
         .from("profiles")
-        .select("*")
+        .select("id, username, avatar_emoji, theme_color")
         .eq("id", user.id)
         .maybeSingle();
       
