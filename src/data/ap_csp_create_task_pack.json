@@ -1,1 +1,737 @@
-{"bundle_title":"AP CSP Create Task Planning + Rubric Checklist Pack","generated_utc":"2026-03-05T18:14:04.640594+00:00","course":"AP Computer Science Principles","modules":{"planning_prompts":[{"id":"APCSP_PLAN_001","type":"planning_prompt","prompt":"Describe your program’s purpose and target user."},{"id":"APCSP_PLAN_002","type":"planning_prompt","prompt":"List your input(s) and output(s) and how they are produced."},{"id":"APCSP_PLAN_003","type":"planning_prompt","prompt":"Identify one list (or collection) you will use and why it’s necessary."},{"id":"APCSP_PLAN_004","type":"planning_prompt","prompt":"Describe the algorithm that uses sequencing, selection, and iteration."},{"id":"APCSP_PLAN_005","type":"planning_prompt","prompt":"Write a short test plan: 3 tests with expected vs actual results."},{"id":"APCSP_PLAN_006","type":"planning_prompt","prompt":"Describe your program’s purpose and target user."},{"id":"APCSP_PLAN_007","type":"planning_prompt","prompt":"List your input(s) and output(s) and how they are produced."},{"id":"APCSP_PLAN_008","type":"planning_prompt","prompt":"Identify one list (or collection) you will use and why it’s necessary."},{"id":"APCSP_PLAN_009","type":"planning_prompt","prompt":"Describe the algorithm that uses sequencing, selection, and iteration."},{"id":"APCSP_PLAN_010","type":"planning_prompt","prompt":"Write a short test plan: 3 tests with expected vs actual results."},{"id":"APCSP_PLAN_011","type":"planning_prompt","prompt":"Describe your program’s purpose and target user."},{"id":"APCSP_PLAN_012","type":"planning_prompt","prompt":"List your input(s) and output(s) and how they are produced."},{"id":"APCSP_PLAN_013","type":"planning_prompt","prompt":"Identify one list (or collection) you will use and why it’s necessary."},{"id":"APCSP_PLAN_014","type":"planning_prompt","prompt":"Describe the algorithm that uses sequencing, selection, and iteration."},{"id":"APCSP_PLAN_015","type":"planning_prompt","prompt":"Write a short test plan: 3 tests with expected vs actual results."},{"id":"APCSP_PLAN_016","type":"planning_prompt","prompt":"Describe your program’s purpose and target user."},{"id":"APCSP_PLAN_017","type":"planning_prompt","prompt":"List your input(s) and output(s) and how they are produced."},{"id":"APCSP_PLAN_018","type":"planning_prompt","prompt":"Identify one list (or collection) you will use and why it’s necessary."},{"id":"APCSP_PLAN_019","type":"planning_prompt","prompt":"Describe the algorithm that uses sequencing, selection, and iteration."},{"id":"APCSP_PLAN_020","type":"planning_prompt","prompt":"Write a short test plan: 3 tests with expected vs actual results."},{"id":"APCSP_PLAN_021","type":"planning_prompt","prompt":"Describe your program’s purpose and target user."},{"id":"APCSP_PLAN_022","type":"planning_prompt","prompt":"List your input(s) and output(s) and how they are produced."},{"id":"APCSP_PLAN_023","type":"planning_prompt","prompt":"Identify one list (or collection) you will use and why it’s necessary."},{"id":"APCSP_PLAN_024","type":"planning_prompt","prompt":"Describe the algorithm that uses sequencing, selection, and iteration."},{"id":"APCSP_PLAN_025","type":"planning_prompt","prompt":"Write a short test plan: 3 tests with expected vs actual results."},{"id":"APCSP_PLAN_026","type":"planning_prompt","prompt":"Describe your program’s purpose and target user."},{"id":"APCSP_PLAN_027","type":"planning_prompt","prompt":"List your input(s) and output(s) and how they are produced."},{"id":"APCSP_PLAN_028","type":"planning_prompt","prompt":"Identify one list (or collection) you will use and why it’s necessary."},{"id":"APCSP_PLAN_029","type":"planning_prompt","prompt":"Describe the algorithm that uses sequencing, selection, and iteration."},{"id":"APCSP_PLAN_030","type":"planning_prompt","prompt":"Write a short test plan: 3 tests with expected vs actual results."},{"id":"APCSP_PLAN_031","type":"planning_prompt","prompt":"Describe your program’s purpose and target user."},{"id":"APCSP_PLAN_032","type":"planning_prompt","prompt":"List your input(s) and output(s) and how they are produced."},{"id":"APCSP_PLAN_033","type":"planning_prompt","prompt":"Identify one list (or collection) you will use and why it’s necessary."},{"id":"APCSP_PLAN_034","type":"planning_prompt","prompt":"Describe the algorithm that uses sequencing, selection, and iteration."},{"id":"APCSP_PLAN_035","type":"planning_prompt","prompt":"Write a short test plan: 3 tests with expected vs actual results."},{"id":"APCSP_PLAN_036","type":"planning_prompt","prompt":"Describe your program’s purpose and target user."},{"id":"APCSP_PLAN_037","type":"planning_prompt","prompt":"List your input(s) and output(s) and how they are produced."},{"id":"APCSP_PLAN_038","type":"planning_prompt","prompt":"Identify one list (or collection) you will use and why it’s necessary."},{"id":"APCSP_PLAN_039","type":"planning_prompt","prompt":"Describe the algorithm that uses sequencing, selection, and iteration."},{"id":"APCSP_PLAN_040","type":"planning_prompt","prompt":"Write a short test plan: 3 tests with expected vs actual results."},{"id":"APCSP_PLAN_041","type":"planning_prompt","prompt":"Describe your program’s purpose and target user."},{"id":"APCSP_PLAN_042","type":"planning_prompt","prompt":"List your input(s) and output(s) and how they are produced."},{"id":"APCSP_PLAN_043","type":"planning_prompt","prompt":"Identify one list (or collection) you will use and why it’s necessary."},{"id":"APCSP_PLAN_044","type":"planning_prompt","prompt":"Describe the algorithm that uses sequencing, selection, and iteration."},{"id":"APCSP_PLAN_045","type":"planning_prompt","prompt":"Write a short test plan: 3 tests with expected vs actual results."},{"id":"APCSP_PLAN_046","type":"planning_prompt","prompt":"Describe your program’s purpose and target user."},{"id":"APCSP_PLAN_047","type":"planning_prompt","prompt":"List your input(s) and output(s) and how they are produced."},{"id":"APCSP_PLAN_048","type":"planning_prompt","prompt":"Identify one list (or collection) you will use and why it’s necessary."},{"id":"APCSP_PLAN_049","type":"planning_prompt","prompt":"Describe the algorithm that uses sequencing, selection, and iteration."},{"id":"APCSP_PLAN_050","type":"planning_prompt","prompt":"Write a short test plan: 3 tests with expected vs actual results."},{"id":"APCSP_PLAN_051","type":"planning_prompt","prompt":"Describe your program’s purpose and target user."},{"id":"APCSP_PLAN_052","type":"planning_prompt","prompt":"List your input(s) and output(s) and how they are produced."},{"id":"APCSP_PLAN_053","type":"planning_prompt","prompt":"Identify one list (or collection) you will use and why it’s necessary."},{"id":"APCSP_PLAN_054","type":"planning_prompt","prompt":"Describe the algorithm that uses sequencing, selection, and iteration."},{"id":"APCSP_PLAN_055","type":"planning_prompt","prompt":"Write a short test plan: 3 tests with expected vs actual results."},{"id":"APCSP_PLAN_056","type":"planning_prompt","prompt":"Describe your program’s purpose and target user."},{"id":"APCSP_PLAN_057","type":"planning_prompt","prompt":"List your input(s) and output(s) and how they are produced."},{"id":"APCSP_PLAN_058","type":"planning_prompt","prompt":"Identify one list (or collection) you will use and why it’s necessary."},{"id":"APCSP_PLAN_059","type":"planning_prompt","prompt":"Describe the algorithm that uses sequencing, selection, and iteration."},{"id":"APCSP_PLAN_060","type":"planning_prompt","prompt":"Write a short test plan: 3 tests with expected vs actual results."},{"id":"APCSP_PLAN_061","type":"planning_prompt","prompt":"Describe your program’s purpose and target user."},{"id":"APCSP_PLAN_062","type":"planning_prompt","prompt":"List your input(s) and output(s) and how they are produced."},{"id":"APCSP_PLAN_063","type":"planning_prompt","prompt":"Identify one list (or collection) you will use and why it’s necessary."},{"id":"APCSP_PLAN_064","type":"planning_prompt","prompt":"Describe the algorithm that uses sequencing, selection, and iteration."},{"id":"APCSP_PLAN_065","type":"planning_prompt","prompt":"Write a short test plan: 3 tests with expected vs actual results."},{"id":"APCSP_PLAN_066","type":"planning_prompt","prompt":"Describe your program’s purpose and target user."},{"id":"APCSP_PLAN_067","type":"planning_prompt","prompt":"List your input(s) and output(s) and how they are produced."},{"id":"APCSP_PLAN_068","type":"planning_prompt","prompt":"Identify one list (or collection) you will use and why it’s necessary."},{"id":"APCSP_PLAN_069","type":"planning_prompt","prompt":"Describe the algorithm that uses sequencing, selection, and iteration."},{"id":"APCSP_PLAN_070","type":"planning_prompt","prompt":"Write a short test plan: 3 tests with expected vs actual results."},{"id":"APCSP_PLAN_071","type":"planning_prompt","prompt":"Describe your program’s purpose and target user."},{"id":"APCSP_PLAN_072","type":"planning_prompt","prompt":"List your input(s) and output(s) and how they are produced."},{"id":"APCSP_PLAN_073","type":"planning_prompt","prompt":"Identify one list (or collection) you will use and why it’s necessary."},{"id":"APCSP_PLAN_074","type":"planning_prompt","prompt":"Describe the algorithm that uses sequencing, selection, and iteration."},{"id":"APCSP_PLAN_075","type":"planning_prompt","prompt":"Write a short test plan: 3 tests with expected vs actual results."},{"id":"APCSP_PLAN_076","type":"planning_prompt","prompt":"Describe your program’s purpose and target user."},{"id":"APCSP_PLAN_077","type":"planning_prompt","prompt":"List your input(s) and output(s) and how they are produced."},{"id":"APCSP_PLAN_078","type":"planning_prompt","prompt":"Identify one list (or collection) you will use and why it’s necessary."},{"id":"APCSP_PLAN_079","type":"planning_prompt","prompt":"Describe the algorithm that uses sequencing, selection, and iteration."},{"id":"APCSP_PLAN_080","type":"planning_prompt","prompt":"Write a short test plan: 3 tests with expected vs actual results."},{"id":"APCSP_PLAN_081","type":"planning_prompt","prompt":"Describe your program’s purpose and target user."},{"id":"APCSP_PLAN_082","type":"planning_prompt","prompt":"List your input(s) and output(s) and how they are produced."},{"id":"APCSP_PLAN_083","type":"planning_prompt","prompt":"Identify one list (or collection) you will use and why it’s necessary."},{"id":"APCSP_PLAN_084","type":"planning_prompt","prompt":"Describe the algorithm that uses sequencing, selection, and iteration."},{"id":"APCSP_PLAN_085","type":"planning_prompt","prompt":"Write a short test plan: 3 tests with expected vs actual results."},{"id":"APCSP_PLAN_086","type":"planning_prompt","prompt":"Describe your program’s purpose and target user."},{"id":"APCSP_PLAN_087","type":"planning_prompt","prompt":"List your input(s) and output(s) and how they are produced."},{"id":"APCSP_PLAN_088","type":"planning_prompt","prompt":"Identify one list (or collection) you will use and why it’s necessary."},{"id":"APCSP_PLAN_089","type":"planning_prompt","prompt":"Describe the algorithm that uses sequencing, selection, and iteration."},{"id":"APCSP_PLAN_090","type":"planning_prompt","prompt":"Write a short test plan: 3 tests with expected vs actual results."},{"id":"APCSP_PLAN_091","type":"planning_prompt","prompt":"Describe your program’s purpose and target user."},{"id":"APCSP_PLAN_092","type":"planning_prompt","prompt":"List your input(s) and output(s) and how they are produced."},{"id":"APCSP_PLAN_093","type":"planning_prompt","prompt":"Identify one list (or collection) you will use and why it’s necessary."},{"id":"APCSP_PLAN_094","type":"planning_prompt","prompt":"Describe the algorithm that uses sequencing, selection, and iteration."},{"id":"APCSP_PLAN_095","type":"planning_prompt","prompt":"Write a short test plan: 3 tests with expected vs actual results."},{"id":"APCSP_PLAN_096","type":"planning_prompt","prompt":"Describe your program’s purpose and target user."},{"id":"APCSP_PLAN_097","type":"planning_prompt","prompt":"List your input(s) and output(s) and how they are produced."},{"id":"APCSP_PLAN_098","type":"planning_prompt","prompt":"Identify one list (or collection) you will use and why it’s necessary."},{"id":"APCSP_PLAN_099","type":"planning_prompt","prompt":"Describe the algorithm that uses sequencing, selection, and iteration."},{"id":"APCSP_PLAN_100","type":"planning_prompt","prompt":"Write a short test plan: 3 tests with expected vs actual results."}],"rubric_checklists":[{"id":"APCSP_CHECKLIST_001","type":"rubric_checklist","items":[{"key":"purpose","check":"Purpose is clear and specific."},{"key":"data_abstraction","check":"Uses a list/collection and explains why it manages complexity."},{"key":"algorithm","check":"Algorithm includes sequencing, selection, and iteration."},{"key":"procedure","check":"Student-developed procedure with parameter(s) is shown."},{"key":"testing","check":"Includes at least two test cases with expected results."}],"feedback_templates":["Add one sentence explaining how your list makes the program easier to update or expand.","Show where selection (if/else) changes behavior for different inputs.","Include one more test that targets an edge case."]}]}}
+{
+  "bundle_title": "AP CSP Create Task Planning + Rubric Checklist Pack",
+  "generated_utc": "2026-03-05T18:14:04.640594+00:00",
+  "course": "AP Computer Science Principles",
+  "modules": {
+    "planning_prompts": [
+      {
+        "id": "APCSP_PLAN_001",
+        "type": "planning_prompt",
+        "prompt": "Describe your program’s purpose and target user."
+      },
+      {
+        "id": "APCSP_PLAN_002",
+        "type": "planning_prompt",
+        "prompt": "List your input(s) and output(s) and how they are produced."
+      },
+      {
+        "id": "APCSP_PLAN_003",
+        "type": "planning_prompt",
+        "prompt": "Identify one list (or collection) you will use and why it’s necessary."
+      },
+      {
+        "id": "APCSP_PLAN_004",
+        "type": "planning_prompt",
+        "prompt": "Describe the algorithm that uses sequencing, selection, and iteration."
+      },
+      {
+        "id": "APCSP_PLAN_005",
+        "type": "planning_prompt",
+        "prompt": "Write a short test plan: 3 tests with expected vs actual results."
+      },
+      {
+        "id": "APCSP_PLAN_006",
+        "type": "planning_prompt",
+        "prompt": "Describe your program’s purpose and target user."
+      },
+      {
+        "id": "APCSP_PLAN_007",
+        "type": "planning_prompt",
+        "prompt": "List your input(s) and output(s) and how they are produced."
+      },
+      {
+        "id": "APCSP_PLAN_008",
+        "type": "planning_prompt",
+        "prompt": "Identify one list (or collection) you will use and why it’s necessary."
+      },
+      {
+        "id": "APCSP_PLAN_009",
+        "type": "planning_prompt",
+        "prompt": "Describe the algorithm that uses sequencing, selection, and iteration."
+      },
+      {
+        "id": "APCSP_PLAN_010",
+        "type": "planning_prompt",
+        "prompt": "Write a short test plan: 3 tests with expected vs actual results."
+      },
+      {
+        "id": "APCSP_PLAN_011",
+        "type": "planning_prompt",
+        "prompt": "Describe your program’s purpose and target user."
+      },
+      {
+        "id": "APCSP_PLAN_012",
+        "type": "planning_prompt",
+        "prompt": "List your input(s) and output(s) and how they are produced."
+      },
+      {
+        "id": "APCSP_PLAN_013",
+        "type": "planning_prompt",
+        "prompt": "Identify one list (or collection) you will use and why it’s necessary."
+      },
+      {
+        "id": "APCSP_PLAN_014",
+        "type": "planning_prompt",
+        "prompt": "Describe the algorithm that uses sequencing, selection, and iteration."
+      },
+      {
+        "id": "APCSP_PLAN_015",
+        "type": "planning_prompt",
+        "prompt": "Write a short test plan: 3 tests with expected vs actual results."
+      },
+      {
+        "id": "APCSP_PLAN_016",
+        "type": "planning_prompt",
+        "prompt": "Describe your program’s purpose and target user."
+      },
+      {
+        "id": "APCSP_PLAN_017",
+        "type": "planning_prompt",
+        "prompt": "List your input(s) and output(s) and how they are produced."
+      },
+      {
+        "id": "APCSP_PLAN_018",
+        "type": "planning_prompt",
+        "prompt": "Identify one list (or collection) you will use and why it’s necessary."
+      },
+      {
+        "id": "APCSP_PLAN_019",
+        "type": "planning_prompt",
+        "prompt": "Describe the algorithm that uses sequencing, selection, and iteration."
+      },
+      {
+        "id": "APCSP_PLAN_020",
+        "type": "planning_prompt",
+        "prompt": "Write a short test plan: 3 tests with expected vs actual results."
+      },
+      {
+        "id": "APCSP_PLAN_021",
+        "type": "planning_prompt",
+        "prompt": "Describe your program’s purpose and target user."
+      },
+      {
+        "id": "APCSP_PLAN_022",
+        "type": "planning_prompt",
+        "prompt": "List your input(s) and output(s) and how they are produced."
+      },
+      {
+        "id": "APCSP_PLAN_023",
+        "type": "planning_prompt",
+        "prompt": "Identify one list (or collection) you will use and why it’s necessary."
+      },
+      {
+        "id": "APCSP_PLAN_024",
+        "type": "planning_prompt",
+        "prompt": "Describe the algorithm that uses sequencing, selection, and iteration."
+      },
+      {
+        "id": "APCSP_PLAN_025",
+        "type": "planning_prompt",
+        "prompt": "Write a short test plan: 3 tests with expected vs actual results."
+      },
+      {
+        "id": "APCSP_PLAN_026",
+        "type": "planning_prompt",
+        "prompt": "Describe your program’s purpose and target user."
+      },
+      {
+        "id": "APCSP_PLAN_027",
+        "type": "planning_prompt",
+        "prompt": "List your input(s) and output(s) and how they are produced."
+      },
+      {
+        "id": "APCSP_PLAN_028",
+        "type": "planning_prompt",
+        "prompt": "Identify one list (or collection) you will use and why it’s necessary."
+      },
+      {
+        "id": "APCSP_PLAN_029",
+        "type": "planning_prompt",
+        "prompt": "Describe the algorithm that uses sequencing, selection, and iteration."
+      },
+      {
+        "id": "APCSP_PLAN_030",
+        "type": "planning_prompt",
+        "prompt": "Write a short test plan: 3 tests with expected vs actual results."
+      },
+      {
+        "id": "APCSP_PLAN_031",
+        "type": "planning_prompt",
+        "prompt": "Describe your program’s purpose and target user."
+      },
+      {
+        "id": "APCSP_PLAN_032",
+        "type": "planning_prompt",
+        "prompt": "List your input(s) and output(s) and how they are produced."
+      },
+      {
+        "id": "APCSP_PLAN_033",
+        "type": "planning_prompt",
+        "prompt": "Identify one list (or collection) you will use and why it’s necessary."
+      },
+      {
+        "id": "APCSP_PLAN_034",
+        "type": "planning_prompt",
+        "prompt": "Describe the algorithm that uses sequencing, selection, and iteration."
+      },
+      {
+        "id": "APCSP_PLAN_035",
+        "type": "planning_prompt",
+        "prompt": "Write a short test plan: 3 tests with expected vs actual results."
+      },
+      {
+        "id": "APCSP_PLAN_036",
+        "type": "planning_prompt",
+        "prompt": "Describe your program’s purpose and target user."
+      },
+      {
+        "id": "APCSP_PLAN_037",
+        "type": "planning_prompt",
+        "prompt": "List your input(s) and output(s) and how they are produced."
+      },
+      {
+        "id": "APCSP_PLAN_038",
+        "type": "planning_prompt",
+        "prompt": "Identify one list (or collection) you will use and why it’s necessary."
+      },
+      {
+        "id": "APCSP_PLAN_039",
+        "type": "planning_prompt",
+        "prompt": "Describe the algorithm that uses sequencing, selection, and iteration."
+      },
+      {
+        "id": "APCSP_PLAN_040",
+        "type": "planning_prompt",
+        "prompt": "Write a short test plan: 3 tests with expected vs actual results."
+      },
+      {
+        "id": "APCSP_PLAN_041",
+        "type": "planning_prompt",
+        "prompt": "Describe your program’s purpose and target user."
+      },
+      {
+        "id": "APCSP_PLAN_042",
+        "type": "planning_prompt",
+        "prompt": "List your input(s) and output(s) and how they are produced."
+      },
+      {
+        "id": "APCSP_PLAN_043",
+        "type": "planning_prompt",
+        "prompt": "Identify one list (or collection) you will use and why it’s necessary."
+      },
+      {
+        "id": "APCSP_PLAN_044",
+        "type": "planning_prompt",
+        "prompt": "Describe the algorithm that uses sequencing, selection, and iteration."
+      },
+      {
+        "id": "APCSP_PLAN_045",
+        "type": "planning_prompt",
+        "prompt": "Write a short test plan: 3 tests with expected vs actual results."
+      },
+      {
+        "id": "APCSP_PLAN_046",
+        "type": "planning_prompt",
+        "prompt": "Describe your program’s purpose and target user."
+      },
+      {
+        "id": "APCSP_PLAN_047",
+        "type": "planning_prompt",
+        "prompt": "List your input(s) and output(s) and how they are produced."
+      },
+      {
+        "id": "APCSP_PLAN_048",
+        "type": "planning_prompt",
+        "prompt": "Identify one list (or collection) you will use and why it’s necessary."
+      },
+      {
+        "id": "APCSP_PLAN_049",
+        "type": "planning_prompt",
+        "prompt": "Describe the algorithm that uses sequencing, selection, and iteration."
+      },
+      {
+        "id": "APCSP_PLAN_050",
+        "type": "planning_prompt",
+        "prompt": "Write a short test plan: 3 tests with expected vs actual results."
+      },
+      {
+        "id": "APCSP_PLAN_051",
+        "type": "planning_prompt",
+        "prompt": "Describe your program’s purpose and target user."
+      },
+      {
+        "id": "APCSP_PLAN_052",
+        "type": "planning_prompt",
+        "prompt": "List your input(s) and output(s) and how they are produced."
+      },
+      {
+        "id": "APCSP_PLAN_053",
+        "type": "planning_prompt",
+        "prompt": "Identify one list (or collection) you will use and why it’s necessary."
+      },
+      {
+        "id": "APCSP_PLAN_054",
+        "type": "planning_prompt",
+        "prompt": "Describe the algorithm that uses sequencing, selection, and iteration."
+      },
+      {
+        "id": "APCSP_PLAN_055",
+        "type": "planning_prompt",
+        "prompt": "Write a short test plan: 3 tests with expected vs actual results."
+      },
+      {
+        "id": "APCSP_PLAN_056",
+        "type": "planning_prompt",
+        "prompt": "Describe your program’s purpose and target user."
+      },
+      {
+        "id": "APCSP_PLAN_057",
+        "type": "planning_prompt",
+        "prompt": "List your input(s) and output(s) and how they are produced."
+      },
+      {
+        "id": "APCSP_PLAN_058",
+        "type": "planning_prompt",
+        "prompt": "Identify one list (or collection) you will use and why it’s necessary."
+      },
+      {
+        "id": "APCSP_PLAN_059",
+        "type": "planning_prompt",
+        "prompt": "Describe the algorithm that uses sequencing, selection, and iteration."
+      },
+      {
+        "id": "APCSP_PLAN_060",
+        "type": "planning_prompt",
+        "prompt": "Write a short test plan: 3 tests with expected vs actual results."
+      },
+      {
+        "id": "APCSP_PLAN_061",
+        "type": "planning_prompt",
+        "prompt": "Describe your program’s purpose and target user."
+      },
+      {
+        "id": "APCSP_PLAN_062",
+        "type": "planning_prompt",
+        "prompt": "List your input(s) and output(s) and how they are produced."
+      },
+      {
+        "id": "APCSP_PLAN_063",
+        "type": "planning_prompt",
+        "prompt": "Identify one list (or collection) you will use and why it’s necessary."
+      },
+      {
+        "id": "APCSP_PLAN_064",
+        "type": "planning_prompt",
+        "prompt": "Describe the algorithm that uses sequencing, selection, and iteration."
+      },
+      {
+        "id": "APCSP_PLAN_065",
+        "type": "planning_prompt",
+        "prompt": "Write a short test plan: 3 tests with expected vs actual results."
+      },
+      {
+        "id": "APCSP_PLAN_066",
+        "type": "planning_prompt",
+        "prompt": "Describe your program’s purpose and target user."
+      },
+      {
+        "id": "APCSP_PLAN_067",
+        "type": "planning_prompt",
+        "prompt": "List your input(s) and output(s) and how they are produced."
+      },
+      {
+        "id": "APCSP_PLAN_068",
+        "type": "planning_prompt",
+        "prompt": "Identify one list (or collection) you will use and why it’s necessary."
+      },
+      {
+        "id": "APCSP_PLAN_069",
+        "type": "planning_prompt",
+        "prompt": "Describe the algorithm that uses sequencing, selection, and iteration."
+      },
+      {
+        "id": "APCSP_PLAN_070",
+        "type": "planning_prompt",
+        "prompt": "Write a short test plan: 3 tests with expected vs actual results."
+      },
+      {
+        "id": "APCSP_PLAN_071",
+        "type": "planning_prompt",
+        "prompt": "Describe your program’s purpose and target user."
+      },
+      {
+        "id": "APCSP_PLAN_072",
+        "type": "planning_prompt",
+        "prompt": "List your input(s) and output(s) and how they are produced."
+      },
+      {
+        "id": "APCSP_PLAN_073",
+        "type": "planning_prompt",
+        "prompt": "Identify one list (or collection) you will use and why it’s necessary."
+      },
+      {
+        "id": "APCSP_PLAN_074",
+        "type": "planning_prompt",
+        "prompt": "Describe the algorithm that uses sequencing, selection, and iteration."
+      },
+      {
+        "id": "APCSP_PLAN_075",
+        "type": "planning_prompt",
+        "prompt": "Write a short test plan: 3 tests with expected vs actual results."
+      },
+      {
+        "id": "APCSP_PLAN_076",
+        "type": "planning_prompt",
+        "prompt": "Describe your program’s purpose and target user."
+      },
+      {
+        "id": "APCSP_PLAN_077",
+        "type": "planning_prompt",
+        "prompt": "List your input(s) and output(s) and how they are produced."
+      },
+      {
+        "id": "APCSP_PLAN_078",
+        "type": "planning_prompt",
+        "prompt": "Identify one list (or collection) you will use and why it’s necessary."
+      },
+      {
+        "id": "APCSP_PLAN_079",
+        "type": "planning_prompt",
+        "prompt": "Describe the algorithm that uses sequencing, selection, and iteration."
+      },
+      {
+        "id": "APCSP_PLAN_080",
+        "type": "planning_prompt",
+        "prompt": "Write a short test plan: 3 tests with expected vs actual results."
+      },
+      {
+        "id": "APCSP_PLAN_081",
+        "type": "planning_prompt",
+        "prompt": "Describe your program’s purpose and target user."
+      },
+      {
+        "id": "APCSP_PLAN_082",
+        "type": "planning_prompt",
+        "prompt": "List your input(s) and output(s) and how they are produced."
+      },
+      {
+        "id": "APCSP_PLAN_083",
+        "type": "planning_prompt",
+        "prompt": "Identify one list (or collection) you will use and why it’s necessary."
+      },
+      {
+        "id": "APCSP_PLAN_084",
+        "type": "planning_prompt",
+        "prompt": "Describe the algorithm that uses sequencing, selection, and iteration."
+      },
+      {
+        "id": "APCSP_PLAN_085",
+        "type": "planning_prompt",
+        "prompt": "Write a short test plan: 3 tests with expected vs actual results."
+      },
+      {
+        "id": "APCSP_PLAN_086",
+        "type": "planning_prompt",
+        "prompt": "Describe your program’s purpose and target user."
+      },
+      {
+        "id": "APCSP_PLAN_087",
+        "type": "planning_prompt",
+        "prompt": "List your input(s) and output(s) and how they are produced."
+      },
+      {
+        "id": "APCSP_PLAN_088",
+        "type": "planning_prompt",
+        "prompt": "Identify one list (or collection) you will use and why it’s necessary."
+      },
+      {
+        "id": "APCSP_PLAN_089",
+        "type": "planning_prompt",
+        "prompt": "Describe the algorithm that uses sequencing, selection, and iteration."
+      },
+      {
+        "id": "APCSP_PLAN_090",
+        "type": "planning_prompt",
+        "prompt": "Write a short test plan: 3 tests with expected vs actual results."
+      },
+      {
+        "id": "APCSP_PLAN_091",
+        "type": "planning_prompt",
+        "prompt": "Describe your program’s purpose and target user."
+      },
+      {
+        "id": "APCSP_PLAN_092",
+        "type": "planning_prompt",
+        "prompt": "List your input(s) and output(s) and how they are produced."
+      },
+      {
+        "id": "APCSP_PLAN_093",
+        "type": "planning_prompt",
+        "prompt": "Identify one list (or collection) you will use and why it’s necessary."
+      },
+      {
+        "id": "APCSP_PLAN_094",
+        "type": "planning_prompt",
+        "prompt": "Describe the algorithm that uses sequencing, selection, and iteration."
+      },
+      {
+        "id": "APCSP_PLAN_095",
+        "type": "planning_prompt",
+        "prompt": "Write a short test plan: 3 tests with expected vs actual results."
+      },
+      {
+        "id": "APCSP_PLAN_096",
+        "type": "planning_prompt",
+        "prompt": "Describe your program’s purpose and target user."
+      },
+      {
+        "id": "APCSP_PLAN_097",
+        "type": "planning_prompt",
+        "prompt": "List your input(s) and output(s) and how they are produced."
+      },
+      {
+        "id": "APCSP_PLAN_098",
+        "type": "planning_prompt",
+        "prompt": "Identify one list (or collection) you will use and why it’s necessary."
+      },
+      {
+        "id": "APCSP_PLAN_099",
+        "type": "planning_prompt",
+        "prompt": "Describe the algorithm that uses sequencing, selection, and iteration."
+      },
+      {
+        "id": "APCSP_PLAN_100",
+        "type": "planning_prompt",
+        "prompt": "Write a short test plan: 3 tests with expected vs actual results."
+      }
+    ],
+    "rubric_checklists": [
+      {
+        "id": "APCSP_CHECKLIST_001",
+        "type": "rubric_checklist",
+        "items": [
+          {
+            "key": "purpose",
+            "check": "Purpose is clear and specific."
+          },
+          {
+            "key": "data_abstraction",
+            "check": "Uses a list/collection and explains why it manages complexity."
+          },
+          {
+            "key": "algorithm",
+            "check": "Algorithm includes sequencing, selection, and iteration."
+          },
+          {
+            "key": "procedure",
+            "check": "Student-developed procedure with parameter(s) is shown."
+          },
+          {
+            "key": "testing",
+            "check": "Includes at least two test cases with expected results."
+          }
+        ],
+        "feedback_templates": [
+          "Add one sentence explaining how your list makes the program easier to update or expand.",
+          "Show where selection (if/else) changes behavior for different inputs.",
+          "Include one more test that targets an edge case."
+        ]
+      },
+      {
+        "id": "APCSP_CHECKLIST_002",
+        "type": "rubric_checklist",
+        "focus": "Program Purpose and Function",
+        "items": [
+          {
+            "key": "purpose_statement",
+            "check": "Written response identifies the program's purpose in one clear sentence."
+          },
+          {
+            "key": "function_description",
+            "check": "Describes what the program does (inputs → processing → outputs)."
+          },
+          {
+            "key": "video_evidence",
+            "check": "Video shows the program running and producing at least one output."
+          },
+          {
+            "key": "no_input_or_specified",
+            "check": "If no user input is required, that is stated explicitly."
+          }
+        ]
+      },
+      {
+        "id": "APCSP_CHECKLIST_003",
+        "type": "rubric_checklist",
+        "focus": "Data Abstraction",
+        "items": [
+          {
+            "key": "list_used",
+            "check": "Program uses a list (or other collection type)."
+          },
+          {
+            "key": "list_stores_multiple",
+            "check": "The list stores more than one element."
+          },
+          {
+            "key": "list_manages_complexity",
+            "check": "Response explains how the list manages complexity (vs. individual variables)."
+          },
+          {
+            "key": "list_named_and_shown",
+            "check": "The list is named in the written response and highlighted in code."
+          }
+        ]
+      },
+      {
+        "id": "APCSP_CHECKLIST_004",
+        "type": "rubric_checklist",
+        "focus": "Managing Complexity",
+        "items": [
+          {
+            "key": "explains_why_list",
+            "check": "Explicitly explains why using a list simplifies the program."
+          },
+          {
+            "key": "compares_alternative",
+            "check": "Compares the list approach to writing many individual variables."
+          },
+          {
+            "key": "ties_to_purpose",
+            "check": "Connects the complexity-management explanation back to the program's purpose."
+          }
+        ]
+      },
+      {
+        "id": "APCSP_CHECKLIST_005",
+        "type": "rubric_checklist",
+        "focus": "Procedure",
+        "items": [
+          {
+            "key": "student_developed",
+            "check": "Procedure is student-developed (not a built-in library call)."
+          },
+          {
+            "key": "has_parameter",
+            "check": "Procedure has at least one parameter that affects its behavior."
+          },
+          {
+            "key": "meaningful_name",
+            "check": "Procedure name reflects what it does."
+          },
+          {
+            "key": "procedure_shown",
+            "check": "Procedure definition is highlighted in the code segment."
+          }
+        ]
+      },
+      {
+        "id": "APCSP_CHECKLIST_006",
+        "type": "rubric_checklist",
+        "focus": "Algorithm",
+        "items": [
+          {
+            "key": "sequencing",
+            "check": "Algorithm shows sequencing (steps in order)."
+          },
+          {
+            "key": "selection",
+            "check": "Algorithm shows selection (if / else logic)."
+          },
+          {
+            "key": "iteration",
+            "check": "Algorithm shows iteration (loop)."
+          },
+          {
+            "key": "inside_procedure",
+            "check": "Sequencing, selection, and iteration all occur inside the student-developed procedure."
+          }
+        ]
+      },
+      {
+        "id": "APCSP_CHECKLIST_007",
+        "type": "rubric_checklist",
+        "focus": "Procedure Call",
+        "items": [
+          {
+            "key": "call_shown",
+            "check": "A call to the student-developed procedure is highlighted."
+          },
+          {
+            "key": "call_uses_argument",
+            "check": "The call passes an argument to the parameter."
+          },
+          {
+            "key": "call_affects_behavior",
+            "check": "The argument changes program behavior in an observable way."
+          }
+        ]
+      },
+      {
+        "id": "APCSP_CHECKLIST_008",
+        "type": "rubric_checklist",
+        "focus": "Testing",
+        "items": [
+          {
+            "key": "two_calls_described",
+            "check": "Response describes at least two different procedure calls."
+          },
+          {
+            "key": "conditions_stated",
+            "check": "Each call's conditions (argument values) are stated."
+          },
+          {
+            "key": "results_stated",
+            "check": "Each call's result is stated."
+          },
+          {
+            "key": "results_differ",
+            "check": "The two calls produce different results because of different arguments."
+          }
+        ]
+      },
+      {
+        "id": "APCSP_CHECKLIST_009",
+        "type": "rubric_checklist",
+        "focus": "Academic Integrity & Attribution",
+        "items": [
+          {
+            "key": "own_work",
+            "check": "Written response confirms the code is the student's own work."
+          },
+          {
+            "key": "attribution_present",
+            "check": "Any borrowed code, libraries, or ideas are cited."
+          },
+          {
+            "key": "no_prohibited_ai",
+            "check": "No use of prohibited generative AI tools during the task."
+          }
+        ]
+      },
+      {
+        "id": "APCSP_CHECKLIST_010",
+        "type": "rubric_checklist",
+        "focus": "Submission Package",
+        "items": [
+          {
+            "key": "video_uploaded",
+            "check": "Video (≤1 min) is uploaded in an accepted format."
+          },
+          {
+            "key": "pdf_uploaded",
+            "check": "Written response PDF is uploaded."
+          },
+          {
+            "key": "code_pdf_uploaded",
+            "check": "Full program code PDF is uploaded."
+          },
+          {
+            "key": "highlights_present",
+            "check": "Required code segments (list, procedure, call) are highlighted in the code PDF."
+          }
+        ]
+      }
+    ]
+  }
+}
