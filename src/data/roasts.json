@@ -61,31 +61,39 @@
           "text": "Would you like me to pull up some vocational school applications? Just kidding... kind of.",
           "context": [
             "consumer_only"
-          ]
+          ],
+          "mode": "consumer_only"
         },
         {
-          "text": "You're in the danger zone - not quite failing, but definitely not passing the vibe check."
+          "text": "You're in the danger zone - not quite failing, but definitely not passing the vibe check.",
+          "mode": "consumer_only"
         },
         {
-          "text": "The SAT Gods are sending you a message. That message is: 'Try harder.'"
+          "text": "The SAT Gods are sending you a message. That message is: 'Try harder.'",
+          "mode": "consumer_only"
         },
         {
-          "text": "You're so close to average that average is ghosting you."
+          "text": "You're so close to average that average is ghosting you.",
+          "mode": "consumer_only"
         },
         {
           "text": "Community college is looking pretty good right about now, huh?",
           "context": [
             "consumer_only"
-          ]
+          ],
+          "mode": "consumer_only"
         },
         {
-          "text": "At this rate, your college essay is going to be: 'Dear Admissions, Let me explain...'"
+          "text": "At this rate, your college essay is going to be: 'Dear Admissions, Let me explain...'",
+          "mode": "consumer_only"
         },
         {
-          "text": "You know what rhymes with your score? Door. As in, the exit door."
+          "text": "You know what rhymes with your score? Door. As in, the exit door.",
+          "mode": "consumer_only"
         },
         {
-          "text": "Your performance is giving 'I'll just retake it in the fall' energy."
+          "text": "Your performance is giving 'I'll just retake it in the fall' energy.",
+          "mode": "consumer_only"
         }
       ]
     },
@@ -122,34 +130,43 @@
       "title": "Almost There... But Not Quite 🎯",
       "messages": [
         {
-          "text": "So close! And yet, so far. Story of your life?"
+          "text": "So close! And yet, so far. Story of your life?",
+          "mode": "consumer_only"
         },
         {
-          "text": "You're like the person who loses by ONE point on a game show. Painful."
+          "text": "You're like the person who loses by ONE point on a game show. Painful.",
+          "mode": "consumer_only"
         },
         {
           "text": "B+ energy. Good, but your Asian parents are still disappointed.",
           "context": [
             "consumer_only"
-          ]
+          ],
+          "mode": "consumer_only"
         },
         {
-          "text": "You can see the finish line! Too bad you stopped for a snack break."
+          "text": "You can see the finish line! Too bad you stopped for a snack break.",
+          "mode": "consumer_only"
         },
         {
-          "text": "At this rate, you'll get into your safety school! Isn't that... nice?"
+          "text": "At this rate, you'll get into your safety school! Isn't that... nice?",
+          "mode": "consumer_only"
         },
         {
-          "text": "You're good, but are you '800 on the SAT' good? Survey says: Not yet."
+          "text": "You're good, but are you '800 on the SAT' good? Survey says: Not yet.",
+          "mode": "consumer_only"
         },
         {
-          "text": "Your score is the equivalent of 'we need to talk.' It's fine, but IS it?"
+          "text": "Your score is the equivalent of 'we need to talk.' It's fine, but IS it?",
+          "mode": "consumer_only"
         },
         {
-          "text": "Alumni interviewer: 'So, what makes you special?' You: 'Well...'"
+          "text": "Alumni interviewer: 'So, what makes you special?' You: 'Well...'",
+          "mode": "consumer_only"
         },
         {
-          "text": "You're THIS close to greatness. Unfortunately, 'this close' doesn't count."
+          "text": "You're THIS close to greatness. Unfortunately, 'this close' doesn't count.",
+          "mode": "consumer_only"
         }
       ]
     },

@@ -1520,22 +1520,6 @@
     "skill": "AP Biology"
   },
   {
-    "id": "AP_Biology_38",
-    "question": "Which of the following is a key characteristic of a prokaryotic cell?",
-    "choices": {
-      "A": "Presence of a membrane-bound nucleus",
-      "B": "Presence of membrane-bound organelles",
-      "C": "Presence of a cell wall made of peptidoglycan (in bacteria)",
-      "D": "Linear chromosomes"
-    },
-    "answer": "C",
-    "difficulty": 5,
-    "explanation": "Prokaryotic cells, like bacteria, lack a membrane-bound nucleus and other membrane-bound organelles. They typically possess a cell wall, often composed of peptidoglycan. Their genetic material is usually a circular chromosome located in the nucleoid region.",
-    "correct_key": "C",
-    "section": "science",
-    "skill": "AP Biology"
-  },
-  {
     "id": "AP_Biology_15",
     "question": "A lac operon in E. coli will be maximally expressed when:",
     "choices": {
@@ -2688,22 +2672,6 @@
     "skill": "AP Biology"
   },
   {
-    "id": "AP_Biology_212",
-    "question": "Which of the following is a key characteristic of prokaryotic cells?",
-    "choices": {
-      "A": "Presence of a nucleus",
-      "B": "Presence of membrane-bound organelles",
-      "C": "Absence of a nucleus",
-      "D": "Linear chromosomes"
-    },
-    "answer": "C",
-    "difficulty": 4,
-    "explanation": "Prokaryotic cells, such as bacteria and archaea, lack a membrane-bound nucleus and other membrane-bound organelles.",
-    "correct_key": "C",
-    "section": "science",
-    "skill": "AP Biology"
-  },
-  {
     "id": "AP_Biology_195",
     "question": "A researcher is investigating cell signaling. They discover a molecule that binds to a receptor on the cell surface, triggering a cascade of events inside the cell leading to a specific response. This molecule is best described as a(n):",
     "choices": {
@@ -3019,22 +2987,6 @@
     "answer": "C",
     "difficulty": 5,
     "explanation": "Insulin is released by the pancreas when blood glucose levels are high. It facilitates the transport of glucose from the bloodstream into liver, muscle, and fat cells, thus lowering blood glucose.",
-    "correct_key": "C",
-    "section": "science",
-    "skill": "AP Biology"
-  },
-  {
-    "id": "AP_Biology_86",
-    "question": "What is the primary function of tRNA (transfer RNA) in protein synthesis?",
-    "choices": {
-      "A": "Carrying genetic information from DNA to the ribosome.",
-      "B": "Catalyzing the formation of peptide bonds.",
-      "C": "Bringing specific amino acids to the ribosome according to mRNA codons.",
-      "D": "Forming the structural component of ribosomes."
-    },
-    "answer": "C",
-    "difficulty": 5,
-    "explanation": "tRNA molecules have an anticodon that pairs with a complementary codon on the mRNA and carry the corresponding amino acid to the ribosome for incorporation into the growing polypeptide chain.",
     "correct_key": "C",
     "section": "science",
     "skill": "AP Biology"

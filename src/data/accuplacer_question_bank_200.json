@@ -25,7 +25,7 @@
     "correctAnswer": "B",
     "explanation": "First, distribute the exponent of 3: (2e^x)^3 = 2^3 * (e^x)^3 = 8 * e^(3x). Then multiply by e^(2x): 8 * e^(3x) * e^(2x). Using the exponent rule a^m * a^n = a^(m+n), we get 8 * e^(3x + 2x) = 8e^(5x).",
     "skill": "Exponential Expressions",
-    "difficulty": 5
+    "difficulty": 4
   },
   {
     "id": "acc_285",
@@ -137,7 +137,7 @@
     "correctAnswer": "D",
     "explanation": "Difference of squares: a² - b² = (a+b)(a-b).",
     "skill": "Factoring",
-    "difficulty": 5
+    "difficulty": 4
   },
   {
     "id": "acc_006",
@@ -165,7 +165,7 @@
     "correctAnswer": "D",
     "explanation": "'Ubiquitous' means present or found everywhere.",
     "skill": "Vocabulary in Context",
-    "difficulty": 5
+    "difficulty": 4
   },
   {
     "id": "acc_007",
@@ -221,7 +221,7 @@
     "correctAnswer": "C",
     "explanation": "'Affect' is a verb meaning to influence. 'Effect' is typically a noun.",
     "skill": "Commonly Confused Words",
-    "difficulty": 3
+    "difficulty": 2
   },
   {
     "id": "acc_009",
@@ -249,7 +249,7 @@
     "correctAnswer": "D",
     "explanation": "D = 100% - 25% - 35% - 15% = 25%.",
     "skill": "Data Interpretation",
-    "difficulty": 3
+    "difficulty": 1
   },
   {
     "id": "acc_010",
@@ -333,7 +333,7 @@
     "correctAnswer": "A",
     "explanation": "15% × 200 = 0.15 × 200 = 30.",
     "skill": "Percentages",
-    "difficulty": 3
+    "difficulty": 1
   },
   {
     "id": "acc_013",
@@ -361,7 +361,7 @@
     "correctAnswer": "C",
     "explanation": "All items use gerunds (-ing form) for parallel structure.",
     "skill": "Parallel Structure",
-    "difficulty": 5
+    "difficulty": 4
   },
   {
     "id": "acc_014",
@@ -389,7 +389,7 @@
     "correctAnswer": "A",
     "explanation": "P(not rain) = 1 - 0.3 = 0.7.",
     "skill": "Probability",
-    "difficulty": 3
+    "difficulty": 1
   },
   {
     "id": "acc_015",
@@ -417,7 +417,7 @@
     "correctAnswer": "D",
     "explanation": "Division by zero is undefined when x = 3.",
     "skill": "Functions",
-    "difficulty": 5
+    "difficulty": 4
   },
   {
     "id": "acc_016",
@@ -445,7 +445,7 @@
     "correctAnswer": "C",
     "explanation": "A bibliography lists sources at the end of the document.",
     "skill": "Research Skills",
-    "difficulty": 3
+    "difficulty": 1
   },
   {
     "id": "acc_017",
@@ -473,7 +473,7 @@
     "correctAnswer": "C",
     "explanation": "On the number line: -3, -1, -0.5, 0.5, 2.",
     "skill": "Number Ordering",
-    "difficulty": 3
+    "difficulty": 1
   },
   {
     "id": "acc_018",
@@ -529,7 +529,7 @@
     "correctAnswer": "B",
     "explanation": "Perimeter = 2(12 + 8) = 40 feet.",
     "skill": "Perimeter",
-    "difficulty": 3
+    "difficulty": 2
   },
   {
     "id": "acc_020",
@@ -613,7 +613,7 @@
     "correctAnswer": "C",
     "explanation": "The passage explains that the press allowed for 'mass production' and led to 'increased literacy rates and the spread of new ideas,' implying widespread distribution.",
     "skill": "Inference",
-    "difficulty": 5
+    "difficulty": 4
   },
   {
     "id": "acc_209",
@@ -641,7 +641,7 @@
     "correctAnswer": "C",
     "explanation": "The first sentence explicitly states, 'The term 'renaissance' literally means 'rebirth' in French.'",
     "skill": "Literal Comprehension",
-    "difficulty": 3
+    "difficulty": 1
   },
   {
     "id": "acc_210",
@@ -669,7 +669,7 @@
     "correctAnswer": "C",
     "explanation": "The passage defines the water cycle as the 'continuous movement of water on, above, and below the surface of the Earth,' encompassing various locations and implicitly various states (liquid, gas, solid).",
     "skill": "Main Idea",
-    "difficulty": 5
+    "difficulty": 4
   },
   {
     "id": "acc_211",
@@ -725,7 +725,7 @@
     "correctAnswer": "C",
     "explanation": "To find the product, multiply 15 by 12: $15 \\times 12 = 180$.",
     "skill": "Multiplication",
-    "difficulty": 3
+    "difficulty": 1
   },
   {
     "id": "acc_027",
@@ -753,7 +753,7 @@
     "correctAnswer": "D",
     "explanation": "Context clues are hints within surrounding text that help define unfamiliar words.",
     "skill": "Vocabulary Strategy",
-    "difficulty": 3
+    "difficulty": 1
   },
   {
     "id": "acc_028",
@@ -781,7 +781,7 @@
     "correctAnswer": "C",
     "explanation": "A fragment lacks a subject performing a complete action. 'Running through the park' has no main subject or complete verb.",
     "skill": "Sentence Fragments",
-    "difficulty": 3
+    "difficulty": 2
   },
   {
     "id": "acc_029",
@@ -865,7 +865,7 @@
     "correctAnswer": "A",
     "explanation": "The hundredths digit is 6 (≥5), so round up: 3.5.",
     "skill": "Rounding",
-    "difficulty": 3
+    "difficulty": 1
   },
   {
     "id": "acc_032",
@@ -893,7 +893,7 @@
     "correctAnswer": "A",
     "explanation": "A summary condenses the main ideas into your own words without including every detail or personal opinions.",
     "skill": "Summarizing",
-    "difficulty": 3
+    "difficulty": 2
   },
   {
     "id": "acc_033",
@@ -921,7 +921,7 @@
     "correctAnswer": "D",
     "explanation": "'Their' is now widely accepted as a singular pronoun for indefinite antecedents like 'everyone.'",
     "skill": "Pronoun Agreement",
-    "difficulty": 3
+    "difficulty": 1
   },
   {
     "id": "acc_034",
@@ -1033,7 +1033,7 @@
     "correctAnswer": "A",
     "explanation": "'Ambivalent' means having contradictory or mixed feelings about something.",
     "skill": "Vocabulary",
-    "difficulty": 5
+    "difficulty": 4
   },
   {
     "id": "acc_038",
@@ -1117,7 +1117,7 @@
     "correctAnswer": "B",
     "explanation": "f(0) = 2(0)² - 3(0) + 1 = 1.",
     "skill": "Function Evaluation",
-    "difficulty": 3
+    "difficulty": 2
   },
   {
     "id": "acc_002",
@@ -1145,7 +1145,7 @@
     "correctAnswer": "D",
     "explanation": "Common denominator 12: 9/12 + 8/12 = 17/12.",
     "skill": "Fractions",
-    "difficulty": 5
+    "difficulty": 4
   },
   {
     "id": "acc_003",
@@ -1173,7 +1173,7 @@
     "correctAnswer": "C",
     "explanation": "Nonrestrictive clause correctly enclosed in commas.",
     "skill": "Punctuation",
-    "difficulty": 3
+    "difficulty": 2
   },
   {
     "id": "acc_043",
@@ -1229,7 +1229,7 @@
     "correctAnswer": "B",
     "explanation": "1 foot = 12 inches. 3 × 12 = 36 inches.",
     "skill": "Unit Conversion",
-    "difficulty": 3
+    "difficulty": 2
   },
   {
     "id": "acc_045",
@@ -1257,7 +1257,7 @@
     "correctAnswer": "A",
     "explanation": "√72 = √(36×2) = 6√2.",
     "skill": "Radicals",
-    "difficulty": 5
+    "difficulty": 4
   },
   {
     "id": "acc_046",
@@ -1285,7 +1285,7 @@
     "correctAnswer": "C",
     "explanation": "1.5 × 2.4 = 3.6.",
     "skill": "Decimal Multiplication",
-    "difficulty": 3
+    "difficulty": 2
   },
   {
     "id": "acc_047",
@@ -1341,7 +1341,7 @@
     "correctAnswer": "C",
     "explanation": "In active voice, the subject (teacher) performs the action (graded).",
     "skill": "Active vs Passive Voice",
-    "difficulty": 3
+    "difficulty": 2
   },
   {
     "id": "acc_049",
@@ -1369,7 +1369,7 @@
     "correctAnswer": "A",
     "explanation": "Scale factor = 9/6 = 1.5.",
     "skill": "Proportions",
-    "difficulty": 3
+    "difficulty": 2
   },
   {
     "id": "acc_050",
@@ -1397,7 +1397,7 @@
     "correctAnswer": "B",
     "explanation": "In y = mx + b, the y-intercept b = 7.",
     "skill": "Linear Functions",
-    "difficulty": 3
+    "difficulty": 2
   },
   {
     "id": "acc_051",
@@ -1453,7 +1453,7 @@
     "correctAnswer": "A",
     "explanation": "Chronological order arranges events sequentially by time.",
     "skill": "Text Structure",
-    "difficulty": 3
+    "difficulty": 2
   },
   {
     "id": "acc_053",
@@ -1509,7 +1509,7 @@
     "correctAnswer": "A",
     "explanation": "Volume = 5 × 4 × 3 = 60 cm³.",
     "skill": "Volume",
-    "difficulty": 3
+    "difficulty": 2
   },
   {
     "id": "acc_055",
@@ -1537,7 +1537,7 @@
     "correctAnswer": "D",
     "explanation": "x - 5 = 3 → x = 8, or x - 5 = -3 → x = 2.",
     "skill": "Absolute Value",
-    "difficulty": 5
+    "difficulty": 4
   },
   {
     "id": "acc_056",
@@ -1593,7 +1593,7 @@
     "correctAnswer": "B",
     "explanation": "Credible sources are reliable, well-researched, and written by qualified authors.",
     "skill": "Source Evaluation",
-    "difficulty": 3
+    "difficulty": 1
   },
   {
     "id": "acc_058",
@@ -1621,7 +1621,7 @@
     "correctAnswer": "B",
     "explanation": "'Lie' means to recline (intransitive). 'Lay' means to put something down (transitive, needs an object).",
     "skill": "Commonly Confused Verbs",
-    "difficulty": 5
+    "difficulty": 4
   },
   {
     "id": "acc_059",
@@ -1649,7 +1649,7 @@
     "correctAnswer": "D",
     "explanation": "12:18 simplified by dividing by 6 = 2:3.",
     "skill": "Ratios",
-    "difficulty": 3
+    "difficulty": 2
   },
   {
     "id": "acc_060",
@@ -1705,7 +1705,7 @@
     "correctAnswer": "D",
     "explanation": "7 × 8 = 56.",
     "skill": "Multiplication Facts",
-    "difficulty": 3
+    "difficulty": 1
   },
   {
     "id": "acc_062",
@@ -1733,7 +1733,7 @@
     "correctAnswer": "D",
     "explanation": "Conclusions should synthesize, not introduce new ideas. New arguments belong in body paragraphs.",
     "skill": "Essay Structure",
-    "difficulty": 3
+    "difficulty": 1
   },
   {
     "id": "acc_063",
@@ -1761,7 +1761,7 @@
     "correctAnswer": "B",
     "explanation": "'Its' (no apostrophe) is possessive. 'It's' means 'it is.'",
     "skill": "Possessives",
-    "difficulty": 3
+    "difficulty": 1
   },
   {
     "id": "acc_064",
@@ -1789,7 +1789,7 @@
     "correctAnswer": "D",
     "explanation": "Tax = 7% × $50 = $3.50. Total = $53.50.",
     "skill": "Tax Calculations",
-    "difficulty": 3
+    "difficulty": 1
   },
   {
     "id": "acc_065",
@@ -1845,7 +1845,7 @@
     "correctAnswer": "C",
     "explanation": "7/20 = 35/100 = 35%.",
     "skill": "Fraction to Percent",
-    "difficulty": 3
+    "difficulty": 1
   },
   {
     "id": "acc_067",
@@ -1901,7 +1901,7 @@
     "correctAnswer": "A",
     "explanation": "Replace 'due to the fact that' with the concise 'because.'",
     "skill": "Conciseness",
-    "difficulty": 3
+    "difficulty": 2
   },
   {
     "id": "acc_069",
@@ -1985,7 +1985,7 @@
     "correctAnswer": "B",
     "explanation": "144 ÷ 12 = 12.",
     "skill": "Division",
-    "difficulty": 3
+    "difficulty": 2
   },
   {
     "id": "acc_072",
@@ -2013,7 +2013,7 @@
     "correctAnswer": "C",
     "explanation": "Anonymous blogs lack accountability and credibility compared to vetted, peer-reviewed sources.",
     "skill": "Source Evaluation",
-    "difficulty": 3
+    "difficulty": 2
   },
   {
     "id": "acc_073",
@@ -2069,7 +2069,7 @@
     "correctAnswer": "A",
     "explanation": "(5+10+15+20+25)/5 = 75/5 = 15.",
     "skill": "Mean",
-    "difficulty": 3
+    "difficulty": 1
   },
   {
     "id": "acc_075",
@@ -2125,7 +2125,7 @@
     "correctAnswer": "C",
     "explanation": "3.20 - 1.78 = 1.42.",
     "skill": "Decimal Subtraction",
-    "difficulty": 3
+    "difficulty": 2
   },
   {
     "id": "acc_077",
@@ -2181,7 +2181,7 @@
     "correctAnswer": "B",
     "explanation": "'Who' is used for people as a subject pronoun.",
     "skill": "Relative Pronouns",
-    "difficulty": 3
+    "difficulty": 2
   },
   {
     "id": "acc_079",
@@ -2209,7 +2209,7 @@
     "correctAnswer": "B",
     "explanation": "Area = πr² = 3.14 × 100 = 314 sq ft.",
     "skill": "Circle Area",
-    "difficulty": 5
+    "difficulty": 4
   },
   {
     "id": "acc_080",
@@ -2265,7 +2265,7 @@
     "correctAnswer": "B",
     "explanation": "5 ÷ 8 = 0.625.",
     "skill": "Fraction to Decimal",
-    "difficulty": 3
+    "difficulty": 2
   },
   {
     "id": "acc_082",
@@ -2293,7 +2293,7 @@
     "correctAnswer": "A",
     "explanation": "'Although' signals a contrast or concession between ideas.",
     "skill": "Signal Words",
-    "difficulty": 3
+    "difficulty": 1
   },
   {
     "id": "acc_083",
@@ -2349,7 +2349,7 @@
     "correctAnswer": "C",
     "explanation": "$15 × 37.5 = $562.50.",
     "skill": "Wages",
-    "difficulty": 3
+    "difficulty": 2
   },
   {
     "id": "acc_085",
@@ -2377,7 +2377,7 @@
     "correctAnswer": "C",
     "explanation": "x(x-4) = 0 → x = 0 or x = 4.",
     "skill": "Factoring",
-    "difficulty": 5
+    "difficulty": 4
   },
   {
     "id": "acc_086",
@@ -2405,7 +2405,7 @@
     "correctAnswer": "D",
     "explanation": "36 + 16 = 52.",
     "skill": "Exponents",
-    "difficulty": 3
+    "difficulty": 2
   },
   {
     "id": "acc_087",
@@ -2489,7 +2489,7 @@
     "correctAnswer": "D",
     "explanation": "45,680 - 45,230 = 450 miles.",
     "skill": "Subtraction",
-    "difficulty": 3
+    "difficulty": 2
   },
   {
     "id": "acc_090",
@@ -2517,7 +2517,7 @@
     "correctAnswer": "D",
     "explanation": "2³ = 8, so log₂(8) = 3.",
     "skill": "Logarithms",
-    "difficulty": 5
+    "difficulty": 4
   },
   {
     "id": "acc_091",
@@ -2545,7 +2545,7 @@
     "correctAnswer": "C",
     "explanation": "1/4 = 0.25 = 25%.",
     "skill": "Percent Conversion",
-    "difficulty": 3
+    "difficulty": 1
   },
   {
     "id": "acc_092",
@@ -2573,7 +2573,7 @@
     "correctAnswer": "B",
     "explanation": "Loaded or emotional language and presenting only one perspective are indicators of bias.",
     "skill": "Critical Reading",
-    "difficulty": 5
+    "difficulty": 4
   },
   {
     "id": "acc_093",
@@ -2713,7 +2713,7 @@
     "correctAnswer": "D",
     "explanation": "Process or sequential structure explains how something works or how to do something, step by step.",
     "skill": "Text Structure",
-    "difficulty": 3
+    "difficulty": 2
   },
   {
     "id": "acc_098",
@@ -2741,7 +2741,7 @@
     "correctAnswer": "D",
     "explanation": "'Team' is a singular collective noun in American English, requiring 'is.'",
     "skill": "Subject-Verb Agreement",
-    "difficulty": 3
+    "difficulty": 2
   },
   {
     "id": "acc_099",
@@ -2769,7 +2769,7 @@
     "correctAnswer": "C",
     "explanation": "P = (5/10)(4/9) = 20/90 = 2/9.",
     "skill": "Probability Without Replacement",
-    "difficulty": 5
+    "difficulty": 4
   },
   {
     "id": "acc_100",
@@ -2825,7 +2825,7 @@
     "correctAnswer": "B",
     "explanation": "Multiply numerators and denominators: 4×3=12, 5×7=35.",
     "skill": "Fraction Multiplication",
-    "difficulty": 3
+    "difficulty": 2
   },
   {
     "id": "acc_102",
@@ -2853,7 +2853,7 @@
     "correctAnswer": "D",
     "explanation": "An allegory uses symbolic characters and events to represent abstract ideas or moral lessons.",
     "skill": "Literary Terms",
-    "difficulty": 5
+    "difficulty": 4
   },
   {
     "id": "acc_103",
@@ -2937,7 +2937,7 @@
     "correctAnswer": "A",
     "explanation": "D = b²-4ac = 36-36 = 0. This means one repeated real root.",
     "skill": "Discriminant",
-    "difficulty": 5
+    "difficulty": 4
   },
   {
     "id": "acc_106",
@@ -2965,7 +2965,7 @@
     "correctAnswer": "A",
     "explanation": "Dividing by 0.25 is the same as multiplying by 4. 100 × 4 = 400.",
     "skill": "Decimal Division",
-    "difficulty": 5
+    "difficulty": 4
   },
   {
     "id": "acc_107",
@@ -3049,7 +3049,7 @@
     "correctAnswer": "B",
     "explanation": "12 ÷ 3 = 4 groups. 4 × $2 = $8.",
     "skill": "Unit Pricing",
-    "difficulty": 3
+    "difficulty": 2
   },
   {
     "id": "acc_110",
@@ -3077,7 +3077,7 @@
     "correctAnswer": "B",
     "explanation": "FOIL: 6x² + 8x - 3x - 4 = 6x² + 5x - 4.",
     "skill": "Polynomial Multiplication",
-    "difficulty": 5
+    "difficulty": 4
   },
   {
     "id": "acc_111",
@@ -3105,7 +3105,7 @@
     "correctAnswer": "B",
     "explanation": "400 × 20 = 8,000. Actual: 8,358.",
     "skill": "Estimation",
-    "difficulty": 3
+    "difficulty": 1
   },
   {
     "id": "acc_112",
@@ -3161,7 +3161,7 @@
     "correctAnswer": "C",
     "explanation": "Remove filler words ('the thing about') for clarity and directness.",
     "skill": "Conciseness",
-    "difficulty": 3
+    "difficulty": 1
   },
   {
     "id": "acc_114",
@@ -3301,7 +3301,7 @@
     "correctAnswer": "A",
     "explanation": "'Fewer' is for countable nouns (students). 'Less' is for uncountable nouns.",
     "skill": "Word Choice",
-    "difficulty": 3
+    "difficulty": 1
   },
   {
     "id": "acc_119",
@@ -3385,7 +3385,7 @@
     "correctAnswer": "B",
     "explanation": "Speed = distance/time = 240/4 = 60 mph.",
     "skill": "Rates",
-    "difficulty": 3
+    "difficulty": 1
   },
   {
     "id": "acc_122",
@@ -3413,7 +3413,7 @@
     "correctAnswer": "D",
     "explanation": "A conclusion summarizes key findings, discusses implications, and may suggest future research.",
     "skill": "Research Writing",
-    "difficulty": 3
+    "difficulty": 1
   },
   {
     "id": "acc_123",
@@ -3441,7 +3441,7 @@
     "correctAnswer": "A",
     "explanation": "For a singular possessive, add 's: dog's.",
     "skill": "Apostrophes",
-    "difficulty": 3
+    "difficulty": 1
   },
   {
     "id": "acc_124",
@@ -3469,7 +3469,7 @@
     "correctAnswer": "D",
     "explanation": "0.80x = 48 → x = 60.",
     "skill": "Percent Applications",
-    "difficulty": 5
+    "difficulty": 4
   },
   {
     "id": "acc_125",
@@ -3525,7 +3525,7 @@
     "correctAnswer": "A",
     "explanation": "9 × 9 = 81, so √81 = 9.",
     "skill": "Square Roots",
-    "difficulty": 3
+    "difficulty": 2
   },
   {
     "id": "acc_127",
@@ -3553,7 +3553,7 @@
     "correctAnswer": "A",
     "explanation": "An analogy shows that two pairs share a similar relationship pattern.",
     "skill": "Analogies",
-    "difficulty": 3
+    "difficulty": 1
   },
   {
     "id": "acc_128",
@@ -3637,7 +3637,7 @@
     "correctAnswer": "C",
     "explanation": "Perpendicular slopes are negative reciprocals. Slope of 2 → perpendicular slope = -1/2.",
     "skill": "Perpendicular Lines",
-    "difficulty": 5
+    "difficulty": 4
   },
   {
     "id": "acc_131",
@@ -3805,7 +3805,7 @@
     "correctAnswer": "A",
     "explanation": "40% × 250 = 0.40 × 250 = 100.",
     "skill": "Percentages",
-    "difficulty": 3
+    "difficulty": 1
   },
   {
     "id": "acc_137",
@@ -3833,7 +3833,7 @@
     "correctAnswer": "B",
     "explanation": "'Best' makes this subjective — it's a personal preference, not a verifiable fact.",
     "skill": "Fact vs Opinion",
-    "difficulty": 3
+    "difficulty": 1
   },
   {
     "id": "acc_138",
@@ -3917,7 +3917,7 @@
     "correctAnswer": "B",
     "explanation": "Midpoint = ((2+6)/2, (8+4)/2) = (4, 6).",
     "skill": "Midpoint Formula",
-    "difficulty": 3
+    "difficulty": 2
   },
   {
     "id": "acc_141",
@@ -3973,7 +3973,7 @@
     "correctAnswer": "A",
     "explanation": "'Mitigate' means to make less severe, painful, or harsh.",
     "skill": "Vocabulary",
-    "difficulty": 5
+    "difficulty": 4
   },
   {
     "id": "acc_041",
@@ -4001,7 +4001,7 @@
     "correctAnswer": "A",
     "explanation": "Negative × negative = positive. 4 × 6 = 24.",
     "skill": "Integer Multiplication",
-    "difficulty": 3
+    "difficulty": 2
   },
   {
     "id": "acc_144",
@@ -4057,7 +4057,7 @@
     "correctAnswer": "D",
     "explanation": "1/8 = 2⁻³, so x = -3.",
     "skill": "Negative Exponents",
-    "difficulty": 5
+    "difficulty": 4
   },
   {
     "id": "acc_146",
@@ -4085,7 +4085,7 @@
     "correctAnswer": "D",
     "explanation": "2/3 ≈ 0.667, 5/8 = 0.625. 2/3 > 5/8.",
     "skill": "Comparing Fractions",
-    "difficulty": 3
+    "difficulty": 1
   },
   {
     "id": "acc_147",
@@ -4113,7 +4113,7 @@
     "correctAnswer": "A",
     "explanation": "Rhetorical questions emphasize a point — the answer is implied, not expected.",
     "skill": "Rhetoric",
-    "difficulty": 3
+    "difficulty": 2
   },
   {
     "id": "acc_148",
@@ -4141,7 +4141,7 @@
     "correctAnswer": "A",
     "explanation": "'Averse' means having a strong dislike or opposition. 'Adverse' means harmful or unfavorable.",
     "skill": "Commonly Confused Words",
-    "difficulty": 5
+    "difficulty": 4
   },
   {
     "id": "acc_149",
@@ -4169,7 +4169,7 @@
     "correctAnswer": "C",
     "explanation": "Mode is the most frequent value. 7 appears three times.",
     "skill": "Mode",
-    "difficulty": 3
+    "difficulty": 1
   },
   {
     "id": "acc_150",
@@ -4197,7 +4197,7 @@
     "correctAnswer": "A",
     "explanation": "d = √((4-1)²+(6-2)²) = √(9+16) = √25 = 5.",
     "skill": "Distance Formula",
-    "difficulty": 5
+    "difficulty": 4
   },
   {
     "id": "acc_151",
@@ -4225,7 +4225,7 @@
     "correctAnswer": "C",
     "explanation": "7/10 = 0.70 = 70%.",
     "skill": "Percent Conversion",
-    "difficulty": 3
+    "difficulty": 1
   },
   {
     "id": "acc_152",
@@ -4253,7 +4253,7 @@
     "correctAnswer": "D",
     "explanation": "An author's viewpoint is revealed through their language choices, tone, and the arguments they make.",
     "skill": "Author's Viewpoint",
-    "difficulty": 3
+    "difficulty": 1
   },
   {
     "id": "acc_153",
@@ -4281,7 +4281,7 @@
     "correctAnswer": "A",
     "explanation": "With 'neither...nor,' the verb agrees with the nearer subject ('teacher' = singular → 'was').",
     "skill": "Subject-Verb Agreement",
-    "difficulty": 5
+    "difficulty": 4
   },
   {
     "id": "acc_154",
@@ -4309,7 +4309,7 @@
     "correctAnswer": "D",
     "explanation": "15% × $42 = 0.15 × 42 = $6.30.",
     "skill": "Tip Calculations",
-    "difficulty": 3
+    "difficulty": 2
   },
   {
     "id": "acc_155",
@@ -4365,7 +4365,7 @@
     "correctAnswer": "C",
     "explanation": "Negative ÷ negative = positive. 12 ÷ 3 = 4.",
     "skill": "Integer Division",
-    "difficulty": 3
+    "difficulty": 1
   },
   {
     "id": "acc_157",
@@ -4421,7 +4421,7 @@
     "correctAnswer": "D",
     "explanation": "Items in a series are separated by commas, with 'and' before the last item.",
     "skill": "Serial Commas",
-    "difficulty": 3
+    "difficulty": 1
   },
   {
     "id": "acc_159",
@@ -4505,7 +4505,7 @@
     "correctAnswer": "A",
     "explanation": "The tens digit is 6 (≥5), so round up: 2,500.",
     "skill": "Rounding",
-    "difficulty": 3
+    "difficulty": 2
   },
   {
     "id": "acc_162",
@@ -4533,7 +4533,7 @@
     "correctAnswer": "B",
     "explanation": "Diction is the author's choice of words, which affects tone and meaning.",
     "skill": "Literary Analysis",
-    "difficulty": 3
+    "difficulty": 1
   },
   {
     "id": "acc_163",
@@ -4561,7 +4561,7 @@
     "correctAnswer": "B",
     "explanation": "Being specific with concrete benefits is stronger than vague generalities.",
     "skill": "Specificity",
-    "difficulty": 3
+    "difficulty": 1
   },
   {
     "id": "acc_164",
@@ -4589,7 +4589,7 @@
     "correctAnswer": "A",
     "explanation": "Tax = 6.5% × $80 = $5.20. Total = $85.20.",
     "skill": "Tax Calculations",
-    "difficulty": 3
+    "difficulty": 1
   },
   {
     "id": "acc_165",
@@ -4645,7 +4645,7 @@
     "correctAnswer": "D",
     "explanation": "2³ = 2 × 2 × 2 = 8.",
     "skill": "Exponents",
-    "difficulty": 3
+    "difficulty": 2
   },
   {
     "id": "acc_167",
@@ -4673,7 +4673,7 @@
     "correctAnswer": "B",
     "explanation": "The strongest persuasion combines credibility (ethos), logic (logos), and emotional appeal (pathos).",
     "skill": "Persuasive Writing",
-    "difficulty": 5
+    "difficulty": 4
   },
   {
     "id": "acc_168",
@@ -4757,7 +4757,7 @@
     "correctAnswer": "D",
     "explanation": "g(2) = 4. f(4) = 4 + 3 = 7.",
     "skill": "Function Composition",
-    "difficulty": 5
+    "difficulty": 4
   },
   {
     "id": "acc_171",
@@ -4813,7 +4813,7 @@
     "correctAnswer": "D",
     "explanation": "A symbol is something concrete that represents something abstract (e.g., a dove symbolizes peace).",
     "skill": "Symbolism",
-    "difficulty": 3
+    "difficulty": 2
   },
   {
     "id": "acc_173",
@@ -4841,7 +4841,7 @@
     "correctAnswer": "C",
     "explanation": "'Can't' and 'hardly' are both negatives. Remove one: 'She can hardly wait.'",
     "skill": "Double Negatives",
-    "difficulty": 3
+    "difficulty": 1
   },
   {
     "id": "acc_174",
@@ -4897,7 +4897,7 @@
     "correctAnswer": "D",
     "explanation": "(n-2) × 180° = (5-2) × 180° = 540°.",
     "skill": "Polygon Angles",
-    "difficulty": 5
+    "difficulty": 4
   },
   {
     "id": "acc_176",
@@ -4925,7 +4925,7 @@
     "correctAnswer": "D",
     "explanation": "9/10 - 3/10 = 6/10 = 3/5.",
     "skill": "Fraction Subtraction",
-    "difficulty": 3
+    "difficulty": 2
   },
   {
     "id": "acc_177",
@@ -4953,7 +4953,7 @@
     "correctAnswer": "A",
     "explanation": "Paraphrasing means expressing someone else's ideas in your own words while maintaining the original meaning.",
     "skill": "Paraphrasing",
-    "difficulty": 3
+    "difficulty": 2
   },
   {
     "id": "acc_178",
@@ -4981,7 +4981,7 @@
     "correctAnswer": "A",
     "explanation": "'Almost' should modify '300 miles,' not 'drove.'",
     "skill": "Misplaced Modifiers",
-    "difficulty": 5
+    "difficulty": 4
   },
   {
     "id": "acc_179",
@@ -5009,7 +5009,7 @@
     "correctAnswer": "D",
     "explanation": "Range = 30 - 8 = 22.",
     "skill": "Range",
-    "difficulty": 3
+    "difficulty": 1
   },
   {
     "id": "acc_180",
@@ -5037,7 +5037,7 @@
     "correctAnswer": "D",
     "explanation": "Square both sides: x + 9 = 25 → x = 16.",
     "skill": "Radical Equations",
-    "difficulty": 5
+    "difficulty": 4
   },
   {
     "id": "acc_181",
@@ -5121,7 +5121,7 @@
     "correctAnswer": "D",
     "explanation": "'Data' is technically plural (datum is singular), so 'suggest' is correct.",
     "skill": "Grammar",
-    "difficulty": 5
+    "difficulty": 4
   },
   {
     "id": "acc_184",
@@ -5205,7 +5205,7 @@
     "correctAnswer": "A",
     "explanation": "Area = s² = 11² = 121.",
     "skill": "Area",
-    "difficulty": 3
+    "difficulty": 2
   },
   {
     "id": "acc_187",
@@ -5233,7 +5233,7 @@
     "correctAnswer": "D",
     "explanation": "This idiom means what's visible is only a small fraction of the whole.",
     "skill": "Idioms",
-    "difficulty": 3
+    "difficulty": 1
   },
   {
     "id": "acc_188",
@@ -5289,7 +5289,7 @@
     "correctAnswer": "D",
     "explanation": "8 - 3 = 5 slices remaining. 5/8 of the pie.",
     "skill": "Fractions",
-    "difficulty": 3
+    "difficulty": 2
   },
   {
     "id": "acc_190",
@@ -5401,7 +5401,7 @@
     "correctAnswer": "C",
     "explanation": "'The committee approved' puts the subject doing the action first (active voice).",
     "skill": "Active Voice",
-    "difficulty": 3
+    "difficulty": 1
   },
   {
     "id": "acc_194",
@@ -5429,7 +5429,7 @@
     "correctAnswer": "A",
     "explanation": "C = 5/9 × (68-32) = 5/9 × 36 = 20°C.",
     "skill": "Temperature Conversion",
-    "difficulty": 5
+    "difficulty": 4
   },
   {
     "id": "acc_195",
@@ -5457,7 +5457,7 @@
     "correctAnswer": "B",
     "explanation": "n + (n+1) = 37 → 2n = 36 → n = 18. Numbers: 18 and 19.",
     "skill": "Word Problems",
-    "difficulty": 3
+    "difficulty": 2
   },
   {
     "id": "acc_196",
@@ -5485,7 +5485,7 @@
     "correctAnswer": "A",
     "explanation": "50% of 100 = 50. 50% of 50 = 25.",
     "skill": "Compound Percentages",
-    "difficulty": 3
+    "difficulty": 1
   },
   {
     "id": "acc_197",
@@ -5513,7 +5513,7 @@
     "correctAnswer": "A",
     "explanation": "Unreliable narrators have compromised credibility, requiring readers to question the narrative.",
     "skill": "Narrative Perspective",
-    "difficulty": 5
+    "difficulty": 4
   },
   {
     "id": "acc_199",
@@ -5541,7 +5541,7 @@
     "correctAnswer": "D",
     "explanation": "Distance = speed × time = 60 × 2.5 = 150 miles.",
     "skill": "Distance",
-    "difficulty": 3
+    "difficulty": 2
   },
   {
     "id": "acc_200",
@@ -5569,7 +5569,7 @@
     "correctAnswer": "C",
     "explanation": "∛27 = 3 because 3³ = 27.",
     "skill": "Cube Roots",
-    "difficulty": 3
+    "difficulty": 1
   },
   {
     "id": "acc_201",
@@ -5597,7 +5597,7 @@
     "correctAnswer": "B",
     "explanation": "The passage highlights hieroglyphics as a complex and crucial element of Egyptian society, used for various important functions. While pyramids, math, and astronomy are mentioned, the focus on the writing system makes option B the best summary.",
     "skill": "Main Idea",
-    "difficulty": 3
+    "difficulty": 2
   },
   {
     "id": "acc_021",
@@ -5625,7 +5625,7 @@
     "correctAnswer": "D",
     "explanation": "-8 + 5 = -3.",
     "skill": "Integer Operations",
-    "difficulty": 3
+    "difficulty": 2
   },
   {
     "id": "acc_143",
@@ -5653,7 +5653,7 @@
     "correctAnswer": "D",
     "explanation": "Dashes set off parenthetical information that interrupts the sentence.",
     "skill": "Dashes",
-    "difficulty": 5
+    "difficulty": 4
   },
   {
     "id": "acc_204",
@@ -5681,7 +5681,7 @@
     "correctAnswer": "B",
     "explanation": "The passage states that innovations led to 'mechanized production, leading to the factory system and mass urbanization.' This directly supports the idea that urbanization was a consequence of new production methods.",
     "skill": "Cause and Effect",
-    "difficulty": 5
+    "difficulty": 4
   },
   {
     "id": "acc_042",
@@ -5709,7 +5709,7 @@
     "correctAnswer": "A",
     "explanation": "Making inferences combines textual evidence with the reader's background knowledge.",
     "skill": "Making Inferences",
-    "difficulty": 3
+    "difficulty": 2
   },
   {
     "id": "acc_206",
@@ -5737,7 +5737,7 @@
     "correctAnswer": "B",
     "explanation": "The passage provides 'buzz,' 'hiss,' and 'meow' as direct examples of onomatopoeia.",
     "skill": "Literal Comprehension",
-    "difficulty": 3
+    "difficulty": 2
   },
   {
     "id": "acc_121",
@@ -5821,7 +5821,7 @@
     "correctAnswer": "B",
     "explanation": "Editorials express opinions and attempt to persuade readers.",
     "skill": "Author's Purpose",
-    "difficulty": 3
+    "difficulty": 2
   },
   {
     "id": "acc_023",
@@ -5849,7 +5849,7 @@
     "correctAnswer": "A",
     "explanation": "'List' (singular subject) takes 'is,' not 'are.'",
     "skill": "Subject-Verb Agreement",
-    "difficulty": 3
+    "difficulty": 1
   },
   {
     "id": "acc_024",
@@ -5877,7 +5877,7 @@
     "correctAnswer": "A",
     "explanation": "25% of $40 = $10. Sale price = $40 - $10 = $30.",
     "skill": "Percent Applications",
-    "difficulty": 3
+    "difficulty": 1
   },
   {
     "id": "acc_212",
@@ -5989,7 +5989,7 @@
     "correctAnswer": "C",
     "explanation": "The passage defines irony as when 'the intended meaning is different from the actual meaning, or where events unfold in a way that is contrary to what is expected,' which is captured by option C.",
     "skill": "Definition/Vocabulary",
-    "difficulty": 7
+    "difficulty": 6
   },
   {
     "id": "acc_216",
@@ -6073,7 +6073,7 @@
     "correctAnswer": "C",
     "explanation": "The last sentence explicitly states, 'human activities like deforestation can accelerate its rate.'",
     "skill": "Literal Comprehension",
-    "difficulty": 5
+    "difficulty": 4
   },
   {
     "id": "acc_219",
@@ -6101,7 +6101,7 @@
     "correctAnswer": "C",
     "explanation": "The definition of ubiquitous is 'found everywhere,' and the example illustrates this by stating smartphones are carried and used by a 'vast majority of people across different regions and demographics,' indicating their widespread presence.",
     "skill": "Definition/Vocabulary",
-    "difficulty": 7
+    "difficulty": 6
   },
   {
     "id": "acc_220",
@@ -6157,7 +6157,7 @@
     "correctAnswer": "B",
     "explanation": "The subject of the sentence is 'box,' which is singular. Therefore, the verb must also be singular ('is'). 'Of chocolates' is a prepositional phrase modifying 'box.'",
     "skill": "Subject-Verb Agreement",
-    "difficulty": 3
+    "difficulty": 2
   },
   {
     "id": "acc_222",
@@ -6213,7 +6213,7 @@
     "correctAnswer": "C",
     "explanation": "Sentence C incorrectly joins two independent clauses ('She studied hard for the test' and 'she aced it') with only a comma. This is a comma splice, a type of run-on sentence.",
     "skill": "Sentence Structure",
-    "difficulty": 3
+    "difficulty": 2
   },
   {
     "id": "acc_224",
@@ -6241,7 +6241,7 @@
     "correctAnswer": "C",
     "explanation": "Parallel structure requires that all items in a series have the same grammatical form. In sentence C, all items are gerunds (-ing forms).",
     "skill": "Parallel Structure",
-    "difficulty": 5
+    "difficulty": 4
   },
   {
     "id": "acc_225",
@@ -6269,7 +6269,7 @@
     "correctAnswer": "D",
     "explanation": "'Its' is the possessive form of 'it.' 'It's' is a contraction for 'it is' or 'it has.' Since the tail belongs to the dog, the possessive form 'its' is needed.",
     "skill": "Commonly Confused Words",
-    "difficulty": 3
+    "difficulty": 2
   },
   {
     "id": "acc_226",
@@ -6297,7 +6297,7 @@
     "correctAnswer": "C",
     "explanation": "Sentences A, B, and D are dependent clauses or fragments, introduced by subordinating conjunctions. Sentence C contains a subject ('cat') and a verb ('slept') and expresses a complete thought.",
     "skill": "Sentence Structure",
-    "difficulty": 5
+    "difficulty": 4
   },
   {
     "id": "acc_227",
@@ -6325,7 +6325,7 @@
     "correctAnswer": "A",
     "explanation": "The phrase 'a fascinating history' is a non-essential appositive, providing extra information about 'The book.' Non-essential elements should be set off by commas.",
     "skill": "Punctuation",
-    "difficulty": 5
+    "difficulty": 4
   },
   {
     "id": "acc_228",
@@ -6353,7 +6353,7 @@
     "correctAnswer": "A",
     "explanation": "The pronoun 'their' is plural, but the antecedent 'Each student' is singular. While 'their' is increasingly accepted to avoid gendered pronouns, formally, in this construction, it's an agreement error. A more formally correct sentence would be: 'Each student should bring his or her own lunch.' or 'All students should bring their own lunches.'",
     "skill": "Pronoun Agreement",
-    "difficulty": 7
+    "difficulty": 6
   },
   {
     "id": "acc_229",
@@ -6437,7 +6437,7 @@
     "correctAnswer": "A",
     "explanation": "The sentence shifts from the present tense ('walks') to the past tense ('bought') without a clear reason. To maintain consistent tense, it should be either 'She walks...and buys...' or 'She walked...and bought...'.",
     "skill": "Verb Tense Consistency",
-    "difficulty": 5
+    "difficulty": 4
   },
   {
     "id": "acc_232",
@@ -6465,7 +6465,7 @@
     "correctAnswer": "B",
     "explanation": "To show possession for a singular noun ('cat'), add an apostrophe and an 's'. Option C ('cats'') would be correct if referring to the tails of multiple cats.",
     "skill": "Possessive Nouns",
-    "difficulty": 3
+    "difficulty": 1
   },
   {
     "id": "acc_233",
@@ -6493,7 +6493,7 @@
     "correctAnswer": "C",
     "explanation": "Sentence C uses parallel gerunds ('reading' and 'writing') after the verb 'likes,' creating a concise and grammatically parallel structure.",
     "skill": "Combining Sentences",
-    "difficulty": 5
+    "difficulty": 4
   },
   {
     "id": "acc_234",
@@ -6521,7 +6521,7 @@
     "correctAnswer": "B",
     "explanation": "The word 'quickly' is an adverb that modifies the verb 'ran,' describing how he ran. 'Quick' is an adjective. 'Quicklier' is not a word, and 'quickest' is a superlative, implying he ran faster than anyone else.",
     "skill": "Adverb Usage",
-    "difficulty": 3
+    "difficulty": 2
   },
   {
     "id": "acc_235",
@@ -6577,7 +6577,7 @@
     "correctAnswer": "C",
     "explanation": "Sentence C uses formal vocabulary ('manager,' 'expressed approval,' 'proposal') and avoids slang or informal phrasing, contributing to a formal tone.",
     "skill": "Tone",
-    "difficulty": 5
+    "difficulty": 4
   },
   {
     "id": "acc_237",
@@ -6605,7 +6605,7 @@
     "correctAnswer": "A",
     "explanation": "Commas are used to separate items in a series. The comma before 'and' (the Oxford comma) is often preferred in formal writing for clarity, though its use can sometimes be optional depending on style guides.",
     "skill": "Commas in a Series",
-    "difficulty": 3
+    "difficulty": 2
   },
   {
     "id": "acc_238",
@@ -6661,7 +6661,7 @@
     "correctAnswer": "D",
     "explanation": "The relative pronoun 'who' is used for people. The sentence refers to 'information,' which is not a person. The correct relative pronoun should be 'that' or 'which'.",
     "skill": "Relative Pronoun Usage",
-    "difficulty": 7
+    "difficulty": 6
   },
   {
     "id": "acc_240",
@@ -6689,7 +6689,7 @@
     "correctAnswer": "C",
     "explanation": "The word 'antique' already implies that something is old. Therefore, 'old antique' is redundant. 'Extra bonus' is also redundant as a bonus is inherently extra.",
     "skill": "Conciseness",
-    "difficulty": 5
+    "difficulty": 4
   },
   {
     "id": "acc_241",
@@ -6717,7 +6717,7 @@
     "correctAnswer": "B",
     "explanation": "First, add 57 and 83: $57 + 83 = 140$. Then, subtract 21 from the result: $140 - 21 = 119$.",
     "skill": "Addition and Subtraction",
-    "difficulty": 3
+    "difficulty": 2
   },
   {
     "id": "acc_025",
@@ -6745,7 +6745,7 @@
     "correctAnswer": "B",
     "explanation": "2 + 8 = 5x - 3x → 10 = 2x → x = 5.",
     "skill": "Linear Equations",
-    "difficulty": 3
+    "difficulty": 1
   },
   {
     "id": "acc_243",
@@ -6773,7 +6773,7 @@
     "correctAnswer": "C",
     "explanation": "Divide 240 by 8: $240 \\div 8 = 30$.",
     "skill": "Division",
-    "difficulty": 3
+    "difficulty": 2
   },
   {
     "id": "acc_244",
@@ -6885,7 +6885,7 @@
     "correctAnswer": "A",
     "explanation": "Subtract 4.2 from 9.75, aligning the decimal points: $9.75 - 4.20 = 5.55$.",
     "skill": "Decimal Subtraction",
-    "difficulty": 3
+    "difficulty": 2
   },
   {
     "id": "acc_249",
@@ -6997,7 +6997,7 @@
     "correctAnswer": "B",
     "explanation": "Follow the order of operations (PEMDAS/BODMAS). First, solve the parentheses: $(4 - 2) = 2$. Then perform multiplication: $3 \\times 2 = 6$. Finally, perform addition: $5 + 6 = 11$.",
     "skill": "Order of Operations",
-    "difficulty": 5
+    "difficulty": 4
   },
   {
     "id": "acc_253",
@@ -7053,7 +7053,7 @@
     "correctAnswer": "C",
     "explanation": "The square root of 81 is the number that, when multiplied by itself, equals 81. $9 \\times 9 = 81$.",
     "skill": "Square Roots",
-    "difficulty": 3
+    "difficulty": 2
   },
   {
     "id": "acc_255",
@@ -7081,7 +7081,7 @@
     "correctAnswer": "C",
     "explanation": "Divide the total area to be covered by the area covered per gallon: $750 \\div 300 = 2.5$.",
     "skill": "Ratio and Proportion",
-    "difficulty": 5
+    "difficulty": 4
   },
   {
     "id": "acc_256",
@@ -7109,7 +7109,7 @@
     "correctAnswer": "C",
     "explanation": "Align the decimal points and add: \n $12.50$ \n  $3.75$ \n $+0.50$ \n ------ \n $16.75$",
     "skill": "Decimal Addition",
-    "difficulty": 5
+    "difficulty": 4
   },
   {
     "id": "acc_257",
@@ -7165,7 +7165,7 @@
     "correctAnswer": "C",
     "explanation": "Average speed is calculated by dividing the total distance by the total time: $180 \\text{ miles} \\div 3 \\text{ hours} = 60 \\text{ mph}$.",
     "skill": "Rate Calculation",
-    "difficulty": 3
+    "difficulty": 1
   },
   {
     "id": "acc_259",
@@ -7193,7 +7193,7 @@
     "correctAnswer": "B",
     "explanation": "To find $\\frac{2}{5}$ of 40, multiply the fraction by the number: $\\frac{2}{5} \\times 40 = \\frac{2 \\times 40}{5} = \\frac{80}{5} = 16$.",
     "skill": "Fraction of a Number",
-    "difficulty": 5
+    "difficulty": 4
   },
   {
     "id": "acc_260",
@@ -7221,7 +7221,7 @@
     "correctAnswer": "B",
     "explanation": "Let the original number be $x$. The problem can be written as an equation: $7x + 5 = 47$. Subtract 5 from both sides: $7x = 42$. Divide both sides by 7: $x = 6$.",
     "skill": "Solving Two-Step Equations",
-    "difficulty": 7
+    "difficulty": 6
   },
   {
     "id": "acc_261",
@@ -7249,7 +7249,7 @@
     "correctAnswer": "A",
     "explanation": "The ratio of flour to cookies is 2 cups / 12 cookies = 1/6 cup per cookie. To make 30 cookies, you need 30 cookies * (1/6 cup/cookie) = 5 cups of flour.",
     "skill": "Ratios and Proportions",
-    "difficulty": 3
+    "difficulty": 2
   },
   {
     "id": "acc_262",
@@ -7277,7 +7277,7 @@
     "correctAnswer": "A",
     "explanation": "Substitute x = -4 into the expression: 3(-4) + 7 = -12 + 7 = -5.",
     "skill": "Evaluating Algebraic Expressions",
-    "difficulty": 3
+    "difficulty": 1
   },
   {
     "id": "acc_263",
@@ -7333,7 +7333,7 @@
     "correctAnswer": "C",
     "explanation": "The perimeter of a rectangle is calculated as 2*(length + width). So, 2*(8 + 5) = 2*(13) = 26 units.",
     "skill": "Geometry",
-    "difficulty": 3
+    "difficulty": 1
   },
   {
     "id": "acc_265",
@@ -7361,7 +7361,7 @@
     "correctAnswer": "A",
     "explanation": "Distance = Speed * Time. So, Distance = 60 miles/hour * 2.5 hours = 150 miles.",
     "skill": "Rate, Time, and Distance",
-    "difficulty": 3
+    "difficulty": 1
   },
   {
     "id": "acc_266",
@@ -7417,7 +7417,7 @@
     "correctAnswer": "A",
     "explanation": "The total number of marbles is 5 + 7 = 12. The number of red marbles is 5. The probability of drawing a red marble is the number of red marbles divided by the total number of marbles, which is 5/12.",
     "skill": "Probability",
-    "difficulty": 3
+    "difficulty": 2
   },
   {
     "id": "acc_268",
@@ -7473,7 +7473,7 @@
     "correctAnswer": "B",
     "explanation": "The area of a circle is given by the formula A = πr², where r is the radius. In this case, r = 5, so A = π(5)² = 25π square units.",
     "skill": "Geometry",
-    "difficulty": 5
+    "difficulty": 4
   },
   {
     "id": "acc_270",
@@ -7557,7 +7557,7 @@
     "correctAnswer": "A",
     "explanation": "Subtract 5 from both sides: x/3 = 3. Multiply both sides by 3: x = 9.",
     "skill": "Solving Linear Equations",
-    "difficulty": 3
+    "difficulty": 1
   },
   {
     "id": "acc_273",
@@ -7613,7 +7613,7 @@
     "correctAnswer": "D",
     "explanation": "Find the largest perfect square factor of 72. 72 = 36 * 2. Therefore, sqrt(72) = sqrt(36 * 2) = sqrt(36) * sqrt(2) = 6√2.",
     "skill": "Radicals",
-    "difficulty": 5
+    "difficulty": 4
   },
   {
     "id": "acc_275",
@@ -7641,7 +7641,7 @@
     "correctAnswer": "B",
     "explanation": "The slope formula is m = (y2 - y1) / (x2 - x1). Using the points (2, 5) and (4, 11): m = (11 - 5) / (4 - 2) = 6 / 2 = 3.",
     "skill": "Coordinate Geometry",
-    "difficulty": 5
+    "difficulty": 4
   },
   {
     "id": "acc_276",
@@ -7697,7 +7697,7 @@
     "correctAnswer": "A",
     "explanation": "First, order the numbers from least to greatest: {5, 8, 10, 12, 15}. The median is the middle number, which is 10.",
     "skill": "Statistics",
-    "difficulty": 3
+    "difficulty": 2
   },
   {
     "id": "acc_278",
@@ -7725,7 +7725,7 @@
     "correctAnswer": "D",
     "explanation": "Divide the equation by 3 to simplify: 2x + 3y = 10. Since x and y are positive integers, we can test values. If y=1, 2x + 3 = 10, so 2x = 7, x = 3.5 (not an integer). If y=2, 2x + 6 = 10, so 2x = 4, x = 2. This gives integer solutions x=2, y=2. Then x+y = 2+2 = 4. If y=3, 2x + 9 = 10, so 2x = 1, x = 0.5 (not a positive integer). Thus, the only solution with positive integers is x=2, y=2.",
     "skill": "Diophantine Equations",
-    "difficulty": 7
+    "difficulty": 6
   },
   {
     "id": "acc_279",
@@ -7781,7 +7781,7 @@
     "correctAnswer": "D",
     "explanation": "Cost of apples: 5 apples * $0.50/apple = $2.50. Cost of oranges: 3 oranges * $0.75/orange = $2.25. Total cost: $2.50 + $2.25 = $4.75.",
     "skill": "Arithmetic Operations",
-    "difficulty": 3
+    "difficulty": 2
   },
   {
     "id": "acc_281",
@@ -7865,7 +7865,7 @@
     "correctAnswer": "A",
     "explanation": "Persuasive writing aims to convince the reader to agree with the author's position.",
     "skill": "Text Types",
-    "difficulty": 3
+    "difficulty": 1
   },
   {
     "id": "acc_026",
@@ -7893,7 +7893,7 @@
     "correctAnswer": "D",
     "explanation": "2/3 × 90 = 180/3 = 60.",
     "skill": "Fractions",
-    "difficulty": 3
+    "difficulty": 1
   },
   {
     "id": "acc_203",
@@ -7921,7 +7921,7 @@
     "correctAnswer": "C",
     "explanation": "The passage explicitly states that a thermostat 'automatically regulates temperature' and 'maintain[s] a consistent temperature,' making option C the correct inference.",
     "skill": "Inference",
-    "difficulty": 3
+    "difficulty": 2
   },
   {
     "id": "acc_205",
@@ -7949,7 +7949,7 @@
     "correctAnswer": "C",
     "explanation": "The first sentence explicitly states that plants use 'sunlight to synthesize foods,' and the second sentence mentions 'light energy is captured.' This clearly indicates sunlight is essential.",
     "skill": "Literal Comprehension",
-    "difficulty": 3
+    "difficulty": 1
   },
   {
     "id": "acc_287",
@@ -7977,7 +7977,7 @@
     "correctAnswer": "D",
     "explanation": "To find the inverse function, set y = f(x), then swap x and y, and solve for y. So, y = 4x - 5. Swap: x = 4y - 5. Add 5 to both sides: x + 5 = 4y. Divide by 4: y = (x + 5) / 4. Thus, f^-1(x) = (x + 5) / 4.",
     "skill": "Inverse Functions",
-    "difficulty": 5
+    "difficulty": 4
   },
   {
     "id": "acc_288",
@@ -8005,7 +8005,7 @@
     "correctAnswer": "D",
     "explanation": "Factor the numerator as a difference of squares: x^2 - 9 = (x - 3)(x + 3). Factor the denominator as a quadratic: x^2 - 2x - 3 = (x - 3)(x + 1). So the expression becomes [(x - 3)(x + 3)] / [(x - 3)(x + 1)]. Assuming x ≠ 3, we can cancel (x - 3), leaving (x + 3) / (x + 1).",
     "skill": "Simplifying Rational Expressions",
-    "difficulty": 5
+    "difficulty": 4
   },
   {
     "id": "acc_207",
@@ -8033,7 +8033,7 @@
     "correctAnswer": "C",
     "explanation": "The passage clearly states that monarchs travel 'thousands of miles' to 'overwintering grounds in Mexico and California,' directly supporting option C.",
     "skill": "Literal Comprehension",
-    "difficulty": 3
+    "difficulty": 1
   },
   {
     "id": "acc_290",
@@ -8061,7 +8061,7 @@
     "correctAnswer": "C",
     "explanation": "Substitute x = 1 into the polynomial and set it equal to 3: P(1) = (1)^3 - k(1)^2 + 2(1) - 1 = 3. This simplifies to 1 - k + 2 - 1 = 3. So, 2 - k = 3. Subtract 2 from both sides: -k = 1. Therefore, k = -1.",
     "skill": "Polynomial Evaluation",
-    "difficulty": 3
+    "difficulty": 1
   },
   {
     "id": "acc_291",
@@ -8145,7 +8145,7 @@
     "correctAnswer": "C",
     "explanation": "Let log_3(1/9) = y. In exponential form, this means 3^y = 1/9. Since 1/9 = 1/3^2 = 3^(-2), we have 3^y = 3^(-2). Therefore, y = -2.",
     "skill": "Logarithm Evaluation",
-    "difficulty": 3
+    "difficulty": 1
   },
   {
     "id": "acc_294",
@@ -8201,7 +8201,7 @@
     "correctAnswer": "B",
     "explanation": "Expand (x + 2)^3 = (x + 2)(x + 2)^2 = (x + 2)(x^2 + 4x + 4). Multiply this out: x(x^2 + 4x + 4) + 2(x^2 + 4x + 4) = x^3 + 4x^2 + 4x + 2x^2 + 8x + 8. Combine like terms: x^3 + (4x^2 + 2x^2) + (4x + 8x) + 8 = x^3 + 6x^2 + 12x + 8. The coefficient of the x^2 term is 6.",
     "skill": "Binomial Expansion",
-    "difficulty": 5
+    "difficulty": 4
   },
   {
     "id": "acc_296",
@@ -8229,7 +8229,7 @@
     "correctAnswer": "B",
     "explanation": "Square both sides: (√(x + 3))^2 = (x - 3)^2. This gives x + 3 = x^2 - 6x + 9. Move all terms to one side: x^2 - 7x + 6 = 0. Factor the quadratic: (x - 1)(x - 6) = 0. Possible solutions are x = 1 and x = 6. We must check for extraneous solutions in the original equation. For x = 1: √(1 + 3) = √4 = 2. And 1 - 3 = -2. Since 2 ≠ -2, x = 1 is an extraneous solution. For x = 6: √(6 + 3) = √9 = 3. And 6 - 3 = 3. Since 3 = 3, x = 6 is a valid solution. The solution set is {6}.",
     "skill": "Radical Equations",
-    "difficulty": 5
+    "difficulty": 4
   },
   {
     "id": "acc_297",
@@ -8257,7 +8257,7 @@
     "correctAnswer": "C",
     "explanation": "First, apply the exponent to the numerator: (4x^3 y^2)^2 = 4^2 * (x^3)^2 * (y^2)^2 = 16x^6 y^4. Now divide by the denominator: (16x^6 y^4) / (2x^2 y^5). Divide the coefficients: 16/2 = 8. For x terms: x^6 / x^2 = x^(6-2) = x^4. For y terms: y^4 / y^5 = y^(4-5) = y^(-1) = 1/y. So the simplified expression is 8x^4 / y.",
     "skill": "Exponent Rules",
-    "difficulty": 5
+    "difficulty": 4
   },
   {
     "id": "acc_298",
