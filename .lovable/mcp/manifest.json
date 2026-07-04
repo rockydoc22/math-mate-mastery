@@ -1,0 +1,103 @@
+{
+  "version": 1,
+  "sdk_version": "0.20.0",
+  "path": "/functions/v1/mcp",
+  "auth": {
+    "type": "none"
+  },
+  "mcp": {
+    "server": {
+      "name": "alphaomega-mcp",
+      "version": "0.1.0",
+      "title": "AlphaOmega Test Prep"
+    },
+    "tools": [
+      {
+        "name": "list_exams",
+        "title": "List supported exams",
+        "description": "List all standardized exams and test categories supported by AlphaOmega.",
+        "annotations": {
+          "readOnlyHint": true,
+          "idempotentHint": true,
+          "openWorldHint": false
+        },
+        "inputSchema": {
+          "$schema": "http://json-schema.org/draft-07/schema#",
+          "type": "object",
+          "properties": {}
+        },
+        "outputSchema": null
+      },
+      {
+        "name": "get_study_tip",
+        "title": "Get a study tip",
+        "description": "Get concise study and test-taking tips for a given exam family (sat, act, ap, or general).",
+        "annotations": {
+          "readOnlyHint": true,
+          "idempotentHint": true,
+          "openWorldHint": false
+        },
+        "inputSchema": {
+          "type": "object",
+          "properties": {
+            "exam": {
+              "type": "string",
+              "enum": [
+                "sat",
+                "act",
+                "ap",
+                "general"
+              ],
+              "description": "Exam family."
+            }
+          },
+          "required": [
+            "exam"
+          ],
+          "additionalProperties": false,
+          "$schema": "http://json-schema.org/draft-07/schema#"
+        },
+        "outputSchema": null
+      },
+      {
+        "name": "generate_practice_prompt",
+        "title": "Generate a practice question prompt",
+        "description": "Return a structured prompt an assistant can use to generate an original practice question in AlphaOmega's style for a given exam, topic, and difficulty (1-10).",
+        "annotations": {
+          "readOnlyHint": true,
+          "idempotentHint": true,
+          "openWorldHint": false
+        },
+        "inputSchema": {
+          "type": "object",
+          "properties": {
+            "exam": {
+              "type": "string",
+              "minLength": 1,
+              "description": "Exam id, e.g. 'sat', 'act', 'ap-biology'."
+            },
+            "topic": {
+              "type": "string",
+              "minLength": 1,
+              "description": "Topic or skill, e.g. 'linear equations'."
+            },
+            "difficulty": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 10,
+              "description": "Difficulty 1-10."
+            }
+          },
+          "required": [
+            "exam",
+            "topic",
+            "difficulty"
+          ],
+          "additionalProperties": false,
+          "$schema": "http://json-schema.org/draft-07/schema#"
+        },
+        "outputSchema": null
+      }
+    ]
+  }
+}
