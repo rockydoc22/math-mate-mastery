@@ -69,14 +69,18 @@ async function loadBank(): Promise<Record<string, Question[]>> {
   if (_bankCache) return _bankCache;
   if (_bankPromise) return _bankPromise;
 
-  _bankPromise = Promise.resolve({ default: { courses: [] } }).then((mod) => {
-    const raw = mod.default as any;
-    const course = raw.courses?.find((c: any) => c.course === 'AP Environmental Science');
+  _bankPromise = Promise.all([
+    import('./ap_mega_bank_v2.json'),
+    import('./ap_mega_bank_lovable.json'),
+  ]).then((mods) => {
     const result: Record<string, Question[]> = {};
-    if (course) {
+    for (const mod of mods) {
+      const raw = mod.default as any;
+      const course = raw.courses?.find((c: any) => c.course === 'AP Environmental Science');
+      if (!course) continue;
       for (const unit of course.units) {
         const key = `unit-${unit.unit_id}`;
-        result[key] = (unit.questions || []).map((q: RawQuestion) => convertQuestion(q));
+        result[key] = [...(result[key] || []), ...(unit.questions || []).map((q: RawQuestion) => convertQuestion(q))];
       }
     }
     _bankCache = deduplicateBank(result);
