@@ -84,7 +84,7 @@ const K12Exams = () => {
             >
               <div className="text-center space-y-1">
                 <Calendar className="w-6 h-6 mx-auto text-orange-500" />
-                <h3 className="font-bold text-sm">Daily Challenge</h3>
+                <h2 className="font-bold text-sm">Daily Challenge</h2>
                 <p className="text-[10px] text-muted-foreground">Unique daily questions targeting your weak skills</p>
               </div>
             </Card>
@@ -94,7 +94,7 @@ const K12Exams = () => {
             >
               <div className="text-center space-y-1">
                 <Brain className="w-6 h-6 mx-auto text-primary" />
-                <h3 className="font-bold text-sm">Adaptive Tutor</h3>
+                <h2 className="font-bold text-sm">Adaptive Tutor</h2>
                 <p className="text-[10px] text-muted-foreground">AI-powered hints & difficulty that adapts to you</p>
               </div>
             </Card>
@@ -112,7 +112,7 @@ const K12Exams = () => {
                   <div className="flex items-center gap-4">
                     <span className="text-3xl">{exam.icon}</span>
                     <div className="flex-1">
-                      <h3 className="font-bold text-sm">{exam.name}</h3>
+                      <h2 className="font-bold text-sm">{exam.name}</h2>
                       <p className="text-xs text-muted-foreground">{exam.description}</p>
                       {!loadingCounts && count !== undefined && (
                         <span className="inline-block mt-1 text-[10px] px-2 py-0.5 rounded-full bg-primary/10 text-primary font-medium">
