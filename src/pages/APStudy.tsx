@@ -176,6 +176,8 @@ const APStudy = () => {
   const current = subjectMap[subjectId || ''] || { units: [], questions: {} };
   const units = current.units;
   const questionsByUnit = current.questions;
+  const totalQuestions = units.reduce((sum, u) => sum + ((questionsByUnit[u.id] || []).length), 0);
+  const hasAnyQuestions = totalQuestions > 0;
 
   const startQuiz = (unit: APChemUnit) => {
     const questions = questionsByUnit[unit.id] || [];
@@ -272,7 +274,7 @@ const APStudy = () => {
             </Card>
           )}
 
-          {units.length > 0 ? (
+          {units.length > 0 && hasAnyQuestions ? (
             <div className="grid gap-3">
               {units.map(unit => {
                 const questions = questionsByUnit[unit.id] || [];
