@@ -54,7 +54,7 @@ const WhyItWorks = () => {
           <div>
             <h1 className="text-3xl font-bold flex items-center gap-2">
               <BookOpen className="w-8 h-8 text-primary" />
-              Why 1600² Works
+              Why AlphaOmega Works
             </h1>
             <p className="text-muted-foreground">Built One Brick at a Time</p>
           </div>
