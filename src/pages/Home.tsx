@@ -1201,7 +1201,7 @@ const Home = () => {
             <div className="space-y-1">
               {topPlayers.slice(0, 3).map((player, idx) => (
                 <div key={player.username} className="flex items-center gap-2 text-xs">
-                  <span className={`font-bold ${idx === 0 ? 'text-amber-500' : idx === 1 ? 'text-gray-400' : 'text-orange-400'}`}>
+                  <span className={`font-bold ${idx === 0 ? 'text-amber-500' : idx === 1 ? 'text-slate-500 dark:text-slate-300' : 'text-orange-500'}`}>
                     {idx + 1}
                   </span>
                   <span className="truncate flex-1">{player.avatar_emoji || '👤'} {player.username}</span>
