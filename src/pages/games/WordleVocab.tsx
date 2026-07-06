@@ -7,15 +7,18 @@ import { GameZoneHeader } from "@/components/games/GameZoneHeader";
 import { GameResults } from "@/components/games/GameResults";
 import { useGameZoneStats } from "@/hooks/useGameZoneStats";
 import { SAT_VOCAB_WORDS } from "@/data/satVocab";
+import { funWordItems, pickMixed } from "@/data/funContentPool";
 
 const WORD_LEN = 5;
 const MAX_GUESSES = 6;
 
 function pickWord() {
-  const pool = SAT_VOCAB_WORDS.filter((w) => /^[A-Za-z]+$/.test(w.word) && w.word.length === WORD_LEN);
-  const fallback = SAT_VOCAB_WORDS.filter((w) => /^[A-Za-z]+$/.test(w.word) && w.word.length === 6);
-  const src = pool.length > 0 ? pool : fallback;
-  return src[Math.floor(Math.random() * src.length)];
+  const satPool = SAT_VOCAB_WORDS.filter((w) => /^[A-Za-z]+$/.test(w.word) && w.word.length === WORD_LEN);
+  const satFallback = SAT_VOCAB_WORDS.filter((w) => /^[A-Za-z]+$/.test(w.word) && w.word.length === 6);
+  const satSrc = satPool.length > 0 ? satPool : satFallback;
+  const funPool = [...funWordItems(WORD_LEN, WORD_LEN), ...funWordItems(6, 6)];
+  const picked = pickMixed(funPool, satSrc);
+  return picked.item as { word: string; definition: string };
 }
 
 type Letter = { char: string; state: "correct" | "present" | "absent" | "empty" };

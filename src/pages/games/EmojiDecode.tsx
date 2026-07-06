@@ -7,6 +7,7 @@ import { Input } from "@/components/ui/input";
 import { GameZoneHeader } from "@/components/games/GameZoneHeader";
 import { GameResults } from "@/components/games/GameResults";
 import { useGameZoneStats } from "@/hooks/useGameZoneStats";
+import { funEmojiItems, pickMixed } from "@/data/funContentPool";
 
 interface Puzzle { emoji: string; answer: string; hint: string; }
 
@@ -34,8 +35,10 @@ const PUZZLES: Puzzle[] = [
 ];
 
 function pick(exclude?: string) {
-  const pool = PUZZLES.filter((p) => p.answer !== exclude);
-  return pool[Math.floor(Math.random() * pool.length)];
+  const satPool = PUZZLES.filter((p) => p.answer !== exclude);
+  const funPool = funEmojiItems().filter((p) => p.answer !== exclude);
+  const picked = pickMixed(funPool, satPool);
+  return picked.item as Puzzle;
 }
 
 export default function EmojiDecode() {
