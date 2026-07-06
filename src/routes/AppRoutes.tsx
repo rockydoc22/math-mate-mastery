@@ -11,6 +11,23 @@ import Home from "@/pages/Home";
 import Auth from "@/pages/Auth";
 import AuthCallback from "@/pages/AuthCallback";
 import NotFound from "@/pages/NotFound";
+import { Navigate } from "react-router-dom";
+import { useAuth } from "@/hooks/useAuth";
+
+// First-time / unauthenticated visitors land on Game Zone.
+// Authenticated returning users land on the study dashboard (Home).
+const RootLanding = () => {
+  const { user, loading } = useAuth();
+  if (loading) return null;
+  if (!user) {
+    const seen = typeof window !== "undefined" && localStorage.getItem("aoSeenGames") === "1";
+    if (!seen) {
+      try { localStorage.setItem("aoSeenGames", "1"); } catch {}
+      return <Navigate to="/games" replace />;
+    }
+  }
+  return <Home />;
+};
 
 // Everything else lazy-loaded for code splitting
 const Quiz = lazy(() => import("@/pages/Quiz"));
@@ -46,6 +63,11 @@ const BossBattle = lazy(() => import("@/pages/BossBattle"));
 const APTests = lazy(() => import("@/pages/APTests"));
 const APStudy = lazy(() => import("@/pages/APStudy"));
 const Arcade = lazy(() => import("@/pages/Arcade"));
+const GameZone = lazy(() => import("@/pages/GameZone"));
+const GameHangman = lazy(() => import("@/pages/games/Hangman"));
+const GameWordle = lazy(() => import("@/pages/games/WordleVocab"));
+const GameEmoji = lazy(() => import("@/pages/games/EmojiDecode"));
+const GameRapid = lazy(() => import("@/pages/games/RapidFireSwipe"));
 const InstallApp = lazy(() => import("@/pages/InstallApp"));
 const FrenchCompetition = lazy(() => import("@/pages/FrenchCompetition"));
 const FrenchLightning = lazy(() => import("@/pages/FrenchLightning"));
@@ -146,7 +168,13 @@ const Terms = lazy(() => import("@/pages/Terms"));
 const AppRoutes = () => (
   <>
     <Routes>
-      <Route path="/" element={<Home />} />
+      <Route path="/" element={<RootLanding />} />
+      <Route path="/home" element={<Home />} />
+      <Route path="/games" element={<GameZone />} />
+      <Route path="/games/hangman" element={<GameHangman />} />
+      <Route path="/games/wordle" element={<GameWordle />} />
+      <Route path="/games/emoji" element={<GameEmoji />} />
+      <Route path="/games/rapid" element={<GameRapid />} />
       <Route path="/landing" element={<LandingPage />} />
       <Route path="/quiz" element={<ProtectedRoute><Quiz /></ProtectedRoute>} />
       <Route path="/math" element={<ProtectedRoute><MathQuiz /></ProtectedRoute>} />
