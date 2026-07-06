@@ -20,12 +20,21 @@ export function deduplicateBank<T extends { id: string }>(
   bank: Record<string, T[]>
 ): Record<string, T[]> {
   const globalSeen = new Set<string>();
+  const globalTextSeen = new Set<string>();
   const result: Record<string, T[]> = {};
   for (const [key, questions] of Object.entries(bank)) {
     result[key] = questions.filter(q => {
       const id = q.id.toLowerCase();
       if (globalSeen.has(id)) return false;
       globalSeen.add(id);
+      const text = (q as any).question;
+      if (typeof text === 'string') {
+        const norm = text.replace(/\s+/g, ' ').trim().toLowerCase();
+        if (norm.length > 20) {
+          if (globalTextSeen.has(norm)) return false;
+          globalTextSeen.add(norm);
+        }
+      }
       return true;
     });
   }
