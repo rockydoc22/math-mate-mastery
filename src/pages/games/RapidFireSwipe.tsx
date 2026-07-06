@@ -7,6 +7,7 @@ import { GameZoneHeader } from "@/components/games/GameZoneHeader";
 import { GameResults } from "@/components/games/GameResults";
 import { useGameZoneStats } from "@/hooks/useGameZoneStats";
 import { rapidFireFacts } from "@/data/satFactsRapidFire";
+import { buildFunRapidPrompt } from "@/data/funContentPool";
 
 const ROUND_SECONDS = 60;
 
@@ -18,6 +19,11 @@ interface Prompt {
 }
 
 function buildPrompt(): Prompt {
+  // 70/30 mix: fun content vs SAT rapid-fire facts.
+  if (Math.random() < 0.7) {
+    const fun = buildFunRapidPrompt();
+    if (fun) return fun;
+  }
   const fact = rapidFireFacts[Math.floor(Math.random() * rapidFireFacts.length)];
   const isTrue = Math.random() < 0.5;
   const displayed = isTrue
