@@ -1,10 +1,11 @@
-import { Home, Play, RotateCcw, User } from "lucide-react";
+import { Home, Play, Gamepad2, RotateCcw, User } from "lucide-react";
 import { NavLink, useNavigate, useLocation } from "react-router-dom";
 import { cn } from "@/lib/utils";
 
 const navItems = [
   { to: "/", icon: Home, label: "Home" },
   { to: "/quiz?subject=both&count=10&difficulty=all&timer=true", icon: Play, label: "Practice" },
+  { to: "/games", icon: Gamepad2, label: "Games" },
   { to: "/review", icon: RotateCcw, label: "Review" },
   { to: "/profile", icon: User, label: "Profile" },
 ];
