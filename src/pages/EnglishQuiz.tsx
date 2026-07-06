@@ -9,8 +9,22 @@ import { Link } from "react-router-dom";
 import { useProgressiveHints } from "@/hooks/useProgressiveHints";
 import { ProgressiveHintPanel } from "@/components/ProgressiveHintPanel";
 import { SEO } from "@/components/SEO";
+import { useExamType } from "@/hooks/useExamType";
+import { EXAM_CONFIGS } from "@/utils/examConfig";
+import { useSearchParams } from "react-router-dom";
 
 const EnglishQuiz = () => {
+  const [searchParams] = useSearchParams();
+  const { examType } = useExamType();
+  const examParam = (searchParams.get("exam") || "").toLowerCase();
+  const overrideLabels: Record<string, string> = {
+    ged: "GED", hiset: "HiSET", ap: "AP", act: "ACT", psat: "PSAT", sat: "SAT",
+    gre: "GRE", gmat: "GMAT", lsat: "LSAT", mcat: "MCAT", teas: "TEAS",
+  };
+  const examLabel =
+    overrideLabels[examParam] ||
+    EXAM_CONFIGS[examType as keyof typeof EXAM_CONFIGS]?.shortName ||
+    "SAT";
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [selectedAnswer, setSelectedAnswer] = useState<string | null>(null);
   const [showResult, setShowResult] = useState(false);
@@ -76,8 +90,8 @@ const EnglishQuiz = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-primary/5 via-secondary/5 to-accent/5 p-4 py-8">
       <SEO
-        title="Free SAT Reading & Writing Practice"
-        description="Practice authentic SAT Reading and Writing passages with instant feedback and detailed answer explanations."
+        title={`Free ${examLabel} Reading & Writing Practice`}
+        description={`Practice ${examLabel} Reading and Writing passages with instant feedback and detailed answer explanations.`}
         path="/english"
       />
       <div className="max-w-3xl mx-auto space-y-6">
@@ -88,7 +102,7 @@ const EnglishQuiz = () => {
               Back
             </Button>
           </Link>
-          <h1 className="text-2xl font-bold text-secondary">SAT Reading & Writing Practice</h1>
+          <h1 className="text-2xl font-bold text-secondary">{examLabel} Reading & Writing Practice</h1>
         </div>
 
         <div className="space-y-3">
