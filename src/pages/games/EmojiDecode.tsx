@@ -60,7 +60,7 @@ export default function EmojiDecode() {
       const nextLives = lives - 1;
       setLives(nextLives);
       if (nextLives <= 0) {
-        recordRound("emoji", points, 0, false);
+        recordRound("emoji", 0, 0, false);
         setFeedback("lost");
       } else {
         setFeedback("wrong");

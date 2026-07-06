@@ -44,17 +44,20 @@ export default function RapidFireSwipe() {
 
   useEffect(() => {
     if (!started || finished) return;
-    if (timeLeft <= 0) {
-      if (finishedRef.current) return;
-      finishedRef.current = true;
-      const points = correct * 10;
-      recordRound("rapid", points, correct, correct > wrong);
-      setFinished({ points });
-      return;
-    }
-    const t = setTimeout(() => setTimeLeft((n) => n - 1), 1000);
-    return () => clearTimeout(t);
-  }, [started, timeLeft, finished, correct, wrong, recordRound]);
+    const interval = setInterval(() => {
+      setTimeLeft((n) => Math.max(0, n - 1));
+    }, 1000);
+    return () => clearInterval(interval);
+  }, [started, finished]);
+
+  useEffect(() => {
+    if (!started || finished || timeLeft > 0) return;
+    if (finishedRef.current) return;
+    finishedRef.current = true;
+    const points = correct * 10;
+    recordRound("rapid", points, correct, correct > wrong);
+    setFinished({ points });
+  }, [started, finished, timeLeft, correct, wrong, recordRound]);
 
   const answer = useCallback(
     (userSaysTrue: boolean) => {
