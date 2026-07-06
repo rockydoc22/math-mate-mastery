@@ -7,13 +7,16 @@ import { GameZoneHeader } from "@/components/games/GameZoneHeader";
 import { GameResults } from "@/components/games/GameResults";
 import { useGameZoneStats } from "@/hooks/useGameZoneStats";
 import { SAT_VOCAB_WORDS } from "@/data/satVocab";
+import { funWordItems, pickMixed } from "@/data/funContentPool";
 
 const MAX_WRONG = 6;
 const LETTERS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("");
 
 function pickWord() {
-  const pool = SAT_VOCAB_WORDS.filter((w) => /^[A-Za-z]+$/.test(w.word) && w.word.length >= 4);
-  return pool[Math.floor(Math.random() * pool.length)];
+  const satPool = SAT_VOCAB_WORDS.filter((w) => /^[A-Za-z]+$/.test(w.word) && w.word.length >= 4);
+  const funPool = funWordItems(4);
+  const picked = pickMixed(funPool, satPool);
+  return picked.item as { word: string; definition: string };
 }
 
 export default function Hangman() {
