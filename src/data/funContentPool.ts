@@ -49,17 +49,12 @@ export function buildFunRapidPrompt(): FunRapidPrompt | null {
   const item = funContentPool[Math.floor(Math.random() * funContentPool.length)];
   if (!item) return null;
   if (item.type === "true_false") {
-    const showAsTrue = Math.random() < 0.5;
     return {
       id: `${item.id}-${Date.now()}-${Math.random()}`,
       text: item.prompt,
-      // If we flip the statement, it becomes the opposite. Simplest: just show the prompt as-is;
-      // "isTrue" = whether user's TRUE answer would be correct = the item's boolean answer.
-      isTrue: showAsTrue ? item.answer : !item.answer,
+      isTrue: item.answer,
       answer: item.answer ? "True" : "False",
     };
-    // Note: to keep gameplay symmetric with SAT rapid fire (which shows a possibly-wrong claim),
-    // we mutate the "displayed truthiness" via a flag rather than editing the sentence text.
   }
   if (item.type === "multiple_choice") {
     const showCorrect = Math.random() < 0.5;
