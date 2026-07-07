@@ -14,19 +14,11 @@ import NotFound from "@/pages/NotFound";
 import { Navigate } from "react-router-dom";
 import { useAuth } from "@/hooks/useAuth";
 
-// First-time / unauthenticated visitors land on Game Zone.
-// Authenticated returning users land on the study dashboard (Home).
+// Everyone — signed in or not — lands on Game Zone first.
 const RootLanding = () => {
-  const { user, loading } = useAuth();
+  const { loading } = useAuth();
   if (loading) return null;
-  if (!user) {
-    const seen = typeof window !== "undefined" && localStorage.getItem("aoSeenGames") === "1";
-    if (!seen) {
-      try { localStorage.setItem("aoSeenGames", "1"); } catch {}
-      return <Navigate to="/games" replace />;
-    }
-  }
-  return <Home />;
+  return <Navigate to="/games" replace />;
 };
 
 // Everything else lazy-loaded for code splitting
