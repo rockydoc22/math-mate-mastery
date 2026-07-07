@@ -4,7 +4,8 @@ import { Card } from "@/components/ui/card";
 import { 
   Sparkles, Clock, Target, Trophy, Users, Zap, 
   CheckCircle, Star, ArrowRight, Calculator, PenTool,
-  Brain, Swords, Crown, Medal, Gamepad2, BookOpen, GraduationCap, Briefcase, Search
+  Brain, Swords, Crown, Medal, Gamepad2, BookOpen, GraduationCap, Briefcase, Search,
+  Home as HomeIcon, Wrench, Heart
 } from "lucide-react";
 import { Link, useNavigate } from "react-router-dom";
 import { usePWAUpdate, APP_VERSION } from "@/hooks/usePWAUpdate";
@@ -43,9 +44,13 @@ const features = [
 ];
 
 const examCategories = [
+  { icon: GraduationCap, label: "College", exams: "GRE · GMAT · MCAT · LSAT · TOEFL", color: "text-purple-600 dark:text-purple-400", bg: "bg-purple-50 dark:bg-purple-950/30" },
   { icon: BookOpen, label: "High School", exams: "SAT · ACT · PSAT · AP", color: "text-blue-600 dark:text-blue-400", bg: "bg-blue-50 dark:bg-blue-950/30" },
-  { icon: GraduationCap, label: "College & K-12", exams: "GED · MAP · STAR · Iowa", color: "text-teal-600 dark:text-teal-400", bg: "bg-teal-50 dark:bg-teal-950/30" },
-  { icon: Briefcase, label: "Grad & Professional", exams: "MCAT · GRE · LSAT · GMAT", color: "text-purple-600 dark:text-purple-400", bg: "bg-purple-50 dark:bg-purple-950/30" },
+  { icon: Sparkles, label: "Elementary", exams: "MAP · STAR · Iowa · K-5 Math & Reading", color: "text-amber-600 dark:text-amber-400", bg: "bg-amber-50 dark:bg-amber-950/30" },
+  { icon: HomeIcon, label: "Home School", exams: "Full K-12 curriculum · GED · Placement", color: "text-teal-600 dark:text-teal-400", bg: "bg-teal-50 dark:bg-teal-950/30" },
+  { icon: Wrench, label: "Trade School", exams: "ATI TEAS · NCLEX · HESI · ASVAB", color: "text-orange-600 dark:text-orange-400", bg: "bg-orange-50 dark:bg-orange-950/30" },
+  { icon: Heart, label: "Personal", exams: "IQ · MBTI · DISC · Vocab · Cognitive Skills", color: "text-pink-600 dark:text-pink-400", bg: "bg-pink-50 dark:bg-pink-950/30" },
+  { icon: Trophy, label: "Competition", exams: "Math Olympiad · Spelling Bee · French CCFF", color: "text-yellow-600 dark:text-yellow-400", bg: "bg-yellow-50 dark:bg-yellow-950/30" },
 ];
 
 export const LandingPage = () => {
@@ -122,13 +127,13 @@ export const LandingPage = () => {
           {/* Logo */}
           <div className="flex justify-center">
             <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-primary to-accent flex items-center justify-center shadow-lg">
-              <span className="font-bold text-primary-foreground font-mono text-lg">AΩ</span>
+              <span className="font-bold text-primary-foreground font-mono text-lg">ΑΩ</span>
             </div>
           </div>
 
           {/* Title & tagline */}
           <div>
-            <h1 className="text-3xl font-bold tracking-tight mb-1">AlphaOmega — One app. Every test.</h1>
+            <h1 className="text-3xl font-bold tracking-tight mb-1">ΑΩ — One app. Every test.</h1>
             <p className="text-sm text-muted-foreground font-medium">Free adaptive prep for SAT, ACT, AP & more.</p>
             <div className="flex flex-wrap justify-center gap-2 mt-3">
               <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-xs font-medium bg-emerald-500/10 text-emerald-600 dark:text-emerald-400">
