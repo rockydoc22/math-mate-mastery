@@ -60,7 +60,7 @@ const Support = () => {
       </Card>
 
       <p className="text-xs text-muted-foreground mt-8 text-center">
-        AlphaOmega · 40squared.club · One App, Every Test
+        AlphaOmega · 40squared.club · Every Test, Every Time
       </p>
       {gate}
     </div>

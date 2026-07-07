@@ -34,7 +34,7 @@ const Terms = () => (
 
         <section>
           <h2 className="text-xl font-semibold">4. Intellectual Property</h2>
-          <p>All content in the App — including question banks, AI-generated explanations, mascots, brand marks ("AlphaOmega", "40²", "One App, Every Test"), UI design, code, copy, curricula, and learning algorithms — is owned by AlphaOmega and protected by U.S. and international copyright, trademark, and trade-secret laws.</p>
+          <p>All content in the App — including question banks, AI-generated explanations, mascots, brand marks ("AlphaOmega", "40²", "Every Test, Every Time"), UI design, code, copy, curricula, and learning algorithms — is owned by AlphaOmega and protected by U.S. and international copyright, trademark, and trade-secret laws.</p>
           <p>You receive a limited, revocable, non-exclusive, non-transferable license to use the App for personal study only. You may <strong>not</strong>:</p>
           <ul className="list-disc pl-6 space-y-1">
             <li>Copy, scrape, download in bulk, mirror, or redistribute questions, explanations, or any other content.</li>
