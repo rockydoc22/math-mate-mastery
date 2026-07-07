@@ -10,6 +10,7 @@ import { funWordItems, pickMixed } from "@/data/funContentPool";
 import { getGameVocabPool, FOCUS_LABEL, GameVocabWord } from "@/data/gameVocabPools";
 import { useLearnerContext } from "@/hooks/useLearnerContext";
 import { useGameSounds } from "@/hooks/useGameSounds";
+import hangmanLostPng from "@/assets/hangman-lost.png";
 
 const MAX_WRONG = 6;
 const LETTERS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("");
@@ -27,6 +28,9 @@ function Gallows({ wrong, dying }: { wrong: number; dying: boolean }) {
   const grass = "hsl(140 45% 55%)";
   const sky1 = "hsl(205 90% 82%)";
   const sky2 = "hsl(200 90% 92%)";
+  const hair = "hsl(28 55% 28%)";
+  const cap  = "hsl(0 75% 52%)";
+  const capDark = "hsl(0 75% 38%)";
 
   const face = !dying ? (
     <>
@@ -70,7 +74,10 @@ function Gallows({ wrong, dying }: { wrong: number; dying: boolean }) {
       <g
         style={{
           transformOrigin: "110px 12px",
-          animation: dying ? "hangman-sway 1.4s ease-in-out infinite" : undefined,
+          // Two-phase animation on defeat: first drop (trap door), then sway.
+          animation: dying
+            ? "hangman-drop 0.35s cubic-bezier(0.22,1.4,0.36,1) 0s 1 both, hangman-sway 1.4s ease-in-out 0.35s infinite"
+            : undefined,
         }}
       >
         {wrong >= 1 && (
@@ -78,6 +85,14 @@ function Gallows({ wrong, dying }: { wrong: number; dying: boolean }) {
             <line x1="110" y1="10" x2="110" y2="32" stroke={rope} strokeWidth="2.5" strokeLinecap="round" />
             <circle cx="110" cy="46" r="13" fill={skin} stroke={woodDark} strokeWidth="1.5" />
             <circle cx="110" cy="34" r="3" fill={rope} stroke={woodDark} strokeWidth="0.8" />
+            {/* Brown hair tuft peeking under the cap brim */}
+            <path d="M99 43 Q104 38 110 39 Q116 38 121 43 L120 46 Q110 43 100 46 Z" fill={hair} />
+            {/* Red baseball cap */}
+            <path d="M97 40 Q110 26 123 40 L123 43 L97 43 Z" fill={cap} stroke={capDark} strokeWidth="1" strokeLinejoin="round" />
+            {/* Cap brim */}
+            <path d="M118 43 Q126 44 128 47 L126 48 Q122 46 118 46 Z" fill={capDark} />
+            {/* Cap button */}
+            <circle cx="110" cy="30" r="1.4" fill={capDark} />
             {face}
           </>
         )}
