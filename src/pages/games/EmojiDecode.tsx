@@ -2,36 +2,39 @@ import { useState, useCallback } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { ArrowLeft } from "lucide-react";
+import { ArrowLeft, HelpCircle } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import { GameZoneHeader } from "@/components/games/GameZoneHeader";
 import { GameResults } from "@/components/games/GameResults";
 import { useGameZoneStats } from "@/hooks/useGameZoneStats";
 import { funEmojiItems, pickMixed } from "@/data/funContentPool";
 
-interface Puzzle { emoji: string; answer: string; hint: string; }
+interface Puzzle { emoji: string; answer: string; hint: string; breakdown?: string[]; }
 
+// `breakdown` explains each emoji so the "aha" is obvious on reveal.
+// If breakdown is missing (e.g. from the fun-content pool), we fall back to
+// just showing the hint.
 const PUZZLES: Puzzle[] = [
-  { emoji: "🕰️⏳", answer: "ephemeral", hint: "Lasting for a very short time" },
-  { emoji: "🤐🗿", answer: "taciturn", hint: "Reserved, saying little" },
-  { emoji: "🔨🗿", answer: "iconoclast", hint: "Attacks cherished beliefs" },
-  { emoji: "☀️🙂", answer: "sanguine", hint: "Optimistic in tough times" },
-  { emoji: "🌫️❓", answer: "obfuscate", hint: "Make unclear" },
-  { emoji: "⚡👥", answer: "galvanize", hint: "Shock into action" },
-  { emoji: "🌱📣", answer: "harbinger", hint: "Announces what's coming" },
-  { emoji: "🙅‍♂️😠", answer: "recalcitrant", hint: "Stubbornly uncooperative" },
-  { emoji: "🗣️🎯", answer: "cogent", hint: "Clear and convincing" },
-  { emoji: "🪞🪞", answer: "juxtapose", hint: "Place side by side" },
-  { emoji: "🌊⬇️", answer: "abate", hint: "Become less intense" },
-  { emoji: "🏗️💪", answer: "bolster", hint: "Support or strengthen" },
-  { emoji: "😈📜", answer: "nefarious", hint: "Wicked" },
-  { emoji: "🤔🌀", answer: "paradox", hint: "Contradictory but maybe true" },
-  { emoji: "🕳️🌪️", answer: "quagmire", hint: "Hazardous complex situation" },
-  { emoji: "🌍🌎🌏", answer: "ubiquitous", hint: "Everywhere at once" },
-  { emoji: "💧🩹", answer: "mitigate", hint: "Make less severe" },
-  { emoji: "🎭😏", answer: "facetious", hint: "Inappropriately humorous" },
-  { emoji: "🐢🏃", answer: "tenacious", hint: "Persistent, doesn't quit" },
-  { emoji: "📖✂️", answer: "laconic", hint: "Very few words" },
+  { emoji: "🕰️⏳", answer: "ephemeral", hint: "Lasting for a very short time", breakdown: ["🕰️ = time", "⏳ = running out"] },
+  { emoji: "🤐🗿", answer: "taciturn", hint: "Reserved, saying little", breakdown: ["🤐 = mouth zipped", "🗿 = stone-faced"] },
+  { emoji: "🔨🗿", answer: "iconoclast", hint: "Attacks cherished beliefs", breakdown: ["🔨 = smash", "🗿 = an idol / icon"] },
+  { emoji: "☀️🙂", answer: "sanguine", hint: "Optimistic in tough times", breakdown: ["☀️ = sunny", "🙂 = cheerful outlook"] },
+  { emoji: "🌫️❓", answer: "obfuscate", hint: "Make unclear", breakdown: ["🌫️ = fog / haze", "❓ = confusion"] },
+  { emoji: "⚡👥", answer: "galvanize", hint: "Shock into action", breakdown: ["⚡ = electric jolt", "👥 = a group of people"] },
+  { emoji: "🌱📣", answer: "harbinger", hint: "Announces what's coming", breakdown: ["🌱 = something new sprouting", "📣 = announcing it"] },
+  { emoji: "🙅‍♂️😠", answer: "recalcitrant", hint: "Stubbornly uncooperative", breakdown: ["🙅‍♂️ = refusing", "😠 = defiant"] },
+  { emoji: "🗣️🎯", answer: "cogent", hint: "Clear and convincing", breakdown: ["🗣️ = speaking", "🎯 = hits the target"] },
+  { emoji: "🪞🪞", answer: "juxtapose", hint: "Place side by side", breakdown: ["🪞🪞 = two things placed next to each other"] },
+  { emoji: "🌊⬇️", answer: "abate", hint: "Become less intense", breakdown: ["🌊 = a wave / storm", "⬇️ = dying down"] },
+  { emoji: "🏗️💪", answer: "bolster", hint: "Support or strengthen", breakdown: ["🏗️ = construction / support", "💪 = strength"] },
+  { emoji: "😈📜", answer: "nefarious", hint: "Wicked", breakdown: ["😈 = evil", "📜 = a plot / scheme"] },
+  { emoji: "🤔🌀", answer: "paradox", hint: "Contradictory but maybe true", breakdown: ["🤔 = thinking hard", "🌀 = a twist / loop"] },
+  { emoji: "🕳️🌪️", answer: "quagmire", hint: "Hazardous complex situation", breakdown: ["🕳️ = a pit you can't escape", "🌪️ = chaos"] },
+  { emoji: "🌍🌎🌏", answer: "ubiquitous", hint: "Everywhere at once", breakdown: ["🌍🌎🌏 = present all over the globe"] },
+  { emoji: "💧🩹", answer: "mitigate", hint: "Make less severe", breakdown: ["💧 = wound / harm", "🩹 = patching it up"] },
+  { emoji: "🎭😏", answer: "facetious", hint: "Inappropriately humorous", breakdown: ["🎭 = putting on an act", "😏 = joking smirk"] },
+  { emoji: "🐢🏃", answer: "tenacious", hint: "Persistent, doesn't quit", breakdown: ["🐢 = slow but steady", "🏃 = still moving"] },
+  { emoji: "📖✂️", answer: "laconic", hint: "Very few words", breakdown: ["📖 = a full text", "✂️ = trimmed down to almost nothing"] },
 ];
 
 function pick(exclude?: string) {
@@ -43,6 +46,13 @@ function pick(exclude?: string) {
 
 export default function EmojiDecode() {
   const { stats, recordRound } = useGameZoneStats();
+  const [showHelp, setShowHelp] = useState(() => {
+    try { return localStorage.getItem("aoEmojiSeenHelp") !== "1"; } catch { return true; }
+  });
+  const dismissHelp = () => {
+    setShowHelp(false);
+    try { localStorage.setItem("aoEmojiSeenHelp", "1"); } catch {}
+  };
   const [puzzle, setPuzzle] = useState<Puzzle>(() => pick());
   const [guess, setGuess] = useState("");
   const [lives, setLives] = useState(3);
@@ -95,21 +105,58 @@ export default function EmojiDecode() {
         <div className="flex items-center gap-2">
           <Link to="/games"><Button variant="ghost" size="sm"><ArrowLeft className="w-4 h-4" /></Button></Link>
           <h1 className="text-xl font-bold">🧩 Emoji Decode</h1>
+          <Button variant="ghost" size="sm" className="ml-auto" onClick={() => setShowHelp((v) => !v)} aria-label="How to play">
+            <HelpCircle className="w-4 h-4" />
+          </Button>
         </div>
 
+        {showHelp && (
+          <Card className="p-4 space-y-2 text-sm bg-primary/5 border-primary/30">
+            <p className="font-semibold">How to play Emoji Decode</p>
+            <p className="text-muted-foreground">
+              A word or name is hidden inside a string of emojis. Read each emoji as a <em>clue</em>, put them together, and type your answer.
+            </p>
+            <p className="text-xs text-muted-foreground">
+              Example: 👑🏀🍟 → each emoji is a clue: 👑 "king of", 🏀 basketball, 🍟 played in Miami → <strong>LeBron James</strong>.
+            </p>
+            <p className="text-xs text-muted-foreground">
+              You have 3 lives. Wrong guess = lose a life. On reveal, we'll show what each emoji meant.
+            </p>
+            <Button size="sm" className="w-full" onClick={dismissHelp}>Got it — start decoding</Button>
+          </Card>
+        )}
+
         {feedback === "lost" ? (
-          <GameResults
-            title="Out of lives"
-            pointsEarned={points}
-            totalPoints={stats.totalPoints}
-            detail={`Answer: ${puzzle.answer}`}
-            onPlayAgain={restart}
-          />
+          <div className="space-y-3">
+            <Card className="p-4 space-y-2 text-center">
+              <div className="text-5xl">{puzzle.emoji}</div>
+              <p className="text-sm">Answer: <strong className="capitalize">{puzzle.answer}</strong></p>
+              <p className="text-xs text-muted-foreground italic">{puzzle.hint}</p>
+              {puzzle.breakdown && (
+                <ul className="text-xs text-left text-muted-foreground space-y-0.5 pt-2 border-t">
+                  {puzzle.breakdown.map((b, i) => <li key={i}>{b}</li>)}
+                </ul>
+              )}
+            </Card>
+            <GameResults
+              title="Out of lives"
+              pointsEarned={points}
+              totalPoints={stats.totalPoints}
+              detail={`Answer: ${puzzle.answer}`}
+              onPlayAgain={restart}
+            />
+          </div>
         ) : feedback === "won" ? (
           <Card className="p-6 text-center space-y-3">
-            <div className="text-5xl">🎉</div>
+            <div className="text-6xl animate-scale-in">{puzzle.emoji}</div>
+            <div className="text-4xl">🎉</div>
             <div className="text-xl font-bold">Correct — {puzzle.answer}</div>
             <p className="text-sm text-muted-foreground">{puzzle.hint}</p>
+            {puzzle.breakdown && (
+              <ul className="text-xs text-left text-muted-foreground space-y-0.5 pt-2 border-t">
+                {puzzle.breakdown.map((b, i) => <li key={i}>{b}</li>)}
+              </ul>
+            )}
             <div className="text-sm">Round points: <span className="font-bold text-primary">{points}</span></div>
             <div className="flex gap-2">
               <Button className="flex-1" onClick={nextPuzzle}>Next Puzzle</Button>
@@ -118,7 +165,7 @@ export default function EmojiDecode() {
           </Card>
         ) : (
           <Card className="p-6 space-y-4 text-center">
-            <div className="text-6xl sm:text-7xl">{puzzle.emoji}</div>
+            <div className="text-6xl sm:text-7xl animate-fade-in" key={puzzle.answer}>{puzzle.emoji}</div>
             <p className="text-sm text-muted-foreground italic">{puzzle.hint}</p>
             <Input
               value={guess}
