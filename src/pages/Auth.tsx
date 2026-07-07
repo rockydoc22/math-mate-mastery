@@ -72,6 +72,7 @@ const Auth = () => {
   });
   const [isParent, setIsParent] = useState(false);
   const [numKids, setNumKids] = useState("1");
+  const [dateOfBirth, setDateOfBirth] = useState("");
 
   const handleGoogleSignIn = async () => {
     setGoogleLoading(true);
@@ -156,7 +157,10 @@ const Auth = () => {
           form.email, 
           form.password, 
           form.username,
-          isParent ? { isParent: true, numKids: parseInt(numKids) } : undefined
+          {
+            ...(isParent ? { isParent: true, numKids: parseInt(numKids) } : {}),
+            ...(dateOfBirth ? { dateOfBirth } : {}),
+          }
         );
         if (error) throw error;
         
@@ -370,6 +374,23 @@ const Auth = () => {
                     required
                   />
                 </div>
+              </div>
+            )}
+
+            {/* Sign Up - Date of birth (optional, used to tailor content/games) */}
+            {mode === "signUp" && (
+              <div className="space-y-2">
+                <Label htmlFor="dob">Date of birth <span className="text-muted-foreground font-normal">(optional)</span></Label>
+                <Input
+                  id="dob"
+                  type="date"
+                  value={dateOfBirth}
+                  max={new Date().toISOString().split("T")[0]}
+                  onChange={(e) => setDateOfBirth(e.target.value)}
+                />
+                <p className="text-xs text-muted-foreground">
+                  Helps us pick age-appropriate words and questions if you haven't chosen an exam yet.
+                </p>
               </div>
             )}
 

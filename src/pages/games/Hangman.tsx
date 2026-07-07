@@ -6,8 +6,9 @@ import { ArrowLeft } from "lucide-react";
 import { GameZoneHeader } from "@/components/games/GameZoneHeader";
 import { GameResults } from "@/components/games/GameResults";
 import { useGameZoneStats } from "@/hooks/useGameZoneStats";
-import { SAT_VOCAB_WORDS } from "@/data/satVocab";
 import { funWordItems, pickMixed } from "@/data/funContentPool";
+import { getGameVocabPool, FOCUS_LABEL, GameVocabWord } from "@/data/gameVocabPools";
+import { useLearnerContext } from "@/hooks/useLearnerContext";
 
 const MAX_WRONG = 6;
 const LETTERS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("");
@@ -42,16 +43,20 @@ function Gallows({ wrong }: { wrong: number }) {
   );
 }
 
-function pickWord() {
-  const satPool = SAT_VOCAB_WORDS.filter((w) => /^[A-Za-z]+$/.test(w.word) && w.word.length >= 4);
+function pickWord(studyPool: GameVocabWord[]): GameVocabWord {
   const funPool = funWordItems(4);
-  const picked = pickMixed(funPool, satPool);
-  return picked.item as { word: string; definition: string };
+  const picked = pickMixed(funPool, studyPool);
+  return picked.item as GameVocabWord;
 }
 
 export default function Hangman() {
   const { stats, recordRound } = useGameZoneStats();
-  const [word, setWord] = useState(() => pickWord());
+  const { examType, dateOfBirth } = useLearnerContext();
+  const { focus, words: studyPool } = useMemo(
+    () => getGameVocabPool({ examType, dateOfBirth, minLength: 4 }),
+    [examType, dateOfBirth]
+  );
+  const [word, setWord] = useState<GameVocabWord>(() => pickWord(studyPool));
   const [guessed, setGuessed] = useState<Set<string>>(new Set());
   const [finished, setFinished] = useState<null | { win: boolean; points: number }>(null);
 
@@ -80,7 +85,7 @@ export default function Hangman() {
   );
 
   const restart = () => {
-    setWord(pickWord());
+    setWord(pickWord(studyPool));
     setGuessed(new Set());
     setFinished(null);
   };
@@ -92,6 +97,9 @@ export default function Hangman() {
         <div className="flex items-center gap-2">
           <Link to="/games"><Button variant="ghost" size="sm"><ArrowLeft className="w-4 h-4" /></Button></Link>
           <h1 className="text-xl font-bold">🪢 Word Hangman</h1>
+          <span className="ml-auto text-[10px] uppercase tracking-wider text-muted-foreground bg-muted px-2 py-0.5 rounded-full">
+            {FOCUS_LABEL[focus]} words
+          </span>
         </div>
 
         {finished ? (
