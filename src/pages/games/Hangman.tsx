@@ -255,7 +255,7 @@ export default function Hangman() {
               <div className="rounded-xl overflow-hidden bg-gradient-to-b from-sky-200 to-sky-50 flex justify-center">
                 <img
                   src={hangmanLostPng}
-                  alt="Cartoon hangman scene"
+                  alt="Cartoon burglar caught behind bars"
                   width={768}
                   height={768}
                   loading="lazy"
