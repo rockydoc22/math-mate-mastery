@@ -9,32 +9,39 @@ import { GameResults } from "@/components/games/GameResults";
 import { useGameZoneStats } from "@/hooks/useGameZoneStats";
 import { funEmojiItems, pickMixed } from "@/data/funContentPool";
 
-interface Puzzle { emoji: string; answer: string; hint: string; breakdown?: string[]; }
+interface Puzzle {
+  emoji: string;
+  answer: string;
+  hint: string;
+  /** Fuller dictionary-style definition, shown when the player is struggling. */
+  definition?: string;
+  breakdown?: string[];
+}
 
 // `breakdown` explains each emoji so the "aha" is obvious on reveal.
 // If breakdown is missing (e.g. from the fun-content pool), we fall back to
 // just showing the hint.
 const PUZZLES: Puzzle[] = [
-  { emoji: "🕰️⏳", answer: "ephemeral", hint: "Lasting for a very short time", breakdown: ["🕰️ = time", "⏳ = running out"] },
-  { emoji: "🤐🗿", answer: "taciturn", hint: "Reserved, saying little", breakdown: ["🤐 = mouth zipped", "🗿 = stone-faced"] },
-  { emoji: "🔨🗿", answer: "iconoclast", hint: "Attacks cherished beliefs", breakdown: ["🔨 = smash", "🗿 = an idol / icon"] },
-  { emoji: "☀️🙂", answer: "sanguine", hint: "Optimistic in tough times", breakdown: ["☀️ = sunny", "🙂 = cheerful outlook"] },
-  { emoji: "🌫️❓", answer: "obfuscate", hint: "Make unclear", breakdown: ["🌫️ = fog / haze", "❓ = confusion"] },
-  { emoji: "⚡👥", answer: "galvanize", hint: "Shock into action", breakdown: ["⚡ = electric jolt", "👥 = a group of people"] },
-  { emoji: "🌱📣", answer: "harbinger", hint: "Announces what's coming", breakdown: ["🌱 = something new sprouting", "📣 = announcing it"] },
-  { emoji: "🙅‍♂️😠", answer: "recalcitrant", hint: "Stubbornly uncooperative", breakdown: ["🙅‍♂️ = refusing", "😠 = defiant"] },
-  { emoji: "🗣️🎯", answer: "cogent", hint: "Clear and convincing", breakdown: ["🗣️ = speaking", "🎯 = hits the target"] },
-  { emoji: "🪞🪞", answer: "juxtapose", hint: "Place side by side", breakdown: ["🪞🪞 = two things placed next to each other"] },
-  { emoji: "🌊⬇️", answer: "abate", hint: "Become less intense", breakdown: ["🌊 = a wave / storm", "⬇️ = dying down"] },
-  { emoji: "🏗️💪", answer: "bolster", hint: "Support or strengthen", breakdown: ["🏗️ = construction / support", "💪 = strength"] },
-  { emoji: "😈📜", answer: "nefarious", hint: "Wicked", breakdown: ["😈 = evil", "📜 = a plot / scheme"] },
-  { emoji: "🤔🌀", answer: "paradox", hint: "Contradictory but maybe true", breakdown: ["🤔 = thinking hard", "🌀 = a twist / loop"] },
-  { emoji: "🕳️🌪️", answer: "quagmire", hint: "Hazardous complex situation", breakdown: ["🕳️ = a pit you can't escape", "🌪️ = chaos"] },
-  { emoji: "🌍🌎🌏", answer: "ubiquitous", hint: "Everywhere at once", breakdown: ["🌍🌎🌏 = present all over the globe"] },
-  { emoji: "💧🩹", answer: "mitigate", hint: "Make less severe", breakdown: ["💧 = wound / harm", "🩹 = patching it up"] },
-  { emoji: "🎭😏", answer: "facetious", hint: "Inappropriately humorous", breakdown: ["🎭 = putting on an act", "😏 = joking smirk"] },
-  { emoji: "🐢🏃", answer: "tenacious", hint: "Persistent, doesn't quit", breakdown: ["🐢 = slow but steady", "🏃 = still moving"] },
-  { emoji: "📖✂️", answer: "laconic", hint: "Very few words", breakdown: ["📖 = a full text", "✂️ = trimmed down to almost nothing"] },
+  { emoji: "🕰️⏳", answer: "ephemeral", hint: "Lasting for a very short time", definition: "Existing only briefly — over almost as soon as it begins.", breakdown: ["🕰️ = time", "⏳ = running out"] },
+  { emoji: "🤐🗿", answer: "taciturn", hint: "Reserved, saying little", definition: "Habitually silent — someone who rarely speaks even when they could.", breakdown: ["🤐 = mouth zipped", "🗿 = stone-faced"] },
+  { emoji: "🔨🗿", answer: "iconoclast", hint: "Attacks cherished beliefs", definition: "A person who challenges or tears down traditional ideas that others hold sacred.", breakdown: ["🔨 = smash", "🗿 = an idol / icon"] },
+  { emoji: "☀️🙂", answer: "sanguine", hint: "Optimistic in tough times", definition: "Cheerful and confident about the future, even when things look grim.", breakdown: ["☀️ = sunny", "🙂 = cheerful outlook"] },
+  { emoji: "🌫️❓", answer: "obfuscate", hint: "Make unclear", definition: "To deliberately confuse someone by making something harder to understand — the opposite of clarify.", breakdown: ["🌫️ = fog / haze", "❓ = confusion"] },
+  { emoji: "⚡👥", answer: "galvanize", hint: "Shock into action", definition: "To suddenly stir a group into doing something — like an electric jolt of motivation.", breakdown: ["⚡ = electric jolt", "👥 = a group of people"] },
+  { emoji: "🌱📣", answer: "harbinger", hint: "Announces what's coming", definition: "A person, event, or sign that signals something important is about to happen.", breakdown: ["🌱 = something new sprouting", "📣 = announcing it"] },
+  { emoji: "🙅‍♂️😠", answer: "recalcitrant", hint: "Stubbornly uncooperative", definition: "Refusing to obey authority or follow along — defiantly resistant.", breakdown: ["🙅‍♂️ = refusing", "😠 = defiant"] },
+  { emoji: "🗣️🎯", answer: "cogent", hint: "Clear and convincing", definition: "An argument so well-reasoned it hits home — logical and hard to disagree with.", breakdown: ["🗣️ = speaking", "🎯 = hits the target"] },
+  { emoji: "🪞🪞", answer: "juxtapose", hint: "Place side by side", definition: "To place two things next to each other so their differences (or similarities) stand out.", breakdown: ["🪞🪞 = two things placed next to each other"] },
+  { emoji: "🌊⬇️", answer: "abate", hint: "Become less intense", definition: "To die down — a storm, pain, or noise gradually decreasing in force.", breakdown: ["🌊 = a wave / storm", "⬇️ = dying down"] },
+  { emoji: "🏗️💪", answer: "bolster", hint: "Support or strengthen", definition: "To prop something up or reinforce it — often confidence, a claim, or defenses.", breakdown: ["🏗️ = construction / support", "💪 = strength"] },
+  { emoji: "😈📜", answer: "nefarious", hint: "Wicked", definition: "Extremely evil or criminal — usually describing a scheme or plot.", breakdown: ["😈 = evil", "📜 = a plot / scheme"] },
+  { emoji: "🤔🌀", answer: "paradox", hint: "Contradictory but maybe true", definition: "A statement that seems to contradict itself, yet may actually be true when you think it through.", breakdown: ["🤔 = thinking hard", "🌀 = a twist / loop"] },
+  { emoji: "🕳️🌪️", answer: "quagmire", hint: "Hazardous complex situation", definition: "A messy, dangerous situation that is hard to escape — literally a swamp, figuratively a bind.", breakdown: ["🕳️ = a pit you can't escape", "🌪️ = chaos"] },
+  { emoji: "🌍🌎🌏", answer: "ubiquitous", hint: "Everywhere at once", definition: "Present, appearing, or found everywhere — impossible to avoid.", breakdown: ["🌍🌎🌏 = present all over the globe"] },
+  { emoji: "💧🩹", answer: "mitigate", hint: "Make less severe", definition: "To reduce the harm, seriousness, or pain of something — soften the blow.", breakdown: ["💧 = wound / harm", "🩹 = patching it up"] },
+  { emoji: "🎭😏", answer: "facetious", hint: "Inappropriately humorous", definition: "Treating a serious subject with deliberately silly or flippant humor.", breakdown: ["🎭 = putting on an act", "😏 = joking smirk"] },
+  { emoji: "🐢🏃", answer: "tenacious", hint: "Persistent, doesn't quit", definition: "Holding on tightly and refusing to give up — determined and stubborn in a good way.", breakdown: ["🐢 = slow but steady", "🏃 = still moving"] },
+  { emoji: "📖✂️", answer: "laconic", hint: "Very few words", definition: "Using extremely few words — brief to the point of seeming curt.", breakdown: ["📖 = a full text", "✂️ = trimmed down to almost nothing"] },
 ];
 
 function pick(exclude?: string) {
@@ -58,6 +65,15 @@ export default function EmojiDecode() {
   const [lives, setLives] = useState(3);
   const [feedback, setFeedback] = useState<"idle" | "wrong" | "won" | "lost">("idle");
   const [points, setPoints] = useState(0);
+
+  // Number of letters unlocked as clues after each wrong guess.
+  // 3 lives → 0 letters, 2 lives → 1 letter, 1 life → 2 letters.
+  const lettersRevealed = Math.max(0, 3 - lives);
+  const answerLen = puzzle.answer.length;
+  const masked = puzzle.answer
+    .split("")
+    .map((ch, i) => (i < lettersRevealed ? ch.toUpperCase() : "_"))
+    .join(" ");
 
   const submit = useCallback(() => {
     if (feedback === "won" || feedback === "lost") return;
@@ -167,6 +183,23 @@ export default function EmojiDecode() {
           <Card className="p-6 space-y-4 text-center">
             <div className="text-6xl sm:text-7xl animate-fade-in" key={puzzle.answer}>{puzzle.emoji}</div>
             <p className="text-sm text-muted-foreground italic">{puzzle.hint}</p>
+            {lives <= 2 && puzzle.definition && (
+              <p className="text-xs text-foreground/80 bg-accent/10 border border-accent/30 rounded-md px-3 py-2 animate-fade-in">
+                <span className="font-semibold">Definition:</span> {puzzle.definition}
+              </p>
+            )}
+            {/* Word length is always visible; letters unlock as lives drop */}
+            <div className="space-y-1">
+              <div className="text-xs uppercase tracking-wider text-muted-foreground">
+                {answerLen} letters{lettersRevealed > 0 && ` · ${lettersRevealed} revealed`}
+              </div>
+              <div className="font-mono text-lg tracking-[0.35em] font-bold text-primary">{masked}</div>
+            </div>
+            {lives === 1 && puzzle.breakdown && puzzle.breakdown[0] && (
+              <p className="text-xs text-muted-foreground animate-fade-in">
+                💡 Emoji clue: {puzzle.breakdown[0]}
+              </p>
+            )}
             <Input
               value={guess}
               onChange={(e) => setGuess(e.target.value)}
