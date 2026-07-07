@@ -19,7 +19,7 @@ export default defineConfig(({ mode }) => ({
       registerType: "autoUpdate",
       includeAssets: ["favicon.ico", "apple-touch-icon.png", "mask-icon.svg"],
       manifest: {
-        name: "AlphaOmega — One App, Every Test",
+        name: "AlphaOmega — Every Test, Every Time",
         short_name: "AlphaOmega",
         description: "Free test prep for SAT, ACT, AP, GED, MAP & more — 15,000+ questions",
         theme_color: "#6366f1",
