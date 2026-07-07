@@ -2,7 +2,7 @@ import { useMemo, useState, useCallback, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { ArrowLeft } from "lucide-react";
+import { ArrowLeft, HelpCircle } from "lucide-react";
 import { GameZoneHeader } from "@/components/games/GameZoneHeader";
 import { GameResults } from "@/components/games/GameResults";
 import { useGameZoneStats } from "@/hooks/useGameZoneStats";
@@ -48,6 +48,13 @@ const KEY_ROWS = ["QWERTYUIOP", "ASDFGHJKL", "ZXCVBNM"];
 
 export default function WordleVocab() {
   const { stats, recordRound } = useGameZoneStats();
+  const [showHelp, setShowHelp] = useState(() => {
+    try { return localStorage.getItem("aoWordleSeenHelp") !== "1"; } catch { return true; }
+  });
+  const dismissHelp = () => {
+    setShowHelp(false);
+    try { localStorage.setItem("aoWordleSeenHelp", "1"); } catch {}
+  };
   const [word, setWord] = useState(() => pickWord());
   const answer = word.word.toUpperCase();
   const len = answer.length;
@@ -130,7 +137,38 @@ export default function WordleVocab() {
         <div className="flex items-center gap-2">
           <Link to="/games"><Button variant="ghost" size="sm"><ArrowLeft className="w-4 h-4" /></Button></Link>
           <h1 className="text-xl font-bold">🟩 Wordle Vocab</h1>
+          <Button variant="ghost" size="sm" className="ml-auto" onClick={() => setShowHelp((v) => !v)} aria-label="How to play">
+            <HelpCircle className="w-4 h-4" />
+          </Button>
         </div>
+
+        {showHelp && (
+          <Card className="p-4 space-y-3 text-sm bg-primary/5 border-primary/30">
+            <p className="font-semibold">How to play Wordle Vocab</p>
+            <p className="text-muted-foreground">
+              Guess a hidden {WORD_LEN}-letter word in {MAX_GUESSES} tries. Type a full word and press <strong>Enter</strong>.
+              After each guess, the tile colors tell you how close you are:
+            </p>
+            <div className="grid grid-cols-3 gap-2 text-xs">
+              <div className="flex flex-col items-center gap-1">
+                <div className="w-8 h-8 rounded bg-emerald-500 text-white flex items-center justify-center font-bold">A</div>
+                <span className="text-muted-foreground">Right letter, right spot</span>
+              </div>
+              <div className="flex flex-col items-center gap-1">
+                <div className="w-8 h-8 rounded bg-amber-500 text-white flex items-center justify-center font-bold">A</div>
+                <span className="text-muted-foreground">In the word, wrong spot</span>
+              </div>
+              <div className="flex flex-col items-center gap-1">
+                <div className="w-8 h-8 rounded bg-muted text-muted-foreground flex items-center justify-center font-bold">A</div>
+                <span className="text-muted-foreground">Not in the word</span>
+              </div>
+            </div>
+            <p className="text-xs text-muted-foreground">
+              Mix of pop-culture & vocab words. Fewer guesses = more points.
+            </p>
+            <Button size="sm" className="w-full" onClick={dismissHelp}>Got it — let's play</Button>
+          </Card>
+        )}
 
         {finished ? (
           <GameResults
