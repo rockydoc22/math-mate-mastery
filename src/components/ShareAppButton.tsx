@@ -32,7 +32,7 @@ export const ShareAppButton = () => {
   const handleNativeShare = () => guard(async () => {
     if (navigator.share) {
       try {
-        await navigator.share({ title: "AlphaOmega — One App, Every Test", text: SHARE_TEXT, url: APP_URL });
+        await navigator.share({ title: "AlphaOmega — Every Test, Every Time", text: SHARE_TEXT, url: APP_URL });
       } catch {}
     } else {
       handleCopyLink();

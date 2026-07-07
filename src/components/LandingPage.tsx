@@ -90,7 +90,7 @@ export const LandingPage = () => {
   return (
     <div className="min-h-screen bg-background">
       <SEO
-        title="AlphaOmega — One App, Every Test | Free Test Prep"
+        title="AlphaOmega — Every Test, Every Time | Free Test Prep"
         description="Free adaptive test prep for SAT, ACT, AP, GED, MAP & more. 15,000+ practice questions, AI tutoring, and multiplayer battles."
         path="/landing"
         jsonLd={{
