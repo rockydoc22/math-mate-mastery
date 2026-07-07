@@ -1094,6 +1094,7 @@ export type Database = {
           avatar_emoji: string | null
           avatar_url: string | null
           created_at: string
+          date_of_birth: string | null
           diagnostic_completed_at: string | null
           exam_type: string
           grade_level: string | null
@@ -1113,6 +1114,7 @@ export type Database = {
           avatar_emoji?: string | null
           avatar_url?: string | null
           created_at?: string
+          date_of_birth?: string | null
           diagnostic_completed_at?: string | null
           exam_type?: string
           grade_level?: string | null
@@ -1132,6 +1134,7 @@ export type Database = {
           avatar_emoji?: string | null
           avatar_url?: string | null
           created_at?: string
+          date_of_birth?: string | null
           diagnostic_completed_at?: string | null
           exam_type?: string
           grade_level?: string | null
