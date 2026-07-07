@@ -61,7 +61,14 @@ function Gallows({ wrong, dying }: { wrong: number; dying: boolean }) {
           <stop offset="0%" stopColor={sky1} />
           <stop offset="100%" stopColor={sky2} />
         </linearGradient>
-        <style>{`@keyframes hangman-sway { 0%,100%{transform:rotate(-6deg);} 50%{transform:rotate(6deg);} }`}</style>
+        <style>{`
+          @keyframes hangman-sway { 0%,100%{transform:rotate(-6deg);} 50%{transform:rotate(6deg);} }
+          @keyframes hangman-drop {
+            0%   { transform: translateY(-14px); }
+            60%  { transform: translateY(4px); }
+            100% { transform: translateY(0); }
+          }
+        `}</style>
       </defs>
       <rect x="0" y="0" width="160" height="160" fill="url(#hm-sky)" rx="6" />
       <rect x="0" y="158" width="160" height="22" fill={grass} />
