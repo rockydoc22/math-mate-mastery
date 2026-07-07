@@ -72,6 +72,7 @@ const Auth = () => {
   });
   const [isParent, setIsParent] = useState(false);
   const [numKids, setNumKids] = useState("1");
+  const [dateOfBirth, setDateOfBirth] = useState("");
 
   const handleGoogleSignIn = async () => {
     setGoogleLoading(true);
@@ -156,7 +157,10 @@ const Auth = () => {
           form.email, 
           form.password, 
           form.username,
-          isParent ? { isParent: true, numKids: parseInt(numKids) } : undefined
+          {
+            ...(isParent ? { isParent: true, numKids: parseInt(numKids) } : {}),
+            ...(dateOfBirth ? { dateOfBirth } : {}),
+          }
         );
         if (error) throw error;
         
