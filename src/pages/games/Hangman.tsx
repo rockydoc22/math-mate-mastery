@@ -12,6 +12,36 @@ import { funWordItems, pickMixed } from "@/data/funContentPool";
 const MAX_WRONG = 6;
 const LETTERS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("");
 
+function Gallows({ wrong }: { wrong: number }) {
+  const stroke = "hsl(var(--foreground))";
+  const rope = "hsl(var(--muted-foreground))";
+  return (
+    <svg viewBox="0 0 160 180" className="w-40 h-44 mx-auto" aria-label={`Hangman: ${wrong} of ${MAX_WRONG} wrong`}>
+      {/* Gallows structure — always visible */}
+      <line x1="10" y1="170" x2="150" y2="170" stroke={stroke} strokeWidth="3" strokeLinecap="round" />
+      <line x1="40" y1="170" x2="40" y2="10" stroke={stroke} strokeWidth="3" strokeLinecap="round" />
+      <line x1="40" y1="10" x2="110" y2="10" stroke={stroke} strokeWidth="3" strokeLinecap="round" />
+      <line x1="110" y1="10" x2="110" y2="30" stroke={rope} strokeWidth="2" strokeLinecap="round" />
+      {/* Body parts appear as wrong guesses accumulate */}
+      {wrong >= 1 && <circle cx="110" cy="45" r="14" fill="none" stroke={stroke} strokeWidth="3" />}
+      {wrong >= 2 && <line x1="110" y1="59" x2="110" y2="110" stroke={stroke} strokeWidth="3" strokeLinecap="round" />}
+      {wrong >= 3 && <line x1="110" y1="72" x2="88" y2="95" stroke={stroke} strokeWidth="3" strokeLinecap="round" />}
+      {wrong >= 4 && <line x1="110" y1="72" x2="132" y2="95" stroke={stroke} strokeWidth="3" strokeLinecap="round" />}
+      {wrong >= 5 && <line x1="110" y1="110" x2="90" y2="140" stroke={stroke} strokeWidth="3" strokeLinecap="round" />}
+      {wrong >= 6 && (
+        <>
+          <line x1="110" y1="110" x2="130" y2="140" stroke={stroke} strokeWidth="3" strokeLinecap="round" />
+          {/* X eyes on defeat */}
+          <line x1="104" y1="41" x2="109" y2="46" stroke={stroke} strokeWidth="1.5" strokeLinecap="round" />
+          <line x1="109" y1="41" x2="104" y2="46" stroke={stroke} strokeWidth="1.5" strokeLinecap="round" />
+          <line x1="111" y1="41" x2="116" y2="46" stroke={stroke} strokeWidth="1.5" strokeLinecap="round" />
+          <line x1="116" y1="41" x2="111" y2="46" stroke={stroke} strokeWidth="1.5" strokeLinecap="round" />
+        </>
+      )}
+    </svg>
+  );
+}
+
 function pickWord() {
   const satPool = SAT_VOCAB_WORDS.filter((w) => /^[A-Za-z]+$/.test(w.word) && w.word.length >= 4);
   const funPool = funWordItems(4);
@@ -75,6 +105,7 @@ export default function Hangman() {
         ) : (
           <>
             <Card className="p-6 text-center space-y-4">
+              <Gallows wrong={wrong.length} />
               <p className="text-sm text-muted-foreground italic">Hint: {word.definition}</p>
               <div className="text-3xl sm:text-4xl font-mono font-bold tracking-[0.4em]">
                 {upper.split("").map((l, i) => (
