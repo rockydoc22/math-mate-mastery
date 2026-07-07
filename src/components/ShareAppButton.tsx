@@ -11,7 +11,7 @@ import { toast } from "sonner";
 import { useParentalGate } from "@/hooks/useParentalGate";
 
 const APP_URL = "https://math-mate-mastery.lovable.app";
-const SHARE_TEXT = "Check out AlphaOmega — one app, every test! Free SAT, ACT, AP, GED & K-12 prep with 15,000+ questions, AI practice & multiplayer battles!";
+const SHARE_TEXT = "Check out ΑΩ — one app, every test! Free SAT, ACT, AP, GED & K-12 prep with 15,000+ questions, AI practice & multiplayer battles!";
 
 export const ShareAppButton = () => {
   const [copied, setCopied] = useState(false);
@@ -32,7 +32,7 @@ export const ShareAppButton = () => {
   const handleNativeShare = () => guard(async () => {
     if (navigator.share) {
       try {
-        await navigator.share({ title: "AlphaOmega — Every Test, Every Time", text: SHARE_TEXT, url: APP_URL });
+        await navigator.share({ title: "ΑΩ — Every Test, Every Time", text: SHARE_TEXT, url: APP_URL });
       } catch {}
     } else {
       handleCopyLink();

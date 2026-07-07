@@ -556,7 +556,7 @@ const Home = () => {
             <div className="flex items-center gap-3">
               <Route className="w-6 h-6 text-primary shrink-0" />
               <div className="flex-1 min-w-0">
-                <div className="font-bold text-sm">Your AlphaOmega Path</div>
+                <div className="font-bold text-sm">Your ΑΩ Path</div>
                 <div className="text-xs text-muted-foreground truncate">
                   Pick a test, set a date, get a personalized plan — free.
                 </div>
@@ -665,10 +665,10 @@ const Home = () => {
           </Button>
         </Link>
 
-        {/* AlphaOmega Path entry */}
+        {/* ΑΩ Path entry */}
         <Link to="/path" className="mb-4 block">
           <Button size="lg" variant="outline" className="w-full font-bold gap-2 border-primary/40 hover:bg-primary/10">
-            🎯 Build my AlphaOmega Path — pick your test
+            🎯 Build my ΑΩ Path — pick your test
           </Button>
         </Link>
 
