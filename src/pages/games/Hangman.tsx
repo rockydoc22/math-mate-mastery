@@ -211,13 +211,27 @@ export default function Hangman() {
         </div>
 
         {finished && !dying ? (
-          <GameResults
-            title={finished.win ? "You got it!" : "Out of guesses"}
-            pointsEarned={finished.points}
-            totalPoints={stats.totalPoints}
-            detail={`Word: ${word.word} — ${word.definition}`}
-            onPlayAgain={restart}
-          />
+          <div className="space-y-3">
+            {!finished.win && (
+              <div className="rounded-xl overflow-hidden bg-gradient-to-b from-sky-200 to-sky-50 flex justify-center">
+                <img
+                  src={hangmanLostPng}
+                  alt="Cartoon hangman scene"
+                  width={768}
+                  height={768}
+                  loading="lazy"
+                  className="w-56 h-56 object-contain animate-fade-in"
+                />
+              </div>
+            )}
+            <GameResults
+              title={finished.win ? "You got it!" : "Out of guesses"}
+              pointsEarned={finished.points}
+              totalPoints={stats.totalPoints}
+              detail={`Word: ${word.word} — ${word.definition}`}
+              onPlayAgain={restart}
+            />
+          </div>
         ) : (
           <>
             <Card className="p-6 text-center space-y-4">
