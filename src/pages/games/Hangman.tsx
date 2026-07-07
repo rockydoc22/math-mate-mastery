@@ -21,31 +21,40 @@ function Gallows({ wrong, dying }: { wrong: number; dying: boolean }) {
   const wood = "hsl(28 45% 38%)";
   const woodDark = "hsl(24 55% 24%)";
   const rope = "hsl(38 55% 55%)";
-  const skin = "hsl(30 70% 78%)";
-  const shirt = "hsl(210 80% 55%)";
-  const pants = "hsl(220 25% 30%)";
-  const shoe = "hsl(0 0% 12%)";
+  const skin = "hsl(30 55% 70%)";
+  const mask = "hsl(0 0% 8%)";           // black ski mask
+  const stripeDark = "hsl(0 0% 12%)";    // prisoner-stripe dark
+  const stripeLight = "hsl(40 15% 92%)"; // prisoner-stripe light
+  const pants = "hsl(0 0% 15%)";
+  const shoe = "hsl(0 0% 5%)";
   const grass = "hsl(140 45% 55%)";
   const sky1 = "hsl(205 90% 82%)";
   const sky2 = "hsl(200 90% 92%)";
-  const hair = "hsl(28 55% 28%)";
-  const cap  = "hsl(0 75% 52%)";
-  const capDark = "hsl(0 75% 38%)";
+  const angry = "hsl(0 70% 40%)";
 
   const face = !dying ? (
     <>
-      <circle cx="106" cy="44" r="1.4" fill={woodDark} />
-      <circle cx="114" cy="44" r="1.4" fill={woodDark} />
-      <path d="M105 51 Q110 53 115 51" stroke={woodDark} strokeWidth="1.2" fill="none" strokeLinecap="round" />
+      {/* angry eyebrows */}
+      <path d="M101 41 L107 43" stroke={angry} strokeWidth="1.6" strokeLinecap="round" />
+      <path d="M119 41 L113 43" stroke={angry} strokeWidth="1.6" strokeLinecap="round" />
+      {/* mean squinting eyes */}
+      <circle cx="105" cy="46" r="1.5" fill="white" />
+      <circle cx="115" cy="46" r="1.5" fill="white" />
+      <circle cx="105" cy="46" r="0.9" fill={woodDark} />
+      <circle cx="115" cy="46" r="0.9" fill={woodDark} />
+      {/* scowl mouth */}
+      <path d="M105 53 Q110 51 115 53" stroke={woodDark} strokeWidth="1.2" fill="none" strokeLinecap="round" />
     </>
   ) : (
     <>
-      <line x1="103" y1="42" x2="108" y2="47" stroke={woodDark} strokeWidth="1.6" strokeLinecap="round" />
-      <line x1="108" y1="42" x2="103" y2="47" stroke={woodDark} strokeWidth="1.6" strokeLinecap="round" />
-      <line x1="112" y1="42" x2="117" y2="47" stroke={woodDark} strokeWidth="1.6" strokeLinecap="round" />
-      <line x1="117" y1="42" x2="112" y2="47" stroke={woodDark} strokeWidth="1.6" strokeLinecap="round" />
-      <line x1="105" y1="52" x2="115" y2="52" stroke={woodDark} strokeWidth="1.2" strokeLinecap="round" />
-      <path d="M108 52 Q110 57 112 52 Z" fill="hsl(0 65% 55%)" stroke={woodDark} strokeWidth="0.6" />
+      {/* Xs over closed eyes */}
+      <line x1="102" y1="43" x2="108" y2="49" stroke="white" strokeWidth="1.8" strokeLinecap="round" />
+      <line x1="108" y1="43" x2="102" y2="49" stroke="white" strokeWidth="1.8" strokeLinecap="round" />
+      <line x1="112" y1="43" x2="118" y2="49" stroke="white" strokeWidth="1.8" strokeLinecap="round" />
+      <line x1="118" y1="43" x2="112" y2="49" stroke="white" strokeWidth="1.8" strokeLinecap="round" />
+      {/* limp tongue */}
+      <line x1="106" y1="54" x2="114" y2="54" stroke={woodDark} strokeWidth="1.2" strokeLinecap="round" />
+      <path d="M109 54 Q111 58 113 54 Z" fill="hsl(0 65% 55%)" stroke={woodDark} strokeWidth="0.6" />
     </>
   );
 
@@ -90,27 +99,57 @@ function Gallows({ wrong, dying }: { wrong: number; dying: boolean }) {
         {wrong >= 1 && (
           <>
             <line x1="110" y1="10" x2="110" y2="32" stroke={rope} strokeWidth="2.5" strokeLinecap="round" />
+            {/* Head (skin) */}
             <circle cx="110" cy="46" r="13" fill={skin} stroke={woodDark} strokeWidth="1.5" />
+            {/* Noose knot */}
             <circle cx="110" cy="34" r="3" fill={rope} stroke={woodDark} strokeWidth="0.8" />
-            {/* Brown hair tuft peeking under the cap brim */}
-            <path d="M99 43 Q104 38 110 39 Q116 38 121 43 L120 46 Q110 43 100 46 Z" fill={hair} />
-            {/* Red baseball cap */}
-            <path d="M97 40 Q110 26 123 40 L123 43 L97 43 Z" fill={cap} stroke={capDark} strokeWidth="1" strokeLinejoin="round" />
-            {/* Cap brim */}
-            <path d="M118 43 Q126 44 128 47 L126 48 Q122 46 118 46 Z" fill={capDark} />
-            {/* Cap button */}
-            <circle cx="110" cy="30" r="1.4" fill={capDark} />
+            {/* Black ski mask covering the top half of the head + a wide slit for the face */}
+            <path
+              d="M97 46 Q97 33 110 33 Q123 33 123 46 L123 49 Q118 48 110 48 Q102 48 97 49 Z"
+              fill={mask}
+              stroke={woodDark}
+              strokeWidth="0.8"
+              strokeLinejoin="round"
+            />
+            {/* Mask lower flap under mouth */}
+            <path
+              d="M99 55 Q110 58 121 55 L121 58 Q110 60 99 58 Z"
+              fill={mask}
+              stroke={woodDark}
+              strokeWidth="0.6"
+            />
+            {/* Slight ear stubs */}
+            <ellipse cx="97" cy="46" rx="1.4" ry="2.2" fill={skin} stroke={woodDark} strokeWidth="0.6" />
+            <ellipse cx="123" cy="46" rx="1.4" ry="2.2" fill={skin} stroke={woodDark} strokeWidth="0.6" />
             {face}
           </>
         )}
         {wrong >= 2 && (
-          <path d="M100 60 L120 60 L124 105 L96 105 Z" fill={shirt} stroke={woodDark} strokeWidth="1.2" strokeLinejoin="round" />
+          <>
+            {/* Prisoner-stripe torso: light base + dark horizontal stripes clipped to the shirt shape */}
+            <clipPath id="hm-torso">
+              <path d="M100 60 L120 60 L124 105 L96 105 Z" />
+            </clipPath>
+            <path d="M100 60 L120 60 L124 105 L96 105 Z" fill={stripeLight} stroke={woodDark} strokeWidth="1.2" strokeLinejoin="round" />
+            <g clipPath="url(#hm-torso)">
+              <rect x="94" y="64" width="32" height="4" fill={stripeDark} />
+              <rect x="94" y="74" width="32" height="4" fill={stripeDark} />
+              <rect x="94" y="84" width="32" height="4" fill={stripeDark} />
+              <rect x="94" y="94" width="32" height="4" fill={stripeDark} />
+            </g>
+          </>
         )}
         {wrong >= 3 && (
-          <path d="M100 64 Q86 78 84 96" stroke={shirt} strokeWidth="6" fill="none" strokeLinecap="round" />
+          <>
+            <path d="M100 64 Q86 78 84 96" stroke={stripeLight} strokeWidth="6" fill="none" strokeLinecap="round" />
+            <path d="M100 64 Q86 78 84 96" stroke={stripeDark} strokeWidth="1.4" fill="none" strokeLinecap="round" strokeDasharray="3 4" />
+          </>
         )}
         {wrong >= 4 && (
-          <path d="M120 64 Q134 78 136 96" stroke={shirt} strokeWidth="6" fill="none" strokeLinecap="round" />
+          <>
+            <path d="M120 64 Q134 78 136 96" stroke={stripeLight} strokeWidth="6" fill="none" strokeLinecap="round" />
+            <path d="M120 64 Q134 78 136 96" stroke={stripeDark} strokeWidth="1.4" fill="none" strokeLinecap="round" strokeDasharray="3 4" />
+          </>
         )}
         {wrong >= 5 && (
           <>
