@@ -12,6 +12,20 @@ import { useGameSounds } from "@/hooks/useGameSounds";
 
 const ROUND_SECONDS = 30;
 
+// Building emoji unlocked as the player's streak climbs.
+// Every correct answer adds one to the skyline; higher streaks earn taller buildings.
+function nextBuilding(streak: number): string {
+  const pool =
+    streak >= 10
+      ? ["🏰", "🏯", "🕌", "🗼", "🏛️"]
+      : streak >= 6
+      ? ["🏬", "🏢", "🏨", "🏛️", "⛲"]
+      : streak >= 3
+      ? ["🏢", "🏫", "🏪", "🌳", "🚦"]
+      : ["🏠", "🏡", "🌳", "🌲", "🚗"];
+  return pool[Math.floor(Math.random() * pool.length)];
+}
+
 interface Prompt {
   id: string;
   text: string;
@@ -59,6 +73,9 @@ export default function RapidFireSwipe() {
   const [reviews, setReviews] = useState<Review[]>([]);
   const [flash, setFlash] = useState<"ok" | "no" | null>(null);
   const [finished, setFinished] = useState<null | { points: number }>(null);
+  // Growing skyline built up as the player answers.
+  const [city, setCity] = useState<string[]>([]);
+  const [clouds, setClouds] = useState<number>(0);
   const finishedRef = useRef(false);
 
   useEffect(() => {
@@ -89,12 +106,14 @@ export default function RapidFireSwipe() {
         setStreak((s) => {
           const ns = s + 1;
           setBestStreak((b) => Math.max(b, ns));
+          setCity((c) => [...c, nextBuilding(ns)]);
           return ns;
         });
         playCorrect();
       } else {
         setWrong((n) => n + 1);
         setStreak(0);
+        setClouds((c) => Math.min(c + 1, 6));
         playWrong();
       }
       // Only log incorrect prompts in the review (limit to 8 to keep card tidy).
@@ -131,6 +150,43 @@ export default function RapidFireSwipe() {
     setBestStreak(0);
     setReviews([]);
     setFinished(null);
+    setCity([]);
+    setClouds(0);
+  };
+
+  // Small reusable skyline strip. Grows left-to-right, wraps to a new row.
+  const Skyline = ({ scale = "sm" }: { scale?: "sm" | "lg" }) => {
+    const buildingSize = scale === "lg" ? "text-4xl sm:text-5xl" : "text-2xl";
+    const groundHeight = scale === "lg" ? "h-24 sm:h-28" : "h-16";
+    const cloudSize = scale === "lg" ? "text-2xl" : "text-lg";
+    return (
+      <div className="relative rounded-xl overflow-hidden border-2 border-sky-200/60 bg-gradient-to-b from-sky-200 via-sky-100 to-emerald-100 dark:from-sky-950 dark:via-sky-900 dark:to-emerald-950/40">
+        {/* Sun */}
+        <div className="absolute top-1.5 right-2 w-6 h-6 rounded-full bg-yellow-300 shadow-[0_0_18px_6px_rgba(253,224,71,0.55)]" />
+        {/* Clouds — one per wrong answer, capped */}
+        <div className={`absolute top-1 left-2 flex gap-1 ${cloudSize} opacity-80`}>
+          {Array.from({ length: clouds }).map((_, i) => (
+            <span key={i} className="animate-fade-in">☁️</span>
+          ))}
+        </div>
+        {/* Buildings sitting on the ground */}
+        <div className={`flex items-end flex-wrap gap-0.5 px-2 pt-8 pb-1 ${groundHeight}`}>
+          {city.length === 0 ? (
+            <span className="text-xs text-muted-foreground/70 italic pb-2">
+              Answer correctly to build your city…
+            </span>
+          ) : (
+            city.map((b, i) => (
+              <span key={i} className={`${buildingSize} leading-none animate-scale-in`} style={{ animationDelay: `${Math.min(i * 20, 200)}ms` }}>
+                {b}
+              </span>
+            ))
+          )}
+        </div>
+        {/* Grass strip */}
+        <div className="h-1.5 bg-emerald-500/70" />
+      </div>
+    );
   };
 
   return (
@@ -144,6 +200,14 @@ export default function RapidFireSwipe() {
 
         {finished ? (
           <div className="space-y-3">
+            <Card className="p-3 space-y-2">
+              <p className="text-sm font-semibold text-center">Your city 🏙️</p>
+              <Skyline scale="lg" />
+              <p className="text-xs text-center text-muted-foreground">
+                {city.length} building{city.length === 1 ? "" : "s"} built · {clouds} storm cloud
+                {clouds === 1 ? "" : "s"} rolled in
+              </p>
+            </Card>
             <GameResults
               title="Time's up!"
               pointsEarned={finished.points}
@@ -177,12 +241,14 @@ export default function RapidFireSwipe() {
               <p>• <strong>+10 pts</strong> per correct answer</p>
               <p>• <strong>+5 bonus</strong> per point of your best streak 🔥</p>
               <p>• Wrong answers don't cost points, but break your streak</p>
+              <p>• Every right answer adds a building to your skyline 🏙️</p>
               <p>• At the end, we'll show what you missed</p>
             </div>
             <Button size="lg" className="w-full" onClick={() => setStarted(true)}>Start</Button>
           </Card>
         ) : (
           <>
+            <Skyline />
             <div className="flex items-center justify-between text-sm">
               <span className={`tabular-nums ${timeLeft <= 5 ? "text-destructive font-bold animate-pulse" : ""}`}>
                 ⏱️ <strong>{timeLeft}s</strong>

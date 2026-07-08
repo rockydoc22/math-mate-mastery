@@ -34,7 +34,7 @@ export default function GameZone() {
 
   return (
     <>
-      <SEO title="Game Zone — Fun SAT Vocab Games" description="Play SAT vocab hangman, wordle, emoji decode, and rapid-fire quizzes. No sign-up required." path="/games" />
+      <SEO title="Game Zone — Fun SAT Vocab Games" description="Play SAT vocab hangman, vocab poker, emoji decode, and rapid-fire quizzes. No sign-up required." path="/games" />
       <div className="min-h-screen bg-gradient-to-br from-background via-primary/5 to-accent/5">
         <GameZoneHeader />
         <main className="max-w-2xl mx-auto p-4 space-y-6">
