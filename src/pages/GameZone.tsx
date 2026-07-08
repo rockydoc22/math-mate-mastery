@@ -10,7 +10,7 @@ import { X } from "lucide-react";
 
 const games = [
   { id: "hangman", to: "/games/hangman", emoji: "🪢", name: "Word Hangman", hook: "Guess the SAT word letter by letter", color: "bg-blue-500/10" },
-  { id: "wordle", to: "/games/wordle", emoji: "🟩", name: "Wordle Vocab", hook: "5-letter SAT words, 6 guesses", color: "bg-emerald-500/10" },
+  { id: "poker", to: "/games/poker", emoji: "🃏", name: "Vocab Poker", hook: "Play the right card. Fold the bluffs.", color: "bg-emerald-500/10" },
   { id: "emoji", to: "/games/emoji", emoji: "🧩", name: "Emoji Decode", hook: "Crack the emoji-clue vocab word", color: "bg-purple-500/10" },
   { id: "rapid", to: "/games/rapid", emoji: "⚡", name: "Rapid Fire", hook: "60 seconds. True or false. Go.", color: "bg-orange-500/10" },
 ] as const;
@@ -34,7 +34,7 @@ export default function GameZone() {
 
   return (
     <>
-      <SEO title="Game Zone — Fun SAT Vocab Games" description="Play SAT vocab hangman, wordle, emoji decode, and rapid-fire quizzes. No sign-up required." path="/games" />
+      <SEO title="Game Zone — Fun SAT Vocab Games" description="Play SAT vocab hangman, vocab poker, emoji decode, and rapid-fire quizzes. No sign-up required." path="/games" />
       <div className="min-h-screen bg-gradient-to-br from-background via-primary/5 to-accent/5">
         <GameZoneHeader />
         <main className="max-w-2xl mx-auto p-4 space-y-6">

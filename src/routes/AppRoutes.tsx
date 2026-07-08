@@ -57,7 +57,7 @@ const APStudy = lazy(() => import("@/pages/APStudy"));
 const Arcade = lazy(() => import("@/pages/Arcade"));
 const GameZone = lazy(() => import("@/pages/GameZone"));
 const GameHangman = lazy(() => import("@/pages/games/Hangman"));
-const GameWordle = lazy(() => import("@/pages/games/WordleVocab"));
+const GameVocabPoker = lazy(() => import("@/pages/games/VocabPoker"));
 const GameEmoji = lazy(() => import("@/pages/games/EmojiDecode"));
 const GameRapid = lazy(() => import("@/pages/games/RapidFireSwipe"));
 const InstallApp = lazy(() => import("@/pages/InstallApp"));
@@ -164,7 +164,9 @@ const AppRoutes = () => (
       <Route path="/home" element={<Home />} />
       <Route path="/games" element={<GameZone />} />
       <Route path="/games/hangman" element={<GameHangman />} />
-      <Route path="/games/wordle" element={<GameWordle />} />
+      <Route path="/games/poker" element={<GameVocabPoker />} />
+      {/* Legacy path from Wordle Vocab — redirects handled by router below */}
+      <Route path="/games/wordle" element={<GameVocabPoker />} />
       <Route path="/games/emoji" element={<GameEmoji />} />
       <Route path="/games/rapid" element={<GameRapid />} />
       <Route path="/landing" element={<LandingPage />} />
