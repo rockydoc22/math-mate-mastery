@@ -181,48 +181,26 @@ const BattleLobby = () => {
 
     setIsJoining(true);
     try {
-      const { data: room, error: roomError } = await supabase
-        .from("battle_rooms")
-        .select("*, battle_participants(count)")
-        .eq("room_code", joinCode.toUpperCase())
-        .single();
+      const { data, error } = await supabase.rpc("join_battle_by_code", {
+        _code: joinCode.toUpperCase(),
+      });
 
-      if (roomError || !room) {
+      if (error) {
+        const msg = error.message || "";
+        if (msg.includes("room_not_found")) toast.error("Room not found");
+        else if (msg.includes("battle_already_started")) toast.error("This battle has already started");
+        else if (msg.includes("room_full")) toast.error("Room is full");
+        else toast.error("Failed to join battle room");
+        return;
+      }
+
+      const room = Array.isArray(data) ? data[0] : data;
+      if (!room) {
         toast.error("Room not found");
         return;
       }
 
-      if (room.status !== "waiting") {
-        toast.error("This battle has already started");
-        return;
-      }
-
-      const participantCount = (room.battle_participants as any)?.[0]?.count || 0;
-      if (participantCount >= room.max_players) {
-        toast.error("Room is full");
-        return;
-      }
-
-      // Check if already joined
-      const { data: existing } = await supabase
-        .from("battle_participants")
-        .select()
-        .eq("room_id", room.id)
-        .eq("user_id", user.id)
-        .single();
-
-      if (!existing) {
-        const { error: joinError } = await supabase
-          .from("battle_participants")
-          .insert({
-            room_id: room.id,
-            user_id: user.id,
-          });
-
-        if (joinError) throw joinError;
-      }
-
-      navigate(`/battle/${joinCode.toUpperCase()}`);
+      navigate(`/battle/${room.room_code}`);
     } catch (error: any) {
       console.error("Error joining room:", error);
       toast.error("Failed to join battle room");

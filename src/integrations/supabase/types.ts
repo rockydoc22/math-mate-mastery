@@ -2001,6 +2001,22 @@ export type Database = {
         Args: { _room_id: string; _user_id: string }
         Returns: boolean
       }
+      join_battle_by_code: {
+        Args: { _code: string }
+        Returns: {
+          already_joined: boolean
+          battle_mode: string
+          host_id: string
+          id: string
+          is_solo: boolean
+          max_players: number
+          question_count: number
+          room_code: string
+          status: string
+          subject: string
+          time_limit_seconds: number
+        }[]
+      }
       join_classroom_by_code: {
         Args: { _code: string }
         Returns: {
