@@ -143,7 +143,7 @@ export default function VocabPoker() {
     (didWin: boolean, finalChips: number) => {
       // Score = chips earned above starting bank, plus a streak bonus.
       const points = Math.max(0, finalChips - START_CHIPS) + bestStreak * 5;
-      recordRound("wordle", points, wins, didWin);
+      recordRound("poker", points, wins, didWin);
       if (didWin) playVictory();
       else playDefeat();
       setFinished({ win: didWin, points });
