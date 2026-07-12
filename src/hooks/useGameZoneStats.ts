@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useState } from "react";
 import { useAuth } from "@/hooks/useAuth";
 
-export type GameId = "hangman" | "wordle" | "emoji" | "rapid";
+export type GameId = "hangman" | "poker" | "emoji" | "rapid";
 
 export interface GameZoneStats {
   totalPoints: number;
@@ -18,7 +18,7 @@ const EMPTY: GameZoneStats = {
   roundsPlayed: 0,
   perGame: {
     hangman: { high: 0, played: 0 },
-    wordle: { high: 0, played: 0 },
+    poker: { high: 0, played: 0 },
     emoji: { high: 0, played: 0 },
     rapid: { high: 0, played: 0 },
   },
