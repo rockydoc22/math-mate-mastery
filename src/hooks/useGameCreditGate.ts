@@ -7,12 +7,14 @@ import { useDailyCredits } from "@/hooks/useDailyCredits";
  * When credits run out, `blocked` flips true — the game page should render
  * <OutOfCreditsCard /> instead of gameplay.
  */
-export function useGameCreditGate() {
+export function useGameCreditGate(options?: { spendOnMount?: boolean }) {
+  const spendOnMount = options?.spendOnMount ?? true;
   const { trySpend, isEmpty } = useDailyCredits();
   const spentOnce = useRef(false);
   const [blocked, setBlocked] = useState(false);
 
   useEffect(() => {
+    if (!spendOnMount) return;
     if (spentOnce.current) return;
     spentOnce.current = true;
     if (!trySpend()) setBlocked(true);
