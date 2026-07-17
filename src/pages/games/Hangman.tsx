@@ -6,6 +6,9 @@ import { ArrowLeft } from "lucide-react";
 import { GameZoneHeader } from "@/components/games/GameZoneHeader";
 import { GameResults } from "@/components/games/GameResults";
 import { useGameZoneStats } from "@/hooks/useGameZoneStats";
+import { useGameCreditGate } from "@/hooks/useGameCreditGate";
+import { OutOfCreditsCard } from "@/components/games/OutOfCreditsCard";
+import { DailyCreditsBadge } from "@/components/games/DailyCreditsBadge";
 import { funWordItems, pickMixed } from "@/data/funContentPool";
 import { getGameVocabPool, FOCUS_LABEL, GameVocabWord } from "@/data/gameVocabPools";
 import { useLearnerContext } from "@/hooks/useLearnerContext";
@@ -178,6 +181,7 @@ export default function Hangman() {
   const { stats, recordRound } = useGameZoneStats();
   const { examType, dateOfBirth } = useLearnerContext();
   const { playCorrect, playWrong, playVictory, playDefeat } = useGameSounds();
+  const { blocked, spendForRestart } = useGameCreditGate();
   const { focus, words: studyPool } = useMemo(
     () => getGameVocabPool({ examType, dateOfBirth, minLength: 4 }),
     [examType, dateOfBirth]
@@ -230,6 +234,7 @@ export default function Hangman() {
   }, []);
 
   const restart = () => {
+    if (!spendForRestart()) return;
     if (dyingTimer.current) { window.clearTimeout(dyingTimer.current); dyingTimer.current = null; }
     setDying(false);
     setWord(pickWord(studyPool));
@@ -244,12 +249,17 @@ export default function Hangman() {
         <div className="flex items-center gap-2">
           <Link to="/games"><Button variant="ghost" size="sm"><ArrowLeft className="w-4 h-4" /></Button></Link>
           <h1 className="text-xl font-bold">🪢 Word Hangman</h1>
-          <span className="ml-auto text-[10px] uppercase tracking-wider text-muted-foreground bg-muted px-2 py-0.5 rounded-full">
-            {FOCUS_LABEL[focus]} words
-          </span>
+          <div className="ml-auto flex items-center gap-2">
+            <DailyCreditsBadge />
+            <span className="text-[10px] uppercase tracking-wider text-muted-foreground bg-muted px-2 py-0.5 rounded-full">
+              {FOCUS_LABEL[focus]} words
+            </span>
+          </div>
         </div>
 
-        {finished && !dying ? (
+        {blocked ? (
+          <OutOfCreditsCard />
+        ) : finished && !dying ? (
           <div className="space-y-3">
             {!finished.win && (
               <div className="rounded-xl overflow-hidden bg-gradient-to-b from-sky-200 to-sky-50 flex justify-center">
