@@ -6,6 +6,9 @@ import { ArrowLeft, HelpCircle, Coins, Sparkles } from "lucide-react";
 import { GameZoneHeader } from "@/components/games/GameZoneHeader";
 import { GameResults } from "@/components/games/GameResults";
 import { useGameZoneStats } from "@/hooks/useGameZoneStats";
+import { useGameCreditGate } from "@/hooks/useGameCreditGate";
+import { OutOfCreditsCard } from "@/components/games/OutOfCreditsCard";
+import { DailyCreditsBadge } from "@/components/games/DailyCreditsBadge";
 import { useGameSounds } from "@/hooks/useGameSounds";
 import { SAT_VOCAB_WORDS } from "@/data/satVocab";
 
@@ -64,6 +67,7 @@ type Feedback = {
 export default function VocabPoker() {
   const { stats, recordRound } = useGameZoneStats();
   const { playCorrect, playWrong, playVictory, playDefeat } = useGameSounds();
+  const { blocked, spendForRestart } = useGameCreditGate();
 
   const [showHelp, setShowHelp] = useState(() => {
     try {
@@ -212,6 +216,7 @@ export default function VocabPoker() {
   };
 
   const restart = () => {
+    if (!spendForRestart()) return;
     setDeck(buildDeck());
     setHand([]);
     setPromptCard(null);
@@ -250,8 +255,13 @@ export default function VocabPoker() {
           >
             <HelpCircle className="w-4 h-4" />
           </Button>
+          <DailyCreditsBadge />
         </div>
 
+        {blocked ? (
+          <OutOfCreditsCard />
+        ) : (
+          <>
         {showHelp && (
           <Card className="p-4 space-y-2 text-sm bg-primary/5 border-primary/30">
             <p className="font-semibold">How to play Vocab Poker</p>
@@ -367,6 +377,8 @@ export default function VocabPoker() {
             <p className="text-[11px] text-center text-muted-foreground">
               Not every definition matches your hand. Reading a bluff pays off.
             </p>
+          </>
+        )}
           </>
         )}
       </main>
