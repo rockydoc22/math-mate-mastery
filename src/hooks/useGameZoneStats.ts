@@ -33,7 +33,17 @@ function readStats(userId?: string | null): GameZoneStats {
     const raw = localStorage.getItem(storageKey(userId));
     if (!raw) return { ...EMPTY, perGame: { ...EMPTY.perGame } };
     const parsed = JSON.parse(raw);
-    return { ...EMPTY, ...parsed, perGame: { ...EMPTY.perGame, ...(parsed.perGame ?? {}) } };
+    const mergedPerGame = { ...EMPTY.perGame, ...(parsed.perGame ?? {}) };
+    // One-time migration: the game formerly known as "wordle" was renamed to "poker".
+    // Carry the old stats over so returning players don't see their progress reset to 0.
+    const legacyWordle = (parsed.perGame ?? {}).wordle;
+    if (legacyWordle && (!parsed.perGame?.poker || (parsed.perGame.poker.high === 0 && parsed.perGame.poker.played === 0))) {
+      mergedPerGame.poker = {
+        high: Math.max(mergedPerGame.poker.high, legacyWordle.high ?? 0),
+        played: Math.max(mergedPerGame.poker.played, legacyWordle.played ?? 0),
+      };
+    }
+    return { ...EMPTY, ...parsed, perGame: mergedPerGame };
   } catch {
     return { ...EMPTY, perGame: { ...EMPTY.perGame } };
   }
