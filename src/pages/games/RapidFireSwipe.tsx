@@ -6,6 +6,9 @@ import { ArrowLeft, Check, X, Flame } from "lucide-react";
 import { GameZoneHeader } from "@/components/games/GameZoneHeader";
 import { GameResults } from "@/components/games/GameResults";
 import { useGameZoneStats } from "@/hooks/useGameZoneStats";
+import { useGameCreditGate } from "@/hooks/useGameCreditGate";
+import { OutOfCreditsCard } from "@/components/games/OutOfCreditsCard";
+import { DailyCreditsBadge } from "@/components/games/DailyCreditsBadge";
 import { rapidFireFacts } from "@/data/satFactsRapidFire";
 import { buildFunRapidPrompt } from "@/data/funContentPool";
 import { useGameSounds } from "@/hooks/useGameSounds";
@@ -63,6 +66,9 @@ function buildPrompt(): Prompt {
 export default function RapidFireSwipe() {
   const { stats, recordRound } = useGameZoneStats();
   const { playCorrect, playWrong, playVictory } = useGameSounds();
+  // Rapid Fire has an explicit Start button, so we don't spend on mount —
+  // we spend when the player actually starts the timer.
+  const { blocked, spendForRestart } = useGameCreditGate({ spendOnMount: false });
   const [started, setStarted] = useState(false);
   const [prompt, setPrompt] = useState<Prompt>(() => buildPrompt());
   const [timeLeft, setTimeLeft] = useState(ROUND_SECONDS);
@@ -140,6 +146,7 @@ export default function RapidFireSwipe() {
   }, [answer]);
 
   const restart = () => {
+    if (!spendForRestart()) return;
     finishedRef.current = false;
     setStarted(true);
     setPrompt(buildPrompt());
@@ -152,6 +159,11 @@ export default function RapidFireSwipe() {
     setFinished(null);
     setCity([]);
     setClouds(0);
+  };
+
+  const beginFirstRound = () => {
+    if (!spendForRestart()) return;
+    setStarted(true);
   };
 
   // Small reusable skyline strip. Grows left-to-right, wraps to a new row.
@@ -196,9 +208,12 @@ export default function RapidFireSwipe() {
         <div className="flex items-center gap-2">
           <Link to="/games"><Button variant="ghost" size="sm"><ArrowLeft className="w-4 h-4" /></Button></Link>
           <h1 className="text-xl font-bold">⚡ Rapid Fire</h1>
+          <DailyCreditsBadge className="ml-auto" />
         </div>
 
-        {finished ? (
+        {blocked ? (
+          <OutOfCreditsCard />
+        ) : finished ? (
           <div className="space-y-3">
             <Card className="p-3 space-y-2">
               <p className="text-sm font-semibold text-center">Your city 🏙️</p>
@@ -244,7 +259,7 @@ export default function RapidFireSwipe() {
               <p>• Every right answer adds a building to your skyline 🏙️</p>
               <p>• At the end, we'll show what you missed</p>
             </div>
-            <Button size="lg" className="w-full" onClick={() => setStarted(true)}>Start</Button>
+            <Button size="lg" className="w-full" onClick={beginFirstRound}>Start</Button>
           </Card>
         ) : (
           <>

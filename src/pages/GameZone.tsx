@@ -3,6 +3,8 @@ import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { GameZoneHeader } from "@/components/games/GameZoneHeader";
 import { useGameZoneStats, BADGE_TIERS } from "@/hooks/useGameZoneStats";
+import { useDailyCredits, DAILY_CREDIT_MAX } from "@/hooks/useDailyCredits";
+import { DailyCreditsBadge } from "@/components/games/DailyCreditsBadge";
 import { SEO } from "@/components/SEO";
 import { useAuth } from "@/hooks/useAuth";
 import { useEffect, useState } from "react";
@@ -17,6 +19,7 @@ const games = [
 
 export default function GameZone() {
   const { stats, earnedBadges } = useGameZoneStats();
+  const { credits, isEmpty, resetsInLabel } = useDailyCredits();
   const { user } = useAuth();
   const [showSignupBanner, setShowSignupBanner] = useState(false);
 
@@ -40,7 +43,15 @@ export default function GameZone() {
         <main className="max-w-2xl mx-auto p-4 space-y-6">
           <div className="text-center pt-2">
             <h1 className="text-3xl sm:text-4xl font-bold">🎮 Game Zone</h1>
-            <p className="text-sm text-muted-foreground mt-1">Learn SAT words the fun way. Unlimited plays, no timer pressure.</p>
+            <p className="text-sm text-muted-foreground mt-1">Learn SAT words the fun way. {DAILY_CREDIT_MAX} free plays every day.</p>
+            <div className="mt-3 flex justify-center">
+              <DailyCreditsBadge />
+            </div>
+            {isEmpty && (
+              <p className="text-xs text-destructive mt-2">
+                You're out of plays for today — resets in {resetsInLabel()}.
+              </p>
+            )}
           </div>
 
           {showSignupBanner && (
@@ -60,21 +71,32 @@ export default function GameZone() {
           <div className="grid gap-4 sm:grid-cols-2">
             {games.map((g) => {
               const gameStats = stats.perGame[g.id as keyof typeof stats.perGame];
-              return (
-                <Link key={g.id} to={g.to}>
-                  <Card className={`p-5 ${g.color} hover:scale-[1.02] transition-transform cursor-pointer border border-border/50 h-full`}>
-                    <div className="flex items-start gap-3">
-                      <span className="text-4xl">{g.emoji}</span>
-                      <div className="flex-1 min-w-0">
-                        <h3 className="font-bold text-foreground">{g.name}</h3>
-                        <p className="text-xs text-muted-foreground mt-0.5">{g.hook}</p>
-                        <div className="text-xs text-muted-foreground mt-2">
-                          High: <span className="font-semibold text-foreground tabular-nums">{gameStats.high}</span> · Played {gameStats.played}
-                        </div>
+              const disabled = isEmpty;
+              const content = (
+                <Card className={`p-5 ${g.color} ${disabled ? "opacity-60" : "hover:scale-[1.02] cursor-pointer"} transition-transform border border-border/50 h-full`}>
+                  <div className="flex items-start gap-3">
+                    <span className="text-4xl">{g.emoji}</span>
+                    <div className="flex-1 min-w-0">
+                      <h3 className="font-bold text-foreground">{g.name}</h3>
+                      <p className="text-xs text-muted-foreground mt-0.5">{g.hook}</p>
+                      <div className="text-xs text-muted-foreground mt-2">
+                        High: <span className="font-semibold text-foreground tabular-nums">{gameStats.high}</span> · Played {gameStats.played}
                       </div>
+                      {disabled && (
+                        <div className="text-[11px] text-destructive font-semibold mt-1">
+                          Out of daily plays
+                        </div>
+                      )}
                     </div>
-                  </Card>
-                </Link>
+                  </div>
+                </Card>
+              );
+              return (
+                disabled ? (
+                  <div key={g.id} aria-disabled="true">{content}</div>
+                ) : (
+                  <Link key={g.id} to={g.to}>{content}</Link>
+                )
               );
             })}
           </div>
