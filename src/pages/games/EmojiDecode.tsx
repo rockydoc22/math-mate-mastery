@@ -7,6 +7,9 @@ import { Input } from "@/components/ui/input";
 import { GameZoneHeader } from "@/components/games/GameZoneHeader";
 import { GameResults } from "@/components/games/GameResults";
 import { useGameZoneStats } from "@/hooks/useGameZoneStats";
+import { useGameCreditGate } from "@/hooks/useGameCreditGate";
+import { OutOfCreditsCard } from "@/components/games/OutOfCreditsCard";
+import { DailyCreditsBadge } from "@/components/games/DailyCreditsBadge";
 import { funEmojiItems, pickMixed } from "@/data/funContentPool";
 
 interface Puzzle {
@@ -53,6 +56,7 @@ function pick(exclude?: string) {
 
 export default function EmojiDecode() {
   const { stats, recordRound } = useGameZoneStats();
+  const { blocked, spendForRestart } = useGameCreditGate();
   const [showHelp, setShowHelp] = useState(() => {
     try { return localStorage.getItem("aoEmojiSeenHelp") !== "1"; } catch { return true; }
   });
@@ -107,6 +111,7 @@ export default function EmojiDecode() {
   };
 
   const restart = () => {
+    if (!spendForRestart()) return;
     setPuzzle(pick());
     setGuess("");
     setLives(3);
@@ -124,8 +129,10 @@ export default function EmojiDecode() {
           <Button variant="ghost" size="sm" className="ml-auto" onClick={() => setShowHelp((v) => !v)} aria-label="How to play">
             <HelpCircle className="w-4 h-4" />
           </Button>
+          <DailyCreditsBadge />
         </div>
 
+        {blocked ? <OutOfCreditsCard /> : (<>
         {showHelp && (
           <Card className="p-4 space-y-2 text-sm bg-primary/5 border-primary/30">
             <p className="font-semibold">How to play Emoji Decode</p>
@@ -215,6 +222,7 @@ export default function EmojiDecode() {
             <Button className="w-full" onClick={submit} disabled={!guess.trim()}>Submit</Button>
           </Card>
         )}
+        </>)}
       </main>
     </div>
   );
