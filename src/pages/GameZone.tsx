@@ -5,16 +5,18 @@ import { GameZoneHeader } from "@/components/games/GameZoneHeader";
 import { useGameZoneStats, BADGE_TIERS } from "@/hooks/useGameZoneStats";
 import { useDailyCredits, DAILY_CREDIT_MAX } from "@/hooks/useDailyCredits";
 import { DailyCreditsBadge } from "@/components/games/DailyCreditsBadge";
+import { AchievementsPanel } from "@/components/games/AchievementsPanel";
 import { SEO } from "@/components/SEO";
 import { useAuth } from "@/hooks/useAuth";
 import { useEffect, useState } from "react";
-import { X } from "lucide-react";
+import { X, Trophy, Users } from "lucide-react";
 
 const games = [
   { id: "hangman", to: "/games/hangman", emoji: "🪢", name: "Word Hangman", hook: "Guess the SAT word letter by letter", color: "bg-blue-500/10" },
   { id: "poker", to: "/games/poker", emoji: "🃏", name: "Vocab Poker", hook: "Play the right card. Fold the bluffs.", color: "bg-emerald-500/10" },
   { id: "emoji", to: "/games/emoji", emoji: "🧩", name: "Emoji Decode", hook: "Crack the emoji-clue vocab word", color: "bg-purple-500/10" },
   { id: "rapid", to: "/games/rapid", emoji: "⚡", name: "Rapid Fire", hook: "60 seconds. True or false. Go.", color: "bg-orange-500/10" },
+  { id: "anagram", to: "/games/anagram", emoji: "🔤", name: "Anagram Sprint", hook: "Unscramble words against the clock", color: "bg-pink-500/10" },
 ] as const;
 
 export default function GameZone() {
@@ -52,6 +54,18 @@ export default function GameZone() {
                 You're out of plays for today — resets in {resetsInLabel()}.
               </p>
             )}
+            <div className="flex flex-wrap justify-center gap-2 mt-3">
+              <Link to="/games/leaderboard">
+                <Badge variant="outline" className="cursor-pointer hover:bg-primary/10">
+                  <Trophy className="w-3 h-3 mr-1" /> Leaderboard
+                </Badge>
+              </Link>
+              <Link to="/parent-controls">
+                <Badge variant="outline" className="cursor-pointer hover:bg-primary/10">
+                  <Users className="w-3 h-3 mr-1" /> Parent Controls
+                </Badge>
+              </Link>
+            </div>
           </div>
 
           {showSignupBanner && (
@@ -70,7 +84,7 @@ export default function GameZone() {
 
           <div className="grid gap-4 sm:grid-cols-2">
             {games.map((g) => {
-              const gameStats = stats.perGame[g.id as keyof typeof stats.perGame];
+              const gameStats = stats.perGame[g.id] ?? { high: 0, played: 0 };
               const disabled = isEmpty;
               const content = (
                 <Card className={`p-5 ${g.color} ${disabled ? "opacity-60" : "hover:scale-[1.02] cursor-pointer"} transition-transform border border-border/50 h-full`}>
@@ -100,6 +114,8 @@ export default function GameZone() {
               );
             })}
           </div>
+
+          <AchievementsPanel />
 
           <Card className="p-4">
             <h2 className="font-semibold mb-3 text-sm">🏆 Badges</h2>
