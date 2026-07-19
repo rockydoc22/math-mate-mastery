@@ -2,13 +2,15 @@ import { useCallback, useEffect, useState } from "react";
 import { useAuth } from "@/hooks/useAuth";
 
 export type GameId = "hangman" | "poker" | "emoji" | "rapid";
+export type LoggedGameId = GameId | "anagram";
 
 export interface GameZoneStats {
   totalPoints: number;
   streak: number;
   bestStreak: number;
   roundsPlayed: number;
-  perGame: Record<GameId, { high: number; played: number }>;
+  perGame: Record<string, { high: number; played: number; bestTimeMs?: number }>;
+  fastestSolveMs?: number;
 }
 
 const EMPTY: GameZoneStats = {
@@ -21,11 +23,42 @@ const EMPTY: GameZoneStats = {
     poker: { high: 0, played: 0 },
     emoji: { high: 0, played: 0 },
     rapid: { high: 0, played: 0 },
+    anagram: { high: 0, played: 0 },
   },
 };
 
 function storageKey(userId?: string | null) {
   return `aoGameStats:${userId ?? "anon"}`;
+}
+
+function logKey(userId?: string | null) {
+  return `aoGameLog:${userId ?? "anon"}`;
+}
+
+export type UsageLogEntry = { date: string; game: string; points: number };
+
+function todayISO() {
+  const d = new Date();
+  return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`;
+}
+
+export function readUsageLog(userId?: string | null): UsageLogEntry[] {
+  try {
+    const raw = localStorage.getItem(logKey(userId));
+    if (!raw) return [];
+    const arr = JSON.parse(raw);
+    return Array.isArray(arr) ? arr.slice(-500) : [];
+  } catch {
+    return [];
+  }
+}
+
+function appendUsageLog(userId: string | null | undefined, entry: UsageLogEntry) {
+  try {
+    const prev = readUsageLog(userId);
+    prev.push(entry);
+    localStorage.setItem(logKey(userId), JSON.stringify(prev.slice(-500)));
+  } catch {}
 }
 
 function readStats(userId?: string | null): GameZoneStats {
@@ -71,25 +104,34 @@ export function useGameZoneStats() {
   }, [uid]);
 
   const recordRound = useCallback(
-    (game: GameId, pointsEarned: number, correctCount: number, wasCorrect: boolean) => {
+    (game: LoggedGameId, pointsEarned: number, correctCount: number, wasCorrect: boolean, solveTimeMs?: number) => {
       setStats((prev) => {
         const nextStreak = wasCorrect && correctCount > 0 ? prev.streak + correctCount : 0;
         const perGamePrev = prev.perGame[game] ?? { high: 0, played: 0 };
+        const fastest = solveTimeMs && wasCorrect
+          ? Math.min(prev.fastestSolveMs ?? Number.POSITIVE_INFINITY, solveTimeMs)
+          : prev.fastestSolveMs;
+        const perGameBestTime = solveTimeMs && wasCorrect
+          ? Math.min(perGamePrev.bestTimeMs ?? Number.POSITIVE_INFINITY, solveTimeMs)
+          : perGamePrev.bestTimeMs;
         const next: GameZoneStats = {
           ...prev,
           totalPoints: prev.totalPoints + Math.max(0, pointsEarned),
           streak: nextStreak,
           bestStreak: Math.max(prev.bestStreak, nextStreak),
           roundsPlayed: prev.roundsPlayed + 1,
+          fastestSolveMs: Number.isFinite(fastest as number) ? (fastest as number) : undefined,
           perGame: {
             ...prev.perGame,
             [game]: {
               high: Math.max(perGamePrev.high, pointsEarned),
               played: perGamePrev.played + 1,
+              bestTimeMs: Number.isFinite(perGameBestTime as number) ? (perGameBestTime as number) : undefined,
             },
           },
         };
         writeStats(uid, next);
+        appendUsageLog(uid, { date: todayISO(), game, points: Math.max(0, pointsEarned) });
         return next;
       });
     },

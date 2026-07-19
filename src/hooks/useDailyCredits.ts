@@ -6,6 +6,28 @@ import { useAuth } from "@/hooks/useAuth";
 // this is a gentle daily cap for the fun games, not a billing meter.
 export const DAILY_CREDIT_MAX = 10;
 
+// Parents can override the per-teen daily play limit from Parent Controls.
+// Stored per uid at `aoDailyCreditLimit:{uid}`.
+export function getDailyLimit(uid?: string | null): number {
+  try {
+    const raw = localStorage.getItem(`aoDailyCreditLimit:${uid ?? "anon"}`);
+    if (!raw) return DAILY_CREDIT_MAX;
+    const n = Math.max(0, Math.min(50, Math.round(Number(raw))));
+    return Number.isFinite(n) ? n : DAILY_CREDIT_MAX;
+  } catch {
+    return DAILY_CREDIT_MAX;
+  }
+}
+
+export function setDailyLimit(uid: string | null | undefined, limit: number) {
+  try {
+    const n = Math.max(0, Math.min(50, Math.round(limit)));
+    localStorage.setItem(`aoDailyCreditLimit:${uid ?? "anon"}`, String(n));
+    // Notify listeners in this tab
+    window.dispatchEvent(new CustomEvent("aoDailyLimitChanged", { detail: { uid, limit: n } }));
+  } catch {}
+}
+
 type Stored = { date: string; remaining: number };
 
 function todayStr() {
@@ -21,17 +43,18 @@ function storageKey(uid?: string | null) {
 }
 
 function read(uid?: string | null): Stored {
+  const max = getDailyLimit(uid);
   try {
     const raw = localStorage.getItem(storageKey(uid));
-    if (!raw) return { date: todayStr(), remaining: DAILY_CREDIT_MAX };
+    if (!raw) return { date: todayStr(), remaining: max };
     const parsed = JSON.parse(raw) as Stored;
-    if (parsed.date !== todayStr()) return { date: todayStr(), remaining: DAILY_CREDIT_MAX };
+    if (parsed.date !== todayStr()) return { date: todayStr(), remaining: max };
     return {
       date: parsed.date,
-      remaining: Math.max(0, Math.min(DAILY_CREDIT_MAX, Number(parsed.remaining) || 0)),
+      remaining: Math.max(0, Math.min(max, Number(parsed.remaining) || 0)),
     };
   } catch {
-    return { date: todayStr(), remaining: DAILY_CREDIT_MAX };
+    return { date: todayStr(), remaining: max };
   }
 }
 
@@ -51,9 +74,24 @@ export function useDailyCredits() {
   const { user } = useAuth();
   const uid = user?.id ?? null;
   const [state, setState] = useState<Stored>(() => read(uid));
+  const [max, setMax] = useState<number>(() => getDailyLimit(uid));
 
   useEffect(() => {
     setState(read(uid));
+    setMax(getDailyLimit(uid));
+  }, [uid]);
+
+  // Refresh when the parent updates the limit for this teen.
+  useEffect(() => {
+    const onChange = (e: Event) => {
+      const detail = (e as CustomEvent).detail as { uid?: string | null } | undefined;
+      if (detail?.uid === uid) {
+        setMax(getDailyLimit(uid));
+        setState(read(uid));
+      }
+    };
+    window.addEventListener("aoDailyLimitChanged", onChange);
+    return () => window.removeEventListener("aoDailyLimitChanged", onChange);
   }, [uid]);
 
   // Auto-refresh at local midnight so the counter resets without a reload.
@@ -85,7 +123,7 @@ export function useDailyCredits() {
 
   return {
     credits: state.remaining,
-    max: DAILY_CREDIT_MAX,
+    max,
     isEmpty: state.remaining <= 0,
     trySpend,
     resetsInLabel,
