@@ -60,6 +60,9 @@ const GameHangman = lazy(() => import("@/pages/games/Hangman"));
 const GameVocabPoker = lazy(() => import("@/pages/games/VocabPoker"));
 const GameEmoji = lazy(() => import("@/pages/games/EmojiDecode"));
 const GameRapid = lazy(() => import("@/pages/games/RapidFireSwipe"));
+const GameAnagram = lazy(() => import("@/pages/games/AnagramSprint"));
+const GameLeaderboard = lazy(() => import("@/pages/GameLeaderboard"));
+const ParentControls = lazy(() => import("@/pages/ParentControls"));
 const InstallApp = lazy(() => import("@/pages/InstallApp"));
 const FrenchCompetition = lazy(() => import("@/pages/FrenchCompetition"));
 const FrenchLightning = lazy(() => import("@/pages/FrenchLightning"));
@@ -169,6 +172,9 @@ const AppRoutes = () => (
       <Route path="/games/wordle" element={<GameVocabPoker />} />
       <Route path="/games/emoji" element={<GameEmoji />} />
       <Route path="/games/rapid" element={<GameRapid />} />
+      <Route path="/games/anagram" element={<GameAnagram />} />
+      <Route path="/games/leaderboard" element={<GameLeaderboard />} />
+      <Route path="/parent-controls" element={<ParentControls />} />
       <Route path="/landing" element={<LandingPage />} />
       <Route path="/quiz" element={<ProtectedRoute><Quiz /></ProtectedRoute>} />
       <Route path="/math" element={<ProtectedRoute><MathQuiz /></ProtectedRoute>} />
