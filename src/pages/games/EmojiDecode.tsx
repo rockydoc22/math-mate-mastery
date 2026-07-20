@@ -56,7 +56,7 @@ function pick(exclude?: string) {
 
 export default function EmojiDecode() {
   const { stats, recordRound } = useGameZoneStats();
-  const { blocked, spendForRestart } = useGameCreditGate();
+  const { blocked, spendForRestart, spendOnce } = useGameCreditGate();
   const [showHelp, setShowHelp] = useState(() => {
     try { return localStorage.getItem("aoEmojiSeenHelp") !== "1"; } catch { return true; }
   });
@@ -83,6 +83,7 @@ export default function EmojiDecode() {
     if (feedback === "won" || feedback === "lost") return;
     const norm = guess.trim().toLowerCase();
     if (!norm) return;
+    if (!spendOnce()) return;
     if (norm === puzzle.answer) {
       const earn = 20 + lives * 10;
       const total = points + earn;
@@ -101,7 +102,7 @@ export default function EmojiDecode() {
       }
       setGuess("");
     }
-  }, [guess, puzzle, lives, feedback, points, recordRound]);
+  }, [guess, puzzle, lives, feedback, points, recordRound, spendOnce]);
 
   const nextPuzzle = () => {
     setPuzzle(pick(puzzle.answer));
