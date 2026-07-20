@@ -2,13 +2,15 @@ import { useCallback, useEffect, useRef, useState } from "react";
 import { useDailyCredits } from "@/hooks/useDailyCredits";
 
 /**
- * Starts one play on mount (spending 1 daily credit). Exposes a
- * `spendForRestart` helper for "Play Again" buttons that also costs 1.
- * When credits run out, `blocked` flips true — the game page should render
- * <OutOfCreditsCard /> instead of gameplay.
+ * Manages daily-credit spend for a single game session. By default nothing
+ * is spent until the player actually acts: call `spendOnce()` from the first
+ * meaningful interaction (first guess, first card played, Start button, etc.).
+ * `spendForRestart()` is for "Play Again" — it always spends 1. When the
+ * player has no credits left, `blocked` flips true and the game page should
+ * render <OutOfCreditsCard /> instead of gameplay.
  */
 export function useGameCreditGate(options?: { spendOnMount?: boolean }) {
-  const spendOnMount = options?.spendOnMount ?? true;
+  const spendOnMount = options?.spendOnMount ?? false;
   const { trySpend, isEmpty } = useDailyCredits();
   const spentOnce = useRef(false);
   const [blocked, setBlocked] = useState(false);
@@ -28,5 +30,15 @@ export function useGameCreditGate(options?: { spendOnMount?: boolean }) {
     return false;
   }, [trySpend]);
 
-  return { blocked, spendForRestart, isEmpty };
+  /** Spend exactly one credit the first time it's called for this mount.
+   *  Returns true if the player may proceed, false if they're out of plays. */
+  const spendOnce = useCallback((): boolean => {
+    if (spentOnce.current) return !blocked;
+    spentOnce.current = true;
+    if (trySpend()) return true;
+    setBlocked(true);
+    return false;
+  }, [trySpend, blocked]);
+
+  return { blocked, spendForRestart, spendOnce, isEmpty };
 }
