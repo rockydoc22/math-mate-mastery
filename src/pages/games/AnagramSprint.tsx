@@ -42,6 +42,9 @@ export default function AnagramSprint() {
   const [timeLeft, setTimeLeft] = useState(60);
   const [flash, setFlash] = useState<"idle" | "ok" | "no">("idle");
   const startedAt = useRef<number>(0);
+  // Track fastest solve within the sprint; logged once at time-up so a single
+  // sprint counts as ONE round played, not one per solved word.
+  const bestSolveMs = useRef<number | undefined>(undefined);
 
   const cfg = DIFFICULTY_CONFIG[difficulty];
   const best = stats.perGame.anagram?.high ?? 0;
@@ -61,6 +64,7 @@ export default function AnagramSprint() {
     setSolved(0);
     setTimeLeft(cfg.seconds);
     setPhase("playing");
+    bestSolveMs.current = undefined;
     const w = pickWord(difficulty);
     setWord(w);
     setScrambled(scramble(w));
@@ -87,7 +91,7 @@ export default function AnagramSprint() {
   useEffect(() => {
     if (phase === "playing" && timeLeft === 0) {
       setPhase("done");
-      recordRound("anagram", score, solved, solved > 0);
+      recordRound("anagram", score, solved, solved > 0, bestSolveMs.current);
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [timeLeft, phase]);
@@ -102,8 +106,13 @@ export default function AnagramSprint() {
       setScore((s) => s + earn);
       setSolved((n) => n + 1);
       setFlash("ok");
-      // Log fastest-solve on the winning word so achievements/leaderboards see it.
-      recordRound("anagram", 0, 0, true, Math.round(solveMs));
+      // Remember the best (lowest) solve for the end-of-sprint recordRound.
+      // We deliberately do NOT call recordRound per solve — that would inflate
+      // play counts, spam the usage log, and reset the answer streak.
+      const rounded = Math.round(solveMs);
+      if (bestSolveMs.current === undefined || rounded < bestSolveMs.current) {
+        bestSolveMs.current = rounded;
+      }
       window.setTimeout(() => setFlash("idle"), 200);
       nextWord();
     } else {
