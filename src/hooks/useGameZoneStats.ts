@@ -85,6 +85,7 @@ function readStats(userId?: string | null): GameZoneStats {
 function writeStats(userId: string | null | undefined, stats: GameZoneStats) {
   try {
     localStorage.setItem(storageKey(userId), JSON.stringify(stats));
+    window.dispatchEvent(new CustomEvent("aoGameStatsChanged", { detail: { uid: userId ?? null } }));
   } catch {}
 }
 
@@ -101,6 +102,26 @@ export function useGameZoneStats() {
 
   useEffect(() => {
     setStats(readStats(uid));
+  }, [uid]);
+
+  // Live-sync across hook instances (same tab) and across tabs (storage event).
+  useEffect(() => {
+    const onChanged = (e: Event) => {
+      const detail = (e as CustomEvent).detail as { uid?: string | null } | undefined;
+      if (detail && detail.uid !== uid) return;
+      setStats(readStats(uid));
+    };
+    const onStorage = (e: StorageEvent) => {
+      if (e.key === storageKey(uid) || e.key === logKey(uid)) {
+        setStats(readStats(uid));
+      }
+    };
+    window.addEventListener("aoGameStatsChanged", onChanged);
+    window.addEventListener("storage", onStorage);
+    return () => {
+      window.removeEventListener("aoGameStatsChanged", onChanged);
+      window.removeEventListener("storage", onStorage);
+    };
   }, [uid]);
 
   const recordRound = useCallback(
