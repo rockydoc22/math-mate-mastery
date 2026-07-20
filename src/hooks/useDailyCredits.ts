@@ -61,6 +61,7 @@ function read(uid?: string | null): Stored {
 function write(uid: string | null | undefined, s: Stored) {
   try {
     localStorage.setItem(storageKey(uid), JSON.stringify(s));
+    window.dispatchEvent(new CustomEvent("aoDailyCreditsChanged", { detail: { uid } }));
   } catch {}
 }
 
@@ -92,6 +93,29 @@ export function useDailyCredits() {
     };
     window.addEventListener("aoDailyLimitChanged", onChange);
     return () => window.removeEventListener("aoDailyLimitChanged", onChange);
+  }, [uid]);
+
+  // Keep every hook instance (badge, gate, hub) in sync when credits are
+  // spent or reset from any other instance in this tab or another tab.
+  useEffect(() => {
+    const onCreditsChanged = (e: Event) => {
+      const detail = (e as CustomEvent).detail as { uid?: string | null } | undefined;
+      if (detail && detail.uid !== uid) return;
+      setState(read(uid));
+    };
+    const onStorage = (e: StorageEvent) => {
+      if (e.key === storageKey(uid)) setState(read(uid));
+      if (e.key === `aoDailyCreditLimit:${uid ?? "anon"}`) {
+        setMax(getDailyLimit(uid));
+        setState(read(uid));
+      }
+    };
+    window.addEventListener("aoDailyCreditsChanged", onCreditsChanged);
+    window.addEventListener("storage", onStorage);
+    return () => {
+      window.removeEventListener("aoDailyCreditsChanged", onCreditsChanged);
+      window.removeEventListener("storage", onStorage);
+    };
   }, [uid]);
 
   // Auto-refresh at local midnight so the counter resets without a reload.
