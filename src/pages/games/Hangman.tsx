@@ -181,7 +181,7 @@ export default function Hangman() {
   const { stats, recordRound } = useGameZoneStats();
   const { examType, dateOfBirth } = useLearnerContext();
   const { playCorrect, playWrong, playVictory, playDefeat } = useGameSounds();
-  const { blocked, spendForRestart } = useGameCreditGate();
+  const { blocked, spendForRestart, spendOnce } = useGameCreditGate();
   const { focus, words: studyPool } = useMemo(
     () => getGameVocabPool({ examType, dateOfBirth, minLength: 4 }),
     [examType, dateOfBirth]
@@ -201,6 +201,8 @@ export default function Hangman() {
   const guess = useCallback(
     (letter: string) => {
       if (finished || dying || guessed.has(letter)) return;
+      // Spend the 1 daily play on the first guess — never on mount.
+      if (!spendOnce()) return;
       const next = new Set(guessed);
       next.add(letter);
       setGuessed(next);
@@ -226,7 +228,7 @@ export default function Hangman() {
         playWrong();
       }
     },
-    [finished, dying, guessed, upper, recordRound, playCorrect, playWrong, playVictory, playDefeat]
+    [finished, dying, guessed, upper, recordRound, playCorrect, playWrong, playVictory, playDefeat, spendOnce]
   );
 
   useEffect(() => () => {
