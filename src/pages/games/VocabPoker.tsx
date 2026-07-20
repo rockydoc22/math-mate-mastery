@@ -67,7 +67,7 @@ type Feedback = {
 export default function VocabPoker() {
   const { stats, recordRound } = useGameZoneStats();
   const { playCorrect, playWrong, playVictory, playDefeat } = useGameSounds();
-  const { blocked, spendForRestart } = useGameCreditGate();
+  const { blocked, spendForRestart, spendOnce } = useGameCreditGate();
 
   const [showHelp, setShowHelp] = useState(() => {
     try {
@@ -206,12 +206,14 @@ export default function VocabPoker() {
 
   const playCard = (card: VocabCard) => {
     if (!promptCard || feedback || finished) return;
+    if (!spendOnce()) return;
     const correct = isMatch && card.id === promptCard.id;
     applyOutcome(correct ? "correctPlay" : "wrongPlay", card.id);
   };
 
   const fold = () => {
     if (!promptCard || feedback || finished) return;
+    if (!spendOnce()) return;
     applyOutcome(isMatch ? "wrongFold" : "correctFold", null);
   };
 
