@@ -1,4 +1,5 @@
 import { useState, useCallback } from "react";
+import { SEO } from "@/components/SEO";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
