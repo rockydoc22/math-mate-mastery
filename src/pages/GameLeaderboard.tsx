@@ -1,4 +1,5 @@
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
+import { SEO } from "@/components/SEO";
 import { Link } from "react-router-dom";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -6,6 +7,7 @@ import { ArrowLeft, Trophy } from "lucide-react";
 import { GameZoneHeader } from "@/components/games/GameZoneHeader";
 import { useGameZoneStats } from "@/hooks/useGameZoneStats";
 import { useAuth } from "@/hooks/useAuth";
+import { supabase } from "@/integrations/supabase/client";
 
 // Seed rivals so a solo learner still sees a real leaderboard.
 // These are display-only; a Cloud-backed leaderboard can replace this later
@@ -35,11 +37,52 @@ const SEED_RIVALS = [
 
 const PAGE_SIZE = 10;
 
+interface RemoteRow {
+  user_id: string;
+  points: number;
+  streak: number;
+  name: string;
+  emoji: string;
+}
+
 export default function GameLeaderboard() {
   const { stats } = useGameZoneStats();
   const { user } = useAuth();
   const [sortBy, setSortBy] = useState<"points" | "streak">("points");
   const [page, setPage] = useState(0);
+  const [remote, setRemote] = useState<RemoteRow[]>([]);
+  const [loading, setLoading] = useState(true);
+
+  // Pull real players from Cloud, merged with seed rivals so a fresh
+  // leaderboard still feels populated on day one.
+  useEffect(() => {
+    let cancelled = false;
+    (async () => {
+      const { data } = await supabase
+        .from("game_zone_stats")
+        .select("user_id, total_points, best_streak")
+        .order("total_points", { ascending: false })
+        .limit(100);
+      if (cancelled) return;
+      const rows = data ?? [];
+      const ids = rows.map((r) => r.user_id);
+      const { data: profiles } = ids.length
+        ? await supabase.from("profiles").select("id, username, avatar_emoji").in("id", ids)
+        : { data: [] as { id: string; username: string | null; avatar_emoji: string | null }[] };
+      const pmap = new Map((profiles ?? []).map((p) => [p.id, p]));
+      setRemote(
+        rows.map((r) => ({
+          user_id: r.user_id,
+          points: r.total_points ?? 0,
+          streak: r.best_streak ?? 0,
+          name: pmap.get(r.user_id)?.username ?? "Player",
+          emoji: pmap.get(r.user_id)?.avatar_emoji ?? "🎯",
+        }))
+      );
+      setLoading(false);
+    })();
+    return () => { cancelled = true; };
+  }, []);
 
   const rows = useMemo(() => {
     const you = {
@@ -49,10 +92,18 @@ export default function GameLeaderboard() {
       streak: stats.bestStreak,
       isYou: true,
     };
-    const combined = [...SEED_RIVALS.map((r) => ({ ...r, isYou: false })), you];
+    const realOthers = remote
+      .filter((r) => r.user_id !== user?.id)
+      .map((r) => ({ name: r.name, emoji: r.emoji, points: r.points, streak: r.streak, isYou: false }));
+    const needSeeds = Math.max(0, 15 - realOthers.length);
+    const combined = [
+      ...realOthers,
+      ...SEED_RIVALS.slice(0, needSeeds).map((r) => ({ ...r, isYou: false })),
+      you,
+    ];
     combined.sort((a, b) => (sortBy === "points" ? b.points - a.points : b.streak - a.streak));
     return combined;
-  }, [user?.email, stats.totalPoints, stats.bestStreak, sortBy]);
+  }, [user?.email, user?.id, stats.totalPoints, stats.bestStreak, sortBy, remote]);
 
   const youRank = rows.findIndex((r) => r.isYou) + 1;
   const totalPages = Math.ceil(rows.length / PAGE_SIZE);
@@ -60,7 +111,8 @@ export default function GameLeaderboard() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-background via-primary/5 to-accent/5">
-      <GameZoneHeader />
+      <SEO title="Game Zone Leaderboard" description="See how your Game Zone points and streaks stack up. Sort by points or best streak." path="/games/leaderboard" />
+            <GameZoneHeader />
       <main className="max-w-lg mx-auto p-4 space-y-4">
         <div className="flex items-center gap-2">
           <Link to="/games"><Button variant="ghost" size="sm"><ArrowLeft className="w-4 h-4" /></Button></Link>

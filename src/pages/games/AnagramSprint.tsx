@@ -1,4 +1,5 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import { SEO } from "@/components/SEO";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
@@ -132,7 +133,8 @@ export default function AnagramSprint() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-background via-primary/5 to-accent/5">
-      <GameZoneHeader />
+      <SEO title="Anagram Sprint — Timed Word Game" description="Unscramble words against the clock. Easy, Medium, and Hard tiers with speed bonuses." path="/games/anagram" />
+            <GameZoneHeader />
       <main className="max-w-md mx-auto p-4 space-y-4">
         <div className="flex items-center gap-2">
           <Link to="/games"><Button variant="ghost" size="sm"><ArrowLeft className="w-4 h-4" /></Button></Link>

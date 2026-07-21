@@ -1,4 +1,5 @@
 import { useMemo, useState, useCallback, useEffect, useRef } from "react";
+import { SEO } from "@/components/SEO";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
@@ -246,7 +247,8 @@ export default function Hangman() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-background via-primary/5 to-accent/5">
-      <GameZoneHeader />
+      <SEO title="Word Hangman — SAT Vocab Game" description="Guess the vocab word letter by letter. Free daily plays. Tailored word lists for SAT, ACT, GRE, MCAT & more." path="/games/hangman" />
+            <GameZoneHeader />
       <main className="max-w-2xl mx-auto p-4 space-y-4">
         <div className="flex items-center gap-2">
           <Link to="/games"><Button variant="ghost" size="sm"><ArrowLeft className="w-4 h-4" /></Button></Link>

@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useState } from "react";
 import { useAuth } from "@/hooks/useAuth";
+import { supabase } from "@/integrations/supabase/client";
 
 export type GameId = "hangman" | "poker" | "emoji" | "rapid";
 export type LoggedGameId = GameId | "anagram";
@@ -89,6 +90,89 @@ function writeStats(userId: string | null | undefined, stats: GameZoneStats) {
   } catch {}
 }
 
+// Backend sync — signed-in users only. localStorage stays the source of truth
+// for the fast in-memory UI; the DB is the cross-device copy so a teen who
+// plays on phone and tablet sees the same points and streaks.
+async function pullRemoteStats(userId: string): Promise<GameZoneStats | null> {
+  const { data, error } = await supabase
+    .from("game_zone_stats")
+    .select("total_points, streak, best_streak, rounds_played, fastest_solve_ms, per_game")
+    .eq("user_id", userId)
+    .maybeSingle();
+  if (error || !data) return null;
+  return {
+    totalPoints: data.total_points ?? 0,
+    streak: data.streak ?? 0,
+    bestStreak: data.best_streak ?? 0,
+    roundsPlayed: data.rounds_played ?? 0,
+    fastestSolveMs: data.fastest_solve_ms ?? undefined,
+    perGame: { ...EMPTY.perGame, ...((data.per_game as GameZoneStats["perGame"]) ?? {}) },
+  };
+}
+
+function mergeStats(a: GameZoneStats, b: GameZoneStats): GameZoneStats {
+  const perGame: GameZoneStats["perGame"] = { ...a.perGame };
+  for (const key of Object.keys(b.perGame)) {
+    const av = perGame[key] ?? { high: 0, played: 0 };
+    const bv = b.perGame[key];
+    perGame[key] = {
+      high: Math.max(av.high, bv.high),
+      played: Math.max(av.played, bv.played),
+      bestTimeMs:
+        av.bestTimeMs != null && bv.bestTimeMs != null
+          ? Math.min(av.bestTimeMs, bv.bestTimeMs)
+          : av.bestTimeMs ?? bv.bestTimeMs,
+    };
+  }
+  const fastest =
+    a.fastestSolveMs != null && b.fastestSolveMs != null
+      ? Math.min(a.fastestSolveMs, b.fastestSolveMs)
+      : a.fastestSolveMs ?? b.fastestSolveMs;
+  return {
+    totalPoints: Math.max(a.totalPoints, b.totalPoints),
+    streak: Math.max(a.streak, b.streak),
+    bestStreak: Math.max(a.bestStreak, b.bestStreak),
+    roundsPlayed: Math.max(a.roundsPlayed, b.roundsPlayed),
+    fastestSolveMs: fastest,
+    perGame,
+  };
+}
+
+async function pushRemoteStats(userId: string, stats: GameZoneStats) {
+  try {
+    await supabase.from("game_zone_stats").upsert(
+      {
+        user_id: userId,
+        total_points: stats.totalPoints,
+        streak: stats.streak,
+        best_streak: stats.bestStreak,
+        rounds_played: stats.roundsPlayed,
+        fastest_solve_ms: stats.fastestSolveMs ?? null,
+        per_game: stats.perGame,
+      },
+      { onConflict: "user_id" }
+    );
+  } catch {}
+}
+
+async function insertRemoteRound(
+  userId: string,
+  game: string,
+  points: number,
+  correctCount: number,
+  solveTimeMs?: number
+) {
+  try {
+    await supabase.from("game_zone_rounds").insert({
+      user_id: userId,
+      game,
+      points,
+      correct_count: correctCount,
+      solve_time_ms: solveTimeMs ?? null,
+    });
+  } catch {}
+}
+
 export const BADGE_TIERS = [
   { threshold: 100, name: "Word Rookie", emoji: "🥉" },
   { threshold: 500, name: "Vocab Shark", emoji: "🥈" },
@@ -102,6 +186,27 @@ export function useGameZoneStats() {
 
   useEffect(() => {
     setStats(readStats(uid));
+  }, [uid]);
+
+  // On sign-in, pull remote stats, merge with local, and push the merged
+  // version back so a teen who played logged-out keeps those points.
+  useEffect(() => {
+    if (!uid) return;
+    let cancelled = false;
+    (async () => {
+      const remote = await pullRemoteStats(uid);
+      if (cancelled) return;
+      const local = readStats(uid);
+      const merged = remote ? mergeStats(local, remote) : local;
+      writeStats(uid, merged);
+      setStats(merged);
+      if (!remote || JSON.stringify(remote) !== JSON.stringify(merged)) {
+        await pushRemoteStats(uid, merged);
+      }
+    })();
+    return () => {
+      cancelled = true;
+    };
   }, [uid]);
 
   // Live-sync across hook instances (same tab) and across tabs (storage event).
@@ -153,6 +258,10 @@ export function useGameZoneStats() {
         };
         writeStats(uid, next);
         appendUsageLog(uid, { date: todayISO(), game, points: Math.max(0, pointsEarned) });
+        if (uid) {
+          void pushRemoteStats(uid, next);
+          void insertRemoteRound(uid, game, Math.max(0, pointsEarned), correctCount, solveTimeMs);
+        }
         return next;
       });
     },

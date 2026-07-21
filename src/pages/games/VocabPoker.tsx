@@ -1,4 +1,5 @@
 import { useCallback, useEffect, useMemo, useState } from "react";
+import { SEO } from "@/components/SEO";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
@@ -239,7 +240,8 @@ export default function VocabPoker() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-background via-primary/5 to-accent/5">
-      <GameZoneHeader />
+      <SEO title="Vocab Poker — Fun SAT Word Game" description="Play the right vocab card, fold the bluffs. Sharpen SAT, ACT, and GRE vocabulary in short daily rounds." path="/games/poker" />
+            <GameZoneHeader />
       <main className="max-w-2xl mx-auto p-4 space-y-4">
         <div className="flex items-center gap-2">
           <Link to="/games">
