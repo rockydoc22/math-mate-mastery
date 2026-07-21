@@ -900,6 +900,69 @@ export type Database = {
         }
         Relationships: []
       }
+      game_zone_rounds: {
+        Row: {
+          correct_count: number
+          created_at: string
+          game: string
+          id: string
+          points: number
+          solve_time_ms: number | null
+          user_id: string
+        }
+        Insert: {
+          correct_count?: number
+          created_at?: string
+          game: string
+          id?: string
+          points?: number
+          solve_time_ms?: number | null
+          user_id: string
+        }
+        Update: {
+          correct_count?: number
+          created_at?: string
+          game?: string
+          id?: string
+          points?: number
+          solve_time_ms?: number | null
+          user_id?: string
+        }
+        Relationships: []
+      }
+      game_zone_stats: {
+        Row: {
+          best_streak: number
+          fastest_solve_ms: number | null
+          per_game: Json
+          rounds_played: number
+          streak: number
+          total_points: number
+          updated_at: string
+          user_id: string
+        }
+        Insert: {
+          best_streak?: number
+          fastest_solve_ms?: number | null
+          per_game?: Json
+          rounds_played?: number
+          streak?: number
+          total_points?: number
+          updated_at?: string
+          user_id: string
+        }
+        Update: {
+          best_streak?: number
+          fastest_solve_ms?: number | null
+          per_game?: Json
+          rounds_played?: number
+          streak?: number
+          total_points?: number
+          updated_at?: string
+          user_id?: string
+        }
+        Relationships: []
+      }
       kid_profiles: {
         Row: {
           avatar_emoji: string | null
