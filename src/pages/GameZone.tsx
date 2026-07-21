@@ -6,6 +6,7 @@ import { useGameZoneStats, BADGE_TIERS } from "@/hooks/useGameZoneStats";
 import { useDailyCredits, DAILY_CREDIT_MAX } from "@/hooks/useDailyCredits";
 import { DailyCreditsBadge } from "@/components/games/DailyCreditsBadge";
 import { AchievementsPanel } from "@/components/games/AchievementsPanel";
+import { TestModePanel } from "@/components/games/TestModePanel";
 import { SEO } from "@/components/SEO";
 import { useAuth } from "@/hooks/useAuth";
 import { useEffect, useState } from "react";
@@ -116,6 +117,8 @@ export default function GameZone() {
           </div>
 
           <AchievementsPanel />
+
+          <TestModePanel />
 
           <Card className="p-4">
             <h2 className="font-semibold mb-3 text-sm">🏆 Badges</h2>
