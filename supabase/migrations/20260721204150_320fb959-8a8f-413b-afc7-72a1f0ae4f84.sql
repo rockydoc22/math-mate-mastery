@@ -1,0 +1,1 @@
+DROP POLICY IF EXISTS "Anyone can read game zone stats" ON public.game_zone_stats; CREATE POLICY "Authenticated users can read game zone stats" ON public.game_zone_stats FOR SELECT TO authenticated USING (true); REVOKE SELECT ON public.game_zone_stats FROM anon;
