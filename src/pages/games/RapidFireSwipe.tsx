@@ -204,7 +204,8 @@ export default function RapidFireSwipe() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-background via-primary/5 to-accent/5">
-      <GameZoneHeader />
+      <SEO title="Rapid Fire — True or False Vocab" description="30 seconds. True or false. Build your city with every correct answer." path="/games/rapid" />
+            <GameZoneHeader />
       <main className="max-w-md mx-auto p-4 space-y-4">
         <div className="flex items-center gap-2">
           <Link to="/games"><Button variant="ghost" size="sm"><ArrowLeft className="w-4 h-4" /></Button></Link>

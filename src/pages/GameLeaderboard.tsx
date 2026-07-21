@@ -61,7 +61,8 @@ export default function GameLeaderboard() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-background via-primary/5 to-accent/5">
-      <GameZoneHeader />
+      <SEO title="Game Zone Leaderboard" description="See how your Game Zone points and streaks stack up. Sort by points or best streak." path="/games/leaderboard" />
+            <GameZoneHeader />
       <main className="max-w-lg mx-auto p-4 space-y-4">
         <div className="flex items-center gap-2">
           <Link to="/games"><Button variant="ghost" size="sm"><ArrowLeft className="w-4 h-4" /></Button></Link>

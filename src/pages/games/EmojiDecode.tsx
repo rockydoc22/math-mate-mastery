@@ -123,7 +123,8 @@ export default function EmojiDecode() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-background via-primary/5 to-accent/5">
-      <GameZoneHeader />
+      <SEO title="Emoji Decode — Vocab Puzzle Game" description="Crack the emoji clue to reveal the vocab word. Quick daily puzzles with tailored word lists." path="/games/emoji" />
+            <GameZoneHeader />
       <main className="max-w-md mx-auto p-4 space-y-4">
         <div className="flex items-center gap-2">
           <Link to="/games"><Button variant="ghost" size="sm"><ArrowLeft className="w-4 h-4" /></Button></Link>
