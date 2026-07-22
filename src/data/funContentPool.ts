@@ -46,7 +46,13 @@ export type FunRapidPrompt = {
 };
 
 export function buildFunRapidPrompt(): FunRapidPrompt | null {
-  const item = funContentPool[Math.floor(Math.random() * funContentPool.length)];
+  // Rapid Fire should feel test-relevant. Exclude pop-culture categories
+  // (music/movies/slang) — those artists and slang words age out quickly
+  // and aren't useful test prep.
+  const eligible = funContentPool.filter(
+    (i) => !["music", "movies", "slang", "emoji_pop_culture"].includes(i.category)
+  );
+  const item = eligible[Math.floor(Math.random() * eligible.length)];
   if (!item) return null;
   if (item.type === "true_false") {
     return {
