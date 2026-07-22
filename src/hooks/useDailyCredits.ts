@@ -8,14 +8,24 @@ export const DAILY_CREDIT_MAX = 10;
 
 // Parents can override the per-teen daily play limit from Parent Controls.
 // Stored per uid at `aoDailyCreditLimit:{uid}`.
+// If a parent has NOT set a limit, play is unlimited (Infinity) — the daily
+// cap is opt-in via Parent Controls, not a default gate on every player.
+export function hasParentalLimit(uid?: string | null): boolean {
+  try {
+    return localStorage.getItem(`aoDailyCreditLimit:${uid ?? "anon"}`) !== null;
+  } catch {
+    return false;
+  }
+}
+
 export function getDailyLimit(uid?: string | null): number {
   try {
     const raw = localStorage.getItem(`aoDailyCreditLimit:${uid ?? "anon"}`);
-    if (!raw) return DAILY_CREDIT_MAX;
+    if (raw === null) return Number.POSITIVE_INFINITY;
     const n = Math.max(0, Math.min(50, Math.round(Number(raw))));
     return Number.isFinite(n) ? n : DAILY_CREDIT_MAX;
   } catch {
-    return DAILY_CREDIT_MAX;
+    return Number.POSITIVE_INFINITY;
   }
 }
 
@@ -126,6 +136,8 @@ export function useDailyCredits() {
 
   const trySpend = useCallback((): boolean => {
     const current = read(uid);
+    // Unlimited (no parental cap set) — always allow, don't decrement.
+    if (!Number.isFinite(current.remaining)) return true;
     if (current.remaining <= 0) {
       setState(current);
       return false;
