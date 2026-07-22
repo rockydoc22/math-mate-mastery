@@ -33,24 +33,45 @@ const KEYBOARD_ROWS = [
 function HangmanDrawing({ wrongCount }: { wrongCount: number }) {
   return (
     <svg viewBox="0 0 200 220" className="w-full max-w-[180px] mx-auto">
-      <line x1="20" y1="210" x2="180" y2="210" stroke="currentColor" strokeWidth="3" className="text-muted-foreground" />
-      <line x1="60" y1="210" x2="60" y2="20" stroke="currentColor" strokeWidth="3" className="text-muted-foreground" />
-      <line x1="60" y1="20" x2="130" y2="20" stroke="currentColor" strokeWidth="3" className="text-muted-foreground" />
-      <line x1="130" y1="20" x2="130" y2="45" stroke="currentColor" strokeWidth="3" className="text-muted-foreground" />
-      {wrongCount >= 1 && <circle cx="130" cy="60" r="15" stroke="hsl(var(--destructive))" strokeWidth="3" fill="none" />}
-      {wrongCount >= 2 && <line x1="130" y1="75" x2="130" y2="130" stroke="hsl(var(--destructive))" strokeWidth="3" />}
-      {wrongCount >= 3 && <line x1="130" y1="90" x2="105" y2="115" stroke="hsl(var(--destructive))" strokeWidth="3" />}
-      {wrongCount >= 4 && <line x1="130" y1="90" x2="155" y2="115" stroke="hsl(var(--destructive))" strokeWidth="3" />}
-      {wrongCount >= 5 && <line x1="130" y1="130" x2="105" y2="165" stroke="hsl(var(--destructive))" strokeWidth="3" />}
-      {wrongCount >= 6 && <line x1="130" y1="130" x2="155" y2="165" stroke="hsl(var(--destructive))" strokeWidth="3" />}
-      {wrongCount >= 6 && (
-        <>
-          <line x1="123" y1="55" x2="128" y2="60" stroke="hsl(var(--destructive))" strokeWidth="2" />
-          <line x1="128" y1="55" x2="123" y2="60" stroke="hsl(var(--destructive))" strokeWidth="2" />
-          <line x1="132" y1="55" x2="137" y2="60" stroke="hsl(var(--destructive))" strokeWidth="2" />
-          <line x1="137" y1="55" x2="132" y2="60" stroke="hsl(var(--destructive))" strokeWidth="2" />
-        </>
-      )}
+      {/* Ground */}
+      <line x1="10" y1="210" x2="190" y2="210" stroke="currentColor" strokeWidth="3" className="text-muted-foreground" />
+      {/* Coffin builds up as you miss. Stroke color = muted while building, destructive at final. */}
+      {(() => {
+        const stroke = wrongCount >= 6 ? 'hsl(var(--destructive))' : 'currentColor';
+        const cls = wrongCount >= 6 ? '' : 'text-muted-foreground';
+        return (
+          <g stroke={stroke} strokeWidth="3" fill="none" strokeLinejoin="round" strokeLinecap="round" className={cls}>
+            {/* 1: left side */}
+            {wrongCount >= 1 && <line x1="55" y1="90" x2="45" y2="200" />}
+            {/* 2: right side */}
+            {wrongCount >= 2 && <line x1="145" y1="90" x2="155" y2="200" />}
+            {/* 3: top (shoulders) — hexagonal coffin top */}
+            {wrongCount >= 3 && (
+              <>
+                <line x1="55" y1="90" x2="100" y2="70" />
+                <line x1="100" y1="70" x2="145" y2="90" />
+              </>
+            )}
+            {/* 4: bottom */}
+            {wrongCount >= 4 && <line x1="45" y1="200" x2="155" y2="200" />}
+            {/* 5: RIP cross */}
+            {wrongCount >= 5 && (
+              <>
+                <line x1="100" y1="115" x2="100" y2="165" />
+                <line x1="82" y1="135" x2="118" y2="135" />
+              </>
+            )}
+            {/* 6: flowers on top — game over */}
+            {wrongCount >= 6 && (
+              <>
+                <circle cx="100" cy="78" r="5" fill={stroke} stroke="none" />
+                <circle cx="90" cy="82" r="3" fill={stroke} stroke="none" />
+                <circle cx="110" cy="82" r="3" fill={stroke} stroke="none" />
+              </>
+            )}
+          </g>
+        );
+      })()}
     </svg>
   );
 }
