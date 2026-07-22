@@ -10,7 +10,7 @@ import { useGameZoneStats } from "@/hooks/useGameZoneStats";
 import { useGameCreditGate } from "@/hooks/useGameCreditGate";
 import { OutOfCreditsCard } from "@/components/games/OutOfCreditsCard";
 import { DailyCreditsBadge } from "@/components/games/DailyCreditsBadge";
-import { rapidFireFacts } from "@/data/satFactsRapidFire";
+import { rapidFireFacts, SATFact as _SATFact } from "@/data/satFactsRapidFire";
 import { buildFunRapidPrompt } from "@/data/funContentPool";
 import { useGameSounds } from "@/hooks/useGameSounds";
 
@@ -46,8 +46,9 @@ interface Review {
 }
 
 function buildPrompt(): Prompt {
-  // 70/30 mix: fun content vs SAT rapid-fire facts.
-  if (Math.random() < 0.7) {
+  // 40/60 mix: test-relevant fun trivia vs SAT rapid-fire facts.
+  // (Music/movie/slang items were removed from Rapid Fire — they aged out.)
+  if (Math.random() < 0.4) {
     const fun = buildFunRapidPrompt();
     if (fun) return fun;
   }
@@ -64,6 +65,23 @@ function buildPrompt(): Prompt {
   };
 }
 
+/** Pull a prompt whose stem hasn't been shown yet this session. */
+function nextUniquePrompt(seenStems: Set<string>): Prompt {
+  for (let i = 0; i < 20; i++) {
+    const p = buildPrompt();
+    // Dedupe by the underlying fact/prompt stem (strip the "→ answer" suffix
+    // and the random id so the same fact can't repeat with a different
+    // displayed answer).
+    const stem = p.text.split("→")[0].trim().toLowerCase();
+    if (!seenStems.has(stem)) {
+      seenStems.add(stem);
+      return p;
+    }
+  }
+  // Ran out of unseen prompts — allow repeats rather than stalling.
+  return buildPrompt();
+}
+
 export default function RapidFireSwipe() {
   const { stats, recordRound } = useGameZoneStats();
   const { playCorrect, playWrong, playVictory } = useGameSounds();
@@ -71,7 +89,8 @@ export default function RapidFireSwipe() {
   // we spend when the player actually starts the timer.
   const { blocked, spendForRestart } = useGameCreditGate({ spendOnMount: false });
   const [started, setStarted] = useState(false);
-  const [prompt, setPrompt] = useState<Prompt>(() => buildPrompt());
+  const seenStems = useRef<Set<string>>(new Set());
+  const [prompt, setPrompt] = useState<Prompt>(() => nextUniquePrompt(seenStems.current));
   const [timeLeft, setTimeLeft] = useState(ROUND_SECONDS);
   const [correct, setCorrect] = useState(0);
   const [wrong, setWrong] = useState(0);
@@ -132,7 +151,7 @@ export default function RapidFireSwipe() {
       }
       setFlash(isCorrect ? "ok" : "no");
       setTimeout(() => setFlash(null), 200);
-      setPrompt(buildPrompt());
+      setPrompt(nextUniquePrompt(seenStems.current));
     },
     [started, finished, prompt, playCorrect, playWrong]
   );
@@ -150,7 +169,8 @@ export default function RapidFireSwipe() {
     if (!spendForRestart()) return;
     finishedRef.current = false;
     setStarted(true);
-    setPrompt(buildPrompt());
+    seenStems.current = new Set();
+    setPrompt(nextUniquePrompt(seenStems.current));
     setTimeLeft(ROUND_SECONDS);
     setCorrect(0);
     setWrong(0);
