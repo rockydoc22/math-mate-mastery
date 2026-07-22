@@ -30,6 +30,34 @@ interface RawLegacyQuestion {
   difficulty?: string;
 }
 
+/**
+ * Normalize subject/section labels so near-duplicates collapse into a single
+ * bucket in the picker. Examples:
+ *   - "math" / "Mathematics" → "Math"
+ *   - "Writing and Language" / "Language Arts" → "Language Usage"
+ *   - "History" → "Social Studies"
+ * Unknown labels pass through unchanged.
+ */
+function normalizeSubject(raw: string | undefined | null): string {
+  if (!raw) return 'General';
+  const s = raw.trim();
+  const k = s.toLowerCase();
+  if (k === 'math' || k === 'mathematics' || k === 'maths') return 'Math';
+  if (
+    k === 'writing and language' ||
+    k === 'writing & language' ||
+    k === 'writing' ||
+    k === 'grammar' ||
+    k === 'language arts' ||
+    k === 'english language arts' ||
+    k === 'ela'
+  ) return 'Language Usage';
+  if (k === 'reading comprehension' || k === 'reading & vocabulary') return 'Reading';
+  if (k === 'history' || k === 'us history' || k === 'world history') return 'Social Studies';
+  if (k === 'sciences' || k === 'general science') return 'Science';
+  return s;
+}
+
 function convertPackQuestion(raw: RawK12PackQuestion): Question {
   return {
     id: raw.id.toLowerCase(),
@@ -43,7 +71,7 @@ function convertPackQuestion(raw: RawK12PackQuestion): Question {
     correctAnswer: raw.answer,
     explanation: raw.explanation,
     difficulty: raw.difficulty === 'hard' ? 'Hard' : raw.difficulty === 'easy' ? 'Easy' : 'Medium',
-    domain: raw.subject,
+    domain: normalizeSubject(raw.subject),
     skill: raw.skill || raw.skill_tag || raw.subject,
   };
 }
@@ -56,7 +84,7 @@ function convertLegacyQuestion(raw: RawLegacyQuestion): Question {
     correctAnswer: raw.correctAnswer,
     explanation: raw.explanation,
     difficulty: raw.difficulty === 'hard' ? 'Hard' : raw.difficulty === 'easy' ? 'Easy' : 'Medium',
-    domain: raw.section,
+    domain: normalizeSubject(raw.section),
     skill: raw.skill || raw.section,
   };
 }
@@ -115,6 +143,11 @@ export async function loadK12ExamQuestions(
 
   const allQuestions: Question[] = [];
   const seenIds = new Set<string>();
+  // Also dedupe by normalized question text — legacy + pack sources
+  // sometimes carry the same prompt under different IDs (e.g. the DNA
+  // question surfacing twice in a MAP session).
+  const seenText = new Set<string>();
+  const textKey = (q: Question) => q.question.trim().toLowerCase().replace(/\s+/g, ' ');
 
   // Load legacy 200-question banks first
   for (const file of legacyJsonFiles) {
@@ -126,8 +159,10 @@ export async function loadK12ExamQuestions(
       const arr = Array.isArray(data) ? data : [];
       for (const raw of arr) {
         const q = convertLegacyQuestion(raw as RawLegacyQuestion);
-        if (!seenIds.has(q.id)) {
+        const tk = textKey(q);
+        if (!seenIds.has(q.id) && !seenText.has(tk)) {
           seenIds.add(q.id);
+          seenText.add(tk);
           allQuestions.push(q);
         }
       }
@@ -141,8 +176,10 @@ export async function loadK12ExamQuestions(
   for (const key of examKeys) {
     const packQs = _packLoaded[key] || [];
     for (const q of packQs) {
-      if (!seenIds.has(q.id)) {
+      const tk = textKey(q);
+      if (!seenIds.has(q.id) && !seenText.has(tk)) {
         seenIds.add(q.id);
+        seenText.add(tk);
         allQuestions.push(q);
       }
     }
