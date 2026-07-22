@@ -37,11 +37,19 @@ function last7Days(): string[] {
 }
 
 function TeenRow({ teen, onRemove }: { teen: Teen; onRemove: () => void }) {
-  const [limit, setLimit] = useState<number>(() => getDailyLimit(teen.id));
+  const readLimit = () => {
+    const v = getDailyLimit(teen.id);
+    return Number.isFinite(v) ? v : DAILY_CREDIT_MAX;
+  };
+  const [limit, setLimit] = useState<number>(readLimit);
+  const [capEnabled, setCapEnabled] = useState<boolean>(
+    () => Number.isFinite(getDailyLimit(teen.id))
+  );
   const [log, setLog] = useState<UsageLogEntry[]>(() => readUsageLog(teen.id));
 
   useEffect(() => {
-    setLimit(getDailyLimit(teen.id));
+    setLimit(readLimit());
+    setCapEnabled(Number.isFinite(getDailyLimit(teen.id)));
     setLog(readUsageLog(teen.id));
   }, [teen.id]);
 
@@ -74,6 +82,18 @@ function TeenRow({ teen, onRemove }: { teen: Teen; onRemove: () => void }) {
   const applyLimit = (n: number) => {
     setLimit(n);
     setDailyLimit(teen.id, n);
+  };
+
+  const toggleCap = (on: boolean) => {
+    setCapEnabled(on);
+    if (on) {
+      setDailyLimit(teen.id, limit);
+    } else {
+      try {
+        localStorage.removeItem(`aoDailyCreditLimit:${teen.id}`);
+        window.dispatchEvent(new CustomEvent("aoDailyLimitChanged", { detail: { uid: teen.id } }));
+      } catch {}
+    }
   };
 
   return (
@@ -122,17 +142,29 @@ function TeenRow({ teen, onRemove }: { teen: Teen; onRemove: () => void }) {
       <div>
         <div className="flex items-center justify-between mb-2">
           <span className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">Daily play limit</span>
-          <span className="text-sm font-bold tabular-nums">{limit} / day</span>
+          <span className="text-sm font-bold tabular-nums">
+            {capEnabled ? `${limit} / day` : "Unlimited"}
+          </span>
         </div>
+        <label className="flex items-center gap-2 text-xs text-muted-foreground mb-2 cursor-pointer">
+          <input
+            type="checkbox"
+            checked={capEnabled}
+            onChange={(e) => toggleCap(e.target.checked)}
+          />
+          Enforce a daily play cap
+        </label>
         <Slider
           value={[limit]}
           onValueChange={(v) => applyLimit(v[0])}
           min={0}
           max={30}
           step={1}
+          disabled={!capEnabled}
         />
         <p className="text-[10px] text-muted-foreground mt-1">
-          Default is {DAILY_CREDIT_MAX}. Set to 0 to pause games for today.
+          Off by default (unlimited). Turn on to enforce a cap — {DAILY_CREDIT_MAX} is typical.
+          Set to 0 to pause games for today.
         </p>
       </div>
     </Card>
