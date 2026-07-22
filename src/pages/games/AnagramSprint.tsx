@@ -10,7 +10,7 @@ import { DailyCreditsBadge } from "@/components/games/DailyCreditsBadge";
 import { OutOfCreditsCard } from "@/components/games/OutOfCreditsCard";
 import { useGameCreditGate } from "@/hooks/useGameCreditGate";
 import { useGameZoneStats } from "@/hooks/useGameZoneStats";
-import { ANAGRAM_WORDS, AnagramDifficulty, scramble } from "@/data/anagramWords";
+import { ANAGRAM_WORDS, AnagramDifficulty, AnagramEntry, isAcceptedAnagram, scramble } from "@/data/anagramWords";
 
 const DIFFICULTY_CONFIG: Record<AnagramDifficulty, { seconds: number; perWord: number; label: string; emoji: string }> = {
   easy: { seconds: 60, perWord: 10, label: "Easy", emoji: "🌱" },
@@ -18,11 +18,11 @@ const DIFFICULTY_CONFIG: Record<AnagramDifficulty, { seconds: number; perWord: n
   hard: { seconds: 90, perWord: 35, label: "Hard", emoji: "🔥" },
 };
 
-function pickWord(difficulty: AnagramDifficulty, exclude?: string): string {
+function pickEntry(difficulty: AnagramDifficulty, exclude?: string): AnagramEntry {
   const list = ANAGRAM_WORDS[difficulty];
   let w = list[Math.floor(Math.random() * list.length)];
   if (exclude && list.length > 1) {
-    while (w === exclude) w = list[Math.floor(Math.random() * list.length)];
+    while (w.word === exclude) w = list[Math.floor(Math.random() * list.length)];
   }
   return w;
 }
@@ -35,7 +35,8 @@ export default function AnagramSprint() {
 
   const [difficulty, setDifficulty] = useState<AnagramDifficulty>("easy");
   const [phase, setPhase] = useState<"pick" | "playing" | "done">("pick");
-  const [word, setWord] = useState<string>("");
+  const [entry, setEntry] = useState<AnagramEntry>({ word: "" });
+  const word = entry.word;
   const [scrambled, setScrambled] = useState<string>("");
   const [guess, setGuess] = useState("");
   const [score, setScore] = useState(0);
@@ -52,9 +53,9 @@ export default function AnagramSprint() {
   const bestTime = stats.perGame.anagram?.bestTimeMs;
 
   const nextWord = useCallback(() => {
-    const w = pickWord(difficulty, word);
-    setWord(w);
-    setScrambled(scramble(w));
+    const e = pickEntry(difficulty, word);
+    setEntry(e);
+    setScrambled(scramble(e.word));
     setGuess("");
     startedAt.current = performance.now();
   }, [difficulty, word]);
@@ -66,9 +67,9 @@ export default function AnagramSprint() {
     setTimeLeft(cfg.seconds);
     setPhase("playing");
     bestSolveMs.current = undefined;
-    const w = pickWord(difficulty);
-    setWord(w);
-    setScrambled(scramble(w));
+    const e = pickEntry(difficulty);
+    setEntry(e);
+    setScrambled(scramble(e.word));
     setGuess("");
     startedAt.current = performance.now();
   };
@@ -99,7 +100,7 @@ export default function AnagramSprint() {
 
   const submit = () => {
     if (phase !== "playing" || !guess.trim()) return;
-    if (guess.trim().toLowerCase() === word.toLowerCase()) {
+    if (isAcceptedAnagram(entry, guess)) {
       const solveMs = performance.now() - startedAt.current;
       // Bonus for solving fast (under 5s), tapers by difficulty
       const bonus = solveMs < 5000 ? Math.round((5000 - solveMs) / 500) : 0;
@@ -127,7 +128,7 @@ export default function AnagramSprint() {
     nextWord();
   };
 
-  const shuffleLetters = () => setScrambled(scramble(word));
+  const shuffleLetters = () => setScrambled(scramble(entry.word));
 
   const timerColor = timeLeft <= 10 ? "text-destructive" : timeLeft <= 20 ? "text-amber-600" : "text-primary";
 

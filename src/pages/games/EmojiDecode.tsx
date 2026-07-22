@@ -1,4 +1,4 @@
-import { useState, useCallback } from "react";
+import { useState, useCallback, useMemo } from "react";
 import { SEO } from "@/components/SEO";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
@@ -70,15 +70,53 @@ export default function EmojiDecode() {
   const [lives, setLives] = useState(3);
   const [feedback, setFeedback] = useState<"idle" | "wrong" | "won" | "lost">("idle");
   const [points, setPoints] = useState(0);
+  // Letters the player has picked from the on-screen keyboard.
+  // Correct picks fill into the mask; wrong picks cost a life.
+  const [pickedLetters, setPickedLetters] = useState<Set<string>>(new Set());
 
   // Number of letters unlocked as clues after each wrong guess.
   // 3 lives → 0 letters, 2 lives → 1 letter, 1 life → 2 letters.
   const lettersRevealed = Math.max(0, 3 - lives);
   const answerLen = puzzle.answer.length;
+  // Reveal a letter when the player has picked it OR when the auto-reveal
+  // has surfaced it (first `lettersRevealed` letters from the front).
   const masked = puzzle.answer
     .split("")
-    .map((ch, i) => (i < lettersRevealed ? ch.toUpperCase() : "_"))
+    .map((ch, i) => {
+      if (i < lettersRevealed) return ch.toUpperCase();
+      if (pickedLetters.has(ch.toLowerCase())) return ch.toUpperCase();
+      // Preserve non-letter chars (hyphens, spaces) so multi-word answers render cleanly.
+      if (!/[a-z]/i.test(ch)) return ch;
+      return "_";
+    })
     .join(" ");
+
+  const alphabet = useMemo(() => "abcdefghijklmnopqrstuvwxyz".split(""), []);
+
+  const pickLetter = useCallback(
+    (letter: string) => {
+      if (feedback === "won" || feedback === "lost") return;
+      const l = letter.toLowerCase();
+      if (pickedLetters.has(l)) return;
+      if (!spendOnce()) return;
+      const next = new Set(pickedLetters);
+      next.add(l);
+      setPickedLetters(next);
+      const inWord = puzzle.answer.toLowerCase().includes(l);
+      if (!inWord) {
+        const nextLives = lives - 1;
+        setLives(nextLives);
+        if (nextLives <= 0) {
+          recordRound("emoji", 0, 0, false);
+          setFeedback("lost");
+        } else {
+          setFeedback("wrong");
+          setTimeout(() => setFeedback("idle"), 300);
+        }
+      }
+    },
+    [feedback, pickedLetters, puzzle, lives, spendOnce, recordRound]
+  );
 
   const submit = useCallback(() => {
     if (feedback === "won" || feedback === "lost") return;
@@ -110,6 +148,7 @@ export default function EmojiDecode() {
     setGuess("");
     setLives(3);
     setFeedback("idle");
+    setPickedLetters(new Set());
   };
 
   const restart = () => {
@@ -119,6 +158,7 @@ export default function EmojiDecode() {
     setLives(3);
     setFeedback("idle");
     setPoints(0);
+    setPickedLetters(new Set());
   };
 
   return (
@@ -218,6 +258,35 @@ export default function EmojiDecode() {
               className={`text-center text-lg ${feedback === "wrong" ? "border-destructive animate-pulse" : ""}`}
               autoFocus
             />
+            {/* Hangman-style letter picker — pick a letter to reveal it in the mask.
+                Wrong letters cost a life. Great for players who want a slower reveal. */}
+            <div className="space-y-1">
+              <p className="text-[10px] uppercase tracking-wider text-muted-foreground">
+                Or pick a letter (wrong picks cost a life)
+              </p>
+              <div className="grid grid-cols-9 gap-1">
+                {alphabet.map((l) => {
+                  const used = pickedLetters.has(l);
+                  const inWord = puzzle.answer.toLowerCase().includes(l);
+                  const style = !used
+                    ? "bg-muted hover:bg-primary/15 border-border"
+                    : inWord
+                    ? "bg-emerald-500/20 border-emerald-500/50 text-emerald-700 dark:text-emerald-300"
+                    : "bg-destructive/15 border-destructive/40 text-destructive line-through";
+                  return (
+                    <button
+                      key={l}
+                      type="button"
+                      disabled={used}
+                      onClick={() => pickLetter(l)}
+                      className={`h-7 rounded border text-xs font-bold uppercase transition ${style} disabled:cursor-not-allowed`}
+                    >
+                      {l}
+                    </button>
+                  );
+                })}
+              </div>
+            </div>
             <div className="flex items-center justify-between text-sm">
               <span>Lives: {"❤️".repeat(lives)}{"🖤".repeat(3 - lives)}</span>
               <span>Round pts: <strong>{points}</strong></span>

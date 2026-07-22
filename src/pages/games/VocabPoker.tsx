@@ -35,13 +35,16 @@ const HAND_SIZE = 5;
 const START_CHIPS = 100;
 const WIN_CHIPS = 300;
 
-// Payouts
-const PAYOUT = {
-  correctPlay: 25,
-  wrongPlay: -20,
-  correctFold: 10,
-  wrongFold: -15,
-};
+// Wager options — player picks each round; double-down doubles the active wager once.
+const WAGERS = [10, 25, 50] as const;
+
+// Payout multipliers (× wager). Fold pays half either way.
+const PAYOUT_MULT = {
+  correctPlay: 1,
+  wrongPlay: -1,
+  correctFold: 0.5,
+  wrongFold: -0.5,
+} as const;
 
 function shuffle<T>(arr: T[]): T[] {
   const a = [...arr];
@@ -96,6 +99,8 @@ export default function VocabPoker() {
   const [wins, setWins] = useState(0);
   const [feedback, setFeedback] = useState<Feedback>(null);
   const [finished, setFinished] = useState<null | { win: boolean; points: number }>(null);
+  const [wager, setWager] = useState<number>(25);
+  const [doubledDown, setDoubledDown] = useState(false);
 
   // Draw initial hand + first prompt once.
   useEffect(() => {
@@ -142,6 +147,9 @@ export default function VocabPoker() {
     setPromptCard(p.promptCard);
     setIsMatch(p.isMatch);
     setFeedback(null);
+    setDoubledDown(false);
+    // Reset to default wager so wagers are always an intentional choice.
+    setWager(25);
   }
 
   const endGame = useCallback(
@@ -158,13 +166,14 @@ export default function VocabPoker() {
 
   const applyOutcome = useCallback(
     (kind: Exclude<Feedback, null>["kind"], removeCardId: string | null) => {
-      const delta = PAYOUT[kind];
+      const delta = Math.round(PAYOUT_MULT[kind] * wager);
       const nextChips = chips + delta;
       const won = kind === "correctPlay" || kind === "correctFold";
+      const sign = delta >= 0 ? "+" : "";
       const message = won
         ? kind === "correctPlay"
-          ? `Nice play. +${delta} chips`
-          : `Great read — bluff called. +${delta} chips`
+          ? `Nice play. ${sign}${delta} chips`
+          : `Great read — bluff called. ${sign}${delta} chips`
         : kind === "wrongPlay"
         ? `That wasn't it. ${delta} chips`
         : `You had it. ${delta} chips`;
@@ -196,14 +205,44 @@ export default function VocabPoker() {
         return;
       }
 
-      // Next round after brief reveal.
-      window.setTimeout(() => {
-        const newHand = removeCardId ? hand.filter((c) => c.id !== removeCardId) : hand;
-        dealFreshRound(deck, newHand);
-      }, 1100);
+      // Correct answers auto-advance so momentum stays high.
+      // Wrong answers keep the reveal on screen — player must tap "Next round"
+      // (or wait 7s) so they have time to read the explanation.
+      if (won) {
+        window.setTimeout(() => {
+          const newHand = removeCardId ? hand.filter((c) => c.id !== removeCardId) : hand;
+          dealFreshRound(deck, newHand);
+        }, 1200);
+      } else {
+        // Auto-advance safety net at 7s in case the player walks away.
+        window.setTimeout(() => {
+          setFeedback((current) => {
+            if (!current) return current;
+            const newHand = removeCardId ? hand.filter((c) => c.id !== removeCardId) : hand;
+            dealFreshRound(deck, newHand);
+            return null;
+          });
+        }, 7000);
+      }
     },
-    [chips, hand, deck, promptCard, playCorrect, playWrong, endGame]
+    [chips, hand, deck, promptCard, playCorrect, playWrong, endGame, wager]
   );
+
+  // Manual "next round" for wrong-answer state so the player controls pacing.
+  const advanceFromFeedback = useCallback(() => {
+    if (!feedback) return;
+    const newHand = hand; // wrong plays don't remove a card; folds don't either
+    setFeedback(null);
+    dealFreshRound(deck, newHand);
+  }, [feedback, hand, deck]);
+
+  const doubleDown = () => {
+    if (feedback || finished || doubledDown) return;
+    const doubled = wager * 2;
+    if (chips < doubled) return; // can't cover the risk
+    setWager(doubled);
+    setDoubledDown(true);
+  };
 
   const playCard = (card: VocabCard) => {
     if (!promptCard || feedback || finished) return;
@@ -230,6 +269,8 @@ export default function VocabPoker() {
     setWins(0);
     setFeedback(null);
     setFinished(null);
+    setWager(25);
+    setDoubledDown(false);
     dealFreshRound(buildDeck(), []);
   };
 
@@ -275,10 +316,12 @@ export default function VocabPoker() {
               <em>no</em> card in your hand. That's a bluff round — fold it.
             </p>
             <ul className="text-xs text-muted-foreground space-y-0.5 pl-4 list-disc">
-              <li>Right card played: <strong className="text-emerald-500">+25 chips</strong></li>
-              <li>Wrong card played: <strong className="text-destructive">-20 chips</strong></li>
-              <li>Fold a bluff (no match in hand): <strong className="text-emerald-500">+10 chips</strong></li>
-              <li>Fold when you had the match: <strong className="text-destructive">-15 chips</strong></li>
+              <li>Pick a <strong>wager</strong> before you act — 10, 25, or 50 chips.</li>
+              <li>After you read the definition you can <strong>Double Down</strong> to double the risk (once per round).</li>
+              <li>Right card played: <strong className="text-emerald-500">+wager</strong></li>
+              <li>Wrong card played: <strong className="text-destructive">−wager</strong></li>
+              <li>Fold a bluff (no match in hand): <strong className="text-emerald-500">+½ wager</strong></li>
+              <li>Fold when you had the match: <strong className="text-destructive">−½ wager</strong></li>
             </ul>
             <p className="text-xs text-muted-foreground">
               Start with 100 chips. Reach <strong>300</strong> to win the pot. Hit <strong>0</strong> and you bust.
@@ -339,18 +382,69 @@ export default function VocabPoker() {
                 On the table
               </span>
               {feedback ? (
-                <div className="space-y-1.5">
+                <div className="space-y-2 w-full">
                   <p className="text-lg font-bold">{feedback.message}</p>
                   {feedback.revealedWord && (
                     <p className="text-sm text-muted-foreground">
                       Word was: <strong className="capitalize text-foreground">{feedback.revealedWord}</strong>
                     </p>
                   )}
+                  {promptCard && (
+                    <p className="text-xs text-muted-foreground max-w-sm mx-auto">
+                      <em>{promptCard.definition}</em>
+                    </p>
+                  )}
+                  {(feedback.kind === "wrongPlay" || feedback.kind === "wrongFold") && (
+                    <Button size="sm" className="mt-2" onClick={advanceFromFeedback}>
+                      Next round →
+                    </Button>
+                  )}
                 </div>
               ) : (
                 <p className="text-base sm:text-lg font-medium">{promptCard?.definition ?? "…"}</p>
               )}
             </Card>
+
+            {/* Wager controls — visible only while the player is deciding. */}
+            {!feedback && promptCard && (
+              <Card className="p-3 space-y-2">
+                <div className="flex items-center justify-between">
+                  <span className="text-[11px] uppercase tracking-wider text-muted-foreground">
+                    Your wager
+                  </span>
+                  <span className="text-sm font-bold tabular-nums">
+                    {wager} chip{wager === 1 ? "" : "s"}
+                    {doubledDown && <span className="ml-1 text-amber-500">· 2×</span>}
+                  </span>
+                </div>
+                <div className="flex gap-2">
+                  {WAGERS.map((w) => (
+                    <button
+                      key={w}
+                      disabled={doubledDown || chips < w}
+                      onClick={() => setWager(w)}
+                      className={`flex-1 py-1.5 rounded-md border text-sm font-semibold transition ${
+                        wager === w && !doubledDown
+                          ? "border-primary bg-primary/10 text-primary"
+                          : "border-border hover:border-primary/40"
+                      } disabled:opacity-40 disabled:cursor-not-allowed`}
+                    >
+                      {w}
+                    </button>
+                  ))}
+                  <Button
+                    variant="outline"
+                    size="sm"
+                    disabled={doubledDown || chips < wager * 2}
+                    onClick={doubleDown}
+                    className="text-xs"
+                    title="Double the wager once you've seen the definition"
+                  >
+                    Double down
+                  </Button>
+                </div>
+              </Card>
+            )}
 
             {/* Hand */}
             <div className="grid grid-cols-2 sm:grid-cols-5 gap-2">

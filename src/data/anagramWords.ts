@@ -1,23 +1,92 @@
 // Anagram word lists per difficulty tier. Kept short & family-friendly.
+// Each entry has a canonical `word` plus any real-word anagrams the player
+// might legitimately land on (e.g. EMILS → smile OR miles OR limes OR slime).
+// The game accepts any of these as a correct answer.
 export type AnagramDifficulty = "easy" | "medium" | "hard";
 
-export const ANAGRAM_WORDS: Record<AnagramDifficulty, string[]> = {
+export interface AnagramEntry {
+  word: string;
+  alts?: string[];
+}
+
+export const ANAGRAM_WORDS: Record<AnagramDifficulty, AnagramEntry[]> = {
   easy: [
-    "apple", "chair", "plant", "smile", "brave", "grape", "sunny", "flame",
-    "cloud", "river", "stone", "green", "quiet", "spark", "trust", "dance",
-    "peach", "beach", "candy", "happy", "eagle", "money", "movie", "night",
+    { word: "apple" },
+    { word: "chair" },
+    { word: "plant" },
+    { word: "smile", alts: ["miles", "limes", "slime"] },
+    { word: "brave" },
+    { word: "grape", alts: ["gaper", "pager", "parge"] },
+    { word: "sunny" },
+    { word: "flame", alts: ["fleam"] },
+    { word: "cloud", alts: ["could"] },
+    { word: "river" },
+    { word: "stone", alts: ["notes", "onset", "seton", "tones", "steno"] },
+    { word: "green", alts: ["genre"] },
+    { word: "quiet", alts: ["quite"] },
+    { word: "spark", alts: ["parks"] },
+    { word: "trust", alts: ["strut"] },
+    { word: "dance", alts: ["caned", "acned"] },
+    { word: "peach", alts: ["cheap"] },
+    { word: "beach" },
+    { word: "candy" },
+    { word: "happy" },
+    { word: "eagle" },
+    { word: "money" },
+    { word: "movie" },
+    { word: "night", alts: ["thing"] },
   ],
   medium: [
-    "puzzle", "planet", "silver", "market", "orange", "friend", "guitar",
-    "wonder", "castle", "temple", "salmon", "forest", "gentle", "coffee",
-    "shadow", "island", "modern", "record", "wisdom", "yellow", "junior",
-    "purple", "square", "winter",
+    { word: "puzzle" },
+    { word: "planet", alts: ["platen"] },
+    { word: "silver", alts: ["sliver", "livers", "livres"] },
+    { word: "market" },
+    { word: "orange", alts: ["onager", "genoa"] },
+    { word: "friend", alts: ["finder", "redfin"] },
+    { word: "guitar" },
+    { word: "wonder" },
+    { word: "castle", alts: ["cleats", "eclats"] },
+    { word: "temple", alts: ["pelmet"] },
+    { word: "salmon" },
+    { word: "forest", alts: ["foster", "softer"] },
+    { word: "gentle" },
+    { word: "coffee" },
+    { word: "shadow" },
+    { word: "island" },
+    { word: "modern", alts: ["dormer"] },
+    { word: "record", alts: ["corder"] },
+    { word: "wisdom" },
+    { word: "yellow" },
+    { word: "junior" },
+    { word: "purple" },
+    { word: "square" },
+    { word: "winter", alts: ["twiner"] },
   ],
   hard: [
-    "adventure", "brilliant", "curiosity", "discovery", "education", "festival",
-    "gravitate", "harmonize", "important", "knowledge", "landscape", "melodious",
-    "necessary", "objective", "peaceful", "quicksand", "resonate", "spectrum",
-    "tremendous", "universal", "vibration", "wonderful", "expertise", "hurricane",
+    { word: "adventure" },
+    { word: "brilliant" },
+    { word: "curiosity" },
+    { word: "discovery" },
+    { word: "education", alts: ["auctioned", "cautioned"] },
+    { word: "festival" },
+    { word: "gravitate" },
+    { word: "harmonize" },
+    { word: "important" },
+    { word: "knowledge" },
+    { word: "landscape" },
+    { word: "melodious" },
+    { word: "necessary" },
+    { word: "objective" },
+    { word: "peaceful" },
+    { word: "quicksand" },
+    { word: "resonate", alts: ["senorate"] },
+    { word: "spectrum" },
+    { word: "tremendous" },
+    { word: "universal" },
+    { word: "vibration" },
+    { word: "wonderful" },
+    { word: "expertise" },
+    { word: "hurricane" },
   ],
 };
 
@@ -32,4 +101,12 @@ export function scramble(word: string): string {
     if (arr.join("") !== word) return arr.join("");
   }
   return arr.reverse().join("");
+}
+
+/** True when `guess` is either the canonical word or a listed alternate. */
+export function isAcceptedAnagram(entry: AnagramEntry, guess: string): boolean {
+  const g = guess.trim().toLowerCase();
+  if (!g) return false;
+  if (g === entry.word.toLowerCase()) return true;
+  return (entry.alts ?? []).some((a) => a.toLowerCase() === g);
 }

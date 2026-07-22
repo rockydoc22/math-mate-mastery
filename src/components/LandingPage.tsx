@@ -131,10 +131,16 @@ export const LandingPage = () => {
             </div>
           </div>
 
-          {/* Title & tagline */}
+          {/* Title & tagline — three-line headline emphasizes breadth beyond SAT */}
           <div>
-            <h1 className="text-3xl font-bold tracking-tight mb-1">ΑΩ — One app. Every test.</h1>
-            <p className="text-sm text-muted-foreground font-medium">Free adaptive prep for SAT, ACT, AP & more.</p>
+            <h1 className="text-3xl sm:text-4xl font-bold tracking-tight leading-[1.15]">
+              <span className="block">Free test prep.</span>
+              <span className="block">Every age.</span>
+              <span className="block">Every test.</span>
+            </h1>
+            <p className="text-sm text-muted-foreground font-medium mt-3">
+              Adaptive prep for SAT, ACT, AP, GED, MCAT, GRE, LSAT, K–12 &amp; more.
+            </p>
             <div className="flex flex-wrap justify-center gap-2 mt-3">
               <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-xs font-medium bg-emerald-500/10 text-emerald-600 dark:text-emerald-400">
                 🛡️ Family-safe content
