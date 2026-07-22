@@ -258,6 +258,35 @@ export default function EmojiDecode() {
               className={`text-center text-lg ${feedback === "wrong" ? "border-destructive animate-pulse" : ""}`}
               autoFocus
             />
+            {/* Hangman-style letter picker — pick a letter to reveal it in the mask.
+                Wrong letters cost a life. Great for players who want a slower reveal. */}
+            <div className="space-y-1">
+              <p className="text-[10px] uppercase tracking-wider text-muted-foreground">
+                Or pick a letter (wrong picks cost a life)
+              </p>
+              <div className="grid grid-cols-9 gap-1">
+                {alphabet.map((l) => {
+                  const used = pickedLetters.has(l);
+                  const inWord = puzzle.answer.toLowerCase().includes(l);
+                  const style = !used
+                    ? "bg-muted hover:bg-primary/15 border-border"
+                    : inWord
+                    ? "bg-emerald-500/20 border-emerald-500/50 text-emerald-700 dark:text-emerald-300"
+                    : "bg-destructive/15 border-destructive/40 text-destructive line-through";
+                  return (
+                    <button
+                      key={l}
+                      type="button"
+                      disabled={used}
+                      onClick={() => pickLetter(l)}
+                      className={`h-7 rounded border text-xs font-bold uppercase transition ${style} disabled:cursor-not-allowed`}
+                    >
+                      {l}
+                    </button>
+                  );
+                })}
+              </div>
+            </div>
             <div className="flex items-center justify-between text-sm">
               <span>Lives: {"❤️".repeat(lives)}{"🖤".repeat(3 - lives)}</span>
               <span>Round pts: <strong>{points}</strong></span>
