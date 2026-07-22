@@ -316,10 +316,12 @@ export default function VocabPoker() {
               <em>no</em> card in your hand. That's a bluff round — fold it.
             </p>
             <ul className="text-xs text-muted-foreground space-y-0.5 pl-4 list-disc">
-              <li>Right card played: <strong className="text-emerald-500">+25 chips</strong></li>
-              <li>Wrong card played: <strong className="text-destructive">-20 chips</strong></li>
-              <li>Fold a bluff (no match in hand): <strong className="text-emerald-500">+10 chips</strong></li>
-              <li>Fold when you had the match: <strong className="text-destructive">-15 chips</strong></li>
+              <li>Pick a <strong>wager</strong> before you act — 10, 25, or 50 chips.</li>
+              <li>After you read the definition you can <strong>Double Down</strong> to double the risk (once per round).</li>
+              <li>Right card played: <strong className="text-emerald-500">+wager</strong></li>
+              <li>Wrong card played: <strong className="text-destructive">−wager</strong></li>
+              <li>Fold a bluff (no match in hand): <strong className="text-emerald-500">+½ wager</strong></li>
+              <li>Fold when you had the match: <strong className="text-destructive">−½ wager</strong></li>
             </ul>
             <p className="text-xs text-muted-foreground">
               Start with 100 chips. Reach <strong>300</strong> to win the pot. Hit <strong>0</strong> and you bust.
@@ -380,18 +382,69 @@ export default function VocabPoker() {
                 On the table
               </span>
               {feedback ? (
-                <div className="space-y-1.5">
+                <div className="space-y-2 w-full">
                   <p className="text-lg font-bold">{feedback.message}</p>
                   {feedback.revealedWord && (
                     <p className="text-sm text-muted-foreground">
                       Word was: <strong className="capitalize text-foreground">{feedback.revealedWord}</strong>
                     </p>
                   )}
+                  {promptCard && (
+                    <p className="text-xs text-muted-foreground max-w-sm mx-auto">
+                      <em>{promptCard.definition}</em>
+                    </p>
+                  )}
+                  {(feedback.kind === "wrongPlay" || feedback.kind === "wrongFold") && (
+                    <Button size="sm" className="mt-2" onClick={advanceFromFeedback}>
+                      Next round →
+                    </Button>
+                  )}
                 </div>
               ) : (
                 <p className="text-base sm:text-lg font-medium">{promptCard?.definition ?? "…"}</p>
               )}
             </Card>
+
+            {/* Wager controls — visible only while the player is deciding. */}
+            {!feedback && promptCard && (
+              <Card className="p-3 space-y-2">
+                <div className="flex items-center justify-between">
+                  <span className="text-[11px] uppercase tracking-wider text-muted-foreground">
+                    Your wager
+                  </span>
+                  <span className="text-sm font-bold tabular-nums">
+                    {wager} chip{wager === 1 ? "" : "s"}
+                    {doubledDown && <span className="ml-1 text-amber-500">· 2×</span>}
+                  </span>
+                </div>
+                <div className="flex gap-2">
+                  {WAGERS.map((w) => (
+                    <button
+                      key={w}
+                      disabled={doubledDown || chips < w}
+                      onClick={() => setWager(w)}
+                      className={`flex-1 py-1.5 rounded-md border text-sm font-semibold transition ${
+                        wager === w && !doubledDown
+                          ? "border-primary bg-primary/10 text-primary"
+                          : "border-border hover:border-primary/40"
+                      } disabled:opacity-40 disabled:cursor-not-allowed`}
+                    >
+                      {w}
+                    </button>
+                  ))}
+                  <Button
+                    variant="outline"
+                    size="sm"
+                    disabled={doubledDown || chips < wager * 2}
+                    onClick={doubleDown}
+                    className="text-xs"
+                    title="Double the wager once you've seen the definition"
+                  >
+                    Double down
+                  </Button>
+                </div>
+              </Card>
+            )}
 
             {/* Hand */}
             <div className="grid grid-cols-2 sm:grid-cols-5 gap-2">
