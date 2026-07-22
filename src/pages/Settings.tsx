@@ -7,7 +7,7 @@ import { Label } from "@/components/ui/label";
 import { useAuth } from "@/hooks/useAuth";
 import { toast } from "@/hooks/use-toast";
 import { supabase } from "@/integrations/supabase/client";
-import { ArrowLeft, Lock, Eye, EyeOff, GraduationCap, User, Loader2, Sparkles } from "lucide-react";
+import { ArrowLeft, Lock, Eye, EyeOff, GraduationCap, User, Loader2, Sparkles, Search, Calendar, Target } from "lucide-react";
 import { useExamType } from "@/hooks/useExamType";
 import { EXAM_CONFIGS, type ExamType } from "@/utils/examConfig";
 import { useAIAssistant } from "@/hooks/useAIAssistant";
@@ -44,14 +44,32 @@ const Settings = () => {
   const passwordSectionRef = useRef<HTMLFormElement>(null);
   const { disabled: aiOff, setDisabled: setAiOff } = useAIAssistant();
 
+  // Personalization signals
+  const [ageBand, setAgeBand] = useState<string>("");
+  const [ratings, setRatings] = useState<Record<string, number>>({
+    math: 3, reading: 3, vocabulary: 3, writing: 3, science: 3,
+  });
+  const [prefsSaving, setPrefsSaving] = useState(false);
+
   // Load current username
   useEffect(() => {
-    const loadUsername = async () => {
+    const loadProfile = async () => {
       if (!user) return;
-      const { data } = await supabase.from("profiles").select("username").eq("id", user.id).single();
-      if (data) setUsername(data.username);
+      const { data } = await supabase
+        .from("profiles")
+        .select("username, age_band, self_ratings")
+        .eq("id", user.id)
+        .maybeSingle();
+      if (data) {
+        setUsername(data.username || "");
+        if ((data as any).age_band) setAgeBand((data as any).age_band as string);
+        const sr = (data as any).self_ratings as Record<string, number> | null;
+        if (sr && typeof sr === "object") {
+          setRatings(r => ({ ...r, ...sr }));
+        }
+      }
     };
-    loadUsername();
+    loadProfile();
   }, [user]);
 
   // Handle magic link password reset redirect
