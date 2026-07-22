@@ -82,11 +82,15 @@ const IQPersonalityHub = () => {
     <div className="min-h-screen bg-background pb-24">
       <div className="sticky top-0 z-10 bg-background/95 backdrop-blur border-b border-border px-4 py-3">
         <div className="max-w-2xl mx-auto flex items-center gap-3">
-          <Link to="/">
-            <Button variant="ghost" size="icon" className="shrink-0">
-              <ArrowLeft className="w-5 h-5" />
-            </Button>
-          </Link>
+          <Button
+            variant="ghost"
+            size="icon"
+            className="shrink-0"
+            onClick={() => (window.history.length > 1 ? navigate(-1) : navigate("/"))}
+            aria-label="Go back"
+          >
+            <ArrowLeft className="w-5 h-5" />
+          </Button>
           <div>
             <h1 className="text-xl font-bold">IQ & Personality Tests</h1>
             <p className="text-xs text-muted-foreground">Assessments, quizzes & cognitive exercises</p>
